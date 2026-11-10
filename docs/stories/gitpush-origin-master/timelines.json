@@ -51,8 +51,8 @@
           "id": "mv-chorus-2",
           "name": "Chorus: Outbreak Night (the machines wake; replaces the robots in chorus 2)",
           "at": "1:47",
-          "state": "cut r2 picked (9 Nov): https://claude.ai/artifact/GhgLphPdKSMs8PXNdsAjvH · sequence E (London), 12 shots on the beat; Kai: 'we've got our cut now. Much better.' Premiere build waits until Premiere is free",
-          "tone": "wip",
+          "state": "done (10 Nov): Kai's hand edit in Premiere, '01 GPOM chorus outbreak r3' (9 shots, airliner on the kick, cup held into the war), nested in '01 GPOM start r2' at 1:35.75 and so in 00 RENDER story. Chorus 1 and the second half of chorus 2 cut out of the story. Kai: 'a much better chorus arrangement'. Timeline page still plays cut E (r2)",
+          "tone": "done",
           "scene": "scenes/chorus-outbreak",
           "history": [
             {
@@ -280,7 +280,11 @@
       },
       {
         "sequence": "00 RENDER story",
-        "what": "The story film (4 Nov): 01 GPOM start to 2:42 (the war; the robot-arrival clip and its music fade moved into A by Kai), then A (r11), B (r1), C (r4), D (r8, 6 Nov: round 11, swapped in by the gpom-chorus session), E (r3). Nested. 9:38. Rendered: D:\\badcode-videos\\gitpush-origin-master\\renders\\GPOM-story-2026-11-04.mp4"
+        "what": "The story film (10 Nov): 01 GPOM start r2 (the opening with chorus 1 removed and Kai's outbreak chorus r3 in place of half of chorus 2), then A (r11), B (r1), C (r4), D (r15), E (r3). Nested. Backup from before the chorus work: '00 RENDER story (before chorus outbreak, 10 Nov)' in zz old sequences"
+      },
+      {
+        "sequence": "01 GPOM start r2",
+        "what": "The story's opening (10 Nov): clone of 01 GPOM start with chorus 1 rippled out and chorus 2 halved, '01 GPOM chorus outbreak r3' nested at 95.75-106.79 s. The music video still uses the untouched 01 GPOM start"
       },
       {
         "sequence": "01 GPOM start",
