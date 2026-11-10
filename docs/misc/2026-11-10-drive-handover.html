@@ -1,0 +1,267 @@
+<title>Baton Hand-over</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one column of four relay legs, each a numbered lane; the clean-up leg is a marking table. */
+:root {
+  --bg: #eef1f3; --panel: #ffffff; --well: #f5f7f8; --line: #d3dae0; --fg: #14202a; --dim: #5c6b78;
+  --accent: #d9480f; --keep: #2b8a3e; --del: #c92a2a; --done: #2b8a3e; --code: #0f2533; --codefg: #e3edf2;
+  --display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11171c; --panel: #182128; --well: #1e2830; --line: #2c3a45; --fg: #e6edf2; --dim: #93a3b0;
+  --accent: #ff7a3d; --keep: #51cf66; --del: #ff6b6b; --done: #51cf66; --code: #0a1217; --codefg: #d6e4ec; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11171c; --panel: #182128; --well: #1e2830; --line: #2c3a45; --fg: #e6edf2; --dim: #93a3b0;
+  --accent: #ff7a3d; --keep: #51cf66; --del: #ff6b6b; --done: #51cf66; --code: #0a1217; --codefg: #d6e4ec; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 16px/1.5 var(--body); }
+.wrap { max-width: 920px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 64px; display: grid; gap: 28px }
+header h1 { font: 700 clamp(30px, 6vw, 46px)/1.05 var(--display); margin: 0 0 8px; text-wrap: balance; letter-spacing: -.01em }
+header p { margin: 0; color: var(--dim); max-width: 65ch }
+.who { font: 600 12px var(--mono); letter-spacing: .06em; text-transform: uppercase }
+.track { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px }
+.track a { text-decoration: none; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font: 600 13px var(--mono); display: flex; gap: 8px; align-items: center }
+.track a .n { color: var(--accent) }
+.track a .c { color: var(--dim); font-weight: 400 }
+.leg { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 20px; display: grid; gap: 16px; scroll-margin-top: 16px }
+.leghead { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: baseline }
+.legno { font: 700 40px/1 var(--display); color: var(--accent); font-variant-numeric: tabular-nums }
+.leghead h2 { font: 700 24px/1.2 var(--display); margin: 0; text-wrap: balance }
+.leghead p { margin: 2px 0 0; color: var(--dim); font-size: 15px }
+.count { font: 600 13px var(--mono); color: var(--dim); white-space: nowrap }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px }
+.step { display: grid; grid-template-columns: 28px 1fr; gap: 12px; padding: 12px; border-radius: 8px; background: var(--well); border: 1px solid transparent }
+.step.done { border-color: var(--done) }
+.step.done .stitle { text-decoration: line-through; text-decoration-color: var(--done) }
+.step input[type=checkbox] { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--done); cursor: pointer }
+.stitle { font-weight: 700; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline }
+.stitle .who { color: var(--accent) }
+.sbody { color: var(--fg); font-size: 15px; display: grid; gap: 8px; margin-top: 4px; min-width: 0 }
+.sbody p { margin: 0 }
+.expect { color: var(--dim) }
+.expect b { color: var(--fg) }
+.by { font: 12px var(--mono); color: var(--done) }
+.cmd { display: flex; gap: 0; border-radius: 6px; overflow: hidden; background: var(--code); min-width: 0 }
+.cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: pre; padding: 10px 12px; font: 13px/1.5 var(--mono); color: var(--codefg) }
+.cmd button, .say button { border: 0; background: var(--accent); color: #fff; font: 600 12px var(--mono); padding: 0 12px; cursor: pointer }
+.say { display: flex; border: 1px dashed var(--accent); border-radius: 6px; overflow: hidden; min-width: 0 }
+.say span { flex: 1; padding: 9px 12px; font-style: italic; min-width: 0 }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px }
+table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 14px }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top }
+th { font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--dim); background: var(--well) }
+tr:last-child td { border-bottom: 0 }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap }
+td .file { font: 13px var(--mono); word-break: break-all }
+td .what { color: var(--dim); font-size: 13px }
+.copy { font: 600 11px var(--mono); padding: 2px 8px; border-radius: 999px; white-space: nowrap }
+.copy.yes { color: var(--keep); border: 1px solid var(--keep) }
+.copy.no { color: var(--del); border: 1px solid var(--del) }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden }
+.seg button { border: 0; background: var(--panel); color: var(--fg); font: 600 13px var(--body); padding: 6px 12px; cursor: pointer }
+.seg button + button { border-left: 1px solid var(--line) }
+.seg button.on.keep { background: var(--keep); color: #fff }
+.seg button.on.del { background: var(--del); color: #fff }
+.seg button:disabled { opacity: .5; cursor: default }
+.mark { font: 11px var(--mono); color: var(--dim); margin-top: 4px }
+.gone { font: 600 12px var(--mono); color: var(--del) }
+.totals { display: flex; flex-wrap: wrap; gap: 10px 22px; font: 600 14px var(--mono); }
+.totals span b { font-variant-numeric: tabular-nums }
+.totals .d { color: var(--del) } .totals .k { color: var(--keep) } .totals .u { color: var(--dim) }
+.note { background: var(--well); border-radius: 8px; padding: 12px 14px; font-size: 15px; color: var(--dim) }
+.note b { color: var(--fg) }
+.status { font: 13px var(--mono); color: var(--dim) }
+@media (max-width: 520px) { .leghead { grid-template-columns: auto 1fr } .count { grid-column: 2 } .legno { font-size: 32px } }
+@media (prefers-reduced-motion: no-preference) { .step { transition: border-color .2s } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="who" style="color:var(--accent)">Kai + Jack · on the phone</div>
+    <h1>Baton Hand-over</h1>
+    <p>Four legs, in order: clear the old exports off Drive, set up Jack's machine, sync the Karen music video's Premiere folder, then open each other's timeline. Ticks and marks save as you click, and both of you see them live.</p>
+    <nav class="track" id="track"></nav>
+    <p class="status" id="status" style="margin-top:12px">Connecting…</p>
+  </header>
+
+  <section class="leg" id="leg-1">
+    <div class="leghead"><div class="legno">1</div><div><h2>Clear the old exports off Drive</h2><p>Videos over 150 MB that no Premiere project uses: finished films, test exports, old previews. Mark each one, then tell Claude. Deleted files sit in Drive's bin for 30 days.</p></div><div class="count" id="c1"></div></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Folder</th><th>File</th><th class="num">Size</th><th>Copy on Kai's machine</th><th>Keep or delete</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table></div>
+    <div class="totals" id="totals"></div>
+    <div class="say"><span>"Delete the renders marked on the hand-over page."</span><button type="button" data-copy="Delete the renders marked on the hand-over page.">Copy</button></div>
+    <div class="note"><b>Kept on purpose:</b> <code>camping vid/camping.mpeg</code> (5 MB) looks like an export, but the Camping project uses it. <b>Keep</b> <code>cut-final/preview.mp4</code> in Karen Music too: leg 4 plays it.</div>
+  </section>
+
+  <section class="leg" id="leg-2">
+    <div class="leghead"><div class="legno">2</div><div><h2>Set up Jack's machine</h2><p>Once only, in a WSL terminal inside the BadCode repo.</p></div><div class="count" id="c2"></div></div>
+    <ol class="steps" id="steps-2"></ol>
+  </section>
+
+  <section class="leg" id="leg-3">
+    <div class="leghead"><div class="legno">3</div><div><h2>Sync the Karen music video</h2><p>Kai's copy is already on Drive. Jack fetches what he's missing and opens the same Premiere project.</p></div><div class="count" id="c3"></div></div>
+    <ol class="steps" id="steps-3"></ol>
+  </section>
+
+  <section class="leg" id="leg-4">
+    <div class="leghead"><div class="legno">4</div><div><h2>Open each other's timeline</h2><p>The Karen timeline rebuilt on Jack's machine from the repo alone, then a note passed back to Kai.</p></div><div class="count" id="c4"></div></div>
+    <ol class="steps" id="steps-4"></ol>
+  </section>
+</div>
+
+<script>
+const ROWS = [
+  { id: 'r1', folder: 'Karen Story', file: 'Karen story vid.mp4', gb: 2.55, what: 'the finished Karen Story film', kai: false },
+  { id: 'r2', folder: 'Karen Music', file: 'story vid/Karen story vid.mp4', gb: 2.55, what: 'the same Karen Story film again, filed in the Music folder', kai: false },
+  { id: 'r3', folder: 'Karen Music', file: 'renders/karen-music-final-2026-11-09-4k-youtube.mp4', gb: 2.08, what: 'the finished Karen music video, 4K, as uploaded to YouTube', kai: true },
+  { id: 'r4', folder: 'Karen Music', file: 'All Day to Complain - yes.mp4', gb: 2.06, what: 'an mp4 of the song; the project uses its mp3 instead', kai: true },
+  { id: 'r5', folder: 'Karen Music', file: 'clips/recut/cut-r1…r5/picture.mp4 (5 files)', gb: 1.27, what: "old rounds' picture tracks; a script rebuilds them", kai: true },
+  { id: 'r6', folder: 'Camping Story', file: 'Camping story video.mp4', gb: 0.59, what: 'the finished Camping Story film', kai: false },
+  { id: 'r7', folder: 'Camping Music', file: 'camping vid/camping.mp4', gb: 0.46, what: 'a Camping music video export', kai: true },
+  { id: 'r8', folder: 'Camping Music', file: 'camping vid/test.mp4, test 2, test 3, test 4', gb: 1.78, what: 'four test exports', kai: true },
+  { id: 'r9', folder: 'gitpush-origin-master', file: 'clips/the-gaze/PREVIEW-the-gaze-wip.mp4', gb: 0.16, what: 'a work-in-progress preview of a scene since dropped', kai: true },
+];
+const STEPS = {
+  2: [
+    { id: 's1', who: 'Jack', t: 'Get the latest repo', cmd: 'git pull' },
+    { id: 's2', who: 'Jack', t: 'Install the tools', cmd: 'sudo apt update && sudo apt install -y rclone python3 ffmpeg' },
+    { id: 's3', who: 'Jack', t: 'Sign in to Google Drive', cmd: 'rclone config create badcode drive scope drive', x: 'A link prints. Open it, pick <b>your own</b> Google account (the one Badcode - Official is shared with), click <b>Allow</b>.' },
+    { id: 's4', who: 'Jack', t: 'Check the sign-in worked', cmd: 'rclone lsf badcode: --drive-root-folder-id 1aqkmEhj64V56V3TnyqbzuhUs8cGjWrym --dirs-only', x: 'Expect <b>Camping Music, Camping Story, Karen Music, Karen Story, Misc, gitpush-origin-master</b>.' },
+  ],
+  3: [
+    { id: 'p1', who: 'Jack', t: 'Tell Claude where your Karen music folder is', say: 'My Karen music folder is C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\…', x: 'Use the real folder. No copy yet? Make an empty folder first. Claude records it and pushes the shared folder list, so Kai\'s machine can open cuts made on Jack\'s.' },
+    { id: 'p2', who: 'Jack', t: 'See what would move (changes nothing)', cmd: 'scripts/drive/drive.sh status karen-music', x: 'Expect a <b>would PULL</b> list of what you\'re missing. Ignore any <b>would PUSH</b> list and <b>don\'t push</b>: Kai holds the newer copy. If row 2 of leg 1 is still on Drive, a 2.5 GB film is in the pull list.' },
+    { id: 'p3', who: 'Jack', t: 'Fetch it', cmd: 'scripts/drive/drive.sh pull karen-music --go', x: 'Ends with <b>done: N file(s) copied, nothing failed</b>. A rerun is always safe.' },
+    { id: 'p4', who: 'Jack', t: 'Open the Premiere project', x: 'Open <code>NEW Karen Music Vid_1.prproj</code> from your folder. Clips should come up online. If Premiere asks where media is, point it at one clip and it finds the rest. Close without saving.' },
+  ],
+  4: [
+    { id: 't1', who: 'Jack', t: 'Ask for the timeline', say: 'Show me the timeline for the Karen music video.', x: 'Claude builds the page from your folder and publishes it as a new link on your account. The video should play.' },
+    { id: 't2', who: 'Jack', t: 'Check Kai\'s feedback came with it', x: 'At the top: <b>Claude\'s read · round 4</b>. Under the slips: <b>8 notes on record</b> from round 2. They were written on an earlier cut, so their times may sit a little off.' },
+    { id: 't3', who: 'Jack', t: 'Leave a note and send it back', say: 'I\'ve noted the Karen timeline, copy the notes in and push.', x: 'Type a note on any slip first. Claude copies the notes into the repo and pushes.' },
+    { id: 't4', who: 'Kai', t: 'Pull and rebuild on Kai\'s machine', say: 'Pull, then rebuild the Karen music timeline.', x: 'Jack\'s note should show <b>on record</b> on Kai\'s page. That\'s the baton passed both ways.' },
+  ],
+};
+const LEGS = [[1, 'Clear exports'], [2, 'Jack\'s setup'], [3, 'Sync Karen'], [4, 'Timelines']];
+
+const $ = id => document.getElementById(id);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e };
+let db = null, user = null, me = null;
+const MARKS = {}, DONE = {}, NAMES = {};
+const nameOf = id => id === me ? 'you' : (NAMES[id] || 'someone');
+
+function copyBtn(b) {
+  b.onclick = async () => { try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 1400) } catch (e) {
+    const r = document.createRange(); r.selectNodeContents(b.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected' } };
+}
+
+function renderRows() {
+  const tb = $('rows'); tb.replaceChildren();
+  let del = 0, keep = 0, open = 0;
+  for (const r of ROWS) {
+    const m = MARKS[r.id] || {}, tr = el('tr');
+    const f = el('td'); f.textContent = r.folder;
+    const fi = el('td'); fi.append(el('div', 'file', r.file), el('div', 'what', r.what));
+    const s = el('td', 'num', r.gb.toFixed(2) + ' GB');
+    const k = el('td'); k.append(el('span', 'copy ' + (r.kai ? 'yes' : 'no'), r.kai ? 'yes' : 'no copy'));
+    const c = el('td');
+    if (m.deleted) { c.append(el('div', 'gone', 'Deleted ' + (m.deleted_on || ''))) }
+    else {
+      const seg = el('div', 'seg');
+      for (const [v, label, cls] of [['keep', 'Keep', 'keep'], ['delete', 'Delete', 'del']]) {
+        const b = el('button', cls + (m.choice === v ? ' on' : ''), label); b.type = 'button'; b.disabled = !db;
+        b.setAttribute('aria-pressed', m.choice === v ? 'true' : 'false');
+        b.onclick = () => mark(r.id, m.choice === v ? null : v); seg.append(b);
+      }
+      c.append(seg);
+      if (m.choice && m.by) c.append(el('div', 'mark', 'marked by ' + nameOf(m.by)));
+    }
+    if (m.deleted || m.choice === 'delete') del += r.gb; else if (m.choice === 'keep') keep += r.gb; else open++;
+    tr.append(f, fi, s, k, c); tb.append(tr);
+  }
+  const t = $('totals'); t.replaceChildren();
+  const a = el('span', 'd'); a.innerHTML = 'To delete: <b>' + del.toFixed(2) + ' GB</b>';
+  const b = el('span', 'k'); b.innerHTML = 'Keeping: <b>' + keep.toFixed(2) + ' GB</b>';
+  const u = el('span', 'u'); u.innerHTML = 'Not marked: <b>' + open + '</b> of ' + ROWS.length;
+  t.append(a, b, u);
+  $('c1').textContent = (ROWS.length - open) + ' / ' + ROWS.length + ' marked';
+  renderTrack();
+}
+
+function renderSteps() {
+  for (const leg of [2, 3, 4]) {
+    const ol = $('steps-' + leg); ol.replaceChildren(); let n = 0;
+    for (const s of STEPS[leg]) {
+      const d = DONE[s.id]; if (d && d.done) n++;
+      const li = el('li', 'step' + (d && d.done ? ' done' : ''));
+      const cb = el('input'); cb.type = 'checkbox'; cb.id = 'cb-' + s.id; cb.checked = !!(d && d.done); cb.disabled = !db;
+      cb.onchange = () => tick(s.id, cb.checked);
+      const body = el('div');
+      const t = el('label', 'stitle'); t.htmlFor = cb.id; t.append(el('span', 'who', s.who), el('span', '', s.t)); body.append(t);
+      const sb = el('div', 'sbody');
+      if (s.cmd) { const c = el('div', 'cmd'), code = el('code', '', s.cmd), b = el('button', '', 'Copy'); b.type = 'button'; b.dataset.copy = s.cmd; copyBtn(b); c.append(code, b); sb.append(c) }
+      if (s.say) { const c = el('div', 'say'), sp = el('span', '', '"' + s.say + '"'), b = el('button', '', 'Copy'); b.type = 'button'; b.dataset.copy = s.say; copyBtn(b); c.append(sp, b); sb.append(c) }
+      if (s.x) { const p = el('p', 'expect'); p.innerHTML = s.x; sb.append(p) }
+      if (d && d.done && d.by) sb.append(el('div', 'by', 'ticked by ' + nameOf(d.by)));
+      body.append(sb); li.append(cb, body); ol.append(li);
+    }
+    $('c' + leg).textContent = n + ' / ' + STEPS[leg].length + ' done';
+  }
+  renderTrack();
+}
+
+function renderTrack() {
+  const nav = $('track'); nav.replaceChildren();
+  for (const [n, label] of LEGS) {
+    const a = el('a'); a.href = '#leg-' + n;
+    a.append(el('span', 'n', String(n)), el('span', '', label), el('span', 'c', ($('c' + n).textContent || '').replace(' marked', '').replace(' done', '')));
+    nav.append(a);
+  }
+}
+
+async function mark(id, choice) {
+  if (!db) return;
+  const prev = MARKS[id]; MARKS[id] = choice ? { choice, by: me } : {}; renderRows();
+  try { const ref = db.doc('marks/' + id); if (choice) await ref.set({ row: id, choice, by: me, at: Date.now() }); else await ref.delete() }
+  catch (e) { MARKS[id] = prev; renderRows(); $('status').textContent = 'Not saved: ' + (e && e.code || 'error') + '. Try again.' }
+}
+async function tick(id, done) {
+  if (!db) return;
+  const prev = DONE[id]; DONE[id] = { done, by: me }; renderSteps();
+  try { await db.doc('steps/' + id).set({ step: id, done, by: me, at: Date.now() }) }
+  catch (e) { DONE[id] = prev; renderSteps(); $('status').textContent = 'Not saved: ' + (e && e.code || 'error') + '. Try again.' }
+}
+
+async function names(ids) {
+  ids = [...new Set(ids)].filter(i => i && i !== me && !NAMES[i]); if (!ids.length || !user) return;
+  try { const ps = await user.profiles(ids); for (const i of ids) NAMES[i] = (ps[i] && ps[i].name) || '' } catch (e) {}
+}
+
+document.querySelectorAll('button[data-copy]').forEach(copyBtn);
+renderRows(); renderSteps();
+
+(async () => {
+  const timer = setTimeout(() => { if (!db) $('status').textContent = 'Couldn\'t reach the page\'s storage. Reload to try again; the steps still read fine.' }, 10000);
+  db = await claude.use('db'); user = await claude.use('user');
+  clearTimeout(timer);
+  if (!db) { $('status').textContent = 'Sign in to claude.ai to tick steps and mark files. You can still read everything.'; return }
+  me = user ? await user.id() : null;
+  $('status').textContent = 'Live: ticks and marks save as you click.';
+  db.collection('marks').onSnapshot(async snap => {
+    for (const k in MARKS) delete MARKS[k];
+    for (const d of snap.docs) MARKS[d.id] = d.data() || {};
+    await names(snap.docs.map(d => (d.data() || {}).by)); renderRows();
+  }, e => { $('status').textContent = 'Lost the live connection (' + (e && e.code || 'error') + '). Reload the page.' });
+  db.collection('steps').onSnapshot(async snap => {
+    for (const k in DONE) delete DONE[k];
+    for (const d of snap.docs) DONE[d.id] = d.data() || {};
+    await names(snap.docs.map(d => (d.data() || {}).by)); renderSteps();
+  }, e => { $('status').textContent = 'Lost the live connection (' + (e && e.code || 'error') + '). Reload the page.' });
+})();
+</script>

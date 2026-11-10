@@ -4,6 +4,9 @@ Found 2026-11-10 in "Badcode - Official" on Google Drive. **Nothing has been del
 mark each row **Keep** or **Delete**; Claude then deletes only the rows marked Delete (they go to Drive's bin,
 restorable for 30 days) and records what went here.
 
+**Marked on the shared page:** https://claude.ai/artifact/8uxSsL3bAxB1ACUdG49dyY (source: `2026-11-10-drive-handover.html` beside this file).
+Before deleting, Claude copies the page's `marks` into `feedback/drive-handover/` next to this file and commits them.
+
 **Running order for the call**
 1. Set up Jack's machine (`scripts/drive/README.md`, steps 1–4: install, sign in, check the folder list).
 2. Go through the table below, one folder at a time, and mark each row.
