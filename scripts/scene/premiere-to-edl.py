@@ -2,6 +2,12 @@
 """Turn a hand-cut Premiere sequence into a timeline-format edl, so it can have a timeline page.
 
     python3 scripts/scene/premiere-to-edl.py <state.json> <edl.json> [--end SECONDS] [--title T]
+        [--from <previous edl.json>] [--by NAME] [--render <render.mp4>]
+
+--from: the edl the page showed before this Premiere edit. Its beats, words and headings are kept, and each
+  shot that is still there keeps its note; anything new or moved is marked as NAME's hand edit (--by, default
+  Kai). Clips are matched by their path inside the story folder, so an edit saved on another machine matches.
+--render: Premiere's own render of the sequence, scaled to 1080p as preview.mp4 beside the edl.
 
 <state.json> is the bridge's dump of the sequence (premiere_get_sequence writes
 <project dir>/.bridge/state-<sequence>.json). The other direction from premiere-plan.py: here
@@ -19,16 +25,24 @@ import json
 import pathlib
 import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
-from localmap import localize  # noqa: E402
+from localmap import localize, story_relpath, to_shell  # noqa: E402
+import subprocess
 
 ap = argparse.ArgumentParser()
 ap.add_argument('state')
 ap.add_argument('edl')
 ap.add_argument('--end', type=float)
 ap.add_argument('--title')
+ap.add_argument('--from', dest='prev')
+ap.add_argument('--by', default='Kai')
+ap.add_argument('--render')
 a = ap.parse_args()
 
 st = localize(json.loads(pathlib.Path(a.state).read_text()))
+for _tr in st.get('videoTracks', []) + st.get('audioTracks', []):  # D:\\x -> /mnt/d/x here, so file names read cleanly
+    for _it in _tr.get('items', []):
+        if isinstance(_it.get('mediaPath'), str):
+            _it['mediaPath'] = to_shell(_it['mediaPath'])
 seq = st['sequence']
 end = a.end or seq['end']
 
@@ -73,12 +87,43 @@ for tr in st['audioTracks']:
         events.append({'stem': stem, 't': round(it['start'], 3), 'dur': round(min(it['end'], end) - it['start'], 3),
                        'what': it['name'], 'src': it['mediaPath']})
 
-edl = {'sequence': seq['name'], 'fps': 24, 'total': round(end, 3), 'beats': beats, 'video': video,
+fps = 24
+if a.prev:  # carry the page forward: its beats and words, and each surviving shot's note
+    prev = localize(json.loads(pathlib.Path(a.prev).read_text()))
+    fps, beats = prev.get('fps', fps), prev['beats']
+    rel = lambda p: (story_relpath(p)[1] or p).lower()
+    kept = 0
+    for c in video:
+        c['beat'] = beat_at(c['start'])
+        same = [v for v in prev['video'] if rel(v['file']) == rel(c['file']) and abs(v['start'] - c['start']) < 1.5]
+        exact = [v for v in same if abs(v['start'] - c['start']) < 0.05 and abs(v['dur'] - c['dur']) < 0.05]
+        if exact:
+            c.update({k: exact[0][k] for k in ('why', 'id', 'beat') if k in exact[0]}); kept += 1
+        elif same:
+            c.update({k: same[0][k] for k in ('id', 'beat') if k in same[0]})
+            c['why'] = same[0].get('why', '') + f' ({a.by} re-trimmed it in Premiere)'
+        else:
+            c['why'] = f"{a.by}'s hand edit in Premiere"
+    for b in beats:
+        b['see'] = f"{sum(1 for v in video if v['beat'] == b['id'])} shots. " + (b.get('see') or '').split('. ', 1)[-1]
+
+edl = {'sequence': seq['name'], 'fps': fps, 'total': round(end, 3), 'beats': beats, 'video': video,
        'audio': audio, 'events': events,
        'flags': ['Built from the Premiere sequence as Kai cut it by hand; the video plays its render. '
                  'Crossfades show as overlapping shots; effects are in the render, not listed.']}
+if a.prev:
+    edl.update({k: prev[k] for k in ('title', 'heading') if k in prev})
+    edl['intro'] = (f"{a.by}'s edit in Premiere (sequence {seq['name']}), brought back onto this page shot for shot: "
+                    f"{kept} shots as before, {len(video) - kept} hand edits (marked in each shot's note).")
+    edl['flags'] = []
 if a.title:
     edl['title'] = a.title
+if a.render:
+    edl['render'] = a.render
+    pathlib.Path(a.edl).parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', a.render, '-vf', 'scale=1920:1080', '-c:v', 'libx264', '-preset',
+                    'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k',
+                    str(pathlib.Path(a.edl).parent / 'preview.mp4')], check=True)
 pathlib.Path(a.edl).parent.mkdir(parents=True, exist_ok=True)
 pathlib.Path(a.edl).write_text(json.dumps(edl, indent=1))
 print(json.dumps({'beats': len(beats), 'clips': len(video), 'stems': len(audio), 'total': end}))
