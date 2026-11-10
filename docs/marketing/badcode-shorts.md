@@ -1,6 +1,6 @@
 # BadCode Shorts: the idea slate
 
-**Status:** v1, 2026-11-10 (Jack). Written from the Kai and Jack meeting transcript and eleven reference images Jack collected.
+**Status:** v2, 2026-11-10 (Jack). v2 adds #23 and the **20-second cut** of every idea (below), which is the version to build from. Written from the Kai and Jack meeting transcript and eleven reference images Jack collected.
 Nothing here is ruled. **Jack writes the jokes:** each idea has a premise and the shape of the punch. The punchline itself is a blank for him to fill.
 
 ## What a BadCode short is (from the meeting)
@@ -20,6 +20,38 @@ Nothing here is ruled. **Jack writes the jokes:** each idea has a premise and th
 - **The reader rules apply** (`docs/marketing/the-reader.md`): name the person who decided, never the technology; never say "you've been fooled"; on immigration, aim at the spending decision and never at migrants.
 - **Several of these images show old news** (2023 and 2024, under the last government). Following Kai's "no news cycle" rule, each idea below takes the **timeless pattern** from its image, not the headline.
 - The marketing-gatekeeper agent checks every short before it goes out.
+
+---
+
+## ✂️ The 20-second cut (v2: build from this)
+
+Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier when you trim the fat." Each idea is cut to three beats or fewer (seconds in brackets). The longer write-ups further down are background only.
+
+1. 🚑 **Priority Lane:** an ambulance is held at the lights (4) → inside the motorcade, a minister on the phone: "I said *raspberry*." (6) → it sweeps past the ambulance, and the meme lands (5). **15s.** The paramedic line is cut; the ambulance says it already.
+2. 🪑 **Same Bench:** the 1919 cartoon: "Forget it." (5) → the same bench today, the same fat cat, a nurse: "Forget it." (5) → he hasn't aged a day (4). **14s.** The 2054 era is dropped.
+3. 🏠 **Howard Street:** a sitcom title card and four neighbours bickering (6) → pull back to one landlord counting rent (6) → the laugh track cuts dead (2). **14s.**
+4. 🚪 **Name's Not Down:** "ID?" "I wrote that sign." "Then you know." **10s.**
+5. 🪆 **Unelected:** dolls open, UNELECTED, UNELECTED, UNELECTED (8) → the tiny one says VOTER, unopened (4). **12s.**
+6. 💷 **Sponsor a Chancellor:** "Jeremy only earns £100,000." (6) → "£3 a month buys him a second wine fridge." (5) **11s.**
+7. ✈️ **Party of One:** a safety demo for one man (6) → "The cost has been added to your council tax." (4) **10s.** The pensioner cutaway is cut.
+8. 🚆 **Great Train Robbery:** the gang creeps aboard (5) → the fares board (3) → masks off, a nod of respect, they leave (5). **13s.**
+9. 🧾 **Secretary's Rate:** two tax bills, hers is higher, he hands her his to file. **10s.**
+10. 🌊 **The Radiator:** the radiator is labelled GULF STREAM and someone fiddles with it (5) → the room freezes (4) → "You broke the free heating." (4) **13s.**
+11. 📏 **Rules For Thee:** laws drop out for everyone else, ME is SOLD OUT. **8s.**
+12. 🎱 **Magic 8 Ball:** a question, a shake, the answer. **6s.** Fast enough to do three in one short.
+13. 🎙️ **Balaclava Newsreader:** one real headline read straight, and nobody blinks. **10s.**
+14. 🍞 **Butter Side Down:** toast falls, then "It wasn't gravity." **6s.**
+15. 🐈 **Schrödinger:** the box opens and the cat is holding a complaint form. **6s.** The explainer is cut.
+16. 🦛 **Just a Hippo:** **5s.**
+17. 👋 **Hello, I'm BadCode:** "I'm from the future. It didn't go well." **8s.**
+18. 🕹️ **By the Balls:** the claw grabs the house and goes limp, three times (9) → "It was never broken. It was set." (4) **13s.**
+19. 🛒 **Unexpected Item:** the shopper scans, bags and IDs themselves, and the receipt reads WAGES: £0.00. **10s.**
+20. 🥂 **Trickle Down:** the top glass keeps growing and the rest stay dry. **10s.**
+21. 🏦 **Too Big to Fail:** two piggy banks fall, one gets caught on a pillow, the kid gets the bill. **12s.**
+22. 📦 **Meal Deal Archaeology:** a museum glass case, the price crossed out ten times. **8s.**
+23. 🎖️ **Stiff Upper Lip:** a 1950s film, a dad teaching his boy "Sad: stare at the wall. Love: a handshake." (9) → hard cut to the same boy at 75, doing the same lesson with his grandkid (6) → the button, ⬜ Jack (4). **19s.**
+
+**Top five (not ruled):** 1 Priority Lane · 3 Howard Street · 23 Stiff Upper Lip · 2 Same Bench · 12 Magic 8 Ball.
 
 ---
 
@@ -131,6 +163,15 @@ Nothing here is ruled. **Jack writes the jokes:** each idea has a premise and th
 ### 17. 👋 Hello, I'm BadCode *(Kai)*
 **What it is:** a balaclava'd figure looks into the camera: "Hello. I'm from the future. It didn't go well. Watch this space."
 **Note:** this is the first post for the socials and the profile intro, and it doubles as the channel trailer.
+
+### 23. 🎖️ Stiff Upper Lip *(Jack and Kai)*
+**What it is:** boomers learned their feelings from parents with untreated war PTSD.
+**Hook:** a cheery 1950s public-information film, *"Your Feelings, and How Not To Have Them."*
+**What happens:** a dad back from the war teaches his little boy each emotion. Sad: stare at the wall. Love: a firm handshake at the station.
+**The turn:** a hard cut to now. That boy, at 75, does the same lesson with his grandkid, word for word. ⬜ Jack's button.
+**Point:** nobody helped the men who came back, so the silence got passed down as "character". The joke is on the neglect, not on boomers.
+**Links:** pairs with Same Bench (#2), the same "forget it".
+🔴 **Reader check:** our reader (`docs/marketing/the-reader.md`) often has boomer parents or is one. Aim at the system that left veterans to cope alone, never sneer at old people.
 
 ---
 
