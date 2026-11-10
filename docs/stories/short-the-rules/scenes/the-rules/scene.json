@@ -1,0 +1,13 @@
+{
+  "story": "short-the-rules",
+  "scene": "the-rules",
+  "prefix": "tr",
+  "title": "The Rules",
+  "heading": "BadCode Shorts: The Rules",
+  "media": "/mnt/d/badcode-videos/shorts/the-rules",
+  "beats": [
+    {"key": "stack", "name": "The stack", "at": "0s", "blurb": "The gang looks up at a massive stack of paper: THE RULES. Are the rules working?"},
+    {"key": "window", "name": "The window", "at": "", "blurb": "\"Let's look out the window.\" Outside: utter chaos."},
+    {"key": "tear", "name": "Tear it up", "at": "", "blurb": "Back inside, the gang tears up the rules."}
+  ]
+}

@@ -1,6 +1,6 @@
 # BadCode Shorts: the idea slate
 
-**Status:** v2, 2026-11-10 (Jack). v2 adds #23 and the **20-second cut** of every idea (below), which is the version to build from. Written from the Kai and Jack meeting transcript and eleven reference images Jack collected.
+**Status:** v3, 2026-11-10. v2 (Jack) added #23 and the **20-second cut** of every idea (below), which is the version to build from. v3 (Kai) adds **#24 The Rules, the short we are building first**, and #25 to #32, the balaclava gang. **This file is the running list of every short:** add new ones at the foot of the numbered list (the `new-short` skill keeps it). Written from the Kai and Jack meeting transcript and eleven reference images Jack collected.
 Nothing here is ruled. **Jack writes the jokes:** each idea has a premise and the shape of the punch. The punchline itself is a blank for him to fill.
 
 ## What a BadCode short is (from the meeting)
@@ -50,6 +50,16 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 21. 🏦 **Too Big to Fail:** two piggy banks fall, one gets caught on a pillow, the kid gets the bill. **12s.**
 22. 📦 **Meal Deal Archaeology:** a museum glass case, the price crossed out ten times. **8s.**
 23. 🎖️ **Stiff Upper Lip:** a 1950s film, a dad teaching his boy "Sad: stare at the wall. Love: a handshake." (9) → hard cut to the same boy at 75, doing the same lesson with his grandkid (6) → the button, ⬜ Jack (4). **19s.**
+
+24. 📜 **The Rules** *(Kai: BUILDING)*: the gang stares up at a huge stack of paper labelled THE RULES (5) → "If the rules were working… let's look out the window." Outside: chaos (6) → back inside, they tear the rules up (5), with music. **~16s.**
+25. 🚔 **Call the Police:** "It's a robbery!" "Where?" They point out of the window (6) → "That's not a robbery, that's the economy." (4) → the song's hook (3). **13s.**
+26. 🕳️ **The Basement:** the tunnel breaks into the vault (4) → a printer running, a suit feeding it: "Can I help you?" (5) → they back into the hole (3). **12s.**
+27. 🍫 **The Fredo Job:** heist planning montage (6) → the target: a 10p Fredo (3) → "It was 10p when we started planning." (4) **13s.**
+28. 💸 **Wrong Way Round:** CCTV, the gang runs INTO the bank and fills the vault (6) → "Nothing was taken. Somehow, everyone is poorer." (5) **11s.**
+29. 🪄 **Look at the Hand:** two blokes argue over which hand (6) → both empty, wallets gone (3) → "It's never the hand you're watching." (3) **12s.**
+30. 🥶 **Grandma Freezing:** a night break-in finds a pensioner by a dead radiator (6) → they feed her meter with the stolen coins (6). **12s.**
+31. 🪧 **Wanted:** the gang's WANTED poster next to a banker's PROMOTED. **6s.**
+32. 🚦 **Getaway, Held:** the getaway car held at the lights beside Jack's ambulance; driver and paramedic share a look. **10s.**
 
 **Top five (not ruled):** 1 Priority Lane · 3 Howard Street · 23 Stiff Upper Lip · 2 Same Bench · 12 Magic 8 Ball.
 
@@ -197,6 +207,44 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 ### 22. 📦 Meal Deal Archaeology
 **What it is:** a museum in 2054. The exhibit is a meal deal under glass with a price tag that has been crossed out and rewritten many times.
 **Point:** inflation, told as the future's history (the Future History idea in `docs/ideas/badcode-future-history.md`).
+
+---
+
+## The balaclava gang (Kai and Claude, 2026-11-10)
+
+**The engine:** anyone in a BadCode balaclava *is* BadCode (`docs/brand/README.md`), so the gang are never the villains. They are professional thieves from the future, appalled at how much theft is legal. Every gang short is a version of *the robbers get out-robbed by the system.* A recurring cast, not a format. Their look comes from the Bank Robbery music video (Colour Noir, `docs/stories/bank-robbery/songs/mv-colour-noir/`, and `mv-gang/`). **Idea (not ruled):** close each gang short on three seconds of the Bank Robbery song's hook ("Robbery, robbery! Call the police!"), so every one points at the music video.
+
+### 24. 📜 The Rules *(Kai: BUILDING)*
+**Project:** `short-the-rules`, [`docs/stories/short-the-rules/`](../stories/short-the-rules/README.md) (made with the `new-short` skill).
+**Kai's words:** "There's a lot of rules and a lot of them are sensible. But at the same time, a lot of them are not sensible. And how do we know, how do we measure this? Let's look out the window. Is everything working?"
+**What happens:** the gang sits looking up at a massive stack of paper labelled THE RULES. Caption: ARE THE RULES WORKING? "Let's look out the window." Outside: utter chaos. Back inside, the gang tears up the rules.
+**Point:** "don't murder people" is a good rule and nobody questions it; "a company is a separate legal person, so its directors aren't on the hook for its debts" is one we should challenge. The test of the rule book is the street outside. The real target is **deference**: working-class people hand their say to credentialed establishment figures to make the rules for them, and it isn't working. Full permission to look at the rules and change them. A challenge to the rule-makers.
+**Music:** yes (Kai). ⬜ Which music is open.
+🔴 **Check:** the corporate-liability example must be stated accurately before it appears on screen (limited liability and the "separate legal person" rule are real; "not responsible for the illegal actions of their directors" is not quite the law). ⬜ `marketing-researcher`. Tearing up the rules must read as *rewrite them*, not "no rules": keep the good-rule beat.
+
+### 25. 🚔 Call the Police
+The gang bursts into a police station: "It's a robbery!" "Where?" They point out of the window at the estate agent's rent board, the bank, a petrol price. Sergeant: "That's not a robbery, that's the economy." The song's hook. *Straight from the chorus.*
+
+### 26. 🕳️ The Basement
+A heist tunnel breaks through the vault wall into a basement where a printer is running and a man in a suit is feeding it paper. "Can I help you?" They back into the hole. *("It happened in da basement.")* 🔴 A metaphor: never a "QE caused…" caption (`docs/stories/bank-robbery/research.md`).
+
+### 27. 🍫 The Fredo Job
+An Ocean's Eleven planning montage (blueprints, a laser grid) for the 10p Fredo in a corner-shop jar. They pull it off; it's gone up. "It was 10p when we started planning." The Bank Robbery short's own Fredo. ⬜ Check today's price.
+
+### 28. 💸 Wrong Way Round
+CCTV: the gang runs *into* a bank with bags of cash, stuffs the vault and escapes. News caption: "Nothing was taken. Somehow, everyone is poorer." The Bank Robbery film's idea in ten seconds.
+
+### 29. 🪄 Look at the Hand
+A balaclava'd street magician, two blokes (one left, one right) arguing which hand has the coin. Both hands empty; both wallets gone. "It's never the hand you're watching." *("Divide and conquer, just look at the hand.")* Neither man's worry is mocked (reader rule 4).
+
+### 30. 🥶 Grandma Freezing
+A night break-in finds a pensioner in her coat beside a dead radiator. The gang look at each other, then feed her meter with the stolen pound coins. The nurture under the snark.
+
+### 31. 🪧 Wanted
+A police noticeboard: the gang's WANTED poster ("stole £40,000") beside a banker's PROMOTED poster ("lost billions"). Invented figures, no real bank.
+
+### 32. 🚦 Getaway, Held
+The gang's getaway car is held at the lights for the motorcade, beside Jack's ambulance (#1). The driver and the paramedic share a look. The shorts start to share one world.
 
 ---
 
