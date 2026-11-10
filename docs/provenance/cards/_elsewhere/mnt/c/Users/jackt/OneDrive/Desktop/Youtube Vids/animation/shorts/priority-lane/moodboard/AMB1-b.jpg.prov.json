@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/AMB1-b.jpg",
+ "made": "2026-11-10T15:19:04.737Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 close photograph of an ambulance driver sitting at a red light at night in a British city in the rain, seen from the passenger seat across the cab. He is a heavyset paramedic in his forties in a dark green uniform with a hi-vis stripe, stubble, creases round his eyes, both hands gripping the bottom of the steering wheel, mouth shut tight, staring forward and slightly up at the light. He sits in the right half of the frame, his profile cut by the edge, with the rain-streaked windscreen filling the left side and the top of the frame. The only real light on his face is the deep red of the traffic light pouring through the wet glass, so one side of his face glows red and the other falls into teal shadow; a faint amber glow from the dashboard instruments catches his knuckles from below, and a pulse of blue from the ambulance's own beacons reflects off the wet bonnet. Through the windscreen, the wide red light and the smeared tail lights of the stopped traffic dissolve into raindrops on the glass, which are in sharp focus at the edge of the frame while the street beyond is soft. The background behind his head is the dark side window, raindrops catching orange from a sodium street lamp. Shot on a 50mm lens close to wide open, CineStill 800T, red halation round every light, heavy grain, underexposed, lifted blacks, a little handheld tilt. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c32a3b8f-0ecf-4ffb-9eab-431a5c0fa345"
+}

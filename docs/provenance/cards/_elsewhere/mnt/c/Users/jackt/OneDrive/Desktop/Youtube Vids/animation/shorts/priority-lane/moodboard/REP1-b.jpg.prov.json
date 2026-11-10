@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-b.jpg",
+ "made": "2026-11-10T15:22:43.647Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photorealistic night street photograph, taken from across a wide wet junction in a British city with a long telephoto lens that stacks the scene into flat, compressed layers. The bottom third of the frame is wet black tarmac smeared with long vertical red and blue reflections, and across it a dark saloon car from a politician's motorcade crosses in motion blur, cutting through the foreground. In the middle band, small and slightly left of centre on the far pavement, stands a lone TV news reporter in a pool of cold white light from his camera crew's lamp: a dark rain jacket, black gloves, a plain black microphone held to his chest, and a full knitted balaclava with no openings, a white ring stitched around the whole face and a red triangle over his left eye, on the right side of the picture at about two o'clock. He faces the lens, tiny, calm and upright, as if none of it is happening. Beside him and towering over him on the right, an ambulance sits stopped at a red traffic signal, its blue beacons flashing into the drizzle, while a police motorcycle outrider in a high-visibility jacket holds one gloved palm up at it and two more black saloons glide through the junction behind. Above them the frame rises into fog: two orange sodium street lamps blooming in the haze and the dim outline of tall terraced buildings fading to teal-black. Focus sits on the reporter's plane; the crossing car in front is soft. Shot on CineStill 800T pushed two stops, heavy grain, red halation around every point of light, underexposed with lifted blacks, the frame faintly tilted as if handheld from a traffic island. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "71e92da1-4386-4049-bf7f-b130d38b7c88"
+}

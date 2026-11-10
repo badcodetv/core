@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/AMB1-c.jpg",
+ "made": "2026-11-10T15:19:29.768Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 detail photograph inside the back of a British ambulance at night, low and close at the height of the stretcher. In the upper half of the frame, a paramedic's blue nitrile-gloved hand rests on the edge of a portable patient monitor clamped to the stretcher rail; the screen glows soft green with a heart trace, its numbers too blurred to read, and that green light is the main light on the hand and on the creased green sleeve above it. In the lower part of the frame, out of focus, a fold of pale blanket and the clear tube of an oxygen line curl away towards the corner. The second paramedic is only a soft shape in the background, half in shadow, leaning forward between the front seats. Behind them, small and high in the frame, the rain-covered windscreen glows with a single red traffic light and a band of stopped red tail lights, all of it blurred into round bokeh through the wet glass, and flashes of blue beacon light catch the edges of the cabinets. Focus is sharp on the gloved hand and the monitor's edge, falling away fast behind. The rest of the compartment sinks into teal-black, with a dim cold strip light overhead. Shot on a 35mm film camera, CineStill 800T, red halation round the distant light, visible grain, underexposed, lifted blacks, slightly off-level as if held by hand. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "1610cb8d-16ff-4766-bff2-ffb3f00aa54f"
+}

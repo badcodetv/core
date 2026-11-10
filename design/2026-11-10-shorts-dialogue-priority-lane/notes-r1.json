@@ -1,0 +1,15 @@
+{
+ "round": 1,
+ "plan": [
+  "Your two notes on 1A are now draft 1D, at the top: the reporter's opening line, then the minister's 'raspberry-shaped hors d'oeuvres!', then the reporter closes with 'A politician blocking the path of an ambulance. Poetic, really...'.",
+  "I dropped the LEMON CURD ticker and 'More as we get it', because your line is the new button. You decide: press Pick on 1D if it's right, or note any line."
+ ],
+ "replies": {
+  "1-1A-L2": "In 1D as the minister's line: \"I said raspberry-shaped hors d'oeuvres!\" Note this replaces Kai's 'I said raspberry.'",
+  "1-1A-L3": "In 1D as the reporter's last line, said flat to camera: \"A politician blocking the path of an ambulance. Poetic, really...\" Tell me if you wanted it as the on-screen ticker instead."
+ },
+ "kai_round1": {
+  "1-1A-L2": " I said raspberry- shaped Hors-d’œuvres!",
+  "1-1A-L3": "politician blocking the path of an ambulance, poetic really... "
+ }
+}

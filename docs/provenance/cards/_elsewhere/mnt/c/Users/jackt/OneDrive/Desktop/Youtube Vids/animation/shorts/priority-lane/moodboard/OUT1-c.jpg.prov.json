@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-c.jpg",
+ "made": "2026-11-10T15:21:27.654Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph taken with a long telephoto lens from the far side of a rain-wet British city junction at night, the whole scene compressed flat. The foreground is filled by the motorcade passing between the camera and everything else: the dark flank of a black saloon car sweeps across the bottom half of the frame as a motion-blurred slab of glossy paint and reflected orange streetlight, a second car's rear corner and red taillight just leaving the left edge. In the gap above the passing roofline, sharp and still, stands the held moment: a police motorcycle outrider in a hi-vis jacket and white helmet, side-on, his gloved hand raised flat toward an ambulance stopped close behind him. The ambulance's yellow-and-green chequered bonnet and blue beacons sit just right of centre, the blue light catching in the rain, its signage unreadable at this distance. A red traffic light glows above it. Behind, a queue of stopped headlights and a row of terraced shopfronts dissolve into a pale fog band, two sodium lamps blooming into the haze high in the frame, the night sky teal-green. Shot on CineStill 800T with a 200mm lens, focus held on the outrider's glove and the ambulance, red halation round the lights, heavy grain, underexposed with lifted blacks, rain visible as soft diagonal streaks across the frame. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b5a36e28-63a0-44d3-9fa9-8501c0075610"
+}

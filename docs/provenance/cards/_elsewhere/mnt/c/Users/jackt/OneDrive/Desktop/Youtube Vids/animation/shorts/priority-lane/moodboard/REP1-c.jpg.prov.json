@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-c.jpg",
+ "made": "2026-11-10T15:23:28.429Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photorealistic still from very low on a wet British city kerb at night, the camera almost resting on the gutter and looking up at a TV news reporter delivering a live report. The lower part of the frame is a rippling rain puddle catching the red of a traffic light and the blue of an ambulance's beacons, out of focus, with a black camera cable snaking through the water. The reporter stands in the left half of the frame from the knees up, rising tall against the night, gripping a plain black microphone with a blank foam windshield in a black gloved hand at chest height, his other gloved hand loosely at his side. He wears a long dark charcoal raincoat with the collar turned up and a full knitted balaclava with no openings, a white ring stitched around the whole face and a red triangle high over his left eye, so it sits on the right side of the picture at about two o'clock; the mouth area is plain wool. He looks down the lens with total composure. Over his right shoulder, high in the frame and softly blurred, a red traffic signal glows through the drizzle, beneath it the lit cab of an ambulance waiting at the line, and the headlights of a motorcade of dark saloon cars rake across the junction, a police outrider's raised gloved hand silhouetted against them. His face is lit from below and one side by the wet street's orange sodium glow, the other side dropping into teal shadow. A 28mm lens, focus on his mask and microphone, the background and the puddle both soft. Shot on CineStill 800T, red halation round the signal and beacons, visible grain, underexposed with lifted teal-black shadows, a slight Dutch tilt. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e945c5cc-b8d6-413c-9e48-1e1b3ea2fe2e"
+}

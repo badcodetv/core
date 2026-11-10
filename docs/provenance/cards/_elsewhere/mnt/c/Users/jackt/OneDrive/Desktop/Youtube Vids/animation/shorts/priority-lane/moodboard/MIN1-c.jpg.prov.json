@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-c.jpg",
+ "made": "2026-11-10T15:26:20.400Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photorealistic vertical 9:16 night photograph from the driver's seat of a dark ministerial car stopped in the rain, looking forward and slightly up at the rear-view mirror. In the mirror, small and sharp in the upper middle of the frame, is the reflection of an invented minister in the back seat, a man in his late fifties with a broad pasty face, heavy bags under narrow grey eyes, a bulbous red-veined nose, thin straw-coloured hair plastered to his forehead with damp, and a fleshy neck squeezed by his collar. He has a phone clamped to his ear, lips pressed together, brow knotted, staring straight into the mirror with petty fury. Around the mirror the windscreen is sheeted with rain, and beyond it, soft and out of focus, a red traffic light and the flashing blue beacons of an ambulance held at the junction break into long streaks and blooms through the wet glass, the wipers frozen halfway across. In the soft lower foreground the chauffeur's black leather gloved hands rest on the steering wheel, lit only by the faint amber dashboard glow. Everything outside the light sources falls to teal-black; a sodium street lamp throws a warm orange wash across the top of the glass. Shot on CineStill 800T with a 35mm lens, focus on the mirror, red halation round the beacons and the traffic light, visible grain, underexposed with lifted blacks, a slight handheld tilt. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "390ba9d3-33f5-4488-878c-4ec7916f9496"
+}

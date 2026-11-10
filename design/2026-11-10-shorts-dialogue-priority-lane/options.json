@@ -1,0 +1,393 @@
+{
+ "page_title": "Priority Lane Dialogue",
+ "title": "Priority Lane dialogue options",
+ "about": "This page lays out ten writers' versions of the Priority Lane dialogue, ranked, with three combined drafts for the director to pick from. Nothing has been changed yet: no scene file, script or voice has been touched.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Plain logic",
+   "title": "The logic said plainly, like a traffic report",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "From the future",
+   "title": "Reporting from the future",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-04-from-the-future.md"
+  },
+  {
+   "id": "05",
+   "name": "Other side wins",
+   "title": "The other side wins",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-05-other-side-wins.md"
+  },
+  {
+   "id": "06",
+   "name": "Reversal",
+   "title": "Reversal, the viewer gets there first",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "The chorus",
+   "title": "The chorus, side characters voice it",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-07-chorus.md"
+  },
+  {
+   "id": "08",
+   "name": "Place is argument",
+   "title": "The place is the argument",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft from UK TV satire",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, the button that feels inevitable",
+   "file": "design/2026-11-10-shorts-dialogue-priority-lane/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "Priority Lane",
+   "where": "BadCode Short #1, all four beats",
+   "scene": "docs/stories/shorts/priority-lane",
+   "target": "about 20 s total, spoken words 12-14 s max",
+   "now_from": "docs/marketing/badcode-shorts.md (20-second cut) and Kai in the meeting",
+   "now": [
+    {
+     "who": "REPORTER",
+     "line": "[Jack's line, not yet written]"
+    },
+    {
+     "who": "MINISTER",
+     "line": "[on the phone] I said raspberry."
+    },
+    {
+     "who": "CAPTION",
+     "line": "[the meme lands; not yet written]"
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1D",
+     "name": "1A with Jack's lines (round 2)",
+     "length": "about 20 s (8 s speech)",
+     "total": "~8 s speech, ~20 s with picture",
+     "bet": "Jack's round 1 notes on 1A: the minister's line gets bigger and posher, and the button is the reporter's deadpan 'poetic, really'.",
+     "lines": [
+      {
+       "who": "REPORTER",
+       "line": "[straight to camera, rain on the mic, ambulance behind] Traffic is being managed, to keep an important journey moving.",
+       "tags": [
+        "09",
+        "01",
+        "03"
+       ],
+       "s": "4.0"
+      },
+      {
+       "who": "MINISTER",
+       "line": "[on the phone, back seat, furious] I said raspberry-shaped hors d'oeuvres!",
+       "tags": [
+        "Jack"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "REPORTER",
+       "line": "[back to camera, flat, as the motorcade clears] A politician blocking the path of an ambulance. Poetic, really...  (PUNCHLINE)",
+       "tags": [
+        "Jack"
+       ],
+       "s": "3.0"
+      }
+     ],
+     "notes": [
+      "Jack's two notes on 1A, round 1, put in as written.",
+      "I gave the 'poetic, really' line to the reporter as his closing line, in place of the LEMON CURD ticker and 'More as we get it'. If you meant it as the on-screen ticker, say so.",
+      "'I said raspberry.' (Kai's line) is now Jack's longer version."
+     ]
+    },
+    {
+     "id": "1A",
+     "name": "The wrong emergency",
+     "length": "about 20 s (7 s speech)",
+     "total": "~7 s speech, ~20 s with picture",
+     "bet": "Bureaucratic calm plus a ticker that treats the lemon curd as the live story is enough: the viewer does the sum, so almost nothing is said.",
+     "lines": [
+      {
+       "who": "REPORTER",
+       "line": "[straight to camera, rain on the mic, ambulance behind] Traffic is being managed, to keep an important journey moving.",
+       "tags": [
+        "09",
+        "01",
+        "03"
+       ],
+       "s": "4.0"
+      },
+      {
+       "who": "MINISTER",
+       "line": "[on the phone, back seat, furious] I said raspberry.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "CAPTION",
+       "line": "[news ticker over the still-waiting ambulance, hold 2.5 s] LEMON CURD INCIDENT: DEVELOPING  (PUNCHLINE)",
+       "tags": [
+        "01",
+        "05",
+        "09"
+       ],
+       "s": "0"
+      },
+      {
+       "who": "REPORTER",
+       "line": "[back to camera, not turning round] More as we get it.",
+       "tags": [
+        "01",
+        "02",
+        "10"
+       ],
+       "s": "1.5"
+      }
+     ],
+     "notes": [
+      "Lemon curd is never spoken: it is read, so the caption must hold 2.5 s minimum and be legible on a phone.",
+      "'Important journey' must be read bland, not approving. If it sounds like endorsement, swap to 'Traffic is being managed.' (01).",
+      "Trimmed 09's 'jam' double meaning and 'We will bring you more on the jam'.",
+      "Protected line kept verbatim, no added words.",
+      "Risk: very bare. If the short feels generic, add 04's future flavour back first."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "The delay ledger",
+     "length": "about 19 s (10 s speech)",
+     "total": "~10.5 s speech, ~20 s with picture",
+     "bet": "Traffic-report grammar does the sneering: two vehicles, two statuses, and a button that puts the wrong thing on the same ledger.",
+     "lines": [
+      {
+       "who": "CAPTION",
+       "line": "[lower third over beat 1] LIVE: A-ROAD, 11.47PM",
+       "tags": [
+        "03"
+       ],
+       "s": "0"
+      },
+      {
+       "who": "REPORTER",
+       "line": "[to camera, flat regional, beat 2] Traffic update. The ambulance is held at a red light. A car is coming through.",
+       "tags": [
+        "03",
+        "10"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "MINISTER",
+       "line": "[on the phone, motorcade passing] I said raspberry.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "REPORTER",
+       "line": "[beat 4, same tone, not turning] Ambulance delay: four minutes. Raspberry delay: ongoing. Back to the studio.  (PUNCHLINE: 'Raspberry delay: ongoing.')",
+       "tags": [
+        "03",
+        "02",
+        "06"
+       ],
+       "s": "4.5"
+      }
+     ],
+     "notes": [
+      "Cut 03's 'Police confirm the minister is running late' and 'The minister is not': 'is not' edges toward stating the point. Swap it back in only if Jack wants more bite.",
+      "'Four minutes' is an invented figure; keep it vague (or 'some minutes') if the short could be read as a real incident.",
+      "Relies on the audience hearing the minister line over the motorcade: lift it in the mix.",
+      "Alternate buttons: caption only, 'ESTIMATED DELAY: AMBULANCE 4 MIN / JAM: UNKNOWN'.",
+      "Protected line kept verbatim."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "Where was I?",
+     "length": "about 20 s (9 s speech)",
+     "total": "~9 s speech, ~20 s with picture",
+     "bet": "Let the audience finish the reporter's sentence before the motorcade does, then let a deadpan reporter lose his place: the point is completed by the viewer, never spoken.",
+     "lines": [
+      {
+       "who": "REPORTER",
+       "line": "[straight to camera, ambulance and outrider behind, blue light on the balaclava] Behind me, an ambulance, held at a red light. The road ahead is empty. They're waiting for--",
+       "tags": [
+        "06",
+        "04"
+       ],
+       "s": "5.0"
+      },
+      {
+       "who": "MINISTER",
+       "line": "[motorcade siren swallows the reporter; back seat, on the phone] I said raspberry.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "REPORTER",
+       "line": "[back on camera, tail lights passing, not a flicker] Sorry. Where was I?  (PUNCHLINE)",
+       "tags": [
+        "06"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "CAPTION",
+       "line": "[lower third, regional TV font, over the ambulance still waiting] LIVE: LEMON CURD SITUATION DEVELOPING",
+       "tags": [
+        "06",
+        "01",
+        "10"
+       ],
+       "s": "0"
+      }
+     ],
+     "notes": [
+      "The empty road must be visible in beat 1 or 'waiting for' has no target.",
+      "Needs sound design: siren over his voice, or the cut-off looks like a mistake.",
+      "Played with any wink it dies. Weak-joke risk is real; fallback button is 'Back to the studio.' (06 alt A).",
+      "Optional future flavour (04): a 0 s lower third 'BADCODE NEWS. LIVE FROM 2041.' in beat 2.",
+      "Left out 06's paramedic alt: it risks sympathy overshadowing the satire.",
+      "Protected line kept verbatim."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "09",
+     "length": "~10 s",
+     "verdict": "Best mechanic: gravitas on the wrong object plus a ticker as second voice means the gap lands unspoken. Fails: 'important journey' risks sounding like endorsement; 'jam' pun is too cute; 'Lemon curd.' added before the protected line is unneeded because the caption can set it up."
+    },
+    {
+     "rank": 2,
+     "shape": "03",
+     "length": "~13 s",
+     "verdict": "Strongest button ('Raspberry delay: ongoing') and flat voice. Fails: the 7 s opening reporter line is too long and 'The minister is not' sits one step from stating the point; invented delay figure."
+    },
+    {
+     "rank": 3,
+     "shape": "06",
+     "length": "~10 s",
+     "verdict": "The viewer finishes the sentence, so the point is truly unsaid; 'Where was I?' is a clean deadpan button. Fails: depends on sound design and on a weak-ish joke not being winked at; 'waiting for--' needs a clearly empty road."
+    },
+    {
+     "rank": 4,
+     "shape": "01",
+     "length": "~5 s",
+     "verdict": "Tightest and most disciplined; 'More as we get it' is a perfect sign-off. Fails: too bare, 5 s of speech leaves dead air and gives the BadCode reporter no character; the caption does all the lifting."
+    },
+    {
+     "rank": 5,
+     "shape": "10",
+     "length": "~8 s",
+     "verdict": "Version A's good-news caption over a stuck ambulance is a clean sight gag. Fails: 'RASPBERRY HAS BEEN FOUND' is cute not sharp; B's 'In my timeline' line is a near-moral; C asks a paramedic for a possibly flippant line and adds a third voice."
+    },
+    {
+     "rank": 6,
+     "shape": "02",
+     "length": "~5 s",
+     "verdict": "Fine plain version of 01 with the same button. Fails: 'We're at a red light' says too little for a reporter, 'Back to the studio' is filler, and it is largely duplicated by 01."
+    },
+    {
+     "rank": 7,
+     "shape": "05",
+     "length": "~11.5 s",
+     "verdict": "The reporter apologising to the minister is a good deadpan idea and the only one with real concession. Fails: the outrider says 'Someone important's coming', which states the point; adds 'No.' to the protected line; four turns in 11 s; reads as endorsement."
+    },
+    {
+     "rank": 8,
+     "shape": "04",
+     "length": "~12.5 s",
+     "verdict": "The only shape with the from-the-future authority the brand promises. Fails: 'Not for the ambulance' names the moral, 'He will chair the inquiry' is a stated prediction, 14 words in 4.5 s will not lip-sync."
+    },
+    {
+     "rank": 9,
+     "shape": "08",
+     "length": "~9-11 s",
+     "verdict": "Good ideas (a sign, a light) that need small night-shot detail to read. Fails: B's last line says the point outright; C's 'Britain, ladies and gentlemen' sneers at the viewer; the sign is unreadable at night on a phone."
+    },
+    {
+     "rank": 10,
+     "shape": "07",
+     "length": "~10 s",
+     "verdict": "Only shape where someone resists (paramedic, bystander). Fails: 'That was the four' is a death joke too hard for the brand's nurturing floor, four lip-syncs in 20 s, and the reporter is wasted; 'Every Tuesday' states the point."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "I said raspberry."
+    ],
+    "rows": {
+     "1A": [
+      "verbatim"
+     ],
+     "1B": [
+      "verbatim"
+     ],
+     "1C": [
+      "verbatim"
+     ]
+    }
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Should 'lemon curd' be spoken anywhere, or only read in the caption? All three drafts keep it caption-only so the minister's line stays pure."
+  },
+  {
+   "id": "q2",
+   "text": "Should the reporter carry the BadCode from-the-future authority in words (e.g. 'In my timeline'), or is the balaclava enough for a first short? No draft says it; it is the first thing to add back."
+  },
+  {
+   "id": "q3",
+   "text": "Is 7-10 s of speech right, or should we go nearer 5 s and let the picture breathe (01 and 02 style)?"
+  },
+  {
+   "id": "q4",
+   "text": "Is an invented 'four minutes' ambulance delay acceptable, or should the short stay vague about the cost?"
+  },
+  {
+   "id": "q5",
+   "text": "Does anyone get to resist on screen (a paramedic or outrider line), or does the ambulance stay silent? All drafts leave it silent because the only shape that resisted leaned on a death joke."
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+[
+ {
+  "at": "2026-11-10T15:24:21+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/KrWqm7FgqmCqheDDQbGgw1",
+  "what": "dialogue options: Priority Lane, round 1 notes answered as draft 1D",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-10-shorts-dialogue-priority-lane/options.json design/2026-11-10-shorts-dialogue-priority-lane.html --notes design/2026-11-10-shorts-dialogue-priority-lane/notes-r1.json",
+  "decided": [
+   "Jack, note on 1A minister: \"I said raspberry- shaped Hors-d'œuvres!\"; note on 1A L3: \"politician blocking the path of an ambulance, poetic really...\""
+  ]
+ },
+ {
+  "at": "2026-11-10T15:26:57+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
+  "what": "clean-room stills round 1: 12 stills, 4 shots",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane design/2026-11-10-shorts-priority-lane-moodboard.html"
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-a.jpg",
+ "made": "2026-11-10T15:19:59.236Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph looking steeply down from a pedestrian footbridge onto a rain-soaked British city junction at night, the wet steel handrail of the bridge running across the very top of the frame, beaded with raindrops and out of focus. Below, the junction reads like a diagram. In the lower third a British ambulance in yellow-and-green chequered livery waits at the stop line, its blue roof beacons throwing cold blue pools onto the glossy tarmac, its lettering too small and rain-smeared to read. Just ahead of its bonnet a police motorcycle outrider in a hi-vis jacket and white helmet sits astride his bike, one gloved arm held straight up, palm out, toward the ambulance. Through the middle of the frame, on a diagonal from upper left to lower right, three long dark saloon cars sweep across the junction nose to tail, their roofs catching the orange light, their headlight beams smeared forward on the wet road. A traffic signal on its pole glows red at the left edge. Two sodium-orange street lamps hang high on the right and bloom into a drizzle haze; everything they do not touch falls to teal and green-black. Focus is on the outrider and the ambulance; the motorcade shows slight motion blur. Shot on CineStill 800T with a 35mm lens, red halation round every lamp and brake light, visible grain, underexposed with lifted blacks, a faint handheld tilt. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "dea85917-fa20-4095-bcc1-877264ff0165"
+}

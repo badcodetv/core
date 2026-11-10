@@ -1,0 +1,51 @@
+{
+  "story": "shorts",
+  "scene": "priority-lane",
+  "prefix": "pl",
+  "title": "Priority Lane",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
+  "moodboard_intro": "Round 1, clean room: four shots in the rainy-night film look (Jack's reference). Tap This, Maybe or No on each still; leave a note per shot.",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
+  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
+  "beats": [
+    {
+      "key": "outside",
+      "at": "0:00",
+      "name": "A. The whole outside view",
+      "blurb": "The junction: the outrider's raised glove, the ambulance held at the red light, the motorcade coming through."
+    },
+    {
+      "key": "ambulance",
+      "at": "0:04",
+      "name": "B. Inside the ambulance",
+      "blurb": "The crew with the patient, the red light and the stopped traffic through the windscreen."
+    },
+    {
+      "key": "reporter",
+      "at": "0:06",
+      "name": "C. The BadCode reporter",
+      "blurb": "On the pavement, mic in hand, to camera, with all of it behind."
+    },
+    {
+      "key": "minister",
+      "at": "0:11",
+      "name": "D. Inside the minister's car",
+      "blurb": "Back seat, on the phone, furious about lemon curd; blue lights through the rain."
+    }
+  ],
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
+  },
+  "dialogue": {
+    "page": "https://claude.ai/artifact/KrWqm7FgqmCqheDDQbGgw1",
+    "options": "design/2026-11-10-shorts-dialogue-priority-lane/options.json",
+    "picked": null,
+    "round": 1
+  },
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa"
+  }
+}

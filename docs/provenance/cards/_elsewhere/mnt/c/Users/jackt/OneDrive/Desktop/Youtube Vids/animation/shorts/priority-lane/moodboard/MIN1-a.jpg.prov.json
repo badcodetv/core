@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-a.jpg",
+ "made": "2026-11-10T15:24:07.537Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photorealistic vertical 9:16 night photograph taken from outside a moving dark saloon car, looking in through its rear side window, which is beaded and streaked with rain. Behind the glass sits an invented government minister in his late fifties: a heavy, fleshy face with pink blotchy cheeks and broken veins across the nose, small pale eyes under puffy lids, thinning sandy-grey hair combed flat across a shiny scalp, a soft double chin pressing over a tight white collar and a loosened burgundy tie. He holds a phone hard against his ear with his lips pressed shut and his jaw clenched, glaring at nothing, plainly furious about something small. His face sits in the upper right of the frame, cut by the black window pillar, half lost behind running water. Laid over him on the glass is the reflection of the street outside: the soft smear of an ambulance's blue beacon, a red traffic light blooming into the rain, and long orange streaks from a sodium street lamp. Focus is on the raindrops and his near eye; the rest of the car interior falls into teal-black. The lower half of the frame is the wet, dark door panel catching thin red and blue reflections. Shot handheld on CineStill 800T with a 50mm lens, slightly tilted, red halation round every light, visible grain, underexposed with lifted blacks, in the manner of Saul Leiter photographing through a rainy window. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5486d924-08ec-450a-9789-cecd81da6ac5"
+}

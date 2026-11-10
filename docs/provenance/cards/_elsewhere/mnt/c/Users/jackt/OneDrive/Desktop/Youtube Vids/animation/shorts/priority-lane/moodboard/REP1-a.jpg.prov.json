@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+ "made": "2026-11-10T15:22:01.082Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photorealistic still of a British TV news reporter doing a live piece to camera on a rain-soaked city pavement at night, framed from the chest up and placed in the right third of the frame, his shoulders angled slightly away from us and his head turned square to the lens. He wears a full charcoal knitted balaclava with no openings at all, a large white ring stitched around the whole face, and a solid red triangle stitched high inside the ring over his left eye, so it sits on the right side of the picture at about two o'clock; the mouth area is plain knitted wool. The balaclava tucks into the turned-up collar of a dark navy waxed rain jacket beaded with water, and his black leather gloves hold a plain black handheld microphone with a blank grey foam windshield just below his chin. He stands completely still and straight-faced, like any correspondent mid-sentence. The only key light is the cold white lamp on top of the news camera, hitting him from slightly left and falling off across the knit. Behind him, out of focus and filling the left two-thirds of the frame: an ambulance held at a red traffic light, its blue beacons smeared into soft flares, a police motorcycle outrider with one gloved hand raised, and the dark shapes of a motorcade of saloon cars sweeping through the junction with their red tail lights streaking. An orange sodium street lamp blooms high in the drizzle haze at the top of the frame. Fine rain is visible against the dark. Eye-level, a 50mm lens, focus on the reporter's mask and glove, the street behind softened. Shot on CineStill 800T, red halation around the lamps and beacons, visible grain, slightly underexposed with lifted teal-black shadows, a faint handheld tilt. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "dd625e2c-50ee-46e3-b50a-7d5c03ce7ac7"
+}

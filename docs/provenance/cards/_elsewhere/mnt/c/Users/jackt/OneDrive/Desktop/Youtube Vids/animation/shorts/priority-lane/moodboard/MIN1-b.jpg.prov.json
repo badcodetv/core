@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+ "made": "2026-11-10T15:25:40.292Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photorealistic vertical 9:16 photograph inside the back of a dark ministerial car at night in the rain, taken from low on the far end of the rear seat with a 28mm lens, so the cream leather seat and a folded-down armrest fill the bottom of the frame. On the armrest, sharp in the foreground, sits a small open glass jar of bright yellow lemon curd with a silver spoon in it and a crumpled napkin. Further back on the left, slumped into the seat, is an invented minister in his late fifties in a rumpled navy wool suit: a round, jowly face with pores and razor rash along the jaw, a small shaving nick on his chin, pink-rimmed tired eyes, wispy grey hair combed over, a crooked burgundy tie. He presses a phone to his ear, mouth shut in a tight, sulky line, nostrils flared, eyes rolled up at the roof lining. His head sits in the upper third of the frame, cut by the left edge. Through the rain-streaked window behind him, out of focus, an ambulance's blue lights pulse beside a red traffic light, throwing a cold blue band across one side of his face while a passing sodium street lamp lays an orange sweep over the other; the rest of the cabin sinks into teal-black, with a faint warm glow from a reading lamp in the roof. Shot on CineStill 800T, red halation round the lights outside, visible grain, underexposed, lifted blacks, handheld and slightly crooked. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e4fd7d33-97b7-4f21-abb4-14a3d07c8cbd"
+}

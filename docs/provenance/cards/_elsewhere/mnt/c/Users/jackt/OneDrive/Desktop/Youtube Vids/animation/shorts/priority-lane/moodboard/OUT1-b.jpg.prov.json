@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-b.jpg",
+ "made": "2026-11-10T15:20:44.577Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph taken from almost ground level at the kerb of a British city junction at night in steady rain, the camera just behind and below a police motorcycle outrider. His raised black leather glove, palm out, fills the upper left of the frame, large, soft and out of focus, a rim of sodium-orange light along its fingers and the shoulder of his hi-vis jacket cut by the left edge. Past the glove, sharp in the middle of the frame, a British ambulance in yellow-and-green chequered livery sits stopped at a red light, its blue beacons mid-flash, its windscreen a dark slab with two faint figures behind it, its lettering lost in glare. Across the space between the glove and the ambulance, a dark saloon car slides through the junction from right to left as a long smear of black bodywork and white headlight streak, a second one following just behind it at the right edge. The lower half of the picture is wet tarmac a few centimetres from the lens, rain spattering in a puddle that holds broken vertical reflections of red, blue and orange. One sodium street lamp blooms high in the top right through the drizzle; the sky and shadows go teal-black. Shot on CineStill 800T with a 28mm lens at a wide aperture, red halation round the red signal and the beacons, coarse grain, underexposed with lifted blacks, slightly tilted as if handheld. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5d13307c-9346-4e13-8306-889f02d2e878"
+}
