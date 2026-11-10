@@ -23,3 +23,10 @@ is no longer true everywhere for the biggest firms. "Little or no tax" and "flie
 
 Kai, same day: *"that's a good rule that we could then look out the window and see lots of homeless people."*
 The window beat pays off the rule on screen: the rule says the tax doesn't have to be paid, the window shows what it would have paid for.
+
+## 2026-11-10: lyrics round 1 → round 2
+
+Kai on round 1: no good rules in the song at all (don't hit, don't steal… "just good rules that should be
+followed"); 20 seconds maximum; the song is the contrast "we can't afford to house our homeless, but we can
+continue tax havens"; "song" means a short period of music. Round 2 (three four-line hymns) in `../../songs/lyrics-drafts.md`.
+Length answered: **20 s maximum.**
