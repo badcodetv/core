@@ -285,7 +285,7 @@
     {
      "id": "e-ending",
      "name": "E · The bus, the last line",
-     "state": "SIGNED OFF (round 9, Kai 10 Nov: \"nailed it... call that a wrap\"): new last line, D's last shot on the phone, bank sign painted in, grittier Parliament from Westminster Bridge · Premiere still 07 GPOM story E ending r4 in 00 RENDER story: r5 (the round 9 cut) OWED",
+     "state": "SIGNED OFF (round 9, Kai 10 Nov: \"nailed it... call that a wrap\"): new last line, D's last shot on the phone, bank sign painted in, grittier Parliament from Westminster Bridge · Premiere 07 GPOM story E ending r5 (the round 9 cut), in sync, in 00 RENDER story at 542.083; the film ends at 575.042",
      "tone": "premiere",
      "scene": "scenes/second-half-e-ending",
      "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"
@@ -302,7 +302,7 @@
    },
    {
     "sequence": "00 RENDER story",
-    "what": "The story film (10 Nov, 9:37): 01 GPOM start r2 (the opening with chorus 1 = Skid Row Britain and Kai's outbreak chorus r3), then A (r11), B (r1), C (r4), D (r18), E (r4). Nested. Backups in zz old sequences: '(before chorus outbreak, 10 Nov)', '(before poverty chorus, 10 Nov)'"
+    "what": "The story film (10 Nov, 9:35): 01 GPOM start r2 (the opening with chorus 1 = Skid Row Britain and Kai's outbreak chorus r3), then A (r11), B (r1), C (r4), D (r18), E (r5, the round 9 cut). Nested. Backups in zz old sequences: '(before chorus outbreak, 10 Nov)', '(before poverty chorus, 10 Nov)'"
    },
    {
     "sequence": "01 GPOM start r2",

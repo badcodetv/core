@@ -238,7 +238,7 @@
    "was_named": "gpom-6-E-ending-r2",
    "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
   },
-  "current": "r4",
+  "current": "r5",
   "r3": {
    "sequence": "07 GPOM story E ending r3",
    "guid": "c6c83b4a-0117-4afc-8b11-0b360a1327b5",
@@ -269,15 +269,24 @@
     "state": "in sync",
     "why": ""
    },
-   "master": "swapped into '00 RENDER story' at 531.042-566.000 (Motion Scale 150, like A-D; r3 had sat at 100); master 9:26.0"
+   "master": "swapped into '00 RENDER story' at 531.042-566.000 (Motion Scale 150, like A-D; r3 had sat at 100); master 9:26.0",
+   "stale": "superseded by r5 (round 9 sign-off); its media in cut-r7 is untouched"
   },
-  "r5_owed": {
+  "r5": {
    "sequence": "07 GPOM story E ending r5",
+   "guid": "2ef9849c-993a-4504-9200-9fa98f674d6b",
+   "bin": "07 GPOM story E ending r5",
+   "built": "2026-11-10",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/edl.json",
-   "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/premiere-r5.json",
-   "place_js": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/premiere-r5.place.js",
-   "how": "NOT BUILT (Kai released the bridge, 10 Nov). Steps (scene-timeline 'Building a sequence'): premiere_import plan.files into bin '07 GPOM story E ending r5'; premiere_create_sequence fromItems [the E01r9-t2-patched-push.mp4 item]; premiere_eval with premiere-r5.place.js pasted in; check, save; then swap into '00 RENDER story' at 531.042 (Motion Scale 150) replacing r4, and set premiere.current = r5.",
-   "why": "page round 9 (signed off) is ahead of Premiere r4 (round 7 cut)"
+   "what": "page round 9, SIGNED OFF: patched phone on E01r9, E03r9 single pull, Parliament E04r9 chain, 'I made it.' at 19.08, music in 6.8",
+   "how": "premiere-plan.py --tag r5 (lines under cut-r9/premiere/r5/lines/); place.js pasted into premiere_eval: done 14, fail 0, vc 5, audio [3,1,1,1,1,1,1]",
+   "check": {
+    "at": "2026-11-10T19:18",
+    "state": "in sync",
+    "why": ""
+   },
+   "master": "00 RENDER story V1 542.083–575.042 (Motion Scale 150), replacing r4 (lifted, no ripple); the film now ends at 575.042 (r5 is 2.0 s shorter than r4)"
   }
  },
  "video": {
