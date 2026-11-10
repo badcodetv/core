@@ -19,17 +19,25 @@ scripts/drive/drive.sh pull   karen-music --go # Drive -> D:
 - **`status` counts everything:** it prints how many files each way and the first 20, never a silent cap.
 - **Folder map:** `folders.json`, matched by Drive folder ID (the Drive names differ from the D: names, one has a trailing space). Add a row for a new project.
 - ⚠ If two people edit the same `.prproj` between syncs, the newer one wins and the other's changes are lost. Push when you finish a session, pull before you start one.
-- **One-time setup:** `rclone config create badcode drive scope drive`, then sign in as kaiyadavenport@gmail.com in the browser link it prints. The Drive folders belong to Jack's "Badcode - Official"; files Kai uploads count against Kai's storage.
+- **Fixed 2026-11-10:** `status` used to stop after the push side when that side had nothing to copy, so files waiting on Drive were never listed. It now always shows both sides.
+- **Baton:** Kai and Jack agree out loud who holds each story. Whoever holds it pushes when they hand it over; the next holder pulls before they open the project. The tool has no lock and doesn't need one.
 
-## Setting it up on another machine (Jack, Tom)
+## Setting it up on a machine (Kai, Jack, Tom)
 
-1. Install rclone: Windows `winget install Rclone.Rclone`, Mac `brew install rclone`, Linux/WSL `sudo apt install rclone`.
-   The script also needs bash and python3 (WSL or Git Bash on Windows; built in on a Mac).
-2. Pull the repo.
-3. Sign in once, with your own Google account (the one the BadCode folder is shared with):
-   `rclone config create badcode drive scope drive`. A browser opens, you click Allow.
-4. Tell the script where your videos live, if not `/mnt/d/badcode-videos`:
-   `export BADCODE_MEDIA_ROOT="/path/to/badcode-videos"` (put it in your shell profile).
-5. `scripts/drive/drive.sh list`, then `status`, `pull`, `push` as above.
+Each person signs in with **their own** Google account, the one "Badcode - Official" is shared with.
+Files you upload count against your own Drive storage.
+
+1. **Install rclone.** Windows `winget install Rclone.Rclone` (then open a new terminal), Mac `brew install rclone`, Linux/WSL `sudo apt install rclone`.
+2. **Bash and Python.** On Windows, use WSL or Git Bash, plus a real Python (`winget install Python.Python.3.12`; the Microsoft Store `python3` stub doesn't work). A Mac has both built in.
+3. **Pull the repo.**
+4. **Sign in once:** `rclone config create badcode drive scope drive`. A browser opens: pick your Google account, click Allow.
+   Check it worked: `rclone lsf badcode: --drive-root-folder-id 1aqkmEhj64V56V3TnyqbzuhUs8cGjWrym --dirs-only` should list Camping Music, Karen Music, Misc and the rest.
+5. **Tell the script where your videos live**, unless it's `/mnt/d/badcode-videos`. Put this in your shell profile (`~/.bashrc`):
+   WSL `export BADCODE_MEDIA_ROOT="/mnt/d/badcode-videos"` · Git Bash `export BADCODE_MEDIA_ROOT="/d/badcode-videos"` · Mac `export BADCODE_MEDIA_ROOT="$HOME/badcode-videos"`.
+   Each story is a subfolder named as in `folders.json` (`karen-music`, `camping-story`...).
+6. **Try it:** `scripts/drive/drive.sh list`, then `status <folder>`. Nothing moves without `--go`.
 
 Or, in Claude Code inside the repo, just say "pull karen music" / "push karen music".
+
+**A new story:** make its folder inside "Badcode - Official" on Drive, copy the folder ID from the end of its URL, and add a row to `folders.json`. The key must match the local folder name.
+**Ignored:** the Drive `Misc` folder is for anything that isn't an official story or music video. It has no row and is never synced.

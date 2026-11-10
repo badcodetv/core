@@ -11,7 +11,10 @@ set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REMOTE="${BADCODE_DRIVE_REMOTE:-badcode}"
 cmd="${1:-list}"; folder="${2:-}"; go="${3:-}"
-cfg() { python3 -c "import json,sys;c=json.load(open('$HERE/folders.json'));$1" ; }
+# folders.json is read from the script's own folder (cd, not a path inside the -c string: Windows
+# Python under Git Bash can't open a /c/Users/... path). python3, or python where that's the name.
+PY="$(command -v python3 || command -v python)" || { echo "needs python3"; exit 1; }
+cfg() { (cd "$HERE" && "$PY" -c "import json,sys;c=json.load(open('folders.json'));$1") ; }
 if [[ "$cmd" == list ]]; then cfg "[print(f'{k:24} -> Drive: {v[\"drive_name\"]!r} ({v[\"drive\"]})') for k,v in c['folders'].items()]"; exit; fi
 [[ -n "$folder" ]] || { echo "which folder? (drive.sh list)"; exit 1; }
 id="$(cfg "print(c['folders']['$folder']['drive'])" 2>/dev/null)" || { echo "unknown folder '$folder': add it to folders.json"; exit 1; }
@@ -28,7 +31,10 @@ log="$LOGDIR/$cmd-$folder-$(date +%Y%m%d-%H%M%S).log"
 would() { local out n; out="$("${rc[@]}" copy "$1" "$2" --dry-run 2>&1)"
   n=$(grep -c "Skipped copy" <<<"$out" || true)
   echo "   $n file(s)"
-  grep "Skipped copy" <<<"$out" | sed 's/.*NOTICE: //; s/: Skipped copy.*//; s/^/   /' | head -20
+  # || true: with no matches grep exits 1, and under pipefail + set -e that killed the script, so a
+  # clean push side silently hid the pull side of `status`;
+  # also: head closing the pipe early on a long list (SIGPIPE, exit 141) killed it the same way
+  { grep "Skipped copy" <<<"$out" || true; } | sed 's/.*NOTICE: //; s/: Skipped copy.*//; s/^/   /' | head -20 || true
   (( n > 20 )) && echo "   ... and $((n - 20)) more"; true; }
 dry=(--dry-run); [[ "$go" == --go ]] && dry=()
 case "$cmd" in
