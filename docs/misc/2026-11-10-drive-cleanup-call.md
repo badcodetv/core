@@ -90,3 +90,23 @@ instead of about 32 GB; every story checked at 0 left after.
   without `localize()`, so a new cut must be made on Jack's machine or those scripts fixed first; the page and
   `premiere-to-edl.py` translate fine. Camping song's records (mv-r10, mv-song2, mv-balaclava, mv-action) are still
   only on `stupidity-optimised-script`.
+
+## Clean-up to the agreed cuts (Jack, 2026-11-11)
+
+Jack: "delete everything that is not the agreed upon version of the song or story and everything it needs."
+Confirmed on both Drive and Jack's PC, the old Camping Music copy included. Kept = the files in
+`scripts/drive/agreed/<story>.list`, checked twice before deleting: against Premiere's sequence snapshots and by
+reading each agreed sequence's media out of the saved `.prproj` (nothing missing). The pages need only each cut's
+`edl.json` + `preview.mp4`, both kept. Every kept file checked present after, and each story still 0 to push.
+
+- **Drive (to the bin, restorable 30 days):** Bank Robbery Music 98 files (0.3 GB, left by the stopped full push);
+  Camping Music 179 files (4.7 GB: the old `camping vid/` copy with `camping vid.prproj` + `Copy-test.prproj`,
+  test exports, `vids/` incl. drive london and ending credits, auto-saves). Bank Robbery Story was already clean.
+- **Jack's PC (permanent):** Bank Robbery Music 5,028 files (5.1 GB: other MV versions noir/alt, gang cuts 1-8,
+  moodboards); Bank Robbery Story 4,435 (22.2 GB: 37 per-cut work folders, 30 renders, unused sources); Camping
+  Music 1,828 (3.6 GB: balaclava, action and r10 working files, unused clips, previews, auto-saves). Kept on top of
+  the lists: each folder's `.bridge/` snapshots and the two `.prin` files beside the Bank Robbery song projects.
+- **Now:** Bank Robbery Music 82 files / 352 MB, Bank Robbery Story 230 / 875 MB, Camping Music 108 / 1.5 GB.
+  Every other sequence in those projects is offline from now on, on both machines; the agreed ones play.
+- **Not touched:** Camping Story (its own cut not chosen yet; beat 9 borrows 9 of its clips), Karen Music,
+  Karen Story, GPOM.
