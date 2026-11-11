@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-02-IS4-a-b.mp4",
+ "made": "2026-11-11T10:35:37+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The striped hammock rocks gently, and the filing cabinet's top drawer slowly slides open a little further, contented, as if stretching in the sun; the palm fronds sway, the sea laps the sand. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/IS4-a-b.jpg",
+ "why": "Islands, option b (the drawer sighs)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/IS4-a-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+  "key": "02",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T10:21:43.852Z"
+ }
+}

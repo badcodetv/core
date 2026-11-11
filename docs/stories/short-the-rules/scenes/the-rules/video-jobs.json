@@ -70,6 +70,30 @@
    "duration": 6,
    "motion": "The camera does not move. Rain falls steadily in the alley, rippling the puddles on the tarmac; the half-open lid of the green wheelie bin rocks a little in the wind; the person asleep on the cardboard against the bin stays still, breathing slowly. The camera does not move.",
    "why": "Bin beat (Kai pick BI5-a-a): 'But you will sleep in a bin'"
+  },
+  {
+   "key": "r01",
+   "n": 1,
+   "still": "ST3-a-a",
+   "duration": 4,
+   "motion": "The camera does not move. The five masked figures stand at the foot of the towering paper stack, facing the camera, almost motionless: shoulders rise and fall with breath, one shifts his weight from foot to foot, fingers twitch at their sides. Every balaclava keeps facing the camera the whole time, so its white ring and the small red triangle inside it stay clearly visible; nobody turns their head away. Overhead one fluorescent tube flickers and buzzes. The camera does not move.",
+   "why": "Re-roll of 01: heads turned up and the triangles vanished (Kai: re-roll, 2026-11-11)"
+  },
+  {
+   "key": "r04a",
+   "n": 4,
+   "still": "TE4-a-a",
+   "duration": 8,
+   "motion": "The camera does not move. The masked gang face the camera and go wild, chest-on to the lens: ripping sheets from the stack and tearing them in half at chest height, hurling the pieces straight up so torn paper rains down around them like a blizzard, one kicks the cardboard box across the floor. Every balaclava keeps facing the camera the whole time, so its white ring and the small red triangle inside it stay clearly visible; nobody turns their head away. Fast, frantic, joyful energy, shot at 24fps with a 180-degree shutter so fast hands and paper smear with motion blur. The camera does not move.",
+   "why": "Re-roll of 04a: two masks lost their triangles (Kai: re-roll, 2026-11-11)"
+  },
+  {
+   "key": "r04b",
+   "n": 4,
+   "still": "TE4-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The two masked figures nearest the camera stare straight down the lens while they tear sheets of paper in half again and again, furious and fast, flinging the pieces at the camera; behind them the others tear and throw too, and paper whirls under the flickering fluorescent light. Every balaclava keeps facing the camera the whole time, so its white ring and the small red triangle inside it stay clearly visible; nobody turns their head away. Shot at 24fps with a 180-degree shutter so fast hands and paper smear with motion blur. The camera does not move.",
+   "why": "Re-roll of 04b: triangles missing / pointing up (Kai: re-roll, 2026-11-11)"
   }
  ]
 }

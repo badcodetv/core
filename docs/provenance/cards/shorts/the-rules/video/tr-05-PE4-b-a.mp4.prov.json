@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-05-PE4-b-a.mp4",
+ "made": "2026-11-11T10:35:37+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Torn paper drifts slowly down and settles around him; the navy-masked figure steps half a pace forward and pushes the blank page and the pen a little closer toward the camera, then holds perfectly still, offering them. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE4-b-a.jpg",
+ "why": "Pen, option a",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE4-b-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+  "key": "05",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T10:22:58.032Z"
+ }
+}

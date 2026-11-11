@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-01-ST3-a-a.mp4",
+ "made": "2026-11-11T10:35:37+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The five masked figures stand still at the foot of the towering paper stack, looking up; they breathe and shift their weight slightly, and one slowly tilts his head further back to look higher. Overhead one fluorescent tube flickers and stutters, the others hold steady. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST3-a-a.jpg",
+ "why": "Stack, option a (Kai: open on the gang and the rules, ~3 s)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST3-a-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+  "key": "01",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T10:21:18.299Z"
+ }
+}

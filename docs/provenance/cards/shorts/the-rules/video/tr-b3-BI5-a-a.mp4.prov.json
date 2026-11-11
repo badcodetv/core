@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b3-BI5-a-a.mp4",
+ "made": "2026-11-11T10:50:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Rain falls steadily in the alley, rippling the puddles on the tarmac; the half-open lid of the green wheelie bin rocks a little in the wind; the person asleep on the cardboard against the bin stays still, breathing slowly. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BI5-a-a.jpg",
+ "why": "Bin beat (Kai pick BI5-a-a): 'But you will sleep in a bin'",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BI5-a-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+  "key": "b3",
+  "frame": 8,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T10:38:16.028Z"
+ }
+}

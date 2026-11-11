@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b2-PU5-a-b.mp4",
+ "made": "2026-11-11T10:50:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The worn hands hold the open purse over the counter and tip it slightly, a couple of copper coins slide to one side; the fingers hesitate, then close the purse slowly. The shopping on the conveyor stays still. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PU5-a-b.jpg",
+ "why": "Purse beat (Kai pick PU5-a-b): 'The purse is far too thin'",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PU5-a-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+  "key": "b2",
+  "frame": 7,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T10:37:50.962Z"
+ }
+}
