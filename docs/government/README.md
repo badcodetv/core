@@ -2,8 +2,8 @@
 
 A cabinet of AI ministers that reads the news every morning, forms positions in BadCode's voice,
 and grows over time. **It is a working demonstration of Future Proof** (Kai, 2026-11-11): the
-government runs on the three tenets it proposes, in the open. Where it is heading (policy modules,
-real debate, checkable predictions, an open platform): [`design/2026-11-11-future-proof-government/`](../../design/2026-11-11-future-proof-government/README.md). It is the government the UK would have if BadCode ran it, sent back from the
+government runs on the three tenets it proposes, in the open. **Why it runs this way, the canonical record: [`future-proof-government.md`](./future-proof-government.md).**
+Build plan and decisions: [`design/2026-11-11-future-proof-government/`](../../design/2026-11-11-future-proof-government/README.md). It is the government the UK would have if BadCode ran it, sent back from the
 future. It has two public outputs:
 
 1. **The manifesto** — one file per minister in [`manifesto/`](./manifesto/), always moving. The
