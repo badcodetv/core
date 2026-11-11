@@ -67,13 +67,14 @@ picks the stills, OKs words and spend). What is different for a short:
   (The Rules, 2026-11-11). Write "every mask keeps facing the camera" into the motion prompt, then check the
   masks zoomed in at three points in each clip.
 - **Premiere and release: [`docs/marketing/shorts-release.md`](../../../docs/marketing/shorts-release.md).**
+  - One master goes to all three platforms (YouTube, TikTok, Instagram).
   - One `.prproj` per short in its media folder.
-  - The sequence is built from a 1080×1920 24 fps black slug, 🔴 **never** Premiere's 30 fps "Social Media
-    Portrait" preset.
-  - Text stays inside the safe box: x 60–930, y 270–1500.
-  - Export H.264 at 1080×1920, 24 fps, 12–16 Mbps, then run `delivery-qc.sh … shorts`.
-  - YouTube treats it as a Short when it is vertical and up to 3 minutes. Stay under 60 s where you can, because
-    a copyright claim past 60 s blocks the Short.
-  - 🔴 Tick the AI-content disclosure: Suno music alone requires it.
+  - The sequence uses our preset "BadCode Short 9x16 24 fps" (`docs/premiere/presets/`), never Premiere's 30 fps one.
+  - Text stays inside the safe box: x 65–930, y 270–1250. The cover's subject sits inside y 240–1680, Instagram's
+    3:4 grid crop.
+  - Export one H.264 master at 1080×1920, 24 fps, ~12 Mbps, then run `delivery-qc.sh … shorts`.
+  - Upload the clean master natively to each app, never a watermarked copy. TikTok goes up from the web.
+  - Stay under 60 s, because past 60 s a copyright claim blocks a YouTube Short.
+  - 🔴 Turn the AI-content label on, on every app.
 - **Shipping:** the cut goes to `chief-of-staff` (it writes the caption via `marketing-producer`, checks via
   `marketing-gatekeeper`, and logs the post). Then mark the short DONE on the list.

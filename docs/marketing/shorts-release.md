@@ -1,96 +1,134 @@
-# Releasing a BadCode Short: Premiere to YouTube
+# Releasing a BadCode Short: one master, three platforms
 
-How a short made with `new-short` goes from its timeline page to a YouTube Short. Researched 2026-11-11 for
-*The Rules* (Kai: *"when we make shorts, we're going to repeat the process we're going through now"*).
-Labels: **(official)** = Google or Adobe page; **(secondary)** = reputable third party; **(hearsay)** = vendor blog
-or forum; **(repo)** = our own notes. Re-cutting the existing films into shorts is a different job:
-[`shorts-factory.md`](./shorts-factory.md).
+How a short made with `new-short` goes from its timeline page to **YouTube Shorts, TikTok and Instagram Reels**
+(Facebook Reels too, from Instagram). Researched 2026-11-11 on *The Rules* (Kai: *"we want to release across all of
+the media platforms once we make something like this… we do need to get into shape with it"*).
 
-## 1. Premiere: the project and a portrait sequence
+Each claim is labelled by its source:
+- **(official)**: Google or Adobe page.
+- **(secondary)**: news or a well-known vendor.
+- **(hearsay)**: vendor blogs that disagree with each other.
+- **(repo)**: our own notes.
 
-- **One project per short:** `<short's media folder>\<slug>.prproj`. For example,
-  `D:\badcode-videos\shorts\the-rules\the-rules.prproj` is opened with `premiere_open_project({ path })`, which
-  creates the file when it is missing. Clips are imported from the short's `video\` folder, and music from `music\`.
-- 🔴 **Don't use the built-in portrait preset for a 24 fps short.** Premiere 2026 ships
-  `Settings/SequencePresets/Social/Social Media Portrait 9x16 30 fps.sqpreset`, which runs at **30 fps only**.
-  Omni clips are 24 fps, so 30 fps duplicates frames and the motion judders.
-- ✅ **Make the sequence from a slug** (the trick already used for 24 fps 16:9 in `docs/premiere/api-notes.md`,
-  2026-10-17):
-  1. Render a 1-second black clip with ffmpeg:
-     `ffmpeg -f lavfi -i color=c=black:s=1080x1920:r=24:d=1 -c:v libx264 -pix_fmt yuv420p slug-1080x1920-24.mp4`.
-  2. Import it.
-  3. Run `premiere_create_sequence({ name, fromItems: [<slug id>] })`.
-  4. Read the sequence back and check it says 1080×1920, `frameRate: 24`, square pixels.
-  5. Then lay the cut on top.
+TikTok's and Meta's help centres could not be read by our tools, so **every TikTok and Instagram number here is
+secondary or hearsay until we do one private test upload per app.** Re-cutting the existing films into shorts is a
+different job, covered in [`shorts-factory.md`](./shorts-factory.md).
 
-  Adobe confirms that a sequence takes the first clip's settings, and that Sequence Settings can fix it if needed
-  **(official)** https://www.adobe.com/creativecloud/video/discover/vertical-videos.html
-- **Sequence name:** `short-<slug>-1-<scene>-r<N>`, the timeline page's `sequence`. The page drives it, round by
-  round (scene-timeline, "No split brain").
-- **Clips are 720×1280** (Flow's Omni output). Scale them to 1080×1920 in the sequence (Scale to Frame Size or
-  150%), or use the ffmpeg-upscaled `cut/r<N>-v*.mp4` files.
-- **Safe margins:** in the Program Monitor, click the wrench, then Safe Margins. The default title-safe area is
-  20%, about 216 px at the sides and 384 px top and bottom **(official)**
-  https://helpx.adobe.com/premiere/desktop/get-started/source-and-program-monitor-adjustments/view-safe-zones-in-the-monitors.html.
-  Premiere has no Shorts or TikTok UI overlay, so a PNG guide on the top track, switched off before export, does that job.
-- **A 16:9 version**, if ever wanted: Sequence → Auto Reframe Sequence **(official)**. Check its frame size
-  afterwards, because a forum report got 607×1080 **(hearsay)**.
+## The route
 
-## 2. Text on screen: the safe box
+```
+timeline page (noted, rounds)  →  Premiere: sequence from our 24 fps portrait preset, Kai's hand edit, text inside the safe box
+  →  ONE master: H.264 MP4 1080×1920 24 fps  →  scripts/delivery-qc.sh master.mp4 shorts
+  →  upload the SAME clean file natively to YouTube, TikTok, Instagram  (never a downloaded, watermarked copy)
+  →  per platform: title or caption, AI-content toggle ON, cover frame  →  chief-of-staff logs it, list says DONE
+```
 
-No platform publishes official pixel numbers for organic posts, and the vendor guides disagree **(hearsay)**.
-For one box that clears YouTube, TikTok and Reels on 1080×1920:
+One master works everywhere. What changes per platform is only the words, the AI toggle, the cover, and where you
+upload from.
 
-| Keep text inside | x 60–930, y 270–1500 |
-| --- | --- |
-| Why | top ~270 px (status and search bar), right ~150 px (like/comment buttons), bottom ~420 px (title, channel, music line) |
+## 1. Premiere
 
-Reels captions can reach about 672 px from the bottom **(hearsay, from Meta's ad guidance)**. Our older rule of
-"bottom 350, right 150" (repo, shorts-factory §3) is inside this box. Before trusting the box, upload one test
-privately to each app.
+- **Project:** one per short, at `<short's media folder>\<slug>.prproj`. For example,
+  `D:\badcode-videos\shorts\the-rules\the-rules.prproj` (open it with `premiere_open_project({ path })`, which
+  creates it if missing). Clips come from `video\` and music from `music\`.
+- **Sequence:** use our preset **"BadCode Short 9x16 24 fps"**
+  ([`docs/premiere/presets/`](../premiere/presets/)).
+  - It is Premiere's own "Social Media Portrait 9x16" (1080×1920, square pixels, Rec.709) with the frame rate changed
+    from 30 to 24, because Flow's Omni clips are 24 fps and a 30 fps sequence judders them.
+  - Install it once per machine by copying it to
+    `Documents\Adobe\Premiere Pro\<version>\Profile-<user>\Settings\Custom\`. It then shows under **Custom** in
+    New Sequence.
+  - From code, call `premiere_create_sequence({ name, preset: "<that file>" })`, then read the sequence back:
+    1080×1920, `frameRate: 24`.
+  - ⚠️ The preset was written 2026-11-11 and has **not yet been opened in Premiere**. Until it has, the fallback is to
+    build from a 1080×1920 24 fps black slug clip (`docs/premiere/api-notes.md`, 2026-10-17).
+- **Name:** `short-<slug>-1-<scene>-r<N>`, the same name the timeline page uses. The page and Premiere move together
+  (scene-timeline, "No split brain").
+- **Clips are 720×1280**, which is what Omni makes. Scale them to fill the frame: Scale to Frame Size, or 150%.
+- **Guides:** turn on the Program Monitor's wrench → Safe Margins **(official)**. For the real platform box (§3), put
+  a PNG guide on the top track and switch it off before export.
 
-## 3. Export
+## 2. The master file
 
-- **H.264, MP4, 1080×1920, 24 fps, square pixels, Rec.709 SDR, progressive, 4:2:0.** Use the "Match Source –
-  High bitrate" preset (or the YouTube 1080p preset with Match Source ticked, so it keeps the portrait frame).
-  Use VBR 2-pass at 12–16 Mbps; YouTube's own floor for 1080p SDR at 24 fps is 8 Mbps **(official)**
-  https://support.google.com/youtube/answer/1722171. Turn on Use Maximum Render Quality.
-- **Audio:** AAC-LC, 48 kHz, stereo, 320–384 kbps **(official)**. YouTube publishes no loudness target. Ours is
-  −14 LUFS with true peak below −1 dBFS **(repo)**, set with Loudness Normalization on the export's Effects tab.
-- **Grain and flying paper** suffer in YouTube's re-encode, so export once, at a high bitrate **(my reading)**.
-- 🔴 **Before upload:** run `scripts/delivery-qc.sh RENDER.mp4 shorts` (docs/video-fx/delivery.md). Burnt-in text
-  can give a false luma FAIL (shorts-factory §2).
+| Setting | Value | Why |
+| --- | --- | --- |
+| Container, codec | MP4, H.264 High, progressive, 4:2:0 | YouTube's spec **(official)**; TikTok and Reels take the same **(hearsay)** |
+| Size, rate | 1080×1920, 24 fps, square pixels | YouTube: "upload at the frame rate you recorded" **(official)**. No source says TikTok or Reels reject 24 fps |
+| Colour | Rec.709 SDR | **(official)**; our range trap: `delivery.md` |
+| Bitrate | VBR 2-pass, about 12 Mbps (YouTube's floor is 8) | High enough for grain and flying paper. A 60 s file stays under ~90 MB |
+| Audio | AAC-LC 48 kHz stereo, 320 kbps; −14 LUFS, true peak below −1 dBFS | **(official)** format; the loudness is our house rule **(repo)** |
+| Premiere preset | H.264 "Match Source – High bitrate", Maximum Render Quality on | Keeps the portrait frame |
+| Gate | `scripts/delivery-qc.sh master.mp4 shorts` | Burnt-in text can give a false luma FAIL (shorts-factory §2) |
 
-## 4. Upload as a Short
+Export once. Every platform re-encodes the file, so the master is the only clean copy. Keep it under
+`<media>/renders/`.
 
-- **YouTube counts it as a Short when** it is square or vertical and **up to 3 minutes** long, on a standard channel
-  for uploads since 15 Oct 2024. `#Shorts` is **not** needed. A 16:9 video, or 16:9 with black side bars, is long-form
-  **(official)** https://support.google.com/youtube/answer/15424877.
-- **Over 60 s,** any active copyright claim blocks the Short worldwide. Under 60 s, nothing changes **(official)**.
-  Suno music is ours, but a false Content ID claim is possible, so stay under 60 s where the cut allows.
-- **Length that performs:** 30–60 s **(repo, shorts-factory §4)**. Length is still the joke, so cut the fat.
+## 3. Where text and the subject may sit (1080×1920)
+
+No platform publishes numbers for normal posts. These come from Meta's ad guidance as quoted by vendors **(hearsay)**,
+cross-checked against YouTube and TikTok guides:
+
+| Zone | Box | For |
+| --- | --- | --- |
+| **Text safe** (all three apps' buttons and captions clear) | **x 65–930, y 270–1250** | Burnt-in words, the tax line, anything that must be read |
+| **Grid safe** (Instagram's profile grid shows Reels cropped to 3:4) | **y 240–1680** | The subject of the cover frame |
+| Covered by app UI | top ~270 px · right ~150 px · bottom ~670 px (Reels), ~420 px (YouTube) | Nothing important here |
+
+Bottom 670 px is Reels' strict figure. If Reels doesn't matter for a piece, y up to ~1500 is clear on YouTube.
+Settle it with one private test upload per app.
+
+## 4. Per platform
+
+**Everywhere:**
+- Upload the clean master **natively** to each app, not a downloaded, watermarked copy. Instagram has penalised
+  watermarked reposts since 2021–22, and in 2026 it widened its originality checks **(secondary)**.
+- 🔴 Turn the AI-content label **on**. Our footage is photoreal AI, and the music is AI-generated, which is YouTube's
+  own example of what needs it.
+
+### YouTube Shorts (YouTube Studio)
+- **It's a Short** when it's vertical or square and **up to 3 minutes**. `#Shorts` isn't needed. 16:9, or 16:9 with
+  black side bars, is long-form **(official)** https://support.google.com/youtube/answer/15424877
+- 🔴 **Over 60 s, any copyright claim blocks the Short worldwide** **(official)**. Suno music is ours, but a false
+  Content ID claim can happen. Stay under 60 s, which is also the 30–60 s band that performs **(repo)**.
 - **Steps:**
-  1. Choose the vertical file.
-  2. Give it a title (100 characters at most).
-  3. Write the description.
-  4. Set privacy, or schedule it (the normal Studio option).
-  5. Answer made-for-kids: **No**.
+  1. Title, 100 characters at most.
+  2. Description.
+  3. Not made for kids.
+  4. "Altered or synthetic content": **Yes** **(official)** https://support.google.com/youtube/answer/14328491
+  5. Schedule in Studio.
+- **Cover:** pick the frame in the phone app. Custom upload for Shorts is rolling out unevenly **(secondary)**. The sure
+  way is to make the first frame a good cover.
+- **Related video:** in Studio on desktop, the Short's Details tab links **one** video on the channel. Set it by hand,
+  because the API can't **(secondary)**.
 
-  **(official)** https://support.google.com/youtube/answer/10059070
-- 🔴 **AI disclosure: tick "altered or synthetic content".** It is needed for realistic AI scenes and for **AI-generated
-  music**, which is the page's own example **(official)** https://support.google.com/youtube/answer/14328491. Our Suno
-  track alone triggers it, and the Flow footage is photoreal. That matches `docs/using-ai.md`.
-- **Cover frame:**
-  - Pick a frame in the mobile app, either before posting or later through Edit **(secondary)**.
-  - Custom thumbnail upload for Shorts in desktop Studio is rolling out unevenly **(secondary, conflicting)**.
-  - The sure way is to make the **first frame** a good cover.
-- **Related video:** in Studio on desktop, the Short's Details tab can link **one** video on the channel. Set it by
-  hand, because the API can't **(secondary)**.
-- **Then:** hand the cut to `chief-of-staff` (caption by `marketing-producer`, check by `marketing-gatekeeper`, post
-  logged), and mark the short DONE on the list.
+### TikTok (TikTok Studio on the web)
+- **Upload from the web, not the phone.** The phone caps file size (about 72 MB on Android) **(hearsay)**. The web
+  takes about 500 MB. On the phone, the "Upload HD" switch under More options is **off by default**
+  **(secondary, Adweek)**.
+- **AI label:** turn on TikTok's AI-generated content toggle. Unlabelled realistic AI content can be removed. TikTok
+  also auto-labels files carrying C2PA content credentials **(secondary)**.
+- **Music:** TikTok Studio has an optional music copyright check before posting **(hearsay)**. Our Suno music
+  imitates no real artist, which TikTok's 2026 terms bar **(hearsay)**.
+- **Not settled:** whether our track becomes a reusable "original sound", whether to register it through a
+  distributor first, caption limits and how far ahead you can schedule.
 
-## Open
+### Instagram Reels (app, or Meta Business Suite to schedule)
+- **Quality:** Profile → menu → Your app and media → Media quality → **Upload at highest quality** **(hearsay)**.
+  Set it once on the phone that posts.
+- **Grid:** the profile shows Reels cropped to **3:4** (1080×1440), losing 240 px top and bottom **(hearsay)**.
+  Choose a cover frame whose subject sits in y 240–1680.
+- **AI label:** add "AI info" when posting. Meta also detects C2PA, IPTC or watermark signals, but admits video
+  detection is weaker **(secondary)**.
+- **Facebook Reels:** Instagram can share the Reel to the linked Facebook page. Not yet checked for our accounts.
+- Accounts and handles: [`social-media-accounts.md`](./social-media-accounts.md).
 
-- **Not found:** official safe-zone numbers for YouTube, TikTok and Reels; Adobe's export help page (403); whether our
-  account has custom Shorts thumbnails today.
-- **TikTok and Reels** take the same file but re-encode it again. Their own specs aren't researched here.
+## 5. Owed before the first release
+
+1. **Test upload:** one **private** test upload of The Rules' master to each app. Check the frame isn't letterboxed,
+   it plays at full quality, where the UI sits over the text box, and what the grid crop looks like. Then correct §3.
+2. **Preset:** open the preset in Premiere once and confirm it reads 1080×1920 at 24 fps.
+3. **Suno terms:** check that our Suno plan's terms cover posting to TikTok and Instagram, and decide whether music
+   goes through a distributor.
+4. **Posting tool:** pick one that schedules all three. YouTube Studio, TikTok Studio and Meta Business Suite each
+   do their own, free. A paid tool such as Buffer or Later is not researched.
+5. **The Rules' tax-haven line:** its fact check is still owed before any text goes on screen.
