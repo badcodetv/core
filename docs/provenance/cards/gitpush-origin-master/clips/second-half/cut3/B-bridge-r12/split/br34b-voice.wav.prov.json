@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r12/split/br34b-voice.wav",
+ "made": "2026-11-11T18:54:50+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "cut-bridge.py",
+ "why": "voice slice / speaker filter, round 12"
+}

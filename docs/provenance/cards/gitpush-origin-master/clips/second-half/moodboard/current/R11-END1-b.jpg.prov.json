@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R11-END1-b.jpg",
+ "made": "2026-11-11T18:13:59+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "copy",
+ "tool": "cp",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r11/END1-b.jpg",
+ "why": "Start image for br39 (Kai: re-roll from END1-b, option a)"
+}

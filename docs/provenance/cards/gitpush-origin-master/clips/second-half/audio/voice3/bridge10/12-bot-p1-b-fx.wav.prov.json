@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge10/12-bot-p1-b-fx.wav",
+ "made": "2026-11-11T18:37:02+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/12-bot-p1-b.wav",
+ "why": "tannoy (round 10 filter) copy of the reused pick",
+ "settings": {
+  "fx": "tannoy-r10"
+ }
+}

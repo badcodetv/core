@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br38b-endwide-R11-END1-b.mp4",
+ "made": "2026-11-11T18:13:11.948Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked-off camera. The little grey robot, the only robot in the whole valley, rolls steadily from the wreck down the grassy slope to where she finishes, a thin hooped aerial lifting out of her lid in the first two seconds and staying up. The wreck smokes on. A single unbroken shot. Locked-off camera.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r11/END1-b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-refs/bridge-r11/END1-b.jpg",
+  "end": "/home/kai/.cache/badcode-refs/bridge-r11/END1-b-last-a.jpg",
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 10
+ },
+ "source_id": "09a3a819-505e-4447-b2f6-36ad11bd8e65"
+}

@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r11/video/card-the-next-day.mp4",
+ "made": "2026-11-11T18:15:56+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "cut-bridge.py --round 11",
+ "why": "round 11 render part"
+}

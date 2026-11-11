@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/bridge9-lips/shb-br23-lady1d-LADY6-muted.mp4",
+ "made": "2026-11-11T13:54:19+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br23-lady1d-LADY6.mp4",
+ "why": "Kai 11 Nov: all the lip-sync in scene B redone (bridge r9): talking clip muted"
+}

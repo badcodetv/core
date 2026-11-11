@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/flowsync-bridge11/br35d-in.mp4",
+ "made": "2026-11-11T18:15:57+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/flow-align.py",
+ "why": "Flow talking clip re-timed to the placed voice (picture-warp)"
+}

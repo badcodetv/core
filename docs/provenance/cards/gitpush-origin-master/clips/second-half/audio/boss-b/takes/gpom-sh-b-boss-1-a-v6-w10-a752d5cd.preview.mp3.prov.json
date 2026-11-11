@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-1-a-v6-w10-a752d5cd.preview.mp3",
+ "made": "2026-11-11T14:37:12+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "a752d5cd-3d3f-4e73-93ef-29b31cc037d6",
+ "inputs": {
+  "title": "gpom-sh-b-boss-1-A-v6-w10",
+  "song": "https://suno.com/song/a752d5cd-3d3f-4e73-93ef-29b31cc037d6"
+ },
+ "settings": {
+  "durationSec": 10,
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md",
+  "atom": "gpom-sh-b-boss-1 revision A",
+  "round": "6",
+  "styleInfluence": "50",
+  "audioInfluence": "65",
+  "voice": "badcode newsreader",
+  "durationTarget": "15"
+ },
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-1-a-v6-w10-a752d5cd.wav",
+ "why": "GPOM scene B (the bridge): the boss answers Maddie's radio call, 'Yes, what is it?' (Kai: Suno OK, 11 Nov)"
+}

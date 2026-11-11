@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r10/WRK1-a.jpg",
+ "made": "2026-11-11T14:30:14.432Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same overcast chalk downs and the same overgrown concrete bunker as the first image, its shut green doors small up on the left of the frame, nothing mounted above them. Now the burnt-out kill bot from the second image sits big and close in the right foreground: a blackened tracked machine with a sensor turret, scorched and split open, a crow perched on it, grey smoke curling up off it into the low sky. Beyond the wreck, in the middle distance, the little grey six-wheeled robot from the third image, amber beacon lit and torn bunting on a wheel, has just left the door and is rolling down the grassy slope. Wide, deep, flat grey daylight. Shot like a 1980s BBC drama on 16mm stock, washed-out colour, gentle contrast, thick grain. Widescreen, no lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r10/AWAY3-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r10/AWAY3-a.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r10/periscope.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r10/maddie.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cf416357-a4b0-47a2-ba62-fc71faa460d1"
+}

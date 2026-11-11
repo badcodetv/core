@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R11-END3-b.jpg",
+ "made": "2026-11-11T17:48:38+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "copy",
+ "tool": "cp",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r11/END3-b.jpg",
+ "why": "Kai's r11 pick END3-b, copied as the start image for br37"
+}

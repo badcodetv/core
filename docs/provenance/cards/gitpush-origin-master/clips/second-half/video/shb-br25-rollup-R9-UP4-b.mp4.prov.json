@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br25-rollup-R9-UP4-b.mp4",
+ "made": "2026-11-11T14:09:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The small grey robot trundles steadily forward along the muddy track towards the shut green doors, her amber beacon blinking, and rolls to a stop on the grass right in front of them. The long grass in the foreground sways in the wind. One continuous shot, no cuts. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R9-UP4-b.jpg",
+ "why": "Kai 11 Nov: roll-up still pick UP4-b (r9 round 2); silent, ~4 s usable",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R9-UP4-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br25-rollup",
+  "frame": 25,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T13:56:48.318Z"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9/UP4-a.jpg",
+ "made": "2026-11-11T12:30:26.546Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A long-lens view from far down the slope, looking up the hill at the bunker from the first image: the overgrown concrete portal and its green steel doors sit small in the middle of a big bare chalk down under a heavy grey sky, a pale cream loudspeaker horn just visible on a bracket above the doors. A faint tyre track climbs the wet grass towards them, and halfway up it, tiny, the boxy grey delivery robot from the second image with its amber beacon glowing and its tattered bunting, climbing towards the door. Long grass and seed heads close to the lens frame the bottom of the picture, soft and out of focus. Compressed telephoto perspective, muted greens and greys. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. Widescreen, no words or marks anywhere in the image.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/maddie.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "852dd450-4b1f-40f7-9366-5139aaeddb53"
+}

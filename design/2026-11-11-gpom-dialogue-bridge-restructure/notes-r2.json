@@ -1,0 +1,40 @@
+{
+  "round": 2,
+  "plan": [
+    {
+      "h": "Round 2, applied",
+      "items": [
+        "Line 4: 'You mean... killing everybody.' A statement, flat, not a question.",
+        "Line 15: Maddie on the radio to the boss as she rolls away: 'Hey, boss. I've given them the presentation. We can only hope they trust us.' We never hear the boss."
+      ]
+    },
+    {
+      "h": "You decide",
+      "items": [
+        "Go on 1D? Say go and I start the voices, then the stills, then the talking clips (all lip-sync redone), the new cut, the page and Premiere.",
+        "Unless you say otherwise: the lady is seen at the door for line 4."
+      ]
+    }
+  ],
+  "replies": {
+    "1-1A-L5": "→ 1D line 5: 'Yeah, we're really sorry about that. [pause] We do want to try and fix it.' New voicing.",
+    "1-1A-L7": "→ 1D line 7: the 'Yeah' cut off the front of the take you like, so it's 'That's... that's fair', then a held pause. Agreed, 'Yeah' after 'are you joking?' reads as 'yes, we are'.",
+    "1-1A-L12": "→ 1D line 12: Derek re-voiced with shock and emotion, close to a disbelieving laugh, and an exclamation mark. New talking clip for the lip-sync.",
+    "1-1A-L13": "→ 1D line 13: 'Look. I understand why you wouldn't trust us. I'm going to leave you a video to watch. And I'll come back tomorrow.' So nothing physical is shown (question 1 answered).",
+    "1-1A-L15": "→ 1D line 15: 'I've given them the presentation I showed you earlier. I hope when they watch it, they'll trust us.' Said to us, the audience.",
+    "1-1D-L4": "→ 'You mean... killing everybody.' A statement, the penny dropping. She's seen at the door, with a new talking clip for the lip-sync.",
+    "1-1D-L15": "→ Your last option: 'Hey, boss. [beat] I've given them the presentation. [beat] We can only hope they trust us.' One-way radio, the boss never heard. It also avoids saying 'tomorrow' twice."
+  },
+  "kai_round1": {
+    "1-1A-L5": "I think here we should say yeah, we're really sorry about that pause. We do want to try and fix it",
+    "1-1A-L7": "I think here Maddie should just say that's cause, that's fair. She shouldn't say yeah, because it sounds like she's saying yes we are joking. And then after that's fair, there should be a pause.",
+    "1-1A-L12": "There should definitely be emotion and surprise in Derek's voice.",
+    "1-1A-L13": "I think here we should say I understand why you wouldn't trust us I'm gonna leave you a video to watch and I'll come back tomorrow I think that's what we should say",
+    "1-1A-L15": "I think we say here, like, I've given them the presentation I showed you earlier. I hope when they watch that, they will trust us."
+  },
+  "kai_chat": "Most of the questions are to do with the dialogue I think I've added the notes about. Yes, I think all of the lip-synching needs to be doing on this scene.",
+  "kai_round2": {
+    "1-1D-L4": "I think here she should say you mean cause killing everybody rather than what do you mean because she's making a statement rather than asking a question.",
+    "1-1D-L15": "I think maybe then I hope when they watch it I've given them the presentation. I showed you earlier Hopefully they will change Hopefully they will understand they can trust us or I've given them the presentation. I showed you earlier. Let's see What they think tomorrow? I think that's let's say that Although we have just said, and I'll come back tomorrow. Let's have given them the presentation I showed you earlier. Let's see if that helps. Or, I'll tell you what, this should be a conversation between Maddy and the boss. So, Maddy should call, hey boss, I've given them the presentation. We can only hope that they trust us. I think that's what we should do. It should be a communication from Maddy to the boss. We shouldn't hear the boss say anything."
+  }
+}

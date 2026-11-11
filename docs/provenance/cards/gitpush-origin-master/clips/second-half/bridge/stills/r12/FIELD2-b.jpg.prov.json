@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r12/FIELD2-b.jpg",
+ "made": "2026-11-11T18:38:40.091Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the background behind the robot's lid: instead of the street and the church tower, a soft out-of-focus open grassy field on the chalk downs and a flat grey overcast sky, nothing built anywhere. The scuffed grey lid, the round hatch, the chrome aerial with its red tip, the amber beacon, the bunting, the framing and the film look stay exactly the same.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r12/hatch.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r12/hatch.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "752c810d-2dc6-41f0-b3ba-461942b00e79"
+}

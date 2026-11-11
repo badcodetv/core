@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r11/video/close-eased.mp4",
+ "made": "2026-11-11T18:19:28+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut-bridge.py --round 11",
+ "why": "bridge round 11: ending on br39 (Kai's route a) then br38"
+}

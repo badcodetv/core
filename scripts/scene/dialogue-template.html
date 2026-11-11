@@ -103,7 +103,7 @@ textarea:focus{outline:2px solid var(--fg);outline-offset:-1px}
   <ol class="how">
     <li><b>One tab per dialogue.</b> Each tab is one scene's conversation, nothing else.</li>
     <li><b>Read what's there now, then the three drafts.</b> Pick one, or note single lines to mix and match.</li>
-    <li><b>A chip like <span class="chip plain">09</span></b> says which writer a line came from. Tap it to read that writer's whole version, ranked at the bottom.</li>
+    <li class="writers-hint"><b>A chip like <span class="chip plain">09</span></b> says which writer a line came from. Tap it to read that writer's whole version, ranked at the bottom.</li>
   </ol>
   <div id="roundplan"></div>
   <div id="topSlip"></div>
@@ -217,7 +217,7 @@ function dialoguePanel(d, n) {
   const p = el('section', 'panel'), band = el('div', 'band');
   band.append(el('span', 'eyebrow', 'Dialogue ' + n + ' of ' + D.dialogues.length), el('span', 'meta', d.where + ' · target ' + d.target));
   p.append(band, el('h2', '', d.label), slip(d.id, 'Note on this dialogue as a whole'));
-  p.append(el('h3', '', 'Read it: now, and three drafts'));
+  p.append(el('h3', '', 'Read it: now, and ' + (d.drafts.length === 3 ? 'three drafts' : d.drafts.length + ' draft' + (d.drafts.length > 1 ? 's' : ''))));
   const v = VIEW[d.id] || d.drafts[0].id, seg = el('div', 'seg');
   const opt = (key, title, sub) => { const b = el('button', (v === key ? 'on' : '') + (NOTES['pick-' + d.id] === key ? ' picked' : '')); b.append(el('b', '', title), el('span', '', sub)); b.onclick = () => { VIEW[d.id] = key; render() }; return b };
   seg.append(opt('now', 'Now', 'in the cut, ' + d.now.length + ' lines'));
@@ -234,6 +234,7 @@ function dialoguePanel(d, n) {
     for (const [k, vals] of Object.entries(d.protected.rows)) { const r = el('tr'); r.append(el('td', '', k)); for (const x of vals) r.append(el('td', '', x)); t.append(r) }
     const w = el('div', 'md'), sc = el('div', 'tbl'); sc.append(t); w.append(sc); p.append(w);
   }
+  if (!d.ranking.length) return p;   // a hand-written page (no writers' run)
   p.append(el('hr'));
   p.append(el('h3', '', 'Optional: the raw material the three drafts were blended from'));
   p.append(el('p', 'lede', "You only need to pick from the three drafts above. Below are the " + d.ranking.length + " writers' own versions, each pushing one approach to the extreme. 1A, 1B and 1C are built from their best lines: each line's chip (like 09) says which writer it came from. Ranked harshly, best first. Read one only if you want to steal a line, and note it on that writer's slip."));
@@ -242,7 +243,7 @@ function dialoguePanel(d, n) {
 }
 function questionsPanel() {
   const p = el('section', 'panel');
-  p.append(el('span', 'eyebrow', 'Both dialogues'), el('h2', '', 'Open questions for you'));
+  p.append(el('span', 'eyebrow', D.dialogues.length > 1 ? 'All dialogues' : 'This dialogue'), el('h2', '', 'Open questions for you'));
   p.append(el('p', 'lede', 'The drafts lean on these. Answer in the box under each.'));
   D.questions.forEach((q, i) => { const c = el('div', 'q'); c.append(el('p', '', (i + 1) + '. ' + q.text), slip(q.id, 'Your answer')); p.append(c) });
   return p;
@@ -250,6 +251,7 @@ function questionsPanel() {
 
 function current() { const h = location.hash.slice(1); return D.dialogues.some(d => d.id === h) || h === 'q' ? h : D.dialogues[0].id }
 function render() {
+  if (!D.shapes.length) document.querySelectorAll(".writers-hint").forEach(x => x.remove());
   const cur = current(), tabs = $('tabs'); tabs.replaceChildren();
   D.dialogues.forEach((d, i) => {
     const a = el('a', cur === d.id ? 'on' : '', (i + 1) + ' · ' + d.label); a.href = '#' + d.id;

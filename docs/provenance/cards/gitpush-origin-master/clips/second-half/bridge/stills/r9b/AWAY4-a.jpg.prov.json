@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9b/AWAY4-a.jpg",
+ "made": "2026-11-11T13:48:02.086Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Side-on medium shot at the robot's own height: the boxy dented grey robot from the second image crosses the frame from left to right in profile, her amber beacon pulsing and the torn faded bunting on her wheel lifting in the wind. She is leaving the bunker, which sits behind her on the left, softer: the shut green steel doors from the first image with bare weathered concrete above them, a few broken bricks scattered on the grass below. Ahead of her on the right, open empty downland and a low grey sky. Lonely, quiet, overcast. Shot like a 1980s BBC drama on 16mm stock, washed-out colour, gentle contrast, thick grain. Widescreen, no lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/maddie.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cc22e0d9-5517-4514-a444-705ddcb59e8a"
+}

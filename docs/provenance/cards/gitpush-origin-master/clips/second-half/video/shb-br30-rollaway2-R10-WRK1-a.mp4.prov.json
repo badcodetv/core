@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br30-rollaway2-R10-WRK1-a.mp4",
+ "made": "2026-11-11T15:07:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The small grey robot turns away from the bunker door and rolls slowly down the grassy slope, passing behind the burnt-out wreck, her amber beacon pulsing, staying in view. Grey smoke keeps drifting up off the wreck in the foreground and the crow on it shifts its wings; the wind moves the grass. One continuous shot, no cuts. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R10-WRK1-a.jpg",
+ "why": "Kai 11 Nov (r10 still pick WRK1-a): roll-away behind the wreck, ~8 s",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R10-WRK1-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br30-rollaway2",
+  "frame": 30,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T14:55:07.523Z"
+ }
+}

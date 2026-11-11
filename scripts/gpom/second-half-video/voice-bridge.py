@@ -30,6 +30,7 @@ import voices as E  # noqa: E402  (whisper + norm)
 V = V3.V
 RND = 'bridge'
 FOLDER = 'second-half-b-the-door'
+ROUND = int(sys.argv[sys.argv.index('--round') + 1]) if '--round' in sys.argv else 1
 GAP = {'[pause]': 0.6, '[beat]': 0.6, '[long pause]': 1.2}
 SPEAKERS = ('bot', 'lady', 'woman', 'man')
 # The script's stage direction is written for the edit; where it says nothing a voice can act, say it here.
@@ -52,7 +53,20 @@ EMO = {  # keyed by the line's opening words, so it survives lines moving
     'Oi.': 'indignant protest, wounded and outraged, like a man accused of leaving the toilet seat up',
     'Well. [pause]': 'dry, flat and slow; not agreeing, stating a fact',
     'Derek, go': 'brisk, a quiet order, turning to him',
-    "They've blown": 'quietly stunned, half to himself, peering through a periscope',
+    # Kai 11 Nov (bridge script page r1): "definitely emotion and surprise in Derek's voice"
+    "They've blown": 'shocked and emotional, real surprise, almost a laugh of disbelief, peering through a periscope'
+                     if ROUND >= 7 else 'quietly stunned, half to himself, peering through a periscope',
+    # round 7 (Kai 11 Nov, draft 1D)
+    'You mean': 'flat and quiet, a statement not a question; the penny dropping as she takes in what the robot just admitted',
+    "Yeah, we're": 'sincere, a little ashamed, genuinely sorry; not performing',
+    "I'll tell you": 'a thought arriving, a little brighter; decisive',
+    'Look. I understand': 'gentle and plain, owning it; no pleading',
+    # Round 9 (Kai, timeline r11 at1729): it must sound like her report line, so it takes the report's direction
+    'Hey, boss, are': ('reporting quietly to her boss on the radio, checking he is on the line; tired, hopeful, a bit unsure; '
+                       'not for anyone else to hear') if ROUND >= 9 else
+                      'quiet, a private radio call to her boss as she rolls away, checking he is on the line; casual, a little tired',
+    "I've given them": 'reporting quietly to her boss on the radio; tired, hopeful, a bit unsure; not for anyone else to hear',
+    'Hey, boss': 'quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear',
     'We know we': 'brisk and matter-of-fact, quick, no long pauses; the practical one',
 }
 
@@ -76,7 +90,6 @@ def emotion(direction, tag):
     return '; '.join(x for x in (tag, d) if x) or None
 
 
-ROUND = int(sys.argv[sys.argv.index('--round') + 1]) if '--round' in sys.argv else 1
 if ROUND > 1:
     RND = f'bridge{ROUND}'
 PREV = 'voices-bridge.json' if ROUND <= 2 else f'voices-bridge{ROUND - 1}.json'
@@ -111,7 +124,7 @@ FX2 = {
               'apad=pad_dur=0.6,aecho=0.8:0.5:70|140:0.22|0.12,volume=-2dB',
     'muffled': 'lowpass=f=1500,lowpass=f=1500,volume=-4dB,aecho=0.7:0.4:40:0.2',
 }
-REVOICE = {'Oi.'} if ROUND <= 2 else {'...And everything else.'} if ROUND == 4 else set()  # Kai: on screen now, the toilet-row protest face; the old read was 'from across the room'
+REVOICE = {'Oi.'} if ROUND <= 2 else {'...And everything else.'} if ROUND == 4 else {'Hey, boss, are you there?'} if ROUND == 9 else set()  # Kai: on screen now, the toilet-row protest face; the old read was 'from across the room'
 
 
 # Round 4 (Kai 4 Nov, timeline r4: "a louder version of you killed everybody... the emotion... landed more than the

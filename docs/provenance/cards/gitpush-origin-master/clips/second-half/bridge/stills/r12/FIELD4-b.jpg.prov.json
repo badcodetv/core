@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r12/FIELD4-b.jpg",
+ "made": "2026-11-11T18:40:35.654Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A low, close three-quarter view from just ahead of the grey robot from the first image as she trundles across an open grassy field on the chalk downs, long pale grass brushing her wheels; a small round hatch on her lid stands open and a slim chrome aerial with a red tip, like in the second image, is rising out of it. Her amber beacon glows; her bunting sways. Behind her only empty rolling downs and a low grey sky. Grainy, muted film look like the first image.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r12/street-front.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r12/street-front.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r12/hatch.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "5899c7eb-d52b-4d70-8067-4bff9c5d31ad"
+}

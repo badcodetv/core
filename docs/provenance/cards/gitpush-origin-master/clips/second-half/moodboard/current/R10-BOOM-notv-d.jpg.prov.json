@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R10-BOOM-notv-d.jpg",
+ "made": "2026-11-11T14:54:01+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "copy",
+ "tool": "cp",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r10/BOOM-notv-d.jpg",
+ "why": "Kai's r10 still pick, copied as the start image"
+}

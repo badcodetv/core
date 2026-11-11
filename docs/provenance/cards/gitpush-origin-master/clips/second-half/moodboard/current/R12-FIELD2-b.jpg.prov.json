@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R12-FIELD2-b.jpg",
+ "made": "2026-11-11T18:47:15+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "copy",
+ "tool": "cp",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r12/FIELD2-b.jpg",
+ "why": "Kai's r12 pick, start image"
+}

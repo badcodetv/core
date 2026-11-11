@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r10/split/boss-speaker.wav",
+ "made": "2026-11-11T15:44:18+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "cut-bridge.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/gpom-sh-b-boss-1-a-v6-w25-b790769c-tight.wav",
+ "why": "the boss heard through Maddie's speaker",
+ "settings": {
+  "filter": "SPEAKER (cut3.py)"
+ }
+}

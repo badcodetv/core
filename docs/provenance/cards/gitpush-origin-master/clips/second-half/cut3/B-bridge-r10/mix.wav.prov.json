@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r10/mix.wav",
+ "made": "2026-11-11T15:44:09+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut-bridge.py --round 10",
+ "why": "bridge round 10: Kai's timeline r10 notes (close beacon br33, two-way call with the boss, no TV, Derek heard)"
+}

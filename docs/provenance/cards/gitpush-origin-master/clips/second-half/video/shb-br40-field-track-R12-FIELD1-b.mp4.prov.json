@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br40-field-track-R12-FIELD1-b.mp4",
+ "made": "2026-11-11T18:49:58+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera keeps tracking steadily backwards across the open grass at the same speed. The small grey delivery robot keeps rolling towards the camera at the same pace, staying the same size in frame, the grassy downs sliding past behind her. Her amber beacon pulses in a lively rhythm. Her torn bunting sways across her front wheels. The hatch on her lid stays shut. She never stops.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R12-FIELD1-b.jpg",
+ "why": "Kai r12 pick FIELD1-b (option b): scene A beat 0's tracking wording, on grass",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R12-FIELD1-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br40-field-track",
+  "frame": 40,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T18:48:54.419Z"
+ }
+}

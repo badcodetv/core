@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/flowsync-bridge11/br34b-voice.wav",
+ "made": "2026-11-11T18:15:56+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/flow-align.py",
+ "why": "the old lady's voice placed on the mouth phrase by phrase (place-dub)"
+}

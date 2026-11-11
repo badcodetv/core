@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R9-AWAY3-a.jpg",
+ "made": "2026-11-11T13:56:16+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "copy",
+ "tool": "cp",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9b/AWAY3-a.jpg",
+ "why": "Kai's r9 stills pick (round 2), copied as the start image"
+}

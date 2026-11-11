@@ -45,10 +45,10 @@
   "storyboard": "https://claude.ai/artifact/B84sEzk2892UiwbovFtfSW"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/preview.mp4",
-  "how": "python3 scripts/gpom/second-half-video/voice-sandra-fit.py && python3 scripts/gpom/second-half-video/cut-bridge.py --round 8",
-  "what": "round 8: Kai's r7 note: Sandra's first sentence as one take fitted to her mouth (4 Nov)"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/preview.mp4",
+  "how": "python3 scripts/gpom/second-half-video/voice-bridge.py --round 10 && python3 scripts/gpom/second-half-video/cut-bridge.py --round 13",
+  "what": "round 13: boom from N3's last frame (br42b), 'Look' on br43 (full frame, 12 s), no roll-away, field shot 2.5 s (11 Nov)"
  },
  "premiere": {
   "rough1": {
@@ -76,7 +76,7 @@
     "why": ""
    }
   },
-  "current": "bridge-r2",
+  "current": "bridge-r3",
   "r3": {
    "sequence": "gpom-3-B-door-r3",
    "guid": "52e588be-3e75-4950-8a52-69bef641fbe2",
@@ -149,9 +149,25 @@
    "built": "2026-11-11",
    "what": "r1 with its black fixed (Kai 11 Nov: 'it just goes to black in Premiere'): three shots pointed past the end of their pre-trimmed files (s05 tannoy ~1.5 s black at 30.3, s08 room 3 s black at 49.6, s16 lady ~0.5 s before the card) and two one-frame gaps (44.17, 70.62). Now plays exactly the page's frames",
    "how": "clone of r1; s05/s08/s16 in-points to 0 (the files are the trimmed pieces); s07-film +1 frame at its tail, s13-crowd +1 frame; Kai's -15 dB on every audio clip kept",
-   "premiere_ahead": "Kai's even -15 dB on every audio clip (no change to the balance); picture now matches the page frame for frame",
+   "premiere_ahead": "none: the '-15 dB' read was Premiere's internal 0 dB value (0.178); levels are at default",
    "check": {
-    "at": "2026-11-11T11:24",
+    "at": "2026-11-11T11:41",
+    "state": "in sync",
+    "why": ""
+   },
+   "stale": "replaced by bridge-r3 (round 13) on 11 Nov"
+  },
+  "bridge-r3": {
+   "sequence": "04 GPOM story B bridge r3",
+   "guid": "1f4d5a12-47c3-41b8-96b0-3dfaa5d36383",
+   "bin": "04 GPOM story B bridge r3",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-11",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/edl.json",
+   "what": "the bridge, round 13 (1:11), approved by Kai 11 Nov: \"it's a wrap. I love it. I think we've got it.\" Flow lip-sync (flow-align.py), field track + lid call to the boss, beacon close br43",
+   "how": "edl-premiere.json (edl + each stem's file; every shot rebased to in-point 0 on its pre-trimmed file and to its real frame count, so nothing points past a file end) -> scripts/scene/premiere-plan.py --tag r13 --seq '04 GPOM story B bridge r3'; lines under B-bridge-r13/premiere/r13/lines/; plan premiere-r13.json",
+   "check": {
+    "at": "2026-11-11T19:36",
     "state": "in sync",
     "why": ""
    }
@@ -177,17 +193,10 @@
   }
  ],
  "dialogue": {
-  "page": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
-  "options": "design/2026-11-02-gpom-dialogue-door-proof/options.json",
-  "picked": "1G",
-  "round": 4,
-  "previous": {
-   "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-   "options": "design/2026-10-26-gpom-dialogue-options/options.json",
-   "picked": "2J",
-   "round": 5,
-   "round_note": "2J was cut whole on 28 Oct (the bridge): beat 17 has no lines"
-  }
+  "page": "https://claude.ai/artifact/YVns2ZT9oGEuPJW3B9Yqxv",
+  "options": "design/2026-11-11-gpom-dialogue-bridge-restructure/options.json",
+  "picked": "1D",
+  "round": 2
  },
  "video": {
   "model": "Omni 1.2 Flash",

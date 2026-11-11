@@ -391,5 +391,189 @@
   "what": "round 9 notes dumped (Kai 11 Nov: restructure the bridge around trust and jeopardy; no TV, no debate)",
   "feedback": "feedback/timeline-r9",
   "feedback_docs": 46
+ },
+ {
+  "at": "2026-11-11T11:57:42+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/YVns2ZT9oGEuPJW3B9Yqxv",
+  "what": "dialogue page: the bridge restructured from Kai's timeline r9 notes (1A/1B/1C, hand-written, no writers' run)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-11-gpom-dialogue-bridge-restructure/options.json design/2026-11-11-gpom-dialogue-bridge-restructure.html"
+ },
+ {
+  "at": "2026-11-11T12:01:46+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/YVns2ZT9oGEuPJW3B9Yqxv",
+  "what": "Kai's 5 line notes on 1A (dumped to design/2026-11-11-gpom-dialogue-bridge-restructure/feedback/r1) → draft 1D; all lip-sync on the scene to be redone"
+ },
+ {
+  "at": "2026-11-11T12:17:27+00:00",
+  "stage": "picks",
+  "round": 7,
+  "url": "https://claude.ai/artifact/6GnHtaPTWrYtN7Md9W8md3",
+  "what": "bridge 1D voiced (voice-bridge.py --round 7): 10 new phrases x3 takes, picked by measurement",
+  "rebuild": "python3 scripts/scene/build-picks.py design/2026-11-11-gpom-bridge-voices-r7/picks.json design/2026-11-11-gpom-bridge-voices-r7/index.html"
+ },
+ {
+  "at": "2026-11-11T12:36:11+00:00",
+  "stage": "picks",
+  "round": 9,
+  "url": "https://claude.ai/artifact/SkFW6KyH5RWwYYGbSA89z8",
+  "what": "Round 9 stills for the two new shots of script 1D: Maddie's roll-up (UP1-4) and roll-away after the boom (AWAY1-4), all edits of the S6-c door plate; adds an exterior horn above the door",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-r9-stills-picks.json design/2026-11-11-gpom-bridge-stills-r9/index.html"
+ },
+ {
+  "at": "2026-11-11T13:49:14+00:00",
+  "stage": "picks",
+  "round": 9,
+  "url": "https://claude.ai/artifact/SkFW6KyH5RWwYYGbSA89z8",
+  "what": "Round 9 stills page, round 2: roll-up and roll-away redone with no horn outside (stills r9b), round 1 folded",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-r9-stills-picks.json design/2026-11-11-gpom-bridge-stills-r9/index.html",
+  "decided": [
+   "Kai 11 Nov: 'The megaphone is on the inside of the bunker... Maddie just hacks the megaphone from outside. Please recut these without the concept of a megaphone on the outside.'"
+  ]
+ },
+ {
+  "at": "2026-11-11T13:55:08+00:00",
+  "stage": "clips",
+  "round": 9,
+  "url": "https://claude.ai/artifact/SkFW6KyH5RWwYYGbSA89z8",
+  "what": "Lip-sync r9: four new Omni 1.2 talking clips (br21-br24) from approved plates, muted, picked voices fitted (video/bridge9-lips/), LatentSync inputs in video/latentsync-bridge9/; added as a section of the r9 picks page",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-r9-stills-picks.json design/2026-11-11-gpom-bridge-stills-r9/index.html"
+ },
+ {
+  "at": "2026-11-11T14:13:33+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+  "what": "round 9: Kai's restructure (draft 1D), new roll-up/roll-away, every lip-sync redone with LatentSync; 1:15",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut-bridge.py --round 9 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>",
+  "decided": [
+   "Kai 11 Nov: the megaphone is only ever inside; picks UP4-b / AWAY3-a; voices by ear"
+  ]
+ },
+ {
+  "at": "2026-11-11T14:34:47+00:00",
+  "stage": "picks",
+  "round": 10,
+  "url": "https://claude.ai/artifact/SkFW6KyH5RWwYYGbSA89z8",
+  "what": "Round 3 of the r9 picks page (timeline r10 notes): the boom room with the TV painted out (BOOM-notv a-d) and the roll-away with the wreck in the foreground (WRK1-4)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-r9-stills-picks.json design/2026-11-11-gpom-bridge-stills-r9/index.html"
+ },
+ {
+  "at": "2026-11-11T15:45:34+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+  "what": "bridge round 10 (81 s): close beacon, no TV, Derek heard, wreck roll-away, two-way call with the boss",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out-dir>"
+ },
+ {
+  "at": "2026-11-11T16:00:28+00:00",
+  "stage": "timeline",
+  "round": 11,
+  "what": "Kai's round 11 notes (7 new): drop LatentSync for Flow talking clips, pauses, periscope, wide ending with the call",
+  "feedback": "feedback/timeline-r11",
+  "feedback_docs": 64
+ },
+ {
+  "at": "2026-11-11T16:03:03+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/6GnHtaPTWrYtN7Md9W8md3",
+  "what": "voices r3: 'Hey, boss, are you there?' re-voiced to match her report line (voice-bridge.py --round 9)",
+  "rebuild": "python3 scripts/scene/build-picks.py design/2026-11-11-gpom-bridge-voices-r7/picks.json design/2026-11-11-gpom-bridge-voices-r7/index.html"
+ },
+ {
+  "at": "2026-11-11T16:07:58+00:00",
+  "stage": "picks",
+  "round": 11,
+  "url": "https://claude.ai/artifact/SkFW6KyH5RWwYYGbSA89z8",
+  "what": "Round 4 of the r9 picks page (timeline r11 notes at1844/at1524/at1554): the much wider ending, END1-4",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-r9-stills-picks.json design/2026-11-11-gpom-bridge-stills-r9/index.html"
+ },
+ {
+  "at": "2026-11-11T17:48:22+00:00",
+  "stage": "picks",
+  "round": 4,
+  "url": "https://claude.ai/artifact/SkFW6KyH5RWwYYGbSA89z8",
+  "what": "stills r11: ending wide, picked END3-b",
+  "decided": [
+   "Kai picked END3-b for the ending wide"
+  ]
+ },
+ {
+  "at": "2026-11-11T18:16:50+00:00",
+  "stage": "timeline",
+  "round": 11,
+  "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+  "what": "bridge round 11 (84 s): Flow talking clips aligned by flow-align.py (no LatentSync), call over two new wides",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out-dir>",
+  "decided": [
+   "Kai: back out of LatentSync, regenerate in Flow; line the timing up; go A on the ending"
+  ]
+ },
+ {
+  "at": "2026-11-11T18:37:36+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "what": "Kai's round 12 notes (8): cut joking/fair/Derek-go, tannoy idea line, the call on a field tracking shot, shorter report, boss 'OK, well done, Maddie.'",
+  "decided": [
+   "Kai r12: cut the three lines; the call on a plain field with the camera in front, aerial as in scene A"
+  ],
+  "feedback": "feedback/timeline-r12",
+  "feedback_docs": 72
+ },
+ {
+  "at": "2026-11-11T18:41:25+00:00",
+  "stage": "picks",
+  "round": 12,
+  "url": "https://claude.ai/artifact/SkFW6KyH5RWwYYGbSA89z8",
+  "what": "Round 5 of the r9 picks page (timeline r12 notes at1559/at1838/at1892): Maddie in a plain field, framed as scene A's street run / call shot (FIELD1-4)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-r9-stills-picks.json design/2026-11-11-gpom-bridge-stills-r9/index.html"
+ },
+ {
+  "at": "2026-11-11T18:47:02+00:00",
+  "stage": "picks",
+  "round": 5,
+  "url": "https://claude.ai/artifact/SkFW6KyH5RWwYYGbSA89z8",
+  "what": "stills r12: the field call, FIELD1-b (tracking) then FIELD2-b (aerial close-up)",
+  "decided": [
+   "Kai: FIELD1-b then FIELD2-b — go from watching Maddie trundle along to the aerial's out and we're speaking with the boss"
+  ]
+ },
+ {
+  "at": "2026-11-11T18:55:42+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+  "what": "bridge round 12 (78 s): three lines cut, tannoy idea line, the call on the field (FIELD1-b track, FIELD2-b lid)",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out-dir>"
+ },
+ {
+  "at": "2026-11-11T19:05:02+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "what": "Kai's round 13 notes (4): boom from N3's last frame, 'Look' not a crop, no roll-away, field shot halved",
+  "feedback": "feedback/timeline-r13",
+  "feedback_docs": 76
+ },
+ {
+  "at": "2026-11-11T19:15:15+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+  "what": "bridge round 13 (71 s): boom from N3's last frame, full-frame 'Look', no roll-away, field shot halved",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out-dir>"
+ },
+ {
+  "at": "2026-11-11T19:31:50+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "what": "Kai approved bridge round 13",
+  "decided": [
+   "Kai, 11 Nov: it's a wrap. I love it. I think we've got it."
+  ]
  }
 ]

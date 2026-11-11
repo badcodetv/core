@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r12/FIELD3-b.jpg",
+ "made": "2026-11-11T18:39:42.296Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The camera low on the grass a couple of metres in front of the dented grey six-wheeled robot from the first image as she rolls straight towards it across a wide, empty field of rough pale grass on the chalk downs; nothing else in sight, only grass rolling away to a low grey horizon and a heavy overcast sky. Her amber beacon glows, her torn bunting hangs over her front wheels, and a little round hatch on her lid has just flipped open. Same robot, same low head-on view and the same muted, grainy film look as the first image; the field is from the second image's downs with no buildings and no wreck.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r12/street-front.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r12/street-front.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r12/downs.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "88fde733-0e6c-4410-a291-6cff00568792"
+}

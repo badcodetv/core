@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br21-lady3-LADY0.mp4",
+ "made": "2026-11-11T12:51:10+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The old woman with grey hair and glasses stares up towards the door above her, flat and quiet as it sinks in, and says: You mean... Then a short pause, her lips still, then: killing everybody. She keeps staring. The people behind her in the dark corridor stand still. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY0.jpg",
+ "why": "Kai 11 Nov (script 1D, voices r7 pick 03-lady-c): new line, lip-sync from the approved LADY0 plate",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY0.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br21-lady3",
+  "frame": 21,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 5,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T12:37:46.159Z"
+ }
+}

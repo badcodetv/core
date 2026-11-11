@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r11/END1-a.jpg",
+ "made": "2026-11-11T16:03:58.828Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Pull right back from the first image: a far wider view of the same grey downs. The overgrown concrete bunker with its plain shut green doors sits small, high on the left of the hill. Lower down and to the right, the burnt-out kill bot from the first image lies smoking on the open grass, a thin grey plume leaning in the wind. Between them, a little to the LEFT of the wreck, the small grey six-wheeled robot from the second image trundles away down the long slope, tiny in the landscape, her amber beacon the only warm point, a thin aerial with a small round hoop on top sticking up out of a hatch in her lid like the one in the third image. A vast overcast sky fills the top half. Shot like a 1980s BBC drama on 16mm stock, washed-out colour, gentle contrast, thick grain. Widescreen, no lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r11/WRK1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r11/WRK1-a.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r11/maddie.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r11/antenna.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "1957bec7-3e5d-40c3-b081-9cb8d866ee37"
+}

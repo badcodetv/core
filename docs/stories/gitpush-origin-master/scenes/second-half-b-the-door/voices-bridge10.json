@@ -1,0 +1,251 @@
+{
+ "about": "Scene B bridge lines (draft 1D), voiced in Gemini TTS by scripts/gpom/second-half-video/voice-bridge.py. Files are relative to the media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "source": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/script.json",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/YVns2ZT9oGEuPJW3B9Yqxv",
+  "options": "design/2026-11-11-gpom-dialogue-bridge-restructure/options.json",
+  "picked": "1D",
+  "round": 2,
+  "previous": {
+   "page": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+   "options": "design/2026-11-02-gpom-dialogue-door-proof/options.json",
+   "picked": "1G",
+   "round": 4,
+   "round_timeline": 1
+  }
+ },
+ "lines": [
+  {
+   "i": 1,
+   "who": "bot",
+   "text": "Hello there, sorry about the intrusion.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Hello there, sorry about the intrusion.",
+     "direction": "coy and apologetic, a little awkward, softly sorry to intrude; hesitant, not bright, not a performer",
+     "reused": "bridge3/00-bot-c.wav",
+     "fx_file": "bridge10/00-bot-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 2,
+   "who": "bot",
+   "text": "...And everything else.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "...And everything else.",
+     "direction": "the punchline of a joke, said sincerely and straight-faced, every word clear and landing firmly; not mumbled, not trailing off, not sheepish",
+     "reused": "aside-opts/02-catch-b.wav",
+     "fx_file": "bridge10/02-catch-b-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 3,
+   "who": "lady",
+   "text": "You mean... killing everybody.",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "You mean... killing everybody.",
+     "direction": "flat and quiet, a statement not a question; the penny dropping as she takes in what the robot just admitted",
+     "reused": "bridge7/03-lady-c.wav",
+     "fx_file": null,
+     "voice": "Sulafat"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 4,
+   "who": "bot",
+   "text": "Yeah, we're really sorry about that. [pause] We do want to try and fix it.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Yeah, we're really sorry about that.",
+     "direction": "sincere, a little ashamed, genuinely sorry; not performing",
+     "reused": "bridge7/04-bot-p0-b.wav",
+     "fx_file": "bridge10/04-bot-p0-b-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "We do want to try and fix it.",
+     "direction": "sincere, a little ashamed, genuinely sorry; not performing",
+     "reused": "bridge7/04-bot-p1-b.wav",
+     "fx_file": "bridge10/04-bot-p1-b-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "who": "bot",
+   "text": "I'll tell you what. I've got an idea. Check this out.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "I'll tell you what. I've got an idea. Check this out.",
+     "direction": "a thought arriving, a little brighter; decisive",
+     "reused": "bridge7/07-bot-b.wav",
+     "fx_file": "bridge10/07-bot-b-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 8,
+   "who": "man",
+   "text": "They've blown up their own kill bot!",
+   "off": false,
+   "fx": null,
+   "voice": "Algieba",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "They've blown up their own kill bot!",
+     "direction": "shocked and emotional, real surprise, almost a laugh of disbelief, peering through a periscope",
+     "reused": "bridge7/11-man-b.wav",
+     "fx_file": null,
+     "voice": "Algieba"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 9,
+   "who": "bot",
+   "text": "Look. I understand why you wouldn't trust us. [beat] I'm going to leave you a video to watch. And I'll come back tomorrow.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Look. I understand why you wouldn't trust us.",
+     "direction": "gentle and plain, owning it; no pleading",
+     "reused": "bridge7/12-bot-p0-a.wav",
+     "fx_file": "bridge10/12-bot-p0-a-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "I'm going to leave you a video to watch. And I'll come back tomorrow.",
+     "direction": "gentle and plain, owning it; no pleading",
+     "reused": "bridge7/12-bot-p1-b.wav",
+     "fx_file": "bridge10/12-bot-p1-b-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 11,
+   "who": "bot",
+   "text": "Hey, boss, are you there?",
+   "off": false,
+   "fx": null,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Hey, boss, are you there?",
+     "direction": "reporting quietly to her boss on the radio, checking he is on the line; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "reused": "bridge9/14-bot-b.wav",
+     "fx_file": null,
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 13,
+   "who": "bot",
+   "text": "I've given them the presentation. All we can do is hope they trust us now.",
+   "off": false,
+   "fx": null,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "I've given them the presentation. All we can do is hope they trust us now.",
+     "direction": "reporting quietly to her boss on the radio; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: reporting quietly to her boss on the radio; tired, hopeful, a bit unsure; not for anyone else to hear.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge10/13-bot-a.wav",
+       "spoken": "I've given them the presentation. All we can do is hope they trust us now.",
+       "duration": 5.48,
+       "heard": "I've given them the presentation. All we can do is hope they trust us now.",
+       "match": 1.0,
+       "gap": 0.43,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge10/13-bot-b.wav",
+       "spoken": "I've given them the presentation. All we can do is hope they trust us now.",
+       "duration": 5.48,
+       "heard": "I've given them the presentation. All we can do is hope they trust us now.",
+       "match": 1.0,
+       "gap": 0.33,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge10/13-bot-c.wav",
+       "spoken": "I've given them the presentation. All we can do is hope they trust us now.",
+       "duration": 5.08,
+       "heard": "I've given them the presentation. All we can do is hope they trust us now.",
+       "match": 1.0,
+       "gap": 0.88,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  }
+ ]
+}

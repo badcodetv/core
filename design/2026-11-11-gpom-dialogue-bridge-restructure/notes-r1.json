@@ -1,0 +1,41 @@
+{
+  "round": 1,
+  "plan": [
+    {
+      "h": "Your read, applied",
+      "items": [
+        "Draft 1D (now first) is 1A with your five line notes, word for word.",
+        "Lip-sync: you said all of it is redone on this scene, so every talking shot gets a fresh clip and a fresh fit."
+      ]
+    },
+    {
+      "h": "What it costs",
+      "items": [
+        "New voices: Maddie x4 lines, the old lady's 'What do you mean, killing everybody?', Derek's new reading. Gemini voices, no credits.",
+        "New pictures: roll-up and roll-away shots (stills free, then Omni clips), plus new talking clips for every lip-synced line (Omni credits)."
+      ]
+    },
+    {
+      "h": "You decide",
+      "items": [
+        "Go on 1D as written? Pick it, or note any line again.",
+        "Still open: is the lady seen or only heard on 'What do you mean, killing everybody?' (Q2)? Is Maddie's last line said aloud or as a quieter thought (Q3)? If you don't answer, I'll go with: seen, at the door; said aloud, quietly."
+      ]
+    }
+  ],
+  "replies": {
+    "1-1A-L5": "→ 1D line 5: 'Yeah, we're really sorry about that. [pause] We do want to try and fix it.' New voicing.",
+    "1-1A-L7": "→ 1D line 7: the 'Yeah' cut off the front of the take you like, so it's 'That's... that's fair', then a held pause. Agreed, 'Yeah' after 'are you joking?' reads as 'yes, we are'.",
+    "1-1A-L12": "→ 1D line 12: Derek re-voiced with shock and emotion, close to a disbelieving laugh, and an exclamation mark. New talking clip for the lip-sync.",
+    "1-1A-L13": "→ 1D line 13: 'Look. I understand why you wouldn't trust us. I'm going to leave you a video to watch. And I'll come back tomorrow.' So nothing physical is shown (question 1 answered).",
+    "1-1A-L15": "→ 1D line 15: 'I've given them the presentation I showed you earlier. I hope when they watch it, they'll trust us.' Said to us, the audience."
+  },
+  "kai_round1": {
+    "1-1A-L5": "I think here we should say yeah, we're really sorry about that pause. We do want to try and fix it",
+    "1-1A-L7": "I think here Maddie should just say that's cause, that's fair. She shouldn't say yeah, because it sounds like she's saying yes we are joking. And then after that's fair, there should be a pause.",
+    "1-1A-L12": "There should definitely be emotion and surprise in Derek's voice.",
+    "1-1A-L13": "I think here we should say I understand why you wouldn't trust us I'm gonna leave you a video to watch and I'll come back tomorrow I think that's what we should say",
+    "1-1A-L15": "I think we say here, like, I've given them the presentation I showed you earlier. I hope when they watch that, they will trust us."
+  },
+  "kai_chat": "Most of the questions are to do with the dialogue I think I've added the notes about. Yes, I think all of the lip-synching needs to be doing on this scene."
+}

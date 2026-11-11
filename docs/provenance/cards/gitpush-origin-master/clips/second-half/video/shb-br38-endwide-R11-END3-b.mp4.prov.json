@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br38-endwide-R11-END3-b.mp4",
+ "made": "2026-11-11T18:09:40.576Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera does not move. The small grey robot, the only robot in the whole valley, slowly trundles away from the bunker down the slope to where she ends, her thin aerial rising out of her lid early on and staying up. The wreck keeps smoking. One continuous shot, no cuts. The camera does not move.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r11/END3-b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-refs/bridge-r11/END3-b.jpg",
+  "end": "/home/kai/.cache/badcode-refs/bridge-r11/END3-b-last-a.jpg",
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 10
+ },
+ "source_id": "e9e21033-496a-40f5-a7ad-a42b2f5310a7"
+}

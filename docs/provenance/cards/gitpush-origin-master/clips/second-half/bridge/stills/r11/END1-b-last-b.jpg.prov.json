@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r11/END1-b-last-b.jpg",
+ "made": "2026-11-11T18:11:00.150Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, move only the little grey robot: she has travelled on, away from the bunker and down the long slope towards the lower left of the picture, smaller now and seen from behind, her amber beacon lit and a thin aerial with a small round hoop sticking up out of her lid like in the second image. There is just one robot in the whole valley; where she stood before is now empty grass. The smoking wreck stays put, on her right. Leave the bunker, the hills, the grey sky, the grainy faded film look and the framing untouched.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r11/END1-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r11/END1-b.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r11/antenna.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "16be7e2e-3031-4f73-84e9-9a60e2d4d2ad"
+}

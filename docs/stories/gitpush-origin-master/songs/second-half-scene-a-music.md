@@ -305,6 +305,61 @@ No, thank you. I will handle it.
 [End]
 ```
 
+## Scene B (the bridge): the boss answers Maddie
+
+Scene B's bridge (11 Nov): Maddie rolls away from the bunker and radios him, *"Hey, boss, are you there?"*. He
+answers on the private line, dry and patient, faintly amused, the same register as his scene A phone lines; then she
+reports. One line, one atom, the dry-voice recipe (`sound.md`, "The dry-voice recipe used for the second half"). Kai
+approved one pair ("Suno OK", 11 Nov). Settings as round 2: v6 · Voice `badcode newsreader` (Keep Current styles) ·
+SI 50 · AI 65 · pair w25 / w10 · Duration 15 · Variety, Max Mode, Personalize Off · workspace `gpom-story`.
+
+### `gpom-sh-b-boss-1` — "Yes, what is it?"
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, dry and patient. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, dry, patient]
+Yes, what is it?
+[End]
+```
+
+### `gpom-sh-b-boss-2` — "OK, well done, Maddie."
+
+Bridge round 12 (11 Nov): Kai's second line for the boss, after Maddie reports. Same settings as `gpom-sh-b-boss-1`;
+only the delivery word changes.
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, quietly pleased. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, quietly pleased]
+OK, well done, Maddie.
+[End]
+```
+
 ## Cue P — the patrol (~45 s)
 
 Under the kill bots roaming, the HUD hearing a muffled human argument, then kill mode. Eerie and
@@ -410,6 +465,45 @@ vocals, singing, choir, pizzicato, plucked strings, string quartet, string ensem
 ## Round log
 
 New rounds at the top.
+
+### Round 7 (2026-11-11) · bridge round 12, scene B boss line 2 "OK, well done, Maddie." · recorded
+
+Atom `gpom-sh-b-boss-2` revision A, 2 Creates (w25 + w10), counter 6,620 → 6,605 (lags; 20 expected). No Suno tab was
+open on any channel, so one was opened (`open-tab`, channel 1); the form was empty. Same-prompt check: nothing close.
+All four recorded (`record-checked.py`, never downloaded) to `clips/second-half/audio/boss-b/takes/`. Listen tool not run.
+
+| Take | Length | Link | Measured |
+| --- | --- | --- | --- |
+| gpom-sh-b-boss-2-A-v6-w25 | 0:12 | https://suno.com/song/7a212072-9464-4f22-94c2-a8405dbb4180 | ✅ words right; tone at 7–8 s (cut off) |
+| gpom-sh-b-boss-2-A-v6-w25 | 0:13 | https://suno.com/song/d6de1ae3-4e01-43c9-aa60-0e937031aeb5 | ✅ words right; tone/noises at 8–9.5 s (cut off) |
+| gpom-sh-b-boss-2-A-v6-w10 | 0:05 | https://suno.com/song/8820f774-5bb5-40a9-a02c-805b7248c503 | ✅ words right, no tone |
+| gpom-sh-b-boss-2-A-v6-w10 | 0:13 | https://suno.com/song/f3fb9bac-616d-4d5a-8752-c34b563ee7ca | ✗ says the line twice |
+
+Every take pauses 0.8–1.2 s after "OK,". Tight cuts (pause closed to 0.35 s, 0.1 s head/tail): 7a212072 2.68 s,
+d6de1ae3 2.52 s, 8820f774 2.57 s; pause-kept `takes/<take>-trim.wav`: 3.13 s, 3.22 s, 3.38 s. Whisper hears
+"Okay, well done, Maddie." on all three.
+
+### Round 6 (2026-11-11) · scene B boss line "Yes, what is it?" · recorded, pick owed (Kai)
+
+Kai approved one pair ("Suno OK", 11 Nov). Atom `gpom-sh-b-boss-1` revision A, 2 Creates (w25 + w10) = **20 credits
+expected**; the counter read 6,630 → 6,620 (it lags, as in rounds 3 and 5). Before loading, the form held *The Rules*
+round 3 (`Rules r3-sampler-mangled-amen-v6-w80`, workspace `short-the-rules`, all eight takes finished and committed,
+no Suno process running). Voice `badcode newsreader` attached, Keep Current. Same-prompt check: nothing close. All four
+takes recorded (`record-checked.py`, never downloaded) to
+`/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/`. The listen tool was not run.
+
+| Take | Length | Link | Measured |
+| --- | --- | --- | --- |
+| gpom-sh-b-boss-1-A-v6-w25 | 0:06 | https://suno.com/song/b790769c-3504-4ddc-bcfa-f9c3ff7a74bf | ✅ words right, 0.58 s pause after "Yes," · **recommended** |
+| gpom-sh-b-boss-1-A-v6-w25 | 0:08 | https://suno.com/song/56eef7a5-3812-42f7-982c-c0bfd023f4cc | ✅ words right, quickest "what is it?", 0.86 s pause |
+| gpom-sh-b-boss-1-A-v6-w10 | 0:10 | https://suno.com/song/a752d5cd-3d3f-4e73-93ef-29b31cc037d6 | ✅ words right ("Yes. What is it?"), slowest, 1.0 s pause; extra noises at 8–9 s |
+| gpom-sh-b-boss-1-A-v6-w10 | 0:12 | https://suno.com/song/ee3b349a-85af-4f85-b378-f4bbf89702cd | ✗ says the line twice (second read at 8.3 s) |
+
+**Every take** carries a ~470–490 Hz pure tone at ~4–5 s, after the words (not at the start this time); no take has a
+tone before the words, and the pauses sit 55–65 dB below the voice (no bed). Speech starts within ~10 ms of the file
+start. Cuts (tone dropped, 0.1 s head/tail): `boss-b/<take>-tight.wav` (pause after "Yes," closed to 0.35 s: b790769c
+2.17 s, 56eef7a5 1.60 s, a752d5cd 2.08 s) and `boss-b/takes/<take>-trim.wav` (pause kept: 2.38 s, 2.09 s, 2.71 s).
+Whisper hears "Yes, what is it?" on every cut.
 
 ### Round 5 (2026-11-05) · boss lines 1 and 3 quicker (cut round 18) · picked by measurement, recorded
 

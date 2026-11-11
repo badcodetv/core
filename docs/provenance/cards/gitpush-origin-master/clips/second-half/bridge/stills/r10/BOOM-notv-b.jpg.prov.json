@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r10/BOOM-notv-b.jpg",
+ "made": "2026-11-11T14:28:46.304Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, remove only the small old television set and the wooden table it stands on, at the right of the picture between the men's heads. Where they were, continue the dark brick tunnel wall and the shadowy space behind the crowd, so it looks as if there was never a television there. Every person, the cream loudspeaker horn, the bulb and its cable, the brick vault, the light, the grain and the framing stay exactly as they are.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r10/boom-f0.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r10/boom-f0.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 4
+ },
+ "source_id": "96d3a42e-59d2-49d2-8635-991275268f04"
+}

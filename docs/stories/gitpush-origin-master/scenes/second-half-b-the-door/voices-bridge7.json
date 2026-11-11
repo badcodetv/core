@@ -1,0 +1,629 @@
+{
+ "about": "Scene B bridge lines (draft 1D), voiced in Gemini TTS by scripts/gpom/second-half-video/voice-bridge.py. Files are relative to the media folder. Picked by measurement (whisper + longest gap); Kai picked every new phrase by ear (voices page r7, 11 Nov).",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "source": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/script.json",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/YVns2ZT9oGEuPJW3B9Yqxv",
+  "options": "design/2026-11-11-gpom-dialogue-bridge-restructure/options.json",
+  "picked": "1D",
+  "round": 2,
+  "previous": {
+   "page": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+   "options": "design/2026-11-02-gpom-dialogue-door-proof/options.json",
+   "picked": "1G",
+   "round": 4,
+   "round_timeline": 1
+  }
+ },
+ "lines": [
+  {
+   "i": 1,
+   "who": "bot",
+   "text": "Hello there, sorry about the intrusion.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Hello there, sorry about the intrusion.",
+     "direction": "coy and apologetic, a little awkward, softly sorry to intrude; hesitant, not bright, not a performer",
+     "reused": "bridge3/00-bot-c.wav",
+     "fx_file": "bridge7/00-bot-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 2,
+   "who": "bot",
+   "text": "...And everything else.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "...And everything else.",
+     "direction": "the punchline of a joke, said sincerely and straight-faced, every word clear and landing firmly; not mumbled, not trailing off, not sheepish",
+     "reused": "aside-opts/02-catch-b.wav",
+     "fx_file": "bridge7/02-catch-b-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 3,
+   "who": "lady",
+   "text": "You mean... killing everybody.",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "You mean... killing everybody.",
+     "direction": "flat and quiet, a statement not a question; the penny dropping as she takes in what the robot just admitted",
+     "pick": "c",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: flat and quiet, a statement not a question; the penny dropping as she takes in what the robot just admitted.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/03-lady-a.wav",
+       "spoken": "You mean... killing everybody.",
+       "duration": 3.08,
+       "heard": "You mean, killing everybody.",
+       "match": 1.0,
+       "gap": 0.6,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/03-lady-b.wav",
+       "spoken": "You mean... killing everybody.",
+       "duration": 3.0,
+       "heard": "You mean, killing everybody?",
+       "match": 1.0,
+       "gap": 0.8,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/03-lady-c.wav",
+       "spoken": "You mean... killing everybody.",
+       "duration": 3.08,
+       "heard": "You mean, killing everybody.",
+       "match": 1.0,
+       "gap": 0.7,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "measured_pick": "a",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 4,
+   "who": "bot",
+   "text": "Yeah, we're really sorry about that. [pause] We do want to try and fix it.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Yeah, we're really sorry about that.",
+     "direction": "sincere, a little ashamed, genuinely sorry; not performing",
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: sincere, a little ashamed, genuinely sorry; not performing.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/04-bot-p0-a.wav",
+       "spoken": "Yeah, we're really sorry about that.",
+       "duration": 3.76,
+       "heard": "Yeah, we're really sorry about that.",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/04-bot-p0-b.wav",
+       "spoken": "Yeah, we're really sorry about that.",
+       "duration": 3.0,
+       "heard": "Yeah, we're really sorry about that.",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/04-bot-p0-c.wav",
+       "spoken": "Yeah, we're really sorry about that.",
+       "duration": 3.44,
+       "heard": "Yeah, we're really sorry about that.",
+       "match": 1.0,
+       "gap": 0.33,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge7/04-bot-p0-b-fx.wav",
+     "measured_pick": "b",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    },
+    {
+     "p": 1,
+     "text": "We do want to try and fix it.",
+     "direction": "sincere, a little ashamed, genuinely sorry; not performing",
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: sincere, a little ashamed, genuinely sorry; not performing.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/04-bot-p1-a.wav",
+       "spoken": "We do want to try and fix it.",
+       "duration": 2.72,
+       "heard": "We do want to try and fix it.",
+       "match": 1.0,
+       "gap": 0.12,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/04-bot-p1-b.wav",
+       "spoken": "We do want to try and fix it.",
+       "duration": 2.84,
+       "heard": "We do want to try and fix it.",
+       "match": 1.0,
+       "gap": 0.12,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/04-bot-p1-c.wav",
+       "spoken": "We do want to try and fix it.",
+       "duration": 2.8,
+       "heard": "We do want to try and fix it.",
+       "match": 1.0,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge7/04-bot-p1-b-fx.wav",
+     "measured_pick": "c",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "who": "lady",
+   "text": "Are you literally joking?",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Are you literally joking?",
+     "direction": "shouting at the door, furious and disbelieving",
+     "reused": "bridge2/03-lady-Vindemiatrix-b.wav",
+     "fx_file": null,
+     "voice": "Sulafat"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 6,
+   "who": "bot",
+   "text": "That's... that's fair.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "That's... that's fair.",
+     "direction": "tannoy lowered; then a long held pause). Kai r1: no 'Yeah', it reads as 'yes, we're joking'",
+     "reused": "bridge/05-bot-p1-c.wav",
+     "fx_file": "bridge7/05-bot-p1-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 7,
+   "who": "bot",
+   "text": "I'll tell you what. I've got an idea. Check this out.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "I'll tell you what. I've got an idea. Check this out.",
+     "direction": "a thought arriving, a little brighter; decisive",
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: a thought arriving, a little brighter; decisive.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/07-bot-a.wav",
+       "spoken": "I'll tell you what. I've got an idea. Check this out.",
+       "duration": 4.4,
+       "heard": "I'll tell you what, I've got an idea. Check this out.",
+       "match": 1.0,
+       "gap": 0.68,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/07-bot-b.wav",
+       "spoken": "I'll tell you what. I've got an idea. Check this out.",
+       "duration": 4.04,
+       "heard": "I'll tell you what, I've got an idea. Check this out.",
+       "match": 1.0,
+       "gap": 0.45,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/07-bot-c.wav",
+       "spoken": "I'll tell you what. I've got an idea. Check this out.",
+       "duration": 4.68,
+       "heard": "I'll tell you what, I've got an idea. Check this out.",
+       "match": 1.0,
+       "gap": 0.73,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge7/07-bot-b-fx.wav",
+     "measured_pick": "b",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 9,
+   "who": "lady",
+   "text": "Derek, go and have a look what that was.",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Derek, go and have a look what that was.",
+     "direction": "brisk, a quiet order, turning to him",
+     "reused": "bridge2/11-lady-Vindemiatrix-c.wav",
+     "fx_file": null,
+     "voice": "Sulafat"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 11,
+   "who": "man",
+   "text": "They've blown up their own kill bot!",
+   "off": false,
+   "fx": null,
+   "voice": "Algieba",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "They've blown up their own kill bot!",
+     "direction": "shocked and emotional, real surprise, almost a laugh of disbelief, peering through a periscope",
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shocked and emotional, real surprise, almost a laugh of disbelief, peering through a periscope.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/11-man-a.wav",
+       "spoken": "They've blown up their own kill bot!",
+       "duration": 2.76,
+       "heard": "They've blown up they don't kill but",
+       "match": 0.873,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/11-man-b.wav",
+       "spoken": "They've blown up their own kill bot!",
+       "duration": 3.0,
+       "heard": "They've blown up their own killbot!",
+       "match": 0.986,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/11-man-c.wav",
+       "spoken": "They've blown up their own kill bot!",
+       "duration": 3.12,
+       "heard": "They've blown up their own killbot!",
+       "match": 0.986,
+       "gap": 0.18,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "measured_pick": "b",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 12,
+   "who": "bot",
+   "text": "Look. I understand why you wouldn't trust us. [beat] I'm going to leave you a video to watch. And I'll come back tomorrow.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Look. I understand why you wouldn't trust us.",
+     "direction": "gentle and plain, owning it; no pleading",
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle and plain, owning it; no pleading.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/12-bot-p0-a.wav",
+       "spoken": "Look. I understand why you wouldn't trust us.",
+       "duration": 4.6,
+       "heard": "Look, I understand why you wouldn't trust us.",
+       "match": 1.0,
+       "gap": 0.85,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/12-bot-p0-b.wav",
+       "spoken": "Look. I understand why you wouldn't trust us.",
+       "duration": 4.24,
+       "heard": "Look, I understand why you wouldn't trust us.",
+       "match": 1.0,
+       "gap": 0.62,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/12-bot-p0-c.wav",
+       "spoken": "Look. I understand why you wouldn't trust us.",
+       "duration": 4.32,
+       "heard": "Look, I understand why you wouldn't trust us.",
+       "match": 1.0,
+       "gap": 0.7,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge7/12-bot-p0-a-fx.wav",
+     "measured_pick": "b",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    },
+    {
+     "p": 1,
+     "text": "I'm going to leave you a video to watch. And I'll come back tomorrow.",
+     "direction": "gentle and plain, owning it; no pleading",
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle and plain, owning it; no pleading.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/12-bot-p1-a.wav",
+       "spoken": "I'm going to leave you a video to watch. And I'll come back tomorrow.",
+       "duration": 4.56,
+       "heard": "I'm going to leave you a video to watch, and I'll come back tomorrow.",
+       "match": 1.0,
+       "gap": 0.8,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/12-bot-p1-b.wav",
+       "spoken": "I'm going to leave you a video to watch. And I'll come back tomorrow.",
+       "duration": 5.28,
+       "heard": "I'm going to leave you a video to watch, and I'll come back tomorrow.",
+       "match": 1.0,
+       "gap": 0.9,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/12-bot-p1-c.wav",
+       "spoken": "I'm going to leave you a video to watch. And I'll come back tomorrow.",
+       "duration": 4.68,
+       "heard": "I'm gonna leave you a video to watch and I'll come back tomorrow.",
+       "match": 0.947,
+       "gap": 0.38,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge7/12-bot-p1-b-fx.wav",
+     "measured_pick": "a",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 14,
+   "who": "bot",
+   "text": "Hey, boss. [beat] I've given them the presentation. [beat] We can only hope they trust us.",
+   "off": false,
+   "fx": null,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Hey, boss.",
+     "direction": "quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/14-bot-p0-a.wav",
+       "spoken": "Hey, boss.",
+       "duration": 1.4,
+       "heard": "Hey boss!",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/14-bot-p0-b.wav",
+       "spoken": "Hey, boss.",
+       "duration": 1.6,
+       "heard": "Hey boss!",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/14-bot-p0-c.wav",
+       "spoken": "Hey, boss.",
+       "duration": 1.44,
+       "heard": "Hey boss!",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "measured_pick": "a",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    },
+    {
+     "p": 1,
+     "text": "I've given them the presentation.",
+     "direction": "quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/14-bot-p1-a.wav",
+       "spoken": "I've given them the presentation.",
+       "duration": 2.28,
+       "heard": "have given him the presentation.",
+       "match": 0.889,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/14-bot-p1-b.wav",
+       "spoken": "I've given them the presentation.",
+       "duration": 2.4,
+       "heard": "I've given them the presentation.",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/14-bot-p1-c.wav",
+       "spoken": "I've given them the presentation.",
+       "duration": 2.28,
+       "heard": "I've given him the presentation.",
+       "match": 0.952,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "measured_pick": "b",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    },
+    {
+     "p": 2,
+     "text": "We can only hope they trust us.",
+     "direction": "quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge7/14-bot-p2-a.wav",
+       "spoken": "We can only hope they trust us.",
+       "duration": 3.08,
+       "heard": "We can only hope they trust us.",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge7/14-bot-p2-b.wav",
+       "spoken": "We can only hope they trust us.",
+       "duration": 3.0,
+       "heard": "We can only hope they trust us.",
+       "match": 1.0,
+       "gap": 0.15,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge7/14-bot-p2-c.wav",
+       "spoken": "We can only hope they trust us.",
+       "duration": 2.76,
+       "heard": "We can only hope they trust us.",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "measured_pick": "a",
+     "picked_by": "kai, by ear (voices page r7, 11 Nov)"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    }
+   ]
+  }
+ ]
+}

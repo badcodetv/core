@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge9-lips/br22b-ls-dub.wav",
+ "made": "2026-11-11T14:54:59+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/03-lady-Vindemiatrix-b.wav",
+ "why": "Team lead r10: br22 re-shoot, voice at x1.00, placed on shb-br28-lady0c-LADY0",
+ "inputs": {
+  "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge9-lips/br22b-ls-phrases.json"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge9-lips/br22-ls-dub.wav",
+ "made": "2026-11-11T13:54:18+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/03-lady-Vindemiatrix-b.wav",
+ "why": "Kai 11 Nov: all the lip-sync in scene B redone (bridge r9): ls dub placed on the mouth of shb-br22-lady0b-LADY0 (tempo 1.0, LatentSync input)",
+ "inputs": {
+  "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge9-lips/br22-ls-phrases.json"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R10-S6-c-close.jpg",
+ "made": "2026-11-11T15:15:47+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S6-c.jpg",
+ "why": "Team lead r10: a closer start frame of the approved S6-c door plate (Maddie ~1/3 of frame) for the 10 s beacon clip br33",
+ "settings": {
+  "crop": "640x360+230+400",
+  "scale": "lanczos-1376x768"
+ }
+}

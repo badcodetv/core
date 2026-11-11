@@ -1,0 +1,28 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br35c-lady0-LADY0.mp4",
+ "made": "2026-11-11T16:10:05+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A close view of the grey-haired old woman in glasses, facing the camera. For half a second she is silent, glaring up at the door above her. Then she shouts it once, in one furious, disbelieving burst lasting about three seconds: Are you literally joking? Then her mouth stays shut as she holds the glare. The people behind her in the gloom keep still. One continuous shot, no cuts. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY0.jpg",
+ "why": "Kai r11 Flow lip-sync, paced 'Are you literally joking?'. Made by the br35-lady0 submit; run.mts matched it by plate to br34b-lady3 and saved it under that name; renamed br35c-lady0 after transcription (2026-11-11)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY0.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br34b-lady3",
+  "frame": 34,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 5,
+  "count": 1,
+  "source": "scene settings (no submit record)"
+ }
+}

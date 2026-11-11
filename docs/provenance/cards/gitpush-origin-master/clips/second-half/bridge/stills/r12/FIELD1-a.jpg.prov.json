@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r12/FIELD1-a.jpg",
+ "made": "2026-11-11T18:37:51.279Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the surroundings: replace the ruined high street, the shops, the rubble and the tarmac with a plain open grassy field on the chalk downs, rough pale grass to the horizon under a flat grey overcast sky, a gentle slope, nothing built anywhere. The little grey robot, her amber beacon and her bunting, the low camera right in front of her, her size and place in the frame, the light and the grainy film look all stay exactly the same.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r12/street-front.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r12/street-front.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "aa8f4a4a-24b6-487a-93e9-046b1563575a"
+}

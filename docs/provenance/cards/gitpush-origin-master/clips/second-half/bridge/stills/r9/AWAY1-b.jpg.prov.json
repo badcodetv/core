@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9/AWAY1-b.jpg",
+ "made": "2026-11-11T12:31:38.826Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first provided image, make these changes only. Above the green steel doors a battered cream loudspeaker horn now dangles mouth-down from its bent, half-torn bracket, like the drooping horn in the second image. A few broken bricks, lumps of concrete and a pale spill of dust lie on the grass at the foot of the doors. The grey delivery robot has turned her back on the doors and is trundling away from the bunker, down the slope towards the lower right of the picture, her amber beacon lit and her torn faded bunting trailing. The doors stay shut. Everything else stays as it is: the hillside, the grey overcast light, the faded grainy 16mm look and the framing.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/horn-hanging.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b7edeba1-6a25-42f8-b842-c5546725b1c9"
+}

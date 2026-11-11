@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-bridge9/br22-ls24.mov",
+ "made": "2026-11-11T14:07:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-bridge9/br22-ls.mp4",
+ "why": "bridge r9 lip-sync: LatentSync redraw resampled 25->24 fps",
+ "settings": {
+  "fps": "24"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9b/UP4-b.jpg",
+ "made": "2026-11-11T13:44:24.937Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Telephoto view from a long way down the slope, looking up at the bunker from the first image: its overgrown concrete portal and plain green steel doors sit small in a wide bare chalk down under a heavy grey sky. A faint tyre track climbs the wet turf towards the doors, and partway up it the boxy grey robot from the second image, beacon glowing amber, rags of bunting on her wheel, is grinding uphill towards the entrance. Tall seed heads and long grass right by the lens make a soft blurred band across the lower part of the frame. Flattened perspective, muted greens and greys. Shot like a 1980s BBC drama on 16mm stock, washed-out colour, gentle contrast, thick grain. Widescreen, no lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/maddie.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "4cf4feae-7bd0-49e4-a46a-d1376c597920"
+}

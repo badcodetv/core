@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/14-bot-p1-a.wav",
+ "made": "2026-11-11T15:44:10+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "why": "bridge voice take picked by Kai by ear (voices-bridge7/8.json)"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br24-derek2-BP2-a-a.mp4",
+ "made": "2026-11-11T12:51:10+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The man pulls his face back from the periscope eyepiece, eyes wide, turns towards the woman in the cream jumper and says, shocked and emotional, almost laughing in disbelief: They've blown up their own kill bot! His hands stay on the periscope handles. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP2-a-a.jpg",
+ "why": "Kai 11 Nov (script 1D): Derek now says it shocked and emotional, voice bridge7/11-man-b; plate BP2-a-a (approved, s11-derek)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP2-a-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br24-derek2",
+  "frame": 24,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T12:38:39.902Z"
+ }
+}

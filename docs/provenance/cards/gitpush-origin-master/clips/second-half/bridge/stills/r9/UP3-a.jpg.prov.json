@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9/UP3-a.jpg",
+ "made": "2026-11-11T12:29:24.546Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Seen from high up on top of the grassy bunker mound in the first image, looking steeply down over the edge of the concrete lintel. In the near foreground at the top of the picture, the back of a battered cream loudspeaker horn on its iron bracket (the kind in the third image), out of focus. Far below, on the trampled grass apron in front of the shut green steel doors, the dented grey six-wheeled delivery robot from the second image, with its amber beacon and torn faded bunting, small, rolling in from the bottom of the frame along a muddy tyre rut. The empty chalk downs fall away behind her. Grey overcast afternoon, no sun, the beacon the only warm colour. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. Widescreen film frame, nothing written anywhere in the picture.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/maddie.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/horn.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "5dfcbeaa-abb5-4318-aa23-866b67ca3371"
+}

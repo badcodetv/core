@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9b/AWAY2-b.jpg",
+ "made": "2026-11-11T13:46:02.638Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Camera at wheel height on wet turf a little way down the hill from the bunker in the first image, looking back up at it. The dented grey six-wheeled robot from the second image rolls towards the lens, close and sharp, taking up the left half of the frame: amber beacon glowing on its stalk, ragged faded bunting flapping from a wheel, mud on her tyres. Behind her, soft and blurred up the slope, the bunker's shut green doors with plain concrete above them, a few fallen bricks at the threshold and a faint haze of dust still settling. Dull grey daylight, the beacon the one warm light. Shot like a 1980s BBC drama on 16mm stock, washed-out colour, gentle contrast, thick grain. Widescreen, no lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/maddie.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "09fb4aab-6d87-46fd-ad07-e97e00bc4290"
+}

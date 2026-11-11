@@ -188,6 +188,298 @@
    "character": null,
    "motion": "The camera does not move. In the brick vault the survivors stand with their faces turned up towards the broken loudspeaker horn, which hangs down from its bent bracket, swaying very slightly; the last of the dust drifts down through the light of the bare bulbs. Nobody speaks; a few shift their weight. The camera does not move.",
    "why": "Kai 4 Nov (timeline r6, at1665): 'the megaphone here is not hanging downwards'; Maddie's 'Right. I'll come back tomorrow' plays over it through the horn. Chained from the approved boom clip's frame."
+  },
+  {
+   "key": "br21-lady3",
+   "n": 21,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. The old woman with grey hair and glasses stares up towards the door above her, flat and quiet as it sinks in, and says: You mean... Then a short pause, her lips still, then: killing everybody. She keeps staring. The people behind her in the dark corridor stand still. The camera does not move.",
+   "why": "Kai 11 Nov (script 1D, voices r7 pick 03-lady-c): new line, lip-sync from the approved LADY0 plate"
+  },
+  {
+   "key": "br22-lady0b",
+   "n": 22,
+   "still": "LADY0",
+   "duration": 4,
+   "character": null,
+   "motion": "The camera does not move. The grey-haired old woman in glasses glares up at the door overhead and shouts, outraged and disbelieving: Are you literally joking? Then she holds the glare. The survivors behind her in the gloom keep still. The camera does not move.",
+   "why": "Kai 11 Nov: 'all of the lip-syncing needs doing on this scene'; the r1 clip br13-lady0 'could be much better'"
+  },
+  {
+   "key": "br23-lady1d",
+   "n": 23,
+   "still": "LADY6",
+   "duration": 4,
+   "character": null,
+   "motion": "The camera does not move. The old woman with grey hair and glasses turns her head a little towards a man beside her, out of shot, and says: Derek, go and have a look what that was. The warm bulb keeps lighting her face; the people behind her stay still; the loudspeaker horn behind her stays hanging on its bent bracket. The camera does not move.",
+   "why": "Kai 11 Nov: redo all lip-sync in the scene; voice bridge2/11-lady-Vindemiatrix-c, plate LADY6 (approved r6)"
+  },
+  {
+   "key": "br24-derek2",
+   "n": 24,
+   "still": "BP2-a-a",
+   "duration": 4,
+   "character": null,
+   "motion": "The camera does not move. The man pulls his face back from the periscope eyepiece, eyes wide, turns towards the woman in the cream jumper and says, shocked and emotional, almost laughing in disbelief: They've blown up their own kill bot! His hands stay on the periscope handles. The camera does not move.",
+   "why": "Kai 11 Nov (script 1D): Derek now says it shocked and emotional, voice bridge7/11-man-b; plate BP2-a-a (approved, s11-derek)"
+  },
+  {
+   "key": "br25-rollup",
+   "n": 25,
+   "still": "R9-UP4-b",
+   "duration": 6,
+   "character": null,
+   "motion": "The camera does not move. The small grey robot trundles steadily forward along the muddy track towards the shut green doors, her amber beacon blinking, and rolls to a stop on the grass right in front of them. The long grass in the foreground sways in the wind. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai 11 Nov: roll-up still pick UP4-b (r9 round 2); silent, ~4 s usable"
+  },
+  {
+   "key": "br26-rollaway",
+   "n": 26,
+   "still": "R9-AWAY3-a",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The small grey robot drives slowly away from the bunker across the open grass towards the bottom right, her amber beacon pulsing, her torn bunting trailing, until she leaves the frame. Grey smoke keeps rising from the burnt-out wreck in the distance and the wind ripples the grass. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai 11 Nov: roll-away still pick AWAY3-a (r9 round 2); her radio line runs over it, aim long"
+  },
+  {
+   "key": "br27-beacon",
+   "n": 27,
+   "still": "R10-S6-c",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The small grey robot sits completely still on the grass in front of the shut green doors. Only the amber beacon on top of her turns, round and round like a rotating warning lamp, its orange glow sweeping softly across the green steel doors and the grass on each turn. The wind stirs the long grass on the hillside. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai timeline r10 at834: 'nothing animates... we would see Maddie's light spinning'; plate S6-c (approved)"
+  },
+  {
+   "key": "br28-lady0c",
+   "n": 28,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. The grey-haired old woman in glasses stares up at the door above her for a moment, then shouts, furious and disbelieving, dragging every word out: Are you... literally... jo-o-king? She stretches the last word long, her mouth wide on it, then holds her glare. The people behind her in the dark corridor keep still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Team lead r10: both LatentSync passes on br22 close her mouth ~0.45 s before the voice ends; re-shoot slower, 'jo-king' drawn out, speech ~1.0-3.3 s"
+  },
+  {
+   "key": "br29-boom3",
+   "n": 29,
+   "still": "R10-BOOM-notv-d",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. [00:00-00:01] a sudden deep jolt shakes the brick tunnel; the cream loudspeaker horn on the wall jerks off its bracket and drops, ending up hanging mouth-down on its cable against the wall, and it stays hanging there. [00:01-00:05] fine dust and a few flakes of plaster sift down from the brick vault through the warm light and settle; the people flinch, duck, then slowly look up at the ceiling and keep still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai 11 Nov (r10 still pick BOOM-notv-d): the boom without the TV; horn falls and hangs; jolt in the first 0.5 s, steady after"
+  },
+  {
+   "key": "br30-rollaway2",
+   "n": 30,
+   "still": "R10-WRK1-a",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The small grey robot turns away from the bunker door and rolls slowly down the grassy slope, passing behind the burnt-out wreck, her amber beacon pulsing, staying in view. Grey smoke keeps drifting up off the wreck in the foreground and the crow on it shifts its wings; the wind moves the grass. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai 11 Nov (r10 still pick WRK1-a): roll-away behind the wreck, ~8 s"
+  },
+  {
+   "key": "br31-boom8",
+   "n": 31,
+   "still": "R10-BOOM-notv-d",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. [00:00-00:01] a sudden deep jolt shakes the brick tunnel; the cream loudspeaker horn on the wall jerks off its bracket and drops, ending up hanging mouth-down on its cable against the wall. [00:01-00:08] the horn stays hanging still where it fell; fine dust drifts down slowly through the warm light from the bulb; the people, shaken, look up at the ceiling and glance round at each other, then keep still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Team lead r10: the boom at 8 s, jolt and fall in the first second, then a steady ~6 s tail (horn hanging, dust) under Derek's line and the tannoy"
+  },
+  {
+   "key": "br32-rollaway3",
+   "n": 32,
+   "still": "R10-WRK1-a",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The small grey robot turns away from the bunker door and drives off away from us, out across the far grass towards the back left of the picture, getting smaller and smaller in the distance, always far beyond the wreck. The burnt-out wreck stays where it is, close in the foreground on the right, grey smoke drifting off it, the crow on top. The wind moves the grass. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai/team lead r10: br30 crossed in front of the wreck; she must stay beyond it, heading away to the back left, ~8 s"
+  },
+  {
+   "key": "br33-beacon-close",
+   "n": 33,
+   "still": "R10-S6-c-close",
+   "duration": 10,
+   "character": null,
+   "motion": "The camera does not move. The small grey robot sits completely still on the grass beside the shut green steel doors. Only the amber beacon on her top turns round and round like a rotating warning lamp, its warm glow sweeping softly over the concrete wall, the doors and the grass. The wind stirs the grass and the torn bunting on her wheel. One continuous shot, no cuts. The camera does not move.",
+   "why": "Team lead r10: a closer br27 (Maddie ~1/3 of frame) from a crop of S6-c, 10 s, carries her 'Look. I understand...' line outside"
+  },
+  {
+   "key": "br34-lady3",
+   "n": 34,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. The grey-haired old woman in glasses, facing the camera, stares up towards the door above her and says once, flat and quiet, a statement not a question: You mean... killing everybody. Then she stops speaking, closes her mouth and keeps staring. The people behind her in the dark corridor stand still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r11: regenerate the lip-sync in Flow (no LatentSync), the spoken line in the prompt"
+  },
+  {
+   "key": "br34b-lady3",
+   "n": 34,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. A close view of the grey-haired old woman in glasses, facing the camera. For half a second she is silent, staring up at the door above her. Then she says it once, flat and quiet, a statement not a question, taking about three seconds: You mean... (a beat) killing everybody. Then her mouth stays shut and she keeps staring. The people behind her in the dark corridor stand still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r11: regenerate the lip-sync in Flow (no LatentSync), the spoken line in the prompt; paced to the voice take (team lead addendum)"
+  },
+  {
+   "key": "br35-lady0",
+   "n": 35,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. A close view of the grey-haired old woman in glasses, facing the camera. For half a second she is silent, glaring up at the door above her. Then she shouts it once, in one furious, disbelieving burst lasting about three seconds: Are you literally joking? Then her mouth stays shut as she holds the glare. The people behind her in the gloom keep still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r11: regenerate the lip-sync in Flow (no LatentSync), the spoken line in the prompt; paced to the voice take (team lead addendum)"
+  },
+  {
+   "key": "br35b-lady0",
+   "n": 35,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. A close view of the grey-haired old woman in glasses, facing the camera. For half a second she is silent, glaring up at the door above her. Then she shouts it once, in one furious, disbelieving burst lasting about three seconds: Are you literally joking? Then her mouth stays shut as she holds the glare. The people behind her in the gloom keep still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r11: regenerate the lip-sync in Flow (no LatentSync), the spoken line in the prompt; paced to the voice take (team lead addendum)"
+  },
+  {
+   "key": "br36-lady1",
+   "n": 36,
+   "still": "LADY6",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. A close view of the old woman with grey hair and glasses, in three-quarter view. For half a second she is silent; then she turns her head a little to the man beside her, out of shot, and says it once, brisk, taking about three seconds: Derek, go and have a look what that was. Then her mouth stays shut. The warm bulb lights her face; the people behind her stay still; the loudspeaker horn behind her stays hanging on its bent bracket. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r11: regenerate the lip-sync in Flow (no LatentSync), the spoken line in the prompt; paced to the voice take (team lead addendum)"
+  },
+  {
+   "key": "br36b-lady1",
+   "n": 36,
+   "still": "LADY6",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. A close view of the old woman with grey hair and glasses, in three-quarter view. For half a second she is silent; then she turns her head a little to the man beside her, out of shot, and says it once, brisk, taking about three seconds: Derek, go and have a look what that was. Then her mouth stays shut. The warm bulb lights her face; the people behind her stay still; the loudspeaker horn behind her stays hanging on its bent bracket. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r11: regenerate the lip-sync in Flow (no LatentSync), the spoken line in the prompt; paced to the voice take (team lead addendum)"
+  },
+  {
+   "key": "br34c-lady3",
+   "n": 34,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. A close view of the grey-haired old woman in glasses, facing the camera. For half a second she is silent, staring up at the door above her. Then she says it once, flat and quiet, a statement not a question, taking about three seconds: You mean... (a beat) killing everybody. Then her mouth stays shut and she keeps staring. The people behind her in the dark corridor stand still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r11: Flow lip-sync with the line in the prompt, paced to the voice take (team lead addendum)"
+  },
+  {
+   "key": "br37-endwide",
+   "n": 37,
+   "still": "R11-END3-b",
+   "duration": 12,
+   "character": null,
+   "motion": "The camera does not move. [00:00-00:02] as the small grey robot starts to move, a hatch on her lid opens and a slim aerial with a little round hoop on top rises straight up out of it, and it stays up. [00:02-00:12] she trundles steadily away from the bunker, down the slope towards the bottom of the picture, never stopping and never turning back, her amber beacon glowing. The burnt-out wreck keeps smoking, the grey smoke drifting in the wind across the downs. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r11 pick END3-b (at1844/at1524/at1554): the much wider ending, aerial up early, ~12 s"
+  },
+  {
+   "key": "br35c-lady0",
+   "n": 35,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. A close view of the grey-haired old woman in glasses, facing the camera. For half a second she is silent, glaring up at the door above her. Then she shouts it once, in one furious, disbelieving burst lasting about three seconds: Are you literally joking? Then her mouth stays shut as she holds the glare. The people behind her in the gloom keep still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Harvest of a br35 submit, saved as br34b-lady3 by plate-matching; renamed"
+  },
+  {
+   "key": "br35d-lady0",
+   "n": 35,
+   "still": "LADY0",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. A close view of the grey-haired old woman in glasses, facing the camera. For half a second she is silent, glaring up at the door above her. Then she shouts it once, in one furious, disbelieving burst lasting about three seconds: Are you literally joking? Then her mouth stays shut as she holds the glare. The people behind her in the gloom keep still. One continuous shot, no cuts. The camera does not move.",
+   "why": "Harvest of a br35 submit, saved as br34c-lady3 by plate-matching; renamed"
+  },
+  {
+   "key": "br37b-endwide",
+   "n": 37,
+   "still": "R11-END3-b",
+   "duration": 12,
+   "character": null,
+   "motion": "The camera does not move. There is only one robot in this shot. [00:00-00:02] a thin aerial with a little round hoop slides up out of the top of the small grey robot and stays up. [00:02-00:12] she rolls slowly away from the camera, further down into the valley towards the left of the picture, growing smaller and smaller in the distance, never turning round. The wreck stays where it is and keeps smoking; the wind moves the grass. One continuous shot, no cuts. The camera does not move.",
+   "why": "br37 failed: a second robot appeared 0.3-3.7 s and she drove TOWARDS camera; re-roll, one robot, away from camera"
+  },
+  {
+   "key": "br38-endwide",
+   "n": 38,
+   "still": "R11-END3-b",
+   "end_still": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r11/END3-b-last-a.jpg",
+   "duration": 10,
+   "character": null,
+   "made_by": "flow_generate_video (start+end frames; run.mts has no end frame)",
+   "motion": "The camera does not move. The small grey robot, the only robot in the whole valley, slowly trundles away from the bunker down the slope to where she ends, her thin aerial rising out of her lid early on and staying up. The wreck keeps smoking. One continuous shot, no cuts. The camera does not move.",
+   "why": "Team lead r11: pin both ends to stop the duplicate Maddie (br37/br37b)"
+  },
+  {
+   "key": "br38b-endwide",
+   "n": 38,
+   "still": "R11-END1-b",
+   "end_still": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r11/END1-b-last-a.jpg",
+   "duration": 10,
+   "character": null,
+   "made_by": "flow_generate_video (start+end frames)",
+   "motion": "Locked-off camera. The little grey robot, the only robot in the whole valley, rolls steadily from the wreck down the grassy slope to where she finishes, a thin hooped aerial lifting out of her lid in the first two seconds and staying up. The wreck smokes on. A single unbroken shot. Locked-off camera.",
+   "why": "br38 still duplicated her at the end; one try from END1-b the same way"
+  },
+  {
+   "key": "br39-endwide",
+   "n": 39,
+   "still": "R11-END1-b",
+   "duration": 12,
+   "character": null,
+   "motion": "The camera does not move. She is the only robot in the whole valley; there are no other robots anywhere. [00:00-00:02] a thin aerial with a small round hoop slides up out of the little grey robot's lid and stays up. [00:02-00:12] she turns her back on the bunker and trundles slowly away down the far slope, away from the camera, growing smaller in the distance, never stopping. The wreck keeps smoking on her right. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai 11 Nov: 'please reroll, don't worry about credits, let's go A' (re-roll from END1-b, firmer one-robot wording)"
+  },
+  {
+   "key": "br40-field-track",
+   "n": 40,
+   "still": "R12-FIELD1-b",
+   "duration": 6,
+   "character": null,
+   "motion": "The camera keeps tracking steadily backwards across the open grass at the same speed. The small grey delivery robot keeps rolling towards the camera at the same pace, staying the same size in frame, the grassy downs sliding past behind her. Her amber beacon pulses in a lively rhythm. Her torn bunting sways across her front wheels. The hatch on her lid stays shut. She never stops.",
+   "why": "Kai r12 pick FIELD1-b (option b): scene A beat 0's tracking wording, on grass"
+  },
+  {
+   "key": "br41-field-aerial",
+   "n": 41,
+   "still": "R12-FIELD2-b",
+   "duration": 15,
+   "character": null,
+   "motion": "Locked-off close-up; the camera does not move. Early on, the slim chrome antenna telescopes further up out of the open round hatch with a quick little jerk, one more segment sliding out and wobbling to a stop, and then it holds still. The tiny red light on its tip blinks on and off. The amber beacon turns and glows. A light breeze moves the grass behind. Nothing else happens. The camera does not move.",
+   "why": "Kai r12 pick FIELD2-b (option b): scene A V3's wording; the whole boss call plays on it, ~15 s"
+  },
+  {
+   "key": "br42-boom-n3",
+   "n": 42,
+   "still": "R13-N3-last",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. [00:00-00:01] a deep muffled boom shakes the brick tunnel; the cream loudspeaker horn on the wall jolts off its bracket and drops, ending up hanging mouth-down by its cable. [00:01-00:05] the horn swings a little on its cable and comes to rest hanging down, and it stays hanging there; dust and grit sift down from the ceiling and the bulb flickers. The people flinch, duck, and stare up at the hanging horn, still facing the camera exactly as they were; nobody turns round. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r13 at694: the extend trick, the boom starts on the last frame of cut2-N3 so the crowd keeps facing the camera; the horn must stay hanging"
+  },
+  {
+   "key": "br42b-boom-n3",
+   "n": 42,
+   "still": "R13-N3-last",
+   "duration": 5,
+   "character": null,
+   "motion": "The camera does not move. [00:00-00:01] a deep muffled boom shakes the brick tunnel; the cream loudspeaker horn on the wall jolts off its bracket and drops, ending up hanging mouth-down by its cable. [00:01-00:05] the horn swings a little on its cable and comes to rest hanging down, and it stays hanging there; dust and grit sift down from the ceiling and the bulb flickers. The people flinch, duck, and stare up at the hanging horn, still facing the camera exactly as they were; nobody turns round. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r13 at694: the extend trick, the boom starts on the last frame of cut2-N3 so the crowd keeps facing the camera; the horn must stay hanging"
+  },
+  {
+   "key": "br43-beacon12",
+   "n": 43,
+   "still": "R10-S6-c",
+   "duration": 12,
+   "character": null,
+   "motion": "The camera does not move. The small grey robot sits completely still on the grass in front of the shut green doors. Only the amber beacon on top of her turns, round and round like a rotating warning lamp, its orange glow sweeping softly across the green steel doors and the grass on each turn. The wind stirs the long grass on the hillside. One continuous shot, no cuts. The camera does not move.",
+   "why": "Kai r13 at931: br33's zoom showed its pixels; re-make br27 at 12 s from the full S6-c, to hold 11.5 s of her 'Look...' line"
   }
  ]
 }

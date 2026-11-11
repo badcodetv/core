@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-1-a-v6-w25-56eef7a5-trim.wav",
+ "made": "2026-11-11T14:37:10+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "numpy",
+ "tool": "trim head/tail (10 ms RMS frames, speech = above peak-45 dB), tone after the words dropped",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-1-a-v6-w25-56eef7a5.wav",
+ "why": "Scene B boss line, natural pause kept; the ~480 Hz tone Suno adds at ~4-5 s cut off",
+ "source_id": "56eef7a5-3812-42f7-982c-c0bfd023f4cc",
+ "settings": {
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md"
+ }
+}

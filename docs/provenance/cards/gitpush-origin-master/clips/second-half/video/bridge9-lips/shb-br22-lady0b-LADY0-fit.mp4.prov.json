@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/bridge9-lips/shb-br22-lady0b-LADY0-fit.mp4",
+ "made": "2026-11-11T13:54:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br22-lady0b-LADY0.mp4",
+ "why": "Kai 11 Nov: all the lip-sync in scene B redone (bridge r9): muted clip + fitted dub, for Kai's approval",
+ "inputs": {
+  "dub": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge9-lips/br22-fit-dub.wav"
+ }
+}

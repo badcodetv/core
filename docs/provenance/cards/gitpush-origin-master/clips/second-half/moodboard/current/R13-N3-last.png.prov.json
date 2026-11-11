@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R13-N3-last.png",
+ "made": "2026-11-11T19:03:49+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg -ss 6.2 -frames:v 1",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut2-N3.mp4",
+ "why": "last frame of the crowd shot before the boom, so the boom clip starts where it ends (Kai r13 at694)",
+ "settings": {
+  "at": "6.2"
+ }
+}

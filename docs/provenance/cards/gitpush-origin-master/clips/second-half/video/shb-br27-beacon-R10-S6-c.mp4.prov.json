@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br27-beacon-R10-S6-c.mp4",
+ "made": "2026-11-11T14:38:03+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The small grey robot sits completely still on the grass in front of the shut green doors. Only the amber beacon on top of her turns, round and round like a rotating warning lamp, its orange glow sweeping softly across the green steel doors and the grass on each turn. The wind stirs the long grass on the hillside. One continuous shot, no cuts. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R10-S6-c.jpg",
+ "why": "Kai timeline r10 at834: 'nothing animates... we would see Maddie's light spinning'; plate S6-c (approved)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R10-S6-c.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br27-beacon",
+  "frame": 27,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T14:36:58.649Z"
+ }
+}

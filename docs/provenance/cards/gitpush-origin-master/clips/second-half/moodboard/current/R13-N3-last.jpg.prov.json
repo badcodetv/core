@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R13-N3-last.jpg",
+ "made": "2026-11-11T19:03:59+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R13-N3-last.png",
+ "why": "jpg copy of the r13 start still (run.mts resolves .jpg stills)"
+}

@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-2-a-v6-w10-f3fb9bac.preview.mp3",
+ "made": "2026-11-11T18:39:25+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "f3fb9bac-616d-4d5a-8752-c34b563ee7ca",
+ "inputs": {
+  "title": "gpom-sh-b-boss-2-A-v6-w10",
+  "song": "https://suno.com/song/f3fb9bac-616d-4d5a-8752-c34b563ee7ca"
+ },
+ "settings": {
+  "durationSec": 13.16,
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md",
+  "atom": "gpom-sh-b-boss-2 revision A",
+  "round": "7",
+  "styleInfluence": "50",
+  "audioInfluence": "65",
+  "voice": "badcode newsreader",
+  "durationTarget": "15"
+ },
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-2-a-v6-w10-f3fb9bac.wav",
+ "why": "GPOM scene B (the bridge), round 12: the boss's second line, 'OK, well done, Maddie.' (Kai's words)"
+}

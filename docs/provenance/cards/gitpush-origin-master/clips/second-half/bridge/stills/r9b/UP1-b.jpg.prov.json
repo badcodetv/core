@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9b/UP1-b.jpg",
+ "made": "2026-11-11T13:41:37.897Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only where the grey delivery robot is. Put her well back from the doors, small, at the far left of the picture where a muddy tyre track enters through the grass, nosing in towards the bunker, amber beacon lit, her torn faded bunting on the wheel. The grass apron in front of the green steel doors is empty. The concrete face above the doors is bare, with only the small lamp it already has. Keep the rest exactly as it is: the bunker, the hill, the overcast light, the faded grainy 16mm look and the framing.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ae4a2c60-59e1-463a-9047-f05b7972cde5"
+}

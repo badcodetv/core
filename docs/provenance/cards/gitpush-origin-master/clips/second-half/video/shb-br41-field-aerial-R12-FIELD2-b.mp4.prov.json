@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br41-field-aerial-R12-FIELD2-b.mp4",
+ "made": "2026-11-11T18:53:08+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off close-up; the camera does not move. Early on, the slim chrome antenna telescopes further up out of the open round hatch with a quick little jerk, one more segment sliding out and wobbling to a stop, and then it holds still. The tiny red light on its tip blinks on and off. The amber beacon turns and glows. A light breeze moves the grass behind. Nothing else happens. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R12-FIELD2-b.jpg",
+ "why": "Kai r12 pick FIELD2-b (option b): scene A V3's wording; the whole boss call plays on it, ~15 s",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R12-FIELD2-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br41-field-aerial",
+  "frame": 41,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 15,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T18:51:49.576Z"
+ }
+}

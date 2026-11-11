@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br31-boom8-R10-BOOM-notv-d.mp4",
+ "made": "2026-11-11T15:14:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. [00:00-00:01] a sudden deep jolt shakes the brick tunnel; the cream loudspeaker horn on the wall jerks off its bracket and drops, ending up hanging mouth-down on its cable against the wall. [00:01-00:08] the horn stays hanging still where it fell; fine dust drifts down slowly through the warm light from the bulb; the people, shaken, look up at the ceiling and glance round at each other, then keep still. One continuous shot, no cuts. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R10-BOOM-notv-d.jpg",
+ "why": "Team lead r10: the boom at 8 s, jolt and fall in the first second, then a steady ~6 s tail (horn hanging, dust) under Derek's line and the tannoy",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R10-BOOM-notv-d.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br31-boom8",
+  "frame": 31,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T15:13:10.632Z"
+ }
+}

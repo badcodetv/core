@@ -1,0 +1,492 @@
+{
+ "title": "Bridge Voices",
+ "eyebrow": "GPOM bridge (scene B) · voices round 10",
+ "heading": "The bridge lines, voiced",
+ "intro": "Round 4: her report in your new words, read to match 'Hey, boss', and the boss's reply 'OK, well done, Maddie.'. Earlier rounds below.",
+ "sections": [
+  {
+   "h": "Round 4: her shorter report",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "r10-13-p0",
+     "round": 4,
+     "title": "Maddie: I've given them the presentation. All we can do is hope they trust us now.",
+     "line": "Your words (timeline note at 1:14), in the same voice and read as 'Hey, boss, are you there?'. Each plays straight after 'Hey, boss' (take b) so you hear them together.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/r10-13-bot-a.mp3",
+       "label": "take a · 5.48s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/r10-13-bot-b.mp3",
+       "label": "take b · 5.48s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/r10-13-bot-c.mp3",
+       "label": "take c · 5.08s",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r10-boss2",
+     "round": 4,
+     "title": "The boss: OK, well done, Maddie.",
+     "line": "Suno, his locked voice (badcode newsreader), through her speaker, on its own.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/r10-boss2-a.mp3",
+       "label": "take a · 2.68s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/r10-boss2-b.mp3",
+       "label": "take b · 2.52s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/r10-boss2-c.mp3",
+       "label": "take c · 2.57s",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 3: 'Hey, boss' to match her report",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "r9-14-p0",
+     "round": 3,
+     "title": "Maddie: Hey, boss, are you there? (re-voiced to match her report)",
+     "line": "Your timeline note: it should sound like her report line. Each take plays, then her report line ('I've given them the presentation...') straight after, so you can hear them together.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/r9-14-bot-a.mp3",
+       "label": "take a · 2.80s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/r9-14-bot-b.mp3",
+       "label": "take b · 2.44s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/r9-14-bot-c.mp3",
+       "label": "take c · 2.64s",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 2: the call to the boss",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "r8-boss",
+     "round": 2,
+     "title": "The boss: Yes, what is it?",
+     "line": "Suno, his locked voice (badcode newsreader), the same recipe as scene A",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/boss-a.mp3",
+       "label": "take a · 2.2 s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/boss-b.mp3",
+       "label": "take b · 1.6 s · quickest",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/boss-c.mp3",
+       "label": "take c · 2.1 s · slowest",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r8-14-p0",
+     "round": 2,
+     "title": "Maddie: Hey, boss, are you there?",
+     "line": "quiet, a private radio call to her boss as she rolls away, checking he is on the line; casual, a little tired",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/14-bot-a.mp3",
+       "label": "take a · 2.28s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/14-bot-b.mp3",
+       "label": "take b · 2.36s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/14-bot-c.mp3",
+       "label": "take c · 2.16s · my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r8-16-p0",
+     "round": 2,
+     "title": "Maddie: I've given them the presentation, and I'm going to come back tomorrow.",
+     "line": "reporting quietly to her boss on the radio; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/16-bot-p0-a.mp3",
+       "label": "take a · 4.68s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/16-bot-p0-b.mp3",
+       "label": "take b · 4.88s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/16-bot-p0-c.mp3",
+       "label": "take c · 4.36s",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r8-16-p1",
+     "round": 2,
+     "title": "Maddie: All we can do is hope they trust us now.",
+     "line": "reporting quietly to her boss on the radio; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/16-bot-p1-a.mp3",
+       "label": "take a · 3.0s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/16-bot-p1-b.mp3",
+       "label": "take b · 3.36s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/16-bot-p1-c.mp3",
+       "label": "take c · 3.04s · my pick",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "New lines, in film order",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "r7-03-p0",
+     "title": "Old lady: You mean... killing everybody.",
+     "line": "flat and quiet, a statement not a question; the penny dropping as she takes in what the robot just admitted",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/03-lady-a.mp3",
+       "label": "take a · 3.08s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/03-lady-b.mp3",
+       "label": "take b · 3.0s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/03-lady-c.mp3",
+       "label": "take c · 3.08s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-04-p0",
+     "title": "Maddie: Yeah, we're really sorry about that.",
+     "line": "sincere, a little ashamed, genuinely sorry; not performing",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/04-bot-p0-a.mp3",
+       "label": "take a · 3.76s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/04-bot-p0-b.mp3",
+       "label": "take b · 3.0s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/04-bot-p0-c.mp3",
+       "label": "take c · 3.44s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-04-p1",
+     "title": "Maddie: We do want to try and fix it.",
+     "line": "sincere, a little ashamed, genuinely sorry; not performing",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/04-bot-p1-a.mp3",
+       "label": "take a · 2.72s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/04-bot-p1-b.mp3",
+       "label": "take b · 2.84s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/04-bot-p1-c.mp3",
+       "label": "take c · 2.8s · my pick",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-07-p0",
+     "title": "Maddie: I'll tell you what. I've got an idea. Check this out.",
+     "line": "a thought arriving, a little brighter; decisive",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/07-bot-a.mp3",
+       "label": "take a · 4.4s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/07-bot-b.mp3",
+       "label": "take b · 4.04s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/07-bot-c.mp3",
+       "label": "take c · 4.68s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-11-p0",
+     "title": "Derek: They've blown up their own kill bot!",
+     "line": "shocked and emotional, real surprise, almost a laugh of disbelief, peering through a periscope",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/11-man-a.mp3",
+       "label": "take a · 2.76s",
+       "warn": "words off"
+      },
+      {
+       "id": "b",
+       "src": "media/11-man-b.mp3",
+       "label": "take b · 3.0s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/11-man-c.mp3",
+       "label": "take c · 3.12s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-12-p0",
+     "title": "Maddie: Look. I understand why you wouldn't trust us.",
+     "line": "gentle and plain, owning it; no pleading",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/12-bot-p0-a.mp3",
+       "label": "take a · 4.6s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/12-bot-p0-b.mp3",
+       "label": "take b · 4.24s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/12-bot-p0-c.mp3",
+       "label": "take c · 4.32s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-12-p1",
+     "title": "Maddie: I'm going to leave you a video to watch. And I'll come back tomorrow.",
+     "line": "gentle and plain, owning it; no pleading",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/12-bot-p1-a.mp3",
+       "label": "take a · 4.56s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/12-bot-p1-b.mp3",
+       "label": "take b · 5.28s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/12-bot-p1-c.mp3",
+       "label": "take c · 4.68s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-14-p0",
+     "title": "Maddie: Hey, boss.",
+     "line": "quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/14-bot-p0-a.mp3",
+       "label": "take a · 1.4s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/14-bot-p0-b.mp3",
+       "label": "take b · 1.6s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/14-bot-p0-c.mp3",
+       "label": "take c · 1.44s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-14-p1",
+     "title": "Maddie: I've given them the presentation.",
+     "line": "quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/14-bot-p1-a.mp3",
+       "label": "take a · 2.28s",
+       "warn": "words off"
+      },
+      {
+       "id": "b",
+       "src": "media/14-bot-p1-b.mp3",
+       "label": "take b · 2.4s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/14-bot-p1-c.mp3",
+       "label": "take c · 2.28s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "r7-14-p2",
+     "title": "Maddie: We can only hope they trust us.",
+     "line": "quiet, a private radio call to her boss as she rolls away; tired, hopeful, a bit unsure; not for anyone else to hear",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "media/14-bot-p2-a.mp3",
+       "label": "take a · 3.08s · my pick",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "media/14-bot-p2-b.mp3",
+       "label": "take b · 3.0s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "media/14-bot-p2-c.mp3",
+       "label": "take c · 2.76s",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ],
+ "round": 4
+}

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-bridge9/br23-ls-s40.mp4",
+ "made": "2026-11-11T14:38:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "latentsync-1.6",
+ "tool": "scripts/lipsync/latentsync-row.sh",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-bridge9/br23-in.mp4",
+ "why": "bridge r10: stronger LatentSync pass (Kai at615/at1016)",
+ "settings": {
+  "steps": "40",
+  "guidance": "2.0"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9/AWAY2-b.jpg",
+ "made": "2026-11-11T12:32:53.610Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Camera at wheel height on the wet grass, a little way down the hill from the bunker in the first image, looking back up at it. The dented grey six-wheeled delivery robot from the second image comes towards the lens, close and sharp, filling the left half of the picture: her amber beacon glowing on its stalk, her torn faded bunting flapping from a wheel, mud on her tyres. Behind her, soft and out of focus up the slope, the bunker's shut green doors, a cream loudspeaker horn dangling mouth-down off its broken bracket above them, a little pale dust still hanging in the air and some fallen rubble at the threshold. Flat grey overcast daylight, the beacon the one warm light. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. Widescreen, with no writing anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/maddie.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/horn-hanging.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "1c53bd24-a075-41dc-b25d-a51f02cb1464"
+}

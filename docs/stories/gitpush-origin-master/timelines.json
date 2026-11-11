@@ -233,13 +233,19 @@
       "id": "b-door",
       "group": "Part 2 · The humans (not in Premiere yet)",
       "name": "B · The bridge: Maddie at the door",
-      "length": "1:28",
-      "state": "LOCKED (round 8, Kai 4 Nov: \"We've nailed it. That's the one.\") · Premiere 04 GPOM story B bridge r1, in sync, in 00 RENDER story after A",
-      "tone": "premiere",
+      "length": "1:11",
+      "state": "DONE on the page (round 13, Kai 11 Nov: \"it's a wrap. I love it.\") · Premiere: 04 GPOM story B bridge r3 built and in 00 RENDER story (in sync, 11 Nov)",
+      "tone": "ok",
       "scene": "scenes/second-half-b-the-door",
       "timeline": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
-      "what": "Back in the film as the bridge (Kai, 2 Nov: \"Some negotiation later.\" was too weak a link). Doors shut: Maddie apologises over the tannoy, the old lady shouts back, Maddie leaves them a film (the kill bot's own eyes racing at their door, flipping to NEW OBJECTIVE: SUSTAIN ORGANIC LIFE), a boom they only hear, Derek sees the wreck through the periscope, \"Right. I'll come back tomorrow.\", Sandra and the old lady start to argue, card \"The next day.\" Then C. Stand-in shots for the tannoy exchange and the debate.",
+      "what": "Restructured on Kai's notes (11 Nov, dialogue page draft 1D): Maddie rolls up in silence, apologises over the tannoy; the old lady: 'You mean... killing everybody.'; 'Are you literally joking?' / 'That's... that's fair.'; 'Check this out': BOOM, the horn inside falls and hangs; Derek (heard) 'They've blown up their own kill bot!'; Maddie outside: 'Look. I understand why you wouldn't trust us... I'll come back tomorrow.'; she rolls away past the wreck and calls the boss: 'Hey, boss, are you there?' / 'Yes, what is it?' / 'All we can do is hope they trust us now.' Card 'The next day.' No TV, no debate.",
       "history": [
+        {
+          "name": "Dialogue page: the restructure (draft 1D picked)",
+          "url": "https://claude.ai/artifact/YVns2ZT9oGEuPJW3B9Yqxv",
+          "kind": "dialogue",
+          "date": "2026-11-11"
+        },
         {
           "name": "Dialogue options (the intro and the doorstep)",
           "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
@@ -253,7 +259,7 @@
           "date": "2026-10-20"
         }
       ],
-      "premiere": "gpom-story.prproj · 04 GPOM story B bridge r1"
+      "premiere": "gpom-story.prproj · 04 GPOM story B bridge r3 (page round 13, in sync)"
     },
     {
       "id": "ending",

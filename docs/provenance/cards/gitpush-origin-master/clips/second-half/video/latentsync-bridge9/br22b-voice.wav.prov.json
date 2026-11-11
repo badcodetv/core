@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-bridge9/br22b-voice.wav",
+ "made": "2026-11-11T14:55:00+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "cp",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge9-lips/br22b-ls-dub.wav",
+ "why": "Team lead r10: br22 re-shoot, voice at x1.00: LatentSync voice input"
+}

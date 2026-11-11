@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge9/14-bot-c.wav",
+ "made": "2026-11-11T18:15:57+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "voice-bridge.py",
+ "why": "Hey boss re-voiced to match her report (round 9)"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br39b-endwide-R11-END1-b.mp4",
+ "made": "2026-11-11T18:17:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. She is the only robot in the whole valley; there are no other robots anywhere. [00:00-00:02] a thin aerial with a small round hoop slides up out of the little grey robot's lid and stays up. [00:02-00:12] she turns her back on the bunker and trundles slowly away down the far slope, away from the camera, growing smaller in the distance, never stopping. The wreck keeps smoking on her right. One continuous shot, no cuts. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R11-END1-b.jpg",
+ "why": "Kai 11 Nov: 'please reroll, don't worry about credits, let's go A' (re-roll from END1-b, firmer one-robot wording); second take of the same br39 job (the runner resubmitted after a match failure), kept from inbox/dupes",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R11-END1-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br39-endwide",
+  "frame": 39,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 12,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T18:15:51.198Z"
+ }
+}

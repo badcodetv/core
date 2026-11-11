@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r10/split/br22b-voice.wav",
+ "made": "2026-11-11T15:44:19+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "cut-bridge.py",
+ "why": "voice sliced to the br22b lip-sync clip"
+}

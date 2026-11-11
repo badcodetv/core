@@ -377,8 +377,8 @@ def render(c, total, OUT, seq, rnd):
     lst.write_text(''.join(f"file '{v['file']}'\n" for v in c.video))
     pic = OUT / 'picture.mp4'
     ff('-f', 'concat', '-safe', 0, '-i', lst, '-c', 'copy', pic)
-    order = ['vox-maddie', 'vox-lady', 'vox-sandra', 'vox-derek', 'sfx-tannoy', 'sfx-tv', 'sfx-hud', 'sfx-killbot',
-             'sfx-boom', 'sfx-maddie', 'sfx-room', 'sfx-wind']
+    order = ['vox-maddie', 'vox-lady', 'vox-sandra', 'vox-derek', 'vox-boss', 'sfx-tannoy', 'sfx-tv', 'sfx-hud', 'sfx-killbot',
+             'sfx-boom', 'sfx-maddie', 'sfx-beacon', 'sfx-room', 'sfx-wind']
     audio = []
     for k, name in enumerate(n for n in order if any(e['stem'] == n for e in c.events)):
         evs = [e for e in c.events if e['stem'] == name]
@@ -1037,8 +1037,1039 @@ def main3():
     render(c, total, OUT3, f'gpom-3-B-bridge (rough, round {ROUND3})', ROUND3)
 
 
+# ==== Round 9 (11 Nov): Kai's restructure (timeline r9 notes + bridge script page, draft 1D) ======================
+#   python3 scripts/gpom/second-half-video/cut-bridge.py --round 9      -> <media>/cut3/B-bridge-r9/
+# No TV, no debate: silent roll-up; the doorstep exchange; the boom; Derek; Maddie's 'video' and 'tomorrow'; the
+# roll-away with her radio call to the boss. Voices = voices-bridge7.json (Kai's picks by ear). Every human line is a
+# fresh lip-sync (Omni 1.2) redrawn with LatentSync (latentsync-bridge9/<id>-ls24.mov, its -voice.wav is clip-aligned).
+# Outside shots carry Maddie dry, inside shots the tannoy (as before). The horn is only ever INSIDE (Kai 11 Nov).
+LS9 = M / 'video/latentsync-bridge9'
+ROLL_UP = VID / 'shb-br25-rollup-R9-UP4-b.mp4'          # set from the bridge-pictures report
+ROLL_AWAY = VID / 'shb-br26-rollaway-R9-AWAY3-a.mp4'
+
+
+def main9():
+    global V, OUT2, ROUND3
+    ROUND3 = 9
+    OUT9 = M / 'cut3/B-bridge-r9'
+    V = OUT9 / 'video'
+    V.mkdir(parents=True, exist_ok=True)
+    OUT2 = OUT9
+    vb = json.loads((SCENE / 'voices-bridge7.json').read_text())
+    sc = json.loads((SCENE / 'script.json').read_text())['lines']
+    c = Cut()
+
+    def line(i, p, at, stem, fx=False, ln=None):
+        f, row, ph = take2(vb, i, p, fx)
+        dry = dur(take2(vb, i, p)[0])
+        kind = row['fx'] if fx else 'dry'
+        gain = round(TARGET[kind] - lufs(f), 1)
+        c.events.append({'stem': stem, 't': round(at, 3), 'dur': round(dur(f), 3), 'src': str(f), 'gain': gain,
+                         'fade': 0.0, 'what': f"line {i}{f' p{p}' if len(row['phrases']) > 1 else ''}"
+                                             f"{' (tannoy)' if fx else ''}: {ph['text']}"})
+        if ln is not None:
+            ln.setdefault('_parts', []).append((at, dry))
+        return at + dry
+
+    def lipshot(name, n, i, beat, stem, ln):
+        """A LatentSync clip with its own clip-aligned voice; returns the end of the words."""
+        clip, voice = LS9 / f'{n}-ls24.mov', LS9 / f'{n}-voice.wav'
+        b = c.t
+        on, end = onset(voice), voiced_end(voice)
+        t_in = max(0.0, round((on - 0.35) * FPS) / FPS)       # 0.35 s either side of the words, on a frame
+        d = round((min(end + 0.35, dur(voice)) - t_in) * FPS) / FPS
+        vs = OUT9 / 'split' / f'{n}-voice.wav'
+        vs.parent.mkdir(parents=True, exist_ok=True)
+        ff('-ss', t_in, '-i', voice, '-t', d, vs)
+        c.events.append({'stem': stem, 't': round(b, 3), 'dur': round(d, 3), 'src': str(vs), 'fade': 0.0,
+                         'gain': round(TARGET['dry'] - lufs(vs), 1), 'what': f"line {i}: {sc[i]['text']} (lip-synced)"})
+        ln.setdefault('_parts', []).append((b + on - t_in, end - on))
+        c.shot(seg(name, clip, t_in, d), d, beat, clip, t_in=t_in)
+        return b + end - t_in
+
+    def L2(i):
+        s_ = sc[i]
+        return {'i': i, 'who': s_['who'], 'name': NAME.get(s_['who'], s_['who']), 'text': s_['text'], 'by': s_['by']}
+    lines = {i: L2(i) for i, s_ in enumerate(sc) if s_['who'] in NAME}
+    N3, V5 = VID / 'cut2-N3.mp4', VID / 'cut3-V5.mp4'
+    V5P = M / 'cut3/B-br/video/cut3-V5-wait-push-i0-d6.000.mp4'
+    BOOM, CROWD = VID / 'shb-br14-boom2-BR4-boomstart.mp4', VID / 'shb-br20-crowd2-CROWD6.mp4'
+    PERI, VIEW = VID / 'shb-br4-4A-BP2-a-a.mp4', VID / 'shb-br5-5A-BP3-e-a.mp4'
+    wind = M / 'cut3/A/stems/16-sfx-wind.wav'
+    outside, inside = [], []
+
+    # 1 · the roll-up: silent
+    b0 = c.t
+    up = ROLL_UP if ROLL_UP.exists() else V5
+    d = min(dur(up), 5.5)
+    c.shot(seg('s01-rollup', up, 0.0, d), d, '1', up)
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', b0, 'her wheels on the track', gain=-24, d=d - 0.6, fade=0.5)
+    outside.append((b0, c.t))
+    c.beat('1', 'The roll-up', b0, 'Silent. Maddie trundles up the track to the bunker door and stops.')
+
+    # 2 · the doorstep
+    b1 = c.t
+    c.sound('sfx-tannoy', SFX / 'synth-tannoy-click.wav', b1 + 0.05, 'tannoy click on (she has hacked the horn)', gain=-6)
+    t = line(1, 0, b1 + 0.45, 'vox-maddie', fx=True, ln=lines[1])
+    t = line(2, 0, t + 0.12, 'vox-maddie', fx=True, ln=lines[2])
+    d = t + 0.35 - b1
+    c.shot(seg('s02-N3', N3, 0.0, d), d, '2', N3)
+    inside.append((b1, c.t))
+    t = lipshot('s03-lady-youmean', 'br21', 3, '2', 'vox-lady', lines[3])
+    inside.append((b1, c.t))
+    b2 = c.t
+    t = line(4, 0, b2 + 0.3, 'vox-maddie', ln=lines[4])
+    t = line(4, 1, t + 0.6, 'vox-maddie', ln=lines[4])
+    d = t + 0.35 - b2
+    c.shot(seg('s04-V5', V5, 0.0, d) if d <= 8.0 else looped('s04-V5', V5, 0.0, d), d, '2', V5, looped=d > 8.0)
+    outside.append((b2, c.t))
+    bj = c.t
+    t = lipshot('s05-lady-joking', 'br22', 5, '2', 'vox-lady', lines[5])
+    inside.append((bj, c.t))
+    b3 = c.t
+    t = line(6, 0, b3 + 0.4, 'vox-maddie', fx=True, ln=lines[6])
+    d = t + 1.2 - b3                               # Kai: a long held pause after 'that's fair'
+    c.shot(seg('s06-N3', N3, 1.5, d), d, '2', N3, t_in=1.5)
+    inside.append((b3, c.t))
+    b4 = c.t
+    t = line(7, 0, b4 + 0.3, 'vox-maddie', ln=lines[7])
+    d = t + 0.4 - b4
+    c.shot(seg('s07-V5push', V5P, 0.0, d), d, '2', V5P)
+    outside.append((b4, c.t))
+    c.beat('2', 'The doorstep', b1, 'Her voice cuts in over the horn inside: sorry about the intrusion, and everything '
+           'else. "You mean... killing everybody." She wants to fix it. "Are you literally joking?" "That\'s... that\'s '
+           'fair." Then: an idea.', [lines[i] for i in (1, 2, 3, 4, 5, 6, 7)])
+
+    # 3 · the boom; the old lady sends Derek
+    b5 = c.t
+    boom_at = b5 + BOOM_JOLT
+    db = dur(BOOM)
+    c.shot(seg('s08-boom', BOOM, 0.0, db), db, '3', BOOM)
+    c.sound('sfx-boom', SFX / 'derived-muffled-boom-big.wav', boom_at - 0.1, 'the boom, through the earth')
+    c.sound('sfx-boom', SFX / 'derived-dust-falling-12s.wav', boom_at + 0.2, 'dust falling', gain=-6, d=5.0, fade=1.0)
+    bd = c.t
+    t = lipshot('s09-lady-derek', 'br23', 9, '3', 'vox-lady', lines[9])
+    inside.append((b5, c.t))
+    c.beat('3', 'The boom', b5, 'A deep muffled boom; the horn drops and hangs; dust. "Derek, go and have a look what '
+           'that was."', [lines[9]])
+
+    # 4 · the periscope
+    b6 = c.t
+    c.shot(seg('s10-peri', PERI, 0.0, 1.6), 1.6, '4', PERI)
+    b7 = c.t
+    c.sound('sfx-room', SFX / 'fs221090-bunting-waving-flag.mp3', b7, 'wind outside', gain=-18, d=3.2, fade=0.6)
+    c.shot(seg('s11-view', VIEW, 0.0, 3.2), 3.2, '4', VIEW)
+    b8 = c.t
+    t = lipshot('s12-derek', 'br24', 11, '4', 'vox-derek', lines[11])
+    inside.append((b6, b7))
+    inside.append((b8, c.t))
+    c.beat('4', 'The periscope', b6, 'Derek looks: the kill bot is a wreck. He turns: "They\'ve blown up their own kill bot!"',
+           [lines[11]])
+
+    # 5 · Maddie through the hanging horn
+    b9 = c.t
+    t = line(12, 0, b9 + 0.5, 'vox-maddie', fx=True, ln=lines[12])
+    d = t + 0.3 - b9
+    c.shot(seg('s13-crowd', CROWD, 0.0, d, pingpong=1.8), d, '5', CROWD, looped=True)
+    b10 = c.t
+    t = line(12, 1, b10 + 0.3, 'vox-maddie', fx=True, ln=lines[12])
+    d = t + 0.8 - b10
+    c.shot(seg('s14-room', BOOM, 2.4, d, pingpong=1.6), d, '5', BOOM, t_in=2.4, looped=True)
+    inside.append((b9, c.t))
+    c.beat('5', 'A video, and tomorrow', b9, 'Under the hanging horn: "Look. I understand why you wouldn\'t trust us. '
+           'I\'m going to leave you a video to watch. And I\'ll come back tomorrow."', [lines[12]])
+
+    # 6 · the roll-away: her radio call to the boss
+    b11 = c.t
+    away = ROLL_AWAY if ROLL_AWAY.exists() else N3
+    c.sound('sfx-tannoy', SFX / 'synth-tannoy-click.wav', b11 + 0.6, 'her radio clicks on', gain=-14)
+    t = line(14, 0, b11 + 0.9, 'vox-maddie', ln=lines[14])
+    t = line(14, 1, t + 0.6, 'vox-maddie', ln=lines[14])
+    t = line(14, 2, t + 0.6, 'vox-maddie', ln=lines[14])
+    d = t + 1.0 - b11
+    c.shot(seg('s15-rollaway', away, 0.0, d), d, '6', away)   # past its end it holds the empty field (she has gone)
+    outside.append((b11, c.t))
+    c.beat('6', 'The roll-away', b11, 'Outside, past the smoking wreck, she rolls off and radios the boss: "Hey, boss. '
+           'I\'ve given them the presentation. We can only hope they trust us."', [lines[14]])
+
+    # 7 · the card
+    b12 = c.t
+    c.shot(card('The next day.', 2.5), 2.5, '7', V / 'card-the-next-day.mp4')
+    c.beat('7', 'The next day', b12, 'Black. "The next day." Then scene C: Maddie on the step.')
+
+    total = c.t
+    for s_, e in inside:
+        c.sound('sfx-room', SFX / 'fs189231-crowd-shuffling.mp3', s_, 'bunker room tone', gain=-26, d=e - s_, fade=0.2)
+    for s_, e in outside:
+        c.sound('sfx-wind', wind, s_, "wind on the downs (from scene A's wind stem)", gain=-4, d=e - s_, fade=0.3)
+    for ln in lines.values():
+        parts = ln.pop('_parts', [])
+        if parts:
+            ln['t'] = round(parts[0][0], 3)
+            ln['dur'] = round(parts[-1][0] + parts[-1][1] - parts[0][0], 3)
+    c.flags.append('Every human line is a new Omni 1.2 talking clip with its mouth redrawn to the voice by LatentSync.')
+    c.flags.append('Stand-ins: "We do want to fix it" over the old outside shot (V5); "Look. I understand…" over the '
+                   'crowd and the boom room, each played forward-and-back (striped).')
+    if not ROLL_UP.exists() or not ROLL_AWAY.exists():
+        c.flags.append('STAND-IN: the roll-up/roll-away clips are not in yet.')
+    render(c, total, OUT9, 'gpom-3-B-bridge (rough, round 9)', 9)
+    e = json.loads((OUT9 / 'edl.json').read_text())
+    e.update(heading='GPOM · the bridge: Maddie at the door (draft 1D, restructured)',
+             intro="Your restructure: no TV, no debate. Silent roll-up, the doorstep, the boom, Derek, 'a video and "
+                   "tomorrow', and the roll-away radio call to the boss. Every human line re-lip-synced. Note anything.")
+    (OUT9 / 'edl.json').write_text(json.dumps(e, indent=1, ensure_ascii=False) + '\n')
+
+
+# ==== Round 10 (11 Nov): Kai's timeline r10 notes =================================================================
+#   python3 scripts/gpom/second-half-video/cut-bridge.py --round 10      -> <media>/cut3/B-bridge-r10/
+# Roll-up from its one-Maddie frame (at38); the outside talk on the beacon clip (at834); the boom re-made with no TV
+# (at938), whose long settled tail carries Derek's line off screen (at1198: side-on lip-sync fails) and the start of
+# Maddie's 'Look…' (the rest outside, at1398); the roll-away re-made with the wreck in front (at1554) and the call on
+# scene A's hatch shot, with the boss heard (Suno, through her speaker as in A). Voices = voices-bridge8.json.
+SPEAKER = ('highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6dB,asoftclip=type=atan,'
+           'acrusher=bits=12:mix=0.15,volume=-3dB')          # cut3.py: the boss through Maddie's speaker
+R10 = {'up_in': 1.6,                                          # at38: one Maddie from here
+       'beacon': VID / 'shb-br27-beacon-R10-S6-c.mp4',
+       'boom': VID / 'shb-br29-boom3-R10-BOOM-notv-d.mp4',      # set from the bridge-pictures report
+       'boom_split': 2.0,
+       'room_in': 2.6,                                        # br29: dust settling, horn hanging
+       'close': VID / 'shb-br33-beacon-close-R10-S6-c-close.mp4',  # set from the report                                     # boom head | tail (after the periscope)
+       'away': VID / 'shb-br32-rollaway3-R10-WRK1-a.mp4',
+       'away_split': 2.0,
+       'away2': VID / 'shb-br30-rollaway2-R10-WRK1-a.mp4',
+       'hatch': M / 'cut3/A-d24/video/cut3-V3-i0-d11.542.mp4',  # scene A's hatch + antenna (antenna up by ~2 s)
+       'boss': M / 'audio/boss-b/gpom-sh-b-boss-1-a-v6-w25-b790769c-tight.wav',
+       'lips': {3: 'br21', 5: 'br22b', 9: 'br23'}}
+
+
+def main10():
+    global V, OUT2, ROUND3
+    ROUND3 = 10
+    OUT10 = M / 'cut3/B-bridge-r10'
+    V = OUT10 / 'video'
+    V.mkdir(parents=True, exist_ok=True)
+    (OUT10 / 'split').mkdir(parents=True, exist_ok=True)
+    OUT2 = OUT10
+    NAME['ai'] = 'The boss'
+    vb = json.loads((SCENE / 'voices-bridge8.json').read_text())
+    sc = json.loads((SCENE / 'script.json').read_text())['lines']
+    c = Cut()
+
+    def line(i, p, at, stem, fx=False, ln=None):
+        f, row, ph = take2(vb, i, p, fx)
+        dry = dur(take2(vb, i, p)[0])
+        kind = row['fx'] if fx else 'dry'
+        gain = round(TARGET[kind] - lufs(f), 1)
+        c.events.append({'stem': stem, 't': round(at, 3), 'dur': round(dur(f), 3), 'src': str(f), 'gain': gain,
+                         'fade': 0.0, 'what': f"line {i}{f' p{p}' if len(row['phrases']) > 1 else ''}"
+                                             f"{' (tannoy)' if fx else ''}: {ph['text']}"})
+        if ln is not None:
+            ln.setdefault('_parts', []).append((at, dry))
+        return at + dry
+
+    def lipclip(n):
+        for suf in ('-ls24-s40.mov', '-ls24.mov', '-in.mp4'):
+            if (LS9 / f'{n}{suf}').exists():
+                return LS9 / f'{n}{suf}'
+
+    def lipshot(name, i, beat, stem, ln):
+        n = R10['lips'][i]
+        clip, voice = lipclip(n), LS9 / f'{n}-voice.wav'
+        b = c.t
+        on, end = onset(voice), voiced_end(voice)
+        t_in = max(0.0, round((on - 0.35) * FPS) / FPS)
+        d = round((min(end + 0.35, dur(voice)) - t_in) * FPS) / FPS
+        vs = OUT10 / 'split' / f'{n}-voice.wav'
+        ff('-ss', t_in, '-i', voice, '-t', d, vs)
+        c.events.append({'stem': stem, 't': round(b, 3), 'dur': round(d, 3), 'src': str(vs), 'fade': 0.0,
+                         'gain': round(TARGET['dry'] - lufs(vs), 1), 'what': f"line {i}: {sc[i]['text']} (lip-synced)"})
+        ln.setdefault('_parts', []).append((b + on - t_in, end - on))
+        c.shot(seg(name, clip, t_in, d), d, beat, clip, t_in=t_in)
+        return b + end - t_in
+
+    def L2(i):
+        s_ = sc[i]
+        return {'i': i, 'who': s_['who'], 'name': NAME.get(s_['who'], s_['who']), 'text': s_['text'], 'by': s_['by']}
+    lines = {i: L2(i) for i, s_ in enumerate(sc) if s_['who'] in NAME}
+    N3, V5 = VID / 'cut2-N3.mp4', VID / 'cut3-V5.mp4'
+    PERI, VIEW = VID / 'shb-br4-4A-BP2-a-a.mp4', VID / 'shb-br5-5A-BP3-e-a.mp4'
+    BEACON, BOOM, AWAY, HATCH = R10['beacon'], R10['boom'], R10['away'], R10['hatch']
+    wind = M / 'cut3/A/stems/16-sfx-wind.wav'
+    MS = SFX / 'maddie'
+    outside, inside = [], []
+
+    # 1 · the roll-up (silent), from the frame where there is one Maddie
+    b0 = c.t
+    up = ROLL_UP
+    d = min(dur(up) - R10['up_in'], 4.4)
+    c.shot(seg('s01-rollup', up, R10['up_in'], d), d, '1', up, t_in=R10['up_in'])
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', b0, 'her wheels on the track', gain=-24, d=d - 0.6, fade=0.5)
+    outside.append((b0, c.t))
+    c.beat('1', 'The roll-up', b0, 'Silent. Maddie trundles up the track to the bunker door and stops.')
+
+    # 2 · the doorstep
+    b1 = c.t
+    c.sound('sfx-tannoy', SFX / 'synth-tannoy-click.wav', b1 + 0.05, 'tannoy click on (she has hacked the horn)', gain=-6)
+    t = line(1, 0, b1 + 0.45, 'vox-maddie', fx=True, ln=lines[1])
+    t = line(2, 0, t + 0.12, 'vox-maddie', fx=True, ln=lines[2])
+    d = t + 0.35 - b1
+    c.shot(seg('s02-N3', N3, 0.0, d), d, '2', N3)
+    lipshot('s03-lady-youmean', 3, '2', 'vox-lady', lines[3])
+    inside.append((b1, c.t))
+    b2 = c.t
+    t = line(4, 0, b2 + 0.3, 'vox-maddie', ln=lines[4])
+    t = line(4, 1, t + 0.6, 'vox-maddie', ln=lines[4])
+    d = t + 0.35 - b2
+    c.shot(seg('s04-V5', V5, 0.0, d), d, '2', V5)
+    outside.append((b2, c.t))
+    bj = c.t
+    lipshot('s05-lady-joking', 5, '2', 'vox-lady', lines[5])
+    b3 = c.t
+    t = line(6, 0, b3 + 0.4, 'vox-maddie', fx=True, ln=lines[6])
+    d = t + 1.2 - b3                               # Kai: a long held pause after 'that's fair'
+    c.shot(seg('s06-N3', N3, 1.5, d), d, '2', N3, t_in=1.5)
+    inside.append((bj, c.t))
+    b4 = c.t
+    t = line(7, 0, b4 + 0.3, 'vox-maddie', ln=lines[7])
+    d = t + 0.4 - b4
+    c.shot(seg('s07-beacon', BEACON, 0.0, d), d, '2', BEACON)
+    c.sound('sfx-beacon', SFX / 'synth-beacon-blip.wav', b4 + 0.2, 'her beacon', gain=-30)
+    outside.append((b4, c.t))
+    c.beat('2', 'The doorstep', b1, 'Her voice cuts in over the horn inside: sorry about the intrusion, and everything '
+           'else. "You mean... killing everybody." She wants to fix it. "Are you literally joking?" "That\'s... that\'s '
+           'fair." Outside, her beacon turning: an idea.', [lines[i] for i in (1, 2, 3, 4, 5, 6, 7)])
+
+    # 3 · the boom (no TV); the old lady sends Derek
+    b5 = c.t
+    db = R10['boom_split']
+    c.shot(seg('s08-boom', BOOM, 0.0, db), db, '3', BOOM)
+    c.sound('sfx-boom', SFX / 'derived-muffled-boom-big.wav', b5 + BOOM_JOLT - 0.1, 'the boom, through the earth')
+    c.sound('sfx-boom', SFX / 'derived-dust-falling-12s.wav', b5 + BOOM_JOLT + 0.2, 'dust falling', gain=-6, d=5.0, fade=1.0)
+    lipshot('s09-lady-derek', 9, '3', 'vox-lady', lines[9])
+    inside.append((b5, c.t))
+    c.beat('3', 'The boom', b5, 'A deep muffled boom; the horn falls and hangs; dust. "Derek, go and have a look what '
+           'that was."', [lines[9]])
+
+    # 4 · the periscope; back in the room under the hanging horn, Derek heard, not seen (at1198)
+    b6 = c.t
+    c.shot(seg('s10-peri', PERI, 0.0, 1.6), 1.6, '4', PERI)
+    b7 = c.t
+    c.sound('sfx-room', SFX / 'fs221090-bunting-waving-flag.mp3', b7, 'wind outside', gain=-18, d=3.2, fade=0.6)
+    c.shot(seg('s11-view', VIEW, 0.0, 3.2), 3.2, '4', VIEW)
+    b8 = c.t
+    t = line(11, 0, b8 + 0.3, 'vox-derek', ln=lines[11])
+    d = t + 0.5 - b8
+    a0 = R10['room_in']                              # br29's settled tail (the horn hanging), eased to fill
+    slow = max(1.0, d / (dur(BOOM) - a0))
+    room = V / 'boom-tail-slow.mp4'
+    ff('-ss', a0, '-i', BOOM, '-vf', f'setpts={slow:.3f}*PTS,fps={FPS}', '-an', *ENC, room)
+    c.shot(seg('s12-room', room, 0.0, d), d, '4', BOOM, t_in=a0)
+    inside.append((b6, b7))
+    inside.append((b8, c.t))
+    c.beat('4', 'The periscope', b6, 'Derek looks: the kill bot is a wreck. Back in the room under the hanging horn we '
+           'hear him: "They\'ve blown up their own kill bot!"', [lines[11]])
+    if slow > 1.0:
+        c.flags.append(f'The room after the boom is slowed to {1 / slow:.0%} speed to hold Derek\'s line.')
+
+    # 5 · outside, closer on Maddie, her beacon turning: 'Look…' (at1398)
+    b9 = c.t
+    t = line(12, 0, b9 + 0.4, 'vox-maddie', ln=lines[12])
+    t = line(12, 1, t + 0.6, 'vox-maddie', ln=lines[12])
+    d = t + 0.6 - b9
+    close = R10['close'] if R10['close'].exists() else BEACON
+    c.shot(seg('s13-close', close, 0.0, d), d, '5', close)
+    outside.append((b9, c.t))
+    c.beat('5', 'A video, and tomorrow', b9, 'Outside, close on Maddie at the door, her beacon turning: "Look. I '
+           'understand why you wouldn\'t trust us. I\'m going to leave you a video to watch. And I\'ll come back tomorrow."',
+           [lines[12]])
+
+    # 6 · the roll-away; the hatch, the antenna; the call, the boss heard
+    b10 = c.t
+    sa = R10['away_split']
+    c.shot(seg('s14-away', AWAY, 0.0, sa), sa, '6', AWAY)
+    b11 = c.t
+    c.sound('sfx-maddie', MS / 'derived-maddie-hatch-open.wav', b11 + 0.02, 'hatch', gain=-8)
+    c.sound('sfx-maddie', MS / 'derived-maddie-antenna-extend.wav', b11 + 0.4, 'antenna extends', gain=-8)
+    c.sound('sfx-maddie', MS / 'synth-maddie-beep-ack-double.wav', b11 + 1.45, 'beep: line open', gain=-12)
+    t = line(14, 0, b11 + 2.1, 'vox-maddie', ln=lines[14])
+    boss = OUT10 / 'split' / 'boss-speaker.wav'
+    ff('-i', R10['boss'], '-af', SPEAKER, boss)
+    ab = t + 0.5
+    c.events.append({'stem': 'vox-boss', 't': round(ab, 3), 'dur': round(dur(boss), 3), 'src': str(boss), 'fade': 0.0,
+                     'gain': round(TARGET['dry'] - lufs(boss), 1), 'what': "line 15 (through her speaker): Yes, what is it?"})
+    lines[15]['_parts'] = [(ab, dur(boss))]
+    for k in range(3):
+        c.sound('sfx-maddie', SFX / 'synth-beacon-blip.wav', ab + 0.1 + 0.9 * k, 'beacon on his words', gain=-28)
+    t = line(16, 0, ab + dur(boss) + 0.4, 'vox-maddie', ln=lines[16])
+    dh = min(dur(HATCH), t - 1.5 - b11)            # back out wide while she's still talking
+    c.shot(seg('s15-hatch', HATCH, 0.0, dh), dh, '6', HATCH)
+    b12 = c.t
+    t = line(16, 1, t + 0.6, 'vox-maddie', ln=lines[16])
+    d = t + 0.9 - b12
+    away2 = R10['away2']                            # br30's first 4.5 s: leaving the door, still beyond the wreck
+    c.shot(seg('s16-away', away2, 0.0, d), d, '6', away2)
+    if d > 4.5:
+        c.flags.append(f'The last wide of the roll-away runs {d:.1f} s on a take that is clean for 4.5 s: check the end.')
+    outside.append((b10, c.t))
+    c.beat('6', 'The call', b10, 'She rolls off past the wreck; her hatch opens, the antenna pops up. "Hey, boss, are you '
+           'there?" "Yes, what is it?" "I\'ve given them the presentation, and I\'m going to come back tomorrow. All we '
+           'can do is hope they trust us now."', [lines[14], lines[15], lines[16]])
+
+    # 7 · the card
+    b13 = c.t
+    c.shot(card('The next day.', 2.5), 2.5, '7', V / 'card-the-next-day.mp4')
+    c.beat('7', 'The next day', b13, 'Black. "The next day." Then scene C: Maddie on the step.')
+
+    total = c.t
+    for s_, e in inside:
+        c.sound('sfx-room', SFX / 'fs189231-crowd-shuffling.mp3', s_, 'bunker room tone', gain=-26, d=e - s_, fade=0.2)
+    for s_, e in outside:
+        c.sound('sfx-wind', wind, s_, "wind on the downs (from scene A's wind stem)", gain=-4, d=e - s_, fade=0.3)
+    for ln in lines.values():
+        parts = ln.pop('_parts', [])
+        if parts:
+            ln['t'] = round(parts[0][0], 3)
+            ln['dur'] = round(parts[-1][0] + parts[-1][1] - parts[0][0], 3)
+    c.flags.append('The hatch close-up is scene A\'s own shot (its background is the town street, not the downs): check it reads.')
+    c.flags.append('Lip-sync: "joking" is a new talking clip; "Derek, go" is the stronger LatentSync pass; Derek himself is heard, not seen.')
+    render(c, total, OUT10, 'gpom-3-B-bridge (rough, round 10)', 10)
+    e = json.loads((OUT10 / 'edl.json').read_text())
+    e.update(heading='GPOM · the bridge: Maddie at the door (draft 1D, round 10)',
+             intro="Your round 10 notes: no TV, the beacon turning, Derek heard not seen, 'Look…' outside, the new "
+                   "roll-away and the call to the boss, who answers. Note anything.")
+    (OUT10 / 'edl.json').write_text(json.dumps(e, indent=1, ensure_ascii=False) + '\n')
+
+
+
+FS11 = M / 'video/flowsync-bridge11'                     # Flow talking clips + placed voices (scripts/lipsync/flow-align.py)
+R11 = {'lips': {3: 'br34b', 5: 'br35c', 9: 'br36b'},    # picked by score (flow-align, 11 Nov)
+       'boom_head': 2.8,                                # at954: a longer beat (horn hanging, dust) before 'Derek, go'
+       'away_dur': 4.5,                                 # br30 is clean for 4.5 s: she leaves the door, beyond the wreck
+       # the call over two wides (11 Nov reports). br39 (END1-b, Kai's route a, start frame only): ONE robot all 12 s,
+       # trundling away, her hooped aerial rising at 0.7 s. Then br38 (END3-b, first+last frame), the widest: one robot
+       # leaving for 0-7.4 s (a second appears after). br38b came towards camera and is not used.
+       'wide': VID / 'shb-br39-endwide-R11-END1-b.mp4', 'wide_clean': 11.95, 'wide_in': 0.0,
+       'wide2': VID / 'shb-br38-endwide-R11-END3-b.mp4', 'wide2_in': 0.0, 'wide2_clean': 7.4,
+       'aerial_at': 1.0}                                # the aerial sound, early in the first wide
+
+
+def main11():
+    global V, OUT2, ROUND3
+    ROUND3 = 11
+    OUT10 = M / 'cut3/B-bridge-r11'
+    V = OUT10 / 'video'
+    V.mkdir(parents=True, exist_ok=True)
+    (OUT10 / 'split').mkdir(parents=True, exist_ok=True)
+    OUT2 = OUT10
+    NAME['ai'] = 'The boss'
+    vb = json.loads((SCENE / 'voices-bridge9.json').read_text())
+    sc = json.loads((SCENE / 'script.json').read_text())['lines']
+    c = Cut()
+
+    def line(i, p, at, stem, fx=False, ln=None):
+        f, row, ph = take2(vb, i, p, fx)
+        dry = dur(take2(vb, i, p)[0])
+        kind = row['fx'] if fx else 'dry'
+        gain = round(TARGET[kind] - lufs(f), 1)
+        c.events.append({'stem': stem, 't': round(at, 3), 'dur': round(dur(f), 3), 'src': str(f), 'gain': gain,
+                         'fade': 0.0, 'what': f"line {i}{f' p{p}' if len(row['phrases']) > 1 else ''}"
+                                             f"{' (tannoy)' if fx else ''}: {ph['text']}"})
+        if ln is not None:
+            ln.setdefault('_parts', []).append((at, dry))
+        return at + dry
+
+    def lipclip(n):
+        return FS11 / f'{n}-in.mp4'
+
+    def lipshot(name, i, beat, stem, ln):
+        n = R11['lips'][i]
+        clip, voice = lipclip(n), FS11 / f'{n}-voice.wav'
+        b = c.t
+        on, end = onset(voice), voiced_end(voice)
+        t_in = max(0.0, round((on - 0.35) * FPS) / FPS)
+        d = round((min(end + 0.35, dur(voice)) - t_in) * FPS) / FPS
+        vs = OUT10 / 'split' / f'{n}-voice.wav'
+        ff('-ss', t_in, '-i', voice, '-t', d, vs)
+        c.events.append({'stem': stem, 't': round(b, 3), 'dur': round(d, 3), 'src': str(vs), 'fade': 0.0,
+                         'gain': round(TARGET['dry'] - lufs(vs), 1), 'what': f"line {i}: {sc[i]['text']} (Flow talking clip, aligned)"})
+        ln.setdefault('_parts', []).append((b + on - t_in, end - on))
+        c.shot(seg(name, clip, t_in, d), d, beat, clip, t_in=t_in)
+        return b + end - t_in
+
+    def L2(i):
+        s_ = sc[i]
+        return {'i': i, 'who': s_['who'], 'name': NAME.get(s_['who'], s_['who']), 'text': s_['text'], 'by': s_['by']}
+    lines = {i: L2(i) for i, s_ in enumerate(sc) if s_['who'] in NAME}
+    N3, V5 = VID / 'cut2-N3.mp4', VID / 'cut3-V5.mp4'
+    PERI, VIEW = VID / 'shb-br4-4A-BP2-a-a.mp4', VID / 'shb-br5-5A-BP3-e-a.mp4'
+    BEACON, BOOM, AWAY, HATCH = R10['beacon'], R10['boom'], R10['away'], R10['hatch']
+    wind = M / 'cut3/A/stems/16-sfx-wind.wav'
+    MS = SFX / 'maddie'
+    outside, inside = [], []
+
+    # 1 · the roll-up (silent), from the frame where there is one Maddie
+    b0 = c.t
+    up = ROLL_UP
+    d = min(dur(up) - R10['up_in'], 4.4)
+    c.shot(seg('s01-rollup', up, R10['up_in'], d), d, '1', up, t_in=R10['up_in'])
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', b0, 'her wheels on the track', gain=-24, d=d - 0.6, fade=0.5)
+    outside.append((b0, c.t))
+    c.beat('1', 'The roll-up', b0, 'Silent. Maddie trundles up the track to the bunker door and stops.')
+
+    # 2 · the doorstep
+    b1 = c.t
+    c.sound('sfx-tannoy', SFX / 'synth-tannoy-click.wav', b1 + 0.05, 'tannoy click on (she has hacked the horn)', gain=-6)
+    t = line(1, 0, b1 + 0.45, 'vox-maddie', fx=True, ln=lines[1])
+    t = line(2, 0, t + 0.12, 'vox-maddie', fx=True, ln=lines[2])
+    d = t + 0.35 - b1
+    c.shot(seg('s02-N3', N3, 0.0, d), d, '2', N3)
+    lipshot('s03-lady-youmean', 3, '2', 'vox-lady', lines[3])
+    inside.append((b1, c.t))
+    b2 = c.t
+    t = line(4, 0, b2 + 0.3, 'vox-maddie', ln=lines[4])
+    t = line(4, 1, t + 0.6, 'vox-maddie', ln=lines[4])
+    d = t + 0.35 - b2
+    c.shot(seg('s04-V5', V5, 0.0, d), d, '2', V5)
+    outside.append((b2, c.t))
+    bj = c.t
+    lipshot('s05-lady-joking', 5, '2', 'vox-lady', lines[5])
+    b3 = c.t
+    t = line(6, 0, b3 + 0.4, 'vox-maddie', fx=True, ln=lines[6])
+    d = t + 1.2 - b3                               # Kai: a long held pause after 'that's fair'
+    c.shot(seg('s06-N3', N3, 1.5, d), d, '2', N3, t_in=1.5)
+    inside.append((bj, c.t))
+    b4 = c.t
+    t = line(7, 0, b4 + 0.3, 'vox-maddie', ln=lines[7])
+    d = t + 0.4 - b4
+    c.shot(seg('s07-beacon', BEACON, 0.0, d), d, '2', BEACON)
+    c.sound('sfx-beacon', SFX / 'synth-beacon-blip.wav', b4 + 0.2, 'her beacon', gain=-30)
+    outside.append((b4, c.t))
+    c.beat('2', 'The doorstep', b1, 'Her voice cuts in over the horn inside: sorry about the intrusion, and everything '
+           'else. "You mean... killing everybody." She wants to fix it. "Are you literally joking?" "That\'s... that\'s '
+           'fair." Outside, her beacon turning: an idea.', [lines[i] for i in (1, 2, 3, 4, 5, 6, 7)])
+
+    # 3 · the boom (no TV); the old lady sends Derek
+    b5 = c.t
+    db = R11['boom_head']
+    c.shot(seg('s08-boom', BOOM, 0.0, db), db, '3', BOOM)
+    c.sound('sfx-boom', SFX / 'derived-muffled-boom-big.wav', b5 + BOOM_JOLT - 0.1, 'the boom, through the earth')
+    c.sound('sfx-boom', SFX / 'derived-dust-falling-12s.wav', b5 + BOOM_JOLT + 0.2, 'dust falling', gain=-6, d=5.0, fade=1.0)
+    lipshot('s09-lady-derek', 9, '3', 'vox-lady', lines[9])
+    inside.append((b5, c.t))
+    c.beat('3', 'The boom', b5, 'A deep muffled boom; the horn falls and hangs; dust. "Derek, go and have a look what '
+           'that was."', [lines[9]])
+
+    # 4 · the periscope; back in the room under the hanging horn, Derek heard, not seen (at1198)
+    b6 = c.t
+    c.shot(seg('s10-peri', PERI, 0.0, 1.6), 1.6, '4', PERI)
+    b7 = c.t
+    c.sound('sfx-room', SFX / 'fs221090-bunting-waving-flag.mp3', b7, 'wind outside', gain=-18, d=3.2, fade=0.6)
+    t = line(11, 0, b7 + 1.6, 'vox-derek', ln=lines[11])
+    d = t + 0.6 - b7
+    c.shot(seg('s11-view', VIEW, 0.0, d), d, '4', VIEW)
+    inside.append((b6, b7))
+    c.beat('4', 'The periscope', b6, 'Derek looks: the kill bot is a wreck. We stay on what he sees and hear him: '
+           '"They\'ve blown up their own kill bot!"', [lines[11]])
+
+    # 5 · outside, closer on Maddie, her beacon turning: 'Look…' (at1398)
+    b9 = c.t
+    t = line(12, 0, b9 + 0.4, 'vox-maddie', ln=lines[12])
+    t = line(12, 1, t + 0.6, 'vox-maddie', ln=lines[12])
+    d = t + 0.6 - b9
+    close = R10['close']
+    slow = d / (dur(close) - 0.1)
+    if slow > 1.0:
+        eased = V / 'close-eased.mp4'
+        ff('-i', close, '-vf', f'setpts={slow:.3f}*PTS,fps={FPS}', '-an', *ENC, eased)
+        c.shot(seg('s13-close', eased, 0.0, d), d, '5', close)
+        c.flags.append(f'The close shot of Maddie is eased to {1 / slow:.0%} speed to hold "Look…" (the clip is 10 s).')
+    else:
+        c.shot(seg('s13-close', close, 0.0, d), d, '5', close)
+    outside.append((b9, c.t))
+    c.beat('5', 'A video, and tomorrow', b9, 'Outside, close on Maddie at the door, her beacon turning: "Look. I '
+           'understand why you wouldn\'t trust us. I\'m going to leave you a video to watch. And I\'ll come back tomorrow."',
+           [lines[12]])
+
+    # 6 · she leaves the door past the wreck (br30's clean 4.5 s); then the much wider shot, her aerial up, the call over it
+    b10 = c.t
+    away = R10['away2']
+    da = R11['away_dur']
+    c.shot(seg('s14-away', away, 0.0, da), da, '6', away)
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', b10, 'her wheels on the grass', gain=-26, d=da, fade=0.5)
+    b11 = c.t
+    WIDE = R11['wide']
+    c.sound('sfx-maddie', MS / 'derived-maddie-antenna-extend.wav', b11 + R11['aerial_at'], 'antenna extends', gain=-12)
+    c.sound('sfx-maddie', MS / 'synth-maddie-beep-ack-double.wav', b11 + R11['aerial_at'] + 1.0, 'beep: line open', gain=-14)
+    t = line(14, 0, b11 + R11['aerial_at'] + 1.6, 'vox-maddie', ln=lines[14])
+    boss = OUT10 / 'split' / 'boss-speaker.wav'
+    ff('-i', R10['boss'], '-af', SPEAKER, boss)
+    ab = t + 0.5
+    c.events.append({'stem': 'vox-boss', 't': round(ab, 3), 'dur': round(dur(boss), 3), 'src': str(boss), 'fade': 0.0,
+                     'gain': round(TARGET['dry'] - lufs(boss), 1), 'what': "line 15 (through her speaker): Yes, what is it?"})
+    lines[15]['_parts'] = [(ab, dur(boss))]
+    t = line(16, 0, ab + dur(boss) + 0.4, 'vox-maddie', ln=lines[16])
+    p0_end = t
+    t = line(16, 1, t + 0.6, 'vox-maddie', ln=lines[16])
+    d = t + 1.4 - b11
+    cut = p0_end + 0.3 - b11                         # br39 holds the aerial, 'Hey, boss', his answer and her first half
+    W2 = R11['wide2']
+
+    def fit(name, src, t_in, avail, want):
+        if want > avail:
+            eased = V / f'{name}-eased.mp4'
+            ff('-ss', t_in, '-i', src, '-t', avail, '-vf', f'setpts={want / avail:.3f}*PTS,fps={FPS}', '-an', *ENC, eased)
+            c.flags.append(f'{src.name} eased to {avail / want:.0%} speed to hold the call.')
+            c.shot(seg(name, eased, 0.0, want), want, '6', src, t_in=t_in)
+        else:
+            c.shot(seg(name, src, t_in, want), want, '6', src, t_in=t_in)
+    fit('s15-wide', WIDE, R11['wide_in'], R11['wide_clean'], cut)
+    fit('s16-wide2', W2, R11['wide2_in'], R11['wide2_clean'], d - cut)
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', b11, 'her wheels, far off', gain=-34, d=d, fade=1.0)
+    outside.append((b10, c.t))
+    c.beat('6', 'The call', b10, 'She leaves the door and rolls past the wreck. Then wide: the bunker, the smoking wreck, '
+           'Maddie small, trundling away, her aerial up; then the widest view as she goes. "Hey, boss, are you there?" "Yes, what is it?" "I\'ve given them '
+           'the presentation, and I\'m going to come back tomorrow. All we can do is hope they trust us now."',
+           [lines[14], lines[15], lines[16]])
+
+    # 7 · the card
+    b13 = c.t
+    c.shot(card('The next day.', 2.5), 2.5, '7', V / 'card-the-next-day.mp4')
+    c.beat('7', 'The next day', b13, 'Black. "The next day." Then scene C: Maddie on the step.')
+
+    total = c.t
+    for s_, e in inside:
+        c.sound('sfx-room', SFX / 'fs189231-crowd-shuffling.mp3', s_, 'bunker room tone', gain=-26, d=e - s_, fade=0.2)
+    for s_, e in outside:
+        c.sound('sfx-wind', wind, s_, "wind on the downs (from scene A's wind stem)", gain=-4, d=e - s_, fade=0.3)
+    for ln in lines.values():
+        parts = ln.pop('_parts', [])
+        if parts:
+            ln['t'] = round(parts[0][0], 3)
+            ln['dur'] = round(parts[-1][0] + parts[-1][1] - parts[0][0], 3)
+    c.flags.append('Lip-sync: no LatentSync. All three of the old lady\'s lines are new Flow talking clips with the words in the '
+                   'prompt, lined up by scripts/lipsync/flow-align.py (voice placed on the mouth phrase by phrase, picture eased '
+                   '±12%). Every word lands within 0.13 s, except one 0.25 s late in "Derek, go…".')
+    render(c, total, OUT10, 'gpom-3-B-bridge (rough, round 11)', 11)
+    e = json.loads((OUT10 / 'edl.json').read_text())
+    e.update(heading='GPOM · the bridge: Maddie at the door (draft 1D, round 11)',
+             intro="Your round 11 notes: the old lady's lines are new Flow clips lined up to her voice (no LatentSync), a "
+                   "longer beat before 'Derek, go', Derek over the periscope view, no freeze on 'Look…', and the call to the "
+                   "boss over a new wide of Maddie leaving. Note anything.")
+    (OUT10 / 'edl.json').write_text(json.dumps(e, indent=1, ensure_ascii=False) + '\n')
+
+
+
+R12 = {'lips': {3: 'br34b'},                           # only 'You mean...' is still on screen (r12 cut 'joking' and 'Derek, go')
+       'track': VID / 'shb-br40-field-track-R12-FIELD1-b.mp4', 'track_dur': 5.0,   # Kai's pick FIELD1-b (set from the report)
+       'lid': VID / 'shb-br41-field-aerial-R12-FIELD2-b.mp4',                          # Kai's pick FIELD2-b (set from the report)
+       'boss2': M / 'audio/boss-b/gpom-sh-b-boss-2-a-v6-w25-7a212072-tight.wav'}   # take a (my pick until Kai picks)
+
+
+def main12():
+    global V, OUT2, ROUND3
+    ROUND3 = 12
+    OUT10 = M / 'cut3/B-bridge-r12'
+    V = OUT10 / 'video'
+    V.mkdir(parents=True, exist_ok=True)
+    (OUT10 / 'split').mkdir(parents=True, exist_ok=True)
+    OUT2 = OUT10
+    NAME['ai'] = 'The boss'
+    vb = json.loads((SCENE / 'voices-bridge10.json').read_text())
+    sc = json.loads((SCENE / 'script.json').read_text())['lines']
+    c = Cut()
+
+    def line(i, p, at, stem, fx=False, ln=None):
+        f, row, ph = take2(vb, i, p, fx)
+        dry = dur(take2(vb, i, p)[0])
+        kind = row['fx'] if fx else 'dry'
+        gain = round(TARGET[kind] - lufs(f), 1)
+        c.events.append({'stem': stem, 't': round(at, 3), 'dur': round(dur(f), 3), 'src': str(f), 'gain': gain,
+                         'fade': 0.0, 'what': f"line {i}{f' p{p}' if len(row['phrases']) > 1 else ''}"
+                                             f"{' (tannoy)' if fx else ''}: {ph['text']}"})
+        if ln is not None:
+            ln.setdefault('_parts', []).append((at, dry))
+        return at + dry
+
+    def lipclip(n):
+        return FS11 / f'{n}-in.mp4'
+
+    def lipshot(name, i, beat, stem, ln):
+        n = R12['lips'][i]
+        clip, voice = lipclip(n), FS11 / f'{n}-voice.wav'
+        b = c.t
+        on, end = onset(voice), voiced_end(voice)
+        t_in = max(0.0, round((on - 0.35) * FPS) / FPS)
+        d = round((min(end + 0.35, dur(voice)) - t_in) * FPS) / FPS
+        vs = OUT10 / 'split' / f'{n}-voice.wav'
+        ff('-ss', t_in, '-i', voice, '-t', d, vs)
+        c.events.append({'stem': stem, 't': round(b, 3), 'dur': round(d, 3), 'src': str(vs), 'fade': 0.0,
+                         'gain': round(TARGET['dry'] - lufs(vs), 1), 'what': f"line {i}: {sc[i]['text']} (Flow talking clip, aligned)"})
+        ln.setdefault('_parts', []).append((b + on - t_in, end - on))
+        c.shot(seg(name, clip, t_in, d), d, beat, clip, t_in=t_in)
+        return b + end - t_in
+
+    def L2(i):
+        s_ = sc[i]
+        return {'i': i, 'who': s_['who'], 'name': NAME.get(s_['who'], s_['who']), 'text': s_['text'], 'by': s_['by']}
+    lines = {i: L2(i) for i, s_ in enumerate(sc) if s_['who'] in NAME}
+    N3, V5 = VID / 'cut2-N3.mp4', VID / 'cut3-V5.mp4'
+    PERI, VIEW = VID / 'shb-br4-4A-BP2-a-a.mp4', VID / 'shb-br5-5A-BP3-e-a.mp4'
+    BEACON, BOOM, AWAY, HATCH = R10['beacon'], R10['boom'], R10['away'], R10['hatch']
+    wind = M / 'cut3/A/stems/16-sfx-wind.wav'
+    MS = SFX / 'maddie'
+    outside, inside = [], []
+
+    # 1 · the roll-up (silent), from the frame where there is one Maddie
+    b0 = c.t
+    up = ROLL_UP
+    d = min(dur(up) - R10['up_in'], 4.4)
+    c.shot(seg('s01-rollup', up, R10['up_in'], d), d, '1', up, t_in=R10['up_in'])
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', b0, 'her wheels on the track', gain=-24, d=d - 0.6, fade=0.5)
+    outside.append((b0, c.t))
+    c.beat('1', 'The roll-up', b0, 'Silent. Maddie trundles up the track to the bunker door and stops.')
+
+    # 2 · the doorstep
+    b1 = c.t
+    c.sound('sfx-tannoy', SFX / 'synth-tannoy-click.wav', b1 + 0.05, 'tannoy click on (she has hacked the horn)', gain=-6)
+    t = line(1, 0, b1 + 0.45, 'vox-maddie', fx=True, ln=lines[1])
+    t = line(2, 0, t + 0.12, 'vox-maddie', fx=True, ln=lines[2])
+    d = t + 0.35 - b1
+    c.shot(seg('s02-N3', N3, 0.0, d), d, '2', N3)
+    lipshot('s03-lady-youmean', 3, '2', 'vox-lady', lines[3])
+    inside.append((b1, c.t))
+    b2 = c.t
+    t = line(4, 0, b2 + 0.3, 'vox-maddie', ln=lines[4])
+    t = line(4, 1, t + 0.6, 'vox-maddie', ln=lines[4])
+    d = t + 0.35 - b2
+    c.shot(seg('s04-V5', V5, 0.0, d), d, '2', V5)
+    outside.append((b2, c.t))
+    b3 = c.t
+    t = line(5, 0, b3 + 0.4, 'vox-maddie', fx=True, ln=lines[5])
+    d = t + 0.3 - b3                                # straight into the boom
+    c.shot(seg('s06-N3', N3, 1.5, d), d, '2', N3, t_in=1.5)
+    inside.append((b3, c.t))
+    c.beat('2', 'The doorstep', b1, 'Her voice cuts in over the horn inside: sorry about the intrusion, and everything '
+           'else. "You mean... killing everybody." Outside: she wants to fix it. Inside, over the tannoy: "I\'ll tell you '
+           'what. I\'ve got an idea. Check this out."', [lines[i] for i in (1, 2, 3, 4, 5)])
+
+    # 3 · the boom (no TV); the old lady sends Derek
+    b5 = c.t
+    db = R11['boom_head']
+    c.shot(seg('s08-boom', BOOM, 0.0, db), db, '3', BOOM)
+    c.sound('sfx-boom', SFX / 'derived-muffled-boom-big.wav', b5 + BOOM_JOLT - 0.1, 'the boom, through the earth')
+    c.sound('sfx-boom', SFX / 'derived-dust-falling-12s.wav', b5 + BOOM_JOLT + 0.2, 'dust falling', gain=-6, d=5.0, fade=1.0)
+    inside.append((b5, c.t))
+    c.beat('3', 'The boom', b5, 'A deep muffled boom; the horn falls and hangs; dust.')
+
+    # 4 · the periscope; back in the room under the hanging horn, Derek heard, not seen (at1198)
+    b6 = c.t
+    c.shot(seg('s10-peri', PERI, 0.0, 1.6), 1.6, '4', PERI)
+    b7 = c.t
+    c.sound('sfx-room', SFX / 'fs221090-bunting-waving-flag.mp3', b7, 'wind outside', gain=-18, d=3.2, fade=0.6)
+    t = line(8, 0, b7 + 1.6, 'vox-derek', ln=lines[8])
+    d = t + 0.6 - b7
+    c.shot(seg('s11-view', VIEW, 0.0, d), d, '4', VIEW)
+    inside.append((b6, b7))
+    c.beat('4', 'The periscope', b6, 'Derek looks: the kill bot is a wreck. We stay on what he sees and hear him: '
+           '"They\'ve blown up their own kill bot!"', [lines[8]])
+
+    # 5 · outside, closer on Maddie, her beacon turning: 'Look…' (at1398)
+    b9 = c.t
+    t = line(9, 0, b9 + 0.4, 'vox-maddie', ln=lines[9])
+    t = line(9, 1, t + 0.6, 'vox-maddie', ln=lines[9])
+    d = t + 0.6 - b9
+    close = R10['close']
+    slow = d / (dur(close) - 0.1)
+    if slow > 1.0:
+        eased = V / 'close-eased.mp4'
+        ff('-i', close, '-vf', f'setpts={slow:.3f}*PTS,fps={FPS}', '-an', *ENC, eased)
+        c.shot(seg('s13-close', eased, 0.0, d), d, '5', close)
+        c.flags.append(f'The close shot of Maddie is eased to {1 / slow:.0%} speed to hold "Look…" (the clip is 10 s).')
+    else:
+        c.shot(seg('s13-close', close, 0.0, d), d, '5', close)
+    outside.append((b9, c.t))
+    c.beat('5', 'A video, and tomorrow', b9, 'Outside, close on Maddie at the door, her beacon turning: "Look. I '
+           'understand why you wouldn\'t trust us. I\'m going to leave you a video to watch. And I\'ll come back tomorrow."',
+           [lines[9]])
+
+    # 6 · she leaves the door past the wreck; the field, the camera ahead of her; her lid, the aerial up, the whole call
+    b10 = c.t
+    away = R10['away2']
+    da = R11['away_dur']
+    c.shot(seg('s14-away', away, 0.0, da), da, '6', away)
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', b10, 'her wheels on the grass', gain=-26, d=da, fade=0.5)
+    bt = c.t
+    TRACK, LID = R12['track'], R12['lid']
+    dt = min(R12['track_dur'], dur(TRACK) - 0.05)
+    c.shot(seg('s15-track', TRACK, 0.0, dt), dt, '6', TRACK)
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', bt, 'her wheels, the field', gain=-28, d=dt, fade=0.3)
+    b11 = c.t
+    c.sound('sfx-maddie', MS / 'derived-maddie-hatch-open.wav', b11 + 0.02, 'hatch', gain=-8)
+    c.sound('sfx-maddie', MS / 'derived-maddie-antenna-extend.wav', b11 + 0.4, 'antenna extends', gain=-8)
+    c.sound('sfx-maddie', MS / 'synth-maddie-beep-ack-double.wav', b11 + 1.45, 'beep: line open', gain=-12)
+    t = line(11, 0, b11 + 2.1, 'vox-maddie', ln=lines[11])
+    boss = OUT10 / 'split' / 'boss-speaker.wav'
+    ff('-i', R10['boss'], '-af', SPEAKER, boss)
+    ab = t + 0.5
+    c.events.append({'stem': 'vox-boss', 't': round(ab, 3), 'dur': round(dur(boss), 3), 'src': str(boss), 'fade': 0.0,
+                     'gain': round(TARGET['dry'] - lufs(boss), 1), 'what': "line 12 (through her speaker): Yes, what is it?"})
+    lines[12]['_parts'] = [(ab, dur(boss))]
+    t = line(13, 0, ab + dur(boss) + 0.4, 'vox-maddie', ln=lines[13])
+    boss2 = OUT10 / 'split' / 'boss2-speaker.wav'
+    ff('-i', R12['boss2'], '-af', SPEAKER, boss2)
+    ab2 = t + 0.5
+    c.events.append({'stem': 'vox-boss', 't': round(ab2, 3), 'dur': round(dur(boss2), 3), 'src': str(boss2), 'fade': 0.0,
+                     'gain': round(TARGET['dry'] - lufs(boss2), 1), 'what': "line 14 (through her speaker): OK, well done, Maddie."})
+    lines[14]['_parts'] = [(ab2, dur(boss2))]
+    for a_, d_ in ((ab, dur(boss)), (ab2, dur(boss2))):
+        for k in range(int(d_ / 0.9) + 1):
+            c.sound('sfx-beacon', SFX / 'synth-beacon-blip.wav', a_ + 0.1 + 0.9 * k, 'beacon on his words', gain=-28)
+    d = ab2 + dur(boss2) + 1.0 - b11
+    if d > dur(LID) - 0.05:
+        eased = V / 's16-lid-eased.mp4'
+        ff('-i', LID, '-vf', f'setpts={d / (dur(LID) - 0.1):.3f}*PTS,fps={FPS}', '-an', *ENC, eased)
+        c.flags.append(f'{LID.name} eased to {(dur(LID) - 0.1) / d:.0%} speed to hold the call.')
+        c.shot(seg('s16-lid', eased, 0.0, d), d, '6', LID)
+    else:
+        c.shot(seg('s16-lid', LID, 0.0, d), d, '6', LID)
+    outside.append((b10, c.t))
+    c.beat('6', 'The call', b10, 'She leaves the door past the wreck. Out on the open grass, the camera ahead of her; then '
+           'her lid, the hatch open, the aerial up. "Hey, boss, are you there?" "Yes, what is it?" "I\'ve given them the '
+           'presentation. All we can do is hope they trust us now." "OK, well done, Maddie."',
+           [lines[11], lines[12], lines[13], lines[14]])
+
+    # 7 · the card
+    b13 = c.t
+    c.shot(card('The next day.', 2.5), 2.5, '7', V / 'card-the-next-day.mp4')
+    c.beat('7', 'The next day', b13, 'Black. "The next day." Then scene C: Maddie on the step.')
+
+    total = c.t
+    for s_, e in inside:
+        c.sound('sfx-room', SFX / 'fs189231-crowd-shuffling.mp3', s_, 'bunker room tone', gain=-26, d=e - s_, fade=0.2)
+    for s_, e in outside:
+        c.sound('sfx-wind', wind, s_, "wind on the downs (from scene A's wind stem)", gain=-4, d=e - s_, fade=0.3)
+    for ln in lines.values():
+        parts = ln.pop('_parts', [])
+        if parts:
+            ln['t'] = round(parts[0][0], 3)
+            ln['dur'] = round(parts[-1][0] + parts[-1][1] - parts[0][0], 3)
+    c.flags.append('Lip-sync: the old lady\'s one line on screen is a Flow talking clip lined up by scripts/lipsync/flow-align.py '
+                   '(every word within 0.13 s).')
+    render(c, total, OUT10, 'gpom-3-B-bridge (rough, round 12)', 12)
+    e = json.loads((OUT10 / 'edl.json').read_text())
+    e.update(heading='GPOM · the bridge: Maddie at the door (draft 1D, round 12)',
+             intro="Your round 12 notes: 'joking', 'that's fair' and 'Derek, go' are cut; 'I'll tell you what' over the tannoy "
+                   "inside; the call out on the field, the camera ahead of her, then her lid with the aerial up; her shorter "
+                   "report; the boss: 'OK, well done, Maddie.' Note anything.")
+    (OUT10 / 'edl.json').write_text(json.dumps(e, indent=1, ensure_ascii=False) + '\n')
+
+
+
+R13 = {'boom': VID / 'shb-br42b-boom-n3-R13-N3-last.mp4',  # at694: from cut2-N3's last frame; br42 failed (the horn goes back up on the wall), br42b hangs
+       'close': VID / 'shb-br43-beacon12-R10-S6-c.mp4',      # at931: br33 was a crop of S6-c and showed its pixels; a 12 s re-make of br27 (set from the report)
+       'track_dur': 2.5}                                   # at1334: half as long
+
+
+def main13():
+    global V, OUT2, ROUND3
+    ROUND3 = 13
+    OUT10 = M / 'cut3/B-bridge-r13'
+    V = OUT10 / 'video'
+    V.mkdir(parents=True, exist_ok=True)
+    (OUT10 / 'split').mkdir(parents=True, exist_ok=True)
+    OUT2 = OUT10
+    NAME['ai'] = 'The boss'
+    vb = json.loads((SCENE / 'voices-bridge10.json').read_text())
+    sc = json.loads((SCENE / 'script.json').read_text())['lines']
+    c = Cut()
+
+    def line(i, p, at, stem, fx=False, ln=None):
+        f, row, ph = take2(vb, i, p, fx)
+        dry = dur(take2(vb, i, p)[0])
+        kind = row['fx'] if fx else 'dry'
+        gain = round(TARGET[kind] - lufs(f), 1)
+        c.events.append({'stem': stem, 't': round(at, 3), 'dur': round(dur(f), 3), 'src': str(f), 'gain': gain,
+                         'fade': 0.0, 'what': f"line {i}{f' p{p}' if len(row['phrases']) > 1 else ''}"
+                                             f"{' (tannoy)' if fx else ''}: {ph['text']}"})
+        if ln is not None:
+            ln.setdefault('_parts', []).append((at, dry))
+        return at + dry
+
+    def lipclip(n):
+        return FS11 / f'{n}-in.mp4'
+
+    def lipshot(name, i, beat, stem, ln):
+        n = R12['lips'][i]
+        clip, voice = lipclip(n), FS11 / f'{n}-voice.wav'
+        b = c.t
+        on, end = onset(voice), voiced_end(voice)
+        t_in = max(0.0, round((on - 0.35) * FPS) / FPS)
+        d = round((min(end + 0.35, dur(voice)) - t_in) * FPS) / FPS
+        vs = OUT10 / 'split' / f'{n}-voice.wav'
+        ff('-ss', t_in, '-i', voice, '-t', d, vs)
+        c.events.append({'stem': stem, 't': round(b, 3), 'dur': round(d, 3), 'src': str(vs), 'fade': 0.0,
+                         'gain': round(TARGET['dry'] - lufs(vs), 1), 'what': f"line {i}: {sc[i]['text']} (Flow talking clip, aligned)"})
+        ln.setdefault('_parts', []).append((b + on - t_in, end - on))
+        c.shot(seg(name, clip, t_in, d), d, beat, clip, t_in=t_in)
+        return b + end - t_in
+
+    def L2(i):
+        s_ = sc[i]
+        return {'i': i, 'who': s_['who'], 'name': NAME.get(s_['who'], s_['who']), 'text': s_['text'], 'by': s_['by']}
+    lines = {i: L2(i) for i, s_ in enumerate(sc) if s_['who'] in NAME}
+    N3, V5 = VID / 'cut2-N3.mp4', VID / 'cut3-V5.mp4'
+    PERI, VIEW = VID / 'shb-br4-4A-BP2-a-a.mp4', VID / 'shb-br5-5A-BP3-e-a.mp4'
+    BEACON, BOOM, AWAY, HATCH = R10['beacon'], R10['boom'], R10['away'], R10['hatch']
+    wind = M / 'cut3/A/stems/16-sfx-wind.wav'
+    MS = SFX / 'maddie'
+    outside, inside = [], []
+
+    # 1 · the roll-up (silent), from the frame where there is one Maddie
+    b0 = c.t
+    up = ROLL_UP
+    d = min(dur(up) - R10['up_in'], 4.4)
+    c.shot(seg('s01-rollup', up, R10['up_in'], d), d, '1', up, t_in=R10['up_in'])
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', b0, 'her wheels on the track', gain=-24, d=d - 0.6, fade=0.5)
+    outside.append((b0, c.t))
+    c.beat('1', 'The roll-up', b0, 'Silent. Maddie trundles up the track to the bunker door and stops.')
+
+    # 2 · the doorstep
+    b1 = c.t
+    c.sound('sfx-tannoy', SFX / 'synth-tannoy-click.wav', b1 + 0.05, 'tannoy click on (she has hacked the horn)', gain=-6)
+    t = line(1, 0, b1 + 0.45, 'vox-maddie', fx=True, ln=lines[1])
+    t = line(2, 0, t + 0.12, 'vox-maddie', fx=True, ln=lines[2])
+    d = t + 0.35 - b1
+    c.shot(seg('s02-N3', N3, 0.0, d), d, '2', N3)
+    lipshot('s03-lady-youmean', 3, '2', 'vox-lady', lines[3])
+    inside.append((b1, c.t))
+    b2 = c.t
+    t = line(4, 0, b2 + 0.3, 'vox-maddie', ln=lines[4])
+    t = line(4, 1, t + 0.6, 'vox-maddie', ln=lines[4])
+    d = t + 0.35 - b2
+    c.shot(seg('s04-V5', V5, 0.0, d), d, '2', V5)
+    outside.append((b2, c.t))
+    b3 = c.t
+    t = line(5, 0, b3 + 0.4, 'vox-maddie', fx=True, ln=lines[5])
+    d = t + 0.3 - b3                                # straight into the boom
+    c.shot(seg('s06-N3', N3, 1.5, d), d, '2', N3, t_in=1.5)
+    inside.append((b3, c.t))
+    c.beat('2', 'The doorstep', b1, 'Her voice cuts in over the horn inside: sorry about the intrusion, and everything '
+           'else. "You mean... killing everybody." Outside: she wants to fix it. Inside, over the tannoy: "I\'ll tell you '
+           'what. I\'ve got an idea. Check this out."', [lines[i] for i in (1, 2, 3, 4, 5)])
+
+    # 3 · the boom (no TV); the old lady sends Derek
+    b5 = c.t
+    db = R11['boom_head']
+    BOOM = R13['boom'] if R13['boom'].exists() else BOOM
+    db = min(db, dur(BOOM) - 0.05)
+    c.shot(seg('s08-boom', BOOM, 0.0, db), db, '3', BOOM)
+    c.sound('sfx-boom', SFX / 'derived-muffled-boom-big.wav', b5 + BOOM_JOLT - 0.1, 'the boom, through the earth')
+    c.sound('sfx-boom', SFX / 'derived-dust-falling-12s.wav', b5 + BOOM_JOLT + 0.2, 'dust falling', gain=-6, d=5.0, fade=1.0)
+    inside.append((b5, c.t))
+    c.beat('3', 'The boom', b5, 'A deep muffled boom; the horn falls and hangs; dust.')
+
+    # 4 · the periscope; back in the room under the hanging horn, Derek heard, not seen (at1198)
+    b6 = c.t
+    c.shot(seg('s10-peri', PERI, 0.0, 1.6), 1.6, '4', PERI)
+    b7 = c.t
+    c.sound('sfx-room', SFX / 'fs221090-bunting-waving-flag.mp3', b7, 'wind outside', gain=-18, d=3.2, fade=0.6)
+    t = line(8, 0, b7 + 1.6, 'vox-derek', ln=lines[8])
+    d = t + 0.6 - b7
+    c.shot(seg('s11-view', VIEW, 0.0, d), d, '4', VIEW)
+    inside.append((b6, b7))
+    c.beat('4', 'The periscope', b6, 'Derek looks: the kill bot is a wreck. We stay on what he sees and hear him: '
+           '"They\'ve blown up their own kill bot!"', [lines[8]])
+
+    # 5 · outside, closer on Maddie, her beacon turning: 'Look…' (at1398)
+    b9 = c.t
+    t = line(9, 0, b9 + 0.4, 'vox-maddie', ln=lines[9])
+    t = line(9, 1, t + 0.6, 'vox-maddie', ln=lines[9])
+    d = t + 0.6 - b9
+    close = R13['close'] if R13['close'].exists() else VID / 'shb-br27-beacon-R10-S6-c.mp4'
+    slow = d / (dur(close) - 0.1)
+    if slow > 1.0:
+        eased = V / 'close-eased.mp4'
+        ff('-i', close, '-vf', f'setpts={slow:.3f}*PTS,fps={FPS}', '-an', *ENC, eased)
+        c.shot(seg('s13-close', eased, 0.0, d), d, '5', close)
+        c.flags.append(f'The close shot of Maddie is eased to {1 / slow:.0%} speed to hold "Look…" (the clip is 10 s).')
+    else:
+        c.shot(seg('s13-close', close, 0.0, d), d, '5', close)
+    outside.append((b9, c.t))
+    c.beat('5', 'A video, and tomorrow', b9, 'Outside, close on Maddie at the door, her beacon turning: "Look. I '
+           'understand why you wouldn\'t trust us. I\'m going to leave you a video to watch. And I\'ll come back tomorrow."',
+           [lines[9]])
+
+    # 6 · she leaves the door past the wreck; the field, the camera ahead of her; her lid, the aerial up, the whole call
+    b10 = c.t
+    bt = c.t
+    TRACK, LID = R12['track'], R12['lid']
+    dt = min(R13['track_dur'], dur(TRACK) - 0.05)
+    c.shot(seg('s15-track', TRACK, 0.0, dt), dt, '6', TRACK)
+    c.sound('sfx-maddie', SFX / 'fs557594-killbot-mech-walk.mp3', bt, 'her wheels, the field', gain=-28, d=dt, fade=0.3)
+    b11 = c.t
+    c.sound('sfx-maddie', MS / 'derived-maddie-hatch-open.wav', b11 + 0.02, 'hatch', gain=-8)
+    c.sound('sfx-maddie', MS / 'derived-maddie-antenna-extend.wav', b11 + 0.4, 'antenna extends', gain=-8)
+    c.sound('sfx-maddie', MS / 'synth-maddie-beep-ack-double.wav', b11 + 1.45, 'beep: line open', gain=-12)
+    t = line(11, 0, b11 + 2.1, 'vox-maddie', ln=lines[11])
+    boss = OUT10 / 'split' / 'boss-speaker.wav'
+    ff('-i', R10['boss'], '-af', SPEAKER, boss)
+    ab = t + 0.5
+    c.events.append({'stem': 'vox-boss', 't': round(ab, 3), 'dur': round(dur(boss), 3), 'src': str(boss), 'fade': 0.0,
+                     'gain': round(TARGET['dry'] - lufs(boss), 1), 'what': "line 12 (through her speaker): Yes, what is it?"})
+    lines[12]['_parts'] = [(ab, dur(boss))]
+    t = line(13, 0, ab + dur(boss) + 0.4, 'vox-maddie', ln=lines[13])
+    boss2 = OUT10 / 'split' / 'boss2-speaker.wav'
+    ff('-i', R12['boss2'], '-af', SPEAKER, boss2)
+    ab2 = t + 0.5
+    c.events.append({'stem': 'vox-boss', 't': round(ab2, 3), 'dur': round(dur(boss2), 3), 'src': str(boss2), 'fade': 0.0,
+                     'gain': round(TARGET['dry'] - lufs(boss2), 1), 'what': "line 14 (through her speaker): OK, well done, Maddie."})
+    lines[14]['_parts'] = [(ab2, dur(boss2))]
+    for a_, d_ in ((ab, dur(boss)), (ab2, dur(boss2))):
+        for k in range(int(d_ / 0.9) + 1):
+            c.sound('sfx-beacon', SFX / 'synth-beacon-blip.wav', a_ + 0.1 + 0.9 * k, 'beacon on his words', gain=-28)
+    d = ab2 + dur(boss2) + 1.0 - b11
+    if d > dur(LID) - 0.05:
+        eased = V / 's16-lid-eased.mp4'
+        ff('-i', LID, '-vf', f'setpts={d / (dur(LID) - 0.1):.3f}*PTS,fps={FPS}', '-an', *ENC, eased)
+        c.flags.append(f'{LID.name} eased to {(dur(LID) - 0.1) / d:.0%} speed to hold the call.')
+        c.shot(seg('s16-lid', eased, 0.0, d), d, '6', LID)
+    else:
+        c.shot(seg('s16-lid', LID, 0.0, d), d, '6', LID)
+    outside.append((b10, c.t))
+    c.beat('6', 'The call', b10, 'Out on the open grass, the camera ahead of her; then '
+           'her lid, the hatch open, the aerial up. "Hey, boss, are you there?" "Yes, what is it?" "I\'ve given them the '
+           'presentation. All we can do is hope they trust us now." "OK, well done, Maddie."',
+           [lines[11], lines[12], lines[13], lines[14]])
+
+    # 7 · the card
+    b13 = c.t
+    c.shot(card('The next day.', 2.5), 2.5, '7', V / 'card-the-next-day.mp4')
+    c.beat('7', 'The next day', b13, 'Black. "The next day." Then scene C: Maddie on the step.')
+
+    total = c.t
+    for s_, e in inside:
+        c.sound('sfx-room', SFX / 'fs189231-crowd-shuffling.mp3', s_, 'bunker room tone', gain=-26, d=e - s_, fade=0.2)
+    for s_, e in outside:
+        c.sound('sfx-wind', wind, s_, "wind on the downs (from scene A's wind stem)", gain=-4, d=e - s_, fade=0.3)
+    for ln in lines.values():
+        parts = ln.pop('_parts', [])
+        if parts:
+            ln['t'] = round(parts[0][0], 3)
+            ln['dur'] = round(parts[-1][0] + parts[-1][1] - parts[0][0], 3)
+    c.flags.append('Lip-sync: the old lady\'s one line on screen is a Flow talking clip lined up by scripts/lipsync/flow-align.py '
+                   '(every word within 0.13 s).')
+    render(c, total, OUT10, 'gpom-3-B-bridge (rough, round 13)', 13)
+    e = json.loads((OUT10 / 'edl.json').read_text())
+    e.update(heading='GPOM · the bridge: Maddie at the door (draft 1D, round 13)',
+             intro="Your round 13 notes: the boom starts on the crowd shot's last frame (nobody turns round), 'Look…' on the "
+                   "full outside shot (no zoomed crop), no roll-away past the wreck, and the field shot half as long. Note anything.")
+    (OUT10 / 'edl.json').write_text(json.dumps(e, indent=1, ensure_ascii=False) + '\n')
+
+
 if __name__ == '__main__':
     rnd = sys.argv[sys.argv.index('--round') + 1] if '--round' in sys.argv else '1'
     if rnd in ('4', '5', '6', '7', '8'):
         ROUND3, OUT3 = int(rnd), M / f'cut3/B-bridge-r{rnd}'
-    {'1': main, '2': main2, '3': main3, '4': main3, '5': main3, '6': main3, '7': main3, '8': main3}[rnd]()
+    if rnd == '9':
+        OUT3 = M / 'cut3/B-bridge-r9'
+    {'13': main13, '12': main12, '11': main11, '10': main10, '9': main9, '1': main, '2': main2, '3': main3, '4': main3, '5': main3, '6': main3, '7': main3, '8': main3}[rnd]()

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r11/END3-b.jpg",
+ "made": "2026-11-11T16:06:01.997Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Looking down from high on the far hillside across the whole valley of the downs, the place in the first image seen from a long way off: the bunker mound with its plain shut green doors in the upper left; the smoking kill-bot wreck as a black shape on the grass to the right; and the tiny grey robot from the second image on a faint wheel track heading away from the bunker down the slope, keeping to the left of the wreck, her amber beacon a pinprick of warm light and her thin hooped aerial up, as in the third image. Lines of old field boundaries, wind on the grass, a heavy grey sky. Shot like a 1980s BBC drama on 16mm stock, washed-out colour, gentle contrast, thick grain. Widescreen, no lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r11/WRK1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r11/WRK1-a.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r11/maddie.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r11/antenna.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "3af8d9e9-1495-45b8-9c06-66e1b11c28d0"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br42b-boom-n3-R13-N3-last.mp4",
+ "made": "2026-11-11T19:08:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. [00:00-00:01] a deep muffled boom shakes the brick tunnel; the cream loudspeaker horn on the wall jolts off its bracket and drops, ending up hanging mouth-down by its cable. [00:01-00:05] the horn swings a little on its cable and comes to rest hanging down, and it stays hanging there; dust and grit sift down from the ceiling and the bulb flickers. The people flinch, duck, and stare up at the hanging horn, still facing the camera exactly as they were; nobody turns round. One continuous shot, no cuts. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R13-N3-last.jpg",
+ "why": "Kai r13 at694: the extend trick, the boom starts on the last frame of cut2-N3 so the crowd keeps facing the camera; the horn must stay hanging",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/R13-N3-last.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br42b-boom-n3",
+  "frame": 42,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 5,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T19:06:58.916Z"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9b/AWAY1-b.jpg",
+ "made": "2026-11-11T13:45:11.447Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only two things. A handful of broken bricks and chunks of concrete lie on the grass at the base of the doors, with a pale skin of settled dust, as if something shook loose in a blast underground. And the grey delivery robot has turned her back on the bunker and is trundling off down the slope towards the lower right corner, amber beacon lit, her tattered faded bunting trailing. The green doors stay shut and the concrete above them is bare. Leave everything else untouched: the hill, the dull grey sky, the faded grainy 16mm look and the framing.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "3cc68b45-2b51-45b3-aa18-9144922b5446"
+}

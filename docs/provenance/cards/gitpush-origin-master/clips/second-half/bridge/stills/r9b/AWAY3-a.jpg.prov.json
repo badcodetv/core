@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9b/AWAY3-a.jpg",
+ "made": "2026-11-11T13:47:00.094Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A very wide high view over the empty chalk downs. Up on the left, small in the hillside, the overgrown concrete entrance from the first image with its shut green doors. On the long grassy slope to the right, the little grey robot from the second image is a small shape heading away from the bunker and downhill, her amber beacon the only spot of warm colour, a scrap of bunting just visible. Far off on the open grass a burnt-out tracked machine with a sensor turret lies as a blackened wreck, a thin grey thread of smoke climbing into the low cloud. Lots of grey sky; wind flattening the grass. Shot like a 1980s BBC drama on 16mm stock, washed-out colour, gentle contrast, thick grain. Widescreen, no lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/maddie.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cf703c66-1baf-4f89-9660-2e978a848f08"
+}

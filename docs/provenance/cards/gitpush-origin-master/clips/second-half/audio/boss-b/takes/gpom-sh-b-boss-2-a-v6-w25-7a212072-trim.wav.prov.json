@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-2-a-v6-w25-7a212072-trim.wav",
+ "made": "2026-11-11T18:39:23+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "numpy",
+ "tool": "trim head/tail (10 ms RMS frames, speech = above peak-45 dB), tail after the words dropped",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-2-a-v6-w25-7a212072.wav",
+ "why": "Scene B boss line 2, natural pause kept",
+ "source_id": "7a212072-9464-4f22-94c2-a8405dbb4180",
+ "settings": {
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md"
+ }
+}

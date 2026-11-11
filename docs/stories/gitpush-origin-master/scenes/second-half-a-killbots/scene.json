@@ -389,7 +389,7 @@
       "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical",
       "master": "inserted into '00 RENDER story' at 150.917 with A r19 rippled out; B-E moved +2.25 s; film 10:39.7",
       "check": {
-        "at": "2026-11-11T11:41",
+        "at": "2026-11-11T19:36",
         "state": "in sync",
         "why": ""
       }

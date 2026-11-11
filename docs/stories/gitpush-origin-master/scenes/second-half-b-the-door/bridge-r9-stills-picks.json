@@ -1,0 +1,618 @@
+{
+ "title": "Bridge Round 9 Stills",
+ "eyebrow": "GPOM · the bridge · script draft 1D",
+ "heading": "Bridge round 12 stills: Maddie on the open grass, the aerial coming out",
+ "intro": "Round 5, from your timeline round 12 notes (at1559, at1838, at1892): we've left the bunker; Maddie rolls along a plain field, the camera in front of her as in the kill-bot street shot, and the aerial comes out the same way as in scene A. Pick one; no video until you do. Earlier rounds folded below.",
+ "sections": [
+  {
+   "h": "Round 5 (timeline round 12 notes)",
+   "lede": "No bunker, no wreck, no town: open grass, grey overcast.",
+   "groups": [
+    {
+     "slot": "field-r12",
+     "round": 5,
+     "title": "Maddie in the field (she calls the boss here)",
+     "line": "The clip will track in front of her as she rolls, like scene A's street run, then her hatch opens and the aerial rises like scene A's call shot. Two references are shown first.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ref-street",
+       "src": "r12/ref-street.jpg",
+       "label": "reference: scene A's street run (camera in front of her)",
+       "warn": ""
+      },
+      {
+       "id": "ref-hatch",
+       "src": "r12/ref-hatch.jpg",
+       "label": "reference: scene A's call shot (the hatch and aerial)",
+       "warn": ""
+      },
+      {
+       "id": "FIELD1-a",
+       "src": "r12/FIELD1-a.jpg",
+       "label": "FIELD1-a: the street run's exact framing, the street swapped for open grass; very wide sky",
+       "warn": ""
+      },
+      {
+       "id": "FIELD1-b",
+       "src": "r12/FIELD1-b.jpg",
+       "label": "FIELD1-b: same, a touch closer, a faint track behind her",
+       "warn": ""
+      },
+      {
+       "id": "FIELD2-a",
+       "src": "r12/FIELD2-a.jpg",
+       "label": "FIELD2-a: the call shot's exact framing (hatch open, aerial up), downs behind instead of the street",
+       "warn": ""
+      },
+      {
+       "id": "FIELD2-b",
+       "src": "r12/FIELD2-b.jpg",
+       "label": "FIELD2-b: same, flatter downs behind",
+       "warn": ""
+      },
+      {
+       "id": "FIELD3-a",
+       "src": "r12/FIELD3-a.jpg",
+       "label": "FIELD3-a: new: low head-on in the field, hatch just flipped open",
+       "warn": "The hatch lid looks like it's floating above her"
+      },
+      {
+       "id": "FIELD3-b",
+       "src": "r12/FIELD3-b.jpg",
+       "label": "FIELD3-b: new: low head-on, hatch lid up, a worn track",
+       "warn": ""
+      },
+      {
+       "id": "FIELD4-a",
+       "src": "r12/FIELD4-a.jpg",
+       "label": "FIELD4-a: new: low three-quarter, the aerial rising out of the hatch, long grass",
+       "warn": ""
+      },
+      {
+       "id": "FIELD4-b",
+       "src": "r12/FIELD4-b.jpg",
+       "label": "FIELD4-b: same idea, a little further back",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 4 (timeline round 11 notes)",
+   "lede": "Kai: 'an extra way much wider shot before we switch to the next day'; the wreck on Maddie's right; her aerial comes out outside the bunker.",
+   "groups": [
+    {
+     "slot": "end-wide-r11",
+     "round": 4,
+     "title": "The new ending wide: Maddie leaves past the wreck",
+     "line": "A much wider shot before 'the next day': the bunker, the smoking kill-bot wreck on Maddie's RIGHT (as through the periscope), Maddie small, trundling away down the hill. Her aerial pops up early in the clip (it's too small to read in most of these stills; the video adds it).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "END1-a",
+       "src": "r11/END1-a.jpg",
+       "label": "END1-a: much wider: huge grey sky, bunker far up left, Maddie and the wreck small on the slope",
+       "warn": ""
+      },
+      {
+       "id": "END1-b",
+       "src": "r11/END1-b.jpg",
+       "label": "END1-b: much wider, a little closer: bunker up left, Maddie just left of the smoking wreck",
+       "warn": ""
+      },
+      {
+       "id": "END2-a",
+       "src": "r11/END2-a.jpg",
+       "label": "END2-a: wide at knee height: the wreck big on the right, Maddie beyond it on its left, bunker behind",
+       "warn": "Not much wider than WRK1-a"
+      },
+      {
+       "id": "END2-b",
+       "src": "r11/END2-b.jpg",
+       "label": "END2-b: same idea, Maddie a little further on",
+       "warn": "Not much wider than WRK1-a"
+      },
+      {
+       "id": "END3-a",
+       "src": "r11/END3-a.jpg",
+       "label": "END3-a: from high on the far hillside: walls and hedges, bunker up left, wreck right, Maddie lower left heading away",
+       "warn": ""
+      },
+      {
+       "id": "END3-b",
+       "src": "r11/END3-b.jpg",
+       "label": "END3-b: from the far hillside: the whole valley, Maddie below and left of the wreck",
+       "warn": ""
+      },
+      {
+       "id": "END4-a",
+       "src": "r11/END4-a.jpg",
+       "label": "END4-a: low, side-on: Maddie near the door, the wreck's hulk close on the right",
+       "warn": "Tighter, not wider; Maddie by the door"
+      },
+      {
+       "id": "END4-b",
+       "src": "r11/END4-b.jpg",
+       "label": "END4-b: same, Maddie smaller",
+       "warn": "Tighter, not wider"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 3 (timeline round 10 notes)",
+   "lede": "Two stills. The third (Maddie at the door with her beacon spinning) starts from the door plate already in the film, so it needs no new still.",
+   "groups": [
+    {
+     "slot": "boom-notv-r10",
+     "round": 3,
+     "title": "Boom room: the TV taken out",
+     "line": "Kai: \"I don't think we need the TV... it's come out of nowhere.\" The first frame of the boom clip with the TV and its table painted out; nothing else changed. It becomes the start frame for the boom (the horn falls and hangs).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "r10/now-boom.jpg",
+       "label": "for reference: the boom clip's first frame now (TV on the right)",
+       "warn": ""
+      },
+      {
+       "id": "BOOM-notv-a",
+       "src": "r10/BOOM-notv-a.jpg",
+       "label": "BOOM-notv-a: TV and table gone, the wall continues",
+       "warn": ""
+      },
+      {
+       "id": "BOOM-notv-b",
+       "src": "r10/BOOM-notv-b.jpg",
+       "label": "BOOM-notv-b: TV and table gone, the wall continues",
+       "warn": ""
+      },
+      {
+       "id": "BOOM-notv-c",
+       "src": "r10/BOOM-notv-c.jpg",
+       "label": "BOOM-notv-c: TV and table gone, the wall continues",
+       "warn": ""
+      },
+      {
+       "id": "BOOM-notv-d",
+       "src": "r10/BOOM-notv-d.jpg",
+       "label": "BOOM-notv-d: TV and table gone, the wall continues",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rollaway-wreck-r10",
+     "round": 3,
+     "title": "Roll-away: the wreck in front, Maddie behind it",
+     "line": "As the periscope shows it: the smoking kill-bot wreck close on the right, Maddie beyond it, just away from the door and rolling down the hill. No horn outside.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "r10/now-AWAY3-a.jpg",
+       "label": "for reference: AWAY3-a, the roll-away in the cut now",
+       "warn": ""
+      },
+      {
+       "id": "WRK1-a",
+       "src": "r10/WRK1-a.jpg",
+       "label": "WRK1-a: wide: wreck big front-right, split open with a crow, Maddie just behind it near the door",
+       "warn": ""
+      },
+      {
+       "id": "WRK1-b",
+       "src": "r10/WRK1-b.jpg",
+       "label": "WRK1-b: same idea, wreck turret up, Maddie between the wreck and the door",
+       "warn": ""
+      },
+      {
+       "id": "WRK2-a",
+       "src": "r10/WRK2-a.jpg",
+       "label": "WRK2-a: low behind the wreck's flank: its tracks fill the right, Maddie coming down the slope",
+       "warn": "The wreck has a gun barrel: reads as a tank more than the kill bot"
+      },
+      {
+       "id": "WRK2-b",
+       "src": "r10/WRK2-b.jpg",
+       "label": "WRK2-b: same, tighter: the wreck huge on the right, Maddie small past it",
+       "warn": "Gun barrel, tank-like"
+      },
+      {
+       "id": "WRK3-a",
+       "src": "r10/WRK3-a.jpg",
+       "label": "WRK3-a: long lens from down the hill: wreck smoking hard on the right, Maddie behind on the left, bunker above",
+       "warn": "Gun barrel, tank-like"
+      },
+      {
+       "id": "WRK3-b",
+       "src": "r10/WRK3-b.jpg",
+       "label": "WRK3-b: same idea, Maddie further back, black smoke column",
+       "warn": "Gun barrel, tank-like"
+      },
+      {
+       "id": "WRK4-a",
+       "src": "r10/WRK4-a.jpg",
+       "label": "WRK4-a: high above the slope, on her tyre trail: Maddie closest to us, the wreck beyond on the right, no bunker in view",
+       "warn": "Maddie is in FRONT of the wreck here, not behind"
+      },
+      {
+       "id": "WRK4-b",
+       "src": "r10/WRK4-b.jpg",
+       "label": "WRK4-b: high view down the slope: door at the far left, Maddie beside the smoking wreck",
+       "warn": "Wreck is level with Maddie, not in front"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 2: no horn outside",
+   "lede": "Roll-up (silent, top of the scene) and roll-away (after the boom, she radios the boss). Outside, the boom leaves only a few fallen bricks and dust by the door.",
+   "groups": [
+    {
+     "slot": "rollup-r9b",
+     "round": 2,
+     "title": "Roll-up: Maddie arrives at the door",
+     "line": "[Silent. Maddie rolls up to the bunker door and stops.]",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "r9/now-S6-c.jpg",
+       "label": "for reference: the door plate in the film now",
+       "warn": ""
+      },
+      {
+       "id": "UP1-a",
+       "src": "r9b/UP1-a.jpg",
+       "label": "UP1-a: the film's own wide; Maddie further back on the left, on the tyre track, heading for the door",
+       "warn": ""
+      },
+      {
+       "id": "UP1-b",
+       "src": "r9b/UP1-b.jpg",
+       "label": "UP1-b: same, she is further up the track, nearer the door",
+       "warn": ""
+      },
+      {
+       "id": "UP2-a",
+       "src": "r9b/UP2-a.jpg",
+       "label": "UP2-a: low behind her, her back big in the foreground, the door ahead",
+       "warn": ""
+      },
+      {
+       "id": "UP2-b",
+       "src": "r9b/UP2-b.jpg",
+       "label": "UP2-b: same idea, a touch closer to the door",
+       "warn": ""
+      },
+      {
+       "id": "UP3-a",
+       "src": "r9b/UP3-a.jpg",
+       "label": "UP3-a: from on top of the bunker past an iron rail, looking down as she comes up the rut",
+       "warn": "The doors read as OPEN here; would need fixing"
+      },
+      {
+       "id": "UP3-b",
+       "src": "r9b/UP3-b.jpg",
+       "label": "UP3-b: same idea, wider, the downs behind",
+       "warn": "The doors read as OPEN here; would need fixing"
+      },
+      {
+       "id": "UP4-a",
+       "src": "r9b/UP4-a.jpg",
+       "label": "UP4-a: long lens from down the hill: bunker small in the down, Maddie on the track, seed heads in front",
+       "warn": ""
+      },
+      {
+       "id": "UP4-b",
+       "src": "r9b/UP4-b.jpg",
+       "label": "UP4-b: same idea, Maddie closer to camera, long grass framing",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rollaway-r9b",
+     "round": 2,
+     "title": "Roll-away: Maddie leaves the bunker",
+     "line": "\"Hey, boss. I've given them the presentation. We can only hope they trust us.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "AWAY1-a",
+       "src": "r9b/AWAY1-a.jpg",
+       "label": "AWAY1-a: the film's own wide: a few fallen bricks by the door, Maddie turned away heading down to the right",
+       "warn": ""
+      },
+      {
+       "id": "AWAY1-b",
+       "src": "r9b/AWAY1-b.jpg",
+       "label": "AWAY1-b: same, with dust still settling by the door",
+       "warn": ""
+      },
+      {
+       "id": "AWAY2-a",
+       "src": "r9b/AWAY2-a.jpg",
+       "label": "AWAY2-a: at her wheel height, she comes towards us; the door behind, dust in the air, a few bricks",
+       "warn": "Heavy dust/smoke at the door"
+      },
+      {
+       "id": "AWAY2-b",
+       "src": "r9b/AWAY2-b.jpg",
+       "label": "AWAY2-b: same, closer",
+       "warn": "Heavy dust/smoke at the door"
+      },
+      {
+       "id": "AWAY3-a",
+       "src": "r9b/AWAY3-a.jpg",
+       "label": "AWAY3-a: very wide over the downs: bunker small on the left, the kill bot wreck smoking far off, Maddie heading away",
+       "warn": ""
+      },
+      {
+       "id": "AWAY3-b",
+       "src": "r9b/AWAY3-b.jpg",
+       "label": "AWAY3-b: same idea, the wreck nearer, Maddie small beyond it",
+       "warn": ""
+      },
+      {
+       "id": "AWAY4-a",
+       "src": "r9b/AWAY4-a.jpg",
+       "label": "AWAY4-a: side on at her height, she rolls left to right away from the door; bricks on the grass",
+       "warn": ""
+      },
+      {
+       "id": "AWAY4-b",
+       "src": "r9b/AWAY4-b.jpg",
+       "label": "AWAY4-b: same idea, closer to the door",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Lip-sync clips (all four human lines)",
+   "lede": "New Omni 1.2 clips from the plates already approved (LADY0, LADY6, Derek at the periscope), with Kai's picked voices placed on the mouths. Omni read three of the four lines about 1.4x faster than the voices, so two of them only roughly fit. The fix that doesn't re-voice anything is LatentSync, which redraws the mouth to the voice on our own GPU: the inputs are ready, and it needs one command from you.",
+   "groups": [
+    {
+     "slot": "lip-br21",
+     "round": 2,
+     "title": "Old lady: \"You mean... killing everybody.\"",
+     "line": "FITS. Both phrases land on her mouth: 'You mean' at x1.00, 'killing everybody' slowed to x0.85 to fill her mouth. Her mouth moves only a little; it is a quiet read.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "fit",
+       "src": "lips/shb-br21-lady3-LADY0-fit.mp4",
+       "label": "new clip, muted, with the picked voice fitted (sound on)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "lip-br22",
+     "round": 2,
+     "title": "Old lady: \"Are you literally joking?\"",
+     "line": "Rough fit. She shouts it in 1.5 s; the voice takes 2.3 s. Sped up to x1.2, it still runs 0.3 s after her mouth closes, and at that speed 'joking' starts to blur. Best fixed by redrawing the mouth (see below).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "fit",
+       "src": "lips/shb-br22-lady0b-LADY0-fit.mp4",
+       "label": "new clip, muted, with the picked voice fitted (sound on)",
+       "warn": "Voice runs past the mouth; 'joking' blurs at x1.2"
+      }
+     ]
+    },
+    {
+     "slot": "lip-br23",
+     "round": 2,
+     "title": "Old lady: \"Derek, go and have a look what that was.\"",
+     "line": "Close. She turns away first, then turns back and talks: 'Derek' at x1.30, the rest at x1.00 on her mouth (1.55 to 3.1 s). The horn stays hanging behind her.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "fit",
+       "src": "lips/shb-br23-lady1d-LADY6-fit.mp4",
+       "label": "new clip, muted, with the picked voice fitted (sound on)",
+       "warn": "'Derek,' is sped up x1.30"
+      }
+     ]
+    },
+    {
+     "slot": "lip-br24",
+     "round": 2,
+     "title": "Derek: \"They've blown up their own kill bot!\"",
+     "line": "Rough fit. He pulls off the periscope wide-eyed and says it half-laughing, but in 1.6 s; the voice takes 2.3 s. At x1.2 it runs 0.3 s past his mouth. He turns to camera right, not towards Sandra. Best fixed by redrawing the mouth.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "fit",
+       "src": "lips/shb-br24-derek2-BP2-a-a-fit.mp4",
+       "label": "new clip, muted, with the picked voice fitted (sound on)",
+       "warn": "Voice runs past the mouth; turns away from Sandra"
+      }
+     ]
+    },
+    {
+     "slot": "lip-strips",
+     "round": 2,
+     "title": "Frame strips (4 per second, then the mouth close-ups)",
+     "line": "For checking the four clips: no redraw, no extra people. Pick nothing here; note anything off.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "br21",
+       "src": "lips/shb-br21-lady3-LADY0-sheet.jpg",
+       "label": "br21: whole frame",
+       "warn": ""
+      },
+      {
+       "id": "br22",
+       "src": "lips/shb-br22-lady0b-LADY0-sheet.jpg",
+       "label": "br22: whole frame",
+       "warn": ""
+      },
+      {
+       "id": "br23",
+       "src": "lips/shb-br23-lady1d-LADY6-sheet.jpg",
+       "label": "br23: whole frame",
+       "warn": ""
+      },
+      {
+       "id": "br24",
+       "src": "lips/shb-br24-derek2-BP2-a-a-sheet.jpg",
+       "label": "br24: whole frame",
+       "warn": ""
+      },
+      {
+       "id": "br21-m",
+       "src": "lips/br21-mouth.jpg",
+       "label": "br21: mouth, 12 a second",
+       "warn": ""
+      },
+      {
+       "id": "br22-m",
+       "src": "lips/br22-mouth.jpg",
+       "label": "br22: mouth, 12 a second",
+       "warn": ""
+      },
+      {
+       "id": "br23-m",
+       "src": "lips/br23-mouth.jpg",
+       "label": "br23: mouth, 12 a second",
+       "warn": ""
+      },
+      {
+       "id": "br24-m",
+       "src": "lips/br24-mouth.jpg",
+       "label": "br24: mouth, 12 a second",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Roll-up (silent, top of the scene)",
+   "lede": "Maddie comes up to the shut door and stops. The bunker sits in grass on the downs, not on a street, so she comes up a muddy track.",
+   "groups": [
+    {
+     "slot": "rollup-r9",
+     "title": "Roll-up: Maddie arrives at the door (round 1, horn outside: retired)",
+     "line": "[Silent. Maddie rolls up to the bunker door and stops. The steel door, the horn above it.]",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "r9/now-S6-c.jpg",
+       "label": "for reference: the door plate in the film now (no horn outside)",
+       "warn": ""
+      },
+      {
+       "id": "UP1-b",
+       "src": "r9/UP1-b.jpg",
+       "label": "UP1-b: the film's own wide, horn added above the door, a tyre track she came in on. Matches best; animate her rolling in (as V5 did, shot backwards)",
+       "warn": "She is already at the door in the still"
+      },
+      {
+       "id": "UP2-a",
+       "src": "r9/UP2-a.jpg",
+       "label": "UP2-a: low behind her, her back big in the foreground, the door ahead with the horn",
+       "warn": ""
+      },
+      {
+       "id": "UP2-b",
+       "src": "r9/UP2-b.jpg",
+       "label": "UP2-b: same idea, a touch closer to the door",
+       "warn": ""
+      },
+      {
+       "id": "UP3-b",
+       "src": "r9/UP3-b.jpg",
+       "label": "UP3-b: from on top of the bunker, past the back of the horn, looking down as she comes up the track",
+       "warn": ""
+      },
+      {
+       "id": "UP4-a",
+       "src": "r9/UP4-a.jpg",
+       "label": "UP4-a: long lens from down the hill: the bunker small in the down, Maddie tiny on the track, seed heads in front",
+       "warn": "Very small Maddie"
+      },
+      {
+       "id": "UP4-b",
+       "src": "r9/UP4-b.jpg",
+       "label": "UP4-b: same idea, closer: Maddie on the track below the door, long grass in front",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  },
+  {
+   "h": "Roll-away (after the boom; she radios the boss)",
+   "lede": "\"Hey, boss. I've given them the presentation. We can only hope they trust us.\" The horn hangs off its bracket, bricks and dust by the door.",
+   "groups": [
+    {
+     "slot": "rollaway-r9",
+     "title": "Roll-away: Maddie leaves the bunker (round 1, horn outside: retired)",
+     "line": "[Outside. Maddie turns and rolls away from the bunker.]",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "AWAY1-a",
+       "src": "r9/AWAY1-a.jpg",
+       "label": "AWAY1-a: the film's own wide: horn hanging, rubble and dust, Maddie turned away heading down the slope to the right",
+       "warn": ""
+      },
+      {
+       "id": "AWAY1-b",
+       "src": "r9/AWAY1-b.jpg",
+       "label": "AWAY1-b: same, she is further right, closer to leaving frame",
+       "warn": ""
+      },
+      {
+       "id": "AWAY2-a",
+       "src": "r9/AWAY2-a.jpg",
+       "label": "AWAY2-a: at her wheel height, she comes towards us; the door behind, horn dangling, dust still in the air",
+       "warn": "A lot of dust"
+      },
+      {
+       "id": "AWAY2-b",
+       "src": "r9/AWAY2-b.jpg",
+       "label": "AWAY2-b: same, closer; more smoke at the door",
+       "warn": "A lot of dust"
+      },
+      {
+       "id": "AWAY3-b",
+       "src": "r9/AWAY3-b.jpg",
+       "label": "AWAY3-b: very wide over the downs: bunker small on the left, the kill bot wreck smoking far off, Maddie small heading away",
+       "warn": "The hanging horn is too small to see here; the wreck is generic, not the kill bot's exact shape"
+      },
+      {
+       "id": "AWAY4-a",
+       "src": "r9/AWAY4-a.jpg",
+       "label": "AWAY4-a: side on at her height, she rolls left to right away from the door; hanging horn and bricks behind her",
+       "warn": ""
+      },
+      {
+       "id": "AWAY4-b",
+       "src": "r9/AWAY4-b.jpg",
+       "label": "AWAY4-b: same idea, bunting more visible",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ],
+ "round": 5
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/04-bot-p0-b-fx.wav",
+ "made": "2026-11-11T12:22:49+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/04-bot-p0-b.wav",
+ "why": "tannoy copy of Kai's pick",
+ "settings": {
+  "fx": "tannoy"
+ }
+}

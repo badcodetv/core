@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/gpom-sh-b-boss-2-a-v6-w10-8820f774-tight.wav",
+ "made": "2026-11-11T18:39:23+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "numpy",
+ "tool": "trim + close the pause after 'OK,' to 0.35 s (10 ms RMS frames, speech = above peak-45 dB), 10 ms fades, 0.1 s head/tail",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-b/takes/gpom-sh-b-boss-2-a-v6-w10-8820f774.wav",
+ "why": "Scene B boss line 2, tight cut; the ~480 Hz tone and noises after the words dropped",
+ "source_id": "8820f774-5bb5-40a9-a02c-805b7248c503",
+ "settings": {
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md"
+ }
+}

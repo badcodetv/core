@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9/UP1-b.jpg",
+ "made": "2026-11-11T12:26:49.491Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first provided image, change only three things. Mount a battered cream-painted loudspeaker horn, the same kind as in the second image, on a short iron bracket on the concrete just above the green steel doors, pointing out over the grass. Move the small grey delivery robot with its amber beacon and torn faded bunting so it is further away, just entering from the left edge of the frame on a worn muddy tyre track in the grass, heading towards the doors, small in the frame. The grass in front of the doors is empty. Keep everything else exactly the same: the bunker, the hillside, the overcast light, the faded 16mm film grain and colour, and the framing.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/horn.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c8fcb9b4-9765-49e8-8b42-c0306c6b4bcf"
+}

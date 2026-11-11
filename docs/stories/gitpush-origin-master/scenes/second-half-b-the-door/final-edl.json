@@ -1,204 +1,175 @@
 {
- "sequence": "gpom-3-B-bridge (rough, round 8)",
+ "sequence": "gpom-3-B-bridge (rough, round 13)",
  "title": "Bridge Timeline",
- "round": 8,
- "heading": "GPOM · the bridge: Maddie at the door (draft 1G)",
- "intro": "The bridge between the kill bots standing down and the humans following Maddie out. Draft 1G, voiced; the five new clips plus stand-ins from the old door scene. Play it, click any beat, clip, line or sound and leave a note in its yellow slip. Tell Claude when you are done.",
+ "round": 13,
+ "heading": "GPOM · the bridge: Maddie at the door (draft 1D, round 13)",
+ "intro": "Your round 13 notes: the boom starts on the crowd shot's last frame (nobody turns round), 'Look…' on the full outside shot (no zoomed crop), no roll-away past the wreck, and the field shot half as long. Note anything.",
  "fps": 24,
  "sample_rate": 48000,
- "total": 87.652,
+ "total": 70.967,
  "beats": [
   {
    "id": "1",
-   "title": "The tannoy",
+   "title": "The roll-up",
    "start": 0.0,
-   "see": "Inside: the hundred look up at the horn as her voice cuts in, coy and sorry. Doors shut.",
+   "see": "Silent. Maddie trundles up the track to the bunker door and stops.",
+   "act": "The bridge",
+   "lines": [],
+   "dur": 4.4
+  },
+  {
+   "id": "2",
+   "title": "The doorstep",
+   "start": 4.4,
+   "see": "Her voice cuts in over the horn inside: sorry about the intrusion, and everything else. \"You mean... killing everybody.\" Outside: she wants to fix it. Inside, over the tannoy: \"I'll tell you what. I've got an idea. Check this out.\"",
    "act": "The bridge",
    "lines": [
-    {
-     "i": 0,
-     "who": "bot",
-     "name": "Maddie",
-     "text": "Hello there, sorry about the intrusion.",
-     "by": "kai",
-     "t": 0.45,
-     "dur": 3.88
-    },
     {
      "i": 1,
      "who": "bot",
      "name": "Maddie",
-     "text": "...And everything else.",
+     "text": "Hello there, sorry about the intrusion.",
      "by": "kai",
-     "t": 4.45,
-     "dur": 2.92
-    }
-   ],
-   "dur": 7.77
-  },
-  {
-   "id": "2",
-   "title": "Through the door",
-   "start": 7.77,
-   "see": "Outside: Maddie at the shut green doors. Inside: the old lady shouts; outside we hear the rest through the steel. Maddie owns it, and asks how to win their trust.",
-   "act": "The bridge",
-   "lines": [
+     "t": 4.85,
+     "dur": 3.88
+    },
     {
      "i": 2,
      "who": "bot",
      "name": "Maddie",
-     "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+     "text": "...And everything else.",
      "by": "kai",
-     "t": 8.07,
-     "dur": 9.2
+     "t": 8.85,
+     "dur": 2.92
     },
     {
      "i": 3,
      "who": "lady",
      "name": "The old lady",
-     "text": "Are you literally joking?",
+     "text": "You mean... killing everybody.",
      "by": "kai",
-     "t": 17.57,
-     "dur": 2.96
+     "t": 12.49,
+     "dur": 2.965
     },
     {
      "i": 4,
-     "who": "lady",
-     "name": "The old lady",
-     "text": "You killed everybody!",
+     "who": "bot",
+     "name": "Maddie",
+     "text": "Yeah, we're really sorry about that. [pause] We do want to try and fix it.",
      "by": "kai",
-     "t": 20.88,
-     "dur": 2.6
+     "t": 16.087,
+     "dur": 6.44
     },
     {
      "i": 5,
      "who": "bot",
      "name": "Maddie",
-     "text": "Yeah. [pause] That's... that's fair.",
+     "text": "I'll tell you what. I've got an idea. Check this out.",
      "by": "kai",
-     "t": 23.98,
-     "dur": 4.61
-    },
-    {
-     "i": 6,
-     "who": "bot",
-     "name": "Maddie",
-     "text": "How can we win your trust?",
-     "by": "kai",
-     "t": 28.99,
-     "dur": 2.28
+     "t": 23.277,
+     "dur": 4.04
     }
    ],
-   "dur": 24.0
+   "dur": 23.217
   },
   {
    "id": "3",
-   "title": "The film",
-   "start": 31.77,
-   "see": "The TV stays off while she offers it, then comes on: scene A's own stand-down, the kill bot racing at THEIR door in red, the brake, NEW OBJECTIVE: SUSTAIN ORGANIC LIFE.",
+   "title": "The boom",
+   "start": 27.617,
+   "see": "A deep muffled boom; the horn falls and hangs; dust.",
+   "act": "The bridge",
+   "lines": [],
+   "dur": 2.8
+  },
+  {
+   "id": "4",
+   "title": "The periscope",
+   "start": 30.417,
+   "see": "Derek looks: the kill bot is a wreck. We stay on what he sees and hear him: \"They've blown up their own kill bot!\"",
    "act": "The bridge",
    "lines": [
     {
-     "i": 7,
-     "who": "bot",
-     "name": "Maddie",
-     "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it.",
+     "i": 8,
+     "who": "man",
+     "name": "Derek",
+     "text": "They've blown up their own kill bot!",
      "by": "kai",
-     "t": 32.07,
-     "dur": 11.12
-    },
+     "t": 33.617,
+     "dur": 3.0
+    }
+   ],
+   "dur": 6.8
+  },
+  {
+   "id": "5",
+   "title": "A video, and tomorrow",
+   "start": 37.217,
+   "see": "Outside, close on Maddie at the door, her beacon turning: \"Look. I understand why you wouldn't trust us. I'm going to leave you a video to watch. And I'll come back tomorrow.\"",
+   "act": "The bridge",
+   "lines": [
     {
      "i": 9,
      "who": "bot",
      "name": "Maddie",
-     "text": "Oh, and... [beat] thought you'd want to hear this bit for yourselves.",
-     "by": "claude",
-     "t": 48.19,
-     "dur": 4.86
+     "text": "Look. I understand why you wouldn't trust us. [beat] I'm going to leave you a video to watch. And I'll come back tomorrow.",
+     "by": "kai",
+     "t": 37.617,
+     "dur": 10.48
     }
    ],
-   "dur": 20.82
+   "dur": 11.48
   },
   {
-   "id": "4",
-   "title": "The boom",
-   "start": 52.59,
-   "see": "A deep muffled boom on the same frame; the horn drops on its bracket, the TV dies, dust pours. The old lady: \"Derek, go and have a look what that was.\"",
+   "id": "6",
+   "title": "The call",
+   "start": 48.697,
+   "see": "Out on the open grass, the camera ahead of her; then her lid, the hatch open, the aerial up. \"Hey, boss, are you there?\" \"Yes, what is it?\" \"I've given them the presentation. All we can do is hope they trust us now.\" \"OK, well done, Maddie.\"",
    "act": "The bridge",
    "lines": [
     {
      "i": 11,
-     "who": "lady",
-     "name": "The old lady",
-     "text": "Derek, go and have a look what that was.",
+     "who": "bot",
+     "name": "Maddie",
+     "text": "Hey, boss, are you there?",
      "by": "kai",
-     "t": 57.32,
-     "dur": 3.08
-    }
-   ],
-   "dur": 8.11
-  },
-  {
-   "id": "5",
-   "title": "The periscope",
-   "start": 60.7,
-   "see": "Derek checks: the kill bot is a wreck. \"They've blown up their own kill bot.\" Back inside, under the bent horn: \"Right. I'll come back tomorrow.\"",
-   "act": "The bridge",
-   "lines": [
+     "t": 53.297,
+     "dur": 2.44
+    },
+    {
+     "i": 12,
+     "who": "ai",
+     "name": "The boss",
+     "text": "Yes, what is it?",
+     "by": "kai",
+     "t": 56.237,
+     "dur": 2.17
+    },
     {
      "i": 13,
-     "who": "man",
-     "name": "Derek",
-     "text": "They've blown up their own kill bot.",
+     "who": "bot",
+     "name": "Maddie",
+     "text": "I've given them the presentation. All we can do is hope they trust us now.",
      "by": "kai",
-     "t": 63.2,
-     "dur": 2.72
+     "t": 58.807,
+     "dur": 5.48
     },
     {
      "i": 14,
-     "who": "bot",
-     "name": "Maddie",
-     "text": "Right. I'll come back tomorrow.",
+     "who": "ai",
+     "name": "The boss",
+     "text": "OK, well done, Maddie.",
      "by": "kai",
-     "t": 67.12,
-     "dur": 2.84
+     "t": 64.787,
+     "dur": 2.68
     }
    ],
-   "dur": 9.96
-  },
-  {
-   "id": "6",
-   "title": "The debate",
-   "start": 70.66,
-   "see": "Sandra: she'd take any way out, and grumpy Derek. The old lady: food; perhaps a vote. No vote shown.",
-   "act": "The bridge",
-   "lines": [
-    {
-     "i": 16,
-     "who": "woman",
-     "name": "Sandra",
-     "text": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
-     "by": "kai",
-     "t": 71.963,
-     "dur": 8.787
-    },
-    {
-     "i": 17,
-     "who": "lady",
-     "name": "The old lady",
-     "text": "Hmmm... [pause] Perhaps we should vote.",
-     "by": "kai",
-     "t": 81.044,
-     "dur": 3.508
-    }
-   ],
-   "dur": 14.492
+   "dur": 19.77
   },
   {
    "id": "7",
    "title": "The next day",
-   "start": 85.152,
-   "see": "Black. \"The next day.\" Silence. Then scene C: Maddie on the step.",
+   "start": 68.467,
+   "see": "Black. \"The next day.\" Then scene C: Maddie on the step.",
    "act": "The bridge",
    "lines": [],
    "dur": 2.5
@@ -206,156 +177,111 @@
  ],
  "video": [
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s01-N3.mp4",
-   "in": 0.0,
-   "dur": 7.77,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s01-rollup.mp4",
+   "in": 1.6,
+   "dur": 4.4,
    "start": 0.0,
    "beat": "1",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br25-rollup-R9-UP4-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s02-N3.mp4",
+   "in": 0.0,
+   "dur": 7.72,
+   "start": 4.4,
+   "beat": "2",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut2-N3.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s02-V5.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s03-lady-youmean.mp4",
+   "in": 0.08333333333333333,
+   "dur": 3.667,
+   "start": 12.12,
+   "beat": "2",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/flowsync-bridge11/br34b-in.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s04-V5.mp4",
    "in": 0.0,
-   "dur": 9.152,
-   "start": 7.77,
+   "dur": 7.09,
+   "start": 15.787,
    "beat": "2",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V5.mp4",
-   "looped": true
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s03-lady.mp4",
-   "in": 0.0,
-   "dur": 3.908,
-   "start": 16.922,
-   "beat": "2",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br13-lady0-LADY0.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s04-V5push.mp4",
-   "in": 0.0,
-   "dur": 4.46,
-   "start": 20.83,
-   "beat": "2",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/video/cut3-V5-wait-push-i0-d6.000.mp4",
-   "looped": false
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s05-N3.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s06-N3.mp4",
    "in": 1.5,
-   "dur": 6.48,
-   "start": 25.29,
+   "dur": 4.74,
+   "start": 22.877,
    "beat": "2",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut2-N3.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s06-room.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s08-boom.mp4",
    "in": 0.0,
-   "dur": 12.42,
-   "start": 31.77,
+   "dur": 2.8,
+   "start": 27.617,
    "beat": "3",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br2-2B-BP1-e-b.mp4",
-   "looped": true
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s07-film.mp4",
-   "in": 0.0,
-   "dur": 5.4,
-   "start": 44.19,
-   "beat": "3",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/video/hud-12.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br42b-boom-n3-R13-N3-last.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s08-room.mp4",
-   "in": 5.0,
-   "dur": 3.0,
-   "start": 49.59,
-   "beat": "3",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br2-2B-BP1-e-b.mp4",
-   "looped": false
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s09-boom.mp4",
-   "in": 0.0,
-   "dur": 4.46,
-   "start": 52.59,
-   "beat": "4",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br14-boom2-BR4-boomstart.mp4",
-   "looped": false
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s10-lady-derek.mp4",
-   "in": 0.0,
-   "dur": 3.65,
-   "start": 57.05,
-   "beat": "4",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br16-lady1c-LADY6.mp4",
-   "looped": false
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s11-derek.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s10-peri.mp4",
    "in": 0.0,
    "dur": 1.6,
-   "start": 60.7,
-   "beat": "5",
+   "start": 30.417,
+   "beat": "4",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br4-4A-BP2-a-a.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s12-view.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s11-view.mp4",
    "in": 0.0,
-   "dur": 4.22,
-   "start": 62.3,
-   "beat": "5",
+   "dur": 5.2,
+   "start": 32.017,
+   "beat": "4",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br5-5A-BP3-e-a.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s13-crowd.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s13-close.mp4",
    "in": 0.0,
-   "dur": 4.14,
-   "start": 66.52,
+   "dur": 11.48,
+   "start": 37.217,
    "beat": "5",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br20-crowd2-CROWD6.mp4",
-   "looped": true
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s14-sandra.mp4",
-   "in": 0.0,
-   "dur": 5.5,
-   "start": 70.66,
-   "beat": "6",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br18-sandra1c-SANDRA6.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br43-beacon12-R10-S6-c.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s15-sandra2.mp4",
-   "in": 0.0,
-   "dur": 4.7,
-   "start": 76.16,
-   "beat": "6",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br19-sandra2c-SANDRA7.mp4",
-   "looped": false
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/s16-lady.mp4",
-   "in": 0.45,
-   "dur": 4.292,
-   "start": 80.86,
-   "beat": "6",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br17-lady2c-LADY6-alt.mp4",
-   "looped": false
-  },
-  {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/card-the-next-day.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s15-track.mp4",
    "in": 0.0,
    "dur": 2.5,
-   "start": 85.152,
+   "start": 48.697,
+   "beat": "6",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br40-field-track-R12-FIELD1-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/s16-lid.mp4",
+   "in": 0.0,
+   "dur": 17.27,
+   "start": 51.197,
+   "beat": "6",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br41-field-aerial-R12-FIELD2-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/card-the-next-day.mp4",
+   "in": 0.0,
+   "dur": 2.5,
+   "start": 68.467,
    "beat": "7",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/card-the-next-day.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/video/card-the-next-day.mp4",
    "looped": false
   }
  ],
@@ -370,11 +296,11 @@
   },
   {
    "track": "A3",
-   "name": "vox-sandra"
+   "name": "vox-derek"
   },
   {
    "track": "A4",
-   "name": "vox-derek"
+   "name": "vox-boss"
   },
   {
    "track": "A5",
@@ -382,279 +308,283 @@
   },
   {
    "track": "A6",
-   "name": "sfx-tv"
-  },
-  {
-   "track": "A7",
-   "name": "sfx-hud"
-  },
-  {
-   "track": "A8",
-   "name": "sfx-killbot"
-  },
-  {
-   "track": "A9",
    "name": "sfx-boom"
   },
   {
-   "track": "A10",
+   "track": "A7",
+   "name": "sfx-maddie"
+  },
+  {
+   "track": "A8",
+   "name": "sfx-beacon"
+  },
+  {
+   "track": "A9",
    "name": "sfx-room"
   },
   {
-   "track": "A11",
+   "track": "A10",
    "name": "sfx-wind"
   }
  ],
  "events": [
   {
+   "stem": "sfx-maddie",
+   "t": 0.0,
+   "dur": 3.8,
+   "what": "her wheels on the track",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3"
+  },
+  {
    "stem": "sfx-tannoy",
-   "t": 0.05,
+   "t": 4.45,
    "dur": 0.6,
-   "what": "tannoy click on",
+   "what": "tannoy click on (she has hacked the horn)",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-tannoy-click.wav"
   },
   {
    "stem": "vox-maddie",
-   "t": 0.45,
+   "t": 4.85,
    "dur": 4.62,
-   "what": "line 0 (tannoy): Hello there, sorry about the intrusion.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/00-bot-c-fx.wav"
+   "what": "line 1 (tannoy): Hello there, sorry about the intrusion.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge10/00-bot-c-fx.wav"
   },
   {
    "stem": "vox-maddie",
-   "t": 4.45,
+   "t": 8.85,
    "dur": 3.66,
-   "what": "line 1 (tannoy): ...And everything else.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/aside-opts/02-catch-b-fx.wav"
-  },
-  {
-   "stem": "vox-maddie",
-   "t": 8.07,
-   "dur": 2.88,
-   "what": "line 2 p0: We didn't think there were any of you left.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/02-bot-p0-a.wav"
-  },
-  {
-   "stem": "vox-maddie",
-   "t": 11.55,
-   "dur": 5.72,
-   "what": "line 2 p1: But now we've found you... there might be a way we could fix this mess.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/02-bot-p1-b.wav"
+   "what": "line 2 (tannoy): ...And everything else.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge10/02-catch-b-fx.wav"
   },
   {
    "stem": "vox-lady",
-   "t": 17.57,
-   "dur": 2.96,
-   "what": "line 3: Are you literally joking?",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/03-lady-Vindemiatrix-b.wav"
-  },
-  {
-   "stem": "vox-lady",
-   "t": 20.88,
-   "dur": 2.635,
-   "what": "line 4 (through the door): You killed everybody!",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/04-lady-Vindemiatrix-c-fx.wav"
+   "t": 12.12,
+   "dur": 3.667,
+   "what": "line 3: You mean... killing everybody. (Flow talking clip, aligned)",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/split/br34b-voice.wav"
   },
   {
    "stem": "vox-maddie",
-   "t": 23.98,
-   "dur": 0.96,
-   "what": "line 5 p0: Yeah.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/05-bot-p0-a.wav"
+   "t": 16.087,
+   "dur": 3.0,
+   "what": "line 4 p0: Yeah, we're really sorry about that.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/04-bot-p0-b.wav"
   },
   {
    "stem": "vox-maddie",
-   "t": 25.59,
-   "dur": 3.74,
-   "what": "line 5 p1 (tannoy): That's... that's fair.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/05-bot-p1-c-fx.wav"
+   "t": 19.687,
+   "dur": 2.84,
+   "what": "line 4 p1: We do want to try and fix it.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/04-bot-p1-b.wav"
   },
   {
    "stem": "vox-maddie",
-   "t": 28.99,
-   "dur": 3.02,
-   "what": "line 6 (tannoy): How can we win your trust?",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/06-bot-a-fx.wav"
-  },
-  {
-   "stem": "vox-maddie",
-   "t": 32.07,
-   "dur": 6.86,
-   "what": "line 7 p0 (tannoy): Look. We really do understand this has gone the worst way for everybody.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/07-bot-p0-a-fx.wav"
-  },
-  {
-   "stem": "vox-maddie",
-   "t": 38.79,
-   "dur": 5.14,
-   "what": "line 7 p1 (tannoy): I'll leave you a film to watch. It's our best go at proving it.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/07-bot-p1-c-fx.wav"
-  },
-  {
-   "stem": "sfx-hud",
-   "t": 43.64,
-   "dur": 0.89,
-   "what": "kill mode tone",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav"
-  },
-  {
-   "stem": "sfx-hud",
-   "t": 46.79,
-   "dur": 0.07,
-   "what": "the flip to green",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-hud-blip.wav"
-  },
-  {
-   "stem": "sfx-tv",
-   "t": 43.59,
-   "dur": 6.0,
-   "what": "the film's own hiss",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav"
-  },
-  {
-   "stem": "sfx-killbot",
-   "t": 43.59,
-   "dur": 3.7,
-   "what": "the kill bot's tracks, on the TV",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3"
-  },
-  {
-   "stem": "vox-maddie",
-   "t": 48.19,
-   "dur": 2.38,
-   "what": "line 9 p0 (tannoy): Oh, and...",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/09-bot-p0-c-fx.wav"
-  },
-  {
-   "stem": "vox-maddie",
-   "t": 50.13,
-   "dur": 3.66,
-   "what": "line 9 p1 (tannoy): thought you'd want to hear this bit for yourselves.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/09-bot-p1-c-fx.wav"
+   "t": 23.277,
+   "dur": 4.78,
+   "what": "line 5 (tannoy): I'll tell you what. I've got an idea. Check this out.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge10/07-bot-b-fx.wav"
   },
   {
    "stem": "sfx-boom",
-   "t": 53.3,
+   "t": 27.867,
    "dur": 13.342,
    "what": "the boom, through the earth",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-muffled-boom-big.wav"
   },
   {
    "stem": "sfx-boom",
-   "t": 53.6,
+   "t": 28.167,
    "dur": 5.0,
    "what": "dust falling",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-dust-falling-12s.wav"
   },
   {
-   "stem": "sfx-tv",
-   "t": 52.59,
-   "dur": 0.81,
-   "what": "the film hiss, cut by the jolt",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav"
-  },
-  {
-   "stem": "vox-lady",
-   "t": 57.32,
-   "dur": 3.08,
-   "what": "line 11: Derek, go and have a look what that was.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/11-lady-Vindemiatrix-c.wav"
-  },
-  {
    "stem": "sfx-room",
-   "t": 62.3,
-   "dur": 4.6,
+   "t": 32.017,
+   "dur": 3.2,
    "what": "wind outside",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs221090-bunting-waving-flag.mp3"
   },
   {
    "stem": "vox-derek",
-   "t": 63.2,
-   "dur": 2.72,
-   "what": "line 13: They've blown up their own kill bot.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/13-man-c.wav"
+   "t": 33.617,
+   "dur": 3.0,
+   "what": "line 8: They've blown up their own kill bot!",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/11-man-b.wav"
   },
   {
    "stem": "vox-maddie",
-   "t": 67.12,
-   "dur": 3.58,
-   "what": "line 14 (tannoy): Right. I'll come back tomorrow.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/12-bot-c-fx.wav"
+   "t": 37.617,
+   "dur": 4.6,
+   "what": "line 9 p0: Look. I understand why you wouldn't trust us.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/12-bot-p0-a.wav"
   },
   {
-   "stem": "vox-sandra",
-   "t": 71.68,
-   "dur": 4.88,
-   "what": "line 16 (1/2): If there's a way to fix this, I'd love to take it.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/sandra-fit/16a-woman-c.wav"
+   "stem": "vox-maddie",
+   "t": 42.817,
+   "dur": 5.28,
+   "what": "line 9 p1: I'm going to leave you a video to watch. And I'll come back tomorrow.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge7/12-bot-p1-b.wav"
   },
   {
-   "stem": "vox-sandra",
-   "t": 77.36,
-   "dur": 3.39,
-   "what": "line 16 (3/3): It sucks living in this bunker with grumpy Derek.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/split/16-c.wav"
+   "stem": "sfx-maddie",
+   "t": 48.697,
+   "dur": 2.5,
+   "what": "her wheels, the field",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3"
   },
   {
-   "stem": "vox-lady",
-   "t": 81.044,
-   "dur": 1.56,
-   "what": "line 17 (1/2): Hmmm...",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/hmm/17-lady-hmm-b.wav"
+   "stem": "sfx-maddie",
+   "t": 51.217,
+   "dur": 1.1,
+   "what": "hatch",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav"
   },
   {
-   "stem": "vox-lady",
-   "t": 82.932,
-   "dur": 1.62,
-   "what": "line 17: Perhaps we should vote.",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/split/17-b.wav"
+   "stem": "sfx-maddie",
+   "t": 51.597,
+   "dur": 1.2,
+   "what": "antenna extends",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 52.647,
+   "dur": 0.2,
+   "what": "beep: line open",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 53.297,
+   "dur": 2.44,
+   "what": "line 11: Hey, boss, are you there?",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge9/14-bot-b.wav"
+  },
+  {
+   "stem": "vox-boss",
+   "t": 56.237,
+   "dur": 2.17,
+   "what": "line 12 (through her speaker): Yes, what is it?",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/split/boss-speaker.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 58.807,
+   "dur": 5.48,
+   "what": "line 13: I've given them the presentation. All we can do is hope they trust us now.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge10/13-bot-b.wav"
+  },
+  {
+   "stem": "vox-boss",
+   "t": 64.787,
+   "dur": 2.68,
+   "what": "line 14 (through her speaker): OK, well done, Maddie.",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/split/boss2-speaker.wav"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 56.337,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 57.237,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 58.137,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 64.887,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 65.787,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 66.687,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav"
   },
   {
    "stem": "sfx-room",
-   "t": 0.0,
-   "dur": 7.77,
+   "t": 4.4,
+   "dur": 11.387,
    "what": "bunker room tone",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3"
   },
   {
    "stem": "sfx-room",
-   "t": 16.922,
-   "dur": 3.908,
+   "t": 22.877,
+   "dur": 4.74,
    "what": "bunker room tone",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3"
   },
   {
    "stem": "sfx-room",
-   "t": 25.29,
-   "dur": 35.41,
+   "t": 27.617,
+   "dur": 2.8,
    "what": "bunker room tone",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3"
   },
   {
    "stem": "sfx-room",
-   "t": 66.52,
-   "dur": 18.632,
+   "t": 30.417,
+   "dur": 1.6,
    "what": "bunker room tone",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3"
   },
   {
    "stem": "sfx-wind",
-   "t": 7.77,
-   "dur": 9.152,
+   "t": 0.0,
+   "dur": 4.4,
    "what": "wind on the downs (from scene A's wind stem)",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav"
   },
   {
    "stem": "sfx-wind",
-   "t": 20.83,
-   "dur": 4.46,
+   "t": 15.787,
+   "dur": 7.09,
+   "what": "wind on the downs (from scene A's wind stem)",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav"
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 37.217,
+   "dur": 11.48,
+   "what": "wind on the downs (from scene A's wind stem)",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav"
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 48.697,
+   "dur": 19.77,
    "what": "wind on the downs (from scene A's wind stem)",
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav"
   }
  ],
- "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/mix.wav",
- "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/preview.mp4",
+ "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/mix.wav",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r13/preview.mp4",
  "flags": [
-  "Lip-sync read by eye off 12 fps mouth strips this round (the automatic reader had the old lady 1.7 s late and Sandra 0.9 s early). Sandra's line is three phrases, each on its own mouth burst."
+  "shb-br41-field-aerial-R12-FIELD2-b.mp4 eased to 87% speed to hold the call.",
+  "Lip-sync: the old lady's one line on screen is a Flow talking clip lined up by scripts/lipsync/flow-align.py (every word within 0.13 s)."
  ]
 }

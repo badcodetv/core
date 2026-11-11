@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r9/AWAY4-b.jpg",
+ "made": "2026-11-11T12:35:13.867Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A side-on view at the robot's own height, a medium shot: the boxy dented grey delivery robot from the second image rolls from left to right across the frame, seen in profile, her amber beacon pulsing on its stalk and the torn faded bunting on her wheel lifting in the wind. She is heading away from the bunker, which sits behind her on the left, soft and out of focus: the shut green steel doors from the first image, a cream loudspeaker horn hanging down off its broken bracket above them, broken bricks on the ground below. Ahead of her on the right, empty downland and a low grey sky. Quiet, lonely, overcast daylight. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. Widescreen frame without any text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge-r9/S6-c.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/maddie.jpg",
+   "/home/kai/.cache/badcode-refs/bridge-r9/horn-hanging.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "00bfa2a8-b7a9-4369-b7cc-3a8962f303c7"
+}

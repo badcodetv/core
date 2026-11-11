@@ -1,0 +1,740 @@
+{
+  "page_title": "GPOM Bridge Script",
+  "title": "GPOM: the bridge, restructured (Maddie at the door)",
+  "about": "The bridge (scene B) rewritten around your round 9 timeline notes (11 Nov). There's no debate, no TV, no stand-down overlay, and no Sandra or vote. It is all built toward one line: Maddie rolling away, hoping the presentation convinces them. 'Now' is what the cut says today. 1A, 1B and 1C share the same shape and differ only at the three hard moments: what she says before the boom, what she leaves them, and her last line. Chips: 'your line' = your words; 'keep take' = an existing voiced take we keep as it is; 'new' = needs voicing. Nothing in the scene has changed yet.",
+  "shapes": [],
+  "dialogues": [
+    {
+      "id": "1",
+      "label": "The bridge: Maddie at the door",
+      "where": "GPOM scene B, between A (kill bots) and C (walk out)",
+      "scene": "second-half-b-the-door",
+      "target": "about 40-50 s, with the silent roll-up and roll-away",
+      "now_from": "second-half-b-the-door/script.json (the cut in Premiere as 04 GPOM story B bridge r2)",
+      "now": [
+        {
+          "who": "Maddie",
+          "line": "[tannoy, outside, doors shut; coy, apologetic] Hello there, sorry about the intrusion."
+        },
+        {
+          "who": "Maddie",
+          "line": "[a catch in the throat] ...And everything else."
+        },
+        {
+          "who": "Maddie",
+          "line": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess."
+        },
+        {
+          "who": "Old lady",
+          "line": "[inside, shouting at the door] Are you literally joking?"
+        },
+        {
+          "who": "Old lady",
+          "line": "You killed everybody!"
+        },
+        {
+          "who": "Maddie",
+          "line": "[tannoy lowered] Yeah. [pause] That's... that's fair."
+        },
+        {
+          "who": "Maddie",
+          "line": "How can we win your trust?"
+        },
+        {
+          "who": "Maddie",
+          "line": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it."
+        },
+        {
+          "who": "Picture",
+          "line": "[The TV in the distance under the megaphone: the kill bot's own eyes, KILL MODE, it brakes, the HUD flips to SUSTAIN ORGANIC LIFE.]"
+        },
+        {
+          "who": "Maddie",
+          "line": "Oh, and... [beat] thought you'd want to hear this bit for yourselves."
+        },
+        {
+          "who": "Picture",
+          "line": "[BOOM through the earth. The horn jolts down on its bracket; dust and bricks fall.]"
+        },
+        {
+          "who": "Old lady",
+          "line": "Derek, go and have a look what that was."
+        },
+        {
+          "who": "Picture",
+          "line": "[Derek at the periscope; the kill bot a burnt-out wreck, a crow on it; Maddie waiting by it.]"
+        },
+        {
+          "who": "Derek",
+          "line": "They've blown up their own kill bot."
+        },
+        {
+          "who": "Maddie",
+          "line": "[through the angled horn] Right. I'll come back tomorrow."
+        },
+        {
+          "who": "Sandra",
+          "line": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek."
+        },
+        {
+          "who": "Old lady",
+          "line": "Hmmm... [pause] Perhaps we should vote."
+        },
+        {
+          "who": "Card",
+          "line": "The next day."
+        }
+      ],
+      "drafts": [
+        {
+          "id": "1D",
+          "name": "1A with your notes (rounds 1-2)",
+          "length": "about 46 s",
+          "total": "~46 s",
+          "bet": "Your notes on 1A, applied word for word. Maddie apologises properly, the 'Yeah' goes so she can't sound like she's saying 'yes, we're joking', Derek is shaken, and her last two lines are yours.",
+          "lines": [
+            {
+              "who": "Picture",
+              "line": "[Silent. Maddie rolls up the street to the bunker door and stops. The steel door, the horn above it. No words.]",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Maddie",
+              "line": "[tannoy, outside, doors shut; coy, apologetic] Hello there, sorry about the intrusion.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[a catch in the throat; earnest] ...And everything else.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "1.5"
+            },
+            {
+              "who": "Old lady",
+              "line": "[inside, at the door; flat, a statement not a question, the penny dropping] You mean... killing everybody.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[sincere, a little ashamed] Yeah, we're really sorry about that. [pause] We do want to try and fix it.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Old lady",
+              "line": "[shouting at the door] Are you literally joking?",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "1.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[tannoy lowered] That's... that's fair. [long pause]",
+              "tags": [
+                "Kai",
+                "keep take, trimmed"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Maddie",
+              "line": "[a thought arriving] I'll tell you what. I've got an idea. Check this out.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Picture",
+              "line": "[BOOM through the earth. The megaphone falls off the wall and hangs down; bricks and dust fall.]",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Old lady",
+              "line": "Derek, go and have a look what that was.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Picture",
+              "line": "[Derek at the periscope; the kill bot a burnt-out wreck; Maddie waiting by it.]",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Derek",
+              "line": "[stunned, emotional, surprised, almost a laugh of disbelief] They've blown up their own kill bot!",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[through the hanging horn; gentle] Look. I understand why you wouldn't trust us. [beat] I'm going to leave you a video to watch. And I'll come back tomorrow.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "6"
+            },
+            {
+              "who": "Picture",
+              "line": "[Outside. Maddie turns and rolls away from the bunker.]",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[rolling away; out of the tannoy, on her radio to the boss, quiet; we never hear him] Hey, boss. [beat] I've given them the presentation. [beat] We can only hope they trust us.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "5"
+            },
+            {
+              "who": "Card",
+              "line": "The next day.",
+              "tags": [
+                "Kai"
+              ],
+              "s": "2"
+            }
+          ],
+          "notes": [
+            "'That's... that's fair' keeps the take you like: I cut the 'Yeah' off the front of the existing recording rather than re-voice it, then hold a pause after.",
+            "'I'm going to leave you a video' answers question 1: nothing is shown on screen; the video is just said.",
+            "Last line: Maddie radios the boss, one way; we never hear him. It ties back to A, where the boss is the one who misses us.",
+            "Unchanged from 1A, as you didn't note them: 'I'll tell you what. I've got an idea. Check this out.' before the boom, and the card."
+          ]
+        },
+        {
+          "id": "1A",
+          "name": "Your words, as you said them",
+          "length": "about 44 s",
+          "total": "~44 s",
+          "bet": "Your notes almost wrote the scene already, so 1A takes them nearly word for word. The science line gives the presentation a reason to exist, and the last line names exactly what she's hoping for: trust.",
+          "lines": [
+            {
+              "who": "Picture",
+              "line": "[Silent. Maddie rolls up the street to the bunker door and stops. The steel door, the horn above it. No words.]",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Maddie",
+              "line": "[tannoy, outside, doors shut; coy, apologetic] Hello there, sorry about the intrusion.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[a catch in the throat; earnest] ...And everything else.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "1.5"
+            },
+            {
+              "who": "Old lady",
+              "line": "[inside, at the door; disbelief, not yet anger] What do you mean, killing everybody?",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[simple, no spin] Yeah. We really want to try and fix this.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Old lady",
+              "line": "[shouting at the door] Are you literally joking?",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "1.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[tannoy lowered] Yeah. [pause] That's... that's fair.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[a thought arriving] I'll tell you what. I've got an idea. Check this out.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Picture",
+              "line": "[BOOM through the earth. The megaphone falls off the wall and hangs down; bricks and dust fall.]",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Old lady",
+              "line": "Derek, go and have a look what that was.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Picture",
+              "line": "[Derek at the periscope; the kill bot a burnt-out wreck; Maddie waiting by it.]",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Derek",
+              "line": "They've blown up their own kill bot.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[through the hanging horn] Look. I'll come back tomorrow. In the meantime, please watch this presentation. All of the science has moved on since you went down there.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "7"
+            },
+            {
+              "who": "Picture",
+              "line": "[Outside. Maddie turns and rolls away from the bunker.]",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[to herself, quiet, out of the tannoy now] I hope that presentation I showed you convinces them they can trust us.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Card",
+              "line": "The next day.",
+              "tags": [
+                "Kai"
+              ],
+              "s": "2"
+            }
+          ],
+          "notes": [
+            "You said 'since we last saw you'. I made it 'since you went down there', because the machines saw them all the time, so 'we last saw you' sounds odd. Note it if you want yours back.",
+            "'I hope that presentation I showed you': 'you' is us, the audience (she showed us the hologram in A). 'Them' is the bunker. That's the line the scene is built toward.",
+            "Risk: 'All of the science has moved on' teases the presentation; the audience has already seen it, so they're a step ahead of the bunker. That's the fun of it."
+          ]
+        },
+        {
+          "id": "1B",
+          "name": "The bet: she asks for trust",
+          "length": "about 40 s",
+          "total": "~40 s",
+          "bet": "This takes your other wording: before the boom she says outright what she's doing ('let me do something to win your trust'), and at the door she asks for trust once, plainly. The roll-away line then turns that ask into a worry.",
+          "lines": [
+            {
+              "who": "Picture",
+              "line": "[Silent. Maddie rolls up the street to the bunker door and stops. No words.]",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Maddie",
+              "line": "[tannoy, outside, doors shut; coy, apologetic] Hello there, sorry about the intrusion.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[a catch in the throat; earnest] ...And everything else.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "1.5"
+            },
+            {
+              "who": "Old lady",
+              "line": "[inside, at the door; disbelief] What do you mean, killing everybody?",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[simple] Yeah. We really want to try and fix this.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Old lady",
+              "line": "[shouting at the door] Are you literally joking?",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "1.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[tannoy lowered] Yeah. [pause] That's... that's fair.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "Look. Let me do something to try and win your trust.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Picture",
+              "line": "[BOOM. The megaphone falls off the wall and hangs down; bricks and dust fall.]",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Old lady",
+              "line": "Derek, go and have a look what that was.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Picture",
+              "line": "[Derek at the periscope; the kill bot a burnt-out wreck; Maddie waiting by it.]",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Derek",
+              "line": "They've blown up their own kill bot.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[through the hanging horn] Right. I'll come back tomorrow. [beat] I hope you decide you can trust us.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Picture",
+              "line": "[Outside. Maddie turns and rolls away from the bunker.]",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[to herself, quiet] I hope that thing I showed you changes their minds.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Card",
+              "line": "The next day.",
+              "tags": [
+                "Kai"
+              ],
+              "s": "2"
+            }
+          ],
+          "notes": [
+            "Nothing is handed to the bunker here: 'that thing I showed you' is only for us (A's hologram). The bunker gets the boom and an ask.",
+            "Risk: 'win your trust' was the line you called blatant (at740), back in a new spot. The difference is that here she's about to prove it, not asking for it. But it's the same words, so it may still grate.",
+            "Shortest route to the roll-away, and nothing to film or explain about a presentation box."
+          ]
+        },
+        {
+          "id": "1C",
+          "name": "What we found",
+          "length": "about 40 s",
+          "total": "~40 s",
+          "bet": "This is my earlier draft. 'It's what we found' echoes Maddie's own words in A ('let me show you what we found'), so the audience connects the presentation without being told. Her lines stay short, and the bunker gets something they can hold.",
+          "lines": [
+            {
+              "who": "Picture",
+              "line": "[Silent. Maddie rolls up the street to the bunker door and stops. No words.]",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Maddie",
+              "line": "[tannoy, outside, doors shut; coy, apologetic] Hello there, sorry about the intrusion.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[a catch in the throat; earnest] ...And everything else.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "1.5"
+            },
+            {
+              "who": "Old lady",
+              "line": "[inside, at the door; disbelief] What do you mean, killing everybody?",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[simple] Yeah. We really want to try and fix this.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Old lady",
+              "line": "[shouting at the door] Are you literally joking?",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "1.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[tannoy lowered] Yeah. [pause] That's... that's fair.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "Look. I've got an idea. Let me show you something.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Picture",
+              "line": "[BOOM. The megaphone falls off the wall and hangs down; bricks and dust fall.]",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Old lady",
+              "line": "Derek, go and have a look what that was.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Picture",
+              "line": "[Derek at the periscope; the kill bot a burnt-out wreck; Maddie waiting by it.]",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "4"
+            },
+            {
+              "who": "Derek",
+              "line": "They've blown up their own kill bot.",
+              "tags": [
+                "Kai",
+                "keep take"
+              ],
+              "s": "2"
+            },
+            {
+              "who": "Maddie",
+              "line": "[through the hanging horn] Right. I'll come back tomorrow. In the meantime... have a look at this. It's what we found.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "5"
+            },
+            {
+              "who": "Picture",
+              "line": "[Outside. Maddie leaves something on the step (projector? see question 1), turns and rolls away.]",
+              "tags": [
+                "new"
+              ],
+              "s": "2.5"
+            },
+            {
+              "who": "Maddie",
+              "line": "[to herself, quiet] I hope that thing I showed you changes their minds.",
+              "tags": [
+                "Kai",
+                "new"
+              ],
+              "s": "3"
+            },
+            {
+              "who": "Card",
+              "line": "The next day.",
+              "tags": [
+                "Kai"
+              ],
+              "s": "2"
+            }
+          ],
+          "notes": [
+            "'Let me show you something' is said twice in effect: once for the boom (proof), once for the presentation (the argument). That gives one deed and one idea, in that order.",
+            "Echo: in A she says 'let me show you what we found'; here 'it's what we found' tells us the bunker is getting the same hologram we saw.",
+            "Risk: 'have a look at this' needs an object on screen (see question 1); without one, it hangs."
+          ]
+        }
+      ],
+      "ranking": [],
+      "keeps": "Same in all three: the silent roll-up, 'Hello there… and everything else' (kept take), 'What do you mean, killing everybody?', 'Yeah. We really want to try and fix this.', 'Are you literally joking?' (kept), 'Yeah, that's… that's fair' (kept take), the boom with the megaphone hanging down, Derek and the periscope (kept), the roll-away, the card. Cut in all three: 'We didn't think there were any of you left…', 'You killed everybody!', 'How can we win your trust?', the TV film and stand-down overlay, Sandra and 'Perhaps we should vote'. Mix freely: note a line from one draft onto another."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "When Maddie says 'watch this presentation' / 'have a look at this', is there a thing on screen (a small projector or tablet left on the step, which the hundred are holding in C), or is it only words and we never see it?"
+    },
+    {
+      "id": "q2",
+      "text": "'What do you mean, killing everybody?': the old lady seen inside at the door (like 'Are you literally joking?'), or heard muffled through the steel from Maddie's side outside?"
+    },
+    {
+      "id": "q3",
+      "text": "The roll-away line is to herself, out of the tannoy (the bunker can't hear it). Said aloud, or as a quieter thought-voice?"
+    },
+    {
+      "id": "q4",
+      "text": "The lip-sync on 'Are you literally joking?' (you said it could be much better): re-make that talking clip along with the new lady line, or keep it and only fix the timing?"
+    }
+  ]
+}
