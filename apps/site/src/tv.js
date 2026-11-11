@@ -1,5 +1,5 @@
 // Channel BadCode. Channel = section (Stories, News, Government, 0 = test card); number = programme.
-// TEXT turns any channel into teletext. Every state has a real address (/stories/2, /text/300), so
+// Every state has a real address (/stories/2, /government/3); old teletext links (/text/300) still open, though the TEXT button is gone, so
 // links can be shared. Content lives in content.json, injected by build.mjs as window.BADCODE.
 (function () {
   'use strict';
@@ -326,7 +326,7 @@
         if (!seen && !clean()) { store.set('bc-ppb', '1'); govTimer = setTimeout(() => { const p = $('.ppb', prog); if (p) p.classList.add('gone'); }, 2600); }
       }
     } else {
-      prog.innerHTML = `<div class="p-test"><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="disc">${HOST}</div><div class="cap">TEST CARD B · BADCODE · press TEXT for page 800, about BadCode</div></div>`;
+      prog.innerHTML = `<div class="p-test"><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="disc">${HOST}</div><div class="cap">TEST CARD B · BADCODE</div></div>`;
     }
     const pb = $('[data-play]', prog); if (pb) pb.onclick = () => { const v = videoFor(state); if (v) play(v); };
     $$('[data-minister]', prog).forEach(a => { a.onclick = e => { e.preventDefault(); state = { ch: 'government', p: 1, text: null, minister: a.dataset.minister }; render(false); commit(true); }; });
@@ -385,7 +385,6 @@
 
   // ---------- render ----------
   function syncRemote() {
-    $('[data-k=text]').setAttribute('aria-pressed', !!state.text);
     $$('.strands button').forEach(b => b.setAttribute('aria-current', !state.text && b.dataset.k === state.ch));
   }
   function render(gesture) {
@@ -434,7 +433,7 @@
     if (k === '0') { tune({ ch: 'testcard', p: 1 }); return; }
     const p = +k; if (p <= count[state.ch]) tune({ ch: state.ch, p }); else flashOsd();
   }
-  function setClean(v) { tv.classList.toggle('clean', v); $('[data-k=clean]').setAttribute('aria-pressed', v); store.set('bc-clean', v ? '1' : ''); }
+  function setClean(v) { tv.classList.toggle('clean', v); store.set('bc-clean', v ? '1' : ''); } // no button since 2026-11-11; reduced motion still gets the clean picture
   function setTucked(v) { tv.classList.toggle('tucked', v); store.set('bc-tucked', v ? '1' : ''); }
   const KEYS = {
     power: () => off ? (powerOn(), render(false)) : powerOff(),
@@ -453,7 +452,7 @@
   over.addEventListener('click', () => dismiss());
   document.addEventListener('keydown', e => {
     if (e.metaKey || e.ctrlKey || e.altKey || e.target.closest('input,textarea')) return;
-    const map = { ArrowLeft: 'prev', ArrowRight: 'next', ArrowUp: 'up', ArrowDown: 'down', t: 'text', s: 'stories', n: 'news', g: 'government', c: 'clean', r: 'tuck', Escape: state.text ? 'text' : null };
+    const map = { ArrowLeft: 'prev', ArrowRight: 'next', ArrowUp: 'up', ArrowDown: 'down', s: 'stories', n: 'news', g: 'government', r: 'tuck', Escape: state.text ? 'text' : null };
     if (/^\d$/.test(e.key)) { press(e.key); e.preventDefault(); return; }
     const k = map[e.key]; if (k) { press(k); e.preventDefault(); }
   });
@@ -472,7 +471,7 @@
 
   // ---------- start ----------
   (async function start() {
-    if (store.get('bc-clean')) setClean(true);
+    if (store.get('bc-clean')) setClean(false); // the CLEAN button is gone: nobody stays stuck in it
     const smallLandscape = matchMedia('(orientation: landscape) and (max-height: 520px)').matches;
     if (store.get('bc-tucked') || smallLandscape) setTucked(true);
     const home = (location.pathname.replace(/\/+$/, '') || '/') === '/';

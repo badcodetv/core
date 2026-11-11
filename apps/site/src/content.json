@@ -32,7 +32,7 @@
     "strap": "The news, read by someone who has already seen next week.",
     "status": "First bulletin soon.",
     "signoff": "See you next week. I've already seen it. It's worse.",
-    "ticker": ["The news, from someone who has seen how it ends", "First bulletin soon", "Short ones. About money. Who gets it, and who is told there isn't any", "Press TEXT for page 300"],
+    "ticker": ["The news, from someone who has seen how it ends", "First bulletin soon", "Short ones. About money. Who gets it, and who is told there isn't any"],
     "bulletins": []
   },
   "government": {
