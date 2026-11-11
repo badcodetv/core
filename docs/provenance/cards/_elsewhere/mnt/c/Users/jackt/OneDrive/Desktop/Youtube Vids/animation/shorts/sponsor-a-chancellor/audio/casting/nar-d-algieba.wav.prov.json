@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nar-d-algieba.wav",
+ "made": "2026-11-11T13:37:12+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "This is Crispin.\n\nCrispin only earns a hundred thousand pounds a year.\n\nTonight, his second home has no second home.\n\nFor just three pounds a month, you can help.",
+ "inputs": {
+  "profile": "# Audio Profile\nA famous-actor type, an English man of sixty-five, a rich, velvety, theatrical voice, doing a charity appeal pro bono. Slow, plummy, deeply moved by his own sincerity.\n\n## Scene:\nA plush studio, delivering the appeal like the final speech of a tragedy.\n\n## Sample Context:\nHe gives it the full weight of the stage, every word savoured.\n",
+  "profile_file": "docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/profiles/nar-d-algieba.md"
+ },
+ "settings": {
+  "voice": "Algieba",
+  "temperature": 1,
+  "channels": 2
+ }
+}

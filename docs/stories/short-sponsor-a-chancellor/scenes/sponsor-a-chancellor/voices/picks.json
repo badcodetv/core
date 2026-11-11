@@ -1,0 +1,40 @@
+{
+ "title": "Chancellor Voices",
+ "eyebrow": "Sponsor a Chancellor · voice casting · round 1",
+ "heading": "Who do they sound like?",
+ "intro": "Four narrators for the charity appeal and four nans for the ending, each reading the locked script. Pick one per role, or note what to change.",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "Real lines from the locked script (1D). The narrator still says 'Crispin' until the new name is picked.",
+   "groups": [
+    {
+     "slot": "narrator",
+     "round": 1,
+     "title": "The narrator: the charity appeal",
+     "line": "\"This is Crispin.\" … \"Crispin only earns £100,000 a year.\" … \"Tonight, his second home has no second home. For just £3 a month, you can help.\"",
+     "kind": "audio",
+     "opts": [
+      {"id": "a", "src": "casting/nar-a-sulafat.mp3", "label": "a: TV-appeal woman, 40s, soft RP (Sulafat)", "warn": "hushed, achingly sincere · 17 s"},
+      {"id": "b", "src": "casting/nar-b-charon.mp3", "label": "b: Edinburgh documentary man, 50s (Charon)", "warn": "low, grave, long pauses · 22 s"},
+      {"id": "c", "src": "casting/nar-c-achernar.mp3", "label": "c: Belfast woman, 30s (Achernar)", "warn": "breathy, gently pleading · 19 s"},
+      {"id": "d", "src": "casting/nar-d-algieba.mp3", "label": "d: Plummy actor doing it pro bono, 65 (Algieba)", "warn": "velvety, moved by himself · 19 s"}
+     ]
+    },
+    {
+     "slot": "nan",
+     "round": 1,
+     "title": "The nan: at the doormat",
+     "line": "\"Poor bastard...\"",
+     "kind": "audio",
+     "opts": [
+      {"id": "a", "src": "casting/nan-a-gacrux.mp3", "label": "a: Liverpool nan, 80s, smoker's rasp (Gacrux)", "warn": "half to herself · 'poor' may be mumbled (transcript: 'Foo bastard')"},
+      {"id": "b", "src": "casting/nan-b-vindemiatrix.mp3", "label": "b: Geordie nan, late 70s (Vindemiatrix)", "warn": "soft, under her breath"},
+      {"id": "c", "src": "casting/nan-c-autonoe.mp3", "label": "c: East London nan, 80s (Autonoe)", "warn": "gravelly, blunt, a sigh first"},
+      {"id": "d", "src": "casting/nan-d-laomedeia.mp3", "label": "d: Welsh valleys nan, 80s (Laomedeia)", "warn": "thin, gentle · 'poor' may be lost (transcript: 'Oh, bastard')"}
+     ]
+    }
+   ]
+  }
+ ]
+}

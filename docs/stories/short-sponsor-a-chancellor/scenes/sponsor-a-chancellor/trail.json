@@ -25,5 +25,13 @@
   "url": "https://claude.ai/artifact/2zJhS2qQjLwYE89GkNBvx9",
   "what": "round 1 stills, clean room: 4 beats x 3 (AP, RM, PO, NA), Nano Banana 2, 9:16",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor <out.html>"
+ },
+ {
+  "at": "2026-11-11T13:40:14+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/5BfuXWgH1xGGy3Xbi1iqNT",
+  "what": "voice casting r1: 4 narrators, 4 nans",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/picks.json /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-voices/index.html"
  }
 ]

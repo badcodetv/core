@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nar-c-achernar.wav",
+ "made": "2026-11-11T13:36:25+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "This is Crispin.\n\nCrispin only earns a hundred thousand pounds a year.\n\nTonight, his second home has no second home.\n\nFor just three pounds a month, you can help.",
+ "inputs": {
+  "profile": "# Audio Profile\nA soft Belfast woman in her thirties with a kind, slightly breathy voice, the friendly face of a charity's TV advert. Tender and earnest, gently pleading, clear words.\n\n## Scene:\nRecording a voiceover for a charity appeal, speaking quietly over slow piano.\n\n## Sample Context:\nShe sounds like she is about to cry for him, and is trying very hard not to.\n",
+  "profile_file": "docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/profiles/nar-c-achernar.md"
+ },
+ "settings": {
+  "voice": "Achernar",
+  "temperature": 1,
+  "channels": 2
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nar-b-charon.wav",
+ "made": "2026-11-11T13:35:38+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "This is Crispin.\n\nCrispin only earns a hundred thousand pounds a year.\n\nTonight, his second home has no second home.\n\nFor just three pounds a month, you can help.",
+ "inputs": {
+  "profile": "# Audio Profile\nA grave, gentle Edinburgh man of fifty-odd, a documentary narrator's voice: low, slow and compassionate, with a soft burr. Unhurried, with long sincere pauses.\n\n## Scene:\nNarrating a sombre late-night appeal for donations, leaning in to the mic.\n\n## Sample Context:\nHe treats the subject with the deepest respect, as if describing a famine.\n",
+  "profile_file": "docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/profiles/nar-b-charon.md"
+ },
+ "settings": {
+  "voice": "Charon",
+  "temperature": 1,
+  "channels": 2
+ }
+}

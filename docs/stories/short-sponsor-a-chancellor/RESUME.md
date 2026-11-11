@@ -14,3 +14,8 @@
 3. Then the storyboard → scene-animation (Omni 1.2 Flash, Frames, 9:16) → scene-timeline.
 
 Rules: clean room for prompts; never describe a cast character; no Flow speech (AI Studio voices, lip-sync with lip-sync-dub); Nano Banana 2; prompts end with "Thanks."
+
+## 2026-11-11 pm: voice page up, re-shoots checked
+
+- **Voice page round 1:** https://claude.ai/artifact/5BfuXWgH1xGGy3Xbi1iqNT (built from `scenes/sponsor-a-chancellor/voices/picks.json`, collection `picks`). Narrators a–d are word-perfect (17–22 s, no gap over 2 s). Nan a ("Foo bastard") and d ("Oh, bastard") may have swallowed "poor" by whisper's read; flagged on the page. Next: dump `picks` into `feedback/`, write the picks into `sound.md`.
+- **Re-shoots checked** (contact sheet against AP1-b and NA1-a): PO2-b-b holds the chancellor's face on the leaflet best (sharp, headline readable); PO2-b-a holds too. RM2-b-a holds the nan (bobble hat, same build); RM2-b-b drops the hat and turns her away. Suggested: PO2-b-b and RM2-b-a, Jack to confirm.
