@@ -45,6 +45,11 @@ const RENDER_MS = Number(process.env.RENDER_MS ?? 12 * 60_000)
 // A silently refused clip's tile VANISHES (no failure card), so 'want' is never reached. Once every tile still
 // on screen has finished and nothing has changed for STALL_MS, stop waiting (2026-11-11: a refused clip cost 12 min).
 const STALL_MS = Number(process.env.STALL_MS ?? 2 * 60_000)
+// Jack, 2026-11-11: "why does it wait at all instead of just refreshing the page and trying again". A refused clip's
+// tile vanishes (or shows Failed) within ~40 s of submit, so each job is watched for SURVIVE_MS right after it is sent;
+// if its tile goes, the page is reloaded and the same prompt sent again at once (REFUSE_TRIES times, then skipped).
+const SURVIVE_MS = Number(process.env.SURVIVE_MS ?? 30_000)
+const REFUSE_TRIES = Number(process.env.REFUSE_TRIES ?? 3)
 
 type Shot = {
   key: string; still: string | null; plate: string | null; src: string | null; out: string; motion: string; character: string | null
@@ -197,6 +202,17 @@ async function submit(s: Shot) {
   throw new Error(`SUBMIT_UNCONFIRMED ${s.key}`)
 }
 
+/** True if this wave's live tiles (fresh, not Failed) still number `n` after SURVIVE_MS: the job just sent survived. */
+async function survives(baseline: Set<string>, n: number) {
+  const end = Date.now() + SURVIVE_MS
+  while (Date.now() < end) {
+    await sleep(5000)
+    const live = (await topTiles(n + 6)).filter((t: any) => !(t.key && baseline.has(t.key)) && !t.failed)
+    if (live.length < n) return false
+  }
+  return true
+}
+
 /** Wait for the wave's tiles to finish, then download every new finished tile to the inbox.
  *  `keys` = this wave's jobs in SUBMIT order. Flow puts each new tile on top, so the fresh tiles, newest first, are the
  *  jobs in reverse; when the counts agree each download is named for its job (raw-NNN--<key>.mp4) and match.py trusts
@@ -255,9 +271,17 @@ try {
     let submitted = 0
     const sent: string[] = []
     for (const s of batch) {
-      for (let attempt = 1; attempt <= 4; attempt++) {
+      let refused = 0
+      for (let attempt = 1; attempt <= 4 + REFUSE_TRIES; attempt++) {
         try {
           const cast = await submit(s)
+          if (!(await survives(baseline, sent.length + 1))) {
+            refused++
+            say({ event: 'refused', key: s.key, wave, refused, why: `tile gone within ${SURVIVE_MS / 1000} s: reload and resend` })
+            if (refused >= REFUSE_TRIES) { blocked.add(s.key); say({ event: 'skip', key: s.key, why: `refused ${refused} times` }); break }
+            await hardReload()
+            continue
+          }
           submitted++
           sent.push(s.key)
           say({ event: 'submitted', key: s.key, wave, cast, attempt })
