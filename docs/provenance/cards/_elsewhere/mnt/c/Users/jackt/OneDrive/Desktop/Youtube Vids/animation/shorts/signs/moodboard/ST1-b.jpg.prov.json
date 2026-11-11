@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/ST1-b.jpg",
+ "made": "2026-11-11T15:32:52.980Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 low-angle photograph near kerb height, 24mm wide lens, of a wet pavement in front of a row of red-brick terraced houses just after sunset. In the foreground a grey wheelie bin is being pulled to the kerb by a person in work boots and a puffer jacket, cropped at the waist. Behind them, gardens line up in receding perspective, each with a different party election sign: \"Green Party\", \"Labour\", \"Conservative\", \"Liberal Democrats\". Sodium streetlight glow mixes with deep blue sky, parked hatchback blurred, puddle reflections, shot on a Fujifilm compact, fine film grain, unpolished and ordinary. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c5b831d9-6ed2-4288-b229-f40486e530e1"
+}

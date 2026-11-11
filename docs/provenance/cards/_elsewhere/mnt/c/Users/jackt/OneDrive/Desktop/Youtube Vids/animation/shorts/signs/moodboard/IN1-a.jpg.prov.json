@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/IN1-a.jpg",
+ "made": "2026-11-11T15:36:06.398Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph from inside a UK council wheelie bin, camera at the bottom looking straight up at the underside of the closed black plastic lid. The lid's underside is matt, scuffed, with moulded ribs radiating towards the edges and a large smooth plain oval area in the exact centre, empty and clean. Thin, razor-fine lines of cool blue-hour dusk light leak around the lid's rim. Crumpled black bin bags bulge into the frame edges, slightly shiny, in near darkness. Shot on a 24mm wide lens at f/2.8, ISO 3200, slight grain, documentary realism, symmetrical framing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a5d559c5-f3f7-4b22-8594-beea42888ae8"
+}

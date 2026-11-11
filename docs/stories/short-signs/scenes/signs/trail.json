@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-11T15:37:49+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/1QB5u6wdQV9rmhqUXFW53K",
+  "what": "clean-room stills r1: 3 shots x 3",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-signs/scenes/signs /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/signs-mood/index.html"
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/ST1-a.jpg",
+ "made": "2026-11-11T15:32:29.731Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph, shot on a 35mm lens at eye level across the road, of a red-brick Victorian terraced street in a British town at blue-hour dusk. Each small front garden has a different election sign on a stake: a green sign reading \"Vote Green Party\", a red one reading \"Labour\", a blue one reading \"Vote Conservative\", an orange diamond reading \"Liberal Democrats\". Overgrown privet hedges, low sandstone walls, warm lit windows. In the middle distance an ordinary local in a grey hoodie wheels a green wheelie bin down a front path toward the kerb, seen from behind. Slightly grainy, natural dusk light, muted colours, documentary snapshot. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "02893230-2c59-462e-ac1a-46f105527f5f"
+}

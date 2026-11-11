@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/LD1-c.jpg",
+ "made": "2026-11-11T15:35:34.891Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 night-ish street photograph from straight on at lid height, 85mm telephoto compression. The wheelie bin's lid dominates the centre, a thin line of cool light leaking from beneath the front lip as if something inside is faintly lit. Stacked behind it, soft discs of colour: Conservative blue, Lib Dem orange and yellow, Labour red signs on hedges, house windows glowing. Blue-hour dusk, slightly overcast, damp tarmac reflecting. Handheld feel, mild grain, muted colours, real UK suburban ordinariness. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "39cc44de-7212-46e8-bc00-ec2853910f4e"
+}
