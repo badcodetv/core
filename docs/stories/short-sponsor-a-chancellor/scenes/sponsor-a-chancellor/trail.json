@@ -73,5 +73,25 @@
   "url": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE",
   "what": "rough cut 1 (26.2 s): 5 clips, narrator + nan dub, band and logo",
   "rebuild": "python3 scripts/shorts/sponsor_chancellor_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-timeline"
+ },
+ {
+  "at": "2026-11-11T14:37:24+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE",
+  "what": "timeline r1 notes",
+  "decided": [
+   "Jack: newspaper insert at the start, only briefly; sound effects turned down"
+  ],
+  "feedback": "feedback/timeline-r1",
+  "feedback_docs": 2
+ },
+ {
+  "at": "2026-11-11T14:37:24+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE",
+  "what": "rough cut 2: news insert 0.5-3.2 s, sfx -8 dB",
+  "rebuild": "python3 scripts/shorts/sponsor_chancellor_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-timeline"
  }
 ]

@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/overlay/news-insert.png",
+ "made": "2026-11-11T14:37:24+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "sharp",
+ "tool": "scripts/shorts/sponsor_chancellor_cards.mjs",
+ "why": "Jack r1 note: newspaper insert; ITV News 2024 headline retyped verbatim"
+}

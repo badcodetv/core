@@ -25,7 +25,7 @@ NAN_DUB = AUD / 'dub/sac-04-r2-nan-dub.wav'          # on clip 04-r2's own clock
 LOGO = REPO / 'docs/brand/logo'
 W, H, FPS = 1080, 1920, 24
 LEAD = 0.4
-SFX_LUFS = -30
+SFX_LUFS = -38                                         # r2: Jack, 'the sound effects overpower the narration' (was -30)
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 
 # Narration phrases, measured (silencedetect -40 dB): (from, to, gap after)
@@ -50,7 +50,8 @@ SHOTS = [('appeal', 'sac-01-A-AP1-b.mp4', 0.0, 8.0),
 starts, t = [], 0.0
 for s in SHOTS: starts.append(round(t, 3)); t += s[3]
 TOTAL = round(t, 3)
-T_CARD = nar_at[4]                                     # the "£3 a month" band comes up on "For just £3 a month"
+T_CARD = nar_at[4]
+NEWS_IN, NEWS_OUT = 0.5, 3.2                           # r2: Jack's newspaper insert at the start, 'only on the screen for a bit'                                     # the "£3 a month" band comes up on "For just £3 a month"
 SEE = {'appeal': 'The black-and-white charity appeal: Crispin at the rainy conservatory glass, a slow blink, his hand slides down the pane.',
        'room': 'Pull back: the nan in her armchair in the cold flat, the telly on.',
        'post': 'The doormat: junk mail, a draught, the SPONSOR A CHANCELLOR flyer.',
@@ -87,15 +88,18 @@ def main():
 
     # Overlay (also its own alpha layer for Premiere V2): the appeal's "£3 a month" band, and the logo end card.
     logo = OVL_LOGO()
+    news = MEDIA / 'overlay/news-insert.png'
+    subprocess.run(['node', str(REPO / 'scripts/shorts/sponsor_chancellor_cards.mjs'), str(MEDIA / 'overlay')], check=True, capture_output=True)
+    nws = f"overlay=(W-w)/2:1060:enable='between(t,{NEWS_IN},{NEWS_OUT})'"
     band = (f"drawbox=x=0:y=1500:w={W}:h=260:color=black@0.85:t=fill:enable='between(t,{T_CARD:.2f},{NAR_END + 0.5:.2f})',"
             f"drawtext=fontfile={FONT}:text='SPONSOR A CHANCELLOR':fontcolor=white:fontsize=64:x=(w-text_w)/2:y=1540:enable='between(t,{T_CARD:.2f},{NAR_END + 0.5:.2f})',"
             f"drawtext=fontfile={FONT}:text='Just £3 a month':fontcolor=white:fontsize=58:x=(w-text_w)/2:y=1640:enable='between(t,{T_CARD + 0.4:.2f},{NAR_END + 0.5:.2f})'")
     t_logo = TOTAL - 1.2
-    ff('-i', CUT / 'picture-raw.mp4', '-i', logo, '-filter_complex',
-       f"[0]{band}[b];[1]format=rgba[l];[b][l]overlay=(W-w)/2:H-h-260:enable='gte(t,{t_logo:.2f})',scale=in_range=full:out_range=limited,format=yuv420p[v]",
+    ff('-i', CUT / 'picture-raw.mp4', '-i', logo, '-i', news, '-filter_complex',
+       f"[0]{band}[b];[1]format=rgba[l];[2]format=rgba[n];[b][n]{nws}[bn];[bn][l]overlay=(W-w)/2:H-h-260:enable='gte(t,{t_logo:.2f})',scale=in_range=full:out_range=limited,format=yuv420p[v]",
        '-map', '[v]', *ENC, CUT / 'picture.mp4')
-    ff('-f', 'lavfi', '-i', f'color=c=black@0.0:s={W}x{H}:r={FPS}:d={TOTAL},format=rgba', '-i', logo, '-filter_complex',
-       f"[0]{band}[b];[1]format=rgba[l];[b][l]overlay=(W-w)/2:H-h-260:format=auto:enable='gte(t,{t_logo:.2f})'[o]",
+    ff('-f', 'lavfi', '-i', f'color=c=black@0.0:s={W}x{H}:r={FPS}:d={TOTAL},format=rgba', '-i', logo, '-i', news, '-filter_complex',
+       f"[0]{band}[b];[1]format=rgba[l];[2]format=rgba[n];[b][n]{nws}:format=auto[bn];[bn][l]overlay=(W-w)/2:H-h-260:format=auto:enable='gte(t,{t_logo:.2f})'[o]",
        '-map', '[o]', '-t', TOTAL, '-c:v', 'prores_ks', '-profile:v', '4444', '-pix_fmt', 'yuva444p10le', '-alpha_bits', '16', CUT / 'overlay.mov')
 
     (CUT / 'slist.txt').write_text(''.join(f"file '{p.name}'\n" for p in sfx_parts))
@@ -128,8 +132,8 @@ def main():
             bl.append({'i': j, 'who': ln['who'].lower(), 'name': ln['who'].title(), 't': round(tt, 2), 'dur': round(dd, 2),
                        'text': ln['text'], 'by': ln.get('by', 'claude')})
         beats.append({'id': beat, 'title': TITLES[beat], 'start': starts[i], 'dur': d, 'see': SEE[beat], 'lines': bl})
-    edl = {'sequence': 'short-sponsor-a-chancellor-r1', 'title': 'Sponsor a Chancellor Timeline',
-           'heading': 'BadCode Shorts ▲ Sponsor a Chancellor, rough cut 1',
+    edl = {'sequence': 'short-sponsor-a-chancellor-r2', 'title': 'Sponsor a Chancellor Timeline',
+           'heading': 'BadCode Shorts ▲ Sponsor a Chancellor, rough cut 2',
            'intro': 'All five clips with the picked voices (narrator: Achernar; nan: Vindemiatrix, lip-synced). Note anything: a beat, a shot, a line, a sound, or a single frame.',
            'fps': FPS, 'total': TOTAL, 'beats': beats,
            'video': [{'file': str(VID / s[1]), 'in': s[2], 'start': starts[i], 'dur': s[3], 'beat': s[0], 'source': str(VID / s[1]), 'looped': False}
