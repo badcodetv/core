@@ -431,6 +431,9 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   direction; repair the audience-blame sentence and specify the voluntary Future Proof doorway.
   Both findings have an implementation response appended; canon and the local landing page are
   updated. Media generation, real timing and publishing remain production work.
+- [`critique-pass-8.md`](./critique-pass-8.md) — the 2026-11-11 cold Fable 5.2 review near the end:
+  the consciousness talk in scene A runs too long (Kai agrees; **open**, to decide with Jack, who wants
+  to lean into it); every other finding noted and declined for now.
 - [`how-we-tell-it.md`](./how-we-tell-it.md) — the skeleton, the four skins, the simplest framing per pillar.
 - [`critique-pass.md`](./critique-pass.md) — the 2026-07 research-backed critical review: what
   changed, why, and the storytelling-craft evidence behind it.

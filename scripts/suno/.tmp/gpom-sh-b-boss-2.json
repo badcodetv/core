@@ -1,0 +1,20 @@
+{
+ "style": "Spoken word, voice only. One calm British male newsreader on a private phone call, quietly pleased. No music. Dry, close-mic'd, no reverb.",
+ "exclude": "singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb",
+ "lyrics": "[Spoken, quietly pleased]\nOK, well done, Maddie.\n[End]",
+ "model": "v6",
+ "title": "gpom-sh-b-boss-2-A",
+ "workspace": "gpom-story",
+ "voice": "badcode newsreader",
+ "styleInfluence": 50,
+ "audioInfluence": 65,
+ "weirdness": [
+  25,
+  10
+ ],
+ "variety": "off",
+ "maxMode": false,
+ "vocalGender": null,
+ "personalize": false,
+ "durationSec": 15
+}
