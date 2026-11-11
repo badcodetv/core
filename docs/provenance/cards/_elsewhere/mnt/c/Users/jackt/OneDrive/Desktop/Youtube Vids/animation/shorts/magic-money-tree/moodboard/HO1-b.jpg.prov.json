@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/HO1-b.jpg",
+ "made": "2026-11-11T16:17:52.863Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 hand-painted gouache editorial illustration with visible brush strokes and ink outlines, textured paper showing through. A plump middle-aged man in a rumpled grey suit hugs and shakes the trunk of a skinny bare tree, knees bent, face scrunched in effort. A few dry twigs, not a single leaf falls. A blank pale plaque hangs from the trunk. Beside him a second lush tree curves into frame. Limited palette of mustard, slate blue and dull green, flat washes, exaggerated caricature proportions, no readable text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ab4a7d01-db4c-41d9-a015-1d454f9ecad6"
+}

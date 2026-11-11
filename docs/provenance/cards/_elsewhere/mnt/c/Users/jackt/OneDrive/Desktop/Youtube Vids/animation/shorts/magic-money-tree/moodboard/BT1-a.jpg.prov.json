@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/BT1-a.jpg",
+ "made": "2026-11-11T16:15:48.373Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 medium close-up, documentary press photograph on 35mm film with visible grain. A plain middle-aged white man with thinning grey-brown hair, tired eyes and a navy suit with a loosened blue tie stands knee-deep in scattered banknotes on a damp lawn, looking straight into the lens with a flat, expressionless, deadpan stare. Overcast flat daylight, slightly harsh on-camera flash. Behind him, softly out of focus, two bare trees, each with a blank wooden plaque hanging from a branch, no writing at all. A few notes still flutter in the air. Muted, slightly desaturated colour, ordinary and unglamorous, no logos, no text. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6aa4142b-dd9f-4225-a9a5-83afb8cfd2c2"
+}

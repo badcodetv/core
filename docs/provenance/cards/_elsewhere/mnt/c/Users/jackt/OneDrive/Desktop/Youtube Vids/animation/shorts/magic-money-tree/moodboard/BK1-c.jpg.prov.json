@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/BK1-c.jpg",
+ "made": "2026-11-11T16:20:19.948Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 three-colour screenprint poster in a 1930s Soviet constructivist and linocut style: black, mustard yellow and money green on cream paper. A broad-shouldered middle-aged man in a plain dark suit, shown in dramatic low-angle, shakes a thick-trunked tree with a bold stylised crown. Banknotes cascade down in rhythmic diagonal strokes, drifting like leaves and heaping at his feet. A blank rectangular plaque is nailed to the trunk. Chunky carved line work, slight ink misregistration, rough print texture, strong geometric composition, no lettering. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0d2f51f3-1b0a-4c6c-ae7d-581a50e720f4"
+}
