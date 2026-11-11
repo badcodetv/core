@@ -21,3 +21,4 @@ Rules: clean room for prompts; never describe a cast character; no Flow speech (
 - **Re-shoots checked** (contact sheet against AP1-b and NA1-a): PO2-b-b holds the chancellor's face on the leaflet best (sharp, headline readable); PO2-b-a holds too. RM2-b-a holds the nan (bobble hat, same build); RM2-b-b drops the hat and turns her away. Suggested: PO2-b-b and RM2-b-a, Jack to confirm.
 - **Voices picked (Jack):** narrator c Achernar (Belfast), nan b Vindemiatrix (Geordie). In `sound.md`. Name ruled: Crispin stays (Jack). The Achernar casting take is the narration master; no re-render needed.
 - **Storyboard r1:** https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g (pick a still + animation option per frame). Motion prompts are written clean-room after the picks.
+- **Rough cut 1 / timeline page:** https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE (26.2 s). Cut script `scripts/shorts/sponsor_chancellor_cut.py`. Next: Jack's notes.

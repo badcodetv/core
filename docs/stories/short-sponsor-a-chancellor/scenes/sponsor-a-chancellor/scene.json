@@ -47,11 +47,17 @@
   "moodboard_intro": "Round 1, clean room: four beats, three different stills each. Tap This, Maybe or No on each still; leave a note per shot.",
   "boards": {
     "moodboard": "https://claude.ai/artifact/2zJhS2qQjLwYE89GkNBvx9",
-    "storyboard": "https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g"
+    "storyboard": "https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g",
+    "timeline": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE"
   },
   "storyboard_intro": "Your four picks in order. Frames 2 and 3 also show the re-shoots with the same nan and chancellor: pick one still per frame, and one way to animate each. Notes welcome on anything.",
   "looks": {
     "advert": "Black-and-white charity advert",
     "flat": "Her flat, colour, cold"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/cut/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/cut/preview.mp4",
+    "script": "scripts/shorts/sponsor_chancellor_cut.py"
   }
 }

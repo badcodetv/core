@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/video/sac-02-RM2-b-a.mp4",
+ "made": "2026-11-11T14:10:30+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off shot from the hallway doorway; the camera stays completely still. One continuous take. The woman sits motionless in her armchair, both hands round her mug, eyes on the television. Cool flickering television light plays softly across her face and the blanket. A thin wisp of steam rises from the mug and fades; her breath shows faintly in the cold air. Everything else in the room stays perfectly still. Quiet, cold, patient stillness. Shot at 24fps with a 180-degree shutter, natural motion blur. The camera remains static. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/RM2-b-a.jpg",
+ "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 2a",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/RM2-b-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor",
+  "key": "02",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T13:57:00.887Z"
+ }
+}
