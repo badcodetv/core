@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/video/sg-02-LD2-b-a.mp4",
+ "made": "2026-11-11T16:03:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off static camera, one continuous shot with no cuts, shot at 24fps with a 180-degree shutter for natural motion blur. A faint, cool blue-white glow switches on from under the front lip of the bin lid, as if something inside just lit up, and then holds steady. The lid stays closed, the bin stays still, and the signs and street behind stay exactly as they are. Fine raindrops fall on the lid. The camera stays perfectly still. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/LD2-b-a.jpg",
+ "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 2b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/LD2-b-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-signs/scenes/signs",
+  "key": "02",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T16:01:13.931Z"
+ }
+}

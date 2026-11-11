@@ -35,11 +35,17 @@
   "moodboard_intro": "Round 2: the lid re-shot as a green bin, like the street (your note), in LD1-b's look. Street ST1-a and inside IN1-b are picked.",
   "boards": {
     "moodboard": "https://claude.ai/artifact/1QB5u6wdQV9rmhqUXFW53K",
-    "storyboard": "https://claude.ai/artifact/SjZ7mWHimfBDJxgboYgLTV"
+    "storyboard": "https://claude.ai/artifact/SjZ7mWHimfBDJxgboYgLTV",
+    "timeline": "https://claude.ai/artifact/1GKJTsmFGFnEi6roVCsivt"
   },
   "storyboard_intro": "Your three picks in order. Pick one way to animate each; notes welcome.",
   "looks": {
     "dusk": "Blue-hour street",
     "inside": "Inside the bin"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/cut/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/cut/preview.mp4",
+    "script": "python3 scripts/shorts/signs_cut.py"
   }
 }

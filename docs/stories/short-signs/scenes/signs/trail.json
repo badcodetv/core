@@ -58,5 +58,13 @@
   ],
   "feedback": "feedback/storyboard-r1",
   "feedback_docs": 3
+ },
+ {
+  "at": "2026-11-11T16:06:08+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/1GKJTsmFGFnEi6roVCsivt",
+  "what": "rough cut 1 (12 s): 3 clips, pushes, real logo flicker-on, street sound + neon hum",
+  "rebuild": "python3 scripts/shorts/signs_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-signs/scenes/signs /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/signs-timeline"
  }
 ]

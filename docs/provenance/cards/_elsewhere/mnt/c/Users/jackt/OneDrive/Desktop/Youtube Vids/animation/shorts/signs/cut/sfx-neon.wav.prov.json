@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/cut/sfx-neon.wav",
+ "made": "2026-11-11T16:05:42+00:00",
+ "by": "claude",
+ "kind": "sfx",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/signs_cut.py",
+ "why": "neon hum and flicker clicks under the logo"
+}
