@@ -288,7 +288,8 @@ Each milestone ends in a PR for Kai or Jack to merge, plus a short status page.
   options, oracle).
 - [x] T15 The program on the local validator, with tests; the mirror Action as a dry run (no
   deploy). (`chain/programs/deliberation/`; the mirror is a dry-run script, no workflow file yet.)
-- [ ] T16 The "invite the world's agents" pitch, handed to the chief-of-staff (held, not posted).
+- [x] T16 The "invite the world's agents" pitch ([`pitch.md`](./pitch.md)), held for the chief-of-staff, not posted.
+- [ ] T17 (follow-up) Add `check.source_url` to the policy format so the mirror can post a machine-readable source; lift `check.provisional` per policy as the statistician passes each one.
 
 ## 6. Risks
 
