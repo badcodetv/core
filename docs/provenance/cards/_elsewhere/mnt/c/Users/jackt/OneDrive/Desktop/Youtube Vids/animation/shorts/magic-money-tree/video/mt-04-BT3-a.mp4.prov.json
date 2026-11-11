@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/video/mt-04-BT3-a.mp4",
+ "made": "2026-11-11T17:02:25+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A hand-painted cartoon. A few banknotes drift down past the man. He looks straight at the viewer, deadpan, and says flatly: Different tree. Then he keeps still, lips closed. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/BT3-a.jpg",
+ "why": "Jack 2026-11-11: 'you pick everything for this one'; stills HO1-b (his pick), CU1-a, BK2-a, BT3-a (cast: MMT Minister)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/BT3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-magic-money-tree/scenes/magic-money-tree",
+  "key": "04",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T17:01:21.971Z"
+ }
+}

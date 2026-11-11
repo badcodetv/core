@@ -34,6 +34,12 @@
   "flow_project": "85b58ebb-2429-437c-80f1-f1f7b69520ef",
   "moodboard_intro": "Round 1, clean room: three shots, three different looks each. Tap This, Maybe or No; leave a note per shot.",
   "boards": {
-    "moodboard": "https://claude.ai/artifact/87NumoZ4XCuoozsQkoTD3t"
+    "moodboard": "https://claude.ai/artifact/87NumoZ4XCuoozsQkoTD3t",
+    "timeline": "https://claude.ai/artifact/G1t8LghMTBKMfhpKaRB7pb"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/cut/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/cut/preview.mp4",
+    "script": "python3 scripts/shorts/money_tree_cut.py"
   }
 }

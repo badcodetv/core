@@ -1,0 +1,4 @@
+{"_note": "04 (BT3-a deadpan): mouth opens 2.21 ('Dif-'), 'tree' peak 2.71-2.88, shut ~3.0 (mouth-track.py). Take mmt-l2-fit-a: 'Different' 0.26-0.92 at x1.25 on 2.24; 'tree' 1.06-1.51 at x1.10 on 2.77. (Take c said 'A different tree': rejected.)",
+ "duration": 8.042,
+ "phrases": [{"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/audio/voice/mmt-l2-fit-a.wav", "from": 0.20, "to": 0.95, "at": 2.192, "tempo": 1.25, "text": "Different"},
+             {"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/audio/voice/mmt-l2-fit-a.wav", "from": 1.02, "to": 1.60, "at": 2.724, "tempo": 1.10, "text": "tree."}]}

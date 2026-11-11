@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/audio/dub/mt-02-dub.wav",
+ "made": "2026-11-11T17:06:41+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/audio/voice/mmt-l1-fit-a.wav",
+ "why": "minister 'We can't afford it.' lip-synced onto 02",
+ "inputs": {
+  "phrases": "docs/stories/short-magic-money-tree/scenes/magic-money-tree/dub/02-afford.json"
+ }
+}

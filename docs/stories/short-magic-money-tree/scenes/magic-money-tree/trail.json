@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/87NumoZ4XCuoozsQkoTD3t",
   "what": "clean-room stills r1: 3 shots x 3 styles",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-magic-money-tree/scenes/magic-money-tree /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/mt-mood/index.html"
+ },
+ {
+  "at": "2026-11-11T17:08:20+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/G1t8LghMTBKMfhpKaRB7pb",
+  "what": "rough cut 1 (13.3 s): 4 clips, minister lip-synced (Schedar), captions, logo",
+  "rebuild": "python3 scripts/shorts/money_tree_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-magic-money-tree/scenes/magic-money-tree /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/mt-timeline"
  }
 ]
