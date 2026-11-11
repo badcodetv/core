@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { lintPolicies } from '../../apps/site/policies.mjs';
+import { lintPolicies, policyText } from '../../apps/site/policies.mjs';
 import { lintAll } from './policy-lint.mjs';
 
 const good = (over = {}) => ({
@@ -51,6 +51,17 @@ describe('policy lint', () => {
   });
   it('warns when a post has nothing due within six months', () => {
     expect(run(good({ 'check.check_on': '2029-01-01' })).warnings.join()).toMatch(/six months/);
+  });
+});
+
+describe('policy text', () => {
+  it('prints the contract and the prediction in plain labelled lines', () => {
+    const t = policyText(good());
+    expect(t).toMatch(/^## The Slice/);
+    expect(t).toMatch(/The test\. next data centre, against deals without/);
+    expect(t).toMatch(/Our odds: 70%\. Checked on 2027-01-31: not checked yet\./);
+    expect(t).toMatch(/Status: Draft\./);
+    expect(policyText(good(), ['fails_if'])).toMatch(/Status: Draft, not ready\./);
   });
 });
 

@@ -16,7 +16,9 @@ export const MAX_PRIOR = 0.9; // no safe bets (design §4.3)
 export const MAX_LINE = 100;
 export const MAX_WORDS = 300;
 
+// ids are split on commas or semicolons; prose lists (leaves_out) on semicolons only, since an item may hold a comma
 const list = v => (!v || v === 'none' ? [] : String(v).split(/\s*[;,]\s*/).filter(Boolean));
+const prose = v => (!v || v === 'none' ? [] : String(v).split(/\s*;\s*/).filter(Boolean));
 const isDate = v => /^\d{4}-\d{2}-\d{2}$/.test(v || '') && !Number.isNaN(Date.parse(v));
 
 // What each kind must carry before it counts as ready (the policy contract's green tick).
@@ -37,7 +39,7 @@ export function readPolicies(dir) {
     for (const f of readdirSync(pdir).filter(f => /^[a-z0-9-]+\.md$/.test(f)).sort()) {
       const { meta, body } = parseFrontMatter(readFileSync(join(pdir, f), 'utf8'));
       out.push({ file: `${post}/${f}`, dirPost: post, slug: f.slice(0, -3), meta, body,
-        needs: list(meta.needs), leavesOut: list(meta.leaves_out) });
+        needs: list(meta.needs), leavesOut: prose(meta.leaves_out) });
     }
   }
   return out;
@@ -105,4 +107,32 @@ export function lintPolicies(policies, { today = new Date().toISOString().slice(
 export function policiesFor(page, policies) {
   const byId = new Map(policies.map(p => [p.meta.id, p]));
   return list(page.policies).map(id => byId.get(id)).filter(Boolean);
+}
+
+const pct = p => `${Math.round(Number(p) * 100)}%`;
+const RESULT_WORDS = { pending: 'not checked yet', held: 'it held', failed: 'it failed', void: 'void' };
+const STATUS_WORDS = { draft: 'Draft', 'in-trial': 'In trial', kept: 'Kept', changed: 'Changed', dropped: 'Dropped' };
+
+// A policy as plain manifesto text ("## Title" then paragraphs), the form the site and teletext print.
+// notReady: the list of missing fields from the lint, if any.
+export function policyText(p, notReady) {
+  const m = p.meta, out = [`## ${m.title}`, m.line, String(p.body).trim()];
+  if (m.kind === 'trial') {
+    out.push(`The test. ${m['test.where']}, against ${m['test.against']}, measured by ${m['test.measure']}, by ${m['test.by']}.`.replace(/\.\./g, '.'));
+    if (m.fails_if) out.push(`Fails if: ${m.fails_if}`);
+  } else if (m.kind === 'judgement-call') {
+    out.push(`Judgement call. ${m['judgement.principle']} Reviewed ${m['judgement.review']}. What would change our mind: ${m['judgement.change_mind']}`);
+  } else if (m.kind === 'right') {
+    out.push(`A right: it never stops. Measured by ${m.measure}`);
+  }
+  if (m.kind !== 'right' && m.stop) out.push(`The undo. ${m.stop}`);
+  if (m.leaves_out) out.push(`Who it leaves out: ${p.leavesOut.join('; ')}.`);
+  if (m.signs) out.push(`Who signs: ${m.signs}.`);
+  if (m['check.claim']) {
+    const r = m['check.result'] || 'pending';
+    out.push(`Our prediction: ${m['check.claim']} Our odds: ${pct(m['check.prior'])}. Checked on ${m['check.check_on']}: ${RESULT_WORDS[r] || r}.${m['check.note'] ? ` ${m['check.note']}` : ''}`);
+  }
+  const status = STATUS_WORDS[m.status] || m.status;
+  out.push(`Status: ${status}${notReady ? ', not ready' : ''}.${m.write_up ? ` ${m.write_up}` : ''}`);
+  return out.filter(Boolean).map(s => s.replace(/\.\.$/, '.')).join('\n\n');
 }

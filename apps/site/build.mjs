@@ -9,6 +9,7 @@ import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readManifesto, bodyHtml } from './manifesto.mjs';
+import { readPolicies, lintPolicies, policiesFor, policyText } from './policies.mjs';
 import { writeHologram } from './storyverse.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -16,6 +17,17 @@ const src = join(here, 'src'), pub = join(here, 'public'), dist = join(here, 'di
 const C = JSON.parse(readFileSync(join(src, 'content.json'), 'utf8'));
 // The government's manifesto comes from the files its cabinet writes, never from content.json.
 C.government.manifesto = readManifesto(join(here, '..', '..', 'docs', 'government', 'manifesto'));
+// Each policy is its own file (docs/government/policies/); a minister's page is its foreword plus
+// its policies, stitched here so the TV and teletext read one body as before.
+const POL = readPolicies(join(here, '..', '..', 'docs', 'government', 'policies'));
+const { notReady: NOT_READY } = lintPolicies(POL);
+const POLICY_PAGES = [];
+for (const m of C.government.manifesto) {
+  const mine = policiesFor(m, POL);
+  m.policyIds = mine.map(p => p.meta.id);
+  if (mine.length) m.body = [m.body, ...mine.map(p => policyText(p, NOT_READY.get(p.meta.id)))].join('\n\n');
+  for (const p of mine) POLICY_PAGES.push({ m, p, text: policyText(p, NOT_READY.get(p.meta.id)) });
+}
 const tpl = readFileSync(join(src, 'page.html'), 'utf8');
 const css = readFileSync(join(src, 'tv.css'), 'utf8'), js = readFileSync(join(src, 'tv.js'), 'utf8');
 const V = createHash('sha256').update(css + js + JSON.stringify(C)).digest('hex').slice(0, 10);
@@ -61,6 +73,8 @@ const routes = [
   { path: '/news', title: `${N.title} · BadCode`, desc: N.strap, body: plainBody.news() },
   { path: '/government', title: 'The BadCode Government', desc: `${G.promise} ${G.notReal}`, body: plainBody.gov() },
   ...CAB.map(m => ({ path: `/government/${m.post}`, title: `${m.title} · The BadCode Government`, desc: m.line, body: plainBody.minister(m) })),
+  ...POLICY_PAGES.map(({ m, p, text }) => ({ path: `/government/${p.meta.id}`, title: `${p.meta.title} · ${m.title} · The BadCode Government`, desc: p.meta.line,
+    body: `${bodyHtml(text)}<p>A policy of the <a href="/government/${m.post === 'prime-minister' ? '' : m.post}">${esc(m.title)}</a>. Each policy stands alone: back it or not on its own. ${esc(G.notReal)}</p>` })),
   { path: '/government/2', title: 'Future Proof · BadCode', desc: G.futureProof.question, body: plainBody.fp() },
   { path: '/future-proof', canon: '/government/2', title: 'Future Proof · BadCode', desc: G.futureProof.question, body: plainBody.fp() },
   { path: '/about', title: 'About · BadCode', desc: SITE_DESC, body: plainBody.about() },

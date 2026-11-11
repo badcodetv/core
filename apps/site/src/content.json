@@ -38,9 +38,9 @@
   "government": {
     "promise": "We promise to enact Future Proof.",
     "pledges": [
-      ["Test every law before you live in it.", "A new rule runs on a small scale first, in public, before it reaches everyone."],
-      ["Publish the postmortem.", "When a policy breaks, say what broke, who it hurt and what changes. No blame, just the fix."],
-      ["Name who it leaves out.", "Every promise says who it is for, and who it isn't. Then somebody counts."]
+      ["Choose issue by issue.", "Every policy stands alone, with its own test, so you can back one and reject the next. No bundle."],
+      ["Change it small, check it, keep the undo.", "A new rule runs small first, in public, with a stop date. When one breaks, we publish what went wrong."],
+      ["No policy without its test.", "Every promise says what would prove it wrong and who it leaves out. Then somebody counts."]
     ],
     "notReal": "Not a real party. Yet.",
     "futureProof": {
@@ -48,9 +48,9 @@
       "question": "Who should decide how the gains from automation are shared?",
       "intro": "Run the country the way good software is run: small parts that can be swapped, every change tested before it ships, decisions made from evidence, in public.",
       "tenets": [
-        ["Small parts, not one big machine", "Build policy from pieces that can be fixed or replaced without tearing the whole thing down."],
-        ["Test before release", "Try every change on a small scale first, and keep testing it once it's live."],
-        ["Decide from the data", "Say what would prove you wrong before you start, and publish the numbers either way."]
+        ["Choose issue by issue", "Build policy from pieces you can back, fix or replace one at a time, not a bundle you take whole."],
+        ["Change it small, keep the undo", "Try every change on a small scale first, with a stop date, and keep testing it once it's live."],
+        ["No policy without its test", "Say what would prove you wrong before you start, and publish the numbers either way."]
       ],
       "ask": "Write one rule for sharing the gains. Test it on someone it affects. They may disagree. Change it after you hear what it misses."
     }
