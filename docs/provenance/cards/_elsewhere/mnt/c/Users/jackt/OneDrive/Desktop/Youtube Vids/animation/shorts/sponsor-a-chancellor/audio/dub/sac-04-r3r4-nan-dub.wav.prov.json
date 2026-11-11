@@ -1,13 +1,13 @@
 {
  "schema": "badcode.prov/1",
  "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/dub/sac-04-r3r4-nan-dub.wav",
- "made": "2026-11-11T15:03:47+00:00",
+ "made": "2026-11-11T15:10:09+00:00",
  "by": "claude",
  "kind": "voice",
  "engine": "Google AI Studio TTS",
  "tool": "scripts/lipsync/place-dub.py",
- "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nan-b-vindemiatrix.wav",
- "why": "nan's line refitted onto the take that mouths the real words (Jack r3 note)",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nan-b-fit-b.wav",
+ "why": "Jack r4: lip sync still wrong; re-voiced to the clip's rhythm",
  "inputs": {
   "phrases": "docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/dub/04-r3r4-nan.json"
  }

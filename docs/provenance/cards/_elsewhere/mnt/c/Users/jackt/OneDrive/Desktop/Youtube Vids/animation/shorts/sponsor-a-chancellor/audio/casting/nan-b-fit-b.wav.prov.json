@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nan-b-fit-b.wav",
+ "made": "2026-11-11T15:08:02+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Poor bastard.",
+ "inputs": {
+  "profile": "# Audio Profile\nA Geordie grandmother in her late seventies, soft and kindly, a little frail, speaking under her breath.\n\n## Scene:\nIn her chilly hallway in her coat, reading a charity flyer that has just come through the door.\n\n## Sample Context:\nA soft, brisk mutter to herself, the two words almost run together, crisp consonants, stopping dead at the end of \"bastard\". Tender, not slow.\n",
+  "profile_file": "docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/profiles/nan-b-fit-b.md"
+ },
+ "settings": {
+  "voice": "Vindemiatrix",
+  "temperature": 1,
+  "channels": 2
+ }
+}
