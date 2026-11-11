@@ -128,3 +128,14 @@ Kai's six timeline notes (dump `feedback/timeline-r1/`; answered in `cut-notes.j
 people sleeping rough on "bed"; an empty purse on "purse"; islands sooner; the bin on "bin"; the tear = the gang going
 mental. New stills picked (dump `feedback/picks-r1/`): bed `BD5-a-a`, purse `PU5-a-b`, bin `BI5-a-a`. Clips: stack,
 islands, tear ×2, pen (first run); bed, purse, bin (second run).
+
+## 2026-11-11: tear = riot re-roll; end on the pen; a new climb beat
+
+Seen on the clips page https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY (v3). Kai: *"this is really good… I really
+like it"*. The tear is the full riot re-roll **`tr-r04a-TE4-a-a.mp4`** (*"that one looks good"*). **End on the pen held
+out to the camera.** New beat after the tear: *"a scene where all of them are just going crazy, climbing up the walls
+and tearing everything apart"*, *"climbing up the shelves"*. Stills first (key `CL`), then a clip.
+Climb stills: `CL1-a-a/b` (edit of TE4-a-a + mask reference), fix pass `CL2-a-b/c` (CL2-a-a came back as the mask
+reference itself: Flow returned an input, filed as `.STRAY-maskref`), second pass `CL3-c-a/b`. **`CL3-c-a` passes the
+zoomed check** (five masks, one triangle each, inside the ring, pointing down); offered with `CL1-a-b` (unfixed, busier)
+on the clips page v4, awaiting Kai's approval before any video credit.

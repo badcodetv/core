@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/CL2-a-c.jpg",
+ "made": "2026-11-11T11:33:10.331Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the balaclavas so that every one matches the mask in the second image: a white braided ring around the face and, inside that ring near its top right edge, a single small red triangle with its point facing down. Every masked climber gets exactly one such triangle, including the ones in the hi-vis vest, the rust mask and the charcoal mask that currently have none. Keep each mask's own colour and everything else in the image exactly the same, preserving the original style, lighting, poses and composition.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/CL1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/CL1-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "41e9f823-605c-4a21-b2b3-14eecfd96014"
+}

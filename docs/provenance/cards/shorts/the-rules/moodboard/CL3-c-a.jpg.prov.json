@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/CL3-c-a.jpg",
+ "made": "2026-11-11T11:34:51.638Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Touch up the first picture only at the masks. On the rust-brown balaclava at the bottom left, delete the stray red patch that sits outside the white ring, leaving one crisp red triangle inside the ring at its upper right, tip down. On the navy hi-vis climber and the charcoal climber, make that little red triangle bolder and sharper so it reads clearly, the same as the mask in the second picture. Nothing else changes: same people, poses, paper, shelves, light and grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/CL2-a-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/CL2-a-c.jpg",
+   "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c51c3353-a554-433e-9e7a-050289d7bd47"
+}

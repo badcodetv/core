@@ -105,5 +105,12 @@
   "round": 2,
   "url": "https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY",
   "what": "clips page v2: re-rolls r01 (good), r04a (nearly), r04b (mask fault again)"
+ },
+ {
+  "at": "2026-11-11T11:35:33+00:00",
+  "stage": "clips",
+  "round": 4,
+  "url": "https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY",
+  "what": "clips page v4: fullscreen viewer; climb stills CL3-c-a (masks pass) and CL1-a-b for approval"
  }
 ]

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/CL1-a-a.jpg",
+ "made": "2026-11-11T11:31:44.572Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same council archive basement, same cold stuttering fluorescent light, same fine grain and documentary realism as the first image, but a new shot: the gang has gone wild and is climbing the tall steel shelving on both sides like canyon walls. One hangs one-handed from a high shelf ripping files out and hurling them down, another scales the uprights with a box under his arm, two more pull whole shelves of folders down so paper avalanches toward the floor, torn pages fill the air like a blizzard. Camera stays low on the concrete floor looking straight up, ultra-wide, steep converging shelving, the figures high above. Every balaclava is the design of the mask in the second image: ribbed knit, braided white rope ring round the face, one solid red felt triangle inside the ring at its upper right, pointing down. Each mask its own colour (sage, rust, navy, charcoal, mustard), modern workwear (hoodie, puffer, hi-vis vest, work coat, bomber), gloves, no skin showing. Tall portrait frame.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/TE4-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/TE4-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "f40693fb-ab77-4a82-9cb8-aef34dd451cb"
+}
