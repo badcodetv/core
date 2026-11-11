@@ -64,5 +64,15 @@
   "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
   "what": "voice casting round 1: 4 reporter + 4 minister AI Studio takes",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/shorts/priority-lane/voices/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-11T11:22:04+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
+  "what": "voice casting round 2: five London men for the reporter (round 1 picks dumped in feedback/voices-r1)",
+  "decided": [
+   "minister = b (Orus); reporter: range of London men"
+  ]
  }
 ]
