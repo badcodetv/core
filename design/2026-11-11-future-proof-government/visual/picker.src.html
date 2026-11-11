@@ -1,0 +1,297 @@
+<title>Watching the Government</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Public+Sans:wght@400;700;800&family=Oswald:wght@500;700&family=VT323&family=Kalam:wght@400;700&display=swap">
+<style>
+/* Layout: a picking page. Three prototypes, each playing inside the same TV screen the site uses, one under the other, with a pick line under each. */
+:root{
+  --bg:#ecebe6; --panel:#f8f7f3; --ink:#17191b; --muted:#5d6268; --line:#d3d1c9; --accent:#00703c; --pickbg:#e3efe7;
+  --ui:"Archivo",system-ui,sans-serif; --gov:"Public Sans",system-ui,sans-serif; --crt:"Oswald","Arial Narrow",sans-serif;
+  --tt:"VT323",ui-monospace,monospace; --hand:"Kalam","Comic Sans MS",cursive;
+  /* inside the TV: fixed, single-theme, as on badcode.tv */
+  --tv-black:#050505; --cream:#ece6da; --amber:#E8A33D; --red:#cc2b37; --day:#E9E7E1; --hivis:#F5D300; --govgreen:#00703c; --tvink:#151515; --stat:#2f6fd6;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121416;--panel:#1b1e21;--ink:#e9e7e1;--muted:#a0a5ab;--line:#30353a;--accent:#4cc38a;--pickbg:#173025;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121416;--panel:#1b1e21;--ink:#e9e7e1;--muted:#a0a5ab;--line:#30353a;--accent:#4cc38a;--pickbg:#173025;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--ui)}
+.wrap{max-width:1060px;margin:0 auto;padding-block:36px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:56px}
+header{display:flex;flex-direction:column;gap:10px;max-width:66ch}
+h1{font:800 clamp(30px,5vw,48px)/1.02 var(--ui);font-stretch:80%;margin:0;text-wrap:balance}
+h2{font:800 clamp(22px,3vw,30px)/1.1 var(--ui);font-stretch:85%;margin:0;text-wrap:balance}
+p{margin:0}
+.lede{font-size:18px}
+.small{font-size:14px;color:var(--muted)}
+.loop{display:flex;flex-wrap:wrap;gap:6px;font:600 13px var(--gov);margin-top:4px}
+.loop span{padding:3px 10px;border:1px solid var(--line);border-radius:99px;background:var(--panel)}
+section.dir{display:flex;flex-direction:column;gap:16px}
+.dhead{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:baseline}
+.dhead .letter{font:800 44px/1 var(--ui);font-stretch:70%;color:var(--accent);grid-row:span 2}
+.dhead p{max-width:64ch;min-width:0}
+.trade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 24px;font-size:14px}
+.trade div{min-width:0}
+.trade b{display:block;font:700 13px var(--gov);color:var(--muted)}
+@media (max-width:700px){.trade{grid-template-columns:1fr}}
+.pick{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:12px 14px;background:var(--pickbg);border-radius:6px;font-size:15px}
+.pick button{font:700 14px var(--ui);padding:8px 14px;border-radius:4px;border:0;background:var(--accent);color:var(--bg);cursor:pointer}
+.pick code{font:600 14px var(--gov)}
+button:focus-visible,input:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+footer{font-size:14px;color:var(--muted);max-width:66ch;display:flex;flex-direction:column;gap:8px}
+
+/* ---------- the TV ---------- */
+.tv{position:relative;width:100%;aspect-ratio:16/10;max-width:100%;border-radius:22px;background:var(--tv-black);padding:10px;box-shadow:0 0 0 1px #2a2a2a,0 18px 40px rgba(0,0,0,.25)}
+@media (max-width:620px){.tv{aspect-ratio:3/4.6;border-radius:16px;padding:6px}}
+.scr{position:relative;width:100%;height:100%;border-radius:14px;overflow:hidden;container-type:size;isolation:isolate}
+.scr.crt::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:9;background:radial-gradient(ellipse at 50% 45%,transparent 60%,rgba(0,0,0,.5)),repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 2px,transparent 2px 4px)}
+.ctrls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
+.ctrls button{font:700 13px var(--ui);padding:6px 12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:4px;cursor:pointer}
+
+/* ===== A: live from the chamber ===== */
+.pA{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 30%,#2a2621,#070707 75%);color:var(--cream);font-family:var(--gov)}
+.pA .bug{position:absolute;top:4cqmin;left:5cqmin;display:flex;gap:1.6cqmin;align-items:center;font:500 2.8cqmin/1 var(--crt);letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
+.pA .bug i{font-style:normal;background:var(--red);color:#fff;padding:.6cqmin 1.4cqmin;letter-spacing:.1em}
+.pA .clock{position:absolute;top:4cqmin;right:5cqmin;font:500 4.6cqmin/1 var(--crt);color:var(--cream);font-variant-numeric:tabular-nums;text-align:right}
+.pA .clock small{display:block;font-size:2.2cqmin;letter-spacing:.12em;color:#a89f90;margin-top:.6cqmin;text-transform:uppercase}
+.pA .bill{position:absolute;left:5cqmin;right:30cqw;top:13cqh;display:grid;gap:1.6cqmin}
+.pA .bill .t{font:700 7cqmin/.95 var(--crt);text-transform:uppercase;color:#f1ebe0;margin:0}
+.pA .bill .clause{font:2.7cqmin/1.4 var(--gov);color:#ddd5c7;max-width:60ch;min-height:12cqh}
+.pA .bill .clause b{display:block;font:700 2.1cqmin var(--gov);color:#a89f90;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.6cqmin}
+.pA .bill del{color:#8b8378;text-decoration-color:var(--red);text-decoration-thickness:.35cqmin}
+.pA .bill ins{text-decoration:none;background:rgba(0,112,60,.35);box-shadow:0 0 0 .4cqmin rgba(0,112,60,.35)}
+.pA .odds{position:absolute;right:5cqmin;top:17cqh;width:22cqw;display:grid;gap:1cqmin;text-align:right}
+.pA .odds b{font:700 9cqmin/1 var(--crt);color:var(--cream)}
+.pA .odds span{font:2.2cqmin/1.3 var(--gov);color:#a89f90}
+.pA .lower{position:absolute;left:0;right:0;bottom:15cqh;display:grid;grid-template-columns:auto 1fr;min-height:15cqh}
+.pA .who{font:700 2.8cqmin/1.1 var(--crt);text-transform:uppercase;letter-spacing:.06em;padding:2cqmin 3cqmin 2cqmin 5cqmin;color:#0b0b0b;display:flex;flex-direction:column;justify-content:center;gap:.6cqmin;min-width:26cqw}
+.pA .who small{font:500 2cqmin var(--gov);letter-spacing:0;text-transform:none}
+.pA .said{background:rgba(10,10,10,.88);padding:2cqmin 5cqmin 2cqmin 3cqmin;font:2.9cqmin/1.35 var(--gov);color:#f1ebe0;display:flex;align-items:center}
+.pA .rail{position:absolute;left:5cqmin;right:5cqmin;bottom:4cqh;display:grid;grid-template-columns:repeat(6,1fr);gap:1cqmin;list-style:none;margin:0;padding:0}
+.pA .rail li{border-top:.7cqmin solid #3a3632;padding-top:1cqmin;font:500 2cqmin/1.2 var(--crt);letter-spacing:.06em;text-transform:uppercase;color:#7d766a}
+.pA .rail li.done{border-color:var(--amber);color:#cfc8bb}
+.pA .rail li.now{border-color:#fff;color:#fff}
+.pA .rail li small{display:block;font:2cqmin var(--gov);text-transform:none;letter-spacing:0;font-variant-numeric:tabular-nums}
+.pA .fade{animation:aIn .45s ease both}
+@keyframes aIn{from{opacity:0;transform:translateY(1.4cqmin)}}
+@container (max-aspect-ratio:3/4){
+  .pA .bill{right:5cqmin;top:12cqh}.pA .bill .t{font-size:9cqw}.pA .bill .clause{font-size:3.6cqw}
+  .pA .odds{top:auto;bottom:47cqh;left:5cqmin;right:auto;width:auto;text-align:left}.pA .odds b{font-size:10cqw}.pA .odds span{font-size:3cqw}
+  .pA .lower{grid-template-columns:1fr;bottom:13cqh}.pA .who{font-size:3.6cqw}.pA .who small{font-size:2.8cqw}.pA .said{font-size:3.6cqw;padding:2cqmin 5cqmin}
+  .pA .rail{grid-template-columns:repeat(3,1fr)}.pA .rail li{font-size:2.6cqw}.pA .rail li small{font-size:2.6cqw}
+  .pA .clock{font-size:6cqw}.pA .bug{font-size:3cqw}
+}
+
+/* ===== B: the departures board (teletext) ===== */
+.pB{position:absolute;inset:0;background:#000;color:#fff;font:4.1cqh/1 var(--tt);padding:3cqh 3cqw;display:flex;flex-direction:column;gap:.4cqh}
+.pB .row{display:grid;grid-template-columns:1fr 6.5em 7.5em 6em;gap:0 1.2em;white-space:nowrap;min-width:0}
+.pB .row>*{overflow:hidden;text-overflow:clip;min-width:0}
+.pB .head{display:flex;justify-content:space-between;white-space:nowrap}
+.pB .y{color:#ff0}.pB .c{color:#0ff}.pB .g{color:#0f0}.pB .r{color:#f33}.pB .m{color:#f0f}.pB .w{color:#fff}.pB .bl{color:#55f}
+.pB .banner{background:#00f;color:#ff0;padding:.6cqh 1em;display:flex;justify-content:space-between;gap:1em;font-size:6cqh;line-height:1.1}
+.pB .banner b{font-weight:400}
+.pB .sub{background:#f0f;color:#000;padding:.3cqh 1em}
+.pB .cols{color:#0ff}
+.pB .bar{letter-spacing:-.06em}
+.pB .fast{margin-top:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1em}
+.pB .fast button{all:unset;cursor:pointer;text-align:left;font:inherit;white-space:nowrap}
+.pB .fast button:focus-visible{outline:2px solid #fff}
+.pB .fast button[aria-pressed="true"]{text-decoration:underline}
+.pB .fast button.r{color:#f33}.pB .fast button.g{color:#0f0}.pB .fast button.y{color:#ff0}.pB .fast button.c{color:#0ff}
+.pB .due{display:flex;gap:1em;align-items:baseline;color:#fff;flex-wrap:wrap}
+.pB .due b{font-weight:400;color:#ff0;font-size:9cqh;line-height:1}
+@container (max-aspect-ratio:3/4){
+  .pB{font-size:3cqh}.pB .banner{font-size:4cqh}
+  .pB .row{grid-template-columns:1fr 4.6em 5.4em}
+  .pB .row>:nth-child(2){display:none}
+  .pB .fast{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ===== C: the workbench ===== */
+.pC{position:absolute;inset:0;background:var(--day);color:var(--tvink);font-family:var(--gov);display:grid;grid-template-columns:1fr 30cqw;grid-template-rows:auto 1fr auto;overflow:hidden}
+.pC .top{grid-column:1/-1;background:var(--tvink);color:#fff;padding:1.8cqmin 4cqmin;display:flex;justify-content:space-between;align-items:center;gap:2cqmin;font:700 2.6cqmin var(--gov)}
+.pC .top span{font-weight:400;color:#cfcfcf}
+.pC .sheet{position:relative;margin:3.5cqmin 0 2cqmin 4cqmin;background:#fffdf8;box-shadow:0 .4cqmin 0 #d8d4c8,0 1.6cqmin 3cqmin rgba(0,0,0,.12);padding:3.4cqmin 4cqmin;overflow:hidden;min-width:0;display:flex;flex-direction:column;gap:1.8cqmin}
+.pC .sheet h3{margin:0;font:800 4.4cqmin/1.05 var(--gov)}
+.pC .f{display:grid;gap:.4cqmin;font:2.35cqmin/1.4 var(--gov)}
+.pC .f b{font:700 1.8cqmin var(--gov);letter-spacing:.05em;text-transform:uppercase;color:#505a5f}
+.pC .f del{color:#8a8a8a;text-decoration-color:var(--red);text-decoration-thickness:.3cqmin}
+.pC .f ins{text-decoration:none;background:linear-gradient(transparent 55%,rgba(245,211,0,.55) 55%)}
+.pC .stamp{position:absolute;right:4cqmin;top:3cqmin;font:800 2.8cqmin/1 var(--gov);letter-spacing:.12em;text-transform:uppercase;padding:1cqmin 1.6cqmin;border:.5cqmin solid currentColor;transform:rotate(-7deg);opacity:.85}
+.pC .stamp.conceded{color:var(--govgreen)}.pC .stamp.rebutted{color:var(--red)}.pC .stamp.blank{display:none}
+.pC .notes{padding:3.5cqmin 4cqmin 2cqmin 3cqmin;display:flex;flex-direction:column;gap:2cqmin;min-width:0;overflow:hidden}
+.pC .note{font:2.5cqmin/1.3 var(--hand);padding:1.4cqmin 1.8cqmin;background:#fff7c2;box-shadow:0 .3cqmin .8cqmin rgba(0,0,0,.15);transform:rotate(-1deg)}
+.pC .note:nth-child(2){transform:rotate(1.2deg);background:#e6eefc}
+.pC .note b{display:block;font:700 1.8cqmin var(--gov);letter-spacing:.05em;text-transform:uppercase;margin-bottom:.4cqmin}
+.pC .note.opp b{color:var(--red)}.pC .note.ans b{color:var(--govgreen)}.pC .note.st b{color:var(--stat)}
+.pC .bench{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:2.4cqmin;align-items:center;padding:2cqmin 4cqmin 3cqmin;font:2.2cqmin var(--gov)}
+.pC .bench input{width:100%;accent-color:var(--tvink)}
+.pC .bench button{font:700 2.2cqmin var(--gov);padding:1cqmin 2cqmin;border:.35cqmin solid var(--tvink);background:#fff;color:var(--tvink);cursor:pointer;border-radius:0}
+.pC .bench .v{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pC .haz{position:absolute;left:0;right:0;bottom:0;height:1.6cqmin;background:repeating-linear-gradient(45deg,var(--hivis) 0 2cqmin,var(--tvink) 2cqmin 4cqmin)}
+@container (max-aspect-ratio:3/4){
+  .pC{grid-template-columns:1fr;grid-template-rows:auto auto 1fr auto}
+  .pC .sheet{margin:3cqmin 3cqmin 1cqmin;padding:3cqmin}
+  .pC .sheet h3{font-size:5.5cqw}.pC .f{font-size:3.4cqw}.pC .f b{font-size:2.6cqw}
+  .pC .notes{order:3;padding:1cqmin 3cqmin;flex-direction:row;gap:2cqmin}.pC .note{font-size:3.3cqw;flex:1;min-width:0}.pC .note b{font-size:2.5cqw}
+  .pC .top{font-size:3.4cqw}.pC .bench{font-size:3.2cqw;order:4}.pC .bench button{font-size:3.2cqw}
+  .pC .stamp{font-size:3.4cqw}
+}
+@media (prefers-reduced-motion:reduce){.pA .fade{animation:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Watching the Government</h1>
+    <p class="lede">Today the government channel is a list. These are three ways to show the government working instead, each built from a real exchange and the real 55 policies. Pick one and I build it into badcode.tv.</p>
+    <div class="loop" aria-label="The loop each direction has to show"><span>A policy is written</span><span>The opposition attacks it</span><span>The statistician checks it can be measured</span><span>The minister answers</span><span>A human signs it off</span><span>Its prediction is marked</span></div>
+    <p class="small">The exchange shown in A and C is the energy secretary's "Cut the Standing Charge" from the 11 November dry run, word for word but shortened. Prototypes run inside the same TV screen the site uses; narrow your window to see the phone layout.</p>
+  </header>
+
+  <!-- A -->
+  <section class="dir" aria-labelledby="hA">
+    <div class="dhead"><span class="letter">A</span><h2 id="hA">Live from the chamber</h2><p>The government as a broadcast. One policy at a time goes through the day on air, with a caption for each speaker, the clause being rewritten on screen, and the odds in the corner.</p></div>
+    <div class="tv"><div class="scr crt" id="scrA"></div></div>
+    <div class="ctrls"><button id="aPrev">◀ Back</button><button id="aPlay" aria-pressed="true">Pause</button><button id="aNext">Next ▶</button><span class="small" id="aPos"></span></div>
+    <div class="trade">
+      <div><b>Shows best</b>The argument. You see a minister concede a point and the policy change because of it.</div>
+      <div><b>Shows least</b>Breadth. It plays one policy at a time, so the 55 and the scoreboard sit behind it.</div>
+      <div><b>On the site</b>Programme 1 of the government channel plays the latest exchange; the policy pages stay as they are.</div>
+    </div>
+    <div class="pick">Want this one? <button data-pick="A">Copy "Build A"</button> and paste it to Claude.</div>
+  </section>
+
+  <!-- B -->
+  <section class="dir" aria-labelledby="hB">
+    <div class="dhead"><span class="letter">B</span><h2 id="hB">The departures board</h2><p>The government as a teletext page. Every policy is a row, like trains on a board: who owns it, our odds, the day its prediction is marked, and whether it held. The coloured keys filter it.</p></div>
+    <div class="tv"><div class="scr crt" id="scrB"></div></div>
+    <div class="ctrls"><span class="small">Use the four coloured keys on screen. Pages turn by themselves, as teletext did.</span></div>
+    <div class="trade">
+      <div><b>Shows best</b>Issue by issue, and that we're on the hook: 55 separate bets with dates, the first due 15 December.</div>
+      <div><b>Shows least</b>The argument. It says a policy was argued, not what was said.</div>
+      <div><b>On the site</b>Becomes the government's teletext pages and the scoreboard; the daylight pages stay for reading.</div>
+    </div>
+    <div class="pick">Want this one? <button data-pick="B">Copy "Build B"</button> and paste it to Claude.</div>
+  </section>
+
+  <!-- C -->
+  <section class="dir" aria-labelledby="hC">
+    <div class="dhead"><span class="letter">C</span><h2 id="hC">The workbench</h2><p>The government as a building site. One policy lies on the bench as a sheet; the opposition's and statistician's notes are stuck beside it; each change is crossed out and rewritten in place. Drag the slider back and forth, or press Undo, to watch it change and change back.</p></div>
+    <div class="tv"><div class="scr" id="scrC"></div></div>
+    <div class="trade">
+      <div><b>Shows best</b>Small, checked and undoable. Every change is one visible edit you can wind back.</div>
+      <div><b>Shows least</b>Speed and drama. It is a thing you handle, not a thing you watch.</div>
+      <div><b>On the site</b>Every policy page gets its bench and slider; the list stays as the way in.</div>
+    </div>
+    <div class="pick">Want this one? <button data-pick="C">Copy "Build C"</button> and paste it to Claude.</div>
+  </section>
+
+  <footer>
+    <p><b>Mixing is allowed.</b> A likely blend is B as the front page (the whole government at a glance) with C on each policy's page (how that one changed). Say "B with C inside" if that's it.</p>
+    <p>Whatever you pick keeps the rules: plain words, no software names on screen, the chain never mentioned, misses printed as loudly as hits.</p>
+  </footer>
+</div>
+
+<script>
+const POLS = /*POLS*/[];
+const NAMES={'prime-minister':'PM','chancellor':'CHANC','foreign':'FOREIGN','home':'HOME','education':'EDUC','defence':'DEFENCE','health':'HEALTH','housing':'HOUSING','energy-climate':'ENERGY','work-pensions':'WORK'};
+const ARGUED=new Set(['chancellor/the-slice','energy-climate/standing-charge','home/the-roof-comes-with-the-arrival','prime-minister/test-every-law','work-pensions/a-say-before-the-saving']);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ---- the real exchange (debates/energy-climate/standing-charge.md, shortened) ----
+const FAIL0='Prepayment bills don\'t show the cut within six months.';
+const FAIL1='Six months in, prepayment customers\' standing charge hasn\'t fallen at least 10p a day more than direct-debit customers\', or their yearly bill hasn\'t fallen at least £30 more.';
+const OUT0='Gas customers the government doesn\'t expect to save; homes on heating oil.';
+const OUT1='Homes on heating oil; households whose energy is paid inside their rent.';
+const CHK0='Ofgem\'s April cap puts the electricity standing charge at least 5% higher: above 57.57p a day, with VAT.';
+const CHK1='Ofgem\'s April cap puts the electricity standing charge, before VAT, above 54.83p a day.';
+
+const A_STEPS=[
+ {t:'06:00',stage:0,who:'The Energy Secretary',role:'proposes',col:'#4cc38a',said:'Cut the standing charge, prepayment first, paid for by the windfall from cheap power sold at gas prices.',field:'It fails if',clause:esc(FAIL0)},
+ {t:'07:30',stage:1,who:'The Opposition',role:'attacks',col:'#ff6b6b',said:'Your fail number can\'t fail. It\'s true or false by how the bill is printed, not by what happens to anyone.',field:'It fails if',clause:esc(FAIL0)},
+ {t:'08:00',stage:2,who:'The Statistician',role:'checks',col:'#7fb0ff',said:'Your prediction is really a bet on the VAT rate. Mark the figure before VAT, against 54.83p.',field:'Our prediction',clause:esc(CHK0)},
+ {t:'06:00',stage:3,who:'The Energy Secretary',role:'answers',col:'#4cc38a',said:'Brilliant catch, and a bit embarrassing. New fail number, on what actually lands on the bill.',field:'It fails if',clause:`<del>${esc(FAIL0)}</del> <ins>${esc(FAIL1)}</ins>`},
+ {t:'06:00',stage:3,who:'The Energy Secretary',role:'answers',col:'#4cc38a',said:'Right, we\'d have been forecasting the VAT rate. Before VAT it is.',field:'Our prediction',clause:`<del>${esc(CHK0)}</del> <ins>${esc(CHK1)}</ins>`},
+ {t:'09:10',stage:4,who:'Kai',role:'signs it off',col:'#E8A33D',said:'Five points conceded, one argued back. Signed off. It\'s live, with its history on its page.',field:'It fails if',clause:esc(FAIL1)},
+ {t:'6 MAR 2027',stage:5,who:'The Statistician',role:'will mark it',col:'#7fb0ff',said:'On 6 March we read Ofgem\'s figure and print the result, held or missed, whichever it is.',field:'Our prediction',clause:esc(CHK1)},
+];
+const RAIL=['Written','Attacked','Checked','Answered','Signed off','Marked'];
+const RAILT=['06:00','07:30','08:00','next 06:00','by a human','6 Mar 2027'];
+let ai=0,aTimer=null,aPlaying=!reduce;
+function drawA(){
+  const s=A_STEPS[ai];
+  document.getElementById('scrA').innerHTML=`<div class="pA">
+   <div class="bug"><i>LIVE</i> The BadCode Government</div>
+   <div class="clock">${s.t}<small>${s.stage===5?'marking day':'11 Nov 2026'}</small></div>
+   <div class="bill"><p class="t">Cut the Standing Charge</p><div class="clause fade" key="${ai}"><b>${s.field}</b>${s.clause}</div></div>
+   <div class="odds"><b>6 in 10</b><span>our odds the April cap goes up, before VAT. Marked 6 March 2027.</span></div>
+   <div class="lower fade"><div class="who" style="background:${s.col}">${esc(s.who)}<small>${esc(s.role)}</small></div><div class="said">${esc(s.said)}</div></div>
+   <ol class="rail">${RAIL.map((r,i)=>`<li class="${i<s.stage?'done':i===s.stage?'now':''}">${r}<small>${RAILT[i]}</small></li>`).join('')}</ol></div>`;
+  document.getElementById('aPos').textContent=`Step ${ai+1} of ${A_STEPS.length}`;
+}
+function aTick(){clearTimeout(aTimer);if(aPlaying)aTimer=setTimeout(()=>{ai=(ai+1)%A_STEPS.length;drawA();aTick()},5200)}
+document.getElementById('aNext').onclick=()=>{ai=(ai+1)%A_STEPS.length;drawA();aTick()};
+document.getElementById('aPrev').onclick=()=>{ai=(ai+A_STEPS.length-1)%A_STEPS.length;drawA();aTick()};
+const aPlay=document.getElementById('aPlay');
+function aBtn(){aPlay.textContent=aPlaying?'Pause':'Play';aPlay.setAttribute('aria-pressed',aPlaying)}
+aPlay.onclick=()=>{aPlaying=!aPlaying;aBtn();aTick()};
+drawA();aBtn();aTick();
+
+// ---- B: teletext board ----
+const TODAY=new Date();
+const MON=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+const d6=s=>{const[y,m,d]=s.split('-');return d+MON[+m-1]+y.slice(2)};
+const bar=p=>{const n=Math.round(p*10);return '█'.repeat(n)+'░'.repeat(10-n)};
+const FILTERS=[
+ {k:'Due next',c:'r',f:()=>true,sort:(a,b)=>a[5].localeCompare(b[5])},
+ {k:'Argued',c:'g',f:x=>ARGUED.has(x[0]),sort:(a,b)=>a[5].localeCompare(b[5])},
+ {k:'Not ready',c:'y',f:x=>x[8],sort:(a,b)=>a[0].localeCompare(b[0])},
+ {k:'By minister',c:'c',f:()=>true,sort:(a,b)=>a[0].localeCompare(b[0])},
+];
+let bf=0,bp=0,bTimer=null;
+function stateOf(x){if(x[8])return['NOT READY','y'];if(x[7]==='held')return['HELD','g'];if(x[7]==='failed')return['MISSED','r'];if(x[7]==='void')return['VOID','w'];return['TO MARK','w']}
+function drawB(){
+  const F=FILTERS[bf];const rows=POLS.filter(F.f).sort(F.sort);
+  const per=innerWidth<620?10:11;const pages=Math.max(1,Math.ceil(rows.length/per));bp%=pages;
+  const slice=rows.slice(bp*per,bp*per+per);
+  const next=POLS.filter(x=>!x[8]).sort((a,b)=>a[5].localeCompare(b[5]))[0];
+  const days=Math.max(0,Math.ceil((new Date(next[5])-TODAY)/864e5));
+  const now=TODAY.toTimeString().slice(0,5);
+  document.getElementById('scrB').innerHTML=`<div class="pB" role="region" aria-label="Teletext page 410">
+   <div class="head"><span>P410 <span class="c">410</span></span><span class="y">BADCODE</span><span>${TODAY.getDate()} ${MON[TODAY.getMonth()]} <span class="y">${now}</span></span></div>
+   <div class="banner"><b>THE GOVERNMENT</b><b class="w">${POLS.length} POLICIES</b></div>
+   <div class="sub">${F.k.toUpperCase()} · EACH ONE A BET WITH A DATE   ${bp+1}/${pages}</div>
+   <div class="row cols"><span>POLICY</span><span>WHO</span><span>OUR ODDS</span><span>MARKED</span></div>
+   ${slice.map(x=>{const[s,c]=stateOf(x);return `<div class="row"><span class="${ARGUED.has(x[0])?'g':'w'}">${esc(x[1].toUpperCase())}</span><span class="c">${NAMES[x[2]]||''}</span><span class="bar ${c==='y'?'y':'m'}">${x[8]?'NO TEST YET':bar(+x[6])}</span><span class="${c}">${x[8]?s:d6(x[5])}</span></div>`}).join('')}
+   <div class="due"><span class="c">FIRST MARKED IN</span><b>${days} DAYS</b><span>${esc(next[1].toUpperCase())} · ${d6(next[5])}</span></div>
+   <div class="fast">${FILTERS.map((f,i)=>`<button class="${f.c}" data-f="${i}" aria-pressed="${i===bf}">${f.k}</button>`).join('')}</div></div>`;
+  document.querySelectorAll('#scrB [data-f]').forEach(b=>b.onclick=()=>{bf=+b.dataset.f;bp=0;drawB();bTick()});
+}
+function bTick(){clearInterval(bTimer);if(!reduce)bTimer=setInterval(()=>{bp++;drawB()},6000)}
+drawB();bTick();addEventListener('resize',()=>drawB());
+
+// ---- C: workbench ----
+const C_V=[
+ {lbl:'As written, 06:00',fail:esc(FAIL0),out:esc(OUT0),chk:esc(CHK0),stamp:'blank',n:[]},
+ {lbl:'Change 1: the fail number',fail:`<del>${esc(FAIL0)}</del> <ins>${esc(FAIL1)}</ins>`,out:esc(OUT0),chk:esc(CHK0),stamp:'conceded',n:[['opp','The Opposition','Your fail number can\'t fail. It\'s true or false by how the bill is printed.'],['ans','The Energy Secretary','Brilliant catch, and a bit embarrassing. New one, on what lands.']]},
+ {lbl:'Change 2: who it leaves out',fail:esc(FAIL1),out:`<del>${esc(OUT0)}</del> <ins>${esc(OUT1)}</ins>`,chk:esc(CHK0),stamp:'conceded',n:[['opp','The Opposition','Gas customers are a different bill. Flats where energy comes in the rent are missing.'],['ans','The Energy Secretary','Fair. Gas customers out, renters with bills included in.']]},
+ {lbl:'Point 3: argued back',fail:esc(FAIL1),out:esc(OUT1),chk:esc(CHK0),stamp:'rebutted',n:[['opp','The Opposition','Your prediction forecasts a price rise, not whether your policy worked.'],['ans','The Energy Secretary','A government with no power can\'t run the trial. It predicts the problem. If Ofgem holds the charge, our case is weaker, in public.']]},
+ {lbl:'Change 4: the prediction',fail:esc(FAIL1),out:esc(OUT1),chk:`<del>${esc(CHK0)}</del> <ins>${esc(CHK1)}</ins>`,stamp:'conceded',n:[['st','The Statistician','This is a bet on the VAT rate. Mark it before VAT, against 54.83p.'],['ans','The Energy Secretary','Right. Before VAT it is. Odds 6 in 10.']]},
+];
+let cv=C_V.length-1;
+function drawC(){
+  const v=C_V[cv];
+  document.getElementById('scrC').innerHTML=`<div class="pC">
+   <div class="top">Cut the Standing Charge <span>The Energy Secretary · draft · version ${cv+1} of ${C_V.length}</span></div>
+   <div class="sheet"><div class="stamp ${v.stamp}">${v.stamp}</div><h3>Cut the standing charge, prepayment first.</h3>
+     <div class="f"><b>It fails if</b><span>${v.fail}</span></div>
+     <div class="f"><b>Who it leaves out</b><span>${v.out}</span></div>
+     <div class="f"><b>Our prediction · 6 in 10 · marked 6 March 2027</b><span>${v.chk}</span></div></div>
+   <div class="notes">${v.n.length?v.n.map(([c,w,t])=>`<div class="note ${c}"><b>${w}</b>${esc(t)}</div>`).join(''):'<div class="note"><b>The bench</b>Nobody has argued with it yet. The opposition sits at 07:30.</div>'}</div>
+   <div class="bench"><button id="cUndo" ${cv===0?'disabled':''}>Undo</button><input id="cSl" type="range" min="0" max="${C_V.length-1}" value="${cv}" aria-label="Version of the policy"><span class="v">${esc(v.lbl)}</span></div>
+   <div class="haz"></div></div>`;
+  document.getElementById('cSl').oninput=e=>{cv=+e.target.value;drawC();document.getElementById('cSl').focus()};
+  document.getElementById('cUndo').onclick=()=>{if(cv>0){cv--;drawC();document.getElementById('cUndo').focus()}};
+}
+drawC();
+
+document.querySelectorAll('[data-pick]').forEach(b=>b.onclick=async()=>{const t='Build '+b.dataset.pick;try{await navigator.clipboard.writeText(t);b.textContent='Copied "'+t+'"'}catch(e){b.textContent='Type "'+t+'" to Claude'}});
+</script>
