@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-c-sadaltager.wav",
+ "made": "2026-11-11T11:21:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 2, London men (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA Walthamstow market trader in his forties moonlighting as a reporter, bright, cheeky and quick, all patter and twinkle, East London through and through. Cheerful on the surface with a sharp edge underneath. Clear speech.\n\n## Scene:\nUnder a streetlamp in the rain, microphone in hand, the traffic held behind him.\n\n## Sample Context:\nHe sells the story like he sells three punnets for a pound, grinning, and the grin says what he thinks.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Sadaltager"
+ }
+}

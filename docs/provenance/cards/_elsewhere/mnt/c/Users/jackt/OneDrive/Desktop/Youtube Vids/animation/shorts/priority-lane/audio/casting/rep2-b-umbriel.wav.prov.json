@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-b-umbriel.wav",
+ "made": "2026-11-11T11:21:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 2, London men (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA Hackney lad in his mid-twenties, a citizen journalist with a big online following, relaxed and unimpressed, modern multicultural London speech. Unhurried, faintly amused, a little raised eyebrow in the voice. Clear diction.\n\n## Scene:\nFilming himself in the rain at a blocked junction late at night.\n\n## Sample Context:\nHe talks to his viewers like they are mates on the sofa, and lets the absurdity speak for itself.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Umbriel"
+ }
+}

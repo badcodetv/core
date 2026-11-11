@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-a-algenib.wav",
+ "made": "2026-11-11T11:21:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 2, London men (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA sixty-something ex-docker from Bermondsey, turned local radio reporter, slow and gravelly, utterly deadpan. Says everything as if he is reading the shipping forecast at a funeral. Clear words, a broad old South London accent.\n\n## Scene:\nA wet junction at night, rain dripping off his hood, delivering a report to camera.\n\n## Sample Context:\nHe has watched this city for sixty years and nothing surprises him any more.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Algenib"
+ }
+}

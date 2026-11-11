@@ -1246,3 +1246,5 @@ word clearly voiced*. Keep `[sighs]` / `[tired]` away from it — they add the b
 - [Gemini API terms](https://ai.google.dev/gemini-api/terms) · [Data logging policy](https://ai.google.dev/gemini-api/docs/logs-policy) — the unpaid-services human-review clause
 - [Google AI plans for developers](https://ai.google.dev/gemini-api/docs/google-ai-plans) — **UI only, not API keys**
 - [GDP premium folded into AI Pro/Ultra](https://blog.google/innovation-and-ai/technology/developers-tools/gdp-premium-ai-pro-ultra/) — the $100/month credits
+
+> ⚠️ **2026-11-11 (Priority Lane casting, unconfirmed):** 13 successful `gemini-3.1-flash-tts-preview` calls in one day with no 429. The "10 a day" cap above may have been lifted or may apply per key or tier. Don't rely on either number: budget for 10 and try anyway.

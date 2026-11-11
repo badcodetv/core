@@ -1,13 +1,52 @@
 {
  "title": "Priority Lane Voices",
- "eyebrow": "Priority Lane · voice casting · round 1",
+ "eyebrow": "Priority Lane · voice casting · round 2",
  "heading": "Who do they sound like?",
- "intro": "Four takes per role, each a different idea. Play them, Pick one per role, and leave a note if none is right (e.g. 'b but older'). Notes start round 2.",
+ "intro": "Round 2: five London men for the reporter, as asked. Minister is picked (b, the slick hiss). Pick one, or note what to change.",
  "sections": [
   {
    "h": "Voices",
    "lede": "Real lines from the locked dialogue (1D).",
    "groups": [
+    {
+     "slot": "reporter-r2",
+     "round": 2,
+     "title": "The reporter: London men",
+     "line": "\"Traffic is being managed, to keep an important journey moving.\" … \"A politician blocking the path of an ambulance. Poetic, really...\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting/rep2-a-algenib.mp3",
+       "label": "a: Bermondsey ex-docker, 60s (Algenib)",
+       "warn": "shipping-forecast deadpan"
+      },
+      {
+       "id": "b",
+       "src": "casting/rep2-b-umbriel.mp3",
+       "label": "b: Hackney citizen journalist, 20s (Umbriel)",
+       "warn": "relaxed, raised eyebrow"
+      },
+      {
+       "id": "c",
+       "src": "casting/rep2-c-sadaltager.mp3",
+       "label": "c: Walthamstow market trader, 40s (Sadaltager)",
+       "warn": "cheeky patter, sharp edge"
+      },
+      {
+       "id": "d",
+       "src": "casting/rep2-d-achird.mp3",
+       "label": "d: Islington broadsheet journalist, 30s (Achird)",
+       "warn": "dry, polite contempt"
+      },
+      {
+       "id": "e",
+       "src": "casting/rep2-e-enceladus.mp3",
+       "label": "e: Croydon courts reporter, 50s (Enceladus)",
+       "warn": "breathy, off the record"
+      }
+     ]
+    },
     {
      "slot": "reporter",
      "title": "The reporter",
@@ -38,7 +77,8 @@
        "label": "d: South London night stringer, 40s (Algenib)",
        "warn": "knackered, talking to a mate"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "minister",
@@ -70,9 +110,11 @@
        "label": "d: blustering shire baronet, 60s (Rasalgethi)",
        "warn": "booming harrumph"
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }
- ]
+ ],
+ "round": 2
 }

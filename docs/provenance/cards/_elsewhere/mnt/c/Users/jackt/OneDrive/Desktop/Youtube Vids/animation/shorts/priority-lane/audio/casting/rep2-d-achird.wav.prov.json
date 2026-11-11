@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-d-achird.wav",
+ "made": "2026-11-11T11:21:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 2, London men (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nAn Islington broadsheet journalist in his thirties, educated London voice, dry and precise, quietly witty. Measured, articulate, a hint of contempt so polite you could miss it.\n\n## Scene:\nReporting for a nightly news bulletin from a rain-soaked pavement.\n\n## Sample Context:\nHe chooses each word carefully and lets the irony sit in the pauses.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Achird"
+ }
+}

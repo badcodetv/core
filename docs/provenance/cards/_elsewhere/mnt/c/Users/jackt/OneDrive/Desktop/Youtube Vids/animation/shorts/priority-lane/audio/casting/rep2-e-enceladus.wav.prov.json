@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav",
+ "made": "2026-11-11T11:21:46+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 2, London men (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA fifty-odd veteran crime and courts reporter, low and breathy, almost confidential, as if leaning in to tell you something off the record. Weary warmth, a South London accent from Croydon, clear words.\n\n## Scene:\nMic held tight under his chin in the rain at night, the stopped traffic behind him.\n\n## Sample Context:\nHe half-whispers the report like a man who knows how this ends.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Enceladus"
+ }
+}
