@@ -90,5 +90,20 @@
   ],
   "feedback": "feedback/picks-r1",
   "feedback_docs": 3
+ },
+ {
+  "at": "2026-11-11T10:53:39+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY",
+  "what": "clips review page: 8 clips in cut order, 3 flagged for mask re-roll",
+  "rebuild": "hand-built page in scratchpad the-rules-clips/index.html"
+ },
+ {
+  "at": "2026-11-11T11:07:00+00:00",
+  "stage": "clips",
+  "round": 2,
+  "url": "https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY",
+  "what": "clips page v2: re-rolls r01 (good), r04a (nearly), r04b (mask fault again)"
  }
 ]

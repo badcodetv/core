@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-r04b-TE4-a-a.mp4",
+ "made": "2026-11-11T11:05:56+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The two masked figures nearest the camera stare straight down the lens while they tear sheets of paper in half again and again, furious and fast, flinging the pieces at the camera; behind them the others tear and throw too, and paper whirls under the flickering fluorescent light. Every balaclava keeps facing the camera the whole time, so its white ring and the small red triangle inside it stay clearly visible; nobody turns their head away. Shot at 24fps with a 180-degree shutter so fast hands and paper smear with motion blur. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/TE4-a-a.jpg",
+ "why": "Re-roll of 04b: triangles missing / pointing up (Kai: re-roll, 2026-11-11)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/TE4-a-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+  "key": "r04b",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T11:04:56.642Z"
+ }
+}

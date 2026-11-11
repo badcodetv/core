@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-r01-ST3-a-a.mp4",
+ "made": "2026-11-11T11:04:48+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The five masked figures stand at the foot of the towering paper stack, facing the camera, almost motionless: shoulders rise and fall with breath, one shifts his weight from foot to foot, fingers twitch at their sides. Every balaclava keeps facing the camera the whole time, so its white ring and the small red triangle inside it stay clearly visible; nobody turns their head away. Overhead one fluorescent tube flickers and buzzes. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST3-a-a.jpg",
+ "why": "Re-roll of 01: heads turned up and the triangles vanished (Kai: re-roll, 2026-11-11)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST3-a-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+  "key": "r01",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T10:51:26.106Z"
+ }
+}
