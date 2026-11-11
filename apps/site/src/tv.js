@@ -27,7 +27,7 @@
   const S = C.stories, SVP = C.storyverse;
   // NEWS is the catch-all for specials (Kai, 2026-11-11): 1 Future Proof, 2 The Storyverse, then Money For
   // Something (its bulletins when there are some, its title card until then). Shorts go here too.
-  const NP = [{ k: 'fp' }, { k: 'sv' }, ...(C.news.bulletins.length ? C.news.bulletins.map((b, i) => ({ k: 'mfs', i })) : [{ k: 'mfs', i: 0 }])];
+  const NP = [{ k: 'fp' }, { k: 'sv' }, ...C.news.bulletins.map((b, i) => ({ k: 'mfs', i }))]; // Money For Something joins with its first bulletin
   const NEWS_FP = 1, NEWS_SV = 2;
   const newsProg = p => NP[p - 1] || NP[NP.length - 1];
   // GOVT: 1 the manifesto (where it stands), then the government in action, as a broadcast
@@ -386,6 +386,8 @@
   // ---------- render ----------
   function syncRemote() {
     $$('.strands button').forEach(b => b.setAttribute('aria-current', !state.text && b.dataset.k === state.ch));
+    // grey out the numbers this channel has no programme for (0, the test card, always works)
+    $$('.pad [data-k], .nav .num[data-k]').forEach(b => { const n = +b.dataset.k; b.disabled = !state.text && n > 0 && n > count[state.ch]; });
   }
   function render(gesture) {
     syncRemote();

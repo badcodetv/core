@@ -54,7 +54,7 @@ const SITE_DESC = `${A.lede} ${A.request.replace('fuck', 'f***')} Stories, the n
 // the plain-text page under each address
 const nav = `<nav aria-label="Channels"><ul>
 <li><a href="/stories">Stories</a>: ${S.map((s, i) => `<a href="/stories/${i + 1}">${esc(s.title)}</a>`).join(', ')}. Songs: ${S.map((s, i) => `<a href="/stories/${i + 5}">${esc(s.song)}</a>`).join(', ')}.</li>
-<li><a href="/news">News</a>: <a href="/news">Future Proof</a>, <a href="/news/2">${esc(SVP.title)}</a> and <a href="/news/3">${esc(N.title)}</a></li>
+<li><a href="/news">News</a>: <a href="/news">Future Proof</a>, <a href="/news/2">${esc(SVP.title)}</a>${N.bulletins.length ? ` and <a href="/news/3">${esc(N.title)}</a>` : ''}</li>
 <li><a href="/government">The BadCode Government</a>: <a href="/government/2">live</a>, <a href="/government/3">every policy</a>, <a href="/government/4">the record</a>, <a href="/government/5">the arguments</a></li>
 <li><a href="/about">About BadCode</a> and <a href="/text/100">BadCode Text</a></li>
 </ul></nav>`;
@@ -95,7 +95,7 @@ const routes = [
   { path: '/news/2', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
   { path: '/storyverse', canon: '/news/2', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
   { path: '/stories/9', canon: '/news/2', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
-  { path: '/news/3', title: `${N.title} · BadCode`, desc: N.strap, body: plainBody.news() },
+  ...(N.bulletins.length ? [{ path: '/news/3', title: `${N.title} · BadCode`, desc: N.strap, body: plainBody.news() }] : []),
   { path: '/government', title: 'The BadCode Government', desc: `${G.promise} ${G.notReal}`, body: plainBody.gov() },
   ...CAB.map(m => ({ path: `/government/${m.post}`, title: `${m.title} · The BadCode Government`, desc: m.line, body: plainBody.minister(m) })),
   ...POLICY_PAGES.map(({ m, p, text }) => ({ path: `/government/${p.meta.id}`, title: `${p.meta.title} · ${m.title} · The BadCode Government`, desc: p.meta.line,
