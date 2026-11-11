@@ -128,5 +128,5 @@ and a REMOTE tab brings it back (on an upright phone the remote docks under the 
 Teletext pages still open from old `/text/…` links. Reduced-motion visitors still get the clean
 picture automatically.
 Subtitles under the three buttons (Kai asked for funny): STORIES *spoiler alert*, NEWS
-*from next week*, GOVT *arguing in public* A number with no programme on the current
+*from next week*, GOVT *arguing in public*. A number with no programme on the current
 channel is greyed out.
