@@ -21,6 +21,7 @@ check.rule: Held if a gov.uk publication dated in the window names employers tha
 check.source: gov.uk, national minimum wage lists of employers that underpaid
 check.if_revised: Publications as dated on gov.uk on the check date count; if the collection is gone, the check is void.
 check.check_on: 2027-06-15
+check.provisional: yes
 check.result: pending
 ---
 Nobody gets hired to undercut you. We point the Fair Work Agency at the worst trades.

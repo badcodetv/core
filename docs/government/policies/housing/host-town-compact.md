@@ -21,6 +21,7 @@ check.rule: Count the AI Growth Zones named on the government's AI Growth Zones 
 check.source: The government's Delivering AI Growth Zones page on gov.uk and written statements to Parliament, as archived on the check date
 check.if_revised: A zone announced and withdrawn before the check date still counts as named; if the pages are gone, the check is void.
 check.check_on: 2027-04-30
+check.provisional: yes
 check.result: pending
 ---
 Homes before servers. A housing site should never sit in the queue for a grid connection behind

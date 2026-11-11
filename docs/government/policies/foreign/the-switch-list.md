@@ -21,6 +21,7 @@ check.rule: Held if the NCSC, NHS England or the operator confirms in public an 
 check.source: NCSC news and statements, NHS England statements, and the operator's own public or stock-exchange statements
 check.if_revised: A confirmation published by the check date counts, whenever the attack is first reported; an attack never confirmed in public does not count.
 check.check_on: 2027-06-15
+check.provisional: yes
 check.result: pending
 ---
 Since February a war has shut the Strait of Hormuz on and off, and you've paid at the pump and on

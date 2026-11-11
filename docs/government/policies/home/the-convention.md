@@ -19,6 +19,7 @@ check.rule: Held if the Home Office figure for enforced returns in the year endi
 check.source: Home Office, Immigration system statistics, year ending December 2026
 check.if_revised: The first published figure counts; later revisions don't. If it is not published by 2027-05-31, the check is void.
 check.check_on: 2027-03-15
+check.provisional: yes
 check.result: pending
 ---
 Leaving the human rights convention isn't our fix; it's a judgement call. If our review finds the

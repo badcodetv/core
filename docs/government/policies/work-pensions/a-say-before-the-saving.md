@@ -20,6 +20,7 @@ check.rule: Compare the seasonally adjusted payrolled employees figures for Sept
 check.source: ONS and HMRC, Earnings and employment from Pay As You Earn Real Time Information, UK (monthly)
 check.if_revised: Both months are read from the same release, so revisions apply to both; if the series is discontinued, the check is void.
 check.check_on: 2027-10-31
+check.provisional: yes
 check.result: pending
 ---
 Nobody's job gets taken by weather. A board decides, on a weekday, and the saving goes somewhere.

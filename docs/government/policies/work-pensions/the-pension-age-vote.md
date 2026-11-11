@@ -18,6 +18,7 @@ check.rule: In the first ONS health state life expectancy release published afte
 check.source: ONS, Health state life expectancies, UK
 check.if_revised: The figures as first published in each release count; if no new release appears by the check date, the check is void.
 check.check_on: 2027-12-31
+check.provisional: yes
 check.result: pending
 ---
 Before the pension age rises, we publish how long people stay healthy, region by region, and MPs

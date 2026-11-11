@@ -21,6 +21,7 @@ check.rule: Held if a Home Office or police announcement dated on or before 31 M
 check.source: Home Office news on gov.uk, and police force announcements
 check.if_revised: Announcements as published by the check date count; if none names a force, the check fails.
 check.check_on: 2027-04-15
+check.provisional: yes
 check.result: pending
 ---
 Police cameras. On 4 November the Home Office promised a regulator, bias tests and £11 million to

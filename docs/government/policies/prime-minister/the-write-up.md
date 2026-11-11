@@ -19,6 +19,7 @@ check.rule: Count evaluations first published on the registry in the window whos
 check.source: The Evaluation Task Force's Evaluation Registry (Cabinet Office), as it stands on the check date
 check.if_revised: Evaluations as first published count; if the registry is gone, the check is void.
 check.check_on: 2027-07-15
+check.provisional: yes
 check.result: pending
 ---
 A policy fails and the department moves on. Nobody publishes what broke, so the next one breaks

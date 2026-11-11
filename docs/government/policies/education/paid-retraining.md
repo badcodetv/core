@@ -13,6 +13,7 @@ check.rule: Take apprenticeship starts in England by people aged 25 and over for
 check.source: DfE, Apprenticeships, academic year 2025/26, on explore-education-statistics.service.gov.uk
 check.if_revised: The full-year figures as first published count; later revisions are ignored. If the full-year release is not out by the check date, the check is void.
 check.check_on: 2027-01-31
+check.provisional: yes
 check.result: pending
 ---
 A second go. Retraining money pays only for courses with an employer waiting at the end, and every

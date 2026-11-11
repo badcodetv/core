@@ -18,6 +18,7 @@ check.rule: Take the median waiting time (weeks) for incomplete pathways at the 
 check.source: NHS England, Consultant-led Referral to Treatment Waiting Times statistics, monthly press notice
 check.if_revised: The figure as first published for February 2027 counts; if the series is discontinued, the check is void.
 check.check_on: 2027-04-30
+check.provisional: yes
 check.result: pending
 ---
 Your mum's hip is one of 7.4 million waits for planned treatment in England, up from 7.1 million

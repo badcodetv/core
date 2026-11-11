@@ -18,6 +18,7 @@ check.rule: Take the mean clearance time (lodging to decision) for social securi
 check.source: Ministry of Justice, Tribunal statistics quarterly (gov.uk)
 check.if_revised: The figure as first published for July to September 2026 counts; if the release is not published by the check date, the check is void.
 check.check_on: 2026-12-31
+check.provisional: yes
 check.result: pending
 ---
 The letter comes from a system too. Of the PIP decisions taken to a tribunal hearing, the

@@ -208,7 +208,9 @@ to the page's `policies:` list too). In short:
   the **world check**: a dated prediction about the real UK, with a prior of at most 0.9, a frozen
   rule and a named source. The site prints those; the body carries the wrong, who decided, the
   rule and the ledger, in at most 300 words.
-- **A new policy needs a world check.** A merged world check is **frozen**: never edit its claim,
+- **A new policy needs a world check.** A merged world check is **frozen** (except one marked
+  `check.provisional: yes`, from the 2026-11-11 migration, which you may rewrite once to make it a
+  real forecast, then it freezes): never edit its claim,
   prior, rule, source or date, and never set `check.result` (the statistician marks it, not the
   minister who made it). If the position moves so far that the prediction no longer fits, the
   policy is `changed`, its `write_up` says so, and the old check stays to be marked.

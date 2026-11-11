@@ -17,6 +17,7 @@ check.rule: Count records first published on the register between 1 December 202
 check.source: The Algorithmic Transparency Recording Standard records on gov.uk, as they stand on the check date
 check.if_revised: The register as it stands on the check date counts, with each record's first publication date; if the register is gone, the check is void.
 check.check_on: 2027-06-15
+check.provisional: yes
 check.result: pending
 ---
 Since February 2026 the law lets a machine's decision stand if you're told and can ask for a human.

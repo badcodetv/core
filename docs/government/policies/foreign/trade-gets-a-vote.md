@@ -19,6 +19,7 @@ check.rule: Held if the treaty tracker shows a trade agreement laid in the windo
 check.source: UK Parliament treaty tracker (treaties.parliament.uk) and Hansard
 check.if_revised: The tracker and Hansard as they stand on the check date count; if the tracker is gone, the check is void.
 check.check_on: 2027-07-15
+check.provisional: yes
 check.result: pending
 ---
 Trade. Parliament can only delay a trade treaty today. We'd give it a vote on the mandate and on

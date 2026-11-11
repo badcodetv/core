@@ -17,6 +17,7 @@ check.rule: Compare the seasonally adjusted claimant count for March 2027 and Ma
 check.source: ONS, Labour market overview, UK (claimant count)
 check.if_revised: Both months are read from the same release; if the series is discontinued, the check is void.
 check.check_on: 2027-05-10
+check.provisional: yes
 check.result: pending
 ---
 You paid in. Lose your job after two years of National Insurance, for any reason, and get up to a

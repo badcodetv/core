@@ -18,6 +18,7 @@ check.rule: Take the seasonally adjusted unemployment rate (aged 16 and over) fo
 check.source: ONS, Labour market overview, UK (monthly bulletin)
 check.if_revised: The first published estimate counts; if the bulletin is not published by the check date, the next one that reports the same period counts; if the series is suspended, the check is void.
 check.check_on: 2027-04-30
+check.provisional: yes
 check.result: pending
 ---
 The redundancy form firms already send the government asks if a machine now does the work. A

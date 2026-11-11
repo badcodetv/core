@@ -21,6 +21,7 @@ check.rule: Held if any Environment Agency water situation report for England co
 check.source: The Environment Agency's monthly water situation reports for England (gov.uk)
 check.if_revised: A ban announced in the window counts even if it is lifted early; if the reports are discontinued, a water company's own published ban notice counts; if neither exists, the check is void.
 check.check_on: 2027-10-31
+check.provisional: yes
 check.result: pending
 ---
 The hosepipe ban applies to the data centre.

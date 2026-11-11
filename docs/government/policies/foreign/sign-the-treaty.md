@@ -19,6 +19,7 @@ check.rule: Held if the conference's final document extends or renews the expert
 check.source: The UN Office for Disarmament Affairs page for the CCW Seventh Review Conference and its final document
 check.if_revised: The final document as published by the check date counts; if none is published by then, the first published version by 2027-03-31 counts, and the check is void after that.
 check.check_on: 2026-12-15
+check.provisional: yes
 check.result: pending
 ---
 No machine decides who dies. No UK weapon selects a person to attack. Incoming missiles and drones

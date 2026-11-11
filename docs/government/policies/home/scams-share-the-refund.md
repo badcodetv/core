@@ -21,6 +21,7 @@ check.rule: Held if Ofcom publishes its statement of final decisions on the frau
 check.source: Ofcom, consultation on the fraudulent advertising code of practice, and its statement page
 check.if_revised: The date Ofcom gives the statement counts; if the page is gone and no statement is found, the check is void.
 check.check_on: 2027-07-15
+check.provisional: yes
 check.result: pending
 ---
 A scam is a crime with a bill. Banks refund most victims; the platform that sold the advert and the

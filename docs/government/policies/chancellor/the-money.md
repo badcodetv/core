@@ -19,6 +19,7 @@ check.rule: The OBR's headroom against the current budget (stability) rule in 20
 check.source: OBR Economic and fiscal outlook, spring 2027
 check.if_revised: The outlook as first published counts. If the OBR publishes no outlook between 1 January 2027 and the check date, the check is void.
 check.check_on: 2027-04-30
+check.provisional: yes
 check.result: pending
 ---
 "We can't afford it" is never true as stated: who can't, and who decided?

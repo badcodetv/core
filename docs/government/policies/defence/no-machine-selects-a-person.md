@@ -17,6 +17,7 @@ check.rule: Held if the conference's final document, as posted by UNODA, gives t
 check.source: UNODA, Convention on Certain Conventional Weapons, Seventh Review Conference documents (meetings.unoda.org)
 check.if_revised: The final document as first posted counts. If UNODA has posted no outcome by the check date, the check is void.
 check.check_on: 2026-12-15
+check.provisional: yes
 check.result: pending
 ---
 The rule. No UK weapon selects a person to attack. A named officer answers for every shot, the way

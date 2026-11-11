@@ -17,6 +17,7 @@ check.rule: Held if a government bill whose provisions govern police use of faci
 check.source: UK Parliament bills (bills.parliament.uk) and Hansard
 check.if_revised: The bills record as it stands on the check date counts; if it is gone, Hansard alone counts.
 check.check_on: 2028-01-15
+check.provisional: yes
 check.result: pending
 ---
 No machine uses force on a person here. Ever.

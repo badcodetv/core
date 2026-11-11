@@ -21,14 +21,16 @@ check.rule: Held if the first published provisional net long-term migration figu
 check.source: ONS, Long-term international migration, provisional
 check.if_revised: The first published estimate counts; later revisions don't. If it is not published by 2027-03-31, the check is void.
 check.check_on: 2026-12-15
+check.provisional: yes
 check.result: pending
 ---
 A village in North Yorkshire has learned the Home Office may put up to 1,200 asylum seekers in the
 old RAF base down the road. Nobody asked it. Who decided, who pays, and where's the extra GP?
 
-Migration has a cost, and it lands at the bottom. The government's own advisers found the
-lowest-paid lost a few per cent of their pay to EU migration over 25 years, while the best-paid
-gained about the same. We print the size with every official release, beside the homes built.
+Migration has a cost, and it lands at the bottom. The government's own advisers found EU
+migration from 1993 to 2017 went with pay about 5% lower for the lowest-paid UK-born workers and
+about 4% higher for the best-paid: a short-run effect they expect to fade. We print the size with every official
+release, beside the homes built.
 
 So the roof comes with the arrival. Work visas and their families don't grow faster than the homes,
 GP and school places funded for them, paid for first from what the closing asylum hotels cost.

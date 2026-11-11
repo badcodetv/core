@@ -19,6 +19,7 @@ check.rule: A government bill introduced in either House, or draft legislation p
 check.source: UK Parliament bills (bills.parliament.uk) and gov.uk publications
 check.if_revised: What was introduced or published by 31 May 2027 counts; if both sources are unreadable, the check is void.
 check.check_on: 2027-06-01
+check.provisional: yes
 check.result: pending
 ---
 You made the song. Someone else's machine learned from it, and the profit went to the machine's

@@ -20,6 +20,7 @@ check.rule: Held if an NHS England publication between 2026-11-11 and 2027-10-31
 check.source: NHS England's website (publications and news)
 check.if_revised: The publication as first issued counts; if no national time-saved figure is published, the check fails.
 check.check_on: 2027-10-31
+check.provisional: yes
 check.result: pending
 ---
 Every hour a machine saves is counted, ward by ward, each quarter, as a row in the Transition

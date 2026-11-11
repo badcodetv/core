@@ -19,6 +19,7 @@ check.rule: Held if a court makes a special administration order for a water or 
 check.source: Ofwat's news releases and gov.uk announcements, searched on the check date
 check.if_revised: An order made and later discharged still counts; if neither source can be searched, the check is void.
 check.check_on: 2027-07-31
+check.provisional: yes
 check.result: pending
 ---
 A bust water company stays public: our judgement call, reviewed in five years.

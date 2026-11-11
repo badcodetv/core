@@ -21,6 +21,7 @@ check.rule: The network costs line (pounds a year, typical dual-fuel household) 
 check.source: Ofgem's price cap announcement for 1 April to 30 June 2027 and its breakdown of what makes up the cap
 check.if_revised: The figures Ofgem first publishes for each quarter count; if Ofgem stops publishing the breakdown, the check is void.
 check.check_on: 2027-03-06
+check.provisional: yes
 check.result: pending
 ---
 Own what can't compete. One set of wires reaches your door; with no rival, the market is a toll

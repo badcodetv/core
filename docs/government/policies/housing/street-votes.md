@@ -21,6 +21,7 @@ check.rule: Held if a ministerial statement, written answer or gov.uk publicatio
 check.source: Hansard written questions and statements, and gov.uk announcements, searched on the check date
 check.if_revised: A decision announced and later reversed still counts as announced; if neither source can be searched, the check is void.
 check.check_on: 2027-06-30
+check.provisional: yes
 check.result: pending
 ---
 One you'd expect us to oppose: street votes, law since 2023, never switched on.

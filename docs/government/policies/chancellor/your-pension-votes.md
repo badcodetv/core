@@ -21,6 +21,7 @@ check.rule: The seasonally adjusted UK payrolled employees series in the ONS lab
 check.source: ONS Labour market overview, UK (HMRC PAYE Real Time Information, payrolled employees)
 check.if_revised: The release that first carries April 2027 counts; later revisions change nothing. If it is not published by the check date, the check is void.
 check.check_on: 2027-05-31
+check.provisional: yes
 check.result: pending
 ---
 Your pension owns shares in firms swapping jobs for machines; someone else casts its votes.

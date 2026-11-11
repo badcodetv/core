@@ -18,6 +18,7 @@ check.rule: Take the percentage rise in the full new State Pension for 2028 to 2
 check.source: DWP, Benefit and pension rates 2028 to 2029 (gov.uk); ONS, Consumer price inflation, September 2027
 check.if_revised: The rates as first announced count; if no 2028 to 2029 rate is announced by the check date, the check is void.
 check.check_on: 2027-12-31
+check.provisional: yes
 check.result: pending
 ---
 The triple lock stays this parliament.

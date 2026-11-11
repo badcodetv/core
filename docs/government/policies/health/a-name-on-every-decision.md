@@ -18,6 +18,7 @@ check.rule: Held if the ICO's register of action taken lists a reprimand, enforc
 check.source: Information Commissioner's Office, "Action we've taken" enforcement register
 check.if_revised: The register as it stands on the check date counts; if it is gone, the check is void.
 check.check_on: 2027-08-31
+check.provisional: yes
 check.result: pending
 ---
 If software helped decide your triage, diagnosis, referral or discharge, you are told, a named

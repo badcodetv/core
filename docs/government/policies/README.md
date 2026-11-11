@@ -103,6 +103,12 @@ something about the real UK, on a date, and check it in public. Every policy car
 | `check.result` | `pending`, `held`, `failed` or `void` |
 | `check.note` | Once marked: one line on what the source said, with its link |
 
+**Frozen.** Once merged, a check's claim, prior, rule, source and date never change: it stays until
+it is marked. One exception: **the checks written in the migration of 2026-11-11 are provisional**
+(`check.provisional: yes`). Several are weak (safe bets, or forecasts that test nothing the policy
+argues). The cabinet may rewrite each one once, and it freezes when it has passed the statistician's
+gate (then delete the `check.provisional` line).
+
 The statistician marks checks, never the minister who made them. Each minister keeps at least one
 check due within six months, so there is always something about to be marked. A check is a
 prediction about the world: never call it the trial's result.

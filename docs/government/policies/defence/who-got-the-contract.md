@@ -14,6 +14,7 @@ check.rule: For each year, add the payments to the ten largest suppliers in the 
 check.source: MoD, Trade, industry and contracts 2027 (gov.uk official statistics)
 check.if_revised: The figures as first published in the 2027 release count. If it is not out by the check date, or gives no top-supplier table, the check is void.
 check.check_on: 2027-10-31
+check.provisional: yes
 check.result: pending
 ---
 Who got the contract. Every big contract, its rivals and its stop point go in the public Ledger. A

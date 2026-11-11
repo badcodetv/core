@@ -19,6 +19,7 @@ check.rule: The ONS's first published CPI 12-month rate for March 2027. Above 3.
 check.source: ONS Consumer price inflation bulletin for March 2027
 check.if_revised: The first published figure counts; a later revision changes nothing. If the series is not published by the check date, the check is void.
 check.check_on: 2027-04-30
+check.provisional: yes
 check.result: pending
 ---
 Every saving lands in somebody's account, every shock on somebody's bill, and nobody prints the

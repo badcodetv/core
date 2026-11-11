@@ -19,6 +19,7 @@ check.rule: Held if, by 30 June 2027, a final (not draft or consultation) ICO gu
 check.source: The ICO's UK GDPR guidance on automated decision-making (ico.org.uk), as archived on the check date
 check.if_revised: The guidance as it stands on the check date counts; if the ICO has withdrawn it, the check is void.
 check.check_on: 2027-06-30
+check.provisional: yes
 check.result: pending
 ---
 If software turns you down for a tenancy, a named person hears your appeal within ten working days.

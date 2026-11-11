@@ -21,6 +21,7 @@ check.rule: Held if, by 1 May 2027, an Act or statutory instrument giving AI Gro
 check.source: legislation.gov.uk, and the government's Delivering AI Growth Zones page on gov.uk
 check.if_revised: A discount delivered by an existing power without new legislation, if gov.uk says so by 1 May 2027, counts as held; if both sources are gone, the check is void.
 check.check_on: 2027-05-10
+check.provisional: yes
 check.result: pending
 ---
 A data centre wants as much power as a town, and ministers have decided it should pay less than

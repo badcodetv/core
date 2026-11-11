@@ -16,6 +16,7 @@ check.rule: Take total MoD expenditure with UK industry for 2026/27 and 2025/26 
 check.source: MoD, Regional expenditure with UK industry and supported employment, the release covering 2026/27 (gov.uk)
 check.if_revised: The figures as first published in that release count. If it is not out by the check date, or no longer gives a UK total, the check is void.
 check.check_on: 2028-03-31
+check.provisional: yes
 check.result: pending
 ---
 The rule. Nothing bought that we can't stop, mend or restart without a foreign supplier's

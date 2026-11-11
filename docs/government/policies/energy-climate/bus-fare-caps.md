@@ -21,6 +21,7 @@ check.rule: Total local bus passenger journeys in England, year ending March 202
 check.source: Department for Transport, Annual bus statistics: year ending March 2027 (gov.uk)
 check.if_revised: The figures in the first release for the year ending March 2027 count for both years; if it is not out by the check date, it is marked on publication; if discontinued, void.
 check.check_on: 2027-12-31
+check.provisional: yes
 check.result: pending
 ---
 Bus fare caps get the same treatment as everything else here.

@@ -21,6 +21,7 @@ check.rule: The typical direct-debit electricity standing charge, GB average inc
 check.source: Ofgem's price cap announcement for 1 April to 30 June 2027, and its unit rates and standing charges page
 check.if_revised: The figure Ofgem first publishes counts; if Ofgem does not set a cap for that quarter, the check is void.
 check.check_on: 2027-03-06
+check.provisional: yes
 check.result: pending
 ---
 Your cap rose 4% this autumn, to £1,723, and about £300 of that is standing charge, paid before the

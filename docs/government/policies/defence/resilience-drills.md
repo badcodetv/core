@@ -20,6 +20,7 @@ check.rule: Compare the count of nationally significant incidents the 2027 revie
 check.source: National Cyber Security Centre, Annual Review 2026 and Annual Review 2027 (ncsc.gov.uk)
 check.if_revised: Each review's count as first published counts. If the 2027 review gives no such count or is not out by the check date, the check is void.
 check.check_on: 2027-11-30
+check.provisional: yes
 check.result: pending
 ---
 Threat: in 2024 a cyberattack sent London hospitals' blood tests back to paper. The head of the

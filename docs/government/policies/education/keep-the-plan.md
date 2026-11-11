@@ -13,6 +13,7 @@ check.rule: Take the headline count of education, health and care plans in Engla
 check.source: DfE, Education, health and care plans, the 2027 release on explore-education-statistics.service.gov.uk
 check.if_revised: The figures as first published in the 2027 release count. If that release is not out by the check date, the check is void.
 check.check_on: 2027-07-15
+check.provisional: yes
 check.result: pending
 ---
 Special needs: no child loses a support plan until its replacement has been trialled and worked.

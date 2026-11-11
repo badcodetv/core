@@ -21,6 +21,7 @@ check.rule: Held if a gov.uk sanctions notice dated in the window adds a designa
 check.source: The UK Sanctions List and OFSI financial sanctions notices on gov.uk
 check.if_revised: Notices as they stand on the check date count; a designation later withdrawn still counts. If the list is gone, the check is void.
 check.check_on: 2027-04-15
+check.provisional: yes
 check.result: pending
 ---
 A receipt for every big decision. Within thirty days of a sanction, deal or deployment: what it

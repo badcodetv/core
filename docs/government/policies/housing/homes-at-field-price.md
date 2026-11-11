@@ -21,6 +21,7 @@ check.rule: The figure for new social rent homes delivered by local authorities 
 check.source: MHCLG, Social housing sales and demolitions 2025-26, England: net supply of social housing for rent (gov.uk)
 check.if_revised: The first published 2025-26 figure counts; if it is not out by the check date it is marked on publication; if the series is discontinued, the check is void.
 check.check_on: 2027-06-30
+check.provisional: yes
 check.result: pending
 ---
 Councils built 9,241 homes for social rent in 2024-25.

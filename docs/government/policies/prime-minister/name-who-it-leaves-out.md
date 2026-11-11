@@ -19,6 +19,7 @@ check.rule: Count RPC opinions published on gov.uk in the window whose overall r
 check.source: The Regulatory Policy Committee's published opinions on gov.uk
 check.if_revised: Opinions as first published count; if the RPC or its opinions page is gone, the check is void.
 check.check_on: 2027-05-10
+check.provisional: yes
 check.result: pending
 ---
 A policy works for most people, the average goes up, and the people it missed vanish into the

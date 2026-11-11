@@ -19,12 +19,13 @@ check.rule: Count NAO value-for-money reports published in the window whose summ
 check.source: The National Audit Office's published reports list (nao.org.uk)
 check.if_revised: Reports as first published count; if the list is gone, the check is void.
 check.check_on: 2027-05-10
+check.provisional: yes
 check.result: pending
 ---
 The rules that will set your wage, your bill and your benefit for a generation are being written
 now, by ministers and boards with a machine's help. None has a test or an undo. A 2019 review,
 reported by the National Audit Office in 2021, found only 8% of £432bn of major-project spending
-had robust plans to find out whether it worked.
+had robust evaluation plans.
 
 Who decided. Governments of every colour, by passing laws with no test, no stop date and no one
 counting.

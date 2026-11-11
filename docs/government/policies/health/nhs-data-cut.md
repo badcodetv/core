@@ -18,6 +18,7 @@ check.rule: Held if gov.uk or NHS England announces, between 2026-11-11 and 2027
 check.source: gov.uk and NHS England announcements
 check.if_revised: An announcement made by the check date counts even if later reversed; if neither source is available, the check is void.
 check.check_on: 2027-03-31
+check.provisional: yes
 check.result: pending
 ---
 If a company profits from NHS records, the NHS gets a cut. No sale.

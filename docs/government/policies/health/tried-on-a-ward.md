@@ -20,6 +20,7 @@ check.rule: Held if a national framework, dynamic purchasing system or approved-
 check.source: Find a Tender (gov.uk) and NHS England's website
 check.if_revised: A notice published by the check date counts even if later amended; if both sources are unavailable on the check date, the check is void.
 check.check_on: 2027-05-31
+check.provisional: yes
 check.result: pending
 ---
 NHS England has told the health service to adopt AI note-takers that listen to your appointment.

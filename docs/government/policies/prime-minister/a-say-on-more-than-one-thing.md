@@ -19,6 +19,7 @@ check.rule: For each petition on petition.parliament.uk that reached 100,000 sig
 check.source: The UK Parliament petitions site (petition.parliament.uk), as it stands on the check date
 check.if_revised: The site's own dates count; if the site or its records are gone, the check is void.
 check.check_on: 2027-06-07
+check.provisional: yes
 check.result: pending
 ---
 You get one vote every five years, for a whole package. Everything else you think goes unasked.

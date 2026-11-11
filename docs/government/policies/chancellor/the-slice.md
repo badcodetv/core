@@ -21,6 +21,7 @@ check.rule: Count AI Growth Zones announced by the government on gov.uk or in a 
 check.source: The government's AI Growth Zones pages on gov.uk and written statements to Parliament
 check.if_revised: Announcements as first published count; a zone later withdrawn still counts. If neither source can be read, the check is void.
 check.check_on: 2027-07-01
+check.provisional: yes
 check.result: pending
 ---
 Power for data centres in the AI zones: up to £24 off every megawatt-hour from 2027, by ministers'

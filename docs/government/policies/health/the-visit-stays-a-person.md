@@ -19,6 +19,7 @@ check.rule: Compare the March 2027 and March 2026 daily averages of patients no 
 check.source: NHS England, Discharge delays (acute) monthly statistics
 check.if_revised: Both months are read from the same release; if the series is discontinued, the check is void.
 check.check_on: 2027-05-10
+check.provisional: yes
 check.result: pending
 ---
 A sensor can tell you she fell. It can't pick her up. No council swaps her visit for a screen
