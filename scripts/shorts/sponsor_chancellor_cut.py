@@ -3,12 +3,13 @@
 
     python3 scripts/shorts/sponsor_chancellor_cut.py
 
-9:16. A: the black-and-white appeal (01-A then the chained 01-B) under the narration (Achernar, nar-c), its long pauses
+9:16. A (Sponsor a Chancellor look.md): the black-and-white appeal (01-A then the chained 01-B) under the narration (Achernar, nar-c), its long pauses
 tightened (never sped). B: her flat (02). C: the doormat (03). D: the nan reads the flyer, "Poor bastard..."
 (Vindemiatrix, nan-b, lip-synced onto 04-r2 by scripts/lipsync/place-dub.py, dub/04-r2-nan.json).
 A1 = narrator, A2 = nan, A3 = each clip's own Omni ambience (04-r2's own "Poor bloke" muted out).
 Writes <media>/cut/edl.json (timeline format, scripts/scene/timeline.py), the stems, overlay.mov and preview.mp4.
 """
+# style-lint: story=short-sponsor-a-chancellor (this cut script belongs to one short; its look words are that short's)
 import json, pathlib, subprocess, sys
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
@@ -52,7 +53,8 @@ for s in SHOTS: starts.append(round(t, 3)); t += s[3]
 TOTAL = round(t, 3)
 T_CARD = nar_at[4]
 NEWS_IN, NEWS_OUT = 0.5, 5.2                           # r2: Jack's newspaper insert at the start, 'only on the screen for a bit'                                     # the "£3 a month" band comes up on "For just £3 a month"
-SEE = {'appeal': 'The black-and-white charity appeal: Crispin at the rainy conservatory glass, a slow blink, his hand slides down the pane.',
+SEE = {  # Sponsor a Chancellor look.md
+       'appeal': 'The black-and-white charity appeal: Crispin at the rainy conservatory glass, a slow blink, his hand slides down the pane.',
        'room': 'Pull back: the nan in her armchair in the cold flat, the telly on.',
        'post': 'The doormat: junk mail, a draught, the SPONSOR A CHANCELLOR flyer.',
        'nan': 'She reads the flyer and pities him (lip-synced).'}
