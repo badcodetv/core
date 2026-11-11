@@ -1337,7 +1337,10 @@ export async function listTakes(page: Page, filter = ''): Promise<Take[]> {
          }
        }
        return null;
-     }).filter(x => x && (!a[0] || x.title.toLowerCase().includes(String(a[0]).toLowerCase())));`,
+     // 🔴 The title above is cut to 48 characters, so cut the filter the same way. Without this a title
+     // of 49+ characters ("The Rules drop r2-reese-hardstep-terrorist-v6-w35") never matched its own takes,
+     // and create() waited out its whole 7 minutes on every cell (2026-11-10 and 11-11, The Rules).
+     }).filter(x => x && (!a[0] || x.title.toLowerCase().includes(String(a[0]).toLowerCase().slice(0, 48))));`,
     filter,
   ) as Promise<Take[]>
 }

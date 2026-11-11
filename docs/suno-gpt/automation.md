@@ -910,6 +910,15 @@ so `round.py run` never reached the next prompt. `timeout` on `round.py` does no
 survives). **Cause:** Suno renamed the row checkbox from `Select clip` to `Select <song title>` (`role=checkbox`).
 **Fix:** `SEL_SELECT_CLIP` in `take-row.mts` matches both; `takes` lists every row again (title, length, id).
 
+## 2026-11-11: `grid` still waited after Create on long titles (FIXED)
+
+The 11-10 selector fix was real but only half of it: on *The Rules* drop round 2 the first Create made both takes,
+yet `grid` sat in `create()` for its full 7 minutes. Kai: *"each time we try to generate in Suno it gets stuck."*
+**Cause:** `listTakes` cuts every row's title to 48 characters, but filtered on the FULL title asked for, so a title
+of 49+ characters (`The Rules drop r2-reese-hardstep-terrorist-v6-w35`) could never match its own takes. Not a
+cookie banner, not a dialog (none was open; screenshot checked). **Fix:** the filter is cut to 48 characters too.
+Keep round names short anyway: `<prompt name>-v6-w<N>` is appended to the title.
+
 ## 2026-11-10: `record` stopped at the streamed length (FIXED same day)
 
 Suno streams a take into the player, so the `duration` read when playback starts can be only what has buffered: a
