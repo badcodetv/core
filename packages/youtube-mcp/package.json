@@ -1,0 +1,26 @@
+{
+  "name": "@badcode/youtube-mcp",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "badcode — MCP server that manages the BadCode YouTube channel through the YouTube Data API v3: upload, edit details, thumbnails, playlists, and a channel snapshot kept in the repo.",
+  "main": "./src/server.ts",
+  "bin": {
+    "badcode-youtube-mcp": "./src/server.ts"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "login": "tsx src/login.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.8"
+  }
+}

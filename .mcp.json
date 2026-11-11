@@ -29,6 +29,13 @@
         "tsx",
         "packages/listen-mcp/src/server.ts"
       ]
+    },
+    "youtube": {
+      "command": "npx",
+      "args": [
+        "tsx",
+        "packages/youtube-mcp/src/server.ts"
+      ]
     }
   }
 }
