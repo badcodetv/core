@@ -121,3 +121,10 @@ Kai: *"Could we please then animate some of these stills? … the ballet guys go
 very much part of this. I think we need a bit more people sleeping in a bin, next to a bin, just to make that line
 land."* New window stills WI6-a-a/b (sleepers among council bins, one in an open bin). Animation options in
 `animation-options.json`, on the storyboard page; video settings Omni 1.2 Flash, 9:16, Frames.
+
+## 2026-11-11: timeline r1 notes and the new beats
+
+Kai's six timeline notes (dump `feedback/timeline-r1/`; answered in `cut-notes.json`): cut on the words; stack ~3 s;
+people sleeping rough on "bed"; an empty purse on "purse"; islands sooner; the bin on "bin"; the tear = the gang going
+mental. New stills picked (dump `feedback/picks-r1/`): bed `BD5-a-a`, purse `PU5-a-b`, bin `BI5-a-a`. Clips: stack,
+islands, tear ×2, pen (first run); bed, purse, bin (second run).

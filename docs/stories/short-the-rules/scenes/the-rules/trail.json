@@ -79,5 +79,16 @@
   "url": "https://claude.ai/artifact/Bv51DBAVTdgmhPViwSTEzw",
   "what": "Picks: bed / purse / bin stills",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-rules/scenes/the-rules/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-11T10:32:58+00:00",
+  "stage": "picks",
+  "round": 1,
+  "what": "Picks: bed BD5-a-a, purse PU5-a-b, bin BI5-a-a",
+  "decided": [
+   "Kai picked BD5-a-a, PU5-a-b, BI5-a-a"
+  ],
+  "feedback": "feedback/picks-r1",
+  "feedback_docs": 3
  }
 ]

@@ -46,6 +46,30 @@
    "duration": 4,
    "motion": "The camera does not move. Torn paper drifts slowly down and settles around him; the navy-masked figure steps half a pace forward and pushes the blank page and the pen a little closer toward the camera, then holds perfectly still, offering them. The camera does not move.",
    "why": "Pen, option a"
+  },
+  {
+   "key": "b1",
+   "n": 6,
+   "still": "BD5-a-a",
+   "duration": 4,
+   "motion": "The camera does not move. Light drizzle falls past the shuttered shops onto the wet pavement; in the bank doorway the person asleep on the cardboard stirs slightly and pulls the sleeping bag closer, then lies still. The streetlights hold steady. The camera does not move.",
+   "why": "Bed beat (Kai pick BD5-a-a): 'We can't afford a bed for you'"
+  },
+  {
+   "key": "b2",
+   "n": 7,
+   "still": "PU5-a-b",
+   "duration": 4,
+   "motion": "The camera does not move. The worn hands hold the open purse over the counter and tip it slightly, a couple of copper coins slide to one side; the fingers hesitate, then close the purse slowly. The shopping on the conveyor stays still. The camera does not move.",
+   "why": "Purse beat (Kai pick PU5-a-b): 'The purse is far too thin'"
+  },
+  {
+   "key": "b3",
+   "n": 8,
+   "still": "BI5-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. Rain falls steadily in the alley, rippling the puddles on the tarmac; the half-open lid of the green wheelie bin rocks a little in the wind; the person asleep on the cardboard against the bin stays still, breathing slowly. The camera does not move.",
+   "why": "Bin beat (Kai pick BI5-a-a): 'But you will sleep in a bin'"
   }
  ]
 }
