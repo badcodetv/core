@@ -9,6 +9,7 @@ on:
     paths:
       - apps/site/**
       - docs/government/manifesto/**
+      - docs/government/policies/**
   workflow_dispatch:
 concurrency:
   group: site-deploy
