@@ -23,3 +23,5 @@ Rules: clean room for prompts; never describe a cast character; no Flow speech (
 - **Storyboard r1:** https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g (pick a still + animation option per frame). Motion prompts are written clean-room after the picks.
 - **Rough cut 1 / timeline page:** https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE (26.2 s). Cut script `scripts/shorts/sponsor_chancellor_cut.py`. Next: Jack's notes.
 - **In Premiere:** `shorts-6-sponsor-a-chancellor-r5` (sponsor-a-chancellor.prproj). Left: Jack to call it done (freeze), export, delivery QC, check the ITV headline in a browser, lip sync of "-stard" (LatentSync offered).
+
+- **2026-11-11 eve:** round 5 is in Premiere as `shorts-6-sponsor-a-chancellor-r5` (sponsor-a-chancellor.prproj). Left: Jack's "it's done" (freeze), export, delivery QC, open the ITV headline once in a browser.
