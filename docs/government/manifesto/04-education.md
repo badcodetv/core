@@ -10,14 +10,16 @@ The rule. A big employer whose hiring of under-25s falls well behind firms in it
 
 Who decided? The board that stopped hiring, and a levy that charges big employers the same whether they train young people or replace them. That levy is now the Growth and Skills Levy; its new foundation apprenticeships had 110 starts in six months. We add the gap charge.
 
-Nearly a million young people are not in work, education or training. Junior vacancies are down about a quarter since January 2025, Bloomberg reports, and Indeed finds new entry jobs asking for AI skills have replaced only about a third of the others that went. Machines, interest rates or trade? Nobody counts first jobs by town and trade, so we will, every quarter.
+Nearly a million young people are not in work, education or training. Junior vacancies are down about a quarter since January 2025, Bloomberg reports; Indeed finds new entry jobs asking for AI skills have replaced only about a third of the rest. Machines, interest rates or trade? Nobody counts first jobs by town and trade, so we will, every quarter.
 
-The test. Two areas drawn by lot from volunteers, three years, against areas like them. Fails if (provisional): youth hiring falls further there, or under half of funded trainees are in work a year on. Then we publish the write-up of what went wrong and drop it. Passes, and it goes national. It stops on its date unless Parliament votes to keep it.
+The test. Two areas drawn by lot from volunteers, three years, against areas like them. Fails if (provisional): youth hiring falls further there, or under half of funded trainees are in work a year on. Then we publish the write-up of what went wrong and drop it. The money: firms that cut the rung pay; the Treasury pays only for the count.
 
-The money: firms that cut the rung pay; the Treasury pays only for the count.
+Classroom tech. Ministers are consulting on safety certificates for it. Safe is a start; does it teach? No school buys an AI tool until it has beaten classes like it, in volunteer schools drawn by lot. Fails if those classes aren't a twentieth better on the same test after a year (provisional). No machine sets a grade without a teacher's name on it.
+
+Each trial stops on its date unless Parliament votes to keep it, on the published review. Passes, and it goes national.
 
 Special needs: no child loses a support plan until its replacement has been trialled and worked. How councils pay for it: Not ready.
 
-Who it leaves out: young people paid cash-in-hand or self-employed, and towns without big employers, each counted on its own line. Signed by the Education Secretary and each trial mayor. Status: Draft. Needs: the Transition Count.
+Who it leaves out: young people paid cash-in-hand or self-employed, towns without big employers, and schools too stretched to volunteer, each counted on its own line. Signed by the Education Secretary and each trial mayor. Status: Draft. Needs: the Transition Count.
 
 Which jobs will survive? I don't know, and neither does anyone selling you a course. I do know who stopped hiring at the bottom: a board. It can pay.
