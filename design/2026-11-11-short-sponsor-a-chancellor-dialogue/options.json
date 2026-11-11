@@ -88,6 +88,97 @@
    ],
    "drafts": [
     {
+     "id": "1D",
+     "name": "1C + the nan (round 2)",
+     "length": "about 22 s",
+     "total": "~12 s advert (voice + card) + ~10 s nan",
+     "bet": "Jack, round 1: 1C is fine, but the wine fridge needs replacing with something funnier; then the advert turns out to be playing on a freezing nan's telly, the junk mail brings his sadder flyer, and she pities him. Her pity is the button.",
+     "lines": [
+      {
+       "who": "NARRATOR",
+       "line": "[soft, slow, wobbling piano, black and white, on a small old TV] This is Crispin.",
+       "tags": [
+        "all"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "Crispin only earns £100,000 a year.",
+       "tags": [
+        "10",
+        "01",
+        "09"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "[beat] Tonight, [THE HARDSHIP: pick one from the list in the notes]. For just £3 a month, you can help.",
+       "tags": [
+        "jack"
+       ],
+       "s": "5.0"
+      },
+      {
+       "who": "SCREEN",
+       "line": "[freeze frame, piano stops, silence] Median UK full-time pay: £39,039 a year (ONS, April 2025)",
+       "tags": [
+        "all"
+       ],
+       "s": "2.0 (held, no voice)"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "[optional: gentler, kind] Or keep your £3. You're going to need it.",
+       "tags": [
+        "10"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "SCREEN",
+       "line": "[the camera pulls back off the TV into a freezing front room in colour: a nan in her coat and hat indoors, breath showing, a blanket over her knees. The letterbox clatters.]",
+       "tags": [
+        "jack"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "SCREEN",
+       "line": "[she shuffles to the door and picks up the junk mail: a charity flyer, SPONSOR A CHANCELLOR, Crispin on it looking even sadder]",
+       "tags": [
+        "jack"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "NAN",
+       "line": "[quietly, genuinely sorry for him] Poor bastard...",
+       "tags": [
+        "jack"
+       ],
+       "s": "1.5"
+      }
+     ],
+     "notes": [
+      "THE HARDSHIP: options for line 3 (Jack: 'something else other than second wine fridge that is funny'). Two of them nod at the real 2009 MP expenses scandal (a duck house and a moat were really claimed for), without naming anyone:",
+      "  a) 'Tonight, his duck house has no central heating.'",
+      "  b) 'Tonight, he's down to his last moat.'",
+      "  c) 'Tonight, his heated towel rail only heats one towel.'",
+      "  d) 'Tonight, his children's pony has had to share a paddock.'",
+      "  e) 'Tonight, his butler has gone part-time.'",
+      "  f) 'Tonight, his second home has no second home.'",
+      "  g) 'Tonight, his wine cellar is down to its last thousand bottles.'",
+      "  h) 'This winter, his skiing holiday may be just the one week.'",
+      "  i) 'Tonight, the swans on his moat will go without scarves.'",
+      "  j) your own.",
+      "'Or keep your £3' is optional now: the nan is the new button. Keeping both makes it ~25 s.",
+      "Her line is Jack's, verbatim (by: jack). The cold room is the point and nobody says it: the heating is off in her house and on in his duck house.",
+      "Picture: the advert stays black and white on her TV; her room is colour. That makes the 'pan off the telly' readable in one shot."
+     ]
+    },
+    {
      "id": "1A",
      "name": "The straight appeal",
      "length": "about 13 s",

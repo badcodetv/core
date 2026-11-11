@@ -6,5 +6,16 @@
   "url": "https://claude.ai/artifact/YcJX759MtLbfgzSpxiJeKM",
   "what": "dialogue options: the charity-advert voiceover (10 writers, 3 drafts)",
   "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-11-short-sponsor-a-chancellor-dialogue/options.json design/2026-11-11-short-sponsor-a-chancellor-dialogue.html"
+ },
+ {
+  "at": "2026-11-11T13:12:39+00:00",
+  "stage": "dialogue",
+  "round": 2,
+  "url": "https://claude.ai/artifact/YcJX759MtLbfgzSpxiJeKM",
+  "what": "draft 1D: 1C + the nan; hardship options for the wine-fridge line",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-11-short-sponsor-a-chancellor-dialogue/options.json design/2026-11-11-short-sponsor-a-chancellor-dialogue.html --notes design/2026-11-11-short-sponsor-a-chancellor-dialogue/notes-r1.json",
+  "decided": [
+   "Jack: 1C is fine; replace the wine fridge with something funnier; add the freezing nan, the junk-mail flyer, 'poor bastard...'"
+  ]
  }
 ]
