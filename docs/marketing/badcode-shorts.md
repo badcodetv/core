@@ -65,7 +65,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 
 34. 👵 **Poor Nan: Record Profits** *(series with the Sponsor a Chancellor nan)*: she reads the paper by candlelight: "Energy firm posts record profits." (4) → "Oh, good for them. They'll need it, with the price of everything." (5) → she blows the candle out to save it (2). **11s.**
 35. 👵 **Poor Nan: Bonus Season:** a banker on TV says bonuses "keep talent in the country" (5) → nan, knitting in her coat: "Bless him. I'd stay for less." (4). **9s.**
-36. 🌳 **Magic Money Tree:** a minister shakes a tree labelled HOSPITALS: nothing falls, "We can't afford it." (5) → shakes the tree next to it, labelled BANKS: money pours (4) → he looks at camera: "Different tree." (2). **11s.**
+36. 🌳 **Magic Money Tree** *(Jack: BUILDING, `docs/stories/short-magic-money-tree/`)*: a minister shakes a tree labelled HOSPITALS: nothing falls, "We can't afford it." (5) → shakes the tree next to it, labelled BANKS: money pours (4) → he looks at camera: "Different tree." (2). **11s.**
 37. 🏠 **The Viewing:** an agent shows a couple a cupboard: "Bijou." (3) → "There's no window." / "There's a landlord." (4) → "He's got eleven of these." (3). **10s.**
 38. 🍰 **Fair Share:** a boardroom cake; the boss cuts himself nine tenths, the worker gets a crumb (5) → boss: "Let's not get into the politics of envy." (3) → worker: "I'm not jealous. I'm hungry." (3). **11s.**
 39. 🔥 **Heating or Eating:** a game-show buzzer: "Heating… or eating?" (4) → contestant: "Can I phone a friend?" (3) → host: "Their phone's been cut off." (3). **10s.**

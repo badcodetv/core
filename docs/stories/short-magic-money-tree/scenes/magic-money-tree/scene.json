@@ -1,0 +1,14 @@
+{
+ "story": "short-magic-money-tree",
+ "scene": "magic-money-tree",
+ "prefix": "mt",
+ "title": "Magic Money Tree",
+ "heading": "BadCode Shorts <span class=\"tri\">▲</span> Magic Money Tree",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree",
+ "beats": [
+  {"key": "hospitals", "at": "0:00", "name": "A. The hospitals tree", "blurb": "A minister shakes a tree labelled HOSPITALS; nothing falls. \"We can't afford it.\""},
+  {"key": "banks", "at": "0:05", "name": "B. The banks tree", "blurb": "He shakes the tree next to it, labelled BANKS: money pours down."},
+  {"key": "button", "at": "0:09", "name": "C. Different tree", "blurb": "He looks at camera: \"Different tree.\""}
+ ],
+ "video": {"model": "Omni 1.2 Flash", "aspect": "9:16", "mode": "Frames", "duration": 8}
+}

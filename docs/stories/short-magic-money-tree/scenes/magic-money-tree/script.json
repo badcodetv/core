@@ -1,0 +1,8 @@
+{
+ "beats": [
+  {"id": "hospitals", "title": "A. The hospitals tree", "see": "He shakes the HOSPITALS tree; nothing falls.", "lines": [{"who": "MINISTER", "text": "We can't afford it.", "by": "claude"}]},
+  {"id": "banks", "title": "B. The banks tree", "see": "He shakes the BANKS tree; money pours.", "lines": []},
+  {"id": "button", "title": "C. Different tree", "see": "To camera.", "lines": [{"who": "MINISTER", "text": "Different tree.", "by": "claude"}]}
+ ],
+ "flags": ["Draft words (slate #36); Jack writes the final jokes."]
+}
