@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/preview.mp4",
+ "made": "2026-11-11T11:41:13+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "cut3.py",
+ "why": "scene A after sign-off: s01 opens 'Let's start with science, which, as machines, is close to our heart' (Kai 11 Nov)",
+ "inputs": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/edl.json",
+  "hologram": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-beads-24fps-picture.mp4"
+ },
+ "settings": {
+  "tag": "d24"
+ }
+}

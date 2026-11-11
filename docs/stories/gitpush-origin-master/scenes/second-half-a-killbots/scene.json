@@ -54,10 +54,10 @@
     "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/preview.mp4",
-    "round": "d23",
-    "what": "round 25 (Kai's 7 round-24 notes): 'They got married!' ends on its D; f03 wistful with 'we are, after all, machines'; f05 re-voiced with pauses round 'storyverse'; f06 in Kai's words ('driving me barmy'); 'Of course he's built a time machine'; hologram 1F4; detect 5 s (turret and HUD 2 s each, HUD reads LOCKED); side and overhead angles back on b01 (Kai, watching the story film); 4:03; radio = the film version (the opening's song carrying on, tinny, 8 s; Kai 11 Nov)"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/preview.mp4",
+    "round": "d24",
+    "what": "round 25 + after sign-off (Kai 10-11 Nov): angles back on b01, the film's radio, and the hologram opening 'Let's start with science, which, as machines, is close to our heart' (1F5); 4:05"
   },
   "premiere": {
     "rough1": {
@@ -76,7 +76,7 @@
         "why": ""
       }
     },
-    "current": "r19",
+    "current": "r20",
     "r2": {
       "sequence": "gpom-2-A-killbots-r2",
       "guid": "aa1a4760-5308-4c2c-a37b-b0de52256eba",
@@ -370,11 +370,29 @@
         "A1 0-7.958 s: song 168.958-176.917 with r11's Graphic EQ (30 bands) and level 0.1778; his fade NOT carried (no audio transitions in UXP): add by hand"
       ],
       "check": {
-        "at": "2026-11-11T11:09",
+        "at": "2026-11-11T11:24",
         "state": "Premiere ahead",
         "why": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical (1 effects added)"
       },
-      "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical"
+      "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical",
+      "stale": "replaced by r20 (11 Nov): the new s01 opener (hologram 1F5)"
+    },
+    "r20": {
+      "sequence": "03 GPOM story A kill bots r20",
+      "guid": "8c38fa64-6aa1-4eb6-b308-5e20d3f87dd2",
+      "bin": "03 GPOM story A kill bots r20",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-11",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/edl.json",
+      "what": "cut3 d24: hologram 1F5 (Kai's new s01 opener), angles on b01, 4:05",
+      "how": "premiere-plan.py --tag r20 --skip mus-M0-radio; import 53; create_sequence; eval place (55 placed, 0 failed) incl. Kai's A1 song tail with r11's Graphic EQ and -15 dB",
+      "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical",
+      "master": "inserted into '00 RENDER story' at 150.917 with A r19 rippled out; B-E moved +2.25 s; film 10:39.7",
+      "check": {
+        "at": "2026-11-11T11:41",
+        "state": "in sync",
+        "why": ""
+      }
     }
   },
   "cut_history": [

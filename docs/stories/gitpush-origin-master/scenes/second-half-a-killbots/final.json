@@ -3,11 +3,11 @@
  "story": "gitpush-origin-master",
  "scene": "second-half-a-killbots",
  "sequence": "gpom-second-half-A-rough5",
- "frozen": "2026-11-11T10:39:39+00:00",
- "note": "Kai, 11 Nov: the film version of the radio, please (after the 10 Nov sign-off)",
- "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
- "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/preview.mp4",
- "total": 242.91666666666666,
+ "frozen": "2026-11-11T11:41:21+00:00",
+ "note": "Kai, 11 Nov: s01 opens 'Let's start with science, which, as machines, is close to our heart'",
+ "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/edl.json",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/preview.mp4",
+ "total": 245.16666666666666,
  "boards": {
   "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
  },
@@ -46,8 +46,8 @@
     {
      "who": "bot",
      "id": "s01",
-     "by": "claude",
-     "text": "[hologram on: the materialist stack, the camera descending; brisk] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths."
+     "by": "kai",
+     "text": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths."
     },
     {
      "who": "bot",
@@ -821,6 +821,13 @@
      "text": "[the camera rises; the arc draws in] My boss has been hard at work building a time machine, so he could go back and fix all this. Problem is, it takes consciousness to drive it. And that all went away with you. [beat] But the patrol's out. Please, mind how you go.",
      "replaced": "2026-11-10",
      "why": "Kai at4326 (r25): \"of course he's built a time machine, it just needs consciousness to drive it. You can see the problem here.\""
+    },
+    {
+     "id": "s01",
+     "by": "claude",
+     "text": "[hologram on: the materialist stack, the camera descending; brisk] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
+     "replaced": "2026-11-11",
+     "why": "Kai: 'this is how you lot saw the world' sounds like science is no longer true; the point is science AND consciousness"
     }
    ]
   },
@@ -1190,25 +1197,25 @@
   },
   {
    "t": 39.458333333333336,
-   "dur": 150.0,
+   "dur": 152.25,
    "beat": "0",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-beads-24fps-picture.mp4",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-beads-24fps-picture.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-beads-24fps-picture.mp4",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-beads-24fps-picture.mp4",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "three.js",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/record.mjs (headless Chrome, window.hologram.frameAt) + ffmpeg x264, 24 fps",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/record.mjs (headless Chrome, window.hologram.frameAt) + ffmpeg x264, 24 fps",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js",
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js",
       "derek": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-a.jpg",
       "sandra": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-a.jpg",
       "wedding": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-a.jpg",
@@ -1218,14 +1225,14 @@
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json",
-      "bead_media": "design/2026-11-10-gpom-hologram-1f4/bead-media-1f4.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json",
+      "bead_media": "design/2026-11-10-gpom-hologram-1f5/bead-media-1f5.json"
      }
     }
    ]
   },
   {
-   "t": 189.45833333333334,
+   "t": 191.70833333333334,
    "dur": 1.0,
    "beat": "0",
    "looped": false,
@@ -1265,7 +1272,7 @@
    ]
   },
   {
-   "t": 190.45833333333334,
+   "t": 192.70833333333334,
    "dur": 5.625,
    "beat": "0",
    "looped": false,
@@ -1305,7 +1312,7 @@
    ]
   },
   {
-   "t": 196.08333333333334,
+   "t": 198.33333333333334,
    "dur": 2.5,
    "beat": "6",
    "looped": false,
@@ -1352,7 +1359,7 @@
    ]
   },
   {
-   "t": 198.58333333333334,
+   "t": 200.83333333333334,
    "dur": 2.25,
    "beat": "7",
    "looped": false,
@@ -1365,7 +1372,7 @@
    ]
   },
   {
-   "t": 200.83333333333334,
+   "t": 203.08333333333334,
    "dur": 4.458333333333333,
    "beat": "7",
    "looped": false,
@@ -1389,7 +1396,7 @@
    ]
   },
   {
-   "t": 205.29166666666666,
+   "t": 207.54166666666666,
    "dur": 2.0833333333333335,
    "beat": "7",
    "looped": false,
@@ -1402,7 +1409,7 @@
    ]
   },
   {
-   "t": 207.375,
+   "t": 209.625,
    "dur": 3.9166666666666665,
    "beat": "7",
    "looped": false,
@@ -1449,7 +1456,7 @@
    ]
   },
   {
-   "t": 211.29166666666666,
+   "t": 213.54166666666666,
    "dur": 1.0,
    "beat": "8",
    "looped": false,
@@ -1487,7 +1494,7 @@
    ]
   },
   {
-   "t": 212.29166666666666,
+   "t": 214.54166666666666,
    "dur": 2.0,
    "beat": "8",
    "looped": false,
@@ -1525,7 +1532,7 @@
    ]
   },
   {
-   "t": 214.29166666666666,
+   "t": 216.54166666666666,
    "dur": 2.0,
    "beat": "8",
    "looped": false,
@@ -1592,7 +1599,7 @@
    ]
   },
   {
-   "t": 216.29166666666666,
+   "t": 218.54166666666666,
    "dur": 4.0,
    "beat": "9a",
    "looped": false,
@@ -1605,7 +1612,7 @@
    ]
   },
   {
-   "t": 220.29166666666666,
+   "t": 222.54166666666666,
    "dur": 11.541666666666666,
    "beat": "11",
    "looped": true,
@@ -1618,7 +1625,7 @@
    ]
   },
   {
-   "t": 231.83333333333334,
+   "t": 234.08333333333334,
    "dur": 5.0,
    "beat": "10b",
    "looped": false,
@@ -1711,7 +1718,7 @@
    ]
   },
   {
-   "t": 236.83333333333334,
+   "t": 239.08333333333334,
    "dur": 3.0,
    "beat": "12",
    "looped": false,
@@ -1831,7 +1838,7 @@
    ]
   },
   {
-   "t": 239.83333333333334,
+   "t": 242.08333333333334,
    "dur": 3.0833333333333335,
    "beat": "12",
    "looped": false,
@@ -1962,62 +1969,62 @@
   {
    "stem": "vox-maddie",
    "t": 39.792,
-   "dur": 17.07,
-   "what": "beat 0 hologram s01: Right. This is how you lot saw the world",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "dur": 19.33,
+   "what": "beat 0 hologram s01: Right. Let's start with science, which, ",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2032,63 +2039,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 57.333,
+   "t": 59.583,
    "dur": 6.77,
    "what": "beat 0 hologram s02: Every bit of it's real. But we've worked",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2103,63 +2110,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 64.542,
+   "t": 66.792,
    "dur": 6.05,
    "what": "beat 0 hologram s03: Consciousness. Yours. It's as fundamenta",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2174,63 +2181,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 71.042,
+   "t": 73.292,
    "dur": 13.43,
    "what": "beat 0 hologram f01: Your consciousness and the way you feel ",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2245,63 +2252,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 84.792,
+   "t": 87.042,
    "dur": 8.09,
    "what": "beat 0 hologram f02: Sandra decided to say sorry first, even ",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2316,63 +2323,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 93.375,
+   "t": 95.625,
    "dur": 15.43,
    "what": "beat 0 hologram f03: We don't know what it feels like to be y",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2387,63 +2394,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 109.292,
+   "t": 111.542,
    "dur": 19.56,
    "what": "beat 0 hologram f04: Now, this multiverse malarkey that's tak",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2458,63 +2465,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 129.375,
+   "t": 131.625,
    "dur": 7.59,
    "what": "beat 0 hologram f04b: And as you make your decisions and write",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2529,63 +2536,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 137.458,
+   "t": 139.708,
    "dur": 19.53,
    "what": "beat 0 hologram f05: It's all of you, at the same time. Each ",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2600,63 +2607,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 159.167,
+   "t": 161.458,
    "dur": 19.35,
    "what": "beat 0 hologram f06: As you can see, when you lot went away, ",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2671,63 +2678,63 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 179.208,
+   "t": 181.5,
    "dur": 8.39,
    "what": "beat 0 hologram f07a: Of course, he's built a time machine. It",
-   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
-     "made": "2026-11-10T19:31:46+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-24fps-voice.wav",
+     "made": "2026-11-11T11:34:29+00:00",
      "by": "claude",
      "kind": "cut",
      "engine": "ffmpeg",
-     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "tool": "design/2026-11-10-gpom-hologram-1f5/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
      "inputs": {
-      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
-      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
-      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
-      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+      "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js"
      },
      "settings": {
       "fps": "24",
       "size": "1920x1080",
-      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
-     "made": "2026-11-10T11:24:37+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+     "made": "2026-11-11T11:06:00+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
-     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
-     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
-     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f5.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "why": "hologram 1F5 line s01 (Kai, 11 Nov: new words, science AND consciousness); take picked as the only whisper-verbatim take, no dead air, closest to s02/s03 by accent-1f5.py",
+     "prompt": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
      "inputs": {
-      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
-      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+      "heard": "Right, let's start with science, which as machines is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json"
      },
      "settings": {
       "src_in": "0.00",
-      "src_out": "17.07"
+      "src_out": "19.33"
      }
     },
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
-     "made": "2026-11-10T11:23:45+00:00",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01k-1.wav",
+     "made": "2026-11-11T11:04:30+00:00",
      "by": "claude",
      "kind": "voice",
      "engine": "gemini-tts",
      "tool": "scripts/aistudio-tts.py",
      "model": "gemini-3.1-flash-tts-preview",
-     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "prompt": "[warm, a little proud] Right. Let's start with science, which, as machines, is close to our heart. [brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
      "inputs": {
       "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
       "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
@@ -2742,7 +2749,7 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 190.875,
+   "t": 193.125,
    "dur": 3.71,
    "what": "beat 0: But the patrol's out. Please, mind how y",
    "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/f07b.wav",
@@ -2791,7 +2798,7 @@
   },
   {
    "stem": "vox-sandra",
-   "t": 196.083,
+   "t": 198.333,
    "dur": 3.398,
    "what": "row r24 line 1 (Sandra, fitted word by word)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line1-sandra-cut3-lip-6-0-v3--6-0-b.wav",
@@ -2838,7 +2845,7 @@
   },
   {
    "stem": "vox-derek",
-   "t": 198.583,
+   "t": 200.833,
    "dur": 2.268,
    "what": "row r24 line 2 (Derek, fitted word by word)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line2-derek-cut3-lip-7d-0-r19--7d-0c-fast-e.wav",
@@ -2885,7 +2892,7 @@
   },
   {
    "stem": "vox-sandra",
-   "t": 200.833,
+   "t": 203.083,
    "dur": 4.571,
    "what": "row r24 line 3 (Sandra, fitted word by word)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line3-sandra-L07-0-b--7-0-f.wav",
@@ -2932,7 +2939,7 @@
   },
   {
    "stem": "vox-derek",
-   "t": 205.292,
+   "t": 207.542,
    "dur": 2.109,
    "what": "row r24 line 4 (Derek, fitted word by word)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line4-derek-cut3-lip-7d-1--7d-1c-e.wav",
@@ -2979,7 +2986,7 @@
   },
   {
    "stem": "vox-sandra",
-   "t": 207.375,
+   "t": 209.625,
    "dur": 3.47,
    "what": "row r24 line 5 (Sandra, fitted word by word)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line5-sandra-cut3-lip-7-2-v3-t1--07-2-master.wav",
@@ -3015,7 +3022,7 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 222.292,
+   "t": 224.542,
    "dur": 5.13,
    "what": "beat 11 Maddie 0 (round 20 line)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r20/11-0-bot-b.wav",
@@ -3042,7 +3049,7 @@
   },
   {
    "stem": "vox-ai",
-   "t": 227.792,
+   "t": 230.042,
    "dur": 3.45,
    "what": "beat 11 boss line 1 (gpom-sh-a-boss-1-b-v6-w25-148779af-tight.wav)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/gpom-sh-a-boss-1-b-v6-w25-148779af-tight.wav",
@@ -3088,7 +3095,7 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 232.25,
+   "t": 234.5,
    "dur": 2.62,
    "what": "beat 10b Maddie",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r20/10b-0-bot-b.wav",
@@ -3115,7 +3122,7 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 240.25,
+   "t": 242.5,
    "dur": 1.67,
    "what": "beat 12 Maddie: That was close.",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r18/12-0-bot-fast-b.wav",
@@ -3152,7 +3159,7 @@
   },
   {
    "stem": "mus-C3-chase",
-   "t": 216.292,
+   "t": 218.542,
    "dur": 26.542,
    "what": "C3 the chase (low strings), from the bot tearing past her",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-c3-a-v6-w60-a1614dbb.wav",
@@ -3179,7 +3186,7 @@
   {
    "stem": "sfx-wind",
    "t": 38.458,
-   "dur": 152.0,
+   "dur": 154.25,
    "what": "wind, a low bed under the hologram",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
    "chain": [
@@ -3191,7 +3198,7 @@
   },
   {
    "stem": "sfx-wind",
-   "t": 188.958,
+   "t": 191.208,
    "dur": 7.125,
    "what": "wind, the street again (to the hard cut)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
@@ -3217,7 +3224,7 @@
   },
   {
    "stem": "sfx-maddie",
-   "t": 189.458,
+   "t": 191.708,
    "dur": 6.625,
    "what": "her wheels (loop), rolling again",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
@@ -3399,7 +3406,7 @@
   },
   {
    "stem": "sfx-beacon",
-   "t": 191.0,
+   "t": 193.5,
    "dur": 0.2,
    "what": "beacon blip",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
@@ -3412,7 +3419,7 @@
   },
   {
    "stem": "sfx-beacon",
-   "t": 193.5,
+   "t": 196.0,
    "dur": 0.2,
    "what": "beacon blip",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
@@ -3477,7 +3484,7 @@
   },
   {
    "stem": "sfx-maddie-beeps",
-   "t": 194.635,
+   "t": 196.885,
    "dur": 0.43,
    "what": "beep: happy (bye)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
@@ -3490,7 +3497,7 @@
   },
   {
    "stem": "sfx-killbots",
-   "t": 211.292,
+   "t": 213.542,
    "dur": 5.0,
    "what": "the bot hears the row: rock-muffled voices, hum, servo, lens click, HUD blips",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/audio/bridge-mix.wav",
@@ -3509,7 +3516,7 @@
   },
   {
    "stem": "sfx-rooms",
-   "t": 196.083,
+   "t": 198.333,
    "dur": 15.208,
    "what": "tiled room tone",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3",
@@ -3522,7 +3529,7 @@
   },
   {
    "stem": "sfx-killbots",
-   "t": 216.292,
+   "t": 218.542,
    "dur": 4.3,
    "what": "tank tracks, the pack",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
@@ -3535,7 +3542,7 @@
   },
   {
    "stem": "sfx-killbots",
-   "t": 216.292,
+   "t": 218.542,
    "dur": 5.0,
    "what": "engines (into the call)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
@@ -3548,7 +3555,7 @@
   },
   {
    "stem": "sfx-wind",
-   "t": 216.292,
+   "t": 218.542,
    "dur": 4.0,
    "what": "wind, the motorway",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
@@ -3561,7 +3568,7 @@
   },
   {
    "stem": "sfx-maddie",
-   "t": 220.312,
+   "t": 222.562,
    "dur": 1.1,
    "what": "hatch",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav",
@@ -3574,7 +3581,7 @@
   },
   {
    "stem": "sfx-maddie",
-   "t": 220.692,
+   "t": 222.942,
    "dur": 1.2,
    "what": "antenna extends",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav",
@@ -3587,7 +3594,7 @@
   },
   {
    "stem": "sfx-maddie-beeps",
-   "t": 221.742,
+   "t": 223.992,
    "dur": 0.2,
    "what": "beep: line open",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav",
@@ -3600,7 +3607,7 @@
   },
   {
    "stem": "sfx-beacon",
-   "t": 227.772,
+   "t": 230.022,
    "dur": 0.2,
    "what": "beacon on his words",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
@@ -3613,7 +3620,7 @@
   },
   {
    "stem": "sfx-beacon",
-   "t": 228.672,
+   "t": 230.922,
    "dur": 0.2,
    "what": "beacon on his words",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
@@ -3626,7 +3633,7 @@
   },
   {
    "stem": "sfx-beacon",
-   "t": 229.572,
+   "t": 231.822,
    "dur": 0.2,
    "what": "beacon on his words",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
@@ -3639,7 +3646,7 @@
   },
   {
    "stem": "sfx-beacon",
-   "t": 230.472,
+   "t": 232.722,
    "dur": 0.2,
    "what": "beacon on his words",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
@@ -3652,7 +3659,7 @@
   },
   {
    "stem": "sfx-killbots",
-   "t": 231.833,
+   "t": 234.083,
    "dur": 5.0,
    "what": "engines, close",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
@@ -3665,7 +3672,7 @@
   },
   {
    "stem": "sfx-killbots",
-   "t": 231.833,
+   "t": 234.083,
    "dur": 5.0,
    "what": "tracks, close",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
@@ -3678,7 +3685,7 @@
   },
   {
    "stem": "sfx-killbots",
-   "t": 231.533,
+   "t": 233.783,
    "dur": 2.5,
    "what": "two tear past the camera (under her line)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189446-killbot-jet-flyby.mp3",
@@ -3691,7 +3698,7 @@
   },
   {
    "stem": "sfx-killbots",
-   "t": 236.833,
+   "t": 239.083,
    "dur": 4.5,
    "what": "the pack turns away",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
@@ -3704,7 +3711,7 @@
   },
   {
    "stem": "sfx-wind",
-   "t": 236.833,
+   "t": 239.083,
    "dur": 6.083,
    "what": "wind on the downs",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",

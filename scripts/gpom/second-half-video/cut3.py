@@ -66,24 +66,24 @@ fr, probe = C.fr, C.probe
 NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady',
          'crowd': 'The hundred'}
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
-D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
+D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
 D2 = TAG == 'd2'
-D7 = TAG in ('d7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')
-D8 = TAG in ('d8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')
-D19 = TAG in ('d19', 'd20', 'd21', 'd22', 'd23')  # round 21 (Kai r20, 6 Nov): Sandra re-edited onto Derek (no LatentSync); d03 ends on 'yet'
-D18 = TAG in ('d18', 'd19', 'd20', 'd21', 'd22', 'd23')  # round 20 (Kai r19 notes + dialogue 1D, 6 Nov): ending re-ordered (motorway -> call on Maddie -> wide approach -> stand-down), argument mouths redrawn (LatentSync), hologram 1D
-D17 = TAG in ('d17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # round 19 (Kai r18 notes at3777/at742/at4194/at4230): the row at natural speed, re-voiced/re-rendered for the lips; 'you know' cut; boss line 3 cut; no V3 cut-back
-D16 = TAG in ('d16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # round 18 (Kai, 5 Nov meeting): faster voices -- the row sped picture+voice together, Maddie re-voiced fast, boss re-recorded
-D15 = TAG in ('d15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # Kai 5 Nov: the brutal kill-bot cut (6, 7, 9a, 11 trimmed, 10b, 12 without HUD); bridge loudness-matched
-D14 = TAG in ('d14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # Kai r15 notes (5 Nov): no swoop/pull-out ("no funky camera work"); bridge line c00; street fades to black and back up
-D13 = TAG in ('d13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # Kai 5 Nov: draft 1K, the old monologue (lines 2-4) and its inserts out; swoop -> hologram -> pull-out
+D7 = TAG in ('d7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')
+D8 = TAG in ('d8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')
+D19 = TAG in ('d19', 'd20', 'd21', 'd22', 'd23', 'd24')  # round 21 (Kai r20, 6 Nov): Sandra re-edited onto Derek (no LatentSync); d03 ends on 'yet'
+D18 = TAG in ('d18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # round 20 (Kai r19 notes + dialogue 1D, 6 Nov): ending re-ordered (motorway -> call on Maddie -> wide approach -> stand-down), argument mouths redrawn (LatentSync), hologram 1D
+D17 = TAG in ('d17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # round 19 (Kai r18 notes at3777/at742/at4194/at4230): the row at natural speed, re-voiced/re-rendered for the lips; 'you know' cut; boss line 3 cut; no V3 cut-back
+D16 = TAG in ('d16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # round 18 (Kai, 5 Nov meeting): faster voices -- the row sped picture+voice together, Maddie re-voiced fast, boss re-recorded
+D15 = TAG in ('d15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # Kai 5 Nov: the brutal kill-bot cut (6, 7, 9a, 11 trimmed, 10b, 12 without HUD); bridge loudness-matched
+D14 = TAG in ('d14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # Kai r15 notes (5 Nov): no swoop/pull-out ("no funky camera work"); bridge line c00; street fades to black and back up
+D13 = TAG in ('d13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # Kai 5 Nov: draft 1K, the old monologue (lines 2-4) and its inserts out; swoop -> hologram -> pull-out
 D12 = TAG == 'd12'  # Kai r13 (at1878): drop line 5 ('And now we've worked all that out... go back and change things'), 'And so did you' -> 'Anyway!'
-D11 = TAG in ('d11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # Kai r12 (at1749): overhead road far too tidy -> ia-top3 (ia-09-a, rubble), t4 takes
-D10 = TAG in ('d10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # Kai r11 notes (4 Nov): overhead grainy/too fast/too many bays -> ia-top2 (ia-07-a), t2 clips, softer grade
-D9 = TAG in ('d9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # Kai, 4 Nov: beat 0 cut between three angles (front, side, overhead) at sentence ends  # Kai's timeline r9 notes (3 Nov)
+D11 = TAG in ('d11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # Kai r12 (at1749): overhead road far too tidy -> ia-top3 (ia-09-a, rubble), t4 takes
+D10 = TAG in ('d10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # Kai r11 notes (4 Nov): overhead grainy/too fast/too many bays -> ia-top2 (ia-07-a), t2 clips, softer grade
+D9 = TAG in ('d9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # Kai, 4 Nov: beat 0 cut between three angles (front, side, overhead) at sentence ends  # Kai's timeline r9 notes (3 Nov)
 RT01_IN = 2.5  # the retreat clip's in-point: past the crescent bot's slide to the right (t8, 0-2.5 s)
-D3 = TAG in ('d3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
-D4 = TAG in ('d4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
+D3 = TAG in ('d3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
+D4 = TAG in ('d4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
                   # the boss's firewall line cut, Maddie's 'That was close.' alone, HUD NEW OBJECTIVE
 BR = TAG == 'br'  # the bridge (Kai, 28 Oct): the doorstep talk cut; a look, the door shuts on her, voices behind it
 STEM = {'bot': 'vox-maddie', 'lady': 'vox-lady', 'woman': 'vox-sandra', 'man': 'vox-derek', 'crowd': 'vox-crowd'}
@@ -438,7 +438,7 @@ D3_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 0.9, 5: 1.0, 6: 1.4, 7: 2.0}
 # Round D6 (2 Nov): draft 1H, seven lines; the travelling shot extended to play at real speed (no slow-down), the
 # tune held at least 8 s before "Oh, hello!", and the shot starting after her opening turn (Kai: "just cut to her
 # rolling down the road").
-D6 = TAG in ('d6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23')
+D6 = TAG in ('d6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')
 # Round D7 (3 Nov): Kai's 'chopped' lip-sync note -> v3 (clips re-made to the voice, whole phrases, x1.00-1.15);
 # the stand-down plate V4 (reversed) -> SD01, animated from his still pick sd-01.
 D6_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 1.4, 5: 2.0}
@@ -555,18 +555,19 @@ SWOOP_AT = 45.0  # measured: the swoop's first frame matches the graded front sh
 H_FADE = 1.0     # the swoop fades to black over its last second; the pull-out fades up over its first
 BACK_LEAD = 0.6  # back on the street: this long before "Anyway!"
 BRIDGE = HOLO / 'voice-1k' / 'clips' / 'c00-bridge.wav'
-if TAG in ('d17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23'):  # Kai at742: 'you know' cut (2.73-3.24 s, 0.49 s out), so the pause moves earlier with it
+if TAG in ('d17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24'):  # Kai at742: 'you know' cut (2.73-3.24 s, 0.49 s out), so the pause moves earlier with it
     BRIDGE = HOLO / 'voice-1k' / 'clips' / 'c00-bridge-r19.wav'
-if TAG in ('d18', 'd19', 'd20', 'd21', 'd22', 'd23'):  # round 20: dialogue 1D voiced and rendered (hologram-1d agent, 6 Nov); the bridge is one part
+if TAG in ('d18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24'):  # round 20: dialogue 1D voiced and rendered (hologram-1d agent, 6 Nov); the bridge is one part
     H_PIC = HOLO / 'render-1d-24' / 'hologram-1d-24fps-picture.mp4'
     H_VOX = HOLO / 'render-1d-24' / 'hologram-1d-24fps-voice.wav'
     H_EDIT = HOLO / 'render-1d-24' / 'edit.json'
     H_LINES = S.REPO / 'design' / '2026-11-05-gpom-meeting' / 'voice-1d' / 'lines-1d.json'
     BRIDGE = HOLO / 'voice-1d' / 'clips' / 'c00-bridge.wav'
-D23 = TAG == 'd23'  # round 25 (Kai's round 24 notes, 10 Nov): hologram 1F4 (f02 tail, f03/f05/f06/f07a re-voiced in his words), detect 5 s (detect-r25)
-D22 = TAG in ('d22', 'd23')  # round 24 (Kai's round 23 notes, 10 Nov): hologram 1F3 (new lines + picture fixes), the row re-synced word by word (row-r24), the kill bot hears them (detect-r24)
-D21 = TAG in ('d21', 'd22', 'd23')  # round 23 (Kai at1293, 10 Nov): b02 cut; straight into hologram 1F2, which opens on the materialist stack (s01-s03)
-D20 = TAG in ('d20', 'd21', 'd22', 'd23')  # round 22 (Kai locked dialogue 1F, 9 Nov): b01+b02 on the street, the 1F hologram with his stills in the beads, f07b back on the street
+D24 = TAG == 'd24'  # Kai, 11 Nov (after sign-off): s01 opens 'Let's start with science, which, as machines, is close to our heart' -> hologram 1F5
+D23 = TAG in ('d23', 'd24')  # round 25 (Kai's round 24 notes, 10 Nov): hologram 1F4 (f02 tail, f03/f05/f06/f07a re-voiced in his words), detect 5 s (detect-r25)
+D22 = TAG in ('d22', 'd23', 'd24')  # round 24 (Kai's round 23 notes, 10 Nov): hologram 1F3 (new lines + picture fixes), the row re-synced word by word (row-r24), the kill bot hears them (detect-r24)
+D21 = TAG in ('d21', 'd22', 'd23', 'd24')  # round 23 (Kai at1293, 10 Nov): b02 cut; straight into hologram 1F2, which opens on the materialist stack (s01-s03)
+D20 = TAG in ('d20', 'd21', 'd22', 'd23', 'd24')  # round 22 (Kai locked dialogue 1F, 9 Nov): b01+b02 on the street, the 1F hologram with his stills in the beads, f07b back on the street
 V1F = HOLO / 'voice-1f' / 'clips'
 if D20:
     H_PIC = HOLO / 'render-1f-24' / 'hologram-1f-beads-24fps-picture.mp4'
@@ -591,7 +592,12 @@ if D23:
     H_EDIT = HOLO / 'render-1f4-24' / 'edit.json'
     H_LINES = S.REPO / 'design' / '2026-11-05-gpom-meeting' / 'voice-1f' / 'lines-1f4.json'
     DET24 = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/detect-spec.json')  # Kai at5176: turret and HUD 2 s each
-BRIDGE_SPLIT = 5.51 if TAG in ('d17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23') else 6.0  # the pause between "...came back." (speech to 5.78 s) and "Go on, then." (from 6.60 s), clip time  # d14: "He made me learn a little presentation... Gather round."
+if D24:
+    H_PIC = HOLO / 'render-1f5-24' / 'hologram-1f5-beads-24fps-picture.mp4'
+    H_VOX = HOLO / 'render-1f5-24' / 'hologram-1f5-24fps-voice.wav'
+    H_EDIT = HOLO / 'render-1f5-24' / 'edit.json'
+    H_LINES = S.REPO / 'design' / '2026-11-05-gpom-meeting' / 'voice-1f' / 'lines-1f5.json'
+BRIDGE_SPLIT = 5.51 if TAG in ('d17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24') else 6.0  # the pause between "...came back." (speech to 5.78 s) and "Go on, then." (from 6.60 s), clip time  # d14: "He made me learn a little presentation... Gather round."
 
 
 LS_DIR = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-r19')
@@ -1196,7 +1202,7 @@ def scene_a():
     e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 10b Maddie')
     c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
     d10b = fr(max(5.0, e + TAIL - t))
-    if TAG in ('d5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
+    if TAG in ('d5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
         c.pic(V / 'cut3-WA02.mp4', 0, t, t + d10b, '10b')
         b['title'], b['see'] = 'The wide approach', ('Long lens through the grass: the pack races along the foot of the slope, the '
                                                      'bunker door small and high on the right. Maddie over it.')

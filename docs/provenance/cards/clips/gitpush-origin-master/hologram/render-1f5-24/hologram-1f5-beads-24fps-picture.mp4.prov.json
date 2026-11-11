@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-beads-24fps-picture.mp4",
+ "made": "2026-11-11T11:34:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "three.js",
+ "tool": "design/2026-11-10-gpom-hologram-1f5/record.mjs (headless Chrome, window.hologram.frameAt) + ffmpeg x264, 24 fps",
+ "why": "hologram 1F5 (Kai, 11 Nov): as 1F4, with s01 re-voiced to its new words (science, close to our heart; \"This is how you lot saw the world\" dropped) and the stack re-timed to them; every other line as 1F4",
+ "inputs": {
+  "page": "design/2026-11-10-gpom-hologram-1f5/index.html",
+  "builder": "design/2026-11-10-gpom-hologram-1f5/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f5.json",
+  "stack": "design/2026-11-10-gpom-hologram-1f5/stack.js",
+  "derek": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-a.jpg",
+  "sandra": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-a.jpg",
+  "wedding": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-a.jpg",
+  "cat0": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/cat-alive-a.jpg",
+  "cat1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/cat-dead-a.jpg"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/edit.json",
+  "bead_media": "design/2026-11-10-gpom-hologram-1f5/bead-media-1f5.json"
+ }
+}

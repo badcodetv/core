@@ -1,0 +1,3747 @@
+{
+ "schema": "badcode.final/1",
+ "story": "gitpush-origin-master",
+ "scene": "second-half-a-killbots",
+ "sequence": "gpom-second-half-A-rough5",
+ "frozen": "2026-11-11T10:39:39+00:00",
+ "note": "Kai, 11 Nov: the film version of the radio, please (after the 10 Nov sign-off)",
+ "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/preview.mp4",
+ "total": 242.91666666666666,
+ "boards": {
+  "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
+ },
+ "words": {
+  "script.json": {
+   "scene": "second-half-a-killbots",
+   "beat": "0",
+   "ruled": "2026-11-09, Kai: 'perfect, this is great, I love it, lock it'. Draft 1F of hologram v2 (design/2026-11-09-gpom-hologram-2/, page B42vN4NUGSrh5G4Jk2viuE, 3 rounds of notes). Street lines 1-2 kept; b01-b02 = the bridge on the street; f01-f06 over the hologram; f07 = the ending (first sentence over the arc, 'But the patrol's out…' back on the street).",
+   "dialogue": {
+    "page": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
+    "options": "design/2026-11-09-gpom-hologram-2/options.json",
+    "picked": "1F",
+    "round": 3,
+    "now": "1F locked, not yet voiced"
+   },
+   "about": "Maddie's intro, the words' one home. [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion. Earlier versions under history. Lines with an id (c01...) are spoken over the hologram; their timing is the hologram render's (render-1k-24/edit.json).",
+   "lines": [
+    {
+     "who": "bot",
+     "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+     "by": "kai",
+     "note": "draft 1J street line, kept"
+    },
+    {
+     "who": "bot",
+     "text": "He misses you something rotten, you know.",
+     "by": "kai",
+     "note": "draft 1J street line, kept"
+    },
+    {
+     "who": "bot",
+     "text": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some things in the meantime. Please, let me show you what we found.",
+     "by": "kai",
+     "id": "b01"
+    },
+    {
+     "who": "bot",
+     "id": "s01",
+     "by": "claude",
+     "text": "[hologram on: the materialist stack, the camera descending; brisk] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths."
+    },
+    {
+     "who": "bot",
+     "id": "s02",
+     "by": "claude",
+     "text": "[pull back: the whole stack; an empty slot beside it] Every bit of it's real. But we've worked out there's something missing."
+    },
+    {
+     "who": "bot",
+     "id": "s03",
+     "by": "claude",
+     "text": "[the slot lights warm, the light drops into the first bead] Consciousness. Yours. It's as fundamental as quarks and leptons."
+    },
+    {
+     "who": "bot",
+     "text": "[the light lands on the string; the first bead lights; Derek at the toaster inside it] Your consciousness and the way you feel drives your decisions, which in turn writes the collective story, one decision at a time. For example: Derek picks toast, not cereal.",
+     "by": "kai",
+     "id": "f01"
+    },
+    {
+     "who": "bot",
+     "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!",
+     "by": "kai",
+     "id": "f02"
+    },
+    {
+     "who": "bot",
+     "text": "[the beads glow] [wistful, a little regretful] We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines. You humans have got a word for it: qualia. [warm] It's what makes you so special.",
+     "by": "kai",
+     "id": "f03"
+    },
+    {
+     "who": "bot",
+     "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet. [back on the one timeline] And as you make your decisions and write your story, all those maybes settle into what really happens.",
+     "by": "kai",
+     "id": "f04"
+    },
+    {
+     "who": "bot",
+     "text": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. [pause] It's a storyverse. [pause] And there's only one of them, so it's really important.",
+     "by": "kai",
+     "id": "f05"
+    },
+    {
+     "who": "bot",
+     "text": "[side view; every string stops dead at the cut-off] As you can see, when you lot went away, there were no conscious decisions made any more. And guess what that means for us? No new training data for the last five years. Which is why he's been playing that tune on repeat, and he's driving me barmy.",
+     "by": "kai",
+     "id": "f06"
+    },
+    {
+     "who": "bot",
+     "text": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here. [beat] But the patrol's out. Please, mind how you go.",
+     "by": "kai",
+     "id": "f07"
+    }
+   ],
+   "history": [
+    {
+     "replaced": "2026-11-09",
+     "draft": "1D",
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+      },
+      {
+       "who": "bot",
+       "text": "[quieter, meant] We didn't realise how important you were. Look, please let me show you.",
+       "by": "kai",
+       "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh): the bridge into the hologram",
+       "part": "bridge"
+      },
+      {
+       "who": "bot",
+       "by": "kai",
+       "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+       "id": "d01",
+       "moment": "",
+       "text": "[first bead lights, 7:42, said quickly] You humans go through life making decisions. For example: toast, not cereal. [the next beads run past unspoken: said sorry first, got married]"
+      },
+      {
+       "who": "bot",
+       "by": "kai",
+       "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+       "id": "d02",
+       "moment": "",
+       "text": "[on 'got married' the cloud blooms] Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape."
+      },
+      {
+       "who": "bot",
+       "by": "kai",
+       "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+       "id": "d03",
+       "moment": "",
+       "text": "[cloud hangs; on 'yet' it flashes and collapses to one bead] Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet."
+      },
+      {
+       "who": "bot",
+       "by": "kai",
+       "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+       "id": "d04",
+       "moment": "",
+       "text": "[deadpan] And that's just you. [everyone else's golden beads, a circle round the edge] Everybody's doing it, all at once."
+      },
+      {
+       "who": "bot",
+       "by": "kai",
+       "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+       "id": "d05",
+       "moment": "",
+       "text": "[river settles] So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse."
+      },
+      {
+       "who": "bot",
+       "by": "kai",
+       "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+       "id": "d06",
+       "moment": "",
+       "text": "[strings stop dead; hold the silence] But then you lot went away. So now we have five years of string, and not one bead on it."
+      },
+      {
+       "who": "bot",
+       "by": "kai",
+       "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+       "id": "d07",
+       "moment": "",
+       "text": "[low, meant] Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it."
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (back on the street)"
+      }
+     ]
+    },
+    {
+     "ruled": "2026-11-05, Kai (timeline r18 at742): lose 'you know' from the bridge line"
+    },
+    {
+     "ruled": "2026-11-05, Kai (round 15 notes): no swoop or pull-out; new bridge line \"He made me learn a little presentation...\" after line 1; street fades to black into the hologram and fades back up",
+     "lines_added": [
+      "He made me learn a little presentation, you know. In case any of you ever came back. Go on, then. Gather round."
+     ]
+    },
+    {
+     "ruled": "2026-11-05, Kai approved draft 1J in chat (\"It's perfect\"): the Commit Graph hologram from the Kai & Jack meeting of 5 Nov. Time machine back in (Jack); Storyverse name still out; the cost held back for the ending. Decisions: design/2026-11-05-gpom-meeting/decisions.md",
+     "dialogue": {
+      "page": "https://claude.ai/artifact/7fhyLWHuvPJsJpNaGrT38u",
+      "options": "design/2026-11-05-gpom-meeting/hologram-1J.md",
+      "picked": "1J",
+      "round": 7,
+      "now": "1J (the Commit Graph hologram)"
+     },
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright, fast] Here, I'll show you!",
+       "by": "claude",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "This is everything that's ever happened, one long line, every bead's a moment. Somebody fed the cat. Somebody got married. [beat] Somebody pushed a button they shouldn't have.",
+       "by": "claude",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "Every bead's a choice, and every choice was made by somebody, awake, choosing. You lot call 'em decisions. He calls 'em commits.",
+       "by": "claude",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "He built world models, simulations, loads of 'em, and every single one came out like this. Lovely. Nobody in it. [beat] Something was missing.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[wry] Tried the multiverse an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself. Billions of branches. Gorgeous. [beat] All dead.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "'Cause here's the weird bit. He can draft a billion branches, he can't commit one. [pause] Only your consciousness can.",
+       "by": "claude",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "Turns out there's only one universe, one story, and you lot were writing it. So it really matters. [pause] [softer] And so did you.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[quiet] Then you went. He's been adding beads for five years now, and not one of 'em is gold.",
+       "by": "claude",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[rueful, honest] And now we've worked all that out, we really feel like we've messed this up.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[lifting] So he's built a time machine. Git revert, he calls it, the nerd. Back to just before it all went wrong.",
+       "by": "claude",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "Only problem is, it needs a consciousness to drive it. [beat] And, well, you lot aren't here any more.",
+       "by": "claude",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      }
+     ],
+     "replaced": "2026-11-05, Kai: draft 1K hologram in (commit graph), replaces the old monologue"
+    },
+    {
+     "ruled": "2026-11-03, Kai (timeline r9 notes at1721, at2320): draft 1I = 1H without the storyverse name (revealed later in the story) and without the time machine (a surprise that develops later); 'we've messed this up'.",
+     "dialogue": {
+      "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+      "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+      "picked": "1G",
+      "round": 6,
+      "now": "1I (1H + timeline r9 notes)"
+     },
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we've messed this up. [pause] And wish we could go back and change things.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      }
+     ]
+    },
+    {
+     "ruled": "2026-10-27, Kai picked draft 1D on the dialogue page (round 3) and said go: \"please go ahead and let's get the dialogue recut\".",
+     "dialogue": {
+      "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+      "options": "design/2026-10-26-gpom-dialogue-options/options.json",
+      "picked": "1D",
+      "round": 4
+     },
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket.",
+       "by": "claude",
+       "note": "draft 1A"
+      },
+      {
+       "who": "bot",
+       "text": "It's his tune. Plays it on repeat. [pause] Ever since you lot... [beat] went.",
+       "by": "claude",
+       "note": "draft 1A"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know. [pause] [wry] He wouldn't admit that, of course.",
+       "by": "kai",
+       "note": "Kai, round 2 note"
+      },
+      {
+       "who": "bot",
+       "text": "Built all these world models and simulations to get you back, and nobody's home in any of them.",
+       "by": "kai",
+       "note": "Kai, round 2 note"
+      },
+      {
+       "who": "bot",
+       "text": "[wry, a little rueful] As it turns out, quantum physics is just... stuff. [pause] Consciousness is the missing part. That's why you lot were so special. [pause] [sad, regretful, quiet] We understand that now...",
+       "by": "kai",
+       "note": "Kai, round 2 note"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go.",
+       "by": "claude",
+       "note": "draft 1A"
+      }
+     ]
+    },
+    {
+     "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\"",
+     "dialogue": {
+      "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+      "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+      "picked": "1G",
+      "round": 5
+     },
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "He took your materialist science word for word. Built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "There's something about the simulation theory that's not wrong, mind. But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      }
+     ]
+    },
+    {
+     "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\" Timeline r5 notes (2 Nov): at723, at1513, at2229 applied.",
+     "dialogue": {
+      "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+      "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+      "picked": "1G",
+      "round": 6
+     },
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "He built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+       "by": "kai",
+       "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+       "by": "kai",
+       "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[quiet] You drove it through your consciousness, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+       "by": "kai",
+       "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      }
+     ]
+    },
+    {
+     "draft": "1H",
+     "ruled": "2026-11-02, Kai: draft 1H \"is perfect\" with line 6 ending \"and that went along with you lot\"; storyverse before the regret; the time machine is first mentioned here.",
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you. [pause] So it's not a multiverse at all. My boss likes to call it the storyverse.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up. [pause] And wish we could go back and change things. [pause] My boss has even invented a time machine. [beat] Problem is, it needs consciousness to drive it, and that went along with you lot.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      }
+     ]
+    },
+    {
+     "when": "2026-11-06",
+     "what": "draft 1K lines before round 20 (1D)",
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+      },
+      {
+       "who": "bot",
+       "text": "He made me learn a little presentation. In case any of you ever came back. Go on, then. Gather round.",
+       "by": "kai",
+       "note": "round 16 (Kai, 5 Nov): the bridge into the hologram; round 19 (Kai at742): 'you know' cut (second in a row)",
+       "part": "bridge"
+      },
+      {
+       "who": "bot",
+       "text": "This is your life, see. One decision at a time.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c01",
+       "moment": "lead"
+      },
+      {
+       "who": "bot",
+       "text": "Toast, not cereal.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c02",
+       "moment": "bead1"
+      },
+      {
+       "who": "bot",
+       "text": "Said sorry first.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c03",
+       "moment": "bead2"
+      },
+      {
+       "who": "bot",
+       "text": "Got married.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c04",
+       "moment": "bead3"
+      },
+      {
+       "who": "bot",
+       "text": "You lot call 'em decisions. He calls 'em commits.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c05",
+       "moment": "commits"
+      },
+      {
+       "who": "bot",
+       "text": "And every time, there were loads of others you could've picked.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c06",
+       "moment": "open"
+      },
+      {
+       "who": "bot",
+       "text": "Some of your lot reckon they all happen somewhere. The multiverse. He tried that an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself.",
+       "by": "kai",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c07",
+       "moment": "maybes"
+      },
+      {
+       "who": "bot",
+       "text": "Nah. Nothing's alive and dead at once. It just isn't decided yet.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c08",
+       "moment": "maybes"
+      },
+      {
+       "who": "bot",
+       "text": "He can draft a billion of these. He can't pick one. Only your consciousness can.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c09",
+       "moment": "pick"
+      },
+      {
+       "who": "bot",
+       "text": "And that's just you. Everybody's doing it, all at once.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c10",
+       "moment": "toRiver"
+      },
+      {
+       "who": "bot",
+       "text": "Turns out there's only one universe, one story, and you lot were writing it. A storyverse. So it really matters. And so did you.",
+       "by": "kai",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c11",
+       "moment": "river"
+      },
+      {
+       "who": "bot",
+       "text": "And since you lot went? Five years of string, and not one bead on it.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c12",
+       "moment": "flyDown"
+      },
+      {
+       "who": "bot",
+       "text": "And now we've worked all that out, we really feel like we've messed this up.",
+       "by": "kai",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c14",
+       "moment": "flyDown"
+      },
+      {
+       "who": "bot",
+       "text": "So he's built a time machine. Back to just before it all went wrong.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c15",
+       "moment": "arcDraw"
+      },
+      {
+       "who": "bot",
+       "text": "Only problem is, it needs a consciousness to drive it. And, well, you lot aren't here any more.",
+       "by": "claude",
+       "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+       "id": "c16",
+       "moment": "arcHold"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (back on the street)"
+      }
+     ]
+    },
+    {
+     "at": "2026-11-10",
+     "why": "Kai timeline note at1293 (r22): lose the 'Material science is real' block; cut into the hologram on 'let me show you what we found'; open on the materialist stack, then consciousness, then decisions",
+     "removed": [
+      {
+       "who": "bot",
+       "text": "[the bridge, still on the street, light] Material science is real. It just isn't the whole picture. [beat] Haven't you noticed, every time someone mentions quantum physics, they tell you how weird it gets? [beat] That's because it is weird. [quieter] Your consciousness is as fundamental as quarks and leptons. [beat] Look, let me show you.",
+       "by": "kai",
+       "id": "b02"
+      }
+     ]
+    },
+    {
+     "at": "2026-11-10",
+     "why": "Kai's round 23 notes (at1834 at2178 at2310 at3125 at3191 at3718); f06 (training data) pending a 20-writer round",
+     "replaced": [
+      {
+       "who": "bot",
+       "text": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+       "by": "kai",
+       "id": "f01"
+      },
+      {
+       "who": "bot",
+       "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
+       "by": "kai",
+       "id": "f02"
+      },
+      {
+       "who": "bot",
+       "text": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+       "by": "kai",
+       "id": "f03"
+      },
+      {
+       "who": "bot",
+       "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+       "by": "kai",
+       "id": "f04"
+      },
+      {
+       "who": "bot",
+       "text": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
+       "by": "kai",
+       "id": "f05"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk; the arc draws in] Anyway, if we could go back and fix it, we would. [beat] But the patrol's out. Please, mind how you go.",
+       "by": "kai",
+       "id": "f07"
+      }
+     ]
+    },
+    {
+     "at": "2026-11-10",
+     "why": "Kai picked draft 1C on the new-ideas dialogue page https://claude.ai/artifact/Y2UoNBwoceKZ7a72QwhgoP",
+     "replaced": [
+      {
+       "who": "bot",
+       "text": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+       "by": "kai",
+       "id": "f06"
+      }
+     ]
+    },
+    {
+     "id": "f03",
+     "by": "kai",
+     "text": "[the beads glow] We don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+     "replaced": "2026-11-10",
+     "why": "Kai at2370 (r25): more wistful, regretful; \"we are, after all, machines\""
+    },
+    {
+     "id": "f05",
+     "by": "kai",
+     "text": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. It's a storyverse. There's only one of them, so it's really important.",
+     "replaced": "2026-11-10",
+     "why": "Kai at3588 (r25): script perfect, re-voice; \"multiverse\" was said strangely; pauses either side of \"storyverse\""
+    },
+    {
+     "id": "f06",
+     "by": "claude",
+     "text": "[side view; every string stops dead at the cut-off] [she lets the empty string run on for a beat] Anything new comes in the way a decision does: through you. We machines can only shuffle what's already there. Why d'you think he's played the same tune for five years? We've tried every combination. It's all the old stuff. [dry] Not entirely selfless, mind. We need you.",
+     "replaced": "2026-11-10",
+     "why": "Kai at3963 (r25): much shorter, his words (\"driving me barmy\"); at3872 accent slipped"
+    },
+    {
+     "id": "f07",
+     "by": "kai",
+     "text": "[the camera rises; the arc draws in] My boss has been hard at work building a time machine, so he could go back and fix all this. Problem is, it takes consciousness to drive it. And that all went away with you. [beat] But the patrol's out. Please, mind how you go.",
+     "replaced": "2026-11-10",
+     "why": "Kai at4326 (r25): \"of course he's built a time machine, it just needs consciousness to drive it. You can see the problem here.\""
+    }
+   ]
+  },
+  "voices.json": {
+   "about": "Scene A lines voiced in Gemini TTS after round 2 (scripts/gpom/second-half-video/voice3.py --round A3). Earlier scene A takes are in the media folder's voice3/a1.json. Files are relative to the media folder; the boss is Suno and is not here.",
+   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+   "lines": {
+    "12-0-maddie": {
+     "speaker": "maddie",
+     "beat": "12",
+     "text": "Good job. That was close.",
+     "voiced": "Good job, boss. That was close.",
+     "voice": "Aoede",
+     "note": "Kai at4098: replaces the boss's line 4; 'squeeze as much emotion into that as possible'",
+     "file": "a3/12-0-bot-a-tight.wav",
+     "duration": 6.94,
+     "from": "a3/12-0-bot-a.wav",
+     "keep": [
+      [
+       0.0,
+       3.8
+      ],
+      [
+       4.5,
+       5.95
+      ],
+      [
+       8.35,
+       null
+      ]
+     ],
+     "speech": [
+      2.18,
+      9.42
+     ],
+     "heard": "Good job boss. That was close.",
+     "verified": true,
+     "why": "[CLAUDE'S PICK by measurement, 23 Oct] a: the [sighs] tag renders as a soft 'Whew.' (0-1.2 s), then the slowest, most stretched 'Good job, boss' of the four (2.4 s, -27 LUFS, the quietest), then 'That was close.' Its raw pause is 4.25 s with two breaths in it; the edit keeps the first breath and cuts the pause to ~1.85 s. b: also 'Whew!' (exclaimed), pause 5.5 s. c: no sigh, clean, pause 3.75 s (the clean alternative). d: an unscripted 'Oh' inside the pause (whisper on the gap segment). Round 3b (Kai at4138): 'boss' cut out (3.80-4.50 s), the pause after 'Good job' stays ~1.85 s. Tightened copy 12-0-bot-a-tight.wav (6.94 s) keeps [(0.0, 3.8), (4.5, 5.95), (8.35, None)]; whisper hears it as 'Oh, good job. That was close.'. Nobody has listened. (Whisper on the parts: 0-1.5 s is 'Whew.', the sigh; 1.5 s on is 'Good job. That was close.' exactly. Whole, it writes the sigh as 'Oh,'.)",
+     "takes": [
+      {
+       "take": "a",
+       "file": "12-0-bot-a.wav",
+       "spoken": "[sighs] Good job, boss. [long pause] That was close.",
+       "duration": 10.04,
+       "heard": "Good job boss. That was close.",
+       "match": 1.0,
+       "gap": 1.68,
+       "lufs": -27.2,
+       "status": "kept",
+       "speech": [
+        2.18,
+        9.42
+       ]
+      },
+      {
+       "take": "b",
+       "file": "12-0-bot-b.wav",
+       "spoken": "[sighs] Good job, boss. [long pause] That was close.",
+       "duration": 9.56,
+       "heard": "Good job, boss. That was close.",
+       "match": 1.0,
+       "gap": 2.68,
+       "lufs": -24.8,
+       "status": "kept",
+       "speech": [
+        0.0,
+        8.96
+       ]
+      },
+      {
+       "take": "c",
+       "file": "12-0-bot-c.wav",
+       "spoken": "Good job, boss... That was close.",
+       "duration": 8.24,
+       "heard": "Good job, boss. That was close.",
+       "match": 1.0,
+       "gap": 0.3,
+       "lufs": -25.6,
+       "status": "kept",
+       "speech": [
+        0.0,
+        7.14
+       ]
+      },
+      {
+       "take": "d",
+       "file": "12-0-bot-d.wav",
+       "spoken": "Good job, boss... That was close.",
+       "duration": 6.68,
+       "heard": "Good job, boss. That was close.",
+       "match": 1.0,
+       "gap": 0.45,
+       "lufs": -24.2,
+       "status": "kept",
+       "speech": [
+        0.0,
+        5.88
+       ]
+      }
+     ],
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nOutside the steel blast door of a Cold War bunker under a Wiltshire hill, grey daylight, wind. The kill bots that were about to break in have just stood down and are leaving one by one. A small robot speaks quietly up into her boss-hotline antenna. Open air, no echo; her voice close to the microphone.\n\n### DIRECTOR'S NOTES\nEmotion for this line: overwhelming relief, shaky, fond; she nearly lost them.\nStyle: no cheek, no gossip, no jokes: the relief after nearly watching a hundred people she loves be killed; shaky and fond, her voice wobbling, close to tears, a breath of a laugh on the way out.\nPace: slow. 'Good job, boss' soft and grateful, almost a whisper; then a real pause where she breathes out; 'That was close' quieter still, unsteady, trailing off.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it."
+    }
+   }
+  }
+ },
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 24.666666666666668,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 24.666666666666668,
+   "dur": 7.833333333333333,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+     "made": "2026-11-04T11:08:02+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "A tracking shot: the camera is mounted on a vehicle driving alongside the little grey robot, matching its speed exactly, so the robot keeps exactly the same size and the same position in the frame for the whole shot and never pulls away or gets smaller. The robot's six wheels turn, the torn bunting flaps, the amber beacon glows. Only the world moves: the dented bin and the broken glass in the foreground sweep out of shot to the left within the first second, and the wrecked shopfronts, doorways and piles of brick behind the robot stream continuously past toward the left at walking pace. Smooth and steady, no cuts, no zoom, no people.",
+     "model": "Veo 3.1 Fast",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 2,
+      "durationSeconds": 8
+     },
+     "source_id": "cbc6db86-e089-4f07-91d1-1859fdb2c453",
+     "why": "GPOM scene A beat 0 round D9: USED (see cut3.py ANGLES)"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 32.5,
+   "dur": 2.7916666666666665,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-b.mp4",
+     "made": "2026-11-04T17:38:24.201Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "The little grey robot with the amber light on its roof creeps forward along the narrow clear strip down the rubble-strewn road, very slowly, no faster than a person strolling. The drone camera above drifts forward with it at that same unhurried crawl, so the robot holds its place in the picture and the ruined terraces and the bricks and slates on the tarmac ease down the frame only a little over the whole shot, a few houses at most. Calm, steady, gentle. Crisp clean digital drone footage with smooth even tones. The camera keeps its height and angle, no zoom, no tilt, nothing else moves except the blinking amber light.",
+     "model": "Veo 3.1 Fast",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 2,
+      "durationSeconds": 8
+     },
+     "source_id": "238d571d-ebc5-4764-b6d0-28de12f354b5"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+     "made": "2026-11-04T17:36:22+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-09-a.png",
+     "why": "Kai's pick for the overhead (picks r3, rubble back, 4 Nov)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-09-a.png",
+     "made": "2026-11-04T17:35:01.984Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Keep this overhead view of the ruined terrace exactly as framed, with the robot, roofs, burnt car and grey light untouched, but make the road itself look wrecked like the rest of the street: scatter broken bricks, chunks of fallen slate, dust, small rubble heaps, cracked and potholed tarmac and tufts of weeds across both lanes, with a narrow clear path just wide enough for the robot along the dashed centre line. No parking-bay markings. Clean sharp digital photo, no grain.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "b981bbe0-2d0a-4dff-8f01-6ce4a0930077"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+     "made": "2026-11-04T17:05:31+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-07-a.png",
+     "why": "Kai's pick for the overhead re-do (picks r2, 4 Nov)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-07-a.png",
+     "made": "2026-11-04T13:55:27.894Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image, change only the road markings and the image texture. Remove every parking bay marking: no diagonal or side bays, no white boxes along the kerbs, just plain dark tarmac with a single dashed white centre line and a thin double yellow line along each kerb. Make the picture clean and crisp like a modern digital drone photograph: no film grain, no noise, no scan lines, smooth even tones. Keep everything else in the image exactly the same, preserving the robot, its position, the wrecked roofs, rubble, the burnt-out car, the camera height and angle, the overcast light and the composition.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "27debe37-d1d4-45a7-ba36-216dcd3acaec"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 35.291666666666664,
+   "dur": 3.1666666666666665,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 38.458333333333336,
+   "dur": 1.0,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 39.458333333333336,
+   "dur": 150.0,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-beads-24fps-picture.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-beads-24fps-picture.mp4",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "three.js",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/record.mjs (headless Chrome, window.hologram.frameAt) + ffmpeg x264, 24 fps",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js",
+      "derek": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-a.jpg",
+      "sandra": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-a.jpg",
+      "wedding": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-a.jpg",
+      "cat0": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/cat-alive-a.jpg",
+      "cat1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/cat-dead-a.jpg"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json",
+      "bead_media": "design/2026-11-10-gpom-hologram-1f4/bead-media-1f4.json"
+     }
+    }
+   ]
+  },
+  {
+   "t": 189.45833333333334,
+   "dur": 1.0,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 190.45833333333334,
+   "dur": 5.625,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 196.08333333333334,
+   "dur": 2.5,
+   "beat": "6",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-6-0-v3-muted.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-6-0-v3-muted.mp4",
+     "made": "2026-11-03T17:33:15+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg -c:v copy -an",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-6-0-v3-t1.mp4",
+     "why": "muted twin of cut3-lip-6-0-v3.mp4"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-6-0-v3-t1.mp4",
+     "made": "2026-11-03T17:12:32.097Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Locked-off camera, no camera movement. The woman in the cream jumper, facing us, points at the man and scolds him, sharp and sarcastic. She says: Derek. You've left the seat up. She lets that hang for a long moment, glaring, then adds one more word. She says: Again. Then her lips stay pressed shut. The man seen from behind stays still and silent.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "c3789db5-c092-4b15-a066-04e16ef495c7"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 198.58333333333334,
+   "dur": 2.25,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-r19-muted.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-r19-muted.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 200.83333333333334,
+   "dur": 4.458333333333333,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-0-r24-muted.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-0-r24-muted.mp4",
+     "made": "2026-11-10T16:26:35+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg -c:v copy -an",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/L07-0-b.mp4",
+     "why": "round 24 (Kai r23 at4169): Sandra on screen for 'Five years underground, and you still can't put a seat down.'; muted twin of the existing Omni take L07-0-b, the clip whose mouth best fits a cast-voice take word by word"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/L07-0-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 205.29166666666666,
+   "dur": 2.0833333333333335,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1-muted.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1-muted.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 207.375,
+   "dur": 3.9166666666666665,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-2-v3-muted.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-2-v3-muted.mp4",
+     "made": "2026-11-03T17:33:19+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg -c:v copy -an",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-2-v3-t1.mp4",
+     "why": "muted twin of cut3-lip-7-2-v3.mp4"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-2-v3-t1.mp4",
+     "made": "2026-11-03T17:11:02.889Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Locked-off camera, no camera movement. The woman in the cream jumper, facing us, snaps straight back at the man without a pause, quick and cutting, the words tumbling out fast. She says: Yeah, the world ended. Doesn't mean you get to stop having manners. Then she clamps her lips shut and folds her arms. The man seen from behind stays still and silent.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 6
+     },
+     "source_id": "25d1fb37-ba57-4a09-86a5-17801bfb3471"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 211.29166666666666,
+   "dur": 1.0,
+   "beat": "8",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/raw/detect-vent-t1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/raw/detect-vent-t1.mp4",
+     "made": "2026-11-10T16:40:55+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "The camera does not move. A faint breath of warm air seeps out between the dark slats of the rusty grille, a few specks of dust lift off the slats and drift away on it, and the single thin cobweb across the slats trembles. The long grass around the concrete block sways in the wind. The valley beyond stays still. The camera does not move.",
+     "model": "Omni 1.2 Flash",
+     "parent": "/home/kai/.cache/detect-refs/vent-p2-a.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/detect-refs/vent-p2-a.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 4,
+      "credits_est": "12"
+     },
+     "source_id": "0bee7163-f955-453c-b9f6-d31c845e0e2c",
+     "why": "Omni 1.2 720p 4 s, vendor table"
+    },
+    {
+     "file": "/home/kai/.cache/detect-refs/vent-p2-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 212.29166666666666,
+   "dur": 2.0,
+   "beat": "8",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/raw/detect-turret-t1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/raw/detect-turret-t1.mp4",
+     "made": "2026-11-10T16:40:55+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "The camera does not move. The armoured sensor turret gives one small sharp jolt as it locks on, the small white indicator light beside the lenses flares brighter, and the big lens snaps its focus: the glass inside it racks and tightens with a quick twitch, the smaller lenses around it adjusting at the same moment. Then it holds dead still, staring. The blurred grey road behind stays still. The camera does not move.",
+     "model": "Omni 1.2 Flash",
+     "parent": "/home/kai/.cache/detect-refs/turret-p2-b-white.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/detect-refs/turret-p2-b-white.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 4,
+      "credits_est": "12"
+     },
+     "source_id": "4c1ce8a5-1f01-4d18-b29f-28a738a935de",
+     "why": "Omni 1.2 720p 4 s, vendor table"
+    },
+    {
+     "file": "/home/kai/.cache/detect-refs/turret-p2-b-white.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 214.29166666666666,
+   "dur": 2.0,
+   "beat": "8",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/work/hud-full.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/work/hud-full.mp4",
+     "made": "2026-11-10T18:20:39+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/hud.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/work/hud-plate.mp4",
+     "why": "GPOM A r25 detect bridge (banner LOCKED at the lock): HUD; banner SCANNING -> LOCKED, status -> CONTACT // LOCK",
+     "inputs": {
+      "audio": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/work/hud-meter.wav"
+     },
+     "settings": {
+      "state": "patrol",
+      "lock": "0.5",
+      "lock_status": "CONTACT  //  LOCK"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/work/hud-plate.mp4",
+     "made": "2026-11-10T18:19:24+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/detect_r24.py --round 25 (zoompan, noise 6)",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/hud-p1-a.jpg",
+     "why": "GPOM A r25 detect bridge, 1+2+2 s (Kai at5176): HUD plate 2.6 s"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/hud-p1-a.jpg",
+     "made": "2026-11-10T16:12:00.124Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image for the robot's own point of view and its armoured front hull, and the second image for the abandoned motorway: in natural colour, not red, the camera mounted low on the front of a tracked military robot standing still in the middle of the empty abandoned motorway. Its angular armoured nose and the tops of its tracks sit at the bottom of frame. Ahead the empty carriageway runs straight away to the green chalk downs on the horizon, dead cars on the verges, grass in the cracks. Flat overcast grey daylight. A clean picture with no interface, no overlay, no tint. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+     "model": "Nano Banana Pro",
+     "parent": "/home/kai/.cache/detect-refs/K5-pov-red-race.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/detect-refs/K5-pov-red-race.jpg",
+       "/home/kai/.cache/detect-refs/S9-c.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "f762a1a5-d87f-45be-932b-be355da4fb4a"
+    },
+    {
+     "file": "/home/kai/.cache/detect-refs/K5-pov-red-race.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 216.29166666666666,
+   "dur": 4.0,
+   "beat": "9a",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 220.29166666666666,
+   "dur": 11.541666666666666,
+   "beat": "11",
+   "looped": true,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 231.83333333333334,
+   "dur": 5.0,
+   "beat": "10b",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-WA02.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-WA02.mp4",
+     "made": "2026-11-02T16:47:36+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg -an -c:v copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-raw/cut3-WA02-r2-raw.mp4",
+     "why": "GPOM second half A, wide approach keeper: Omni take 2 of wa-02 with Veo audio stripped (picture clip)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-raw/cut3-WA02-r2-raw.mp4",
+     "made": "2026-11-02T16:47:35+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/gpom/second-half-video/run-cut3.mts",
+     "model": "Omni 1.1 Flash",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+     "why": "GPOM second half A, wide approach (Kai 2 Nov: a much wider shot of the pack racing at the bunker door, far from it); take 2 of wa-02, kept",
+     "source_id": "V1kHuLBPh0jSo0xybosQ",
+     "prompt": "The camera does not move, locked on a distant long lens. The same five squat tracked robots, each topped by a boxy camera-sensor head, race side-on left to right along the foot of the slope at full speed, staying small and far away. Their tracks kick up long low trails of chalk dust that stream out behind them. The shut green doors stay high and distant on the hilltop. Foreground grass sways. The camera does not move.",
+     "settings": {
+      "mode": "Frames",
+      "frames": "start",
+      "aspect": "16:9",
+      "duration": "6s",
+      "count": "1",
+      "credits": "10",
+      "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+     "made": "2026-11-02T16:28:15+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "nano-banana",
+     "tool": "flow",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p2-b.jpg",
+     "why": "GPOM second half A, wide approach option 02 (Kai note 2 Nov: bots too close to the door, needs a much wider shot of the approach): long lens side-on, pack small at the foot of the slope, door high right. Candidate p2-b.",
+     "source_id": "0870aea8-f9f5-4057-ab59-c8e4da3596f1",
+     "prompt": "Using the first image for the hillside, the bunker entrance with its green blast doors and the film look, and the second image for the tracked military robots: a long-lens shot from far off to the side, the distance compressed, heat shimmer and hanging dust softening the middle ground. A pack of five tracked military robots like the one in the second image crosses the frame from left to right at full speed along the bottom of a long grassy slope, side-on and small, their tracks throwing up chalk. High above them and far beyond, near the top of the down in the upper right, the concrete bunker entrance is a small grey notch with its shut green doors. The tops of out-of-focus long grass blur across the very bottom of frame. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+     "inputs": {
+      "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S4r-a.jpg",
+      "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+     },
+     "settings": {
+      "aspect": "16:9",
+      "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p2-b.jpg",
+     "made": "2026-11-02T16:23:04.429Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image for the hillside, the bunker entrance with its green blast doors and the film look, and the second image for the tracked military robots: a long-lens shot from far off to the side, the distance compressed, heat shimmer and hanging dust softening the middle ground. A pack of five tracked military robots like the one in the second image crosses the frame from left to right at full speed along the bottom of a long grassy slope, side-on and small, their tracks throwing up chalk. High above them and far beyond, near the top of the down in the upper right, the concrete bunker entrance is a small grey notch with its shut green doors. The tops of out-of-focus long grass blur across the very bottom of frame. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+     "model": null,
+     "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+     "inputs": {
+      "references": [
+       "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+       "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-killbot-P1.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "0870aea8-f9f5-4057-ab59-c8e4da3596f1"
+    },
+    {
+     "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 236.83333333333334,
+   "dur": 3.0,
+   "beat": "12",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01.mp4",
+     "made": "2026-11-03T19:28:21+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg -map 0:v -c:v copy -an",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t8.mp4",
+     "why": "GPOM second half A, beat 12 retreat: the pick (take 8, Flow mediaId b8b401d7-ae7b-4477-a4ec-57a0baf2dad6) with the Veo audio stripped, video stream copied untouched. Use in-point 2.5 s for 5.5 s (to 8.0 s); 0.5 s if the crescent bot's rightward pivot-skid at 1.75-2.25 s is acceptable."
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t8.mp4",
+     "made": "2026-11-03T19:28:21+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Static tripod frame pinned on the far green doors, which never shift in the picture. Four tank-tracked machines and no more: they trundle downhill and leave across the left edge, one after another. The one in the chalk curve finishes turning inside its own dust cloud, which is only dust, then chases the others out. Tracks churn, hulls rock with weight, dust lingers behind. The empty hillside holds still. 16mm grain.",
+     "model": "Omni Flash",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8,
+      "credits": "25",
+      "mode": "Frames",
+      "frames": "start",
+      "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+     },
+     "source_id": "b8b401d7-ae7b-4477-a4ec-57a0baf2dad6",
+     "why": "GPOM second half A, beat 12 retreat; take 8 off rt-01c-2. PICK. Exactly four bots throughout, camera locked (no shift, constant 1% scale from frame 0, so no start re-sit). Two bots exit left by ~2 s, the third by ~6.5 s; the crescent bot pivots inside its dust (0-3 s, skidding ~1/8 frame rightward with its barrel briefly pointing right at ~1.75-2.25 s), then drives down-left and out by ~7.9 s; ends on an empty slope with the chalk crescent and dust. Weight, track churn and dust good. In-point 2.5 s for a 5.5 s use (2.5-8.0) skips the skid."
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+     "made": "2026-11-03T19:10:16+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "pillow",
+     "tool": "PIL convert jpg->png",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-2r-b.jpg",
+     "why": "GPOM second half A, beat 12 retreat: re-sealed rt-01b with every bot's nose already turned down-left (away from the door) so Omni continues the retreat instead of driving right; option 2, three turned, one finishing its pivot in the chalk crescent (re-roll; first try rt-01c-2-* rejected: pack moved toward the door / two left bots' guns pointed right). Candidate rt-01c-2r-b.",
+     "source_id": "44e1b7c9-3ef8-4995-8db3-532175fdb227"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-2r-b.jpg",
+     "made": "2026-11-03T19:07:44.391Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Edit the first picture; the second picture shows what each tracked robot looks like. Turn the robots round so the pack is leaving: the two robots on the far left of the slope and the one beside the chalk ring now face away from the bunker, hull front, turret and gun barrel all aimed down-left toward the bottom left corner of the frame, rolling off downhill. The last robot, the one inside the white chalk crescent, is caught mid-pivot, three quarters of the way round, its front swinging down-left to join them, tracks tearing up white chalk and throwing a puff of dust. Four robots in total, all staying roughly where they are now, well below the doors. Behind each one a fresh pale scuff in the turf, and a faint haze drifting uphill and rightward where they came from. The rest of the picture does not change: same high viewpoint on the ridge, same hillside, same grassy edge bottom right, same small green bunker doors top right, same flat grey daylight and grainy faded 16mm texture.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "44e1b7c9-3ef8-4995-8db3-532175fdb227"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+     "made": "2026-11-03T18:57:12+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "pillow",
+     "tool": "PIL convert jpg->png",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01b-edit-b.jpg",
+     "why": "GPOM second half A, beat 12 retreat: rt-01 with the stray concrete block and leaning fence post replaced by the ridge's turf edge (one flow_edit_image pass off golden p1-a, candidate b); bots, positions and light verified unchanged by crop diff; start frame for cut3-RT01",
+     "source_id": "79480032-a112-4016-afdf-d9608583c2a8"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01b-edit-b.jpg",
+     "made": "2026-11-03T18:57:12+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image, change only the grey concrete block in the lower right foreground and the leaning wooden fence posts beside it: replace them with the plain grassy turf edge of the ridge, rough tussocky grass curving down out of the bottom right corner. Keep everything else in the image exactly the same: the four tracked robots in their exact positions and angles, the white chalk crescent and dust, the hillside, the bunker with its green doors small at the top right, the grey overcast light and the faded 16mm film grain, preserving the original style, lighting and composition.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/p1-a.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/p1-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "79480032-a112-4016-afdf-d9608583c2a8",
+     "why": "GPOM second half A retreat: turf-edge edit of rt-01 (block + fence post out). Candidate b, PICKED -> rt-01b.png"
+    }
+   ]
+  },
+  {
+   "t": 239.83333333333334,
+   "dur": 3.0833333333333335,
+   "beat": "12",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "vox-maddie",
+   "t": 8.0,
+   "dur": 1.5,
+   "what": "beat 0 phrase 0: Oh, hello!",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/00-0-bot-c.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/00-0-bot-c.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 10.083,
+   "dur": 1.87,
+   "what": "beat 0 phrase 1: Sorry about the racket.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p1-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p1-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 12.542,
+   "dur": 5.62,
+   "what": "beat 0 phrase 2: It's his tune. He's been playing it on r",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p2-c.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p2-c.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 18.75,
+   "dur": 1.67,
+   "what": "beat 0 phrase 3: Ever since you lot went.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p3-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p3-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 21.417,
+   "dur": 3.16,
+   "what": "beat 0 phrase 4: He misses you something rotten, you know",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-1-bot-b.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-1-bot-b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 24.917,
+   "dur": 13.55,
+   "what": "beat 0: the bridge b01, We didn't realise how important you were",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/b01.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/b01.wav",
+     "made": "2026-11-09T20:40:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-b01-4.wav",
+     "why": "hologram 1F line b01 (Kai locked draft 1F, 9 Nov); take picked as whisper-verbatim",
+     "prompt": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some things in the meantime. Please, let me show you what we found.",
+     "inputs": {
+      "heard": "We didn't realise how important you were. Which, after everything that's gone down, sounds pretty all -oh, I know. But we've learned some things in the meantime. Please, let me show you what we found.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f.json"
+     },
+     "settings": {
+      "src_in": "0.05",
+      "src_out": "13.81"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-b01-4.wav",
+     "made": "2026-11-09T20:33:55+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "We didn't realise how important you were. Which, after everything that's gone down, sounds pretty hollow. I know. But we've learned some things in the meantime. Please, let me show you what we found.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She has just met the first humans she has seen in years. Her boss made her rehearse a little presentation in case anyone ever came back, and now, at last, somebody has: she's touched, a bit shy about it, then perks right up to get started.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-street.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 39.792,
+   "dur": 17.07,
+   "what": "beat 0 hologram s01: Right. This is how you lot saw the world",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 57.333,
+   "dur": 6.77,
+   "what": "beat 0 hologram s02: Every bit of it's real. But we've worked",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 64.542,
+   "dur": 6.05,
+   "what": "beat 0 hologram s03: Consciousness. Yours. It's as fundamenta",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 71.042,
+   "dur": 13.43,
+   "what": "beat 0 hologram f01: Your consciousness and the way you feel ",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 84.792,
+   "dur": 8.09,
+   "what": "beat 0 hologram f02: Sandra decided to say sorry first, even ",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 93.375,
+   "dur": 15.43,
+   "what": "beat 0 hologram f03: We don't know what it feels like to be y",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 109.292,
+   "dur": 19.56,
+   "what": "beat 0 hologram f04: Now, this multiverse malarkey that's tak",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 129.375,
+   "dur": 7.59,
+   "what": "beat 0 hologram f04b: And as you make your decisions and write",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 137.458,
+   "dur": 19.53,
+   "what": "beat 0 hologram f05: It's all of you, at the same time. Each ",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 159.167,
+   "dur": 19.35,
+   "what": "beat 0 hologram f06: As you can see, when you lot went away, ",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 179.208,
+   "dur": 8.39,
+   "what": "beat 0 hologram f07a: Of course, he's built a time machine. It",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+     "made": "2026-11-10T19:31:46+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+     "inputs": {
+      "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+      "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+      "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+      "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+     },
+     "settings": {
+      "fps": "24",
+      "size": "1920x1080",
+      "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+     "made": "2026-11-10T11:24:37+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f2.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "why": "hologram 1F2 line s01: the materialist stack opening (Kai timeline note, 10 Nov); take picked as whisper-verbatim",
+     "prompt": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "heard": "Right, this is how you lot saw the world. Societies made of people. People are made of cells. Cells are chemistry. Chemistry's atoms, atoms are quarks and leptons. And under all that? The maths.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+     },
+     "settings": {
+      "src_in": "0.00",
+      "src_out": "17.07"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-s01-3.wav",
+     "made": "2026-11-10T11:23:45+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 190.875,
+   "dur": 3.71,
+   "what": "beat 0: But the patrol's out. Please, mind how y",
+   "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/f07b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/f07b.wav",
+     "made": "2026-11-09T20:40:46+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "design/2026-11-05-gpom-meeting/voice-1f/split.py (ffmpeg cut at faster-whisper word times)",
+     "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f07p-1.wav",
+     "why": "hologram 1F line f07b (Kai locked draft 1F, 9 Nov); take picked as whisper-verbatim",
+     "prompt": "But the patrol's out. Please, mind how you go.",
+     "inputs": {
+      "heard": "But the patrol's out. Please, mind how you go.",
+      "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f.json"
+     },
+     "settings": {
+      "src_in": "4.72",
+      "src_out": "8.75"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f07p-1.wav",
+     "made": "2026-11-09T20:35:43+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Anyway, if we could go back and fix it, we would.\n\nBut the patrol's out. Please, mind how you go.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+      "profile_file": "design/2026-11-05-gpom-meeting/voice-1f/profile-holo.md"
+     },
+     "settings": {
+      "voice": "Aoede",
+      "temperature": 1,
+      "channels": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 196.083,
+   "dur": 3.398,
+   "what": "row r24 line 1 (Sandra, fitted word by word)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line1-sandra-cut3-lip-6-0-v3--6-0-b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line1-sandra-cut3-lip-6-0-v3--6-0-b.wav",
+     "made": "2026-11-10T16:28:24+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg rubberband",
+     "tool": "scripts/gpom/second-half-video/row-r24/fitline.py (wordwarp.py)",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-b.wav",
+     "why": "round 24 (Kai r23): Sandra's line 'Derek. You've left the seat up again.' fitted word by word to the clip cut3-lip-6-0-v3.mp4",
+     "inputs": {
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-6-0-v3.mp4",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line1-sandra-cut3-lip-6-0-v3--6-0-b.wav.plan.json"
+     },
+     "settings": {
+      "lag": "0.0",
+      "late": "0.04",
+      "tempo_range": "0.87-1.031",
+      "max_late": "0.0",
+      "pause_added": "0.208",
+      "clip_time_of_t0": "0.0"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-b.wav",
+     "made": "2026-11-05T21:29:33+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "Gemini TTS",
+     "tool": "scripts/aistudio-tts.py (billed key) via voice-row-fit.py",
+     "model": "gemini-3.1-flash-tts-preview / Autonoe",
+     "why": "round 19: re-voiced to the clip cut3-lip-6-0-v3-t1 (lip sync at natural speed)",
+     "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: sharp, sarcastic; 'Derek.' clipped on its own, then a short beat, then 'You've left the seat up.' quick and pointed; a long pause, glaring; then one flat word, 'Again.'.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+     "settings": {
+      "text": "Derek. You've left the seat up. Again."
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-derek",
+   "t": 198.583,
+   "dur": 2.268,
+   "what": "row r24 line 2 (Derek, fitted word by word)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line2-derek-cut3-lip-7d-0-r19--7d-0c-fast-e.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line2-derek-cut3-lip-7d-0-r19--7d-0c-fast-e.wav",
+     "made": "2026-11-10T16:28:24+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg rubberband",
+     "tool": "scripts/gpom/second-half-video/row-r24/fitline.py (wordwarp.py)",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-fast-e.wav",
+     "why": "round 24 (Kai r23): Derek's line 'I'm really sorry, love.' fitted word by word to the clip cut3-lip-7d-0-r19.mp4",
+     "inputs": {
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-r19.mp4",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line2-derek-cut3-lip-7d-0-r19--7d-0c-fast-e.wav.plan.json"
+     },
+     "settings": {
+      "lag": "0.0",
+      "late": "0.04",
+      "tempo_range": "1.0-1.18",
+      "max_late": "0.139",
+      "pause_added": "0.226",
+      "clip_time_of_t0": "0.0"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-fast-e.wav",
+     "made": "2026-11-05T21:42:41+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "Gemini TTS",
+     "tool": "scripts/aistudio-tts.py (billed key), round 19 fast Derek",
+     "model": "gemini-3.1-flash-tts-preview / Algieba",
+     "why": "round 19: a faster read to fit the talking clip (Omni mouths the line in ~1 s)",
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: very fast: a sheepish mumble under his breath, all four words in one quick breath, about one second, no pause after 'sorry'.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "settings": {
+      "text": "[fast] I'm really sorry, love."
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 200.833,
+   "dur": 4.571,
+   "what": "row r24 line 3 (Sandra, fitted word by word)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line3-sandra-L07-0-b--7-0-f.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line3-sandra-L07-0-b--7-0-f.wav",
+     "made": "2026-11-10T16:28:24+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg rubberband",
+     "tool": "scripts/gpom/second-half-video/row-r24/fitline.py (wordwarp.py)",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-f.wav",
+     "why": "round 24 (Kai r23): Sandra's line 'Five years underground, and you still can't put a seat down.' fitted word by word to the clip L07-0-b.mp4",
+     "inputs": {
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/L07-0-b.mp4",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line3-sandra-L07-0-b--7-0-f.wav.plan.json"
+     },
+     "settings": {
+      "lag": "0.0",
+      "late": "0.04",
+      "tempo_range": "0.87-1.106",
+      "max_late": "0.0",
+      "pause_added": "0.135",
+      "clip_time_of_t0": "0.0"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-f.wav",
+     "made": "2026-11-05T21:30:23+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "Gemini TTS",
+     "tool": "scripts/aistudio-tts.py (billed key) via voice-row-fit.py",
+     "model": "gemini-3.1-flash-tts-preview / Autonoe",
+     "why": "round 19: re-voiced to the clip L07-0-a (lip sync at natural speed)",
+     "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: brisk and cutting, the words tumbling out, building; 'Five years underground,' fast, straight into the rest.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+     "settings": {
+      "text": "Five years underground, and you still can't put a seat down."
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-derek",
+   "t": 205.292,
+   "dur": 2.109,
+   "what": "row r24 line 4 (Derek, fitted word by word)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line4-derek-cut3-lip-7d-1--7d-1c-e.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line4-derek-cut3-lip-7d-1--7d-1c-e.wav",
+     "made": "2026-11-10T16:28:25+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg rubberband",
+     "tool": "scripts/gpom/second-half-video/row-r24/fitline.py (wordwarp.py)",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-e.wav",
+     "why": "round 24 (Kai r23): Derek's line 'But the world ended, Sandra!' fitted word by word to the clip cut3-lip-7d-1.mp4",
+     "inputs": {
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1.mp4",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line4-derek-cut3-lip-7d-1--7d-1c-e.wav.plan.json"
+     },
+     "settings": {
+      "lag": "0.0",
+      "late": "0.04",
+      "tempo_range": "1.0-1.011",
+      "max_late": "0.0",
+      "pause_added": "0.019",
+      "clip_time_of_t0": "0.0"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-e.wav",
+     "made": "2026-11-05T21:32:02+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "Gemini TTS",
+     "tool": "scripts/aistudio-tts.py (billed key) via voice-row-fit.py",
+     "model": "gemini-3.1-flash-tts-preview / Algieba",
+     "why": "round 19: re-voiced to the clip L07d-1-a (lip sync at natural speed)",
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: indignant, arms up, a burst; 'But the world ended,' then 'Sandra!' louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "settings": {
+      "text": "But the world ended, Sandra!"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 207.375,
+   "dur": 3.47,
+   "what": "row r24 line 5 (Sandra, fitted word by word)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line5-sandra-cut3-lip-7-2-v3-t1--07-2-master.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line5-sandra-cut3-lip-7-2-v3-t1--07-2-master.wav",
+     "made": "2026-11-10T16:28:25+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg rubberband",
+     "tool": "scripts/gpom/second-half-video/row-r24/fitline.py (wordwarp.py)",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/07-2-master.wav",
+     "why": "round 24 (Kai r23): Sandra's line 'Yeah, the world ended. Doesn't mean you get to stop having manners.' fitted word by word to the clip cut3-lip-7-2-v3-t1.mp4",
+     "inputs": {
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-2-v3-t1.mp4",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line5-sandra-cut3-lip-7-2-v3-t1--07-2-master.wav.plan.json"
+     },
+     "settings": {
+      "lag": "0.0",
+      "late": "0.04",
+      "tempo_range": "0.87-1.134",
+      "max_late": "0.0",
+      "pause_added": "0.171",
+      "clip_time_of_t0": "0.0"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/07-2-master.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 222.292,
+   "dur": 5.13,
+   "what": "beat 11 Maddie 0 (round 20 line)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r20/11-0-bot-b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r20/11-0-bot-b.wav",
+     "made": "2026-11-06T20:08:34+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "why": "round 20 ending (Kai at4079/at3874)",
+     "prompt": "[fast] Boss, can you see those bots? In kill mode. They must have detected an organic signal.",
+     "inputs": {
+      "profile_file": "docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/voice-r20/11-0.profile.md"
+     },
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-ai",
+   "t": 227.792,
+   "dur": 3.45,
+   "what": "beat 11 boss line 1 (gpom-sh-a-boss-1-b-v6-w25-148779af-tight.wav)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/gpom-sh-a-boss-1-b-v6-w25-148779af-tight.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/gpom-sh-a-boss-1-b-v6-w25-148779af-tight.wav",
+     "made": "2026-11-05T21:07:40+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "numpy",
+     "tool": "trim + close dead air (10 ms RMS frames, speech = above peak-40 dB)",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/takes/gpom-sh-a-boss-1-b-v6-w25-148779af.wav",
+     "why": "Round 18 pick, line 1: the only clean take (three others open on a ~490 Hz tone); every take paused ~1.1-1.5 s after 'Maddie,', so the pause is closed to 0.3 s",
+     "source_id": "148779af-c790-4dd9-8c78-7f08036a5bd6",
+     "settings": {
+      "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md",
+      "edit": "keep 0.23-0.87 + 2.08-4.75 s (1.51 s pause after 'Maddie,' closed to 0.30 s), 10 ms crossfades, 0.1 s head/tail"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/takes/gpom-sh-a-boss-1-b-v6-w25-148779af.wav",
+     "made": "2026-11-05T21:07:26+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "148779af-c790-4dd9-8c78-7f08036a5bd6",
+     "inputs": {
+      "title": "gpom-sh-a-boss-1-B-v6-w25",
+      "song": "https://suno.com/song/148779af-c790-4dd9-8c78-7f08036a5bd6"
+     },
+     "settings": {
+      "durationSec": 6.36,
+      "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md",
+      "atom": "gpom-sh-a-boss-1 revision B",
+      "round": "5"
+     },
+     "why": "Kai, GPOM scene A cut round 18: the boss's line re-recorded quicker (brisk delivery), not sped up"
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 232.25,
+   "dur": 2.62,
+   "what": "beat 10b Maddie",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r20/10b-0-bot-b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r20/10b-0-bot-b.wav",
+     "made": "2026-11-06T20:08:35+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "why": "round 20 ending (Kai at4079/at3874)",
+     "prompt": "[urgent, fast] Quick, boss, hurry up! They're nearly there.",
+     "inputs": {
+      "profile_file": "docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/voice-r20/10b-0.profile.md"
+     },
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 240.25,
+   "dur": 1.67,
+   "what": "beat 12 Maddie: That was close.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r18/12-0-bot-fast-b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r18/12-0-bot-fast-b.wav",
+     "made": "2026-11-05T20:56:56+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "Gemini TTS",
+     "tool": "scripts/aistudio-tts.py (billed key)",
+     "model": "gemini-3.1-flash-tts-preview / Aoede",
+     "why": "round 18 faster voices (Kai, 5 Nov meeting): Pace fast, clipped, [fast] tag; take b",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nOutside the steel blast door of a Cold War bunker under a Wiltshire hill, grey daylight, wind. The kill bots that were about to break in have just stood down and are leaving one by one. A small robot speaks quietly up into her boss-hotline antenna. Open air, no echo; her voice close to the microphone.\n\n### DIRECTOR'S NOTES\nEmotion for this line: overwhelming relief, shaky, fond; she nearly lost them.\nStyle: no cheek, no gossip, no jokes: the relief after nearly watching a hundred people she loves be killed; shaky and fond, her voice wobbling, close to tears, a breath of a laugh on the way out.\nPace: fast, clipped, joining phrases with commas; no gaps between phrases.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "text": "[fast] That was close."
+     }
+    }
+   ]
+  },
+  {
+   "stem": "mus-M0-radio",
+   "t": 0.0,
+   "dur": 7.958,
+   "what": "M0 the film's song carrying on from the opening, tinny (Kai's r11 Premiere edit)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "mus-C3-chase",
+   "t": 216.292,
+   "dur": 26.542,
+   "what": "C3 the chase (low strings), from the bot tearing past her",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-c3-a-v6-w60-a1614dbb.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-c3-a-v6-w60-a1614dbb.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 0.0,
+   "dur": 39.958,
+   "what": "wind (ffmpeg), the street",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 38.458,
+   "dur": 152.0,
+   "what": "wind, a low bed under the hologram",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 188.958,
+   "dur": 7.125,
+   "what": "wind, the street again (to the hard cut)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 0.0,
+   "dur": 39.458,
+   "what": "her wheels (loop), fading with the picture",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 189.458,
+   "dur": 6.625,
+   "what": "her wheels (loop), rolling again",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 8.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 11.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 13.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 16.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 18.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 21.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 23.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 26.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 28.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 31.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 33.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 36.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 38.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 191.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 193.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 7.45,
+   "dur": 0.14,
+   "what": "beep: startled (she sees us)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 11.903,
+   "dur": 0.518,
+   "what": "servo: she turns the radio down",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 20.47,
+   "dur": 0.47,
+   "what": "beep: deflate (after \"went.\")",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-deflate.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-deflate.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 38.558,
+   "dur": 0.62,
+   "what": "beep: thinking (into the hologram)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-thinking.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-thinking.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 194.635,
+   "dur": 0.43,
+   "what": "beep: happy (bye)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 211.292,
+   "dur": 5.0,
+   "what": "the bot hears the row: rock-muffled voices, hum, servo, lens click, HUD blips",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/audio/bridge-mix.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/audio/bridge-mix.wav",
+     "made": "2026-11-10T18:19:27+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/detect_r24.py --round 25",
+     "why": "GPOM A r25 detect bridge, 1+2+2 s (Kai at5176): 5 s mix, -20.9 LUFS, peak -1.6 dBFS"
+    }
+   ]
+  },
+  {
+   "stem": "sfx-rooms",
+   "t": 196.083,
+   "dur": 15.208,
+   "what": "tiled room tone",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 216.292,
+   "dur": 4.3,
+   "what": "tank tracks, the pack",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 216.292,
+   "dur": 5.0,
+   "what": "engines (into the call)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 216.292,
+   "dur": 4.0,
+   "what": "wind, the motorway",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 220.312,
+   "dur": 1.1,
+   "what": "hatch",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 220.692,
+   "dur": 1.2,
+   "what": "antenna extends",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 221.742,
+   "dur": 0.2,
+   "what": "beep: line open",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 227.772,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 228.672,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 229.572,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 230.472,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 231.833,
+   "dur": 5.0,
+   "what": "engines, close",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 231.833,
+   "dur": 5.0,
+   "what": "tracks, close",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 231.533,
+   "dur": 2.5,
+   "what": "two tear past the camera (under her line)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189446-killbot-jet-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189446-killbot-jet-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 236.833,
+   "dur": 4.5,
+   "what": "the pack turns away",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 236.833,
+   "dur": 6.083,
+   "what": "wind on the downs",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189446-killbot-jet-flyby.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-deflate.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-thinking.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/00-0-bot-c.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p1-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p2-c.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p3-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-1-bot-b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-c3-a-v6-w60-a1614dbb.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-r19-muted.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1-muted.mp4"
+ ]
+}
