@@ -166,7 +166,7 @@ button.pill{cursor:pointer;background:var(--cream);color:#111;border:0;font-weig
 .strands{display:grid;gap:6px}
 .strands button{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:8px;text-align:left;padding:11px 12px;color:#111}
 .strands b{font:800 1rem/1 var(--ui);font-stretch:80%}
-.strands small{font:500 .72rem/1.1 var(--ui);opacity:.75}
+.strands small{font:500 .72rem/1.1 var(--ui);opacity:.75;text-align:right} /* name left, joke right (Kai, 2026-11-11) */
 .st-stories{background:var(--blue)!important;color:#fff!important}
 .st-news{background:var(--news)!important;color:#fff!important}
 .st-gov{background:var(--gov)!important}
@@ -189,6 +189,7 @@ button.pill{cursor:pointer;background:var(--cream);color:#111;border:0;font-weig
   .remote .tuck{display:none}
   .strands{grid-template-columns:repeat(3,1fr)}
   .strands button{grid-template-columns:1fr;text-align:center;padding:14px 6px;gap:4px}
+  .strands small{text-align:center}
   .remote button{min-height:46px}
   .tucked .remote{transform:none;opacity:1;pointer-events:auto}
   .tucked .untuck{display:none}
