@@ -1,0 +1,15 @@
+{
+  "shot": 5,
+  "prompts": [
+    {
+      "id": "A",
+      "approach": "Orientation-locked single sentence: name what the camera sees of the van (rear doors, red tail lights toward us), one straight path against the frame, an explicit end state, and the other vehicles written as parked so the van is the only mover.",
+      "prompt": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow van, rear doors and red tail lights toward us, drives straight ahead down the road, shrinking into the distance until it is gone. The motorbikes and cars stay parked. Rain falls. No dialogue, no music. Thanks."
+    },
+    {
+      "id": "B",
+      "approach": "Timestamped beats: split the 8 seconds so the van pulls off rear-first, then recedes along one line, then the road is empty; one short negative ('it never turns') as the single allowed guard.",
+      "prompt": "Fixed camera. [00:00-00:03] The man holds still with the microphone; behind him the yellow van pulls away, its back to us. [00:03-00:08] It keeps going straight down the road, smaller and smaller, then gone. It never turns. Rain. No dialogue, no music. Thanks."
+    }
+  ]
+}

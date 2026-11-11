@@ -37,6 +37,42 @@
    "character": null,
    "why": "Jack 2026-11-11: 'make it as simple as possible'. 05-r2 refused repeatedly; stripped to the bare action, no ambulance/lights/hood/presenter words",
    "motion": "The camera does not move. The man stands still holding the microphone. Behind him, the yellow van drives away. Rain falls. No dialogue, no music. Thanks."
+  },
+  {
+   "key": "03-cr2A",
+   "n": 3,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Fully positive, static-scene method: lock the camera with Google's own words, write the ambulance as a parked landmark, )",
+   "motion": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow ambulance stays parked at the junction, blue lights flashing. A line of dark cars slides past behind it, left to right. Rain falls. Only rain and tyre sounds. Thanks."
+  },
+  {
+   "key": "03-cr2B",
+   "n": 3,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Built on the bare prompt that already went through. Timestamped halves pin the ambulance's end state ('still in the same)",
+   "motion": "The camera does not move. The man holds still with the microphone. [00:00-00:04] Behind him, the yellow van waits, blue lights flashing, as dark cars pass right to left. [00:04-00:08] The van is still in the same spot. Rain falls. No dialogue, no music. Thanks."
+  },
+  {
+   "key": "05-cr2A",
+   "n": 5,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Orientation-locked single sentence: name what the camera sees of the van (rear doors, red tail lights toward us), one st)",
+   "motion": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow van, rear doors and red tail lights toward us, drives straight ahead down the road, shrinking into the distance until it is gone. The motorbikes and cars stay parked. Rain falls. No dialogue, no music. Thanks."
+  },
+  {
+   "key": "05-cr2B",
+   "n": 5,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Timestamped beats: split the 8 seconds so the van pulls off rear-first, then recedes along one line, then the road is em)",
+   "motion": "Fixed camera. [00:00-00:03] The man holds still with the microphone; behind him the yellow van pulls away, its back to us. [00:03-00:08] It keeps going straight down the road, smaller and smaller, then gone. It never turns. Rain. No dialogue, no music. Thanks."
   }
  ]
 }

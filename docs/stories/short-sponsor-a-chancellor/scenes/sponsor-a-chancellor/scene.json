@@ -1,0 +1,14 @@
+{
+  "story": "short-sponsor-a-chancellor",
+  "scene": "sponsor-a-chancellor",
+  "prefix": "sac",
+  "title": "Sponsor a Chancellor",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Sponsor a Chancellor",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor",
+  "beats": [
+    {"key": "appeal", "at": "0:00", "name": "A. The appeal", "blurb": "Sad-piano charity advert, black and white, slow motion: meet the chancellor who 'only' earns £100,000."},
+    {"key": "ask", "at": "0:06", "name": "B. The ask", "blurb": "£3 a month buys him a second wine fridge."},
+    {"key": "turn", "at": "0:11", "name": "C. The turn", "blurb": "Freeze frame: the real median UK salary on screen."}
+  ],
+  "video": {"model": "Omni 1.2 Flash", "aspect": "9:16", "mode": "Frames", "duration": 8}
+}

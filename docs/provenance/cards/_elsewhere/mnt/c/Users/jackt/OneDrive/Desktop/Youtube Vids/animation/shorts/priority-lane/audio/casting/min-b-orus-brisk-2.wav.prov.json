@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/min-b-orus-brisk-2.wav",
+ "made": "2026-11-11T11:28:24+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I said raspberry-shaped hors d'oeuvres!",
+ "inputs": {
+  "profile": "# Audio Profile\nA smooth, slick government minister in his fifties, media-trained, normally silky and reasonable. On a private call the polish cracks into a low, venomous hiss of fury, never quite shouting, each word bitten off. Clear, neutral southern English.\n\n## Scene:\nAlone in the back of a ministerial car at night, on the phone to a junior aide.\n\n## Sample Context:\nHe is furious about the catering and is spitting each syllable through his teeth.\n\n## Pace:\nQuick and clipped, a little brisk: the whole line comes out in one hissed burst, under three seconds, a slightly drawn-out \"I\" and then the rest bitten off fast.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/profiles/min-b-orus-brisk.md"
+ },
+ "settings": {
+  "voice": "Orus",
+  "temperature": 1,
+  "channels": 2
+ }
+}
