@@ -60,6 +60,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 30. 🥶 **Grandma Freezing:** a night break-in finds a pensioner by a dead radiator (6) → they feed her meter with the stolen coins (6). **12s.**
 31. 🪧 **Wanted:** the gang's WANTED poster next to a banker's PROMOTED. **6s.**
 32. 🚦 **Getaway, Held:** the getaway car held at the lights beside Jack's ambulance; driver and paramedic share a look. **10s.**
+33. 🗑️ **Signs** *(Jack: BUILDING, `docs/stories/short-signs/`)*: a terrace at dusk with every party's sign out front, someone wheels their bin out (4) → push into the bin lid (3) → inside the bin looking up, the lid lights up: the BadCode logo and name (4). **11s.**
 
 **Top five (not ruled):** 1 Priority Lane · 3 Howard Street · 23 Stiff Upper Lip · 2 Same Bench · 12 Magic 8 Ball.
 
