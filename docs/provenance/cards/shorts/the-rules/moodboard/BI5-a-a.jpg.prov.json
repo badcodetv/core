@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BI5-a-a.jpg",
+ "made": "2026-11-11T10:20:18.754Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Night, an alley behind shops, camera at ground level: someone asleep on flattened cardboard pressed right up against a big green council wheelie bin, lid half open, black bin bags piled beside them, a paper cup and a rucksack by their head, hood up, face turned away. Rain-wet tarmac catching orange sodium streetlight, cold greenish shadows. Still, quiet, shown with care and dignity. Very wide lens right down by the tarmac, the bin towering over the sleeper, deep focus, documentary realism, fine digital grain. Tall portrait frame.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "d444eb09-ca97-4ede-bd38-3f65d6cd4599"
+}

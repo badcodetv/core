@@ -60,5 +60,24 @@
   "url": "https://claude.ai/artifact/BFVqeT9nqpTH8d6R3cCUuz",
   "what": "Storyboard: 5 frames, 2 animation options each; window offers the new bin stills WI6-a-a/b",
   "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/short-the-rules/scenes/the-rules <out.html>"
+ },
+ {
+  "at": "2026-11-11T10:21:24+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "what": "Kai's 6 notes read: cut on the words, new bed/purse/bin shots, tear must go mental",
+  "decided": [
+   "Kai: animate everything; ~3 s stack; cut to sleepers on 'bed', purse ~6 s, islands sooner, bin on the word 'bin', tear = gang going mental"
+  ],
+  "feedback": "feedback/timeline-r1",
+  "feedback_docs": 6
+ },
+ {
+  "at": "2026-11-11T10:21:24+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Bv51DBAVTdgmhPViwSTEzw",
+  "what": "Picks: bed / purse / bin stills",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-rules/scenes/the-rules/picks.json <out.html>"
  }
 ]

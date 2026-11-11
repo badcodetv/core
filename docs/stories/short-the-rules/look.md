@@ -13,6 +13,10 @@ A windowless council archive basement seen from the floor: ultra-wide, steep con
 
 - `ST1-a` (`D:\\badcode-videos\\shorts\\the-rules\\moodboard\\ST1-a.jpg`, Flow media `9852149d-aa85-43bb-91fe-d97c0f9fff7f`): the picked look. Its masks are WRONG (see Cast): small triangles pointing up, on the ring's edge.
 
+## Model note
+
+- 2026-11-11: Flow renamed **Nano Banana 2 → Nano Banana 2.1** (menu now: Nano Banana Pro, Nano Banana 2 Lite, Nano Banana 2.1). Stills from BD5/PU5/BI5 on are 2.1.
+
 ## Preamble (LOCKED for the mask, Kai 2026-11-10)
 
 The mask, as one fixed opening line for every prompt with the gang in it (from `docs/brand/README.md`). Kai OK'd

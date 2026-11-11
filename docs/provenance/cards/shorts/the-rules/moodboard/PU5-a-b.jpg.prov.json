@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PU5-a-b.jpg",
+ "made": "2026-11-11T10:19:34.861Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Close-up at a supermarket checkout under hard fluorescent light: a pair of worn, cold hands with chipped nails opens a cheap, scuffed purse over the counter, and it is empty except for a few copper coins in the bottom. Beside it on the conveyor sit a loaf of white bread, a pint of milk and a tin of beans, the only shopping. The purse is in sharp focus, the rest falls softly away; the hands hesitate. Cold greenish fluorescent cast, documentary realism, fine digital grain. No faces, no readable text anywhere. Tall portrait frame.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "085ba7f8-1248-4ace-a47d-6410b4e94888"
+}

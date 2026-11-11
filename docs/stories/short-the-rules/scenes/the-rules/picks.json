@@ -1,0 +1,78 @@
+{
+ "title": "The Rules Picks",
+ "eyebrow": "The Rules \u00b7 new shots for your timing notes",
+ "heading": "Pick the new shots",
+ "intro": "Your timeline notes moved the cuts onto the words and added shots. Pick one still per new beat; each gets animated once picked.",
+ "sections": [
+  {
+   "h": "New beats",
+   "lede": "Stills are free; animating spends Flow video credits.",
+   "groups": [
+    {
+     "slot": "bed",
+     "title": "We can't afford a bed for you (3.2\u20136.1 s)",
+     "line": "People sleeping rough in shop doorways",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BD5-a-a",
+       "src": "img/BD5-a-a.jpg",
+       "label": "BD5-a-a"
+      },
+      {
+       "id": "BD5-a-b",
+       "src": "img/BD5-a-b.jpg",
+       "label": "BD5-a-b"
+      }
+     ]
+    },
+    {
+     "slot": "purse",
+     "title": "The purse is far too thin (6.1\u20137.9 s)",
+     "line": "An empty purse at a supermarket till",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "PU5-a-a",
+       "src": "img/PU5-a-a.jpg",
+       "label": "PU5-a-a"
+      },
+      {
+       "id": "PU5-a-b",
+       "src": "img/PU5-a-b.jpg",
+       "label": "PU5-a-b"
+      }
+     ]
+    },
+    {
+     "slot": "bin",
+     "title": "But you will sleep in a bin (11\u201316.6 s)",
+     "line": "Asleep against the bins: alley close-up or the basement window",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BI5-a-a",
+       "src": "img/BI5-a-a.jpg",
+       "label": "BI5-a-a"
+      },
+      {
+       "id": "BI5-a-b",
+       "src": "img/BI5-a-b.jpg",
+       "label": "BI5-a-b"
+      },
+      {
+       "id": "WI6-a-a",
+       "src": "img/WI6-a-a.jpg",
+       "label": "WI6-a-a"
+      },
+      {
+       "id": "WI6-a-b",
+       "src": "img/WI6-a-b.jpg",
+       "label": "WI6-a-b"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

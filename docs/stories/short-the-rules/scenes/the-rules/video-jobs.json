@@ -1,0 +1,51 @@
+{
+ "skip": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "extra": [
+  {
+   "key": "01",
+   "n": 1,
+   "still": "ST3-a-a",
+   "duration": 4,
+   "motion": "The camera does not move. The five masked figures stand still at the foot of the towering paper stack, looking up; they breathe and shift their weight slightly, and one slowly tilts his head further back to look higher. Overhead one fluorescent tube flickers and stutters, the others hold steady. The camera does not move.",
+   "why": "Stack, option a (Kai: open on the gang and the rules, ~3 s)"
+  },
+  {
+   "key": "02",
+   "n": 2,
+   "still": "IS4-a-b",
+   "duration": 4,
+   "motion": "The camera does not move. The striped hammock rocks gently, and the filing cabinet's top drawer slowly slides open a little further, contented, as if stretching in the sun; the palm fronds sway, the sea laps the sand. The camera does not move.",
+   "why": "Islands, option b (the drawer sighs)"
+  },
+  {
+   "key": "04a",
+   "n": 4,
+   "still": "TE4-a-a",
+   "duration": 8,
+   "motion": "The camera does not move. The masked gang go wild: they rip handfuls of paper from the towering stack and tear them in half, fling them into the air, one kicks the cardboard box across the floor, another shoves the stack so the top of it slides and collapses; torn paper whirls through the air like a blizzard under the flickering fluorescent lights. Fast, frantic, joyful energy. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+   "why": "Tear, full riot (Kai: 'these boys need to go mental')"
+  },
+  {
+   "key": "04b",
+   "n": 4,
+   "still": "TE4-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. Two masked gang members in the foreground tear sheets of paper in half again and again, furious and fast, throwing the pieces toward the camera, while behind them the others are a blur of flying torn paper under flickering fluorescent light. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+   "why": "Tear, two in close"
+  },
+  {
+   "key": "05",
+   "n": 5,
+   "still": "PE4-b-a",
+   "duration": 4,
+   "motion": "The camera does not move. Torn paper drifts slowly down and settles around him; the navy-masked figure steps half a pace forward and pushes the blank page and the pen a little closer toward the camera, then holds perfectly still, offering them. The camera does not move.",
+   "why": "Pen, option a"
+  }
+ ]
+}

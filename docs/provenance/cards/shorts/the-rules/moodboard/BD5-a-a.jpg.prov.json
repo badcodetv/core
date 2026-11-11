@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BD5-a-a.jpg",
+ "made": "2026-11-11T10:18:41.614Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Night on a British high street, camera low at pavement height looking along a row of shuttered shops. In the deep recessed doorway of a closed bank, a person lies asleep on flattened cardboard in a worn sleeping bag, hood up, face to the wall, shoes tucked beside them, a carrier bag of belongings as a pillow. A second sleeper further down the row in the next doorway. Wet paving catching orange sodium streetlight, a cold greenish cast in the shadows, light drizzle. Quiet, still, treated with care and dignity. Ultra-wide lens close to the ground, deep focus, documentary realism, fine digital grain. Tall portrait frame.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "e65320a6-f734-4103-9b62-86460f2020af"
+}

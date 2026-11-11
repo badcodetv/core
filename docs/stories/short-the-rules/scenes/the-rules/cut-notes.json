@@ -1,0 +1,47 @@
+{
+ "round": 1,
+ "plan": [
+  {
+   "h": "Timing (edit only)",
+   "items": [
+    "Cut on the words, about twice as fast: stack 0–3.2, bed 3.2–6.1, purse 6.1–7.9, islands 7.9–11, bin 11–16.6, tear from 16.6."
+   ]
+  },
+  {
+   "h": "New shots (stills free; picks page)",
+   "items": [
+    "Bed: people asleep in shop doorways (BD5).",
+    "Purse: an empty purse at a till (PU5).",
+    "Bin: asleep against the bins (BI5, or the basement window WI6)."
+   ]
+  },
+  {
+   "h": "Animation (Flow video credits)",
+   "items": [
+    "Now: stack, islands, tear ×2 (full riot + two in close), pen. Next: the three new beats once picked."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Pick the three new stills: https://claude.ai/artifact/Bv51DBAVTdgmhPViwSTEzw"
+   ]
+  }
+ ],
+ "replies": {
+  "at77": "Yes: the gang and the stack get ~3 s, then 'can't afford a bed' cuts to people sleeping rough (new shot BD5, on the picks page).",
+  "at147": "Moved: the purse shot comes in at 6.1 s and the islands follow straight after.",
+  "at187": "New shot PU5: worn hands opening an empty purse at a till, a few coppers, bread, milk, beans.",
+  "at191": "Islands now start at 7.9 s on 'There is room on all those islands'.",
+  "at264": "Cut to the bin at 11 s, on the word: BI5 (asleep against a wheelie bin) or the window WI6. Pick on the picks page.",
+  "at399": "Animating now: an 8 s full riot (all five ripping and flinging, the stack collapsing) and a 6 s two-in-close, to cut together on the drop."
+ },
+ "kai_round1": {
+  "at77": "Hey Claude, it would be good to animate everything. I think at the very beginning we should have, we should introduce the scene with the rules, like these guys, the five bally guys stood around with the pile of rules. It should last about three seconds because they've said we can't afford a bed for you, we should just cut to some homeless scenes.",
+  "at147": "I've made a note around seven seconds about showing a purse with no money in but I think we should move that one second earlier because actually we should cut to the islands quicker than that.",
+  "at264": "here we need to cut to a homeless person sleeping next to a bin. I think at the moment we say bin, we should cut to the bin at this moment. Everything's cut in the wrong time I think.",
+  "at187": "And now I think we could cut to like a poor person with no money in their wallet to try and pay for food or something like that.",
+  "at191": "And yeah, we need to switch to the islands now. There's room on all those islands here.",
+  "at399": "And then, yeah, here, these boys need to go mental, like as in, we need scenes of them tearing all of these rules up. Like, this is what's going to make this work, is them just going crazy tearing the rules up."
+ }
+}
