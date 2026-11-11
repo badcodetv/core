@@ -84,5 +84,13 @@
   "decided": [
    "reporter = e (Enceladus)"
   ]
+ },
+ {
+  "at": "2026-11-11T11:34:13+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn",
+  "what": "rough cut 1: five clips, reporter (Enceladus) + minister (Orus, lip-synced), clip ambience; 21.9 s",
+  "rebuild": "python3 scripts/shorts/priority_lane_cut.py && python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
  }
 ]

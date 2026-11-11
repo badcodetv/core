@@ -47,6 +47,11 @@
   },
   "boards": {
     "moodboard": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
-    "storyboard": "https://claude.ai/artifact/RJ5FcwAW7NsDRfFiDPkq9j"
+    "storyboard": "https://claude.ai/artifact/RJ5FcwAW7NsDRfFiDPkq9j",
+    "timeline": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
+    "by": "scripts/shorts/priority_lane_cut.py"
   }
 }

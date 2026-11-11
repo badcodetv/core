@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/preview.mp4",
+ "made": "2026-11-11T11:33:50+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/priority_lane_cut.py",
+ "why": "Priority Lane rough cut 1 (Jack 2026-11-11: put it all on the timeline)"
+}
