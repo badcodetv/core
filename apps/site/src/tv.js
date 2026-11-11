@@ -99,7 +99,8 @@
   let osdT;
   function flashOsd() {
     const c = C.channels[state.ch];
-    osd.innerHTML = state.text ? `P${state.text}<small>TEXT</small>` : `${c.n}<small>${esc(c.short)}${count[state.ch] > 1 ? ' · ' + state.p : ''}</small>`;
+    // one label, the button's name and the programme: STORIES · 1, GOVT · 3 (Kai, 2026-11-11)
+    osd.textContent = state.text ? `TEXT · ${state.text}` : `${c.short}${count[state.ch] > 1 ? ' · ' + state.p : ''}`;
     osd.classList.add('show'); clearTimeout(osdT); osdT = setTimeout(() => osd.classList.remove('show'), 2200);
   }
 
@@ -386,8 +387,8 @@
   // ---------- render ----------
   function syncRemote() {
     $$('.strands button').forEach(b => b.setAttribute('aria-current', !state.text && b.dataset.k === state.ch));
-    // grey out the numbers this channel has no programme for (0, the test card, always works)
-    $$('.pad [data-k]').forEach(b => { if (!/^\d$/.test(b.dataset.k)) return; const n = +b.dataset.k || 10; b.disabled = !state.text && n > count[state.ch]; });
+    // grey out the numbers this channel has no programme for; light up the one that's on
+    $$('.pad [data-k]').forEach(b => { if (!/^\d$/.test(b.dataset.k)) return; const n = +b.dataset.k || 10; b.disabled = !state.text && n > count[state.ch]; b.setAttribute('aria-current', !state.text && n === state.p); });
   }
   function render(gesture) {
     syncRemote();
