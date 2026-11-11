@@ -2726,3 +2726,6 @@ no mask; ambulance interior; minister in a car) all animated first time. Removin
 motion prompt changed nothing, so the trigger is probably **the still**: a face-covered figure with police and an
 emergency vehicle. Bank Robbery's balaclava gang (no police in frame) animated fine. Untested next step: the same reporter
 with no police or emergency vehicle in the still.
+
+### 2026-11-11: the Priority Lane "silent block" was the wording, not the still (single case, unconfirmed)
+Still REP1-a (masked reporter, ambulance and police bikes behind) failed with nothing returned about 10 times across several detailed prompts. On retry, 03-r2 (detailed) went through once, but 05-r2 kept being refused within about 14s. A stripped-down prompt ("The man stands still holding the microphone. Behind him, the yellow van drives away. Rain falls. No dialogue, no music.") generated on its second submit. **Try a bare prompt that names no vehicles, lights or uniforms before replacing the still.** One case only; the cause has not been isolated.

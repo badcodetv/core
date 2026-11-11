@@ -28,6 +28,15 @@
    "character": null,
    "why": "05 failed three times with no clip; rewritten without 'masked', 'police' or 'siren'",
    "motion": "The camera does not move. The news presenter in the knitted hood stands perfectly still with the microphone, facing the lens. Behind him, softly out of focus, the yellow ambulance with its blue lights pulsing finally pulls away through the junction and out of frame. Rain falls steadily. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: rain, an ambulance engine pulling away. No dialogue, no music. The camera does not move. Thanks."
+  },
+  {
+   "key": "05-r3",
+   "n": 5,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11: 'make it as simple as possible'. 05-r2 refused repeatedly; stripped to the bare action, no ambulance/lights/hood/presenter words",
+   "motion": "The camera does not move. The man stands still holding the microphone. Behind him, the yellow van drives away. Rain falls. No dialogue, no music. Thanks."
   }
  ]
 }

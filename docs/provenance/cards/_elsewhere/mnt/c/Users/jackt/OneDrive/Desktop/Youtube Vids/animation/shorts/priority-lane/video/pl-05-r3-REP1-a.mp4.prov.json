@@ -1,0 +1,29 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-r3-REP1-a.mp4",
+  "made": "2026-11-11T10:26:09+00:00",
+  "by": "claude",
+  "kind": "video",
+  "engine": "google-flow",
+  "tool": "scripts/scene/run.mts",
+  "model": "Omni 1.2 Flash",
+  "prompt": "The camera does not move. The man stands still holding the microphone. Behind him, the yellow van drives away. Rain falls. No dialogue, no music. Thanks.",
+  "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+  "why": "05 failed three times with no clip; rewritten without 'masked', 'police' or 'siren'",
+  "inputs": {
+    "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+    "character": null,
+    "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+    "key": "05-r3",
+    "frame": 5,
+    "option": null
+  },
+  "settings": {
+    "aspect": "9:16",
+    "mode": "Frames",
+    "durationSeconds": 8,
+    "count": 1,
+    "resolution": "720p",
+    "at": "2026-11-11T10:23:35.269Z"
+  }
+}
