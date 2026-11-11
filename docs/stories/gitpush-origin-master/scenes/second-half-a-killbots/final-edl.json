@@ -534,7 +534,7 @@
    "name": "mus-M0-radio",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/stems/06-mus-M0-radio.wav",
    "start": 0.0,
-   "peak_db": -7.1
+   "peak_db": -6.1
   },
   {
    "track": "A7",
@@ -773,16 +773,9 @@
   {
    "stem": "mus-M0-radio",
    "t": 0.0,
-   "dur": 39.458,
+   "dur": 7.958,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
-   "what": "M0 her radio (tinny GPOM track), the opening"
-  },
-  {
-   "stem": "mus-M0-radio",
-   "t": 189.458,
-   "dur": 6.625,
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
-   "what": "M0 her radio, back after the fade-up (the drop on \"Mind how you go\")"
+   "what": "M0 the film's song carrying on from the opening, tinny (Kai's r11 Premiere edit)"
   },
   {
    "stem": "mus-C3-chase",

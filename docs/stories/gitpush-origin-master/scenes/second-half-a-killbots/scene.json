@@ -57,7 +57,7 @@
     "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
     "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/preview.mp4",
     "round": "d23",
-    "what": "round 25 (Kai's 7 round-24 notes): 'They got married!' ends on its D; f03 wistful with 'we are, after all, machines'; f05 re-voiced with pauses round 'storyverse'; f06 in Kai's words ('driving me barmy'); 'Of course he's built a time machine'; hologram 1F4; detect 5 s (turret and HUD 2 s each, HUD reads LOCKED); side and overhead angles back on b01 (Kai, watching the story film); 4:03"
+    "what": "round 25 (Kai's 7 round-24 notes): 'They got married!' ends on its D; f03 wistful with 'we are, after all, machines'; f05 re-voiced with pauses round 'storyverse'; f06 in Kai's words ('driving me barmy'); 'Of course he's built a time machine'; hologram 1F4; detect 5 s (turret and HUD 2 s each, HUD reads LOCKED); side and overhead angles back on b01 (Kai, watching the story film); 4:03; radio = the film version (the opening's song carrying on, tinny, 8 s; Kai 11 Nov)"
   },
   "premiere": {
     "rough1": {
@@ -370,11 +370,11 @@
         "A1 0-7.958 s: song 168.958-176.917 with r11's Graphic EQ (30 bands) and level 0.1778; his fade NOT carried (no audio transitions in UXP): add by hand"
       ],
       "check": {
-        "at": "2026-11-11T10:19",
+        "at": "2026-11-11T10:39",
         "state": "Premiere ahead",
-        "why": "the round-11 tinny radio EQ on Kai's song tail, added in Premiere only; the picture matches the page (1 effects added)"
+        "why": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical (1 effects added)"
       },
-      "premiere_ahead": "the round-11 tinny radio EQ on Kai's song tail, added in Premiere only; the picture matches the page"
+      "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical"
     }
   },
   "cut_history": [

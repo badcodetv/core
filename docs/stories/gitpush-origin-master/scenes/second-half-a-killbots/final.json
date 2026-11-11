@@ -3,8 +3,8 @@
  "story": "gitpush-origin-master",
  "scene": "second-half-a-killbots",
  "sequence": "gpom-second-half-A-rough5",
- "frozen": "2026-11-10T20:08:11+00:00",
- "note": "Kai, 10 Nov: it's a wrap; then, watching the story film, the side/overhead angles back on Maddie's apology line",
+ "frozen": "2026-11-11T10:39:39+00:00",
+ "note": "Kai, 11 Nov: the film version of the radio, please (after the 10 Nov sign-off)",
  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/preview.mp4",
  "total": 242.91666666666666,
@@ -3140,21 +3140,8 @@
   {
    "stem": "mus-M0-radio",
    "t": 0.0,
-   "dur": 39.458,
-   "what": "M0 her radio (tinny GPOM track), the opening",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "stem": "mus-M0-radio",
-   "t": 189.458,
-   "dur": 6.625,
-   "what": "M0 her radio, back after the fade-up (the drop on \"Mind how you go\")",
+   "dur": 7.958,
+   "what": "M0 the film's song carrying on from the opening, tinny (Kai's r11 Premiere edit)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
    "chain": [
     {

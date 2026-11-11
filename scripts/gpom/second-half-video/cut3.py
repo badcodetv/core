@@ -1651,14 +1651,21 @@ def audio_a_d15(c):
     # ---- M0, her radio: exactly as rounds 15-16
     hello, down, up, d0, bye = m['hello'][0], m['racket'][1], m['bye'][1] - 1.3, en['0'], m['bye'][1]
     hp = m['holo']['p']
-    x = C.level(C.decode(C.MUSIC['M0'], 0.0, m['holo']['h'], af=RADIO), rms=-23)
-    x *= C.env(len(x), [(0, 0), (0.3, 1), (hello - 0.25, 1), (hello, 0.2), (down - 0.1, 0.2), (down + 0.7, 0),
-                        (len(x) / SR, 0)])
-    mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], 'M0 her radio (tinny GPOM track), the opening')
-    y = C.level(C.decode(C.MUSIC['M0'], max(0.0, C.DROP - (up - hp)), d0 - hp, af=RADIO), rms=-23)
-    y *= C.env(len(y), [(0, 0), (up - 0.3 - hp, 0), (up + 0.3 - hp, 0.35), (bye - hp, 0.35), (bye + 0.3 - hp, 1),
-                        (d0 - 0.03 - hp, 1), (d0 - hp, 0)])
-    mx.add('mus-M0-radio', y, hp, C.MUSIC['M0'], 'M0 her radio, back after the fade-up (the drop on "Mind how you go")')
+    if D23:  # Kai, 11 Nov: "the film version, please" -- the opening's song carrying on into A, tinny (his r11 Premiere
+        # edit: 168.958-176.917 s of the track, Graphic EQ 30 bands, -15 dB, faded), not the radio from the top of the
+        # track, and no return on "Mind how you go"
+        x = C.level(C.decode(C.MUSIC['M0'], 168.958, 7.958, af=RADIO), rms=-23)
+        x *= C.env(len(x), [(0, 1), (6.958, 1), (7.958, 0)])
+        mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], "M0 the film's song carrying on from the opening, tinny (Kai's r11 Premiere edit)")
+    else:
+        x = C.level(C.decode(C.MUSIC['M0'], 0.0, m['holo']['h'], af=RADIO), rms=-23)
+        x *= C.env(len(x), [(0, 0), (0.3, 1), (hello - 0.25, 1), (hello, 0.2), (down - 0.1, 0.2), (down + 0.7, 0),
+                            (len(x) / SR, 0)])
+        mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], 'M0 her radio (tinny GPOM track), the opening')
+        y = C.level(C.decode(C.MUSIC['M0'], max(0.0, C.DROP - (up - hp)), d0 - hp, af=RADIO), rms=-23)
+        y *= C.env(len(y), [(0, 0), (up - 0.3 - hp, 0), (up + 0.3 - hp, 0.35), (bye - hp, 0.35), (bye + 0.3 - hp, 1),
+                            (d0 - 0.03 - hp, 1), (d0 - hp, 0)])
+        mx.add('mus-M0-radio', y, hp, C.MUSIC['M0'], 'M0 her radio, back after the fade-up (the drop on "Mind how you go")')
     # ---- C3 the chase: from the bot tearing past Maddie (9a) to the stand-down; its break-off (one low held note)
     # lands as the pack turns away (beat 12), and the note rings on under "That was close."
     s2, stop = m['s9a'], m['peace']
@@ -1766,7 +1773,14 @@ def audio_a(c):
     up = m['bye'][1] - 1.3
     d0 = en['0']
     bye = m['bye'][1]
-    if D13:
+    if D23:
+        # Kai, 11 Nov: "the film version, please". In 00 RENDER story the opening's song runs straight into A, so A's
+        # radio is that song CARRYING ON (168.958-176.917 s of the track), made tinny, as in his Premiere hand edit (r11:
+        # Graphic EQ 30 bands, -15 dB, faded). Not the radio from the top of the track, and no return on "Mind how you go".
+        x = C.level(C.decode(C.MUSIC['M0'], 168.958, 7.958, af=RADIO), rms=-23)
+        x *= C.env(len(x), [(0, 1), (6.958, 1), (7.958, 0)])
+        mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], "M0 the film's song carrying on from the opening, tinny (Kai's r11 Premiere edit)")
+    elif D13:
         # The radio is already at nothing from "racket" to just before "Mind how you go", so it plays in two pieces:
         # the opening exactly as round 14 (from the top of the track), cut at the hologram; then from the pull-out,
         # cued so the drop lands on "Mind how you go" as before.
