@@ -165,3 +165,4 @@ On the clips page v9 for approval.
 Kai, same message, on the music: the drop gets re-made, *"a much more A-men jump-up break… too many high-pitched
 synthesizers… A mid-90s old-school A-men jungle would be perfect. I'd like to do a couple of iterations"*; *"the
 nursery rhyme part is perfect right now"*. Round `../../songs/dnb-r2`.
+Kai: *"could we animate it? … let's fill the gap in Premiere"* → `HR7-d-b` approved; clip job `h1` (4 s).

@@ -36,7 +36,7 @@ SHOTS = [('stack', 'tr-r01-ST3-a-a.mp4', 0, 64),
          ('bin', 'tr-b3-BI5-a-a.mp4', 248, 131),
          ('riot', 'tr-r04a-TE4-a-a.mp4', 379, 65),
          ('climb', 'tr-c1-CL3-c-a.mp4', 444, 72),
-         ('hang', '../moodboard/HR2-a-a.jpg', 516, 67),
+         ('hang', 'tr-h1-HR7-d-b.mp4', 516, 67),
          ('pen', 'tr-05-PE4-b-a.mp4', 583, 68)]
 SHOTS = [(b, c, s * F, d * F) for b, c, s, d in SHOTS]
 DROP_START = 379 * F                          # Kai: the drop lands on the riot
@@ -52,7 +52,7 @@ SEE = {'stack': 'The gang face camera at the foot of THE RULES; a tube flickers.
        'bin': 'Rain in an alley: someone asleep on cardboard beside the big green bins.',
        'riot': 'The gang go mental: tearing the rules chest-on to camera, paper thrown up. The Amen drop slams in (A2).',
        'climb': 'They climb the shelving and tear the archive apart; paper pours down.',
-       'hang': 'Two hang off the top shelves while the rest rip paper at the camera. STILL for now (HR2-a-a): its clip is owed.',
+       'hang': 'Two rip paper right up in the lens while two hang off the top racks and one hauls himself up behind (clip from HR7-d-b).',
        'pen': 'A blank page and a pen held out to camera. The drop plays out under it.'}
 
 
@@ -97,8 +97,7 @@ def main():
                      {'track': 'A2', 'name': 'mus-drop', 'file': str(DROP), 'at': DROP_START, 'in': DROP_IN, 'dur': DROP_DUR}],
            'events': [{'stem': 'mus-hymn', 't': 0.0, 'dur': 16.52, 'what': 'The hymn (whole school + upright piano)', 'src': str(HYMN)},
                       {'stem': 'mus-drop', 't': DROP_START, 'dur': DROP_DUR, 'what': f'Amen drop from {DROP_IN:.2f} s of the take (Kai\'s drop point), through the pen', 'src': str(DROP)}],
-           'flags': ['Hang-and-rip (21.5-24.3 s) is the still HR2-a-a held until its clip is made and approved.',
-                     'Line times are where the words are sung; your cuts now land a little before them.',
+           'flags': ['Line times are where the words are sung; your cuts now land a little before them.',
                      'Your fades on the hymn and the drop (Premiere transitions) are not in this preview.',
                      'Riot clip: the rust mask\'s triangle is faint in places.',
                      'No text overlay yet: the tax line is owed a fact check.']}
