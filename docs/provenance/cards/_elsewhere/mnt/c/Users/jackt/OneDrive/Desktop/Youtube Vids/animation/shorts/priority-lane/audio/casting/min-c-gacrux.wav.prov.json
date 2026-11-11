@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/min-c-gacrux.wav",
+ "made": "2026-11-11T10:35:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 1 (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA senior woman cabinet minister in her late fifties, from Cheshire, brisk and imperious, the headmistress of her department. On the phone she snaps, icy and appalled, rising to a scandalised shriek on the last word.\n\n## Scene:\nIn the back seat of a government car at night, phone to her ear, motorcade lights flashing past.\n\n## Sample Context:\nSomeone has failed her over the reception canapés, and they will be hearing about it.",
+ "inputs": {
+  "transcript": "I said raspberry-shaped hors d'oeuvres!"
+ },
+ "settings": {
+  "voice": "Gacrux"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep-b-despina.wav",
+ "made": "2026-11-11T10:35:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 1 (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA young woman reporter from Glasgow, early thirties, sharp and quick, a roving correspondent for a late-night news programme. Bright, brisk professional delivery with a deadpan edge she does not quite hide. Clear articulation, a natural Glaswegian accent.\n\n## Scene:\nOutdoors, live, in the rain at night, holding a microphone while traffic is stopped behind her.\n\n## Sample Context:\nShe keeps it perfectly professional and lets one small dry pause say what she actually thinks.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Despina"
+ }
+}

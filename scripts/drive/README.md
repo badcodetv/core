@@ -36,7 +36,7 @@ scripts/drive/drive.sh pull   karen-music --go # Drive -> this machine
   off Drive, so the project's other sequences show offline media on the other machine: that is the agreed trade.
   `drive.sh status` still counts the whole folder, so for these stories its big "would PUSH" number is expected.
   Lists so far: bank-robbery-music (`Balaclava Gang 9`), bank-robbery-story (`cut 10` + `short - cut 7g` + the
-  cut 10 render), camping-music (`camping song 2 beat 9`), camping-story (the 9 `new clips` beat 9 borrows).
+  cut 10 render), camping-music (`camping song 2 beat 9`), camping-story (`0 synced` in `Camping Video NEW!/camping jack/camping jack.prproj`, Jack 2026-11-11, plus the 9 `new clips` beat 9 borrows). Camping Story's Drive folder mirrors Jack's `Camping Comic` folder (one level above `Camping Video NEW!`), so that is the folder recorded for it.
   Beat 9 also plays `animation/badcode logo designs/draft 1/4.mp4`, outside every story: it is on Drive in the
   Camping Music folder under the same path, and Premiere asks for it once on the other machine.
 - **Baton:** Kai and Jack agree out loud who holds each story. Whoever holds it pushes when they hand it over; the next holder pulls before they open the project. The tool has no lock and doesn't need one.

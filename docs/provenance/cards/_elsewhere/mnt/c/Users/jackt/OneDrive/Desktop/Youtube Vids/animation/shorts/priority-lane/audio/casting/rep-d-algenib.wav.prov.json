@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep-d-algenib.wav",
+ "made": "2026-11-11T10:35:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 1 (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA tired South London freelance news stringer in his forties, working the night shift, slightly gravelly, half-amused and half-knackered. Speaks plainly and quietly, like a man talking to a mate rather than a nation. Clear speech, a natural London accent.\n\n## Scene:\nLate at night in the rain at a closed junction, reporting to camera on his phone rig.\n\n## Sample Context:\nHe has seen it all and can no longer be bothered to pretend this is normal.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Algenib"
+ }
+}
