@@ -18,6 +18,24 @@
     "message": "Sit today's cabinet."
   },
   {
+    "name": "gov-2b-opposition",
+    "worker": "opposition",
+    "cron": "30 7 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Oppose today's changes."
+  },
+  {
+    "name": "gov-2c-statistician",
+    "worker": "statistician",
+    "cron": "0 8 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Gate today's changes and mark the checks that are due."
+  },
+  {
     "name": "gov-3-personnel",
     "worker": "cabinet-secretary",
     "cron": "0 20 * * 0",

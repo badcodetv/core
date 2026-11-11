@@ -77,6 +77,7 @@ The voice and plain-words rules in `shared.md` apply in full; the lint refuses t
 | `signs` | The named human role that answers for it | |
 | `check.*` | The world check (below) | Every policy, every kind |
 | `write_up`, `successor` | For `changed` and `dropped` | |
+| `against`, `answer` | The opposition's strongest point still standing, and the government's answer, one line each | Written by the cabinet from the debate log (`debates/README.md`); empty when nothing stands |
 
 **A policy missing any field its kind needs is "Not ready".** As a `draft` it is allowed and printed
 with that label; as anything else the lint fails.
