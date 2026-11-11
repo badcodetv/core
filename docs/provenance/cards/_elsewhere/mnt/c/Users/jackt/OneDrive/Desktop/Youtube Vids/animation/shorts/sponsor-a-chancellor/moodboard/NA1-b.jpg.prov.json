@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/NA1-b.jpg",
+ "made": "2026-11-11T13:28:47.499Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph of a narrow council-flat hallway at dusk, seen at eye level from the doorway of the front room, the painted door frame cutting into the left side of the picture. An elderly working-class British woman, about eighty, in a long brown winter coat, a burgundy knitted hat and fleece slippers, stands on a worn patterned doormat by the front door. A small pile of junk mail lies at her feet. She holds one flyer out at arm's length to read it, its face towards the camera: a sad, well-fed middle-aged man in an expensive coat above the words \"SPONSOR A CHANCELLOR\" in bold white sans-serif on red. She tilts her head with a look of genuine sympathy. The walls are magnolia woodchip, a draught excluder lies along the bottom of the door, and a coat hook is crowded with scarves and a shopping bag. The light is a single weak bare bulb overhead, warm and dim, against cold blue dusk through the reeded glass of the front door. Colour negative film with fine grain, low contrast, a normal lens, slightly high camera, nothing tidy. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "3b523a12-3292-4f95-bc57-4c00b57b0c10"
+}

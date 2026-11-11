@@ -6,9 +6,46 @@
   "heading": "BadCode Shorts <span class=\"tri\">▲</span> Sponsor a Chancellor",
   "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor",
   "beats": [
-    {"key": "appeal", "at": "0:00", "name": "A. The appeal", "blurb": "Sad-piano charity advert, black and white, slow motion: meet the chancellor who 'only' earns £100,000."},
-    {"key": "ask", "at": "0:06", "name": "B. The ask", "blurb": "£3 a month buys him a second wine fridge."},
-    {"key": "turn", "at": "0:11", "name": "C. The turn", "blurb": "Freeze frame: the real median UK salary on screen."}
+    {
+      "key": "appeal",
+      "at": "0:00",
+      "name": "A. The advert",
+      "blurb": "Black-and-white charity advert playing on her old TV: Crispin, sad, 'only' £100,000; his second home has no second home."
+    },
+    {
+      "key": "room",
+      "at": "0:08",
+      "name": "B. Her flat",
+      "blurb": "Pull back into colour: a freezing council flat at dusk (Jack's reference), the nan in coat and hat indoors, breath showing."
+    },
+    {
+      "key": "post",
+      "at": "0:12",
+      "name": "C. The junk mail",
+      "blurb": "The letterbox clatters; she picks up a SPONSOR A CHANCELLOR flyer, Crispin looking even sadder."
+    },
+    {
+      "key": "nan",
+      "at": "0:16",
+      "name": "D. Poor bastard",
+      "blurb": "She looks at the flyer, genuinely sorry for him: 'Poor bastard...'"
+    }
   ],
-  "video": {"model": "Omni 1.2 Flash", "aspect": "9:16", "mode": "Frames", "duration": 8}
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
+  },
+  "dialogue": {
+    "page": "https://claude.ai/artifact/YcJX759MtLbfgzSpxiJeKM",
+    "options": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/options.json",
+    "picked": "1D (median card and 'keep your £3' cut; hardship f)",
+    "round": 2
+  },
+  "flow_project": "2ab052be-f268-47d0-8b8d-cdf772b864af",
+  "moodboard_intro": "Round 1, clean room: four beats, three different stills each. Tap This, Maybe or No on each still; leave a note per shot.",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/2zJhS2qQjLwYE89GkNBvx9"
+  }
 }

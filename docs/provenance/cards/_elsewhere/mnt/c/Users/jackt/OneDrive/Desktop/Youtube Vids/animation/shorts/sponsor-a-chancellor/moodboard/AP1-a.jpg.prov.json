@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/AP1-a.jpg",
+ "made": "2026-11-11T13:22:59.809Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 black-and-white photograph that looks like a frame from a British charity television appeal. A well-fed man in his mid-fifties, an invented government chancellor with an ordinary, slightly jowly face, thinning sandy-grey hair and a soft double chin, sits alone at the far end of a very long polished oak dining table in a large Georgian country-house kitchen. He wears a camel cashmere overcoat over a pale blue Oxford shirt and rests both hands around a single bone-china teacup. He is small in the frame, centred, framed straight on from the near end of the table at seated eye level with a normal lens, and he gazes just off the lens with a sad, faraway look. Behind him are a cream Aga range, copper pans on hooks and a tall sash window with soft overcast daylight coming in from the left, falling off into grey shadow on the right. The rest of the table is bare. Shot on black-and-white film with visible grain, lifted greys, low contrast and a slight softness, as if caught mid slow push-in. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "08210722-c039-4547-bccd-5e1d8aacb0af"
+}

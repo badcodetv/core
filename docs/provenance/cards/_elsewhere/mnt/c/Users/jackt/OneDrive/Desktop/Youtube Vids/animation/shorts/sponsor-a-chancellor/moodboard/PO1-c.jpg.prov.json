@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/PO1-c.jpg",
+ "made": "2026-11-11T13:27:27.040Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 close-up photograph of an elderly woman's hand holding a glossy junk-mail flyer at chest height in a dim council-flat hallway, the cuff of her thick buttoned winter coat and the edge of a knitted glove pulled back at the wrist. Her hand is real and old: thin papery skin, liver spots, raised veins, a worn gold wedding ring, short unpainted nails. The flyer reads \"SPONSOR A CHANCELLOR\" in bold white sans-serif capitals, and under it is a photo of an invented well-fed man in his fifties in a navy cashmere coat, his face even sadder than a charity advert, eyes wet, lower lip unsteady, standing beside a gleaming car. Behind her hand, out of focus, a white uPVC door with a frosted glass panel lets in cold grey-blue dusk, and a warm amber light from another room catches one side of her knuckles. Normal lens, slightly off-centre, soft focus at the edges, low contrast and lifted blacks, like a noisy phone photo taken at night. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a7b34f04-d617-47a2-b509-f83ea0dc4066"
+}

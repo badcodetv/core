@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/PO1-a.jpg",
+ "made": "2026-11-11T13:26:12.616Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph taken from low down on the floor of a narrow council-flat hallway at dusk, looking along a worn swirl-patterned carpet towards the inside of a white uPVC front door. The brass letterbox flap is still tilted open, and a small pile of junk mail has just landed on a thin brown coir doormat: a pizza menu, a window-cleaning leaflet, a brown envelope, and a glossy flyer face up whose bold white sans-serif headline reads \"SPONSOR A CHANCELLOR\" above a photo of a well-fed man in his fifties in an expensive camel coat looking mournfully into the lens. The only light is a cold grey-blue dusk coming through the frosted glass panel in the door, with a faint warm amber spill from a living-room doorway off to the left edge of frame. A draught excluder lies along the bottom of the door and a pair of old slippers sits off-centre near the skirting board. Low contrast, lifted blacks, soft and slightly smeared, shot on a consumer phone at night with visible noise and no crisp detail. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "882ed599-156b-4be5-bf93-596d830fe4a5"
+}

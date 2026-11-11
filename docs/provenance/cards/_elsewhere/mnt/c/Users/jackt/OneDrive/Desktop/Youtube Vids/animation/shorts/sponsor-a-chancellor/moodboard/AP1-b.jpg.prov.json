@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/AP1-b.jpg",
+ "made": "2026-11-11T13:23:38.040Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 black-and-white photograph styled like a slow-motion shot from a charity television appeal, seen from outside in the rain. A plump man in his fifties, an invented politician with a round, unremarkable face, heavy eyebrows and slightly flushed cheeks, stands inside a heated Victorian-style conservatory and looks out through the glass. He wears a navy quilted gilet over a lambswool jumper, and one hand is pressed flat against the pane. Rain runs down the glass in thick streaks and beads, partly blurring his face and the potted lemon tree and wicker armchair behind him. The camera is handheld at chest height, slightly off-centre, a little close to the glass, with the white-painted glazing bar cutting down one side of the frame. Flat grey daylight, soft and directionless, mid-grey tones throughout, lifted blacks, coarse film grain, a faint motion smear on the falling raindrops. His expression is quietly forlorn, eyes lowered. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "7ff842c7-8b5a-4033-b3f5-a59ed9664e9f"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/RM1-c.jpg",
+ "made": "2026-11-11T13:25:43.402Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph taken from outside a ground-floor flat at dusk, standing on the pavement close to a single white uPVC window set in dark red-brown brick, the window filling most of the frame with a strip of rough brick and a concrete sill around it. Through slightly dirty, rain-speckled glass and half-open cream vertical blinds, a woman in her late seventies is seen side-on in a dark buttoned coat and a knitted hat, sitting very still in an armchair, lit only by the cold flickering grey light of a television just out of view inside the room; a bare ceiling bulb is switched off above her. Her face is lined, her grey hair uneven where it comes out under the hat. The outside light is a deep, even, slate-blue overcast twilight that tints the white window frame violet at its edges, and the brick is almost colourless. The image is soft and a little smeared, as from a phone night shot with heavy noise reduction, low contrast, lifted blacks, the only warmth a faint orange from a streetlamp reflected in one corner of the glass. Quiet and watched from outside. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8ce63d74-2edd-4e6d-823f-550ea90956a6"
+}

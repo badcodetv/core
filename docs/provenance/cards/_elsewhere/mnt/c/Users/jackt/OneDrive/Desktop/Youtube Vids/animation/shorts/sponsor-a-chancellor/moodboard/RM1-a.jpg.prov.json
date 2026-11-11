@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/RM1-a.jpg",
+ "made": "2026-11-11T13:24:32.260Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph of the corner of a three-storey 1970s brick council block in an English town, taken from across the street at eye level on a tripod with a normal lens, so the walls stand straight and the building fills almost the whole frame, with only a thin band of flat grey sky above the roofline. It is the very end of dusk under a heavy overcast sky: no sun, no shadows, the light so low and even that the maroon-brown stretcher-bond brick and the slate-grey sky sit almost at the same dull brightness. Concrete bands run along each floor. The windows are fat white uPVC casements with top-hung openers, and their frames pick up a faint violet-blue edge from the sky. Every window is dark except two on the first floor, either side of the corner: the left one glows a flat orange-amber through a drawn curtain with no detail visible, the right one shows cream vertical blinds with a single bare ceiling bulb burning behind them. The picture is soft and slightly smeared, as if shot through fine drizzle on a long exposure, with lifted blacks, low contrast and almost no colour except the warmth in those two windows. Quiet, still, nobody in the street. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "3357682a-ab21-4105-9ecc-5c8c6d14fd3d"
+}

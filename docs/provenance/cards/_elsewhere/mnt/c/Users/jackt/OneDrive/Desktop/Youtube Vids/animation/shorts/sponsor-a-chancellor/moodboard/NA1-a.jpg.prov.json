@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/NA1-a.jpg",
+ "made": "2026-11-11T13:28:15.678Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 close-up photograph of a British woman in her early eighties standing just inside her front door at dusk, looking down at a glossy A5 flyer held in both hands, its back to the camera so only her face and the top edge of the paper fill the frame. She wears a buttoned navy wool winter coat and a grey knitted bobble hat indoors, a pair of reading glasses low on her nose. Her face is soft with pity, brows slightly raised, mouth just parting as if about to speak, not a pout, not a smile. Her skin is thin and lined, with liver spots on her cheek and a few loose strands of uneven white hair escaping the hat. The only light is a cold, flat grey-blue from the frosted glass panel of the door on the left, with a faint warm orange spill from a hallway bulb behind her on the right; blacks are lifted and contrast is low. The camera is at her chest height looking slightly up, framed off-centre so her face sits in the upper third and the hat is cut by the top edge. Shot on a cheap consumer digital camera in low light, soft, slightly smeared, with visible noise and no crisp detail. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "56ff44f0-79f1-45b1-84f7-f3a53c185007"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/NA1-c.jpg",
+ "made": "2026-11-11T13:29:14.154Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph taken from across the street at late blue hour, looking at the lower corner of a three-storey brown-brick council block under a flat overcast sky. The light is very low and even, with no shadows, the brick a cold slate grey shading to maroon, the blacks lifted and soft as if through drizzle. Only one ground-floor window is lit: behind a white uPVC frame with a violet-blue edge from the sky, cream vertical blinds are half open and a bare ceiling bulb glows warm amber. Through the gap, small in the frame, an elderly woman in a winter coat and knitted hat sits forward in an armchair, holding a sheet of paper close to her face and looking at it, the cold blue flicker of an old television on the far wall. The upper windows are dark. The camera is on a tripod at eye level, a normal-to-slightly-long lens, verticals straight, the building filling most of the frame with a sliver of grey sky at the top and the lit window placed low and off-centre. A long exposure with soft, smudged detail, quiet and lonely, in the manner of Todd Hido's night houses. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4b0899f4-1054-4d9f-be41-7b24147c37e6"
+}

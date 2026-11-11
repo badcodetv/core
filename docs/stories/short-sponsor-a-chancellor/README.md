@@ -27,8 +27,8 @@
 
 | What | Where | Status |
 | --- | --- | --- |
-| Words | `scenes/sponsor-a-chancellor/` (scene-dialogue) | ⬜ |
+| Words | `scenes/sponsor-a-chancellor/script.json` (dialogue page https://claude.ai/artifact/YcJX759MtLbfgzSpxiJeKM) | ✅ locked 2026-11-11 (draft 1D, hardship f); ⬜ the name |
 | Beats | `scenes/sponsor-a-chancellor/brief.md` | ⬜ |
-| Look | [`look.md`](./look.md) | EMPTY |
+| Look | [`look.md`](./look.md) · mood board https://claude.ai/artifact/2zJhS2qQjLwYE89GkNBvx9 | EXPLORING, round 1 stills awaiting Jack |
 | Sound | [`sound.md`](./sound.md) | EMPTY |
 | Media | Jack: Desktop `Youtube Vids\animation\shorts\sponsor-a-chancellor` · Drive `Shorts/Sponsor a Chancellor` | empty |
