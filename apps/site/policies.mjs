@@ -132,6 +132,7 @@ export function policyText(p, notReady) {
     const r = m['check.result'] || 'pending';
     out.push(`Our prediction: ${m['check.claim']} Our odds: ${pct(m['check.prior'])}. Checked on ${m['check.check_on']}: ${RESULT_WORDS[r] || r}.${m['check.note'] ? ` ${m['check.note']}` : ''}`);
   }
+  if (m.against) out.push(`The best case against: ${m.against}${m.answer ? ` Our answer: ${m.answer}` : ''}`);
   const status = STATUS_WORDS[m.status] || m.status;
   out.push(`Status: ${status}${notReady ? ', not ready' : ''}.${m.write_up ? ` ${m.write_up}` : ''}`);
   return out.filter(Boolean).map(s => s.replace(/\.\.$/, '.')).join('\n\n');

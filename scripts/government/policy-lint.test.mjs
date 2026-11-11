@@ -62,6 +62,7 @@ describe('policy text', () => {
     expect(t).toMatch(/Our odds: 70%\. Checked on 2027-01-31: not checked yet\./);
     expect(t).toMatch(/Status: Draft\./);
     expect(policyText(good(), ['fails_if'])).toMatch(/Status: Draft, not ready\./);
+    expect(policyText(good({ against: 'Too slow.', answer: 'Slow beats wrong.' }))).toMatch(/The best case against: Too slow\. Our answer: Slow beats wrong\./);
   });
 });
 

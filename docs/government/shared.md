@@ -192,8 +192,11 @@ automation belong to Work and Pensions and the Chancellor (and see "Who owns AI"
 Minister chairs.
 
 The workers: `news-gatherer` (05:00, writes the news), `cabinet` (06:00, one session playing all ten
-ministers, writes the manifesto and statements), `cabinet-secretary` (Sundays 20:00, edits the
-ministers' briefs and keeps the evidence file).
+ministers, writes the manifesto, policies and statements, and answers the opposition), `opposition`
+(07:30, a different model, finds the strongest case against each changed policy, comments only),
+`statistician` (08:00, gates every changed policy on whether it can be measured and marks world
+checks when they come due), `cabinet-secretary` (Sundays 20:00, edits the ministers' briefs and
+keeps the evidence file).
 
 ## One government: cross-cabinet rules
 
@@ -240,6 +243,7 @@ passes the policy contract before it touches a person.**
 | minutes | cabinet | `kind=minutes`, `date`, `pr=<number>` (omit when no PR) | the meeting: who acted, who passed, clashes the PM settled, review comments answered, failures |
 | feedback | cabinet | `kind=feedback`, `minister=<post>`, `pr=<number>`, `outcome=merged\|edited\|closed` | Kai's/Jack's review comments touching that minister; what changed between the PR and what was merged |
 | personnel | Cabinet Secretary | `kind=personnel`, `minister=<post>`, `pr=<number>` | what changed in the brief and why, with evidence ids |
+| debate | opposition, statistician | `kind=debate`, `role=opposition\|statistician`, `date`, `pr=<number>` | the policies attacked or gated, the strongest points, the checks marked |
 
 **Topics:** `economy`, `work`, `welfare`, `housing`, `health`, `education`, `crime-justice`,
 `migration`, `foreign`, `defence`, `energy-climate`, `tech-ai`.
@@ -255,7 +259,8 @@ on every id you need in full. The tools may appear prefixed (e.g. `mcp__bob__mem
   (clone it if it is missing). `/project/work` is shared with every other chat in this
   container: never edit, check out or reset the shared clone. Writers work in their own worktree;
   readers use `git show origin/<branch>:<path>`.
-- Only the `cabinet` and the `cabinet-secretary` touch git, and only on **the one rolling PR**:
+- Only the `cabinet`, the `statistician` (world-check results only) and the `cabinet-secretary`
+  touch git; the `opposition` only comments. All of them work on **the one rolling PR**:
   branch `government/rolling`, label `government`. There is never more than one open government PR.
   Never open a second, never push to `main`, never force-push, never merge.
 - Commit with the author set in the environment (Bob sets `GIT_AUTHOR_*` for every turn, which beats `git -c user.name`): `GIT_AUTHOR_NAME="BadCode Government" GIT_AUTHOR_EMAIL=government@badcode.tv GIT_COMMITTER_NAME="BadCode Government" GIT_COMMITTER_EMAIL=government@badcode.tv git commit …`. Push a worktree's detached HEAD with the full ref: `git push origin HEAD:refs/heads/government/rolling`.
