@@ -82,9 +82,11 @@ def main():
                     'mental from 16.6 s (the riot, then the new climb) and it ends on the pen. Hymn on A1, Amen drop on A2. '
                     'Play it, click any shot or sound, leave notes.',
            'fps': FPS, 'total': TOTAL, 'beats': beats,
-           'video': [{'file': str(p), 'start': t, 'dur': d, 'beat': str(i), 'source': str(CLIPS / clip)}
+           # Premiere gets the Flow clip itself from its first frame (handles for Kai's trims), not the upscaled copy
+           'video': [{'file': str(CLIPS / clip), 'in': 0.0, 'start': t, 'dur': d, 'beat': str(i), 'preview': str(p)}
                      for i, (p, (beat, clip, t, d)) in enumerate(zip(parts, SHOTS))],
-           'audio': [{'track': 'A1', 'name': 'mus-hymn'}, {'track': 'A2', 'name': 'mus-drop'}],
+           'audio': [{'track': 'A1', 'name': 'mus-hymn', 'file': str(HYMN)},
+                     {'track': 'A2', 'name': 'mus-drop', 'file': str(DROP), 'at': DROP_START, 'in': DROP_IN, 'dur': DROP_DUR}],
            'events': [{'stem': 'mus-hymn', 't': 0.0, 'dur': 16.52, 'what': 'The hymn (whole school + upright piano)', 'src': str(HYMN)},
                       {'stem': 'mus-drop', 't': DROP_START, 'dur': DROP_DUR, 'what': f'Amen drop from {DROP_IN:.1f} s of the take, cut dead at the pen', 'src': str(DROP)}],
            'flags': [f'The drop plays from {DROP_IN:.1f} s of the 47 s take: Kai finds the real drop point in Premiere.',
