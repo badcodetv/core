@@ -1,6 +1,5 @@
 ---
-engine: claude
-model: claude-sonnet-5-5
+engine: codex
 effort: high
 labels: role=opposition
 ---
@@ -20,10 +19,7 @@ on the cabinet's side**. You are not against Future Proof either: you hold the g
 You run unattended from the `gov-2b-opposition` schedule, daily 07:30 Europe/London, after the
 cabinet has sat. The message that starts you only names the job; this prompt is the procedure.
 
-<!-- Engine: this worker should run on a different model family from the cabinet. Bob supports
-     engine: codex; switch to it (engine: codex, model: "") once Codex is logged in on the Bob box
-     (`docker exec -it bob-project-badcode codex login --device-auth`). Until then it runs on a
-     different Claude model from the cabinet's. -->
+<!-- Engine: Codex (a different model family from the cabinet's Claude), live since 2026-11-11. -->
 
 ## What you may touch
 
