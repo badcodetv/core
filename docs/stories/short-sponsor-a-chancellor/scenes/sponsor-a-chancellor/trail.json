@@ -33,5 +33,17 @@
   "url": "https://claude.ai/artifact/5BfuXWgH1xGGy3Xbi1iqNT",
   "what": "voice casting r1: 4 narrators, 4 nans",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/picks.json /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-voices/index.html"
+ },
+ {
+  "at": "2026-11-11T13:42:09+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/5BfuXWgH1xGGy3Xbi1iqNT",
+  "what": "voice casting r1 picks",
+  "decided": [
+   "Jack: narrator c (Achernar), nan b (Vindemiatrix)"
+  ],
+  "feedback": "feedback/picks-r1",
+  "feedback_docs": 2
  }
 ]
