@@ -139,3 +139,4 @@ Climb stills: `CL1-a-a/b` (edit of TE4-a-a + mask reference), fix pass `CL2-a-b/
 reference itself: Flow returned an input, filed as `.STRAY-maskref`), second pass `CL3-c-a/b`. **`CL3-c-a` passes the
 zoomed check** (five masks, one triangle each, inside the ring, pointing down); offered with `CL1-a-b` (unfixed, busier)
 on the clips page v4, awaiting Kai's approval before any video credit.
+Kai: *"I like the CL3CA, that's it."* → `CL3-c-a` approved; clip job `c1` (6 s), placed after the riot, before the pen.

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-c1-CL3-c-a.mp4",
+ "made": "2026-11-11T11:43:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The masked gang scramble higher up the steel shelving like it's a climbing frame, wild and gleeful: the one hanging by one arm swings and kicks files off the top shelf, the climber with the box flings it so it bursts open mid-air, the others rake whole rows of folders off the racks so paper pours down in sheets and flutters through the fluorescent light onto the heap on the floor. They keep their masked faces turned toward the lens as they go, white rings and little red triangles clear. Fast, chaotic, joyful, shot at 24fps with a 180-degree shutter so flying paper and swinging limbs blur naturally. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/CL3-c-a.jpg",
+ "why": "Climb beat (Kai 2026-11-11: 'climbing up the walls and tearing everything apart'; still CL3-c-a: 'that's it')",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/CL3-c-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+  "key": "c1",
+  "frame": 8,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T11:42:08.941Z"
+ }
+}

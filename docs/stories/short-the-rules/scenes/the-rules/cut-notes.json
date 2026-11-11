@@ -1,30 +1,26 @@
 {
- "round": 1,
+ "round": 2,
  "plan": [
   {
-   "h": "Timing (edit only)",
+   "h": "What changed (your round 1 notes)",
    "items": [
-    "Cut on the words, about twice as fast: stack 0–3.2, bed 3.2–6.1, purse 6.1–7.9, islands 7.9–11, bin 11–16.6, tear from 16.6."
+    "Every shot is a moving Flow clip now; cut on the words: stack 0–3.2, bed 3.2–6.1, purse 6.1–7.9, islands 7.9–11, bin 11–16.6.",
+    "New shots: people asleep in a bank doorway (bed), an empty purse at a till (purse), asleep beside the bins (bin).",
+    "From 16.6 s the gang go mental: the riot (re-rolled so the masks hold), then the new climb up the shelves, then the pen. Drop cut dead at the pen."
    ]
   },
   {
-   "h": "New shots (stills free; picks page)",
+   "h": "Still rough",
    "items": [
-    "Bed: people asleep in shop doorways (BD5).",
-    "Purse: an empty purse at a till (PU5).",
-    "Bin: asleep against the bins (BI5, or the basement window WI6)."
-   ]
-  },
-  {
-   "h": "Animation (Flow video credits)",
-   "items": [
-    "Now: stack, islands, tear ×2 (full riot + two in close), pen. Next: the three new beats once picked."
+    "The drop plays from the top of the 47 s take: you find the real drop point in Premiere.",
+    "Riot: the rust mask's triangle is faint in places. Climb: the yellow mask turns away for a moment.",
+    "No text overlay yet: the tax line is owed a fact check."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Pick the three new stills: https://claude.ai/artifact/Bv51DBAVTdgmhPViwSTEzw"
+    "Note anything on the page: timing, shots, the drop, the length (32.6 s)."
    ]
   }
  ],

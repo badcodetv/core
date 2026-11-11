@@ -112,5 +112,16 @@
   "round": 4,
   "url": "https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY",
   "what": "clips page v4: fullscreen viewer; climb stills CL3-c-a (masks pass) and CL1-a-b for approval"
+ },
+ {
+  "at": "2026-11-11T11:44:51+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E",
+  "what": "rough cut 2: 8 Flow clips cut on the words, riot + climb + pen, hymn A1, Amen drop A2 (32.6 s)",
+  "rebuild": "python3 scripts/shorts/the_rules_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-the-rules/scenes/the-rules <out-dir>",
+  "decided": [
+   "Kai: tear = riot re-roll tr-r04a; end on the pen; add the climb (CL3-c-a)"
+  ]
  }
 ]
