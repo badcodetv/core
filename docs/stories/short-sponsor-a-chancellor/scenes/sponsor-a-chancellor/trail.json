@@ -153,5 +153,11 @@
   "url": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE",
   "what": "rough cut 5: nan re-voiced to the clip (fit-b x1.10)",
   "rebuild": "python3 scripts/shorts/sponsor_chancellor_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-timeline"
+ },
+ {
+  "at": "2026-11-11T15:14:32+00:00",
+  "stage": "premiere",
+  "round": 5,
+  "what": "built into Premiere: shorts-6-sponsor-a-chancellor-r5 in sponsor-a-chancellor.prproj"
  }
 ]

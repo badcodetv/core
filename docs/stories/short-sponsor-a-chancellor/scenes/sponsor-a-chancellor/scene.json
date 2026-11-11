@@ -1,63 +1,81 @@
 {
-  "story": "short-sponsor-a-chancellor",
-  "scene": "sponsor-a-chancellor",
-  "prefix": "sac",
-  "title": "Sponsor a Chancellor",
-  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Sponsor a Chancellor",
-  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor",
-  "beats": [
-    {
-      "key": "appeal",
-      "at": "0:00",
-      "name": "A. The advert",
-      "blurb": "Black-and-white charity advert playing on her old TV: Crispin, sad, 'only' £100,000; his second home has no second home."
-    },
-    {
-      "key": "room",
-      "at": "0:08",
-      "name": "B. Her flat",
-      "blurb": "Pull back into colour: a freezing council flat at dusk (Jack's reference), the nan in coat and hat indoors, breath showing."
-    },
-    {
-      "key": "post",
-      "at": "0:12",
-      "name": "C. The junk mail",
-      "blurb": "The letterbox clatters; she picks up a SPONSOR A CHANCELLOR flyer, Crispin looking even sadder."
-    },
-    {
-      "key": "nan",
-      "at": "0:16",
-      "name": "D. Poor bastard",
-      "blurb": "She looks at the flyer, genuinely sorry for him: 'Poor bastard...'"
-    }
-  ],
-  "video": {
-    "model": "Omni 1.2 Flash",
-    "aspect": "9:16",
-    "mode": "Frames",
-    "duration": 8
+ "story": "short-sponsor-a-chancellor",
+ "scene": "sponsor-a-chancellor",
+ "prefix": "sac",
+ "title": "Sponsor a Chancellor",
+ "heading": "BadCode Shorts <span class=\"tri\">▲</span> Sponsor a Chancellor",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor",
+ "beats": [
+  {
+   "key": "appeal",
+   "at": "0:00",
+   "name": "A. The advert",
+   "blurb": "Black-and-white charity advert playing on her old TV: Crispin, sad, 'only' £100,000; his second home has no second home."
   },
-  "dialogue": {
-    "page": "https://claude.ai/artifact/YcJX759MtLbfgzSpxiJeKM",
-    "options": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/options.json",
-    "picked": "1D (median card and 'keep your £3' cut; hardship f)",
-    "round": 2
+  {
+   "key": "room",
+   "at": "0:08",
+   "name": "B. Her flat",
+   "blurb": "Pull back into colour: a freezing council flat at dusk (Jack's reference), the nan in coat and hat indoors, breath showing."
   },
-  "flow_project": "2ab052be-f268-47d0-8b8d-cdf772b864af",
-  "moodboard_intro": "Round 1, clean room: four beats, three different stills each. Tap This, Maybe or No on each still; leave a note per shot.",
-  "boards": {
-    "moodboard": "https://claude.ai/artifact/2zJhS2qQjLwYE89GkNBvx9",
-    "storyboard": "https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g",
-    "timeline": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE"
+  {
+   "key": "post",
+   "at": "0:12",
+   "name": "C. The junk mail",
+   "blurb": "The letterbox clatters; she picks up a SPONSOR A CHANCELLOR flyer, Crispin looking even sadder."
   },
-  "storyboard_intro": "Your four picks in order. Frames 2 and 3 also show the re-shoots with the same nan and chancellor: pick one still per frame, and one way to animate each. Notes welcome on anything.",
-  "looks": {
-    "advert": "Black-and-white charity advert",
-    "flat": "Her flat, colour, cold"
-  },
-  "cut": {
-    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/cut/edl.json",
-    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/cut/preview.mp4",
-    "script": "scripts/shorts/sponsor_chancellor_cut.py"
+  {
+   "key": "nan",
+   "at": "0:16",
+   "name": "D. Poor bastard",
+   "blurb": "She looks at the flyer, genuinely sorry for him: 'Poor bastard...'"
   }
+ ],
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "9:16",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "dialogue": {
+  "page": "https://claude.ai/artifact/YcJX759MtLbfgzSpxiJeKM",
+  "options": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/options.json",
+  "picked": "1D (median card and 'keep your £3' cut; hardship f)",
+  "round": 2
+ },
+ "flow_project": "2ab052be-f268-47d0-8b8d-cdf772b864af",
+ "moodboard_intro": "Round 1, clean room: four beats, three different stills each. Tap This, Maybe or No on each still; leave a note per shot.",
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/2zJhS2qQjLwYE89GkNBvx9",
+  "storyboard": "https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g",
+  "timeline": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE"
+ },
+ "storyboard_intro": "Your four picks in order. Frames 2 and 3 also show the re-shoots with the same nan and chancellor: pick one still per frame, and one way to animate each. Notes welcome on anything.",
+ "looks": {
+  "advert": "Black-and-white charity advert",
+  "flat": "Her flat, colour, cold"
+ },
+ "cut": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/cut/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/cut/preview.mp4",
+  "script": "scripts/shorts/sponsor_chancellor_cut.py"
+ },
+ "premiere": {
+  "current": "r5",
+  "r5": {
+   "sequence": "shorts-6-sponsor-a-chancellor-r5",
+   "guid": "1173f43b-d36b-491c-8c56-4ddd221df998",
+   "bin": "shorts-6-sponsor-a-chancellor-r5",
+   "built": "2026-11-11",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/sponsor-a-chancellor.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/cut/edl.json",
+   "what": "timeline round 5: V1 five clips, V2 overlay-720.mov (news insert, £3 band, logo), A1 narrator (6 lines), A2 nan (lip-synced), A3 effects",
+   "how": "premiere-plan.py --tag r5 + overlay row in place.js",
+   "check": {
+    "at": "2026-11-11",
+    "state": "in sync",
+    "why": "5 V1 clips, 25.46 s vs edl 25.42 (frame rounding)"
+   }
+  }
+ }
 }

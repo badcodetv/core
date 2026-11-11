@@ -22,3 +22,4 @@ Rules: clean room for prompts; never describe a cast character; no Flow speech (
 - **Voices picked (Jack):** narrator c Achernar (Belfast), nan b Vindemiatrix (Geordie). In `sound.md`. Name ruled: Crispin stays (Jack). The Achernar casting take is the narration master; no re-render needed.
 - **Storyboard r1:** https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g (pick a still + animation option per frame). Motion prompts are written clean-room after the picks.
 - **Rough cut 1 / timeline page:** https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE (26.2 s). Cut script `scripts/shorts/sponsor_chancellor_cut.py`. Next: Jack's notes.
+- **In Premiere:** `shorts-6-sponsor-a-chancellor-r5` (sponsor-a-chancellor.prproj). Left: Jack to call it done (freeze), export, delivery QC, check the ITV headline in a browser, lip sync of "-stard" (LatentSync offered).
