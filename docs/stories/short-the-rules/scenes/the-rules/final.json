@@ -1,0 +1,642 @@
+{
+ "schema": "badcode.final/1",
+ "story": "short-the-rules",
+ "scene": "the-rules",
+ "sequence": "short-the-rules-1-rules-r5",
+ "frozen": "2026-11-11T14:53:07+00:00",
+ "note": "All right, Claude, it's a cut. This is brilliant… Everything in Premiere is exactly how it should be.",
+ "edl": "/mnt/d/badcode-videos/shorts/the-rules/cut/edl.json",
+ "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/preview.mp4",
+ "total": 27.583333333333332,
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7",
+  "timeline": "https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E",
+  "storyboard": "https://claude.ai/artifact/BFVqeT9nqpTH8d6R3cCUuz"
+ },
+ "words": {},
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 2.6666666666666665,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-r01-ST3-a-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-r01-ST3-a-a.mp4",
+     "made": "2026-11-11T11:04:48+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The five masked figures stand at the foot of the towering paper stack, facing the camera, almost motionless: shoulders rise and fall with breath, one shifts his weight from foot to foot, fingers twitch at their sides. Every balaclava keeps facing the camera the whole time, so its white ring and the small red triangle inside it stay clearly visible; nobody turns their head away. Overhead one fluorescent tube flickers and buzzes. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST3-a-a.jpg",
+     "why": "Re-roll of 01: heads turned up and the triangles vanished (Kai: re-roll, 2026-11-11)",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST3-a-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "r01",
+      "frame": 1,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T10:51:26.106Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST3-a-a.jpg",
+     "made": "2026-11-10T18:49:08.027Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image, change only one thing: on each balaclava, delete any extra red triangle that sits on the crown of the head or on top of the white rope ring, so that every mask has exactly ONE red triangle, the one inside its white ring at the upper right, pointing down. Where a stray triangle is removed, continue the plain knit of that mask. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition.",
+     "model": "Nano Banana 2",
+     "parent": "/home/kai/.cache/badcode-refs/ST2-a-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/ST2-a-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "cceadf53-9aec-41bd-9acc-c5c8a1dbebf6"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-refs/ST2-a-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 2.6666666666666665,
+   "dur": 1.7083333333333333,
+   "beat": "1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b1-BD5-a-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b1-BD5-a-a.mp4",
+     "made": "2026-11-11T10:50:42+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Light drizzle falls past the shuttered shops onto the wet pavement; in the bank doorway the person asleep on the cardboard stirs slightly and pulls the sleeping bag closer, then lies still. The streetlights hold steady. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BD5-a-a.jpg",
+     "why": "Bed beat (Kai pick BD5-a-a): 'We can't afford a bed for you'",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BD5-a-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "b1",
+      "frame": 6,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T10:37:26.644Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BD5-a-a.jpg",
+     "made": "2026-11-11T10:18:41.614Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "Night on a British high street, camera low at pavement height looking along a row of shuttered shops. In the deep recessed doorway of a closed bank, a person lies asleep on flattened cardboard in a worn sleeping bag, hood up, face to the wall, shoes tucked beside them, a carrier bag of belongings as a pillow. A second sleeper further down the row in the next doorway. Wet paving catching orange sodium streetlight, a cold greenish cast in the shadows, light drizzle. Quiet, still, treated with care and dignity. Ultra-wide lens close to the ground, deep focus, documentary realism, fine digital grain. Tall portrait frame.",
+     "model": "Nano Banana 2.1",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "e65320a6-f734-4103-9b62-86460f2020af"
+    }
+   ]
+  },
+  {
+   "t": 4.375,
+   "dur": 3.083333333333333,
+   "beat": "2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b2-PU5-a-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b2-PU5-a-b.mp4",
+     "made": "2026-11-11T10:50:42+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The worn hands hold the open purse over the counter and tip it slightly, a couple of copper coins slide to one side; the fingers hesitate, then close the purse slowly. The shopping on the conveyor stays still. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PU5-a-b.jpg",
+     "why": "Purse beat (Kai pick PU5-a-b): 'The purse is far too thin'",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PU5-a-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "b2",
+      "frame": 7,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T10:37:50.962Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PU5-a-b.jpg",
+     "made": "2026-11-11T10:19:34.861Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "Close-up at a supermarket checkout under hard fluorescent light: a pair of worn, cold hands with chipped nails opens a cheap, scuffed purse over the counter, and it is empty except for a few copper coins in the bottom. Beside it on the conveyor sit a loaf of white bread, a pint of milk and a tin of beans, the only shopping. The purse is in sharp focus, the rest falls softly away; the hands hesitate. Cold greenish fluorescent cast, documentary realism, fine digital grain. No faces, no readable text anywhere. Tall portrait frame.",
+     "model": "Nano Banana 2.1",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "085ba7f8-1248-4ace-a47d-6410b4e94888"
+    }
+   ]
+  },
+  {
+   "t": 7.458333333333333,
+   "dur": 2.875,
+   "beat": "3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-02-IS4-a-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-02-IS4-a-b.mp4",
+     "made": "2026-11-11T10:35:37+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The striped hammock rocks gently, and the filing cabinet's top drawer slowly slides open a little further, contented, as if stretching in the sun; the palm fronds sway, the sea laps the sand. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/IS4-a-b.jpg",
+     "why": "Islands, option b (the drawer sighs)",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/IS4-a-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "02",
+      "frame": 2,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T10:21:43.852Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/IS4-a-b.jpg",
+     "made": "2026-11-10T19:01:16.799Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "Bright tropical midday on a tiny private island: white sand, turquoise shallows, a single leaning palm. Strung between the palm and a post, a striped hammock, and lying in it, fast asleep in the sun, a grey four-drawer steel office filing cabinet, the kind from a council archive, its top drawer slightly open with a fat folder labelled PROFITS peeking out. A pair of sunglasses rests on top of the cabinet, a cocktail with a paper umbrella in the sand beside it. Nobody else anywhere. Shot like a glossy travel-brochure photo, warm saturated colour, crisp sunlight, a deliberately sunny break from a cold grey film. Wide lens from low on the sand, the cabinet sharp in the middle of the frame, clear empty blue sky across the top third for on-screen text. Tall portrait frame.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "d5c21445-1f35-4e83-97c5-1107f71f59bf"
+    }
+   ]
+  },
+  {
+   "t": 10.333333333333332,
+   "dur": 5.458333333333333,
+   "beat": "4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b3-BI5-a-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b3-BI5-a-a.mp4",
+     "made": "2026-11-11T10:50:42+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Rain falls steadily in the alley, rippling the puddles on the tarmac; the half-open lid of the green wheelie bin rocks a little in the wind; the person asleep on the cardboard against the bin stays still, breathing slowly. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BI5-a-a.jpg",
+     "why": "Bin beat (Kai pick BI5-a-a): 'But you will sleep in a bin'",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BI5-a-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "b3",
+      "frame": 8,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T10:38:16.028Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/BI5-a-a.jpg",
+     "made": "2026-11-11T10:20:18.754Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "Night, an alley behind shops, camera at ground level: someone asleep on flattened cardboard pressed right up against a big green council wheelie bin, lid half open, black bin bags piled beside them, a paper cup and a rucksack by their head, hood up, face turned away. Rain-wet tarmac catching orange sodium streetlight, cold greenish shadows. Still, quiet, shown with care and dignity. Very wide lens right down by the tarmac, the bin towering over the sleeper, deep focus, documentary realism, fine digital grain. Tall portrait frame.",
+     "model": "Nano Banana 2.1",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "d444eb09-ca97-4ede-bd38-3f65d6cd4599"
+    }
+   ]
+  },
+  {
+   "t": 15.791666666666666,
+   "dur": 2.875,
+   "beat": "5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-r04a-TE4-a-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-r04a-TE4-a-a.mp4",
+     "made": "2026-11-11T11:04:48+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The masked gang face the camera and go wild, chest-on to the lens: ripping sheets from the stack and tearing them in half at chest height, hurling the pieces straight up so torn paper rains down around them like a blizzard, one kicks the cardboard box across the floor. Every balaclava keeps facing the camera the whole time, so its white ring and the small red triangle inside it stay clearly visible; nobody turns their head away. Fast, frantic, joyful energy, shot at 24fps with a 180-degree shutter so fast hands and paper smear with motion blur. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/TE4-a-a.jpg",
+     "why": "Re-roll of 04a: two masks lost their triangles (Kai: re-roll, 2026-11-11)",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/TE4-a-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "r04a",
+      "frame": 4,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T10:51:49.351Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/TE4-a-a.jpg",
+     "made": "2026-11-10T18:55:37.606Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Same council archive basement, same cold stuttering fluorescent light, same fine grain and documentary realism as the first image, but a new shot: the gang tearing up THE RULES. The paper column is coming apart; four of them rip handfuls of A4 sheets in half, arms high, torn pages flying and drifting through the air like snow, littering the concrete floor. Camera stays low on the floor looking up, ultra-wide, steep converging shelving. Every balaclava is the design of the mask in the second image: ribbed knit, braided white rope ring round the face, one solid red felt triangle inside the ring at its upper right, pointing down. Each mask its own colour (sage, rust, navy, charcoal, mustard), modern workwear (hoodie, puffer, hi-vis vest, work coat, bomber), gloves, no skin showing. Tall portrait frame.",
+     "model": "Nano Banana 2",
+     "parent": "/home/kai/.cache/badcode-refs/ST3-a-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/ST3-a-a.jpg",
+       "/home/kai/.cache/badcode-refs/br-mask-y03.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "b95e9f1e-280a-414e-8bc8-499600a09056"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-refs/ST3-a-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 18.666666666666664,
+   "dur": 2.833333333333333,
+   "beat": "6",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-h1-HR7-d-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-h1-HR7-d-b.mp4",
+     "made": "2026-11-11T13:09:39+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Pure chaos: the two masked figures nearest the lens rip fat wads of paper in half again and again and fling the shreds straight at the camera, lunging toward it; above them the two hanging off the top racks swing and kick, tearing files loose so sheets cascade down, and the one behind hauls himself up the shelving. Paper fills the air under the flickering tubes. All five keep their masked faces turned toward the lens throughout, white rings and little red triangles clearly visible. Frantic, joyful, shot at 24fps with a 180-degree shutter so hands and flying paper blur. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR7-d-b.jpg",
+     "why": "Hang-and-rip, the gap between climb and pen (Kai 2026-11-11: 'two of them right up in the camera… could we animate it?')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR7-d-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "h1",
+      "frame": 9,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T13:08:38.411Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR7-d-b.jpg",
+     "made": "2026-11-11T13:06:21.961Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "In the first picture, the rust knitted mask closest to the lens (bottom left) and the navy mask behind it (middle, by the shelves) both show only a faint smudge inside their white rings. Replace each smudge with a crisp, bright red felt triangle the same size and place as on the hi-vis figure's black mask: upper right inside the ring, point down. Change nothing else at all.",
+     "model": "Nano Banana 2.1",
+     "parent": "/home/kai/.cache/badcode-refs/HR6-d-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/HR6-d-a.jpg",
+       "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "abe04467-252e-438e-a8d9-d2fa8fa4fc11"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-refs/HR6-d-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 21.5,
+   "dur": 2.9166666666666665,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-c1-CL3-c-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-c1-CL3-c-a.mp4",
+     "made": "2026-11-11T11:43:09+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The masked gang scramble higher up the steel shelving like it's a climbing frame, wild and gleeful: the one hanging by one arm swings and kicks files off the top shelf, the climber with the box flings it so it bursts open mid-air, the others rake whole rows of folders off the racks so paper pours down in sheets and flutters through the fluorescent light onto the heap on the floor. They keep their masked faces turned toward the lens as they go, white rings and little red triangles clear. Fast, chaotic, joyful, shot at 24fps with a 180-degree shutter so flying paper and swinging limbs blur naturally. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/CL3-c-a.jpg",
+     "why": "Climb beat (Kai 2026-11-11: 'climbing up the walls and tearing everything apart'; still CL3-c-a: 'that's it')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/CL3-c-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "c1",
+      "frame": 8,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T11:42:08.941Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/CL3-c-a.jpg",
+     "made": "2026-11-11T11:34:51.638Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Touch up the first picture only at the masks. On the rust-brown balaclava at the bottom left, delete the stray red patch that sits outside the white ring, leaving one crisp red triangle inside the ring at its upper right, tip down. On the navy hi-vis climber and the charcoal climber, make that little red triangle bolder and sharper so it reads clearly, the same as the mask in the second picture. Nothing else changes: same people, poses, paper, shelves, light and grain.",
+     "model": "Nano Banana 2.1",
+     "parent": "/home/kai/.cache/badcode-refs/CL2-a-c.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/CL2-a-c.jpg",
+       "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "c51c3353-a554-433e-9e7a-050289d7bd47"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-refs/CL2-a-c.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 24.416666666666664,
+   "dur": 3.1666666666666665,
+   "beat": "8",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-05-PE4-b-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-05-PE4-b-a.mp4",
+     "made": "2026-11-11T10:35:37+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Torn paper drifts slowly down and settles around him; the navy-masked figure steps half a pace forward and pushes the blank page and the pen a little closer toward the camera, then holds perfectly still, offering them. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE4-b-a.jpg",
+     "why": "Pen, option a",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE4-b-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/short-the-rules/scenes/the-rules",
+      "key": "05",
+      "frame": 5,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T10:22:58.032Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE4-b-a.jpg",
+     "made": "2026-11-10T19:56:31+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "flow",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE5-a-a.jpg",
+     "why": "Same file as PE5-a-a (renamed onto the round-4 board)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE5-a-a.jpg",
+     "made": "2026-11-10T18:59:28.685Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image, change only the red felt triangle on the balaclava so it matches the red triangle in the second image, the logo: turn it so it points straight DOWN, with its flat edge across the top and its point at the bottom, and move it a little higher inside the white rope ring, to the ring's upper right at about 2 o'clock, the same size relative to the ring as in the logo, with softly rounded corners. Exactly one triangle. Leave everything else in the first image as it is: the navy knit, the rope ring, the hi-vis, the gloves, the page and pen, the basement, the light and the grain.",
+     "model": "Nano Banana 2",
+     "parent": "/home/kai/.cache/badcode-refs/PE4-a-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/PE4-a-a.jpg",
+       "/home/kai/.cache/badcode-refs/logo.png"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "21724897-9150-41e7-84e9-f75e869389c9"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-refs/PE4-a-a.jpg",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "mus-hymn",
+   "t": 0.0,
+   "dur": 16.5,
+   "what": "The hymn (whole school + upright piano), fading out from 14.38 s",
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/music/4f37afd8-16ec-4b66-9885-54030500a37e-4f37afd8.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/music/4f37afd8-16ec-4b66-9885-54030500a37e-4f37afd8.wav",
+     "made": "2026-11-10T19:51:13.273Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "4f37afd8-16ec-4b66-9885-54030500a37e",
+     "inputs": {
+      "title": "4f37afd8-16ec-4b66-9885-54030500a37e",
+      "song": "https://suno.com/song/4f37afd8-16ec-4b66-9885-54030500a37e"
+     },
+     "settings": {
+      "durationSec": 16.52
+     }
+    }
+   ]
+  },
+  {
+   "stem": "mus-drop",
+   "t": 14.833333333333332,
+   "dur": 12.75,
+   "what": "Concrete-stairwell drop (dnb-r3) from 22.17 s of the take, fading in over 1.25 s, out with the pen",
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/music/rules-r3-concrete-stairwell-distortion-v6-w75-feb1a0c7.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/shorts/the-rules/music/rules-r3-concrete-stairwell-distortion-v6-w75-feb1a0c7.wav",
+     "made": "2026-11-11T14:31:21.371Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "feb1a0c7-b17d-46e9-bb56-193c6c7882a9",
+     "inputs": {
+      "title": "Rules r3-concrete-stairwell-distortion-v6-w75",
+      "song": "https://suno.com/song/feb1a0c7-b17d-46e9-bb56-193c6c7882a9"
+     },
+     "settings": {
+      "durationSec": 60
+     }
+    }
+   ]
+  }
+ ],
+ "no_card": []
+}

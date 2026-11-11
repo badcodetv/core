@@ -65,6 +65,7 @@ upload from.
 | Audio | AAC-LC 48 kHz stereo, 320 kbps; −14 LUFS, true peak below −1 dBFS | **(official)** format; the loudness is our house rule **(repo)** |
 | Premiere preset | H.264 "Match Source – High bitrate", Maximum Render Quality on | Keeps the portrait frame |
 | Gate | `scripts/delivery-qc.sh master.mp4 shorts` | Burnt-in text can give a false luma FAIL (shorts-factory §2) |
+| Colour tags | Premiere leaves them off: add BT.709 / limited with `-c copy -bsf:v h264_metadata=…` (new-short, "the handover") | No re-encode. The Rules (2026-11-11): Match Source came out at 17 Mbps, fine; after tagging the QC still said "content is full range" because the 150% upscale rings thin edges to 0 and 250. YLOW/YHIGH sat at 27–223, so it was a false alarm, and its "fix" would have washed the picture out |
 
 Export once. Every platform re-encodes the file, so the master is the only clean copy. Keep it under
 `<media>/renders/`.

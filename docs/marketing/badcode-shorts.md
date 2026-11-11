@@ -51,7 +51,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 22. 📦 **Meal Deal Archaeology:** a museum glass case, the price crossed out ten times. **8s.**
 23. 🎖️ **Stiff Upper Lip:** a 1950s film, a dad teaching his boy "Sad: stare at the wall. Love: a handshake." (9) → hard cut to the same boy at 75, doing the same lesson with his grandkid (6) → the button, ⬜ Jack (4). **19s.**
 
-24. 📜 **The Rules** *(Kai: BUILDING)*: the gang stares up at a huge stack of paper labelled THE RULES (5) → "If the rules were working… let's look out the window." Outside: chaos (6) → back inside, they tear the rules up (5), with music. **~16s.**
+24. 📜 **The Rules** *(Kai: ✅ CUT 2026-11-11, 27.6 s; not yet posted)*: the gang stares up at a huge stack of paper labelled THE RULES (5) → "If the rules were working… let's look out the window." Outside: chaos (6) → back inside, they tear the rules up (5), with music. **~16s.**
 25. 🚔 **Call the Police:** "It's a robbery!" "Where?" They point out of the window (6) → "That's not a robbery, that's the economy." (4) → the song's hook (3). **13s.**
 26. 🕳️ **The Basement:** the tunnel breaks into the vault (4) → a printer running, a suit feeding it: "Can I help you?" (5) → they back into the hole (3). **12s.**
 27. 🍫 **The Fredo Job:** heist planning montage (6) → the target: a 10p Fredo (3) → "It was 10p when we started planning." (4) **13s.**
@@ -214,7 +214,8 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 
 **The engine:** anyone in a BadCode balaclava *is* BadCode (`docs/brand/README.md`), so the gang are never the villains. They are professional thieves from the future, appalled at how much theft is legal. Every gang short is a version of *the robbers get out-robbed by the system.* A recurring cast, not a format. Their look comes from the Bank Robbery music video (Colour Noir, `docs/stories/bank-robbery/songs/mv-colour-noir/`, and `mv-gang/`). **Idea (not ruled):** close each gang short on three seconds of the Bank Robbery song's hook ("Robbery, robbery! Call the police!"), so every one points at the music video.
 
-### 24. 📜 The Rules *(Kai: BUILDING)*
+### 24. 📜 The Rules *(Kai: ✅ CUT 2026-11-11)*
+**Cut:** Premiere `the-rules.prproj` sequence `short-the-rules-1-rules-r3` (27.6 s, 9:16, 24 fps) · timeline https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E · clips https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY · master `renders/the-rules-master-r3-tagged.mp4` (Kai's machine) · Drive `Shorts/The Rules`. Owed before posting: the tax-haven overlay fact check; the caption via `chief-of-staff`.
 **Project:** `short-the-rules`, [`docs/stories/short-the-rules/`](../stories/short-the-rules/README.md) (made with the `new-short` skill).
 **Kai's words:** "There's a lot of rules and a lot of them are sensible. But at the same time, a lot of them are not sensible. And how do we know, how do we measure this? Let's look out the window. Is everything working?"
 **What happens:** the gang sits looking up at a massive stack of paper labelled THE RULES. Caption: ARE THE RULES WORKING? "Let's look out the window." Outside: utter chaos. Back inside, the gang tears up the rules.
