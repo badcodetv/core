@@ -6,3 +6,4 @@
 - **2026-11-11, Jack, mood board r2:** lid = LD2-b-a. Stills locked: ST1-a, LD2-b-a, IN1-b. Storyboard r1 https://claude.ai/artifact/SjZ7mWHimfBDJxgboYgLTV.
 - **2026-11-11, Jack, storyboard r1:** 1a, 2b, 3a. Motion prompts: clean room, one sealed writer (cleanroom/brief-clips-r1.md).
 - **2026-11-11, clips + rough cut 1:** 01, 02, 03 all passed first time (runner named them by job). Cut 12 s, logo = docs/brand/logo/badcode-stacked-reversed-2400.png in the lid panel. Timeline r1 https://claude.ai/artifact/1GKJTsmFGFnEi6roVCsivt.
+- **2026-11-11, Jack:** "please put it in premiere" → `shorts-33-signs-r1` in signs.prproj (12 s; pushes as keyframes; logo overlay on V2).

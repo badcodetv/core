@@ -66,5 +66,11 @@
   "url": "https://claude.ai/artifact/1GKJTsmFGFnEi6roVCsivt",
   "what": "rough cut 1 (12 s): 3 clips, pushes, real logo flicker-on, street sound + neon hum",
   "rebuild": "python3 scripts/shorts/signs_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-signs/scenes/signs /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/signs-timeline"
+ },
+ {
+  "at": "2026-11-11T16:08:31+00:00",
+  "stage": "premiere",
+  "round": 1,
+  "what": "built into Premiere: shorts-33-signs-r1 in signs.prproj"
  }
 ]
