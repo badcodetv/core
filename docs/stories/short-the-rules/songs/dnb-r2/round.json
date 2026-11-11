@@ -1,0 +1,54 @@
+[
+  {
+    "name": "reese-hardstep-terrorist",
+    "style": "Mid-90s dark hardstep jungle instrumental, 1994 London warehouse, tipping into early jump-up, 165 BPM. The lead is a growling overdriven Reese bassline: two detuned saw basses phasing against each other in the low mids, crawling through a slow menacing four-note riff that snarls and bends. Under it, the Amen break thrashed thick and heavy with a hard kick doubled beneath, played almost straight for the first bars, then edited and rolling. No lead synths, no rave stabs, no pads, no strings, no bleeps: nothing high-pitched above the cymbals. Full force on the very first downbeat, no intro, no build. Dark, dry, menacing, heavyweight dubplate pressure.",
+    "exclude": "synth lead, rave stabs, hoover, pads, strings, piano, bleeps, riser, build-up, intro",
+    "lyrics": "[Instrumental]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 75,
+    "maxMode": false
+  },
+  {
+    "name": "ganja-dusty-jump-up",
+    "style": "mid-90s Ganja Records jump-up jungle instrumental, 168 BPM, no intro: full drums and bass from beat one. A crackly Amen break sampled off worn vinyl, chopped into cheeky, strutting hip-hop combinations, a live funk drummer's swing, barely a drum machine in earshot. One short brassy horn stab off a 70s funk record, a fat bass-guitar lick lifted from an old LP. Bouncy, wobbling mid-range jump-up bassline built to make a dance skank, dub-style space and echo between the hits. Crate-digger mixdown off dusty wax: lo-fi, punchy, swaggering, playful menace, bruk-out bounce. Un-electronic, nothing synthetic on top, loops cleanly.",
+    "exclude": "synth lead, supersaw, rave stabs, hoover, pads, arpeggio, trance, EDM, neurofunk, dubstep, build-up",
+    "lyrics": "[Instrumental]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 90,
+    "maxMode": false
+  },
+  {
+    "name": "two-instruments-only",
+    "style": "Instrumental, 167 BPM, a bare two-element track: one breakbeat and one sub bass, nothing more. The break is the Amen sample, pitched up and stretched so its hits ring with a tinny, grainy metal edge; it rolls nonstop from bar one, packed with soft ghost snares between the backbeats, its snare runs skid, swerve and stutter across the bar line, and every fourth bar it is cut up and re-sequenced into a fresh fill before snapping back. Under it, a deep round sine sub that speaks only when the kick hits and goes quiet in between, leaving holes so each drum hit punches through. Nothing lives above the hi-hats: no melody, no chords, no pads, no keys, no stabs, no leads. Pressed like a one-off dubplate for a sound system rig: dry, upfront, chest-rattling low end, a little crackle. Locked at full force, identical weight bar after bar, loops cleanly at any edit point.",
+    "exclude": "vocals, MC, rapping, vocal chops, singing, choir, spoken word, synth, synthesizer, pad, piano, strings, rave stab, hoover, lead melody, arpeggio, riser, build-up, intro, breakdown, four-on-the-floor",
+    "lyrics": "[Instrumental]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 85,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": false
+  },
+  {
+    "name": "ragga-soundsystem-dub",
+    "style": "Ragga jungle instrumental from 1995, 162 BPM, bass-led dub pressure. A bubbling reggae bass riff carries the tune, phrased at half the drum tempo the way a roots bass player would play it: fat round notes, bounce, gaps, slides, sudden silences. Beneath it the Amen break is sliced and re-sequenced fast, rough and saturated, with a heavy sub kick; the first downbeat drops straight in on a deep bass plunge. Mixed live on a dub desk: one snare at a time flung into a tape delay that trails off, spring reverb crashes, the drums cut out so the bass stands alone, then the break slams back. Night-time Hackney sound-system dance, speaker boxes shaking the floor, dread and dark and warm. Drums, bass and echo only.",
+    "exclude": "vocals, MC, vocal samples, synth lead, rave stabs, keys, piano, pads, siren, airhorn",
+    "lyrics": "[Instrumental]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": false
+  }
+]

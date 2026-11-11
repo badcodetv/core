@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-bed.wav",
+ "made": "2026-11-11T11:33:50+00:00",
+ "by": "claude",
+ "kind": "sfx",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+ "why": "room bed under the muted minister clip",
+ "prompt": "clip 04's own audio from 3.7 s (after the speech), 4.3 s looped to 8.04 s, -8 dB, 0.3 s fade in"
+}

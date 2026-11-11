@@ -140,3 +140,29 @@ reference itself: Flow returned an input, filed as `.STRAY-maskref`), second pas
 zoomed check** (five masks, one triangle each, inside the ring, pointing down); offered with `CL1-a-b` (unfixed, busier)
 on the clips page v4, awaiting Kai's approval before any video credit.
 Kai: *"I like the CL3CA, that's it."* → `CL3-c-a` approved; clip job `c1` (6 s), placed after the riot, before the pen.
+
+## 2026-11-11: Kai's Premiere edit; a hang-and-rip shot for the gap
+
+Kai cut `short-the-rules-1-rules-r2` by hand in Premiere (dump `feedback/premiere-r2-kai/state.json`): 27.2 s, every
+shot tighter, the drop landing on the riot at 15.79 s from 11.42 s into the take, running under the pen; a gap
+21.5–24.29 s. Kai: *"we need to get even more mental… a scene in between them ripping everything up and then them on
+the shelves… two of them hanging from the shelves and the other ones just ripping more paper up… one more clip to go in
+between [the climb and the pen]"*, and *"the changes in Premiere… get back into the timeline"*. Carried back as timeline
+round 3 (cut script SHOTS in frames). Stills: `HR1-a-a/b` (edit of CL3-c-a + mask ref; b lost the rings), mask fix
+`HR2-a-a/b`, both pass the zoomed check (seven masks); on the clips page v6 awaiting approval.
+Kai: *"that's perfect… although I'm worried that we've introduced a new member… There's only five in the other shots…
+there's now seven… can we recut it just with five people?"* → `HR3-a-a/b` (HR2-a-a with the maroon and green floor
+figures removed; ref CL3-c-a for the five), then a triangle touch-up on rust and navy: **`HR4-a-a`** (five people,
+every mask passes zoomed). On the clips page v8 for approval. Rule kept for this short: **the gang is five** (sage/grey
+hoodie, mustard/olive bomber, navy/hi-vis, rust/black puffer, charcoal/dark coat).
+Kai: *"HR4A-A looks good. I think maybe we should have two of them right up in the camera and the other three up on the
+shelves… I quite like HR2-A-B and HR2-A-A. There's just too many people… a couple of the people right up in the face of
+the camera and a couple on the side. Could we try that just with the right number of people?"* → `HR5-a-a…d` (from
+HR2-a-a + CL3-c-a for the five): a had six, b lost the rings, c/d five. d + two triangle passes → **`HR7-d-b`**
+(rust and hi-vis in the lens, grey and mustard on the racks, navy reaching up behind; the mustard triangle faint).
+On the clips page v9 for approval.
+
+Kai, same message, on the music: the drop gets re-made, *"a much more A-men jump-up break… too many high-pitched
+synthesizers… A mid-90s old-school A-men jungle would be perfect. I'd like to do a couple of iterations"*; *"the
+nursery rhyme part is perfect right now"*. Round `../../songs/dnb-r2`.
+Kai: *"could we animate it? … let's fill the gap in Premiere"* → `HR7-d-b` approved; clip job `h1` (4 s).

@@ -40,11 +40,17 @@ upload from.
     New Sequence.
   - From code, call `premiere_create_sequence({ name, preset: "<that file>" })`, then read the sequence back:
     1080×1920, `frameRate: 24`.
-  - ⚠️ The preset was written 2026-11-11 and has **not yet been opened in Premiere**. Until it has, the fallback is to
-    build from a 1080×1920 24 fps black slug clip (`docs/premiere/api-notes.md`, 2026-10-17).
+  - ✅ Proven 2026-11-11 on The Rules: the sequence read back 1080×1920, `frameRate: 24`, timebase 10584000000.
 - **Name:** `short-<slug>-1-<scene>-r<N>`, the same name the timeline page uses. The page and Premiere move together
   (scene-timeline, "No split brain").
-- **Clips are 720×1280**, which is what Omni makes. Scale them to fill the frame: Scale to Frame Size, or 150%.
+- **Clips are 720×1280**, which is what Omni makes. Set Motion → Scale to **150** on every clip, or the picture sits small in the middle of a white frame. The Rules build does this in one eval.
+- **Build it from the timeline page's edl:**
+  1. `scripts/scene/premiere-plan.py <edl> <plan> --tag rN --seq <name>` writes the placement script.
+  2. Video goes on V1 as silent copies (`-noaudio.mp4`), using the original Flow clips from frame 0 so there is spare footage for trims.
+  3. Music goes on A1. A drop is placed as the whole take, so Kai can slide it to the real drop point.
+  4. Read the sequence back; snap rounding gaps of one frame.
+  - Worked example: `short-the-rules` `scene.json` → `premiere.r2`.
+  - `premiere-check.py` needs a story `timelines.json`, which a short doesn't have yet, so compare by reading the sequence back.
 - **Guides:** turn on the Program Monitor's wrench → Safe Margins **(official)**. For the real platform box (§3), put
   a PNG guide on the top track and switch it off before export.
 

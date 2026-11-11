@@ -1,0 +1,13 @@
+{
+  "name": "two-instruments-only",
+  "style": "Instrumental, 168 BPM, built from exactly two parts and nothing else. Part one: the Amen, Brother drum break, sped up and stretched until it shimmers with gritty metallic grain, rolling hard from the very first downbeat, crowded with quiet in-between snare touches, its snare rolls skidding, swerving and stuttering into the next bar, the loop resliced and rearranged at the close of every fourth bar. Part two: a deep pure sine sub that sounds only when the kick lands and falls silent between hits, so every drum stays clear. Above the hi-hats the spectrum is empty: no melody, no chords, no pads, no keys, no stabs, no leads. Mixed like a one-off acetate cut for a towering speaker stack: dry, close, heavy in the chest, dusty vinyl edge. Full pressure from beat one, the same weight every bar, cuttable anywhere.",
+  "exclude": "vocals, MC, rapping, vocal chops, singing, choir, spoken word, synth, synthesizer, pad, piano, strings, rave stab, hoover, lead melody, arpeggio, riser, build-up, intro, breakdown, four-on-the-floor",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 85,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false
+}

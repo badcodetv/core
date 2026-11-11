@@ -1,7 +1,7 @@
 ---
 title: Education
 line: Keep the bottom rung on the ladder, and make whoever saws it off pay for a new one.
-policies: education/the-rung-fund, education/paid-retraining, education/keep-the-plan
+policies: education/the-rung-fund, education/classroom-tech, education/paid-retraining, education/keep-the-plan
 ---
 ## Position
 

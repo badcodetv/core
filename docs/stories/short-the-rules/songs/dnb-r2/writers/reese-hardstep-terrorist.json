@@ -1,0 +1,13 @@
+{
+  "name": "reese-hardstep-terrorist",
+  "style": "Mid-90s dark hardstep jungle instrumental, 1994 London warehouse, tipping into early jump-up, 165 BPM. The lead is a growling overdriven Reese bassline: two detuned saw basses phasing against each other in the low mids, crawling through a slow menacing four-note riff that snarls and bends. Under it, the Amen break thrashed thick and heavy with a hard kick doubled beneath, played almost straight for the first bars, then edited and rolling. No lead synths, no rave stabs, no pads, no strings, no bleeps: nothing high-pitched above the cymbals. Full force on the very first downbeat, no intro, no build. Dark, dry, menacing, heavyweight dubplate pressure.",
+  "exclude": "synth lead, rave stabs, hoover, pads, strings, piano, bleeps, riser, build-up, intro",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 75,
+  "maxMode": false
+}

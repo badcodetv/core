@@ -1,0 +1,207 @@
+{
+ "sequence": "shorts-priority-lane-r1",
+ "title": "Priority Lane Timeline",
+ "heading": "BadCode Shorts ▲ Priority Lane, rough cut 1",
+ "intro": "All five shots with the picked voices (reporter: Enceladus; minister: Orus, lip-synced). Note anything: a beat, a shot, a line, a sound, or a single frame.",
+ "fps": 24,
+ "total": 21.86,
+ "beats": [
+  {
+   "id": "outside",
+   "title": "The ambulance is held",
+   "start": 0.0,
+   "dur": 3.0,
+   "see": "The junction: the outrider holds the ambulance at the red light while the motorcade glides through.",
+   "lines": []
+  },
+  {
+   "id": "ambulance",
+   "title": "Inside the ambulance",
+   "start": 3.0,
+   "dur": 2.5,
+   "see": "Inside the ambulance: nobody moves, the light stays red.",
+   "lines": []
+  },
+  {
+   "id": "reporter",
+   "title": "The BadCode reporter",
+   "start": 5.5,
+   "dur": 6.15,
+   "see": "The BadCode reporter, straight to camera, the motorcade behind him.",
+   "lines": [
+    {
+     "i": 0,
+     "who": "reporter",
+     "name": "Reporter",
+     "t": 5.9,
+     "dur": 5.4,
+     "text": "Traffic is being managed, to keep an important journey moving.",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "minister",
+   "title": "The minister",
+   "start": 11.65,
+   "dur": 3.6999999999999997,
+   "see": "The minister in the back of the car, furious, on the phone (lip-synced).",
+   "lines": [
+    {
+     "i": 0,
+     "who": "minister",
+     "name": "Minister",
+     "t": 12.01,
+     "dur": 2.75,
+     "text": "I said raspberry-shaped hors d'oeuvres!",
+     "by": "jack"
+    }
+   ]
+  },
+  {
+   "id": "button",
+   "title": "The button",
+   "start": 15.35,
+   "dur": 6.51,
+   "see": "Back to the reporter as the ambulance finally pulls away.",
+   "lines": [
+    {
+     "i": 0,
+     "who": "reporter",
+     "name": "Reporter",
+     "t": 15.75,
+     "dur": 5.11,
+     "text": "A politician blocking the path of an ambulance. Poetic, really...",
+     "by": "jack"
+    }
+   ]
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4",
+   "in": 0.5,
+   "start": 0.0,
+   "dur": 3.0,
+   "beat": "outside",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4",
+   "in": 0.5,
+   "start": 3.0,
+   "dur": 2.5,
+   "beat": "ambulance",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+   "in": 0.0,
+   "start": 5.5,
+   "dur": 6.15,
+   "beat": "reporter",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+   "in": 0.35,
+   "start": 11.65,
+   "dur": 3.6999999999999997,
+   "beat": "minister",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4",
+   "in": 1.2,
+   "start": 15.35,
+   "dur": 6.51,
+   "beat": "button",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4",
+   "looped": false
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "vox-reporter",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/vox-reporter.wav"
+  },
+  {
+   "track": "A2",
+   "name": "vox-minister",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/vox-minister.wav"
+  },
+  {
+   "track": "A3",
+   "name": "sfx-world",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/sfx-world.wav"
+  }
+ ],
+ "events": [
+  {
+   "stem": "vox-reporter",
+   "t": 5.9,
+   "dur": 5.4,
+   "what": "reporter line 1",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav"
+  },
+  {
+   "stem": "vox-minister",
+   "t": 12.01,
+   "dur": 2.75,
+   "what": "minister line (lip-synced)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-minister-dub.wav"
+  },
+  {
+   "stem": "vox-reporter",
+   "t": 15.75,
+   "dur": 5.11,
+   "what": "reporter line 2 (the button)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav"
+  },
+  {
+   "stem": "sfx-world",
+   "t": 0.0,
+   "dur": 3.0,
+   "what": "outside: clip's own ambience",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4"
+  },
+  {
+   "stem": "sfx-world",
+   "t": 3.0,
+   "dur": 2.5,
+   "what": "ambulance: clip's own ambience",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4"
+  },
+  {
+   "stem": "sfx-world",
+   "t": 5.5,
+   "dur": 6.15,
+   "what": "reporter: clip's own ambience",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4"
+  },
+  {
+   "stem": "sfx-world",
+   "t": 11.65,
+   "dur": 3.6999999999999997,
+   "what": "minister: room bed",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-bed.wav"
+  },
+  {
+   "stem": "sfx-world",
+   "t": 15.35,
+   "dur": 6.51,
+   "what": "button: clip's own ambience",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4"
+  }
+ ],
+ "flags": [
+  "Runs 21.9 s, a little over the 20 s target: the reporter reads slowly (line 1 is 5.3 s). Trim or re-voice brisker if it drags.",
+  "Minister line is the picked take sped x1.26 to fit the mouth; unheard by a human yet.",
+  "No music yet (sound.md has none)."
+ ]
+}

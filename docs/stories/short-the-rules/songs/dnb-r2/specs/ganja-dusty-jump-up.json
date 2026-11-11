@@ -1,0 +1,17 @@
+{
+  "style": "mid-90s Ganja Records jump-up jungle instrumental, 168 BPM, no intro: full drums and bass from beat one. A crackly Amen break sampled off worn vinyl, chopped into cheeky, strutting hip-hop combinations, a live funk drummer's swing, barely a drum machine in earshot. One short brassy horn stab off a 70s funk record, a fat bass-guitar lick lifted from an old LP. Bouncy, wobbling mid-range jump-up bassline built to make a dance skank, dub-style space and echo between the hits. Crate-digger mixdown off dusty wax: lo-fi, punchy, swaggering, playful menace, bruk-out bounce. Un-electronic, nothing synthetic on top, loops cleanly.",
+  "exclude": "synth lead, supersaw, rave stabs, hoover, pads, arpeggio, trance, EDM, neurofunk, dubstep, build-up",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 90,
+  "maxMode": false,
+  "title": "The Rules drop r2-ganja-dusty-jump-up",
+  "mode": "custom",
+  "workspace": "short-the-rules"
+}

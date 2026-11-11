@@ -37,8 +37,8 @@ machine's. Small firms are out. Firms that keep hiring pay nothing. A downturn t
 costs nobody.
 
 Nearly a million young people are not in work, education or training. Junior vacancies are down
-about a quarter since January 2025, Bloomberg reports, and Indeed finds new entry jobs asking for
-AI skills have replaced only about a third of the others that went. Machines, interest rates or
+about a quarter since January 2025, Bloomberg reports; Indeed finds new entry jobs asking for
+AI skills have replaced only about a third of the rest. Machines, interest rates or
 trade? Nobody counts first jobs by town and trade, so we will, every quarter, as the first-rung
 row of the Transition Count.
 

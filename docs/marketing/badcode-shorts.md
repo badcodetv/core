@@ -27,12 +27,12 @@ Nothing here is ruled. **Jack writes the jokes:** each idea has a premise and th
 
 Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier when you trim the fat." Each idea is cut to three beats or fewer (seconds in brackets). The longer write-ups further down are background only.
 
-1. 🚑 **Priority Lane:** an ambulance is held at the lights (4) → inside the motorcade, a minister on the phone: "I said *raspberry*." (6) → it sweeps past the ambulance, and the meme lands (5). **15s.** The paramedic line is cut; the ambulance says it already.
+1. 🚑 **Priority Lane** *(DONE 2026-11-11: in Premiere as `shorts-1-priority-lane-r2`; `docs/stories/shorts/priority-lane/`)*: an ambulance is held at the lights (4) → inside the motorcade, a minister on the phone: "I said *raspberry*." (6) → it sweeps past the ambulance, and the meme lands (5). **15s.** The paramedic line is cut; the ambulance says it already.
 2. 🪑 **Same Bench:** the 1919 cartoon: "Forget it." (5) → the same bench today, the same fat cat, a nurse: "Forget it." (5) → he hasn't aged a day (4). **14s.** The 2054 era is dropped.
 3. 🏠 **Howard Street:** a sitcom title card and four neighbours bickering (6) → pull back to one landlord counting rent (6) → the laugh track cuts dead (2). **14s.**
 4. 🚪 **Name's Not Down:** "ID?" "I wrote that sign." "Then you know." **10s.**
 5. 🪆 **Unelected:** dolls open, UNELECTED, UNELECTED, UNELECTED (8) → the tiny one says VOTER, unopened (4). **12s.**
-6. 💷 **Sponsor a Chancellor:** "Jeremy only earns £100,000." (6) → "£3 a month buys him a second wine fridge." (5) **11s.**
+6. 💷 **Sponsor a Chancellor** *(Jack: BUILDING, `docs/stories/short-sponsor-a-chancellor/`)*: "Jeremy only earns £100,000." (6) → "£3 a month buys him a second wine fridge." (5) **11s.**
 7. ✈️ **Party of One:** a safety demo for one man (6) → "The cost has been added to your council tax." (4) **10s.** The pensioner cutaway is cut.
 8. 🚆 **Great Train Robbery:** the gang creeps aboard (5) → the fares board (3) → masks off, a nod of respect, they leave (5). **13s.**
 9. 🧾 **Secretary's Rate:** two tax bills, hers is higher, he hands her his to file. **10s.**

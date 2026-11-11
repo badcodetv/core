@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR5-a-c.jpg",
+ "made": "2026-11-11T13:03:19.235Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Recompose with exactly five gang members, the five from the second picture. Keep the first picture's framing idea: two of them right up in the low camera's face in the foreground, big in frame, ripping thick wads of paper in half toward the lens: the one in the black puffer with the rust mask on the left, and the one in the hi-vis vest with the navy mask on the right. The other three are up on the shelving: the grey hoodie with the sage mask and the olive bomber with the mustard mask hanging off the high racks, and the dark coat with the charcoal mask climbing lower down. Nobody else in the room. Each mask: white braided ring, one small downward red triangle high on the ring's right. Same basement, tube light, grain, paper storm.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/HR2-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/HR2-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/CL3-c-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 4
+ },
+ "source_id": "3d65dec9-de60-4815-ad91-ce8d16be211d"
+}

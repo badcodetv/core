@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR2-a-a.jpg",
+ "made": "2026-11-11T12:38:30.748Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Edit only the knitted masks in the first picture so every one of them carries the badge of the mask in the second picture: a white plaited ring framing the face, and inside that ring, high on the right, a single little red triangle whose point faces downward. Check every head: the two climbers up on the shelves and all the masked figures on the floor, including the maroon, rust, green, navy and hi-vis ones. Exactly one triangle each, no extra red marks. Leave each mask's colour, every pose, the flying paper, the shelving, the light and the grain untouched.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/HR1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/HR1-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "41f438fe-2e88-4575-a2c8-10fc066f3308"
+}

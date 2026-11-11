@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR4-a-a.jpg",
+ "made": "2026-11-11T12:45:30.251Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Only touch two masks in the first picture. On the rust balaclava of the climber holding the cardboard box, and on the navy balaclava of the figure reaching up beside the hi-vis one, make the red triangle inside the white ring bold, solid and sharp, sitting high on the right of the ring with its tip pointing down, like the second picture. Nothing else changes: still five people, same poses, paper, shelves, light and grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/HR3-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/HR3-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9fa2b697-ead6-4b7e-a990-69af7504c147"
+}

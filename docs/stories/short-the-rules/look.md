@@ -28,6 +28,7 @@ Every gang member wears a knitted balaclava covering the whole head, with no eye
 
 ## Cast
 
+- **The balaclava gang is FIVE** (Kai, 2026-11-11, after a still came back with seven): sage mask/grey hoodie, mustard/olive bomber, navy/hi-vis vest, rust/black puffer, charcoal/dark coat. Count heads on every still before approval.
 - **The balaclava gang.** Masks: follow `docs/brand/README.md` "Putting a balaclava in a picture" (reference `docs/brand/balaclava/mask-reference.jpg`, fix pass, zoomed check). The opening's fixed still is `ST3-a-a` (from ST1-a via ST2-a-a).
 - **(earlier note)** The mask is fixed by `docs/brand/README.md` ("The BadCode balaclava"): white ring
   round the face, red triangle over the wearer's left eye, no skin, gloves. Everything else (cloth, colours,

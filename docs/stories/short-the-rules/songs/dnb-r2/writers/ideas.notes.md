@@ -1,0 +1,12 @@
+# Research notes, dnb-r2 ideas (2026-11-11)
+
+- Jump-up split off from hardstep in 1995; its defining feature was the bassline. Jungle peaked 1994-95. https://en.wikipedia.com/wiki/Jungle_music , https://en.wikipedia.com/wiki/DnB
+- The "Reese" bass (Kevin Saunderson, "Just Want Another Chance", 1988) was paired with the Amen in Renegade's "Terrorist" (1994), the blueprint; Reese use jumped from ~7 tunes in 1994 to ~54 in 1995 (fan Discogs tally). Overdrive pushed its mid-range. https://mixmag.net/feature/kevin-saunderson-reese-bassline-transformed-uk-dance-music-jungle-speed-garage-drum-n-bass , https://djmag.com/longreads/how-renegades-terrorist-created-blueprint-jungle
+- Grooverider named "hardstep" in 1994; heavy use of the pure Amen made it "solid, thick and heavy". https://12edit.com/hardstep
+- Akai S950/S1000 time-stretch gave breaks a metallic, grainy timbre; Amen sped to 160-170 BPM over chest-deep bass. https://reverb.com/news/the-samplers-behind-90s-jungle-and-drum-and-bass , https://orphiq.com/resources/what-is-jungle-music
+- Ganja Records (DJ Hype, Zinc, Pascal), the jump-up home: "dusty drum breaks chopped into absurdly inventive combinations", "barely a synth or drum machine in earshot", "UN-electronic", lean rather than hardcore's "kitchen sink" layering, dub bass and dub mixdowns, hip-hop DNA; "Super Sharp Shooter" (1995) a pioneering jump-up anthem with a "ferocious drop". https://trenchtrenchtrench.com/features/tiger-style-how-ganja-records-foregrounded-jungles-hip-hop-dna , https://en.wikipedia.org/wiki/DJ_Hype
+- Time Out: jump-up = bass and drums that "skid, swerve and stutter before exploding". https://www.timeout.com/london/music/the-20-best-jungle-tracks-ever-made
+- Suno craft: name the break's BEHAVIOUR (rolling, fragmented, ghost-heavy) rather than only the sample name; give the bass a defined job and a space rule so the break stays readable; avoid polished later-DnB and EDM build-drop language; avoid stacking effects. https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation/jungle-ai-music-genre-control-guide
+- Suno instrumentals: Custom mode, "instrumental" in the style box plus [Instrumental] tag; describe vibes ("powerful driving drums") not commands. https://howtopromptsuno.com/style-lyrics/how-do-i-make-instrumental
+
+Takeaway for this round: last take's "hardcore rave chord" stab is the likely source of the high synths Kai disliked. Jump-up answers that by replacing the top end with a mid-range bass riff and dusty breaks, almost no synths.

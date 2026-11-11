@@ -84,5 +84,23 @@
   "decided": [
    "reporter = e (Enceladus)"
   ]
+ },
+ {
+  "at": "2026-11-11T11:34:13+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn",
+  "what": "rough cut 1: five clips, reporter (Enceladus) + minister (Orus, lip-synced), clip ambience; 21.9 s",
+  "rebuild": "python3 scripts/shorts/priority_lane_cut.py && python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-11T12:05:41+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn",
+  "what": "round 2: clean-room clips 03-cr2A + 05-cr2A, five real headlines, logo bug (round 1 notes in feedback/timeline-r1)",
+  "decided": [
+   "Jack r1 notes: fix ambulance direction (clean room), headlines meme-style at the end, BadCode overlay"
+  ]
  }
 ]

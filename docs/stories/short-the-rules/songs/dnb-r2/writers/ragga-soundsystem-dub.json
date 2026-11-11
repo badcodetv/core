@@ -1,0 +1,13 @@
+{
+  "name": "ragga-soundsystem-dub",
+  "style": "Ragga jungle instrumental from 1995, 162 BPM, bass-led dub pressure. A bubbling reggae bass riff carries the tune, phrased at half the drum tempo the way a roots bass player would play it: fat round notes, bounce, gaps, slides, sudden silences. Beneath it the Amen break is sliced and re-sequenced fast, rough and saturated, with a heavy sub kick; the first downbeat drops straight in on a deep bass plunge. Mixed live on a dub desk: one snare at a time flung into a tape delay that trails off, spring reverb crashes, the drums cut out so the bass stands alone, then the break slams back. Night-time Hackney sound-system dance, speaker boxes shaking the floor, dread and dark and warm. Drums, bass and echo only.",
+  "exclude": "vocals, MC, vocal samples, synth lead, rave stabs, keys, piano, pads, siren, airhorn",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false
+}

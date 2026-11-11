@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental, 167 BPM, a bare two-element track: one breakbeat and one sub bass, nothing more. The break is the Amen sample, pitched up and stretched so its hits ring with a tinny, grainy metal edge; it rolls nonstop from bar one, packed with soft ghost snares between the backbeats, its snare runs skid, swerve and stutter across the bar line, and every fourth bar it is cut up and re-sequenced into a fresh fill before snapping back. Under it, a deep round sine sub that speaks only when the kick hits and goes quiet in between, leaving holes so each drum hit punches through. Nothing lives above the hi-hats: no melody, no chords, no pads, no keys, no stabs, no leads. Pressed like a one-off dubplate for a sound system rig: dry, upfront, chest-rattling low end, a little crackle. Locked at full force, identical weight bar after bar, loops cleanly at any edit point.",
+  "exclude": "vocals, MC, rapping, vocal chops, singing, choir, spoken word, synth, synthesizer, pad, piano, strings, rave stab, hoover, lead melody, arpeggio, riser, build-up, intro, breakdown, four-on-the-floor",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 85,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false,
+  "title": "The Rules drop r2-two-instruments-only",
+  "mode": "custom",
+  "workspace": "short-the-rules"
+}
