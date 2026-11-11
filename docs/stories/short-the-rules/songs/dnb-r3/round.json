@@ -1,0 +1,54 @@
+[
+  {
+    "name": "tower-block-sub-boom",
+    "style": "Hardstep jungle, raw Amen break, heavy clean sub-bass boom, 165 BPM, instrumental, no intro, 1994. A long pitched-down 808 kick hum is the only bass: one deep round tone that drops and slides at the end of every bar, shaking the floor. A hard kick doubled under a barely chopped Amen, slammed in from beat one. Empty top end, bare concrete tower-block weight, cold, stark, odd lopsided swing.",
+    "exclude": "reese, growl bass, detuned saw, wobble, ragga, reggae, dancehall, synth lead, rave stabs, pads, strings, piano, riser, build-up, intro",
+    "lyrics": "[Instrumental]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 45,
+    "maxMode": false
+  },
+  {
+    "name": "rooftop-pirate-transmission",
+    "style": "Tuneless jungle heard off a pirate station: a Sunday night in 1994, a homemade rig wired to an aerial on the roof of a 21-storey council tower, picked up on a cheap kitchen radio by the sink. Tempo sits near 166. The breakbeat is the only lead: the Amen sliced to splinters, re-sequenced, stuttered, doubled, rolling on and on without mercy, crash cymbals slammed hard to the left channel. Underneath, a sub-bass played backwards, sucking in from silence and swelling into each downbeat before it hits like a lift door, the Dred Bass trick. Nothing lives in the mids, no bassline growl, no tune. The only other texture is the broadcast itself: FM hiss, the station drifting off frequency and snapping back, a thin mono wobble. Cold, bare, all break and sub. Joins the set mid-flow at full tilt, no intro, loops clean.",
+    "exclude": "voice, lyrics, toasting, shout-outs, ragga, reggae, Reese bass, detuned saw bass, midrange bassline, synth lead, rave stabs, hoover, pads, strings, piano, riser, build-up, intro",
+    "lyrics": "[Instrumental]",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 65,
+    "styleInfluence": 65,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": false
+  },
+  {
+    "name": "concrete-stairwell-distortion",
+    "style": "1995 darkside hardstep jungle, instrumental, 166 BPM. Heard from inside a council tower block: bare concrete stairwell, steel shutters, a lift shaft, cold strip light humming overhead. The bass is one single overdriven sub, clipped and fuzzy right at the bottom, creeping in slow predatory slides, so loud it rattles the window glass and buzzes the metal handrails. The Amen is struck hard and mean, every snare cracking off raw concrete with a short tight slapback, a heavy kick doubled under it, chopped into stuttering rolls with hardly a breath between them. Aggressive, grimy, industrial, cold, no light anywhere. Starts at full weight on beat one and keeps pressing, loops cleanly.",
+    "exclude": "reese bass, detuned saw bass, wobble, rave stabs, hoover, pads, strings, piano, bleeps, reggae, ragga, dub siren, skank guitar, horns, riser, build-up, intro, fade-in",
+    "lyrics": "[Instrumental]",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 75,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": false
+  },
+  {
+    "name": "sampler-mangled-amen",
+    "style": "Akai S950 jungle tool cut in a 1994 bedroom studio, tempo 165, drums and sub only. 12-bit crunch, 22k sample rate, aliasing hiss on the cymbals. The Amen break is the lead: timestretched until it goes metallic and robotic, retriggered in stuttering 32nd-note bursts, repitched up a fifth then dropped an octave, reversed snare tails, then slammed back onto the raw untouched loop. Sub: a single pitched-down sine sampled off the same machine, gritty and aliased, stabbing a blunt two-note figure. Mono bottom end, cut-to-acetate dubplate loudness. Hits on beat one of bar one, seamless loop, no lead-in.",
+    "exclude": "reese bass, detuned saw bass, ragga, reggae, dub siren, horns, pads, strings, piano, synth lead, riser, fade-in, ambient intro",
+    "lyrics": "[Instrumental]",
+    "model": "v6",
+    "variety": "high",
+    "weirdness": 80,
+    "styleInfluence": 60,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": false
+  }
+]

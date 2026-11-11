@@ -1,0 +1,13 @@
+{
+  "name": "sampler-mangled-amen",
+  "style": "1995 bedroom-studio jungle tool, 165 BPM, instrumental. 12-bit Akai sampler grit, low sample rate, aliased top end. Lead is the timestretched Amen itself: multi-pitched up and down, stuttered into robotic machine-gun retriggers, warped metallic and cyborg, then snapped back to the raw unstretched loop. Cut-up and reversed break edits. Bass: one pitched-down sine sub sampled off the same machine, dirty, aliased, lo-fi, a blunt two-note figure. Mono low end, dubplate mastering. Full weight on bar one, no intro, loops seamlessly.",
+  "exclude": "reese bass, detuned saw bass, ragga, reggae, dub siren, horns, pads, strings, piano, synth lead, riser, fade-in, ambient intro",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "high",
+  "weirdness": 80,
+  "styleInfluence": 60,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false
+}

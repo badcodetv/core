@@ -1,0 +1,17 @@
+{
+  "style": "1995 darkside hardstep jungle, instrumental, 166 BPM. Heard from inside a council tower block: bare concrete stairwell, steel shutters, a lift shaft, cold strip light humming overhead. The bass is one single overdriven sub, clipped and fuzzy right at the bottom, creeping in slow predatory slides, so loud it rattles the window glass and buzzes the metal handrails. The Amen is struck hard and mean, every snare cracking off raw concrete with a short tight slapback, a heavy kick doubled under it, chopped into stuttering rolls with hardly a breath between them. Aggressive, grimy, industrial, cold, no light anywhere. Starts at full weight on beat one and keeps pressing, loops cleanly.",
+  "exclude": "reese bass, detuned saw bass, wobble, rave stabs, hoover, pads, strings, piano, bleeps, reggae, ragga, dub siren, skank guitar, horns, riser, build-up, intro, fade-in",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": [
+    75
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false,
+  "title": "Rules r3-concrete-stairwell-distortion",
+  "mode": "custom",
+  "workspace": "short-the-rules"
+}
