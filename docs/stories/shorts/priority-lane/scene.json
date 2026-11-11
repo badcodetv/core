@@ -53,5 +53,18 @@
   "cut": {
     "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
     "by": "scripts/shorts/priority_lane_cut.py"
+  },
+  "premiere": {
+    "current": "r2",
+    "r2": {
+      "sequence": "shorts-1-priority-lane-r2",
+      "guid": "758d9e17-99fd-4286-b79d-05d0eada2437",
+      "bin": "shorts-1-priority-lane-r2",
+      "built": "2026-11-11",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/priority lane.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
+      "what": "round 2 agreed by Jack ('its done'): V1 five original Omni clips with in/out, V2 headline+logo overlay (alpha ProRes, 720x1280), A1 reporter lines, A2 minister (lip-synced), A3 clip ambience",
+      "how": "premiere-plan.py --tag r2 + place.js with a V2 overlay step; sequence 720x1280 from the Omni clips"
+    }
   }
 }

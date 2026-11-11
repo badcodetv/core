@@ -1,0 +1,794 @@
+{
+ "schema": "badcode.final/1",
+ "story": "shorts",
+ "scene": "priority-lane",
+ "sequence": "shorts-priority-lane-r1",
+ "frozen": "2026-11-11T12:19:50+00:00",
+ "note": "Jack 2026-11-11: \"its done\" (round 2 + the UK headline). Built into Premiere as shorts-1-priority-lane-r2 in priority lane.prproj.",
+ "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
+ "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/preview.mp4",
+ "total": 21.86,
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
+  "storyboard": "https://claude.ai/artifact/RJ5FcwAW7NsDRfFiDPkq9j",
+  "timeline": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
+ },
+ "words": {
+  "script.json": {
+   "beats": [
+    {
+     "id": "outside",
+     "title": "The ambulance is held",
+     "see": "OUT1-c",
+     "lines": [],
+     "music": "",
+     "sfx": "rain, idling engines, motorcade engines"
+    },
+    {
+     "id": "ambulance",
+     "title": "Inside the ambulance",
+     "see": "AMB1-a",
+     "lines": [],
+     "music": "",
+     "sfx": "monitor beeps, rain on the roof"
+    },
+    {
+     "id": "reporter",
+     "title": "The BadCode reporter",
+     "see": "REP1-a",
+     "lines": [
+      {
+       "who": "REPORTER",
+       "text": "Traffic is being managed, to keep an important journey moving.",
+       "by": "claude",
+       "how": "straight to camera, flat UK regional news"
+      }
+     ],
+     "music": "",
+     "sfx": "rain"
+    },
+    {
+     "id": "minister",
+     "title": "The minister",
+     "see": "MIN1-b",
+     "lines": [
+      {
+       "who": "MINISTER",
+       "text": "I said raspberry-shaped hors d'oeuvres!",
+       "by": "jack",
+       "how": "on the phone, furious"
+      }
+     ],
+     "music": "",
+     "sfx": ""
+    },
+    {
+     "id": "button",
+     "title": "The button",
+     "see": "REP1-a",
+     "lines": [
+      {
+       "who": "REPORTER",
+       "text": "A politician blocking the path of an ambulance. Poetic, really...",
+       "by": "jack",
+       "how": "flat to camera as the motorcade clears"
+      }
+     ],
+     "music": "",
+     "sfx": ""
+    }
+   ],
+   "voices": []
+  }
+ },
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 3.0,
+   "beat": "outside",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Two long black saloon cars glide steadily from right to left across the foreground, smearing orange streetlight along their wet flanks. Behind them the police outrider keeps his gloved hand raised flat and still, and the ambulance waits at the red light with its blue beacons pulsing about twice a second. Fine rain falls through the haze. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: tyres hissing on wet tarmac, a low engine purr, rain, a distant siren held silent. No dialogue, no music. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-c.jpg",
+     "why": "Motorcade slides through",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-c.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "01",
+      "frame": 1,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:35:32.517Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-c.jpg",
+     "made": "2026-11-10T15:21:27.654Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 photograph taken with a long telephoto lens from the far side of a rain-wet British city junction at night, the whole scene compressed flat. The foreground is filled by the motorcade passing between the camera and everything else: the dark flank of a black saloon car sweeps across the bottom half of the frame as a motion-blurred slab of glossy paint and reflected orange streetlight, a second car's rear corner and red taillight just leaving the left edge. In the gap above the passing roofline, sharp and still, stands the held moment: a police motorcycle outrider in a hi-vis jacket and white helmet, side-on, his gloved hand raised flat toward an ambulance stopped close behind him. The ambulance's yellow-and-green chequered bonnet and blue beacons sit just right of centre, the blue light catching in the rain, its signage unreadable at this distance. A red traffic light glows above it. Behind, a queue of stopped headlights and a row of terraced shopfronts dissolve into a pale fog band, two sodium lamps blooming into the haze high in the frame, the night sky teal-green. Shot on CineStill 800T with a 200mm lens, focus held on the outrider's glove and the ambulance, red halation round the lights, heavy grain, underexposed with lifted blacks, rain visible as soft diagonal streaks across the frame. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "b5a36e28-63a0-44d3-9fa9-8501c0075610"
+    }
+   ]
+  },
+  {
+   "t": 3.0,
+   "dur": 2.5,
+   "beat": "ambulance",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Nobody moves. Rain runs down the windscreen, the red traffic light glows steadily through it, and blue beacon light flickers along the cabinets about twice a second. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: a heart monitor beeping steadily, rain on the roof. No dialogue, no music. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/AMB1-a.jpg",
+     "why": "Only the light changes",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/AMB1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "02",
+      "frame": 2,
+      "option": "b"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:36:00.757Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/AMB1-a.jpg",
+     "made": "2026-11-10T15:17:48.442Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 film photograph taken from the very back of a British ambulance at night, looking forward down the length of the patient compartment towards the cab and its windscreen. In the lower left foreground, out of focus and cut by the frame edge, a patient lies on the stretcher under a pale cellular blanket, an oxygen mask over their face, one arm still at their side. A tired paramedic in a dark green uniform kneels beside them in the middle of the frame, one gloved hand resting on the blanket, her head turned away from the patient to look forward through the cab. Beyond her, through the narrow gap between the two front seats, the windscreen fills the upper third: rain beading on the glass, a red traffic light blooming into the drizzle, the blurred red tail lights of a stopped queue of cars, and the silhouette of the driver's shoulder. Focus falls on the kneeling paramedic; the patient is soft and the windscreen view melts into haze. Light comes from a cold white overhead strip in the compartment, dimmed and greenish, while the red of the traffic light washes faintly along the ceiling and blue beacon spill flickers through the rear side window. Everything else drops to teal-black. Shot handheld with a slight tilt on a 35mm lens, CineStill 800T pushed two stops, red halation round the traffic light, visible grain, underexposed with lifted blacks. Her face has natural skin texture and the drawn look of a long shift, mouth closed. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "317e29eb-d15c-42ca-90d9-0c2674d42ffc"
+    }
+   ]
+  },
+  {
+   "t": 5.5,
+   "dur": 6.15,
+   "beat": "reporter",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+     "made": "2026-11-11T11:58:46+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow ambulance stays parked at the junction, blue lights flashing. A line of dark cars slides past behind it, left to right. Rain falls. Only rain and tyre sounds. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+     "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Fully positive, static-scene method: lock the camera with Google's own words, write the ambulance as a parked landmark, )",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "03-cr2A",
+      "frame": 3,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T11:57:50.865Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+     "made": "2026-11-10T15:22:01.082Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 photorealistic still of a British TV news reporter doing a live piece to camera on a rain-soaked city pavement at night, framed from the chest up and placed in the right third of the frame, his shoulders angled slightly away from us and his head turned square to the lens. He wears a full charcoal knitted balaclava with no openings at all, a large white ring stitched around the whole face, and a solid red triangle stitched high inside the ring over his left eye, so it sits on the right side of the picture at about two o'clock; the mouth area is plain knitted wool. The balaclava tucks into the turned-up collar of a dark navy waxed rain jacket beaded with water, and his black leather gloves hold a plain black handheld microphone with a blank grey foam windshield just below his chin. He stands completely still and straight-faced, like any correspondent mid-sentence. The only key light is the cold white lamp on top of the news camera, hitting him from slightly left and falling off across the knit. Behind him, out of focus and filling the left two-thirds of the frame: an ambulance held at a red traffic light, its blue beacons smeared into soft flares, a police motorcycle outrider with one gloved hand raised, and the dark shapes of a motorcade of saloon cars sweeping through the junction with their red tail lights streaking. An orange sodium street lamp blooms high in the drizzle haze at the top of the frame. Fine rain is visible against the dark. Eye-level, a 50mm lens, focus on the reporter's mask and glove, the street behind softened. Shot on CineStill 800T, red halation around the lamps and beacons, visible grain, slightly underexposed with lifted teal-black shadows, a faint handheld tilt. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "dd625e2c-50ee-46e3-b50a-7d5c03ce7ac7"
+    }
+   ]
+  },
+  {
+   "t": 11.65,
+   "dur": 3.6999999999999997,
+   "beat": "minister",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The minister presses the phone to his ear and snaps into it, furious: I said raspberry-shaped hors d'oeuvres! Then he glares at the roof lining. Blue beacon light pulses through the rain-streaked window behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "why": "He says the line (lip-synced)",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "04",
+      "frame": 4,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:36:54.970Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "made": "2026-11-10T15:25:40.292Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A photorealistic vertical 9:16 photograph inside the back of a dark ministerial car at night in the rain, taken from low on the far end of the rear seat with a 28mm lens, so the cream leather seat and a folded-down armrest fill the bottom of the frame. On the armrest, sharp in the foreground, sits a small open glass jar of bright yellow lemon curd with a silver spoon in it and a crumpled napkin. Further back on the left, slumped into the seat, is an invented minister in his late fifties in a rumpled navy wool suit: a round, jowly face with pores and razor rash along the jaw, a small shaving nick on his chin, pink-rimmed tired eyes, wispy grey hair combed over, a crooked burgundy tie. He presses a phone to his ear, mouth shut in a tight, sulky line, nostrils flared, eyes rolled up at the roof lining. His head sits in the upper third of the frame, cut by the left edge. Through the rain-streaked window behind him, out of focus, an ambulance's blue lights pulse beside a red traffic light, throwing a cold blue band across one side of his face while a passing sodium street lamp lays an orange sweep over the other; the rest of the cabin sinks into teal-black, with a faint warm glow from a reading lamp in the roof. Shot on CineStill 800T, red halation round the lights outside, visible grain, underexposed, lifted blacks, handheld and slightly crooked. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "e4fd7d33-97b7-4f21-abb4-14a3d07c8cbd"
+    }
+   ]
+  },
+  {
+   "t": 15.35,
+   "dur": 6.51,
+   "beat": "button",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4",
+     "made": "2026-11-11T12:01:31+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow van, rear doors and red tail lights toward us, drives straight ahead down the road, shrinking into the distance until it is gone. The motorbikes and cars stay parked. Rain falls. No dialogue, no music. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+     "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Built on the bare prompt that already went through. Timestamped halves pin the ambulance's end state ('still in the same)",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "05-cr2A",
+      "frame": 3,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T11:59:44.958Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+     "made": "2026-11-10T15:22:01.082Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 photorealistic still of a British TV news reporter doing a live piece to camera on a rain-soaked city pavement at night, framed from the chest up and placed in the right third of the frame, his shoulders angled slightly away from us and his head turned square to the lens. He wears a full charcoal knitted balaclava with no openings at all, a large white ring stitched around the whole face, and a solid red triangle stitched high inside the ring over his left eye, so it sits on the right side of the picture at about two o'clock; the mouth area is plain knitted wool. The balaclava tucks into the turned-up collar of a dark navy waxed rain jacket beaded with water, and his black leather gloves hold a plain black handheld microphone with a blank grey foam windshield just below his chin. He stands completely still and straight-faced, like any correspondent mid-sentence. The only key light is the cold white lamp on top of the news camera, hitting him from slightly left and falling off across the knit. Behind him, out of focus and filling the left two-thirds of the frame: an ambulance held at a red traffic light, its blue beacons smeared into soft flares, a police motorcycle outrider with one gloved hand raised, and the dark shapes of a motorcade of saloon cars sweeping through the junction with their red tail lights streaking. An orange sodium street lamp blooms high in the drizzle haze at the top of the frame. Fine rain is visible against the dark. Eye-level, a 50mm lens, focus on the reporter's mask and glove, the street behind softened. Shot on CineStill 800T, red halation around the lamps and beacons, visible grain, slightly underexposed with lifted teal-black shadows, a faint handheld tilt. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "dd625e2c-50ee-46e3-b50a-7d5c03ce7ac7"
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "vox-reporter",
+   "t": 5.9,
+   "dur": 5.4,
+   "what": "reporter line 1",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav",
+     "made": "2026-11-11T11:21:46+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "Google AI Studio TTS",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "why": "Priority Lane voice casting round 2, London men (Jack 2026-11-11)",
+     "prompt": "# Audio Profile\nA fifty-odd veteran crime and courts reporter, low and breathy, almost confidential, as if leaning in to tell you something off the record. Weary warmth, a South London accent from Croydon, clear words.\n\n## Scene:\nMic held tight under his chin in the rain at night, the stopped traffic behind him.\n\n## Sample Context:\nHe half-whispers the report like a man who knows how this ends.",
+     "inputs": {
+      "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+     },
+     "settings": {
+      "voice": "Enceladus"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-minister",
+   "t": 12.01,
+   "dur": 2.75,
+   "what": "minister line (lip-synced)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-minister-dub.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-minister-dub.wav",
+     "made": "2026-11-11T11:29:54+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "why": "Priority Lane minister lip-sync (lip-sync-dub), 2026-11-11",
+     "prompt": "Orus take min-b-orus.wav, speech 0.234-3.80 s, atempo 1.26, -20.5 LUFS, placed at 0.68 s (mouth opens 0.67-0.75; voice onset 0.71). Bed = clip's own ambience from 3.7 s, looped, -8 dB."
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The minister presses the phone to his ear and snaps into it, furious: I said raspberry-shaped hors d'oeuvres! Then he glares at the roof lining. Blue beacon light pulses through the rain-streaked window behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "why": "He says the line (lip-synced)",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "04",
+      "frame": 4,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:36:54.970Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "made": "2026-11-10T15:25:40.292Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A photorealistic vertical 9:16 photograph inside the back of a dark ministerial car at night in the rain, taken from low on the far end of the rear seat with a 28mm lens, so the cream leather seat and a folded-down armrest fill the bottom of the frame. On the armrest, sharp in the foreground, sits a small open glass jar of bright yellow lemon curd with a silver spoon in it and a crumpled napkin. Further back on the left, slumped into the seat, is an invented minister in his late fifties in a rumpled navy wool suit: a round, jowly face with pores and razor rash along the jaw, a small shaving nick on his chin, pink-rimmed tired eyes, wispy grey hair combed over, a crooked burgundy tie. He presses a phone to his ear, mouth shut in a tight, sulky line, nostrils flared, eyes rolled up at the roof lining. His head sits in the upper third of the frame, cut by the left edge. Through the rain-streaked window behind him, out of focus, an ambulance's blue lights pulse beside a red traffic light, throwing a cold blue band across one side of his face while a passing sodium street lamp lays an orange sweep over the other; the rest of the cabin sinks into teal-black, with a faint warm glow from a reading lamp in the roof. Shot on CineStill 800T, red halation round the lights outside, visible grain, underexposed, lifted blacks, handheld and slightly crooked. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "e4fd7d33-97b7-4f21-abb4-14a3d07c8cbd"
+    }
+   ]
+  },
+  {
+   "stem": "vox-reporter",
+   "t": 15.75,
+   "dur": 5.11,
+   "what": "reporter line 2 (the button)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav",
+     "made": "2026-11-11T11:21:46+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "Google AI Studio TTS",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "why": "Priority Lane voice casting round 2, London men (Jack 2026-11-11)",
+     "prompt": "# Audio Profile\nA fifty-odd veteran crime and courts reporter, low and breathy, almost confidential, as if leaning in to tell you something off the record. Weary warmth, a South London accent from Croydon, clear words.\n\n## Scene:\nMic held tight under his chin in the rain at night, the stopped traffic behind him.\n\n## Sample Context:\nHe half-whispers the report like a man who knows how this ends.",
+     "inputs": {
+      "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+     },
+     "settings": {
+      "voice": "Enceladus"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-world",
+   "t": 0.0,
+   "dur": 3.0,
+   "what": "outside: clip's own ambience",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Two long black saloon cars glide steadily from right to left across the foreground, smearing orange streetlight along their wet flanks. Behind them the police outrider keeps his gloved hand raised flat and still, and the ambulance waits at the red light with its blue beacons pulsing about twice a second. Fine rain falls through the haze. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: tyres hissing on wet tarmac, a low engine purr, rain, a distant siren held silent. No dialogue, no music. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-c.jpg",
+     "why": "Motorcade slides through",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-c.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "01",
+      "frame": 1,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:35:32.517Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/OUT1-c.jpg",
+     "made": "2026-11-10T15:21:27.654Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 photograph taken with a long telephoto lens from the far side of a rain-wet British city junction at night, the whole scene compressed flat. The foreground is filled by the motorcade passing between the camera and everything else: the dark flank of a black saloon car sweeps across the bottom half of the frame as a motion-blurred slab of glossy paint and reflected orange streetlight, a second car's rear corner and red taillight just leaving the left edge. In the gap above the passing roofline, sharp and still, stands the held moment: a police motorcycle outrider in a hi-vis jacket and white helmet, side-on, his gloved hand raised flat toward an ambulance stopped close behind him. The ambulance's yellow-and-green chequered bonnet and blue beacons sit just right of centre, the blue light catching in the rain, its signage unreadable at this distance. A red traffic light glows above it. Behind, a queue of stopped headlights and a row of terraced shopfronts dissolve into a pale fog band, two sodium lamps blooming into the haze high in the frame, the night sky teal-green. Shot on CineStill 800T with a 200mm lens, focus held on the outrider's glove and the ambulance, red halation round the lights, heavy grain, underexposed with lifted blacks, rain visible as soft diagonal streaks across the frame. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "b5a36e28-63a0-44d3-9fa9-8501c0075610"
+    }
+   ]
+  },
+  {
+   "stem": "sfx-world",
+   "t": 3.0,
+   "dur": 2.5,
+   "what": "ambulance: clip's own ambience",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Nobody moves. Rain runs down the windscreen, the red traffic light glows steadily through it, and blue beacon light flickers along the cabinets about twice a second. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: a heart monitor beeping steadily, rain on the roof. No dialogue, no music. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/AMB1-a.jpg",
+     "why": "Only the light changes",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/AMB1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "02",
+      "frame": 2,
+      "option": "b"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:36:00.757Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/AMB1-a.jpg",
+     "made": "2026-11-10T15:17:48.442Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 film photograph taken from the very back of a British ambulance at night, looking forward down the length of the patient compartment towards the cab and its windscreen. In the lower left foreground, out of focus and cut by the frame edge, a patient lies on the stretcher under a pale cellular blanket, an oxygen mask over their face, one arm still at their side. A tired paramedic in a dark green uniform kneels beside them in the middle of the frame, one gloved hand resting on the blanket, her head turned away from the patient to look forward through the cab. Beyond her, through the narrow gap between the two front seats, the windscreen fills the upper third: rain beading on the glass, a red traffic light blooming into the drizzle, the blurred red tail lights of a stopped queue of cars, and the silhouette of the driver's shoulder. Focus falls on the kneeling paramedic; the patient is soft and the windscreen view melts into haze. Light comes from a cold white overhead strip in the compartment, dimmed and greenish, while the red of the traffic light washes faintly along the ceiling and blue beacon spill flickers through the rear side window. Everything else drops to teal-black. Shot handheld with a slight tilt on a 35mm lens, CineStill 800T pushed two stops, red halation round the traffic light, visible grain, underexposed with lifted blacks. Her face has natural skin texture and the drawn look of a long shift, mouth closed. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "317e29eb-d15c-42ca-90d9-0c2674d42ffc"
+    }
+   ]
+  },
+  {
+   "stem": "sfx-world",
+   "t": 5.5,
+   "dur": 6.15,
+   "what": "reporter: clip's own ambience",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+     "made": "2026-11-11T11:58:46+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow ambulance stays parked at the junction, blue lights flashing. A line of dark cars slides past behind it, left to right. Rain falls. Only rain and tyre sounds. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+     "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Fully positive, static-scene method: lock the camera with Google's own words, write the ambulance as a parked landmark, )",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "03-cr2A",
+      "frame": 3,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T11:57:50.865Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+     "made": "2026-11-10T15:22:01.082Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 photorealistic still of a British TV news reporter doing a live piece to camera on a rain-soaked city pavement at night, framed from the chest up and placed in the right third of the frame, his shoulders angled slightly away from us and his head turned square to the lens. He wears a full charcoal knitted balaclava with no openings at all, a large white ring stitched around the whole face, and a solid red triangle stitched high inside the ring over his left eye, so it sits on the right side of the picture at about two o'clock; the mouth area is plain knitted wool. The balaclava tucks into the turned-up collar of a dark navy waxed rain jacket beaded with water, and his black leather gloves hold a plain black handheld microphone with a blank grey foam windshield just below his chin. He stands completely still and straight-faced, like any correspondent mid-sentence. The only key light is the cold white lamp on top of the news camera, hitting him from slightly left and falling off across the knit. Behind him, out of focus and filling the left two-thirds of the frame: an ambulance held at a red traffic light, its blue beacons smeared into soft flares, a police motorcycle outrider with one gloved hand raised, and the dark shapes of a motorcade of saloon cars sweeping through the junction with their red tail lights streaking. An orange sodium street lamp blooms high in the drizzle haze at the top of the frame. Fine rain is visible against the dark. Eye-level, a 50mm lens, focus on the reporter's mask and glove, the street behind softened. Shot on CineStill 800T, red halation around the lamps and beacons, visible grain, slightly underexposed with lifted teal-black shadows, a faint handheld tilt. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "dd625e2c-50ee-46e3-b50a-7d5c03ce7ac7"
+    }
+   ]
+  },
+  {
+   "stem": "sfx-world",
+   "t": 11.65,
+   "dur": 3.6999999999999997,
+   "what": "minister: room bed",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-bed.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-bed.wav",
+     "made": "2026-11-11T11:33:50+00:00",
+     "by": "claude",
+     "kind": "sfx",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "why": "room bed under the muted minister clip",
+     "prompt": "clip 04's own audio from 3.7 s (after the speech), 4.3 s looped to 8.04 s, -8 dB, 0.3 s fade in"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The minister presses the phone to his ear and snaps into it, furious: I said raspberry-shaped hors d'oeuvres! Then he glares at the roof lining. Blue beacon light pulses through the rain-streaked window behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "why": "He says the line (lip-synced)",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "04",
+      "frame": 4,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:36:54.970Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "made": "2026-11-10T15:25:40.292Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A photorealistic vertical 9:16 photograph inside the back of a dark ministerial car at night in the rain, taken from low on the far end of the rear seat with a 28mm lens, so the cream leather seat and a folded-down armrest fill the bottom of the frame. On the armrest, sharp in the foreground, sits a small open glass jar of bright yellow lemon curd with a silver spoon in it and a crumpled napkin. Further back on the left, slumped into the seat, is an invented minister in his late fifties in a rumpled navy wool suit: a round, jowly face with pores and razor rash along the jaw, a small shaving nick on his chin, pink-rimmed tired eyes, wispy grey hair combed over, a crooked burgundy tie. He presses a phone to his ear, mouth shut in a tight, sulky line, nostrils flared, eyes rolled up at the roof lining. His head sits in the upper third of the frame, cut by the left edge. Through the rain-streaked window behind him, out of focus, an ambulance's blue lights pulse beside a red traffic light, throwing a cold blue band across one side of his face while a passing sodium street lamp lays an orange sweep over the other; the rest of the cabin sinks into teal-black, with a faint warm glow from a reading lamp in the roof. Shot on CineStill 800T, red halation round the lights outside, visible grain, underexposed, lifted blacks, handheld and slightly crooked. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "e4fd7d33-97b7-4f21-abb4-14a3d07c8cbd"
+    }
+   ]
+  },
+  {
+   "stem": "sfx-world",
+   "t": 15.35,
+   "dur": 6.51,
+   "what": "button: clip's own ambience",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4",
+     "made": "2026-11-11T12:01:31+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow van, rear doors and red tail lights toward us, drives straight ahead down the road, shrinking into the distance until it is gone. The motorbikes and cars stay parked. Rain falls. No dialogue, no music. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+     "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Built on the bare prompt that already went through. Timestamped halves pin the ambulance's end state ('still in the same)",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "05-cr2A",
+      "frame": 3,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T11:59:44.958Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+     "made": "2026-11-10T15:22:01.082Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 photorealistic still of a British TV news reporter doing a live piece to camera on a rain-soaked city pavement at night, framed from the chest up and placed in the right third of the frame, his shoulders angled slightly away from us and his head turned square to the lens. He wears a full charcoal knitted balaclava with no openings at all, a large white ring stitched around the whole face, and a solid red triangle stitched high inside the ring over his left eye, so it sits on the right side of the picture at about two o'clock; the mouth area is plain knitted wool. The balaclava tucks into the turned-up collar of a dark navy waxed rain jacket beaded with water, and his black leather gloves hold a plain black handheld microphone with a blank grey foam windshield just below his chin. He stands completely still and straight-faced, like any correspondent mid-sentence. The only key light is the cold white lamp on top of the news camera, hitting him from slightly left and falling off across the knit. Behind him, out of focus and filling the left two-thirds of the frame: an ambulance held at a red traffic light, its blue beacons smeared into soft flares, a police motorcycle outrider with one gloved hand raised, and the dark shapes of a motorcade of saloon cars sweeping through the junction with their red tail lights streaking. An orange sodium street lamp blooms high in the drizzle haze at the top of the frame. Fine rain is visible against the dark. Eye-level, a 50mm lens, focus on the reporter's mask and glove, the street behind softened. Shot on CineStill 800T, red halation around the lamps and beacons, visible grain, slightly underexposed with lifted teal-black shadows, a faint handheld tilt. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "dd625e2c-50ee-46e3-b50a-7d5c03ce7ac7"
+    }
+   ]
+  }
+ ],
+ "no_card": []
+}

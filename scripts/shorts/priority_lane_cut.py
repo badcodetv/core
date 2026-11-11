@@ -94,6 +94,14 @@ def main():
     chain.append(f'[{last}]scale=in_range=full:out_range=limited,format=yuv420p[vout]')  # the RGBA overlay leaves full-range content (QC fail)
     ff(*ins, '-filter_complex', ';'.join(chain), '-map', '[vout]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18',
        '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', CUT / 'picture.mp4')
+    # The same overlay as its own alpha layer for Premiere V2 (ProRes 4444), so the headlines and logo stay editable there.
+    oins, och = ['-f', 'lavfi', '-i', f'color=c=black@0.0:s={W}x{H}:r={FPS}:d={TOTAL},format=rgba', '-i', LOGO], [f'[1]format=rgba,colorchannelmixer=aa=0.9[logo];[0][logo]overlay=56:120:format=auto[o0]']
+    olast = 'o0'
+    for k, (t, x, y) in enumerate(CARD_AT):
+        oins += ['-i', OVL / f'card-{k}.png']
+        och.append(f"[{olast}][{k + 2}]overlay={x}:{y}:format=auto:enable='gte(t,{t:.2f})'[o{k + 1}]"); olast = f'o{k + 1}'
+    ff(*oins, '-filter_complex', ';'.join(och), '-map', f'[{olast}]', '-t', TOTAL, '-c:v', 'prores_ks', '-profile:v', '4444',
+       '-pix_fmt', 'yuva444p10le', '-alpha_bits', '16', CUT / 'overlay.mov')
     (CUT / 'slist.txt').write_text(''.join(f"file '{p.name}'\n" for p in sfx_parts))
     sfx = CUT / 'sfx-world.wav'
     ff('-f', 'concat', '-safe', '0', '-i', CUT / 'slist.txt', '-af', f'apad=whole_dur={TOTAL}', '-ar', 48000, '-ac', 2, sfx)
@@ -126,9 +134,9 @@ def main():
            'intro': 'All five shots with the picked voices (reporter: Enceladus; minister: Orus, lip-synced). Note anything: a beat, a shot, a line, a sound, or a single frame.',
            'fps': FPS, 'total': TOTAL,
            'beats': beats,
-           'video': [{'file': str(parts[i]), 'start': starts[i], 'dur': s[3], 'beat': s[0], 'source': str(VID / s[1]), 'looped': False}
+           'video': [{'file': str(VID / s[1]), 'in': s[2], 'start': starts[i], 'dur': s[3], 'beat': s[0], 'source': str(VID / s[1]), 'looped': False}
                      for i, s in enumerate(SHOTS)],
-           'audio': [{'track': 'A1', 'name': 'vox-reporter'}, {'track': 'A2', 'name': 'vox-minister'}, {'track': 'A3', 'name': 'sfx-world'}],
+           'audio': [{'track': 'A1', 'name': 'vox-reporter', 'file': str(rep)}, {'track': 'A2', 'name': 'vox-minister', 'file': str(mn)}, {'track': 'A3', 'name': 'sfx-world', 'file': str(sfx)}],
            'events': [{'stem': 'vox-reporter', 't': round(T_REP1, 2), 'dur': round(L1[1] - L1[0], 2), 'what': 'reporter line 1', 'src': str(REP)},
                       {'stem': 'vox-minister', 't': round(vt['minister'][0], 2), 'dur': round(vt['minister'][1], 2), 'what': 'minister line (lip-synced)', 'src': str(MIN_DUB)},
                       {'stem': 'vox-reporter', 't': round(T_REP2, 2), 'dur': round(L2[1] - L2[0], 2), 'what': 'reporter line 2 (the button)', 'src': str(REP)}]
