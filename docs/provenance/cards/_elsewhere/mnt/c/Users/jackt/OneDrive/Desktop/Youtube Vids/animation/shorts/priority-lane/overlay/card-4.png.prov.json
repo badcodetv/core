@@ -1,10 +1,10 @@
 {
  "schema": "badcode.prov/1",
  "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/overlay/card-4.png",
- "made": "2026-11-11T12:05:36+00:00",
+ "made": "2026-11-11T12:08:43+00:00",
  "by": "claude",
  "kind": "other",
  "engine": "sharp",
  "tool": "scripts/shorts/priority_lane_cards.mjs",
- "why": "Priority Lane round 2 overlay (Jack's note at529)"
+ "why": "Priority Lane overlay; UK card added 2026-11-11"
 }

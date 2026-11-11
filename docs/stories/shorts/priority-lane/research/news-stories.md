@@ -216,3 +216,11 @@ which is the opposite.
 and don't show the outlets' photos.
 
 Sources: https://www.gov.uk/guidance/exceptions-to-copyright · https://caselaw.nationalarchives.gov.uk/ewca/civ/2011/890
+
+## UK case, re-searched 2026-11-11 (Jack: "I have seen one on Instagram but they deleted the post")
+- **Headline (verbatim, search listing; it matches the URL slug word for word):** "Social media fumes over “broken Britain” as police motorcade stops ambulance on blue light emergency to allow VIP to pass through junction"
+- **Outlet / date:** Deadline News, 6 May 2024. https://www.deadlinenews.co.uk/2024/05/06/social-media-fumes-over-broken-britain-as-police-motorcade-stops-ambulance-on-blue-light-emergency-to-allow-vip-to-pass-through-junction/
+- **What happened:** central London, at the junction of Baker Street and Marylebone Road. Police motorbikes leading a motorcade stop the traffic, and an ambulance on blue lights is made to wait like normal traffic. The clip was shared on TikTok with the caption "...Broken Britain".
+- **Corroboration:** a second UK outlet, emergency-services.news ("WATCH: public outcry as ambulance on emergency call delayed by VIP police escort in London"; its title is known only from search results and the domain no longer resolves), plus a rewrite on firescalaf.cat. No Met Police statement was found, and the VIP is not named.
+- **Not opened:** the Deadline page returns 403 to fetchers, and the browser route was blocked in this session. ⬜ Jack or Kai to open it and confirm the headline before release.
+- **Use:** the headline reports the social-media reaction and the footage; it accuses no named person. As the UK lead card it is safe in substance. Name nobody.

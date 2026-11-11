@@ -47,7 +47,7 @@ T_REP1 = starts[2] + LEAD
 T_MIN = starts[3] - MIN_IN                       # where clip 04's t=0 sits on the timeline
 T_REP2 = starts[4] + LEAD
 # (time, x, y) for each headline card: one every ~0.95 s across the button line, stacking up
-CARD_AT = [(T_REP2 + 0.15 + 0.95 * k, x, y) for k, (x, y) in enumerate([(50, 330), (70, 1050), (60, 600), (40, 1250), (55, 820)])]
+CARD_AT = [(T_REP2 + 0.15 + 0.8 * k, x, y) for k, (x, y) in enumerate([(50, 330), (70, 1050), (60, 560), (40, 1250), (55, 820), (55, 640)])]
 SEE = {'outside': 'The junction: the outrider holds the ambulance at the red light while the motorcade glides through.',
        'ambulance': 'Inside the ambulance: nobody moves, the light stays red.',
        'reporter': 'The BadCode reporter, straight to camera, the motorcade behind him.',

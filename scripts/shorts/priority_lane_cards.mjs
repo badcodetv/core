@@ -13,6 +13,7 @@ export const CARDS = [
   { h: 'Investigation Into Moscow Policeman Who Stopped Ambulance for Government Motorcade', src: 'The Moscow Times, 2016', rot: -2 },
   { h: 'Ambulance stuck, this time for Dr G Parameshwar’s convoy', src: 'Deccan Chronicle, 2017', rot: 5 },
   { h: 'Himanta apologises to patient after ambulance stopped to let his convoy pass; 4 policemen suspended', src: 'Daily Excelsior, 2026', rot: -3 },
+  { h: 'Social media fumes over \u201cbroken Britain\u201d as police motorcade stops ambulance on blue light emergency to allow VIP to pass through junction', src: 'Deadline News, 2024', rot: 2 },  // UK, LAST so it lands on top and holds; headline from search listing = URL slug, page not opened (403)
 ]
 const W = 880, PAD = 44, FS = 52, LH = 62, CH = 25
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
