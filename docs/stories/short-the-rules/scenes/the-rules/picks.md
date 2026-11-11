@@ -166,3 +166,5 @@ Kai, same message, on the music: the drop gets re-made, *"a much more A-men jump
 synthesizers… A mid-90s old-school A-men jungle would be perfect. I'd like to do a couple of iterations"*; *"the
 nursery rhyme part is perfect right now"*. Round `../../songs/dnb-r2`.
 Kai: *"could we animate it? … let's fill the gap in Premiere"* → `HR7-d-b` approved; clip job `h1` (4 s).
+
+Kai on dnb-r2 (2026-11-11): *"drop the raga… drop the reggae influence… the first one, the hard step, but just without the Reese… the real mid-90s Amen heavy bass… It should just sound like a council estate… up the weirdness"*. Round `../../songs/dnb-r3` (4 prompts, higher weirdness).
