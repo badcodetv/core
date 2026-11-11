@@ -1,5 +1,7 @@
 # Priority Lane: resume here
 
+**2026-11-11:** retry made clip 03 (`pl-03-r2-REP1-a.mp4`, passes; the ambulance pulls away in its second half, so it can also cover beat 5). 05 still blocked. Next: Jack picks, split 03 for 3+5 or a new still for 05.
+
 **State, 2026-11-10 evening (Jack):**
 
 - **Dialogue 1D LOCKED** (`script.json`): Reporter: "Traffic is being managed, to keep an important journey moving." · Minister: "I said raspberry-shaped hors d'oeuvres!" · Reporter: "A politician blocking the path of an ambulance. Poetic, really..."

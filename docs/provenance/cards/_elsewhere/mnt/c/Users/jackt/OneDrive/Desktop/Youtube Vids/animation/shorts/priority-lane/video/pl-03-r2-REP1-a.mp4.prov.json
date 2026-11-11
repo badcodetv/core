@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-r2-REP1-a.mp4",
+ "made": "2026-11-11T10:06:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The news presenter in the knitted hood holds the microphone below his chin and stays composed, giving small, measured nods as he reports to camera. Behind him, softly out of focus, headlights and red tail lights of a line of dark cars sweep slowly through the junction, and blue lights pulse in the rain. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: rain pattering on a jacket, tyres hissing on wet tarmac. No dialogue, no music. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+ "why": "03 failed three times with no clip (silent block suspected: masked figure + police words); rewritten without 'masked', 'police' or 'siren'",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "03-r2",
+  "frame": 3,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T09:53:21.833Z"
+ }
+}
