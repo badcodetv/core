@@ -45,6 +45,7 @@
     "notReal": "Not a real party. Yet.",
     "futureProof": {
       "talk": "/future-proof/talk/",
+      "questions": "/future-proof/questions/",
       "question": "Who should decide how the gains from automation are shared?",
       "intro": "Run the country the way good software is run: small parts that can be swapped, every change tested before it ships, decisions made from evidence, in public.",
       "tenets": [

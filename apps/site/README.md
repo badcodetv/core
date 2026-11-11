@@ -6,7 +6,7 @@ The website is a television. Its three strands are channels, and number keys pic
 | --- | --- | --- | --- |
 | STORIES | BadCode One | 1–4 the films, 5–8 their songs, 9 The Storyverse (Maddie's hologram plays in the screen) | `/stories`, `/stories/1` … `/stories/9` (also `/storyverse`) |
 | NEWS | Money For Something (working name) | 1 = latest bulletin, then older ones | `/news`, `/news/2` … |
-| GOVT | The BadCode Government | 1 the manifesto (the cabinet; each minister at `/government/<post>`), 2 Future Proof (the talk plays in the screen) | `/government`, `/government/2` (also `/future-proof`) |
+| GOVT | The BadCode Government | 1 the manifesto (the cabinet; each minister at `/government/<post>`), 2 Future Proof (three questions play in the screen) | `/government`, `/government/2` (also `/future-proof`) |
 | 0 | Test card | about BadCode | `/about` |
 | TEXT | Teletext on any channel | 100 index, 200 stories (201–204), 300 news, 400 manifesto, 401 the cabinet (402–410 one minister each), 700 follow, 800 about, 888 Future Proof | `/text/100` … |
 
@@ -40,18 +40,27 @@ and give it a `still` in `content.json`.
   (`public/index.html`, `404.html`, `styles.css`) is no longer shipped and can be deleted.
 - `build.mjs`: builds everything into `dist/` (git-ignored)
 
-## The Future Proof talk (GOVT 2)
+## Future Proof (GOVT 2)
 
-GOVT programme 2 plays the Future Proof slideshow inside the screen, in an iframe of
-`/future-proof/talk/`. That page is a static file in `public/future-proof/talk/index.html`, generated
-from the deck (`docs/stories/future-proof/slideshows/launch-talk/`, the `new-slideshow` skill). After
-any change to the deck, regenerate it, then build the site:
+GOVT programme 2 is Future Proof: a home page and three giant questions (red or blue / once every five
+years / ask the experts), each with a how-it-is / how-it-could-be three.js scene. It plays inside the
+screen in an iframe of `/future-proof/questions/`, a static file in
+`public/future-proof/questions/index.html`, built from the prototype Kai noted on
+(`design/2026-11-11-future-proof-simple/index.html`, artifact https://claude.ai/artifact/LWVX8GbT8ZyNH9qvzmaewz).
+After any change to the prototype, rebuild it, then build the site:
+
+    python3 scripts/future-proof/build-questions.py
+    node apps/site/build.mjs
+
+Opened on its own (the "Full screen" link), it shows a "Back to the TV" link.
+
+The older launch talk (the "Update Available" slideshow) is still served at `/future-proof/talk/` but
+is no longer on the TV. To regenerate it:
 
     python3 scripts/slideshow/build.py docs/stories/future-proof/slideshows/launch-talk \
         --public apps/site/public/future-proof/talk/index.html --home /future-proof/
-    node apps/site/build.mjs
 
-Opened on its own (the "Full screen" link), the talk shows a "Back to the TV" link. The words of
+The words of
 Future Proof for teletext page 888 and the plain-text page still come from `content.json`.
 
 ## The Storyverse (STORIES 9)

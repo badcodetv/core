@@ -110,7 +110,7 @@
   function renderProg(gesture) {
     clearTimeout(govTimer); stopVideo();
     tv.classList.toggle('daylight', state.ch === 'government');
-    tv.classList.toggle('fp-on', state.ch === 'government' && state.p === 2); // the talk: broadcast, so scanlines back on
+    tv.classList.toggle('fp-on', state.ch === 'government' && state.p === 2); // Future Proof: broadcast, so scanlines back on
     tv.classList.toggle('sv-on', state.ch === 'stories' && state.p === SV); // the hologram brings its own CRT: the TV's scanlines step aside
     const s = state;
     if (s.ch === 'stories' && s.p === SV) {
@@ -138,11 +138,11 @@
       const g = C.government;
       const bar = `<div class="bar"><svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="27.75" fill="none" stroke="#fff" stroke-width="4.5"/><path d="${MARK_TRI}" fill="#cc2b37"/></svg>The BadCode Government</div>`;
       if (s.p === 2) {
-        // Future Proof is a talk: the slideshow plays inside the screen (built by scripts/slideshow/build.py --public,
-        // source docs/stories/future-proof/slideshows/launch-talk/). Click it to step; ◀ ▶ on its own bar.
+        // Future Proof: three questions, each with a how-it-is / how-it-could-be 3D scene, playing inside the screen
+        // (built by scripts/future-proof/build-questions.py from design/2026-11-11-future-proof-simple/).
         const f = g.futureProof;
-        prog.innerHTML = `<div class="p-fp"><iframe src="${esc(f.talk)}" title="Future Proof: the talk" allow="fullscreen" allowfullscreen></iframe>
-          <a class="fp-full" href="${esc(f.talk)}">Full screen</a></div>`;
+        prog.innerHTML = `<div class="p-fp"><iframe src="${esc(f.questions)}" title="Future Proof: three questions" allow="fullscreen" allowfullscreen></iframe>
+          <a class="fp-full" href="${esc(f.questions)}">Full screen</a></div>`;
       } else {
         const seen = store.get('bc-ppb');
         const mm = s.minister && CAB.find(x => x.post === s.minister);
