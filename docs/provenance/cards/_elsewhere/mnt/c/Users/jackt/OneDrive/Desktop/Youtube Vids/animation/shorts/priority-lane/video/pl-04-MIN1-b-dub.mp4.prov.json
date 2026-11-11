@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-dub.mp4",
+ "made": "2026-11-11T11:29:54+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+ "why": "Priority Lane minister lip-sync (lip-sync-dub), 2026-11-11",
+ "prompt": "Orus take min-b-orus.wav, speech 0.234-3.80 s, atempo 1.26, -20.5 LUFS, placed at 0.68 s (mouth opens 0.67-0.75; voice onset 0.71). Bed = clip's own ambience from 3.7 s, looped, -8 dB."
+}
