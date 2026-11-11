@@ -45,5 +45,13 @@
   ],
   "feedback": "feedback/picks-r1",
   "feedback_docs": 2
+ },
+ {
+  "at": "2026-11-11T13:48:15+00:00",
+  "stage": "storyboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g",
+  "what": "storyboard r1: 4 frames, re-shoot choices, 2-3 animation options each",
+  "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-storyboard.html"
  }
 ]
