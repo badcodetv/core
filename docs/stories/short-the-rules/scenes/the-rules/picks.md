@@ -168,3 +168,4 @@ nursery rhyme part is perfect right now"*. Round `../../songs/dnb-r2`.
 Kai: *"could we animate it? … let's fill the gap in Premiere"* → `HR7-d-b` approved; clip job `h1` (4 s).
 
 Kai on dnb-r2 (2026-11-11): *"drop the raga… drop the reggae influence… the first one, the hard step, but just without the Reese… the real mid-90s Amen heavy bass… It should just sound like a council estate… up the weirdness"*. Round `../../songs/dnb-r3` (4 prompts, higher weirdness).
+Kai picked the drop from dnb-r3: *"https://suno.com/song/feb1a0c7-b17d-46e9-bb56-193c6c7882a9 … it's this one. Great job."* (concrete-stairwell-distortion, w75). Written into sound.md; recorded for A2.

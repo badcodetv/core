@@ -141,5 +141,16 @@
   "round": 6,
   "url": "https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY",
   "what": "clips page v6: hang-and-rip stills HR2-a-a/b for approval"
+ },
+ {
+  "at": "2026-11-11T14:33:32+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E",
+  "what": "cut 4 = Premiere r3 (hang-and-rip before the climb, Kai's move) + the dnb-r3 concrete-stairwell drop",
+  "rebuild": "python3 scripts/shorts/the_rules_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-the-rules/scenes/the-rules <out-dir>",
+  "decided": [
+   "Kai picked the dnb-r3 drop feb1a0c7"
+  ]
  }
 ]

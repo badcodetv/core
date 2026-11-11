@@ -21,8 +21,8 @@ MEDIA = pathlib.Path(cfg['media'])
 CUT = MEDIA / 'cut'; CUT.mkdir(parents=True, exist_ok=True)
 CLIPS = MEDIA / 'video'
 HYMN = MEDIA / 'music/4f37afd8-16ec-4b66-9885-54030500a37e-4f37afd8.wav'   # 16.52 s
-DROP = MEDIA / 'music/5b008987-305c-4634-8436-9c2aa726c891-5b008987.wav'   # 47.04 s
-ROUND = 3
+DROP = MEDIA / 'music/rules-r3-concrete-stairwell-distortion-v6-w75-feb1a0c7.wav'   # 60 s, round dnb-r3 pick (Kai 2026-11-11)
+ROUND = 4
 
 W, H, FPS = 1080, 1920, 24
 F = 1 / FPS
@@ -35,12 +35,12 @@ SHOTS = [('stack', 'tr-r01-ST3-a-a.mp4', 0, 64),
          ('islands', 'tr-02-IS4-a-b.mp4', 179, 69),
          ('bin', 'tr-b3-BI5-a-a.mp4', 248, 131),
          ('riot', 'tr-r04a-TE4-a-a.mp4', 379, 65),
-         ('climb', 'tr-c1-CL3-c-a.mp4', 444, 72),
-         ('hang', 'tr-h1-HR7-d-b.mp4', 516, 67),
+         ('hang', 'tr-h1-HR7-d-b.mp4', 444, 67),    # Kai moved hang-and-rip before the climb in r3
+         ('climb', 'tr-c1-CL3-c-a.mp4', 511, 72),
          ('pen', 'tr-05-PE4-b-a.mp4', 583, 68)]
 SHOTS = [(b, c, s * F, d * F) for b, c, s, d in SHOTS]
 DROP_START = 379 * F                          # Kai: the drop lands on the riot
-DROP_IN = float(sys.argv[sys.argv.index('--drop-in') + 1]) if '--drop-in' in sys.argv else 274 * F  # Kai's drop point, 11.42 s into the take
+DROP_IN = float(sys.argv[sys.argv.index('--drop-in') + 1]) if '--drop-in' in sys.argv else 0.0  # new take from its start; Kai slides it to the drop in Premiere
 DROP_DUR = 274 * F                            # to 27.21 s, a frame past the pen
 TOTAL = DROP_START + DROP_DUR
 LINES = [('bed', 3.2, 2.9, "We can't afford a bed for you,"), ('purse', 6.1, 1.8, 'The purse is far too thin;'),
@@ -85,10 +85,10 @@ def main():
                       'lines': [{'i': k, 'who': 'school', 'name': 'The whole school', 't': lt, 'dur': ld, 'text': tx, 'by': 'kai'}
                                 for k, (b, lt, ld, tx) in enumerate(LINES) if b == beat]})
     edl = {'sequence': f'short-the-rules-1-rules-r{ROUND}', 'title': 'The Rules Timeline',
-           'heading': f'The Rules — cut {ROUND} (Kai\'s Premiere edit)',
-           'intro': 'Cut 3 is your own edit from Premiere, carried back: tighter (27.2 s), the drop lands on the riot at 15.8 s '
-                    'from 11.4 s into the take, and the new hang-and-rip shot fills your gap before the pen (a still for now, '
-                    'its clip is next). Play it, click any shot or sound, leave notes.',
+           'heading': f'The Rules — cut {ROUND} (Premiere r3: hang-and-rip, new drop)',
+           'intro': 'Cut 4 = Premiere r3: your edit with the hang-and-rip clip (you moved it before the climb) and the new '
+                    'concrete-stairwell drop from round 3, played from its first second. In Premiere it sits on A3 with the old '
+                    'Amen muted on A2: slide it to its best drop point. Play it, click any shot or sound, leave notes.',
            'fps': FPS, 'total': TOTAL, 'beats': beats,
            # Premiere gets the Flow clip itself from its first frame (handles for Kai's trims), not the upscaled copy
            'video': [{'file': str(CLIPS / clip), 'in': 0.0, 'start': t, 'dur': d, 'beat': str(i), 'preview': str(p)}
@@ -96,7 +96,7 @@ def main():
            'audio': [{'track': 'A1', 'name': 'mus-hymn', 'file': str(HYMN)},
                      {'track': 'A2', 'name': 'mus-drop', 'file': str(DROP), 'at': DROP_START, 'in': DROP_IN, 'dur': DROP_DUR}],
            'events': [{'stem': 'mus-hymn', 't': 0.0, 'dur': 16.52, 'what': 'The hymn (whole school + upright piano)', 'src': str(HYMN)},
-                      {'stem': 'mus-drop', 't': DROP_START, 'dur': DROP_DUR, 'what': f'Amen drop from {DROP_IN:.2f} s of the take (Kai\'s drop point), through the pen', 'src': str(DROP)}],
+                      {'stem': 'mus-drop', 't': DROP_START, 'dur': DROP_DUR, 'what': f'Concrete-stairwell drop (dnb-r3) from {DROP_IN:.2f} s of the take, through the pen', 'src': str(DROP)}],
            'flags': ['Line times are where the words are sung; your cuts now land a little before them.',
                      'Your fades on the hymn and the drop (Premiere transitions) are not in this preview.',
                      'Riot clip: the rust mask\'s triangle is faint in places.',

@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/music/rules-r3-concrete-stairwell-distortion-v6-w75-feb1a0c7.wav",
+ "made": "2026-11-11T14:31:21.371Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "feb1a0c7-b17d-46e9-bb56-193c6c7882a9",
+ "inputs": {
+  "title": "Rules r3-concrete-stairwell-distortion-v6-w75",
+  "song": "https://suno.com/song/feb1a0c7-b17d-46e9-bb56-193c6c7882a9"
+ },
+ "settings": {
+  "durationSec": 60
+ }
+}

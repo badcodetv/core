@@ -99,7 +99,7 @@
    "bin": "short-the-rules-1-rules-r3",
    "built": "2026-11-11",
    "project": "/mnt/d/badcode-videos/shorts/the-rules/the-rules.prproj",
-   "what": "clone of Kai's hand-edited r2, with the hang-and-rip clip tr-h1-HR7-d-b in his gap (21.5 s, 67 frames, scaled 150%)",
+   "what": "clone of Kai's hand-edited r2, with the hang-and-rip clip tr-h1-HR7-d-b in his gap (21.5 s, 67 frames, scaled 150%); Kai then moved hang-and-rip before the climb; new dnb-r3 drop on A3 from 15.79 s (in 0), old Amen on A2 muted",
    "how": "Sequence.createCloneAction on r2, renamed; clip placed by eval"
   }
  }
