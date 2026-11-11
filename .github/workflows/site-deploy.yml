@@ -10,6 +10,7 @@ on:
       - apps/site/**
       - docs/government/manifesto/**
       - docs/government/policies/**
+      - docs/government/debates/**
   workflow_dispatch:
 concurrency:
   group: site-deploy
@@ -19,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # each policy page prints its own git history (design §4.2)
       - uses: actions/setup-node@v4
         with:
           node-version: 22
