@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-11T13:05:24+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/YcJX759MtLbfgzSpxiJeKM",
+  "what": "dialogue options: the charity-advert voiceover (10 writers, 3 drafts)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-11-short-sponsor-a-chancellor-dialogue/options.json design/2026-11-11-short-sponsor-a-chancellor-dialogue.html"
+ }
+]

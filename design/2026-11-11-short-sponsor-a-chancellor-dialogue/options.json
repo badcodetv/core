@@ -1,0 +1,362 @@
+{
+ "page_title": "Sponsor a Chancellor Script",
+ "title": "Sponsor a Chancellor: script options",
+ "about": "Three combined drafts of the whole voiceover for the parody charity appeal, built from ten writers who each pushed one shape to its extreme, with every shape ranked underneath. Nothing has changed yet: no script, scene file or voice has been touched.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "the picture carries it",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Logic said plainly",
+   "title": "The logic said plainly",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "From the future",
+   "title": "From the future, the narrator hijacks the advert",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-04-from-the-future.md"
+  },
+  {
+   "id": "05",
+   "name": "Other side wins",
+   "title": "The other side wins (the chancellor pleads his own case, sincerely)",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-05-other-side-wins.md"
+  },
+  {
+   "id": "06",
+   "name": "Reversal",
+   "title": "Reversal (the turn arrives before the narrator expects it)",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "The chorus",
+   "title": "The chorus: his butler, his accountant and a donor testify",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-07-chorus.md"
+  },
+  {
+   "id": "08",
+   "name": "Place is argument",
+   "title": "The place is the argument",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft, the charity appeal grammar played dead straight",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, the button that gets shared",
+   "file": "design/2026-11-11-short-sponsor-a-chancellor-dialogue/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "The appeal (the whole short)",
+   "where": "docs/marketing/badcode-shorts.md #6 (slate draft)",
+   "scene": "short-sponsor-a-chancellor",
+   "target": "10-20 seconds of voice in total, ending on a button after (or instead of) the median-pay card",
+   "now_from": "docs/marketing/badcode-shorts.md #6 (slate draft)",
+   "now": [
+    {
+     "who": "NARRATOR",
+     "line": "This is Jeremy. Jeremy only earns £100,000 a year."
+    },
+    {
+     "who": "NARRATOR",
+     "line": "For just £3 a month, you could help him afford a second wine fridge."
+    },
+    {
+     "who": "SCREEN",
+     "line": "[freeze frame] Median UK full-time pay: £39,039 (ONS, 2025)"
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "The straight appeal",
+     "length": "about 13 s",
+     "total": "~11 s voice + 2 s silent card = ~13 s",
+     "bet": "The format played completely straight is the joke: no wink, the card lands in silence, and the button is the charity sign-off line left to sting on its own.",
+     "lines": [
+      {
+       "who": "SCREEN",
+       "line": "[black and white, slow motion, one low piano note, a grey hallway, a man in a good coat standing very still]",
+       "tags": [
+        "09",
+        "02"
+       ],
+       "s": "0"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "[soft, slow, barely above a whisper] This is Crispin.",
+       "tags": [
+        "all"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "Crispin is a Chancellor. [beat] Crispin only earns a hundred thousand pounds a year.",
+       "tags": [
+        "09",
+        "04"
+       ],
+       "s": "4.0"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "For just three pounds a month, you could help him afford a second wine fridge.",
+       "tags": [
+        "all"
+       ],
+       "s": "4.0"
+      },
+      {
+       "who": "SCREEN",
+       "line": "[freeze frame, piano stops dead, 2 s of silence] Median UK full-time pay: £39,039 a year (ONS, April 2025)",
+       "tags": [
+        "all"
+       ],
+       "s": "2.0 (held, no voice)"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "[same soft voice, no change of tone] Please give generously.",
+       "tags": [
+        "01",
+        "10"
+       ],
+       "s": "1.5"
+      }
+     ],
+     "notes": [
+      "Trim: drop 'Crispin is a Chancellor.' and the length falls to about 10 s voice; the card and 'Chancellor' on screen can do it.",
+      "Button swaps (about 1.5-3 s): 'Crispin thanks you.' / 'Sponsor a Chancellor today. Somebody has to.' / hold on the card with no line.",
+      "No protected lines in this dialogue. The slate's three beats all survive; Jeremy is replaced.",
+      "Risk: the sign-off is the mildest button of the three drafts, so the delivery has to be sincere to the point of cruelty. 'Crispin' must be checked against current and recent chancellors before it is voiced. £100,000 and £3 are the joke's own numbers, not claims; only £39,039 (ONS, April 2025) is a checked fact."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "The card comes early",
+     "length": "about 14 s",
+     "total": "~10.5 s voice + 2 s silent card + 1 s end card = ~14 s",
+     "bet": "The viewer gets the joke by second four, so reward them: the median card hits early, the piano dies, and then the narrator simply carries on asking for money. The sting is the carrying on.",
+     "lines": [
+      {
+       "who": "NARRATOR",
+       "line": "[slow, soft, sad piano, black and white, a man alone in a vast kitchen] This is Crispin. Crispin only earns a hundred thousand pounds a year.",
+       "tags": [
+        "06",
+        "08",
+        "01"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "SCREEN",
+       "line": "[piano cuts dead, FREEZE on Crispin's face, 2 s of silence] Median UK full-time pay: £39,039 a year (ONS, April 2025)",
+       "tags": [
+        "06",
+        "04"
+       ],
+       "s": "2.0 (held, no voice)"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "[same voice, piano creeps back, entirely unbothered] For just three pounds a month, you could help Crispin afford a second wine fridge.",
+       "tags": [
+        "06"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "[tiny beat] Crispin says thank you.",
+       "tags": [
+        "06",
+        "02"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "SCREEN",
+       "line": "[end card, charity style] SPONSOR A CHANCELLOR",
+       "tags": [
+        "06"
+       ],
+       "s": "1.0"
+      }
+     ],
+     "notes": [
+      "Trim: cut 'Crispin says thank you.' and end on the card alone (voice falls to 9 s, still just under target; the runtime stays near 12 s).",
+      "Button swap: 'Crispin says thank you. He has already forgotten your name.' (adds about 1.5 s; contempt for distance, nearer to a stated moral).",
+      "No protected lines.",
+      "Risk: putting the card at about 4 s can deflate the second half; 'second wine fridge' then has to be funny alone. The voice must not wink when it resumes, or it reads as lazy. Keep the name first-name only and check it points at no real chancellor."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "Keep your £3",
+     "length": "about 15 s",
+     "total": "~12 s voice + 2.5 s card hold = ~15 s",
+     "bet": "The share line is the button: the one moment the charity format cannot survive is the donor being told to say no, and saying it kindly is the nurturing note under the snark.",
+     "lines": [
+      {
+       "who": "NARRATOR",
+       "line": "[soft, slow, wobbling piano, black and white] This is Crispin.",
+       "tags": [
+        "all"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "Crispin only earns £100,000 a year.",
+       "tags": [
+        "10",
+        "01",
+        "09"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "[beat, he gazes into a wine fridge] Tonight, his second wine fridge stands empty. For just £3 a month, you can help.",
+       "tags": [
+        "10",
+        "02",
+        "09"
+       ],
+       "s": "5.0"
+      },
+      {
+       "who": "SCREEN",
+       "line": "[freeze frame, piano stops, 2.5 s of silence] Median UK full-time pay: £39,039 a year (ONS, April 2025)",
+       "tags": [
+        "all"
+       ],
+       "s": "2.5 (held, no voice)"
+      },
+      {
+       "who": "NARRATOR",
+       "line": "[gentler than before, kind] Or keep your £3. You're going to need it.",
+       "tags": [
+        "10",
+        "04"
+       ],
+       "s": "3.0"
+      }
+     ],
+     "notes": [
+      "Trim: drop 'Tonight, his second wine fridge stands empty.' (the dead line) and the voice falls to about 9 s; the ask then reads 'For just £3 a month, you could help him afford a second wine fridge.' as in the slate.",
+      "Button swaps: 'Please give generously. He never has.' / 'Rupert thanks you. He won't know it was you.' style thank-you / hold the card in silence.",
+      "No protected lines.",
+      "Risk: 'You're going to need it' can read as smug or as pity for the viewer; it must be warm. It is the closest to addressing the viewer directly, so check it against the-reader rules (it says nothing about why they will need it, and it blames nobody). The empty fridge is an invented detail and the name must be checked."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "10",
+     "length": "~12.5 s voice",
+     "verdict": "Best button by a distance: 'Or keep your £3' flips the format, is kind, and is the line people repeat. In range, point lands by silence, no moral. Fails on: 'tonight, his second wine fridge stands empty' is dead weight, and the last line is the only one that speaks to the viewer, so delivery is everything."
+    },
+    {
+     "rank": 2,
+     "shape": "09",
+     "length": "~17.5 s voice",
+     "verdict": "Truest to the charity grammar (first name, one domestic detail, shrunken price, sign-off), played with no wink. The silent card is right. Fails on: 'Because somebody out there is struggling' is limp as a button, the 'just one wine fridge' setup costs 3.5 s, and buttons B and C tip into stated moral."
+    },
+    {
+     "rank": 3,
+     "shape": "06",
+     "length": "~10.5 s voice",
+     "verdict": "The only shape with a structural idea: the card early, the narrator unbothered. Short, in range, no moral. Fails on: once the card has landed at 4 s the second half has less to do, and 'Crispin says thank you' is a polite button with little sting."
+    },
+    {
+     "rank": 4,
+     "shape": "01",
+     "length": "~9 s voice",
+     "verdict": "Cleanest and most disciplined, and the dry button works. Fails on: under the 10 s voice target on its own, and dropping 'only' removes the self-pity that is the actual joke in the source quote."
+    },
+    {
+     "rank": 5,
+     "shape": "04",
+     "length": "~17 s voice",
+     "verdict": "A real BadCode hook: the future voice breaks in over the card. Fails on: it breaks the parody just as it lands, 'I'm calling from 2054' asks a cold viewer to know the lore, 'the fridges survive' is obscure, and it needs a second voice register. The advert half is excellent and is borrowed in 1A."
+    },
+    {
+     "rank": 6,
+     "shape": "08",
+     "length": "~17.5 s voice",
+     "verdict": "The kitchen the size of a bus depot is a strong image and 'the space where a second one should be' is a good absurd gap. Fails on: five place-lines eat the budget, it only works if the shots are absurdly big, and 'He wouldn't' is a personal attack on the man rather than his comfort."
+    },
+    {
+     "rank": 7,
+     "shape": "02",
+     "length": "~9 s voice",
+     "verdict": "Sound instinct (fridge with condensation reads as tears, empty alcove reads as the gap). Fails on: depends on stills landing without text, under target on voice, and 'He has one.' is a line that means nothing without the picture. The visual notes are for the shot list, not the script."
+    },
+    {
+     "rank": 8,
+     "shape": "03",
+     "length": "~20.5 s voice",
+     "verdict": "The auditor deadpan is a good register. Fails on: far too many numbers for a phone (36 pounds a year, then 39,039, then 'two and a half of them'), it does the viewer's sum for them (which is the moral said aloud), 'Neither will you' blames the viewer, and the derived ratio is an unchecked [CHECK] figure. Over target."
+    },
+    {
+     "rank": 9,
+     "shape": "05",
+     "length": "~15 s voice",
+     "verdict": "Sincere pleading is a clever angle and 'it doesn't go far' is the source quote. Fails on: the button 'He is just very good at sounding like it' states the moral aloud, it needs a character voice and a face (casting, and the freeze frame is then a real-looking person), and the second house is an extra invented claim."
+    },
+    {
+     "rank": 10,
+     "shape": "07",
+     "length": "~20 s voice",
+     "verdict": "The testimony format is authentic to charity adverts. Fails on: four voices in 20 s is a sketch, not an advert, four casts to make, butler and accountant lean on class stereotype, and the donor risks mocking people who give to charity. Cost far above the payoff."
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "The name. Drafts use Crispin (first name only, so the target is the office, not a person). Other candidates from the writers: Hugo, Rupert, Giles, Montague. Which one, and are you happy to have it checked against current and recent chancellors and ministers before it is voiced? ⚠️ Claude's check: Crispin Blunt was a real Conservative MP (Reigate, until 2024), so 'Crispin' alone may read as him. Better: a name no recent MP or minister has had; any pick gets checked before it is voiced."
+  },
+  {
+   "id": "q2",
+   "text": "Does the narrator say 'Chancellor' out loud (1A) or leave it to the title of the short and the end card (1B, 1C)? Saying it makes the target unmistakable; leaving it out is drier."
+  },
+  {
+   "id": "q3",
+   "text": "Which button: the polite sign-off (1A 'Please give generously'), the thank-you (1B 'Crispin says thank you'), or the kind flip (1C 'Or keep your £3. You're going to need it.')? Or do you want to write your own? The flip is the strongest but the only one that speaks to the viewer."
+  },
+  {
+   "id": "q4",
+   "text": "Where does the median card land: at the end after the ask (1A, 1C) or early at about 4 s with the narrator carrying on (1B)? The early version risks deflating the second half but is the only structural twist."
+  },
+  {
+   "id": "q5",
+   "text": "Length. Two of the drafts are about 10-12 s of voice. Is that the point (short, then loop), or do you want it nearer 20 s? If longer, the cheapest thing to restore is the 'second wine fridge' setup from shape 09 ('Every evening he has to look at just one wine fridge', about 3.5 s)."
+  }
+ ]
+}
