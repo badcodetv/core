@@ -1,26 +1,23 @@
 {
- "round": 2,
+ "round": 3,
  "plan": [
   {
-   "h": "What changed (your round 1 notes)",
+   "h": "Your Premiere edit, carried back",
    "items": [
-    "Every shot is a moving Flow clip now; cut on the words: stack 0–3.2, bed 3.2–6.1, purse 6.1–7.9, islands 7.9–11, bin 11–16.6.",
-    "New shots: people asleep in a bank doorway (bed), an empty purse at a till (purse), asleep beside the bins (bin).",
-    "From 16.6 s the gang go mental: the riot (re-rolled so the masks hold), then the new climb up the shelves, then the pen. Drop cut dead at the pen."
+    "This page now plays your hand edit from Premiere: 27.2 s, tighter on every shot, the drop landing on the riot at 15.8 s from 11.4 s into the take, running under the pen.",
+    "The gap you left (21.5–24.3 s) holds the new hang-and-rip still (HR2-a-a) until its clip exists."
    ]
   },
   {
-   "h": "Still rough",
+   "h": "Next",
    "items": [
-    "The drop plays from the top of the 47 s take: you find the real drop point in Premiere.",
-    "Riot: the rust mask's triangle is faint in places. Climb: the yellow mask turns away for a moment.",
-    "No text overlay yet: the tax line is owed a fact check."
+    "Approve the hang-and-rip still on the clips page, then it is animated (about 3 s needed) and dropped into the gap here and in Premiere as r3."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Note anything on the page: timing, shots, the drop, the length (32.6 s)."
+    "Approve HR2-a-a (or a/b): https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY"
    ]
   }
  ],

@@ -123,5 +123,23 @@
   "decided": [
    "Kai: tear = riot re-roll tr-r04a; end on the pen; add the climb (CL3-c-a)"
   ]
+ },
+ {
+  "at": "2026-11-11T12:41:09+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E",
+  "what": "cut 3 = Kai's Premiere hand edit carried back (27.2 s), hang-and-rip still holding the gap",
+  "rebuild": "python3 scripts/shorts/the_rules_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-the-rules/scenes/the-rules <out-dir>",
+  "decided": [
+   "Kai: his Premiere edit is the base; add hang-and-rip between climb and pen"
+  ]
+ },
+ {
+  "at": "2026-11-11T12:41:09+00:00",
+  "stage": "clips",
+  "round": 6,
+  "url": "https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY",
+  "what": "clips page v6: hang-and-rip stills HR2-a-a/b for approval"
  }
 ]

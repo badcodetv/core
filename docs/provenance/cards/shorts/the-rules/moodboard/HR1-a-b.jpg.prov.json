@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR1-a-b.jpg",
+ "made": "2026-11-11T12:36:54.845Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same council archive basement, same five masked gang members, same cold flickering tube light and grain as the first image, a moment later and even wilder. Two of them now dangle from the top shelves by their arms, legs kicking, yanking files loose so paper rains down. The other three stand on the paper-strewn floor in the foreground, closer to the low camera, tearing thick handfuls of pages in half with both fists, mouths of their masks toward the lens, scraps exploding outward. Each balaclava matches the mask in the second picture: white braided ring around the face, one small red triangle inside it near the top right, tip pointing down, each mask its own colour. Worm's-eye view, ultra-wide, tall portrait frame.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/CL3-c-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/CL3-c-a.jpg",
+   "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0b390d63-1e14-436d-b9e6-eec7067424ae"
+}

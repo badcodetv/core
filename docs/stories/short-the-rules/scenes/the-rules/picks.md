@@ -140,3 +140,13 @@ reference itself: Flow returned an input, filed as `.STRAY-maskref`), second pas
 zoomed check** (five masks, one triangle each, inside the ring, pointing down); offered with `CL1-a-b` (unfixed, busier)
 on the clips page v4, awaiting Kai's approval before any video credit.
 Kai: *"I like the CL3CA, that's it."* → `CL3-c-a` approved; clip job `c1` (6 s), placed after the riot, before the pen.
+
+## 2026-11-11: Kai's Premiere edit; a hang-and-rip shot for the gap
+
+Kai cut `short-the-rules-1-rules-r2` by hand in Premiere (dump `feedback/premiere-r2-kai/state.json`): 27.2 s, every
+shot tighter, the drop landing on the riot at 15.79 s from 11.42 s into the take, running under the pen; a gap
+21.5–24.29 s. Kai: *"we need to get even more mental… a scene in between them ripping everything up and then them on
+the shelves… two of them hanging from the shelves and the other ones just ripping more paper up… one more clip to go in
+between [the climb and the pen]"*, and *"the changes in Premiere… get back into the timeline"*. Carried back as timeline
+round 3 (cut script SHOTS in frames). Stills: `HR1-a-a/b` (edit of CL3-c-a + mask ref; b lost the rings), mask fix
+`HR2-a-a/b`, both pass the zoomed check (seven masks); on the clips page v6 awaiting approval.
