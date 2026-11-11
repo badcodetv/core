@@ -1,6 +1,6 @@
 # The BadCode Government
 
-A cabinet of AI ministers that reads the news every morning, forms positions in BadCode's voice,
+A cabinet of AI ministers that reads the news (swept three mornings a week), forms positions in BadCode's voice,
 and grows over time. **It is a working demonstration of Future Proof** (Kai, 2026-11-11): the
 government runs on the three tenets it proposes, in the open. Where it is heading (policy modules,
 real debate, checkable predictions, an open platform): [`design/2026-11-11-future-proof-government/`](../../design/2026-11-11-future-proof-government/README.md). It is the government the UK would have if BadCode ran it, sent back from the
@@ -50,7 +50,7 @@ persona: change the brief, and the minister changes.
 ```
                        Bob project "badcode"   (all times Europe/London)
  ┌────────────────────────────────────────────────────────────────────────────┐
- │ 05:00  NEWS GATHERER (Opus) ──Workflow news-sweep.js──► 24 Sonnet researchers│
+ │ 05:00  NEWS GATHERER (Opus) ──Workflow news-sweep.js──► 8 Sonnet researchers │
  │        one per beat; dedupe; label ─────────► ~30-60 news memories          │
  │                                                + 1 news-digest memory        │
  │ 06:00  CABINET (Opus, one session): chairs as PM, speaks as each of the     │
@@ -68,14 +68,14 @@ persona: change the brief, and the minister changes.
 
 | Schedule | Worker | When | What it does |
 | --- | --- | --- | --- |
-| `gov-1-news` | `news-gatherer` | daily 05:00 | Runs the [`news-sweep`](./workflows/news-sweep.js) Workflow: 24 Sonnet researchers, one per beat, at most 6 web searches each, UK first and the world for its effect on the UK. Dedupes, then writes one `kind=news` memory per story and one `kind=news-digest`. Falls back to ordinary subagents in batches of 8 if the Workflow tool is missing. Skips the day if the digest already exists. |
+| `gov-1-news` | `news-gatherer` | Mon, Wed, Fri 05:00 | Runs the [`news-sweep`](./workflows/news-sweep.js) Workflow: 8 Sonnet researchers, one per beat, at most 6 web searches each, UK first and the world for its effect on the UK. Dedupes, then writes one `kind=news` memory per story and one `kind=news-digest`. Falls back to ordinary subagents in batches of 8 if the Workflow tool is missing. Skips the day if the digest already exists. |
 | `gov-2-cabinet` | `cabinet` | daily 06:00 | Reads review comments on the open PR and acts on them first, then sits the cabinet over today's news and commits onto the rolling PR. Stops (with a notice) if today's digest is missing. |
 | `gov-3-personnel` | `cabinet-secretary` | Sundays 20:00 | Reads the week's decisions, feedback and merges, and edits the minister briefs on the same rolling PR. A separate session on purpose: the editor does not mark its own work. |
 
 Scheduled runs in one Bob project never overlap; they queue and run one at a time, so the cabinet
 always waits for the gatherer. The names are numbered because after an outage Bob catches up
 missed firings in schedule-name order. The gatherer and the Cabinet Secretary are separate
-sessions from the cabinet: 24 researchers' raw output would crowd the cabinet's context, and an
+sessions from the cabinet: 8 researchers' raw output would crowd the cabinet's context, and an
 editor should not judge its own work.
 
 The workers are [`workers/news-gatherer.md`](./workers/news-gatherer.md),
@@ -132,7 +132,7 @@ There is only ever **one** open government PR. You never have to look at more th
   `docs/government/ministers/*.md`. Neither ever edits `workers/`, `shared.md` or `schedules.json`:
   those change only by a human PR.
 - Commits are authored `BadCode Government <government@badcode.tv>`.
-- Cadence is daily for now; changing it is one line in [`schedules.json`](./schedules.json).
+- Cadence: the news is swept Monday, Wednesday and Friday (cut from daily with 24 researchers on 2026-11-11, to save tokens); the cabinet, opposition and statistician still sit daily on the latest sweep. Changing it is one line in [`schedules.json`](./schedules.json).
 
 ## How to review a government PR
 

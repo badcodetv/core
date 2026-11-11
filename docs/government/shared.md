@@ -191,7 +191,7 @@ Ten posts. The key is the file name, the label key and the `minister=` value:
 automation belong to Work and Pensions and the Chancellor (and see "Who owns AI" below). The Prime
 Minister chairs.
 
-The workers: `news-gatherer` (05:00, writes the news), `cabinet` (06:00, one session playing all ten
+The workers: `news-gatherer` (05:00 Monday, Wednesday and Friday, writes the news), `cabinet` (06:00, one session playing all ten
 ministers, writes the manifesto, policies and statements, and answers the opposition), `opposition`
 (07:30, a different model, finds the strongest case against each changed policy, comments only),
 `statistician` (08:00, gates every changed policy on whether it can be measured and marks world

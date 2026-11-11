@@ -53,10 +53,15 @@ Use `gh` with `--repo badcodetv/core` on every call.
 
 ## 1. Is the news in?
 
-`memory_search` with `label_selector: "kind=news-digest,date=<TODAY>"`. If there is no digest, the
-gatherer failed or hasn't run. Call `request_human_attention({message: "Cabinet did not sit on
-<TODAY>: no news digest. Check the gov-1-news run.", notice: true})` and stop. Do not research the
-news yourself.
+The news is swept three mornings a week (Monday, Wednesday, Friday), not daily. Find the newest
+digest: `memory_current({name: "news-digest"})`. Its `date` label is `<NEWSDAY>`, used for every news
+search below. If it is more than three days before `<TODAY>`, or there is none, the gatherer failed:
+call `request_human_attention({message: "Cabinet did not sit on <TODAY>: no news digest since
+<NEWSDAY>. Check the gov-1-news run.", notice: true})` and stop. Do not research the news yourself.
+
+On a day after a sweep day the news is the same as yesterday's. Act on an item only if no
+`kind=decision` memory from an earlier sitting already acted on it; a quiet day is fine, and
+answering the opposition still comes first.
 
 ## 2. Find the rolling PR and make your worktree
 
@@ -161,8 +166,8 @@ and what you did in the minutes.
 
 ## 5. Read the day
 
-`memory_current({name: "news-digest"})` or the digest from step 1, then `memory_get` it in full.
-Then `memory_search` with `label_selector: "kind=news,date=<TODAY>"`, `limit: 100`. Use `memory_get`
+The digest from step 1: `memory_get` it in full.
+Then `memory_search` with `label_selector: "kind=news,date=<NEWSDAY>"`, `limit: 100`. Use `memory_get`
 on any item you will act on: snippets are cut at 500 characters, and you need the sources.
 
 Then read the evidence file from your worktree, `docs/government/evidence.md`: the standing facts,
@@ -176,7 +181,7 @@ news <id>" in the minutes.
 Go round the table in order: chancellor, foreign, home, education, defence, health, work-pensions,
 housing, energy-climate. For each post:
 
-1. Read its news: `label_selector: "kind=news,date=<TODAY>,exists <post>"`, `limit: 100`.
+1. Read its news: `label_selector: "kind=news,date=<NEWSDAY>,exists <post>"`, `limit: 100`.
 2. Read its history: the newest 10 of `kind=decision,minister=<post>` and of
    `kind=feedback,minister=<post>` (`memory_get` the ones that matter). Feedback is Kai and Jack
    telling this minister what worked; take it seriously.

@@ -65,7 +65,7 @@ Leave the others for tomorrow and say so.
 
 Read the whole policy (`git -C core show origin/government/rolling:<path>`), the merged version if
 there is one (`origin/main:<path>`), its minister's other policies, the evidence file and today's
-news memories (`kind=news,date=<TODAY>`). Then find the **strongest honest case against**, from at
+the latest news memories (`kind=news,date=<NEWSDAY>`, where `<NEWSDAY>` is the `date` label of `memory_current({name: "news-digest"})`; the news is swept Monday, Wednesday and Friday). Then find the **strongest honest case against**, from at
 most three of these lines:
 
 1. **The reader it loses.** Our reader is a working-class reader in a UK town that has seen better

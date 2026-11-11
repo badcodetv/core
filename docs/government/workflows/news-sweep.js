@@ -24,33 +24,17 @@ const TOPICS = [
   'crime-justice', 'migration', 'foreign', 'defence', 'energy-climate', 'tech-ai',
 ]
 
-// The 24 beats. `posts` is a starting suggestion for which ministers usually
+// The 8 beats (cut from 24 on 2026-11-11 to save tokens; Kai). Each is wide, so it returns more. `posts` is a starting suggestion for which ministers usually
 // care (the researcher may add or drop posts per item).
 const BEATS = [
-  { beat: 'UK economy and cost of living', region: 'uk', posts: ['chancellor', 'work-pensions'] },
-  { beat: 'UK jobs and wages', region: 'uk', posts: ['work-pensions', 'chancellor'] },
-  { beat: 'UK welfare and pensions', region: 'uk', posts: ['work-pensions', 'chancellor'] },
-  { beat: 'UK housing and rents', region: 'uk', posts: ['housing'] },
-  { beat: 'NHS and care', region: 'uk', posts: ['health'] },
-  { beat: 'UK schools and universities', region: 'uk', posts: ['education'] },
-  { beat: 'UK crime and courts', region: 'uk', posts: ['home'] },
-  { beat: 'UK migration and asylum', region: 'uk', posts: ['home'] },
-  { beat: 'UK energy bills', region: 'uk', posts: ['energy-climate', 'chancellor'] },
-  { beat: 'climate and weather', region: 'world', posts: ['energy-climate'] },
+  { beat: 'UK economy, jobs, wages, tax and the cost of living', region: 'uk', posts: ['chancellor', 'work-pensions'] },
+  { beat: 'UK welfare, pensions and local councils', region: 'uk', posts: ['work-pensions', 'housing', 'prime-minister'] },
+  { beat: 'UK housing, rents, energy bills and climate', region: 'uk', posts: ['housing', 'energy-climate', 'chancellor'] },
+  { beat: 'NHS, care, schools and universities', region: 'uk', posts: ['health', 'education'] },
+  { beat: 'UK crime, courts, migration and asylum', region: 'uk', posts: ['home'] },
   { beat: 'UK politics and Parliament', region: 'uk', posts: ['prime-minister'] },
-  { beat: 'UK local government', region: 'uk', posts: ['housing', 'prime-minister'] },
-  { beat: 'AI and automation', region: 'world', posts: ['work-pensions', 'chancellor'] },
-  { beat: 'big business and markets', region: 'world', posts: ['chancellor'] },
-  { beat: 'tax and public finances', region: 'uk', posts: ['chancellor'] },
-  { beat: 'US', region: 'world', posts: ['foreign'] },
-  { beat: 'EU and Europe', region: 'world', posts: ['foreign'] },
-  { beat: 'Russia and Ukraine', region: 'world', posts: ['foreign', 'defence'] },
-  { beat: 'Middle East', region: 'world', posts: ['foreign', 'defence'] },
-  { beat: 'China and Asia-Pacific', region: 'world', posts: ['foreign'] },
-  { beat: 'Africa and Latin America', region: 'world', posts: ['foreign'] },
-  { beat: 'defence and security', region: 'world', posts: ['defence'] },
-  { beat: 'global trade and supply chains', region: 'world', posts: ['chancellor', 'foreign'] },
-  { beat: 'science and technology', region: 'world', posts: ['work-pensions', 'chancellor'] },
+  { beat: 'AI, automation, big business and markets', region: 'world', posts: ['work-pensions', 'chancellor'] },
+  { beat: 'world affairs, war, defence and trade (US, Europe, Russia and Ukraine, Middle East, China)', region: 'world', posts: ['foreign', 'defence', 'chancellor'] },
 ]
 
 const ITEM = {
@@ -101,7 +85,7 @@ const results = await parallel(BEATS.map((b, i) => () => agent(
 Your beat: **${b.beat}** (${b.region === 'uk' ? 'UK news' : 'world news, for its effect on the UK'}).
 Ministers who usually care: ${b.posts.join(', ')}.
 
-Find the news on your beat from the last 48 hours (published on ${date} or the two days before).
+Find the news on your beat from the last 72 hours (published on ${date} or the three days before; the sweep runs three times a week).
 
 How to work (search results alone have no dates, so you must open pages):
 1. Start by OPENING a dated news page with WebFetch: a section front for your beat (for example bbc.co.uk/news/<section>, theguardian.com/<section>, gov.uk/search/news-and-communications, a wire such as apnews.com or reuters.com) or the articles your searches find. Article pages and section fronts carry dates; search snippets do not.
@@ -111,7 +95,7 @@ How to work (search results alone have no dates, so you must open pages):
 You may return an empty list ONLY after you have opened at least three dated pages and found nothing in the window; never return empty because the search snippets lacked dates.
 Do not write any files and do not call any memory or Bob tools: just return the items.
 
-Return the 2 to 5 most important stories on your beat (fewer only if the beat is genuinely quiet). Skip opinion pieces and live blogs with no news.
+Return the 3 to 7 most important stories on your beat (it is a wide beat: cover each part of it) (fewer only if the beat is genuinely quiet). Skip opinion pieces and live blogs with no news.
 
 ${RULES}`,
   { label: `beat ${i + 1}: ${b.beat}`, phase: 'Research', model: 'sonnet', schema: ITEMS_SCHEMA },
