@@ -113,7 +113,7 @@
     "duration": 6
   },
   "premiere": {
-    "current": "cut9",
+    "current": "cut10",
     "cut1": {
       "sequence": "Balaclava Gang 1",
       "bin": "Balaclava Gang clips",
@@ -228,6 +228,27 @@
       "check": {
         "state": "in sync",
         "why": "page and sequence built from edit-plan-r9.json"
+      }
+    },
+    "cut10": {
+      "sequence": "Balaclava Gang 10",
+      "guid": "f60770bd-5ba3-4e03-b794-b525d07fba42",
+      "bin": "Balaclava Gang 10",
+      "built": "2026-11-11",
+      "project": "/mnt/d/badcode-videos/bank-robbery-music/bank robbery_1.prproj",
+      "edl": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/premiere/edl.json",
+      "what": "cut 10B round 5 (Kai: 'I reckon we're there'), 93 shots on V1 from the original clips with in-points, A1 = the version.wav cut to 187.0 s with the 0.12 s fade baked in",
+      "how": "cleanroom/r10/cuts/premiere-edl.py B5 0.12 -> scripts/scene/premiere-plan.py <edl> <plan> --seq 'Balaclava Gang 10' -> import, create_sequence, eval place.js",
+      "page": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys",
+      "check": {
+        "at": "2026-11-11",
+        "state": "in sync",
+        "why": "all 93 shots match plan-B5 to the frame (start, end, in), no gaps; frames at 1, 95, 185 s checked against preview.mp4"
+      },
+      "premiere_ahead": "A1 Volume > Level raised +1.6 dB in Premiere (0.1778 -> 0.2138) so the YouTube export lands at -14.4 LUFS, true peak -1.6; set after the build, not in the edl",
+      "renders": {
+        "master": "/mnt/d/badcode-videos/bank-robbery-music/renders/Balaclava Gang 10 master.mp4 (720p match source, before the gain)",
+        "youtube": "/mnt/d/badcode-videos/bank-robbery-music/renders/Balaclava Gang 10 - YouTube 1080p.mp4 (Premiere 'YouTube 1080p HD' preset, 17 Mbps, -14.4 LUFS; delivery-qc: untagged full range, 0.14% of pixels outside 16-235)"
       }
     }
   },

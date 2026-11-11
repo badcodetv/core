@@ -302,5 +302,12 @@
   "url": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys",
   "what": "Cut 10B round 5: the opening two shots made equal (girder, then the gang on the parapet), banana basement out (Kai's round-4 note)",
   "rebuild": "python3 cleanroom/r10/cuts/make-B5.py && python3 cleanroom/r10/cuts/assemble.py B5 <out-dir> 0.12"
+ },
+ {
+  "at": "2026-11-11T19:44:42+00:00",
+  "stage": "premiere",
+  "round": 10,
+  "what": "Cut 10B round 5 built into Premiere as 'Balaclava Gang 10' in bank robbery_1.prproj (Balaclava Gang 9 untouched): 93 shots from the original clips, song to 187.0 s with the 0.12 s fade; checked frame-for-frame against plan-B5",
+  "rebuild": "python3 cleanroom/r10/cuts/premiere-edl.py B5 0.12 && python3 scripts/scene/premiere-plan.py /mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/premiere/edl.json /mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/premiere/plan.json --seq 'Balaclava Gang 10'"
  }
 ]
