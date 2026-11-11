@@ -1,0 +1,17 @@
+{
+  "style": "Hardstep jungle, raw Amen break, heavy clean sub-bass boom, 165 BPM, instrumental, no intro, 1994. A long pitched-down 808 kick hum is the only bass: one deep round tone that drops and slides at the end of every bar, shaking the floor. A hard kick doubled under a barely chopped Amen, slammed in from beat one. Empty top end, bare concrete tower-block weight, cold, stark, odd lopsided swing.",
+  "exclude": "reese, growl bass, detuned saw, wobble, ragga, reggae, dancehall, synth lead, rave stabs, pads, strings, piano, riser, build-up, intro",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    55
+  ],
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 45,
+  "maxMode": false,
+  "title": "Rules r3-tower-block-sub-boom",
+  "mode": "custom",
+  "workspace": "short-the-rules"
+}

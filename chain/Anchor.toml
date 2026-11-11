@@ -9,6 +9,7 @@ skip-lint = false
 [programs.localnet]
 emperors_new_coin = "5YSzNEzi1Hk9uTCq3SuYDtjYVUUTN9A69AxX2hy58XCT"
 counter = "F1t91u9XG9WbXPPQVj6mzmgVXPTVx6PZLo5kYaB76u9Q"
+deliberation = "HXU6VKRYKMWNBe8qaqa6myKVcFpRK8pKNacuCvV9FC6Y"
 
 [programs.devnet]
 emperors_new_coin = "5YSzNEzi1Hk9uTCq3SuYDtjYVUUTN9A69AxX2hy58XCT"
@@ -60,5 +61,9 @@ test-faucet = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/faucet.ts"
 # the cost is confined to gazette.ts's own pen cases skipping on a re-run.
 # `./stack reset` brings them back.
 test-gazette = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/gazette.ts"
+# The deliberation program: an append-only record (policies, arguments,
+# predictions, resolutions, labels). Shares the run-everything script; it
+# asserts on movement and fresh keys, so a played ledger does not break it.
+test-deliberation = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/deliberation.ts"
 # Terminal — see the note above `test`. Ends this ledger; `./stack reset` after.
 test-retire = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/retire.ts"

@@ -1,23 +1,24 @@
 {
- "round": 3,
+ "round": 4,
  "plan": [
   {
-   "h": "Your Premiere edit, carried back",
+   "h": "What changed",
    "items": [
-    "This page now plays your hand edit from Premiere: 27.2 s, tighter on every shot, the drop landing on the riot at 15.8 s from 11.4 s into the take, running under the pen.",
-    "The gap you left (21.5–24.3 s) holds the new hang-and-rip still (HR2-a-a) until its clip exists."
+    "The hang-and-rip clip is in (five people, from HR7-d-b). You moved it before the climb in Premiere; this page follows.",
+    "The new drop (round 3, concrete stairwell, your pick) replaces the old Amen. Recorded clean, 60 s."
    ]
   },
   {
-   "h": "Next",
+   "h": "In Premiere (sequence r3)",
    "items": [
-    "Approve the hang-and-rip still on the clips page, then it is animated (about 3 s needed) and dropped into the gap here and in Premiere as r3."
+    "New drop on A3 from 15.8 s, played from its first second; the old Amen is still on A2, muted, with your fade.",
+    "Slide A3 to the drop point you like and put your fade back on it."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Approve HR2-a-a (or a/b): https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY"
+    "Where the new drop should start, and anything else on the page."
    ]
   }
  ],

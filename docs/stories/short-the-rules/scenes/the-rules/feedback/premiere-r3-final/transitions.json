@@ -1,0 +1,6 @@
+{"source": "read from the saved the-rules.prproj (gzipped XML, read only) 2026-11-11 14:43; frames at 24 fps on sequence short-the-rules-1-rules-r3",
+ "note": "The bridge cannot read transitions (docs/premiere/api-notes.md 'Transitions'); the project file can. Objects 188 and 192 belong to r2.",
+ "V1": [{"name": "Cross Dissolve", "from": 638, "to": 662, "what": "pen dissolves to black over the last second"}],
+ "A1": [{"name": "Custom Fade", "from": 345, "to": 396, "what": "hymn fades out over 51 frames (2.125 s) into the drop"}],
+ "A2": [{"name": "Custom Fade", "from": 356, "to": 386, "what": "drop fades in over 30 frames (1.25 s)"},
+        {"name": "Custom Fade", "from": 639, "to": 662, "what": "drop fades out over the last 23 frames"}]}

@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Future Proof: three questions about how Britain decides, and three fixes.">
+<style>[hidden]{display:none!important}body{margin:0}img{max-width:100%}</style>
+<title>Future Proof Questions</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: a plain concrete-grey poster. One giant question per page, a dark stage under it; yellow only where you press. */
+:root{
+  --bg:#e8e8e5; --ink:#151515; --card:#f7f7f5; --line:#cfcfca; --accent:#ffd60a; --stage:#161616;
+  --tagbg:#ffffff; --tagfg:#151515; --now:#d9412c; --go:#21a05a; --mute:#5a5a54;
+  --display:"Anton","Impact","Arial Narrow Bold",sans-serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141516;--ink:#ecece8;--card:#1d1e20;--line:#33343a;--mute:#a4a49c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141516;--ink:#ecece8;--card:#1d1e20;--line:#33343a;--mute:#a4a49c;color-scheme:dark}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:var(--body);font-size:17px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:18px;border-bottom:3px solid var(--ink)}
+.totv{font-family:var(--mono);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-right:auto;margin-left:16px}
+.mark{font-family:var(--display);font-size:26px;letter-spacing:.02em;text-decoration:none;text-transform:uppercase}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.08em;text-decoration:none;padding:6px 10px;border:2px solid var(--ink)}
+nav a[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.eyebrow::before{content:"";display:inline-block;width:.8em;height:.8em;background:var(--accent);margin-right:.5em;vertical-align:-.05em}
+.eyebrow{font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:28px 0 8px}
+h1{font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.92;letter-spacing:-.005em;
+  font-size:clamp(46px,9vw,128px);margin:0;text-wrap:balance}
+.answer{font-family:var(--body);font-weight:800;font-size:clamp(20px,2.6vw,32px);line-height:1.15;margin:18px 0 0;max-width:30ch;text-wrap:balance}
+/* home */
+.home h1{font-size:clamp(46px,8.4vw,120px)}
+.qs{display:grid;gap:0;margin-top:36px;border-top:4px solid var(--ink)}
+.qs a{display:grid;grid-template-columns:120px 1fr auto;gap:20px;align-items:center;text-decoration:none;padding-block:22px;border-bottom:4px solid var(--ink)}
+.qs a:hover,.qs a:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.qs .tag{font-family:var(--mono);font-weight:700;font-size:14px;letter-spacing:.12em;padding-left:8px}
+.qs .q{font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,4.4vw,58px);line-height:.98;min-width:0}
+.qs .go{font-family:var(--display);font-size:44px;padding-right:12px}
+.lede{max-width:60ch;margin-top:22px;font-size:18px}
+/* stage */
+.stage{position:relative;margin-top:30px;background:var(--stage);aspect-ratio:16/9;max-width:100%;overflow:hidden}
+.mount{position:absolute;inset:0}
+.mount canvas{display:block;width:100%;height:100%}
+.tag3d{position:absolute;transform:translate(-50%,-100%);font-family:var(--mono);font-weight:700;font-size:clamp(9px,1.05vw,13px);letter-spacing:.06em;
+  color:var(--tagfg);background:var(--tagbg);padding:3px 6px;white-space:nowrap;pointer-events:none;transition:opacity .25s}
+.tag3d.red{background:var(--now);color:#ffffff}
+.tag3d.green{background:var(--go);color:#ffffff}
+.tag3d.hi{background:var(--accent)}
+.tag3d.blue{background:#2f62d6;color:#fff}
+.caption{position:absolute;left:0;right:0;bottom:0;padding:12px 16px;font-family:var(--display);text-transform:uppercase;font-size:clamp(18px,2.6vw,34px);
+  color:#ffffff;background:linear-gradient(transparent,rgba(0,0,0,.75));pointer-events:none}
+.toggle{display:grid;grid-template-columns:1fr 1fr;margin-top:30px}
+.toggle button{display:flex;align-items:center;gap:14px;font-family:var(--display);text-transform:uppercase;font-size:clamp(18px,2.4vw,30px);padding:14px 20px;border:0;background:#2a2a2a;color:#bdbdb6;cursor:pointer;text-align:left;min-width:0}
+.toggle button .n{font-family:var(--mono);font-weight:700;font-size:.55em;display:grid;place-items:center;width:1.9em;height:1.9em;border:2px solid currentColor;border-radius:50%;flex:none}
+.toggle button .arr{margin-left:auto;font-family:var(--body);font-weight:800;opacity:0}
+.toggle button[aria-pressed="true"]{background:var(--accent);color:#151515}
+.toggle button[aria-pressed="false"]:hover{background:#3a3a3a;color:#fff}
+.toggle button[aria-pressed="false"] .arr{opacity:1}
+#b1[aria-pressed="false"] .arr{animation:nudge 1.2s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+.toggle button:focus-visible{outline:4px solid var(--now);outline-offset:-4px}
+.toggle+.stage{margin-top:0}
+@media (prefers-reduced-motion:reduce){#b1 .arr{animation:none!important}}
+.src{font-size:13px;margin-top:16px;max-width:75ch;color:var(--mute)}
+.next{display:flex;justify-content:space-between;gap:12px;margin-top:36px;flex-wrap:wrap}
+.next a{font-family:var(--display);text-transform:uppercase;font-size:clamp(22px,3vw,36px);text-decoration:none;border-bottom:4px solid var(--ink)}
+/* wording drawer (prototype only) */
+.words{margin-top:48px;border:2px dashed var(--line);padding:16px;background:var(--card)}
+.words summary{font-family:var(--mono);font-weight:700;letter-spacing:.08em;cursor:pointer}
+.words p{font-size:14px;margin:8px 0}
+.opts{display:grid;gap:6px;margin-top:10px}
+.opts button{display:grid;grid-template-columns:44px 1fr;gap:10px;text-align:left;font:inherit;background:none;border:2px solid var(--line);padding:8px;cursor:pointer;color:var(--ink)}
+.opts button[aria-pressed="true"]{border-color:var(--ink);background:var(--accent);color:#151515}
+.opts .c{font-family:var(--mono);font-weight:700}
+.opts .who{font-family:var(--mono);font-size:11px;color:var(--mute);display:block;margin-top:2px}
+@media (max-width:640px){.mark{font-size:20px;white-space:nowrap}nav{flex-wrap:nowrap;gap:4px}nav a{padding:5px 7px;font-size:11px}}
+@media (max-width:640px){.qs a{grid-template-columns:1fr;gap:6px}.qs .go{display:none}.qs .tag{padding-left:0}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="#home">Future Proof</a><a class="totv" id="totv" href="/future-proof/" hidden>◀ Back to the TV</a>
+    <nav aria-label="Questions">
+      <a href="#vote" data-r="vote">VOTE</a><a href="#undo" data-r="undo">UNDO</a><a href="#test" data-r="test">TEST</a>
+    </nav>
+  </header>
+  <main id="view"></main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ---------- the words: every option from the three writers, code + who wrote it ---------- */
+const W={
+ home:[
+  {c:"H1",q:"Three questions about how Britain decides.",a:"Nobody in charge has a good answer to any of them.",w:"round 2"},
+  {c:"H2",q:"Three questions nobody will answer you.",a:"So we answered them.",w:"narrator"},
+  {c:"H3",q:"Why does it have to work like this?",a:"Three questions. Three fixes.",w:"pub"},
+  {c:"H4",q:"It doesn't have to be this way.",a:"Three questions. Three fixes.",w:"pub / minimalist"},
+  {c:"H5",q:"Your vote works like software from 1872.",a:"We have a patch. Three of them.",w:"narrator"}],
+ vote:[
+  {c:"V1",q:"Why can I only vote red or blue?",a:"Vote issue by issue. Red on one thing, blue on the next, if that's what you think.",w:"Kai"},
+  {c:"V2",q:"Why is it always red or blue?",a:"Vote on each issue. Mix and match what you actually believe.",w:"round 2"},
+  {c:"V3",q:"Why do I have to pick red or blue for everything?",a:"Pick a side on each issue, not one side for all of them.",w:"round 2"},
+  {c:"V4",q:"Red or blue. For everything. Why?",a:"Vote issue by issue. Keep what you like. Bin what you don't.",w:"round 2"},
+  {c:"V5",q:"Why can't I vote on more than one thing?",a:"Vote issue by issue. Keep what you like. Bin what you don't.",w:"Kai (round 1)"},
+  {c:"V6",q:"Why do I have to take the bad with the good?",a:"Back the good ideas. Bin the bad ones. Your call.",w:"pub"}],
+ undo:[
+  {c:"U1",q:"Why is it only once every five years?",a:"Vote on changes as they come. Small steps, each one checked, each one undoable.",w:"Kai"},
+  {c:"U2",q:"Why wait five years to change your mind?",a:"Change laws in small steps. Check each one. Undo the duds.",w:"round 2"},
+  {c:"U3",q:"Five years between votes. Why?",a:"Small changes, any month, each one checked, each one reversible.",w:"round 2"},
+  {c:"U4",q:"Why do we wait five years to say it's not working?",a:"Say it any time. Every change comes with an undo.",w:"pub"},
+  {c:"U5",q:"Where's the undo button?",a:"Change laws in small steps. Check each one. Undo the duds.",w:"narrator / minimalist"}],
+ test:[
+  {c:"T1",q:"Why don't we ask the experts?",a:"Ask them. Test it on one town. Roll it out only if it works.",w:"Kai, tightened"},
+  {c:"T2",q:"Why don't we use expert opinion?",a:"Ask the people who know. Test it small. Then decide.",w:"Kai"},
+  {c:"T3",q:"Why does a hunch beat the experts?",a:"No more gut feelings. Ask, test, then decide.",w:"round 2"},
+  {c:"T4",q:"Why don't we listen to the evidence?",a:"Every policy is tested before it reaches everyone.",w:"round 2"},
+  {c:"T5",q:"Would you take a pill nobody tested?",a:"So why take a law nobody tested? Try it small. Prove it. Then roll it out.",w:"minimalist / narrator"}]
+};
+const PAGES={
+ vote:{tag:"1 of 3 · Vote",next:"undo",scene:"vote",
+   cap:["One cross. Red's whole bundle.","Red on some things. Blue on others. Your call."],
+   src:"Picking a whole party at once can even give a result most people disagree with issue by issue (the Ostrogorski paradox)."},
+ undo:{tag:"2 of 3 · Five years",next:"test",scene:"undo",
+   cap:["One big change. Then you wait.","Small. Checked. Undoable."],
+   src:"A Parliament can run up to five years: Dissolution and Calling of Parliament Act 2022, section 4. The secret ballot dates from 1872, six years before Swan's light bulb."},
+ test:{tag:"3 of 3 · Experts",next:"home",scene:"test",
+   cap:["One person's hunch. The experts said no. Everyone gets it anyway.","Ask the experts. Test it on one town. Then everyone."],
+   src:"Randomised trials are routine in medicine and rare in UK domestic policy: Cabinet Office, Test, Learn, Adapt (2012)."}
+};
+let pick={home:0,vote:0,undo:0,test:0};
+const save=()=>{try{localStorage.setItem("fp-pick-r2",JSON.stringify(pick))}catch(e){}};
+const esc=s=>s.replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- three.js helpers ---------- */
+const C={floor:0x262626,shelf:0x3a3a3a,white:0xf2f2f2,hivis:0xffd60a,now:0xe8412c,go:0x21a05a,grey:0x8c8c86,
+  issues:[0x21a05a,0xffd60a,0xe8412c,0x3d6fe0,0xf08a24,0x9b6fe0]};
+function setup(mount,cam,look){
+  const r=new THREE.WebGLRenderer({antialias:true});r.setPixelRatio(Math.min(2,devicePixelRatio||1));mount.appendChild(r.domElement);
+  const s=new THREE.Scene();s.background=new THREE.Color(0x161616);
+  const c=new THREE.PerspectiveCamera(34,16/9,.1,200);c.position.set(...cam);const L=new THREE.Vector3(...look);c.lookAt(L);
+  s.add(new THREE.HemisphereLight(0xffffff,0x444444,.75));const d=new THREE.DirectionalLight(0xffffff,.8);d.position.set(4,10,8);s.add(d);
+  const labels=[],v=new THREE.Vector3();
+  const size=()=>{const w=mount.clientWidth,h=mount.clientHeight;if(!w||!h)return;r.setSize(w,h,false);c.aspect=w/h;c.updateProjectionMatrix()};
+  const ro=new ResizeObserver(size);ro.observe(mount);size();
+  let raf=0,last=performance.now(),fn=null;
+  function tick(now){const dt=Math.min(.05,(now-last)/1000);last=now;fn&&fn(dt);
+    labels.forEach(l=>{if(!l.obj)return;l.obj.getWorldPosition(v).add(l.off).project(c);
+      l.el.style.left=((v.x+1)/2*mount.clientWidth)+"px";l.el.style.top=((1-v.y)/2*mount.clientHeight)+"px"});
+    r.render(s,c);raf=requestAnimationFrame(tick)}
+  return {scene:s,
+    loop(f){fn=f;raf=requestAnimationFrame(tick)},
+    label(t,cls,obj,off=[0,0,0]){const el=document.createElement("div");el.className="tag3d "+(cls||"");el.textContent=t;mount.appendChild(el);const l={el,obj,off:new THREE.Vector3(...off)};labels.push(l);return l},
+    stop(){cancelAnimationFrame(raf);ro.disconnect();r.dispose();s.traverse(o=>{o.geometry&&o.geometry.dispose();o.material&&o.material.dispose()});mount.innerHTML=""}};
+}
+const box=(w,h,d,col)=>new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshStandardMaterial({color:col,roughness:.8,flatShading:true}));
+const damp=(x,to,k,dt)=>x+(to-x)*(1-Math.exp(-k*dt));
+const ease=x=>{x=Math.min(1,Math.max(0,x));return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const op=(l,o)=>{l.el.style.opacity=String(o)};
+
+/* ---------- scenes: make(mount) -> {set(state), stop()}; state 0 = how it is, 1 = how it could be ---------- */
+const SCENES={
+ /* VOTE: red and blue, each a fused slab of six issue bricks. Now: your one cross drags the whole red slab into your tray.
+    Could be: the slabs break; you take one brick per issue from whichever side you agree with, so the tray ends up red AND blue. */
+ vote(mount){
+  const k=setup(mount,[0,6.4,12.5],[0,.6,.4]);
+  const ISS=["BUSES","BINS","BILLS","HOUSING","SCHOOLS","WATER"],PCOL=[0xd8392b,0x2f62d6],PICK=[0,1,1,0,1,0],CHOSEN=0,NAME=["RED","BLUE"];
+  const shelf=box(11,.25,2.4,C.shelf);shelf.position.set(0,-.13,-1.6);k.scene.add(shelf);
+  const tray=box(7.2,.25,1.6,0x9a9a94);tray.position.set(0,-.13,2.6);k.scene.add(tray);
+  k.label("YOUR VOTE","",tray,[0,-.2,1.1]);
+  const bricks=[],parties=[];
+  const X=p=>(p-.5)*5.6;
+  for(let p=0;p<2;p++){
+    parties.push(k.label(NAME[p],p?"blue":"red",null));
+    const base=new THREE.Color(PCOL[p]);
+    for(let i=0;i<6;i++){const c=i%3,r=Math.floor(i/3);
+      const m=box(1,.6,1,PCOL[p]);k.scene.add(m);
+      const home=new THREE.Vector3(X(p)+(c-1)*1.02,.3+r*.62,-1.6);
+      const now=p===CHOSEN?new THREE.Vector3((c-1)*1.02,.3+r*.62,2.6):home.clone();
+      const fut=PICK[i]===p?new THREE.Vector3((i-2.5)*1.12,.3,2.6):new THREE.Vector3(X(p)+(c-1)*1.35,.3+r*.75,-1.6-(r?.25:-.25));
+      const lab=k.label(ISS[i],"",m,[0,.42,0]);
+      bricks.push({m,home,now,fut,lab,p,i,mine:PICK[i]===p,col:base.clone(),dim:base.clone().lerp(new THREE.Color(0x3a3a3a),.55)});
+    }
+  }
+  [0,1].forEach(p=>{const o=new THREE.Object3D();o.position.set(X(p),1.6,-1.6);k.scene.add(o);parties[p].obj=o;parties[p].off=new THREE.Vector3()});
+  const stuck=k.label("YOU ALSO GET THESE","red",null);const so=new THREE.Object3D();so.position.set(0,1.75,2.6);k.scene.add(so);stuck.obj=so;
+  let state=0,a=0,intro=RM?1:0,clock=0;
+  k.loop(dt=>{clock+=dt;a=RM?state:damp(a,state,3,dt);if(!RM&&clock>.6)intro=damp(intro,1,2.4,dt);
+    bricks.forEach(b=>{const lift=b.p===CHOSEN?Math.sin(Math.PI*intro)*1.6:0;
+      const p0=b.home.clone().lerp(b.now,ease(intro));p0.y+=lift*(1-a);
+      const d=(b.i*.06+b.p*.12)*(1-a);
+      const t=ease(a*1.4-d);const p=p0.lerp(b.fut,t);p.y+=Math.sin(Math.PI*t)*1.4*(b.mine?1:.3);
+      b.m.position.copy(p);
+      /* now: the bricks you never wanted in your tray go dull; could be: the ones left behind go dull */
+      const unwanted=b.p===CHOSEN&&!b.mine&&clock>1.8;
+      const dullNow=unwanted?1:0,dullFut=b.mine?0:1;
+      b.m.material.color.copy(b.col).lerp(b.dim,dullNow*(1-a)+dullFut*a);
+      op(b.lab,b.p===CHOSEN?(1-a)*ease(intro):0);
+      if(b.mine)op(b.lab,Math.max(b.p===CHOSEN?(1-a)*ease(intro):0,ease(a*1.5-.4)));
+    });
+    parties.forEach((l,p)=>op(l,p===CHOSEN?1-ease(intro)*(1-a):1));
+    op(stuck,(1-ease(a*2))*(clock>1.8?1:0));
+  });
+  return {set(s){state=s},stop:k.stop};
+ },
+ /* UNDO: a five-year strip. Now: one giant block drops at the start, goes wrong, and you wait for the far end.
+    Could be: small blocks land all along the strip, each gets a tick; one goes red and is lifted straight back off. */
+ undo(mount){
+  const k=setup(mount,[0,7,13.5],[0,1,0]);
+  const strip=box(12,.2,2.2,0x2c2c2c);strip.position.set(0,-.1,0);k.scene.add(strip);
+  for(let y=0;y<=5;y++){const t=box(.06,.22,2.2,0x555555);t.position.set(-6+y*2.4,-.08,0);k.scene.add(t);
+    if(y>0){const o=new THREE.Object3D();o.position.set(-6+y*2.4-1.2,0,1.6);k.scene.add(o);k.label("YEAR "+y,"",o)}}
+  const now=new THREE.Group(),fut=new THREE.Group();k.scene.add(now,fut);
+  const mono=box(2,3.2,2,C.white);now.add(mono);
+  const monoL=k.label("ONE BIG CHANGE","",mono,[0,1.9,0]),bad=k.label("NOT WORKING","red",mono,[0,.4,1.1]);
+  const flag=box(.12,2.6,.12,C.hivis);flag.position.set(6,1.3,0);now.add(flag);
+  const flagL=k.label("YOUR NEXT SAY","hi",flag,[0,1.6,0]);
+  const cursor=box(.3,.3,.3,C.hivis);cursor.position.set(-6,.3,1.3);k.scene.add(cursor);
+  const N=10,small=[];
+  for(let i=0;i<N;i++){const m=box(.9,.7,1.2,C.grey);fut.add(m);small.push({m,x:-5.4+i*1.2,red:i===3})}
+  const redo=box(.9,.7,1.2,C.grey);fut.add(redo);
+  const undoL=k.label("UNDONE","red",small[3].m,[0,.8,0]),tick=k.label("✓ CHECKED","green",small[N-1].m,[0,.8,0]);
+  let state=0,clock=0;const P=9;
+  k.loop(dt=>{clock=RM?P-.01:(clock+dt)%P;const t=clock;
+    now.visible=state===0;fut.visible=state===1;
+    cursor.position.x=-6+12*Math.min(1,t/(P-1));
+    if(state===0){
+      mono.position.set(-4.8,1.6+7*(1-ease(t/.7)),0);
+      op(monoL,1);op(bad,t>2.2?1:0);op(flagL,1);op(undoL,0);op(tick,0);
+      mono.material.color.setHex(t>2.2?0xd9b3ad:C.white);
+    }else{
+      op(monoL,0);op(bad,0);op(flagL,0);
+      small.forEach((b,i)=>{const t0=i*.75,d=ease((t-t0)/.45);
+        let y=.35+5*(1-d);b.m.visible=t>t0;
+        let col=t>t0+.55?(b.red?C.now:C.go):C.grey;
+        if(b.red&&t>t0+1.3){const u=ease((t-t0-1.3)/.8);y+=u*6;}
+        b.m.position.set(b.x,y,0);b.m.material.color.setHex(col);});
+      const r0=3*.75+2.3,dr=ease((t-r0)/.45);redo.visible=t>r0;redo.position.set(small[3].x,.35+5*(1-dr),0);redo.material.color.setHex(t>r0+.55?C.go:C.grey);
+      op(undoL,t>3*.75+1.3&&t<3*.75+2.6?1:0);op(tick,t>(N-1)*.75+.6?1:0);
+    }
+  });
+  return {set(s){state=s;clock=0},stop:k.stop};
+ },
+
+ /* EXPERTS: forty towns, a row of experts at the back left.
+    Now: one figure on a podium has a hunch; the experts' signs go red (WON'T WORK); the policy slams down on all forty anyway.
+    Could be: the experts are asked, their signs light one by one; the policy goes to one test town beside a twin;
+    a gauge rises into IT WORKED; then it spreads town by town. */
+ test(mount){
+  const k=setup(mount,[-1.1,10,14.5],[-1.1,.2,0]);
+  const floor=box(14,.2,8,0x222222);floor.position.y=-.1;k.scene.add(floor);
+  const towns=[];
+  for(let z=0;z<5;z++)for(let x=0;x<8;x++){const h=.5+((x*7+z*3)%4)*.18;const m=box(.7,h,.7,C.grey);
+    m.position.set(-2.2+x*1.05,h/2,-2.6+z*1.05);k.scene.add(m);towns.push({m,h,d:Math.hypot(x,z)})}
+  const person=(x,z,col)=>{const g=new THREE.Group();const body=new THREE.Mesh(new THREE.CylinderGeometry(.22,.3,.9,8),new THREE.MeshStandardMaterial({color:col,flatShading:true}));body.position.y=.45;
+    const head=new THREE.Mesh(new THREE.SphereGeometry(.22,10,8),new THREE.MeshStandardMaterial({color:col,flatShading:true}));head.position.y=1.12;g.add(body,head);g.position.set(x,0,z);k.scene.add(g);return g};
+  /* the experts: five figures with a sign each */
+  const experts=[0,1,2,3,4].map(i=>{const x=-6.6+i*.85,z=-3.1;const f=person(x,z,0xb9b9b2);
+    const sign=box(.6,.42,.06,0x666666);sign.position.set(x,1.85,z);k.scene.add(sign);return {f,sign}});
+  const expL=k.label("THE EXPERTS","",experts[2].sign,[0,.45,0]);
+  const said=k.label("WON'T WORK","red",experts[2].sign,[0,.45,0]);
+  const asked=k.label("ASKED","green",experts[2].sign,[0,.45,0]);
+  /* now: the podium and the hunch */
+  const pod=new THREE.Group();k.scene.add(pod);
+  const podium=box(1.1,.8,1.1,0x444444);podium.position.set(-5.2,.4,.6);pod.add(podium);
+  const boss=person(-5.2,.6,C.hivis);boss.position.y=.8;pod.add(boss);
+  const hunch=k.label("GUT FEELING","hi",podium,[0,2.2,0]);
+  const slab=box(9,.35,5.6,C.hivis);k.scene.add(slab);
+  const allL=k.label("ALL 40 TOWNS AT ONCE","",null);const ao=new THREE.Object3D();ao.position.set(1.5,3.4,-2.6);k.scene.add(ao);allL.obj=ao;
+  /* could be: test town, twin, gauge */
+  const fut=new THREE.Group();k.scene.add(fut);
+  const testT=box(.8,.9,.8,C.grey);testT.position.set(-5.6,.45,.7);fut.add(testT);
+  const twin=box(.8,.9,.8,C.grey);twin.position.set(-5.6,.45,2.5);fut.add(twin);
+  const tL=k.label("TEST TOWN","",testT,[0,.8,0]),twL=k.label("TWIN (NO CHANGE)","",twin,[0,.8,0]);
+  const gauge=box(.35,2.4,.35,0x333333);gauge.position.set(-4.3,1.2,1.6);fut.add(gauge);
+  const fill=box(.36,1,.36,C.go);fut.add(fill);
+  const goL=k.label("IT WORKED","green",gauge,[0,1.6,0]);
+  const pill=box(.8,.35,.8,C.hivis);k.scene.add(pill);
+  let state=0,clock=0;const P=10;
+  k.loop(dt=>{clock=RM?P-.01:(clock+dt)%P;const t=clock;
+    if(state===0){
+      pod.visible=true;fut.visible=false;pill.visible=false;
+      op(hunch,t>.3?1:0);op(expL,t<1.2?1:0);op(said,t>1.2?1:0);op(asked,0);op(tL,0);op(twL,0);op(goL,0);
+      experts.forEach((e,i)=>e.sign.material.color.setHex(t>1.2+i*.12?C.now:0x666666));
+      const d=ease((t-2.6)/.6);slab.position.set(1.5,.7+6*(1-d),-.5);slab.visible=t>2.4&&t<3.35;
+      towns.forEach(o=>o.m.material.color.setHex(t>3.2?C.hivis:C.grey));
+      op(allL,t>2.4&&t<3.6?1:0);
+    }else{
+      pod.visible=false;fut.visible=true;slab.visible=false;op(hunch,0);op(allL,0);op(said,0);
+      experts.forEach((e,i)=>e.sign.material.color.setHex(t>.3+i*.18?C.go:0x666666));
+      op(expL,t<.3?1:0);op(asked,t>.3?1:0);
+      const d=ease((t-1.6)/.5);pill.position.set(-5.6,1.1+5*(1-d),.7);pill.visible=t>1.4&&t<2.15;
+      testT.material.color.setHex(t>2.1?C.hivis:C.grey);
+      const g=ease((t-2.5)/1.6)*.9;fill.scale.y=Math.max(.01,g*2.4);fill.position.set(-4.3,fill.scale.y/2,1.6);
+      op(goL,t>4.2?1:0);op(tL,1);op(twL,1);
+      towns.forEach(o=>o.m.material.color.setHex(t>4.7+o.d*.28?C.hivis:C.grey));
+    }
+  });
+  return {set(s){state=s;clock=0},stop:k.stop};
+ }
+};
+
+/* ---------- views ---------- */
+const view=document.getElementById("view");let live=null;
+function route(){
+  const r=(location.hash.slice(1)||"home");const id=PAGES[r]?r:"home";
+  if(live){live.stop();live=null}
+  document.querySelectorAll("nav a").forEach(a=>a.dataset.r===id?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"));
+  if(id==="home"){const h=W.home[pick.home];
+    view.className="home";
+    view.innerHTML=`<p class="eyebrow">Future Proof</p><h1 id="q">${esc(h.q)}</h1><p class="answer" id="a">${esc(h.a)}</p>
+     <div class="qs">${["vote","undo","test"].map(k=>`<a href="#${k}"><span class="tag">${k.toUpperCase()}</span><span class="q">${esc(W[k][pick[k]].q)}</span><span class="go" aria-hidden="true">→</span></a>`).join("")}</div>`;
+  }else{const P=PAGES[id],o=W[id][pick[id]];view.className="pillar";
+    view.innerHTML=`<p class="eyebrow">${P.tag}</p><h1 id="q">${esc(o.q)}</h1><p class="answer" id="a">${esc(o.a)}</p>
+     <div class="toggle" role="group" aria-label="Show"><button id="b0" aria-pressed="true"><span class="n">1</span>How it is<span class="arr" aria-hidden="true">◀</span></button><button id="b1" aria-pressed="false"><span class="n">2</span>How it could be<span class="arr" aria-hidden="true">▶</span></button></div>
+     <div class="stage"><div class="mount" id="mount"></div><div class="caption" id="cap">${esc(P.cap[0])}</div></div>
+     <p class="src">${esc(P.src)}</p>
+     <div class="next"><a href="#home">← All three</a><a href="#${P.next}">${P.next==="home"?"Back to the start":"Next question →"}</a></div>`;
+    try{live=SCENES[P.scene](document.getElementById("mount"))}catch(e){document.getElementById("cap").textContent="3D could not start in this browser."}
+    const setS=s=>{live&&live.set(s);document.getElementById("cap").textContent=P.cap[s];
+      ["b0","b1"].forEach((b,i)=>document.getElementById(b).setAttribute("aria-pressed",String(i===s)));
+      };
+    document.getElementById("b0").onclick=()=>setS(0);document.getElementById("b1").onclick=()=>setS(1);
+  }
+ window.scrollTo(0,0);
+}
+function drawOpts(id){
+  const box=document.getElementById("opts");
+  box.innerHTML=W[id].map((o,i)=>`<button data-i="${i}" aria-pressed="${i===pick[id]}"><span class="c">${o.c}</span><span><b>${esc(o.q)}</b><br>${esc(o.a)}<span class="who">${esc(o.w)}</span></span></button>`).join("");
+  box.querySelectorAll("button").forEach(b=>b.onclick=()=>{pick[id]=+b.dataset.i;save();
+    const o=W[id][pick[id]];document.getElementById("q").textContent=o.q;document.getElementById("a").textContent=o.a;
+    box.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)))});
+}
+try{if(window.top===window)document.getElementById("totv").hidden=false}catch(e){}
+addEventListener("hashchange",route);route();
+</script>
+
+</body>
+</html>

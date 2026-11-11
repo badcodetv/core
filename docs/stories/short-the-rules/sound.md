@@ -33,7 +33,19 @@ A wet Tuesday morning assembly in a 1980s English primary school, everyone cross
   (Kai, 2026-11-10): `songs/lyrics.md`, four lines, under 20 s, no crowd turn; the organ stops for the window.
   Style prompt ⬜, a `variations` round inside the direction.
 
-- **The drop (PICKED).** Kai, 2026-11-10 (*"I think we've got it. I think it's this one"*): https://suno.com/song/5b008987-305c-4634-8436-9c2aa726c891,
+- **The drop (PICKED, round 3; replaces the round 1 Amen).** Kai, 2026-11-11: *"it's this one. Great job."* →
+  https://suno.com/song/feb1a0c7-b17d-46e9-bb56-193c6c7882a9 (1:00), round `songs/dnb-r3`, prompt `concrete-stairwell-distortion`,
+  title `Rules r3-concrete-stairwell-distortion-v6-w75`, workspace `short-the-rules`. Settings: {"weirdness": 75, "styleInfluence": 70, "variety": "off", "model": "v6"}.
+  Brief Kai gave: the round 2 hardstep without the Reese, no ragga/reggae, "the real mid-90s Amen heavy bass… It should just sound like a council estate", higher weirdness.
+  Style box, verbatim:
+
+  ```
+1995 darkside hardstep jungle, instrumental, 166 BPM. Heard from inside a council tower block: bare concrete stairwell, steel shutters, a lift shaft, cold strip light humming overhead. The bass is one single overdriven sub, clipped and fuzzy right at the bottom, creeping in slow predatory slides, so loud it rattles the window glass and buzzes the metal handrails. The Amen is struck hard and mean, every snare cracking off raw concrete with a short tight slapback, a heavy kick doubled under it, chopped into stuttering rolls with hardly a breath between them. Aggressive, grimy, industrial, cold, no light anywhere. Starts at full weight on beat one and keeps pressing, loops cleanly.
+  ```
+
+  Exclude: `reese bass, detuned saw bass, wobble, rave stabs, hoover, pads, strings, piano, bleeps, reggae, ragga, dub siren, skank guitar, horns, riser, build-up, intro, fade-in`
+
+- **Earlier drop (round 1, SUPERSEDED 2026-11-11).** Kai, 2026-11-10 (*"I think we've got it. I think it's this one"*): https://suno.com/song/5b008987-305c-4634-8436-9c2aa726c891,
   round `songs/dnb-r1`, prompt `amen-jungle-pirate-tape` (1994 Amen jungle), title `The Rules drop r1-amen-jungle-pirate-tape-v6-w45`,
   workspace `short-the-rules`. Recorded: `D:\badcode-videos\shorts\the-rules\music\5b008987-305c-4634-8436-9c2aa726c891-5b008987.wav`
   (47.04 s; the first recording stopped at 19.96 s, a recorder bug, fixed and re-recorded). Instrumental, its own track in Premiere under the tear; **Kai finds the drop

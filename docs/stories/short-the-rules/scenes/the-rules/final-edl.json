@@ -1,0 +1,233 @@
+{
+ "sequence": "short-the-rules-1-rules-r5",
+ "title": "The Rules Timeline",
+ "heading": "The Rules \u2014 cut 5, FINAL (Premiere r3 as you froze it)",
+ "intro": "Final cut = Premiere r3 exactly as you left it on 2026-11-11 (\"it's a cut\"): your trims, the hymn fading out under the bin, the concrete-stairwell drop fading in from 22.2 s into its take, and the pen dissolving to black. Frozen; the release master is exported from Premiere itself.",
+ "fps": 24,
+ "total": 27.583333333333332,
+ "beats": [
+  {
+   "id": "0",
+   "title": "Stack",
+   "start": 0.0,
+   "dur": 2.6666666666666665,
+   "see": "The gang face camera at the foot of THE RULES; a tube flickers. Piano intro.",
+   "lines": []
+  },
+  {
+   "id": "1",
+   "title": "Bed",
+   "start": 2.6666666666666665,
+   "dur": 1.7083333333333333,
+   "see": "Night, a high street: people asleep in the bank doorway; one pulls the sleeping bag closer.",
+   "lines": [
+    {
+     "i": 0,
+     "who": "school",
+     "name": "The whole school",
+     "t": 3.2,
+     "dur": 2.9,
+     "text": "We can't afford a bed for you,",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "title": "Purse",
+   "start": 4.375,
+   "dur": 3.083333333333333,
+   "see": "Old hands at a till open a purse: a few coppers. Shut again.",
+   "lines": [
+    {
+     "i": 1,
+     "who": "school",
+     "name": "The whole school",
+     "t": 6.1,
+     "dur": 1.8,
+     "text": "The purse is far too thin;",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "title": "Islands",
+   "start": 7.458333333333333,
+   "dur": 2.875,
+   "see": "A filing cabinet asleep in a hammock under a palm. Overlay (owed): the tax line.",
+   "lines": [
+    {
+     "i": 2,
+     "who": "school",
+     "name": "The whole school",
+     "t": 7.9,
+     "dur": 3.1,
+     "text": "There is room on all those islands,",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "title": "Bin",
+   "start": 10.333333333333332,
+   "dur": 5.458333333333333,
+   "see": "Rain in an alley: someone asleep on cardboard beside the big green bins.",
+   "lines": [
+    {
+     "i": 3,
+     "who": "school",
+     "name": "The whole school",
+     "t": 11.0,
+     "dur": 5.6,
+     "text": "But you will sleep in a bin.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "title": "Riot",
+   "start": 15.791666666666666,
+   "dur": 2.875,
+   "see": "The gang go mental: tearing the rules chest-on to camera, paper thrown up. The drop is already up (A2).",
+   "lines": []
+  },
+  {
+   "id": "6",
+   "title": "Hang",
+   "start": 18.666666666666664,
+   "dur": 2.833333333333333,
+   "see": "Two rip paper right up in the lens while two hang off the top racks and one hauls himself up behind (clip from HR7-d-b).",
+   "lines": []
+  },
+  {
+   "id": "7",
+   "title": "Climb",
+   "start": 21.5,
+   "dur": 2.9166666666666665,
+   "see": "They climb the shelving and tear the archive apart; paper pours down.",
+   "lines": []
+  },
+  {
+   "id": "8",
+   "title": "Pen",
+   "start": 24.416666666666664,
+   "dur": 3.1666666666666665,
+   "see": "A blank page and a pen held out to camera. The drop plays out under it.",
+   "lines": []
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-r01-ST3-a-a.mp4",
+   "in": 0.0,
+   "start": 0.0,
+   "dur": 2.6666666666666665,
+   "beat": "0",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v0-stack.mp4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b1-BD5-a-a.mp4",
+   "in": 0.0,
+   "start": 2.6666666666666665,
+   "dur": 1.7083333333333333,
+   "beat": "1",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v1-bed.mp4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b2-PU5-a-b.mp4",
+   "in": 0.0,
+   "start": 4.375,
+   "dur": 3.083333333333333,
+   "beat": "2",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v2-purse.mp4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-02-IS4-a-b.mp4",
+   "in": 0.0,
+   "start": 7.458333333333333,
+   "dur": 2.875,
+   "beat": "3",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v3-islands.mp4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-b3-BI5-a-a.mp4",
+   "in": 0.0,
+   "start": 10.333333333333332,
+   "dur": 5.458333333333333,
+   "beat": "4",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v4-bin.mp4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-r04a-TE4-a-a.mp4",
+   "in": 0.0,
+   "start": 15.791666666666666,
+   "dur": 2.875,
+   "beat": "5",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v5-riot.mp4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-h1-HR7-d-b.mp4",
+   "in": 0.16666666666666666,
+   "start": 18.666666666666664,
+   "dur": 2.833333333333333,
+   "beat": "6",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v6-hang.mp4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-c1-CL3-c-a.mp4",
+   "in": 0.20833333333333331,
+   "start": 21.5,
+   "dur": 2.9166666666666665,
+   "beat": "7",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v7-climb.mp4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/video/tr-05-PE4-b-a.mp4",
+   "in": 0.125,
+   "start": 24.416666666666664,
+   "dur": 3.1666666666666665,
+   "beat": "8",
+   "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/r5-v8-pen.mp4"
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "mus-hymn",
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/music/4f37afd8-16ec-4b66-9885-54030500a37e-4f37afd8.wav",
+   "dur": 16.5
+  },
+  {
+   "track": "A2",
+   "name": "mus-drop",
+   "file": "/mnt/d/badcode-videos/shorts/the-rules/music/rules-r3-concrete-stairwell-distortion-v6-w75-feb1a0c7.wav",
+   "at": 14.833333333333332,
+   "in": 22.166666666666664,
+   "dur": 12.75
+  }
+ ],
+ "events": [
+  {
+   "stem": "mus-hymn",
+   "t": 0.0,
+   "dur": 16.5,
+   "what": "The hymn (whole school + upright piano), fading out from 14.38 s",
+   "src": "/mnt/d/badcode-videos/shorts/the-rules/music/4f37afd8-16ec-4b66-9885-54030500a37e-4f37afd8.wav"
+  },
+  {
+   "stem": "mus-drop",
+   "t": 14.833333333333332,
+   "dur": 12.75,
+   "what": "Concrete-stairwell drop (dnb-r3) from 22.17 s of the take, fading in over 1.25 s, out with the pen",
+   "src": "/mnt/d/badcode-videos/shorts/the-rules/music/rules-r3-concrete-stairwell-distortion-v6-w75-feb1a0c7.wav"
+  }
+ ],
+ "flags": [
+  "Line times are where the words are sung; your cuts now land a little before them.",
+  "Riot clip: the rust mask's triangle is faint in places.",
+  "No text overlay yet: the tax line is owed a fact check."
+ ]
+}

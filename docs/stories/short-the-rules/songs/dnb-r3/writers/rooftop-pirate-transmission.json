@@ -1,0 +1,13 @@
+{
+  "name": "rooftop-pirate-transmission",
+  "style": "Tuneless jungle heard off a pirate station: a Sunday night in 1994, a homemade rig wired to an aerial on the roof of a 21-storey council tower, picked up on a cheap kitchen radio by the sink. Tempo sits near 166. The breakbeat is the only lead: the Amen sliced to splinters, re-sequenced, stuttered, doubled, rolling on and on without mercy, crash cymbals slammed hard to the left channel. Underneath, a sub-bass played backwards, sucking in from silence and swelling into each downbeat before it hits like a lift door, the Dred Bass trick. Nothing lives in the mids, no bassline growl, no tune. The only other texture is the broadcast itself: FM hiss, the station drifting off frequency and snapping back, a thin mono wobble. Cold, bare, all break and sub. Joins the set mid-flow at full tilt, no intro, loops clean.",
+  "exclude": "voice, lyrics, toasting, shout-outs, ragga, reggae, Reese bass, detuned saw bass, midrange bassline, synth lead, rave stabs, hoover, pads, strings, piano, riser, build-up, intro",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 65,
+  "styleInfluence": 65,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false
+}

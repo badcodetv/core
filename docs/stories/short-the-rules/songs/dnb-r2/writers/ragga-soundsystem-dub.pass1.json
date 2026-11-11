@@ -1,0 +1,13 @@
+{
+  "name": "ragga-soundsystem-dub",
+  "style": "1995 ragga jungle instrumental, 163 BPM, slams in on the first downbeat with no intro. The lead is a deep dub reggae bassline played like a Kingston bass player's riff at double speed: round, bouncy, melodic sub notes that bubble, slide and stop dead. An Amen breakbeat cut up and rearranged underneath, gritty and crunchy off an old sampler, with a fat sub kick and a big bass drop on beat one. Dub mixing-desk moves: single snare hits thrown into tape echo that repeats and fades away, a splash of spring reverb, sudden dropouts where only bass and kick remain. A Brixton sound-system dance at 3am, speaker-stack pressure, dark, dread, warm, rumbling low end. Only drums, bass and echo; no keys, no synths, no siren, no airhorn.",
+  "exclude": "synth lead, rave stabs, airhorn, siren, piano, pads",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false
+}

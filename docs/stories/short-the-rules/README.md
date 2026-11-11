@@ -23,11 +23,33 @@ something is wrong about the rules. So full permission granted to go and look at
 establishment figures, and it isn't working. A challenge to the rule-makers, and permission to the
 viewer.
 
-## State
+## State (2026-11-11: CUT)
 
 | What | Where | Status |
 | --- | --- | --- |
-| Beats | `scenes/the-rules/brief.md` | ⬜ the `scene-beats` interview |
-| Look | [`look.md`](./look.md) | EMPTY; the gang's masks are fixed by `docs/brand/README.md` |
-| Sound | [`sound.md`](./sound.md) | EMPTY; a new Suno track, style being discussed with Kai |
-| Media | `D:\badcode-videos\shorts\the-rules` (Kai) · Drive `Shorts/The Rules` | empty |
+| The cut | Premiere `the-rules.prproj`, sequence **`short-the-rules-1-rules-r3`** (27.6 s, 1080×1920, 24 fps) | ✅ CUT (Kai, 2026-11-11: *"it's a cut… brilliant"*); frozen to `scenes/the-rules/final.json` |
+| Timeline page | https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E (round 5 = Premiere r3 frame for frame) · built by `scripts/shorts/the_rules_cut.py` | ✅ |
+| Clips page | https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY | ✅ |
+| Beats, picks | `scenes/the-rules/picks.md` (every ruling, Kai's words) | ✅ |
+| Look | [`look.md`](./look.md) (the gang is FIVE) | ✅ |
+| Sound | [`sound.md`](./sound.md): the hymn + the dnb-r3 concrete-stairwell drop | ✅ |
+| Release master | `renders/the-rules-master-r3-tagged.mp4` (H.264 17 Mbps, AAC 48k, −14.3 LUFS) on Kai's machine; renders never go to Drive, re-export from r3 | ✅ exported; ⬜ uploaded |
+| Tax-haven overlay | `scenes/the-rules/picks.md` | 🔴 owed: the fact check before any text goes on screen |
+| Media | `D:\badcode-videos\shorts\the-rules` (Kai) · Drive `Shorts/The Rules` (agreed cut: `scripts/drive/agreed/short-the-rules.list`) | ✅ pushed 2026-11-11 |
+
+## Jack: pulling it onto your machine
+
+1. **Git:** `git pull` in the repo. You get this folder, the cut script, the Premiere preset and the Drive list.
+2. **Tell Claude where it lives:** "my The Rules short lives in `<your folder>`". Claude runs
+   `scripts/drive/drive.sh where short-the-rules "<folder>"` (and commits `folders.json` so Kai's machine can read your cuts).
+3. **Drive:** "pull the rules short" = `scripts/drive/drive.sh pull short-the-rules --go`. You get the `.prproj`,
+   the nine clips (each as the Flow original and the `-noaudio` copy Premiere uses), the hymn, both drops and `cut/edl.json`.
+4. **Open** `<your folder>\the-rules.prproj` in Premiere and open the sequence **`short-the-rules-1-rules-r3`**. If it asks
+   where the media is, point it at your folder once (`video\`, `music\`) and it relinks the rest. r2 is Kai's earlier edit.
+5. **The preset (only for making a NEW short sequence; r3 carries its own settings):** copy
+   `docs/premiere/presets/BadCode Short 9x16 24 fps.sqpreset` into
+   `Documents\Adobe\Premiere Pro\<version>\Profile-<you>\Settings\Custom\`, restart Premiere, and it appears under Custom in New Sequence.
+6. **The page preview** never travels: `python3 scripts/shorts/the_rules_cut.py` remakes `cut/preview.mp4` from the clips.
+   The release master is re-exported from r3 (`docs/marketing/shorts-release.md`).
+
+Edit r3 only when you hold the baton (say so out loud); push with "push the rules short" (`scripts/drive/push-agreed.sh short-the-rules --go`).

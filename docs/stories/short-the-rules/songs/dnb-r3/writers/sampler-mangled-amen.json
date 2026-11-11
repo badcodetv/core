@@ -1,0 +1,13 @@
+{
+  "name": "sampler-mangled-amen",
+  "style": "Akai S950 jungle tool cut in a 1994 bedroom studio, tempo 165, drums and sub only. 12-bit crunch, 22k sample rate, aliasing hiss on the cymbals. The Amen break is the lead: timestretched until it goes metallic and robotic, retriggered in stuttering 32nd-note bursts, repitched up a fifth then dropped an octave, reversed snare tails, then slammed back onto the raw untouched loop. Sub: a single pitched-down sine sampled off the same machine, gritty and aliased, stabbing a blunt two-note figure. Mono bottom end, cut-to-acetate dubplate loudness. Hits on beat one of bar one, seamless loop, no lead-in.",
+  "exclude": "reese bass, detuned saw bass, ragga, reggae, dub siren, horns, pads, strings, piano, synth lead, riser, fade-in, ambient intro",
+  "lyrics": "[Instrumental]",
+  "model": "v6",
+  "variety": "high",
+  "weirdness": 80,
+  "styleInfluence": 60,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false
+}

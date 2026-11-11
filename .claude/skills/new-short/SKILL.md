@@ -77,5 +77,19 @@ picks the stills, OKs words and spend). What is different for a short:
   - Stay under 60 s, because past 60 s a copyright claim blocks a YouTube Short.
   - 🔴 Turn the AI-content label on, on every app.
 - **Growth and the funnel: [`docs/marketing/shorts-growth.md`](../../../docs/marketing/shorts-growth.md)** (2026-11-11, ten researchers). State the claim in frame one; one line worth forwarding; YouTube's Related Video link set by hand on every short (pinned comments are not clickable on Shorts); one landing page with `?src=` tags and a free offer for the email list; judge a short at 48–72 h against our own median, a series after 10–12.
+- **When Kai or Jack says it's a cut — the handover** (The Rules, 2026-11-11; model: `docs/stories/short-the-rules/README.md` § "Jack: pulling it"):
+  1. Read the sequence (`premiere_get_sequence`) and copy its state into `feedback/premiere-rN-final/`. The bridge can't
+     read transitions: read the fades from the saved `.prproj` (gzipped XML, `zcat`, never save to read it) into `transitions.json`.
+  2. Port every trim, in-point, music move and fade into the short's cut script, rebuild, republish the timeline page to
+     the same link, `prov.py trail` the round, `prov.py freeze`.
+  3. Export the master from Premiere (`premiere_export_sequence`, Match Source High bitrate), run `delivery-qc.sh … shorts`.
+     Premiere leaves the colour untagged: tag it without re-encoding
+     (`ffmpeg -i m.mp4 -c copy -bsf:v h264_metadata=video_full_range_flag=0:colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1 -movflags +faststart m-tagged.mp4`).
+     A "content is full range" FAIL after that is a false alarm if only thin edges hit 0/255 (the 150% upscale rings):
+     check the 10th/90th percentiles (`signalstats` YLOW/YHIGH inside 16–235) before "fixing" it, because the fix washes the picture out.
+  4. Write `scripts/drive/agreed/short-<slug>.list` (the `.prproj`, every `mediaPath` in the sequence states, the Flow
+     originals the cut script reads, their `.prov.json`, `cut/edl.json`; never previews or renders), `push-agreed.sh … --go`.
+  5. Commit and push git. Put the pull steps in the short's README (git pull → `drive.sh where` → `drive.sh pull` → open the
+     `.prproj` at sequence rN → the preset into `Settings\Custom` only for new sequences). Mark it CUT on the list with its links.
 - **Shipping:** the cut goes to `chief-of-staff` (it writes the caption via `marketing-producer`, checks via
   `marketing-gatekeeper`, and logs the post). Then mark the short DONE on the list.

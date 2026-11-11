@@ -82,7 +82,7 @@
   "script": "python3 scripts/shorts/the_rules_cut.py"
  },
  "premiere": {
-  "current": "r2",
+  "current": "r3",
   "r2": {
    "sequence": "short-the-rules-1-rules-r2",
    "guid": "836c2768-e2a6-4573-8ec9-eaa7e119ff15",
@@ -92,6 +92,15 @@
    "edl": "/mnt/d/badcode-videos/shorts/the-rules/cut/edl.json",
    "what": "timeline r2: 8 Flow clips on V1 (scaled 150% to 1080x1920), hymn A1, the whole Amen take on A2 from 16.6 s (in 0, 12 s) for Kai to find the drop",
    "how": "premiere-plan.py --tag r2 --seq … --skip mus-drop + cut/premiere/r2-place-with-drop.js; sequence from docs/premiere/presets/BadCode Short 9x16 24 fps.sqpreset"
+  },
+  "r3": {
+   "sequence": "short-the-rules-1-rules-r3",
+   "guid": "be567ebd-0fc2-4ab2-8dbf-c33072300cb2",
+   "bin": "short-the-rules-1-rules-r3",
+   "built": "2026-11-11",
+   "project": "/mnt/d/badcode-videos/shorts/the-rules/the-rules.prproj",
+   "what": "clone of Kai's hand-edited r2, with the hang-and-rip clip tr-h1-HR7-d-b in his gap (21.5 s, 67 frames, scaled 150%); Kai then moved hang-and-rip before the climb; new dnb-r3 drop on A3 from 15.79 s (in 0), old Amen on A2 muted",
+   "how": "Sequence.createCloneAction on r2, renamed; clip placed by eval"
   }
  }
 }

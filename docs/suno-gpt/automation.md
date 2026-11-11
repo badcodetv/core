@@ -910,6 +910,24 @@ so `round.py run` never reached the next prompt. `timeout` on `round.py` does no
 survives). **Cause:** Suno renamed the row checkbox from `Select clip` to `Select <song title>` (`role=checkbox`).
 **Fix:** `SEL_SELECT_CLIP` in `take-row.mts` matches both; `takes` lists every row again (title, length, id).
 
+## 2026-11-11: `grid` still waited after Create on long titles (FIXED)
+
+The 11-10 selector fix was real but only half of it: on *The Rules* drop round 2 the first Create made both takes,
+yet `grid` sat in `create()` for its full 7 minutes. Kai: *"each time we try to generate in Suno it gets stuck."*
+**Cause:** `listTakes` cuts every row's title to 48 characters, but filtered on the FULL title asked for, so a title
+of 49+ characters (`The Rules drop r2-reese-hardstep-terrorist-v6-w35`) could never match its own takes. Not a
+cookie banner, not a dialog (none was open; screenshot checked). **Fix:** the filter is cut to 48 characters too.
+Keep round names short anyway: `<prompt name>-v6-w<N>` is appended to the title.
+
+## 2026-11-11: `record` hung because WSLg's sound server froze (fix: restart it, ~5 s)
+
+`record` sat at the Play step for minutes with the take loaded at 0:00; even `pactl info` hung. Not Suno: WSLg's
+PulseAudio (which every channel's Chrome plays into, `unix:/mnt/wslg/PulseServer`) had stopped answering. It does not
+run in our Ubuntu (no `pulseaudio` process there; `sudo` cannot reach it); it runs in WSLg's hidden system distro.
+**Fix, no WSL restart:** `wsl.exe --system -- pkill -f pulseaudio` (from a WSL shell is fine; ignore "Failed to
+translate" about the folder). WSLg starts a fresh one at once. The `badcode_ch<N>` null sinks vanish with it;
+`record` recreates them and moves Chrome's stream across. Check first with `timeout 8 pactl info`: a hang = frozen.
+
 ## 2026-11-10: `record` stopped at the streamed length (FIXED same day)
 
 Suno streams a take into the player, so the `duration` read when playback starts can be only what has buffered: a
