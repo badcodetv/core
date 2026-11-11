@@ -2,7 +2,7 @@
   {
     "name": "gov-1-news",
     "worker": "news-gatherer",
-    "cron": "0 5 * * *",
+    "cron": "0 5 * * 1,3,5",
     "timezone": "Europe/London",
     "keep_sessions": 14,
     "enabled": true,
