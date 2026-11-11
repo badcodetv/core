@@ -12,3 +12,4 @@
 - **2026-11-11, clips + rough cut 1:** 01-A, 01-B (chained), 02, 03 pass; 04 refused 3x (swear in prompt suspected), 04-r2 bare prompt "Poor bloke" passed; nan dub placed on the mouth (dub/04-r2-nan.json). Timeline r1 https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE, 26.2 s.
 - **2026-11-11, Jack, timeline r1 notes:** newspaper insert at the start (done: ITV News 2024 headline, 0.5-3.2 s); effects down (done: -8 dB). Round 2 on the same page.
 - **2026-11-11, Jack, timeline r2 note:** insert on 2 s longer → 0.5-5.2 s (round 3).
+- **2026-11-11, Jack, timeline r3:** "need to fix the lip syncing" → re-rolled 04 with the bare real line (04-r3/r4; one survived, mouths "Poor bastard"), dub laid unbroken on the P and b closures; round 4. The swear was NOT what refused 04 (the long timestamped prompt was).

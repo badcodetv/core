@@ -1,16 +1,17 @@
 {
- "round": 3,
+ "round": 4,
  "plan": [
   {
-   "h": "Done this round (edit only)",
+   "h": "Done this round",
    "items": [
-    "Newspaper insert held 2 s longer: now 0.5–5.2 s, through 'Crispin only earns £100,000 a year'."
+    "New nan clip that mouths the real words, 'Poor bastard' (the old one mouthed 'Poor bloke', one syllable under two). Her line laid in one unbroken piece: 'Poor' on her first opening, the b of 'bastard' on her lip closure.",
+    "Shot ends before she mouths an extra word, so the cut is now 25.4 s."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Still 26 s: trim the appeal, or leave it?",
+    "Does the lip sync hold now?",
     "Happy with it? Say 'it's done' and it goes into Premiere."
    ]
   }
@@ -18,7 +19,8 @@
  "replies": {
   "at26": "Done: real headline, newsprint style, 0.5–3.2 s, below his face; everything else unchanged. Source: ITV News, 22 Mar 2024 (the article's own title; the headline doesn't name him).",
   "at429": "Done: effects lowered 8 dB everywhere (-30 → -38 LUFS), about 20 dB under both voices now.",
-  "at52": "Done: on screen 2 s longer, 0.5–5.2 s, so it's still up as the narrator says '£100,000 a year'."
+  "at52": "Done: on screen 2 s longer, 0.5–5.2 s, so it's still up as the narrator says '£100,000 a year'.",
+  "at627": "Fixed with a new clip: Flow allowed 'Poor bastard' after all with a bare prompt (the first refusal was the long prompt). Her lips close for the P and the b, and the voice now lands on both; checked frame by frame."
  },
  "kai_round1": {
   "at429": {
@@ -62,6 +64,40 @@
    "key": "at52",
    "note": "keep it on the screen for like 2 more seconds, thanks",
    "tc": "00:00:02:04"
+  }
+ },
+ "kai_round3": {
+  "at429": {
+   "at": 1794407659871,
+   "beat": "room",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at429",
+   "note": "the sound affects throught the video overpower the narration adn dialogue please turn it down a bit thanks. ",
+   "tc": "00:00:17:21"
+  },
+  "at26": {
+   "at": 1794407619259,
+   "beat": "appeal",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at26",
+   "note": "At the very beginning, have a newspaper insert here illustrating this, only have it on the screen for a bit and let the rest play, keep everything else the same, thanks",
+   "tc": "00:00:01:02"
+  },
+  "at52": {
+   "at": 1794407887501,
+   "beat": "appeal",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at52",
+   "note": "keep it on the screen for like 2 more seconds, thanks",
+   "tc": "00:00:02:04"
+  },
+  "at627": {
+   "at": 1794408033457,
+   "beat": "nan",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at627",
+   "note": "need to fix the lip syncing here thanks. ",
+   "tc": "00:00:26:03"
   }
  }
 }

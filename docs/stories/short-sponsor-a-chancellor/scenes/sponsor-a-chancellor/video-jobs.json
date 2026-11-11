@@ -69,6 +69,24 @@
    "character": null,
    "why": "04 refused three times (silent block, ~40 s each). Simplest form, as Priority Lane's fix; 'bastard' swapped for 'bloke' in the prompt only (same p and b lip closures), the dub still says 'Poor bastard'",
    "motion": "The camera does not move. The woman reads the paper in her hands, gives a small sad shake of her head and says: Poor bloke. Then she stays still. Thanks."
+  },
+  {
+   "key": "04-r3",
+   "n": 4,
+   "still": "NA1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack timeline r3 at 26:03 'need to fix the lip syncing': 04-r2 mouths one syllable ('bloke') under a two-syllable 'bastard'. Bare prompt with the real words; 04's refusal may have been its length, not the swear",
+   "motion": "The camera does not move. The woman looks at the paper in her hands and says slowly: Poor bastard. Thanks."
+  },
+  {
+   "key": "04-r4",
+   "n": 4,
+   "still": "NA1-a",
+   "duration": 8,
+   "character": null,
+   "why": "as 04-r3, a second candidate with a different read",
+   "motion": "The camera does not move. The elderly woman reads the leaflet, sighs, and says quietly and slowly: Poor bastard... Then she shakes her head. Thanks."
   }
  ]
 }

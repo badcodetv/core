@@ -113,5 +113,25 @@
   "url": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE",
   "what": "rough cut 3: news insert held to 5.2 s",
   "rebuild": "python3 scripts/shorts/sponsor_chancellor_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-timeline"
+ },
+ {
+  "at": "2026-11-11T15:05:24+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE",
+  "what": "timeline r3 notes",
+  "decided": [
+   "Jack: need to fix the lip syncing (nan)"
+  ],
+  "feedback": "feedback/timeline-r3",
+  "feedback_docs": 4
+ },
+ {
+  "at": "2026-11-11T15:05:24+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE",
+  "what": "rough cut 4: nan re-shot mouthing the real words, dub refitted (25.4 s)",
+  "rebuild": "python3 scripts/shorts/sponsor_chancellor_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-timeline"
  }
 ]

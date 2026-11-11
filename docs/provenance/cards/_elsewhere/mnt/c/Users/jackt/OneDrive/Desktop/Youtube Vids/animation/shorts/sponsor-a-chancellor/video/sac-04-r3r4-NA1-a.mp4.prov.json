@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/video/sac-04-r3r4-NA1-a.mp4",
+ "made": "2026-11-11T14:48:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The elderly woman reads the leaflet, sighs, and says quietly and slowly: Poor bastard... Then she shakes her head. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/NA1-a.jpg",
+ "why": "as 04-r3, a second candidate with a different read | The one survivor of the 04-r3/04-r4 wave (14:42); tile order says 04-r4 (newest), but 04-r3's tile vanished, so it may be 04-r3: 'The camera does not move. The woman looks at the paper in her hands and says slowly: Poor bastard. Thanks.'. Its own audio says 'Poor bastard. \u2026 Thanks.' match.py filed it as '04' (same still).",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/NA1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor",
+  "key": "04",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T14:11:35.063Z"
+ }
+}

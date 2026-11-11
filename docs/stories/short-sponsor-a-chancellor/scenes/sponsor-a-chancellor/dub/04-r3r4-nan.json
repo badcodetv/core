@@ -1,0 +1,3 @@
+{"_note": "Jack timeline r3 at 26:03 'need to fix the lip syncing'. New take mouths the real words: lips shut 2.08-2.67 (P), open 2.75; shut ~3.17-3.25 (b), open 3.33 (mouth-track.py). Whole take laid unbroken (not chopped): 'Poor' voice 0.41 -> 2.84, bastard 0.91 -> 3.34 (slice from 0.30, so at = 2.73).",
+ "duration": 8.042,
+ "phrases": [{"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nan-b-vindemiatrix.wav", "from": 0.30, "to": 2.16, "at": 2.73, "tempo": 1.0, "text": "Poor bastard..."}]}

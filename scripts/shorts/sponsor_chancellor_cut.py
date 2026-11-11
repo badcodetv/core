@@ -21,7 +21,7 @@ MEDIA = pathlib.Path(cfg['media'])
 VID, AUD = MEDIA / 'video', MEDIA / 'audio'
 CUT = MEDIA / 'cut'; CUT.mkdir(parents=True, exist_ok=True)
 NAR = AUD / 'casting/nar-c-achernar.wav'
-NAN_DUB = AUD / 'dub/sac-04-r2-nan-dub.wav'          # on clip 04-r2's own clock: voice 2.41-2.80, 3.70-4.95
+NAN_DUB = AUD / 'dub/sac-04-r3r4-nan-dub.wav'        # r4 (Jack: fix the lip sync): a take that mouths the real words; voice 2.84-4.59 on its clock
 LOGO = REPO / 'docs/brand/logo'
 W, H, FPS = 1080, 1920, 24
 LEAD = 0.4
@@ -39,14 +39,14 @@ nar_at, t = [], LEAD
 for f, to, gap, _ in NAR_PH:
     nar_at.append(round(t, 3)); t += (to - f) + gap
 NAR_END = t
-D_IN, D_OUT = 0.6, 6.0                                 # 04-r2: mouth 2.38-4.13, then she holds
+D_IN, D_OUT = 0.6, 5.2                                 # 04-r3r4: P closure 2.08-2.67, 'Poor' 2.75, b closure ~3.2, 'bastard' 3.33; she mouths the prompt's 'Thanks' from 5.33, so out at 5.2
 
 # (beat, clip, in, dur)
 SHOTS = [('appeal', 'sac-01-A-AP1-b.mp4', 0.0, 8.0),
          ('appeal', 'sac-01-B-AP1-b-end.mp4', 0.04, round(NAR_END + 0.5 - 8.0, 3)),
          ('room', 'sac-02-RM2-b-a.mp4', 1.0, 2.0),
          ('post', 'sac-03-PO2-b-b.mp4', 0.8, 2.8),
-         ('nan', 'sac-04-r2-NA1-a.mp4', D_IN, D_OUT - D_IN)]
+         ('nan', 'sac-04-r3r4-NA1-a.mp4', D_IN, D_OUT - D_IN)]
 starts, t = [], 0.0
 for s in SHOTS: starts.append(round(t, 3)); t += s[3]
 TOTAL = round(t, 3)
@@ -117,10 +117,10 @@ def main():
 
     script = json.loads((SCENE / 'script.json').read_text())
     lines = {b['id']: b['lines'] for b in script['beats']}
-    nan_t = starts[4] + 2.41 - D_IN
+    nan_t = starts[4] + 2.84 - D_IN
     vt = {'appeal': [(nar_at[0], NAR_PH[0][1] - NAR_PH[0][0]), (nar_at[1], NAR_PH[1][1] - NAR_PH[1][0]),
                      (nar_at[2], nar_at[5] + NAR_PH[5][1] - NAR_PH[5][0] - nar_at[2])],
-          'nan': [(nan_t, 4.95 - 2.41)]}
+          'nan': [(nan_t, 4.59 - 2.84)]}
     beats, seen = [], set()
     for i, (beat, clip, tin, d) in enumerate(SHOTS):
         if beat in seen:
@@ -132,8 +132,8 @@ def main():
             bl.append({'i': j, 'who': ln['who'].lower(), 'name': ln['who'].title(), 't': round(tt, 2), 'dur': round(dd, 2),
                        'text': ln['text'], 'by': ln.get('by', 'claude')})
         beats.append({'id': beat, 'title': TITLES[beat], 'start': starts[i], 'dur': d, 'see': SEE[beat], 'lines': bl})
-    edl = {'sequence': 'short-sponsor-a-chancellor-r2', 'title': 'Sponsor a Chancellor Timeline',
-           'heading': 'BadCode Shorts ▲ Sponsor a Chancellor, rough cut 2',
+    edl = {'sequence': 'short-sponsor-a-chancellor-r4', 'title': 'Sponsor a Chancellor Timeline',
+           'heading': 'BadCode Shorts ▲ Sponsor a Chancellor, rough cut 4',
            'intro': 'All five clips with the picked voices (narrator: Achernar; nan: Vindemiatrix, lip-synced). Note anything: a beat, a shot, a line, a sound, or a single frame.',
            'fps': FPS, 'total': TOTAL, 'beats': beats,
            'video': [{'file': str(VID / s[1]), 'in': s[2], 'start': starts[i], 'dur': s[3], 'beat': s[0], 'source': str(VID / s[1]), 'looped': False}
@@ -141,7 +141,7 @@ def main():
            'audio': [{'track': 'A1', 'name': 'vox-narrator', 'file': str(nar)}, {'track': 'A2', 'name': 'vox-nan', 'file': str(nan)},
                      {'track': 'A3', 'name': 'sfx-world', 'file': str(sfx)}],
            'events': [{'stem': 'vox-narrator', 't': a, 'dur': round(to - f, 2), 'what': txt, 'src': str(NAR)} for (f, to, _, txt), a in zip(NAR_PH, nar_at)]
-                     + [{'stem': 'vox-nan', 't': round(nan_t, 2), 'dur': 2.54, 'what': 'Poor bastard... (lip-synced)', 'src': str(NAN_DUB)}]
+                     + [{'stem': 'vox-nan', 't': round(nan_t, 2), 'dur': 1.75, 'what': 'Poor bastard... (lip-synced)', 'src': str(NAN_DUB)}]
                      + [{'stem': 'sfx-world', 't': starts[i], 'dur': s[3], 'what': f"{s[0]}: clip's own ambience", 'src': str(VID / s[1])} for i, s in enumerate(SHOTS)],
            'flags': [f'Runs {TOTAL:.1f} s: the appeal is {NAR_END + 0.5:.1f} s of it (the narration with its pauses tightened, not sped).',
                      "Her telly is side-on in 02, so the advert can't be seen on it: the pull-back is a plain cut for now.",
