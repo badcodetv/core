@@ -38,7 +38,7 @@ canvas.snow{position:absolute;inset:0;width:100%;height:100%;z-index:30;opacity:
 .static canvas.snow{opacity:.9}
 .osd{position:absolute;top:4cqmin;right:5cqmin;z-index:35;font:9cqmin/1 var(--mono);color:var(--osd);text-shadow:0 0 1.6cqmin rgba(92,255,106,.6);opacity:0;transition:opacity .25s;text-align:right;pointer-events:none}
 .osd.show{opacity:1}
-.osd small{display:block;font-size:3.2cqmin;margin-top:1cqmin}
+.osd{font-size:4.6cqmin;letter-spacing:.08em;white-space:nowrap}
 .standby{position:absolute;inset:0;z-index:39;background:var(--black);display:none;place-items:center}
 .off .standby{display:grid}
 .standby svg{width:7cqmin;animation:breathe 3s ease-in-out infinite}
@@ -161,21 +161,22 @@ button.pill{cursor:pointer;background:var(--cream);color:#111;border:0;font-weig
 .remote button{font:700 .8rem/1 var(--ui);color:#e9e3d8;background:#3a3733;border:0;border-radius:10px;padding:11px 0;cursor:pointer;box-shadow:0 3px 0 #0b0a09;min-height:40px}
 .remote button:active{transform:translateY(2px);box-shadow:0 1px 0 #0b0a09}
 .remote button[aria-pressed="true"]{background:#e9e3d8;color:#141312}
-.rtop{display:grid;grid-template-columns:44px 1fr 1fr 36px;gap:6px}
-.rtop .pwr{background:var(--red);color:#fff;display:grid;place-items:center;padding:0}
-.rtop .pwr svg{width:22px}
+/* Kai, 2026-11-11: no top row (power, TEXT and CLEAN went); a small ✕ on the remote's corner hides it */
+.remote .tuck{position:absolute;top:-10px;right:-10px;width:30px;height:30px;min-height:0;padding:0;border-radius:50%;display:grid;place-items:center;font-size:.85rem;background:#3a3733;box-shadow:0 2px 6px rgba(0,0,0,.5)}
 .strands{display:grid;gap:6px}
 .strands button{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:8px;text-align:left;padding:11px 12px;color:#111}
 .strands b{font:800 1rem/1 var(--ui);font-stretch:80%}
-.strands small{font:500 .72rem/1.1 var(--ui);opacity:.75}
+.strands small{font:500 .72rem/1.1 var(--ui);opacity:.75;text-align:right} /* name left, joke right (Kai, 2026-11-11) */
 .st-stories{background:var(--blue)!important;color:#fff!important}
 .st-news{background:var(--news)!important;color:#fff!important}
 .st-gov{background:var(--gov)!important}
 .strands button[aria-current="true"]{outline:3px solid #fff;outline-offset:-3px}
-.pad{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.pad{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} /* a phone keypad: 1–9, then ◀ 0 ▶; 0 is programme 10 (Kai, 2026-11-11) */
 .pad button{font:var(--mono);font-family:var(--mono);font-size:1.05rem}
-.nav{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
-.nav .num{font-family:var(--mono);font-size:1.05rem;font-weight:400}
+/* a number with no programme on this channel is greyed out (Kai, 2026-11-11) */
+.pad button[aria-current="true"]{background:#e9e3d8;color:#141312;box-shadow:0 3px 0 #8d867a}
+.remote button:disabled{opacity:.28;cursor:default;box-shadow:none;transform:none}
+.pad .arrow{font-family:var(--ui);font-size:.9rem}
 .hint{margin:0;font:600 .72rem/1.3 var(--ui);color:#8d867a;text-align:center}
 .untuck{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:49;font:700 .75rem var(--ui);letter-spacing:.1em;background:#2a2826;color:#e9e3d8;border:1px solid #48443d;border-radius:99px;padding:10px 14px;cursor:pointer;display:none}
 .tucked .remote{transform:translateY(130%);opacity:0;pointer-events:none}
@@ -186,9 +187,10 @@ button.pill{cursor:pointer;background:var(--cream);color:#111;border:0;font-weig
   .tv{display:grid;grid-template-rows:minmax(0,1fr) auto;padding:max(8px,env(safe-area-inset-top,0px)) max(8px,env(safe-area-inset-right,0px)) max(8px,env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px));gap:10px}
   .screen{position:relative;inset:auto;width:100%;height:100%;min-height:42vh}
   .remote{position:relative;right:auto;bottom:auto;width:100%;border-radius:22px;padding:12px;gap:8px}
-  .rtop .tuck{visibility:hidden}
+  .remote .tuck{display:none}
   .strands{grid-template-columns:repeat(3,1fr)}
   .strands button{grid-template-columns:1fr;text-align:center;padding:14px 6px;gap:4px}
+  .strands small{text-align:center}
   .remote button{min-height:46px}
   .tucked .remote{transform:none;opacity:1;pointer-events:auto}
   .tucked .untuck{display:none}

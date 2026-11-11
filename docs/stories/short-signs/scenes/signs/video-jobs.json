@@ -1,0 +1,41 @@
+{
+ "anim_picks": {
+  "1": "a",
+  "2": "b",
+  "3": "a"
+ },
+ "skip": [
+  1,
+  2,
+  3
+ ],
+ "extra": [
+  {
+   "key": "01",
+   "n": 1,
+   "still": "ST1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 1a",
+   "motion": "Locked-off static camera, one continuous shot with no cuts, shot at 24fps with a 180-degree shutter for natural motion blur. The man steadily wheels the green bin the last few steps to the kerb, leaves it standing there, then turns and walks calmly back toward the house. A single car's headlights slowly sweep past in the street. The signs, houses and parked cars stay exactly as they are. The camera stays perfectly still. Thanks."
+  },
+  {
+   "key": "02",
+   "n": 2,
+   "still": "LD2-b-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 2b",
+   "motion": "Locked-off static camera, one continuous shot with no cuts, shot at 24fps with a 180-degree shutter for natural motion blur. A faint, cool blue-white glow switches on from under the front lip of the bin lid, as if something inside just lit up, and then holds steady. The lid stays closed, the bin stays still, and the signs and street behind stay exactly as they are. Fine raindrops fall on the lid. The camera stays perfectly still. Thanks."
+  },
+  {
+   "key": "03",
+   "n": 3,
+   "still": "IN1-b",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 3a; logo composited after",
+   "motion": "Locked-off static camera, one continuous shot with no cuts, shot at 24fps with a 180-degree shutter for natural motion blur. Thin seams of light around the edges of the closed lid flicker gently, like a passing streetlight. The bin bags at the bottom shift very slightly. The lid stays closed, and the flat square panel in the centre stays plain, matte and evenly lit. The camera stays perfectly still. Thanks."
+  }
+ ]
+}

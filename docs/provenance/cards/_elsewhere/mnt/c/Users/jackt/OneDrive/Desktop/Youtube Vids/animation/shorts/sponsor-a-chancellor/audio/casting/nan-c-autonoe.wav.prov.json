@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nan-c-autonoe.wav",
+ "made": "2026-11-11T13:36:46+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Poor bastard...",
+ "inputs": {
+  "profile": "# Audio Profile\nAn East London nan in her eighties, a bit gravelly, blunt and dry, a long slow breath before she speaks.\n\n## Scene:\nStanding by her front door with the post in her hand, in a flat with the heating off.\n\n## Sample Context:\nShe shakes her head at the flyer, honestly sorry for him, with a tired little laugh in it.\n",
+  "profile_file": "docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/profiles/nan-c-autonoe.md"
+ },
+ "settings": {
+  "voice": "Autonoe",
+  "temperature": 1,
+  "channels": 2
+ }
+}

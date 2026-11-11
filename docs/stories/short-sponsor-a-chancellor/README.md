@@ -18,7 +18,8 @@
 
 ## Checks owed
 - 🔴 **Rename him.** "Jeremy" points at a real chancellor. Use an invented name, and never an AI likeness of a real politician (slate rules).
-- ⬜ **The real median UK salary** (ONS, latest figure and year) before it goes on screen.
+- ✅ **The real median UK salary:** **£39,039** a year, median gross annual pay for full-time employees, April 2025 (ONS, Annual Survey of Hours and Earnings 2025, provisional). Source: https://www.ons.gov.uk/releases/employeeearningsintheuk2025 (checked 2026-11-11 via search; re-check the final figure before posting). On screen: "Median full-time pay: £39,039 (ONS, 2025)".
+- ⬜ What a real chancellor earns (MP salary + ministerial salary), if the script uses it: not checked yet.
 - ⬜ Reader rules (`docs/marketing/the-reader.md`); the `marketing-gatekeeper` checks it before posting.
 - ⬜ Jack writes the jokes; the words go through `scene-dialogue`.
 
@@ -26,8 +27,8 @@
 
 | What | Where | Status |
 | --- | --- | --- |
-| Words | `scenes/sponsor-a-chancellor/` (scene-dialogue) | ⬜ |
+| Words | `scenes/sponsor-a-chancellor/script.json` (dialogue page https://claude.ai/artifact/YcJX759MtLbfgzSpxiJeKM) | ✅ locked 2026-11-11 (draft 1D, hardship f); ⬜ the name |
 | Beats | `scenes/sponsor-a-chancellor/brief.md` | ⬜ |
-| Look | [`look.md`](./look.md) | EMPTY |
+| Look | [`look.md`](./look.md) · mood board https://claude.ai/artifact/2zJhS2qQjLwYE89GkNBvx9 | EXPLORING, round 1 stills awaiting Jack |
 | Sound | [`sound.md`](./sound.md) | EMPTY |
 | Media | Jack: Desktop `Youtube Vids\animation\shorts\sponsor-a-chancellor` · Drive `Shorts/Sponsor a Chancellor` | empty |

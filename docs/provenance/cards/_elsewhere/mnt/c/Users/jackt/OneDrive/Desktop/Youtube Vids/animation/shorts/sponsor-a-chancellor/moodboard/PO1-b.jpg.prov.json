@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/PO1-b.jpg",
+ "made": "2026-11-11T13:26:39.751Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 photograph looking straight down at a worn doormat just inside a council flat's front door, framed slightly off-centre so the bottom edge of the white door and a strip of patterned carpet cut into the top of the frame. Scattered across the mat lie a gas bill in a window envelope, a supermarket offers leaflet, a takeaway menu, and a postcard-sized flyer half covered by the menu, with the words \"SPONSOR A CHANCELLOR\" printed in bold white capitals on a black band and a black-and-white photo of a plump, comfortable middle-aged man in a tailored coat with a trembling, wounded expression. The toe of an old woman's fleece-lined slipper and the hem of her buttoned brown winter coat enter from the bottom edge. Flat, cold blue-grey light from a frosted door pane, very even and shadowless, with one weak warm glow on the carpet from a lamp out of frame. Shot on slightly grainy 1980s colour negative film, muted colours, low contrast. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d0bc66a1-c43c-4483-885d-fecbe5200e66"
+}

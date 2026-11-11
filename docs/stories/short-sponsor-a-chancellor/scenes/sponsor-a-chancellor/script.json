@@ -1,0 +1,65 @@
+{
+ "beats": [
+  {
+   "id": "appeal",
+   "title": "The advert (black and white, on her TV)",
+   "see": "",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "This is Crispin.",
+     "by": "claude",
+     "how": "soft, slow, charity-advert hush, wobbling piano"
+    },
+    {
+     "who": "NARRATOR",
+     "text": "Crispin only earns £100,000 a year.",
+     "by": "claude",
+     "how": "same"
+    },
+    {
+     "who": "NARRATOR",
+     "text": "Tonight, his second home has no second home. For just £3 a month, you can help.",
+     "by": "jack",
+     "how": "same; the hardship is Jack's pick (option f)"
+    }
+   ],
+   "music": "sad charity piano",
+   "sfx": ""
+  },
+  {
+   "id": "room",
+   "title": "Pull back into her freezing flat (colour)",
+   "see": "",
+   "lines": [],
+   "music": "",
+   "sfx": "cold room tone, the letterbox clatters"
+  },
+  {
+   "id": "post",
+   "title": "The junk mail: his sadder flyer",
+   "see": "",
+   "lines": [],
+   "music": "",
+   "sfx": "shuffling slippers, paper"
+  },
+  {
+   "id": "nan",
+   "title": "Her line",
+   "see": "",
+   "lines": [
+    {
+     "who": "NAN",
+     "text": "Poor bastard...",
+     "by": "jack",
+     "how": "quietly, genuinely sorry for him"
+    }
+   ],
+   "music": "",
+   "sfx": ""
+  }
+ ],
+ "voices": [],
+ "flags": [],
+ "name_ruling": "Crispin stays (Jack, 2026-11-11): first name only, invented face."
+}

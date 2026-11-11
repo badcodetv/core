@@ -32,7 +32,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 3. 🏠 **Howard Street:** a sitcom title card and four neighbours bickering (6) → pull back to one landlord counting rent (6) → the laugh track cuts dead (2). **14s.**
 4. 🚪 **Name's Not Down:** "ID?" "I wrote that sign." "Then you know." **10s.**
 5. 🪆 **Unelected:** dolls open, UNELECTED, UNELECTED, UNELECTED (8) → the tiny one says VOTER, unopened (4). **12s.**
-6. 💷 **Sponsor a Chancellor** *(Jack: BUILDING, `docs/stories/short-sponsor-a-chancellor/`)*: "Jeremy only earns £100,000." (6) → "£3 a month buys him a second wine fridge." (5) **11s.**
+6. 💷 **Sponsor a Chancellor** *(Jack: BUILDING, in Premiere `shorts-6-sponsor-a-chancellor-r5`; `docs/stories/short-sponsor-a-chancellor/`)*: "Jeremy only earns £100,000." (6) → "£3 a month buys him a second wine fridge." (5) **11s.**
 7. ✈️ **Party of One:** a safety demo for one man (6) → "The cost has been added to your council tax." (4) **10s.** The pensioner cutaway is cut.
 8. 🚆 **Great Train Robbery:** the gang creeps aboard (5) → the fares board (3) → masks off, a nod of respect, they leave (5). **13s.**
 9. 🧾 **Secretary's Rate:** two tax bills, hers is higher, he hands her his to file. **10s.**
@@ -60,6 +60,25 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 30. 🥶 **Grandma Freezing:** a night break-in finds a pensioner by a dead radiator (6) → they feed her meter with the stolen coins (6). **12s.**
 31. 🪧 **Wanted:** the gang's WANTED poster next to a banker's PROMOTED. **6s.**
 32. 🚦 **Getaway, Held:** the getaway car held at the lights beside Jack's ambulance; driver and paramedic share a look. **10s.**
+33. 🗑️ **Signs** *(Jack: BUILDING, in Premiere `shorts-33-signs-r1`; `docs/stories/short-signs/`)*: a terrace at dusk with every party's sign out front, someone wheels their bin out (4) → push into the bin lid (3) → inside the bin looking up, the lid lights up: the BadCode logo and name (4). **11s.**
+**Batch 2026-11-11 (Claude drafts for Jack, who writes the final jokes; words are `by: claude` until he edits them).** Each keeps the joke in the words, takes a timeless pattern (no news cycle), uses no real person, and aims at the decision-maker (`the-reader.md`).
+
+34. 👵 **Poor Nan: Record Profits** *(series with the Sponsor a Chancellor nan)*: she reads the paper by candlelight: "Energy firm posts record profits." (4) → "Oh, good for them. They'll need it, with the price of everything." (5) → she blows the candle out to save it (2). **11s.**
+35. 👵 **Poor Nan: Bonus Season:** a banker on TV says bonuses "keep talent in the country" (5) → nan, knitting in her coat: "Bless him. I'd stay for less." (4). **9s.**
+36. 🌳 **Magic Money Tree** *(Jack: BUILDING, in Premiere `shorts-36-magic-money-tree-r1`; `docs/stories/short-magic-money-tree/`)*: a minister shakes a tree labelled HOSPITALS: nothing falls, "We can't afford it." (5) → shakes the tree next to it, labelled BANKS: money pours (4) → he looks at camera: "Different tree." (2). **11s.**
+37. 🏠 **The Viewing:** an agent shows a couple a cupboard: "Bijou." (3) → "There's no window." / "There's a landlord." (4) → "He's got eleven of these." (3). **10s.**
+38. 🍰 **Fair Share:** a boardroom cake; the boss cuts himself nine tenths, the worker gets a crumb (5) → boss: "Let's not get into the politics of envy." (3) → worker: "I'm not jealous. I'm hungry." (3). **11s.**
+39. 🔥 **Heating or Eating:** a game-show buzzer: "Heating… or eating?" (4) → contestant: "Can I phone a friend?" (3) → host: "Their phone's been cut off." (3). **10s.**
+40. 🥾 **Bootstraps:** from a helicopter, a man shouts "Pull yourself up by your bootstraps!" (4) → the man below, in socks: "Sold them. Rent was due." (4). **8s.**
+41. 🏃 **Meritocracy:** a race; "On your marks…" (3) → one runner is already at the finish, stepping out of a chauffeured car (4) → he lifts the trophy: "Hard work pays." (3). **10s.**
+42. 📈 **Productivity:** a worker makes more and more widgets as the years tick past on the wall clock; his pay packet never changes size (8) → boss: "Great news, the economy grew!" / worker: "Where to?" (4). **12s.**
+43. 🤖 **Who Owns the Robot:** boss: "Good news, the robot can do your job." / "So I get Fridays off?" / "You get every day off." (7) → "Who owns the robot?" / "I do." (4). **11s.** Names the owner, never the machine (reader rule 5).
+44. 👏 **Clap Louder:** neighbours clapping for nurses on doorsteps (4) → a nurse at the door: "Could you clap a bit louder? It's for the gas bill." (5). **9s.**
+45. 🍄 **Character:** a landlord in a damp flat: "That's not damp, that's character." (4) → tenant points at a mushroom growing from the skirting board (2) → "And that's a feature." (3). **9s.**
+46. 🩺 **Waiting List:** receptionist: "Next appointment is March." / "Which year?" (4) → "Have you got private?" / "No." / "Then it's a surprise." (5). **9s.**
+47. 🎓 **Exposure:** "We can't pay, but you'll get exposure." (4) → intern: "My landlord only takes cash." (3) → "Have you tried exposure?" (3). **10s.**
+48. ✈️ **Every Little Helps:** a private jet lands; the man stepping off tells a kid with a paper straw: "We all have to do our bit." (6) → the kid sucks the soggy straw (3). **9s.**
+49. 🧮 **We Can't Afford It (vault):** two doors in a Treasury corridor: NURSES (empty room, a single coin) and the vault next door, piled to the ceiling, labelled "EMERGENCIES (OURS)" (6) → a clerk locks it: "Ours." (2). **8s.**
 
 **Top five (not ruled):** 1 Priority Lane · 3 Howard Street · 23 Stiff Upper Lip · 2 Same Bench · 12 Magic 8 Ball.
 

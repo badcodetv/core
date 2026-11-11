@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/AP1-c.jpg",
+ "made": "2026-11-11T13:24:05.155Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 black-and-white close-up photograph from a British charity television appeal. The face of an invented man in his mid-fifties fills the upper two thirds of the frame: well fed, broad cheeks, a small neat grey beard, open pores, faint broken veins on the nose, deep crow's feet and slightly watery eyes looking straight down the lens with mournful sincerity. The collar of a charcoal herringbone tweed coat and a silk paisley scarf are visible at the bottom edge. Soft window light comes from the left, falling off into gentle shadow across the right cheek, with lifted greys and low contrast. The background is an out-of-focus wood-panelled study with a leather wing chair. Across the lower third sits a plain caption in clean white sans-serif lettering reading \"This is Crispin.\" Shot on grainy black-and-white film with a slightly soft focus, framed with a little too much headroom. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "76cf80a1-26a6-406e-bd05-fbf64e67c285"
+}

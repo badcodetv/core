@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/video/sac-01-B-AP1-b-end.mp4",
+ "made": "2026-11-11T14:26:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off shot; the camera stays completely still for the whole clip. One continuous take. The man stays at the glass, gazing out with quiet sorrow. His hand slides slowly down the wet pane, fingertips trailing, until it rests at the bottom of the frame. Beside his face, a single raindrop tracks down the glass in its own slow line. His head and gaze stay steady. Solemn, sincere, unhurried. Black and white monochrome film throughout, shot at 24fps with a 180-degree shutter, natural motion blur. The camera remains static. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/AP1-b-end.jpg",
+ "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 1b second half, chained from 01-A's last frame once 01-A passes",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/AP1-b-end.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor",
+  "key": "01-B",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T14:13:22.046Z"
+ }
+}

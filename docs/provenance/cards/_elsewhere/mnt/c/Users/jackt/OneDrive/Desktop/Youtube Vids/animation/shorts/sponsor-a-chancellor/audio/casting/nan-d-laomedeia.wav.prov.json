@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nan-d-laomedeia.wav",
+ "made": "2026-11-11T13:37:34+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Poor bastard...",
+ "inputs": {
+  "profile": "# Audio Profile\nA Welsh valleys nan in her eighties, a lilting, warm voice gone thin with age, gentle and quiet.\n\n## Scene:\nAt her doormat in her coat and hat, holding a leaflet up to the light.\n\n## Sample Context:\nShe murmurs it with real sympathy, as if he were a neighbour who had fallen on hard times.\n",
+  "profile_file": "docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/profiles/nan-d-laomedeia.md"
+ },
+ "settings": {
+  "voice": "Laomedeia",
+  "temperature": 1,
+  "channels": 2
+ }
+}

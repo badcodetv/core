@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nar-a-sulafat.wav",
+ "made": "2026-11-11T13:34:49+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "This is Crispin.\n\nCrispin only earns a hundred thousand pounds a year.\n\nTonight, his second home has no second home.\n\nFor just three pounds a month, you can help.",
+ "inputs": {
+  "profile": "# Audio Profile\nA warm, softly spoken English woman of about forty-five, the voice of a television charity appeal: hushed, slow, achingly sincere, every pause leaning on your conscience. Clear, gentle received pronunciation.\n\n## Scene:\nA quiet recording booth, reading the voiceover for a monochrome charity appeal over a sad piano.\n\n## Sample Context:\nShe means every word. She lets each sentence hang, as if the hardship is almost too much to say.\n",
+  "profile_file": "docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor/voices/profiles/nar-a-sulafat.md"
+ },
+ "settings": {
+  "voice": "Sulafat",
+  "temperature": 1,
+  "channels": 2
+ }
+}

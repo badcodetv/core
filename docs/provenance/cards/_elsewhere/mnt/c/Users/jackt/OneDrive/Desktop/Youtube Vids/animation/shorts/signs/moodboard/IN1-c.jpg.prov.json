@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/IN1-c.jpg",
+ "made": "2026-11-11T15:37:26.907Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 close, low-light photograph from inside a dark bin, shot upward with a 50mm lens from just beneath the lid. The underside of the black plastic lid fills the frame: dusty, fingerprint-smudged, fine moulded ribs near the edges, and a calm empty circular central zone free of any marks. Pale dusk-blue light enters only as thin bright seams around the lid perimeter, falling softly across the ribs. Knotted rubbish bags and a collapsed cardboard box press in at left and right, nearly black. Realistic noise, slightly soft focus at the edges, no stylised grading. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "72e15a2c-7510-40fa-8eac-d7ae0e4ceabb"
+}

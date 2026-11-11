@@ -2729,3 +2729,11 @@ with no police or emergency vehicle in the still.
 
 ### 2026-11-11: the Priority Lane "silent block" was the wording, not the still (single case, unconfirmed)
 Still REP1-a (masked reporter, ambulance and police bikes behind) failed with nothing returned about 10 times across several detailed prompts. On retry, 03-r2 (detailed) went through once, but 05-r2 kept being refused within about 14s. A stripped-down prompt ("The man stands still holding the microphone. Behind him, the yellow van drives away. Rain falls. No dialogue, no music.") generated on its second submit. **Try a bare prompt that names no vehicles, lights or uniforms before replacing the still.** One case only; the cause has not been isolated.
+
+## Running several clips at once (2026-11-11, Sponsor a Chancellor) `[web, unconfirmed]` + `[ours]`
+
+- **Concurrency:** third-party guides say Flow runs up to **5 generations at once** and fails the extras straight away; Google's own help only says it "may rate-limit". Not confirmed by Google. Sources: whiskailabs.net/google-flow-generation-failed-fix, thumbtube.com (Veo 3 usage limits), support.google.com/flow/answer/16353333.
+- **Quality:** nothing found saying parallel jobs lower quality; each is its own render. Heavy load is reported to raise the *failure* rate, not lower quality. `[web]`
+- **Ours:** 4 clips submitted together came back in ~5 min, 3 good, 1 refused for its content, not the load. The real time sinks were (a) `run.mts` waiting its full 12 min `RENDER_MS` for a tile that had been silently refused, and (b) `match.py` naming clips by first frame, so a re-roll from the same still was filed under the old clip's name and resubmitted.
+- **Fixed the same day:** `run.mts` now stops waiting once every remaining tile is done and nothing has changed for `STALL_MS` (2 min, env-tunable), and names each download for its job from the tile order (`raw-NNN--<key>.mp4`), which `match.py` trusts when the first frame also matches.
+- **Then, on Jack's question ("why does it wait at all instead of just refreshing the page and trying again"):** each clip is watched for 30 s after submit (`SURVIVE_MS`); a vanished or Failed tile means refresh and resend the same prompt at once, skipped after 3 (`REFUSE_TRIES`). Commits 0fcef78e, 51b80537.

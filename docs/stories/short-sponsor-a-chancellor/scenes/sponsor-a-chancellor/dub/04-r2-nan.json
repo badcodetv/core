@@ -1,0 +1,6 @@
+{"_note": "Sponsor a Chancellor 04-r2 (2026-11-11): the nan's 'Poor bastard...' (Vindemiatrix, nan-b) on the clip that mouths 'Poor bloke'. Mouth (mouth-map.py): slight open 2.38-2.75, wide 3.67-4.13. Two phrases, each 0.03 s after its opening.",
+ "duration": 8.042,
+ "phrases": [
+  {"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nan-b-vindemiatrix.wav", "from": 0.36, "to": 0.80, "at": 2.36, "tempo": 1.0, "text": "Poor"},
+  {"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/audio/casting/nan-b-vindemiatrix.wav", "from": 0.86, "to": 2.16, "at": 3.65, "tempo": 1.0, "text": "bastard..."}
+ ]}

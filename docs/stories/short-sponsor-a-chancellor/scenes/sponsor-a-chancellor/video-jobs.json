@@ -1,0 +1,92 @@
+{
+ "anim_picks": {
+  "1": "b",
+  "2": "a",
+  "3": "b",
+  "4": "a"
+ },
+ "still_picks": {
+  "2": "RM2-b-a",
+  "3": "PO2-b-b"
+ },
+ "skip": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "extra": [
+  {
+   "key": "01-A",
+   "n": 1,
+   "still": "AP1-b",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 1b, first half",
+   "motion": "Static locked-off shot; the camera stays completely still for the whole clip. One continuous take. Behind the rain-streaked conservatory glass, the man keeps his palm flat on the pane and gazes out, sorrowful. Rain runs steadily down the glass in thin rivulets. Around the fourth second he closes his eyes in one slow, heavy blink, then looks out again and holds. Solemn charity-appeal sincerity, quiet and still. Black and white monochrome film throughout, shot at 24fps with a 180-degree shutter, natural motion blur. The camera remains static. Thanks."
+  },
+  {
+   "key": "02",
+   "n": 2,
+   "still": "RM2-b-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 2a",
+   "motion": "Static locked-off shot from the hallway doorway; the camera stays completely still. One continuous take. The woman sits motionless in her armchair, both hands round her mug, eyes on the television. Cool flickering television light plays softly across her face and the blanket. A thin wisp of steam rises from the mug and fades; her breath shows faintly in the cold air. Everything else in the room stays perfectly still. Quiet, cold, patient stillness. Shot at 24fps with a 180-degree shutter, natural motion blur. The camera remains static. Thanks."
+  },
+  {
+   "key": "03",
+   "n": 3,
+   "still": "PO2-b-b",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 3b",
+   "motion": "Static top-down shot looking at the doormat; the camera stays completely still. One continuous take. A cold draught breathes in under the front door: the corner of the takeaway menu lifts gently, flutters for a moment, then settles back flat. The black-and-white flyer at the front stays perfectly flat and still, as do the gas bill, the supermarket leaflet and the slipper in the foreground. Quiet, cold, ordinary morning. Shot at 24fps with a 180-degree shutter, natural motion blur. The camera remains static. Thanks."
+  },
+  {
+   "key": "04",
+   "n": 4,
+   "still": "NA1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 4a, muted and dubbed after",
+   "motion": "Static locked-off close-up; the camera stays completely still. One continuous take. [00:00-00:03] The woman holds the flyer and reads, eyes moving slowly along the lines. [00:03-00:04] She gives a small, sad shake of the head. [00:04-00:06] She says: Poor bastard. Quietly, with real pity, her lips forming the two words clearly and slowly. [00:06-00:08] She holds still, lips closed, eyes lowered to the page. Played straight and sincere. Shot at 24fps with a 180-degree shutter, natural motion blur. The camera remains static. Thanks."
+  },
+  {
+   "key": "01-B",
+   "n": 1,
+   "still": "AP1-b-end",
+   "motion": "Static locked-off shot; the camera stays completely still for the whole clip. One continuous take. The man stays at the glass, gazing out with quiet sorrow. His hand slides slowly down the wet pane, fingertips trailing, until it rests at the bottom of the frame. Beside his face, a single raindrop tracks down the glass in its own slow line. His head and gaze stay steady. Solemn, sincere, unhurried. Black and white monochrome film throughout, shot at 24fps with a 180-degree shutter, natural motion blur. The camera remains static. Thanks.",
+   "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 1b second half, chained from 01-A's last frame once 01-A passes",
+   "duration": 8,
+   "character": null
+  },
+  {
+   "key": "04-r2",
+   "n": 4,
+   "still": "NA1-a",
+   "duration": 8,
+   "character": null,
+   "why": "04 refused three times (silent block, ~40 s each). Simplest form, as Priority Lane's fix; 'bastard' swapped for 'bloke' in the prompt only (same p and b lip closures), the dub still says 'Poor bastard'",
+   "motion": "The camera does not move. The woman reads the paper in her hands, gives a small sad shake of her head and says: Poor bloke. Then she stays still. Thanks."
+  },
+  {
+   "key": "04-r3",
+   "n": 4,
+   "still": "NA1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack timeline r3 at 26:03 'need to fix the lip syncing': 04-r2 mouths one syllable ('bloke') under a two-syllable 'bastard'. Bare prompt with the real words; 04's refusal may have been its length, not the swear",
+   "motion": "The camera does not move. The woman looks at the paper in her hands and says slowly: Poor bastard. Thanks."
+  },
+  {
+   "key": "04-r4",
+   "n": 4,
+   "still": "NA1-a",
+   "duration": 8,
+   "character": null,
+   "why": "as 04-r3, a second candidate with a different read",
+   "motion": "The camera does not move. The elderly woman reads the leaflet, sighs, and says quietly and slowly: Poor bastard... Then she shakes her head. Thanks."
+  }
+ ]
+}

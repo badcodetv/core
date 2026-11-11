@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/BK1-b.jpg",
+ "made": "2026-11-11T16:19:49.591Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 gouache and ink illustration in the manner of a mid-century British children's picture book. A balding, slightly stout middle-aged man in a brown wool suit grips the trunk of a squat, round-crowned tree and shakes it, eyes squeezed shut in effort. Banknotes in ochre, teal and cream swirl down like autumn leaves and pile in a rustling heap around his shoes. A blank cream plaque hangs on the trunk. Matte opaque paint, visible dry-brush texture, limited warm palette, paper grain, soft flat shadows, generous empty sky at the top. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5def3966-5e32-4264-83b4-c809af67926e"
+}

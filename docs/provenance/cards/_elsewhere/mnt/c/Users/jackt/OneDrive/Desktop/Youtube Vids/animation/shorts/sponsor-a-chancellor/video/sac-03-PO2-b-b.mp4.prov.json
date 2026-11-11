@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/video/sac-03-PO2-b-b.mp4",
+ "made": "2026-11-11T14:10:30+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static top-down shot looking at the doormat; the camera stays completely still. One continuous take. A cold draught breathes in under the front door: the corner of the takeaway menu lifts gently, flutters for a moment, then settles back flat. The black-and-white flyer at the front stays perfectly flat and still, as do the gas bill, the supermarket leaflet and the slipper in the foreground. Quiet, cold, ordinary morning. Shot at 24fps with a 180-degree shutter, natural motion blur. The camera remains static. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/PO2-b-b.jpg",
+ "why": "Jack 2026-11-11 storyboard r1 pick; clean-room prompt (cleanroom/prompts-clips-r1.json); anim 3b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/PO2-b-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor",
+  "key": "03",
+  "frame": 3,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T13:57:26.905Z"
+ }
+}

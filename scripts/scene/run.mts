@@ -42,6 +42,14 @@ const INBOX = join(CFG.media, 'video/inbox')
 const LOG = join(CFG.media, 'video/run.log')
 const WAVE = Number(process.env.WAVE ?? 5)
 const RENDER_MS = Number(process.env.RENDER_MS ?? 12 * 60_000)
+// A silently refused clip's tile VANISHES (no failure card), so 'want' is never reached. Once every tile still
+// on screen has finished and nothing has changed for STALL_MS, stop waiting (2026-11-11: a refused clip cost 12 min).
+const STALL_MS = Number(process.env.STALL_MS ?? 2 * 60_000)
+// Jack, 2026-11-11: "why does it wait at all instead of just refreshing the page and trying again". A refused clip's
+// tile vanishes (or shows Failed) within ~40 s of submit, so each job is watched for SURVIVE_MS right after it is sent;
+// if its tile goes, the page is reloaded and the same prompt sent again at once (REFUSE_TRIES times, then skipped).
+const SURVIVE_MS = Number(process.env.SURVIVE_MS ?? 30_000)
+const REFUSE_TRIES = Number(process.env.REFUSE_TRIES ?? 3)
 
 type Shot = {
   key: string; still: string | null; plate: string | null; src: string | null; out: string; motion: string; character: string | null
@@ -194,26 +202,51 @@ async function submit(s: Shot) {
   throw new Error(`SUBMIT_UNCONFIRMED ${s.key}`)
 }
 
-/** Wait for the wave's tiles to finish, then download every new finished tile to the inbox. */
-async function collect(baseline: Set<string>, want: number) {
+/** True if this wave's live tiles (fresh, not Failed) still number `n` after SURVIVE_MS: the job just sent survived. */
+async function survives(baseline: Set<string>, n: number) {
+  const end = Date.now() + SURVIVE_MS
+  while (Date.now() < end) {
+    await sleep(5000)
+    const live = (await topTiles(n + 6)).filter((t: any) => !(t.key && baseline.has(t.key)) && !t.failed)
+    if (live.length < n) return false
+  }
+  return true
+}
+
+/** Wait for the wave's tiles to finish, then download every new finished tile to the inbox.
+ *  `keys` = this wave's jobs in SUBMIT order. Flow puts each new tile on top, so the fresh tiles, newest first, are the
+ *  jobs in reverse; when the counts agree each download is named for its job (raw-NNN--<key>.mp4) and match.py trusts
+ *  that over the first frame (2026-11-11: re-rolls share their still, so first-frame naming filed them as the original). */
+async function collect(baseline: Set<string>, keys: string[]) {
+  const want = keys.length
   const deadline = Date.now() + RENDER_MS
-  let tiles: any[] = []
+  let tiles: any[] = [], sigLast = '', changed = Date.now()
   while (Date.now() < deadline) {
     tiles = (await topTiles(want + 4)).filter((t: any) => !baseline.has(t.key))
     const done = tiles.filter((t: any) => t.failed || (t.key && !t.pct))
     say({ event: 'poll', fresh: tiles.length, done: done.length, want })
     if (tiles.length >= want && done.length >= tiles.length) break
+    const sig = `${tiles.length}/${done.length}`
+    if (sig !== sigLast) { sigLast = sig; changed = Date.now() }
+    if (done.length >= tiles.length && Date.now() - changed > STALL_MS) {
+      say({ event: 'vanished', missing: want - tiles.length, why: `all ${tiles.length} tiles done and nothing changed for ${STALL_MS / 1000} s: the rest were refused` })
+      break
+    }
     await sleep(15_000)
   }
   await hardReload()
   const list = await topTiles(want + 4)
+  const fresh = list.map((t: any, i: number) => ({ t, i })).filter(({ t }: any) => !t.key || !baseline.has(t.key))
+  const hint = new Map<number, string>()
+  if (fresh.length === want) fresh.forEach(({ i }: any, j: number) => hint.set(i, keys[want - 1 - j]))
+  else say({ event: 'no-key-hints', fresh: fresh.length, want, why: 'tile count differs from jobs submitted; match.py names by first frame' })
   let order = readdirSync(INBOX).filter(f => f.endsWith('.mp4')).length
   for (const [i, t] of list.entries()) {
     if (!t.key || baseline.has(t.key) || t.failed || t.pct) {
-      if (t.failed) say({ event: 'tile-failed', i, text: t.text })
+      if (t.failed) say({ event: 'tile-failed', i, key: hint.get(i), text: t.text })
       continue
     }
-    const dst = join(INBOX, `raw-${String(order++).padStart(3, '0')}.mp4`)
+    const dst = join(INBOX, `raw-${String(order++).padStart(3, '0')}${hint.has(i) ? `--${hint.get(i)}` : ''}.mp4`)
     for (let d = 1; d <= 3; d++) {
       try { await download(i, dst); say({ event: 'harvested', i, file: dst }); break }
       catch (err) { say({ event: 'download-retry', i, d, why: (err as Error).message.split('\n')[0].slice(0, 120) }); await hardReload() }
@@ -236,11 +269,21 @@ try {
     await c.reloadProject()
     const baseline = await allKeys()
     let submitted = 0
+    const sent: string[] = []
     for (const s of batch) {
-      for (let attempt = 1; attempt <= 4; attempt++) {
+      let refused = 0
+      for (let attempt = 1; attempt <= 4 + REFUSE_TRIES; attempt++) {
         try {
           const cast = await submit(s)
+          if (!(await survives(baseline, sent.length + 1))) {
+            refused++
+            say({ event: 'refused', key: s.key, wave, refused, why: `tile gone within ${SURVIVE_MS / 1000} s: reload and resend` })
+            if (refused >= REFUSE_TRIES) { blocked.add(s.key); say({ event: 'skip', key: s.key, why: `refused ${refused} times` }); break }
+            await hardReload()
+            continue
+          }
           submitted++
+          sent.push(s.key)
           say({ event: 'submitted', key: s.key, wave, cast, attempt })
           break
         } catch (err) {
@@ -253,7 +296,7 @@ try {
       }
     }
     if (!submitted) { if (++stuck >= 2) { say({ event: 'stalled', wave }); break } continue }
-    await collect(baseline, submitted)
+    await collect(baseline, sent)
     const left = missing().filter(s => !blocked.has(s.key)).length
     say({ event: 'wave-done', wave, remaining: left })
     stuck = left === todo.length ? stuck + 1 : 0

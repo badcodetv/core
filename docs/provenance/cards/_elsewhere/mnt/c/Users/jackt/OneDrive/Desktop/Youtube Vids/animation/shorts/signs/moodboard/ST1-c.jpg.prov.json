@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/ST1-c.jpg",
+ "made": "2026-11-11T15:33:47.547Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph from a first-floor window height, 50mm lens, looking down at a terraced street in cool blue evening light, slightly hazy. Pebbledash and red-brick front walls, slate roofs, chimney pots, a lamp post just switched on. Four front gardens carry election signs in party colours with plain text: \"Vote Green\", \"Labour\", \"Vote Conservative\", \"Liberal Democrats\". A middle-aged neighbour in a dressing gown and slippers drags a black wheelie bin along the pavement, small in the frame, face turned away. Candid, slightly underexposed, natural noise, modest depth of field, like a phone snapshot by a resident. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "480e53e7-1c1b-4175-aafd-c940dffff261"
+}

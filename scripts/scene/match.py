@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Name each harvested clip by its FIRST FRAME: image-to-video starts on its plate.
+"""Name each harvested clip: by the job run.mts submitted it as (raw-NNN--<key>.mp4) when it says, else by its
+FIRST FRAME (image-to-video starts on its plate).
 
 Same method and threshold as scripts/gaze-board/match_clips.py (correct matches score 35-61,
 runners-up 1800+). A plate matching several clips keeps the newest; the rest go to inbox/dupes,
@@ -55,6 +56,14 @@ def main(scene_dir, apply):
             continue
         ranked = sorted((dist(v, p), k) for k, p in plates.items())
         d, k = ranked[0]
+        # run.mts names a download for the job it was submitted as (raw-NNN--<key>.mp4, from the tile order): trust that
+        # when its plate also matches, since re-rolls share a plate and tie on the first frame (2026-11-11).
+        hinted = c.stem.split('--', 1)[1] if '--' in c.stem else None
+        if hinted in plates and dist(v, plates[hinted]) < THRESHOLD:
+            d, k = dist(v, plates[hinted]), hinted
+            print(f'{c.name}: {k} ({d:.0f}, by submit order)')
+            claims.setdefault(k, []).append(c)
+            continue
         # A re-roll shares its plate with the original, so several keys tie: prefer one still missing.
         ties = [kk for dd, kk in ranked if dd < THRESHOLD and dd <= d + 5]
         k = next((kk for kk in ties if not pathlib.Path(by_key[kk]['out']).exists()), k)

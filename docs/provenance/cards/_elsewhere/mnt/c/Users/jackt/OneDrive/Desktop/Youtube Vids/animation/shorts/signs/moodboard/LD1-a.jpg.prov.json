@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/LD1-a.jpg",
+ "made": "2026-11-11T15:34:18.160Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph, UK red-brick terraced street at blue-hour dusk. A green council wheelie bin stands at the kerb, shot from low at kerb height with a 35mm lens, its scuffed black lid with a worn grey handle recess filling the lower half of the frame, edges slightly ajar by a finger's width. Behind it, softly out of focus, front-garden election signs (Green, Labour, Conservative, Lib Dem) and warm lit windows. Damp pavement, cool sky, a faint gap of darkness under the lid. Natural film grain, ISO 1600, slight vignette, ordinary unstyled look. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0c4005c1-c6ea-4711-aaa5-e6e6b560f86b"
+}

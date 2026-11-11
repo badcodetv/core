@@ -1,0 +1,28 @@
+{
+ "round": 1,
+ "plan": [
+  {
+   "h": "Round 2: what changed",
+   "items": [
+    "New draft 1D (shown first): 1C, plus your ending with the nan.",
+    "Line 3's wine fridge is now a blank, with ten funnier hardships to pick from in 1D's notes (two nod at the 2009 expenses scandal: the duck house and the moat).",
+    "Her line 'Poor bastard...' is in verbatim."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Which hardship (a-j), or your own.",
+    "Keep 'Or keep your £3. You're going to need it.' before the nan, or cut it (the nan is now the button)?",
+    "The name: Crispin clashes with a real ex-MP (Crispin Blunt). Pick another and I'll check it."
+   ]
+  }
+ ],
+ "replies": {
+  "1-1C-L3": "Answered in draft 1D: the wine fridge is now a blank with ten options (duck house, last moat, one-towel towel rail, pony sharing a paddock, part-time butler, second home's second home, last thousand bottles, one-week ski trip, swans without scarves, or yours). My pick: the duck house or the moat, because the real 2009 expenses claims make them land harder with the reader."
+ },
+ "kai_round1": {
+  "1-1C-L3": "we need something else other than second wine frige that is funny thanks",
+  "chat": "1c is fine... after the advert, the camera could pan to a freezing working class nan, she goes to the door to pick up junk mail, one of them is a advert for the politician looking sadder, then her saying \"poor bastard...\""
+ }
+}

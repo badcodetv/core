@@ -1,0 +1,14 @@
+{
+ "acts": [
+  {"id": "appeal", "title": "A. The advert (0:00, ~13 s of narration)", "beats": "appeal"},
+  {"id": "room", "title": "B. Her flat (~2 s)", "beats": "room"},
+  {"id": "post", "title": "C. The junk mail (~2 s)", "beats": "post"},
+  {"id": "nan", "title": "D. Poor bastard (~3 s)", "beats": "nan"}
+ ],
+ "frames": [
+  {"n": 1, "act": "appeal", "title": "Crispin at the rainy conservatory glass", "look": "advert", "line": "This is Crispin. Crispin only earns £100,000 a year. Tonight, his second home has no second home. For just £3 a month, you can help.", "stills": ["AP1-b"], "anim": 1},
+  {"n": 2, "act": "room", "title": "Pull back: the advert is on her telly", "look": "flat", "stills": ["RM1-b", "RM2-b-a", "RM2-b-b"], "anim": 2},
+  {"n": 3, "act": "post", "title": "The flyer on the doormat", "look": "flat", "stills": ["PO1-b", "PO2-b-a", "PO2-b-b"], "anim": 3},
+  {"n": 4, "act": "nan", "title": "She reads it", "look": "flat", "line": "Poor bastard...", "stills": ["NA1-a"], "anim": 4}
+ ]
+}

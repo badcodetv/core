@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/sponsor-a-chancellor/moodboard/RM2-b-b.jpg",
+ "made": "2026-11-11T13:35:28.518Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 colour photograph looking into the small front room of an elderly woman's council flat at dusk, taken from the hallway at eye level so the painted edge of the door frame cuts down the left side of the picture. Across the room, slightly off-centre, the woman sits in a worn armchair, a crocheted blanket over her knees, both hands round a mug. She is small in the frame, watching an old boxy television on a low cabinet that throws a flickering grey-white light across her face; the screen shows a black and white picture. Behind her a window with white uPVC frames and net curtains is filled with cold blue-grey dusk. The walls are magnolia woodchip, there is an unlit wall-mounted gas fire with a wood-effect surround, a patterned carpet worn thin near the door, a carriage clock and framed family photos on the mantel, a draught excluder along the bottom of the door, a folded newspaper on the arm of the chair. No lamp is on: the only light is the window's cold blue and the TV's weak glow, low contrast, lifted shadows, soft focus at the edges, shot on grainy colour negative film. Lived-in and slightly untidy, nothing posed. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "SAC Nan"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "68f5d308-1462-43bd-80c1-12e421a60c85"
+}

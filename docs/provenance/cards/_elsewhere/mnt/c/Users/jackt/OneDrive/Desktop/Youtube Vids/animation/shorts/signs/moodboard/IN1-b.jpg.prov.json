@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/IN1-b.jpg",
+ "made": "2026-11-11T15:36:43.983Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 documentary photo, tilted slightly off-axis, looking up from deep inside a green-grey plastic wheelie bin at the closed lid above. The lid underside shows a hinge bar at the top of the frame, stiffening ribs in a grid, and a wide flat untextured patch in the centre. A faint orange glow from a streetlight seeps through a gap along one edge and a hairline of deep blue light along the other. Torn supermarket carrier bags and a tied sack crowd the bottom corners, damp and creased. 35mm lens, shallow depth of field, natural dim exposure, ordinary and unpolished. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "fc3b4f75-5e0d-4def-b57c-15ad9d0a147c"
+}

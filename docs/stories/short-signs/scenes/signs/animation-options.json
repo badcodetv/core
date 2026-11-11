@@ -1,0 +1,22 @@
+{
+ "sequence_notes": [
+  {"rule": "Veo's camera stays locked; Premiere does the push into the lid, eased.", "why": "Camera moves make Omni redraw the scene; the 'zoom into the bin lid' is Premiere's.", "source": "docs/video-fx/hybrid-method.md"},
+  {"rule": "The BadCode logo and name are the real logo files, laid onto the lid in Premiere/ffmpeg with a glow, never drawn by Flow.", "why": "The logo is not a loose guide.", "source": "docs/brand/README.md"},
+  {"rule": "Motion prompts are written clean-room after you pick: a sealed writer gets the option's idea and the still, nothing from the repo.", "why": "Jack's standing rule.", "source": "clean-room memory"},
+  {"rule": "No speech anywhere; sound is the street, the bin wheels, the lid, then a hum as the logo lights.", "why": "No Flow speech.", "source": "memory"}
+ ],
+ "frames": [
+  {"n": 1, "job": "Show the street of signs, and someone taking the bin out like it's any other night.", "options": [
+   {"id": "a", "label": "The bin goes out", "idea": "The person wheels the green bin down the path to the kerb and walks back in; a car's headlights pass.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; the person wheels the bin to the kerb, plastic wheels rattle."}, {"lane": "Premiere", "does": "A slow push in toward the bin as it lands at the kerb."}], "cut": "Cut to frame 2 as the bin stops.", "seconds": "4", "risk": "Low; one mover."},
+   {"id": "b", "label": "Still street, Premiere push", "idea": "No video: the still with a slow push toward the bin, wheel rattle and street sound under it.", "lanes": [{"lane": "Premiere", "does": "Slow push in on the still."}], "cut": "As a.", "seconds": "3", "risk": "No credits; reads as a photo."}
+  ]},
+  {"n": 2, "job": "Pull us in: the bin is where the story goes.", "options": [
+   {"id": "a", "label": "Rain on the lid, push in to black", "idea": "Raindrops run off the lid and the leaf shivers in the breeze; Premiere pushes hard into the lid until it fills the frame, then the cut to inside.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; drips, the leaf trembles, the streetlight flickers once."}, {"lane": "Premiere", "does": "Fast eased push into the lid's centre, cut on the darkest frame."}], "cut": "Hard cut to frame 3 on black.", "seconds": "3", "risk": "Low."},
+   {"id": "b", "label": "A glow from under the lid", "idea": "A faint light flickers on along the lid's edge, as if something inside switched on; Premiere pushes in toward it.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; a thin glow appears under the lid's front lip."}, {"lane": "Premiere", "does": "Push in on the glow."}], "cut": "Cut to frame 3 as the glow peaks.", "seconds": "3", "risk": "Medium: Omni may light the whole bin or open the lid."}
+  ]},
+  {"n": 3, "job": "The reveal: BadCode, lit up inside the lid.", "options": [
+   {"id": "a", "label": "Shut lid, the logo powers on", "idea": "Inside, still and dark; light seams flicker at the lid's edge; the logo and name flicker on in the lid's square panel like a sign warming up, then hold.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; the edge light flickers, bags shift slightly."}, {"lane": "Premiere / ffmpeg", "does": "The real logo and name composited onto the panel with a glow and a flicker-on, light spill on the ribs."}, {"lane": "Sound", "does": "A neon hum and click."}], "cut": "Hold to the end.", "seconds": "4", "risk": "Low; the logo is ours."},
+   {"id": "b", "label": "Post only", "idea": "No video: the still, the logo composited flickering on, a slow push up into it.", "lanes": [{"lane": "Premiere / ffmpeg", "does": "Logo composite, glow, push in."}], "cut": "As a.", "seconds": "4", "risk": "No credits; less alive."}
+  ]}
+ ]
+}

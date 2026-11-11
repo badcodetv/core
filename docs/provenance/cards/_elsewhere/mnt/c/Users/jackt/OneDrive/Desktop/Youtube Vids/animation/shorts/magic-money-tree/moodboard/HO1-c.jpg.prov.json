@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/HO1-c.jpg",
+ "made": "2026-11-11T16:18:23.502Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 macro photograph of a handmade stop-motion diorama: a felt puppet of a middle-aged man in a tiny tweed-textured grey suit, wire arms gripping the trunk of a sparse paper-and-twig tree and shaking it, stitched frowning mouth. No leaves fall. A blank cardboard plaque is glued to the trunk. A second bushier craft tree stands beside it. Painted cardboard hill backdrop, soft studio key light with a warm lamp glow, shallow tilt-shift depth of field, fibres and glue marks visible, no readable text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c238b76a-9791-4c0d-911d-15ddde67f7a1"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/BT1-b.jpg",
+ "made": "2026-11-11T16:16:18.541Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 illustrated composition in the style of a 1930s gouache propaganda poster, flat matte colour, bold simplified shapes, visible brush texture, limited palette of mustard, teal and brick red. A middle-aged man in a dark suit, plain face, receding hair, stands chest-up in a drift of green banknotes, turning his head to stare directly at the viewer with a dry, unimpressed look. Behind him two stylised trees stand side by side, each with an empty blank plaque, one heavy with money. Strong diagonal light, thick outlines, generous negative space at the top. No lettering, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b872dc86-a27d-4a0c-a5f8-b24c60f71d43"
+}

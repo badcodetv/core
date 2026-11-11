@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/HO1-a.jpg",
+ "made": "2026-11-11T16:17:22.796Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 documentary photograph, 35mm lens, overcast grey English light on a muddy municipal park lawn. A tired middle-aged man in a slightly creased navy suit and loosened tie grips the trunk of a thin, nearly leafless tree with both hands, shaking it hard, jaw clenched, eyes up at the empty branches. Nothing falls. A small blank wooden plaque is screwed to the trunk at chest height. A second, fuller tree stands out of focus beside it. Muted desaturated colour, visible film grain, damp grass, ordinary and unflattering, no gloss, no readable text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8aeac93f-4aad-4f5f-ac8d-eabb2accccdb"
+}

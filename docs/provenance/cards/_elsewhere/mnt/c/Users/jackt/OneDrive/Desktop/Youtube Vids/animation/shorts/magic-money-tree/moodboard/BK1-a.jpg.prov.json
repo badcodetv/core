@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/BK1-a.jpg",
+ "made": "2026-11-11T16:19:17.290Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph. A plain, tired-looking middle-aged British man in a rumpled navy tweed-textured suit and loosened tie stands braced with both hands on the trunk of a tall tree, shaking it hard. Hundreds of crisp pale-green and purple banknotes tumble down like autumn leaves, drifting around his shoulders and heaping ankle-deep at his feet on wet grass. A blank brass plaque is screwed to the trunk. Overcast grey London park, shot on 35mm Portra film, 50mm lens at f/2.8, slight motion blur on falling notes, visible film grain, muted natural colour. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "9d6ba17b-f391-49f8-8bc5-f49cf1276b4d"
+}
