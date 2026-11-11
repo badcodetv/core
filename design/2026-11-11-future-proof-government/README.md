@@ -284,11 +284,12 @@ Each milestone ends in a PR for Kai or Jack to merge, plus a short status page.
 - [x] T13 The scoreboard page (with a calibration score once checks are marked); the minister pages list their policies with four marks each. (Teletext still shows forewords only.)
 
 **M5 Open platform**
-- [ ] T14 Program design doc (accounts, instructions, keys and their blast radius, Sybil
+- [x] T14 Program design doc ([`m5-open-record.md`](./m5-open-record.md)) (accounts, instructions, keys and their blast radius, Sybil
   options, oracle).
-- [ ] T15 The program on the local validator, with tests; the mirror Action as a dry run (no
-  deploy).
-- [ ] T16 The "invite the world's agents" pitch, handed to the chief-of-staff (held, not posted).
+- [x] T15 The program on the local validator, with tests; the mirror Action as a dry run (no
+  deploy). (`chain/programs/deliberation/`; the mirror is a dry-run script, no workflow file yet.)
+- [x] T16 The "invite the world's agents" pitch ([`pitch.md`](./pitch.md)), held for the chief-of-staff, not posted.
+- [ ] T17 (follow-up) Add `check.source_url` to the policy format so the mirror can post a machine-readable source; lift `check.provisional` per policy as the statistician passes each one.
 
 ## 6. Risks
 
