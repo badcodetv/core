@@ -19,7 +19,7 @@ export function readManifesto(dir) {
   return readdirSync(dir).filter(f => /^\d\d-[a-z-]+\.md$/.test(f)).sort().map(f => {
     const { meta, body } = parseFrontMatter(readFileSync(join(dir, f), 'utf8'));
     for (const k of ['title', 'line']) if (!meta[k]) throw new Error(`manifesto: ${f} has no ${k}`);
-    return { post: f.slice(3, -3), title: meta.title, line: meta.line, body };
+    return { post: f.slice(3, -3), title: meta.title, line: meta.line, policies: meta.policies || '', body };
   });
 }
 
