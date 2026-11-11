@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs/moodboard/LD2-b-b.jpg",
+ "made": "2026-11-11T15:55:18.902Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 documentary photo, close and slightly above, 50mm at f/2. A green wheelie bin, green body and green lid, on a wet pavement outside a terraced house, closed lid in sharp focus with scratches, a dried leaf and raindrops, a pale sodium-orange streetlight glancing across it. Out-of-focus behind: a red Labour sign and a green Vote Green Party sign on a brick garden wall, a lit curtained window glowing yellow. Dusk, deep blue sky, quiet street, nobody visible. Matte plastic, real grime, subtle noise, no retouching. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "1377e8b8-52d9-46e0-912d-dfe679c44267"
+}
