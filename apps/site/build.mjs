@@ -9,7 +9,8 @@ import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readManifesto, bodyHtml } from './manifesto.mjs';
-import { readPolicies, lintPolicies, policiesFor, policyText } from './policies.mjs';
+import { readPolicies, lintPolicies, policiesFor, policyText, policyRecord, scoreboard } from './policies.mjs';
+import { execFileSync } from 'node:child_process';
 import { writeHologram } from './storyverse.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -21,11 +22,21 @@ C.government.manifesto = readManifesto(join(here, '..', '..', 'docs', 'governmen
 // its policies, stitched here so the TV and teletext read one body as before.
 const POL = readPolicies(join(here, '..', '..', 'docs', 'government', 'policies'));
 const { notReady: NOT_READY } = lintPolicies(POL);
-const POLICY_PAGES = [];
+const POLICY_PAGES = [], STITCHED = new Map();
+const GOV = join(here, '..', '..', 'docs', 'government');
+// Each policy's history is its own git log (one commit per policy change: tenet 2). A shallow
+// checkout gives a shorter history, never an error.
+const historyOf = file => { try {
+  return execFileSync('git', ['log', '--follow', '--format=%as%x09%s', '--', join(GOV, 'policies', file)], { encoding: 'utf8' })
+    .trim().split('\n').filter(Boolean).slice(0, 12).map(l => { const [date, ...s] = l.split('\t'); return { date, subject: s.join('\t') }; });
+} catch { return []; } };
+C.government.policies = [];
 for (const m of C.government.manifesto) {
   const mine = policiesFor(m, POL);
   m.policyIds = mine.map(p => p.meta.id);
-  if (mine.length) m.body = [m.body, ...mine.map(p => policyText(p, NOT_READY.get(p.meta.id)))].join('\n\n');
+  for (const p of mine) C.government.policies.push(policyRecord(p, NOT_READY.get(p.meta.id), historyOf(p.file)));
+  // the plain page prints foreword + every policy; the TV data keeps the foreword only (policies travel once, in G.policies)
+  STITCHED.set(m.post, [m.body, ...mine.map(p => policyText(p, NOT_READY.get(p.meta.id)))].join('\n\n'));
   for (const p of mine) POLICY_PAGES.push({ m, p, text: policyText(p, NOT_READY.get(p.meta.id)) });
 }
 const tpl = readFileSync(join(src, 'page.html'), 'utf8');
@@ -46,6 +57,7 @@ const nav = `<nav aria-label="Channels"><ul>
 </ul></nav>`;
 const follow = `<h2>Follow BadCode</h2><ul>${C.socials.map(s => `<li>${s.url ? `<a href="${esc(s.url)}">${esc(s.name)}</a>` : `${esc(s.name)} (soon)`}</li>`).join('')}</ul><p>${esc(A.ai)}</p><p>${esc(A.sign)} &copy; 2026 BadCode</p>`;
 const story = (s, i) => `<article><h2>${esc(s.title)}</h2><p>${esc(s.blurb)}</p><p>Film: ${s.film ? `<a href="https://www.youtube.com/watch?v=${esc(s.film)}">watch on YouTube</a>` : 'coming to YouTube'}. Song: ${esc(s.song)}.</p></article>`;
+const MARKS = [['test', 'Has its test', 'Not ready: no test yet'], ['undo', 'Has an undo', 'No undo'], ['prediction', 'Makes a prediction the world will mark', 'No prediction'], ['argued', 'Argued against, on the record', 'Not argued over yet']];
 const plainBody = {
   home: () => `<h1>BadCode</h1><p>${esc(A.lede)} ${esc(A.request)}</p><p>${esc(A.story)}</p>${S.map(story).join('')}`,
   stories: () => `<h1>Stories</h1>${S.map(story).join('')}<article><h2>${esc(SVP.title)}</h2><p>${esc(SVP.blurb)}</p></article>`,
@@ -54,8 +66,10 @@ const plainBody = {
   story: i => `<h1>${esc(S[i].title)}</h1>${story(S[i], i)}`,
   song: i => `<h1>${esc(S[i].song)}</h1><p>The song from ${esc(S[i].title)}. ${S[i].songVideo ? `<a href="https://www.youtube.com/watch?v=${esc(S[i].songVideo)}">Watch on YouTube</a>` : 'Coming to YouTube.'}</p>`,
   news: () => `<h1>${esc(N.title)}</h1><p>${esc(N.strap)} ${esc(N.status)}</p><p>${esc(N.signoff)}</p>`,
-  gov: () => `<h1>The BadCode Government</h1><p>${esc(G.promise)}</p><h2>The cabinet</h2><ul>${CAB.map(m => `<li><a href="/government/${m.post}"><strong>${esc(m.title)}</strong></a>: ${esc(m.line)}</li>`).join('')}</ul><p>${esc(G.notReal)}</p>`,
-  minister: m => `<h1>${esc(m.title)}</h1><p><strong>${esc(m.line)}</strong></p>${bodyHtml(m.body)}<p><a href="/government">The whole cabinet</a>. ${esc(G.notReal)}</p>`,
+  gov: () => `<h1>The BadCode Government</h1><p>${esc(G.promise)}</p><p><a href="/government/scoreboard">The scoreboard</a>: every prediction we've made, and whether it held.</p><h2>The cabinet</h2><ul>${CAB.map(m => `<li><a href="/government/${m.post}"><strong>${esc(m.title)}</strong></a>: ${esc(m.line)}</li>`).join('')}</ul><p>${esc(G.notReal)}</p>`,
+  minister: m => `<h1>${esc(m.title)}</h1><p><strong>${esc(m.line)}</strong></p>${bodyHtml(STITCHED.get(m.post) || m.body)}<p><a href="/government">The whole cabinet</a>. ${esc(G.notReal)}</p>`,
+  policy: (m, r, text) => `${bodyHtml(text)}<ul>${MARKS.map(([k, yes, no]) => `<li>${r.marks[k] ? '✔ ' + yes : '✘ ' + no}</li>`).join('')}</ul>${r.history.length ? `<h2>Its history</h2><ul>${r.history.map(h => `<li>${esc(h.date)}: ${esc(h.subject)}</li>`).join('')}</ul>` : ''}<p>A policy of the <a href="/government/${m.post === 'prime-minister' ? '' : m.post}">${esc(m.title)}</a>. Each policy stands alone: back it or not on its own. <a href="/government/scoreboard">The scoreboard</a>. ${esc(G.notReal)}</p>`,
+  board: () => { const b = scoreboard(G.policies); return `<h1>The scoreboard</h1><p>Every policy carries a prediction about the real UK, with our odds, marked on its date by the statistician against a named public source. Held: ${b.held}. Failed: ${b.failed}. Void: ${b.void}. Still to mark: ${b.pending}.${b.brier == null ? ' Nothing has been marked yet.' : ` Our calibration (Brier score, 0 is perfect, 0.25 is a coin toss): ${b.brier.toFixed(3)}.`}</p><ol>${b.checks.map(c => `<li><a href="/government/${c.id}">${esc(c.title)}</a> (${esc(c.post)}), ${esc(c.on)}: ${esc(c.claim)} Our odds: ${Math.round(c.prior * 100)}%. ${c.result === 'pending' ? 'Not marked yet.' : `Result: ${esc(c.result)}. ${esc(c.note)}`}</li>`).join('')}</ol>`; },
   cabinetText: () => `<h1>The cabinet, as teletext</h1><ul>${CAB.map((m, i) => `<li>Page ${402 + i}: <a href="/government/${m.post}">${esc(m.title)}</a>: ${esc(m.line)}</li>`).join('')}</ul>`,
   fp: () => `<h1>Future Proof</h1><p><strong>${esc(G.futureProof.question)}</strong></p><p>${esc(G.futureProof.intro)}</p><ol>${G.futureProof.tenets.map(t => `<li><strong>${esc(t[0])}.</strong> ${esc(t[1])}</li>`).join('')}</ol><p>${esc(G.futureProof.ask)}</p>`,
   about: () => `<h1>About BadCode</h1><p>${esc(A.lede)} ${esc(A.request)}</p><p>${esc(A.story)}</p>`,
@@ -74,7 +88,8 @@ const routes = [
   { path: '/government', title: 'The BadCode Government', desc: `${G.promise} ${G.notReal}`, body: plainBody.gov() },
   ...CAB.map(m => ({ path: `/government/${m.post}`, title: `${m.title} · The BadCode Government`, desc: m.line, body: plainBody.minister(m) })),
   ...POLICY_PAGES.map(({ m, p, text }) => ({ path: `/government/${p.meta.id}`, title: `${p.meta.title} · ${m.title} · The BadCode Government`, desc: p.meta.line,
-    body: `${bodyHtml(text)}<p>A policy of the <a href="/government/${m.post === 'prime-minister' ? '' : m.post}">${esc(m.title)}</a>. Each policy stands alone: back it or not on its own. ${esc(G.notReal)}</p>` })),
+    body: plainBody.policy(m, G.policies.find(r => r.id === p.meta.id), text) })),
+  { path: '/government/scoreboard', title: 'The scoreboard · The BadCode Government', desc: 'Every prediction the BadCode government has made about the UK, its odds, and whether it held.', body: plainBody.board() },
   { path: '/government/2', title: 'Future Proof · BadCode', desc: G.futureProof.question, body: plainBody.fp() },
   { path: '/future-proof', canon: '/government/2', title: 'Future Proof · BadCode', desc: G.futureProof.question, body: plainBody.fp() },
   { path: '/about', title: 'About · BadCode', desc: SITE_DESC, body: plainBody.about() },

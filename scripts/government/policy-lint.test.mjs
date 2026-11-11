@@ -62,6 +62,8 @@ describe('policy text', () => {
     expect(t).toMatch(/Our odds: 70%\. Checked on 2027-01-31: not checked yet\./);
     expect(t).toMatch(/Status: Draft\./);
     expect(policyText(good(), ['fails_if'])).toMatch(/Status: Draft, not ready\./);
+    expect(policyText(good({ 'test.where': '' }), ['test.where'])).toMatch(/The test\. Not ready/);
+    expect(policyText(good({ 'test.where': '' }), ['test.where'])).not.toMatch(/undefined/);
     expect(policyText(good({ against: 'Too slow.', answer: 'Slow beats wrong.' }))).toMatch(/The best case against: Too slow\. Our answer: Slow beats wrong\./);
   });
 });
@@ -70,5 +72,18 @@ describe('the repository', () => {
   it('has no policy errors', () => {
     const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
     expect(lintAll(root).errors).toEqual([]);
+  });
+});
+
+import { scoreboard, policyMarks } from '../../apps/site/policies.mjs';
+describe('the scoreboard', () => {
+  const rec = (id, prior, result, on = '2027-01-01') => ({ id, title: id, post: 'chancellor', check: { claim: 'c', prior, on, result, note: '' } });
+  it('counts results and scores calibration, ignoring void and pending', () => {
+    const b = scoreboard([rec('a', 0.8, 'held'), rec('b', 0.6, 'failed'), rec('c', 0.5, 'void'), rec('d', 0.5, 'pending')]);
+    expect([b.held, b.failed, b.void, b.pending]).toEqual([1, 1, 1, 1]);
+    expect(b.brier).toBeCloseTo(((0.8 - 1) ** 2 + 0.6 ** 2) / 2);
+  });
+  it('has no score before anything is marked', () => {
+    expect(scoreboard([rec('a', 0.5, 'pending')]).brier).toBeNull();
   });
 });

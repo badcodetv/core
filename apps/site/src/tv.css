@@ -220,3 +220,26 @@ button.pill{cursor:pointer;background:var(--cream);color:#111;border:0;font-weig
 .p-sv .fp-full:focus-visible{outline:2px solid #fff}
 .tv.sv-on .screen::before{opacity:0}
 .tv.sv-on .screen::after{opacity:.4}
+
+/* Future Proof: a policy at a glance (design/2026-11-11-future-proof-government §4.5) */
+.p-gov h2{font:800 clamp(17px,3.4cqmin,28px)/1.2 var(--gov-type);margin:5cqmin 0 1.6cqmin}
+.p-gov .marks{list-style:none;display:flex;flex-wrap:wrap;gap:.8cqmin 1.4cqmin;margin:1.2cqmin 0 0;padding:0;counter-reset:none}
+.p-gov .marks li{border:0;padding:.2cqmin 1.2cqmin;font:600 clamp(11px,1.9cqmin,15px)/1.4 var(--gov-type);border-radius:99px;counter-increment:none}
+.p-gov .marks li.on{background:#00703c;color:#fff}
+.p-gov .marks li.off{background:transparent;color:var(--ink);outline:1.5px dashed currentColor}
+.p-gov .pols{list-style:none;margin:0;padding:0;display:grid;gap:2cqmin}
+.p-gov .pols>li{border-left:1.4cqmin solid #00703c;padding:.6cqmin 0 .6cqmin 2.6cqmin;counter-increment:none}
+.p-gov .pols a{color:inherit;text-decoration:none;display:block}
+.p-gov .pols b{display:block;font:800 clamp(15px,3cqmin,24px)/1.2 var(--gov-type)}
+.p-gov .pols b::before{content:none}
+.p-gov .pols span{display:block;font:clamp(13px,2.3cqmin,18px)/1.4 var(--gov-type)}
+.p-gov .tobrd{margin:4cqmin 0 0;font:700 clamp(14px,2.6cqmin,20px) var(--gov-type)}
+.p-gov .tally{font:clamp(14px,2.6cqmin,20px)/1.4 var(--gov-type)}
+.p-gov .board{border-collapse:collapse;width:100%;font:clamp(12px,2cqmin,16px)/1.4 var(--gov-type);margin-top:2cqmin}
+.p-gov .board th,.p-gov .board td{text-align:left;vertical-align:top;padding:1cqmin;border-bottom:1px solid currentColor}
+.p-gov .board td:first-child,.p-gov .board td:nth-child(3){white-space:nowrap;font-variant-numeric:tabular-nums}
+.p-gov .board .r-held td:last-child{color:#00703c;font-weight:700}
+.p-gov .board .r-failed td:last-child{color:#cc2b37;font-weight:700}
+.p-gov .hist{list-style:none;padding:0;margin:0;display:grid;gap:.8cqmin;font:clamp(12px,2cqmin,16px)/1.4 var(--gov-type)}
+.p-gov .hist li{border:0;padding:0;counter-increment:none}
+.p-gov .hist time{font-variant-numeric:tabular-nums;font-weight:700;margin-right:1cqmin}

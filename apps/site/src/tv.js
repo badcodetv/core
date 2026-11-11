@@ -29,6 +29,11 @@
   const SV = S.length * 2 + 1, SVP = C.storyverse;
   // the cabinet: every minister but the PM, whose line is the promise heading (docs/government/manifesto/)
   const CAB = (C.government.manifesto || []).filter(m => m.post !== 'prime-minister');
+  // one record per policy (docs/government/policies/), built by build.mjs: text, marks, history, world check
+  const POLS = C.government.policies || [];
+  const MARKS = [['test', 'Has its test', 'Not ready'], ['undo', 'Has an undo', 'No undo'], ['prediction', 'Makes a prediction', 'No prediction'], ['argued', 'Argued against', 'Not argued yet']];
+  const marksHtml = r => `<ul class="marks">${MARKS.map(([k, y, n]) => `<li class="${r.marks[k] ? 'on' : 'off'}">${r.marks[k] ? '✔' : '✘'} ${esc(r.marks[k] ? y : n)}</li>`).join('')}</ul>`;
+  const odds = p => Math.round(p * 100) + '%';
   const count = { stories: SV, news: Math.max(1, C.news.bulletins.length), government: 2, testcard: 1 };
 
   // ---------- state + addresses ----------
@@ -41,6 +46,8 @@
     if (path === '/future-proof') return { ch: 'government', p: 2, text: null };
     if (path === '/storyverse') return { ch: 'stories', p: SV, text: null };
     if (path === '/about') return { ch: 'testcard', p: 1, text: null };
+    if (path === '/government/scoreboard') return { ch: 'government', p: 1, text: null, board: true };
+    if ((m = path.match(/^\/government\/([a-z-]+\/[a-z0-9-]+)$/)) && POLS.some(x => x.id === m[1])) return { ch: 'government', p: 1, text: null, policy: m[1] };
     if ((m = path.match(/^\/government\/([a-z-]+)$/)) && CAB.some(x => x.post === m[1])) return { ch: 'government', p: 1, text: null, minister: m[1] };
     for (const ch of ['stories', 'news', 'government']) {
       if (path === C.channels[ch].path) return { ch, p: 1, text: null };
@@ -55,6 +62,8 @@
     // Pages serves dir/index.html, so every address ends in a slash (no redirect hop)
     if (s.text) return '/text/' + s.text + '/';
     if (s.ch === 'testcard') return '/about/';
+    if (s.ch === 'government' && s.p === 1 && s.board) return '/government/scoreboard/';
+    if (s.ch === 'government' && s.p === 1 && s.policy) return '/government/' + s.policy + '/';
     if (s.ch === 'government' && s.p === 1 && s.minister) return '/government/' + s.minister + '/';
     return C.channels[s.ch].path + (s.p > 1 ? '/' + s.p : '') + '/';
   }
@@ -63,6 +72,8 @@
     if (s.ch === 'stories' && s.p === SV) return SVP.title + ' · BadCode';
     if (s.ch === 'stories') { const st = S[(s.p - 1) % S.length]; return (s.p > S.length ? `${st.song} (song)` : st.title) + ' · BadCode'; }
     if (s.ch === 'news') return 'Money For Something · BadCode';
+    if (s.ch === 'government' && s.board) return 'The scoreboard · The BadCode Government';
+    if (s.ch === 'government' && s.policy) { const r = POLS.find(x => x.id === s.policy); if (r) return r.title + ' · The BadCode Government'; }
     if (s.ch === 'government') { const mm = s.p === 1 && s.minister && CAB.find(x => x.post === s.minister); return (s.p === 2 ? 'Future Proof' : mm ? mm.title + ' · The BadCode Government' : 'The BadCode Government') + (mm ? '' : ' · BadCode'); }
     return 'About · BadCode';
   }
@@ -135,10 +146,31 @@
       } else {
         const seen = store.get('bc-ppb');
         const mm = s.minister && CAB.find(x => x.post === s.minister);
-        const inner = mm
-          ? `<p class="q"><a class="back" href="/government/" data-cabinet>◀ The cabinet</a></p><h1>${esc(mm.title)}</h1><p class="lead"><b>${esc(mm.line)}</b></p><div class="mbody">${bodyHtml(mm.body)}</div>`
-          : `<p class="q">The manifesto</p><h1>${esc(g.promise)}</h1>
-          <ul class="cab">${CAB.map(x => `<li><a href="/government/${x.post}/" data-minister="${x.post}"><b>${esc(x.title)}</b><span>${esc(x.line)}</span></a></li>`).join('')}</ul>`;
+        const pol = s.policy && POLS.find(x => x.id === s.policy);
+        const owner = pol && (C.government.manifesto || []).find(x => x.post === pol.post);
+        const listOf = post => POLS.filter(r => r.post === post);
+        const cards = rs => `<ul class="pols">${rs.map(r => `<li><a href="/government/${r.id}/" data-policy="${r.id}"><b>${esc(r.title)}</b><span>${esc(r.line)}</span>${marksHtml(r)}</a></li>`).join('')}</ul>`;
+        let inner;
+        if (s.board) {
+          const ch = POLS.filter(r => r.check).map(r => ({ r, c: r.check })).sort((a, b) => a.c.on.localeCompare(b.c.on));
+          const done = ch.filter(x => x.c.result === 'held' || x.c.result === 'failed');
+          const brier = done.length ? done.reduce((t, x) => t + (x.c.prior - (x.c.result === 'held' ? 1 : 0)) ** 2, 0) / done.length : null;
+          inner = `<p class="q"><a class="back" href="/government/" data-cabinet>◀ The cabinet</a></p><h1>The scoreboard</h1>
+            <p class="lead">Every policy makes a prediction about the real UK, with our odds. The statistician marks it on its date against a public source, whether it flatters us or not.</p>
+            <p class="tally"><b>${done.filter(x => x.c.result === 'held').length}</b> held · <b>${done.filter(x => x.c.result === 'failed').length}</b> failed · <b>${ch.filter(x => x.c.result === 'pending').length}</b> still to mark${brier == null ? '' : ` · calibration ${brier.toFixed(3)} (0 is perfect, 0.25 a coin toss)`}</p>
+            <table class="board"><thead><tr><th>Marked on</th><th>Prediction</th><th>Odds</th><th>Result</th></tr></thead><tbody>${ch.map(({ r, c }) => `<tr class="r-${c.result}"><td>${esc(c.on)}</td><td><a href="/government/${r.id}/" data-policy="${r.id}">${esc(r.title)}</a>: ${esc(c.claim)}</td><td>${odds(c.prior)}</td><td>${c.result === 'pending' ? 'to mark' : esc(c.result)}</td></tr>`).join('')}</tbody></table>`;
+        } else if (pol) {
+          inner = `<p class="q"><a class="back" href="/government/${pol.post === 'prime-minister' ? '' : pol.post + '/'}" ${pol.post === 'prime-minister' ? 'data-cabinet' : `data-minister="${pol.post}"`}>◀ ${esc(owner ? owner.title : 'The cabinet')}</a></p>${marksHtml(pol)}<div class="mbody">${bodyHtml(pol.text)}</div>
+            ${pol.history.length ? `<h2>Its history</h2><ul class="hist">${pol.history.map(h => `<li><time>${esc(h.date)}</time> ${esc(h.subject)}</li>`).join('')}</ul>` : ''}`;
+        } else if (mm) {
+          inner = `<p class="q"><a class="back" href="/government/" data-cabinet>◀ The cabinet</a></p><h1>${esc(mm.title)}</h1><p class="lead"><b>${esc(mm.line)}</b></p><div class="mbody">${bodyHtml(mm.body)}</div><h2>Policies, one at a time</h2>${cards(listOf(mm.post))}`;
+        } else {
+          const pm = (C.government.manifesto || []).find(x => x.post === 'prime-minister');
+          inner = `<p class="q">The manifesto</p><h1>${esc(g.promise)}</h1>
+          <ul class="cab">${CAB.map(x => `<li><a href="/government/${x.post}/" data-minister="${x.post}"><b>${esc(x.title)}</b><span>${esc(x.line)}</span></a></li>`).join('')}</ul>
+          <p class="tobrd"><a href="/government/scoreboard/" data-board>The scoreboard: every prediction we've made, and whether it held ▶</a></p>
+          ${pm ? `<h2>The Prime Minister's policies</h2>${cards(listOf('prime-minister'))}` : ''}`;
+        }
         prog.innerHTML = `<div class="p-gov">${bar}<div class="body">${inner}<p class="notreal">${esc(g.notReal)} Press 2 for Future Proof.</p></div><div class="haz"></div>
           <div class="ppb${seen || clean() ? ' gone' : ''}"><p>There now follows a party political broadcast on behalf of</p><b>The BadCode Government</b></div></div>`;
         if (!seen && !clean()) { store.set('bc-ppb', '1'); govTimer = setTimeout(() => { const p = $('.ppb', prog); if (p) p.classList.add('gone'); }, 2600); }
@@ -148,6 +180,8 @@
     }
     const pb = $('[data-play]', prog); if (pb) pb.onclick = () => { const v = videoFor(state); if (v) play(v); };
     $$('[data-minister]', prog).forEach(a => { a.onclick = e => { e.preventDefault(); state = { ch: 'government', p: 1, text: null, minister: a.dataset.minister }; render(false); commit(true); }; });
+    $$('[data-policy]', prog).forEach(a => { a.onclick = e => { e.preventDefault(); state = { ch: 'government', p: 1, text: null, policy: a.dataset.policy }; render(false); commit(true); }; });
+    const bb = $('[data-board]', prog); if (bb) bb.onclick = e => { e.preventDefault(); state = { ch: 'government', p: 1, text: null, board: true }; render(false); commit(true); };
     const cb = $('[data-cabinet]', prog); if (cb) cb.onclick = e => { e.preventDefault(); state = { ch: 'government', p: 1, text: null }; render(false); commit(true); };
   }
 

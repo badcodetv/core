@@ -109,6 +109,39 @@ export function policiesFor(page, policies) {
   return list(page.policies).map(id => byId.get(id)).filter(Boolean);
 }
 
+// Future Proof's tenets as four marks a stranger can read at a glance (design §4.5).
+export function policyMarks(p, notReady) {
+  const m = p.meta;
+  return {
+    test: !notReady,                                            // no policy without its test
+    undo: m.kind === 'right' || !!m.stop,                       // small, checked, undoable (rights never stop)
+    prediction: !!m['check.claim'],                             // a forecast the world will mark
+    argued: !!m.against,                                        // an opposition case on the record
+  };
+}
+
+// A compact record of a policy for the TV and the scoreboard.
+export function policyRecord(p, notReady, history = []) {
+  const m = p.meta;
+  return {
+    id: m.id, post: m.owner, title: m.title, line: m.line, status: m.status, kind: m.kind,
+    text: policyText(p, notReady), marks: policyMarks(p, notReady), history,
+    check: m['check.claim'] ? { claim: m['check.claim'], prior: Number(m['check.prior']), on: m['check.check_on'],
+      result: m['check.result'] || 'pending', note: m['check.note'] || '', provisional: m['check.provisional'] === 'yes' } : null,
+  };
+}
+
+// The running record: resolved checks and the government's calibration (Brier score: 0 is perfect,
+// 0.25 is what always saying 50% earns). Void checks don't count.
+export function scoreboard(records) {
+  const checks = records.filter(r => r.check).map(r => ({ id: r.id, title: r.title, post: r.post, ...r.check }))
+    .sort((a, b) => a.on.localeCompare(b.on) || a.id.localeCompare(b.id));
+  const done = checks.filter(c => c.result === 'held' || c.result === 'failed');
+  const brier = done.length ? done.reduce((s, c) => s + (c.prior - (c.result === 'held' ? 1 : 0)) ** 2, 0) / done.length : null;
+  return { checks, held: done.filter(c => c.result === 'held').length, failed: done.filter(c => c.result === 'failed').length,
+    void: checks.filter(c => c.result === 'void').length, pending: checks.filter(c => c.result === 'pending').length, brier };
+}
+
 const pct = p => `${Math.round(Number(p) * 100)}%`;
 const RESULT_WORDS = { pending: 'not checked yet', held: 'it held', failed: 'it failed', void: 'void' };
 const STATUS_WORDS = { draft: 'Draft', 'in-trial': 'In trial', kept: 'Kept', changed: 'Changed', dropped: 'Dropped' };
@@ -117,8 +150,13 @@ const STATUS_WORDS = { draft: 'Draft', 'in-trial': 'In trial', kept: 'Kept', cha
 // notReady: the list of missing fields from the lint, if any.
 export function policyText(p, notReady) {
   const m = p.meta, out = [`## ${m.title}`, m.line, String(p.body).trim()];
-  if (m.kind === 'trial') {
-    out.push(`The test. ${m['test.where']}, against ${m['test.against']}, measured by ${m['test.measure']}, by ${m['test.by']}.`.replace(/\.\./g, '.'));
+  if (m.kind === 'trial' && !(m['test.where'] && m['test.against'] && m['test.measure'] && m['test.by'])) {
+    out.push('The test. Not ready: this policy has no test yet, so it can\'t go anywhere until it has one.');
+    if (m.fails_if) out.push(`Fails if: ${m.fails_if}`);
+  } else if (m.kind === 'trial') {
+    // mid-sentence fields lose a leading capital ("against The other half"), but not an acronym ("ONS")
+    const lc = v => String(v || '').replace(/^([A-Z])(?=[a-z])/, c => c.toLowerCase());
+    out.push(`The test. ${m['test.where']}, against ${lc(m['test.against'])}, measured by ${lc(m['test.measure'])}, by ${lc(m['test.by'])}.`.replace(/\.\./g, '.'));
     if (m.fails_if) out.push(`Fails if: ${m.fails_if}`);
   } else if (m.kind === 'judgement-call') {
     out.push(`Judgement call. ${m['judgement.principle']} Reviewed ${m['judgement.review']}. What would change our mind: ${m['judgement.change_mind']}`);

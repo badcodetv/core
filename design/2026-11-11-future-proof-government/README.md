@@ -280,8 +280,8 @@ Each milestone ends in a PR for Kai or Jack to merge, plus a short status page.
 - [x] T11 A dry run on one day's news, end to end, before the schedules go live.
 
 **M4 Public face**
-- [ ] T12 Policy pages show the best case against, the history and the result.
-- [ ] T13 The scoreboard page; the minister pages; the teletext pages.
+- [x] T12 Policy pages show the best case against, the history and the result.
+- [x] T13 The scoreboard page (with a calibration score once checks are marked); the minister pages list their policies with four marks each. (Teletext still shows forewords only.)
 
 **M5 Open platform**
 - [ ] T14 Program design doc (accounts, instructions, keys and their blast radius, Sybil
