@@ -59,5 +59,21 @@ picks the stills, OKs words and spend). What is different for a short:
 - **Aspect: offer portrait (9:16) as the sensible default, and ask.** Kai, 2026-11-10: "the skill shouldn't assume, but it should have the options of sensible defaults." Offer 9:16 first (phones), with 16:9 and both as the alternatives; put the answer in `scene.json` `video.aspect`.
 - **Suno workspace per short:** `short-<slug>`, written into every round folder's `workspace` file before any Create (Kai, 2026-11-10: don't pollute other workspaces).
 - **Music** is a Suno track of its own when the short has music (suno-prompt / suno-automation / variations, reading the short's `sound.md`).
+- **Clips page alongside the timeline** (Kai, 2026-11-11: *"it would be really useful to see these full screen,
+  because if we're looking for artefacts…"*): a page of every clip in cut order, flagged good or fault, with a
+  fullscreen viewer (frame step, ¼ and ½ speed). Still candidates awaiting approval sit on the same page. The model is
+  The Rules' https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY.
+- **Balaclava gang in motion:** Omni redraws the masks every frame, and the triangles vanish when heads turn
+  (The Rules, 2026-11-11). Write "every mask keeps facing the camera" into the motion prompt, then check the
+  masks zoomed in at three points in each clip.
+- **Premiere and release: [`docs/marketing/shorts-release.md`](../../../docs/marketing/shorts-release.md).**
+  - One `.prproj` per short in its media folder.
+  - The sequence is built from a 1080×1920 24 fps black slug, 🔴 **never** Premiere's 30 fps "Social Media
+    Portrait" preset.
+  - Text stays inside the safe box: x 60–930, y 270–1500.
+  - Export H.264 at 1080×1920, 24 fps, 12–16 Mbps, then run `delivery-qc.sh … shorts`.
+  - YouTube treats it as a Short when it is vertical and up to 3 minutes. Stay under 60 s where you can, because
+    a copyright claim past 60 s blocks the Short.
+  - 🔴 Tick the AI-content disclosure: Suno music alone requires it.
 - **Shipping:** the cut goes to `chief-of-staff` (it writes the caption via `marketing-producer`, checks via
   `marketing-gatekeeper`, and logs the post). Then mark the short DONE on the list.
