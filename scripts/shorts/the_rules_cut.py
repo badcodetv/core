@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The Rules (BadCode Short): rough cut 2, Flow clips cut on the sung words, the hymn and the drum and bass drop.
+"""The Rules (BadCode Short): rough cut 2, Flow clips cut on the sung words, the hymn and the drop (sound: docs/stories/short-the-rules/sound.md).
 
     python3 scripts/shorts/the_rules_cut.py [--drop-in 0.0]
 
