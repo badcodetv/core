@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep-c-iapetus.wav",
+ "made": "2026-11-11T10:35:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 1 (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA crisp, old-fashioned broadcast announcer, received pronunciation, the measured clipped voice of a 1960s newsreel or a wartime bulletin. Formal, precise, every consonant in place, a faint stiff-upper-lip grandeur that makes the absurd sound official.\n\n## Scene:\nDelivering a formal report to camera outdoors at night.\n\n## Sample Context:\nHe narrates this as if it were a royal procession of national importance, which makes it funnier.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Iapetus"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/min-d-rasalgethi.wav",
+ "made": "2026-11-11T10:35:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 1 (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nAn old blustering shire politician in his sixties, a baronet type, booming, plummy and red-faced, used to bellowing across grouse moors. On the phone he roars with theatrical outrage, a great bellowing harrumph.\n\n## Scene:\nSunk in the leather back seat of a chauffeured car at night, bellowing into a phone.\n\n## Sample Context:\nThe canapés are wrong and he wants the whole world to know it.",
+ "inputs": {
+  "transcript": "I said raspberry-shaped hors d'oeuvres!"
+ },
+ "settings": {
+  "voice": "Rasalgethi"
+ }
+}

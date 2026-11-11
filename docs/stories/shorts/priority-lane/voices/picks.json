@@ -1,0 +1,78 @@
+{
+ "title": "Priority Lane Voices",
+ "eyebrow": "Priority Lane · voice casting · round 1",
+ "heading": "Who do they sound like?",
+ "intro": "Four takes per role, each a different idea. Play them, Pick one per role, and leave a note if none is right (e.g. 'b but older'). Notes start round 2.",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "Real lines from the locked dialogue (1D).",
+   "groups": [
+    {
+     "slot": "reporter",
+     "title": "The reporter",
+     "line": "\"Traffic is being managed, to keep an important journey moving.\" … \"A politician blocking the path of an ambulance. Poetic, really...\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting/rep-a-charon.mp3",
+       "label": "a: Birmingham local-news veteran, 50s (Charon)",
+       "warn": "dry, level, unimpressed"
+      },
+      {
+       "id": "b",
+       "src": "casting/rep-b-despina.mp3",
+       "label": "b: Glasgow roving reporter, woman, 30s (Despina)",
+       "warn": "brisk, with a deadpan pause"
+      },
+      {
+       "id": "c",
+       "src": "casting/rep-c-iapetus.mp3",
+       "label": "c: 1960s newsreel announcer, RP (Iapetus)",
+       "warn": "grand, makes it sound official"
+      },
+      {
+       "id": "d",
+       "src": "casting/rep-d-algenib.mp3",
+       "label": "d: South London night stringer, 40s (Algenib)",
+       "warn": "knackered, talking to a mate"
+      }
+     ]
+    },
+    {
+     "slot": "minister",
+     "title": "The minister",
+     "line": "\"I said raspberry-shaped hors d'oeuvres!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting/min-a-fenrir.mp3",
+       "label": "a: Home Counties toff, 40s (Fenrir)",
+       "warn": "petulant toddler, voice cracking"
+      },
+      {
+       "id": "b",
+       "src": "casting/min-b-orus.mp3",
+       "label": "b: slick media-trained minister, 50s (Orus)",
+       "warn": "low venomous hiss"
+      },
+      {
+       "id": "c",
+       "src": "casting/min-c-gacrux.mp3",
+       "label": "c: Cheshire cabinet minister, woman, late 50s (Gacrux)",
+       "warn": "icy, rises to a shriek"
+      },
+      {
+       "id": "d",
+       "src": "casting/min-d-rasalgethi.mp3",
+       "label": "d: blustering shire baronet, 60s (Rasalgethi)",
+       "warn": "booming harrumph"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

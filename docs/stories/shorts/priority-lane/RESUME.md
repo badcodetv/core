@@ -1,6 +1,6 @@
 # Priority Lane: resume here
 
-**2026-11-11:** ALL FIVE CLIPS MADE. 03 = `pl-03-r2-REP1-a.mp4`, 05 = `pl-05-r3-REP1-a.mp4` (the bare prompt got through). Next: voices in AI Studio (reporter + minister), lip-sync the minister (clip 04), rough cut on a timeline page.
+**2026-11-11:** ALL FIVE CLIPS MADE. 03 = `pl-03-r2-REP1-a.mp4`, 05 = `pl-05-r3-REP1-a.mp4` (the bare prompt got through). Voices: casting round 1 is on https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm (skill `voice-casting`), awaiting Jack's picks; then lip-sync the minister (clip 04), rough cut on a timeline page.
 
 **State, 2026-11-10 evening (Jack):**
 

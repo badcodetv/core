@@ -56,5 +56,13 @@
   ],
   "feedback": "feedback/storyboard-r1",
   "feedback_docs": 5
+ },
+ {
+  "at": "2026-11-11T10:35:37+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
+  "what": "voice casting round 1: 4 reporter + 4 minister AI Studio takes",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/shorts/priority-lane/voices/picks.json <out.html>"
  }
 ]

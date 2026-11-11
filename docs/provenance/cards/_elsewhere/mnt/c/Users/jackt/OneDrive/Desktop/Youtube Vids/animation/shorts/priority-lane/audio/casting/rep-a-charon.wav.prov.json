@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep-a-charon.wav",
+ "made": "2026-11-11T10:35:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 1 (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA regional television news reporter in his fifties from Birmingham, thirty years on the local evening bulletin. Low, unhurried, completely unimpressed. He reads every story in the same dry, level tone, whether it is a fun run or the end of the world, and lets the facts do the sneering for him. Clear diction, a light West Midlands accent.\n\n## Scene:\nStanding on a wet pavement at a city junction at night, doing a piece to camera in the rain.\n\n## Sample Context:\nHe has covered a hundred motorcades. He is not going to raise his voice for this one.",
+ "inputs": {
+  "transcript": "Traffic is being managed, to keep an important journey moving.\n\n... A politician blocking the path of an ambulance. Poetic, really..."
+ },
+ "settings": {
+  "voice": "Charon"
+ }
+}

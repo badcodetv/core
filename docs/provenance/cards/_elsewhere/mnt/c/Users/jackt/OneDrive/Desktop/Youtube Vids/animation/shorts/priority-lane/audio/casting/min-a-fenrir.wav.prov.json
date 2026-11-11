@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/min-a-fenrir.wav",
+ "made": "2026-11-11T10:35:13+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "Priority Lane voice casting round 1 (Jack 2026-11-11)",
+ "prompt": "# Audio Profile\nA government minister in his forties, privately educated, Home Counties, used to getting his way. On the phone he becomes a spoilt, high-pitched, petulant toddler: indignant, outraged, voice cracking upward with entitlement.\n\n## Scene:\nIn the back of a chauffeured car speeding through the city at night, shouting into a mobile phone.\n\n## Sample Context:\nHis office got the canapé order wrong. To him this is the worst thing that has ever happened.",
+ "inputs": {
+  "transcript": "I said raspberry-shaped hors d'oeuvres!"
+ },
+ "settings": {
+  "voice": "Fenrir"
+ }
+}
