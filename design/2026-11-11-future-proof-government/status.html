@@ -1,0 +1,92 @@
+<title>Future Proof Government</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a single column "build log" for a government: header, milestone track, then what changed and what Kai decides. */
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#16202e; --muted:#5b6676; --line:#dde2ea;
+  --accent:#1f5fd6; --done:#1d8a5a; --todo:#8a94a3; --ask:#b5600b; --askbg:#fff4e6;
+  --display:"Space Grotesk",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f141c; --panel:#171e29; --ink:#e7ecf3; --muted:#9aa5b5; --line:#2a3443;
+  --accent:#6ea0ff; --done:#4cc38a; --todo:#6b7585; --ask:#f0a24a; --askbg:#2a2014; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --panel:#171e29; --ink:#e7ecf3; --muted:#9aa5b5; --line:#2a3443;
+  --accent:#6ea0ff; --done:#4cc38a; --todo:#6b7585; --ask:#f0a24a; --askbg:#2a2014; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding-block:32px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:28px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:30px;line-height:1.15}
+h2{font-size:19px}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:17px;margin:6px 0 0;max-width:62ch}
+section{display:flex;flex-direction:column;gap:12px}
+.track{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.ms{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.ms b{font:700 14px var(--display)}
+.ms span{font-size:13px;color:var(--muted)}
+.pill{font:500 11px var(--mono);letter-spacing:.05em;text-transform:uppercase;align-self:flex-start;padding:2px 7px;border-radius:99px;border:1px solid currentColor}
+.p-review{color:var(--accent)} .p-todo{color:var(--todo)}
+.ms.now{border-color:var(--accent);box-shadow:inset 0 3px 0 var(--accent)}
+@media (max-width:620px){.track{grid-template-columns:1fr}.ms{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:4px 10px}}
+ul.list{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.tenets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:620px){.tenets{grid-template-columns:1fr}}
+.tenet{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
+.tenet b{display:block;font:700 15px var(--display);margin-bottom:4px}
+.tenet small{font:500 11px var(--mono);color:var(--muted)}
+.decision{background:var(--askbg);border-left:3px solid var(--ask);padding:12px 14px;border-radius:0 8px 8px 0;display:flex;flex-direction:column;gap:4px}
+.decision b{font:700 15px var(--display)}
+.decision .rec{font-weight:600;color:var(--ask)}
+a{color:var(--accent)} a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+code{font:13px var(--mono)}
+.foot{font-size:13px;color:var(--muted)}
+</style>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">BadCode government · rebuild status · 11 Nov 2026</div>
+    <h1>Future Proof Government</h1>
+    <p class="lede">The government is being rebuilt as a working demonstration of Future Proof. Milestone 1 (the foundations) is ready for review as <a href="https://github.com/badcodetv/core/pull/14">PR #14</a>.</p>
+  </header>
+
+  <section aria-labelledby="track">
+    <h2 id="track">The five milestones</h2>
+    <div class="track">
+      <div class="ms now"><span class="pill p-review">In review</span><b>M1 Foundations</b><span>Tenets, design, research</span></div>
+      <div class="ms"><span class="pill p-todo">Next</span><b>M2 Policies</b><span>One file per policy, each with a dated prediction</span></div>
+      <div class="ms"><span class="pill p-todo">Later</span><b>M3 Debate</b><span>An opposition on a different AI, a statistician</span></div>
+      <div class="ms"><span class="pill p-todo">Later</span><b>M4 Public face</b><span>A page per policy on the site, plus a scoreboard</span></div>
+      <div class="ms"><span class="pill p-todo">Later</span><b>M5 Open record</b><span>Solana design, local prototype only</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="tenets">
+    <h2 id="tenets">The government's new founding rules</h2>
+    <div class="tenets">
+      <div class="tenet"><b>Choose issue by issue</b>Every policy stands alone, so you can back one and reject the next.<br><small>composition over inheritance</small></div>
+      <div class="tenet"><b>Small, checked, undoable</b>Laws change in small tested steps, each with a stop date (rights excepted).<br><small>continuous integration</small></div>
+      <div class="tenet"><b>No policy without its test</b>Every proposal ships with its experiment, the number that kills it, and who it leaves out.<br><small>data-driven decisions</small></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="changed">
+    <h2 id="changed">What PR #14 changes</h2>
+    <ul class="list">
+      <li><b>Live once merged:</b> the shared instructions every government agent reads (<code>docs/government/shared.md</code>) now open with the three rules above.</li>
+      <li><b>Kept:</b> the Prime Minister's page and its pledges, the satire, and "Not a real party. Yet."</li>
+      <li><b>Banned from public pages:</b> the software names. The reader sees "issue by issue", not "composition".</li>
+      <li><b>New, not live yet:</b> the design for M2 to M5, and research on what worked elsewhere (vTaiwan, prediction markets, UK gambling law, AI debate).</li>
+      <li><b>Checked:</b> an independent review, with its fixes applied. The government tests pass (25 of 25).</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="decide">
+    <h2 id="decide">Three decisions for Kai</h2>
+    <div class="decision"><b>K1 · Split the manifesto into one file per policy</b>Each policy gets a dated prediction about the real UK, marked in public by a separate statistician agent. This unblocks M2. <span class="rec">Recommend: yes.</span></div>
+    <div class="decision"><b>K2 · Promise outsiders a written answer within 7 days</b>Platforms that only advise tend to die, so this is how we bind ourselves. The cost: your merge speed becomes a public promise. <span class="rec">Recommend: yes, starting at M4.</span></div>
+    <div class="decision"><b>K3 · No money on the open platform</b>Even a refundable deposit breaks "asks nobody for money", and payouts would count as betting. <span class="rec">Recommend: design M5 with no money at all; reputation comes from predictions that came true.</span></div>
+  </section>
+
+  <p class="foot">Source of truth: <code>design/2026-11-11-future-proof-government/</code> in the repo. This page is rebuilt at each milestone.</p>
+</div>
