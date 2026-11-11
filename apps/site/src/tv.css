@@ -38,7 +38,7 @@ canvas.snow{position:absolute;inset:0;width:100%;height:100%;z-index:30;opacity:
 .static canvas.snow{opacity:.9}
 .osd{position:absolute;top:4cqmin;right:5cqmin;z-index:35;font:9cqmin/1 var(--mono);color:var(--osd);text-shadow:0 0 1.6cqmin rgba(92,255,106,.6);opacity:0;transition:opacity .25s;text-align:right;pointer-events:none}
 .osd.show{opacity:1}
-.osd small{display:block;font-size:3.2cqmin;margin-top:1cqmin}
+.osd{font-size:4.6cqmin;letter-spacing:.08em;white-space:nowrap}
 .standby{position:absolute;inset:0;z-index:39;background:var(--black);display:none;place-items:center}
 .off .standby{display:grid}
 .standby svg{width:7cqmin;animation:breathe 3s ease-in-out infinite}
@@ -174,6 +174,7 @@ button.pill{cursor:pointer;background:var(--cream);color:#111;border:0;font-weig
 .pad{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} /* a phone keypad: 1–9, then ◀ 0 ▶; 0 is programme 10 (Kai, 2026-11-11) */
 .pad button{font:var(--mono);font-family:var(--mono);font-size:1.05rem}
 /* a number with no programme on this channel is greyed out (Kai, 2026-11-11) */
+.pad button[aria-current="true"]{background:#e9e3d8;color:#141312;box-shadow:0 3px 0 #8d867a}
 .remote button:disabled{opacity:.28;cursor:default;box-shadow:none;transform:none}
 .pad .arrow{font-family:var(--ui);font-size:.9rem}
 .hint{margin:0;font:600 .72rem/1.3 var(--ui);color:#8d867a;text-align:center}
