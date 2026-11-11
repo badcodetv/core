@@ -7,7 +7,7 @@ The website is a television. Its three strands are channels, and number keys pic
 | STORIES | BadCode One | 1–4 the films, 5–8 their songs | `/stories`, `/stories/1` … `/stories/8` |
 | NEWS | the catch-all for specials (Kai, 2026-11-11) | 1 Future Proof (three questions play in the screen), 2 The Storyverse (Maddie's hologram); Money For Something joins as 3 with its first bulletin; shorts go here too | `/news` (also `/future-proof`), `/news/2` (also `/storyverse`, and `/stories/9`, its old home) |
 | GOVT | The BadCode Government | 1 the manifesto, with where it stands (each minister at `/government/<post>`, each policy at `/government/<post>/<slug>`), then the government in action as a broadcast: 2 Live, 3 The floor (every policy), 4 The record, 5 Replay (any argument, point by point) | `/government`, `/government/2` … `/government/5` |
-| 0 | Test card | about BadCode | `/about` |
+| (no button since 2026-11-11) | Test card | about BadCode; 0 on the keypad is now programme 10 | `/about` |
 | (no button since 2026-11-11) | Teletext pages, still open from old links | 100 index, 200 stories (201–204), 300 news, 400 manifesto, 401 the cabinet (402–410 one minister each), 700 follow, 800 about, 888 Future Proof | `/text/100` … |
 
 Every address is a real page with its own title and link-preview picture, plus a plain-text copy of
@@ -130,3 +130,5 @@ picture automatically.
 Subtitles under the three buttons (Kai asked for funny): STORIES *spoiler alert*, NEWS
 *from next week*, GOVT *arguing in public*. A number with no programme on the current
 channel is greyed out.
+The keypad is a phone's: 1–9 in three rows, then ◀ 0 ▶. 0 is programme 10 and is greyed out like any
+number the channel doesn't have.

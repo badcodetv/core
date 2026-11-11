@@ -387,7 +387,7 @@
   function syncRemote() {
     $$('.strands button').forEach(b => b.setAttribute('aria-current', !state.text && b.dataset.k === state.ch));
     // grey out the numbers this channel has no programme for (0, the test card, always works)
-    $$('.pad [data-k], .nav .num[data-k]').forEach(b => { const n = +b.dataset.k; b.disabled = !state.text && n > 0 && n > count[state.ch]; });
+    $$('.pad [data-k]').forEach(b => { if (!/^\d$/.test(b.dataset.k)) return; const n = +b.dataset.k || 10; b.disabled = !state.text && n > count[state.ch]; });
   }
   function render(gesture) {
     syncRemote();
@@ -432,8 +432,7 @@
   function chStep(d) { const i = CH.indexOf(state.ch); tune({ ch: CH[(i + d + CH.length) % CH.length], p: 1 }); }
   function digit(k) {
     if (state.text) { typed = (typed + k).slice(-3); if (typed.length < 3) { const h = $('#tti div'); if (h) h.innerHTML = `<span class="w">P${typed.padEnd(3, '-')}</span> <span class="y">BADCODE</span>  <span class="w">searching</span>`; return; } goText(+typed); return; }
-    if (k === '0') { tune({ ch: 'testcard', p: 1 }); return; }
-    const p = +k; if (p <= count[state.ch]) tune({ ch: state.ch, p }); else flashOsd();
+    const p = +k || 10; // 0 is programme 10, like a phone keypad (the test card is /about) if (p <= count[state.ch]) tune({ ch: state.ch, p }); else flashOsd();
   }
   function setClean(v) { tv.classList.toggle('clean', v); store.set('bc-clean', v ? '1' : ''); } // no button since 2026-11-11; reduced motion still gets the clean picture
   function setTucked(v) { tv.classList.toggle('tucked', v); store.set('bc-tucked', v ? '1' : ''); }
