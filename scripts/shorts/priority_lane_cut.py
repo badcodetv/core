@@ -35,15 +35,19 @@ r1 = LEAD + (L1[1] - L1[0]) + 0.35
 r2 = LEAD + (L2[1] - L2[0]) + TAIL + 0.4
 SHOTS = [('outside', 'pl-01-OUT1-c.mp4', 0.5, 3.0),
          ('ambulance', 'pl-02-AMB1-a.mp4', 0.5, 2.5),
-         ('reporter', 'pl-03-r2-REP1-a.mp4', 0.0, r1),
+         ('reporter', 'pl-03-cr2A-REP1-a.mp4', 0.0, r1),
          ('minister', 'pl-04-MIN1-b.mp4', MIN_IN, MIN_OUT - MIN_IN),
-         ('button', 'pl-05-r3-REP1-a.mp4', 1.0, r2)]
+         ('button', 'pl-05-cr2A-REP1-a.mp4', 1.2, r2)]
 starts, t = [], 0.0
 for s in SHOTS: starts.append(round(t, 3)); t += s[3]
 TOTAL = round(t, 3)
+OVL = MEDIA / 'overlay'
+LOGO = OVL / 'badcode-lockup-reversed-420.png'
 T_REP1 = starts[2] + LEAD
 T_MIN = starts[3] - MIN_IN                       # where clip 04's t=0 sits on the timeline
 T_REP2 = starts[4] + LEAD
+# (time, x, y) for each headline card: one every ~0.95 s across the button line, stacking up
+CARD_AT = [(T_REP2 + 0.15 + 0.95 * k, x, y) for k, (x, y) in enumerate([(50, 330), (70, 1050), (60, 600), (40, 1250), (55, 820)])]
 SEE = {'outside': 'The junction: the outrider holds the ambulance at the red light while the motorcade glides through.',
        'ambulance': 'Inside the ambulance: nobody moves, the light stays red.',
        'reporter': 'The BadCode reporter, straight to camera, the motorcade behind him.',
@@ -78,7 +82,18 @@ def main():
                '-ar', 48000, '-ac', 2, sp)
         sfx_parts.append(sp)
     (CUT / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
-    ff('-f', 'concat', '-safe', '0', '-i', CUT / 'list.txt', '-c', 'copy', CUT / 'picture.mp4')
+    ff('-f', 'concat', '-safe', '0', '-i', CUT / 'list.txt', '-c', 'copy', CUT / 'picture-raw.mp4')
+    # Round 2 (Jack's notes): real headlines slam in meme-style over the button line, and a BadCode logo bug over all of it.
+    # Cards: scripts/shorts/priority_lane_cards.mjs (verbatim, fetched headlines; research/news-stories.md).
+    subprocess.run(['node', str(REPO / 'scripts/shorts/priority_lane_cards.mjs'), str(OVL)], check=True, capture_output=True)
+    ins, chain, last = ['-i', CUT / 'picture-raw.mp4', '-i', LOGO], [], '0'
+    chain.append(f'[1]format=rgba,colorchannelmixer=aa=0.9[logo];[0][logo]overlay=56:120[v0]'); last = 'v0'
+    for k, (t, x, y) in enumerate(CARD_AT):
+        ins += ['-i', OVL / f'card-{k}.png']
+        chain.append(f"[{last}][{k + 2}]overlay={x}:{y}:enable='gte(t,{t:.2f})'[v{k + 1}]"); last = f'v{k + 1}'
+    chain.append(f'[{last}]scale=in_range=full:out_range=limited,format=yuv420p[vout]')  # the RGBA overlay leaves full-range content (QC fail)
+    ff(*ins, '-filter_complex', ';'.join(chain), '-map', '[vout]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18',
+       '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', CUT / 'picture.mp4')
     (CUT / 'slist.txt').write_text(''.join(f"file '{p.name}'\n" for p in sfx_parts))
     sfx = CUT / 'sfx-world.wav'
     ff('-f', 'concat', '-safe', '0', '-i', CUT / 'slist.txt', '-af', f'apad=whole_dur={TOTAL}', '-ar', 48000, '-ac', 2, sfx)

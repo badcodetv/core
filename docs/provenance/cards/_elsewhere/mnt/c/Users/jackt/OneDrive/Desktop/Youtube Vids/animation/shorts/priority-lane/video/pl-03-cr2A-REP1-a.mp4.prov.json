@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+ "made": "2026-11-11T11:58:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow ambulance stays parked at the junction, blue lights flashing. A line of dark cars slides past behind it, left to right. Rain falls. Only rain and tyre sounds. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+ "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Fully positive, static-scene method: lock the camera with Google's own words, write the ambulance as a parked landmark, )",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/REP1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "03-cr2A",
+  "frame": 3,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T11:57:50.865Z"
+ }
+}
