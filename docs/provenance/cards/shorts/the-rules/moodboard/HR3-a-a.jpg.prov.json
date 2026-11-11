@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR3-a-a.jpg",
+ "made": "2026-11-11T12:43:49.521Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The gang is exactly five people, the same five as in the second picture: grey hoodie with a sage mask, olive bomber with a mustard mask, hi-vis vest with a navy mask, black puffer with a rust mask, dark coat with a charcoal mask. In the first picture, take out the two extra floor figures in the maroon mask and the green mask completely, and fill where they stood with more torn paper, scattered sheets and the shelving behind. Keep the two climbers hanging on the racks and the three remaining rippers on the floor (rust, navy hi-vis, charcoal) exactly as they are, each mask with its white ring and one small downward red triangle. Same light, grain and framing.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/HR2-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/HR2-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/CL3-c-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "64cc1dea-0974-485a-b95d-0fddfe26fa83"
+}

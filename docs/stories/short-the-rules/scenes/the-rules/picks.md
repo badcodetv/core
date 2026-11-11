@@ -150,3 +150,8 @@ the shelves… two of them hanging from the shelves and the other ones just ripp
 between [the climb and the pen]"*, and *"the changes in Premiere… get back into the timeline"*. Carried back as timeline
 round 3 (cut script SHOTS in frames). Stills: `HR1-a-a/b` (edit of CL3-c-a + mask ref; b lost the rings), mask fix
 `HR2-a-a/b`, both pass the zoomed check (seven masks); on the clips page v6 awaiting approval.
+Kai: *"that's perfect… although I'm worried that we've introduced a new member… There's only five in the other shots…
+there's now seven… can we recut it just with five people?"* → `HR3-a-a/b` (HR2-a-a with the maroon and green floor
+figures removed; ref CL3-c-a for the five), then a triangle touch-up on rust and navy: **`HR4-a-a`** (five people,
+every mask passes zoomed). On the clips page v8 for approval. Rule kept for this short: **the gang is five** (sage/grey
+hoodie, mustard/olive bomber, navy/hi-vis, rust/black puffer, charcoal/dark coat).
