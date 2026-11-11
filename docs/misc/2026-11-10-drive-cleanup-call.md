@@ -119,3 +119,10 @@ missing); 63 uploaded, 0 left. Fix: Drive's Camping Story mirrors Jack's `Campin
 `Camping Video NEW!`, so Jack's home was re-recorded one level up and the wrong home removed from `folders.json`
 (it would have mis-pointed beat 9's borrowed clips on Kai's machine). The 9 clips yesterday's push put at the
 Drive top level were exact copies of ones in `Camping Video NEW!/new clips/`: binned. Nothing deleted on the PC.
+- **Cleaned to `0 synced` (2026-11-11):** before deleting, checked that every file the cut plays is kept (snapshot +
+  saved project read with nested sequences followed: 88 files, all in `Camping Video NEW!`), and that no other
+  sequence or project saved since 10 Oct uses a file on the delete list (only the Camping song's beat 7-9 borrow
+  Camping Story files, the 9 `new clips`, all kept). Drive: 184 files binned (old `camping assembly` project and
+  media, auto-saves, previews), 90 left. Jack's PC: 607 files deleted (1.2 GB) inside `Camping Video NEW!` only.
+  Kept on both: `Camping story video.mp4`, the 17 Sep export of this cut. Not touched: `Camping Comic/badcode
+  camping`, `music video`, `other`, `shorts` (not part of the film, not on Drive).
