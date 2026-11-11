@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/dub-r23/D11c-t2a-y.wav",
+ "made": "2026-11-11T11:13:52+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r23ya.wav",
+ "why": "r23 (Kai, 11 Nov: the old lady's 'And afterwards?' still had the posh Sulafat voice; Yorkshire Vindemiatrix since 3 Nov): take r23ya fitted onto D11c-t2a's mouth exactly as r18qb was (dub-r17/D11c-t2a-b.json): slice 0.24-1.51 x1.119 at 1.12 s, voice on 1.19 ends 2.26",
+ "inputs": {
+  "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/dub-r23/D11c-t2a-y.json"
+ }
+}

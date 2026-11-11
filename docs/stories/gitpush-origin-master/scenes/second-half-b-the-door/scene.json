@@ -151,7 +151,7 @@
    "how": "clone of r1; s05/s08/s16 in-points to 0 (the files are the trimmed pieces); s07-film +1 frame at its tail, s13-crowd +1 frame; Kai's -15 dB on every audio clip kept",
    "premiere_ahead": "Kai's even -15 dB on every audio clip (no change to the balance); picture now matches the page frame for frame",
    "check": {
-    "at": "2026-11-11T11:09",
+    "at": "2026-11-11T11:24",
     "state": "in sync",
     "why": ""
    }

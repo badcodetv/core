@@ -382,5 +382,14 @@
   "decided": [
    "Perfect, Claude. We've nailed it. That's the one. So for the bridge, that's locked in."
   ]
+ },
+ {
+  "at": "2026-11-11T11:29:01+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+  "what": "round 9 notes dumped (Kai 11 Nov: restructure the bridge around trust and jeopardy; no TV, no debate)",
+  "feedback": "feedback/timeline-r9",
+  "feedback_docs": 46
  }
 ]

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r23-yorks-D11c-t2a-dub.wav",
+ "made": "2026-11-11T11:13:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg -ss 1.10 -t 1.3 (as the r18 dub)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/dub-r23/D11c-t2a-y.wav",
+ "why": "r23 (Kai, 11 Nov): the old lady's 'And afterwards?' re-voiced in her Yorkshire voice (Vindemiatrix, take r23ya) fitted onto D11c-t2a's mouth, cut from clip time 1.10 s; the cut plays D11c from 0.5 s and the line at +0.6 s, so it lands on the mouth. Replaces d3-10-lady-r18-D11c-t2a-dub.wav (Sulafat)"
+}

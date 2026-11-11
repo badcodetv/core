@@ -59,17 +59,17 @@ REF.update({'d3n1': 'd3n', 'd3n2': 'd3n'})
 D6_PARTS = [('d6c', 0.0)]  # the admission, as placed (key, gap before it); with the round-C retake: d6a, d6b, d6c
 # --tag r5 (Kai, 4 Nov, D round 5): Maddie's new key line (at469), the lady's answer cut (at567/at715), the d6 question
 # and answer cut (at1091/at1178/at1285), the all-seated D10x shot for d6 (at1054/at1615). Writes <media>/cut-r5/.
-R20 = E.TAG in ('r20', 'r21', 'r22')  # r22: Kai at1586, just 'Are you ready for this?'.  # r21: Kai at1559, Derek's whisper 'my sweetheart'.  r20: Kai, 10 Nov (timeline r19 + picks r20): two new angles on the empty room (at543), curious Derek (at627), the promise in his words + Derek's warm line (at1236), the room music ends on it (at1418), the hands held 1.5 s longer (at1587)
-R17 = E.TAG in ('r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # r19: Kai, 9 Nov (timeline r18 at944, picks r19 hands b): clean Maddie beside the lady's hands (D11b-t2b); overhead kept as is (pick 'now').  # r18: Kai, 9 Nov (after r17): the lady's 'And afterwards?' re-shot with timed words, quick take fitted (pick a-b).  r17: Kai, 9 Nov (timeline r16): Sandra re-shot with timed words (at1141), a firmer vow, cut earlier (at1300), 'sure' whole (at1446), music to silence under the vow then the ending piece (at1477)
-R16 = E.TAG in ('r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 9 Nov (picks r15): the seated room with small Maddie (D10c b) under the vow and 'they sit', hands already held (D12k), the last shot with the people gone (D16n ca)
-R15 = E.TAG in ('r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 9 Nov (chairs picks r14): the new overhead (D05c c), Sandra's two-shot speaking (D08c b), the hands held together (D12h)
-R14 = E.TAG in ('r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 9 Nov (timeline r13): Hundred+question one take, Sandra's jeopardy, the vow without 'take a seat', no Thank you, hands quick to white
-R13 = E.TAG in ('r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 9 Nov: dialogue 1I (the hundred choose: 'take a seat'), the lady asks 'And afterwards?', 'my love'
-R11 = E.TAG in ('r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai at1242 (6 Nov): no Sandra / 'me too', only 'Are you ready for this?'; the music must not change
-R9 = E.TAG in ('r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # r10: Kai at978, the key line re-worded; Kai, 6 Nov, timeline r8 notes: Maddie empathetic (at331/at557), no 'Will it hurt?' (at849), no waffle (at1147/at1275)
-R8 = E.TAG in ('r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 6 Nov, timeline r7 notes: cut to the chase (at1400), no tea (at1750), cello from 'they sit' (at1849), hands straight to white (at2360)
-R7 = E.TAG in ('r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 6 Nov: dialogue page draft 1F (the wafer: what it costs) + 2D (the goodbye)
-R5 = E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # r6: the same edit, with the re-made suits (D00r7) and tea (D06r7) shots
+R20 = E.TAG in ('r20', 'r21', 'r22', 'r23')  # r23: Kai, 11 Nov, the lady's 'And afterwards?' in her Yorkshire voice (Vindemiatrix; see main()).  # r22: Kai at1586, just 'Are you ready for this?'.  # r21: Kai at1559, Derek's whisper 'my sweetheart'.  r20: Kai, 10 Nov (timeline r19 + picks r20): two new angles on the empty room (at543), curious Derek (at627), the promise in his words + Derek's warm line (at1236), the room music ends on it (at1418), the hands held 1.5 s longer (at1587)
+R17 = E.TAG in ('r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # r19: Kai, 9 Nov (timeline r18 at944, picks r19 hands b): clean Maddie beside the lady's hands (D11b-t2b); overhead kept as is (pick 'now').  # r18: Kai, 9 Nov (after r17): the lady's 'And afterwards?' re-shot with timed words, quick take fitted (pick a-b).  r17: Kai, 9 Nov (timeline r16): Sandra re-shot with timed words (at1141), a firmer vow, cut earlier (at1300), 'sure' whole (at1446), music to silence under the vow then the ending piece (at1477)
+R16 = E.TAG in ('r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai, 9 Nov (picks r15): the seated room with small Maddie (D10c b) under the vow and 'they sit', hands already held (D12k), the last shot with the people gone (D16n ca)
+R15 = E.TAG in ('r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai, 9 Nov (chairs picks r14): the new overhead (D05c c), Sandra's two-shot speaking (D08c b), the hands held together (D12h)
+R14 = E.TAG in ('r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai, 9 Nov (timeline r13): Hundred+question one take, Sandra's jeopardy, the vow without 'take a seat', no Thank you, hands quick to white
+R13 = E.TAG in ('r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai, 9 Nov: dialogue 1I (the hundred choose: 'take a seat'), the lady asks 'And afterwards?', 'my love'
+R11 = E.TAG in ('r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai at1242 (6 Nov): no Sandra / 'me too', only 'Are you ready for this?'; the music must not change
+R9 = E.TAG in ('r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # r10: Kai at978, the key line re-worded; Kai, 6 Nov, timeline r8 notes: Maddie empathetic (at331/at557), no 'Will it hurt?' (at849), no waffle (at1147/at1275)
+R8 = E.TAG in ('r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai, 6 Nov, timeline r7 notes: cut to the chase (at1400), no tea (at1750), cello from 'they sit' (at1849), hands straight to white (at2360)
+R7 = E.TAG in ('r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai, 6 Nov: dialogue page draft 1F (the wafer: what it costs) + 2D (the goodbye)
+R5 = E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # r6: the same edit, with the re-made suits (D00r7) and tea (D06r7) shots
 I16N, PULSE16N = 1.9, 3.0  # D16n-t1: her lamp glows at ~3.0 s, then she turns to face the chairs (4-6 s); 'Boss...' on the glow
 INTERIOR_EXCLUDE = {'D14'}  # the dusk exterior keeps its own light
 BEACON = {'D00': ([536, 111], 34), 'D03': ([642, 455], 16), 'D03c': ([432, 92], 24), 'D08': ([627, 390], 20), 'D11': ([354, 290], 24),
@@ -1025,8 +1025,17 @@ E.SCENE_FNS['D'] = (scene_d, audio_from_cut)
 def main():
     key = 'D'
     sc = E.Scene(key)
+    # r23 (Kai, 11 Nov): voices.json now plays the lady's 'And afterwards?' in her Yorkshire voice (Vindemiatrix, take
+    # r23ya on D11c-t2a's mouth). r18-r22 were cut with the Sulafat dub; they keep it, so rebuilding them gives them back.
+    if E.TAG in ('r18', 'r19', 'r20', 'r21', 'r22'):
+        sc.vox['lines']['d3-10-lady']['file'] = 'voices/d3-10-lady-r18-D11c-t2a-dub.wav'
     E.C3.ROOT = sc.media / (f'cut-{E.TAG}' if E.TAG else 'cut')
     c = scene_d(sc)
+    if E.TAG == 'r23':
+        c.flags.append('D round 23 (Kai, 11 Nov): the old lady\'s "And afterwards?" re-voiced in her Yorkshire voice '
+                       '(Vindemiatrix, as everywhere else since 3 Nov; it was still the posh Sulafat take). Take r23ya, '
+                       'picked by measurement (heard right, 1.21 s of speech against the old 1.19 s), fitted onto '
+                       'D11c-t2a\'s mouth exactly as r18 was. Everything else as r22.')
     mx = audio_from_cut(c)
     tracks, mix = C3.write(c, mx)
     print('colour across the joins:')

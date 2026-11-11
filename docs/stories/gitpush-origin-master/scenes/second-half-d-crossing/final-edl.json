@@ -93,7 +93,7 @@
      "who": "lady",
      "name": "The old lady",
      "t": 32.125,
-     "dur": 1.2,
+     "dur": 1.21,
      "text": "And afterwards?",
      "by": "kai"
     },
@@ -194,7 +194,7 @@
  ],
  "video": [
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/00-D00-i0.00-d3.458.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/00-D00-i0.00-d3.458.mp4",
    "in": 0.0,
    "dur": 3.4583333333333335,
    "start": 0.0,
@@ -203,7 +203,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/01-D01h-i0.60-d2.042.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/01-D01h-i0.60-d2.042.mp4",
    "in": 0.0,
    "dur": 2.0416666666666665,
    "start": 3.4583333333333335,
@@ -212,7 +212,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/02-D02-i0.00-d7.042.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/02-D02-i0.00-d7.042.mp4",
    "in": 0.0,
    "dur": 7.041666666666667,
    "start": 5.5,
@@ -221,7 +221,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/03-D03c-i0.00-d7.375.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/03-D03c-i0.00-d7.375.mp4",
    "in": 0.0,
    "dur": 7.375,
    "start": 12.541666666666666,
@@ -230,7 +230,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/04-D05c-i0.00-d2.500.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/04-D05c-i0.00-d2.500.mp4",
    "in": 0.0,
    "dur": 2.5,
    "start": 19.916666666666668,
@@ -239,7 +239,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/05-D05va-i0.00-d2.667.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/05-D05va-i0.00-d2.667.mp4",
    "in": 0.0,
    "dur": 2.6666666666666665,
    "start": 22.416666666666668,
@@ -248,7 +248,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/06-D05vc-i0.00-d6.458.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/06-D05vc-i0.00-d6.458.mp4",
    "in": 0.0,
    "dur": 6.458333333333333,
    "start": 25.083333333333332,
@@ -257,7 +257,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/07-D11c-i0.50-d5.458.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/07-D11c-i0.50-d5.458.mp4",
    "in": 0.0,
    "dur": 5.458333333333333,
    "start": 31.541666666666668,
@@ -266,7 +266,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/08-D11b-i0.00-d5.958.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/08-D11b-i0.00-d5.958.mp4",
    "in": 0.0,
    "dur": 5.958333333333333,
    "start": 37.0,
@@ -275,7 +275,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/09-D08c-i0.00-d5.625.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/09-D08c-i0.00-d5.625.mp4",
    "in": 0.0,
    "dur": 5.625,
    "start": 42.958333333333336,
@@ -284,7 +284,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/10-D10c-i0.00-d11.458.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/10-D10c-i0.00-d11.458.mp4",
    "in": 0.0,
    "dur": 11.458333333333334,
    "start": 48.583333333333336,
@@ -293,7 +293,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/11-D10c-i11.46-d3.500.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/11-D10c-i11.46-d3.500.mp4",
    "in": 0.0,
    "dur": 3.5,
    "start": 60.041666666666664,
@@ -302,7 +302,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/12-D12k-i0.00-d4.917.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/12-D12k-i0.00-d4.917.mp4",
    "in": 0.0,
    "dur": 4.916666666666667,
    "start": 63.541666666666664,
@@ -311,7 +311,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/13-D14p-i0.30-d4.000.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/13-D14p-i0.30-d4.000.mp4",
    "in": 0.0,
    "dur": 4.0,
    "start": 68.45833333333333,
@@ -320,7 +320,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/14-D14-i0.00-d7.500.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/14-D14-i0.00-d7.500.mp4",
    "in": 0.0,
    "dur": 7.5,
    "start": 72.45833333333333,
@@ -329,7 +329,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/15-D16n-i1.90-d6.375.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/video/15-D16n-i1.90-d6.375.mp4",
    "in": 0.0,
    "dur": 6.375,
    "start": 79.95833333333333,
@@ -342,89 +342,89 @@
   {
    "track": "A1",
    "name": "vox-derek",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/01-vox-derek.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/01-vox-derek.wav",
    "start": 0.0,
-   "peak_db": 0.6
+   "peak_db": 0.5
   },
   {
    "track": "A2",
    "name": "vox-lady",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/02-vox-lady.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/02-vox-lady.wav",
    "start": 0.0,
-   "peak_db": -1.9
+   "peak_db": -5.2
   },
   {
    "track": "A3",
    "name": "vox-maddie",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/03-vox-maddie.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/03-vox-maddie.wav",
    "start": 0.0,
-   "peak_db": 1.3
+   "peak_db": 1.2
   },
   {
    "track": "A4",
    "name": "vox-sandra",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/04-vox-sandra.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/04-vox-sandra.wav",
    "start": 0.0,
-   "peak_db": 1.3
+   "peak_db": 1.2
   },
   {
    "track": "A5",
    "name": "mus-d-cross",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/05-mus-d-cross.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/05-mus-d-cross.wav",
    "start": 0.0,
-   "peak_db": -6.1
+   "peak_db": -6.2
   },
   {
    "track": "A6",
    "name": "mus-d-room",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/06-mus-d-room.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/06-mus-d-room.wav",
    "start": 0.0,
-   "peak_db": -9.1
+   "peak_db": -9.2
   },
   {
    "track": "A7",
    "name": "sfx-beacon",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/07-sfx-beacon.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/07-sfx-beacon.wav",
    "start": 0.0,
-   "peak_db": -33.3
+   "peak_db": -33.4
   },
   {
    "track": "A8",
    "name": "sfx-crowd",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/08-sfx-crowd.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/08-sfx-crowd.wav",
    "start": 0.0,
-   "peak_db": -10.5
+   "peak_db": -10.6
   },
   {
    "track": "A9",
    "name": "sfx-machine",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/09-sfx-machine.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/09-sfx-machine.wav",
    "start": 0.0,
-   "peak_db": -21.2
+   "peak_db": -21.3
   },
   {
    "track": "A10",
    "name": "sfx-maddie-beeps",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/10-sfx-maddie-beeps.wav",
-   "start": 0.0,
-   "peak_db": -28.9
-  },
-  {
-   "track": "A11",
-   "name": "sfx-room",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/11-sfx-room.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/10-sfx-maddie-beeps.wav",
    "start": 0.0,
    "peak_db": -29.0
   },
   {
+   "track": "A11",
+   "name": "sfx-room",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/11-sfx-room.wav",
+   "start": 0.0,
+   "peak_db": -29.1
+  },
+  {
    "track": "A12",
    "name": "sfx-wind",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/12-sfx-wind.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/stems/12-sfx-wind.wav",
    "start": 0.0,
-   "peak_db": -18.3
+   "peak_db": -18.4
   }
  ],
- "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/mix.wav",
+ "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/mix.wav",
  "events": [
   {
    "stem": "vox-maddie",
@@ -478,8 +478,8 @@
   {
    "stem": "vox-lady",
    "t": 32.125,
-   "dur": 1.2,
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r18-D11c-t2a-dub.wav",
+   "dur": 1.21,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r23-yorks-D11c-t2a-dub.wav",
    "what": "d3 line 10 lady"
   },
   {
@@ -689,9 +689,9 @@
   },
   {
    "stem": "vox-lady",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r18-D11c-t2a-dub.wav",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r23-yorks-D11c-t2a-dub.wav",
    "i": 0.020000000000000004,
-   "d": 1.2000000000000002,
+   "d": 1.2100000000000002,
    "t": 32.125,
    "chain": [],
    "lufs": -17.0,
@@ -788,6 +788,7 @@
   "d9: the 4.3 s silence fits inside D16r3 (it ends at 8.23 s of the clip), so the chained D16xr3-t1 (the chair lights dimming) is not used; it is there if Kai wants the silence longer. Scene E's phone shows the last frame D shows (D16r3 at that time).",
   "D16n: runs 0.23 s past its clip; the last frame holds (no ping-pong) while its move keeps running.",
   "Colour: every interior source is white-balanced 60% of the way to the interiors' mean channel balance, brightness kept (gains R 0.97-1.13, B 0.92-1.04); D14, the dusk exterior, is left as shot. sh-25 (D10) and D11 were the bluest, D00/D01 the warmest.",
+  "D round 23 (Kai, 11 Nov): the old lady's \"And afterwards?\" re-voiced in her Yorkshire voice (Vindemiatrix, as everywhere else since 3 Nov; it was still the posh Sulafat take). Take r23ya, picked by measurement (heard right, 1.21 s of speech against the old 1.19 s), fitted onto D11c-t2a's mouth exactly as r18 was. Everything else as r22.",
   "Music (Kai bd9: carry it across): D-cross enters on the hands at 15.1 s into the take and plays without an edit to the hard cut to E, its held last chord stopping 1.4 s before the cut (40 s in the take, in the silence after \"Boss...\") and its release ringing out on the cut. The take's one breath (~24.5-26.5 s) falls at 69.4-71.4 s of the scene (the white is at 70.5-69.5 s); the dusk wide sits on 28-35 s of the take. The seam no longer goes dark on the chord (it did when the music stopped in d8). D-room plays from 0 s of its take, in after Sandra's line, and now carries on under the d6 speech (Kai at2622) to hand over to D-cross on the hands; both duck ~6 dB under speech. Kai to rule on taste.",
   "Sound I made up for scene D: the clean-room air (brown noise + a faint 120 Hz, ffmpeg), the chairs' power-up hum on the spiral (82/165/247 Hz + pink noise) dying exactly as the seam goes dark, the one unanswered question beep in the silence after \"Boss...\". No tea, rustle or suit sounds exist in the library: the changing room is the crowd-shuffle recording.",
   "Colour joins (mean RGB either side of every cut, after the match): steps over 30/255 only at D05v-aisle-t1 -> D05v-chair-t1 (31); D05v-chair-t1 -> D11c-t2a (66); D11b-t2b -> D08c-t2a (33); D14f-t1 -> D16n-t1 (97), each a change of place or light (the white fade, the dusk exterior, the overhead), not a drift.",
@@ -797,5 +798,5 @@
   "delivery-qc: 7 ok, 2 warn, 1 fail. Its FAIL is \"limited range, content full\" from single stray pixels: frames are clamped to 16-235 before encoding and 0.011% of pixels end up outside (worst frame 0.12%), the encoder-rounding-on-grain case in delivery.md (2026-10-19). Warns: -16 LUFS by design, blacks at 0 (same rounding), \"frozen\" stretches = the deliberate holds (D05's 2 s before its move; Maddie still in the silence after \"Boss...\").",
   "Nobody has listened to this cut: every level, duck and sound placement is measured, not heard."
  ],
- "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/preview.mp4"
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/preview.mp4"
 }

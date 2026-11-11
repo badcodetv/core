@@ -1409,11 +1409,11 @@
     "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/preview.mp4",
-    "round": "r22",
-    "what": "round 22 (Kai at1586): Derek's whisper just 'Are you ready for this?'; rest as r20.",
-    "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r22"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/preview.mp4",
+    "round": "r23",
+    "what": "round 23 (Kai 11 Nov, watching the story film): the old lady's 'And afterwards?' re-voiced in her Yorkshire voice (Vindemiatrix; it was still the old posh Sulafat), refitted to her mouth; rest as r22",
+    "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r23"
   },
   "round3_media": {
     "date": "2026-10-23",
@@ -1438,7 +1438,7 @@
       "was_named": "gpom-5-D-crossing-r1",
       "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     },
-    "current": "r18",
+    "current": "r19",
     "r2": {
       "sequence": "06 GPOM story D crossing r2",
       "guid": "1ed65d4a-e317-4465-8969-d47edb3a44ba",
@@ -1735,6 +1735,22 @@
         "why": ""
       },
       "master": "swapped into '00 RENDER story' at 444.708-531.042 (Motion Scale 150); E moved -1.083 s to 531.042-563.625; master 9:23.6"
+    },
+    "r19": {
+      "sequence": "06 GPOM story D crossing r19",
+      "guid": "f8a7492b-86fb-4ee6-a3fc-b8a4285e7a02",
+      "bin": "06 GPOM story D crossing r19",
+      "built": "2026-11-11",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/edl.json",
+      "what": "round 23: the old lady's line in Yorkshire; rest as r18",
+      "how": "clone of r18 with A2's 04-vox-lady.wav replaced by premiere-plan.py --tag r19's line",
+      "master": "swapped into '00 RENDER story' over r18 at 518.125-604.458 (Motion Scale 150)",
+      "check": {
+        "at": "2026-11-11T11:24",
+        "state": "in sync",
+        "why": ""
+      }
     }
   },
   "video": {

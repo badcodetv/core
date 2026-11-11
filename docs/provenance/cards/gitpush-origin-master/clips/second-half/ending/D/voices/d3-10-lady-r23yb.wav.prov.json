@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r23yb.wav",
+ "made": "2026-11-11T11:12:26+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "And afterwards?",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to. She has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet and grave, steady, asking for all of them; two words, the question falls rather than rises.\nStyle: dry, flat and practical; nobody's fool, never theatrical; a short plain question asked straight out, no drama.\nPace: brisk; And afterwards? is said as one quick phrase in under a second, no pause between the words.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the dinner lady everyone in the school, teachers included, does what she says.\n",
+  "profile_file": "design/2026-11-11-gpom-d-lady-yorks/profile-r23.txt"
+ },
+ "settings": {
+  "voice": "Vindemiatrix",
+  "temperature": 1,
+  "channels": 2
+ }
+}
