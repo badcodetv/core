@@ -21,6 +21,7 @@ running this. --write stores the result on the round record (premiere.<round>.ch
 overview board shows.
 """
 import json
+import subprocess
 import os
 import pathlib
 import sys
@@ -69,6 +70,16 @@ def _added(comp):
     return False
 
 
+def _trimmed(path, x):
+    # the edl's 'in' points into the original source but 'file' is the trimmed piece: then in-point 0 is right
+    try:
+        d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path],
+                                 capture_output=True, text=True).stdout)
+    except ValueError:
+        return False
+    return x['in'] + x['dur'] > d + 0.02
+
+
 def check(rec, scene_dir=None):
     edl_p = pathlib.Path(rec['edl'])
     if not edl_p.is_absolute() and scene_dir is not None:  # a cut file named relative to its scene folder
@@ -87,7 +98,8 @@ def check(rec, scene_dir=None):
     for i, (c, x) in enumerate(zip(v1, edl['video'])):
         if c['name'].replace('-noaudio', '') != os.path.basename(x['file']):
             diffs.append(f'shot {i + 1} is {c["name"]}, edl has {os.path.basename(x["file"])}')
-        elif max(abs(c['start'] - x['start']), abs(c['duration'] - x['dur']), abs(c['inPoint'] - x['in'])) > 0.05:
+        elif max(abs(c['start'] - x['start']), abs(c['duration'] - x['dur']),
+                 min(abs(c['inPoint'] - x['in']), abs(c['inPoint']) if c.get('mediaPath') and _trimmed(c['mediaPath'], x) else 99)) > 0.05:
             diffs.append(f'shot {i + 1} retimed')
     if abs(st['sequence']['end'] - edl['total']) > 0.05:
         diffs.append(f'length {st["sequence"]["end"]:.2f}s, edl {edl["total"]:.2f}s')

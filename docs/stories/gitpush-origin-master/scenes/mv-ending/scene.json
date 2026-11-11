@@ -132,7 +132,7 @@
       "what": "Timeline round 1 as noted ('No changes'): the ending alone, 0 = film 161.96; V1 17 locked clips with handles, A1 the main track from track time 168.96 to its end",
       "how": "scripts/gpom/mv-ending/cut1.py -> scripts/scene/premiere-plan.py edl-premiere.json premiere-r1.json --tag r1 --seq gpom-1b-mv-ending-r1",
       "check": {
-        "at": "2026-11-11T10:19",
+        "at": "2026-11-11T11:09",
         "state": "Premiere ahead",
         "why": "Kai's hand edit in Premiere (about 1 s longer); music video only, page not updated (length 69.58s, edl 68.54s)"
       },

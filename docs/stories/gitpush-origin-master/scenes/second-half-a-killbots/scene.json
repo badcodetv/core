@@ -370,7 +370,7 @@
         "A1 0-7.958 s: song 168.958-176.917 with r11's Graphic EQ (30 bands) and level 0.1778; his fade NOT carried (no audio transitions in UXP): add by hand"
       ],
       "check": {
-        "at": "2026-11-11T10:39",
+        "at": "2026-11-11T11:09",
         "state": "Premiere ahead",
         "why": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical (1 effects added)"
       },

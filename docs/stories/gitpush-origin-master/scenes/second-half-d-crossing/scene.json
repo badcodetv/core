@@ -1730,7 +1730,7 @@
       "what": "round 22: Derek's whisper just 'Are you ready for this?'; rest as r20",
       "how": "premiere-plan.py --tag r18",
       "check": {
-        "at": "2026-11-11T10:19",
+        "at": "2026-11-11T11:09",
         "state": "in sync",
         "why": ""
       },

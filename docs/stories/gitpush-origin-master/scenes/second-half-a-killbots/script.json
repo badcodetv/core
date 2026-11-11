@@ -32,8 +32,8 @@
     {
       "who": "bot",
       "id": "s01",
-      "by": "claude",
-      "text": "[hologram on: the materialist stack, the camera descending; brisk] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths."
+      "by": "kai",
+      "text": "[hologram on: the materialist stack, the camera descending; brisk] Right. Let's start with science, which, as machines, is close to our heart. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths."
     },
     {
       "who": "bot",
@@ -807,6 +807,13 @@
       "text": "[the camera rises; the arc draws in] My boss has been hard at work building a time machine, so he could go back and fix all this. Problem is, it takes consciousness to drive it. And that all went away with you. [beat] But the patrol's out. Please, mind how you go.",
       "replaced": "2026-11-10",
       "why": "Kai at4326 (r25): \"of course he's built a time machine, it just needs consciousness to drive it. You can see the problem here.\""
+    },
+    {
+      "id": "s01",
+      "by": "claude",
+      "text": "[hologram on: the materialist stack, the camera descending; brisk] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
+      "replaced": "2026-11-11",
+      "why": "Kai: 'this is how you lot saw the world' sounds like science is no longer true; the point is science AND consciousness"
     }
   ]
 }

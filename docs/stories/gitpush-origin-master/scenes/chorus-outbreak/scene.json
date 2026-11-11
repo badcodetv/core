@@ -49,7 +49,7 @@
       "what": "Kai's hand edit (V1+V2 interleaved, 9 shots: airliner on the kick, water, viaduct, fire, crane, depot, Primrose Hill, Drax, then the cup held 5.5 s into the war). Clone of the r3 edit with the guide song removed and the cup +1 frame.",
       "spliced_into": "01 GPOM start r2: r2 nest removed (no ripple); r3 nest (its 4.2917-15.3333, 265 frames) on V1/A9 at 95.75-106.792, so its first frame is the chorus kick. 95.458-95.75 (7 frames) is now black after the white flash. Backup: '01 GPOM start r2 (before r3 chorus, 10 Nov)'. Length unchanged, so 00 RENDER story needs no change.",
       "check": {
-        "at": "2026-11-11T10:19",
+        "at": "2026-11-11T11:09",
         "state": "Premiere only",
         "why": "edl-r3.json is not a timeline edl: Kai's cut in Premiere is the truth"
       }

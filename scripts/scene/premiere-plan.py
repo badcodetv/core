@@ -79,6 +79,16 @@ def main(argv):
     order += [a for a in stems if a not in order]
     track = {a['name']: k for k, a in enumerate(order)}
 
+    def file_in(c):
+        # An edl's 'in' can point into the ORIGINAL source while 'file' is already a trimmed copy of just the piece
+        # used (GPOM bridge, 11 Nov: three shots played past their file's end in Premiere, so 3 s of black). If in+dur
+        # runs past the file, the file IS the piece: start it at 0 (or as late as the file allows).
+        d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0',
+                                  c['file']], capture_output=True, text=True).stdout or 0)
+        if d and c['in'] + c['dur'] > d + 0.02:
+            return 0.0 if d <= c['dur'] + 0.1 else round(d - c['dur'], 4)
+        return c['in']
+
     video = []
     for c in edl['video']:
         f = c['file']
@@ -87,7 +97,7 @@ def main(argv):
             if not pathlib.Path(quiet).exists():
                 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', f, '-an', '-c:v', 'copy', quiet], check=True)
             f = quiet
-        video.append([f, c['start'], c['in'], c['dur']])
+        video.append([f, c['start'], file_in(c), c['dur']])
 
     audio, n = [], 0
     for a in order:

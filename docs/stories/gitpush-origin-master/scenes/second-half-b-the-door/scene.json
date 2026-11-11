@@ -76,7 +76,7 @@
     "why": ""
    }
   },
-  "current": "bridge-r1",
+  "current": "bridge-r2",
   "r3": {
    "sequence": "gpom-3-B-door-r3",
    "guid": "52e588be-3e75-4950-8a52-69bef641fbe2",
@@ -133,11 +133,28 @@
    "what": "the bridge, round 8 (1:28), locked by Kai 4 Nov: \"We've nailed it. That's the one.\"",
    "how": "edl-premiere.json (the edl plus each stem's file) -> scripts/scene/premiere-plan.py --tag r1 --seq '04 GPOM story B bridge r1'; lines under B-bridge-r8/premiere/r1/lines/",
    "check": {
-    "at": "2026-11-11T10:19",
+    "at": "2026-11-11T10:39",
     "state": "Premiere ahead",
     "why": "Kai's hand-added effects in Premiere; the cut itself matches the page (27 effects added)"
    },
-   "premiere_ahead": "Kai's hand-added effects in Premiere; the cut itself matches the page"
+   "premiere_ahead": "Kai's hand-added effects in Premiere; the cut itself matches the page",
+   "stale": "black stretches (shots past their file ends) and two one-frame gaps; replaced by bridge-r2 on 11 Nov"
+  },
+  "bridge-r2": {
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/edl.json",
+   "sequence": "04 GPOM story B bridge r2",
+   "guid": "f2b95b70-06a7-42d2-a936-18cc199754d7",
+   "bin": "04 GPOM story B bridge r1",
+   "built": "2026-11-11",
+   "what": "r1 with its black fixed (Kai 11 Nov: 'it just goes to black in Premiere'): three shots pointed past the end of their pre-trimmed files (s05 tannoy ~1.5 s black at 30.3, s08 room 3 s black at 49.6, s16 lady ~0.5 s before the card) and two one-frame gaps (44.17, 70.62). Now plays exactly the page's frames",
+   "how": "clone of r1; s05/s08/s16 in-points to 0 (the files are the trimmed pieces); s07-film +1 frame at its tail, s13-crowd +1 frame; Kai's -15 dB on every audio clip kept",
+   "premiere_ahead": "Kai's even -15 dB on every audio clip (no change to the balance); picture now matches the page frame for frame",
+   "check": {
+    "at": "2026-11-11T11:09",
+    "state": "in sync",
+    "why": ""
+   }
   }
  },
  "cut_history": [
