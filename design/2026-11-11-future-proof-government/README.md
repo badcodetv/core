@@ -269,15 +269,15 @@ Each milestone ends in a PR for Kai or Jack to merge, plus a short status page.
   (schedules reach Bob only on merge), and resume it after.
 
 **M3 Real debate**
-- [ ] T8 First, prove a Codex worker runs in Bob (one dry chat). Then the `opposition` worker
+- [~] T8 (built; Codex blocked: not logged in on the Bob box, so the opposition runs on Sonnet until Kai logs it in) First, prove a Codex worker runs in Bob (one dry chat). Then the `opposition` worker
   (Codex) and `statistician` worker; schedules `gov-2b-opposition`
   07:30 and `gov-2c-statistician` 08:00 (names keep catch-up order after an outage).
-- [ ] T9 The cabinet's step 4 learns to answer `Opposition:` and `Statistician:` comments (concede
+- [x] T9 The cabinet's step 4 learns to answer `Opposition:` and `Statistician:` comments (concede
   or rebut, never obey), to carry unanswered points over from a merged PR, and to write the debate
   log.
-- [ ] T10 The statistician resolves world checks that come due, by their frozen rule, on the
+- [x] T10 The statistician resolves world checks that come due, by their frozen rule, on the
   rolling PR (its permissions: `policies/**` world-check fields only).
-- [ ] T11 A dry run on one day's news, end to end, before the schedules go live.
+- [x] T11 A dry run on one day's news, end to end, before the schedules go live.
 
 **M4 Public face**
 - [ ] T12 Policy pages show the best case against, the history and the result.
@@ -323,6 +323,13 @@ Each milestone ends in a PR for Kai or Jack to merge, plus a short status page.
 | D9 | Migrated world checks are provisional (rewrite once, freeze on the statistician's pass) | The independent check found ~15 weak or safe-bet checks; freezing them on merge would lock in a flattering record |
 | D10 | Policies the merged pages never designed stay "Not ready" (7 of 54) instead of having tests invented | The contract says a missing test prints "Not ready"; inventing kill numbers to look complete is the opposite of the tenet |
 | D11 | Rights are `kept` from day one | shared.md: "Kept from day one" |
+| D12 | Opposition on Claude Sonnet (cabinet is Opus) until Codex is logged in | Codex replied "not logged in for this project"; logging in is an account action for Kai. A different model is weaker diversity than a different family, but better than one model on every side |
+| D13 | The dry run's results are kept as the first real debate (five policies, `dry-run/`) | It is the proof of the loop, and its fixes are genuine improvements |
+
+**Watch: the cabinet concedes too easily.** In the dry run it conceded 29 of 32 points. Some of
+that is the migration's weak checks, but an agreeable cabinet is the same-model sycophancy the
+research warns about. The Cabinet Secretary's weekly review should count concessions per minister,
+and a rebuttal rate near zero is a signal to sharpen the briefs.
 
 ## 8. For Kai (at the end of M1)
 

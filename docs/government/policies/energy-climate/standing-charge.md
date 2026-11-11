@@ -10,19 +10,21 @@ band: large
 stop: Stops on the Windfall Act's date unless Parliament votes to keep it, on the published review. Passes, and it goes national.
 test.where: Prepayment customers first
 test.against: Direct-debit customers, who get it second
-test.measure: The electricity standing charge on prepayment bills, pence a day
+test.measure: The electricity standing charge on prepayment bills, pence a day, and the typical yearly electricity bill at Ofgem's typical use, each against direct-debit customers' over the same months, region by region
 test.by: Six months after the levy is raised
-fails_if: Prepayment bills don't show the cut within six months (provisional).
-leaves_out: Homes on heating oil; the four gas customers in ten the government doesn't expect to save; both counted separately and first
+fails_if: Six months after the levy is raised, prepayment customers' electricity standing charge hasn't fallen by at least 10p a day more than direct-debit customers' over the same months, or their typical yearly electricity bill, at Ofgem's typical use, hasn't fallen by at least £30 more (provisional).
+leaves_out: Homes on heating oil, whose heating bill this doesn't touch; households whose energy is paid inside their rent; both counted separately and first
 signs: The Energy Secretary
-check.claim: Ofgem's price cap for 1 April to 30 June 2027 will set the electricity standing charge above 57.57p a day, at least 5% over the 54.83p of October to December 2026.
-check.prior: 0.55
-check.rule: The typical direct-debit electricity standing charge, GB average including VAT, in Ofgem's announcement of the April to June 2027 cap; held if above 57.57p a day.
+check.claim: Ofgem's price cap for 1 April to 30 June 2027 will set the electricity standing charge, before VAT, above the 54.83p a day of October to December 2026.
+check.prior: 0.6
+check.rule: The direct-debit electricity standing charge, GB average across regions, excluding VAT, in Ofgem's announcement of the April to June 2027 cap; held if above 54.83p a day, failed if 54.83p or below. If Ofgem gives only a figure including VAT, divide it by 1.05 when VAT on household electricity is 5% that quarter, and take it as it stands when it is 0%.
 check.source: Ofgem's price cap announcement for 1 April to 30 June 2027, and its unit rates and standing charges page
-check.if_revised: The figure Ofgem first publishes counts; if Ofgem does not set a cap for that quarter, the check is void.
+check.if_revised: The figure Ofgem first publishes counts; later corrections don't. If Ofgem does not set a cap for that quarter, or has not published it 30 days after the check date, the check is void.
 check.check_on: 2027-03-06
 check.provisional: yes
 check.result: pending
+against: The levy may cut generators' new building, a cost this policy never measures.
+answer: That is the Windfall Act's test, which says in advance it changes our mind if the levy cuts new generation by more than it takes off bills.
 ---
 Your cap rose 4% this autumn, to £1,723, and about £300 of that is standing charge, paid before the
 kettle boils.
