@@ -12,6 +12,10 @@ the page was built from:
   page ahead     the edl changed after the sequence was built (notes answered, not yet in Premiere)
   edited in Pr   the sequence differs from the edl: Kai worked on it by hand, so never rebuild over it
   no state       no dump yet: call premiere_get_sequence({name, params:false}) first
+  Premiere ahead differs from the edl, but on purpose: the round record carries `premiere_ahead`
+                 (why, in words: Kai's hand edits kept in Premiere, an effect only Premiere can do)
+  Premiere only  the scene's cut file is not a timeline edl (a hand cut with no timeline page),
+                 so there is nothing to compare: Premiere is the truth
 The state dump is only as fresh as the last get_sequence call, so read every sequence just before
 running this. --write stores the result on the round record (premiere.<round>.check), which the
 overview board shows.
@@ -65,12 +69,17 @@ def _added(comp):
     return False
 
 
-def check(rec):
+def check(rec, scene_dir=None):
     edl_p = pathlib.Path(rec['edl'])
+    if not edl_p.is_absolute() and scene_dir is not None:  # a cut file named relative to its scene folder
+        edl_p = scene_dir / edl_p
     st_p = pathlib.Path(rec['project']).parent / '.bridge' / f'state-{rec["sequence"]}.json'
     if not st_p.exists():
         return 'no state', ''
-    st, edl = localize(json.loads(st_p.read_text())), localize(json.loads(edl_p.read_text()))
+    edl = localize(json.loads(edl_p.read_text()))
+    if 'video' not in edl:
+        return 'Premiere only', f'{edl_p.name} is not a timeline edl: Kai\'s cut in Premiere is the truth'
+    st = localize(json.loads(st_p.read_text()))
     v1 = st['videoTracks'][0]['items']
     diffs = []
     if len(v1) != len(edl['video']):
@@ -87,6 +96,8 @@ def check(rec):
     if fx:
         diffs.append(f'{fx} effects added')
     if diffs:
+        if rec.get('premiere_ahead'):
+            return 'Premiere ahead', rec['premiere_ahead'] + ' (' + '; '.join(diffs[:4]) + ')'
         return 'edited in Pr', '; '.join(diffs[:4])
     built = rec.get('built_at') or rec.get('built', '')
     edl_t = datetime.fromtimestamp(edl_p.stat().st_mtime).isoformat(timespec='minutes')
@@ -115,7 +126,7 @@ def main(argv):
             continue
         rec = localize(dict(pr[cur]))  # translated copy only: cfg is written back untouched
         rec.setdefault('project', next((r['project'] for r in pr.values() if isinstance(r, dict) and r.get('project')), ''))
-        state, why = check(rec)
+        state, why = check(rec, path.parent)
         print(f'{part["id"]:<12} {rec["sequence"]:<20} {state:<13} {why}')
         if write:
             pr[cur]['check'] = {'at': datetime.now().isoformat(timespec='minutes'), 'state': state, 'why': why}

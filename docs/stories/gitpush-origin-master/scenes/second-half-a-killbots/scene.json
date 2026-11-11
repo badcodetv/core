@@ -370,10 +370,11 @@
         "A1 0-7.958 s: song 168.958-176.917 with r11's Graphic EQ (30 bands) and level 0.1778; his fade NOT carried (no audio transitions in UXP): add by hand"
       ],
       "check": {
-        "at": "2026-11-10T20:08",
-        "state": "edited in Pr",
-        "why": "1 effects added"
-      }
+        "at": "2026-11-11T10:19",
+        "state": "Premiere ahead",
+        "why": "the round-11 tinny radio EQ on Kai's song tail, added in Premiere only; the picture matches the page (1 effects added)"
+      },
+      "premiere_ahead": "the round-11 tinny radio EQ on Kai's song tail, added in Premiere only; the picture matches the page"
     }
   },
   "cut_history": [

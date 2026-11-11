@@ -156,7 +156,7 @@ th { font: 600 11px var(--mono); letter-spacing: .06em; text-transform: uppercas
 """
 
 
-SYNC = {'in sync': 'ok', 'page ahead': 'wip', 'edited in Pr': 'gap'}
+SYNC = {'in sync': 'ok', 'page ahead': 'wip', 'edited in Pr': 'gap', 'Premiere ahead': 'ok', 'Premiere only': 'ok'}
 
 
 def premiere_map(secs, t):
