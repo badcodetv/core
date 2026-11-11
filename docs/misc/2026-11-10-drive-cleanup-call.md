@@ -110,3 +110,12 @@ reading each agreed sequence's media out of the saved `.prproj` (nothing missing
   Every other sequence in those projects is offline from now on, on both machines; the agreed ones play.
 - **Not touched:** Camping Story (its own cut not chosen yet; beat 9 borrows 9 of its clips), Karen Music,
   Karen Story, GPOM.
+
+## Camping Story agreed cut (Jack, 2026-11-11)
+
+Agreed cut: `0 synced` in `Camping Video NEW!/camping jack/camping jack.prproj` (17 Sep, graded, moves, levels),
+not the older `camping assembly` Drive had. 89 files / 579 MB listed (snapshot and saved project agree, none
+missing); 63 uploaded, 0 left. Fix: Drive's Camping Story mirrors Jack's `Camping Comic` folder, not
+`Camping Video NEW!`, so Jack's home was re-recorded one level up and the wrong home removed from `folders.json`
+(it would have mis-pointed beat 9's borrowed clips on Kai's machine). The 9 clips yesterday's push put at the
+Drive top level were exact copies of ones in `Camping Video NEW!/new clips/`: binned. Nothing deleted on the PC.
