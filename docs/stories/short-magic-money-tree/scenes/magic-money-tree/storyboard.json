@@ -1,0 +1,5 @@
+{"acts":[{"id":"hospitals","title":"A. The hospitals tree","beats":"hospitals"},{"id":"banks","title":"B. The banks tree","beats":"banks"},{"id":"button","title":"C. Different tree","beats":"button"}],
+ "frames":[{"n":1,"act":"hospitals","title":"Shakes the HOSPITALS tree: nothing","look":"gouache","stills":["HO1-b"]},
+  {"n":2,"act":"hospitals","title":"\"We can't afford it.\"","look":"gouache","line":"We can't afford it.","stills":["CU1-a"]},
+  {"n":3,"act":"banks","title":"Shakes the BANKS tree: money pours","look":"gouache","stills":["BK2-a"]},
+  {"n":4,"act":"button","title":"\"Different tree.\"","look":"gouache","line":"Different tree.","stills":["BT3-a"]}]}

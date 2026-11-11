@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/magic-money-tree/moodboard/BT2-a.jpg",
+ "made": "2026-11-11T16:53:47.490Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 hand-painted gouache editorial illustration with visible brush strokes and ink outlines, textured paper showing through, pale grey-blue wash sky. Medium close-up: the minister stands ankle-deep in a heap of pale purple and cream banknotes under a lush round mustard-and-green tree, a few notes still drifting down, and turns his head to look straight out at the viewer, deadpan, eyebrows flat, mouth closed, utterly unbothered. Behind him, slightly out of focus, a skinny bare tree with a blank pale plaque. Limited palette of mustard, slate blue and dull green, flat washes, exaggerated caricature proportions, empty sky at the top, no readable text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "MMT Minister"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "7f4fd59c-0ea1-4dc0-b632-77de5d69b20c"
+}

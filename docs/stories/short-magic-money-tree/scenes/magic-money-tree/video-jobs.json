@@ -1,0 +1,41 @@
+{
+ "skip": [],
+ "extra": [
+  {
+   "key": "01",
+   "n": 1,
+   "still": "HO1-b",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11: 'you pick everything for this one'; stills HO1-b (his pick), CU1-a, BK2-a, BT3-a (cast: MMT Minister)",
+   "motion": "The camera does not move. A hand-painted cartoon. The man shakes the bare tree hard with both hands, again and again, the thin branches rattling, and nothing at all falls from it. He stops, out of breath. The camera does not move. Thanks."
+  },
+  {
+   "key": "02",
+   "n": 2,
+   "still": "CU1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11: 'you pick everything for this one'; stills HO1-b (his pick), CU1-a, BK2-a, BT3-a (cast: MMT Minister)",
+   "motion": "The camera does not move. A hand-painted cartoon. The man gives a small helpless shrug with both palms up and says slowly: We can't afford it. Then he keeps still, lips closed. The camera does not move. Thanks."
+  },
+  {
+   "key": "03",
+   "n": 3,
+   "still": "BK2-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11: 'you pick everything for this one'; stills HO1-b (his pick), CU1-a, BK2-a, BT3-a (cast: MMT Minister)",
+   "motion": "The camera does not move. A hand-painted cartoon. The man shakes the leafy tree and banknotes pour down from its branches like falling autumn leaves, piling up around his feet. The camera does not move. Thanks."
+  },
+  {
+   "key": "04",
+   "n": 4,
+   "still": "BT3-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11: 'you pick everything for this one'; stills HO1-b (his pick), CU1-a, BK2-a, BT3-a (cast: MMT Minister)",
+   "motion": "The camera does not move. A hand-painted cartoon. A few banknotes drift down past the man. He looks straight at the viewer, deadpan, and says flatly: Different tree. Then he keeps still, lips closed. The camera does not move. Thanks."
+  }
+ ]
+}
