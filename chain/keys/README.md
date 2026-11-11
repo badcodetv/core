@@ -21,6 +21,8 @@ this directory as public.
 - `emperors_new_coin-keypair.json` — the ENC development address, for localnet and
   devnet. Also public, and it must not become the mainnet address: a mainnet
   program keypair is generated at deploy time and backed up out of band.
+- `deliberation-keypair.json` — the append-only record program, localnet only.
+  Public, and for the same reason never the address of a real deploy.
 
 ## What must never go in here
 

@@ -1,0 +1,23 @@
+[package]
+name = "deliberation"
+version = "0.1.0"
+description = "An append-only public record of proposals, arguments, dated predictions, their resolutions and advisory labels."
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "deliberation"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+# Declared so the compiler stops warning that Anchor's macros reference a cfg
+# this crate never defines. Not used directly.
+anchor-debug = []
+
+[dependencies]
+anchor-lang = "1.1.2"
