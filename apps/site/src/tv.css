@@ -173,6 +173,8 @@ button.pill{cursor:pointer;background:var(--cream);color:#111;border:0;font-weig
 .strands button[aria-current="true"]{outline:3px solid #fff;outline-offset:-3px}
 .pad{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
 .pad button{font:var(--mono);font-family:var(--mono);font-size:1.05rem}
+/* a number with no programme on this channel is greyed out (Kai, 2026-11-11) */
+.remote button:disabled{opacity:.28;cursor:default;box-shadow:none;transform:none}
 .nav{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
 .nav .num{font-family:var(--mono);font-size:1.05rem;font-weight:400}
 .hint{margin:0;font:600 .72rem/1.3 var(--ui);color:#8d867a;text-align:center}
