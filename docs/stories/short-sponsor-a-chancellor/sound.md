@@ -11,7 +11,7 @@
 | Narrator (the charity appeal) | **Achernar**, a soft Belfast woman in her thirties, breathy, gently pleading | `scenes/sponsor-a-chancellor/voices/profiles/nar-c-achernar.md` | Jack, 2026-11-11, voice page round 1 (option c, no note) |
 | Nan ("Poor bastard...") | **Vindemiatrix**, a Geordie nan in her late seventies, soft, under her breath | `scenes/sponsor-a-chancellor/voices/profiles/nan-b-vindemiatrix.md` | Jack, 2026-11-11, voice page round 1 (option b, no note) |
 
-Render with `scripts/aistudio-tts.py <lines> <out.wav> --profile <profile> --voice <Name>`. The narrator take must be re-rendered once the chancellor's new name is picked (the round 1 take says "Crispin").
+Render with `scripts/aistudio-tts.py <lines> <out.wav> --profile <profile> --voice <Name>`. The name Crispin stays (Jack, 2026-11-11), so the round 1 take `audio/casting/nar-c-achernar.wav` is the narration master.
 
 ## Music
 
