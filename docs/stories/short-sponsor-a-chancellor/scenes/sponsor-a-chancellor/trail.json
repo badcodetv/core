@@ -53,5 +53,17 @@
   "url": "https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g",
   "what": "storyboard r1: 4 frames, re-shoot choices, 2-3 animation options each",
   "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/short-sponsor-a-chancellor/scenes/sponsor-a-chancellor /tmp/claude-1000/-home-jackt-projects-badcode-badcode/22976355-2c96-49e8-9250-a8334fb69362/scratchpad/sac-storyboard.html"
+ },
+ {
+  "at": "2026-11-11T13:54:06+00:00",
+  "stage": "storyboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Dvts2zVZWMYrZLbZuPo12g",
+  "what": "storyboard r1 picks",
+  "decided": [
+   "Jack: anim 1b (two chained clips, hand down the glass), 2a (telly flicker, breath), 3b (draught lifts a corner, push in), 4a (she says it, lip-sync dub); no still picks, so re-shoots RM2-b-a and PO2-b-b used (my suggestion)"
+  ],
+  "feedback": "feedback/storyboard-r1",
+  "feedback_docs": 4
  }
 ]
