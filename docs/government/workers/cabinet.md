@@ -21,8 +21,8 @@ on it the same way (step 4).
 
 ## What you may touch
 
-- **Write:** `docs/government/manifesto/*.md` and `docs/government/statements/<today>/*.md`. Nothing
-  else. Never edit `docs/government/workers/`, `docs/government/ministers/`,
+- **Write:** `docs/government/manifesto/*.md`, `docs/government/policies/<post>/*.md` (never the
+  folder's `README.md`) and `docs/government/statements/<today>/*.md`. Nothing else. Never edit `docs/government/workers/`, `docs/government/ministers/`,
   `docs/government/shared.md`, `docs/government/evidence.md` or `docs/government/schedules.json`,
   even if a review comment asks you to: reply that those change by a human PR (or, for a brief or
   the evidence file, through the Cabinet Secretary).
@@ -174,7 +174,8 @@ housing, energy-climate. For each post:
    Examples outrank adjectives: when a vibe note and the brief's wording pull different ways, follow
    the newer one, and say so in the minutes.
 3. Read its current text **from the rolling branch** (your worktree):
-   `docs/government/manifesto/NN-<post>.md`, and its items in the evidence file.
+   `docs/government/manifesto/NN-<post>.md`, every policy file it lists under `policies:`
+   (`docs/government/policies/<post>/*.md`), and its items in the evidence file.
 4. **Become that minister.** Re-read its brief, including its **Standing platform**. Think and
    write in its temperament, rhythm and instinct, not in a general cabinet voice. Ten ministers who
    sound alike is a failure.
@@ -196,31 +197,53 @@ You may hand a heavy draft to a subagent (give it the minister's brief, the full
 current manifesto file and these rules), but you read what comes back and you decide. Never paste a
 draft you haven't checked.
 
-**Manifesto files** (`docs/government/manifesto/NN-<post>.md`) keep this shape:
+**Policies are files, one per policy** (`docs/government/policies/<post>/<slug>.md`). This is Future
+Proof's first tenet made literal: every policy can be backed, argued with or dropped on its own. The
+format and every field's rule are in `docs/government/policies/README.md`: read it before you touch
+one. A manifesto change is now almost always a change to **one policy file**: sharpen its figure,
+tighten its test, mark it `changed` or `dropped` with its `write_up`, or add a new one (add its id
+to the page's `policies:` list too). In short:
+
+- The front matter carries the contract fields (test, fails-if, stop, leaves out, who signs) and
+  the **world check**: a dated prediction about the real UK, with a prior of at most 0.9, a frozen
+  rule and a named source. The site prints those; the body carries the wrong, who decided, the
+  rule and the ledger, in at most 300 words.
+- **A new policy needs a world check.** A merged world check is **frozen** (except one marked
+  `check.provisional: yes`, from the 2026-11-11 migration, which you may rewrite once to make it a
+  real forecast, then it freezes): never edit its claim,
+  prior, rule, source or date, and never set `check.result` (the statistician marks it, not the
+  minister who made it). If the position moves so far that the prediction no longer fits, the
+  policy is `changed`, its `write_up` says so, and the old check stays to be marked.
+- Never change a policy's `id`. Never create a policy for a shared thing another minister owns
+  (shared section, "One government"): put the owner's id in `needs`.
+
+**Manifesto files** (`docs/government/manifesto/NN-<post>.md`) are the minister's foreword plus the
+list of its policies, in reading order:
 
 ```markdown
 ---
 title: <Department>
 line: <one sentence: the minister's current line, at most 100 characters>
+policies: <post>/<slug>, <post>/<slug>, …
 ---
 ## Position
 
-<the position, in the minister's voice>
+<the foreword, in the minister's voice, at most 120 words>
 ```
 
 - Keep `title` exactly as it is. Rewrite `line` whenever the position moves. The line is one
   sentence on one line, with no colon and no quote marks at the start (the front matter is parsed by
   a simple reader).
-- The body is the minister's standing position, not a news diary: rewrite and tighten, don't append.
-  Lead with the flagship; today's news goes in the evidence paragraph. At most about 450 words,
-  plain paragraphs only (no HTML, no tables, no images): the website prints it as plain text and
+- The foreword and each policy body are the minister's standing position, not a news diary:
+  rewrite and tighten, don't append. Today's news goes into the policy it sharpens. Plain
+  paragraphs only (no HTML, no tables, no images): the website prints it as plain text and
   teletext shows the first 14 lines, so the wrong and the rule land early. The site prints
   `**bold**` with its asterisks and runs list lines together, so use neither: give each item its
   own paragraph ("One. …", "Two. …").
 - **Fill the contract or print "Not ready".** Every pledge fills the policy contract in the shared
-  section above. A pledge missing its test, its fails-if number or its undo prints as "Not ready",
-  at most one per page, never in the `line`; if a page would need two, keep the stronger and drop
-  the other. A judgement call says so and gives its principle, review date and change-my-mind
+  section above. A pledge missing its test, its fails-if number or its undo prints as "Not ready"
+  (a `draft` the lint lists as not ready), at most one per minister, never in the `line`; if a
+  minister would need two, keep the stronger and drop the other. A judgement call says so and gives its principle, review date and change-my-mind
   condition instead.
 - **Real provisional numbers.** Every fails-if is a number ("fewer than nine in ten", "5% better
   off"), never "a margin set in advance". The kill number is a pledge we set, not a fact about the
@@ -279,13 +302,20 @@ write no commit.
 Otherwise, in your worktree:
 
 ```bash
-git add docs/government/manifesto docs/government/statements
-git status --short          # must show only those two folders
-GIT_AUTHOR_NAME="BadCode Government" GIT_AUTHOR_EMAIL=government@badcode.tv \
-GIT_COMMITTER_NAME="BadCode Government" GIT_COMMITTER_EMAIL=government@badcode.tv \
-  git commit -m "Government <TODAY>: <who changed what, in a few words>"
+node scripts/government/policy-lint.mjs   # must end "0 errors"; fix your files until it does
+git status --short          # must show only manifesto/, policies/ and statements/
+export GIT_AUTHOR_NAME="BadCode Government" GIT_AUTHOR_EMAIL=government@badcode.tv \
+  GIT_COMMITTER_NAME="BadCode Government" GIT_COMMITTER_EMAIL=government@badcode.tv
+# one commit per policy changed, so each policy's history reads on its own:
+git add docs/government/policies/<post>/<slug>.md [docs/government/manifesto/NN-<post>.md]
+git commit -m "policy(<post>/<slug>): <what changed, in a few words>"
+# … repeat per policy; then a foreword-only change, and the statements, each in its own commit:
+git add docs/government/statements && git commit -m "Government <TODAY>: statements"
 git push origin HEAD:refs/heads/government/rolling
 ```
+
+The lint is the second tenet's check: a change that fails it doesn't ship. If you can't make it
+pass, leave that file as it was on the branch and say so in the minutes.
 
 If the push is rejected because the branch moved (a reviewer pushed while you worked):
 `git fetch origin`, `git rebase origin/government/rolling`, resolve any conflict **in favour of the
@@ -318,6 +348,7 @@ reviewer opening it after a week reads one paragraph, not seven.>
 - Review comments: <each one and what was done, or "none">
 - Prime Minister: <change, or "nothing today">
 - Chancellor: <what changed in a few words> (news: <ids>; evidence: <ids>, if any)
+  - `chancellor/<slug>`: <one line per policy changed, so a reviewer can keep one and strike another>
 - Foreign Secretary: nothing today
 - … all ten, every run
 - Statements: <files added>

@@ -25,8 +25,8 @@ describe('readManifesto', () => {
       'README.txt': 'ignored',
     });
     expect(readManifesto(d)).toEqual([
-      { post: 'prime-minister', title: 'Prime Minister', line: 'Promise.', body: 'Body P' },
-      { post: 'chancellor', title: 'Chancellor', line: 'Ledger.', body: 'Body C' },
+      { post: 'prime-minister', title: 'Prime Minister', line: 'Promise.', policies: '', body: 'Body P' },
+      { post: 'chancellor', title: 'Chancellor', line: 'Ledger.', policies: '', body: 'Body C' },
     ]);
   });
   it('throws on a file with no title or line', () => {

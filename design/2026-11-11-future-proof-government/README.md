@@ -251,20 +251,21 @@ Each milestone ends in a PR for Kai or Jack to merge, plus a short status page.
 - [x] T2 This design doc, the goal brief, and the prior-art research.
 
 **M2 Policy modules**
-- [ ] T3 The policy file format (4.1) documented in `docs/government/policies/README.md`.
-- [ ] T4 `policy-lint.mjs` and its tests; wired into CI.
-- [ ] T5 Migration: split the ten manifesto pages into policy files, text unchanged where
+- [x] T3 The policy file format (4.1) documented in `docs/government/policies/README.md`.
+- [x] T4 `policy-lint.mjs` and its tests; wired into CI.
+- [x] T5 Migration: split the ten manifesto pages into policy files, text unchanged where
   possible, a world check drafted for each (marked provisional, fact-gated through `evidence.md`).
   Done by subagents, one per minister, reviewed against the originals by a separate checker.
-- [ ] T6 Manifesto pages become foreword + policy list. The cabinet's permissions widen to
+- [x] T6 Manifesto pages become foreword + policy list. The cabinet's permissions widen to
   `policies/**` and `debates/**` (its "What you may touch" list and its `git status` gate), one
   commit per policy, lint before push.
-- [ ] T6b One wording everywhere: `apps/site/src/content.json` (the `pledges` and `futureProof.tenets`
+- [x] T6b One wording everywhere: `apps/site/src/content.json` (the `pledges` and `futureProof.tenets`
   lists), `cabinet.md`'s rule that the PM page keeps the three pledges, and the PM page, brought
   to the tenets in plain words; the Future Proof talk's "Vote issue by issue" checked against it.
-- [ ] T7 The site builds a page per policy (minimum: text, ticks, world check), with a real YAML
-  parser (today's front-matter reader is flat `key: value` only); existing URLs keep working.
-- [ ] T7b Pause the cabinet's schedule in its own small PR, merged *before* the migration lands
+- [x] T7 The site builds a page per policy (minimum: text, the contract lines, world check);
+  existing URLs keep working. (Decision D8: front matter stays flat `key: value` with dotted
+  names, so no YAML parser or new dependency was needed.)
+- [x] T7b Pause the cabinet's schedule in its own small PR, merged *before* the migration lands
   (schedules reach Bob only on merge), and resume it after.
 
 **M3 Real debate**
@@ -318,6 +319,10 @@ Each milestone ends in a PR for Kai or Jack to merge, plus a short status page.
 | D5 | Opposition on Codex, a different model family from the cabinet | Debate with a single model converges; diversity is the point |
 | D6 | Debate as PR review comments, then copied into a debate log in the repo | Reuses the cabinet's existing "comments first" step; the log survives the PR |
 | D7 | Text off-chain, hash on-chain; the chain mirrors git rather than replacing it | Cost, and git stays the source of truth the whole repo runs on |
+| D8 | Policy front matter is flat `key: value` with dotted names (`test.where`), lists split by `;` | The site's existing reader handles it, no dependency, and an unattended agent can't break nesting |
+| D9 | Migrated world checks are provisional (rewrite once, freeze on the statistician's pass) | The independent check found ~15 weak or safe-bet checks; freezing them on merge would lock in a flattering record |
+| D10 | Policies the merged pages never designed stay "Not ready" (7 of 54) instead of having tests invented | The contract says a missing test prints "Not ready"; inventing kill numbers to look complete is the opposite of the tenet |
+| D11 | Rights are `kept` from day one | shared.md: "Kept from day one" |
 
 ## 8. For Kai (at the end of M1)
 
