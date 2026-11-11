@@ -1,39 +1,45 @@
 {
- "story": "short-signs",
- "scene": "signs",
- "prefix": "sg",
- "title": "Signs",
- "heading": "BadCode Shorts <span class=\"tri\">▲</span> Signs",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs",
- "beats": [
-  {
-   "key": "street",
-   "at": "0:00",
-   "name": "A. The street of signs",
-   "blurb": "Dusk, a terrace with every party's sign out front; someone wheels their bin out to the kerb."
+  "story": "short-signs",
+  "scene": "signs",
+  "prefix": "sg",
+  "title": "Signs",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Signs",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/signs",
+  "beats": [
+    {
+      "key": "street",
+      "at": "0:00",
+      "name": "A. The street of signs",
+      "blurb": "Dusk, a terrace with every party's sign out front; someone wheels their bin out to the kerb."
+    },
+    {
+      "key": "lid",
+      "at": "0:04",
+      "name": "B. Into the bin",
+      "blurb": "Push in on the bin lid."
+    },
+    {
+      "key": "inside",
+      "at": "0:07",
+      "name": "C. Inside, looking up",
+      "blurb": "From inside the bin, looking up at the lid: the BadCode logo and name light up in it."
+    }
+  ],
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
   },
-  {
-   "key": "lid",
-   "at": "0:04",
-   "name": "B. Into the bin",
-   "blurb": "Push in on the bin lid."
+  "flow_project": "9fea9e3f-7a2a-478e-90a1-cd72e647a814",
+  "moodboard_intro": "Round 2: the lid re-shot as a green bin, like the street (your note), in LD1-b's look. Street ST1-a and inside IN1-b are picked.",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/1QB5u6wdQV9rmhqUXFW53K",
+    "storyboard": "https://claude.ai/artifact/SjZ7mWHimfBDJxgboYgLTV"
   },
-  {
-   "key": "inside",
-   "at": "0:07",
-   "name": "C. Inside, looking up",
-   "blurb": "From inside the bin, looking up at the lid: the BadCode logo and name light up in it."
+  "storyboard_intro": "Your three picks in order. Pick one way to animate each; notes welcome.",
+  "looks": {
+    "dusk": "Blue-hour street",
+    "inside": "Inside the bin"
   }
- ],
- "video": {
-  "model": "Omni 1.2 Flash",
-  "aspect": "9:16",
-  "mode": "Frames",
-  "duration": 8
- },
- "flow_project": "9fea9e3f-7a2a-478e-90a1-cd72e647a814",
- "moodboard_intro": "Round 2: the lid re-shot as a green bin, like the street (your note), in LD1-b's look. Street ST1-a and inside IN1-b are picked.",
- "boards": {
-  "moodboard": "https://claude.ai/artifact/1QB5u6wdQV9rmhqUXFW53K"
- }
 }

@@ -1,0 +1,12 @@
+{
+ "acts": [
+  {"id": "street", "title": "A. The street of signs (~4 s)", "beats": "street"},
+  {"id": "lid", "title": "B. Into the bin (~3 s)", "beats": "lid"},
+  {"id": "inside", "title": "C. Inside, looking up (~4 s)", "beats": "inside"}
+ ],
+ "frames": [
+  {"n": 1, "act": "street", "title": "Every party's sign; a bin goes out", "look": "dusk", "stills": ["ST1-a"], "anim": 1},
+  {"n": 2, "act": "lid", "title": "The green bin's lid at the kerb", "look": "dusk", "stills": ["LD2-b-a"], "anim": 2},
+  {"n": 3, "act": "inside", "title": "Inside: the lid lights up BadCode", "look": "inside", "stills": ["IN1-b"], "anim": 3}
+ ]
+}
