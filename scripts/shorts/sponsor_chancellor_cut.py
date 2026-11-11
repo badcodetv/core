@@ -51,7 +51,7 @@ starts, t = [], 0.0
 for s in SHOTS: starts.append(round(t, 3)); t += s[3]
 TOTAL = round(t, 3)
 T_CARD = nar_at[4]
-NEWS_IN, NEWS_OUT = 0.5, 3.2                           # r2: Jack's newspaper insert at the start, 'only on the screen for a bit'                                     # the "£3 a month" band comes up on "For just £3 a month"
+NEWS_IN, NEWS_OUT = 0.5, 5.2                           # r2: Jack's newspaper insert at the start, 'only on the screen for a bit'                                     # the "£3 a month" band comes up on "For just £3 a month"
 SEE = {'appeal': 'The black-and-white charity appeal: Crispin at the rainy conservatory glass, a slow blink, his hand slides down the pane.',
        'room': 'Pull back: the nan in her armchair in the cold flat, the telly on.',
        'post': 'The doormat: junk mail, a draught, the SPONSOR A CHANCELLOR flyer.',

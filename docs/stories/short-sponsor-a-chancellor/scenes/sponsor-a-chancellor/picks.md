@@ -11,3 +11,4 @@
 - **2026-11-11, Jack, storyboard r1:** animation 1b, 2a, 3b, 4a; no still picks for frames 2-3, so the cast re-shoots RM2-b-a and PO2-b-b go in (my suggestion; swap on his word). Motion prompts: clean room, one sealed writer, brief `~/.cache/badcode-scenes/sponsor-a-chancellor/cleanroom-clips/brief-clips-r1.md`.
 - **2026-11-11, clips + rough cut 1:** 01-A, 01-B (chained), 02, 03 pass; 04 refused 3x (swear in prompt suspected), 04-r2 bare prompt "Poor bloke" passed; nan dub placed on the mouth (dub/04-r2-nan.json). Timeline r1 https://claude.ai/artifact/5zYArB8zS3cQxAZVYvKCHE, 26.2 s.
 - **2026-11-11, Jack, timeline r1 notes:** newspaper insert at the start (done: ITV News 2024 headline, 0.5-3.2 s); effects down (done: -8 dB). Round 2 on the same page.
+- **2026-11-11, Jack, timeline r2 note:** insert on 2 s longer → 0.5-5.2 s (round 3).

@@ -1,24 +1,24 @@
 {
- "round": 2,
+ "round": 3,
  "plan": [
   {
-   "h": "Done this round (edit only, no new clips)",
+   "h": "Done this round (edit only)",
    "items": [
-    "Newspaper insert at the start, 0.5–3.2 s: the real headline retyped as newsprint, \"Chancellor says £100,000 salary is ‘not huge’ in his Surrey constituency\" (ITV News, 2024). Sits below his face, then the appeal plays on.",
-    "Sound effects down 8 dB: now about 20 dB under the narrator and the nan."
+    "Newspaper insert held 2 s longer: now 0.5–5.2 s, through 'Crispin only earns £100,000 a year'."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Is the insert on long enough (2.7 s)?",
-    "Still 26 s: trim the appeal, or leave it?"
+    "Still 26 s: trim the appeal, or leave it?",
+    "Happy with it? Say 'it's done' and it goes into Premiere."
    ]
   }
  ],
  "replies": {
   "at26": "Done: real headline, newsprint style, 0.5–3.2 s, below his face; everything else unchanged. Source: ITV News, 22 Mar 2024 (the article's own title; the headline doesn't name him).",
-  "at429": "Done: effects lowered 8 dB everywhere (-30 → -38 LUFS), about 20 dB under both voices now."
+  "at429": "Done: effects lowered 8 dB everywhere (-30 → -38 LUFS), about 20 dB under both voices now.",
+  "at52": "Done: on screen 2 s longer, 0.5–5.2 s, so it's still up as the narrator says '£100,000 a year'."
  },
  "kai_round1": {
   "at429": {
@@ -36,6 +36,32 @@
    "key": "at26",
    "note": "At the very beginning, have a newspaper insert here illustrating this, only have it on the screen for a bit and let the rest play, keep everything else the same, thanks",
    "tc": "00:00:01:02"
+  }
+ },
+ "kai_round2": {
+  "at429": {
+   "at": 1794407659871,
+   "beat": "room",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at429",
+   "note": "the sound affects throught the video overpower the narration adn dialogue please turn it down a bit thanks. ",
+   "tc": "00:00:17:21"
+  },
+  "at26": {
+   "at": 1794407619259,
+   "beat": "appeal",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at26",
+   "note": "At the very beginning, have a newspaper insert here illustrating this, only have it on the screen for a bit and let the rest play, keep everything else the same, thanks",
+   "tc": "00:00:01:02"
+  },
+  "at52": {
+   "at": 1794407887501,
+   "beat": "appeal",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at52",
+   "note": "keep it on the screen for like 2 more seconds, thanks",
+   "tc": "00:00:02:04"
   }
  }
 }
