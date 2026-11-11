@@ -1,0 +1,682 @@
+[
+ {
+  "start": 0.0,
+  "end": 4.063,
+  "clip": "k19m-a",
+  "in": 0.0,
+  "line": "",
+  "why": "calm open: the gang at lunch on a girder (Kai: candidate for the very beginning)"
+ },
+ {
+  "start": 4.063,
+  "end": 7.941,
+  "clip": "y05-a",
+  "in": 0.5,
+  "line": "",
+  "why": "still calm: PLUM pats a barrel, deadpan"
+ },
+ {
+  "start": 7.941,
+  "end": 10.832,
+  "clip": "k27m-b",
+  "in": 1.0,
+  "line": "Robbery!",
+  "why": "the word \"robbery\": a clerk slowly raises his hands, still calm"
+ },
+ {
+  "start": 10.832,
+  "end": 13.711,
+  "clip": "k36m-b",
+  "in": 0.0,
+  "line": "",
+  "why": "THE DROP: a lit fuse starts racing to the safe"
+ },
+ {
+  "start": 13.711,
+  "end": 16.3,
+  "clip": "z02y-b",
+  "in": 0.5,
+  "line": "🎶 Music 🎶",
+  "why": "medium action: the getaway car swerves"
+ },
+ {
+  "start": 16.3,
+  "end": 17.914,
+  "clip": "k10-a",
+  "in": 0.0,
+  "line": "",
+  "why": "medium action on the strong hit: sprinting along the train roofs"
+ },
+ {
+  "start": 17.914,
+  "end": 20.178,
+  "clip": "k09m-a",
+  "in": 1.0,
+  "line": "Dah, dah, dah, dah",
+  "why": "speedboat run-up into the words"
+ },
+ {
+  "start": 20.178,
+  "end": 22.756,
+  "clip": "h12-a",
+  "in": 0.5,
+  "line": "They say, you can't make money from a tree",
+  "why": "crew raps the moment the words start; meadow, nearest thing to a tree"
+ },
+ {
+  "start": 22.756,
+  "end": 25.356,
+  "clip": "q01-b",
+  "in": 0.651,
+  "line": "Let's see each day, make hay not free",
+  "why": "KEEP (Kai at 24.5): same frame as cut 9 at 24.5"
+ },
+ {
+  "start": 25.356,
+  "end": 26.947,
+  "clip": "k19m-a",
+  "in": 4.1,
+  "line": "Ayy, work can get paid though",
+  "why": "workers on a girder counting their pay"
+ },
+ {
+  "start": 26.947,
+  "end": 29.187,
+  "clip": "y06-a",
+  "in": 0.5,
+  "line": "Earning that dough, but where does it go?",
+  "why": "cash poured out of a sack into the clouds: where does it go"
+ },
+ {
+  "start": 29.187,
+  "end": 31.161,
+  "clip": "z03-a",
+  "in": 0.0,
+  "line": "Nobody knows!",
+  "why": "KEEP (Kai at 29.6): the cash bag shaken off a plane"
+ },
+ {
+  "start": 31.161,
+  "end": 33.413,
+  "clip": "h06-b",
+  "in": 1.0,
+  "line": "Means of production, means of reduction",
+  "why": "crew on a work scaffold with a lunch pail: the workers are the means of production"
+ },
+ {
+  "start": 33.413,
+  "end": 34.691,
+  "clip": "x07m-b",
+  "in": 0.0,
+  "line": "Standards bleeding, landlords needing",
+  "why": "liquor bleeding across the floor"
+ },
+ {
+  "start": 34.691,
+  "end": 35.968,
+  "clip": "h20-a",
+  "in": 2.0,
+  "line": "landlords needing",
+  "why": "second thing on a strong hit: the tenement roof, RUST snaps his watch shut (rent day)"
+ },
+ {
+  "start": 35.968,
+  "end": 37.257,
+  "clip": "k12m-a",
+  "in": 0.5,
+  "line": "Quantitive easing, grandma freezing",
+  "why": "quantitative easing = money flung over a crowd (Kai)"
+ },
+ {
+  "start": 37.257,
+  "end": 38.556,
+  "clip": "v07m-b",
+  "in": 0.5,
+  "line": "grandma freezing",
+  "why": "grandma freezing only on her words (Kai); beat, no strong hit in the line"
+ },
+ {
+  "start": 38.556,
+  "end": 40.275,
+  "clip": "q04-a",
+  "in": 4.3,
+  "line": "Simulus checks and necks get wrecked",
+  "why": "stimulus checks = the presses printing (Kai)"
+ },
+ {
+  "start": 40.275,
+  "end": 41.111,
+  "clip": "k16-a",
+  "in": 0.5,
+  "line": "necks get wrecked",
+  "why": "second thing on a strong hit: the lamps get wrecked"
+ },
+ {
+  "start": 41.111,
+  "end": 43.386,
+  "clip": "p05-a",
+  "in": 0.0,
+  "line": "Rent seeking, I'm just about eating",
+  "why": "BOTTLE eating on the girder while CRIMSON raps"
+ },
+ {
+  "start": 43.386,
+  "end": 46.312,
+  "clip": "k01m-a",
+  "in": 0.3,
+  "line": "Sorry, did I interrupt your meeting?",
+  "why": "the explosion (Kai): fireball behind the bank"
+ },
+ {
+  "start": 46.312,
+  "end": 48.576,
+  "clip": "h09-a",
+  "in": 0.5,
+  "line": "Remember kids, the Fed is not your friend",
+  "why": "the Fed = the banking hall; crew points at you"
+ },
+ {
+  "start": 48.576,
+  "end": 51.78,
+  "clip": "q04-a",
+  "in": 0.3,
+  "line": "It prints all the dollars that the government spends",
+  "why": "KEEP (Kai at 49.9): printing money, \"perfect\""
+ },
+ {
+  "start": 51.78,
+  "end": 53.069,
+  "clip": "d11-a",
+  "in": 3.5,
+  "line": "It's fiat system is insistent on debts existence",
+  "why": "fiat money: cash bundles in the vault"
+ },
+ {
+  "start": 53.069,
+  "end": 55.24,
+  "clip": "k30m-a",
+  "in": 1.0,
+  "line": "debts existence",
+  "why": "second thing on a strong hit: the dynamite clock ticking on the safe (the debt clock)"
+ },
+ {
+  "start": 55.24,
+  "end": 59.536,
+  "clip": "h11-b",
+  "in": 0.0,
+  "line": "Oh, oh, oh",
+  "why": "no picture for \"oh\": crew rapping in the snow"
+ },
+ {
+  "start": 59.536,
+  "end": 61.788,
+  "clip": "p02-a",
+  "in": 3.0,
+  "line": "Have resistance to the facts I'm stating",
+  "why": "CRIMSON stating it: finger jabs, shrug, point at you"
+ },
+ {
+  "start": 61.788,
+  "end": 64.714,
+  "clip": "cn:chase1-a",
+  "in": 0.5,
+  "line": "Robbery! Robbery!",
+  "why": "into the car chase on the first \"Robbery!\" (Kai)"
+ },
+ {
+  "start": 64.714,
+  "end": 66.966,
+  "clip": "c02-a",
+  "in": 0.0,
+  "line": "Call the police, it's a robbery",
+  "why": "call the police, held only while it is sung (Kai)"
+ },
+ {
+  "start": 66.966,
+  "end": 68.255,
+  "clip": "k31-b",
+  "in": 1.5,
+  "line": "Debasement, debasement",
+  "why": "de-basement: the floor lowers them into the vault"
+ },
+ {
+  "start": 68.255,
+  "end": 69.532,
+  "clip": "cn:safe4-b",
+  "in": 0.5,
+  "line": "It happened in the basement",
+  "why": "the \"excellent basement scene\" (Kai at 130.5)"
+ },
+ {
+  "start": 69.532,
+  "end": 72.423,
+  "clip": "c03g-b",
+  "in": 0.0,
+  "line": "Printer is burring, now now what's a burring?",
+  "why": "the printer in the red cellar"
+ },
+ {
+  "start": 72.423,
+  "end": 74.374,
+  "clip": "cn:chase3-a",
+  "in": 1.0,
+  "line": "Robbery! Robbery!",
+  "why": "back to the chase"
+ },
+ {
+  "start": 74.374,
+  "end": 77.276,
+  "clip": "x07m-b",
+  "in": 2.5,
+  "line": "Call the police, it's a robbery",
+  "why": "the police arrive: axes in the barrels"
+ },
+ {
+  "start": 77.276,
+  "end": 78.576,
+  "clip": "z06y-b",
+  "in": 1.5,
+  "line": "Debasement, debasement",
+  "why": "basement vault corridor, the stolen safe"
+ },
+ {
+  "start": 78.576,
+  "end": 79.841,
+  "clip": "k13m-b",
+  "in": 1.0,
+  "line": "It happened in the basement",
+  "why": "the basement distillery"
+ },
+ {
+  "start": 79.841,
+  "end": 82.977,
+  "clip": "c03g-b",
+  "in": 2.9,
+  "line": "Printer is burring, now now what's a burring?",
+  "why": "the printer again, its later stretch"
+ },
+ {
+  "start": 82.977,
+  "end": 85.008,
+  "clip": "k21m-a",
+  "in": 3.0,
+  "line": "Stacks and stacks of elastic cash",
+  "why": "a crate of cash on the speedboat"
+ },
+ {
+  "start": 85.008,
+  "end": 87.934,
+  "clip": "q05-b",
+  "in": 0.0,
+  "line": "Distracted by a dyspraxic flash",
+  "why": "MARINE's glove snaps open like a magician's flash"
+ },
+ {
+  "start": 87.934,
+  "end": 90.384,
+  "clip": "x04-a",
+  "in": 1.0,
+  "line": "Marked angry at the shitty little drop",
+  "why": "the drop: BOTTLE drops the sack off the boxcar"
+ },
+ {
+  "start": 90.384,
+  "end": 91.463,
+  "clip": "k27m-b",
+  "in": 4.0,
+  "line": "The right and the left both witness the theft",
+  "why": "a witness with a robber at his left and right"
+ },
+ {
+  "start": 91.463,
+  "end": 92.764,
+  "clip": "z06y-b",
+  "in": 3.5,
+  "line": "both witness the theft",
+  "why": "second thing on a strong hit: left and right either side of the stolen safe"
+ },
+ {
+  "start": 92.764,
+  "end": 95.016,
+  "clip": "h19-a",
+  "in": 0.0,
+  "line": "Blaming each other is a sick little cover",
+  "why": "blame: the crew all pointing fingers"
+ },
+ {
+  "start": 95.016,
+  "end": 98.558,
+  "clip": "d06m-a",
+  "in": 0.65,
+  "line": "Institutional, dilutional, the usual",
+  "why": "KEEP (Kai at 96.9): the barman dilutes the bottle"
+ },
+ {
+  "start": 98.558,
+  "end": 100.496,
+  "clip": "p12-a",
+  "in": 2.0,
+  "line": "Distraction is the attraction",
+  "why": "the distraction: a stage show with band and crowd"
+ },
+ {
+  "start": 100.496,
+  "end": 102.005,
+  "clip": "k30m-a",
+  "in": 3.5,
+  "line": "The intention is tension",
+  "why": "tension: pliers tugged between them over the wires"
+ },
+ {
+  "start": 102.005,
+  "end": 104.351,
+  "clip": "h07-b",
+  "in": 1.5,
+  "line": "Between the factions, divide and conquer",
+  "why": "no picture for factions: crew in a ring, jabbing down at you"
+ },
+ {
+  "start": 104.351,
+  "end": 105.326,
+  "clip": "g08y-b",
+  "in": 0.0,
+  "line": "Just look at the hand",
+  "why": "the magician's waving hand while the other pockets a note"
+ },
+ {
+  "start": 105.326,
+  "end": 106.626,
+  "clip": "h18-b",
+  "in": 2.0,
+  "line": "It's not your standard propaganda",
+  "why": "the show under the marquees, crowd clapping"
+ },
+ {
+  "start": 106.626,
+  "end": 108.263,
+  "clip": "k12m-a",
+  "in": 2.5,
+  "line": "Worth a couple grand, ah!",
+  "why": "a couple of grand flung from the car"
+ },
+ {
+  "start": 108.263,
+  "end": 110.504,
+  "clip": "q09-a",
+  "in": 0.8,
+  "line": "It is state level manipulation",
+  "why": "RUST at the snooker table, sweeping hand, manipulating"
+ },
+ {
+  "start": 110.504,
+  "end": 113.406,
+  "clip": "d10-a",
+  "in": 0.0,
+  "line": "It is the devil with the radio station",
+  "why": "KEEP (Kai at 113.0): the devil-horn shadow in the radio booth"
+ },
+ {
+  "start": 113.406,
+  "end": 115.647,
+  "clip": "d11-a",
+  "in": 0.0,
+  "line": "Stack up the vaults like a wheelbarrow",
+  "why": "a wheelbarrow of cash out of the vault"
+ },
+ {
+  "start": 115.647,
+  "end": 118.561,
+  "clip": "d12-b",
+  "in": 2.0,
+  "line": "Risk of default is really rather narrow",
+  "why": "narrow: MARINE on a ledge high over the street"
+ },
+ {
+  "start": 118.561,
+  "end": 120.186,
+  "clip": "h02-a",
+  "in": 1.0,
+  "line": "Biggie said, wait!",
+  "why": "no picture: crew raps on the salt flats"
+ },
+ {
+  "start": 120.186,
+  "end": 123.716,
+  "clip": "q08-a",
+  "in": 1.0,
+  "line": "Rockin' 97 / Don't get high off your own supply",
+  "why": "the gramophone shop: held over both lines so Kai can time the gramophone moment in Premiere"
+ },
+ {
+  "start": 123.716,
+  "end": 126.642,
+  "clip": "cn:chase1-a",
+  "in": 0.5,
+  "line": "Robbery! Robbery!",
+  "why": "into the car chase on the first \"Robbery!\" (Kai) (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 126.642,
+  "end": 128.894,
+  "clip": "c02-a",
+  "in": 0.0,
+  "line": "Call the police, it's a robbery",
+  "why": "call the police, held only while it is sung (Kai) (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 128.894,
+  "end": 130.183,
+  "clip": "k31-b",
+  "in": 1.5,
+  "line": "Debasement, debasement",
+  "why": "de-basement: the floor lowers them into the vault (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 130.183,
+  "end": 131.471,
+  "clip": "cn:safe4-b",
+  "in": 0.5,
+  "line": "It happened in the basement",
+  "why": "the \"excellent basement scene\" (Kai at 130.5) (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 131.471,
+  "end": 134.374,
+  "clip": "c03g-b",
+  "in": 0.0,
+  "line": "Printer is burring, now now what's a burring?",
+  "why": "the printer in the red cellar (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 134.374,
+  "end": 136.301,
+  "clip": "cn:chase3-a",
+  "in": 1.0,
+  "line": "Robbery! Robbery!",
+  "why": "back to the chase (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 136.301,
+  "end": 139.215,
+  "clip": "x07m-b",
+  "in": 2.5,
+  "line": "Call the police, it's a robbery",
+  "why": "the police arrive: axes in the barrels (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 139.215,
+  "end": 140.504,
+  "clip": "z06y-b",
+  "in": 1.5,
+  "line": "Debasement, debasement",
+  "why": "basement vault corridor, the stolen safe (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 140.504,
+  "end": 141.793,
+  "clip": "k13m-b",
+  "in": 1.0,
+  "line": "It happened in the basement",
+  "why": "the basement distillery (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 141.793,
+  "end": 144.033,
+  "clip": "c03g-b",
+  "in": 2.9,
+  "line": "Printer is burring, now now what's a burring?",
+  "why": "the printer again, its later stretch (chorus 2 = chorus 1)"
+ },
+ {
+  "start": 144.033,
+  "end": 146.634,
+  "clip": "x06-a",
+  "in": 1.0,
+  "line": "You know the real star is Pablo Escobar",
+  "why": "Escobar: a smuggling speedboat under the searchlight"
+ },
+ {
+  "start": 146.634,
+  "end": 149.119,
+  "clip": "k21m-a",
+  "in": 0.3,
+  "line": "Who has elastic bands, not plastic hands",
+  "why": "elastic bands: banknote bundles in a crate"
+ },
+ {
+  "start": 149.119,
+  "end": 149.722,
+  "clip": "g08y-b",
+  "in": 2.5,
+  "line": "not plastic hands",
+  "why": "second thing on a strong hit: the magician's gloved hand"
+ },
+ {
+  "start": 149.722,
+  "end": 152.114,
+  "clip": "h17-b",
+  "in": 0.0,
+  "line": "Stackin' up the cash by the grand",
+  "why": "banknotes raining on the crew"
+ },
+ {
+  "start": 152.114,
+  "end": 154.691,
+  "clip": "x03m-b",
+  "in": 1.0,
+  "line": "Stand up plans are for the working man",
+  "why": "stand up: three stand in the blizzard, chopping on the beat"
+ },
+ {
+  "start": 154.691,
+  "end": 156.944,
+  "clip": "h15-b",
+  "in": 1.0,
+  "line": "And this right here is a next level scam",
+  "why": "the scam lives first class: crew in the dining car"
+ },
+ {
+  "start": 156.944,
+  "end": 159.521,
+  "clip": "a02m-a",
+  "in": 2.0,
+  "line": "All gotten gains, no need to explain",
+  "why": "ill-gotten gains: the bank lobby taken"
+ },
+ {
+  "start": 159.521,
+  "end": 162.435,
+  "clip": "k23-a",
+  "in": 0.0,
+  "line": "Bailin' out will never mean the same",
+  "why": "bailing out: MARINE slides down a rope from the blimp (instead of the train, Kai)"
+ },
+ {
+  "start": 162.435,
+  "end": 163.074,
+  "clip": "q04-a",
+  "in": 3.55,
+  "line": "Own a printer and you don't feel winter",
+  "why": "own a printer: the presses"
+ },
+ {
+  "start": 163.074,
+  "end": 165.024,
+  "clip": "h11-b",
+  "in": 4.05,
+  "line": "don't feel winter",
+  "why": "second thing on a beat: crew rapping warm in the snow"
+ },
+ {
+  "start": 165.024,
+  "end": 167.602,
+  "clip": "h12-a",
+  "in": 3.4,
+  "line": "Crime is asset inflation, passive creation",
+  "why": "inflation: the balloon inflating behind the crew"
+ },
+ {
+  "start": 167.602,
+  "end": 170.179,
+  "clip": "x02-a",
+  "in": 1.0,
+  "line": "Of a wealth gap that drives the situation",
+  "why": "drives: RUST drives the roadster, the pack falling behind"
+ },
+ {
+  "start": 170.179,
+  "end": 171.781,
+  "clip": "h18-b",
+  "in": 0.3,
+  "line": "Rockin' people get paid in money",
+  "why": "money falling on a cheering crowd"
+ },
+ {
+  "start": 171.781,
+  "end": 174.057,
+  "clip": "q12-b",
+  "in": 2.5,
+  "line": "So it's not very funny when you print more",
+  "why": "not funny: the crew wags its fingers, then points"
+ },
+ {
+  "start": 174.057,
+  "end": 175.984,
+  "clip": "y04-a",
+  "in": 2.0,
+  "line": "And expect them not to worry",
+  "why": "not worried: BOTTLE dusts his lapel in the fallen house"
+ },
+ {
+  "start": 175.984,
+  "end": 177.935,
+  "clip": "h17-b",
+  "in": 2.6,
+  "line": "Hungry people feed a revolution",
+  "why": "THE TONE CHANGE (2:56): fire in the bank doorway, a whole new scene"
+ },
+ {
+  "start": 177.935,
+  "end": 180.547,
+  "clip": "k16-a",
+  "in": 1.5,
+  "line": "Then it's retribution, perhaps some execution",
+  "why": "execution: the tommy gun, glass and sparks"
+ },
+ {
+  "start": 180.547,
+  "end": 183.554,
+  "clip": "y06-a",
+  "in": 2.8,
+  "line": "It's time to give, not just to take",
+  "why": "give: the empty sack held out to you"
+ },
+ {
+  "start": 183.554,
+  "end": 187.0,
+  "clip": "v11x-a",
+  "in": 1.3,
+  "line": "But for heaven's sake / Don't just eat cake",
+  "why": "KEEP (Kai at 183.5): the man on the bank steps mimes the cake slice; held to the end"
+ }
+]

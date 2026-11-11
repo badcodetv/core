@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h19-a-h19r10-a.mp4",
+ "made": "2026-11-11T18:19:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera low at the lens, framing holds. From the first beat PLUM, close in the foreground, jabs his gloved finger at the lens on every beat, his shoulders dipping and his masked head pushing in. Behind him CRIMSON, MARINE, RUST and SILVER pump their hands at the lens together, bouncing at the knees; on the third beat they all chop flat palms down at once, then point again. BOTTLE, at the back, bounces the umbrella up and down on the beat. All stay on their spots in the V. The marquee bulbs keep blazing, rain falls steadily. SFX: shoe stamps on wet cobbles, rain, cloth. No voices.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h19r10-a.jpg",
+ "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw3",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h19r10-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "h19-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T18:03:51.976Z"
+ }
+}

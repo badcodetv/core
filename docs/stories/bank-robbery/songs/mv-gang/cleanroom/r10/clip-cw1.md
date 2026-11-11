@@ -1,0 +1,14 @@
+=== CLIP h01-b ===
+Locked-off camera, framing holds. The six masked men perform at the lens from the first frame and never stop, all bouncing at the knees together on every beat. First beat: CRIMSON jabs his finger at the lens twice. Next: PLUM and BOTTLE chop gloved palms down in unison. Next: MARINE and RUST lean in over Crimson's shoulders, fists pumping. Next: SILVER spreads both arms wide, palms down. Then all six chop down together and Crimson jabs again. Masks, suits, gloves and the hat stay unchanged; the customers keep their hands up. SFX: stamping shoes on marble, cloth swishing, a quiet lobby echo.
+ENDS_ON: All six crowded at the lens mid-bounce, Crimson's finger pointed at the camera, the others' palms at the bottom of a chop, customers still with hands up by the open doors.
+WHY: Pairs and solos take turns on each beat over a shared knee-bounce, so any 0.6-second slice shows the whole crew moving as one group.
+
+=== CLIP h09-a ===
+Locked-off camera, framing holds. From the first frame the six masked men bounce together on the beat and keep moving. First beat: CRIMSON, hunched low, stabs his finger at the lens. Next: MARINE slaps his raised glove down onto the crown of Crimson's hat and pulls it away again. Next: PLUM and BOTTLE swing their fists forward together. Next: RUST and SILVER chop flat palms down twice. Then all six nod hard on the same beat and Crimson points again. Behind the brass bars the clerk keeps counting notes. Masks, suits and gloves stay unchanged. SFX: shoe stamps, cloth, a big hall echo.
+ENDS_ON: The six in a tight arrowhead in the aisle, mid-nod, Crimson pointing into the lens with Marine's hand back up above the hat, the clerk still counting behind the bars.
+WHY: It starts from the hand already raised above Crimson's hat, turning that frozen pose into a crew gag and the downbeat nod everyone shares.
+
+=== CLIP h17-b ===
+Locked-off camera, framing holds. The six masked men keep moving from the first frame, knees bouncing together on every beat. First beat: CRIMSON, crouched nearest, pushes his flat palm at the lens and chops it down. Next: PLUM pumps his raised fist; BOTTLE points down at the lens. Next: MARINE and RUST swing their arms forward together. Next: SILVER flicks a banknote off his lapel, then points at the lens. Then all six chop down at once. The fire keeps burning gently in the doorway behind and banknotes drift slowly down. Masks, suits and gloves stay unchanged. SFX: crackling fire, shoes on stone, fluttering paper.
+ENDS_ON: All six on the steps at the bottom of a shared palm chop, Crimson crouched closest to the lens, the doorway fire still glowing behind and a few banknotes in the air.
+WHY: It keeps the still's chop and Silver's lapel gag and has the whole crew hit beats together on the steps, while the fire and paper keep moving only gently behind them.

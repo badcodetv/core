@@ -1,0 +1,11 @@
+# Cut D, "Breathing"
+
+Cut D holds each shot for a whole phrase, usually 3 to 5 seconds, and lets the clip play. Then it snaps into short bursts of four half-beat or beat cuts, mostly the new crew clips, on every "Robbery! Robbery!" and at the end of verses 1, 3 and 5. The intro has four long calm-to-medium shots: it opens on the girder lunch (`k19m-a`, Kai's candidate), then the slow stroll, and the picture changes exactly on the drop at 10.83. The first rapping shot is `q01-b` at 20.18, held right through Kai's 24.5 s keep. The strongest stretches are probably verse 2, where five held shots carry the explosion, the printing press and the jazz stage, and the end. At 2:56 the cut lands on the dawn meadow and balloon (`h12-a`, a world not seen before), then Plum giving grandma his jacket on "time to give", then Silver on the bank steps held to 187.0. The chase and basement choruses get the most contrast: a four-shot chase/crew burst on the first "Robbery!", held chase, `c02-a` only on "call the police", long basement and printing holds, and another burst. Chorus 2 repeats chorus 1 shot for shot.
+
+Where it breaks the brief:
+- **78 shots, not about 57 (cut 9 had 114 before 187 s).** The brief asks for a 4-shot burst on every hook and every verse end, and some lines need their own short shot (QE/grandma, call the police), so half the shot count was not reachable without dropping those.
+- **Some bursts are skipped where a hook burst follows straight away.** Verse 2 and verse 4 get no separate end-of-verse burst: the chorus burst does that job, and before it a held shot gives a breath (`p05-a`, and the gramophone `q08-a`).
+- **The second "Call the police" in each chorus has no burst and no `c02-a`.** It plays under the held basement shot (`k13m-b`), following Kai's note that the second half of the chorus is basement, underground and printing.
+- **Rap and non-rap don't strictly alternate.** Phrase-length holds make it looser in places (for example `q04-a` into `q05-b`, and `g08y-b` straight after a burst).
+- **`cn:safe4-b` is used despite its "bad" fault (wrong mask)** because Kai called it an excellent basement scene.
+- **Only 19 of 77 cuts land on a strong hit.** The holds sit on line starts and bars rather than on hits. Verse 3 starts on the bar at 82.78, because the strong hit at 82.98 is not on the beat grid.

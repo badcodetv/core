@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h17-b-h17r10-b.mp4",
+ "made": "2026-11-11T18:19:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. The six masked men keep moving from the first frame, knees bouncing together on every beat. First beat: CRIMSON, crouched nearest, pushes his flat palm at the lens and chops it down. Next: PLUM pumps his raised fist; BOTTLE points down at the lens. Next: MARINE and RUST swing their arms forward together. Next: SILVER flicks a banknote off his lapel, then points at the lens. Then all six chop down at once. The fire keeps burning gently in the doorway behind and banknotes drift slowly down. Masks, suits and gloves stay unchanged. SFX: crackling fire, shoes on stone, fluttering paper.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h17r10-b.jpg",
+ "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw1",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h17r10-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "h17-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T18:03:00.916Z"
+ }
+}

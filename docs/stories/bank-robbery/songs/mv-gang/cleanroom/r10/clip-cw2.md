@@ -1,0 +1,14 @@
+=== CLIP h02-a ===
+Locked-off camera, framing holds. On the first beat all six chop their outstretched arms down hard and drop into a knee bounce together. On the next, RUST, nearest, jabs a finger straight at the lens; PLUM and BOTTLE lean in behind him, palms rocking side to side. CRIMSON nods deep on every downbeat. MARINE swings his arm up late and points; SILVER shrugs, palms up, then chops again. They never stop: a new move every beat, bouncing in their places. Masks, gloves and suits stay unchanged; dust drifts, the parked cars stay put. SFX: shoes scuffing dry crust, cloth swish, gloved claps, wind. No voices.
+ENDS_ON: All six mid-bounce in their wedge, RUST's finger jabbed at the lens, the others' arms chopping or pointing, parked roadsters and dust behind.
+WHY: Turns the frozen arm-swing into a crew rolling through beat moves at the lens, with the nearest man carrying the aggression and the rest stacking behind him.
+
+=== CLIP h11-b ===
+Locked-off camera, framing holds. The raised fists punch down on the first beat, every man landing a heel bounce on the ice together. On the next, SILVER, nearest, leans into the lens and jabs a finger at it; PLUM and MARINE chop flat palms down beside him. CRIMSON pumps his fist back up; RUST and BOTTLE, at the far end, rock palms side to side, shoulders dropping on each beat. Then all six throw fists high again, still bouncing. Masks, gloves and suits stay unchanged; snow keeps falling through the headlamp beams, the sedans stay still. SFX: boots crunching snow, cloth, wind, stamps on the beat. No voices.
+ENDS_ON: The line of six mid-bounce on the ice, fists back up, SILVER's head pushed toward the lens, snow streaking through the headlamps.
+WHY: Uses the line's diagonal so the move ripples from SILVER at the lens down to BOTTLE, a crew in sync with each man's own gesture between the unison hits.
+
+=== CLIP h18-b ===
+Locked-off camera, framing holds. On the first beat the five in the street drop deeper into their crouch and swing both arms at the lens, palms down. On the next, CRIMSON, centre, jabs two fingers straight at the camera; PLUM and BOTTLE chop palms down beside him; MARINE and SILVER rock their hands side to side, shoulders rolling. RUST, seated on the roadster's bonnet, waves his raised hand on the beat and points down at the lens. They keep bouncing, a new move each beat. Masks, gloves and suits stay unchanged; banknotes flutter down, the crowd cheers in place. SFX: shoes stamping, cloth, crowd murmur, paper rustle. No voices.
+ENDS_ON: Five robbers crouched mid-bounce with arms thrust at the lens, CRIMSON pointing, RUST on the bonnet pointing down, banknotes falling, the crowd behind.
+WHY: Keeps the crouched, crowding wedge already in the still and gives each man a distinct beat gesture, so it plays as a street crew performing to the lens under the marquees.

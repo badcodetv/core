@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h02-a-h02r10-a.mp4",
+ "made": "2026-11-11T18:19:14+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. On the first beat all six chop their outstretched arms down hard and drop into a knee bounce together. On the next, RUST, nearest, jabs a finger straight at the lens; PLUM and BOTTLE lean in behind him, palms rocking side to side. CRIMSON nods deep on every downbeat. MARINE swings his arm up late and points; SILVER shrugs, palms up, then chops again. They never stop: a new move every beat, bouncing in their places. Masks, gloves and suits stay unchanged; dust drifts, the parked cars stay put. SFX: shoes scuffing dry crust, cloth swish, gloved claps, wind. No voices.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h02r10-a.jpg",
+ "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw2",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h02r10-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "h02-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T18:18:23.589Z"
+ }
+}

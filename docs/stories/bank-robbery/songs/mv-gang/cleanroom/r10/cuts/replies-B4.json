@@ -1,0 +1,20 @@
+{
+ "round": 4,
+ "plan": [
+  {
+   "h": "Round 4 of cut B",
+   "items": [
+    "0:10.8: the walk down the road now holds from 0:10.5, just before the drop, until the car at 0:13.1. The train and the boat are out.",
+    "Everything else is the same as round 3."
+   ]
+  }
+ ],
+ "replies": {
+  "at639": "Swapped: the girder lunch is only at the opening now. The cash crate in the boat is here instead.",
+  "at860": "Swapped: h20-a is out. The crew in the bank lobby (h01-b) is in.",
+  "at1000": "Moved: the next shot now comes in on \"Rent seeking\" at 41.45 s (it was 42.75 s).",
+  "at2821": "Swapped in round 2: h09-a is out, h13-b (the gang at the airfield) is in.",
+  "at3921": "Swapped in round 2: the snowy field (h11-b) is here, and the shot that was here moved to 2:58.",
+  "at260": "Done: the walk holds from 0:10.5 until the car at 0:13.1, and the train and the boat are cut."
+ }
+}

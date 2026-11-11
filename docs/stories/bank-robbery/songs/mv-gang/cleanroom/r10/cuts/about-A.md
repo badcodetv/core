@@ -1,0 +1,11 @@
+# Cut A: Jack's cut, fixed
+
+This is cut 9 with as little changed as possible. Jack's order and picks stay wherever you did not object: the Grand Central rap, the plane ladder on "Nobody knows!", the train, the magician, the gramophone, the break's four picks (Escobar, the blizzard, the train roof, the salt flat), the dining car and the boxing ring. Every cut now lands on a line start, a strong hit or a beat. The intro opens calm on the girder lunch, the basement and PLUM on his barrel. Jack's flurry follows, and the picture changes exactly on the drop at 10.83, to the six walking at us. The 26.4 k19m-a moved to the opening, and z06y-b came out of the intro because it reads as rapping. It is strongest in verse 1 and the last ten seconds. Verse 1 now has every line its own picture (money thrown on "quantitative easing", grandma only on "grandma freezing", the press on "stimulus checks"). From 2:56 the ending goes to the bank steps on fire, then retribution, then the jacket given to the grandma on "time to give". It finishes held on SILVER on the bank steps to 187.0, with no outro.
+
+Both choruses are the same pictures shifted by 61.93 s. Each one hits the car chase on the first "Robbery!", has the call-box only while "call the police" is sung, and from "Debasement" on is all cellar press, vault and safe room. Eleven of the new crew clips go in where cut 9 repeated footage: five in verse 5 and the rest at the "means of production", "eating", fiat, verse 3 and "divide and conquer" lines. In verse 3 the crew is hand-cut against Jack's train for your rap/non-rap note.
+
+Where I bent the rules:
+- At 130.5 your note names cn:safe4-b as "an excellent basement scene", but that shot is a car back seat with a wrong mask. The red-cellar press (c03g-b) ended on that same frame in cut 9, so I read your note as meaning the press and kept it on "in the basement" in both choruses. Swap safe4 back in if I read it wrong.
+- The rap / non-rap pattern is loose rather than strict wherever an anchor or a line's picture comes first (for example two raps in a row at 20-25 s, and a run of non-rap shots from 33 to 41 s).
+- Some clips appear three or four times, each from a different stretch: k30m-a, d11-a, and c02-a twice per chorus, because the choruses repeat.
+- The gramophone sits at 120.19-122.74 for you to time by hand.

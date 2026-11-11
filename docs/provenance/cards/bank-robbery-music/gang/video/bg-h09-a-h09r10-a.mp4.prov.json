@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h09-a-h09r10-a.mp4",
+ "made": "2026-11-11T18:19:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first frame the six masked men bounce together on the beat and keep moving. First beat: CRIMSON, hunched low, stabs his finger at the lens. Next: MARINE slaps his raised glove down onto the crown of Crimson's hat and pulls it away again. Next: PLUM and BOTTLE swing their fists forward together. Next: RUST and SILVER chop flat palms down twice. Then all six nod hard on the same beat and Crimson points again. Behind the brass bars the clerk keeps counting notes. Masks, suits and gloves stay unchanged. SFX: shoe stamps, cloth, a big hall echo.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h09r10-a.jpg",
+ "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw1",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h09r10-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "h09-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T17:52:20.919Z"
+ }
+}

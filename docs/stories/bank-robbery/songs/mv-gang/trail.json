@@ -213,5 +213,94 @@
   "decided": [
    "Jack in chat: remove the first clip, his body looks attached to the car"
   ]
+ },
+ {
+  "at": "2026-11-11T16:10:21+00:00",
+  "stage": "moodboard",
+  "round": 10,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 10 (Kai): 20 shots h01-h20 of the whole gang rapping at the lens like a drill crew, each in a place from the film (place frame + Kai's line-up card from c03g-b as references), 2 takes each, 40 stills",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/make_briefs.py; 5 sealed writers; python3 .../r10/parse.py; npx tsx .../r10/run_stills.mts; python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang <out>",
+  "decided": [
+   "Kai 2026-11-11: up to 20 new clips of the gang rapping at the camera, modern London drill group style, in the film's scenes adjusted slightly"
+  ]
+ },
+ {
+  "at": "2026-11-11T18:39:38+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/QRpgbn9GEAeXW3ymmgCpia",
+  "what": "Cut 10A (Jack's-cut-fixed): one of five cuts made by separate editors from Kai's 29 cut-9 notes, ending at 187.0 s on Don't just eat cake",
+  "rebuild": "python3 cleanroom/r10/cuts/assemble.py A <out-dir>"
+ },
+ {
+  "at": "2026-11-11T18:39:38+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys",
+  "what": "Cut 10B (strict-alternation): one of five cuts made by separate editors from Kai's 29 cut-9 notes, ending at 187.0 s on Don't just eat cake",
+  "rebuild": "python3 cleanroom/r10/cuts/assemble.py B <out-dir>"
+ },
+ {
+  "at": "2026-11-11T18:39:38+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/XGGzfmfETeXVGqYJsxhktD",
+  "what": "Cut 10C (on-the-words): one of five cuts made by separate editors from Kai's 29 cut-9 notes, ending at 187.0 s on Don't just eat cake",
+  "rebuild": "python3 cleanroom/r10/cuts/assemble.py C <out-dir>"
+ },
+ {
+  "at": "2026-11-11T18:39:38+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/1mquoXiGohb5vjsxNP9MDm",
+  "what": "Cut 10D (breathing): one of five cuts made by separate editors from Kai's 29 cut-9 notes, ending at 187.0 s on Don't just eat cake",
+  "rebuild": "python3 cleanroom/r10/cuts/assemble.py D <out-dir>"
+ },
+ {
+  "at": "2026-11-11T18:39:38+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/ECTbBRJP61CeHiNfRdzgqK",
+  "what": "Cut 10E (energy-curve): one of five cuts made by separate editors from Kai's 29 cut-9 notes, ending at 187.0 s on Don't just eat cake",
+  "rebuild": "python3 cleanroom/r10/cuts/assemble.py E <out-dir>"
+ },
+ {
+  "at": "2026-11-11T18:50:29+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys",
+  "what": "Cut 10B round 2: Kai picked B; cuts moved onto the kick, 2 swaps from his notes, ending cut nearly dead",
+  "rebuild": "python3 cleanroom/r10/cuts/make-B2.py && python3 cleanroom/r10/cuts/assemble.py B2 <out-dir> 0.12",
+  "decided": [
+   "Kai: this is the one out of that … this is a really good edit (cut 10B, Strict alternation)"
+  ]
+ },
+ {
+  "at": "2026-11-11T19:03:41+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys",
+  "what": "Cut 10B round 3: Kai's 3 round-2 notes (repeat at 0:26, human eyes at 0:35, explosion on rent seeking)",
+  "rebuild": "python3 cleanroom/r10/cuts/make-B3.py && python3 cleanroom/r10/cuts/assemble.py B3 <out-dir> 0.12"
+ },
+ {
+  "at": "2026-11-11T19:11:36+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys",
+  "what": "Cut 10B round 4: the walk held through the drop to the car (Kai's round-3 note); Kai: we're there",
+  "rebuild": "python3 cleanroom/r10/cuts/make-B4.py && python3 cleanroom/r10/cuts/assemble.py B4 <out-dir> 0.12",
+  "decided": [
+   "Kai: I reckon we're there (cut 10B round 4 goes to Premiere)"
+  ]
+ },
+ {
+  "at": "2026-11-11T19:17:06+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys",
+  "what": "Cut 10B round 5: the opening two shots made equal (girder, then the gang on the parapet), banana basement out (Kai's round-4 note)",
+  "rebuild": "python3 cleanroom/r10/cuts/make-B5.py && python3 cleanroom/r10/cuts/assemble.py B5 <out-dir> 0.12"
  }
 ]

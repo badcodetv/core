@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h15-b-h15r10-b.mp4",
+ "made": "2026-11-11T18:19:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera down the aisle, framing holds. From the first half second the six bounce on the beat in their column. On the first beat MARINE's raised hand chops down flat toward the lens; on the next SILVER swings his gloved hand out and jabs a finger at the lens; then BOTTLE and PLUM lean out on opposite sides, arms swinging, while CRIMSON and RUST nod hard, shoulders dropping on each downbeat. A new move every beat, all six the same size. The steward stays put, tray of teacups perfectly level; countryside streams past the windows. Masks, gloves and suits unchanged. SFX: wheels clacking on rails, stamps, cloth.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h15r10-b.jpg",
+ "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw5",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h15r10-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "h15-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T18:02:35.675Z"
+ }
+}

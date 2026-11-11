@@ -1,0 +1,1324 @@
+{
+ "end": 187.0,
+ "fade_out": "fade the picture and song out after \"Don't just eat cake\", ending at 187.0 s",
+ "tempo_bpm": 92.29,
+ "beat_s": 0.6502,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0,
+   "end": 20.14
+  },
+  {
+   "id": "verse1",
+   "start": 20.14,
+   "end": 41.2
+  },
+  {
+   "id": "verse2",
+   "start": 41.2,
+   "end": 61.86
+  },
+  {
+   "id": "chorus1",
+   "start": 61.86,
+   "end": 82.76
+  },
+  {
+   "id": "verse3",
+   "start": 82.76,
+   "end": 105.36
+  },
+  {
+   "id": "verse4",
+   "start": 105.36,
+   "end": 123.74
+  },
+  {
+   "id": "chorus2",
+   "start": 123.74,
+   "end": 144.18
+  },
+  {
+   "id": "break",
+   "start": 144.18,
+   "end": 154.74
+  },
+  {
+   "id": "verse5",
+   "start": 154.74,
+   "end": 187.0
+  }
+ ],
+ "lines": [
+  {
+   "start": 1.34,
+   "end": 5.92,
+   "text": "🎶 Music 🎶",
+   "start_snapped": 1.335
+  },
+  {
+   "start": 7.8,
+   "end": 8.4,
+   "text": "Robbery!",
+   "start_snapped": 7.941
+  },
+  {
+   "start": 13.42,
+   "end": 17.4,
+   "text": "🎶 Music 🎶",
+   "start_snapped": 13.711
+  },
+  {
+   "start": 18.0,
+   "end": 20.14,
+   "text": "Dah, dah, dah, dah",
+   "start_snapped": 17.914
+  },
+  {
+   "start": 20.14,
+   "end": 22.84,
+   "text": "They say, you can't make money from a tree",
+   "start_snapped": 20.178
+  },
+  {
+   "start": 22.84,
+   "end": 25.26,
+   "text": "Let's see each day, make hay not free",
+   "start_snapped": 22.756
+  },
+  {
+   "start": 25.26,
+   "end": 27.1,
+   "text": "Ayy, work can get paid though",
+   "start_snapped": 25.356
+  },
+  {
+   "start": 27.1,
+   "end": 29.52,
+   "text": "Earning that dough, but where does it go?",
+   "start_snapped": 26.947
+  },
+  {
+   "start": 29.52,
+   "end": 31.0,
+   "text": "Nobody knows!",
+   "start_snapped": 29.187
+  },
+  {
+   "start": 31.3,
+   "end": 33.34,
+   "text": "Means of production, means of reduction",
+   "start_snapped": 31.161
+  },
+  {
+   "start": 33.34,
+   "end": 35.92,
+   "text": "Standards bleeding, landlords needing",
+   "start_snapped": 33.413
+  },
+  {
+   "start": 35.92,
+   "end": 38.68,
+   "text": "Quantitive easing, grandma freezing",
+   "start_snapped": 35.968
+  },
+  {
+   "start": 38.68,
+   "end": 41.2,
+   "text": "Simulus checks and necks get wrecked",
+   "start_snapped": 38.556
+  },
+  {
+   "start": 41.2,
+   "end": 43.72,
+   "text": "Rent seeking, I'm just about eating",
+   "start_snapped": 41.111
+  },
+  {
+   "start": 43.72,
+   "end": 46.28,
+   "text": "Sorry, did I interrupt your meeting?",
+   "start_snapped": 43.386
+  },
+  {
+   "start": 46.46,
+   "end": 48.68,
+   "text": "Remember kids, the Fed is not your friend",
+   "start_snapped": 46.312
+  },
+  {
+   "start": 48.68,
+   "end": 51.66,
+   "text": "It prints all the dollars that the government spends",
+   "start_snapped": 48.576
+  },
+  {
+   "start": 51.66,
+   "end": 55.3,
+   "text": "It's fiat system is insistent on debts existence",
+   "start_snapped": 51.78
+  },
+  {
+   "start": 55.3,
+   "end": 59.48,
+   "text": "Oh, oh, oh",
+   "start_snapped": 55.24
+  },
+  {
+   "start": 59.48,
+   "end": 61.86,
+   "text": "Have resistance to the facts I'm stating",
+   "start_snapped": 59.536
+  },
+  {
+   "start": 61.86,
+   "end": 63.92,
+   "text": "Robbery! Robbery!",
+   "start_snapped": 61.753
+  },
+  {
+   "start": 64.6,
+   "end": 66.46,
+   "text": "Call the police, it's a robbery",
+   "start_snapped": 64.714
+  },
+  {
+   "start": 67.04,
+   "end": 68.38,
+   "text": "Debasement, debasement",
+   "start_snapped": 66.966
+  },
+  {
+   "start": 68.38,
+   "end": 69.6,
+   "text": "It happened in the basement",
+   "start_snapped": 68.255
+  },
+  {
+   "start": 69.6,
+   "end": 72.26,
+   "text": "Printer is burring, now now what's a burring?",
+   "start_snapped": 69.532
+  },
+  {
+   "start": 72.52,
+   "end": 73.56,
+   "text": "Robbery! Robbery!",
+   "start_snapped": 72.423
+  },
+  {
+   "start": 74.32,
+   "end": 76.78,
+   "text": "Call the police, it's a robbery",
+   "start_snapped": 74.374
+  },
+  {
+   "start": 77.36,
+   "end": 78.7,
+   "text": "Debasement, debasement",
+   "start_snapped": 77.276
+  },
+  {
+   "start": 78.7,
+   "end": 79.98,
+   "text": "It happened in the basement",
+   "start_snapped": 78.576
+  },
+  {
+   "start": 79.98,
+   "end": 82.5,
+   "text": "Printer is burring, now now what's a burring?",
+   "start_snapped": 79.841
+  },
+  {
+   "start": 82.76,
+   "end": 84.48,
+   "text": "Stacks and stacks of elastic cash",
+   "start_snapped": 82.977
+  },
+  {
+   "start": 85.14,
+   "end": 87.8,
+   "text": "Distracted by a dyspraxic flash",
+   "start_snapped": 85.008
+  },
+  {
+   "start": 87.8,
+   "end": 90.06,
+   "text": "Marked angry at the shitty little drop",
+   "start_snapped": 87.934
+  },
+  {
+   "start": 90.06,
+   "end": 92.78,
+   "text": "The right and the left both witness the theft",
+   "start_snapped": 90.384
+  },
+  {
+   "start": 92.78,
+   "end": 95.26,
+   "text": "Blaming each other is a sick little cover",
+   "start_snapped": 92.764
+  },
+  {
+   "start": 95.26,
+   "end": 97.52,
+   "text": "Institutional, dilutional, the usual",
+   "start_snapped": 95.016
+  },
+  {
+   "start": 98.7,
+   "end": 100.4,
+   "text": "Distraction is the attraction",
+   "start_snapped": 98.558
+  },
+  {
+   "start": 100.4,
+   "end": 101.88,
+   "text": "The intention is tension",
+   "start_snapped": 100.496
+  },
+  {
+   "start": 101.88,
+   "end": 104.38,
+   "text": "Between the factions, divide and conquer",
+   "start_snapped": 102.005
+  },
+  {
+   "start": 104.38,
+   "end": 105.36,
+   "text": "Just look at the hand",
+   "start_snapped": 104.339
+  },
+  {
+   "start": 105.36,
+   "end": 106.8,
+   "text": "It's not your standard propaganda",
+   "start_snapped": 105.326
+  },
+  {
+   "start": 106.8,
+   "end": 108.24,
+   "text": "Worth a couple grand, ah!",
+   "start_snapped": 106.626
+  },
+  {
+   "start": 108.42,
+   "end": 110.54,
+   "text": "It is state level manipulation",
+   "start_snapped": 108.263
+  },
+  {
+   "start": 110.54,
+   "end": 113.46,
+   "text": "It is the devil with the radio station",
+   "start_snapped": 110.504
+  },
+  {
+   "start": 113.46,
+   "end": 115.76,
+   "text": "Stack up the vaults like a wheelbarrow",
+   "start_snapped": 113.406
+  },
+  {
+   "start": 115.76,
+   "end": 118.46,
+   "text": "Risk of default is really rather narrow",
+   "start_snapped": 115.647
+  },
+  {
+   "start": 118.46,
+   "end": 120.0,
+   "text": "Biggie said, wait!",
+   "start_snapped": 118.561
+  },
+  {
+   "start": 120.2,
+   "end": 121.16,
+   "text": "Rockin' 97",
+   "start_snapped": 120.186
+  },
+  {
+   "start": 121.16,
+   "end": 123.74,
+   "text": "Don't get high off your own supply",
+   "start_snapped": 121.452
+  },
+  {
+   "start": 123.74,
+   "end": 125.84,
+   "text": "Robbery! Robbery!",
+   "start_snapped": 123.716
+  },
+  {
+   "start": 126.48,
+   "end": 128.38,
+   "text": "Call the police, it's a robbery",
+   "start_snapped": 126.642
+  },
+  {
+   "start": 129.0,
+   "end": 130.3,
+   "text": "Debasement, debasement",
+   "start_snapped": 128.894
+  },
+  {
+   "start": 130.3,
+   "end": 131.62,
+   "text": "It happened in the basement",
+   "start_snapped": 130.183
+  },
+  {
+   "start": 131.62,
+   "end": 134.26,
+   "text": "Printer is burring, now now what's a burring?",
+   "start_snapped": 131.471
+  },
+  {
+   "start": 134.44,
+   "end": 136.1,
+   "text": "Robbery! Robbery!",
+   "start_snapped": 134.374
+  },
+  {
+   "start": 136.46,
+   "end": 138.74,
+   "text": "Call the police, it's a robbery",
+   "start_snapped": 136.301
+  },
+  {
+   "start": 139.3,
+   "end": 140.64,
+   "text": "Debasement, debasement",
+   "start_snapped": 139.215
+  },
+  {
+   "start": 140.64,
+   "end": 141.94,
+   "text": "It happened in the basement",
+   "start_snapped": 140.504
+  },
+  {
+   "start": 141.94,
+   "end": 144.18,
+   "text": "Printer is burring, now now what's a burring?",
+   "start_snapped": 141.793
+  },
+  {
+   "start": 144.18,
+   "end": 146.62,
+   "text": "You know the real star is Pablo Escobar",
+   "start_snapped": 144.033
+  },
+  {
+   "start": 146.62,
+   "end": 149.66,
+   "text": "Who has elastic bands, not plastic hands",
+   "start_snapped": 146.634
+  },
+  {
+   "start": 149.66,
+   "end": 152.1,
+   "text": "Stackin' up the cash by the grand",
+   "start_snapped": 149.722
+  },
+  {
+   "start": 152.1,
+   "end": 154.18,
+   "text": "Stand up plans are for the working man",
+   "start_snapped": 152.114
+  },
+  {
+   "start": 154.74,
+   "end": 157.04,
+   "text": "And this right here is a next level scam",
+   "start_snapped": 154.691
+  },
+  {
+   "start": 157.04,
+   "end": 159.84,
+   "text": "All gotten gains, no need to explain",
+   "start_snapped": 156.944
+  },
+  {
+   "start": 159.84,
+   "end": 162.54,
+   "text": "Bailin' out will never mean the same",
+   "start_snapped": 159.521
+  },
+  {
+   "start": 162.54,
+   "end": 164.92,
+   "text": "Own a printer and you don't feel winter",
+   "start_snapped": 162.435
+  },
+  {
+   "start": 164.92,
+   "end": 167.64,
+   "text": "Crime is asset inflation, passive creation",
+   "start_snapped": 165.024
+  },
+  {
+   "start": 167.64,
+   "end": 170.08,
+   "text": "Of a wealth gap that drives the situation",
+   "start_snapped": 167.602
+  },
+  {
+   "start": 170.08,
+   "end": 171.68,
+   "text": "Rockin' people get paid in money",
+   "start_snapped": 170.179
+  },
+  {
+   "start": 171.68,
+   "end": 173.94,
+   "text": "So it's not very funny when you print more",
+   "start_snapped": 171.781
+  },
+  {
+   "start": 173.94,
+   "end": 175.36,
+   "text": "And expect them not to worry",
+   "start_snapped": 174.057
+  },
+  {
+   "start": 175.94,
+   "end": 177.98,
+   "text": "Hungry people feed a revolution",
+   "start_snapped": 175.984
+  },
+  {
+   "start": 177.98,
+   "end": 179.94,
+   "text": "Then it's retribution, perhaps some execution",
+   "start_snapped": 177.935
+  },
+  {
+   "start": 180.52,
+   "end": 183.26,
+   "text": "It's time to give, not just to take",
+   "start_snapped": 180.547
+  },
+  {
+   "start": 183.26,
+   "end": 184.62,
+   "text": "But for heaven's sake",
+   "start_snapped": 183.542
+  },
+  {
+   "start": 184.62,
+   "end": 187.0,
+   "text": "Don't just eat cake",
+   "start_snapped": 184.599
+  }
+ ],
+ "events": [
+  {
+   "t": 10.82,
+   "what": "THE DROP (Kai: \"the very moment that the music drops\", cut 9 cut late at 11.15)"
+  },
+  {
+   "t": 20.14,
+   "what": "the words start (Kai: first rapping shot here)"
+  },
+  {
+   "t": 61.86,
+   "what": "chorus 1 starts: cut into the car chase (Kai: cut 9 was slightly early)"
+  },
+  {
+   "t": 123.74,
+   "what": "chorus 2 starts: same visuals as chorus 1"
+  },
+  {
+   "t": 144.18,
+   "what": "the break"
+  },
+  {
+   "t": 176.0,
+   "what": "about here (Kai noted 2:56): the tone of the music changes dramatically, so should the picture"
+  },
+  {
+   "t": 187.0,
+   "what": "the end: \"Don't just eat cake\", fade out, no outro"
+  }
+ ],
+ "beats": [
+  0.209,
+  0.859,
+  1.509,
+  2.136,
+  2.763,
+  3.413,
+  4.063,
+  4.69,
+  5.341,
+  5.991,
+  6.641,
+  7.291,
+  7.941,
+  8.591,
+  9.218,
+  9.868,
+  10.519,
+  11.146,
+  11.773,
+  12.423,
+  13.073,
+  13.723,
+  14.35,
+  15.0,
+  15.65,
+  16.3,
+  16.951,
+  17.601,
+  18.251,
+  18.901,
+  19.551,
+  20.178,
+  20.828,
+  21.455,
+  22.105,
+  22.756,
+  23.406,
+  24.033,
+  24.683,
+  25.356,
+  25.983,
+  26.61,
+  27.283,
+  27.91,
+  28.561,
+  29.211,
+  29.861,
+  30.511,
+  31.161,
+  31.788,
+  32.438,
+  33.088,
+  33.739,
+  34.366,
+  35.016,
+  35.666,
+  36.27,
+  36.943,
+  37.57,
+  38.243,
+  38.87,
+  39.52,
+  40.101,
+  40.774,
+  41.448,
+  42.098,
+  42.748,
+  43.398,
+  44.071,
+  44.698,
+  45.349,
+  45.999,
+  46.626,
+  47.276,
+  47.926,
+  48.576,
+  49.203,
+  49.853,
+  50.503,
+  51.154,
+  51.78,
+  52.431,
+  53.081,
+  53.731,
+  54.381,
+  55.031,
+  55.658,
+  56.308,
+  56.959,
+  57.585,
+  58.236,
+  58.886,
+  59.536,
+  60.186,
+  60.836,
+  61.463,
+  62.113,
+  62.764,
+  63.414,
+  64.064,
+  64.714,
+  65.341,
+  65.991,
+  66.641,
+  67.291,
+  67.942,
+  68.569,
+  69.219,
+  69.846,
+  70.496,
+  71.146,
+  71.796,
+  72.423,
+  73.073,
+  73.723,
+  74.374,
+  75.024,
+  75.674,
+  76.324,
+  76.951,
+  77.601,
+  78.251,
+  78.901,
+  79.528,
+  80.155,
+  80.829,
+  81.479,
+  82.129,
+  82.779,
+  83.406,
+  84.033,
+  84.66,
+  85.357,
+  85.983,
+  86.634,
+  87.284,
+  87.934,
+  88.561,
+  89.188,
+  89.838,
+  90.488,
+  91.138,
+  91.788,
+  92.439,
+  93.089,
+  93.716,
+  94.366,
+  95.039,
+  95.689,
+  96.34,
+  96.99,
+  97.617,
+  98.244,
+  98.871,
+  99.521,
+  100.171,
+  100.821,
+  101.471,
+  102.121,
+  102.772,
+  103.398,
+  104.025,
+  104.676,
+  105.326,
+  105.976,
+  106.626,
+  107.276,
+  107.95,
+  108.577,
+  109.203,
+  109.854,
+  110.504,
+  111.154,
+  111.781,
+  112.431,
+  113.081,
+  113.731,
+  114.381,
+  115.055,
+  115.659,
+  116.286,
+  116.959,
+  117.609,
+  118.236,
+  118.886,
+  119.536,
+  120.186,
+  120.813,
+  121.464,
+  122.091,
+  122.741,
+  123.391,
+  124.041,
+  124.691,
+  125.341,
+  125.991,
+  126.642,
+  127.292,
+  127.942,
+  128.569,
+  129.219,
+  129.869,
+  130.496,
+  131.146,
+  131.796,
+  132.423,
+  133.074,
+  133.724,
+  134.374,
+  135.024,
+  135.651,
+  136.301,
+  136.951,
+  137.601,
+  138.252,
+  138.902,
+  139.529,
+  140.179,
+  140.829,
+  141.479,
+  142.106,
+  142.756,
+  143.406,
+  144.033,
+  144.684,
+  145.334,
+  145.984,
+  146.634,
+  147.284,
+  147.911,
+  148.561,
+  149.119,
+  149.722,
+  150.396,
+  151.092,
+  151.789,
+  152.439,
+  153.043,
+  153.693,
+  154.366,
+  155.016,
+  155.667,
+  156.294,
+  156.944,
+  157.594,
+  158.244,
+  158.894,
+  159.544,
+  160.171,
+  160.821,
+  161.495,
+  162.122,
+  162.749,
+  163.399,
+  164.049,
+  164.699,
+  165.349,
+  165.999,
+  166.65,
+  167.277,
+  167.927,
+  168.577,
+  169.227,
+  169.854,
+  170.504,
+  171.131,
+  171.781,
+  172.431,
+  173.082,
+  173.732,
+  174.382,
+  175.009,
+  175.659,
+  176.309,
+  176.959,
+  177.609,
+  178.26,
+  178.91,
+  179.56,
+  180.21,
+  180.883,
+  181.534,
+  182.207,
+  182.88,
+  183.554,
+  184.25,
+  184.947,
+  185.644,
+  186.363,
+  187.014,
+  187.664
+ ],
+ "bars": [
+  1.509,
+  4.063,
+  6.641,
+  9.218,
+  11.773,
+  14.35,
+  16.951,
+  19.551,
+  22.105,
+  24.683,
+  27.283,
+  29.861,
+  32.438,
+  35.016,
+  37.57,
+  40.101,
+  42.748,
+  45.349,
+  47.926,
+  50.503,
+  53.081,
+  55.658,
+  58.236,
+  60.836,
+  63.414,
+  65.991,
+  68.569,
+  71.146,
+  73.723,
+  76.324,
+  78.901,
+  81.479,
+  84.033,
+  86.634,
+  89.188,
+  91.788,
+  94.366,
+  96.99,
+  99.521,
+  102.121,
+  104.676,
+  107.276,
+  109.854,
+  112.431,
+  115.055,
+  117.609,
+  120.186,
+  122.741,
+  125.341,
+  127.942,
+  130.496,
+  133.074,
+  135.651,
+  138.252,
+  140.829,
+  143.406,
+  145.984,
+  148.561,
+  151.092,
+  153.693,
+  156.294,
+  158.894,
+  161.495,
+  164.049,
+  166.65,
+  169.227,
+  171.781,
+  174.382,
+  176.959,
+  179.56,
+  182.207,
+  184.947,
+  187.664
+ ],
+ "strong_hits": [
+  0.209,
+  1.335,
+  1.66,
+  1.974,
+  2.113,
+  2.612,
+  2.763,
+  3.727,
+  5.979,
+  11.471,
+  11.773,
+  12.098,
+  12.411,
+  13.711,
+  14.048,
+  14.35,
+  16.289,
+  16.625,
+  17.264,
+  17.578,
+  17.914,
+  18.564,
+  26.598,
+  26.947,
+  27.899,
+  28.235,
+  28.758,
+  29.187,
+  32.984,
+  34.331,
+  34.691,
+  39.776,
+  40.275,
+  40.519,
+  41.111,
+  43.386,
+  44.687,
+  45.616,
+  49.064,
+  50.178,
+  50.341,
+  50.48,
+  53.069,
+  54.358,
+  55.24,
+  55.647,
+  58.224,
+  61.463,
+  61.753,
+  63.077,
+  69.195,
+  70.484,
+  71.784,
+  79.517,
+  82.106,
+  82.977,
+  83.394,
+  83.627,
+  85.96,
+  86.309,
+  86.831,
+  90.384,
+  91.463,
+  95.016,
+  97.593,
+  99.509,
+  102.005,
+  104.339,
+  104.85,
+  105.001,
+  105.326,
+  106.289,
+  106.626,
+  107.265,
+  111.131,
+  111.781,
+  113.07,
+  114.358,
+  115.066,
+  115.334,
+  115.647,
+  121.452,
+  131.135,
+  132.423,
+  133.712,
+  141.456,
+  142.745,
+  144.033,
+  149.107,
+  150.024,
+  150.372,
+  153.031,
+  154.03,
+  159.208,
+  159.521,
+  168.879,
+  171.119,
+  172.431,
+  172.768,
+  174.544,
+  175.009,
+  176.298,
+  176.623,
+  178.724,
+  178.887,
+  181.859,
+  182.486,
+  182.869,
+  183.542,
+  185.62,
+  185.899,
+  186.363,
+  187.002
+ ],
+ "loudness_per_bar": [
+  {
+   "bar_start": 1.509,
+   "loudness": 0.34
+  },
+  {
+   "bar_start": 4.063,
+   "loudness": 0.42
+  },
+  {
+   "bar_start": 6.641,
+   "loudness": 0.52
+  },
+  {
+   "bar_start": 9.218,
+   "loudness": 0.7
+  },
+  {
+   "bar_start": 11.773,
+   "loudness": 0.64
+  },
+  {
+   "bar_start": 14.35,
+   "loudness": 0.72
+  },
+  {
+   "bar_start": 16.951,
+   "loudness": 0.58
+  },
+  {
+   "bar_start": 19.551,
+   "loudness": 0.66
+  },
+  {
+   "bar_start": 22.105,
+   "loudness": 0.64
+  },
+  {
+   "bar_start": 24.683,
+   "loudness": 0.63
+  },
+  {
+   "bar_start": 27.283,
+   "loudness": 0.58
+  },
+  {
+   "bar_start": 29.861,
+   "loudness": 0.61
+  },
+  {
+   "bar_start": 32.438,
+   "loudness": 0.67
+  },
+  {
+   "bar_start": 35.016,
+   "loudness": 0.69
+  },
+  {
+   "bar_start": 37.57,
+   "loudness": 0.6
+  },
+  {
+   "bar_start": 40.101,
+   "loudness": 0.57
+  },
+  {
+   "bar_start": 42.748,
+   "loudness": 0.45
+  },
+  {
+   "bar_start": 45.349,
+   "loudness": 0.63
+  },
+  {
+   "bar_start": 47.926,
+   "loudness": 0.7
+  },
+  {
+   "bar_start": 50.503,
+   "loudness": 0.84
+  },
+  {
+   "bar_start": 53.081,
+   "loudness": 0.69
+  },
+  {
+   "bar_start": 55.658,
+   "loudness": 0.76
+  },
+  {
+   "bar_start": 58.236,
+   "loudness": 0.71
+  },
+  {
+   "bar_start": 60.836,
+   "loudness": 0.62
+  },
+  {
+   "bar_start": 63.414,
+   "loudness": 0.78
+  },
+  {
+   "bar_start": 65.991,
+   "loudness": 0.87
+  },
+  {
+   "bar_start": 68.569,
+   "loudness": 0.78
+  },
+  {
+   "bar_start": 71.146,
+   "loudness": 0.9
+  },
+  {
+   "bar_start": 73.723,
+   "loudness": 0.84
+  },
+  {
+   "bar_start": 76.324,
+   "loudness": 0.87
+  },
+  {
+   "bar_start": 78.901,
+   "loudness": 0.78
+  },
+  {
+   "bar_start": 81.479,
+   "loudness": 0.66
+  },
+  {
+   "bar_start": 84.033,
+   "loudness": 0.4
+  },
+  {
+   "bar_start": 86.634,
+   "loudness": 0.6
+  },
+  {
+   "bar_start": 89.188,
+   "loudness": 0.79
+  },
+  {
+   "bar_start": 91.788,
+   "loudness": 0.79
+  },
+  {
+   "bar_start": 94.366,
+   "loudness": 0.53
+  },
+  {
+   "bar_start": 96.99,
+   "loudness": 0.64
+  },
+  {
+   "bar_start": 99.521,
+   "loudness": 0.76
+  },
+  {
+   "bar_start": 102.121,
+   "loudness": 0.79
+  },
+  {
+   "bar_start": 104.676,
+   "loudness": 0.62
+  },
+  {
+   "bar_start": 107.276,
+   "loudness": 0.72
+  },
+  {
+   "bar_start": 109.854,
+   "loudness": 0.75
+  },
+  {
+   "bar_start": 112.431,
+   "loudness": 0.76
+  },
+  {
+   "bar_start": 115.055,
+   "loudness": 0.74
+  },
+  {
+   "bar_start": 117.609,
+   "loudness": 0.84
+  },
+  {
+   "bar_start": 120.186,
+   "loudness": 0.65
+  },
+  {
+   "bar_start": 122.741,
+   "loudness": 0.74
+  },
+  {
+   "bar_start": 125.341,
+   "loudness": 0.83
+  },
+  {
+   "bar_start": 127.942,
+   "loudness": 0.89
+  },
+  {
+   "bar_start": 130.496,
+   "loudness": 0.78
+  },
+  {
+   "bar_start": 133.074,
+   "loudness": 0.86
+  },
+  {
+   "bar_start": 135.651,
+   "loudness": 0.82
+  },
+  {
+   "bar_start": 138.252,
+   "loudness": 0.89
+  },
+  {
+   "bar_start": 140.829,
+   "loudness": 0.78
+  },
+  {
+   "bar_start": 143.406,
+   "loudness": 0.77
+  },
+  {
+   "bar_start": 145.984,
+   "loudness": 0.59
+  },
+  {
+   "bar_start": 148.561,
+   "loudness": 0.56
+  },
+  {
+   "bar_start": 151.092,
+   "loudness": 0.61
+  },
+  {
+   "bar_start": 153.693,
+   "loudness": 0.71
+  },
+  {
+   "bar_start": 156.294,
+   "loudness": 0.83
+  },
+  {
+   "bar_start": 158.894,
+   "loudness": 0.67
+  },
+  {
+   "bar_start": 161.495,
+   "loudness": 0.69
+  },
+  {
+   "bar_start": 164.049,
+   "loudness": 0.92
+  },
+  {
+   "bar_start": 166.65,
+   "loudness": 0.84
+  },
+  {
+   "bar_start": 169.227,
+   "loudness": 1.0
+  },
+  {
+   "bar_start": 171.781,
+   "loudness": 0.91
+  },
+  {
+   "bar_start": 174.382,
+   "loudness": 0.83
+  },
+  {
+   "bar_start": 176.959,
+   "loudness": 0.51
+  },
+  {
+   "bar_start": 179.56,
+   "loudness": 0.42
+  },
+  {
+   "bar_start": 182.207,
+   "loudness": 0.39
+  },
+  {
+   "bar_start": 184.947,
+   "loudness": 0.31
+  },
+  {
+   "bar_start": 187.664,
+   "loudness": NaN
+  }
+ ]
+}

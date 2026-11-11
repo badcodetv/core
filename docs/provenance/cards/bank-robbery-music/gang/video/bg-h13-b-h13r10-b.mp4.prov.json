@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h13-b-h13r10-b.mp4",
+ "made": "2026-11-11T18:32:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first half-second CRIMSON, crouched at the front, jabs his finger at the lens on every beat, head pushed forward; on the third beat he sweeps the arm wide and jabs again. Behind him PLUM, BOTTLE, MARINE and SILVER bounce bent-kneed, chopping flat palms down on each beat, then all four swing their hands at the lens together, then back to chopping. RUST keeps polishing the propeller with his handkerchief, ignoring them. Propellers stay still, the plane stays parked. Six men throughout; masks, triangles, gloves and suits unchanged. SFX: feet thudding on dry grass, cloth, summer wind, no voices.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h13r10-b.jpg",
+ "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw4",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h13r10-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "h13-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T18:20:19.211Z"
+ }
+}

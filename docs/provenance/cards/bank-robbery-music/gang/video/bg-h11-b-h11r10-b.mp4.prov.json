@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h11-b-h11r10-b.mp4",
+ "made": "2026-11-11T18:19:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. The raised fists punch down on the first beat, every man landing a heel bounce on the ice together. On the next, SILVER, nearest, leans into the lens and jabs a finger at it; PLUM and MARINE chop flat palms down beside him. CRIMSON pumps his fist back up; RUST and BOTTLE, at the far end, rock palms side to side, shoulders dropping on each beat. Then all six throw fists high again, still bouncing. Masks, gloves and suits stay unchanged; snow keeps falling through the headlamp beams, the sedans stay still. SFX: boots crunching snow, cloth, wind, stamps on the beat. No voices.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h11r10-b.jpg",
+ "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw2",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h11r10-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "h11-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-11T17:52:45.639Z"
+ }
+}

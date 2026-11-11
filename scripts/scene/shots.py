@@ -59,11 +59,15 @@ def shots(scene_dir):
         for k in ('model', 'aspect', 'mode'):
             s.setdefault(k, video[k])  # an "extra" job may carry its own
         src = sc.still(s['still'])
+        s['out'] = str(sc.video / f"{sc.prefix}-{s['key']}-{s['still']}.mp4")
         if not src:
-            sys.exit(f"{s['key']}: no still {s['still']} under {sc.moodboard}")
+            # the still lives on another machine (Jack's, say): report it and leave the job without a
+            # plate, so run.mts skips it instead of refusing to run the jobs whose stills ARE here
+            print(f"{s['key']}: no still {s['still']} under {sc.moodboard} on this machine, skipped", file=sys.stderr)
+            s['src'] = s['plate'] = None
+            continue
         s['src'] = str(src)
         s['plate'] = f"{sc.prefix}-{s['key']}-{s['still']}.jpg"
-        s['out'] = str(sc.video / f"{sc.prefix}-{s['key']}-{s['still']}.mp4")
     return sorted(out, key=lambda s: s['key'])
 
 

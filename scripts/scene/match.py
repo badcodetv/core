@@ -43,7 +43,7 @@ def main(scene_dir, apply):
     inbox = Scene(scene_dir).video / 'inbox'
     # What run.mts actually asked Flow for, per shot (written at submit). Older harvests have none.
     used = json.loads((inbox / 'settings.json').read_text()) if (inbox / 'settings.json').exists() else {}
-    shots = all_shots(scene_dir)
+    shots = [s for s in all_shots(scene_dir) if s.get('src')]  # a still on another machine: nothing to match against
     plates = {s['key']: sig(s['src'], False) for s in shots}
     by_key = {s['key']: s for s in shots}
     claims = {}
