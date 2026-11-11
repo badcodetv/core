@@ -14,7 +14,7 @@
     "cron": "0 6 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": false,
+    "enabled": true,
     "message": "Sit today's cabinet."
   },
   {
