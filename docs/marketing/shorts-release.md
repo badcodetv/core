@@ -12,7 +12,7 @@ Each claim is labelled by its source:
 
 TikTok's and Meta's help centres could not be read by our tools, so **every TikTok and Instagram number here is
 secondary or hearsay until we do one private test upload per app.** Re-cutting the existing films into shorts is a
-different job, covered in [`shorts-factory.md`](./shorts-factory.md).
+different job, covered in [`shorts-factory.md`](./shorts-factory.md). **What makes shorts grow a channel, the funnel to the films, site and email list, and the set-up checklist: [`shorts-growth.md`](./shorts-growth.md).**
 
 ## The route
 

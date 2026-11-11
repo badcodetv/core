@@ -76,5 +76,6 @@ picks the stills, OKs words and spend). What is different for a short:
   - Upload the clean master natively to each app, never a watermarked copy. TikTok goes up from the web.
   - Stay under 60 s, because past 60 s a copyright claim blocks a YouTube Short.
   - 🔴 Turn the AI-content label on, on every app.
+- **Growth and the funnel: [`docs/marketing/shorts-growth.md`](../../../docs/marketing/shorts-growth.md)** (2026-11-11, ten researchers). State the claim in frame one; one line worth forwarding; YouTube's Related Video link set by hand on every short (pinned comments are not clickable on Shorts); one landing page with `?src=` tags and a free offer for the email list; judge a short at 48–72 h against our own median, a series after 10–12.
 - **Shipping:** the cut goes to `chief-of-staff` (it writes the caption via `marketing-producer`, checks via
   `marketing-gatekeeper`, and logs the post). Then mark the short DONE on the list.

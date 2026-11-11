@@ -148,6 +148,8 @@ back to DejaVu Sans Mono Bold. ⬜ Dropping the real `.ttf` into `~/.fonts` and 
 
 ## 4. What actually drives views — 2026 research
 
+> ⚠️ **Re-checked 2026-11-11 in [`shorts-growth.md`](./shorts-growth.md)**, which regrades or corrects several claims below (pinned links are not clickable on YouTube Shorts; the swipe-away and 30–60 s thresholds are single-vendor; "83% muted" and "37%" are unsourced). Where they disagree, shorts-growth.md wins.
+
 Graded to the house convention: ✅ verified against multiple current sources · ◻ single-source
 or practitioner claim, treat as provisional.
 
