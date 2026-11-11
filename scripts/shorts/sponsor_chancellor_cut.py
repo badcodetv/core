@@ -132,8 +132,10 @@ def main():
             bl.append({'i': j, 'who': ln['who'].lower(), 'name': ln['who'].title(), 't': round(tt, 2), 'dur': round(dd, 2),
                        'text': ln['text'], 'by': ln.get('by', 'claude')})
         beats.append({'id': beat, 'title': TITLES[beat], 'start': starts[i], 'dur': d, 'see': SEE[beat], 'lines': bl})
-    edl = {'sequence': 'short-sponsor-a-chancellor-r4', 'title': 'Sponsor a Chancellor Timeline',
-           'heading': 'BadCode Shorts ▲ Sponsor a Chancellor, rough cut 4',
+    notes = SCENE / 'cut-notes.json'                       # the round number follows the notes, so the heading never lags (Jack, r5)
+    rnd = json.loads(notes.read_text()).get('round', 1) if notes.exists() else 1
+    edl = {'sequence': f'short-sponsor-a-chancellor-r{rnd}', 'title': 'Sponsor a Chancellor Timeline',
+           'heading': f'BadCode Shorts ▲ Sponsor a Chancellor, rough cut {rnd}',
            'intro': 'All five clips with the picked voices (narrator: Achernar; nan: Vindemiatrix, lip-synced). Note anything: a beat, a shot, a line, a sound, or a single frame.',
            'fps': FPS, 'total': TOTAL, 'beats': beats,
            'video': [{'file': str(VID / s[1]), 'in': s[2], 'start': starts[i], 'dur': s[3], 'beat': s[0], 'source': str(VID / s[1]), 'looped': False}
