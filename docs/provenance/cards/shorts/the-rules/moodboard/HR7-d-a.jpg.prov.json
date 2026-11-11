@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/HR7-d-a.jpg",
+ "made": "2026-11-11T13:06:21.949Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "In the first picture, the rust knitted mask closest to the lens (bottom left) and the navy mask behind it (middle, by the shelves) both show only a faint smudge inside their white rings. Replace each smudge with a crisp, bright red felt triangle the same size and place as on the hi-vis figure's black mask: upper right inside the ring, point down. Change nothing else at all.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/HR6-d-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/HR6-d-a.jpg",
+   "/home/kai/.cache/badcode-refs/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "777869d2-9e1a-4ee7-a75f-de96deebf687"
+}

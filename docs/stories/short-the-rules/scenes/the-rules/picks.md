@@ -155,3 +155,13 @@ there's now seven… can we recut it just with five people?"* → `HR3-a-a/b` (H
 figures removed; ref CL3-c-a for the five), then a triangle touch-up on rust and navy: **`HR4-a-a`** (five people,
 every mask passes zoomed). On the clips page v8 for approval. Rule kept for this short: **the gang is five** (sage/grey
 hoodie, mustard/olive bomber, navy/hi-vis, rust/black puffer, charcoal/dark coat).
+Kai: *"HR4A-A looks good. I think maybe we should have two of them right up in the camera and the other three up on the
+shelves… I quite like HR2-A-B and HR2-A-A. There's just too many people… a couple of the people right up in the face of
+the camera and a couple on the side. Could we try that just with the right number of people?"* → `HR5-a-a…d` (from
+HR2-a-a + CL3-c-a for the five): a had six, b lost the rings, c/d five. d + two triangle passes → **`HR7-d-b`**
+(rust and hi-vis in the lens, grey and mustard on the racks, navy reaching up behind; the mustard triangle faint).
+On the clips page v9 for approval.
+
+Kai, same message, on the music: the drop gets re-made, *"a much more A-men jump-up break… too many high-pitched
+synthesizers… A mid-90s old-school A-men jungle would be perfect. I'd like to do a couple of iterations"*; *"the
+nursery rhyme part is perfect right now"*. Round `../../songs/dnb-r2`.
