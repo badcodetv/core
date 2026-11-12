@@ -39,7 +39,8 @@
   "boards": {
     "moodboard": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
     "dialogue": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
-    "storyboard": "https://claude.ai/artifact/61kEE1nStEZifZfHit7mxN"
+    "storyboard": "https://claude.ai/artifact/61kEE1nStEZifZfHit7mxN",
+    "timeline": "https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC"
   },
   "dialogue": {
     "page": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
@@ -50,5 +51,10 @@
   "styles": {
     "ink": "Round 1: 1910s ink",
     "horror": "Round 2: ominous horror"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/cut/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/cut/preview.mp4",
+    "script": "python3 scripts/shorts/same_bench_cut.py"
   }
 }
