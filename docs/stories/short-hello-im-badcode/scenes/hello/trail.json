@@ -6,5 +6,24 @@
   "url": "https://claude.ai/artifact/YMxBMusYT79tk2XsADbNAL",
   "what": "mood board r1: nine clean-room looks",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-hello-im-badcode/scenes/hello design/hello-im-badcode/moodboard.html"
+ },
+ {
+  "at": "2026-11-12T13:37:59+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "what": "votes and notes read",
+  "decided": [
+   "Jack: C1-a yes; figure 'mask is wrong'; future 'please come up with more'; new vibe: 90s/00s happy nostalgia compilation, clean room"
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 4
+ },
+ {
+  "at": "2026-11-12T14:03:48+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/YMxBMusYT79tk2XsADbNAL",
+  "what": "mood board r2: 90s/00s nostalgia compilation (clean room r2), masks corrected",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-hello-im-badcode/scenes/hello design/hello-im-badcode/moodboard.html"
  }
 ]

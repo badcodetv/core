@@ -1,39 +1,46 @@
 {
-  "story": "short-hello-im-badcode",
-  "scene": "hello",
-  "prefix": "hb",
-  "title": "Hello, I'm BadCode",
-  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Hello, I'm BadCode",
-  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode",
-  "beats": [
-    {
-      "key": "future",
-      "at": "0:00",
-      "name": "A. The future",
-      "blurb": "The future that went wrong, never explained. Voice over, calm: \"Hello. I'm from the future.\""
-    },
-    {
-      "key": "figure",
-      "at": "0:04",
-      "name": "B. It didn't go well",
-      "blurb": "Cut to the balaclava figure, straight to camera, deadpan: \"It didn't go well.\""
-    },
-    {
-      "key": "button",
-      "at": "0:07",
-      "name": "C. Watch this space",
-      "blurb": "\"Watch this space.\" Then the logo."
-    }
-  ],
-  "video": {
-    "model": "Omni 1.2 Flash",
-    "aspect": "9:16",
-    "mode": "Frames",
-    "duration": 6
+ "story": "short-hello-im-badcode",
+ "scene": "hello",
+ "prefix": "hb",
+ "title": "Hello, I'm BadCode",
+ "heading": "BadCode Shorts <span class=\"tri\">▲</span> Hello, I'm BadCode",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode",
+ "beats": [
+  {
+   "key": "future",
+   "at": "0:00",
+   "name": "A. The future",
+   "blurb": "The future that went wrong, never explained. Voice over, calm: \"Hello. I'm from the future.\""
   },
-  "flow_project": "99357c2f-11c0-4909-94a8-adc5a2bbd692",
-  "moodboard_intro": "Round 1: nine different looks, each written by a separate writer. The balaclava ring and triangle get perfected on the look you pick. Tap This, Maybe or No; leave a note per beat.",
-  "boards": {
-    "moodboard": "https://claude.ai/artifact/YMxBMusYT79tk2XsADbNAL"
+  {
+   "key": "figure",
+   "at": "0:04",
+   "name": "B. It didn't go well",
+   "blurb": "Cut to the balaclava figure, straight to camera, deadpan: \"It didn't go well.\""
+  },
+  {
+   "key": "button",
+   "at": "0:07",
+   "name": "C. Watch this space",
+   "blurb": "\"Watch this space.\" Then the logo."
   }
+ ],
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "9:16",
+  "mode": "Frames",
+  "duration": 6
+ },
+ "flow_project": "99357c2f-11c0-4909-94a8-adc5a2bbd692",
+ "moodboard_intro": "Round 2: the whole thing as a 90s/00s happy-memories compilation, nine new clean-room writers. Five more options for the happy past (your note), the figure with the mask corrected (big ring round the whole face, no eyes, triangle high on the right), and a new button to set against your blue-hour pick.",
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/YMxBMusYT79tk2XsADbNAL"
+ },
+ "board_round": 2,
+ "picked": [
+  [
+   "C1-a",
+   "Blue hour (your r1 This)"
+  ]
+ ]
 }

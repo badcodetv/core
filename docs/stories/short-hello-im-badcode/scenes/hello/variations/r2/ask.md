@@ -1,0 +1,1 @@
+there is a weird old 00s/90s nostalgia, videos, where it is a compilation of happy things from that time. please find stuff like that and that be the vibe of the whole thing. read the notes Please clean room it all and research the internet to achieve it. Thanks.

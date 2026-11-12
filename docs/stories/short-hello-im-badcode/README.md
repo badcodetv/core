@@ -14,7 +14,7 @@ Jack, 2026-11-12: *"lets mess around with this."*
 **Point:** who BadCode is, in one breath: received wisdom from a future that already went wrong (CLAUDE.md). Sarcastic, total authority, nurturing underneath.
 
 ## Checks owed
-- 🔴 **The balaclava is the brand rule** (`docs/brand/README.md`): white ring and triangle over the LEFT eye, no skin, gloves, no robot parts. Check every triangle zoomed in.
+- 🔴 **The balaclava is the brand rule** (`docs/brand/README.md`): a large white ring stitched round the WHOLE face, one red triangle high inside the ring over the wearer's LEFT eye (right of picture, ~2 o'clock), NO eye/nose/mouth holes, no skin, gloves, no robot parts. Reference: docs/brand/balaclava/mask-reference.jpg. Check every triangle zoomed in.
 - 🔴 **The logo is the real logo files**, laid in by ffmpeg/Premiere, never drawn by Flow.
 - ⬜ `marketing-gatekeeper` before anything goes out. Nothing is uploaded for now (Jack, 2026-11-12).
 

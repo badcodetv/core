@@ -1,0 +1,2 @@
+Mood board round 1 (2026-11-12): nine clean-room looks. A: an aerial wall between villas and a slum, a rotting banquet on a yacht, a painted bored kid by dead data centres, an evicted terrace. B: a balaclava figure in a council office, a 1970s fireside broadcast, a flash-lit doorstep close-up, a drained pool. C: an empty blue-hour horizon.
+Jack's votes and notes: C1-a (blue hour) "yes". Figure beat: "mask is wrong thanks". Future beat: "please come up with more thanks". Then the message in ask.md.
