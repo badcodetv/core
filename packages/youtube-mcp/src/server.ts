@@ -17,16 +17,19 @@ import { existsSync, statSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join, resolve } from 'node:path'
 import { NAME, VERSION } from './version'
-import { clientCreds, imageMime, loadEnvFile, parseId, toLocalPath, tokenFile, videoMime } from './config'
+import { freshClientCreds, imageMime, loadEnvFile, parseId, toLocalPath, tokenFile, videoMime } from './config'
 import { AuthError, TokenSource, readToken } from './auth'
 import { ApiError, YouTube, summarise, type VideoChanges } from './api'
 import { appendLog, writeSnapshot } from './record'
 
 const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..')
 const RECORD_DIR = join(REPO_ROOT, 'docs', 'youtube')
+// The env as it was BEFORE .env was merged in: a real variable pinned in the shell wins over the file.
+const REAL_ENV = { YOUTUBE_CLIENT_ID: process.env.YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET: process.env.YOUTUBE_CLIENT_SECRET }
 loadEnvFile(REPO_ROOT)
+const creds = () => freshClientCreds(REPO_ROOT, REAL_ENV)
 
-const tokens = new TokenSource(clientCreds(), tokenFile())
+const tokens = new TokenSource(creds, tokenFile())
 const yt = new YouTube(tokens)
 
 type Result = { content: { type: 'text'; text: string }[]; structuredContent?: Record<string, unknown>; isError?: boolean }
@@ -91,11 +94,11 @@ server.registerTool(
     inputSchema: {},
   },
   async () => {
-    const creds = !!clientCreds()
+    const hasClient = !!creds()
     const file = tokenFile()
     const stored = readToken(file)
-    const base = { clientConfigured: creds, tokenFile: file, signedIn: !!stored, signedInAt: stored?.obtained_at }
-    if (!creds) return ok({ ...base, hint: HINTS.NO_CLIENT })
+    const base = { clientConfigured: hasClient, tokenFile: file, signedIn: !!stored, signedInAt: stored?.obtained_at }
+    if (!hasClient) return ok({ ...base, hint: HINTS.NO_CLIENT })
     if (!stored) return ok({ ...base, hint: HINTS.NOT_SIGNED_IN })
     try {
       const ch = await yt.myChannel()

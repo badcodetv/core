@@ -48,13 +48,15 @@ export class TokenSource {
   private access: { token: string; expiresAt: number } | null = null
 
   constructor(
-    private creds: ClientCreds | null,
+    /** Called on every refresh, so a fixed .env is picked up without restarting Claude. */
+    private creds: () => ClientCreds | null,
     private file: string,
   ) {}
 
   async accessToken(): Promise<string> {
     if (this.access && Date.now() < this.access.expiresAt - 60_000) return this.access.token
-    if (!this.creds) {
+    const creds = this.creds()
+    if (!creds) {
       throw new AuthError('NO_CLIENT', 'YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET are not set (.env at the repo root).')
     }
     const stored = readToken(this.file)
@@ -63,8 +65,8 @@ export class TokenSource {
       method: 'POST',
       headers: { 'content-type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({
-        client_id: this.creds.clientId,
-        client_secret: this.creds.clientSecret,
+        client_id: creds.clientId,
+        client_secret: creds.clientSecret,
         refresh_token: stored.refresh_token,
         grant_type: 'refresh_token',
       }),

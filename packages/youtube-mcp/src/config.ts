@@ -60,6 +60,25 @@ export function parseEnvFile(content: string): Record<string, string> {
   return out
 }
 
+/**
+ * Client credentials read FRESH each time: a real environment variable (set before this process
+ * read .env) wins, otherwise the current contents of .env.
+ *
+ * 🔴 Why: the server is started when Claude starts. On 2026-11-12 Kai fixed .env after that, and
+ * every call failed with `unauthorized_client` because the server still held the old client id
+ * (a different Cloud project) from startup. Reading .env on each refresh removes the restart.
+ */
+export function freshClientCreds(repoRoot: string, realEnv: Record<string, string | undefined>): ClientCreds | null {
+  let file: Record<string, string> = {}
+  try {
+    file = parseEnvFile(readFileSync(join(repoRoot, '.env'), 'utf-8'))
+  } catch {
+    /* no .env */
+  }
+  const pick = (k: string) => (realEnv[k]?.trim() || file[k]?.trim() || '')
+  return clientCreds({ YOUTUBE_CLIENT_ID: pick('YOUTUBE_CLIENT_ID'), YOUTUBE_CLIENT_SECRET: pick('YOUTUBE_CLIENT_SECRET') })
+}
+
 export function loadEnvFile(repoRoot: string, env: NodeJS.ProcessEnv = process.env): string[] {
   let content: string
   try {

@@ -1,0 +1,62 @@
+{
+  "channel": {
+    "id": "UCczQ5ZPxWhH3e_DuEarT2kA",
+    "title": "Badcode"
+  },
+  "syncedAt": "2026-11-12T08:49:49.631Z",
+  "count": 4,
+  "videos": [
+    {
+      "id": "XinO1Kze_5A",
+      "title": "The bank robbery (music video)",
+      "description": "",
+      "tags": [],
+      "categoryId": "22",
+      "privacyStatus": "private",
+      "publishedAt": "2026-11-11T19:57:57Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "duration": "PT3M7S",
+      "url": "https://youtu.be/XinO1Kze_5A"
+    },
+    {
+      "id": "9ha83RIv0YU",
+      "title": "the rules master r3 tagged",
+      "description": "",
+      "tags": [],
+      "categoryId": "22",
+      "privacyStatus": "private",
+      "publishedAt": "2026-11-11T14:59:15Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "duration": "PT28S",
+      "url": "https://youtu.be/9ha83RIv0YU"
+    },
+    {
+      "id": "c9jhLpkjv6o",
+      "title": "Karen will lead the revolution (music video)",
+      "description": "",
+      "tags": [],
+      "categoryId": "22",
+      "privacyStatus": "private",
+      "publishedAt": "2026-11-09T17:50:10Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "duration": "PT4M10S",
+      "url": "https://youtu.be/c9jhLpkjv6o"
+    },
+    {
+      "id": "OaP0RthL_0Q",
+      "title": "Git Push Origin Master",
+      "description": "",
+      "tags": [],
+      "categoryId": "22",
+      "privacyStatus": "private",
+      "publishedAt": "2026-11-04T20:36:01Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "duration": "PT9M32S",
+      "url": "https://youtu.be/OaP0RthL_0Q"
+    }
+  ]
+}
