@@ -1,0 +1,14 @@
+{
+ "story": "short-same-bench",
+ "scene": "same-bench",
+ "prefix": "sb",
+ "title": "Same Bench",
+ "heading": "BadCode Shorts <span class=\"tri\">▲</span> Same Bench",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench",
+ "beats": [
+  {"key": "veteran", "at": "0:00", "name": "A. 1919: the veteran", "blurb": "A park bench in 1919: a top-hatted fat cat tells a wounded soldier \"Forget it.\""},
+  {"key": "nurse", "at": "0:05", "name": "B. Today: the nurse", "blurb": "The same bench today, the same fat cat, a nurse in scrubs: \"Forget it.\""},
+  {"key": "button", "at": "0:10", "name": "C. Hasn't aged a day", "blurb": "The button: he hasn't aged a day."}
+ ],
+ "video": {"model": "Omni 1.2 Flash", "aspect": "9:16", "mode": "Frames", "duration": 8}
+}
