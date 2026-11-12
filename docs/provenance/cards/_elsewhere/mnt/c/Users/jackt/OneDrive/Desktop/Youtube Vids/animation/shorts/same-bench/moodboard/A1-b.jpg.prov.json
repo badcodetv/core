@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/A1-b.jpg",
+ "made": "2026-11-12T11:19:04.950Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Upright magazine plate from 1919 rendered entirely in broad black grease crayon rubbed over thin grey ink washes on toothy, ridged board, so the darks crumble into a granular salt-and-pepper grain and every edge is soft, thumb-smudged and velvety, the feel of a lithograph rather than a pen line. The viewpoint is low and very near: filling the bottom of the picture, crisp and enormous, a fat kid-gloved hand with a starched cuff and a gold stud flicks the air outward, fingers fanned in a lazy brush-off frozen at its height. Tucked just behind it and still sharp, a portly magnate seen in profile, heavy jowls folding over a stiff collar, a clipped moustache, drowsy hooded eyes looking nowhere, a stovepipe hat polished to a shine, his elbow propped on the curled cast-iron arm of a park seat. Deeper in the picture, blurred and rubbed soft as though the crayon was wiped with a finger, a hollow-cheeked young private in a creased khaki tunic grips a wooden crutch, one leg ending at the knee with the trouser folded and pinned, his gaze locked on that waving hand. Late dusk: a lone gas lamp beyond the right edge rakes long slanted crayon shadows across the scene and catches a thin pale edge of bare paper on the hat brim and the knuckles. The top third of the image is an almost empty field of deep soot-grey evening tone with a few faint scratched twigs, quiet room for words to be laid over later. Colours limited to black, graphite grey and warm cream paper; the board stays free of any written word, numeral or mark of authorship. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "80d557f8-32cb-4f40-8562-d238a2e363b9"
+}

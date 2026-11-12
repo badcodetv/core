@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/A1-c.jpg",
+ "made": "2026-11-12T11:19:34.218Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Upright newspaper cartoon from about 1919, inked quickly with a steel nib on smooth board and run off on cheap pulp stock that has browned to the colour of weak tea, with slight grain and a ghost of the reverse page bleeding through. The viewpoint is a few steps behind a slatted park bench at standing height, so both sitters face away from us. Right half of the seat: a colossal plutocrat shown only from the back, a black frock coat strained across shoulders broad as a sideboard, fat creasing over a stiff white collar, a gleaming stovepipe hat pushed back on his skull; his face is turned a fraction further away from his neighbour while one plump gloved hand swings out to the side at arm's length in an idle, can't-be-bothered brush-off. Left half: a slight young infantryman in a rumpled khaki tunic and peaked cap, back curved, chin dropped to his chest; a wooden crutch rests slanted against the slats by his hip, and under the seat a single hobnailed boot stands on the gravel where two should be, the empty trouser leg folded and pinned. Lines are swift, sure and mostly unbroken outline, with just a handful of hatch strokes in the coat creases and the bench boards. The sun sits straight overhead at midday, so each body drops a tight, solid black puddle directly beneath it and the rest of the scene stays almost unshaded. Behind the bench a bright gravel promenade runs off with promenaders in flat straw boaters, ladies under parasols and clipped plane trees, all touched in with faint, thin, scattered strokes so the two backs dominate. The bottom fifth is open, bare pale gravel, kept empty so words can be set there afterwards. Only black ink on warm browned cream. Nothing written, no balloons, no captions, no labels, no monogram drawn anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "53c71fb4-7b4d-499c-9db3-a43feefc803a"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/B1-a.jpg",
+ "made": "2026-11-12T11:20:05.662Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Tall portrait poster image, styled after a turn-of-the-century German comic weekly printed by colour lithography: confident black brush contours of even weight, each shape filled with one flat, unmodulated ink, and only four inks used in total: black, sodium-lamp orange, clinical teal and an off-white like old newsprint. No tonal blends, no soft shading, no texture fills. The top band of the frame, roughly a fifth of its height, is pure flat black night with nothing in it, kept clear for a caption added later. Underneath, a straight-on eye-level view of a wooden park bench with curly iron arms on a paved forecourt outside a modern hospital at night: the automatic entrance doors read as a glowing off-white block, a flat canopy overhangs them, and the façade is a grid of teal cladding. Overhead on the right, a lamp on a tall post throws a sharp wedge of orange light over the bench, and the shadow beneath the seat is a single crisp black shape. Sprawled across two thirds of the seat, a portly tycoon dressed as in 1910, a tall black stovepipe hat, a long dark frock coat, a pale waistcoat strung with a gold watch chain, knees wide, belly pushed out, a self-satisfied round face; his near arm is stretched out sideways, hand open and palm towards the woman beside him in a dismissive wave. Squeezed onto the far end, a present-day nurse in teal scrubs and grubby white trainers, an ID lanyard round her neck, strands of hair slipping from a claw clip at the end of a night shift, cups a small paper vending-machine coffee in both hands and gazes straight ahead, worn out, paying his hand no attention. Exaggerated cartoon proportions for the two people, crisp simple geometry for the building, a fresh composition of our own. The picture carries no writing at all: no words, numbers, signs or signatures. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c28c3e59-5bbd-4cf2-b7f9-51f84cceb800"
+}

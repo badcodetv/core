@@ -1,0 +1,480 @@
+{
+ "page_title": "Same Bench Dialogue",
+ "title": "Same Bench dialogue options",
+ "about": "This page lays out ten writers' versions of the Same Bench dialogue, ranked, and three combined drafts for the whole 14-second short. Nothing in the scene, script or voices has changed yet.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Plain logic",
+   "title": "The logic said plainly",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "Comedy first",
+   "title": "Comedy first",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-04-comedy-first.md"
+  },
+  {
+   "id": "05",
+   "name": "Other side wins",
+   "title": "The other side wins",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-05-other-side-wins.md"
+  },
+  {
+   "id": "06",
+   "name": "Reversal",
+   "title": "Reversal, the listener gets there first",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "The chorus",
+   "title": "The chorus, two pigeons on the bench back",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-07-chorus.md"
+  },
+  {
+   "id": "08",
+   "name": "Place is argument",
+   "title": "The place is the argument (the memorial plaque on the bench)",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft (match cut, Groundhog Day repetition, the look to camera)",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, written backwards",
+   "file": "design/2026-11-12-short-same-bench-dialogue-lines/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "Same Bench: the whole short",
+   "where": "Beats A (1919, veteran), B (today, nurse), C (the button)",
+   "scene": "same-bench",
+   "target": "14 s or less in total, about 5 + 5 + 4 s",
+   "now_from": "the slate (docs/marketing/badcode-shorts.md #2), a placeholder",
+   "now": [
+    {
+     "who": "FAT CAT (1919, to the veteran)",
+     "line": "Forget it."
+    },
+    {
+     "who": "FAT CAT (today, to the nurse)",
+     "line": "Forget it."
+    },
+    {
+     "who": "BUTTON",
+     "line": "(he hasn't aged a day; how it lands is open)"
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "Hero. Forget it.",
+     "bet": "The joke is thanks and bin in one breath: he praises and dismisses in the same line, and the echo plus a pre-emptive third dismissal says same man.",
+     "lines": [
+      {
+       "who": "CAPTION",
+       "line": "1919.",
+       "tags": [
+        "01",
+        "09"
+       ],
+       "s": "0.6"
+      },
+      {
+       "who": "VETERAN",
+       "line": "[hat in hand] Sir, about my pension...",
+       "tags": [
+        "04",
+        "10"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "FAT CAT",
+       "line": "[not looking up] Hero. Forget it.",
+       "tags": [
+        "04",
+        "Kai"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "(hold)",
+       "line": "[veteran's crutch slides; he stands and goes]",
+       "tags": [
+        "01"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "CAPTION",
+       "line": "Today.",
+       "tags": [
+        "01",
+        "09"
+       ],
+       "s": "0.6"
+      },
+      {
+       "who": "NURSE",
+       "line": "[tired, lanyard in hand] Sir, about my pay...",
+       "tags": [
+        "04",
+        "10"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "FAT CAT",
+       "line": "[same pose, same paper] Hero. Forget it.",
+       "tags": [
+        "04",
+        "Kai"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "(hold)",
+       "line": "[she looks at her pay slip and goes]",
+       "tags": [
+        "01"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "FAT CAT",
+       "line": "[a third shadow falls across his paper; he does not look up] Forget it.",
+       "tags": [
+        "10",
+        "01",
+        "Kai"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "CAPTION",
+       "line": "Same bench.",
+       "tags": [
+        "01",
+        "04",
+        "09",
+        "10"
+       ],
+       "s": "2.0"
+      }
+     ],
+     "notes": [
+      "Trim: drop the Today. caption if the nurse's scrubs read at once; drop 'Same bench.' if the third Forget it lands as the button.",
+      "Protected 'Forget it.' kept verbatim three times; 'Hero.' is a tag Jack can cut without loss.",
+      "Risk: the pension and pay asks must be dry, not pleading. 'Pay' stays generic: no dates, no governments. Muted autoplay is covered by the captions."
+     ],
+     "total": "~14 s",
+     "length": "about 14 s"
+    },
+    {
+     "id": "1B",
+     "name": "The plaque and the tip",
+     "bet": "The picture and one object do the arguing: a plaque begging the park to remember under a man telling people to forget, so only two spoken words are needed.",
+     "lines": [
+      {
+       "who": "CAPTION",
+       "line": "1919.",
+       "tags": [
+        "01",
+        "09"
+       ],
+       "s": "0.5"
+      },
+      {
+       "who": "FAT CAT",
+       "line": "[pats the brass plaque on the bench back: LEST WE FORGET. PRESENTED BY THE WHALEBY TRUST] Forget it.",
+       "tags": [
+        "08",
+        "02",
+        "Kai"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "(hold)",
+       "line": "[veteran with pinned trouser leg stands and goes; a WELCOME HOME bunting scrap on the ground]",
+       "tags": [
+        "02"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "CAPTION",
+       "line": "Now.",
+       "tags": [
+        "09",
+        "01"
+       ],
+       "s": "0.5"
+      },
+      {
+       "who": "FAT CAT",
+       "line": "[same pat, same paper, same flick of the hand] Forget it.",
+       "tags": [
+        "08",
+        "02",
+        "Kai"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "(hold)",
+       "line": "[nurse goes; a second plate under the first: THANK YOU HEROES]",
+       "tags": [
+        "08",
+        "02"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "BUTTON (silent, sound)",
+       "line": "[he lowers the paper and tips his hat to camera; one page-turn, one dry brass tink]",
+       "tags": [
+        "09",
+        "08"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "CAPTION",
+       "line": "Same bench.",
+       "tags": [
+        "01",
+        "02",
+        "09"
+       ],
+       "s": "2.0"
+      }
+     ],
+     "notes": [
+      "Trim: lose the THANK YOU HEROES plate if the frame is too small to read at 9:16; hold each plaque 1.5 s minimum.",
+      "Protected 'Forget it.' kept twice, only stage directions added. Whaleby Trust is invented; check it names no real body.",
+      "Risk: lives or dies on the drawing matching frame for frame; thin if Jack wants a spoken button. Alt button: he says 'Next.' to a sketch outline at the park gate."
+     ],
+     "total": "~14 s",
+     "length": "about 14 s"
+    },
+    {
+     "id": "1C",
+     "name": "Quick learner",
+     "bet": "The nurse knows his line before he says it, so the audience gets there first and his delight at it is the whole indictment.",
+     "lines": [
+      {
+       "who": "VETERAN",
+       "line": "[hopeful] They said I'd be seen right, sir...",
+       "tags": [
+        "06",
+        "09"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "FAT CAT",
+       "line": "[not looking up from his paper] Forget it.",
+       "tags": [
+        "06",
+        "all",
+        "Kai"
+       ],
+       "s": "1.1"
+      },
+      {
+       "who": "(hold)",
+       "line": "[veteran goes]",
+       "tags": [
+        "06"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "CAPTION",
+       "line": "Today.",
+       "tags": [
+        "01",
+        "09"
+       ],
+       "s": "0.6"
+      },
+      {
+       "who": "NURSE",
+       "line": "[sits, flinches, mouths it flat, quoting him] Forget it.",
+       "tags": [
+        "06"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "FAT CAT",
+       "line": "[delighted, same paper] Forget it. Quick learner.",
+       "tags": [
+        "06",
+        "Kai"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "(hold)",
+       "line": "[she gets up and goes; his face unchanged]",
+       "tags": [
+        "06",
+        "02"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "FAT CAT",
+       "line": "[a shadow falls; he lowers the paper an inch] Forget it.",
+       "tags": [
+        "10",
+        "Kai"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "CAPTION",
+       "line": "NEXT.",
+       "tags": [
+        "10",
+        "01"
+       ],
+       "s": "2.0"
+      }
+     ],
+     "notes": [
+      "Trim: 'Quick learner.' can go, leaving the pre-emption alone; shorten the veteran to 'They said I'd be seen right, sir.'",
+      "Protected 'Forget it.' kept verbatim; also spoken by the nurse as a quote.",
+      "Risk: the nurse saying it can read as her forgetting, so the flinch must show she is quoting him. Cut-off asks are hard for TTS; the nurse line may need sound design."
+     ],
+     "total": "~13 s",
+     "length": "about 13 s"
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "04",
+     "length": "~13 s",
+     "verdict": "Best fit: 'Hero. Forget it.' carries thanked-then-forgotten in four syllables and keeps him the target. Fails on density (three captions) and 'Same man. Same bill.' edges toward a stated moral."
+    },
+    {
+     "rank": 2,
+     "shape": "10",
+     "length": "~14 s",
+     "verdict": "Tightest mechanism: he interrupts, then fires on a shadow, so the button is the rule itself. Fails on 'NEXT.' possibly reading as a queue joke, and cut-off lines are hard to voice."
+    },
+    {
+     "rank": 3,
+     "shape": "08",
+     "length": "~11 s",
+     "verdict": "The cleverest single idea (plaque plus his name) and fully unstated. Fails on legibility at 9:16 and on being funny aloud; has no resistance from the victims."
+    },
+    {
+     "rank": 4,
+     "shape": "06",
+     "length": "~11-14 s",
+     "verdict": "Genuine reversal and a dark 'Quick learner'. Fails because the nurse saying 'Forget it' can blame the carer, and the extra line risks sermon."
+    },
+    {
+     "rank": 5,
+     "shape": "02",
+     "length": "~14 s",
+     "verdict": "Right instinct (the picture says it) and short. Fails on thin voices and on muted-feed readability; the button options are a menu, not a decision."
+    },
+    {
+     "rank": 6,
+     "shape": "01",
+     "length": "14 s",
+     "verdict": "On target and unstated, but three flat reads feel lazy and 'thanked' relies wholly on art. No resistance, no character voices."
+    },
+    {
+     "rank": 7,
+     "shape": "05",
+     "length": "~12.5 s",
+     "verdict": "Only shape with real pushback and a dark 'Keep the leg, then'. Fails: victims bargaining themselves down puts the weight on them, not on him, and 'A clap?' is too knowing."
+    },
+    {
+     "rank": 8,
+     "shape": "09",
+     "length": "~10 s",
+     "verdict": "Good craft (match cut, hat tip) but the sincere 'They said...' pleas are copied one-for-one and the hat tip is ambiguous."
+    },
+    {
+     "rank": 9,
+     "shape": "07",
+     "length": "~12.5 s",
+     "verdict": "Pigeons say 'Same bloke. Same bench.', so the chorus states the point and twee voices soften the dark. Costs two extra voices."
+    },
+    {
+     "rank": 10,
+     "shape": "03",
+     "length": "~8 s spoken",
+     "verdict": "Fails the brief: 'You were useful. Now you're not.' is a lecture, and 'Works every time.' is the moral spoken aloud."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "Forget it."
+    ],
+    "rows": {
+     "1A": [
+      "Forget it. (x3, 'Hero.' added in A and B)"
+     ],
+     "1B": [
+      "Forget it. (x2)"
+     ],
+     "1C": [
+      "Forget it. (x4, 'Quick learner.' added once)"
+     ]
+    }
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Do you want any words beyond 'Forget it.'? 1A adds 'Hero.' and the asks, 1B adds none, 1C adds the veteran's plea and 'Quick learner.'"
+  },
+  {
+   "id": "q2",
+   "text": "Spoken button, caption or silent? 1A and 1C fire a third 'Forget it.' at a stranger, 1B ends on a silent hat tip and a caption."
+  },
+  {
+   "id": "q3",
+   "text": "Should the nurse and veteran speak at all, or stay silent so only he has a voice?"
+  },
+  {
+   "id": "q4",
+   "text": "Is a closing caption ('Same bench.' / 'NEXT.') allowed, or does that tip into stating the moral?"
+  },
+  {
+   "id": "q5",
+   "text": "1B needs a plaque readable at 9:16 and a frame-identical second drawing. Is the art budget there for it?"
+  }
+ ]
+}

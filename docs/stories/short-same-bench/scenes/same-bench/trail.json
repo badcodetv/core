@@ -1,0 +1,18 @@
+[
+ {
+  "at": "2026-11-12T11:08:27+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
+  "what": "dialogue options: the fat cat's lines and the button",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-12-short-same-bench-dialogue-lines/options.json design/2026-11-12-short-same-bench-dialogue-lines.html"
+ },
+ {
+  "at": "2026-11-12T11:24:33+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
+  "what": "mood board r1: nine 1910s-ink takes (variations r2, gated)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-same-bench/scenes/same-bench design/same-bench/moodboard.html"
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/B1-c.jpg",
+ "made": "2026-11-12T11:21:43.170Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical editorial cartoon drawn with a dip pen and India ink on cream bristol board, in the spirit of a weekly humour magazine from about 1915 but our own scene: confident tapering contour lines, cross-hatching for the darks, a pencil sketch faintly visible under the ink, and a thin cold wash of blue-grey and gunmetal brushed over it. We look past a nurse who sits on a park bench with her back to us: along the lowest part of the picture, her shoulder in plain hospital scrubs and the knot of her tied-back hair are sketched in a few loose, broken, unfinished strokes, like a near object out of focus. Sharp and large in the centre is the portly rich man beside her, turned toward her and toward us: a gleaming silk top hat, wing collar biting into a heavy jowl, a buttoned waistcoat stretched over his belly. He is mid-brush-off, eyelids drooping half closed with lazy contempt, a thick cigar parked at the side of his mouth, one gloved hand lifted with the palm turned up toward her, done with the conversation. It is just after sunrise and she has worked all night: a pale, low sun sits behind him so a thin line of untouched white paper traces the crown and brim of his hat and the curve of his shoulders, while his face falls into fine hatched shadow. Far behind the bench a modern skyline of glass office towers is suggested in faint hairlines, small and unimportant. The top quarter of the sheet is open, unwashed morning sky for a caption to sit on later. No lettering, speech balloons, signature or numbers drawn anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "f51e3c9c-4c53-416d-a78f-5f70fa0609a8"
+}

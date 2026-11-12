@@ -1,0 +1,8 @@
+# a-frost-park-from-above: notes
+
+- Google's Nano Banana Pro tips: name the framing and the canvas early, describe the aesthetic in plain words, combine style + subject + composition + light. So the prompt opens with "tall vertical drawing ... looking steeply down", and puts the caption sky first so the engine reserves it. https://blog.google/products/gemini/prompting-tips-nano-banana-pro/
+- The guide gives no way to exclude text (it pushes text rendering), so the no-lettering line is a plain positive statement ("drawing only") rather than a list of bans. Same source.
+- Prompt skeleton (subject, action, environment, light, style, exclusions): https://www.dzine.ai/blog/nano-banana-pro-prompts/ ; technique named as a field (crosshatching): https://skills.cat/skills/minilozio/nano-banana-prompting-skill
+- Period reference for a high, wide, ink-drawn city park in a weekly: Glackens' 1910 Collier's ink cover of Washington Square and the bird's-eye winter Central Park prints. These are references for the viewpoint only; no names in the prompt. https://www.illustrationhistory.org/illustrations/a-spring-morning-in-washington-square , https://scour.ing/@emschwartz/p/https://ephemeralnewyork.wordpress.com/2026/01/05/what-a-panoramic-winter-landscape-from-the-1860s-says-about-central-parks-early-years
+- Not a copy of the 1919 panel: a high overhead view instead of an eye-level two-shot, a frosted winter park with elms, a railing and a lamp, the soldier leaning in rather than sitting square, and breath clouds in the cold. Colour-free cream newsprint keeps it in the period without tracing any one cartoon.
+- Settings: Nano Banana 2 and 9:16, both fixed by the story.

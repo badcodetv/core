@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/A1-a.jpg",
+ "made": "2026-11-12T11:17:39.143Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A tall vertical drawing, pure black ink on cream newsprint, looking steeply down from a high vantage onto a small city park on a frozen January morning in 1919. The whole top third is open winter sky, pale and blank, untouched by the pen. Below it the park unfolds in exact two-point perspective: a curving gravel path dusted with hoarfrost, a row of leafless elms whose every twig is drawn as a fine forking line, a spiked iron railing receding toward the corner, one fluted gas lamp standing beside the path. Shadows and the dark bark are built from patient layered hatching, three and four directions deep, the frosted grass left as stippled white. Small in the lower third, seen from above, sits a single slatted wooden bench. A stout, bulging gentleman in a silk top hat and fur-collared overcoat sits bolt upright and spreads across most of its length, one gloved hand lifted, palm flat outward, brushing someone away. Squeezed onto the bench's last foot of seat, a thin young ex-soldier in a worn army greatcoat bends toward him, one trouser leg folded and pinned below the knee, a wooden crutch lying across his lap. A little cloud of breath hangs before each mouth, outlined in a few curling strokes. Cold flat morning light, no colour at all, the drawing reading like a careful plate from a period weekly. The image is drawing only, with no lettering, captions, numbers, or initials anywhere.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "1ab185c6-4b0b-4c1e-99b4-21538a71a479"
+}

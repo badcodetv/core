@@ -1,0 +1,9 @@
+# c-split-diptych (redo) — notes
+
+Rewritten from scratch after the sameness gate flagged three shared phrases ("ending at the knee with the", "leg ending at the knee with", "nose in the air on the"). Those are gone: the amputation is now a pinned-up empty trouser leg, the snub is "chin tipped up", and the rest of the wording is new.
+
+What shaped it:
+- Medium. Period front-page cartoons were pen and black ink over graphite, or pencil and ink, on illustration board, sometimes on laid-texture paper (1910s). So the prompt asks for india ink over light graphite on board, with a faint laid-paper rib. Sources: https://www.culturalheritage.org/docs/default-source/annualmeeting/2014am_poster04_from_pen_to_press.pdf and https://www.themorgan.org/node/38251
+- Consistency across panels. Nano Banana guides say a specific era plus a specific medium holds a style steadier than a vague label. They also say to leave blank lettering zones for later captions, and to make the first good output the canonical character. So the prompt names the medium exactly, gives the gutter a fixed size and keeps it bare, and describes the man once and then says "line for line" for the second panel. Sources: https://tech-insider.org/ai-comic-generator-character-consistency-2026/ and https://framia.converge.ai/page/en-US/blog/nano-banana-2-character-consistency
+- Not a copy of the 1919 panel. The man is our own: winged collar, clipped moustache, cane, a hand raised at his ear to brush someone away. The veteran is an American doughboy with his crutch across his lap. The setting is a gravel walk with elms and a gas lamp, seen from a crouching straight-on viewpoint. No artist is named, and none of the banned words appear.
+- Bottom panel. The nurse leans toward him the same way the soldier did, so the only difference between the panels is his companion.

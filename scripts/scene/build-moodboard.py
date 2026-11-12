@@ -99,6 +99,11 @@ def main(scene_dir, out):
             .replace('<!--FILTERS-->', ''.join(f'<button type="button" data-f="{k}" aria-pressed="false">{html.escape(v)}</button>' for k, v in styles.items()))
             .replace('<!--NAV-->', ('<a href="#picked">Picked so far</a>' if picked else '') + ''.join(f'<a href="#{b["key"]}">{html.escape(b.get("at", ""))} · {html.escape(b["name"])}</a>' for b in beats))
             .replace('<!--SECTIONS-->', '\n'.join(sections)))
+    # Portrait scenes (9:16 shorts): show each still whole instead of cropping it to 16:9.
+    aspect = (cfg.get('video') or {}).get('aspect', '16:9')
+    if aspect != '16:9' and ':' in aspect:
+        w, h = aspect.split(':')
+        page = page.replace('</style>', f'.frame {{ aspect-ratio: {w}/{h}; }}\n</style>', 1)
     pathlib.Path(out).write_text(page)
     n = sum(len(v) for v in cards.values())
     print(f'{out}: {len(beats)} beats, {n} cards, {len(page) / 1e6:.1f} MB')
