@@ -87,12 +87,16 @@ in the middle of 9:16), and **the project goes in the shorts folder**.
 | A1 | 15 line and flash clips cut from the master on word timings (`cut\audio\`) |
 | A2 | `hit.wav` (synthesised sub drop, ffmpeg) at the glass, the newspaper, the BAD CODE plate and the end card |
 
-**Not built yet: another Claude session held the Premiere bridge** (port 7890, its own session, 4.5 h up).
-Build steps, from whichever session owns Premiere:
-1. `premiere_open_project({ path: "…\\shorts\\camping-trailer-two-men\\camping trailer two men.prproj" })` (creates it)
+**✅ BUILT 12 Nov 2026** in `camping trailer two men.prproj`, sequence **`trailer two men r1`** (1080×1920, 24 fps,
+guid 73d3b2ac-be8a-4b3d-aff4-f3eeca819d85), media bin `trailer two men r1` (40 files). place.js: 43 placed, `fail: []`,
+video tracks [16, 1, 9], audio [13, 4]. Frames checked at 7 s (title + shot + caption) and 29.5 s (end card); saved.
+Next: Jack watches it on the timeline and notes it.
+
+Rebuild from scratch (any session that owns Premiere):
+1. `premiere_open_project({ path: "…\\shorts\\camping-trailer-two-men\\camping trailer two men.prproj" })`
 2. `premiere_import` every file in `cut\video`, `cut\text\*.mov`, `cut\audio`, **bin `trailer two men r1`**
-3. `premiere_create_sequence({ name: "trailer two men r1", fromItems: ["01a-shot-60.mp4"] })` (1080×1920 @ 24 from the media), then delete that one auto-placed clip or let place.js overwrite it at 0
-4. `premiere_eval` with the body of `cut\place.js` (refuses any other active sequence); expect `fail: []`
+3. `premiere_create_sequence({ name: "trailer two men r1", fromItems: ["01a-shot-60.mp4"] })`
+4. `premiere_eval` with the body of `cut\place.js` pasted in; expect `fail: []`
 5. Export a frame at ~7 s and ~29 s and look; save.
 
 Needs a human afterwards: audio crossfades if any line join clicks (no API for audio transitions).
