@@ -33,5 +33,13 @@
   "url": "https://claude.ai/artifact/YMxBMusYT79tk2XsADbNAL",
   "what": "mood board r3: nostalgia meme edits (Frutiger Aero, 2016 dump, chill guy, millennial optimism, proper country)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-hello-im-badcode/scenes/hello design/hello-im-badcode/moodboard.html"
+ },
+ {
+  "at": "2026-11-12T15:26:30+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP",
+  "what": "rough cut 1 (24.9 s): hook, figure, 22-shot horror reel (real footage + Flow gap stills), here's what to do next, logo; temp voice + temp music",
+  "rebuild": "python3 scripts/shorts/hello_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-hello-im-badcode/scenes/hello design/hello-im-badcode/timeline"
  }
 ]
