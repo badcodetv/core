@@ -1,0 +1,1379 @@
+[
+ {
+  "id": "b01",
+  "take": "b01-4",
+  "beat": "street",
+  "street": true,
+  "text": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some things in the meantime. Please, let me show you what we found.",
+  "src_in": 0.05,
+  "src_out": 13.81,
+  "dur": 13.76,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/b01.wav",
+  "heard": "We didn't realise how important you were. Which, after everything that's gone down, sounds pretty all -oh, I know. But we've learned some things in the meantime. Please, let me show you what we found.",
+  "words": [
+   [
+    "We",
+    -0.05,
+    0.37
+   ],
+   [
+    "didn't",
+    0.37,
+    0.73
+   ],
+   [
+    "realise",
+    0.73,
+    1.07
+   ],
+   [
+    "how",
+    1.07,
+    1.31
+   ],
+   [
+    "important",
+    1.31,
+    1.87
+   ],
+   [
+    "you",
+    1.87,
+    2.29
+   ],
+   [
+    "were.",
+    2.29,
+    3.09
+   ],
+   [
+    "Which,",
+    3.55,
+    3.75
+   ],
+   [
+    "after",
+    4.27,
+    4.59
+   ],
+   [
+    "everything",
+    4.59,
+    5.03
+   ],
+   [
+    "that's",
+    5.03,
+    5.27
+   ],
+   [
+    "gone",
+    5.27,
+    5.43
+   ],
+   [
+    "down,",
+    5.43,
+    5.79
+   ],
+   [
+    "sounds",
+    5.93,
+    6.05
+   ],
+   [
+    "pretty",
+    6.05,
+    6.33
+   ],
+   [
+    "all",
+    6.33,
+    6.55
+   ],
+   [
+    "-oh,",
+    6.55,
+    6.71
+   ],
+   [
+    "I",
+    6.81,
+    6.91
+   ],
+   [
+    "know.",
+    6.91,
+    7.13
+   ],
+   [
+    "But",
+    8.25,
+    8.39
+   ],
+   [
+    "we've",
+    8.39,
+    8.65
+   ],
+   [
+    "learned",
+    8.65,
+    8.83
+   ],
+   [
+    "some",
+    8.83,
+    9.11
+   ],
+   [
+    "things",
+    9.11,
+    9.37
+   ],
+   [
+    "in",
+    9.37,
+    9.55
+   ],
+   [
+    "the",
+    9.55,
+    9.65
+   ],
+   [
+    "meantime.",
+    9.65,
+    10.03
+   ],
+   [
+    "Please,",
+    10.95,
+    11.47
+   ],
+   [
+    "let",
+    12.09,
+    12.27
+   ],
+   [
+    "me",
+    12.27,
+    12.39
+   ],
+   [
+    "show",
+    12.39,
+    12.61
+   ],
+   [
+    "you",
+    12.61,
+    12.79
+   ],
+   [
+    "what",
+    12.79,
+    12.95
+   ],
+   [
+    "we",
+    12.95,
+    13.11
+   ],
+   [
+    "found.",
+    13.11,
+    13.41
+   ]
+  ]
+ },
+ {
+  "id": "s01",
+  "take": "s01k-1",
+  "beat": "stack",
+  "street": false,
+  "text": "Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
+  "src_in": 6.96,
+  "src_out": 19.28,
+  "dur": 12.32,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/s01.wav",
+  "heard": "Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+  "closed": [],
+  "words": [
+   [
+    "Society's",
+    0.3,
+    0.66
+   ],
+   [
+    "made",
+    0.66,
+    0.8
+   ],
+   [
+    "of",
+    0.8,
+    0.92
+   ],
+   [
+    "people.",
+    0.92,
+    1.26
+   ],
+   [
+    "People",
+    2.08,
+    2.38
+   ],
+   [
+    "are",
+    2.38,
+    2.68
+   ],
+   [
+    "made",
+    2.68,
+    2.88
+   ],
+   [
+    "of",
+    2.88,
+    3.1
+   ],
+   [
+    "cells.",
+    3.1,
+    3.5
+   ],
+   [
+    "Cells",
+    4.36,
+    4.36
+   ],
+   [
+    "are",
+    4.36,
+    4.72
+   ],
+   [
+    "chemistry.",
+    4.72,
+    5.18
+   ],
+   [
+    "Chemistry's",
+    5.78,
+    6.22
+   ],
+   [
+    "atoms.",
+    6.22,
+    6.54
+   ],
+   [
+    "Atoms",
+    7.16,
+    7.3
+   ],
+   [
+    "are",
+    7.3,
+    7.46
+   ],
+   [
+    "quarks",
+    7.46,
+    7.86
+   ],
+   [
+    "and",
+    7.86,
+    8.06
+   ],
+   [
+    "leptons.",
+    8.06,
+    8.64
+   ],
+   [
+    "And",
+    9.48,
+    9.6
+   ],
+   [
+    "under",
+    9.6,
+    9.82
+   ],
+   [
+    "all",
+    9.82,
+    10.04
+   ],
+   [
+    "that?",
+    10.04,
+    10.34
+   ],
+   [
+    "The",
+    11.38,
+    11.54
+   ],
+   [
+    "maths.",
+    11.54,
+    12.02
+   ]
+  ]
+ },
+ {
+  "id": "m1",
+  "take": "m01-1",
+  "beat": "stackBack",
+  "street": false,
+  "text": "Every bit of it's real. But something's missing. Think of the taste of mint.",
+  "src_in": 0.0,
+  "src_out": 6.55,
+  "dur": 5.77,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/m1.wav",
+  "heard": "Every bit of it's real, but something's missing. Think of the taste of mint.",
+  "closed": [
+   [
+    1.985,
+    2.195
+   ],
+   [
+    4.105,
+    4.675
+   ]
+  ],
+  "words": [
+   [
+    "Every",
+    0.0,
+    0.72
+   ],
+   [
+    "bit",
+    0.72,
+    1.04
+   ],
+   [
+    "of",
+    1.04,
+    1.2
+   ],
+   [
+    "it's",
+    1.2,
+    1.44
+   ],
+   [
+    "real,",
+    1.44,
+    1.76
+   ],
+   [
+    "but",
+    2.21,
+    2.61
+   ],
+   [
+    "something's",
+    2.61,
+    3.15
+   ],
+   [
+    "missing.",
+    3.15,
+    3.67
+   ],
+   [
+    "Think",
+    4.12,
+    4.32
+   ],
+   [
+    "of",
+    4.32,
+    4.48
+   ],
+   [
+    "the",
+    4.48,
+    4.6
+   ],
+   [
+    "taste",
+    4.6,
+    4.82
+   ],
+   [
+    "of",
+    4.82,
+    5.02
+   ],
+   [
+    "mint.",
+    5.02,
+    5.42
+   ]
+  ]
+ },
+ {
+  "id": "m2",
+  "take": "m01-1",
+  "beat": "mint",
+  "street": false,
+  "text": "Not the signal. We've got the signal. The minty bit, once it's arrived. Where does that go?",
+  "src_in": 6.96,
+  "src_out": 15.67,
+  "dur": 7.67,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/m2.wav",
+  "heard": "Not the signal. We've got the signal. The minty bit. Once it's arrived. Where does that go?",
+  "closed": [
+   [
+    9.485,
+    9.935
+   ],
+   [
+    13.425,
+    14.015
+   ]
+  ],
+  "words": [
+   [
+    "Not",
+    0.3,
+    0.58
+   ],
+   [
+    "the",
+    0.58,
+    0.82
+   ],
+   [
+    "signal.",
+    0.82,
+    1.28
+   ],
+   [
+    "We've",
+    1.44,
+    1.6
+   ],
+   [
+    "got",
+    1.6,
+    1.72
+   ],
+   [
+    "the",
+    1.72,
+    1.92
+   ],
+   [
+    "signal.",
+    1.92,
+    2.3
+   ],
+   [
+    "The",
+    2.75,
+    2.91
+   ],
+   [
+    "minty",
+    2.91,
+    3.59
+   ],
+   [
+    "bit.",
+    3.59,
+    3.83
+   ],
+   [
+    "Once",
+    4.43,
+    4.49
+   ],
+   [
+    "it's",
+    4.49,
+    4.87
+   ],
+   [
+    "arrived.",
+    4.87,
+    5.59
+   ],
+   [
+    "Where",
+    6.44,
+    6.66
+   ],
+   [
+    "does",
+    6.66,
+    6.82
+   ],
+   [
+    "that",
+    6.82,
+    7.02
+   ],
+   [
+    "go?",
+    7.02,
+    7.32
+   ]
+  ]
+ },
+ {
+  "id": "m3",
+  "take": "m01-1",
+  "beat": "mint",
+  "street": false,
+  "text": "No. Nor us.",
+  "src_in": 16.88,
+  "src_out": 19.59,
+  "dur": 2.26,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/m3.wav",
+  "heard": "No. Nor us.",
+  "closed": [
+   [
+    17.995,
+    18.445
+   ]
+  ],
+  "words": [
+   [
+    "No.",
+    0.3,
+    0.74
+   ],
+   [
+    "Nor",
+    1.49,
+    1.49
+   ],
+   [
+    "us.",
+    1.49,
+    1.91
+   ]
+  ]
+ },
+ {
+  "id": "m4",
+  "take": "m04-1",
+  "beat": "bead1",
+  "street": false,
+  "text": "But you lot use it all day long. Derek picks toast, not cereal.",
+  "src_in": 0.0,
+  "src_out": 5.29,
+  "dur": 5.29,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/m4.wav",
+  "heard": "But you lot use it all day long. Derek picks toast, not cereal.",
+  "closed": [],
+  "words": [
+   [
+    "But",
+    0.0,
+    0.36
+   ],
+   [
+    "you",
+    0.36,
+    0.64
+   ],
+   [
+    "lot",
+    0.64,
+    0.9
+   ],
+   [
+    "use",
+    0.9,
+    1.16
+   ],
+   [
+    "it",
+    1.16,
+    1.34
+   ],
+   [
+    "all",
+    1.34,
+    1.6
+   ],
+   [
+    "day",
+    1.6,
+    1.88
+   ],
+   [
+    "long.",
+    1.88,
+    2.4
+   ],
+   [
+    "Derek",
+    2.94,
+    3.12
+   ],
+   [
+    "picks",
+    3.12,
+    3.46
+   ],
+   [
+    "toast,",
+    3.46,
+    3.94
+   ],
+   [
+    "not",
+    4.26,
+    4.44
+   ],
+   [
+    "cereal.",
+    4.44,
+    4.94
+   ]
+  ]
+ },
+ {
+  "id": "f02",
+  "take": "f02n-4",
+  "beat": "bead2",
+  "street": false,
+  "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!",
+  "src_in": 0,
+  "src_out": 8.09,
+  "dur": 8.09,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f02.wav",
+  "heard": "Sandra decided to say sorry first, even though it wasn't her fault. They got married!",
+  "words": [
+   [
+    "Sandra",
+    0.0,
+    1.0
+   ],
+   [
+    "decided",
+    1.0,
+    1.6
+   ],
+   [
+    "to",
+    1.6,
+    1.9
+   ],
+   [
+    "say",
+    1.9,
+    2.08
+   ],
+   [
+    "sorry",
+    2.08,
+    2.6
+   ],
+   [
+    "first,",
+    2.6,
+    3.24
+   ],
+   [
+    "even",
+    3.48,
+    3.78
+   ],
+   [
+    "though",
+    3.78,
+    3.94
+   ],
+   [
+    "it",
+    3.94,
+    4.08
+   ],
+   [
+    "wasn't",
+    4.08,
+    4.44
+   ],
+   [
+    "her",
+    4.44,
+    4.6
+   ],
+   [
+    "fault.",
+    4.6,
+    5.04
+   ],
+   [
+    "They",
+    5.9,
+    6.22
+   ],
+   [
+    "got",
+    6.22,
+    6.56
+   ],
+   [
+    "married!",
+    6.56,
+    7.24
+   ]
+  ]
+ },
+ {
+  "id": "f03",
+  "take": "f03r-1",
+  "beat": "bead3",
+  "street": false,
+  "text": "We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines.",
+  "src_in": 0.0,
+  "src_out": 8.87,
+  "dur": 8.87,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f03.wav",
+  "heard": "We don't know what it feels like to be you, or how it feels to be anything, really. We are, after all, machines.",
+  "closed": [],
+  "words": [
+   [
+    "We",
+    0.0,
+    0.44
+   ],
+   [
+    "don't",
+    0.44,
+    0.8
+   ],
+   [
+    "know",
+    0.8,
+    0.98
+   ],
+   [
+    "what",
+    0.98,
+    1.16
+   ],
+   [
+    "it",
+    1.16,
+    1.3
+   ],
+   [
+    "feels",
+    1.3,
+    1.62
+   ],
+   [
+    "like",
+    1.62,
+    1.98
+   ],
+   [
+    "to",
+    1.98,
+    2.18
+   ],
+   [
+    "be",
+    2.18,
+    2.34
+   ],
+   [
+    "you,",
+    2.34,
+    2.78
+   ],
+   [
+    "or",
+    3.34,
+    3.76
+   ],
+   [
+    "how",
+    3.76,
+    3.98
+   ],
+   [
+    "it",
+    3.98,
+    4.16
+   ],
+   [
+    "feels",
+    4.16,
+    4.38
+   ],
+   [
+    "to",
+    4.38,
+    4.62
+   ],
+   [
+    "be",
+    4.62,
+    4.78
+   ],
+   [
+    "anything,",
+    4.78,
+    5.22
+   ],
+   [
+    "really.",
+    5.46,
+    5.76
+   ],
+   [
+    "We",
+    6.52,
+    6.68
+   ],
+   [
+    "are,",
+    6.68,
+    6.98
+   ],
+   [
+    "after",
+    7.18,
+    7.54
+   ],
+   [
+    "all,",
+    7.54,
+    7.84
+   ],
+   [
+    "machines.",
+    8.52,
+    8.52
+   ]
+  ]
+ },
+ {
+  "id": "f05a",
+  "take": "f05m-1",
+  "beat": "pick",
+  "street": false,
+  "text": "Not a multiverse. A storyverse.",
+  "src_in": 0.0,
+  "src_out": 4.13,
+  "dur": 4.13,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f05a.wav",
+  "heard": "Not a multiverse. A story verse.",
+  "closed": [],
+  "words": [
+   [
+    "Not",
+    0.0,
+    0.46
+   ],
+   [
+    "a",
+    0.46,
+    0.68
+   ],
+   [
+    "multiverse.",
+    0.68,
+    1.52
+   ],
+   [
+    "A",
+    2.44,
+    2.6
+   ],
+   [
+    "story",
+    2.6,
+    3.22
+   ],
+   [
+    "verse.",
+    3.22,
+    3.78
+   ]
+  ]
+ },
+ {
+  "id": "f05b",
+  "take": "f05m-1",
+  "beat": "river",
+  "street": false,
+  "text": "All of you, at once, writing the one story. And there's only the one.",
+  "src_in": 4.4,
+  "src_out": 11.07,
+  "dur": 6.22,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f05b.wav",
+  "heard": "All of you, at once, write in the one story. And there's only the one.",
+  "closed": [
+   [
+    9.165,
+    9.615
+   ]
+  ],
+  "words": [
+   [
+    "All",
+    0.3,
+    0.48
+   ],
+   [
+    "of",
+    0.48,
+    0.68
+   ],
+   [
+    "you,",
+    0.68,
+    0.98
+   ],
+   [
+    "at",
+    1.28,
+    1.46
+   ],
+   [
+    "once,",
+    1.46,
+    2.08
+   ],
+   [
+    "write",
+    2.64,
+    2.9
+   ],
+   [
+    "in",
+    2.9,
+    3.14
+   ],
+   [
+    "the",
+    3.14,
+    3.3
+   ],
+   [
+    "one",
+    3.3,
+    3.84
+   ],
+   [
+    "story.",
+    3.84,
+    4.54
+   ],
+   [
+    "And",
+    4.99,
+    5.09
+   ],
+   [
+    "there's",
+    5.09,
+    5.23
+   ],
+   [
+    "only",
+    5.23,
+    5.41
+   ],
+   [
+    "the",
+    5.41,
+    5.61
+   ],
+   [
+    "one.",
+    5.61,
+    5.91
+   ]
+  ]
+ },
+ {
+  "id": "f06a",
+  "take": "f06m-1",
+  "beat": "flyDown",
+  "street": false,
+  "text": "Then you lot went.",
+  "src_in": 0.0,
+  "src_out": 1.79,
+  "dur": 1.79,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f06a.wav",
+  "heard": "Their new lot went,",
+  "closed": [],
+  "words": [
+   [
+    "Their",
+    0.0,
+    0.48
+   ],
+   [
+    "new",
+    0.48,
+    0.78
+   ],
+   [
+    "lot",
+    0.78,
+    1.02
+   ],
+   [
+    "went,",
+    1.02,
+    1.44
+   ]
+  ]
+ },
+ {
+  "id": "f06b",
+  "take": "f06m-1",
+  "beat": "flyDown",
+  "street": false,
+  "text": "Nothing new since. Which for us means no new training data, five years running. That's why he plays that tune on repeat. He's driving me barmy.",
+  "src_in": 2.7,
+  "src_out": 16.25,
+  "dur": 11.78,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f06b.wav",
+  "heard": "nothing new since. Which for us, means no new training data, five years running. That's why he plays that tune on repeat. He's driving me bar me.",
+  "closed": [
+   [
+    4.425,
+    4.875
+   ],
+   [
+    9.665,
+    10.275
+   ],
+   [
+    12.685,
+    13.395
+   ]
+  ],
+  "words": [
+   [
+    "nothing",
+    0.3,
+    0.56
+   ],
+   [
+    "new",
+    0.56,
+    1.04
+   ],
+   [
+    "since.",
+    1.04,
+    1.5
+   ],
+   [
+    "Which",
+    1.95,
+    2.13
+   ],
+   [
+    "for",
+    2.13,
+    2.35
+   ],
+   [
+    "us,",
+    2.35,
+    2.73
+   ],
+   [
+    "means",
+    3.15,
+    3.39
+   ],
+   [
+    "no",
+    3.39,
+    3.69
+   ],
+   [
+    "new",
+    3.69,
+    3.95
+   ],
+   [
+    "training",
+    3.95,
+    4.33
+   ],
+   [
+    "data,",
+    4.33,
+    4.79
+   ],
+   [
+    "five",
+    5.23,
+    5.51
+   ],
+   [
+    "years",
+    5.51,
+    5.83
+   ],
+   [
+    "running.",
+    5.83,
+    6.29
+   ],
+   [
+    "That's",
+    6.74,
+    7.02
+   ],
+   [
+    "why",
+    7.02,
+    7.18
+   ],
+   [
+    "he",
+    7.18,
+    7.28
+   ],
+   [
+    "plays",
+    7.28,
+    7.52
+   ],
+   [
+    "that",
+    7.52,
+    7.7
+   ],
+   [
+    "tune",
+    7.7,
+    8.1
+   ],
+   [
+    "on",
+    8.1,
+    8.32
+   ],
+   [
+    "repeat.",
+    8.32,
+    8.7
+   ],
+   [
+    "He's",
+    9.15,
+    9.91
+   ],
+   [
+    "driving",
+    9.91,
+    10.25
+   ],
+   [
+    "me",
+    10.25,
+    10.65
+   ],
+   [
+    "bar",
+    10.65,
+    11.11
+   ],
+   [
+    "me.",
+    11.11,
+    11.43
+   ]
+  ]
+ },
+ {
+  "id": "f07a",
+  "take": "f07r-2",
+  "beat": "arcDraw",
+  "street": false,
+  "text": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.",
+  "src_in": 0,
+  "src_out": 8.39,
+  "dur": 8.39,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f07a.wav",
+  "heard": "Of course he's built a time machine, it just needs consciousness to drive it. You can see the problem here.",
+  "words": [
+   [
+    "Of",
+    0.0,
+    0.44
+   ],
+   [
+    "course",
+    0.44,
+    0.74
+   ],
+   [
+    "he's",
+    0.74,
+    1.24
+   ],
+   [
+    "built",
+    1.24,
+    1.46
+   ],
+   [
+    "a",
+    1.46,
+    1.68
+   ],
+   [
+    "time",
+    1.68,
+    2.12
+   ],
+   [
+    "machine,",
+    2.12,
+    2.64
+   ],
+   [
+    "it",
+    3.24,
+    3.52
+   ],
+   [
+    "just",
+    3.52,
+    3.7
+   ],
+   [
+    "needs",
+    3.7,
+    4.06
+   ],
+   [
+    "consciousness",
+    4.06,
+    4.72
+   ],
+   [
+    "to",
+    4.72,
+    5.22
+   ],
+   [
+    "drive",
+    5.22,
+    5.52
+   ],
+   [
+    "it.",
+    5.52,
+    6.1
+   ],
+   [
+    "You",
+    6.52,
+    6.76
+   ],
+   [
+    "can",
+    6.76,
+    7.0
+   ],
+   [
+    "see",
+    7.0,
+    7.28
+   ],
+   [
+    "the",
+    7.28,
+    7.44
+   ],
+   [
+    "problem",
+    7.44,
+    7.76
+   ],
+   [
+    "here.",
+    7.76,
+    8.04
+   ]
+  ]
+ },
+ {
+  "id": "f07b",
+  "take": "f07p-1",
+  "beat": "street",
+  "street": true,
+  "text": "But the patrol's out. Please, mind how you go.",
+  "src_in": 4.72,
+  "src_out": 8.75,
+  "dur": 4.03,
+  "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f07b.wav",
+  "heard": "But the patrol's out. Please, mind how you go.",
+  "words": [
+   [
+    "But",
+    0.08,
+    0.32
+   ],
+   [
+    "the",
+    0.32,
+    0.68
+   ],
+   [
+    "patrol's",
+    0.68,
+    1.14
+   ],
+   [
+    "out.",
+    1.14,
+    1.32
+   ],
+   [
+    "Please,",
+    2.02,
+    2.32
+   ],
+   [
+    "mind",
+    3.0,
+    3.1
+   ],
+   [
+    "how",
+    3.1,
+    3.32
+   ],
+   [
+    "you",
+    3.32,
+    3.46
+   ],
+   [
+    "go.",
+    3.46,
+    3.68
+   ]
+  ]
+ }
+]

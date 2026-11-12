@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/m4.wav",
+ "made": "2026-11-12T09:48:49+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-12-gpom-hologram-brutal-mint/voice-takes/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/take-m04-1.wav",
+ "why": "GPOM scene A hologram, brutal + mint cut (Kai, 12 Nov: the presentation \"really long\", the consciousness turn cringe; turn = A1, the taste of mint). Line m4.",
+ "prompt": "But you lot use it all day long. Derek picks toast, not cereal.",
+ "inputs": {
+  "heard": "But you lot use it all day long. Derek picks toast, not cereal.",
+  "record": "design/2026-11-12-gpom-hologram-brutal-mint/lines.json"
+ },
+ "settings": {
+  "src_in": "0.00",
+  "src_out": "5.29",
+  "pauses_closed": "[]"
+ }
+}

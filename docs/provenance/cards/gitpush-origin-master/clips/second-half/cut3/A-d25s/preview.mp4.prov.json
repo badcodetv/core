@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d25s/preview.mp4",
+ "made": "2026-11-12T10:19:39+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "cut3.py A --tag d25s",
+ "why": "scene A, scissors-only short version (option B, design/2026-11-12-gpom-consciousness/README.md): d24 with the 1F5 hologram cut to its kept lines, no new voice; a fallback beside the full cut",
+ "inputs": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d25s/edl.json",
+  "hologram": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-24/hologram-1f5-scissors-beads-24fps-picture.mp4"
+ },
+ "settings": {
+  "tag": "d25s"
+ }
+}

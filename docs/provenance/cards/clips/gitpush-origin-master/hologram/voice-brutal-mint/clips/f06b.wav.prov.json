@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f06b.wav",
+ "made": "2026-11-12T09:48:52+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-12-gpom-hologram-brutal-mint/voice-takes/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/take-f06m-1.wav",
+ "why": "GPOM scene A hologram, brutal + mint cut (Kai, 12 Nov: the presentation \"really long\", the consciousness turn cringe; turn = A1, the taste of mint). Line f06b.",
+ "prompt": "Nothing new since. Which for us means no new training data, five years running. That's why he plays that tune on repeat. He's driving me barmy.",
+ "inputs": {
+  "heard": "nothing new since. Which for us, means no new training data, five years running. That's why he plays that tune on repeat. He's driving me bar me.",
+  "record": "design/2026-11-12-gpom-hologram-brutal-mint/lines.json"
+ },
+ "settings": {
+  "src_in": "2.70",
+  "src_out": "16.25",
+  "pauses_closed": "[(4.425, 4.875), (9.665, 10.275), (12.685, 13.395)]"
+ }
+}

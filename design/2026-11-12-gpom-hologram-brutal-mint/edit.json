@@ -1,0 +1,171 @@
+{
+ "segs": {
+  "stack": 34.01,
+  "lead": 0.25,
+  "bead1": 4.21,
+  "bead2": 4.48,
+  "bead3": 12.13,
+  "open": 1.57,
+  "maybes": 0.3,
+  "pick": 1.8,
+  "settle": 0.5,
+  "toRiver": 2.6,
+  "river": 5.25,
+  "flyDown": 17.51,
+  "arcDraw": 2.5,
+  "arcHold": 3.07,
+  "off": 1.2
+ },
+ "clips": {
+  "s01": {
+   "start": 0.78,
+   "text": "Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
+   "needsVoice": false
+  },
+  "m1": {
+   "start": 13.55,
+   "text": "Every bit of it's real. But something's missing. Think of the taste of mint.",
+   "needsVoice": false
+  },
+  "m2": {
+   "start": 19.67,
+   "text": "Not the signal. We've got the signal. The minty bit, once it's arrived. Where does that go?",
+   "needsVoice": false
+  },
+  "m3": {
+   "start": 27.84,
+   "text": "No. Nor us.",
+   "needsVoice": false
+  },
+  "m4": {
+   "start": 30.9,
+   "text": "But you lot use it all day long. Derek picks toast, not cereal.",
+   "needsVoice": false
+  },
+  "f02": {
+   "start": 36.49,
+   "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!",
+   "needsVoice": false
+  },
+  "f03": {
+   "start": 45.08,
+   "text": "We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines.",
+   "needsVoice": false
+  },
+  "f05a": {
+   "start": 54.55,
+   "text": "Not a multiverse. A storyverse.",
+   "needsVoice": false
+  },
+  "f05b": {
+   "start": 59.5,
+   "text": "All of you, at once, writing the one story. And there's only the one.",
+   "needsVoice": false
+  },
+  "f06a": {
+   "start": 66.02,
+   "text": "Then you lot went.",
+   "needsVoice": false
+  },
+  "f06b": {
+   "start": 68.81,
+   "text": "Nothing new since. Which for us means no new training data, five years running. That's why he plays that tune on repeat. He's driving me barmy.",
+   "needsVoice": false
+  },
+  "f07a": {
+   "start": 81.19,
+   "text": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.",
+   "needsVoice": false
+  }
+ },
+ "exc": [],
+ "glow": [
+  44.88,
+  55.08
+ ],
+ "draft": "brutal-mint",
+ "stack": {
+  "labels": [
+   "SOCIETY",
+   "INDIVIDUAL",
+   "BIOLOGY",
+   "CHEMISTRY",
+   "PHYSICS",
+   "MATHEMATICS"
+  ],
+  "lay": [
+   0.98,
+   1.6,
+   3.78,
+   5.4,
+   6.9,
+   12.22
+  ],
+  "quarks": 8.14,
+  "leptons": 8.74,
+  "under": 10.38,
+  "s02": 13.55,
+  "missing": 16.06,
+  "consc": 30.75,
+  "quarks3": 1000000.0,
+  "label": false,
+  "mint": 18.52,
+  "sig0": 20.39,
+  "sig1": 21.97,
+  "minty": 22.58,
+  "where": 26.06,
+  "no": 28.14,
+  "depart": 31.81,
+  "fly": 2.2
+ },
+ "cam": {
+  "back": 2.0,
+  "pin0": 61.9,
+  "pind": 2.0,
+  "out0": 64.5,
+  "rise0": 82.47,
+  "rised": 3.2
+ },
+ "placeholder": {},
+ "street": {
+  "b01": "before the hologram, on the street (ends \"Please, let me show you what we found.\"; the hologram cuts in as it finishes)",
+  "f07b": {
+   "after_hologram_ends": 91.88,
+   "note": "back on the street; not on the hologram clock or in voice.wav"
+  }
+ },
+ "marks": {
+  "layer_society": 1.08,
+  "layer_individual": 1.7,
+  "layer_biology": 3.88,
+  "layer_chemistry": 5.5,
+  "layer_physics": 7.0,
+  "layer_mathematics": 12.32,
+  "quarks_grid": 8.24,
+  "slot_appears": 16.16,
+  "mint_spark": 18.52,
+  "signal_climbs": 20.39,
+  "signal_stops": 21.97,
+  "minty_bit": 22.58,
+  "slot_flickers": 26.06,
+  "spark_out": 28.14,
+  "slot_warms": 30.75,
+  "light_leaves": 31.81,
+  "light_lands": 34.01,
+  "toast": 34.36,
+  "sorry": 38.57,
+  "married": 43.05,
+  "glow_f03": 44.88,
+  "cloud_blooms": 55.08,
+  "storyverse_flash": 57.15,
+  "to_river": 59.25,
+  "inside_river": 63.9,
+  "leave_river": 64.5,
+  "arrive_square_on": 67.1,
+  "you_lot_went": 66.02,
+  "rise": 82.47,
+  "arc_draws": 84.61,
+  "screen_off": 90.18,
+  "TD": 91.38
+ }
+}

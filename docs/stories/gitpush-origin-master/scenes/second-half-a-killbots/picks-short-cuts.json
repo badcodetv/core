@@ -1,0 +1,8 @@
+{"title": "Kill Bots Short Cuts", "eyebrow": "GPOM · scene A · Maddie's presentation", "heading": "Three lengths of Maddie's presentation",
+ "intro": "The full version stays whatever happens: it is also 'the video Maddie left' for the website. These are the fallbacks (12 Nov). Pick the one you'd put in the film, and note anything (a line, a take, a moment). Nobody has listened to the new mint lines yet: you're the first ears.",
+ "sections": [{"h": "Which version goes in the film?", "lede": "Whole scene A, street to street. The hologram is the middle stretch.", "groups": [
+   {"slot": "a-length", "title": "Scene A: full, scissors-only, or brutal + mint", "line": "Full = what's in the film now (round 25). Scissors = the same voice takes, trimmed, no new lines. Brutal + mint = new 'taste of mint' turn in Maddie's voice, harder cuts.", "kind": "video",
+    "opts": [
+     {"id": "full", "src": "media/A-d24.mp4", "label": "Full (now): scene 4:05, hologram 2:33"},
+     {"id": "scissors", "src": "media/A-d25s.mp4", "label": "Scissors only: scene 3:10, hologram 1:37"},
+     {"id": "brutal-mint", "src": "media/A-d25b.mp4", "label": "Brutal + mint: scene 3:04, hologram 1:31 (new lines, unheard)"}]}]}]}

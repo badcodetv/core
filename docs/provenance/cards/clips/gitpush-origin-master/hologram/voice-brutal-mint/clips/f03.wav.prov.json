@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f03.wav",
+ "made": "2026-11-12T09:48:50+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "design/2026-11-12-gpom-hologram-brutal-mint/voice-takes/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f4/f03.wav",
+ "why": "GPOM scene A hologram, brutal + mint cut (Kai, 12 Nov: the presentation \"really long\", the consciousness turn cringe; turn = A1, the taste of mint). Line f03.",
+ "prompt": "We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines.",
+ "inputs": {
+  "heard": "We don't know what it feels like to be you, or how it feels to be anything, really. We are, after all, machines.",
+  "record": "design/2026-11-12-gpom-hologram-brutal-mint/lines.json"
+ },
+ "settings": {
+  "src_in": "0.00",
+  "src_out": "8.87",
+  "pauses_closed": "[]"
+ }
+}

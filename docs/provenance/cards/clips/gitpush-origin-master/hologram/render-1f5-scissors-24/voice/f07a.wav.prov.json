@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-24/voice/f07a.wav",
+ "made": "2026-11-12T10:14:29+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-12-gpom-hologram-1f5-scissors/trim.py (numpy cut in room tone, 15 ms fades)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f4/f07a.wav",
+ "why": "hologram 1F5 scissors, line f07a: the 1F5 take trimmed with scissors only",
+ "prompt": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.",
+ "inputs": {
+  "record": "design/2026-11-12-gpom-hologram-1f5-scissors/lines-1f5-scissors.json"
+ },
+ "settings": {
+  "keep": "[[0, null]]"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/f05b.wav",
+ "made": "2026-11-12T09:48:51+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-12-gpom-hologram-brutal-mint/voice-takes/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/take-f05m-1.wav",
+ "why": "GPOM scene A hologram, brutal + mint cut (Kai, 12 Nov: the presentation \"really long\", the consciousness turn cringe; turn = A1, the taste of mint). Line f05b.",
+ "prompt": "All of you, at once, writing the one story. And there's only the one.",
+ "inputs": {
+  "heard": "All of you, at once, write in the one story. And there's only the one.",
+  "record": "design/2026-11-12-gpom-hologram-brutal-mint/lines.json"
+ },
+ "settings": {
+  "src_in": "4.40",
+  "src_out": "11.07",
+  "pauses_closed": "[(9.165, 9.615)]"
+ }
+}

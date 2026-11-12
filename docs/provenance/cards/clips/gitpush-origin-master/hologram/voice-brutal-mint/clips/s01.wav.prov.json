@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/s01.wav",
+ "made": "2026-11-12T09:48:47+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "design/2026-11-12-gpom-hologram-brutal-mint/voice-takes/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f5/s01.wav",
+ "why": "GPOM scene A hologram, brutal + mint cut (Kai, 12 Nov: the presentation \"really long\", the consciousness turn cringe; turn = A1, the taste of mint). Line s01.",
+ "prompt": "Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
+ "inputs": {
+  "heard": "Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that? The maths.",
+  "record": "design/2026-11-12-gpom-hologram-brutal-mint/lines.json"
+ },
+ "settings": {
+  "src_in": "6.96",
+  "src_out": "19.28",
+  "pauses_closed": "[]"
+ }
+}

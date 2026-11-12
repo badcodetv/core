@@ -1,0 +1,154 @@
+{
+ "segs": {
+  "stack": 25.49,
+  "lead": 0.3,
+  "bead1": 3.95,
+  "bead2": 4.48,
+  "bead3": 11.28,
+  "open": 0.01,
+  "maybes": 0.01,
+  "pick": 0.01,
+  "settle": 0.37,
+  "toRiver": 3.0,
+  "river": 16.87,
+  "flyDown": 24.47,
+  "arcDraw": 2.5,
+  "arcHold": 3.07,
+  "off": 1.2
+ },
+ "clips": {
+  "s01": {
+   "start": 1.6,
+   "text": "[hologram on: the materialist stack, the camera descending; brisk] Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.",
+   "dur": 12.47,
+   "needsVoice": false
+  },
+  "s02": {
+   "start": 14.52,
+   "text": "[pull back: the whole stack; beside it an empty outlined slot] Every bit of it's real. But we've worked out there's something missing.",
+   "dur": 6.77,
+   "needsVoice": false
+  },
+  "f01": {
+   "start": 24.89,
+   "text": "[the warm light lands on the string; the first bead lights; Derek at the toaster inside it] Derek picks toast, not cereal.",
+   "dur": 2.57,
+   "needsVoice": false
+  },
+  "f02": {
+   "start": 27.76,
+   "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!",
+   "dur": 8.09,
+   "needsVoice": false
+  },
+  "f03": {
+   "start": 36.35,
+   "text": "[the beads glow; CONSCIOUSNESS fades up beside them, unspoken] [wistful, a little regretful] We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines.",
+   "dur": 9.2,
+   "needsVoice": false
+  },
+  "f05": {
+   "start": 46.15,
+   "text": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. It's a storyverse. And there's only one of them, so it's really important.",
+   "dur": 18.42,
+   "needsVoice": false
+  },
+  "f06": {
+   "start": 66.77,
+   "text": "[side view; every string stops dead at the cut-off] As you can see, when you lot went away, there were no conscious decisions made any more. And guess what that means for us? No new training data for the last five years. Which is why he's been playing that tune on repeat, and he's driving me barmy.",
+   "dur": 19.35,
+   "needsVoice": false
+  },
+  "f07a": {
+   "start": 86.82,
+   "text": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.",
+   "dur": 8.39,
+   "needsVoice": false
+  }
+ },
+ "exc": [],
+ "glow": [
+  36.15,
+  45.5
+ ],
+ "label": 42.77,
+ "draft": "1F5-scissors",
+ "stack": {
+  "labels": [
+   "SOCIETY",
+   "INDIVIDUAL",
+   "BIOLOGY",
+   "CHEMISTRY",
+   "PHYSICS",
+   "MATHEMATICS"
+  ],
+  "lay": [
+   1.9,
+   2.52,
+   4.7,
+   6.32,
+   7.82,
+   13.14
+  ],
+  "quarks": 9.06,
+  "leptons": 9.66,
+  "under": 11.3,
+  "s02": 14.52,
+  "missing": 19.7,
+  "s03": null,
+  "consc": 21.59,
+  "quarks3": -100.0,
+  "depart": 22.89,
+  "fly": 2.6
+ },
+ "cam": {
+  "back": 2.6,
+  "pin0": 48.95,
+  "pind": 2.2,
+  "out0": 63.17,
+  "rise0": 88.1,
+  "rised": 3.2
+ },
+ "placeholder": {},
+ "cut": {
+  "s03": "whole",
+  "f04": "whole",
+  "f04b": "whole",
+  "s01": "first two sentences (to \"...close to our heart.\")",
+  "f01": "first sentence and \"For example:\"",
+  "f03": "\"You humans have got a word for it: qualia. It's what makes you so special.\"",
+  "f05": "its two [pause]s closed (0.55 s and 0.56 s of room tone out)"
+ },
+ "street": {
+  "b01": "before the hologram, on the street (ends \"Please, let me show you what we found.\"; the hologram cuts in as it finishes)",
+  "f07b": {
+   "after_hologram_ends": 97.51,
+   "note": "back on the street; not on the hologram clock or in voice.wav"
+  }
+ },
+ "marks": {
+  "layer_society": 2.0,
+  "layer_individual": 2.62,
+  "layer_biology": 4.8,
+  "layer_chemistry": 6.42,
+  "layer_physics": 7.92,
+  "layer_mathematics": 13.24,
+  "quarks_grid": 9.16,
+  "slot_appears": 19.8,
+  "slot_warms": 21.59,
+  "light_leaves": 22.89,
+  "light_lands": 25.49,
+  "toast": 25.89,
+  "sorry": 29.84,
+  "married": 34.32,
+  "label_consciousness": 42.77,
+  "to_river": 45.9,
+  "inside_river": 51.15,
+  "leave_river": 63.17,
+  "arrive_square_on": 65.77,
+  "rise": 88.1,
+  "arc_draws": 90.24,
+  "screen_off": 95.81,
+  "TD": 97.01
+ }
+}

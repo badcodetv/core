@@ -66,6 +66,17 @@ fr, probe = C.fr, C.probe
 NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady',
          'crowd': 'The hundred'}
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
+# d25s (12 Nov, scissors): exactly d24 but with the scissors hologram (design/2026-11-12-gpom-hologram-1f5-scissors). It runs every
+# d24 branch (TAG is set to 'd24' for them) and only its output folder (A-d25s) and the hologram files differ (D25S below).
+D25S = TAG == 'd25s'
+OUT_TAG_S = TAG
+if D25S:
+    TAG = 'd24'
+# d25b (12 Nov, brutal + mint): exactly d24 but with the brutal + mint hologram (design/2026-11-12-gpom-hologram-brutal-mint), by the
+# same trick as d25s: every d24 branch runs, only the output folder (A-d25b), the hologram files and its lines differ (D25B below).
+D25B = TAG == 'd25b'
+if D25B:
+    TAG = 'd24'
 D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
 D2 = TAG == 'd2'
 D7 = TAG in ('d7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24')
@@ -251,7 +262,7 @@ def row_d8(c, t, m, LINES):
 class Cut:
     def __init__(self, key, seq, title, heading, intro):
         self.key, self.seq = key, seq
-        self.dir = ROOT / (f'{key}-{TAG}' if TAG else key)
+        self.dir = ROOT / (f'{key}-{OUT_TAG_S}' if (D25S or D25B) else f'{key}-{TAG}' if TAG else key)
         self.vdir = self.dir / 'video'
         self.vdir.mkdir(parents=True, exist_ok=True)
         (self.dir / 'hud').mkdir(exist_ok=True)
@@ -597,6 +608,16 @@ if D24:
     H_VOX = HOLO / 'render-1f5-24' / 'hologram-1f5-24fps-voice.wav'
     H_EDIT = HOLO / 'render-1f5-24' / 'edit.json'
     H_LINES = S.REPO / 'design' / '2026-11-05-gpom-meeting' / 'voice-1f' / 'lines-1f5.json'
+if D25S:  # scissors (12 Nov): s03, f04, f04b cut; s01/f01/f03 trimmed and f05's pauses closed in silence (trim.py); no new voice
+    H_PIC = HOLO / 'render-1f5-scissors-24' / 'hologram-1f5-scissors-beads-24fps-picture.mp4'
+    H_VOX = HOLO / 'render-1f5-scissors-24' / 'hologram-1f5-scissors-24fps-voice.wav'
+    H_EDIT = HOLO / 'render-1f5-scissors-24' / 'edit.json'
+    H_LINES = S.REPO / 'design' / '2026-11-12-gpom-hologram-1f5-scissors' / 'lines-1f5-scissors.json'
+if D25B:  # brutal + mint (12 Nov): kept s01 (trimmed), f02, f03 (trimmed), f07a + new m1-m4 (the taste of mint), f05a/b, f06a/b
+    H_PIC = HOLO / 'render-1f5-brutal-mint-24' / 'hologram-bm-beads-24fps-picture.mp4'
+    H_VOX = HOLO / 'render-1f5-brutal-mint-24' / 'hologram-bm-24fps-voice.wav'
+    H_EDIT = HOLO / 'render-1f5-brutal-mint-24' / 'edit.json'
+    H_LINES = S.REPO / 'design' / '2026-11-12-gpom-hologram-brutal-mint' / 'lines.json'
 BRIDGE_SPLIT = 5.51 if TAG in ('d17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24') else 6.0  # the pause between "...came back." (speech to 5.78 s) and "Go on, then." (from 6.60 s), clip time  # d14: "He made me learn a little presentation... Gather round."
 
 
@@ -665,6 +686,12 @@ def beat0_d13(c, m):
             if D22:
                 holo['f04b'] = dict(holo['f04'], text=f4b.strip(), by='claude')
         street = street + [dict(f07, text=b_txt.strip())]
+    if D25S:  # scissors: only the kept lines, with the words they now say (lines-1f5-scissors.json)
+        kept = {r['id']: r for r in json.loads(H_LINES.read_text())}
+        holo = {k: dict(holo[k], text=kept[k]['text']) for k in kept}
+    if D25B:  # brutal + mint: the hologram lines of lines.json (street lines b01/f07b stay as d24); new ids are Claude's words (Kai's A1 pick)
+        kept = {r['id']: r for r in json.loads(H_LINES.read_text()) if not r['street']}
+        holo = {k: dict(holo[k], text=r['text']) if k in holo else dict(text=r['text'], by='claude') for k, r in kept.items()}
     assert len(street) == 3, 'script.json beat 0 (1K): two street lines, the hologram lines (with ids), then "Anyway!"'
     v6 = V / 'cut3-beat0-continuous-xx.mp4'
     graded, note = regrade_v6(v6, c.vdir / f'{v6.stem}-graded.mp4')
@@ -2511,6 +2538,6 @@ def run(key, do_preview=True):
 
 
 if __name__ == '__main__':
-    keys = [a for a in sys.argv[1:] if not a.startswith('--') and a != TAG] or ['A', 'B']
+    keys = [a for a in sys.argv[1:] if not a.startswith('--') and a not in (TAG, OUT_TAG_S)] or ['A', 'B']
     for k in keys:
         run(k, '--no-preview' not in sys.argv)

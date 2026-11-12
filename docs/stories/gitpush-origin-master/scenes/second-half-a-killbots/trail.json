@@ -722,5 +722,16 @@
   "decided": [
    "it's a wrap! Brilliant. Well done... please commit it, put it into Premiere"
   ]
+ },
+ {
+  "at": "2026-11-12T10:21:30+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/6j5QxvqADoLVZoGkRktrs2",
+  "what": "short cuts of Maddie's presentation: full (d24), scissors (d25s), brutal + mint (d25b)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/picks-short-cuts.json <out>/index.html",
+  "decided": [
+   "Kai 12 Nov: keep the full presentation as 'the video Maddie left' (yes); the turn is the taste of mint ('sorry/love is a bit soppy'); build scissors-only and brutal as fallbacks"
+  ]
  }
 ]

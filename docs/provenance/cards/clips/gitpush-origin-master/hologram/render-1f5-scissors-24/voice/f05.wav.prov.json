@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-24/voice/f05.wav",
+ "made": "2026-11-12T10:14:29+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-12-gpom-hologram-1f5-scissors/trim.py (numpy cut in room tone, 15 ms fades)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f4/f05.wav",
+ "why": "hologram 1F5 scissors, line f05: the 1F5 take trimmed with scissors only",
+ "prompt": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. It's a storyverse. And there's only one of them, so it's really important.",
+ "inputs": {
+  "record": "design/2026-11-12-gpom-hologram-1f5-scissors/lines-1f5-scissors.json"
+ },
+ "settings": {
+  "keep": "[[0, 12.95], [13.5, 15.6], [16.16, null]]"
+ }
+}

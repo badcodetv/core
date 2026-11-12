@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-24/voice/f03.wav",
+ "made": "2026-11-12T10:14:29+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-12-gpom-hologram-1f5-scissors/trim.py (numpy cut in room tone, 15 ms fades)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f4/f03.wav",
+ "why": "hologram 1F5 scissors, line f03: the 1F5 take trimmed with scissors only",
+ "prompt": "[the beads glow; CONSCIOUSNESS fades up beside them, unspoken] [wistful, a little regretful] We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines.",
+ "inputs": {
+  "record": "design/2026-11-12-gpom-hologram-1f5-scissors/lines-1f5-scissors.json"
+ },
+ "settings": {
+  "keep": "[[0, 9.2]]"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-brutal-mint-24/hologram-bm-24fps-voice.wav",
+ "made": "2026-11-12T10:08:11+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "design/2026-11-12-gpom-hologram-brutal-mint/finish.py (ffmpeg adelay+amix)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-brutal-mint/clips/m1.wav",
+ "why": "GPOM scene A hologram, brutal + mint (Kai, 12 Nov: the 1F5 presentation \"really good, just really long\", its consciousness turn cringe; turn = draft A1, the taste of mint; spec design/2026-11-12-gpom-consciousness/README.md part B). Only the kept lines + the mint turn, every beat re-timed to its word.",
+ "inputs": {
+  "page": "design/2026-11-12-gpom-hologram-brutal-mint/index.html",
+  "builder": "design/2026-11-12-gpom-hologram-brutal-mint/make.py",
+  "voice": "design/2026-11-12-gpom-hologram-brutal-mint/lines.json",
+  "stack": "design/2026-11-12-gpom-hologram-brutal-mint/stack.js",
+  "derek": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-a.jpg",
+  "sandra": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-a.jpg",
+  "wedding": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-a.jpg"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-brutal-mint-24/edit.json",
+  "bead_media": "design/2026-11-12-gpom-hologram-brutal-mint/bead-media.json"
+ }
+}
