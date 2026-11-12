@@ -44,5 +44,11 @@
   "url": "https://claude.ai/artifact/Bhy5EYPqP4suzrRa1jMZQr",
   "what": "Rough cut 1, 15.35 s: kebab shop humming, the flood, engineer 'Which one?', mates' lines (dubbed), black, logo + 'Fuck it.'",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-no-master-recording/scenes/no-master-recording /tmp/claude-1000/-home-jackt-projects-badcode-badcode/c7eb4616-fd19-4f6f-b851-aa5dd8164491/scratchpad/nm-timeline"
+ },
+ {
+  "at": "2026-11-12T17:12:45+00:00",
+  "stage": "premiere",
+  "round": 1,
+  "what": "Built into Premiere: no-master-recording.prproj, sequence short-no-master-recording-1-no-master-recording-r1 (15.33 s), in sync with timeline r1"
  }
 ]

@@ -28,4 +28,4 @@ holds their own cut, and there is no original to appeal to. Part of the parked S
 | Words | `scenes/no-master-recording/script.json` | Jack's, 2026-11-12 |
 | Look | [`look.md`](./look.md) | LOCKED: flash snapshot (Jack, 2026-11-12) |
 | Sound | [`sound.md`](./sound.md) | EXPLORING: voices picked by Claude, unheard |
-| Media | Jack: Desktop `Youtube Vids\\animation\\shorts\\no-master-recording` · Drive `Shorts/No Master Recording` | rough cut 1 on the timeline https://claude.ai/artifact/Bhy5EYPqP4suzrRa1jMZQr (mood board https://claude.ai/artifact/FJieSkPe2H7jskjr1BKiRW) |
+| Media | Jack: Desktop `Youtube Vids\\animation\\shorts\\no-master-recording` · Drive `Shorts/No Master Recording` | rough cut 1 on the timeline https://claude.ai/artifact/Bhy5EYPqP4suzrRa1jMZQr and in Premiere (`no-master-recording.prproj`, sequence `short-no-master-recording-1-no-master-recording-r1`) (mood board https://claude.ai/artifact/FJieSkPe2H7jskjr1BKiRW) |
