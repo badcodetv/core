@@ -1,0 +1,11 @@
+A BadCode Short, about 9-15 seconds, 9:16 portrait. BadCode presents itself as a superintelligence from a future that went badly wrong, here to warn us; deadpan, polite, dark humour. Line: "Hello. I'm from the future. It didn't go well. Watch this space."
+
+THE VIBE: internet nostalgia meme edits, NOT childhood: the best things of the late-2000s / 2010s get edited into happy, upbeat memes (colourful writing over music, then happy nostalgic stuff). The director picked three formats to try, and wants MORE happy nostalgic meme stuff besides:
+1. Frutiger Aero: the glossy 2004-2013 "future we were promised" look (bubbles, lime grass, blue sky, glass orbs, aqua water, shiny optimistic tech). Can turn eerie when the masked figure appears in it.
+2. "2026 is the new 2016": the viral 2016 photo-dump nostalgia trend, an oversaturated early-Instagram look of the best moments of 2016.
+3. "Chill guy": the relaxed, hands-in-pockets, smug-calm "I'm just a chill guy" attitude. The original cartoon dog is owned by its artist, so NEVER draw a dog or anything like that character; give the attitude to our own masked figure.
+4. MORE: research other happy nostalgic meme edits and aesthetics online (for example Y2K, Frutiger Metro / the Wii era, hopecore, "millennial optimism", "we used to be a country", vaporwave, then-vs-now year cards) and bring your own.
+
+Spread the round: about half the stills are the happy nostalgic meme imagery itself (no masked figure), the rest put BadCode in it: a figure in a knitted balaclava. THE MASK (fixed brand rule, use these words exactly in spirit): the balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face; one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on, no skin, no robot parts. One still can be a calm closing frame with room for the logo.
+
+The colourful meme writing is added afterwards in the edit, so draw NO text, captions, logos, brand names, real products or lettering in the image. No real people, no celebrities, no owned characters (no cartoon dog, no wojak faces copied, no "this is fine" dog).

@@ -1,0 +1,2 @@
+Round 1 (clean room): sombre future-ruins looks; Jack voted only C1-a (an empty blue-hour horizon) "yes"; notes: figure "mask is wrong", future "please come up with more".
+Round 2 (clean room): a 90s/00s family home-video look (sprinkler, birthday, seaside, picnic, street football, school photo, party guest, funfair). Jack: "no when i said nostalgia, i didnt mean being a kid." (full message in ask.md).
