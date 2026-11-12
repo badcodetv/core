@@ -29,8 +29,16 @@ const create_sequence: CommandHandler = async (args) => {
       }
       sequence = await project.createSequenceFromMedia(name, clips)
     } else if (preset) {
-      // NOT createSequence(name, presetPath) — that overload is deprecated.
-      sequence = await project.createSequenceWithPresetPath(name, preset)
+      // NOT createSequence(name, presetPath) — that overload is deprecated. But Premiere 25.6 (Jack's
+      // version, by choice) has no createSequenceWithPresetPath at all ("is not a function", 2026-11-12),
+      // so fall back to the old overload there rather than lose the preset.
+      const p = project as unknown as {
+        createSequenceWithPresetPath?: (n: string, path: string) => Promise<Sequence>
+        createSequence: (n: string, path?: string) => Promise<Sequence>
+      }
+      sequence = typeof p.createSequenceWithPresetPath === 'function'
+        ? await p.createSequenceWithPresetPath(name, preset)
+        : await p.createSequence(name, preset)
     } else {
       sequence = await project.createSequence(name)
     }

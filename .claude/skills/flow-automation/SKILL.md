@@ -8,6 +8,16 @@ description: Use when DRIVING Google Flow — bringing the browser up, calling t
 **The machine half of Flow.** Everything about making a tool call succeed, and nothing about
 what to put in it.
 
+
+### Speed rules (Jack, 2026-11-12: "refresh the page and try again instead of waiting")
+
+- **Stills in parallel are fine; edits are not.** Several `flow_generate_image` calls at once worked all day; three
+  `flow_edit_image` calls at once jammed the upload picker for every later edit.
+- **An upload that hasn't landed in 30 s is stuck.** The edit tool now fails with `UPLOAD_STUCK` after 30 s
+  (it was 90 s) and closes any stuck picker overlay before the next upload.
+- **Two strikes, then switch route.** Reload (`flow_open_project`) and retry once; if the same step fails again,
+  take another route (a fresh `flow_generate_image` with the fix in the prompt) instead of retrying a third time.
+
 ## What this is not
 
 Three jobs touch Flow and they are deliberately separate. Reaching for the wrong one is how

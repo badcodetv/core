@@ -41,13 +41,19 @@ writers, the sameness gate, and a stamp so nobody hand-edits the round.
   facts.md      optional  the facts of the last verdict: what was run, what the human said.
   keep.txt      optional  REFINE round: the liked take's own box/prompt, verbatim. Writers keep it
                           and change only what was asked; its words may be shared.
-  forbid.txt    optional  phrases no prompt may contain, one per line (e.g. a story's "Never")
+  forbid.txt    optional  phrases no prompt may contain, one per line (e.g. a story's "Never"). A line with a
+                          capital letter is a name: matched whole-word and case-sensitively ("Windows" ≠ "windows")
   locked-settings.json  optional  settings the story's file LOCKS for this part, e.g.
                           {"model": "Nano Banana 2", "aspect": "16:9"}. Writers are told to use them,
                           the gate checks every prompt does, and the sameness gate's all-identical-
                           settings failure then looks only at the other settings.
   preamble.txt  optional  a LOCKED preamble from the story's look.md/sound.md, verbatim. Writers are
                           told to use it as-is; its words are exempt from the sameness gate.
+  shared.txt    optional  wording that MUST read the same wherever it is used (a brand rule such as the
+                          BadCode balaclava, a standard "no text in the image" line). Writers are told
+                          to paste it verbatim when their prompt needs it; its words are exempt from the
+                          sameness gate. Not forced into every prompt (unlike preamble.txt). Jack,
+                          2026-11-12: required wording bounced whole rounds for rewrites.
   count         optional  how many prompts (default: the ideas writer chooses)
   workspace     optional  Suno workspace for run
 """
@@ -143,6 +149,11 @@ def base_brief(d, kind):
         parts.append("## The story's locked preamble\n\nStart your prompt with this text exactly as written "
                      "(it is the story's own, and is exempt from the sameness check); write everything after it "
                      "in your own words.\n\n```\n" + read(d, "preamble.txt") + "\n```")
+    if read(d, "shared.txt"):
+        parts.append("## Wording to paste verbatim when you need it\n\nWhen your prompt includes what one of these "
+                     "lines describes, paste that line exactly as written (it is a fixed rule, and exempt from the "
+                     "sameness check); never paraphrase it. Write everything else in your own words.\n\n```\n"
+                     + read(d, "shared.txt") + "\n```")
     if kind == "suno":
         parts.append("## The lyrics\n\nUse these words exactly — do not change, add or remove any word or "
                      "spelling. You may add section tags and short directions in square brackets. Keep "
@@ -282,8 +293,14 @@ def problems(d, kind, p):
     pre = read(d, "preamble.txt")
     if pre and not (p.get("style", "") if kind == "suno" else text).strip().startswith(pre.strip()):
         out.append("it does not start with the story's locked preamble, verbatim")
-    for bad in filter(None, (l.strip().lower() for l in read(d, "forbid.txt").splitlines())):
-        if bad in (p.get("style", "") if kind == "suno" else text).lower():
+    hay = p.get("style", "") if kind == "suno" else text
+    for bad in filter(None, (l.strip() for l in read(d, "forbid.txt").splitlines())):
+        # A capitalised entry is a name (a brand, a product): match it whole-word and case-sensitively, so
+        # "Windows" blocks the software, not "windows" (Hello, I'm BadCode r3, 2026-11-12). Lower-case
+        # entries match anywhere, ignoring case, as before.
+        hit = (re.search(rf"\b{re.escape(bad)}\b", hay) if bad != bad.lower()
+               else bad.lower() in hay.lower())
+        if hit:
             out.append(f"it asks for '{bad}', which this story never allows")
     return out
 
@@ -300,7 +317,8 @@ def gate(d):
     passes = int(passes_f.read_text()) if passes_f.exists() else 0
     round_ = [prompts[n] for n in names]
     print(f"═══ gate, pass {passes + 1}")
-    offenders = sameness_gate(round_, read(d, "keep.txt"), kind, read(d, "preamble.txt"), tuple(locked(d)))
+    exempt = "\n".join(x for x in (read(d, "preamble.txt"), read(d, "shared.txt")) if x)
+    offenders = sameness_gate(round_, read(d, "keep.txt"), kind, exempt, tuple(locked(d)))
     faults = {n: f for n in names if (f := problems(d, kind, prompts[n]))}
     for n, f in faults.items():
         print(f"🔴 {n}: " + "; ".join(f))

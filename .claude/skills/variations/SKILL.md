@@ -47,8 +47,9 @@ Make a folder beside the work (Suno: `docs/stories/<story>/songs/<round>/`; Flow
 | `keep.txt` | REFINE: the liked take's own box | verbatim from the engine's record, never from our notes |
 | `forbid.txt` | phrases no prompt may contain | e.g. the story's *Never* list |
 | `preamble.txt` | a LOCKED preamble from the story's file | verbatim; every prompt must start with it, and its words are exempt from the gate |
+| `shared.txt` | wording that must read the same wherever it appears: a brand rule (the BadCode balaclava: copy `docs/brand/balaclava/shared-wording.txt`), a standard "no text in the image" line | verbatim; writers paste it when their prompt needs it (not forced into every prompt, unlike `preamble.txt`), and its words are exempt from the gate. 🔑 Jack, 2026-11-12: without it, required wording bounced whole rounds for rewrites |
 | `locked-settings.json` | settings the story's file LOCKS for this part, e.g. `{"model": "Nano Banana 2", "aspect": "16:9"}` | only what the file says is locked; every prompt must use them, and the all-identical-settings check skips them |
-| `count` | how many | default: the ideas writer chooses (6–10, refine 4–6) |
+| `count` | how many | **6 for a quick looks round** (Jack, 2026-11-12: speed); 9–10 only for a wide exploration; refine 4–6. Each writer is an agent plus its rewrites |
 
 ## The loop
 

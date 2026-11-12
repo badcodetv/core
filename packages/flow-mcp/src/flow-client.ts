@@ -55,6 +55,9 @@ const PROJECTS_LIST_RE = /^https:\/\/flow\.google\.com\/?(\?.*)?$/
 const FLOW_HOST_RE = /^https:\/\/flow\.google\.com\//
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
 const TURN_TIMEOUT_MS = 90_000
+// An uploaded reference that has not shown up in the picker after 30 s is stuck, not slow: a ~1 MB still
+// lands in a few seconds. Jack, 2026-11-12: "refresh the page and try again instead of waiting".
+const UPLOAD_READY_MS = 30_000
 /**
  * 🔴 NO DEFAULT MODEL OR ASPECT (2026-10-29, design/2026-10-29-style-leak-audit.md §1). Until then
  * an image call with no `model` became "Nano Banana Pro" and a video call "Veo 3.1 Fast" at 16:9 —
@@ -1966,6 +1969,12 @@ export class FlowClient {
     const overlay = this.page.locator('.cdk-overlay-container')
     for (const ref of refPaths) {
       const base = await this.ingredientChips().count()
+      // A picker left open by an earlier failed call leaves a backdrop over the page that swallows every
+      // click (2026-11-12: three edits in a row timed out on "subtree intercepts pointer events"). Close it.
+      for (let i = 0; i < 3 && (await overlay.locator('.cdk-overlay-backdrop-showing').count()); i++) {
+        await this.page.keyboard.press('Escape').catch(() => {})
+        await this.page.waitForTimeout(300)
+      }
       await this.ingredientsButton().click()
       // 2026-09-14: the picker's upload control became an icon button — its visible text is just
       // the `upload` ligature and "Upload media" lives only in aria-label — so match either.
@@ -1979,7 +1988,14 @@ export class FlowClient {
         .locator('[role="option"]')
         .filter({ hasText: new RegExp(`^\\s*${escapeRegExp(name)}`) })
         .first()
-      await ready.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      try {
+        await ready.waitFor({ state: 'visible', timeout: UPLOAD_READY_MS })
+      } catch {
+        for (let i = 0; i < 3; i++) await this.page.keyboard.press('Escape').catch(() => {})
+        throw new Error(`UPLOAD_STUCK: ${name} never appeared in the ingredients picker within ${UPLOAD_READY_MS / 1000}s. ` +
+          'Reload the project (flow_open_project) and retry once; if it sticks again, switch route ' +
+          '(e.g. a fresh flow_generate_image) rather than waiting.')
+      }
       // Clicking the finished option ATTACHES it and closes the picker by itself (measured
       // 2026-09-13) — the same shape the old character picker had. The Add button is only
       // pressed if the picker is somehow still open afterwards.

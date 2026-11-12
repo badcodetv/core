@@ -51,6 +51,7 @@ no robot feature, just have gloves on and never show skin."*
   high inside the ring. Facing the camera, that puts the triangle on the **right of the picture**, at about
   2 o'clock, the same as the logo. (This replaces the "right eye" reading of earlier the same day.)
   Reference image (picked 2026-11-03): `Youtube Vids\animation\songs\bank robbery\gang\reference\lineup-a.jpg`, the six-man Bank Robbery gang facing camera.
+- **Prompt wording:** paste [`balaclava/shared-wording.txt`](./balaclava/shared-wording.txt) verbatim (a variations round takes it as `shared.txt`, exempt from the sameness gate). 🔴 Never brief it as "a ring round the left eye": that reads as a small ring round one eye hole (Hello, I'm BadCode, 2026-11-12).
 - **No skin, ever.** The balaclava has no eye, nose or mouth holes; its neck tucks into a collar; gloves on
   both hands; cuffs over the wrists. Nothing human shows, so it *could* be a machine underneath (the
   GitPush idea), but **no robot features**: no metal, no lights, no seams, no visor. Just cloth and gloves.

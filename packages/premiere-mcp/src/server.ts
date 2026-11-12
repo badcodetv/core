@@ -1145,6 +1145,18 @@ server.registerTool(
 
       // The promise resolving is not the file being finished — see waitForStableFile.
       const wsl = toWsl(result.path)
+      // Premiere 25.6 appends the extension again ("x.png" lands as "x.png.png", Jack's machine,
+      // 2026-11-12), so the wait timed out on a frame that had in fact been written. Watch for both
+      // names; if the doubled one turns up, rename it to the name we were asked for.
+      const doubled = `${wsl}.${ext}`
+      for (const t0 = Date.now(); Date.now() - t0 < 120_000 && !fs.existsSync(wsl); ) {
+        if (fs.existsSync(doubled)) {
+          await waitForStableFile(doubled, { timeoutMs: 60_000 })
+          fs.renameSync(doubled, wsl)
+          break
+        }
+        await new Promise(r => setTimeout(r, 200))
+      }
       const bytes = await waitForStableFile(wsl, { timeoutMs: 120_000 })
       return ok({ path: wsl, time: result.time, width: result.width, height: result.height, bytes, sequence: result.sequence })
     } catch (err) {

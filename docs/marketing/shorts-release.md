@@ -41,6 +41,7 @@ upload from.
   - From code, call `premiere_create_sequence({ name, preset: "<that file>" })`, then read the sequence back:
     1080×1920, `frameRate: 24`.
   - ✅ Proven 2026-11-11 on The Rules: the sequence read back 1080×1920, `frameRate: 24`, timebase 10584000000.
+  - Premiere 25.6 has no `createSequenceWithPresetPath`; the panel now falls back to the old `createSequence(name, preset)` there (2026-11-12, reload the panel in UXP Developer Tool once). If that ever fails too, `fromItems` with a 1080×1920 24 fps clip gives the same settings.
 - **Name:** `short-<slug>-1-<scene>-r<N>`, the same name the timeline page uses. The page and Premiere move together
   (scene-timeline, "No split brain").
 - **Clips are 720×1280**, which is what Omni makes. Set Motion → Scale to **150** on every clip, or the picture sits small in the middle of a white frame. The Rules build does this in one eval.

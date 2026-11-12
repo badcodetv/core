@@ -26,9 +26,9 @@ description: Use to CAST the speaking voices of a BadCode film, scene or short b
 3. **The same-prompt check** on every profile: `python3 scripts/variations/fresh.py < profile.md`. Scene facts that
    repeat (a car's back seat) can stay; a repeated *description of a voice* means rewrite it.
 4. **Render**, paced (one call every ~22 s):
-   `set -a; . ./.env; set +a; uv run -q --with "google-genai<2" python3 scripts/aistudio-tts.py <lines.txt> <out.wav> --profile <p.md> --voice <Name>`
+   `scripts/aistudio-tts.sh <lines.txt> <out.wav> --profile <p.md> --voice <Name>` (loads `.env`; uses `uv` if installed, else `~/.venvs/genai`, which it makes once)
    into the media folder's `audio/casting/` (from `scene.json` `media`, through `scripts/drive/localmap.py`).
-   **Check every take's length**: about one in five comes back cut short, so re-run those.
+   **Check every take's length**: about one in five comes back cut short, so re-run those. **Check the words** with `scripts/transcribe.py <take.wav> …` (CPU faster-whisper; works on Jack's machine).
 5. **Recipe card** for each take: `scripts/provenance/prov.py card` (docs/provenance).
 6. **The page**: a `voices/picks.json` for `scripts/scene/build-picks.py`. There is one section, one group per
    role (`kind: "audio"`), and each option's label names the voice and the idea. Build it, then publish it with
