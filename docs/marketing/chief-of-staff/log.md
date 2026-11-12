@@ -3,6 +3,17 @@
 Every ruling and every weekly review, newest first. One entry per event, a few lines each.
 Format: `## YYYY-MM-DD — what` then who said what, in their words where possible.
 
+## 2026-11-12 — Kai: research automating the release across every platform
+
+Kai: "if we were able to kind of, say, make a post, that that means publish it on YouTube and Instagram and
+everything else … it feels like we have more flexibility over such tools if we wire them directly into you."
+Researched (two passes) into [`../release-automation.md`](../release-automation.md): Meta (Facebook, Instagram,
+Threads) is free to wire with an AI flag; TikTok's audit refuses own-use tools, so it stays manual or goes through
+a paid tool; Spotify only via a distributor. New decision on the board (build the Meta tool); the songs decision
+updated with the findings. The site went live today, so "deploy badcode.tv" left Do next and the four private
+YouTube videos took its place. "Jack: is this plan right?" came off the board to keep three decisions; it is
+still open and comes back when a slot frees.
+
 ## 2026-11-05 — Board caught up with the 22 October first-release ruling; growth question
 
 Kai, 22 October (recorded in `docs/stories/gitpush-origin-master/ep1.md`): the first release is four

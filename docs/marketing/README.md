@@ -10,6 +10,7 @@ interview questions and the automation capture shape. Add a row here when you ad
 
 | Plan | Hook | Channels | Status |
 | --- | --- | --- | --- |
+| [Release automation](release-automation.md) | one post → every platform, wired into Claude: Meta (Facebook, Instagram, Threads) free and wireable; TikTok's audit refuses own-use tools; Spotify only via a distributor (Claude prepares, a human submits) | all + Spotify · SoundCloud | seed 2026-11-12 — researched, nothing built |
 | [The Reader](the-reader.md) | who the work is aimed at — the working-class right-drifting reader: portrait, the ten evidence-backed rules for writing to them, channel implications. Evidence: [`misc/2026-08-15-target-reader-research.md`](../misc/2026-08-15-target-reader-research.md) | all | drafted from Kai's 2026-08-15 ruling — rules await sign-off |
 | 🔑 [**The Chief of Staff + the 90-day plan**](chief-of-staff/README.md) | **start here** — the operating layer over everything below: one goal (get finished work out, keep it going, start a mailing list), **what to do next and what we're not doing — no dates**, the board of three decisions, and the `chief-of-staff` skill that runs it | YouTube · Facebook · TikTok · Instagram · email | proposal 2026-10-14, dates removed 2026-10-15 — not ruled |
 | [The Marketing Plan](plan.md) | continuous release, automated by an Agent Orange worker fleet — posture, content universe, the 10-strategy portfolio, platform priorities, Campaign #1 (Camping launch), cadence calendar, voice guardrails | all | developing |

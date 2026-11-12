@@ -6,21 +6,22 @@
 > repo (`/chief-of-staff`). Kai, 15 October 2026: "manage this in this repository and just as a final
 > step, publish it to the artifact simply as a way of me and Jack sharing it with each other."
 
-Updated 5 November 2026.
+Updated 12 November 2026.
 
 ## Do next
 
 1. **Jack: start the mailing list, "Transmissions"** (Kit or Substack). *Why: the accounts are open (YouTube, Facebook Page, TikTok, Instagram, SoundCloud, X), so the list is the last thing missing before posting, and it's the one audience no platform can take away.*
-2. **Kai: deploy badcode.tv** (the one-page map in `apps/site/`, built 22 October, not live). *Why: every short needs somewhere to point people, and it's finished.*
+2. **Kai or Jack: put the first YouTube videos public** (Git Push Origin Master is waiting on Kai's new cut; Karen, The bank robbery and The Rules are finished). Titles, descriptions, tags, the AI label, thumbnails and the channel's About text are all on (`docs/youtube/channel.json`); going public is your click in YouTube Studio. *Why: finished work is sitting private, and badcode.tv went live on 12 November with nothing public to point at.*
 3. **Claude: cut each first-release film into a serial of shorts** (GPOM, Camping, Karen, Bank Robbery, in that order; Camping's seven parts are already specced) and run the delivery check. Jack signs off the cuts. *Why: one film becomes 7 to 10 posts, and posting often is what gives a new account its chances.*
 
 ## Then
 
 4. **Claude: write the words for Camping**: titles, captions, the pinned comment, the first email, all past the gatekeeper.
 5. **Jack: post Camping part 1**, then the next part, and the next.
-6. **Claude: build the Money For Something pipeline**: the white-balaclava host with the red-triangle eyepatch, voiced by text-to-speech. Kai and Jack pick the host's look from stills first.
-7. **Jack: put sound under the 30 comic shorts** (our own tracks), so the Archive lane can start.
-8. **Kai or Jack: pick Karen's fix** before any Karen part with "AI" in it goes out.
+6. **Claude: build the Meta posting tool** (Facebook Page, Instagram, Threads), like the YouTube one: drafts first, the AI flag always on, a log, a human yes. Once Kai says yes and Jack sorts the Page access ([`release-automation.md`](../release-automation.md)).
+7. **Claude: build the Money For Something pipeline**: the white-balaclava host with the red-triangle eyepatch, voiced by text-to-speech. Kai and Jack pick the host's look from stills first.
+8. **Jack: put sound under the 30 comic shorts** (our own tracks), so the Archive lane can start.
+9. **Kai or Jack: pick Karen's fix** before any Karen part with "AI" in it goes out.
 
 ## What we're not doing, and should be
 
@@ -28,7 +29,6 @@ Updated 5 November 2026.
 - **Owning an audience.** No mailing list yet, so every follower would belong to a platform.
 - **A face and a voice that come back.** Channels that break out have one recurring character. The balaclava host is ours, and doesn't exist yet.
 - **Showing the fix, not just the fault.** One comic short in 30 shows what better looks like. The reader needs hope as well as anger.
-- **Somewhere to send people.** The website isn't live and doesn't carry the logo yet.
 - **Talking back.** Nobody's replying to anyone yet, because nothing is out.
 - **Jack's eyes on the plan and the logo.** Both are Kai's picks so far.
 
@@ -36,9 +36,9 @@ Updated 5 November 2026.
 
 Tell Claude your answer in the repo. A sentence is enough.
 
-- **Both: do the songs go to SoundCloud and Spotify now?** The plan says "not now", but the 22 October first-release ruling says yes. My recommendation: yes. Spotify through a distributor that declares AI use (DistroKid); SoundCloud for the drum & bass scene only, because it won't distribute or pay out on Suno-made tracks.
+- **Both: do the songs go to Spotify and SoundCloud now?** The plan says "not now", the 22 October first-release ruling says yes. Researched 12 November: Spotify has no upload API, so it's a distributor either way. My recommendation: yes, through DistroKid (takes declared AI music); Claude makes the release pack, you click submit. SoundCloud as a scene presence only: it won't pay out on Suno tracks.
+- **Kai: build our own posting tool for Facebook, Instagram and Threads?** Meta's official API is free, has an AI-label field, and Facebook can hold a post as a draft. TikTok can't be wired this way (its review refuses own-use tools), so TikTok stays a tap in the app for now. My recommendation: yes, and Jack adds Kai as an admin on the Facebook Page so the tool can sign in.
 - **Jack: which logo o is official on the accounts?** Your red-disc variant is on every profile; the brand file still says the solid red o. My recommendation: Kai rules one, and the other gets swapped.
-- **Jack: is this plan right?** One goal, the next list, what we're not doing. No dates. Kai has said yes.
 
 ## Gone out
 
