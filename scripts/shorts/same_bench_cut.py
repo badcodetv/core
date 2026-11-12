@@ -21,6 +21,9 @@ cfg = localize(json.loads((SCENE / 'scene.json').read_text()))
 MEDIA = pathlib.Path(cfg['media'])
 VID, AUD, DATES = MEDIA / 'video', MEDIA / 'audio', MEDIA / 'dates'
 CUT = MEDIA / 'cut'; CUT.mkdir(parents=True, exist_ok=True)
+# Tidy (Jack, 2026-11-12): working files go in cut/_scratch; cut/ keeps only edl.json, preview.mp4 and the stems the
+# timeline page plays. Premiere's files live in cut/premiere/rN/ and are never touched here.
+WORK = CUT / '_scratch'; WORK.mkdir(exist_ok=True)
 FONT = '/mnt/c/Windows/Fonts/BASKVILL.TTF'
 VOICE = AUD / 'casting/cat-a-algenib.wav'
 W, H, FPS = 1080, 1920, 24
@@ -69,33 +72,33 @@ def main():
     subprocess.run([sys.executable, str(REPO / 'scripts/shorts/same_bench_dates.py'), str(MEDIA)], check=True, capture_output=True)
     parts, world = [], []
     for i, (beat, kind, src, tin, d, _) in enumerate(SHOTS):
-        out = CUT / f'v{i}-{beat}.mp4'
+        out = WORK / f'v{i}-{beat}.mp4'
         if kind == 'logo':  # the real logo files (docs/brand), never drawn by Flow
             ff('-f', 'lavfi', '-i', f'color=c=0x0b0b0b:s={W}x{H}:r={FPS}:d={d}', '-loop', 1, '-t', d, '-i', src, '-filter_complex',
                f"[1]scale=640:-1[l];[0][l]overlay=(W-w)/2:(H-h)/2,fade=t=in:d=0.3,format=yuv420p", *ENC, '-t', d, out)
-            sp = CUT / f's{i}-{beat}.wav'
+            sp = WORK / f's{i}-{beat}.wav'
             ff('-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo', '-t', d, sp)
         elif kind == 'card':  # a held card with projector flicker and moving grain, like the clips' stock
             ff('-loop', 1, '-t', d, '-i', src, '-vf',
-               f"{FIT},noise=alls=18:allf=t,eq=brightness='0.025*sin(2*PI*9*t)',fade=t=in:d=0.12,fade=t=out:st={d - 0.12}:d=0.12,format=yuv420p", *ENC, out)
-            sp = CUT / f's{i}-{beat}.wav'
+               f"{FIT},noise=alls=18:allf=t,eq=brightness='0.025*sin(2*PI*9*t)',fade=t=in:d=0.12,fade=t=out:st={d - 0.12}:d=0.12,format=yuv420p", *ENC[:4], '-crf', '26', *ENC[6:], out)
+            sp = WORK / f's{i}-{beat}.wav'
             ff('-f', 'lavfi', '-i', f'anullsrc=r=48000:cl=stereo', '-t', d, sp)
         else:
             # Round 3 (Jack, timeline r2: "he should look to where a person would be like in the last two clips"):
             # C is mirrored so he turns to screen right, where the soldier and the nurse sat.
             flip = 'hflip,' if beat == 'button' else ''
             ff('-ss', tin, '-t', d, '-i', src, '-an', '-vf', f'{flip}{FIT},scale=in_range=full:out_range=limited,format=yuv420p', *ENC, out)
-            sp = CUT / f's{i}-{beat}.wav'
+            sp = WORK / f's{i}-{beat}.wav'
             ff('-ss', tin, '-t', d, '-i', src, '-vn', '-af', f'loudnorm=I={SFX_LUFS}:TP=-6,afade=t=in:d=0.05,afade=t=out:st={d - 0.05}:d=0.05',
                '-ar', 48000, '-ac', 2, sp)
         parts.append(out); world.append(sp)
-    (CUT / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
-    ff('-f', 'concat', '-safe', '0', '-i', CUT / 'list.txt', '-c', 'copy', CUT / 'picture-raw.mp4')
-    ff('-i', CUT / 'picture-raw.mp4', '-c', 'copy', CUT / 'picture.mp4')
+    (WORK / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
+    ff('-f', 'concat', '-safe', '0', '-i', WORK / 'list.txt', '-c', 'copy', WORK / 'picture-raw.mp4')
+    ff('-i', WORK / 'picture-raw.mp4', '-c', 'copy', WORK / 'picture.mp4')
 
-    (CUT / 'slist.txt').write_text(''.join(f"file '{p.name}'\n" for p in world))
+    (WORK / 'slist.txt').write_text(''.join(f"file '{p.name}'\n" for p in world))
     wst = CUT / 'sfx-world.wav'
-    ff('-f', 'concat', '-safe', '0', '-i', CUT / 'slist.txt', '-af', f'apad=whole_dur={TOTAL}', '-ar', 48000, '-ac', 2, wst)
+    ff('-f', 'concat', '-safe', '0', '-i', WORK / 'slist.txt', '-af', f'apad=whole_dur={TOTAL}', '-ar', 48000, '-ac', 2, wst)
     vox = CUT / 'vox-fatcat.wav'
     fc, k = [], 0
     for i, s in enumerate(SHOTS):
@@ -105,7 +108,7 @@ def main():
                       f'adelay=delays={int((starts[i] + off) * 1000)}:all=1[d{k}]'); k += 1
     ff('-i', VOICE, '-filter_complex', ';'.join(fc) + ';' + ''.join(f'[d{j}]' for j in range(k)) +
        f'amix=inputs={k}:normalize=0,loudnorm=I=-16:TP=-1.5,apad=whole_dur={TOTAL}', '-ar', 48000, '-ac', 2, vox)
-    ff('-i', CUT / 'picture.mp4', '-i', vox, '-i', wst, '-filter_complex', '[1:a][2:a]amix=inputs=2:normalize=0[a]',
+    ff('-i', WORK / 'picture.mp4', '-i', vox, '-i', wst, '-filter_complex', '[1:a][2:a]amix=inputs=2:normalize=0[a]',
        '-map', '0:v', '-map', '[a]', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-t', TOTAL, CUT / 'preview.mp4')
 
     notes = SCENE / 'cut-notes.json'

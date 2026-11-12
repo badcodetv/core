@@ -54,6 +54,23 @@ upload from.
 - **Guides:** turn on the Program Monitor's wrench → Safe Margins **(official)**. For the real platform box (§3), put
   a PNG guide on the top track and switch it off before export.
 
+## 1a. A tidy media folder (Jack, 2026-11-12)
+
+Jack: *"there a lot of unneccary stuff in the folder, other than what we really need."* A short's media folder shows only
+what the film is made of; everything else goes in a folder starting with `_`:
+
+| Keep in view | Out of view |
+| --- | --- |
+| `video\` the kept clips (and their `-noaudio` copies Premiere uses) | `video\_scratch\` raw Flow downloads, run logs · `video\_rejected\` clips that were re-rolled |
+| `audio\` the picked takes | (casting takes that lost can go in `audio\casting\_unpicked\`) |
+| `moodboard\` the picked stills only | `moodboard\_unpicked\` (the scene tools still find them there) |
+| `cut\` `edl.json`, `preview.mp4`, the stems, `premiere\rN\` | `cut\_scratch\` every working render and part (the cut script writes them there) |
+| the `.prproj` | |
+
+🔴 **Never move or delete a file a Premiere sequence uses** (memory: it raised Link Media for Jack). Premiere's files are the
+ones in `cut\premiere\rN\` and the `-noaudio` clips. `_scratch` folders are safe to empty; a cut script rebuilds them.
+Worked example: `scripts/shorts/same_bench_cut.py` (cards are encoded light: a still with grain needs no crf 18).
+
 ## 2. The master file
 
 | Setting | Value | Why |

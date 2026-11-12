@@ -46,8 +46,8 @@ class Scene:
         return json.loads(p.read_text()) if p.exists() else default
 
     def still(self, sid):
-        """A still by id, from moodboard/ or its current/ and text/ subfolders."""
-        for d in ('.', 'current', 'text'):
+        """A still by id, from moodboard/ or its current/, text/ and _unpicked/ subfolders (tidied shorts park unpicked stills there)."""
+        for d in ('.', 'current', 'text', '_unpicked'):
             p = self.moodboard / d / f'{sid}.jpg'
             if p.exists():
                 return p
