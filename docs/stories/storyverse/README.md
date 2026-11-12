@@ -52,6 +52,7 @@ Stated once, at the top, because everything else depends on it:
 | [`telling.md`](./telling.md) | **How we tell it — the history lesson.** The primary telling mode: we never assert the metaphysics, we show that the people who built the instruments never accepted the boundary. Carries the eight-beat shape, the era name, the accuracy discipline and the named failure mode. |
 | [`decisions.md`](./decisions.md) | **The decisions log** — what the 2026-08-07 research pass settled, the rulings taken, and what's still owed a human. |
 | [`research/`](./research/README.md) | **The evidence base** — ten deep-research briefs (2026-08-07) behind every claim above, with sources, tiers and attack surfaces. |
+| [**Shorts: #50–82**](../../marketing/badcode-shorts.md) | **The Storyverse as BadCode Shorts** (v3, 2026-11-12, Jack): 33 ideas, each making ONE Storyverse idea land: a real result as the evidence beat (its source as a caption), the narrator's reading as a bet, then a button. #52 *No Master Recording* is built (`../short-no-master-recording/`). Evidence: `research/2026-11-12-physics-for-shorts.md` and `research/2026-11-12-essentia-for-shorts.md`. Parked to revisit. |
 
 Related, and deliberately *not* moved:
 
