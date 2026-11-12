@@ -1,0 +1,41 @@
+{
+ "anim_picks": {
+  "1": "a",
+  "2": "a",
+  "3": "b"
+ },
+ "skip": [
+  1,
+  2,
+  3
+ ],
+ "extra": [
+  {
+   "key": "01",
+   "n": 1,
+   "still": "A2-b",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-12 storyboard r1 anim 1a; clean-room prompt (cleanroom/clips-ab.json)",
+   "motion": "Locked-off static camera on a tripod, fixed frame, no camera movement at all: one continuous unbroken shot from the first frame. A silent horror film from 1919, black and white, heavy film grain, gentle projector flicker, dust and scratches, the gas lamp's pool of light on the bench. [00:00-00:01] Stillness. The man in the top hat sits motionless, smiling straight into the lens, mouth closed, eyes fixed on us. [00:01-00:02] Without looking away from us, his gloved right hand, the one nearest the other person, makes one slow, lazy flick of the fingers towards the soldier, a bored brush-off, then drops back to rest. His smiling face stays frozen like a mask, perfectly still. [00:02-00:05] The soldier plants his crutch on the ground and slowly hauls himself up onto his one leg, the pinned trouser below the knee hanging empty. Leaning on the crutch, he limps away to the right, out of the lamplight, and is swallowed by the darkness at the edge of frame. [00:05-00:06] The man has not moved: same closed-mouth smile, same unblinking stare into the lens, the empty half of the bench beside him. Silence, only the faint hiss of the gas lamp. The camera stays completely still for the whole shot, one single take. Thanks."
+  },
+  {
+   "key": "02",
+   "n": 2,
+   "still": "B3-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-12 storyboard r1 anim 2a; clean-room prompt (cleanroom/clips-ab.json)",
+   "motion": "Locked-off static camera on a tripod, fixed frame, no camera movement at all: one continuous unbroken shot from the first frame. A silent horror film look, black and white, heavy film grain, gentle projector flicker, dust and scratches, the street lamp's pool of light on the bench. In the background the ambulance's roof beacon turns slowly the whole time, its pale beam sweeping round and round across the hospital front. [00:00-00:01] Stillness. The man in the top hat sits motionless, smiling straight into the lens, mouth closed, eyes fixed on us. [00:01-00:02] Without looking away from us, his gloved right hand, the one nearest the other person, makes one slow, lazy flick of the fingers towards the nurse, a bored brush-off, then drops back to rest. His smiling face stays frozen like a mask, perfectly still. [00:02-00:05] The tired nurse pushes herself up off the bench, turns her back to us and walks slowly away into the background, past the lamp post, towards the lit glass doors of the hospital, growing smaller as she goes. [00:05-00:06] The man has not moved: same closed-mouth smile, same unblinking stare into the lens, the empty half of the bench beside him, the ambulance beacon still turning behind. Silence, only a faint night hum. The camera stays completely still for the whole shot, one single take. Thanks."
+  },
+  {
+   "key": "03",
+   "n": 3,
+   "still": "C3-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-12 storyboard r1 anim 3b; clean-room prompt (cleanroom/clips-c.json)",
+   "motion": "Locked-off static camera on a tripod: the frame does not move, zoom or reframe at any point. One continuous shot, no cuts, a single moment.\n\n[00:00-00:01] He holds the hat-tip: his gloved hand stays at the brim, lifting the top hat a fraction, the closed smile fixed. The gas lamp above him flickers faintly; film grain and dust specks dance across the black-and-white image.\n\n[00:01-00:03] Slowly and smoothly, his head turns to his left, towards the empty half of the bench on the right of the frame, as if someone has just sat down there out of view. Only the head and neck move; his heavy body, the newspaper in his lap and the bench stay where they are. His hand stays raised at the hat brim throughout the turn. It is the same face the whole way round: the eyes stay deep in the shadow under the brim, the mouth stays closed in the same smile.\n\n[00:03-00:05] He holds still, head turned in profile towards the empty seat, smiling at it, hat still tipped. The lamp light flickers once more; the grain and the slight frame-flutter of old silent film carry on. The seat beside him stays empty and he is the only figure in the frame. Silence, no words spoken, no lettering anywhere.\n\nThe camera stays perfectly still to the last frame, keeping the grainy, flickering black-and-white silent-film look of the first frame.\n\nThanks."
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{"title": "Same Bench Voices", "eyebrow": "Same Bench · voice casting · round 1", "heading": "Who is the fat cat?",
+ "intro": "Four different men saying his only line, twice: \"Forget it.\" (1919, then 2026). Pick one, or note what to change.",
+ "sections": [{"h": "The fat cat", "lede": "Each take is the 1919 line, a pause, then the 2026 line. All four checked word for word.", "groups": [
+  {"slot": "fatcat", "round": 1, "title": "The fat cat: \"Forget it.\"", "line": "\"Forget it.\" … \"Forget it.\"", "kind": "audio", "opts": [
+   {"id": "a", "src": "casting/cat-a-algenib.mp3", "label": "a: plummy old Englishman, 60s (Algenib)", "warn": "low purr, velvet contempt · 4.7 s"},
+   {"id": "b", "src": "casting/cat-b-iapetus.mp3", "label": "b: Yorkshire mill owner, 70s (Iapetus)", "warn": "flat, dry, bored · 4.0 s"},
+   {"id": "c", "src": "casting/cat-c-umbriel.mp3", "label": "c: whispering East Anglian squire, 50s (Umbriel)", "warn": "near-whisper with a giggle · 4.4 s"},
+   {"id": "d", "src": "casting/cat-d-fenrir.mp3", "label": "d: booming Gilded Age banker, 50s (Fenrir)", "warn": "jovial, loud; adds a little \"hm\" first · 5.1 s"}]}]}]}

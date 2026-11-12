@@ -1,0 +1,27 @@
+{
+ "sequence_notes": [
+  {"rule": "Veo's camera stays locked; Premiere does any push, eased.", "why": "Camera moves make Omni redraw the scene.", "source": "docs/video-fx/hybrid-method.md"},
+  {"rule": "The title cards (1919, 2026), the plaque words and \"Same bench.\" are made in the edit, never by Flow.", "why": "Jack wants the dates exact; Flow garbles text.", "source": "look.md, scripts/shorts/same_bench_dates.py"},
+  {"rule": "No Flow speech. \"Forget it.\" is an AI Studio voice (being cast now); if his lips move, lip-sync-dub matches them.", "why": "Jack 2026-11-10: never Flow speech.", "source": "memory"},
+  {"rule": "The film-stock flicker, grain and scratches can be added in the edit as well, so A and B share exactly the same damage.", "why": "The joke is that nothing changed.", "source": "look.md"},
+  {"rule": "Motion prompts are written clean-room after you pick: a sealed writer gets the option's idea and the still, nothing from the repo.", "why": "Jack's standing rule.", "source": "clean-room memory"}
+ ],
+ "frames": [
+  {"n": 1, "job": "1919: he dismisses a man who gave a leg for him, without looking at him.",
+   "options": [
+    {"id": "a", "label": "He never moves his lips", "idea": "He stays smiling at us, mouth closed; one lazy flick of the gloved hand towards the soldier. The soldier slowly gets up on his crutch and limps out of the light. The voice says \"Forget it.\" over a face that does not move: the creepiest version.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; hand flick; the soldier rises and leaves; the lamp flame flickers."}, {"lane": "Premiere", "does": "A very slow push in on him as the soldier leaves."}], "cut": "Hold on him alone for a beat after the soldier is gone, then the 2026 card.", "seconds": "5", "risk": "The soldier walking on a crutch with one leg is hard for Omni; he may grow a second leg."},
+    {"id": "b", "label": "He says it (lip-synced)", "idea": "His mouth forms \"Forget it.\" with the same courteous smile; the soldier lowers his head and stays seated, fading as the lamp dims on his side.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; his mouth moves for two words; the lamp dims on the soldier's side."}, {"lane": "lip-sync-dub", "does": "Fit the AI Studio voice to his mouth."}], "cut": "Cut on the last syllable.", "seconds": "4", "risk": "Lip sync on a face with no visible eyes is easy to judge; low risk."},
+    {"id": "c", "label": "The flame gutters", "idea": "Barely anything moves: the gas flame gutters, the film flickers, his smile widens a fraction. The soldier is simply gone in the next flicker of the projector. A ghost-story cut instead of an exit.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; flame gutters; the smile widens."}, {"lane": "Premiere", "does": "A 2-frame flash cut to a plate with the soldier gone (made from the same still)."}], "cut": "Cut on the flicker.", "seconds": "4", "risk": "Needs an empty-bench plate (a quick still edit)."}
+   ]},
+  {"n": 2, "job": "2026: the same man, the same flick, a nurse this time. It must feel like a rerun.",
+   "options": [
+    {"id": "a", "label": "Exact rerun of A", "idea": "Whatever he does in A, he does here exactly: the same flick, the same timing. The nurse gets up and walks off towards the hospital doors behind. The ambulance's light turns slowly in the background.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; hand flick; the nurse leaves; ambulance beacon turns."}, {"lane": "Premiere", "does": "The same push as A, frame for frame."}], "cut": "Hold on him alone, then C.", "seconds": "5", "risk": "Low; one walker."},
+    {"id": "b", "label": "She doesn't even get up", "idea": "The nurse stays slumped, too tired to leave; only her head drops. He flicks his hand anyway. The hospital doors open and close behind on their own.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; her head drops; his flick; the doors slide."}], "cut": "Cut on the doors closing.", "seconds": "4", "risk": "Low."}
+   ]},
+  {"n": 3, "job": "The button: he knows we're watching, and he is not worried.",
+   "options": [
+    {"id": "a", "label": "Hat tip to us", "idea": "He slowly lifts the hat a few inches towards the lens and sets it back, the smile widening by a hair. The projector flicker gets heavier, and the frame burns out to white on a hiss (Premiere/ffmpeg) under the caption \"Same bench.\".", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; the hat lift and return."}, {"lane": "ffmpeg", "does": "Film burn-out and the caption."}], "cut": "End on the burn.", "seconds": "4", "risk": "Low."},
+    {"id": "b", "label": "Turns to look at the next one", "idea": "Mid hat-tip, his head turns slowly to the empty seat beside him, as if someone new has just sat down off screen. Iris closes to black.", "lanes": [{"lane": "Veo (Omni 1.2 Flash)", "does": "Locked camera; the hat lift, the slow head turn."}, {"lane": "Premiere", "does": "Iris close to black."}], "cut": "Iris out.", "seconds": "4", "risk": "Head turns can redraw the face."}
+   ]}
+ ]
+}

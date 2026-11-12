@@ -1,53 +1,54 @@
 {
- "story": "short-same-bench",
- "scene": "same-bench",
- "prefix": "sb",
- "title": "Same Bench",
- "heading": "BadCode Shorts <span class=\"tri\">▲</span> Same Bench",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench",
- "beats": [
-  {
-   "key": "veteran",
-   "at": "0:00",
-   "name": "A. 1919: the veteran",
-   "blurb": "A park bench in 1919: a top-hatted fat cat tells a wounded soldier \"Forget it.\""
+  "story": "short-same-bench",
+  "scene": "same-bench",
+  "prefix": "sb",
+  "title": "Same Bench",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Same Bench",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench",
+  "beats": [
+    {
+      "key": "veteran",
+      "at": "0:00",
+      "name": "A. 1919: the veteran",
+      "blurb": "A park bench in 1919: a top-hatted fat cat tells a wounded soldier \"Forget it.\""
+    },
+    {
+      "key": "nurse",
+      "at": "0:05",
+      "name": "B. Today: the nurse",
+      "blurb": "The same bench today, the same fat cat, a nurse in scrubs: \"Forget it.\""
+    },
+    {
+      "key": "button",
+      "at": "0:10",
+      "name": "C. Hasn't aged a day",
+      "blurb": "The button: he hasn't aged a day."
+    }
+  ],
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
   },
-  {
-   "key": "nurse",
-   "at": "0:05",
-   "name": "B. Today: the nurse",
-   "blurb": "The same bench today, the same fat cat, a nurse in scrubs: \"Forget it.\""
+  "flow_project": "0f0d05fd-6ac0-4296-b669-7334529113d0",
+  "looks": {
+    "ink": "1910s pen and ink (our drawing)"
   },
-  {
-   "key": "button",
-   "at": "0:10",
-   "name": "C. Hasn't aged a day",
-   "blurb": "The button: he hasn't aged a day."
+  "moodboard_intro": "Round 2 is the ominous, horror take on the fat cat (nine new writers, researched on the web). Round 1's ink cartoons are still below. Use the style filter to see one round. Tap This, Maybe or No; leave a note per beat.",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
+    "dialogue": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
+    "storyboard": "https://claude.ai/artifact/61kEE1nStEZifZfHit7mxN"
+  },
+  "dialogue": {
+    "page": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
+    "options": "design/2026-11-12-short-same-bench-dialogue-lines/options.json",
+    "picked": "1B",
+    "round": 1
+  },
+  "styles": {
+    "ink": "Round 1: 1910s ink",
+    "horror": "Round 2: ominous horror"
   }
- ],
- "video": {
-  "model": "Omni 1.2 Flash",
-  "aspect": "9:16",
-  "mode": "Frames",
-  "duration": 8
- },
- "flow_project": "0f0d05fd-6ac0-4296-b669-7334529113d0",
- "looks": {
-  "ink": "1910s pen and ink (our drawing)"
- },
- "moodboard_intro": "Round 2 is the ominous, horror take on the fat cat (nine new writers, researched on the web). Round 1's ink cartoons are still below. Use the style filter to see one round. Tap This, Maybe or No; leave a note per beat.",
- "boards": {
-  "moodboard": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
-  "dialogue": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid"
- },
- "dialogue": {
-  "page": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
-  "options": "design/2026-11-12-short-same-bench-dialogue-lines/options.json",
-  "picked": "1B",
-  "round": 1
- },
- "styles": {
-  "ink": "Round 1: 1910s ink",
-  "horror": "Round 2: ominous horror"
- }
 }
