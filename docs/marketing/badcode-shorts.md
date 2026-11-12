@@ -43,7 +43,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 14. 🍞 **Butter Side Down:** toast falls, then "It wasn't gravity." **6s.**
 15. 🐈 **Schrödinger:** the box opens and the cat is holding a complaint form. **6s.** The explainer is cut.
 16. 🦛 **Just a Hippo:** **5s.**
-17. 👋 **Hello, I'm BadCode:** "I'm from the future. It didn't go well." **8s.**
+17. 👋 **Hello, I'm BadCode** *(Jack: BUILDING, `docs/stories/short-hello-im-badcode/`)*: "I'm from the future. It didn't go well." **8s.**
 18. 🕹️ **By the Balls:** the claw grabs the house and goes limp, three times (9) → "It was never broken. It was set." (4) **13s.**
 19. 🛒 **Unexpected Item:** the shopper scans, bags and IDs themselves, and the receipt reads WAGES: £0.00. **10s.**
 20. 🥂 **Trickle Down:** the top glass keeps growing and the rest stay dry. **10s.**

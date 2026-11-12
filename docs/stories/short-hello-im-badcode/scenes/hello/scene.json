@@ -1,0 +1,6 @@
+{"story": "short-hello-im-badcode", "scene": "hello", "prefix": "hb", "title": "Hello, I'm BadCode",
+ "heading": "BadCode Shorts <span class=\"tri\">▲</span> Hello, I'm BadCode",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode",
+ "beats": [{"key": "hello", "at": "0:00", "name": "A. Hello", "blurb": "A balaclava'd figure looks into the camera: \"Hello. I'm from the future.\""},
+           {"key": "badly", "at": "0:04", "name": "B. It didn't go well", "blurb": "\"It didn't go well.\""},
+           {"key": "button", "at": "0:07", "name": "C. Watch this space", "blurb": "The button, then the logo."}]}

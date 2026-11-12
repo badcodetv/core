@@ -1,0 +1,1 @@
+- **2026-11-12 (Jack):** "#17 Hello, I'm BadCode … lets mess around with this." Media folder Desktop `Youtube Vids\animation\shorts\hello-im-badcode` (same pattern as Same Bench).
