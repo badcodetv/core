@@ -1,0 +1,1712 @@
+{
+ "sequence": "Balaclava Gang 10B5",
+ "title": "Gang Cut 10B5",
+ "heading": "The Bank Robbery MV, cut 10B5: Strict alternation, round 5",
+ "intro": "One of five cuts made from your cut-9 notes, each under a different rule (A Jack's cut fixed, B strict alternation, C on the words, D breathing, E energy curve). This is B5: Strict alternation, round 5. Ends on \"Don't just eat cake\" at 3:07. Note the bits you like (\"keep this chorus\") and the bits you don't; the final cut takes the best of all five, then you finish it by hand in Premiere.",
+ "fps": 24,
+ "total": 187.0,
+ "beats": [
+  {
+   "id": "intro",
+   "title": "Intro",
+   "start": 0,
+   "dur": 20.14,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 0.0,
+     "dur": 2.76,
+     "text": "[k19m-a]  [k19m-a: calm open: the gang at lunch on the girder (Kai's pick for the very beginning)]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 2.763,
+     "dur": 2.58,
+     "text": "[k23-a]  [k23-a: the gang stood on the skyscraper parapet (Kai: rooftop, equal to the first shot)]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 5.341,
+     "dur": 2.6,
+     "text": "[y05-a]  [y05-a: calm: Plum leaning on a barrel, deadpan]",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 7.941,
+     "dur": 1.28,
+     "text": "Robbery!  [y04-a: the shout: Buster Keaton house front, first quick change]",
+     "by": "claude"
+    },
+    {
+     "i": 4,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 9.218,
+     "dur": 1.3,
+     "text": "[k22m-b]  [k22m-b: CRIMSON on the train step (k23-a moved to the second shot)]",
+     "by": "claude"
+    },
+    {
+     "i": 5,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 10.519,
+     "dur": 2.55,
+     "text": "[a01m-a]  [a01m-a: the walk held through the drop to the car (Kai: \"it's a cool shot\")]",
+     "by": "claude"
+    },
+    {
+     "i": 6,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 13.073,
+     "dur": 1.28,
+     "text": "[z02y-b]  [z02y-b: medium action from 13.7: car swerves the cart]",
+     "by": "claude"
+    },
+    {
+     "i": 7,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 14.35,
+     "dur": 1.3,
+     "text": "[a02m-a]  [a02m-a: medium action: Crimson strides into the lobby]",
+     "by": "claude"
+    },
+    {
+     "i": 8,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 15.65,
+     "dur": 1.3,
+     "text": "[k29m-a]  [k29m-a: limbo under the bell threads]",
+     "by": "claude"
+    },
+    {
+     "i": 9,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 16.951,
+     "dur": 1.3,
+     "text": "[x06-a]  [x06-a: speedboat, quick]",
+     "by": "claude"
+    },
+    {
+     "i": 10,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 18.251,
+     "dur": 1.3,
+     "text": "Dah, dah, dah, dah  [a03m-a: sedan by the greengrocer]",
+     "by": "claude"
+    },
+    {
+     "i": 11,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 19.551,
+     "dur": 1.28,
+     "text": "Dah, dah, dah, dah  [k04m-a: swagger walk to the lens, into the words]",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "verse1",
+   "title": "Verse 1",
+   "start": 20.14,
+   "dur": 21.06,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 20.828,
+     "dur": 5.16,
+     "text": "They say, you can't make money from a tree / Let's see each day, make hay not free  [q01-b: R: first rap on the first word, held two lines so the 24.5 keeper stays]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 25.983,
+     "dur": 1.3,
+     "text": "Ayy, work can get paid though  [k21m-a: cash crate in the boat (Kai: the girder lunch opened the film, don't repeat it)]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 27.283,
+     "dur": 1.28,
+     "text": "Earning that dough, but where does it go?  [h06-b: R: crew on the rooftop scaffold, lunch pail]",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 28.561,
+     "dur": 2.6,
+     "text": "Nobody knows!  [z03-a: A: keeper, the rope ladder under the plane]",
+     "by": "claude"
+    },
+    {
+     "i": 4,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 31.161,
+     "dur": 5.11,
+     "text": "Means of production, means of reduction / Standards bleeding, landlords needing  [h01-b: crew in the bank lobby (Kai: h20-a shows human eyes behind the yellow mask)]",
+     "by": "claude"
+    },
+    {
+     "i": 5,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 36.27,
+     "dur": 1.3,
+     "text": "Quantitive easing  [k12m-a: A: money flung over the crowd on QE]",
+     "by": "claude"
+    },
+    {
+     "i": 6,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 37.57,
+     "dur": 1.3,
+     "text": "grandma freezing  [v07m-b: A: grandma only on her words]",
+     "by": "claude"
+    },
+    {
+     "i": 7,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 38.87,
+     "dur": 2.58,
+     "text": "Simulus checks and necks get wrecked / Rent seeking, I'm just about eating  [c03g-b: R: the gang rapping round a printing press on stimulus checks]",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "verse2",
+   "title": "Verse 2",
+   "start": 41.2,
+   "dur": 20.66,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 41.448,
+     "dur": 5.18,
+     "text": "Sorry, did I interrupt your meeting?  [k01m-a: A: the explosion behind the bank steps (Kai: in on \"rent seeking\")]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 46.626,
+     "dur": 5.15,
+     "text": "Remember kids, the Fed is not your friend / It prints all the dollars that the government spends  [q04-a: R: keeper, printing money (49.9)]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 51.78,
+     "dur": 1.3,
+     "text": "It's fiat system  [k27m-b: A: the clerk raises his hands]",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 53.081,
+     "dur": 2.58,
+     "text": "is insistent on debts existence  [x06-a: A: split on the strong hit, the speedboat runs]",
+     "by": "claude"
+    },
+    {
+     "i": 4,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 55.658,
+     "dur": 3.88,
+     "text": "Oh, oh, oh  [h02-a: R: crew on the salt flats]",
+     "by": "claude"
+    },
+    {
+     "i": 5,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 59.536,
+     "dur": 2.58,
+     "text": "Have resistance to the facts I'm stating  [k16-a: A: tommy gun at the lamps, into the chorus]",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "chorus1",
+   "title": "Chorus",
+   "start": 61.86,
+   "dur": 20.9,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 62.113,
+     "dur": 1.3,
+     "text": "Robbery! Robbery!  [cn:safe2-c: chase on the first Robbery, not early]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 63.414,
+     "dur": 1.3,
+     "text": "Robbery! Robbery!  [cn:chase3-a: chase on the strong hit]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 64.714,
+     "dur": 1.28,
+     "text": "Call the police, it's a robbery  [c02-a: call box only while it is sung]",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 65.991,
+     "dur": 1.3,
+     "text": "[cn:rods4-a]  [cn:rods4-a: chase, the river channel]",
+     "by": "claude"
+    },
+    {
+     "i": 4,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 67.291,
+     "dur": 1.28,
+     "text": "Debasement, debasement  [k13m-b: basement]",
+     "by": "claude"
+    },
+    {
+     "i": 5,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 68.569,
+     "dur": 1.28,
+     "text": "It happened in the basement  [z06y-b: basement vault corridor]",
+     "by": "claude"
+    },
+    {
+     "i": 6,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 69.846,
+     "dur": 1.3,
+     "text": "Printer is burring, now now what's a burring?  [c03g-b: printing]",
+     "by": "claude"
+    },
+    {
+     "i": 7,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 71.146,
+     "dur": 1.28,
+     "text": "[k29m-a]  [k29m-a: underground vault corridor]",
+     "by": "claude"
+    },
+    {
+     "i": 8,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 72.423,
+     "dur": 1.3,
+     "text": "Robbery! Robbery!  [cn:chase1-a: chase]",
+     "by": "claude"
+    },
+    {
+     "i": 9,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 73.723,
+     "dur": 1.3,
+     "text": "[cn:rods2-b]  [cn:rods2-b: chase from the tower]",
+     "by": "claude"
+    },
+    {
+     "i": 10,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 75.024,
+     "dur": 1.3,
+     "text": "Call the police, it's a robbery  [c02-a: call box only while it is sung]",
+     "by": "claude"
+    },
+    {
+     "i": 11,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 76.324,
+     "dur": 1.28,
+     "text": "[cn:rods3-b]  [cn:rods3-b: chase, headlight]",
+     "by": "claude"
+    },
+    {
+     "i": 12,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 77.601,
+     "dur": 1.3,
+     "text": "Debasement, debasement  [k30m-a: basement safe room]",
+     "by": "claude"
+    },
+    {
+     "i": 13,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 78.901,
+     "dur": 1.25,
+     "text": "It happened in the basement  [k31-b: down through the floor into the vault]",
+     "by": "claude"
+    },
+    {
+     "i": 14,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 80.155,
+     "dur": 1.32,
+     "text": "Printer is burring, now now what's a burring?  [q04-a: printing presses]",
+     "by": "claude"
+    },
+    {
+     "i": 15,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 81.479,
+     "dur": 1.3,
+     "text": "[d11-a]  [d11-a: cash out of the vault]",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "verse3",
+   "title": "Verse 3",
+   "start": 82.76,
+   "dur": 22.6,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 82.779,
+     "dur": 2.58,
+     "text": "Stacks and stacks of elastic cash  [k21m-a: A: the crate of notes]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 85.357,
+     "dur": 2.58,
+     "text": "Distracted by a dyspraxic flash  [q05-b: R: the magician's glove flash]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 87.934,
+     "dur": 2.55,
+     "text": "Marked angry at the shitty little drop  [k31-b: A: the floor drops into the vault]",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 90.488,
+     "dur": 2.6,
+     "text": "The right and the left both witness the theft  [h19-a: R: crew under the marquee]",
+     "by": "claude"
+    },
+    {
+     "i": 4,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 93.089,
+     "dur": 1.28,
+     "text": "Blaming each other is a sick little cover  [z04-b: A: taking cover as the bullet punches through]",
+     "by": "claude"
+    },
+    {
+     "i": 5,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 94.366,
+     "dur": 3.88,
+     "text": "Institutional, dilutional, the usual  [d06m-a: R: keeper, the watered-down bottle (96.9)]",
+     "by": "claude"
+    },
+    {
+     "i": 6,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 98.244,
+     "dur": 2.58,
+     "text": "Distraction is the attraction  [k36m-b: A: cigars, a fuse and a wedding cake]",
+     "by": "claude"
+    },
+    {
+     "i": 7,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 100.821,
+     "dur": 1.3,
+     "text": "The intention is tension  [h07-b: R: crew in a ring jabbing down at the lens]",
+     "by": "claude"
+    },
+    {
+     "i": 8,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 102.121,
+     "dur": 1.28,
+     "text": "Between the factions,  [x07m-b: A: distraction: police axe barrels while the crate goes out the back]",
+     "by": "claude"
+    },
+    {
+     "i": 9,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 103.398,
+     "dur": 1.28,
+     "text": "divide and conquer  [k23-a: A: distraction: five watch the rope while Marine slips down]",
+     "by": "claude"
+    },
+    {
+     "i": 10,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 104.676,
+     "dur": 1.3,
+     "text": "Just look at the hand  [g08y-b: R: the magician's hand]",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "verse4",
+   "title": "Verse 4",
+   "start": 105.36,
+   "dur": 18.38,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 105.976,
+     "dur": 1.3,
+     "text": "It's not your standard propaganda  [k04m-a: A: the swagger walk]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 107.276,
+     "dur": 1.3,
+     "text": "Worth a couple grand, ah!  [h17-b: R: crew on the burning bank steps, notes raining]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 108.577,
+     "dur": 2.58,
+     "text": "It is state level manipulation  [k30m-a: A: fingers on the clock and the wires]",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 111.154,
+     "dur": 2.58,
+     "text": "It is the devil with the radio station  [d10-a: R: keeper, the devil-horn booth, exactly here]",
+     "by": "claude"
+    },
+    {
+     "i": 4,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 113.731,
+     "dur": 1.32,
+     "text": "Stack up the vaults like a wheelbarrow  [d11-a: A: the wheelbarrow of cash]",
+     "by": "claude"
+    },
+    {
+     "i": 5,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 115.055,
+     "dur": 3.83,
+     "text": "Risk of default is really rather narrow  [h13-b: crew at the airfield (Kai: h09-a showed human eyes)]",
+     "by": "claude"
+    },
+    {
+     "i": 6,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 118.886,
+     "dur": 1.3,
+     "text": "Biggie said, wait!  [d12-b: A: waiting on the narrow ledge]",
+     "by": "claude"
+    },
+    {
+     "i": 7,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 120.186,
+     "dur": 3.85,
+     "text": "Rockin' 97 / Don't get high off your own supply  [q08-a: R: the gramophone, Kai times it in Premiere]",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "chorus2",
+   "title": "Chorus",
+   "start": 123.74,
+   "dur": 20.44,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 124.041,
+     "dur": 1.3,
+     "text": "Robbery! Robbery!  [cn:safe2-c: chorus 2 repeats chorus 1: chase on the first Robbery, not early]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 125.341,
+     "dur": 1.3,
+     "text": "Robbery! Robbery!  [cn:chase3-a: chorus 2 repeats chorus 1: chase on the strong hit]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 126.642,
+     "dur": 1.3,
+     "text": "Call the police, it's a robbery  [c02-a: chorus 2 repeats chorus 1: call box only while it is sung]",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 127.942,
+     "dur": 1.28,
+     "text": "[cn:rods4-a]  [cn:rods4-a: chorus 2 repeats chorus 1: chase, the river channel]",
+     "by": "claude"
+    },
+    {
+     "i": 4,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 129.219,
+     "dur": 1.28,
+     "text": "Debasement, debasement  [k13m-b: chorus 2 repeats chorus 1: basement]",
+     "by": "claude"
+    },
+    {
+     "i": 5,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 130.496,
+     "dur": 1.3,
+     "text": "It happened in the basement  [z06y-b: chorus 2 repeats chorus 1: basement vault corridor]",
+     "by": "claude"
+    },
+    {
+     "i": 6,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 131.796,
+     "dur": 1.28,
+     "text": "Printer is burring, now now what's a burring?  [c03g-b: chorus 2 repeats chorus 1: printing]",
+     "by": "claude"
+    },
+    {
+     "i": 7,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 133.074,
+     "dur": 1.3,
+     "text": "[k29m-a]  [k29m-a: chorus 2 repeats chorus 1: underground vault corridor]",
+     "by": "claude"
+    },
+    {
+     "i": 8,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 134.374,
+     "dur": 1.28,
+     "text": "Robbery! Robbery!  [cn:chase1-a: chorus 2 repeats chorus 1: chase]",
+     "by": "claude"
+    },
+    {
+     "i": 9,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 135.651,
+     "dur": 1.3,
+     "text": "[cn:rods2-b]  [cn:rods2-b: chorus 2 repeats chorus 1: chase from the tower]",
+     "by": "claude"
+    },
+    {
+     "i": 10,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 136.951,
+     "dur": 1.3,
+     "text": "Call the police, it's a robbery  [c02-a: chorus 2 repeats chorus 1: call box only while it is sung]",
+     "by": "claude"
+    },
+    {
+     "i": 11,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 138.252,
+     "dur": 1.28,
+     "text": "[cn:rods3-b]  [cn:rods3-b: chorus 2 repeats chorus 1: chase, headlight]",
+     "by": "claude"
+    },
+    {
+     "i": 12,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 139.529,
+     "dur": 1.3,
+     "text": "Debasement, debasement  [k30m-a: chorus 2 repeats chorus 1: basement safe room]",
+     "by": "claude"
+    },
+    {
+     "i": 13,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 140.829,
+     "dur": 1.28,
+     "text": "It happened in the basement  [k31-b: chorus 2 repeats chorus 1: down through the floor into the vault]",
+     "by": "claude"
+    },
+    {
+     "i": 14,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 142.106,
+     "dur": 1.3,
+     "text": "Printer is burring, now now what's a burring?  [q04-a: chorus 2 repeats chorus 1: printing presses]",
+     "by": "claude"
+    },
+    {
+     "i": 15,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 143.406,
+     "dur": 2.58,
+     "text": "You know the real star is Pablo Escobar  [q09-a: R: billiard hall, now on the line start]",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "break",
+   "title": "Break",
+   "start": 144.18,
+   "dur": 10.56,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 145.984,
+     "dur": 3.74,
+     "text": "Who has elastic bands, not plastic hands  [x04-a: A: the sack off the boxcar]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 149.722,
+     "dur": 2.72,
+     "text": "Stackin' up the cash by the grand  [h18-b: R: crew in the street, money falling]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 152.439,
+     "dur": 2.58,
+     "text": "Stand up plans are for the working man  [k22m-b: A: the commuter reads his paper (the train here, not at 161)]",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "verse5",
+   "title": "Verse 5",
+   "start": 154.74,
+   "dur": 32.26,
+   "see": "",
+   "lines": [
+    {
+     "i": 0,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 155.016,
+     "dur": 1.28,
+     "text": "And this right here is a next level scam  [h15-b: R: crew in the dining car]",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 156.294,
+     "dur": 2.6,
+     "text": "All gotten gains, no need to explain  [y05-a: A: Plum pats the barrel, deadpan]",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 158.894,
+     "dur": 3.85,
+     "text": "Bailin' out will never mean the same  [y06-a: R: the bail-out, notes poured out of the balloon (replaces the train)]",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 162.749,
+     "dur": 2.6,
+     "text": "Own a printer and you don't feel winter  [h11-b: the snowy field here (Kai: swap with the snow scene further down)]",
+     "by": "claude"
+    },
+    {
+     "i": 4,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 165.349,
+     "dur": 2.58,
+     "text": "Crime is asset inflation, passive creation  [h12-a: R: crew before the inflating balloon]",
+     "by": "claude"
+    },
+    {
+     "i": 5,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 167.927,
+     "dur": 2.58,
+     "text": "Of a wealth gap that drives the situation  [a03m-a: A: the sedan ploughs the greengrocer]",
+     "by": "claude"
+    },
+    {
+     "i": 6,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 170.504,
+     "dur": 1.28,
+     "text": "Rockin' people get paid in money  [p05-a: R: Crimson on the girder]",
+     "by": "claude"
+    },
+    {
+     "i": 7,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 171.781,
+     "dur": 2.6,
+     "text": "So it's not very funny when you print more  [k12m-a: A: notes flung from the roadster]",
+     "by": "claude"
+    },
+    {
+     "i": 8,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 174.382,
+     "dur": 1.28,
+     "text": "And expect them not to worry  [q12-b: R: finger-wag on the pier]",
+     "by": "claude"
+    },
+    {
+     "i": 9,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 175.659,
+     "dur": 2.6,
+     "text": "Hungry people feed a revolution  [y03-a: A: 2:56 tone change: slow-motion flight through the chandelier]",
+     "by": "claude"
+    },
+    {
+     "i": 10,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 178.26,
+     "dur": 2.62,
+     "text": "Then it's retribution, perhaps some execution  [k36m-b: swapped from 2:43 (Kai's note)]",
+     "by": "claude"
+    },
+    {
+     "i": 11,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 180.883,
+     "dur": 1.32,
+     "text": "It's time to give, not just to take  [v07m-b: A: Plum gives grandma his jacket]",
+     "by": "claude"
+    },
+    {
+     "i": 12,
+     "who": "song",
+     "name": "the version.wav",
+     "t": 182.207,
+     "dur": 4.79,
+     "text": "But for heaven's sake / Don't just eat cake  [v11x-a: R: keeper, the man on the bank steps, held to the end]",
+     "by": "claude"
+    }
+   ]
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/000.mp4",
+   "start": 0.0,
+   "dur": 2.75,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k19m-a-k19r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/001.mp4",
+   "start": 2.75,
+   "dur": 2.5833333333333335,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/002.mp4",
+   "start": 5.333333333333333,
+   "dur": 2.625,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/003.mp4",
+   "start": 7.958333333333333,
+   "dur": 1.25,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/004.mp4",
+   "start": 9.208333333333334,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/005.mp4",
+   "start": 10.5,
+   "dur": 2.5833333333333335,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a01m-a-a01r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/006.mp4",
+   "start": 13.083333333333334,
+   "dur": 1.25,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/007.mp4",
+   "start": 14.333333333333334,
+   "dur": 1.3333333333333333,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a02m-a-a02r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/008.mp4",
+   "start": 15.666666666666666,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/009.mp4",
+   "start": 16.958333333333332,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/010.mp4",
+   "start": 18.25,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/011.mp4",
+   "start": 19.541666666666668,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/012.mp4",
+   "start": 20.833333333333332,
+   "dur": 5.166666666666667,
+   "beat": "verse1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q01-b-q01r7-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/013.mp4",
+   "start": 26.0,
+   "dur": 1.2916666666666667,
+   "beat": "verse1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/014.mp4",
+   "start": 27.291666666666668,
+   "dur": 1.25,
+   "beat": "verse1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h06-b-h06r10-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/015.mp4",
+   "start": 28.541666666666668,
+   "dur": 2.625,
+   "beat": "verse1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/016.mp4",
+   "start": 31.166666666666668,
+   "dur": 5.083333333333333,
+   "beat": "verse1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h01-b-h01r10-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/017.mp4",
+   "start": 36.25,
+   "dur": 1.3333333333333333,
+   "beat": "verse1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/018.mp4",
+   "start": 37.583333333333336,
+   "dur": 1.2916666666666667,
+   "beat": "verse1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/019.mp4",
+   "start": 38.875,
+   "dur": 2.5833333333333335,
+   "beat": "verse1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/020.mp4",
+   "start": 41.458333333333336,
+   "dur": 5.166666666666667,
+   "beat": "verse2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k01m-a-k01r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/021.mp4",
+   "start": 46.625,
+   "dur": 5.166666666666667,
+   "beat": "verse2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/022.mp4",
+   "start": 51.791666666666664,
+   "dur": 1.2916666666666667,
+   "beat": "verse2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/023.mp4",
+   "start": 53.083333333333336,
+   "dur": 2.5833333333333335,
+   "beat": "verse2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/024.mp4",
+   "start": 55.666666666666664,
+   "dur": 3.875,
+   "beat": "verse2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h02-a-h02r10-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/025.mp4",
+   "start": 59.541666666666664,
+   "dur": 2.5833333333333335,
+   "beat": "verse2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/026.mp4",
+   "start": 62.125,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/safe2-c.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/027.mp4",
+   "start": 63.416666666666664,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase3-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/028.mp4",
+   "start": 64.70833333333333,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/029.mp4",
+   "start": 66.0,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods4-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/030.mp4",
+   "start": 67.29166666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/031.mp4",
+   "start": 68.58333333333333,
+   "dur": 1.25,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/032.mp4",
+   "start": 69.83333333333333,
+   "dur": 1.3333333333333333,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/033.mp4",
+   "start": 71.16666666666667,
+   "dur": 1.25,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/034.mp4",
+   "start": 72.41666666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase1-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/035.mp4",
+   "start": 73.70833333333333,
+   "dur": 1.3333333333333333,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods2-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/036.mp4",
+   "start": 75.04166666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/037.mp4",
+   "start": 76.33333333333333,
+   "dur": 1.25,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods3-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/038.mp4",
+   "start": 77.58333333333333,
+   "dur": 1.3333333333333333,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/039.mp4",
+   "start": 78.91666666666667,
+   "dur": 1.25,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/040.mp4",
+   "start": 80.16666666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/041.mp4",
+   "start": 81.45833333333333,
+   "dur": 1.3333333333333333,
+   "beat": "chorus1",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/042.mp4",
+   "start": 82.79166666666667,
+   "dur": 2.5833333333333335,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/043.mp4",
+   "start": 85.375,
+   "dur": 2.5416666666666665,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q05-b-q05r7-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/044.mp4",
+   "start": 87.91666666666667,
+   "dur": 2.5833333333333335,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/045.mp4",
+   "start": 90.5,
+   "dur": 2.5833333333333335,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h19-a-h19r10-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/046.mp4",
+   "start": 93.08333333333333,
+   "dur": 1.2916666666666667,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/047.mp4",
+   "start": 94.375,
+   "dur": 3.875,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d06m-a-d06r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/048.mp4",
+   "start": 98.25,
+   "dur": 2.5833333333333335,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/049.mp4",
+   "start": 100.83333333333333,
+   "dur": 1.2916666666666667,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h07-b-h07r10-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/050.mp4",
+   "start": 102.125,
+   "dur": 1.2916666666666667,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/051.mp4",
+   "start": 103.41666666666667,
+   "dur": 1.25,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/052.mp4",
+   "start": 104.66666666666667,
+   "dur": 1.2916666666666667,
+   "beat": "verse3",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-g08y-b-g08r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/053.mp4",
+   "start": 105.95833333333333,
+   "dur": 1.3333333333333333,
+   "beat": "verse4",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/054.mp4",
+   "start": 107.29166666666667,
+   "dur": 1.2916666666666667,
+   "beat": "verse4",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h17-b-h17r10-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/055.mp4",
+   "start": 108.58333333333333,
+   "dur": 2.5833333333333335,
+   "beat": "verse4",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/056.mp4",
+   "start": 111.16666666666667,
+   "dur": 2.5833333333333335,
+   "beat": "verse4",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/057.mp4",
+   "start": 113.75,
+   "dur": 1.2916666666666667,
+   "beat": "verse4",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/058.mp4",
+   "start": 115.04166666666667,
+   "dur": 3.8333333333333335,
+   "beat": "verse4",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h13-b-h13r10-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/059.mp4",
+   "start": 118.875,
+   "dur": 1.2916666666666667,
+   "beat": "verse4",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/060.mp4",
+   "start": 120.16666666666667,
+   "dur": 3.875,
+   "beat": "verse4",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q08-a-q08r7-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/061.mp4",
+   "start": 124.04166666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/safe2-c.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/062.mp4",
+   "start": 125.33333333333333,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase3-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/063.mp4",
+   "start": 126.625,
+   "dur": 1.3333333333333333,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/064.mp4",
+   "start": 127.95833333333333,
+   "dur": 1.25,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods4-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/065.mp4",
+   "start": 129.20833333333334,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/066.mp4",
+   "start": 130.5,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/067.mp4",
+   "start": 131.79166666666666,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/068.mp4",
+   "start": 133.08333333333334,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/069.mp4",
+   "start": 134.375,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase1-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/070.mp4",
+   "start": 135.66666666666666,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods2-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/071.mp4",
+   "start": 136.95833333333334,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/072.mp4",
+   "start": 138.25,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods3-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/073.mp4",
+   "start": 139.54166666666666,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/074.mp4",
+   "start": 140.83333333333334,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/075.mp4",
+   "start": 142.125,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/076.mp4",
+   "start": 143.41666666666666,
+   "dur": 2.5833333333333335,
+   "beat": "chorus2",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/077.mp4",
+   "start": 146.0,
+   "dur": 3.7083333333333335,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/078.mp4",
+   "start": 149.70833333333334,
+   "dur": 2.75,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h18-b-h18r10-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/079.mp4",
+   "start": 152.45833333333334,
+   "dur": 2.5416666666666665,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/080.mp4",
+   "start": 155.0,
+   "dur": 1.2916666666666667,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h15-b-h15r10-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/081.mp4",
+   "start": 156.29166666666666,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/082.mp4",
+   "start": 158.875,
+   "dur": 3.875,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/083.mp4",
+   "start": 162.75,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h11-b-h11r10-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/084.mp4",
+   "start": 165.33333333333334,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h12-a-h12r10-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/085.mp4",
+   "start": 167.91666666666666,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/086.mp4",
+   "start": 170.5,
+   "dur": 1.2916666666666667,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-p05-a-p05r6-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/087.mp4",
+   "start": 171.79166666666666,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/088.mp4",
+   "start": 174.375,
+   "dur": 1.2916666666666667,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q12-b-q12r7-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/089.mp4",
+   "start": 175.66666666666666,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/090.mp4",
+   "start": 178.25,
+   "dur": 2.625,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/091.mp4",
+   "start": 180.875,
+   "dur": 1.3333333333333333,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/parts/092.mp4",
+   "start": 182.20833333333334,
+   "dur": 4.791666666666667,
+   "beat": "verse5",
+   "source": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v11x-a-v11r5-a.mp4",
+   "looped": false
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "mus-the version"
+  }
+ ],
+ "events": [
+  {
+   "stem": "mus-the version",
+   "t": 0,
+   "dur": 187.0,
+   "what": "the song",
+   "src": "/mnt/d/badcode-videos/bank-robbery-music/the version.wav"
+  }
+ ],
+ "flags": [
+  "Round 5 (your round-4 note): the opening girder shot is now 2.8 s (was 4.1), and the second shot is the gang stood on the skyscraper parapet by the blimp for the same length (2.6 s), both cut on the kick. The basement ring with the banana is out of the intro. The parapet shot was also at 0:09, so CRIMSON on the train step is there now.\n\nRound 4 (your round-3 note): the six walking down the road now hold from just before the drop (0:10.5) to the car (0:13.1). The train and the boat in between are out.\n\nRound 3 (your round-2 notes): 0:26.6 the girder lunch is no longer repeated (it opens the film); the cash crate in the boat is there now. 0:35.8 h20-a is out (human eyes behind the yellow mask); the crew in the bank lobby (h01-b) is in. 0:41 the explosion now comes in on \"Rent seeking\", a beat and a bit sooner.\n\nRound 2 (your notes on B): every cut moved off the hi-hat and snare onto the kick drum (beats 1 and 3 of the bar), except the drop at 0:10.8, which stays exactly on it. 1:57 h09-a (human eyes) is now h13-b, the gang at the airfield. 2:43 is now the snowy field (h11-b); the shot it replaced moved to 2:58. The end cuts off in a tenth of a second after \"cake\" instead of a one-second fade.\n\n# Cut B: strict alternation\n\nFrom the first word (20.18) to \"Don't just eat cake\", the picture swaps on every sung line: the gang rapping at the camera, then a story shot that acts out the line, then rapping again. Every cut sits on the line's `start_snapped` or on a strong drum hit. The choruses are the exception: car chase on \"Robbery!\" and \"Call the police\", then basement, underground and printing on \"Debasement / basement / printer\". Chorus 2 repeats chorus 1 shot for shot. The story shots are picked to say the line: workers counting notes on \"work can get paid\", money flung on \"quantitative easing\", grandma only on \"grandma freezing\", the rapping crew round a printing press on \"stimulus checks\", the fireball on \"interrupt your meeting\", the floor dropping into the vault on \"shitty little drop\", taking cover on \"sick little cover\", the wheelbarrow on \"wheelbarrow\", the narrow ledge on \"Biggie said, wait!\", notes poured out of the balloon on \"Bailin' out\" (instead of the train), and Plum giving grandma his jacket on \"time to give\". It is strongest in verses 3 and 4 (82.98 to 123.7) and in verse 5, where every rapping line has a different clip and the 2:56 change goes to a slow-motion chandelier flight, then the crew in the night snow. The intro is calm until the drop at 10.83 (the girder lunch Kai suggested, the distillery, Plum on his barrel), then medium action from 13.7, with no rapping shots.\n\nWhere it breaks the rule, and why:\n- **One rapping shot holds two lines, four times**: q01-b (20.18 to 25.36), h20-a (31.16 to 35.97), c03g-b (38.56 to 43.39) and q04-a (46.31 to 51.78). The keepers make this necessary. q01-b at 24.5 and q04-a at 49.9 are rapping shots, and the lines that need their picture (QE/grandma, the explosion) have to be story shots. Strict alternation can't fit all of them. Holding one rapping shot across two lines keeps the picture alternating without ever cutting from one rapping shot to another.\n- The same happens at d10-a (held to 113.08, Kai's \"exactly here\", which is 0.3 s before the wheelbarrow line) and at q08-a (the gramophone shot, held over \"Rockin' 97\" and \"own supply\" so that it is on screen at 122). The last shot, v11x-a, starts on the strong hit at 182.49 in the middle of \"not just to take\" and runs to 187.0.\n- Verse 3 opens on a story shot straight after the chorus's last basement shot. This is needed so that d06m-a (96.9) and the magician's hand both land on rapping lines.\n- Some story clips repeat in verse 5, each from a different stretch: y05-a, k36m-b, a03m-a, k12m-a, and v07m-b, which comes back on purpose for \"time to give\". All the rapping lines in verse 5 use clips seen nowhere else in the cut. c02-a appears four times because both choruses use it twice."
+ ],
+ "round": 5,
+ "plan": [
+  {
+   "h": "Round 5 of cut B",
+   "items": [
+    "0:00: the girder shot is now 2.8 s (it was 4.1 s), and the second shot is the gang stood on the skyscraper parapet, at about the same length (2.6 s). The basement ring with the banana is out of the intro.",
+    "0:09: the parapet shot used to be here too, so CRIMSON on the train step is here now.",
+    "Everything else is the same as round 4."
+   ]
+  }
+ ],
+ "replies": {
+  "at639": "Swapped: the girder lunch is only at the opening now. The cash crate in the boat is here instead.",
+  "at860": "Swapped: h20-a is out. The crew in the bank lobby (h01-b) is in.",
+  "at1000": "Moved: the next shot now comes in on \"Rent seeking\" at 41.45 s (it was 42.75 s).",
+  "at2821": "Swapped in round 2: h09-a is out, h13-b (the gang at the airfield) is in.",
+  "at3921": "Swapped in round 2: the snowy field (h11-b) is here, and the shot that was here moved to 2:58.",
+  "at260": "Done: the walk holds from 0:10.5 until the car at 0:13.1, and the train and the boat are cut.",
+  "at30": "Done: the girder is 2.8 s, then the gang stood on the skyscraper parapet for 2.6 s, both cut on the kick. The banana basement is out."
+ }
+}

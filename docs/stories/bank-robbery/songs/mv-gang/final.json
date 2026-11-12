@@ -1,0 +1,1615 @@
+{
+ "schema": "badcode.final/1",
+ "story": "bank-robbery",
+ "scene": "mv-gang",
+ "sequence": "Balaclava Gang 10",
+ "frozen": "2026-11-12T08:36:28+00:00",
+ "note": "Kai 2026-11-12: the bank robbery song is basically done and signed off (cut 10B5, Premiere sequence Balaclava Gang 10)",
+ "edl": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/edl.json",
+ "preview": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/preview.mp4",
+ "total": 187.0,
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "timeline": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys"
+ },
+ "words": {},
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 2.75,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k19m-a-k19r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k19m-a-k19r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 2.75,
+   "dur": 2.5833333333333335,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 5.333333333333333,
+   "dur": 2.625,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 7.958333333333333,
+   "dur": 1.25,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 9.208333333333334,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 10.5,
+   "dur": 2.5833333333333335,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a01m-a-a01r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a01m-a-a01r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 13.083333333333334,
+   "dur": 1.25,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 14.333333333333334,
+   "dur": 1.3333333333333333,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a02m-a-a02r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a02m-a-a02r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 15.666666666666666,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 16.958333333333332,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 18.25,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 19.541666666666668,
+   "dur": 1.2916666666666667,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 20.833333333333332,
+   "dur": 5.166666666666667,
+   "beat": "verse1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q01-b-q01r7-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q01-b-q01r7-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 26.0,
+   "dur": 1.2916666666666667,
+   "beat": "verse1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 27.291666666666668,
+   "dur": 1.25,
+   "beat": "verse1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h06-b-h06r10-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h06-b-h06r10-b.mp4",
+     "made": "2026-11-11T18:19:14+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. From the first half-second all six bounce together on the beat, knees flexing. On the first beat they snap gloved right hands up from the low chop and chop down again, SILVER now on time. Next beat CRIMSON leans into the lens and jabs a finger at it while PLUM and MARINE swing open palms toward us. Then RUST and SILVER pump fists at the lens and BOTTLE rocks his free hand, the lunch pail kept low. They keep trading moves, leaning in and out. Six men throughout; masks, triangles, gloves, suits and city unchanged. SFX: boot stamps on planks, cloth, wind, no voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h06r10-b.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw4",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h06r10-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h06-b",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T17:51:25.215Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h06r10-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 28.541666666666668,
+   "dur": 2.625,
+   "beat": "verse1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 31.166666666666668,
+   "dur": 5.083333333333333,
+   "beat": "verse1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h01-b-h01r10-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h01-b-h01r10-b.mp4",
+     "made": "2026-11-11T18:32:49+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. The six masked men perform at the lens from the first frame and never stop, all bouncing at the knees together on every beat. First beat: CRIMSON jabs his finger at the lens twice. Next: PLUM and BOTTLE chop gloved palms down in unison. Next: MARINE and RUST lean in over Crimson's shoulders, fists pumping. Next: SILVER spreads both arms wide, palms down. Then all six chop down together and Crimson jabs again. Masks, suits, gloves and the hat stay unchanged; the customers keep their hands up. SFX: stamping shoes on marble, cloth swishing, a quiet lobby echo.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h01r10-b.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw1",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h01r10-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h01-b",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T18:19:53.941Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h01r10-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 36.25,
+   "dur": 1.3333333333333333,
+   "beat": "verse1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 37.583333333333336,
+   "dur": 1.2916666666666667,
+   "beat": "verse1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 38.875,
+   "dur": 2.5833333333333335,
+   "beat": "verse1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 41.458333333333336,
+   "dur": 5.166666666666667,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k01m-a-k01r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k01m-a-k01r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 46.625,
+   "dur": 5.166666666666667,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 51.791666666666664,
+   "dur": 1.2916666666666667,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 53.083333333333336,
+   "dur": 2.5833333333333335,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 55.666666666666664,
+   "dur": 3.875,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h02-a-h02r10-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h02-a-h02r10-a.mp4",
+     "made": "2026-11-11T18:19:14+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. On the first beat all six chop their outstretched arms down hard and drop into a knee bounce together. On the next, RUST, nearest, jabs a finger straight at the lens; PLUM and BOTTLE lean in behind him, palms rocking side to side. CRIMSON nods deep on every downbeat. MARINE swings his arm up late and points; SILVER shrugs, palms up, then chops again. They never stop: a new move every beat, bouncing in their places. Masks, gloves and suits stay unchanged; dust drifts, the parked cars stay put. SFX: shoes scuffing dry crust, cloth swish, gloved claps, wind. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h02r10-a.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw2",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h02r10-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h02-a",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T18:18:23.589Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h02r10-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 59.541666666666664,
+   "dur": 2.5833333333333335,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 62.125,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/safe2-c.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/safe2-c.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 63.416666666666664,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase3-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase3-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 64.70833333333333,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 66.0,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods4-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods4-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 67.29166666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 68.58333333333333,
+   "dur": 1.25,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 69.83333333333333,
+   "dur": 1.3333333333333333,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 71.16666666666667,
+   "dur": 1.25,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 72.41666666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase1-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase1-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 73.70833333333333,
+   "dur": 1.3333333333333333,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods2-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods2-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 75.04166666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 76.33333333333333,
+   "dur": 1.25,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods3-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods3-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 77.58333333333333,
+   "dur": 1.3333333333333333,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 78.91666666666667,
+   "dur": 1.25,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 80.16666666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 81.45833333333333,
+   "dur": 1.3333333333333333,
+   "beat": "chorus1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 82.79166666666667,
+   "dur": 2.5833333333333335,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 85.375,
+   "dur": 2.5416666666666665,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q05-b-q05r7-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q05-b-q05r7-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 87.91666666666667,
+   "dur": 2.5833333333333335,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 90.5,
+   "dur": 2.5833333333333335,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h19-a-h19r10-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h19-a-h19r10-a.mp4",
+     "made": "2026-11-11T18:19:13+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera low at the lens, framing holds. From the first beat PLUM, close in the foreground, jabs his gloved finger at the lens on every beat, his shoulders dipping and his masked head pushing in. Behind him CRIMSON, MARINE, RUST and SILVER pump their hands at the lens together, bouncing at the knees; on the third beat they all chop flat palms down at once, then point again. BOTTLE, at the back, bounces the umbrella up and down on the beat. All stay on their spots in the V. The marquee bulbs keep blazing, rain falls steadily. SFX: shoe stamps on wet cobbles, rain, cloth. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h19r10-a.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw3",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h19r10-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h19-a",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T18:03:51.976Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h19r10-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 93.08333333333333,
+   "dur": 1.2916666666666667,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 94.375,
+   "dur": 3.875,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d06m-a-d06r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d06m-a-d06r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 98.25,
+   "dur": 2.5833333333333335,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 100.83333333333333,
+   "dur": 1.2916666666666667,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h07-b-h07r10-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h07-b-h07r10-b.mp4",
+     "made": "2026-11-11T18:19:14+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera looking straight up, framing holds. From the first half second the six bounce on the beat and stab their gloved fingers down at the lens. On the first beat PLUM and SILVER jab together; on the next BOTTLE and CRIMSON lean in, heads dipping toward the lens; then MARINE chops a flat palm down while RUST pumps his pointing hand twice. Every man keeps a fresh move each beat, shoulders dropping on the downbeat, all six the same size. The airship hangs still, the binoculars swing on their strap. Masks, gloves and suits unchanged. SFX: gloved claps, cloth rustle, high wind.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h07r10-b.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw5",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h07r10-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h07-b",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T17:51:52.036Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h07r10-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 102.125,
+   "dur": 1.2916666666666667,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 103.41666666666667,
+   "dur": 1.25,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 104.66666666666667,
+   "dur": 1.2916666666666667,
+   "beat": "verse3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-g08y-b-g08r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-g08y-b-g08r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 105.95833333333333,
+   "dur": 1.3333333333333333,
+   "beat": "verse4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 107.29166666666667,
+   "dur": 1.2916666666666667,
+   "beat": "verse4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h17-b-h17r10-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h17-b-h17r10-b.mp4",
+     "made": "2026-11-11T18:19:13+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. The six masked men keep moving from the first frame, knees bouncing together on every beat. First beat: CRIMSON, crouched nearest, pushes his flat palm at the lens and chops it down. Next: PLUM pumps his raised fist; BOTTLE points down at the lens. Next: MARINE and RUST swing their arms forward together. Next: SILVER flicks a banknote off his lapel, then points at the lens. Then all six chop down at once. The fire keeps burning gently in the doorway behind and banknotes drift slowly down. Masks, suits and gloves stay unchanged. SFX: crackling fire, shoes on stone, fluttering paper.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h17r10-b.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw1",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h17r10-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h17-b",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T18:03:00.916Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h17r10-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 108.58333333333333,
+   "dur": 2.5833333333333335,
+   "beat": "verse4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 111.16666666666667,
+   "dur": 2.5833333333333335,
+   "beat": "verse4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 113.75,
+   "dur": 1.2916666666666667,
+   "beat": "verse4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 115.04166666666667,
+   "dur": 3.8333333333333335,
+   "beat": "verse4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h13-b-h13r10-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h13-b-h13r10-b.mp4",
+     "made": "2026-11-11T18:32:49+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. From the first half-second CRIMSON, crouched at the front, jabs his finger at the lens on every beat, head pushed forward; on the third beat he sweeps the arm wide and jabs again. Behind him PLUM, BOTTLE, MARINE and SILVER bounce bent-kneed, chopping flat palms down on each beat, then all four swing their hands at the lens together, then back to chopping. RUST keeps polishing the propeller with his handkerchief, ignoring them. Propellers stay still, the plane stays parked. Six men throughout; masks, triangles, gloves and suits unchanged. SFX: feet thudding on dry grass, cloth, summer wind, no voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h13r10-b.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw4",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h13r10-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h13-b",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T18:20:19.211Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h13r10-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 118.875,
+   "dur": 1.2916666666666667,
+   "beat": "verse4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 120.16666666666667,
+   "dur": 3.875,
+   "beat": "verse4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q08-a-q08r7-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q08-a-q08r7-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 124.04166666666667,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/safe2-c.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/safe2-c.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 125.33333333333333,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase3-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase3-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 126.625,
+   "dur": 1.3333333333333333,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 127.95833333333333,
+   "dur": 1.25,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods4-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods4-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 129.20833333333334,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 130.5,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 131.79166666666666,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 133.08333333333334,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 134.375,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase1-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase1-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 135.66666666666666,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods2-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods2-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 136.95833333333334,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 138.25,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods3-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods3-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 139.54166666666666,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 140.83333333333334,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 142.125,
+   "dur": 1.2916666666666667,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 143.41666666666666,
+   "dur": 2.5833333333333335,
+   "beat": "chorus2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 146.0,
+   "dur": 3.7083333333333335,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 149.70833333333334,
+   "dur": 2.75,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h18-b-h18r10-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h18-b-h18r10-b.mp4",
+     "made": "2026-11-11T18:19:13+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. On the first beat the five in the street drop deeper into their crouch and swing both arms at the lens, palms down. On the next, CRIMSON, centre, jabs two fingers straight at the camera; PLUM and BOTTLE chop palms down beside him; MARINE and SILVER rock their hands side to side, shoulders rolling. RUST, seated on the roadster's bonnet, waves his raised hand on the beat and points down at the lens. They keep bouncing, a new move each beat. Masks, gloves and suits stay unchanged; banknotes flutter down, the crowd cheers in place. SFX: shoes stamping, cloth, crowd murmur, paper rustle. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h18r10-b.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw2",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h18r10-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h18-b",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T18:03:27.209Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h18r10-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 152.45833333333334,
+   "dur": 2.5416666666666665,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 155.0,
+   "dur": 1.2916666666666667,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h15-b-h15r10-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h15-b-h15r10-b.mp4",
+     "made": "2026-11-11T18:19:13+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera down the aisle, framing holds. From the first half second the six bounce on the beat in their column. On the first beat MARINE's raised hand chops down flat toward the lens; on the next SILVER swings his gloved hand out and jabs a finger at the lens; then BOTTLE and PLUM lean out on opposite sides, arms swinging, while CRIMSON and RUST nod hard, shoulders dropping on each downbeat. A new move every beat, all six the same size. The steward stays put, tray of teacups perfectly level; countryside streams past the windows. Masks, gloves and suits unchanged. SFX: wheels clacking on rails, stamps, cloth.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h15r10-b.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw5",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h15r10-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h15-b",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T18:02:35.675Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h15r10-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 156.29166666666666,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 158.875,
+   "dur": 3.875,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 162.75,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h11-b-h11r10-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h11-b-h11r10-b.mp4",
+     "made": "2026-11-11T18:19:13+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. The raised fists punch down on the first beat, every man landing a heel bounce on the ice together. On the next, SILVER, nearest, leans into the lens and jabs a finger at it; PLUM and MARINE chop flat palms down beside him. CRIMSON pumps his fist back up; RUST and BOTTLE, at the far end, rock palms side to side, shoulders dropping on each beat. Then all six throw fists high again, still bouncing. Masks, gloves and suits stay unchanged; snow keeps falling through the headlamp beams, the sedans stay still. SFX: boots crunching snow, cloth, wind, stamps on the beat. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h11r10-b.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw2",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h11r10-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h11-b",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T17:52:45.639Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h11r10-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 165.33333333333334,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h12-a-h12r10-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h12-a-h12r10-a.mp4",
+     "made": "2026-11-11T18:19:13+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera at eye level, framing holds. On the first beat the back row, CRIMSON, MARINE and SILVER, bounce with hands up, palms slapping down on each beat. PLUM, crouched front, snaps his spread arms in and jabs both index fingers at the lens; BOTTLE and RUST rock forward on their heels, chopping flat palms down in turn. On the next beats the back row lean in over the front row's shoulders, pointing at the lens, while PLUM spreads his arms wide again. The ground-crew man keeps hammering his peg. Balloon and ropes hold still. SFX: claps, mallet knocks, wet grass, cloth. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h12r10-a.jpg",
+     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw3",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h12r10-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "h12-a",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-11T17:54:22.591Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h12r10-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 167.91666666666666,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 170.5,
+   "dur": 1.2916666666666667,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-p05-a-p05r6-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-p05-a-p05r6-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 171.79166666666666,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 174.375,
+   "dur": 1.2916666666666667,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q12-b-q12r7-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q12-b-q12r7-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 175.66666666666666,
+   "dur": 2.5833333333333335,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 178.25,
+   "dur": 2.625,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 180.875,
+   "dur": 1.3333333333333333,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 182.20833333333334,
+   "dur": 4.791666666666667,
+   "beat": "verse5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v11x-a-v11r5-a.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v11x-a-v11r5-a.mp4",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "mus-the version",
+   "t": 0,
+   "dur": 187.0,
+   "what": "the song",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/the version.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/the version.wav",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a01m-a-a01r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a02m-a-a02r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d06m-a-d06r5-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-g08y-b-g08r5-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k01m-a-k01r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k19m-a-k19r5-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-p05-a-p05r6-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q01-b-q01r7-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q05-b-q05r7-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q08-a-q08r7-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q12-b-q12r7-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v11x-a-v11r5-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase1-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase3-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods2-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods3-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods4-a.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/noir/video/safe2-c.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/the version.wav"
+ ],
+ "render": "/mnt/d/badcode-videos/bank-robbery-music/renders/Balaclava Gang 10 - YouTube 1080p.mp4"
+}
