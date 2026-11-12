@@ -1,0 +1,65 @@
+{
+ "beats": [
+  {
+   "id": "veteran",
+   "title": "A. 1919: the veteran",
+   "see": "Caption 1919. He pats the brass plaque on the bench back (LEST WE FORGET. PRESENTED BY THE WHALEBY TRUST). The veteran, trouser leg pinned, stands and goes; a WELCOME HOME bunting scrap on the ground.",
+   "lines": [
+    {
+     "who": "CAPTION",
+     "text": "1919.",
+     "by": "claude"
+    },
+    {
+     "who": "FAT CAT",
+     "text": "Forget it.",
+     "by": "kai",
+     "how": "pats the plaque, not looking up from his paper"
+    }
+   ],
+   "music": "",
+   "sfx": "pat on brass"
+  },
+  {
+   "id": "nurse",
+   "title": "B. Now: the nurse",
+   "see": "Caption Now. Same pat, same paper, same flick of the hand. The nurse goes; a second plate under the first: THANK YOU HEROES.",
+   "lines": [
+    {
+     "who": "CAPTION",
+     "text": "Now.",
+     "by": "claude"
+    },
+    {
+     "who": "FAT CAT",
+     "text": "Forget it.",
+     "by": "kai",
+     "how": "identical to 1919"
+    }
+   ],
+   "music": "",
+   "sfx": "pat on brass"
+  },
+  {
+   "id": "button",
+   "title": "C. Same bench",
+   "see": "He lowers the paper and tips his hat to camera.",
+   "lines": [
+    {
+     "who": "CAPTION",
+     "text": "Same bench.",
+     "by": "claude"
+    }
+   ],
+   "music": "",
+   "sfx": "one page-turn, one dry brass tink"
+  }
+ ],
+ "voices": [
+  {
+   "id": "fatcat",
+   "name": "Fat cat",
+   "profile": "to be cast (voice-casting)"
+  }
+ ]
+}

@@ -39,5 +39,11 @@
  "boards": {
   "moodboard": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
   "dialogue": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid"
+ },
+ "dialogue": {
+  "page": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
+  "options": "design/2026-11-12-short-same-bench-dialogue-lines/options.json",
+  "picked": "1B",
+  "round": 1
  }
 }
