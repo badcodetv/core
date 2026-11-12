@@ -41,6 +41,10 @@ export interface VideoSummary {
   madeForKids?: boolean
   containsSyntheticMedia?: boolean
   duration?: string
+  /** Frame size of the uploaded file (owner-only `fileDetails`). */
+  frame?: { width: number; height: number }
+  /** YouTube has no "is a Short" flag: a Short is vertical or square and at most 3 minutes. */
+  isShort?: boolean
   thumbnail?: string
   url: string
   stats?: { views: number; likes: number; comments: number }
@@ -51,6 +55,9 @@ export function summarise(v: Json): VideoSummary {
   const st = v.status ?? {}
   const thumbs = s.thumbnails ?? {}
   const thumb = thumbs.maxres ?? thumbs.high ?? thumbs.medium ?? thumbs.default
+  const stream = v.fileDetails?.videoStreams?.[0]
+  const frame = stream?.widthPixels ? { width: Number(stream.widthPixels), height: Number(stream.heightPixels) } : undefined
+  const secs = v.contentDetails?.duration ? isoSeconds(v.contentDetails.duration) : undefined
   return {
     id: v.id,
     title: s.title ?? '',
@@ -66,6 +73,8 @@ export function summarise(v: Json): VideoSummary {
     ...(st.madeForKids !== undefined ? { madeForKids: st.madeForKids } : {}),
     ...(st.containsSyntheticMedia !== undefined ? { containsSyntheticMedia: st.containsSyntheticMedia } : {}),
     ...(v.contentDetails?.duration ? { duration: v.contentDetails.duration } : {}),
+    ...(frame ? { frame } : {}),
+    ...(frame && secs !== undefined ? { isShort: frame.height >= frame.width && secs <= 180 } : {}),
     ...(thumb?.url ? { thumbnail: thumb.url } : {}),
     url: `https://youtu.be/${v.id}`,
     ...(v.statistics
@@ -167,6 +176,13 @@ export function buildUpdate(current: Json, ch: VideoChanges): { parts: string[];
   return { parts, body }
 }
 
+/** `PT1H2M3S` → 3723. */
+export function isoSeconds(d: string): number {
+  const m = /^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/.exec(d)
+  if (!m) return NaN
+  return Number(m[1] ?? 0) * 86400 + Number(m[2] ?? 0) * 3600 + Number(m[3] ?? 0) * 60 + Number(m[4] ?? 0)
+}
+
 export class YouTube {
   constructor(private tokens: TokenSource) {}
 
@@ -194,7 +210,7 @@ export class YouTube {
     return ch
   }
 
-  async getVideos(ids: string[], parts = 'snippet,status,contentDetails,statistics'): Promise<Json[]> {
+  async getVideos(ids: string[], parts = 'snippet,status,contentDetails,statistics,fileDetails'): Promise<Json[]> {
     const out: Json[] = []
     for (let i = 0; i < ids.length; i += 50) {
       const chunk = ids.slice(i, i + 50)

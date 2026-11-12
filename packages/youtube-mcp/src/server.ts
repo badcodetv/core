@@ -20,7 +20,7 @@ import { NAME, VERSION } from './version'
 import { freshClientCreds, imageMime, loadEnvFile, parseId, toLocalPath, tokenFile, videoMime } from './config'
 import { AuthError, TokenSource, readToken } from './auth'
 import { ApiError, YouTube, summarise, type VideoChanges } from './api'
-import { appendLog, writeSnapshot } from './record'
+import { aiLabels, appendLog, writeSnapshot } from './record'
 
 const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..')
 const RECORD_DIR = join(REPO_ROOT, 'docs', 'youtube')
@@ -127,7 +127,9 @@ server.registerTool(
     description:
       'Every video on the channel (private and scheduled included), newest first, with title, privacy, schedule, ' +
       'tags and view/like/comment counts. Also rewrites docs/youtube/channel.json (the repo\'s copy, without the counts). ' +
-      'Descriptions are cut to 200 characters here; youtube_get_video has the full text.',
+      'Descriptions are cut to 200 characters here; youtube_get_video has the full text. `isShort` comes from the ' +
+      'file (vertical or square, 3 minutes or less). `aiLabel` comes from docs/youtube/log.jsonl, because YouTube ' +
+      'never reads that label back.',
     inputSchema: {
       search: z.string().optional().describe('Only videos whose title contains this (case-insensitive).'),
     },
@@ -138,10 +140,22 @@ server.registerTool(
       const all = (await yt.allUploads()).map(summarise)
       const snapshot = writeSnapshot(RECORD_DIR, { id: ch.id, title: ch.snippet?.title ?? '' }, all)
       const q = search?.toLowerCase()
+      const labels = aiLabels(RECORD_DIR)
       const videos = all
         .filter((v) => !q || v.title.toLowerCase().includes(q))
-        .map((v) => ({ ...v, description: v.description.length > 200 ? v.description.slice(0, 200) + '…' : v.description }))
-      return { channel: ch.snippet?.title, count: videos.length, snapshot, videos }
+        .map(({ containsSyntheticMedia: _ai, ...v }) => ({
+          ...v,
+          aiLabel: labels.has(v.id) ? labels.get(v.id) : 'never set from here',
+          description: v.description.length > 200 ? v.description.slice(0, 200) + '…' : v.description,
+        }))
+      const needsAiLabel = all.filter((v) => !labels.has(v.id)).map((v) => v.title)
+      return {
+        channel: ch.snippet?.title,
+        count: videos.length,
+        snapshot,
+        ...(needsAiLabel.length ? { needsAiLabel, hint: 'Run youtube_label_ai to label them.' } : {}),
+        videos,
+      }
     }),
 )
 
@@ -169,9 +183,10 @@ server.registerTool(
       tags: z.array(z.string()).default([]).describe('All tags together must stay under 500 characters.'),
       containsSyntheticMedia: z
         .boolean()
+        .default(true)
         .describe(
-          'YouTube\'s "altered or synthetic content" label. REQUIRED on purpose: docs/using-ai.md says we disclose AI ' +
-            'at the point of consumption, so for our films this is normally true. Never guess it false.',
+          'YouTube\'s "altered or synthetic content" label. ON by default (Kai, 2026-11-12: every BadCode video carries ' +
+            'it; docs/using-ai.md discloses at the point of consumption). Only pass false if Kai or Jack said so.',
         ),
       categoryId: z.string().default('1').describe('"1" Film & Animation (default), "10" Music, "24" Entertainment, "25" News & Politics. youtube_categories lists all.'),
       privacyStatus: privacy.default('private'),
@@ -279,8 +294,38 @@ server.registerTool(
       for (const k of Object.keys(changes) as (keyof typeof after)[]) {
         if (JSON.stringify(before[k]) !== JSON.stringify(after[k])) diff[k] = { from: before[k], to: after[k] }
       }
-      appendLog(RECORD_DIR, { action: 'update', videoId: id, title: after.title, changes: diff })
+      appendLog(RECORD_DIR, { action: 'update', videoId: id, title: after.title, changes: diff, requested: changes })
       return { video: after, changed: diff, snapshot: await snapshotAfterChange() }
+    }),
+)
+
+server.registerTool(
+  'youtube_label_ai',
+  {
+    description:
+      'Give YouTube\'s "altered or synthetic content" label to every video that docs/youtube/log.jsonl has no record ' +
+      'of labelling (e.g. one uploaded by hand in Studio). Kai, 2026-11-12: every BadCode video carries it. Safe to run ' +
+      'any time; run it after every sync. Pass videoIds to label only those.',
+    inputSchema: { videoIds: z.array(z.string()).optional() },
+  },
+  ({ videoIds }) =>
+    run(async () => {
+      const labels = aiLabels(RECORD_DIR)
+      const all = (await yt.allUploads()).map(summarise)
+      const want = videoIds?.map(parseId)
+      const todo = all.filter((v) => (want ? want.includes(v.id) : !labels.has(v.id)))
+      const done: string[] = []
+      for (const v of todo) {
+        await yt.updateVideo(v.id, { containsSyntheticMedia: true })
+        appendLog(RECORD_DIR, { action: 'update', videoId: v.id, title: v.title, requested: { containsSyntheticMedia: true }, note: 'AI label' })
+        done.push(v.title)
+      }
+      return {
+        labelled: done,
+        alreadyLabelled: all.length - todo.length,
+        note: 'YouTube accepts this label but never reads it back: check one in Studio (Details → Altered content) once.',
+        snapshot: done.length ? await snapshotAfterChange() : undefined,
+      }
     }),
 )
 

@@ -3,7 +3,7 @@
     "id": "UCczQ5ZPxWhH3e_DuEarT2kA",
     "title": "Badcode"
   },
-  "syncedAt": "2026-11-12T08:49:49.631Z",
+  "syncedAt": "2026-11-12T08:54:58.652Z",
   "count": 4,
   "videos": [
     {
@@ -17,20 +17,33 @@
       "uploadStatus": "processed",
       "madeForKids": false,
       "duration": "PT3M7S",
-      "url": "https://youtu.be/XinO1Kze_5A"
+      "frame": {
+        "width": 1920,
+        "height": 1080
+      },
+      "isShort": false,
+      "url": "https://youtu.be/XinO1Kze_5A",
+      "aiLabel": "yes (set by us)"
     },
     {
       "id": "9ha83RIv0YU",
-      "title": "the rules master r3 tagged",
+      "title": "The Rules Are Not Working Anymore",
       "description": "",
       "tags": [],
       "categoryId": "22",
+      "defaultAudioLanguage": "en-US",
       "privacyStatus": "private",
       "publishedAt": "2026-11-11T14:59:15Z",
       "uploadStatus": "processed",
       "madeForKids": false,
       "duration": "PT28S",
-      "url": "https://youtu.be/9ha83RIv0YU"
+      "frame": {
+        "width": 1080,
+        "height": 1920
+      },
+      "isShort": true,
+      "url": "https://youtu.be/9ha83RIv0YU",
+      "aiLabel": "yes (set by us)"
     },
     {
       "id": "c9jhLpkjv6o",
@@ -43,7 +56,13 @@
       "uploadStatus": "processed",
       "madeForKids": false,
       "duration": "PT4M10S",
-      "url": "https://youtu.be/c9jhLpkjv6o"
+      "frame": {
+        "width": 3840,
+        "height": 2160
+      },
+      "isShort": false,
+      "url": "https://youtu.be/c9jhLpkjv6o",
+      "aiLabel": "yes (set by us)"
     },
     {
       "id": "OaP0RthL_0Q",
@@ -56,7 +75,13 @@
       "uploadStatus": "processed",
       "madeForKids": false,
       "duration": "PT9M32S",
-      "url": "https://youtu.be/OaP0RthL_0Q"
+      "frame": {
+        "width": 1920,
+        "height": 1080
+      },
+      "isShort": false,
+      "url": "https://youtu.be/OaP0RthL_0Q",
+      "aiLabel": "yes (set by us)"
     }
   ]
 }

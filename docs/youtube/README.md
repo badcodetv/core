@@ -1,5 +1,7 @@
 # YouTube: managing the channel from Claude
 
+**The procedure is the [`youtube-channel` skill](../../.claude/skills/youtube-channel/SKILL.md)**; this page is the tool and its setup.
+
 Kai, 2026-11-11: stop clicking through YouTube Studio by hand. The `youtube` MCP server
 (`packages/youtube-mcp/`) manages the BadCode channel through Google's official **YouTube Data API
 v3**: upload, edit titles / descriptions / tags, thumbnails, playlists, and a list of every video.
@@ -20,9 +22,10 @@ you has asked for that video in words.)
 | Tool | Does |
 | --- | --- |
 | `youtube_status` | Set up? Signed in? **Which channel** (check it says BadCode). Gives the next setup step if not. |
-| `youtube_list_videos` | Every video, private and scheduled too, newest first, with counts. Refreshes `channel.json`. |
+| `youtube_list_videos` | Every video, private and scheduled too, newest first, with counts, `isShort` (vertical/square and ≤3 min, from the file; the API has no Shorts flag) and `aiLabel`. Refreshes `channel.json`. |
 | `youtube_get_video` | One video in full. Takes an id or any YouTube / Studio link. |
-| `youtube_upload` | Upload a file (WSL or `D:\…` path; big files fine, resumable). Private by default, no subscriber ping. `containsSyntheticMedia` (YouTube's "altered or synthetic content" label) is **required**: [`docs/using-ai.md`](../using-ai.md) says we disclose at the point of consumption, so for our films it's normally `true`. Optional thumbnail and playlists. |
+| `youtube_upload` | Upload a file (WSL or `D:\…` path; big files fine, resumable). Private by default, no subscriber ping. The **AI label** ("altered or synthetic content") is **on by default** (Kai, 2026-11-12: every video carries it). Optional thumbnail and playlists. |
+| `youtube_label_ai` | Puts the AI label on every video the log has no record of labelling (e.g. Jack's hand uploads). 🔴 YouTube accepts the label but never reads it back, so `log.jsonl` is the only record of which videos have it. |
 | `youtube_update_video` | Change only the fields you pass; the rest is kept. Tags are replaced as a whole list. |
 | `youtube_set_thumbnail` | PNG/JPEG under 2 MB, 1280×720 ideal. Needs the channel phone-verified. |
 | `youtube_playlists` | List, create, add a video. |

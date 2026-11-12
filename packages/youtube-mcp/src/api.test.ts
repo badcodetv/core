@@ -113,3 +113,36 @@ describe('helpers', () => {
     })
   })
 })
+
+import { isoSeconds } from './api'
+import { aiLabels, appendLog } from './record'
+import { mkdtempSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+
+describe('shorts and AI labels', () => {
+  it('isoSeconds', () => {
+    expect(isoSeconds('PT28S')).toBe(28)
+    expect(isoSeconds('PT9M32S')).toBe(572)
+    expect(isoSeconds('PT1H2M3S')).toBe(3723)
+  })
+
+  it('a vertical clip of 3 minutes or less is a Short; landscape is not', () => {
+    const v = (w: number, h: number, d: string) =>
+      summarise({ id: 'abcdefghijk', contentDetails: { duration: d }, fileDetails: { videoStreams: [{ widthPixels: w, heightPixels: h }] } })
+    expect(v(1080, 1920, 'PT28S').isShort).toBe(true)
+    expect(v(1920, 1080, 'PT28S').isShort).toBe(false)
+    expect(v(1080, 1920, 'PT4M').isShort).toBe(false)
+    expect(summarise({ id: 'abcdefghijk' }).isShort).toBeUndefined()
+  })
+
+  it('aiLabels reads the last request per video from the log', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'yt-'))
+    appendLog(dir, { action: 'upload', videoId: 'a', changes: { containsSyntheticMedia: true } })
+    appendLog(dir, { action: 'update', videoId: 'b', requested: { containsSyntheticMedia: true } })
+    appendLog(dir, { action: 'update', videoId: 'b', requested: { title: 'x' } })
+    appendLog(dir, { action: 'update', videoId: 'c', changes: { title: { from: 'a', to: 'b' } } })
+    const l = aiLabels(dir)
+    expect([...l.entries()]).toEqual([['a', true], ['b', true]])
+  })
+})

@@ -8,15 +8,19 @@
  *   log.jsonl     one line per change made through this server (upload, edit, thumbnail,
  *                 playlist), appended, never rewritten.
  */
-import { appendFileSync, mkdirSync, writeFileSync } from 'node:fs'
+import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { VideoSummary } from './api'
 
 export function writeSnapshot(dir: string, channel: { id: string; title: string }, videos: VideoSummary[]): string {
   mkdirSync(dir, { recursive: true })
   const file = join(dir, 'channel.json')
+  const labels = aiLabels(dir)
   const rows = videos
-    .map(({ stats: _stats, thumbnail: _thumb, ...rest }) => rest)
+    .map(({ stats: _stats, thumbnail: _thumb, containsSyntheticMedia: _ai, ...rest }) => ({
+      ...rest,
+      aiLabel: labels.has(rest.id) ? (labels.get(rest.id) ? 'yes (set by us)' : 'no (set by us)') : 'unknown: never set from here',
+    }))
     .sort((a, b) => (b.publishedAt ?? '').localeCompare(a.publishedAt ?? ''))
   writeFileSync(
     file,
@@ -31,6 +35,8 @@ export interface LogLine {
   playlistId?: string
   title?: string
   changes?: Record<string, unknown>
+  /** What was asked for, as sent (the diff in `changes` can't show fields YouTube never reads back). */
+  requested?: Record<string, unknown>
   file?: string
   note?: string
 }
@@ -38,4 +44,29 @@ export interface LogLine {
 export function appendLog(dir: string, line: LogLine): void {
   mkdirSync(dir, { recursive: true })
   appendFileSync(join(dir, 'log.jsonl'), JSON.stringify({ at: new Date().toISOString(), ...line }) + '\n')
+}
+
+/**
+ * Which videos we have given YouTube's "altered or synthetic content" label, from log.jsonl.
+ *
+ * 🔴 Why the log and not YouTube: videos.update ACCEPTS `status.containsSyntheticMedia` (the PUT
+ * response echoes it) but videos.list never returns it (checked 2026-11-12). So the API can't tell
+ * us which videos carry the label; our own record of setting it is the only source. The last
+ * request per video wins.
+ */
+export function aiLabels(dir: string): Map<string, boolean> {
+  const out = new Map<string, boolean>()
+  const file = join(dir, 'log.jsonl')
+  if (!existsSync(file)) return out
+  for (const raw of readFileSync(file, 'utf-8').split('\n')) {
+    if (!raw.trim()) continue
+    try {
+      const l = JSON.parse(raw) as LogLine
+      const v = l.requested?.containsSyntheticMedia ?? (l.action === 'upload' ? l.changes?.containsSyntheticMedia : undefined)
+      if (l.videoId && typeof v === 'boolean') out.set(l.videoId, v)
+    } catch {
+      /* a bad line never hides the rest */
+    }
+  }
+  return out
 }
