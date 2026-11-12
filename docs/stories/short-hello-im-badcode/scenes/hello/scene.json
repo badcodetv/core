@@ -7,22 +7,28 @@
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode",
  "beats": [
   {
-   "key": "future",
+   "key": "hello",
    "at": "0:00",
-   "name": "A. The future",
-   "blurb": "The future that went wrong, never explained. Voice over, calm: \"Hello. I'm from the future.\""
+   "name": "A. Hello",
+   "blurb": "Something warm and happy on screen. Voice: \"Hello. I'm from the future.\""
   },
   {
    "key": "figure",
    "at": "0:04",
    "name": "B. It didn't go well",
-   "blurb": "Cut to the balaclava figure, straight to camera, deadpan: \"It didn't go well.\""
+   "blurb": "Cut to BadCode, the masked figure, deadpan: \"It didn't go well.\""
+  },
+  {
+   "key": "horror",
+   "at": "0:07",
+   "name": "C. The horror reel",
+   "blurb": "Real footage of AI data centres and the bad things happening now, flashing in a horror compilation with cinematic music."
   },
   {
    "key": "button",
-   "at": "0:07",
-   "name": "C. Watch this space",
-   "blurb": "\"Watch this space.\" Then the logo."
+   "at": "0:15",
+   "name": "D. Here's what to do",
+   "blurb": "The music slows to nothing. \"Here's what to do next.\" Then the BadCode logo. No other words."
   }
  ],
  "video": {
