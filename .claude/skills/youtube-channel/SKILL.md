@@ -92,6 +92,10 @@ From the first drafting round (`docs/youtube/drafts/2026-11-12-first-four.md`); 
 
 - **The tool server reads `.env` on every token refresh**, so fixing `.env` mid-session works. A
   `TOKEN_REVOKED` error means re-run the login. If it happens weekly, the Cloud app is still in "Testing".
+- **A read straight after an update can show the OLD text** for a few seconds. Re-read before calling an update
+  failed. **Tags come back sorted alphabetically**, so compare them as a set, not in order.
+- **Pinned comments and a Short's Related video can't be set through the API.** They're a Studio click each,
+  listed in the draft file's "Studio steps".
 - **The Shorts URL check doesn't work from here.** `youtube.com/shorts/<id>` redirects to an EU cookie
   wall, so use `isShort`.
 - **Sign in as badcode.tv@gmail.com**, the account that owns the channel. The Cloud project (Bad Code
