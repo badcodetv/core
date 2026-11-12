@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/audio/takes/eng-fuckit-a.wav",
+ "made": "2026-11-12T16:49:44+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Fuck it.",
+ "inputs": {
+  "profile": "# Audio Profile\nA studio engineer in a balaclava who has been mixing the same song for eleven years. South London, dry, flat, unbothered, a voice like a kettle that stopped caring whether it boils.\n\n## Scene:\nA cramped basement studio at three in the morning, slumped over a mixing desk buried in mugs, two intruders staring at him across the desk.\n\n## Sample Context:\nBone-dry and deadpan. Short, tired, completely unsurprised. No warmth, no hurry.\n",
+  "profile_file": "docs/stories/short-no-master-recording/scenes/no-master-recording/voices/profiles/eng-iapetus.md"
+ },
+ "settings": {
+  "voice": "Iapetus",
+  "temperature": 1,
+  "channels": 2
+ }
+}

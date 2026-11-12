@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/cut/v5-logo.mp4",
+ "made": "2026-11-12T16:57:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/no_master_cut.py",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/brand/logo/badcode-stacked-reversed-2400.png",
+ "why": "the stacked logo and name on black, 1.5 s, under 'Fuck it.'"
+}

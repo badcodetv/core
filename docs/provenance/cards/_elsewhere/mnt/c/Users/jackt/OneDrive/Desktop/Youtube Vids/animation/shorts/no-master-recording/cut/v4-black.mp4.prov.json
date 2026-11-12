@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/cut/v4-black.mp4",
+ "made": "2026-11-12T16:57:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/no_master_cut.py",
+ "why": "0.35 s of black before the logo (Jack's ending)"
+}

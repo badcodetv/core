@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/video/nm-01-AR1-a.mp4",
+ "made": "2026-11-12T16:53:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A cheap flash snapshot come to life, shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Late at night in the kebab shop the two mates hum at each other, each certain of his own tune: the man in the grey hoodie conducts with one raised finger, eyes shut, humming; the man in the red football shirt sways and waves both hands to a different rhythm, humming back louder. Only humming, no words. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/AR1-a.jpg",
+ "why": "Jack 2026-11-12: 'animate it and put it on the timeline' (stills AR1-a, WA2-b, EN1-a-fix-b are his picks)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/AR1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-no-master-recording/scenes/no-master-recording",
+  "key": "01",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T16:49:36.885Z"
+ }
+}

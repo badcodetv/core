@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/audio/takes/mate2-fast-d.wav",
+ "made": "2026-11-12T16:56:31+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Pick that one...",
+ "inputs": {
+  "profile": "# Audio Profile\nA stocky south-east London bloke in his thirties in a grey hoodie, easygoing, a bit pleased with himself.\n\n## Scene:\nWading through a heap of records in a studio, giving up on finding the original and just pointing at one.\n\n## Sample Context:\nQuick and throwaway, half a second, a shrug: tossed off, not drawn out.\n",
+  "profile_file": "docs/stories/short-no-master-recording/scenes/no-master-recording/voices/profiles/mate2-zuben-fast.md"
+ },
+ "settings": {
+  "voice": "Zubenelgenubi",
+  "temperature": 1,
+  "channels": 2
+ }
+}

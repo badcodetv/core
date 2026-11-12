@@ -1,0 +1,41 @@
+{
+ "skip": [],
+ "extra": [
+  {
+   "key": "01",
+   "n": 1,
+   "still": "AR1-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-12: 'animate it and put it on the timeline' (stills AR1-a, WA2-b, EN1-a-fix-b are his picks)",
+   "motion": "The camera does not move. A cheap flash snapshot come to life, shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Late at night in the kebab shop the two mates hum at each other, each certain of his own tune: the man in the grey hoodie conducts with one raised finger, eyes shut, humming; the man in the red football shirt sways and waves both hands to a different rhythm, humming back louder. Only humming, no words. The camera does not move. Thanks."
+  },
+  {
+   "key": "02",
+   "n": 2,
+   "still": "WA2-b",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-12: 'animate it and put it on the timeline' (stills AR1-a, WA2-b, EN1-a-fix-b are his picks)",
+   "motion": "The camera does not move. A cheap flash snapshot come to life, shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Knee-deep in a sea of seven-inch records, the man in the red football shirt lifts one single up to his face in disbelief while the man in the grey hoodie slowly turns, hands on his head, taking in the endless heap. Loose records slither and clatter around their knees. They stay silent. The camera does not move. Thanks."
+  },
+  {
+   "key": "03",
+   "n": 3,
+   "still": "EN1-a-fix-b",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-12: 'animate it and put it on the timeline' (stills AR1-a, WA2-b, EN1-a-fix-b are his picks)",
+   "motion": "The camera does not move. A cheap flash snapshot come to life, shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. At the cluttered mixing desk the masked engineer slowly lifts their head and looks straight into the lens, then tilts it slightly, patient and weary. The balaclava keeps facing the camera the whole time, its white ring and red triangle steady. A cable sways gently on the desk. Silence apart from the hum of the room. The camera does not move. Thanks."
+  },
+  {
+   "key": "04",
+   "n": 4,
+   "still": "WA2-b",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-12: 'animate it and put it on the timeline' (stills AR1-a, WA2-b, EN1-a-fix-b are his picks); the mates' lines, to be muted and dubbed",
+   "motion": "The camera does not move. A cheap flash snapshot come to life, shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Knee-deep in seven-inch records, the man in the red football shirt turns to the camera, exasperated, and says: We don't fucking know, there are a thousand versions. Then the man in the grey hoodie points at one random single in the heap and says: Pick that one. The camera does not move. Thanks."
+  }
+ ]
+}

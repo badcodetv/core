@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/audio/takes/mate1-fast-e.wav",
+ "made": "2026-11-12T16:56:32+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "We don't fucking know, there are a thousand versions.",
+ "inputs": {
+  "profile": "# Audio Profile\nA lanky Mancunian lad in his thirties in a red football shirt, wound up and loud, the kind of bloke who argues with the telly.\n\n## Scene:\nStanding knee-deep in a sea of old seven-inch records, having just broken into a recording studio to settle an argument about how a song goes.\n\n## Sample Context:\nExasperated and fast: the whole line rattled off in under three seconds, one breath, the swear punched, no pause between the two halves.\n",
+  "profile_file": "docs/stories/short-no-master-recording/scenes/no-master-recording/voices/profiles/mate1-fenrir-fast.md"
+ },
+ "settings": {
+  "voice": "Fenrir",
+  "temperature": 1,
+  "channels": 2
+ }
+}

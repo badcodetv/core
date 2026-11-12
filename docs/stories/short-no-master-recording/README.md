@@ -25,7 +25,7 @@ holds their own cut, and there is no original to appeal to. Part of the parked S
 
 | What | Where | Status |
 | --- | --- | --- |
-| Words | the idea above | draft (Jack's punch-up owed) |
+| Words | `scenes/no-master-recording/script.json` | Jack's, 2026-11-12 |
 | Look | [`look.md`](./look.md) | LOCKED: flash snapshot (Jack, 2026-11-12) |
-| Sound | [`sound.md`](./sound.md) | EMPTY |
-| Media | Jack: Desktop `Youtube Vids\\animation\\shorts\\no-master-recording` · Drive `Shorts/No Master Recording` | stills round 1 on the mood board https://claude.ai/artifact/FJieSkPe2H7jskjr1BKiRW |
+| Sound | [`sound.md`](./sound.md) | EXPLORING: voices picked by Claude, unheard |
+| Media | Jack: Desktop `Youtube Vids\\animation\\shorts\\no-master-recording` · Drive `Shorts/No Master Recording` | rough cut 1 on the timeline https://claude.ai/artifact/Bhy5EYPqP4suzrRa1jMZQr (mood board https://claude.ai/artifact/FJieSkPe2H7jskjr1BKiRW) |
