@@ -100,6 +100,9 @@ Kai and Jack agree out loud who holds each story. There is no lock in the tool, 
   `403 rateLimitExceeded … defaultPerMinutePerProject` on nearly every call, with the pacer backing off to
   17 s between chunk sends. The line was fine (YouTube took 511 MB at 3 MB/s the same hour). Fix: our own
   OAuth client (Google Cloud → enable the Drive API → OAuth client ID, type Desktop app), its `client_id`
-  and `client_secret` in the `badcode` remote, then `rclone config reconnect badcode:`. Test before any big
+  and `client_secret` in the `badcode` remote, then `rclone config reconnect badcode:` (from the `!` prompt it can't take answers; feed them one at a time with
+  pauses, e.g. `( echo y; sleep 2; echo y; sleep 600 ) | rclone config reconnect badcode:`). On Kai's machine (done
+  2026-11-12): the key lives in `.env` as `RCLONE_CLIENT_ID`/`RCLONE_CLIENT_SECRET`, the sign-in is badcode.tv@gmail.com,
+  and "Badcode - Official" is shared with that account. After the fix a 50 MB test took 16 s (~3 MB/s). Test before any big
   push: `rclone -vv … copy <50 MB file>` and grep for `rateLimitExceeded`.
 - **rclone from apt is old** (1.53.3, 2020 on this machine). Prefer a current rclone from rclone.org.
