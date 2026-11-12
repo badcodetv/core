@@ -1,60 +1,73 @@
 {
-  "story": "short-same-bench",
-  "scene": "same-bench",
-  "prefix": "sb",
-  "title": "Same Bench",
-  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Same Bench",
-  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench",
-  "beats": [
-    {
-      "key": "veteran",
-      "at": "0:00",
-      "name": "A. 1919: the veteran",
-      "blurb": "A park bench in 1919: a top-hatted fat cat tells a wounded soldier \"Forget it.\""
-    },
-    {
-      "key": "nurse",
-      "at": "0:05",
-      "name": "B. Today: the nurse",
-      "blurb": "The same bench today, the same fat cat, a nurse in scrubs: \"Forget it.\""
-    },
-    {
-      "key": "button",
-      "at": "0:10",
-      "name": "C. Hasn't aged a day",
-      "blurb": "The button: he hasn't aged a day."
-    }
-  ],
-  "video": {
-    "model": "Omni 1.2 Flash",
-    "aspect": "9:16",
-    "mode": "Frames",
-    "duration": 8
+ "story": "short-same-bench",
+ "scene": "same-bench",
+ "prefix": "sb",
+ "title": "Same Bench",
+ "heading": "BadCode Shorts <span class=\"tri\">▲</span> Same Bench",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench",
+ "beats": [
+  {
+   "key": "veteran",
+   "at": "0:00",
+   "name": "A. 1919: the veteran",
+   "blurb": "A park bench in 1919: a top-hatted fat cat tells a wounded soldier \"Forget it.\""
   },
-  "flow_project": "0f0d05fd-6ac0-4296-b669-7334529113d0",
-  "looks": {
-    "ink": "1910s pen and ink (our drawing)"
+  {
+   "key": "nurse",
+   "at": "0:05",
+   "name": "B. Today: the nurse",
+   "blurb": "The same bench today, the same fat cat, a nurse in scrubs: \"Forget it.\""
   },
-  "moodboard_intro": "Round 2 is the ominous, horror take on the fat cat (nine new writers, researched on the web). Round 1's ink cartoons are still below. Use the style filter to see one round. Tap This, Maybe or No; leave a note per beat.",
-  "boards": {
-    "moodboard": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
-    "dialogue": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
-    "storyboard": "https://claude.ai/artifact/61kEE1nStEZifZfHit7mxN",
-    "timeline": "https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC"
-  },
-  "dialogue": {
-    "page": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
-    "options": "design/2026-11-12-short-same-bench-dialogue-lines/options.json",
-    "picked": "1B",
-    "round": 1
-  },
-  "styles": {
-    "ink": "Round 1: 1910s ink",
-    "horror": "Round 2: ominous horror"
-  },
-  "cut": {
-    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/cut/edl.json",
-    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/cut/preview.mp4",
-    "script": "python3 scripts/shorts/same_bench_cut.py"
+  {
+   "key": "button",
+   "at": "0:10",
+   "name": "C. Hasn't aged a day",
+   "blurb": "The button: he hasn't aged a day."
   }
+ ],
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "9:16",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "flow_project": "0f0d05fd-6ac0-4296-b669-7334529113d0",
+ "looks": {
+  "ink": "1910s pen and ink (our drawing)"
+ },
+ "moodboard_intro": "Round 2 is the ominous, horror take on the fat cat (nine new writers, researched on the web). Round 1's ink cartoons are still below. Use the style filter to see one round. Tap This, Maybe or No; leave a note per beat.",
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
+  "dialogue": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
+  "storyboard": "https://claude.ai/artifact/61kEE1nStEZifZfHit7mxN",
+  "timeline": "https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC"
+ },
+ "dialogue": {
+  "page": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid",
+  "options": "design/2026-11-12-short-same-bench-dialogue-lines/options.json",
+  "picked": "1B",
+  "round": 1
+ },
+ "styles": {
+  "ink": "Round 1: 1910s ink",
+  "horror": "Round 2: ominous horror"
+ },
+ "cut": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/cut/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/cut/preview.mp4",
+  "script": "python3 scripts/shorts/same_bench_cut.py"
+ },
+ "premiere": {
+  "current": "r3",
+  "r3": {
+   "sequence": "short-same-bench-1-same-bench-r3",
+   "guid": "30bdb365-ac1a-402c-88a0-aabac4cec0c5",
+   "bin": "short-same-bench-1-same-bench-r3",
+   "built": "2026-11-12",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/same bench.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/cut/edl-premiere.json",
+   "what": "timeline round 3: dialogue cards, B/C re-rolls, C mirrored (the mirrored render on V1), logo end card",
+   "how": "premiere-plan.py --tag r3 on edl-premiere.json (button = the mirrored part); fromItems (createSequenceWithPresetPath is missing in Pr 25.6, the card sets 1080x1920 24 fps); Flow clips Scale 150"
+  }
+ }
 }

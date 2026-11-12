@@ -12,3 +12,4 @@
 - **2026-11-12 (Jack):** voice **a, Algenib**; clips A, B, C all **kept** (C kept despite the face change on the turn).
 - **2026-11-12 (Jack, timeline r1):** "it doesnt really convey the message it is kind of just a bit weird and the guys says forget it twice". Picked the fix: **silent-film dialogue cards** with the ask before each "Forget it." (1919 "They promised us homes fit for heroes.", 2026 "You clapped for us every Thursday."). Notes: B re-roll (nurse walked through the bench), C re-roll (look right, not left), caption out, logo at the end.
 - **2026-11-12 (Jack, timeline r2):** "the title cards make this better well done". Notes: cards long enough to read (now 1.6 s / 3.6 s); C "should look to where a person would be" → C mirrored (free). Rough cut 3, 26 s.
+- **2026-11-12 (Jack):** "put it in Premiere" → `short-same-bench-1-same-bench-r3` built in his `same bench.prproj`: 10 on V1, 2 voice lines A1, clip sound A2; Flow clips Scale 150; frame checked.
