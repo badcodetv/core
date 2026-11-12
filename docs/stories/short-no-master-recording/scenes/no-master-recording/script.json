@@ -1,0 +1,14 @@
+{
+ "by": "jack",
+ "date": "2026-11-12",
+ "lines": [
+  {"beat": "argue", "who": "both mates", "line": "(each hums a different tune at the other)"},
+  {"beat": "wall", "who": "", "line": "(no words: the wall of finals does it)"},
+  {"beat": "engineer", "who": "BadCode engineer", "line": "Which one?"},
+  {"beat": "engineer", "who": "mate 1", "line": "We don't fucking know, there are a thousand versions."},
+  {"beat": "engineer", "who": "mate 2", "line": "Pick that one..."},
+  {"beat": "button", "who": "", "line": "(cut to black, then the BadCode logo and name)"},
+  {"beat": "button", "who": "a voice over the logo (who: not yet ruled)", "line": "Fuck it."}
+ ],
+ "pace": "Jack: the ending all happens quite quickly, for comic effect."
+}
