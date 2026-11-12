@@ -28,7 +28,7 @@ Nothing here is ruled. **Jack writes the jokes:** each idea has a premise and th
 Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier when you trim the fat." Each idea is cut to three beats or fewer (seconds in brackets). The longer write-ups further down are background only.
 
 1. 🚑 **Priority Lane** *(DONE 2026-11-11: in Premiere as `shorts-1-priority-lane-r2`; `docs/stories/shorts/priority-lane/`)*: an ambulance is held at the lights (4) → inside the motorcade, a minister on the phone: "I said *raspberry*." (6) → it sweeps past the ambulance, and the meme lands (5). **15s.** The paramedic line is cut; the ambulance says it already.
-2. 🪑 **Same Bench** *(Jack: BUILDING, rough cut 1 on https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC; `docs/stories/short-same-bench/`)*: the 1919 cartoon: "Forget it." (5) → the same bench today, the same fat cat, a nurse: "Forget it." (5) → he hasn't aged a day (4). **14s.** The 2054 era is dropped.
+2. 🪑 **Same Bench** *(Jack: BUILDING, rough cut 3 in Premiere `short-same-bench-1-same-bench-r3`, timeline https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC; `docs/stories/short-same-bench/`)*: the 1919 cartoon: "Forget it." (5) → the same bench today, the same fat cat, a nurse: "Forget it." (5) → he hasn't aged a day (4). **14s.** The 2054 era is dropped.
 3. 🏠 **Howard Street:** a sitcom title card and four neighbours bickering (6) → pull back to one landlord counting rent (6) → the laugh track cuts dead (2). **14s.**
 4. 🚪 **Name's Not Down:** "ID?" "I wrote that sign." "Then you know." **10s.**
 5. 🪆 **Unelected:** dolls open, UNELECTED, UNELECTED, UNELECTED (8) → the tiny one says VOTER, unopened (4). **12s.**
