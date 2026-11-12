@@ -52,5 +52,16 @@
   ],
   "feedback": "feedback/moodboard-r2",
   "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-12T12:02:45+00:00",
+  "stage": "picks",
+  "round": 1,
+  "what": "frame picks read",
+  "decided": [
+   "A2-b, B3-a, C3-a, title cards"
+  ],
+  "feedback": "feedback/picks-r1",
+  "feedback_docs": 4
  }
 ]
