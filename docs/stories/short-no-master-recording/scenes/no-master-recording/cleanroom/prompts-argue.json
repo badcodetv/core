@@ -1,0 +1,23 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's guide: open with a verb, follow Subject + Action + Location + Composition + Style, write a narrative rather than keywords, name the camera, lens and light, describe materials, say what is there instead of what is not, and set the aspect ratio on purpose (9:16 is supported)",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — named hardware works as a style switch, for example 'a cheap disposable camera for a raw, nostalgic flash aesthetic'",
+    "https://www.hedra.com/blog/make-ai-images-look-like-real-photos-prompting — the AI look comes from over-polish (even light, symmetry, smooth skin); naming one camera, film stock or light source makes the model copy one real picture instead of an average of many",
+    "https://miraflow.ai/blog/film-grain-imperfect-photo-ai-prompts-2026 — a generic 'add film grain' gives a flat digital filter; candid, off-centre framing and physical faults sell realism better than quality words like 8k or flawless",
+    "https://budgetpixel.com/blog/de-cgiing-practical-effects-prompting-1970s-animatronic-dark-fantasy-in-nano-banana — Nano Banana moves away from the CGI look when the prompt names physical, handmade making (practical sets, tactile materials, studio lamps)"
+  ],
+  "prompts": [
+    {
+      "style": "Disposable-camera flash snapshot: raw, candid photo realism that dodges the glossy AI look",
+      "prompt": "Generate a vertical 9:16 photograph taken on a cheap disposable camera with harsh on-camera flash, late at night inside a small British kebab shop. Two mates in their thirties stand face to face beside a plastic table piled with chips in polystyrene trays. The stocky one in a grey hoodie hums with his eyes shut and one finger raised like a conductor; the lanky one in a faded football shirt leans in, mouth open mid-note, hands carving a different rhythm in the air. Both grin with total certainty. Blown-out flash on their faces, dark falloff behind, greasy chrome counter, blurred rotating spit, plain unmarked walls. Slightly tilted, off-centre framing, red-eye glints, grainy 1990s colour print. Thanks."
+    },
+    {
+      "style": "Gouache picture-book illustration: warm, painted, gently comic, about as far from photo as it gets",
+      "prompt": "Generate a vertical 9:16 hand-painted gouache illustration in the manner of a mid-century British picture book: flat matte colour, visible brushstrokes, slightly wobbly pencil outlines. A rainy evening at a glass bus shelter on a terraced high street. Two middle-aged mates in anoraks stand nose to nose. The short bald one beats time with a rolled-up umbrella, cheeks puffed out, humming hard; the tall bearded one sways with his eyes closed and both palms up, lost in a completely different tune. Around each man, loose painted swirls of rain spin in opposite directions and clash between them. Muted palette of slate blue, mustard and brick red, warm streetlamp glow, blank shelter panels. Affectionate and silly. Thanks."
+    },
+    {
+      "style": "Stop-motion plasticine set: handmade, tactile miniature, a third world away from both the photo and the painting",
+      "prompt": "Generate a vertical 9:16 photograph of a handmade stop-motion animation set: plasticine characters on a miniature built set, shot through a macro lens at f/4 under small tungsten studio lamps. The inside of a battered little hatchback parked in a supermarket car park at dusk, seen through the windscreen. Two clay mates in the front seats have turned to face each other mid-argument. The driver, with ginger stubble and a woolly hat, drums the steering wheel with his eyes screwed shut; the passenger, in round glasses and a fleece, conducts with a sausage roll like a baton, mouth stretched wide. Visible thumbprints in the clay, felt seat fabric, a tiny dangling air freshener, a blank dashboard. Playful and warm. Thanks."
+    }
+  ]
+}

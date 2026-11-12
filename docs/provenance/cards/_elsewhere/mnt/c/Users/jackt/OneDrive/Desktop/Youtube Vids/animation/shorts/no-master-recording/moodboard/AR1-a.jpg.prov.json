@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/AR1-a.jpg",
+ "made": "2026-11-12T16:18:51.247Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Generate a vertical 9:16 photograph taken on a cheap disposable camera with harsh on-camera flash, late at night inside a small British kebab shop. Two mates in their thirties stand face to face beside a plastic table piled with chips in polystyrene trays. The stocky one in a grey hoodie hums with his eyes shut and one finger raised like a conductor; the lanky one in a faded football shirt leans in, mouth open mid-note, hands carving a different rhythm in the air. Both grin with total certainty. Blown-out flash on their faces, dark falloff behind, greasy chrome counter, blurred rotating spit, plain unmarked walls. Slightly tilted, off-centre framing, red-eye glints, grainy 1990s colour print. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d721a19e-e509-463c-8403-512f107995d8"
+}

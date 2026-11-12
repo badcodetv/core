@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/WA1-a.jpg",
+ "made": "2026-11-12T16:16:53.328Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph taken on a cheap compact camera with harsh on-camera flash, Kodak Gold 800 film grain, slightly crooked framing. A cramped basement recording studio at night. At the bottom of the frame two ordinary men in their thirties, one in a grey hoodie, one in a hi-vis work jacket, seen from behind, heads tipped back, staring up. Before them a floor-to-ceiling wall of steel shelving crammed with thousands of reel-to-reel tape boxes and cassettes, each with a scruffy masking-tape label in black marker. Most labels are too small to read; three near the men read clearly: FINAL, FINAL FINAL, FINAL v847 USE THIS ONE. Flash falls off into darkness above. No other text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8b6cb609-5b46-4170-b569-469a19c7e0dd"
+}

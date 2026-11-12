@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/WA1-b.jpg",
+ "made": "2026-11-12T16:17:52.484Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 gouache illustration in the style of a 1960s children's picture book: flat opaque paint, visible brush texture, a limited palette of mustard, brick red, teal and cream on off-white paper. Seen from a worm's-eye view, a wall of wooden shelves towers impossibly upward, narrowing towards a tiny ceiling, packed with a thousand vinyl records in plain sleeves, every sleeve with a crooked strip of masking tape and hand-lettered marker. Two small plain figures, ordinary working men in a donkey jacket and a tracksuit, stand at the bottom, backs to us, mouths open. A few large labels are legible: FINAL, FINAL 2, FINAL v847 USE THIS ONE; the rest are scribbles. No other words, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e013c785-37dc-42b5-b1f2-4dd9c9858ca0"
+}

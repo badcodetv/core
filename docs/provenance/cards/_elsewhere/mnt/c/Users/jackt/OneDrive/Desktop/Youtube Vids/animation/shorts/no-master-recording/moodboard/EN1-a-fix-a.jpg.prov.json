@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/EN1-a-fix-a.jpg",
+ "made": "2026-11-12T16:23:19.635Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the red triangle on the balaclava so it matches the mask in the second image: one solid red triangle with rounded corners, pointing DOWN (flat edge on top, point at the bottom), sitting high inside the white ring at its upper right. Keep the mask's colour, the white ring and everything else in the first image exactly the same, preserving its film grain, flash lighting and composition. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-nm/EN1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-nm/EN1-a.jpg",
+   "/home/jackt/.cache/badcode-nm/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "259b8a55-c162-489c-a5ea-6ea43f52f3a4"
+}

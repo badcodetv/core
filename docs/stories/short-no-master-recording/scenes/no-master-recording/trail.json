@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-12T16:25:58+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/FJieSkPe2H7jskjr1BKiRW",
+  "what": "Round 1 clean room: 3 beats x 3 looks (flash snapshot, gouache, plasticine); EN1-a and EN1-b masks fixed to the brand rule",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-no-master-recording/scenes/no-master-recording /tmp/claude-1000/-home-jackt-projects-badcode-badcode/c7eb4616-fd19-4f6f-b851-aa5dd8164491/scratchpad/nm-mood/index.html"
+ }
+]

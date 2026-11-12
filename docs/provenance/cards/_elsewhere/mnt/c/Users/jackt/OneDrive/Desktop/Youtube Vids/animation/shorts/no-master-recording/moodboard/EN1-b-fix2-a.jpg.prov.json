@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/EN1-b-fix2-a.jpg",
+ "made": "2026-11-12T16:25:11.779Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "In the first picture, rotate the red triangle on the balaclava so its point aims straight at the floor, like the symbol ▼, the same as the red mark on the mask in the second picture. Its top edge must be horizontal. Nothing else changes: same mask, same white ring, same gouache painting, same desk and shelves. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-nm/EN1-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-nm/EN1-b.jpg",
+   "/home/jackt/.cache/badcode-nm/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "42d4c7ef-79a3-450c-a44d-5cdade4e1edf"
+}

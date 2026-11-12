@@ -1,0 +1,23 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's formula: subject + action + location + composition + style; name the style outright, specify materials, camera, lens and lighting; describe what you want rather than what you don't; 9:16 is supported.",
+    "https://dev.to/googleai/getting-the-most-out-of-nano-banana-2-502k — Google AI: write full narrative prose, not keyword lists; name the rendering with concrete texture words (e.g. 'chunky wax-crayon strokes'); photographic flaws like high-ISO noise can be asked for in sentences.",
+    "https://budgetpixel.com/blog/de-cgiing-practical-effects-prompting-1970s-animatronic-dark-fantasy-in-nano-banana — practitioner: naming physical, handmade materials and practical lighting pulls Nano Banana away from smooth CGI.",
+    "https://dev.to/pretty_lilac/i-studied-200-ai-image-prompts-to-figure-out-why-most-ai-photos-look-fake-heres-what-actually-245g — practitioner: prompts that describe a concept rather than a photograph look fake; drop 'masterpiece/flawless' intensifiers.",
+    "https://miraflow.ai/blog/film-grain-imperfect-photo-ai-prompts-2026 — name a specific film stock (e.g. Fujifilm Superia 1600) and real-camera imperfections (grain, softness, flash falloff) to break up glossy AI gradients."
+  ],
+  "prompts": [
+    {
+      "style": "Late-night flash snapshot (photographic: harsh direct flash and coarse high-ISO film grain read as a real, unglamorous moment, the opposite of glossy AI polish)",
+      "prompt": "Vertical 9:16 snapshot, direct on-camera flash, Fujifilm Superia 1600, coarse grain, flash falling off into murky shadow. Medium close-up: a studio engineer slouched at a cluttered mixing desk of mugs and cables looks up into the lens, deadpan, patient, weary. Behind, shelves of tape boxes with blank masking-tape spines. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Every label stays blank; no readable text, no logos. Thanks."
+    },
+    {
+      "style": "Gouache editorial illustration (painted: flat, chalky colour and visible brushwork make the joke read like a satirical magazine cartoon, not a photo)",
+      "prompt": "Vertical 9:16 gouache satirical magazine illustration: flat chalky colour, visible dry-brush strokes, wonky hand-drawn perspective, muted greens and ochres. Close shot: a weary studio engineer at a mixing desk heaped with faders and tangled leads lifts their head to meet our eye, long-suffering. Behind, a towering wall of tapes and record sleeves with blank cream labels. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. No readable text, no logos. Thanks."
+    },
+    {
+      "style": "Stop-motion clay miniature (something else: a handmade plasticine set with thumbprints and felt makes the deadpan line funnier and dodges the AI look entirely)",
+      "prompt": "Vertical 9:16 macro photograph of a handmade stop-motion set: plasticine with visible thumbprints, felt and card props, a tiny desk lamp pooling warm light. A plasticine studio engineer at a cluttered miniature mixing desk of clay knobs and mugs tilts their head up to stare at camera, deadpan, patient. Behind, a cramped wall of tiny cassette boxes with blank paper labels. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. No readable text, no logos. Thanks."
+    }
+  ]
+}

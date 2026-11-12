@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/AR1-b.jpg",
+ "made": "2026-11-12T16:19:21.547Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Generate a vertical 9:16 hand-painted gouache illustration in the manner of a mid-century British picture book: flat matte colour, visible brushstrokes, slightly wobbly pencil outlines. A rainy evening at a glass bus shelter on a terraced high street. Two middle-aged mates in anoraks stand nose to nose. The short bald one beats time with a rolled-up umbrella, cheeks puffed out, humming hard; the tall bearded one sways with his eyes closed and both palms up, lost in a completely different tune. Around each man, loose painted swirls of rain spin in opposite directions and clash between them. Muted palette of slate blue, mustard and brick red, warm streetlamp glow, blank shelter panels. Affectionate and silly. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "78262c95-0d14-4992-93ac-de75027c1b34"
+}

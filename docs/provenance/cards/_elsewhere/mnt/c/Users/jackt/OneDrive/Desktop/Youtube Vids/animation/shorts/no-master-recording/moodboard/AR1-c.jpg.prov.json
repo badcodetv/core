@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/AR1-c.jpg",
+ "made": "2026-11-12T16:19:54.049Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Generate a vertical 9:16 photograph of a handmade stop-motion animation set: plasticine characters on a miniature built set, shot through a macro lens at f/4 under small tungsten studio lamps. The inside of a battered little hatchback parked in a supermarket car park at dusk, seen through the windscreen. Two clay mates in the front seats have turned to face each other mid-argument. The driver, with ginger stubble and a woolly hat, drums the steering wheel with his eyes screwed shut; the passenger, in round glasses and a fleece, conducts with a sausage roll like a baton, mouth stretched wide. Visible thumbprints in the clay, felt seat fabric, a tiny dangling air freshener, a blank dashboard. Playful and warm. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "93f75229-2f0a-4b67-8726-4cc27d11e65f"
+}

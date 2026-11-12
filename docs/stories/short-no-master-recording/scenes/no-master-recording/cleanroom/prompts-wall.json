@@ -1,0 +1,25 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: the model reasons over full descriptive sentences, so write the scene like a creative brief, not a keyword list",
+    "https://dev.to/googleai/getting-the-most-out-of-nano-banana-2-502k — Google AI dev post: be visually specific about subject, composition, camera and light; ask for exact short text in quotes-like plain words when text must render",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — structured pattern (subject, setting, style, light, framing) beats vague adjectives; state aspect ratio up front",
+    "https://wencestudio-prompt-topixel.beehiiv.com/p/cinematic-means-nothing-to-the-model-this-does — 'cinematic' means nothing; name a concrete medium, lens or light source instead",
+    "https://dev.to/pretty_lilac/i-studied-200-ai-image-prompts-to-figure-out-why-most-ai-photos-look-fake-heres-what-actually-245g — fake look comes from flat even light and uniform sharpness; ask for one harsh or directional source and imperfections",
+    "https://miraflow.ai/blog/film-grain-imperfect-photo-ai-prompts-2026 — name a specific film stock and camera type rather than 'add film grain', which gives a digital filter",
+    "https://www.techradar.com/ai-platforms-assistants/gemini/i-upgraded-my-ai-image-prompts-using-geminis-advice-specifying-lighting-layouts-and-even-fonts-changed-everything — specifying lighting, layout and lettering style changes results most; drop words like masterpiece, ultra-detailed, render"
+  ],
+  "prompts": [
+    {
+      "style": "Flash snapshot on 35mm film (photographic: harsh direct flash and grain kill the glossy AI look and make it feel like a real break-in)",
+      "prompt": "Vertical 9:16 photograph taken on a cheap compact camera with harsh on-camera flash, Kodak Gold 800 film grain, slightly crooked framing. A cramped basement recording studio at night. At the bottom of the frame two ordinary men in their thirties, one in a grey hoodie, one in a hi-vis work jacket, seen from behind, heads tipped back, staring up. Before them a floor-to-ceiling wall of steel shelving crammed with thousands of reel-to-reel tape boxes and cassettes, each with a scruffy masking-tape label in black marker. Most labels are too small to read; three near the men read clearly: FINAL, FINAL FINAL, FINAL v847 USE THIS ONE. Flash falls off into darkness above. No other text, no logos. Thanks."
+    },
+    {
+      "style": "Mid-century gouache picture-book illustration (painted: flat opaque colour and exaggerated perspective sell the absurd scale as a fable)",
+      "prompt": "Vertical 9:16 gouache illustration in the style of a 1960s children's picture book: flat opaque paint, visible brush texture, a limited palette of mustard, brick red, teal and cream on off-white paper. Seen from a worm's-eye view, a wall of wooden shelves towers impossibly upward, narrowing towards a tiny ceiling, packed with a thousand vinyl records in plain sleeves, every sleeve with a crooked strip of masking tape and hand-lettered marker. Two small plain figures, ordinary working men in a donkey jacket and a tracksuit, stand at the bottom, backs to us, mouths open. A few large labels are legible: FINAL, FINAL 2, FINAL v847 USE THIS ONE; the rest are scribbles. No other words, no logos. Thanks."
+    },
+    {
+      "style": "Plasticine stop-motion diorama, macro photographed (something else: a handmade miniature makes a thousand objects feel funny and physical, not CGI)",
+      "prompt": "Vertical 9:16 macro photograph of a handmade stop-motion miniature set, plasticine and cardboard, fingerprints visible in the clay, shallow depth of field, lit by one warm desk lamp from the left with a cool blue fill. Two little plasticine men, ordinary blokes in a beanie and a puffer jacket, stand small at the bottom of the frame, seen from behind, gazing up at a ridiculous floor-to-ceiling wall of tiny cardboard shelves holding a thousand miniature cassette tapes, each with a fiddly hand-cut masking-tape label inked in pen. Only a few labels are big enough to read: FINAL, FINAL FINAL, FINAL v847 USE THIS ONE. The top of the wall blurs out of focus. No other text, no logos. Thanks."
+    }
+  ]
+}

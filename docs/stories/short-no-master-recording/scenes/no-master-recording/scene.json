@@ -1,15 +1,39 @@
 {
- "story": "short-no-master-recording",
- "scene": "no-master-recording",
- "prefix": "nm",
- "title": "No Master Recording",
- "heading": "BadCode Shorts <span class=\"tri\">▲</span> No Master Recording",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording",
- "beats": [
-  {"key": "argue", "at": "0:00", "name": "A. Two mates argue", "blurb": "Two mates argue over how the BadCode song goes, each humming a different tune."},
-  {"key": "wall", "at": "0:04", "name": "B. The wall of finals", "blurb": "They break into the studio: a wall of a thousand records labelled final, final 2, FINAL final, final v847 USE THIS ONE."},
-  {"key": "engineer", "at": "0:09", "name": "C. No master", "blurb": "A balaclava'd engineer looks up from the desk: \"Which one? There's no master. There's only the one you heard.\""}
- ],
- "video": {"model": "Omni 1.2 Flash", "aspect": "9:16", "mode": "Frames", "duration": 8},
- "moodboard_intro": "Round 1, clean room: three shots, three different looks each. Tap This, Maybe or No; leave a note per shot."
+  "story": "short-no-master-recording",
+  "scene": "no-master-recording",
+  "prefix": "nm",
+  "title": "No Master Recording",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> No Master Recording",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording",
+  "beats": [
+    {
+      "key": "argue",
+      "at": "0:00",
+      "name": "A. Two mates argue",
+      "blurb": "Two mates argue over how the BadCode song goes, each humming a different tune."
+    },
+    {
+      "key": "wall",
+      "at": "0:04",
+      "name": "B. The wall of finals",
+      "blurb": "They break into the studio: a wall of a thousand records labelled final, final 2, FINAL final, final v847 USE THIS ONE."
+    },
+    {
+      "key": "engineer",
+      "at": "0:09",
+      "name": "C. No master",
+      "blurb": "A balaclava'd engineer looks up from the desk: \"Which one? There's no master. There's only the one you heard.\""
+    }
+  ],
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
+  },
+  "moodboard_intro": "Round 1, clean room. All three writers landed on the same three looks, so each column is one look across the whole short: flash snapshot, gouache painting, plasticine. Tap This, Maybe or No; leave a note per shot.",
+  "flow_project": "450ef78e-ccab-4d2c-9072-5b1b8ecfd1fe",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/FJieSkPe2H7jskjr1BKiRW"
+  }
 }

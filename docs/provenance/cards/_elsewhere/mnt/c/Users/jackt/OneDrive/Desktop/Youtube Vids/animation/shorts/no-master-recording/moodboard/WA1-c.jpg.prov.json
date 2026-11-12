@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/WA1-c.jpg",
+ "made": "2026-11-12T16:18:22.924Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 macro photograph of a handmade stop-motion miniature set, plasticine and cardboard, fingerprints visible in the clay, shallow depth of field, lit by one warm desk lamp from the left with a cool blue fill. Two little plasticine men, ordinary blokes in a beanie and a puffer jacket, stand small at the bottom of the frame, seen from behind, gazing up at a ridiculous floor-to-ceiling wall of tiny cardboard shelves holding a thousand miniature cassette tapes, each with a fiddly hand-cut masking-tape label inked in pen. Only a few labels are big enough to read: FINAL, FINAL FINAL, FINAL v847 USE THIS ONE. The top of the wall blurs out of focus. No other text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4f2d0cfb-2e9c-4ca1-a677-8ed24bc3168f"
+}
