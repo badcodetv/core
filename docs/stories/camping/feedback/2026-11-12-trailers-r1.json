@@ -1,0 +1,10 @@
+{
+  "page": "https://claude.ai/artifact/SUr7Uzc2BqpGyYibafGus9",
+  "round": "trailers r1 (version 1794493997-67bb)",
+  "read": "2026-11-12, ArtifactData list picks",
+  "picks": [
+    {"id": "t2", "name": "Two men, one car park", "verdict": "keep", "note": "", "at": "2026-11-12T14:37:04.306Z"}
+  ],
+  "no_vote": ["t1", "t3", "general"],
+  "decision": "Build t2 in Premiere (vertical, music bed, end card). Jack kept it knowing it ends on the AI headline (flagged on the page)."
+}

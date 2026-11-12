@@ -1,0 +1,186 @@
+<title>Camping Serial Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one column of "slate" cards, each a part of the serial: clip left, verdict right; stacks on phones. */
+:root {
+  --bg: #f3f2ef; --card: #ffffff; --fg: #1b1c1e; --muted: #64666b; --line: #dcdad5;
+  --red: #d7262e; --pass: #1f7a4a; --warn: #a86400; --chip: #ecebe7;
+  --display: "Archivo", system-ui, sans-serif; --body: "Archivo", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141517; --card: #1d1f22; --fg: #ecebe8; --muted: #9a9ca1; --line: #2f3236;
+  --red: #ff4d55; --pass: #4fc488; --warn: #f0a640; --chip: #26292d; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #141517; --card: #1d1f22; --fg: #ecebe8; --muted: #9a9ca1; --line: #2f3236;
+  --red: #ff4d55; --pass: #4fc488; --warn: #f0a640; --chip: #26292d; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 64px; }
+.wrap { max-width: 1040px; margin: 0 auto; display: grid; gap: 22px; }
+h1 { font: 800 clamp(26px, 5vw, 40px)/1.05 var(--display); margin: 0; letter-spacing: -0.02em; text-wrap: balance; }
+h1 .dot { color: var(--red); }
+.lede { max-width: 68ch; margin: 0; color: var(--muted); }
+.lede b { color: var(--fg); }
+.flags { display: grid; gap: 8px; margin: 0; padding: 14px 16px; border-left: 3px solid var(--red); background: var(--card); border-radius: 4px; }
+.flags p { margin: 0; max-width: 80ch; }
+.part { background: var(--card); border: 1px solid var(--line); border-radius: 6px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); overflow: hidden; }
+.part.dropped { opacity: .55; }
+.clip { background: #000; display: flex; align-items: center; }
+.clip video { width: 100%; display: block; aspect-ratio: 16 / 9; max-width: 100%; }
+.info { padding: 16px 18px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.num { font: 600 13px var(--mono); color: var(--red); letter-spacing: .06em; }
+.name { font: 800 21px/1.15 var(--display); margin: 0; }
+.tc { font: 400 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.label { font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 2px; }
+.stranger { font-size: 16px; margin: 0; }
+.test { display: inline-block; font: 600 12px var(--mono); padding: 2px 8px; border-radius: 999px; background: var(--chip); }
+.test.pass { color: var(--pass); } .test.warn { color: var(--warn); }
+.hook { font: 600 13px var(--mono); background: var(--chip); padding: 6px 8px; border-radius: 3px; overflow-wrap: anywhere; }
+.said { margin: 0; color: var(--muted); font-size: 14px; }
+.vote { display: flex; gap: 6px; flex-wrap: wrap; }
+.vote button { font: 600 13px var(--body); padding: 7px 14px; border-radius: 4px; border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer; }
+.vote button:focus-visible, textarea:focus-visible, .save:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.vote button[aria-pressed="true"][data-v="keep"] { background: var(--pass); border-color: var(--pass); color: #fff; }
+.vote button[aria-pressed="true"][data-v="change"] { background: var(--warn); border-color: var(--warn); color: #fff; }
+.vote button[aria-pressed="true"][data-v="drop"] { background: var(--red); border-color: var(--red); color: #fff; }
+textarea { width: 100%; box-sizing: border-box; min-height: 56px; font: 14px/1.4 var(--body); padding: 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); resize: vertical; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.save { font: 600 13px var(--body); padding: 7px 16px; border: 0; border-radius: 4px; background: var(--fg); color: var(--bg); cursor: pointer; }
+.save:disabled { opacity: .4; cursor: default; }
+.status { font: 12px var(--mono); color: var(--muted); }
+.general { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; display: grid; gap: 10px; }
+.foot { color: var(--muted); font-size: 13px; max-width: 80ch; }
+@media (max-width: 760px) { .part { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:10px">
+    <h1>Camping, three trailers<span class="dot">.</span></h1>
+    <p class="lede">You said the slices didn't feel like shorts, so these are fast trailers. Each one pulls the best lines from across the whole film, cuts the picture faster than the words, and ends by sending people to the full film. Each takes a different angle. Play them, then tap <b>Keep</b>, <b>Change</b> or <b>Drop</b> and add a note. Nothing goes into Premiere until you've picked.</p>
+  </header>
+
+  <div class="flags">
+    <p><b>These are rough sketches for rhythm and line choice only.</b> They have no music bed, no sound design and no hits yet, and they're 16:9. Whichever you pick gets built properly in Premiere: a music bed under the lines, a vertical crop and a proper end card.</p>
+    <p><b>Every line was cut on word timings from a transcript and checked again for clipped words.</b> One may still sound soft: “That's” in “That's not greed” (Trailer 2).</p>
+    <p><b>My pick: Trailer 1.</b> It tells the whole story in 38 seconds and makes you want the ending. Trailer 3 could go out first as a teaser.</p>
+  </div>
+
+  <main id="parts" class="wrap" style="gap:18px"></main>
+
+  <section class="general">
+    <div class="label">Anything else</div>
+    <textarea id="note-general" aria-label="General note" placeholder="Which goes first, a line I've missed, music…"></textarea>
+    <div class="row"><button class="save" id="save-general" type="button">Save note</button><span class="status" id="status-general"></span></div>
+  </section>
+
+  <p class="foot">Source: Camping story video.mp4 (290 s, 17 Sept). Word timings come from a local transcript. The cut lists are in the repo at design/camping-serial/build_trailers.py and the plan is at docs/marketing/camping-serial-plan.md. Your picks are read back into the repo before anything is acted on.</p>
+</div>
+
+<script>
+const PARTS = [
+  { id: "t1", n: 1, name: "Good business", tc: "Tarquin's rise and fall", len: "38 s",
+    stranger: "A banker bets on people losing their homes, gets rich on empty social housing, takes a psychedelic and screams “that's the economy!”, then wakes up in a tent.",
+    test: "pass", testLabel: "Follows one man start to end",
+    hook: "2008 → good business → 2026 → empty flats → therapy → the trip → the tent → BAD CODE",
+    said: "Ends on the tent city and the BAD CODE plate. No AI headline." },
+  { id: "t2", n: 2, name: "Two men, one car park", tc: "Bob against Tarquin", len: "31 s",
+    stranger: "A man loses his wife on the road; years later he's in a tent outside Waitrose while a rich man in a 4x4 screams at him, and the rich man ends up there too.",
+    test: "warn", testLabel: "Strongest clash; ends on the AI headline",
+    hook: "leave early → glass on the road → get a job, you fuckwit → a sandwich → wank tanks → foresight → BRITAIN'S LAST WORKER REPLACED BY AI",
+    said: "The headline implies who benefits rather than naming it. Your call. Swear words stay out of the title." },
+  { id: "t3", n: 3, name: "Rapid fire", tc: "one line per cut", len: "18 s",
+    stranger: "Eight punchlines in eighteen seconds: a prick, good business, easy money, a sandwich, empathy, a fuckwit, a dog, the economy.",
+    test: "warn", testLabel: "Fastest, least story",
+    hook: "This prick… · good business · easy money · couldn't give a fuck · empathy is not an emergency · get a job · what am I, a dog? · that's the economy",
+    said: "It's an advert for the tone, not the plot. Works best as a teaser before the other two." },
+];
+
+const state = {};  // id -> {verdict, note}
+const main = document.getElementById("parts");
+
+function el(tag, attrs = {}, text) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+for (const p of PARTS) {
+  const card = el("article", { class: "part", id: "card-" + p.id });
+  const clip = el("div", { class: "clip" });
+  const v = el("video", { controls: "", playsinline: "", preload: "metadata", src: "trailers/" + p.id + ".mp4" });
+  clip.append(v);
+  const info = el("div", { class: "info" });
+  const head = el("div", { class: "head" });
+  head.append(el("span", { class: "num" }, "TRAILER " + p.n), el("h2", { class: "name" }, p.name), el("span", { class: "tc" }, p.tc + " · " + p.len));
+  const s = el("div");
+  s.append(el("div", { class: "label" }, "A stranger gets"), el("p", { class: "stranger" }, p.stranger));
+  const t = el("span", { class: "test " + p.test }, (p.test === "pass" ? "✓ " : "! ") + p.testLabel);
+  const h = el("div");
+  h.append(el("div", { class: "label" }, "The beats"), el("div", { class: "hook" }, p.hook));
+  const said = el("p", { class: "said" }, p.said);
+  const vote = el("div", { class: "vote", role: "group", "aria-label": "Verdict for trailer " + p.n });
+  for (const [val, lab] of [["keep", "Keep"], ["change", "Change"], ["drop", "Drop"]]) {
+    const b = el("button", { type: "button", "data-v": val, "aria-pressed": "false", id: "v-" + p.id + "-" + val }, lab);
+    b.addEventListener("click", () => { setVerdict(p.id, state[p.id]?.verdict === val ? "" : val); save(p.id); });
+    vote.append(b);
+  }
+  const ta = el("textarea", { id: "note-" + p.id, "aria-label": "Note for trailer " + p.n, placeholder: "What would you change?" });
+  const row = el("div", { class: "row" });
+  const sb = el("button", { class: "save", type: "button", id: "save-" + p.id }, "Save note");
+  sb.addEventListener("click", () => save(p.id));
+  row.append(sb, el("span", { class: "status", id: "status-" + p.id }));
+  info.append(head, s, t, h, said, vote, ta, row);
+  card.append(clip, info);
+  main.append(card);
+}
+
+function setVerdict(id, val) {
+  state[id] = { ...(state[id] || {}), verdict: val };
+  for (const b of document.querySelectorAll("#card-" + id + " .vote button")) b.setAttribute("aria-pressed", String(b.dataset.v === val));
+  document.getElementById("card-" + id).classList.toggle("dropped", val === "drop");
+}
+function setStatus(id, msg) { const s = document.getElementById("status-" + id); if (s) s.textContent = msg; }
+
+let db = null;
+const ids = [...PARTS.map(p => p.id), "general"];
+for (const id of ids) setStatus(id, "Connecting…");
+
+async function save(id) {
+  if (!db) { setStatus(id, "Can't save here: open the page signed in to claude.ai."); return; }
+  const note = document.getElementById("note-" + id).value;
+  const verdict = state[id]?.verdict || "";
+  state[id] = { verdict, note };
+  setStatus(id, "Saving…");
+  try {
+    await db.collection("picks").doc(id).set({ verdict, note, at: new Date().toISOString() });
+    setStatus(id, "Saved");
+  } catch (e) { setStatus(id, "Not saved: " + (e && e.code ? e.code : "error") + ". Try again."); }
+}
+
+(async () => {
+  const timer = setTimeout(() => { if (!db) for (const id of ids) setStatus(id, "Notes can't be saved in this view."); }, 10000);
+  try { db = await window.claude?.use?.("db"); } catch { db = null; }
+  clearTimeout(timer);
+  if (!db) { for (const id of ids) setStatus(id, "Notes can't be saved in this view."); return; }
+  for (const id of ids) setStatus(id, "");
+  let first = true;
+  db.collection("picks").onSnapshot(snap => {
+    for (const d of snap.docs) {
+      const data = d.data() || {};
+      const ta = document.getElementById("note-" + d.id);
+      if (!ta) continue;
+      if (first || document.activeElement !== ta) ta.value = data.note || "";
+      if (d.id !== "general") setVerdict(d.id, data.verdict || "");
+      else state.general = { note: data.note || "" };
+      if (data.at) setStatus(d.id, "Saved " + new Date(data.at).toLocaleString([], { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }));
+    }
+    first = false;
+  }, e => { for (const id of ids) setStatus(id, "Couldn't load saved notes (" + (e && e.code || "error") + ")."); });
+})();
+document.getElementById("save-general").addEventListener("click", () => save("general"));
+</script>

@@ -1,0 +1,3 @@
+# media is rebuilt by the scripts here (build_trailers.py, premiere_pieces.py); the repo keeps the words
+*.mp4
+*.jpg
