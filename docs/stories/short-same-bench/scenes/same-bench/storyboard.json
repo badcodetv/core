@@ -1,0 +1,8 @@
+{"acts": [{"id": "all", "title": "Same Bench", "beats": ["veteran", "nurse", "button"]}],
+ "frames": [
+  {"n": 1, "act": "all", "title": "Title card: 1919", "look": "card", "stills": [], "line": "made in the edit (same_bench_dates.py)"},
+  {"n": 2, "act": "all", "title": "A. 1919: the veteran", "look": "silent-horror", "line": "FAT CAT: Forget it.", "stills": ["A2-b"], "anim": 0},
+  {"n": 3, "act": "all", "title": "Title card: 2026", "look": "card", "stills": [], "line": "made in the edit"},
+  {"n": 4, "act": "all", "title": "B. Now: the nurse", "look": "silent-horror", "line": "FAT CAT: Forget it.", "stills": ["B3-a"], "anim": 0},
+  {"n": 5, "act": "all", "title": "C. The button: hat tip", "look": "silent-horror", "line": "CAPTION: Same bench.", "stills": ["C3-a"], "anim": 0}
+ ]}
