@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/B3-b.jpg",
+ "made": "2026-11-12T11:56:35.952Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "One surviving frame of a lost horror reel, upright portrait framing, yet the scene is the present day. The very same cast-iron bench and the very same gas lantern on its bracket overhead, flame pouring straight down like a spotlight; nothing about the bench has changed. Far behind in the dark, barely there, the glowing glass doors of a modern hospital and the boxy shape of a parked ambulance. The character sits on the left half of the bench in the identical pose: one gloved hand patting a small bare brass plaque on the backrest, a second newer bare plate screwed just beneath the first, his face toward us, eyes lost in the brim's shadow, the same courteous little smile. On the right end a young nurse in hospital scrubs under a cardigan, a lanyard round her neck, is half risen to leave, shoulders slumped, her tired face drifting out of the lamplight. Static camera at seated eye level, square-on, medium shot of the pair low in the frame, a void of black above the lantern. Shot on hand-cranked early nitrate stock even though it is today: whites blown out against pure black, coarse clotted grain, vertical hairline scratches, dust flecks, soft edges, a round iris mask closing in at the corners. Monochrome. Both plates bare metal; no lettering anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "SB Fat Cat"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b0fa4f9b-d62a-43ab-aa20-2a2b89a95cae"
+}

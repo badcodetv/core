@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/A2-e.jpg",
+ "made": "2026-11-12T13:46:30.121Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A single frame lifted from an old family tape, filmed one July evening around 2001 and dubbed to disc years later: soft and smeary, low in detail, colours bleeding a fraction past their edges, a fizz of grain in the darker areas. The setting is the turning circle at the end of a council-house close, rows of pebble-dashed semis with low brick walls and wheelie bins, the road surface still warm. A loose kickabout is under way, goals marked by two heaps of dumped sweatshirts, a mix of lanky teenagers and small kids in baggy shorts and plain knock-off football tops chasing a scuffed ball, while one boy of about twelve peels away after scoring, both arms stretched out like wings, shouting at the sky. Off to the side a woman in her fifties in a cardigan and slippers stands on her front step cradling a mug of tea, grinning at them. Seen from the far end of the street, zoomed all the way in so the houses compress into a flat stacked backdrop and the players overlap, the framing slightly tilted and handheld, as if a dad held it up from behind his garden gate. The sun sits low right behind the game: hair and shoulders outlined in glowing gold, a broad hazy flare smeared across the upper half, the sky blown to a milky cream that eats into the rooftops, and long skinny shadows running down the tarmac towards us. Shadows are grey and murky rather than black, reds slightly overcooked, the whole picture steeped in apricot, honey and washed-out rose. Candid, unposed, nobody aware of the lens: the feeling that the holidays have weeks left and it will never get dark. The image is clean of any writing, overlay, timecode or emblem; tops are blank and house numbers too blurry to read. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a8f59200-5509-483a-b49e-5e32f8cf4018"
+}

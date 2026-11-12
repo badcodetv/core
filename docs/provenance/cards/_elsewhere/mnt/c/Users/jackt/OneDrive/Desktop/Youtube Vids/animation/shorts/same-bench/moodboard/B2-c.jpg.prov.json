@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/B2-c.jpg",
+ "made": "2026-11-12T11:47:59.119Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Still grabbed from a 1998 home-console horror game running at 320 by 240 pixels, a little before dawn: one public bench on a cracked tarmac path, watched by a camera fixed high up on a lamp post and pitched sharply downward, the angle of a cheap surveillance feed nobody checks. Everything is built from few polygons, with blunt angular limbs and corners that do not quite meet; tiny low-resolution textures are stretched across them and bend in the wrong directions, so the slats, the litter bin and the strip of grass look smeared and rippled; every shade is broken into a coarse checkerboard dither and every outline steps like a staircase. Two or three metres past the bench a dense grey-green haze stops the world dead, flat and featureless, filling the upper portion of the picture as blank space. On the left end of the bench a worn-out nurse in faded blue scrubs slumps forward with her elbows on her knees, lit by a single cold cone of light, her body as blocky and blurred as the bin beside her, her face only a few muddy pixels. On the right end, impossibly, sits an obese gentleman wearing a tall black silk hat and a heavy frock coat, rendered with photographic sharpness as though he belongs to a different, far more expensive machine: crisp wool weave, pin-sharp watch chain, damp pink skin, heavy chins, a thin patient smile, pale wet eyes lifted straight to the lens. His fingers rise lazily toward her, palm out, brushing her away. The sharpness is what makes him monstrous. Colours of mould, wet cement and old pond water, the nurse's light a dim fluorescent white. No words, numbers, logos, health bars or on-screen interface. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8b3fd19b-1585-4510-ad08-8630e296581e"
+}

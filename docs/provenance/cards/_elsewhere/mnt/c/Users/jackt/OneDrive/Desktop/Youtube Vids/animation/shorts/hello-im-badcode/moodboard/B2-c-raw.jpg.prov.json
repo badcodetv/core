@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/B2-c-raw.jpg",
+ "made": "2026-11-12T13:48:43.718Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A night photo from a travelling funfair around 2003, snapped on a cheap pocket digital camera with its built-in xenon flash going off at point-blank range, the sort of hasty holiday shot that later turns up in a happy throwback slideshow. Centre of the frame, seen from about the waist up and from slightly beneath, stands a figure in a plain dark-navy knitted ski mask and thick woollen gloves, body square to the lens, gazing straight out through the eye holes with mild, patient politeness; the knit is unpatterned and the whole face area is evenly lit, sharp and clear. In one gloved hand it holds a huge cloud of bubblegum-pink candyfloss on a paper stick; from the other hangs a tied clear plastic bag of water with a single orange goldfish won at a hook-a-duck stall. The flash makes the figure bright, flat and a little overexposed, with a hard dark shadow tucked close behind it, while everything further back falls away into night: the waltzer cars and the light-bulb arches of the rides are only long wobbly trails of magenta, lime, gold and electric blue where the slow shutter dragged them during a small hand shake, floating in a deep black sky speckled with coloured digital noise. Over-saturated early sensor colour, a cool blue tint on the flash-lit wool, purple fringing around the brightest lamps, mild softness at the edges, frame leaning a few degrees. Canopies and booths are plain blank fabric, and nothing in the image carries letters, numbers, signs or symbols. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "966050b1-ebac-41b5-aeb7-f37f816dd74e"
+}

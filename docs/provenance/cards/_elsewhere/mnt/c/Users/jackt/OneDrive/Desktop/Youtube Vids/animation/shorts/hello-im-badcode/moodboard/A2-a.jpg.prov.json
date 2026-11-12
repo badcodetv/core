@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/A2-a.jpg",
+ "made": "2026-11-12T13:43:55.003Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A single paused frame from a worn home-video tape recorded on a family camcorder in about 1998, cropped tall: a narrow back garden behind a red-brick British terraced house on a hot afternoon, patchy yellowing lawn, a wooden fence with a neighbour's washing line beyond it, and a cheap plastic oscillating sprinkler throwing a glittering fan of water across the grass. Two children, a girl of about seven in a faded pink swimsuit and a younger boy in baggy blue swim shorts, are caught mid-leap through the spray with arms flung out, mouths open in shrieking laughter, wet hair stuck to their foreheads. A child's bike lies on its side on the lawn by a paddling pool, and at the near edge of frame a parent's bare forearm and hand reach in, slightly blurred, as if pointing them out. The camera is held at an adult's waist height, wobbling and tilted a few degrees off level, the focus hunting so everything is gently soft. The look is analogue consumer video: low resolution, smeared fine detail, a faint horizontal smudge where the reds and pinks bleed past their edges, lifted milky blacks, blown-out white sky, slightly muted greens and warm yellow cast, a soft halo of glare around the water droplets, fine tape noise. Ordinary, unposed, a little clumsy, plainly joyful. No text, numbers, date stamp or on-screen markings anywhere in the image. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ce8a3fda-b11a-4395-85d7-2fbe94f233b3"
+}

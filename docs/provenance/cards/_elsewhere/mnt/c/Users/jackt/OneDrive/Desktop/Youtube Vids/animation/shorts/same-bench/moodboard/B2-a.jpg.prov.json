@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/B2-a.jpg",
+ "made": "2026-11-12T11:46:11.654Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical night photo, lens wide open so only the closest subject holds focus. Close to camera, crisp down to the drizzle beads on her eyelashes, an exhausted nurse in wrinkled scrubs slouches against the armrest of a public bench, eyes shut, head lolling sideways, staff badge on a lanyard tangled around her collar, a paper face mask dangling from an ear, palms upturned and slack on her thighs. The bench is cast iron and timber slats, its green coat blistered and scabbed off in flakes over brown rust, puddles sitting in the gaps. Seated further down that very bench, a little behind her and smeared by the shallow focus into soft blobs, waits an enormous figure: dark bulky coat, a tall stovepipe hat, a pale round face with a broad white grin, and a raised palm flicking toward her in a dismissive wave. Out of focus he is mostly a heavy black silhouette; you have to squint to be sure he is real, and he seems to lean slightly closer than anyone should. One sodium-vapour streetlamp behind them drowns everything in flat amber monochrome, so colours die and skin turns waxy; its glow swells into a hazy halo in the fine mist, and beyond its reach the park sinks into murky darkness. The top third is empty black wet sky dissolving into haze. Palette of amber, rust brown and inky black, a hint of cold teal left in her scrubs; visible grain, bloom around the lamp, no text, signage or writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "3468892d-01e6-4f31-bf5c-8c54b4f29e70"
+}

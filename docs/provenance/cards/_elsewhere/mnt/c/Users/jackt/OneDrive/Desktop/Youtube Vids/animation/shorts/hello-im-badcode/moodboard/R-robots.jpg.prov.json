@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/R-robots.jpg",
+ "made": "2026-11-12T15:12:30.028Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical photograph looking down from a high gantry over an enormous dark automated warehouse at night: hundreds of identical squat orange robots gliding on a grid floor beneath towering shelving, each casting a small pool of light, no humans anywhere, the grid stretching into blackness. Cold industrial LED light, teal and orange, deep shadows, sharp detail, ominous scale, the look of a still from an investigative documentary. No text, labels or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a4d952ca-69b1-4e4b-82f4-bb7901f76ae8"
+}

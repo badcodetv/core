@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/B2-b.jpg",
+ "made": "2026-11-12T11:46:39.907Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical black-ink drawing on off-white paper, a single face pressed so close to the viewer that it overflows every border: a plump, well-fed gentleman, ears and temples cropped away, nothing at all behind him but his own skin. Across the top edge lies the stiff brim of a tall silk hat, sealing him in like a coffin lid. His brow and both eye sockets are dug out with layer upon layer of short broken hatching strokes, each patch running a new direction, stacked until they read as near-solid black pits; lower down, across his cheeks, nose and heavy jowls, the strokes thin out into dense pinprick stipple, like pores under a magnifier. From the darkness of the left socket one eye stares out, rendered with fanatical precision, wet lid rims, single lashes, a hard white highlight on the cornea, and curled small inside that wet shine is his reflection of a lone exhausted nurse in rumpled scrubs sitting hunched on a slatted park bench, the only other living soul shown. His smile is courteous and much too broad, stretching nearly ear to ear, lips pulled thin over a tidy row of tiny matching teeth, cheeks puffed into hatched folds. Nib lines scratchy, occasionally splitting, the pressure relentless and obsessive. The drawing ends abruptly beneath his doubled chin and starched wing collar, leaving a wide strip of untouched paper along the bottom. Dead-centre, eye-level framing, claustrophobically near, shadowless even light where all darkness comes from the pen. Pure line and dot, no grey washes, no colour, no lettering. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "299d02f9-1bb1-49b6-a7fb-2b7a52cac1eb"
+}

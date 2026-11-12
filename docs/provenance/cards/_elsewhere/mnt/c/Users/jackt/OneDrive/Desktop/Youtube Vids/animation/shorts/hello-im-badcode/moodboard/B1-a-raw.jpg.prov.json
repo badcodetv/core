@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/B1-a-raw.jpg",
+ "made": "2026-11-12T13:26:47.631Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical portrait shot of a cramped, almost empty council waiting office, seen square-on and dead level from the eye height of someone sitting down, the camera locked off at the far wall so the whole room reads like a stage set built in front of the lens. Exactly on the centre line, one figure sits bolt upright behind a small bare municipal desk of pale laminate on thin steel legs, visible head to shoes beneath the desk. The figure wears a plain charcoal knitted ski mask covering the whole head and neck, a dull grey-green office jacket buttoned to the collar, and dark wool gloves; the gloved hands lie folded one over the other on the empty desktop. On the mask, circling only the wearer's left eye hole, sits a thin crisp white ring, and inside it, at roughly two o'clock, a small red triangle with softened corners pointing downward. The eyes in the holes hold the lens steadily, calm and courteous, as if about to apologise for a very long delay. Behind, a blank wall in washed-out sage, a round white clock whose face has no hands at all, and in one corner a rubber plant in a beige pot, its leaves sagging toward the lino. Beside the desk, a single moulded plastic visitor chair stands empty, turned toward the figure. Speckled grey linoleum underfoot. Everything is sharp from the desk's front edge to the back wall, as through a moderately wide 35mm lens with no distortion. Light is perfectly even and shadowless, a pale overcast glow from ceiling panels with no visible source, leaving skin-pale surfaces, no highlights and no dark corners anywhere. Colours are drained and chalky: putty grey, faded mint, dusty olive, beige, off-white; the one saturated note is the small red triangle. Still, faintly ridiculous and quietly sad, like a polite interview that has already gone badly. No text, signs, posters, labels or lettering anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ce25e8f6-4cbd-4124-bccf-f4c572aaddf8"
+}

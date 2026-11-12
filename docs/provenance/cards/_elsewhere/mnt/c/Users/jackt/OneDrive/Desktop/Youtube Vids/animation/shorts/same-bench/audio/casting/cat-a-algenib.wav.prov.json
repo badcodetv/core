@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/audio/casting/cat-a-algenib.wav",
+ "made": "2026-11-12T12:09:10+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Forget it.\n\n...Forget it.",
+ "inputs": {
+  "profile": "# Audio Profile\nA wealthy old English gentleman in his sixties, plummy upper-class southern accent, a low purr with gravel in it. Velvet contempt: amused, unhurried, never raises his voice.\n\n## Scene:\nLate night on a park bench under a gas lamp. He is speaking to the man beside him without looking at him.\n\n## Sample Context:\nHe has said this to a great many people and enjoys it a little more each time.\n",
+  "profile_file": "docs/stories/short-same-bench/scenes/same-bench/voices/profiles/cat-a-algenib.md"
+ },
+ "settings": {
+  "voice": "Algenib",
+  "temperature": 1,
+  "channels": 2
+ }
+}

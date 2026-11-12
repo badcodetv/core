@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/A2-b.jpg",
+ "made": "2026-11-12T13:44:32.617Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical family snapshot from about 2002, shot on a cheap silver compact digital camera with a low-resolution CCD sensor, its tiny pop-up flash firing straight at the table: a crowded terraced-house lounge at night during a kid's sixth birthday. Framed tight and lopsided, horizon leaning to the right, the birthday girl sits low in the frame with a gappy grin and a crooked paper crown, lips pursed at five wobbling candles on a supermarket sponge cake smeared with blue icing. Behind her a scrum of cousins, a dad in a football shirt and a nan in a cardigan whoop with arms in the air; one lad sticks his tongue out, one aunt stares back with glowing red pupils. The flash flattens every face into bright shiny skin and blown-out white napkins, casts a hard black halo-shadow on the woodchip wallpaper, then dies within a couple of metres so the back of the room drops into a murky tangerine haze from a single standard lamp. Clutter crammed into the corners: helium balloons drifting against the artex ceiling, a party-ring biscuit plate, paper cups of fizzy pop, ripped gift wrap over a loud paisley carpet. Colour cranked and garish, warm-yellow cast, greenish noise blotches in the shadows, crunchy compression smearing the dark edges, a little soft from a plastic lens. Chaotic, loud, joyful. Leave the frame free of writing, date stamps, numbers or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "fc24f6e7-2259-40b8-8950-73f8e5918e44"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/C3-a.jpg",
+ "made": "2026-11-12T11:57:27.951Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "One surviving frame of a lost horror reel, upright portrait framing, a close medium shot. The character alone on the cast-iron bench, framed from the knees up and square to the lens, directly under a gas lantern whose flame pours straight down onto him from the darkness above. He has just lowered a folded newspaper into his lap with one gloved hand and, with the other, lifts his tall hat a few inches off his head toward the viewer in a slow, polite tip; even raised, the brim keeps his eyes sunk in black shadow, and the courteous little smile has widened by a fraction. The empty slats on either side of him fade into night. Hand-cranked early nitrate print: whites blown out against pure black, coarse clotted grain, vertical hairline scratches, flecks of dust, a softly vignetted round iris mask pressing in from the corners, the top third of the frame left as black void. Monochrome. No lettering anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "SB Fat Cat"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "f205332f-01fc-4822-aef2-94def0dc2a98"
+}

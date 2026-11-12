@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/A2-b.jpg",
+ "made": "2026-11-12T11:44:37.389Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "One surviving frame of a lost 1919 horror reel, upright portrait framing. Night in a public garden, everything gone except a cast-iron bench and a single gas lantern hanging on a bracket straight above it, so its flame pours down like a spotlight from the ceiling of the dark. On the bench, directly under that flame, a bloated plutocrat in a stovepipe silk hat, black frock coat strained over his belly, a gold fob chain catching one spark. The overhead glare drops the hat brim's shadow across his eyes, leaving two bottomless black pits where they should be, while below them a powdered, chalk-pale face holds a courteous little smile that glows almost white; his lip rouge prints as ink, as red always did on that blue-only stock. Wearily, a gloved hand dangles and flaps once at the man beside him: a hollow-cheeked infantryman home from the front, army greatcoat too big, one leg ending at the knee with the trouser folded and pinned, a plain wooden crutch laid across his lap. The veteran sits past the edge of the lamplight and dissolves into the night, only his fingers on the crutch and the line of one cheekbone faintly showing. Static camera at seated eye level, square-on, a medium shot of the pair placed in the lower half of the frame, the upper third an unbroken black void above the lantern kept clear for a caption. The emulsion of a hand-cranked early nitrate print: blown-out whites slamming into pure black with almost nothing in between, coarse clotted grain, hairline scratches running top to bottom, flecks of dust, edges going soft, a round iris mask darkening all four corners. Monochrome, photochemical, no smooth digital finish, no lettering anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "00064fd8-03f9-4527-8436-4b252eecd28b"
+}

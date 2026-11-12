@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/R-foodbank.jpg",
+ "made": "2026-11-12T15:11:58.874Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical documentary photograph from behind and slightly above: a long queue of people in hooded coats waiting in heavy rain along a brick church wall at dusk for a community food bank, carrier bags in hand, umbrellas, nobody facing the camera, faces hidden by hoods and distance. Sodium streetlight on wet tarmac, cold blue dusk, muted palette, telephoto compression stacking the queue, fine grain, serious news photography. No readable signs, text or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a40a9ecf-df2e-4ca3-bb8b-d45cc4f41a3e"
+}

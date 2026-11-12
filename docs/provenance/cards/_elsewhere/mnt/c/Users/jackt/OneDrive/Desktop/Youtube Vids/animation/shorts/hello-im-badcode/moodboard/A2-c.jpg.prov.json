@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/A2-c.jpg",
+ "made": "2026-11-12T13:45:06.054Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A snapshot from a 1998 family day trip to the English coast, the sort of print that sat in a shoebox for twenty years and was scanned slightly skewed: shot with a single-use plastic film camera, fixed focus, one click of the winding wheel per frame. A gusty bright noon on a steep bank of grey pebbles. Front and centre a beaming grandad, shirt untucked, trouser legs turned up to the shins, pale bony ankles in the stones, punches a ninety-nine-style whippy cone up at the sky as if he has just won the cup final, white cream sliding down over his knuckles. Two little ones at his knees, a girl in a pink anorak with her hood whipped back and a boy in a football shirt, swing sand-pails and squint, one doubled over laughing; a nan perched on a stripy deckchair behind them, hand clamped on her hat. Behind the family a ragged line of candy-striped canvas breaks in faded red, blue and yellow strains against the wind on wooden stakes, and past them a slate-green sea chops under a sky bleached almost white. Held at chest height by an aunt, the whole frame leaning a touch to the left, heads nearly clipped at the top, a smudge of out-of-focus pink skin just intruding at the lower right edge. Flat overhead sunlight, a stop too bright, so the highlights flare and the pebbles go chalky; skin glows warm butter-yellow while sky and water drift towards cool aqua; shadows muddy with a faint green tint. The plastic lens keeps nothing truly crisp, softness growing towards the edges, the four corners sinking into dusky falloff, a thin rainbow fringe on bright edges, gritty consumer-film grain, low washed contrast. Unposed and mid-shout, imperfect and loved. The picture carries no writing of any kind: clean corners without printed numbers, plain clothing, unbranded cones and pails, nothing lettered on the windbreaks. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "39d1794f-d4a8-49a4-8790-f85f31ec9472"
+}

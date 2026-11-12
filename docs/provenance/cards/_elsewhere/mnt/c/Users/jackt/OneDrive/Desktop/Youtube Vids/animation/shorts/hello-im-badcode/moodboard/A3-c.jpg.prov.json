@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/A3-c.jpg",
+ "made": "2026-11-12T14:28:57.784Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Looking straight down from directly above onto an unmade bed with a crumpled white duvet, an outfit laid out flat as if someone is planning their Saturday: a red and black checked flannel shirt spread open with its sleeves flung wide, a pair of pale blue skinny jeans torn open at both knees, a thin black velvet choker coiled in a loose loop at the collar, gold-framed aviator sunglasses with mirrored lenses, a pair of scuffed white canvas lace-up trainers placed toe to toe, and a crown of small pink and cream silk flowers resting where a head would be. Beside the clothes, balanced on the duvet, sits a round coconut-shell bowl of deep purple acai with neat rows of banana coins, blueberries, raspberries and a scatter of golden granola, a spoon resting across the rim. Soft early-morning sun pours in from a window on the left, throwing long warm shadows across the fabric creases. The frame is tilted a few degrees off level and slightly crooked, casually snapped on a phone held at arm's length for a camera-roll dump. The colour treatment is a heavy mid-2010s app filter: blacks lifted to a milky charcoal, highlights pushed honey-gold, colours turned up loud so the flannel red and the acai purple almost glow, a faint warm vignette and fine digital grain. No people, no faces, no hands, no writing, labels or logos on anything. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "9c787eb0-aa0f-4b5f-a527-ac9bfa37dc0f"
+}

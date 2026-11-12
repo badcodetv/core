@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/R-meter.jpg",
+ "made": "2026-11-12T15:15:08.384Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical photograph: a single domestic gas and electricity prepayment meter on a bare hallway wall at night, its small display glowing red, a stack of unopened final-demand envelopes on the doormat beneath it, a radiator gone cold, breath-mist in the air, one bare bulb. Close, eye level, 50mm, cold blue shadows and the red glow, grain, documentary realism. No readable text or numbers anywhere, no people. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "da38039b-fb69-41b5-9edc-8cd96734a5fa"
+}

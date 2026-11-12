@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/R-highstreet.jpg",
+ "made": "2026-11-12T15:11:28.310Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical documentary photograph, rainy grey late afternoon on a British town high street: a long row of shops with their shutters down and plywood over the windows, faded fascias left blank, a pound-shop sign peeling away with no readable letters, puddles on cracked paving, one flickering streetlamp coming on, a lone shopping trolley on its side. Shot on a 35mm lens at standing height, cold flat light, desaturated slate and brown palette, fine grain, the look of serious news photography. No people, no readable text or logos anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "06276b64-4a83-42ea-8dff-9d22187c0473"
+}

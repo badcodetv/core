@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/R-pylons.jpg",
+ "made": "2026-11-12T15:14:33.121Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical photograph in thick fog at dawn: a forest of high-voltage pylons and a sprawling electrical substation, transformers humming, cables vanishing up into the white murk, one arc of blue electric discharge crackling across an insulator. Shot from ground level looking up, wide lens, cold desaturated grey-blue palette with the electric blue flash the only colour, grain, ominous documentary realism. No people, no text or signs. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "2ab761e0-ee49-46eb-afe1-484d68c796a0"
+}

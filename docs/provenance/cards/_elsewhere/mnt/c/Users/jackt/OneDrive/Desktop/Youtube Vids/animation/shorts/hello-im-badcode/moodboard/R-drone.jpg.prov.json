@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/R-drone.jpg",
+ "made": "2026-11-12T15:13:01.600Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical photograph at blue-hour dusk: a black quadcopter surveillance drone hangs motionless in the foreground, its red and white lights glowing, a camera pod angled down at a sprawling British housing estate of brick terraces and tower blocks below, lit windows, wet roofs, mist. Low angle looking up past the drone, telephoto, cold teal palette with the drone lights the only warm points, fine grain, documentary realism. No people visible, no text or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "24c7c502-2dc1-4617-8c39-3f489963727b"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/video/sb-03-C3-a.mp4",
+ "made": "2026-11-12T12:14:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off static camera on a tripod: the frame does not move, zoom or reframe at any point. One continuous shot, no cuts, a single moment.\n\n[00:00-00:01] He holds the hat-tip: his gloved hand stays at the brim, lifting the top hat a fraction, the closed smile fixed. The gas lamp above him flickers faintly; film grain and dust specks dance across the black-and-white image.\n\n[00:01-00:03] Slowly and smoothly, his head turns to his left, towards the empty half of the bench on the right of the frame, as if someone has just sat down there out of view. Only the head and neck move; his heavy body, the newspaper in his lap and the bench stay where they are. His hand stays raised at the hat brim throughout the turn. It is the same face the whole way round: the eyes stay deep in the shadow under the brim, the mouth stays closed in the same smile.\n\n[00:03-00:05] He holds still, head turned in profile towards the empty seat, smiling at it, hat still tipped. The lamp light flickers once more; the grain and the slight frame-flutter of old silent film carry on. The seat beside him stays empty and he is the only figure in the frame. Silence, no words spoken, no lettering anywhere.\n\nThe camera stays perfectly still to the last frame, keeping the grainy, flickering black-and-white silent-film look of the first frame.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/C3-a.jpg",
+ "why": "Jack 2026-11-12 storyboard r1 anim 3b; clean-room prompt (cleanroom/clips-c.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/C3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-same-bench/scenes/same-bench",
+  "key": "03",
+  "frame": 3,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T12:13:29.183Z"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/B3-d.jpg",
+ "made": "2026-11-12T14:32:44.374Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Tall portrait frame of a snug little bedroom in the small hours, viewed from a few steps back across the room at sitting height, slightly off to one corner. In the window bay, a figure lounges sideways along a wide padded sill, back propped on one wall of the recess, both knees bent up, feet in fluffy socks, the whole body loose and sunk into the cushions like it has nowhere to be. Its head is wrapped completely in a dark navy knitted balaclava, solid wool where eyes, nose and mouth would be, not a sliver of skin showing. A broad loop of bright white yarn is sewn around the full oval of the face, and up near the top of that loop, on the right as we look at it, sits a little red triangle with soft rounded points, its tip aimed downward. Huge padded headphones clamp over the wool. It wears a baggy mustard hoodie with the sleeves pushed down over dark knitted gloves, and both gloved hands cup a fat speckled mug from which a lazy ribbon of steam rises. Its head is tilted back against the glass in pure contentment, angled three-quarters to us. Behind it the window is beaded and streaked with rain, and through the wet pane a far-off skyline of stacked flats and towers glimmers in bubblegum pink, lilac and electric blue, softened into dreamy smears of colour. On the near side of the room: a small wooden desk with a bendy lamp pouring syrupy orange light onto an open notebook and a crooked pile of library books, a leafy monstera in a terracotta pot, a strand of tiny warm bulbs draped along a shelf, a rumpled duvet just catching the edge of frame. Soft hand-drawn animation look, cel-style flat shading with gentle gradients, faint paper grain, glowing halos around each bulb, warm amber indoors meeting cool violet night at the window frame, low contrast and hushed, the cosy calm before a word is said. Nothing written anywhere in the picture: no words, signage, labels or brand marks, and no pets. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "307d9cc9-cf35-4ae4-b1db-03e139a6c440"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/B3-b.jpg",
+ "made": "2026-11-12T14:31:38.271Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Tall portrait snapshot taken in a festival meadow during the summer of 2016, the sun a hand's width above a treeline and sinking fast. Trampled grass, hay-coloured dust lifting in the backlight, sagging lines of warm bulb lights strung on timber posts above, half of them just flickering on. Tissue confetti in coral, gold and aqua tumbles through the air, frozen mid-drop. All around, a jubilant crowd turned away from us and melted into soft blur: bare shoulders, arms flung up, crochet tops, cut-off denim, braided hair woven with crowns of artificial daisies and peonies, nobody looking back. Exactly in the middle distance, the single crisp thing in the whole picture, a lone figure stands square to the lens, utterly motionless, arms hanging, a gloved fist gripping a burning sparkler that spits a tiny white fizz. Its head is covered by a dark knitted balaclava with no openings for eyes, nose or mouth, so not a speck of skin is visible; a bold white ring is stitched all the way round the face, and inside that ring, up high and toward the viewer's right, sits one little red downward-pointing triangle whose corners are rounded off. Black gloves, plain dark layers, nothing mechanical. Captured at shoulder height on a cheap mid-2010s phone lens, a touch wide, the low sun parked just past the right edge so a huge amber-and-rose flare with polygon ghosts smears across the dancers. Graded like a heavily filtered upload of that year: milky raised shadows, cranked saturation, tangerine highlights, a pink wash, fine grain, a gentle dark vignette. Happy chaos melting everywhere, one rigid sharp silhouette at its centre. Keep the frame free of words, signs, banners and printed marks. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "48b2590c-239c-462b-ae20-8ca7e02fec55"
+}

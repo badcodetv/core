@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/R-dcbuild.jpg",
+ "made": "2026-11-12T15:13:34.058Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical aerial photograph at night of a vast new data-centre campus being built on cleared farmland: several windowless grey halls the size of aircraft hangars, cranes, rows of gas turbines with heat shimmer and exhaust plumes glowing orange under floodlights, fresh tarmac, high fences, the dark countryside around it. Drone height, wide lens, harsh floodlight against black sky, steel blue and sodium orange, sharp detail, documentary realism. No people, no text, no company logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b37743b1-48e7-46ee-91ed-c9cef610c42f"
+}

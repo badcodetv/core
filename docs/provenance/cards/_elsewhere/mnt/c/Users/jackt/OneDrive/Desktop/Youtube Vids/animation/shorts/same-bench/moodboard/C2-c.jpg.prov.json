@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/C2-c.jpg",
+ "made": "2026-11-12T11:49:52.928Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Portrait-format oil painting in a meticulous, technically exact dystopian surrealist manner: a vast, deep view looking down from high and far away over the remains of a public park, now a desert of drifted rust-coloured powder under a dull brown noon. Bent iron fencing curls over like dead fern fronds and sinks into the dunes; a lone stripped tree, charred and forked, claws at the haze; a fallen cast-iron lamp standard has turned to grey cinder along half its length and is crumbling where it lies. Everything far off melts into airborne grit, layered in fading veils of atmospheric perspective. The sun is a pale bruise behind the murk and the light is flat, heavy and shadowless. Colour is strictly limited to four neighbouring earth tones, yellow ochre, burnt sienna, raw umber and iron-oxide red, with a crusted, granular paint surface and dirty, unevenly overlapping hatch marks that read as grime built up over years. Precisely in the middle of the canvas, very small, sits an unbroken wooden park bench, and on it a stout, heavy-jowled gentleman wearing a tall silk stovepipe hat, an immaculate frock coat, a clean white collar and pale kid gloves, his skin rosy and smooth, untouched by the dust, the single bright, cool note in the entire painting. Knees crossed, he flicks the fingers of his right hand outward in a bored brush-off towards the vacant seat and the dead land, wearing a thin, contented smile, though there is not a living soul for miles to receive it. Overhead, the choking dun haze rolls on unbroken and featureless across a wide band of the picture, a blank stretch of murky air kept bare so words can be laid over it afterwards. The image holds no lettering, words, signs or numerals of any kind. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c3a44b94-6819-4a03-a789-29df43702666"
+}

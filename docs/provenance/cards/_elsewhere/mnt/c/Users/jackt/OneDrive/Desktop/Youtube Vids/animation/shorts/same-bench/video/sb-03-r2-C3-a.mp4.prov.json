@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/video/sb-03-r2-C3-a.mp4",
+ "made": "2026-11-12T12:37:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off static camera on a tripod: the frame does not move, zoom or reframe at any point. One continuous shot, no cuts, a single moment.\n\n[00:00-00:01] He holds the hat-tip: his gloved hand stays at the brim on the left side of the frame, the top hat lifted a fraction, the closed smile fixed. The gas lamp above him flickers faintly; film grain and dust specks dance across the black-and-white image.\n\n[00:01-00:03] Slowly and smoothly, his head turns towards the right-hand side of the frame as we see it: away from his raised hat hand, towards his other hand resting on the newspaper and the long empty stretch of bench running off the right edge of the picture, as if someone has just sat down there out of view. Only the head and neck move, a three-quarter turn; his heavy body, the newspaper and the bench stay where they are, and the hand stays raised at the brim.\n\n[00:03-00:05] He holds still, face angled to the right of the frame, smiling at the empty seat. It is exactly the same face as the first frame the whole time: the same round cheeks, the same pale mask-like skin, the same closed dark-lipped smile, and his eyes stay two black hollows, sunk in the deep shadow under the hat brim; no eyeball, no pupil, no white ever shows. The lamp light flickers once more; the grain and the slight frame-flutter of old silent film carry on. The seat beside him stays empty and he is the only figure in the frame. Silence, no words spoken, no lettering anywhere.\n\nThe camera stays perfectly still to the last frame, keeping the grainy, flickering black-and-white silent-film look of the first frame.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/C3-a.jpg",
+ "why": "Jack timeline r1: 'he should look to the right not the left thanks'; clean-room cleanroom/clips-r2.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/C3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-same-bench/scenes/same-bench",
+  "key": "03-r2",
+  "frame": 3,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T12:36:40.090Z"
+ }
+}

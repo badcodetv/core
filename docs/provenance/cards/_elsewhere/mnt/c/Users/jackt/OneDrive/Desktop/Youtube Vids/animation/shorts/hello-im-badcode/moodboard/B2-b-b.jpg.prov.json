@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/B2-b-b.jpg",
+ "made": "2026-11-12T14:02:16.639Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A still lifted from somebody's family videotape, late 1990s, a birthday do in a cramped front room filmed by an uncle with a palm-sized tape camcorder. Twisted paper streamers in red, green and yellow droop from the light fitting, a balloon has drifted against the woodchip wallpaper, and a folding table under a plastic party cloth holds sausage rolls on a foil tray, a bowl of crisps, a hedgehog of cheese-and-pineapple sticks stuck in half a grapefruit, a wobbly orange jelly and paper cups. Behind the table the relatives are dancing to something on the stereo, cardigans and loud patterned shirts swinging, their arms and faces dragged into soft combed smears by the motion; a grandad in a paper crown is laughing at the back. Mid shot, the lens wide and slightly bowed at the frame edges. Closest to camera, filling the lower middle of the portrait frame, stands one extra guest in a plain dark-grey knitted ski mask and plain knitted gloves, nothing of them uncovered. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. One gloved hand holds a sagging paper plate with a single sausage roll on it. They have turned their head to meet the camcorder dead on, perfectly still, polite, patient, as though about to say thank you for having me. Nobody behind them has clocked it. The camcorder's built-in lamp blasts a flat, frontal, shadowless pool of white light onto the masked head and shoulders so the knit texture, the white ring and the red triangle are crisp and evenly lit, while the room behind drops off into warm tungsten amber and muddy brown with a soft dark vignette. Tape-era texture: colours soft and smeared sideways past their edges, a red-orange glow bleeding off the foil and the bright cups, shadows noisy and crawling with grain, blacks milky and lifted, a slight handheld tilt. Warm, daft, happy and homely, with one guest who does not belong. The picture carries no words, digits, date overlay or symbols of any kind.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "d73e695c-b22e-4df0-922d-ed31e3146d4e"
+}

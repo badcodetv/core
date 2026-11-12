@@ -69,3 +69,8 @@ __pycache__/
 
 # Scene mood-board pages embed every still (MBs); rebuild with scripts/scene/build-moodboard.py
 docs/stories/**/moodboard.html
+
+# Timeline/clips page media: rebuilt by scripts/scene/build-timeline.py etc. from the media
+# folder (Desktop / D:), and already published on the page. Never in git.
+design/**/timeline/media/
+design/**/clips/video/

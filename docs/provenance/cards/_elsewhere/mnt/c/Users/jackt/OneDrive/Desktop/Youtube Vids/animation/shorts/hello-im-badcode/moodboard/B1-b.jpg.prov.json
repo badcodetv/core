@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/B1-b.jpg",
+ "made": "2026-11-12T13:31:37.788Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the balaclava so it is the same design as the mask in the second image: the same thin white ring around the wearer's left eye hole and the same small red triangle with rounded corners inside the ring at the upper right, pointing down, at the same size and position relative to the eye. Keep the mask's own colour, and keep everything else in the first image exactly the same, preserving the original style, lighting, framing and composition. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-scenes/hello-im-badcode/B1-b-raw.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-scenes/hello-im-badcode/B1-b-raw.jpg",
+   "/home/jackt/.cache/badcode-scenes/hello-im-badcode/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "fa164f31-3375-4006-b2cc-915bd00e5b4f"
+}

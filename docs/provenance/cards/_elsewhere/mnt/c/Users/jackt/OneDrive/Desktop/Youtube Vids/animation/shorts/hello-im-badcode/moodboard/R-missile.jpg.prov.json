@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/R-missile.jpg",
+ "made": "2026-11-12T15:14:03.942Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical photograph at night: a ballistic missile rising from a launcher in a dark field, a blinding white-orange exhaust flame lighting a towering column of smoke from below, sparks and dust blasting outward, the rest of the frame inky black. Long telephoto from far away, slight motion blur on the plume, high contrast, grain, the look of a grainy news agency photo. No people, no markings, no text, no flags. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "31b715d0-98b5-4d8a-b03b-c101e826eff6"
+}

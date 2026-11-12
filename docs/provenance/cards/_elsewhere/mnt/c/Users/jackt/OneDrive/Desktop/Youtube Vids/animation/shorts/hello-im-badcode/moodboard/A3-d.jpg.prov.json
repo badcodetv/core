@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/A3-d.jpg",
+ "made": "2026-11-12T14:29:29.517Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A tall portrait photograph of an empty converted warehouse flat on a golden late afternoon, nobody in it, the camera tucked down in one corner of the room at roughly waist height with a slightly wide lens so the old brick walls lean in a little and the ceiling beams run away overhead. Big multi-pane steel-framed industrial windows fill the back wall and pour thick honey-coloured sun across scuffed wide floorboards, with specks of dust drifting through the light. Bare amber filament bulbs dangle on long black cords from the rafters and a loose string of warm fairy lights is looped along the exposed brick. Nearest the lens, a low coffee table made of rough salvaged planks holds a glass preserving jar stuffed with daisies and cornflowers, a second jar glowing with tea lights, a cream mug covered in a tiny repeating curled-moustache pattern, and a stack of record sleeves in plain brown kraft card. Behind it a cracked tan leather sofa with a chunky knitted throw and a small ukulele resting against one arm. A turntable sits on an upturned crate in the midground with its lid up. By the door, a skinny single-speed bicycle with a mint-green frame leans against the brick. One wall is painted matte blackboard black and wiped completely clean, and every other surface stays bare and unprinted, so the edit can lay its own bright captions over it later. The whole frame is graded like a phone snapshot from 2012 run through a faded vintage filter: lifted milky blacks, creamy yellow-beige highlights, slightly washed mint and peach midtones, edges going gently soft and a soft dark vignette in the corners. Hopeful, cosy and a touch smug, the feeling of a cheap first flat when everything was going to work out. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6c5aa90d-2897-4bb5-9bb8-2d76c7e2baf2"
+}

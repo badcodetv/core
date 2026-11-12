@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/video/sb-02-r2-B3-a.mp4",
+ "made": "2026-11-12T12:35:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off static camera on a tripod, fixed frame, no camera movement at all: one continuous unbroken shot from the first frame. A silent horror film look, black and white, heavy film grain, gentle projector flicker, dust and scratches, the street lamp's pool of light on the bench. The bench is solid cast iron and wooden slats; nobody passes through it, over it or behind it. In the background the ambulance's roof beacon turns slowly the whole time, its pale beam sweeping across the hospital front. [00:00-00:01] Stillness. The man in the top hat sits motionless, smiling straight into the lens, mouth closed, eyes fixed on us. [00:01-00:02] Without looking away from us, his gloved right hand, the one nearest the nurse, makes one slow, lazy flick of the fingers towards her, a bored brush-off, then drops back to rest. His smiling face stays frozen like a mask, mouth closed. [00:02-00:05] The tired nurse pushes herself up off the seat and steps forward, away from the bench, onto the open pavement in front of it. She turns side-on, facing the right-hand edge of the frame, and walks forwards, face first, along the pavement in front of the bench, past the iron armrest, and out of the picture on the right. She stays in front of the bench the whole way and never goes back towards it. [00:05-00:06] The man has not moved: same closed-mouth smile, same unblinking stare into the lens, the empty half of the bench beside him, the ambulance beacon still turning behind. Silence, only a faint night hum, no words spoken, no lettering anywhere. The camera stays completely still for the whole shot, one single take. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/B3-a.jpg",
+ "why": "Jack timeline r1: 'she walks through the bench redo this please thanks'; clean-room cleanroom/clips-r2.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/B3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-same-bench/scenes/same-bench",
+  "key": "02-r2",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T12:33:44.640Z"
+ }
+}

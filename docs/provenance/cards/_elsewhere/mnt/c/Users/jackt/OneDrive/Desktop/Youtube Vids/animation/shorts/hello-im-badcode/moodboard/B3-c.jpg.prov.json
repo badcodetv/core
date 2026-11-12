@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/B3-c.jpg",
+ "made": "2026-11-12T14:32:12.364Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Full-length portrait, camera level with the chest, of one lone figure planted dead centre on a single seamless sweep of pale peach-apricot paper that runs unbroken from floor to top edge, flat as an empty meme template. The figure's head is wrapped in a snug charcoal knitted balaclava that is completely closed, unbroken wool over the brow, the nose bridge and the lips; a broad loop of white stitching rings the entire face; inside that loop, up toward the top on the viewer's right, a little red triangle, corners rounded off, its apex aiming downward. Grey knit gloves, so not a patch of skin is visible. It wears a baggy oversized oatmeal cardigan that drowns the wrists, hanging open over a plain cream tee, loose khaki cargo trousers rumpling over chunky off-white trainers. Body language of total unbothered calm: both gloved fists buried deep in the cardigan pockets, hips cocked so the weight rests on one leg, the other knee soft, shoulders slack and rounded, the masked head leaning a few degrees as though faintly amused by the whole world. Straight-on 50mm look, head to soles in frame, the figure sitting low and compact with generous empty peach space overhead and either side for captions to go on later. Big soft frontal studio light, almost shadowless, just a faint grey shadow pooling under the trainers, matte knit texture readable. Palette of peach, oatmeal, khaki, charcoal and white, with that one red mark as the only accent. The paper sweep stays blank and unmarked, nothing written or printed on it or on the clothes. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "73530f32-4957-418e-9819-3dda3f5e90ad"
+}

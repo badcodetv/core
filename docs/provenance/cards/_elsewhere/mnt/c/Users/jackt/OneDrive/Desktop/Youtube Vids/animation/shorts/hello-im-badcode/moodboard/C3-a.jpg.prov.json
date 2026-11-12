@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/C3-a.jpg",
+ "made": "2026-11-12T14:33:27.969Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Tall portrait frame, the final resting screen of an optimistic mid-2000s desktop paradise as dusk arrives. Across only the lowest fifth rises a single smooth grassy mound, rounded like a pillow, its lawn so even it looks polished, glowing electric lime on the sunlit crown and sliding into deep emerald along the side that turns away from the light. Above it opens a colossal unbroken sky, glossy as lacquered glass: rich cyan overhead, softening through bright seawater aqua, then settling into a hushed dusky blue that meets the grass, with one faint pastel shimmer of aurora low along the skyline. Everything above the mound for the top two thirds is empty, smooth gradient sky, a clean resting place left for something to appear later. Five or six clear soap bubbles drift upward and off to the left from behind the crest, each with a bright pane of reflected light and an oily rainbow rim, the highest ones dwindling to pinpricks. Planted dead centre on the crest, tiny in the frame and visible from boots to crown, a solitary person faces straight into the camera with arms resting at the sides: dark zip jacket, dark trousers, knitted dark gloves, and a close-fitting charcoal wool balaclava covering the whole head with no openings for eyes, nose or mouth, so no skin is visible anywhere. A thick white stitched ring outlines the entire face, and high inside that ring, on the right-hand side of the picture, one small red downward-pointing triangle with softly rounded corners. Long-lens view from far off and slightly below, level horizon, the person crisp, a narrow rim of golden evening light along the shoulders, sleek computer-rendered finish with gentle glow and bloom, candy-bright colours muted to a calm hush. Mood: serene, courteous, a held breath at the end of a promise, the quiet after someone says watch this space. No lettering, signs, logos or symbols anywhere in the image. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0b1e88ff-7043-4738-a3af-f52c81719b79"
+}

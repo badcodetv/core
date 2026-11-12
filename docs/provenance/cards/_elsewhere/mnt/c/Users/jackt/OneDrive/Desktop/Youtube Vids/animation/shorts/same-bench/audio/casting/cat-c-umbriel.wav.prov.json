@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/audio/casting/cat-c-umbriel.wav",
+ "made": "2026-11-12T12:09:58+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Forget it.\n\n...Forget it.",
+ "inputs": {
+  "profile": "# Audio Profile\nA soft, prissy country squire from East Anglia, late fifties, a high, slightly wheezy voice kept to a near-whisper, as if his lips are at your ear, with a small giggle tucked inside the words.\n\n## Scene:\nLeaning in towards a stranger on a bench in the dark, as if telling a secret.\n\n## Sample Context:\nPolite, almost tender, which is what makes it horrible.\n",
+  "profile_file": "docs/stories/short-same-bench/scenes/same-bench/voices/profiles/cat-c-umbriel.md"
+ },
+ "settings": {
+  "voice": "Umbriel",
+  "temperature": 1,
+  "channels": 2
+ }
+}

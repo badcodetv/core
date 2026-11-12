@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/footage/nasa/aitken-large.mp4",
+ "made": "2026-11-12T15:25:33+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "sourced",
+ "tool": "find-footage",
+ "why": "real footage, licence and receipt in docs/footage/README.md"
+}

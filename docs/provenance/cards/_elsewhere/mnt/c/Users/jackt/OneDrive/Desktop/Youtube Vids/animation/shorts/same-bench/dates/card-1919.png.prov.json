@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/dates/card-1919.png",
+ "made": "2026-11-12T12:23:03+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/same_bench_dates.py",
+ "why": "Jack 2026-11-12: date on screen for each time; picked the title card"
+}

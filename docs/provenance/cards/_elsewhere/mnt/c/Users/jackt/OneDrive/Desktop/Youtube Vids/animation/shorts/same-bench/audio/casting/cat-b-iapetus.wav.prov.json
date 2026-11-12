@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/audio/casting/cat-b-iapetus.wav",
+ "made": "2026-11-12T12:09:33+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Forget it.\n\n...Forget it.",
+ "inputs": {
+  "profile": "# Audio Profile\nA Yorkshire mill owner in his seventies, flat vowels, dry and bone-tired of other people. Clipped, bored, every word a door closing.\n\n## Scene:\nA cold park at night. Someone has come to ask him for something, and he has already stopped listening.\n\n## Sample Context:\nHe thinks being asked is the rude part.\n",
+  "profile_file": "docs/stories/short-same-bench/scenes/same-bench/voices/profiles/cat-b-iapetus.md"
+ },
+ "settings": {
+  "voice": "Iapetus",
+  "temperature": 1,
+  "channels": 2
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/A1-b.jpg",
+ "made": "2026-11-12T13:25:03.254Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical snapshot taken at night inside the private dining saloon of a vast luxury yacht, the kind of photo someone takes with a cheap point-and-shoot and its built-in flash fired straight ahead. The camera stands at the head of a very long banquet table at seated eye height and looks down its full length toward the dark end of the room. The table is still set for a feast that finished years ago: crumpled white linen gone grey, rows of champagne coupes and tall flutes coated in a fur of pale dust, a silver platter holding a shallow puddle and a few rounded lumps where an ice swan once stood, half-eaten towers of fruit dried to brown husks, a toppled candelabra, napkins dropped on the carpet. Gilded chairs with crimson velvet seats are shoved back at odd angles and one lies on its side, as if the whole party stood up at once and walked out. The flash blasts the foreground in flat bright white, makes the gold leaf and crystal glare, and throws hard black shadows of the chairs and glasses onto the lacquered walls; everything past the middle of the table falls off fast into murk. Behind the far end, a wall of floor-to-ceiling glass shows only pitch-black water and sky, broken by three or four small orange fires burning along a distant shoreline. Saturated, slightly cheap colour: hot reds, brassy gold, sickly green tint in the shadows, a touch of film grain. No people anywhere. Bottles and plates carry no labels, no text, no signs or lettering in the frame. Funny, gaudy and quietly mournful at the same time. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0d6669b5-1b88-4b65-921e-45a9c51d5a00"
+}

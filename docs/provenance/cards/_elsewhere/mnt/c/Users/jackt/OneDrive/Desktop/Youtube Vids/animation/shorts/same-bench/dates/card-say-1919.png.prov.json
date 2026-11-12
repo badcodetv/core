@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/dates/card-say-1919.png",
+ "made": "2026-11-12T12:38:21+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/same_bench_dates.py",
+ "why": "Jack timeline r1: dialogue card fix"
+}

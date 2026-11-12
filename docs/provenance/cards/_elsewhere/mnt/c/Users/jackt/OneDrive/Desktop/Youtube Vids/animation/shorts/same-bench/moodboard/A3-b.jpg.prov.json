@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/same-bench/moodboard/A3-b.jpg",
+ "made": "2026-11-12T11:55:35.178Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "One surviving frame of a lost 1919 horror reel, upright portrait framing. Night in a public garden: a cast-iron bench beneath a single gas lantern hung on a bracket directly overhead, its flame pouring straight down like a spotlight into the dark. The character sits on the left half of the bench; one gloved hand rests flat on a small blank brass plaque screwed to the middle of the backrest, patting it absently, while his face stays turned toward us and away from his neighbour, the brim's shadow swallowing his eyes, a courteous little smile below. On the right end, a hollow-cheeked infantryman in an oversized army greatcoat is half risen from the seat, leaning on a plain wooden crutch, one trouser leg folded and pinned at the knee, his face sinking out of the lamplight into the night. A torn scrap of bunting lies in the dirt by the bench foot. Static camera at seated eye level, square-on, medium shot of the pair in the lower half of the frame; the upper third is pure black void above the lantern. Hand-cranked early nitrate print: blown-out whites crashing into pure black, coarse clotted grain, hairline scratches running top to bottom, dust flecks, soft edges, a round iris mask darkening the corners. Monochrome. The plaque is bare metal; no lettering anywhere in the frame. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "SB Fat Cat"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "bdb754c6-50a5-4274-b1c6-990aa39c1a1b"
+}
