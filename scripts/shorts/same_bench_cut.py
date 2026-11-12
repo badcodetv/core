@@ -33,13 +33,13 @@ CARD = 1.2
 CLIP_B = VID / ('sb-02-r2-B3-a.mp4' if (VID / 'sb-02-r2-B3-a.mp4').exists() else 'sb-02-B3-a.mp4')
 CLIP_C = VID / ('sb-03-r2-C3-a.mp4' if (VID / 'sb-03-r2-C3-a.mp4').exists() else 'sb-03-C3-a.mp4')
 LOGO = REPO / 'docs/brand/logo/badcode-stacked-reversed-2400.png'
-SHOTS = [('card1919', 'card', DATES / 'card-1919.png', 0.0, 1.0, None),
+SHOTS = [('card1919', 'card', DATES / 'card-1919.png', 0.0, 1.6, None),
          ('veteran-in', 'clip', VID / 'sb-01-A2-b.mp4', 0.0, 0.8, None),
-         ('ask1919', 'card', DATES / 'card-say-1919.png', 0.0, 2.2, None),
+         ('ask1919', 'card', DATES / 'card-say-1919.png', 0.0, 3.6, None),
          ('veteran', 'clip', VID / 'sb-01-A2-b.mp4', 0.8, 3.9, (0.20, 1.60, 0.15, 'Forget it.')),
-         ('card2026', 'card', DATES / 'card-2026.png', 0.0, 1.0, None),
+         ('card2026', 'card', DATES / 'card-2026.png', 0.0, 1.6, None),
          ('nurse-in', 'clip', CLIP_B, 0.0, 0.8, None),
-         ('ask2026', 'card', DATES / 'card-say-2026.png', 0.0, 2.2, None),
+         ('ask2026', 'card', DATES / 'card-say-2026.png', 0.0, 3.6, None),
          ('nurse', 'clip', CLIP_B, 0.8, 3.9, (2.90, 4.40, 0.15, 'Forget it.')),
          ('button', 'clip', CLIP_C, 0.0, 4.4, None),
          ('logo', 'logo', LOGO, 0.0, 1.8, None)]
@@ -50,7 +50,7 @@ SEE = {'card1919': 'Title card: 1919.', 'veteran-in': 'The soldier beside him on
        'veteran': 'He flicks the soldier away without moving his lips; the soldier limps out of the light.',
        'card2026': 'Title card: 2026.', 'nurse-in': 'The nurse beside him on the bench.', 'ask2026': 'Dialogue card: "You clapped for us every Thursday."',
        'nurse': 'The same flick; the nurse walks off towards the hospital.',
-       'button': 'He tips his hat, then turns to the empty seat on the right.', 'logo': 'The BadCode logo and name.'}
+       'button': 'He tips his hat, then turns to the empty seat on the right, where they sat (mirrored).', 'logo': 'The BadCode logo and name.'}
 TITLES = {'card1919': '1919', 'veteran-in': 'A. The soldier', 'ask1919': '"Homes fit for heroes."', 'veteran': 'A. "Forget it."',
           'card2026': '2026', 'nurse-in': 'B. The nurse', 'ask2026': '"You clapped for us…"', 'nurse': 'B. "Forget it."',
           'button': 'C. The next one', 'logo': 'BadCode'}
@@ -81,7 +81,10 @@ def main():
             sp = CUT / f's{i}-{beat}.wav'
             ff('-f', 'lavfi', '-i', f'anullsrc=r=48000:cl=stereo', '-t', d, sp)
         else:
-            ff('-ss', tin, '-t', d, '-i', src, '-an', '-vf', f'{FIT},scale=in_range=full:out_range=limited,format=yuv420p', *ENC, out)
+            # Round 3 (Jack, timeline r2: "he should look to where a person would be like in the last two clips"):
+            # C is mirrored so he turns to screen right, where the soldier and the nurse sat.
+            flip = 'hflip,' if beat == 'button' else ''
+            ff('-ss', tin, '-t', d, '-i', src, '-an', '-vf', f'{flip}{FIT},scale=in_range=full:out_range=limited,format=yuv420p', *ENC, out)
             sp = CUT / f's{i}-{beat}.wav'
             ff('-ss', tin, '-t', d, '-i', src, '-vn', '-af', f'loudnorm=I={SFX_LUFS}:TP=-6,afade=t=in:d=0.05,afade=t=out:st={d - 0.05}:d=0.05',
                '-ar', 48000, '-ac', 2, sp)

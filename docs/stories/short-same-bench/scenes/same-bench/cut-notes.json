@@ -1,18 +1,36 @@
-{"round": 2,
+{
+ "round": 3,
  "plan": [
-  {"h": "Why it felt weird", "items": ["\"Forget it.\" answered a question nobody asked: we never saw what they were promised, so 'thanked, then forgotten' didn't land, and the second \"Forget it.\" just sounded like a repeat."]},
-  {"h": "The fix (your pick: silent-film text cards)", "items": ["Before each \"Forget it.\", a dialogue card with the ask: 1919 \"They promised us homes fit for heroes.\" (the real 1918 promise), 2026 \"You clapped for us every Thursday.\" Now the second \"Forget it.\" is the punchline.", "Order: 1919 card, the soldier, his card, the brush-off; 2026 card, the nurse, her card, the brush-off; he turns to the next one; logo."]},
-  {"h": "Your notes", "items": ["B re-rolled so she walks round the bench, not through it.", "C re-rolled so he turns to the right, eyes kept in shadow.", "\"Same bench.\" caption removed.", "The BadCode logo and name at the end (the real logo file)."]},
-  {"h": "You decide", "items": ["About 20 s now. To get nearer 15 s: shorter cards, or drop the date cards and put the year on the dialogue cards."]}
+  {
+   "h": "Round 3",
+   "items": [
+    "Title cards held long enough to read: dates 1.6 s, the promise cards 3.6 s.",
+    "C mirrored so he turns to screen right, to the seat where the soldier and the nurse sat. No new Flow clip: the mirror is free and exact."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "It runs 26 s now that the cards can be read. To shorten: put the year on top of each promise card and drop the separate date cards (saves about 3 s).",
+    "Music: none yet."
+   ]
+  }
  ],
  "replies": {
   "at306": "Re-rolled B (new prompt from a sealed writer, told the bench is solid and she walks off round its end). New material: one Flow clip.",
   "at433": "Caption removed. C re-rolled so he turns to the right-hand side of the frame, with his eyes kept in shadow. New material: one Flow clip.",
-  "at444": "Added: 1.8 s end card with the real BadCode logo and name (docs/brand stacked reversed). Edit only."
+  "at444": "Added: 1.8 s end card with the real BadCode logo and name (docs/brand stacked reversed). Edit only.",
+  "at484": "Fixed by mirroring C: he now turns to screen right, where the soldier and the nurse sat in A and B. Edit only, no credits. (Side effect: his hat hand swaps sides and the newspaper print is mirrored, unreadable either way.)",
+  "at77": "Held longer: the 1919 and 2026 cards 1.6 s, the two promise cards 3.6 s each (about the time to read seven words twice). Edit only."
  },
  "kai_round1": {
   "at306": "she walks through the bench redo this please thanks",
   "at433": "remove the same bench caption, also he should look to the right not the left thanks",
   "at444": "at the very end we need the badcode logo and name thanks"
+ },
+ "kai_round2": {
+  "at484": "he is still looking the wrong way, he should look to where a person would be like in the last two clips thanks",
+  "at77": "the title cards need to be on the screen long enough to read them thanks.",
+  "general": "the title cards make this better well done thanks"
  }
 }

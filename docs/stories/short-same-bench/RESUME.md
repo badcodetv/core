@@ -1,6 +1,6 @@
 # Same Bench (short #2): resume
 
-**State 2026-11-12 pm:** rough cut 2 (22 s; dialogue cards before each "Forget it.", B and C re-rolled, logo end card) on the timeline page https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC, awaiting Jack's notes. Not in Premiere yet.
+**State 2026-11-12 pm:** rough cut 3 (26 s; readable cards, C mirrored; dialogue cards before each "Forget it.", B and C re-rolled, logo end card) on the timeline page https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC, awaiting Jack's notes. Not in Premiere yet.
 
 | What | Where |
 | --- | --- |
@@ -12,4 +12,4 @@
 | Cut | `scripts/shorts/same_bench_cut.py` → Desktop `Youtube Vids\animation\shorts\same-bench\cut\` |
 | Mood board | https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP |
 
-**Open:** 22 s vs ~15 s target (drop date cards, year on the dialogue cards?); no music; "homes fit for heroes" wording check; build into Premiere when Jack asks; nothing uploaded.
+**Open:** 26 s vs ~15 s target (drop date cards, year on the dialogue cards?); no music; "homes fit for heroes" wording check; build into Premiere when Jack asks; nothing uploaded.

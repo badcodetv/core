@@ -136,5 +136,24 @@
   "url": "https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC",
   "what": "rough cut 2 (22 s): dialogue cards, B and C re-rolled, caption out, logo end",
   "rebuild": "python3 scripts/shorts/same_bench_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-same-bench/scenes/same-bench design/same-bench/timeline"
+ },
+ {
+  "at": "2026-11-12T12:46:58+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "what": "timeline notes r2 read",
+  "decided": [
+   "Jack: 'the title cards make this better well done'; cards long enough to read; C look where the person would be"
+  ],
+  "feedback": "feedback/timeline-r2",
+  "feedback_docs": 5
+ },
+ {
+  "at": "2026-11-12T12:46:58+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC",
+  "what": "rough cut 3 (26 s): readable cards, C mirrored",
+  "rebuild": "python3 scripts/shorts/same_bench_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-same-bench/scenes/same-bench design/same-bench/timeline"
  }
 ]
