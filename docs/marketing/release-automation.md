@@ -5,7 +5,24 @@ make a post, that that means publish it on YouTube and Instagram and everything 
 music, SoundCloud, Spotify … it feels like we have more flexibility over such tools if we wire them directly
 into you."
 
-Status: **seed**. Researched 2026-11-12 (two marketing-researcher passes, about 25 searches); nothing built.
+Status: **parked by Kai, 2026-11-12. YouTube first.** Researched 2026-11-12 (two marketing-researcher passes,
+about 25 searches); nothing built.
+
+## Kai's ruling (2026-11-12)
+
+"Let's stick to YouTube for the moment … once we come to it, we will build a release tool that will combine
+automatic APIs with then manual instructions … I'll come back to this thread once we've got all the actual
+content onto YouTube. And then from there, we can use that as a reference for what we're actually publishing
+elsewhere."
+
+- **Now:** get all the content onto YouTube, through the `youtube` MCP and the `youtube-channel` skill.
+- **Later:** one **release tool** that, per platform, either posts through the official API (where this page
+  says it can) or writes the exact manual steps for a person to follow (TikTok, the distributor, Spotify's
+  pitch). Built once the YouTube channel is full.
+- **YouTube is the reference:** what's on the channel (`docs/youtube/channel.json`) is the list of what gets
+  published elsewhere, and its titles, descriptions and AI line are the starting words for each platform.
+- Re-check this page's facts when the work restarts: platform rules move fast (TikTok's rules were updated
+  2026-10-27; X's pricing changed in April 2026).
 Tags: **confirmed** = read on the official page; **reported** = vendor or secondary page; **unclear**.
 
 ## The answer per platform

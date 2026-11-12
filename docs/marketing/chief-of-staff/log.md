@@ -3,6 +3,15 @@
 Every ruling and every weekly review, newest first. One entry per event, a few lines each.
 Format: `## YYYY-MM-DD — what` then who said what, in their words where possible.
 
+## 2026-11-12 — Kai: YouTube first; one release tool later
+
+Kai: "let's stick to YouTube for the moment … once we come to it, we will build a release tool that will
+combine automatic APIs with then manual instructions … I'll come back to this thread once we've got all the
+actual content onto YouTube. And then from there, we can use that as a reference for what we're actually
+publishing elsewhere." The Meta tool came off the next list and its decision off the board; the research stays
+in [`../release-automation.md`](../release-automation.md), parked with this ruling. "Jack: is this plan right?"
+went back onto the board.
+
 ## 2026-11-12 — Kai: research automating the release across every platform
 
 Kai: "if we were able to kind of, say, make a post, that that means publish it on YouTube and Instagram and
