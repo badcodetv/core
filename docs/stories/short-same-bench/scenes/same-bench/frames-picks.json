@@ -1,0 +1,27 @@
+{
+ "title": "Same Bench Frames",
+ "eyebrow": "Same Bench · frames in your pick (A2-b, the lost silent-film frame)",
+ "heading": "One look, every beat",
+ "intro": "Everything is now in the silent-horror look you picked, and the fat cat is the same man in every frame (cast from A2-b). Pick one per row, or leave a note. The dates are added in the edit, not drawn by Flow: pick how they appear.",
+ "sections": [
+  {"h": "The frames", "lede": "Script 1B: he pats the plaque, 'Forget it.', they leave; then the hat tip.", "groups": [
+   {"slot": "a-1919", "title": "A. 1919: the veteran", "line": "\"Forget it.\" (pats the plaque)", "kind": "image", "opts": [
+    {"id": "A2-b", "src": "img/A2-b.jpg", "label": "A2-b: your pick as it is", "warn": "no plaque pat; veteran seated"},
+    {"id": "A3-a", "src": "img/A3-a.jpg", "label": "A3-a: pats the plaque, veteran rises to go", "warn": "veteran shows two legs (the pinned leg was lost)"},
+    {"id": "A3-b", "src": "img/A3-b.jpg", "label": "A3-b: pats the plaque, lamp straight overhead", "warn": "veteran shows two legs"}]},
+   {"slot": "b-now", "title": "B. Now: the nurse", "line": "\"Forget it.\" (same pat, a second plate under the first)", "kind": "image", "opts": [
+    {"id": "B3-a", "src": "img/B3-a.jpg", "label": "B3-a: hospital and ambulance behind, nurse seated", "warn": "lamp on a post, not the bracket"},
+    {"id": "B3-b", "src": "img/B3-b.jpg", "label": "B3-b: same bracket lamp, nurse rising to go, two plates", "warn": ""}]},
+   {"slot": "c-button", "title": "C. The button: he tips his hat to us", "line": "Caption: \"Same bench.\"", "kind": "image", "opts": [
+    {"id": "C3-a", "src": "img/C3-a.jpg", "label": "C3-a: closer, newspaper in lap, hat raised high", "warn": ""},
+    {"id": "C3-b", "src": "img/C3-b.jpg", "label": "C3-b: wider, smaller tip, more empty bench", "warn": ""}]}
+  ]},
+  {"h": "The dates", "lede": "Made in the edit with ffmpeg, so they are exact and never misspelt. Today is shown as 2026.", "groups": [
+   {"slot": "dates", "title": "How the date appears", "line": "1919, then 2026", "kind": "image", "opts": [
+    {"id": "card", "src": "img/card-1919.jpg", "label": "card: a silent-film title card before each scene", "warn": "adds about 1 s per date"},
+    {"id": "card26", "src": "img/card-2026.jpg", "label": "card (2026)", "warn": ""},
+    {"id": "burn", "src": "img/burn-1919.jpg", "label": "burn: the year set over the picture, top of frame", "warn": "no extra time"},
+    {"id": "burn26", "src": "img/burn-2026.jpg", "label": "burn (2026)", "warn": ""}]}
+  ]}
+ ]
+}

@@ -33,5 +33,24 @@
   "url": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
   "what": "mood board r2: nine ominous-horror takes (clean room r3, run on Jack's go)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-same-bench/scenes/same-bench design/same-bench/moodboard.html"
+ },
+ {
+  "at": "2026-11-12T11:58:46+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/VTCNLN9fxScUCpudJWHJkQ",
+  "what": "frames in the locked A2-b look + date treatments",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-same-bench/scenes/same-bench/frames-picks.json design/same-bench/frames/index.html"
+ },
+ {
+  "at": "2026-11-12T11:58:46+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "what": "votes read",
+  "decided": [
+   "Jack voted A2-b; 'Make everything in the same style as i picked, we need the date to be on screen for each time.'"
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 1
  }
 ]
