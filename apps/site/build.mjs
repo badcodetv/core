@@ -58,7 +58,7 @@ const nav = `<nav aria-label="Channels"><ul>
 <li><a href="/government">The BadCode Government</a>: <a href="/government/2">live</a>, <a href="/government/3">every policy</a>, <a href="/government/4">the record</a>, <a href="/government/5">the arguments</a></li>
 <li><a href="/about">About BadCode</a> and <a href="/text/100">BadCode Text</a></li>
 </ul></nav>`;
-const follow = `<h2>Follow BadCode</h2><ul>${C.socials.map(s => `<li>${s.url ? `<a href="${esc(s.url)}">${esc(s.name)}</a>` : `${esc(s.name)} (soon)`}</li>`).join('')}</ul><p>${esc(A.ai)}</p><p>${esc(A.sign)} &copy; 2026 BadCode</p>`;
+const follow = `<h2>Follow BadCode</h2><ul>${C.socials.map(s => `<li>${s.url ? `<a href="${esc(s.url)}">${esc(s.name)}</a>` : `${esc(s.name)} (soon)`}</li>`).join('')}</ul><p>${esc(A.ai)} <a href="/how-we-made-it/">The full account</a></p><p>${esc(A.sign)} &copy; 2026 BadCode</p>`;
 const story = (s, i) => `<article><h2>${esc(s.title)}</h2><p>${esc(s.blurb)}</p><p>Film: ${s.film ? `<a href="https://www.youtube.com/watch?v=${esc(s.film)}">watch on YouTube</a>` : 'coming to YouTube'}. Song: ${esc(s.song)}.</p></article>`;
 const MARKS = [['test', 'Has its test', 'Not ready: no test yet'], ['undo', 'Has an undo', 'No undo'], ['prediction', 'Makes a prediction the world will mark', 'No prediction'], ['argued', 'Argued against, on the record', 'Not argued over yet']];
 const plainBody = {
@@ -79,7 +79,7 @@ const plainBody = {
   live: () => `<h1>The government, live</h1><p>Every policy is proposed by a minister, attacked by an opposition on a different AI model, checked by a statistician who refuses anything that can't be measured, and answered by the minister: conceded and changed, or argued back. A human signs off every change. ${G.debates.length} policies have been argued so far.</p>${G.debates.map(d => `<h2><a href="/government/${d.id}">${esc(d.title)}</a></h2><ul>${d.points.map(x => `<li><strong>${x.who === 'opposition' ? 'The Opposition' : 'The Statistician'}:</strong> ${esc(x.said)} <strong>${esc(x.by)}:</strong> ${esc(x.answer)} <em>${x.res === 'conceded' ? 'Conceded' : 'Argued back'}.</em></li>`).join('')}</ul>`).join('')}`,
   floor: () => `<h1>Every policy on the table</h1><p>${G.policies.length} policies, each its own page, each with its odds and the day its prediction is marked.</p><ul>${G.policies.map(r => `<li><a href="/government/${r.id}">${esc(r.title)}</a>: ${r.marks.test && r.check ? `${Math.round(r.check.prior * 100)}%, marked ${esc(r.check.on)}` : 'needs a real test'}</li>`).join('')}</ul>`,
   record: () => `<h1>The record</h1><p>What has happened, newest first.</p><ul>${G.debates.flatMap(d => d.points.map(x => `<li>${esc(d.date)}, <a href="/government/${d.id}">${esc(d.title)}</a>: ${x.res === 'conceded' ? 'conceded' : 'argued back'}. ${esc(x.what || x.answer)}</li>`)).join('')}</ul><p><a href="/government/scoreboard">The scoreboard</a>.</p>`,
-  about: () => `<h1>About BadCode</h1><p>${esc(A.lede)} ${esc(A.request)}</p><p>${esc(A.story)}</p>`,
+  about: () => `<h1>About BadCode</h1><p>${esc(A.lede)} ${esc(A.request)}</p><p>${esc(A.story)}</p><p>How it is made, which machines, and the receipts: <a href="/how-we-made-it/">the full account</a>.</p>`,
   text: () => `<h1>BadCode Text</h1><p>The words of BadCode as teletext pages: 100 index, 200 stories, 300 news, 400 the manifesto, 401 the cabinet (402 to 411, one minister each), 700 follow, 800 about, 888 Future Proof.</p>`,
   missing: () => `<h1>Page not found</h1><p>We saw you'd try that. <a href="/">Back to the TV.</a></p>`,
 };
