@@ -26,6 +26,6 @@ holds their own cut, and there is no original to appeal to. Part of the parked S
 | What | Where | Status |
 | --- | --- | --- |
 | Words | the idea above | draft (Jack's punch-up owed) |
-| Look | [`look.md`](./look.md) | EXPLORING (mood board round 1) |
+| Look | [`look.md`](./look.md) | LOCKED: flash snapshot (Jack, 2026-11-12) |
 | Sound | [`sound.md`](./sound.md) | EMPTY |
 | Media | Jack: Desktop `Youtube Vids\\animation\\shorts\\no-master-recording` · Drive `Shorts/No Master Recording` | stills round 1 on the mood board https://claude.ai/artifact/FJieSkPe2H7jskjr1BKiRW |

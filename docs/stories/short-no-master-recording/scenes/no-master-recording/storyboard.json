@@ -1,0 +1,6 @@
+{"acts":[{"id":"A","title":"No Master Recording","beats":["argue","wall","engineer"]}],
+ "frames":[
+  {"n":1,"act":"A","title":"Two mates argue","look":"flash snapshot","stills":["AR1-a"],"anim":1},
+  {"n":2,"act":"A","title":"The wall of finals","look":"flash snapshot","stills":["WA1-a"],"anim":2},
+  {"n":3,"act":"A","title":"No master","look":"flash snapshot","line":"Which one? There's no master. There's only the one you heard.","stills":["EN1-a-fix-b"],"anim":3}
+ ]}
