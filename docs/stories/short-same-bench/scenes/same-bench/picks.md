@@ -9,3 +9,4 @@
 - **2026-11-12 (Jack, frames page):** A = **A2-b**, B = **B3-a**, C = **C3-a**, dates = **title card** (1919 / 2026). Storyboard: card 1919 → A2-b → card 2026 → B3-a → C3-a.
 - **2026-11-12 (Jack, storyboard r1):** animate A = **a** (he never moves his lips; soldier limps out), B = **a** (exact rerun; nurse walks off), C = **b** (turns to the empty seat; iris out). Motion prompts by sealed clean-room writers (cleanroom/).
 - **2026-11-12:** clips r1 made (sb-01/02/03, 6 s). A and B pass; C: his eyes come out of shadow and the face turns ordinary during the head turn (flagged). Clips page https://claude.ai/artifact/7xUAgjbQzzhGGpE2JCVF25.
+- **2026-11-12 (Jack):** voice **a, Algenib**; clips A, B, C all **kept** (C kept despite the face change on the turn).

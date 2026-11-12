@@ -98,5 +98,16 @@
   "url": "https://claude.ai/artifact/7xUAgjbQzzhGGpE2JCVF25",
   "what": "clips r1: A, B, C (Omni 1.2 Flash 6 s)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-same-bench/scenes/same-bench/clips-picks.json design/same-bench/clips/index.html (copy media video/sb-0*.mp4 into design/same-bench/clips/video)"
+ },
+ {
+  "at": "2026-11-12T12:21:19+00:00",
+  "stage": "clips",
+  "round": 1,
+  "what": "clip picks read",
+  "decided": [
+   "Jack kept A, B, C"
+  ],
+  "feedback": "feedback/clips-r1",
+  "feedback_docs": 3
  }
 ]
