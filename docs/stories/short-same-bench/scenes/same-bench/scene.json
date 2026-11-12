@@ -35,7 +35,7 @@
  "looks": {
   "ink": "1910s pen and ink (our drawing)"
  },
- "moodboard_intro": "Round 1: nine takes on the 1910s ink cartoon look, three per beat, each by a different writer. Tap This, Maybe or No; leave a note per beat.",
+ "moodboard_intro": "Round 2 is the ominous, horror take on the fat cat (nine new writers, researched on the web). Round 1's ink cartoons are still below. Use the style filter to see one round. Tap This, Maybe or No; leave a note per beat.",
  "boards": {
   "moodboard": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
   "dialogue": "https://claude.ai/artifact/NbqPHggtEhn5T8ktVhpCid"
@@ -45,5 +45,9 @@
   "options": "design/2026-11-12-short-same-bench-dialogue-lines/options.json",
   "picked": "1B",
   "round": 1
+ },
+ "styles": {
+  "ink": "Round 1: 1910s ink",
+  "horror": "Round 2: ominous horror"
  }
 }

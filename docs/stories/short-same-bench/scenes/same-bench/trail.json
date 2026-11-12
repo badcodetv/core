@@ -25,5 +25,13 @@
   ],
   "feedback": "feedback/dialogue-r1",
   "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-12T11:50:36+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
+  "what": "mood board r2: nine ominous-horror takes (clean room r3, run on Jack's go)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-same-bench/scenes/same-bench design/same-bench/moodboard.html"
  }
 ]
