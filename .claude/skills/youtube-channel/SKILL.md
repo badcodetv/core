@@ -14,6 +14,13 @@ are in [`docs/youtube/README.md`](../../../docs/youtube/README.md). This file is
 - **Going public is a human click in Studio.** Kai, 2026-11-11: managing the videos is the job, not
   publishing them. Uploads go up **private**. Only set unlisted, public or a schedule when Kai or Jack has
   asked for that video, in words.
+- **Public is final (Kai, 2026-11-12).** YouTube cannot replace a video's file, not through the API and not in
+  Studio: a new cut is always a new video ID that starts at zero views. So recut freely while private (re-uploading
+  costs nothing), and go public only on a locked cut. After public: small fixes in the Studio editor (it can only
+  remove: trim, cut a section, blur, swap music; views kept); a real recut is a new upload, with the old video
+  pointing at it (card or end screen, pinned comment, description line). **Replacing a private video** = upload the
+  new cut private, copy title, description, tags, category and thumbnail across, retitle the old one
+  "… (replaced <date>)", and Kai or Jack deletes it in Studio (the tool can't delete).
 - **Every video carries the AI label** (YouTube's "altered or synthetic content"). Kai, 2026-11-12.
   `youtube_upload` sets it by default; `youtube_label_ai` labels anything else (Jack's hand uploads).
   🔴 YouTube **accepts** this label but **never reads it back**, so `docs/youtube/log.jsonl` is the only
