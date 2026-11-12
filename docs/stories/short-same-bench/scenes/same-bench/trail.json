@@ -90,5 +90,13 @@
   "url": "https://claude.ai/artifact/Ns6ybWfmDArXevJnBjn6b1",
   "what": "voice casting r1: the fat cat, four takes",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-same-bench/scenes/same-bench/voices/picks.json design/same-bench/voices/index.html"
+ },
+ {
+  "at": "2026-11-12T12:15:36+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/7xUAgjbQzzhGGpE2JCVF25",
+  "what": "clips r1: A, B, C (Omni 1.2 Flash 6 s)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-same-bench/scenes/same-bench/clips-picks.json design/same-bench/clips/index.html (copy media video/sb-0*.mp4 into design/same-bench/clips/video)"
  }
 ]

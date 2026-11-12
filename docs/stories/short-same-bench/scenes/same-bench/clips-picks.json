@@ -1,0 +1,9 @@
+{"title": "Same Bench Clips", "eyebrow": "Same Bench · clips round 1 (Omni 1.2 Flash, 6 s, 9:16)", "heading": "The three clips",
+ "intro": "Your three animation picks, made in Flow. Pick Keep or leave a note per clip; a note becomes a re-roll. The dates, plaque words and caption come later in the edit, and so does the voice.",
+ "sections": [{"h": "Clips", "lede": "Checked frame by frame before this page.", "groups": [
+  {"slot": "clip-a", "title": "A. 1919: he flicks the soldier away", "line": "Voice over: \"Forget it.\"", "kind": "video", "opts": [
+   {"id": "keep", "src": "video/sb-01-A2-b.mp4", "label": "A (anim 1a)", "warn": "Good: lips never move, the soldier limps out on his crutch; his legs are lost in shadow, so the missing leg doesn't read clearly"}]},
+  {"slot": "clip-b", "title": "B. 2026: the same flick, the nurse walks off", "line": "Voice over: \"Forget it.\"", "kind": "video", "opts": [
+   {"id": "keep", "src": "video/sb-02-B3-a.mp4", "label": "B (anim 2a)", "warn": "Good: same flick, she walks off towards the hospital, ambulance light behind"}]},
+  {"slot": "clip-c", "title": "C. He turns to the empty seat", "line": "Caption: \"Same bench.\" then iris to black", "kind": "video", "opts": [
+   {"id": "keep", "src": "video/sb-03-C3-a.mp4", "label": "C (anim 3b)", "warn": "⚠ As he turns, his eyes come out of the shadow and his face changes to a more ordinary man: the horror look slips. A re-roll or a cut before the turn finishes would fix it"}]}]}]}
