@@ -28,20 +28,32 @@ SFX_LUFS = -34
 CARD = 1.2
 
 # (beat, kind, source, in, dur, line-or-None as (take_in, take_out, offset_in_shot, text))
-SHOTS = [('card1919', 'card', DATES / 'card-1919.png', 0.0, CARD, None),
-         ('veteran', 'clip', VID / 'sb-01-A2-b.mp4', 0.0, 5.6, (0.20, 1.60, 1.0, 'Forget it.')),
-         ('card2026', 'card', DATES / 'card-2026.png', 0.0, CARD, None),
-         ('nurse', 'clip', VID / 'sb-02-B3-a.mp4', 0.0, 5.6, (2.90, 4.40, 1.0, 'Forget it.')),
-         ('button', 'clip', VID / 'sb-03-C3-a.mp4', 0.0, 5.0, None)]
+# Round 2 (Jack, timeline r1, 2026-11-12: "it doesnt really convey the message"): a silent-film dialogue card with the
+# ask before each "Forget it.", B and C re-rolled from his notes, the "Same bench." caption removed, the logo at the end.
+CLIP_B = VID / ('sb-02-r2-B3-a.mp4' if (VID / 'sb-02-r2-B3-a.mp4').exists() else 'sb-02-B3-a.mp4')
+CLIP_C = VID / ('sb-03-r2-C3-a.mp4' if (VID / 'sb-03-r2-C3-a.mp4').exists() else 'sb-03-C3-a.mp4')
+LOGO = REPO / 'docs/brand/logo/badcode-stacked-reversed-2400.png'
+SHOTS = [('card1919', 'card', DATES / 'card-1919.png', 0.0, 1.0, None),
+         ('veteran-in', 'clip', VID / 'sb-01-A2-b.mp4', 0.0, 0.8, None),
+         ('ask1919', 'card', DATES / 'card-say-1919.png', 0.0, 2.2, None),
+         ('veteran', 'clip', VID / 'sb-01-A2-b.mp4', 0.8, 3.9, (0.20, 1.60, 0.15, 'Forget it.')),
+         ('card2026', 'card', DATES / 'card-2026.png', 0.0, 1.0, None),
+         ('nurse-in', 'clip', CLIP_B, 0.0, 0.8, None),
+         ('ask2026', 'card', DATES / 'card-say-2026.png', 0.0, 2.2, None),
+         ('nurse', 'clip', CLIP_B, 0.8, 3.9, (2.90, 4.40, 0.15, 'Forget it.')),
+         ('button', 'clip', CLIP_C, 0.0, 4.4, None),
+         ('logo', 'logo', LOGO, 0.0, 1.8, None)]
 starts, t = [], 0.0
 for s in SHOTS: starts.append(round(t, 3)); t += s[4]
 TOTAL = round(t, 3)
-CAPTION, T_CAP = 'Same bench.', starts[4] + 2.2
-T_FADE = TOTAL - 0.8
-SEE = {'card1919': 'Title card: 1919.', 'veteran': 'He flicks the soldier away without moving his lips; the soldier limps out of the light.',
-       'card2026': 'Title card: 2026.', 'nurse': 'The same flick; the nurse walks off towards the hospital.',
-       'button': 'He tips his hat, then turns to the empty seat. "Same bench." Fade to black.'}
-TITLES = {'card1919': '1919', 'veteran': 'A. 1919: "Forget it."', 'card2026': '2026', 'nurse': 'B. 2026: "Forget it."', 'button': 'C. Same bench.'}
+SEE = {'card1919': 'Title card: 1919.', 'veteran-in': 'The soldier beside him on the bench.', 'ask1919': 'Dialogue card: "They promised us homes fit for heroes."',
+       'veteran': 'He flicks the soldier away without moving his lips; the soldier limps out of the light.',
+       'card2026': 'Title card: 2026.', 'nurse-in': 'The nurse beside him on the bench.', 'ask2026': 'Dialogue card: "You clapped for us every Thursday."',
+       'nurse': 'The same flick; the nurse walks off towards the hospital.',
+       'button': 'He tips his hat, then turns to the empty seat on the right.', 'logo': 'The BadCode logo and name.'}
+TITLES = {'card1919': '1919', 'veteran-in': 'A. The soldier', 'ask1919': '"Homes fit for heroes."', 'veteran': 'A. "Forget it."',
+          'card2026': '2026', 'nurse-in': 'B. The nurse', 'ask2026': '"You clapped for us…"', 'nurse': 'B. "Forget it."',
+          'button': 'C. The next one', 'logo': 'BadCode'}
 
 
 def ff(*a):
@@ -58,9 +70,14 @@ def main():
     parts, world = [], []
     for i, (beat, kind, src, tin, d, _) in enumerate(SHOTS):
         out = CUT / f'v{i}-{beat}.mp4'
-        if kind == 'card':  # a held card with projector flicker and moving grain, like the clips' stock
+        if kind == 'logo':  # the real logo files (docs/brand), never drawn by Flow
+            ff('-f', 'lavfi', '-i', f'color=c=0x0b0b0b:s={W}x{H}:r={FPS}:d={d}', '-loop', 1, '-t', d, '-i', src, '-filter_complex',
+               f"[1]scale=640:-1[l];[0][l]overlay=(W-w)/2:(H-h)/2,fade=t=in:d=0.3,format=yuv420p", *ENC, '-t', d, out)
+            sp = CUT / f's{i}-{beat}.wav'
+            ff('-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo', '-t', d, sp)
+        elif kind == 'card':  # a held card with projector flicker and moving grain, like the clips' stock
             ff('-loop', 1, '-t', d, '-i', src, '-vf',
-               f"{FIT},noise=alls=18:allf=t,eq=brightness='0.025*sin(2*PI*9*t)',fade=t=in:d=0.15,fade=t=out:st={d - 0.15}:d=0.15,format=yuv420p", *ENC, out)
+               f"{FIT},noise=alls=18:allf=t,eq=brightness='0.025*sin(2*PI*9*t)',fade=t=in:d=0.12,fade=t=out:st={d - 0.12}:d=0.12,format=yuv420p", *ENC, out)
             sp = CUT / f's{i}-{beat}.wav'
             ff('-f', 'lavfi', '-i', f'anullsrc=r=48000:cl=stereo', '-t', d, sp)
         else:
@@ -71,9 +88,7 @@ def main():
         parts.append(out); world.append(sp)
     (CUT / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
     ff('-f', 'concat', '-safe', '0', '-i', CUT / 'list.txt', '-c', 'copy', CUT / 'picture-raw.mp4')
-    cap = (f"drawtext=fontfile='{FONT}':text='{CAPTION}':fontsize=110:fontcolor=white@0.92:x=(w-text_w)/2:y=230:"
-           f"enable='gte(t,{T_CAP:.2f})',fade=t=out:st={T_FADE:.2f}:d=0.8")
-    ff('-i', CUT / 'picture-raw.mp4', '-vf', f'{cap},format=yuv420p', *ENC, CUT / 'picture.mp4')
+    ff('-i', CUT / 'picture-raw.mp4', '-c', 'copy', CUT / 'picture.mp4')
 
     (CUT / 'slist.txt').write_text(''.join(f"file '{p.name}'\n" for p in world))
     wst = CUT / 'sfx-world.wav'
@@ -98,22 +113,23 @@ def main():
         if s[5]:
             a, b, off, text = s[5]
             ln.append({'i': 0, 'who': 'fatcat', 'name': 'Fat cat', 't': round(starts[i] + off, 2), 'dur': round(b - a, 2), 'text': text, 'by': 'kai'})
-        if s[0] == 'button':
-            ln.append({'i': 1, 'who': 'caption', 'name': 'Caption', 't': round(T_CAP, 2), 'dur': round(TOTAL - T_CAP, 2), 'text': CAPTION, 'by': 'claude'})
+        if s[0].startswith('ask'):
+            ln.append({'i': 0, 'who': 'card', 'name': 'Dialogue card', 't': starts[i], 'dur': s[4], 'by': 'claude',
+                       'text': 'They promised us homes fit for heroes.' if s[0] == 'ask1919' else 'You clapped for us every Thursday.'})
         beats.append({'id': s[0], 'title': TITLES[s[0]], 'start': starts[i], 'dur': s[4], 'see': SEE[s[0]], 'lines': ln})
     edl = {'sequence': f'shorts-2-same-bench-r{rnd}', 'title': 'Same Bench Timeline',
            'heading': f'BadCode Shorts ▲ Same Bench, rough cut {rnd}',
-           'intro': 'Title cards for the dates, your three clips, the fat cat (Algenib) and "Same bench." Note anything: a beat, a shot, a line, a sound, or a single frame.',
+           'intro': 'Round 2 on your notes: a silent-film card with what each of them was promised before every "Forget it.", B and C re-rolled, no caption, the logo at the end. Note anything.',
            'fps': FPS, 'total': TOTAL, 'beats': beats,
-           'video': [{'file': str(parts[i] if s[1] == 'card' else s[2]), 'in': s[3], 'start': starts[i], 'dur': s[4], 'beat': s[0],
+           'video': [{'file': str(parts[i] if s[1] in ('card', 'logo') else s[2]), 'in': s[3], 'start': starts[i], 'dur': s[4], 'beat': s[0],
                       'source': str(s[2]), 'looped': False} for i, s in enumerate(SHOTS)],
            'audio': [{'track': 'A1', 'name': 'vox-fatcat', 'file': str(vox)}, {'track': 'A2', 'name': 'sfx-world', 'file': str(wst)}],
            'events': [{'stem': 'vox-fatcat', 't': l['t'], 'dur': l['dur'], 'what': 'Forget it. (voice over; his lips never move)', 'src': str(VOICE)}
                       for b in beats for l in b['lines'] if l['who'] == 'fatcat']
                      + [{'stem': 'sfx-world', 't': starts[i], 'dur': s[4], 'what': f"{s[0]}: clip's own sound", 'src': str(s[2])}
                         for i, s in enumerate(SHOTS) if s[1] == 'clip'],
-           'flags': ['No plaque on the bench yet: A2-b has none (script 1B\'s pat and LEST WE FORGET plate are not in this cut).',
-                     'C: his face changes during the head turn (kept by Jack).', 'No music yet.']}
+           'flags': ['"Homes fit for heroes" is the real 1918 government promise (a slogan, not a person): checked wording before posting.',
+                     'No plaque on the bench (A2-b has none).', 'No music yet.']}
     (CUT / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': TOTAL, 'starts': starts, 'preview': str(CUT / 'preview.mp4')}))
 
