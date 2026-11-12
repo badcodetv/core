@@ -60,7 +60,15 @@
    "built": "2026-11-12",
    "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
    "what": "clone of Kai's r3; the coffee cup (9.79-15.33) replaced by Kai's zoom-out picks, one bar each on V2 at Scale 150: ob-z01-ZA3-c (in 2.58), ob-z02-ZA3-b (in 1.58), ob-z03-ZB3-d (in 1.50), ob-z04-ZC3-a (in 0.21); spares ob-z05-ZB3-c, ob-z06-ZC3-b in bin '01 GPOM chorus outbreak r4'; guide song on A1 kept",
-   "how": "Premiere eval (clone, remove cup, overwrite 4 shots on the bar markers); nested in '01 GPOM start r2' at 106.75 in place of r3 (overwrite, same in/out 4.25-15.33), its A9 audio disabled like r3's"
+   "how": "Premiere eval (clone, remove cup, overwrite 4 shots on the bar markers); nested in '01 GPOM start r2' at 106.75 in place of r3 (overwrite, same in/out 4.25-15.33), its A9 audio disabled like r3's",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/cut/edl-r3.json",
+   "premiere_ahead": "Kai's hand edit of the outbreak chorus in Premiere (12 Nov), with the zoom-out clips; no timeline page round",
+   "note_kai": "Kai 12 Nov: hand-edited r4, 'very happy with it'",
+   "check": {
+    "at": "2026-11-12T15:29",
+    "state": "Premiere only",
+    "why": "edl-r3.json is not a timeline edl: Kai's cut in Premiere is the truth"
+   }
   }
  },
  "board_round": 2,

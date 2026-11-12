@@ -167,7 +167,7 @@
    "what": "the bridge, round 13 (1:11), approved by Kai 11 Nov: \"it's a wrap. I love it. I think we've got it.\" Flow lip-sync (flow-align.py), field track + lid call to the boss, beacon close br43",
    "how": "edl-premiere.json (edl + each stem's file; every shot rebased to in-point 0 on its pre-trimmed file and to its real frame count, so nothing points past a file end) -> scripts/scene/premiere-plan.py --tag r13 --seq '04 GPOM story B bridge r3'; lines under B-bridge-r13/premiere/r13/lines/; plan premiere-r13.json",
    "check": {
-    "at": "2026-11-12T13:39",
+    "at": "2026-11-12T15:29",
     "state": "in sync",
     "why": ""
    }

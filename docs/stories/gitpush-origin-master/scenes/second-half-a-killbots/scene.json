@@ -404,7 +404,7 @@
    "what": "cut3 d27 (Kai 12 Nov): scissors-only hologram (1:28, no time machine: ends on 'driving me barmy'), no overhead shot, 'Oh, hello!' at 2.75 s, row A (tightened), Derek +4 frames; 2:55",
    "how": "premiere-plan.py --tag r21 (radio cue M0 from its stem, tinny by ffmpeg, instead of r20's hand-EQ'd song tail); import 49; create_sequence; eval place (51 placed, 0 failed)",
    "check": {
-    "at": "2026-11-12T13:39",
+    "at": "2026-11-12T15:29",
     "state": "in sync",
     "why": ""
    }
