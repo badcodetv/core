@@ -146,3 +146,40 @@ describe('shorts and AI labels', () => {
     expect([...l.entries()]).toEqual([['a', true], ['b', true]])
   })
 })
+
+import { buildChannelUpdate, keywordsString, parseKeywords } from './api'
+import { channelRecord } from './record'
+
+describe('channel', () => {
+  const ch = {
+    id: 'UCx',
+    snippet: { title: 'Badcode', customUrl: '@badcode-tv' },
+    brandingSettings: {
+      channel: { title: 'Badcode', keywords: 'old "two words"', unsubscribedTrailer: 'abcdefghijk' },
+      image: { bannerExternalUrl: 'https://yt3/banner' },
+      hints: [{ property: 'x', value: 'y' }],
+    },
+  }
+
+  it('keywords round-trip, quoting multi-word ones', () => {
+    expect(keywordsString(['politics', 'music video', ' '])).toBe('politics "music video"')
+    expect(parseKeywords('politics "music video"')).toEqual(['politics', 'music video'])
+  })
+
+  it('a description change keeps keywords, trailer and banner', () => {
+    const body = buildChannelUpdate(ch, { description: 'New' })
+    expect(body.brandingSettings.channel).toEqual({ title: 'Badcode', keywords: 'old "two words"', unsubscribedTrailer: 'abcdefghijk', description: 'New' })
+    expect(body.brandingSettings.image).toEqual({ bannerExternalUrl: 'https://yt3/banner' })
+    expect(body.brandingSettings.hints).toBeUndefined()
+    expect(ch.brandingSettings.channel).not.toHaveProperty('description')
+  })
+
+  it('null removes the trailer; over-long text is refused', () => {
+    expect(buildChannelUpdate(ch, { unsubscribedTrailer: null }).brandingSettings.channel.unsubscribedTrailer).toBeUndefined()
+    expect(() => buildChannelUpdate(ch, { description: 'x'.repeat(1001) })).toThrow(/1000/)
+  })
+
+  it('channelRecord reads the branding fields', () => {
+    expect(channelRecord(ch)).toMatchObject({ id: 'UCx', title: 'Badcode', handle: '@badcode-tv', keywords: 'old "two words"', description: '' })
+  })
+})

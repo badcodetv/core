@@ -176,6 +176,64 @@ export function buildUpdate(current: Json, ch: VideoChanges): { parts: string[];
   return { parts, body }
 }
 
+/** What the API lets us change on the channel itself. Name, handle, profile picture and links are Studio-only. */
+export interface ChannelChanges {
+  description?: string
+  /** One entry per keyword; multi-word ones are quoted for YouTube's space-separated format. */
+  keywords?: string[]
+  /** ISO 3166-1 alpha-2, e.g. "GB". */
+  country?: string
+  defaultLanguage?: string
+  /** The trailer shown to visitors who haven't subscribed. Must be a public video; null removes it. */
+  unsubscribedTrailer?: string | null
+}
+
+export const CHANNEL_DESCRIPTION_MAX = 1000
+export const CHANNEL_KEYWORDS_MAX = 500
+
+/** ['politics', 'music video'] → 'politics "music video"' (YouTube's channel keyword format). */
+export function keywordsString(words: string[]): string {
+  return words
+    .map((w) => w.trim().replace(/"/g, ''))
+    .filter(Boolean)
+    .map((w) => (/\s/.test(w) ? `"${w}"` : w))
+    .join(' ')
+}
+
+/** 'politics "music video"' → ['politics', 'music video']. */
+export function parseKeywords(s: string | undefined): string[] {
+  return [...(s ?? '').matchAll(/"([^"]+)"|(\S+)/g)].map((m) => m[1] ?? m[2])
+}
+
+/**
+ * Build a channels.update body for brandingSettings.
+ *
+ * 🔴 Like videos.update, channels.update REPLACES the whole brandingSettings part: anything not
+ * sent is deleted (keywords, trailer, even the banner link). So the current part is copied whole
+ * first, then the changes laid over it.
+ */
+export function buildChannelUpdate(current: Json, ch: ChannelChanges): Json {
+  if (ch.description !== undefined && ch.description.length > CHANNEL_DESCRIPTION_MAX) {
+    throw new ApiError(400, 'descriptionTooLong', `Channel description is ${ch.description.length} characters; YouTube allows ${CHANNEL_DESCRIPTION_MAX}.`)
+  }
+  const b = structuredClone(current.brandingSettings ?? {}) as Json
+  const c: Json = (b.channel ??= {})
+  if (ch.description !== undefined) c.description = ch.description
+  if (ch.keywords !== undefined) {
+    const k = keywordsString(ch.keywords)
+    if (k.length > CHANNEL_KEYWORDS_MAX) throw new ApiError(400, 'keywordsTooLong', `Keywords are ${k.length} characters; YouTube allows ${CHANNEL_KEYWORDS_MAX}.`)
+    c.keywords = k
+  }
+  if (ch.country !== undefined) c.country = ch.country
+  if (ch.defaultLanguage !== undefined) c.defaultLanguage = ch.defaultLanguage
+  if (ch.unsubscribedTrailer === null) delete c.unsubscribedTrailer
+  else if (ch.unsubscribedTrailer !== undefined) c.unsubscribedTrailer = ch.unsubscribedTrailer
+  // Read-only or retired fields the API returns but refuses on write.
+  delete b.hints
+  delete b.watch
+  return { id: current.id, brandingSettings: b }
+}
+
 /** `PT1H2M3S` → 3723. */
 export function isoSeconds(d: string): number {
   const m = /^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/.exec(d)
@@ -204,10 +262,16 @@ export class YouTube {
   }
 
   async myChannel(): Promise<Json> {
-    const r = await this.req('GET', `${API}/channels?part=snippet,contentDetails,statistics,status&mine=true`)
+    const r = await this.req('GET', `${API}/channels?part=snippet,contentDetails,statistics,status,brandingSettings&mine=true`)
     const ch = r.items?.[0]
     if (!ch) throw new ApiError(404, 'noChannel', 'The signed-in Google account has no YouTube channel.')
     return ch
+  }
+
+  /** Change the channel's description, keywords, country, language or trailer, keeping everything else. */
+  async updateChannel(changes: ChannelChanges): Promise<Json> {
+    const current = await this.myChannel()
+    return this.req('PUT', `${API}/channels?part=brandingSettings`, { json: buildChannelUpdate(current, changes) })
   }
 
   async getVideos(ids: string[], parts = 'snippet,status,contentDetails,statistics,fileDetails'): Promise<Json[]> {

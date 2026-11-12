@@ -14,7 +14,7 @@ you has asked for that video in words.)
 
 | File | What |
 | --- | --- |
-| `channel.json` | The repo's copy of the channel: every video's title, description, tags, privacy, schedule, AI label. Rewritten by every `youtube_list_videos` and after every change. View counts are left out on purpose (they'd fill git with noise). |
+| `channel.json` | The repo's copy of the channel: its own description and keywords, then every video's title, description, tags, privacy, schedule, AI label. Rewritten by every `youtube_list_videos` and after every change. View counts are left out on purpose (they'd fill git with noise). |
 | `log.jsonl` | One line per change made through the server (upload, edit, thumbnail, playlist), with the time and what changed. Appended, never rewritten. |
 
 ## The tools
@@ -27,7 +27,8 @@ you has asked for that video in words.)
 | `youtube_upload` | Upload a file (WSL or `D:\…` path; big files fine, resumable). Private by default, no subscriber ping. The **AI label** ("altered or synthetic content") is **on by default** (Kai, 2026-11-12: every video carries it). Optional thumbnail and playlists. |
 | `youtube_label_ai` | Puts the AI label on every video the log has no record of labelling (e.g. Jack's hand uploads). 🔴 YouTube accepts the label but never reads it back, so `log.jsonl` is the only record of which videos have it. |
 | `youtube_update_video` | Change only the fields you pass; the rest is kept. Tags are replaced as a whole list. |
-| `youtube_set_thumbnail` | PNG/JPEG under 2 MB, 1280×720 ideal. Needs the channel phone-verified. |
+| `youtube_update_channel` | The channel itself: description (About text, 1,000 characters, first ~130 on the header), keywords, country, language, trailer for visitors who haven't subscribed. Only what you pass changes. Pass nothing to read it. **Studio only:** name, handle, profile picture, links row. |
+| `youtube_set_thumbnail` | PNG/JPEG under 2 MB, 1280×720 ideal. Needs the channel phone-verified: `youtube_status` must show `longUploadsStatus: "allowed"`; `"eligible"` means not yet. The files live in `D:\badcode-videos\youtube\thumbnails\` (`<videoId>-<story>-<seconds>s.jpg`). |
 | `youtube_playlists` | List, create, add a video. |
 | `youtube_categories` | Category ids. Default on upload is `1` (Film & Animation); `10` Music, `25` News & Politics. |
 

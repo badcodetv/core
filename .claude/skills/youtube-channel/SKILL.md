@@ -41,7 +41,15 @@ are in [`docs/youtube/README.md`](../../../docs/youtube/README.md). This file is
 6. **Kai or Jack picks.** Show the drafts and apply only what they approve. A whole set at once is fine.
 7. **Apply.** `youtube_update_video` per video, passing only the changed fields (it keeps the rest).
    Tags are the **full** list. Every change lands in `log.jsonl`, with the snapshot refreshed.
-8. **Commit** `docs/youtube/`. The commit message names the videos and what changed.
+8. **Thumbnail.** A raw frame from the finished render is the default (Kai, 2026-11-12): pull a contact sheet of
+   evenly spaced frames (ffmpeg), pick one that **sets the story up** (never the ending, never a shot cut from the
+   story), show Kai or Jack the picks, then `youtube_set_thumbnail` with a 1280×720 JPEG (1080×1920 for a Short).
+   Keep the file in `D:\badcode-videos\youtube\thumbnails\` as `<videoId>-<story>-<seconds>s.jpg`. On a Short,
+   the Shorts feed mostly shows its own frame; the custom one shows in search and on the channel page.
+9. **Commit** `docs/youtube/`. The commit message names the videos and what changed.
+
+**The channel itself** (About text, keywords, trailer): the same draft → gatekeeper → pick loop, with
+`youtube_update_channel`. Drafts: `docs/youtube/drafts/<date>-channel.md`.
 
 **Uploading a new cut:** run the delivery QC first (`scripts/delivery-qc.sh`, the `video-fx` skill). Then
 `youtube_upload` with the file (a `D:\…` path works) and the title Kai or Jack gave. Leave the label on and
@@ -94,6 +102,10 @@ From the first drafting round (`docs/youtube/drafts/2026-11-12-first-four.md`); 
   `TOKEN_REVOKED` error means re-run the login. If it happens weekly, the Cloud app is still in "Testing".
 - **A read straight after an update can show the OLD text** for a few seconds. Re-read before calling an update
   failed. **Tags come back sorted alphabetically**, so compare them as a set, not in order.
+- **"No permission to set custom thumbnails"** means the channel isn't phone-verified *for that channel*
+  (`longUploadsStatus: "eligible"`, not `"allowed"`). Verifying while the browser is signed in as a different
+  Google account says "already verified" and changes nothing. Fix: Studio, signed in as badcode.tv@gmail.com →
+  Settings → Channel → Feature eligibility → Intermediate features → verify. It can take a while to apply.
 - **Pinned comments and a Short's Related video can't be set through the API.** They're a Studio click each,
   listed in the draft file's "Studio steps".
 - **The Shorts URL check doesn't work from here.** `youtube.com/shorts/<id>` redirects to an EU cookie

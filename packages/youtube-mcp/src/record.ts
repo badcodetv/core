@@ -12,7 +12,33 @@ import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } fr
 import { join } from 'node:path'
 import type { VideoSummary } from './api'
 
-export function writeSnapshot(dir: string, channel: { id: string; title: string }, videos: VideoSummary[]): string {
+/** The channel's own fields for the snapshot (no counts). */
+export interface ChannelRecord {
+  id: string
+  title: string
+  handle?: string
+  description?: string
+  keywords?: string
+  country?: string
+  defaultLanguage?: string
+  unsubscribedTrailer?: string
+}
+
+export function channelRecord(ch: Record<string, any>): ChannelRecord {
+  const b = ch.brandingSettings?.channel ?? {}
+  return {
+    id: ch.id,
+    title: ch.snippet?.title ?? '',
+    handle: ch.snippet?.customUrl,
+    description: b.description ?? ch.snippet?.description ?? '',
+    keywords: b.keywords ?? '',
+    country: b.country ?? ch.snippet?.country,
+    defaultLanguage: b.defaultLanguage,
+    unsubscribedTrailer: b.unsubscribedTrailer,
+  }
+}
+
+export function writeSnapshot(dir: string, channel: ChannelRecord, videos: VideoSummary[]): string {
   mkdirSync(dir, { recursive: true })
   const file = join(dir, 'channel.json')
   const labels = aiLabels(dir)
@@ -30,7 +56,7 @@ export function writeSnapshot(dir: string, channel: { id: string; title: string 
 }
 
 export interface LogLine {
-  action: 'upload' | 'update' | 'thumbnail' | 'playlist-create' | 'playlist-add'
+  action: 'upload' | 'update' | 'thumbnail' | 'playlist-create' | 'playlist-add' | 'channel'
   videoId?: string
   playlistId?: string
   title?: string

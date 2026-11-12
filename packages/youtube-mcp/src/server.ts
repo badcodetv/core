@@ -19,8 +19,8 @@ import { dirname, join, resolve } from 'node:path'
 import { NAME, VERSION } from './version'
 import { freshClientCreds, imageMime, loadEnvFile, parseId, toLocalPath, tokenFile, videoMime } from './config'
 import { AuthError, TokenSource, readToken } from './auth'
-import { ApiError, YouTube, summarise, type VideoChanges } from './api'
-import { aiLabels, appendLog, writeSnapshot } from './record'
+import { ApiError, CHANNEL_DESCRIPTION_MAX, YouTube, parseKeywords, summarise, type VideoChanges } from './api'
+import { aiLabels, appendLog, channelRecord, writeSnapshot } from './record'
 
 const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..')
 const RECORD_DIR = join(REPO_ROOT, 'docs', 'youtube')
@@ -68,7 +68,7 @@ const run = (fn: () => Promise<unknown>) => fn().then(ok, fail)
 async function refreshSnapshot(): Promise<{ file: string; count: number }> {
   const ch = await yt.myChannel()
   const videos = (await yt.allUploads()).map(summarise)
-  const file = writeSnapshot(RECORD_DIR, { id: ch.id, title: ch.snippet?.title ?? '' }, videos)
+  const file = writeSnapshot(RECORD_DIR, channelRecord(ch), videos)
   return { file, count: videos.length }
 }
 
@@ -138,7 +138,7 @@ server.registerTool(
     run(async () => {
       const ch = await yt.myChannel()
       const all = (await yt.allUploads()).map(summarise)
-      const snapshot = writeSnapshot(RECORD_DIR, { id: ch.id, title: ch.snippet?.title ?? '' }, all)
+      const snapshot = writeSnapshot(RECORD_DIR, channelRecord(ch), all)
       const q = search?.toLowerCase()
       const labels = aiLabels(RECORD_DIR)
       const videos = all
@@ -330,11 +330,48 @@ server.registerTool(
 )
 
 server.registerTool(
+  'youtube_update_channel',
+  {
+    description:
+      'Change the CHANNEL itself (not a video): its description (the About text, max 1,000 characters; the first ' +
+      '~130 show on the channel header), keywords, country, default language, or the trailer shown to visitors ' +
+      "who haven't subscribed (a public video). Only the fields passed change. Not possible through the API: the " +
+      'channel name, handle, profile picture and links row (Studio only). Pass nothing to just read the current values.',
+    inputSchema: {
+      description: z.string().max(CHANNEL_DESCRIPTION_MAX).optional(),
+      keywords: z.array(z.string()).optional().describe('One per keyword; multi-word ones are fine. The whole list is replaced.'),
+      country: z.string().length(2).optional().describe('ISO country code, e.g. "GB".'),
+      defaultLanguage: z.string().optional().describe('e.g. "en-GB".'),
+      unsubscribedTrailer: z.string().nullable().optional().describe('Video id or link; null removes the trailer.'),
+    },
+  },
+  (args) =>
+    run(async () => {
+      const before = channelRecord(await yt.myChannel())
+      const changes = { ...args, unsubscribedTrailer: args.unsubscribedTrailer ? parseId(args.unsubscribedTrailer) : args.unsubscribedTrailer }
+      for (const k of Object.keys(changes) as (keyof typeof changes)[]) if (changes[k] === undefined) delete changes[k]
+      if (!Object.keys(changes).length) return { channel: { ...before, keywords: parseKeywords(before.keywords) }, changed: false }
+      await yt.updateChannel(changes)
+      const after = channelRecord(await yt.myChannel())
+      const diff: Record<string, unknown> = {}
+      for (const k of Object.keys(after) as (keyof typeof after)[]) if (after[k] !== before[k]) diff[k] = { from: before[k], to: after[k] }
+      appendLog(RECORD_DIR, { action: 'channel', requested: changes, changes: diff })
+      return {
+        channel: { ...after, keywords: parseKeywords(after.keywords) },
+        changed: true,
+        note: 'A read straight after a change can show the old text for a few seconds; re-read before calling it failed.',
+        snapshot: await snapshotAfterChange(),
+      }
+    }),
+)
+
+server.registerTool(
   'youtube_set_thumbnail',
   {
     description:
       'Set a video\'s custom thumbnail: PNG or JPEG, under 2 MB, 1280×720 ideal. Needs the channel to be ' +
-      'phone-verified (YouTube refuses custom thumbnails otherwise).',
+      'phone-verified (YouTube refuses custom thumbnails otherwise): youtube_status shows longUploadsStatus ' +
+      '"allowed" once it is; "eligible" means not yet (Studio → Settings → Channel → Feature eligibility).',
     inputSchema: { videoId: z.string(), file: z.string().describe('WSL or Windows path.') },
   },
   ({ videoId, file }) =>
