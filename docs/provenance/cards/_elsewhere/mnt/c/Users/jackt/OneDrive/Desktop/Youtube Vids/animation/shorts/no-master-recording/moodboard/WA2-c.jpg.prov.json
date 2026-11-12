@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/WA2-c.jpg",
+ "made": "2026-11-12T16:46:29.835Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Point-and-shoot film snapshot, vertical 9:16, harsh direct flash, inside a narrow strip-lit corridor of a run-down British music studio. Floor to ceiling on both sides stand hundreds of tall stacks of shiny silver compact discs threaded on plastic spindles, each disc scribbled on in marker, a whole forest of glinting columns catching the flash in rainbow streaks. One disc taped at the front is big enough to read: \"FINAL v847 USE THIS ONE\". The two men from the attached picture edge sideways between the stacks towards the camera, one jabbing a thumb back down the never-ending corridor, both looking beaten. Overexposed faces, darkness beyond, heavy grain, wonky framing. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-nm/AR1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-nm/AR1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8664663d-2aba-422f-9260-b0ba7b1ddb0c"
+}

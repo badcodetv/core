@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/WA2-b.jpg",
+ "made": "2026-11-12T16:44:09.878Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 photo on cheap 35mm colour film with harsh direct on-camera flash: the live room of a tatty British recording studio flooded knee-deep with loose seven-inch vinyl singles, thousands of black discs and paper sleeves heaped like a ball pit, a drum kit and a mic stand half-sunk in the drift. A few sleeves near the lens read \"FINAL\" and \"FINAL FINAL\" in fat marker. The two men from the reference image wade in up to their knees, one holding a single up in disbelief, the other with his hands on his head. Blown highlights on their faces, the far wall dark. Grainy, crooked amateur framing, intentionally imperfect. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-nm/AR1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-nm/AR1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8b717a4d-c622-449c-9342-8ba8c7e0bd46"
+}

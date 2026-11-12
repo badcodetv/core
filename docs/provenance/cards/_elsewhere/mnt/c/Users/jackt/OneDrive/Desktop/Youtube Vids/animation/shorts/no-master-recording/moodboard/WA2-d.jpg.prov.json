@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/WA2-d.jpg",
+ "made": "2026-11-12T16:46:01.999Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 photograph shot on cheap film with a blunt on-camera flash, in the control room of a grubby British recording studio. Thousands of USB memory sticks hang from the ceiling on strings and lanyards, a dense dangling curtain filling the whole room down to head height, each with a little paper luggage tag, swaying and glinting in the flash. One tag in the foreground is large and legible: \"FINAL FINAL\". The two men from the reference image push their way through the hanging sticks toward the lens, sticks tangled over their shoulders, faces frozen in horror. Flash-burnt highlights on them, the mixing desk behind fading into darkness. Grain, slightly tilted frame, intentionally imperfect. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-nm/AR1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-nm/AR1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b025ebe7-7a7c-439f-b5a8-0e75195989df"
+}

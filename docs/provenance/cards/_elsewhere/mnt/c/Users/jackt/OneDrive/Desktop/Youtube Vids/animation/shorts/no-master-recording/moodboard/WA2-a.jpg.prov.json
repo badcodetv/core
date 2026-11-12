@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/no-master-recording/moodboard/WA2-a.jpg",
+ "made": "2026-11-12T16:43:57.227Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 snapshot taken on a cheap disposable film camera with direct on-camera flash, in a cramped back storeroom of a scruffy British recording studio. Wobbling towers of plain white-sleeved vinyl records rise from the sticky carpet to the polystyrene ceiling tiles, hundreds of stacks deep, leaning, some spilled across the floor. Every sleeve carries a tiny handwritten sticker; one record propped at the front reads \"FINAL v847 USE THIS ONE\" in black marker. The two men from the reference image stand in the foreground, shot from behind one shoulder, mouths open, staring up. Flash blows out their faces, hard shadow on the stacks, room falling to black. Coarse grain, frame tilted, intentionally imperfect. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-nm/AR1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-nm/AR1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6ac5affe-8cd9-4af4-a532-506b0bc7f043"
+}

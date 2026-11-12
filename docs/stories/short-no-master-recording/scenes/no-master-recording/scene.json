@@ -37,9 +37,24 @@
   "mode": "Frames",
   "duration": 8
  },
- "moodboard_intro": "Round 1, clean room. All three writers landed on the same three looks, so each column is one look across the whole short: flash snapshot, gouache painting, plasticine. Tap This, Maybe or No; leave a note per shot.",
+ "moodboard_intro": "Round 2: the wall only, as you asked (\"records or something cooler\"). Same mates as the kebab shop, same flash look. The CD-R tower idea was blocked by Flow three times, so three to pick from.",
  "flow_project": "450ef78e-ccab-4d2c-9072-5b1b8ecfd1fe",
  "boards": {
   "moodboard": "https://claude.ai/artifact/FJieSkPe2H7jskjr1BKiRW"
- }
+ },
+ "board_round": 2,
+ "picked": [
+  [
+   "AR1-a",
+   "A. Two mates argue"
+  ],
+  [
+   "WA1-a",
+   "B. Wall, round 1"
+  ],
+  [
+   "EN1-a-fix-b",
+   "C. The engineer"
+  ]
+ ]
 }

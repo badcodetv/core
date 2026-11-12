@@ -1,0 +1,28 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google: reference images + relationship instruction + new scenario; describe what you want positively, not 'no X'; quote exact words for any text and describe the lettering; name film stock/era ('1980s colour film, slightly grainy'); 9:16 supported",
+    "https://deepmind.google/models/gemini-image/prompt-guide/ — Google DeepMind: build from Style, Subject, Setting, Action, Composition; upload clear references and name the characters consistently; exact text in quotation marks",
+    "https://www.promptzone.com/cillian_yoon/prompting-deliberate-imperfection-for-realistic-ai-photos-3129 — 'direct on-camera flash' is the single strongest real-photo cue (hard shadow on wall behind, hot skin highlights, dark fall-off); avoid the word 'realistic'; anchor one era/medium, cap imperfection terms at about four; end with an 'intentionally imperfect' intent clause",
+    "https://mkt.hedra.com/blog/make-ai-images-look-like-real-photos-prompting — quality buzzwords ('8K', 'hyperrealistic', 'cinematic') push toward the fake look; test with the real reference images",
+    "https://miraflow.ai/blog/anti-ai-film-grain-prompts-2026 — centred, symmetrical, eye-contact framing reads staged however much grain you add; candid crooked framing matters more than texture",
+    "https://www.capcut.com/ideas/ai-image/ai-image-for-disposable-camera-style — disposable-camera look: flash hotspot, highlight bloom, medium grain, slight colour cast, soft vignette; keep phrasing short and concrete"
+  ],
+  "prompts": [
+    {
+      "idea": "Vinyl towers",
+      "prompt": "A vertical 9:16 snapshot taken on a cheap disposable film camera with direct on-camera flash, in a cramped back storeroom of a scruffy British recording studio. Wobbling towers of plain white-sleeved vinyl records rise from the sticky carpet to the polystyrene ceiling tiles, hundreds of stacks deep, leaning, some spilled across the floor. Every sleeve carries a tiny handwritten sticker; one record propped at the front reads \"FINAL v847 USE THIS ONE\" in black marker. The two men from the reference image stand in the foreground, shot from behind one shoulder, mouths open, staring up. Flash blows out their faces, hard shadow on the stacks, room falling to black. Coarse grain, frame tilted, intentionally imperfect. Thanks."
+    },
+    {
+      "idea": "Flooded with seven-inches",
+      "prompt": "A vertical 9:16 photo on cheap 35mm colour film with harsh direct on-camera flash: the live room of a tatty British recording studio flooded knee-deep with loose seven-inch vinyl singles, thousands of black discs and paper sleeves heaped like a ball pit, a drum kit and a mic stand half-sunk in the drift. A few sleeves near the lens read \"FINAL\" and \"FINAL FINAL\" in fat marker. The two men from the reference image wade in up to their knees, one holding a single up in disbelief, the other with his hands on his head. Blown highlights on their faces, the far wall dark. Grainy, crooked amateur framing, intentionally imperfect. Thanks."
+    },
+    {
+      "idea": "CD-R spindle forest",
+      "prompt": "A vertical 9:16 snapshot on a cheap point-and-shoot film camera, direct flash, inside a narrow strip-lit corridor of a run-down British studio. Both walls and the floor between are packed with towering spindles of burned CD-Rs, hundreds of columns, each disc scrawled in marker, rising past head height like a forest of silver pillars and catching the flash in rainbow glints. One disc taped to the nearest spindle is big enough to read: \"FINAL v847 USE THIS ONE\". The two men from the reference image squeeze sideways between the columns toward camera, one pointing back down the endless corridor, both looking defeated. Overexposed faces, dark depth beyond, heavy grain, off-kilter framing, intentionally imperfect. Thanks."
+    },
+    {
+      "idea": "Curtain of memory sticks",
+      "prompt": "A vertical 9:16 photograph shot on cheap film with a blunt on-camera flash, in the control room of a grubby British recording studio. Thousands of USB memory sticks hang from the ceiling on strings and lanyards, a dense dangling curtain filling the whole room down to head height, each with a little paper luggage tag, swaying and glinting in the flash. One tag in the foreground is large and legible: \"FINAL FINAL\". The two men from the reference image push their way through the hanging sticks toward the lens, sticks tangled over their shoulders, faces frozen in horror. Flash-burnt highlights on them, the mixing desk behind fading into darkness. Grain, slightly tilted frame, intentionally imperfect. Thanks."
+    }
+  ]
+}
