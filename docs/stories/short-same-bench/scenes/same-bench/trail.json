@@ -14,5 +14,16 @@
   "url": "https://claude.ai/artifact/QM1RiEUHBSYKwurMtpeMgP",
   "what": "mood board r1: nine 1910s-ink takes (variations r2, gated)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-same-bench/scenes/same-bench design/same-bench/moodboard.html"
+ },
+ {
+  "at": "2026-11-12T11:37:10+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "what": "dialogue pick read",
+  "decided": [
+   "Jack: 1b for dialouge thanks"
+  ],
+  "feedback": "feedback/dialogue-r1",
+  "feedback_docs": 1
  }
 ]
