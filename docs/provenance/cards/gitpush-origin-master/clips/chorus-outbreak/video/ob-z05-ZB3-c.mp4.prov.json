@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-z05-ZB3-c.mp4",
+ "made": "2026-11-12T14:00:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera locked, no movement. Tiny orange flashes go off one at a time along the docks and across the peninsula's towns, no more than three a second, the small fires growing and their smoke trails stretching inland, while another stretch of town lights blinks out. The wind turbines' red lamps blink. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZB3-c.jpg",
+ "why": "Kai 12 Nov: zoom-out picks (feedback/zoomout-r3), cut fast to the tune",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZB3-c.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "z05",
+  "frame": 205,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T13:58:30.686Z"
+ }
+}

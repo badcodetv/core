@@ -38,3 +38,10 @@
 - Kai: lose chorus 1 entirely (intro's zoom to black cuts straight to the bank downfall); chorus 2 keeps one half, with the new clips; a new sequence for the chorus.
 - Built `01 GPOM chorus outbreak r2` (cut E, picture only) and `01 GPOM start r2` (clone of Kai's `01 GPOM start`, spliced on the song's measured beat grid: two 32-beat cuts of 265 frames). `00 RENDER story` now nests `01 GPOM start r2`; backup kept. The music video master is untouched.
 - Lesson: `createMoveAction` leaves a clip's transitions behind (they rendered black at the old times). Use ripple delete of a spacer clip instead.
+
+## 12 Nov, zoom-out stills (round 3, picks page built, not yet published)
+- Kai: the second half of the chorus sits on the quiet cup; he wants ~5 s zooming out, from a whole city with several explosions to a whole peninsula with tiny flashes.
+- 11 stills on `picks-zoomout.json` (moodboard rows `ZA3-*`, `ZB3-*`, `ZC3-*`). A = London, 4 options; B = four peninsulas (Cornwall, Kent, the Wirral, the Solent); C (optional) = the whole island, 3 options.
+- ZB3-a, ZB3-b and ZC3-c are edits of their first renders, which came back with no flashes (raw in `moodboard/r3zoom/`).
+- The same-prompt hook flagged the standard edit wording ("Using the provided image, change only…") as a habit. Kept on purpose: it's the tool's prescribed edit template.
+- Proposed motion, for after Kai picks: A, Omni 1.2, 4 s, camera locked, fires swell and new ones bloom one by one, smoke drifts. B, Omni 1.2, 3 s, a slow rise or pull-back, pinprick flashes pop across the land (no more than 3 a second). C, Omni 1.2, 3 to 4 s, near-locked, flashes spread and towns go dark in a wave. Premiere/ffmpeg adds a push-out (scale 110 → 100%) across each, so the cut reads as one continuous zoom-out.

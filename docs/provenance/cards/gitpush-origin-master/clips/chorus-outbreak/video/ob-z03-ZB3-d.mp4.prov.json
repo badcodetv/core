@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-z03-ZB3-d.mp4",
+ "made": "2026-11-12T14:00:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera rises slowly straight up, the island and the coast shrinking a little below. The refinery fire flares and its smoke streak lengthens on the wind; tiny orange-white flashes pop one at a time across the harbours and the island's towns, no more than three a second, and small patches of town lights blink out. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZB3-d.jpg",
+ "why": "Kai 12 Nov: zoom-out picks (feedback/zoomout-r3), cut fast to the tune",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZB3-d.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "z03",
+  "frame": 203,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T13:56:41.293Z"
+ }
+}

@@ -1,0 +1,742 @@
+{
+ "title": "Outbreak Chorus Spares",
+ "eyebrow": "GPOM · chorus 2 (the outbreak)",
+ "heading": "Shots we have and haven't used",
+ "intro": "Every clip in these folders that isn't in the film today (78). Pick any you'd like in the outbreak chorus (Pick on a row = use that take; leave a note for a second take or where it goes). The chorus now: 9 shots, then the coffee cup holds the last 5.5 s.",
+ "sections": [
+  {
+   "h": "Outbreak chorus: takes we didn't use",
+   "lede": "The same shoot as the chorus now in the film: fire, cranes, the bookend.",
+   "groups": [
+    {
+     "slot": "chorus-outbreak-CR1",
+     "title": "CR1: The city's cranes pull free (beats 11-14, 1.4 s)",
+     "line": "3 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-03-CR1-c",
+       "src": "media/chorus-outbreak/ob-03-CR1-c.mp4",
+       "label": "ob-03-CR1-c"
+      },
+      {
+       "id": "ob-03-r2-CR1-c",
+       "src": "media/chorus-outbreak/ob-03-r2-CR1-c.mp4",
+       "label": "ob-03-r2-CR1-c"
+      },
+      {
+       "id": "ob-03-r3-CR1-c",
+       "src": "media/chorus-outbreak/ob-03-r3-CR1-c.mp4",
+       "label": "ob-03-r3-CR1-c"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-outbreak-RK1",
+     "title": "RK1: A crane strides over the motorway (beats 15-20, 2.1 s)",
+     "line": "2 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-04-RK1-e",
+       "src": "media/chorus-outbreak/ob-04-RK1-e.mp4",
+       "label": "ob-04-RK1-e"
+      },
+      {
+       "id": "ob-04-r2-RK1-e",
+       "src": "media/chorus-outbreak/ob-04-r2-RK1-e.mp4",
+       "label": "ob-04-r2-RK1-e"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-outbreak-FT1",
+     "title": "FT1: The foot lands on the flyover (beats 21-24, 1.4 s)",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-05-FT1-b",
+       "src": "media/chorus-outbreak/ob-05-FT1-b.mp4",
+       "label": "ob-05-FT1-b"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-outbreak-EN1",
+     "title": "EN1: The empty driver's seat (beats 28-32, 1.7 s), then black",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-07-EN1-a2-b",
+       "src": "media/chorus-outbreak/ob-07-EN1-a2-b.mp4",
+       "label": "ob-07-EN1-a2-b"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-outbreak-MP2",
+     "title": "MP2: Outbreak pull-back on the M4 (wide, motorway to city (drone rise))",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-s01-MP2-a",
+       "src": "media/chorus-outbreak/ob-s01-MP2-a.mp4",
+       "label": "ob-s01-MP2-a"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-outbreak-PH2",
+     "title": "PH2: London from Primrose Hill (wide over-the-shoulder, city)",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-s04-PH2-b",
+       "src": "media/chorus-outbreak/ob-s04-PH2-b.mp4",
+       "label": "ob-s04-PH2-b"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-outbreak-CH2",
+     "title": "CH2: Combines advance on the town (ground-level wide, region)",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-s07-CH2-b",
+       "src": "media/chorus-outbreak/ob-s07-CH2-b.mp4",
+       "label": "ob-s07-CH2-b"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-outbreak-RW2",
+     "title": "RW2: The wall on the Fenland horizon (telephoto extreme wide, region)",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-s09-RW2-a",
+       "src": "media/chorus-outbreak/ob-s09-RW2-a.mp4",
+       "label": "ob-s09-RW2-a"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-outbreak-DV2",
+     "title": "DV2: Dover: the ferries leave without us (cliff-top wide, region)",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ob-s10-DV2-a",
+       "src": "media/chorus-outbreak/ob-s10-DV2-a.mp4",
+       "label": "ob-s10-DV2-a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "War scene: takes we didn't use",
+   "lede": "Swindon today, no humans.",
+   "groups": [
+    {
+     "slot": "war-SW1",
+     "title": "SW1: war scene take",
+     "line": "1 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "wr-w01-SW1-a-a",
+       "src": "media/war/wr-w01-SW1-a-a.mp4",
+       "label": "wr-w01-SW1-a-a"
+      }
+     ]
+    },
+    {
+     "slot": "war-MT1",
+     "title": "MT1: war scene take",
+     "line": "1 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "wr-w10-MT1-a-b",
+       "src": "media/war/wr-w10-MT1-a-b.mp4",
+       "label": "wr-w10-MT1-a-b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Downfall: takes we didn't use",
+   "lede": "From the downfall scene.",
+   "groups": [
+    {
+     "slot": "downfall-v01-phones-r2.mp4",
+     "title": "v01-phones-r2.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v01-phones-r2",
+       "src": "media/downfall/v01-phones-r2.mp4",
+       "label": "v01-phones-r2"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v01-phones.mp4",
+     "title": "v01-phones.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v01-phones",
+       "src": "media/downfall/v01-phones.mp4",
+       "label": "v01-phones"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v02-kerb-text.mp4",
+     "title": "v02-kerb-text.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v02-kerb-text",
+       "src": "media/downfall/v02-kerb-text.mp4",
+       "label": "v02-kerb-text"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v03-avenue.mp4",
+     "title": "v03-avenue.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v03-avenue",
+       "src": "media/downfall/v03-avenue.mp4",
+       "label": "v03-avenue"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v04-cable.mp4",
+     "title": "v04-cable.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v04-cable",
+       "src": "media/downfall/v04-cable.mp4",
+       "label": "v04-cable"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v05-board.mp4",
+     "title": "v05-board.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v05-board",
+       "src": "media/downfall/v05-board.mp4",
+       "label": "v05-board"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v06-floor.mp4",
+     "title": "v06-floor.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v06-floor",
+       "src": "media/downfall/v06-floor.mp4",
+       "label": "v06-floor"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v07-tower.mp4",
+     "title": "v07-tower.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v07-tower",
+       "src": "media/downfall/v07-tower.mp4",
+       "label": "v07-tower"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v08-sign.mp4",
+     "title": "v08-sign.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v08-sign",
+       "src": "media/downfall/v08-sign.mp4",
+       "label": "v08-sign"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v09-wreck.mp4",
+     "title": "v09-wreck.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v09-wreck",
+       "src": "media/downfall/v09-wreck.mp4",
+       "label": "v09-wreck"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v10-hillside.mp4",
+     "title": "v10-hillside.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v10-hillside",
+       "src": "media/downfall/v10-hillside.mp4",
+       "label": "v10-hillside"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v11-io1-far.mp4",
+     "title": "v11-io1-far.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v11-io1-far",
+       "src": "media/downfall/v11-io1-far.mp4",
+       "label": "v11-io1-far"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v12-io2-aerial.mp4",
+     "title": "v12-io2-aerial.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v12-io2-aerial",
+       "src": "media/downfall/v12-io2-aerial.mp4",
+       "label": "v12-io2-aerial"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v13-io3-pass.mp4",
+     "title": "v13-io3-pass.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v13-io3-pass",
+       "src": "media/downfall/v13-io3-pass.mp4",
+       "label": "v13-io3-pass"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v14-ghost.mp4",
+     "title": "v14-ghost.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v14-ghost",
+       "src": "media/downfall/v14-ghost.mp4",
+       "label": "v14-ghost"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v15-swindon.mp4",
+     "title": "v15-swindon.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v15-swindon",
+       "src": "media/downfall/v15-swindon.mp4",
+       "label": "v15-swindon"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v16-green.mp4",
+     "title": "v16-green.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v16-green",
+       "src": "media/downfall/v16-green.mp4",
+       "label": "v16-green"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v17-drones-b.mp4",
+     "title": "v17-drones-b.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v17-drones-b",
+       "src": "media/downfall/v17-drones-b.mp4",
+       "label": "v17-drones-b"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v18-dronewreck-a.mp4",
+     "title": "v18-dronewreck-a.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v18-dronewreck-a",
+       "src": "media/downfall/v18-dronewreck-a.mp4",
+       "label": "v18-dronewreck-a"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v19-dronefield-overhead-a.mp4",
+     "title": "v19-dronefield-overhead-a.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v19-dronefield-overhead-a",
+       "src": "media/downfall/v19-dronefield-overhead-a.mp4",
+       "label": "v19-dronefield-overhead-a"
+      }
+     ]
+    },
+    {
+     "slot": "downfall-v20-drones-quiet-c.mp4",
+     "title": "v20-drones-quiet-c.mp4",
+     "line": "1 take(s), 8 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v20-drones-quiet-c",
+       "src": "media/downfall/v20-drones-quiet-c.mp4",
+       "label": "v20-drones-quiet-c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Robot choir (old chorus 2): not explosions",
+   "lede": "Red-hooded robots at night, in case a beat of menace helps.",
+   "groups": [
+    {
+     "slot": "chorus-2-RK1",
+     "title": "RK1: A crane strides over the motorway (beats 15-20, 2.1 s)",
+     "line": "6 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "c2-mb01-RK1-a-a",
+       "src": "media/chorus-2/c2-mb01-RK1-a-a.mp4",
+       "label": "c2-mb01-RK1-a-a"
+      },
+      {
+       "id": "c2-mb03-RK1-b-a",
+       "src": "media/chorus-2/c2-mb03-RK1-b-a.mp4",
+       "label": "c2-mb03-RK1-b-a"
+      },
+      {
+       "id": "c2-mb04-RK1-b-b",
+       "src": "media/chorus-2/c2-mb04-RK1-b-b.mp4",
+       "label": "c2-mb04-RK1-b-b"
+      },
+      {
+       "id": "c2-mb06-RK1-c-b",
+       "src": "media/chorus-2/c2-mb06-RK1-c-b.mp4",
+       "label": "c2-mb06-RK1-c-b"
+      },
+      {
+       "id": "c2-mb07-RK1-d-a",
+       "src": "media/chorus-2/c2-mb07-RK1-d-a.mp4",
+       "label": "c2-mb07-RK1-d-a"
+      },
+      {
+       "id": "c2-mb08-RK1-d-b",
+       "src": "media/chorus-2/c2-mb08-RK1-d-b.mp4",
+       "label": "c2-mb08-RK1-d-b"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-2-HD1",
+     "title": "HD1: chorus1",
+     "line": "6 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "c2-mb09-HD1-a-b",
+       "src": "media/chorus-2/c2-mb09-HD1-a-b.mp4",
+       "label": "c2-mb09-HD1-a-b"
+      },
+      {
+       "id": "c2-mb10-HD1-a-c",
+       "src": "media/chorus-2/c2-mb10-HD1-a-c.mp4",
+       "label": "c2-mb10-HD1-a-c"
+      },
+      {
+       "id": "c2-mb11-HD1-b-a",
+       "src": "media/chorus-2/c2-mb11-HD1-b-a.mp4",
+       "label": "c2-mb11-HD1-b-a"
+      },
+      {
+       "id": "c2-mb12-HD1-b-b",
+       "src": "media/chorus-2/c2-mb12-HD1-b-b.mp4",
+       "label": "c2-mb12-HD1-b-b"
+      },
+      {
+       "id": "c2-mb14-HD1-c-c",
+       "src": "media/chorus-2/c2-mb14-HD1-c-c.mp4",
+       "label": "c2-mb14-HD1-c-c"
+      },
+      {
+       "id": "c2-mb15-HD1-d-a",
+       "src": "media/chorus-2/c2-mb15-HD1-d-a.mp4",
+       "label": "c2-mb15-HD1-d-a"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-2-SL1",
+     "title": "SL1: chorus1",
+     "line": "6 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "c2-mb17-SL1-a-a",
+       "src": "media/chorus-2/c2-mb17-SL1-a-a.mp4",
+       "label": "c2-mb17-SL1-a-a"
+      },
+      {
+       "id": "c2-mb18-SL1-a-b",
+       "src": "media/chorus-2/c2-mb18-SL1-a-b.mp4",
+       "label": "c2-mb18-SL1-a-b"
+      },
+      {
+       "id": "c2-mb19-SL1-a-c",
+       "src": "media/chorus-2/c2-mb19-SL1-a-c.mp4",
+       "label": "c2-mb19-SL1-a-c"
+      },
+      {
+       "id": "c2-mb20-SL1-b-a",
+       "src": "media/chorus-2/c2-mb20-SL1-b-a.mp4",
+       "label": "c2-mb20-SL1-b-a"
+      },
+      {
+       "id": "c2-mb22-SL1-c-a",
+       "src": "media/chorus-2/c2-mb22-SL1-c-a.mp4",
+       "label": "c2-mb22-SL1-c-a"
+      },
+      {
+       "id": "c2-mb23-SL1-c-b",
+       "src": "media/chorus-2/c2-mb23-SL1-c-b.mp4",
+       "label": "c2-mb23-SL1-c-b"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-2-EC1",
+     "title": "EC1: chorus1",
+     "line": "5 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "c2-mb24-EC1-a-a",
+       "src": "media/chorus-2/c2-mb24-EC1-a-a.mp4",
+       "label": "c2-mb24-EC1-a-a"
+      },
+      {
+       "id": "c2-mb25-EC1-a-b",
+       "src": "media/chorus-2/c2-mb25-EC1-a-b.mp4",
+       "label": "c2-mb25-EC1-a-b"
+      },
+      {
+       "id": "c2-mb26-EC1-b-a",
+       "src": "media/chorus-2/c2-mb26-EC1-b-a.mp4",
+       "label": "c2-mb26-EC1-b-a"
+      },
+      {
+       "id": "c2-mb27-EC1-b-b",
+       "src": "media/chorus-2/c2-mb27-EC1-b-b.mp4",
+       "label": "c2-mb27-EC1-b-b"
+      },
+      {
+       "id": "c2-mb29-EC1-c-a",
+       "src": "media/chorus-2/c2-mb29-EC1-c-a.mp4",
+       "label": "c2-mb29-EC1-c-a"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-2-SH1",
+     "title": "SH1: chorus1",
+     "line": "4 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "c2-mb31-SH1-a-a",
+       "src": "media/chorus-2/c2-mb31-SH1-a-a.mp4",
+       "label": "c2-mb31-SH1-a-a"
+      },
+      {
+       "id": "c2-mb32-SH1-a-b",
+       "src": "media/chorus-2/c2-mb32-SH1-a-b.mp4",
+       "label": "c2-mb32-SH1-a-b"
+      },
+      {
+       "id": "c2-mb34-SH1-b-b",
+       "src": "media/chorus-2/c2-mb34-SH1-b-b.mp4",
+       "label": "c2-mb34-SH1-b-b"
+      },
+      {
+       "id": "c2-mb35-SH1-c-a",
+       "src": "media/chorus-2/c2-mb35-SH1-c-a.mp4",
+       "label": "c2-mb35-SH1-c-a"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-2-MA1",
+     "title": "MA1: chorus1",
+     "line": "5 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "c2-mb37-MA1-a-a",
+       "src": "media/chorus-2/c2-mb37-MA1-a-a.mp4",
+       "label": "c2-mb37-MA1-a-a"
+      },
+      {
+       "id": "c2-mb38-MA1-a-b",
+       "src": "media/chorus-2/c2-mb38-MA1-a-b.mp4",
+       "label": "c2-mb38-MA1-a-b"
+      },
+      {
+       "id": "c2-mb39-MA1-b-a",
+       "src": "media/chorus-2/c2-mb39-MA1-b-a.mp4",
+       "label": "c2-mb39-MA1-b-a"
+      },
+      {
+       "id": "c2-mb41-MA1-c-b",
+       "src": "media/chorus-2/c2-mb41-MA1-c-b.mp4",
+       "label": "c2-mb41-MA1-c-b"
+      },
+      {
+       "id": "c2-mb42-MA1-c-c",
+       "src": "media/chorus-2/c2-mb42-MA1-c-c.mp4",
+       "label": "c2-mb42-MA1-c-c"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-2-ET1",
+     "title": "ET1: chorus1",
+     "line": "4 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "c2-mb44-ET1-a-b",
+       "src": "media/chorus-2/c2-mb44-ET1-a-b.mp4",
+       "label": "c2-mb44-ET1-a-b"
+      },
+      {
+       "id": "c2-mb45-ET1-b-a",
+       "src": "media/chorus-2/c2-mb45-ET1-b-a.mp4",
+       "label": "c2-mb45-ET1-b-a"
+      },
+      {
+       "id": "c2-mb47-ET1-c-a",
+       "src": "media/chorus-2/c2-mb47-ET1-c-a.mp4",
+       "label": "c2-mb47-ET1-c-a"
+      },
+      {
+       "id": "c2-mb48-ET1-c-b",
+       "src": "media/chorus-2/c2-mb48-ET1-c-b.mp4",
+       "label": "c2-mb48-ET1-c-b"
+      }
+     ]
+    },
+    {
+     "slot": "chorus-2-TN1",
+     "title": "TN1: chorus1",
+     "line": "7 take(s), 6 s each",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "c2-mb50-TN1-a-c",
+       "src": "media/chorus-2/c2-mb50-TN1-a-c.mp4",
+       "label": "c2-mb50-TN1-a-c"
+      },
+      {
+       "id": "c2-mb51-TN1-b-b",
+       "src": "media/chorus-2/c2-mb51-TN1-b-b.mp4",
+       "label": "c2-mb51-TN1-b-b"
+      },
+      {
+       "id": "c2-mb52-TN1-b-c",
+       "src": "media/chorus-2/c2-mb52-TN1-b-c.mp4",
+       "label": "c2-mb52-TN1-b-c"
+      },
+      {
+       "id": "c2-mb53-TN1-c-b",
+       "src": "media/chorus-2/c2-mb53-TN1-c-b.mp4",
+       "label": "c2-mb53-TN1-c-b"
+      },
+      {
+       "id": "c2-mb54-TN1-c-c",
+       "src": "media/chorus-2/c2-mb54-TN1-c-c.mp4",
+       "label": "c2-mb54-TN1-c-c"
+      },
+      {
+       "id": "c2-mb55-TN1-d-b",
+       "src": "media/chorus-2/c2-mb55-TN1-d-b.mp4",
+       "label": "c2-mb55-TN1-d-b"
+      },
+      {
+       "id": "c2-mb56-TN1-d-c",
+       "src": "media/chorus-2/c2-mb56-TN1-d-c.mp4",
+       "label": "c2-mb56-TN1-d-c"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

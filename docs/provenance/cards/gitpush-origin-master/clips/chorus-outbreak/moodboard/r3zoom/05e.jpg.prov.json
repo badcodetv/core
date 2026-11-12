@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/05e.jpg",
+ "made": "2026-11-12T13:39:30.123Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the land below: scatter about twenty-five tiny orange flashes of explosion among the towns, like struck matches, a few with small fires and thin smoke trails drifting inland, and make several patches of towns go completely dark. Keep the cockpit frame, the reflections, everything else exactly the same, preserving the original style, lighting and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/ob-zoom/05.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/ob-zoom/05.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "b960462b-15a0-4fc2-a337-7b9dc2219d0f"
+}

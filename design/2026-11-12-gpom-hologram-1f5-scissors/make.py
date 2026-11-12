@@ -11,7 +11,11 @@ Build the 1F3 hologram page (Kai's round 23 timeline notes, 10 Nov), copied from
 1F3: new words f01/f03/f05/f07a, f02 re-voiced, a new line f04b; brighter stack outlines (at1044); a better INDIVIDUAL figure (at1097);
 no blur artefacts inside the cloud (at2746); two pictured cat nodes visited alive-then-dead from "Did you know" (at2746, at2912);
 the one timeline under f04b (at3125); into the river sooner (at3372); one square-on final view, rising for the time machine (at3500, at3722)."""
-import json, pathlib, re
+import json, pathlib, re, sys
+# --d27 (Kai, 12 Nov, cut d27): no time machine yet. f07a ("Of course, he's built a time machine..."), the rise, the arc and its
+# 'git revert' / 'awaiting: 1 human' tags go; the presentation ends on f06 "...driving me barmy", holds, and the telly switches off.
+D27 = '--d27' in sys.argv
+SUF = '-d27' if D27 else ''
 H = pathlib.Path(__file__).parent
 src = (H.parent / '2026-11-05-gpom-meeting/lookdev/index.html').read_text()
 L = {l['id']: l for l in json.load(open(H / 'lines-1f5-scissors.json'))}   # trim.py: the kept 1F5 takes, cut in silence only
@@ -62,13 +66,19 @@ OUT0 = st['f05'] + L['f05']['dur'] - 1.4                       # leave on "...re
 S_fly = OUT0 + 2.6                                             # land square-on at the cut-off, once, and rest there
 st['f06'] = S_fly + 1.0                                        # a second of silence on the dead stop and the empty run before she speaks
 sg['river'] = S_fly - S_river
-st['f07a'] = st['f06'] + L['f06']['dur'] + .7
-t_tm = st['f07a'] + w('f07a', 'time')                          # "a time machine": the camera rises
-RISE0 = t_tm - .4; RISED = 3.2
-S_arc = st['f07a'] + w('f07a', 'just') - .1                    # the arc draws on "It just needs consciousness"
-sg['flyDown'] = S_arc - S_fly
-sg['arcDraw'] = 2.5
-sg['arcHold'] = max(2.0, st['f07a'] + L['f07a']['dur'] + .6 - (S_arc + sg['arcDraw']))
+if D27:   # hold square-on on the stopped strings for 1 s after "barmy" (1F5 held ~0.6 s after its last line), then the screen-off
+    RISE0 = 1e4; RISED = 3.2                                   # never rises
+    S_arc = st['f06'] + L['f06']['dur'] + 1.0
+    sg['flyDown'] = S_arc - S_fly
+    sg['arcDraw'] = .01; sg['arcHold'] = .01                   # kept in the segment list, drawn as nothing (page patches below)
+else:
+    st['f07a'] = st['f06'] + L['f06']['dur'] + .7
+    t_tm = st['f07a'] + w('f07a', 'time')                      # "a time machine": the camera rises
+    RISE0 = t_tm - .4; RISED = 3.2
+    S_arc = st['f07a'] + w('f07a', 'just') - .1                # the arc draws on "It just needs consciousness"
+    sg['flyDown'] = S_arc - S_fly
+    sg['arcDraw'] = 2.5
+    sg['arcHold'] = max(2.0, st['f07a'] + L['f07a']['dur'] + .6 - (S_arc + sg['arcDraw']))
 sg['off'] = 1.2
 SEGK = ['stack','lead','bead1','bead2','bead3','open','maybes','pick','settle','toRiver','river','flyDown','arcDraw','arcHold','off']
 segs = {k: round(sg[k], 3) for k in SEGK}
@@ -83,7 +93,7 @@ STACK = {'labels': [n for n, _, _ in LAYERS], 'lay': lay, 'quarks': round(t_quar
          'depart': round(depart, 3), 'fly': FLY}
 CAM = {'back': BACK_D, 'pin0': round(PIN0, 3), 'pind': round(PIND, 3), 'out0': round(OUT0, 3), 'rise0': round(RISE0, 3), 'rised': RISED}
 edit = {'segs': segs, 'clips': {k: {'start': round(v, 3), 'text': L[k]['text'], 'dur': L[k]['dur'], 'needsVoice': False} for k, v in st.items()}, 'exc': EXC, 'glow': GLOW,
-        'label': round(t_label, 3), 'draft': '1F5-scissors', 'stack': STACK, 'cam': CAM, 'placeholder': {},
+        'label': round(t_label, 3), 'draft': '1F5-scissors' + SUF, 'stack': STACK, 'cam': CAM, 'placeholder': {},
         'cut': {'s03': 'whole', 'f04': 'whole', 'f04b': 'whole', 's01': "first two sentences (to \"...close to our heart.\")", 'f01': 'first sentence and "For example:"',
                 'f03': "\"You humans have got a word for it: qualia. It's what makes you so special.\"", 'f05': 'its two [pause]s closed (0.55 s and 0.56 s of room tone out)'},
         'street': {'b01': 'before the hologram, on the street (ends "Please, let me show you what we found."; the hologram cuts in as it finishes)',
@@ -93,7 +103,7 @@ edit = {'segs': segs, 'clips': {k: {'start': round(v, 3), 'text': L[k]['text'], 
                   'toast': round(t_toast, 2), 'sorry': round(t_sorry, 2), 'married': round(t_married, 2), 'label_consciousness': round(t_label, 2),
                   'to_river': round(S_toRiver, 2), 'inside_river': round(PIN0 + PIND, 2), 'leave_river': round(OUT0, 2),
                   'arrive_square_on': round(S_fly, 2), 'rise': round(RISE0, 2), 'arc_draws': round(S_arc, 2), 'screen_off': round(TD - sg['off'], 2), 'TD': round(TD, 3)}}
-json.dump(edit, open(H / 'edit-1f5-scissors.json', 'w'), indent=1, ensure_ascii=False)
+json.dump(edit, open(H / f'edit-1f5-scissors{SUF}.json', 'w'), indent=1, ensure_ascii=False)
 print(json.dumps(segs)); print('clips', {k: round(v, 2) for k, v in st.items()}); print('marks', edit['marks'])
 
 # ---- the page ----
@@ -228,5 +238,10 @@ p = sub("  tctx.globalAlpha=1; stackWords(t,fs); txtTex.needsUpdate=true}",
         "  tctx.save(); tctx.globalAlpha=op; tctx.font=`600 ${f}px \"Schibsted Grotesk\", system-ui, sans-serif`; tctx.letterSpacing=Math.round(f*.14)+'px'; tctx.textAlign='center'; tctx.textBaseline='alphabetic';\n"
         "  tctx.shadowColor='rgba(0,0,0,.9)'; tctx.shadowBlur=f*.5; tctx.fillStyle='#ffcf8a'; tctx.fillText('CONSCIOUSNESS',cw*LABEL_X,chh*LABEL_Y); tctx.restore()}", p)
 p = sub("function consciousWord(t){", "const LABEL_X=" + str(LABEL_X) + ", LABEL_Y=" + str(LABEL_Y) + ";   // screen position of the word (fractions of the frame)\nfunction consciousWord(t){", p)
-(H / 'index.html').write_text(p)
+if D27:
+    p = sub("W.arc.visible=draw>0; W.slot.visible=draw>.85;", "W.arc.visible=false; W.slot.visible=false;", p)
+    p = sub("t:'git revert',term:true,win:()=>[S.arcDraw+2.5,TD+1]}", "t:'git revert',term:true,win:()=>[TD+5,TD+6]}", p)
+    p = sub("t:'awaiting: 1 human',win:()=>[S.arcHold,TD+1]}", "t:'awaiting: 1 human',win:()=>[TD+5,TD+6]}", p)
+    p = sub("<title>Maddie's Hologram 1F5 Scissors</title>", "<title>Maddie's Hologram 1F5 Scissors D27</title>", p)
+(H / f'index{SUF}.html').write_text(p)
 print('page', len(p))

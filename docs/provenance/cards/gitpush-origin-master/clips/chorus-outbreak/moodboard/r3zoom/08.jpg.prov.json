@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/08.jpg",
+ "made": "2026-11-12T13:37:22.441Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Low Earth orbit at night, no window frame, the curve of the Earth across the top third: the whole of Great Britain below, almost all of it gone dark, only the faint ghost outlines of towns left, and scattered across the island like sparks on black cloth, thirty tiny orange flashes of fire, a few with long thin smoke shadows. London alone still a small amber blot. Over the North Sea, the first blue edge of dawn creeps along the horizon. Long lens, quiet, an astronaut's photograph, black space. 16:9, no text.",
+ "source_id": "06ab372b-28af-407e-83f5-361da48251ec"
+}

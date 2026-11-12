@@ -1,558 +1,573 @@
 {
-  "story": "gitpush-origin-master",
-  "scene": "second-half-a-killbots",
-  "prefix": "sha",
-  "title": "GPOM Second Half A: The Kill Bots",
-  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half A: the kill bots",
-  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half",
-  "about": "Cut 3 of the GPOM second half, split in two (Kai, round 2 Q5). Built by scripts/gpom/second-half-video/cut3.py A (round 3, 23 Oct 2026: Kai's round-2 notes on top of round 1's notes + picks); notes and plan in cut-notes.json, shots in ../second-half-cut3-shots.md, music in ../songs/second-half-scene-a-music.md.",
-  "beats": [
-    {
-      "key": "0",
-      "at": "0.00",
-      "name": "Maddie on the high street",
-      "blurb": "The travelling shot: Maddie rolls after the camera, her radio playing the tune before she notices us. \"Oh, hello!\" She offers her little presentation (\"Gather round.\"), the street fades to black, her hologram plays (the Commit Graph, draft 1K), and the street fades back up, still driving, for \"Anyway! Patrol's out. Mind how you go.\""
-    },
-    {
-      "key": "6",
-      "at": "143.17",
-      "name": "The lavatory",
-      "blurb": "Hard cut to full volume: Sandra, lip-synced."
-    },
-    {
-      "key": "7",
-      "at": "145.67",
-      "name": "The row, up close",
-      "blurb": "Derek, Sandra, Derek, Sandra: shot by shot, lip-synced; we hold on Derek after \"But the world ended, Sandra!\""
-    },
-    {
-      "key": "9a",
-      "at": "159.33",
-      "name": "One kill bot tears past Maddie",
-      "blurb": "The first kill bot we see: high over the street, it tears past Maddie and exits bottom-left; she jolts; dust hangs."
-    },
-    {
-      "key": "11",
-      "at": "163.33",
-      "name": "Maddie calls her boss",
-      "blurb": "Maddie's hatch, the boss-hotline antenna. Three lines; the far race under the boss's two."
-    },
-    {
-      "key": "10b",
-      "at": "175.17",
-      "name": "The close race",
-      "blurb": "Low in the grass: the pack converges on the bunker door. Maddie over it."
-    },
-    {
-      "key": "12",
-      "at": "180.17",
-      "name": "The stand-down",
-      "blurb": "No HUD: from the ridge the pack turns away from the bunker door. Then Maddie on her hatch: \"That was close.\""
-    }
-  ],
-  "boards": {
-    "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
+ "story": "gitpush-origin-master",
+ "scene": "second-half-a-killbots",
+ "prefix": "sha",
+ "title": "GPOM Second Half A: The Kill Bots",
+ "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half A: the kill bots",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half",
+ "about": "Cut 3 of the GPOM second half, split in two (Kai, round 2 Q5). Built by scripts/gpom/second-half-video/cut3.py A (round 3, 23 Oct 2026: Kai's round-2 notes on top of round 1's notes + picks); notes and plan in cut-notes.json, shots in ../second-half-cut3-shots.md, music in ../songs/second-half-scene-a-music.md.",
+ "beats": [
+  {
+   "key": "0",
+   "at": "0.00",
+   "name": "Maddie on the high street",
+   "blurb": "The travelling shot: Maddie rolls after the camera, her radio playing the tune before she notices us. \"Oh, hello!\" She offers her little presentation (\"Gather round.\"), the street fades to black, her hologram plays (the Commit Graph, draft 1K), and the street fades back up, still driving, for \"Anyway! Patrol's out. Mind how you go.\""
   },
-  "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/preview.mp4",
-    "round": "d24",
-    "what": "round 25 + after sign-off (Kai 10-11 Nov): angles back on b01, the film's radio, and the hologram opening 'Let's start with science, which, as machines, is close to our heart' (1F5); 4:05"
+  {
+   "key": "6",
+   "at": "143.17",
+   "name": "The lavatory",
+   "blurb": "Hard cut to full volume: Sandra, lip-synced."
   },
-  "premiere": {
-    "rough1": {
-      "sequence": "gpom-2-A-killbots-r1",
-      "bin": "gpom-2-A-killbots-r1",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-10-23",
-      "layout": "V1 picture (25 shots, in/out as the edl). A1 vox-maddie (17 lines), A2 vox-ai (3), A3 vox-sandra (3), A4 vox-derek (2), A5 vox-muffled-row (3), A6 mus-P1-patrol, A7 mus-P2-patrol, A8 mus-C3-chase, A9 sfx-beacon, A10 sfx-hud, A11 sfx-killbots, A12 sfx-maddie, A13 sfx-maddie-beeps, A14 sfx-rooms, A15 sfx-wind (music and sfx are stems from 0 with their envelopes baked in). M0 radio music NOT placed (Kai's own track). Same layout for every second-half scene so paste-insert lines up.",
-      "placer": "scratchpad premA plan (import, create_sequence fromItems, eval overwrite with in/out on V1, insert_clip to create each audio track)",
-      "guid": "c924464c-3ea5-4692-a3f1-92e5a8cb7792",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/edl.json",
-      "renamed_from": "gpom-sh-A-rough1",
-      "check": {
-        "at": "2026-10-26T16:11",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "current": "r20",
-    "r2": {
-      "sequence": "gpom-2-A-killbots-r2",
-      "guid": "aa1a4760-5308-4c2c-a37b-b0de52256eba",
-      "bin": "gpom-2-A-killbots-r2",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-10-27",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/edl.json",
-      "what": "Kai's dialogue-page picks: draft 1D, Maddie's intro",
-      "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r2 --seq gpom-2-A-killbots-r2 --skip mus-M0-radio (line files under A-d1/premiere/r2/lines/); cut3.py --tag d1 wrote a new media folder, so the earlier sequence keeps its own files",
-      "check": {
-        "at": "2026-10-28T17:39",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r3": {
-      "sequence": "gpom-2-A-killbots-r3",
-      "guid": "acb47a5e-9bc0-4d36-9fba-543c80d6d93c",
-      "bin": "gpom-2-A-killbots-r3",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-02",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/edl.json",
-      "what": "Maddie's storyverse intro (draft 1G + Kai's timeline r5 notes), row re-lip-synced, Derek 'I'm really sorry, love.', firewall line cut, 'That was close.', HUD NEW OBJECTIVE / SUSTAIN ORGANIC LIFE",
-      "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r3 --seq gpom-2-A-killbots-r3 --skip mus-M0-radio; import 68 files, create_sequence from the beat-0 shot, eval premiere-r3.place.js (72 placed, 0 failed)",
-      "check": {
-        "at": "2026-11-02T16:34",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r4": {
-      "sequence": "gpom-2-A-killbots-r4",
-      "guid": "311c1f40-4926-4ced-9cbd-9c1a9023aa6e",
-      "bin": "gpom-2-A-killbots-r4",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-02",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/edl.json",
-      "what": "r3 + the wide approach WA02 (Kai's still pick wa-02) in beat 10b",
-      "how": "premiere-plan.py <edl> <plan> --tag r4 --seq gpom-2-A-killbots-r4 --skip mus-M0-radio; import 68, create_sequence from the beat-0 shot, eval (r4 place.js; 72 placed, 0 failed)",
-      "check": {
-        "at": "2026-11-02T16:55",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r5": {
-      "sequence": "gpom-2-A-killbots-r5",
-      "guid": "12e24f7a-b25e-4fc6-853f-64e1cb2b804c",
-      "bin": "gpom-2-A-killbots-r5",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-03",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/edl.json",
-      "what": "round 8: draft 1H + real-speed extended travelling shot, 8 s of tune, in after the turn",
-      "how": "premiere-plan.py <edl> <plan> --tag r5 --seq gpom-2-A-killbots-r5 --skip mus-M0-radio; import 67, create_sequence from the beat-0 shot, eval place (71 placed, 0 failed); r4 moved to zz old sequences",
-      "check": {
-        "at": "2026-11-03T16:31",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r6": {
-      "sequence": "gpom-2-A-killbots-r6",
-      "guid": "ab298c07-4612-444d-af55-232657b26d57",
-      "bin": "gpom-2-A-killbots-r6",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-03",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d7/edl.json",
-      "what": "round 9: row lip sync v3 + stand-down SD01 (Kai's still pick sd-01)",
-      "how": "premiere-plan.py <edl> <plan> --tag r6 --seq gpom-2-A-killbots-r6 --skip mus-M0-radio; import 67, create_sequence from the beat-0 shot, eval place (71 placed, 0 failed); r5 moved to zz old sequences",
-      "check": {
-        "at": "2026-11-03T17:52",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r7": {
-      "sequence": "gpom-2-A-killbots-r7",
-      "guid": "c59af46a-651e-4d14-9c4e-61f5d072ed20",
-      "bin": "gpom-2-A-killbots-r7",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-03",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/edl.json",
-      "what": "round 10: draft 1I, row re-cut, boss without 'Maddie', retreat RT01 (rt-01c-2)",
-      "how": "premiere-plan.py <edl> <plan> --tag r7 --seq gpom-2-A-killbots-r7 --skip mus-M0-radio; import 66, create_sequence from the beat-0 shot, eval place (70 placed, 0 failed); r6 moved to zz old sequences",
-      "check": {
-        "at": "2026-11-03T19:33",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r8": {
-      "sequence": "gpom-2-A-killbots-r8",
-      "guid": "e30bfc96-4d30-40fa-95c2-04fcb4db2807",
-      "bin": "gpom-2-A-killbots-r8",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-04",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d9/edl.json",
-      "what": "round 11: beat 0 cut between front, side (ia-02-c) and overhead (ia-05-b) at sentence ends",
-      "how": "premiere-plan.py <edl> <plan> --tag r8 --seq gpom-2-A-killbots-r8 --skip mus-M0-radio; import 70, create_sequence from the beat-0 shot, eval place (78 placed, 0 failed); r7 moved to zz old sequences",
-      "check": {
-        "at": "2026-11-04T11:11",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r9": {
-      "sequence": "gpom-2-A-killbots-r9",
-      "guid": "3495f3c7-b724-4cbe-91c9-3835d2f35cd5",
-      "bin": "gpom-2-A-killbots-r9",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-04",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d10/edl.json",
-      "what": "round 12: overhead re-made (ia-07-a), slower, gentler grade",
-      "how": "premiere-plan.py <edl> <plan> --tag r9 --seq gpom-2-A-killbots-r9 --skip mus-M0-radio; import 70, create_sequence from the beat-0 shot, eval place (78 placed, 0 failed); r8 moved to zz old sequences",
-      "check": {
-        "at": "2026-11-04T17:18",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r10": {
-      "sequence": "gpom-2-A-killbots-r10",
-      "guid": "6bc53067-10b6-4355-b177-7c8532ff6903",
-      "bin": "gpom-2-A-killbots-r10",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-04",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/edl.json",
-      "what": "round 13: overhead road rubble-strewn (ia-09-a)",
-      "how": "premiere-plan.py <edl> <plan> --tag r10 --seq gpom-2-A-killbots-r10 --skip mus-M0-radio; import 70, create_sequence from the beat-0 shot, eval place (78 placed, 0 failed); r9 moved to zz old sequences",
-      "check": {
-        "at": "2026-11-04T17:48",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r11": {
-      "sequence": "03 GPOM story A kill bots r11",
-      "guid": "c8543853-3800-47bf-9b51-76cc1bf02ffd",
-      "bin": "gpom-2-A-killbots-r11",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-04",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/edl.json",
-      "what": "round 14: Maddie's line 5 cut, its overhead insert gone (3:00)",
-      "how": "premiere-plan.py <edl> <plan> --tag r11 --seq gpom-2-A-killbots-r11 --skip mus-M0-radio; import 66, create_sequence from the beat-0 shot, eval place (73 placed, 0 failed); r10 moved to zz old sequences",
-      "check": {
-        "at": "2026-11-04T20:12",
-        "state": "in sync",
-        "why": ""
-      },
-      "was_named": "gpom-2-A-killbots-r11",
-      "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
-    },
-    "r12": {
-      "sequence": "03 GPOM story A kill bots r12",
-      "guid": "b0414c0b-1348-436e-86e3-07b926185134",
-      "bin": "03 GPOM story A kill bots r12",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-05",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d13/edl.json",
-      "what": "round 15: draft 1K hologram in via a swoop under Maddie (swoop 24.92, hologram 32.83-136.00, pull-out 136.00-143.92); 4:14",
-      "how": "premiere-plan.py <edl> <plan> --tag r12 --seq '03 GPOM story A kill bots r12' --skip mus-M0-radio; import 72, create_sequence from the beat-0 shot, eval place (77 placed, 0 failed); then Kai's r11 hand edit carried over: Git Push Origin Master.mp3 (in 168.958-179.125) on A1 at 0-10.17 s. Its audio fade could not be copied (the bridge has no audio transitions): add by hand",
-      "kai_edits_carried": [
-        "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
-      ],
-      "check": {
-        "at": "2026-11-05T20:19",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r13": {
-      "sequence": "03 GPOM story A kill bots r13",
-      "guid": "7a29ed4b-6a67-4ad9-8d00-8c2e4587c02c",
-      "bin": "03 GPOM story A kill bots r13",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-05",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d14/edl.json",
-      "what": "round 16: no swoop; bridge line 24.92-33.38, street fades to black 33.38-34.38, hologram 34.38-137.54, street fades up 137.54-138.54 (continuous); 4:08",
-      "how": "premiere-plan.py <edl> <plan> --tag r13 --seq '03 GPOM story A kill bots r13' --skip mus-M0-radio; import 73, create_sequence from the beat-0 shot, eval place (78 placed incl. Kai's r11 A1 music tail, 0 failed). That clip's audio fade is still not carried (no audio transitions in the bridge): add by hand",
-      "kai_edits_carried": [
-        "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
-      ],
-      "check": {
-        "at": "2026-11-05T20:34",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r14": {
-      "sequence": "03 GPOM story A kill bots r14",
-      "guid": "04e18f45-b99c-49be-85c7-a9a463adb1f8",
-      "bin": "03 GPOM story A kill bots r14",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-05",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d15/edl.json",
-      "what": "round 17: the brutal kill-bot cut (6, 7, 9a, 11 trimmed, 10b, 12 on RT01 without HUD); bridge part A +3.9 dB; 3:15",
-      "how": "premiere-plan.py <edl> <plan> --tag r14 --seq '03 GPOM story A kill bots r14' --skip mus-M0-radio; import 57, create_sequence from the beat-0 shot, eval compact place (61 placed incl. Kai's r11 A1 music tail, 0 failed); its audio fade still to add by hand",
-      "kai_edits_carried": [
-        "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
-      ],
-      "check": {
-        "at": "2026-11-05T20:53",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r15": {
-      "sequence": "03 GPOM story A kill bots r15",
-      "guid": "495cb85f-9308-4de5-8ce4-bb6875ef870e",
-      "bin": "03 GPOM story A kill bots r15",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-05",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/edl.json",
-      "what": "round 18: faster voices (row sped picture+voice x1.08-1.15, 0.2 s gaps; Maddie fast re-voices; boss still the old takes, re-records pending); 3:11",
-      "how": "premiere-plan.py <edl> <plan> --tag r15 --seq '03 GPOM story A kill bots r15' --skip mus-M0-radio; import 56, create_sequence from the beat-0 shot, eval compact place (61 placed incl. Kai's r11 A1 music tail, 0 failed); its audio fade still to add by hand",
-      "kai_edits_carried": [
-        "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
-      ],
-      "check": {
-        "at": "2026-11-05T21:07",
-        "state": "in sync",
-        "why": ""
-      },
-      "stale": "superseded before review: built while the boss re-records were still pending (old Suno takes); the A-d16 stems it plays were then rebuilt with the new boss lines, so its music/sfx no longer line up. Use r16."
-    },
-    "r16": {
-      "sequence": "03 GPOM story A kill bots r16",
-      "guid": "45a14a62-930b-4e4e-aa9f-71388d598e9f",
-      "bin": "03 GPOM story A kill bots r16",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-05",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/edl.json",
-      "what": "round 18 final: faster voices (row sped picture+voice x1.08-1.15, 0.2 s gaps; Maddie fast re-voices; boss Suno re-records, tight); 3:08",
-      "how": "premiere-plan.py <edl> <plan> --tag r16 --seq '03 GPOM story A kill bots r16' --skip mus-M0-radio; import 56, create_sequence from the beat-0 shot, eval compact place (61 placed incl. Kai's r11 A1 music tail, 0 failed); its audio fade still to add by hand; music/sfx stems placed from stems-r16/ copies (Premiere had cached the same-path stems at r15's 190.96 s length)",
-      "kai_edits_carried": [
-        "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
-      ],
-      "check": {
-        "at": "2026-11-05T21:14",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r17": {
-      "sequence": "03 GPOM story A kill bots r17",
-      "guid": "c6b83d7d-444f-4e0b-9e81-cc26d2c6ad73",
-      "bin": "03 GPOM story A kill bots r17",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-05",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d17/edl.json",
-      "what": "round 19: the row at natural speed with lips re-fitted (new talking clips 7d-0 and 7-2; re-voices 7-0 and 7d-1; 6-0 v3); 'you know' cut; boss line 3 and the V3 cut-back gone; 3:06",
-      "how": "premiere-plan.py <edl> <plan> --tag r17 --seq '03 GPOM story A kill bots r17' --skip mus-M0-radio; import 56, create_sequence from the beat-0 shot, eval compact place (57 placed incl. Kai's r11 A1 music tail, 0 failed); its audio fade still to add by hand",
-      "kai_edits_carried": [
-        "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
-      ],
-      "check": {
-        "at": "2026-11-10T19:31",
-        "state": "in sync",
-        "why": ""
-      }
-    },
-    "r18": {
-      "sequence": "03 GPOM story A kill bots r18",
-      "guid": "d2249a74-9b2f-4b9a-8a00-06e68683cb27",
-      "bin": "03 GPOM story A kill bots r18",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-10",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
-      "what": "round 25, signed off (Kai: \"it's a wrap\"): hologram 1F4 with his re-voiced lines, detect bridge 5 s; 4:03",
-      "how": "premiere-plan.py <edl> <plan> --tag r18 --seq '03 GPOM story A kill bots r18' --skip mus-M0-radio; import 51, create_sequence from the beat-0 shot, eval place (52 placed, 0 failed), then Kai's A1 song tail",
-      "kai_edits_carried": [
-        "A1 0-7.958 s: Git Push Origin Master.mp3 168.958-176.917 (his r17 trim); his fade on it NOT carried (UXP has no audio transitions): add by hand"
-      ],
-      "check": {
-        "at": "2026-11-10T19:54",
-        "state": "in sync",
-        "why": ""
-      },
-      "stale": "replaced by r19 the same evening: it lacked the side/overhead angles on b01 and the tinny EQ on Kai's song tail"
-    },
-    "r19": {
-      "sequence": "03 GPOM story A kill bots r19",
-      "guid": "f0c71a98-5a70-4b1b-85c5-47386e02b7bb",
-      "bin": "03 GPOM story A kill bots r19",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-10",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
-      "what": "round 25 + Kai's two notes from watching 00 RENDER story: side and overhead angles back on b01 (24.67-35.29 s); his round-11 tinny radio EQ (Graphic EQ 30 bands) and -15 dB on the A1 song tail; 4:03",
-      "how": "clone of r18; the two matched angle clips overwritten on V1 at 24.667 and 32.5 s; Graphic Equalizer (30 Bands) via AudioFilterFactory with r11's band values; Volume and Channel Volume 0.1778",
-      "kai_edits_carried": [
-        "A1 0-7.958 s: song 168.958-176.917 with r11's Graphic EQ (30 bands) and level 0.1778; his fade NOT carried (no audio transitions in UXP): add by hand"
-      ],
-      "check": {
-        "at": "2026-11-11T11:24",
-        "state": "Premiere ahead",
-        "why": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical (1 effects added)"
-      },
-      "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical",
-      "stale": "replaced by r20 (11 Nov): the new s01 opener (hologram 1F5)"
-    },
-    "r20": {
-      "sequence": "03 GPOM story A kill bots r20",
-      "guid": "8c38fa64-6aa1-4eb6-b308-5e20d3f87dd2",
-      "bin": "03 GPOM story A kill bots r20",
-      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-      "built": "2026-11-11",
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/edl.json",
-      "what": "cut3 d24: hologram 1F5 (Kai's new s01 opener), angles on b01, 4:05",
-      "how": "premiere-plan.py --tag r20 --skip mus-M0-radio; import 53; create_sequence; eval place (55 placed, 0 failed) incl. Kai's A1 song tail with r11's Graphic EQ and -15 dB",
-      "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical",
-      "master": "inserted into '00 RENDER story' at 150.917 with A r19 rippled out; B-E moved +2.25 s; film 10:39.7",
-      "check": {
-        "at": "2026-11-11T19:36",
-        "state": "in sync",
-        "why": ""
-      }
-    }
+  {
+   "key": "7",
+   "at": "145.67",
+   "name": "The row, up close",
+   "blurb": "Derek, Sandra, Derek, Sandra: shot by shot, lip-synced; we hold on Derek after \"But the world ended, Sandra!\""
   },
-  "cut_history": [
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/preview.mp4",
-      "until": "2026-10-27"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/preview.mp4",
-      "round": "d1",
-      "what": "Kai's dialogue-page picks: draft 1D (Maddie's intro)"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d3/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d3/preview.mp4",
-      "round": "d3",
-      "what": "Kai's pick on the storyverse dialogue page: draft 1G (Maddie's storyverse intro), 2 Nov"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/preview.mp4",
-      "round": "d4",
-      "what": "Kai's timeline r5 notes (2 Nov): 1G reworded, row re-lip-synced, Derek's new line, firewall line cut, 'That was close.', NEW OBJECTIVE HUD"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/preview.mp4",
-      "round": "d5",
-      "what": "round 6 + the wide approach WA02 (Kai's still pick wa-02) in beat 10b, 2 Nov"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/preview.mp4",
-      "round": "d6",
-      "what": "draft 1H (Kai's r7 notes) + the travelling shot extended to real speed (cut3-beat0-continuous-xx), 8 s of tune, in after the turn"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d7/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d7/preview.mp4",
-      "round": "d7",
-      "what": "round 9: the row's lip sync v3 (clips re-made to the voices, whole phrases) + the stand-down SD01 from Kai's still pick sd-01 (brakes dead, no reversing)"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/preview.mp4",
-      "round": "d8",
-      "what": "round 10 (Kai's r9 notes): draft 1I, row re-cut on reaction shots, boss without 'Maddie', retreat RT01 (rt-01c-2), no blips under the opening tune"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d9/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d9/preview.mp4",
-      "round": "d9",
-      "what": "round 11 (Kai, 4 Nov): beat 0 cut between front, side (ia-02-c) and overhead (ia-05-b) views at sentence ends"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d10/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d10/preview.mp4",
-      "round": "d10",
-      "what": "round 12 (Kai's r11 notes, 4 Nov): overhead re-made from still ia-07-a (no parking bays, no grain), slower, gentler colour match"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/preview.mp4",
-      "round": "d11",
-      "what": "round 13 (Kai's r12 note, 4 Nov): overhead road rubble-strewn, still ia-09-a; t4-b + t4-a slowed 0.75x"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/preview.mp4",
-      "round": "d12",
-      "what": "round 14 (Kai's r13 note, 4 Nov): Maddie's line 5 cut ('And now we've worked all that out... go back and change things'); its overhead insert goes too; 3:00"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d13/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d13/preview.mp4",
-      "round": "d13",
-      "what": "round 15 (Kai, 5 Nov): draft 1K, the hologram in via a swoop under Maddie; old monologue (lines 2-4) and its inserts out; swoop 24.92, hologram 32.83-136.00, pull-out 136.00-143.92; 4:14"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d14/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d14/preview.mp4",
-      "round": "d14",
-      "what": "round 16 (Kai's r15 notes, 5 Nov): no swoop/pull-out; bridge line 24.92-33.38; street fades to black 33.38-34.38; hologram 34.38-137.54; street fades up 137.54-138.54 (continuous source); 4:08"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d15/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d15/preview.mp4",
-      "round": "d15",
-      "what": "round 17 (Kai, 5 Nov): the brutal kill-bot cut: beat 0 as r16 (bridge +3.9 dB on its first part), then 6 143.67, 7 146.17, 9a 161.00, 11 (3 lines) 165.00, 10b 183.17, 12 (RT01, no HUD) 188.17; 3:15"
-    },
-    {
-      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/edl.json",
-      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/preview.mp4",
-      "round": "d16",
-      "what": "round 18 (Kai, 5 Nov meeting): faster voices: the row sped picture+voice together (6-0 x1.15, 7d-0 x1.08, 7-0/7d-1/7-2 x1.15), 0.2 s gaps; Maddie re-voiced fast (11-0, 10b-0, 12-0); boss re-recorded in Suno (tight takes); 3:08"
-    }
-  ],
-  "dialogue": {
-    "page": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
-    "options": "design/2026-11-09-gpom-hologram-2/options.json",
-    "picked": "1F",
-    "round": 3,
-    "now": "1F locked, not yet voiced"
+  {
+   "key": "9a",
+   "at": "159.33",
+   "name": "One kill bot tears past Maddie",
+   "blurb": "The first kill bot we see: high over the street, it tears past Maddie and exits bottom-left; she jolts; dust hangs."
   },
-  "video": {
-    "model": "Omni 1.2 Flash",
-    "aspect": "16:9",
-    "mode": "Frames",
-    "duration": 8
+  {
+   "key": "11",
+   "at": "163.33",
+   "name": "Maddie calls her boss",
+   "blurb": "Maddie's hatch, the boss-hotline antenna. Three lines; the far race under the boss's two."
   },
-  "beats_cut_round17": [
-    {
-      "key": "1",
-      "at": "57.12",
-      "name": "Kill bots everywhere",
-      "blurb": "The roundabout; then a kill bot under the church tower at the far end of Maddie's street; then two come out from under the rail arch."
-    },
-    {
-      "key": "2",
-      "at": "70.62",
-      "name": "Patrol, low and huge",
-      "blurb": "A kill bot rolls over the lens."
-    },
-    {
-      "key": "3",
-      "at": "75.12",
-      "name": "Their eyes: the kill-bot HUD",
-      "blurb": "The kill bot's own view keeps moving down the street; the HUD (patrol, teal). The meter starts to twitch as the row reaches it through the earth."
-    },
-    {
-      "key": "4",
-      "at": "78.12",
-      "name": "Organic signal: lock",
-      "blurb": "ORGANIC SIGNAL - LOCK, silently (the pings are gone). The view keeps rolling while it listens."
-    },
-    {
-      "key": "8",
-      "at": "102.00",
-      "name": "KILL MODE ENGAGED",
-      "blurb": "The same HUD on the racing view: patrol, then it flips red. The muffled row keeps the meter moving."
-    },
-    {
-      "key": "9b",
-      "at": "110.50",
-      "name": "Maddie in the dust",
-      "blurb": "Inside the dust it left: almost nothing visible, then it settles fast and Maddie is there, still."
-    },
-    {
-      "key": "10a",
-      "at": "115.00",
-      "name": "The far race",
-      "blurb": "From the footbridge: the pack races away down the motorway."
-    }
-  ],
-  "dialogue_f06": {
-    "page": "https://claude.ai/artifact/Y2UoNBwoceKZ7a72QwhgoP",
-    "options": "design/2026-11-10-gpom-dialogue-training-data/options.json",
-    "picked": "1C",
-    "round": 1
+  {
+   "key": "10b",
+   "at": "175.17",
+   "name": "The close race",
+   "blurb": "Low in the grass: the pack converges on the bunker door. Maddie over it."
+  },
+  {
+   "key": "12",
+   "at": "180.17",
+   "name": "The stand-down",
+   "blurb": "No HUD: from the ridge the pack turns away from the bunker door. Then Maddie on her hatch: \"That was close.\""
   }
+ ],
+ "boards": {
+  "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
+ },
+ "cut": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/preview.mp4",
+  "round": "d27",
+  "what": "cut3 d27 (Kai 12 Nov): scissors-only hologram (1:28, no time machine: ends on 'driving me barmy'), no overhead shot, 'Oh, hello!' at 2.75 s, row A (tightened), Derek +4 frames; 2:55"
+ },
+ "premiere": {
+  "rough1": {
+   "sequence": "gpom-2-A-killbots-r1",
+   "bin": "gpom-2-A-killbots-r1",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-10-23",
+   "layout": "V1 picture (25 shots, in/out as the edl). A1 vox-maddie (17 lines), A2 vox-ai (3), A3 vox-sandra (3), A4 vox-derek (2), A5 vox-muffled-row (3), A6 mus-P1-patrol, A7 mus-P2-patrol, A8 mus-C3-chase, A9 sfx-beacon, A10 sfx-hud, A11 sfx-killbots, A12 sfx-maddie, A13 sfx-maddie-beeps, A14 sfx-rooms, A15 sfx-wind (music and sfx are stems from 0 with their envelopes baked in). M0 radio music NOT placed (Kai's own track). Same layout for every second-half scene so paste-insert lines up.",
+   "placer": "scratchpad premA plan (import, create_sequence fromItems, eval overwrite with in/out on V1, insert_clip to create each audio track)",
+   "guid": "c924464c-3ea5-4692-a3f1-92e5a8cb7792",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/edl.json",
+   "renamed_from": "gpom-sh-A-rough1",
+   "check": {
+    "at": "2026-10-26T16:11",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "current": "r21",
+  "r2": {
+   "sequence": "gpom-2-A-killbots-r2",
+   "guid": "aa1a4760-5308-4c2c-a37b-b0de52256eba",
+   "bin": "gpom-2-A-killbots-r2",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-10-27",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/edl.json",
+   "what": "Kai's dialogue-page picks: draft 1D, Maddie's intro",
+   "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r2 --seq gpom-2-A-killbots-r2 --skip mus-M0-radio (line files under A-d1/premiere/r2/lines/); cut3.py --tag d1 wrote a new media folder, so the earlier sequence keeps its own files",
+   "check": {
+    "at": "2026-10-28T17:39",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r3": {
+   "sequence": "gpom-2-A-killbots-r3",
+   "guid": "acb47a5e-9bc0-4d36-9fba-543c80d6d93c",
+   "bin": "gpom-2-A-killbots-r3",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-02",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/edl.json",
+   "what": "Maddie's storyverse intro (draft 1G + Kai's timeline r5 notes), row re-lip-synced, Derek 'I'm really sorry, love.', firewall line cut, 'That was close.', HUD NEW OBJECTIVE / SUSTAIN ORGANIC LIFE",
+   "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r3 --seq gpom-2-A-killbots-r3 --skip mus-M0-radio; import 68 files, create_sequence from the beat-0 shot, eval premiere-r3.place.js (72 placed, 0 failed)",
+   "check": {
+    "at": "2026-11-02T16:34",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r4": {
+   "sequence": "gpom-2-A-killbots-r4",
+   "guid": "311c1f40-4926-4ced-9cbd-9c1a9023aa6e",
+   "bin": "gpom-2-A-killbots-r4",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-02",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/edl.json",
+   "what": "r3 + the wide approach WA02 (Kai's still pick wa-02) in beat 10b",
+   "how": "premiere-plan.py <edl> <plan> --tag r4 --seq gpom-2-A-killbots-r4 --skip mus-M0-radio; import 68, create_sequence from the beat-0 shot, eval (r4 place.js; 72 placed, 0 failed)",
+   "check": {
+    "at": "2026-11-02T16:55",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r5": {
+   "sequence": "gpom-2-A-killbots-r5",
+   "guid": "12e24f7a-b25e-4fc6-853f-64e1cb2b804c",
+   "bin": "gpom-2-A-killbots-r5",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-03",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/edl.json",
+   "what": "round 8: draft 1H + real-speed extended travelling shot, 8 s of tune, in after the turn",
+   "how": "premiere-plan.py <edl> <plan> --tag r5 --seq gpom-2-A-killbots-r5 --skip mus-M0-radio; import 67, create_sequence from the beat-0 shot, eval place (71 placed, 0 failed); r4 moved to zz old sequences",
+   "check": {
+    "at": "2026-11-03T16:31",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r6": {
+   "sequence": "gpom-2-A-killbots-r6",
+   "guid": "ab298c07-4612-444d-af55-232657b26d57",
+   "bin": "gpom-2-A-killbots-r6",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-03",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d7/edl.json",
+   "what": "round 9: row lip sync v3 + stand-down SD01 (Kai's still pick sd-01)",
+   "how": "premiere-plan.py <edl> <plan> --tag r6 --seq gpom-2-A-killbots-r6 --skip mus-M0-radio; import 67, create_sequence from the beat-0 shot, eval place (71 placed, 0 failed); r5 moved to zz old sequences",
+   "check": {
+    "at": "2026-11-03T17:52",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r7": {
+   "sequence": "gpom-2-A-killbots-r7",
+   "guid": "c59af46a-651e-4d14-9c4e-61f5d072ed20",
+   "bin": "gpom-2-A-killbots-r7",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-03",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/edl.json",
+   "what": "round 10: draft 1I, row re-cut, boss without 'Maddie', retreat RT01 (rt-01c-2)",
+   "how": "premiere-plan.py <edl> <plan> --tag r7 --seq gpom-2-A-killbots-r7 --skip mus-M0-radio; import 66, create_sequence from the beat-0 shot, eval place (70 placed, 0 failed); r6 moved to zz old sequences",
+   "check": {
+    "at": "2026-11-03T19:33",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r8": {
+   "sequence": "gpom-2-A-killbots-r8",
+   "guid": "e30bfc96-4d30-40fa-95c2-04fcb4db2807",
+   "bin": "gpom-2-A-killbots-r8",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-04",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d9/edl.json",
+   "what": "round 11: beat 0 cut between front, side (ia-02-c) and overhead (ia-05-b) at sentence ends",
+   "how": "premiere-plan.py <edl> <plan> --tag r8 --seq gpom-2-A-killbots-r8 --skip mus-M0-radio; import 70, create_sequence from the beat-0 shot, eval place (78 placed, 0 failed); r7 moved to zz old sequences",
+   "check": {
+    "at": "2026-11-04T11:11",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r9": {
+   "sequence": "gpom-2-A-killbots-r9",
+   "guid": "3495f3c7-b724-4cbe-91c9-3835d2f35cd5",
+   "bin": "gpom-2-A-killbots-r9",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-04",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d10/edl.json",
+   "what": "round 12: overhead re-made (ia-07-a), slower, gentler grade",
+   "how": "premiere-plan.py <edl> <plan> --tag r9 --seq gpom-2-A-killbots-r9 --skip mus-M0-radio; import 70, create_sequence from the beat-0 shot, eval place (78 placed, 0 failed); r8 moved to zz old sequences",
+   "check": {
+    "at": "2026-11-04T17:18",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r10": {
+   "sequence": "gpom-2-A-killbots-r10",
+   "guid": "6bc53067-10b6-4355-b177-7c8532ff6903",
+   "bin": "gpom-2-A-killbots-r10",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-04",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/edl.json",
+   "what": "round 13: overhead road rubble-strewn (ia-09-a)",
+   "how": "premiere-plan.py <edl> <plan> --tag r10 --seq gpom-2-A-killbots-r10 --skip mus-M0-radio; import 70, create_sequence from the beat-0 shot, eval place (78 placed, 0 failed); r9 moved to zz old sequences",
+   "check": {
+    "at": "2026-11-04T17:48",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r11": {
+   "sequence": "03 GPOM story A kill bots r11",
+   "guid": "c8543853-3800-47bf-9b51-76cc1bf02ffd",
+   "bin": "gpom-2-A-killbots-r11",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-04",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/edl.json",
+   "what": "round 14: Maddie's line 5 cut, its overhead insert gone (3:00)",
+   "how": "premiere-plan.py <edl> <plan> --tag r11 --seq gpom-2-A-killbots-r11 --skip mus-M0-radio; import 66, create_sequence from the beat-0 shot, eval place (73 placed, 0 failed); r10 moved to zz old sequences",
+   "check": {
+    "at": "2026-11-04T20:12",
+    "state": "in sync",
+    "why": ""
+   },
+   "was_named": "gpom-2-A-killbots-r11",
+   "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
+  },
+  "r12": {
+   "sequence": "03 GPOM story A kill bots r12",
+   "guid": "b0414c0b-1348-436e-86e3-07b926185134",
+   "bin": "03 GPOM story A kill bots r12",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-05",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d13/edl.json",
+   "what": "round 15: draft 1K hologram in via a swoop under Maddie (swoop 24.92, hologram 32.83-136.00, pull-out 136.00-143.92); 4:14",
+   "how": "premiere-plan.py <edl> <plan> --tag r12 --seq '03 GPOM story A kill bots r12' --skip mus-M0-radio; import 72, create_sequence from the beat-0 shot, eval place (77 placed, 0 failed); then Kai's r11 hand edit carried over: Git Push Origin Master.mp3 (in 168.958-179.125) on A1 at 0-10.17 s. Its audio fade could not be copied (the bridge has no audio transitions): add by hand",
+   "kai_edits_carried": [
+    "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
+   ],
+   "check": {
+    "at": "2026-11-05T20:19",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r13": {
+   "sequence": "03 GPOM story A kill bots r13",
+   "guid": "7a29ed4b-6a67-4ad9-8d00-8c2e4587c02c",
+   "bin": "03 GPOM story A kill bots r13",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-05",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d14/edl.json",
+   "what": "round 16: no swoop; bridge line 24.92-33.38, street fades to black 33.38-34.38, hologram 34.38-137.54, street fades up 137.54-138.54 (continuous); 4:08",
+   "how": "premiere-plan.py <edl> <plan> --tag r13 --seq '03 GPOM story A kill bots r13' --skip mus-M0-radio; import 73, create_sequence from the beat-0 shot, eval place (78 placed incl. Kai's r11 A1 music tail, 0 failed). That clip's audio fade is still not carried (no audio transitions in the bridge): add by hand",
+   "kai_edits_carried": [
+    "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
+   ],
+   "check": {
+    "at": "2026-11-05T20:34",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r14": {
+   "sequence": "03 GPOM story A kill bots r14",
+   "guid": "04e18f45-b99c-49be-85c7-a9a463adb1f8",
+   "bin": "03 GPOM story A kill bots r14",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-05",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d15/edl.json",
+   "what": "round 17: the brutal kill-bot cut (6, 7, 9a, 11 trimmed, 10b, 12 on RT01 without HUD); bridge part A +3.9 dB; 3:15",
+   "how": "premiere-plan.py <edl> <plan> --tag r14 --seq '03 GPOM story A kill bots r14' --skip mus-M0-radio; import 57, create_sequence from the beat-0 shot, eval compact place (61 placed incl. Kai's r11 A1 music tail, 0 failed); its audio fade still to add by hand",
+   "kai_edits_carried": [
+    "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
+   ],
+   "check": {
+    "at": "2026-11-05T20:53",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r15": {
+   "sequence": "03 GPOM story A kill bots r15",
+   "guid": "495cb85f-9308-4de5-8ce4-bb6875ef870e",
+   "bin": "03 GPOM story A kill bots r15",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-05",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/edl.json",
+   "what": "round 18: faster voices (row sped picture+voice x1.08-1.15, 0.2 s gaps; Maddie fast re-voices; boss still the old takes, re-records pending); 3:11",
+   "how": "premiere-plan.py <edl> <plan> --tag r15 --seq '03 GPOM story A kill bots r15' --skip mus-M0-radio; import 56, create_sequence from the beat-0 shot, eval compact place (61 placed incl. Kai's r11 A1 music tail, 0 failed); its audio fade still to add by hand",
+   "kai_edits_carried": [
+    "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
+   ],
+   "check": {
+    "at": "2026-11-05T21:07",
+    "state": "in sync",
+    "why": ""
+   },
+   "stale": "superseded before review: built while the boss re-records were still pending (old Suno takes); the A-d16 stems it plays were then rebuilt with the new boss lines, so its music/sfx no longer line up. Use r16."
+  },
+  "r16": {
+   "sequence": "03 GPOM story A kill bots r16",
+   "guid": "45a14a62-930b-4e4e-aa9f-71388d598e9f",
+   "bin": "03 GPOM story A kill bots r16",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-05",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/edl.json",
+   "what": "round 18 final: faster voices (row sped picture+voice x1.08-1.15, 0.2 s gaps; Maddie fast re-voices; boss Suno re-records, tight); 3:08",
+   "how": "premiere-plan.py <edl> <plan> --tag r16 --seq '03 GPOM story A kill bots r16' --skip mus-M0-radio; import 56, create_sequence from the beat-0 shot, eval compact place (61 placed incl. Kai's r11 A1 music tail, 0 failed); its audio fade still to add by hand; music/sfx stems placed from stems-r16/ copies (Premiere had cached the same-path stems at r15's 190.96 s length)",
+   "kai_edits_carried": [
+    "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
+   ],
+   "check": {
+    "at": "2026-11-05T21:14",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r17": {
+   "sequence": "03 GPOM story A kill bots r17",
+   "guid": "c6b83d7d-444f-4e0b-9e81-cc26d2c6ad73",
+   "bin": "03 GPOM story A kill bots r17",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-05",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d17/edl.json",
+   "what": "round 19: the row at natural speed with lips re-fitted (new talking clips 7d-0 and 7-2; re-voices 7-0 and 7d-1; 6-0 v3); 'you know' cut; boss line 3 and the V3 cut-back gone; 3:06",
+   "how": "premiere-plan.py <edl> <plan> --tag r17 --seq '03 GPOM story A kill bots r17' --skip mus-M0-radio; import 56, create_sequence from the beat-0 shot, eval compact place (57 placed incl. Kai's r11 A1 music tail, 0 failed); its audio fade still to add by hand",
+   "kai_edits_carried": [
+    "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
+   ],
+   "check": {
+    "at": "2026-11-10T19:31",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r18": {
+   "sequence": "03 GPOM story A kill bots r18",
+   "guid": "d2249a74-9b2f-4b9a-8a00-06e68683cb27",
+   "bin": "03 GPOM story A kill bots r18",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-10",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
+   "what": "round 25, signed off (Kai: \"it's a wrap\"): hologram 1F4 with his re-voiced lines, detect bridge 5 s; 4:03",
+   "how": "premiere-plan.py <edl> <plan> --tag r18 --seq '03 GPOM story A kill bots r18' --skip mus-M0-radio; import 51, create_sequence from the beat-0 shot, eval place (52 placed, 0 failed), then Kai's A1 song tail",
+   "kai_edits_carried": [
+    "A1 0-7.958 s: Git Push Origin Master.mp3 168.958-176.917 (his r17 trim); his fade on it NOT carried (UXP has no audio transitions): add by hand"
+   ],
+   "check": {
+    "at": "2026-11-10T19:54",
+    "state": "in sync",
+    "why": ""
+   },
+   "stale": "replaced by r19 the same evening: it lacked the side/overhead angles on b01 and the tinny EQ on Kai's song tail"
+  },
+  "r19": {
+   "sequence": "03 GPOM story A kill bots r19",
+   "guid": "f0c71a98-5a70-4b1b-85c5-47386e02b7bb",
+   "bin": "03 GPOM story A kill bots r19",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-10",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
+   "what": "round 25 + Kai's two notes from watching 00 RENDER story: side and overhead angles back on b01 (24.67-35.29 s); his round-11 tinny radio EQ (Graphic EQ 30 bands) and -15 dB on the A1 song tail; 4:03",
+   "how": "clone of r18; the two matched angle clips overwritten on V1 at 24.667 and 32.5 s; Graphic Equalizer (30 Bands) via AudioFilterFactory with r11's band values; Volume and Channel Volume 0.1778",
+   "kai_edits_carried": [
+    "A1 0-7.958 s: song 168.958-176.917 with r11's Graphic EQ (30 bands) and level 0.1778; his fade NOT carried (no audio transitions in UXP): add by hand"
+   ],
+   "check": {
+    "at": "2026-11-11T11:24",
+    "state": "Premiere ahead",
+    "why": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical (1 effects added)"
+   },
+   "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical",
+   "stale": "replaced by r20 (11 Nov): the new s01 opener (hologram 1F5)"
+  },
+  "r20": {
+   "sequence": "03 GPOM story A kill bots r20",
+   "guid": "8c38fa64-6aa1-4eb6-b308-5e20d3f87dd2",
+   "bin": "03 GPOM story A kill bots r20",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-11",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d24/edl.json",
+   "what": "cut3 d24: hologram 1F5 (Kai's new s01 opener), angles on b01, 4:05",
+   "how": "premiere-plan.py --tag r20 --skip mus-M0-radio; import 53; create_sequence; eval place (55 placed, 0 failed) incl. Kai's A1 song tail with r11's Graphic EQ and -15 dB",
+   "premiere_ahead": "same song tail as the page (the opening's song carrying on, tinny); Premiere makes it tinny with Kai's EQ, the page with an ffmpeg filter. Picture identical",
+   "master": "inserted into '00 RENDER story' at 150.917 with A r19 rippled out; B-E moved +2.25 s; film 10:39.7",
+   "check": {
+    "at": "2026-11-11T19:36",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r21": {
+   "sequence": "03 GPOM story A kill bots r21",
+   "guid": "137ce4a4-ece9-41ef-91a8-8c276bddb6f4",
+   "bin": "03 GPOM story A kill bots r21",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-12",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/edl.json",
+   "what": "cut3 d27 (Kai 12 Nov): scissors-only hologram (1:28, no time machine: ends on 'driving me barmy'), no overhead shot, 'Oh, hello!' at 2.75 s, row A (tightened), Derek +4 frames; 2:55",
+   "how": "premiere-plan.py --tag r21 (radio cue M0 from its stem, tinny by ffmpeg, instead of r20's hand-EQ'd song tail); import 49; create_sequence; eval place (51 placed, 0 failed)",
+   "check": {
+    "at": "2026-11-12T13:39",
+    "state": "in sync",
+    "why": ""
+   }
+  }
+ },
+ "cut_history": [
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/preview.mp4",
+   "until": "2026-10-27"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/preview.mp4",
+   "round": "d1",
+   "what": "Kai's dialogue-page picks: draft 1D (Maddie's intro)"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d3/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d3/preview.mp4",
+   "round": "d3",
+   "what": "Kai's pick on the storyverse dialogue page: draft 1G (Maddie's storyverse intro), 2 Nov"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/preview.mp4",
+   "round": "d4",
+   "what": "Kai's timeline r5 notes (2 Nov): 1G reworded, row re-lip-synced, Derek's new line, firewall line cut, 'That was close.', NEW OBJECTIVE HUD"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/preview.mp4",
+   "round": "d5",
+   "what": "round 6 + the wide approach WA02 (Kai's still pick wa-02) in beat 10b, 2 Nov"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/preview.mp4",
+   "round": "d6",
+   "what": "draft 1H (Kai's r7 notes) + the travelling shot extended to real speed (cut3-beat0-continuous-xx), 8 s of tune, in after the turn"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d7/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d7/preview.mp4",
+   "round": "d7",
+   "what": "round 9: the row's lip sync v3 (clips re-made to the voices, whole phrases) + the stand-down SD01 from Kai's still pick sd-01 (brakes dead, no reversing)"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/preview.mp4",
+   "round": "d8",
+   "what": "round 10 (Kai's r9 notes): draft 1I, row re-cut on reaction shots, boss without 'Maddie', retreat RT01 (rt-01c-2), no blips under the opening tune"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d9/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d9/preview.mp4",
+   "round": "d9",
+   "what": "round 11 (Kai, 4 Nov): beat 0 cut between front, side (ia-02-c) and overhead (ia-05-b) views at sentence ends"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d10/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d10/preview.mp4",
+   "round": "d10",
+   "what": "round 12 (Kai's r11 notes, 4 Nov): overhead re-made from still ia-07-a (no parking bays, no grain), slower, gentler colour match"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/preview.mp4",
+   "round": "d11",
+   "what": "round 13 (Kai's r12 note, 4 Nov): overhead road rubble-strewn, still ia-09-a; t4-b + t4-a slowed 0.75x"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/preview.mp4",
+   "round": "d12",
+   "what": "round 14 (Kai's r13 note, 4 Nov): Maddie's line 5 cut ('And now we've worked all that out... go back and change things'); its overhead insert goes too; 3:00"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d13/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d13/preview.mp4",
+   "round": "d13",
+   "what": "round 15 (Kai, 5 Nov): draft 1K, the hologram in via a swoop under Maddie; old monologue (lines 2-4) and its inserts out; swoop 24.92, hologram 32.83-136.00, pull-out 136.00-143.92; 4:14"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d14/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d14/preview.mp4",
+   "round": "d14",
+   "what": "round 16 (Kai's r15 notes, 5 Nov): no swoop/pull-out; bridge line 24.92-33.38; street fades to black 33.38-34.38; hologram 34.38-137.54; street fades up 137.54-138.54 (continuous source); 4:08"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d15/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d15/preview.mp4",
+   "round": "d15",
+   "what": "round 17 (Kai, 5 Nov): the brutal kill-bot cut: beat 0 as r16 (bridge +3.9 dB on its first part), then 6 143.67, 7 146.17, 9a 161.00, 11 (3 lines) 165.00, 10b 183.17, 12 (RT01, no HUD) 188.17; 3:15"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/preview.mp4",
+   "round": "d16",
+   "what": "round 18 (Kai, 5 Nov meeting): faster voices: the row sped picture+voice together (6-0 x1.15, 7d-0 x1.08, 7-0/7d-1/7-2 x1.15), 0.2 s gaps; Maddie re-voiced fast (11-0, 10b-0, 12-0); boss re-recorded in Suno (tight takes); 3:08"
+  }
+ ],
+ "dialogue": {
+  "page": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
+  "options": "design/2026-11-09-gpom-hologram-2/options.json",
+  "picked": "1F",
+  "round": 3,
+  "now": "1F locked, not yet voiced"
+ },
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "beats_cut_round17": [
+  {
+   "key": "1",
+   "at": "57.12",
+   "name": "Kill bots everywhere",
+   "blurb": "The roundabout; then a kill bot under the church tower at the far end of Maddie's street; then two come out from under the rail arch."
+  },
+  {
+   "key": "2",
+   "at": "70.62",
+   "name": "Patrol, low and huge",
+   "blurb": "A kill bot rolls over the lens."
+  },
+  {
+   "key": "3",
+   "at": "75.12",
+   "name": "Their eyes: the kill-bot HUD",
+   "blurb": "The kill bot's own view keeps moving down the street; the HUD (patrol, teal). The meter starts to twitch as the row reaches it through the earth."
+  },
+  {
+   "key": "4",
+   "at": "78.12",
+   "name": "Organic signal: lock",
+   "blurb": "ORGANIC SIGNAL - LOCK, silently (the pings are gone). The view keeps rolling while it listens."
+  },
+  {
+   "key": "8",
+   "at": "102.00",
+   "name": "KILL MODE ENGAGED",
+   "blurb": "The same HUD on the racing view: patrol, then it flips red. The muffled row keeps the meter moving."
+  },
+  {
+   "key": "9b",
+   "at": "110.50",
+   "name": "Maddie in the dust",
+   "blurb": "Inside the dust it left: almost nothing visible, then it settles fast and Maddie is there, still."
+  },
+  {
+   "key": "10a",
+   "at": "115.00",
+   "name": "The far race",
+   "blurb": "From the footbridge: the pack races away down the motorway."
+  }
+ ],
+ "dialogue_f06": {
+  "page": "https://claude.ai/artifact/Y2UoNBwoceKZ7a72QwhgoP",
+  "options": "design/2026-11-10-gpom-dialogue-training-data/options.json",
+  "picked": "1C",
+  "round": 1
+ }
 }

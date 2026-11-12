@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d26c/preview.mp4",
+ "made": "2026-11-12T12:33:20+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "cut3.py A --tag d26c",
+ "why": "scene A round 26 (Kai's notes on d25s, 12 Nov): no overhead shot, 'Oh, hello!' at 2.75 s, Derek's line-4 picture 4 frames later, row version c of three (row_d26)",
+ "inputs": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d26c/edl.json",
+  "hologram": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-24/hologram-1f5-scissors-beads-24fps-picture.mp4"
+ },
+ "settings": {
+  "tag": "d26c"
+ }
+}

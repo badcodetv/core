@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/07.jpg",
+ "made": "2026-11-12T13:37:22.437Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Straight down from twenty kilometres at night, like a reconnaissance photograph: the Isle of Wight a dark diamond in a black sea, the Solent a black channel, and across it the mainland coast in amber, Southampton and Portsmouth two glowing harbours. The oil refinery on the shore burns as one bright orange point with a long smoke streak, and tiny orange-white flashes pepper both harbours and the island's towns. Muted, almost colourless except the fires, coarse grain, crushed blacks. 16:9, no labels, grid or text.",
+ "source_id": "226a02d7-578a-40d1-9663-ca8b8c4b3204"
+}

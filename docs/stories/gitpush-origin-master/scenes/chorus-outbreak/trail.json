@@ -112,5 +112,23 @@
   "url": "https://claude.ai/artifact/GhgLphPdKSMs8PXNdsAjvH",
   "what": "Cut r2 = sequence E (London), 12 shots on the beat, from cut-r2e.json",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak <out-dir>"
+ },
+ {
+  "at": "2026-11-12T13:41:49+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/KyoYMpcCVTTPgW93um3EDG",
+  "what": "zoom-out stills for the chorus's back half: city (A), peninsula (B), Britain from orbit (C)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak/picks-zoomout.json <out>/index.html"
+ },
+ {
+  "at": "2026-11-12T13:53:25+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/KyoYMpcCVTTPgW93um3EDG",
+  "what": "zoom-out picks (dumped to feedback/zoomout-r3)",
+  "decided": [
+   "Kai 12 Nov: four shots, cut fast to the music: A-c (North Downs skyline) -> A-b (above the cloud) -> B-d (Solent) -> C-a (orbit); 'at least four, five or six even'"
+  ]
  }
 ]

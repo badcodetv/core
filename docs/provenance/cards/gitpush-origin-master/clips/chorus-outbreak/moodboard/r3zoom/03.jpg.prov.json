@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/03.jpg",
+ "made": "2026-11-12T13:37:22.408Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "A thermal camera on a high-altitude surveillance aircraft looking straight down on a whole British city at night, in grey thermal tones: the river a cold black ribbon, streets a fine pale grid, and fifteen white-hot blooms of fire scattered across the districts, each with a soft halo of heat drifting downwind. Some districts are clearly colder and darker than others where the power has failed. Grainy, slightly soft, the flat look of real surveillance footage. 16:9. No overlay graphics, no crosshairs, no numbers or text of any kind.",
+ "source_id": "c96bc0ba-aae2-45f2-9c6d-ae9216cac180"
+}

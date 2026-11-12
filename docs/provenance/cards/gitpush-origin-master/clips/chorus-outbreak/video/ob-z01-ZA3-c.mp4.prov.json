@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-z01-ZA3-c.mp4",
+ "made": "2026-11-12T14:00:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera locked, no movement. Across the burning skyline the fires swell, and two new low, flat domes of orange fire bloom one after the other between the towers, never a mushroom cloud. The smoke rolls and climbs into the lit cloud. The car's amber hazard light blinks slowly. Heat shimmer trembles over the city. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZA3-c.jpg",
+ "why": "Kai 12 Nov: zoom-out picks (feedback/zoomout-r3), cut fast to the tune",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZA3-c.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "z01",
+  "frame": 201,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T13:54:52.706Z"
+ }
+}

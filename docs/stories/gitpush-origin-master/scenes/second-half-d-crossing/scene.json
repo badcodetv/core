@@ -1747,7 +1747,7 @@
       "how": "clone of r18 with A2's 04-vox-lady.wav replaced by premiere-plan.py --tag r19's line",
       "master": "swapped into '00 RENDER story' over r18 at 518.125-604.458 (Motion Scale 150)",
       "check": {
-        "at": "2026-11-11T19:36",
+        "at": "2026-11-12T13:39",
         "state": "in sync",
         "why": ""
       }

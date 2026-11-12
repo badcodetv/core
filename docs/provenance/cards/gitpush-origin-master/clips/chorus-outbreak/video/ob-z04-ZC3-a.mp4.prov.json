@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-z04-ZC3-a.mp4",
+ "made": "2026-11-12T14:00:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Almost still, a very slow drift with the orbit. Across the dark island tiny orange flashes spark and fade one at a time, no more than three a second, and the faint remaining town lights go out in a slow wave from west to east, until London's amber blot is the last light left. The blue dawn edge brightens slightly. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZC3-a.jpg",
+ "why": "Kai 12 Nov: zoom-out picks (feedback/zoomout-r3), cut fast to the tune",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZC3-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "z04",
+  "frame": 204,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T13:57:35.997Z"
+ }
+}

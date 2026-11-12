@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-d27-24/contact-1f5-scissors-d27-beads.jpg",
+ "made": "2026-11-12T13:32:25+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "ffmpeg",
+ "tool": "design/2026-11-12-gpom-hologram-1f5-scissors/finish.py (ffmpeg xstack)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-d27-24/hologram-1f5-scissors-d27-beads-24fps-picture.mp4",
+ "why": "hologram 1F5 SCISSORS (12 Nov, option B scissors-only, design/2026-11-12-gpom-consciousness/README.md): the 1F5 presentation made shorter with no new voice. s03, f04, f04b cut; s01 from \"Society's\"; f01 from \"Derek\"; f03 to \"machines.\"; f05 pauses closed. The slot warms unlabelled, CONSCIOUSNESS fades up unspoken under f03; the cloud is off. 1F5 itself is kept whole. D27 (Kai, 12 Nov): f07a and the arc removed, \"Don't let the viewer know [about the time machine] until later\"; ends on f06.",
+ "inputs": {
+  "page": "design/2026-11-12-gpom-hologram-1f5-scissors/index-d27.html",
+  "builder": "design/2026-11-12-gpom-hologram-1f5-scissors/make.py --d27",
+  "voice": "design/2026-11-12-gpom-hologram-1f5-scissors/lines-1f5-scissors.json",
+  "trim": "design/2026-11-12-gpom-hologram-1f5-scissors/trim.py",
+  "stack": "design/2026-11-12-gpom-hologram-1f5-scissors/stack.js"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-d27-24/edit.json"
+ }
+}

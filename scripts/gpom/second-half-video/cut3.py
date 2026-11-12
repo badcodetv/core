@@ -68,7 +68,15 @@ NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'm
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
 # d25s (12 Nov, scissors): exactly d24 but with the scissors hologram (design/2026-11-12-gpom-hologram-1f5-scissors). It runs every
 # d24 branch (TAG is set to 'd24' for them) and only its output folder (A-d25s) and the hologram files differ (D25S below).
-D25S = TAG == 'd25s'
+D25S = TAG in ('d25s', 'd26a', 'd26b', 'd26c', 'd27')
+# d26a/b/c (12 Nov, Kai's notes on d25s, his pick): d25s plus no overhead shot in the opening (side, then front), "Oh, hello!"
+# about 2.75 s in (the head trimmed), Derek's "But the world ended" picture slid 4 frames to his mouth, and three ways to cut
+# the row (row_d26): a = same shots, gaps closed; b = overlaps and a reaction cutaway; c = brutal, three lines.
+# d27 (12 Nov, Kai picked d26a): d26a with no time machine yet ("Don't let the viewer know until later"): the scissors hologram
+# re-rendered without f07a and its arc (make.py --d27, render-1f5-scissors-d27-24), ending on f06 "...driving me barmy".
+D27 = TAG == 'd27'
+D26 = TAG in ('d26a', 'd26b', 'd26c', 'd27')
+ROW26 = 'a' if D27 else TAG[-1] if D26 else None
 OUT_TAG_S = TAG
 if D25S:
     TAG = 'd24'
@@ -455,6 +463,11 @@ D6 = TAG in ('d6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', '
 D6_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 1.4, 5: 2.0}
 D6_SKIP = 2.5
 D6_LEAD = 8.0
+HEAD_CUT = 0.0
+if D26:  # Kai, 12 Nov: "seven or eight seconds until Maddie starts speaking. Turn that to two or three seconds." The head of the
+    # street shot comes off (its in-point moves on by the same amount), so every source time after it is unchanged
+    HEAD_CUT = 5.25
+    D6_SKIP, D6_LEAD = D6_SKIP + HEAD_CUT, D6_LEAD - HEAD_CUT
 D3_CUES = {'went': 'Ever since you lot went.', 'mattered': 'my boss calls it the storyverse.'}
 
 
@@ -613,6 +626,10 @@ if D25S:  # scissors (12 Nov): s03, f04, f04b cut; s01/f01/f03 trimmed and f05's
     H_VOX = HOLO / 'render-1f5-scissors-24' / 'hologram-1f5-scissors-24fps-voice.wav'
     H_EDIT = HOLO / 'render-1f5-scissors-24' / 'edit.json'
     H_LINES = S.REPO / 'design' / '2026-11-12-gpom-hologram-1f5-scissors' / 'lines-1f5-scissors.json'
+    if D27:
+        H_PIC = HOLO / 'render-1f5-scissors-d27-24' / 'hologram-1f5-scissors-d27-beads-24fps-picture.mp4'
+        H_VOX = HOLO / 'render-1f5-scissors-d27-24' / 'hologram-1f5-scissors-d27-24fps-voice.wav'
+        H_EDIT = HOLO / 'render-1f5-scissors-d27-24' / 'edit.json'
 if D25B:  # brutal + mint (12 Nov): kept s01 (trimmed), f02, f03 (trimmed), f07a + new m1-m4 (the taste of mint), f05a/b, f06a/b
     H_PIC = HOLO / 'render-1f5-brutal-mint-24' / 'hologram-bm-beads-24fps-picture.mp4'
     H_VOX = HOLO / 'render-1f5-brutal-mint-24' / 'hologram-bm-24fps-voice.wav'
@@ -689,6 +706,9 @@ def beat0_d13(c, m):
     if D25S:  # scissors: only the kept lines, with the words they now say (lines-1f5-scissors.json)
         kept = {r['id']: r for r in json.loads(H_LINES.read_text())}
         holo = {k: dict(holo[k], text=kept[k]['text']) for k in kept}
+        if D27:  # only the lines the d27 hologram plays (f07a is out)
+            on = json.loads(H_EDIT.read_text())['clips']
+            holo = {k: v for k, v in holo.items() if k in on}
     if D25B:  # brutal + mint: the hologram lines of lines.json (street lines b01/f07b stay as d24); new ids are Claude's words (Kai's A1 pick)
         kept = {r['id']: r for r in json.loads(H_LINES.read_text()) if not r['street']}
         holo = {k: dict(holo[k], text=r['text']) if k in holo else dict(text=r['text'], by='claude') for k, r in kept.items()}
@@ -776,7 +796,13 @@ def beat0_d13(c, m):
             # meantime.", then front again for "Please, let me show you what we found." into the fade.
             a_side, a_top, a_back = fr(t_sw - 13.81), fr(t_sw - 5.958), fr(t_sw - 3.158)
             t = 0.0
-            for name, i0, x0, x1 in (('cut3-IA-side-t2-a.mp4', 0.0, a_side, a_top), ('cut3-IA-top-t4-b.mp4', 0.0, a_top, a_back)):
+            ANG = (('cut3-IA-side-t2-a.mp4', 0.0, a_side, a_top), ('cut3-IA-top-t4-b.mp4', 0.0, a_top, a_back))
+            if D26:  # Kai, 12 Nov: "not use that shot [from the sky]... stay on the side shot ... cut back to Maddie looking in
+                # front". The side take is 7.93 s (190 frames), so it runs whole (to just after "I know.") and the front shot
+                # takes over from "But we've learned..." to the fade; no overhead, no loop
+                a_side_end = fr(a_side + 190 / FPS)
+                ANG = (('cut3-IA-side-t2-a.mp4', 0.0, a_side, a_side_end),)
+            for name, i0, x0, x1 in ANG:
                 if x0 > t:
                     c.pic(graded, skip + t, t, x0, '0', source=v6)
                 src = V / name
@@ -786,6 +812,10 @@ def beat0_d13(c, m):
             c.pic(graded, skip + t, t, t_sw, '0', source=v6)
             c.flags.append(f'Beat 0, round 25 (Kai, 10 Nov): the side ({a_side:.1f}-{a_top:.1f} s) and overhead ({a_top:.1f}-{a_back:.1f} s) '
                            'angles are back on the bridge line b01; the front shot keeps running underneath.')
+            if D26:
+                c.flags[-1] = (f'Beat 0, round 26 (Kai, 12 Nov): no overhead shot. The side angle runs its whole take ({a_side:.2f}-'
+                               f'{a_side_end:.2f} s, 7.92 s: "We didn\'t realise... I know."), then the front shot to the fade. The head '
+                               f'is {HEAD_CUT:g} s shorter: "Oh, hello!" at {lead:.2f} s (was {lead + HEAD_CUT:.2f}).')
         else:
             c.pic(graded, skip, 0.0, t_sw, '0', source=v6)
         c.pic(fo, 0.0, t_sw, t_h, '0', source=v6)
@@ -1496,6 +1526,112 @@ def row_r24(c, t0, m):
     return c.close(b7, end)
 
 
+ROW26_SYNC = 4 / FPS  # Derek's "But the world ended, Sandra!": picture in-point 4 frames later against his voice (12 Nov)
+# Measured on cut3-lip-7d-1-muted.mp4 with scripts/lipsync/lips.py (mouth gap per frame) against the fitted voice's loudness
+# per frame over the shot: correlation 0.16 as cut (r24), best at the voice 5 frames earlier (0.53), 0.52 at 4 frames.
+# Whole frames, the slighter of the two; the voice and every other line are untouched.
+# Speech in each row-r24 voice, from its laid-down 'offset' (12 Nov, -40 dB on the spec wavs): first and last sound.
+ROW26_S = [0.10, 0.95, 0.08, 0.17, 0.07]
+ROW26_E = [3.19, 2.11, 4.42, 1.95, 3.32]
+
+
+def row_d26(c, t0, m):
+    """Round 26 (Kai, 12 Nov: "the row could be quicker... recut it a few ways"), three versions of beats 6-7 from the same
+    five row-r24 shots and fitted voices (no new voice, no new clip, nothing sped up; voices cut only in their silences).
+    Each voice stays locked to its own clip (picture in-point = the voice's clip time at the cut), so the lips keep r24's fit;
+    Derek's line 4 picture is ROW26_SYNC later.
+      a: the same shots and lines; the 0.20-0.26 s gaps between lines closed to 0.10 s, each shot's dead head trimmed.
+      b: a row, not a queue: each line starts 0.12 s before the last one ends, the cut lands on the new speaker as they
+         start; 0.30 s of the pause after "Derek." goes under a cut to Derek's silent reaction (the head of his r24 clip).
+      c: brutal, three lines: "Derek. You've left the seat up." / "But the world ended, Sandra!" / "Yeah, the world ended.
+         Doesn't mean you get to stop having manners." The seat (paid off in C) and the punchline stay; "Again.", "I'm
+         really sorry, love." and "Five years underground..." go."""
+    sp = json.loads(ROW24.read_text())
+    VO, SH = sp['voices'], sp['shots']
+    sync = [0, 0, 0, ROW26_SYNC, 0]
+    v = ROW26
+    starts, ends, pieces, cuts = {}, {}, {}, {}   # row time: speech start/end per line; voice windows; cut onto shot n
+    if v == 'a':
+        G = 0.10
+        starts[0] = ROW26_S[0]
+        pieces[0] = [(0.0, VO[0]['dur'], 0.0)]
+        ends[0] = ROW26_E[0]
+        cuts[0] = 0.0
+        for n in range(1, 5):
+            starts[n] = ends[n - 1] + G
+            T = starts[n] - ROW26_S[n]
+            ends[n] = T + ROW26_E[n]
+            pieces[n] = [(VO[n]['in'], VO[n]['in'] + VO[n]['dur'], T)]
+            cuts[n] = 2.5 if n == 1 else T   # Derek's first shot keeps r24's cut (under "Again."); the others cut where r24 did
+        order = [0, 1, 2, 3, 4]
+    elif v == 'b':
+        O = 0.12
+        starts[0] = ROW26_S[0]
+        pieces[0] = [(0.0, 0.80, 0.0), (1.10, VO[0]['dur'], 0.80)]   # 0.80-1.10 s of the file is digital silence
+        ends[0] = ROW26_E[0] - 0.30
+        cuts[0] = 0.0
+        for n in range(1, 5):
+            starts[n] = ends[n - 1] - O
+            T = starts[n] - ROW26_S[n]
+            ends[n] = T + ROW26_E[n]
+            pieces[n] = [(VO[n]['in'], VO[n]['in'] + VO[n]['dur'], T)]
+            cuts[n] = 0.80 if n == 1 else starts[n] - 0.04
+        order = [0, 1, 2, 3, 4]
+    else:
+        G = 0.12
+        starts[0] = ROW26_S[0]
+        pieces[0] = [(0.0, 2.80, 0.0)]   # "...the seat up." ("Again." from 2.88 s; 2.76-2.84 s is silence)
+        ends[0] = 2.76
+        cuts[0] = 0.0
+        prev = 0
+        for n in (3, 4):
+            starts[n] = ends[prev] + G
+            T = starts[n] - ROW26_S[n]
+            ends[n] = T + ROW26_E[n]
+            pieces[n] = [(VO[n]['in'], VO[n]['in'] + VO[n]['dur'], T)]
+            cuts[n] = starts[n] - 0.04
+            prev = n
+        order = [0, 3, 4]
+    total = fr(ends[order[-1]] + 0.3)
+    b6 = c.beat('6', 'The lavatory', t0, act='The row', see='Hard cut to full volume: Sandra.')
+    b7 = None
+    texts = {n: VO[n]['text'] for n in order}
+    if v == 'c':
+        texts[0] = "Derek. You've left the seat up."
+    for k, n in enumerate(order):
+        sh = SH[n]
+        a = cuts[n]
+        z = pieces[n][0][2] - pieces[n][0][0]          # row time at which the voice file's time 0 plays
+        b_end = cuts[order[k + 1]] if k + 1 < len(order) else total
+        i0 = a - z + sync[n]                            # the picture's clip time at the cut: locked to the voice
+        if k == 1 and b7 is None:
+            c.close(b6, t0 + a)
+            b7 = c.beat('7', 'The row, up close', fr(t0 + a), act='The row',
+                        see={'a': 'The r24 shots, tighter: Derek, Sandra, Derek (mid-gesture), Sandra.',
+                             'b': 'Overlapping: Derek\'s silent reaction under "You\'ve left the seat up again.", then each line on the face that starts it.',
+                             'c': 'Brutal: Derek (mid-gesture) for "But the world ended, Sandra!", Sandra for the answer.'}[v])
+        assert i0 >= -1e-6 and i0 + (b_end - a) <= sh['clip_len'] + 1e-3, (n, i0, b_end - a, sh['clip_len'])
+        c.pic(sh['file'], max(0.0, i0), t0 + a, t0 + b_end, '6' if k == 0 else '7', source=sh['file'])
+        # pic() rounds its start and in-point to whole frames; lay the voice on the rounded picture so the lock is exact
+        dz = (fr(t0 + a) - fr(max(0.0, i0)) + sync[n]) - (t0 + a - i0 + sync[n])
+        for (p0, p1, t) in pieces[n]:
+            c.dub(VO[n]['stem'], VO[n]['file'], p0, p1, t0 + t + dz, f"row d26{v} line {VO[n]['line']} ({VO[n]['who']})", chain=sp['chain'])
+        bb = b6 if k == 0 else b7
+        c.line(bb, len(bb['lines']), {'Sandra': 'woman', 'Derek': 'man'}[VO[n]['who']], t0 + starts[n], ends[n] - starts[n], texts[n], 'kai')
+    m['s6'] = t0
+    m['row26'] = dict(variant=v, total=total, starts={n: round(starts[n], 3) for n in order}, cuts={n: round(cuts[n], 3) for n in order})
+    c.flags.append(f'Beats 6-7, round 26{v} (Kai, 12 Nov: "the row could be quicker"): {total:.2f} s (r24: {sp["total"]:.2f} s). '
+                   + {'a': 'Same five shots and lines; gaps between lines 0.10 s (were 0.20-0.26), each shot\'s dead head trimmed.',
+                      'b': 'Overlapping lines (each starts 0.12 s before the last ends, cut on the new speaker); 0.30 s of the pause after '
+                           '"Derek." goes under a cut to Derek\'s silent reaction.',
+                      'c': 'Three lines: "Derek. You\'ve left the seat up." / "But the world ended, Sandra!" / "Yeah, the world ended. '
+                           'Doesn\'t mean you get to stop having manners." ("Again.", "I\'m really sorry, love." and "Five years '
+                           'underground..." cut).'}[v]
+                   + f' Derek\'s "But the world ended" picture is {round(ROW26_SYNC * FPS)} frames later against his voice (measured, '
+                   'scripts/lipsync/lips.py). Not listened to.')
+    return c.close(b7, t0 + total)
+
+
 def detect_r24(c, t0, m):
     """Round 24 (Kai at4401): a kill bot hears them, ~3 s between the row and the motorway: the vent on the hill, the
     turret's lenses snapping round (white lamp), its teal patrol HUD locking ORGANIC SIGNAL with the row on the meter."""
@@ -1519,7 +1655,7 @@ def rest_d15(c, t, m):
     8, 9b and 10a are gone."""
     # ---- 6-7: the row, exactly as round 16, from a hard cut (round 18: sped, picture and voice together)
     if D22:
-        t = row_r24(c, t, m)
+        t = row_d26(c, t, m) if D26 else row_r24(c, t, m)
         t = detect_r24(c, t, m)
     else:
         t = row_d16(c, t, m, LINES) if D16 else row_d8(c, t, m, LINES)
@@ -1688,7 +1824,11 @@ def audio_a_d15(c):
         # edit: 168.958-176.917 s of the track, Graphic EQ 30 bands, -15 dB, faded), not the radio from the top of the
         # track, and no return on "Mind how you go"
         x = C.level(C.decode(C.MUSIC['M0'], 168.958, 7.958, af=RADIO), rms=-23)
-        x *= C.env(len(x), [(0, 1), (6.958, 1), (7.958, 0)])
+        if D26:  # the head is 5.25 s shorter: same start (the join from the opening), same level, faded out by "Oh, hello!"
+            x *= C.env(len(x), [(0, 1), (hello - 0.9, 1), (hello + 0.1, 0), (7.958, 0)])
+            x = x[:int((hello + 0.1) * SR)]
+        else:
+            x *= C.env(len(x), [(0, 1), (6.958, 1), (7.958, 0)])
         mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], "M0 the film's song carrying on from the opening, tinny (Kai's r11 Premiere edit)")
     else:
         x = C.level(C.decode(C.MUSIC['M0'], 0.0, m['holo']['h'], af=RADIO), rms=-23)
@@ -1727,7 +1867,7 @@ def audio_a_d15(c):
        what='wind, the street again (to the hard cut)')
     loop_wheels(fx, 'sfx-maddie', 0.0, H['sw'] + 1.0, rms=-31, fi=0.5, fo=1.0, what='her wheels (loop), fading with the picture')
     loop_wheels(fx, 'sfx-maddie', H['b'], en['0'] - H['b'], rms=-31, fi=1.0, fo=0.05, what='her wheels (loop), rolling again')
-    for k in np.arange(8.5, en['0'] - 0.5, 2.5):
+    for k in np.arange(8.5 - HEAD_CUT, en['0'] - 0.5, 2.5):  # d26: the blips keep their place on the picture (the head is shorter)
         if H['h'] - 0.5 <= k < H['p']:
             continue
         fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-36, what='beacon blip')

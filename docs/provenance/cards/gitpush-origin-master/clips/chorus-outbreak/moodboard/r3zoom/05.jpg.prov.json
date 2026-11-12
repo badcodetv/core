@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/05.jpg",
+ "made": "2026-11-12T13:37:22.424Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "From the flight deck of an airliner at high altitude, the dark windscreen frame across the top and sides: below and ahead, the whole south-east corner of England stands out as a peninsula between the black Thames estuary and the black Channel, the French coast a dim string of lights across the water. Over Kent, dozens of tiny orange flashes wink like struck matches among the towns, and the port at Dover burns as one small bright smear. Far back, London is a dimming glow. Real night photograph through glass, faint reflections, film grain, inky shadows. 16:9, no readable instruments, screens or text.",
+ "source_id": "b0eb6929-a64e-4b82-a3ef-a34576162090"
+}

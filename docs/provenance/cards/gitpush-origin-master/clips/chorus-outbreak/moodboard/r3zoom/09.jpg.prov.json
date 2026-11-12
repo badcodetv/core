@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/09.jpg",
+ "made": "2026-11-12T13:37:22.445Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "From orbit, a storm system of grey night cloud swirls over Britain, the coastline showing only through its gaps; inside the cloud, dozens of small orange and white flashes light it from beneath, spread from Cornwall to Scotland, so the whole sheet of cloud flickers like a thunderstorm made of fires. A thin blue line of atmosphere on the curved horizon, stars above. Deep shadow, grain, a real photograph taken from the space station. 16:9, no text.",
+ "source_id": "86df1428-9202-4885-b6a7-381022261a5a"
+}

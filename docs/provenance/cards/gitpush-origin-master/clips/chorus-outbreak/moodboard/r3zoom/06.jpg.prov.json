@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/06.jpg",
+ "made": "2026-11-12T13:37:22.429Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Oblique from fifteen kilometres up over the Irish Sea at night: the Wirral peninsula laid out between two black estuaries, the Dee on one side and the Mersey on the other, and across the Mersey the long orange band of Liverpool's docks and city. Along the docks and across the peninsula's towns, twenty tiny orange flashes go off at once, a few flaring into small fires with thin smoke trails drifting inland, and a whole stretch of the Wirral has already gone black. Offshore, a field of wind turbines, each a single red lamp. Long lens, deep focus, real aerial night photograph with grain. 16:9, no text.",
+ "source_id": "c4788854-f339-48b9-b9ae-007686028a44"
+}

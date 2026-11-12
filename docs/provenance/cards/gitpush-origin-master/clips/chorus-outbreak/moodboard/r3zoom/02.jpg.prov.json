@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/02.jpg",
+ "made": "2026-11-12T13:37:22.403Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "From a hilltop lay-by on the North Downs, a 400mm lens compresses the whole of London into one band across the frame: the towers of the City and Canary Wharf dark silhouettes, and in front of and behind them, at many different distances, ten fires blooming at once across the boroughs, their smoke columns rising and merging into one lit ceiling of cloud. Strings of stopped headlights fill the valley road below. Sharp across the bottom of the frame, the roof and flung-open door of one abandoned hatchback, its amber hazard lit. Heat shimmer softens the farthest fires. 35mm still, coarse grain, deep blacks. 16:9, no number plates, signs or text.",
+ "source_id": "bb369e7a-c046-40ce-9904-cb590e64b7f9"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-z06-ZC3-b.mp4",
+ "made": "2026-11-12T14:01:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Almost still, a very slow drift with the orbit. Inside the swirling cloud, small orange and white flashes light it from beneath one after another, no more than three a second, spreading like a storm made of fires; the cloud moves slowly. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZC3-b.jpg",
+ "why": "Kai 12 Nov: zoom-out picks (feedback/zoomout-r3), cut fast to the tune",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/ZC3-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "z06",
+  "frame": 206,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-12T14:00:38.627Z"
+ }
+}

@@ -733,5 +733,25 @@
   "decided": [
    "Kai 12 Nov: keep the full presentation as 'the video Maddie left' (yes); the turn is the taste of mint ('sorry/love is a bit soppy'); build scissors-only and brutal as fallbacks"
   ]
+ },
+ {
+  "at": "2026-11-12T12:12:46+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/9anLDvLGLXrsj5MLJN5qo6",
+  "what": "side-by-side: full (d24), scissors (d25s), brutal + mint (d25b)",
+  "decided": [
+   "Kai 12 Nov: scissors only (d25s) goes in the film ('a good cut'). Next: drop the top-down sky shot (stay on the side shot, back to Maddie front), 'Oh, hello!' at 2-3 s not 8, nudge Derek's 'But the world ended, Sandra' lips without the lip-sync tool, recut the row three ways to pick"
+  ]
+ },
+ {
+  "at": "2026-11-12T12:58:19+00:00",
+  "stage": "picks",
+  "round": 26,
+  "url": "https://claude.ai/artifact/GZqazWxvaimEVGennPtuky",
+  "what": "the row three ways (d26a/b/c), opening notes in all",
+  "decided": [
+   "Kai 12 Nov: row A (tightened). Drop the time machine line (f07a) from the presentation so the reveal stays for later ('it's the time machine'); end on the tune/'driving me barmy', then 'the patrol's out, mind how you go'. Derek's 'But the world ended, Sandra' lips: Kai will fine-tune in Premiere"
+  ]
  }
 ]

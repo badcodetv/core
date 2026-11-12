@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/04.jpg",
+ "made": "2026-11-12T13:37:22.419Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "From forty kilometres up at night, looking west down the whole length of Britain's south-west peninsula, Devon and Cornwall narrowing into the black Atlantic: a thin chain of small amber towns along both coasts, Plymouth the brightest cluster on its harbour. Across the peninsula, a scattering of tiny orange pinpoint flashes the size of sparks, each trailing a hair of smoke, and several towns already gone dark. The sea pure black, a thin pale line of atmosphere on the horizon. Long lens, a real photograph taken from altitude, quiet and grainy. 16:9, no labels or text.",
+ "source_id": "35c05bff-31a1-4612-86be-d209f91c2bd0"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/10.jpg",
+ "made": "2026-11-12T13:37:22.451Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "At twenty kilometres, from beside the dark nose of a high-altitude reconnaissance jet, the horizon visibly curved and the sky above almost black: Great Britain stretches away north beneath it, from the Channel coast to the Scottish Highlands, a long island of amber towns where whole regions are going out. Along its length tiny orange flashes appear in many places at once, threads of motorway light breaking into dashes. Film grain, rich blacks. 16:9, no markings or text on the aircraft.",
+ "source_id": "2f18daad-c815-4d1d-8d67-bdefc1b3d116"
+}

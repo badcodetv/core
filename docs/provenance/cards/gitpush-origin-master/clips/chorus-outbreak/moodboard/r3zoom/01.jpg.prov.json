@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/01.jpg",
+ "made": "2026-11-12T13:37:22.394Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Above a broken layer of low cloud at night, from the height of a cruising airliner: through the gaps lies a great British city, and beneath the cloud deck a dozen fires light it from below in separate orange pools, so the cloud glows in patches like embers under ash. One fresh blast flashes white inside the cloud and lights a whole bank of it. Above, a clear black sky with a few stars. Wide, 24mm. Documentary night photograph, gritty grain, no flare, no glow added. 16:9, no writing.",
+ "source_id": "4f6cf166-f5e5-4821-89c7-3e5f3533025b"
+}

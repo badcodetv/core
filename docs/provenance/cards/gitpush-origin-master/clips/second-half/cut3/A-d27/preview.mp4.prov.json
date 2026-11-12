@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/preview.mp4",
+ "made": "2026-11-12T13:37:19+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "cut3.py A --tag d27",
+ "why": "scene A d27 (Kai, 12 Nov, picked d26a): d26a with the time machine line f07a and its arc removed from the scissors hologram (render-1f5-scissors-d27-24); ends on f06",
+ "inputs": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/edl.json",
+  "hologram": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-scissors-d27-24/hologram-1f5-scissors-d27-beads-24fps-picture.mp4"
+ },
+ "settings": {
+  "tag": "d27"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f5-24/hologram-1f5-full-video-maddie-left.mp4",
+ "made": "2026-11-12T13:19:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "settings": {
+  "what": "the full 1F5 hologram (multiverse, Schrodinger's cat, time machine) with its voice: 'the video Maddie left', for the website"
+ }
+}

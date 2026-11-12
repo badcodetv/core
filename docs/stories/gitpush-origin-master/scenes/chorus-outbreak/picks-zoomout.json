@@ -1,0 +1,93 @@
+{
+ "title": "Outbreak Zoom-out Picks",
+ "eyebrow": "GPOM · chorus 2 (the outbreak) · zoom-out stills",
+ "heading": "The zoom-out: city, then peninsula, then country",
+ "intro": "Kai asked for about 5 seconds of new picture to replace the quiet cup at the end of the outbreak chorus: zoom out from the ground to a whole city with several explosions, then a whole peninsula with tiny flashes. Here are three frames in zoom order, with 3 or 4 different stills for each. Pick one per frame (or none), and leave a note. These are stills only: no video credits are spent until you pick.",
+ "sections": [
+  {
+   "h": "The zoom-out, in order",
+   "lede": "Same night as the chorus. Each frame is about 1.5 to 2 s. Frame C is optional: A then B already makes the zoom.",
+   "groups": [
+    {
+     "slot": "zoom-A-city",
+     "title": "A: a whole city burning (London)",
+     "line": "London, because the chorus already has Primrose Hill and the film's route runs through it. Fires are fuel depots and substations, as in the chorus: flat orange domes, not mushroom clouds.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "moodboard/ZA3-a.jpg",
+       "label": "a: London from 9 km, slant west up the Thames, eight fuel-depot fires across the orange street mesh (the locked look)"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/ZA3-b.jpg",
+       "label": "b: above the cloud deck, a dozen fires glowing up through it, one white blast lighting a cloud bank (the Thames visible bottom right)"
+      },
+      {
+       "id": "c",
+       "src": "moodboard/ZA3-c.jpg",
+       "label": "c: break: 400 mm from the North Downs, London's skyline in one burning band, an abandoned hatchback in the foreground (dusk-blue sky, not full night)"
+      },
+      {
+       "id": "d",
+       "src": "moodboard/ZA3-d.jpg",
+       "label": "d: break: straight-down thermal, grey city, fifteen white-hot blooms (reads a bit like a map graphic)"
+      }
+     ]
+    },
+    {
+     "slot": "zoom-B-peninsula",
+     "title": "B: a whole peninsula, tiny flashes",
+     "line": "Four different peninsulas, each from a different height: Cornwall (the shape everyone knows), Kent (London's own corner and Dover), the Wirral (Liverpool's docks), the Solent (the refinery and naval harbours).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "moodboard/ZB3-a.jpg",
+       "label": "a: Devon and Cornwall from 40 km, the whole peninsula, twenty pinprick flashes with smoke threads, Plymouth burning (edit adds the flashes)"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/ZB3-b.jpg",
+       "label": "b: from an airliner flight deck: the south-east corner and the Channel, matchstick flashes among the towns (edit adds the flashes)"
+      },
+      {
+       "id": "c",
+       "src": "moodboard/ZB3-c.jpg",
+       "label": "c: the Wirral and Liverpool from 15 km, flashes along the docks, smoke drifting inland, red-lamp wind farm offshore"
+      },
+      {
+       "id": "d",
+       "src": "moodboard/ZB3-d.jpg",
+       "label": "d: straight down on the Solent and the Isle of Wight, the refinery burning with a long smoke streak, flashes in the harbours"
+      }
+     ]
+    },
+    {
+     "slot": "zoom-C-country",
+     "title": "C (optional): the curve of the country",
+     "line": "Higher still: the whole island going out. Different from the space-station window still from round 2 (OB2).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "moodboard/ZC3-a.jpg",
+       "label": "a: low orbit, no window: Britain almost all dark, London the last amber blot, dawn edge over the North Sea"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/ZC3-b.jpg",
+       "label": "b: from the space station: cloud swirling over Britain, lit from beneath by dozens of fires like a storm made of fire"
+      },
+      {
+       "id": "c",
+       "src": "moodboard/ZC3-c.jpg",
+       "label": "c: beside a high-altitude jet's nose, the horizon curved, Britain with black holes and thirty flashes (edit adds them)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

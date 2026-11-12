@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/00.jpg",
+ "made": "2026-11-12T13:37:22.380Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Looking down at a slant from nine kilometres up, westward along the river into London at night: the whole city spread to the horizon, an orange mesh of streets around the river's black meanders, the dark loop of the Isle of Dogs in the middle distance. Eight separate fires burn across it at once, fuel depots and substations swelling into low flat orange domes in different districts, each feeding a smoke plume that leans east on the wind. Between them whole boroughs have dropped to black, and dark gaps cut through the ring roads. Long lens, deep focus. A real night aerial photograph, grain visible, shadows left truly black. 16:9, nothing written anywhere in the frame.",
+ "source_id": "06693b56-59d4-479b-8523-b81b91245ac5"
+}

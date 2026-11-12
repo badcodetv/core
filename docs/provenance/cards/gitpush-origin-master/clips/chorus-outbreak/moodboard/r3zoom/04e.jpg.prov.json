@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r3zoom/04e.jpg",
+ "made": "2026-11-12T13:38:43.449Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only this: across the peninsula add about twenty tiny bright orange-white flashes of explosion, scattered over towns and along both coasts, each a sharp pinprick with a small warm halo, a few trailing a thin wisp of smoke lit from below, and Plymouth's harbour burning as one brighter orange point. Keep everything else in the image exactly the same, preserving the original style, darkness, lighting and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/ob-zoom/04.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/ob-zoom/04.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "85be87de-4737-4883-9616-20a2c9fddfdc"
+}
