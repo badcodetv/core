@@ -91,3 +91,15 @@ Kai and Jack agree out loud who holds each story. There is no lock in the tool, 
   commit and push git, then `push <story> --go`, then `status` again to show 0 to push.
 - **Taking over:** `git pull`, `status <story>`, `pull <story> --go`, then open the project or the timeline.
 - If `status` shows files both ways on a `.prproj`, stop: two people edited it. Ask which one wins.
+
+## Traps
+
+- 🔴 **Uploads crawl (50–200 KB/s, 5–10 min stalls, no errors at `-v`) = rclone's shared Google app ID.**
+  Found 2026-11-12: the remote `badcode:` had no `client_id`, so it used rclone's built-in one (Google
+  project 202264815644), shared by every rclone user in the world. Google rations it: a `-vv` test showed
+  `403 rateLimitExceeded … defaultPerMinutePerProject` on nearly every call, with the pacer backing off to
+  17 s between chunk sends. The line was fine (YouTube took 511 MB at 3 MB/s the same hour). Fix: our own
+  OAuth client (Google Cloud → enable the Drive API → OAuth client ID, type Desktop app), its `client_id`
+  and `client_secret` in the `badcode` remote, then `rclone config reconnect badcode:`. Test before any big
+  push: `rclone -vv … copy <50 MB file>` and grep for `rateLimitExceeded`.
+- **rclone from apt is old** (1.53.3, 2020 on this machine). Prefer a current rclone from rclone.org.
