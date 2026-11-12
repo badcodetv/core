@@ -1,1 +1,3 @@
 - **2026-11-12 (Jack):** "#17 Hello, I'm BadCode … lets mess around with this." Media folder Desktop `Youtube Vids\animation\shorts\hello-im-badcode` (same pattern as Same Bench).
+- **2026-11-12 (Jack):** who = **mix of both** (open on the future in voice-over, cut to the balaclava figure for the punchline); angle = **deadpan intro**; **9:16, explore looks** (clean room).
+- **2026-11-12:** mood board r1 (clean room, 9 looks) https://claude.ai/artifact/YMxBMusYT79tk2XsADbNAL. Balaclava fix pass: B1-c improved; B1-a ring grew round the whole face and B1-b returned the reference image, so the raw stills are on the board (fix after the pick).

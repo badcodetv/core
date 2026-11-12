@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-12T13:35:11+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/YMxBMusYT79tk2XsADbNAL",
+  "what": "mood board r1: nine clean-room looks",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-hello-im-badcode/scenes/hello design/hello-im-badcode/moodboard.html"
+ }
+]

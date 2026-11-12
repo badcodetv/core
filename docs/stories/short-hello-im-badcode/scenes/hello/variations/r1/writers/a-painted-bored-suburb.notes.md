@@ -1,0 +1,7 @@
+# a-painted-bored-suburb — notes
+
+- Structure follows Google's Nano Banana guide: narrative description, subject + action + location + composition + style, name the medium explicitly, name the light ("golden hour ... long shadows"), describe what you want rather than what you don't ("plain and unmarked" instead of "no text"). https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana
+- Naming concrete painterly traits (brushwork, gouache-like matte finish) rather than vague mood words, since the model reads prompts as instructions: https://www.leonardo.ai/news/nano-banana-prompt-guide , https://runware.ai/docs/models/google-nano-banana-2/guides/prompting
+- The genre of Nordic suburban landscapes with giant abandoned structures as "forgotten neighbours": cool blue/purple distance against warm light, structures answering the horizon line and sinking into vegetation, a child as the human scale who is not posing or reacting, the event withheld. Translated into plain description (no artist named). https://artincontext.org/simon-stalenhag/
+- Choices: the derelict halls are data halls + cooling towers (the AI-boom infrastructure, now dead) so "greed won" is implied, never explained; the barrier is striped planks so no lettering is invited; haze and deep focus sell scale in a 9:16 frame by stacking child / road / barrier / towers vertically.
+- Settings fixed by the story: Nano Banana 2, 9:16.
