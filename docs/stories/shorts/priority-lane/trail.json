@@ -168,5 +168,12 @@
   "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
   "what": "Voice casting round 3: ambulance crew, AI Studio, Bank Robbery director's-note method, clean room (3 options each for paramedic 1, paramedic 2, driver)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/shorts/priority-lane/voices/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-13T19:24:16+00:00",
+  "stage": "picks",
+  "round": 4,
+  "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
+  "what": "Voice casting round 4: the minister recast in the director's-note method (Charon, Iapetus, Orus) + round 1 Orus for comparison; round 3 crew picks are in feedback/voices-r3"
  }
 ]
