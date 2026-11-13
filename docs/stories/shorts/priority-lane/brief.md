@@ -1,30 +1,65 @@
-# Priority Lane: brief
+# Priority Lane: brief, round 3
 
-**Status:** 2026-11-10, Jack. Slate idea #1 (`docs/marketing/badcode-shorts.md`). Agreed as the first short by Kai and Jack in their meeting.
+**Status:** 2026-11-13, Jack. Beats agreed. The short was reopened from Kai's notes in the 2026-11-13 meeting
+(`docs/misc/2026-11-13-meeting.md`). Round 1 (the reporter version, DONE 2026-11-11, `shorts-1-priority-lane-r2`) is in
+[`brief-r1.md`](./brief-r1.md) and stays as the old cut.
 
-## Source
+## Kai's notes (2026-11-13, his words)
 
-An image Jack collected, captioned "The police stopping an ambulance for a politician" (broken Britain).
-⬜ That image is not in the repo: it was lost in a WSL crash. Paste it again to save it in `reference/`.
+- "I don't like the reporter thing … we are now trying to be the authority, rather than we are just sarcastic observers."
+- "I want casualty ER-level drama inside that ambulance … 'BP 60 over 30, f\*\*\*\*\*\* hurry up, we're gonna lose him' …
+  the driver's like 'get the f\*\*\* out of the way'."
+- "The ambulance gets stopped at the lights. And then, inside, the politician: 'I said raspberry hors d'oeuvres' …
+  as he's crossing the junction with the ambulance right there."
+- "The audience will get it. They'll be like, what, he's gonna die."
 
-## What Jack wants (2026-11-10)
+## The sentence
 
-- **A very short story built from that image**: the scene recreated in Flow, realistic, in the look in [`look.md`](./look.md).
-- **The BadCode figure as a TV news reporter** on the pavement, reporting in front of all this.
-- **About 20 seconds.** Trim the fat, because jokes land harder short.
-- **No speech in Flow, ever.** The talking is voiced in Google AI Studio and lip-synced with the `lip-sync-dub` skill.
-- **The words go through `scene-dialogue`** (ten writers, ranked, three drafts, a picking page). Jack writes the final jokes.
+A dying man waits so that a minister's canapé order doesn't have to. This is never said out loud. The beneficiary is on
+screen: the minister in the car.
 
-## Shape (20s cut, not ruled)
+## Beats (~14 s)
 
-1. **0–5s:** a police outrider holds up his glove, and an ambulance waits at the red light, blue lights on.
-2. **5–10s:** the BadCode reporter (balaclava, mic) does a piece to camera.
-3. **10–15s:** the motorcade sweeps through. In the back, a minister on the phone is furious about trivia (Kai's example: "I asked for raspberry and they gave me lemon curd").
-4. **15–20s:** the button, from the reporter or a meme caption. ⬜ Jack.
+1. **A. Losing him (0–5 s).** Inside the ambulance at ER pace. A paramedic in a surgical mask is over the patient:
+   "BP 60 over 30, sats dropping, we're gonna lose him!" The driver: "Come on, get out of the way!" The monitor is
+   racing. *Bolder:* open tight on the monitor, then pull out to the crew.
+2. **B. Held (5–7 s).** The light goes red, and a police outrider's raised glove stops them. "What's he doing?!"
+3. **C. The motorcade (7–11 s).** The minister's car crosses slowly, right in front of the ambulance. He's on the
+   phone: "I said raspberry-shaped hors d'oeuvres!" *Bolder:* seen from inside the ambulance through the windscreen,
+   his car inches away, his line heard through the glass. That needs no lip-sync.
+4. **D. Flatline (11–14 s). Jack's pick, 2026-11-13.** Back inside, the monitor goes flat. Hold a beat, then black
+   and the BadCode logo (the official file, laid on in the edit, never drawn by Flow).
+
+## Cast
+
+- **The paramedics** (two) and **the driver**: new, invented. They wear surgical masks so no mouths have to sync.
+- **The minister**: the round 1 face (still `MIN1-b`, clip `pl-04-MIN1-b.mp4`), invented, never a real politician.
+- **The police outrider**: the round 1 outside shot (`OUT1-c`, clip `pl-01-OUT1-c.mp4`).
+- No balaclava in this cut. BadCode is the logo at the end.
+
+## Look
+
+The same look as round 1 ([`look.md`](./look.md): a rainy night on 35 mm, sodium and teal, blue lights). The inside of
+the ambulance gets harsher light: cold strip lights and the monitor's green glow against the blue outside.
+
+## Sound (Jack, 2026-11-13: "suno for it all, but add background music as well that fits the scene")
+
+Suno does all of it, in Suno workspace `short-priority-lane`:
+- the paramedics' and the driver's shouts (speech mode)
+- the siren, the monitor beeping and the flatline tone
+- a background score that fits the scene
+
+The minister's line keeps the picked Orus voice unless the Suno take of it is better. Details in
+[`sound.md`](./sound.md).
+
+## What is kept from round 1 (dashed cards on the mood board)
+
+- `OUT1-c` and clip `pl-01`: the outrider holding the ambulance.
+- `MIN1-b` and clip `pl-04` (lip-synced): the minister. It may lose to the bolder shot through the windscreen.
+- `AMB1-a` and clip `pl-02`: the calm inside of the ambulance. It is there to be beaten by the ER drama.
 
 ## Lines
 
-- The minister is **invented**: never a real politician's face or name.
-- The reporter wears the BadCode balaclava (`docs/brand/README.md`).
+- An invented minister; no real politician's face or name.
 - The reader rules apply (`docs/marketing/the-reader.md`).
-- Point: **whose time counts.** It is never said out loud.
+- No Flow speech: the voices come from Suno, or from AI Studio for the minister.
