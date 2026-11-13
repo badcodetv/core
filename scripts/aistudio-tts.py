@@ -85,6 +85,9 @@ def main():
                     help="prebuilt voice name — from the story's sound.md (no default)")
     ap.add_argument("--model", default=MODEL, help=f"model id (default: {MODEL})")
     ap.add_argument("--mono", action="store_true", help="write mono — Premiere may not display it")
+    ap.add_argument("--note", action="store_true",
+                    help="the profile file is a short director's note (Accent:/Style:/Pace:), wrapped the way the "
+                         "AI Studio page wraps its Accent dropdown (the Bank Robbery recipe) instead of as an audio profile")
     args = ap.parse_args()
 
     if not os.environ.get("GEMINI_API_KEY"):
@@ -95,10 +98,16 @@ def main():
 
     profile = open(args.profile).read()
     transcript = open(args.transcript).read().strip()
-    prompt = (
-        "Read the following transcript based on the audio profile.\n\n"
-        f"{profile}\n\n## Transcript:\n{transcript}"
-    )
+    if args.note:
+        prompt = (
+            "Read the following transcript based on the director's note.\n\n"
+            f"# Director's note\n{profile.strip()}\n\n## Transcript:\n{transcript}"
+        )
+    else:
+        prompt = (
+            "Read the following transcript based on the audio profile.\n\n"
+            f"{profile}\n\n## Transcript:\n{transcript}"
+        )
 
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     stream = client.models.generate_content_stream(
@@ -141,7 +150,8 @@ def main():
     from prov import write_card
     write_card(args.out, kind="voice", engine="gemini-tts", tool="scripts/aistudio-tts.py", model=args.model,
                prompt=transcript, inputs={"profile": profile, "profile_file": args.profile},
-               settings={"voice": args.voice, "temperature": 1, "channels": channels})
+               settings={"voice": args.voice, "temperature": 1, "channels": channels,
+                         "wrapper": "director's note" if args.note else "audio profile"})
 
     seconds = len(data) / (rate * channels * bits // 8)
     print(f"{args.out} — {'mono' if args.mono else 'stereo'} · {rate} Hz · {bits}-bit · {seconds:.2f}s")

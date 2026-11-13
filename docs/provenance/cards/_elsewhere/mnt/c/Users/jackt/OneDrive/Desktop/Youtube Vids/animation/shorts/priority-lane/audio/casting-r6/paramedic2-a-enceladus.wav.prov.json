@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic2-a-enceladus.wav",
+ "made": "2026-11-13T19:17:36+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Sats dropping, he's peri-arrest!\n\nWhy have we stopped?!",
+ "inputs": {
+  "profile": "Accent: ordinary working-class Birmingham, light and everyday, the way he actually talks, never put on.\nStyle: experienced paramedic in his forties, crouched over a dying man, reporting to his colleague; then, stunned, to the driver up front.\nPace: quick, clipped, then sharp.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic2-a-enceladus.md"
+ },
+ "settings": {
+  "voice": "Enceladus",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

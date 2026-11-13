@@ -1,0 +1,30 @@
+{
+  "research": [
+    "https://aistudio.google.com/docs/speech-generation: prebuilt voice characters (Kore firm, Leda youthful, Gacrux mature, Sulafat warm, Achernar soft, Erinome clear, Vindemiatrix gentle, Pulcherrima forward); long director's-note blocks are the main cause of voice drift, so keep style short; punctuation, ellipses and dashes carry hesitation and cut-offs; capitals for emphasis.",
+    "https://discuss.ai.google.dev/t/is-there-an-update-to-gemini-tts-gemini-went-british/87084: name the accent as a specific place (e.g. a town) rather than a broad 'British accent'.",
+    "https://livekit.com/blog/gemini-3.1-flash-tts-prompting-guide: use short labels and never quote transcript words in the note, or the engine may read the note aloud.",
+    "https://dev.to/googleai/how-to-prompt-gemini-31s-new-text-to-speech-model-24bb: Google's 3.1 prompting post uses Accent / Style / Pace style notes with a plain place name for accent.",
+    "https://replicate.com/google/gemini-3.1-flash-tts/readme: confirms the same 30 voice names and one-word characters carry over to 3.1 Flash TTS."
+  ],
+  "options": [
+    {
+      "letter": "a",
+      "voice": "Gacrux",
+      "idea": "Mid-fifties Yorkshire veteran, twenty-five years on the road; Gacrux is the 'mature' voice, lower and lived-in, fits a senior medic.",
+      "note": "Accent: Leeds, working class, ordinary and light, nothing put on.\nStyle: Veteran paramedic in her fifties, shouting at the driver over a siren, then quiet to the dying old man beside her, steady, almost kind.\nPace: Fast and hard, then slow and soft."
+    },
+    {
+      "letter": "b",
+      "voice": "Kore",
+      "idea": "Early-forties South London medic, clipped and in command; Kore is the 'firm' voice, a woman used to being obeyed.",
+      "note": "Accent: South London, working class, everyday and natural, not exaggerated.\nStyle: Forty-year-old paramedic, sharp and furious with the driver, angry at the traffic not him, then barely above a breath to her patient.\nPace: Quick and clipped, then hushed."
+    },
+    {
+      "letter": "c",
+      "voice": "Sulafat",
+      "idea": "Mid-thirties Glaswegian, warm by nature and frightened under the swearing; Sulafat is the 'warm' voice, so the quiet last line can carry tenderness.",
+      "note": "Accent: Glasgow, working class, soft and everyday, not stagey.\nStyle: Thirty-five-year-old paramedic, scared and swearing because she is scared, yelling forward to the driver, then gently to the old man as he slips away.\nPace: Breathless and urgent, then slow."
+    }
+  ],
+  "notes": "Script punctuation should carry the cut-off on the last word (an em dash). No source compared these voices specifically for British accents, so voice fit is by Google's one-word character labels, not by listening (unverified)."
+}

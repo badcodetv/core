@@ -1,0 +1,29 @@
+{
+  "research": [
+    "https://aistudio.google.com/docs/speech-generation: prebuilt voice descriptors: Charon Informative, Fenrir Excitable, Algenib Gravelly, Alnilam Firm, Schedar Even, Rasalgethi Informative, Sadaltager Knowledgeable, Gacrux Mature. Long audio profiles can cause drift, so keep direction short. Write the transcript as natural speech, and capitalise a word for stress.",
+    "https://cloud.google.com/text-to-speech/docs/gemini-tts: Algenib, Alnilam, Charon, Fenrir and Rasalgethi are listed as male. Gacrux is listed as FEMALE, so it is unsuitable for this male driver and I left it out.",
+    "https://dev.to/googleai/how-to-prompt-gemini-31s-new-text-to-speech-model-24bb (Google AI): name the accent as a specific place ('as heard in Croydon') rather than just 'British'. Tie the accent to the person's background. Give style as a description of a situation, not a single adjective. For loudness, 'high projection without shouting' is a usable register.",
+    "https://livekit.com/blog/gemini-3.1-flash-tts-prompting-guide: words like 'quiet', 'flat' or 'careful' in style notes make the voice monotone and AI-like, so let the notes carry feeling. Apostrophe headers like DIRECTOR'S can get spoken aloud. Keep transcript words out of the notes. A concrete scene beats an abstract role label."
+  ],
+  "options": [
+    {
+      "letter": "a",
+      "voice": "Algenib",
+      "idea": "Forty-eight, twenty years on the ambulances out of East London. A gravelly, heavy voice for a big man who has done this run a thousand times and is properly angry tonight.",
+      "note": "Accent: working-class East London, light and everyday, how he talks at home, nothing stagey.\nStyle: veteran ambulance driver, late forties, gripping the wheel in heavy rain, calling back to his crew, then bellowing at cars that won't move.\nPace: quick, clipped, rising."
+    },
+    {
+      "letter": "b",
+      "voice": "Alnilam",
+      "idea": "Forty-two, ex-army, from Liverpool. A firm voice for a disciplined man who gives the crew a crisp time check, then loses his temper at the traffic.",
+      "note": "Accent: working-class Merseyside, soft and natural, the way a local actually speaks, not put on.\nStyle: ex-forces paramedic driver, early forties, steady and in command when he calls back to the crew, then furious through the windscreen at stalled traffic.\nPace: brisk, punchy."
+    },
+    {
+      "letter": "c",
+      "voice": "Charon",
+      "idea": "Fifty-two, lower-middle-class Midlands, a calm and reassuring man. Charon's deep, informative voice gives a dad-like warmth that cracks into real anger.",
+      "note": "Accent: Birmingham, lower middle class, mild and everyday, never exaggerated.\nStyle: steady senior driver, early fifties, reassuring his crew behind him, then his patience snaps and he shouts at the cars blocking the road.\nPace: measured, then fast."
+    }
+  ],
+  "notes": "Gacrux is listed as female in Google Cloud's voice table, so I didn't use it for a heavyset man. Each option uses a different voice, age, region and temperament. The notes avoid flatness words, and none of them repeats the transcript."
+}

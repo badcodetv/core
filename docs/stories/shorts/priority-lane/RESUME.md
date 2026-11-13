@@ -1,5 +1,11 @@
 # Priority Lane: resume here
 
+**2026-11-13 (night): voice casting round 3, the crew in AI Studio, awaiting Jack's picks** on https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm (same voices page, round 3).
+- Method: the Bank Robbery recipe (a director's note of three lines, `Accent:` / `Style:` / `Pace:`, under 60 words, light everyday accent, talking to someone and not performing) via the new `--note` flag on `scripts/aistudio-tts.py`. Three sealed web-researching writers, one per role: brief, JSON and notes in `voices/r6-cleanroom/`.
+- Takes in Desktop `priority-lane\audio\casting-r6\` (9 of today's 10 free API calls used). Paramedic 1 is cast as the woman, paramedic 2 as the man (as in LS4-b); the minister stays Orus.
+- Word check: all lines present; "twen—" comes out as "twenty" (the flatline cuts it); Gacrux ad-libs "He'll be alright" at the end (trim).
+- Next: dump the `picks` db into `feedback/`, write the picks into `sound.md`, then clean the voices, then music + SFX in Suno.
+
 **2026-11-13 (late): r5 Speech voices REJECTED** (Jack: "all of those sounded the same and weird"). Research saved in [`docs/suno-gpt/speech-beta.md`](../../../suno-gpt/speech-beta.md): Speech is a narration-over-music tool with one voice control (Male/Female), no saved voice and a weak British accent, so it is the wrong tool for four distinct character voices. Next: Jack decides between AI Studio voices cast on a picks page (`voice-casting`) and one last Speech round on the research's settings.
 
 **2026-11-13 (latest): round 3, every beat picked; voices waiting on Jack's ear.**

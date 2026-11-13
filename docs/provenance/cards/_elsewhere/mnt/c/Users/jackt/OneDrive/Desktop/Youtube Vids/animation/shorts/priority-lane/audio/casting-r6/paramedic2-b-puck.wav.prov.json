@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic2-b-puck.wav",
+ "made": "2026-11-13T19:17:59+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Sats dropping, he's peri-arrest!\n\nWhy have we stopped?!",
+ "inputs": {
+  "profile": "Accent: working-class Croydon, south London, natural and understated, not a caricature.\nStyle: young paramedic, late twenties, scared but holding it together, calling numbers to his senior colleague, then shouting forward in disbelief at the driver.\nPace: fast, breathless, rising.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic2-b-puck.md"
+ },
+ "settings": {
+  "voice": "Puck",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

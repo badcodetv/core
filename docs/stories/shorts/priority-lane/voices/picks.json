@@ -1,13 +1,94 @@
 {
  "title": "Priority Lane Voices",
- "eyebrow": "Priority Lane · voice casting · round 2",
- "heading": "Who do they sound like?",
- "intro": "Round 2: five London men for the reporter, as asked. Minister is picked (b, the slick hiss). Pick one, or note what to change.",
+ "eyebrow": "Priority Lane · voice casting · round 3",
+ "heading": "Who is in the ambulance?",
+ "intro": "Round 3: the ambulance crew, cast in AI Studio, the way the Bank Robbery voices were made: a short director's note per voice, light everyday accents, nothing put on. Three different people per role, written clean-room. Their real lines. Pick one per role, or note what to change. The minister stays Orus (picked round 1).",
  "sections": [
   {
    "h": "Voices",
    "lede": "Real lines from the locked dialogue (1D).",
    "groups": [
+    {
+     "slot": "paramedic1-r3",
+     "round": 3,
+     "title": "Paramedic 1 (the woman at the monitor)",
+     "line": "\"BP 60 over 30! Fucking hurry up, we're gonna lose him!\" … \"Fifty over twen—\"  (the cut-off \"twen—\" is finished as \"twenty\" in every take; the flatline cuts it in the edit)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting-r6/paramedic1-a-gacrux.mp3",
+       "label": "a: Leeds veteran, 50s (Gacrux)",
+       "warn": "mature, steady, almost kind at the end · ad-libs \"He'll be alright\" at the end (trim)"
+      },
+      {
+       "id": "b",
+       "src": "casting-r6/paramedic1-b-kore.mp3",
+       "label": "b: South London, early 40s (Kore)",
+       "warn": "firm, in command, furious"
+      },
+      {
+       "id": "c",
+       "src": "casting-r6/paramedic1-c-sulafat.mp3",
+       "label": "c: Glasgow, mid 30s (Sulafat)",
+       "warn": "warm, scared under the swearing"
+      }
+     ]
+    },
+    {
+     "slot": "paramedic2-r3",
+     "round": 3,
+     "title": "Paramedic 2 (the man on the bag)",
+     "line": "\"Sats dropping, he's peri-arrest!\" … \"Why have we stopped?!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting-r6/paramedic2-a-enceladus.mp3",
+       "label": "a: Birmingham lifer, 40s (Enceladus)",
+       "warn": "breathy, tired, calm that cracks"
+      },
+      {
+       "id": "b",
+       "src": "casting-r6/paramedic2-b-puck.mp3",
+       "label": "b: Croydon, late 20s (Puck)",
+       "warn": "young, adrenaline and fear"
+      },
+      {
+       "id": "c",
+       "src": "casting-r6/paramedic2-c-algieba.mp3",
+       "label": "c: Leeds ex-army, mid 30s (Algieba)",
+       "warn": "smooth and even, control snaps"
+      }
+     ]
+    },
+    {
+     "slot": "driver-r3",
+     "round": 3,
+     "title": "The driver",
+     "line": "\"Two minutes out! Get the fuck out of the way!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting-r6/driver-a-algenib.mp3",
+       "label": "a: East London, late 40s (Algenib)",
+       "warn": "gravelly, heavy, properly angry"
+      },
+      {
+       "id": "b",
+       "src": "casting-r6/driver-b-alnilam.mp3",
+       "label": "b: Liverpool ex-army, early 40s (Alnilam)",
+       "warn": "firm, crisp, then loses it"
+      },
+      {
+       "id": "c",
+       "src": "casting-r6/driver-c-charon.mp3",
+       "label": "c: Birmingham dad, early 50s (Charon)",
+       "warn": "deep, reassuring, patience snaps"
+      }
+     ]
+    },
     {
      "slot": "reporter-r2",
      "round": 2,
@@ -116,5 +197,5 @@
    ]
   }
  ],
- "round": 2
+ "round": 3
 }

@@ -1,0 +1,31 @@
+{
+  "research": [
+    "https://aistudio.google.com/docs/speech-generation: official voice list with one-word characters (Puck Upbeat, Enceladus Breathy, Iapetus Clear, Umbriel Easy-going, Algieba Smooth, Achird Friendly, Zubenelgenubi Casual, Sadachbia Lively); long director's-note blocks cause drift, keep notes short; pace via plain words like 'speaking rapidly'; the voice choice carries permanent traits",
+    "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts: all eight allowed voices are listed as male",
+    "https://dev.to/googleai/how-to-prompt-gemini-31s-new-text-to-speech-model-24bb: Google's 3.1 TTS prompting guide; name a specific place (e.g. Croydon) rather than 'British accent'; regions like London/Newcastle/Exeter give distinct results",
+    "https://livekit.com/blog/gemini-3.1-flash-tts-prompting-guide: accent is treated as a style instruction; don't overspecify; keep style, script and tags pointing the same way",
+    "https://www.famulor.io/blog/gemini-31-flash-tts-prompting-guide-for-ai-voice-agents: words like 'quiet' or 'flat' in notes make output monotone; describe the situation and listener instead of adjectives; never quote transcript words inside the notes or the engine may speak them",
+    "https://discuss.ai.google.dev/t/is-there-an-update-to-gemini-tts-gemini-went-british/87084: British accent can be intermittent; guide it through the prompt"
+  ],
+  "options": [
+    {
+      "letter": "a",
+      "voice": "Enceladus",
+      "idea": "Mid-forties Birmingham lifer, twenty years on the road; the breathy, lived-in voice suits a tired, solid man whose calm finally cracks.",
+      "note": "Accent: ordinary working-class Birmingham, light and everyday, the way he actually talks, never put on.\nStyle: experienced paramedic in his forties, crouched over a dying man, reporting to his colleague; then, stunned, to the driver up front.\nPace: quick, clipped, then sharp."
+    },
+    {
+      "letter": "b",
+      "voice": "Puck",
+      "idea": "Late-twenties South Londoner, a couple of years qualified; Puck's bright energy reads as a younger man running on adrenaline and fear.",
+      "note": "Accent: working-class Croydon, south London, natural and understated, not a caricature.\nStyle: young paramedic, late twenties, scared but holding it together, calling numbers to his senior colleague, then shouting forward in disbelief at the driver.\nPace: fast, breathless, rising."
+    },
+    {
+      "letter": "c",
+      "voice": "Algieba",
+      "idea": "Mid-thirties Leeds paramedic, lower-middle class, ex-army steadiness; Algieba's smooth, even voice gives a controlled man whose control snaps.",
+      "note": "Accent: lower-middle-class Leeds, Yorkshire, soft and everyday, nothing theatrical.\nStyle: steady paramedic in his mid-thirties, ex-forces, giving his colleague the readings plainly; then genuinely thrown, asking the driver what's happening.\nPace: brisk and firm, then urgent."
+    }
+  ],
+  "notes": "Notes avoid quoting the lines (engine can speak them) and avoid 'flat/quiet' words. All three are male voices from the allowed list; they differ on age (20s/30s/40s), region (Birmingham/Croydon/Leeds), class and temperament."
+}

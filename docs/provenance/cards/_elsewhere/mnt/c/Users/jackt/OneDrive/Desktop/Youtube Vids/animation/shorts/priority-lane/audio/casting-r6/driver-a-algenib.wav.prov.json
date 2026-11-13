@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/driver-a-algenib.wav",
+ "made": "2026-11-13T19:15:11+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Two minutes out! Get the fuck out of the way!",
+ "inputs": {
+  "profile": "Accent: working-class East London, light and everyday, how he talks at home, nothing stagey.\nStyle: veteran ambulance driver, late forties, gripping the wheel in heavy rain, calling back to his crew, then bellowing at cars that won't move.\nPace: quick, clipped, rising.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/driver-a-algenib.md"
+ },
+ "settings": {
+  "voice": "Algenib",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

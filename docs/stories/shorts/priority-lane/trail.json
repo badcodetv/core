@@ -160,5 +160,13 @@
   ],
   "feedback": "feedback/moodboard-r4",
   "feedback_docs": 8
+ },
+ {
+  "at": "2026-11-13T19:19:43+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
+  "what": "Voice casting round 3: ambulance crew, AI Studio, Bank Robbery director's-note method, clean room (3 options each for paramedic 1, paramedic 2, driver)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/shorts/priority-lane/voices/picks.json <out.html>"
  }
 ]

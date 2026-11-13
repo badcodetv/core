@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/driver-c-charon.wav",
+ "made": "2026-11-13T19:15:59+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Two minutes out! Get the fuck out of the way!",
+ "inputs": {
+  "profile": "Accent: Birmingham, lower middle class, mild and everyday, never exaggerated.\nStyle: steady senior driver, early fifties, reassuring his crew behind him, then his patience snaps and he shouts at the cars blocking the road.\nPace: measured, then fast.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/driver-c-charon.md"
+ },
+ "settings": {
+  "voice": "Charon",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic2-c-algieba.wav",
+ "made": "2026-11-13T19:18:25+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Sats dropping, he's peri-arrest!\n\nWhy have we stopped?!",
+ "inputs": {
+  "profile": "Accent: lower-middle-class Leeds, Yorkshire, soft and everyday, nothing theatrical.\nStyle: steady paramedic in his mid-thirties, ex-forces, giving his colleague the readings plainly; then genuinely thrown, asking the driver what's happening.\nPace: brisk and firm, then urgent.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic2-c-algieba.md"
+ },
+ "settings": {
+  "voice": "Algieba",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

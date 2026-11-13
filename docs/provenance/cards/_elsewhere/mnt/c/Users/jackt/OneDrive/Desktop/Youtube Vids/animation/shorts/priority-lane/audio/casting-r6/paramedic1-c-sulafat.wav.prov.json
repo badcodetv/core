@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic1-c-sulafat.wav",
+ "made": "2026-11-13T19:17:12+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "BP 60 over 30! Fucking hurry up, we're gonna lose him!\n\nFifty over twen—",
+ "inputs": {
+  "profile": "Accent: Glasgow, working class, soft and everyday, not stagey.\nStyle: Thirty-five-year-old paramedic, scared and swearing because she is scared, yelling forward to the driver, then gently to the old man as he slips away.\nPace: Breathless and urgent, then slow.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic1-c-sulafat.md"
+ },
+ "settings": {
+  "voice": "Sulafat",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

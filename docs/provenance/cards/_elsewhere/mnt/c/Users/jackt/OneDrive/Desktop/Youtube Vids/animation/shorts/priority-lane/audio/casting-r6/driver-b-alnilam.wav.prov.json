@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/driver-b-alnilam.wav",
+ "made": "2026-11-13T19:15:34+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Two minutes out! Get the fuck out of the way!",
+ "inputs": {
+  "profile": "Accent: working-class Merseyside, soft and natural, the way a local actually speaks, not put on.\nStyle: ex-forces paramedic driver, early forties, steady and in command when he calls back to the crew, then furious through the windscreen at stalled traffic.\nPace: brisk, punchy.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/driver-b-alnilam.md"
+ },
+ "settings": {
+  "voice": "Alnilam",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

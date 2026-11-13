@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic1-b-kore.wav",
+ "made": "2026-11-13T19:16:48+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "BP 60 over 30! Fucking hurry up, we're gonna lose him!\n\nFifty over twen—",
+ "inputs": {
+  "profile": "Accent: South London, working class, everyday and natural, not exaggerated.\nStyle: Forty-year-old paramedic, sharp and furious with the driver, angry at the traffic not him, then barely above a breath to her patient.\nPace: Sharp and fast, then hushed.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic1-b-kore.md"
+ },
+ "settings": {
+  "voice": "Kore",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}
