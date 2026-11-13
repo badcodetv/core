@@ -46,9 +46,10 @@
     "round": 3
   },
   "boards": {
-    "moodboard": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
+    "moodboard": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
     "storyboard": "https://claude.ai/artifact/RJ5FcwAW7NsDRfFiDPkq9j",
-    "timeline": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
+    "timeline": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn",
+    "moodboard_r1": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa"
   },
   "cut": {
     "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
