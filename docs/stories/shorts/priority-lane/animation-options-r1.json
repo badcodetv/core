@@ -1,0 +1,227 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Veo's camera is locked; every push or drift is done in Premiere, eased.",
+   "why": "hybrid method: Omni camera moves drift and redraw",
+   "source": "docs/video-fx/hybrid-method.md"
+  },
+  {
+   "rule": "One mover per shot, the rest is rain and light.",
+   "why": "Omni struggles past a few moving figures",
+   "source": "scene-animation skill"
+  },
+  {
+   "rule": "No Flow speech (Jack, 2026-11-10). The reporter's mouth is cloth, so his lines play over him with no sync. The minister is the only lip-sync shot.",
+   "why": "voices are AI Studio, synced with lip-sync-dub",
+   "source": "Jack 2026-11-10"
+  },
+  {
+   "rule": "Words on screen (if any) are drawn in ffmpeg/Premiere, never by Veo.",
+   "why": "Veo text is slop",
+   "source": "scene-animation skill"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Set up the injustice in one look: the ambulance is held while the motorcade glides through.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Motorcade slides through",
+     "idea": "The black saloons glide across the foreground, blurred; behind them the outrider holds his glove up and the ambulance's blue lights pulse. Premiere: slow push in on the ambulance.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "cars cross, beacons pulse, rain"
+      },
+      {
+       "lane": "Premiere",
+       "does": "105-112% push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "none"
+      }
+     ],
+     "veo_prompt": "The camera does not move. Two long black saloon cars glide steadily from right to left across the foreground, smearing orange streetlight along their wet flanks. Behind them the police outrider keeps his gloved hand raised flat and still, and the ambulance waits at the red light with its blue beacons pulsing about twice a second. Fine rain falls through the haze. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: tyres hissing on wet tarmac, a low engine purr, rain, a distant siren held silent. No dialogue, no music. The camera does not move. Thanks.",
+     "cut": "in on the first car entering, out as the last car clears",
+     "seconds": 6,
+     "risk": "cars may morph or a third appear; outrider may lower his hand"
+    },
+    {
+     "id": "b",
+     "label": "The held moment",
+     "idea": "No cars yet: only the beacons pulse, rain falls, the outrider's glove stays up. The waiting is the shot.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "beacons, rain only"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow push in"
+      }
+     ],
+     "veo_prompt": "The camera does not move. Everything holds still at the junction: the outrider's gloved hand stays raised, the ambulance waits at the red light, and the only movement is its blue beacons pulsing about twice a second and fine rain falling through the orange haze. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: rain on tarmac, a motorbike idling, the ambulance's engine ticking over. No dialogue, no music. The camera does not move. Thanks.",
+     "cut": "hard in, out on the first headlight entering",
+     "seconds": 4,
+     "risk": "low; may feel static"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "Put us inside the cost: the crew can only wait.",
+   "options": [
+    {
+     "id": "a",
+     "label": "She looks to the light",
+     "idea": "The paramedic's gloved hand stays on the patient; she turns her head to the red light through the windscreen and holds. The monitor glows. Premiere: slow push toward the windscreen.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "one head turn, beacon spill, rain on glass"
+      },
+      {
+       "lane": "Premiere",
+       "does": "push in"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The kneeling paramedic keeps one gloved hand on the patient's blanket and slowly turns her head toward the windscreen, then holds, watching the red light. Blue beacon light flickers through the side window about twice a second, and rain runs down the windscreen. The patient lies still. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: a heart monitor beeping steadily, rain drumming on the roof, an engine idling. No dialogue, no music. The camera does not move. Thanks.",
+     "cut": "in mid-turn, out on her held look",
+     "seconds": 6,
+     "risk": "patient may move; face may redraw"
+    },
+    {
+     "id": "b",
+     "label": "Only the light changes",
+     "idea": "Nobody moves. The red light glows, the beacons flicker, rain runs. The stillness is the point.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "light and rain only"
+      },
+      {
+       "lane": "Premiere",
+       "does": "very slow push"
+      }
+     ],
+     "veo_prompt": "The camera does not move. Nobody moves. Rain runs down the windscreen, the red traffic light glows steadily through it, and blue beacon light flickers along the cabinets about twice a second. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: a heart monitor beeping steadily, rain on the roof. No dialogue, no music. The camera does not move. Thanks.",
+     "cut": "hard in and out",
+     "seconds": 4,
+     "risk": "low"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "The reporter plays it dead straight while the absurdity happens behind him.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Straight to camera, motorcade behind",
+     "idea": "He holds the mic and nods slightly as he talks (his mouth is cloth, so the voice just plays over). Behind him, soft, the motorcade's lights sweep through.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "small head movements, background lights sweep"
+      },
+      {
+       "lane": "Premiere",
+       "does": "none, or a tiny drift"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The masked reporter holds the microphone below his chin and keeps still, with small, measured nods as if delivering a live report to camera. Behind him, out of focus, the headlights and red tail lights of the motorcade sweep through the junction from left to right, and the ambulance's blue beacons pulse. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: rain on a jacket, traffic passing behind, a siren held silent. No dialogue, no music. The camera does not move. Thanks.",
+     "cut": "in on his first nod, out at line end",
+     "seconds": 6,
+     "risk": "mask triangle may drift or move to the wrong eye; check every frame"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "The minister's fury about nothing, on the phone, while the ambulance waits outside his window.",
+   "options": [
+    {
+     "id": "a",
+     "label": "He says the line (lip-synced)",
+     "idea": "Omni draws his mouth for the exact line; the clip is muted and the AI Studio voice is synced on with lip-sync-dub.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "mouth + face, blue light through the window"
+      },
+      {
+       "lane": "Post",
+       "does": "mute, dub, sync"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The minister presses the phone to his ear and snaps into it, furious: I said raspberry-shaped hors d'oeuvres! Then he glares at the roof lining. Blue beacon light pulses through the rain-streaked window behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. Thanks.",
+     "cut": "in a beat before the line, out on the glare",
+     "seconds": 4,
+     "risk": "Omni generates its own audio of the line; it is muted and replaced (Jack's lip-sync route). Mouth must match the voice's speed"
+    },
+    {
+     "id": "b",
+     "label": "Voice down the phone, no sync",
+     "idea": "He doesn't open his mouth: eyes roll, he jabs the spoon into the lemon curd. The line plays as his voice anyway, as if we cut in just after. No lip-sync risk.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "eye roll, spoon jab"
+      },
+      {
+       "lane": "Post",
+       "does": "voice laid over"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The minister keeps his mouth shut in a tight, sulky line, rolls his eyes up at the roof lining, then jabs the silver spoon into the jar of lemon curd on the armrest. Blue beacon light pulses through the rain-streaked window behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: a muffled voice on a phone line, rain on the car roof, the soft purr of a big engine. No dialogue, no music. The camera does not move. Thanks.",
+     "cut": "in on the eye roll, out on the spoon",
+     "seconds": 4,
+     "risk": "spoon/jar may morph; voice with a shut mouth reads odd if held on his face too long"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "The button: the motorcade's gone, the reporter delivers 'Poetic, really', the ambulance can finally move.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Ambulance finally moves off",
+     "idea": "Same piece to camera; behind him the outrider lowers his hand and the ambulance pulls away. He doesn't turn round.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "ambulance moves, reporter still"
+      },
+      {
+       "lane": "Premiere",
+       "does": "none"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The masked reporter stands perfectly still with the microphone, facing the lens. Behind him, out of focus, the outrider lowers his gloved hand and the ambulance pulls slowly away through the junction, its blue beacons pulsing. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: the ambulance's siren starting up, rain, engines. No dialogue, no music. The camera does not move. Thanks.",
+     "cut": "in still, out as the ambulance clears frame",
+     "seconds": 6,
+     "risk": "ambulance may morph; mask drift"
+    },
+    {
+     "id": "b",
+     "label": "Reuse frame 3's clip",
+     "idea": "Cut back to the second half of frame 3's clip. No new credits.",
+     "lanes": [
+      {
+       "lane": "Post only",
+       "does": "Premiere"
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "second half of clip 3",
+     "seconds": 3,
+     "risk": "repeats the background motion"
+    }
+   ]
+  }
+ ]
+}

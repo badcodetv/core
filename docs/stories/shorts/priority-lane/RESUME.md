@@ -1,5 +1,10 @@
 # Priority Lane: resume here
 
+**2026-11-13 (late night): ALL VOICES PICKED; storyboard round 3 awaiting Jack's animation picks** https://claude.ai/artifact/6xd6NLu5rKzecZR7kLzZ9V
+- Voices (sound.md): Kore / Algieba / Alnilam / minister Charon. Cut, levelled, one file per line in Desktop `priority-lane\audio\voices\` (`c1-minister-glass.wav` is the muffled version). The transcriber hears Kore's "60 over 30" as "60, I refer": check by ear.
+- Animation options in `animation-options.json` (round 1 copies kept as `*-r1.json`): A she shouts / eyes on monitor; B the glove holds / headlights cross; C keep pl-04, re-sync to Charon (lip-sync-dub); D the light turns green / he sits back.
+- Next: dump the storyboard picks, write `video-jobs.json`, run the clips (Omni 1.2 Flash, 9:16, Frames), re-sync pl-04 to Charon, then music + SFX in Suno (variations), then the timeline page.
+
 **2026-11-13 (night, later): crew PICKED (Kore / Algieba / Alnilam, in sound.md); round 4 = the minister recast the same way, awaiting Jack's pick** on the same page. NOTE: the Gemini key is paid (since 2026-09-30), so there is no 10-a-day cap.
 
 **Earlier: voice casting round 3, the crew in AI Studio** on https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm (same voices page, round 3).

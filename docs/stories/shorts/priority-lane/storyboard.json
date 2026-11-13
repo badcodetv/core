@@ -2,70 +2,58 @@
  "acts": [
   {
    "id": "a1",
-   "title": "Priority Lane",
-   "beats": "0:00–0:20"
+   "title": "Priority Lane, round 3",
+   "beats": "0:00-0:14"
   }
  ],
  "frames": [
   {
    "n": 1,
    "act": "a1",
-   "title": "The ambulance is held",
-   "look": "long lens through the passing motorcade",
-   "line": "",
+   "title": "A. Losing him",
+   "look": "the back of the ambulance at full pace",
+   "line": "P1: BP 60 over 30! Fucking hurry up, we're gonna lose him! / P2: Sats dropping, he's peri-arrest! / DRIVER: Two minutes out! Get the fuck out of the way!",
    "stills": [
-    "OUT1-c"
+    "LS4-b-fix-a"
    ],
    "anim": 1,
-   "beat": "0:00 outside"
+   "beat": "0:00"
   },
   {
    "n": 2,
    "act": "a1",
-   "title": "Inside the ambulance",
-   "look": "looking forward from the back, the red light through the windscreen",
-   "line": "",
+   "title": "B. Held",
+   "look": "through the windscreen, the raised glove",
+   "line": "P2: Why have we stopped?!",
    "stills": [
-    "AMB1-a"
+    "HD3-b"
    ],
    "anim": 2,
-   "beat": "0:04 ambulance"
+   "beat": "0:05.5"
   },
   {
    "n": 3,
    "act": "a1",
-   "title": "The BadCode reporter",
-   "look": "piece to camera, chest up",
-   "line": "REPORTER: Traffic is being managed, to keep an important journey moving.",
+   "title": "C. The motorcade",
+   "look": "back seat, the lemon curd",
+   "line": "MINISTER (through the glass): I said raspberry-shaped hors d'oeuvres!",
    "stills": [
-    "REP1-a"
+    "MIN1-b"
    ],
    "anim": 3,
-   "beat": "0:07 reporter"
+   "beat": "0:07"
   },
   {
    "n": 4,
    "act": "a1",
-   "title": "The minister",
-   "look": "back seat, lemon curd on the armrest",
-   "line": "MINISTER: I said raspberry-shaped hors d'oeuvres!",
+   "title": "D. Flatline",
+   "look": "down the compartment, the red light ahead",
+   "line": "P1: Fifty over twen-",
    "stills": [
-    "MIN1-b"
+    "FL4-a"
    ],
    "anim": 4,
-   "beat": "0:12 minister"
-  },
-  {
-   "n": 5,
-   "act": "a1",
-   "title": "The button",
-   "look": "back to the reporter as the motorcade clears",
-   "line": "REPORTER: A politician blocking the path of an ambulance. Poetic, really...",
-   "stills": [
-    "REP1-a"
-   ],
-   "anim": 5,
-   "beat": "0:15 button"
+   "beat": "0:10.5"
   }
  ]
 }

@@ -15,7 +15,7 @@ AI Studio, model `gemini-3.1-flash-tts-preview`, wrapped as a director's note (`
 - **Paramedic 1 (the woman): `Kore`**, `voices/r6-cleanroom/profiles/paramedic1-b-kore.md` (South London, early forties, firm, in command).
 - **Paramedic 2 (the man): `Algieba`**, `voices/r6-cleanroom/profiles/paramedic2-c-algieba.md` (Leeds, mid-thirties, ex-forces, his control snaps).
 - **Driver: `Alnilam`**, `voices/r6-cleanroom/profiles/driver-b-alnilam.md` (Liverpool, early forties, ex-army, crisp, then loses it).
-- **Minister:** Orus (round 1) is being recast in the same director's-note method so he matches the crew.
+- **Minister: `Charon`** (PICKED round 4, Jack), `voices/r6-cleanroom/profiles/minister-a-charon.md` (Home Counties, privately educated, smooth and irritated). Replaces Orus. His line is muffled through the car glass in the edit.
 
 ## Round 3 (2026-11-13, Jack): Suno for it all, plus background music
 
