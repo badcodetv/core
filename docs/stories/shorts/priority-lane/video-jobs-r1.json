@@ -1,0 +1,78 @@
+{
+ "anim_picks": {
+  "1": "a",
+  "2": "b",
+  "3": "a",
+  "4": "a",
+  "5": "a"
+ },
+ "skip": [
+  3,
+  5
+ ],
+ "extra": [
+  {
+   "key": "03-r2",
+   "n": 3,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "03 failed three times with no clip (silent block suspected: masked figure + police words); rewritten without 'masked', 'police' or 'siren'",
+   "motion": "The camera does not move. The news presenter in the knitted hood holds the microphone below his chin and stays composed, giving small, measured nods as he reports to camera. Behind him, softly out of focus, headlights and red tail lights of a line of dark cars sweep slowly through the junction, and blue lights pulse in the rain. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: rain pattering on a jacket, tyres hissing on wet tarmac. No dialogue, no music. The camera does not move. Thanks."
+  },
+  {
+   "key": "05-r2",
+   "n": 5,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "05 failed three times with no clip; rewritten without 'masked', 'police' or 'siren'",
+   "motion": "The camera does not move. The news presenter in the knitted hood stands perfectly still with the microphone, facing the lens. Behind him, softly out of focus, the yellow ambulance with its blue lights pulsing finally pulls away through the junction and out of frame. Rain falls steadily. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: rain, an ambulance engine pulling away. No dialogue, no music. The camera does not move. Thanks."
+  },
+  {
+   "key": "05-r3",
+   "n": 5,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11: 'make it as simple as possible'. 05-r2 refused repeatedly; stripped to the bare action, no ambulance/lights/hood/presenter words",
+   "motion": "The camera does not move. The man stands still holding the microphone. Behind him, the yellow van drives away. Rain falls. No dialogue, no music. Thanks."
+  },
+  {
+   "key": "03-cr2A",
+   "n": 3,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Fully positive, static-scene method: lock the camera with Google's own words, write the ambulance as a parked landmark, )",
+   "motion": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow ambulance stays parked at the junction, blue lights flashing. A line of dark cars slides past behind it, left to right. Rain falls. Only rain and tyre sounds. Thanks."
+  },
+  {
+   "key": "03-cr2B",
+   "n": 3,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Built on the bare prompt that already went through. Timestamped halves pin the ambulance's end state ('still in the same)",
+   "motion": "The camera does not move. The man holds still with the microphone. [00:00-00:04] Behind him, the yellow van waits, blue lights flashing, as dark cars pass right to left. [00:04-00:08] The van is still in the same spot. Rain falls. No dialogue, no music. Thanks."
+  },
+  {
+   "key": "05-cr2A",
+   "n": 5,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Orientation-locked single sentence: name what the camera sees of the van (rear doors, red tail lights toward us), one st)",
+   "motion": "Static, locked-off shot. The man stands still holding the microphone. Behind him, the yellow van, rear doors and red tail lights toward us, drives straight ahead down the road, shrinking into the distance until it is gone. The motorbikes and cars stay parked. Rain falls. No dialogue, no music. Thanks."
+  },
+  {
+   "key": "05-cr2B",
+   "n": 5,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-11 timeline note: the ambulance randomly changes direction; clean room r2 (Timestamped beats: split the 8 seconds so the van pulls off rear-first, then recedes along one line, then the road is em)",
+   "motion": "Fixed camera. [00:00-00:03] The man holds still with the microphone; behind him the yellow van pulls away, its back to us. [00:03-00:08] It keeps going straight down the road, smaller and smaller, then gone. It never turns. Rain. No dialogue, no music. Thanks."
+  }
+ ]
+}

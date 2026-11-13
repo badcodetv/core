@@ -1,0 +1,22 @@
+{
+ "_note": "Priority Lane minister re-dub to Charon (2026-11-13). Mouth speech span 0.71-3.46 s on pl-04 (measured 2026-11-11 for the Orus dub). Charon's take speaks 0.26-2.60 (2.34 s), so x0.87 fills ~2.69 s. v2: the single placement ran ~0.15 s early on 'I said raspberry' (mouth opens ~0.88 on the mouth-track strip; first closure 1.54-1.58), so split at the natural gap: phrase 1 at natural speed from 0.90, phrase 2 at x0.87 from 1.90 so the p of 'shaped' lands on the 2.33-2.46 closure and the line ends with the mouth (~3.5).",
+ "duration": 8.042667,
+ "phrases": [
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav",
+   "from": 0.22,
+   "to": 1.22,
+   "at": 0.9,
+   "tempo": 1.0,
+   "text": "I said raspberry"
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav",
+   "from": 1.22,
+   "to": 2.64,
+   "at": 1.9,
+   "tempo": 0.87,
+   "text": "shaped hors d'oeuvres!"
+  }
+ ]
+}

@@ -2132,3 +2132,15 @@ appends, or check for both names).
   argument list"): resolve the value first.
 - ✅ **`ClipProjectItem.changeMediaFilePath(newPath, true)` swaps the media under a clip in place** (returns true): every
   use on every timeline follows, in/out points and edits untouched. Used to swap ffmpeg scale-ups for Flow's 1080p upscales.
+
+
+## Why a story folder fills up with extra project files (2026-11-13, Priority Lane, Jack asked)
+
+⬜ **Likely, not yet proven on a test.** Jack runs Premiere 25.6 by choice, and 26.5.2 is also installed. When a
+project is opened in a different version from the one that saved it, Premiere converts it and saves the result as a
+**new file with `_1` on the name**; the bridge opens projects with `setShowConvertProjectDialog(false)`, so this
+happens with no prompt. That fits `priority lane_1.prproj` beside `priority lane.prproj`, and
+`camping vid Copy-test_1.prproj`. The `Adobe Premiere Pro Auto-Save` folder is Premiere's own timed backups
+(Preferences > Auto Save), and the `.prin` files beside each project are Premiere's own sidecars, also not ours.
+**Fix to test:** open each project only in the version it was made in (check `host.version` before
+`premiere_open_project`), and save any one-off copy into a `_` folder.
