@@ -1,0 +1,80 @@
+[
+  {
+    "name": "subliminal-pulse-bed",
+    "style": "minimal dark electronic underscore, 124 BPM, analogue sequencer, dry sub-bass heartbeat pulse, tiny high ticking clicks, hollow empty midrange, static and functional, drops to half-time midway, ends on one choked low hit, hard stop, instrumental",
+    "exclude": "vocals, choir, humming, piano, melody, lead synth, strings, pads, reverb tail, fade out, riser, build-up",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 25,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "shepard-rise-ticking",
+    "style": "Dark instrumental thriller underscore, hospital-emergency tension. Low cellos and basses hold long sliding glissandi, doubled an octave above and an octave below by a dark analogue synth pad, so the pitch keeps rising but never arrives: each layer climbs while the next one fades in underneath. The only rhythm is a dry, close-miked mechanical wristwatch tick, steady at around 120 per minute, left exposed in the mix. From the very first second the pressure builds, quiet but relentless, sitting low so shouted voices can sit on top. Around five seconds in the climb stalls and the strings lock onto one strained, slightly bowed unison note, held taut and trembling, while the tick carries on alone beside it. Just after ten seconds everything cuts off dead, mid-note, to total silence. No resolution, no melody, no release.",
+    "exclude": "vocals, choir, humming, drums, kick, snare, fade-out, melody, major key, upbeat, piano",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "viola-tremolo-dread",
+    "style": "avant-garde string chamber score, instrumental, no vocals. Four to six players only: two violas, two cellos, one double bass, close-miked and bone dry in a small room, every bow hair and rosin crackle audible, unpolished, scratchy, raw. Opens already frantic: sul ponticello tremolo near the bridge, glassy and metallic, bows sawing faster and faster, cellos scraping low, dissonant clusters that bend sour with slow glissandi sliding between notes. Tension comes only from bowing speed and pressure, no beat. Midway the ensemble drops out abruptly and a single viola is left alone, one thin note sliding slowly downward, trembling, wrong. Then a sharp unison bow-stop: every string cut off at once, dead silence, no ring. Sparse low-mid register that sits under shouted dialogue, hospital-drama urgency, nocturnal, cold",
+    "exclude": "vocals, choir, humming, synth, drums, percussion, piano, brass, electronic, orchestral swell, epic trailer, reverb tail, fade out, melody, uplifting, comedic",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 60,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "uk-procedural-piano-motor",
+    "style": "140 BPM, 5/4 time, British police and hospital TV drama underscore, orchestral-electronic hybrid, instrumental. A racing high piano figure circles in fives from the very first bar, bright, dry and relentless in the top two octaves; tight clipped electronic percussion, muted kick and ticking hats; shimmering high violins; deep sub synth bass. The middle register stays bare. Arc: full urgent drive at once, no intro; around 6 seconds the gear drops, the piano lets go and one held, glassy high string chord hangs, cold and still; around 10 seconds every instrument cuts out together on the same beat. Dead stop, silence after.",
+    "exclude": "vocals, choir, humming, guitar, saxophone, fade-out, reverb tail, cheerful, comedic",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 25,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "percussion-only-ensemble",
+    "style": "cinematic tribal percussion score, no melody, instrumental only, 150 BPM, three hand drummers interlocking, huge floor toms, frame drums slapped by hand, accents pushed off the beat so the groove never lands, scraped sheet metal, bowed cymbal, one sustained low drone note, dry close-miked room, sparse midrange to leave space for voices. Opens thunderous and frantic, then without warning collapses to a single quiet rim tick, alone and patient, and ends cold as the drone is cut off mid-note.",
+    "exclude": "vocals, chanting, choir, humming, strings, piano, synth lead",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "broken-cardiac-electronica",
+    "style": "instrumental, glitch industrial electronica, malfunctioning drum machine, distorted kick as a stumbling skipping heartbeat, modular synth bleeps and electrical buzz, granular stutter edits, dry harsh mix, heavy sub low end, brittle sharp highs, hollow empty midrange. A broken machine's pulse races and misfires in panic, then slows and loses its grip, and a tape-stop drags the whole rig down to dead silence at ten seconds, nothing after.",
+    "exclude": "vocals, vocal chops, choir, humming, melodic lead, fade-out, reverb tail, cheerful",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  }
+]

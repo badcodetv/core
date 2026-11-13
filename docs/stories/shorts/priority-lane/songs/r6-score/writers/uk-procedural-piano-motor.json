@@ -1,0 +1,13 @@
+{
+  "name": "uk-procedural-piano-motor",
+  "style": "140 BPM, 5/4 time, British police and hospital TV drama underscore, orchestral-electronic hybrid, instrumental. A racing high piano figure circles in fives from the very first bar, bright, dry and relentless in the top two octaves; tight clipped electronic percussion, muted kick and ticking hats; shimmering high violins; deep sub synth bass. The middle register stays bare. Arc: full urgent drive at once, no intro; around 6 seconds the gear drops, the piano lets go and one held, glassy high string chord hangs, cold and still; around 10 seconds every instrument cuts out together on the same beat. Dead stop, silence after.",
+  "exclude": "vocals, choir, humming, guitar, saxophone, fade-out, reverb tail, cheerful, comedic",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 25,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false
+}

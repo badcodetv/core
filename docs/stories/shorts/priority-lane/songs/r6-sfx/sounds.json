@@ -1,0 +1,58 @@
+{
+  "research": [
+    "https://help.suno.com/en/articles/10625537: official Sounds notes. Be specific and concise, use recognisable terms (rumble, crash, ambiance); length can be asked for in the prompt ('5 second long sound of...'); One Shot for effects, Loop for beds; loops may come back as full musical arrangements; beta, results may miss.",
+    "https://suno.com/release-notes/make-loops-and-samples-from-scratch-with-sounds: Sounds launched Jan 2026 as a loops-and-samples generator, two takes per Create.",
+    "https://jackrighteous.com/fr/blogs/guides-using-suno-ai-music-creation/suno-sounds-ai-soundeffects-guide: practitioner formula Sound + Action + Environment + Perspective + Duration, and end with 'no music' to stop drift into a track; expect to trim tails and normalise.",
+    "https://lilys.ai/en/notes/suno-ai-20260130/suno-ai-sound-mode-pro: a tester found even One Shot prompts added music when a stylistic word was used; timbre words (distorted, reverb) audibly steer output. So: keep adjectives physical, state 'no music, no voices'.",
+    "https://www.wikiwand.com/en/articles/Blues_and_twos: modern UK ambulances run electronic wail/yelp sirens, not just the old two-tone 'nee-naw' horns; naming 'wail then yelp' gets the right British sound.",
+    "https://www.thenewworld.co.uk/paola-totaro-the-sound-of-sirens/: the UK moved from the 1970s two-tone to a US-style rising-falling wail in the 1990s.",
+    "https://morphic.com/resources/sounds/flatline-sound-effect: flatline = one continuous unwavering tone at a single steady pitch; the word 'flatline' alone tends to return a beeping monitor, so spell out 'no beeps, no pulsing'.",
+    "https://www.tij.co.jp/jp/lit/pdf/sloa273: IEC 60601-1-8 medical alarm tones sit roughly 150-1000 Hz; a heart-rate beep is a short tone per detected beat, so 'short clean beep per heartbeat' plus a rate describes it.",
+    "https://freesound.org/s/425528: wet-road pass-by recordings are described by tyre hiss, water displacement and road spray, with stated mic distance; distance is the main variable in pass-by libraries (close vs muffled distant).",
+    "https://sfxengine.com/blog/car-driving-by-sound-effect: the smooth sizzle of tyres on wet asphalt is its own texture; describe the tyre/road layer, not just 'car'."
+  ],
+  "sounds": [
+    {
+      "key": "siren",
+      "type": "One-Shot",
+      "bpm": null,
+      "prompt": "6 second sound of a British ambulance electronic siren, fast wail switching to yelp, heard from inside the van: muffled through the metal roof, loud and close, boomy cabin, engine under it. At 5.5 seconds the siren cuts off dead. No music, no voices.",
+      "why": "Names UK wail/yelp, the inside-the-body perspective and the hard cut-off time, per the Sound+Action+Environment+Perspective+Duration formula."
+    },
+    {
+      "key": "monitor",
+      "type": "One-Shot",
+      "bpm": null,
+      "prompt": "7 second sound of a hospital heart monitor beeping, one short clean electronic beep per heartbeat, starting fast and speeding up, frantic by the end. Dry and close, small vehicle interior, no reverb. No music, no voices, no alarm melody.",
+      "why": "Describes the beep as one tone per beat with an accelerating rate and keeps it dry; bans the melodic alarm and music drift."
+    },
+    {
+      "key": "cabin",
+      "type": "Loop",
+      "bpm": null,
+      "prompt": "Interior ambience of a moving ambulance at night: heavy rain drumming on a metal roof, low diesel engine drone, tyre and road rumble on wet tarmac, small rattles of loose medical equipment. Close, enclosed, continuous. No music, no siren, no voices.",
+      "why": "Loop for a bed, built from named physical layers so it stays foley; explicit 'no music' because Suno loops drift into arrangements."
+    },
+    {
+      "key": "stop",
+      "type": "One-Shot",
+      "bpm": null,
+      "prompt": "2 second sound of a heavy van braking hard to a stop on a wet road, heard from inside: tyres hissing and skidding through water, body lurching, equipment clattering forward, then still. Close and physical. No music, no voices.",
+      "why": "One event with a start, a body and an end, from the interior perspective that matches the siren."
+    },
+    {
+      "key": "passby",
+      "type": "One-Shot",
+      "bpm": null,
+      "prompt": "4 second sound of a large quiet luxury saloon car gliding slowly past in the rain, heard from a stopped vehicle a few metres away: soft tyre hiss and water spray on wet tarmac rising and falling, almost no engine. No music, no voices.",
+      "why": "Pass-bys are defined by tyre sizzle and mic distance, so both are stated; 'almost no engine' sells the expensive, silent car."
+    },
+    {
+      "key": "flatline",
+      "type": "One-Shot",
+      "bpm": null,
+      "prompt": "5 second sound of a medical monitor flatline: one continuous unwavering electronic tone at a single steady pitch, around 1000 Hz, no beeps, no pulsing, no change. Dry, close, no reverb. No music, no voices.",
+      "why": "Research says 'flatline' alone returns beeping, so it spells out one steady tone with no pulsing and a pitch in the medical-alarm range."
+    }
+  ]
+}

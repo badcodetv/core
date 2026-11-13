@@ -1,0 +1,13 @@
+{
+  "name": "subliminal-pulse-bed",
+  "style": "minimal dark electronic underscore, 124 BPM, analogue sequencer, dry sub-bass heartbeat pulse, tiny high ticking clicks, hollow empty midrange, static and functional, drops to half-time midway, ends on one choked low hit, hard stop, instrumental",
+  "exclude": "vocals, choir, humming, piano, melody, lead synth, strings, pads, reverb tail, fade out, riser, build-up",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 25,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false
+}

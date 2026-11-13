@@ -34,7 +34,7 @@ writers, the sameness gate, and a stamp so nobody hand-edits the round.
                           belongs to no story says so with an empty file named `nostory` instead.
   explore       optional  present = a round to FIND a style: only the story file's "Rules for this
                           story" and "Never" sections go in, not the locked style.
-  lyrics.txt    suno: REQUIRED  the lyric words only, no cue tags
+  lyrics.txt    suno: REQUIRED  the lyric words only, no cue tags (or an empty `instrumental` file instead: no lyrics, "lyrics" must be "")
   subject.md    flow: REQUIRED  what the still or clip shows (the beat, the shot), verbatim
   listen.md     optional  ONE fresh listen of the reference, the listener's text verbatim
   reference.md  optional  reference URLs + the engine's own stored record for it, raw
@@ -154,7 +154,10 @@ def base_brief(d, kind):
                      "lines describes, paste that line exactly as written (it is a fixed rule, and exempt from the "
                      "sameness check); never paraphrase it. Write everything else in your own words.\n\n```\n"
                      + read(d, "shared.txt") + "\n```")
-    if kind == "suno":
+    if kind == "suno" and (d / "instrumental").exists():
+        parts.append("## No lyrics\n\nThis is an INSTRUMENTAL: no voice, no singing, no words. Leave \"lyrics\" as an "
+                     "empty string \"\"; everything goes in the style and exclude boxes.")
+    elif kind == "suno":
         parts.append("## The lyrics\n\nUse these words exactly — do not change, add or remove any word or "
                      "spelling. You may add section tags and short directions in square brackets. Keep "
                      "every line.\n\n```\n" + read(d, "lyrics.txt") + "\n```")
@@ -191,7 +194,7 @@ def write_out(path, text):
 def brief(d):
     d = Path(d)
     kind = kind_of(d)
-    need = ["lyrics.txt"] if kind == "suno" else ["subject.md"]
+    need = (["lyrics.txt"] if not (d / "instrumental").exists() else []) if kind == "suno" else ["subject.md"]
     if not (read(d, "ask.md") or read(d, "jack.md")):
         sys.exit(f"🔴 {d/'ask.md'} is required (the human's words, verbatim)")
     if not read(d, "story") and not (d / "nostory").exists():

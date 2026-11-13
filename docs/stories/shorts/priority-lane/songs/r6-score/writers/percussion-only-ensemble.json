@@ -1,0 +1,13 @@
+{
+  "name": "percussion-only-ensemble",
+  "style": "cinematic tribal percussion score, no melody, instrumental only, 150 BPM, three hand drummers interlocking, huge floor toms, frame drums slapped by hand, accents pushed off the beat so the groove never lands, scraped sheet metal, bowed cymbal, one sustained low drone note, dry close-miked room, sparse midrange to leave space for voices. Opens thunderous and frantic, then without warning collapses to a single quiet rim tick, alone and patient, and ends cold as the drone is cut off mid-note.",
+  "exclude": "vocals, chanting, choir, humming, strings, piano, synth lead",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false
+}

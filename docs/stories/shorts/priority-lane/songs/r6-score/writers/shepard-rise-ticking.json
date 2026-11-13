@@ -1,0 +1,13 @@
+{
+  "name": "shepard-rise-ticking",
+  "style": "Dark instrumental thriller underscore, hospital-emergency tension. Low cellos and basses hold long sliding glissandi, doubled an octave above and an octave below by a dark analogue synth pad, so the pitch keeps rising but never arrives: each layer climbs while the next one fades in underneath. The only rhythm is a dry, close-miked mechanical wristwatch tick, steady at around 120 per minute, left exposed in the mix. From the very first second the pressure builds, quiet but relentless, sitting low so shouted voices can sit on top. Around five seconds in the climb stalls and the strings lock onto one strained, slightly bowed unison note, held taut and trembling, while the tick carries on alone beside it. Just after ten seconds everything cuts off dead, mid-note, to total silence. No resolution, no melody, no release.",
+  "exclude": "vocals, choir, humming, drums, kick, snare, fade-out, melody, major key, upbeat, piano",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false
+}

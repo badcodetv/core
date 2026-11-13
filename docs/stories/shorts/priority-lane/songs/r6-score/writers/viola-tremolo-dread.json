@@ -1,0 +1,13 @@
+{
+  "name": "viola-tremolo-dread",
+  "style": "avant-garde string chamber score, instrumental, no vocals. Four to six players only: two violas, two cellos, one double bass, close-miked and bone dry in a small room, every bow hair and rosin crackle audible, unpolished, scratchy, raw. Opens already frantic: sul ponticello tremolo near the bridge, glassy and metallic, bows sawing faster and faster, cellos scraping low, dissonant clusters that bend sour with slow glissandi sliding between notes. Tension comes only from bowing speed and pressure, no beat. Midway the ensemble drops out abruptly and a single viola is left alone, one thin note sliding slowly downward, trembling, wrong. Then a sharp unison bow-stop: every string cut off at once, dead silence, no ring. Sparse low-mid register that sits under shouted dialogue, hospital-drama urgency, nocturnal, cold",
+  "exclude": "vocals, choir, humming, synth, drums, percussion, piano, brass, electronic, orchestral swell, epic trailer, reverb tail, fade out, melody, uplifting, comedic",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 60,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false
+}

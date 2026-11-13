@@ -1,0 +1,8 @@
+- This round is the BACKGROUND SCORE ONLY for a 14-second vertical short (BadCode Shorts, "Priority Lane"). No voices and no sound effects in it: the dialogue is already recorded separately, and the siren, monitor, rain and flatline tone are made separately. The score sits UNDER shouted dialogue, so it must leave room for voices.
+- The picture is already cut. What we see, in order:
+  - 0–5.5 s: inside a speeding ambulance at night in the rain, two masked paramedics fighting to save an old man, the driver shouting at the traffic.
+  - 5.5–7 s: a red light; a police motorcycle outrider raises his glove. The ambulance stops; a politician's black car glides across in front.
+  - 7–10.5 s: the politician in the back of his car, comfortable, on the phone, furious about canapés.
+  - 10.5–14 s: back inside, the heart monitor flatlines. The score must stop dead at the flatline (about 10.5–11 s). Silence. Black. Logo.
+- The take is generated at 20 seconds so there is room to cut; only the first ~11 seconds are used.
+- Last rounds (r3, r4) had voices in them; Jack said they sounded American and every voice the same, and voices were then moved out of Suno. Nobody has heard a score-only take for this short yet.
