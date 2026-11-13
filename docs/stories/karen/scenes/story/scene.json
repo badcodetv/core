@@ -1,0 +1,30 @@
+{
+  "story": "karen",
+  "scene": "story",
+  "prefix": "st",
+  "title": "Karen Story",
+  "heading": "Karen Story: the narrated film",
+  "media": "/mnt/d/badcode-videos/karen-story/timeline",
+  "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid_1.prproj",
+  "source_sequence": "Karen v4",
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/preview.mp4",
+    "script": "python3 scripts/karen/story-edl.py \"<project>/.bridge/state-<sequence>.json\" /mnt/d/badcode-videos/karen-story/timeline/cut-<name>/edl.json --render <render.mp4>  (then point cut.edl/cut.preview at cut-<name>)"
+  },
+  "premiere": {
+    "current": "v4",
+    "v4": {
+      "sequence": "Karen v4",
+      "guid": "9d5e84f4-66e2-4922-bc15-3c75b0855509",
+      "built": "2026-10-22",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid_1.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
+      "what": "Jack's hand cut (clone of Karen v3 upload): Algenib narration, Act 5 cut, 'final boss' line, President calls back, To be continued + spray logo. Brought onto a timeline page 2026-11-13 (page round 0)",
+      "how": "hand-cut in Premiere; page from scripts/karen/story-edl.py"
+    }
+  },
+  "boards": {
+    "timeline": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC"
+  }
+}
