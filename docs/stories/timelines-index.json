@@ -1,0 +1,18 @@
+{
+  "_what": "The order of the timeline index page (scripts/scene/build-timeline-index.py). One entry per film; 'main' is the timeline page to open, 'also' are side pages. Scene paths are relative to docs/stories/. Shorts are found automatically (short-*/ and shorts/*).",
+  "url": "https://claude.ai/artifact/KVLjAMnfz3NerFP9RQhxn6", "rebuild": "python3 scripts/scene/build-timeline-index.py <scratch>/timeline-index/index.html, then republish to the url",
+  "films": [
+    {"name": "GitPush Origin Master", "kind": "Film + music video", "overview": "https://claude.ai/artifact/AXJqmgAWTRhxK7fzMkKukp",
+     "parts": ["gitpush-origin-master/scenes/mv-start", "gitpush-origin-master/scenes/chorus-outbreak", "gitpush-origin-master/scenes/mv-ending",
+               "gitpush-origin-master/scenes/second-half-a-killbots", "gitpush-origin-master/scenes/second-half-b-the-door",
+               "gitpush-origin-master/scenes/second-half-c-walk-out", "gitpush-origin-master/scenes/second-half-d-crossing",
+               "gitpush-origin-master/scenes/second-half-e-ending"],
+     "also": ["gitpush-origin-master/scenes/choruses-humans", "gitpush-origin-master/scenes/second-half-ending-reel"]},
+    {"name": "Karen", "kind": "Music video", "main": "karen/scenes/music-video"},
+    {"name": "Karen", "kind": "Story film", "main": "karen/scenes/story"},
+    {"name": "Camping", "kind": "Music video", "main": "camping/mv-r10", "also": ["camping/mv-balaclava"]},
+    {"name": "Camping", "kind": "Story film", "main": "camping/scenes/story"},
+    {"name": "The Bank Robbery", "kind": "Music video", "main": "bank-robbery/songs/mv-gang", "also": ["bank-robbery/songs/mv-speakeasy-mint-alt"]},
+    {"name": "The Bank Robbery", "kind": "Story film", "main": "bank-robbery/scenes/story"}
+  ]
+}
