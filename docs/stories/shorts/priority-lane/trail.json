@@ -118,5 +118,15 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "mood board round 3: 12 clean-room ambulance stills (losing, held, windscreen, flatline) + 3 round-1 keeps",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane design/2026-11-13-shorts-priority-lane-r3-moodboard.html"
+ },
+ {
+  "at": "2026-11-13T14:52:51+00:00",
+  "stage": "dialogue",
+  "round": 3,
+  "url": "https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
+  "what": "dialogue pick (page notes empty; Jack picked in chat)",
+  "decided": [
+   "Jack: 1b (no notes)"
+  ]
  }
 ]
