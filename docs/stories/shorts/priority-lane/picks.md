@@ -54,3 +54,5 @@ Left in view:
 🔴 The old `shorts-1-priority-lane-r2` sequence in `priority lane.prproj` now has offline media (it will ask to relink). Everything it used is in `_old-r1-r2/` if it's ever wanted again.
 
 - **2026-11-13, Jack:** "there are gloves floating on the device in his mouth": LS4-b-fix-a's bag-valve mask was held by hands with no body. Redone as a fresh generation from LS4-b-fix-a as the reference (not a change-only edit): **LS5-a/b/c**, each with the second paramedic visible and his arms attached. On the mood board, round 5.
+
+- **2026-11-13, flatline re-rolls (Jack: "reroll the clip").** r3-D2 (bare prompt) let the monitor come back to a live trace after ~2.5 s, so it was moved to `video/_unpicked/`. r3-D3 ("the screen stays dark") was refused 5 times. **r3-D4 ("one straight green line that never changes") passes:** a flat green line 0-4 s, then the screen goes black from ~4 s; no live trace at any point. He sits back from about 2 s. Use 0-4 s, or run on into the dark screen if it reads as the monitor dying.
