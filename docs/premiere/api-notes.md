@@ -2136,11 +2136,13 @@ appends, or check for both names).
 
 ## Why a story folder fills up with extra project files (2026-11-13, Priority Lane, Jack asked)
 
-⬜ **Likely, not yet proven on a test.** Jack runs Premiere 25.6 by choice, and 26.5.2 is also installed. When a
-project is opened in a different version from the one that saved it, Premiere converts it and saves the result as a
-**new file with `_1` on the name**; the bridge opens projects with `setShowConvertProjectDialog(false)`, so this
-happens with no prompt. That fits `priority lane_1.prproj` beside `priority lane.prproj`, and
-`camping vid Copy-test_1.prproj`. The `Adobe Premiere Pro Auto-Save` folder is Premiere's own timed backups
-(Preferences > Auto Save), and the `.prin` files beside each project are Premiere's own sidecars, also not ours.
-**Fix to test:** open each project only in the version it was made in (check `host.version` before
-`premiere_open_project`), and save any one-off copy into a `_` folder.
+✅ **Confirmed from the files.** Each `.prproj` carries a version stamp: **Version 43 = Premiere Pro 2025 (25.6)**,
+**Version 45 = Premiere 2026 (26.5)**. Across Jack's animation folder, every `name_1.prproj` (and `_2`) is Version 45
+and its original is Version 43 (Same Bench, Signs, Sponsor a Chancellor, No Master Recording `_1` and `_2`, Karen vid,
+the Bank Robbery song, the Camping copy-test). So a 2025 project opened in Premiere 2026 is converted and saved as a
+new file with `_1` on the name (`_2` the next time), and 2025 cannot open the converted copy back. The bridge opens
+projects with `setShowConvertProjectDialog(false)`, so it happens without a prompt. The `Adobe Premiere Pro
+Auto-Save` folder (timed backups) and the `.prin` sidecars are Premiere's own.
+**Fix: one Premiere version on the machine.** Ruling owed from Jack (2026-11-13: asked which to keep); the
+recommendation given was 2026, because the current work (Paraguay, The Rules, Karen vid_1, the Bank Robbery and
+Camping song cuts) is already Version 45 and 2025 can't open it. Whoever shares a project through Drive needs the same version.
