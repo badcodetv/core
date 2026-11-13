@@ -25,6 +25,15 @@ Read this first. It tells you what BadCode is, how it sounds, and where everythi
 > every part in order with its beat and timeline page, rebuilt and republished to the same link whenever a timeline changes.
 > The repo holds the words, D: (backed up to Google Drive) holds the media, and the two together are everything.
 
+> **Which timeline do I open? The timeline index: https://claude.ai/artifact/KVLjAMnfz3NerFP9RQhxn6** (Kai, 2026-11-13).
+> One page, every film (GPOM, Karen, Camping, Bank Robbery: music video and story film each) and every short: each row
+> is a timeline page, the Premiere sequence and project it drives, and when it last changed. Start there for
+> "where are we", "which page", "open the timeline for X". Built by `scripts/scene/build-timeline-index.py` from every
+> scene's `scene.json` + `trail.json`; film order in `docs/stories/timelines-index.json` (shorts are found by themselves).
+> **Rebuild and republish it to the same link whenever any timeline page is made or replaced.** A cut made in Premiere
+> before the timeline tool existed comes onto a page with `scripts/scene/premiere-to-edl.py` (`--stem`, `--beats-from`)
+> and a Premiere render; check which sequence is actually open first (the Bank Robbery page was built from the wrong cut once).
+
 ## What BadCode is
 
 BadCode is two people: **Kai** (main developer) and **Jack** (lead creative designer). Either

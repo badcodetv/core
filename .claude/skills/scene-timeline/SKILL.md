@@ -79,6 +79,9 @@ After each publish:
 
 Every time a timeline page is made, changes state, or is replaced, update the scene's row in the story's
 overview board (`docs/stories/<story>/timelines.json`), rebuild and republish (the **`overview-board`** skill).
+Then rebuild the **timeline index** across all films (https://claude.ai/artifact/KVLjAMnfz3NerFP9RQhxn6):
+`python3 scripts/scene/build-timeline-index.py <scratch>/timeline-index/index.html` and republish to that link (a new
+film or story-film row goes into `docs/stories/timelines-index.json` first; shorts appear by themselves).
 
 ## Done
 
