@@ -33,4 +33,4 @@ the excuse; there is one of you, and one mum waiting up. Stake: his life.
 | Words | `scenes/infinite-yous/scene.json` beats | Jack's lines, 2026-11-13 |
 | Look | [`look.md`](./look.md) | EXPLORING: Jack's night-taxi photo |
 | Sound | [`sound.md`](./sound.md) | EMPTY |
-| Media | Jack: Desktop `Youtube Vids\animation\shorts\infinite-yous` · Drive `Shorts/Infinite Yous` | set up 2026-11-13; stills round 1 next |
+| Media | Jack: Desktop `Youtube Vids\animation\shorts\infinite-yous` · Drive `Shorts/Infinite Yous` | stills round 1 on the mood board https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ, awaiting Jack's picks |

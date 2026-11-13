@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/CA1-a.jpg",
+ "made": "2026-11-13T11:27:34.471Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 night photograph, 135mm at f/1.8, side-on from across the street, rear-curtain flash freezing the kick's peak. A figure in a balaclava and white science lab coat boots a drunk lad, early twenties, short dark hair, untucked white going-out shirt, flushed and sweaty, headfirst through a silver taxi's open back door, his lanyard of keys flying. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Glowing yellow TAXI roof sign, inky blacks, huge amber, red and cyan bokeh. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "976f5c92-c4c1-4619-85d1-9f1781889b46"
+}

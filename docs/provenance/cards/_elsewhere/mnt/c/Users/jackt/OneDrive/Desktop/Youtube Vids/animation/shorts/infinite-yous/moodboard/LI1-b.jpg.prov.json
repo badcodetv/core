@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LI1-b.jpg",
+ "made": "2026-11-13T11:22:08.896Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Photorealistic vertical 9:16 night film still, shot on a 135mm telephoto at f/1.8 from across a wet city street. In the soft out-of-focus foreground, the bottom third of the frame is the silver roof of a parked car with a glowing yellow roof sign reading \"TAXI\", its light reflected on the paintwork. Beyond it, sharp, a young man in his early twenties with short dark hair and an untucked white going-out shirt, flushed and a little sweaty, stands on the pavement outside a pub, holding his lanyard of car keys high and talking with smug drunk confidence. Behind him, shop windows and street lamps melt into large creamy bokeh discs of amber, red, pink and cyan. Inky blacks, practical light only, cinematic grain. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "980925d7-c21d-4e30-8808-13f17b094eba"
+}

@@ -1,0 +1,26 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's guide: Subject + Action + Location + Composition + Style, narrative sentences not keyword lists, real camera terms (shallow depth of field f/1.8, lens), positive framing over negatives, 9:16 supported, references need an explicit relationship instruction",
+    "https://dev.to/googleai/getting-the-most-out-of-nano-banana-2-502k — Google AI dev post: Nano Banana 2 is the fast model for generation/style transfer; generate options, pick a composition, then upscale",
+    "https://www.canon.co.uk/get-inspired/tips-and-techniques/bokeh-photography/ — bokeh circles come from wide aperture plus distant point lights; telephoto compression pulls the bokeh up behind the subject (the reference's look)",
+    "https://alphauniverse.com/stories/how-to-create-magic-portraits — 85mm f/1.4 at night: wide-open gives bigger bokeh and keeps shutter/ISO usable; light the subject with practical sources (signs, lamps, car lights)",
+    "https://www.digitalcameraworld.com/uk/tutorials/cheat-sheet-rear-curtain-flash-how-it-works-and-why-you-need-it — rear-curtain flash freezes the subject at the END of the motion with the blur trailing behind: the way to catch the peak of a kick at night",
+    "https://www.photographymad.com/pages/view/slow-sync-flash-the-ultimate-guide — slow sync needs ambient light and roughly 1/15 s or slower for trails; the flash does the freezing so the peak reads sharp"
+  ],
+  "attach_reference": "yes — attach it as a style reference with an explicit line in the prompt box such as 'match the lens, colour and bokeh of the attached photo' if Flow allows; it pins the palette and bokeh scale better than words, and the prompts already describe the action so the cars in it should not be copied. If the attached photo starts dictating composition (two cab roofs, landscape framing), drop it and rely on the description.",
+  "notes": "Shot is 3 s: if animating, the keys could finish their arc out of frame. The balaclava triangle side is described as screen-right per the brief; check it on every take, as models often mirror it.",
+  "prompts": [
+    {
+      "idea": "Side-on from across the street on a 135mm, the reference photo's own lens: the kick in clean profile at its peak, rear-curtain flash freezing it with short trails, the whole gag readable as one silhouette.",
+      "prompt": "Vertical 9:16 night photograph, 135mm at f/1.8, side-on from across the street, rear-curtain flash freezing the kick's peak. A figure in a balaclava and white science lab coat boots a drunk lad, early twenties, short dark hair, untucked white going-out shirt, flushed and sweaty, headfirst through a silver taxi's open back door, his lanyard of keys flying. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Glowing yellow TAXI roof sign, inky blacks, huge amber, red and cyan bokeh. Thanks."
+    },
+    {
+      "idea": "From inside the cab, low on the back seat on a 50mm: the lad flies at camera and the figure stands framed in the doorway mid-follow-through; the cab reads as the warm, safe box he lands in.",
+      "prompt": "Vertical 9:16 night photograph from low on a taxi's back seat, looking out the open door, 50mm at f/1.4. A drunk lad, early twenties, short dark hair, untucked white going-out shirt, flushed and sweaty, tumbles towards the lens, lanyard of keys spinning off his fingers. In the doorway, leg still raised, a figure in a balaclava and white science lab coat. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Yellow TAXI sign light on the door frame, inky blacks, amber and cyan bokeh. Thanks."
+    },
+    {
+      "idea": "The keys are the hero: pin-sharp mid-air close to the lens on a 100mm, the kick and the lad's legs vanishing into the cab soft behind. The punchline (the keys he will not drive with) is the subject.",
+      "prompt": "Vertical 9:16 night photograph, 100mm at f/1.4, focus on a lanyard of car keys frozen mid-air near the lens. Behind, soft, a figure in a balaclava and white science lab coat finishes a kick as the legs of a drunk lad, early twenties, short dark hair, untucked white going-out shirt, flushed and sweaty, vanish into a silver taxi's back seat. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Glowing yellow TAXI sign, inky blacks, big amber, red and cyan bokeh. Thanks."
+    }
+  ]
+}

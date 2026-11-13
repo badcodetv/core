@@ -1,0 +1,29 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: narrative sentences in Subject + Action + Location + Composition + Style order, name lens/aperture/angle, name the light, describe what you want rather than negatives; 9:16 supported; up to 14 reference images with an explicit relationship instruction",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — Nano Banana 2 is Gemini 3.1 Flash Image; treat prompts as a creative brief, not a keyword list",
+    "https://snapshot.asia.canon/en/article/must-try-tips-for-capturing-dramatic-nightscapes — bokeh circles come from focusing on a near subject with the lights far behind; distance between subject and lights matters more than the lens",
+    "https://www.nikon.ee/en_EE/learn-and-explore/magazine/tips-and-tricks/what-is-bokeh-and-how-should-i-use-it — focus on a nearby subject and let distant lights blur into coloured orbs",
+    "https://theslantedlens.com/how-to-create-beautiful-bokeh/ — 85mm f/1.4 / 135mm f/2 primes give the compressed, melted background; longer lens = bigger orbs",
+    "https://greatbigphotographyworld.com/night-street-photography/ — keep deep shadows nearly unreadable; let practical sources (signs, windows, lamps) be the only light",
+    "https://nofilmschool.com/practical-vs-cgi-debate — practical effects read real because real light hits real surfaces; so give the impossible object material, weight and the scene's own light",
+    "https://morphic.com/resources/vfx/hand-transition-effect — the giveaway in hand/frame transitions is the visible seam; hide or motivate it",
+    "https://www.premiumbeat.com/blog/secrets-of-the-split-field-diopter/ — in-camera split screens (split diopter) carry a soft optical seam, a useful real-world model for how the dividing lines should look"
+  ],
+  "attach_reference": "yes — attach it as a style reference with a relationship line ('use the attached photo only for its lighting, lens blur and colour'), because the bokeh palette and inky blacks are hard to pin in words; but keep its TAXI cars out of the composition by saying so, and describe the look in the prompt too so a drift is caught.",
+  "notes": "Make the impossible part physical in the prompt: the dividing lines are given as real black cords/elastic that catch taxi-sign light, and the image strips pleat like fabric, so the still reads as a practical rig, not a CGI warp. The actual squeeze (lines sliding together, the copies merging into one) is better done as motion: animate in the video model from a start frame of the split and an end frame of the single lad, or build the split in the edit (masked strips sliding closed) and generate only the figure's hands-and-cords plate on top. Each still here is the mid-squeeze moment; expect copies of the lad to be inconsistent, which the edit can fix by duplicating one plate of him.",
+  "prompts": [
+    {
+      "idea": "Frontal medium on 85mm: the figure as a puppeteer centre frame, cords like curtain pulls, the copies pleating between the fists. Classic, readable, the deadpan face square to camera.",
+      "prompt": "Vertical 9:16, outside a UK pub at night, 85mm f/1.4. A deadpan figure in a white lab coat over dark clothes grips thin black dividing lines like curtain cords, pulling them together. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Between the fists, five side-by-side copies of a flushed, sweaty lad in his early twenties, short dark hair, untucked white going-out shirt, car keys on a lanyard, squash into one, strips pleating like fabric. Amber and cyan bokeh, TAXI sign, inky blacks, film grain. Thanks."
+    },
+    {
+      "idea": "Tight 135mm close-up on the gloved fists and the lad's squashed faces, figure soft behind: the effect felt as touch and tension (stretched elastic), the most practical-looking option.",
+      "prompt": "Vertical 9:16 close-up, 135mm f/2, night street. Two gloved fists, lit amber by a TAXI roof sign, clench taut black dividing lines bunched like stretched elastic. Between them, overlapping faces of a flushed, sweaty lad in his early twenties, short dark hair, untucked white going-out shirt, car keys on a lanyard, compress into one startled face, sharp. Behind, soft, the calm figure in a white lab coat. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Pink and cyan bokeh, deep blacks, film grain. Thanks."
+    },
+    {
+      "idea": "Wide 35mm from kerb height: the split as a folding screen the figure hauls shut from the edge, so the whole street and the act of stepping into the frame are seen.",
+      "prompt": "Vertical 9:16 wide, kerb height, 35mm f/2, pub street at night. Folding-screen panels each hold a copy of a flushed, sweaty lad in his early twenties, short dark hair, untucked white going-out shirt, car keys on a lanyard. From the left edge, a figure in a white lab coat over dark clothes hauls the dividing lines inward like rope; panels concertina shut, copies colliding into one. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Wet pavement, TAXI sign, amber bokeh. Thanks."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LI1-c.jpg",
+ "made": "2026-11-13T11:22:36.441Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Photorealistic vertical 9:16 night film still. Tight three-quarter profile close-up on a 50mm lens at f/1.2 of a young man in his early twenties with short dark hair and an untucked white going-out shirt, flushed and a little sweaty, leaning toward the kerb outside a pub and lifting a lanyard of car keys beside his face, mouth open mid-boast, eyebrows raised in total drunk certainty. His face is lit by the warm yellow glow of a taxi roof sign just out of frame at the edge, a hard golden key light with deep shadow on the far cheek. Everything behind him is a dark street turned into big soft bokeh circles of amber, red, pink and a cool cyan, reflected in the wet pavement. Inky blacks, shallow focus, subtle grain. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "04875046-70e2-4b0a-845c-a9a4be0444c0"
+}

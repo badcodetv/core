@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-13T11:40:02+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ",
+  "what": "Stills round 1, clean room: 15 stills, three per beat, in Jack's night-taxi look",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-infinite-yous/scenes/infinite-yous <out.html>"
+ }
+]

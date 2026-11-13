@@ -6,12 +6,46 @@
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Infinite Yous",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous",
  "beats": [
-  {"key": "line", "at": "0:00", "name": "A. The line", "blurb": "A drunk lad at night, car keys in hand: \"One version of me gets home fine.\""},
-  {"key": "split", "at": "0:03", "name": "B. The split", "blurb": "Multiple versions of him on the same screen, splitting off, separated by lines."},
-  {"key": "squeeze", "at": "0:06", "name": "C. Only one", "blurb": "The BadCode balaclava figure in a science lab coat grabs the lines separating the versions and squeezes them into one, the original: \"There's only one.\""},
-  {"key": "cab", "at": "0:10", "name": "D. Into the cab", "blurb": "He kicks the lad into a cab."},
-  {"key": "logo", "at": "0:13", "name": "E. Headlights", "blurb": "The BadCode logo and name; taxi headlights sweep across and light it; a cinematic car horn, not annoying."}
+  {
+   "key": "line",
+   "at": "0:00",
+   "name": "A. The line",
+   "blurb": "A drunk lad at night, car keys in hand: \"One version of me gets home fine.\""
+  },
+  {
+   "key": "split",
+   "at": "0:03",
+   "name": "B. The split",
+   "blurb": "Multiple versions of him on the same screen, splitting off, separated by lines."
+  },
+  {
+   "key": "squeeze",
+   "at": "0:06",
+   "name": "C. Only one",
+   "blurb": "The BadCode balaclava figure in a science lab coat grabs the lines separating the versions and squeezes them into one, the original: \"There's only one.\""
+  },
+  {
+   "key": "cab",
+   "at": "0:10",
+   "name": "D. Into the cab",
+   "blurb": "He kicks the lad into a cab."
+  },
+  {
+   "key": "logo",
+   "at": "0:13",
+   "name": "E. Headlights",
+   "blurb": "The BadCode logo and name; taxi headlights sweep across and light it; a cinematic car horn, not annoying."
+  }
  ],
- "video": {"model": "Omni 1.2 Flash", "aspect": "9:16", "mode": "Frames", "duration": 8},
- "boards": {}
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "9:16",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ"
+ },
+ "flow_project": "28e36ecd-0a59-45db-aa58-a4a0e2c31b29",
+ "moodboard_intro": "Round 1, clean room: five sealed writers researched the web, each wrote three stagings of one beat in the look of your night-taxi photo (described in words, not attached). Pick This on one still per beat, or note what to change. Split and squeeze: the writers say the panels and the line-grab are best built in the edit from single stills of the lad, so read these as the look to aim for. The end card's logo is laid in later, lit by the headlights."
 }

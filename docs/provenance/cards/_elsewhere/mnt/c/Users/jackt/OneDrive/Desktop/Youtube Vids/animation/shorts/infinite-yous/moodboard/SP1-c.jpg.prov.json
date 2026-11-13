@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SP1-c.jpg",
+ "made": "2026-11-13T11:24:30.465Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 night photograph, low angle on a 35mm lens at f/2, of the same young man repeated in five wedge-shaped slices that fan out from his raised fist of car keys at the bottom centre, separated by thin taut silver wires stretched straight from that point to the frame's edges. He is always the same person with the same face: early twenties, short dark hair, untucked white going-out shirt, flushed and a bit sweaty. In each wedge he drifts a little further: arm round a mate, swaying, worried glance back, opening a silver car door, slumped against a lamp post. Wet pavement outside a pub, a blurred taxi with a glowing TAXI roof sign behind, background melting into soft amber, red, pink and cyan bokeh, deep inky blacks. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0a21b09b-3f88-4efc-9a8b-cf61ce0b9e74"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SP1-b.jpg",
+ "made": "2026-11-13T11:23:59.103Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 night photograph split into a grid of six panes, two across and three down, by thin straight black metal glazing bars, like an old window frame between camera and street. Each pane holds a head-and-shoulders portrait of the same young man with the same face: early twenties, short dark hair, untucked white going-out shirt, flushed and sweaty, a lanyard of car keys in one hand. In each pane he wears a different look: grinning, eyes closed mid-sway, worried, smug, wincing, staring at the keys. Slightly low angle, 85mm lens at f/1.8, faces crisp, warm amber pub light on one cheek, the city behind dissolving into big soft bokeh of amber, red, pink and cyan above deep inky blacks, a glowing TAXI roof sign blurred in the background. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "3550a77c-6979-431d-bcb2-748d8f4afc6b"
+}

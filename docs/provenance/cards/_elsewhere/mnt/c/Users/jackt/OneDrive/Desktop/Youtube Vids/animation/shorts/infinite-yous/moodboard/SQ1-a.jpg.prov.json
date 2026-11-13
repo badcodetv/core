@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ1-a.jpg",
+ "made": "2026-11-13T11:25:13.244Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16, outside a UK pub at night, 85mm f/1.4. A deadpan figure in a white lab coat over dark clothes grips thin black dividing lines like curtain cords, pulling them together. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Between the fists, five side-by-side copies of a flushed, sweaty lad in his early twenties, short dark hair, untucked white going-out shirt, car keys on a lanyard, squash into one, strips pleating like fabric. Amber and cyan bokeh, TAXI sign, inky blacks, film grain. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "003f14f4-fe66-4c1d-8b60-6c7e581cc55d"
+}

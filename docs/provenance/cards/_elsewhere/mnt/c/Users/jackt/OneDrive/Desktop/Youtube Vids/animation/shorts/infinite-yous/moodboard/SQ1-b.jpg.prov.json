@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ1-b.jpg",
+ "made": "2026-11-13T11:25:57.783Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 close-up, 135mm f/2, night street. Two gloved fists, lit amber by a TAXI roof sign, clench taut black dividing lines bunched like stretched elastic. Between them, overlapping faces of a flushed, sweaty lad in his early twenties, short dark hair, untucked white going-out shirt, car keys on a lanyard, compress into one startled face, sharp. Behind, soft, the calm figure in a white lab coat. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Pink and cyan bokeh, deep blacks, film grain. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "75dbe172-3ab2-4b4b-972a-65cbd947daae"
+}

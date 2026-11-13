@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LO1-b.jpg",
+ "made": "2026-11-13T11:30:36.810Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 cinematic night photograph, straight-on to a plain dark brick wall on a quiet UK side street, shot on a 50mm lens at f/1.8 from across the road. The wall fills most of the frame and sits in near-black shadow, with a broad, smooth, empty area at the centre where the bricks are barely visible. Along the bottom edge, a soft out-of-focus strip of wet pavement catches warm amber and red reflections. Along the top edge, a few large soft bokeh circles of amber and cyan street lamps hang in the dark. A faint warm wash spills across the far right bricks, as if headlights are about to swing round the corner. Moody, deep blacks, subtle film grain. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c64d2685-99ce-4e2a-a414-f5afba8f1323"
+}

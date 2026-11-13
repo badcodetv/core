@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LO1-c.jpg",
+ "made": "2026-11-13T11:31:03.300Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 cinematic night photograph, a long telephoto view at 200mm and f/2, looking down a long empty city street at night from kerb height. Everything distant is compressed and dissolved into a dense field of large, overlapping, soft round bokeh discs in warm amber, red, soft pink and a touch of cyan, gathered in the upper part of the frame. Far off, low on the horizon, one small glowing yellow taxi roof light sits blurred into a soft yellow oval. The centre and lower half of the picture is a broad empty band of dark wet road, almost pure black, holding only a faint glossy reflection of the distant lights. Inky shadows, gentle film grain, hushed late-night stillness. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a7cb1c70-d46e-47f8-a045-59219d84aa6b"
+}

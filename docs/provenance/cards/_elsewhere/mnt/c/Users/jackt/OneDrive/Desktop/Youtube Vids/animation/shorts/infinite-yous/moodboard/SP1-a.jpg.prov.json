@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SP1-a.jpg",
+ "made": "2026-11-13T11:23:28.632Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 night photograph divided into five tall vertical strips by thin, straight, polished steel rods that catch glints of amber streetlight. In every strip stands the same young man with the same face: early twenties, short dark hair, untucked white going-out shirt, flushed and a bit sweaty, a lanyard of car keys in one hand, outside a pub on one city street. Strip by strip he is laughing, swaying, frowning with worry, holding the keys up proudly, reaching for a car door. Medium shot at chest height, 85mm lens at f/1.4, his face sharp, the background melting into large soft bokeh circles of amber, red, pink and cyan. Deep inky blacks, lit only by shop windows, street lamps and a glowing TAXI roof sign. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "cbb05475-1e2f-410b-be12-19629b503007"
+}
