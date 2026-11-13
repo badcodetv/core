@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-b-iapetus.wav",
+ "made": "2026-11-13T19:23:20+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I said raspberry-shaped hors d'oeuvres!",
+ "inputs": {
+  "profile": "Accent: Edinburgh, professional middle class, ex-lawyer; soft and everyday, not broad, not exaggerated.\nStyle: Minister around fifty, distracted in his car, correcting his aide on the phone, more weary than angry.\nPace: Even, precise, a tired sigh in it.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/minister-b-iapetus.md"
+ },
+ "settings": {
+  "voice": "Iapetus",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

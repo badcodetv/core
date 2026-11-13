@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav",
+ "made": "2026-11-13T19:23:48+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I said raspberry-shaped hors d'oeuvres!",
+ "inputs": {
+  "profile": "Accent: Home Counties, privately educated, upper-middle class; light and natural, a real MP, nothing plummy or put on.\nStyle: Minister in his fifties, back of his car, irritated, telling his aide on the phone he'd been perfectly clear.\nPace: Brisk, clipped, impatient.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/minister-a-charon.md"
+ },
+ "settings": {
+  "voice": "Charon",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

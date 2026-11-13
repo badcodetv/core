@@ -1,6 +1,8 @@
 # Priority Lane: resume here
 
-**2026-11-13 (night): voice casting round 3, the crew in AI Studio, awaiting Jack's picks** on https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm (same voices page, round 3).
+**2026-11-13 (night, later): crew PICKED (Kore / Algieba / Alnilam, in sound.md); round 4 = the minister recast the same way, awaiting Jack's pick** on the same page. NOTE: the Gemini key is paid (since 2026-09-30), so there is no 10-a-day cap.
+
+**Earlier: voice casting round 3, the crew in AI Studio** on https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm (same voices page, round 3).
 - Method: the Bank Robbery recipe (a director's note of three lines, `Accent:` / `Style:` / `Pace:`, under 60 words, light everyday accent, talking to someone and not performing) via the new `--note` flag on `scripts/aistudio-tts.py`. Three sealed web-researching writers, one per role: brief, JSON and notes in `voices/r6-cleanroom/`.
 - Takes in Desktop `priority-lane\audio\casting-r6\` (9 of today's 10 free API calls used). Paramedic 1 is cast as the woman, paramedic 2 as the man (as in LS4-b); the minister stays Orus.
 - Word check: all lines present; "twen—" comes out as "twenty" (the flatline cuts it); Gacrux ad-libs "He'll be alright" at the end (trim).

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-c-orus.wav",
+ "made": "2026-11-13T19:23:26+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I said raspberry-shaped hors d'oeuvres!",
+ "inputs": {
+  "profile": "Accent: Cheshire, grammar school, wealthy now; years in Westminster have smoothed it, light and ordinary, not stagey.\nStyle: Minister late fifties, a businessman at heart, snapping at an aide on the phone like a junior employee.\nPace: Firm, quick, slightly raised.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/minister-c-orus.md"
+ },
+ "settings": {
+  "voice": "Orus",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

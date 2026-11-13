@@ -1,13 +1,46 @@
 {
  "title": "Priority Lane Voices",
- "eyebrow": "Priority Lane · voice casting · round 3",
+ "eyebrow": "Priority Lane · voice casting · round 4",
  "heading": "Who is in the ambulance?",
- "intro": "Round 3: the ambulance crew, cast in AI Studio, the way the Bank Robbery voices were made: a short director's note per voice, light everyday accents, nothing put on. Three different people per role, written clean-room. Their real lines. Pick one per role, or note what to change. The minister stays Orus (picked round 1).",
+ "intro": "Round 4: the minister, recast the same way as the crew (short director's note, light real accent) so he sits in the same world. Crew picked in round 3: Kore, Algieba, Alnilam. The old Orus pick is option d, for comparison. His line is muffled through the glass in the edit.",
  "sections": [
   {
    "h": "Voices",
    "lede": "Real lines from the locked dialogue (1D).",
    "groups": [
+    {
+     "slot": "minister-r4",
+     "round": 4,
+     "title": "The minister",
+     "line": "\"I said raspberry-shaped hors d'oeuvres!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting-r6/minister-a-charon.mp3",
+       "label": "a: Home Counties Tory, 50s (Charon)",
+       "warn": "smooth, media-trained, irritated"
+      },
+      {
+       "id": "b",
+       "src": "casting-r6/minister-b-iapetus.mp3",
+       "label": "b: Edinburgh ex-lawyer, ~50 (Iapetus)",
+       "warn": "cool, weary, lawyerly"
+      },
+      {
+       "id": "c",
+       "src": "casting-r6/minister-c-orus.mp3",
+       "label": "c: self-made Cheshire, late 50s (Orus)",
+       "warn": "bossy; may sit close to the Liverpool driver"
+      },
+      {
+       "id": "d",
+       "src": "casting/min-b-orus.mp3",
+       "label": "d: the round 1 pick (Orus, old method)",
+       "warn": "slick, low venomous hiss"
+      }
+     ]
+    },
     {
      "slot": "paramedic1-r3",
      "round": 3,
@@ -197,5 +230,5 @@
    ]
   }
  ],
- "round": 3
+ "round": 4
 }

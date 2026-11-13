@@ -9,6 +9,14 @@
 - **Voices:** Google AI Studio TTS, lip-synced to muted Omni clips with `lip-sync-dub` (Jack, 2026-11-10: never Flow speech). The reporter's voice and the minister's voice are still to be chosen.
 - **Music / SFX:** ⬜
 
+## Voices, round 3 (2026-11-13): the crew PICKED (Jack, https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm)
+
+AI Studio, model `gemini-3.1-flash-tts-preview`, wrapped as a director's note (`scripts/aistudio-tts.py --note`). Takes in Desktop `priority-lane\audio\casting-r6\`. Picks dumped in `feedback/voices-r3/`.
+- **Paramedic 1 (the woman): `Kore`**, `voices/r6-cleanroom/profiles/paramedic1-b-kore.md` (South London, early forties, firm, in command).
+- **Paramedic 2 (the man): `Algieba`**, `voices/r6-cleanroom/profiles/paramedic2-c-algieba.md` (Leeds, mid-thirties, ex-forces, his control snaps).
+- **Driver: `Alnilam`**, `voices/r6-cleanroom/profiles/driver-b-alnilam.md` (Liverpool, early forties, ex-army, crisp, then loses it).
+- **Minister:** Orus (round 1) is being recast in the same director's-note method so he matches the crew.
+
 ## Round 3 (2026-11-13, Jack): Suno for it all, plus background music
 
 Jack: "lets do suno for it all, but add background music as well that fits the scene." Following Kai's note from the

@@ -1,0 +1,30 @@
+{
+  "research": [
+    "https://aistudio.google.com/docs/speech-generation: the prebuilt voice list with one-word characters (Charon informative, Iapetus clear, Rasalgethi informative, Schedar even, Sadaltager knowledgeable, Orus firm, Fenrir excitable, Achird friendly, Umbriel easy-going, Enceladus breathy, Zubenelgenubi casual); long director's notes cause voice drift, so keep style short; pick the voice first, then a short style; capitals for emphasis",
+    "https://dev.to/googleai/how-to-prompt-gemini-31s-new-text-to-speech-model-24bb: name a specific place for an accent ('as heard in Croydon') rather than just 'British'",
+    "https://replicate.com/google/gemini-3.1-flash-tts/readme: style prompt, text and tags must all point the same way, or the voice sounds off",
+    "https://livekit.com/blog/gemini-3.1-flash-tts-prompting-guide: extra punctuation to steer pace no longer works on 3.1 Flash TTS; say the pace in words",
+    "https://simonwillison.net/2026/Apr/15/gemini-31-flash-tts/: plain regional prompts (Newcastle, Exeter) are understood; the place name does the work"
+  ],
+  "options": [
+    {
+      "letter": "a",
+      "voice": "Charon",
+      "idea": "Home Counties, privately educated Tory minister, mid-fifties, media-trained and smooth; Charon's informative, measured weight sounds like a man used to being listened to, not a caricature.",
+      "note": "Accent: Home Counties, privately educated, upper-middle class; light and natural, a real MP, nothing plummy or put on.\nStyle: Minister in his fifties, back of his car, irritated, telling his aide on the phone he'd been perfectly clear.\nPace: Brisk, clipped, impatient."
+    },
+    {
+      "letter": "b",
+      "voice": "Iapetus",
+      "idea": "Edinburgh professional class, a former advocate turned minister, late forties to fifty; Iapetus's clear, precise tone gives a cool, lawyerly exasperation rather than bluster.",
+      "note": "Accent: Edinburgh, professional middle class, ex-lawyer; soft and everyday, not broad, not exaggerated.\nStyle: Minister around fifty, distracted in his car, correcting his aide on the phone, more weary than angry.\nPace: Even, precise, a tired sigh in it."
+    },
+    {
+      "letter": "c",
+      "voice": "Orus",
+      "idea": "Self-made Cheshire businessman turned minister, late fifties, grammar school, accent sanded down by years in Westminster; Orus's firm, heavier voice gives a bossy, used-to-getting-his-way older man.",
+      "note": "Accent: Cheshire, grammar school, wealthy now; years in Westminster have smoothed it, light and ordinary, not stagey.\nStyle: Minister late fifties, a businessman at heart, snapping at an aide on the phone like a junior employee.\nPace: Firm, quick, slightly raised."
+    }
+  ],
+  "notes": "Line to render as one take: \"I said raspberry-shaped hors d'oeuvres!\" No muffling in the note; that is added in the edit. All three avoid South London, Leeds and Liverpool so the minister never shares a region with the crew. Option c's Cheshire is northern-adjacent to Liverpool; if it reads too close to the Liverpool paramedic, a and b are the safer contrast."
+}
