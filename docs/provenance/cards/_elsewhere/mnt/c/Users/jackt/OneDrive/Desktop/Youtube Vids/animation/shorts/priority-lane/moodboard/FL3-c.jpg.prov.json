@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL3-c.jpg",
+ "made": "2026-11-13T14:40:53.290Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 cinematic close-up on 35mm film, night, inside a UK ambulance. Looking down at two blue-gloved hands, one laid over the other, resting still on the centre of an older man's chest over a thin pale gown, the pushing finished. At the top of the frame, his grey chin and the edge of a clear oxygen mask. One side of the frame is washed green by the glow of a heart monitor's flat line, reflecting off the gloves and skin; a slow band of blue emergency light falls across from a rain-streaked window. The black stretcher mattress and a loose strap fill the bottom of the frame. Hard cold overhead light, deep shadow, real grain, slightly underexposed. Quiet and devastating, not gory. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4b8e39c3-ce66-4141-8d58-765b3d6bb642"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS4-a.jpg",
+ "made": "2026-11-13T14:58:54.547Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first provided image for the camera angle and framing, and the second provided image for the ambulance cab, windscreen and the rainy night road outside, make one new photograph inside the same moving ambulance. Keep the first image's angle: low beside the heart monitor, its racing green trace soft in the foreground, the masked paramedic sharp behind it, eyes wide, shouting, her colleague squeezing a bag-valve mask over the patient's face past her shoulder. Turn the view so the background looks forward through the open hatch into the driver's cab: the driver's hands on the wheel and, through the rain-streaked windscreen, the wet night road, red tail lights and sodium-orange streetlamps, exactly as in the second image. Plain dark-green uniforms with no badges, crests or lettering. Same grain and cold light. Vertical 9:16. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-pl/LS3-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-pl/LS3-b.jpg",
+   "/home/jackt/.cache/badcode-pl/HD3-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "bd9278d4-4d9c-49b7-915f-87a12102dbbe"
+}

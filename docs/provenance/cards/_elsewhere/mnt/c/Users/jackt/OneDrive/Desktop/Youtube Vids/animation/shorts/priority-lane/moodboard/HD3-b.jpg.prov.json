@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD3-b.jpg",
+ "made": "2026-11-13T14:37:00.733Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 cinematic night still from the cab of a UK ambulance, camera low between the two front seats, wide 24mm lens. Bottom of frame: the driver's hands strangling the steering wheel, knuckles pale, a sleeve of a plain dark-green uniform. The dashboard glows faintly. Top two-thirds: a windscreen streaming with rain, one wiper caught mid-sweep. Just beyond the bonnet, lit hard by the ambulance's headlights, a police motorcycle outrider in a soaked hi-vis jacket and white helmet stands astride his bike, one gloved hand held up flat, visor down, unmoved. Above him a red traffic light blooms through the wet glass, sodium-orange streetlamps smeared behind, blue emergency light flickering across the rain drops. Shot on 35mm film, heavy grain, underexposed, slightly tilted handheld. No readable text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "20450a8d-5a21-4c29-81cc-168e93f2a2f6"
+}

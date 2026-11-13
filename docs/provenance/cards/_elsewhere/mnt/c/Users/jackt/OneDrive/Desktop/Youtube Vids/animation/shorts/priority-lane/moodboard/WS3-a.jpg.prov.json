@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/WS3-a.jpg",
+ "made": "2026-11-13T14:38:07.957Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Photograph a rainy night from inside the back of a UK ambulance, looking forward through the small rectangular hatch window into the driver's cab and out through the windscreen. Foreground, soft and out of focus: a paramedic's shoulder in a plain dark-green uniform, blue-gloved hand, a teal seat edge, the green glow of a heart monitor. Through the hatch and the rain-streaked windscreen, sharp: a black chauffeured saloon crossing slowly inches ahead, lit hard by the ambulance headlights, rain slanting through the beams. In its rear window a man in his fifties in a dark suit shouts into a phone, never looking over. Blue strobe washing the cab. Vertical 9:16, 35mm lens, shot on Kodak Vision3 500T, heavy grain, underexposed, handheld. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "463116cb-2f98-48b6-afbb-84ac9824bf71"
+}

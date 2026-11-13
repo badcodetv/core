@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/WS3-c.jpg",
+ "made": "2026-11-13T14:39:11.911Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Photograph through the rain-covered windscreen of an ambulance at night with a long lens, framed tight on the rear side window of a black saloon passing slowly across, a few feet away. Inside that window, a man in his fifties in a dark suit and loosened tie holds a phone to his ear, frowning, gesturing, absorbed, lit by a small warm reading light. Over the whole image, faintly reflected in the ambulance windscreen: the green trace of a heart monitor and a blue emergency strobe. Water droplets on the glass in sharp focus, raindrops streaking through white headlight glare, sodium-orange bokeh behind. Cold teal shadows, crushed blacks, 85mm, shot on 35mm Kodak Vision3 500T, coarse grain, slightly underexposed, handheld. Vertical 9:16. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c48fcdd9-0790-4cad-8496-064c3f7eb171"
+}

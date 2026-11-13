@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD3-a.jpg",
+ "made": "2026-11-13T14:36:21.918Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 film still at night, from inside the back of a UK ambulance, looking forward. Foreground, out of focus: the shoulder and surgical-masked profile of a female paramedic in a plain dark-green uniform and blue gloves, twisted toward the front, mid-compressions over a grey-faced older man in an oxygen mask on a black strapped stretcher. Middle: white cupboards, a teal seat, and the small sliding hatch window into the cab, where the driver's hands grip the wheel. Through the hatch and the rain-streaked windscreen beyond: a red traffic light and a police motorcycle outrider in a hi-vis jacket and helmet, gloved palm raised flat at them. Hard cold strip light, green monitor glow, blue strobe on wet glass. 35mm, grain, underexposed, handheld. No readable text. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "2820098c-6b78-4464-b6bf-6d17dc1b640d"
+}

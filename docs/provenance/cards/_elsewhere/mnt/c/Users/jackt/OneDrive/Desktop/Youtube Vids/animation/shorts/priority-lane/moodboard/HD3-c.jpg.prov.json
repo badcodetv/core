@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD3-c.jpg",
+ "made": "2026-11-13T14:37:28.340Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 film still at night, telephoto 85mm view down the full length of a UK ambulance's patient compartment, shot from by the rear doors. Near the bottom, soft: the feet of an older man under a pale blanket on a black strapped stretcher. Mid-frame: two paramedics in plain dark-green uniforms, surgical masks and blue gloves, a man and a woman, both frozen and turned to stare forward, one hand still pressed to the patient's chest. At the far end, small and sharp: the bulkhead hatch window, and through it the rain-blurred windscreen, a red traffic light and a hi-vis police outrider with one gloved hand raised. The red light spills in and stains the white walls and cupboards red, cut by a blue strobe. Green monitor glow. 35mm grain, crushed shadows, handheld. No readable text. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4a4b987d-b136-4f8d-ab7d-ad59b36aafcc"
+}

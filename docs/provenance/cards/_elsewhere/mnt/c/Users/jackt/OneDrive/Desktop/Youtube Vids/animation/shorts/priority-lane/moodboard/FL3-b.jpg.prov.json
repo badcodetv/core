@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL3-b.jpg",
+ "made": "2026-11-13T14:40:08.339Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 cinematic still on 35mm film at night: the full rear interior of a UK ambulance, seen from the back doors on a wide 24mm lens, low and level. White walls and cupboards, teal-green seats, grab rails, and a black stretcher with straps down the centre, where an older man lies still, grey-skinned, oxygen mask on. A woman paramedic in a plain dark-green uniform and surgical face mask sits back on her heels, blue gloves lifted just off his chest; her male colleague, masked, stands frozen with one hand on the rail. On the side wall a monitor glows with one flat green line. Through the small hatch window, the driver's silhouette and pulsing blue light; rain streams down the windows. Hard cold ceiling strips, grain, underexposed, total stillness. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "487c8022-f06d-4d21-b49a-282558ea79b3"
+}

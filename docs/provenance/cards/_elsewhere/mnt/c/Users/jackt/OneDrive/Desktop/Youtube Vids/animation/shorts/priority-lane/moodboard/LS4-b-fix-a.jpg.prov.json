@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS4-b-fix-a.jpg",
+ "made": "2026-11-13T15:04:15.190Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the paramedic's uniform: remove the embroidered crest badge from her chest and the small \"UK\" tab from her shoulder, leaving plain dark-green fabric with no badges, crests or lettering. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-pl/LS4-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-pl/LS4-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "282e5a9d-c68a-4022-94da-74bdd8f8deac"
+}

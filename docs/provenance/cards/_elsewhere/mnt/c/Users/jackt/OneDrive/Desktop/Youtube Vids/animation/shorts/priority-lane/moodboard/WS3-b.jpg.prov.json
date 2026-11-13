@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/WS3-b.jpg",
+ "made": "2026-11-13T14:38:43.984Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Photograph the view from the driver's seat of a UK ambulance stopped at a junction on a pouring wet night, low and wide, the steering wheel and the driver's gripping hands dark at the bottom of the frame, a glowing dash screen without text. Filling the windscreen, inches from the bumper: the long black flank of a chauffeured saloon gliding slowly across, its paint beaded with rain, the headlight beams blasting white across its doors. A wiper blade frozen halfway, half the glass clear, half smeared. Through the saloon's rear side window, a suited man in his fifties on the phone, mouth open mid-complaint, eyes down. A police motorcycle shape at the far edge. Sodium-orange streetlamps blooming in the fog. Vertical 9:16, 24mm, 35mm film grain, underexposed, gritty. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8dd35fd9-12de-4139-9be5-0324d28f51d0"
+}

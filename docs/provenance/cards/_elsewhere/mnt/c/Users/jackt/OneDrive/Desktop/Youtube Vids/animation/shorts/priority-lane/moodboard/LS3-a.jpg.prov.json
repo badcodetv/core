@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS3-a.jpg",
+ "made": "2026-11-13T14:33:55.745Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 handheld frame from the rear doors of a UK ambulance at night, looking forward down the length of the black stretcher toward the small hatch window and the driver's back. A male paramedic in a plain dark-green uniform, blue gloves and surgical mask kneels over a grey-skinned older man in an oxygen mask, locked arms mid-compression. A female paramedic braced against white cupboards and a teal seat points at a heart monitor glowing green with a ragged trace, shouting behind her mask. Hard cold ceiling strip light, blue emergency light strobing through the hatch, rain streaks on the cab windscreen. Shot on 35mm Kodak Vision3 500T, slight motion blur from the swaying vehicle, heavy grain, slightly underexposed. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ff20887f-ad15-47a2-8e0c-18901ff1dd6d"
+}

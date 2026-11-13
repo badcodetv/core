@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS3-c.jpg",
+ "made": "2026-11-13T14:35:36.646Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 steep high angle from the ceiling corner of a UK ambulance racing through rainy night streets, looking down on an older man lying on a black stretcher mattress, his grey face under an oxygen mask, shirt cut open, defibrillator pads on his chest, straps loose. A male paramedic in a plain dark-green uniform, blue gloves and surgical mask drives both hands into his chest, arms blurred with motion. A female paramedic, also masked, braces against the swaying wall, squeezing a bag-valve mask with one hand and holding a monitor lead in the other. Dropped gauze wrappers and tubing slide across the teal-green floor. Hard cold strip light from above, blue emergency light flaring through a side window, 24mm lens, 35mm film grain, underexposed, camera shake. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c0d55bc3-a704-44f3-b801-f592378b1156"
+}

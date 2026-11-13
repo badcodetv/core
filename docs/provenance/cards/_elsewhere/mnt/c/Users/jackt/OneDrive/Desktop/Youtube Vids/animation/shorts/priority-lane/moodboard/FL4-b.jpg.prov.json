@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL4-b.jpg",
+ "made": "2026-11-13T15:00:53.166Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first provided image for the camera angle and framing, and the second provided image for the ambulance interior, the paramedics, the patient, the stretcher, the cab and the night outside, make one new photograph a few seconds later, now stopped. Keep the first image's angle: the heart monitor sharp in the foreground showing one unbroken flat green line, the brightest thing in frame, its numbers soft and unreadable; behind it, out of focus, a masked paramedic in a plain dark-green uniform with blue-gloved hands resting motionless on the old man's chest. Match the second image's van exactly: the same white cupboards, yellow grab rail, stretcher and patient, and the open hatch through to the cab and the rain-streaked windscreen, now with a red traffic light glowing beyond it. No badges, crests or lettering on the uniforms. Stillness, same grain and cold light. Vertical 9:16. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-pl/FL3-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-pl/FL3-a.jpg",
+   "/home/jackt/.cache/badcode-pl/LS4-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "cfba3425-ce4a-499e-bf0d-462cbce40177"
+}

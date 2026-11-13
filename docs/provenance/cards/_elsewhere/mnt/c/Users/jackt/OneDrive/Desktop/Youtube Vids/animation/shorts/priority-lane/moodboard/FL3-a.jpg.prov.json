@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL3-a.jpg",
+ "made": "2026-11-13T14:39:40.594Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 cinematic still, night, inside a stopped UK ambulance. In the sharp foreground, a wall-mounted heart monitor's dark screen shows one unbroken flat green line, its glow the brightest thing in frame; the small figures on it fall soft and unreadable. Behind it, out of focus on an 85mm lens, a male paramedic in a plain dark-green uniform and surgical face mask leans over the black stretcher, blue-gloved hands resting motionless on an older man's chest, oxygen mask on his grey face. Hard cold ceiling strip light, blue emergency light sweeping across the white cupboards, rain beading on the rear window. Shot on 35mm film, real grain, slightly underexposed, quiet and still. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "73bbd7c4-f5ec-4e39-ab54-15d82e43215e"
+}
