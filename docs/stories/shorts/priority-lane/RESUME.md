@@ -1,5 +1,7 @@
 # Priority Lane: resume here
 
+**2026-11-13 (late): r5 Speech voices REJECTED** (Jack: "all of those sounded the same and weird"). Research saved in [`docs/suno-gpt/speech-beta.md`](../../../suno-gpt/speech-beta.md): Speech is a narration-over-music tool with one voice control (Male/Female), no saved voice and a weak British accent, so it is the wrong tool for four distinct character voices. Next: Jack decides between AI Studio voices cast on a picks page (`voice-casting`) and one last Speech round on the research's settings.
+
 **2026-11-13 (latest): round 3, every beat picked; voices waiting on Jack's ear.**
 - **Picks:**
   - A. Losing him = `LS4-b-fix-a` (badge removed)
