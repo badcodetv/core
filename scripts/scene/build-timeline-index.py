@@ -25,19 +25,33 @@ def scene(rel):
     s = json.loads((d / 'scene.json').read_text())
     pr = s.get('premiere', {})
     rec = pr.get(pr.get('current') or '', {}) if isinstance(pr, dict) else {}
-    last = ''
+    last, last_full = '', ''
     t = d / 'trail.json'
     if t.exists():
         try:
             tr = json.loads(t.read_text())
             tr = tr if isinstance(tr, list) else tr.get('entries', [])
-            last = (tr[-1].get('at') or '')[:10] if tr else ''
+            last_full = (tr[-1].get('at') or '') if tr else ''
+            last = last_full[:10]
         except (ValueError, AttributeError):
             pass
     proj = rec.get('project') or s.get('premiere_project') or ''
     return {'title': s.get('title') or d.name, 'url': (s.get('boards') or {}).get('timeline'),
             'seq': rec.get('sequence', ''), 'project': pathlib.PurePosixPath(proj).name if proj else '',
-            'last': last, 'done': bool((d / 'final.json').exists())}
+            'last': last, 'done': frozen(d, last_full)}
+
+
+def frozen(d, last_full):
+    """Frozen only if nothing has happened since the freeze: a short reopened after its final.json (Priority Lane,
+    frozen 2026-11-11 at round 2, reopened as round 3 on 2026-11-13) is live again."""
+    f = d / 'final.json'
+    if not f.exists():
+        return False
+    try:
+        at = json.loads(f.read_text()).get('frozen') or ''
+    except ValueError:
+        return True
+    return not (last_full and at and last_full[:19] > at[:19])
 
 
 films = []
