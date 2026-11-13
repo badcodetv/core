@@ -1,0 +1,35 @@
+{
+  "research": [
+    "https://help.suno.com/en/articles/14617089 — Suno's own help page: the Tone field describes delivery (tone, pacing, mood, setting); Advanced options give vocal gender, Variety (variation between generations) and a background-music toggle. It says nothing about accents or script formatting.",
+    "https://aireiter.com/blog/suno-speech-beta-guide — In the style box, describe the target (age, texture, emotion, accent, pace) rather than bans. Suno warns that British accents can wander toward Australian, so check the whole take. It also warns that dramatic pauses can run long, so use punctuation for breath and keep lines short. A community test turned Variety fully left with music off for cleaner voice-only output; this is a workaround, not something Suno documents.",
+    "https://jackrighteous.com/es/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-narration-workflow — A practitioner guide: Speech is not a precision TTS engine, and controls don't guarantee word-for-word or consistent delivery, so generate several takes.",
+    "https://blog.dubspot.com/suno-speech-2026 — Speech launched as a beta in early October 2026 and generates voice and music as one track. That is why music must be switched off for a voice-only stem.",
+    "https://elevenlabs.io/docs/eleven-creative/voices/voice-design — When describing an accent's strength, 'thick' tends to work better than 'strong'. Pair the accent with age, pitch and texture.",
+    "https://gradium.ai/voices/accents/standard-british — Plain 'British' defaults to RP or southern Estuary. A regional accent has to be named explicitly by city or area.",
+    "https://help.dubformer.ai/en/articles/8847778-voice-design-prompting — Describe how the voice sounds as well as who the speaker is; short plain sentences such as 'a cheerful woman speaking with a crisp British accent' work."
+  ],
+  "takes": [
+    {
+      "idea": "Mid-twenties South London lad with an Estuary accent: clipped, clinical urgency that cracks into raw disbelief. This is the most 'Casualty' option and sounds furthest from a posh minister.",
+      "style": "A young English man in his mid twenties with a thick South London accent, working class and everyday, an NHS paramedic in the back of an ambulance at night. The first line is fast, low and clipped, breathless, focused on the patient, professional under pressure. The second line bursts out louder and higher, genuinely bewildered and angry, his voice cracking. Natural and real like a British television hospital drama, close to the microphone, dry voice only.",
+      "gender": "Male",
+      "variety": "Normal",
+      "script": "Sats dropping — he's peri-arrest!\n\n...Why have we stopped?!"
+    },
+    {
+      "idea": "Late-twenties Mancunian: a harder, flatter northern voice that shouts rather than cracks. The class contrast comes from the region, and the anger is blunt and loud.",
+      "style": "An English man in his late twenties with a thick Manchester accent, broad and working class, a paramedic fighting to keep an old man alive. He calls the first line out sharply and quickly over his shoulder to his crewmate, urgent and controlled. The second line is a furious, incredulous shout, flat northern vowels, the voice of someone who cannot believe what he is seeing. Gritty, human and realistic, like a British TV drama, voice only, nothing else.",
+      "gender": "Male",
+      "variety": "Off (Exact style)",
+      "script": "Sats dropping, he's peri-arrest!\n\nWhy have we stopped?!"
+    },
+    {
+      "idea": "Early-thirties West Yorkshire medic who stays quiet: an under-the-breath clinical call, then a stunned rising question that turns to anger only on the last word. It is the most restrained option, for if the shouting reads as cartoonish.",
+      "style": "An English man in his early thirties with a warm West Yorkshire accent, ordinary and working class, a tired night-shift paramedic. He says the first line low and quick, almost to himself, tense and breathy, eyes on the monitor. The second line starts quiet and stunned, then rises into anger by the end, hoarse and disbelieving. Understated, close and intimate, like a serious British hospital drama, a single dry voice.",
+      "gender": "Male",
+      "variety": "Normal",
+      "script": "Sats dropping... he's peri-arrest!\n\nWhy have we... stopped?!"
+    }
+  ],
+  "notes": "'Peri-arrest' is medical jargon and may be mispronounced (for example as 'Perry arrest' or 'pear-ee'); listen for it. Sources say British accents can drift toward Australian, so check both lines. The ellipsis in take 3 risks an over-long pause (Suno warns that dramatic pauses can stretch); if it does, drop the ellipsis. The 3-second gap before line 2 is set in the edit, so each line can be cut from the take. If music still bleeds through with it switched off, re-run at Variety Off (a community workaround, not documented by Suno)."
+}

@@ -1,0 +1,34 @@
+{
+  "research": [
+    "https://help.suno.com/en/articles/14617089 — Suno's own help page: in Advanced mode the Tone box describes delivery (tone, pacing, mood, setting); Vocal Gender, Background music and Variety sit under Advanced; Variety sets how much takes differ from each other.",
+    "https://aireiter.com/blog/suno-speech-beta-guide — describe the speaker concretely (age range, vocal texture, emotion, accent, pace, delivery) and say what you want, not what to avoid; a requested British accent can drift toward Australian, so test several takes; Variety fully left plus 'voice only' wording gave cleaner speech in a community test; music can still creep in with the toggle off; use punctuation for breath; a second take beats piling on corrective instructions.",
+    "https://unite.ai/suno-launches-speech-beta-pairing-voice-and-music-in-one-model — Speech public beta announced 1 Oct 2026; Advanced mode takes your own script plus gender, speech style and variety; voice is controlled only by words, so it is less precise than a voice library.",
+    "https://blog.dubspot.com/suno-speech-2026 — voice control is 'described in words, beta-level'; it is not a precision TTS engine.",
+    "https://gradium.ai/voices/accents/standard-british — build a voice prompt from accent, age, pitch, pace, energy and purpose; plain 'British' is read as RP or Estuary, so a posh voice must be pushed further with class words (public school, upper-class, plummy) rather than relying on 'British' alone.",
+    "https://community.openai.com/t/british-accent-and-pronuciation-in-gpt-4o-mini-tts/1150812 — accent instructions in general TTS models work but are inconsistent; restating the accent in more than one way (accent plus class plus setting) helps hold it."
+  ],
+  "takes": [
+    {
+      "idea": "Classic Tory grandee, late fifties: the deep, drawling, plummy RP of a public-school old boy, indignant rather than shouting. The class gap from the crew comes from the vowels and the entitlement, and it is the most recognisable British TV 'posh minister'.",
+      "style": "A man in his late fifties with a deep, rich, plummy upper-class English accent, the clipped Received Pronunciation of Eton and Oxford. A Conservative cabinet minister on his mobile in the back of a chauffeured car, outraged and put upon, speaking down to a junior aide. Long drawled vowels, crisp consonants, a pained sigh before the line, then rising indignation that peaks on the last word. Spoken alone, dry and close, voice only, like a British television drama.",
+      "gender": "Male",
+      "variety": "Off (Exact style)",
+      "script": "I said... raspberry-shaped hors d'oeuvres!"
+    },
+    {
+      "idea": "Petulant toff, early fifties: thinner, nasal, higher-pitched aristocratic voice that cracks into a childish whine. The joke is the tantrum: a grown man in a suit sounding like a spoilt schoolboy, the opposite texture to the steady, warm crew.",
+      "style": "A man in his early fifties with a thin, nasal, very posh English aristocratic voice, the drawl of an old Etonian who has never been told no. A government minister throwing a tantrum on his phone in the back of a ministerial car. He starts sharp and clipped, then his voice climbs and cracks into a spoilt, whining shriek on the final words, as if this is the worst day of his life. Close, dry, voice only, natural British drama acting.",
+      "gender": "Male",
+      "variety": "Normal",
+      "script": "I said raspberry-shaped... hors d'oeuvres!"
+    },
+    {
+      "idea": "Cold, quiet menace, mid fifties: a smooth, well-spoken Home Counties RP voice that never raises its volume, spitting each word through his teeth. Realistic and chilling rather than comic, the class difference carried by control and contempt; gives the editor a subtler option under the car glass.",
+      "style": "A man in his mid fifties with a smooth, refined, upper-class southern English accent, Received Pronunciation, expensively educated and used to being obeyed. A senior British minister on the phone in the back of his car, icy and contemptuous, barely holding his temper. He speaks low and slow through gritted teeth, biting each word off precisely, with the last word snapped hard. Close microphone, dry, voice only, grounded like a serious BBC political drama.",
+      "gender": "Male",
+      "variety": "Off (Exact style)",
+      "script": "I said — raspberry-shaped — hors d'oeuvres!"
+    }
+  ],
+  "notes": "Suno warns British accents can drift (toward Australian); generate 2-4 of each take and reject any that slip, especially on 'raspberry' (posh RP should be 'RAHZ-bree', long a) and 'hors d'oeuvres' (should be 'or-DERVS', French-anglicised, not American 'or-DURVZ'). Those two words are the accent tell: if they come back American, re-roll rather than adding more instructions. Variety Off holds the described voice tightest; take 2 is on Normal to give the tantrum room. Music can leak in even with Background music OFF per community reports; 'voice only' is written positively in each style box. The line is short, so expect Suno to pad with breath or silence; trim in the edit."
+}

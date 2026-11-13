@@ -162,6 +162,8 @@ rather than stacking "do not sing"; ask for a **sparse bed**, not no music; gene
 takes rather than piling on corrections. Variety **Exact style** (fully left) is now backed by
 three testers (above). Reported once: music appeared even with background music switched off.
 
+**Automation (2026-11-13):** `scripts/suno/speech.mjs <spec.json> [--yes]` fills Speech → Advanced (Script, Tone, Vocal Gender, Background music Off), reads it back and clicks **Create speech** (that is the button's accessible name; `/^Create$/` times out). First used for Priority Lane r5 (`docs/stories/shorts/priority-lane/songs/r5-speech/`).
+
 **Making the SONG model speak instead:** the sweep found **no v6-era test** of it. The only v6
 wording anyone offers is untested — Style *"spoken-word narration, voice-forward, minimal
 documentary underscore, restrained dynamics, no sung chorus"*, lyric label `[Spoken narration]`

@@ -1,0 +1,36 @@
+{
+  "research": [
+    "https://help.suno.com/en/articles/14617089 — official: Advanced mode has a Script field, a Tone field for tone, pacing, mood and setting, Vocal gender, Background music on/off, and Variety ('stylistic variation between generations'); accents are not mentioned at all",
+    "https://aireiter.com/blog/suno-speech-beta-guide — describe the speaker concretely (age, texture, emotion, accent, pace, delivery); describe the target rather than what to avoid; British accents can drift to Australian and back; dramatic pauses can run long; short sentences, punctuation marks the breaths; for clean speech, music off plus Variety fully left is the community workaround",
+    "https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation/suno-speech-beta-spoken-audio-background-music — no accent selector, so the accent lives in the direction and is a test; steer emotion with written direction; high-energy delivery should be tested on a short passage; check every take for added, dropped or repeated words",
+    "https://blog.dubspot.com/suno-speech-2026 — Speech is a beta voice model built on the music engine, not a precision TTS engine",
+    "https://elevenlabs.io/docs/creative-platform/voices/voice-design — name the accent specifically and pair it with age, tone and pacing; vague words give inconsistent results; using 'accent' loosely can trigger unwanted dialect shifts",
+    "https://help.dubformer.ai/en/articles/8847778-voice-design-prompting — 'thick' tends to land a more prominent accent than 'strong'; the script's wording should not clash with the accent asked for",
+    "https://help.narrationbox.com/en/articles/12910157-enbee-v2-guide — naming a region works ('Yorkshire accent, blunt'); pair the region with a manner",
+    "https://gradium.ai/voices/accents/standard-british — plain 'British' is read as RP or southern standard, so a working-class voice needs a named region and class, otherwise it slides toward the same polished voice as the minister"
+  ],
+  "takes": [
+    {
+      "idea": "South London veteran, mid-forties: hoarse, Estuary, twenty years on the road. Closest to the classic British TV ambulance drama, and the clearest class contrast with a posh minister.",
+      "style": "A working-class woman in her mid forties from South London, with a thick Estuary accent, dropped t's and a hoarse, smoky voice. She is an NHS paramedic in the back of a speeding ambulance at night, shouting hard over the siren, raw and frightened under the authority. In the second line, nine seconds later, she is suddenly quiet and close, almost a whisper to the dying old man, and the word is cut off. Natural, gritty British television drama.",
+      "gender": "Female",
+      "variety": "Off (Exact style)",
+      "script": "Sixty over thirty! Fucking hurry up, we're gonna lose him!\n\nFifty over twen—"
+    },
+    {
+      "idea": "Yorkshire, early fifties: blunt, flat Northern vowels, a mother-of-the-ward warmth. A region the engine cannot mistake for American or Australian, and plainer, less theatrical shouting.",
+      "style": "A no-nonsense woman in her early fifties from West Yorkshire, with a broad, thick Yorkshire accent, short flat vowels and a deep, gravelly chest voice. A senior NHS paramedic who has seen it all, barking the numbers over a siren in a rainy ambulance, blunt and furious with urgency. Then, much later, she drops to a soft, tender murmur to the old man, warm and broken, and stops mid-word. Grounded, human, like real British hospital drama.",
+      "gender": "Female",
+      "variety": "Normal",
+      "script": "Sixty over thirty! Fucking hurry up... we're gonna lose him!\n\nFifty over twen—"
+    },
+    {
+      "idea": "Liverpool, early thirties: younger, quick Scouse lilt, adrenaline more than weariness. The shout comes out fast and cracked, the quiet line is breathy and scared, so the death feels like it hits her personally.",
+      "style": "A young working-class woman in her early thirties from Liverpool, with a thick Scouse accent and a quick, sharp, breathless voice. An NHS paramedic in the back of an ambulance at night, fast and cracking with adrenaline as she yells over the siren, swearing through panic. In the second line, said later and very quietly, her voice is shaky and gentle as she reads the numbers to the old man, and she breaks off mid-word. Real, close, British TV realism.",
+      "gender": "Female",
+      "variety": "Normal",
+      "script": "Sixty over thirty! Fucking hurry up — we're gonna lose him!\n\nFifty over twen—"
+    }
+  ],
+  "notes": "Suno publishes no accent control and testers report British drifting toward Australian, so listen for that first, and stay at Off or Normal (higher Variety adds drift). The two lines are separate moments about 9 s apart; if one take can't do both the shout and the whisper, generate each line as its own take with the same style box. Check that the cut-off 'twen—' actually stops dead and that the engine doesn't finish the word; if it says 'twenty', trim at the 'n' in the edit. Ask the minister's writer for an RP or Home Counties voice so the class gap is clear: every take here names a working-class region on purpose."
+}

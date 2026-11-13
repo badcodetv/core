@@ -1,0 +1,37 @@
+{
+  "research": [
+    "https://suno.com/blog/introducing-speech-beta — Speech (beta), launched 1 Oct 2026: you give the text and describe the voice in words. Suno itself warns that accents drift (British 'wanders off to Australia and back') and that dramatic pauses run long.",
+    "https://aireiter.com/blog/suno-speech-beta-guide — describe the voice by age, texture, emotion, accent, pace and delivery, and say what you want rather than what you don't. A community test got clean speech with music off and Variety all the way left. Make several takes and check each one for accent drift.",
+    "https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation/suno-speech-beta-spoken-audio-background-music — the Gender control should agree with the voice description. Test high-intensity delivery before relying on it, and check that the audio says exactly the script, with nothing dropped or repeated.",
+    "https://unite.ai/suno-launches-speech-beta-pairing-voice-and-music-in-one-model — news coverage: one model makes voice and music together and the output is inconsistent. It is not a precision TTS engine.",
+    "https://the-decoder.com/ai-music-generator-suno-can-now-create-spoken-audio-with-matching-background-music/ — music can be toggled off for clean narration; beta quality varies from take to take.",
+    "https://elevenlabs.io/docs/eleven-creative/voices/voice-design — describe the whole person in a sentence (age, gender, accent, texture, emotion). Only use the word 'accent' for a dialect, never for intonation, or it causes unwanted dialect shifts.",
+    "https://developers.telnyx.com/docs/voice/voice-design-lab/design-voice/prompting-guide — name the exact flavour of accent ('slight British') rather than a bare 'British'.",
+    "https://gradium.ai/voices/accents/standard-british — a bare 'British' gets you RP or Estuary. Name a regional accent (Scottish, Welsh, Northern) explicitly if that is what you want.",
+    "https://hume.ai/blog/how-to-generate-ai-voices-with-accents — anchor the accent to a place and a kind of person, not just a country label."
+  ],
+  "takes": [
+    {
+      "idea": "Veteran South London driver in his late forties: Estuary working-class, hoarse and gravelly from twenty years of nights. The furthest class from a minister in RP, and the most recognisable sound of British TV hospital drama.",
+      "style": "A working-class man in his late forties from South London with a broad, unmistakably English Estuary accent, dropped t's and a rough, hoarse voice worn down by years of night shifts. He is an NHS ambulance driver bellowing through the windscreen at stopped traffic, gripping the wheel. The first line is fast and clipped, a call back to the crew. The second is a full-chested, furious roar, real and desperate, like a gritty British television hospital drama. Close microphone, dry room, voice only.",
+      "gender": "Male",
+      "variety": "Normal",
+      "script": "Two minutes out! Get the fuck out of the way!"
+    },
+    {
+      "idea": "Younger Mancunian driver in his late twenties: flat Northern vowels, panic tipping into rage, and the voice cracks on the shout. A Northern accent can't be mistaken for American or for the minister.",
+      "style": "A young working-class man in his late twenties from Manchester, with a strong Mancunian accent and flat Northern English vowels. He is an NHS paramedic driving the ambulance, frightened and out of his depth, his breathing ragged. He blurts out the first line to the crew behind him. On the second line he loses it and screams at the cars ahead, his voice straining and cracking at the top. Raw and human, like an urgent British hospital drama. Close microphone, dry, voice only.",
+      "gender": "Male",
+      "variety": "Normal",
+      "script": "Two minutes out... Get the fuck out of the way!"
+    },
+    {
+      "idea": "Older Yorkshire driver in his late fifties: deep, flat West Yorkshire vowels, grim and controlled, then one huge explosion. Contrast built into the line instead of a constant shout.",
+      "style": "A weathered working-class man in his late fifties from West Yorkshire, with a broad Yorkshire accent and a deep, low, gravelly voice. He is a seasoned NHS ambulance driver at night, steady and grim. He says the first line flatly and fast, almost under his breath, to the crew. Then he slams forward and roars the second line at the traffic with enormous anger, every word hit hard. Grounded and believable, like British television drama. Close microphone, dry room, voice only.",
+      "gender": "Male",
+      "variety": "Off (Exact style)",
+      "script": "Two minutes out — get the fuck out of the way!"
+    }
+  ],
+  "notes": "Every style box names a specific English region, plus the word English, because Suno itself warns that British accents drift (toward Australian). If a take drifts, re-roll it rather than adding more words to the box. Variety is Normal or Off: high Variety invites accent wander, and Off was part of the community recipe for clean speech. Swearing: if Suno filters or mumbles 'fuck', try another take before changing anything. Pauses can come back too long (a known Speech issue), so the ellipsis in take 2 may need tightening in the edit. 'Voice only' is the one music-related phrase in the boxes; Background music is already switched off. Check every take against the script for dropped or repeated words."
+}
