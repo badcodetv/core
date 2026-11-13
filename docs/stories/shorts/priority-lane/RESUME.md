@@ -1,5 +1,26 @@
 # Priority Lane: resume here
 
+**2026-11-13 (latest): round 3, every beat picked; voices waiting on Jack's ear.**
+- **Picks:**
+  - A. Losing him = `LS4-b-fix-a` (badge removed)
+  - B. Held = `HD3-b`
+  - C. The motorcade = round 1 minister, `MIN1-b` (clip `pl-04-MIN1-b` + lip-sync)
+  - D. Flatline = `FL4-a`
+
+  All on the board https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V.
+- **Dialogue:** 1B The countdown (`script.json`).
+- **Sound:**
+  - Suno song rounds r3 and r4 are in `songs/r3-suno`, `songs/r4-suno`. Jack: r3 sounded American, and the crew and minister sounded the same.
+  - Jack then switched to **Suno Speech, voice only**, with music and SFX added after: **r5** in `songs/r5-speech/takes.md`, 4 roles × 3 voices × 2 takes, driven by `scripts/suno/speech.mjs`.
+- **Next:**
+  1. Jack picks one voice per role and screen-records them into Desktop `priority-lane\audio\`.
+  2. Clean the voices: de-reverb, and muffle the minister through glass.
+  3. Make the music and SFX separately (Suno instrumental / Sounds).
+  4. Animate the four stills to the audio (Omni, 9:16; the paramedics are masked, so no lip-sync).
+  5. Build the timeline page, then Premiere.
+- **Waiting on Jack:** open `priority lane.prproj` with the BadCode Bridge panel on, so the old sequences can be deleted (he asked 2026-11-13). The media folder was tidied: old material is in `_old-r1-r2/`, unpicked stills in `moodboard/_unpicked/`.
+
+
 **2026-11-13: REOPENED, round 3.** Kai's meeting notes: no reporter; ER drama in the ambulance; held at the lights; the minister crosses; **flatline into the logo** (Jack's pick). Sound: **Suno for it all plus background music** (Jack). Beats agreed: [`brief.md`](./brief.md), `scene.json` round 3. Next: the Suno track (script → Suno → pictures), then clean-room stills for the new ambulance shots. Round 1 below is the old cut.
 
 **2026-11-11:** ALL FIVE CLIPS MADE. 03 = `pl-03-r2-REP1-a.mp4`, 05 = `pl-05-r3-REP1-a.mp4` (the bare prompt got through). Voices PICKED on https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm (skill `voice-casting`): minister = Orus `voices/profiles/min-b-orus.md`, reporter = Enceladus `voices/profiles/rep2-e-enceladus.md`; takes in Desktop `audio/casting/`. Minister lip-synced: `video/pl-04-MIN1-b-dub.mp4` (unwatched by Jack). **Rough cut 1 BUILT** (21.9 s, `scripts/shorts/priority_lane_cut.py` → Desktop `cut/`), timeline page https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn, **DONE 2026-11-11 (Jack: "its done").** Frozen (`final.json`). In Premiere: `shorts-1-priority-lane-r2` in Desktop `priority-lane\priority lane.prproj` (V1 clips, V2 headline/logo overlay, A1-A3). ⬜ Before release: confirm the Deadline News headline in a browser; export from Premiere and run the delivery QC. The reporter needs no sync (his mouth is cloth).
