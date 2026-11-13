@@ -1,8 +1,8 @@
 {
  "sequence_notes": [
   {
-   "rule": "Veo's camera is locked; Premiere adds the handheld sway and any push, eased.",
-   "why": "Omni camera moves drift and redraw",
+   "rule": "Omni's camera is locked; Premiere adds the handheld sway and any push, eased.",
+   "why": "generated camera moves drift and redraw",
    "source": "docs/video-fx/hybrid-method.md"
   },
   {
@@ -16,8 +16,8 @@
    "source": "scene-animation skill"
   },
   {
-   "rule": "The monitor's numbers and the flat line are never asked of Veo as readable text; if the screen comes out as slop it is covered with a drawn trace in Premiere.",
-   "why": "Veo text is slop",
+   "rule": "The monitor's numbers and the flat line are never asked of Omni as readable text; if the screen comes out as slop it is covered with a drawn trace in Premiere.",
+   "why": "generated text is slop",
    "source": "scene-animation skill"
   },
   {
@@ -37,7 +37,7 @@
      "idea": "The paramedic twists from the monitor towards the cab and shouts, gripping the yellow rail as the van sways; the trace races; behind her the second paramedic works on the patient. Premiere: handheld sway, a 4% push.",
      "lanes": [
       {
-       "lane": "Veo",
+       "lane": "Omni",
        "does": "her turn and shout, the sway, the trace"
       },
       {
@@ -60,7 +60,7 @@
      "idea": "She leans in to the monitor, close, not shouting yet; the van rocks; the voices play over her. Quieter dread, the shouting carried by sound. Premiere: a hard push on her eyes.",
      "lanes": [
       {
-       "lane": "Veo",
+       "lane": "Omni",
        "does": "her lean in, the sway, the trace"
       },
       {
@@ -89,7 +89,7 @@
      "idea": "The wipers sweep once, the outrider holds his glove up and does not move, the blue lights pulse on the wet glass; the driver's hands tighten on the wheel.",
      "lanes": [
       {
-       "lane": "Veo",
+       "lane": "Omni",
        "does": "one wiper sweep, beacon pulse, the driver's hands"
       },
       {
@@ -112,7 +112,7 @@
      "idea": "The same hold, and behind the outrider a big black car's headlights slide across from the left: the minister arriving, seen before we cut to him.",
      "lanes": [
       {
-       "lane": "Veo",
+       "lane": "Omni",
        "does": "headlights crossing, rain"
       },
       {
@@ -141,7 +141,7 @@
      "idea": "The round 1 clip pl-04-MIN1-b, muted, lip-synced to the new Charon line with lip-sync-dub; the glass muffle is on the audio.",
      "lanes": [
       {
-       "lane": "Veo",
+       "lane": "Omni",
        "does": "nothing new"
       },
       {
@@ -170,7 +170,7 @@
      "idea": "Nobody moves. The paramedic's hands stay on the still chest. Through the windscreen, the red traffic light turns green and the cars ahead pull away. The world moves on the moment he's gone.",
      "lanes": [
       {
-       "lane": "Veo",
+       "lane": "Omni",
        "does": "the light changes, distant cars move off"
       },
       {
@@ -193,7 +193,7 @@
      "idea": "He stops pressing and slowly sits back on his heels, looking at the monitor; the strip light buzzes. Plain and human.",
      "lanes": [
       {
-       "lane": "Veo",
+       "lane": "Omni",
        "does": "his sit-back"
       },
       {

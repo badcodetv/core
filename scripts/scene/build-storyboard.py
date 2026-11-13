@@ -34,7 +34,8 @@ def main(scene_dir, out):
             else:
                 print('missing still:', sid, file=sys.stderr)
     payload = {'acts': sb['acts'], 'frames': sb['frames'], 'notes': anim.get('sequence_notes', []),
-               'img': images, 'looks': sc.cfg.get('looks', {})}
+               'img': images, 'looks': sc.cfg.get('looks', {}),
+               'model': (sc.cfg.get('video') or {}).get('model', '')}
     page = (HERE / 'storyboard-template.html').read_text()
     page = (page.replace('/*DATA*/null', json.dumps(payload, ensure_ascii=False).replace('</', '<\\/'))
             .replace('<!--TITLE-->', html.escape(sc.cfg['title'] + ' storyboard'))

@@ -177,7 +177,7 @@ function frameEl(f) {
       h('ul', { class: 'lanes' }, (o.lanes || []).map(l => h('li', {}, h('b', {}, l.lane), l.does))),
       h('div', { class: 'meta' }, o.cut ? h('span', {}, 'Cut: ' + o.cut) : null, o.seconds ? h('span', {}, 'About ' + o.seconds + (/^[\d.\-–]+$/.test(String(o.seconds)) ? ' s' : '')) : null, o.risk ? h('span', {}, 'Risk: ' + o.risk) : null, o.source ? h('span', {}, 'From: ' + o.source) : null));
     if (o.veo_prompt) { const pre = h('div', { class: 'veo' }, o.veo_prompt);
-      card.append(h('details', {}, h('summary', {}, 'Veo motion prompt'), pre, h('button', { class: 'copy', type: 'button', onclick: e => copy(o.veo_prompt, e.target) }, 'Copy prompt'))); }
+      card.append(h('details', {}, h('summary', {}, 'Motion prompt' + (D.model ? ' (' + D.model + ')' : '')), pre, h('button', { class: 'copy', type: 'button', onclick: e => copy(o.veo_prompt, e.target) }, 'Copy prompt'))); }
     card.append(h('div', { class: 'optfoot' }, h('button', { class: 'pick', type: 'button', 'data-kind': 'anim', 'data-n': f.n, 'data-v': o.id, 'aria-pressed': 'false', style: 'padding:6px 14px' }, 'Animate it this way'), h('span', { class: 'who' })));
     opts.append(card);
   });
