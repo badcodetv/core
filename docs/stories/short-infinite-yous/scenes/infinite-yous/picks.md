@@ -1,0 +1,3 @@
+# Infinite Yous (short): picks and rulings
+
+- **2026-11-13, Jack:** picked #68 from the Storyverse batch v4 and gave the shape (his words in `../../README.md`): starts on "one version of me gets home fine", versions split on one screen, the balaclava figure in a lab coat squeezes the dividing lines into the one original, "there is only one", kicks him into a cab, logo card lit by taxi headlights with a cinematic horn. Look: his night-taxi photo. "Please clean room it all and research the internet to achieve it." Folder Desktop `Youtube Vids\animation\shorts\infinite-yous` (his standing shorts folder); 9:16 as his other shorts.

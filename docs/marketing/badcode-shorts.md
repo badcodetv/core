@@ -109,7 +109,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 67. 📚 **Still There** *(the block universe, Rietdijk 1966 / Putnam 1967; the doctrine's growing block; BET)*: **Who:** an old man losing his memory, losing his wife's face first. **Stake:** her (5) → BadCode walks him into a library where every shelf is a lit-up day; their wedding is on one (5) → "You're losing the copy. The day is still there. I've read it." (4) **14s.**
 
 *One stage, not a multiverse*
-68. 🌌 **Infinite Yous** *(Everett: one interpretation among several, its probability puzzle still open; FACT that it is unsettled)*: **Who:** a lad after a party, keys in hand, five pints down: "There's infinite versions of me. One of them gets home fine." **Stake:** his life, and his mum's (5) → BadCode takes the keys: "One stage. One of you." (3) → his mum, asleep on the sofa, waiting up (3). **11s.**
+68. 🌌 **Infinite Yous** *(Jack: BUILDING, `docs/stories/short-infinite-yous/`)* *(Everett: one interpretation among several, its probability puzzle still open; FACT that it is unsettled)*: **Who:** a lad after a party, keys in hand, five pints down: "There's infinite versions of me. One of them gets home fine." **Stake:** his life, and his mum's (5) → BadCode takes the keys: "One stage. One of you." (3) → his mum, asleep on the sofa, waiting up (3). **11s.**
 69. 💻 **Parallel Universes, Allegedly** *(Google Willow 2024: the paper says error correction, the multiverse line was a blog post; FACT)*: **Who:** a pensioner on the phone to a salesman: "A quantum fund, across parallel universes!" **Stake:** her savings (5) → the actual paper: *error correction worked* (2) → BadCode: "One universe. One pension. Hang up." (3) **10s.**
 
 *The universe turns sunlight into drama*
