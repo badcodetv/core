@@ -127,12 +127,20 @@
   },
   "picked": [
     [
+      "LS4-b-fix-a",
+      "A. Losing him (LS4-b, badge removed)"
+    ],
+    [
       "HD3-b",
-      "B. Held: Jack, This"
+      "B. Held"
     ],
     [
       "NOW-MIN1-b",
-      "C. The motorcade: round 1 minister kept (Jack, This)"
+      "C. The motorcade (round 1 minister, clip pl-04 + lip-sync)"
+    ],
+    [
+      "FL4-a",
+      "D. Flatline"
     ]
   ],
   "board_round": 4

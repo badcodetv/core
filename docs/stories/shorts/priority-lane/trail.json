@@ -148,5 +148,17 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "round 4: LS4 and FL4, the LS3-b and FL3-a angles remade in one van (references: LS3-b + HD3-b, then FL3-a + LS4-a)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane design/2026-11-13-shorts-priority-lane-r3-moodboard.html"
+ },
+ {
+  "at": "2026-11-13T15:04:46+00:00",
+  "stage": "moodboard",
+  "round": 4,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "round 4 votes read: every beat picked",
+  "decided": [
+   "Jack: LS4-b This, FL4-a This (with HD3-b and NOW-MIN1-b from round 3): done"
+  ],
+  "feedback": "feedback/moodboard-r4",
+  "feedback_docs": 8
  }
 ]

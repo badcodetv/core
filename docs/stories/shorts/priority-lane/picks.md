@@ -31,3 +31,10 @@
 - **B. Held: HD3-b** (Jack, This). **C. The motorcade: the round 1 minister NOW-MIN1-b** (Jack, This), so the existing clip `pl-04-MIN1-b` and its lip-sync stay; the windscreen shots are out.
 - **A. Losing him: LS3-b** Maybe, and **D. Flatline: FL3-a** Maybe. Jack: "we need to match the consistancy of the van and setting with the other clips, but use this camera angle, the back of the image should be facing the drivers seat so we can see out the window."
 - **Round 4** (same board, same link): remade with `flow_edit_image` using references. The prompts are mine, short reference-fix prompts and not clean-room ones. LS4 = LS3-b for the angle + HD3-b for the cab and windscreen; **LS4-a** has no badge and is the van anchor (LS4-b still has the crest). FL4 = FL3-a for the angle + LS4-a for the van; **FL4-a** reads best (flat line, open hatch, red light through the windscreen).
+
+## 2026-11-13: every beat picked (round 4)
+
+- **A. Losing him: LS4-b** (Jack, This), with the crest badge, "UK" tab and shoulder lettering removed by a one-line edit → **LS4-b-fix-a** (fix-b in `_rejected/`).
+- **B. Held: HD3-b** · **C. The motorcade: NOW-MIN1-b** (round 1 clip `pl-04-MIN1-b`, lip-synced) · **D. Flatline: FL4-a**.
+- The same paramedic isn't at the monitor in A and D (a woman in LS4-b, a man in FL4-a); Jack picked them as they are.
+- Next: storyboard + animation options (scene-animation), and the Suno track for dialogue 1B.
