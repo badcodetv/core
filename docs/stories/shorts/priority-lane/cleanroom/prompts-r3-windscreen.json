@@ -1,0 +1,29 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own formula: Subject + Action + Location + Composition + Style, written as narrative not keywords; name lens, aperture, camera body and film stock for photorealism; describe positively what you want ('empty' rather than 'no X'); 9:16 is native",
+    "https://dev.to/googleai/getting-the-most-out-of-nano-banana-2-502k — Google's developer post on Nano Banana 2 (Gemini 3.1 Flash Image): the default fast model; structured, specific prompts beat vague ones",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — practitioner playbook: specify mood, materials, lighting and camera perspective; vague prompts give average images",
+    "https://www.ukemergency.co.uk/page/105 — UK photo captions of police escorts: outriders and cars stop traffic at junctions and keep close to the escorted vehicle; UK ambulance cabs have a dash-mounted screen and the bulkhead hatch",
+    "https://openaccess.sgul.ac.uk/114715/1/s3.pdf — UK ambulance design study: monitor/ECG mounted to be viewable from most positions; standing access beside the stretcher for compressions",
+    "https://issuu.com/clinical-education/docs/study_guide_-_2023_cep/s/17258668 — moving CPR in the rear cabin: two clinicians, one compressing, one ventilating at the head, cables and oxygen tubing everywhere",
+    "https://www.dvinfo.net/forum/techniques-independent-production/142935-how-create-realistic-rain.html — night rain only reads where light hits it (headlight beams, backlight); tight shots of rain on a windscreen sell it",
+    "https://theasc.com/blog/the-film-book/grain-ghost-frames2-uncut-gems-with-darius-khondji-asc-afc — Khondji: real 35mm grain texture and existing city light sources pulled in through car windows; the reference for a gritty, not glossy, night",
+    "https://www.litepanels.com/en/applications/how-to-light-a-car-scene-at-night/ — night car interiors lit by motivated sources (dash, street, passing lights); keep it dim and directional"
+  ],
+  "attach_reference": "no — this shot looks forward through the windscreen, so the interior in the photo (which faces the cab) only appears as a dark foreground edge or through the hatch; attaching it risks the model copying its daylight and white clean look onto the whole frame, so describe the few interior details instead (teal seat edge, hatch frame, monitor glow). Attach it only for prompt 1 if the hatch framing comes out wrong.",
+  "notes": "The outrider's gloved hand and the red light are shot B; here the outrider can sit at the frame edge as a dark shape only. The windscreen wiper position can be animated in Flow; keep the politician's lips free (he is seen through two layers of wet glass, his rant is voiced off). Any stray lettering or plate the model invents: regenerate rather than edit.",
+  "prompts": [
+    {
+      "idea": "Through the hatch: deep staging from the rear cabin, both worlds in one frame — the dying man's monitor in front, the minister's car framed in the windscreen beyond",
+      "prompt": "Photograph a rainy night from inside the back of a UK ambulance, looking forward through the small rectangular hatch window into the driver's cab and out through the windscreen. Foreground, soft and out of focus: a paramedic's shoulder in a plain dark-green uniform, blue-gloved hand, a teal seat edge, the green glow of a heart monitor. Through the hatch and the rain-streaked windscreen, sharp: a black chauffeured saloon crossing slowly inches ahead, lit hard by the ambulance headlights, rain slanting through the beams. In its rear window a man in his fifties in a dark suit shouts into a phone, never looking over. Blue strobe washing the cab. Vertical 9:16, 35mm lens, shot on Kodak Vision3 500T, heavy grain, underexposed, handheld. Thanks."
+    },
+    {
+      "idea": "The driver's eyeline: wide, low, from just behind the wheel; the saloon's side fills the windscreen like a wall, a wiper caught mid-sweep",
+      "prompt": "Photograph the view from the driver's seat of a UK ambulance stopped at a junction on a pouring wet night, low and wide, the steering wheel and the driver's gripping hands dark at the bottom of the frame, a glowing dash screen without text. Filling the windscreen, inches from the bumper: the long black flank of a chauffeured saloon gliding slowly across, its paint beaded with rain, the headlight beams blasting white across its doors. A wiper blade frozen halfway, half the glass clear, half smeared. Through the saloon's rear side window, a suited man in his fifties on the phone, mouth open mid-complaint, eyes down. A police motorcycle shape at the far edge. Sodium-orange streetlamps blooming in the fog. Vertical 9:16, 24mm, 35mm film grain, underexposed, gritty. Thanks."
+    },
+    {
+      "idea": "Long lens on the window: tight on the politician through two layers of wet glass, with the ambulance's own blue light and the monitor's green ghosted in the windscreen reflection",
+      "prompt": "Photograph through the rain-covered windscreen of an ambulance at night with a long lens, framed tight on the rear side window of a black saloon passing slowly across, a few feet away. Inside that window, a man in his fifties in a dark suit and loosened tie holds a phone to his ear, frowning, gesturing, absorbed, lit by a small warm reading light. Over the whole image, faintly reflected in the ambulance windscreen: the green trace of a heart monitor and a blue emergency strobe. Water droplets on the glass in sharp focus, raindrops streaking through white headlight glare, sodium-orange bokeh behind. Cold teal shadows, crushed blacks, 85mm, shot on 35mm Kodak Vision3 500T, coarse grain, slightly underexposed, handheld. Vertical 9:16. Thanks."
+    }
+  ]
+}

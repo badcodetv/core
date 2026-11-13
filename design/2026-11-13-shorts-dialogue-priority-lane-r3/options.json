@@ -1,0 +1,416 @@
+{
+ "page_title": "Priority Lane Dialogue",
+ "title": "Priority Lane round 3: dialogue options",
+ "about": "This page offers three dialogue drafts for the whole of Priority Lane round 3 (about 14 s, beats A to D), synthesised from ten independent writers. Nothing has changed yet: no scene file, script or voice has been touched.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Logic said plainly",
+   "title": "The logic said plainly, a character reasons it out loud",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "Comedy first",
+   "title": "Comedy first, bluntness and bad timing",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-04-comedy-first.md"
+  },
+  {
+   "id": "05",
+   "name": "Other side wins",
+   "title": "The other side wins",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-05-other-side-wins.md"
+  },
+  {
+   "id": "06",
+   "name": "Reversal",
+   "title": "Reversal, the listener gets there first",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "The chorus",
+   "title": "The chorus, side characters voice the doubts",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-07-chorus.md"
+  },
+  {
+   "id": "08",
+   "name": "Place is argument",
+   "title": "The place is the argument",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft, numbers as a countdown",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, work backwards",
+   "file": "design/2026-11-13-shorts-dialogue-priority-lane-r3/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "Priority Lane round 3",
+   "where": "BadCode Short #1, beats A-D (whole short)",
+   "scene": "docs/stories/shorts/priority-lane",
+   "target": "about 14 s total; spoken words 7-9 s max; last 3 s flatline with no words",
+   "now_from": "docs/misc/2026-11-13-meeting.md and docs/stories/shorts/priority-lane/brief.md",
+   "now": [
+    {
+     "who": "PARAMEDIC 1",
+     "line": "BP 60 over 30, we're gonna lose him!"
+    },
+    {
+     "who": "DRIVER",
+     "line": "Come on, get out of the way!"
+    },
+    {
+     "who": "PARAMEDIC 2",
+     "line": "What's he doing?!"
+    },
+    {
+     "who": "MINISTER",
+     "line": "[on the phone, crossing in front of the ambulance] I said raspberry-shaped hors d'oeuvres!"
+    },
+    {
+     "who": "MONITOR",
+     "line": "[flatline]"
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "The quiet stop",
+     "length": "about 14 s",
+     "total": "~6.8 s spoken",
+     "bet": "The picture and the silence do the outrage; fewer words make the minister's line the loudest thing in the short.",
+     "lines": [
+      {
+       "who": "PARAMEDIC 1",
+       "line": "BP 60 over 30, we're gonna lose him!",
+       "tags": [
+        "Kai",
+        "01",
+        "02",
+        "07"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "PARAMEDIC 2",
+       "line": "[overlapping] Oxygen dropping!",
+       "tags": [
+        "Kai",
+        "05",
+        "10"
+       ],
+       "s": "0.9"
+      },
+      {
+       "who": "DRIVER",
+       "line": "Get the f*** out of the way!",
+       "tags": [
+        "02",
+        "04",
+        "09"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "(beat B)",
+       "line": "[no line: glove up, siren dies, rain, monitor beeping fast]",
+       "tags": [
+        "02"
+       ],
+       "s": "0"
+      },
+      {
+       "who": "MINISTER",
+       "line": "[on the phone, through the glass] I said raspberry-shaped hors d'oeuvres!",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "MONITOR",
+       "line": "[flatline, silence, black, logo]",
+       "tags": [
+        "all"
+       ],
+       "s": "0"
+      }
+     ],
+     "notes": [
+      "Shape 02 spine; Kai's 'oxygen dropping' added back so the crew do not feel under-voiced. 'What's he doing?!' is cut: the glove asks it.",
+      "Protected lines kept verbatim. Risk: needs a tight monitor shot in A and the siren must drop out cleanly at the stop. Spare seconds are the breathing room."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "The countdown",
+     "length": "about 14 s",
+     "total": "~8.3 s spoken",
+     "bet": "Escalating real numbers and a stake ('two minutes out') make the stop cost something, and a cut-off figure lets the viewer finish the death themselves.",
+     "lines": [
+      {
+       "who": "PARAMEDIC 1",
+       "line": "BP 60 over 30! F***ing hurry up, we're gonna lose him!",
+       "tags": [
+        "Kai",
+        "10",
+        "04"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "PARAMEDIC 2",
+       "line": "[overlapping] Sats dropping, he's peri-arrest!",
+       "tags": [
+        "04",
+        "10",
+        "06"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "DRIVER",
+       "line": "Two minutes out! Get the f*** out of the way!",
+       "tags": [
+        "10",
+        "03"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "PARAMEDIC 2",
+       "line": "[the glove] Why have we stopped?!",
+       "tags": [
+        "10",
+        "03",
+        "01"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MINISTER",
+       "line": "[muffled through the glass] I said raspberry-shaped hors d'oeuvres!",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "PARAMEDIC 1",
+       "line": "[quiet, to the patient] Fifty over twen--",
+       "tags": [
+        "10"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "MONITOR",
+       "line": "[flatline tone cuts the word; silence; black; logo]",
+       "tags": [
+        "10",
+        "all"
+       ],
+       "s": "0"
+      }
+     ],
+     "notes": [
+      "Trim first if tight: 'Two minutes out!'. 'Fifty over twen--' is a proposal for Jack and its numbers need a medical eye; if Suno smooths it, cut it in the edit.",
+      "Protected lines kept verbatim. Risk: heavy overlap may muddy the numbers; the last fragment may feel like one beat too many before the tone."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "We can see it",
+     "length": "about 14 s",
+     "total": "~8.3 s spoken (overlaps)",
+     "bet": "A visible destination makes the stop outrageous without any moral: the hospital is in the windscreen.",
+     "lines": [
+      {
+       "who": "PARAMEDIC 1",
+       "line": "BP 60 over 30, sats dropping, we're gonna lose him!",
+       "tags": [
+        "Kai",
+        "08"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "PARAMEDIC 2",
+       "line": "[bagging him, pointing forward] A&E's at the end of this road, go go go!",
+       "tags": [
+        "08"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "DRIVER",
+       "line": "Get the f*** out of the way!",
+       "tags": [
+        "08",
+        "02"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "PARAMEDIC 2",
+       "line": "[the glove up] We can SEE it! It's right there!",
+       "tags": [
+        "08"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "MINISTER",
+       "line": "[through the glass, crossing slowly] I said raspberry-shaped hors d'oeuvres!",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "MONITOR",
+       "line": "[flatline, silence, black, logo]",
+       "tags": [
+        "all"
+       ],
+       "s": "0"
+      }
+     ],
+     "notes": [
+      "Shape 08. Needs the lit A&E sign in the windscreen still, or the lines lie. 'We can SEE it' is a new line, a proposal for Jack.",
+      "If Suno will not overlap lines 3 and 4, drop 'It's right there!'. 'Two minutes' was removed as unmeasured guesswork. Protected lines kept verbatim."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "02",
+     "length": "~6 s",
+     "verdict": "Best discipline. Trusts the picture, keeps the flatline silent, no invented medicine. Fails only by being thin: a crew who barely speak risk under-delivering Kai's ER drama."
+    },
+    {
+     "rank": 2,
+     "shape": "08",
+     "length": "~10 s raw",
+     "verdict": "'We can SEE it' states the outrage through geography, not a moral. Fails: runs long, and depends on a still we have not made."
+    },
+    {
+     "rank": 3,
+     "shape": "10",
+     "length": "~8.3 s",
+     "verdict": "Strongest ending (the viewer finishes the number). Fails: invented 'fifty over twenty', Suno may not cut mid-word, too much overlap under the minister."
+    },
+    {
+     "rank": 4,
+     "shape": "09",
+     "length": "~9 s",
+     "verdict": "Real craft logic, numbers falling. Fails: too many lines, 'hurry up' twice reads as filler, mush risk."
+    },
+    {
+     "rank": 5,
+     "shape": "04",
+     "length": "~8 s",
+     "verdict": "Good panic opening. Fails: '...Raspberry?' echo tells the joke and risks mocking the crew; arch delivery kills the heroes."
+    },
+    {
+     "rank": 6,
+     "shape": "01",
+     "length": "~5.8 s",
+     "verdict": "Right length, clean. Fails: drops all swearing and escalation, so the crew read polite; the driver's 'Move!' is too thin."
+    },
+    {
+     "rank": 7,
+     "shape": "06",
+     "length": "~8 s",
+     "verdict": "Cut-off sentences are real panic. Fails: invents 'ten minutes', relies on TTS honouring dashes, and the broken line states the point."
+    },
+    {
+     "rank": 8,
+     "shape": "03",
+     "length": "~8.7 s",
+     "verdict": "Clear stakes. Fails: the shouted sum ('four minutes') is not how paramedics talk and it argues the point aloud, which is the lecture we avoid."
+    },
+    {
+     "rank": 9,
+     "shape": "07",
+     "length": "~7.8 s",
+     "verdict": "Chorus idea is neat. Fails: five voices in one Suno track will blur, and the bystander and 'Is he on the phone?' hand-hold the joke."
+    },
+    {
+     "rank": 10,
+     "shape": "05",
+     "length": "~8.9 s",
+     "verdict": "Fails hardest: a crew that says 'Yes, sir' and 'Take your time, sir' kills the desperate heroes Kai asked for and states the moral through sarcasm."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "BP 60 over 30",
+     "I said raspberry-shaped hors d'oeuvres!"
+    ],
+    "rows": {
+     "1A": [
+      "BP 60 over 30",
+      "I said raspberry-shaped hors d'oeuvres!"
+     ],
+     "1B": [
+      "BP 60 over 30",
+      "I said raspberry-shaped hors d'oeuvres!"
+     ],
+     "1C": [
+      "BP 60 over 30",
+      "I said raspberry-shaped hors d'oeuvres!"
+     ]
+    }
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Swearing: keep Kai's full 'f***ing hurry up' and 'get the f*** out of the way', or does Suno's speech mode need a swapped word?"
+  },
+  {
+   "id": "q2",
+   "text": "Should the crew speak at all during the held beat B (1A says no, 1B and 1C do)?"
+  },
+  {
+   "id": "q3",
+   "text": "Are invented numbers acceptable ('two minutes out', 'fifty over twenty'), or must a clinician confirm every figure first?"
+  },
+  {
+   "id": "q4",
+   "text": "1C needs the lit A&E sign visible in the windscreen still. Is that a shot we want?"
+  },
+  {
+   "id": "q5",
+   "text": "Any new crew line is a proposal for Jack: which of 'We can SEE it!', 'Why have we stopped?!' and 'Fifty over twen--' does he want?"
+  }
+ ]
+}

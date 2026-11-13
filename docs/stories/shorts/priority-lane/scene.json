@@ -40,10 +40,10 @@
     "duration": 8
   },
   "dialogue": {
-    "page": "https://claude.ai/artifact/KrWqm7FgqmCqheDDQbGgw1",
-    "options": "design/2026-11-10-shorts-dialogue-priority-lane/options.json",
-    "picked": "1D",
-    "round": 1
+    "page": "https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
+    "options": "design/2026-11-13-shorts-dialogue-priority-lane-r3/options.json",
+    "picked": null,
+    "round": 3
   },
   "boards": {
     "moodboard": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
@@ -117,5 +117,11 @@
     ]
   },
   "round": 3,
-  "brief": "brief.md (r3); r1 in brief-r1.md"
+  "brief": "brief.md (r3); r1 in brief-r1.md",
+  "dialogue_r1": {
+    "page": "https://claude.ai/artifact/KrWqm7FgqmCqheDDQbGgw1",
+    "options": "design/2026-11-10-shorts-dialogue-priority-lane/options.json",
+    "picked": "1D",
+    "round": 1
+  }
 }

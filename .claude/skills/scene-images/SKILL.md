@@ -17,6 +17,7 @@ folder layout and `scene.json`.
 - **`flow-automation`**: driving the browser and recovering from failures.
 - **The story's `look.md`** (`docs/stories/STYLE.md`): the only source of a look. LOCKED → every option sits inside it, plus at least one deliberate break. EMPTY → run `story-style` first (the story's look is found once, for the whole story). EXPLORING → the board is how the look gets settled: run the options as a `variations` round (`kind` = `flow`), and write the pick back into `look.md`.
 - **`new-image`**: variety mode, casting, and the plan → critique → generate loop.
+- **The scene's real-photo references** (`reference/`, `refs.json`; picked in `scene-beats` from `scripts/scene/unsplash-refs.py`, or pasted by Kai or Jack). No reference yet and the look is not LOCKED → offer the Unsplash picks page first (Kai, 2026-11-13: "give me some sentences, I'll search Unsplash and stick some examples on the artifact for you to pick from"). Hand the picked photo's path to every clean-room writer.
 
 ## The mood board
 

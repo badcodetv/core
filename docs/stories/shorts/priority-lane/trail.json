@@ -102,5 +102,13 @@
   "decided": [
    "Jack r1 notes: fix ambulance direction (clean room), headlines meme-style at the end, BadCode overlay"
   ]
+ },
+ {
+  "at": "2026-11-13T14:31:38+00:00",
+  "stage": "dialogue",
+  "round": 3,
+  "url": "https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
+  "what": "dialogue options: round 3 (no reporter; ER drama, held, minister, flatline)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-13-shorts-dialogue-priority-lane-r3/options.json design/2026-11-13-shorts-dialogue-priority-lane-r3.html"
  }
 ]

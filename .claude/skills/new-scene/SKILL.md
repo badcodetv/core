@@ -37,6 +37,7 @@ putting an existing cut on a timeline page is `scene-timeline`, rewriting a dial
 - `docs/marketing/the-reader.md`: who the work is for.
 - The story's canon (`docs/stories/<story>/README.md`) and its overview board (`timelines.json`).
 - **The story's `look.md` and `sound.md`.** The only source of a look, a sound or a voice; there is no house style (`docs/stories/STYLE.md`). Empty (the story has no look or sound at all) → `story-style` first. Exploring for this part → the stage that needs it runs a `variations` round, and the pick is written back.
+- **Real photos first** (Kai and Jack, 2026-11-13): a scene's look starts from a real reference photo, picked on a page made by `scripts/scene/unsplash-refs.py` (stage 1, `scene-beats`, question 6) or pasted in by Kai or Jack.
 - Then the stage skill you are in. Each lists the craft skills it leans on (`story-craft`, `shot-craft`, `flow-prompt`, `flow-automation`, `suno-automation`, `premiere-automation`, `lip-sync-dub`).
 
 ## Where things live
@@ -54,6 +55,7 @@ The words live in the repo and the media lives outside it (the clips/ convention
 | `video-jobs.json` | picks turned into Flow jobs (format in `scripts/scene/shots.py`) | 3 |
 | `script.json` | the words per beat `{beats:[{id, title, see, lines:[{who, text, by: kai\|claude, how?}], music, sfx}], voices:[{id, name, profile…}]}` | 4 |
 | `cut-notes.json` | each timeline round: Claude's plan, a reply per note, Kai's notes snapshotted | 4 |
+| `refs.json` + `refs-picks.json` | real-photo references from Unsplash (photographer, page) and their picks page (`scripts/scene/unsplash-refs.py`); the photos sit in `<media>/reference/unsplash/` | 1–2 |
 | `picks.md` | append-only record of every pick, note and ruling, dated, Kai's words kept | all |
 | `trail.json` + `feedback/` | **provenance**: one line per page published or read (`prov.py trail`): its link, rebuild command, decisions, and every vote, pick and note dumped raw | all |
 | `final.json` + `final-edl.json` | **provenance**: the finished cut, every shot and sound traced to its recipe (`prov.py freeze`) | 4 |
