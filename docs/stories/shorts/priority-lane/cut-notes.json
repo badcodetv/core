@@ -1,33 +1,19 @@
 {
- "round": 2,
+ "round": 3,
  "plan": [
-  {
-   "h": "Round 2: what changed",
-   "items": [
-    "Clean room (fresh web research + two sealed writers, prompts run verbatim): new clips for the reporter (3) and the button (5).",
-    "Shot 3: the ambulance now stays parked side-on the whole shot, while cars pass.",
-    "Shot 5: the ambulance drives straight away with its back to us. The clip turned at the junction in its first second, so the cut starts after the turn.",
-    "Ending: five real headlines slam in meme-style over the last line. Each is verbatim from the outlet's own page, retyped in our lettering with Outlet, Year. No screenshots or logos (UK fair dealing).",
-    "BadCode logo over the whole film, top left."
-   ]
-  },
-  {
-   "h": "You decide",
-   "items": [
-    "UK headline added (Jack: 'search for a UK one'): Deadline News, 2024, Baker Street, London (the clip you likely saw). It lands LAST and holds on top. Its wording comes from the search listing and matches the article's address exactly, but the page refused to open for me, so open it once to confirm before release: https://www.deadlinenews.co.uk/2024/05/06/social-media-fumes-over-broken-britain-as-police-motorcade-stops-ambulance-on-blue-light-emergency-to-allow-vip-to-pass-through-junction/",
-    "Overlay: logo bug only. Want more news-channel dressing (a LIVE tag, a lower-third strap)?",
-    "Still 21.9 s against the 20 s target."
-   ]
-  }
+  "Jack, round 3: the end now pushes in on the flat line and the logo comes up on the dead screen (no black card).",
+  "Score is still the stand-in until a pick lands on the picks page.",
+  "You decide: built into Premiere as shorts-1-priority-lane-r3."
  ],
  "replies": {
-  "at205": "Fixed in round 2 with a clean room: a web researcher (no repo) found that video models flip small, blurry vehicles. The fix is to keep the ambulance as a parked landmark and give the motion to one line of cars going one way. A sealed writer wrote the prompt from that brief only. The new clip pl-03-cr2A has the ambulance parked side-on throughout. New material: 1 Flow clip.",
-  "at426": "Fixed the same way: the new clip pl-05-cr2A has it drive straight away, rear lights toward us, getting smaller. It turned at the junction in its first second, so the shot now starts at 1.2 s and you never see the turn. New material: 1 Flow clip (the other two clean-room prompts were refused by Flow).",
-  "at529": "Done: five real headlines (Malay Mail 2021, News Minute 2015, Moscow Times 2016, Deccan Chronicle 2017, Daily Excelsior 2026) land one every ~0.95 s during \"A politician blocking the path of an ambulance. Poetic, really...\" and stack up. All verbatim, sources in research/news-stories.md. The BadCode logo sits top left for the whole film. Edit only, no credits. Since then a UK one has been added as the last card: Deadline News 2024 (Baker Street, London). Six cards now, about 0.8 s apart."
+  "at456": "Done: from 1.4 s into the flatline shot the camera pushes in on the monitor until the flat line fills the frame; the screen dies at ~4 s and the BadCode logo fades up on it, in silence (the tone stops as it appears). The black end card is gone."
  },
  "kai_round1": {
   "at529": "the ending of this should show real life news stories flash on screen in like a meme format, as he is saying the last lines. also have a badcode overlay over all of it. THanks",
   "at205": "The ambulance randomly changes direction. Please fix it, thanks. Please clean room it all and research the internet to achieve it. Thanks.",
   "at426": "same here thanks\n"
+ },
+ "jack_round3": {
+  "at456": "we were gonna zoom into the flatline on the screen then have the badcode logo on it. THanks"
  }
 }

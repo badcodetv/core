@@ -43,8 +43,14 @@ def take(id8):
 SHOTS = [('losing', 'pl-r3-A-LS5-b.mp4', 0.0, 7.9),
          ('held', 'pl-r3-B-HD3-b.mp4', 1.5, 2.6),
          ('motorcade', 'pl-04-MIN1-b-charon.mp4', 0.6, 3.3),
-         ('flatline', 'pl-r3-D4-FL4-a.mp4', 0.0, 3.5)]
-END = 1.6                                  # black + logo
+         ('flatline', 'pl-r3-D4-FL4-a.mp4', 0.0, 5.6)]
+# Jack's note on round 3 (2026-11-13, at 0:19): "zoom into the flatline on the screen then have the badcode logo on it".
+# So no black end card: D pushes in on the monitor (ZOOM_*), the screen goes dark in the clip at ~4 s and the logo
+# fades up on it (LOGO_AT), in silence.
+END = 0.0
+ZOOM_FROM, ZOOM_TO, ZOOM = 1.4, 3.2, 3.0
+SCREEN = (0.197, 0.459)                     # the monitor screen's centre, as a fraction of the frame (measured on the clip)
+LOGO_AT = 4.0
 starts, t = [], 0.0
 for s in SHOTS: starts.append(round(t, 3)); t += s[3]
 PIC = round(t, 3); TOTAL = round(PIC + END, 3)
@@ -67,7 +73,7 @@ EFX = [('sfx-cabin', 'cabin', 0.0, B + 2.6, -10, True),
        ('sfx-cars', 'stop', B - 0.1, 2.0, -6, False),
        ('sfx-cars', 'passby', B + 0.6, 3.0, -9, False),
        ('sfx-cabin', 'cabin', D, 3.5, -14, True),
-       ('sfx-monitor', 'flatline', FLAT, PIC - FLAT + 0.6, -12, True)]
+       ('sfx-monitor', 'flatline', FLAT, D + LOGO_AT - FLAT, -12, True)]   # the tone stops as the logo comes up
 
 
 def racing_monitor(id8, length):
@@ -119,11 +125,22 @@ def main():
     parts = []
     for i, (beat, clip, tin, d) in enumerate(SHOTS):
         out = CUT / f'v{i}-{beat}.mp4'
-        ff('-ss', tin, '-t', d, '-i', VID / clip, '-an', '-vf', vf, *enc, out); parts.append(out)
-    end = CUT / 'v4-end.mp4'
-    ff('-f', 'lavfi', '-i', f'color=c=black:s={W}x{H}:r={FPS}:d={END}', '-i', LOGO, '-filter_complex',
-       f"[1]format=rgba,fade=t=in:st=0.35:d=0.3:alpha=1[l];[0][l]overlay=(W-w)/2:(H-h)/2:shortest=1,{vf}", *enc, end)
-    parts.append(end)
+        if beat == 'flatline':
+            # Eased push into the screen (smoothstep), the screen's centre travelling to the frame's centre, then the logo on it.
+            cx, cy = SCREEN[0] * W, SCREEN[1] * H
+            pr = f"min(1,max(0,(it-{ZOOM_FROM})/{ZOOM_TO - ZOOM_FROM}))"
+            z = f"1+{ZOOM - 1}*(3*pow({pr},2)-2*pow({pr},3))"
+            zp = (f"zoompan=z='{z}':x='({W / 2}+({cx}-{W / 2})*(zoom-1)/{ZOOM - 1})-iw/zoom/2'"
+                  f":y='({H / 2}+({cy}-{H / 2})*(zoom-1)/{ZOOM - 1})-ih/zoom/2':d=1:s={W}x{H}:fps={FPS}")
+            pre = f'scale={2 * W}:{2 * H}:force_original_aspect_ratio=increase,crop={2 * W}:{2 * H},fps={FPS},'
+            zp = zp.replace(f'{W / 2}', f'{W}').replace(f'{H / 2}', f'{H}').replace(f'{cx}', f'{2 * cx}').replace(f'{cy}', f'{2 * cy}')
+            ff('-ss', tin, '-t', d, '-i', VID / clip, '-i', LOGO, '-filter_complex',
+               f"[0]{pre}{zp}[z];[1]scale=560:-1,format=rgba,loop=-1:size=1,fps={FPS},trim=0:{d + 0.5},setpts=N/{FPS}/TB,"
+               f"fade=t=in:st={LOGO_AT}:d=0.5:alpha=1[l];"   # loop the still first, THEN fade (fading one frame then looping it stays invisible)
+               f"[z][l]overlay=(W-w)/2:(H-h)/2:eof_action=pass,{vf}", '-t', d, '-an', *enc, out)
+        else:
+            ff('-ss', tin, '-t', d, '-i', VID / clip, '-an', '-vf', vf, *enc, out)
+        parts.append(out)
     (CUT / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
     ff('-f', 'concat', '-safe', '0', '-i', CUT / 'list.txt', '-c', 'copy', CUT / 'picture.mp4')
 
@@ -165,21 +182,22 @@ def main():
     SEE = {'losing': 'Inside the ambulance at full pace: she turns and shouts to the cab, the van sways, the monitor races.',
            'held': 'Through the windscreen: the outrider holds his glove up; the black car glides across.',
            'motorcade': 'The minister in the back of his car, on the phone (lip-synced to Charon).',
-           'flatline': 'Back inside: the line goes flat; he sits back. Then black and the logo.'}
+           'flatline': 'Back inside: the line goes flat; he sits back. We push in on the flat line, the screen dies, and the BadCode logo comes up on it (Jack, round 3).'}
     TITLES = {'losing': 'A. Losing him', 'held': 'B. Held', 'motorcade': 'C. The motorcade', 'flatline': 'D. Flatline'}
     beats = []
     for i, (beat, clip, tin, d) in enumerate(SHOTS):
         bl = [{'i': j, 'who': e['who'], 'name': e['who'].title(), 't': e['t'], 'dur': e['dur'], 'text': e['text'], 'by': 'kai' if j == 0 and beat == 'losing' else 'claude'}
               for j, e in enumerate(e for e in events if 'who' in e and starts[i] <= e['t'] < starts[i] + d)]
         beats.append({'id': beat, 'title': TITLES[beat], 'start': starts[i], 'dur': d, 'see': SEE[beat], 'lines': bl})
-    beats.append({'id': 'end', 'title': 'End card', 'start': PIC, 'dur': END, 'see': 'Black, the BadCode logo fades up.', 'lines': []})
     edl = {'sequence': 'shorts-1-priority-lane-r3', 'title': 'Priority Lane Timeline',
            'heading': 'BadCode Shorts ▲ Priority Lane, round 3 rough cut',
            'intro': ('The ER-drama version: the four picked shots, the picked voices (Kore, Algieba, Alnilam, minister Charon), '
                      f'a Suno score ({SCORE}) and Suno sound effects. Note anything: a beat, a shot, a line, a sound, or a single frame.'),
            'fps': FPS, 'total': TOTAL, 'beats': beats,
-           'video': [{'file': str(VID / s[1]), 'in': s[2], 'start': starts[i], 'dur': s[3], 'beat': s[0], 'source': str(VID / s[1]), 'looped': False}
-                     for i, s in enumerate(SHOTS)] + [{'file': str(end), 'in': 0, 'start': PIC, 'dur': END, 'beat': 'end', 'source': str(LOGO), 'looped': False}],
+           # The flatline shot carries its push-in and the logo baked in (v3-flatline.mp4), so Premiere gets the finished shot.
+           'video': [{'file': str(CUT / f'v{i}-{s[0]}.mp4') if s[0] == 'flatline' else str(VID / s[1]), 'in': 0.0 if s[0] == 'flatline' else s[2],
+                      'start': starts[i], 'dur': s[3], 'beat': s[0], 'source': str(VID / s[1]), 'looped': False}
+                     for i, s in enumerate(SHOTS)],
            'audio': audio,
            'events': [{k: v for k, v in e.items() if k not in ('who', 'text')} for e in events],
            'flags': [f'Runs {TOTAL:.1f} s (14 s was the brief): the three shouted lines need ~6 s even overlapping.',
