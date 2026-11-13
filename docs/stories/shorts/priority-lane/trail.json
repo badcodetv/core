@@ -128,5 +128,25 @@
   "decided": [
    "Jack: 1b (no notes)"
   ]
+ },
+ {
+  "at": "2026-11-13T15:01:39+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "round 3 votes and notes read",
+  "decided": [
+   "Jack: HD3-b This; NOW-MIN1-b This (keep the round 1 minister); LS3-b and FL3-a Maybe: 'match the consistency of the van and setting with the other clips, but use this camera angle, the back of the image should be facing the driver's seat so we can see out the window'"
+  ],
+  "feedback": "feedback/moodboard-r3",
+  "feedback_docs": 6
+ },
+ {
+  "at": "2026-11-13T15:01:39+00:00",
+  "stage": "moodboard",
+  "round": 4,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "round 4: LS4 and FL4, the LS3-b and FL3-a angles remade in one van (references: LS3-b + HD3-b, then FL3-a + LS4-a)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane design/2026-11-13-shorts-priority-lane-r3-moodboard.html"
  }
 ]

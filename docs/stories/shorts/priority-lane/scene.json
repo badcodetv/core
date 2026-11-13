@@ -4,7 +4,7 @@
   "prefix": "pl",
   "title": "Priority Lane",
   "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
-  "moodboard_intro": "Round 3 (Kai's notes, 2026-11-13): no reporter; ER drama in the ambulance, held at the lights, the minister crosses, flatline. Dashed cards are the round 1 shots we could keep. Tap This, Maybe or No; leave a note per beat.",
+  "moodboard_intro": "Round 4: Jack's notes on round 3. The LS3-b and FL3-a angles, remade so the van matches (facing the cab, out through the windscreen). Picks so far are in the strip. Tap This on one per beat.",
   "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
   "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
   "beats": [
@@ -124,5 +124,16 @@
     "options": "design/2026-11-10-shorts-dialogue-priority-lane/options.json",
     "picked": "1D",
     "round": 1
-  }
+  },
+  "picked": [
+    [
+      "HD3-b",
+      "B. Held: Jack, This"
+    ],
+    [
+      "NOW-MIN1-b",
+      "C. The motorcade: round 1 minister kept (Jack, This)"
+    ]
+  ],
+  "board_round": 4
 }

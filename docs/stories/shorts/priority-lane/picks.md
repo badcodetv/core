@@ -25,3 +25,9 @@
 - **Mood board round 3** https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V: 12 clean-room stills (LS3, HD3, WS3, FL3 a/b/c), sealed writers, run verbatim. The reference was described, not attached: `flow_generate_image` has no reference input, and the only route that takes one (`flow_edit_image`) is the edit path we avoid. fresh.py flagged each prompt as identical to its own clean-room file (expected) and the shared brief wording ("plain dark-green uniform", "UK ambulance"); kept verbatim, as the clean room requires.
 - **Seen on the stills:** the paramedics' uniforms carry a crest badge and, on LS3-a/LS3-b, a small "UK" tab despite "no badges"; fix on the picked one. The minister in WS3-a/b/c is a new face, not round 1's MIN1-b; if WS3 is picked, the minister clip must match it (or we re-pick).
 - **Dialogue picked (Jack, 2026-11-13): 1B The countdown**, no notes. In `script.json` (round 1's in `script-r1.json`).
+
+## 2026-11-13: round 3 votes read, round 4 made
+
+- **B. Held: HD3-b** (Jack, This). **C. The motorcade: the round 1 minister NOW-MIN1-b** (Jack, This), so the existing clip `pl-04-MIN1-b` and its lip-sync stay; the windscreen shots are out.
+- **A. Losing him: LS3-b** Maybe, and **D. Flatline: FL3-a** Maybe. Jack: "we need to match the consistancy of the van and setting with the other clips, but use this camera angle, the back of the image should be facing the drivers seat so we can see out the window."
+- **Round 4** (same board, same link): remade with `flow_edit_image` using references. The prompts are mine, short reference-fix prompts and not clean-room ones. LS4 = LS3-b for the angle + HD3-b for the cab and windscreen; **LS4-a** has no badge and is the van anchor (LS4-b still has the crest). FL4 = FL3-a for the angle + LS4-a for the van; **FL4-a** reads best (flat line, open hatch, red light through the windscreen).
