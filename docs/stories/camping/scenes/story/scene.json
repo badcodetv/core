@@ -1,0 +1,30 @@
+{
+  "story": "camping",
+  "scene": "story",
+  "prefix": "st",
+  "title": "Camping Story",
+  "heading": "Camping Story: the narrated film",
+  "media": "/mnt/d/badcode-videos/camping-story/timeline",
+  "premiere_project": "/mnt/d/badcode-videos/camping-story/Camping Video NEW!/camping jack/camping jack.prproj",
+  "source_sequence": "0 synced",
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/camping-story/timeline/cut-0-synced/edl.json",
+    "preview": "/mnt/d/badcode-videos/camping-story/timeline/cut-0-synced/preview.mp4",
+    "script": "python3 scripts/scene/premiere-to-edl.py \"<project dir>/.bridge/state-<sequence>.json\" /mnt/d/badcode-videos/camping-story/timeline/cut-<name>/edl.json --title \"Camping Story Timeline\" --render <render.mp4> --stem A1=sfx-clip-sound --stem A3=vox-voices --stem A4=mus-score  (then point cut.edl/cut.preview at cut-<name>)"
+  },
+  "premiere": {
+    "current": "synced",
+    "synced": {
+      "sequence": "0 synced",
+      "guid": "2e025187-512d-4033-9d45-5c257bd21195",
+      "built": "2026-09-17",
+      "project": "/mnt/d/badcode-videos/camping-story/Camping Video NEW!/camping jack/camping jack.prproj",
+      "edl": "/mnt/d/badcode-videos/camping-story/timeline/cut-0-synced/edl.json",
+      "what": "Jack's cut with the nine-cue score (markers = cues); confirmed the latest by Kai 2026-11-13. Brought onto a timeline page that day (page round 0)",
+      "how": "hand-cut in Premiere; page from premiere-to-edl.py with the 17 Sep render 'Camping story video.mp4'"
+    }
+  },
+  "boards": {
+    "timeline": "https://claude.ai/artifact/4Haz6YZqwWsCAJSMv5dyAE"
+  }
+}

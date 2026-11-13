@@ -1,0 +1,39 @@
+{
+  "story": "bank-robbery",
+  "scene": "story",
+  "prefix": "st",
+  "title": "Bank Robbery Story",
+  "heading": "Bank Robbery Story: the film",
+  "media": "/mnt/d/badcode-videos/bank-robbery-story/timeline",
+  "premiere_project": "/mnt/d/badcode-videos/bank-robbery-story/bank robbery.prproj",
+  "source_sequence": "bank robbery short - cut 7g",
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/bank-robbery-story/timeline/cut-short-7g/edl.json",
+    "preview": "/mnt/d/badcode-videos/bank-robbery-story/timeline/cut-short-7g/preview.mp4",
+    "script": "python3 scripts/scene/premiere-to-edl.py \"/mnt/d/badcode-videos/bank-robbery-story/.bridge/state-<sequence>.json\" /mnt/d/badcode-videos/bank-robbery-story/timeline/cut-<name>/edl.json --title \"Bank Robbery Story Timeline\" --render <render.mp4> --stem A1=sfx-clip-sound --stem A2=vox-narration --stem A3=vox-dialogue --stem A4=mus-score-a --stem A5=mus-score-b --stem A6=sfx-press --stem A7=sfx-crowd --stem A8=mus-vault --stem A9=sfx-overlay-clips --beats-from A4,A5  (then point cut.edl/cut.preview at cut-<name>)"
+  },
+  "premiere": {
+    "current": "short7g",
+    "cut10": {
+      "sequence": "bank robbery - cut 10",
+      "guid": "33a5ae6b-10f2-45e0-b9e6-2d7eeb4a227e",
+      "built": "2026-10-12",
+      "project": "/mnt/d/badcode-videos/bank-robbery-story/bank robbery.prproj",
+      "edl": "/mnt/d/badcode-videos/bank-robbery-story/timeline/cut-10/edl.json",
+      "what": "cut 10 (assembly.md), the latest film cut; brought onto a timeline page 2026-11-13 (page round 0). The 15 Oct call's notes are still owed (assembly.md, last section)",
+      "how": "scripts/bank-robbery/make-shout-cut10.sh; page from premiere-to-edl.py with Premiere render 'bank robbery - cut 10-r0.mp4'",
+      "stale": "not the cut Kai means: the page showed it for a few minutes on 2026-11-13, then Kai: the right one is the short (cut 7g)"
+    },
+    "short7g": {
+      "sequence": "bank robbery short - cut 7g",
+      "guid": "1b9f196c-3bce-412b-b62a-e77a785481cc",
+      "project": "/mnt/d/badcode-videos/bank-robbery-story/bank robbery.prproj",
+      "edl": "/mnt/d/badcode-videos/bank-robbery-story/timeline/cut-short-7g/edl.json",
+      "what": "the short (2:28), the one Kai had open in Premiere and called 'literally perfect' 2026-11-13; page round 0",
+      "how": "page from premiere-to-edl.py with Premiere render 'bank robbery short - cut 7g-r0.mp4'"
+    }
+  },
+  "boards": {
+    "timeline": "https://claude.ai/artifact/BpUmNFWqt3H1BHf535oRb7"
+  }
+}

@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-13T18:00:46+00:00",
+  "stage": "timeline",
+  "round": 0,
+  "url": "https://claude.ai/artifact/BpUmNFWqt3H1BHf535oRb7",
+  "what": "Bank Robbery Story on a timeline page: 'bank robbery short - cut 7g' (2:28), the one Kai had open and called perfect; 5 beats from the music cues, 57 shots, 9 sound tracks. (Built from cut 10 first by mistake, replaced on the same link.)",
+  "rebuild": "see scene.json cut.script, with the 7g state and render 'bank robbery short - cut 7g-r0.mp4'; then python3 scripts/scene/build-timeline.py docs/stories/bank-robbery/scenes/story /mnt/d/badcode-videos/bank-robbery-story/timeline/page"
+ }
+]
