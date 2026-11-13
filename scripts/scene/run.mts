@@ -232,6 +232,13 @@ async function collect(baseline: Set<string>, keys: string[]) {
       say({ event: 'vanished', missing: want - tiles.length, why: `all ${tiles.length} tiles done and nothing changed for ${STALL_MS / 1000} s: the rest were refused` })
       break
     }
+    // Jack, 2026-11-13: a refused try can leave a ghost tile that sits at a percentage forever, so fresh > want and the
+    // loop waited out all of RENDER_MS (12 min) with both real clips finished. Once as many tiles are done as jobs
+    // were sent and nothing has changed for STALL_MS, the leftover is a ghost: stop and collect.
+    if (done.length >= want && tiles.length > want && Date.now() - changed > STALL_MS) {
+      say({ event: 'ghost', extra: tiles.length - done.length, why: `${done.length} of ${want} sent are done; ${tiles.length - done.length} leftover tile(s) unchanged for ${STALL_MS / 1000} s` })
+      break
+    }
     await sleep(15_000)
   }
   await hardReload()
