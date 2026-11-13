@@ -1,0 +1,13 @@
+{
+  "name": "analog-synth-chase",
+  "style": "1983 analog synthesizer thriller cue, film-score sound design with shouted spoken dialogue, no singing. 150 BPM driving sixteenth-note bass sequence from a monophonic analog synth, low resonance, slightly detuned and unquantised; huge gated-reverb snare cracking on 2 and 4; dark brooding polysynth pads underneath, tape echo; an ambulance siren voiced as a detuned two-tone synth wail sliding over the top. Three panicked voices shout their lines in a British accent over the cue: a rough, smoky young woman screaming; a man speaking low, clipped and fast, then cracking; a driver yelling hoarse and high. Abrupt cut at the red light: the sequence stops dead on one sustained bass note, its filter closing slowly to a dull hum, no drums. A snooty posh male voice heard through a thin, tinny 1980s car phone, petulant. Ending: a single pure electronic sine flatline tone alone, every instrument gone, then dead silence. Dry, close, urgent, midnight rain.",
+  "exclude": "singing, melody, chorus, rap, choir, upbeat, happy, funk, comedy, synthwave vocals, autotune, guitar solo, fade-out",
+  "lyrics": "[Intro: racing synth bass sequence, gated snare, siren wail]\n\n[Shouted, female, screaming]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Spoken fast, male, low and tight]\nSats dropping, he's peri-arrest!\n\n[Shouted, male driver, hoarse]\nTwo minutes out! Get the fuck out of the way!\n\n[Break: sequence freezes on one held bass note, filter closing, drums stop]\n\n[Spoken, male, cracking]\nWhy have we stopped?!\n\n[Spoken, posh man through a tinny car phone]\nI said raspberry-shaped hors d'oeuvres!\n\n[Whispered, female, quiet]\nFifty over twen—\n\n[Outro: solo flatline sine tone, no music]\n\n[Silence]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true
+}

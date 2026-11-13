@@ -1,0 +1,80 @@
+[
+  {
+    "name": "casualty-string-pulse",
+    "style": "British TV hospital-drama underscore, tense cinematic cue under spoken shouted dialogue, no singing; three distinct talkers: hoarse low-pitched woman in her forties, thin fast young man, booming bass older man; driving spiccato cellos and double basses racing at 150 bpm, heartbeat kick drum, wailing emergency siren, heavy rain; strings cut out hard to a ticking clock and rain; muffled plummy elderly man behind car glass; flat sine monitor beep, then dead silence; dry voice-forward mix",
+    "exclude": "sung vocals, melody, chorus, choir, pop, comedy, cheerful, major key, piano, autotune, rap, reverb tail",
+    "lyrics": "[Intro: siren wail, rain, low strings racing on a heartbeat]\n\n[Woman, hoarse, shouting]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Young man, fast, clipped]\nSats dropping, he's peri-arrest!\n\n[Older man, bellowing bass]\nTwo minutes out! Get the fuck out of the way!\n\n[Strings stop dead. Ticking clock and rain only]\n\n[Young man, panicked]\nWhy have we stopped?!\n\n[Posh old man, muffled behind car glass]\nI said raspberry-shaped hors d'oeuvres!\n\n[Woman, quiet]\nFifty over twen—\n\n[One long flat monitor tone, nothing under it]\n\n[Silence]\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": true
+  },
+  {
+    "name": "fly-on-the-wall-cab",
+    "style": "observational documentary field recording, real ambulance crew at night, spoken dialogue only, dry close-miked voices, ragged breath between words, British paramedics, understated not acted, minimal electronic underscore: low sub-bass hum, patient monitor beeps as the pulse, siren far off sliding past outside, rain on metal roof, tension without melody, voices sit on top, ends on a single sine tone then dead silence",
+    "exclude": "singing, choir, chorus, melody, hook, orchestral, strings, epic trailer, cinematic hits, drums, comedic, upbeat, reverb-heavy vocals, rap",
+    "lyrics": "[Spoken, no singing. Inside the cab, rain, monitor beeping under sub-bass hum, siren far off outside]\n[Woman paramedic, low and steady, starting to crack]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Man paramedic, quiet, quick]\nSats dropping, he's peri-arrest!\n[Driver, off-mic from the front seat]\nTwo minutes out! Get the fuck out of the way!\n[Siren cuts, engine idles, beeps keep going]\n[Man paramedic, suddenly loud]\nWhy have we stopped?!\n[Through a car window, posh, bored, nasal]\nI said raspberry-shaped hors d'oeuvres!\n[Woman paramedic, almost a whisper]\nFifty over twen—\n[Music stops. Flatline: one pure sine tone]\n[Silence]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": true
+  },
+  {
+    "name": "stab-and-silence",
+    "style": "voices talk and yell, never sing; radio drama, no accompaniment, no tempo, no tune; every outburst is punctuated by a lone string hit and then a hole of quiet; a sforzando violin stab, a Bartok snap pizzicato, col legno wood-on-string crack, a cello falling glissando; siren howl and pounding heartbeat thud as foley between lines, not instruments; cast: hoarse young female medic shrieking until her voice breaks, shrill frightened tenor medic, gravel-voiced older driver bawling; a doddering upper-crust English toff sulking through a car window, met by one sour high harmonic; finishes on an unbroken flatline beep and dead quiet; dry, intimate, cramped, BBC casualty-ward realism",
+    "exclude": "singing, sung vocals, melody, hook, chorus, rap, beat, drums, groove, bass, pad, sustained strings, piano, choir, cheerful, comedic, upbeat, major key, trailer swell, rhyme, music after the flatline",
+    "lyrics": "[Spoken word]\n[Siren howling, rain hammering]\n\n[Woman, shrieking, hoarse, voice breaking]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Sforzando violin stab. Quiet.]\n\n[Tenor medic, frightened, shrill]\nSats dropping, he's peri-arrest!\n[Snap pizzicato. Heartbeat thudding.]\n\n[Driver, gravel voice, bawling]\nTwo minutes out! Get the fuck out of the way!\n[Col legno crack. Brakes. Siren dies.]\n\n[Tenor medic, disbelief]\nWhy have we stopped?!\n[Cello falls away, low]\n\n[Elderly toff, sulking, muffled through glass]\nI said raspberry-shaped hors d'oeuvres!\n[One sour harmonic]\n\n[Woman, whisper, spent]\nFifty over twen—\n[Flatline beep]\n[Dead quiet]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": false
+  },
+  {
+    "name": "heartbeat-drums",
+    "style": "Cinematic percussion-only cue, 150 bpm racing irregular heartbeat played as lub-dub double strikes on huge taiko and floor toms with a dry close-miked drum kit, rim clicks on the off-beats, beats skipping and stumbling, then dragging slower and slower until one last faint thud and a dead stop. Spoken voices barked in time with the drum hits, breathless and desperate: a husky alto woman, a tight nasal baritone man, a hoarse high-pitched shouting man at the wheel. A low detuned siren smeared into a droning hum beneath the toms. A fruity theatrical posh tenor heard muffled through glass, underwater and distant. Monitor beeps, ragged breaths, rain hiss. Ends on one flat sine monitor tone, then silence. ER trauma-bay urgency, no melody, no chords.",
+    "exclude": "melody, chords, piano, strings, synth pad, guitar, bass line, singing, choir, harmony, uk drill, rap flow, trap hi-hats, cheerful, comedy, upbeat, fade out",
+    "lyrics": "[Intro: frantic irregular heartbeat on taiko toms, low siren hum]\n[Spoken, shouted on the beat, husky alto woman]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Spoken, clipped, tight nasal baritone man]\nSats dropping, he's peri-arrest!\n[Shouted, hoarse high-pitched driver]\nTwo minutes out! Get the fuck out of the way!\n[Heartbeat stumbles, skips, slows]\n[Spoken, baritone man]\nWhy have we stopped?!\n[Muffled, underwater, far away, posh tenor]\nI said raspberry-shaped hors d'oeuvres!\n[Heartbeat almost gone, one faint tom]\n[Spoken, quiet, alto woman]\nFifty over twen—\n[Flatline tone]\n[Silence]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": false
+  },
+  {
+    "name": "child-and-choir",
+    "style": "requiem-dark hospital emergency underscore, fourteen seconds, dialogue scene not a song: a bass choir of men holding one closed-mouth note like a cathedral at midnight, pipe organ sixteen-foot pedal tone shaking the floor, an ambulance siren whooping and climbing with the choir, downpour hammering a van roof; every line is yelled and talked, no melody on the words, the people sit on top of the music; at the stop the choir cuts and a single choirboy, small, timid and alone, sings three falling notes with no words, again and again, while a cold patrician gentleman grumbles faintly through a sealed window; then nothing but one flat monitor beep held long, then total silence",
+    "exclude": "upbeat, cheerful, comedic, pop, rap, hip-hop, drums, beat, rhyme, chorus hook, anthem, sung words, melodic yelling, female choir, trailer braams, reverb tail, fade-out, outro",
+    "lyrics": "[Intro: bass choir hum, organ pedal, siren climbing, heavy rain]\n[Spoken Word, screaming, gravel-voiced woman in her fifties]\n(Sixty over thirty! Fucking hurry up, we're gonna lose him!)\n[Spoken Word, panting young man, voice breaking]\n(Sats dropping, he's peri-arrest!)\n[Yelled, enraged driver, mouth wide open]\n(TWO MINUTES OUT! GET THE FUCK OUT OF THE WAY!)\n\n[Break: siren cuts, choir cuts, lone choirboy, three falling notes, no words, repeating]\n[Spoken Word, young man, lost and frightened]\n(Why have we stopped?!)\n[Spoken Word, faint, icy upper-class gent, through a closed car window]\n(I said raspberry-shaped hors d'oeuvres!)\n\n[Outro: all music gone, woman barely audible]\n(Fifty over twen—)\n[Single flat heart monitor tone]\n[Silence]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": true
+  },
+  {
+    "name": "analog-synth-chase",
+    "style": "1981 neon-noir chase cue in the Tangerine Dream / Thief school, analogue hardware only, dialogue shouted and talked over it, nobody sings. Sequencer bass racing in sixteenths at 150 BPM, a little ragged against the grid; huge gated-reverb snare cracking on two and four; icy minor-key polysynth pads underneath; the ambulance siren faked by two detuned oscillators sweeping up and down. Rain drumming the van roof, close mics, panic. Voices: a rough young woman with a smoker's rasp screaming the numbers; a man talking low, quick and clipped until his nerve snaps; a driver whose yell is thin, strained and cracking high. Red light: the sequencer locks onto one sustained bass pitch and a resonant low-pass sweeps it closed, drums gone. A plummy, petulant man whines down a tinny 1980s car telephone. Final beat: a pure flat oscillator tone, the score cut dead beneath it, then dead air.",
+    "exclude": "singing, sung melody, chorus, rap, choir, upbeat, happy, funk, comedy, synthwave vocals, autotune, guitar solo, fade-out, music under the tone",
+    "lyrics": "[Intro: sixteenth-note sequencer bass, gated snare, oscillator siren]\n\n[Spoken, female, rasping scream]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Spoken, male, low and clipped]\nSats dropping, he's peri-arrest!\n\n[Spoken, male driver, cracking high yell]\nTwo minutes out! Get the fuck out of the way!\n\n[Break: sequencer frozen to one bass pitch, filter closing, drums out]\n\n[Spoken, male, nerve snapping]\nWhy have we stopped?!\n\n[Spoken, posh man, tinny car telephone]\nI said raspberry-shaped hors d'oeuvres!\n\n[Spoken, female, whisper]\nFifty over twen—\n\n[Outro: flat oscillator tone alone]\n\n[Silence]\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": true
+  }
+]

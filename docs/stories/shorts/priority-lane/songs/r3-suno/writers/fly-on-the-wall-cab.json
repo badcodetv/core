@@ -1,0 +1,13 @@
+{
+  "name": "fly-on-the-wall-cab",
+  "style": "observational documentary field recording, real ambulance crew at night, spoken dialogue only, dry close-miked voices, ragged breath between words, British paramedics, understated not acted, minimal electronic underscore: low sub-bass hum, patient monitor beeps as the pulse, siren far off sliding past outside, rain on metal roof, tension without melody, voices sit on top, ends on a single sine tone then dead silence",
+  "exclude": "singing, choir, chorus, melody, hook, orchestral, strings, epic trailer, cinematic hits, drums, comedic, upbeat, reverb-heavy vocals, rap",
+  "lyrics": "[Spoken, no singing. Inside the cab, rain, monitor beeping under sub-bass hum, siren far off outside]\n[Woman paramedic, low and steady, starting to crack]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Man paramedic, quiet, quick]\nSats dropping, he's peri-arrest!\n[Driver, off-mic from the front seat]\nTwo minutes out! Get the fuck out of the way!\n[Siren cuts, engine idles, beeps keep going]\n[Man paramedic, suddenly loud]\nWhy have we stopped?!\n[Through a car window, posh, bored, nasal]\nI said raspberry-shaped hors d'oeuvres!\n[Woman paramedic, almost a whisper]\nFifty over twen—\n[Music stops. Flatline: one pure sine tone]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true
+}

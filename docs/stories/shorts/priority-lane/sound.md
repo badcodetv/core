@@ -23,3 +23,15 @@ Jack: "lets do suno for it all, but add background music as well that fits the s
 - **The minister:** "I said raspberry-shaped hors d'oeuvres!" keeps Orus (above) unless a Suno take is better.
 - **Status:** EXPLORING. The score's sound is found with the `variations` skill (separate writers, run verbatim), so it
   is not written here yet.
+
+## Rules for this story
+
+- **Round 3 (2026-11-13): Suno makes all of the audio:** the crew's shouts in speech mode, the siren, the monitor and the flatline tone, and background music that fits the scene (Jack). The minister's line can be Suno's or Orus.
+- **The whole track is about 14 s:** a dying man in an ambulance (0–5 s), held at a red light (5–7 s), the minister's car crossing (7–11 s), then the flatline, silence, and the logo on black (11–14 s). The picture is cut to the track.
+- Swearing is said in full, never bleeped. If Suno refuses a word, swap the word.
+- No speech in any Flow clip.
+
+## Never
+
+- A cheerful or comedic score: it must feel like real hospital-drama urgency.
+- Music over the flatline: it ends in the tone and then silence.

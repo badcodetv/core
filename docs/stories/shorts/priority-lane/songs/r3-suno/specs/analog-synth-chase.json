@@ -1,0 +1,17 @@
+{
+  "style": "1981 neon-noir chase cue in the Tangerine Dream / Thief school, analogue hardware only, dialogue shouted and talked over it, nobody sings. Sequencer bass racing in sixteenths at 150 BPM, a little ragged against the grid; huge gated-reverb snare cracking on two and four; icy minor-key polysynth pads underneath; the ambulance siren faked by two detuned oscillators sweeping up and down. Rain drumming the van roof, close mics, panic. Voices: a rough young woman with a smoker's rasp screaming the numbers; a man talking low, quick and clipped until his nerve snaps; a driver whose yell is thin, strained and cracking high. Red light: the sequencer locks onto one sustained bass pitch and a resonant low-pass sweeps it closed, drums gone. A plummy, petulant man whines down a tinny 1980s car telephone. Final beat: a pure flat oscillator tone, the score cut dead beneath it, then dead air.",
+  "exclude": "singing, sung melody, chorus, rap, choir, upbeat, happy, funk, comedy, synthwave vocals, autotune, guitar solo, fade-out, music under the tone",
+  "lyrics": "[Intro: sixteenth-note sequencer bass, gated snare, oscillator siren]\n\n[Spoken, female, rasping scream]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Spoken, male, low and clipped]\nSats dropping, he's peri-arrest!\n\n[Spoken, male driver, cracking high yell]\nTwo minutes out! Get the fuck out of the way!\n\n[Break: sequencer frozen to one bass pitch, filter closing, drums out]\n\n[Spoken, male, nerve snapping]\nWhy have we stopped?!\n\n[Spoken, posh man, tinny car telephone]\nI said raspberry-shaped hors d'oeuvres!\n\n[Spoken, female, whisper]\nFifty over twen—\n\n[Outro: flat oscillator tone alone]\n\n[Silence]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    45
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true,
+  "title": "PL r3-analog-synth-chase",
+  "mode": "custom",
+  "workspace": "short-priority-lane"
+}

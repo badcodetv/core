@@ -1,0 +1,13 @@
+{
+  "name": "analog-synth-chase",
+  "style": "Mid-80s electronic action-thriller underscore, pre-MIDI hardware rig, voices talked and yelled over the cue, never sung. Fast 16th-note monosynth bassline pulsing at 150 BPM, slightly loose against the clock; booming gated snare with a short reverb tail on the backbeat; cold minor polysynth chords swelling beneath; a siren imitated by a detuned oscillator whooping up and down. British crew in the back of an ambulance: a hoarse, smoker-rasped girl in her twenties howling her numbers; a man reporting fast, flat and controlled until his voice splits; a driver straining and cracking up high. At the stop one struck cast-iron clank, then the pulse hangs on a single bass tone while a low-pass filter shuts it down to a murmur, percussion out. An upper-class man complains down a crackly, band-limited carphone, whining and entitled. Finale: one unwavering pure sine beep with nothing beneath it, then total quiet. Close-miked, frantic, rain on the roof.",
+  "exclude": "singing, sung melody, chorus, rap, choir, upbeat, happy, funk, comedy, synthwave vocals, autotune, guitar solo, fade-out, music under the tone",
+  "lyrics": "[Intro: monosynth 16ths racing, gated snare, oscillator siren]\n\n[Female, hoarse howl]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Male, quick flat report]\nSats dropping, he's peri-arrest!\n\n[Male driver, high strained yell]\nTwo minutes out! Get the fuck out of the way!\n\n[Break: metal clank, pulse hangs on one bass tone, filter shutting, no drums]\n\n[Male, voice splitting]\nWhy have we stopped?!\n\n[Posh man, crackly carphone]\nI said raspberry-shaped hors d'oeuvres!\n\n[Female, barely audible]\nFifty over twen—\n\n[Outro: lone sine beep, nothing else]\n\n[Silence]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true
+}

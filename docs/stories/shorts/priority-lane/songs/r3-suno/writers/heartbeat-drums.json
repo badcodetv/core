@@ -1,0 +1,13 @@
+{
+  "name": "heartbeat-drums",
+  "style": "Cinematic percussion-only cue, 150 bpm racing irregular heartbeat played as lub-dub double strikes on huge taiko and floor toms with a dry close-miked drum kit, rim clicks on the off-beats, beats skipping and stumbling, then dragging slower and slower until one last faint thud and a dead stop. Spoken voices barked in time with the drum hits, breathless and desperate: a husky alto woman, a tight nasal baritone man, a hoarse high-pitched shouting man at the wheel. A low detuned siren smeared into a droning hum beneath the toms. A fruity theatrical posh tenor heard muffled through glass, underwater and distant. Monitor beeps, ragged breaths, rain hiss. Ends on one flat sine monitor tone, then silence. ER trauma-bay urgency, no melody, no chords.",
+  "exclude": "melody, chords, piano, strings, synth pad, guitar, bass line, singing, choir, harmony, uk drill, rap flow, trap hi-hats, cheerful, comedy, upbeat, fade out",
+  "lyrics": "[Intro: frantic irregular heartbeat on taiko toms, low siren hum]\n[Spoken, shouted on the beat, husky alto woman]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Spoken, clipped, tight nasal baritone man]\nSats dropping, he's peri-arrest!\n[Shouted, hoarse high-pitched driver]\nTwo minutes out! Get the fuck out of the way!\n[Heartbeat stumbles, skips, slows]\n[Spoken, baritone man]\nWhy have we stopped?!\n[Muffled, underwater, far away, posh tenor]\nI said raspberry-shaped hors d'oeuvres!\n[Heartbeat almost gone, one faint tom]\n[Spoken, quiet, alto woman]\nFifty over twen—\n[Flatline tone]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 55,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false
+}

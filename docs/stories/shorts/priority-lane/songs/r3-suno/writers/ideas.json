@@ -1,0 +1,26 @@
+[
+  {
+    "name": "casualty-string-pulse",
+    "idea": "Three clearly different performers: a hoarse, low-voiced woman in her forties who has done this a thousand times and is losing her cool, a young thin-voiced male medic speaking fast and clipped, and a big bellowing bass-voiced older driver. Under them, a British TV medical-drama underscore built from the bottom up: driving spiccato low strings and double basses on a racing pulse, a heartbeat kick and a wailing alarm siren. At the red light the pulse stops dead and only a ticking clock-like percussion and rain remain while the minister, a plummy older man, sounds muffled as if through car glass. Then one long flat monitor tone, nothing under it, and silence to the end. Music is asked for as a genre and an instrument list in the style box, never as a melody."
+  },
+  {
+    "name": "fly-on-the-wall-cab",
+    "idea": "Played as if real audio recorded inside an ambulance cab for a documentary, not a drama: the voices are dry, close and breathless, one at a time, professionals talking under their breath rather than actors: a level-voiced woman paramedic whose calm is visibly cracking, a softly-spoken man who gets louder only at 'Why have we stopped', and a driver heard slightly off-mic from the front seat. The background music is minimal electronic: a deep sub-bass drone and the medical bleeps of monitors used as rhythm, restrained so every word is clear. The siren is distant and Doppler-shifting outside. The minister is a smug, bored, faintly nasal voice through a car window. Ask for spoken delivery throughout, no sung chorus, then a pure sine flatline and dead air."
+  },
+  {
+    "name": "stab-and-silence",
+    "idea": "Kai's own recipe taken literally: no music bed at all, only punctuation. Each shouted line is followed by one sharp orchestral jab and a gap: a sforzando violin stab after the first line, a Bartók snap pizzicato after the second, a col legno crack after the driver, a low cello slide down after 'Why have we stopped?!'. The voices are a screaming, cracked-voiced young woman, a panicking high tenor man, and a gravel-throated driver roaring; the minister is an elderly aristocratic drawl, petulant, met by a single thin, sour string harmonic. The siren and heartbeat are sound effects in the gaps, not music. It ends on the flatline tone and silence."
+  },
+  {
+    "name": "heartbeat-drums",
+    "idea": "The whole score is a drum kit and big taiko-style toms playing the dying man's heartbeat: fast, irregular and frantic in the first five seconds, stumbling and slowing at the red light, nearly gone while the minister crosses, then stopping into the flatline. The voices are performers half-chanting their lines on that beat like a drill: a husky alto woman, a tight nasal baritone man, and a hoarse high-pitched shouting driver. The siren is pitched low and smeared like a drone under the drums. The minister is a fruity, theatrical, posh tenor sounding underwater and far away. No melody, no chords, only percussion, breath and the tone."
+  },
+  {
+    "name": "child-and-choir",
+    "idea": "The crew shout over a dark sacred bed: a low male choir humming a wordless drone and a church organ pedal note, swelling with the siren. At the red light the choir drops out and a lone boy treble, small and meek, sings a short wordless descending three-note pattern of foreboding, repeated, while the minister (a clipped, cold, upper-class man, quiet and muffled) complains over it. The paramedics are a raw, raspy older woman and a young breathless man with a crack in his voice; the driver is a furious, wide-mouthed shouting man. Everything cuts at the flatline: the tone alone, then silence."
+  },
+  {
+    "name": "analog-synth-chase",
+    "idea": "An 1980s analog-synth thriller score: a racing sixteenth-note bass arpeggio, gated snare, dark pads, the siren played as a detuned synth wail. The crew are a young, rough, smoke-voiced woman screaming, a man who speaks low, fast and controlled until he breaks, and a driver with a strained, cracking, high shout. At the red light the arpeggio freezes on one held, filtered note that slowly closes; the minister is heard through a tinny car-phone filter, haughty and whiny. The flatline is a single pure synth sine, with no music under it, then black silence."
+  }
+]

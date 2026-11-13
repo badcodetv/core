@@ -1,0 +1,13 @@
+{
+  "name": "stab-and-silence",
+  "style": "voices talk and yell, never sing; radio drama, no accompaniment, no tempo, no tune; every outburst is punctuated by a lone string hit and then a hole of quiet; a sforzando violin stab, a Bartok snap pizzicato, col legno wood-on-string crack, a cello falling glissando; siren howl and pounding heartbeat thud as foley between lines, not instruments; cast: hoarse young female medic shrieking until her voice breaks, shrill frightened tenor medic, gravel-voiced older driver bawling; a doddering upper-crust English toff sulking through a car window, met by one sour high harmonic; finishes on an unbroken flatline beep and dead quiet; dry, intimate, cramped, BBC casualty-ward realism",
+  "exclude": "singing, sung vocals, melody, hook, chorus, rap, beat, drums, groove, bass, pad, sustained strings, piano, choir, cheerful, comedic, upbeat, major key, trailer swell, rhyme, music after the flatline",
+  "lyrics": "[Spoken word]\n[Siren howling, rain hammering]\n\n[Woman, shrieking, hoarse, voice breaking]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Sforzando violin stab. Quiet.]\n\n[Tenor medic, frightened, shrill]\nSats dropping, he's peri-arrest!\n[Snap pizzicato. Heartbeat thudding.]\n\n[Driver, gravel voice, bawling]\nTwo minutes out! Get the fuck out of the way!\n[Col legno crack. Brakes. Siren dies.]\n\n[Tenor medic, disbelief]\nWhy have we stopped?!\n[Cello falls away, low]\n\n[Elderly toff, sulking, muffled through glass]\nI said raspberry-shaped hors d'oeuvres!\n[One sour harmonic]\n\n[Woman, whisper, spent]\nFifty over twen—\n[Flatline beep]\n[Dead quiet]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 55,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false
+}

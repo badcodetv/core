@@ -1,0 +1,13 @@
+{
+  "name": "casualty-string-pulse",
+  "style": "British TV hospital-drama underscore, tense cinematic cue under spoken shouted dialogue, no singing; three distinct talkers: hoarse low-pitched woman in her forties, thin fast young man, booming bass older man; driving spiccato cellos and double basses racing at 150 bpm, heartbeat kick drum, wailing emergency siren, heavy rain; strings cut out hard to a ticking clock and rain; muffled plummy elderly man behind car glass; flat sine monitor beep, then dead silence; dry voice-forward mix",
+  "exclude": "sung vocals, melody, chorus, choir, pop, comedy, cheerful, major key, piano, autotune, rap, reverb tail",
+  "lyrics": "[Intro: siren wail, rain, low strings racing on a heartbeat]\n\n[Woman, hoarse, shouting]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Young man, fast, clipped]\nSats dropping, he's peri-arrest!\n\n[Older man, bellowing bass]\nTwo minutes out! Get the fuck out of the way!\n\n[Strings stop dead. Ticking clock and rain only]\n\n[Young man, panicked]\nWhy have we stopped?!\n\n[Posh old man, muffled behind car glass]\nI said raspberry-shaped hors d'oeuvres!\n\n[Woman, quiet]\nFifty over twen—\n\n[One long flat monitor tone, nothing under it]\n\n[Silence]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true
+}

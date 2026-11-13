@@ -1,0 +1,13 @@
+{
+  "name": "stab-and-silence",
+  "style": "dry radio-play sound design, no music bed, no beat, no melody; shouted spoken dialogue only, each line answered by one isolated orchestral hit then dead air; solo violin sforzando stab, Bartok snap pizzicato, col legno crack of bow wood on strings, cello glissando sliding down into the floor; ambulance siren wailing and a racing heart monitor beep fill the gaps as sound effects; voices: a young woman screaming hoarse until her voice cracks, a panicked high-pitched male tenor, a gravel-throated older driver bellowing; then an elderly upper-class English aristocrat whining through glass, answered by one thin sour violin harmonic; ends on a continuous flat monitor tone, then total silence; close-miked, raw, claustrophobic, British TV hospital drama tension",
+  "exclude": "singing, sung melody, chorus, rap, drum beat, groove, bassline, synth pad, sustained strings, piano, cheerful, comedic, upbeat, major key, epic trailer swell, choir, fade-in music, music after the flatline",
+  "lyrics": "[Spoken, shouted, no melody]\n[Siren wailing, rain on the roof]\n\n[Young woman, screaming, voice cracking]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Violin stab, then silence]\n\n[Young man, panicked, high]\nSats dropping, he's peri-arrest!\n[Snap pizzicato, monitor beeping fast]\n\n[Driver, gravel voice, roaring]\nTwo minutes out! Get the fuck out of the way!\n[Col legno crack, brakes screech, siren cuts]\n\n[Young man, bewildered]\nWhy have we stopped?!\n[Low cello slides down]\n\n[Old aristocrat, posh, petulant, muffled behind glass]\nI said raspberry-shaped hors d'oeuvres!\n[Thin sour violin harmonic]\n\n[Young woman, quiet, exhausted]\nFifty over twen—\n[Flatline tone]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 60,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false
+}

@@ -1,0 +1,13 @@
+{
+  "name": "child-and-choir",
+  "style": "requiem-dark hospital emergency underscore, fourteen seconds, dialogue scene not a song: a bass choir of men holding one closed-mouth note like a cathedral at midnight, pipe organ sixteen-foot pedal tone shaking the floor, an ambulance siren whooping and climbing with the choir, downpour hammering a van roof; every line is yelled and talked, no melody on the words, the people sit on top of the music; at the stop the choir cuts and a single choirboy, small, timid and alone, sings three falling notes with no words, again and again, while a cold patrician gentleman grumbles faintly through a sealed window; then nothing but one flat monitor beep held long, then total silence",
+  "exclude": "upbeat, cheerful, comedic, pop, rap, hip-hop, drums, beat, rhyme, chorus hook, anthem, sung words, melodic yelling, female choir, trailer braams, reverb tail, fade-out, outro",
+  "lyrics": "[Intro: bass choir hum, organ pedal, siren climbing, heavy rain]\n[Spoken Word, screaming, gravel-voiced woman in her fifties]\n(Sixty over thirty! Fucking hurry up, we're gonna lose him!)\n[Spoken Word, panting young man, voice breaking]\n(Sats dropping, he's peri-arrest!)\n[Yelled, enraged driver, mouth wide open]\n(TWO MINUTES OUT! GET THE FUCK OUT OF THE WAY!)\n\n[Break: siren cuts, choir cuts, lone choirboy, three falling notes, no words, repeating]\n[Spoken Word, young man, lost and frightened]\n(Why have we stopped?!)\n[Spoken Word, faint, icy upper-class gent, through a closed car window]\n(I said raspberry-shaped hors d'oeuvres!)\n\n[Outro: all music gone, woman barely audible]\n(Fifty over twen—)\n[Single flat heart monitor tone]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true
+}

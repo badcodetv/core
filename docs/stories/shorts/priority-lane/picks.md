@@ -38,3 +38,17 @@
 - **B. Held: HD3-b** · **C. The motorcade: NOW-MIN1-b** (round 1 clip `pl-04-MIN1-b`, lip-synced) · **D. Flatline: FL4-a**.
 - The same paramedic isn't at the monitor in A and D (a woman in LS4-b, a man in FL4-a); Jack picked them as they are.
 - Next: storyboard + animation options (scene-animation), and the Suno track for dialogue 1B.
+
+## 2026-11-13: media folder tidied (Jack: "get rid of all the old stuff in the priority lane folder, and only keep the new stuff")
+
+Moved, not deleted (`tidy-media-folders` ruling):
+- Round 1–2 media went to `_old-r1-r2/`: `cut/`, `frames/`, `audio/casting`, the reporter, outside and ambulance clips, overlay cards 0–5, the round 1 stills, `moodboard/current/`.
+- Unpicked round 3–4 stills went to `moodboard/_unpicked/`.
+
+Left in view:
+- the four picks (`LS4-b-fix-a`, `HD3-b`, `MIN1-b`, `FL4-a`)
+- the minister clips (`pl-04-MIN1-b*.mp4`)
+- the logo lockup and `reference/jack-ambulance-interior.png`
+- `priority lane.prproj` (and `_1`); `audio/` is empty, ready for Jack's screen-recorded Suno take.
+
+🔴 The old `shorts-1-priority-lane-r2` sequence in `priority lane.prproj` now has offline media (it will ask to relink). Everything it used is in `_old-r1-r2/` if it's ever wanted again.

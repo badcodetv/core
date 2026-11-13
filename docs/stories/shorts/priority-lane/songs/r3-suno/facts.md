@@ -1,0 +1,16 @@
+- The track is the audio of a 14-second vertical short (BadCode Shorts, "Priority Lane"). The picture will be cut to this track afterwards.
+- What we see, in order:
+  - 0–5 s: inside a speeding ambulance at night in the rain, two masked paramedics fighting to save an old man, the driver shouting at the traffic.
+  - 5–7 s: a red light, and a police motorcycle outrider holds up his glove. The ambulance stops.
+  - 7–11 s: a politician's black car crosses slowly in front of it. He is on the phone, furious about canapés.
+  - 11–14 s: back inside, the heart monitor flatlines. Silence. Black. Logo.
+- Who says which line:
+  - Paramedic 1 (a woman): "Sixty over thirty! Fucking hurry up, we're gonna lose him!"
+  - Paramedic 2 (a man): "Sats dropping, he's peri-arrest!"
+  - The driver: "Two minutes out! Get the fuck out of the way!"
+  - Paramedic 2, at the red light: "Why have we stopped?!"
+  - The minister, posh, muffled through the glass: "I said raspberry-shaped hors d'oeuvres!"
+  - Paramedic 1, quiet: "Fifty over twen—", cut off by the flatline tone.
+- Kai, 2026-11-13 meeting, on the shorts' audio: "these shorts have a rhythm to them that misses the music … I don't mean a tune … sounds that massively increase the richness of the message … Give me this guy screaming this, followed by a quick jab on a violin, followed by a meek little child with a little pattern of foreboding music behind it, smashed it. That's what the shorts should be." Also: "suno has a speech mode as well now."
+- Kai on the ambulance: "I want casualty ER-level drama inside that ambulance … I want to feel that that guy's on death's door, and these heroes are trying desperately."
+- Length: Suno v6 obeys a set Duration to about a second; Auto runs long. The target is about 14 s.

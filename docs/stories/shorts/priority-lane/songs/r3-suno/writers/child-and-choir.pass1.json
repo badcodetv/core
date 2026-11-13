@@ -1,0 +1,13 @@
+{
+  "name": "child-and-choir",
+  "style": "fourteen-second sacred dread cue under shouted spoken dialogue, not a song: low male voices humming one wordless held note, church organ pedal drone in the cellar, a wailing two-tone ambulance siren rising with the hum, rain on metal; voices are shouted and spoken, never sung, voice-forward mix; at the halt the men fall silent and one small boy treble, thin and frightened, sings a wordless three-note falling figure, over and over, under a cold muffled aristocratic murmur; then everything gone, a single flat electronic monitor tone, then dead air",
+  "exclude": "upbeat, cheerful, comedy, pop, rap, hip-hop, drums, beat, rhyme, chorus hook, anthem, sung lyrics, melodic shouting, reverb wash on the ending, fade-out music, outro",
+  "lyrics": "[Spoken, screamed, raspy older woman, low hum and organ drone, siren]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Spoken, breathless young man, voice cracking]\nSats dropping, he's peri-arrest!\n[Shouted, furious man]\nTwo minutes out! Get the fuck out of the way!\n\n[Siren stops, hum stops, lone boy treble wordless falling three notes, repeating]\n[Spoken, young man, bewildered]\nWhy have we stopped?!\n[Spoken, posh cold man, muffled behind glass, quiet]\nI said raspberry-shaped hors d'oeuvres!\n\n[Music stops, spoken whisper, older woman]\nFifty over twen—\n[Flatline tone alone]\n[Silence]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 65,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true
+}
