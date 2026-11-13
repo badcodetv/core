@@ -183,5 +183,13 @@
   "url": "https://claude.ai/artifact/6xd6NLu5rKzecZR7kLzZ9V",
   "what": "Storyboard round 3: animation options for LS4-b-fix-a, HD3-b, MIN1-b (keep pl-04, re-sync), FL4-a",
   "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-13T19:38:07+00:00",
+  "stage": "moodboard",
+  "round": 5,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 5: LS4-b-fix-a redone as LS5-a/b/c (Jack: gloves floating on the bag); the second paramedic now visible",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]

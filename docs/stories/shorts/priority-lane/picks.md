@@ -52,3 +52,5 @@ Left in view:
 - `priority lane.prproj` (and `_1`); `audio/` is empty, ready for Jack's screen-recorded Suno take.
 
 🔴 The old `shorts-1-priority-lane-r2` sequence in `priority lane.prproj` now has offline media (it will ask to relink). Everything it used is in `_old-r1-r2/` if it's ever wanted again.
+
+- **2026-11-13, Jack:** "there are gloves floating on the device in his mouth": LS4-b-fix-a's bag-valve mask was held by hands with no body. Redone as a fresh generation from LS4-b-fix-a as the reference (not a change-only edit): **LS5-a/b/c**, each with the second paramedic visible and his arms attached. On the mood board, round 5.
