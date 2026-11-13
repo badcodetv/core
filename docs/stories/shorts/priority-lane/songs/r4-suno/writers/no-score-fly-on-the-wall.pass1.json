@@ -1,0 +1,13 @@
+{
+  "name": "no-score-fly-on-the-wall",
+  "style": "British English spoken drama, UK accents only, observational documentary realism, field recording inside an NHS ambulance at night, no score, no singing, no melody, no beat. Real sound carries it: rapid cardiac monitor beeps, British hi-lo two-tone nee-naw siren, heavy rain drumming on a metal roof, oxygen hiss, kit and trolley rattling, diesel engine strain. Raw half-shouted overlapping talk, close handheld mics, breaths and clipped words. Liverpool Scouse woman paramedic, Newcastle Geordie man paramedic, Bristol West Country driver. Then one plummy upper-class English toff in his thirties, Old Etonian drawl, lazy sneering tenor, heard muffled and tinny through a closed car window. Only musical sound: one low sub-bass drone swelling under him. Ends on a long flat monitor tone, then dead silence. 14 seconds.",
+  "exclude": "American accent, US accent, American siren, US police wail, singing, melody, vocals sung, choir, strings, piano, drums, beat, rap, orchestral score, cinematic trailer, synth pads, upbeat, happy, comedy, music under the flatline, fade in, long intro",
+  "lyrics": "[Spoken, no music, close mic inside a speeding British ambulance, rain on the roof, two-tone siren, monitor beeping fast]\n[Scouse woman, Liverpool paramedic, shouting over the siren]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Geordie man, Newcastle paramedic, cutting in over her, breathless]\nSats dropping, he's peri-arrest!\n[Bristolian driver, West Country, yelling at the traffic, horn]\nTwo minutes out! Get the fuck out of the way!\n[Brakes, siren cuts, engine idling, rain, monitor still beeping]\n[Geordie man, disbelief]\nWhy have we stopped?!\n[Sub-bass drone swells. Posh Old Etonian man on a phone, bored and petulant, muffled through car glass, a world away]\nI said raspberry-shaped hors d'oeuvres!\n[Drone drops away. Scouse woman, quiet, almost to herself]\nFifty over twen—\n[Flatline tone, held]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false
+}

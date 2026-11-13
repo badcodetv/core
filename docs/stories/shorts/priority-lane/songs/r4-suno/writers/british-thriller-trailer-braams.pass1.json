@@ -1,0 +1,13 @@
+{
+  "name": "british-thriller-trailer-braams",
+  "style": "British crime-drama trailer tension, UK television thriller, English voices spoken not sung. Ticking clock pulse, a rising synth riser climbing under urgent London shouting. One colossal low brass braam with sub drop, a wall of sound. Then a shrill, nasal, plummy English aristocrat in a petulant tantrum, muffled behind car glass. Second riser into a single flatline tone, then dead silence. 14 seconds.",
+  "exclude": "American accent, US accent, Hollywood, epic orchestra, choir, singing, sung chorus, melodic vocal, rap, cheerful, comedy, trailer voiceover, fade out",
+  "lyrics": "[Intro: ticking clock pulse, riser climbing, siren in the rain]\n[Spoken, shouted: Essex woman, paramedic, frantic]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Spoken, shouted: Cockney man, paramedic, breathless]\nSats dropping, he's peri-arrest!\n[Spoken, roared: Cockney driver, raging at traffic]\nTwo minutes out! Get the fuck out of the way!\n[Huge braam, sub drop, everything stops]\n[Spoken: Cockney man, disbelief]\nWhy have we stopped?!\n[Spoken, muffled through glass: shrill nasal posh English aristocrat, tantrum, loud]\nI said raspberry-shaped hors d'oeuvres!\n[Second riser climbing, heart monitor beeping]\n[Spoken, quiet: Essex woman, barely a whisper]\nFifty over twen—\n[Flatline tone, final hit]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false
+}

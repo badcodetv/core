@@ -1,0 +1,13 @@
+{
+  "name": "no-score-fly-on-the-wall",
+  "style": "Unscored British observational TV, like an ER drama with the music stripped out, actuality audio captured in the back of an NHS ambulance on a wet night. Spoken English voices only, strong regional UK accents, nobody sings, no tune, no rhythm section. Sound effects do the work: frantic ECG beeping, old-school British two-pitch nee-naw horn, rain hammering the roof, suction and oxygen hiss, drawers and kit banging, engine revving hard. Crew talk over each other, ragged and breathless, half-yelled, never acted. Female paramedic from Liverpool, thick Scouse; male paramedic from Newcastle, broad Geordie; driver from Bristol, West Country burr. Contrast: a languid public-school toff, late twenties, nasal sneering tenor, received pronunciation, boxed-in and muffled like a voice behind a car window. One deep sub drone rises beneath the toff and nothing else musical. Final seconds: the heart machine locks into a single unbroken pitch, which cuts to total quiet. Short, 14 seconds.",
+  "exclude": "American accent, US accent, American siren, US police wail, singing, melody, sung vocals, choir, strings, piano, drums, beat, rap, orchestral score, cinematic trailer, synth pads, upbeat, happy, comedy, music under the flatline, fade in, long intro",
+  "lyrics": "[Spoken, unscored, mics inside a racing British ambulance, rain on the roof, two-tone nee-naw, ECG beeping fast]\n[Scouse woman, Liverpool paramedic, shouting over the siren]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Geordie man, Newcastle paramedic, talking over her, out of breath]\nSats dropping, he's peri-arrest!\n[Bristolian driver, West Country, bellowing at the traffic, horn blast]\nTwo minutes out! Get the fuck out of the way!\n[Brakes squeal, siren stops, engine idles, rain, ECG still racing]\n[Geordie man, disbelief]\nWhy have we stopped?!\n[Low sub drone rises. Plummy Old Etonian on his phone, bored and petulant, muffled behind car glass, another world]\nI said raspberry-shaped hors d'oeuvres!\n[Drone falls away. Scouse woman, quiet, almost to herself]\nFifty over twen—\n[Flatline, one long unbroken pitch]\n[Total quiet]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false
+}

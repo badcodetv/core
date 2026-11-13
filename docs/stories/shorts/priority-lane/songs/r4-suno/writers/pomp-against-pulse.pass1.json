@@ -1,0 +1,13 @@
+{
+  "name": "pomp-against-pulse",
+  "style": "Spoken British English, UK regional accents, no singing, British TV crime-drama underscore. Two sound worlds. The ambulance: deep pounding taiko heartbeat drums, one scraping solo viola, gritty distorted vintage analogue synth bass, rain hiss, siren wail, fast monitor beeps; frantic shouted voices of a young East London woman in Multicultural London English and a tired gravelly Sheffield man with flat Yorkshire vowels. The politician's car: everything drops to a muffled, distant state-occasion procession, stately brass fanfare and cathedral pipe organ heard through thick car glass, the only grand music in the track; one braying, nasal, whiny public-school Englishman, plummy and entitled. Ends on a single flat monitor tone, then dead silence. Raw, dry, close, 14 seconds.",
+  "exclude": "American accent, singing, melody, chorus, rap, autotune, cheerful, comedic, upbeat pop, music after the flatline",
+  "lyrics": "[Intro: siren, taiko heartbeat drums, scraping viola, dirty synth]\n\n[Shouted, young East London woman]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Shouted, weary Sheffield man]\nSats dropping, he's peri-arrest!\n\n[Shouted, hoarse Northern driver]\nTwo minutes out! Get the fuck out of the way!\n\n[Drums stop, siren dies]\n\n[Spoken, Sheffield man]\nWhy have we stopped?!\n\n[Muffled brass and church organ procession, behind glass]\n[Spoken, posh braying upper-class Englishman, muffled]\nI said raspberry-shaped hors d'oeuvres!\n\n[Procession cuts out, monitor slows]\n[Whispered, East London woman]\nFifty over twen—\n\n[Flatline tone]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true
+}

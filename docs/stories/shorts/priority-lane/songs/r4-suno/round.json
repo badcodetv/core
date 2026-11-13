@@ -1,0 +1,80 @@
+[
+  {
+    "name": "bbc-drama-strings-two-worlds",
+    "style": "Spoken English voices, British accents, no singing. Yorkshire woman paramedic, hoarse, breathless, shouting; Mancunian man paramedic, gruff Manchester voice, talking over her; West Midlands Brummie driver bellowing over a wailing siren. Then a different world: an elderly upper-class English gentleman, cut-glass Received Pronunciation, deep bored baritone, clipped and petulant, muffled behind a thick car window. Underscore of a BBC Sunday-night hospital drama: frantic chamber-string ostinato, low synth pulse at heartbeat tempo, rain, heart monitor beeping faster. Strings stop dead at a red light, leaving rain and an idling engine. Under the posh man, one thin sustained high violin note only. Ends on a flat continuous monitor tone, then silence.",
+    "exclude": "American accent, singing, sung melody, chorus, rap, choir, backing vocals, drum kit, beat, pop, comedy, upbeat, autotune",
+    "lyrics": "[Intro: siren, rain, racing strings, fast monitor beeps]\n\n[Spoken, shouted. Paramedic Shirley, Yorkshire woman, hoarse]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Spoken, over her. Paramedic Gaz, Mancunian man, gruff]\nSats dropping, he's peri-arrest!\n\n[Spoken, bellowed over the siren. Driver Dean, Brummie]\nTwo minutes out! Get the fuck out of the way!\n\n[Strings cut dead. Rain, idling engine]\n\n[Spoken. Gaz]\nWhy have we stopped?!\n\n[One thin high violin note. Muffled behind glass. Sir Rupert, elderly posh English gentleman, bored]\nI said raspberry-shaped hors d'oeuvres!\n\n[Spoken, quiet. Shirley]\nFifty over twen—\n\n[Flatline tone]\n\n[Silence]\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": false
+  },
+  {
+    "name": "no-score-fly-on-the-wall",
+    "style": "Unscored medical actuality, a raw NHS emergency caught on a hidden mic in the back of a British ambulance at night. Talking and yelling only, nobody sings, no tune, no beat. The room carries the tension: racing ECG bleeps, a British hi-lo nee-naw horn, heavy rain on a metal roof, oxygen hiss, kit rattling in drawers, diesel engine straining. Crew overlap and cut each other off, breathless and ragged, half-yelled, unpolished. Woman medic, thick Liverpool Scouse; man medic, broad Newcastle Geordie; driver, Bristol West Country burr. Against them, a bored posh toff in his late twenties, drawn-out Etonian vowels, nasal and sneering, small and tinny as if heard from behind the sealed glass of a ministerial Jaguar. A single low sub-bass hum swells under the toff, the only musical sound. Ends on one long flat monitor tone, then dead air. 14 seconds.",
+    "exclude": "American accent, US accent, American siren, US police wail, singing, melody, sung vocals, choir, strings, piano, drums, beat, rap, orchestral score, cinematic trailer, synth pads, upbeat, happy, comedy, music under the flatline, fade in, long intro",
+    "lyrics": "[Unscored, hidden mic in a racing British ambulance, rain on the roof, hi-lo nee-naw, ECG bleeping fast]\n[Scouse woman, Liverpool medic, yelling over the horn]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Geordie man, Newcastle medic, cutting across her, out of breath]\nSats dropping, he's peri-arrest!\n[Bristolian driver, West Country, bellowing at the traffic, horn blast]\nTwo minutes out! Get the fuck out of the way!\n[Brakes squeal, horn stops, engine idles, rain, ECG still racing]\n[Geordie man, disbelief]\nWhy have we stopped?!\n[Low sub hum swells. Plummy Old Etonian on his phone, bored and petulant, tinny behind closed car glass, another world]\nI said raspberry-shaped hors d'oeuvres!\n[Hum drops away. Scouse woman, quiet, almost to herself]\nFifty over twen—\n[Flatline, one long flat tone]\n[Dead air]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": false
+  },
+  {
+    "name": "british-thriller-trailer-braams",
+    "style": "British voices, London crime-drama trailer, UK telly thriller cut. Shouted English speech, not singing. Metronomic clock tick and a noise riser swelling beneath panicked East End paramedics. A single enormous low braam lands with a falling sub, slamming the momentum to a halt. A thin, reedy, plummy toff shrieks a spoilt tantrum behind a car window. Pitched riser climbing again, ending on one long cardiac monitor whine, then nothing at all.",
+    "exclude": "American accent, US accent, Hollywood, epic orchestra, choir, singing, sung chorus, melodic vocal, rap, cheerful, comedy, trailer voiceover, fade out",
+    "lyrics": "[Intro: steady clock tick, noise riser swelling, siren hissing through rain]\n[Spoken, screamed: Essex woman, paramedic, desperate]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Spoken, shouted: Cockney man, paramedic, out of breath]\nSats dropping, he's peri-arrest!\n[Spoken, bellowed: Cockney driver, furious at the traffic]\nTwo minutes out! Get the fuck out of the way!\n[Massive braam, sub falls away, the ambulance halts]\n[Spoken: Cockney man, stunned]\nWhy have we stopped?!\n[Spoken, through car glass but loud: reedy, nasal, plummy English toff, spoilt schoolboy tantrum]\nI said raspberry-shaped hors d'oeuvres!\n[Pitched riser climbing, monitor beeps slowing]\n[Spoken, hushed: Essex woman, almost inaudible]\nFifty over twen—\n[Monitor flatline, the last hit]\n[Nothing]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": false
+  },
+  {
+    "name": "line-of-duty-circling-piano",
+    "style": "British BBC police-thriller underscore with spoken dialogue, not singing, English accents only. A four-note minor piano figure circles round and round, insistent and unresolved, over racing electronic percussion, ticking hats and dark analogue synth drones, a thin shimmer of high strings, 140 bpm, paranoid, fight-or-flight. Ambulance two-tone siren, rain on the roof, heart-monitor beeps. Shouted NHS crew: a Brummie Birmingham woman, steady then cracking; a broad Black Country man; a clipped South London driver. At the red light the piano breaks off mid-phrase, everything sinks to one low electric hum. A different voice entirely: a smooth plummy Home Counties politician in his fifties, received pronunciation, petulant and spoilt, muffled behind a car window. Then one clean flatline tone, then nothing.",
+    "exclude": "American accent, sung vocals, melodic singing, choir, rap, autotune, cheerful, comedy, major key, pop chorus, country, gospel, guitar solo, fade out, music under flatline",
+    "lyrics": "[Intro: siren, rain, racing electronic pulse, circling minor piano figure]\n\n[Spoken, shouted, Brummie woman paramedic, breathless]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Spoken, shouted, Black Country man paramedic]\nSats dropping, he's peri-arrest!\n\n[Spoken, shouted, South London driver, at the traffic]\nTwo minutes out! Get the fuck out of the way!\n\n[Brakes. Piano stops mid-phrase. Low hum only]\n\n[Spoken, Black Country man, bewildered]\nWhy have we stopped?!\n\n[Spoken, posh plummy English politician, petulant, muffled through glass]\nI said raspberry-shaped hors d'oeuvres!\n\n[Spoken, quiet, Brummie woman, almost a whisper]\nFifty over twen—\n\n[Flatline tone, no music]\n\n[Silence]\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": false
+  },
+  {
+    "name": "violin-jabs-and-garden-party",
+    "style": "Cinematic chamber suspense cue, voices talked and yelled rather than sung, raw broadcast-drama acting, working-class English crew: a ragged Somerset-burred woman, a flat-vowelled Bolton man, a gruff Cumbrian driver. Each yell punctuated by a single vicious sforzando violin jab with a hard gap of silence after it, a grinding low cello pedal tone beneath, rain-lashed siren, quick ECG pips. Midway the score flips to a prim tinkling harpsichord minuet with a dainty string quartet in triple time, distant as if leaking from a limousine; a fruity, port-soaked Home Counties aristocrat sneers through the glass. Ends abruptly on one unbroken ECG beep, nothing after",
+    "exclude": "American accent, US twang, melodic vocal, rap, choir, pop, drum kit, groove, comedy, upbeat, synth, electric guitar, autotune, fade out, long intro, reverb wash",
+    "lyrics": "[Cold open: rain, siren, cello pedal growling, ECG pips racing]\n[Yelled, Somerset woman, frantic]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[One violin jab]\n[Yelled, Bolton man, out of breath]\nSats dropping, he's peri-arrest!\n[One violin jab]\n[Roared, Cumbrian driver, at the windscreen]\nTwo minutes out! Get the fuck out of the way!\n[One violin jab, tyres skid, siren dies]\n[Talked, Bolton man, baffled]\nWhy have we stopped?!\n[Dainty harpsichord minuet with string quartet, faint, through car glass]\n[Talked, fruity old aristocrat, muffled, sulking]\nI said raspberry-shaped hors d'oeuvres!\n[Minuet snaps off, ECG pips slow]\n[Barely audible, Somerset woman]\nFifty over twen—\n[One unbroken ECG beep]\n[Silence]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": true
+  },
+  {
+    "name": "pomp-against-pulse",
+    "style": "English-spoken radio-play drama, voices talk rather than sing, gritty Yorkshire police-thriller score. Two clashing sound worlds. Inside the ambulance: thumping taiko pulse like a racing heart, a lone viola sawing raw, snarling dirty vintage synths, rain on metal, two-tone siren, rapid ECG bleeps; a breathless young Londoner woman in Multicultural London English and a worn-out gravel-voiced Sheffield bloke. Outside, the minister's limousine: the music sinks behind thick glass into a remote ceremonial parade, regal brass and cathedral organ, the only grandeur anywhere; one nasal, braying Etonian toff, petulant and spoilt. A long unbroken ECG whine closes it, followed by total quiet. Dry, close-miked, 14 seconds.",
+    "exclude": "American accent, sung vocals, melody, chorus, rap, autotune, cheerful, comedic, upbeat pop, music after the flatline",
+    "lyrics": "[Intro: two-tone siren, taiko heartbeat, sawing viola, dirty synth]\n\n[Shouted, young London woman, MLE]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Shouted, weary Sheffield man]\nSats dropping, he's peri-arrest!\n\n[Yelled, hoarse Northern driver]\nTwo minutes out! Get the fuck out of the way!\n\n[Heartbeat drums halt, siren fades]\n\n[Spoken, Sheffield man, bewildered]\nWhy have we stopped?!\n\n[Distant regal brass and cathedral organ, heard through car glass]\n[Spoken, braying Etonian toff, muffled]\nI said raspberry-shaped hors d'oeuvres!\n\n[Parade cuts dead, bleeps slow]\n[Whispered, London woman]\nFifty over twen—\n\n[Flatline]\n[Silence]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 14,
+    "maxMode": true
+  }
+]

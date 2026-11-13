@@ -1,0 +1,13 @@
+{
+  "name": "violin-jabs-and-garden-party",
+  "style": "British TV drama underscore, shouted spoken dialogue not singing, English regional accents: West Country woman, Lancashire man, Cumbrian man. Every shout answered by one savage staccato violin sforzando stab, low sustained cello drone beneath, ambulance siren in rain, fast heart monitor beeps. Then a dainty harpsichord and string quartet minuet, muffled behind car glass, plummy upper-class English old gentleman, indignant. Cut dead to one flatline monitor tone, then silence",
+  "exclude": "American accent, singing, sung melody, rap, choir, pop, drum kit, beat, comedy, upbeat, synth, guitar, autotune, fade out, long intro",
+  "lyrics": "[Intro: siren wailing in rain, low cello drone, monitor beeping fast]\n[Spoken, shouted, West Country woman, panicked]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Violin stab]\n[Spoken, Lancashire man, breathless]\nSats dropping, he's peri-arrest!\n[Violin stab]\n[Spoken, bellowed, Cumbrian man]\nTwo minutes out! Get the fuck out of the way!\n[Violin stab, brakes, siren stops]\n[Spoken, Lancashire man, bewildered]\nWhy have we stopped?!\n[Muffled harpsichord and string quartet minuet, faint, behind glass]\n[Spoken, plummy posh old English gentleman, muffled, petulant]\nI said raspberry-shaped hors d'oeuvres!\n[Minuet cuts off, monitor slows]\n[Spoken, whispered, West Country woman]\nFifty over twen—\n[Flatline tone, then silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false
+}

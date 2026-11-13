@@ -1,0 +1,9 @@
+# british-thriller-trailer-braams: notes (redo)
+
+Redo after the sameness gate flagged "tone then dead silence 14 seconds" in the style box. The ending is now described as "one long cardiac monitor whine, then nothing at all", and the style box no longer states a length (the 14 s target is in the durationSec setting).
+
+What shaped it:
+- Trailer build kit: tension pulse, riser, hit, sub drop, tension then release. The braam is the release and goes on the cut, which here is the red light. Pair a noise riser with a pitched riser, and put the end of the riser on the cut. A steady clock is a standard source of tension. Sources: https://violetrecording.com/sound-design-for-trailers/ , https://www.ableton.com/en/blog/learn-how-to-make-high-impact-sounds-for-movies-and-trailers/ , https://www.rareformaudio.com/blog/sound-design-in-film-trailers , https://add-app.pages.dev/sound-effects/sound-design-for-trailers-hits-rises-drones-pulses/
+- Accent: no Suno guide documents how to get a British accent. A community playlist puts "British ... voice" first in the style box, and spoken delivery needs cues in both the style box and the lyric tags. A TTS guide says "British" alone tends to mean RP or Estuary, so name the region: Essex, Cockney and East End for the crew, "plummy toff" for the minister. Sources: https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-narration-workflow , https://gradium.ai/voices/accents/standard-british , https://suno.com/playlist/2447f3b3-8486-43b8-81b8-95f5fc0534ae
+- The style box uses "UK telly thriller" and "London crime-drama trailer", and "Hollywood" and "trailer voiceover" are excluded, so the trailer genre does not pull the voices towards American.
+- Unverified: whether Suno v6 renders the braam and the riser as sound design or turns them into orchestral music. It has not been tested.

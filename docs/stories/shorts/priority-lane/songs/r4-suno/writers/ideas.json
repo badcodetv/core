@@ -1,0 +1,26 @@
+[
+  {
+    "name": "bbc-drama-strings-two-worlds",
+    "idea": "A BBC Sunday-night hospital drama cue: a frantic chamber-string ostinato with a low synth pulse at heartbeat speed, scored like Casualty at its most desperate. The crew are a hoarse Yorkshire woman paramedic and a gruff Mancunian man, with a Midlands driver bellowing over the siren, all out of breath and talking over each other. At the red light the strings cut dead to rain and an idling engine. Under the minister, a single thin sustained high violin note is the only music, and he is an elderly Received Pronunciation baritone, bored and clipped, his voice dulled as if behind thick glass. The monitor quickens through the first half, then a flat continuous tone, then nothing. Put the accents first in the style box and name each region."
+  },
+  {
+    "name": "no-score-fly-on-the-wall",
+    "idea": "The Pitt approach: almost no music, the drama carried by real sound. Fast monitor beeps, a two-tone UK ambulance siren (not an American wail), rain drumming on the roof, kit clattering. The only musical element is one low sub-bass drone that swells under the minister's car. The crew are a Scouse woman and a Geordie man, raw and overlapping, half-shouted rather than performed, with a Bristolian driver. The minister is a languid Old Etonian drawl in his twenties or thirties, a sneering tenor, muffled and tinny as if heard through a car window. The flatline tone holds, then silence. The style box asks for documentary realism, spoken, no singing, no melody."
+  },
+  {
+    "name": "british-thriller-trailer-braams",
+    "idea": "A British thriller trailer: a ticking-clock pulse and a riser climbing under the ambulance, and a huge braam with a sub drop slamming down exactly on the red light, so the stop feels like a wall. The crew are working-class Londoners, an Essex woman screaming the numbers and a Cockney man, with a Cockney driver roaring at the traffic. The minister is a high, nasal, shrill aristocrat having a tantrum, petulant like an overgrown schoolboy, and he is loud even through the glass. A second riser leads into the flatline, which is the final hit, then hard silence. Keep American trailer words out of the style box; ask for British crime-drama trailer tension so the genre does not drag the voices American."
+  },
+  {
+    "name": "line-of-duty-circling-piano",
+    "idea": "A Line of Duty / Bodyguard style: a circling, repeating minor piano figure over racing electronic percussion and dark synth textures, paranoid and contemporary, the fight-or-flight cue of a British police thriller. The crew are a Birmingham (Brummie) woman, calm-but-cracking, and a broad Black Country man, with a terse South London driver. When the minister's car crosses, the piano figure stops mid-phrase and the electronics drop to a low hum. The minister is a smooth, oily, plummy Home Counties politician in his fifties, the polished voice of the Today programme, gone petulant, muffled behind glass. The flatline is a clean tone over nothing."
+  },
+  {
+    "name": "violin-jabs-and-garden-party",
+    "idea": "Kai's brief taken literally: every shout from the crew is answered by one vicious stabbed violin jab, like punctuation, with a dark low cello drone underneath. The crew are a ragged West Country woman and a Lancashire man, with a Cumbrian driver: rural, northern and south-western working voices, very unlike London. When the minister's car crosses, the score turns into a twee, dainty harpsichord-and-string-quartet minuet, the music of a garden party, faintly heard as if from inside his car. He is a fruity, pompous, port-soaked old Tory gentleman, posh and indignant about canapés. Then the minuet is cut off by the flatline tone and silence."
+  },
+  {
+    "name": "pomp-against-pulse",
+    "idea": "Two British sound worlds collide. The ambulance is raw: thudding taiko-style heartbeat drums, a scraping cello and a dirty, fierce analogue synth, in the vein of Ben Foster's Happy Valley score. The minister's car brings a muffled, stately ceremonial brass and church-organ procession, like a state occasion passing behind glass, and that pomp is the only grand music in the track. The crew are a young East London woman speaking Multicultural London English and a weary Sheffield man. The minister is a young, braying public-school voice, posh and whiny, entitled. The procession is cut by the flatline tone, then silence. Each sound world is named with its own voice so Suno keeps the two apart."
+  }
+]

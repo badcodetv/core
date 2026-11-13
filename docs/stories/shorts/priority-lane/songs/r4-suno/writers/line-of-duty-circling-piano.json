@@ -1,0 +1,13 @@
+{
+  "name": "line-of-duty-circling-piano",
+  "style": "British BBC police-thriller underscore with spoken dialogue, not singing, English accents only. A four-note minor piano figure circles round and round, insistent and unresolved, over racing electronic percussion, ticking hats and dark analogue synth drones, a thin shimmer of high strings, 140 bpm, paranoid, fight-or-flight. Ambulance two-tone siren, rain on the roof, heart-monitor beeps. Shouted NHS crew: a Brummie Birmingham woman, steady then cracking; a broad Black Country man; a clipped South London driver. At the red light the piano breaks off mid-phrase, everything sinks to one low electric hum. A different voice entirely: a smooth plummy Home Counties politician in his fifties, received pronunciation, petulant and spoilt, muffled behind a car window. Then one clean flatline tone, then nothing.",
+  "exclude": "American accent, sung vocals, melodic singing, choir, rap, autotune, cheerful, comedy, major key, pop chorus, country, gospel, guitar solo, fade out, music under flatline",
+  "lyrics": "[Intro: siren, rain, racing electronic pulse, circling minor piano figure]\n\n[Spoken, shouted, Brummie woman paramedic, breathless]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Spoken, shouted, Black Country man paramedic]\nSats dropping, he's peri-arrest!\n\n[Spoken, shouted, South London driver, at the traffic]\nTwo minutes out! Get the fuck out of the way!\n\n[Brakes. Piano stops mid-phrase. Low hum only]\n\n[Spoken, Black Country man, bewildered]\nWhy have we stopped?!\n\n[Spoken, posh plummy English politician, petulant, muffled through glass]\nI said raspberry-shaped hors d'oeuvres!\n\n[Spoken, quiet, Brummie woman, almost a whisper]\nFifty over twen—\n\n[Flatline tone, no music]\n\n[Silence]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false
+}

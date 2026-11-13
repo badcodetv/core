@@ -1,0 +1,23 @@
+# r4 ideas: research notes (2026-11-13)
+
+Web research only, no repo files read.
+
+## Getting English accents out of Suno
+- Suno has no accent control. The tips that work are an explicit accent tag placed **early** in the style box (the first words carry the most weight; keep the style box under ~100 words), and naming the region, not just "British". One user reported that adding names typical of the country helped. Respelling lyrics phonetically is the strongest trick, but this round's lyrics are fixed, so it is not available here. https://medium.com/@aitooldiscovery/suno-reddit-tips-and-prompts-what-r-sunoai-users-actually-do-65b59d51bcad , https://howtopromptsuno.com/making-music/improve-performance
+- Describe the accent separately from the genre so the genre words don't drown it out. A bare "Welsh accent" leaves too much open, so be specific and judge by ear. https://macmyths.com/best-ai-song-generators-for-a-welsh-english-accent-in-2026/
+- Regional vocal tags in brackets, e.g. "[British rock vocal]", plus voice-character tags like "[deep masculine vocal]" and "[gritty]". https://howtopromptsuno.com/making-music/specific-vocal-styles
+- Unverified inference: genre words carry an accent with them. American genres (trailer, hip-hop, Americana) probably pull the voice American, and British genres (grime, brass band, music hall, BBC drama) may pull it British.
+
+## Distinct voices in one track
+- Put "duet" (or the cast) in the style box itself, and tag each line [Male Vocal] / [Female Vocal]. These tags steer the model; they do not guarantee who sings what. Keep voice switches to 4–6 at most. Giving each voice a different genre "doesn't confuse Suno so much". Duets mostly work when made in pieces, and stems can be split and recombined. https://medium.com/@aitooldiscovery/suno-reddit-tips-and-prompts-what-r-sunoai-users-actually-do-65b59d51bcad , https://musci.io/blog/suno-tags , https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation/can-suno-use-multiple-personas-duets-bands-ai-casts
+- So the best lever for "the minister sounds different" is probably to give the minister his own sound world (a different instrument, different genre words, a muffled or filtered tag) as well as a different voice description.
+
+## Spoken, not sung
+- Styles field: "spoken narration", "voice-forward mix", "no singing", "no sung chorus", "no melodic lead vocal". Lyrics: one short cue at the top such as [Spoken word] or [Monologue]. Long stage directions get read aloud, so keep them in Styles. Use short lines, no rhyme, and one delivery idea per section. https://jackrighteous.com/fr/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-narration-workflow
+- Suno Speech (a separate beta, launched 1 Oct) is spoken audio with a music bed. You describe the voice in plain language. Accents "can drift" and dramatic pauses run long. No multi-speaker or duration control is documented. https://blog.dubspot.com/suno-speech-2026 , https://unite.ai/suno-launches-speech-beta-pairing-voice-and-music-in-one-model
+
+## Cinematic / dramatic reference points
+- **The Pitt** (medical drama) has almost no score. The showrunner says people don't hear violins when they get bad news. The monitor beeps run at the right rate for each scene, alarms sound when the vitals cross thresholds, and sounds are timed into the gaps between lines. https://www.slashfilm.com/1842794/noah-wyle-the-pitt-no-music-explained , https://www.postmagazine.com/Press-Center/Daily-News/2025/-I-The-Pitt-I-Supervising-sound-editor-Bryan-Par.aspx , https://zebrahomecinema.com/blog/the-anatomy-of-sound-design-bryan-parker-the-pitt-interview
+- **Line of Duty** (Carly Paradis): orchestra plus electronic textures, racing percussion, and a circling piano/melody figure that builds suspense "like a tornado". https://www.classical-music.com/features/tv-and-film-music/line-of-duty-on-bbc-who-wrote-the-music-and-can-you-buy-the-soundtrack
+- **Bodyguard** (Ruth Barrett): an unnerving, paranoid score that aims at "fight or flight". **Happy Valley** (Ben Foster): "guitars, solo viola and lots of dirty, dark, fierce synth sounds". https://filmmusicreporter.com/2018/03/26/ruth-barrett-scoring-bbcs-bodyguard/ , https://lbbonline.com/news/composer-ben-foster-announces-soundtrack-release-for-bbcs-happy-valley
+- **Trailer grammar**: a pulse builds tension, a riser builds to a reveal, and a braam or sub drop lands on the hit. Heartbeat-like low synth pulses. https://add-app.pages.dev/sound-effects/sound-design-for-trailers-hits-rises-drones-pulses/ , https://uppbeat.io/sfx/cinematic-heartbeat-transition/166971/57101
