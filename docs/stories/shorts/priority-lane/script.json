@@ -1,66 +1,100 @@
 {
- "beats": [
-  {
-   "id": "outside",
-   "title": "The ambulance is held",
-   "see": "OUT1-c",
-   "lines": [],
-   "music": "",
-   "sfx": "rain, idling engines, motorcade engines"
-  },
-  {
-   "id": "ambulance",
-   "title": "Inside the ambulance",
-   "see": "AMB1-a",
-   "lines": [],
-   "music": "",
-   "sfx": "monitor beeps, rain on the roof"
-  },
-  {
-   "id": "reporter",
-   "title": "The BadCode reporter",
-   "see": "REP1-a",
-   "lines": [
+  "round": 3,
+  "dialogue": "1B The countdown (Jack picked 2026-11-13, no notes), https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
+  "beats": [
     {
-     "who": "REPORTER",
-     "text": "Traffic is being managed, to keep an important journey moving.",
-     "by": "claude",
-     "how": "straight to camera, flat UK regional news"
-    }
-   ],
-   "music": "",
-   "sfx": "rain"
-  },
-  {
-   "id": "minister",
-   "title": "The minister",
-   "see": "MIN1-b",
-   "lines": [
+      "id": "losing",
+      "title": "Losing him",
+      "see": "LS3 (mood board round 3)",
+      "lines": [
+        {
+          "who": "paramedic1",
+          "text": "BP 60 over 30! Fucking hurry up, we're gonna lose him!",
+          "by": "kai",
+          "how": "shouted"
+        },
+        {
+          "who": "paramedic2",
+          "text": "Sats dropping, he's peri-arrest!",
+          "by": "claude",
+          "how": "overlapping"
+        },
+        {
+          "who": "driver",
+          "text": "Two minutes out! Get the fuck out of the way!",
+          "by": "claude",
+          "how": "shouted forward, half Kai's words"
+        }
+      ],
+      "music": "Suno: tense score under the whole short",
+      "sfx": "siren, monitor racing, engine, rain"
+    },
     {
-     "who": "MINISTER",
-     "text": "I said raspberry-shaped hors d'oeuvres!",
-     "by": "jack",
-     "how": "on the phone, furious"
-    }
-   ],
-   "music": "",
-   "sfx": ""
-  },
-  {
-   "id": "button",
-   "title": "The button",
-   "see": "REP1-a",
-   "lines": [
+      "id": "held",
+      "title": "Held",
+      "see": "HD3 or OUT1-c",
+      "lines": [
+        {
+          "who": "paramedic2",
+          "text": "Why have we stopped?!",
+          "by": "claude",
+          "how": "at the glove"
+        }
+      ],
+      "music": "",
+      "sfx": "brakes, siren dies, rain, monitor still racing"
+    },
     {
-     "who": "REPORTER",
-     "text": "A politician blocking the path of an ambulance. Poetic, really...",
-     "by": "jack",
-     "how": "flat to camera as the motorcade clears"
+      "id": "motorcade",
+      "title": "The motorcade",
+      "see": "WS3 or MIN1-b",
+      "lines": [
+        {
+          "who": "minister",
+          "text": "I said raspberry-shaped hors d'oeuvres!",
+          "by": "jack",
+          "how": "muffled through the glass"
+        }
+      ],
+      "music": "",
+      "sfx": "saloon engine passing, rain"
+    },
+    {
+      "id": "flatline",
+      "title": "Flatline",
+      "see": "FL3",
+      "lines": [
+        {
+          "who": "paramedic1",
+          "text": "Fifty over twen—",
+          "by": "claude",
+          "how": "quiet, to the patient; the flatline cuts the word"
+        }
+      ],
+      "music": "score cuts out",
+      "sfx": "flatline tone, silence, black, logo"
     }
-   ],
-   "music": "",
-   "sfx": ""
-  }
- ],
- "voices": []
+  ],
+  "voices": [
+    {
+      "id": "paramedic1",
+      "name": "Paramedic 1",
+      "profile": "Suno speech (sound.md round 3)"
+    },
+    {
+      "id": "paramedic2",
+      "name": "Paramedic 2",
+      "profile": "Suno speech"
+    },
+    {
+      "id": "driver",
+      "name": "Driver",
+      "profile": "Suno speech"
+    },
+    {
+      "id": "minister",
+      "name": "Minister",
+      "profile": "Orus (voices/profiles/min-b-orus.md) unless a Suno take beats it"
+    }
+  ]
 }

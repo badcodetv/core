@@ -42,7 +42,7 @@
   "dialogue": {
     "page": "https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
     "options": "design/2026-11-13-shorts-dialogue-priority-lane-r3/options.json",
-    "picked": null,
+    "picked": "1B",
     "round": 3
   },
   "boards": {
