@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-shepard-rise-ticking-v6-w-16031e6a.wav",
+ "made": "2026-11-13T20:58:40.134Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "16031e6a-3173-4b0e-be5d-1cb69e5f4293",
+ "inputs": {
+  "title": "Priority Lane score r6-shepard-rise-ticking-v6-w",
+  "song": "https://suno.com/song/16031e6a-3173-4b0e-be5d-1cb69e5f4293"
+ },
+ "settings": {
+  "durationSec": 20.44
+ }
+}

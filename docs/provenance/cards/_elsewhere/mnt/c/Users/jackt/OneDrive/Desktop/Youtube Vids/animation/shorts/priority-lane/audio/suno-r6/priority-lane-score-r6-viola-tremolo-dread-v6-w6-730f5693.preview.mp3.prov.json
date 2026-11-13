@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-viola-tremolo-dread-v6-w6-730f5693.preview.mp3",
+ "made": "2026-11-13T20:56:07.767Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "730f5693-7aba-4d47-b765-3956a57a923f",
+ "inputs": {
+  "title": "Priority Lane score r6-viola-tremolo-dread-v6-w6",
+  "song": "https://suno.com/song/730f5693-7aba-4d47-b765-3956a57a923f"
+ },
+ "settings": {
+  "durationSec": 20
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-viola-tremolo-dread-v6-w6-730f5693.wav"
+}

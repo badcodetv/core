@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-subliminal-pulse-bed-v6-w-c5d8704d.wav",
+ "made": "2026-11-13T20:55:19.641Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "c5d8704d-0649-4306-8312-f3cbb47e27aa",
+ "inputs": {
+  "title": "Priority Lane score r6-subliminal-pulse-bed-v6-w",
+  "song": "https://suno.com/song/c5d8704d-0649-4306-8312-f3cbb47e27aa"
+ },
+ "settings": {
+  "durationSec": 19.16
+ }
+}

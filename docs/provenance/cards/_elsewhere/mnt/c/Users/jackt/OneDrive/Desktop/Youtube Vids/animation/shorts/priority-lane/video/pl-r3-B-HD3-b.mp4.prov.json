@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-B-HD3-b.mp4",
+ "made": "2026-11-13T19:45:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Looking through the rain-streaked windscreen of a stopped ambulance at night. The police outrider on his motorcycle holds one gloved hand raised, perfectly still. Behind him, the headlights of a long black saloon car glide slowly across the junction from left to right, lighting the rain. Blue emergency light pulses on the wet glass. Filmed like real handheld news footage, quick movements blurring the way a film camera blurs them. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD3-b.jpg",
+ "why": "Jack 2026-11-13: B, headlights cross",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "r3-B",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-13T19:43:18.959Z"
+ }
+}

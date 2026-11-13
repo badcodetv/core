@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/d1-paramedic1-fifty.wav",
+ "made": "2026-11-13T21:05:15+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic1-b-kore.wav",
+ "why": "Priority Lane picked voice, one line",
+ "prompt": "trim 4.07-5.05 s, fades, loudnorm -16 LUFS"
+}

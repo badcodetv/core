@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-broken-cardiac-electronic-30ead36f.wav",
+ "made": "2026-11-13T20:57:22.147Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "30ead36f-b199-43ad-bda7-bc3a03bb4039",
+ "inputs": {
+  "title": "Priority Lane score r6-broken-cardiac-electronic",
+  "song": "https://suno.com/song/30ead36f-b199-43ad-bda7-bc3a03bb4039"
+ },
+ "settings": {
+  "durationSec": 21.24
+ }
+}

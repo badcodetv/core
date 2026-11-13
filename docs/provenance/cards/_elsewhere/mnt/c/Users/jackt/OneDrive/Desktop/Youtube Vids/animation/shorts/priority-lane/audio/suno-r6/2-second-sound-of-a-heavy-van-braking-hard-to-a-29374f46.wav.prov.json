@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/2-second-sound-of-a-heavy-van-braking-hard-to-a-29374f46.wav",
+ "made": "2026-11-13T20:52:23.426Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "29374f46-95f4-4bca-8077-30f37ee17118",
+ "inputs": {
+  "title": "2 Second Sound Of A Heavy Van Braking Hard To A ",
+  "song": "https://suno.com/song/29374f46-95f4-4bca-8077-30f37ee17118"
+ },
+ "settings": {
+  "durationSec": 8.4
+ }
+}

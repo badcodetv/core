@@ -191,5 +191,20 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 5: LS4-b-fix-a redone as LS5-a/b/c (Jack: gloves floating on the bag); the second paramedic now visible",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-13T21:06:50+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Round 3 rough cut (18.9 s): LS5-b/HD3-b/MIN1-b-charon/FL4-a, picked voices, Suno score r6 c5d8704d, Suno Sounds SFX, logo end card",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-13T21:06:50+00:00",
+  "stage": "picks",
+  "round": 5,
+  "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
+  "what": "Score round r6: 12 takes (6 clean-room ideas x 2) on the picks page"
  }
 ]

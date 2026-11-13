@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/6-second-sound-of-a-british-ambulance-electronic-956b121e.wav",
+ "made": "2026-11-13T20:50:52.563Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "956b121e-666d-4bef-9ab7-4c2a56e9fac7",
+ "inputs": {
+  "title": "6 Second Sound Of A British Ambulance Electronic",
+  "song": "https://suno.com/song/956b121e-666d-4bef-9ab7-4c2a56e9fac7"
+ },
+ "settings": {
+  "durationSec": 6
+ }
+}

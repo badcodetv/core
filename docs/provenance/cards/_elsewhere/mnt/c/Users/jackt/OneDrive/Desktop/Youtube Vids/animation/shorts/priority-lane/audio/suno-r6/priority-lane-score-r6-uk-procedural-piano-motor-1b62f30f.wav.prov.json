@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-uk-procedural-piano-motor-1b62f30f.wav",
+ "made": "2026-11-13T20:58:15.421Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "1b62f30f-e9d7-4f16-ac42-80f647ef20a7",
+ "inputs": {
+  "title": "Priority Lane score r6-uk-procedural-piano-motor",
+  "song": "https://suno.com/song/1b62f30f-e9d7-4f16-ac42-80f647ef20a7"
+ },
+ "settings": {
+  "durationSec": 22.4
+ }
+}

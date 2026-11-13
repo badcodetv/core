@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/5-second-sound-of-a-medical-monitor-flatline-on-b28a4fa2.preview.mp3",
+ "made": "2026-11-13T20:53:06.057Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "b28a4fa2-cf6b-4e75-8732-f669786997fd",
+ "inputs": {
+  "title": "5 Second Sound Of A Medical Monitor Flatline: On",
+  "song": "https://suno.com/song/b28a4fa2-cf6b-4e75-8732-f669786997fd"
+ },
+ "settings": {
+  "durationSec": 2
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/5-second-sound-of-a-medical-monitor-flatline-on-b28a4fa2.wav"
+}

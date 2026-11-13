@@ -17,7 +17,12 @@ AI Studio, model `gemini-3.1-flash-tts-preview`, wrapped as a director's note (`
 - **Driver: `Alnilam`**, `voices/r6-cleanroom/profiles/driver-b-alnilam.md` (Liverpool, early forties, ex-army, crisp, then loses it).
 - **Minister: `Charon`** (PICKED round 4, Jack), `voices/r6-cleanroom/profiles/minister-a-charon.md` (Home Counties, privately educated, smooth and irritated). Replaces Orus. His line is muffled through the car glass in the edit.
 
-## Round 3 (2026-11-13, Jack): Suno for it all, plus background music
+## Score and effects, round r6 (2026-11-13): EXPLORING, awaiting Jack's pick
+
+- **Score:** Suno, `songs/r6-score/` (variations round, 6 clean-room instrumental ideas, 20 s, workspace `short-priority-lane`). The rough cut uses **`c5d8704d` (subliminal pulse)** as a stand-in, chosen by the listening check (9/10: clinical, a shift at 6 s, room for voices); Shepard rise `16031e6a` and percussion `52895c20` also scored 9/10. All 12 takes on the picks page https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm. Cut dead on the flatline.
+- **Effects:** Suno Sounds, `songs/r6-sfx/` (one clean-room writer; driven by `scripts/suno/sounds.mjs`). In the cut: siren `956b121e` (inside the cab), cabin rain `88c2320f`, brakes `29374f46`, pass-by `3cad4a31`, flatline `cbe45667`. Suno's monitor beeped at 60 a minute, so one of its beeps (`0de628b4`) is laid at a quickening rate.
+- Takes recorded with `suno.mts record` (no downloads) into Desktop `priority-lane\audio\suno-r6\`.
+: Suno for it all, plus background music
 
 Jack: "lets do suno for it all, but add background music as well that fits the scene." Following Kai's note from the
 2026-11-13 meeting, the shorts' audio comes from Suno.

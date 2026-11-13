@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/7-second-sound-of-a-hospital-heart-monitor-beepi-0de628b4.preview.mp3",
+ "made": "2026-11-13T20:51:19.265Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "0de628b4-592e-4835-be49-5b3fe3d6afb2",
+ "inputs": {
+  "title": "7 Second Sound Of A Hospital Heart Monitor Beepi",
+  "song": "https://suno.com/song/0de628b4-592e-4835-be49-5b3fe3d6afb2"
+ },
+ "settings": {
+  "durationSec": 2
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/7-second-sound-of-a-hospital-heart-monitor-beepi-0de628b4.wav"
+}

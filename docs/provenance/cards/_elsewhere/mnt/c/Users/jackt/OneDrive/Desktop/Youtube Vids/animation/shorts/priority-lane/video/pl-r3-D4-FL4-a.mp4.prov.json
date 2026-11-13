@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-D4-FL4-a.mp4",
+ "made": "2026-11-13T20:19:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The man in green slowly lifts his hands and sits back on his heels, looking up at the screen beside him, which shows one straight green line that never changes. The ceiling light flickers once. Red light from the road outside lies across the ceiling. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL4-a.jpg",
+ "why": "Same note; the other way: the screen holds one unchanging straight green line.",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL4-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "r3-D4",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-13T20:06:04.192Z"
+ }
+}

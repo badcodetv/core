@@ -1,148 +1,155 @@
 {
- "story": "shorts",
- "scene": "priority-lane",
- "prefix": "pl",
- "title": "Priority Lane",
- "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 5: A. Losing him, redone. The gloves on the bag now belong to a visible second paramedic. Pick one.",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
- "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
- "beats": [
-  {
-   "key": "losing",
-   "at": "0:00",
-   "name": "A. Losing him",
-   "blurb": "Inside the ambulance at ER pace: a masked paramedic over the patient, 'BP 60 over 30, we're gonna lose him!'; the driver: 'Come on, get out of the way!'; the monitor racing."
+  "story": "shorts",
+  "scene": "priority-lane",
+  "prefix": "pl",
+  "title": "Priority Lane",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
+  "moodboard_intro": "Round 5: A. Losing him, redone. The gloves on the bag now belong to a visible second paramedic. Pick one.",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
+  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
+  "beats": [
+    {
+      "key": "losing",
+      "at": "0:00",
+      "name": "A. Losing him",
+      "blurb": "Inside the ambulance at ER pace: a masked paramedic over the patient, 'BP 60 over 30, we're gonna lose him!'; the driver: 'Come on, get out of the way!'; the monitor racing."
+    },
+    {
+      "key": "held",
+      "at": "0:05",
+      "name": "B. Held",
+      "blurb": "The light goes red; a police outrider's raised glove stops the ambulance. 'What's he doing?!'"
+    },
+    {
+      "key": "motorcade",
+      "at": "0:07",
+      "name": "C. The motorcade",
+      "blurb": "The minister's car crosses slowly, right in front of the ambulance; he's on the phone: 'I said raspberry-shaped hors d'oeuvres!' Bolder: seen through the ambulance windscreen, inches away, his line heard through the glass."
+    },
+    {
+      "key": "flatline",
+      "at": "0:11",
+      "name": "D. Flatline",
+      "blurb": "Back inside: the monitor goes flat. Hold a beat, then black and the BadCode logo (official file, laid on in the edit)."
+    }
+  ],
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
   },
-  {
-   "key": "held",
-   "at": "0:05",
-   "name": "B. Held",
-   "blurb": "The light goes red; a police outrider's raised glove stops the ambulance. 'What's he doing?!'"
+  "dialogue": {
+    "page": "https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
+    "options": "design/2026-11-13-shorts-dialogue-priority-lane-r3/options.json",
+    "picked": "1B",
+    "round": 3
   },
-  {
-   "key": "motorcade",
-   "at": "0:07",
-   "name": "C. The motorcade",
-   "blurb": "The minister's car crosses slowly, right in front of the ambulance; he's on the phone: 'I said raspberry-shaped hors d'oeuvres!' Bolder: seen through the ambulance windscreen, inches away, his line heard through the glass."
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+    "storyboard": "https://claude.ai/artifact/6xd6NLu5rKzecZR7kLzZ9V",
+    "timeline": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+    "moodboard_r1": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
+    "storyboard_r1": "https://claude.ai/artifact/RJ5FcwAW7NsDRfFiDPkq9j",
+    "timeline_r1": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
   },
-  {
-   "key": "flatline",
-   "at": "0:11",
-   "name": "D. Flatline",
-   "blurb": "Back inside: the monitor goes flat. Hold a beat, then black and the BadCode logo (official file, laid on in the edit)."
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/edl.json",
+    "by": "scripts/shorts/priority_lane_cut_r3.py",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/preview.mp4",
+    "script": "python3 scripts/shorts/priority_lane_cut_r3.py"
+  },
+  "premiere": {
+    "current": "r2",
+    "r2": {
+      "sequence": "shorts-1-priority-lane-r2",
+      "guid": "758d9e17-99fd-4286-b79d-05d0eada2437",
+      "bin": "shorts-1-priority-lane-r2",
+      "built": "2026-11-11",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/priority lane.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
+      "what": "round 2 agreed by Jack ('its done'): V1 five original Omni clips with in/out, V2 headline+logo overlay (alpha ProRes, 720x1280), A1 reporter lines, A2 minister (lip-synced), A3 clip ambience",
+      "how": "premiere-plan.py --tag r2 + place.js with a V2 overlay step; sequence 720x1280 from the Omni clips"
+    }
+  },
+  "beats_r1": [
+    {
+      "key": "outside",
+      "at": "0:00",
+      "name": "A. The whole outside view",
+      "blurb": "The junction: the outrider's raised glove, the ambulance held at the red light, the motorcade coming through."
+    },
+    {
+      "key": "ambulance",
+      "at": "0:04",
+      "name": "B. Inside the ambulance",
+      "blurb": "The crew with the patient, the red light and the stopped traffic through the windscreen."
+    },
+    {
+      "key": "reporter",
+      "at": "0:06",
+      "name": "C. The BadCode reporter",
+      "blurb": "On the pavement, mic in hand, to camera, with all of it behind."
+    },
+    {
+      "key": "minister",
+      "at": "0:11",
+      "name": "D. Inside the minister's car",
+      "blurb": "Back seat, on the phone, furious about lemon curd; blue lights through the rain."
+    }
+  ],
+  "existing": {
+    "losing": [
+      [
+        "NOW-AMB1-a",
+        "Round 1 ambulance (calm; to beat)",
+        "moodboard/current/NOW-AMB1-a.jpg"
+      ]
+    ],
+    "held": [
+      [
+        "NOW-OUT1-c",
+        "Round 1 outside (clip pl-01 exists)",
+        "moodboard/current/NOW-OUT1-c.jpg"
+      ]
+    ],
+    "motorcade": [
+      [
+        "NOW-MIN1-b",
+        "Round 1 minister (clip + lip-sync exist)",
+        "moodboard/current/NOW-MIN1-b.jpg"
+      ]
+    ]
+  },
+  "round": 3,
+  "brief": "brief.md (r3); r1 in brief-r1.md",
+  "dialogue_r1": {
+    "page": "https://claude.ai/artifact/KrWqm7FgqmCqheDDQbGgw1",
+    "options": "design/2026-11-10-shorts-dialogue-priority-lane/options.json",
+    "picked": "1D",
+    "round": 1
+  },
+  "picked": [
+    [
+      "LS4-b-fix-a",
+      "A. Losing him (LS4-b, badge removed)"
+    ],
+    [
+      "HD3-b",
+      "B. Held"
+    ],
+    [
+      "NOW-MIN1-b",
+      "C. The motorcade (round 1 minister, clip pl-04 + lip-sync)"
+    ],
+    [
+      "FL4-a",
+      "D. Flatline"
+    ]
+  ],
+  "board_round": 5,
+  "cut_r1": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
+    "by": "scripts/shorts/priority_lane_cut.py"
   }
- ],
- "video": {
-  "model": "Omni 1.2 Flash",
-  "aspect": "9:16",
-  "mode": "Frames",
-  "duration": 8
- },
- "dialogue": {
-  "page": "https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
-  "options": "design/2026-11-13-shorts-dialogue-priority-lane-r3/options.json",
-  "picked": "1B",
-  "round": 3
- },
- "boards": {
-  "moodboard": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
-  "storyboard": "https://claude.ai/artifact/6xd6NLu5rKzecZR7kLzZ9V",
-  "timeline": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn",
-  "moodboard_r1": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
-  "storyboard_r1": "https://claude.ai/artifact/RJ5FcwAW7NsDRfFiDPkq9j"
- },
- "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
-  "by": "scripts/shorts/priority_lane_cut.py"
- },
- "premiere": {
-  "current": "r2",
-  "r2": {
-   "sequence": "shorts-1-priority-lane-r2",
-   "guid": "758d9e17-99fd-4286-b79d-05d0eada2437",
-   "bin": "shorts-1-priority-lane-r2",
-   "built": "2026-11-11",
-   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/priority lane.prproj",
-   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
-   "what": "round 2 agreed by Jack ('its done'): V1 five original Omni clips with in/out, V2 headline+logo overlay (alpha ProRes, 720x1280), A1 reporter lines, A2 minister (lip-synced), A3 clip ambience",
-   "how": "premiere-plan.py --tag r2 + place.js with a V2 overlay step; sequence 720x1280 from the Omni clips"
-  }
- },
- "beats_r1": [
-  {
-   "key": "outside",
-   "at": "0:00",
-   "name": "A. The whole outside view",
-   "blurb": "The junction: the outrider's raised glove, the ambulance held at the red light, the motorcade coming through."
-  },
-  {
-   "key": "ambulance",
-   "at": "0:04",
-   "name": "B. Inside the ambulance",
-   "blurb": "The crew with the patient, the red light and the stopped traffic through the windscreen."
-  },
-  {
-   "key": "reporter",
-   "at": "0:06",
-   "name": "C. The BadCode reporter",
-   "blurb": "On the pavement, mic in hand, to camera, with all of it behind."
-  },
-  {
-   "key": "minister",
-   "at": "0:11",
-   "name": "D. Inside the minister's car",
-   "blurb": "Back seat, on the phone, furious about lemon curd; blue lights through the rain."
-  }
- ],
- "existing": {
-  "losing": [
-   [
-    "NOW-AMB1-a",
-    "Round 1 ambulance (calm; to beat)",
-    "moodboard/current/NOW-AMB1-a.jpg"
-   ]
-  ],
-  "held": [
-   [
-    "NOW-OUT1-c",
-    "Round 1 outside (clip pl-01 exists)",
-    "moodboard/current/NOW-OUT1-c.jpg"
-   ]
-  ],
-  "motorcade": [
-   [
-    "NOW-MIN1-b",
-    "Round 1 minister (clip + lip-sync exist)",
-    "moodboard/current/NOW-MIN1-b.jpg"
-   ]
-  ]
- },
- "round": 3,
- "brief": "brief.md (r3); r1 in brief-r1.md",
- "dialogue_r1": {
-  "page": "https://claude.ai/artifact/KrWqm7FgqmCqheDDQbGgw1",
-  "options": "design/2026-11-10-shorts-dialogue-priority-lane/options.json",
-  "picked": "1D",
-  "round": 1
- },
- "picked": [
-  [
-   "LS4-b-fix-a",
-   "A. Losing him (LS4-b, badge removed)"
-  ],
-  [
-   "HD3-b",
-   "B. Held"
-  ],
-  [
-   "NOW-MIN1-b",
-   "C. The motorcade (round 1 minister, clip pl-04 + lip-sync)"
-  ],
-  [
-   "FL4-a",
-   "D. Flatline"
-  ]
- ],
- "board_round": 5
 }

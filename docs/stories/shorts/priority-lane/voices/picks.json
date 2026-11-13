@@ -1,13 +1,94 @@
 {
  "title": "Priority Lane Voices",
- "eyebrow": "Priority Lane · voice casting · round 4",
- "heading": "Who is in the ambulance?",
- "intro": "Round 4: the minister, recast the same way as the crew (short director's note, light real accent) so he sits in the same world. Crew picked in round 3: Kore, Algieba, Alnilam. The old Orus pick is option d, for comparison. His line is muffled through the glass in the edit.",
+ "eyebrow": "Priority Lane · picks · round 5",
+ "heading": "Pick the score",
+ "intro": "Round 5: the background score. Six different ideas from separate clean-room writers, two takes each, recorded off Suno (no downloads). The rough cut uses a1 (the clinical pulse); pick another and I'll swap it in. Only the first ~14 s plays in the cut, and it stops dead on the flatline.",
  "sections": [
   {
    "h": "Voices",
    "lede": "Real lines from the locked dialogue (1D).",
    "groups": [
+    {
+     "slot": "score-r6",
+     "round": 5,
+     "title": "The score",
+     "line": "Under the whole short; cut dead at the flatline.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a1",
+       "src": "score-r6/c5d8704d.mp3",
+       "label": "a1: subliminal pulse",
+       "warn": "clinical ticking pulse, shift at 6 s (in the cut)"
+      },
+      {
+       "id": "a2",
+       "src": "score-r6/50e03758.mp3",
+       "label": "a2: subliminal pulse",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "score-r6/16031e6a.mp3",
+       "label": "b1: Shepard rise",
+       "warn": "endless-rise ostinato, whoosh at 6 s"
+      },
+      {
+       "id": "b2",
+       "src": "score-r6/c1fa7a39.mp3",
+       "label": "b2: Shepard rise",
+       "warn": ""
+      },
+      {
+       "id": "c1",
+       "src": "score-r6/52895c20.mp3",
+       "label": "c1: percussion only",
+       "warn": "hand drums, heavy hits from 6 s"
+      },
+      {
+       "id": "c2",
+       "src": "score-r6/bec07ebd.mp3",
+       "label": "c2: percussion only",
+       "warn": ""
+      },
+      {
+       "id": "d1",
+       "src": "score-r6/730f5693.mp3",
+       "label": "d1: viola tremolo",
+       "warn": "dark strings, solo violin, hit at 9 s"
+      },
+      {
+       "id": "d2",
+       "src": "score-r6/134f7866.mp3",
+       "label": "d2: viola tremolo",
+       "warn": ""
+      },
+      {
+       "id": "e1",
+       "src": "score-r6/0094f4a1.mp3",
+       "label": "e1: UK procedural piano",
+       "warn": "racing synth ostinato, action-leaning"
+      },
+      {
+       "id": "e2",
+       "src": "score-r6/1b62f30f.mp3",
+       "label": "e2: UK procedural piano",
+       "warn": ""
+      },
+      {
+       "id": "f1",
+       "src": "score-r6/f921cfe5.mp3",
+       "label": "f1: broken cardiac electronica",
+       "warn": "glitchy electronic, tape-stop at 6 s"
+      },
+      {
+       "id": "f2",
+       "src": "score-r6/30ead36f.mp3",
+       "label": "f2: broken cardiac electronica",
+       "warn": ""
+      }
+     ]
+    },
     {
      "slot": "minister-r4",
      "round": 4,
@@ -230,5 +311,5 @@
    ]
   }
  ],
- "round": 4
+ "round": 5
 }

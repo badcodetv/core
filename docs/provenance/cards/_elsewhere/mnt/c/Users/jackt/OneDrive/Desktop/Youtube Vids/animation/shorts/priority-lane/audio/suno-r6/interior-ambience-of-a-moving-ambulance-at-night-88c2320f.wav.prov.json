@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/interior-ambience-of-a-moving-ambulance-at-night-88c2320f.wav",
+ "made": "2026-11-13T20:51:43.613Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "88c2320f-d3f9-4b76-a478-7b630398803b",
+ "inputs": {
+  "title": "Interior Ambience Of A Moving Ambulance At Night",
+  "song": "https://suno.com/song/88c2320f-d3f9-4b76-a478-7b630398803b"
+ },
+ "settings": {
+  "durationSec": 14.24
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
+ "made": "2026-11-13T19:45:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Inside a speeding ambulance at night. The paramedic in the surgical mask twists from the heart monitor towards the cab and shouts forward, her gloved hand gripping the yellow grab rail as the whole compartment sways from side to side. The green trace on the monitor races. Behind her the second paramedic keeps pressing on the patient's chest. Blue light flickers through the windscreen. Filmed like real handheld news footage, quick movements blurring the way a film camera blurs them. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS5-b.jpg",
+ "why": "Jack 2026-11-13 storyboard round 3: A, she shouts forward",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS5-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "r3-A",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-13T19:42:22.863Z"
+ }
+}

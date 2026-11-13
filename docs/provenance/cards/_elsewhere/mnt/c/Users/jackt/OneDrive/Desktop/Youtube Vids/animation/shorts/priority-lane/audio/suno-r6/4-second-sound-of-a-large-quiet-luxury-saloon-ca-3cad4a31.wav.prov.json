@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/4-second-sound-of-a-large-quiet-luxury-saloon-ca-3cad4a31.wav",
+ "made": "2026-11-13T20:52:38.582Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "3cad4a31-60ad-4a5c-824d-0f1eac1c5dce",
+ "inputs": {
+  "title": "4 Second Sound Of A Large Quiet Luxury Saloon Ca",
+  "song": "https://suno.com/song/3cad4a31-60ad-4a5c-824d-0f1eac1c5dce"
+ },
+ "settings": {
+  "durationSec": 11
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-minister-charon-dub.wav",
+ "made": "2026-11-13T21:05:16+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav",
+ "why": "Minister re-dub to Charon, fitted to clip pl-04",
+ "prompt": "phrase table docs/stories/shorts/priority-lane/voices/minister-charon-dub.json"
+}

@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4",
+ "made": "2026-11-13T19:43:50+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+ "why": "Priority Lane minister re-dubbed to the picked Charon voice (lip-sync-dub), 2026-11-13",
+ "prompt": "{\n \"_note\": \"Priority Lane minister re-dub to Charon (2026-11-13). Mouth speech span 0.71-3.46 s on pl-04 (measured 2026-11-11 for the Orus dub). Charon's take speaks 0.26-2.60 (2.34 s), so x0.87 fills ~2.69 s. v2: the single placement ran ~0.15 s early on 'I said raspberry' (mouth opens ~0.88 on the mouth-track strip; first closure 1.54-1.58), so split at the natural gap: phrase 1 at natural speed from 0.90, phrase 2 at x0.87 from 1.90 so the p of 'shaped' lands on the 2.33-2.46 closure and the line ends with the mouth (~3.5).\",\n \"duration\": 8.042667,\n \"phrases\": [\n  {\n   \"src\": \"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav\",\n   \"from\": 0.22,\n   \"to\": 1.22,\n   \"at\": 0.9,\n   \"tempo\": 1.0,\n   \"text\": \"I said raspberry\"\n  },\n  {\n   \"src\": \"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav\",\n   \"from\": 1.22,\n   \"to\": 2.64,\n   \"at\": 1.9,\n   \"tempo\": 0.87,\n   \"text\": \"shaped hors d'oeuvres!\"\n  }\n ]\n}"
+}
