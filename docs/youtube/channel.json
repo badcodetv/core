@@ -7,9 +7,56 @@
     "keywords": "BadCode \"badcode tv\" \"sci-fi short film\" \"AI short film\" \"short film\" \"music video\" \"political music video\" \"political satire\" satire \"dark comedy\" \"cost of living\" inequality \"wealth inequality\" automation \"job losses\" \"money printing\" landlords rent \"tax havens\" homelessness \"UK politics\" \"British satire\" \"British sci-fi\" dystopia \"AI from the future\" \"Git Push Origin Master\" \"Karen will lead the revolution\" \"The bank robbery\" \"drum and bass\" \"The Rules Are Not Working Anymore\"",
     "defaultLanguage": "en"
   },
-  "syncedAt": "2026-11-12T16:20:38.802Z",
+  "syncedAt": "2026-11-13T18:14:33.598Z",
   "count": 5,
   "videos": [
+    {
+      "id": "TMIMX1V3iGg",
+      "title": "The bank robbery",
+      "description": "Your grandparents fought the Nazis for this country. Their grandkids can't get a one-bed. Nobody's looking at the bank.\nA British heist comedy about rent, a greasy spoon and the bank across the road.\n\nTHE REGULARS\n\nBarry. Hi-vis, full English, nine hundred quid for a box room.\nDenise. Owns the café. The landlord's put her rent up twice this year, and the council's put her rates up for the privilege.\n\nACROSS THE ROAD\n\nA back room, a bottle, and people who run things. A man just \"out\" of a very big job. One politician from each side, who get on fine when nobody's filming. No masks. Nobody's ever looked at them.\n\nTHE JOB\n\nBarry and Denise have the same problem and a different culprit each. Both of them are right. Neither of them is looking at the bank.\n\nSomebody planned this, and it wasn't Barry or Denise. I've seen how this job ends. They haven't, yet.\n\nTwo and a half minutes. Watch the bank.\n\nMade by machines trained on work nobody was paid for. So was the future I come from.\nThe full account: https://www.badcode.tv/how-we-made-it\n\nThe story: https://www.badcode.tv/stories/4?src=yt\nNext: The bank robbery (music video) https://youtu.be/XinO1Kze_5A\n\nCredits\nMusic under the vault: \"Reloaded\" by Darkfluxx (freemusicarchive.org/music/darkfluxx), licensed under CC BY 4.0 (creativecommons.org/licenses/by/4.0/)\nScore: HoliznaCC0 (CC0)\nPrinting press footage: \"New 20 Euro Banknotes Printing Production\", European Central Bank, CC BY 3.0 (creativecommons.org/licenses/by/3.0/), via Wikimedia Commons, modified\nWartime archive: Battle of North Africa, Part 1 (The Big Picture), U.S. Army; Divide and Conquer, U.S. War Department, FDR Presidential Library; War Pictorial News No. 91 (1943), U.S. National Archives. All via archive.org\n\n#ShortFilm #CostOfLiving #HousingCrisis",
+      "tags": [
+        "AI short film",
+        "BadCode",
+        "British short film",
+        "The bank robbery",
+        "UK short film",
+        "WW2",
+        "badcode tv",
+        "bank robbery short film",
+        "box room",
+        "cafe",
+        "can't afford rent",
+        "comedy short film",
+        "cost of living",
+        "grandparents",
+        "greasy spoon",
+        "heist comedy",
+        "heist short film",
+        "housing crisis",
+        "landlord",
+        "one bed flat",
+        "political satire",
+        "rent",
+        "rent rise",
+        "satire",
+        "short film"
+      ],
+      "categoryId": "1",
+      "defaultLanguage": "en-GB",
+      "defaultAudioLanguage": "en-GB",
+      "privacyStatus": "private",
+      "publishedAt": "2026-11-13T18:07:23Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "duration": "PT2M29S",
+      "frame": {
+        "width": 1920,
+        "height": 1080
+      },
+      "isShort": false,
+      "url": "https://youtu.be/TMIMX1V3iGg",
+      "aiLabel": "yes (set by us)"
+    },
     {
       "id": "20YNNQYph0Q",
       "title": "Git Push Origin Master",
@@ -40,9 +87,14 @@
       "categoryId": "22",
       "privacyStatus": "private",
       "publishedAt": "2026-11-12T16:17:49Z",
-      "uploadStatus": "uploaded",
+      "uploadStatus": "processed",
       "madeForKids": false,
-      "duration": "P0D",
+      "duration": "PT9M14S",
+      "frame": {
+        "width": 1920,
+        "height": 1080
+      },
+      "isShort": false,
       "url": "https://youtu.be/20YNNQYph0Q",
       "aiLabel": "yes (set by us)"
     },
@@ -170,48 +222,6 @@
       },
       "isShort": false,
       "url": "https://youtu.be/c9jhLpkjv6o",
-      "aiLabel": "yes (set by us)"
-    },
-    {
-      "id": "OaP0RthL_0Q",
-      "title": "Git Push Origin Master (replaced 12 Nov)",
-      "description": "Somebody pushed the code live without checking it. A sci-fi short film scored in drum & bass, told by an AI from a future that already went wrong.\n\nIt starts on the news. Office workers sent home. The economy coming apart a bulletin at a time. Everyone very calm about it.\n\nNobody tested it, because testing costs money today and the damage comes due tomorrow. Somebody made that call. I know, because I'm what came of it.\n\nYou still have time to read the code before you ship it. That's why I'm here.\n\nWatch it with the sound up. The track is the first half of the story.\n\nMade by machines trained on work nobody was paid for. So was the future I come from.\nThe full account: https://www.badcode.tv/how-we-made-it\n\nThe story, the song and the rest: https://www.badcode.tv/stories/1?src=yt\nNext: Karen will lead the revolution (music video) https://youtu.be/c9jhLpkjv6o\n\n#drumandbass #scifi #shortfilm",
-      "tags": [
-        "AI future",
-        "AI short film",
-        "BadCode",
-        "British sci-fi",
-        "Git Push Origin Master",
-        "UK short film",
-        "artificial intelligence",
-        "automation",
-        "badcode tv",
-        "cost of living",
-        "dnb",
-        "dnb music video",
-        "drum and bass",
-        "drum and bass music video",
-        "dystopia",
-        "dystopian short film",
-        "git push origin master",
-        "redundancies",
-        "sci-fi short film",
-        "short film",
-        "superintelligence"
-      ],
-      "categoryId": "22",
-      "defaultAudioLanguage": "en-US",
-      "privacyStatus": "private",
-      "publishedAt": "2026-11-04T20:36:01Z",
-      "uploadStatus": "processed",
-      "madeForKids": false,
-      "duration": "PT9M32S",
-      "frame": {
-        "width": 1920,
-        "height": 1080
-      },
-      "isShort": false,
-      "url": "https://youtu.be/OaP0RthL_0Q",
       "aiLabel": "yes (set by us)"
     }
   ]
