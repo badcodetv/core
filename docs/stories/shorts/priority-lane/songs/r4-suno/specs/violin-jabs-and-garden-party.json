@@ -1,0 +1,17 @@
+{
+  "style": "Cinematic chamber suspense cue, voices talked and yelled rather than sung, raw broadcast-drama acting, working-class English crew: a ragged Somerset-burred woman, a flat-vowelled Bolton man, a gruff Cumbrian driver. Each yell punctuated by a single vicious sforzando violin jab with a hard gap of silence after it, a grinding low cello pedal tone beneath, rain-lashed siren, quick ECG pips. Midway the score flips to a prim tinkling harpsichord minuet with a dainty string quartet in triple time, distant as if leaking from a limousine; a fruity, port-soaked Home Counties aristocrat sneers through the glass. Ends abruptly on one unbroken ECG beep, nothing after",
+  "exclude": "American accent, US twang, melodic vocal, rap, choir, pop, drum kit, groove, comedy, upbeat, synth, electric guitar, autotune, fade out, long intro, reverb wash",
+  "lyrics": "[Cold open: rain, siren, cello pedal growling, ECG pips racing]\n[Yelled, Somerset woman, frantic]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[One violin jab]\n[Yelled, Bolton man, out of breath]\nSats dropping, he's peri-arrest!\n[One violin jab]\n[Roared, Cumbrian driver, at the windscreen]\nTwo minutes out! Get the fuck out of the way!\n[One violin jab, tyres skid, siren dies]\n[Talked, Bolton man, baffled]\nWhy have we stopped?!\n[Dainty harpsichord minuet with string quartet, faint, through car glass]\n[Talked, fruity old aristocrat, muffled, sulking]\nI said raspberry-shaped hors d'oeuvres!\n[Minuet snaps off, ECG pips slow]\n[Barely audible, Somerset woman]\nFifty over twen—\n[One unbroken ECG beep]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true,
+  "title": "PL r4-violin-jabs-and-garden-party",
+  "mode": "custom",
+  "workspace": "short-priority-lane"
+}

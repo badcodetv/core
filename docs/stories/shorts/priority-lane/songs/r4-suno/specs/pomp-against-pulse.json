@@ -1,0 +1,17 @@
+{
+  "style": "English-spoken radio-play drama, voices talk rather than sing, gritty Yorkshire police-thriller score. Two clashing sound worlds. Inside the ambulance: thumping taiko pulse like a racing heart, a lone viola sawing raw, snarling dirty vintage synths, rain on metal, two-tone siren, rapid ECG bleeps; a breathless young Londoner woman in Multicultural London English and a worn-out gravel-voiced Sheffield bloke. Outside, the minister's limousine: the music sinks behind thick glass into a remote ceremonial parade, regal brass and cathedral organ, the only grandeur anywhere; one nasal, braying Etonian toff, petulant and spoilt. A long unbroken ECG whine closes it, followed by total quiet. Dry, close-miked, 14 seconds.",
+  "exclude": "American accent, sung vocals, melody, chorus, rap, autotune, cheerful, comedic, upbeat pop, music after the flatline",
+  "lyrics": "[Intro: two-tone siren, taiko heartbeat, sawing viola, dirty synth]\n\n[Shouted, young London woman, MLE]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Shouted, weary Sheffield man]\nSats dropping, he's peri-arrest!\n\n[Yelled, hoarse Northern driver]\nTwo minutes out! Get the fuck out of the way!\n\n[Heartbeat drums halt, siren fades]\n\n[Spoken, Sheffield man, bewildered]\nWhy have we stopped?!\n\n[Distant regal brass and cathedral organ, heard through car glass]\n[Spoken, braying Etonian toff, muffled]\nI said raspberry-shaped hors d'oeuvres!\n\n[Parade cuts dead, bleeps slow]\n[Whispered, London woman]\nFifty over twen—\n\n[Flatline]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": true,
+  "title": "PL r4-pomp-against-pulse",
+  "mode": "custom",
+  "workspace": "short-priority-lane"
+}

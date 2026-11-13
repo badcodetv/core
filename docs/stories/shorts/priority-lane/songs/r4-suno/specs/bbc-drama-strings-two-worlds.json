@@ -1,0 +1,17 @@
+{
+  "style": "Spoken English voices, British accents, no singing. Yorkshire woman paramedic, hoarse, breathless, shouting; Mancunian man paramedic, gruff Manchester voice, talking over her; West Midlands Brummie driver bellowing over a wailing siren. Then a different world: an elderly upper-class English gentleman, cut-glass Received Pronunciation, deep bored baritone, clipped and petulant, muffled behind a thick car window. Underscore of a BBC Sunday-night hospital drama: frantic chamber-string ostinato, low synth pulse at heartbeat tempo, rain, heart monitor beeping faster. Strings stop dead at a red light, leaving rain and an idling engine. Under the posh man, one thin sustained high violin note only. Ends on a flat continuous monitor tone, then silence.",
+  "exclude": "American accent, singing, sung melody, chorus, rap, choir, backing vocals, drum kit, beat, pop, comedy, upbeat, autotune",
+  "lyrics": "[Intro: siren, rain, racing strings, fast monitor beeps]\n\n[Spoken, shouted. Paramedic Shirley, Yorkshire woman, hoarse]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n\n[Spoken, over her. Paramedic Gaz, Mancunian man, gruff]\nSats dropping, he's peri-arrest!\n\n[Spoken, bellowed over the siren. Driver Dean, Brummie]\nTwo minutes out! Get the fuck out of the way!\n\n[Strings cut dead. Rain, idling engine]\n\n[Spoken. Gaz]\nWhy have we stopped?!\n\n[One thin high violin note. Muffled behind glass. Sir Rupert, elderly posh English gentleman, bored]\nI said raspberry-shaped hors d'oeuvres!\n\n[Spoken, quiet. Shirley]\nFifty over twen—\n\n[Flatline tone]\n\n[Silence]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    30
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false,
+  "title": "PL r4-bbc-drama-strings-two-worlds",
+  "mode": "custom",
+  "workspace": "short-priority-lane"
+}

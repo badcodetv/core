@@ -1,0 +1,17 @@
+{
+  "style": "British voices, London crime-drama trailer, UK telly thriller cut. Shouted English speech, not singing. Metronomic clock tick and a noise riser swelling beneath panicked East End paramedics. A single enormous low braam lands with a falling sub, slamming the momentum to a halt. A thin, reedy, plummy toff shrieks a spoilt tantrum behind a car window. Pitched riser climbing again, ending on one long cardiac monitor whine, then nothing at all.",
+  "exclude": "American accent, US accent, Hollywood, epic orchestra, choir, singing, sung chorus, melodic vocal, rap, cheerful, comedy, trailer voiceover, fade out",
+  "lyrics": "[Intro: steady clock tick, noise riser swelling, siren hissing through rain]\n[Spoken, screamed: Essex woman, paramedic, desperate]\nSixty over thirty! Fucking hurry up, we're gonna lose him!\n[Spoken, shouted: Cockney man, paramedic, out of breath]\nSats dropping, he's peri-arrest!\n[Spoken, bellowed: Cockney driver, furious at the traffic]\nTwo minutes out! Get the fuck out of the way!\n[Massive braam, sub falls away, the ambulance halts]\n[Spoken: Cockney man, stunned]\nWhy have we stopped?!\n[Spoken, through car glass but loud: reedy, nasal, plummy English toff, spoilt schoolboy tantrum]\nI said raspberry-shaped hors d'oeuvres!\n[Pitched riser climbing, monitor beeps slowing]\n[Spoken, hushed: Essex woman, almost inaudible]\nFifty over twen—\n[Monitor flatline, the last hit]\n[Nothing]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 14,
+  "maxMode": false,
+  "title": "PL r4-british-thriller-trailer-braams",
+  "mode": "custom",
+  "workspace": "short-priority-lane"
+}
