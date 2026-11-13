@@ -110,6 +110,31 @@ will not admit it.
 | Suno | Music generator asked to talk | 🔴 Closed — **Suno cannot make silence.** Fourteen rounds bought a voice, not a narration engine |
 | Local clone (Chatterbox / Qwen3-TTS) | Clone the approved Suno take on the 4070 | 🟡 Still viable, still needs a clean reference clip, still rejected by ear once |
 
+## 🆕 CHECK 2026-11-13: "the voices were way better before, now uncanny valley" (Jack)
+
+- ✅ **Our renders did not change model.** All 861+ provenance cards (Karen, Bank Robbery, Priority Lane) say
+  `gemini-3.1-flash-tts-preview`, the same model that made the voices Jack liked.
+- 🔴 **That model shuts down on 2026-11-17.** Google's
+  [deprecations page](https://ai.google.dev/gemini-api/docs/deprecations) retires `gemini-3.1-flash-tts-preview`
+  (and the 2.5 preview TTS models) and names `gemini-3.8-flash-tts` / `gemini-3.8-flash-lite-tts` as the replacements
+  ([Firebase](https://firebase.google.com/docs/ai-logic/generate-speech) gives the same date). `scripts/aistudio-tts.py` and
+  the other scripts that hard-code the 3.1 string will stop working then. Moving to 3.8 is owed, and it needs a
+  test by ear first, because 3.8 has no British accent filter and Voice Design is paid-tier (see the 2026-10-03 note).
+- ⬜ **Unverified: whether Google changed 3.1 quietly before the shutdown.** We found no report of a
+  redirect or a re-tune. The known 3.1 faults are older: the voice identity drifts between requests
+  ([forum](https://discuss.ai.google.dev/t/gemini-3-1-flash-tts-preview-voice-identity-changes-between-separate-requests/179498)),
+  and quality falls apart past about 60 s ([ttsaudit](https://ttsaudit.com/blog/gemini-3-1-flash-tts-long-form-quality)).
+- ⬜ **Suspects on our side, untested:**
+  1. **The web page defaults to 3.8** (since 2026-09-23). A take made by hand in the browser without checking
+     the model picker is a 3.8 take, not a 3.1 take.
+  2. **The voice resets on its own** in the web page (seen 2026-10-03). Check Speaker settings → **Current**.
+  3. **The profiles got heavier.** Jack's best pick (3 Oct) was `Zubenelgenubi` + British (Brixton) with **every
+     other box empty**. Priority Lane's casting profiles run 58–69 words over several fields. Google's own advice
+     is not to overspecify.
+- **The fair test:** render one Priority Lane line twice, once with the old 3 Oct recipe (voice + accent, nothing else)
+  and once with the Priority Lane profile, and Jack picks blind. If the bare one wins, the cause is prompting; if both
+  sound uncanny, it is the engine.
+
 ## 🆕 UPDATE 2026-10-03 — the page changed, and the speech page CAN be driven from code
 
 Observed live on Jack's Ultra login, driving the logged-in Chrome over CDP (Money For Something
