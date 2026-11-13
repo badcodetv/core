@@ -1,0 +1,70 @@
+{
+ "title": "Rap Gesture Picks",
+ "eyebrow": "Camping MV \u00b7 balaclava rappers \u00b7 round 7",
+ "heading": "Pick the gesturing for each rap shot",
+ "intro": "Five examples, as asked: the same shot (m12, under the flyover) from the same start frame, once in each of the five prompt patterns from today's web research, each written by its own sealed writer. \"now\" is the clip in camping song 2 beat 2 (the terrible gesturing). T1 handheld UK freestyle, T2 lens pushed into his face, T3 still camera and understated, T4 a mate filming on a phone, T5 one timed gesture per two seconds. s01 also has a T1 take. Pick the pattern you want (or none, with a note) and it gets written for all 13 shots.",
+ "sections": [
+  {
+   "h": "The rough sleeper (Bob's verses)",
+   "lede": "Duct-tape mask.",
+   "groups": [
+    {
+     "slot": "m12",
+     "title": "m12: night, under a concrete road flyover in London",
+     "line": "\"Once again, and you catching my eye, and you looking to decide in shame, but why now?\"",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "media/m12-now.mp4",
+       "label": "now (in beat 2)"
+      },
+      {
+       "id": "t1",
+       "src": "media/m12-t1.mp4",
+       "label": "T1 UK freestyle oner"
+      },
+      {
+       "id": "t2",
+       "src": "media/m12-t2.mp4",
+       "label": "T2 fisheye in the face"
+      },
+      {
+       "id": "t3",
+       "src": "media/m12-t3.mp4",
+       "label": "T3 locked, understated"
+      },
+      {
+       "id": "t4",
+       "src": "media/m12-t4.mp4",
+       "label": "T4 phone take"
+      },
+      {
+       "id": "t5",
+       "src": "media/m12-t5.mp4",
+       "label": "T5 timecoded accents"
+      }
+     ]
+    },
+    {
+     "slot": "s01",
+     "title": "s01: night, a narrow London brick alley with wheelie bins and a wall vent",
+     "line": "\"Once again, and you catching my eye ... but why now?\"",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "media/s01-now.mp4",
+       "label": "now (in beat 2)"
+      },
+      {
+       "id": "t1",
+       "src": "media/s01-t1.mp4",
+       "label": "T1 UK freestyle oner"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

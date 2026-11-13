@@ -1,0 +1,168 @@
+{"at":"2026-11-07T20:57:58.910Z","event":"wave","wave":1,"missing":11,"submitting":["m12g","s02g","s03g","s04g"]}
+{"at":"2026-11-07T20:58:33.783Z","event":"submitted","key":"m12g","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-07T20:59:03.006Z","event":"submitted","key":"s02g","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-07T20:59:31.625Z","event":"submitted","key":"s03g","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-07T21:00:42.583Z","event":"submit-retry","key":"s04g","attempt":1,"why":"SUBMIT_UNCONFIRMED s04g"}
+{"at":"2026-11-07T21:01:07.858Z","event":"submitted","key":"s04g","wave":1,"cast":false,"attempt":2}
+{"at":"2026-11-07T21:01:07.868Z","event":"poll","fresh":4,"done":3,"want":4}
+{"at":"2026-11-07T21:01:22.877Z","event":"poll","fresh":4,"done":3,"want":4}
+{"at":"2026-11-07T21:01:35.406Z","event":"poll","fresh":4,"done":3,"want":4}
+{"at":"2026-11-07T21:01:50.416Z","event":"poll","fresh":4,"done":4,"want":4}
+{"at":"2026-11-07T21:02:00.679Z","event":"harvested","i":0,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-000.mp4"}
+{"at":"2026-11-07T21:02:04.987Z","event":"harvested","i":1,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-001.mp4"}
+{"at":"2026-11-07T21:02:12.043Z","event":"harvested","i":2,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-002.mp4"}
+{"at":"2026-11-07T21:02:16.009Z","event":"harvested","i":3,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-003.mp4"}
+raw-000.mp4: s04g (5)
+raw-001.mp4: s03g (10)
+raw-002.mp4: s02g (16)
+raw-003.mp4: m12g (11)
+  -> cb-s04g-s04gr9-a.mp4
+  -> cb-s03g-s03gr9-a.mp4
+  -> cb-s02g-s02gr9-a.mp4
+  -> cb-m12g-m12gr9-a.mp4
+{"have": ["m12", "m12g", "m12p", "m12t1", "m12t2", "m12t3", "m12t4", "m12t5", "m12v", "s01", "s01p", "s01t1", "s01t3", "s01v", "s02", "s02em", "s02fc", "s02g", "s02kl", "s02mm", "s02p", "s02t3", "s02v", "s03", "s03g", "s03p", "s03t3", "s03v", "s04", "s04g", "s04p", "s04t3", "s04v", "s05", "s05p", "s05t3", "s05v", "s06", "s06p", "s06t3", "s06v", "t03", "t03p", "t03t3", "t03v", "t04", "t04p", "t04t3", "t04v", "t05", "t05p", "t05t3", "t05v", "t06", "t06ab", "t06gf", "t06p", "t06rr", "t06rz", "t06t3", "t06v", "t07", "t07p", "t07t3", "t07v", "t08", "t08p", "t08t3", "t08v"]}
+{"at":"2026-11-07T21:02:23.383Z","event":"wave-done","wave":1,"remaining":7}
+{"at":"2026-11-07T21:02:23.436Z","event":"wave","wave":2,"missing":7,"submitting":["s05g","s06g","t03g","t04g"]}
+{"at":"2026-11-07T21:03:33.853Z","event":"submit-retry","key":"s05g","attempt":1,"why":"SUBMIT_UNCONFIRMED s05g"}
+{"at":"2026-11-07T21:04:40.319Z","event":"submit-retry","key":"s05g","attempt":2,"why":"SUBMIT_UNCONFIRMED s05g"}
+{"at":"2026-11-07T21:05:04.757Z","event":"submitted","key":"s05g","wave":2,"cast":false,"attempt":3}
+{"at":"2026-11-07T21:05:46.273Z","event":"submitted","key":"s06g","wave":2,"cast":false,"attempt":1}
+{"at":"2026-11-07T21:06:18.061Z","event":"submitted","key":"t03g","wave":2,"cast":false,"attempt":1}
+{"at":"2026-11-07T21:06:49.616Z","event":"submitted","key":"t04g","wave":2,"cast":false,"attempt":1}
+{"at":"2026-11-07T21:06:49.624Z","event":"poll","fresh":3,"done":2,"want":4}
+{"at":"2026-11-07T21:07:02.152Z","event":"poll","fresh":3,"done":2,"want":4}
+{"at":"2026-11-07T21:07:17.163Z","event":"poll","fresh":3,"done":2,"want":4}
+{"at":"2026-11-07T21:07:29.694Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:07:44.703Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:07:57.236Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:08:12.260Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:08:24.788Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:08:39.808Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:08:52.360Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:09:07.388Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:09:22.435Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:09:34.978Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:09:50.004Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:10:02.535Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:10:17.548Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:10:30.078Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:10:45.104Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:10:57.635Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:11:12.648Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:11:25.179Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:11:40.195Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:11:52.733Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:12:07.744Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:12:22.761Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:12:35.304Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:12:50.330Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:13:02.874Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:13:17.928Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:13:30.456Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:13:45.467Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:13:58.012Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:14:13.033Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:14:25.575Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:14:40.589Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:14:53.134Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:15:08.152Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:15:20.699Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:15:35.715Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:15:50.732Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:16:03.278Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:16:18.302Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:16:30.831Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:16:45.859Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:16:58.407Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:17:13.420Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:17:25.960Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:17:40.985Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:17:53.528Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:18:08.549Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:18:21.086Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:18:36.100Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:18:48.632Z","event":"poll","fresh":3,"done":3,"want":4}
+{"at":"2026-11-07T21:19:17.042Z","event":"harvested","i":0,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-000.mp4"}
+{"at":"2026-11-07T21:19:20.315Z","event":"harvested","i":1,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-001.mp4"}
+{"at":"2026-11-07T21:19:24.681Z","event":"harvested","i":2,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-002.mp4"}
+{"at":"2026-11-07T21:19:28.816Z","event":"harvested","i":3,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-003.mp4"}
+raw-000.mp4: t04g (10)
+raw-001.mp4: t03g (13)
+raw-002.mp4: s06g (10)
+raw-003.mp4: s05g (13)
+  -> cb-t04g-t04gr9-a.mp4
+  -> cb-t03g-t03gr9-b.mp4
+  -> cb-s06g-s06gr9-a.mp4
+  -> cb-s05g-s05gr9-a.mp4
+{"have": ["m12", "m12g", "m12p", "m12t1", "m12t2", "m12t3", "m12t4", "m12t5", "m12v", "s01", "s01p", "s01t1", "s01t3", "s01v", "s02", "s02em", "s02fc", "s02g", "s02kl", "s02mm", "s02p", "s02t3", "s02v", "s03", "s03g", "s03p", "s03t3", "s03v", "s04", "s04g", "s04p", "s04t3", "s04v", "s05", "s05g", "s05p", "s05t3", "s05v", "s06", "s06g", "s06p", "s06t3", "s06v", "t03", "t03g", "t03p", "t03t3", "t03v", "t04", "t04g", "t04p", "t04t3", "t04v", "t05", "t05p", "t05t3", "t05v", "t06", "t06ab", "t06gf", "t06p", "t06rr", "t06rz", "t06t3", "t06v", "t07", "t07p", "t07t3", "t07v", "t08", "t08p", "t08t3", "t08v"]}
+{"at":"2026-11-07T21:19:36.444Z","event":"wave-done","wave":2,"remaining":3}
+{"at":"2026-11-07T21:19:36.516Z","event":"wave","wave":3,"missing":3,"submitting":["t05g","t07g","t08g"]}
+{"at":"2026-11-07T21:20:09.746Z","event":"submitted","key":"t05g","wave":3,"cast":false,"attempt":1}
+{"at":"2026-11-07T21:20:41.063Z","event":"submitted","key":"t07g","wave":3,"cast":false,"attempt":1}
+{"at":"2026-11-07T21:21:12.330Z","event":"submitted","key":"t08g","wave":3,"cast":false,"attempt":1}
+{"at":"2026-11-07T21:21:12.341Z","event":"poll","fresh":2,"done":1,"want":3}
+{"at":"2026-11-07T21:21:24.871Z","event":"poll","fresh":2,"done":1,"want":3}
+{"at":"2026-11-07T21:21:39.889Z","event":"poll","fresh":2,"done":1,"want":3}
+{"at":"2026-11-07T21:21:52.462Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:22:07.479Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:22:20.013Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:22:35.024Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:22:47.565Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:23:02.577Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:23:17.590Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:23:30.121Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:23:45.134Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:23:57.668Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:24:12.691Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:24:25.233Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:24:40.255Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:24:52.793Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:25:07.803Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:25:20.347Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:25:35.372Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:25:47.911Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:26:02.932Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:26:15.469Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:26:30.493Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:26:45.508Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:26:58.054Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:27:13.068Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:27:25.607Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:27:40.643Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:27:53.172Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:28:08.186Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:28:20.720Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:28:35.731Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:28:48.263Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:29:03.282Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:29:15.830Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:29:30.853Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:29:43.396Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:29:58.418Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:30:13.447Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:30:26.043Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:30:41.068Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:30:53.606Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:31:08.656Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:31:21.191Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:31:36.201Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:31:48.734Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:32:03.761Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:32:16.305Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:32:31.329Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:32:43.873Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:32:58.898Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:33:11.436Z","event":"poll","fresh":2,"done":2,"want":3}
+{"at":"2026-11-07T21:33:39.405Z","event":"harvested","i":0,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-000.mp4"}
+{"at":"2026-11-07T21:33:41.299Z","event":"harvested","i":1,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-001.mp4"}
+{"at":"2026-11-07T21:33:46.471Z","event":"harvested","i":2,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-002.mp4"}
+raw-000.mp4: t08g (19)
+raw-001.mp4: t07g (12)
+raw-002.mp4: t05g (12)
+  -> cb-t08g-t08gr9-a.mp4
+  -> cb-t07g-t07gr9-a.mp4
+  -> cb-t05g-t05gr9-a.mp4
+{"have": ["m12", "m12g", "m12p", "m12t1", "m12t2", "m12t3", "m12t4", "m12t5", "m12v", "s01", "s01p", "s01t1", "s01t3", "s01v", "s02", "s02em", "s02fc", "s02g", "s02kl", "s02mm", "s02p", "s02t3", "s02v", "s03", "s03g", "s03p", "s03t3", "s03v", "s04", "s04g", "s04p", "s04t3", "s04v", "s05", "s05g", "s05p", "s05t3", "s05v", "s06", "s06g", "s06p", "s06t3", "s06v", "t03", "t03g", "t03p", "t03t3", "t03v", "t04", "t04g", "t04p", "t04t3", "t04v", "t05", "t05g", "t05p", "t05t3", "t05v", "t06", "t06ab", "t06gf", "t06p", "t06rr", "t06rz", "t06t3", "t06v", "t07", "t07g", "t07p", "t07t3", "t07v", "t08", "t08g", "t08p", "t08t3", "t08v"]}
+{"at":"2026-11-07T21:33:53.095Z","event":"wave-done","wave":3,"remaining":0}
+{"at":"2026-11-07T21:33:53.188Z","event":"all-present","wave":4}
+{"at":"2026-11-07T21:33:53.268Z","event":"done","remaining":[],"blocked":[]}

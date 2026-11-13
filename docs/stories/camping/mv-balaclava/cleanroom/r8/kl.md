@@ -1,0 +1,7 @@
+=== s02kl (Kendrick Lamar) ===
+STILL:
+At night under a wet concrete motorway flyover in London, the man in the attached reference is caught mid-lunge toward a very close wide-angle lens set low at his waist, looking up at him. He stands off-centre on the left of the frame, body turned three-quarters, one shoulder leading, weight on his front foot and torso pitched forward from the hips. One gloved arm thrusts straight at the lens, palm open and fingers spread wide, huge and motion-blurred in the foreground, low on the left. His other gloved hand is clawed near his collarbone. Head cocked to one side, chin tucked, mask turned to the lens so the red triangle shows. One hard sodium light overhead, puddles, rain dripping off the concrete edge, dark space on the right.
+Thanks.
+CLIP:
+One continuous shot, the camera locked low and close on a wide lens. His feet stay planted on the wet ground; every move comes from the hips, shoulders and arms, fast and staccato, each one stopping dead for a beat. The reaching hand snaps back to his chest. Both gloved hands spread their fingers and stab forward together, then wring and claw in front of his chest. He pitches forward from the waist, jabs a finger at the lens twice, then flicks an open palm out toward the road. Between moves his head cocks sharply side to side and his shoulders jolt up. He keeps moving to the final second. Ambient sound only: rain dripping off concrete, tyres hissing on the road above.
+Thanks.

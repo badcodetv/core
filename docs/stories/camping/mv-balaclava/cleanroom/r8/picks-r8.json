@@ -1,0 +1,142 @@
+{
+ "title": "Rap Gesture Picks",
+ "eyebrow": "Camping MV \u00b7 balaclava rappers \u00b7 round 8",
+ "heading": "Eight rappers: pick the way they move",
+ "intro": "Eight versions, as asked, clean room: a separate writer for each rapper researched him on the web and watched his videos frame by frame, then wrote a NEW start still (round 7 showed the start pose sets the whole gesture: every T3 clip just repeated \"hand to the temple\") and the clip. The rough sleeper under the flyover does Eminem, 50 Cent, Method Man and Kendrick Lamar; the rich man on the beach does Action Bronson, RZA, Ghostface Killah and Rick Ross. \"now\" is the T3 clip in camping song 2 beat 4. Pick the style you want (a note helps: e.g. \"Method Man for Bob, Rick Ross for Tarquin\") and it gets written for all 13 rap shots.",
+ "sections": [
+  {
+   "h": "The rough sleeper (Bob's verses)",
+   "lede": "Duct-tape mask, under the flyover, \"Waitrose door\".",
+   "groups": [
+    {
+     "slot": "r8-s02",
+     "title": "s02: the rough sleeper (grey duct-tape mask), at night under a wet concrete motorway flyover in London",
+     "line": "\"Let me explain how I'm just poor, you keep on walking through that Waitrose door!\"",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "media/s02-now.mp4",
+       "label": "now: T3 (in beat 4)"
+      },
+      {
+       "id": "em",
+       "src": "media/s02em.mp4",
+       "label": "Eminem: leans into a close wide lens; one hand at a time, snaps and stops dead (finger jab, arms flung wide, slap to the chest)"
+      },
+      {
+       "id": "fc",
+       "src": "media/s02fc.mp4",
+       "label": "50 Cent: relaxed, leans in, chin dipped; one hand reaches low at the lens or flicks from the wrist; sways, feet never move"
+      },
+      {
+       "id": "mm",
+       "src": "media/s02mm.mp4",
+       "label": "Method Man: fisheye from below; leans down over the lens; splayed hand thrust at it, fist punches, knee bounce, head ducks"
+      },
+      {
+       "id": "kl",
+       "src": "media/s02kl.mp4",
+       "label": "Kendrick Lamar: three-quarters on, low close lens; whole arm thrust at the lens, fingers spread, then pulled back; head cocked, sharp tilts on the stresses"
+      }
+     ]
+    },
+    {
+     "slot": "r8-s02-stills",
+     "title": "s02: the new start stills",
+     "line": "Each version starts from its own still, posed the way that rapper moves.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "em",
+       "src": "media/s02em.jpg",
+       "label": "Eminem: start still"
+      },
+      {
+       "id": "fc",
+       "src": "media/s02fc.jpg",
+       "label": "50 Cent: start still"
+      },
+      {
+       "id": "mm",
+       "src": "media/s02mm.jpg",
+       "label": "Method Man: start still"
+      },
+      {
+       "id": "kl",
+       "src": "media/s02kl.jpg",
+       "label": "Kendrick Lamar: start still"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The rich man (Tarquin's verses)",
+   "lede": "Tweed mask, the beach, \"tax the rich\".",
+   "groups": [
+    {
+     "slot": "r8-t06",
+     "title": "t06: the rich man (tweed mask and tweed suit), on a bright day on a private tropical beach with palms",
+     "line": "\"What about if we tax the rich? What the fuck you think this is, bitch?\"",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "media/t06-now.mp4",
+       "label": "now: T3 (in beat 4)"
+      },
+      {
+       "id": "ab",
+       "src": "media/t06ab.mp4",
+       "label": "Action Bronson: heavy, amused, weight back; one hand busy (the champagne), the free hand loose: finger to the sky, wrist rolls, shrug"
+      },
+      {
+       "id": "rz",
+       "src": "media/t06rz.mp4",
+       "label": "RZA: pendulum sway, wide knees; lunges his face at a low tilted lens; loose arm swings, nothing held"
+      },
+      {
+       "id": "gf",
+       "src": "media/t06gf.mp4",
+       "label": "Ghostface Killah: hunched into a low wide lens, off-centre; hands low, palm sweeps across the body, thumb jabs, flat chops"
+      },
+      {
+       "id": "rr",
+       "src": "media/t06rr.mp4",
+       "label": "Rick Ross: the boss: chin up, slow heavy nods and sway; palms spread and held, hands rubbed together, fist to the lens"
+      }
+     ]
+    },
+    {
+     "slot": "r8-t06-stills",
+     "title": "t06: the new start stills",
+     "line": "Each version starts from its own still, posed the way that rapper moves.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ab",
+       "src": "media/t06ab.jpg",
+       "label": "Action Bronson: start still"
+      },
+      {
+       "id": "rz",
+       "src": "media/t06rz.jpg",
+       "label": "RZA: start still"
+      },
+      {
+       "id": "gf",
+       "src": "media/t06gf.jpg",
+       "label": "Ghostface Killah: start still"
+      },
+      {
+       "id": "rr",
+       "src": "media/t06rr.jpg",
+       "label": "Rick Ross: start still"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

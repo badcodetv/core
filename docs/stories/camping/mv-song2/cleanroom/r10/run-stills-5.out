@@ -1,0 +1,9 @@
+{"at":"2026-11-09T11:46:45.791Z","ev":"group.start","group":["st11d","du02x","du05x"],"project":"88e3974d-1858-422e-af48-6308a1e980b0"}
+{"at":"2026-11-09T11:47:45.703Z","ev":"shot.done","id":"st11d","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/st11d-1794224805792"}
+{"at":"2026-11-09T11:49:28.331Z","ev":"shot.done","id":"du02x","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du02x-1794224865705"}
+{"at":"2026-11-09T11:50:15.061Z","ev":"shot.done","id":"du05x","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du05x-1794224968332"}
+{"at":"2026-11-09T11:50:22.915Z","ev":"group.start","group":["du06x","du07x"],"project":"96e3c2e9-0660-43ab-9c0a-5d5ae49d09b4"}
+{"at":"2026-11-09T11:51:15.106Z","ev":"shot.done","id":"du06x","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du06x-1794225022915"}
+{"at":"2026-11-09T11:53:12.643Z","ev":"shot.error","id":"du07x","attempt":1,"error":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-09T11-53-12-134Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited, a captcha), add its exact wording to failure-card.ts so it aborts fast next time instead of timing"}
+{"at":"2026-11-09T11:53:54.315Z","ev":"shot.done","id":"du07x","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du07x-1794225075106"}
+{"at":"2026-11-09T11:53:54.315Z","ev":"end"}

@@ -1,0 +1,156 @@
+{
+ "story": "camping",
+ "scene": "mv-action",
+ "prefix": "ca",
+ "title": "Camping: Action Stills",
+ "heading": "Camping music video: new action shots for Bob and Tarquin",
+ "moodboard_intro": "ROUND 2, from your notes: Bob bleak (no smiles; cold, wet, moved on), Tarquin in real action (peak-of-movement set pieces showing greed and contempt). Clean room again: fresh web research, three sealed writers (bleak Bob; Tarquin action; Tarquin action seen through the damage he does). Your 12 round-1 picks are kept and shown as Picked at the top of each section. Flags: b23 shows a readable supermarket sign; b21 (wringing out a hosed-down sleeping bag) never came back from Flow. Tap This on the ones to animate.",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action",
+ "beats": [
+  {
+   "key": "bob2",
+   "name": "Round 2: Bob, bleak",
+   "at": "5 shots",
+   "blurb": "Cold, wet, moved on, ignored; one physical action each, no smiles."
+  },
+  {
+   "key": "tarquin2",
+   "name": "Round 2: Tarquin in action",
+   "at": "8 shots",
+   "blurb": "Peak-of-movement set pieces: speed, impact, damage to other people."
+  },
+  {
+   "key": "bob",
+   "name": "Bob in action",
+   "at": "6 shots",
+   "blurb": "His days and his character through what he does."
+  },
+  {
+   "key": "tarquin",
+   "name": "Tarquin in action",
+   "at": "6 shots",
+   "blurb": "Money, speed, appetite and contempt through what he does."
+  },
+  {
+   "key": "pairs",
+   "name": "Mirrored pairs (Bob, then Tarquin)",
+   "at": "3 pairs",
+   "blurb": "The same gesture in opposite worlds, to cut between on the beat."
+  }
+ ],
+ "existing": {
+  "bob2": [
+   [
+    "b1r1-a",
+    "Picked r1 \u00b7 b1",
+    "moodboard/b1r1-a.jpg"
+   ],
+   [
+    "b2r1-a",
+    "Picked r1 \u00b7 b2",
+    "moodboard/b2r1-a.jpg"
+   ],
+   [
+    "b6r1-b",
+    "Picked r1 \u00b7 b6",
+    "moodboard/b6r1-b.jpg"
+   ],
+   [
+    "x3r1-a",
+    "Picked r1 \u00b7 x3",
+    "moodboard/x3r1-a.jpg"
+   ],
+   [
+    "x5r1-b",
+    "Picked r1 \u00b7 x5",
+    "moodboard/x5r1-b.jpg"
+   ]
+  ],
+  "tarquin2": [
+   [
+    "t2r1-a",
+    "Picked r1 \u00b7 t2",
+    "moodboard/t2r1-a.jpg"
+   ],
+   [
+    "t3r1-a",
+    "Picked r1 \u00b7 t3",
+    "moodboard/t3r1-a.jpg"
+   ],
+   [
+    "t4r1-a",
+    "Picked r1 \u00b7 t4",
+    "moodboard/t4r1-a.jpg"
+   ],
+   [
+    "t6r1-a",
+    "Picked r1 \u00b7 t6",
+    "moodboard/t6r1-a.jpg"
+   ],
+   [
+    "x2r1-c",
+    "Picked r1 \u00b7 x2",
+    "moodboard/x2r1-c.jpg"
+   ],
+   [
+    "x4r1-a",
+    "Picked r1 \u00b7 x4",
+    "moodboard/x4r1-a.jpg"
+   ],
+   [
+    "x6r1-a",
+    "Picked r1 \u00b7 x6",
+    "moodboard/x6r1-a.jpg"
+   ]
+  ]
+ },
+ "flow_project": "9b36496c-9bad-48dc-bead-2691d115a4fe",
+ "characters": {
+  "Bob": "7566666e-b510-4dda-9f8b-ca23a4d57115",
+  "Tarquin": "29e97ae3-39ba-49b2-88d8-7a2250713f6b"
+ },
+ "related": {
+  "mv": "docs/stories/camping/mv-balaclava/ (camping balaclava 1)"
+ },
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/XNEc7Q7fADNmZjpVhRtCz3"
+ },
+ "stills_project": "9b729074-da88-4668-a442-458e9a0f15ac",
+ "video": {
+  "model": "Omni 1.1 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "picked": [
+  "b1r1-a",
+  "b2r1-a",
+  "b6r1-b",
+  "x3r1-a",
+  "x5r1-b",
+  "b22r2-a",
+  "b23r2-b",
+  "b24r2-b",
+  "b25r2-b",
+  "b26r2-a",
+  "t2r1-a",
+  "t3r1-a",
+  "t4r1-a",
+  "t6r1-a",
+  "x2r1-c",
+  "x4r1-a",
+  "x6r1-a",
+  "t21r2-b",
+  "t22r2-b",
+  "t23r2-a",
+  "t24r2-b",
+  "t25r2-b",
+  "u23r2-b",
+  "u25r2-a"
+ ],
+ "premiere": {
+  "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/camping vid Copy-test_1.prproj",
+  "from": "camping balaclava 1",
+  "song": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/song 2 maybe.mov"
+ }
+}

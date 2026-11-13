@@ -1,0 +1,10 @@
+const V=[{"key": "b1", "file": "ca-b1-b1r1-a.mp4", "start": 15.12, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "b2", "file": "ca-b2-b2r1-a.mp4", "start": 23.32, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "b6", "file": "ca-b6-b6r1-b.mp4", "start": 31.48, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "b22", "file": "ca-b22-b22r2-a.mp4", "start": 39.68, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "b23", "file": "ca-b23-b23r2-b.mp4", "start": 47.84, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "b24", "file": "ca-b24-b24r2-b.mp4", "start": 56.04, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "b25", "file": "ca-b25-b25r2-b.mp4", "start": 64.2, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "b26", "file": "ca-b26-b26r2-a.mp4", "start": 72.4, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "t2", "file": "ca-t2-t2r1-a.mp4", "start": 80.56, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "t3", "file": "ca-t3-t3r1-a.mp4", "start": 88.76, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "t4", "file": "ca-t4-t4r1-a.mp4", "start": 96.96, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "t6", "file": "ca-t6-t6r1-a.mp4", "start": 105.12, "dur": 2.72, "in": 0.2, "track": 6}]; const S='camping song 2';
+const project=await helpers.activeProject(); const seq=await helpers.activeSequence(project);
+if(seq.name!==S) return {error:'wrong sequence',name:seq.name};
+const ed=ppro.SequenceEditor.getEditor(seq); const tk=s=>helpers.secondsToTick(Math.round(s*25)/25+0.002); let done=0; const fail=[];
+for(const r of V){ try{ const item=await helpers.resolveProjectItem(project,r.file); if(!item) throw 'not found';
+  const clip=ppro.ClipProjectItem.cast(item);
+  helpers.withTransaction(project,'BadCode: action in/out',ca=>ca.addAction(clip.createSetInOutPointsAction(tk(r.in),tk(r.in+r.dur))));
+  helpers.withTransaction(project,'BadCode: action place',ca=>ca.addAction(ed.createOverwriteItemAction(item,tk(r.start),r.track,0)));
+  helpers.withTransaction(project,'BadCode: action clear',ca=>ca.addAction(clip.createClearInOutPointsAction())); done++; }catch(e){ fail.push([r.file,r.start,String(e).slice(0,100)]); } }
+return {done,fail};

@@ -1,0 +1,10 @@
+const V=[{"key": "t21", "file": "ca-t21-t21r2-b.mp4", "start": 113.32, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "t22", "file": "ca-t22-t22r2-b.mp4", "start": 121.48, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "t23", "file": "ca-t23-t23r2-a.mp4", "start": 129.68, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "t24", "file": "ca-t24-t24r2-b.mp4", "start": 137.84, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "t25", "file": "ca-t25-t25r2-b.mp4", "start": 146.04, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "u23", "file": "ca-u23-u23r2-b.mp4", "start": 154.2, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "u25", "file": "ca-u25-u25r2-a.mp4", "start": 162.4, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "x3", "file": "ca-x3-x3r1-a.mp4", "start": 170.56, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "x4", "file": "ca-x4-x4r1-a.mp4", "start": 178.76, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "x5", "file": "ca-x5-x5r1-b.mp4", "start": 186.96, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "x6", "file": "ca-x6-x6r1-a.mp4", "start": 195.12, "dur": 2.72, "in": 0.2, "track": 6}, {"key": "x2", "file": "ca-x2-x2r1-c.mp4", "start": 203.32, "dur": 2.72, "in": 0.2, "track": 6}]; const S='camping song 2';
+const project=await helpers.activeProject(); const seq=await helpers.activeSequence(project);
+if(seq.name!==S) return {error:'wrong sequence',name:seq.name};
+const ed=ppro.SequenceEditor.getEditor(seq); const tk=s=>helpers.secondsToTick(Math.round(s*25)/25+0.002); let done=0; const fail=[];
+for(const r of V){ try{ const item=await helpers.resolveProjectItem(project,r.file); if(!item) throw 'not found';
+  const clip=ppro.ClipProjectItem.cast(item);
+  helpers.withTransaction(project,'BadCode: action in/out',ca=>ca.addAction(clip.createSetInOutPointsAction(tk(r.in),tk(r.in+r.dur))));
+  helpers.withTransaction(project,'BadCode: action place',ca=>ca.addAction(ed.createOverwriteItemAction(item,tk(r.start),r.track,0)));
+  helpers.withTransaction(project,'BadCode: action clear',ca=>ca.addAction(clip.createClearInOutPointsAction())); done++; }catch(e){ fail.push([r.file,r.start,String(e).slice(0,100)]); } }
+return {done,fail};

@@ -1,0 +1,3 @@
+# What Jack said (2026-11-05, verbatim)
+
+okay so i have the camping music video open in premiere, cant open uxp yet though. basically what i want is for it to stay the same, however when Bob or Tarquin are rapping to the camera, i want them to be replaced with badcode balaclava men, ones homless and one is posh, please come up with designs for this and make the stills that vary from each other, then make the clips and only replace the parts where they are rapping, but keep action shots of bob and tarquin, like when they are arguing or drinking wine or something, keep those, only replace when they rap to the camera. lets start with the designs first then show me them in the next scene skill thanks. Please clean room it all and research the internet to achieve it. Thanks.

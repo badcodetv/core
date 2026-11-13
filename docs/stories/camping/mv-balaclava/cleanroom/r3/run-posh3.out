@@ -1,0 +1,7 @@
+{"at":"2026-11-05T20:31:22.746Z","ev":"pair.start","pair":["t02"],"project":"f26ab272-452a-4709-a457-5d6270fa3588","attempt":1}
+{"at":"2026-11-05T20:32:10.952Z","ev":"pair.done","pair":["t02"],"project":"f26ab272-452a-4709-a457-5d6270fa3588","done":1,"failed":[],"partial":false}
+{"at":"2026-11-05T20:32:18.639Z","ev":"pair.start","pair":["t04"],"project":"543d4048-685c-42b2-b2c9-246b3c22224e","attempt":1}
+{"at":"2026-11-05T20:33:03.940Z","ev":"pair.done","pair":["t04"],"project":"543d4048-685c-42b2-b2c9-246b3c22224e","done":1,"failed":[],"partial":false}
+{"at":"2026-11-05T20:33:10.057Z","ev":"pair.start","pair":["t08"],"project":"31d9eb08-d90a-47ca-92bf-4a1ecb203fc4","attempt":1}
+{"at":"2026-11-05T20:33:54.469Z","ev":"pair.done","pair":["t08"],"project":"31d9eb08-d90a-47ca-92bf-4a1ecb203fc4","done":1,"failed":[],"partial":false}
+{"at":"2026-11-05T20:33:54.469Z","ev":"end"}

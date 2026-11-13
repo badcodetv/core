@@ -1,0 +1,7 @@
+=== t06rr (Rick Ross) ===
+STILL:
+A rap music video frame on a bright day on a private tropical beach, palms bending over white sand and a turquoise sea. A low-angle, close, wide-lens shot with a slight fisheye bulge, looking up at the man in the attached reference, who stands just left of centre with his feet planted in the sand. He is leaning his chest heavily towards the lens, chin lifted, head tipped slightly back so he looks down his nose at the camera, the red triangle on his mask facing us. Both gloved hands are mid-move: the right is raised to shoulder height, palm turned up and open, slightly motion-blurred; the left pats the air at belly height. Harsh sun, hard shadows, open sky behind his head. No words anywhere.
+Thanks.
+CLIP:
+Handheld low-angle camera, one continuous shot, holding close as the man performs with slow, heavy, unhurried authority, feet planted in the sand. He rocks his weight forward into the lens on a hard line, the raised hand pumping towards the camera in a loose fist, then settles back with his chin lifted and both palms spread wide at shoulder height, held for a beat like he owns the beach. His head rolls in big slow nods, shoulders swaying side to side. He presses both gloved hands together at his chest and rubs them slowly, then flicks one finger at the lens. Jacket cloth swings with every move. Sound: surf breaking, palm fronds rustling in the wind.
+Thanks.

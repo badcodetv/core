@@ -1,0 +1,170 @@
+{
+  "story": "camping",
+  "scene": "mv-balaclava",
+  "prefix": "cb",
+  "title": "Camping: Balaclava Rappers",
+  "heading": "Camping music video: the two balaclava rappers",
+  "moodboard_intro": "ROUND 3: your picks in every rap shot. Duct-tape man (a7) in all of Bob's rap-to-camera shots, tweed squire (b1) in all of Tarquin's, same place, framing and pose as the original (originals and your pick at the start of each section). s01–s06 replace Bob rapping 1, 1.1, 2, 3, 4, 5.5; t01–t08 replace Tarquin rapping 1, 2, 2.1, 3, 4.3, 4.4, 5, 6; m12, m13, m19, m23 are the maybes (loose clips 12, 13, 19, 23): only used if you say they count as rapping. Every still checked by eye for skin: none seen (m12-a's hands are the one to look at closely). Seven shots have three takes (a, b, c) because Flow echoed your reference on a first pass and they were redone. Tap This on the take to animate for each shot (or No on any you want redone). Rounds 1 and 2 are below.",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava",
+  "beats": [
+    {
+      "key": "rough-shots",
+      "name": "Every rap shot: the duct-tape man (replaces Bob)",
+      "at": "6 shots + 2 maybes",
+      "blurb": "Your pick a7 put into each of Bob's rap-to-camera shots, same place and framing. No skin anywhere."
+    },
+    {
+      "key": "posh-shots",
+      "name": "Every rap shot: the tweed squire (replaces Tarquin)",
+      "at": "8 shots + 2 maybes",
+      "blurb": "Your pick b1 put into each of Tarquin's rap-to-camera shots, same place and framing. No skin anywhere."
+    },
+    {
+      "key": "rough",
+      "name": "The rough sleeper (replaces Bob)",
+      "at": "6 rap shots",
+      "blurb": "London, winter, worn and dignified. Full mask, white ring, red triangle over his left eye, gloves, no skin."
+    },
+    {
+      "key": "posh",
+      "name": "The posh man (replaces Tarquin)",
+      "at": "8 rap shots",
+      "blurb": "City money, smug and untouchable. Same mask rule, cloth that says money."
+    }
+  ],
+  "existing": {
+    "rough-shots": [
+      [
+        "orig-bob-1",
+        "Now: Bob rapping 1",
+        "originals/bob-1.jpg"
+      ],
+      [
+        "orig-bob-1.1",
+        "Now: Bob rapping 1.1",
+        "originals/bob-1.1.jpg"
+      ],
+      [
+        "orig-bob-2",
+        "Now: Bob rapping 2",
+        "originals/bob-2.jpg"
+      ],
+      [
+        "orig-bob-3",
+        "Now: Bob rapping 3",
+        "originals/bob-3.jpg"
+      ],
+      [
+        "orig-bob-4",
+        "Now: Bob rapping 4",
+        "originals/bob-4.jpg"
+      ],
+      [
+        "orig-bob-5.5",
+        "Now: Bob rapping 5.5",
+        "originals/bob-5.5.jpg"
+      ],
+      [
+        "orig-12",
+        "Now: clip 12 (to camera? check)",
+        "originals/maybe-12.jpg"
+      ],
+      [
+        "orig-13",
+        "Now: clip 13 (to camera? check)",
+        "originals/maybe-13.jpg"
+      ],
+      [
+        "pick-a7",
+        "Your pick: a7 Duct Tape Armour",
+        "moodboard/a7r2-a.jpg"
+      ]
+    ],
+    "posh-shots": [
+      [
+        "orig-tarq-1",
+        "Now: Tarquin rapping 1",
+        "originals/tarquin-1.jpg"
+      ],
+      [
+        "orig-tarq-2",
+        "Now: Tarquin rapping 2",
+        "originals/tarquin-2.jpg"
+      ],
+      [
+        "orig-tarq-2.1",
+        "Now: Tarquin rapping 2.1",
+        "originals/tarquin-2.1.jpg"
+      ],
+      [
+        "orig-tarq-3",
+        "Now: Tarquin rapping 3",
+        "originals/tarquin-3.jpg"
+      ],
+      [
+        "orig-tarq-4.3",
+        "Now: Tarquin rapping 4.3",
+        "originals/tarquin-4.3.jpg"
+      ],
+      [
+        "orig-tarq-4.4",
+        "Now: Tarquin rapping 4.4",
+        "originals/tarquin-4.4.jpg"
+      ],
+      [
+        "orig-tarq-5",
+        "Now: Tarquin rapping 5",
+        "originals/tarquin-5.jpg"
+      ],
+      [
+        "orig-tarq-6",
+        "Now: Tarquin rapping 6",
+        "originals/tarquin-6.jpg"
+      ],
+      [
+        "orig-19",
+        "Now: clip 19 (to camera? check)",
+        "originals/maybe-19.jpg"
+      ],
+      [
+        "orig-23",
+        "Now: clip 23 (to camera? check)",
+        "originals/maybe-23.jpg"
+      ],
+      [
+        "pick-b1",
+        "Your pick: b1 Estate Tweed Squire",
+        "moodboard/b1r2-b.jpg"
+      ]
+    ]
+  },
+  "premiere": {
+    "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/camping vid Copy-test_1.prproj",
+    "clips": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips",
+    "current": "balaclava1",
+    "balaclava1": {
+      "sequence": "camping balaclava 1",
+      "guid": "be8580a3-51ac-432c-9af2-7155272f3765",
+      "bin": "balaclava clips",
+      "built": "2026-11-06",
+      "from": "camping (clone, untouched)",
+      "how": "docs/stories/camping/mv-balaclava/premiere/swap.py → place-0..2.js via premiere_eval",
+      "what": "26 overwrites: every rap-to-camera item replaced by its balaclava clip (1080p silent copies), same track/span/in point"
+    }
+  },
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/Tc95mWsa81QThUnHFv4Dbc",
+    "timeline": "https://claude.ai/artifact/WVScfLPy242nXzuExhH2y9"
+  },
+  "picked": {
+    "rough": "a7r2-a",
+    "posh": "b1r2-b"
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames",
+    "duration": 8
+  },
+  "flow_project": "76a7474d-c201-4f7c-8492-3b2c684de501"
+}

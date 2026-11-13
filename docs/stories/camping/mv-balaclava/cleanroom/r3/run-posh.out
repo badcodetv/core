@@ -1,0 +1,19 @@
+{"at":"2026-11-05T19:42:20.151Z","ev":"pair.start","pair":["t01","t02"],"project":"45d35e01-712f-4f78-9701-3901e49b7fec","attempt":1}
+{"at":"2026-11-05T19:43:46.463Z","ev":"pair.done","pair":["t01","t02"],"project":"45d35e01-712f-4f78-9701-3901e49b7fec","done":0,"failed":[{"i":"t01","code":"TimeoutError: locator.waitFor: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /crop_/ }).first() to be visible\u001b[22m\n"}],"partial":true}
+{"at":"2026-11-05T19:43:52.736Z","ev":"pair.start","pair":["t01","t02"],"project":"587af5b1-fdb0-4dd0-800b-568711606964","attempt":2}
+{"at":"2026-11-05T19:45:03.160Z","ev":"pair.done","pair":["t01","t02"],"project":"587af5b1-fdb0-4dd0-800b-568711606964","done":2,"failed":[],"partial":false}
+{"at":"2026-11-05T19:45:08.150Z","ev":"pair.start","pair":["t03","t04"],"project":"2ff2a04e-9664-4fe1-b26a-0919a3c96d20","attempt":1}
+{"at":"2026-11-05T19:46:23.785Z","ev":"pair.done","pair":["t03","t04"],"project":"2ff2a04e-9664-4fe1-b26a-0919a3c96d20","done":2,"failed":[],"partial":false}
+{"at":"2026-11-05T19:46:31.190Z","ev":"pair.start","pair":["t05","t06"],"project":"f7da233f-c894-4865-8217-f51377337f99","attempt":1}
+{"at":"2026-11-05T19:47:57.489Z","ev":"pair.done","pair":["t05","t06"],"project":"f7da233f-c894-4865-8217-f51377337f99","done":0,"failed":[{"i":"t05","code":"TimeoutError: locator.waitFor: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /crop_/ }).first() to be visible\u001b[22m\n"}],"partial":true}
+{"at":"2026-11-05T19:48:03.845Z","ev":"pair.start","pair":["t05","t06"],"project":"4eef72d8-bc55-42c6-8db7-c3a1de82826a","attempt":2}
+{"at":"2026-11-05T19:49:30.189Z","ev":"pair.done","pair":["t05","t06"],"project":"4eef72d8-bc55-42c6-8db7-c3a1de82826a","done":0,"failed":[{"i":"t05","code":"TimeoutError: locator.waitFor: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /crop_/ }).first() to be visible\u001b[22m\n"}],"partial":true}
+{"at":"2026-11-05T19:49:37.936Z","ev":"pair.start","pair":["t07","t08"],"project":"95016777-f865-4c15-b362-b48406844668","attempt":1}
+{"at":"2026-11-05T19:51:04.278Z","ev":"pair.done","pair":["t07","t08"],"project":"95016777-f865-4c15-b362-b48406844668","done":0,"failed":[{"i":"t07","code":"TimeoutError: locator.waitFor: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /crop_/ }).first() to be visible\u001b[22m\n"}],"partial":true}
+{"at":"2026-11-05T19:51:11.036Z","ev":"pair.start","pair":["t07","t08"],"project":"772598bc-a541-48ba-8ebe-248e429eecaa","attempt":2}
+{"at":"2026-11-05T19:52:33.240Z","ev":"pair.done","pair":["t07","t08"],"project":"772598bc-a541-48ba-8ebe-248e429eecaa","done":2,"failed":[],"partial":false}
+{"at":"2026-11-05T19:52:40.707Z","ev":"pair.start","pair":["m19","m23"],"project":"12a151f4-4283-498c-88bf-c5a931284768","attempt":1}
+{"at":"2026-11-05T19:54:07.070Z","ev":"pair.done","pair":["m19","m23"],"project":"12a151f4-4283-498c-88bf-c5a931284768","done":0,"failed":[{"i":"m19","code":"TimeoutError: locator.waitFor: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /crop_/ }).first() to be visible\u001b[22m\n"}],"partial":true}
+{"at":"2026-11-05T19:54:13.475Z","ev":"pair.start","pair":["m19","m23"],"project":"7a9c3089-787a-4746-b985-56aec5bdaa0e","attempt":2}
+{"at":"2026-11-05T19:55:39.793Z","ev":"pair.done","pair":["m19","m23"],"project":"7a9c3089-787a-4746-b985-56aec5bdaa0e","done":0,"failed":[{"i":"m19","code":"TimeoutError: locator.waitFor: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /crop_/ }).first() to be visible\u001b[22m\n"}],"partial":true}
+{"at":"2026-11-05T19:55:39.794Z","ev":"end"}

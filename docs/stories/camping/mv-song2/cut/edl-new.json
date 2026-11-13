@@ -1,0 +1,1242 @@
+[
+{
+"start": 0.0,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/badcode logo designs/draft 1/4.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 0.24
+},
+{
+"start": 0.24,
+"src": null,
+"in": null,
+"kind": "seg",
+"note": "",
+"end": 0.48
+},
+{
+"start": 0.48,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/badcode logo designs/draft 1/4.mp4",
+"in": 1.24,
+"kind": "seg",
+"note": "",
+"end": 2.32
+},
+{
+"start": 2.32,
+"src": null,
+"in": null,
+"kind": "seg",
+"note": "",
+"end": 2.52
+},
+{
+"start": 2.52,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/9.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 4.24
+},
+{
+"start": 4.24,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/8.mp4",
+"in": 2.24,
+"kind": "seg",
+"note": "",
+"end": 4.92
+},
+{
+"start": 4.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/9.mp4",
+"in": 3.0,
+"kind": "seg",
+"note": "",
+"end": 8.0
+},
+{
+"start": 8.0,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/8.mp4",
+"in": 3.2,
+"kind": "seg",
+"note": "",
+"end": 9.0
+},
+{
+"start": 9.0,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/9.mp4",
+"in": 7.56,
+"kind": "seg",
+"note": "",
+"end": 10.04
+},
+{
+"start": 10.04,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/8.mp4",
+"in": 8.92,
+"kind": "seg",
+"note": "",
+"end": 11.04
+},
+{
+"start": 11.04,
+"src": null,
+"in": null,
+"kind": "trick-black",
+"note": "",
+"end": 12.76
+},
+{
+"start": 12.76,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 0,
+"kind": "trick",
+"note": "",
+"end": 12.88
+},
+{
+"start": 12.88,
+"src": null,
+"in": null,
+"kind": "trick-black",
+"note": "",
+"end": 12.92
+},
+{
+"start": 12.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 1.96,
+"kind": "trick",
+"note": "",
+"end": 13.04
+},
+{
+"start": 13.04,
+"src": null,
+"in": null,
+"kind": "trick-black",
+"note": "",
+"end": 13.08
+},
+{
+"start": 13.08,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 3.52,
+"kind": "trick",
+"note": "",
+"end": 13.24
+},
+{
+"start": 13.24,
+"src": null,
+"in": null,
+"kind": "trick-black",
+"note": "",
+"end": 13.28
+},
+{
+"start": 13.28,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 8.44,
+"kind": "trick",
+"note": "",
+"end": 13.4
+},
+{
+"start": 13.4,
+"src": null,
+"in": null,
+"kind": "trick-black",
+"note": "",
+"end": 13.44
+},
+{
+"start": 13.44,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-m12-m12r3-b.mp4",
+"in": 1.323076923076921,
+"kind": "seg",
+"note": "lands on drop",
+"end": 13.8
+},
+{
+"start": 13.8,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-m12-m12r3-b.mp4",
+"in": 0.92,
+"kind": "seg",
+"note": "",
+"end": 14.12
+},
+{
+"start": 14.12,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-m12-m12r3-b.mp4",
+"in": 1.32,
+"kind": "seg",
+"note": "",
+"end": 14.88
+},
+{
+"start": 14.88,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-m12-m12r3-b.mp4",
+"in": 2.28,
+"kind": "seg",
+"note": "",
+"end": 16.04
+},
+{
+"start": 16.04,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s01-s01r3-a.mp4",
+"in": 3.12,
+"kind": "seg",
+"note": "",
+"end": 17.4
+},
+{
+"start": 17.4,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/4.mp4",
+"in": 3.48,
+"kind": "seg",
+"note": "",
+"end": 18.4
+},
+{
+"start": 18.4,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s02-s02r3-a.mp4",
+"in": 0.48,
+"kind": "seg",
+"note": "",
+"end": 20.12
+},
+{
+"start": 20.12,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/1.mp4",
+"in": 2.0,
+"kind": "seg",
+"note": "",
+"end": 20.44
+},
+{
+"start": 20.44,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s02-s02r3-a.mp4",
+"in": 4.72,
+"kind": "seg",
+"note": "",
+"end": 21.24
+},
+{
+"start": 21.24,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/6.mp4",
+"in": 4.72,
+"kind": "seg",
+"note": "",
+"end": 22.68
+},
+{
+"start": 22.68,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s02-s02r3-a.mp4",
+"in": 6.28,
+"kind": "seg",
+"note": "",
+"end": 23.44
+},
+{
+"start": 23.44,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/6.mp4",
+"in": 6.2,
+"kind": "seg",
+"note": "",
+"end": 23.68
+},
+{
+"start": 23.68,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/4.mp4",
+"in": 8.48,
+"kind": "seg",
+"note": "",
+"end": 25.04
+},
+{
+"start": 25.04,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/8.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 26.4
+},
+{
+"start": 26.4,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s03-s03r3-b.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 27.44
+},
+{
+"start": 27.44,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s03-s03r3-b.mp4",
+"in": 0.84,
+"kind": "seg",
+"note": " in pulled back",
+"end": 34.56
+},
+{
+"start": 34.56,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s04-s04r3-b.mp4",
+"in": 1.0,
+"kind": "seg",
+"note": "",
+"end": 35.6
+},
+{
+"start": 35.6,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/36.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 36.64
+},
+{
+"start": 36.64,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s04-s04r3-b.mp4",
+"in": 3.76,
+"kind": "seg",
+"note": "",
+"end": 39.04
+},
+{
+"start": 39.04,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/3.mp4",
+"in": 0.2,
+"kind": "seg",
+"note": "",
+"end": 39.72
+},
+{
+"start": 39.72,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s05-s05r3-b.mp4",
+"in": 0,
+"kind": "seg",
+"note": " in pulled back TOO LONG",
+"end": 47.64
+},
+{
+"start": 47.64,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s05-s05r3-b.mp4",
+"in": 2.0,
+"kind": "seg",
+"note": "split re-entry",
+"end": 48.24
+},
+{
+"start": 48.24,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s05-s05r3-b.mp4",
+"in": 2.0,
+"kind": "seg",
+"note": "",
+"end": 48.92
+},
+{
+"start": 48.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/11.mp4",
+"in": 4.6,
+"kind": "seg",
+"note": "",
+"end": 50.28
+},
+{
+"start": 50.28,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s06-s06r3-b.mp4",
+"in": 1.76,
+"kind": "seg",
+"note": "",
+"end": 52.68
+},
+{
+"start": 52.68,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/14.mp4",
+"in": 1.48,
+"kind": "seg",
+"note": "",
+"end": 53.32
+},
+{
+"start": 53.32,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-s06-s06r3-b.mp4",
+"in": 4.84,
+"kind": "seg",
+"note": "",
+"end": 56.08
+},
+{
+"start": 56.08,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/11.mp4",
+"in": 9.12,
+"kind": "seg",
+"note": "",
+"end": 56.76
+},
+{
+"start": 56.76,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/1.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 57.76
+},
+{
+"start": 57.76,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/1.mp4",
+"in": 2.84,
+"kind": "seg",
+"note": "",
+"end": 58.8
+},
+{
+"start": 58.8,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/10.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 60.16
+},
+{
+"start": 60.16,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/1.mp4",
+"in": 5.2,
+"kind": "seg",
+"note": " in pulled back",
+"end": 64.92
+},
+{
+"start": 64.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/2.mp4",
+"in": 1.44,
+"kind": "seg",
+"note": "",
+"end": 67.68
+},
+{
+"start": 67.68,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/11.mp4",
+"in": 4.0,
+"kind": "seg",
+"note": "",
+"end": 69.36
+},
+{
+"start": 69.36,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/2.mp4",
+"in": 5.64,
+"kind": "seg",
+"note": "",
+"end": 71.08
+},
+{
+"start": 71.08,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/12.mp4",
+"in": 3.6,
+"kind": "seg",
+"note": "",
+"end": 72.76
+},
+{
+"start": 72.76,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/12.mp4",
+"in": 7.52,
+"kind": "seg",
+"note": "",
+"end": 74.84
+},
+{
+"start": 74.84,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/3.mp4",
+"in": 5.52,
+"kind": "seg",
+"note": "",
+"end": 77.92
+},
+{
+"start": 77.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t04-t04r3-b.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 79.6
+},
+{
+"start": 79.6,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/4.mp4",
+"in": 6.52,
+"kind": "seg",
+"note": "",
+"end": 79.92
+},
+{
+"start": 79.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t03-t03r3-a.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 82.68
+},
+{
+"start": 82.68,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/20.mp4",
+"in": 6.6,
+"kind": "seg",
+"note": "",
+"end": 83.68
+},
+{
+"start": 83.68,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t04-t04r3-b.mp4",
+"in": 5.56,
+"kind": "seg",
+"note": " in pulled back",
+"end": 86.08
+},
+{
+"start": 86.08,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/20.mp4",
+"in": 9.36,
+"kind": "seg",
+"note": "",
+"end": 86.4
+},
+{
+"start": 86.4,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t05-t05r3-b.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 92.92
+},
+{
+"start": 92.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/20.mp4",
+"in": 1.96,
+"kind": "seg",
+"note": "",
+"end": 93.92
+},
+{
+"start": 93.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t06-t06r3-a.mp4",
+"in": 0.52,
+"kind": "seg",
+"note": "",
+"end": 96.28
+},
+{
+"start": 96.28,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t06-t06r3-a.mp4",
+"in": 2.72,
+"kind": "seg",
+"note": "",
+"end": 97.64
+},
+{
+"start": 97.64,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t06-t06r3-a.mp4",
+"in": 4.72,
+"kind": "seg",
+"note": "",
+"end": 99.2
+},
+{
+"start": 99.2,
+"src": null,
+"in": null,
+"kind": "seg",
+"note": "",
+"end": 99.4
+},
+{
+"start": 99.4,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/22.mp4",
+"in": 8.4,
+"kind": "seg",
+"note": "",
+"end": 99.72
+},
+{
+"start": 99.72,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t07-t07r3-b.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 104.48
+},
+{
+"start": 104.48,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 0.0,
+"kind": "flash",
+"note": "",
+"end": 104.6
+},
+{
+"start": 104.6,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 104.64
+},
+{
+"start": 104.64,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 1.96,
+"kind": "flash",
+"note": "",
+"end": 104.8
+},
+{
+"start": 104.8,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 104.84
+},
+{
+"start": 104.84,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 3.52,
+"kind": "flash",
+"note": "",
+"end": 104.96
+},
+{
+"start": 104.96,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 105.0
+},
+{
+"start": 105.0,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 8.44,
+"kind": "flash",
+"note": "",
+"end": 105.12
+},
+{
+"start": 105.12,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 105.16
+},
+{
+"start": 105.16,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t07-t07r3-b.mp4",
+"in": 4.36,
+"kind": "seg",
+"note": "",
+"end": 107.56
+},
+{
+"start": 107.56,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/24.mp4",
+"in": 1.6,
+"kind": "seg",
+"note": "",
+"end": 108.92
+},
+{
+"start": 108.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/37.mov",
+"in": 3.24,
+"kind": "seg",
+"note": "",
+"end": 110.64
+},
+{
+"start": 110.64,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t08-t08r3-a.mp4",
+"in": 0,
+"kind": "seg",
+"note": " in pulled back TOO LONG",
+"end": 118.56
+},
+{
+"start": 118.56,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t08-t08r3-a.mp4",
+"in": 2.0,
+"kind": "seg",
+"note": "split re-entry",
+"end": 118.76
+},
+{
+"start": 118.76,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t08-t08r3-a.mp4",
+"in": 2.0,
+"kind": "seg",
+"note": "",
+"end": 120.52
+},
+{
+"start": 120.52,
+"src": null,
+"in": null,
+"kind": "seg",
+"note": "",
+"end": 121.16
+},
+{
+"start": 121.16,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/badcode logo designs/draft 1/4.mp4",
+"in": 1.24,
+"kind": "seg",
+"note": "",
+"end": 121.84
+},
+{
+"start": 121.84,
+"src": null,
+"in": null,
+"kind": "seg",
+"note": "",
+"end": 122.04
+},
+{
+"start": 122.04,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/5.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 122.2
+},
+{
+"start": 122.2,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/13.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 124.28
+},
+{
+"start": 124.28,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/14.mp4",
+"in": 1.48,
+"kind": "seg",
+"note": "",
+"end": 125.28
+},
+{
+"start": 125.28,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/14.mp4",
+"in": 2.56,
+"kind": "seg",
+"note": "",
+"end": 125.56
+},
+{
+"start": 125.56,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/14.mp4",
+"in": 2.92,
+"kind": "seg",
+"note": "",
+"end": 125.84
+},
+{
+"start": 125.84,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/14.mp4",
+"in": 3.16,
+"kind": "seg",
+"note": "",
+"end": 125.96
+},
+{
+"start": 125.96,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/13.mp4",
+"in": 3.8,
+"kind": "seg",
+"note": "",
+"end": 128.68
+},
+{
+"start": 128.68,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/5.mp4",
+"in": 8.12,
+"kind": "seg",
+"note": "",
+"end": 129.04
+},
+{
+"start": 129.04,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/14.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 130.36
+},
+{
+"start": 130.36,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/14.mp4",
+"in": 1.96,
+"kind": "flash",
+"note": "",
+"end": 130.52
+},
+{
+"start": 130.52,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 130.56
+},
+{
+"start": 130.56,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/5.mp4",
+"in": 0.0,
+"kind": "flash",
+"note": "",
+"end": 130.68
+},
+{
+"start": 130.68,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 130.72
+},
+{
+"start": 130.72,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/5.mp4",
+"in": 1.52,
+"kind": "flash",
+"note": "",
+"end": 130.84
+},
+{
+"start": 130.84,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 130.88
+},
+{
+"start": 130.88,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/14.mp4",
+"in": 2.92,
+"kind": "flash",
+"note": "",
+"end": 131.04
+},
+{
+"start": 131.04,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 131.08
+},
+{
+"start": 131.08,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/5.mp4",
+"in": 4.44,
+"kind": "flash",
+"note": "",
+"end": 131.2
+},
+{
+"start": 131.2,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 131.24
+},
+{
+"start": 131.24,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/5.mp4",
+"in": 5.64,
+"kind": "flash",
+"note": "",
+"end": 131.36
+},
+{
+"start": 131.36,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 131.4
+},
+{
+"start": 131.4,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/6.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 133.48
+},
+{
+"start": 133.48,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/6.mp4",
+"in": 2.68,
+"kind": "seg",
+"note": "",
+"end": 133.8
+},
+{
+"start": 133.8,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/6.mp4",
+"in": 9.16,
+"kind": "seg",
+"note": "",
+"end": 134.04
+},
+{
+"start": 134.04,
+"src": null,
+"in": null,
+"kind": "seg",
+"note": "",
+"end": 134.16
+},
+{
+"start": 134.16,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/15.mov",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 134.48
+},
+{
+"start": 134.48,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/15.mov",
+"in": 1.52,
+"kind": "seg",
+"note": "",
+"end": 135.2
+},
+{
+"start": 135.2,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/15.mov",
+"in": 2.92,
+"kind": "seg",
+"note": "",
+"end": 140.28
+},
+{
+"start": 140.28,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/15.mov",
+"in": 6.57,
+"kind": "seg",
+"note": " in pulled back",
+"end": 143.68
+},
+{
+"start": 143.68,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/1.mp4",
+"in": 0.28,
+"kind": "seg",
+"note": "",
+"end": 148.48
+},
+{
+"start": 148.48,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/2.mp4",
+"in": 0.48,
+"kind": "seg",
+"note": "",
+"end": 153.56
+},
+{
+"start": 153.56,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/30.mp4",
+"in": 7.68,
+"kind": "seg",
+"note": "",
+"end": 154.6
+},
+{
+"start": 154.6,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/3.mp4",
+"in": 0.16,
+"kind": "seg",
+"note": "",
+"end": 157.32
+},
+{
+"start": 157.32,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/3.mp4",
+"in": 3.52,
+"kind": "seg",
+"note": "",
+"end": 160.72
+},
+{
+"start": 160.72,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/34.mp4",
+"in": 6.0,
+"kind": "seg",
+"note": "",
+"end": 163.44
+},
+{
+"start": 163.44,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/33.mp4",
+"in": 2.64,
+"kind": "seg",
+"note": "",
+"end": 165.52
+},
+{
+"start": 165.52,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/4.mp4",
+"in": 0.16,
+"kind": "seg",
+"note": "",
+"end": 170.96
+},
+{
+"start": 170.96,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/5.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 174.04
+},
+{
+"start": 174.04,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/10.mp4",
+"in": 6.28,
+"kind": "seg",
+"note": "",
+"end": 175.44
+},
+{
+"start": 175.44,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/5.mp4",
+"in": 4.64,
+"kind": "seg",
+"note": " in pulled back",
+"end": 176.76
+},
+{
+"start": 176.76,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/6.1.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 177.8
+},
+{
+"start": 177.8,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/6.1.mp4",
+"in": 1.96,
+"kind": "seg",
+"note": "",
+"end": 180.2
+},
+{
+"start": 180.2,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/7.1.mp4",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 181.24
+},
+{
+"start": 181.24,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 3.88,
+"kind": "seg",
+"note": "",
+"end": 181.56
+},
+{
+"start": 181.56,
+"src": null,
+"in": null,
+"kind": "seg",
+"note": "",
+"end": 182.24
+},
+{
+"start": 182.24,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/last verse/7.1.mp4",
+"in": 2.32,
+"kind": "seg",
+"note": "",
+"end": 183.52
+},
+{
+"start": 183.52,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 6.96,
+"kind": "seg",
+"note": "",
+"end": 183.64
+},
+{
+"start": 183.64,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/35.mp4",
+"in": 3.32,
+"kind": "seg",
+"note": "",
+"end": 186.04
+},
+{
+"start": 186.04,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/20.mp4",
+"in": 3.88,
+"kind": "seg",
+"note": "",
+"end": 186.72
+},
+{
+"start": 186.72,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 0.0,
+"kind": "flash",
+"note": "",
+"end": 186.88
+},
+{
+"start": 186.88,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 186.92
+},
+{
+"start": 186.92,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 1.96,
+"kind": "flash",
+"note": "",
+"end": 187.04
+},
+{
+"start": 187.04,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 187.08
+},
+{
+"start": 187.08,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 3.52,
+"kind": "flash",
+"note": "",
+"end": 187.2
+},
+{
+"start": 187.2,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 187.24
+},
+{
+"start": 187.24,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 8.44,
+"kind": "flash",
+"note": "",
+"end": 187.36
+},
+{
+"start": 187.36,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 187.4
+},
+{
+"start": 187.4,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 0.0,
+"kind": "flash",
+"note": "",
+"end": 187.56
+},
+{
+"start": 187.56,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 187.6
+},
+{
+"start": 187.6,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/2.mp4",
+"in": 1.96,
+"kind": "flash",
+"note": "",
+"end": 187.72
+},
+{
+"start": 187.72,
+"src": null,
+"in": null,
+"kind": "flash-black",
+"note": "",
+"end": 187.76
+},
+{
+"start": 187.76,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/16.mov",
+"in": 0.0,
+"kind": "seg",
+"note": "",
+"end": 188.44
+},
+{
+"start": 188.44,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/16.mov",
+"in": 1.6,
+"kind": "seg",
+"note": "",
+"end": 188.76
+},
+{
+"start": 188.76,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips/badcode guy/16.mov",
+"in": 3.2,
+"kind": "seg",
+"note": "",
+"end": 194.28
+},
+{
+"start": 194.28,
+"src": "GAP",
+"in": null,
+"kind": "gap",
+"note": "",
+"end": 217.76
+},
+{
+"start": 217.76,
+"src": null,
+"in": null,
+"kind": "seg",
+"note": "",
+"end": 218.2
+},
+{
+"start": 218.2,
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/badcode logo designs/draft 1/4.mp4",
+"in": 1.24,
+"kind": "seg",
+"note": "",
+"end": 220.72
+}
+]

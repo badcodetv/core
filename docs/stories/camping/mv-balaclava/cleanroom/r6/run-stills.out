@@ -1,0 +1,38 @@
+{"at":"2026-11-07T12:14:15.397Z","ev":"pair.start","pair":["m12"],"project":"b7a43a20-1d38-43a0-8353-ba2358ee7e4e","attempt":1}
+{"at":"2026-11-07T12:14:54.533Z","ev":"pair.done","pair":["m12"],"project":"b7a43a20-1d38-43a0-8353-ba2358ee7e4e","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:15:00.812Z","ev":"pair.start","pair":["s01"],"project":"bfc1b686-3757-4bf9-8b30-37d2ce8bf567","attempt":1}
+{"at":"2026-11-07T12:16:46.544Z","ev":"pair.done","pair":["s01"],"project":"bfc1b686-3757-4bf9-8b30-37d2ce8bf567","done":0,"failed":[{"i":"s01","code":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-07T12-16-46-412Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited"}],"partial":true}
+{"at":"2026-11-07T12:16:52.663Z","ev":"pair.start","pair":["s01"],"project":"3817d252-3f1c-4101-8ae9-a2b05418cd35","attempt":2}
+{"at":"2026-11-07T12:17:28.606Z","ev":"pair.done","pair":["s01"],"project":"3817d252-3f1c-4101-8ae9-a2b05418cd35","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:17:34.719Z","ev":"pair.start","pair":["s02"],"project":"99501246-b951-4c0d-9ba0-3bee1baf1c4d","attempt":1}
+{"at":"2026-11-07T12:18:16.312Z","ev":"pair.done","pair":["s02"],"project":"99501246-b951-4c0d-9ba0-3bee1baf1c4d","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:18:22.505Z","ev":"pair.start","pair":["s03"],"project":"ee6cfffe-70e7-4455-8072-d8a92ad6c80c","attempt":1}
+{"at":"2026-11-07T12:19:07.584Z","ev":"pair.done","pair":["s03"],"project":"ee6cfffe-70e7-4455-8072-d8a92ad6c80c","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:19:13.805Z","ev":"pair.start","pair":["s04"],"project":"1994fe31-6cff-4249-b0f7-e5937eb5bba7","attempt":1}
+{"at":"2026-11-07T12:20:00.099Z","ev":"pair.done","pair":["s04"],"project":"1994fe31-6cff-4249-b0f7-e5937eb5bba7","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:20:05.842Z","ev":"pair.start","pair":["s05"],"project":"bebf7e47-37f7-4a92-9e45-ccb7f6ed8dd7","attempt":1}
+{"at":"2026-11-07T12:21:52.134Z","ev":"pair.done","pair":["s05"],"project":"bebf7e47-37f7-4a92-9e45-ccb7f6ed8dd7","done":0,"failed":[{"i":"s05","code":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-07T12-21-52-010Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited"}],"partial":true}
+{"at":"2026-11-07T12:21:55.992Z","ev":"pair.start","pair":["s05"],"project":"12776bbe-5a57-475d-b5e7-d53f92b9a47a","attempt":2}
+{"at":"2026-11-07T12:22:42.425Z","ev":"pair.done","pair":["s05"],"project":"12776bbe-5a57-475d-b5e7-d53f92b9a47a","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:22:48.549Z","ev":"pair.start","pair":["s06"],"project":"f1566dc3-cfb0-4e48-b830-c4f55414b0b3","attempt":1}
+{"at":"2026-11-07T12:23:31.149Z","ev":"pair.done","pair":["s06"],"project":"f1566dc3-cfb0-4e48-b830-c4f55414b0b3","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:23:31.149Z","ev":"end"}
+{"at":"2026-11-07T12:23:38.076Z","ev":"pair.start","pair":["t03"],"project":"c52c82ff-dc3f-477d-905a-b3a4fb7ef191","attempt":1}
+{"at":"2026-11-07T12:24:24.945Z","ev":"pair.done","pair":["t03"],"project":"c52c82ff-dc3f-477d-905a-b3a4fb7ef191","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:24:31.198Z","ev":"pair.start","pair":["t04"],"project":"f06a0527-65f1-4fd9-b59b-5c064b17e1ee","attempt":1}
+{"at":"2026-11-07T12:26:17.087Z","ev":"pair.done","pair":["t04"],"project":"f06a0527-65f1-4fd9-b59b-5c064b17e1ee","done":0,"failed":[{"i":"t04","code":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-07T12-26-16-945Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited"}],"partial":true}
+{"at":"2026-11-07T12:26:21.325Z","ev":"pair.start","pair":["t04"],"project":"92b6ec10-409a-4562-a455-1b77e32b55d7","attempt":2}
+{"at":"2026-11-07T12:28:07.186Z","ev":"pair.done","pair":["t04"],"project":"92b6ec10-409a-4562-a455-1b77e32b55d7","done":0,"failed":[{"i":"t04","code":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-07T12-28-07-054Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited"}],"partial":true}
+{"at":"2026-11-07T12:28:12.897Z","ev":"pair.start","pair":["t05"],"project":"984df517-b2d0-4baa-8a22-940fcc68ba77","attempt":1}
+{"at":"2026-11-07T12:28:49.563Z","ev":"pair.done","pair":["t05"],"project":"984df517-b2d0-4baa-8a22-940fcc68ba77","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:28:52.776Z","ev":"pair.start","pair":["t06"],"project":"76a0e0ab-05f2-49e6-b642-c1c2fe2dc5c1","attempt":1}
+{"at":"2026-11-07T12:30:38.890Z","ev":"pair.done","pair":["t06"],"project":"76a0e0ab-05f2-49e6-b642-c1c2fe2dc5c1","done":0,"failed":[{"i":"t06","code":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-07T12-30-38-767Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited"}],"partial":true}
+{"at":"2026-11-07T12:30:44.477Z","ev":"pair.start","pair":["t06"],"project":"8ba47553-6087-4c37-b1d8-c4c0a667c59e","attempt":2}
+{"at":"2026-11-07T12:32:28.637Z","ev":"pair.done","pair":["t06"],"project":"8ba47553-6087-4c37-b1d8-c4c0a667c59e","done":0,"failed":[{"i":"t06","code":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-07T12-32-28-500Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited"}],"partial":true}
+{"at":"2026-11-07T12:32:34.863Z","ev":"pair.start","pair":["t07"],"project":"1b639a5a-eaab-4ec5-a00e-07c7546a74a5","attempt":1}
+{"at":"2026-11-07T12:33:16.912Z","ev":"pair.done","pair":["t07"],"project":"1b639a5a-eaab-4ec5-a00e-07c7546a74a5","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:33:20.628Z","ev":"pair.start","pair":["t08"],"project":"a4bb193b-d535-4394-9eda-64659bf4d196","attempt":1}
+{"at":"2026-11-07T12:35:06.197Z","ev":"pair.done","pair":["t08"],"project":"a4bb193b-d535-4394-9eda-64659bf4d196","done":0,"failed":[{"i":"t08","code":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-07T12-35-06-066Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited"}],"partial":true}
+{"at":"2026-11-07T12:35:12.898Z","ev":"pair.start","pair":["t08"],"project":"fddbf26e-6dac-4be6-871a-64fae2621369","attempt":2}
+{"at":"2026-11-07T12:36:00.212Z","ev":"pair.done","pair":["t08"],"project":"fddbf26e-6dac-4be6-871a-64fae2621369","done":1,"failed":[],"partial":false}
+{"at":"2026-11-07T12:36:00.212Z","ev":"end"}

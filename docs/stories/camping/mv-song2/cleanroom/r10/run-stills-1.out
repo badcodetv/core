@@ -1,0 +1,19 @@
+{"at":"2026-11-09T09:58:19.430Z","ev":"group.start","group":["re01","re02","re03"],"project":"a199a14b-100b-47c7-ac82-28808a053412"}
+{"at":"2026-11-09T09:59:11.976Z","ev":"shot.done","id":"re01","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/re01-1794218299430"}
+{"at":"2026-11-09T09:59:43.489Z","ev":"shot.done","id":"re02","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/re02-1794218351976"}
+{"at":"2026-11-09T10:00:11.071Z","ev":"shot.done","id":"re03","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/re03-1794218383489"}
+{"at":"2026-11-09T10:00:16.601Z","ev":"group.start","group":["re04","re05","re06"],"project":"9557f5ad-6bf8-4f60-834f-0d3c6cd427a2"}
+{"at":"2026-11-09T10:00:57.046Z","ev":"shot.done","id":"re04","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/re04-1794218416601"}
+{"at":"2026-11-09T10:01:37.459Z","ev":"shot.done","id":"re05","got":1,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/re05-1794218457047"}
+{"at":"2026-11-09T10:02:08.018Z","ev":"shot.done","id":"re06","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/re06-1794218497459"}
+{"at":"2026-11-09T10:02:13.684Z","ev":"group.start","group":["ly01","ly02","ly03"],"project":"37bf7ca9-c143-4cfd-b23c-88aea4606b14"}
+{"at":"2026-11-09T10:02:51.908Z","ev":"shot.done","id":"ly01","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/ly01-1794218533684"}
+{"at":"2026-11-09T10:03:26.647Z","ev":"shot.done","id":"ly02","got":1,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/ly02-1794218571909"}
+{"at":"2026-11-09T10:04:05.849Z","ev":"shot.done","id":"ly03","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/ly03-1794218606647"}
+{"at":"2026-11-09T10:04:13.325Z","ev":"group.start","group":["ly04","ly05","ly06"],"project":"53dde86b-883b-435a-830c-9739969db761"}
+{"at":"2026-11-09T10:04:48.618Z","ev":"shot.done","id":"ly04","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/ly04-1794218653325"}
+{"at":"2026-11-09T10:05:13.254Z","ev":"shot.done","id":"ly05","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/ly05-1794218688619"}
+{"at":"2026-11-09T10:05:41.510Z","ev":"shot.done","id":"ly06","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/ly06-1794218713254"}
+{"at":"2026-11-09T10:05:47.129Z","ev":"group.start","group":["ly07"],"project":"20849370-33a7-47e9-aa9b-dff5ad5c9caa"}
+{"at":"2026-11-09T10:06:22.985Z","ev":"shot.done","id":"ly07","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/ly07-1794218747130"}
+{"at":"2026-11-09T10:06:22.985Z","ev":"end"}

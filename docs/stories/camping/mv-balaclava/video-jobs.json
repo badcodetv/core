@@ -1,0 +1,620 @@
+{
+ "extra": [
+  {
+   "key": "s01",
+   "n": 0,
+   "still": "s01r3-a",
+   "motion": "Locked-off camera, framing holds; the editor adds any camera move. The man stays facing the lens and raps with his body: his head nods hard on each beat, shoulders rocking. His black-gloved right hand rises into frame and jabs one finger at the lens on four beats, then opens into a flat palm and drops. The mask, hood, scarf and gloves stay exactly as they are. Steam keeps rolling from the vent; the alley stays the same. Ambient noise: distant traffic, vent hiss. No voices.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w1"
+  },
+  {
+   "key": "s02",
+   "n": 0,
+   "still": "s02r3-a",
+   "motion": "Locked-off camera, framing holds; the editor adds any camera move. From the wide shrug, the man brings both black-gloved hands in to his chest, then throws them back out wide on the beat, palms up, three times, his shoulders bouncing with each throw. His masked head stays facing the lens with small nods. The pale car stays parked where it is; the oil drum keeps burning, firelight flickering. Ambient noise: rain dripping, fire crackle, distant road hum. No voices.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w1"
+  },
+  {
+   "key": "s03",
+   "n": 0,
+   "still": "s03r3-b",
+   "motion": "Locked-off camera, framing holds; the editor adds any camera move. The man works the rhythm low: both black-gloved hands pump downward in front of his stomach on every beat, fingers spread, while his bowed head nods with them. Halfway through he lifts his head to face the lens and sweeps one open glove out toward the city, then back to the low pump. Everything behind him stays as it is; windows glow steadily. Ambient noise: cold wind across the roof, faint city hum. No voices.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w1"
+  },
+  {
+   "key": "s04",
+   "n": 0,
+   "still": "s04r3-b",
+   "motion": "Locked-off camera, framing holds; the editor adds any camera move. The man is hunched forward with his masked head close to the lens. His black-gloved hand at the bottom of the frame chops up and down sharply on each beat, four times, while his head jerks forward with every chop and his shoulders tense. Then he stops, hand still, head held square to the lens. Steam drifts slowly on the right; the lamp holds steady. Ambient noise: alley drip, vent hiss. No voices.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w1"
+  },
+  {
+   "key": "s05",
+   "n": 0,
+   "still": "s05r3-b",
+   "motion": "Locked-off camera, framing holds; the editor adds camera moves. The man keeps walking slowly toward the lens with a heavy, rolling swagger, head facing straight into the camera. His left gloved hand chops down hard on every beat, four times, while his shoulders dip with each step. On the last step he stops and leans forward, both hands opening at waist height. The flame flickers; tents and bin bag stay still. Ambient noise: fire crackle, distant traffic hum, footsteps on grit.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w2"
+  },
+  {
+   "key": "s06",
+   "n": 0,
+   "still": "s06r3-b",
+   "motion": "Static camera on a tripod, framing holds; the editor adds camera moves. Seated against the wall, the man keeps his head facing the lens and nods on the beat. His gloved hands pull in and clasp at his chest, then fling open wide toward the camera, palms up, three times in rhythm, shoulders shrugging as they open. Last time he holds them out, cupped, as if offering. The lamps glow steadily; the tent and tray stay put. Ambient noise: river lapping, wind, a distant city hum.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w2"
+  },
+  {
+   "key": "m12",
+   "n": 0,
+   "still": "m12r3-b",
+   "motion": "Locked-off camera, framing holds; the editor adds camera moves. From the first frame the man snaps into the bar: his right gloved hand jabs forward toward the lens, finger pointing, as his chin drops in a hard nod. He pulls the hand back and jabs again on each beat, four times, the left hand pumping low at his hip. Head stays square to the camera, feet planted. The drum fire flickers. Ambient noise: fire crackle, low traffic rumble under the concrete.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w2"
+  },
+  {
+   "key": "t03",
+   "n": 0,
+   "still": "t03r3-a",
+   "motion": "Locked-off camera, framing holds still; the editor adds any camera move. The seated man keeps his masked head square to the lens and delivers a verse with his gloved hands: palms turn open, then fingertips press together, then both hands roll outward from his chest, on a steady beat, with small nods and his shoulders easing back. Plate, glass and tablecloth stay put; the diners behind keep eating quietly. Ambient noise: soft restaurant murmur, cutlery clinks. No voices, no music.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w3"
+  },
+  {
+   "key": "t04",
+   "n": 0,
+   "still": "t04r3-b",
+   "motion": "Locked-off camera low below him, framing holds; the editor adds camera moves. The man stays bent over the lens, one gloved hand gripping the rail. He dips his masked head toward the camera on each beat, three hard nods, shoulders rolling forward with menace, while his lower gloved hand tugs his jacket front straight once. His face stays turned down into the lens throughout the nods. Clouds drift slowly; the city below stays still. Ambient noise: high wind, faint distant traffic. No voices.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w3"
+  },
+  {
+   "key": "t05",
+   "n": 0,
+   "still": "t05r3-b",
+   "motion": "Locked-off camera, framing holds still; the editor adds any camera move. Standing on the deck, the man finishes pulling his glove snug with a sharp tug, then lifts both gloved hands to chest height and spreads them palms out, pushing forward on the beat in a lecturing rhythm while his masked head nods, facing the lens. His feet stay planted. The sea glitters gently, the deck and seating stay as they are. Ambient noise: soft wind, water lapping the hull. No voices, no music.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w3"
+  },
+  {
+   "key": "t06",
+   "n": 0,
+   "still": "t06r3-a",
+   "motion": "Locked-off camera, framing holds; the editor adds any camera move. The man stays reclined, head still and angled to the lens as in the first frame, nodding slowly on the beat. He tips the cocktail toward the lens twice in time, then his gloved hand lifts off the laptop, palm open, and waves lazily side to side, then settles back on the keys. Palms sway gently, the sea laps, everything else holds. Ambient noise: soft surf and wind in the palms, no voices.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w4"
+  },
+  {
+   "key": "t07",
+   "n": 0,
+   "still": "t07r3-b",
+   "motion": "Static tripod shot, no camera movement; the editor adds the moves. The man pushes off his thighs and straightens, then both gloved hands jab forward toward the lens on the beat, fingers spread, chopping down hard four times while his shoulders pump and his head nods sharply, still facing straight on. He finishes with one finger stabbing at the camera. The car and the parked cars stay exactly where they are. Ambient noise: low fluorescent hum and a concrete echo, no voices.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w4"
+  },
+  {
+   "key": "t08",
+   "n": 0,
+   "still": "t08r3-a",
+   "motion": "Camera fixed at eye level, framing holds; camera moves come later in the edit. The man stays square to the lens. He folds his arms tight across his chest for two beats, head bobbing, then unfolds them and works both gloved hands in front of his chest, rolling and flicking on each beat, a pointed finger stabbing toward the lens now and then. Behind him the guests keep chatting where they stand, sipping champagne; no one walks in. Ambient noise: garden-party murmur and clinking glasses, no clear words.\n\nThanks.",
+   "character": null,
+   "why": "balaclava rap clip r4, writer w4"
+  },
+  {
+   "key": "m12p",
+   "n": 0,
+   "still": "m12r5-b",
+   "motion": "Fast, aggressive performance from the very first frame. The camera is locked off and does not move. From the deep lunge he pumps up and down on bent knees to the beat, mic pressed to his mask, and stabs his gloved finger at the lens on every stressed word, driving his chest closer with each jab. His head jolts forward on the downbeat, snaps sideways and whips straight back to the lens as if daring the viewer to look away. His boots stamp the concrete. Sound: traffic rumbling on the flyover above, wind under the bridge, no voices.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c1"
+  },
+  {
+   "key": "s01p",
+   "n": 0,
+   "still": "s01r5-a",
+   "motion": "Energetic movement throughout, starting at once. The camera stays fixed. He swaggers fast down the alley straight toward the lens, shoulders rolling hard on every step, knees springing. On the beat he jabs a thumb into his own chest, then flings both arms wide with palms open, head pushed forward and facing the camera, as if demanding why now. He keeps coming, bouncing, arms swinging out and back in rhythm, steam from the wall vent billowing behind him. Sound: dripping water, the vent hissing, far-off sirens, no voices.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c1"
+  },
+  {
+   "key": "s02p",
+   "n": 0,
+   "still": "s02r5-b",
+   "motion": "Explosive from the first second; static camera. He springs up out of the crouch behind the burning drum onto the balls of his feet, mic jammed against his mask, swings his outstretched arm from the far side of the flyover round to point at the lens, and chops it down hard like an axe on the rhyme. He sinks into a bouncing half crouch and drives up again, chopping on each beat, shoulders heaving, head jutting forward at the camera. Rain pours, sparks rise from the fire. Sound: rain on concrete, crackling fire, distant motorway roar, no voices.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c1"
+  },
+  {
+   "key": "s03p",
+   "n": 0,
+   "still": "s03r5-b",
+   "motion": "High-energy, cocky and mocking from the first frame; the camera does not move. He lands hard on the gravel with knees bent and springs straight back up, fist punching skyward on every beat, boots crunching each landing. Between jumps he struts sideways along the parapet with a rolling swagger, chest thrust out, and jabs his other finger down at the city lights below as if sneering at the people there, mask turned back to the lens. Sound: wind gusting across the rooftop, distant city traffic and a far siren, no voices.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c1"
+  },
+  {
+   "key": "s04p",
+   "n": 0,
+   "still": "s04xr5-a",
+   "motion": "Heavy, aggressive rhythm from the very first frame; static camera. Down in the wide squat, mic tight against his mask, he brings his raised fist crashing down like a hammer on the beat, stamps his front boot on the cobbles with each blow, and swings the arm straight back up to strike again, harder and faster as the line builds. His head snaps down in a sharp nod on every downbeat and pops back up to face the lens, shoulders bouncing with his knees. Sound: dripping gutters, the hissing wall vent, distant city traffic, no voices.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c1"
+  },
+  {
+   "key": "s05p",
+   "n": 0,
+   "still": "s05r5-a",
+   "motion": "Fast, aggressive live energy from the very first frame. From his deep squat he pumps up and down on bent knees to the beat, boots planted in the dirt, shoulders riding every bounce, mic pressed to his mask. His free hand stabs a pointing finger at the lens on each stressed word while his head snaps forward on the downbeat, mask facing the camera. Midway he springs up out of the squat and punches his free arm straight above his head, still bouncing hard. Static camera. Sound: crackling drum fire, traffic rumbling on the flyover above, no voices.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c2"
+  },
+  {
+   "key": "s06p",
+   "n": 0,
+   "still": "s06r5-b",
+   "motion": "Energetic movement throughout, starting instantly. Low and wide, he bounces hard on bent knees and prowls with heavy stamping steps along the wet paving toward the river wall and back, shoulders rolling. His outstretched arm sweeps wide like a man holding a door open, then his cupped glove thrusts at the lens, begging, again and again on the beat, head jutting forward and nodding sharply, mask facing the camera. His coat swings with every bounce. Static camera. Sound: drizzle on stone, the river lapping, distant traffic, no voices.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c2"
+  },
+  {
+   "key": "t03p",
+   "n": 0,
+   "still": "t03r5-b",
+   "motion": "Big and theatrical, at full energy from the first frame. Braced on the table with one gloved palm, he rocks his whole body forward and back over the white cloth on the beat, raised knee bouncing. His high arm swings down at the lens like a hammer, finger pointing, whips back up and swings down again, then flings out wide toward the diners behind him, ringed hand flashing. His head jolts forward with each swing, mask facing the camera. The glasses tremble on the cloth; the diners stay seated. Static camera. Sound: restaurant murmur, clinking cutlery, no voices up front.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c2"
+  },
+  {
+   "key": "t04p",
+   "n": 0,
+   "still": "t04r5-b",
+   "motion": "Fast-paced and contemptuous from the first frame. He struts toward the lens along the decking with a cocky, rolling swagger, knees springing, shoulders swinging, mic tight to his mask. His raised gloved hand chops down hard like a gavel on every rhyme, flicks back up and chops again, his head snapping forward with each blow while the mask keeps facing the camera. He sways side to side in his tweed as he comes, sneering with his whole body. The guests behind keep mingling. Static camera. Sound: wind across the rooftop, a low party murmur, distant city hum, no singing or speech up front.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c2"
+  },
+  {
+   "key": "t05p",
+   "n": 0,
+   "still": "t05xr5-b",
+   "motion": "Fast, swaggering live performance from the first frame: the masked man strides straight down the teak deck toward the lens, each heavy step landing on the beat, knees bent and springy, shoulders rolling side to side. The mic stays pressed to his mask, elbow high. His free arm swings out wide, then sweeps in to jab a stabbing index finger down at the lens on every stressed word, his head nodding hard on each downbeat. The camera stays completely still. Sound: wind, engine hum, the wake roaring behind.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c3"
+  },
+  {
+   "key": "t06p",
+   "n": 0,
+   "still": "t06r5-b",
+   "motion": "Aggressive and fast throughout: from his low lunge the masked man springs up and bounces forward toward the lens in short, hard hops, sand spraying from his shoes. Both gloved hands shove at the camera in rhythm, the pointing finger stabbing, the open palm pushing out like he is shooing someone off his beach. His head jerks forward on each beat, chin jutting. On the last line he flings both arms wide in disgust and drops back into the crouch. Locked-off static camera. Sound: surf breaking, palm leaves rustling.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c3"
+  },
+  {
+   "key": "t07p",
+   "n": 0,
+   "still": "t07r5-a",
+   "motion": "Energetic movement throughout: perched on the bonnet of the black saloon, the masked man rocks hard on his raised knee, his whole torso pitching forward and back on the beat. The mic stays tight to his mask. His other hand cracks the white card down like a hammer on each rhyme, flicking it back up beside his head between hits. Then he hops down off the car, landing in a wide crouch, and yanks his trouser pockets inside out toward the lens, shrugging big. The camera does not move. Sound: strip-light buzz, echoing car park.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c3"
+  },
+  {
+   "key": "t08p",
+   "n": 0,
+   "still": "t08r5-a",
+   "motion": "Fast-paced party energy from the first second: standing on the garden chair with his feet planted wide on it, the masked man pumps his knees up and down on the beat, the chair rocking under him. He thrusts the champagne flute straight up into the air on every beat, wine sloshing, and the guests around him punch their glasses up in time and cheer. His head snaps forward on each downbeat, the mic pressed to his mask. He leans out over the pool side toward the lens on the punchline, flute swinging. Static camera. Sound: crowd chatter, cheering, clinking glasses.\n\nThanks.",
+   "character": null,
+   "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c3"
+  },
+  {
+   "key": "m12v",
+   "n": 0,
+   "still": "m12r6-b",
+   "motion": "Subtle handheld micro-movement, not shaky. He stays planted and raps straight into the lens. His finger taps his temple twice, quick and hard, then the hand snaps forward to point at the lens for a split second and drops straight back to his chest. His head gives four hard nods, his shoulders roll, and on the last nod his whole upper body drops forward and stops dead. Ambient sound: traffic rumbling across the flyover overhead. No speech or singing.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w1"
+  },
+  {
+   "key": "s01v",
+   "n": 0,
+   "still": "s01r6-b",
+   "motion": "Handheld camera an arm's length away, swinging a little with him. His clawed hand throws down past the lens, so fast it smears with motion blur, then snaps straight back up in front of his mask. He does it twice. Between throws his head dips forward and his shoulders hunch, the mask dropping in and out of the lamp's shadow. His feet stay put. Ambient sound: the wall vent humming and a distant siren. No speech or singing.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w1"
+  },
+  {
+   "key": "s02v",
+   "n": 0,
+   "still": "s02r6-b",
+   "motion": "Locked-off camera. His boots stay planted on the wet tarmac and his shadow stays joined to them. His knees bounce in four short hard dips. His flat right palm chops sideways at chest height and stops dead, chops back the other way and stops dead, then returns to his chest. His hips turn a little with each chop and his weight lands in his knees. Rainwater drips off the flyover edge. Ambient sound: tyres hissing overhead, water dripping. No speech or singing.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w1"
+  },
+  {
+   "key": "s03v",
+   "n": 0,
+   "still": "s03r6-b",
+   "motion": "A short push-in towards him over the first three seconds, then the camera holds still. He flicks his two pointing fingers down at the lens three times, quick and clipped, then his fist pumps down hard at waist height twice, stopping dead each time. His chest drops forward on every pump and his head bobs with it. Wind tugs at his jacket. Ambient sound: wind across the roof and the city humming below. No speech or singing.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w1"
+  },
+  {
+   "key": "s04v",
+   "n": 0,
+   "still": "s04r6-b",
+   "motion": "Locked-off camera. From the boxer's guard his right hand drops to chest height and rubs thumb against fingers, quick, twice, then slams down as a fist into his open left palm and stops dead. His shoulders jolt with the impact, his head nods hard three times, and his torso rocks forward towards the lens and back. His feet do not move. Ambient sound: the lamp buzzing, a bottle rolling on wet ground. No speech or singing.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w1"
+  },
+  {
+   "key": "s05v",
+   "n": 0,
+   "still": "s05r6-b",
+   "motion": "Subtle handheld camera, tiny natural micro-movements, not shaky. He raps hard straight into the lens. His head gives four quick, clipped nods and his shoulders roll; on every second nod his chest drops forward and lands. His raised fist pumps down at chest height twice, stopping dead each time, then one gloved finger presses his temple once and snaps back to his chest. His other hand keeps gripping his jacket. The mask stays the same size and the same shape. Sound: traffic rumbling overhead, wind flapping tent fabric.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w2"
+  },
+  {
+   "key": "s06v",
+   "n": 0,
+   "still": "s06r6-b",
+   "motion": "Locked-off camera. His feet stay planted on the wet paving; he does not step or walk, and his shadow stays joined to his boots. His knees give a small, quick bounce under heavy weight. His upturned palm jabs forward once at waist height, like a man asking, then snaps shut into a fist and pumps down twice, stopping dead. His other hand hangs by his thigh. His upper body rocks forward on each pump and his head bobs hard. Sound: river water lapping the wall, a distant siren.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w2"
+  },
+  {
+   "key": "t03v",
+   "n": 0,
+   "still": "t03r6-b",
+   "motion": "Locked-off camera. He raps down into the lens, leaning on his flat hand, and the tablecloth creases under his weight. His pointing finger flicks down at the floor three times, short and clipped, stopping dead each time, then returns to his waistcoat. His head gives small, curt nods and tips a little to one side, never past a quarter turn. His shoulders stay square, a contemptuous calm. Behind him the diners keep eating. Sound: cutlery on china, low murmured talk.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w2"
+  },
+  {
+   "key": "t05v",
+   "n": 0,
+   "still": "t05r6-b",
+   "motion": "Subtle handheld micro-movement, not shaky. He stays planted, left hand gripping the rail, and rocks his chest forward towards the lens on each stressed word. His right index finger jabs straight down at the deck three times, quick and hard, stopping dead on each jab, then the hand snaps back to rest at his chest. Four sharp head nods. The deck rises and falls gently with the swell. Sound: engine rumble, wake hissing, wind across the deck.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w3"
+  },
+  {
+   "key": "t07v",
+   "n": 0,
+   "still": "t07r6-a",
+   "motion": "Locked-off camera. His feet stay planted on the concrete and the car takes his weight; his knees give a small tight bounce. His right fist pumps down at waist height four times, short and hard, stopping dead each time, while his left hand grips the edge of the car's wing. On the last pump he slaps his own jacket pocket flat with an open glove and leaves it there. His shadow stays joined to his shoes. Sound: ventilation hum, a distant car door thudding, tyres squeaking on a ramp.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w3"
+  },
+  {
+   "key": "t08v",
+   "n": 0,
+   "still": "t08r6-b",
+   "motion": "A slow, short push-in towards him. His right hand chops sideways at chest height twice, flat and clipped, stopping dead, then flicks backwards once from the wrist in a dismissive wave and drops to his chest. His upper body rocks forward on each chop. Then he lifts the champagne flute a few inches towards the lens in a small, smug toast and holds it still. The guests behind keep chatting. Sound: party murmur, glasses clinking, a light breeze in the trees.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w3"
+  },
+  {
+   "key": "t04v",
+   "n": 0,
+   "still": "t04r6-b",
+   "motion": "A short push-in over the first three seconds, then the camera holds. His hand stays on the bar table, his weight leaning into it. His flat palm chops sideways at chest height four times, quick and hard, stopping dead on each chop, then flicks back over his shoulder in dismissal and returns to his lapel. His chin jerks up on each chop and his chest rocks forward. His head keeps facing the lens. Sound: wind across the terrace, glasses clinking, a distant helicopter.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6, writer w2 (still rewritten after a Flow block)"
+  },
+  {
+   "key": "t06v",
+   "n": 0,
+   "still": "t06r6-b",
+   "motion": "Handheld camera, very close, swinging slightly with him. His head tips back once as if laughing, then he ducks forward hard into the lens. His open right hand jerks up in front of his mask and is thrown down past the lens so fast it smears with motion blur, then comes back to his chest. Two hard nods, his shoulders rolling forward each time. His left hand stays against his jacket. Sound: surf breaking, palm fronds rattling in a warm wind.\n\nThanks.",
+   "character": null,
+   "why": "venom redo r6, writer w3 (still rewritten after a Flow block)"
+  },
+  {
+   "key": "m12t1",
+   "n": 0,
+   "still": "m12r6-b",
+   "motion": "One continuous handheld shot, no cuts. Filmed like a 2000s grime DVD freestyle on a camcorder: the operator is close, walking backwards slowly, with a real arm's small drift. The masked rapper from the start frame raps straight into the lens, feet planted, weight in his heels, knees giving a small bounce. His lower hand keeps hold of his jacket zip; the hand at his temple does the talking: it presses the temple, is flung down at about 2s, chops sideways at chest height at about 5s, then jabs one finger at the lens at about 7s. Head dips forward on each accent; shoulders roll. The mask stays still over his mouth. Real-time, no slow motion. Sound: lorries rumbling overhead, no music, no vocals, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T1, sealed writer"
+  },
+  {
+   "key": "s01t1",
+   "n": 0,
+   "still": "s01r6-b",
+   "motion": "One continuous handheld shot, no cuts. Filmed like a back-alley freestyle on a camcorder: the operator is close, shuffling backwards between the bins, with a real arm's small drift. The masked rapper from the start frame drops the hood-pull and raps into the lens, feet planted, weight in his heels, knees bouncing. One hand stays clamped on his collar; the other drops off the mask and works: a hard downward fist at about 2s, a palms-down not-having-it wave at about 5s, a finger flicked at the lens at about 7s. Head dips on each accent. The mask stays still over his mouth. Real-time, no slow motion. Sound: the vent hissing, no music, no vocals, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T1, sealed writer"
+  },
+  {
+   "key": "m12t2",
+   "n": 0,
+   "still": "m12r6-b",
+   "motion": "Single continuous shot, no scene cuts. Handheld on a very wide lens, the camera starts on this framing and pushes in, low and slightly below his mask, until he fills the frame at arm's length. He jabs the finger off his temple and leans in from the waist, chin down, the triangle kept on the lens. On the next accent his gloved hand snaps forward out past the frame edge, blurring close to the glass, then drops back to his chest and holds. A beat of stillness, then a clawed hand flicked down at the lens. Each move is short and sharp, peaks hard, stops dead; never broad or sweeping. Feet planted. Normal speed. Under the flyover, sodium light, thin fog. Ambient sound only: traffic rumbling overhead, dripping water. No music, no vocals, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T2, sealed writer"
+  },
+  {
+   "key": "m12t3",
+   "n": 0,
+   "still": "m12r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked rapper raps to the lens with an understated, controlled performance, already mid-line from the first frame: his head nods in time, chin dipping on the stressed words. His left hand stays gripping the front of his jacket. His right finger presses hard into his temple, then the hand drops and turns at the wrist, a short flat chop at chest height, then an open palm pushed once toward the lens and pulled back. Nothing theatrical, no arms above the shoulders. Weight rocks from foot to foot, feet planted. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: flyover traffic rumbling overhead, dripping water, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "s01t3",
+   "n": 0,
+   "still": "s01r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked rapper is already moving in the first frame: both hands drag down off the sides of his mask and he leans in to the lens from the waist, coiled and tense. His left hand settles on his scarf and stays there. His right hand does the work, close to his body: a hard downward fist at waist height, a stop, then a quick wrist flick of two fingers at the lens. Head down and forward, shoulders rolling on the accents. Understated, controlled, never sweeping. Feet planted, no sliding. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: steam hissing from the wall vent, a wheelie bin lid tapping, distant sirens, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "s02t3",
+   "n": 0,
+   "still": "s02r6-b",
+   "motion": "One continuous shot, camera locked off low at waist height, full figure as in the start frame. The masked rapper holds his low wide stance, feet planted on the wet tarmac, his shadow joined to his boots. The bounce is in his knees, small and sharp, and his upper body rocks forward on the stressed words. His left hand hangs loose by his thigh. His right fist, already at his chest, snaps outward in a short chop toward the lens, stops dead, then jabs down twice beside his hip before returning to his chest. Understated and controlled, no arms above the shoulders, no steps, no jumping. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: rain dripping off the flyover, a lorry passing above, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "s03t3",
+   "n": 0,
+   "still": "s03r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked rapper is bent forward toward the lens, mid-line, his head tilted. He straightens a little and squares his mask to the lens, the red triangle turning to face us. His left hand stays tucked at his chest. His right hand, already pointing in, jabs two fingers at the lens on the stressed word, stops, then turns over into a flat palm and flicks away dismissively beside his ribs. Head nods hard, shoulders roll forward. Understated, contemptuous, close to the body. Feet planted. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: wind across the rooftop, the hum of the city below, a roof vent spinning, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "s04t3",
+   "n": 0,
+   "still": "s04r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked rapper starts with both fists up by his mask like a boxer's guard, and breaks it at once: his left hand drops to grip his jacket zip and stays there. His right hand works close to his body: thumb jerked back over his shoulder, a stop, then a rub of gloved finger and thumb at chest height, then a short sideways chop. He leans in from the waist on the stressed words, head forward and down, then pulls back upright. Controlled, nothing theatrical, no arms above the shoulders. Feet planted, no sliding. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: steam hissing from a vent, a distant car alarm, footsteps far off, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "s05t3",
+   "n": 0,
+   "still": "s05r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked rapper begins with his head bowed and gloved fists gripping his jacket collar, then lifts his mask sharply to the lens on the first accent. His left hand keeps hold of the collar. His right hand lets go: it taps his own chest twice, hard, then opens into a palm turned up toward the lens, held only a moment, then snaps shut into a fist and drops. His shoulders hunch and roll; his head bobs in time. Understated and coiled, no arms above the shoulders. Feet planted. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: rain on tent nylon, flyover traffic overhead, a tarp flapping, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "s06t3",
+   "n": 0,
+   "still": "s06r6-b",
+   "motion": "One continuous shot, camera locked off at waist height, full figure as in the start frame. The masked rapper stands wide beside his green tent, knees bent, feet planted on the wet paving, shadow joined to his boots. His left hand hangs low by his thigh. His right hand, already at his chest, sweeps a short flat palm toward the tent on the stressed word, stops, then turns back and jabs a finger at the lens, then cups open, palm up, begging, and closes. Knees give a small bounce; his upper body leans forward on the accents. Understated, controlled, no arms above the shoulders, no steps. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: river lapping the wall, wind, a distant bus, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "t03t3",
+   "n": 0,
+   "still": "t03r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked man in tweed leans over the white tablecloth, his left glove flat on the table and staying there. His right hand, already pointing down, taps the finger toward the floor once, slow and deliberate, then lifts into a lazy limp-wristed wave of dismissal, then rests on his hip. His head tilts slightly with each stressed word, unhurried, superior; the body barely moves. Understated, smug, controlled, nothing theatrical. Feet planted. The mask stays still over his mouth. Diners behind carry on eating. Real-time, no slow motion, no scene cuts. Sound: cutlery on china, low murmured conversation, a cork popping, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "t04t3",
+   "n": 0,
+   "still": "t04r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked man in tweed leans with his left glove resting on the high table, and it stays there. His right hand, already level under his chin, slides out sideways in a smooth flat cut across his chest, stops, then turns to point lazily over his shoulder, then a slow wag of one finger at the lens. His head tilts and nods in a slow, smug rhythm; one shoulder rolls. Understated, condescending, close to the body, no arms above the shoulders. Feet planted. The mask stays still over his mouth. Guests behind chat and drink. Real-time, no slow motion, no scene cuts. Sound: glasses clinking, office chatter, wind on the glass screens, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "t05t3",
+   "n": 0,
+   "still": "t05r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked man in tweed keeps his left glove on the steel rail, his body swaying gently with the deck. His right hand, already curled in a beckoning finger, beckons once toward himself, then flips over into a slow pointing gesture at the lens on the stressed word, then taps the ring hand against his own chest. His head cocks to one side and back, relaxed, entitled. Understated, controlled, nothing theatrical, no arms above the shoulders. Feet planted on the deck. The mask stays still over his mouth. The wake churns behind him. Real-time, no slow motion, no scene cuts. Sound: engine thrum, hull slapping water, wind, a gull, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "t06t3",
+   "n": 0,
+   "still": "t06r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked man in tweed starts mid-gesture, his right hand up with two fingers flicking off his temple in a lazy salute. His left hand straightens his jacket lapel and keeps hold of it. The right hand then drops and jabs two fingers at the lens on the stressed word, stops, and flicks away in a short contemptuous backhand at chest height. His head jerks forward once on the accent, then settles back, chin raised. Understated, irritated, close to the body, no arms above the shoulders. Feet planted in the sand. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: gentle surf, palm fronds rustling, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "t07t3",
+   "n": 0,
+   "still": "t07r6-a",
+   "motion": "One continuous shot, camera locked off at chest height from the front, wide as in the start frame. The masked man in tweed sits on the bonnet of the black saloon, his left glove resting flat on his knee and staying there, his shoes planted on the concrete. His right hand lifts off his knee and pats the bonnet beside him twice, a stop, then rises to pat his breast pocket, then turns out into an open empty palm toward the lens and drops. His head tilts in a slow, smug nod; his shoulders shrug once. Understated, controlled, nothing theatrical, no arms above the shoulders. The mask stays still over his mouth. The car does not move. Real-time, no slow motion, no scene cuts. Sound: fluorescent tube buzzing, a distant car door echoing, dripping water, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "t08t3",
+   "n": 0,
+   "still": "t08r6-b",
+   "motion": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked man in tweed holds his champagne flute steady in his left hand, and it stays upright. His right hand, already level at his chest, slides out in a slow sideways glide, like changing lanes, stops, then flicks backhand at the lens in a short dismissive brush, then returns to stroke his tie. His head rocks back on the stressed word as if laughing, then nods forward. Understated, bored, superior, close to the body, no arms above the shoulders. Feet planted. The mask stays still over his mouth. Guests behind mingle and sip. Real-time, no slow motion, no scene cuts. Sound: garden chatter, glasses clinking, birdsong, a splash from the pool, no music, no singing, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T3, sealed writer"
+  },
+  {
+   "key": "m12t4",
+   "n": 0,
+   "still": "m12r6-b",
+   "motion": "Phone footage, as if a mate is filming from two metres away under the flyover: one continuous take, the slight shake of a real arm, one natural smartphone zoom in at about 4 seconds. The masked rough sleeper is mid-verse, shoulders angled to his mates off-frame left, head on the lens. His finger presses hard into his temple, then snaps off and stabs once at the lens. For the last bars he squares up fully to the lens and slaps a flat hand to his chest. Knees bounce, shoulders hunched, body rocking forward on the hits. Clipped, never sweeping, no move repeated. Feet planted, mask still over the mouth. Real-time speed. Diegetic sound: traffic rumbling overhead, a distant siren. No music, no vocals, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T4, sealed writer"
+  },
+  {
+   "key": "m12t5",
+   "n": 0,
+   "still": "m12r6-b",
+   "motion": "In a single continuous shot, no scene cuts. Handheld close medium shot, slight drift. The masked rapper from the start frame raps into the lens.\n[0-2s] Already moving: his finger presses into his temple and snaps away; knees bounce, the other glove on his zip.\n[2-4s] Leans in from the waist and flicks that hand open at the lens, then drops it to his chest.\n[4-6s] Shoulders roll; a short flat palm chop sideways at chest height, cut off dead.\n[6-8s] Chin dips; a quick finger jab at the lens, snapped back.\nEach move peaks on the beat, then stops. Feet planted; real-time, no slow motion. The mask stays still over the mouth. Sound: traffic rumbling on the flyover above. No music, no vocals, no dialogue.\nThanks.",
+   "character": null,
+   "why": "r7 gesture options (Jack 2026-11-07 \"terrible gesturing\"), pattern T5, sealed writer"
+  },
+  {
+   "key": "s02em",
+   "n": 0,
+   "still": "s02emr8-a",
+   "motion": "One continuous handheld shot, wide lens, close and slightly low; the camera holds its place and his feet stay planted. He stabs the pointing finger at the lens twice, each jab stopping dead. He snaps both arms crossed tight over his chest, holds one beat, then flings them straight out sideways at shoulder height. He slaps a flat hand onto his chest, then lunges his face towards the lens and jabs the finger again to finish. Between moves his head juts forward on every accent and his hunched shoulders jerk up with the stresses: lean in, pull back, lean in. Sharp starts, hard stops, never a smooth wave. Sound: rain dripping off concrete, tyres hissing overhead, distant traffic.\nThanks.",
+   "character": null,
+   "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Eminem, sealed writer"
+  },
+  {
+   "key": "s02fc",
+   "n": 0,
+   "still": "s02fcr8-a",
+   "motion": "One continuous close shot, camera static with a faint handheld drift. Feet stay planted the whole time; all the movement is in his upper body. He sways slowly side to side, loose and lazy, one shoulder rolling forward on each sway. The reaching hand flicks twice from the wrist towards the lens, fingers fanning, then drops back. He leans in close, then settles back with a small late nod. Both hands cross low in front of his stomach, fingers flicking down and out, held a beat, released. He keeps swaying and flicking to the last second. Sound: traffic rumbling overhead, rain dripping into puddles.\nThanks.",
+   "character": null,
+   "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), 50 Cent, sealed writer"
+  },
+  {
+   "key": "s02kl",
+   "n": 0,
+   "still": "s02klr8-a",
+   "motion": "One continuous shot, the camera locked low and close on a wide lens. His feet stay planted on the wet ground; every move comes from the hips, shoulders and arms, fast and staccato, each one stopping dead for a beat. The reaching hand snaps back to his chest. Both gloved hands spread their fingers and stab forward together, then wring and claw in front of his chest. He pitches forward from the waist, jabs a finger at the lens twice, then flicks an open palm out toward the road. Between moves his head cocks sharply side to side and his shoulders jolt up. He keeps moving to the final second. Ambient sound only: rain dripping off concrete, tyres hissing on the road above.\nThanks.",
+   "character": null,
+   "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Kendrick Lamar, sealed writer"
+  },
+  {
+   "key": "s02mm",
+   "n": 0,
+   "still": "s02mmr8-a",
+   "motion": "One continuous shot, the camera fixed low and close with a wide fisheye lens looking up. His feet stay planted the whole time; all movement comes from his hips, shoulders and arms. He pulls the splayed hand back, then snaps a fist out at the lens, yanks it back, and swats low sideways with the other hand, loose at the wrist. He keeps bouncing down at the knees, head ducking hard toward the lens on every stressed beat, shoulders rolling and hunching, leaning in further over the camera. Near the end the open hand shoots at the lens again. Fast, snapped, never still. Sound: rain dripping off concrete, distant motorway traffic rumbling overhead.\nThanks.",
+   "character": null,
+   "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Method Man (Wu-Tang Clan), sealed writer"
+  },
+  {
+   "key": "t06ab",
+   "n": 0,
+   "still": "t06abr8-b",
+   "motion": "Handheld, slightly low, one continuous medium shot; the camera stays put. Feet stay planted in the sand the whole time. The raised finger jabs the sky twice, then the arm drops and the loose gloved hand rolls at the wrist beside his head, fingers spread, flicking like a man telling a story at dinner. He sways from the hips, shoulders shaking as he laughs, head nodding late and lazy. He leans towards the lens, pats the air palm-down, slaps his hand to his masked forehead in mock disbelief, then flings it out wide, palm up, shrugging. The champagne slops on every move. Sound: surf, palm fronds rustling, distant gulls.\nThanks.",
+   "character": null,
+   "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Action Bronson, sealed writer"
+  },
+  {
+   "key": "t06gf",
+   "n": 0,
+   "still": "t06gfr8-a",
+   "motion": "Low wide-angle camera, locked off, close on him. He raps hard and choppy, every move snapping out and stopping dead. Feet stay planted in the sand while his hunched torso rocks side to side above them. 0-2 seconds: both flat palms sweep across his belly and flick out. 2-4 seconds: he jabs his thumb back at his own chest three times, shoulders pumping left, right. 4-6 seconds: one flat hand chops sideways at waist height while his head dips and juts at the lens. 6-8 seconds: he leans right into the lens, both hands spread low, still rocking. Ambient sound: surf, wind in palm fronds.\nThanks.",
+   "character": null,
+   "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Ghostface Killah (Wu-Tang Clan), sealed writer"
+  },
+  {
+   "key": "t06rr",
+   "n": 0,
+   "still": "t06rrr8-a",
+   "motion": "Handheld low-angle camera, one continuous shot, holding close as the man performs with slow, heavy, unhurried authority, feet planted in the sand. He rocks his weight forward into the lens on a hard line, the raised hand pumping towards the camera in a loose fist, then settles back with his chin lifted and both palms spread wide at shoulder height, held for a beat like he owns the beach. His head rolls in big slow nods, shoulders swaying side to side. He presses both gloved hands together at his chest and rubs them slowly, then flicks one finger at the lens. Jacket cloth swings with every move. Sound: surf breaking, palm fronds rustling in the wind.\nThanks.",
+   "character": null,
+   "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Rick Ross, sealed writer"
+  },
+  {
+   "key": "t06rz",
+   "n": 0,
+   "still": "t06rzr8-b",
+   "motion": "One continuous shot, low and wide at waist height, with a slight handheld sway. His feet stay planted in the sand the whole time; all the motion comes from the knees, hips and shoulders. He rocks his upper body side to side like a pendulum, dropping one shoulder then the other, lurching his masked face right up into the lens and pulling back. On every beat an arm swings loose and wide: a backhand sweep out to the side, an open palm flung down at the lens, then the other arm swinging low across his body. His head cocks and nods hard with each lurch, never pausing, jacket swinging with him to the last second. Sound: surf, wind in the palms, sand crunching underfoot.\nThanks.",
+   "character": null,
+   "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), RZA (Wu-Tang Clan), sealed writer"
+  },
+  {
+   "key": "m12g",
+   "n": 0,
+   "still": "m12gr9-a",
+   "motion": "Low wide-angle camera, locked off, close on him. He raps angry and choppy, each move snapping out and stopping dead. Feet stay planted while his hunched body sways left and right above them. 0-2 seconds: two short finger jabs at the lens, then the hand drops. 2-4 seconds: both flat palms sweep low across his belly and flick out. 4-6 seconds: shoulders pump left, right, left as his head dips and juts forward. 6-8 seconds: one flat hand chops sideways at waist height, still rocking. Ambient sound: traffic rumbling overhead, dripping water.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g1"
+  },
+  {
+   "key": "s02g",
+   "n": 0,
+   "still": "s02gr9-a",
+   "motion": "Low wide-angle camera, locked off, close on him in the rain. He raps furious and clipped, moves snapping out and stopping dead, water flicking off his gloves. Feet planted in the puddle, body rocking side to side above them. 0-2 seconds: flat hand chops sideways twice across his waist. 2-4 seconds: his head juts at the lens as his shoulders pump left, right. 4-6 seconds: both palms sweep low across his belly and flick out, spraying droplets. 6-8 seconds: one quick finger point straight at the lens, then he leans in. Ambient sound: heavy rain, tyres hissing on the road above.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g1"
+  },
+  {
+   "key": "s03g",
+   "n": 0,
+   "still": "s03gr9-a",
+   "motion": "Low wide-angle camera, locked off, very close on him. Sneering, aggressive delivery, choppy moves that snap and hold. Feet stay planted; his upper body sways side to side, drifting across the frame. 0-2 seconds: he leans right into the lens, head dipping and jutting. 2-4 seconds: shoulders roll and pump alternately, the whole torso riding them. 4-6 seconds: both splayed palms sweep across his belly, then flick out wide. 6-8 seconds: thumb jabs back at his chest twice, the other hand chopping once at his hip. Ambient sound: wind gusting, the city's distant traffic hum.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g1"
+  },
+  {
+   "key": "s04g",
+   "n": 0,
+   "still": "s04gr9-a",
+   "motion": "Low wide-angle camera, locked off, close on him. Mocking, punchy delivery, every move snapping out and stopping dead. Feet planted on the cobbles while his torso rocks left and right. 0-2 seconds: both palms finish the sweep and flick out wide. 2-4 seconds: a short, quick finger point at the lens, twice. 4-6 seconds: a flat hand chops sideways across his belly as his shoulders pump. 6-8 seconds: thumb jabs back at his own chest, head cocking and dipping, still swaying. Ambient sound: a distant car alarm, footsteps echoing at the alley's end.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g1"
+  },
+  {
+   "key": "s05g",
+   "n": 0,
+   "still": "s05gr9-a",
+   "motion": "Low wide-angle camera, locked off, close on him. Restless, hungry delivery, choppy moves that snap and hold a beat. Feet stay planted while his body rocks side to side, drifting across the frame. 0-2 seconds: shoulders pump left, right, left, his torso riding them. 2-4 seconds: his thumb pokes back at his chest in short jabs. 4-6 seconds: a quick finger point at the lens as his chin juts forward. 6-8 seconds: both palms sweep low across his belly and flick out, leaning in. Ambient sound: tarps flapping, traffic overhead, a distant train.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g1"
+  },
+  {
+   "key": "s06g",
+   "n": 0,
+   "still": "s06gr9-a",
+   "motion": "Low wide-angle camera, locked off, close on him. Bitter, pleading-then-furious delivery, moves snapping out and stopping dead. Feet planted on the paving while his hunched torso rocks side to side. 0-2 seconds: the open palm jerks out toward the lens twice, low at his belly. 2-4 seconds: thumb jabs back at his chest, shoulders pumping. 4-6 seconds: a flat hand chops sideways across his waist, head dipping on the stress. 6-8 seconds: he leans hard into the lens, both hands spread low, still rocking. Ambient sound: river lapping the wall, wind, a distant boat horn.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g1"
+  },
+  {
+   "key": "t03g",
+   "n": 0,
+   "still": "t03gr9-b",
+   "motion": "Low wide-angle camera, locked off, close on him. He raps with a smug, choppy swagger, each move snapping out and stopping dead, feet planted while his hunched torso sways left and right. 0-2 seconds: thumb pokes his own chest twice, shoulders pumping. 2-4 seconds: a quick one-finger point straight at the lens, then it drops. 4-6 seconds: both flat palms sweep low across his belly and flick out wide. 6-8 seconds: chin dips and juts at the lens, one hand chopping sideways. Ambient sound: cutlery on china, low restaurant chatter.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g2"
+  },
+  {
+   "key": "t04g",
+   "n": 0,
+   "still": "t04gr9-a",
+   "motion": "Low wide-angle camera, locked off, looking up at him. He raps hard and dismissive, gestures snapping out, holding a beat, snapping to the next. Feet stay planted; his hunched body rocks side to side above them. 0-2 seconds: the pointing finger stabs at the lens twice and pulls back. 2-4 seconds: his right hand chops flat across his waist, left, right, while the left hand stays hooked at his hip. 4-6 seconds: shoulders roll up and pump alternately, head bobbing. 6-8 seconds: both palms sweep low and flick out, then he leans in. Ambient sound: city wind across glass, distant traffic.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g2"
+  },
+  {
+   "key": "t05g",
+   "n": 0,
+   "still": "t05gr9-a",
+   "motion": "Low wide-angle camera, locked off, close, the horizon rolling gently with the swell. He raps with lazy, smug confidence but every move is abrupt. Feet planted on the deck while his torso rocks over them. 0-2 seconds: shoulders pump left, right, left, head bobbing hard. 2-4 seconds: his right hand chops flat sideways at belly height, twice. 4-6 seconds: he leans into the lens and both palms smooth outward low across his body. 6-8 seconds: his thumb jabs back at his own chest, short pokes, chin jutting. Ambient sound: engine rumble, rushing wake, gulls.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g2"
+  },
+  {
+   "key": "t07g",
+   "n": 0,
+   "still": "t07gr9-a",
+   "motion": "Extreme wide-angle camera, locked off, very close. He raps proud and choppy, gestures snapping between shapes with no smooth arcs. Feet planted; his hunched torso sways side to side, drifting across the frame. 0-2 seconds: he rocks back off the lens while his flat palm finishes its sweep and flicks out. 2-4 seconds: thumb jabs his chest three times, shoulders pumping. 4-6 seconds: a quick finger point at the lens, then both hands spread low, palms up, empty. 6-8 seconds: he lunges his head back into the lens, one hand chopping at his waist. Ambient sound: echoing concrete hum, distant car door slam.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g2"
+  },
+  {
+   "key": "t08g",
+   "n": 0,
+   "still": "t08gr9-a",
+   "motion": "Low wide-angle camera, locked off, close on him. He raps with lazy, smug arrogance, every move snapping out and stopping short. Feet stay planted on the paving while his torso rocks side to side. 0-2 seconds: his free hand chops flat across his belly twice while the wine sloshes in the low glass. 2-4 seconds: shoulders pump alternately, head dipping and jutting at the lens. 4-6 seconds: his free palm sweeps low and flicks out dismissively. 6-8 seconds: his thumb jabs back at his chest, then he leans into the lens, glass swinging low. Ambient sound: garden chatter, clinking glasses, birdsong.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g2"
+  },
+  {
+   "key": "s01g",
+   "n": 0,
+   "still": "s01gr9-a",
+   "motion": "Low wide-angle camera, locked off, close on him. Bitter, snarling delivery, every gesture snapping out and holding a beat before the next. Feet stay put; his torso rocks side to side. 0-2 seconds: the low fist finishes its sweep across his belly and the fist by his ribs punches short toward the lens. 2-4 seconds: both fists open into flat palms that sweep low across his body and flick outwards. 4-6 seconds: his thumb pokes back at his own chest twice while his shoulders roll. 6-8 seconds: he leans hard into the lens, head dipping on the stress, one flat hand chopping at his waist. Ambient sound: vent hum, distant sirens, a bin lid rattling.\nThanks.",
+   "character": null,
+   "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g1"
+  }
+ ]
+}

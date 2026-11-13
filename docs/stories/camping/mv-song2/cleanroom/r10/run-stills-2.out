@@ -1,0 +1,24 @@
+{"at":"2026-11-09T10:06:41.450Z","ev":"group.start","group":["st01","st02","st03"],"project":"8e4e7374-2d25-42de-871e-61df11211bf1"}
+{"at":"2026-11-09T10:07:48.033Z","ev":"shot.done","id":"st01","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/st01-1794218801451"}
+{"at":"2026-11-09T10:08:23.190Z","ev":"shot.done","id":"st02","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/st02-1794218868035"}
+{"at":"2026-11-09T10:09:00.121Z","ev":"shot.done","id":"st03","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/st03-1794218903191"}
+{"at":"2026-11-09T10:09:05.595Z","ev":"group.start","group":["st04","st05","st06"],"project":"6f965b37-4ad4-4415-97d8-6db02199226b"}
+{"at":"2026-11-09T10:09:54.913Z","ev":"shot.done","id":"st04","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/st04-1794218945595"}
+{"at":"2026-11-09T10:10:24.665Z","ev":"shot.done","id":"st05","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/st05-1794218994914"}
+{"at":"2026-11-09T10:10:59.880Z","ev":"shot.done","id":"st06","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/st06-1794219024666"}
+{"at":"2026-11-09T10:11:05.371Z","ev":"group.start","group":["st07","du01","du02"],"project":"a1c2dfee-fdef-42e1-aa07-a02ec941f581"}
+{"at":"2026-11-09T10:12:03.723Z","ev":"shot.done","id":"st07","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/st07-1794219065371"}
+{"at":"2026-11-09T10:13:20.579Z","ev":"shot.done","id":"du01","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du01-1794219123724"}
+{"at":"2026-11-09T10:14:23.260Z","ev":"shot.done","id":"du02","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du02-1794219200579"}
+{"at":"2026-11-09T10:14:30.561Z","ev":"group.start","group":["du03","du04","du05"],"project":"aaa7c7a9-4a38-4c61-b252-fea19d3a50ba"}
+{"at":"2026-11-09T10:15:27.418Z","ev":"shot.done","id":"du03","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du03-1794219270561"}
+{"at":"2026-11-09T10:16:06.686Z","ev":"shot.done","id":"du04","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du04-1794219327418"}
+{"at":"2026-11-09T10:17:00.491Z","ev":"shot.done","id":"du05","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du05-1794219366687"}
+{"at":"2026-11-09T10:17:06.526Z","ev":"group.start","group":["du06","du07","du08"],"project":"ae6b5060-550f-403c-9577-da4467695683"}
+{"at":"2026-11-09T10:18:01.423Z","ev":"shot.done","id":"du06","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du06-1794219426526"}
+{"at":"2026-11-09T10:18:59.269Z","ev":"shot.done","id":"du07","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du07-1794219481424"}
+{"at":"2026-11-09T10:19:53.486Z","ev":"shot.done","id":"du08","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du08-1794219539269"}
+{"at":"2026-11-09T10:19:59.913Z","ev":"group.start","group":["du09"],"project":"e3e896b6-5e54-4051-9f6d-42a53d56fee6"}
+{"at":"2026-11-09T10:22:04.951Z","ev":"shot.error","id":"du09","attempt":1,"error":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-09T10-21-58-348Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited, a captcha), add its exact wording to failure-card.ts so it aborts fast next time instead of timing"}
+{"at":"2026-11-09T10:23:05.885Z","ev":"shot.done","id":"du09","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/du09-1794219599913"}
+{"at":"2026-11-09T10:23:05.885Z","ev":"end"}

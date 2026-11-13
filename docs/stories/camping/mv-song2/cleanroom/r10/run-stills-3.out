@@ -1,0 +1,6 @@
+{"at":"2026-11-09T10:23:20.045Z","ev":"group.start","group":["re03","re05"],"project":"5c71ec18-1bca-4dfd-b590-bd48cdbd6688"}
+{"at":"2026-11-09T10:23:58.401Z","ev":"shot.done","id":"re03","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/re03-1794219800045"}
+{"at":"2026-11-09T10:24:39.421Z","ev":"shot.done","id":"re05","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/re05-1794219838402"}
+{"at":"2026-11-09T10:24:45.433Z","ev":"group.start","group":["ly02"],"project":"32fd3e51-bdcb-4881-9179-d0dfd08cc7bc"}
+{"at":"2026-11-09T10:25:20.631Z","ev":"shot.done","id":"ly02","got":2,"stage":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/_runs/ly02-1794219885433"}
+{"at":"2026-11-09T10:25:20.631Z","ev":"end"}

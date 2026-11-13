@@ -1,0 +1,146 @@
+{
+ "s01": {
+  "writer": "w1",
+  "who": "rough",
+  "ref": "ref-rough",
+  "clip": "bob rapping/1.mp4",
+  "orig": "originals/bob-1.jpg",
+  "what": "Night, a narrow London brick alley with graffiti, big wheelie bins and steam from a vent. Close shot, head and shoulders, slightly low, he leans into the lens mid-line."
+ },
+ "s02": {
+  "writer": "w1",
+  "who": "rough",
+  "ref": "ref-rough",
+  "clip": "bob rapping/1.1.mp4",
+  "orig": "originals/bob-1.1.jpg",
+  "what": "Night, under a concrete motorway flyover beside a wet road, graffiti on the pillars, a fire burning in an oil drum on the right, a car passing behind. Medium shot standing, both arms spread wide, palms up."
+ },
+ "s03": {
+  "writer": "w1",
+  "who": "rough",
+  "ref": "ref-rough",
+  "clip": "bob rapping/2.mp4",
+  "orig": "originals/bob-2.jpg",
+  "what": "Dusk, a flat London rooftop, the city skyline behind and below with lights coming on. Medium-wide standing, hands low in front of him working the beat."
+ },
+ "s04": {
+  "writer": "w1",
+  "who": "rough",
+  "ref": "ref-rough",
+  "clip": "bob rapping/3.mov",
+  "orig": "originals/bob-3.jpg",
+  "what": "Night, the same brick alley, graffiti, bins, steam. Tight close-up, head and shoulders filling the frame, pushing toward the lens."
+ },
+ "s05": {
+  "writer": "w1",
+  "who": "rough",
+  "ref": "ref-rough",
+  "clip": "bob rapping/4.mp4",
+  "orig": "originals/bob-4.jpg",
+  "what": "Night, under the flyover, graffiti pillars, a fire drum on the left, small tents behind. Medium shot, walking toward the camera, one hand swinging down on the beat."
+ },
+ "s06": {
+  "writer": "w1",
+  "who": "rough",
+  "ref": "ref-rough",
+  "clip": "bob rapping/5.5.mp4",
+  "orig": "originals/bob-5.5.jpg",
+  "what": "Night, sitting on the pavement of the Thames embankment against the river wall, a small green tent beside him, St Paul's dome lit behind across the water, a foil tray of coins at his feet. Seated, both hands open and spread."
+ },
+ "m12": {
+  "writer": "w1",
+  "who": "rough",
+  "ref": "ref-rough",
+  "clip": "12.mp4 (maybe a rap shot)",
+  "orig": "originals/maybe-12.jpg",
+  "what": "Night, under the flyover, graffiti pillars, a fire drum on the left. Medium shot standing, facing the camera."
+ },
+ "m13": {
+  "writer": "w1",
+  "who": "rough",
+  "ref": "ref-rough",
+  "clip": "13.mp4 (maybe a rap shot)",
+  "orig": "originals/maybe-13.jpg",
+  "what": "Night, the brick alley, bins, thick steam. Low wide full-length shot, standing square to the camera, arms down."
+ },
+ "t01": {
+  "writer": "w2",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "Tarquin rapping/1.mp4",
+  "orig": "originals/tarquin-1.jpg",
+  "what": "Day, a glass-walled office high over the City of London, towers through the windows. Close wide-angle shot, he leans right into the lens, grinning attitude."
+ },
+ "t02": {
+  "writer": "w2",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "Tarquin rapping/2.mp4",
+  "orig": "originals/tarquin-2.jpg",
+  "what": "Day, the same high office by the window, the City spread below. Close shot leaning in, one hand low."
+ },
+ "t03": {
+  "writer": "w2",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "Tarquin rapping/2.1.mp4",
+  "orig": "originals/tarquin-2.1.jpg",
+  "what": "Evening, a fine-dining restaurant, white tablecloth, a plated dish, other diners and pendant lights behind. Seated at his table facing the camera, both hands gesturing in front of him."
+ },
+ "t04": {
+  "writer": "w2",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "Tarquin rapping/3.mp4",
+  "orig": "originals/tarquin-3.jpg",
+  "what": "Day, a rooftop terrace with a glass balustrade, a glass tower beside it, the City below. Very close low wide-angle, he looks down into the lens."
+ },
+ "t05": {
+  "writer": "w2",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "Tarquin rapping/4.3.mp4",
+  "orig": "originals/tarquin-4.3.jpg",
+  "what": "Day, the deck of a large white motor yacht at sea, white seating behind. Medium shot standing, one hand raised, gesturing."
+ },
+ "t06": {
+  "writer": "w3",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "Tarquin rapping/4.4.mp4",
+  "orig": "originals/tarquin-4.4.jpg",
+  "what": "Day, a tropical beach, reclining on a lounger under palms, a cocktail in one hand, a laptop on his lap, the sea behind."
+ },
+ "t07": {
+  "writer": "w3",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "Tarquin rapping/5.mp4",
+  "orig": "originals/tarquin-5.jpg",
+  "what": "An underground car park, fluorescent strip lights, concrete pillars, a black luxury saloon right behind him. Medium-wide standing, leaning forward, hands low."
+ },
+ "t08": {
+  "writer": "w3",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "Tarquin rapping/6.mp4",
+  "orig": "originals/tarquin-6.jpg",
+  "what": "Day, an English country-house garden party: lawn, a pool, guests in summer clothes with champagne behind. Medium shot standing, facing the camera."
+ },
+ "m19": {
+  "writer": "w3",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "19.mp4 (maybe a rap shot)",
+  "orig": "originals/maybe-19.jpg",
+  "what": "Grey day, just inside the glass entrance of a supermarket, rain outside. Tight close-up, face to the camera, angry."
+ },
+ "m23": {
+  "writer": "w3",
+  "who": "posh",
+  "ref": "ref-posh",
+  "clip": "23.mp4 (maybe a rap shot)",
+  "orig": "originals/maybe-23.jpg",
+  "what": "Sunset, a City of London street in front of tall glass office towers. Medium shot, pointing at the camera."
+ }
+}
