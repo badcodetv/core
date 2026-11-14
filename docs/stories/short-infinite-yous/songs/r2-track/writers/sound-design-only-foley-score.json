@@ -1,0 +1,13 @@
+{
+  "name": "sound-design-only-foley-score",
+  "style": "instrumental cinematic sound design, musique concrète, foley arranged as rhythm, hits and transitions, no tune. Opens on a ring of car keys shaken in a dry little stuttering pattern, close and bright, the motif. Then a rubbery elastic stretch that pulls wide left to right and rips apart, a two-second tearing swoosh. A reversed swell climbs fast and lands on one tight rubber-band snap, short, centred. A deep heavy car-door slam, solid and dead, no ring. Two quick tyre hisses on wet tarmac pass by, left then right. Ends on a warm low two-tone car horn held like a final chord, soft attack, long tail fading into a dark empty street. Under it all, one clean sub-bass drone, steady. Tight, dry, sparse, every hit separated by silence, clear low end, short film sting",
+  "exclude": "vocals, voice, choir, humming, spoken word, melody, drums, drum kit, beat, strings, piano, synth lead, guitar, pads, reverb wash, muddy bass, lo-fi hiss",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 60,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false
+}

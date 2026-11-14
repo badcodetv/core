@@ -47,7 +47,7 @@
   "moodboard": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ"
  },
  "flow_project": "28e36ecd-0a59-45db-aa58-a4a0e2c31b29",
- "moodboard_intro": "Round 1, clean room: five sealed writers researched the web, each wrote three stagings of one beat in the look of your night-taxi photo (described in words, not attached). Pick This on one still per beat, or note what to change. Split and squeeze: the writers say the panels and the line-grab are best built in the edit from single stills of the lad, so read these as the look to aim for. The end card's logo is laid in later, lit by the headlights.",
+ "moodboard_intro": "Round 2 (Jack's notes): C. Only one redone with SP1-a's five strips and the figure as a proper scientist, no skin; D. Into the cab with that scientist. Pick one of each.",
  "picked": [
   [
    "LI1-b",
@@ -69,5 +69,6 @@
    "LO1-b",
    "E. Headlights (logo on the wall in the edit)"
   ]
- ]
+ ],
+ "board_round": 2
 }

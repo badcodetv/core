@@ -88,5 +88,33 @@
   "LO1-c",
   "200mm telephoto down a long empty street",
   "Vertical 9:16 cinematic night photograph, a long telephoto view at 200mm and f/2, looking down a long empty city street at night from kerb height. Everything distant is compressed and dissolved into a dense field of large, overlapping, soft round bokeh discs in warm amber, red, soft pink and a touch of cyan, gathered in the upper part of the frame. Far off, low on the horizon, one small glowing yellow taxi roof light sits blurred into a soft yellow oval. The centre and lower half of the picture is a broad empty band of dark wet road, almost pure black, holding only a faint glossy reflection of the distant lights. Inky shadows, gentle film grain, hushed late-night stillness. Thanks."
+ ],
+ [
+  "squeeze",
+  "SQ2-a",
+  "Five strips, scientist (goggles over the mask)",
+  "Reference fix: SP1-a layout + SQ1-a figure + mask reference; lab coat, pens, roll-neck, goggles. Full prompt on the recipe card.",
+  "reference r2"
+ ],
+ [
+  "squeeze",
+  "SQ2-b",
+  "Five strips, scientist (thin ring)",
+  "Same prompt, second take.",
+  "reference r2"
+ ],
+ [
+  "cab",
+  "CA2-a",
+  "The kick, as the scientist (goggles up)",
+  "Reference fix: CA1-a-fix-c + SQ2-a + mask reference; goggles pushed up so the mask shows. Full prompt on the recipe card.",
+  "reference r2"
+ ],
+ [
+  "cab",
+  "CA2-b",
+  "The kick, as the scientist, take 2",
+  "Same prompt, second take.",
+  "reference r2"
  ]
 ]

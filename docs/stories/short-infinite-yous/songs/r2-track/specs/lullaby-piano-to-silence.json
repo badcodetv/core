@@ -1,0 +1,17 @@
+{
+  "style": "instrumental, solo felt piano, hushed lullaby in A minor, 70 bpm, close-miked hammers and pedal creak, a nursery tune heard from a kitchen at 3am, intimate and sad. Opens as one fragile childlike melody; the same phrase then multiplies into several detuned, overlapping piano copies drifting out of time, warped tape wobble and pitch sag, dissonant and crowded; a sudden dead stop, under a second of complete silence; then one clean unhurried phrase resolves home; ends on a single held low piano note, a soft distant car horn and the hiss of headlights sweeping past, clear final stop",
+  "exclude": "vocals, singing, humming, choir, spoken word, strings, drums, percussion, trailer hits, braams, synth pads, upbeat",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    45
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "infinite yous r2 instrumental-lullaby-piano-to-silence",
+  "mode": "custom",
+  "workspace": "short-infinite-yous"
+}

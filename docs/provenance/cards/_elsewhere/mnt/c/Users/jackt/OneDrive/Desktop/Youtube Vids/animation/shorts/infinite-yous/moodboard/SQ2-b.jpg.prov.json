@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ2-b.jpg",
+ "made": "2026-11-14T17:10:30.836Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Make a new vertical 9:16 night photograph that combines the two pictures. Take the layout of the first image: the frame cut into five tall vertical strips by thin bright dividing lines, the same young man from the first image in each strip, on the same night street. In front of the strips, centred and facing camera, stands the masked figure from the second image, now plainly a lab scientist: a crisp white lab coat buttoned to the collar, pens clipped in the breast pocket, a black roll-neck under it covering the whole neck, clear safety goggles strapped over the mask. Both gloved fists grip the dividing lines and drag them together towards the middle, so the five strips buckle and squeeze inwards and the five young men are being pressed back into one. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Use the third image for the mask. Same light, colours and film grain as the first image. No text, lettering, logos or brand names anywhere in the image. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SP1-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SP1-a.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ1-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/cf3ce2c2-e0bc-4329-bdd3-73d0f6db269b/scratchpad/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9c642800-b3c9-4b94-97df-87d39f145614"
+}

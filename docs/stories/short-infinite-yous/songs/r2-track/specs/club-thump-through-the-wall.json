@@ -1,0 +1,17 @@
+{
+  "style": "instrumental electronic cue, 15-second sound-design piece, 124 bpm UK garage and house drum machine with sampler, lo-fi and heavily filtered. Opens on a four-to-the-floor kick and shuffled hats heard muffled through a nightclub wall, low-passed to a dull bass thud, bassline smeared and boomy. The loop then stutters and doubles into several drifting out-of-sync copies of itself, phasing and flanging against each other, a woozy smeared stereo field. Sudden tape-stop: the pitch drags down to a halt, then a rising resonant filter sweep snaps everything back into one tight dry locked loop. Cut dead by a heavy car door slam, then silence. Last two seconds: dry outdoor night street air, a diesel taxi engine idling low, one short warm double-tap car horn decaying into a single long reverb tail. Sparse, cinematic, no melody",
+  "exclude": "vocals, vocal chops, MC, sung hook, spoken word, strings, orchestra, piano",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    55
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "infinite yous r2 instrumental-club-thump-through-the-wall",
+  "mode": "custom",
+  "workspace": "short-infinite-yous"
+}

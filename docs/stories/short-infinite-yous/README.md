@@ -37,6 +37,6 @@ the excuse; there is one of you, and one mum waiting up. Stake: his life.
 
 ## Resume here (2026-11-14)
 
-1. **Suno round `songs/r1-track`** (Jack: "do the suno sounds and music in one"): the lines, sound effects and music in ONE 15 s track, six directions written by sealed writers and passed by the gate (`round.json`, stamped). **Not run yet.** Channel 1's Chrome (port 9222, signed in to Suno) has extensions whose background workers block Playwright's CDP attach, even after restarts; the Flow browser (channel 2, port 9223) attaches fine but is signed out of Suno. Once Jack has signed in there: `SUNO_CDP_ENDPOINT=http://localhost:9223 python3 scripts/variations/round.py run docs/stories/short-infinite-yous/songs/r1-track "infinite yous r1" --yes`, then post the links; the pick goes into `sound.md`.
-2. **Stills owed** (Jack's notes): SQ1 redone with SP1-a's five vertical strips, the BadCode figure more of a scientist, no skin ever; CA1 with that same scientist; the logo goes on LO1-b's wall in the edit, lit by a headlight sweep.
+1. **Suno**: r1-track (with the spoken lines) RUN, then Jack: "there should be no lyrics". **r2-track (instrumental, 12 takes) RUN 2026-11-14, awaiting Jack's pick**: links in `songs/r2-track/takes.md`. Suno now runs in the Flow browser (channel 2, `SUNO_CDP_ENDPOINT=http://localhost:9223`), signed in; never run Suno and Flow at the same time (download clash).
+2. **Stills round 2 on the mood board** (SQ2-a/b five strips + scientist; CA2-a/b the kick as the scientist), awaiting Jack's picks. The logo still goes on LO1-b's wall in the edit.
 3. Then animate the picks to the track, build the split and the line-grab in the edit, and put it on a timeline page.

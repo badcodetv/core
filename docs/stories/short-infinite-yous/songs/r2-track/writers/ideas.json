@@ -1,0 +1,26 @@
+[
+  {
+    "name": "solo-violin-jab-music-box",
+    "idea": "A chamber-horror miniature led by one close-miked solo violin and a small, slightly detuned music box: the violin is the 'performer', the music box is the mum waiting up. Open on night-city hush with a lonely music-box figure, then the violin multiplies into overlapping canon voices as the copies split, a hard sforzando violin jab as the lab-coat figure grabs the lines, the canon collapses back to a single violin note, a soft door-thump, and it ends on the music box alone with one low, distant, mellow car horn. Ask for it as suspense underscore with dynamics spelled out (pianissimo, sudden stab, silence, pianissimo), no drums, no pulse. Exclude vocals, choir, humming, beat, trailer braams."
+  },
+  {
+    "name": "club-thump-through-the-wall",
+    "idea": "The sound of the night out itself: a muffled house/garage kick heard through a club wall as the lad stumbles out, which stutters and phases into several out-of-sync copies of the same loop as he splits, then gets yanked back into one tight loop by a tape-stop and a filter sweep, cut dead by a car door slam. The final two seconds are dry street air, a taxi engine idling and one short warm two-tap horn under a single reverb tail. Ask for it as electronic, instrumental, lo-fi and filtered, with the arc described as a sequence of production moves (muffled, phasing, tape-stop, silence) rather than as a genre. The 'performer' is a drum machine and sampler, no strings or orchestra. Exclude vocals, vocal chops, MC, sung hooks."
+  },
+  {
+    "name": "pizzicato-caper-to-solemn-brass",
+    "idea": "A comic-caper score that turns serious: plucky pizzicato strings and a bassoon play a tipsy, wobbling little march for the drunk lad, the march is echoed in several keys at once as the copies split, a slide-whistle-and-snap gesture as the lines are squeezed together, a timpani-thump kick into the cab, and then everything drops to one solemn muted trumpet or flugelhorn note under the logo with a soft, cinematic car horn in the distance. The performers are a small woodwind-and-string pit band, then a lone brass player. Ask for it in plain orchestration terms with tempo (about 100 bpm, slowing to rubato at the end). Exclude vocals, choir, synth, electronic drums."
+  },
+  {
+    "name": "sound-design-only-foley-score",
+    "idea": "Almost no conventional music: the track is built from sound effects arranged rhythmically, musique-concrete style. Keys jangling as the opening motif, a rubbery stretching-and-tearing whoosh as the copies split, a rising reversed whoosh into a tight elastic snap as they are squeezed back into one, a heavy car-door thump, then two tyre-hiss passes and a warm, low, two-note car horn ringing out like a final chord. A single sub-bass drone underneath is the only 'instrument'. Ask for it as cinematic sound design, hits and transitions, each effect described by weight, direction and length, clean and tight, no muddy low end. Exclude vocals, melody, drums, strings, piano."
+  },
+  {
+    "name": "lullaby-piano-to-silence",
+    "idea": "A felt piano playing a fragile, childlike lullaby in a minor key, as if from the mum's house at the end of the night, is the whole spine; the piano is the one performer. As he splits, the lullaby stacks into dissonant overlapping copies of itself with tape wobble; a sudden dead silence of under a second (the THINK! drink-drive trick) at the grab; then the lullaby resolves to one clean phrase as the cab door shuts, and the last bar is a single held piano note lit by a low, soft car horn and passing-headlight whoosh. Ask for it as intimate, sad, slow (around 70 bpm), with the silence written into the description. Exclude vocals, humming, choir, strings, drums, trailer hits."
+  },
+  {
+    "name": "taxi-meter-synth-pulse",
+    "idea": "A retro-futurist synth cue from the narrator's own future: a ticking analogue sequencer pulse like a taxi meter or indicator click, a glassy arpeggio that fractures into many detuned copies (one per version of him) and then is quantised back into a single clean arpeggio with a bitcrush-snap, a gated-reverb tom hit for the kick into the cab, and an ending on a warm analogue pad chord with a low cinematic horn swell and headlight swoosh. The performer is a modular/analogue synth player, 1980s sci-fi score in feel but cold and precise. Ask for it with BPM (about 120, dropping out at 13 s) and synth names rather than a genre tag. Exclude vocals, vocoder, talkbox, guitar, orchestra."
+  }
+]

@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ",
   "what": "Stills round 1, clean room: 15 stills, three per beat, in Jack's night-taxi look",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-infinite-yous/scenes/infinite-yous <out.html>"
+ },
+ {
+  "at": "2026-11-14T17:15:46+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ",
+  "what": "Round 2 (Jack's notes): SQ2-a/b five strips + scientist, CA2-a/b the kick as the scientist",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-infinite-yous/scenes/infinite-yous <out.html>"
  }
 ]
