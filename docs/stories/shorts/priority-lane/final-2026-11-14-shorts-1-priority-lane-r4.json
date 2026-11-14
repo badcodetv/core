@@ -1,0 +1,1126 @@
+{
+ "schema": "badcode.final/1",
+ "story": "shorts",
+ "scene": "priority-lane",
+ "sequence": "shorts-1-priority-lane-r4",
+ "frozen": "2026-11-14T15:33:23+00:00",
+ "note": null,
+ "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/edl.json",
+ "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/preview.mp4",
+ "total": 19.4,
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "storyboard": "https://claude.ai/artifact/6xd6NLu5rKzecZR7kLzZ9V",
+  "timeline": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "moodboard_r1": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
+  "storyboard_r1": "https://claude.ai/artifact/RJ5FcwAW7NsDRfFiDPkq9j",
+  "timeline_r1": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
+ },
+ "words": {
+  "script.json": {
+   "round": 3,
+   "dialogue": "1B The countdown (Jack picked 2026-11-13, no notes), https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
+   "beats": [
+    {
+     "id": "losing",
+     "title": "Losing him",
+     "see": "LS3 (mood board round 3)",
+     "lines": [
+      {
+       "who": "paramedic1",
+       "text": "BP 60 over 30! Fucking hurry up, we're gonna lose him!",
+       "by": "kai",
+       "how": "shouted"
+      },
+      {
+       "who": "paramedic2",
+       "text": "Sats dropping, he's peri-arrest!",
+       "by": "claude",
+       "how": "overlapping"
+      },
+      {
+       "who": "driver",
+       "text": "Two minutes out! Get the fuck out of the way!",
+       "by": "claude",
+       "how": "shouted forward, half Kai's words"
+      }
+     ],
+     "music": "Suno: tense score under the whole short",
+     "sfx": "siren, monitor racing, engine, rain"
+    },
+    {
+     "id": "held",
+     "title": "Held",
+     "see": "HD3 or OUT1-c",
+     "lines": [
+      {
+       "who": "paramedic2",
+       "text": "Why have we stopped?!",
+       "by": "claude",
+       "how": "at the glove"
+      }
+     ],
+     "music": "",
+     "sfx": "brakes, siren dies, rain, monitor still racing"
+    },
+    {
+     "id": "motorcade",
+     "title": "The motorcade",
+     "see": "WS3 or MIN1-b",
+     "lines": [
+      {
+       "who": "minister",
+       "text": "I said raspberry-shaped hors d'oeuvres!",
+       "by": "jack",
+       "how": "muffled through the glass"
+      }
+     ],
+     "music": "",
+     "sfx": "saloon engine passing, rain"
+    },
+    {
+     "id": "flatline",
+     "title": "Flatline",
+     "see": "FL3",
+     "lines": [
+      {
+       "who": "paramedic1",
+       "text": "Fifty over twen—",
+       "by": "claude",
+       "how": "quiet, to the patient; the flatline cuts the word"
+      }
+     ],
+     "music": "score cuts out",
+     "sfx": "flatline tone, silence, black, logo"
+    }
+   ],
+   "voices": [
+    {
+     "id": "paramedic1",
+     "name": "Paramedic 1",
+     "profile": "Suno speech (sound.md round 3)"
+    },
+    {
+     "id": "paramedic2",
+     "name": "Paramedic 2",
+     "profile": "Suno speech"
+    },
+    {
+     "id": "driver",
+     "name": "Driver",
+     "profile": "Suno speech"
+    },
+    {
+     "id": "minister",
+     "name": "Minister",
+     "profile": "Orus (voices/profiles/min-b-orus.md) unless a Suno take beats it"
+    }
+   ]
+  }
+ },
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 1.8,
+   "beat": "losing",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
+     "made": "2026-11-13T19:45:53+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Inside a speeding ambulance at night. The paramedic in the surgical mask twists from the heart monitor towards the cab and shouts forward, her gloved hand gripping the yellow grab rail as the whole compartment sways from side to side. The green trace on the monitor races. Behind her the second paramedic keeps pressing on the patient's chest. Blue light flickers through the windscreen. Filmed like real handheld news footage, quick movements blurring the way a film camera blurs them. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS5-b.jpg",
+     "why": "Jack 2026-11-13 storyboard round 3: A, she shouts forward",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS5-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "r3-A",
+      "frame": 1,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-13T19:42:22.863Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS5-b.jpg",
+     "made": "2026-11-13T19:37:21.793Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image for everything (the angle, the light, the grain, the heart monitor, the paramedic at the yellow rail, the driver and the rainy windscreen), make the same photograph again with one thing corrected: the bag-valve mask over the old man's face is now squeezed by a second paramedic who is fully in the picture. He is a man in the same plain dark-green uniform, blue gloves and surgical mask, kneeling at the head end of the stretcher just behind the patient, leaning over him, both of his arms clearly connected to his shoulders as he squeezes the bag with one hand and holds the mask to the face with the other. Every hand in the frame belongs to a visible person. Vertical 9:16. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode-pl/LS4-b-fix-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode-pl/LS4-b-fix-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 3
+     },
+     "source_id": "164b6acb-f30e-43c6-9336-aa133f60176c"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode-pl/LS4-b-fix-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 1.8,
+   "dur": 1.5,
+   "beat": "losing",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r6-A2-PS6-c.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r6-A2-PS6-c.mp4",
+     "made": "2026-11-14T14:56:53+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The ambulance rolls slowly forward, so the bus shelter and its glowing poster slide gently across the side window while staying in view. Its blue emergency lights pulse across the wet door frame and the glass. Rain falls hard in the street-lamp glow and drops run down the window. The poster stays sharp and still. No talking. Siren and rain sounds only. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS6-c.jpg",
+     "why": "Jack 2026-11-14 picked PS6-c: his SAVE OUR NHS poster seen from the ambulance, cut into beat A",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS6-c.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "r6-A2",
+      "frame": 5,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-14T14:55:41.368Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS6-c.jpg",
+     "made": "2026-11-14T14:23:19.660Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Vertical 9:16 photograph on 35 mm film at night, taken from inside the cab of a stopped ambulance, looking sideways out through its rain-spattered passenger window at a bus shelter on the pavement a few metres away. The dark edge of the window frame and the door's inner trim run down the left and bottom edges of the picture, lit in pulses of blue from the ambulance's own emergency lights bouncing off the wet bodywork, while raindrops and streaks cling to the outer corners of the glass. Through the clear middle of the window, filling well over half the frame's height and in sharp focus, is the shelter's backlit end-panel poster, glowing evenly from LED tubes behind it inside a thin dark metal frame: a glossy campaign portrait of the man from the reference image, head and shoulders, holding a phone to his right ear with his right hand, eyes to camera, a wide confident smile, on a flat deep magenta background, and beneath his face, in enormous heavy condensed white sans-serif capitals, the single line \"SAVE OUR NHS\". The shelter's glass side panes and perch bench sit dim and empty beside it; a sodium-orange street lamp behind the shelter hazes the rain into an orange glow, and the pavement in front reflects the poster's light in a long wet smear. Cold teal shadows, visible film grain, slight halation round the bright panel. The slogan is the only readable text in the frame: no party name, logo, small print, timetable writing, signs or number plates. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "d92b4669-94f2-48fd-8c03-9392de86df13"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "made": "2026-11-10T15:25:40.292Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A photorealistic vertical 9:16 photograph inside the back of a dark ministerial car at night in the rain, taken from low on the far end of the rear seat with a 28mm lens, so the cream leather seat and a folded-down armrest fill the bottom of the frame. On the armrest, sharp in the foreground, sits a small open glass jar of bright yellow lemon curd with a silver spoon in it and a crumpled napkin. Further back on the left, slumped into the seat, is an invented minister in his late fifties in a rumpled navy wool suit: a round, jowly face with pores and razor rash along the jaw, a small shaving nick on his chin, pink-rimmed tired eyes, wispy grey hair combed over, a crooked burgundy tie. He presses a phone to his ear, mouth shut in a tight, sulky line, nostrils flared, eyes rolled up at the roof lining. His head sits in the upper third of the frame, cut by the left edge. Through the rain-streaked window behind him, out of focus, an ambulance's blue lights pulse beside a red traffic light, throwing a cold blue band across one side of his face while a passing sodium street lamp lays an orange sweep over the other; the rest of the cabin sinks into teal-black, with a faint warm glow from a reading lamp in the roof. Shot on CineStill 800T, red halation round the lights outside, visible grain, underexposed, lifted blacks, handheld and slightly crooked. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "e4fd7d33-97b7-4f21-abb4-14a3d07c8cbd"
+    }
+   ]
+  },
+  {
+   "t": 3.3,
+   "dur": 1.05,
+   "beat": "losing",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PM7-a.jpg + /mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4",
+   "chain": [
+    {
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PM7-a.jpg + /mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 4.35,
+   "dur": 3.55,
+   "beat": "losing",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
+     "made": "2026-11-13T19:45:53+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Inside a speeding ambulance at night. The paramedic in the surgical mask twists from the heart monitor towards the cab and shouts forward, her gloved hand gripping the yellow grab rail as the whole compartment sways from side to side. The green trace on the monitor races. Behind her the second paramedic keeps pressing on the patient's chest. Blue light flickers through the windscreen. Filmed like real handheld news footage, quick movements blurring the way a film camera blurs them. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS5-b.jpg",
+     "why": "Jack 2026-11-13 storyboard round 3: A, she shouts forward",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS5-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "r3-A",
+      "frame": 1,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-13T19:42:22.863Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS5-b.jpg",
+     "made": "2026-11-13T19:37:21.793Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image for everything (the angle, the light, the grain, the heart monitor, the paramedic at the yellow rail, the driver and the rainy windscreen), make the same photograph again with one thing corrected: the bag-valve mask over the old man's face is now squeezed by a second paramedic who is fully in the picture. He is a man in the same plain dark-green uniform, blue gloves and surgical mask, kneeling at the head end of the stretcher just behind the patient, leaning over him, both of his arms clearly connected to his shoulders as he squeezes the bag with one hand and holds the mask to the face with the other. Every hand in the frame belongs to a visible person. Vertical 9:16. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode-pl/LS4-b-fix-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode-pl/LS4-b-fix-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 3
+     },
+     "source_id": "164b6acb-f30e-43c6-9336-aa133f60176c"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode-pl/LS4-b-fix-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 7.9,
+   "dur": 2.6,
+   "beat": "held",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-B-HD3-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-B-HD3-b.mp4",
+     "made": "2026-11-13T19:45:53+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. Looking through the rain-streaked windscreen of a stopped ambulance at night. The police outrider on his motorcycle holds one gloved hand raised, perfectly still. Behind him, the headlights of a long black saloon car glide slowly across the junction from left to right, lighting the rain. Blue emergency light pulses on the wet glass. Filmed like real handheld news footage, quick movements blurring the way a film camera blurs them. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD3-b.jpg",
+     "why": "Jack 2026-11-13: B, headlights cross",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD3-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "r3-B",
+      "frame": 2,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-13T19:43:18.959Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD3-b.jpg",
+     "made": "2026-11-13T14:37:00.733Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "Vertical 9:16 cinematic night still from the cab of a UK ambulance, camera low between the two front seats, wide 24mm lens. Bottom of frame: the driver's hands strangling the steering wheel, knuckles pale, a sleeve of a plain dark-green uniform. The dashboard glows faintly. Top two-thirds: a windscreen streaming with rain, one wiper caught mid-sweep. Just beyond the bonnet, lit hard by the ambulance's headlights, a police motorcycle outrider in a soaked hi-vis jacket and white helmet stands astride his bike, one gloved hand held up flat, visor down, unmoved. Above him a red traffic light blooms through the wet glass, sodium-orange streetlamps smeared behind, blue emergency light flickering across the rain drops. Shot on 35mm film, heavy grain, underexposed, slightly tilted handheld. No readable text, no logos. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "20450a8d-5a21-4c29-81cc-168e93f2a2f6"
+    }
+   ]
+  },
+  {
+   "t": 10.5,
+   "dur": 3.3,
+   "beat": "motorcade",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4",
+     "made": "2026-11-13T19:43:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/lipsync/place-dub.py",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "why": "Priority Lane minister re-dubbed to the picked Charon voice (lip-sync-dub), 2026-11-13",
+     "prompt": "{\n \"_note\": \"Priority Lane minister re-dub to Charon (2026-11-13). Mouth speech span 0.71-3.46 s on pl-04 (measured 2026-11-11 for the Orus dub). Charon's take speaks 0.26-2.60 (2.34 s), so x0.87 fills ~2.69 s. v2: the single placement ran ~0.15 s early on 'I said raspberry' (mouth opens ~0.88 on the mouth-track strip; first closure 1.54-1.58), so split at the natural gap: phrase 1 at natural speed from 0.90, phrase 2 at x0.87 from 1.90 so the p of 'shaped' lands on the 2.33-2.46 closure and the line ends with the mouth (~3.5).\",\n \"duration\": 8.042667,\n \"phrases\": [\n  {\n   \"src\": \"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav\",\n   \"from\": 0.22,\n   \"to\": 1.22,\n   \"at\": 0.9,\n   \"tempo\": 1.0,\n   \"text\": \"I said raspberry\"\n  },\n  {\n   \"src\": \"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav\",\n   \"from\": 1.22,\n   \"to\": 2.64,\n   \"at\": 1.9,\n   \"tempo\": 0.87,\n   \"text\": \"shaped hors d'oeuvres!\"\n  }\n ]\n}"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The minister presses the phone to his ear and snaps into it, furious: I said raspberry-shaped hors d'oeuvres! Then he glares at the roof lining. Blue beacon light pulses through the rain-streaked window behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "why": "He says the line (lip-synced)",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "04",
+      "frame": 4,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:36:54.970Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "made": "2026-11-10T15:25:40.292Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A photorealistic vertical 9:16 photograph inside the back of a dark ministerial car at night in the rain, taken from low on the far end of the rear seat with a 28mm lens, so the cream leather seat and a folded-down armrest fill the bottom of the frame. On the armrest, sharp in the foreground, sits a small open glass jar of bright yellow lemon curd with a silver spoon in it and a crumpled napkin. Further back on the left, slumped into the seat, is an invented minister in his late fifties in a rumpled navy wool suit: a round, jowly face with pores and razor rash along the jaw, a small shaving nick on his chin, pink-rimmed tired eyes, wispy grey hair combed over, a crooked burgundy tie. He presses a phone to his ear, mouth shut in a tight, sulky line, nostrils flared, eyes rolled up at the roof lining. His head sits in the upper third of the frame, cut by the left edge. Through the rain-streaked window behind him, out of focus, an ambulance's blue lights pulse beside a red traffic light, throwing a cold blue band across one side of his face while a passing sodium street lamp lays an orange sweep over the other; the rest of the cabin sinks into teal-black, with a faint warm glow from a reading lamp in the roof. Shot on CineStill 800T, red halation round the lights outside, visible grain, underexposed, lifted blacks, handheld and slightly crooked. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "e4fd7d33-97b7-4f21-abb4-14a3d07c8cbd"
+    }
+   ]
+  },
+  {
+   "t": 13.8,
+   "dur": 5.6,
+   "beat": "flatline",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-D4-FL4-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-D4-FL4-a.mp4",
+     "made": "2026-11-13T20:19:02+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The man in green slowly lifts his hands and sits back on his heels, looking up at the screen beside him, which shows one straight green line that never changes. The ceiling light flickers once. Red light from the road outside lies across the ceiling. No dialogue, no music. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL4-a.jpg",
+     "why": "Same note; the other way: the screen holds one unchanging straight green line.",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL4-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "r3-D4",
+      "frame": 4,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-13T20:06:04.192Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL4-a.jpg",
+     "made": "2026-11-13T15:00:53.152Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first provided image for the camera angle and framing, and the second provided image for the ambulance interior, the paramedics, the patient, the stretcher, the cab and the night outside, make one new photograph a few seconds later, now stopped. Keep the first image's angle: the heart monitor sharp in the foreground showing one unbroken flat green line, the brightest thing in frame, its numbers soft and unreadable; behind it, out of focus, a masked paramedic in a plain dark-green uniform with blue-gloved hands resting motionless on the old man's chest. Match the second image's van exactly: the same white cupboards, yellow grab rail, stretcher and patient, and the open hatch through to the cab and the rain-streaked windscreen, now with a red traffic light glowing beyond it. No badges, crests or lettering on the uniforms. Stillness, same grain and cold light. Vertical 9:16. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode-pl/FL3-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode-pl/FL3-a.jpg",
+       "/home/jackt/.cache/badcode-pl/LS4-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "b07b6496-cb83-4c4e-ae98-ea100176bea1"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode-pl/FL3-a.jpg",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "vox-driver",
+   "t": 0.3,
+   "dur": 1.12,
+   "what": "driver: Two minutes out!",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a3-driver-two-minutes.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a3-driver-two-minutes.wav",
+     "made": "2026-11-13T21:05:16+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/driver-b-alnilam.wav",
+     "why": "Priority Lane picked voice, one line",
+     "prompt": "trim 0.25-4.0 s, fades, loudnorm -16 LUFS"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/driver-b-alnilam.wav",
+     "made": "2026-11-13T19:15:34+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Two minutes out! Get the fuck out of the way!",
+     "inputs": {
+      "profile": "Accent: working-class Merseyside, soft and natural, the way a local actually speaks, not put on.\nStyle: ex-forces paramedic driver, early forties, steady and in command when he calls back to the crew, then furious through the windscreen at stalled traffic.\nPace: brisk, punchy.\n",
+      "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/driver-b-alnilam.md"
+     },
+     "settings": {
+      "voice": "Alnilam",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "director's note"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-paramedic1",
+   "t": 1.25,
+   "dur": 3.2,
+   "what": "paramedic1: BP 60 over 30! Fucking hurry up, we're gonna lose him!",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a1-paramedic1-bp.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a1-paramedic1-bp.wav",
+     "made": "2026-11-13T21:05:15+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic1-b-kore.wav",
+     "why": "Priority Lane picked voice, one line",
+     "prompt": "trim 0.29-3.84 s, fades, loudnorm -16 LUFS"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic1-b-kore.wav",
+     "made": "2026-11-13T19:16:48+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "BP 60 over 30! Fucking hurry up, we're gonna lose him!\n\nFifty over twen—",
+     "inputs": {
+      "profile": "Accent: South London, working class, everyday and natural, not exaggerated.\nStyle: Forty-year-old paramedic, sharp and furious with the driver, angry at the traffic not him, then barely above a breath to her patient.\nPace: Sharp and fast, then hushed.\n",
+      "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic1-b-kore.md"
+     },
+     "settings": {
+      "voice": "Kore",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "director's note"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-paramedic2",
+   "t": 4.2,
+   "dur": 2.09,
+   "what": "paramedic2: Sats dropping, he's peri-arrest!",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a2-paramedic2-sats.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a2-paramedic2-sats.wav",
+     "made": "2026-11-13T21:05:15+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic2-c-algieba.wav",
+     "why": "Priority Lane picked voice, one line",
+     "prompt": "trim 0.22-2.31 s, fades, loudnorm -16 LUFS"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic2-c-algieba.wav",
+     "made": "2026-11-13T19:18:25+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Sats dropping, he's peri-arrest!\n\nWhy have we stopped?!",
+     "inputs": {
+      "profile": "Accent: lower-middle-class Leeds, Yorkshire, soft and everyday, nothing theatrical.\nStyle: steady paramedic in his mid-thirties, ex-forces, giving his colleague the readings plainly; then genuinely thrown, asking the driver what's happening.\nPace: brisk and firm, then urgent.\n",
+      "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic2-c-algieba.md"
+     },
+     "settings": {
+      "voice": "Algieba",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "director's note"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-driver",
+   "t": 6.1,
+   "dur": 1.7,
+   "what": "driver: Get the fuck out of the way!",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a3-driver-two-minutes.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a3-driver-two-minutes.wav",
+     "made": "2026-11-13T21:05:16+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/driver-b-alnilam.wav",
+     "why": "Priority Lane picked voice, one line",
+     "prompt": "trim 0.25-4.0 s, fades, loudnorm -16 LUFS"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/driver-b-alnilam.wav",
+     "made": "2026-11-13T19:15:34+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Two minutes out! Get the fuck out of the way!",
+     "inputs": {
+      "profile": "Accent: working-class Merseyside, soft and natural, the way a local actually speaks, not put on.\nStyle: ex-forces paramedic driver, early forties, steady and in command when he calls back to the crew, then furious through the windscreen at stalled traffic.\nPace: brisk, punchy.\n",
+      "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/driver-b-alnilam.md"
+     },
+     "settings": {
+      "voice": "Alnilam",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "director's note"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-paramedic2",
+   "t": 8.35,
+   "dur": 1.15,
+   "what": "paramedic2: Why have we stopped?!",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/b1-paramedic2-why.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/b1-paramedic2-why.wav",
+     "made": "2026-11-13T21:05:15+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic2-c-algieba.wav",
+     "why": "Priority Lane picked voice, one line",
+     "prompt": "trim 2.92-4.07 s, fades, loudnorm -16 LUFS"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic2-c-algieba.wav",
+     "made": "2026-11-13T19:18:25+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Sats dropping, he's peri-arrest!\n\nWhy have we stopped?!",
+     "inputs": {
+      "profile": "Accent: lower-middle-class Leeds, Yorkshire, soft and everyday, nothing theatrical.\nStyle: steady paramedic in his mid-thirties, ex-forces, giving his colleague the readings plainly; then genuinely thrown, asking the driver what's happening.\nPace: brisk and firm, then urgent.\n",
+      "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic2-c-algieba.md"
+     },
+     "settings": {
+      "voice": "Algieba",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "director's note"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-paramedic1",
+   "t": 14.04,
+   "dur": 0.76,
+   "what": "paramedic1: Fifty over twen-",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/d1-paramedic1-fifty.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/d1-paramedic1-fifty.wav",
+     "made": "2026-11-13T21:05:15+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic1-b-kore.wav",
+     "why": "Priority Lane picked voice, one line",
+     "prompt": "trim 4.07-5.05 s, fades, loudnorm -16 LUFS"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/paramedic1-b-kore.wav",
+     "made": "2026-11-13T19:16:48+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "BP 60 over 30! Fucking hurry up, we're gonna lose him!\n\nFifty over twen—",
+     "inputs": {
+      "profile": "Accent: South London, working class, everyday and natural, not exaggerated.\nStyle: Forty-year-old paramedic, sharp and furious with the driver, angry at the traffic not him, then barely above a breath to her patient.\nPace: Sharp and fast, then hushed.\n",
+      "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/paramedic1-b-kore.md"
+     },
+     "settings": {
+      "voice": "Kore",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "director's note"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-minister",
+   "t": 10.84,
+   "dur": 2.58,
+   "what": "minister: I said raspberry-shaped hors d'oeuvres! (lip-synced, through glass)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-minister-charon-dub.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-minister-charon-dub.wav",
+     "made": "2026-11-13T21:05:16+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/lipsync/place-dub.py",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav",
+     "why": "Minister re-dub to Charon, fitted to clip pl-04",
+     "prompt": "phrase table docs/stories/shorts/priority-lane/voices/minister-charon-dub.json"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r6/minister-a-charon.wav",
+     "made": "2026-11-13T19:23:48+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "I said raspberry-shaped hors d'oeuvres!",
+     "inputs": {
+      "profile": "Accent: Home Counties, privately educated, upper-middle class; light and natural, a real MP, nothing plummy or put on.\nStyle: Minister in his fifties, back of his car, irritated, telling his aide on the phone he'd been perfectly clear.\nPace: Brisk, clipped, impatient.\n",
+      "profile_file": "docs/stories/shorts/priority-lane/voices/r6-cleanroom/profiles/minister-a-charon.md"
+     },
+     "settings": {
+      "voice": "Charon",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "director's note"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-cabin",
+   "t": 0.0,
+   "dur": 10.5,
+   "what": "cabin (Suno Sounds 88c2320f)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/interior-ambience-of-a-moving-ambulance-at-night-88c2320f.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/interior-ambience-of-a-moving-ambulance-at-night-88c2320f.wav",
+     "made": "2026-11-13T20:51:43.613Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "88c2320f-d3f9-4b76-a478-7b630398803b",
+     "inputs": {
+      "title": "Interior Ambience Of A Moving Ambulance At Night",
+      "song": "https://suno.com/song/88c2320f-d3f9-4b76-a478-7b630398803b"
+     },
+     "settings": {
+      "durationSec": 14.24
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-siren",
+   "t": 0.0,
+   "dur": 8.05,
+   "what": "siren (Suno Sounds 956b121e)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/6-second-sound-of-a-british-ambulance-electronic-956b121e.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/6-second-sound-of-a-british-ambulance-electronic-956b121e.wav",
+     "made": "2026-11-13T20:50:52.563Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "956b121e-666d-4bef-9ab7-4c2a56e9fac7",
+     "inputs": {
+      "title": "6 Second Sound Of A British Ambulance Electronic",
+      "song": "https://suno.com/song/956b121e-666d-4bef-9ab7-4c2a56e9fac7"
+     },
+     "settings": {
+      "durationSec": 6
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-monitor",
+   "t": 0.0,
+   "dur": 10.5,
+   "what": "monitor (Suno Sounds 0de628b4, one beep laid at a quickening rate)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/monitor-racing-0de628b4.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/monitor-racing-0de628b4.wav",
+     "made": "2026-11-13T21:05:16+00:00",
+     "by": "claude",
+     "kind": "sfx",
+     "engine": "ffmpeg",
+     "tool": "scripts/shorts/priority_lane_cut_r3.py",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/7-second-sound-of-a-hospital-heart-monitor-beepi-0de628b4.wav",
+     "why": "Suno's monitor beeps at 60 a minute; one beep laid at a quickening rate",
+     "prompt": "racing_monitor() in the cut script"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/7-second-sound-of-a-hospital-heart-monitor-beepi-0de628b4.wav",
+     "made": "2026-11-13T20:51:19.249Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "0de628b4-592e-4835-be49-5b3fe3d6afb2",
+     "inputs": {
+      "title": "7 Second Sound Of A Hospital Heart Monitor Beepi",
+      "song": "https://suno.com/song/0de628b4-592e-4835-be49-5b3fe3d6afb2"
+     },
+     "settings": {
+      "durationSec": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-cars",
+   "t": 7.8,
+   "dur": 2.0,
+   "what": "stop (Suno Sounds 29374f46)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/2-second-sound-of-a-heavy-van-braking-hard-to-a-29374f46.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/2-second-sound-of-a-heavy-van-braking-hard-to-a-29374f46.wav",
+     "made": "2026-11-13T20:52:23.426Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "29374f46-95f4-4bca-8077-30f37ee17118",
+     "inputs": {
+      "title": "2 Second Sound Of A Heavy Van Braking Hard To A ",
+      "song": "https://suno.com/song/29374f46-95f4-4bca-8077-30f37ee17118"
+     },
+     "settings": {
+      "durationSec": 8.4
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-cars",
+   "t": 8.5,
+   "dur": 3.0,
+   "what": "passby (Suno Sounds 3cad4a31)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/4-second-sound-of-a-large-quiet-luxury-saloon-ca-3cad4a31.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/4-second-sound-of-a-large-quiet-luxury-saloon-ca-3cad4a31.wav",
+     "made": "2026-11-13T20:52:38.582Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "3cad4a31-60ad-4a5c-824d-0f1eac1c5dce",
+     "inputs": {
+      "title": "4 Second Sound Of A Large Quiet Luxury Saloon Ca",
+      "song": "https://suno.com/song/3cad4a31-60ad-4a5c-824d-0f1eac1c5dce"
+     },
+     "settings": {
+      "durationSec": 11
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-cabin",
+   "t": 13.8,
+   "dur": 3.5,
+   "what": "cabin (Suno Sounds 88c2320f)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/interior-ambience-of-a-moving-ambulance-at-night-88c2320f.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/interior-ambience-of-a-moving-ambulance-at-night-88c2320f.wav",
+     "made": "2026-11-13T20:51:43.613Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "88c2320f-d3f9-4b76-a478-7b630398803b",
+     "inputs": {
+      "title": "Interior Ambience Of A Moving Ambulance At Night",
+      "song": "https://suno.com/song/88c2320f-d3f9-4b76-a478-7b630398803b"
+     },
+     "settings": {
+      "durationSec": 14.24
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-monitor",
+   "t": 14.8,
+   "dur": 3.0,
+   "what": "flatline (Suno Sounds cbe45667)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/5-second-sound-of-a-medical-monitor-flatline-on-cbe45667.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/5-second-sound-of-a-medical-monitor-flatline-on-cbe45667.wav",
+     "made": "2026-11-13T20:53:00.076Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "cbe45667-2e2d-455e-a102-370b8fda1bbf",
+     "inputs": {
+      "title": "5 Second Sound Of A Medical Monitor Flatline: On",
+      "song": "https://suno.com/song/cbe45667-2e2d-455e-a102-370b8fda1bbf"
+     },
+     "settings": {
+      "durationSec": 2
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-cabin",
+   "t": 10.5,
+   "dur": 3.3,
+   "what": "minister's car: its own room bed",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-bed.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-bed.wav",
+     "made": "2026-11-11T11:33:50+00:00",
+     "by": "claude",
+     "kind": "sfx",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "why": "room bed under the muted minister clip",
+     "prompt": "clip 04's own audio from 3.7 s (after the speech), 4.3 s looped to 8.04 s, -8 dB, 0.3 s fade in"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+     "made": "2026-11-10T15:49:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The minister presses the phone to his ear and snaps into it, furious: I said raspberry-shaped hors d'oeuvres! Then he glares at the roof lining. Blue beacon light pulses through the rain-streaked window behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "why": "He says the line (lip-synced)",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+      "key": "04",
+      "frame": 4,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T15:36:54.970Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+     "made": "2026-11-10T15:25:40.292Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A photorealistic vertical 9:16 photograph inside the back of a dark ministerial car at night in the rain, taken from low on the far end of the rear seat with a 28mm lens, so the cream leather seat and a folded-down armrest fill the bottom of the frame. On the armrest, sharp in the foreground, sits a small open glass jar of bright yellow lemon curd with a silver spoon in it and a crumpled napkin. Further back on the left, slumped into the seat, is an invented minister in his late fifties in a rumpled navy wool suit: a round, jowly face with pores and razor rash along the jaw, a small shaving nick on his chin, pink-rimmed tired eyes, wispy grey hair combed over, a crooked burgundy tie. He presses a phone to his ear, mouth shut in a tight, sulky line, nostrils flared, eyes rolled up at the roof lining. His head sits in the upper third of the frame, cut by the left edge. Through the rain-streaked window behind him, out of focus, an ambulance's blue lights pulse beside a red traffic light, throwing a cold blue band across one side of his face while a passing sodium street lamp lays an orange sweep over the other; the rest of the cabin sinks into teal-black, with a faint warm glow from a reading lamp in the roof. Shot on CineStill 800T, red halation round the lights outside, visible grain, underexposed, lifted blacks, handheld and slightly crooked. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "e4fd7d33-97b7-4f21-abb4-14a3d07c8cbd"
+    }
+   ]
+  },
+  {
+   "stem": "music-score",
+   "t": 0.0,
+   "dur": 14.8,
+   "what": "score (Suno r6 c5d8704d), cut dead on the flatline",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-subliminal-pulse-bed-v6-w-c5d8704d.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-subliminal-pulse-bed-v6-w-c5d8704d.wav",
+     "made": "2026-11-13T20:55:19.641Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "c5d8704d-0649-4306-8312-f3cbb47e27aa",
+     "inputs": {
+      "title": "Priority Lane score r6-subliminal-pulse-bed-v6-w",
+      "song": "https://suno.com/song/c5d8704d-0649-4306-8312-f3cbb47e27aa"
+     },
+     "settings": {
+      "durationSec": 19.16
+     }
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PM7-a.jpg + /mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4"
+ ]
+}

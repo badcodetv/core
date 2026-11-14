@@ -1,5 +1,9 @@
 # Priority Lane: resume here
 
+**2026-11-14 (DONE, Jack: "Priority Lane is great"): r4 in Premiere** as `shorts-1-priority-lane-r4` in `priotity lane.prproj`, page round 4b in sync with it. Frozen (`final.json`). Agreed cut pushed to Drive `Shorts/Priority Lane` (69 files, `scripts/drive/agreed/short-priority-lane.list`).
+- **Pull it on another machine:** `git pull` → `scripts/drive/drive.sh where short-priority-lane "<your folder>"` → `scripts/drive/drive.sh pull short-priority-lane --go` → open `priotity lane.prproj` at sequence `shorts-1-priority-lane-r4`.
+- Still owed before release: export the master from Premiere, run `scripts/delivery-qc.sh`, then hand it to chief-of-staff for the caption. The score is still the stand-in `c5d8704d` (Jack didn't pick another).
+
 **2026-11-14 (latest): ROUGH CUT r4 on the timeline page** https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd, built by `scripts/shorts/priority_lane_cut_r4.py` (media in Desktop `priority-lane\cut-r4\`). Round 4b (Jack's notes): beat A = ambulance 1.8 s, his poster (PS6-c clip at 2x) 1.5 s, the poster face flashing into the car inside a 5-frame dissolve (car clip zoomed, easing out) 1.05 s, back inside 3.55 s. Total still 19.4 s. Done in the edit at Jack's call; no Veo. Not yet in Premiere (r3 is).
 
 **2026-11-14 (later): picks PS6-c + PM7-a; poster clip MADE (`video/pl-r6-A2-PS6-c.mp4`, readable 0-3 s); transition clip BLOCKED** by flow-mcp's Veo model picker (details in picks.md). Next: Jack sets Veo 3.1 Fast by hand in Flow, or fix the picker, or build the transition in the edit (push into PM7-a, cut on the matched phone pose to a zoomed MIN1-b, ease out). Then cut A2 into beat A on the timeline page.

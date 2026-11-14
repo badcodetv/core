@@ -66,7 +66,7 @@
   "script": "python3 scripts/shorts/priority_lane_cut_r4.py"
  },
  "premiere": {
-  "current": "r3",
+  "current": "r4",
   "r2": {
    "sequence": "shorts-1-priority-lane-r2",
    "guid": "758d9e17-99fd-4286-b79d-05d0eada2437",
@@ -86,6 +86,21 @@
    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/edl.json",
    "what": "Round 3 rough cut with Jack's ending note (push into the flatline, logo on the screen); Premiere 26.5.2; Omni clips at Motion Scale 150 in a 1080x1920 sequence",
    "how": "premiere-plan.py --tag r3 + place.js via premiere_eval"
+  },
+  "r4": {
+   "sequence": "shorts-1-priority-lane-r4",
+   "guid": "81eb4f79-6acb-4a96-8d67-b0a1a35ad40d",
+   "bin": "shorts-1-priority-lane-r4",
+   "built": "2026-11-14",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/priotity lane.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/edl.json",
+   "what": "Round 4b, Jack: 'Priority Lane is great'. His SAVE OUR NHS poster cut into beat A (shelter shot at 2x), the poster face dissolving into him in the car on the matched pose (baked v2-losing-transition.mp4), then round 3 as before. Omni clips at Motion Scale 150.",
+   "how": "premiere-plan.py --tag r4 --seq + place.js via premiere_eval; Scale 150 on v0:0, v0:3, v0:4, v0:5",
+   "check": {
+    "at": "2026-11-14",
+    "state": "in sync",
+    "why": "7 shots and 12 audio clips placed as the edl; frames checked at 1, 2.5, 3.7, 6, 9, 12, 18.5 s"
+   }
   }
  },
  "beats_r1": [
