@@ -48,10 +48,14 @@ def take(id8):
 # C round the lip-synced line (voice 0.94-3.52 s on the clip's clock); D from the start (flat line 0-4 s).
 # Beat A is intercut (round 4): ambulance -> his poster at the shelter (readable ~2.4 s, under "we're gonna lose him")
 # -> the poster-to-car transition (baked: TRANSITION) -> back inside. Beat A keeps its 7.9 s so every line stays put.
+# Round 4b (Jack's notes on round 4, 2026-11-14): at 4:05 "keep this clip but play it quickly" -> the shelter shot
+# plays at SPEED (its first 3 s, while the poster is readable, in 1.5 s); at 4:21 "remove this part/clip" -> the poster
+# close-up no longer holds: it only shows inside the dissolve into the car. The ambulance takes the time back.
+SPEED = {'pl-r6-A2-PS6-c.mp4': 2.0}
 SHOTS = [('losing', 'pl-r3-A-LS5-b.mp4', 0.0, 1.8),
-         ('losing', 'pl-r6-A2-PS6-c.mp4', 0.0, 2.4),
-         ('losing', 'TRANSITION', 0.0, 1.7),
-         ('losing', 'pl-r3-A-LS5-b.mp4', 1.8, 2.0),
+         ('losing', 'pl-r6-A2-PS6-c.mp4', 0.0, 1.5),
+         ('losing', 'TRANSITION', 0.0, 1.05),
+         ('losing', 'pl-r3-A-LS5-b.mp4', 1.8, 3.55),
          ('held', 'pl-r3-B-HD3-b.mp4', 1.5, 2.6),
          ('motorcade', 'pl-04-MIN1-b-charon.mp4', 0.6, 3.3),
          ('flatline', 'pl-r3-D4-FL4-a.mp4', 0.0, 5.6)]
@@ -73,7 +77,7 @@ A, B, C, D = (BEAT_AT[k] for k in ('losing', 'held', 'motorcade', 'flatline'))
 # centre sits at (0.55, 0.35) on the poster and (0.50, 0.345) in the car, and is ~2.4x bigger on the poster.
 POSTER, CAR_STILL = MEDIA / 'moodboard/PM7-a.jpg', 'pl-04-MIN1-b-charon.mp4'
 P_HEAD, C_HEAD, SCALE = (0.55, 0.35), (0.50, 0.345), 2.4
-P_DUR, X_DUR, C_DUR, P_PUSH = 0.9, 0.2, 1.0, 1.12      # poster 0.9 s (pushing 1.0->1.12), 5-frame dissolve, car 1.0 s
+P_DUR, X_DUR, C_DUR, P_PUSH = 0.25, 0.2, 1.0, 1.03     # poster only inside the 5-frame dissolve (round 4b), car 1.0 s
 # Voice lines: (stem, file, at, from, to, who, text). Round 3 first build overlapped all three crew lines and buried
 # two of them, so they now take turns with ~0.15-0.25 s overlaps, the driver's line split to open and close beat A.
 LINES = [('vox-driver', 'a3-driver-two-minutes.wav', A + 0.3, 0.0, 1.12, 'driver', 'Two minutes out!'),
@@ -174,6 +178,8 @@ def main():
                f"[0]{pre}{zp}[z];[1]scale=560:-1,format=rgba,loop=-1:size=1,fps={FPS},trim=0:{d + 0.5},setpts=N/{FPS}/TB,"
                f"fade=t=in:st={LOGO_AT}:d=0.5:alpha=1[l];"   # loop the still first, THEN fade (fading one frame then looping it stays invisible)
                f"[z][l]overlay=(W-w)/2:(H-h)/2:eof_action=pass,{vf}", '-t', d, '-an', *enc, out)
+        elif clip in SPEED:
+            ff('-ss', tin, '-t', d * SPEED[clip], '-i', VID / clip, '-an', '-vf', f'setpts=PTS/{SPEED[clip]},{vf}', '-t', d, *enc, out)
         else:
             ff('-ss', tin, '-t', d, '-i', VID / clip, '-an', '-vf', vf, *enc, out)
         parts.append(out)
@@ -232,8 +238,8 @@ def main():
                      f'a Suno score ({SCORE}) and Suno sound effects. Note anything: a beat, a shot, a line, a sound, or a single frame.'),
            'fps': FPS, 'total': TOTAL, 'beats': beats,
            # The flatline shot carries its push-in and the logo baked in (v3-flatline.mp4), so Premiere gets the finished shot.
-           'video': [{'file': str(CUT / f'v{i}-{s[0]}{"-transition" if s[1] == "TRANSITION" else ""}.mp4') if s[0] == 'flatline' or s[1] == 'TRANSITION' else str(VID / s[1]),
-                      'in': 0.0 if s[0] == 'flatline' or s[1] == 'TRANSITION' else s[2],
+           'video': [{'file': str(CUT / f'v{i}-{s[0]}{"-transition" if s[1] == "TRANSITION" else ""}.mp4') if s[0] == 'flatline' or s[1] == 'TRANSITION' or s[1] in SPEED else str(VID / s[1]),
+                      'in': 0.0 if s[0] == 'flatline' or s[1] == 'TRANSITION' or s[1] in SPEED else s[2],
                       'start': starts[i], 'dur': s[3], 'beat': s[0],
                       'source': f'{POSTER} + {VID / CAR_STILL}' if s[1] == 'TRANSITION' else str(VID / s[1]), 'looped': False}
                      for i, s in enumerate(SHOTS)],

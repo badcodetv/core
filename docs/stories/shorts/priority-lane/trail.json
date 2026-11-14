@@ -236,5 +236,13 @@
   "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
   "what": "Round 4: his SAVE OUR NHS poster (PS6-c clip) cut into beat A, push into PM7-a, 5-frame dissolve on the matched phone pose into the car clip (zoomed 2.7x, easing out), back inside; done in the edit (Jack)",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-14T15:27:53+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Round 4b (Jack's notes at101 'play it quickly', at117 'remove this part'): shelter poster shot at 2x, poster close-up hold removed, ambulance takes the time back; notes dumped to feedback/timeline-r4",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
  }
 ]

@@ -1,12 +1,13 @@
 {
- "round": 4,
+ "round": "4b",
  "plan": [
-  "Jack, 2026-11-14: \"it is not clear that he is a politician\". Beat A now cuts out to his own SAVE OUR NHS poster at a bus shelter (seen from the ambulance, ~2.4 s, under \"we're gonna lose him\"), pushes into the poster, and dissolves on his matched phone pose into him in the back of his car, then back inside.",
-  "The transition is done in the edit (your call): the car shot starts zoomed so his face sits on the poster face, then eases out.",
+  "Jack, round 4 notes: the shelter poster shot now plays at double speed (still readable), and the poster close-up no longer holds: it only flashes inside the dissolve into the car. The ambulance takes the 1.5 s back, so every line stays put.",
   "Score is still the stand-in until a pick lands on the picks page."
  ],
  "replies": {
-  "at456": "Done: from 1.4 s into the flatline shot the camera pushes in on the monitor until the flat line fills the frame; the screen dies at ~4 s and the BadCode logo fades up on it, in silence (the tone stops as it appears). The black end card is gone."
+  "at456": "Done: from 1.4 s into the flatline shot the camera pushes in on the monitor until the flat line fills the frame; the screen dies at ~4 s and the BadCode logo fades up on it, in silence (the tone stops as it appears). The black end card is gone.",
+  "at101": "Done: the shelter poster shot plays at 2x (its first 3 s in 1.5 s), so it zips past but SAVE OUR NHS still reads.",
+  "at117": "Done: the poster close-up hold is gone; it now only appears inside the 5-frame dissolve into him in the car."
  },
  "kai_round1": {
   "at529": "the ending of this should show real life news stories flash on screen in like a meme format, as he is saying the last lines. also have a badcode overlay over all of it. THanks",
@@ -15,5 +16,9 @@
  },
  "jack_round3": {
   "at456": "we were gonna zoom into the flatline on the screen then have the badcode logo on it. THanks"
+ },
+ "jack_round4": {
+  "at101": "keep this clip but play it quickly. thanks",
+  "at117": "remove this part/clip thanks"
  }
 }
