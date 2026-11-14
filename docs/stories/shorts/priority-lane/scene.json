@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 6: his own campaign poster, so it's clear he's a politician (Jack, 2026-11-14). Clean room: two web researchers, three sealed writers (shelter, bus, poster close-up), run verbatim with MIN1-b as the face reference. Pick a shelter or bus shot to cut in, and a poster close-up (PM6) for the poster-to-car transition: his phone hand is at the same ear as in the car. Four prompts never came back (cupped-ear 'I'm listening', stethoscope, slow-shutter shelter, telephoto bus).",
+ "moodboard_intro": "Round 7: the poster close-up for the transition. You picked PS6-c; these are close-ups of that same magenta poster, the start frame of the poster-to-car move (it ends on MIN1-b, him in the car). Pick one.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -151,6 +151,10 @@
    "A. Losing him (LS4-b, badge removed)"
   ],
   [
+   "PS6-c",
+   "A2. His poster (through the ambulance window)"
+  ],
+  [
    "HD3-b",
    "B. Held"
   ],
@@ -163,7 +167,7 @@
    "D. Flatline"
   ]
  ],
- "board_round": 6,
+ "board_round": 7,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"
