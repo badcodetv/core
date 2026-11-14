@@ -37,6 +37,6 @@ the excuse; there is one of you, and one mum waiting up. Stake: his life.
 
 ## Resume here (2026-11-14)
 
-1. **Suno**: r1-track (with the spoken lines) RUN, then Jack: "there should be no lyrics". **r2-track (instrumental, 12 takes) RUN 2026-11-14, awaiting Jack's pick**: links in `songs/r2-track/takes.md`. Suno now runs in the Flow browser (channel 2, `SUNO_CDP_ENDPOINT=http://localhost:9223`), signed in; never run Suno and Flow at the same time (download clash).
-2. **Stills round 2 on the mood board** (SQ2-a/b five strips + scientist; CA2-a/b the kick as the scientist), awaiting Jack's picks. The logo still goes on LO1-b's wall in the edit.
+1. **Track LOCKED**: Suno 92821b14 (instrumental, taxi-meter synth), in `sound.md`, recorded to Desktop `audio\`.
+2. **Every beat picked**: LI1-b, SP1-a, SQ2-a, CA2-a, LO1-b. Next: storyboard + animation options (scene-animation), clips cut to the track.
 3. Then animate the picks to the track, build the split and the line-grab in the edit, and put it on a timeline page.

@@ -58,17 +58,22 @@
    "B. The split"
   ],
   [
-   "SQ1-a",
-   "C. Only one (to redo: SP1-a's strips, more scientist, no skin)"
+   "SQ2-a",
+   "C. Only one (five strips, the scientist)"
   ],
   [
-   "CA1-a-fix-c",
-   "D. Into the cab (with the fixed scientist)"
+   "CA2-a",
+   "D. Into the cab (the scientist, goggles up)"
   ],
   [
    "LO1-b",
    "E. Headlights (logo on the wall in the edit)"
   ]
  ],
- "board_round": 2
+ "board_round": 2,
+ "track": {
+  "suno": "92821b14-f464-4826-9bbc-37cace91dbea",
+  "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/infinite-yous-r2-instrumental-taxi-meter-synth-p-92821b14.wav",
+  "dur": 15
+ }
 }
