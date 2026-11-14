@@ -35,8 +35,11 @@ the excuse; there is one of you, and one mum waiting up. Stake: his life.
 | Sound | [`sound.md`](./sound.md) | EXPLORING: Suno round `songs/r1-track` gated, NOT RUN (Suno sign-in) |
 | Media | Jack: Desktop `Youtube Vids\animation\shorts\infinite-yous` · Drive `Shorts/Infinite Yous` | stills round 1 PICKED 2026-11-14 (LI1-b, SP1-a, SQ1-a to redo, CA1-a-fix-c, LO1-b; notes in `scenes/infinite-yous/picks.md`) |
 
-## Resume here (2026-11-14)
+## Resume here (2026-11-14, end of session)
 
-1. **Track LOCKED**: Suno 92821b14 (instrumental, taxi-meter synth), in `sound.md`, recorded to Desktop `audio\`.
-2. **Every beat picked** (LI1-b, SP1-a, SQ2-a, CA2-a, LO1-b). **Storyboard round 1** https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3: two animation options per frame, awaiting Jack's picks; then `video-jobs.json` and the runner.
-3. Then animate the picks to the track, build the split and the line-grab in the edit, and put it on a timeline page.
+1. **Track LOCKED:** Suno 92821b14 (instrumental, taxi-meter synth), in `sound.md`, recorded to Desktop `audio\`.
+2. **Stills picked:** LI1-b, SP1-a, SQ2-a, CA2-a, LO1-b. **Animation picked** (storyboard https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3): 1b, 2a (edit), 3b (edit), 4a, 5a.
+3. **Clips** (Desktop `video\`): `iy-01-LI1-b.mp4` ✅. `iy-05-LO1-b.mp4` 🟡: a whole car crosses the wall (0-4 s), then the wall is clear; use the clear part or re-roll for light only. **Clip 4 (the kick) refused 3 times**: next, a softer prompt (a shove into the cab, or the release only) or build it from CA2-a in the edit.
+4. **Open question for Jack:** are the lines heard at all ("One of them gets home fine" / "There's only one"): a voice on top, words on screen, or neither? The track has no lyrics.
+5. **Then:** build the split (frame 1's clip in five strips) and the squeeze (SQ2-a) in the edit, put the logo on the wall in the light, and cut it all to the track on a timeline page (`scene-timeline`), then Premiere.
+- Browser: Suno and Flow both run in the Flow browser (channel 2, port 9223), signed in. Never run Suno and Flow at the same time (download clash).

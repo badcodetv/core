@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/infinite-yous-r2-instrumental-taxi-meter-synth-p-92821b14.wav",
+ "made": "2026-11-14T17:25:59.419Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "92821b14-f464-4826-9bbc-37cace91dbea",
+ "inputs": {
+  "title": "infinite yous r2 instrumental-taxi-meter-synth-p",
+  "song": "https://suno.com/song/92821b14-f464-4826-9bbc-37cace91dbea"
+ },
+ "settings": {
+  "durationSec": 15
+ }
+}
