@@ -1,0 +1,22 @@
+{
+ "round": 1,
+ "plan": [
+  {"h": "Round 1: your notes so far (1 note, read 2026-11-14)",
+   "items": [
+    "1:06 \"The morning after\": cut the Susan-asleep shot (new clip 9, 8 s) and let \"In these moments, even atheists pray to Christ\" land on Karen waking (new clip 44). Edit only, no new material."]},
+  {"h": "The knock-on",
+   "items": [
+    "\"Lesson learned. Know your limit... and eat something. Get fucked up responsibly, folks.\" (8.8 s) currently plays over that Susan shot, so it needs a new home.",
+    "My fix: close the 2 s pause before \"Get fucked up responsibly, folks\" (edit only, same take) and let that punchline land on Karen waking hungover, then \"In these moments...\" on her hand going to her forehead. The film gets about 4-5 s shorter; I'll set the exact frames when I build Karen v5."]},
+  {"h": "You decide",
+   "items": [
+    "Go on the fix above, or keep the line whole and hold the night-time river longer instead (it saves less time).",
+    "Any more notes? Put them on the page and I'll batch them into the same round before building Karen v5."]}
+ ],
+ "replies": {
+  "at1599": "Agreed: cut. The Susan-asleep shot (new clip 9) goes, and Karen waking (new clip 44) moves up so \"In these moments, even atheists pray to Christ\" is on her. Edit only, no new material. Knock-on: the \"Lesson learned... get fucked up responsibly, folks\" line runs over this shot today, so I'll close its 2 s pause and land the punchline on hungover Karen. The film gets about 4-5 s shorter. Waiting for your go (and any more notes) before building Karen v5."
+ },
+ "kai_round1": {
+  "at1599": {"beat": "3", "tc": "00:01:06:15", "note": "I think we cut this scene, I think it's an unnecessary scene, it's much better in these moments with Karen when she wakes up."}
+ }
+}

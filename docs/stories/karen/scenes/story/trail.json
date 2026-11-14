@@ -6,5 +6,15 @@
   "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
   "what": "Karen v4 (Jack's hand cut, pulled from Drive 2026-11-13) brought onto a timeline page: 10 beats by narration chunk, 58 shots, 43 narration lines with words; video = Premiere render karen-v4-r0.mp4",
   "rebuild": "python3 scripts/karen/story-edl.py \"/mnt/d/badcode-videos/karen-story/.bridge/state-Karen v4.json\" /mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json --render /mnt/d/badcode-videos/karen-story/renders/karen-v4-r0.mp4 && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story /mnt/d/badcode-videos/karen-story/timeline/page"
+ },
+ {
+  "at": "2026-11-14T10:08:29+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Round 1 notes dumped (1 note: cut the Susan-asleep shot at 1:06) and answered on the page; Karen v5 waits for Kai's go",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story /mnt/d/badcode-videos/karen-story/timeline/page",
+  "feedback": "feedback/timeline-r1",
+  "feedback_docs": 1
  }
 ]
