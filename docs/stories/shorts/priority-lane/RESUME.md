@@ -1,5 +1,7 @@
 # Priority Lane: resume here
 
+**2026-11-14 (latest): ROUGH CUT r4 on the timeline page** https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd, built by `scripts/shorts/priority_lane_cut_r4.py` (media in Desktop `priority-lane\cut-r4\`). Beat A is now intercut: ambulance 1.8 s, then his poster (PS6-c clip) 2.4 s under "we're gonna lose him", then the poster-to-car transition 1.7 s (push into PM7-a, a 5-frame dissolve on the matched phone pose into the car clip zoomed 2.7x and easing out), then back inside 2.0 s. Total still 19.4 s. Done in the edit at Jack's call; no Veo. Not yet in Premiere (r3 is).
+
 **2026-11-14 (later): picks PS6-c + PM7-a; poster clip MADE (`video/pl-r6-A2-PS6-c.mp4`, readable 0-3 s); transition clip BLOCKED** by flow-mcp's Veo model picker (details in picks.md). Next: Jack sets Veo 3.1 Fast by hand in Flow, or fix the picker, or build the transition in the edit (push into PM7-a, cut on the matched phone pose to a zoomed MIN1-b, ease out). Then cut A2 into beat A on the timeline page.
 
 **2026-11-14 (latest): ROUND 6, HIS POSTER, awaiting Jack's picks** on the mood board https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V. Jack: "it is not clear that he is a politician"; the fix is his own SAVE OUR NHS campaign poster, cut quickly into beat A while the crew shout (bus shelter or bus, held ~1.5-2 s to read), then a poster-to-car transition where he keeps the same pose (phone at his right ear) and the setting changes. New beat `poster` (A2) in scene.json.

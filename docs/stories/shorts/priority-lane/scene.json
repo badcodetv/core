@@ -60,10 +60,10 @@
   "timeline_r1": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/edl.json",
-  "by": "scripts/shorts/priority_lane_cut_r3.py",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/preview.mp4",
-  "script": "python3 scripts/shorts/priority_lane_cut_r3.py"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/edl.json",
+  "by": "scripts/shorts/priority_lane_cut_r4.py",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/preview.mp4",
+  "script": "python3 scripts/shorts/priority_lane_cut_r4.py"
  },
  "premiere": {
   "current": "r3",
@@ -171,5 +171,10 @@
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"
+ },
+ "cut_r3": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/preview.mp4",
+  "by": "scripts/shorts/priority_lane_cut_r3.py"
  }
 }

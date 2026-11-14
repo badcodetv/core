@@ -228,5 +228,13 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 7: PM7-a/b, close-ups of the picked PS6-c poster, the start frame for the poster-to-car transition",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-14T15:04:50+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Round 4: his SAVE OUR NHS poster (PS6-c clip) cut into beat A, push into PM7-a, 5-frame dissolve on the matched phone pose into the car clip (zoomed 2.7x, easing out), back inside; done in the edit (Jack)",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
  }
 ]
