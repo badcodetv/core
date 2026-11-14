@@ -14,5 +14,13 @@
   "url": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ",
   "what": "Round 2 (Jack's notes): SQ2-a/b five strips + scientist, CA2-a/b the kick as the scientist",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-infinite-yous/scenes/infinite-yous <out.html>"
+ },
+ {
+  "at": "2026-11-14T17:27:37+00:00",
+  "stage": "storyboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3",
+  "what": "Storyboard round 1: 5 picked stills, 2 animation options each, timed to the locked track",
+  "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/short-infinite-yous/scenes/infinite-yous <out.html>"
  }
 ]

@@ -38,5 +38,5 @@ the excuse; there is one of you, and one mum waiting up. Stake: his life.
 ## Resume here (2026-11-14)
 
 1. **Track LOCKED**: Suno 92821b14 (instrumental, taxi-meter synth), in `sound.md`, recorded to Desktop `audio\`.
-2. **Every beat picked**: LI1-b, SP1-a, SQ2-a, CA2-a, LO1-b. Next: storyboard + animation options (scene-animation), clips cut to the track.
+2. **Every beat picked** (LI1-b, SP1-a, SQ2-a, CA2-a, LO1-b). **Storyboard round 1** https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3: two animation options per frame, awaiting Jack's picks; then `video-jobs.json` and the runner.
 3. Then animate the picks to the track, build the split and the line-grab in the edit, and put it on a timeline page.

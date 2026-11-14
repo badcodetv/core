@@ -1,0 +1,71 @@
+{
+ "acts": [
+  {
+   "id": "a1",
+   "title": "Infinite Yous",
+   "beats": "0:00-0:15"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "a1",
+   "title": "A. The line",
+   "look": "the lad, keys up",
+   "line": "LAD: There's infinite versions of me. One of them gets home fine. (voice not decided)",
+   "stills": [
+    "LI1-b"
+   ],
+   "anim": 1,
+   "beat": "0:00"
+  },
+  {
+   "n": 2,
+   "act": "a1",
+   "title": "B. The split",
+   "look": "five strips of him",
+   "line": "",
+   "stills": [
+    "SP1-a"
+   ],
+   "anim": 2,
+   "beat": "0:03"
+  },
+  {
+   "n": 3,
+   "act": "a1",
+   "title": "C. Only one",
+   "look": "the scientist squeezes the strips",
+   "line": "SCIENTIST: There's only one. (voice not decided)",
+   "stills": [
+    "SQ2-a"
+   ],
+   "anim": 3,
+   "beat": "0:06"
+  },
+  {
+   "n": 4,
+   "act": "a1",
+   "title": "D. Into the cab",
+   "look": "the kick",
+   "line": "",
+   "stills": [
+    "CA2-a"
+   ],
+   "anim": 4,
+   "beat": "0:10"
+  },
+  {
+   "n": 5,
+   "act": "a1",
+   "title": "E. Headlights",
+   "look": "the logo on the wall",
+   "line": "",
+   "stills": [
+    "LO1-b"
+   ],
+   "anim": 5,
+   "beat": "0:13"
+  }
+ ]
+}
