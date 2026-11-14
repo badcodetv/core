@@ -212,5 +212,13 @@
   "stage": "premiere",
   "round": 3,
   "what": "Built shorts-1-priority-lane-r3 in priotity lane.prproj (Premiere 26.5.2): 4 shots V1, 12 audio clips on 9 tracks, ending with the push-in and logo"
+ },
+ {
+  "at": "2026-11-14T14:31:39+00:00",
+  "stage": "moodboard",
+  "round": 6,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 6: the minister's own SAVE OUR NHS poster (Jack 2026-11-14: make it clear he's a politician). Clean room: research-engine.md + research-world.md, three sealed writers (shelter, bus, poster close-up for the poster-to-car transition), run verbatim with MIN1-b as reference. 10 stills: PS6-a..d, PB6-a..d, PM6-a/b. Four prompts never generated (cupped ear, stethoscope, slow-shutter shelter, telephoto bus): Flow returned only the reference tile, likely a silent refusal (unverified).",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]

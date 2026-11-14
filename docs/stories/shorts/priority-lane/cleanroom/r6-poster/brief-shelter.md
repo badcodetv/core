@@ -1,0 +1,3 @@
+# Your task: the bus shelter (shot PS)
+Read `brief-common.md` first. Then write THREE prompts (PS-a, PS-b, PS-c) for the bus shelter at the junction, carrying the minister's backlit campaign poster with SAVE OUR NHS. This shot is cut in for ~1.5-2 s while the paramedics shout, so the poster and slogan must be the clear subject and readable on a phone, and something must tell us the ambulance is right there (its blue light, its passing blur, its reflection...). Make the three genuinely different from each other: different camera position, distance, and idea, not three versions of one picture.
+Write them as JSON to `prompts-shelter.json`: a list of {"id", "look" (3-6 word name), "prompt"}.

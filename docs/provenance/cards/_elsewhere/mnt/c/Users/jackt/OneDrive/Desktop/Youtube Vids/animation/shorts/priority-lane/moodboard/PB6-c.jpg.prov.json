@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB6-c.jpg",
+ "made": "2026-11-14T14:26:30.214Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 night photograph on 35 mm film, taken from inside a stationary ambulance looking sideways out through its rain-streaked side window at a double-decker bus halted in the next lane, so close that the bus side fills the whole window. The window's dark rubber edge frames the shot on all four sides, a soft blur of the ambulance's interior just visible at the bottom corner. Through the glass, square-on and in sharp focus, is a printed campaign poster stuck to the side of the bus: a smooth, over-retouched portrait of the man from the reference image, his head in the upper half of the poster, phone held to his right ear with his right hand, eyebrows raised, a confident closed-mouth smile, eyes to camera, on a flat pale grey background. Beneath his face, in huge bold white condensed sans-serif capitals on a deep charcoal band across the bottom of the poster, the words \"SAVE OUR NHS\", no other text, no logo. Light sources: the ambulance's blue emergency lights pulsing across the bus side and turning the raindrops on our window into blue beads, a sodium-orange street lamp overhead washing the top of the poster warm, and the faint cold fluorescent glow of the bus's lower-deck windows above the poster edge. Droplets on the window in the foreground are slightly soft while the poster behind them is crisp; teal shadows, lifted film blacks, fine grain, gentle halation on the blue. The slogan is the only legible text anywhere in the frame: no route number, no plates, no signage. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "882481c8-8763-4105-b8d3-a05580c4cf51"
+}

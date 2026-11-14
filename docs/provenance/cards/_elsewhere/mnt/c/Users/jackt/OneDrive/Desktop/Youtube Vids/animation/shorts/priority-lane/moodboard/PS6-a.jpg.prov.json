@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS6-a.jpg",
+ "made": "2026-11-14T14:22:13.664Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph on 35 mm colour negative film, taken at night in heavy London rain: a backlit advertising poster in the end panel of a glass bus shelter, shot square-on from the kerb at chest height and close enough that the poster's thin dark aluminium frame almost fills the whole picture, top to bottom. The poster is a glossy, slightly airbrushed election-style campaign photograph of the man from the reference image, head and shoulders in the upper half, holding a phone to his right ear with his right hand, looking straight into the lens with a broad, practised, reassuring smile and lifted brows, set against a flat deep magenta background. Across the lower third of the poster, in huge heavy condensed white sans-serif capitals, one line: \"SAVE OUR NHS\". The poster is in pin-sharp focus and perfectly flat; the even glow of the LED tubes behind it is the brightest light in the frame. Raindrops bead and run down the glass in front of it, and an ambulance's blue emergency light, just out of frame on the left, throws a hard cold-blue flash across the left side of the glass and the dark metal frame, with its headlights smeared as a faint reflection in the glass over the magenta background, never over the letters. A sodium-orange street lamp overhead gilds the top edge of the frame; teal shadows, fine film grain, wet tarmac glinting below. No other text anywhere: no party name, no logo, no small print, no web address, no readable signs or plates. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "f943fd17-4aed-4369-b05a-830e7a6efdc3"
+}
