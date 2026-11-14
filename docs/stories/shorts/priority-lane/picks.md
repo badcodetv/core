@@ -61,3 +61,6 @@ Left in view:
 
 - **Jack picked PS6-c** (the shelter poster seen through the ambulance's side window). There was no PM6 pick, and the PM6 posters are cream where PS6-c is magenta, so **PM7-a/b** were made: a close-up of PS6-c's own poster (references PS6-c + MIN1-b). These are short reference prompts written by me, not clean-room ones. PM7 is the start frame for the poster-to-car transition.
 - The four "never generated" prompts in round 6 were **Flow's unusual-activity failure**, not refusals: reload the project, retry. flow_edit_image saved the uploaded reference tile as a candidate when that happened (bug).
+- **Jack picked PM7-a** (round 7) as the transition start frame.
+- **Clip `pl-r6-A2-PS6-c.mp4` made** (Omni 1.2 Flash, scene runner, job r6-A2): the poster is readable 0-3 s, then slides out of the window as the ambulance moves. Use 0-2.5 s.
+- **Transition PM7-a to MIN1-b NOT made.** Omni (1.1 and 1.2) refuses a last frame, so it has to be a Veo 3.1 tier (flagged to Jack as the Veo-only exception). `flow_generate_video` couldn't set the Veo model: VIDEO_MODEL_NOT_APPLIED four times, with the menu flipping between Fast and Lite (the check reads the label one step behind, or the click picks the neighbour). Bug in flow-mcp's model picker on the rebuilt Flow. Also `flow_list_media` is unmapped on the rebuilt Flow.

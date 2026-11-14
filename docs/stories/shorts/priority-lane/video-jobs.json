@@ -68,6 +68,15 @@
    "character": null,
    "why": "Same note; the other way: the screen holds one unchanging straight green line.",
    "motion": "The camera does not move. The man in green slowly lifts his hands and sits back on his heels, looking up at the screen beside him, which shows one straight green line that never changes. The ceiling light flickers once. Red light from the road outside lies across the ceiling. No dialogue, no music. Thanks."
+  },
+  {
+   "key": "r6-A2",
+   "n": 5,
+   "still": "PS6-c",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-14 picked PS6-c: his SAVE OUR NHS poster seen from the ambulance, cut into beat A",
+   "motion": "The ambulance rolls slowly forward, so the bus shelter and its glowing poster slide gently across the side window while staying in view. Its blue emergency lights pulse across the wet door frame and the glass. Rain falls hard in the street-lamp glow and drops run down the window. The poster stays sharp and still. No talking. Siren and rain sounds only. Thanks."
   }
  ],
  "note": "C (minister) keeps the round 1 clip pl-04-MIN1-b; it is re-synced to the Charon voice with lip-sync-dub, no new clip. Round 1 jobs are in video-jobs-r1.json."
