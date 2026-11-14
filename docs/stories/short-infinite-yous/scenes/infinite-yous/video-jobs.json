@@ -1,0 +1,6 @@
+{
+ "anim_picks": {"1": "b", "2": "a", "3": "b", "4": "a", "5": "a"},
+ "still_picks": {"1": "LI1-b", "2": "SP1-a", "3": "SQ2-a", "4": "CA2-a", "5": "LO1-b"},
+ "skip": [2, 3],
+ "note": "Jack 2026-11-14 storyboard round 1: 1b, 2a (edit), 3b (edit), 4a, 5a. Frames 2 and 3 are built in the edit."
+}
