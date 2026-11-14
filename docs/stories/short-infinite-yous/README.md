@@ -32,5 +32,11 @@ the excuse; there is one of you, and one mum waiting up. Stake: his life.
 | --- | --- | --- |
 | Words | `scenes/infinite-yous/scene.json` beats | Jack's lines, 2026-11-13 |
 | Look | [`look.md`](./look.md) | EXPLORING: Jack's night-taxi photo |
-| Sound | [`sound.md`](./sound.md) | EMPTY |
-| Media | Jack: Desktop `Youtube Vids\animation\shorts\infinite-yous` · Drive `Shorts/Infinite Yous` | stills round 1 on the mood board https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ, awaiting Jack's picks |
+| Sound | [`sound.md`](./sound.md) | EXPLORING: Suno round `songs/r1-track` gated, NOT RUN (Suno sign-in) |
+| Media | Jack: Desktop `Youtube Vids\animation\shorts\infinite-yous` · Drive `Shorts/Infinite Yous` | stills round 1 PICKED 2026-11-14 (LI1-b, SP1-a, SQ1-a to redo, CA1-a-fix-c, LO1-b; notes in `scenes/infinite-yous/picks.md`) |
+
+## Resume here (2026-11-14)
+
+1. **Suno round `songs/r1-track`** (Jack: "do the suno sounds and music in one"): the lines, sound effects and music in ONE 15 s track, six directions written by sealed writers and passed by the gate (`round.json`, stamped). **Not run yet.** Channel 1's Chrome (port 9222, signed in to Suno) has extensions whose background workers block Playwright's CDP attach, even after restarts; the Flow browser (channel 2, port 9223) attaches fine but is signed out of Suno. Once Jack has signed in there: `SUNO_CDP_ENDPOINT=http://localhost:9223 python3 scripts/variations/round.py run docs/stories/short-infinite-yous/songs/r1-track "infinite yous r1" --yes`, then post the links; the pick goes into `sound.md`.
+2. **Stills owed** (Jack's notes): SQ1 redone with SP1-a's five vertical strips, the BadCode figure more of a scientist, no skin ever; CA1 with that same scientist; the logo goes on LO1-b's wall in the edit, lit by a headlight sweep.
+3. Then animate the picks to the track, build the split and the line-grab in the edit, and put it on a timeline page.

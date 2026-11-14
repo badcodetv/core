@@ -1,0 +1,17 @@
+{
+  "style": "drunk lads' football terrace chant, gang vocals in rough unison, half-sung half-shouted, scrappy supporters' brass band of trumpets and tuba, big bass drum and stomping, beery stadium echo, 105 bpm, chant splinters into overlapping out-of-time copies, sudden tape-stop to silence, deadpan bored female spoken voice, comic trombone slide down, one short polite car horn",
+  "exclude": "polished pop, orchestral strings, solemn piano, cinematic trailer, autotune, smooth R&B, long outro, fade out",
+  "lyrics": "[Intro: crowd chatter, bass drum stomps]\n[Gang Vocals: drunk lads chanting in unison, brass band]\nThere's infinite versions of me. One of them gets home fine.\n[Chant echoes and overlaps out of time, voices tumbling over each other]\n[Tape Stop]\n[Silence]\n[Spoken Word: flat, bored young woman, deadpan]\n(There's only one.)\n[Trombone slide down]\n[Sound effect: single short car horn beep]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    62
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "infinite yous r1-terrace-chant-collapse",
+  "mode": "custom",
+  "workspace": "short-infinite-yous"
+}

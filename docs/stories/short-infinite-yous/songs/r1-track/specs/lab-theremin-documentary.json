@@ -1,0 +1,17 @@
+{
+  "style": "Spoken-word sci-fi lab cue, 1950s B-movie laboratory, no singing. Warbling theremin glides with wide hand vibrato, oscillator bleeps, a dry Geiger-counter clicking as the only pulse, a glassy synth arpeggio that doubles, triples and detunes into a smeared shimmer, then snaps to one pure sine tone. Two male speakers: a sleepy young British drunk mumbling close to the mic, confiding to himself; a crisp middle-aged British documentary narrator, precise and certain, like a nature presenter naming a specimen. Ends on a heavy car-door thunk, one warm distant car horn and a fading electrical hum. Cinematic short sting.",
+  "exclude": "singing, sung melody, rap, choir, drum kit, bass drop, pop chorus, autotune, female vocals, guitar",
+  "lyrics": "[Intro: theremin swell, Geiger clicks]\n\n[Spoken, mumbled, close-mic, sleepy young British drunk]\nThere's infinite versions of me. One of them gets home fine.\n\n[Arpeggio multiplies, voices detune and split]\n\n[Spoken, crisp British documentary narrator, calm]\nThere's only one.\n\n[Arpeggio collapses into one pure sine tone]\n\n[Car door thunk, warm distant car horn, hum fades out]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    55
+  ],
+  "styleInfluence": 70,
+  "vocalGender": "male",
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "infinite yous r1-lab-theremin-documentary",
+  "mode": "custom",
+  "workspace": "short-infinite-yous"
+}

@@ -1,0 +1,21 @@
+# Research notes: Infinite Yous r1 track (ideas writer)
+
+- Suno Speech (beta), launched 1 Oct 2026, makes a spoken voice and background music as one track (Simple: one prompt; Advanced: Script + Tone fields, vocal gender, music on/off, Variety). It is a separate mode from the v6 music model, so a v6 prompt has to coax speech out of the song model. Accents can drift (British toward Australian) and dramatic pauses can run long.
+  - https://help.suno.com/en/articles/14617089
+  - https://www.aimusicpreneur.com/ai-tools-news/suno-speech-beta-spoken-word-music-one-take-launch/
+- Speech from the v6 music model is probabilistic: tag sections [Spoken word] / [Monologue] / [Spoken narration], write like a script (short sentences, full stops, no rhyme or repeated chorus), ask in Styles for "spoken-word", "voice-forward mix", "minimal underscore", and take melodic/anthemic/hook words out of Styles. Negatives alone do not stop singing; pair them with positive direction. Repair a sung bar with Replace rather than a full regenerate.
+  - https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-narration-workflow
+  - https://jackrighteous.com/en-gb/blogs/guides-using-suno-ai-music-creation/suno-ai-4-5-metatag-tutorial
+- Sound effects inside a song: no documented syntax. Brackets on their own line ([distant car horn]) are the safest cue; parentheses and asterisks risk being sung. Put the continuous environment in Styles, the timed cue in Lyrics, name source, distance and texture, one or two effects per section. If a cue is sung, move it to Styles. Exact timing: Suno Sounds one-shot, placed afterwards.
+  - https://jackrighteous.com/en-gb/blogs/guides-using-suno-ai-music-creation/suno-ai-sound-effects-asterisks
+  - https://help.suno.com/en/articles/10625537
+- Suno Sounds (one-shot / loop, a length in [N SECONDS]) is the reliable route for hits, risers, impacts; length is approximate (8 s asked gave 7-13 s).
+  - https://readray.ai/en/notes/suno-ai-20260130/suno-ai-sound-mode-pro
+  - https://jackrighteous.com/blogs/ai-art-visuals-creatives/cinematic-hits-and-transitions-suno-sounds-guide
+- Short-form: judge the first and last three seconds; put "start on the hook" and "end on a short final hit" in the prompt; [Intro]/[Outro] tags help shape endpoints. A sample ad prompt opens on "two wood hits and a short muted-trumpet sting" and excludes EDM drops and choir.
+  - https://www.nemovideo.com/blog/ai-video-workflows/suno-v6-short-video-music
+  - https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation/suno-scene-based-prompting-guide
+- Drink-drive ad sound design: SAB "Don't Drink and Drive" moves from atmospheric texture into engine rumble with one hard hit marking the moment, and keeps the voices on top of music and effects. THINK! (UK) spots use humour with a credited sound house; the mix carries the joke.
+  - https://ididthat.co/portfolio-items/sab-sharp-dont-drink-and-drive-campaign/
+  - https://magazine.shots.net/news/view/88933-think-butalive-brendan-malcolm
+- Caveat: almost all of this is third-party blogs, not Suno documentation; treat every tag as an experiment.

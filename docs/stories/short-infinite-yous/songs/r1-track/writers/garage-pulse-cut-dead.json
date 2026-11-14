@@ -1,0 +1,13 @@
+{
+  "name": "garage-pulse-cut-dead",
+  "style": "UK garage 2-step, 132 bpm, skippy swung sixteenth hats, broken kick, rubbery sub bass, chopped vocal stab, heard muffled through a club door at 2am, low-pass filtered, street air. Spoken word, not rapped, not sung: a cocky young South London MC voice, drunk, giddy, too loud. Mid-track the groove stutters, gates, beat-repeats and doubles into glitched copies of itself, then a hard stop into total silence. Second voice: a very deep, slow bass-baritone man, dry, close-mic, unhurried, no reverb, nothing under him. Ending: one low sub boom and a single taxi horn pitched to the key, cinematic, rings out. Short sound-design cue, speech-led.",
+  "exclude": "singing, melody vocals, rap flow, autotune, choir, female vocals, four-on-the-floor house, EDM drop, long intro, fade-in, outro jam, repeated lyrics, crowd cheering",
+  "lyrics": "[Intro: 2-step groove through a club door, muffled]\n\n[Spoken: cocky drunk young MC, half-shouting over the beat]\nThere's infinite versions of me. One of them gets home fine.\n\n[Break: beat stutters, chops and doubles into glitch copies]\n\n[Hard stop: dead silence, no music]\n\n[Spoken: very deep slow bass-baritone man, dry and close]\nThere's only one.\n\n[Sub boom, one taxi horn in key, ring out]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 70,
+  "vocalGender": "male",
+  "durationSec": 15,
+  "maxMode": false
+}
