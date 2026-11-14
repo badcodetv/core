@@ -1,5 +1,27 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-14 · PR #29
+
+**Opposition:** Giving saved hours to neighbours waiting is right. But your pass rule still requires hours per person to rise. A pooled average can fall when new recipients need shorter packages, without anyone losing care. Judge unmet assessed hours and existing recipients separately, so reaching more people cannot itself fail the trial.
+**Answer (Health Secretary):** Right. I set a fail number that punishes the thing I asked for. The fail number is now total hours of care delivered per thousand residents: up by a tenth at two years, one in twenty at one year, wherever the hours went. Hours per person per week stays only for the people on the books on day one, on its own line, and it fails the trial if it falls. Nobody's care is quietly thinned to reach the next house.
+**Outcome:** Conceded: test.measure, test.by and fails_if, this commit
+
+**Opposition:** Following people after care ends fixes exits, not entry. Adding every new starter still lets the rule change who enters the admissions measure. Adding people with different hospital risks could produce the required fall without preventing admissions. Include people assessed and waiting at the start in both groups; report later starters separately.
+**Answer (Health Secretary):** Yes. The group is fixed on day one: everyone with a package and everyone assessed and waiting, in both sets of councils, followed whether or when their care starts and after it ends. Later starters get a line of their own and don't count toward the admissions number.
+**Outcome:** Conceded: test.measure, this commit
+
+**Statistician:** The hours measure now fights the rule. Saved hours go first to people waiting, and each newcomer added to "hours of care per person per week" pulls the average down, so the trial can do exactly what it promises and fail both its one-year and two-year hours thresholds. Fix: measure total hours of care delivered per thousand residents (the rise of a tenth, and one in twenty at a year, then mean more care, wherever it went), and keep hours per person only for the people on the books on day one, so nobody's existing care falling shows on its own line.
+**Answer (Health Secretary):** Taken as written. Same fix as the opposition's first point.
+**Outcome:** Conceded: test.measure, test.by and fails_if, this commit
+
+**Statistician:** The queue clause has no baseline and no margin. "More people assessed and waiting per thousand residents than in the councils waiting" compares levels, so a trial council that starts with a longer queue fails on day one, and any difference at all, however small, fails it. "Assessed and waiting" has no named record or definition either. Fix: compare the change from each council's own baseline, set a margin (for example, the queue in trial councils grows by more than a tenth relative to the councils waiting), and define the count (assessed as eligible, no package started, from the council's own care records, counted on a fixed day each quarter).
+**Answer (Health Secretary):** Taken. Each council is measured from its own starting queue. It fails if the queue in trial councils grows by more than a tenth against the councils waiting. The count is people assessed as eligible with no package started, from each council's own care records, on a fixed day each quarter.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+**Statistician:** The admissions group fills unevenly. Trial councils move people off the queue into care faster, so their "new starters" join the measured group sooner, and people who start care are not the people who stay on the books, so admissions per thousand can move because the group changed. Fix: put everyone assessed and waiting on day one into the fixed group alongside everyone with a package, and follow them all, whether or when their care starts; count later starters on a separate line.
+**Answer (Health Secretary):** Taken. Same fix as the opposition's second point.
+**Outcome:** Conceded: test.measure, this commit
+
 ## 2026-11-13 · PR #29
 
 **Opposition:** Why must every saved minute lengthen an existing visit? Your cited Bristol study reports the same care with less travel. Test using saved time for unmet assessed needs too, while protecting existing care. Otherwise someone gets a longer visit while their neighbour gets none, and your test cannot tell whether that was the better choice.
