@@ -79,8 +79,8 @@
   "dur": 15
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r1/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r1/preview.mp4",
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r2/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r2/preview.mp4",
   "script": "scripts/infinite-yous/cut.py"
  }
 }

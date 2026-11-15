@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/sci-a-charon.wav",
+ "made": "2026-11-15T11:36:33+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "There's only one.",
+ "inputs": {
+  "profile": "# Audio Profile\nA calm, deep, absolutely certain voice from the future: a man who has watched this exact night go wrong a thousand times. Clinical, dry, a hint of tired affection. Every word lands like a full stop.\n\n## Scene:\nA night street, quiet for a beat after a sharp electrical snap; he stands close beside the young man.\n\n## Sample Context:\nHe has just crushed the young man's imagined parallel selves back into one. This is the correction, said once, not up for debate.\n",
+  "profile_file": "docs/stories/short-infinite-yous/voices/profiles/sci-a-charon.md"
+ },
+ "settings": {
+  "voice": "Charon",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/CL1-a.jpg",
+ "made": "2026-11-15T11:42:43.087Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Create a vertical 9:16 night photograph. Use the five tall strips, thin bright dividing bars, street and lads from the first image exactly; the scientist from the second image; his balaclava exactly as the third image, its full white ring and small red triangle over his left eye clearly visible, safety goggles pushed up onto the top of his head. He has stepped into the centre strip, facing camera, gloved fists clamped round the two bars either side of him, elbows out, braced to pull. The bars stand straight, all five lads still visible, glancing at him. Warm bokeh, shallow depth of field, flash-lit grain, signs blurred and unreadable. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SP1-a.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SP1-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SQ2-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-mask.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "1cd66b10-251c-4f1c-a007-f2bc8bc270a0"
+}

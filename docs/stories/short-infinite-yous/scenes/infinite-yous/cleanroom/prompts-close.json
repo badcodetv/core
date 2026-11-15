@@ -1,0 +1,34 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's formula for several references: [reference images] + [relationship instruction: the role each image plays] + [new scenario]; open with a strong verb, say what you want rather than what to avoid; Nano Banana 2 supports 9:16 natively",
+    "https://morphic.com/resources/how-to/nano-banana-pro-guide — when uploading references, explicitly assign each one a role (first image = X, second = Y)",
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/multi-image-composition — Nano Banana 2 composes from several references at once; one clear job per image keeps it from blending them",
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/character-consistency — keep identity by pointing at the reference, not by re-describing it",
+    "https://gptprompts.ai/nano-banana-2-prompts — when a reference shows the face, outfit or layout, do not describe it again; ask the model to preserve it, then describe only the change; name exactly which details must stay fixed (colour, pattern, placement)",
+    "https://discuss.ai.google.dev/t/how-to-keep-logo-intact-on-a-product-image/106665 — practitioners report logos still drift even with 'keep exactly the same'; name the motif's parts and placement, and expect to re-roll",
+    "https://one-seven-seven-seven-studio.pages.dev/prompts/split-screen-choreographer — the strongest moment of a split screen is when it ends and the divided frame becomes one image; visual rhymes across panels set up the merge",
+    "https://eyecannndy.com/technique/match-split — a line or contour that carries across the divide lets the divider itself perform the join; here the bars are the thing that moves",
+    "https://Www.wikipedia.org/wiki/Split_screen_(film) — split screens folded together into one frame are an established editing device, so a mid-fold still (panels compressing, edges bending) reads instantly"
+  ],
+  "notes": "Attach all three images to every generation in this order: SP1-a first, SQ2-a second, the mask reference third. Nano Banana 2, 9:16. The prompts point at the references rather than describe the lad or the scientist. The mask is the likeliest thing to drift: check that every take shows the full white ring and the red triangle over his LEFT eye (picture right), with no goggles over them, and re-roll if not. If C2 keeps coming back with the bars unbent, re-roll C2 alone rather than adding words. The taxi roof sign in SP1-a has readable letters, so each prompt asks for blurred, unreadable signs; check for it. C3 should hold the same camera position as C1 so the cut between them lands.",
+  "stills": [
+    {
+      "id": "C1",
+      "idea": "The grip: the scientist steps into the middle of the open five-strip split and closes both gloved fists round two dividing bars. Nothing has moved yet. The mask reads clean, goggles up on his forehead.",
+      "attach": ["SP1-a", "SQ2-a", "mask"],
+      "prompt": "Create a vertical 9:16 night photograph. Use the five tall strips, thin bright dividing bars, street and lads from the first image exactly; the scientist from the second image; his balaclava exactly as the third image, its full white ring and small red triangle over his left eye clearly visible, safety goggles pushed up onto the top of his head. He has stepped into the centre strip, facing camera, gloved fists clamped round the two bars either side of him, elbows out, braced to pull. The bars stand straight, all five lads still visible, glancing at him. Warm bokeh, shallow depth of field, flash-lit grain, signs blurred and unreadable. Thanks."
+    },
+    {
+      "id": "C2",
+      "idea": "The squeeze: he hauls the bars inward, the strips crushed narrow and bowing, the five lads squashed together toward the middle, light flaring where the bars bunch.",
+      "attach": ["SP1-a", "SQ2-a", "mask"],
+      "prompt": "Create a vertical 9:16 night photograph, the next instant after the scientist from the second image grabbed the dividing bars. Lads, strips and street from the first image; his balaclava exactly as the third image, full white ring and red triangle over his left eye showing, goggles up on his head. He drags the bars inward with all his weight, shoulders hunched, teeth-gritted posture. The five strips are crushed into thin warped slivers, bars bowing and bunching together in the centre where hot white light flares between them. The five lads are squeezed shoulder to shoulder, faces overlapping and stretched, mid-merge. Slight motion blur on the bars, warm bokeh behind, signs blurred and unreadable. Thanks."
+    },
+    {
+      "id": "C3",
+      "idea": "One: the bars are gone, a single whole lad stands alone blinking, the scientist beside him with his gloved hands open, the night street calm.",
+      "attach": ["SP1-a", "SQ2-a", "mask"],
+      "prompt": "Create a vertical 9:16 night photograph, same street and camera position as the first image, with the dividing bars gone: one continuous frame. A single lad from the first image stands alone in the centre, whole and still, car keys hanging from his hand, blinking and dazed. The scientist from the second image stands just beside him, half a step back, gloved palms open at chest height as if he has just let go; balaclava exactly as the third image, full white ring and red triangle over his left eye visible, goggles up on his head. A few faint sparks fade in the air between them. Calm, steady framing, warm bokeh, shallow focus, signs blurred and unreadable. Thanks."
+    }
+  ]
+}

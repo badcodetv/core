@@ -1,0 +1,16 @@
+{
+ "title": "Infinite Yous Voices",
+ "eyebrow": "Infinite Yous · voices · round 1",
+ "heading": "Pick the two voices",
+ "intro": "Jack 2026-11-15: \"we need dialogue like we discussed.\" Three different voices per role (AI Studio), each reading the real line. Rough cut 2 uses lad b and the figure a; pick others and I swap them in.",
+ "sections": [{"h": "Voices", "lede": "One line each, the real words.", "groups": [
+  {"slot": "lad", "title": "The lad", "line": "\"One version of me gets home fine.\" (0:00, keys up, grinning)", "kind": "audio", "opts": [
+   {"id": "a", "src": "takes/lad-a-puck.mp3", "label": "a: Puck, Leeds, loud and laughing", "warn": "retake; the transcriber heard \"gets on fine\", listen for \"home\""},
+   {"id": "b", "src": "takes/lad-b-achird.mp3", "label": "b: Achird, Essex, smug and slurred", "warn": "in rough cut 2"},
+   {"id": "c", "src": "takes/lad-c-fenrir.mp3", "label": "c: Fenrir, Cardiff, giddy and fast", "warn": "adds a \"Well\" at the start"}]},
+  {"slot": "figure", "title": "The BadCode figure", "line": "\"There's only one.\" (as the timelines close into one)", "kind": "audio", "opts": [
+   {"id": "a", "src": "takes/sci-a-charon.mp3", "label": "a: Charon, deep, certain, from the future", "warn": "in rough cut 2"},
+   {"id": "b", "src": "takes/sci-b-kore.mp3", "label": "b: Kore, Edinburgh scientist, cool and clipped", "warn": ""},
+   {"id": "c", "src": "takes/sci-c-algenib.mp3", "label": "c: Algenib, Salford, weary dad", "warn": "retake"}]}
+ ]}]
+}

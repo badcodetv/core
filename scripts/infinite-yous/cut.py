@@ -59,12 +59,25 @@ for k in range(5):
                  f'pad={sw}:{H}:2:0:color=0xF2F2F2,trim=end_frame={n}[st{k}]')
 parts.append(''.join(f'[st{k}]' for k in range(5)) + f'hstack=5,trim=end_frame={n},setpts=PTS-STARTPTS[b]')
 
-# C. Only one: SQ2-a (the scientist gripping the dividing lines), a slow push-in that quickens on the last second.
-n = fr(T['squeeze'], T['cab'])
-i = inp('-loop', '1', '-framerate', str(FPS), '-i', M / 'SQ2-a.jpg')
-parts.append(f"[{i}:v]scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},"
-             f"zoompan=z='1+0.12*pow(on/{n},2)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS},"
-             f"trim=end_frame={n},setpts=PTS-STARTPTS[c]")
+# C. Only one. r1: SQ2-a held with a push-in. r2+: three clean-room stills cut on the accents (grip 6.5, squeeze 7.5,
+# a white flash into one at 8.5), each with a slow push; "There's only one" lands on C3.
+def still(path, n, z0, z1):
+    i = inp('-loop', '1', '-framerate', str(FPS), '-i', path)
+    return (f"[{i}:v]scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},"
+            f"zoompan=z='{z0}+{z1 - z0}*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS},"
+            f"trim=end_frame={n},setpts=PTS-STARTPTS")
+if N == 1:
+    n = fr(T['squeeze'], T['cab'])
+    i = inp('-loop', '1', '-framerate', str(FPS), '-i', M / 'SQ2-a.jpg')
+    parts.append(f"[{i}:v]scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},"
+                 f"zoompan=z='1+0.12*pow(on/{n},2)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS},"
+                 f"trim=end_frame={n},setpts=PTS-STARTPTS[c]")
+else:
+    C = [('CL1-a', T['squeeze'], 7.5, 1.0, 1.04), ('CL2-b', 7.5, 8.5, 1.04, 1.12), ('CL3-b', 8.5, T['cab'], 1.0, 1.05)]
+    for k, (nm, a, b, z0, z1) in enumerate(C):
+        flash = ",fade=t=in:st=0:d=0.15:color=white" if k == 2 else ""
+        parts.append(still(M / f'{nm}.jpg', fr(a, b), z0, z1) + f"{flash}[c{k}]")
+    parts.append('[c0][c1][c2]concat=n=3:v=1:a=0[c]')
 
 # D. Into the cab: Jack's pick, the dancer kick ramp, whole.
 n = fr(T['cab'], T['logo'])
@@ -80,17 +93,33 @@ parts.append(f"[{j}:v]scale={int(W * 0.5)}:-1,format=rgba,colorchannelmixer=aa=0
              f"fade=t=in:st=0.25:d=0.6:alpha=1,trim=end_frame={n},setpts=PTS-STARTPTS[lg]")
 parts.append(f'[ew][lg]overlay=x=(W-w)/2:y=H*0.30:shortest=1[e]')
 
-parts.append('[a][b][c][d][e]concat=n=5:v=1:a=0,format=yuv420p[v]')
+parts.append('[a][b][c][d][e]concat=n=5:v=1:a=0,scale=in_range=full:out_range=limited,format=yuv420p[v]')
 k = inp('-i', SONG)
+CAST = MEDIA / 'audio/casting'
+VOX = [('vox-lad', CAST / 'lad-b-achird.wav', 0.3, 'lad b (Achird): "One version of me gets home fine."'),
+       ('vox-figure', CAST / 'sci-a-charon.wav', 8.7, 'figure a (Charon): "There\'s only one."')] if N >= 2 else []
+amix = f'[{k}:a]aresample=48000,aformat=channel_layouts=stereo'
+if VOX:
+    duck = '+'.join(f"between(t,{t + 0.2:.2f},{t + 3.3:.2f})" for _, _, t, _ in VOX)
+    amix += f",volume='if({duck},0.5,1)':eval=frame[mus]"
+    labs = ['[mus]']
+    for q, (_, f, t, _) in enumerate(VOX):
+        vi = inp('-i', f)
+        parts.append(f'[{vi}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={int(t * 1000)}|{int(t * 1000)},volume=1.6[vx{q}]')
+        labs.append(f'[vx{q}]')
+    parts.append(amix)
+    parts.append(''.join(labs) + f'amix=inputs={len(labs)}:normalize=0:duration=first,alimiter=limit=0.8:level=false[aout]')
+else:
+    parts.append(amix + '[aout]')
 preview = OUT / 'preview.mp4'
 subprocess.run(['ffmpeg', '-v', 'error', '-y', *map(str, inputs), '-filter_complex', ';'.join(parts),
-                '-map', '[v]', '-map', f'{k}:a', '-t', str(TOTAL), '-c:v', 'libx264', '-crf', '18', '-preset', 'medium',
-                '-c:a', 'aac', '-b:a', '256k', preview], check=True)
+                '-map', '[v]', '-map', '[aout]', '-t', str(TOTAL), '-c:v', 'libx264', '-crf', '18', '-preset', 'medium',
+                '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-c:a', 'aac', '-b:a', '256k', preview], check=True)
 
 beats = [
     ('line', 'A. The line', T['line'], T['split'], 'clip 1 (LI1-b, option 1b): keys spun, the grin, he turns for his car', 'meter tick'),
     ('split', 'B. The split', T['split'], T['squeeze'], 'built in the edit (2a): clip 1 in five strips, offset 4 frames each, drifting apart', 'the arpeggio smears'),
-    ('squeeze', 'C. Only one', T['squeeze'], T['cab'], 'SQ2-a held, push-in (3b, the squeeze to be built properly)', 'accents every second'),
+    ('squeeze', 'C. Only one', T['squeeze'], T['cab'], 'SQ2-a held, push-in' if N == 1 else 'clean-room stills CL1-a grip (6.5), CL2-b squeeze (7.5), white flash into CL3-b one (8.5)', 'accents every second'),
     ('cab', 'D. Into the cab', T['cab'], T['logo'], "Jack's pick iy-04-ka-ramp-r1 (dancer kick, ramped); contact on the 11.3 s tom", 'the gated tom'),
     ('logo', 'E. Headlights', T['logo'], T['end'], 'clip 5 clear wall from 4.6 s + the official stacked logo fading up', 'pad, brass swell, whoosh'),
 ]
@@ -104,12 +133,13 @@ edl = {
               for b, t, s, e, see, hear in beats],
     'video': [{'file': str(preview), 'source': str(src[b]), 'start': s, 'dur': e - s, 'beat': b, 'looped': False}
               for b, t, s, e, see, hear in beats],
-    'audio': [{'track': 'A1', 'name': 'mus-track'}],
-    'events': [{'stem': 'mus-track', 't': 0, 'dur': TOTAL, 'what': 'the locked track, 92821b14', 'src': str(SONG)}],
+    'audio': [{'track': 'A1', 'name': 'mus-track'}] + [{'track': f'A{q + 2}', 'name': st} for q, (st, _, _, _) in enumerate(VOX)],
+    'events': [{'stem': 'mus-track', 't': 0, 'dur': TOTAL, 'what': 'the locked track, 92821b14' + (', ducked under the lines' if VOX else ''), 'src': str(SONG)}]
+              + [{'stem': st, 't': t, 'dur': float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f], capture_output=True, text=True).stdout), 'what': w, 'src': str(f)} for st, f, t, w in VOX],
     'flags': [
-        'The lines ("One version of me gets home fine" / "There\'s only one") are not heard: voice, words on screen or neither is still open.',
-        'C is the SQ2-a still with a push-in; the actual squeeze (the lines dragged together into one) is not built yet.',
-        'In SQ2-a the goggles cover the mask\'s ring and triangle (known from round 2).',
+        *(['The lines are not heard yet.', 'C is the SQ2-a still with a push-in.'] if N == 1 else
+          ['Voices are stand-ins until Jack picks (voice page): lad b, figure a.', "The lad's lips don't match his line (clip 1 has no talking); the figure has no mouth.",
+           'CL2-b: his goggles sit over the top of the mask (ring and triangle still show, no skin).']),
         'E: the logo fades up rather than being lit by a moving headlight; clip 5\'s own sweep is in its first 4 s, under a car.',
     ],
 }

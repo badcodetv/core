@@ -30,5 +30,21 @@
   "url": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC",
   "what": "Rough cut 1: all five beats cut to the locked track; Jack's kick (iy-04-ka-ramp-r1) on the 11.3 s tom; split and logo built in the edit",
   "rebuild": "python3 scripts/infinite-yous/cut.py 1 && python3 scripts/scene/build-timeline.py docs/stories/short-infinite-yous/scenes/infinite-yous <out-dir>"
+ },
+ {
+  "at": "2026-11-15T11:41:10+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/4KMUnm467NUoLoGYffSWbs",
+  "what": "Voice casting round 1: lad a/b/c, figure a/b/c, one line each",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-infinite-yous/voices/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-15T11:47:59+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC",
+  "what": "Rough cut 2: both lines voiced (lad b, figure a, stand-ins), the squeeze as three clean-room stills CL1-a/CL2-b/CL3-b on the accents",
+  "rebuild": "python3 scripts/infinite-yous/cut.py 2 && python3 scripts/scene/build-timeline.py docs/stories/short-infinite-yous/scenes/infinite-yous <out-dir>"
  }
 ]
