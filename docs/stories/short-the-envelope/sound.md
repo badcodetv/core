@@ -2,7 +2,7 @@
 
 > The sound for this short only. Rules: docs/stories/STYLE.md.
 
-**Status:** EXPLORING (2026-11-15): one Suno track carries the line, the stings and the music (Kai's rule for shorts, 2026-11-13). Round 1: `songs/r1-track/`.
+**Status:** EXPLORING (2026-11-15). The Suno track is music and sound effects only (Jack 2026-11-15: no dialogue on shorts Suno tracks); the line is an AI Studio voice. Round 2: `songs/r2-track/` (instrumental); voices: `voices/`. Round 1 (`songs/r1-track/`, every take spoke the line) is dropped.
 
 ## Direction so far
 - Jack, 2026-11-15: invented period piano for the Sting version; not Joplin, not the film's score.

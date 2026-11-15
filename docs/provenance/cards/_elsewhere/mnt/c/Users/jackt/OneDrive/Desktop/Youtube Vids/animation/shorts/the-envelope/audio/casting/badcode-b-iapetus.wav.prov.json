@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/audio/casting/badcode-b-iapetus.wav",
+ "made": "2026-11-15T17:52:51+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.",
+ "inputs": {
+  "profile": "# Audio Profile\nA man in his forties with a clipped, cut-glass 1930s wireless-announcer accent. Crisp, precise and utterly deadpan, reading the scandal as if it were the shipping forecast, each word placed with total authority.\n\n## Scene:\nA smoky 1930s backstreet betting parlour. A red curtain has just been ripped back to show two men in a blue tie and a red tie shaking hands over a crate of rifles.\n\n## Sample Context:\nThe speaker is BadCode, a voice from a future that already went wrong, which has watched this exact con play out. It is not angry and not preaching: it knows how this ends and lets you in on it, sarcastic on top and quietly on your side underneath. One sentence, said once, to the viewer.\n",
+  "profile_file": "docs/stories/short-the-envelope/voices/profiles/badcode-b-iapetus.md"
+ },
+ "settings": {
+  "voice": "Iapetus",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}
