@@ -39,7 +39,7 @@ the excuse; there is one of you, and one mum waiting up. Stake: his life.
 
 1. **Track LOCKED:** Suno 92821b14 (instrumental, taxi-meter synth), in `sound.md`, recorded to Desktop `audio\`.
 2. **Stills picked:** LI1-b, SP1-a, SQ2-a, CA2-a, LO1-b. **Animation picked** (storyboard https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3): 1b, 2a (edit), 3b (edit), 4a, 5a.
-3. **Clips** (Desktop `video\`): `iy-01-LI1-b.mp4` ✅. `iy-05-LO1-b.mp4` 🟡: a whole car crosses the wall (0-4 s), then the wall is clear; use the clear part or re-roll for light only. **Clip 4** `iy-04-r3-CA2-a.mp4` 🟡 (2026-11-15, slapstick prompt, unwatched by Jack): use 0-3 s only; after that the scientist faces camera and the mask has no triangle.
+3. **Clips** (Desktop `video\`): `iy-01-LI1-b.mp4` ✅. `iy-05-LO1-b.mp4` 🟡: a whole car crosses the wall (0-4 s), then the wall is clear; use the clear part or re-roll for light only. **Clip 4** `iy-04-r3-CA2-a.mp4` 🟡 (2026-11-15, slapstick prompt, unwatched by Jack): use 0-3 s only; after that the scientist faces camera and the mask has no triangle. `iy-04-r4` (Django fling attempt) floated up then sank in, not a fling; see picks.md 2026-11-15.
 4. **Open question for Jack:** are the lines heard at all ("One of them gets home fine" / "There's only one"): a voice on top, words on screen, or neither? The track has no lyrics.
 5. **Then:** build the split (frame 1's clip in five strips) and the squeeze (SQ2-a) in the edit, put the logo on the wall in the light, and cut it all to the track on a timeline page (`scene-timeline`), then Premiere.
 - Browser: Suno and Flow both run in the Flow browser (channel 2, port 9223), signed in. Never run Suno and Flow at the same time (download clash).
