@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-fc-ramp-r1.mov",
+ "made": "2026-11-15T10:32:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-fc-FL1-c-b.mp4",
+ "why": "Jack 2026-11-15: the Django fling; speed ramp 4x with blur on the flight (0.5-1.4 s), Premiere has no speed setter in the API",
+ "prompt": "[0:v]split=3[a][b][c];[a]trim=0:0.5,setpts=PTS-STARTPTS[s1];[b]trim=0.5:1.4,setpts=PTS-STARTPTS,tmix=frames=4,framestep=4,setpts=N/24/TB[s2];[c]trim=1.4:3.6,setpts=PTS-STARTPTS[s3];[s1][s2][s3]concat=n=3:v=1:a=0,fps=24 ; prores_ks profile 3, no audio"
+}
