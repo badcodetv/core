@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/WL1r-b.jpg",
+ "made": "2026-11-15T12:24:09.817Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the first image exactly: the same five tall strips of the same laughing young man, the same thin white dividing lines, the same street, light and framing. Into it steps the masked scientist from the second image. His balaclava matches the third image: no holes at all and no skin, a big white ring round the face, and the small red triangle high on the RIGHT-hand side of the picture, over his left eye; goggles pushed up, black gloves. Facing camera, he closes his gloved fists round two of the thin white lines, glowing like taut threads of light, ready to drag them together. Only thin lines of light, no metal bars. Vertical 9:16. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-split.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-split.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-CL1-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-mask.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "27ae9284-19f4-4c5e-ab9f-4be97c0ae5a4"
+}

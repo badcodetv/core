@@ -83,7 +83,10 @@ if N == 1:
                  f"zoompan=z='1+0.12*pow(on/{n},2)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS},"
                  f"trim=end_frame={n},setpts=PTS-STARTPTS[c]")
 else:
-    C = [('CL1-a', T['squeeze'], 7.5, 1.0, 1.04), ('CL2-b', 7.5, 8.5, 1.04, 1.12), ('CL3-b', 8.5, T['cab'], 1.0, 1.05)]
+    # r4+: Jack 2026-11-15 "the white lines in the first video... use that as a reference image, for badcode to close":
+    # remade from the split frame (WL*), no metal bars.
+    C = ([('WL1r-b', T['squeeze'], 7.5, 1.0, 1.04), ('WL2-b', 7.5, 8.5, 1.04, 1.12), ('WL3-a', 8.5, T['cab'], 1.0, 1.05)] if N >= 4 else
+         [('CL1-a', T['squeeze'], 7.5, 1.0, 1.04), ('CL2-b', 7.5, 8.5, 1.04, 1.12), ('CL3-b', 8.5, T['cab'], 1.0, 1.05)])
     for k, (nm, a, b, z0, z1) in enumerate(C):
         flash = ",fade=t=in:st=0:d=0.15:color=white" if k == 2 else ""
         parts.append(still(M / f'{nm}.jpg', fr(a, b), z0, z1) + f"{flash}[c{k}]")
@@ -107,17 +110,18 @@ parts.append('[a][b][c][d][e]concat=n=5:v=1:a=0,scale=in_range=full:out_range=li
 k = inp('-i', SONG)
 CAST = MEDIA / 'audio/casting'
 VOX = ([('vox-lad', MEDIA / 'audio/dub/iy-01t-a-dub.wav', 0.0, 'lad a (Puck, brisk take 2), lip-synced to iy-01t-a x1.20: "One version of me gets home fine."'),
-        ('vox-figure', CAST / 'sci2-d-enceladus.wav', 8.2, 'figure round 2 d (Enceladus, stand-in): "There\'s only one."')] if N >= 3 else
+        (('vox-figure', CAST / 'sci3-h-sadaltager.wav', 8.6, 'figure round 3 h (Sadaltager, London, fast; stand-in): "There\'s only one."') if N >= 4 else
+         ('vox-figure', CAST / 'sci2-d-enceladus.wav', 8.2, 'figure round 2 d (Enceladus, stand-in): "There\'s only one."'))] if N >= 3 else
        [('vox-lad', CAST / 'lad-b-achird.wav', 0.3, 'lad b (Achird): "One version of me gets home fine."'),
         ('vox-figure', CAST / 'sci-a-charon.wav', 8.7, 'figure a (Charon): "There\'s only one."')] if N >= 2 else [])
 amix = f'[{k}:a]aresample=48000,aformat=channel_layouts=stereo'
 if VOX:
     duck = '+'.join(f"between(t,{t + 0.2:.2f},{t + 3.3:.2f})" for _, _, t, _ in VOX)
-    amix += f",volume='if({duck},0.5,1)':eval=frame[mus]"
+    amix += f",volume='if({duck},{0.3 if N >= 4 else 0.5},1)':eval=frame[mus]"
     labs = ['[mus]']
     for q, (_, f, t, _) in enumerate(VOX):
         vi = inp('-i', f)
-        parts.append(f'[{vi}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={int(t * 1000)}|{int(t * 1000)},volume=1.6[vx{q}]')
+        parts.append(f'[{vi}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={int(t * 1000)}|{int(t * 1000)},volume={(3.2 if 'dub' in str(f) else 1.8) if N >= 4 else 1.6}[vx{q}]')
         labs.append(f'[vx{q}]')
     parts.append(amix)
     parts.append(''.join(labs) + f'amix=inputs={len(labs)}:normalize=0:duration=first,alimiter=limit=0.8:level=false[aout]')
@@ -131,7 +135,7 @@ subprocess.run(['ffmpeg', '-v', 'error', '-y', *map(str, inputs), '-filter_compl
 beats = [
     ('line', 'A. The line', T['line'], T['split'], 'talking close-up iy-01t-a (TK1-b) lip-synced 0-2.0, then clip 1 wide from 1.5 s' if N >= 3 else 'clip 1 (LI1-b, option 1b): keys spun, the grin, he turns for his car', 'meter tick'),
     ('split', 'B. The split', T['split'], T['squeeze'], 'built in the edit (2a): clip 1 in five strips, offset 4 frames each, drifting apart', 'the arpeggio smears'),
-    ('squeeze', 'C. Only one', T['squeeze'], T['cab'], 'SQ2-a held, push-in' if N == 1 else 'clean-room stills CL1-a grip (6.5), CL2-b squeeze (7.5), white flash into CL3-b one (8.5)', 'accents every second'),
+    ('squeeze', 'C. Only one', T['squeeze'], T['cab'], 'SQ2-a held, push-in' if N == 1 else ('stills from the split frame: WL1r-b grip on the white lines (6.5), WL2-b squeeze (7.5), white flash into WL3-a one (8.5)' if N >= 4 else 'clean-room stills CL1-a grip (6.5), CL2-b squeeze (7.5), white flash into CL3-b one (8.5)'), 'accents every second'),
     ('cab', 'D. Into the cab', T['cab'], T['logo'], "Jack's pick iy-04-ka-ramp-r1 (dancer kick, ramped); contact on the 11.3 s tom", 'the gated tom'),
     ('logo', 'E. Headlights', T['logo'], T['end'], 'clip 5 clear wall from 4.6 s + the official stacked logo fading up', 'pad, brass swell, whoosh'),
 ]
@@ -145,7 +149,10 @@ elif N == 2:
 else:
     FLAGS = ['Lad: Jack\'s pick a (Puck), a brisk retake fitted to the talking clip at x1.20 ("home" lands 0.12 s after his lips close). '
              'Figure: round-2 take d as a stand-in until Jack picks.']
-if N >= 2:
+if N >= 4:
+    FLAGS[-1] = FLAGS[-1].replace('round-2 take d', 'round-3 take h (English, fast)')
+    FLAGS.append('WL2-b (1 s, mid-squeeze): the light-lines cover the mask, so the triangle is hidden.')
+elif N >= 2:
     FLAGS.append('CL2-b: his goggles sit over the top of the mask (ring and triangle still show, no skin).')
 edl = {
     'sequence': f'short-infinite-yous-1-infinite-yous-r{N}', 'title': 'Infinite Yous: rough cut',

@@ -1,13 +1,40 @@
 {
  "title": "Infinite Yous Voices",
- "eyebrow": "Infinite Yous \u00b7 voices \u00b7 round 2",
+ "eyebrow": "Infinite Yous \u00b7 voices \u00b7 round 3",
  "heading": "Pick the two voices",
- "intro": "Round 2. The lad is picked (a, Puck, Leeds). Jack on the figure: \"more sort of rick from rick and morty, deadpan sarcasm\": two new takes as a jaded, burnt-out genius (a third read its instructions aloud and is left out).",
+ "intro": "Round 3. Jack on round 2: \"make them english and they should say this line fast\". Three English, fast, deadpan-sarcastic geniuses. The cut uses h (London) until you pick.",
  "sections": [
   {
    "h": "Voices",
    "lede": "One line each, the real words.",
    "groups": [
+    {
+     "slot": "figure-r3",
+     "round": 3,
+     "title": "The BadCode figure, round 3",
+     "line": "\"There's only one.\" English, fast, deadpan.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "g",
+       "src": "takes/sci3-g-iapetus.mp3",
+       "label": "g: Iapetus, Oxford, plummy and withering",
+       "warn": ""
+      },
+      {
+       "id": "h",
+       "src": "takes/sci3-h-sadaltager.mp3",
+       "label": "h: Sadaltager, London Estuary, bone-dry",
+       "warn": "in rough cut 4"
+      },
+      {
+       "id": "i",
+       "src": "takes/sci3-i-umbriel.mp3",
+       "label": "i: Umbriel, Birmingham, smirking",
+       "warn": "transcriber missed \"There's\": listen"
+      }
+     ]
+    },
     {
      "slot": "figure-r2",
      "round": 2,
@@ -84,5 +111,5 @@
    ]
   }
  ],
- "round": 2
+ "round": 3
 }

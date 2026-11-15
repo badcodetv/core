@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/WL3-a.jpg",
+ "made": "2026-11-15T12:22:30.461Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The same street, light and framing as the first image, but the strips and the white lines are gone: one whole, unbroken frame. A single young man from the first image stands alone, no longer laughing, blinking and dazed, his car keys hanging from one hand. Just beside him the masked scientist from the second image, balaclava exactly as the third image (no holes, no skin, the white ring and the small red triangle showing, goggles up, black gloves), opens his gloved hands as if he has just let go of something. A few last sparks of white light fade in the air. Vertical 9:16. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-split.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-split.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-CL1-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-mask.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b0448a87-5f4c-4b4f-977e-8aa8e0ea1302"
+}

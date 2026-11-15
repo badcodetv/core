@@ -54,5 +54,13 @@
   "url": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC",
   "what": "Rough cut 3: the lad's line on camera, lip-synced (iy-01t-a + Puck brisk x1.20), figure round-2 d stand-in",
   "rebuild": "python3 scripts/infinite-yous/cut.py 3 && python3 scripts/scene/build-timeline.py docs/stories/short-infinite-yous/scenes/infinite-yous <out-dir>"
+ },
+ {
+  "at": "2026-11-15T12:26:02+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC",
+  "what": "Rough cut 4: squeeze remade from the split frame (white lines), figure English fast (h), lad louder",
+  "rebuild": "python3 scripts/infinite-yous/cut.py 4 && python3 scripts/scene/build-timeline.py docs/stories/short-infinite-yous/scenes/infinite-yous <out-dir>"
  }
 ]

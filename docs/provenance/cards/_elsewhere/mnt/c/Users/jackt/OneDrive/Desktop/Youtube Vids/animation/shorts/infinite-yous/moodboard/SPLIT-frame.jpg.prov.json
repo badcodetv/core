@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SPLIT-frame.jpg",
+ "made": "2026-11-15T12:25:27+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r3/preview.mp4",
+ "why": "Jack: use the white lines from the split as the reference for the squeeze",
+ "prompt": "frame at 4.4 s of rough cut 3 (the split)"
+}
