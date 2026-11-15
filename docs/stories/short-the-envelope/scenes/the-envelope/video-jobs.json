@@ -1,0 +1,43 @@
+{
+ "option": "a",
+ "anim_picks": {
+  "1": "a",
+  "2": "a",
+  "3": "a",
+  "4": "a"
+ },
+ "extra": [
+  {
+   "key": "01-b",
+   "n": 1,
+   "still": "SU2-b",
+   "motion": "The camera does not move. A painted 1930s chapter card comes to life. The dealer in the fedora taps the left envelope once with his finger, then the right envelope once, like a bookie showing two equal runners, then rests his hand flat and tilts his head with a knowing look. The lamp flickers once, softly. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said go, 2026-11-15)"
+  },
+  {
+   "key": "02-b",
+   "n": 2,
+   "still": "PK2-b",
+   "motion": "The camera does not move. A painted 1930s chapter card comes to life. The old man in the flat cap hesitates, sliding his fingertip from the left envelope across to the right one, pausing, then back to the left, where it settles. The dealer waits with open palms, smiling patiently. The clock's minute hand ticks forward once. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said go, 2026-11-15)"
+  },
+  {
+   "key": "03-b",
+   "n": 3,
+   "still": "SW4-c",
+   "motion": "The camera does not move. A painted 1930s chapter card comes to life. The dealer tilts both bowler hats towards us at the same time, showing off both envelopes together, and gives a smug half smile under his hat brim. Behind him the man in the flat cap slowly fans the banknotes in his hand and grins. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said go, 2026-11-15)"
+  },
+  {
+   "key": "04-b",
+   "n": 4,
+   "still": "SG4-b",
+   "motion": "The camera does not move. A painted 1930s chapter card comes to life. The two men in hats stop mid-handshake over the rifle crate and slowly turn their shadowed faces towards the curtain, caught. The figure in the dark knitted balaclava holds perfectly still, gloved hands gripping the red curtain, which sways gently. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said go, 2026-11-15)"
+  }
+ ]
+}

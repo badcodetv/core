@@ -1,0 +1,9 @@
+{
+ "acts": [{"id": "a1", "title": "The Envelope (the Sting version)", "beats": "0:00-0:15"}],
+ "frames": [
+  {"n": 1, "act": "a1", "title": "S1. The Counter", "look": "painted chapter card", "line": "", "stills": ["SU2-b"], "anim": 1, "beat": "0:00"},
+  {"n": 2, "act": "a1", "title": "S2. The Pick", "look": "painted chapter card", "line": "", "stills": ["PK2-b"], "anim": 2, "beat": "0:03"},
+  {"n": 3, "act": "a1", "title": "S3. The Switch", "look": "painted chapter card, bowler-hat shell game", "line": "", "stills": ["SW4-c"], "anim": 3, "beat": "0:07"},
+  {"n": 4, "act": "a1", "title": "S4. The Pay-off", "look": "painted chapter card, BadCode at the curtain", "line": "NARRATOR: They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction. (voice not cast)", "stills": ["SG4-b"], "anim": 4, "beat": "0:11"}
+ ]
+}

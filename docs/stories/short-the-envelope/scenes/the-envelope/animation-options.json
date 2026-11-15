@@ -1,0 +1,239 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Omni's camera is locked; Premiere does every push, eased.",
+   "why": "generated camera moves drift and redraw",
+   "source": "docs/video-fx/hybrid-method.md"
+  },
+  {
+   "rule": "The cards keep their painted title bands; the prompt holds the lettering still.",
+   "why": "Flow redraws text in motion",
+   "source": "scene-animation"
+  },
+  {
+   "rule": "No Flow speech: the line is a voice cast later and placed in the edit.",
+   "why": "Jack 2026-11-10",
+   "source": "memory"
+  },
+  {
+   "rule": "Music: invented period piano, not Joplin, not the film's score.",
+   "why": "no copying the film",
+   "source": "README"
+  },
+  {
+   "rule": "BadCode mask: zoomed check of the triangle (over the left eye, right of picture) on every frame of S4.",
+   "why": "brand rule",
+   "source": "docs/brand/README.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "The house opens: a smooth dealer offers two envelopes at even odds, like a fair bet.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Fans the two envelopes",
+     "idea": "He slides the two envelopes a little further across the counter and fans them apart, a slow sly smile under the hat brim; the lamp glow breathes.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "his hand and smile, the lamp"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow eased 4% push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing (the card's own title is the text)"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A painted 1930s chapter card comes to life. The dealer in the fedora slides the two envelopes slowly across the polished counter towards us and fans them a little apart with his fingertips, then lifts his eyes with a slow, sly smile. The lamp's warm glow gently breathes on the wood. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+     "cut": "0:00 to ~3 s",
+     "seconds": 8,
+     "risk": "envelope stamps may smear as they move"
+    },
+    {
+     "id": "b",
+     "label": "Taps each, even odds",
+     "idea": "He taps the blue-stamped envelope, then the red, like a bookie showing two runners, then rests his hand; the lamp flickers once.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "his tapping finger"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow eased 4% push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing (the card's own title is the text)"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A painted 1930s chapter card comes to life. The dealer in the fedora taps the left envelope once with his finger, then the right envelope once, like a bookie showing two equal runners, then rests his hand flat and tilts his head with a knowing look. The lamp flickers once, softly. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+     "cut": "0:00 to ~3 s",
+     "seconds": 8,
+     "risk": "taps may land between the envelopes"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "The mark chooses in good faith; the host is all generosity.",
+   "options": [
+    {
+     "id": "a",
+     "label": "He presses down on one",
+     "idea": "The old man's finger presses down on the left envelope, decided; the dealer opens his arms wider, the gracious host.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the finger and the dealer's arms"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow eased 4% push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing (the card's own title is the text)"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A painted 1930s chapter card comes to life. The old man in the flat cap presses his finger down firmly on the left envelope, choosing it. Behind the counter the dealer opens his arms a little wider and gives a gracious little bow of the head. The clock's minute hand ticks forward once. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+     "cut": "0:03 to ~6.5 s",
+     "seconds": 8,
+     "risk": "the dealer's hands may grow extra fingers"
+    },
+    {
+     "id": "b",
+     "label": "He wavers between them",
+     "idea": "His finger drifts from one envelope to the other and back, then settles; the dealer waits, patient as a priest.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the finger"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow eased 4% push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing (the card's own title is the text)"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A painted 1930s chapter card comes to life. The old man in the flat cap hesitates, sliding his fingertip from the left envelope across to the right one, pausing, then back to the left, where it settles. The dealer waits with open palms, smiling patiently. The clock's minute hand ticks forward once. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+     "cut": "0:03 to ~6.5 s",
+     "seconds": 8,
+     "risk": "two moves in 8 s may rush"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "The con revealed: whichever hat you pick, the same arms order sits under it, with fresh money on top.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The swap",
+     "idea": "He lifts both bowlers a hand's width and crosses them past each other, swapping sides, then sets them back down; the shill behind winks and riffles his notes.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the two hats and the shill's wink"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow eased 4% push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing (the card's own title is the text)"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A painted 1930s chapter card comes to life. The dealer lifts the two bowler hats a hand's width and smoothly crosses them past each other, swapping them left to right like a shell-game hustler, then holds them still again. Behind him the man in the flat cap winks and riffles the fan of banknotes in his hand. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+     "cut": "0:07 to ~10.5 s",
+     "seconds": 8,
+     "risk": "crossing hats may swap the envelope labels or melt them"
+    },
+    {
+     "id": "b",
+     "label": "Both hats tip forward",
+     "idea": "He tips both bowlers towards us at once, showing both envelopes together, a smug look under the brim; the shill fans his notes slowly.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the hats tipping, the shill's notes"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow eased 4% push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing (the card's own title is the text)"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A painted 1930s chapter card comes to life. The dealer tilts both bowler hats towards us at the same time, showing off both envelopes together, and gives a smug half smile under his hat brim. Behind him the man in the flat cap slowly fans the banknotes in his hand and grins. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+     "cut": "0:07 to ~10.5 s",
+     "seconds": 8,
+     "risk": "low: small moves"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "The sting: BadCode pulls the curtain and catches the house, both ties in one handshake over the rifles.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Curtain pulled wide",
+     "idea": "The gloved hands haul the red curtain further open; the two men keep pumping their handshake, unaware. Premiere: slow push to the handshake for the line.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the curtain and the handshake"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow eased push towards the handshake under the line"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "the line as captions, if wanted"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A painted 1930s chapter card comes to life. The figure in the dark knitted balaclava hauls the red curtain further open with both gloved hands, the heavy velvet folds swaying. Beyond it the two men in hats keep shaking hands over the rifle crate, pumping slowly, unaware they are seen. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+     "cut": "0:11 to end, under the line",
+     "seconds": 8,
+     "risk": "the mask's triangle or ring may drift; check every frame"
+    },
+    {
+     "id": "b",
+     "label": "The house is caught",
+     "idea": "The handshake freezes mid-pump and both men turn their shadowed faces towards the curtain, caught; BadCode holds still, the curtain swaying.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the two men turning, the curtain sway"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow eased push towards the handshake under the line"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "the line as captions, if wanted"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A painted 1930s chapter card comes to life. The two men in hats stop mid-handshake over the rifle crate and slowly turn their shadowed faces towards the curtain, caught. The figure in the dark knitted balaclava holds perfectly still, gloved hands gripping the red curtain, which sways gently. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+     "cut": "0:11 to end, under the line",
+     "seconds": 8,
+     "risk": "turning heads may reveal faces Flow invents; mask drift"
+    }
+   ]
+  }
+ ]
+}
