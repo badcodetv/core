@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-kb-KK1-c-c.mp4",
+ "made": "2026-11-15T10:44:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static camera. [00:00-00:01] The figure in the lab coat swings his drawn-back leg through like a footballer's penalty, a fast blur; his shoe meets the seat of the young man's jeans and the young man sails head-first through the open door onto the back seat like a ball into the net, a white streak, gone. Playful slapstick, nobody hurt. [00:01-00:08] The taxi bounces on its springs; the figure holds his follow-through pose, side-on, perfectly still. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/KK1-c-c.jpg",
+ "why": "Jack 2026-11-15: make it look like a kick and he flies into the taxi, the speed is the joke; clean room. Staging: The penalty. The figure is caught at the top of a footballer's swing: planted foot down, the other l",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/KK1-c-c.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-infinite-yous/scenes/infinite-yous",
+  "key": "04-kb",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-15T10:42:46.047Z"
+ }
+}
