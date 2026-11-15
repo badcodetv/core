@@ -22,5 +22,13 @@
   "url": "https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3",
   "what": "Storyboard round 1: 5 picked stills, 2 animation options each, timed to the locked track",
   "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/short-infinite-yous/scenes/infinite-yous <out.html>"
+ },
+ {
+  "at": "2026-11-15T11:32:22+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC",
+  "what": "Rough cut 1: all five beats cut to the locked track; Jack's kick (iy-04-ka-ramp-r1) on the 11.3 s tom; split and logo built in the edit",
+  "rebuild": "python3 scripts/infinite-yous/cut.py 1 && python3 scripts/scene/build-timeline.py docs/stories/short-infinite-yous/scenes/infinite-yous <out-dir>"
  }
 ]

@@ -45,7 +45,8 @@
  },
  "boards": {
   "moodboard": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ",
-  "storyboard": "https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3"
+  "storyboard": "https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3",
+  "timeline": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC"
  },
  "flow_project": "28e36ecd-0a59-45db-aa58-a4a0e2c31b29",
  "moodboard_intro": "Round 2 (Jack's notes): C. Only one redone with SP1-a's five strips and the figure as a proper scientist, no skin; D. Into the cab with that scientist. Pick one of each.",
@@ -76,5 +77,10 @@
   "suno": "92821b14-f464-4826-9bbc-37cace91dbea",
   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/infinite-yous-r2-instrumental-taxi-meter-synth-p-92821b14.wav",
   "dur": 15
+ },
+ "cut": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r1/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r1/preview.mp4",
+  "script": "scripts/infinite-yous/cut.py"
  }
 }
