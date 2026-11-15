@@ -1,0 +1,36 @@
+{
+ "story": "short-malevolent-force",
+ "scene": "malevolent-force",
+ "prefix": "mf",
+ "title": "The Malevolent Force",
+ "heading": "BadCode Shorts <span class=\"tri\">▲</span> The Malevolent Force",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force",
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "9:16",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "flow_project": "0153219b-e10c-46ac-b2a7-5b50200e19fe",
+ "beats": [
+  {
+   "key": "price50",
+   "at": "0:00",
+   "name": "A. 50p",
+   "blurb": "A loaf of bread costs 50p. Already wrong somehow: horror-film dread in a corner shop."
+  },
+  {
+   "key": "climb",
+   "at": "0:04",
+   "name": "B. £1 → £5",
+   "blurb": "The next day £1, then £5, the shop darker each time; something unseen is in there."
+  },
+  {
+   "key": "force",
+   "at": "0:10",
+   "name": "C. £50",
+   "blurb": "£50. The ghost is inflation: the money printer in the hands of whoever decides that day, never seen."
+  }
+ ],
+ "moodboard_intro": "Round 1: clean-room stills, three genuinely different looks per beat. Vote This / Maybe / No and leave a note per beat."
+}

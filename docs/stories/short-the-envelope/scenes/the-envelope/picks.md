@@ -1,0 +1,3 @@
+# The Envelope (short): picks and rulings
+
+- **2026-11-15, Jack:** "please make a selection of stills for each best short idea, the ones on the new list from the transcript from the last meeting like the horror one with the bread. please make all those stills for each and put them on the new scene skill. im gonna go away from the computer for a while, so use your best judgement dont ask questions just keep going. Please clean room it all and research the internet to achieve it." Set up as `short-the-envelope`, 9:16 (his other shorts), media folder Desktop `shorts\the-envelope` (his standing shorts folder), Flow project 9cc5b19c-6911-4463-83ac-69edc9e2878c.
