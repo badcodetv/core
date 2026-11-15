@@ -25,10 +25,10 @@ Kai, 2026-11-13 meeting: an arms-deal envelope lands on a desk, stamped APPROVED
 | Mood board round 1 | 🟡 https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe (clean room, 9 stills), awaiting Jack's votes |
 | Mood board round 2 (Sting version) | ✅ Jack: column b (painted chapter cards); S1 SU2-b, S2 PK2-b picked |
 | Mood board round 3 | ✅ SW3-c, SG3-b (triangle note → SG4-b); SW4-c = invented notes |
-| Clips | 🟡 8 clips (2 per card), all checked, in Premiere bin `the-envelope clips`; picks page https://claude.ai/artifact/SYmKwEYiBZxixJHpyduGod awaiting Jack |
+| Clips | 🟡 8 clips (2 per card), all checked, in Premiere bin `the-envelope clips`; picks page https://claude.ai/artifact/SYmKwEYiBZxixJHpyduGod: Jack picked 01-a, 02-b, 03-b, 04-b |
 
 ## Resume here (2026-11-15 eve)
 
 1. **Stills:** SU2-b, PK2-b, SW4-c (SW3-c with invented notes), SG4-b (triangle over his eye). Look written in `look.md`.
 2. **Clips:** 2 options per card, 8 Omni clips in `video/`, all checked (mask holds on S4), imported to Premiere bin `the-envelope clips`, not placed. Picks page https://claude.ai/artifact/SYmKwEYiBZxixJHpyduGod. Known flaws: 03-a sets the hats down rather than swapping; 04-b gives the two men invented faces.
-3. **Next:** dump the page's `picks` into `feedback/picks-r1/`, re-roll anything noted, then `scene-timeline`: invented period piano, the line voiced (`voice-casting`), rough cut on a timeline page. `marketing-gatekeeper` on naming the parties before posting.
+3. **Picked:** 01-a, 02-b, 03-b, 04-b (no re-rolls). **Next:** `scene-timeline`: invented period piano, the line voiced (`voice-casting`), rough cut on a timeline page. `marketing-gatekeeper` on naming the parties before posting.
