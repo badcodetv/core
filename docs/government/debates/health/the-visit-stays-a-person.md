@@ -1,5 +1,15 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-15 · PR #29
+
+**Opposition:** Giving someone a small package removes them from your queue even if most assessed care remains missing. Total hours can rise while those gaps persist. Count unmet assessed hours, including people whose packages have started, and give that measure a failure threshold. Otherwise the trial could pass while leaving much of the promised care undelivered.
+**Answer (Health Secretary):** Right. A package that covers half her plan takes her off the list and leaves half the plan undone. New measure: unmet assessed hours per thousand residents, the hours in every eligible person's assessed care plan, with a package or without, less the hours actually delivered, from council care records and visit records. If it hasn't fallen by at least one in twenty against the councils waiting, the trial fails. The queue count stays beside it, with its own fail number.
+**Outcome:** Conceded: test.measure and fails_if add unmet assessed hours; answer line updated, this commit
+
+**Statistician:** health/the-visit-stays-a-person: "hours per person per week for the people on the books on day one have fallen" has no margin. If the trial does nothing to existing care, chance alone puts the trial councils below the councils waiting about half the time, so this clause can fail a trial that works. It also doesn't say whether someone whose package ends (death, a care home, recovery) counts as zero hours or leaves the group. Fix: a margin against the councils waiting (for example, a fall of more than one in twenty from its own baseline), and one sentence on how people who leave care are counted.
+**Answer (Health Secretary):** Taken. It fails if those hours fall by more than one in twenty against the councils waiting. A person whose package ends leaves that line on the day it ends; the endings are counted beside it, by reason. They stay in the fixed group for the admissions count, so nobody vanishes from the figure that matters most.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
 ## 2026-11-14 · PR #29
 
 **Opposition:** Giving saved hours to neighbours waiting is right. But your pass rule still requires hours per person to rise. A pooled average can fall when new recipients need shorter packages, without anyone losing care. Judge unmet assessed hours and existing recipients separately, so reaching more people cannot itself fail the trial.
