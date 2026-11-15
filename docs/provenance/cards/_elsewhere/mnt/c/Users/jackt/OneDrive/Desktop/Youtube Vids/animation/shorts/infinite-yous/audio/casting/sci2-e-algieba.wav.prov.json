@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/sci2-e-algieba.wav",
+ "made": "2026-11-15T11:52:57+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "There's only one.",
+ "inputs": {
+  "profile": "# Audio Profile\nA cynical mad scientist in his sixties, nasal and gravelly, slurring slightly, unimpressed by everything. Delivers the line like a punchline he finds too easy, dry as dust, the last word almost thrown away.\n\n## Scene:\nUnder a street lamp at night, wiping his gloves after shoving five versions of a young man back into one.\n\n## Sample Context:\nHe has seen the multiverse; it's overrated. There is exactly one of this kid, and he is bored of explaining it.\n",
+  "profile_file": "docs/stories/short-infinite-yous/voices/profiles/sci2-e-algieba.md"
+ },
+ "settings": {
+  "voice": "Algieba",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

@@ -1,16 +1,88 @@
 {
  "title": "Infinite Yous Voices",
- "eyebrow": "Infinite Yous · voices · round 1",
+ "eyebrow": "Infinite Yous \u00b7 voices \u00b7 round 2",
  "heading": "Pick the two voices",
- "intro": "Jack 2026-11-15: \"we need dialogue like we discussed.\" Three different voices per role (AI Studio), each reading the real line. Rough cut 2 uses lad b and the figure a; pick others and I swap them in.",
- "sections": [{"h": "Voices", "lede": "One line each, the real words.", "groups": [
-  {"slot": "lad", "title": "The lad", "line": "\"One version of me gets home fine.\" (0:00, keys up, grinning)", "kind": "audio", "opts": [
-   {"id": "a", "src": "takes/lad-a-puck.mp3", "label": "a: Puck, Leeds, loud and laughing", "warn": "retake; the transcriber heard \"gets on fine\", listen for \"home\""},
-   {"id": "b", "src": "takes/lad-b-achird.mp3", "label": "b: Achird, Essex, smug and slurred", "warn": "in rough cut 2"},
-   {"id": "c", "src": "takes/lad-c-fenrir.mp3", "label": "c: Fenrir, Cardiff, giddy and fast", "warn": "adds a \"Well\" at the start"}]},
-  {"slot": "figure", "title": "The BadCode figure", "line": "\"There's only one.\" (as the timelines close into one)", "kind": "audio", "opts": [
-   {"id": "a", "src": "takes/sci-a-charon.mp3", "label": "a: Charon, deep, certain, from the future", "warn": "in rough cut 2"},
-   {"id": "b", "src": "takes/sci-b-kore.mp3", "label": "b: Kore, Edinburgh scientist, cool and clipped", "warn": ""},
-   {"id": "c", "src": "takes/sci-c-algenib.mp3", "label": "c: Algenib, Salford, weary dad", "warn": "retake"}]}
- ]}]
+ "intro": "Round 2. The lad is picked (a, Puck, Leeds). Jack on the figure: \"more sort of rick from rick and morty, deadpan sarcasm\": two new takes as a jaded, burnt-out genius (a third read its instructions aloud and is left out).",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "One line each, the real words.",
+   "groups": [
+    {
+     "slot": "figure-r2",
+     "round": 2,
+     "title": "The BadCode figure, round 2",
+     "line": "\"There's only one.\" Jaded, deadpan, sarcastic genius.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "d",
+       "src": "takes/sci2-d-enceladus.mp3",
+       "label": "d: Enceladus, raspy burnt-out genius, a sigh first",
+       "warn": ""
+      },
+      {
+       "id": "e",
+       "src": "takes/sci2-e-algieba.mp3",
+       "label": "e: Algieba, nasal and gravelly, thrown away",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "lad",
+     "title": "The lad",
+     "line": "\"One version of me gets home fine.\" (0:00, keys up, grinning)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "takes/lad-a-puck.mp3",
+       "label": "a: Puck, Leeds, loud and laughing",
+       "warn": "retake; the transcriber heard \"gets on fine\", listen for \"home\""
+      },
+      {
+       "id": "b",
+       "src": "takes/lad-b-achird.mp3",
+       "label": "b: Achird, Essex, smug and slurred",
+       "warn": "in rough cut 2"
+      },
+      {
+       "id": "c",
+       "src": "takes/lad-c-fenrir.mp3",
+       "label": "c: Fenrir, Cardiff, giddy and fast",
+       "warn": "adds a \"Well\" at the start"
+      }
+     ]
+    },
+    {
+     "slot": "figure",
+     "title": "The BadCode figure",
+     "line": "\"There's only one.\" (as the timelines close into one)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "takes/sci-a-charon.mp3",
+       "label": "a: Charon, deep, certain, from the future",
+       "warn": "in rough cut 2"
+      },
+      {
+       "id": "b",
+       "src": "takes/sci-b-kore.mp3",
+       "label": "b: Kore, Edinburgh scientist, cool and clipped",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "takes/sci-c-algenib.mp3",
+       "label": "c: Algenib, Salford, weary dad",
+       "warn": "retake"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "round": 2
 }

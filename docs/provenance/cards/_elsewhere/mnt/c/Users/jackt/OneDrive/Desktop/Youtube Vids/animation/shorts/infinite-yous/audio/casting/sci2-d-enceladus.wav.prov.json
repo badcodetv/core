@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/sci2-d-enceladus.wav",
+ "made": "2026-11-15T11:52:34+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "There's only one.",
+ "inputs": {
+  "profile": "# Audio Profile\nAn old, burnt-out genius scientist with a raspy, cracked voice, a few drinks in and utterly bored by humanity. Flat, deadpan, dripping with sarcasm, as if explaining something obvious to an idiot for the hundredth time. A small sigh before the words.\n\n## Scene:\nA night street outside a pub. He has just done something impossible and cannot believe he has to spell it out.\n\n## Sample Context:\nThe drunk young man thinks there are infinite versions of himself. The scientist corrects him with total contempt and a little affection, and does not raise his voice.\n",
+  "profile_file": "docs/stories/short-infinite-yous/voices/profiles/sci2-d-enceladus.md"
+ },
+ "settings": {
+  "voice": "Enceladus",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

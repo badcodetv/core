@@ -26,3 +26,8 @@
  "maxMode": false
 }
 ```
+
+## Voices (2026-11-15)
+
+- **The lad: PICKED by Jack (voice page round 1, 2026-11-15): a, Puck**, profile `voices/profiles/lad-a-puck.md` (a Leeds lad, cocky, loud, laughing), line take Desktop `shorts\infinite-yous\audio\casting\lad-a-puck.wav` (gemini-3.1-flash-tts-preview).
+- **The BadCode figure: not picked.** Jack on round 1: "please do more sort of rick from rick and morty, deadpan sarcasm" (a jaded, burnt-out genius; the character is never named in a profile). Round 2 takes d (Enceladus) and e (Algieba) on the voice page https://claude.ai/artifact/4KMUnm467NUoLoGYffSWbs.
