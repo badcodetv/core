@@ -25,3 +25,9 @@ Kai, 2026-11-13 meeting: an arms-deal envelope lands on a desk, stamped APPROVED
 | Mood board round 1 | 🟡 https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe (clean room, 9 stills), awaiting Jack's votes |
 | Mood board round 2 (Sting version) | ✅ Jack: column b (painted chapter cards); S1 SU2-b, S2 PK2-b picked |
 | Mood board round 3 | 🟡 same link: S3 Switch ×3 (more like the Sting), S4 SG3-b mask/skin fixed, awaiting Jack |
+
+## Resume here (2026-11-15)
+
+1. **Version:** the Sting switcheroo (Jack: "do a 'the sting' switcharoo version"), 4 painted 1930s chapter cards (column b, Jack's pick): S1 THE COUNTER (SU2-b ✅), S2 THE PICK (PK2-b ✅), S3 THE SWITCH (SW3-a / b / c, awaiting pick), S4 THE PAY-OFF (SG3-b, mask + wrists fixed, awaiting Jack's check). Round 1 (the straight version, A-C) is parked.
+2. **Line on S4:** "They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction."
+3. **Next:** read the board's votes into `feedback/moodboard-r3/`, then animate the four cards (`scene-animation`); swap the dollar-looking notes for invented ones; music = invented period piano (not Joplin, not the film's score); voice for the line (`voice-casting`); `marketing-gatekeeper` on naming the parties before posting.
