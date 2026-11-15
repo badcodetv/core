@@ -56,9 +56,20 @@
    "blurb": "BadCode rips back the curtain and catches the house: blue tie and red tie shaking hands over the stamped rifle crate and the new money. Spoken (and optionally on screen): \"They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\""
   }
  ],
- "moodboard_intro": "Round 2, THE STING VERSION (Jack: \"do a 'the sting' switcharoo version… match the style and story\"; clean room). A 1930s backstreet betting parlour where the race is the election: S1 the dealer offers two envelopes at evens, S2 the working man picks one in good faith, S3 under the counter both hold the same arms order No. 0417 next to fresh money, S4 BadCode rips back the curtain on blue tie and red tie shaking hands over the rifle crate. Line: \"They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\" Columns cut as one short: a = period film still, b = painted 1930s chapter card, c = flashbulb evidence photo (red stamps the only colour). ⚠ S4: every mask's triangle came out wrong (centred or missing); re-rolled once you pick a column.Round 1 (the straight version, A-C) stays on the page above. 🔴 Owed before posting: marketing-gatekeeper on naming the two parties.",
+ "moodboard_intro": "Round 3 (Jack's notes on round 2): column b, the painted chapter cards, is the look. S1 and S2 picked. S3 The Switch: \"this style but more like the Sting\": a sealed writer researched the film's cons (the wire, the bundle switch, the shell game) and staged three switches: a the dealer's hands (both envelopes hold the same order, a spare up his cuff), b the wire room (both envelopes strung to one telegraph key, shills in the doorway), c the shell game with bowler hats (same crate under both). S4 The Pay-off: \"no skin for the badcode guy and fix the mask\": mask fixed to the brand design, gauntlet gloves, the stray 'CHAPTER TITLE' gone. Note: the banknotes still look a bit like dollars; they get invented notes in the animation pass.",
  "boards": {
   "moodboard": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe"
  },
- "line": "They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction."
+ "line": "They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.",
+ "board_round": 3,
+ "picked": [
+  [
+   "SU2-b",
+   "S1. The set-up"
+  ],
+  [
+   "PK2-b",
+   "S2. The pick"
+  ]
+ ]
 }

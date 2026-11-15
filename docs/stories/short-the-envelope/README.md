@@ -23,4 +23,5 @@ Kai, 2026-11-13 meeting: an arms-deal envelope lands on a desk, stamped APPROVED
 | --- | --- |
 | Set up | ✅ 2026-11-15 (Jack: "make all those stills for each and put them on the new scene skill… use your best judgement, don't ask questions") |
 | Mood board round 1 | 🟡 https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe (clean room, 9 stills), awaiting Jack's votes |
-| Mood board round 2 (Sting version) | 🟡 same link, 12 stills (4 beats × 3 looks), awaiting Jack; S4 masks need a re-roll |
+| Mood board round 2 (Sting version) | ✅ Jack: column b (painted chapter cards); S1 SU2-b, S2 PK2-b picked |
+| Mood board round 3 | 🟡 same link: S3 Switch ×3 (more like the Sting), S4 SG3-b mask/skin fixed, awaiting Jack |

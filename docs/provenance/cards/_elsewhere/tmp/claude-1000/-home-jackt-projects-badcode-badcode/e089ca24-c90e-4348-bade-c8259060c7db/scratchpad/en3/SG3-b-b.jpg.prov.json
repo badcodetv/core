@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/en3/SG3-b-b.jpg",
+ "made": "2026-11-15T14:48:54.288Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the curtain-puller's balaclava so it is the same design as the mask in the second image: a large white ring stitched round the whole face, and one small red triangle with rounded corners, pointing down, sitting high inside the ring on the right-hand side of the picture; no eye, nose or mouth holes. Keep the mask black, painted in the same gouache style. His coat sleeves come right down over the wrists and the gloves tuck into them, so no skin shows anywhere. Also remove the small words \"CHAPTER TITLE\" above the title. Keep everything else in the image exactly the same, preserving the original style, lighting, lettering and composition. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode-flow-refs/en/SG2-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-flow-refs/en/SG2-b.jpg",
+   "/home/jackt/.cache/badcode-flow-refs/en/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "6ccbe92b-29cb-4da7-a6a5-5a1b685215c4"
+}

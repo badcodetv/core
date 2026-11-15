@@ -14,5 +14,13 @@
   "url": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
   "what": "Sting switcheroo version, 4 beats x 3 looks (clean room)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-envelope/scenes/the-envelope <out.html>"
+ },
+ {
+  "at": "2026-11-15T14:54:13+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
+  "what": "Switch x3 more like the Sting (clean room), S4 mask + wrists fixed",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-envelope/scenes/the-envelope <out.html>"
  }
 ]
