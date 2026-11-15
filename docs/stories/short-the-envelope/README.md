@@ -33,4 +33,4 @@ Kai, 2026-11-13 meeting: an arms-deal envelope lands on a desk, stamped APPROVED
 2. **Clips:** 2 options per card, 8 Omni clips in `video/`, all checked (mask holds on S4), imported to Premiere bin `the-envelope clips`, not placed. Picks page https://claude.ai/artifact/SYmKwEYiBZxixJHpyduGod. Known flaws: 03-a sets the hats down rather than swapping; 04-b gives the two men invented faces.
 3. **Picked:** 01-a, 02-b, 03-b, 04-b (no re-rolls).
 4. **Sound picked:** hotclub2 (Suno 0408a874) + voice b Iapetus (`sound.md`).
-5. **Rough cut 1** (2026-11-15): https://claude.ai/artifact/3zxgwRFeNQdFYHWpjuE6Cp, 15 s, built by `scripts/shorts/envelope_cut.py`, awaiting Jack's notes. **Next:** dump notes (`feedback/timeline-r1/`), round 2, then Premiere (`short-the-envelope-1-the-envelope-r<N>`) when asked. `marketing-gatekeeper` on naming the parties before posting.
+5. **PARKED 2026-11-15** at rough cut 1 (https://claude.ai/artifact/3zxgwRFeNQdFYHWpjuE6Cp). Jack: "this one doesnt work lets do a different short" (no reason given; ask before reviving).
