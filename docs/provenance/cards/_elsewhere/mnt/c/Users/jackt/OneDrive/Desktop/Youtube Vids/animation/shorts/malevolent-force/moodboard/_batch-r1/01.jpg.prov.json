@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/_batch-r1/01.jpg",
+ "made": "2026-11-15T12:41:03.547Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Create a vertical 9:16 hand-cut linocut print in two colours, black ink and one sickly mustard yellow, on rough cream paper with visible gouge marks, uneven ink coverage and slight misregistration. A tiny corner shop seen from its doorway at night: shelves of tins rendered in hatched lines, a loaf of plain white bread centred on the counter under a single hanging bulb, the only yellow in the picture. A price card propped against the loaf reads \"50p\" in chunky hand-carved letters. The shop's back wall is solid black ink, and in that black the carver has left the faint unprinted outline of a doorway that should not be there. Folk-horror woodcut feeling, stark and simple. Thanks.",
+ "source_id": "3600a3ff-67d5-40de-9ba2-47c72f19e4b5"
+}

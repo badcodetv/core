@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/_batch-r1/00.jpg",
+ "made": "2026-11-15T12:41:03.536Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Generate a vertical 9:16 photograph inside a cramped British corner shop at closing time. A single loaf of plain white sliced bread in a waxed paper wrapper sits alone on a scuffed formica counter, a handwritten orange star sticker on it reading \"50p\" in black marker. One fluorescent tube overhead buzzes greenish; everything beyond its reach drops into thick black. Behind the counter, a bead curtain into the stockroom hangs very slightly stirred, the darkness through it deep and patient. Shot low at counter height on a 35mm lens at f/2, Kodak 500T tungsten film pushed one stop, heavy grain, soft halation round the tube, faded lino floor, dusty crisp boxes. Ordinary, quiet, and somehow wrong. Thanks.",
+ "source_id": "a8d3cc60-9190-402f-ba38-697cc2f0564c"
+}

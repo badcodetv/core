@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/05.jpg",
+ "made": "2026-11-15T12:35:23.578Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 macro photograph of the same handmade stop-motion miniature set: the tiny balsa civil-service desk, felt blotter, thumbnail-sized brass lamp glowing warm. A first paper envelope already lies on the desk; a second hand-cut envelope hangs mid-drop on a visible thread right above it. The second one reads \"O.H.M.S.\" with a hand-painted crest of a crowned key between two herons, and a red stamp painted in careful block letters reading exactly \"APPROVED BY THE LABOUR PARTY\". Plasticine paperweight with fingerprints, specks of dust, shallow depth of field from a 100mm macro lens, the painted Whitehall window backdrop soft behind. Thanks.",
+ "source_id": "bc5f2eac-8f9a-4cdf-a5a7-0eed5d2486fe"
+}

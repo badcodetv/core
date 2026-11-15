@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-15T12:38:11+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
+  "what": "Mood board round 1: clean room, 9 stills, three looks (spy-film insert / linocut / stop-motion miniature) across three beats",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-envelope/scenes/the-envelope <out.html>"
+ }
+]

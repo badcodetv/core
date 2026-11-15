@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/_batch-r1/08.jpg",
+ "made": "2026-11-15T12:41:03.625Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Create a vertical 9:16 airbrushed painting in the style of a 1980s VHS horror video box cover, with worn cardboard edges, a creased spine and tracking-scratch scuffs. Centre: a loaf of plain white bread on a corner-shop counter, glowing under a single hard spotlight, its price sticker reading \"£50\" in dripping red horror lettering. Behind and above it, a monstrous shadow fills the whole sky of the painting, its outline formed by a giant money printing press, rollers turning, sheets of banknotes pouring like storm clouds over a tiny row of terraced houses; in front of the press stands an empty leather chair. No face anywhere, only the silhouette. Lurid red and electric blue palette, painted rim light, saturated and pulpy. Thanks.",
+ "source_id": "0c5482fc-04da-468b-96a9-94167379d1da"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/06.jpg",
+ "made": "2026-11-15T12:35:23.588Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 photograph in the style of a 1970s British industrial documentary: a long, low banknote press hall under buzzing fluorescent tubes, a huge green-painted sheet-fed printing press running at speed, motion blur on its rollers. Uncut sheets of invented banknotes, in a muted purple and olive with an engraved heron and a crowned key, spill out of the delivery end and stack into a tall leaning pile. Nobody stands at the controls; an empty swivel chair, a clipboard and two buff envelopes stamped in red lie forgotten on a steel bench in the foreground. Kodak 35mm stock, 28mm lens, fine grain, oil sheen on the concrete floor. Thanks.",
+ "source_id": "dd8a2a22-20a9-4378-8c81-81ac12d9568b"
+}

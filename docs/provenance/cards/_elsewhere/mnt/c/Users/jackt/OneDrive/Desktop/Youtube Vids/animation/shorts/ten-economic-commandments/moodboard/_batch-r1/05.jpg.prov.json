@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/_batch-r1/05.jpg",
+ "made": "2026-11-15T12:46:09.988Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 film still from a late-90s music video, shot on a fisheye from the floor looking up. A cavernous currency print hall at night, teal and magenta gels, thick haze lit by one hard backlight. A man in a tailored grey suit stands with arms flung wide as fresh banknotes pour off a roaring press and rain over him in slow motion, motion-blurred streaks. His face, turned upward and partly hidden by flying notes, wears a dazed, delighted grin. Ink stains on his white cuffs. Grain, light flare, slightly crushed blacks, curved edges of the fisheye. Thanks.",
+ "source_id": "b9581cc0-1193-4071-90b3-4d90d813a8ba"
+}

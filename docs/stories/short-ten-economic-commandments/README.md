@@ -20,4 +20,4 @@ Kai and Jack, 2026-11-13 meeting: a parody of Biggie's *Ten Crack Commandments* 
 | Stage | State |
 | --- | --- |
 | Set up | ✅ 2026-11-15 (Jack: "make all those stills for each and put them on the new scene skill… use your best judgement, don't ask questions") |
-| Mood board round 1 | 🟡 clean room, see `scenes/ten-economic-commandments/picks.md` |
+| Mood board round 1 | 🟡 https://claude.ai/artifact/DL4FFqF8ia1K2GerAX4uBi (clean room, 9 stills), awaiting Jack's votes |

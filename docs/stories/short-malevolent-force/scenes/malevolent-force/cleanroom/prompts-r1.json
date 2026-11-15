@@ -1,0 +1,71 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write narratively (subject + action + location + composition + style), not keyword lists; put on-image words in quotes and name the typography; name lighting setups, lens/aperture, film stock or camera type and materials; describe what you want rather than negatives ('empty street' not 'no cars'); 9:16 is a native ratio",
+    "https://dev.to/googleai/getting-the-most-out-of-nano-banana-2-502k — Google AI's Nano Banana 2 (Gemini 3.1 Flash Image) post: the default Gemini image model, strong text rendering; only the summary was read, not the full post",
+    "https://www.hedra.com/blog/make-ai-images-look-like-real-photos-prompting — naming one specific camera, lens, film stock and light source stops the model averaging toward a generic look; avoid hype words (8k, masterpiece, flawless) that push to glossy CGI",
+    "https://blog.picassoia.com/how-to-avoid-the-ai-look-in-your-images — deliberate imperfection (grain, scuffs, uneven light, real-world texture) reads as real; unflattering, motivated light beats 'good lighting'",
+    "https://budgetpixel.com/blog/de-cgiing-practical-effects-prompting-1970s-animatronic-dark-fantasy-in-nano-banana — Nano Banana responds well to naming a physical, practical-effects medium (miniatures, puppets) to escape the CGI sheen",
+    "https://andrew-wyatt-2yoa.squarespace.com/blog/2016/6/21/reach-hither-thy-hand-and-believe-the-conjuring-2 — The Conjuring 2 (Wan / DP Don Burgess): its best passages are sustained quiet with a character staring into a sea of threatening shadow; extreme low light and negative space; nods to The Haunting's wallpaper shadow play",
+    "https://hollywoodreporter.com/review/conjuring-2-film-review-898684 — Burgess's camera prowls and swoops; dread built from slow movement, sound and ordinary London locations",
+    "https://journal.uir.ac.id/index.php/j-lelc/article/download/27003/9400 — study of the first Conjuring's colour and lighting: negative space makes the audience fill the void with their own fears",
+    "https://londonmuseum.org.uk/collections/v/object-743559/dogu-gida-bazaar-stoke-newington-road — 'London After Dark' 1994: small London grocers lit only by available street and interior light, a documentary reference for the corner shop at night",
+    "https://romanroadlondon.com/?p=13178 — 'Lights in the darkness – the corner shops of Bow': the corner shop as the one lit box on a dark street"
+  ],
+  "notes": "Nine different looks, none repeated across beats: A = 35mm tungsten-film photograph / linocut print / infrared CCTV still; B = disposable-camera flash snapshot / stop-motion felt-and-clay miniature / 1950s pulp horror comic panel; C = wide anamorphic photograph lit by the fridge / 1920s spirit-photograph double exposure / airbrushed 1980s VHS horror cover. Photographic: PR1-a, PR1-c, CL1-a, FO1-a; non-realist: PR1-b, CL1-b, CL1-c, FO1-b, FO1-c. Every price is in quotes so Nano Banana renders it; labels to check by eye: 50p, £1, £5, £50 (the Fredo-style bar's labels are small jokes: 10p, 20p, 35p, £2, £9, £20, and they are optional; drop them if they muddle the main price). The bar is always an 'unbranded small purple chocolate bar with a plain wrapper'. The force is never a person: shadows, stirring curtains, a printing press with an empty chair, banknote 'ectoplasm'. No faces anywhere; the only hand (CL1-a) is cropped at the wrist. FO1-a and FO1-c put the money printer on screen as the ghost's source with an empty chair and untouched mug, i.e. 'whoever decides that day', unseen. Conjuring 2 notes are from reviews only; no interview with the DP about lighting was found, so 'single practical light + negative space' is a critics' reading, not a documented method. Every prompt ends with 'Thanks.'",
+  "stills": [
+    {
+      "beat": "price50",
+      "id": "PR1-a",
+      "look": "1970s tungsten 35mm, one flickering tube",
+      "prompt": "Generate a vertical 9:16 photograph inside a cramped British corner shop at closing time. A single loaf of plain white sliced bread in a waxed paper wrapper sits alone on a scuffed formica counter, a handwritten orange star sticker on it reading \"50p\" in black marker. One fluorescent tube overhead buzzes greenish; everything beyond its reach drops into thick black. Behind the counter, a bead curtain into the stockroom hangs very slightly stirred, the darkness through it deep and patient. Shot low at counter height on a 35mm lens at f/2, Kodak 500T tungsten film pushed one stop, heavy grain, soft halation round the tube, faded lino floor, dusty crisp boxes. Ordinary, quiet, and somehow wrong. Thanks."
+    },
+    {
+      "beat": "price50",
+      "id": "PR1-b",
+      "look": "Two-colour linocut print, ink and bone",
+      "prompt": "Create a vertical 9:16 hand-cut linocut print in two colours, black ink and one sickly mustard yellow, on rough cream paper with visible gouge marks, uneven ink coverage and slight misregistration. A tiny corner shop seen from its doorway at night: shelves of tins rendered in hatched lines, a loaf of plain white bread centred on the counter under a single hanging bulb, the only yellow in the picture. A price card propped against the loaf reads \"50p\" in chunky hand-carved letters. The shop's back wall is solid black ink, and in that black the carver has left the faint unprinted outline of a doorway that should not be there. Folk-horror woodcut feeling, stark and simple. Thanks."
+    },
+    {
+      "beat": "price50",
+      "id": "PR1-c",
+      "look": "Night-vision CCTV still from a ceiling corner",
+      "prompt": "Generate a vertical 9:16 security-camera frame from a cheap ceiling-corner CCTV camera in a small British convenience store after midnight. Grey-green infrared monochrome, fisheye distortion bending the shelf rows, blown-out highlights, video noise and a faint horizontal rolling band. A white timestamp in a blocky digital font in the top corner reads \"03:12:47\". In the empty aisle below, a shelf-edge label under a single loaf of plain white bread reads \"50p\", legible in the glare; beside it an unbranded small purple chocolate bar with a plain wrapper, labelled \"10p\". The far end of the aisle smears into a soft dark blur, as if something is standing too close to the lens. Shop completely deserted. Thanks."
+    },
+    {
+      "beat": "climb",
+      "id": "CL1-a",
+      "look": "Disposable-camera flash snapshot, label over label",
+      "prompt": "Generate a vertical 9:16 snapshot taken on a cheap disposable film camera with harsh on-camera flash, inside a British corner shop at night. Close on the bread shelf: one last loaf of plain white bread, its shelf-edge label stacked with stickers, a peeled \"£1\" sticker half covered by a fresh bright one reading \"£5\" in bold black print. A shopper's hand, cropped at the wrist, hovers over the loaf. Flash falloff is brutal: the shelves two metres back are already near black, and at the edge of the light the dark has a shape in it, taller than the shelving, impossible to read. Red-eye colour cast, slight motion blur, dust specks on the print, date stamp in orange in the corner. Thanks."
+    },
+    {
+      "beat": "climb",
+      "id": "CL1-b",
+      "look": "Stop-motion miniature, felt, clay and one bulb",
+      "prompt": "Create a vertical 9:16 photograph of a handmade stop-motion miniature set: a tiny British corner shop built from cardboard, felt and plasticine, with visible thumbprints in the clay and fraying felt edges. A loaf of plain white bread the size of a fingertip sits on the counter with a little paper price flag reading \"£5\"; a crossed-out paper flag reading \"£1\" lies on the floor. An unbranded small purple chocolate bar with a plain wrapper sits beside it, flagged \"£2\". Lit by a single miniature filament bulb, so the set falls into shadow fast; the painted backdrop of the shop's rear wall is darker than it should be, and the shelving's shadow leans toward the loaf. Macro lens, shallow depth of field, practical-effects charm turned uneasy. Thanks."
+    },
+    {
+      "beat": "climb",
+      "id": "CL1-c",
+      "look": "1950s pulp horror comic panel, halftone",
+      "prompt": "Create a vertical 9:16 single panel from a lurid 1950s pulp horror comic book, printed on cheap yellowed newsprint with coarse halftone dots, thick brush inking and off-register flat colour in acid green, bruise purple and blood orange. A tiny corner shop interior seen from a low dramatic angle: the shelves warp upward like a cathedral, the overhead light swings, long green shadows stretch across the floor toward a loaf of plain white bread on the counter. Its price tag reads \"£5\" in big hand-lettered comic type, a smaller scrawled \"£1\" struck through above it. A caption box in the corner, in yellow, reads \"THE NEXT DAY...\". The shadows behind the counter curl like fingers with no hand attached. Thanks."
+    },
+    {
+      "beat": "force",
+      "id": "FO1-a",
+      "look": "Wide anamorphic, lit only by the fridge",
+      "prompt": "Generate a vertical 9:16 photograph of a British corner shop in near-total darkness, lit only by the cold blue-white glow of a drinks fridge humming in the corner. The shelves are bare except for one loaf of plain white bread, its shelf label reading \"£50\" in crisp black print. Through the open stockroom door at the back, a small office printing press is running by itself, spilling sheets of fresh banknotes onto the floor in a soft paper drift; an empty office chair faces it, a full mug of tea untouched beside the machine. Nobody is there. Anamorphic lens, oval bokeh, deep negative space, Kodak 500T grain, slow-shutter blur on the moving paper. Thanks."
+    },
+    {
+      "beat": "force",
+      "id": "FO1-b",
+      "look": "1920s spirit photograph, double exposure",
+      "prompt": "Create a vertical 9:16 antique 1920s spirit photograph: a silver gelatin print with foxing, a cracked corner, brown sepia tone and soft vignette, made as an in-camera double exposure. The scene is a plain shop counter with a loaf of plain white bread and a small handwritten card reading \"£50\" in faded copperplate ink. Rising from the loaf and filling the upper frame is translucent ghostly ectoplasm, but it is made of countless overlapping banknotes, faint and fluttering, curling into the vague suggestion of a vast shape with no face. Beside the loaf, an unbranded small purple chocolate bar with a plain wrapper, its card reading \"£20\". Long-exposure blur, Victorian séance atmosphere, eerie and authentic. Thanks."
+    },
+    {
+      "beat": "force",
+      "id": "FO1-c",
+      "look": "Airbrushed 1980s VHS horror cover",
+      "prompt": "Create a vertical 9:16 airbrushed painting in the style of a 1980s VHS horror video box cover, with worn cardboard edges, a creased spine and tracking-scratch scuffs. Centre: a loaf of plain white bread on a corner-shop counter, glowing under a single hard spotlight, its price sticker reading \"£50\" in dripping red horror lettering. Behind and above it, a monstrous shadow fills the whole sky of the painting, its outline formed by a giant money printing press, rollers turning, sheets of banknotes pouring like storm clouds over a tiny row of terraced houses; in front of the press stands an empty leather chair. No face anywhere, only the silhouette. Lurid red and electric blue palette, painted rim light, saturated and pulpy. Thanks."
+    }
+  ]
+}

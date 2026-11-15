@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/01.jpg",
+ "made": "2026-11-15T12:35:23.532Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 linocut print in two inks only, black and a hot vermilion red, on off-white rough rag paper with visible gouge marks and slightly uneven ink. Seen from directly above: a large envelope falling flat onto a desk, carved speed lines behind it, a single bare hand in a shirt cuff just letting go at the top edge. The envelope carries a small carved crest of a crowned key between two herons and the words \"O.H.M.S.\". Stamped across it in red, in chunky carved block letters, exactly \"APPROVED BY THE CONSERVATIVE PARTY\". The desk grain is cut as bold parallel lines; a fountain pen and a blotter sit beside it. Misregistration of the red by a few millimetres, like a hand-pulled print. Thanks.",
+ "source_id": "c2115874-4e90-4e83-82b1-4db4f19669cd"
+}

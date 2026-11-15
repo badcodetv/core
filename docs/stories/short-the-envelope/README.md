@@ -20,4 +20,4 @@ Kai, 2026-11-13 meeting: an arms-deal envelope lands on a desk, stamped APPROVED
 | Stage | State |
 | --- | --- |
 | Set up | ✅ 2026-11-15 (Jack: "make all those stills for each and put them on the new scene skill… use your best judgement, don't ask questions") |
-| Mood board round 1 | 🟡 clean room, see `scenes/the-envelope/picks.md` |
+| Mood board round 1 | 🟡 https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe (clean room, 9 stills), awaiting Jack's votes |

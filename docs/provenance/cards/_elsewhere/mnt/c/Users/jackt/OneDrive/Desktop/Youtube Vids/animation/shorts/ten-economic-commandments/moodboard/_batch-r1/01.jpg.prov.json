@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/_batch-r1/01.jpg",
+ "made": "2026-11-15T12:46:09.941Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 image that looks like a 1997 photocopied mixtape flyer pinned to a pub noticeboard: black toner on cheap pink paper, streaky copier lines, staple holes, one corner torn. Heavy hand-drawn bubble lettering at the top reads \"10 MONEY COMMANDMENTS\". Below, ten numbered boxes of scrawled marker cartoons: a money printer with a padlock, a stack of banknotes with a skull, a pointing finger, a dollar-sign crown, a suited hand sneaking a note. The art is crude, confident, cut-and-paste, photographed flat under a fluorescent tube with a slight glare. Thanks.",
+ "source_id": "883d8d2a-b918-47dd-a022-0c7410f4bb3b"
+}

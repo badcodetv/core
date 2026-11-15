@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/_batch-r1/05.jpg",
+ "made": "2026-11-15T12:41:03.592Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Create a vertical 9:16 single panel from a lurid 1950s pulp horror comic book, printed on cheap yellowed newsprint with coarse halftone dots, thick brush inking and off-register flat colour in acid green, bruise purple and blood orange. A tiny corner shop interior seen from a low dramatic angle: the shelves warp upward like a cathedral, the overhead light swings, long green shadows stretch across the floor toward a loaf of plain white bread on the counter. Its price tag reads \"£5\" in big hand-lettered comic type, a smaller scrawled \"£1\" struck through above it. A caption box in the corner, in yellow, reads \"THE NEXT DAY...\". The shadows behind the counter curl like fingers with no hand attached. Thanks.",
+ "source_id": "30a4017a-f3d3-4c8e-880a-d7561e05dc2d"
+}

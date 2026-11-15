@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/07.jpg",
+ "made": "2026-11-15T12:35:23.602Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 linocut print in two inks only, black and hot vermilion red, on rough off-white rag paper with visible gouge marks. A monstrous carved printing press fills the frame, gears and rollers cut as bold black shapes, carved motion lines showing it running flat out. From its mouth pours an endless ribbon of invented banknotes, each simply cut with a heron and a crowned key and printed in red, curling up and out of the top of the frame. At its foot, small and flattened, two envelopes lie on the floor beside a tipped-over ballot box. The red slightly out of register, like a hand-pulled proof. Thanks.",
+ "source_id": "595e7fca-7160-4f36-b0d2-a37b6132c911"
+}

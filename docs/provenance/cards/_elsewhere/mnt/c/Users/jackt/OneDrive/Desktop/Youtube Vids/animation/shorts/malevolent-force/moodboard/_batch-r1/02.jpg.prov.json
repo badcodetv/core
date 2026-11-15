@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/_batch-r1/02.jpg",
+ "made": "2026-11-15T12:41:03.558Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Generate a vertical 9:16 security-camera frame from a cheap ceiling-corner CCTV camera in a small British convenience store after midnight. Grey-green infrared monochrome, fisheye distortion bending the shelf rows, blown-out highlights, video noise and a faint horizontal rolling band. A white timestamp in a blocky digital font in the top corner reads \"03:12:47\". In the empty aisle below, a shelf-edge label under a single loaf of plain white bread reads \"50p\", legible in the glare; beside it an unbranded small purple chocolate bar with a plain wrapper, labelled \"10p\". The far end of the aisle smears into a soft dark blur, as if something is standing too close to the lens. Shop completely deserted. Thanks.",
+ "source_id": "41179c86-c2b2-4aae-b41c-20c19b1ea213"
+}

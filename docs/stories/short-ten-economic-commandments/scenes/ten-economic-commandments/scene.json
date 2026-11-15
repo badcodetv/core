@@ -1,36 +1,39 @@
 {
- "story": "short-ten-economic-commandments",
- "scene": "ten-economic-commandments",
- "prefix": "ec",
- "title": "Ten Economic Commandments",
- "heading": "BadCode Shorts <span class=\"tri\">▲</span> Ten Economic Commandments",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments",
- "video": {
-  "model": "Omni 1.2 Flash",
-  "aspect": "9:16",
-  "mode": "Frames",
-  "duration": 8
- },
- "flow_project": "17b708f8-d9d6-41ae-b562-8d161797b542",
- "beats": [
-  {
-   "key": "rules",
-   "at": "0:00",
-   "name": "A. The commandments",
-   "blurb": "The rulebook of the money game, laid down like a 90s street-rap code."
+  "story": "short-ten-economic-commandments",
+  "scene": "ten-economic-commandments",
+  "prefix": "ec",
+  "title": "Ten Economic Commandments",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Ten Economic Commandments",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments",
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
   },
-  {
-   "key": "supply",
-   "at": "0:05",
-   "name": "B. Own supply",
-   "blurb": "\"Never get high on your own supply\": the people at the printer, high on fresh money."
-  },
-  {
-   "key": "fix",
-   "at": "0:11",
-   "name": "C. No human hands",
-   "blurb": "The fix: a printer no human controls."
+  "flow_project": "17b708f8-d9d6-41ae-b562-8d161797b542",
+  "beats": [
+    {
+      "key": "rules",
+      "at": "0:00",
+      "name": "A. The commandments",
+      "blurb": "The rulebook of the money game, laid down like a 90s street-rap code."
+    },
+    {
+      "key": "supply",
+      "at": "0:05",
+      "name": "B. Own supply",
+      "blurb": "\"Never get high on your own supply\": the people at the printer, high on fresh money."
+    },
+    {
+      "key": "fix",
+      "at": "0:11",
+      "name": "C. No human hands",
+      "blurb": "The fix: a printer no human controls."
+    }
+  ],
+  "moodboard_intro": "Round 1 (clean room: a sealed writer researched the late-90s East Coast rap video and album-art look and Nano Banana 2, nothing from the repo; no real rapper, no real currency). Nine looks: fisheye stoop / photocopied mixtape flyer / shiny-suit studio for the commandments; flash party snapshot / two-ink risograph / gel-lit print hall for 'own supply'; sealed press in a glass room / banknote engraving / VHS key-down-the-drain for the fix. Lyrics are still Jack's. Vote This / Maybe / No per still and note any beat.",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/DL4FFqF8ia1K2GerAX4uBi"
   }
- ],
- "moodboard_intro": "Round 1: clean-room stills, three genuinely different looks per beat. Vote This / Maybe / No and leave a note per beat."
 }

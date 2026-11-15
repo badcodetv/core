@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/04.jpg",
+ "made": "2026-11-15T12:35:23.566Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 linocut print in two inks only, black and a hot vermilion red, on off-white rough rag paper with gouge marks and uneven ink. Seen from directly above, the same carved desk with its fountain pen and blotter: a second envelope falls flat onto the first, carved speed lines behind it, a hand in a different shirt cuff letting go at the top edge. It carries the same small carved crest of a crowned key between two herons and \"O.H.M.S.\". Stamped across it in red, in chunky carved block letters, exactly \"APPROVED BY THE LABOUR PARTY\". Bold parallel lines for the desk grain, the red printed a few millimetres out of register, like a hand-pulled proof. Thanks.",
+ "source_id": "63911d36-c878-4f90-ab5a-b3a1b833f093"
+}

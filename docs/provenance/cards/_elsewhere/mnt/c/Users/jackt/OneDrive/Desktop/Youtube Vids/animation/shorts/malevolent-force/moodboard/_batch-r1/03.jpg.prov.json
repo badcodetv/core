@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/_batch-r1/03.jpg",
+ "made": "2026-11-15T12:41:03.571Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Generate a vertical 9:16 snapshot taken on a cheap disposable film camera with harsh on-camera flash, inside a British corner shop at night. Close on the bread shelf: one last loaf of plain white bread, its shelf-edge label stacked with stickers, a peeled \"£1\" sticker half covered by a fresh bright one reading \"£5\" in bold black print. A shopper's hand, cropped at the wrist, hovers over the loaf. Flash falloff is brutal: the shelves two metres back are already near black, and at the edge of the light the dark has a shape in it, taller than the shelving, impossible to read. Red-eye colour cast, slight motion blur, dust specks on the print, date stamp in orange in the corner. Thanks.",
+ "source_id": "ef564c14-cbf7-458d-906a-f1b1d5266eb1"
+}

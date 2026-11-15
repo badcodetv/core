@@ -1,36 +1,39 @@
 {
- "story": "short-the-envelope",
- "scene": "the-envelope",
- "prefix": "en",
- "title": "The Envelope",
- "heading": "BadCode Shorts <span class=\"tri\">▲</span> The Envelope",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope",
- "video": {
-  "model": "Omni 1.2 Flash",
-  "aspect": "9:16",
-  "mode": "Frames",
-  "duration": 8
- },
- "flow_project": "9cc5b19c-6911-4463-83ac-69edc9e2878c",
- "beats": [
-  {
-   "key": "tory",
-   "at": "0:00",
-   "name": "A. Approved (1)",
-   "blurb": "An arms-deal envelope lands on a desk, stamped APPROVED BY THE CONSERVATIVE PARTY."
+  "story": "short-the-envelope",
+  "scene": "the-envelope",
+  "prefix": "en",
+  "title": "The Envelope",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> The Envelope",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope",
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
   },
-  {
-   "key": "labour",
-   "at": "0:04",
-   "name": "B. Approved (2)",
-   "blurb": "The next one lands: APPROVED BY THE LABOUR PARTY."
-  },
-  {
-   "key": "print",
-   "at": "0:08",
-   "name": "C. Anyway",
-   "blurb": "\"They're going to print the money anyway.\""
+  "flow_project": "9cc5b19c-6911-4463-83ac-69edc9e2878c",
+  "beats": [
+    {
+      "key": "tory",
+      "at": "0:00",
+      "name": "A. Approved (1)",
+      "blurb": "An arms-deal envelope lands on a desk, stamped APPROVED BY THE CONSERVATIVE PARTY."
+    },
+    {
+      "key": "labour",
+      "at": "0:04",
+      "name": "B. Approved (2)",
+      "blurb": "The next one lands: APPROVED BY THE LABOUR PARTY."
+    },
+    {
+      "key": "print",
+      "at": "0:08",
+      "name": "C. Anyway",
+      "blurb": "\"They're going to print the money anyway.\""
+    }
+  ],
+  "moodboard_intro": "Round 1 (clean room: a sealed writer researched spy-film inserts, Whitehall export paperwork and Nano Banana 2, nothing from the repo). Three looks carried across all three beats so A and B rhyme: a = 1970s Whitehall spy-film insert on 35mm, b = two-colour linocut, c = stop-motion miniature. Pick a column and it cuts as one short. Vote This / Maybe / No and note any beat. 🔴 Owed before posting: marketing-gatekeeper on naming the two parties.",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe"
   }
- ],
- "moodboard_intro": "Round 1: clean-room stills, three genuinely different looks per beat. Vote This / Maybe / No and leave a note per beat."
 }

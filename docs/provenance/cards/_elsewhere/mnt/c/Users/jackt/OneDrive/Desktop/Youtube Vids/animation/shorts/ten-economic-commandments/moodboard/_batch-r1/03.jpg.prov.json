@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/_batch-r1/03.jpg",
+ "made": "2026-11-15T12:46:09.966Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 snapshot from a 1990s point-and-shoot with harsh on-camera flash, orange date stamp \"97 11 13\" in the corner, red-eye, flat shadows behind heads. In a wood-panelled boardroom, three anonymous middle-aged men in loosened ties sprawl on the table among uncut sheets of fresh banknotes from an unmarked currency, ink still glossy. One holds a sheet to his face and inhales deeply, eyes rolled up; another wears a sheet as a scarf, grinning. Behind them a hulking printing press glows through an open door. Cigarette smoke, spilled whisky, slightly tilted frame. Thanks.",
+ "source_id": "8420efd5-1628-4f24-9bf5-dff05501192c"
+}

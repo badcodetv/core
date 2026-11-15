@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/_batch-r1/07.jpg",
+ "made": "2026-11-15T12:41:03.614Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Create a vertical 9:16 antique 1920s spirit photograph: a silver gelatin print with foxing, a cracked corner, brown sepia tone and soft vignette, made as an in-camera double exposure. The scene is a plain shop counter with a loaf of plain white bread and a small handwritten card reading \"£50\" in faded copperplate ink. Rising from the loaf and filling the upper frame is translucent ghostly ectoplasm, but it is made of countless overlapping banknotes, faint and fluttering, curling into the vague suggestion of a vast shape with no face. Beside the loaf, an unbranded small purple chocolate bar with a plain wrapper, its card reading \"£20\". Long-exposure blur, Victorian séance atmosphere, eerie and authentic. Thanks.",
+ "source_id": "2c291f3c-c470-4a82-812d-4f76d3f76cb0"
+}

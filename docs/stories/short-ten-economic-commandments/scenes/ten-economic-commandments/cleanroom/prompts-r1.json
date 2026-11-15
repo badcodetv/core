@@ -1,0 +1,70 @@
+{
+  "research": [
+    "https://dev.to/googleai/getting-the-most-out-of-nano-banana-2-502k — Google's own post: NB2 (Gemini 3.1 Flash Image) likes long descriptive prompts with subject, setting, style and constraints; camera artifacts (wide-angle barrel distortion, high-ISO noise) can be asked for; renders literal text well; 9:16 and extreme ratios supported; Thinking mode off by default.",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google Cloud guide (seen as summary): concrete detail over decoration, specific camera/composition language, positive framing.",
+    "https://miraflow.ai/blog/film-grain-imperfect-photo-ai-prompts-2026 — avoid '8k, flawless, masterpiece, ultra-realistic' (they push glossy CGI); name a specific imperfection; don't stack every effect.",
+    "https://kompozy.io/how-to/make-ai-images-look-less-generic — name a lens and a film stock rather than a 'style'; centred symmetrical eye-contact compositions read as staged.",
+    "https://cloudinary.com/guides/image-generation/how-to-make-ai-images-look-real — motivated, directional light with real shadows separates a photo from a render.",
+    "https://vice.com/en/article/hype-williams-changed-hip-hop-forever-with-these-10-videos — late-90s rap video look: fisheye, low angles, saturated colour and gels, shiny suits, slow motion, widescreen/letterbox.",
+    "https://hiphopgoldenage.com/list/5-hype-williams-directed-videos-that-defined-the-1990s/ — fisheye 'bends the world' and makes ordinary places cartoonish; shiny-suit era.",
+    "https://rockthebells.com/articles/dj-premier-breaks-down-the-ten-crack-commandments — the 1997 track began as a radio promo beat; the hook is a scratched count of numbers one to ten.",
+    "https://uproxx.com/?p=604772 — the song sits on disc two of the 1997 double album and was not a single; search found no official music video (unverified, but no source shows one), so the 'video look' is the era's general East Coast video/album-art language, not one specific clip."
+  ],
+  "notes": "No official music video for the original song turned up in research (unverified, not confirmed absent); the look draws on the generic late-90s East Coast video/album-art vocabulary (fisheye, stoops, gels, shiny suits, grainy film, VHS) instead. No real person, brand or real currency is named; banknotes are 'unmarked' or generic. RU1-a, RU1-c and FX1-c use the balaclava sentence verbatim. Text in images (RU1-a slate, RU1-b title, SU1-b title, FX1-a plaque, FX1-b ribbon) may garble on NB2; if so, regenerate or add the text in the edit. RU1-a's brownstone stoop is deliberately New York for the parody; FX1-c brings the fix home to a British high street. Photographic: RU1-a, RU1-c, SU1-a, SU1-c, FX1-a, FX1-c; non-realistic: RU1-b, SU1-b, FX1-b.",
+  "stills": [
+    {
+      "beat": "rules",
+      "id": "RU1-a",
+      "look": "1997 fisheye stoop, grainy 35mm",
+      "prompt": "Vertical 9:16 photograph, low angle through a cheap fisheye lens, grainy 1990s 35mm colour negative, slightly underexposed. A figure in a black balaclava and puffer jacket sits on a brownstone stoop at dusk, holding a cracked school chalk slate on its knees that reads \"THE 10 MONEY COMMANDMENTS\" above roman numerals I to X. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Sodium streetlight from the left, cold blue sky above and bent railings curving at the frame's edges. Thanks."
+    },
+    {
+      "beat": "rules",
+      "id": "RU1-b",
+      "look": "photocopied mixtape flyer",
+      "prompt": "Vertical 9:16 image that looks like a 1997 photocopied mixtape flyer pinned to a pub noticeboard: black toner on cheap pink paper, streaky copier lines, staple holes, one corner torn. Heavy hand-drawn bubble lettering at the top reads \"10 MONEY COMMANDMENTS\". Below, ten numbered boxes of scrawled marker cartoons: a money printer with a padlock, a stack of banknotes with a skull, a pointing finger, a dollar-sign crown, a suited hand sneaking a note. The art is crude, confident, cut-and-paste, photographed flat under a fluorescent tube with a slight glare. Thanks."
+    },
+    {
+      "beat": "rules",
+      "id": "RU1-c",
+      "look": "shiny-suit studio, ring flash",
+      "prompt": "Vertical 9:16 photograph in a late-90s rap video studio: seamless red paper backdrop, wide fisheye from knee height, hard ring flash plus a magenta gel rim light, light haze. A figure in a mirror-shine silver PVC suit and black balaclava counts on gloved fingers toward the lens, three fingers up, the near hand huge and distorted. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Behind, ten small stone tablets stand on plinths in a row. Slight motion blur, gel spill, film grain. Thanks."
+    },
+    {
+      "beat": "supply",
+      "id": "SU1-a",
+      "look": "on-camera flash party snapshot",
+      "prompt": "Vertical 9:16 snapshot from a 1990s point-and-shoot with harsh on-camera flash, orange date stamp \"97 11 13\" in the corner, red-eye, flat shadows behind heads. In a wood-panelled boardroom, three anonymous middle-aged men in loosened ties sprawl on the table among uncut sheets of fresh banknotes from an unmarked currency, ink still glossy. One holds a sheet to his face and inhales deeply, eyes rolled up; another wears a sheet as a scarf, grinning. Behind them a hulking printing press glows through an open door. Cigarette smoke, spilled whisky, slightly tilted frame. Thanks."
+    },
+    {
+      "beat": "supply",
+      "id": "SU1-b",
+      "look": "two-ink risograph cartoon",
+      "prompt": "Vertical 9:16 risograph print in two inks, fluorescent pink and teal, slightly misregistered, visible paper tooth and ink speckle. Bold flat cartoon: a gigantic printing press spews a river of banknotes upward. Four men in pinstripe suits float cross-legged above it, blissed out, eyes drawn as spirals, tongues lolling, money wrapped round their necks like scarves. One sticks a straw into the press's output tray. Far below, tiny ordinary people queue at a closed shop, holding empty purses, looking up. Thick wobbly linework, halftone dots, hand-lettered title at the bottom: \"NEVER GET HIGH ON YOUR OWN SUPPLY\". Thanks."
+    },
+    {
+      "beat": "supply",
+      "id": "SU1-c",
+      "look": "slow-motion gel-lit print hall",
+      "prompt": "Vertical 9:16 film still from a late-90s music video, shot on a fisheye from the floor looking up. A cavernous currency print hall at night, teal and magenta gels, thick haze lit by one hard backlight. A man in a tailored grey suit stands with arms flung wide as fresh banknotes pour off a roaring press and rain over him in slow motion, motion-blurred streaks. His face, turned upward and partly hidden by flying notes, wears a dazed, delighted grin. Ink stains on his white cuffs. Grain, light flare, slightly crushed blacks, curved edges of the fisheye. Thanks."
+    },
+    {
+      "beat": "fix",
+      "id": "FX1-a",
+      "look": "large-format documentary, sealed press",
+      "prompt": "Vertical 9:16 large-format documentary photograph, 4x5 view camera, deep focus, cool overcast daylight from high clerestory windows. A clean industrial money printing press sits inside a sealed glass room in an empty concrete hall, running on its own: a neat stack of notes grows on the output tray. No operator. The control desk outside the glass has no buttons, only one mechanical counter and a small engraved brass plaque reading \"NO HUMAN HANDS\". An office chair has been pushed away and left facing the wall. Dust in the air, a scuffed floor line, faint fingerprints on the glass. Thanks."
+    },
+    {
+      "beat": "fix",
+      "id": "FX1-b",
+      "look": "banknote line engraving",
+      "prompt": "Vertical 9:16 illustration in the style of a banknote intaglio engraving: fine green line work and guilloche rosettes on cream security paper, crosshatched shading, a decorative border. At the centre an elaborate printing machine is driven by a clockwork mechanism, its single lever locked inside a glass case by gears. From the edges of the frame, many hands in shirt cuffs reach in toward the lever and all press flat against the glass, unable to touch it. A small engraved ribbon beneath reads \"NO HAND ON THE PRESS\". Slight ink bleed, a fold crease across the paper. Thanks."
+    },
+    {
+      "beat": "fix",
+      "id": "FX1-c",
+      "look": "VHS camcorder night, dropping the key",
+      "prompt": "Vertical 9:16 1990s VHS camcorder frame grab at night: tape noise, colour bleed, soft focus. A figure in a black balaclava crouches at a kerbside drain on a wet British high street and lets a large brass key drop through the grate. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Behind, through a lit shop window, a money printing press runs on its own, steady, nobody near it, a mechanical counter glowing. Orange streetlight, puddle reflections. Thanks."
+    }
+  ]
+}

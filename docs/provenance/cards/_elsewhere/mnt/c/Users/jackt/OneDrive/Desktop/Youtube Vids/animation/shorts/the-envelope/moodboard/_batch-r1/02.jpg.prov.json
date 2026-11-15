@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/02.jpg",
+ "made": "2026-11-15T12:35:23.542Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 macro photograph of a handmade stop-motion miniature set: a tiny civil-service desk built from real balsa and dark-stained card, a felt blotter, a thumbnail-sized brass lamp with a warm LED glow. A small paper envelope, hand-cut and slightly wonky, hangs mid-drop on a visible thread just above the desk. It reads \"O.H.M.S.\" with a hand-painted crest of a crowned key between two herons, and a red stamp painted in careful block letters reading exactly \"APPROVED BY THE CONSERVATIVE PARTY\". Fingerprints in the plasticine paperweight, dust on the set, shallow depth of field from a 100mm macro lens, a painted Whitehall window backdrop out of focus behind. Thanks.",
+ "source_id": "9fcb6040-1ecb-4023-8719-1ba3573c9c75"
+}
