@@ -8,6 +8,8 @@
 
 Kai, 2026-11-13 meeting: an arms-deal envelope lands on a desk, stamped APPROVED BY THE CONSERVATIVE PARTY; the next one says APPROVED BY THE LABOUR PARTY. "The weapon sales will still happen, irrespective of who you choose." It sits next to Bank Robbery ("this is the distraction"). Kai's closing line: "They're going to print the money anyway."
 
+**The line (Jack, 2026-11-15):** "They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction."
+
 **Point:** Some decisions don't change whoever you vote for; the vote is the distraction.
 
 ## Checks owed
@@ -21,3 +23,4 @@ Kai, 2026-11-13 meeting: an arms-deal envelope lands on a desk, stamped APPROVED
 | --- | --- |
 | Set up | ✅ 2026-11-15 (Jack: "make all those stills for each and put them on the new scene skill… use your best judgement, don't ask questions") |
 | Mood board round 1 | 🟡 https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe (clean room, 9 stills), awaiting Jack's votes |
+| Mood board round 2 (Sting version) | 🟡 same link, 12 stills (4 beats × 3 looks), awaiting Jack; S4 masks need a re-roll |
