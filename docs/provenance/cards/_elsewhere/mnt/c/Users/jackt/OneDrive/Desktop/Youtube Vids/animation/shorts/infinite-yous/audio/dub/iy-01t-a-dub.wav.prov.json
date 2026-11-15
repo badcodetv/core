@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/dub/iy-01t-a-dub.wav",
+ "made": "2026-11-15T12:04:42+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/lad-a2-brisk-2.wav",
+ "why": "lad's line fitted to iy-01t-a",
+ "prompt": "docs/stories/short-infinite-yous/voices/dub-01t-a.json"
+}

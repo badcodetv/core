@@ -46,5 +46,13 @@
   "url": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC",
   "what": "Rough cut 2: both lines voiced (lad b, figure a, stand-ins), the squeeze as three clean-room stills CL1-a/CL2-b/CL3-b on the accents",
   "rebuild": "python3 scripts/infinite-yous/cut.py 2 && python3 scripts/scene/build-timeline.py docs/stories/short-infinite-yous/scenes/infinite-yous <out-dir>"
+ },
+ {
+  "at": "2026-11-15T12:05:17+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC",
+  "what": "Rough cut 3: the lad's line on camera, lip-synced (iy-01t-a + Puck brisk x1.20), figure round-2 d stand-in",
+  "rebuild": "python3 scripts/infinite-yous/cut.py 3 && python3 scripts/scene/build-timeline.py docs/stories/short-infinite-yous/scenes/infinite-yous <out-dir>"
  }
 ]
