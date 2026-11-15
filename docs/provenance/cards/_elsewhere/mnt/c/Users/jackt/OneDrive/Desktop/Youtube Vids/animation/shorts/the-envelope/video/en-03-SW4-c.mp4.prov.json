@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/video/en-03-SW4-c.mp4",
+ "made": "2026-11-15T17:29:38+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A painted 1930s chapter card comes to life. The dealer lifts the two bowler hats a hand's width and smoothly crosses them past each other, swapping them left to right like a shell-game hustler, then holds them still again. Behind him the man in the flat cap winks and riffles the fan of banknotes in his hand. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/SW4-c.jpg",
+ "why": "The swap",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/SW4-c.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-envelope/scenes/the-envelope",
+  "key": "03",
+  "frame": 3,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-15T17:28:23.970Z"
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "title": "Envelope Clip Picks",
+ "eyebrow": "BadCode Shorts · The Envelope · clips",
+ "heading": "The Envelope: pick one clip per card",
+ "intro": "Two ways to animate each painted card (Omni 1.2 Flash, 8 s, camera locked; Premiere adds the push). S4's triangle is now over his eye and S3's notes are invented. Pick one per card and leave a note if it needs a re-roll.",
+ "sections": [
+  {
+   "h": "The four cards",
+   "lede": "In film order.",
+   "groups": [
+    {
+     "slot": "clip-1",
+     "title": "S1. The Counter",
+     "line": "The house opens: a smooth dealer offers two envelopes at even odds, like a fair bet.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/en-01-SU2-b.mp4",
+       "label": "a: Fans the two envelopes",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/en-01-b-SU2-b.mp4",
+       "label": "b: Taps each, even odds",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-2",
+     "title": "S2. The Pick",
+     "line": "The mark chooses in good faith; the host is all generosity.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/en-02-PK2-b.mp4",
+       "label": "a: He presses down on one",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/en-02-b-PK2-b.mp4",
+       "label": "b: He wavers between them",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-3",
+     "title": "S3. The Switch",
+     "line": "The con revealed: whichever hat you pick, the same arms order sits under it, with fresh money on top.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/en-03-SW4-c.mp4",
+       "label": "a: The swap",
+       "warn": "He sets both hats down rather than swapping them; the crate stencil reads ORDEN in places."
+      },
+      {
+       "id": "b",
+       "src": "clips/en-03-b-SW4-c.mp4",
+       "label": "b: Both hats tip forward",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-4",
+     "title": "S4. The Pay-off",
+     "line": "The sting: BadCode pulls the curtain and catches the house, both ties in one handshake over the rifles.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/en-04-SG4-b.mp4",
+       "label": "a: Curtain pulled wide",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/en-04-b-SG4-b.mp4",
+       "label": "b: The house is caught",
+       "warn": "The two men gain invented faces as they turn (they were faceless shadows); the handshake ends."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

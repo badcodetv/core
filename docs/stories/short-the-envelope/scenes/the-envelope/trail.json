@@ -45,5 +45,13 @@
   ],
   "feedback": "feedback/moodboard-r3",
   "feedback_docs": 8
+ },
+ {
+  "at": "2026-11-15T17:34:35+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/SYmKwEYiBZxixJHpyduGod",
+  "what": "Clip picks: 2 animations per card, 8 Omni clips",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-envelope/scenes/the-envelope/picks.json envelope-clip-picks.html"
  }
 ]
