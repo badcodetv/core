@@ -1,6 +1,39 @@
 {
- "anim_picks": {"1": "b", "2": "a", "3": "b", "4": "a", "5": "a"},
- "still_picks": {"1": "LI1-b", "2": "SP1-a", "3": "SQ2-a", "4": "CA2-a", "5": "LO1-b"},
- "skip": [2, 3],
- "note": "Jack 2026-11-14 storyboard round 1: 1b, 2a (edit), 3b (edit), 4a, 5a. Frames 2 and 3 are built in the edit."
+ "anim_picks": {
+  "1": "b",
+  "2": "a",
+  "3": "b",
+  "4": "a",
+  "5": "a"
+ },
+ "still_picks": {
+  "1": "LI1-b",
+  "2": "SP1-a",
+  "3": "SQ2-a",
+  "4": "CA2-a",
+  "5": "LO1-b"
+ },
+ "skip": [
+  2,
+  3
+ ],
+ "note": "Jack 2026-11-14 storyboard round 1: 1b, 2a (edit), 3b (edit), 4a, 5a. Frames 2 and 3 are built in the edit.",
+ "extra": [
+  {
+   "key": "04-r2",
+   "n": 4,
+   "still": "CA2-a",
+   "motion": "The camera does not move. The young man in the white shirt topples forward the rest of the way onto the taxi's back seat, his legs following him in. The figure in the lab coat sets his foot back down on the pavement and straightens his coat. The city lights glow behind them. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: try clip 4 again. The 4a prompt was refused 3x (the word kick, a man struck); the still already shows the kick landed, so this asks only for the follow-through, no violent verbs."
+  },
+  {
+   "key": "04-r3",
+   "n": 4,
+   "still": "CA2-a",
+   "motion": "Locked-off camera, cartoon slapstick timing, like a silent-film pratfall. The young man sails forward with his arms flailing like a rag doll and flops face-first onto the taxi's back seat with a comic bounce, his legs wiggling in the air outside the door before they flop in after him. The figure in the lab coat lowers his foot, dusts off his gloves twice and gives one small satisfied nod. Exaggerated, bouncy and funny. One continuous shot, no cuts, no dialogue, no text. The camera stays locked. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: he falls into the car like a cartoon character, slapstick and funny; never say kick, the scientist's pose implies it."
+  }
+ ]
 }
