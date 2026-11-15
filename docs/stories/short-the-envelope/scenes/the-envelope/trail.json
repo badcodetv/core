@@ -22,5 +22,16 @@
   "url": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
   "what": "Switch x3 more like the Sting (clean room), S4 mask + wrists fixed",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-envelope/scenes/the-envelope <out.html>"
+ },
+ {
+  "at": "2026-11-15T14:54:23+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "what": "Jack's votes and notes on round 2",
+  "decided": [
+   "Column b (painted chapter cards): SU2-b This, PK2-b This, SG2-b This ('no skin for the badcode guy and fix the mask'), SW2-b Maybe ('this style but change it make it more like the sting')"
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 6
  }
 ]
