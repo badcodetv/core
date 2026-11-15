@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/audio/envelope-r2-hot-club-string-hustle-v6-w35-0408a874.wav",
+ "made": "2026-11-15T18:27:29.889Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "0408a874-28c7-4d5d-9ac0-a05c520da292",
+ "inputs": {
+  "title": "Envelope r2-hot-club-string-hustle-v6-w35",
+  "song": "https://suno.com/song/0408a874-28c7-4d5d-9ac0-a05c520da292"
+ },
+ "settings": {
+  "durationSec": 18.36
+ }
+}

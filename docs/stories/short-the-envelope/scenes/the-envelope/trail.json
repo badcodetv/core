@@ -81,5 +81,25 @@
   "url": "https://claude.ai/artifact/J9vW3RyYnMU2ygwwDuzE7o",
   "what": "Sound picks round 2: 8 instrumental Suno takes + 4 AI Studio voices for the line",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-envelope/songs/r2-track/picks.json envelope-sound-picks.html"
+ },
+ {
+  "at": "2026-11-15T18:29:44+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/J9vW3RyYnMU2ygwwDuzE7o",
+  "what": "Sound picks round 2",
+  "decided": [
+   "hotclub2 (music), b Iapetus (voice)"
+  ],
+  "feedback": "feedback/picks-r3",
+  "feedback_docs": 2
+ },
+ {
+  "at": "2026-11-15T18:29:44+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/3zxgwRFeNQdFYHWpjuE6Cp",
+  "what": "Rough cut 1: 4 picked cards, hotclub2, Iapetus line",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-envelope/scenes/the-envelope <out-dir>"
  }
 ]
