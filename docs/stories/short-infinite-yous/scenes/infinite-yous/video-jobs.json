@@ -91,5 +91,12 @@
    "character": null,
    "why": "Jack 2026-11-15: make it look like a kick and he flies into the taxi, the speed is the joke; clean room. Staging: The doorman's helping foot. The figure stands side-on with one gloved hand holding the top of the op"
   }
- ]
+ ],
+ "pick": {
+  "4": {
+   "clip": "iy-04-ka-ramp-r1.mov",
+   "raw": "iy-04-ka-KK1-a-b.mp4",
+   "why": "Jack 2026-11-15: \"use the clip at 4 secs on the premiere timeline\" (seq iy clip 4 kick r1)"
+  }
+ }
 }
