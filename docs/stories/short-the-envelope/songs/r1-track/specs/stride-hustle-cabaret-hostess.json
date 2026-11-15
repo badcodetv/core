@@ -1,0 +1,17 @@
+{
+  "style": "1930s Harlem stride piano, solo, speakeasy, original composition, fast hustling two-handed piano, abrupt stop, low smoky female spoken word, no singing",
+  "exclude": "Scott Joplin, ragtime, The Entertainer, Marvin Hamlisch, orchestra, strings, drums, choir, sung vocals, singing",
+  "lyrics": "[Intro: solo stride piano, quick oom-pah bass, sly darting right hand, a shell game]\n\n[Build: the piano hurries, faster, both hands chasing]\n\n[Stop: one sour wrong chord, then dead silence]\n\n[Break]\n\n[Spoken Word: woman, low, smoky, amused, half to the room and half confiding, one unhurried breath, no melody]\nThey're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\n\n[single piano note, left to ring]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 65,
+  "vocalGender": "female",
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "Envelope r1-stride-hustle-cabaret-hostess",
+  "mode": "custom",
+  "workspace": "short-the-envelope"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "radio-serial-organ-stings",
+    "idea": "Play the whole 15 seconds as a crackling 1930s radio crime serial: no tune at all, only a theatre organ that stabs one sustained sting at each card change (about every 3.5 s), with turntable-style sound effects between them: a shuffle of envelopes, a bell on a betting counter, a heavy crate dropped, a curtain swish. The voice is an older man in clipped, plummy wireless-announcer delivery, dry and certain, as if reading the news of a crime that already happened; he speaks the line once over the last two cards, close to the microphone, and the organ holds one low ominous chord under 'everything else is a distraction'. Ask for it as instrumentation and sound design (radio drama, theatre organ stings, foley, AM-radio crackle), not as a genre of song, with [Spoken word] and [Man] tags and short bracketed SFX cues in the lyric box. Exclude singing, melody, ragtime and rap."
+  },
+  {
+    "name": "stride-hustle-cabaret-hostess",
+    "idea": "An invented two-handed Harlem-stride piano hustle, fast oom-pah left hand and a cheeky right hand, runs like a shell game for the first 10 seconds, getting quicker at THE SWITCH, then stops dead on a single wrong chord as the curtain is pulled. The voice is a woman, low, smoky and amused, a 1930s cabaret hostess talking half to the room and half confidentially to us; she says the line in one unhurried breath into the silence after the piano stops, with a last single piano note under 'distraction'. Ask for the music by genre and era (1930s stride piano, speakeasy, original composition) and keep the style box short; put the stop as a [Break] tag before the spoken line. Exclude Joplin, ragtime, The Entertainer, orchestra and sung vocals."
+  },
+  {
+    "name": "back-room-whisper-upright",
+    "idea": "Make it a scene, not a song: a smoky back room in 1930s London, a slightly detuned upright piano somewhere behind a wall playing a slow creeping minor shuffle, glasses clinking, low crowd murmur, the riffle of banknotes, a coin spun on a wooden counter. The voice is a young man, very close and whispered, conspiratorial, like a tout letting you in on the fix behind his hand, with a London working-class edge; he speaks the line almost under the room noise from about 9 seconds, and the room goes quiet for the final words. Ask for it by describing the room and the sounds in plain sentences (ambience, foley, distant piano) rather than naming genres, with the line in parentheses under a [Whispered spoken word] tag. Exclude singing, beats, drums and big orchestral sound."
+  },
+  {
+    "name": "novelty-flurry-then-violin-jab",
+    "idea": "Build it as a timed four-part cue, written out by seconds in the style and lyric boxes: 0–7 s a dazzling invented novelty-piano flurry (showy runs, glissandi, a cheeky vaudeville bounce) with a woodblock tick; 7–10 s the piano trips and doubles up as the hats tip, a cash register rings; at 10.5 s everything cuts to one sharp violin jab and a low cello drone. Over the drone a very deep, slow, gravelled elderly man, grandfatherly and unimpressed, says the line once with weary authority, a tiny pause before 'everything else is a distraction'. Ask for the music as a sequence of events and instruments (solo piano, then violin stab, cello drone) with section tags [Intro], [Break], [Spoken word], [End]. Exclude Joplin rags, ragtime, film score pastiche and sung vocals."
+  }
+]

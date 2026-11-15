@@ -1,0 +1,17 @@
+{
+  "style": "1930s wireless crime serial episode, sound play not a song, no beat, no tune. Cinema theatre organ fires one held stab chord at each scene change, tibia and vox humana stops with heavy tremulant, studio organist cueing danger. Live studio foley in the gaps: paper envelopes riffled, brass counter bell struck once, wooden crate dropped hard on boards, curtain rings rasping along a rail. Older English gentleman announcer, clipped plummy received pronunciation, dry and certain, unhurried, close to the ribbon microphone, speaking plainly. A final low pedal chord swells and sustains under the last words. Narrow mono AM band, valve hiss, shellac surface crackle.",
+  "exclude": "singing, melody, sung vocals, ragtime, rap, piano, drums, beat, chorus, jazz band, swing, orchestra, synth",
+  "lyrics": "[Intro: organ sting]\n[envelopes shuffled]\n[counter bell]\n\n[organ sting]\n[crate thuds down]\n\n[organ sting]\n[curtain swish]\n\n[Spoken word]\n[Man]\nThey're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\n\n[low organ chord holds]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 75,
+  "vocalGender": "male",
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "Envelope r1-radio-serial-organ-stings",
+  "mode": "custom",
+  "workspace": "short-the-envelope"
+}

@@ -1,0 +1,17 @@
+{
+  "style": "A short scene, not a song. The back room of a London pub in 1934, thick with pipe smoke. Through the wall, an out-of-tune upright piano picks out a slow, creeping minor-key shuffle, muffled and far off. Close by: glasses clink, men murmur low, a thumb riffles a wad of banknotes, a coin spins on a wooden counter and rattles flat. A young London man leans right into the microphone and whispers, hushed and conspiratorial, like a bookie's runner telling you the fix behind his hand: dry, certain, faintly amused. The room falls silent for his last words. Voice-forward, intimate, real room sound, no melody in the voice.",
+  "exclude": "singing, sung vocals, choir, chorus hook, drums, beat, bass drop, orchestra, string swell, cinematic score, ragtime, Scott Joplin, synth",
+  "lyrics": "[Intro: room ambience, distant muffled upright piano behind a wall, glasses clink, banknotes riffled, a coin spun on the counter]\n\n[Whispered spoken word]\n(They're going to print the money and the weapon sales will still happen anyway,\n\n[The room falls silent]\neverything else is a distraction.)\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 70,
+  "vocalGender": "male",
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "Envelope r1-back-room-whisper-upright",
+  "mode": "custom",
+  "workspace": "short-the-envelope"
+}
