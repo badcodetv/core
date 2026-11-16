@@ -25,3 +25,11 @@ Narration lines A-C are the facts in plain words (drafts, `by: claude`); D is Ja
 - Numbers: checked 2026-11-16 (`../../numbers.md`). "1 million empty" is NOT safe (AoEH's sum incl. second homes). Fair pair: 303,185 vs 134,210. Re-check for a newer quarter before publishing.
 - Jack: the line in D.
 - Sound: `sound.md` is EMPTY.
+
+
+## LOCKED SHAPE (Jack, 2026-11-16: "lets do this")
+1. **Bob on his bench** (flash, ~3 s): a regular bloke who lost it all in 2008, not "them" (Camping's Bob, from his reference image).
+2. **134,210 households** (true-scale graphic, pull back, ~4 s).
+3. **A warm, lit, happy home** (flash, ~2 s).
+4. **303,185 empty + 267,894 second homes** (graphic, pull back further, ~5 s).
+Supersedes the table above. In reserve (not in the shape): the cost, "Councils in England spent £2.9 billion on temporary accommodation in 2025-26" (£1.8bn on B&Bs and nightly lets; MHCLG RO4 outturn, numbers.md). Jack's line and the Camping link still to place.

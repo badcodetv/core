@@ -69,3 +69,45 @@ Marks: (primary) = I fetched the gov.uk page; (read) = secondary; (unverified) =
 - The Table 4 and Table 615 spreadsheets opened directly; row-level reconciliation of the two datasets.
 - Whether Apr-Jun 2026 TA figures are out.
 - The official "long-term vacant" definition (six months), still unconfirmed.
+
+## Cost of temporary accommodation (2026-11-16)
+
+**Latest year is 2025-26 (published 17 Sep 2026), not 2024-25. The "~£2.3bn in 2023-24" memory is roughly right for 2023-24 (MHCLG ~£2.3bn; NAO's own measure £2.13bn, unverified, search summary) but is two years old.**
+
+### Primary: MHCLG RO4 outturn table, 2025-26 (opened and summed from the file, £ thousand, England row)
+Source file: https://assets.publishing.service.gov.uk/media/6ab26f188cb3c0580e500fa7/RO4_LA_Data_2025-26_data_by_LA.ods (sheet "LA_drop-down", Table 1c Homelessness, lines 80-86). Release: https://www.gov.uk/government/statistics/local-authority-revenue-expenditure-and-financing-england-2025-to-2026-first-release/local-authority-revenue-expenditure-and-financing-england-2025-to-2026-first-release
+- **Gross spend on temporary accommodation, lines 80-86: £2,934.6m (£2.93bn)**, including £206.0m administration (our sum of the lines; matches Shelter's £2.935bn). Excluding admin: £2,728.7m.
+- **Net to councils (after sales/fees and other income such as housing-benefit/DWP-type income): £1,476.1m (£1.48bn)** (our sum of the net column). LGA quotes £1.47bn (read, secondary).
+- Lines, gross / net (£m):
+  - Nightly paid, privately managed, self-contained: 955.1 / 494.3
+  - Bed and breakfast hotels (incl. shared annexes): 822.6 / 467.5
+  - Private sector accommodation leased by authority or registered provider: 609.2 / 271.2
+  - Hostels: 109.5 / 26.2
+  - Local authority or housing association stock: 129.7 / -4.8
+  - Any other type (incl. private landlord and not known): 102.5 / 57.9
+  - Administration: 206.0 / 157.9
+- **Nightly-paid + B&B = £1,777.8m gross, 61% of the £2,934.6m total (65% of the ex-admin £2,728.7m, as Shelter says).** Adding private-sector leased (£609.2m) gives £2,387m, about 81% of gross, in private-market or hotel accommodation. That last sum is ours; "private landlords" is our grouping, the file does not label it so; B&B hotels and nightly-paid units are privately run but the file does not say who owns them.
+- Whole homelessness line (all services, not just TA): £4.05bn gross, £2.34bn net. Do not confuse with TA.
+- **Caveats (primary, front page of the file):** England totals are ESTIMATED from 377 of 413 councils' returns (the other 36 filled from grant data or last year's proportions). The release also says sub-category splits changed because Lambeth, Newham and Westminster changed how they report, so do not trust year-on-year movement between lines.
+- Secondary, same numbers: Shelter, "£8 million a day": £2.935bn, £8.04m a day (our check: 2.935bn/365), nightly paid £955m (35%), B&B £823m (30%), combined 65%, up 88% in five years. https://england.shelter.org.uk/media/press_release/councils_spend_more_than_8_million_a_day_on_temporary_accommodation (read)
+
+### Previous year, 2024-25 (first release, primary; note the release text was part-revised June 2026)
+- Net TA incl. admin £1,411m (Table 2a). Gross total about £2.84bn (£2.842bn; read, Shelter/LocalGov, unverified against the table). Nightly paid privately managed net rose to £597m (release, primary) in 2024-25.
+- https://www.gov.uk/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-first-release/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-first-release
+- 2024-25 to 2025-26 gross: £2.84bn to £2.93bn, about +3% in cash (our arithmetic; the "+25%" quoted in 2025 press was 2023-24 to 2024-25).
+
+### Per night / per household
+- **No official per-night or per-household cost found.** Shelter gives none; MHCLG publishes none; LSE/London Councils says nightly-paid rates are uncapped (read, snippet only, unverified).
+- Our crude figure only: £2.93bn / 135,580 households in TA at 31 Mar 2026 (primary, above) = about £21,600 per household in TA that year. Gross, a year-end snapshot divided into a full-year flow, so it is a rough guide, not a cost per family. Do not put on screen without a footnote.
+
+### Safe on-screen wording (15 s vertical)
+- Best: **"Councils in England spent £2.9 billion on temporary accommodation in 2025-26."** (primary; gross, includes government housing-benefit money)
+- With the hook: **"£2.9 billion a year. £1.8 billion of it on hotel rooms and nightly lets."** (primary sum of two lines; say "B&Bs and nightly-paid lets", not "hotel" alone; both are in the RO4 file)
+- Councils' own pocket, if a smaller number is wanted: "£1.5 billion from council budgets alone." Do not say "taxpayers' £2.9bn is all council money"; about half is DWP-funded.
+- Say "an estimate by MHCLG" or footnote "England total estimated from 377 of 413 councils".
+
+### Could not establish (this item)
+- Any official or sourced average nightly B&B cost or per-household cost.
+- Gov.uk release text for the 2025-26 sub-line figures: that page omits them (chart only); the numbers above come from the RO4 spreadsheet, which I opened.
+- Apr 2024 to Mar 2025 gross figure from the table itself (2024-25 RO4 not opened).
+- Whether the 3 reporting-change boroughs move the nightly/B&B split materially.

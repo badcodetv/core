@@ -13,28 +13,28 @@
   },
   "beats": [
     {
-      "key": "one",
+      "key": "bob",
       "at": "0:00",
-      "name": "A. One household",
-      "blurb": "One homeless household, small in the dark under a teal light."
+      "name": "1. Bob (flash)",
+      "blurb": "Bob from Camping on his bench: a regular bloke who lost it all in 2008, not 'them'."
     },
     {
       "key": "crowd",
       "at": "0:03",
-      "name": "B. 134,210",
-      "blurb": "Pull back: every household in temporary accommodation in England, 134,210 of them."
+      "name": "2. 134,210 (graphic)",
+      "blurb": "True-scale graphic, pull back: every homeless household in England, 134,210."
     },
     {
-      "key": "empty",
-      "at": "0:06",
-      "name": "C. 303,185",
-      "blurb": "Pull back: every long-term empty home in England, 303,185, dark. More than two each."
+      "key": "home",
+      "at": "0:07",
+      "name": "3. A home (flash)",
+      "blurb": "A warm, lit, happy home: what a home is."
     },
     {
-      "key": "second",
-      "at": "0:10",
-      "name": "D. 267,894 more",
-      "blurb": "Pull back again: the second homes light up beside them (267,894, pending check). About four each. Jack's line."
+      "key": "homes",
+      "at": "0:09",
+      "name": "4. 303,185 + 267,894 (graphic)",
+      "blurb": "Pull back further: 303,185 long-term empty homes and 267,894 second homes beside the crowd (about 4 each)."
     }
   ],
   "flow_project": "7530554c-5d9d-40fc-beeb-b11d29a68edf",

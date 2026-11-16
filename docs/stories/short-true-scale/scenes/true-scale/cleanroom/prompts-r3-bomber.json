@@ -1,0 +1,36 @@
+{
+  "research": [
+    "https://www.wearethemighty.com/mighty-history/abraham-wald-survivor-bias-ww2/ — returning planes showed holes on fuselage and wings nearly twice the rate of engines; Wald: no holes recorded on engines or cockpit because those planes never came back; armour the engines",
+    "https://www.sandboxx.us/news/abraham-wald-saved-hundreds-of-flight-crews-with-statistics/ — Wald worked in the Statistical Research Group; popular retellings vary on the aircraft type, so an invented generic bomber is fine",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — name a film stock for night grain (CineStill 800T halation); natural-language prompts",
+    "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — Nano Banana 2 wants natural language; a period cue makes the model infer grain and muted colour on its own",
+    "https://content.getdarwin.ai/en/nano-banana-2-prompt-guide-how-to-write-better-prompts — film stock plus a 'subtle grain' note; keep the prompt lean, no stacked 8K/HDR words"
+  ],
+  "notes": "Four bridges: (a) the wartime hangar in the short's own night/teal cheap-film look, not a period look, so it already belongs to present-day England; (b) the reveal as a period object, a pencil diagram on graph paper under a desk lamp (period look on purpose: it is Wald's paper, the one place the 1940s should show); (c) present-day echo with no plane in it: the doorway is the hole, the hostel windows are the clean un-thought-of parts; (d) the armour as a home: a sealed empty terrace whose steel window sheet is literally armour, carrying 303,185. Only (d) carries a number. All aircraft invented, no markings; all people from behind or silhouettes; no brands.",
+  "stills": [
+    {
+      "beat": "bomber",
+      "id": "BM3-a",
+      "look": "Night hangar, cheap colour film, cold teal fluorescent, the holes chalk-ringed",
+      "prompt": "Vertical 9:16 photograph inside a cavernous aircraft hangar at night, lit only by long cold fluorescent tubes that turn everything a sickly teal. An invented, generic twin-engine wartime bomber with plain unmarked grey-green paint fills the frame, its wings and tail peppered with small ragged bullet holes, each one circled in white chalk. The two engines and the glazed cockpit nose are spotless, untouched. A lone mechanic in overalls stands far off with his back to us, clipboard hanging at his side, looking up at the holes. Concrete floor wet and reflective. Shot on cheap consumer colour film, heavy grain, slight underexposure, faint halation on the tubes. Thanks."
+    },
+    {
+      "beat": "bomber",
+      "id": "BM3-b",
+      "look": "Period look on purpose: the reveal as a 1940s pencil diagram on graph paper under a desk lamp",
+      "prompt": "Vertical 9:16 close photograph looking down at a worn sheet of 1940s graph paper on a wooden desk at night, lit by one small lamp, the corners of the frame falling into deep teal shadow. On the paper, a simple hand-drawn top-down outline of an invented twin-engine bomber with no markings. Its wings and tail are covered in dozens of tiny pencil dots marking bullet holes. The engines and the cockpit are completely empty of dots. A man's hand, cuff of a tweed sleeve visible, is pressing a pencil hard, shading those empty engines and cockpit dark. Faded colour film, soft grain, shallow focus, eraser crumbs on the paper. Thanks."
+    },
+    {
+      "beat": "bomber",
+      "id": "BM3-c",
+      "look": "Present-day England, high angle: the doorway everyone sees vs the hostel windows nobody counts",
+      "prompt": "Vertical 9:16 photograph of an English high street at night, shot from across the road and slightly above. At street level, one shuttered shop doorway is lit hard by a streetlight: a sleeping bag and a few carrier bags, the person inside just a shape. Above the shops rises a tired four-storey hostel, rows of small windows with thin curtains, each glowing faintly cold teal, a vague silhouette behind several of them, families crowded into single rooms. The doorway is the only bright spot; the windows go almost unnoticed. No signs or logos readable. Cheap colour film, coarse grain, sodium and fluorescent light mixing, damp pavement. Thanks."
+    },
+    {
+      "beat": "bomber",
+      "id": "BM3-d",
+      "look": "The armour as a home: a sealed empty terraced house, steel sheet on the window as armour, one stencilled number",
+      "prompt": "Vertical 9:16 photograph of a single terraced house in an English street at night, empty and sealed. Its front door and windows are covered with grey perforated steel security sheets, bolted on like armour plating, the steel catching a cold teal fluorescent glow from a lamp post. Neighbouring houses are dark. On the steel sheet over the front window, spray-stencilled in white, the number 303,185 and nothing else. A small figure in a hooded coat stands on the pavement with their back to us, looking up at the locked house, carrying a holdall. No brand names, no other text. Cheap colour film, heavy grain, deep shadows, wet tarmac. Thanks."
+    }
+  ]
+}
