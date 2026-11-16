@@ -15,7 +15,7 @@ Ending first: one empty house lights up and the question lands.
 |---|---|---|---|---|
 | A | 0:00 | Close, low: one person on a bench (or in a doorway) under a teal streetlight, small in the dark. A tiny figure, not a portrait: the render's figure style. | "This is one homeless household." | One. |
 | B | 0:03 | The camera pulls back and up: more figures, then more, until 134,000 stand in rows under the light. | "This is all of them, in England." / **134,000** | The size of it. |
-| C | 0:06 | It keeps pulling back: beside the crowd, row after row of dark houses rises, until the crowd is a smudge at the edge. | "And these are the empty homes." / **303,185** long-term empty, or **754,264** all empty (Jack to pick; `numbers.md`) | The scale flips. |
+| C | 0:06 | It keeps pulling back: beside the crowd, row after row of dark houses rises, until the crowd is a smudge at the edge. | "And these are the homes standing empty." / **303,185** long-term empty homes (Jack 2026-11-16) | The scale flips. |
 | D | 0:10 | Back in close on one dark house. Its window light flicks on. | Jack's line. | The question lands. |
 | end | 0:13 | The logo (lightning, like #83?), then the link to Camping. | | |
 
