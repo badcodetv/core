@@ -1,0 +1,66 @@
+{
+  "angle": "INSIDE OUR OWN STORY WORLDS: the Bank Robbery greasy spoon (Denise, Barry, the crew), Camping's Bob, BadCode the balaclava figure",
+  "research": [
+    "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2025/statutory-homelessness-in-england-july-to-september-2025: official series behind 134,210 households in TA (end Dec 2025); Crisis reports 135,580 at 31 March 2026, so the number is still climbing. Use the brief's figure, but label it with its date on screen",
+    "https://england.shelter.org.uk/media/press_release/new_government_homelessness_stats_reveal_17th_record_rise_in_child_homelessness_: about 176,000 CHILDREN in TA. A per-person number that hits harder than the 85,800 households figure, if we want one (unverified against the brief's sheet, so check before use)",
+    "https://england.shelter.org.uk/media/press_release/councils_spend_more_than_8_million_a_day_on_temporary_accommodation: £2.935bn on TA in 2025-26, £1.778bn of it on nightly lets and B&Bs. That is roughly £8 million a DAY, a scale a café regular can feel",
+    "https://www.gov.uk/government/statistics/council-taxbase-2025-in-england/local-authority-council-taxbase-in-england-2025: council-tax data, ~268,000 second homes in England in 2025. Matches the brief's 267,894; the empty-home counts come from the same council-tax base",
+    "https://www.actiononemptyhomes.org/the-last-decade: long-term empties above 300,000 and rising for a decade; London's long-term empties up 23% in a year to 47,287",
+    "https://blog.shelter.org.uk/kettle-packs-and-extreme-overcrowding-the-realities-of-temporary-accommodation/: families in one B&B room cooking with only a kettle. The '6-week legal limit' on families in B&B is routinely broken (Ombudsman cases). Gives the one PICTURE of TA we can show without showing a real family",
+    "https://england.shelter.org.uk/media/press_release/over_half_of_homeless_families_in_england_are_in_work,_shock_new_figures_show: over half of homeless families in TA were in work (2017 data, dated, don't put the % on screen). The point is that the homeless household is a working family, not a stereotype. Key to 'the reader is the hero'",
+    "https://www.theurbanist.org/sunday-video-the-15-million-home-vacancy-conspiracy-theory-debunked/: the US '16 million empty homes' line gets debunked because many empties are in the wrong place, between tenants or derelict. RISK NOTE: our script must never say 'house everyone tomorrow'. Say 'about 4 for every homeless household' and let the viewer do the maths",
+    "https://www.magzter.com/es/stories/newspaper/The-London-Standard/THE-SECRET-LIVES-OF-LONDONS-MEGA-MANSIONS: thousands of London luxury homes sit empty while staff keep them running. A cleaner who works in empty homes (Denise by night) is a real job"
+  ],
+  "ideas": [
+    {
+      "slug": "denise-counts",
+      "title": "Denise Counts",
+      "logline": "In the greasy spoon, Denise runs a guess-the-number game over the counter with Barry and the regulars, and the politicians in the back booth slowly stop chewing.",
+      "setting_and_genre": "The Bank Robbery café, weekday morning, a bar-room quiz played as a sitcom two-hander. Vertical frame: the counter in the foreground, the back booth soft behind. The Reservoir Dogs-style breakfast crew is already in the world, so it sits beside the film as a deleted scene.",
+      "who": "Denise (waitress, counts everything); Barry (regular, rent-worried, guesses big and wrong); two or three regulars chipping in guesses; in the back booth, a few of the eleven politicians/media people from the heist, mid-fry-up.",
+      "beats": [
+        {"t": "0-4s", "see": "Barry reading a red-top over a tea. Denise topping him up without being asked.", "said": "DENISE (DRAFT): 'Go on then. How many families in England are homeless right now?' BARRY: 'What, sleeping out? ...Twenty thousand?'"},
+        {"t": "4-9s", "see": "A regular at the next table holds up fingers; another shouts a number. Denise writes each guess on her order pad.", "said": "DENISE (DRAFT): 'Hundred and thirty-four thousand. In B&Bs, hostels. Eighty-five thousand of them with kids.' Barry puts his cup down."},
+        {"t": "9-15s", "see": "Denise flips the pad. Barry squints, guesses again: 'And empty houses? Fifty thousand?'", "said": "DENISE (DRAFT): 'Three hundred thousand empty for six months or more. Plus two hundred and sixty-eight thousand second homes. Four for every family.' Silence. The fryer hisses."},
+        {"t": "15-20s", "see": "Barry, quiet: 'Who owns them, then?' Rack focus to the back booth: the politicians have stopped chewing. One slides a ring of keys off the table into a pocket.", "said": "No line. The keys jingle. [PUNCHLINE: Jack's. Blank for the line Denise says as she turns away, or for the booth's reply.]"},
+        {"t": "20-23s", "see": "Order pad on the counter, the guesses crossed out, the real numbers circled. Tag card with the date and source.", "said": "On screen: 'England, official figures, Dec 2025.'"}
+      ],
+      "the_turn": "The order pad does the reveal. Each guess goes on the pad in Barry's hand, and the real number lands crossed out in Denise's hand. Two reveals, the second bigger: the homeless count first, then the empties. Barry's own question ('Who owns them?') is the turn of the screw, and the source clip's cynical line is flipped: asking who owns them is the right question, and the booth answers it without speaking.",
+      "why_it_lands": "The working-class characters are the clever ones. Denise counts, Barry asks the sharp question, and the viewer is in their seats, not lectured. The villains are decision-makers (a cross-party booth, left and right both pocketing keys), never homeless people. It matches the podcast's mechanism exactly: casual chat, a wrong guess, the reveal, the silence.",
+      "risk": "Preachy if Denise recites a speech. Keep her to numbers and let the reaction carry it. Left-coded if only one side's politicians are in the booth: show both (the heist's whole joke is left and right holding the same pallet). Implying that politicians personally own the empty homes is a claim we can't make; the keys are a gag about who decides, so keep them unbranded and non-specific. Confusing: two numbers plus second homes is a lot for 20s, so the pad must show them, not only say them."
+    },
+    {
+      "slug": "drive-through-bob",
+      "title": "Drive-Through, Window Down",
+      "logline": "Two men from the heist argue left versus right over drive-through coffees, both guessing the homeless and empty-home numbers wrong, until the window frames Bob in the car park fixing his tent.",
+      "setting_and_genre": "A parked car at a supermarket drive-through: a 'two people chatting in a car getting coffee' format echo (no names, branding or set recreation of any real show). Dry two-hander comedy that turns cold for the last beat. The supermarket car park is Bob's car park from Camping, so the two films touch.",
+      "who": "Two of the Bank Robbery's eleven, one from each side (the pallet-holders). Bob, seen through the window, never speaks.",
+      "beats": [
+        {"t": "0-5s", "see": "Two in the front seats, cups in the holders, bickering. Left one hands the right one his coffee: 'Quiz. Homeless families in England, go.'", "said": "RIGHT (DRAFT): 'Ten thousand, tops. And half of them—' LEFT (DRAFT): 'A million. Easy.' Both wrong, both certain."},
+        {"t": "5-10s", "see": "A phone on the dashboard. One reads it out.", "said": "(DRAFT): '134,210. Living in B&Bs and hostels. Councils pay two point nine billion a year for it.' Beat. 'Empty homes?' Both guess again, both wrong. '300,000. Plus 268,000 second homes.'"},
+        {"t": "10-15s", "see": "For once they agree. They clink paper cups.", "said": "(DRAFT): 'Well. That's the other lot's fault.' 'Yours, mate.' They start arguing again, same rhythm as the heist pallet."},
+        {"t": "15-20s", "see": "The passenger's eyes drift to the window. Across the car park: Bob, crouched, re-pegging a tent beside a trolley bay, breath steaming. The argument goes on, muffled, then stops.", "said": "Silence. [PUNCHLINE: Jack's. Blank for what one of them says as he slowly winds the window up.]"},
+        {"t": "20-23s", "see": "Window glass rising, Bob reflected in it, then the reflection replaced by the passenger's own face.", "said": "On screen: '4 empty homes for every homeless household. England, 2025.'"}
+      ],
+      "the_turn": "Both sides guess wrong in opposite directions (one too low, one too high), so the reveal shames neither the viewer nor one party; it shames certainty. The second turn is visual: the numbers become one man in a tent, and Bob is the viewer's own five-years-later face, framed by a politician's window.",
+      "why_it_lands": "It is Jack's own pitch, and Bob is the viewer's hero as an ordinary man pushed out, not a statistic. Left and right bickering while the answer sits outside the window is the Bank Robbery's whole thesis in 20 seconds and reads as 'they're all useless', which the drifting-right viewer already believes, then aims it at a decision.",
+      "risk": "The format echo must stay generic: no vintage-car reveal, no host intro, no title graphic that copies any real show. 'Everyone's to blame' can dilute 'name the decision'; the blank punchline is where to name it. Bob shown as pitiable would make it a charity advert: show him working (fixing, pegging, organised), not suffering. Bob in a tent is a rough sleeper (only ~4,800 people), while the numbers are about households in TA; a caption or line must keep the 134,210 as 'in B&Bs and hostels', or the stat gets misread."
+    },
+    {
+      "slug": "right-question",
+      "title": "The Right Question",
+      "logline": "BadCode brings Bob a coffee in the car park and quizzes him, and Bob, who has lived it, guesses the homeless number almost right, then guesses the empty homes far too low and asks the one question BadCode says nobody in its timeline asked.",
+      "setting_and_genre": "Night, Bob's supermarket car park, sodium light, a flask and two cups on a bollard. A quiet two-hander with BadCode's dark, sarcastic voice from the future. Sits beside Camping as a coda.",
+      "who": "Bob (Camping). BadCode, the balaclava figure (white ring, red triangle over the left eye, gloves), sitting on an upturned crate.",
+      "beats": [
+        {"t": "0-5s", "see": "BadCode hands Bob a paper cup. Bob blows on it.", "said": "BADCODE (DRAFT): 'Pop quiz. Families in England with no home of their own tonight.' BOB (DRAFT): 'In B&Bs? Hostels? ...Hundred and thirty thousand.' BADCODE: '134,210. Show-off.'"},
+        {"t": "5-11s", "see": "BadCode tilts its head toward the flats above the shops across the car park: dark windows, one or two lit.", "said": "BADCODE (DRAFT): 'Empty homes. Nobody living in them.' BOB: 'Few thousand?' BADCODE: '303,185. And 267,894 second homes on top.' Bob lowers the cup."},
+        {"t": "11-17s", "see": "Close on Bob, counting in his head. Then quietly:", "said": "BOB (DRAFT): 'So who owns them?' BADCODE, a long beat, then (DRAFT): 'In my timeline, nobody asked that till it was too late.'"},
+        {"t": "17-22s", "see": "BadCode stands, crushes its cup, nods at the viewer through the lens.", "said": "[PUNCHLINE: Jack's. Blank for BadCode's last line to camera, the sarcastic-nurturing sign-off.] On screen: 'About 4 empty homes for every homeless household. England, official figures.'"}
+      ],
+      "the_turn": "The guesser is the man who knows. Bob nails the homeless number (he's lived it) and still guesses the empties far too low, because nobody who lives in the car park can see them. That flips the source clip's sneer: 'Who owns those places?' isn't a dodge here, it's the smartest thing said, and the superintelligence confirms it.",
+      "why_it_lands": "The homeless man is the expert, not the object of pity, and the hero is the viewer five bad years on. BadCode's future-certainty gives total authority without a lecture: it doesn't explain, it just says 'too late' about its own timeline. The 'who owns them' question is the one a drifting-right viewer already asks, so the film tells him he's right to ask it.",
+      "risk": "Two masked-figure-and-tramp night scenes can read bleak and arty rather than punchy; keep it fast and let BadCode be funny ('Show-off'). Bob's correct guess may confuse ('a tent man in TA?'), so his line has to show he's been through the B&Bs before the tent, which fits his canon arc. 'Who owns them' can drift into landlord-bashing or an implied conspiracy; we don't name owners, only the question. The balaclava must follow the brand rule exactly (white ring + red triangle over the left eye, gloves, no skin)."
+    }
+  ]
+}
