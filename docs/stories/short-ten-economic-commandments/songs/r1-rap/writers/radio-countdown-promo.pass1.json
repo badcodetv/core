@@ -1,0 +1,13 @@
+{
+  "name": "radio-countdown-promo",
+  "style": "Late-night 1997 New York FM radio countdown segment, rapped. Two separate voices, never blended. Voice A, the MC: deep male rapper, smooth and unhurried, mellow, close-mic near-whisper, conversational menace, lazy-perfect timing behind the beat, rapped never sung. Voice B, the radio DJ: brash hype host who only barks the chart numbers, loud and excited, squashed AM-radio compression and slapback on his voice alone. Music: around 90 BPM boom-bap, crisp dusty snare and thick kick, a looping minor jazz electric-piano riff, dark and sparse, low upright-style bass, vinyl hiss. Before every number a short rising sci-fi synth countdown blip, then a hard drum drop back in. Station ident feel, segment ends on a tape-stop.",
+  "exclude": "singing, sung chorus, melodic hook, autotune, trap hi-hats, 808 glide, choir, female vocals, pop, EDM, rock guitar, record scratches",
+  "lyrics": "[Intro: late-night radio station ident, dark keys loop, MC low and close to the mic]\n[MC, whispered]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Countdown blip] [Radio DJ shouts the number, MC raps the rest]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Countdown blip] [Radio DJ shouts the number, MC raps the rest]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Countdown blip] [Radio DJ shouts the number, MC raps the rest]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[Countdown blip] [Radio DJ shouts the number, MC raps the rest]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[Countdown blip] [Radio DJ shouts the number, MC raps the rest]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: beat drops to keys only, MC spoken, almost whispered]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n[Station sign-off sting, cut]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 70,
+  "vocalGender": "male",
+  "durationSec": 30,
+  "maxMode": true
+}

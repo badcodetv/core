@@ -1,0 +1,94 @@
+{
+ "title": "Ten Commandments Music",
+ "eyebrow": "BadCode Shorts · Ten Economic Commandments · the rap",
+ "heading": "Pick the rap",
+ "intro": "Your lyrics, rapped six different ways, two takes each (open in Suno). No artist named, no original beat copied: the 90s New York feel only. Pick one and note anything (voice, beat, the counting).",
+ "sections": [
+  {
+   "h": "Round 1",
+   "lede": "Money printer manual, page one.",
+   "groups": [
+    {
+     "slot": "rap-r1",
+     "title": "The track",
+     "line": "About 30 s.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "baritone1",
+       "href": "https://suno.com/song/2f425055-2adb-4d4c-a37b-072d5802b631",
+       "label": "baritone1: Heavy baritone drawl (0:31). The closest parody: a heavy-set Brooklyn man in his mid-twenties, deep round baritone with a slight wheeze between lines, relaxed ",
+       "warn": ""
+      },
+      {
+       "id": "baritone2",
+       "href": "https://suno.com/song/de26c46c-71d1-418c-b0df-dcc9076cbcad",
+       "label": "baritone2: Heavy baritone drawl (0:37). The closest parody: a heavy-set Brooklyn man in his mid-twenties, deep round baritone with a slight wheeze between lines, relaxed ",
+       "warn": ""
+      },
+      {
+       "id": "gravel1",
+       "href": "https://suno.com/song/d50d25a4-41fe-4fe1-8015-a0be934303ae",
+       "label": "gravel1: Old gravel, mob accountant (?). A different performer: a man in his fifties with a gravel-and-cigarette rasp, half-rapped, half-spoken, deadpan like a mob bookkee",
+       "warn": ""
+      },
+      {
+       "id": "gravel2",
+       "href": "https://suno.com/song/c3e00f37-0387-4936-9d57-47d12111a0b6",
+       "label": "gravel2: Old gravel, mob accountant (?). A different performer: a man in his fifties with a gravel-and-cigarette rasp, half-rapped, half-spoken, deadpan like a mob bookkee",
+       "warn": ""
+      },
+      {
+       "id": "queens1",
+       "href": "https://suno.com/song/5f76e608-79d8-4faa-bfd1-fc3531313964",
+       "label": "queens1: Queens woman, hard snare (0:39). A woman MC instead: low, husky alto from Queens, tough and amused, clipped staccato delivery that bites every rhyme word, with a s",
+       "warn": ""
+      },
+      {
+       "id": "queens2",
+       "href": "https://suno.com/song/503ed35e-0f67-4b90-9c07-63e34f9a233e",
+       "label": "queens2: Queens woman, hard snare (0:40). A woman MC instead: low, husky alto from Queens, tough and amused, clipped staccato delivery that bites every rhyme word, with a s",
+       "warn": ""
+      },
+      {
+       "id": "young1",
+       "href": "https://suno.com/song/b4726068-b6c8-44e3-a9c8-9d55ed4c6cdb",
+       "label": "young1: Hungry young debut voice (0:38). A young, hungry nineteen-year-old rapper in a higher, slightly nasal register, voice still raw at the edges, eager and fast, pushi",
+       "warn": ""
+      },
+      {
+       "id": "young2",
+       "href": "https://suno.com/song/b01ef71c-e5ec-4669-bb82-8318961e3288",
+       "label": "young2: Hungry young debut voice (0:33). A young, hungry nineteen-year-old rapper in a higher, slightly nasal register, voice still raw at the edges, eager and fast, pushi",
+       "warn": ""
+      },
+      {
+       "id": "radio1",
+       "href": "https://suno.com/song/e7863deb-dfe8-42b7-9c88-b80fcfd46de8",
+       "label": "radio1: Radio countdown promo (0:40). Built as a late-night New York radio countdown bit, nodding to the beat's own origin as a radio promo: a smooth, mellow, almost wh",
+       "warn": ""
+      },
+      {
+       "id": "radio2",
+       "href": "https://suno.com/song/cfbaffb9-35f2-43f7-809a-2ef53c0d213c",
+       "label": "radio2: Radio countdown promo (0:40). Built as a late-night New York radio countdown bit, nodding to the beat's own origin as a radio promo: a smooth, mellow, almost wh",
+       "warn": ""
+      },
+      {
+       "id": "noir1",
+       "href": "https://suno.com/song/72102712-19c5-41c8-a610-358eb35785bf",
+       "label": "noir1: Noir strings, spoken sermon (0:30). A tall, slow, preacher-deep bass voice from Brooklyn delivering the rules like commandments from a pulpit, almost spoken word, hea",
+       "warn": ""
+      },
+      {
+       "id": "noir2",
+       "href": "https://suno.com/song/8c0987d1-9689-491b-8a88-06806cae85dc",
+       "label": "noir2: Noir strings, spoken sermon (0:30). A tall, slow, preacher-deep bass voice from Brooklyn delivering the rules like commandments from a pulpit, almost spoken word, hea",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "noir-strings-spoken-sermon",
+  "style": "1990s East Coast mafioso rap, cinematic film-noir string loop in a minor key, low bowed cello line, slow head-nod boom-bap drums at 84 BPM, big dry cracking snare, sparse arrangement with room around the voice. Deep bass male voice, tall and heavy, Brooklyn accent, half-spoken sermon cadence like a preacher at a pulpit, long pauses between lines, deadpan dry wit, every number intoned with weight. Church-hall reverb only on the counted numbers, everything else dry and close. Cold, unhurried, authoritative.",
+  "exclude": "autotune, trap hi-hats, 808 slides, sung chorus, choir, female vocals, fast double-time flow, EDM, pop, brass fanfare, bright major key",
+  "lyrics": "[Intro: spoken, low and slow, strings alone]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Verse: half-spoken sermon, a pause after every number]\n[Number, cavernous hall echo]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Number, cavernous hall echo]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Number, cavernous hall echo]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[Number, cavernous hall echo]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[Number, cavernous hall echo]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: drums drop out, spoken, dry, close to the mic]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 70,
+  "vocalGender": "male",
+  "durationSec": 30,
+  "maxMode": true
+}

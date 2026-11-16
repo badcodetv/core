@@ -1,0 +1,13 @@
+{
+  "name": "queens-woman-hard-snare",
+  "style": "mid-90s east coast hardcore rap, 92 BPM, female MC lead: low husky alto, Queens accent, tough and amused, clipped staccato rapped delivery that bites the last word of every bar, spoken cadence, no melody, swaggering like she's running the class; small crew of male voices barking back each number from the back of the room; hard compressed drum break, cracking dry snare pushed loud, gritty 12-bit sampler grit, short minor-key horn stab hit on every new rule, deep round sub bass, dusty vinyl hiss, sparse and menacing",
+  "exclude": "singing, melodic hook, auto-tune, trap hi-hats, 808 rolls, pop chorus, choir, male lead vocal, reverb wash, EDM",
+  "lyrics": "[Intro: female MC, low and amused, drums drop in]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Verse: rapped, staccato, horn stab on each number, male crew shouts the number back]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[horn stab, crew shouts the number]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[horn stab, crew shouts the number]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[horn stab, crew shouts the number]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[horn stab, crew shouts the number]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: beat cuts to bass only, she speaks it, dry]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n\n[End: snare hit, silence]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 70,
+  "vocalGender": "female",
+  "durationSec": 30,
+  "maxMode": false
+}

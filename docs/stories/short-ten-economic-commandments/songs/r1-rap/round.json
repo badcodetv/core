@@ -1,0 +1,80 @@
+[
+  {
+    "name": "heavy-baritone-ledger-drawl",
+    "style": "late-90s New York boom bap, 88 BPM, bare hard kick and cracking snare with wide empty gaps, one dark minor-key loop, dusty vinyl grit, a quick turntable scratch between rules, no hook. Vocal: heavy-set young Brooklyn man, deep round chest baritone, unhurried and conversational, sits a hair behind the beat yet lands every syllable dead on, faint breathy wheeze between bars, dry close-mic, punches each \"Number\" like a count-off",
+    "exclude": "singing, melodic vocals, sung hook, choir, autotune, female vocals, trap hi-hats, 808 bass, synth pad, guitar",
+    "lyrics": "[Intro: spoken, low and close]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Verse: dry rap, count-off on each number]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[Scratch]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[Scratch]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: spoken, beat drops out]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 70,
+    "vocalGender": "male",
+    "durationSec": 30,
+    "maxMode": false
+  },
+  {
+    "name": "old-gravel-mob-accountant",
+    "style": "Picture a cigar-smoke back office over a social club, New York, mid-1990s, mafioso-style East Coast hip hop. The voice is an older man, fifties, gravelly and smoke-scarred, who half-raps and half-talks, flat and in no hurry, like the crew's bookkeeper walking a new kid through the accounts; quiet threat, a grin leaking through on the jokes, lagging a hair behind the kick. The loop: one muted trumpet figure circling over a plucked upright bass, slow weighty dusty boom-bap drums with a dry crack on the two and four, tape hiss, a little record crackle, lots of empty space, roughly 84 bpm. For the final couplet the band stops and only the voice is left, dry.",
+    "exclude": "trap hi-hats, 808 slides, autotune, melodic singing, sung chorus, EDM, synth pads, modern pop rap, choir, bright mix",
+    "lyrics": "[Opening: muttered, unhurried, trumpet loop alone]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Verse: rasp, deadpan, lazy behind the beat]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Drums and bass stop. Bare voice, close to the mic]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": "male",
+    "durationSec": 30,
+    "maxMode": false
+  },
+  {
+    "name": "queens-woman-hard-snare",
+    "style": "mid-90s east coast hardcore rap, 92 BPM, female MC lead: low husky alto, Queens accent, tough and amused, clipped staccato rapped delivery that bites the last word of every bar, spoken cadence, no melody, swaggering like she's running the class; small crew of male voices barking back each number from the back of the room; hard compressed drum break, cracking dry snare pushed loud, gritty 12-bit sampler grit, short minor-key horn stab hit on every new rule, deep round sub bass, dusty vinyl hiss, sparse and menacing",
+    "exclude": "singing, melodic hook, auto-tune, trap hi-hats, 808 rolls, pop chorus, choir, male lead vocal, reverb wash, EDM",
+    "lyrics": "[Intro: female MC, low and amused, drums drop in]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Verse: rapped, staccato, horn stab on each number, male crew shouts the number back]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[horn stab, crew shouts the number]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[horn stab, crew shouts the number]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[horn stab, crew shouts the number]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[horn stab, crew shouts the number]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: beat cuts to bass only, she speaks it, dry]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n\n[End: snare hit, silence]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": "female",
+    "durationSec": 30,
+    "maxMode": false
+  },
+  {
+    "name": "hungry-young-debut-register",
+    "style": "1994 East Coast boom-bap demo tape, raw and hungry. Young male rapper about nineteen, higher slightly nasal voice with a raw cracking edge, fast eager flow pushing ahead of the kick, gasping a quick breath at every line end, dry close mic, rap only. Swung 12-bit sampler drums at 92 BPM, crunchy aliased snare, round filtered bassline, chopped dusty piano stab on loop, vinyl crackle, near-mono cassette mix, lo-fi grit.",
+    "exclude": "trap hi-hats, 808 slides, auto-tune, melodic singing, sung chorus, deep baritone, polished modern mix, orchestral strings",
+    "lyrics": "[Intro: young voice, half-spoken, eager]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Verse: fast, hungry, rushing the beat, sharp breath at each line end]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: beat drops to the piano stab, out of breath]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 72,
+    "vocalGender": "male",
+    "durationSec": 30,
+    "maxMode": false
+  },
+  {
+    "name": "radio-countdown-promo",
+    "style": "Rap radio segment, late-night New York FM, 1997, played as a station countdown bit. Singer A is the MC: deep low male rapper, smooth and unhurried, mellow near-whisper right on the microphone, calm menace, laid-back flow sitting slightly behind the beat, rapped and spoken only, no melody. Singer B is the radio host: a loud brash hype jock who only calls out the chart positions, excited, squashed AM-style compression and slapback on his voice alone. Two different people, never blended. Music: about 90 BPM boom-bap, crisp dusty snare, thick kick, a looping minor jazz electric-piano riff, dark and sparse, low upright bass, vinyl hiss. A short rising sci-fi synth blip before each ranking, drums slam back in after. Station ident feel, ends with a tape-stop.",
+    "exclude": "singing, sung chorus, melodic hook, autotune, trap hi-hats, 808 glide, choir, female vocals, pop, EDM, rock guitar, record scratches",
+    "lyrics": "[Intro: station ident over the dark keys loop, Singer A low and close]\n[Singer A, breathy]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Synth blip up] [Singer B, hype host: \"Number one\" / Singer A takes the line]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Synth blip up] [Singer B, hype host: \"Number four\" / Singer A takes the line]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Synth blip up] [Singer B, hype host: \"Number six\" / Singer A takes the line]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[Synth blip up] [Singer B, hype host: \"Number seven\" / Singer A takes the line]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[Synth blip up] [Singer B, hype host: \"Number ten\" / Singer A takes the line]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: drums out, keys only, Singer A spoken, nearly a whisper]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n[Sign-off sting, tape-stop]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": "male",
+    "durationSec": 30,
+    "maxMode": true
+  },
+  {
+    "name": "noir-strings-spoken-sermon",
+    "style": "mid-90s New York crime-saga hip hop, slow cinematic noir: a mournful minor-key violin phrase looping like an old detective-film score, bowed cello droning underneath, sparse dusty kick and a heavy dry snare at 82 BPM for a slow head nod, lots of air around the voice. Lead is a huge, slow, cavernous bass baritone, Brooklyn vowels, delivering each rule like a minister reading scripture, mostly talked rather than rapped, deliberate rests between lines, a dry smirk under the gravity. Each counted number lands in a big stone-church echo; the rest stays bone-dry and intimate. Chilly, patient, final.",
+    "exclude": "autotune, trap hi-hats, 808 bass slides, melodic hook, gospel choir, female voice, rapid double-time flow, EDM, pop, horn fanfare, bright major chords, vinyl crackle overload",
+    "lyrics": "[Intro: violin loop alone, a pulpit murmur, unhurried]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Sermon: talked like scripture, a held breath after every number]\n[Numbers ring in the stone church]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Numbers ring in the stone church]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Numbers ring in the stone church]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[Numbers ring in the stone church]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[Numbers ring in the stone church]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Benediction: beat cuts, just cello, a near-whisper verdict]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 72,
+    "vocalGender": "male",
+    "durationSec": 30,
+    "maxMode": true
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "heavy-baritone-ledger-drawl",
+  "style": "late-90s New York boom bap, 88 BPM, bare hard kick and cracking snare with wide empty gaps, one dark minor-key loop, dusty vinyl grit, a quick turntable scratch between rules, no hook. Vocal: heavy-set young Brooklyn man, deep round chest baritone, unhurried and conversational, sits a hair behind the beat yet lands every syllable dead on, faint breathy wheeze between bars, dry close-mic, punches each \"Number\" like a count-off",
+  "exclude": "singing, melodic vocals, sung hook, choir, autotune, female vocals, trap hi-hats, 808 bass, synth pad, guitar",
+  "lyrics": "[Intro: spoken, low and close]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Verse: dry rap, count-off on each number]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[Scratch]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[Scratch]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: spoken, beat drops out]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 70,
+  "vocalGender": "male",
+  "durationSec": 30,
+  "maxMode": false
+}
