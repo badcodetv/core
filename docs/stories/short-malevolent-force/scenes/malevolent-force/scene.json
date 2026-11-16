@@ -38,8 +38,8 @@
     "timeline": "https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX"
   },
   "cut": {
-    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r1/edl.json",
-    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r1/preview.mp4",
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r2/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r2/preview.mp4",
     "script": "scripts/shorts/malevolent_force_cut.py"
   }
 }

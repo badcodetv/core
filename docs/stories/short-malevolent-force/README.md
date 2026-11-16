@@ -24,4 +24,4 @@ Kai and Jack, 2026-11-13 meeting (docs/misc/2026-11-13-meeting.md): "make going 
 | Mood board round 2 | ✅ https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY (clean room from Jack's night-shop photo, 15 stills); Jack picked PR2-b/c/e, FO2-c/d/e |
 | Beats | ✅ 2026-11-16 `scenes/malevolent-force/brief.md`: one bread trip, 6 stills + end card, no voice; end card "Based on true events. Coming to a shop near you." + chocolate 10p→£12 (Jack) |
 | Clips + music | ✅ 2026-11-16: shots 1 a2, 2 a, 3 a2, 4 b, 5 b, 6 FL4-b swap; music vibes1 |
-| Rough cut 1 | 🟡 2026-11-16 https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX (18.2 s, `scripts/shorts/malevolent_force_cut.py`), awaiting Jack's notes; not in Premiere yet |
+| Rough cut 2 | 🟡 2026-11-16 https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX (20.8 s, lightning + logo ending added), awaiting Jack; not in Premiere yet |

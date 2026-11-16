@@ -106,5 +106,24 @@
   "url": "https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX",
   "what": "Rough cut 1: six picked shots, vibes1, shelf label 50p/£1/£5 on the light, lightning swap, end card, blurs; 18.2 s",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-malevolent-force/scenes/malevolent-force /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/mf-timeline"
+ },
+ {
+  "at": "2026-11-16T12:13:49+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "what": "Jack's rough cut 1 note",
+  "decided": [
+   "At 18.09 s (end card): 'after this part put the badcode logo, make lightning flash and then it appear'"
+  ],
+  "feedback": "feedback/timeline-r1",
+  "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-16T12:15:30+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX",
+  "what": "Rough cut 2 (20.8 s): lightning then the BadCode logo after the end card (Jack's r1 note)",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-malevolent-force/scenes/malevolent-force /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/mf-timeline"
  }
 ]

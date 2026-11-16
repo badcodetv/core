@@ -31,6 +31,9 @@ W, H, FPS = 1080, 1920, 24
 CW, CH = 720, 1280  # Omni clip size
 CARD = 'Based on true events.\nComing to a shop near you.'
 CARD_DUR = 2.6
+LOGO_DUR = 2.6  # Jack, 2026-11-16 r1 note: "after this part put the badcode logo, make lightning flash and then it appear"
+LOGO = REPO / 'docs/brand/logo/badcode-stacked-reversed-2400.png'
+GROUND = (5, 6, 7)  # #050607, the brand's dark ground (docs/brand/README.md)
 
 # (beat key, title, clip, in, dur, blur boxes on the 720x1280 clip [(x0,y0,x1,y1)], what we see)
 SHOTS = [('price50', '1. The only lit shop', 'mf-01-w2-FO2-c.mp4', 0.6, 2.0, [(566, 738, 648, 822)],
@@ -94,7 +97,7 @@ def main():
     cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
     starts, t = [], 0.0
     for s in SHOTS: starts.append(round(t, 3)); t += s[4]
-    pic_end = round(t, 3); total = round(pic_end + CARD_DUR, 3)
+    pic_end = round(t, 3); logo_at = round(pic_end + CARD_DUR, 3); total = round(logo_at + LOGO_DUR, 3)
     parts, notes = [], []
     for i, (beat, title, clip, tin, d, blurs, _) in enumerate(SHOTS):
         src = VID / clip
@@ -125,6 +128,18 @@ def main():
        f"drawtext=fontfile={font}:textfile={cut / 'card.txt'}:fontcolor=white:fontsize=62:line_spacing=30:"
        f"x=(w-text_w)/2:y=(h-text_h)/2:alpha='min(1,t/0.6)',scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,22\\,232)", *ENC, cut / 'v6-card.mp4')
     parts.append(cut / 'v6-card.mp4')
+    # The logo: black, a lightning flash, a dip, a second flash that fades to leave the logo standing (2 flashes, <=3 a second).
+    fr = cut / 'logo-frames'; fr.mkdir(exist_ok=True)
+    logo = Image.open(LOGO).convert('RGBA'); lw = int(W * 0.62); logo = logo.resize((lw, int(logo.height * lw / logo.width)))
+    base = Image.new('RGB', (W, H), GROUND); withlogo = base.copy(); withlogo.paste(logo, ((W - lw) // 2, (H - logo.height) // 2), logo)
+    flash = Image.new('RGB', (W, H), (232, 240, 255))
+    for k in range(int(round(LOGO_DUR * FPS))):
+        s = k / FPS
+        lit = 1.0 if 0.30 <= s < 0.38 else (0.12 if 0.38 <= s < 0.50 else (max(0.0, 1.0 - (s - 0.50) / 0.45) ** 1.6 if s >= 0.50 else 0.0))
+        under = withlogo if s >= 0.50 else base
+        Image.blend(under, flash, lit).save(fr / f'{k:04d}.png')
+    ff('-framerate', FPS, '-i', fr / '%04d.png', '-vf', 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,22\\,232)', *ENC, cut / 'v7-logo.mp4')
+    parts.append(cut / 'v7-logo.mp4')
     (cut / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
     ff('-f', 'concat', '-safe', '0', '-i', cut / 'list.txt', '-c', 'copy', cut / 'picture.mp4')
     # The music: one stem from t=0, its own ending kept, faded over its last second; the card plays in silence after it.
@@ -139,10 +154,14 @@ def main():
     beats.append({'id': 'card', 'title': '7. End card', 'start': pic_end, 'dur': CARD_DUR, 'see': CARD.replace('\n', ' '),
                   'lines': [{'i': 0, 'who': 'card', 'name': 'End card (on screen)', 't': pic_end, 'dur': CARD_DUR,
                              'text': CARD.replace('\n', ' '), 'by': 'kai'}]})
+    beats.append({'id': 'logo', 'title': '8. Lightning, then the logo', 'start': logo_at, 'dur': LOGO_DUR,
+                  'see': 'Black; lightning flashes twice; as the second flash fades the BadCode logo is standing there.', 'lines': []})
     video = [{'file': str(VID / s[2]), 'in': s[3], 'start': starts[i], 'dur': s[4], 'beat': f's{i + 1}', 'source': str(VID / s[2]), 'looped': False}
              for i, s in enumerate(SHOTS)]
     video.append({'file': str(cut / 'v6-card.mp4'), 'in': 0, 'start': pic_end, 'dur': CARD_DUR, 'beat': 'card',
                   'source': str(cut / 'v6-card.mp4'), 'looped': False})
+    video.append({'file': str(cut / 'v7-logo.mp4'), 'in': 0, 'start': logo_at, 'dur': LOGO_DUR, 'beat': 'logo',
+                  'source': str(LOGO), 'looped': False})
     edl = {'sequence': f'short-malevolent-force-1-malevolent-force-r{a.round}', 'title': 'Malevolent Force Timeline',
            'heading': f'BadCode Shorts ▲ The Malevolent Force, rough cut {a.round}',
            'intro': ('Your six picked shots, your picked music (vibes1, instrumental) and the end card. The shelf label goes 50p, £1 '
@@ -152,7 +171,7 @@ def main():
            'audio': [{'track': 'A1', 'name': 'mus-track', 'file': str(stem)}],
            'events': [{'stem': 'mus-track', 't': 0.0, 'dur': round(min(mdur, total), 3),
                        'what': f'Suno track {track.stem} (vibes1), faded over its last second', 'src': str(track)}],
-           'flags': [f'The music is {mdur:.1f} s; the end card ({pic_end:.1f}-{total:.1f} s) plays in silence after it.',
+           'flags': [f'The music is {mdur:.1f} s; the end card and the logo ({pic_end:.1f}-{total:.1f} s) play in silence after it.',
                      'Blurred: the "BREAD £50" card in shot 1\'s window; the brand-like crisp packets on the spinner in shot 2.',
                      'Not blurred: the packets on the aisle shelves in shot 3 look brand-like but read as no brand at this size.',
                      *notes]}

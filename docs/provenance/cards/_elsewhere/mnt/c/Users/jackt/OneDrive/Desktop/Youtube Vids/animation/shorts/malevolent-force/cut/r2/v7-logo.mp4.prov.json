@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r2/v7-logo.mp4",
+ "made": "2026-11-16T12:15:01+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/malevolent_force_cut.py",
+ "why": "Jack 2026-11-16 r1 note: 'after this part put the badcode logo, make lightning flash and then it appear'",
+ "inputs": {
+  "logo": "docs/brand/logo/badcode-stacked-reversed-2400.png"
+ }
+}
