@@ -21,12 +21,12 @@ household**, and the **night, fluorescent-teal look of The Malevolent Force**.
 **Point:** There are far more empty homes than homeless households; homelessness is a decision about who those homes are for,
 not a shortage. It links to Camping.
 
-## The numbers (🔴 not yet verified on the primary sources; search summaries, 2026-11-16)
+## The numbers (checked on primary sources 2026-11-16: [`numbers.md`](./numbers.md); the list below is the first search summary)
 - 134,210 households in temporary accommodation, England, 31 Dec 2025 (gov.uk, Statutory homelessness Oct-Dec 2025).
 - 382,618 people homeless on a given night, England, 2025 (Shelter).
 - 303,185 long-term empty homes, England, 2025; 1,022,158 empty in all (Action on Empty Homes, from council tax data).
 - 4,793 people sleeping rough on a single night, autumn 2025 (official snapshot).
-Verify each on gov.uk / the charity's page before any number goes on screen (`marketing-researcher`). Not to say: the US figures.
+**Checked:** 134,210 households in TA (gov.uk) and 303,185 long-term empty / 754,264 all empty (MHCLG) are official. **Not safe:** "1 million empty" (AoEH adds second homes), and 382,618 people beside homes. Not to say: the US figures.
 
 ## Checks owed
 - 🔴 The lines on every short (`docs/marketing/badcode-shorts.md`): no AI people in real footage, no AI likeness of a real politician, the reader rules (name the decision, never "you've been fooled").
