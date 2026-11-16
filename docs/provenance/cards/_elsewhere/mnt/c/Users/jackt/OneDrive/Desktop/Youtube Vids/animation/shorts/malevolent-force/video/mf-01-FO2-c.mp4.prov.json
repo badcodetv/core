@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-01-FO2-c.mp4",
+ "made": "2026-11-16T10:48:51+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FO2-c.jpg",
+ "why": "Jack 2026-11-16 'animate them please'; run.mts in the sandbox lost the download, recovered from ~/Downloads by order",
+ "prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The street is dead still; only fine rain stipples the puddles. At about one and a half seconds the shop's fluorescent light dips sharply to near-dark for half a second, the green spill on the wet pavement vanishing, then stutters back to full. Cars, houses and door stay still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+ "settings": {
+  "aspect": "9:16",
+  "duration": "8",
+  "mode": "Frames"
+ }
+}

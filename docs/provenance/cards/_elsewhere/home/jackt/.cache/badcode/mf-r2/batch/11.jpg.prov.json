@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/11.jpg",
+ "made": "2026-11-16T09:59:56.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical night snapshot on grainy expired colour film, available light only, soft focus, blue-teal cast, blown-out fluorescent tubes. A cluttered British corner shop counter with no one behind it: an unbranded lottery stand, a newspaper rack, cigarette shutters closed. The small receipt printer beside the till is still running by itself, a long curling ribbon of paper spilling over the counter edge and piling on the lino floor. The till display glows green and reads \"£50.00\". A plain white sliced loaf sits waiting on the counter. The door to the back room behind is ajar, black inside. Candid, slightly crooked framing. Thanks.",
+ "source_id": "d38e8a47-5938-48d6-ab6c-bdc1557ffac1"
+}

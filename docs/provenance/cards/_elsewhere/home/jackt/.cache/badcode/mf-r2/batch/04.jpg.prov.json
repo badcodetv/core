@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/04.jpg",
+ "made": "2026-11-16T09:59:56.203Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical amateur snapshot on cheap colour film at night, taken from inside a small British corner shop looking out through its open glass front door at an empty dark street. The door has swung ajar on its own. In the foreground a dirty rubber doormat and a plastic bread crate holding a single white sliced loaf with a sticker reading \"50p\"; a wire spinner rack of crisps at the edge; a handwritten paper sign taped to the glass, seen backwards. Outside is black, one distant streetlamp, wet pavement. Teal fluorescent light inside, grain, soft focus, underexposed, slight motion blur. Something just came in. Thanks.",
+ "source_id": "fddb808d-8c59-46ef-bfcd-88e1b7288e0f"
+}

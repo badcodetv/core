@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/10.jpg",
+ "made": "2026-11-16T09:59:56.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical amateur snapshot on cheap 35mm colour negative film, pushed at night, heavy grain, slightly soft focus, underexposed, a cold teal-green fluorescent cast. Close-up of a bread shelf in a small British corner shop: one plain white sliced loaf left on a bare metal shelf, its paper shelf-edge price label reading exactly \"£50\" in black marker, older crossed-out prices beneath it. The fluorescent tube above is half dead, so the left of the frame falls into murky darkness. Crumbs, a torn plastic bag clip, dust. Flash not used, available light only, nobody in the shop. Thanks.",
+ "source_id": "70ebb3fd-762b-4483-911e-1f82d162491e"
+}

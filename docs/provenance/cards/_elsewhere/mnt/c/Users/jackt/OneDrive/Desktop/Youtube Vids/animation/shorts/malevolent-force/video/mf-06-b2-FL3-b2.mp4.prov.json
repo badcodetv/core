@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-06-b2-FL3-b2.mp4",
+ "made": "2026-11-16T11:14:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static camera on a tripod, completely locked, no camera movement. One continuous shot. It begins just after a lightning flash: the frosted window above is fading from white back to dark blue, and the fluorescent tube buzzes and settles to its dim teal glow. Cold mist slowly breathes out from the edge of the freezer lid and drifts low across the top, curling around the loaf. The star price cards and their writing stay exactly as they are. Nothing else moves. No people. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL3-b2.jpg",
+ "why": "Jack 2026-11-16 shot 6 note: lightning flash, then the bread and freddo change price, somewhere else in the shop (after the flash)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL3-b2.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "06-b2",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T11:12:30.476Z"
+ }
+}

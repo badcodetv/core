@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r3/batch/05.jpg",
+ "made": "2026-11-16T11:08:30.969Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Wide shot from deep inside a small British corner shop at night, looking toward the front: the inside of the big shop window, its display ledge running along the bottom of the glass, cluttered with sun-faded empty dummy boxes and a dead pot plant. In the middle of the ledge, small in the frame and lit by a single clip-on lamp, sit a loaf of plain white sliced bread in a clear plastic bag and a small chocolate bar in a plain purple foil wrapper with no logo and no writing. Through the rain-beaded window: the wet terraced street, parked cars, one orange streetlamp burning. In the foreground, out of focus, the end of a shelf unit and a wire basket. Propped against the loaf is a white card price sign, big handwritten black marker letters reading exactly \"£50\". Propped against the chocolate bar is a smaller white card, big handwritten black marker letters: \"10p\" crossed out with one hard black line, and beside it \"£12\". Outside, the orange streetlamp has gone dark. Candid snapshot on cheap 400-speed colour negative film at night, pushed: heavy visible grain, slightly soft focus, muddy blacks, sickly teal-green cast from old fluorescent tubes, faint warm sodium orange from the street. Vertical 9:16. Nobody in the shop, no people, no hands, no shadows of people. No brand names or logos anywhere; every packet in the background is blurred and unreadable. Thanks.",
+ "source_id": "dfe6775a-f630-47c4-89ef-3d6dc48f0d62"
+}

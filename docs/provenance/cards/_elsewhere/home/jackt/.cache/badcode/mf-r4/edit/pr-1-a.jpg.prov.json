@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r4/edit/pr-1-a.jpg",
+ "made": "2026-11-16T12:06:21.122Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "On the small white shelf-edge price label, the black marker now reads \"£1\" where it said \"50p\", written in the same hand and the same marker. Nothing else in the photograph moves or alters: the loaf, the shelf, the light and the grain stay as they are. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/mf-anim/PR2-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/mf-anim/PR2-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "e869ae38-82f8-4123-8025-af20417e0544"
+}

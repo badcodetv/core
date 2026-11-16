@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/06.jpg",
+ "made": "2026-11-16T09:59:56.204Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 close snapshot on grainy consumer colour film, flash off, inside a cramped British corner shop at night. A low metal shelf of plain white sliced bread in clear plastic bags, most of the row gone: one loaf left at the end, a gap where the others were, crumbs on the shelf. A white shelf-edge label in sharp focus reads \"£1\". Above it a fluorescent tube flickers, caught half-bright, throwing a cold green-blue cast. The aisle behind falls off into soft blur and shadow, deeper than it should be. Off-centre, slightly underexposed, lifted murky blacks, visible grain. Unbranded packets, no people. Not polished, not CGI. Thanks.",
+ "source_id": "51959199-b7a9-4cd4-9c05-757ffbee952b"
+}

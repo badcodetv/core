@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r3/batch/00.jpg",
+ "made": "2026-11-16T11:03:56.799Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Close insert photograph at counter height in a small British corner shop at night: a scratched cream laminate shop counter at the till. On the counter, side by side, sit a loaf of plain white sliced bread in a clear plastic bag twisted shut, and a small chocolate bar in a plain purple foil wrapper with no logo and no writing. Behind them, an old beige cash register with its drawer shut, a dented coin tray and a curling roll of till receipt. Behind the counter, out of focus, the shop's glass front door shows black wet street and one orange streetlamp. Leaning on the loaf is a small white card price ticket handwritten in thick black marker that reads exactly \"£5\". Leaning on the chocolate bar is a smaller white card handwritten in thick black marker that reads exactly \"10p\". Candid snapshot on cheap 400-speed colour negative film at night, pushed: heavy visible grain, slightly soft focus, muddy blacks, sickly teal-green cast from old fluorescent tubes, faint warm sodium orange from the street. Vertical 9:16. Nobody in the shop, no people, no hands, no shadows of people. No brand names or logos anywhere; every packet in the background is blurred and unreadable. Thanks.",
+ "source_id": "965936d0-0903-44f5-9edd-6ae9c529224f"
+}

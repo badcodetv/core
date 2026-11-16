@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/00.jpg",
+ "made": "2026-11-16T09:59:56.183Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical amateur snapshot on cheap colour negative film, taken at night from across a damp British terraced street. A small corner shop glows alone, the only lit window on the whole row; every house around it is dark. A hand-written paper sign is taped inside the glass, unreadable. Fluorescent tubes spill a cold blue-teal light onto the wet pavement, a far-off sodium streetlamp gives a weak orange. The shop door is propped open and nobody is inside or outside. Slightly underexposed, heavy grain, soft focus, faint halation round the tubes, horizon a little tilted. Unglamorous and lonely, like a photo taken walking home. No people, no brands. Thanks.",
+ "source_id": "ca03bd82-d68a-4cda-8f16-07996c2e1a84"
+}

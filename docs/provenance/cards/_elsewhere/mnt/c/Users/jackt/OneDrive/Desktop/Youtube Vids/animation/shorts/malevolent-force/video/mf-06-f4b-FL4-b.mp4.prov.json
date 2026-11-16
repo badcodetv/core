@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-06-f4b-FL4-b.mp4",
+ "made": "2026-11-16T11:57:38+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static camera locked on a tripod, completely still for the whole shot: no pan, no tilt, no zoom, no drift. Nothing moves: the bread, the chocolate bar and the price cards stay exactly where they are, and the handwriting on the cards stays identical throughout. Steady cold fluorescent light for the first two seconds. At about two seconds, one sudden horror-style lightning flash explodes through the black glass of the door behind the freezer, a harsh blue-white burst that bleaches the freezer lid and the loaf for an instant, a second smaller flicker, then darkness outside again. The light settles back to exactly the same steady level as the opening and stays that way, unchanging, until the end. A crack of thunder, then only the freezer hum. No people, no voices. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL4-b.jpg",
+ "why": "Jack 2026-11-16: same setting before and after the flash, only the prices change; zoomed in on the bread",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL4-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "06-f4b",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T11:55:27.251Z"
+ }
+}

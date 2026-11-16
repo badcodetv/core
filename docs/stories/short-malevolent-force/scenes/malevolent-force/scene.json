@@ -34,6 +34,12 @@
   ],
   "moodboard_intro": "Round 2 (Jack 2026-11-16: \"make a bunch of varied ones that look like this image\", his photo of a corner-shop doorway at night on cheap colour film). Clean room: three sealed writers, one per beat, fresh web research, nothing from the repo. 15 stills (PR2/CL2/FO2 a-e): street wides, shelf inserts, aisles going dark, an empty counter, a convex mirror, the doorway. Prices: 50p, £1/£5, £50. Nobody in any frame. Round 1's nine looks are still below. Vote This / Maybe / No per still and note any beat.",
   "boards": {
-    "moodboard": "https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY"
+    "moodboard": "https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY",
+    "timeline": "https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r1/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r1/preview.mp4",
+    "script": "scripts/shorts/malevolent_force_cut.py"
   }
 }

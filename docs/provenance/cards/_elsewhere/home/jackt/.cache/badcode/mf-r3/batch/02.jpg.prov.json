@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r3/batch/02.jpg",
+ "made": "2026-11-16T11:03:56.800Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Medium shot, eye level, from across a narrow gap: at the back corner of a small British corner shop at night, an old white chest freezer with a scuffed sliding glass lid, frost on the inside of the glass. On top of the freezer lid, side by side in the middle of the frame, sit a loaf of plain white sliced bread in a clear plastic bag and a small chocolate bar in a plain purple foil wrapper with no logo and no writing. Above the freezer, a small high frosted-glass window with a rusty security grille, dark blue-black outside. Peeling cream wall, a mop bucket in the corner, a single fluorescent tube overhead with one end blackened. Taped to the front of the freezer below the bread is a large fluorescent orange star-shaped price card handwritten in black marker reading exactly \"£5\". Below the chocolate bar, a smaller fluorescent orange star card handwritten in black marker reading exactly \"10p\". Candid snapshot on cheap 400-speed colour negative film at night, pushed: heavy visible grain, slightly soft focus, muddy blacks, sickly teal-green cast from old fluorescent tubes, faint warm sodium orange from the street. Vertical 9:16. Nobody in the shop, no people, no hands, no shadows of people. No brand names or logos anywhere; every packet in the background is blurred and unreadable. Thanks.",
+ "source_id": "6f92888a-4fbb-4251-8089-9aa4bb50b49c"
+}

@@ -87,5 +87,24 @@
   "url": "https://claude.ai/artifact/QBTVPj1nBbqbyfbPwF11ju",
   "what": "Round 3: lightning shot 6, same setting, only prices change (3 options, card patch swapped at the flash)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-malevolent-force/scenes/malevolent-force/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-16T12:00:25+00:00",
+  "stage": "clips",
+  "round": 3,
+  "what": "Jack's shot 6 pick",
+  "decided": [
+   "Shot 6: b (FL4-b freezer lid, mf-06-f4b-swap). Then 'done'."
+  ],
+  "feedback": "feedback/clips-r3",
+  "feedback_docs": 9
+ },
+ {
+  "at": "2026-11-16T12:11:19+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX",
+  "what": "Rough cut 1: six picked shots, vibes1, shelf label 50p/£1/£5 on the light, lightning swap, end card, blurs; 18.2 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-malevolent-force/scenes/malevolent-force /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/mf-timeline"
  }
 ]

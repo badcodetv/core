@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/02.jpg",
+ "made": "2026-11-16T09:59:56.202Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical amateur photograph on cheap ISO 400 colour film at night, taken from the front end of the single narrow aisle of a British corner shop, looking straight down it to the back. Shelves of tins, crisps and loo roll on both sides, packets unreadable. At the far end a stockroom door stands half open onto pure black. The fluorescent tube nearest the back is dead, so the far end sits in gloom while the near end is lit teal-white. The aisle is empty, yet it feels as if someone has just stepped out of it. Grain, soft focus, slight shake blur, underexposed. Thanks.",
+ "source_id": "73862bd2-e64d-47e3-b48d-d2460ff17655"
+}

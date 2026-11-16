@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/05.jpg",
+ "made": "2026-11-16T09:59:56.203Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 amateur snapshot on cheap 400-speed colour negative film, taken at night from across a wet terraced British street, looking at a small corner shop on the end of the row. The shop is the only lit thing, but half its ceiling tubes are dead, so the left side of the window is black and the right side glows cold blue-green. A handwritten fluorescent card in the window reads \"BREAD £1\". Newspaper board, wheelie bin, a lamp post at the frame edge. The open doorway is dark and empty. Underexposed, heavy grain, soft focus, halation round the tubes, muddy teal shadows, slightly tilted. No people, no brands, no digital render. Thanks.",
+ "source_id": "655e39de-55cd-4b0f-b51e-63d4517f3738"
+}

@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL4-c2.jpg",
+ "made": "2026-11-16T11:53:37+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "flow_edit_image + PIL composite",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL4-c.jpg",
+ "why": "Jack 2026-11-16: 'literlly the only thing that chenges are the prices'; only the card area of edit candidate b is pasted (feathered) onto the original",
+ "prompt": "Change only the handwriting on the two white price cards taped to the front lip of the window ledge. On the card under the loaf, replace \"£5\" with \"£50\" in the same thick black marker handwriting. On the wide card under the purple chocolate bar, cross out \"10p\" with a single straight black marker line and write \"£12\" beside it on the same card, in the same handwriting. Everything else stays exactly the same: the bread, the chocolate bar, the ledge, the black window, the cards' size, position and shape, the framing, the lighting, colour and grain. Thanks."
+}

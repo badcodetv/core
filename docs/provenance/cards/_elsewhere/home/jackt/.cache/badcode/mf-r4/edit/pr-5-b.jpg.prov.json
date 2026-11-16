@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r4/edit/pr-5-b.jpg",
+ "made": "2026-11-16T12:05:26.458Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The handwritten figure on the white shelf label becomes \"£5\" instead of \"50p\", same black marker strokes and same handwriting. Leave the whole rest of the picture untouched: loaf, bag, shelf, shadows, colour and film grain. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/mf-anim/PR2-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/mf-anim/PR2-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "81a8fc0b-1d79-4fab-afa0-adc99961c777"
+}

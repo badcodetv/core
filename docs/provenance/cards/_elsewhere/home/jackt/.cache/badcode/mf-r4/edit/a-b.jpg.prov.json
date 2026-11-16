@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r4/edit/a-b.jpg",
+ "made": "2026-11-16T11:50:51.694Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Change only the handwriting on the two white price cards taped to the front of the counter. On the card under the loaf, replace \"£5\" with \"£50\" in the same thick black marker handwriting. On the wide card under the purple chocolate bar, cross out \"10p\" with one straight black marker line and write \"£12\" beside it on the same card in the same handwriting. Keep everything else exactly the same: the bread, the chocolate bar, the counter, the window, the cards' size, position and shape, the framing, the light, the colour and the film grain. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/mf-r4/batch/00.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/mf-r4/batch/00.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "ab3dd10f-2b14-47fc-87bd-3515fe8bede9"
+}

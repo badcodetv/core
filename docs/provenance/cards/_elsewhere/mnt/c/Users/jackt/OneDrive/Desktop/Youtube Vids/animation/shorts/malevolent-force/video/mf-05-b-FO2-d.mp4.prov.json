@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-05-b-FO2-d.mp4",
+ "made": "2026-11-16T10:45:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. A convex security mirror on the ceiling shows an empty aisle. At about one second the mirror rocks slightly on its bracket, as if something brushed past it, and swings gently back and forth twice before settling still. The reflection sways with it but stays the same, empty aisle; the room around the mirror is still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FO2-d.jpg",
+ "why": "option b, so Jack can pick (he said animate, 2026-11-16)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FO2-d.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "05-b",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T10:44:27.411Z"
+ }
+}
