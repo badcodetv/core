@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-01-w2-FO2-c-treated.mp4",
+ "made": "2026-11-16T12:17:28+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/malevolent_force_cut.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-01-w2-FO2-c.mp4",
+ "why": "blur over the BREAD £50 window card; full length, for Premiere"
+}

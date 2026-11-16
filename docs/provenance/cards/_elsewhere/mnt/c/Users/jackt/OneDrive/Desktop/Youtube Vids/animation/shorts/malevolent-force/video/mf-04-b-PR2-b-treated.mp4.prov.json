@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-04-b-PR2-b-treated.mp4",
+ "made": "2026-11-16T12:17:29+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/malevolent_force_cut.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-04-b-PR2-b.mp4",
+ "why": "shelf label 50p to £1 at 1.45 s, to £5 at 2.95 s (edits of PR2-b pasted on the label only); full length, for Premiere"
+}

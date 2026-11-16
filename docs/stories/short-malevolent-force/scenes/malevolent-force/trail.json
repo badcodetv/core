@@ -125,5 +125,11 @@
   "url": "https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX",
   "what": "Rough cut 2 (20.8 s): lightning then the BadCode logo after the end card (Jack's r1 note)",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-malevolent-force/scenes/malevolent-force /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/mf-timeline"
+ },
+ {
+  "at": "2026-11-16T12:20:45+00:00",
+  "stage": "premiere",
+  "round": 2,
+  "what": "Built into Premiere: short-malevolent-force-1-malevolent-force-r2 in malevolent force.prproj, saved; agreed cut pushed to Drive (51 files)"
  }
 ]

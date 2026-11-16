@@ -50,8 +50,8 @@ SHOTS = [('price50', '1. The only lit shop', 'mf-01-w2-FO2-c.mp4', 0.6, 2.0, [(5
           'The freezer lid: £5 and 10p. Lightning. £50, and the 10p crossed out for £12. Nothing else has changed.')]
 # Shot 4's label swaps: (edited still, from clip second, sample second for the colour match)
 SHELF_STILL = MB / 'PR2-b.jpg'
-SHELF_SWAPS = [('pr-1b-b.jpg', 1.45, 2.2), ('pr-5-b.jpg', 2.95, 4.2)]
-EDITS = pathlib.Path.home() / '.cache/badcode/mf-r4/edit'
+SHELF_SWAPS = [('PR2-b-1pound.jpg', 1.45, 2.2), ('PR2-b-5pound.jpg', 2.95, 4.2)]  # edits of PR2-b (Flow candidates pr-1b-b, pr-5-b)
+EDITS = MB
 LABEL_AREA = (230, 760, 500, 990)  # where shot 4's label sits on the 720x1280 clip; the edits relit other areas too
 
 
@@ -99,6 +99,7 @@ def main():
     for s in SHOTS: starts.append(round(t, 3)); t += s[4]
     pic_end = round(t, 3); logo_at = round(pic_end + CARD_DUR, 3); total = round(logo_at + LOGO_DUR, 3)
     parts, notes = [], []
+    TREATED = {}
     for i, (beat, title, clip, tin, d, blurs, _) in enumerate(SHOTS):
         src = VID / clip
         inputs, chain, last = ['-i', src], '', '0:v'
@@ -114,7 +115,12 @@ def main():
             w, h = x1 - x0, y1 - y0
             chain += f'[{last}]split[b{k}m][b{k}s];[b{k}s]crop={w}:{h}:{x0}:{y0},boxblur=14:2[b{k}c];[b{k}m][b{k}c]overlay={x0}:{y0}[bl{k}];'
             last = f'bl{k}'
-        n = int(round(d * FPS))
+        if last != '0:v':  # treated: a full-length copy with the blur / label swaps baked in, so Premiere keeps the handles
+            tsrc = VID / clip.replace('.mp4', '-treated.mp4')
+            ff(*inputs, '-filter_complex', chain + f'[{last}]format=yuv420p[t]', '-map', '[t]', '-an', '-c:v', 'libx264',
+               '-preset', 'veryfast', '-crf', '14', '-pix_fmt', 'yuv420p', tsrc)
+            TREATED[i] = tsrc
+            inputs, chain, last = ['-i', tsrc], '', '0:v'
         chain += (f'[{last}]trim=start={tin}:duration={d},setpts=PTS-STARTPTS,'
                   f'scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},'
                   'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,22\\,232)[v]')
@@ -156,7 +162,7 @@ def main():
                              'text': CARD.replace('\n', ' '), 'by': 'kai'}]})
     beats.append({'id': 'logo', 'title': '8. Lightning, then the logo', 'start': logo_at, 'dur': LOGO_DUR,
                   'see': 'Black; lightning flashes twice; as the second flash fades the BadCode logo is standing there.', 'lines': []})
-    video = [{'file': str(VID / s[2]), 'in': s[3], 'start': starts[i], 'dur': s[4], 'beat': f's{i + 1}', 'source': str(VID / s[2]), 'looped': False}
+    video = [{'file': str(TREATED.get(i, VID / s[2])), 'in': s[3], 'start': starts[i], 'dur': s[4], 'beat': f's{i + 1}', 'source': str(VID / s[2]), 'looped': False}
              for i, s in enumerate(SHOTS)]
     video.append({'file': str(cut / 'v6-card.mp4'), 'in': 0, 'start': pic_end, 'dur': CARD_DUR, 'beat': 'card',
                   'source': str(cut / 'v6-card.mp4'), 'looped': False})

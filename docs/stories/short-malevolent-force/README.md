@@ -24,4 +24,15 @@ Kai and Jack, 2026-11-13 meeting (docs/misc/2026-11-13-meeting.md): "make going 
 | Mood board round 2 | ✅ https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY (clean room from Jack's night-shop photo, 15 stills); Jack picked PR2-b/c/e, FO2-c/d/e |
 | Beats | ✅ 2026-11-16 `scenes/malevolent-force/brief.md`: one bread trip, 6 stills + end card, no voice; end card "Based on true events. Coming to a shop near you." + chocolate 10p→£12 (Jack) |
 | Clips + music | ✅ 2026-11-16: shots 1 a2, 2 a, 3 a2, 4 b, 5 b, 6 FL4-b swap; music vibes1 |
-| Rough cut 2 | 🟡 2026-11-16 https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX (20.8 s, lightning + logo ending added), awaiting Jack; not in Premiere yet |
+| Rough cut 2 | 🟡 2026-11-16 https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX (20.8 s, lightning + logo ending added); in Premiere (`short-malevolent-force-1-malevolent-force-r2`), saved, agreed cut on Drive |
+
+## Premiere
+
+**Project:** `C:\Users\jackt\OneDrive\Desktop\Youtube Vids\animation\shorts\malevolent-force\malevolent force.prproj` · **Sequence:** `short-malevolent-force-1-malevolent-force-r2`, 720×1280 @ 24, 20.8 s · built 2026-11-16 from `cut/r2/edl.json`
+
+| Track | What |
+| --- | --- |
+| V1 | shot 1 `mf-01-w2-FO2-c-treated` 0→2 · 2 `mf-02-PR2-e-treated` 2→4.21 · 3 `mf-03-w2-PR2-c-noaudio` 4.21→6.21 · 4 `mf-04-b-PR2-b-treated` 6.21→10 · 5 `mf-05-b-FO2-d-noaudio` 10→12 · 6 `mf-06-f4b-swap` 12→15.58 · card `v6-card` 15.58→18.21 · logo `v7-logo` 18.21→20.79 (card and logo Motion Scale 66.67) |
+| A1 | `mus-track.wav` (vibes1) 0→20.79, silent after 15 s |
+
+**Needs a human:** the export (from Premiere, never ffmpeg), then `scripts/delivery-qc.sh`; a thunder hit under the logo flash if wanted.
