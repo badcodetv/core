@@ -2,8 +2,47 @@
  "title": "True Scale Ideas",
  "eyebrow": "BadCode Shorts · True Scale · round 2 ideas",
  "heading": "True Scale: other ways to convey it",
- "intro": "Jack 2026-11-16: \"please come up with other ways to convey this\". Clean room: one ideas writer (fresh research, round 1's keys/models/maps ruled out) proposed six ways to make the ratio felt; a sealed writer per idea made the setup and the reveal. Numbers: 134,210 homeless households; 303,185 long-term empty + 267,894 second homes (about 4 each). Pick the idea you like (either still) and note it. Round 1's straight true-scale stills are on the mood board: https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF",
+ "intro": "Round 3. Jack picked the shape (Bob flash, 134,210 graphic, happy-home flash, 303,185 + 267,894 graphic); the flashes are being written. New: the WW2 bomber, as a maybe (clean room, four example stills: armour where there are no holes; the holes we see are the struggle we notice, the clean parts are the people out of sight, the armour is a home). Round 2's six ideas are folded below.",
  "sections": [
+  {
+   "h": "Maybe: the bomber",
+   "lede": "Four example stills, our own drawn bomber, no copied diagram.",
+   "groups": [
+    {
+     "slot": "idea-bomber",
+     "round": 3,
+     "title": "The bomber (survivorship bias)",
+     "line": "Armour where there are no holes: the planes hit there never came back. The armour is a home.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/BM3-a.jpg",
+       "label": "BM3-a: Night hangar, cheap colour film, cold teal fluorescent, the holes chalk-ringed",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/BM3-b.jpg",
+       "label": "BM3-b: Period look on purpose: the reveal as a 1940s pencil diagram on graph paper under a desk lamp",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "img/BM3-c.jpg",
+       "label": "BM3-c: Present-day England, high angle: the doorway everyone sees vs the hostel windows nobody counts",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "img/BM3-d.jpg",
+       "label": "BM3-d: The armour as a home: a sealed empty terraced house, steel sheet on the window as armour, one stencilled number",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Six ideas",
    "lede": "Setup on the left, reveal on the right.",
@@ -26,7 +65,8 @@
        "label": "MC2-b: reveal: straight top-down on the ring, the music has stopped",
        "warn": ""
       }
-     ]
+     ],
+     "round": 2
     },
     {
      "slot": "idea-sunbed-towels-at-dawn",
@@ -46,7 +86,8 @@
        "label": "ST2-b: reveal: high angle, rows of claimed empty loungers, families standing with bags",
        "warn": ""
       }
-     ]
+     ],
+     "round": 2
     },
     {
      "slot": "idea-homework-marked-correct",
@@ -66,7 +107,8 @@
        "label": "HW2-b: reveal: close-up of the answer box, a pencilled '1' and a bold red tick, same teal night light",
        "warn": ""
       }
-     ]
+     ],
+     "round": 2
     },
     {
      "slot": "idea-sold-out-stockroom",
@@ -86,7 +128,8 @@
        "label": "SO2-b: reveal: through the propped stockroom door, plain shrink-wrapped cases stacked floor to ceiling under one bare teal tube, untouched",
        "warn": ""
       }
-     ]
+     ],
+     "round": 2
     },
     {
      "slot": "idea-allotment-waiting-list",
@@ -106,7 +149,8 @@
        "label": "AL2-b: reveal: over the fence, a few tended plots and twice as many gone to brambles, rotting sheds and an empty deckchair, lit cold teal",
        "warn": ""
       }
-     ]
+     ],
+     "round": 2
     },
     {
      "slot": "idea-party-bags-for-no-shows",
@@ -126,9 +170,11 @@
        "label": "PB2-b: reveal: four untouched named bags left on the table, one small coated figure leaving empty-handed through the hall door",
        "warn": ""
       }
-     ]
+     ],
+     "round": 2
     }
    ]
   }
- ]
+ ],
+ "round": 3
 }

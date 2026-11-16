@@ -14,5 +14,13 @@
   "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
   "what": "Round 2: six other ways to convey it (clean room ideas writer + 6 sealed writers), setup + reveal each, 12 stills",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-16T13:53:51+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
+  "what": "Round 3: bomber maybe stills (4) added to the ideas page",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
  }
 ]
