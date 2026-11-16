@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX5-a-a.jpg",
+ "made": "2026-11-16T17:59:49.960Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "35mm colour snapshot from the kerb, horizon slightly crooked, flat overcast light, wet cobbles under the Manhattan Bridge's steel underside. Small, beside a dented parked van, a lone figure faces the camera, microphone held out to nobody. Baggy beige suit, full-length trousers to the shoes, black socks, black roll-neck, plain cap, black gloves into the cuffs. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Grain, soft corners, muted colour, no readable signs. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0d32b3e4-944e-4413-b2d7-536cd8e1746f"
+}

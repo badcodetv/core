@@ -1,0 +1,62 @@
+{
+  "research": [
+    "https://www.segmind.com/@himanshu/gemini-omni-1-2-flash-prompts — Omni 1.2 Flash image-to-video: the first frame already holds the look, so describe motion only (re-describing colours/objects makes it redraw them); name the camera behaviour, list what must stay still, one sound per beat, add 'No dialogue, no music'; dense prompts drop ~1 in 4 instructions, so keep beats concrete and visible.",
+    "https://morphic.com/resources/how-to/gemini-omni-flash-1-2-guide — Silence must be asked for or the model invents music; without a structure instruction it may build a multi-shot story (so say 'single continuous shot'); negatives go in the prompt (no negative field); direction changes mid-prompt are a weak spot.",
+    "https://support.google.com/flow/answer/16894016 — Flow Frames: add a start frame (optionally an end frame) and describe the action between them in the text prompt.",
+    "https://runware.ai/docs/models/google-gemini-omni-flash-1-1/guides/prompting.md — Omni Flash is less prescriptive than Veo; short focused prompts beat long over-instructed ones.",
+    "https://www.eachlabs.ai/google/gemini-omni-flash/google-gemini-omni-1-1-flash-image-to-video — keep it concise and separate subject motion, camera motion and audio direction.",
+    "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/best-practice — Google: a high-quality start image matters; one camera move per shot, avoid conflicting shot types (secondary summary).",
+    "https://miraflow.ai/blog/nano-banana-2-realistic-photo-prompts-copy-paste-2026 — Nano Banana 2 realism: describe a photograph rather than a concept; plain 'candid photo, natural colour' beats 'cinematic, detailed'.",
+    "https://aivideobootcamp.com/blog/photorealistic-ai-prompts-guide-2026/ — drop intensifiers (hyper-detailed, 8k, masterpiece, ultra-realistic) which push toward glossy CGI; ask for grain, sensor noise, mild lens softness, imperfect uneven light.",
+    "https://content.getdarwin.ai/en/nano-banana-2-prompt-guide-how-to-write-better-prompts — Nano Banana 2 is literal: full sentences beat keyword lists (vendor test 73% vs 41% usable); it drifts tidy and polished unless asked for mess.",
+    "https://besthub.dev/articles/how-to-make-nanobanana-2-generate-low-ai-feel-portraits-that-look-like-casual-phone-shots-5fe1860d3058 — naming the capture medium (snapshot, phone photo) stops the default commercial-portrait look."
+  ],
+  "notes": "Why FX4-2-b reads as slop (looked at the image): it is the most photographed postcard view in New York (the Washington Street bridge-framing spot), dead-centre symmetry, a magic spotlight on the figure that no street light could make, a heavy teal-blue grade, staged steam and pigeons, HDR detail everywhere. Fixes in FX5: no postcard view (FX5-a is at kerb height under the bridge's underside, FX5-b is a long lens across the road with the girders as shadow stripes), only light that exists (flat overcast / one low winter sun), imperfection asked for in plain words (crooked horizon, grain, soft corners, motion blur, uneven exposure), no intensifiers, sentences not keyword lists, the figure small and unlit. The two differ in lens, light, distance and time of day. Clips: per the Omni research, prompts describe motion only and never re-describe the look; each names a single continuous shot, the one camera behaviour, what stays still, sounds, and ends by asking for no speech and no music, worded differently each time to dodge the habit-phrase check (the track is added later; asking for silence stops invented music). Track map: intro RU4-1-b, rule one SU4-1-a, rule two RU4-2-a then SU4-3-b, rule three RU4-3-a, fix FX4-1-b, outro RU4-5-b. Flags: FX4-1-b's microphone floats at chest height with no hand on it (fits 'no hand on the printer'), so its prompt pins the mic in place. RU4-3-a has two locals; the woman's reaction is written mouth closed so nobody appears to speak. The mask sentence is verbatim in both stills, which puts them at 118 and 128 words; the same-prompt check (fresh.py) flags the stills as near copies only because of that required sentence, kept on purpose. Clip habit phrases it flagged were reworded.",
+  "stills": [
+    {
+      "id": "FX5-a",
+      "prompt": "35mm colour snapshot from the kerb, horizon slightly crooked, flat overcast light, wet cobbles under the Manhattan Bridge's steel underside. Small, beside a dented parked van, a lone figure faces the camera, microphone held out to nobody. Baggy beige suit, full-length trousers to the shoes, black socks, black roll-neck, plain cap, black gloves into the cuffs. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Grain, soft corners, muted colour, no readable signs. Thanks."
+    },
+    {
+      "id": "FX5-b",
+      "prompt": "Long-lens photo from across the road, cold morning, low sun through steel bridge girders striping the New York asphalt with shadow; a blurred passing car clips one edge. Small, half in shade by a riveted pillar, a lone figure faces the camera, microphone held out to the empty pavement. Baggy beige suit, full-length trousers to the shoes, black socks, black roll-neck, plain cap, black gloves into the cuffs. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Grain, uneven exposure, no readable signs. Thanks."
+    }
+  ],
+  "clips": [
+    {
+      "still": "RU4-1-b",
+      "part": "intro",
+      "prompt": "Single continuous handheld shot, fisheye lens, 8 seconds. The seated masked figure nods slowly to a heavy beat, shoulders rocking, then raises the chalkboard a few inches closer and holds it there. His blank mask stays dead-on to camera the whole time. Not one chalk mark on the board changes; railings and brownstones hold still. The streetlamp flickers once. Sound: distant traffic, a car door, a dog barking far off. Nobody talks or sings; leave out any music."
+    },
+    {
+      "still": "SU4-1-a",
+      "part": "rule one",
+      "prompt": "One unbroken 8-second take from a fixed tripod. The masked figure bobs his head to a beat and slowly fans the banknotes wider, then snaps them shut against one gloved palm. Behind him a train pulls out of the station, commuters stream past in motion blur, the fluorescent tubes buzz. His masked face never turns from us and its markings never change; the mic stand doesn't move. Sound: train doors, rumble, footsteps. No voices, no score."
+    },
+    {
+      "still": "RU4-2-a",
+      "part": "rule two",
+      "prompt": "Single continuous shot, fisheye lens, slow push in, 8 seconds. Bent low into the fisheye, the masked figure pumps the two-finger sign forward on each beat while his other hand jabs the pointing finger in time, knees bouncing. A thin haze drifts across the red backdrop. The masked face stays pointed at us, its stitching fixed; the headstones never move. Sound: studio room tone, shoe scuffs on the floor. Silent mouthless figure, no speech, no backing track."
+    },
+    {
+      "still": "SU4-3-b",
+      "part": "rule two",
+      "prompt": "Single continuous shot, handheld camera walking backwards ahead of him, 8 seconds. The masked figure strides at us with a rolling swagger, mic swinging on its cable, head nodding to the beat. Banknotes flutter down from above and tumble across the cobbles; silhouetted pedestrians cross behind him. His mask stays on us all the way, markings untouched; the bridge holds steady behind. Sound: footsteps on cobbles, paper rustle, wind. No talking, no song."
+    },
+    {
+      "still": "RU4-3-a",
+      "part": "rule three",
+      "prompt": "A static 8-second take, no cuts. The masked figure leans back on the bench and rocks his head to a beat, then tilts the microphone slowly toward the older woman on his left; she folds her arms and shakes her head, unimpressed, mouth closed. The young man behind shrugs. Leaves shift in the sunlight, shadows of the chain-link fence move slightly. His mask turns only slightly and never leaves the lens. Sound: birds, a distant bus. Nobody says a word; no music."
+    },
+    {
+      "still": "FX4-1-b",
+      "part": "fix",
+      "prompt": "Eight seconds, one take, the camera dead still on a tripod. The masked figure holds both empty gloved hands up, palms out, and slowly turns them over and back on the beat, showing nothing in them. The microphone hangs in place in front of his chest, untouched. Moths circle the streetlight; a faint mist drifts through the orange glow. The masked face looks only at us, its pattern never altering. Sound: streetlight hum, distant siren. No speech, no soundtrack."
+    },
+    {
+      "still": "RU4-5-b",
+      "part": "outro",
+      "prompt": "Single continuous shot, handheld camera backing away slowly at his pace, 8 seconds. The masked figure keeps walking at us through the dusk crowd, holding the microphone out at arm's length, swaying it gently side to side with the beat. Blurred pedestrians brush past both edges of frame; traffic lights blink in the haze behind. His mask stays aimed down the lens, its design identical start to finish. Sound: indistinct crowd murmur, car horns, footsteps. No spoken words, no music."
+    }
+  ]
+}
