@@ -15,26 +15,56 @@
     {
       "key": "bob",
       "at": "0:00",
-      "name": "1. Bob (flash)",
+      "name": "v1 1. Bob (flash)",
       "blurb": "Bob from Camping on his bench: a regular bloke who lost it all in 2008, not 'them'."
     },
     {
       "key": "crowd",
       "at": "0:03",
-      "name": "2. 134,210 (graphic)",
+      "name": "v1 2. 134,210 (graphic)",
       "blurb": "True-scale graphic, pull back: every homeless household in England, 134,210."
     },
     {
       "key": "home",
       "at": "0:07",
-      "name": "3. A home (flash)",
+      "name": "v1 3. A home (flash)",
       "blurb": "A warm, lit, happy home: what a home is."
     },
     {
       "key": "homes",
       "at": "0:09",
-      "name": "4. 303,185 + 267,894 (graphic)",
+      "name": "v1 4. 303,185 + 267,894 (graphic)",
       "blurb": "Pull back further: 303,185 long-term empty homes and 267,894 second homes beside the crowd (about 4 each)."
+    },
+    {
+      "key": "nw1",
+      "at": "0:15",
+      "name": "v2 1. Tiebreaker",
+      "blurb": "Pub quiz night. Mic feedback. The quizmaster: 'Tiebreaker! Nearest wins the meat raffle. How many homes in England have been empty six months or more?'"
+    },
+    {
+      "key": "nw2",
+      "at": "0:19",
+      "name": "v2 2. The guesses",
+      "blurb": "Quick cuts: confident guesses scribbled and shouted ('Ten grand.' 'Fifty thousand, tops.'). Bob, a team of one in the corner, writes without hesitating."
+    },
+    {
+      "key": "nw3",
+      "at": "0:24",
+      "name": "v2 3. The answer",
+      "blurb": "'Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes.' Groans. 'Nearest... table nine. Bob.'"
+    },
+    {
+      "key": "nw4",
+      "at": "0:29",
+      "name": "v2 4. How'd you know?",
+      "blurb": "The whole pub turns to look at Bob for the first time; rucksack and sleeping mat already on. 'How'd you know that?' Bob: Jack's line."
+    },
+    {
+      "key": "nw5",
+      "at": "0:34",
+      "name": "v2 5. The prize",
+      "blurb": "Bob takes the meat raffle, has nowhere to cook it, hands it on, walks out into the rain. Quizmaster: '...Right. Picture round.'"
     }
   ],
   "flow_project": "7530554c-5d9d-40fc-beeb-b11d29a68edf",
