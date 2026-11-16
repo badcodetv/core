@@ -23,4 +23,4 @@ Kai and Jack, 2026-11-13 meeting (docs/misc/2026-11-13-meeting.md): "make going 
 | Mood board round 1 | ✅ 9 stills, no votes (Jack moved on to his reference photo) |
 | Mood board round 2 | ✅ https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY (clean room from Jack's night-shop photo, 15 stills); Jack picked PR2-b/c/e, FO2-c/d/e |
 | Beats | ✅ 2026-11-16 `scenes/malevolent-force/brief.md`: one bread trip, 6 stills + end card, no voice; end card "Based on true events. Coming to a shop near you." + chocolate 10p→£12 (Jack) |
-| Clips + music | 🟡 2026-11-16: shots 1-5 picked; round 2 (lightning shot 6, three options + Silent Hill-style music, 12 takes) on https://claude.ai/artifact/QBTVPj1nBbqbyfbPwF11ju, awaiting Jack |
+| Clips + music | 🟡 2026-11-16: shots 1-5 picked, music vibes1 picked; shot 6 round 3 (lightning, only the prices change) on https://claude.ai/artifact/QBTVPj1nBbqbyfbPwF11ju, awaiting Jack |

@@ -2,9 +2,42 @@
  "title": "Malevolent Force Picks",
  "eyebrow": "BadCode Shorts · The Malevolent Force · clips and music",
  "heading": "The Malevolent Force: pick a clip per shot, and the music",
- "round": 2,
- "intro": "Round 2, on your notes. Shots 1-5 are picked (1 a2, 2 a, 3 a2, 4 b, 5 b). Shot 6 remade: lightning, then the bread and the chocolate bar change price somewhere else in the shop. Each option is a BEFORE clip (£5 / 10p) cut on its brightest flash frame to an AFTER clip (£50 / 10p crossed out £12): a rough join for judging, the real cut is done in Premiere. Music remade as ambient in the Silent Hill vein: six sealed writers, two takes each, open in Suno. Round 1 is folded below.",
+ "round": 3,
+ "intro": "Round 3, on your note: the setting stays the same and only the prices change, close on the bread. One still per option and one lightning clip; the new price cards are an edit of that same still, cut out and laid over the clip from the brightest flash frame, so nothing else can change. Shots 1-5 and the music (vibes1) are picked; earlier rounds are folded below.",
  "sections": [
+  {
+   "h": "Round 3",
+   "lede": "Pick the lightning shot.",
+   "groups": [
+    {
+     "slot": "clip-06-swap",
+     "round": 3,
+     "title": "6. Lightning, only the prices change (£5 → £50, 10p → £12)",
+     "line": "Close on the bread; the flash is at about 2.5 s.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-06-f4a-swap.mp4",
+       "label": "a: the end of the counter by the dark window",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-06-f4b-swap.mp4",
+       "label": "b: the freezer lid by the door glass",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "clips/mf-06-f4c-swap.mp4",
+       "label": "c: the window ledge, the bolt in the glass",
+       "warn": "a dark blurred shape sits in the glass behind the loaf (a reflection?)"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 2",
    "lede": "Pick the lightning shot and the music.",

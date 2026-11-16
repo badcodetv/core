@@ -79,5 +79,13 @@
   ],
   "feedback": "feedback/clips-r2",
   "feedback_docs": 8
+ },
+ {
+  "at": "2026-11-16T11:59:03+00:00",
+  "stage": "clips",
+  "round": 3,
+  "url": "https://claude.ai/artifact/QBTVPj1nBbqbyfbPwF11ju",
+  "what": "Round 3: lightning shot 6, same setting, only prices change (3 options, card patch swapped at the flash)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-malevolent-force/scenes/malevolent-force/picks.json <out.html>"
  }
 ]

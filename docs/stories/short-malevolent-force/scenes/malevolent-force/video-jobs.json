@@ -99,6 +99,30 @@
    "motion": "Locked-off tripod shot, no camera movement, no zoom. One continuous shot. It opens a moment after a lightning flash: the sky outside the window is fading from white to black and the room settles to its dim teal light. The streetlamp outside stays dark. Rain keeps running down the window glass; far off, the sky glows faintly once without a flash. On the ledge, the clip-on lamp flickers once and holds. The price cards and their writing stay exactly as they are. No people. Thanks.",
    "character": null,
    "why": "Jack 2026-11-16 shot 6 note: lightning flash, then the bread and freddo change price, somewhere else in the shop (after the flash)"
+  },
+  {
+   "key": "06-f4a",
+   "n": 6,
+   "still": "FL4-a",
+   "motion": "Locked-off static shot on a tripod: the camera does not move at all, no pan, no tilt, no zoom, no shake. Nothing in the shop moves; the bread, the chocolate bar and the price cards stay perfectly still and the writing on the cards never changes. For the first two seconds the cold fluorescent light is steady. At about two seconds a single horror-film lightning flash bursts through the black window on the left, a hard white-blue light that blasts across the counter and the bread for a split second, flickers once more, and is gone. The light then returns to exactly the same steady fluorescent level as the start and holds, unchanged, to the end of the shot. Outside the window stays black. Low rumble of thunder, the hum of the fluorescent tube. No people, no voices. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-16: same setting before and after the flash, only the prices change; zoomed in on the bread"
+  },
+  {
+   "key": "06-f4b",
+   "n": 6,
+   "still": "FL4-b",
+   "motion": "Static camera locked on a tripod, completely still for the whole shot: no pan, no tilt, no zoom, no drift. Nothing moves: the bread, the chocolate bar and the price cards stay exactly where they are, and the handwriting on the cards stays identical throughout. Steady cold fluorescent light for the first two seconds. At about two seconds, one sudden horror-style lightning flash explodes through the black glass of the door behind the freezer, a harsh blue-white burst that bleaches the freezer lid and the loaf for an instant, a second smaller flicker, then darkness outside again. The light settles back to exactly the same steady level as the opening and stays that way, unchanging, until the end. A crack of thunder, then only the freezer hum. No people, no voices. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-16: same setting before and after the flash, only the prices change; zoomed in on the bread"
+  },
+  {
+   "key": "06-f4c",
+   "n": 6,
+   "still": "FL4-c",
+   "motion": "Locked camera on a tripod, perfectly still, no movement of any kind: no pan, tilt, zoom or shake. Nothing in the frame moves; the loaf, the chocolate bar and the price cards stay still and the writing on the cards never changes. Steady fluorescent light for the first two seconds. At about two seconds, lightning strikes outside: the black window behind the bread blows out to a blinding blue-white for a split second, throwing the loaf into hard silhouette, then one shorter flicker, then black again. The light inside returns to exactly the same steady level as the opening and holds unchanged to the end. Thunder rolls, then silence and the faint buzz of the tube. Nothing appears outside the window. No people, no voices. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-16: same setting before and after the flash, only the prices change; zoomed in on the bread"
   }
  ]
 }
