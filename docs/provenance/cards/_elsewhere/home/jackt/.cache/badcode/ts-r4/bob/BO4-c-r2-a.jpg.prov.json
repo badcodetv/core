@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r4/bob/BO4-c-r2-a.jpg",
+ "made": "2026-11-16T13:59:34.750Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 night photograph on cheap grainy colour film, shot from the driver's seat of a parked car looking out through a windscreen dotted with rain. The dark dashboard edge and a soft wiper blade frame the bottom of the picture. Across the car park, on a bench under a cold teal fluorescent lamp, the man from the attached reference sheet has just glanced up and meets the camera's eye, a small tired half-nod, as if to a neighbour. Raindrops catch the lamp as blurred teal points; the focus sits on him, sharp and still. Quiet, unsentimental, a moment of being seen. No logos, no number plates, no readable text. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9a4f42c3-68d6-4795-9c6a-f5e80462d096"
+}

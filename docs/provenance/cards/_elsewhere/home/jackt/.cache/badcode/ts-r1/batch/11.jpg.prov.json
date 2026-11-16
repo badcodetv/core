@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/11.jpg",
+ "made": "2026-11-16T13:21:35.741Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 night photograph of a long, wet London-brick wall lit by one buzzing teal fluorescent tube, covered top to bottom in a tight grid of hundreds of small black combination key safes, the kind screwed beside the front doors of short lets, their dials catching the light, every one shut, the grid running out of frame on all sides as if it never ends. Stencilled once in white paint across the bricks near the bottom, slightly flaked: \"267,894\". No people, a puddle on the pavement reflecting the teal. Documentary street photography, shot on CineStill 800T, 28mm lens, slight vignette, coarse grain, a little camera tilt, cheap and cold. Thanks.",
+ "source_id": "608a24db-f78d-4aa3-9c6c-9c8b4844041d"
+}

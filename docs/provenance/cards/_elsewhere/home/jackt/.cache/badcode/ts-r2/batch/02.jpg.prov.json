@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/02.jpg",
+ "made": "2026-11-16T13:36:21.953Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical photograph taken just before dawn at a cheap package hotel pool on the Spanish coast. The camera sits low at the edge of the water, looking along the pool deck. The underwater lights make the pool glow a cold fluorescent teal, and that glow is the only light, washing the pale wet tiles. Tight rows of white plastic sunloungers line the deck, and every single one has a plain beach towel spread neatly flat across it, corners squared. Nobody is anywhere. Behind them, a dark concrete hotel block with unlit balconies. Shot on Cinestill 800T, heavy grain, slight halation, lonely and quietly eerie. Thanks.",
+ "source_id": "24b912e0-1597-47d1-ba0e-f143f6da9690"
+}

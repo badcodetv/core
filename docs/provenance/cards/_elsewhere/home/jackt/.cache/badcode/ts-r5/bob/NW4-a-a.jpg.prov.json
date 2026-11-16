@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/bob/NW4-a-a.jpg",
+ "made": "2026-11-16T14:21:31.325Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid night photograph inside a worn British local pub on quiz night, shot from behind the bar at shoulder height with a wide lens. Every drinker in the room has twisted round in their seat to stare at the far corner: builders in hi-vis, a hen party in sashes, old regulars with pints halfway up. In that corner, small in the frame and standing upright beside table nine, is the man from the attached reference sheet, a rucksack on his back with a rolled sleeping mat strapped on top, calm, meeting their eyes. Patterned carpet, unbranded fruit machine glowing, answer sheets and tiny pencils on tables. Warm tungsten light, red halation on bulbs, coarse grain, a cold teal rain-streaked window behind him. No readable text. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "83f37950-9e97-4f50-a24d-f96abbc41105"
+}

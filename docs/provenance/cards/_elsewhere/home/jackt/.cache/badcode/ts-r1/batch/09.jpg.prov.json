@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/09.jpg",
+ "made": "2026-11-16T13:21:35.740Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 night photograph of a huge model-railway diorama on a warehouse floor, seen from a low, level camera. Rows of tiny grey English terraced houses, thousands of them, laid out in four rectangular blocks. Front left, one small cluster of houses lit cold fluorescent teal from a single overhead tube: the homeless households. Behind it, two long blocks of dark, unlit houses. Beyond those, a fourth block the same size again where every tiny window glows warm amber with a lamp left on, curtains half drawn, no figures anywhere. The teal cluster looks small now, roughly a quarter of everything else. Shot on CineStill 800T, 35mm lens, visible grain, halation round the windows, slightly underexposed, dust on the model roofs. Thanks.",
+ "source_id": "3e187af5-f634-431d-82c6-bf22694abc3a"
+}

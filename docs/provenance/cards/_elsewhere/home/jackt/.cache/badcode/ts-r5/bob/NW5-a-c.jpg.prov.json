@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/bob/NW5-a-c.jpg",
+ "made": "2026-11-16T14:22:45.439Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid photograph inside a worn British local pub on quiz night. Low angle at table height, 35mm lens: the man from the attached reference sheet, rucksack and rolled sleeping mat on his back, leans down and slides a small cling-filmed butcher's tray of sausages, chops and bacon across a sticky table towards an older couple. His expression is calm, almost kind, a small half-smile; their hands hover, unsure whether to take it. Pint glasses, tiny pencils, folded answer sheets face-down. Warm tungsten light from above, a soft red-orange glow from an unbranded fruit machine behind, patterned carpet. Shot on cheap 400-speed colour film, visible grain, slight halation, slightly underexposed. No readable text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "801776e5-4706-432f-8875-a3a88156280d"
+}

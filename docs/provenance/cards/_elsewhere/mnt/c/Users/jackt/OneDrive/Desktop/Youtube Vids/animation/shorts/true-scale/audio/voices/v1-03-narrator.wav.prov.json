@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v1-03-narrator.wav",
+ "made": "2026-11-16T14:40:09+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "And these are the homes nobody lives in.",
+ "inputs": {
+  "profile": "# Audio Profile\nA man in his forties, present-day southern English, low and dry. Deadpan, certain, unhurried: he states the numbers like a man reading a gas meter, no outrage, no sadness performed. Each line placed with total authority and a hair of contempt for the decision, never for the listener.\n\n## Scene:\nNight. A cold, empty car park under one teal streetlight; the camera pulls back over thousands of tiny figures, then rows of dark houses.\n\n## Sample Context:\nThe speaker is BadCode, a voice from a future that already went wrong. It has seen exactly how this housing story ends. Sarcastic on top, quietly on the viewer's side underneath. Short sentences, said once.\n",
+  "profile_file": "docs/stories/short-true-scale/voices/profiles/narrator-iapetus.md"
+ },
+ "settings": {
+  "voice": "Iapetus",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

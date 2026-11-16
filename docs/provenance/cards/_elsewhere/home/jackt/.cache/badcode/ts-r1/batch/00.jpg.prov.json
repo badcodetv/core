@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/00.jpg",
+ "made": "2026-11-16T13:21:35.738Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph. A huge matte black tabletop stretches away into darkness. In the centre, very small, stand three 1:87 model-railway figures: an adult, a second adult, and a child holding a hand, with a tiny suitcase beside them. A single cold fluorescent teal light from above makes a small pool around them; everything beyond falls to black, so the empty table looks endless and ready to be filled. Shot low on a 50mm macro lens, shallow focus, the figures sharp and the table's dust and scratches visible. Cheap colour negative film at night, visible grain, slight halation round the light. Painted plastic figures, no faces readable. No text. Thanks.",
+ "source_id": "22f649ca-055e-4e85-9ec3-ab87f3a6a733"
+}

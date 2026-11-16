@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r3/batch/00.jpg",
+ "made": "2026-11-16T13:53:02.775Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph inside a cavernous aircraft hangar at night, lit only by long cold fluorescent tubes that turn everything a sickly teal. An invented, generic twin-engine wartime bomber with plain unmarked grey-green paint fills the frame, its wings and tail peppered with small ragged bullet holes, each one circled in white chalk. The two engines and the glazed cockpit nose are spotless, untouched. A lone mechanic in overalls stands far off with his back to us, clipboard hanging at his side, looking up at the holes. Concrete floor wet and reflective. Shot on cheap consumer colour film, heavy grain, slight underexposure, faint halation on the tubes. Thanks.",
+ "source_id": "9f9b8537-879c-462e-9664-623724d9670e"
+}

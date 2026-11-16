@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/08.jpg",
+ "made": "2026-11-16T13:36:21.954Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 night photograph shot on cheap colour film, visible grain, slight halation. A lone adult in a worn parka, seen from behind, stands at a padlocked chain-link gate to a British council allotment site at the edge of a housing estate. In one hand, lowered at their side and readable to us, a folded council letter whose top line reads \"You are on our waiting list\". A heavy padlock and rusted chain loop the gate. Beyond it, dark shapes of sheds and bean poles. One fluorescent security lamp on a pole casts a cold teal light over the wet path; the sky is deep blue-black. Quiet, lonely, faintly eerie. No other people. Thanks.",
+ "source_id": "f66b7c4a-8c4e-4bf3-b252-d6f2b9a0544b"
+}

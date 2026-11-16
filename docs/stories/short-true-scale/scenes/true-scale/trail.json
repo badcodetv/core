@@ -30,5 +30,16 @@
   "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
   "what": "Round 5: v2 Nearest Wins stills (clean room, 18)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-16T14:45:49+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "Rough cut 1: v1 then v2 back to back, stills with pushes, AI Studio voices, 49.5 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/ts-timeline",
+  "decided": [
+   "Jack: 'you decide' on picks, Bob's line and voices"
+  ]
  }
 ]

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r4/bob/BO4-a.jpg",
+ "made": "2026-11-16T13:57:07.623Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 night photograph on cheap 800-speed colour negative film, heavy grain, slight halation. The man from the attached reference sheet sits alone on a metal bench at the far edge of a near-empty supermarket car park, small in the frame, under a single cold fluorescent lamp that turns everything teal. Wet tarmac shines with faded white bay lines; a row of abandoned trolleys; a small tent pitched behind the bench. He sits upright, hands clasped between his knees, looking calmly across at the distant glowing shop entrance. Shot from low and far away on a 35mm lens, lots of dark empty space above him. No signs, no logos, no readable text. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "af3b4f6e-24c8-42e9-b168-6b2fd5f9eb1d"
+}

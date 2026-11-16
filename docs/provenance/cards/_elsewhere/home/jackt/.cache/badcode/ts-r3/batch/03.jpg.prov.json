@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r3/batch/03.jpg",
+ "made": "2026-11-16T13:53:02.776Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph of a single terraced house in an English street at night, empty and sealed. Its front door and windows are covered with grey perforated steel security sheets, bolted on like armour plating, the steel catching a cold teal fluorescent glow from a lamp post. Neighbouring houses are dark. On the steel sheet over the front window, spray-stencilled in white, the number 303,185 and nothing else. A small figure in a hooded coat stands on the pavement with their back to us, looking up at the locked house, carrying a holdall. No brand names, no other text. Cheap colour film, heavy grain, deep shadows, wet tarmac. Thanks.",
+ "source_id": "3a829fc3-ca67-4fdc-b2f4-3f4a950a71cc"
+}

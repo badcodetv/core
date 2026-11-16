@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/07.jpg",
+ "made": "2026-11-16T13:36:21.954Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph through the half-open back door of the same small British corner shop at night, looking into its cramped stockroom. A single bare fluorescent tube throws hard cold teal light down onto plain brown cardboard cases, unlabelled, stacked floor to ceiling on two pallets and still sealed in clear shrink-wrap, the plastic catching the light. Enough to refill the empty shelf out front about four times over, neat and untouched, a dusty delivery note pinned to the wrap. Foreground: the edge of the door and the dim shop aisle. No people. Shot on Cinestill 800T, pronounced grain, slight halation, deep shadows in the corners, quiet and accusing. Thanks.",
+ "source_id": "9da163b7-f451-47cb-b379-430507cc40e8"
+}

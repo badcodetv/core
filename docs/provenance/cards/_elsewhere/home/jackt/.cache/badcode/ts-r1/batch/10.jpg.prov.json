@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/10.jpg",
+ "made": "2026-11-16T13:21:35.741Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 night photograph from a hillside above a small English harbour town out of season, January. Steep rows of painted fishermen's cottages and newer holiday flats tumble down to a dark harbour, and nearly every window is lit warm and identical by a timer lamp, yet the streets are completely empty, no cars moving, no one on the quay. In the foreground, at the bottom of the frame, one cold teal fluorescent doorway of a run-down guesthouse used as a hostel, a single tiny silhouette standing in it. The brightest town you have ever seen, and nobody home. Shot on Kodak Portra 800 pushed two stops, 50mm, handheld, heavy grain, mist off the sea, slight motion softness. Thanks.",
+ "source_id": "47b37504-15d3-47dc-b70d-25a8bac4a6be"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/09.jpg",
+ "made": "2026-11-16T13:36:21.954Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 night photograph on cheap colour film, grain and soft halation, looking over a chain-link fence down a long British allotment site. Near the fence, a few neat plots with tidy rows and a small shed with a lit window. Beyond them, plot after plot left to ruin, about twice as many: brambles taller than a person, nettles, a timber shed collapsed inward, a greenhouse with smashed panes, old carpet rotting over a bed, a faded striped deckchair sitting alone in the weeds. A single fluorescent lamp throws cold teal light across it all; the sky is deep blue-black. Clearly plenty of empty ground. No people. Thanks.",
+ "source_id": "81eb5275-b465-4736-a8f3-914cfa56d318"
+}

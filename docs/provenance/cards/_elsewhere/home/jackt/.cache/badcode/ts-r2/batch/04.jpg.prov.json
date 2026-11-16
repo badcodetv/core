@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/04.jpg",
+ "made": "2026-11-16T13:36:21.953Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph shot straight down onto a worn Formica kitchen table at night, lit only by a cheap fluorescent tube that turns everything a cold teal, with grainy, slightly underexposed colour film texture. An open primary-school maths exercise book with squared paper fills the frame. At the top, in a child's careful pencil handwriting: \"How many families have no home?\" Below it, a wax-crayon drawing: four small wonky houses in a row, each with a door and a chimney, and beside them one stick-figure family holding hands. An empty box drawn in pencil sits at the bottom of the page. A chewed pencil, a pink rubber, loose crayons and a plastic juice beaker lie at the edges. No digits anywhere. Quiet, lonely, a little eerie. Thanks.",
+ "source_id": "5daf4e8c-8b50-4ec5-81ad-a5a1ebc225c6"
+}

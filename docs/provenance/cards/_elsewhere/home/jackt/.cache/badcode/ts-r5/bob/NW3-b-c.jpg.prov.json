@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/bob/NW3-b-c.jpg",
+ "made": "2026-11-16T14:20:55.223Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph, night, cheap colour film, visible grain, warm tungsten against a cold teal window. Over the shoulder of a burly landlord behind the bar, his arm stretched out, microphone in hand, pointing across a crowded British local pub. The line of his arm leads to the far corner, where the man from the attached reference sheet sits alone at a small table, pencil set down, calm and unsurprised, lit by the coloured glow of an unbranded fruit machine; rain streaks the dark window behind him. In the midground, old regulars groan, a pint paused halfway, and the first heads begin to turn. Focus on the corner. No readable text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "f23c44eb-2d09-4093-8d31-0d94f1dadcdc"
+}

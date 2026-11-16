@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/bob/NW1-b-a.jpg",
+ "made": "2026-11-16T14:18:30.227Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid photograph, night, a British local pub on quiz night. Over the shoulder of the man from the attached reference sheet, seated alone at a small corner table, back to camera and soft in the left foreground, one answer sheet and a tiny pencil in front of him, his hand already lifting the pencil. Deep across the room and sharp, a heavyset landlord at the bar leans into a handheld microphone and holds one sheet up at arm's length; beside him, meat raffle trays under cling film. Tables of drinkers between them, faces turned toward the landlord. A rain-streaked window at the right edge glows cold teal against the warm tungsten room and fruit-machine light. Cheap colour film, grain. All writing unreadable. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c14683a3-2358-41b8-a052-367216f241d6"
+}

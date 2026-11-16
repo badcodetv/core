@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/11.jpg",
+ "made": "2026-11-16T13:36:21.954Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph on grainy cheap colour film, night, the same British church hall now almost empty. Low wide view from the far end: on a long trestle table under cold flickering teal fluorescent tubes sit exactly four untouched paper party bags, each with a different name handwritten on it, neatly lined up. In the foreground near the open double doors, a small child seen only from behind, in a zipped winter coat and woolly hat, hands empty at their sides, walking out into the dark car park. Deflated balloons on the floor, folded chairs stacked against the wall. Quiet, cold, slightly eerie, the bags in sharp focus. Thanks.",
+ "source_id": "94f795c7-7c26-44b9-8154-27fe3ff3394e"
+}

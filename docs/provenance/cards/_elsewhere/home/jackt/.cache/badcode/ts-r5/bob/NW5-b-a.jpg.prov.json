@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/bob/NW5-b-a.jpg",
+ "made": "2026-11-16T14:23:20.770Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid night photograph from across a wet British street, looking back at a small corner pub. The pub window glows amber; through the steamed glass, blurred drinkers have turned to a table where a lone cling-filmed meat tray now sits. In the foreground left, walking away from the pub towards the camera's edge, the man from the attached reference sheet, rucksack and rolled sleeping mat on his back, head slightly down, unhurried, rain catching the light. Cold teal streetlight, puddles reflecting the warm window, sodium haze. Shot on cheap high-speed colour film pushed a stop, heavy grain, mixed tungsten and cyan colour casts, slightly soft focus. Unbranded signage, no readable text, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "6fb44828-001b-4ab5-b5d1-e4d86b7886e5"
+}
