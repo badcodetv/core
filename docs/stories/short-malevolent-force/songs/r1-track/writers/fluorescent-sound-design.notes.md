@@ -1,0 +1,10 @@
+# fluorescent-sound-design — notes (redo)
+
+Redo after the sameness gate flagged the shared phrase "a single high" in the style box; the style box is rewritten in fresh wording (the "tube ping" is now "one bright glassy tink", the drone and piano lines reworded throughout).
+
+What shaped it:
+
+- **The reference.** The YouTube page (https://www.youtube.com/watch?v=LGD79pQY1kI) returned only the title "Damned". Secondary sources describe the track as the Black Ops Zombies menu theme: an echoey, creepy, haunting piano with simple melody lines over menacing background growls and clicks, played very quietly as ambience when nothing else is happening (search summary of https://www.sputnikmusic.com/album/70867/ (403 on direct fetch), https://breezewiki.discard.no/callofduty/wiki/Damned and https://callofduty.fandom.com/wiki/Damned (both blocked on direct fetch); https://www.callofdutyzombies.com/topic/158985-ambience-background-music). Unverified: nobody has listened to it. This experiment keeps only its bones (a few sparse wrong piano notes, growl and click texture underneath, quiet ambience) and makes the shop the instrument. The game, composer and track are not named in the prompt.
+- **The hum.** A magnetic ballast buzzes at twice mains frequency, 100 Hz on UK 50 Hz mains (https://makezine.com/article/maker-news/ask-make-why-do-flourescent-lights/, https://www.todayifoundout.com/?p=43461, https://jahonen.kapsi.fi/Electronics/Fluorescent%20light%20upgrade/). 100 Hz sits just above G2 (98 Hz), hence "tuned to sit just under a low G" as the drone root: a British tube, literally.
+- **Structure for 17 s.** Events listed in picture order (hum, fridge, door at 2 s, three piano notes on the 6-10 s flickers, back-room tone for the stockroom, sub thud plus tink plus relay click into silence for the end card). Excludes block anything with a beat, a melody or a voice.
+- Settings: v6, 17 s fixed by the story; variety normal, weirdness 60, styleInfluence 75 kept from the first draft (only the wording failed the check).

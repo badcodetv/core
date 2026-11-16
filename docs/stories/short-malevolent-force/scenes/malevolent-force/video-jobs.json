@@ -1,0 +1,56 @@
+{
+ "option": "a",
+ "skip": [
+  7
+ ],
+ "extra": [
+  {
+   "key": "01-b",
+   "n": 1,
+   "still": "FO2-c",
+   "motion": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. Fine rain stipples the puddles and nothing moves. At about two seconds the far orange streetlamp at the end of the terrace flickers once and goes out for good, and its orange reflections on the wet road fade to black. The corner shop keeps glowing teal, now the only light on the whole street. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said animate, 2026-11-16)"
+  },
+  {
+   "key": "02-b",
+   "n": 2,
+   "still": "PR2-e",
+   "motion": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The glass door hangs open onto the black street. At about one second it begins to swing slowly closed by itself and at about two and a half seconds it stops dead a hand's width short of the frame, the street now only a thin dark gap. The taped card moves with the door, unchanged. Floor, crate and stand stay still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said animate, 2026-11-16)"
+  },
+  {
+   "key": "03-b",
+   "n": 3,
+   "still": "PR2-c",
+   "motion": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. A quiet aisle; the fluorescent tubes hum steadily. At about one and a half seconds the stacked wire basket on the floor at the bottom left slides a few inches along the tiles by itself, scraping, as if nudged in passing, and stops. It stays flat on the floor and does not tip or lift. The shelves and stockroom door stay still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said animate, 2026-11-16)"
+  },
+  {
+   "key": "04-b",
+   "n": 4,
+   "still": "PR2-b",
+   "motion": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The loaf sits still on the bare metal shelf. From about half a second the fluorescent light sags slowly, over a second, to near-darkness and holds there, buzzing. At about three seconds it snaps back to full brightness all at once. As it returns, the twisted loose end of the plastic bread bag stirs faintly, as if breathed on, then stills. The loaf and the '50p' card stay unchanged. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said animate, 2026-11-16)"
+  },
+  {
+   "key": "05-b",
+   "n": 5,
+   "still": "FO2-d",
+   "motion": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. A convex security mirror on the ceiling shows an empty aisle. At about one second the mirror rocks slightly on its bracket, as if something brushed past it, and swings gently back and forth twice before settling still. The reflection sways with it but stays the same, empty aisle; the room around the mirror is still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said animate, 2026-11-16)"
+  },
+  {
+   "key": "06-b",
+   "n": 6,
+   "still": "FO2-e",
+   "motion": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The front door stands open; at the back of the shop the stockroom door is wide open onto cold white light. At about one and a half seconds the stockroom door starts to swing slowly shut by itself, and at about three seconds it closes, cutting off the cold light so the back of the shop goes dim. The front door and its 'BREAD £50' sign stay unchanged. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+   "character": null,
+   "why": "option b, so Jack can pick (he said animate, 2026-11-16)"
+  }
+ ]
+}

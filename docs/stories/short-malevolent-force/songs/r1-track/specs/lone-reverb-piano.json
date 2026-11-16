@@ -1,0 +1,17 @@
+{
+  "style": "dark ambient horror piano, solo grand piano up high, restless running eighth-note figure in E minor at 180 BPM, stepwise minor phrase that circles and never resolves, cavernous cathedral reverb so every note bleeds into the next, haunting menu theme, sparse, echoing, deep menacing growls far below, dry mechanical clicks, no percussion, three stuttering staccato stabs in the middle, final hard low piano cluster then a long reverb tail fading to silence, instrumental",
+  "exclude": "vocals, singing, choir, spoken word, drums, drum kit, beat, bass drop, strings, synth lead, guitar, major key, uplifting, lo-fi",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false,
+  "title": "malevolent force r1-lone-reverb-piano",
+  "mode": "custom",
+  "workspace": "short-malevolent-force"
+}

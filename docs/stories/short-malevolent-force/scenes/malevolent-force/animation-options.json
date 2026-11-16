@@ -1,0 +1,280 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Clean-room writer (cleanroom/brief-anim-r1.md), prompts verbatim",
+   "why": "Jack 2026-11-16: 'animate them please… clean room it all'",
+   "source": "picks.md"
+  },
+  {
+   "rule": "All prices and the £50 card are handled in the edit",
+   "why": "video redraws text",
+   "source": "brief.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Establish the one lit shop on a dead street at 3am, and that something is awake in it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "shop lights dip",
+     "idea": "The shop's fluorescent glow dips to near-dark once and comes back, as if something inside drew the power.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The shop's fluorescent glow dips to near-dark once and comes back, as if something inside drew the power."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The street is dead still; only fine rain stipples the puddles. At about one and a half seconds the shop's fluorescent light dips sharply to near-dark for half a second, the green spill on the wet pavement vanishing, then stutters back to full. Cars, houses and door stay still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~1.5 s",
+     "seconds": 8,
+     "risk": "The model may brighten the whole street or redraw the window card; the dip may be too gentle to read."
+    },
+    {
+     "id": "b",
+     "label": "streetlamp dies",
+     "idea": "The distant orange streetlamp goes out, leaving the corner shop the only light on the street.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The distant orange streetlamp goes out, leaving the corner shop the only light on the street."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. Fine rain stipples the puddles and nothing moves. At about two seconds the far orange streetlamp at the end of the terrace flickers once and goes out for good, and its orange reflections on the wet road fade to black. The corner shop keeps glowing teal, now the only light on the whole street. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~2.0 s",
+     "seconds": 8,
+     "risk": "The model may kill the wrong light or darken the shop too; its orange reflections on the road may linger."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "The force arrives: the front door moves with nobody touching it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "door swings wider",
+     "idea": "A draught pushes the glass door slowly wider on its hinge, and dry leaves creep in across the floor tiles.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "A draught pushes the glass door slowly wider on its hinge, and dry leaves creep in across the floor tiles."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The glass door hangs open onto the black street. At about one and a half seconds it swings slowly further open by itself on its hinge, as if pushed from outside, then settles, rocking very slightly. A few dry leaves slide inward along the floor tiles, staying flat on the ground. The taped card moves with the door, unchanged. Crate, stand and street stay still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~1.5 s",
+     "seconds": 8,
+     "risk": "The reversed CLOSED/OPEN card on the glass may warp as the door moves; leaves may lift into the air."
+    },
+    {
+     "id": "b",
+     "label": "door swings shut",
+     "idea": "The door swings slowly closed by itself and stops just short of the frame, shutting the street out as if something has come in.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The door swings slowly closed by itself and stops just short of the frame, shutting the street out as if something has come in."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The glass door hangs open onto the black street. At about one second it begins to swing slowly closed by itself and at about two and a half seconds it stops dead a hand's width short of the frame, the street now only a thin dark gap. The taped card moves with the door, unchanged. Floor, crate and stand stay still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~2.5 s",
+     "seconds": 8,
+     "risk": "A closing door can make the model invent a reflection or a silhouette in the glass; the card may smear."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "Lead the eye down the aisle to the stockroom: the back room is where it lives.",
+   "options": [
+    {
+     "id": "a",
+     "label": "stockroom door opens",
+     "idea": "The half-open stockroom door at the end of the aisle drifts slowly wider onto black.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The half-open stockroom door at the end of the aisle drifts slowly wider onto black."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. A quiet aisle; the fluorescent tubes hum steadily. At about two seconds the half-open door at the far end of the aisle drifts slowly wider by itself onto pure black, as if opened from the other side, and stops. The darkness beyond stays empty and black. The shelves and basket stay still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~2.0 s",
+     "seconds": 8,
+     "risk": "Something may be invented in the black doorway; the far wall may stretch as the door moves."
+    },
+    {
+     "id": "b",
+     "label": "basket slides",
+     "idea": "The wire basket on the floor slides a few inches along the tiles by itself, as if nudged by a passing foot.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The wire basket on the floor slides a few inches along the tiles by itself, as if nudged by a passing foot."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. A quiet aisle; the fluorescent tubes hum steadily. At about one and a half seconds the stacked wire basket on the floor at the bottom left slides a few inches along the tiles by itself, scraping, as if nudged in passing, and stops. It stays flat on the floor and does not tip or lift. The shelves and stockroom door stay still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~1.5 s",
+     "seconds": 8,
+     "risk": "The basket may hop, tip or multiply; the model may add a shadow passing by it."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "The loaf and its price, watched by a failing light; the flicker frames carry the price changes in the edit.",
+   "options": [
+    {
+     "id": "a",
+     "label": "two sharp flickers",
+     "idea": "The tube overhead cuts out twice in an irregular stutter, the shelf dropping to near-black each time, giving two clean dark frames for the new prices.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The tube overhead cuts out twice in an irregular stutter, the shelf dropping to near-black each time, giving two clean dark frames for the new prices."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The loaf sits still on the bare metal shelf. At about one second the fluorescent tube above cuts out and the shelf drops to near-black for a quarter of a second, then snaps back. At about two point eight seconds it cuts out again, a little longer, then returns. Only two flickers, irregular, never faster than three a second. After each, the loaf and the '50p' card are unchanged. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~1.0 and 2.8 s",
+     "seconds": 8,
+     "risk": "The model may redraw the 50p card after a dark frame, or flicker faster than three times a second."
+    },
+    {
+     "id": "b",
+     "label": "slow brownout, bag stirs",
+     "idea": "The light sags slowly to near-darkness, holds, then snaps back to full on one hit, and the bread bag's loose end stirs as if breathed on.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The light sags slowly to near-darkness, holds, then snaps back to full on one hit, and the bread bag's loose end stirs as if breathed on."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The loaf sits still on the bare metal shelf. From about half a second the fluorescent light sags slowly, over a second, to near-darkness and holds there, buzzing. At about three seconds it snaps back to full brightness all at once. As it returns, the twisted loose end of the plastic bread bag stirs faintly, as if breathed on, then stills. The loaf and the '50p' card stay unchanged. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~3.0 s",
+     "seconds": 8,
+     "risk": "The slow fade may come back with a different colour; the plastic may move too much or the loaf shift."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "Look for the culprit in the security mirror and find only an empty aisle and money on the floor.",
+   "options": [
+    {
+     "id": "a",
+     "label": "notes creep across floor",
+     "idea": "In the mirror, the blank banknotes slide slowly across the floor in a draught toward the back of the shop.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "In the mirror, the blank banknotes slide slowly across the floor in a draught toward the back of the shop."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. A convex security mirror on the ceiling shows an empty aisle. At about one and a half seconds, inside the reflection, the paper sheets on the floor slide slowly along the floor in a draught, all toward the back of the shop, staying flat on the ground, then stop. The mirror itself does not move. The reflected aisle stays empty. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~1.5 s",
+     "seconds": 8,
+     "risk": "The notes may lift and fly; the curved reflection may wobble or sprout a person."
+    },
+    {
+     "id": "b",
+     "label": "mirror rocks",
+     "idea": "The mirror rocks slightly on its bracket, as if brushed, so the empty reflection swings and settles.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The mirror rocks slightly on its bracket, as if brushed, so the empty reflection swings and settles."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. A convex security mirror on the ceiling shows an empty aisle. At about one second the mirror rocks slightly on its bracket, as if something brushed past it, and swings gently back and forth twice before settling still. The reflection sways with it but stays the same, empty aisle; the room around the mirror is still. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~1.0 s",
+     "seconds": 8,
+     "risk": "The model may redraw the reflected shop as it swings, or slip a figure into the reflection."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "job": "The last frame before the end card: £50 bread at the door, the back room open and working.",
+   "options": [
+    {
+     "id": "a",
+     "label": "back room pulses",
+     "idea": "The cold light from the open stockroom pulses slowly like a machine running in there, spilling down the aisle floor.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The cold light from the open stockroom pulses slowly like a machine running in there, spilling down the aisle floor."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The front door stands open; at the back of the shop the stockroom door is wide open onto cold white light. At about one and a half seconds that cold light swells brighter and spills further down the aisle floor, then sinks back, then swells again slowly, like a machine running. The shop and the 'BREAD £50' sign stay unchanged. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~1.5 s",
+     "seconds": 8,
+     "risk": "The pulse may spread to the whole shop or become a fast strobe; the BREAD £50 sign may be redrawn."
+    },
+    {
+     "id": "b",
+     "label": "back door shuts",
+     "idea": "The open stockroom door at the back swings slowly shut on its own, cutting off its cold light.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The open stockroom door at the back swings slowly shut on its own, cutting off its cold light."
+      },
+      {
+       "lane": "Premiere",
+       "does": "any push, eased; price swaps and blurs"
+      }
+     ],
+     "veo_prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The front door stands open; at the back of the shop the stockroom door is wide open onto cold white light. At about one and a half seconds the stockroom door starts to swing slowly shut by itself, and at about three seconds it closes, cutting off the cold light so the back of the shop goes dim. The front door and its 'BREAD £50' sign stay unchanged. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+     "cut": "event at ~3.0 s",
+     "seconds": 8,
+     "risk": "The model may invent someone pushing it; the shop may darken overall or the door glass sign may shift."
+    }
+   ]
+  }
+ ]
+}

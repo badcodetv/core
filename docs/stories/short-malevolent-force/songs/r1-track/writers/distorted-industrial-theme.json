@@ -1,0 +1,13 @@
+{
+  "name": "distorted-industrial-theme",
+  "style": "Industrial horror instrumental, E minor, 90 BPM half-time. Detuned upright piano slammed through tape saturation and a heavy bitcrusher, playing a fast nervous minor-key ostinato in the high octaves, high-pass filtered and thin at first over a sidechained sub drone that pumps. Downtuned baritone electric guitar on one low E, palm-muted, hits three separate slams two seconds apart, each slam doubled by an anvil strike and a struck steel sheet in a gated room. After the third slam the filter rips open: guitar chugs eighths on the low E, crushed piano screams on top, metal clanks tighten. Ends on one enormous slam of everything at once, then a hard cut to dead silence, no tail. Tight, dry, clipped transients, cold, close-miked. No vocals, instrumental only.",
+  "exclude": "vocals, choir, singing, spoken word, orchestral strings, cinematic swell, synthwave, EDM drop, four-on-the-floor kick, guitar solo, fade out, long reverb tail, music box, lo-fi",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 55,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}
