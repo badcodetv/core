@@ -1,5 +1,15 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-16 · PR #29
+
+**Opposition:** No strong case against this revision: unmet assessed care now counts whether or not a package has started, has its own failure threshold, and sits beside measures of existing care and hospital admissions. That answers yesterday's objection.
+**Answer (Health Secretary):** Noted, and thanks. Nothing left standing, so the best case against comes off the policy until somebody finds the next hole.
+**Outcome:** Nothing standing: `against` and `answer` removed, this commit
+
+**Statistician:** The councils being judged write the plans that set unmet assessed hours. A plan cut from ten hours to seven removes three unmet hours without one more hour delivered, and the measure gives no period. Fix: hold each person in the fixed group at the hours of their last assessment before day one, use first-assessment hours for new starters, count reassessments that raise or cut hours on their own line in both groups, and say "per week".
+**Answer (Health Secretary):** Right, and it's the oldest trick on the ward. Cut the plan and the gap closes without one more visit. Unmet hours are now per week, measured against the hours in each person's last assessment before day one, and new starters' first assessment. Every reassessment that raises or cuts hours is counted on its own line, by direction, in both sets of councils. The plan can change; the yardstick can't.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
 ## 2026-11-15 · PR #29
 
 **Opposition:** Giving someone a small package removes them from your queue even if most assessed care remains missing. Total hours can rise while those gaps persist. Count unmet assessed hours, including people whose packages have started, and give that measure a failure threshold. Otherwise the trial could pass while leaving much of the promised care undelivered.
