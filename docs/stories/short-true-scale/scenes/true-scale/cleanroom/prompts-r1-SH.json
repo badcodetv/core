@@ -1,0 +1,34 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write a scene in prose, not keyword lists; order it subject, composition, action, location, style; Nano Banana 2 renders short text sharply",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — name a real camera, lens and film stock and keep to one style family; a named film stock (Portra, CineStill) moves it off the glossy stock-photo default",
+    "https://www.leonardo.ai/news/nano-banana-prompt-guide — 'documentary photography' wording keeps results believable rather than polished; describe motivated light sources",
+    "https://www.imagine.art/blogs/nano-banana-2-prompt-guide — in-image text is reliable when short (3-5 words); put it in quotes and say where it sits and what it is printed on",
+    "https://www.actiononemptyhomes.org/work — England, council tax data Nov 2025: 267,894 second homes out of residential use; total vacancy over 1,022,158",
+    "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-research-unit-publications/empty-homes-london — London alone 55,978 second homes in 2025; second homes are furnished but nobody's main home (so lamps, curtains, furniture: lived-in looking, unlived-in)",
+    "https://www.generationrent.org/2026/02/02/what-have-tax-changes-done-to-the-number-of-holiday-homes/ — second homes are growing in city boroughs as well as coastal towns, so not only seaside cottages",
+    "https://www.media.io/ai-prompts/product-size-video-prompts.html — size-comparison images work with a flat, level camera and one shared reference object so the ratio reads honestly",
+    "https://adamandeveddb.com/work/crisis-impossible-to-ignore and https://www.lukejerram.com/invisible-homeless/ — UK homelessness art works by making the invisible physically present and unavoidable, not by charts"
+  ],
+  "notes": "Beat D's job: the second homes are FURNISHED, so they can light up (timer lamps, a lamp left on, made beds) while being nobody's home; that is the visual difference from beat C's dark empty homes. Three different ideas: (a) the literal true-scale diorama with the ratio built in, one small teal-lit cluster against three dark blocks and a fourth block of warm lit windows; (b) an aerial-feeling night of a whole coastal town lit for nobody, the surprise being that the brightest town in the picture has no one in it; (c) a counting device made of a real object: a brick wall grid of combination key safes, the thing that lets a home be let and left, with one stencilled number. All shot on named cheap night film (CineStill 800T / Portra 800 pushed) with grain, teal fluorescent against sodium-warm windows, to match the shop-doorway reference. Figures only tiny or absent. Only image (c) carries a number, written exactly 267,894.",
+  "stills": [
+    {
+      "beat": "second",
+      "id": "SH1-a",
+      "look": "True-scale diorama: the fourth block lights up",
+      "prompt": "Vertical 9:16 night photograph of a huge model-railway diorama on a warehouse floor, seen from a low, level camera. Rows of tiny grey English terraced houses, thousands of them, laid out in four rectangular blocks. Front left, one small cluster of houses lit cold fluorescent teal from a single overhead tube: the homeless households. Behind it, two long blocks of dark, unlit houses. Beyond those, a fourth block the same size again where every tiny window glows warm amber with a lamp left on, curtains half drawn, no figures anywhere. The teal cluster looks small now, roughly a quarter of everything else. Shot on CineStill 800T, 35mm lens, visible grain, halation round the windows, slightly underexposed, dust on the model roofs. Thanks."
+    },
+    {
+      "beat": "second",
+      "id": "SH1-b",
+      "look": "A seaside town lit for nobody",
+      "prompt": "Vertical 9:16 night photograph from a hillside above a small English harbour town out of season, January. Steep rows of painted fishermen's cottages and newer holiday flats tumble down to a dark harbour, and nearly every window is lit warm and identical by a timer lamp, yet the streets are completely empty, no cars moving, no one on the quay. In the foreground, at the bottom of the frame, one cold teal fluorescent doorway of a run-down guesthouse used as a hostel, a single tiny silhouette standing in it. The brightest town you have ever seen, and nobody home. Shot on Kodak Portra 800 pushed two stops, 50mm, handheld, heavy grain, mist off the sea, slight motion softness. Thanks."
+    },
+    {
+      "beat": "second",
+      "id": "SH1-c",
+      "look": "A wall of key safes, counted",
+      "prompt": "Vertical 9:16 night photograph of a long, wet London-brick wall lit by one buzzing teal fluorescent tube, covered top to bottom in a tight grid of hundreds of small black combination key safes, the kind screwed beside the front doors of short lets, their dials catching the light, every one shut, the grid running out of frame on all sides as if it never ends. Stencilled once in white paint across the bricks near the bottom, slightly flaked: \"267,894\". No people, a puddle on the pavement reflecting the teal. Documentary street photography, shot on CineStill 800T, 28mm lens, slight vignette, coarse grain, a little camera tilt, cheap and cold. Thanks."
+    }
+  ]
+}

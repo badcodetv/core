@@ -13,22 +13,33 @@
   },
   "beats": [
     {
-      "key": "people",
+      "key": "one",
       "at": "0:00",
-      "name": "A. The people",
-      "blurb": "Every homeless household in England, true scale: 134,000 tiny figures under one teal light."
+      "name": "A. One household",
+      "blurb": "One homeless household, small in the dark under a teal light."
     },
     {
-      "key": "homes",
-      "at": "0:04",
-      "name": "B. The homes",
-      "blurb": "The camera pulls back: beside them, every long-term empty home (303,185), dark. The people become a smudge."
+      "key": "crowd",
+      "at": "0:03",
+      "name": "B. 134,210",
+      "blurb": "Pull back: every household in temporary accommodation in England, 134,210 of them."
     },
     {
-      "key": "owner",
-      "at": "0:09",
-      "name": "C. Who owns this one?",
-      "blurb": "One empty house's light flicks on. The question, and BadCode's line (Jack's)."
+      "key": "empty",
+      "at": "0:06",
+      "name": "C. 303,185",
+      "blurb": "Pull back: every long-term empty home in England, 303,185, dark. More than two each."
+    },
+    {
+      "key": "second",
+      "at": "0:10",
+      "name": "D. 267,894 more",
+      "blurb": "Pull back again: the second homes light up beside them (267,894, pending check). About four each. Jack's line."
     }
-  ]
+  ],
+  "flow_project": "7530554c-5d9d-40fc-beeb-b11d29a68edf",
+  "moodboard_intro": "Round 1 (clean room, Jack 2026-11-16: \"do the uk stats, in intresting varied ways as stills\"): four sealed writers, one per beat, fresh web research, nothing from the repo, three different ideas each. A one household (model figures on an endless table; a B&B room from the ceiling; a family's belongings in one car-park bay) · B 134,210 (a car park of suitcases; a B&B key board that never ends; a pin map of England) · C 303,185 empty homes (an aerial of dark terraces; a lettings office wall of keys; a model on a community-hall table) · D 267,894 second homes (a diorama where the fourth block lights up; a seaside town lit for nobody; a wall of key safes). Keys turned up in three beats: it could be a thread through the film. Numbers: official, checked (numbers.md). Vote This / Maybe / No per still and note any beat.",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF"
+  }
 }

@@ -38,4 +38,5 @@ not a shortage. It links to Camping.
 | Stage | State |
 | --- | --- |
 | Set up | ✅ 2026-11-16 (Drive `Shorts/True Scale`, media `shorts\true-scale`) |
-| Beats | 🟡 draft in `scenes/true-scale/brief.md`, awaiting Jack |
+| Beats | ✅ four pull-backs (one / 134,210 / 303,185 / 267,894), narrator + text; line D owed by Jack |
+| Mood board round 1 | 🟡 https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF (clean room, 12 stills), awaiting Jack's votes |

@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-16T13:22:12+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF",
+  "what": "Mood board round 1: clean room, 4 sealed writers, 12 stills of the UK numbers in varied ways",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-true-scale/scenes/true-scale <out.html>"
+ }
+]
