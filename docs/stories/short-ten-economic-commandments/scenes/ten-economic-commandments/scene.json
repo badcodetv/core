@@ -41,5 +41,19 @@
     "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r1/edl.json",
     "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r1/preview.mp4",
     "script": "scripts/shorts/tec_cut.py"
+  },
+  "premiere": {
+    "current": "r1",
+    "r1": {
+      "sequence": "short-ten-economic-commandments-1-tec-r1",
+      "guid": "e874a303-d161-46a1-bdd4-d2fcb7f0e48f",
+      "bin": "short-ten-economic-commandments-1-tec-r1",
+      "built": "2026-11-16",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/ten-economic-commandments.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/premiere/edl-premiere-r1.json",
+      "what": "rough cut 1 frozen: V1 the 7 clips (silent copies) + the logo card, A1 the rap (jazz1)",
+      "how": "premiere-plan.py edl-premiere-r1.json plan-r1.json --tag r1 (Premiere 27.0.0)",
+      "note": "720x1280 like the Omni clips; export to 1080x1920 owed"
+    }
   }
 }
