@@ -1,0 +1,25 @@
+{
+  "research": [
+    "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — keep in-image text to a few words per element; long sentences garble",
+    "https://aimlapi.com/blog/banana-prompt-guid — put the exact wanted text in quotation marks and describe where it sits on the page",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — write a scene description in full sentences (subject, setting, light, camera), not keyword lists",
+    "https://romanroad.newham.sch.uk/assets/files/Marking-andfeedback2024.pdf — many UK primaries mark in green pen, not red",
+    "https://mayfield12.lancsngfl.ac.uk/serve_file/8386877 — some still mark maths in red; marking colour varies by school",
+    "https://www.sambuz.com/doc/southcote-primary-school-marking-feedback-and-pdf-document-531855 — UK maths books are squared paper, one digit per square"
+  ],
+  "notes": "Kept the red tick on purpose: green is common in UK schools now, but red is the tick everyone recognises in one look and it is the only warm colour against the teal, so the eye lands on it. Switch to green if Jack wants it truer to a current classroom. The one-number rule: the setup shows no digits at all (four drawn houses, one drawn family, the question written in words), so the reveal's '1' is the only number in either image. Question shortened to 'How many families have no home?' so the model can render it. No child is shown, only their things (pencil, rubber, crayons, a juice beaker). Look: night kitchen under a cheap fluorescent tube, teal cast, grain, as the reference; no break from it.",
+  "stills": [
+    {
+      "beat": "homework-marked-correct",
+      "id": "HW2-a",
+      "look": "setup: overhead night shot of a child's maths homework on a worn kitchen table, teal fluorescent cast, film grain",
+      "prompt": "Vertical 9:16 photograph shot straight down onto a worn Formica kitchen table at night, lit only by a cheap fluorescent tube that turns everything a cold teal, with grainy, slightly underexposed colour film texture. An open primary-school maths exercise book with squared paper fills the frame. At the top, in a child's careful pencil handwriting: \"How many families have no home?\" Below it, a wax-crayon drawing: four small wonky houses in a row, each with a door and a chimney, and beside them one stick-figure family holding hands. An empty box drawn in pencil sits at the bottom of the page. A chewed pencil, a pink rubber, loose crayons and a plastic juice beaker lie at the edges. No digits anywhere. Quiet, lonely, a little eerie. Thanks."
+    },
+    {
+      "beat": "homework-marked-correct",
+      "id": "HW2-b",
+      "look": "reveal: close-up of the answer box, a pencilled '1' and a bold red tick, same teal night light",
+      "prompt": "Vertical 9:16 close-up photograph of a squared-paper page in a primary-school maths exercise book on a kitchen table at night, under a cold teal fluorescent tube, grainy cheap colour film, shallow focus. Sharp in the centre: a small pencil answer box containing one large, slightly wobbly child's handwritten number \"1\". Right beside it, a big confident teacher's tick in bright red pen, the only warm colour in the picture, ink slightly bled into the paper. At the soft edge of frame, out of focus, the corner of a crayon drawing of little houses. No other numbers or words in focus. Flat, matter-of-fact, quietly wrong. Thanks."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write it as a brief (subject, setting, camera, light, style), not a list of keywords",
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — name the camera angle and depth of field; models treat text as texture, so keep any written words short and few",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — NB2 reads a prompt as instructions to satisfy, so state counts and positions plainly (e.g. 'exactly four bags')",
+    "https://www.cardfactory.co.uk/blog/party-inspiration/the-best-kids-party-bag-ideas/ — UK party bags are handed out at the END of the party as each guest leaves; small paper bags with handles, stickers, bubbles, a slice of cake in a napkin",
+    "https://www.mumsnet.com/articles/kids-party-bag-ideas — the UK ritual: one bag per child, name on it, collected at the door on the way out"
+  ],
+  "notes": "Honesty to the numbers: the reveal shows exactly FOUR untouched named party bags left on the table for the ONE child leaving with nothing, which is the 4-to-1 ratio counting second homes (571,079 homes that are nobody's main home vs 134,210 homeless households); the narrator's 'already had one' maps the extra bags to second homes and empties. The setup establishes the hall and the crowded table (the plenty); the reveal is the end of the night. No numbers written in either image, so nothing can misread. The child is only ever a small figure from behind in a coat (refusal risk with children), no faces; names on the bags are invented first names, no brands. Look follows Jack's reference: night, cheap colour film, grain, cold fluorescent teal, slightly eerie; the party colours (balloons, bunting) are kept but drained under the tubes, which helps the 'party's over' feeling. The bags carry no handwritten text in the reveal beyond a name each, so the model has little lettering to garble.",
+  "stills": [
+    {
+      "beat": "party-bags-for-no-shows",
+      "id": "PB2-a",
+      "look": "setup: a crowded table of named party bags in an empty church hall at night, teal tubes, colour-film grain",
+      "prompt": "Vertical 9:16 photograph, shot on cheap colour film with visible grain, at night inside an empty British church hall after a children's birthday party. A long folding trestle table with a paper tablecloth fills the frame, lined end to end with small identical paper party bags with handles, each with a different child's first name handwritten in felt tip. Cold fluorescent teal light from buzzing ceiling tubes, deep shadows at the edges, a sagging bunch of helium balloons and paper bunting drained of colour behind. Paper plates, a half-eaten cake, a stacked pile of plastic chairs. Eye-level, 35mm, slightly off-centre, lonely and faintly eerie, no people. Thanks."
+    },
+    {
+      "beat": "party-bags-for-no-shows",
+      "id": "PB2-b",
+      "look": "reveal: four untouched named bags left on the table, one small coated figure leaving empty-handed through the hall door",
+      "prompt": "Vertical 9:16 photograph on grainy cheap colour film, night, the same British church hall now almost empty. Low wide view from the far end: on a long trestle table under cold flickering teal fluorescent tubes sit exactly four untouched paper party bags, each with a different name handwritten on it, neatly lined up. In the foreground near the open double doors, a small child seen only from behind, in a zipped winter coat and woolly hat, hands empty at their sides, walking out into the dark car park. Deflated balloons on the floor, folded chairs stacked against the wall. Quiet, cold, slightly eerie, the bags in sharp focus. Thanks."
+    }
+  ]
+}

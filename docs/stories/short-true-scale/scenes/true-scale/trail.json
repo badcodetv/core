@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF",
   "what": "Mood board round 1: clean room, 4 sealed writers, 12 stills of the UK numbers in varied ways",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-true-scale/scenes/true-scale <out.html>"
+ },
+ {
+  "at": "2026-11-16T13:37:11+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
+  "what": "Round 2: six other ways to convey it (clean room ideas writer + 6 sealed writers), setup + reveal each, 12 stills",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
  }
 ]

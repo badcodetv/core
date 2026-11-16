@@ -1,0 +1,134 @@
+{
+ "title": "True Scale Ideas",
+ "eyebrow": "BadCode Shorts · True Scale · round 2 ideas",
+ "heading": "True Scale: other ways to convey it",
+ "intro": "Jack 2026-11-16: \"please come up with other ways to convey this\". Clean room: one ideas writer (fresh research, round 1's keys/models/maps ruled out) proposed six ways to make the ratio felt; a sealed writer per idea made the setup and the reveal. Numbers: 134,210 homeless households; 303,185 long-term empty + 267,894 second homes (about 4 each). Pick the idea you like (either still) and note it. Round 1's straight true-scale stills are on the mood board: https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF",
+ "sections": [
+  {
+   "h": "Six ideas",
+   "lede": "Setup on the left, reveal on the right.",
+   "groups": [
+    {
+     "slot": "idea-musical-chairs-backwards",
+     "title": "Musical chairs backwards",
+     "line": "The housing crisis as musical chairs, except there are four chairs per kid and one kid is still out.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/MC2-a.jpg",
+       "label": "MC2-a: setup: low wide from behind the children, the game in motion",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/MC2-b.jpg",
+       "label": "MC2-b: reveal: straight top-down on the ring, the music has stopped",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "idea-sunbed-towels-at-dawn",
+     "title": "Sunbed towels at dawn",
+     "line": "The great British sunbed war: rows of loungers bagsied with towels at 6am, nobody on them, and one family with nowhere to put their bags.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/ST2-a.jpg",
+       "label": "ST2-a: setup: low wide, pool at 5am, every lounger towelled, nobody there",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/ST2-b.jpg",
+       "label": "ST2-b: reveal: high angle, rows of claimed empty loungers, families standing with bags",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "idea-homework-marked-correct",
+     "title": "Homework marked correct",
+     "line": "A kid's maths homework: 'There are 4 houses and 1 family. How many families have no house?' The kid writes 1. The teacher ticks it.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/HW2-a.jpg",
+       "label": "HW2-a: setup: overhead night shot of a child's maths homework on a worn kitchen table, teal fluorescent cast, film grain",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/HW2-b.jpg",
+       "label": "HW2-b: reveal: close-up of the answer box, a pencilled '1' and a bold red tick, same teal night light",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "idea-sold-out-stockroom",
+     "title": "Sold out stockroom",
+     "line": "The corner shop's 'SORRY, SOLD OUT' sign on an empty shelf, and through the stockroom door, crates piled to the ceiling.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/SO2-a.jpg",
+       "label": "SO2-a: setup: lonely night corner-shop aisle, empty shelf, handwritten SORRY, SOLD OUT card, figure from behind, teal strip lights, film grain",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/SO2-b.jpg",
+       "label": "SO2-b: reveal: through the propped stockroom door, plain shrink-wrapped cases stacked floor to ceiling under one bare teal tube, untouched",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "idea-allotment-waiting-list",
+     "title": "Allotment waiting list",
+     "line": "Ten years on the allotment waiting list, while behind the padlocked gate whole plots are gone to brambles and nobody's been in years.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/AL2-a.jpg",
+       "label": "AL2-a: setup: from behind, a lone figure at a padlocked allotment gate at night, holding the council letter, under one cold teal security lamp",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/AL2-b.jpg",
+       "label": "AL2-b: reveal: over the fence, a few tended plots and twice as many gone to brambles, rotting sheds and an empty deckchair, lit cold teal",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "idea-party-bags-for-no-shows",
+     "title": "Party bags for no shows",
+     "line": "End of a kids' party: a table of party bags with names on, most for kids who never came, and the one kid who did leaves empty-handed.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/PB2-a.jpg",
+       "label": "PB2-a: setup: a crowded table of named party bags in an empty church hall at night, teal tubes, colour-film grain",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/PB2-b.jpg",
+       "label": "PB2-b: reveal: four untouched named bags left on the table, one small coated figure leaving empty-handed through the hall door",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
