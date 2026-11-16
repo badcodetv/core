@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/music/true-scale-r1-rain-and-room-ambient-v6-w40-c3f6c3ed.preview.mp3",
+ "made": "2026-11-16T16:13:26.453Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "c3f6c3ed-d5e7-4dc6-bb41-956367711875",
+ "inputs": {
+  "title": "true scale r1-rain-and-room-ambient-v6-w40",
+  "song": "https://suno.com/song/c3f6c3ed-d5e7-4dc6-bb41-956367711875"
+ },
+ "settings": {
+  "durationSec": 40
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/music/true-scale-r1-rain-and-room-ambient-v6-w40-c3f6c3ed.wav"
+}

@@ -1,12 +1,11 @@
 {
- "round": 4,
+ "round": 5,
  "plan": [
   {
    "h": "Done",
    "items": [
-    "Talking shots re-shot with the exact words (two takes each, all transcribed right).",
-    "Dubbed the Bank Robbery way: mouths read by eye on 12 fps strips, every phrase just after the mouth opens, never early, x0.85-1.30.",
-    "Stats card and the fruit-machine logo kept."
+    "Your music pick rain1 is under the whole cut: low under the talking, up for the numbers and the logo, faded at the end.",
+    "Talking shots dubbed the Bank Robbery way (round 4)."
    ]
   },
   {
@@ -20,7 +19,7 @@
   {
    "h": "Next",
    "items": [
-    "Music: pick on https://claude.ai/artifact/F8Md9pWGGK2psk9ZguoRA3"
+    "Notes here, then build it in Premiere and export."
    ]
   }
  ],

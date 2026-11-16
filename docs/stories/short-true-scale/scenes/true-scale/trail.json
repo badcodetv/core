@@ -79,5 +79,13 @@
   "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
   "what": "rough cut 4: talking shots re-shot with the words, dubbed the Bank Robbery way (mouths read by eye at 12 fps, never early)",
   "rebuild": "python3 scripts/shorts/true_scale_cut.py --round 4 && python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale <out>"
+ },
+ {
+  "at": "2026-11-16T16:15:04+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "rough cut 5: Jack's music pick rain1 (Suno c3f6c3ed) under the cut",
+  "rebuild": "python3 scripts/shorts/true_scale_cut.py --round 5 && python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale <out>"
  }
 ]

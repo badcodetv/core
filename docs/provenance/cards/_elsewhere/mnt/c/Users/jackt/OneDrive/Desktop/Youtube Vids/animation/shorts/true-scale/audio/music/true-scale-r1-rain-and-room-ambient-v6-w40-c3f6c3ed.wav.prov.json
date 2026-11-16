@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/music/true-scale-r1-rain-and-room-ambient-v6-w40-c3f6c3ed.wav",
+ "made": "2026-11-16T16:14:45+00:00",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "suno.mts record",
+ "settings": {
+  "song": "c3f6c3ed-d5e7-4dc6-bb41-956367711875",
+  "pick": "Jack 2026-11-16 rain1"
+ }
+}

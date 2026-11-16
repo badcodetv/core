@@ -30,6 +30,10 @@ STATS = ['In England:', '', '303,185 homes have stood empty', 'for six months or
          '134,210 households are homeless,', 'living in temporary accommodation.']
 SOURCE = 'MHCLG, October 2025 · gov.uk, December 2025'
 STATS_DUR, LOGO_DUR = 5.0, 4.2
+# Round 5: Jack's music pick (2026-11-16, picks page F8Md9pWGGK2psk9ZguoRA3): rain1, Suno c3f6c3ed (rain-and-room ambient),
+# recorded 40.0 s. A bed under the talking (BED), up for the numbers and the logo (UP), faded out at the very end.
+MUSIC = MEDIA / 'audio/music/true-scale-r1-rain-and-room-ambient-v6-w40-c3f6c3ed.wav'
+BED, UP = 0.22, 0.6
 REGULAR = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 # (beat, title, clip, in, out, punch-in, blurs (720x1280), phrases [(take, from, to, at (clip time), tempo)], what we see)
 #   mouth readings (12 fps strips): 01a "Tiebreaker" opens 0.66, a held grin 3.25-3.6, "Nearest..." 3.75-5.08 ·
@@ -68,7 +72,7 @@ CLAMP = 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=4); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=5); a = ap.parse_args()
     cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
     starts, durs, t = [], [], 0.0
     for s in SHOTS:
@@ -112,7 +116,15 @@ def main():
     (cut / 'dubs.txt').write_text(''.join(f"file '{p.name}'\n" for p in dubs))
     ff('-f', 'concat', '-safe', '0', '-i', cut / 'dubs.txt', '-af', f'apad=whole_dur={total},atrim=end={total}', '-ar', 48000, '-ac', 2,
        cut / 'vox-dialogue.wav')
-    ff('-i', cut / 'vox-dialogue.wav', '-af', 'loudnorm=I=-14:TP=-1.5', '-ar', 48000, '-ac', 2, cut / 'mix.wav')
+    stems = [('vox-dialogue', cut / 'vox-dialogue.wav')]
+    if a.round >= 5:
+        up0 = speech_end - 0.4
+        ff('-i', MUSIC, '-af', f"aresample=48000,aformat=channel_layouts=stereo,volume='{BED}+({UP}-{BED})*clip((t-{up0})/0.8\\,0\\,1)':eval=frame,"
+           f'apad=whole_dur={total},atrim=end={total},afade=t=out:st={total - 1.2}:d=1.2', '-ar', 48000, '-ac', 2, cut / 'mus-rain1.wav')
+        stems.append(('mus-rain1', cut / 'mus-rain1.wav'))
+    ins = [x for _, s in stems for x in ('-i', s)]
+    ff(*ins, '-filter_complex', ''.join(f'[{k}]' for k in range(len(stems))) + f'amix=inputs={len(stems)}:normalize=0,loudnorm=I=-14:TP=-1.5',
+       '-ar', 48000, '-ac', 2, cut / 'mix.wav')
     ff('-i', cut / 'picture.mp4', '-i', cut / 'mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k',
        '-t', total, cut / 'preview.mp4')
     beats = [{'id': s[0], 'title': s[1], 'start': starts[i], 'dur': durs[i], 'see': s[8],
@@ -131,10 +143,10 @@ def main():
                     [{'file': str(cut / 'v8-stats.mp4'), 'in': 0, 'start': speech_end, 'dur': STATS_DUR, 'beat': 'stats', 'source': 'stats card', 'looped': False},
                      {'file': str(cut / 'v9-logo.mp4'), 'in': 0, 'start': round(speech_end + STATS_DUR, 3), 'dur': LOGO_DUR, 'beat': 'logo',
                       'source': 'scripts/shorts/fruit_machine_logo.py', 'looped': False}],
-           'audio': [{'track': 'A1', 'name': 'vox-dialogue', 'file': str(cut / 'vox-dialogue.wav')}],
-           'events': events,
+           'audio': [{'track': f'A{k + 1}', 'name': n, 'file': str(s)} for k, (n, s) in enumerate(stems)],
+           'events': events + ([{'stem': 'mus-rain1', 't': 0, 'dur': total, 'what': "Jack's pick rain1 (Suno c3f6c3ed), low under the talking, up for the numbers and logo", 'src': str(MUSIC)}] if a.round >= 5 else []),
            'flags': ['Talking shots dubbed by the lip-sync-dub skill: openings read by eye at 12 fps, phrases ~0.03 s after, x0.85-1.30.',
-                     'Lines past the cap overrun the mouth by ~0.2 s (3a, Bob): late, never early.', 'No music yet.']}
+                     'Lines past the cap overrun the mouth by ~0.2 s (3a, Bob): late, never early.', ('Music: rain1, bed x0.22 under the talking, x0.6 for the numbers and logo.' if a.round >= 5 else 'No music yet.')]}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'starts': starts, 'durs': durs, 'preview': str(cut / 'preview.mp4')}))
 

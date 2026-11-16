@@ -50,8 +50,8 @@
     "timeline": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8"
   },
   "cut": {
-    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r4/edl.json",
-    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r4/preview.mp4",
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/preview.mp4",
     "script": "scripts/shorts/true_scale_cut.py"
   }
 }
