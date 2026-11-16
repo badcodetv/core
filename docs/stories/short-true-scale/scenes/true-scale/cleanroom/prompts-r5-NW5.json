@@ -1,0 +1,26 @@
+{
+  "research": [
+    "https://en.wikipedia.org/wiki/Meat_raffle — UK pub meat raffle: a mixed tray from a local butcher, about 25-30 tickets at a pound, run as a social night to bring people into the local; so the prize reads as a modest cling-filmed butcher's tray, not a hamper",
+    "https://www.morningadvertiser.co.uk/Article/2026/03/25/licensing-rules-for-pubs-hosting-raffles-or-charity-fundraisers — UK pub raffle prizes capped at £50: keep the tray small and ordinary",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's Nano Banana 2 / Pro guide: describe the scene as a photographer would (subject, action, setting, light, lens) in full sentences",
+    "https://www.imagine.art/blogs/nano-banana-2-prompt-guide — naming a film stock, camera and lens moves the output toward real photographic behaviour (grain, halation, colour shifts)",
+    "https://dev.to/googleai/getting-the-most-out-of-nano-banana-2-502k — with an uploaded reference, tell the model to keep the person exactly as in the reference and spend the words on pose and scene"
+  ],
+  "notes": "Beat 5, the prize. Two different moments and grammars: (a) the hand-over, inside, intimate, a low over-the-table angle where the tray passes between hands and the other table's faces carry the reaction; (b) the exit, outside, a wide from across the wet street looking back at the warm window with Bob small and walking off into teal rain, the tray already left behind on a table inside. Neither has readable text, so no number appears. Bob described only by position, action, expression; rucksack and rolled mat are named because the brief puts them in the beat. Tray kept small and ordinary (UK raffle norms). Unbranded throughout.",
+  "stills": [
+    {
+      "beat": "nw5",
+      "id": "NW5-a",
+      "look": "The hand-over: low across-the-table close, warm tungsten",
+      "prompt": "Vertical 9:16 candid photograph inside a worn British local pub on quiz night. Low angle at table height, 35mm lens: the man from the attached reference sheet, rucksack and rolled sleeping mat on his back, leans down and slides a small cling-filmed butcher's tray of sausages, chops and bacon across a sticky table towards an older couple. His expression is calm, almost kind, a small half-smile; their hands hover, unsure whether to take it. Pint glasses, tiny pencils, folded answer sheets face-down. Warm tungsten light from above, a soft red-orange glow from an unbranded fruit machine behind, patterned carpet. Shot on cheap 400-speed colour film, visible grain, slight halation, slightly underexposed. No readable text, no logos. Thanks.",
+      "uses_bob_reference": true
+    },
+    {
+      "beat": "nw5",
+      "id": "NW5-b",
+      "look": "The exit: wide from across the wet street, warm window vs teal rain",
+      "prompt": "Vertical 9:16 candid night photograph from across a wet British street, looking back at a small corner pub. The pub window glows amber; through the steamed glass, blurred drinkers have turned to a table where a lone cling-filmed meat tray now sits. In the foreground left, walking away from the pub towards the camera's edge, the man from the attached reference sheet, rucksack and rolled sleeping mat on his back, head slightly down, unhurried, rain catching the light. Cold teal streetlight, puddles reflecting the warm window, sodium haze. Shot on cheap high-speed colour film pushed a stop, heavy grain, mixed tungsten and cyan colour casts, slightly soft focus. Unbranded signage, no readable text, no logos. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

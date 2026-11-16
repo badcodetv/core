@@ -22,5 +22,13 @@
   "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
   "what": "Round 3: bomber maybe stills (4) added to the ideas page",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-16T14:24:19+00:00",
+  "stage": "picks",
+  "round": 5,
+  "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
+  "what": "Round 5: v2 Nearest Wins stills (clean room, 18)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
  }
 ]

@@ -40,4 +40,6 @@ not a shortage. It links to Camping.
 | Set up | ✅ 2026-11-16 (Drive `Shorts/True Scale`, media `shorts\true-scale`) |
 | Beats | ✅ four pull-backs (one / 134,210 / 303,185 / 267,894), narrator + text; line D owed by Jack |
 | Mood board round 1 | ✅ https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF (clean room, 12 stills), awaiting Jack's votes, no votes |
-| Ideas round 2 | 🟡 https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN (6 other ways, setup + reveal), awaiting Jack; WW2 bomber parallel open |
+| Ideas round 2 | ✅ https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN (6 other ways, setup + reveal), awaiting Jack; WW2 bomber parallel open |
+| v1 shape + flashes | 🟡 shape locked (Bob, 134,210, home, 303,185 + 267,894); flashes on https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN awaiting picks; 3D graphics not started |
+| v2 Nearest Wins | 🟡 beats in the same scene after v1; 18 stills on the same page awaiting picks; Bob's line owed by Jack |

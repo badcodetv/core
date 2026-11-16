@@ -1,0 +1,74 @@
+{
+ "stills": [
+  {
+   "beat": "nw1",
+   "id": "NW1-a",
+   "look": "Low angle from a table: landlady mid-announcement, sheet raised, meat raffle beside her",
+   "prompt": "Vertical 9:16 candid photograph inside a small British local pub on quiz night. Low angle from a crowded table, a ring-marked beer mat and a tiny pencil soft in the foreground. A landlady in her sixties stands at the bar holding a handheld microphone close to her mouth, other arm raised high with a single answer sheet, mid-announcement, eyebrows up like she is about to cause trouble. Beside her on the bar, the meat raffle: trays of sausages and chops under cling film, a biscuit tin of raffle tickets. Worn patterned red carpet, an unbranded fruit machine glowing behind her. Warm tungsten light, cheap 35mm colour film, CineStill 800T halation, heavy grain, slight motion blur. All writing on the sheet unreadable. Thanks.",
+   "uses_bob_reference": false
+  },
+  {
+   "beat": "nw1",
+   "id": "NW1-b",
+   "look": "Over Bob's shoulder at table nine, landlord small and sharp across the room",
+   "prompt": "Vertical 9:16 candid photograph, night, a British local pub on quiz night. Over the shoulder of the man from the attached reference sheet, seated alone at a small corner table, back to camera and soft in the left foreground, one answer sheet and a tiny pencil in front of him, his hand already lifting the pencil. Deep across the room and sharp, a heavyset landlord at the bar leans into a handheld microphone and holds one sheet up at arm's length; beside him, meat raffle trays under cling film. Tables of drinkers between them, faces turned toward the landlord. A rain-streaked window at the right edge glows cold teal against the warm tungsten room and fruit-machine light. Cheap colour film, grain. All writing unreadable. Thanks.",
+   "uses_bob_reference": true
+  },
+  {
+   "beat": "nw2",
+   "id": "NW2-a",
+   "look": "Loud wrong guess in front, Bob quiet in the far corner",
+   "prompt": "Vertical 9:16 candid photograph inside a worn British local pub on quiz night, shot from table height. Foreground: a builder in a hi-vis vest half out of his chair, mouth open mid-shout, jabbing a tiny pencil at a crumpled answer sheet that reads \"50,000\" in big confident scrawl, mates grinning and pint glasses crowding the table. Patterned carpet, an unbranded fruit machine glowing pink and green. Far back, in sharp focus through the gap between shoulders, the man from the attached reference sheet sits alone at a corner table, head down, calmly writing. Warm tungsten light, cheap colour film, heavy grain, slight flash falloff, cold teal rain on the black window behind him. Thanks.",
+   "uses_bob_reference": true
+  },
+  {
+   "beat": "nw2",
+   "id": "NW2-b",
+   "look": "Over Bob's shoulder writing 300,000, the pub a blur of noise",
+   "prompt": "Vertical 9:16 candid photograph, high angle over the shoulder of the man from the attached reference sheet, seated alone at a small corner table in a worn British local pub. His hand presses a tiny betting-shop pencil to an answer sheet, already writing \"300,000\" without pause, a half pint and a folded quiz sheet beside it. His face in partial profile, focused and still. Behind him, soft out of focus, a hen do in sashes and plastic tiaras shrieks and argues over their own guess, and old regulars lean in at the bar. Warm tungsten glow, unbranded fruit machine light on the carpet, cheap colour film, coarse grain, rain-streaked teal window at the edge of frame. Thanks.",
+   "uses_bob_reference": true
+  },
+  {
+   "beat": "nw3",
+   "id": "NW3-a",
+   "look": "Low angle from the crowd: the landlady reads the winning sheet while the tables groan",
+   "prompt": "Vertical 9:16 photograph, night, cheap 35mm colour film, heavy grain, slight motion blur. A British local pub on quiz night, shot from a low angle at a sticky table among the crowd. Behind the bar, a tired landlady leans into a microphone mid-word, holding up one pencilled answer sheet that reads \"300,000\". Under warm tungsten lights a clear plastic bag of raffle meat sits on the bar beside unbranded beer pumps. In the soft foreground, women from a hen do and two builders in hi-vis throw their heads back groaning, one crumpling her own sheet. Patterned carpet, fruit machine glow, rain-dark window. Candid, warm, unglamorous, affectionate. No logos, no other readable text. Thanks.",
+   "uses_bob_reference": false
+  },
+  {
+   "beat": "nw3",
+   "id": "NW3-b",
+   "look": "Over the landlord's shoulder: his mic arm points across the pub to Bob alone at table nine",
+   "prompt": "Vertical 9:16 photograph, night, cheap colour film, visible grain, warm tungsten against a cold teal window. Over the shoulder of a burly landlord behind the bar, his arm stretched out, microphone in hand, pointing across a crowded British local pub. The line of his arm leads to the far corner, where the man from the attached reference sheet sits alone at a small table, pencil set down, calm and unsurprised, lit by the coloured glow of an unbranded fruit machine; rain streaks the dark window behind him. In the midground, old regulars groan, a pint paused halfway, and the first heads begin to turn. Focus on the corner. No readable text, no logos. Thanks.",
+   "uses_bob_reference": true
+  },
+  {
+   "beat": "nw4",
+   "id": "NW4-a",
+   "look": "Wide from the bar: the whole room turned toward the corner",
+   "prompt": "Vertical 9:16 candid night photograph inside a worn British local pub on quiz night, shot from behind the bar at shoulder height with a wide lens. Every drinker in the room has twisted round in their seat to stare at the far corner: builders in hi-vis, a hen party in sashes, old regulars with pints halfway up. In that corner, small in the frame and standing upright beside table nine, is the man from the attached reference sheet, a rucksack on his back with a rolled sleeping mat strapped on top, calm, meeting their eyes. Patterned carpet, unbranded fruit machine glowing, answer sheets and tiny pencils on tables. Warm tungsten light, red halation on bulbs, coarse grain, a cold teal rain-streaked window behind him. No readable text. Thanks.",
+   "uses_bob_reference": true
+  },
+  {
+   "beat": "nw4",
+   "id": "NW4-b",
+   "look": "Low at his table: his sheet sharp, the turned faces soft",
+   "prompt": "Vertical 9:16 candid night photograph, camera low at the edge of a small sticky pub table, looking up. In sharp focus in the foreground lies a crumpled quiz answer sheet with a tiny pencil, the only writing on it the number \"300,000\". Just behind it, standing and already leaving, is the man from the attached reference sheet, rucksack on, rolled sleeping mat strapped across the top, half-turned back toward the room with a quiet, level look. Behind him, out of focus, a crowd of pub faces all turned toward him: hi-vis, a hen-party sash, a flat cap, mouths slightly open. Warm tungsten bar light, fruit-machine glow, red halation, coarse grain, cold teal rain on the window behind. Thanks.",
+   "uses_bob_reference": true
+  },
+  {
+   "beat": "nw5",
+   "id": "NW5-a",
+   "look": "The hand-over: low across-the-table close, warm tungsten",
+   "prompt": "Vertical 9:16 candid photograph inside a worn British local pub on quiz night. Low angle at table height, 35mm lens: the man from the attached reference sheet, rucksack and rolled sleeping mat on his back, leans down and slides a small cling-filmed butcher's tray of sausages, chops and bacon across a sticky table towards an older couple. His expression is calm, almost kind, a small half-smile; their hands hover, unsure whether to take it. Pint glasses, tiny pencils, folded answer sheets face-down. Warm tungsten light from above, a soft red-orange glow from an unbranded fruit machine behind, patterned carpet. Shot on cheap 400-speed colour film, visible grain, slight halation, slightly underexposed. No readable text, no logos. Thanks.",
+   "uses_bob_reference": true
+  },
+  {
+   "beat": "nw5",
+   "id": "NW5-b",
+   "look": "The exit: wide from across the wet street, warm window vs teal rain",
+   "prompt": "Vertical 9:16 candid night photograph from across a wet British street, looking back at a small corner pub. The pub window glows amber; through the steamed glass, blurred drinkers have turned to a table where a lone cling-filmed meat tray now sits. In the foreground left, walking away from the pub towards the camera's edge, the man from the attached reference sheet, rucksack and rolled sleeping mat on his back, head slightly down, unhurried, rain catching the light. Cold teal streetlight, puddles reflecting the warm window, sodium haze. Shot on cheap high-speed colour film pushed a stop, heavy grain, mixed tungsten and cyan colour casts, slightly soft focus. Unbranded signage, no readable text, no logos. Thanks.",
+   "uses_bob_reference": true
+  }
+ ]
+}

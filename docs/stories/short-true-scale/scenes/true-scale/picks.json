@@ -2,8 +2,167 @@
  "title": "True Scale Ideas",
  "eyebrow": "BadCode Shorts · True Scale · round 2 ideas",
  "heading": "True Scale: other ways to convey it",
- "intro": "Round 4: the two flashes for the locked shape (Bob, 134,210, a home, 303,185 + 267,894). Clean room, one writer each. Bob is from his Camping reference sheet (his looks never described). Pick one Bob and one home. The bomber maybe and round 2's ideas are folded below.",
+ "intro": "Round 5: version 2, Nearest Wins (Jack: v2 in the same timeline, straight after v1). Clean room, a writer per beat, two options each; Bob from his Camping reference (two takes of each Bob shot). Pick one per beat. Version 1's flashes (Bob, home) are still waiting for a pick below.",
  "sections": [
+  {
+   "h": "Version 2: Nearest Wins",
+   "lede": "Pub quiz tiebreaker: everyone guesses low; Bob wins.",
+   "groups": [
+    {
+     "slot": "v2-nw1",
+     "round": 5,
+     "title": "1. Tiebreaker",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/NW1-a.jpg",
+       "label": "NW1-a: Low angle from a table: landlady mid-announcement, sheet raised, meat raffle beside her",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW1-b1.jpg",
+       "label": "NW1-b1: Over Bob's shoulder at table nine, landlord small and sharp across the room",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW1-b2.jpg",
+       "label": "NW1-b2: Over Bob's shoulder at table nine, landlord small and sharp across the room (take 2)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "v2-nw2",
+     "round": 5,
+     "title": "2. The guesses",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a1",
+       "src": "img/NW2-a1.jpg",
+       "label": "NW2-a1: Loud wrong guess in front, Bob quiet in the far corner",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "img/NW2-a2.jpg",
+       "label": "NW2-a2: Loud wrong guess in front, Bob quiet in the far corner (take 2)",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW2-b1.jpg",
+       "label": "NW2-b1: Over Bob's shoulder writing 300,000, the pub a blur of noise",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW2-b2.jpg",
+       "label": "NW2-b2: Over Bob's shoulder writing 300,000, the pub a blur of noise (take 2)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "v2-nw3",
+     "round": 5,
+     "title": "3. The answer",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/NW3-a.jpg",
+       "label": "NW3-a: Low angle from the crowd: the landlady reads the winning sheet while the tables groan",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW3-b1.jpg",
+       "label": "NW3-b1: Over the landlord's shoulder: his mic arm points across the pub to Bob alone at table nine",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW3-b2.jpg",
+       "label": "NW3-b2: Over the landlord's shoulder: his mic arm points across the pub to Bob alone at table nine (take 2)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "v2-nw4",
+     "round": 5,
+     "title": "4. How'd you know?",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a1",
+       "src": "img/NW4-a1.jpg",
+       "label": "NW4-a1: Wide from the bar: the whole room turned toward the corner",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "img/NW4-a2.jpg",
+       "label": "NW4-a2: Wide from the bar: the whole room turned toward the corner (take 2)",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW4-b1.jpg",
+       "label": "NW4-b1: Low at his table: his sheet sharp, the turned faces soft",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW4-b2.jpg",
+       "label": "NW4-b2: Low at his table: his sheet sharp, the turned faces soft (take 2)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "v2-nw5",
+     "round": 5,
+     "title": "5. The prize",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a1",
+       "src": "img/NW5-a1.jpg",
+       "label": "NW5-a1: The hand-over: low across-the-table close, warm tungsten",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "img/NW5-a2.jpg",
+       "label": "NW5-a2: The hand-over: low across-the-table close, warm tungsten (take 2)",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW5-b1.jpg",
+       "label": "NW5-b1: The exit: wide from across the wet street, warm window vs teal rain",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW5-b2.jpg",
+       "label": "NW5-b2: The exit: wide from across the wet street, warm window vs teal rain (take 2)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The flashes",
    "lede": "Pick one per row.",
@@ -242,5 +401,5 @@
    ]
   }
  ],
- "round": 4
+ "round": 5
 }
