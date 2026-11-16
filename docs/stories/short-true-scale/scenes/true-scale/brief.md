@@ -7,19 +7,21 @@ viewer, never "you've been fooled".
 **Form:** a true-scale comparison video, the "here is the true scale of Godzilla next to the Empire State" format: a 3D render
 (three.js) with exact counts. 9:16, ~13 s. Lit like The Malevolent Force: night, fluorescent teal, grain.
 
-## Beats (ending first: one empty house lights up and the question lands)
+## Beats (Jack 2026-11-16: open on ONE person; words = narrator AND text on screen)
 
-| # | At | What we see | On screen | Changes |
+Ending first: one empty house lights up and the question lands.
+
+| # | At | What we see | Narrator (AI Studio) + text on screen | Changes |
 |---|---|---|---|---|
-| A | 0:00 | Low, close: a crowd of tiny figures standing in the dark under one teal light, stretching away. | "Every homeless household in England." / 134,000 | The size of it. |
-| B | 0:04 | The camera pulls back and up, keeps going: beside the crowd, row after row of dark houses rises, until the crowd is a smudge at the edge. | "Every empty home." / 1,000,000+ | The scale flips: 7 to 1. |
-| C | 0:09 | One house, close, dark. Its window light flicks on. | "So who's this one for?" + Jack's line | The question lands. |
-| end | 0:13 | The logo, then the link to Camping. | | |
+| A | 0:00 | Close, low: one person on a bench (or in a doorway) under a teal streetlight, small in the dark. A tiny figure, not a portrait: the render's figure style. | "This is one homeless household." | One. |
+| B | 0:03 | The camera pulls back and up: more figures, then more, until 134,000 stand in rows under the light. | "This is all of them, in England." / **134,000** | The size of it. |
+| C | 0:06 | It keeps pulling back: beside the crowd, row after row of dark houses rises, until the crowd is a smudge at the edge. | "And these are the empty homes." / **1,000,000+** (🔴 pending the check) | The scale flips. |
+| D | 0:10 | Back in close on one dark house. Its window light flicks on. | Jack's line. | The question lands. |
+| end | 0:13 | The logo (lightning, like #83?), then the link to Camping. | | |
 
-**Bolder alternatives to weigh:** start on ONE figure on a bench and pull back to the crowd before the homes (one person first); or
-start on one empty house and pull back to the million, then reveal how small the crowd is (homes first).
+Narration lines A-C are the facts in plain words (drafts, `by: claude`); D is Jack's. The narrator's voice is cast with `voice-casting` (sound.md EMPTY).
 
 ## Owed
 - Numbers verified on the primary sources (🔴 before anything goes on screen).
-- Jack: the line in C, and whether it speaks (voice or text).
+- Jack: the line in D.
 - Sound: `sound.md` is EMPTY.

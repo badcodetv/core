@@ -1,3 +1,4 @@
 # True Scale (short): picks and rulings
 
 - **2026-11-16, Jack** (sending the reel transcript and Kai's message): "so we should make a short but talk about the style and script/story beats." Picked from options: numbers = **England, households** (134k households in temporary accommodation vs ~1 million empty homes; US figures not used); look = **night, teal, like Malevolent Force** (true-scale 3D render, lit like the bread short). Set up as `short-true-scale`, #88, 9:16 (his shorts default), media `shorts\true-scale`.
+- **2026-11-16, Jack (from options):** opening = **one person first** (one figure, pull back to 134,000, then further to the million homes); words = **both** (an AI Studio narrator and the numbers on screen). Brief updated; numbers sent to marketing-researcher for primary-source checks (`numbers.md`).
