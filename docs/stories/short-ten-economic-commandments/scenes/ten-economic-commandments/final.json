@@ -1,0 +1,513 @@
+{
+ "schema": "badcode.final/1",
+ "story": "short-ten-economic-commandments",
+ "scene": "ten-economic-commandments",
+ "sequence": "short-ten-economic-commandments-1-tec-r1",
+ "frozen": "2026-11-16T18:23:06+00:00",
+ "note": "Jack 2026-11-16: save, do it premiere then upload it to drive",
+ "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r1/edl.json",
+ "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r1/preview.mp4",
+ "total": 29.0,
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/DL4FFqF8ia1K2GerAX4uBi",
+  "timeline": "https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG"
+ },
+ "words": {},
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 5.0,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-01-t1-RU4-1-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-01-t1-RU4-1-b.mp4",
+     "made": "2026-11-16T18:07:10+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Single continuous handheld shot, fisheye lens, 8 seconds. The seated masked figure nods slowly to a heavy beat, shoulders rocking, then raises the chalkboard a few inches closer and holds it there. His blank mask stays dead-on to camera the whole time. Not one chalk mark on the board changes; railings and brownstones hold still. The streetlamp flickers once. Sound: distant traffic, a car door, a dog barking far off. Nobody talks or sings; leave out any music.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-1-b.jpg",
+     "why": "anim r1 clean room, part: intro",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+      "key": "01-t1",
+      "frame": 1,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T18:01:46.364Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-1-b.jpg",
+     "made": "2026-11-16T17:42:46.591Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using this image, cover every bit of the masked man's skin and change nothing else. His beige suit trousers now reach all the way down to his shoes, over black socks; a black roll-neck jumper under the jacket closes the gap between his black balaclava and the collar; his black gloves run up inside his jacket cuffs so no wrist shows. Keep the black balaclava with its white ring and red triangle exactly as it is, and keep the cap, the setting, the other people, the light, the framing and the film look exactly the same.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/tec-refs/r3-RU3-1-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/tec-refs/r3-RU3-1-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "a1c6aac6-22e7-45ca-973c-3559aff1a6a1"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/tec-refs/r3-RU3-1-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 5.0,
+   "dur": 5.0,
+   "beat": "one",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-03-t1-SU4-1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-03-t1-SU4-1-a.mp4",
+     "made": "2026-11-16T18:07:10+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "One unbroken 8-second take from a fixed tripod. The masked figure bobs his head to a beat and slowly fans the banknotes wider, then snaps them shut against one gloved palm. Behind him a train pulls out of the station, commuters stream past in motion blur, the fluorescent tubes buzz. His masked face never turns from us and its markings never change; the mic stand doesn't move. Sound: train doors, rumble, footsteps. No voices, no score.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-1-a.jpg",
+     "why": "anim r1 clean room, part: rule one",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+      "key": "03-t1",
+      "frame": 3,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T18:05:49.691Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-1-a.jpg",
+     "made": "2026-11-16T17:47:29.829Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using this image, cover every bit of the masked man's skin and change nothing else. His beige suit trousers now reach all the way down to his shoes, over black socks; a black roll-neck jumper under the jacket closes the gap between his black balaclava and the collar; his black gloves run up inside his jacket cuffs so no wrist shows. Keep the black balaclava with its white ring and red triangle exactly as it is, and keep the cap, the setting, the other people, the light, the framing and the film look exactly the same.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/tec-refs/r3-SU3-1-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/tec-refs/r3-SU3-1-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "416f90e0-d493-4edd-8930-4a5086d0c9eb"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/tec-refs/r3-SU3-1-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 10.0,
+   "dur": 2.6,
+   "beat": "two-a",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-04-t1-RU4-2-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-04-t1-RU4-2-a.mp4",
+     "made": "2026-11-16T18:12:40+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Single continuous shot, fisheye lens, slow push in, 8 seconds. Bent low into the fisheye, the masked figure pumps the two-finger sign forward on each beat while his other hand jabs the pointing finger in time, knees bouncing. A thin haze drifts across the red backdrop. The masked face stays pointed at us, its stitching fixed; the headstones never move. Sound: studio room tone, shoe scuffs on the floor. Silent mouthless figure, no speech, no backing track.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-2-a.jpg",
+     "why": "anim r1 clean room, part: rule two",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-2-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+      "key": "04-t1",
+      "frame": 4,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T18:08:30.945Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-2-a.jpg",
+     "made": "2026-11-16T17:43:50.458Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using this image, cover every bit of the masked man's skin and change nothing else. His beige suit trousers now reach all the way down to his shoes, over black socks; a black roll-neck jumper under the jacket closes the gap between his black balaclava and the collar; his black gloves run up inside his jacket cuffs so no wrist shows. Keep the black balaclava with its white ring and red triangle exactly as it is, and keep the cap, the setting, the other people, the light, the framing and the film look exactly the same.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/tec-refs/r3-RU3-2-b.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/tec-refs/r3-RU3-2-b.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "e9a22f0b-9474-425b-b43b-dc2f8e17a5aa"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/tec-refs/r3-RU3-2-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 12.6,
+   "dur": 2.4,
+   "beat": "two-b",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-05-t1-SU4-3-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-05-t1-SU4-3-b.mp4",
+     "made": "2026-11-16T18:12:40+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Single continuous shot, handheld camera walking backwards ahead of him, 8 seconds. The masked figure strides at us with a rolling swagger, mic swinging on its cable, head nodding to the beat. Banknotes flutter down from above and tumble across the cobbles; silhouetted pedestrians cross behind him. His mask stays on us all the way, markings untouched; the bridge holds steady behind. Sound: footsteps on cobbles, paper rustle, wind. No talking, no song.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-3-b.jpg",
+     "why": "anim r1 clean room, part: rule two",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-3-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+      "key": "05-t1",
+      "frame": 5,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T18:10:28.570Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-3-b.jpg",
+     "made": "2026-11-16T17:49:19.730Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using this image, cover every bit of the masked man's skin and change nothing else. His beige suit trousers now reach all the way down to his shoes, over black socks; a black roll-neck jumper under the jacket closes the gap between his black balaclava and the collar; his black gloves run up inside his jacket cuffs so no wrist shows. Keep the black balaclava with its white ring and red triangle exactly as it is, and keep the cap, the setting, the other people, the light, the framing and the film look exactly the same.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/tec-refs/r3-SU3-3-b.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/tec-refs/r3-SU3-3-b.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "1d0a4056-6dae-46f7-8211-ebf9244cda49"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/tec-refs/r3-SU3-3-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 15.0,
+   "dur": 3.0,
+   "beat": "three-a",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-06-t2-RU4-3-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-06-t2-RU4-3-a.mp4",
+     "made": "2026-11-16T18:17:12+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A static 8-second take, no cuts. The masked figure leans back on the bench and rocks his head to a beat, then tilts the microphone slowly toward the older woman on his left; she folds her arms and shakes her head, unimpressed, mouth closed. The young man behind shrugs. Leaves shift in the sunlight, shadows of the chain-link fence move slightly. His mask turns only slightly and never leaves the lens. Sound: birds, a distant bus. Nobody says a word; no music.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-3-a.jpg",
+     "why": "anim r1 clean room, part: rule three",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-3-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+      "key": "06-t2",
+      "frame": 6,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T18:14:01.223Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-3-a.jpg",
+     "made": "2026-11-16T17:44:53.256Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using this image, cover every bit of the masked man's skin and change nothing else. His beige suit trousers now reach all the way down to his shoes, over black socks; a black roll-neck jumper under the jacket closes the gap between his black balaclava and the collar; his black gloves run up inside his jacket cuffs so no wrist shows. Keep the black balaclava with its white ring and red triangle exactly as it is, and keep the cap, the setting, the other people, the light, the framing and the film look exactly the same.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/tec-refs/r3-RU3-3-a.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/tec-refs/r3-RU3-3-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "98ea4c21-c793-45a4-a091-e588f5d83162"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/tec-refs/r3-RU3-3-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 18.0,
+   "dur": 3.0,
+   "beat": "three-b",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-02-t1-RU4-5-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-02-t1-RU4-5-b.mp4",
+     "made": "2026-11-16T18:07:10+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Single continuous shot, handheld camera backing away slowly at his pace, 8 seconds. The masked figure keeps walking at us through the dusk crowd, holding the microphone out at arm's length, swaying it gently side to side with the beat. Blurred pedestrians brush past both edges of frame; traffic lights blink in the haze behind. His mask stays aimed down the lens, its design identical start to finish. Sound: indistinct crowd murmur, car horns, footsteps. No spoken words, no music.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-5-b.jpg",
+     "why": "anim r1 clean room, part: outro",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-5-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+      "key": "02-t1",
+      "frame": 2,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T18:03:48.767Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-5-b.jpg",
+     "made": "2026-11-16T17:46:37.720Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using this image, cover every bit of the masked man's skin and change nothing else. His beige suit trousers now reach all the way down to his shoes, over black socks; a black roll-neck jumper under the jacket closes the gap between his black balaclava and the collar; his black gloves run up inside his jacket cuffs so no wrist shows. Keep the black balaclava with its white ring and red triangle exactly as it is, and keep the cap, the setting, the other people, the light, the framing and the film look exactly the same.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/tec-refs/r3-RU3-5-b.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/tec-refs/r3-RU3-5-b.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "9537b199-965d-4f48-9e41-f31d7b4c6866"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/tec-refs/r3-RU3-5-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 21.0,
+   "dur": 4.5,
+   "beat": "fix",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-07-t1-FX4-1-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-07-t1-FX4-1-b.mp4",
+     "made": "2026-11-16T18:17:12+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Eight seconds, one take, the camera dead still on a tripod. The masked figure holds both empty gloved hands up, palms out, and slowly turns them over and back on the beat, showing nothing in them. The microphone hangs in place in front of his chest, untouched. Moths circle the streetlight; a faint mist drifts through the orange glow. The masked face looks only at us, its pattern never altering. Sound: streetlight hum, distant siren. No speech, no soundtrack.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX4-1-b.jpg",
+     "why": "anim r1 clean room, part: fix",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX4-1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+      "key": "07-t1",
+      "frame": 7,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T18:14:59.251Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX4-1-b.jpg",
+     "made": "2026-11-16T17:50:15.752Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using this image, cover every bit of the masked man's skin and change nothing else. His beige suit trousers now reach all the way down to his shoes, over black socks; a black roll-neck jumper under the jacket closes the gap between his black balaclava and the collar; his black gloves run up inside his jacket cuffs so no wrist shows. Keep the black balaclava with its white ring and red triangle exactly as it is, and keep the cap, the setting, the other people, the light, the framing and the film look exactly the same.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/tec-refs/r3-FX3-1-b.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/tec-refs/r3-FX3-1-b.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "d92fb894-76d7-41ed-8d2e-29ca0bd05bc2"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/tec-refs/r3-FX3-1-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 25.5,
+   "dur": 3.5,
+   "beat": "logo",
+   "looped": false,
+   "file": "logo card",
+   "chain": [
+    {
+     "file": "logo card",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "mus-rap",
+   "t": 0,
+   "dur": 29.0,
+   "what": "Jack's pick jazz1, Suno e4cb9be5 (the rap)",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/audio/tec-r2-jazz-phrasing-v6-w30-e4cb9be5.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/audio/tec-r2-jazz-phrasing-v6-w30-e4cb9be5.wav",
+     "made": "2026-11-16T17:37:48+00:00",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "suno.mts record",
+     "settings": {
+      "song": "e4cb9be5-5c68-484d-ace0-e0fed5592f59",
+      "pick": "Jack 2026-11-16 jazz1, rap round 2"
+     }
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "logo card"
+ ]
+}
