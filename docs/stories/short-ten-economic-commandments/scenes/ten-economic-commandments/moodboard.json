@@ -1,122 +1,122 @@
 [
  [
-  "rules",
-  "RU3-1-a",
-  "round 3: RU1-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-1-b",
-  "round 3: RU1-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-2-b",
-  "round 3: RU1-c with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-2-c",
-  "round 3: RU1-c with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-3-a",
-  "round 3: RU2-a-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-3-b",
-  "round 3: RU2-a-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-4-a",
-  "round 3: RU2-b-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-4-b",
-  "round 3: RU2-b-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-5-b",
-  "round 3: RU2-b-b with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "rules",
-  "RU3-5-c",
-  "round 3: RU2-b-b with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "supply",
-  "SU3-1-a",
-  "round 3: SU2-a-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "supply",
-  "SU3-1-b",
-  "round 3: SU2-a-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "supply",
-  "SU3-2-a",
-  "round 3: SU2-a-b with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "supply",
-  "SU3-2-b",
-  "round 3: SU2-a-b with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "supply",
-  "SU3-3-a",
-  "round 3: SU2-b-b with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
- ],
- [
-  "supply",
-  "SU3-3-b",
-  "round 3: SU2-b-b with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+  "fix",
+  "FX4-1-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
  ],
  [
   "fix",
-  "FX3-1-a",
-  "round 3: FX2-a-b with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+  "FX4-1-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
  ],
  [
   "fix",
-  "FX3-1-b",
-  "round 3: FX2-a-b with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+  "FX4-2-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
  ],
  [
   "fix",
-  "FX3-2-a",
-  "round 3: FX2-b-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+  "FX4-2-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
  ],
  [
-  "fix",
-  "FX3-2-b",
-  "round 3: FX2-b-a with the suit, the cap and the fixed mask (Jack's note)",
-  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+  "rules",
+  "RU4-1-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-1-c",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-2-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-2-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-3-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-3-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-4-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-4-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-5-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "rules",
+  "RU4-5-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "supply",
+  "SU4-1-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "supply",
+  "SU4-1-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "supply",
+  "SU4-2-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "supply",
+  "SU4-2-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "supply",
+  "SU4-3-a",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
+ ],
+ [
+  "supply",
+  "SU4-3-b",
+  "round 4: no skin (full trousers, roll-neck, gloves into the cuffs)",
+  "Using this image, cover every bit of the masked man's skin (full-length trousers, black socks, black roll-neck, gloves into the cuffs); mask, cap, setting kept."
  ]
 ]

@@ -124,5 +124,125 @@
   "FX2-b-b",
   "dawn high angle, tiny figure, vast city · refs 4",
   "Vertical 9:16 high angle from a fire escape at dawn over the cobbled street of the attached image, the bridge tower huge in cold blue haze. Far below, tiny in frame, a lone figure in a baggy beige thrift-shop suit, trousers too short, a battered tan fedora over a black balaclava holds a microphone out to nobody in the empty street. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Pigeons lifting, steam from a grate. 35mm, pale blue light, film grain, no readable signs. Thanks."
+ ],
+ [
+  "rules",
+  "RU3-1-a",
+  "round 3: RU1-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-1-b",
+  "round 3: RU1-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-2-b",
+  "round 3: RU1-c with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-2-c",
+  "round 3: RU1-c with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-3-a",
+  "round 3: RU2-a-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-3-b",
+  "round 3: RU2-a-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-4-a",
+  "round 3: RU2-b-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-4-b",
+  "round 3: RU2-b-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-5-b",
+  "round 3: RU2-b-b with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "rules",
+  "RU3-5-c",
+  "round 3: RU2-b-b with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "supply",
+  "SU3-1-a",
+  "round 3: SU2-a-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "supply",
+  "SU3-1-b",
+  "round 3: SU2-a-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "supply",
+  "SU3-2-a",
+  "round 3: SU2-a-b with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "supply",
+  "SU3-2-b",
+  "round 3: SU2-a-b with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "supply",
+  "SU3-3-a",
+  "round 3: SU2-b-b with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "supply",
+  "SU3-3-b",
+  "round 3: SU2-b-b with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "fix",
+  "FX3-1-a",
+  "round 3: FX2-a-b with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "fix",
+  "FX3-1-b",
+  "round 3: FX2-a-b with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "fix",
+  "FX3-2-a",
+  "round 3: FX2-b-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
+ ],
+ [
+  "fix",
+  "FX3-2-b",
+  "round 3: FX2-b-a with the suit, the cap and the fixed mask (Jack's note)",
+  "Using the first image, change only the masked figure: suit + plain cap, mask as the BadCode mask reference (brand fix pass, docs/brand/README.md); setting kept."
  ]
 ]
