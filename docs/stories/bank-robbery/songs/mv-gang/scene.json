@@ -235,7 +235,7 @@
       "guid": "f60770bd-5ba3-4e03-b794-b525d07fba42",
       "bin": "Balaclava Gang 10",
       "built": "2026-11-11",
-      "project": "/mnt/d/badcode-videos/bank-robbery-music/bank robbery_1.prproj",
+      "project": "/mnt/d/badcode-videos/bank-robbery-music/bank robbery.prproj",
       "edl": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/premiere/edl.json",
       "what": "cut 10B round 5 (Kai: 'I reckon we're there'), 93 shots on V1 from the original clips with in-points, A1 = the version.wav cut to 187.0 s with the 0.12 s fade baked in",
       "how": "cleanroom/r10/cuts/premiere-edl.py B5 0.12 -> scripts/scene/premiere-plan.py <edl> <plan> --seq 'Balaclava Gang 10' -> import, create_sequence, eval place.js",

@@ -90,7 +90,7 @@
       "guid": "6056bf19-9e30-4a95-8c2e-6d10cb10015a",
       "bin": "short-infinite-yous-1-infinite-yous-r4",
       "built": "2026-11-16",
-      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/infinite yous_1.prproj",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/infinite yous.prproj",
       "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/premiere-src/edl-premiere.json",
       "what": "rough cut 4 as frozen: V1 = the r4 picture (split, squeeze and logo are built in ffmpeg) cut at its 5 shots; A1 lad dub, A2 figure (stand-in h), A3 music ducked under both lines",
       "how": "premiere-plan.py edl-premiere.json plan-r4.json --tag r4 (Premiere 27.0.0)",
