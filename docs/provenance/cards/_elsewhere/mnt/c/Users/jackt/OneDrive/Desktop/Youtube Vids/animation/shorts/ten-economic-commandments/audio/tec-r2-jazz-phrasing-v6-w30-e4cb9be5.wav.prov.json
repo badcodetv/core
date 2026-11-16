@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/audio/tec-r2-jazz-phrasing-v6-w30-e4cb9be5.wav",
+ "made": "2026-11-16T17:37:48+00:00",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "suno.mts record",
+ "settings": {
+  "song": "e4cb9be5-5c68-484d-ace0-e0fed5592f59",
+  "pick": "Jack 2026-11-16 jazz1, rap round 2"
+ }
+}
