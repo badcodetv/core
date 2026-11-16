@@ -1,0 +1,13 @@
+{
+  "name": "shortwave-static-signal",
+  "style": "Instrumental dark ambient sound piece, no beat, about 15 seconds. The only instrument is an old transistor radio left switched on behind a shop counter at 3am, its dial drifting between stations. Opens on soft wet hiss and a low mains hum, a thin tuning whistle sliding up and down. Deep under the noise, a scrap of a scratchy 1950s waltz on a far-off station surfaces for two seconds, warbling and half drowned, then sinks again. Something is coming closer and the reception sickens: the hiss thickens into a grinding wall of crackle, heterodyne squeals, fading carrier tones and a slow metallic scrape like a shutter dragged on concrete. Four times the signal spikes in a sharp ragged burst of white noise and snaps back to near silence, like a light tube failing. Close, dry, lo-fi, mono, tape-saturated, a dead room with no reverb tail. Final second: one huge overloaded blast of static, then an abrupt cut to total dead air.",
+  "exclude": "clean melody, drums, percussion loop, beat, orchestra, strings, piano lead, synth pad wash, vocals, choir, humming, spoken word, radio announcer, bass drop, riser",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "high",
+  "weirdness": 75,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}

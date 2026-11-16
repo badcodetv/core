@@ -1,0 +1,14 @@
+- The track is the whole audio of a ~17-second vertical short (BadCode Shorts, "The Malevolent Force"): buying bread at a British corner shop at night, shot like a haunting. No voice anywhere (Jack, 2026-11-16: "No voice, one end card"). Shorts Suno tracks are music and sounds only, never speech (Jack, 2026-11-15).
+- The picture, in order (stills on cheap colour night film, fluorescent teal; each will be a short animated clip):
+  - 0-2 s: the only lit corner shop on a dead terraced street at 3am.
+  - 2-4 s: from inside, the glass door swings open by itself onto the black street.
+  - 4-6 s: down the aisle, one fluorescent tube dead, the stockroom door half open onto black.
+  - 6-10 s: one loaf on a bare shelf, label 50p; the tube flickers and on each flicker the label changes: £1, then £5. (Hits wanted on each flicker.)
+  - 10-12 s: a convex security mirror: the aisle is empty, fresh blank banknotes scattered on the floor.
+  - 12-15 s: the doorway, "BREAD £50" taped to the glass, the stockroom door wide open at the back with cold light pulsing; a chocolate bar on the mat, 10p crossed out, £12.
+  - 15-17 s: end card, white text on black: "Based on true events. Coming to a shop near you." (a horror-trailer tagline; the joke lands here, so the music should land a final hit and then hang or cut).
+- The point: inflation is a force you can't see; someone decides who gets the new money first, and you meet it last at the till. Never one person.
+- No earlier music rounds for this short.
+- Round 1 (2026-11-16): six instrumental directions modelled on the Black Ops 1 zombies "Damned" theme (lone reverb piano, dying music box, distorted industrial, techno through the wall, horror-trailer strings, shop-hum sound design), two takes each. Jack picked none and said: "make the music more like ambient silent hill music".
+- Jack's picked clips (the picture is settled): the shop on the street with its lights dipping; the glass door swinging wider by itself; the aisle with the stockroom door opening; the 50p loaf as the tube browns out and comes back; the convex mirror rocking. The last shot is being remade: a flash of lightning, horror style, and the bread and the chocolate bar change price, somewhere else in the shop.
+- The Duration box read 15 s last round even when 17 was asked; about 15 s is fine.

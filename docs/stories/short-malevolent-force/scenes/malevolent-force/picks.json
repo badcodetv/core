@@ -2,9 +2,123 @@
  "title": "Malevolent Force Picks",
  "eyebrow": "BadCode Shorts · The Malevolent Force · clips and music",
  "heading": "The Malevolent Force: pick a clip per shot, and the music",
- "round": 1,
- "intro": "Jack 2026-11-16: \"the music should be like … dammed bo1 zombies … animate them please … clean room it all\". Clips: a sealed writer gave two ways to move each still (a / b); shots 1-3 came out twice, so you get extra takes there. Prices and the £50 card are fixed in the edit. Music: six sealed writers, each a different take on the reference (lone reverb piano is the closest); two takes each, open in Suno. No voice anywhere.",
+ "round": 2,
+ "intro": "Round 2, on your notes. Shots 1-5 are picked (1 a2, 2 a, 3 a2, 4 b, 5 b). Shot 6 remade: lightning, then the bread and the chocolate bar change price somewhere else in the shop. Each option is a BEFORE clip (£5 / 10p) cut on its brightest flash frame to an AFTER clip (£50 / 10p crossed out £12): a rough join for judging, the real cut is done in Premiere. Music remade as ambient in the Silent Hill vein: six sealed writers, two takes each, open in Suno. Round 1 is folded below.",
  "sections": [
+  {
+   "h": "Round 2",
+   "lede": "Pick the lightning shot and the music.",
+   "groups": [
+    {
+     "slot": "clip-06-flash",
+     "round": 2,
+     "title": "6. Lightning, then the price changes (joined on the flash)",
+     "line": "The after still is framed a little differently from the before in each, most in a and c; b (the freezer) is closest, but its mist covers the price cards after ~3 s, so it's cut short.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-06-a-preview.mp4",
+       "label": "a: at the till, lightning through the front door; after, the till drawer hangs open",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-06-b-preview.mp4",
+       "label": "b: the chest freezer under the barred back window; the room drops to black after the flash; after, frost spreads",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "clips/mf-06-c-preview.mp4",
+       "label": "c: the front-window ledge, the bolt over the street; after, the streetlamp is out",
+       "warn": "price cards small in a wide shot"
+      }
+     ]
+    },
+    {
+     "slot": "track-r2",
+     "round": 2,
+     "title": "The music: ambient, Silent Hill vein (instrumental)",
+     "line": "About 15 s; bells1 and bells2 ran long (2:08, 0:54), trimmed in the cut.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "bells1",
+       "href": "https://suno.com/song/1f6d8984-04de-4842-ae73-9886c2b4afdb",
+       "label": "bells1: Detuned bell-like electric piano, four or five sad notes, far apart (2:08)",
+       "warn": ""
+      },
+      {
+       "id": "bells2",
+       "href": "https://suno.com/song/1a1860c8-f5cd-4cf6-a9d7-6112fecf35ac",
+       "label": "bells2: Detuned bell-like electric piano, four or five sad notes, far apart (0:54)",
+       "warn": ""
+      },
+      {
+       "id": "vibes1",
+       "href": "https://suno.com/song/f7b238d2-fbb9-4ee1-9b9d-5d9600291c27",
+       "label": "vibes1: Out-of-tune vibraphone and bells shimmering against each other (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "vibes2",
+       "href": "https://suno.com/song/476176ce-b612-45da-a01d-39fac97df84e",
+       "label": "vibes2: Out-of-tune vibraphone and bells shimmering against each other (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "guitar1",
+       "href": "https://suno.com/song/3a783ffd-046d-47b1-ba39-ea1d400fc993",
+       "label": "guitar1: One clean electric guitar, wet spring reverb, slow mournful arpeggio (0:21)",
+       "warn": ""
+      },
+      {
+       "id": "guitar2",
+       "href": "https://suno.com/song/f5d9a3f9-8858-43f8-86d0-74140d814847",
+       "label": "guitar2: One clean electric guitar, wet spring reverb, slow mournful arpeggio (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "foundry1",
+       "href": "https://suno.com/song/e5223065-077d-43e4-a477-37c98dd954ef",
+       "label": "foundry1: Struck scrap metal, chains and pipes in a vast dark reverb (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "foundry2",
+       "href": "https://suno.com/song/4c85e24c-d057-4a3b-951e-7902f7d2b988",
+       "label": "foundry2: Struck scrap metal, chains and pipes in a vast dark reverb (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "radio1",
+       "href": "https://suno.com/song/a31d1da3-2d7e-47d8-a158-b3ffb6638320",
+       "label": "radio1: Shortwave static and tuning whine as the music, a buried far-off fragment (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "radio2",
+       "href": "https://suno.com/song/772eaf83-2986-478c-adae-bd05cef65734",
+       "label": "radio2: Shortwave static and tuning whine as the music, a buried far-off fragment (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "siren1",
+       "href": "https://suno.com/song/dd712154-b86f-4b6f-9be5-651a0ac5e061",
+       "label": "siren1: A distant filtered siren wail over a throbbing sub-bass pulse (0:17)",
+       "warn": ""
+      },
+      {
+       "id": "siren2",
+       "href": "https://suno.com/song/d8792d95-abae-44be-8b46-8515e1f7dbee",
+       "label": "siren2: A distant filtered siren wail over a throbbing sub-bass pulse (0:16)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The shots",
    "lede": "Six shots in film order; the end card is text.",
@@ -39,7 +153,8 @@
        "label": "b2: streetlamp dies (second take)",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-02",
@@ -71,7 +186,8 @@
        "label": "b2: door swings shut (second take)",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-03",
@@ -97,7 +213,8 @@
        "label": "b: basket slides",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-04",
@@ -117,7 +234,8 @@
        "label": "b: slow brownout, bag stirs",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-05",
@@ -137,7 +255,8 @@
        "label": "b: mirror rocks",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-06",
@@ -157,7 +276,8 @@
        "label": "b: back door shuts",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   },
@@ -243,7 +363,8 @@
        "label": "shop2: Almost no music: tube hum, fridge, door creak, a detuned upright (0:15)",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }

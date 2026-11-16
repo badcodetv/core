@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental dark industrial ambient cue, 17 seconds, all electronic. Lead voice is a filtered warning siren far off across a dead town, a slow wail that climbs and sinks, smeared in long cold reverb and lo-fi grain. Underneath, a looping sub-bass throb at slow heartbeat pace, 60 bpm, hypnotic and patient. Cue sheet: 0s distant siren drifting over the low throb and a faint fluorescent electrical hum; 6s the throb tightens and quickens, a hard muffled metallic thud lands at 6s, 8s and 10s like a tube flickering; 12s the siren swells nearer, louder, rawer, rust and static in its tail; 15s one huge crashing hit; 15.5s to 17s dead silence.",
+  "exclude": "strings, piano, guitar, vocals, choir, singing, melody, acoustic instruments, drum kit, orchestra, upbeat, major key",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "high",
+  "weirdness": [
+    60
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false,
+  "title": "malevolent force r2-siren-and-pulse",
+  "mode": "custom",
+  "workspace": "short-malevolent-force"
+}

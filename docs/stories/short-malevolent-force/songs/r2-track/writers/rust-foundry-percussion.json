@@ -1,0 +1,13 @@
+{
+  "name": "rust-foundry-percussion",
+  "style": "instrumental, dark ambient industrial sound design of an abandoned iron foundry at 3am, no melody at all. Opens on one long slow scrape of a steel girder dragged across concrete, echoing into a huge cold hall. Then scrap metal struck with a hammer: rusted sheet iron, oil drum, hanging chain, cast pipe, each blow ringing into cavernous reverb. Lurching uneven meter, groups of seven grinding against four, so the pulse keeps stumbling. Every clang a little louder and nearer than the last, the space closing in; the final strike is the heaviest, then dead silence, hard stop. Grainy lo-fi tape hiss, low electrical mains hum, worn cassette texture, ritual and hypnotic, 60 bpm",
+  "exclude": "orchestra, strings, piano, drum kit, vocals, choir, synth pads, melody, bass guitar, guitar, trap hi-hats, cinematic braams, uplifting",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "high",
+  "weirdness": 65,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}
