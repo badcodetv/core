@@ -1,0 +1,13 @@
+{
+  "name": "mafioso-menace",
+  "style": "1997 New York mafioso rap, dark and cinematic but bare, 90 BPM. A heavyset Brooklyn kingpin reads his rulebook: very deep plummy chest voice, wheezy and humid, slight rasp, audible slow breaths between lines, unhurried and lazily behind the beat, sentences landing anywhere in the bar, calm total authority, never shouting, faint bemused smirk. Gritty East Coast boom bap: laid-back heavily swung drums pitched down, booming dusty kick, crunchy cracking snare, tight hi-hat, short ominous minor-key jazz piano stab looped like a held breath, low upright bass hum, vinyl crackle, warm tape saturation, mono-ish mid-90s mix with the voice dry and loud up front. Between rules a turntable scratch cuts a gruff shouted announcer voice counting the number. No hook, no chorus, no singing.",
+  "exclude": "trap, 808 rolls, rattling hi-hats, autotune, melodic singing, sung chorus, choir, modern polish, EDM, synth pads, high-pitched voice, shouting rap, fast double-time flow",
+  "lyrics": "[Intro: deep calm spoken, slow breath]\nUh. Money printer manual. Take notes.\n\n[Scratch: shouted count \"One!\"]\n[Verse: relaxed, behind the beat]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch: shouted count \"Two!\"]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch: shouted count \"Three!\"]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: low, slow, spoken, beat drops out]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 25,
+  "styleInfluence": 75,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": true
+}

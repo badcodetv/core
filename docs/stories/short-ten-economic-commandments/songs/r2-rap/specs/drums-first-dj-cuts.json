@@ -1,0 +1,17 @@
+{
+  "style": "1997 East Coast boom bap, producer-led. Chopped breakbeat drums sliced and re-stacked on an MPC, kick and snare harder than nails, dry knock, slight swing, 92 BPM. Minimal two-bar loop of dark minor Rhodes chords, sparse and ominous, never resolving. Deep round sub bass walking under the loop. Turntablist cuts the spoken numbers on vinyl between each rule like a radio countdown, sharp chirp scratches. Mono-leaning 90s mix, gritty 12-bit sampler crunch, tape hiss, no chorus. Vocal: big heavyset deep male Brooklyn rapper, chesty and slightly wheezy, slow, cool, conversational, behind the beat, unhurried authority.",
+  "exclude": "trap, rolling hi-hats, 808 glide, autotune, sung hook, melodic singing, choir, female vocals, high-pitched voice, fast double-time flow, bright synths, EDM, reggae, shouting",
+  "lyrics": "[Intro: dusty drum break, Rhodes loop drops in]\nUh. Money printer manual. Take notes.\n\n[Scratched count: one]\n[Verse]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratched count: two]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratched count: three]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: drums cut out, spoken low]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    45
+  ],
+  "styleInfluence": 72,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": false,
+  "title": "tec-r2-drums-first-dj-cuts",
+  "mode": "custom",
+  "workspace": "short-ten-economic-commandments"
+}

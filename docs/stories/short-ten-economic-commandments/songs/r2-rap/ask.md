@@ -1,0 +1,2 @@
+Jack, 2026-11-16, on round 1 (12 takes): "none of them sound like biggie or the ten crack commandments, please make it as close as possible. also it goes from like 1 to 4 to 7 or something, make it in order as in 1 2 3 4 or however many there are and change the lyrics accordingly. Please clean room it all and research the internet to achieve it. Thanks."
+Jack, 2026-11-16, straight after: "also we need to make it shorter, those song were like 47 secs, how many secs can all platforms allow short wise thanks"

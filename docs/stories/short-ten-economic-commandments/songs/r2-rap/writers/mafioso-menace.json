@@ -1,0 +1,13 @@
+{
+  "name": "mafioso-menace",
+  "style": "Late-90s Brooklyn mafioso rap, a crime-film rulebook read aloud, 90 BPM, dim and minimal. Lead voice: a big heavyset Brooklyn boss, cavernous chest-deep baritone, round and thick, a faint asthmatic wheeze, slow audible inhales before each rule, lazy unhurried conversational flow that drags late into the pocket, cool menace, half-amused, volume level and low the whole time like a man who has never needed to shout. Beat: grimy New York street-corner hip hop from a dusty sampler, a lone eerie Rhodes-style minor-key jazz chord phrase repeating, fat thudding kick, snare that cracks like a slammed door, closed hats, deep upright bass notes, hiss and crackle, saturated cassette warmth, narrow mono mix, vocal dry, close and loud. Each number is a turntable scratch of a gruff barked count. Rules only: no hook, no chorus, no singing.",
+  "exclude": "trap, 808 rolls, rattling hi-hats, autotune, melodic singing, sung chorus, choir, glossy modern mix, EDM, synth pads, thin high voice, yelling, double-time flow, west coast g-funk",
+  "lyrics": "[Intro: low, unbothered, a slow breath first]\nUh. Money printer manual. Take notes.\n\n[Scratch: barked count \"One!\"]\n[Verse: lazy, late, calm menace]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch: barked count \"Two!\"]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch: barked count \"Three!\"]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: music cuts, just the voice, quiet threat]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 25,
+  "styleInfluence": 75,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": true
+}

@@ -1,0 +1,13 @@
+{
+  "name": "exclude-the-wrong-voice",
+  "style": "1997 New York City hip hop, dusty sampled boom-bap, 90 BPM, no hook. Short minor-key electric piano phrase looping cold and sparse, thick swung kick, cracking snare, a DJ scratching in a shouted number before each rule. Big portly Brooklyn male MC, deep chest-heavy baritone with a breathy wheeze, plush rounded tone, relaxed talky cadence that drags a hair late on the snare then catches up, cool menace, dry close-miked vocal",
+  "exclude": "gravelly old man voice, female vocals, high youthful voice, radio announcer, orchestral strings, spoken word poetry, trap hi-hats, 808 rolls, lo-fi chill, autotune, sung chorus, backing vocals, big reverb",
+  "lyrics": "[Intro]\nUh. Money printer manual. Take notes.\n\n[Scratch: count]\n[Verse]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch: count]\n[Verse]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch: count]\n[Verse]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro]\nAnd the fix, from the future? No hand on the printer.",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 10,
+  "styleInfluence": 85,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": false
+}
