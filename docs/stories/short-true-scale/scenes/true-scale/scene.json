@@ -53,5 +53,18 @@
     "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/edl.json",
     "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/preview.mp4",
     "script": "scripts/shorts/true_scale_cut.py"
+  },
+  "premiere": {
+    "current": "r5",
+    "r5": {
+      "sequence": "short-true-scale-1-nearest-wins-r5",
+      "guid": "90e4abee-4d2b-4eed-b974-67b43d4f0871",
+      "bin": "short-true-scale-1-nearest-wins-r5",
+      "built": "2026-11-16",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/true-scale.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/premiere-src/edl-premiere.json",
+      "what": "rough cut 5 frozen: V1 the 9 rendered shots (blurs, punch-ins, stats, fruit-machine logo baked), A1 the 11 dubbed phrases, A2 music rain1",
+      "how": "premiere-plan.py edl-premiere.json plan-r5.json --tag r5 (Premiere 27.0.0)"
+    }
   }
 }
