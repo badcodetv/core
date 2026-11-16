@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/DL4FFqF8ia1K2GerAX4uBi",
   "what": "Mood board round 1: clean room, 9 stills, nine looks (90s rap video / flyer / risograph / engraving / VHS)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments <out.html>"
+ },
+ {
+  "at": "2026-11-16T16:46:45+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/DL4FFqF8ia1K2GerAX4uBi",
+  "what": "round 2: 6 clean-room prompts x2 in Jack's 4 NYC settings, the BadCode guy in an oversized thrift suit and fedora",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments <out.html>"
  }
 ]

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU2-b-a.jpg",
+ "made": "2026-11-16T16:43:55.814Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo, setting as the attached image: cobbled street between brick warehouses, a steel suspension-bridge tower closing the end, low winter sun, deep shadow. Walking toward camera, rim-lit, a figure in a baggy beige thrift-shop suit, trousers too short, a battered tan fedora over a black balaclava, microphone swinging loose. Behind him banknotes flutter down through the sun shaft; silhouetted passers-by ignore them. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. 28mm, hard contrast, expired film grain, no lettering. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/tec-refs/ref4-bridge-street.png",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/tec-refs/ref4-bridge-street.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "59751b49-8b96-4b46-9337-a0a2139ce850"
+}

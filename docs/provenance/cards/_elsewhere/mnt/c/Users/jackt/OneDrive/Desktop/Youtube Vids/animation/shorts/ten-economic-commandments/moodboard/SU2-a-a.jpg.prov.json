@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU2-a-a.jpg",
+ "made": "2026-11-16T16:42:58.351Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 candid photo on an old New York subway platform: a silver train smears past, commuters streak by as ghosts, riveted pillars, greenish fluorescent light. Dead centre and perfectly still, facing camera, a figure in a baggy beige thrift-shop suit, trousers too short, a battered tan fedora over a black balaclava, fanning a thick wad of crisp new banknotes, edge-on, microphone at his side. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Half-second exposure, 35mm film grain, no text. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "5921cc23-c624-4618-b44c-6944a3fe7b03"
+}

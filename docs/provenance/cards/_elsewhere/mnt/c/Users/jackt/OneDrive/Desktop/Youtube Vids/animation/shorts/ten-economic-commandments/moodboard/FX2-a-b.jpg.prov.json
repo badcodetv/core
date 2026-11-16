@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX2-a-b.jpg",
+ "made": "2026-11-16T16:44:39.138Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 night close-up under one sodium streetlight, wet pavement glowing amber, the street beyond lost in dark. A figure in a baggy beige thrift-shop suit, trousers too short, a battered tan fedora over a black balaclava raises both gloved hands to the lens, open and empty, the foam microphone tucked under one arm. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. 85mm f/1.8, focus on the gloves, hat brim soft, high-ISO grain, no text or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b56dff6e-2375-44ac-a0f8-b1b7986832c7"
+}
