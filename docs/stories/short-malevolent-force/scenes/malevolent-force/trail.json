@@ -68,5 +68,16 @@
   "url": "https://claude.ai/artifact/QBTVPj1nBbqbyfbPwF11ju",
   "what": "Round 2: shot 6 lightning price-change (3 options, before/after joined on the flash) + Silent Hill-style music (12 takes)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-malevolent-force/scenes/malevolent-force/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-16T11:46:09+00:00",
+  "stage": "clips",
+  "round": 2,
+  "what": "Jack's round 2 picks",
+  "decided": [
+   "Music: vibes1 (inharmonic-vibraphone, https://suno.com/song/f7b238d2-fbb9-4ee1-9b9d-5d9600291c27). Shot 6, no pick, note: 'the setting needs to stay the same before and after the lightning flash, literlly the only thing that chenges are the prices, also make it more zoomed in on the bread like that one we picked on the shelf.'"
+  ],
+  "feedback": "feedback/clips-r2",
+  "feedback_docs": 8
  }
 ]
