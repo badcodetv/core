@@ -48,5 +48,12 @@
   "round": 1,
   "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
   "what": "Rough cut 1 fix: voice lines were stacked at 0 s (loudnorm dropped adelay); each line now placed at its own time"
+ },
+ {
+  "at": "2026-11-16T15:04:27+00:00",
+  "stage": "picks",
+  "round": 6,
+  "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
+  "what": "Round 6: diverse crowd, numbers fixed; 8 passed, beats 1 and 4 blocked"
  }
 ]

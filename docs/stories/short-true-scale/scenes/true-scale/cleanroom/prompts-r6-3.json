@@ -1,0 +1,28 @@
+{
+  "research": [
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — Nano Banana 2 renders short quoted strings and digits cleanly; keep on-image text to one short item and say exactly where it sits",
+    "https://morphed.app/blog/nano-banana-2-prompts — 1-4 word text is near-perfect; longer text drifts, so one number per frame and 'all other writing unreadable'",
+    "https://therender.beehiiv.com/p/the-prompt-formula-that-makes-thumbnails-pop — digits and punctuation (commas, periods) held up in tests; specifying placement on the surface worked",
+    "https://en.wikipedia.org/wiki/Meat_raffle — in Britain the meat raffle is a social pub draw to bring locals in; a tray of meat on the bar is the honest prop",
+    "https://en.wikipedia.org/wiki/Pub_quiz — pub quizzes are a fixture of British pubs since the 1970s, run on quiet weeknights for regulars",
+    "https://ocsi.uk/2022/11/30/what-can-census-2021-tell-us-about-ethnic-diversity-in-england/ — 2021 census: England far more mixed than a decade ago, Birmingham and Leicester now no-majority cities; a town or city local today plausibly has South Asian, Black, East European, white and mixed regulars side by side",
+    "https://theconversation.com/census-data-shows-england-and-wales-are-more-ethnically-diverse-and-less-segregated-than-ever-before-197156 — less segregated than before: mixed groups at one table are the realistic picture, not separate tables per group"
+  ],
+  "notes": "Beat 3, the answer. Option a is the number shot: the quizmaster lifts the sheet to camera with 303,185 as the only legible writing, the room's groan soft in the foreground; no Bob. Option b is the room shot: no readable writing at all, the whole pub groaning while the quizmaster points across to the corner where Bob sits alone (reference attached). Crowds named person by person so no single group dominates; the quizmaster is a different, specific person in each option so the director can pick. Plain unbranded glasses and packets throughout.",
+  "stills": [
+    {
+      "beat": "nw3",
+      "id": "NW6-3a",
+      "look": "The sheet to camera: low close on the quizmaster lifting 303,185, groans soft in front",
+      "prompt": "Vertical 9:16 candid night photograph on cheap colour film, heavy grain, inside a British local pub on quiz night. Low and close from a front table: the quizmaster, a Black British woman in her fifties in a burgundy cardigan, reading glasses on the end of her nose, holds a microphone and lifts a plain white answer sheet toward us, the sheet facing the camera the right way up, its only writing the handwritten number 303,185 in thick black marker. Soft and out of focus in the foreground: a young woman in a navy hijab with her head in her hands, an older white man in a flat cap groaning, a lad in a paint-spattered hi-vis vest tipping his chair back. Warm tungsten bulbs, patterned carpet, fruit machine glow, rain-streaked window cold teal behind. Unbranded glasses. All other writing unreadable. Thanks.",
+      "uses_bob_reference": false
+    },
+    {
+      "beat": "nw3",
+      "id": "NW6-3b",
+      "look": "The room groans: wide from the bar, the quizmaster pointing across to Bob alone in the corner",
+      "prompt": "Vertical 9:16 candid night photograph on cheap colour film, coarse grain, a British local pub on quiz night seen wide from the bar end, a meat raffle tray on the bar in the foreground. The whole room groans at once: a table of lads in plain unbadged football shirts, one South Asian, one Black, one white, throwing their pens down; two Filipino nurses with lanyards laughing; a white grandmother gripping a tiny pencil. The quizmaster, a Sikh man in his sixties in a navy turban and a cardigan, mic raised, points across the room. At the end of his point, alone at a small corner table under a dim wall lamp, sits the man from the attached reference sheet, calm, looking down at his sheet. Warm tungsten inside, cold teal rain on the window. No readable writing anywhere. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

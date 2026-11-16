@@ -2,8 +2,89 @@
  "title": "True Scale Ideas",
  "eyebrow": "BadCode Shorts · True Scale · round 2 ideas",
  "heading": "True Scale: other ways to convey it",
- "intro": "Round 5: version 2, Nearest Wins (Jack: v2 in the same timeline, straight after v1). Clean room, a writer per beat, two options each; Bob from his Camping reference (two takes of each Bob shot). Pick one per beat. Version 1's flashes (Bob, home) are still waiting for a pick below.",
+ "intro": "Round 6, on Jack's notes (version 1 scrapped; diversify the crowd; fix the numbers; subtler voices). Clean room. 8 stills passed; beats 1 and 4 are missing: Flow refused them repeatedly (it went strict on this project after a run of blocks), so they are owed. Numbers now right: 50,000 facing us, the quizmaster's sheet 303,185.",
  "sections": [
+  {
+   "h": "Round 6: diverse crowd, numbers fixed",
+   "lede": "Beats 1 and 4 still to make.",
+   "groups": [
+    {
+     "slot": "r6-nw2",
+     "round": 6,
+     "title": "2. The guesses",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "2a",
+       "src": "img/NW6-2a.jpg",
+       "label": "NW6-2a: Loud table close-up, 50,000 slapped down",
+       "warn": ""
+      },
+      {
+       "id": "2b1",
+       "src": "img/NW6-2b1.jpg",
+       "label": "NW6-2b1: Wide across the shouting room, Bob alone in the corner",
+       "warn": ""
+      },
+      {
+       "id": "2b2",
+       "src": "img/NW6-2b2.jpg",
+       "label": "NW6-2b2: Wide across the shouting room, Bob alone in the corner",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r6-nw3",
+     "round": 6,
+     "title": "3. The answer",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "3a",
+       "src": "img/NW6-3a.jpg",
+       "label": "NW6-3a: The sheet to camera: low close on the quizmaster lifting 303,185, groans soft in front",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r6-nw5",
+     "round": 6,
+     "title": "5. The prize",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "5a1",
+       "src": "img/NW6-5a1.jpg",
+       "label": "NW6-5a1: The handover: close, warm, the next table receives",
+       "warn": ""
+      },
+      {
+       "id": "5a2",
+       "src": "img/NW6-5a2.jpg",
+       "label": "NW6-5a2: The handover: close, warm, the next table receives",
+       "warn": ""
+      },
+      {
+       "id": "5b1",
+       "src": "img/NW6-5b1.jpg",
+       "label": "NW6-5b1: The exit: doorway silhouette into teal rain, his sheet left behind",
+       "warn": ""
+      },
+      {
+       "id": "5b2",
+       "src": "img/NW6-5b2.jpg",
+       "label": "NW6-5b2: The exit: doorway silhouette into teal rain, his sheet left behind",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Version 2: Nearest Wins",
    "lede": "Pub quiz tiebreaker: everyone guesses low; Bob wins.",
@@ -401,5 +482,5 @@
    ]
   }
  ],
- "round": 5
+ "round": 6
 }

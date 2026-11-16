@@ -1,0 +1,27 @@
+{
+  "research": [
+    "https://en.wikipedia.org/wiki/Meat_raffle — UK meat raffles are a pub social ritual, ~£1 tickets, prizes from a local butcher: so the prize reads as cling-filmed cuts on a plain tray with a butcher's paper bag, no branding",
+    "https://heptonstall.org/tag/meat/ — real British locals still run weekly meat raffles; it is ordinary, not quaint",
+    "https://www.morningadvertiser.co.uk/Article/2023/07/04/Stonegate-and-Heineken-UK-promoting-inclusivity-in-pubs — Stonegate/Heineken research: ethnic minority customers are regulars where a pub feels inclusive; the local should look like its town, so every person in frame gets a specific ordinary look rather than 'diverse crowd'",
+    "https://thehobbledehoy.com/2021/02/19/you-know-you-dont-belong-why-people-of-colour-dont-feel-welcome-in-pubs/ — the failure mode is people of colour as tokens at the edge; so put them at the centre of the receiving table and give them the reaction",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — with a reference attached, spend the prompt on action, layout and mood, not on the referenced identity",
+    "https://openart.ai/blog/nano-banana-2-lite-prompt-guide/ — quote exact text and say where it sits; keep it short; so one number, in quotes, on one sheet facing the camera"
+  ],
+  "notes": "Beat 5, the prize. Option a is the handover itself, close and warm, with no number in frame (the receiving table carries the diversity note and the reaction). Option b is the exit, shot from inside: the receiving table in the foreground, Bob a silhouette in the open doorway against teal rain, his abandoned sheet reading 300,000 facing the camera as the only legible number. Both: no brands, Bob described only by position, action, posture, expression.",
+  "stills": [
+    {
+      "beat": "nw5",
+      "id": "NW6-5a",
+      "look": "The handover: close, warm, the next table receives",
+      "prompt": "Vertical 9:16 candid photo, cheap colour film, heavy grain, night inside a British local pub under warm tungsten bulbs. Waist-high, slightly low angle across a sticky wooden table. The man from the attached reference sheet leans in from frame right, quietly setting down the meat-raffle prize: a plain tray of cling-filmed sausages, chops and a joint, with a white butcher's paper bag. Around the table, startled and touched: a Black woman in her forties in NHS-blue scrubs with a lanyard, a grey-haired Sikh man in a navy turban and fleece, a young white lad in a plain red football shirt with no badge, a South Asian woman in a black hijab laughing behind her hand. Answer sheets face down, tiny pencils, unbranded crisp packets. His expression: small, private, done. Thanks.",
+      "uses_bob_reference": true
+    },
+    {
+      "beat": "nw5",
+      "id": "NW6-5b",
+      "look": "The exit: doorway silhouette into teal rain, his sheet left behind",
+      "prompt": "Vertical 9:16 candid photo, cheap colour film, grain, night. Shot from inside a British local pub, low across a table. Foreground, sharp: a pencilled answer sheet flat on the table facing the camera, the only readable writing on it \"300,000\". Middle ground, in warm tungsten light, the next table holds up the meat-raffle prize, a plain cling-filmed tray of meat, and turns to watch the door: an older Black Caribbean man in a flat cap, a young East Asian woman in a hi-vis work jacket, a white grandmother in a cardigan, a Bangladeshi-British teenager in a plain grey tracksuit. Background: the open pub door, cold teal streetlight and slanting rain, the man from the attached reference sheet walking out into it, seen from behind, shoulders up. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}
