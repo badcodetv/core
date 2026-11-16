@@ -43,4 +43,5 @@ not a shortage. It links to Camping.
 | Ideas round 2 | ✅ https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN (6 other ways, setup + reveal), awaiting Jack; WW2 bomber parallel open |
 | v1 shape + flashes | 🟡 shape locked (Bob, 134,210, home, 303,185 + 267,894); flashes on https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN awaiting picks; 3D graphics not started |
 | v2 Nearest Wins | ✅ stills picked by Claude (Jack: "you decide"), voices cast |
-| Rough cut 1 (v1 + v2) | 🟡 https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8 (49.5 s, stills + voices, no music, 3D render owed), awaiting Jack's notes |
+| Rough cut 1 (v1 + v2) | ✅ superseded (v1 scrapped) |
+| Rough cut 2 (Nearest Wins) | 🟡 https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8 (34.1 s, five clips, voices; no lip sync or music yet), awaiting Jack |

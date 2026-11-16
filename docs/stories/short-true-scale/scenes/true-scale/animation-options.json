@@ -1,0 +1,121 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Clean-room writer, prompts verbatim",
+   "why": "Jack: clean room it all",
+   "source": "picks.md"
+  },
+  {
+   "rule": "Mouths move; voices dubbed later",
+   "why": "never Flow speech",
+   "source": "memory"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "The quizmaster poses the tiebreaker; the regulars lean in to listen.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The quizmaster poses the tiebreaker; the regulars lean in to listen.",
+     "idea": "The quizmaster poses the tiebreaker; the regulars lean in to listen.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The quizmaster poses the tiebreaker; the regulars lean in to listen."
+      }
+     ],
+     "veo_prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The woman in the burgundy cardigan holds the blank sheet steady overhead and talks into the microphone, lips and jaw moving naturally, eyebrows lifting as she asks. In the first seconds the man in the flat cap narrows his eyes, and the lad in the hi-vis vest tilts his head, thinking. Everyone else stays seated and still; glasses and papers stay where they are. The fruit machine lights blink softly. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": "Model may write marks on the blank sheet or invent a voice/music; the sheet arm may drift down. Audio discarded."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "The loud table shouts its lowball guess; Bob alone in the corner keeps writing.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The loud table shouts its lowball guess; Bob alone in the corner keeps writing.",
+     "idea": "The loud table shouts its lowball guess; Bob alone in the corner keeps writing.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The loud table shouts its lowball guess; Bob alone in the corner keeps writing."
+      }
+     ],
+     "veo_prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. At the centre table the man in the paint-spattered T-shirt leans forward and shouts, mouth wide, jabbing his open hand at the paper. The woman in the denim jacket cups her hand to her mouth and calls out with him. Far back in the corner, the bearded man in the beanie keeps his head down, writing slowly on his sheet, untouched by the noise. Everyone else stays seated, only blinking. Crisp packets and glasses stay still on the tables. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": "Bob is small and distant: model may freeze him or have him look up. Shouting may spill into extra people gesturing; crisp-bag graphics may smear."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "She reveals 303,185; the foreground groans.",
+   "options": [
+    {
+     "id": "a",
+     "label": "She reveals 303,185; the foreground groans.",
+     "idea": "She reveals 303,185; the foreground groans.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "She reveals 303,185; the foreground groans."
+      }
+     ],
+     "veo_prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The woman in the burgundy cardigan holds the white card perfectly still beside her head; its printed number stays crisp, flat and unchanged for the whole shot. She speaks into the microphone, lips moving naturally, a dry half-smile. In the first seconds the man in the flat cap rubs his brow and lets his head sink, and the woman in the navy hijab presses her face deeper into her hands. The lad in the hi-vis vest sits still, watching her. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": "Highest text risk: digits may morph if the card tilts or the hand moves; regenerate if any digit changes. Groans may become laughter."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "The lad asks how he knew; Bob, standing, answers quietly.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The lad asks how he knew; Bob, standing, answers quietly.",
+     "idea": "The lad asks how he knew; Bob, standing, answers quietly.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "The lad asks how he knew; Bob, standing, answers quietly."
+      }
+     ],
+     "veo_prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The lad in the hi-vis vest looks up at the standing bearded man in the beanie and speaks, mouth moving, brow puzzled. A beat later the bearded man turns his eyes down to him and answers in a few calm words, lips barely moving, shoulders still, backpack and rolled mat unmoving. The quizmaster holds the microphone and watches. The handwritten card on the table lies flat and untouched, its number unchanged. Everyone else stays seated and still. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": "Mouths may move in the wrong order or both at once (voices synced in edit, so trim to fit). The 300,000 card is large in foreground: watch for digit drift. Bob may wander."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "Bob gives the meat-raffle prize to the next table and turns to go.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Bob gives the meat-raffle prize to the next table and turns to go.",
+     "idea": "Bob gives the meat-raffle prize to the next table and turns to go.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "Bob gives the meat-raffle prize to the next table and turns to go."
+      }
+     ],
+     "veo_prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The bearded man in the beanie slides the wrapped tray of meat a few inches along the table towards the nurse in blue scrubs, lets go with both gloved hands and straightens up, turning slowly away out of frame right. The nurse looks from the tray up to him, a surprised soft smile. The young man in the red shirt raises his eyebrows. Everyone else stays seated, barely moving. The tray stays flat on the table, nothing lifted. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": "Model may have him lift or drop the tray, or the cling film warp. Exit to frame right may stall within 8s; the hijab woman may keep laughing (fine, a fourth mover)."
+    }
+   ]
+  }
+ ]
+}

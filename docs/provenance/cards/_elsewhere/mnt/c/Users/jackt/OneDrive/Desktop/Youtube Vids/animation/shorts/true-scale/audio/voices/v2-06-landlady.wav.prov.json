@@ -1,7 +1,7 @@
 {
  "schema": "badcode.prov/1",
  "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-06-landlady.wav",
- "made": "2026-11-16T14:40:30+00:00",
+ "made": "2026-11-16T14:54:50+00:00",
  "by": "claude",
  "kind": "voice",
  "engine": "gemini-tts",
@@ -9,11 +9,11 @@
  "model": "gemini-3.1-flash-tts-preview",
  "prompt": "...Right. Picture round.",
  "inputs": {
-  "profile": "# Audio Profile\nA landlady in her sixties running her pub's quiz night. Big, warm, smoky voice, a natural performer with a cheap microphone. Working-class Midlands accent. Loves the drama of the tiebreaker, teasing the room.\n\n## Scene:\nA packed local pub on quiz night, carpet, fruit machine, meat raffle on the bar. She is on the mic behind the bar.\n\n## Sample Context:\nShe has run this quiz every Thursday for twenty years. She reads answers like a game-show host and has never once been surprised, until now.\n",
-  "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-gacrux.md"
+  "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+  "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
  },
  "settings": {
-  "voice": "Gacrux",
+  "voice": "Sulafat",
   "temperature": 1,
   "channels": 2,
   "wrapper": "audio profile"

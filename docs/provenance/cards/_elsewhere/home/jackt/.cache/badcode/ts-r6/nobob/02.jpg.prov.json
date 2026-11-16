@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r6/nobob/02.jpg",
+ "made": "2026-11-16T14:57:00.984Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 candid night photograph on cheap colour film, heavy grain, inside a British local pub on quiz night. Low and close from a front table: the quizmaster, a Black British woman in her fifties in a burgundy cardigan, reading glasses on the end of her nose, holds a microphone and lifts a plain white answer sheet toward us, the sheet facing the camera the right way up, its only writing the handwritten number 303,185 in thick black marker. Soft and out of focus in the foreground: a young woman in a navy hijab with her head in her hands, an older white man in a flat cap groaning, a lad in a paint-spattered hi-vis vest tipping his chair back. Warm tungsten bulbs, patterned carpet, fruit machine glow, rain-streaked window cold teal behind. Unbranded glasses. All other writing unreadable. Thanks.",
+ "source_id": "f1dc03ba-5437-4f92-b41f-0d6b63f873ad"
+}

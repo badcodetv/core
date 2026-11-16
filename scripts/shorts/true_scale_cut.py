@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""True Scale (BadCode Short #88): rough cut, both versions back to back (2026-11-16).
+"""True Scale (BadCode Short #88), version 2 "Nearest Wins": rough cut (2026-11-16).
 
     python3 scripts/shorts/true_scale_cut.py [--round N]
 
-Jack, 2026-11-16: "please do v2 in the same timeline so its just one after another" and, on the picks, voices and line:
-"you decide". So: version 1 (the graphic one: Bob flash, 134,210, a home, 303,185 + 267,894) then a one-second slate,
-then version 2 (Nearest Wins, the pub quiz). Picture is the picked STILLS with eased pushes (ffmpeg stand-in, no clips
-yet), timed to the real voice lengths (lead-in 0.3 s, tail 0.5 s). The numbers on version 1's graphic beats are drawn
-here (the 3D render is owed). No music yet (sound.md is EMPTY). Every voice line is its own WAV (AI Studio), placed whole.
+Jack, 2026-11-16: "scrap version one and just do version two" (round 2 of this script; round 1 cut v1 + v2 from stills,
+see git history). Five Omni clips (stills NW7-1-a, NW6-2b1, NW6-3a, NW7-4-a, NW6-5a2), the clips' own sound dropped. The
+voice lines (AI Studio: landlady Sulafat, builder Achird, Bob Algenib) run back to back with a small gap; the picture cuts
+at fixed points chosen against them (a clip that has to run past its 8 s holds its last frame, flagged `looped`).
+Brand-like crisp packets in clips 2 and 5 are blurred. Each line is levelled on its own file first, then placed (loudnorm
+in the same graph as adelay dropped the delays: round 1's stacked voices). No music yet.
 Writes <media>/cut/r<N>/edl.json (timeline format, scripts/scene/timeline.py), stems, picture.mp4 and preview.mp4.
 """
 # style-lint: story=short-true-scale (this cut script belongs to one short)
@@ -20,29 +21,24 @@ from localmap import localize  # noqa: E402
 
 cfg = localize(json.loads((SCENE / 'scene.json').read_text()))
 MEDIA = pathlib.Path(cfg['media'])
-MB, VOX = MEDIA / 'moodboard', MEDIA / 'audio' / 'voices'
+VID, VOX = MEDIA / 'video', MEDIA / 'audio' / 'voices'
 LINES = REPO / 'docs/stories/short-true-scale/voices/lines'
 W, H, FPS = 1080, 1920, 24
-BOLD = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-LEAD, TAIL, GAP = 0.3, 0.5, 0.25
-
-# (beat key, title, still, [voice line stems in order], min seconds, on-screen numbers [(text, size, y)], what we see)
+LEAD, GAP, TAIL = 0.3, 0.25, 0.6
+ORDER = ['v2-01-landlady', 'v2-02-builder', 'v2-03-landlady', 'v2-04-builder', 'v2-05-bob', 'v2-06-landlady']
+WHO = {'landlady': 'Landlady (Sulafat)', 'builder': 'Builder (Achird)', 'bob': 'Bob (Algenib)'}
+# (beat, title, clip, in, picture ends at, blur boxes on the 720x1280 clip, what we see)
+#   ends: ('t', s) absolute · ('len', s) after its start · ('after', line, pad) · ('end', 0)
 SHOTS = [
-    ('bob', 'v1 1. Bob', 'BO4-c', ['v1-01-narrator'], 3.0, [], 'Through a rainy windscreen, Bob on his bench looks back.'),
-    ('crowd', 'v1 2. 134,210', 'CR1-a', ['v1-02-narrator'], 3.5, [('134,210', 150, 0.30), ('homeless households in England', 52, 0.40)],
-     'A car park of suitcases from above: every homeless household in England.'),
-    ('home', 'v1 3. A home', 'HM4-a', [], 2.2, [], 'One warm lit window on a cold terrace.'),
-    ('homes', 'v1 4. 303,185 + 267,894', 'EM1-a', ['v1-03-narrator'], 4.5,
-     [('303,185', 140, 0.24), ('long-term empty homes', 50, 0.33), ('+ 267,894', 110, 0.44), ('second homes', 50, 0.52)],
-     'Dark terraces from the air, one small teal patch: the homes nobody lives in.'),
-    ('slate', 'VERSION 2', None, [], 1.0, [('VERSION 2', 90, 0.48)], 'Slate between the two versions (review only).'),
-    ('nw1', 'v2 1. Tiebreaker', 'NW1-a', ['v2-01-landlady'], 3.0, [], 'The landlady on the mic, the meat raffle on the bar.'),
-    ('nw2', 'v2 2. The guesses', 'NW2-a1', ['v2-02-builder'], 2.5, [], 'A builder shouts "50,000"; Bob writes in the corner.'),
-    ('nw3', 'v2 3. The answer', 'NW3-a', ['v2-03-landlady'], 3.0, [], 'The landlady reads the answer; the room groans.'),
-    ('nw4', "v2 4. How'd you know?", 'NW4-b1', ['v2-04-builder', 'v2-05-bob'], 3.0, [], 'Bob\'s "300,000" sheet; the pub turned to him.'),
-    ('nw5', 'v2 5. The prize', 'NW5-b1', ['v2-06-landlady'], 3.0, [], 'Bob walks out into the rain; the pub glows behind him.'),
+    ('nw1', '1. Tiebreaker', 'ts-01-NW7-1-a.mp4', 0.0, ('t', 8.0), [], 'The quizmaster lifts the sheet and asks the tiebreaker.'),
+    ('nw2', '2. The guesses', 'ts-02-NW6-2b1.mp4', 0.3, ('after', 'v2-02-builder', 0.35),
+     [(280, 900, 510, 1140)], 'Wide across the room: the loud table shouts its guess; Bob writes in the corner.'),
+    ('nw3', '3. The answer', 'ts-03-NW6-3a.mp4', 0.0, ('len', 8.0), [], 'The quizmaster holds up 303,185; the room groans.'),
+    ('nw4', "4. How'd you know?", 'ts-04-NW7-4-a.mp4', 0.0, ('after', 'v2-05-bob', 0.4), [],
+     'Bob stands behind his "300,000" sheet; the room turns to him. "How\'d you know that?" "I sleep opposite one."'),
+    ('nw5', '5. The prize', 'ts-05-NW6-5a2.mp4', 0.0, ('end', 0), [(300, 670, 420, 780), (190, 1040, 380, 1180)],
+     'Bob sets the meat raffle down for the next table and goes. "...Right. Picture round."'),
 ]
-WHO = {'narrator': 'BadCode (Iapetus)', 'landlady': 'Landlady (Gacrux)', 'builder': 'Builder (Fenrir)', 'bob': 'Bob (Algenib)'}
 
 
 def ff(*a):
@@ -59,40 +55,40 @@ ENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv4
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=1); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=2); a = ap.parse_args()
     cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
-    t, starts, durs, placed = 0.0, [], [], []  # placed: (stem, t, dur, text, who)
-    for key, title, still, vox, mn, nums, see in SHOTS:
-        lt, inner = t + LEAD, 0.0
-        for v in vox:
-            d = dur(VOX / f'{v}.wav'); placed.append((v, round(lt, 3), round(d, 3))); lt += d + GAP; inner += d + GAP
-        d = max(mn, (LEAD + inner - GAP + TAIL) if vox else mn)
-        starts.append(round(t, 3)); durs.append(round(d, 3)); t += d
-    total = round(t, 3)
-    parts = []
-    for i, (key, title, still, vox, mn, nums, see) in enumerate(SHOTS):
-        d, n = durs[i], int(round(durs[i] * FPS))
-        txt = ''.join(f",drawtext=fontfile={BOLD}:text='{s}':fontcolor=white:fontsize={sz}:x=(w-text_w)/2:y=h*{y}"
-                      f":shadowcolor=black@0.7:shadowx=3:shadowy=3:alpha='min(1,t/0.4)'" for s, sz, y in nums)
-        out = cut / f'v{i:02d}-{key}.mp4'
-        if still is None:
-            ff('-f', 'lavfi', '-i', f'color=black:s={W}x{H}:r={FPS}:d={d}', '-vf', txt.lstrip(',') + ',scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)', *ENC, out)
-        else:
-            z = f"1+0.05*(3*pow(on/{n},2)-2*pow(on/{n},3))"
-            ff('-loop', 1, '-t', d, '-i', MB / f'{still}.jpg', '-vf',
-               f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-               f"zoompan=z='{z}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s={W}x{H}:fps={FPS}{txt},"
-               'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)', '-frames:v', n, *ENC, out)
+    t, placed = LEAD, {}
+    for s in ORDER:
+        d = dur(VOX / f'{s}.wav'); placed[s] = (round(t, 3), round(d, 3)); t += d + GAP
+    total = round(t - GAP + TAIL, 3)
+    starts, durs, t = [], [], 0.0
+    for key, title, clip, tin, end, blurs, see in SHOTS:
+        if end[0] == 't': e = end[1]
+        elif end[0] == 'len': e = t + end[1]
+        elif end[0] == 'after': e = sum(placed[end[1]]) + end[2]
+        else: e = total
+        starts.append(round(t, 3)); durs.append(round(e - t, 3)); t = e
+    parts, looped = [], []
+    for i, (key, title, clip, tin, end, blurs, see) in enumerate(SHOTS):
+        d, src = durs[i], VID / clip
+        over = max(0.0, tin + d - dur(src) + 0.05); looped.append(over > 0)
+        chain, last = '', '0:v'
+        for k, (x0, y0, x1, y1) in enumerate(blurs):
+            chain += f'[{last}]split[m{k}][s{k}];[s{k}]crop={x1 - x0}:{y1 - y0}:{x0}:{y0},boxblur=16:2[c{k}];[m{k}][c{k}]overlay={x0}:{y0}[b{k}];'
+            last = f'b{k}'
+        chain += (f'[{last}]trim=start={tin},setpts=PTS-STARTPTS,' + (f'tpad=stop_mode=clone:stop_duration={over:.3f},' if over else '') +
+                  f'trim=duration={d},setpts=PTS-STARTPTS,scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},'
+                  'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)[v]')
+        out = cut / f'v{i}-{key}.mp4'
+        ff('-i', src, '-filter_complex', chain, '-map', '[v]', '-an', *ENC, out)
         parts.append(out)
     (cut / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
     ff('-f', 'concat', '-safe', '0', '-i', cut / 'list.txt', '-c', 'copy', cut / 'picture.mp4')
     stems = {}
     for who in WHO:
-        mine = [(s, st, d) for s, st, d in placed if s.endswith(who)]
-        if not mine: continue
+        mine = [(s, *placed[s]) for s in ORDER if s.endswith(who)]
         inputs, chain = [], ''
         for k, (s, st, d) in enumerate(mine):
-            # Level each line on its own first: loudnorm in the same graph as adelay dropped the delays (2026-11-16).
             lv = cut / f'lvl-{s}.wav'
             ff('-i', VOX / f'{s}.wav', '-af', 'loudnorm=I=-16:TP=-1.5', '-ar', 48000, '-ac', 2, lv)
             inputs += ['-i', lv]
@@ -107,29 +103,27 @@ def main():
     ff('-i', cut / 'picture.mp4', '-i', cut / 'mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k',
        '-t', total, cut / 'preview.mp4')
     beats = []
-    for i, (key, title, still, vox, mn, nums, see) in enumerate(SHOTS):
-        lines = [{'i': j, 'who': s.split('-')[-1], 'name': WHO[s.split('-')[-1]], 't': st, 'dur': d,
-                  'text': (LINES / f'{s}.txt').read_text().strip(), 'by': 'claude' if s != 'v2-05-bob' else 'claude (Jack: "you decide")'}
-                 for j, (s, st, d) in enumerate([p for p in placed if p[0] in vox])]
-        beats.append({'id': key, 'title': title, 'start': starts[i], 'dur': durs[i], 'see': see, 'lines': lines})
-    video = [{'file': str((MB / f'{s[2]}.jpg') if s[2] else cut / parts[i].name), 'in': 0, 'start': starts[i], 'dur': durs[i],
-              'beat': s[0], 'source': str(MB / f'{s[2]}.jpg') if s[2] else 'slate', 'looped': False} for i, s in enumerate(SHOTS)]
-    edl = {'sequence': f'short-true-scale-1-true-scale-r{a.round}', 'title': 'True Scale Timeline',
-           'heading': f'BadCode Shorts ▲ True Scale, rough cut {a.round}: version 1 then version 2',
-           'intro': ('Both versions back to back (Jack: "one after another"). Version 1: Bob, 134,210, a home, 303,185 + 267,894 '
-                     '(stills with pushes; the numbers drawn on; the 3D render is still to make). Then a slate, then version 2: '
-                     'Nearest Wins, the pub quiz. Picks, Bob\'s line and the voices are Claude\'s calls (Jack: "you decide"): '
-                     'note anything you\'d change.'),
-           'fps': FPS, 'total': total, 'beats': beats, 'video': video,
+    for i, (key, title, clip, tin, end, blurs, see) in enumerate(SHOTS):
+        s0, s1 = starts[i], starts[i] + durs[i]
+        lines = [{'i': j, 'who': s.split('-')[-1], 'name': WHO[s.split('-')[-1]], 't': placed[s][0], 'dur': placed[s][1],
+                  'text': (LINES / f'{s}.txt').read_text().strip(), 'by': 'claude'}
+                 for j, s in enumerate([s for s in ORDER if s0 <= placed[s][0] < s1])]
+        beats.append({'id': key, 'title': title, 'start': s0, 'dur': durs[i], 'see': see, 'lines': lines})
+    edl = {'sequence': f'short-true-scale-1-nearest-wins-r{a.round}', 'title': 'True Scale Timeline',
+           'heading': f'BadCode Shorts ▲ True Scale: Nearest Wins, rough cut {a.round}',
+           'intro': ('Version 2 only (Jack: "scrap version one"). Five clips from the diverse-crowd stills, the subtler voices '
+                     '(landlady Sulafat, builder Achird; Bob unchanged), crisp packets blurred. No music yet. Note anything.'),
+           'fps': FPS, 'total': total, 'beats': beats,
+           'video': [{'file': str(VID / s[2]), 'in': s[3], 'start': starts[i], 'dur': durs[i], 'beat': s[0],
+                      'source': str(VID / s[2]), 'looped': looped[i]} for i, s in enumerate(SHOTS)],
            'audio': [{'track': f'A{k + 1}', 'name': f'vox-{w}', 'file': str(p)} for k, (w, p) in enumerate(stems.items())],
-           'events': [{'stem': f"vox-{s.split('-')[-1]}", 't': st, 'dur': d, 'what': (LINES / f'{s}.txt').read_text().strip(),
-                       'src': str(VOX / f'{s}.wav')} for s, st, d in placed],
-           'flags': ['Stills with eased pushes stand in for clips; nothing animated yet.',
-                     'No music or room sound yet (sound.md EMPTY).',
-                     'Version 1\'s numbers are drawn text over mood-board stills; the true-scale 3D render is owed.',
-                     'The VERSION 2 slate is for review only.']}
+           'events': [{'stem': f"vox-{s.split('-')[-1]}", 't': placed[s][0], 'dur': placed[s][1],
+                       'what': (LINES / f'{s}.txt').read_text().strip(), 'src': str(VOX / f'{s}.wav')} for s in ORDER],
+           'flags': ['No music or pub room sound yet.',
+                     'Mouths are not synced to the voices yet (lip-sync-dub to follow on the speaking shots).',
+                     'The landlady\'s answer line runs ~13 s: the first thing to trim.']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
-    print(json.dumps({'total': total, 'starts': starts, 'durs': durs, 'preview': str(cut / 'preview.mp4')}))
+    print(json.dumps({'total': total, 'starts': starts, 'durs': durs, 'looped': looped, 'preview': str(cut / 'preview.mp4')}))
 
 
 if __name__ == '__main__':

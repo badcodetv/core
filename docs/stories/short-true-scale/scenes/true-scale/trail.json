@@ -55,5 +55,13 @@
   "round": 6,
   "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
   "what": "Round 6: diverse crowd, numbers fixed; 8 passed, beats 1 and 4 blocked"
+ },
+ {
+  "at": "2026-11-16T15:23:47+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "Rough cut 2: Nearest Wins only, five Omni clips, subtler voices, packets blurred, 34.1 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/ts-timeline"
  }
 ]
