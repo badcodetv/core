@@ -1,0 +1,14 @@
+{
+  "story": "short-true-scale",
+  "scene": "true-scale",
+  "prefix": "ts",
+  "title": "True Scale",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> True Scale",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale",
+  "video": {"model": "Omni 1.2 Flash", "aspect": "9:16", "mode": "Frames", "duration": 8},
+  "beats": [
+    {"key": "people", "at": "0:00", "name": "A. The people", "blurb": "Every homeless household in England, true scale: 134,000 tiny figures under one teal light."},
+    {"key": "homes", "at": "0:04", "name": "B. The homes", "blurb": "The camera pulls back: beside them, a million empty homes, dark. The people become a smudge."},
+    {"key": "owner", "at": "0:09", "name": "C. Who owns this one?", "blurb": "One empty house's light flicks on. The question, and BadCode's line (Jack's)."}
+  ]
+}
