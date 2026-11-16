@@ -1,3 +1,92 @@
 {
- "option": "a"
+ "option": "a",
+ "skip": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "extra": [
+  {
+   "key": "01a-t1",
+   "n": 1,
+   "still": "NW7-1-a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan standing behind the bar, holds the microphone to her mouth and gives the blank sheet in her raised hand a little shake. Facing the room, mouth clearly lit, she says: Tiebreaker! Nearest wins the meat raffle. She speaks loud, cheerful and unhurried. Nobody else speaks. The young man in hi-vis grins; the old man in the flat cap leans in. Only pub murmur under her voice, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Tiebreaker! Nearest wins the meat raffle."
+  },
+  {
+   "key": "01a-t2",
+   "n": 1,
+   "still": "NW7-1-a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan standing behind the bar, holds the microphone to her mouth and gives the blank sheet in her raised hand a little shake. Facing the room, mouth clearly lit, she says: Tiebreaker! Nearest wins the meat raffle. She speaks loud, cheerful and unhurried. Nobody else speaks. The young man in hi-vis grins; the old man in the flat cap leans in. Only pub murmur under her voice, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Tiebreaker! Nearest wins the meat raffle."
+  },
+  {
+   "key": "01b-t1",
+   "n": 1,
+   "still": "NW7-1-a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan behind the bar, keeps the blank sheet raised and speaks into the microphone, face to the room, mouth clearly visible. She says: How many homes in England have been empty six months or more? A steady, deliberate quiz voice, every word clear, filling most of the clip. Nobody else speaks. The woman in the navy hijab frowns and reaches for her pen. Low pub murmur, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: How many homes in England have been empty six months or more?"
+  },
+  {
+   "key": "01b-t2",
+   "n": 1,
+   "still": "NW7-1-a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan behind the bar, keeps the blank sheet raised and speaks into the microphone, face to the room, mouth clearly visible. She says: How many homes in England have been empty six months or more? A steady, deliberate quiz voice, every word clear, filling most of the clip. Nobody else speaks. The woman in the navy hijab frowns and reaches for her pen. Low pub murmur, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: How many homes in England have been empty six months or more?"
+  },
+  {
+   "key": "03a-t1",
+   "n": 3,
+   "still": "NW6-3a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan, holds the 303,185 sheet steady; the number never changes. Into the microphone, mouth clearly lit, she says: Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes. Calm, unhurried, a dry little pause after the first sentence. Nobody else speaks. The old man in the flat cap rubs his brow. Pub murmur only, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes."
+  },
+  {
+   "key": "03a-t2",
+   "n": 3,
+   "still": "NW6-3a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan, holds the 303,185 sheet steady; the number never changes. Into the microphone, mouth clearly lit, she says: Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes. Calm, unhurried, a dry little pause after the first sentence. Nobody else speaks. The old man in the flat cap rubs his brow. Pub murmur only, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes."
+  },
+  {
+   "key": "03b-t1",
+   "n": 3,
+   "still": "NW6-3a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan, lowers the 303,185 sheet a touch, its number unchanged, and looks across the room. Into the microphone, mouth clearly lit, she says: Nearest... table nine. Bob. A slow, drawn-out pause before table nine, then the name said plainly, surprised. Nobody else speaks. The young man in hi-vis turns his head toward her. Soft pub murmur, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Nearest... table nine. Bob."
+  },
+  {
+   "key": "03b-t2",
+   "n": 3,
+   "still": "NW6-3a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan, lowers the 303,185 sheet a touch, its number unchanged, and looks across the room. Into the microphone, mouth clearly lit, she says: Nearest... table nine. Bob. A slow, drawn-out pause before table nine, then the name said plainly, surprised. Nobody else speaks. The young man in hi-vis turns his head toward her. Soft pub murmur, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Nearest... table nine. Bob."
+  },
+  {
+   "key": "04-t1",
+   "n": 4,
+   "still": "NW7-4-a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. First the young man in the hi-vis vest, seated on the right, turns to the standing man and says: How'd you know that? Then the standing man in the beanie with the rucksack and bedroll looks down at him and answers quietly: I sleep opposite one. Unhurried, a beat between lines, both mouths visible. Only those two speak; the quizmaster in the burgundy cardigan stays silent. The 300,000 sheet on the table never changes. Pub murmur, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: How'd you know that? / I sleep opposite one."
+  },
+  {
+   "key": "04-t2",
+   "n": 4,
+   "still": "NW7-4-a",
+   "motion": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. First the young man in the hi-vis vest, seated on the right, turns to the standing man and says: How'd you know that? Then the standing man in the beanie with the rucksack and bedroll looks down at him and answers quietly: I sleep opposite one. Unhurried, a beat between lines, both mouths visible. Only those two speak; the quizmaster in the burgundy cardigan stays silent. The 300,000 sheet on the table never changes. Pub murmur, no music, no subtitles.",
+   "character": null,
+   "why": "Jack 2026-11-16 'reshoot' for lip sync; words: How'd you know that? / I sleep opposite one."
+  }
+ ]
 }

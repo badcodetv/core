@@ -1,19 +1,26 @@
 {
- "round": 3,
+ "round": 4,
  "plan": [
   {
    "h": "Done",
    "items": [
-    "All dialogue faster: re-voiced brisk, then sped (landlady x1.25, builder x1.10, Bob x1.08; checked by ear, no warble). The answer line is now ~10.5 s and the frozen frame on Bob's shot is gone.",
-    "The numbers in plain text at the end (official, with sources).",
-    "The BadCode logo landing like a pub fruit machine: mark, bad, code."
+    "Talking shots re-shot with the exact words (two takes each, all transcribed right).",
+    "Dubbed the Bank Robbery way: mouths read by eye on 12 fps strips, every phrase just after the mouth opens, never early, x0.85-1.30.",
+    "Stats card and the fruit-machine logo kept."
    ]
   },
   {
-   "h": "Coming",
+   "h": "Check by ear",
    "items": [
-    "Music + pub atmosphere: six Suno takes being made, a picks page next.",
-    "Lip sync: needs LatentSync installed (asked)."
+    "\"second homes\" may come out \"second owns\" (the TTS take itself).",
+    "Bob may say \"I'll sleep\" (the take).",
+    "Runs 40.8 s: the mouths set the pace now."
+   ]
+  },
+  {
+   "h": "Next",
+   "items": [
+    "Music: pick on https://claude.ai/artifact/F8Md9pWGGK2psk9ZguoRA3"
    ]
   }
  ],

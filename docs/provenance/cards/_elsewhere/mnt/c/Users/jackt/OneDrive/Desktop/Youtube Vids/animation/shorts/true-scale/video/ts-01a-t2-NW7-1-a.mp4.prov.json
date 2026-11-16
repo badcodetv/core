@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-01a-t2-NW7-1-a.mp4",
+ "made": "2026-11-16T15:42:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan standing behind the bar, holds the microphone to her mouth and gives the blank sheet in her raised hand a little shake. Facing the room, mouth clearly lit, she says: Tiebreaker! Nearest wins the meat raffle. She speaks loud, cheerful and unhurried. Nobody else speaks. The young man in hi-vis grins; the old man in the flat cap leans in. Only pub murmur under her voice, no music, no subtitles.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+ "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Tiebreaker! Nearest wins the meat raffle.",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+  "key": "01a-t2",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T15:38:16.133Z"
+ }
+}
