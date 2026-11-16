@@ -2,8 +2,74 @@
  "title": "True Scale Ideas",
  "eyebrow": "BadCode Shorts · True Scale · round 2 ideas",
  "heading": "True Scale: other ways to convey it",
- "intro": "Round 3. Jack picked the shape (Bob flash, 134,210 graphic, happy-home flash, 303,185 + 267,894 graphic); the flashes are being written. New: the WW2 bomber, as a maybe (clean room, four example stills: armour where there are no holes; the holes we see are the struggle we notice, the clean parts are the people out of sight, the armour is a home). Round 2's six ideas are folded below.",
+ "intro": "Round 4: the two flashes for the locked shape (Bob, 134,210, a home, 303,185 + 267,894). Clean room, one writer each. Bob is from his Camping reference sheet (his looks never described). Pick one Bob and one home. The bomber maybe and round 2's ideas are folded below.",
  "sections": [
+  {
+   "h": "The flashes",
+   "lede": "Pick one per row.",
+   "groups": [
+    {
+     "slot": "flash-bob",
+     "round": 4,
+     "title": "1. Bob (flash)",
+     "line": "A regular bloke who lost it all in 2008, not \"them\".",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/BO4-a.jpg",
+       "label": "BO4-a: Small in the empty car park: wide, low, one lamp",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/BO4-b.jpg",
+       "label": "BO4-b: Beside the doors: close profile, shoppers as blurred legs",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "img/BO4-c.jpg",
+       "label": "BO4-c: Through your windscreen: he looks back",
+       "warn": ""
+      },
+      {
+       "id": "c2",
+       "src": "img/BO4-c2.jpg",
+       "label": "BO4-c2: Through your windscreen: he looks back (second take)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "flash-home",
+     "round": 4,
+     "title": "3. A warm, lit, happy home (flash)",
+     "line": "The one warm thing in the film.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/HM4-a.jpg",
+       "label": "HM4-a: Outside looking in: glowing front-room window on a cold teal terrace",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/HM4-b.jpg",
+       "label": "HM4-b: Inside at the dinner table: warm pendant lamp, teal night pressed on the glass",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "img/HM4-c.jpg",
+       "label": "HM4-c: Coming home: front door opens, lamp light spills on a wet step",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Maybe: the bomber",
    "lede": "Four example stills, our own drawn bomber, no copied diagram.",
@@ -176,5 +242,5 @@
    ]
   }
  ],
- "round": 3
+ "round": 4
 }

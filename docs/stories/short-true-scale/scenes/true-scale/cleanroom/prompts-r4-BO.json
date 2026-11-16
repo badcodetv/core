@@ -1,0 +1,30 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Gemini image models combine reference images for character consistency; brief it like a photographer (scene, light, lens), not keywords",
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/character-consistency.md — Nano Banana 2 has the largest reference budget; name the reference and state the new scene, keep the character itself out of the text",
+    "https://www.leonardo.ai/news/nano-banana-prompt-guide — reference + relationship + new scenario; describe the change, not the subject",
+    "https://gridfiti.com/cinestill-800t-night/ — 800-speed tungsten stock at night: teal shadows, halation glow round lamps, visible grain",
+    "https://www.optik-oldschool.com/blogs/blog/kodak-portra-800-vs-cinestill-800t — fluorescent and car-park light reads green/teal and harsh on colour neg; grain climbs in the dark areas"
+  ],
+  "notes": "Bob's look is carried entirely by the attached reference sheet: no prompt names his clothes, hair, age or face, only position, action, posture, expression, light and camera. The three differ by distance and viewpoint: (a) far and small in the empty car park, which rhymes with the true-scale pull-backs that follow; (b) close side profile at the shop doors, shoppers passing as blurred legs, the ignored-in-plain-sight beat; (c) the viewer's point of view through a parked car's windscreen, where he looks back for a second, the recognition beat. All three keep him doing something ordinary (tea, waiting, a nod) so he reads as a bloke, not a cause. No brands, no readable text, film grain and cold teal throughout.",
+  "stills": [
+    {
+      "beat": "bob",
+      "id": "BO4-a",
+      "look": "Small in the empty car park: wide, low, one lamp",
+      "prompt": "Vertical 9:16 night photograph on cheap 800-speed colour negative film, heavy grain, slight halation. The man from the attached reference sheet sits alone on a metal bench at the far edge of a near-empty supermarket car park, small in the frame, under a single cold fluorescent lamp that turns everything teal. Wet tarmac shines with faded white bay lines; a row of abandoned trolleys; a small tent pitched behind the bench. He sits upright, hands clasped between his knees, looking calmly across at the distant glowing shop entrance. Shot from low and far away on a 35mm lens, lots of dark empty space above him. No signs, no logos, no readable text. Thanks."
+    },
+    {
+      "beat": "bob",
+      "id": "BO4-b",
+      "look": "Beside the doors: close profile, shoppers as blurred legs",
+      "prompt": "Vertical 9:16 night photograph on grainy cheap colour film, cold teal fluorescent spill from open automatic shop doors just out of frame. The man from the attached reference sheet sits on a bench beside the entrance, seen in close side profile at chest height, holding a paper cup of tea in both hands for warmth. His expression is ordinary and patient, a man waiting for nothing in particular, lost in a thought. In the foreground, out of focus, shoppers' legs and carrier bags stream past without slowing. 50mm lens, shallow depth of field, a damp shine on the paving, faint breath in the cold air. No logos, no brand colours, no readable text. Thanks."
+    },
+    {
+      "beat": "bob",
+      "id": "BO4-c",
+      "look": "Through your windscreen: he looks back",
+      "prompt": "Vertical 9:16 night photograph on cheap grainy colour film, shot from the driver's seat of a parked car looking out through a windscreen dotted with rain. The dark dashboard edge and a soft wiper blade frame the bottom of the picture. Across the car park, on a bench under a cold teal fluorescent lamp, the man from the attached reference sheet has just glanced up and meets the camera's eye, a small tired half-nod, as if to a neighbour. Raindrops catch the lamp as blurred teal points; the focus sits on him, sharp and still. Quiet, unsentimental, a moment of being seen. No logos, no number plates, no readable text. Thanks."
+    }
+  ]
+}
