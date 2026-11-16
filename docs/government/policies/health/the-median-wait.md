@@ -21,7 +21,7 @@ check.check_on: 2027-04-30
 check.provisional: yes
 check.result: pending
 ---
-Your mum's hip is one of 7.4 million waits for planned treatment in England, up from 7.1 million
+Your mum's hip is one of 7.38 million waits for planned treatment in England, up from 7.1 million
 in March, the month the target was hit.
 
 Hitting a date is not fixing a queue, so we answer to the median wait, published monthly: 12.2
