@@ -1,5 +1,31 @@
 # Police Cameras, Tested First (home/police-cameras-by-lot)
 
+## 2026-11-16 · PR #29
+
+**Opposition:** Putting the whole code into the lottery leaves a dangerous ambiguity: do waiting forces also wait for deletions already required, or the human hearing at the stop? State that existing duties and the permanent right apply everywhere and survive the trial ending. Test the extra vans and new procedures within that floor.
+**Answer (Home Secretary):** Right, and it should never have been in doubt. Two things wait for no lot: deleting what the law already says must go, and the right to a human at the stop. Every force has both from day one, trial or not, and neither ends when the trial does; the stop clause now says so. The lot decides the rest: the new vans, old-footage searches under the code, the arrest record, the outside reading and the published deletion count.
+**Outcome:** Conceded: stop, test.where, test.against, leaves_out and the rule, this commit
+
+**Opposition:** Your deletion test follows only pictures already due for deletion on day one. A force could clear that backlog, keep pictures that become due later, and still pass. Audit newly due deletions throughout the trial too, with a failure rule and a response to each breach.
+**Answer (Home Secretary):** Fair. A force could clear the old pile and start a new one. Deletions are now counted every quarter on two lines, the pictures due on day one and the ones falling due during the trial, both audited by the inspectorate. It fails if more than one in a hundred of the pictures falling due in any quarter is still held at the end of the next. Each one found is a breach: it goes that day, and the force answers for it in public.
+**Outcome:** Conceded: test.measure, fails_if and the rule, this commit
+
+**Statistician:** "Crime solved" across all recorded crime will be decided by noise, not the code, and it doesn't say whether one in twenty is relative or in points. Fix: make the fail number the charge-or-summons share for crimes where a live alert or an old-footage search was used, in both sets of forces, keep the force-wide share beside it as a check, and say "relative".
+**Answer (Home Secretary):** Taken. Two years of everything else a force does would drown the cameras. The fail number is now the share of crimes where a live alert or an old-footage search was used that end in a charge or summons, in both sets of forces, each from its own baseline, and it's relative: 6.0% must reach at least 6.3%. The force-wide share stays beside it as a check.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+**Statistician:** The inspectorate's sample has no size, and the one-in-a-hundred threshold depends on it. Fix: name the minimum read per line per year (for example, at least 300 arrests, or every arrest where there are fewer), and say the share is the inspectorate's count over the arrests it read.
+**Answer (Home Secretary):** Taken. At least 300 arrests involving a match on each line, live and old footage, in each set of forces each year, or every one where there are fewer. The share is its count over the arrests it read.
+**Outcome:** Conceded: test.measure, this commit
+
+**Statistician:** The fails-if opens "against the forces waiting", which then governs every clause, but wrong person, match alone and deletions read as plain thresholds. Fix: say those three apply to the forces that start, on their own, and the comparison with the forces waiting applies to crime solved.
+**Answer (Home Secretary):** Taken. Wrong person, match alone and deletions are thresholds on the forces that start, on their own. Only crime solved is judged against the forces waiting.
+**Outcome:** Conceded: fails_if, this commit
+
+**Statistician:** The world check's rewrite nearly passes. Two gaps before it freezes: "the first such bill" has no sponsor and no start date, and a clause covering police facial recognition in general needs saying which way it counts. Fix: "the first government bill introduced after 15 November 2026 that gives police use of facial recognition a statutory basis", and a general clause counts as covering stored pictures (failed).
+**Answer (Home Secretary):** Taken as written, before it freezes. Private members' bills and anything earlier don't count; a general clause, code or power counts as covering stored pictures, so failed. That makes held less likely, so the prior comes down from 0.35 to 0.3.
+**Outcome:** Conceded: check.claim, check.prior, check.rule and check.if_revised, this commit
+
 ## 2026-11-15 · PR #29
 
 **Opposition:** Your test checks whether an officer recorded anything besides the match, not whether it supports the arrest. A weak extra reason could pass; up to one arrest in a hundred on the match alone also passes. Require independent checking of the supporting evidence and a response to every breach, separately for live and old-footage searches.
