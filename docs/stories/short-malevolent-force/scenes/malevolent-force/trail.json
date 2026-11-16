@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY",
   "what": "Mood board round 1: clean room, 9 stills, nine different horror looks across 50p / £1→£5 / £50",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-malevolent-force/scenes/malevolent-force <out.html>"
+ },
+ {
+  "at": "2026-11-16T10:00:58+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY",
+  "what": "Mood board round 2: clean room from Jack's reference photo (night corner-shop doorway, cheap colour film), 3 sealed writers, 15 stills",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-malevolent-force/scenes/malevolent-force <out.html>"
  }
 ]

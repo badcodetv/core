@@ -20,4 +20,5 @@ Kai and Jack, 2026-11-13 meeting (docs/misc/2026-11-13-meeting.md): "make going 
 | Stage | State |
 | --- | --- |
 | Set up | ✅ 2026-11-15 (Jack: "make all those stills for each and put them on the new scene skill… use your best judgement, don't ask questions") |
-| Mood board round 1 | 🟡 https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY (clean room, 9 stills), awaiting Jack's votes |
+| Mood board round 1 | ✅ 9 stills, no votes (Jack moved on to his reference photo) |
+| Mood board round 2 | 🟡 https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY (clean room from Jack's night-shop photo, 15 stills), awaiting Jack's votes |
