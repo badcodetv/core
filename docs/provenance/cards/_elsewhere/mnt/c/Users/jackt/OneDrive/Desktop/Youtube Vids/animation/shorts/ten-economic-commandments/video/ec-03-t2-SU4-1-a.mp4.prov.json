@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-03-t2-SU4-1-a.mp4",
+ "made": "2026-11-16T18:12:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "One unbroken 8-second take from a fixed tripod. The masked figure bobs his head to a beat and slowly fans the banknotes wider, then snaps them shut against one gloved palm. Behind him a train pulls out of the station, commuters stream past in motion blur, the fluorescent tubes buzz. His masked face never turns from us and its markings never change; the mic stand doesn't move. Sound: train doors, rumble, footsteps. No voices, no score.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-1-a.jpg",
+ "why": "anim r1 clean room, part: rule one",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "03-t2",
+  "frame": 3,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T18:07:32.947Z"
+ }
+}

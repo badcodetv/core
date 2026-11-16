@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-07-t1-FX4-1-b.mp4",
+ "made": "2026-11-16T18:17:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Eight seconds, one take, the camera dead still on a tripod. The masked figure holds both empty gloved hands up, palms out, and slowly turns them over and back on the beat, showing nothing in them. The microphone hangs in place in front of his chest, untouched. Moths circle the streetlight; a faint mist drifts through the orange glow. The masked face looks only at us, its pattern never altering. Sound: streetlight hum, distant siren. No speech, no soundtrack.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX4-1-b.jpg",
+ "why": "anim r1 clean room, part: fix",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX4-1-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "07-t1",
+  "frame": 7,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T18:14:59.251Z"
+ }
+}

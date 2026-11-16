@@ -34,6 +34,12 @@
   ],
   "moodboard_intro": "Round 1 (clean room: a sealed writer researched the late-90s East Coast rap video and album-art look and Nano Banana 2, nothing from the repo; no real rapper, no real currency). Nine looks: fisheye stoop / photocopied mixtape flyer / shiny-suit studio for the commandments; flash party snapshot / two-ink risograph / gel-lit print hall for 'own supply'; sealed press in a glass room / banknote engraving / VHS key-down-the-drain for the fix. Lyrics are still Jack's. Vote This / Maybe / No per still and note any beat.",
   "boards": {
-    "moodboard": "https://claude.ai/artifact/DL4FFqF8ia1K2GerAX4uBi"
+    "moodboard": "https://claude.ai/artifact/DL4FFqF8ia1K2GerAX4uBi",
+    "timeline": "https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r1/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r1/preview.mp4",
+    "script": "scripts/shorts/tec_cut.py"
   }
 }

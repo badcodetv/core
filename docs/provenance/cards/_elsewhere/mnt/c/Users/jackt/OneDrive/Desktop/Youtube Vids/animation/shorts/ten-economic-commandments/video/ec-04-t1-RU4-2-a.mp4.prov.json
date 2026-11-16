@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-04-t1-RU4-2-a.mp4",
+ "made": "2026-11-16T18:12:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Single continuous shot, fisheye lens, slow push in, 8 seconds. Bent low into the fisheye, the masked figure pumps the two-finger sign forward on each beat while his other hand jabs the pointing finger in time, knees bouncing. A thin haze drifts across the red backdrop. The masked face stays pointed at us, its stitching fixed; the headstones never move. Sound: studio room tone, shoe scuffs on the floor. Silent mouthless figure, no speech, no backing track.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-2-a.jpg",
+ "why": "anim r1 clean room, part: rule two",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "04-t1",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T18:08:30.945Z"
+ }
+}
