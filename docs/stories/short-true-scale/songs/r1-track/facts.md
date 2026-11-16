@@ -1,0 +1,5 @@
+- The track is the whole music bed of a ~35-second vertical short (BadCode Shorts, "True Scale: Nearest Wins"): a British local pub on quiz night. The quizmaster asks the tiebreaker ("How many homes in England have been empty six months or more?"), a table shouts "Fifty thousand, tops!", she reads the answer (303,185, plus 267,894 second homes), "Nearest... table nine. Bob." The pub turns to Bob, who lives in a tent: "How'd you know that?" "I sleep opposite one." He hands the meat-raffle prize to the next table and walks out into the rain. Then plain text with the numbers, then the BadCode logo landing like a pub fruit machine (reels spinning and stopping).
+- Dialogue sits on top of the whole thing (AI Studio voices, not in this track): the bed must stay under speech: no lead melody fighting the voices, sparse in the 300 Hz-3 kHz voice band.
+- Jack asked for "music or pub atmosphere". Shorts Suno tracks are music and sounds only, never speech (Jack, 2026-11-15): no vocals, no words, no crowd chant with words.
+- Tone: warm, funny, a bit sad at the end (Bob leaves into the rain), never a sad-charity-advert piano.
+- No earlier music rounds for this short.

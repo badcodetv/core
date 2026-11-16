@@ -1,22 +1,19 @@
 {
- "round": 2,
+ "round": 3,
  "plan": [
   {
-   "h": "Done on your notes",
+   "h": "Done",
    "items": [
-    "Version 1 scrapped: Nearest Wins only.",
-    "Crowd diversified (new stills; beats 1 and 4 made with the quizmaster picture as reference so she is the same woman throughout).",
-    "Numbers: the quizmaster shows 303,185 (the answer); Bob's sheet 300,000 (his guess).",
-    "Landlady re-voiced Sulafat, builder Achird (subtler); Bob kept.",
-    "Animated: five Omni clips, packets blurred."
+    "All dialogue faster: re-voiced brisk, then sped (landlady x1.25, builder x1.10, Bob x1.08; checked by ear, no warble). The answer line is now ~10.5 s and the frozen frame on Bob's shot is gone.",
+    "The numbers in plain text at the end (official, with sources).",
+    "The BadCode logo landing like a pub fruit machine: mark, bad, code."
    ]
   },
   {
-   "h": "You decide",
+   "h": "Coming",
    "items": [
-    "The answer line runs ~13 s: trim the pauses or shorten the words?",
-    "Music or pub room sound?",
-    "Lip sync on the speaking shots next?"
+    "Music + pub atmosphere: six Suno takes being made, a picks page next.",
+    "Lip sync: needs LatentSync installed (asked)."
    ]
   }
  ],

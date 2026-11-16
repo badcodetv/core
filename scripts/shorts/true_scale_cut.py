@@ -27,6 +27,13 @@ W, H, FPS = 1080, 1920, 24
 LEAD, GAP, TAIL = 0.3, 0.25, 0.6
 ORDER = ['v2-01-landlady', 'v2-02-builder', 'v2-03-landlady', 'v2-04-builder', 'v2-05-bob', 'v2-06-landlady']
 WHO = {'landlady': 'Landlady (Sulafat)', 'builder': 'Builder (Achird)', 'bob': 'Bob (Algenib)'}
+# Jack, 2026-11-16: "make all of the dialogue faster too": the takes are re-voiced brisk AND sped here (cap ~1.25, no warble)
+TEMPO = {'landlady': 1.25, 'builder': 1.10, 'bob': 1.08}
+STATS = ['In England:', '', '303,185 homes have stood empty', 'for six months or more.', '', '267,894 more are second homes.', '',
+         '134,210 households are homeless,', 'living in temporary accommodation.']
+SOURCE = 'MHCLG, October 2025 · gov.uk, December 2025'
+STATS_DUR, LOGO_DUR = 5.0, 4.2
+REGULAR = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 # (beat, title, clip, in, picture ends at, blur boxes on the 720x1280 clip, what we see)
 #   ends: ('t', s) absolute · ('len', s) after its start · ('after', line, pad) · ('end', 0)
 SHOTS = [
@@ -58,15 +65,18 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=2); a = ap.parse_args()
     cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
     t, placed = LEAD, {}
-    for s in ORDER:
-        d = dur(VOX / f'{s}.wav'); placed[s] = (round(t, 3), round(d, 3)); t += d + GAP
-    total = round(t - GAP + TAIL, 3)
+    for s in ORDER:  # each line sped and levelled on its own file first, then placed
+        lv = cut / f'lvl-{s}.wav'
+        ff('-i', VOX / f'{s}.wav', '-af', f"atempo={TEMPO[s.split('-')[-1]]},loudnorm=I=-16:TP=-1.5", '-ar', 48000, '-ac', 2, lv)
+        d = dur(lv); placed[s] = (round(t, 3), round(d, 3)); t += d + GAP
+    speech_end = round(t - GAP + TAIL, 3)
+    total = round(speech_end + STATS_DUR + LOGO_DUR, 3)
     starts, durs, t = [], [], 0.0
     for key, title, clip, tin, end, blurs, see in SHOTS:
         if end[0] == 't': e = end[1]
         elif end[0] == 'len': e = t + end[1]
         elif end[0] == 'after': e = sum(placed[end[1]]) + end[2]
-        else: e = total
+        else: e = speech_end
         starts.append(round(t, 3)); durs.append(round(e - t, 3)); t = e
     parts, looped = [], []
     for i, (key, title, clip, tin, end, blurs, see) in enumerate(SHOTS):
@@ -82,6 +92,15 @@ def main():
         out = cut / f'v{i}-{key}.mp4'
         ff('-i', src, '-filter_complex', chain, '-map', '[v]', '-an', *ENC, out)
         parts.append(out)
+    # the stats, plain text on black, then the BadCode logo landing like a fruit machine
+    (cut / 'stats.txt').write_text('\n'.join(STATS))
+    ff('-f', 'lavfi', '-i', f'color=black:s={W}x{H}:r={FPS}:d={STATS_DUR}', '-vf',
+       f"drawtext=fontfile={REGULAR}:textfile={cut / 'stats.txt'}:fontcolor=white:fontsize=42:line_spacing=16:x=110:y=(h-text_h)/2-60:alpha='min(1,t/0.5)',"
+       f"drawtext=fontfile={REGULAR}:text='{SOURCE}':fontcolor=0x9a9a9a:fontsize=30:x=110:y=h*0.74:alpha='min(1,t/0.5)',"
+       'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)', *ENC, cut / 'v5-stats.mp4')
+    subprocess.run(['python3', str(REPO / 'scripts/shorts/fruit_machine_logo.py'), str(cut / 'v6-logo.mp4'), '--seconds', str(LOGO_DUR)],
+                   check=True, capture_output=True)
+    parts += [cut / 'v5-stats.mp4', cut / 'v6-logo.mp4']
     (cut / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
     ff('-f', 'concat', '-safe', '0', '-i', cut / 'list.txt', '-c', 'copy', cut / 'picture.mp4')
     stems = {}
@@ -89,9 +108,7 @@ def main():
         mine = [(s, *placed[s]) for s in ORDER if s.endswith(who)]
         inputs, chain = [], ''
         for k, (s, st, d) in enumerate(mine):
-            lv = cut / f'lvl-{s}.wav'
-            ff('-i', VOX / f'{s}.wav', '-af', 'loudnorm=I=-16:TP=-1.5', '-ar', 48000, '-ac', 2, lv)
-            inputs += ['-i', lv]
+            inputs += ['-i', cut / f'lvl-{s}.wav']
             chain += f'[{k}]adelay=delays={int(st * 1000)}:all=1,apad=whole_dur={total}[a{k}];'
         chain += ''.join(f'[a{k}]' for k in range(len(mine))) + f'amix=inputs={len(mine)}:normalize=0:duration=longest,atrim=end={total}'
         stems[who] = cut / f'vox-{who}.wav'
@@ -109,19 +126,25 @@ def main():
                   'text': (LINES / f'{s}.txt').read_text().strip(), 'by': 'claude'}
                  for j, s in enumerate([s for s in ORDER if s0 <= placed[s][0] < s1])]
         beats.append({'id': key, 'title': title, 'start': s0, 'dur': durs[i], 'see': see, 'lines': lines})
+    beats += [{'id': 'stats', 'title': '6. The numbers', 'start': speech_end, 'dur': STATS_DUR, 'see': ' '.join(x for x in STATS if x), 'lines': []},
+              {'id': 'logo', 'title': '7. Logo (fruit machine)', 'start': round(speech_end + STATS_DUR, 3), 'dur': LOGO_DUR,
+               'see': 'Three reels spin and stop on the mark, "bad", "code"; the bulbs and frame blink.', 'lines': []}]
     edl = {'sequence': f'short-true-scale-1-nearest-wins-r{a.round}', 'title': 'True Scale Timeline',
            'heading': f'BadCode Shorts ▲ True Scale: Nearest Wins, rough cut {a.round}',
            'intro': ('Version 2 only (Jack: "scrap version one"). Five clips from the diverse-crowd stills, the subtler voices '
                      '(landlady Sulafat, builder Achird; Bob unchanged), crisp packets blurred. No music yet. Note anything.'),
            'fps': FPS, 'total': total, 'beats': beats,
            'video': [{'file': str(VID / s[2]), 'in': s[3], 'start': starts[i], 'dur': durs[i], 'beat': s[0],
-                      'source': str(VID / s[2]), 'looped': looped[i]} for i, s in enumerate(SHOTS)],
+                      'source': str(VID / s[2]), 'looped': looped[i]} for i, s in enumerate(SHOTS)] +
+                    [{'file': str(cut / 'v5-stats.mp4'), 'in': 0, 'start': speech_end, 'dur': STATS_DUR, 'beat': 'stats', 'source': 'stats card', 'looped': False},
+                     {'file': str(cut / 'v6-logo.mp4'), 'in': 0, 'start': round(speech_end + STATS_DUR, 3), 'dur': LOGO_DUR, 'beat': 'logo',
+                      'source': 'scripts/shorts/fruit_machine_logo.py', 'looped': False}],
            'audio': [{'track': f'A{k + 1}', 'name': f'vox-{w}', 'file': str(p)} for k, (w, p) in enumerate(stems.items())],
            'events': [{'stem': f"vox-{s.split('-')[-1]}", 't': placed[s][0], 'dur': placed[s][1],
                        'what': (LINES / f'{s}.txt').read_text().strip(), 'src': str(VOX / f'{s}.wav')} for s in ORDER],
            'flags': ['No music or pub room sound yet.',
                      'Mouths are not synced to the voices yet (lip-sync-dub to follow on the speaking shots).',
-                     'The landlady\'s answer line runs ~13 s: the first thing to trim.']}
+                     'Dialogue sped: landlady x1.25, builder x1.10, Bob x1.08 (Jack: "make all of the dialogue faster").']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'starts': starts, 'durs': durs, 'looped': looped, 'preview': str(cut / 'preview.mp4')}))
 

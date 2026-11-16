@@ -1,7 +1,7 @@
 {
  "schema": "badcode.prov/1",
  "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-04-builder.wav",
- "made": "2026-11-16T14:54:47+00:00",
+ "made": "2026-11-16T15:28:30+00:00",
  "by": "claude",
  "kind": "voice",
  "engine": "gemini-tts",
@@ -9,7 +9,7 @@
  "model": "gemini-3.1-flash-tts-preview",
  "prompt": "How'd you know that?",
  "inputs": {
-  "profile": "# Audio Profile\nA man in his thirties in work clothes, relaxed and friendly, a couple of pints in. Natural London accent. Says his line casually to his mates, half laughing, not shouting, not a character voice. Later, genuinely puzzled, quiet.\n\n## Scene:\nA small local pub on quiz night, his table near the bar.\n\n## Sample Context:\nA good bloke who guessed low like everyone else. Understated, real, conversational.\n",
+  "profile": "# Audio Profile\nA man in his thirties in work clothes, relaxed and friendly, a couple of pints in. Natural London accent. Says his line quickly and casually to his mates, half laughing, not shouting, not a character voice. Later, genuinely puzzled, quiet.\n\n## Scene:\nA small local pub on quiz night, his table near the bar.\n\n## Sample Context:\nA good bloke who guessed low like everyone else. Understated, real, conversational.\n",
   "profile_file": "docs/stories/short-true-scale/voices/profiles/builder-achird.md"
  },
  "settings": {

@@ -1,0 +1,17 @@
+{
+  "style": "instrumental, no vocals, solo honky-tonk upright piano, slightly detuned saloon piano with a tack-hammer jangle, one player in the corner of a British local, loose stride left hand thumping low bass notes, right hand only sparse high tinkly chord stabs, empty middle register, no tune, laid-back walking tempo, warm wood-panelled room, live room recording with glasses clinking, low wordless pub murmur, a till drawer opening, ending: tempo sags and drops to long held low chords as rain starts on the windows, then a quick bright rattling major glissando up to the top keys and one cheeky final plink",
+  "exclude": "vocals, singing, spoken word, choir, chant, crowd singalong, strings, orchestra, sad cinematic piano, emotional piano ballad, reverb-drenched grand piano, lead melody, drums, synth",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 40,
+  "maxMode": false,
+  "title": "true scale r1-pub-upright-piano",
+  "mode": "custom",
+  "workspace": "short-true-scale"
+}

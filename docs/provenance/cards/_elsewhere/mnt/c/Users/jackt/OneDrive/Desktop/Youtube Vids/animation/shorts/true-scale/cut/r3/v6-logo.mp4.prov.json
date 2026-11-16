@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r3/v6-logo.mp4",
+ "made": "2026-11-16T15:33:35+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/fruit_machine_logo.py",
+ "why": "Jack 2026-11-16: 'put the badcode logo after, animate it like a pub fruit machine but the name and logo instead'"
+}

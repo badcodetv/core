@@ -1,0 +1,26 @@
+[
+  {
+    "name": "pub-upright-piano",
+    "idea": "The lead performer is a slightly out-of-tune pub upright piano played by one bloke in the corner, low left-hand stride and sparse right-hand chords kept down in the bass and very top, never a tune in the middle. Ask for it as a short genre-and-instrument tag list (honky-tonk upright piano, instrumental, sparse, warm room) with a real pub room sound under it: glasses, murmur with no words, a till drawer. Near the end it slows and drops to single held chords as rain comes in, then a bright rattly major run up the keys for the fruit-machine landing. Exclude vocals, singing, choir, chant, strings and sad cinematic piano."
+  },
+  {
+    "name": "colliery-brass-band",
+    "idea": "The performer is a northern colliery brass band heard through a pub wall: tubas and baritone horns only in the low register, a muffled cornet that never states a melody, a bass drum on the downbeat. Ask for it as a scene description in plain sentences (a brass band rehearsing in the function room next door while a quiz goes on) rather than a tag list. The last ten seconds thin to one tuba note and rain, then the whole band hits a cheeky ascending fanfare stab for the logo. Exclude vocals, words, crowd singing, orchestral strings and epic trailer brass."
+  },
+  {
+    "name": "fruit-machine-electronics",
+    "idea": "The performer is the fruit machine itself: 1980s arcade-cabinet electronics, square-wave bleeps, reel whir loops and relay clicks, played as a tiny rhythmic groove at low level under the whole scene. Ask for it sound-design first: name the machine noises and the pub hum before naming any genre, with chiptune and synth only as the glue. Midway it goes nearly silent to a single ticking reel; at the end three reels clunk to a stop one by one and a bright ascending chime run pays out. Exclude vocals, voices, robotic speech, drums kits, dubstep and casino jazz."
+  },
+  {
+    "name": "rhythm-section-trio",
+    "idea": "The performer is a lounge jazz trio of double bass, brushed snare and a soft vibraphone that only plays two-note stabs, the kind of band playing in the corner that nobody listens to. Ask for it by tempo, key and feel numbers (around 112 BPM, swung, walking bass, sparse, mixed quiet and low) rather than by mood words. When Bob walks out the brushes stop and the bass walks down on its own into rain, then the vibraphone rings a quick upward arpeggio with a bell for the logo. Exclude vocals, scat, saxophone, trumpet lead, piano melody and smooth jazz."
+  },
+  {
+    "name": "squeezebox-folk-session",
+    "idea": "The performers are a pub folk session: a melodeon or accordion pumping chords, a bodhran and a strummed acoustic guitar, all played back in the room, loose and a bit drunk. Ask for it as a three-part story in time order (warm busy session, a hush as the pub turns to Bob, a lone melodeon drone under rain, then a jaunty squeezebox flourish and a bell clang to finish). Keep the instruments rhythmic and chordal so nothing carries a jig melody over the talking. Exclude vocals, singing along, fiddle lead, tin whistle lead, Celtic epic and Irish pub chorus."
+  },
+  {
+    "name": "rain-and-room-ambient",
+    "idea": "The performer is barely a musician: an ambient-electronic producer making a bed out of the pub room tone itself, low warm synth pads, a soft sub pulse like a heartbeat, and rain on a window that grows through the track. Ask for it as texture and space words (ambient, drone, field recording, lo-fi, wide, muffled, low-pass) with music kept almost subliminal so the voices own the whole midrange. The rain swells when Bob leaves, then a sudden dry mechanical click-click-click and a single bright synth chime chord land the logo. Exclude vocals, beats, drums, piano melody, guitar and orchestral swell."
+  }
+]
