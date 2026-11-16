@@ -92,9 +92,12 @@ def main():
         if not mine: continue
         inputs, chain = [], ''
         for k, (s, st, d) in enumerate(mine):
-            inputs += ['-i', VOX / f'{s}.wav']
-            chain += f'[{k}]aresample=48000,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5,adelay=delays={int(st * 1000)}:all=1[a{k}];'
-        chain += ''.join(f'[a{k}]' for k in range(len(mine))) + f'amix=inputs={len(mine)}:normalize=0,apad=whole_dur={total},atrim=end={total}'
+            # Level each line on its own first: loudnorm in the same graph as adelay dropped the delays (2026-11-16).
+            lv = cut / f'lvl-{s}.wav'
+            ff('-i', VOX / f'{s}.wav', '-af', 'loudnorm=I=-16:TP=-1.5', '-ar', 48000, '-ac', 2, lv)
+            inputs += ['-i', lv]
+            chain += f'[{k}]adelay=delays={int(st * 1000)}:all=1,apad=whole_dur={total}[a{k}];'
+        chain += ''.join(f'[a{k}]' for k in range(len(mine))) + f'amix=inputs={len(mine)}:normalize=0:duration=longest,atrim=end={total}'
         stems[who] = cut / f'vox-{who}.wav'
         ff(*inputs, '-filter_complex', chain, '-ar', 48000, '-ac', 2, stems[who])
     ins = []

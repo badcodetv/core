@@ -41,5 +41,12 @@
   "decided": [
    "Jack: 'you decide' on picks, Bob's line and voices"
   ]
+ },
+ {
+  "at": "2026-11-16T14:48:47+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "Rough cut 1 fix: voice lines were stacked at 0 s (loudnorm dropped adelay); each line now placed at its own time"
  }
 ]
