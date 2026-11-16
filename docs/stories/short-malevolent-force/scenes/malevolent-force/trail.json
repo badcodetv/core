@@ -14,5 +14,24 @@
   "url": "https://claude.ai/artifact/K5CptJtk7JHuW8KCHeHvrY",
   "what": "Mood board round 2: clean room from Jack's reference photo (night corner-shop doorway, cheap colour film), 3 sealed writers, 15 stills",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-malevolent-force/scenes/malevolent-force <out.html>"
+ },
+ {
+  "at": "2026-11-16T10:08:06+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "what": "Jack's round 2 votes",
+  "decided": [
+   "Jack voted This on PR2-b, PR2-c, PR2-e (50p) and FO2-c, FO2-d, FO2-e (£50); no notes; none for £1→£5. Then: 'only lets make the script or story beats'."
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 6
+ },
+ {
+  "at": "2026-11-16T10:12:11+00:00",
+  "stage": "brief",
+  "what": "Beats agreed with Jack: one trip for bread shot like a haunting, 6 picked stills + end card, no voice",
+  "decided": [
+   "Jack: 'No voice, one end card'; draft order 'Yes, that order'"
+  ]
  }
 ]

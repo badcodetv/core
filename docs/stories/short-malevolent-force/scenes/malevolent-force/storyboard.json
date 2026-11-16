@@ -1,0 +1,14 @@
+{
+ "acts": [
+  {"id": "trip", "title": "One trip for bread", "beats": ["price50", "climb", "force"]}
+ ],
+ "frames": [
+  {"n": 1, "act": "trip", "title": "The only lit shop", "look": "night colour film", "stills": ["FO2-c"], "anim": 1},
+  {"n": 2, "act": "trip", "title": "The door opens by itself", "look": "night colour film", "stills": ["PR2-e"], "anim": 2},
+  {"n": 3, "act": "trip", "title": "The aisle, stockroom door ajar", "look": "night colour film", "stills": ["PR2-c"], "anim": 3},
+  {"n": 4, "act": "trip", "title": "50p, flicker, £1, flicker, £5", "look": "night colour film", "stills": ["PR2-b"], "anim": 4},
+  {"n": 5, "act": "trip", "title": "Convex mirror, blank notes", "look": "night colour film", "stills": ["FO2-d"], "anim": 5},
+  {"n": 6, "act": "trip", "title": "BREAD £50, the back room glows", "look": "night colour film", "stills": ["FO2-e"], "anim": 6},
+  {"n": 7, "act": "trip", "title": "End card (Jack's line)", "look": "text", "line": "", "stills": [], "anim": 0}
+ ]
+}
