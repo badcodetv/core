@@ -23,15 +23,15 @@ be done in the grade.
 | 4 | 0:06 | **PR2-b** | One loaf on a bare shelf, **50p**. Relief. Then the tube flickers, and each flicker changes the label: **£1**, then **£5**. | The force acts, unseen. | 50p → £1 → £5 (label swaps in the edit, on the flicker frames) |
 | 5 | 0:10 | **FO2-d** | Look up at the convex mirror: the aisle is empty, but fresh blank banknotes lie scattered on the floor. | Someone's been printing; nobody is there. | £50 tag in the mirror |
 | 6 | 0:12 | **FO2-e** | The doorway: "BREAD £50" taped to the glass; at the back, the stockroom door wide open, cold light pulsing. The purple bar on the mat reads £12. | That's where the money's made, and it never reaches the till. | £50, chocolate bar £12 |
-| 7 | 0:15 | end card | One line of text. | – | – |
+| 7 | 0:15 | end card | "Based on true events. Coming to a shop near you." | – | – |
 
 ## Owed by Jack (the jokes)
 
 - **End card (beat 7):** one line, on screen, no voice. *What it must do:* turn the horror into the point, that the
   scary thing isn't a ghost, it's who got the new money first. Name the decision, not "prices". Never "you've been fooled".
-  Line: ______________________
+  **Line (Jack, 2026-11-16): "Based on true events. Coming to a shop near you."**
 - **The chocolate bar (beat 6):** £12 is a placeholder from the writer. *What it must do:* be the running Fredo gag (the
-  one price everyone remembers from childhood). Price/text: ______________________
+  one price everyone remembers from childhood). **Sticker (Jack, 2026-11-16): "10p" crossed out, "£12" beside it.** FO2-e shows only £12 now: add the struck-through 10p in the edit, or re-roll FO2-e.
 - **Optional, beat 4:** a fourth flicker, if the jump to £5 wants a sillier step. ______________________
 
 ## Sound (sound.md is still EMPTY)
