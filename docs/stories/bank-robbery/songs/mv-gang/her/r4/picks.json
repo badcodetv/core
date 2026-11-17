@@ -1,0 +1,414 @@
+{
+ "title": "Gang Leader Look",
+ "eyebrow": "The Bank Robbery music video \u00b7 her look \u00b7 round 2",
+ "heading": "Lock her: the Canary character sheet",
+ "intro": "Round 4. Kai picked 6 Canary, take a. Jack's rule says no skin, so (Kai) a red high-neck top under the dress and red tights, in the triangle's red. This sheet becomes the reference attached to every shot edit. Pick the sheet to lock. The hero shot itself would not take the edit in Flow (it handed the picture back twice); the bank-steps shot is redone from its own frame with this sheet in the shot pass, so nothing is lost. Movement note for later (Kai): swagger and attitude in every clip she is in.",
+ "sections": [
+  {
+   "h": "The lock",
+   "lede": "Four views: front, three-quarter, side, back.",
+   "groups": [
+    {
+     "slot": "her-r4-sheet",
+     "round": 4,
+     "title": "Canary, with the red underneath",
+     "line": "Pick the sheet that becomes her reference. b has the clearer high-neck top.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r4/sheet-red-a.jpg",
+       "label": "a: red top shows as a chest patch"
+      },
+      {
+       "id": "b",
+       "src": "r4/sheet-red-b.jpg",
+       "label": "b: red high-neck top, clearest"
+      },
+      {
+       "id": "before",
+       "src": "r4/sheet-b.jpg",
+       "label": "before: black stockings (skin at neckline)"
+      }
+     ]
+    },
+    {
+     "slot": "her-r4-hero",
+     "round": 4,
+     "title": "Your pick, for reference",
+     "line": "6 Canary, take a, as picked. Its legs and neckline get the red in the shot pass.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "picked",
+       "src": "r3/c06-a.jpg",
+       "label": "picked"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Ten colourways (nine made)",
+   "lede": "Two takes each. Click to see large; arrows step through the row.",
+   "groups": [
+    {
+     "slot": "her-r3-c01",
+     "round": 3,
+     "title": "1. Scarlet",
+     "line": "Scarlet coat \u00b7 black beaded dress \u00b7 black hat \u00b7 black balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c01-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c01-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "her-r3-c02",
+     "round": 3,
+     "title": "2. Cobalt and gold",
+     "line": "Cobalt coat \u00b7 gold dress \u00b7 cream hat \u00b7 cobalt balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c02-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c02-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "her-r3-c03",
+     "round": 3,
+     "title": "3. Emerald and pink",
+     "line": "Emerald coat \u00b7 hot-pink dress \u00b7 pink hat \u00b7 hot-pink balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c03-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c03-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "her-r3-c04",
+     "round": 3,
+     "title": "4. Silver screen",
+     "line": "Metallic silver coat \u00b7 black dress \u00b7 black hat \u00b7 powder-blue balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c04-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c04-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "her-r3-c05",
+     "round": 3,
+     "title": "5. Sunset",
+     "line": "Tangerine coat \u00b7 turquoise dress \u00b7 turquoise hat \u00b7 turquoise balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c05-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c05-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "her-r3-c06",
+     "round": 3,
+     "title": "6. Canary",
+     "line": "Canary-yellow coat \u00b7 black dress \u00b7 black hat \u00b7 canary balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c06-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c06-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "her-r3-c08",
+     "round": 3,
+     "title": "8. Teal and copper",
+     "line": "Teal coat \u00b7 copper dress \u00b7 copper hat \u00b7 teal balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c08-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c08-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "her-r3-c09",
+     "round": 3,
+     "title": "9. Snow and blood",
+     "line": "White coat with scarlet lining \u00b7 scarlet dress \u00b7 white hat \u00b7 black balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c09-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c09-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "her-r3-c10",
+     "round": 3,
+     "title": "10. Gold rush",
+     "line": "Metallic gold coat \u00b7 black dress \u00b7 black hat \u00b7 orange balaclava",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r3/c10-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "r3/c10-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Six directions, Wild West meets 1920s",
+   "lede": "Each design differs in outline, not just colour. Click any picture to see it large; arrows step through the row.",
+   "groups": [
+    {
+     "slot": "her-r2-A",
+     "title": "A. The Bandit Queen (jet-black balaclava)",
+     "line": "Black velvet riding outfit, long skirt, plumed Stetson. Pointing at the lens.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r2/A-a.jpg",
+       "label": "a: as drawn"
+      },
+      {
+       "id": "a-small",
+       "src": "r2/A-a-small.jpg",
+       "label": "a: shrunk to chest height"
+      },
+      {
+       "id": "b",
+       "src": "r2/A-b.jpg",
+       "label": "b: as drawn"
+      },
+      {
+       "id": "b-small",
+       "src": "r2/A-b-small.jpg",
+       "label": "b: shrunk to chest height"
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "her-r2-B",
+     "title": "B. The Borrowed Duster (mint-green balaclava)",
+     "line": "Rose prairie dress under a man's duster far too big for her. Shouting through cupped hands.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r2/B-a.jpg",
+       "label": "a: as drawn"
+      },
+      {
+       "id": "a-small",
+       "src": "r2/B-a-small.jpg",
+       "label": "a: shrunk to chest height"
+      },
+      {
+       "id": "b",
+       "src": "r2/B-b.jpg",
+       "label": "b: as drawn"
+      },
+      {
+       "id": "b-small",
+       "src": "r2/B-b-small.jpg",
+       "label": "b: shrunk to chest height"
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "her-r2-C",
+     "title": "C. The Ghost in the Dust (powder-blue balaclava)",
+     "line": "Pale duster belted over a beaded dress. Telling the camera off with one finger.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r2/C-a.jpg",
+       "label": "a: as drawn"
+      },
+      {
+       "id": "a-small",
+       "src": "r2/C-a-small.jpg",
+       "label": "a: shrunk to chest height"
+      },
+      {
+       "id": "b",
+       "src": "r2/C-b.jpg",
+       "label": "b: as drawn"
+      },
+      {
+       "id": "b-small",
+       "src": "r2/C-b-small.jpg",
+       "label": "b: shrunk to chest height"
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "her-r2-D",
+     "title": "D. The Rodeo Queen (turquoise balaclava)",
+     "line": "Fringed suede rodeo jacket, riding skirt, tall boots. One arm flung up.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r2/D-a.jpg",
+       "label": "a: as drawn"
+      },
+      {
+       "id": "a-small",
+       "src": "r2/D-a-small.jpg",
+       "label": "a: shrunk to chest height"
+      },
+      {
+       "id": "b",
+       "src": "r2/D-b.jpg",
+       "label": "b: as drawn"
+      },
+      {
+       "id": "b-small",
+       "src": "r2/D-b-small.jpg",
+       "label": "b: shrunk to chest height"
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "her-r2-E",
+     "title": "E. The Flapper Outlaw (tangerine balaclava)",
+     "line": "Beaded fringe flapper dress, empty gunbelt, cowboy boots, oversized Stetson. Shrugging.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r2/E-a.jpg",
+       "label": "a: as drawn",
+       "warn": "Bare arms and legs show (breaks the no-skin rule). If picked, I fix it with opaque stockings and long gloves."
+      },
+      {
+       "id": "a-small",
+       "src": "r2/E-a-small.jpg",
+       "label": "a: shrunk to chest height",
+       "warn": "Bare arms and legs show (breaks the no-skin rule). If picked, I fix it with opaque stockings and long gloves."
+      },
+      {
+       "id": "b",
+       "src": "r2/E-b.jpg",
+       "label": "b: as drawn",
+       "warn": "Bare arms and legs show (breaks the no-skin rule). If picked, I fix it with opaque stockings and long gloves."
+      },
+      {
+       "id": "b-small",
+       "src": "r2/E-b-small.jpg",
+       "label": "b: shrunk to chest height",
+       "warn": "Bare arms and legs show (breaks the no-skin rule). If picked, I fix it with opaque stockings and long gloves."
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "her-r2-F",
+     "title": "F. The Fur-Collar Boss (raspberry balaclava)",
+     "line": "Emerald velvet coat that swallows her, fur collar, pearls, cloche. Unbothered.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r2/F-a.jpg",
+       "label": "a: as drawn"
+      },
+      {
+       "id": "a-small",
+       "src": "r2/F-a-small.jpg",
+       "label": "a: shrunk to chest height"
+      },
+      {
+       "id": "b",
+       "src": "r2/F-b.jpg",
+       "label": "b: as drawn"
+      },
+      {
+       "id": "b-small",
+       "src": "r2/F-b-small.jpg",
+       "label": "b: shrunk to chest height"
+      }
+     ],
+     "round": 2
+    }
+   ]
+  }
+ ],
+ "round": 4
+}

@@ -1,0 +1,26 @@
+{
+ "stockings": {
+  "prompt": "Using the attached image, change only the woman in the yellow coat: her legs are covered in opaque black stockings from the hem of her dress down into her boots, so no skin shows anywhere on her. Keep everything else about her exactly as it is: the canary-yellow belted duster, the black beaded dress, the black hat, the canary-yellow balaclava with its white ring and small red triangle, the black gloves, her pose and her pointing hand. Keep all six men, the columns, the steps, the fire, the banknotes, the light and the framing exactly the same. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r3/c06-a.jpg"
+  ]
+ },
+ "sheet": {
+  "prompt": "Using the attached image as the only reference for her, make a character reference sheet of the woman in the canary-yellow coat, on a plain mid-grey studio backdrop with soft even light and nothing else in the picture. Show her four times, full figure from hat to boots, standing side by side at the same scale: facing the camera, a three-quarter view, side profile, and from behind. She is small and slight. Copy her outfit exactly from the attached image: a long canary-yellow duster coat belted at the waist and falling open to the ankle, a knee-length black beaded flapper dress, opaque black stockings, black laced ankle boots with a small heel, black leather gloves, a black flat-brimmed hat. Her canary-yellow knitted balaclava covers her whole head and neck with no eye, nose or mouth openings and tucks into her collar; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture when she faces the camera. No skin shows anywhere. No text, labels, lettering or logos anywhere. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r3/c06-a.jpg"
+  ]
+ },
+ "hero-red": {
+  "prompt": "Using the attached image, change only the woman in the yellow coat, who is now dressed underneath in the same bright red as the small triangle on her balaclava: a fitted long-sleeved red top with a high neck, worn under her black beaded dress and closing up into her balaclava, and opaque red tights down into her boots, so nothing but cloth shows. Keep the canary-yellow belted duster, the black beaded dress, the black hat, the canary-yellow balaclava with its white ring and small red triangle, the black gloves, the black boots, her pose and her pointing hand exactly as they are. Keep all six men, the columns, the steps, the fire, the banknotes, the light and the framing exactly the same. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r3/c06-a.jpg"
+  ]
+ },
+ "sheet-red": {
+  "prompt": "Using the attached character sheet, change only her clothing underneath: in all four views she is now dressed underneath in the same bright red as the small triangle on her balaclava: a fitted long-sleeved red top with a high neck, worn under her black beaded dress and closing up into her balaclava, and opaque red tights down into her boots, so nothing but cloth shows. Keep the canary-yellow belted duster, the black beaded dress, the black hat, the canary-yellow balaclava with its white ring and small red triangle, the black gloves and black boots exactly as they are, and keep the four poses, the grey backdrop and the light the same. No text or labels. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r4/sheet-b.jpg"
+  ]
+ }
+}

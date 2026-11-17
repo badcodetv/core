@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r4/sheet-b.jpg",
+ "made": "2026-11-17T16:23:29+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r4/run.mts",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r3/c06-a.jpg",
+ "why": "mv-gang her character sheet from Kai's pick r3 c06-a",
+ "prompt": "Using the attached image as the only reference for her, make a character reference sheet of the woman in the canary-yellow coat, on a plain mid-grey studio backdrop with soft even light and nothing else in the picture. Show her four times, full figure from hat to boots, standing side by side at the same scale: facing the camera, a three-quarter view, side profile, and from behind. She is small and slight. Copy her outfit exactly from the attached image: a long canary-yellow duster coat belted at the waist and falling open to the ankle, a knee-length black beaded flapper dress, opaque black stockings, black laced ankle boots with a small heel, black leather gloves, a black flat-brimmed hat. Her canary-yellow knitted balaclava covers her whole head and neck with no eye, nose or mouth openings and tucks into her collar; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture when she faces the camera. No skin shows anywhere. No text, labels, lettering or logos anywhere. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r3/c06-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}

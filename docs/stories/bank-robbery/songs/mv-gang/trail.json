@@ -331,5 +331,18 @@
   "decided": [
    "Kai picked r2 C take a (Ghost in the Dust, as drawn): the swagger and style; wants a bolder colour scheme, ~10 colourways"
   ]
+ },
+ {
+  "at": "2026-11-17T16:23:43+00:00",
+  "stage": "picks",
+  "round": 4,
+  "url": "https://claude.ai/artifact/Bbrp48pSBfSSVVX5dQdYzV",
+  "what": "Her look round 4: Canary character sheet with red high-neck top and red tights, to lock",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-gang/her/r4/picks.json <out>/index.html",
+  "decided": [
+   "Kai picked r3 c06-a (Canary)",
+   "Kai: no skin; red top under the dress and red tights in the triangle's red",
+   "Kai: swagger and attitude in her movement in every clip she is in"
+  ]
  }
 ]

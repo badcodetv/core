@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r4/sheet-red-a.jpg",
+ "made": "2026-11-17T16:23:29+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r4/run.mts",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r4/sheet-b.jpg",
+ "why": "mv-gang her sheet, red top and tights (Kai: no skin, the triangle's red)",
+ "prompt": "Using the attached character sheet, change only her clothing underneath: in all four views she is now dressed underneath in the same bright red as the small triangle on her balaclava: a fitted long-sleeved red top with a high neck, worn under her black beaded dress and closing up into her balaclava, and opaque red tights down into her boots, so nothing but cloth shows. Keep the canary-yellow belted duster, the black beaded dress, the black hat, the canary-yellow balaclava with its white ring and small red triangle, the black gloves and black boots exactly as they are, and keep the four poses, the grey backdrop and the light the same. No text or labels. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r4/sheet-b.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}
