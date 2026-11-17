@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r3/c01-a.jpg",
+ "made": "2026-11-17T15:37:38+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r3/run.mts",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r2/C-a.jpg",
+ "why": "mv-gang her look r3 colourway c01 (Kai: Ghost in the Dust, bolder colour)",
+ "prompt": "Using the attached image, change only the colours of the woman in the long coat in the middle of the gang. Her long duster coat becomes a deep scarlet red, her beaded dress jet black with black beads, her hat, scarf, gloves and boots black, and her balaclava black. Keep the cut and shape of every piece of her outfit, her size, her pose and her raised finger exactly as they are, and keep the white ring and the small red triangle on her balaclava. Keep all six men, the columns, the steps, the fire, the flying banknotes, the light and the framing exactly the same. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r2/C-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}

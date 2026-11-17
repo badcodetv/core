@@ -320,5 +320,16 @@
   "decided": [
    "Kai: add a female leader, always front and centre; Wild West bank-robber vibe; small, the truth-teller backed by the big men; not a suit"
   ]
+ },
+ {
+  "at": "2026-11-17T15:37:40+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/Bbrp48pSBfSSVVX5dQdYzV",
+  "what": "Her look round 3: Ghost in the Dust (r2 C-a) in nine bold colourways (c07 lilac/lime failed in Flow x3)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-gang/her/r3/picks.json <out>/index.html (media: D:/badcode-videos/bank-robbery-music/gang/her/r2 + r3, downscaled to 1600w)",
+  "decided": [
+   "Kai picked r2 C take a (Ghost in the Dust, as drawn): the swagger and style; wants a bolder colour scheme, ~10 colourways"
+  ]
  }
 ]
