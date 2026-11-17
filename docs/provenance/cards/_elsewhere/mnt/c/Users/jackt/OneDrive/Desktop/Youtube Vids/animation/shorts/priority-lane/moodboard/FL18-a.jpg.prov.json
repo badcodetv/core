@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL18-a.jpg",
+ "made": "2026-11-17T14:45:13.696Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real layout, perspective and lighting of the reference photo: the patient monitor seen close and at an angle, shallow focus, its white housing and carry handle at the top. Make it the monitor fixed inside an ambulance at night. On the screen every trace has gone flat: the top heart trace a single straight green line, the traces below it flat as well. The number boxes down the right side show only dashes. The housing is plain and unmarked. At the lower edge of the frame, soft and out of focus, a paramedic's blue-gloved hand at the end of a dark green sleeve rests on the patient's bare chest, not moving. Cold white cabin light; blue emergency light flickers across the housing from a rear window streaked with rain. Vertical 9:16. Night in the rain, like a real 35 mm film photo: sodium-orange street lamps, cold teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_gzTKtM5biaA.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_gzTKtM5biaA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "70e9ce10-cb64-4456-92d9-ec89fb81f99d"
+}

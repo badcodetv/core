@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD18-b.jpg",
+ "made": "2026-11-17T14:41:42.183Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real perspective and lighting of the first reference photo, a dark cab seen from behind and between the seats, looking out through the front glass; turn it into a tall UK ambulance cab with a high, upright windscreen streaming with rain. The driver sits on the RIGHT: a dark green uniform sleeve, black gloves tight on the wheel, still. We are stopped in the left half of the road. Close ahead, filling the lower windscreen, the police from the second reference photo hold us: white police motorcycles parked across our lane, red tail lights glowing on the wet tarmac, officers in yellow hi-vis, one turned toward us with a gloved hand raised. Past them, through the wiper arcs, the yellow box junction: in the far half of the box the convoy slides by from left to right, a white police motorcycle first, then three black saloons, headlights aimed right, tail lights red on the left. Beyond, on the right side of the road, oncoming headlights wait in a held queue behind a red double-decker. Blue light from our roof bar pulses across the bonnet and raindrops. Vertical 9:16. Night in the rain, like a real 35 mm film photo: sodium-orange street lamps, cold teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_zVbqJkl7D_U.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_zVbqJkl7D_U.jpg",
+   "/home/jackt/.cache/pl-refs/us/u_-GczePfvnNQ.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "bc8d8a80-e5e7-4230-8cac-c72cb41e8fba"
+}

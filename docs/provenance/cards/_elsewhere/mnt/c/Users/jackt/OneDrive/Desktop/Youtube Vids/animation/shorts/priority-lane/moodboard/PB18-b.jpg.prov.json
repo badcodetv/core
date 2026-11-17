@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB18-b.jpg",
+ "made": "2026-11-17T14:34:47.496Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real layout, perspective and lighting of the first reference photo: seen from the end of the wet wooden bench in a bus shelter, the tall lit panel at the centre, the glass wall on the right, the road on the left. In the lit panel, large and clear, place the poster from the second reference image, reproduced exactly, the same man's face, filling the whole panel and easy to read. The panel frame is plain dark metal. Night, steady rain, water dripping from the shelter roof edge. In the lane nearest the shelter's kerb, a UK ambulance with yellow-green Battenburg chequers drives toward the camera, close now, the kerb on its left, its headlights flaring and its blue roof lights strobing; that blue light falls across the wet pavement and glints on the glass over the poster. Orange street lamps and their long reflections on the tarmac; the far lanes empty; office windows dark and plain. Vertical 9:16. Night in the rain, like a real 35 mm film photo: sodium-orange street lamps, cold teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_csDVMvtsS50.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_csDVMvtsS50.jpg",
+   "/home/jackt/.cache/pl-refs/us/PA12-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6fa807dc-f081-4e6e-a5dc-487a15a3d65e"
+}

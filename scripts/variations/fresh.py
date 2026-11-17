@@ -98,7 +98,7 @@ def staged(path):
     import time
     f = ROOT / path
     try:
-        return f.name.startswith("prompts-") and time.time() - f.stat().st_mtime < 6 * 3600
+        return f.name.startswith("prompts") and time.time() - f.stat().st_mtime < 6 * 3600
     except OSError:
         return False
 

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS18-a.jpg",
+ "made": "2026-11-17T14:31:24.101Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real layout, perspective and lighting of the reference photo: the view from outside, through the open rear doors of an ambulance, into its bright white interior, the dark door frame all around it. Change the people. On the stretcher lies a patient under a grey blanket, an oxygen mask on his face, ECG leads on his chest. Two UK paramedics in dark green uniforms, surgical masks and blue nitrile gloves work over him: the one in the left foreground, half turned from us, presses both hands down on his chest; the one standing on the right leans in, squeezing a bag-valve mask. High on the wall a patient monitor shows a fast, jagged green heart trace and high red numbers. The papers on the wall are blank sheets and every label is plain. Outside it is night and raining: drops on the door edge, wet glints, blue light from the roof bar sweeping across the door frame. Hands moving, slight motion blur, urgency. Vertical 9:16. Night in the rain, like a real 35 mm film photo: sodium-orange street lamps, cold teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_C53CnEp-hsU.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_C53CnEp-hsU.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "10e0be33-4466-4f8a-a3fd-810666e32d5c"
+}

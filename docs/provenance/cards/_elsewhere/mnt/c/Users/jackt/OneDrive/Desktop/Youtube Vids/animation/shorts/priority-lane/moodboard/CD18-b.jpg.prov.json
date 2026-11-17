@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD18-b.jpg",
+ "made": "2026-11-17T14:38:48.376Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real layout, perspective and lighting of the first reference photo, the camera high on a bridge looking along the road between office blocks, now at night in rain, the tarmac black and shining under orange street lamps. Our side of the road is the left half, its traffic heading away from us. There, nearest the junction's stop line, a UK ambulance with yellow-green Battenburg chequers sits stopped, rear doors toward us, blue lights pulsing on the wet road. Directly in front of it, a line of white police motorcycles and officers in yellow hi-vis blocks the mouth of the junction; one officer's gloved hand is raised at the ambulance. In the yellow box junction, the convoy is crossing from left to right in the half of the box farther from us: a white police motorcycle out front, ridden as in the second reference photo, then three black saloons, side-on, headlights aimed to the right, tail lights glowing red to the left. On the far side, the right half of the main road holds an oncoming queue, headlights toward us, a red double-decker at the front, stopped at its stop line by a police motorcycle and a standing officer. The cross road on the right is cleared and empty. Signs plain. Vertical 9:16. Night in the rain, 35 mm film photo: sodium-orange lamps, teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_uCn2fI8PdZQ.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_uCn2fI8PdZQ.jpg",
+   "/home/jackt/.cache/pl-refs/us/u_lVsmbu6rQRc.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "911bbf99-b144-4c41-af4b-50b5f773743f"
+}

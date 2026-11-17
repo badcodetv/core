@@ -1,0 +1,70 @@
+{
+ "title": "Priority Lane Look Refs",
+ "eyebrow": "Priority Lane · look references",
+ "heading": "Priority Lane: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "patient monitor hospital",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "0hjokXK6uLs",
+       "src": "unsplash/0hjokXK6uLs.jpg",
+       "label": "white digital device at 19 0 · Stephen Andrews"
+      },
+      {
+       "id": "7P1KdY9wZjA",
+       "src": "unsplash/7P1KdY9wZjA.jpg",
+       "label": "white crt computer monitor turned on displaying 20 00 · Stephen Andrews"
+      },
+      {
+       "id": "D1abpKdaEr0",
+       "src": "unsplash/D1abpKdaEr0.jpg",
+       "label": "white wall mounted flat screen tv · Stephen Andrews"
+      },
+      {
+       "id": "gzTKtM5biaA",
+       "src": "unsplash/gzTKtM5biaA.jpg",
+       "label": "Close-up of a medical monitor displaying vital signs · Alexander Mass"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "heart rate monitor screen",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "7P1KdY9wZjA",
+       "src": "unsplash/7P1KdY9wZjA.jpg",
+       "label": "white crt computer monitor turned on displaying 20 00 · Stephen Andrews"
+      },
+      {
+       "id": "_UZVVThG_u0",
+       "src": "unsplash/_UZVVThG_u0.jpg",
+       "label": "A person checks their fitness tracker during a workout · streetsh"
+      },
+      {
+       "id": "0hjokXK6uLs",
+       "src": "unsplash/0hjokXK6uLs.jpg",
+       "label": "white digital device at 19 0 · Stephen Andrews"
+      },
+      {
+       "id": "D1abpKdaEr0",
+       "src": "unsplash/D1abpKdaEr0.jpg",
+       "label": "white wall mounted flat screen tv · Stephen Andrews"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

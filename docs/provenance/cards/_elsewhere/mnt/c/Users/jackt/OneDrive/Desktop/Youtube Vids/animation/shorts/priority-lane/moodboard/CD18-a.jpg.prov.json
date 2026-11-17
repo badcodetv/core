@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD18-a.jpg",
+ "made": "2026-11-17T14:37:16.644Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real layout, perspective and lighting of the first reference photo: the high view straight along a London road between tall office blocks, toward a crossroads in the middle distance; make it night in steady rain. The left half of the main road carries traffic away from us; the right half carries traffic toward us. In the left half, at the stop line before the crossroads, a UK ambulance in yellow-green Battenburg chequers waits, its back to us, nose to the junction, blue roof lights flashing. Just ahead of it, across our side of the junction mouth, a police line: white police motorcycles side by side and officers in yellow hi-vis, one with a gloved hand raised toward the ambulance. The crossroads is a yellow box junction. Across its far half, the convoy passes side-on from left to right: a white police motorcycle with a rider like those in the second reference photo, then three black saloon cars, headlights pointing right, red tail lights to the left. Beyond the junction, in the right half of the main road, a held queue faces us with headlights on, a red double-decker and cars at their stop line, a police motorcycle and an officer in front. The near right half and the cross road to the right lie empty. Signs plain. Vertical 9:16. Night in the rain, 35 mm film photo: sodium-orange lamps, teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_uCn2fI8PdZQ.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_uCn2fI8PdZQ.jpg",
+   "/home/jackt/.cache/pl-refs/us/u_lVsmbu6rQRc.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "eb0a7c3f-a0be-4ce8-83a9-bb761a8042ec"
+}
