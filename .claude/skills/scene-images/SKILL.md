@@ -36,6 +36,28 @@ Cheap first looks: many options per beat, not finished frames. **Stills cost no 
 - Read votes and notes by **dumping them into the repo first**: `ArtifactData list` on `votes` and on `notes`, each with `out_dir` = `$(python3 scripts/provenance/prov.py feedback-dir <scene-dir> --stage moodboard --round N)`, then read the files. Kai often clicks his picks himself, so read them before writing any. Log it: `prov.py trail … --feedback --decided "<each pick or ruling, Kai's words>"`. The page is only the UI; the repo is the record (docs/provenance).
 - **A few stills to choose between outside a mood board round** (a fix, a missing shot): a picks page, `scripts/scene/build-picks.py` from the scene's `picks.json`. Every image enlarges on click. Never hand-make a page.
 - **Rounds:** a round answers Kai's notes, with new rows tagged by round. Keep going until every beat has a "This".
+- **One round clears the whole board** (Jack, 2026-11-17). Dump every vote and note first, then answer ALL of them in
+  the same round (every beat at once), never one note per round. Don't ask Kai or Jack to vote: read the page.
+- **Clean room for new shots; quick rewrites for small fixes** (Jack, 2026-11-17). A new shot or a new idea gets a
+  sealed writer. A small fix to an existing prompt ("make the poster bigger", "move the ambulance to the near lane")
+  is a direct edit of that prompt, logged in the round's folder, no new writer.
+- **The shared clean-room brief carries the look as ONE line** taken from `look.md`, never a paragraph; each shot's own
+  facts (geometry, the face, the slogan) come first.
+
+## Real photos first, sealed writers always (Jack, 2026-11-17)
+
+- **Lean on Unsplash.** For anything real-world (a street, a junction, a vehicle interior, a building, a shelter),
+  start from real photos: `python3 scripts/scene/unsplash-refs.py <scene-dir> "<query>" ...` and the picks page. A real
+  photo carries correct physics, proportions and traffic for free; the generator only has to restyle it. Jack: "the
+  Unsplash fix does seem to solve a lot of these problems". (Unverified: whether Unsplash's API terms allow uploading
+  their photos to Flow as a reference; Jack has been told.)
+- **Writers must not see the repo.** A `general-purpose` subagent loads the whole CLAUDE.md and the memory index
+  (tested 2026-11-17), so a "sealed" writer is not sealed. Run every clean-room writer with
+  `scripts/variations/sealed-writer.sh <round-dir> <brief files...> -- <output.json>` (an empty temp folder,
+  CLAUDE.md and auto memory switched off; tested blank), or the `clean-room-writer` agent
+  (`.claude/agents/clean-room-writer.md`, `omitClaudeMd: true`, loads after a session restart).
+- **Brief from raw inputs only.** The shared brief is the human's words, the geometry map and ONE look line; never a
+  paragraph of look wording copied from earlier prompts or briefs, and never earlier prompts as "evidence".
 
 ## Before a still reaches the board (Jack, 2026-11-17)
 
