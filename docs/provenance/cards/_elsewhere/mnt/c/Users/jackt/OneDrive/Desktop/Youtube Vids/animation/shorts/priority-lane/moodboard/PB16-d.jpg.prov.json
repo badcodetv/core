@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB16-d.jpg",
+ "made": "2026-11-17T13:22:57.964Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph on 35 mm colour-negative film, a wet London street at night, seen from the bench of a roadside glass shelter. The lit advertising case at the end of the shelter stands just in front of us, square-on, filling the centre and right of the frame, about half of the picture: inside it, the poster from the reference image, reproduced exactly, the same man's face, large and sharp, the slogan clear. The ambulance's flashing blue light is just reaching the case, a cold blue wash sliding over one edge of the poster while the face stays clean and readable without glare. On the left of the frame, beyond the end of the case, the road runs away toward the oncoming traffic, the kerb along its right-hand edge: a UK ambulance with yellow-green Battenburg chequers drives toward the camera in the lane nearest our kerb, the kerb directly on its left, smaller than the poster, roughly mid-distance, headlights and blue lights blazing through falling rain, its plate and lettering blurred by spray. Light sources: the white lightbox behind the poster, the ambulance's blue strobes and headlights, sodium-orange street lamps across the road, their glow doubled in the puddles. Rain dripping from the shelter roof edge in the foreground, cold teal shadows, grain, slight halation, a real photograph, never glossy. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6eb746df-d42b-440c-9d46-e6dda0ff428a"
+}

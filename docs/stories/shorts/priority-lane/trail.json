@@ -363,5 +363,24 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 15: PB15-c, the ambulance in frame in the near lane, pavement on its left (UK side); PB15-a/b were reference copies",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T13:23:47+00:00",
+  "stage": "moodboard",
+  "round": 15,
+  "what": "Round 15 notes dumped to feedback/moodboard-r15",
+  "decided": [
+   "PB15-c: 'do mulitple versions i can barely see the poster'"
+  ],
+  "feedback": "feedback/moodboard-r15",
+  "feedback_docs": 19
+ },
+ {
+  "at": "2026-11-17T13:23:47+00:00",
+  "stage": "moodboard",
+  "round": 16,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 16: PB16-a..d bus-seat shot with the poster ~half the frame, ambulance on the UK side; 4/4 real on the fixed flow-mcp",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB16-a.jpg",
+ "made": "2026-11-17T13:20:49.002Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph on 35 mm colour-negative film, a rainy night on an ordinary London high road, seen from the end of the wet metal bench inside a roadside glass shelter. The camera sits right beside the lit advertising case at the end of the shelter, and the case fills the whole right half of the frame, close and almost square-on, turned only slightly toward us: inside its glass is the poster from the reference image, reproduced exactly, the same man's face, large and sharp, the printed slogan crisp, the face clear of any reflection. The camera looks up the road toward the oncoming traffic: the pavement and the kerb run along the right side of the picture beneath the case, and the black wet carriageway opens on the left. A UK ambulance with yellow-green Battenburg chequers drives toward us in the lane nearest our kerb, so the kerb is right beside its left-hand side, smaller in the frame than the poster, about a third of the way up the road, its blue roof lights flaring through the rain, headlights on, the front and plate softened by spray so nothing on it is readable. Light sources: the cool white tubes inside the advertising case lighting the poster evenly, sodium-orange street lamps along the road, the ambulance's blue strobes and white headlights reflected in the wet tarmac. Cold teal shadows, visible grain, slight halation round every lamp, rain streaks across the shelter glass on the left. Real photograph, not CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "057ddd79-5be6-4846-b757-ecf397931842"
+}
