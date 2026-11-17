@@ -368,5 +368,16 @@
    "Kai: 27 shots get her; d10 and q09 keep the original",
    "Kai a01m: she carries a gun pointing up like the men, slightly in front is fine here"
   ]
+ },
+ {
+  "at": "2026-11-17T18:39:16+00:00",
+  "stage": "timeline",
+  "round": 11,
+  "url": "https://claude.ai/artifact/63z6GJMxGiyKyoEaEPMqsp",
+  "what": "Cut 10H1: the signed-off 10B5 with her (the gang's leader) in 19 shots / 23 slots, same timing; 8 fixes and 2 kept still to come",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/cuts/make-H1.py && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/cuts/assemble.py H1 <out-dir> 0.12",
+  "decided": [
+   "Clips by badcode-4f's tab pool (worktree-flow-tab-pool), 19/19, checked: no duplicates, 6.04 s each, first frames match"
+  ]
  }
 ]
