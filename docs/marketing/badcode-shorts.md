@@ -39,7 +39,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 10. 🌊 **The Radiator:** the radiator is labelled GULF STREAM and someone fiddles with it (5) → the room freezes (4) → "You broke the free heating." (4) **13s.**
 11. 📏 **Rules For Thee:** laws drop out for everyone else, ME is SOLD OUT. **8s.**
 12. 🎱 **Magic 8 Ball:** a question, a shake, the answer. **6s.** Fast enough to do three in one short.
-13. 🎙️ **Balaclava Newsreader:** one real headline read straight, and nobody blinks. **10s.**
+13. 🎙️ **Balaclava Newsreader:** one real headline read straight, and nobody blinks. **10s.** <!-- style-lint: ok (one short's premise, not a house look) -->
 14. 🍞 **Butter Side Down:** toast falls, then "It wasn't gravity." **6s.**
 15. 🐈 **Schrödinger:** the box opens and the cat is holding a complaint form. **6s.** The explainer is cut.
 16. 🦛 **Just a Hippo:** **5s.**
@@ -140,6 +140,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 86. 🎬 **Story trailers** *(a category, not one short; Jack's idea)*: a 15 s non-spoiler trailer for each story (Camping, Karen, Bank Robbery, GitPush) with dramatic Suno music, "not obvious what the story is, but clearly something to do with homelessness". These are separate from the **story shorts**, which make a point and link to the story. Kai's model is the Camping one: "that moment in the shop when someone asks have you got any change. In case you hadn't thought about this, it's really awkward for both of you."
 87. 🎛️ **The 1,337 Takes** *(a SPECIAL, not a short; Kai)*: the true story: "we made 1,237 versions of Camping because we have no idea what we're doing, so here they all are, which is best?", with a voting page, told documentary-style by a balaclava to camera. 🔴 Getting the takes breaks Suno's download limit; screen-record them instead.
 88. 📏 **True Scale** *(Kai, 2026-11-16, from an Instagram reel Jack sent: "100% a short that links to camping"; the "true scale of Godzilla next to the Empire State" format)*: every homeless household in England at true scale, 134,000 tiny figures under one teal light (4) → the camera pulls back: beside them, every long-term empty home, dark: 303,185 (5) → one empty house lights up: who owns this one? Jack's line (4). **~13s.** England's numbers, not the reel's US ones (Jack's pick); Numbers checked 2026-11-16 (`docs/stories/short-true-scale/numbers.md`): "1 million empty" is not safe. Night, teal look like #83. **BUILDING** (2026-11-16): [`docs/stories/short-true-scale/`](../stories/short-true-scale/README.md).
+89. 🍫 **The Freddo Mortgage** *(Kai, 2026-11-17 meeting; also the test of the context reset)*: "So Mr Davis, what brings you here for your mortgage application today?" (5) → "I just wanted to buy a Freddo." (5) → the punch, Jack's (5). **~15s.** **BUILDING** (2026-11-17): [`docs/stories/short-freddo-mortgage/`](../stories/short-freddo-mortgage/README.md).
 
 🔴 **#15 Schrödinger clashes with doctrine:** its background note sells the cat as "two places at once", which is on the never-say list. If it gets made, the cat is "not decided yet", and #50 may replace it.
 
@@ -188,7 +189,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 
 ### 6. 💷 Sponsor a Chancellor
 **Source:** "£100k a year doesn't go far."
-**Hook:** a sad-piano charity advert in black and white, in slow motion.
+**Hook:** a sad-piano charity advert in black and white, in slow motion. <!-- style-lint: ok (one short's premise, not a house look) -->
 **What happens:** "This is Jeremy. Jeremy only earns £100,000 a year. For just £3 a month, you could help him afford a second wine fridge."
 **The turn:** a freeze frame and text with the real median UK salary. ⬜ Check the current figure before using it.
 **Point:** who is "struggling."

@@ -5,6 +5,11 @@ description: Use when starting, capturing, or developing a BadCode story — sca
 
 # New Story (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 Take a story idea — a fragment, a reference, an existing comic, a GPOM beat — and
 capture it as canon under `docs/stories/<story>/`, the single source of truth that the
 comic, the song(s), and any later media derive from. Drive it collaboratively
@@ -62,7 +67,13 @@ look and sound are found by the **`story-style`** skill (step 4) and written bac
 
 1. **Take the idea.** Fragment, reference, existing comic, or GPOM beat. Don't
    demand a brief.
-2. **Scaffold** `docs/stories/<story>/` with the files above.
+2. **Scaffold** `docs/stories/<story>/` with the files above, plus **`badcode.md`** ([template](../../../docs/stories/badcode-template.md)).
+   **What goes in its context (Jack's rule, 2026-11-17).** Before anything is generated, open the
+   [library](../../../docs/library/README.md) and propose the pieces this story should take in: two to five looks, sounds
+   or tricks, each with one line on why, plus "nothing from the library" as an option. Put it to Jack or Kai as one
+   question (AskUserQuestion, multi-select). Copy only the picked pieces into the story's `badcode.md` under **Library
+   pieces in use** (adapted, never linked as a live rule). Nothing else from the library, another story or a shared doc's
+   examples applies.
 3. **Capture the spine** collaboratively, writing each file as it firms up:
    **Key concept** (the one idea), **Background** (real-world grounding), then
    **characters**, then **high-level beats**. For an *existing* story, reverse-
@@ -70,7 +81,7 @@ look and sound are found by the **`story-style`** skill (step 4) and written bac
    lyrics) rather than inventing.
 4. **Look and sound.** Once the spine and beats hold, run the **`story-style`** skill: an interview
    about the story, then genuinely different looks and sounds on a picking page, and the picks
-   written into `look.md` and `sound.md`. Say you are handing off to it. Nothing visual or musical
+   written into `badcode.md` (current look and sound) and `look.md` / `sound.md` (the full record). Say you are handing off to it. Nothing visual or musical
    is made before this (a story's identity is decided once, deliberately, not by the first prompt).
 5. **Song.** With `sound.md` filled in, invoke the **`suno-prompt`** skill to produce the style prompt,
    exclude list, and (on request) lyrics inside the story's sound; write the result to `songs/<slug>.md`

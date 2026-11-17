@@ -5,6 +5,15 @@ description: Use when DRIVING Google Flow — bringing the browser up, calling t
 
 # Flow Automation
 
+> 🔴 **One Flow project per story** (2026-11-17): before a story's first Flow call this session, `flow_open_project` its
+> project (id in its `badcode.md` or `scene.json` `flow_project`). Rules: `docs/rules/flow.md` §One Flow project per story.
+
+
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 **The machine half of Flow.** Everything about making a tool call succeed, and nothing about
 what to put in it.
 
@@ -495,7 +504,7 @@ scripts/video-contact-sheet.sh clip.mp4              # every frame at 4fps, one 
 REGION=left scripts/video-contact-sheet.sh clip.mp4  # crop a band + lift exposure
 ```
 
-Near-black frames (GPOM's look) hide motion at full-frame scale — use `REGION` when the suspect
+Very dark frames hide motion at full-frame scale — use `REGION` when the suspect
 detail is small or dark.
 
 🔴 **A camera-only move on a still is not a Flow job.** If nothing in the world actually moves,

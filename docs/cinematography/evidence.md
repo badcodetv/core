@@ -23,7 +23,7 @@ was not reached.
 | Kuleshov, popular form | **A (mixed)** (brief 09) | **myth** in its popular form | Prince & Hensley 1992 controlled replication failed. The narrow version (adjacency shapes inference) survives at **A** |
 | Murch's Rule of Six percentages | **P**, repeated in 08/09/10 | *(unverified)* | The same secondary paraphrase cited three times from one page, never against Murch's own text. Repetition made it look solid; it isn't |
 | *Metropolis*/*Brazil* dystopian architecture | **A (mixed)** | **p** | One ResearchGate paper, abstract only. A grade of A for an unread source |
-| "Blue hour produces the monumental read" | flagged and self-downgraded in brief 18 | **p** | Brief 18 caught itself. Noted as good practice |
+| "Blue hour produces the monumental read" | flagged and self-downgraded in brief 18 | **p** | Brief 18 caught itself. Noted as good practice | <!-- style-lint: ok (engine fact) -->
 
 ## 2. The strongest claims — what we can lean on
 
@@ -33,7 +33,7 @@ was not reached.
 | Hard vs soft light shadow character | **A** | Source size relative to subject. Optics |
 | Lightness anchoring — darkness is judged relative to the brightest region groupable into the scene | **A** | Gilchrist's anchoring theory of lightness perception. **The mechanism under the dark-look anchor rule (principle 11; GPOM's `look.md` makes it a rule)** |
 | Banding in dark gradients is bit-depth quantisation | **A** | Arithmetic: 8-bit gives 256 steps per channel; dark gradients occupy a small slice |
-| Dither/grain fixes banding by breaking quantisation edges | **A** | Signal processing. Film grain did this free for a century |
+| Dither/grain fixes banding by breaking quantisation edges | **A** | Signal processing. Film grain did this free for a century | <!-- style-lint: ok (engine fact) -->
 | Full/limited range mismatch clips everything below a threshold to black | **A** | Metadata/signal fact, documented across broadcast and GPU engineering. **We shipped this bug in `camping.mp4`** |
 | Compression allocates fewest bits to dark, low-detail regions | **A (mixed)** | Rate-distortion principle is fact; which artifact dominates depends on codec and bitrate |
 | Atmospheric perspective as a depth cue | **A** | Vision science and landscape painting alike |
@@ -83,7 +83,7 @@ was not reached.
 | "Ken Burns invented pan-and-zoom on stills" | *(unverified — commonly claimed, not sourced)* |
 | "Higher resolution fixes a flat shot" | **myth** — flatness is depth-layer separation, not detail density |
 | "Brutalism is inherently oppressive" | **myth** — the oppression is framing and lighting, not the concrete |
-| "Monumental scale + symmetry = inherently fascist grammar" | **myth** — same vocabulary indicts in *Metropolis* and *Brazil* |
+| "Monumental scale + symmetry = inherently fascist grammar" | **myth** — same vocabulary indicts in *Metropolis* and *Brazil* | <!-- style-lint: ok (engine fact) -->
 | "If the intent is satirical, the imagery is safe" | **myth** — contradicted by the directors' own accounts of reception |
 | "Aerial/drone is the natural way to show scale" | **myth** — elevation collapses legible scale into pattern |
 | "An empty room is automatically eerie" | **myth** — needs legible human-scaled proportions |

@@ -71,7 +71,7 @@ rule not ruthless enough for long enough is wallpaper.
 Colour is the adjective layer: Ware applies it after the sequence is structurally complete, as an
 emotional modifier — and disclaims having a system, so this is one master's intuition, not a portable
 rule (brief 11). One option: grid logic constant, palette temperature saying which timeline the reader
-is in (cold future, warm 2026 was the house default; it is now a story's call, in its `look.md`).
+is in (cold future, warm 2026 was the house default; it is now a story's call, in its `look.md`). <!-- style-lint: ok (engine fact) -->
 
 For the darkest beat, withhold. *Saga* #42 ends on six blacked-out panels; Vaughan credits Staples's
 pacing and handwritten narration, not the surprise (brief 11). A blackout turns the gutter inside out —
@@ -150,7 +150,7 @@ timecode. The take is split to stems and the vocal stem **cut into one clip per 
 its picture beat in Premiere — so every line is a cut point, written short and full-stopped. `/`
 directs delivery *inside* a line (v5.5 obeys the bracket architecture; 4.5 shreds it). `//`, `///` and
 `[SIL]` are *executed in the edit* — the pause is where the clip is slid, not what the take did.
-`[DUCK]` acts on the instrumental stem; `[BREAKDOWN]` and `[DROP]` apply where the bed is a D&B track,
+`[DUCK]` acts on the instrumental stem; `[BREAKDOWN]` and `[DROP]` apply where the bed has a drop (GPOM's D&B track did),
 while GPOM's narration bed is ruled "a held note, a room, and two events." Picture is cut to the VO
 except for built animations with locked frames, where the words go to the picture (narration.md §2).
 
@@ -178,7 +178,7 @@ never stacked (brief 12, a mixed-grade guide citing the platform).
 ## 3. The song
 
 No genre is assumed: a song's genre is its story's `sound.md` (`docs/stories/STYLE.md`). The
-notes on drops, breakdowns and MCs below apply when that genre is a club form such as drum & bass
+notes on drops, breakdowns and MCs below apply when that genre is a club form such as drum & bass <!-- style-lint: ok (engine fact) -->
 (GPOM's track); the narrative-in-lyrics craft applies to any song.
 
 Everything mechanical — style prompts, Voice stacks, syllable matching, rhyme by section, chorus
@@ -219,7 +219,7 @@ BadCode piece already holds "don't make this mistake" and "you are loved, we can
 ### Where the voice sits on the bed
 
 The story's `sound.md` picks the genre; the genre answers it. On a club bed (D&B, GPOM's track): the drop follows a build and a breakdown where drums thin — so narration lives in
-the breakdown and the drop is wordless punctuation (principle 27). Old-school D&B hosted an MC, a
+the breakdown and the drop is wordless punctuation (principle 27). Old-school D&B hosted an MC, a <!-- style-lint: ok (engine fact) -->
 practice since declined (brief 23). Grade honestly: drop/breakdown structure and the MC tradition are
 Wikipedia-grade; producer-level mechanics for a half-time vocal over a 170-plus-BPM bed are
 (unverified) — brief 23 found no practitioner source.

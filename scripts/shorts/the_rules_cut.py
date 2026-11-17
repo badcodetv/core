@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# style-lint: story=short-the-rules (this script cuts one short only; its music is that short's)
 """The Rules (BadCode Short): the FINAL cut (round 5 = Premiere r3, frozen 2026-11-11), Flow clips cut on the sung words, the hymn and the drop (sound: docs/stories/short-the-rules/sound.md).
 
     python3 scripts/shorts/the_rules_cut.py [--drop-in SECONDS]

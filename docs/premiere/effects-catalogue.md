@@ -38,7 +38,7 @@ in Flow on black and composite it*, not *buy Sapphire*.
 | --- | --- | --- |
 | The grade, everything | **Lumetri Color** | `AE.ADBE Lumetri` |
 | Quick exposure/contrast | Brightness & Contrast | `AE.ADBE Brightness & Contrast 2` |
-| Black and white | Black & White | `AE.ADBE Black & White` |
+| Black and white | Black & White | `AE.ADBE Black & White` | <!-- style-lint: ok (engine fact) -->
 | Tint to a colour | Tint | `AE.ADBE Tint` |
 | Levels / curves by numbers | Levels | `PR.ADBE Levels` |
 | Gamma only | Gamma Correction | `PR.ADBE Gamma Correction` |
@@ -55,9 +55,11 @@ Lumetri's readable parameter indices are tabulated in [`api-notes.md`](./api-not
 19, Contrast 20, Saturation 16, Temperature 14. **33 of its 130 params cannot be read by any route**
 but can still be written.
 
-### A near-black register (GPOM's look)
+### Light, texture and finish
 
-GPOM's look (its `docs/stories/gitpush-origin-master/look.md`) is near-black, one thin light, monumental. These are the tools that get there.
+Tools that shape light and surface texture on the frame: edges, grain or noise, rays, leaks, glow.
+Which of them a story uses (if any) is its `look.md`, never a default; a clean graphic look may
+want none.
 
 | Want | Effect | Match name |
 | --- | --- | --- |
@@ -369,8 +371,8 @@ what a differently-configured install offered.
 
 | Index | Param | Default | Note |
 | --- | --- | --- | --- |
-| 0 | Amount of Noise | 0 | 🔴 **0–100 PERCENTAGE, not 0–1.** 1 is invisible; **4 is a usable 1080p film grain** |
-| 1 | Noise Type | `true` | `false` = monochrome — what film grain wants |
+| 0 | Amount of Noise | 0 | 🔴 **0–100 PERCENTAGE, not 0–1.** 1 is invisible; **4 was the usable 1080p grain on Camping** | <!-- style-lint: ok (engine fact) -->
+| 1 | Noise Type | `true` | `false` = monochrome (a film-grain imitation wants it) | <!-- style-lint: ok (engine fact) -->
 | 2 | Clipping | `true` | leave it |
 
 ⚠️ **There is no Shadows/Midtones/Highlights split on this build**, so the "grain only in the
@@ -392,8 +394,8 @@ across all 39 clips of Camping** on 2026-09-05.
 | 11 | Master | 100 |
 | 12 | Preserve Alpha | true |
 
-🟢 **Separate Shadows / Midtones / Highlights is the control for a dark look** (it was GPOM's). Grain only in the shadows
-suits a near-black register — and it is also the banding defence before upload, whatever the look
+🟢 **Separate Shadows / Midtones / Highlights is the control for texture in a dark look.** Noise only in the shadows
+is also the banding defence before upload, whatever the look <!-- style-lint: ok (engine fact) -->
 ([`docs/video-fx/delivery.md`](../video-fx/delivery.md)).
 
 ### RGB Split — `AE.Impact_RGB_Split_FX` (24 params)

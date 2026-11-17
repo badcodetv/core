@@ -109,6 +109,16 @@ def story_style(d, kind):
     slug = read(d, "story")
     if not slug:
         return ""
+    # 2026-11-17 context reset: badcode.md (short, current only) wins. The long look.md / sound.md keep
+    # superseded rules inline, and pasting them whole carried dead looks (and other parts' looks) into briefs.
+    bc = ROOT / "docs" / "stories" / slug / "badcode.md"
+    if bc.exists():
+        text = sections(bc.read_text(), ("story-only rules",)) if (read(d, "explore") or (Path(d) / "explore").exists()) \
+            else "\n".join(l for l in bc.read_text().splitlines() if not l.startswith(">")).strip()
+        head = ("## This story's standing rules (the round is finding a new style, so only these bind)"
+                if read(d, "explore") or (Path(d) / "explore").exists()
+                else "## This story (stay inside its look and sound; another part's look does not apply)")
+        return f"{head}\n\n{text}" if text else ""
     f = ROOT / "docs" / "stories" / slug / ("sound.md" if kind == "suno" else "look.md")
     if not f.exists():
         sys.exit(f"🔴 {f} does not exist. Write the story's file first (docs/stories/STYLE.md).")

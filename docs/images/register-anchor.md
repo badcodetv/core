@@ -4,6 +4,9 @@ flow_media_id: a3a2bf57-42ff-4b37-9ba9-ec1fc3bd1ac5
 model: nano-banana-2
 status: done
 ---
+
+> **GitPush Origin Master's anchor only.** Not a BadCode look; never a reference for another story.
+<!-- style-lint: story=gitpush-origin-master (a GPOM record kept in a shared folder) -->
 ![register anchor](register-anchor.jpg)
 
 **GPOM's register anchor** — the calibration reference for GPOM's MACHINE look

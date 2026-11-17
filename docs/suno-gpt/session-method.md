@@ -32,7 +32,7 @@ behind — which is why it is gone.)
 | **Slider round** | audio influence · style influence · weirdness | **every prompt box** |
 
 Changing a prompt *and* a slider in one round teaches you nothing. Within one atom, run as many
-slider rounds as you like — that is the cheap axis, and the weirdness 30/60 pair lives there.
+slider rounds as you like — that is the cheap axis, and the weirdness 30/60 pair lives there. <!-- style-lint: ok (engine fact / names what not to do) -->
 
 **Write each experiment as a self-contained block holding all three boxes** — no taste fence.
 Mechanics: [`automation.md`](./automation.md); enforcement is in `suno.mts`.
@@ -53,7 +53,7 @@ completely different song?** If yes it is a rule and it goes in `files/`, even i
 saw it once. If no it is a log entry.
 
 **A rule is a fact about the engine, written as a fact** ("the genre word picks the vocalist
-pool"), never a taste ("default to D&B", "keep a UK genre", "weirdness 30"). What worked for
+pool"), never a taste ("default to D&B", "keep a UK genre", "weirdness 30"). What worked for <!-- style-lint: ok (engine fact / names what not to do) -->
 *this story* — a genre, a voice, a slider value — goes in the story's `sound.md`, not in `files/`.
 There is no BadCode house sound (Kai, 2026-10-28, [`STYLE.md`](../stories/STYLE.md)): a taste
 promoted to `files/` ends up in every song's prompt.

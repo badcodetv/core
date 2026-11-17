@@ -164,7 +164,7 @@ frame should look like, and it drifts toward regenerating rather than animating.
 - **Partial animation:** name the moving element and the pinned one in the same
   sentence — "Rotate the shoe, keep everything else still." / "Animate only trees and
   sky; keep buildings static." / "background stays still and in focus".
-- **Style lock is the one permitted exception to "don't re-describe":** a short clause
+- **Style lock is the one permitted exception to "don't re-describe":** a short clause <!-- style-lint: ok (engine fact) -->
   like "Maintain the style of the image" or "Maintain the old indie film or VHS tape
   aesthetic" anchors treatment without giving the model content to regenerate.
 - **Motion intensity is a three-tier vocabulary:** "Very subtle movement, minimal motion,
@@ -178,7 +178,7 @@ frame should look like, and it drifts toward regenerating rather than animating.
   instruction** — *"Maintain the text 'replicate' on the screen for the first few seconds."*
   *"The input image will always be the starting frame of your video."* (practitioner,
   [replicate.com](https://replicate.com/blog/using-and-prompting-veo-3))
-- **Style lock, two more attested phrasings:** *"Maintain the animation style of the original
+- **Style lock, two more attested phrasings:** *"Maintain the animation style of the original <!-- style-lint: ok (engine fact) -->
   image"* / *"Maintain the vintage feel of the image"*. Replicate also reports Veo carries the
   input's grade by default — *"Veo 3 goes beyond animation — it retains the filtering and color
   grading of the input image"* — so explicit style-lock language is mainly needed on complex
@@ -375,7 +375,7 @@ image alone, then **save the last frame and start the next clip from it**
 
 **What you give up, and how to get it back.** With no end frame the destination is *invented* —
 our two takes produced a flat plate and a riveted capsule, neither the satellite we had designed,
-and both drifted from near-black to high-key silver. So the prompt has to carry the whole
+and both drifted from near-black to high-key silver. So the prompt has to carry the whole <!-- style-lint: ok (engine fact) -->
 destination in words, including the story's look (GPOM's near-black, in this test), because no image is carrying it any more. Budget
 takes: you are picking a destination, not specifying one.
 

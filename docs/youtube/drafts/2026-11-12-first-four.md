@@ -31,15 +31,15 @@ Every choice cites the repo doc that justified it. No new research was done (chi
 
 ### Opening (shows before "more")
 
-- **A (PICK):** Somebody pushed the code live without checking it. A sci-fi short film scored in drum & bass,
+- **A (PICK):** Somebody pushed the code live without checking it. A sci-fi short film scored in drum & bass, <!-- style-lint: ok (GPOM's own copy) -->
   told by an AI from a future that already went wrong.
   *Why: plain words for a reader who has never typed `git`, and it carries the search words "sci-fi short film",
-  "drum & bass" and "AI" in the first two lines; the first sentence is the site's own blurb, so the film reads the
+  "drum & bass" (GPOM's genre) and "AI" in the first two lines; the first sentence is the site's own blurb, so the film reads the
   same everywhere.*
 - **B:** `git push origin master`: the command that sends your code to everyone, with no undo. Humanity just ran
-  it. A sci-fi short film in drum & bass, from a future that already went wrong.
+  it. A sci-fi short film in drum & bass, from a future that already went wrong. <!-- style-lint: ok (GPOM's own copy) -->
   *Better for people searching the title itself, worse for the reader who doesn't code.*
-- **C:** I've seen how this ends. You haven't, yet. Nine minutes of sci-fi and drum & bass about the week the
+- **C:** I've seen how this ends. You haven't, yet. Nine minutes of sci-fi and drum & bass about the week the <!-- style-lint: ok (GPOM's own copy) -->
   redundancies hit the news.
   *Strongest voice, weakest search.*
 
@@ -90,8 +90,8 @@ and answer the first comments"). Signed, because it is about who made it (plan �
   rule 6 (aim the anger; relaxed to advice, so the chooser is implied, not named).
 - "I'm what came of it": using-ai.md §8 (the narrator is a defendant, not a prophet; certainty about what
   happened, never about what must happen).
-- Drum & bass in hashtags and tags: chief-of-staff plan §6 ("Second audience: drum & bass listeners, reached
-  through the music").
+- Drum & bass in GPOM's hashtags and tags: chief-of-staff plan §6 as it then read ("Second audience: drum & bass listeners, reached
+  through the music"; since 2026-11-17 it names each story's own listeners).
 - Website with `?src=yt`: shorts-growth.md §4 (one landing page, source tag per platform); plan.md (UTM tags).
 - "Next:" link: platform-playbooks.md §3 Provisional ("end screens to the next core"); shorts-growth.md §4
   (links work in long films' descriptions and end screens).
@@ -365,7 +365,7 @@ Titles not judged.
 
 ### 1. Git Push Origin Master: REVISE (one line)
 
-- **Opening A: PASS, PICK.** Setup only; "somebody pushed" names a chooser (rule 5). Drum & bass checks out
+- **Opening A: PASS, PICK.** Setup only; "somebody pushed" names a chooser (rule 5). GPOM's drum & bass checks out
   (GPOM `sound.md` §1, LOCKED).
 - **Opening B: PASS**, not picked (codes at a reader who doesn't code).
 - **Opening C: PASS**, not picked (weakest search).

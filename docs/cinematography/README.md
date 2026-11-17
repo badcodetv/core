@@ -36,11 +36,13 @@ A finished shot is **register** (from the story's `look.md`) + **design**
 
 ## The three things that save the most time
 
+> Items 1 and 2 matter only when a story's own `badcode.md` asks for a dark or monumental look.
+
 1. **Darkness reads as depth only when one small region inside it is deliberately brighter.**
    Uniform black reads as a broken file, not as mood — and there is now a perceptual mechanism
    for why (lightness anchoring), not just craft lore. This is any dark look's central technical
    problem and its fix in one sentence (GPOM's `look.md` makes it a rule).
-2. **Before any monumental shot ships: is there a visible cost in frame?** (Applies when a
+2. **Before any monumental shot ships: is there a visible cost in frame?** (Applies when a <!-- style-lint: ok (engine fact) -->
    story's look is monumental — GPOM's `look.md` carries it as a rule.) Wreckage, exhaustion,
    a body that failed. Absent one, the grammar of power reads as celebration of it — and doing it
    ironically on purpose does not protect you. This is the picture version of a rule we already

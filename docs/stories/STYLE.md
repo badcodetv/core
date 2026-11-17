@@ -1,4 +1,8 @@
-# Style lives in the story — `look.md` and `sound.md`
+# Style lives in the story — `badcode.md` first, then `look.md` and `sound.md`
+
+> **2026-11-17 context reset:** each story's [`badcode.md`](./badcode-template.md) is the short, current-only file read
+> before any prompt. `look.md` and `sound.md` below are the full record (history included) and are opened only for a
+> detail `badcode.md` points to. When a pick changes, update `badcode.md` too.
 
 **There is no BadCode house style** (Kai, 2026-10-28). BadCode has a narrator's voice (for words,
 `docs/voice.md`) and a logo (`docs/brand/`). It has no house sound and no house look. Every story

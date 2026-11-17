@@ -5,6 +5,11 @@ description: Use when deciding or judging what a shot should BE — designing a 
 
 # Shot Craft (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 Make the picture grip. This skill owns **what the shot should be** — the judgement layer,
 decided before any tool is asked for anything, and deliberately tool-agnostic so it survives the
 next generator.
@@ -67,11 +72,11 @@ Before designing anything. A shot failing one is not designed further.
 1. **What is this shot FOR?** Not what it shows — what it does to the viewer that the previous
    shot did not. "It looks good" means there is no shot yet.
 2. **Does the story's `look.md` add a gate?** A story's look may make a rule mandatory for every
-   frame; run it here. **GPOM's does:** a visible cost in any monumental shot — scale, symmetry,
-   a machine, an institution needs wreckage, exhaustion, a body that failed, someone the system is
-   failing, or the grammar of power reads as celebration of it (meaning it ironically does not
-   protect you; the picture version of `the-reader.md`'s rule about naming the beneficiary). It
-   is a strong check worth offering on any monumental frame, but only a gate where the look says so.
+   frame; run it here. One check is worth offering on any shot that uses the grammar of power
+   (scale, symmetry, a machine, an institution), whatever the look: **is there a visible cost in
+   frame?** Without one, that grammar reads as celebration of the power it means to indict, and
+   meaning it ironically does not protect you (principle 23). It is a gate only where the story's
+   look makes it one.
 3. **Where does the light come from?** In a photographic or realist look, name the source in the
    world: "it's just lit" produces the generic read before anything else registers. A stylised look
    (cartoon, graphic, painted) may light by its own logic — then name what the light is doing and
@@ -84,16 +89,16 @@ Before designing anything. A shot failing one is not designed further.
 For a shot that does not exist yet. Output a **shot spec**, not a prompt.
 
 1. **The job.** One sentence: what this shot does that the last one did not.
-2. **The look.** Whatever the story's `look.md` names for this part (GPOM's has its monumental
-   and documentary registers and the human-scale exception, ruling R2). Get it from there, never <!-- style-lint: ok — GPOM's registers, labelled on the line above -->
+2. **The look.** Whatever the story's `look.md` names for this part. Get it from there, never
    from here.
 3. **Depth.** What is in the foreground, midground, background. In a deep, photographic frame an
    empty foreground is the most common cause of flatness, and filling it is free; a look built on
    flat graphic planes may want it empty on purpose.
 4. **The focal point.** The one thing the eye rests on, and what it is winning with — light,
    space, or depth position.
-5. **The light.** Source, direction, and **where the falloff goes**. If the story's look is mostly
-   dark (GPOM's is), name the one bright anchor, or the frame reads as a broken file.
+5. **The light.** Source, direction, and **where the falloff goes**, in whatever quality the look
+   asks for (hard or soft, one source or many, or none for a flat graphic style). If the frame is
+   mostly dark, name the one bright anchor, or it reads as a broken file.
 6. **Camera.** Height (a slider, not three boxes), angle, distance. State height and angle
    separately — they are different variables.
 7. **Scale reference.** For any machine or building: the known-size object that makes size
@@ -110,8 +115,7 @@ the spec and the prompt in one step** — the spec is what a human can argue wit
 **A single moving shot in a still body of work lands with outsized force, and only if the
 stillness around it is real.** *La Jetée* spends 26 minutes as photographs and spends its one
 moving shot exactly once. Whether a story works that way is its look's call: a mostly-still look
-(GPOM's documentary passages) budgets camera movement; a look built on movement (a chase, a
-music video, a cartoon) does not.
+budgets camera movement; a look built on movement (a chase, a music video, a cartoon) does not.
 
 - Motivated stillness: free, always available.
 - In a mostly-still look: motivated movement is worth spending roughly once per sequence.
@@ -126,9 +130,10 @@ full of working machinery is not a "still", and it does not spend the budget. Ne
 8-second clip length a constraint on how long a beat runs; clips chain. Method:
 [`docs/video-fx/hybrid-method.md`](../../../docs/video-fx/hybrid-method.md).
 
-**In a photographic look, a still that truly holds still reads as a scanned photograph.** Give it
-a reason to feel photographed — a low-amplitude camera drift, one light changing, grain that lives
-(if the look has grain).
+**A still that truly holds still reads as a scan of a picture.** Give it a reason to feel alive in
+its own medium: a low-amplitude camera drift, one light changing, or the medium's own texture
+moving (grain or sensor noise in a photographic look, the boil of a drawn line, paper or print
+texture), whichever the story's `look.md` is made of.
 
 ---
 
@@ -173,9 +178,9 @@ caption carrying the beneficiary, a bookend made by repeating an existing frame 
 
 ## Working rules
 
-- **Never claim the register question is settled.** Whether GPOM's near-black monumental look is
-  right for a working-class UK reader is an **open ruling** (`principles.md` §R1). Nobody has
-  evidence either way. Do not assert it in canon or public copy.
+- **Never claim the register question is settled.** Whether any story's register is right for a
+  working-class UK reader is an **open ruling** (`principles.md` §R1). Nobody has evidence either
+  way. Do not assert it in canon or public copy.
 - **Check `evidence.md` before any claim or number leaves this skill.** The never-cite list is
   long and includes several things that sound authoritative — the rule of thirds as perception,
   fixed colour meanings, "low angle equals power" as law, the popular Kuleshov story, "handheld

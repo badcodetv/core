@@ -295,10 +295,10 @@ transactions. This is a hard API constraint, not a choice.
 
 ---
 
-## Recipe: a near-black grade — vignette plus grain
+## Recipe: vignette plus noise over a Lumetri base
 
-Vignette plus grain over a Lumetri base. This was GPOM's grade (there is no BadCode house grade;
-a story's `look.md` says what it uses) — the mechanics below work for any look that wants it.
+The mechanics of stacking a vignette and a noise layer on a Lumetri base. Whether a story wants
+either is its `look.md`'s call, not a default (GPOM's grade was built this way).
 
 ```jsonc
 premiere_list_effects({ query: "vignette" })   // → AE.Impact_Vignette_FX
@@ -449,7 +449,7 @@ script-object exhaustion that bites a long loop of separate commits. Pattern in
 
 **Mark phrases, not beats.** 175 BPM over four minutes is **730 beats** — 730 markers is unusable
 and cutting on every one of them is the most obvious amateur edit there is. The same track is
-**23 phrases**. D&B moves in 8- and 16-bar blocks and the drop lands on a phrase boundary, so
+**23 phrases**. Most dance music moves in 8- and 16-bar blocks (this track was GPOM's D&B) and the drop lands on a phrase boundary, so
 phrase marks are where the cuts actually want to go. Drop to `--emit bar` only for a passage you
 are deliberately cutting hard.
 
@@ -469,7 +469,7 @@ per-beat cutting for the drop.
 
 ### Two traps that cost real time
 
-🔴 **Octave errors are the norm, not the exception.** On the same real D&B track, `aubiotrack`
+🔴 **Octave errors are the norm, not the exception.** On the same real D&B track, `aubiotrack` <!-- style-lint: ok (engine fact) -->
 reports **88.91 BPM** and `librosa.feature.tempo` reports **87.89** — both exactly half of the
 true 175.78. `scripts/beat-grid.py` folds and cross-checks for you; if you run a detector by
 hand, **sanity-check against the tempo you asked Suno for** before believing it.
@@ -660,9 +660,9 @@ the useful half was the other one:
 | Cuts 1–2 | **No black floor.** The Hong Kong descent has 0.3% of frame below 16 and a p5 of 23.5 — nothing in the picture is black, so it floats | fix: `Blacks −9` → p5 16.7 |
 | Cut 3 | 🔴 **Crushed AND capped.** The aisle has **57.7% of frame below 16** and tops out at 183. It isn't dark-by-design, it's clipped with no bright anchor | fix: `Whites +40, Blacks +8, Contrast +6` → 1.6% below 16, p99 204 |
 
-🔑 **That second row is [`../cinematography/principles.md`](../cinematography/principles.md) §R1's
-central problem showing up as a histogram.** Darkness reads as depth only when one small region is
-deliberately brighter; uniform near-black reads as a broken file. The plant room had been graded
+🔑 **That second row is [`../cinematography/principles.md`](../cinematography/principles.md)
+principle 11 (the bright anchor) showing up as a histogram.** Darkness reads as depth only when one small region is
+deliberately brighter; uniform near-black reads as a broken file. The plant room had been graded <!-- style-lint: ok (engine fact) -->
 *into* the failure. Lifting the whites gave it the bright anchor and lifting the blacks off the
 clip gave the shadows somewhere to live — and it reads *darker*, not lighter, because the shadows
 now have shape.

@@ -5,6 +5,11 @@ description: Use to decide what one scene of a BadCode film IS before anything i
 
 # Scene beats (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 **Stage 1 of a scene.** Decide what the scene is and make it interesting, in conversation, before any
 image is made. The next stage is **`scene-images`**; the whole loop is **`new-scene`**; the film it sits
 in is the **`overview-board`**.

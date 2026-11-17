@@ -89,7 +89,7 @@ Order in the cut is decided in the edit, not here.
 - **Withheld:** Bob. We see only what Tarquin is looking down at later.
 - **Moves:** nothing in the image. A slow push in post, then the cut.
 
-### P1 — prompt, round 1 · Nano Banana 2 · 9:16 · ref `20.jpeg` · x2
+### P1 — prompt, round 1 (Camping pilot, the prompt as it was run) · Nano Banana 2 · 9:16 · ref `20.jpeg` · x2
 
 **Box: Flow → prompt box (reference `20.jpeg` attached as the only ingredient)**
 
@@ -119,7 +119,7 @@ paper texture, dry-brush line), and the deliverable is **one video**. At 16:9 th
 framing survives, **so Bob's blurred shoulder comes back into the foreground**. That restores the
 depth layer and the visible cost that the vertical crop had lost.
 
-### P1 — prompt, round 2 · Nano Banana 2 · 16:9 · ref `20.jpeg` · x2
+### P1 — prompt, round 2 (Camping pilot, the prompt as it was run) · Nano Banana 2 · 16:9 · ref `20.jpeg` · x2
 
 Round 1's prompt, with three changes: the framing is now the photograph's own, `b`'s qualities
 (slate sky, paper tooth) are stated rather than hoped for, and the foreground shoulder is named.

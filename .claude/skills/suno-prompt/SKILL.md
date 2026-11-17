@@ -5,6 +5,11 @@ description: Use when turning a song idea into a Suno prompt — a style prompt,
 
 # Suno Prompt (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 Take what's in the user's head — a vague idea, a reference track, a feeling, a story beat — and
 turn it into a Suno prompt that produces accurate, high-quality output, **in the story's own sound**
 (its `docs/stories/<story>/sound.md`), with lyrics in the BadCode voice (`docs/voice.md`, words only).
@@ -63,8 +68,8 @@ scene word in the Style box decides *who sings* far more than any voice adjectiv
 artist name does. Same genre → same singer, however the voice is described (Bank Robbery: ~150
 takes over one cop-funk backing, Jack heard one voice; "Led Zeppelin" and "Rolling Stones" voices
 came out "basically the same"). **To change the voice, change the genre word** — put a voice
-tradition first (Bank Robbery's test: `Bristol trip hop, a hushed close-mic murmuring English man…`
-— an illustration of the move, not a voice to reuse) and the music after, even a mismatched one. Evidence: `docs/suno-gpt/suno-voices.md` §2a–2d. ⚠️ **Not alone,
+tradition first (the shape: `<scene + place + era>, <who sings: age, timbre, delivery>…`, filled
+from the story's own `sound.md`; Bank Robbery's tested wording is in its `sound.md`) and the music after, even a mismatched one. Evidence: `docs/suno-gpt/suno-voices.md` §2a–2d. ⚠️ **Not alone,
 though:** used with a one-clause voice and a fixed ban list, it still cloned the voice. A full
 `Lead vocal:` sentence plus Vocal Gender is what moved it (§2f).
 
@@ -425,9 +430,8 @@ in-generation casting there was wasted.)
 
 ✅ **Want a different voice? Reference a real singer — translated.** Ask the human for a singer who
 has the voice, write the name in the sheet only (Suno rejects artist names), and put the translation
-in the box: scene + era + voice + delivery (Bank Robbery's translation was `London retro soul, a
-raw husky contralto woman with a heavy North London accent` — that story's voice, shown for the
-shape; never paste it into another story). It moved the voice when accent, origin and timbre words all failed
+in the box: scene + era + voice + delivery (the shape: `<scene + era>, <timbre + age + sex> with
+<accent>, <delivery>`; Bank Robbery's actual translation is in its `sound.md`). It moved the voice when accent, origin and timbre words all failed
 (Bank Robbery, 2026-10-21, `suno-voices.md` §2c). 🔴 The scene word is a pool word and takes the music
 with it — if the style goes, put the music sentence back in front.
 
@@ -571,16 +575,17 @@ man talking over *nothing* exists in the data almost only as poetry recordings. 
 enormous. **The beat is the casting mechanism, not a cost**, and it is free when narration is coming
 out as a vocal stem anyway.
 
-**The table is Camping's tested narration boxes** — evidence from one story, not a default. The
-engine facts around it (`spoken word` is a poetry genre; Suno cannot make silence; melody makes him
-sing, rhythm makes him rap) hold for any story; the box contents are a starting point only when the
-story's `sound.md` asks for a man talking over a bed.
+**What moved it, as engine mechanics** (measured on one story's narration; that story's actual boxes
+live in its own `sound.md`, not here). What the bed, tempo and voice *are* is the story's call:
 
-| Box | What goes in (Camping) |
-|---|---|
-| **Style** | a **skit / interlude** pool word · `a man talking over a beat` · a BPM · one **unpitched** bed · `voice-forward mix, no singing, no melody`. **No genre word containing "spoken" or "word"** |
-| **Exclude** | the **whole poetry pool**, named: `spoken word, performance poetry, poetry slam, dub poetry, beat poetry, recital, recitation, declamatory, oratory, verse, stanza, rhyming, metrical, incantation, dramatic reading, elocution` |
-| **Lyrics** | **`[Monologue]`, one label repeated identically**, then **continuous prose paragraphs** — natural punctuation, no rhyme, no parentheses. Ladder if ignored, lateral not longer: `[Monologue]` → `[Spoken Word Narration]` → `[Interlude]` → no label |
+- **Style:** a pool word for a form where people talk over music (skit, interlude, radio drama,
+  documentary VO, whichever fits the story), and a bed with **no pitch**. No genre word containing
+  "spoken" or "word".
+- **Exclude:** name the **whole poetry pool**, not one word of it — a single banned word leaves the
+  rest of the pool summoning the same delivery.
+- **Lyrics:** **one section label repeated identically**, then **continuous prose paragraphs** —
+  natural punctuation, no rhyme, no parentheses. If the label is ignored, go lateral not longer
+  (another label for the same thing, then no label at all).
 
 🔴 **The layout votes as hard as the words.** Suno reads a line break as a phrase reset and a
 section break as a musical event, so one bracketed section per line **is** the slam cadence drawn as
@@ -647,7 +652,7 @@ Lyricist). Two notes from building GPOM's (its recipe and settings live in GPOM'
 3. **Suno's harshness sits exactly where D&B lives** — brittle cymbals, sizzling hats, sibilance in
    2–6 kHz. Budget for de-essing, or plan to replace the drum stem.
 4. **Sidechain pumping can't be undone** — it's baked in, not a real sidechain.
-5. **Sounds mode is the D&B post-production kit** — risers, downlifters, sweeps, impacts, fills, at
+5. **Sounds mode is a post-production kit** — risers, downlifters, sweeps, impacts, fills, at
    your project's BPM and key. Suno won't build transitions into a generation, so this is how you get
    them.
 
@@ -661,8 +666,8 @@ model, settings, voices`). Everything destined for a Suno input box lives in the
 code blocks** that copy clean — **never in frontmatter** (YAML `>-` blocks indent every line, which
 makes copy-pasting a pain). A `## Suno prompt` section carries all three, in paste order: **Style,
 Exclude Styles**, then the lyrics in a `lyrics` block — no My Taste block (retired 2026-09-10).
-`docs/stories/gitpush-origin-master/songs/git-push-origin-master-orchestral.md` is the worked
-reference. Its D&B sibling (`…-dnb.md`) is the worked reference for **two cuts of one song**: when <!-- style-lint: ok — labelled GPOM/Camping examples -->
+Any accepted sheet in a story's `songs/` folder shows the layout — copy its layout, never its
+contents (those are that story's sound). For **two cuts of one song**: when
 a track forks rather than iterates, give each cut its own file with a `sibling:` frontmatter key,
 keep the shared material (the lyric/bulletin bank) in one file only, and say in both headers which
 one is canonical.

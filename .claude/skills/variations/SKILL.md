@@ -5,6 +5,11 @@ description: Use to get genuinely DIFFERENT options for a story's Suno song or F
 
 # Variations: options that are actually different
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 **Why this exists.** Ask one writer for six options and you get one idea six times. Bank Robbery's
 song went 400+ takes as one voice (`docs/suno-gpt/same-song-traps.md`). Jack built the fix on
 2026-10-24; Kai turned it into this skill on 2026-10-28 once the house style was removed from

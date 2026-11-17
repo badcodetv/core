@@ -201,7 +201,7 @@ Google's own copy promises "vibrant lighting, richer textures and sharper detail
 
 **That is a direct collision with any muted, filmic look** — e.g. a muted cool-neutral palette,
 lifted blacks, naturalistic motivated light, film grain (GPOM's documentary preamble and Karen's
-`STYLE LOCK` both ask for this). The engine's default improvement direction is exactly the axis such
+`STYLE LOCK` both ask for this). The engine's default improvement direction is exactly the axis such <!-- style-lint: ok (engine fact) -->
 a look suppresses. If a story's panels start reading glossy, this is why, and Nano Banana Pro may be
 the better engine for that look despite being the older, slower, more rate-limited one.
 
@@ -305,27 +305,31 @@ world.** If a word appears in the lock, it should not appear again below it. Thi
 **not** contradict the finding that style must be stated explicitly even when a
 reference is attached (second pass, item 1) — state it **once**, in the lock.
 
-### The anti-slop toolkit, for a photographic look `[community]`
+### The anti-slop toolkit `[community]`
 
-The generic-AI-image look is a set of specific, nameable defaults, and each has a
-counter you can put in a prompt. This table is engine-agnostic, and **its counters assume the
-story's `look.md` is photographic** (documentary, RAW capture, natural skin). A drawn, painted,
-cartoon or glossy look answers the same tells differently; take the tells, not the counters:
+The generic-AI-image look is a set of specific, nameable defaults: too clean, too even, too
+symmetrical, too posed, too generic. **The lesson is not "add film grain". It is: be concrete and <!-- style-lint: ok (engine fact) -->
+physical in the story's own medium.** The engine slides to its glossy average wherever the prompt is
+vague; every tell below is answered by naming a real, physical thing the medium would show. The
+community sources this table comes from wrote their counters for a photographic look, so the
+photographic column is the sourced one; the other columns are the same move translated, not tested
+on this engine (`[untested]`). Read the story's `badcode.md` / `look.md` first and take the column
+that matches its medium, or invent one.
 
-| The tell | The counter in the prompt |
-| --- | --- |
-| Plastic, over-smoothed skin; the AI "glow" | Name the capture as unprocessed — `RAW`, `unretouched` — and ask for **natural skin texture** |
-| Noiseless perfection | `ISO 1600`, `natural film grain visible in the shadow areas` |
-| Vague "nice lighting" | **One named source with a position** — *"a single window camera-left"*, *"one overhead fluorescent tube"* |
-| Symmetry and perfect centring | *"slightly off-centre, not quite level, candid"* — real photographs are asymmetric |
-| Sterile, empty environments | **Environmental imperfections**: dust, a dried water ring, crumbs, clutter, a stain |
-| Stiff posing | **Mid-action, not posed** — *"mid-laugh"*, *"hands mid-gesture"*, *"half out of the chair"* |
-| Flawless optics | vignetting, chromatic aberration, focus breathing |
-| Flat, 2D composition | **depth layering** — a foreground occluder, something out of focus in front |
-| Generic colour grading | **Name a film stock** — `Kodak Portra 400`, `Tri-X`, `Fujifilm Classic Chrome` |
+| The tell | Photographic look (sourced) | Painted / drawn / print / video look (the same move, `[untested]`) |
+| --- | --- | --- |
+| Plastic, over-smoothed surfaces; the AI "glow" | Name the capture as unprocessed (`RAW`, `unretouched`) and ask for **natural skin texture** | Name the material and the hand: brush marks, pencil pressure, ink pooling, paper tooth, misregistered print, video scanlines |
+| Noiseless perfection | The medium's own noise: a high ISO, sensor noise, or film grain if the story is on film | The medium's own noise: canvas weave, halftone dots, photocopy toner, tape dropout, compression blocks |
+| Vague "nice lighting" | **One named source with a position**: *"a single window camera-left"*, *"one overhead fluorescent tube"* | Name where the light comes from in the picture, or say the style has none (flat colour, no cast shadows) |
+| Symmetry and perfect centring | *"slightly off-centre, not quite level, candid"* | A composition a person chose: cropped figures, an unequal split, a tilted horizon |
+| Sterile, empty environments | **Environmental imperfections**: dust, a dried water ring, crumbs, clutter, a stain | The same wear, drawn: clutter, stains, scuffs, things left out |
+| Stiff posing | **Mid-action, not posed**: *"mid-laugh"*, *"hands mid-gesture"*, *"half out of the chair"* | Same in every medium |
+| Flawless optics | vignetting, chromatic aberration, focus breathing | The medium's own flaws: a wobbly line, a bleed past the edge, a smudge |
+| Flat, 2D composition | **depth layering**: a foreground occluder, something out of focus in front | Overlapping planes, a foreground shape cutting the frame |
+| Generic colour grading | Name a specific palette, or a film stock or camera if the story is photographic (see the stock warning below) | Name the actual pigments, inks or limited palette |
 
-Most of this the Karen `STYLE LOCK` already buys. **The four it does not** are the ones
-worth adding per-scene, because they live in the *world*, not the capture:
+**Noted while writing Karen** (whose own `STYLE LOCK` already covers the capture side): the four counters that live in the
+*world*, not the capture, are the ones worth adding per scene, whatever the medium:
 
 > **environmental imperfection · mid-action instead of pose · off-centre and not-quite-level
 > framing · a foreground occluder.**
@@ -363,10 +367,10 @@ Four sources is how a frame gets *lit* rather than *photographed*.
 **Web pass, same date, one addition worth keeping:** the word **`photorealistic` is now noise** —
 it appears in so much training data beside CGI and digital painting that it no longer
 discriminates, and it averages toward the waxy look it is meant to prevent `[community]`. The
-working substitute, for a photographic look, is the stack GPOM's and Camping's preambles use: **named camera body, named stock, a stated ISO,
-one positioned light, surface imperfection, and asymmetry.** GPOM's documentary preamble says
-*"hyper-realistic documentary photograph"* rather than *"photorealistic"*, which is the right
-side of this line already — any story's preamble should stay on that side.
+engine fact: concrete, physical description beats the word "photorealistic". **Only if a story has chosen a photographic
+look**, the concrete words are things like a named camera, a stated ISO, a positioned light, surface imperfection and
+asymmetry. A story with a painted, drawn, graphic or any other look ignores this paragraph: the equivalent for it is
+naming its own medium concretely (the paper, the brush, the print process).
 
 Sources: [Why "photorealistic" doesn't work in AI prompts](https://roo.beehiiv.com/p/why-photorealistic-doesn-t-work-in-ai-prompts-and-what-to-write-instead) `[community]` ·
 [Nano Banana Pro prompting tips — blog.google](https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]` ·
@@ -1156,7 +1160,7 @@ there is no separation to be had. `[community]` The engine was right and the pro
 same verdict as [§17](#17--light-streaks-need-lights--the-lighting-has-to-permit-the-technique-observed).
 
 **The fix is never more weather language. Find the dark thing already in the frame and give the
-rain to it:** streaks legible only where they cross the black car and the near-black patches of
+rain to it:** streaks legible only where they cross the black car and the near-black patches of <!-- style-lint: ok (engine fact) -->
 tarmac, rings and bounce-spray on the standing water, and a plain sentence saying that against the
 fog it disappears into the grey.
 
@@ -1331,7 +1335,7 @@ with no method behind it. **Do not cite those numbers.**
 
 ⬜ **The open question, and it is cheap to close:** fire one identical BadCode prompt on Pro and
 on NB2, back to back, and judge the pair. **Our own measured finding outranks every row above.**
-Until that runs, *neither* model is the house default by evidence — Pro was the default by
+Until that runs, *neither* model is the house default by evidence — Pro was the default by <!-- style-lint: ok (engine fact) -->
 **continuity** (🔴 superseded 2026-10-01: Jack ruled Nano Banana 2 always, it is free; never Pro), because the accepted camping montage frames were made on it and the montage cuts
 at about one frame per second, where a look shift between frames would show.
 
@@ -1388,22 +1392,22 @@ one clause, everything else stated positively.
 this photograph would take a second to notice anything was wrong with him at all."* It bounds the
 performance from below in a way "subtle" does not.
 
-### ⚠️ Kodak Portra 400 may now be a slop tell `[community]` `[untested]`
+### ⚠️ Kodak Portra 400 may now be a slop tell `[community]` `[untested]` <!-- style-lint: ok (engine fact) -->
 
 Uncomfortable, because it is in nearly every camping and Karen prompt we have written.
 
-> *"A few film stocks are now so over-prompted they read as trying to look like film — Portra 400
+> *"A few film stocks are now so over-prompted they read as trying to look like film — Portra 400 <!-- style-lint: ok (engine fact) -->
 > and Cinestill 800T especially. Reach for Gold 200, Ektachrome, or Ilford HP5 instead."*
 
 **One `[community]` source, no test behind it — do not act on this yet, and above all do not
 change stock mid-story.** Continuity beats a hypothesis: camping's accepted frames are Portra and
 a new stock would not cut against them. What it is worth is a **cheap calibration**: next time a
-*new* piece needs a look decided, run one plate on Portra 400 and one on Kodak Gold 200 with
+*new* piece needs a look decided, run one plate on Portra 400 and one on Kodak Gold 200 with <!-- style-lint: ok (engine fact) -->
 everything else identical, and look. Promote or delete after that.
 
-The rest of the pass restated what the [third-pass table](#the-anti-slop-toolkit) already has —
+The rest of the pass restated what the [third-pass table](#the-anti-slop-toolkit-community) already has —
 that the 2026 tell is *"too good: too clean, too evenly lit, too symmetrical, too composed"*, and
-that the counters are a named body and focal length, a named stock, one positioned light, stated
+that the photographic counters are a named body and focal length, a named stock, one positioned light, stated
 imperfections and asymmetry. **One addition worth keeping:** *"candid", "street photographer",
 "shot from the hip"* imply **a human behind the camera**, which is a different lever from
 imperfection keywords and cheaper than any of them.
@@ -1485,11 +1489,11 @@ frame that needs dark *shape* rather than dark *everything* states the source an
 ### 🔑 The 2008 on-camera-flash register — and the one place crushed black is correct
 
 A documented look, and it is exactly what camping's montage is reaching for: **direct undiffused on-camera
-flash, shutter fast enough that ambient barely registers, the background falling to a near-black crushed void
+flash, shutter fast enough that ambient barely registers, the background falling to a near-black crushed void <!-- style-lint: ok (engine fact) -->
 past the flash's short range, cool blue-green white balance, highlights clipping to featureless white, fine
 digital grain and mild chromatic noise.** `[community]`
 
-🔑 **In this register a crushed near-black background is period-correct rather than a fault** — which is the
+🔑 **In this register a crushed near-black background is period-correct rather than a fault** — which is the <!-- style-lint: ok (engine fact) -->
 one exception to the general realism advice below, and worth knowing because it is rare to get a dark look
 and the realism advice pointing the same way.
 
@@ -1531,10 +1535,10 @@ collision already flagged in this file: Google's own examples use *"cinematic co
 *"cinematic lighting"*.** Take Google's structure, not its example styles. Our *"a newspaper photograph
 of…"* opener is on the right side of this.
 
-Also restated: **name humble gear rather than studio rigs**, and **avoid Portra 400 and CineStill 800T** in
+Also restated: **name humble gear rather than studio rigs**, and **avoid Portra 400 and CineStill 800T** in <!-- style-lint: ok (engine fact) -->
 favour of Gold 200, Ektachrome or Ilford HP5. ⚠️ **Irrelevant where the shot is digital** — camping's montage
 names a 2008 press DSLR, so there is no stock to swap, and
-[the standing warning against changing stock mid-story](#-kodak-portra-400-may-now-be-a-slop-tell-community-untested)
+[the standing warning against changing stock mid-story](#-kodak-portra-400-may-now-be-a-slop-tell-community-untested) <!-- style-lint: ok (engine fact) -->
 is unaffected.
 
 ### ✅ Engine facts worth having straight `[vendor]`
@@ -1577,7 +1581,7 @@ body — and the resolution now has outside company. ⬜ **Cheap A/B nobody has 
 
 - **"95% consistency, tested across 500+ generations", "IDENTITY LOCK"** — SEO content with no methodology.
 - **"Viewers clock AI in under a second"** — asserted, no study.
-- **"Film grain searches +31%, motion blur +15%"** — no primary source; the named trend pages do not carry
+- **"Film grain searches +31%, motion blur +15%"** — no primary source; the named trend pages do not carry <!-- style-lint: ok (engine fact) -->
   the figures.
 - **Diffusion-specific fixes** (CFG values, VAE, emphasis weights) — Nano Banana Pro exposes none of those
   controls.
@@ -1727,7 +1731,7 @@ practitioner sources reporting exclude-lists working
 **corporate-thriller poster** — glossy stone, mirror floor, smooth skin, no grain — despite the
 Style line naming *ISO 3200* and *coarse digital noise*. The lever that was available and unused is
 the cheapest one in this file: **a human behind the camera**. *"A candid press photograph… taken
-quickly"* is [a different instrument from imperfection keywords](#-kodak-portra-400-may-now-be-a-slop-tell-community-untested),
+quickly"* is [a different instrument from imperfection keywords](#-kodak-portra-400-may-now-be-a-slop-tell-community-untested), <!-- style-lint: ok (engine fact) -->
 and it costs four words.
 
 ### 🚫 Rejected: "remove polite phrases like 'please'" `[community]` `[untested]`
@@ -1979,7 +1983,7 @@ Run for a gritty photoreal night-street still (neon, rain). **New or contradicti
 - **"Reduce CFG / check the VAE" slop fixes** ([zsky](https://zsky.ai/blog/why-ai-images-look-bad), 2026). These are diffusion-only controls, the same as in the sixth pass's list.
 - **"Pro leads on photorealism, NB2 is 3× faster and 75% cheaper"** (plykit and similar resellers). No method is given. These are the same kind of numbers as the fifth pass's "95% of Pro".
 
-**✅ The web still agrees with the repo on:** one named, positioned light; camera body plus focal length plus available light instead of quality words; *photorealistic*, *cinematic*, *8K*, *masterpiece* and adjective stacks as slop triggers; teal-orange, smooth skin and generic bokeh as the named "AI look"; uniform lens blur as a tell; light that is plausible but not physical as the core tell; candid, asymmetric, mid-action framing; film grain and texture; people in the scene rather than an empty street; and short, focused prompts over long, competing ones.
+**✅ The web still agrees with the repo on:** one named, positioned light; camera body plus focal length plus available light instead of quality words; *photorealistic*, *cinematic*, *8K*, *masterpiece* and adjective stacks as slop triggers; teal-orange, smooth skin and generic bokeh as the named "AI look"; uniform lens blur as a tell; light that is plausible but not physical as the core tell; candid, asymmetric, mid-action framing; film grain and texture; people in the scene rather than an empty street; and short, focused prompts over long, competing ones. <!-- style-lint: ok (engine fact) -->
 
 ## Fifteenth pass — 2026-09-30 web delta: slop tells, night sky, hands `[community]` `[physics]`
 
@@ -2223,7 +2227,7 @@ Nano Banana 2, 16:9, no reference, Jack's Flow project `64a6c82d`).
   stand>", gave the men things to do (eating, a phone, leaning into a handle), and named dirt
   (patched tarmac, a drain, a cup). All eight came back off centre, mid-action and dirty. Several
   things changed at once, so which one did the work is not known.
-- `[observed, n=2]` **"The picture is black, white and one red" returned a black-and-white
+- `[observed, n=2]` **"The picture is black, white and one red" returned a black-and-white <!-- style-lint: ok (engine fact) -->
   photograph with red on the named object.** Round 1, which said "the only saturated colour",
   stayed in colour.
 - `[observed, n=8]` **Dropping "middle-aged" made every man about thirty.** Round 1 had the words
@@ -2346,7 +2350,7 @@ three rounds of 4 stills on NB2, 9:16, one tall cross-section building. **First 
   but on objects only.** People stayed modern-comic in both.
 - `[observed, n=4]` **Traits, not show names, get a sitcom look:** "a still from a prime-time adult animated sitcom:
   flat colours with one shadow tone, slightly wobbly hand-drawn black outlines, simple rounded people with big round
-  eyes, small dot pupils and overbites, faint old film grain." Mixing in "printing presses with cheerful 1930s
+  eyes, small dot pupils and overbites, faint old film grain." Mixing in "printing presses with cheerful 1930s <!-- style-lint: ok (engine fact) -->
   cartoon faces" kept the old style on the objects alone (4 of 4).
 - 🔴 `[observed, n=12]` **"A jazz band" in a 1930s scene came back all Black in 12 of 12 takes, playing for a white
   boss; "a mixed jazz band" did not change it (4 of 4).** No minstrel features appeared, but the role pattern holds.
@@ -2376,7 +2380,7 @@ prompt asked for "a thin black ring … and high inside it, over one eye, a smal
 **In 3 of 16 it came back as a red outline**, not a filled shape. Likely cause (inferred): "over one eye" pulls it to
 where a single eye would be on a featureless face, which is the middle. Next test: "a solid, filled red triangle …
 pushed up close to the ring's edge, towards the top corner, well away from the centre". The same round confirmed the
-anti-slop stack on this engine: a humble named camera, a non-Portra stock, one placed light, a foreground occluder,
+photographic anti-slop stack on this engine (Money For Something's photographic look; a drawn or painted story answers the same tells in its own medium): a humble named camera, a non-Portra stock, one placed light, a foreground occluder, <!-- style-lint: ok (engine fact) -->
 mid-action, and wear in the set all rendered as asked, and none of the sixteen came back as a glossy, symmetrical
 studio frame (round 1, without them, came back that way six times out of six). Record:
 `docs/stories/magic-money-tree/characters/host-v2-balaclava.md`.

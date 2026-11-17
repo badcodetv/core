@@ -5,6 +5,11 @@ description: Use to start or make a BadCode SHORT (a 5-20 second piece of social
 
 # New short (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 A short is **a project**, exactly like a story or a music video (Kai, 2026-11-10). It is not filed under a
 "shorts" hierarchy: each short has its **own ID**, its **own Drive folder**, and each machine points that ID
 at whatever folder it likes. Kai and Jack keep their own workflows; the ID is the protocol.
@@ -38,13 +43,20 @@ ID: `short-<slug>` (kebab case, e.g. `short-the-rules`). Ask only what you can't
 4. **Repo folder** `docs/stories/short-<slug>/`. It sits beside the stories on purpose: every scene tool, the
    style lint and provenance already work there unchanged. It holds:
    - `README.md`: the idea in the pitcher's own words, the point, the checks owed, a State table.
-   - `look.md` and `sound.md` (templates in `docs/stories/STYLE.md`): **each short finds its own**; there is no
+   - **`badcode.md`** ([template](../../../docs/stories/badcode-template.md)): the short's whole context. Read first, every time.
+   - `look.md` and `sound.md` (templates in `docs/stories/STYLE.md`), the longer record: **each short finds its own**; there is no
      shorts look or sound. EMPTY until found. A recurring cast (the balaclava gang) is listed under Cast with its
      reference stills; the mask itself is fixed by `docs/brand/README.md`, the rest is free.
    - `scenes/<slug>/scene.json` (`story` = the ID, `media` = this machine's folder, `beats` = the pitch's rough beats)
      and `picks.md` (dated rulings, the pitcher's words kept).
-5. **Commit and push** `folders.json` and the new folder together (the other machine needs the row to read cuts).
-6. **Mark it `BUILDING`** on the list.
+5. **What goes in its context (Jack's rule, 2026-11-17).** Before anything is generated, open the
+   [library](../../../docs/library/README.md) and propose the pieces this story should take in: two to five looks, sounds
+   or tricks, each with one line on why, plus "nothing from the library" as an option. Put it to Jack or Kai as one
+   question (AskUserQuestion, multi-select). Copy only the picked pieces into the story's `badcode.md` under **Library
+   pieces in use** (adapted, never linked as a live rule). Nothing else from the library, another story or a shared doc's
+   examples applies.
+6. **Commit and push** `folders.json` and the new folder together (the other machine needs the row to read cuts).
+7. **Mark it `BUILDING`** on the list.
 
 ## Make it
 

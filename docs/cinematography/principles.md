@@ -20,7 +20,7 @@ Three questions before any shot is designed. A shot that fails one is not design
 
 1. **What is this shot FOR?** Not what it shows — what it does to the viewer that the shot
    before it did not. If the answer is "it looks good", there is no shot yet.
-2. **Is there a visible cost in frame?** When the shot uses monumental grammar — scale,
+2. **Is there a visible cost in frame?** When the shot uses monumental grammar — scale, <!-- style-lint: ok (engine fact) -->
    symmetry, a machine, an institution — something or someone must be visibly paying a price, or
    the grammar reads as celebration. *(principle 23; this is the visual twin of `the-reader.md`'s
    advice: think twice before raising a fear with no beneficiary in sight.)* Applies when a
@@ -89,7 +89,7 @@ a dead screen — not as mood. There is now a perceptual mechanism for this, not
 the visual system computes how dark a thing is relative to the brightest region it can group
 into the same scene (anchoring theory of lightness perception, Gilchrist). Remove the anchor and
 there is nothing to normalise against. **This is the most load-bearing single principle for any
-dark look** (GPOM's, for one). **A** (mechanism) / **P** (craft rule)
+dark look**, if a story has chosen one. **A** (mechanism) / **P** (craft rule)
 
 **12 — Hard versus soft is optical fact, not taste.** A small or distant source gives
 sharp-edged shadow and reads as harsh, exposing, unforgiving. A large or close source gives
@@ -141,7 +141,7 @@ optimising for dramatic dominance or for credibility — they pull in opposite d
 **A (mixed)**
 
 **21 — The overhead is the position of a narrator who already knows how it ends.** It produces
-detachment, irony or dread rather than contempt — which is exactly our narrator's gaze. But an
+detachment, irony or dread rather than contempt. (A story whose narrator knows how it ends may want that; it is a choice, not a default.) But an
 overhead buys omniscience for free and must earn *scale* separately: from above, an empty space
 collapses into geometry and pattern rather than absence. **P** (omniscience) / **A (mixed)** (the
 scale caveat)
@@ -172,17 +172,17 @@ small argument, and depth order is the order its steps are read in. **H**
 
 ---
 
-## 5. Register — the monumental problem
+## 5. Register — the monumental problem (only for a story whose look is monumental) <!-- style-lint: ok (engine fact) -->
 
-**22 — 🔴 The monumental grammar is neutral; the reading is built by what surrounds it.**
+**22 — 🔴 The monumental grammar is neutral; the reading is built by what surrounds it.** <!-- style-lint: ok (engine fact) -->
 Soviet monumentalism, Nazi rally architecture and Deakins' *Blade Runner 2049* interiors are
 functionally identical as grammar. Scale, symmetry and a single hard light say nothing on their
-own about whether the power depicted is good or bad. **"Monumental equals fascist" and
-"monumental is safe because we mean it ironically" are equally false.** **P**
+own about whether the power depicted is good or bad. **"Monumental equals fascist" and <!-- style-lint: ok (engine fact) -->
+"monumental is safe because we mean it ironically" are equally false.** **P** <!-- style-lint: ok (engine fact) -->
 
 **23 — 🔴 The most reliable marker separating indictment from celebration is a visible cost.**
 Across every propaganda case in the sweep — the Nuremberg cathedral of light, *Triumph of the
-Will*, Stalinist monumental photography — none shows exhaustion, wreckage, a body that failed,
+Will*, Stalinist monumental photography — none shows exhaustion, wreckage, a body that failed, <!-- style-lint: ok (engine fact) -->
 or anyone the system is failing. The frame is clean because a cost would break the spell.
 Conversely the counter-tradition (*Metropolis*, *Brazil*) adds cost, agency-asymmetry and a
 visible outside, and never softens the scale. **This is a mandatory pre-publish check on any
@@ -207,8 +207,8 @@ reported awe experiences) is the variant our narrator embodies: awed by its own 
 
 **26 — Scale for a non-human subject must be manufactured in frame.** There is no default sense
 of how big a machine or building is without a known-size reference — a doorway, a stair, a
-vehicle, a figure. One human-scale figure visibly small against architecture is the single most
-load-bearing awe device available to us. **P** (application) / **A** (the size-perception
+vehicle, a figure. If a story wants awe, one human-scale figure visibly small against architecture is the single most
+load-bearing device for it. **P** (application) / **A** (the size-perception
 mechanism)
 
 ---
@@ -217,8 +217,8 @@ mechanism)
 
 | # | The disagreement | Our ruling |
 | --- | --- | --- |
-| **R1** | Is GPOM's near-black monumental look right for our reader? | **🔴 OPEN — a human must rule.** See below. |
-| **R2** | Awe wants a tiny figure against vastness; Andrea Arnold's Academy frame refuses to let a landscape make a person small, because that is what respect looks like. Both are deliberate; they cannot coexist in one shot. | **Pair, don't choose.** Where a story's look is monumental (GPOM's — see its `look.md`), monumental is that story's awe engine and the tight human-scale frame is a deliberate exception for character beats — spent, not defaulted to. Another story's `look.md` may make the human-scale frame its default. |
+| **R1** | Is a story's chosen register right for our reader? | **🔴 OPEN — a human must rule, per story.** See below. |
+| **R2** | Awe wants a tiny figure against vastness; Andrea Arnold's Academy frame refuses to let a landscape make a person small, because that is what respect looks like. Both are deliberate; they cannot coexist in one shot. | **Pair, don't choose, and the story decides which is the default.** One is the default frame and the other is spent deliberately on the beats that need it. Which way round is the story's `look.md`: a story built on awe may default to the vast frame and spend the human-scale one on character beats; another may do the reverse. |
 | **R3** | Continuity grammar (180-degree rule, eyeline match, the triangle) versus our actual process. | **Mostly not our problem.** Those rules govern cutting between multiple angles of one continuous action, which we do not shoot. What survives: consistent light direction, consistent scale, object permanence. |
 | **R4** | Kuleshov — foundational finding or teaching legend? | **The narrow version only.** A hard cut between two images makes the viewer infer a relationship; that much is real and now has fMRI support. The famous "one face reads as three emotions" story failed a controlled replication (Prince & Hensley 1992) and is **myth in its popular form**. |
 | **R5** | Coverage versus a designed shot list. | **Designed, always.** We cannot afford coverage and do not need it. Each shot has a job decided before it is made. |
@@ -230,28 +230,29 @@ mechanism)
 
 ## 🔴 R1 — the open ruling
 
-**The corpus contains material arguing against GPOM's look** (near-black, monumental — treated
-as BadCode's house register until Kai ruled on 2026-10-28 that there is no house look), **and it
-does not resolve itself.** Stated honestly, because a human has to choose:
+**Does a story's chosen register suit our reader?** The corpus does not settle it for any
+register; a human chooses per story, in that story's `look.md`. The evidence that bears on
+every story:
 
 - **Brief 15** documents that the visual grammar closest to our target reader's own vocabulary
-  (`docs/marketing/the-reader.md` — a working-class UK reader) is British social realism:
-  democratic eye-level, available light, handheld, refusing exactly the symmetry, engineered
-  light and scale-dwarfing GPOM's look is built from. The brief's own words: that register is
-  *"close to the visual opposite of this whole tradition on every axis that matters."*
-- **Brief 17** documents that monumental grammar, absent a visible cost, reads as celebration of power
-  to a documented fraction of any audience — including the audiences of directors who built the
+  (`docs/marketing/the-reader.md`, a working-class UK reader) is British social realism:
+  democratic eye-level, available light, handheld, and a refusal of symmetry, engineered light
+  and scale-dwarfing. The brief calls that register *"close to the visual opposite"* of the
+  monumental tradition *"on every axis that matters."* <!-- style-lint: ok (engine fact) -->
+- **Brief 17** documents that monumental grammar, absent a visible cost, reads as celebration of power <!-- style-lint: ok (engine fact) -->
+  to a documented fraction of any audience, including the audiences of directors who built the
   critique on purpose.
 
-**Neither brief proves GPOM's look is wrong. Neither proves social realism is the fix.**
-Nobody has evidence that either register works on this specific reader. What is available now:
+**Neither brief proves any register right or wrong for this reader. Neither proves social
+realism is the fix.** Nobody has evidence that any register works on this specific reader. What
+is available:
 
-1. **A partial reconciliation** — R2 above (pair, don't choose) plus principle 23 made mandatory for GPOM.
-2. **An empirical step nobody has taken** — brief 17's checklist has never been run against an
+1. **A partial reconciliation**: R2 above (pair, don't choose) plus principle 23 as a gate on
+   any shot that uses monumental grammar. <!-- style-lint: ok (engine fact) -->
+2. **An empirical step nobody has taken**: brief 17's checklist has never been run against an
    actual BadCode frame. Its own §7 recommends testing it against three or four shipped panels
    before it becomes doctrine.
 
-Until ruled: GPOM keeps its look, gate 2 (visible cost) applies to every monumental shot where the
-story's `look.md` makes it a gate (GPOM's does), and
-nobody claims the question is settled in any public copy or any canon file. Each other story
-picks its own register in its own `look.md`.
+Until ruled, nobody claims the question is settled in any public copy or canon file. Each story
+picks its own register in its own `look.md`. The one story where this was argued in full is
+GPOM (its `look.md`, "R1 is open", and the text moved there on 2026-11-17).

@@ -1504,8 +1504,8 @@ Noise`. The one that exists has **3 params, not 23**:
 
 | Index | Param | Default | Note |
 | --- | --- | --- | --- |
-| 0 | Amount of Noise | 0 | 🔴 **0–100 as a PERCENTAGE, not 0–1.** Measured: 1 renders as invisible, 4 is a usable film grain at 1080p |
-| 1 | Noise Type | `true` | `false` = monochrome, which is what film grain wants |
+| 0 | Amount of Noise | 0 | 🔴 **0–100 as a PERCENTAGE, not 0–1.** Measured: 1 renders as invisible, 4 is a usable film grain at 1080p | <!-- style-lint: ok (engine fact) -->
+| 1 | Noise Type | `true` | `false` = monochrome, which is what film grain wants | <!-- style-lint: ok (engine fact) -->
 | 2 | Clipping | `true` | leave it |
 
 🔴 **The percentage scale is worth knowing before you guess.** A normalised guess of `1` looks
@@ -1613,7 +1613,7 @@ have been ~250 round trips.
 
 While the stale Motion Crop above was still live *alongside* the new Linear Wipes and the appended
 Camping-grade Lumetri, `premiere_export_frame` rendered the cut-away region **solid white** on a
-near-black clip on the bottom video track (V1, nothing beneath it). Zeroing the Motion Crop and
+near-black clip on the bottom video track (V1, nothing beneath it). Zeroing the Motion Crop and <!-- style-lint: ok (engine fact) -->
 leaving the Linear Wipes to do the work alone made the same region render **black**, as expected.
 
 ⚠️ **Unverified which component caused it.** The original timeline — Motion Crop keyframed, no
@@ -1629,7 +1629,7 @@ there. Check the pixel before diagnosing: the IHDR byte at offset 25 is the colo
 IDAT to read the alpha. ⚠️ This doesn't explain the 2026-09-05 case where zeroing Motion Crop turned it
 black. That case is still unisolated.
 
-🔴 **Why it matters more here than elsewhere:** on a film that is near-black from scene 10 onward,
+🔴 **Why it matters more here than elsewhere:** on a film that is near-black from scene 10 onward, <!-- style-lint: ok (engine fact) -->
 a transparent region that resolves to white is not a subtle artefact — it is a full-frame flash.
 **Export a frame and look whenever you introduce transparency**, rather than trusting that "nothing
 beneath the bottom track" means black.

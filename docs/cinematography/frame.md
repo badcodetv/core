@@ -10,8 +10,8 @@ most of our work lives, because most of our shots are stills.
 **Foreground, midground, background.** A subject on one plane against a backdrop reads as flat
 no matter how sharp, detailed or well-exposed it is. Resolution never fixes flatness; layers do.
 
-For our subject matter, the foreground layer is usually free: a doorway edge, a cable run, a
-handrail, a stack, a pipe, haze. It does not need to be interesting — it needs to be *nearer*.
+The foreground layer is usually free: whatever sits nearer the lens in that story's world (a doorway edge,
+a railing, a shoulder, a branch). It does not need to be interesting — it needs to be *nearer*.
 
 **Atmospheric perspective is real optics, not a look.** Dust and haze in the air scatter light
 and soften contrast with distance, and it is one of the primary cues human vision uses to judge
@@ -55,8 +55,8 @@ self-contained. A film frame is *centrifugal* — it implies the world continuin
 everything is what makes a frame read as a diorama. **A (mixed)**
 
 **Symmetry has no fixed meaning.** Kubrick's one-point perspective produces dread; Wes Anderson's
-produces safety and comedy. If a shot needs symmetry to feel monumental, the monumentality is
-coming from the darkness, the light and the scale contrast — not from the symmetry.
+produces safety and comedy. If a symmetrical shot feels monumental, the monumentality is <!-- style-lint: ok (engine fact) -->
+coming from the light, the scale contrast and the context, not from the symmetry. <!-- style-lint: ok (craft term) -->
 
 ## 4. Staging without actors
 
@@ -80,8 +80,11 @@ exists.
 
 ## 5. Light
 
-**Name the source, then claim the shadow.** "Dark" is not an instruction. One hard source from a
-named place, plus an explicit statement of where the falloff goes, is.
+**Name the source, then say where the shadow goes.** "Dark", "moody" or "nice light" is not an
+instruction. A light with a place in the world, plus a statement of where it falls off, is. How
+many sources and how hard is the story's look, not a default: one hard window, a flat overcast
+sky, a room full of practicals, a soft studio key, or no modelled light at all for a flat graphic
+style are all answers; the lever table below says what each reads as.
 
 | Lever | Reads as |
 | --- | --- |
@@ -100,7 +103,7 @@ let one side go dark.
 
 **🔴 In a dark frame, one bright anchor inside the darkness, always.** The visual system computes how dark
 something is relative to the brightest region it can group into the same scene. With no anchor
-there is nothing to normalise against, and near-black reads as a broken file rather than as
+there is nothing to normalise against, and near-black reads as a broken file rather than as <!-- style-lint: ok (perception fact) -->
 chosen darkness. A rim, a practical, a screen, an eye-light. *(principle 11 — the most
 load-bearing rule for any dark look; GPOM's `look.md` makes it a rule)*
 
@@ -151,7 +154,7 @@ direct-address trust study found eye-level was trusted *more* than either low or
 another found it running backwards. Decide whether you are optimising for dramatic dominance or
 for credibility — they pull opposite ways.
 
-**The overhead is our narrator's natural position** — omniscience, irony, dread, not contempt.
+**The overhead reads as a narrator who knows the ending** — omniscience, irony, dread, not contempt. One option among many, not a default.
 But it buys omniscience free and must earn scale separately: from above, an empty space collapses
 into pattern rather than absence.
 

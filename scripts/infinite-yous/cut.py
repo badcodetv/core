@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# style-lint: story=short-infinite-yous (this script cuts one short only; its voices are that short's)
 """Infinite Yous (short #68): rough cut r<N> to the locked track, outside Premiere (scene-timeline stage 4).
 
 Writes <media>/cut/r<N>/preview.mp4 (720x1280, 24 fps, the track as the only sound) and edl.json in the

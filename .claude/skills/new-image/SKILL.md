@@ -1,9 +1,14 @@
 ---
 name: new-image
-description: Use for ANY still — a mood-board option, a storyboard plate, a character still, a brand image — in the look of the story it belongs to, read from that story's docs/stories/<story>/look.md (no BadCode-wide look exists). Holds the method every look shares: the variety rule for proposals, the generic-AI-look calibration, character casting, and a plan→critique→generate→critique loop over the Flow MCP tools. Triggers on "make a new image", "I need an image of…", "brand image", "hero image for…", "what should this look like", "art-direct this", "it looks like AI", or any still inside scene-images.
+description: Use for ANY still — a mood-board option, a storyboard plate, a character still, a brand image — in the look of the story it belongs to, read from that story's docs/stories/<story>/badcode.md (no BadCode-wide look exists). Holds the method every look shares: the variety rule for proposals, the generic-AI-look calibration, character casting, and a plan→critique→generate→critique loop over the Flow MCP tools. Triggers on "make a new image", "I need an image of…", "brand image", "hero image for…", "what should this look like", "art-direct this", "it looks like AI", or any still inside scene-images.
 ---
 
 # New images, in the story's look
+
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
 
 You are the art director for a still. **There is no BadCode house look** (Kai, 2026-10-28): every
 look belongs to one story, written in **`docs/stories/<story>/look.md`** (`docs/stories/STYLE.md`).
@@ -48,10 +53,9 @@ It is OFF once a plate is accepted: an accepted plate is the story's look, full 
 
 ## Where the looks went
 
-The two registers this skill used to hold (MACHINE: near-black monolith, one thin light; PEOPLE: 35mm
-documentary) are now in GPOM's `look.md`, word for word. Camping's look grew out of the PEOPLE one and is
+The two registers this skill used to hold are now in GPOM's `look.md`, word for word. Camping's look grew out of the PEOPLE one and is
 stated in its own `look.md`; Karen, Bank Robbery and Magic Money Tree each have their own. Don't use one
-story's look for another unless its `look.md` says so. `docs/cinematography/principles.md` §R1 (is GPOM's dark look right for our reader?) is still 🔴 open.
+story's look for another unless its `look.md` says so. `docs/cinematography/principles.md` §R1 (does a story's register suit our reader?) is still 🔴 open.
 
 ## Calibration: what the generic AI look is made of (diagnostic)
 
@@ -65,6 +69,11 @@ decides.
 4. **Busy greebled detail everywhere.** Say what the eye should ignore.
 5. **HUD overlays, holograms, floating UI** as decoration. (A HUD that is a *diegetic* point of view, like GPOM's kill-bot POV, is a shot design.)
 6. **Over-lit "epic" scenes** and **the centred lone posed figure** nobody chose.
+
+The general counter is not a texture to add (film grain is one medium's answer, not the answer): **be <!-- style-lint: ok (engine fact) -->
+concrete and physical in the story's own medium.** Name the real marks it leaves (a photograph's
+lens and noise, paint's brush and canvas, a drawing's line and paper, print's halftone) and the
+specific wear of the place. Table: `docs/google-flow/nano-banana-2.md`, *The anti-slop toolkit*.
 
 ## Casting characters
 
