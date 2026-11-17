@@ -55,6 +55,7 @@ Cheap first looks: many options per beat, not finished frames. **Stills cost no 
   `scripts/variations/sealed-writer.sh <round-dir> <brief files...> -- <output.json>` (an empty temp folder,
   CLAUDE.md and auto memory switched off; tested blank), or the `clean-room-writer` agent
   (`.claude/agents/clean-room-writer.md`, `omitClaudeMd: true`, loads after a session restart).
+- **Start each round's shared brief from `scripts/variations/templates/brief-common.md`** (facts first, the look as one line, ~200-word prompts).
 - **Brief from raw inputs only.** The shared brief is the human's words, the geometry map and ONE look line; never a
   paragraph of look wording copied from earlier prompts or briefs, and never earlier prompts as "evidence".
 

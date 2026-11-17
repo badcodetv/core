@@ -244,6 +244,9 @@ def summarise(hits):
     return [f"{n:4d}  {k}" for k, n in c.most_common()]
 
 
+MEMORY_MAX_LINES = 80
+
+
 def main():
     summary = "--summary" in sys.argv
     fails = scan(ROOT / "CLAUDE.md", numbered(ROOT / "CLAUDE.md"), "🔴")
@@ -259,6 +262,13 @@ def main():
                 warns += scan(f, allowed_lines(f, numbered(f)), "🟡", WIDE, negation_ok=True)
     else:
         print(f"(no memory index at {mem} — skipped)")
+    # Size alarm (Jack, 2026-11-17): the index loads into every session and every non-sealed subagent. It grew to
+    # 125 lines of story status and leaked into "clean" prompts. Story status belongs in story-status-index.md.
+    if (mem / "MEMORY.md").exists():
+        n = len((mem / "MEMORY.md").read_text().splitlines())
+        if n > MEMORY_MAX_LINES:
+            print(f"🟡 MEMORY.md is {n} lines (alarm at {MEMORY_MAX_LINES}): move story/short status lines into "
+                  "story-status-index.md and keep only standing rules in the index.")
     hard = len(fails)
     wide_fails = [] if "--hard-only" in sys.argv else wide()
 
