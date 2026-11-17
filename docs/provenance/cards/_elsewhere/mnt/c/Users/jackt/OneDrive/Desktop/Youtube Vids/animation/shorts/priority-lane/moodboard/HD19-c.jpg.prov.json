@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD19-c.jpg",
+ "made": "2026-11-17T14:59:40.822Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Through the windscreen, the junction from the first reference image seen from the ambulance at its stop line: the left half of the main road stretches ahead to the yellow box. The police line stands farther off, near the edge of the box: three white police motorcycles and officers in yellow hi-vis spread across our side of the road, one officer turned to us with a gloved hand lifted. The near half of the box is open wet tarmac. In its far half the convoy moves side-on from left to right: two black saloons as in the first reference image, a white police motorcycle following behind them on the left, headlights pointing right, tail lights red to the left. The cross road beyond on the right is empty. On the right of the raised central island with its tall lamp columns, the red double-decker and cars wait at the far stop line, headlights toward us. Dark glass offices left, pale stone offices right, paired orange lamps shrinking into fog. Wipers rest at an angle on the left side of the glass, rain streaking. The cab built like the third reference image: windscreen top and dashboard, the left seat edge. The driver dressed like the crew in the second reference image, on the right, dark green uniform, blue gloves on the wheel. No readable text or plates. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/r19/CD18-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/r19/CD18-a.jpg",
+   "/home/jackt/.cache/pl-refs/r19/LS18-b.jpg",
+   "/home/jackt/.cache/pl-refs/r19/HD18-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ef67b6d5-623e-42b2-acea-23bc2c98170b"
+}

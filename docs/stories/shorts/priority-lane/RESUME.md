@@ -1,5 +1,7 @@
 # Priority Lane: resume here
 
+**2026-11-17 (latest): picks LS18-b, PB18-a, CD18-a, BM18-a, FL18-a; round 19 = the held shot made from those picks (HD19-a/b/c, all pass; HD19-c closest), awaiting Jack's pick. Next: animate the six picks.**
+
 **2026-11-17 (latest): ROUND 18, every still rebuilt from Unsplash photos** (Jack: "use unsplash to recreate every still … use the unsplash stuff as a template"). Real photos chosen per beat (refs.json, `reference/unsplash/`), one sealed writer (`clean-room-writer`), prompts in `cleanroom/r18/prompts.json`. Made: LS18-a/b, PB18-a/b, CD18-a/b, HD18-a/b, BM18-a/b, FL18-a/b (12 of 12, none a reference copy). Checked and on the board: LS18, PB18, HD18 pass; CD18-a dusk; CD18-b fail (convoy turns toward camera); BM18 fail (face drifts to the real man; keep BM9-b); FL18 flat trace unclear. Picks before this round: BM9-b, PB16-d, LS5-b, FL4-a; junction pair still open (CD17-b/c/d, HD17-a/b).
 
 **2026-11-17 (latest): REOPENED, round 5 from Kai's meeting notes** (`feedback/meeting-2026-11-17/notes.md`). Kai: the jeopardy now works; the opening is fine. Changes:

@@ -409,5 +409,24 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 18: every still rebuilt on Unsplash templates, checked: LS/PB/HD pass, CD18-a dusk, CD18-b fail (convoy turns toward camera), BM18 fail (face drifts to the real man), FL18 trace flatness unclear",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T14:51:30+00:00",
+  "stage": "moodboard",
+  "round": 18,
+  "what": "Round 18 votes",
+  "decided": [
+   "Picks: LS18-b, PB18-a, CD18-a, BM18-a, FL18-a. Jack: 'please match the images consistancy wise, the view outside the ambulance from the drivers perspective needs to be of the picks'"
+  ],
+  "feedback": "feedback/moodboard-r18",
+  "feedback_docs": 19
+ },
+ {
+  "at": "2026-11-17T15:03:50+00:00",
+  "stage": "moodboard",
+  "round": 19,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 19: HD19-a/b/c held shot built from the picks (CD18-a junction, LS18-b crew); all pass",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]
