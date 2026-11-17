@@ -266,7 +266,18 @@
         "state": "in sync",
         "why": "all 93 shots match plan-H2 to the frame (start, end, in, file), no gaps; frames at 1, 86, 183 s checked against preview.mp4"
       },
-      "premiere_ahead": "none: A1 Volume Level 0.2138 (+1.6 dB, as on Balaclava Gang 10, for -14.4 LUFS on YouTube) is set as the last build step"
+      "premiere_ahead": "none: A1 Volume Level 0.2138 (+1.6 dB, as on Balaclava Gang 10, for -14.4 LUFS on YouTube) is set as the last build step",
+      "renders": {
+        "youtube": "/mnt/d/badcode-videos/bank-robbery-music/renders/Balaclava Gang 11 - YouTube 1080p.mp4 (Premiere 'YouTube 1080p HD' preset, 17.1 Mbps, -14.4 LUFS, true peak -1.6; delivery-qc: untagged full range as on cut10, 0.16% of pixels outside 16-235)"
+      },
+      "youtube": {
+        "id": "LV4twP4qyiU",
+        "url": "https://youtu.be/LV4twP4qyiU",
+        "privacy": "private",
+        "uploaded": "2026-11-17",
+        "words": "title, description, tags and category copied from XinO1Kze_5A (the cut10 upload)",
+        "thumbnail": "/mnt/d/badcode-videos/youtube/thumbnails/LV4twP4qyiU-bank-robbery-86s.jpg (her on stage at the mic, 86 s)"
+      }
     }
   },
   "cut": {
