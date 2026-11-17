@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 10: the four driver's-window bus-stop posters remade with YOUR minister, BM9-b, so it's the same man in the car and on the poster. Same prompts as round 9; only the face changed. Pick one.",
+ "moodboard_intro": "Round 11: the posters again with your minister BM9-b as the reference. New clean-room prompts that never name anyone and tell the engine to keep his face identical to the reference. Still out of the driver's window, the ambulance driving straight on. PS11-a failed twice (Flow handed back only the reference).",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -188,7 +188,7 @@
    "C. The minister (picked round 9)"
   ]
  ],
- "board_round": 10,
+ "board_round": 11,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"
