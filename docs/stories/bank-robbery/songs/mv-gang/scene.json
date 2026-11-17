@@ -113,7 +113,7 @@
     "duration": 6
   },
   "premiere": {
-    "current": "cut10",
+    "current": "cut11",
     "cut1": {
       "sequence": "Balaclava Gang 1",
       "bin": "Balaclava Gang clips",
@@ -250,10 +250,27 @@
         "master": "/mnt/d/badcode-videos/bank-robbery-music/renders/Balaclava Gang 10 master.mp4 (720p match source, before the gain)",
         "youtube": "/mnt/d/badcode-videos/bank-robbery-music/renders/Balaclava Gang 10 - YouTube 1080p.mp4 (Premiere 'YouTube 1080p HD' preset, 17 Mbps, -14.4 LUFS; delivery-qc: untagged full range, 0.14% of pixels outside 16-235)"
       }
+    },
+    "cut11": {
+      "sequence": "Balaclava Gang 11",
+      "guid": "83ca73c2-e044-4a47-a26d-5da83065f536",
+      "bin": "Balaclava Gang 11",
+      "built": "2026-11-17",
+      "project": "/mnt/d/badcode-videos/bank-robbery-music/bank robbery_1.prproj",
+      "edl": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10H2/premiere/edl.json",
+      "what": "FINAL CUT 10H2 (Kai: 'call this a final cut'): cut 10B5's timing with her (Canary) in 27 shots / 33 slots; 93 shots on V1, A1 = the version-cut10H2.wav cut to 187.0 s with the 0.12 s fade",
+      "how": "cleanroom/r10/cuts/premiere-edl.py H2 0.12 -> scripts/scene/premiere-plan.py <edl> <plan> --seq 'Balaclava Gang 11' -> import, create_sequence from w-k19m, eval plan.place.js -> A1 Volume Level 0.2138",
+      "page": "https://claude.ai/artifact/63z6GJMxGiyKyoEaEPMqsp",
+      "check": {
+        "at": "2026-11-17",
+        "state": "in sync",
+        "why": "all 93 shots match plan-H2 to the frame (start, end, in, file), no gaps; frames at 1, 86, 183 s checked against preview.mp4"
+      },
+      "premiere_ahead": "none: A1 Volume Level 0.2138 (+1.6 dB, as on Balaclava Gang 10, for -14.4 LUFS on YouTube) is set as the last build step"
     }
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/edl.json",
-    "preview": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/preview.mp4"
+    "edl": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10H2/edl.json",
+    "preview": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10H2/preview.mp4"
   }
 }

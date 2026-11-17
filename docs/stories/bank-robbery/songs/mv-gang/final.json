@@ -2,15 +2,15 @@
  "schema": "badcode.final/1",
  "story": "bank-robbery",
  "scene": "mv-gang",
- "sequence": "Balaclava Gang 10",
- "frozen": "2026-11-12T08:36:28+00:00",
- "note": "Kai 2026-11-12: the bank robbery song is basically done and signed off (cut 10B5, Premiere sequence Balaclava Gang 10)",
- "edl": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/edl.json",
- "preview": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10B5/preview.mp4",
+ "sequence": "Balaclava Gang 10H2",
+ "frozen": "2026-11-17T19:29:30+00:00",
+ "note": "Claudius brilliant… call this a final cut (Kai, 2026-11-17): cut 10H2, her in 27 shots",
+ "edl": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10H2/edl.json",
+ "preview": "/mnt/d/badcode-videos/bank-robbery-music/gang/cut10H2/preview.mp4",
  "total": 187.0,
  "boards": {
   "moodboard": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
-  "timeline": "https://claude.ai/artifact/LPzd9dsxLXsfa4HXb914Ys"
+  "timeline": "https://claude.ai/artifact/63z6GJMxGiyKyoEaEPMqsp"
  },
  "words": {},
  "shots": [
@@ -19,10 +19,39 @@
    "dur": 2.75,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k19m-a-k19r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k19m-w-k19m.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k19m-a-k19r5-b.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k19m-w-k19m.mp4",
+     "made": "2026-11-17T18:44:55+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "High on the steel beam, the seven sit in a row, the small woman in the canary-yellow coat in the middle with space either side of her. On each beat she swings her crossed ankles and jabs a gloved finger at the lens, head tilted, while the man in the pinstripe suit hands his sandwich with a banknote poking out to the man in the cream suit, who gives it a slow, approving look. The others sit calmly, legs swinging gently over the drop. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Locked-off camera, framing holds, all seven stay seated, masks and suits unchanged. SFX: wind at height, distant riveting, far-off city hum.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k19m.jpg",
+     "why": "her in k19m: Kai's fix pick (r6/k19m-a.jpg, feedback/her-shots-r2), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k19m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-k19m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:43:30.818Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k19m.jpg",
      "missing": true
     }
    ]
@@ -32,10 +61,10 @@
    "dur": 2.5833333333333335,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -45,10 +74,10 @@
    "dur": 2.625,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -58,10 +87,10 @@
    "dur": 1.25,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -71,10 +100,10 @@
    "dur": 1.2916666666666667,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -84,10 +113,39 @@
    "dur": 2.5833333333333335,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a01m-a-a01r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-a01m-w-a01m.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a01m-a-a01r5-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-a01m-w-a01m.mp4",
+     "made": "2026-11-17T18:44:42+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. The seven masked figures walk slowly toward the camera in step, an unhurried stride, guns resting upright on their shoulders, the small woman in the canary-yellow coat half a step ahead in the middle, her gun pointing at the sky like theirs. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Their heads nod gently with each step. Long shadows slide forward over the cobbles. Every parked car stays parked and unchanged; the street stays empty behind them. Masks, gloves and clothes stay exactly as they are. SFX: shoes on cobbles in a steady rhythm. Ambient noise: a quiet early-morning street.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-a01m.jpg",
+     "why": "her in a01m: Kai's fix pick (r6/a01m-a.jpg, feedback/her-shots-r2), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-a01m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-a01m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:41:27.505Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-a01m.jpg",
      "missing": true
     }
    ]
@@ -97,10 +155,10 @@
    "dur": 1.25,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -110,10 +168,39 @@
    "dur": 1.3333333333333333,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a02m-a-a02r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-a02m-w-a02m.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a02m-a-a02r5-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-a02m-w-a02m.mp4",
+     "made": "2026-11-17T18:44:55+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. The small woman in the canary-yellow coat, in front, takes two firm swaggering steps toward the camera, coat swinging. The gang behind her follows at a walk, spread out, guns held straight up at the ceiling. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. The glass fragments in the air drift down and settle on the marble. The bystanders keep crouching and shielding themselves. Dust turns slowly in the sunlight. Masks stay exactly as they are. SFX: tinkling glass landing, heavy footsteps. Ambient noise: a large echoing hall.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-a02m.jpg",
+     "why": "her in a02m: Kai's fix pick (r6/a02m-a.jpg, feedback/her-shots-r2), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-a02m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-a02m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:41:37.761Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-a02m.jpg",
      "missing": true
     }
    ]
@@ -123,10 +210,10 @@
    "dur": 1.2916666666666667,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -136,10 +223,10 @@
    "dur": 1.2916666666666667,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -149,10 +236,10 @@
    "dur": 1.2916666666666667,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -162,10 +249,39 @@
    "dur": 1.2916666666666667,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k04m-w-k04m.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k04m-w-k04m.mp4",
+     "made": "2026-11-17T18:31:57+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "From the first frame the seven keep walking straight at the lens in their line, one stride per beat, open overcoats flaring behind them, the small woman in the canary-yellow coat in the middle, hands in her coat pockets, coat swinging. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. The grey-masked man tugs his cuff straight once; the man on the far right glances down at his pocket watch, then snaps it shut. Nobody turns his head. The marquee bulbs keep chasing; rain glints on the cobbles. Long-lens compression, so they grow only slightly larger. Locked-off camera, framing holds; masks, clothes and gloves unchanged. SFX: heavy footsteps on wet stone, light rain, a faint electric hum. No speech, no music.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k04m.jpg",
+     "why": "her (the gang's leader) in k04m: Kai's pick r5 k04m-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k04m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-k04m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:26:15.378Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k04m.jpg",
      "missing": true
     }
    ]
@@ -175,10 +291,39 @@
    "dur": 5.166666666666667,
    "beat": "verse1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q01-b-q01r7-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q01-w-q01.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q01-b-q01r7-b.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q01-w-q01.mp4",
+     "made": "2026-11-17T18:31:57+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. From the first half-second the small woman in the canary-yellow coat performs to the lens, one boot staying up on the ledge: on the first beat her lower glove chops down flat, edge first; on the next she leans further over her knee toward the lens; then the chop again, harder; then she tugs her coat collar with the other glove, chin lifting in mock pride; then a slow, smug head nod on the downbeat, and she repeats the chop. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Her mask and coat stay exactly as they are. The man behind keeps to his business, back turned. SFX: glove thumps, cloth rustle, pigeons cooing, distant city.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q01.jpg",
+     "why": "her (the gang's leader) in q01: Kai's pick r5 q01-b (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q01.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-q01",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:27:10.053Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q01.jpg",
      "missing": true
     }
    ]
@@ -188,10 +333,10 @@
    "dur": 1.2916666666666667,
    "beat": "verse1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -201,25 +346,25 @@
    "dur": 1.25,
    "beat": "verse1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h06-b-h06r10-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h06-w-h06.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h06-b-h06r10-b.mp4",
-     "made": "2026-11-11T18:19:14+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h06-w-h06.mp4",
+     "made": "2026-11-17T18:31:57+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera, framing holds. From the first half-second all six bounce together on the beat, knees flexing. On the first beat they snap gloved right hands up from the low chop and chop down again, SILVER now on time. Next beat CRIMSON leans into the lens and jabs a finger at it while PLUM and MARINE swing open palms toward us. Then RUST and SILVER pump fists at the lens and BOTTLE rocks his free hand, the lunch pail kept low. They keep trading moves, leaning in and out. Six men throughout; masks, triangles, gloves, suits and city unchanged. SFX: boot stamps on planks, cloth, wind, no voices.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h06r10-b.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw4",
+     "prompt": "Locked-off camera, framing holds. From the first half-second all seven bounce together on the beat, knees flexing. On the first beat the small woman in the canary-yellow coat, in the middle, jabs her finger at the lens while the men snap gloved right hands up from the low chop and chop down again. Next beat PLUM and MARINE swing open palms toward us. Then RUST and SILVER pump fists at the lens and BOTTLE rocks his free hand, the lunch pail kept low, while she jabs again and shrugs. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. They keep trading moves in their places. Seven figures throughout; masks, triangles, gloves, clothes and city unchanged. SFX: boot stamps on planks, cloth, wind, no voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h06.jpg",
+     "why": "her (the gang's leader) in h06: Kai's pick r5 h06-b (feedback/her-shots-r1), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h06r10-b.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h06.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h06-b",
+      "key": "w-h06",
       "frame": 0,
       "option": null
      },
@@ -229,11 +374,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T17:51:25.215Z"
+      "at": "2026-11-17T18:24:28.894Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h06r10-b.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h06.jpg",
      "missing": true
     }
    ]
@@ -243,10 +388,10 @@
    "dur": 2.625,
    "beat": "verse1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -256,25 +401,25 @@
    "dur": 5.083333333333333,
    "beat": "verse1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h01-b-h01r10-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h01-w-h01.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h01-b-h01r10-b.mp4",
-     "made": "2026-11-11T18:32:49+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h01-w-h01.mp4",
+     "made": "2026-11-17T18:28:37+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera, framing holds. The six masked men perform at the lens from the first frame and never stop, all bouncing at the knees together on every beat. First beat: CRIMSON jabs his finger at the lens twice. Next: PLUM and BOTTLE chop gloved palms down in unison. Next: MARINE and RUST lean in over Crimson's shoulders, fists pumping. Next: SILVER spreads both arms wide, palms down. Then all six chop down together and Crimson jabs again. Masks, suits, gloves and the hat stay unchanged; the customers keep their hands up. SFX: stamping shoes on marble, cloth swishing, a quiet lobby echo.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h01r10-b.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw1",
+     "prompt": "Locked-off camera, framing holds. The seven masked figures perform at the lens from the first frame and never stop, all bouncing at the knees together on every beat. First beat: the small woman in the canary-yellow coat, in the middle, jabs her finger at the lens twice. Next: PLUM and BOTTLE chop gloved palms down in unison. Next: MARINE and RUST pump their fists either side of her. Next: SILVER spreads both arms wide, palms down. Then all seven chop down together and she jabs again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Everyone stays in their place. Masks, clothes, gloves and hats stay unchanged; the customers keep their hands up. SFX: stamping shoes on marble, cloth swishing, a quiet lobby echo.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h01.jpg",
+     "why": "her (the gang's leader) in h01: Kai's pick r5 h01-b (feedback/her-shots-r1), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h01r10-b.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h01.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h01-b",
+      "key": "w-h01",
       "frame": 0,
       "option": null
      },
@@ -284,11 +429,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T18:19:53.941Z"
+      "at": "2026-11-17T18:23:45.980Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h01r10-b.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h01.jpg",
      "missing": true
     }
    ]
@@ -298,10 +443,10 @@
    "dur": 1.3333333333333333,
    "beat": "verse1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -311,10 +456,10 @@
    "dur": 1.2916666666666667,
    "beat": "verse1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -324,90 +469,25 @@
    "dur": 2.5833333333333335,
    "beat": "verse1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 41.458333333333336,
-   "dur": 5.166666666666667,
-   "beat": "verse2",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k01m-a-k01r5-a.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k01m-a-k01r5-a.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 46.625,
-   "dur": 5.166666666666667,
-   "beat": "verse2",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 51.791666666666664,
-   "dur": 1.2916666666666667,
-   "beat": "verse2",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 53.083333333333336,
-   "dur": 2.5833333333333335,
-   "beat": "verse2",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 55.666666666666664,
-   "dur": 3.875,
-   "beat": "verse2",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h02-a-h02r10-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-c03g-w-c03g.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h02-a-h02r10-a.mp4",
-     "made": "2026-11-11T18:19:14+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-c03g-w-c03g.mp4",
+     "made": "2026-11-17T18:43:45+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera, framing holds. On the first beat all six chop their outstretched arms down hard and drop into a knee bounce together. On the next, RUST, nearest, jabs a finger straight at the lens; PLUM and BOTTLE lean in behind him, palms rocking side to side. CRIMSON nods deep on every downbeat. MARINE swings his arm up late and points; SILVER shrugs, palms up, then chops again. They never stop: a new move every beat, bouncing in their places. Masks, gloves and suits stay unchanged; dust drifts, the parked cars stay put. SFX: shoes scuffing dry crust, cloth swish, gloved claps, wind. No voices.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h02r10-a.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw2",
+     "prompt": "Locked-off camera, no camera movement. The seven round the iron press perform together like a stadium act in a cellar, the small woman in the canary-yellow coat in front in the middle. On the first beat all seven punch their fists up at the low ceiling in unison. On the next they bounce at the knees, shoulders shrugging, heads nodding hard. Then she slams both gloves flat on top of the press while the men point down at it with both hands, mock-outraged. Then all seven throw both arms up, palms raised, and pump them on every beat. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Nobody leaves their place. Stamps and cloth rustle.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
+     "why": "her in c03g: Kai's fix pick (r6/c03g-a.jpg, feedback/her-shots-r2), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h02r10-a.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h02-a",
+      "key": "w-c03g",
       "frame": 0,
       "option": null
      },
@@ -417,11 +497,163 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T18:18:23.589Z"
+      "at": "2026-11-17T18:41:45.669Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h02r10-a.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 41.458333333333336,
+   "dur": 5.166666666666667,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k01m-w-k01m.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k01m-w-k01m.mp4",
+     "made": "2026-11-17T18:44:42+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "From the first frame the seven keep walking down the steps toward the camera at one steady, unhurried pace, one step per beat, the small woman in the canary-yellow coat in the middle, coat flaring, three men either side. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Nobody looks back. Behind them the orange fireball keeps rolling slowly upward and fades to smoke. A few blank paper notes flutter down and settle on the steps. Locked-off camera, framing holds; masks, clothes and gloves stay exactly as they are. SFX: a deep low rumble, crackling fire, footsteps on stone. No speech, no music.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k01m.jpg",
+     "why": "her in k01m: Kai's fix pick (r6/k01m-a.jpg, feedback/her-shots-r2), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k01m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-k01m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:43:23.390Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k01m.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 46.625,
+   "dur": 5.166666666666667,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q04-w-q04.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q04-w-q04.mp4",
+     "made": "2026-11-17T18:28:37+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. From the first half-second the small woman in the canary-yellow coat raps with her whole body, knees bouncing on the beat, feet planted on the step. On the first beat her raised finger jabs up at the racing paper twice; on the next her other glove rubs finger and thumb together at the lens, the money sign; then both arms snap wide, palms down; then a big sarcastic shrug, palms up; then the finger jabs up again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Hands stay below and beside her masked face. The pressman keeps reading, bored. Mask, coat and gloves unchanged. SFX: rotary presses clattering, paper hissing.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+     "why": "her (the gang's leader) in q04: Kai's pick r5 q04-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-q04",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:27:16.956Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 51.791666666666664,
+   "dur": 1.2916666666666667,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b-noaudio.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b-noaudio.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 53.083333333333336,
+   "dur": 2.5833333333333335,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a-noaudio.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a-noaudio.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 55.666666666666664,
+   "dur": 3.875,
+   "beat": "verse2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h02-w-h02.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h02-w-h02.mp4",
+     "made": "2026-11-17T18:32:32+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. On the first beat all seven chop their outstretched arms down hard and drop into a knee bounce together. On the next, the small woman in the canary-yellow coat, in the middle of the wedge, jabs a finger straight at the lens; the men either side lean toward her, palms rocking side to side. CRIMSON nods deep on every downbeat. MARINE swings his arm up late and points; SILVER shrugs, palms up, then chops again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. They never stop: a new move every beat, bouncing in their places. Masks, gloves and clothes stay unchanged; dust drifts, the parked cars stay put. SFX: shoes scuffing dry crust, cloth swish, gloved claps, wind. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h02.jpg",
+     "why": "her (the gang's leader) in h02: Kai's pick r5 h02-b (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h02.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-h02",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:24:10.849Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h02.jpg",
      "missing": true
     }
    ]
@@ -431,10 +663,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -470,10 +702,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -496,10 +728,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -509,10 +741,10 @@
    "dur": 1.25,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -522,10 +754,39 @@
    "dur": 1.3333333333333333,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-c03g-w-c03g.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-c03g-w-c03g.mp4",
+     "made": "2026-11-17T18:43:45+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, no camera movement. The seven round the iron press perform together like a stadium act in a cellar, the small woman in the canary-yellow coat in front in the middle. On the first beat all seven punch their fists up at the low ceiling in unison. On the next they bounce at the knees, shoulders shrugging, heads nodding hard. Then she slams both gloves flat on top of the press while the men point down at it with both hands, mock-outraged. Then all seven throw both arms up, palms raised, and pump them on every beat. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Nobody leaves their place. Stamps and cloth rustle.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
+     "why": "her in c03g: Kai's fix pick (r6/c03g-a.jpg, feedback/her-shots-r2), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-c03g",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:41:45.669Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
      "missing": true
     }
    ]
@@ -535,10 +796,10 @@
    "dur": 1.25,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -574,10 +835,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -600,10 +861,10 @@
    "dur": 1.3333333333333333,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -613,10 +874,10 @@
    "dur": 1.25,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -626,10 +887,39 @@
    "dur": 1.2916666666666667,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q04-w-q04.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q04-w-q04.mp4",
+     "made": "2026-11-17T18:28:37+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. From the first half-second the small woman in the canary-yellow coat raps with her whole body, knees bouncing on the beat, feet planted on the step. On the first beat her raised finger jabs up at the racing paper twice; on the next her other glove rubs finger and thumb together at the lens, the money sign; then both arms snap wide, palms down; then a big sarcastic shrug, palms up; then the finger jabs up again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Hands stay below and beside her masked face. The pressman keeps reading, bored. Mask, coat and gloves unchanged. SFX: rotary presses clattering, paper hissing.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+     "why": "her (the gang's leader) in q04: Kai's pick r5 q04-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-q04",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:27:16.956Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
      "missing": true
     }
    ]
@@ -639,10 +929,10 @@
    "dur": 1.3333333333333333,
    "beat": "chorus1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -652,10 +942,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -665,10 +955,39 @@
    "dur": 2.5416666666666665,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q05-b-q05r7-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q05-w-q05.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q05-b-q05r7-b.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q05-w-q05.mp4",
+     "made": "2026-11-17T18:34:35+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. From the first instant the small woman in the canary-yellow coat raps with the microphone held tight to her masked mouth. On the first beat her free glove snaps shut into a fist; on the next it bursts open again, a magician's flash; then the open hand sweeps slowly across in front of her chest and flings wide again. Knees bounce on every beat, torso dipping towards the lens. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. She keeps the microphone the whole time. The dancers keep kicking; the stagehand stands bored, holding his rope. Mask and gloves stay exactly as they are. SFX: tap of heels, cloth.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q05.jpg",
+     "why": "her (the gang's leader) in q05: Kai's pick r5 q05-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q05.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-q05",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:33:12.905Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q05.jpg",
      "missing": true
     }
    ]
@@ -678,10 +997,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -691,25 +1010,25 @@
    "dur": 2.5833333333333335,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h19-a-h19r10-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h19-w-h19.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h19-a-h19r10-a.mp4",
-     "made": "2026-11-11T18:19:13+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h19-w-h19.mp4",
+     "made": "2026-11-17T18:32:32+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera low at the lens, framing holds. From the first beat PLUM, close in the foreground, jabs his gloved finger at the lens on every beat, his shoulders dipping and his masked head pushing in. Behind him CRIMSON, MARINE, RUST and SILVER pump their hands at the lens together, bouncing at the knees; on the third beat they all chop flat palms down at once, then point again. BOTTLE, at the back, bounces the umbrella up and down on the beat. All stay on their spots in the V. The marquee bulbs keep blazing, rain falls steadily. SFX: shoe stamps on wet cobbles, rain, cloth. No voices.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h19r10-a.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw3",
+     "prompt": "Locked-off camera low at the lens, framing holds. From the first beat the small woman in the canary-yellow coat, in the middle of the gang, jabs her gloved finger at the lens on every beat, shoulders dipping, head pushing in. Either side of her the men pump their hands at the lens together, bouncing at the knees; on the third beat they all chop flat palms down at once, then point again. BOTTLE, at the back, bounces the umbrella up and down on the beat. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. All stay on their spots. The marquee bulbs keep blazing, rain falls steadily. SFX: shoe stamps on wet cobbles, rain, cloth. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h19.jpg",
+     "why": "her (the gang's leader) in h19: Kai's pick r5 h19-b (feedback/her-shots-r1), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h19r10-a.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h19.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h19-a",
+      "key": "w-h19",
       "frame": 0,
       "option": null
      },
@@ -719,11 +1038,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T18:03:51.976Z"
+      "at": "2026-11-17T18:26:02.098Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h19r10-a.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h19.jpg",
      "missing": true
     }
    ]
@@ -733,10 +1052,10 @@
    "dur": 1.2916666666666667,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -746,10 +1065,39 @@
    "dur": 3.875,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d06m-a-d06r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-d06m-w-d06m.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d06m-a-d06r5-b.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-d06m-w-d06m.mp4",
+     "made": "2026-11-17T18:32:32+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, no camera movement. The small woman in the canary-yellow coat leans on the bar and performs straight into the lens from the first instant. First beat: her raised thumb jerks back over her shoulder at the barman, twice, sharp. Next beat: her lower gloved hand chops flat on the bar top, once per beat, like a metronome. Next: both palms open wide in an exaggerated shrug, head tilted. Then she counts off three gloved fingers close to the lens, head nodding on each. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Behind her the barman calmly keeps pouring from the tin jug into the bottle. Sound: palm thumps on wood. No speech.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-d06m.jpg",
+     "why": "her (the gang's leader) in d06m: Kai's pick r5 d06m-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-d06m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-d06m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:23:16.102Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-d06m.jpg",
      "missing": true
     }
    ]
@@ -759,10 +1107,39 @@
    "dur": 2.5833333333333335,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k36m-w-k36m.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k36m-w-k36m.mp4",
+     "made": "2026-11-17T18:28:37+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "From the first frame the bright spark races along the fuse across the sunburst floor toward the black safe, scattering small sparks that drop and die out. The six crouching men stay crouched in their arc, puffing their cigars, smoke curling upward; nobody hurries. the small woman in the canary-yellow coat, crouched in the middle, points at the cake, then at the lens, then gives a slow, smug shrug. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. The cake on the safe stays still. Masks, hats, clothes and gloves stay exactly the same. Locked-off camera, framing holds. SFX: hissing fizzing fuse, soft puffs of cigar smoke, distant ticking clock.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k36m.jpg",
+     "why": "her (the gang's leader) in k36m: Kai's pick r5 k36m-b (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k36m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-k36m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:26:23.765Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k36m.jpg",
      "missing": true
     }
    ]
@@ -772,25 +1149,25 @@
    "dur": 1.2916666666666667,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h07-b-h07r10-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h07-w-h07.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h07-b-h07r10-b.mp4",
-     "made": "2026-11-11T18:19:14+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h07-w-h07.mp4",
+     "made": "2026-11-17T18:44:42+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera looking straight up, framing holds. From the first half second the six bounce on the beat and stab their gloved fingers down at the lens. On the first beat PLUM and SILVER jab together; on the next BOTTLE and CRIMSON lean in, heads dipping toward the lens; then MARINE chops a flat palm down while RUST pumps his pointing hand twice. Every man keeps a fresh move each beat, shoulders dropping on the downbeat, all six the same size. The airship hangs still, the binoculars swing on their strap. Masks, gloves and suits unchanged. SFX: gloved claps, cloth rustle, high wind.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h07r10-b.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw5",
+     "prompt": "Locked-off camera looking straight up, framing holds. From the first half second the seven bounce on the beat and stab their gloved fingers down at the lens. On the first beat the small woman in the canary-yellow coat, at the top of the ring, leans in furthest and jabs; on the next BOTTLE and CRIMSON lean in, heads dipping toward the lens; then MARINE chops a flat palm down while RUST pumps his pointing hand twice, and she jabs again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. A fresh move each beat, shoulders dropping on the downbeat. The airship hangs still. Masks, gloves and clothes unchanged. SFX: gloved claps, cloth rustle, high wind.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h07.jpg",
+     "why": "her in h07: Kai's fix pick (r6/h07-a.jpg, feedback/her-shots-r2), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h07r10-b.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h07.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h07-b",
+      "key": "w-h07",
       "frame": 0,
       "option": null
      },
@@ -800,11 +1177,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T17:51:52.036Z"
+      "at": "2026-11-17T18:42:27.738Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h07r10-b.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h07.jpg",
      "missing": true
     }
    ]
@@ -814,10 +1191,10 @@
    "dur": 1.2916666666666667,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -827,10 +1204,10 @@
    "dur": 1.25,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -840,10 +1217,39 @@
    "dur": 1.2916666666666667,
    "beat": "verse3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-g08y-b-g08r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-g08y-w-g08y.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-g08y-b-g08r5-b.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-g08y-w-g08y.mp4",
+     "made": "2026-11-17T18:31:57+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, no zoom, pan or tilt; one continuous shot. The big gloved hand in the foreground stays up, fingers spread, never passing over her face: on each beat it wiggles its fingers like a stage magician, then snaps them, then waves slowly side to side. Behind, the small woman in the canary-yellow coat stands on the stage, head tilted showily, facing the lens, her other hand on her hip. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Her mask stays exactly as in the first frame: white ring, one red triangle, no holes. Smoke drifts in the spotlight. A finger snap, cloth rustle.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-g08y.jpg",
+     "why": "her (the gang's leader) in g08y: Kai's pick r5 g08y-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-g08y.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-g08y",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:23:34.502Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-g08y.jpg",
      "missing": true
     }
    ]
@@ -853,10 +1259,39 @@
    "dur": 1.3333333333333333,
    "beat": "verse4",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k04m-w-k04m.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k04m-w-k04m.mp4",
+     "made": "2026-11-17T18:31:57+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "From the first frame the seven keep walking straight at the lens in their line, one stride per beat, open overcoats flaring behind them, the small woman in the canary-yellow coat in the middle, hands in her coat pockets, coat swinging. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. The grey-masked man tugs his cuff straight once; the man on the far right glances down at his pocket watch, then snaps it shut. Nobody turns his head. The marquee bulbs keep chasing; rain glints on the cobbles. Long-lens compression, so they grow only slightly larger. Locked-off camera, framing holds; masks, clothes and gloves unchanged. SFX: heavy footsteps on wet stone, light rain, a faint electric hum. No speech, no music.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k04m.jpg",
+     "why": "her (the gang's leader) in k04m: Kai's pick r5 k04m-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k04m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-k04m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:26:15.378Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k04m.jpg",
      "missing": true
     }
    ]
@@ -866,25 +1301,25 @@
    "dur": 1.2916666666666667,
    "beat": "verse4",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h17-b-h17r10-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h17-w-h17.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h17-b-h17r10-b.mp4",
-     "made": "2026-11-11T18:19:13+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h17-w-h17.mp4",
+     "made": "2026-11-17T18:28:37+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera, framing holds. The six masked men keep moving from the first frame, knees bouncing together on every beat. First beat: CRIMSON, crouched nearest, pushes his flat palm at the lens and chops it down. Next: PLUM pumps his raised fist; BOTTLE points down at the lens. Next: MARINE and RUST swing their arms forward together. Next: SILVER flicks a banknote off his lapel, then points at the lens. Then all six chop down at once. The fire keeps burning gently in the doorway behind and banknotes drift slowly down. Masks, suits and gloves stay unchanged. SFX: crackling fire, shoes on stone, fluttering paper.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h17r10-b.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw1",
+     "prompt": "Locked-off camera, framing holds. The seven keep moving from the first frame, knees bouncing together on every beat. First beat: the small woman in the canary-yellow coat, in the middle of the line, pushes her flat palm at the lens and chops it down. Next: PLUM pumps his raised fist; BOTTLE points down at the lens. Next: MARINE and RUST swing their arms forward together. Next: SILVER flicks a banknote off his lapel, then points at the lens. Then all seven chop down at once and she jabs her finger at the lens. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. The fire keeps burning gently in the doorway behind and banknotes drift slowly down. Masks, clothes and gloves stay unchanged. SFX: crackling fire, shoes on stone, fluttering paper.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h17.jpg",
+     "why": "her (the gang's leader) in h17: Kai's pick r5 h17-a (feedback/her-shots-r1), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h17r10-b.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h17.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h17-b",
+      "key": "w-h17",
       "frame": 0,
       "option": null
      },
@@ -894,11 +1329,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T18:03:00.916Z"
+      "at": "2026-11-17T18:25:30.835Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h17r10-b.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h17.jpg",
      "missing": true
     }
    ]
@@ -908,10 +1343,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse4",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -921,10 +1356,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse4",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -934,10 +1369,10 @@
    "dur": 1.2916666666666667,
    "beat": "verse4",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -947,25 +1382,25 @@
    "dur": 3.8333333333333335,
    "beat": "verse4",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h13-b-h13r10-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h13-w-h13.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h13-b-h13r10-b.mp4",
-     "made": "2026-11-11T18:32:49+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h13-w-h13.mp4",
+     "made": "2026-11-17T18:32:32+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera, framing holds. From the first half-second CRIMSON, crouched at the front, jabs his finger at the lens on every beat, head pushed forward; on the third beat he sweeps the arm wide and jabs again. Behind him PLUM, BOTTLE, MARINE and SILVER bounce bent-kneed, chopping flat palms down on each beat, then all four swing their hands at the lens together, then back to chopping. RUST keeps polishing the propeller with his handkerchief, ignoring them. Propellers stay still, the plane stays parked. Six men throughout; masks, triangles, gloves and suits unchanged. SFX: feet thudding on dry grass, cloth, summer wind, no voices.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h13r10-b.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw4",
+     "prompt": "Locked-off camera, framing holds. From the first half-second the small woman in the canary-yellow coat, in the middle, jabs her finger at the lens on every beat, head pushed forward; on the third beat she sweeps the arm wide and jabs again. Either side of her the men bounce bent-kneed, chopping flat palms down on each beat, then all swing their hands at the lens together, then back to chopping. RUST keeps polishing the propeller with his handkerchief, ignoring them. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Propellers stay still, the plane stays parked. Seven figures throughout; masks, triangles, gloves and clothes unchanged. SFX: feet thudding on dry grass, cloth, summer wind, no voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h13.jpg",
+     "why": "her (the gang's leader) in h13: Kai's pick r5 h13-a (feedback/her-shots-r1), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h13r10-b.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h13.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h13-b",
+      "key": "w-h13",
       "frame": 0,
       "option": null
      },
@@ -975,11 +1410,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T18:20:19.211Z"
+      "at": "2026-11-17T18:25:08.167Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h13r10-b.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h13.jpg",
      "missing": true
     }
    ]
@@ -989,10 +1424,10 @@
    "dur": 1.2916666666666667,
    "beat": "verse4",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1002,10 +1437,39 @@
    "dur": 3.875,
    "beat": "verse4",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q08-a-q08r7-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q08-w-q08.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q08-a-q08r7-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q08-w-q08.mp4",
+     "made": "2026-11-17T18:34:47+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. Both perform from the first half-second, sharp moves on the beat. The small woman in the canary-yellow coat, on the left, thrusts her flat palm at the lens twice, a hard stop sign, then wags one gloved finger side to side, then chops the palm down; her other glove keeps hold of the chrome microphone throughout. The man on the right keeps his hand cupped at his ear, leans further toward the brass horn, nods deeply on each beat and pops his shoulders. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Behind the counter the shopkeeper keeps calmly winding the gramophone. Masks, hats, gloves and clothes unchanged. SFX: gramophone crank, crackle, leather creak.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q08.jpg",
+     "why": "her (the gang's leader) in q08: Kai's pick r5 q08-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q08.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-q08",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:33:32.246Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q08.jpg",
      "missing": true
     }
    ]
@@ -1041,10 +1505,10 @@
    "dur": 1.3333333333333333,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1067,10 +1531,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1080,10 +1544,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1093,10 +1557,39 @@
    "dur": 1.2916666666666667,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-c03g-w-c03g.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-c03g-w-c03g.mp4",
+     "made": "2026-11-17T18:43:45+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, no camera movement. The seven round the iron press perform together like a stadium act in a cellar, the small woman in the canary-yellow coat in front in the middle. On the first beat all seven punch their fists up at the low ceiling in unison. On the next they bounce at the knees, shoulders shrugging, heads nodding hard. Then she slams both gloves flat on top of the press while the men point down at it with both hands, mock-outraged. Then all seven throw both arms up, palms raised, and pump them on every beat. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Nobody leaves their place. Stamps and cloth rustle.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
+     "why": "her in c03g: Kai's fix pick (r6/c03g-a.jpg, feedback/her-shots-r2), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-c03g",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:41:45.669Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
      "missing": true
     }
    ]
@@ -1106,10 +1599,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1145,10 +1638,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1171,10 +1664,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1184,10 +1677,10 @@
    "dur": 1.2916666666666667,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1197,10 +1690,39 @@
    "dur": 1.2916666666666667,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q04-w-q04.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q04-w-q04.mp4",
+     "made": "2026-11-17T18:28:37+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. From the first half-second the small woman in the canary-yellow coat raps with her whole body, knees bouncing on the beat, feet planted on the step. On the first beat her raised finger jabs up at the racing paper twice; on the next her other glove rubs finger and thumb together at the lens, the money sign; then both arms snap wide, palms down; then a big sarcastic shrug, palms up; then the finger jabs up again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Hands stay below and beside her masked face. The pressman keeps reading, bored. Mask, coat and gloves unchanged. SFX: rotary presses clattering, paper hissing.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+     "why": "her (the gang's leader) in q04: Kai's pick r5 q04-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-q04",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:27:16.956Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
      "missing": true
     }
    ]
@@ -1210,10 +1732,10 @@
    "dur": 2.5833333333333335,
    "beat": "chorus2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1223,10 +1745,10 @@
    "dur": 3.7083333333333335,
    "beat": "break",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1236,25 +1758,25 @@
    "dur": 2.75,
    "beat": "break",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h18-b-h18r10-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h18-w-h18.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h18-b-h18r10-b.mp4",
-     "made": "2026-11-11T18:19:13+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h18-w-h18.mp4",
+     "made": "2026-11-17T18:43:45+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera, framing holds. On the first beat the five in the street drop deeper into their crouch and swing both arms at the lens, palms down. On the next, CRIMSON, centre, jabs two fingers straight at the camera; PLUM and BOTTLE chop palms down beside him; MARINE and SILVER rock their hands side to side, shoulders rolling. RUST, seated on the roadster's bonnet, waves his raised hand on the beat and points down at the lens. They keep bouncing, a new move each beat. Masks, gloves and suits stay unchanged; banknotes flutter down, the crowd cheers in place. SFX: shoes stamping, cloth, crowd murmur, paper rustle. No voices.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h18r10-b.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw2",
+     "prompt": "Locked-off camera, framing holds. On the first beat the line in the street drops deeper into a crouch and swings both arms at the lens, palms down. On the next, the small woman in the canary-yellow coat, in the line among them, jabs two fingers straight at the camera; PLUM and BOTTLE chop palms down beside her; MARINE and SILVER rock their hands side to side, shoulders rolling. RUST, seated on the roadster's bonnet, waves his raised hand on the beat. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. They keep bouncing, a new move each beat. Masks, gloves and clothes stay unchanged; banknotes flutter down, the crowd cheers in place. SFX: shoes stamping, cloth, crowd murmur, paper rustle. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h18.jpg",
+     "why": "her in h18: Kai's fix pick (r5/h18-a.jpg, feedback/her-shots-r2), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h18r10-b.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h18.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h18-b",
+      "key": "w-h18",
       "frame": 0,
       "option": null
      },
@@ -1264,11 +1786,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T18:03:27.209Z"
+      "at": "2026-11-17T18:42:39.120Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h18r10-b.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h18.jpg",
      "missing": true
     }
    ]
@@ -1278,10 +1800,10 @@
    "dur": 2.5416666666666665,
    "beat": "break",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1291,25 +1813,25 @@
    "dur": 1.2916666666666667,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h15-b-h15r10-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h15-w-h15.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h15-b-h15r10-b.mp4",
-     "made": "2026-11-11T18:19:13+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h15-w-h15.mp4",
+     "made": "2026-11-17T18:31:57+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera down the aisle, framing holds. From the first half second the six bounce on the beat in their column. On the first beat MARINE's raised hand chops down flat toward the lens; on the next SILVER swings his gloved hand out and jabs a finger at the lens; then BOTTLE and PLUM lean out on opposite sides, arms swinging, while CRIMSON and RUST nod hard, shoulders dropping on each downbeat. A new move every beat, all six the same size. The steward stays put, tray of teacups perfectly level; countryside streams past the windows. Masks, gloves and suits unchanged. SFX: wheels clacking on rails, stamps, cloth.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h15r10-b.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw5",
+     "prompt": "Locked-off camera down the aisle, framing holds. From the first half second the seven bounce on the beat. On the first beat the small woman in the canary-yellow coat, in the middle, jabs a finger at the lens; on the next MARINE's raised hand chops down flat toward the lens and SILVER swings his gloved hand out; then BOTTLE and PLUM lean out on opposite sides, arms swinging, while CRIMSON and RUST nod hard; then she points again and rolls her shoulders. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. A new move every beat. The steward stays put, tray of teacups perfectly level; countryside streams past the windows. Masks, gloves and clothes unchanged. SFX: wheels clacking on rails, stamps, cloth.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h15.jpg",
+     "why": "her (the gang's leader) in h15: Kai's pick r5 h15-b (feedback/her-shots-r1), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h15r10-b.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h15.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h15-b",
+      "key": "w-h15",
       "frame": 0,
       "option": null
      },
@@ -1319,11 +1841,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T18:02:35.675Z"
+      "at": "2026-11-17T18:25:21.152Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h15r10-b.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h15.jpg",
      "missing": true
     }
    ]
@@ -1333,10 +1855,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1346,10 +1868,10 @@
    "dur": 3.875,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1359,25 +1881,25 @@
    "dur": 2.5833333333333335,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h11-b-h11r10-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h11-w-h11.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h11-b-h11r10-b.mp4",
-     "made": "2026-11-11T18:19:13+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h11-w-h11.mp4",
+     "made": "2026-11-17T18:28:37+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera, framing holds. The raised fists punch down on the first beat, every man landing a heel bounce on the ice together. On the next, SILVER, nearest, leans into the lens and jabs a finger at it; PLUM and MARINE chop flat palms down beside him. CRIMSON pumps his fist back up; RUST and BOTTLE, at the far end, rock palms side to side, shoulders dropping on each beat. Then all six throw fists high again, still bouncing. Masks, gloves and suits stay unchanged; snow keeps falling through the headlamp beams, the sedans stay still. SFX: boots crunching snow, cloth, wind, stamps on the beat. No voices.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h11r10-b.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw2",
+     "prompt": "Locked-off camera, framing holds. The raised fists punch down on the first beat, everyone landing a heel bounce on the ice together. On the next, the small woman in the canary-yellow coat, in the middle, leans toward the lens and jabs a finger at it; the men either side chop flat palms down. CRIMSON pumps his fist back up; RUST and BOTTLE, at the far end, rock palms side to side. Then all seven throw fists high again, still bouncing, her hand back on her hip. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Masks, gloves and clothes stay unchanged; snow keeps falling through the headlamp beams, the sedans stay still. SFX: boots crunching snow, cloth, wind, stamps on the beat. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h11.jpg",
+     "why": "her (the gang's leader) in h11: Kai's pick r5 h11-a (feedback/her-shots-r1), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h11r10-b.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h11.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h11-b",
+      "key": "w-h11",
       "frame": 0,
       "option": null
      },
@@ -1387,11 +1909,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T17:52:45.639Z"
+      "at": "2026-11-17T18:24:38.787Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h11r10-b.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h11.jpg",
      "missing": true
     }
    ]
@@ -1401,25 +1923,25 @@
    "dur": 2.5833333333333335,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h12-a-h12r10-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h12-w-h12.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-h12-a-h12r10-a.mp4",
-     "made": "2026-11-11T18:19:13+00:00",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h12-w-h12.mp4",
+     "made": "2026-11-17T18:44:55+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "google-flow",
      "tool": "scripts/scene/run.mts",
      "model": "Omni 1.2 Flash",
-     "prompt": "Locked-off camera at eye level, framing holds. On the first beat the back row, CRIMSON, MARINE and SILVER, bounce with hands up, palms slapping down on each beat. PLUM, crouched front, snaps his spread arms in and jabs both index fingers at the lens; BOTTLE and RUST rock forward on their heels, chopping flat palms down in turn. On the next beats the back row lean in over the front row's shoulders, pointing at the lens, while PLUM spreads his arms wide again. The ground-crew man keeps hammering his peg. Balloon and ropes hold still. SFX: claps, mallet knocks, wet grass, cloth. No voices.\n\nThanks.",
-     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h12r10-a.jpg",
-     "why": "mv-gang r10 whole-gang rap-to-camera clip (Kai 2026-11-11 picks), writer cw3",
+     "prompt": "Locked-off camera at eye level, framing holds. On the first beat the men bounce with hands up, palms slapping down on each beat. the small woman in the canary-yellow coat, in the middle, snaps her spread arms in and jabs both index fingers at the lens; the men either side rock forward on their heels, chopping flat palms down in turn. On the next beats the men lean toward her, pointing at the lens, while she spreads her arms wide again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. The ground-crew man keeps hammering his peg. Balloon and ropes hold still. SFX: claps, mallet knocks, wet grass, cloth. No voices.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h12.jpg",
+     "why": "her in h12: Kai's fix pick (r5/h12-b.jpg, feedback/her-shots-r2), original motion + her swagger",
      "inputs": {
-      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h12r10-a.jpg",
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h12.jpg",
       "character": null,
       "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
-      "key": "h12-a",
+      "key": "w-h12",
       "frame": 0,
       "option": null
      },
@@ -1429,11 +1951,11 @@
       "durationSeconds": 6,
       "count": 1,
       "resolution": "720p",
-      "at": "2026-11-11T17:54:22.591Z"
+      "at": "2026-11-17T18:42:36.398Z"
      }
     },
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/h12r10-a.jpg",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h12.jpg",
      "missing": true
     }
    ]
@@ -1443,10 +1965,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1456,10 +1978,39 @@
    "dur": 1.2916666666666667,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-p05-a-p05r6-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-p05-w-p05.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-p05-a-p05r6-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-p05-w-p05.mp4",
+     "made": "2026-11-17T18:32:32+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. The crouching man in the hat moves from the first instant: he taps both temples twice on the beat, then flings both hands open toward the lens, then bobs on bent knees, feet planted on the beam. Behind him the small woman in the canary-yellow coat hops on one foot on the girder, jabs her finger at the lens, and lands with a shrug, while the standing men nod together on each beat; the seated man holds his sandwich still. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Everyone stays on the girder. Masks, gloves and clothes unchanged; nothing new appears. SFX: wind gusting, steel creaking, distant city traffic far below.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-p05.jpg",
+     "why": "her (the gang's leader) in p05: Kai's pick r5 p05-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-p05.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-p05",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:26:58.073Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-p05.jpg",
      "missing": true
     }
    ]
@@ -1469,10 +2020,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1482,10 +2033,39 @@
    "dur": 1.2916666666666667,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q12-b-q12r7-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q12-w-q12.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q12-b-q12r7-b.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q12-w-q12.mp4",
+     "made": "2026-11-17T18:29:59+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, framing holds. From the first half-second all seven wag their raised index fingers side to side in unison, on the beat, the fingers staying beside their heads, clear of the masks, the small woman in the canary-yellow coat in the middle wagging hers the hardest. On the fourth beat they all stop together, snap the finger down to point at the lens, then give one slow, sarcastic head shake, hers the most exaggerated. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Feet stay planted; masks, hats and clothes stay exactly as they are. The deckhand keeps coiling rope, ignoring them. SFX: gulls, water lapping, a ferry engine thrum, creaking deck.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q12.jpg",
+     "why": "her (the gang's leader) in q12: Kai's pick r5 q12-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q12.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-q12",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:28:58.970Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q12.jpg",
      "missing": true
     }
    ]
@@ -1495,10 +2075,10 @@
    "dur": 2.5833333333333335,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1508,10 +2088,39 @@
    "dur": 2.625,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k36m-w-k36m.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k36m-w-k36m.mp4",
+     "made": "2026-11-17T18:28:37+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "From the first frame the bright spark races along the fuse across the sunburst floor toward the black safe, scattering small sparks that drop and die out. The six crouching men stay crouched in their arc, puffing their cigars, smoke curling upward; nobody hurries. the small woman in the canary-yellow coat, crouched in the middle, points at the cake, then at the lens, then gives a slow, smug shrug. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. The cake on the safe stays still. Masks, hats, clothes and gloves stay exactly the same. Locked-off camera, framing holds. SFX: hissing fizzing fuse, soft puffs of cigar smoke, distant ticking clock.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k36m.jpg",
+     "why": "her (the gang's leader) in k36m: Kai's pick r5 k36m-b (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k36m.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-k36m",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:26:23.765Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k36m.jpg",
      "missing": true
     }
    ]
@@ -1521,10 +2130,10 @@
    "dur": 1.3333333333333333,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b-noaudio.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b-noaudio.mp4",
      "missing": true
     }
    ]
@@ -1534,10 +2143,39 @@
    "dur": 4.791666666666667,
    "beat": "verse5",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v11x-a-v11r5-a.mp4",
+   "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-v11x-w-v11x.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v11x-a-v11r5-a.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-v11x-w-v11x.mp4",
+     "made": "2026-11-17T18:34:52+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, no camera movement. From the first frame the small woman in the canary-yellow coat raps to the lens on the bank steps, leaning in. On the first beat she wags her raised finger at camera, mock-stern; on the next she tips her head up to the sky, exasperated; then she mimes holding a dainty invisible slice of cake between thumb and finger, little finger out, raises it to chin height, stops dead, and shakes her head at the lens; then she slides the empty hand forward, offering it to the viewer, and wags the finger again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Mask stays exactly as it is; her other hand stays on her hip.\n\nThanks.",
+     "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-v11x.jpg",
+     "why": "her (the gang's leader) in v11x: Kai's pick r5 v11x-a (feedback/her-shots-r1), original motion + her swagger",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-v11x.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+      "key": "w-v11x",
+      "frame": 0,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-17T18:33:50.945Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-v11x.jpg",
      "missing": true
     }
    ]
@@ -1559,50 +2197,34 @@
   }
  ],
  "no_card": [
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a01m-a-a01r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a02m-a-a02r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c03g-b-c03r2-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d06m-a-d06r5-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-g08y-b-g08r5-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k01m-a-k01r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k04m-a-k04r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k19m-a-k19r5-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k36m-b-k36r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-p05-a-p05r6-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q01-b-q01r7-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q04-a-q04r7-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q05-b-q05r7-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q08-a-q08r7-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q12-b-q12r7-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v11x-a-v11r5-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b.mp4",
-  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-a03m-a-a03r5-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-c02-a-c02r2-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d10-a-d10r2-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d11-a-d11r2-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-d12-b-d12r2-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k12m-a-k12r5-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k13m-b-k13r5-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k16-a-k16r3-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k21m-a-k21r5-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k22m-b-k22r5-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k23-a-k23r3-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k27m-b-k27r5-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k29m-a-k29r5-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k30m-a-k30r5-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-k31-b-k31r3-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-q09-a-q09r7-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-v07m-b-v07r5-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x04-a-x04r2-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x06-a-x06r2-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-x07m-b-x07r5-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y03-a-y03r8-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y04-a-y04r8-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y05-a-y05r8-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-y06-a-y06r8-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z02y-b-z02r7-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z03-a-z03r7-a-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z04-b-z04r7-b-noaudio.mp4",
+  "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-z06y-b-z06r7-b-noaudio.mp4",
   "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase1-a.mp4",
   "/mnt/d/badcode-videos/bank-robbery-music/noir/video/chase3-a.mp4",
   "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods2-b.mp4",
@@ -1610,6 +2232,5 @@
   "/mnt/d/badcode-videos/bank-robbery-music/noir/video/rods4-a.mp4",
   "/mnt/d/badcode-videos/bank-robbery-music/noir/video/safe2-c.mp4",
   "/mnt/d/badcode-videos/bank-robbery-music/the version.wav"
- ],
- "render": "/mnt/d/badcode-videos/bank-robbery-music/renders/Balaclava Gang 10 - YouTube 1080p.mp4"
+ ]
 }
