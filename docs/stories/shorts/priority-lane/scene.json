@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 7: the poster close-up for the transition. You picked PS6-c; these are close-ups of that same magenta poster, the start frame of the poster-to-car move (it ends on MIN1-b, him in the car). Pick one.",
+ "moodboard_intro": "Round 8 (Kai's notes, 2026-11-17). The minister becomes a Boris-alike (invented, never named): pick his face first, because his SAVE OUR NHS poster (re-shot sideways out of the ambulance's left window) is made from it next. Plus a new wide shot of the police cordon holding the junction. ⚠ B and C came out very close to the real man; say if that's too close.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -18,7 +18,13 @@
    "key": "poster",
    "at": "0:02",
    "name": "A2. His poster (cut into A)",
-   "blurb": "While the crew shout, quick cuts out to the minister's own SAVE OUR NHS campaign poster, at a bus shelter or on a bus, held ~1.5-2 s to read; then the poster close-up turns into him in the back of his car in the same pose (phone to right ear), and back to the ambulance (Jack, 2026-11-14)."
+   "blurb": "His SAVE OUR NHS poster, seen sideways out of the ambulance's LEFT window as it passes (parallel to the shelter, ambulance interior in the foreground), held ~3 s (Kai: double it). No more dissolve into his car (Kai, 2026-11-17)."
+  },
+  {
+   "key": "cordon",
+   "at": "0:08",
+   "name": "A3. The cordon",
+   "blurb": "High and wide over the junction: police bikes and hi-vis officers have closed it, the junction empty, the convoy's headlights coming; the ambulance held at the stop line. Radio: 'Constable 97, junction blocked, ready for VIP' (Kai, 2026-11-17)."
   },
   {
    "key": "held",
@@ -30,7 +36,7 @@
    "key": "motorcade",
    "at": "0:07",
    "name": "C. The motorcade",
-   "blurb": "The minister's car crosses slowly, right in front of the ambulance; he's on the phone: 'I said raspberry-shaped hors d'oeuvres!' Bolder: seen through the ambulance windscreen, inches away, his line heard through the glass."
+   "blurb": "The Boris-alike minister crosses in the back of his car, on the phone: 'Hey Jeffrey, what time's the plane to the island? ... I'm on my way to fetch Andrew.'"
   },
   {
    "key": "flatline",
@@ -182,7 +188,7 @@
    "D. Flatline"
   ]
  ],
- "board_round": 7,
+ "board_round": 8,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"

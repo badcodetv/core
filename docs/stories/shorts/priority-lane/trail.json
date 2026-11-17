@@ -244,5 +244,13 @@
   "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
   "what": "Round 4b (Jack's notes at101 'play it quickly', at117 'remove this part'): shelter poster shot at 2x, poster close-up hold removed, ambulance takes the time back; notes dumped to feedback/timeline-r4",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-17T11:13:15+00:00",
+  "stage": "moodboard",
+  "round": 8,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 8 (Kai 2026-11-17): Boris-alike minister BM8-a..d and police cordon CD8-a..d, clean room cleanroom/r8 (three sealed writers), run verbatim on Nano Banana 2; poster PS8 waits on the face pick",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]
