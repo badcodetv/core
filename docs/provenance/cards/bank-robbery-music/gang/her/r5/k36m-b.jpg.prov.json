@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/k36m-b.jpg",
+ "made": "2026-11-17T17:31:39+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r5/run.mts",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/frames/k36m.jpg",
+ "why": "mv-gang shot pass: her edited into the opening frame of k36m",
+ "prompt": "Using the frame from the film (the last attached image), add one more member to the masked gang: their leader, a woman. All six men already in the frame stay fully visible, every one of them, as much of each as the frame showed before: none of them is hidden, covered or cut off by her. They shuffle sideways to open a gap in the middle of their group, and she stands in that gap, beside them, in the same row and at the same distance from the lens as the men either side of her, never in front of anyone. There are seven masked figures in the picture, her in the middle. She crouches in the gap in the middle of the huddle round the safe, between the men. She is the woman on the attached character sheet, copied exactly: a long canary-yellow duster belted at the waist, a black beaded dress over a red high-neck top, red tights, black laced boots, black gloves, a black flat-brimmed hat, and a canary-yellow knitted balaclava with no openings, a large white ring stitched round the face and one small red triangle high inside the ring on the right-hand side of the picture. She is small and slight: standing, the top of her hat reaches only the middle of the men's chests. She carries no weapon. No skin shows anywhere. She holds herself with swagger and attitude: chin up, weight on one hip, crouched, one hand on her knee, the other pointing at the cake. Keep the place, the light, the camera angle and the framing exactly as they are in the frame from the film. No text or logos. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/her-sheet.jpg",
+  "ref2": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/frames/k36m.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}

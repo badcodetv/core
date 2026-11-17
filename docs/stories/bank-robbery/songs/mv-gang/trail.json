@@ -344,5 +344,17 @@
    "Kai: no skin; red top under the dress and red tights in the triangle's red",
    "Kai: swagger and attitude in her movement in every clip she is in"
   ]
+ },
+ {
+  "at": "2026-11-17T17:31:40+00:00",
+  "stage": "picks",
+  "round": 5,
+  "url": "https://claude.ai/artifact/6tMmUqXJW1yKr9Aa3MVvx6",
+  "what": "Her shots r1: the 29 candidate shots' opening frames with her edited in (original, a, b); pick which get animated",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-gang/her/r5/picks.json <out>/index.html (media: D:/badcode-videos/bank-robbery-music/gang/her/r5 + frames)",
+  "decided": [
+   "Kai picked sheet b (her-r4-sheet), now her-sheet.jpg",
+   "Kai: she stands beside the men in a gap they open, never in front hiding one (all seven visible)"
+  ]
  }
 ]
