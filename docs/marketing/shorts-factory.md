@@ -89,7 +89,7 @@ correct file:
 | Frames containing *any* pixel below 16 | 195 of 720 (27%) |
 
 The excursion is **x264 ringing around high-contrast text edges** — overshoot and undershoot
-on a handful of pixels where white mono type meets a near-black card. It shrinks as CRF drops
+on a handful of pixels where white mono type meets a near-black card. <!-- style-lint: ok (measurement of a test card, not a look) --> It shrinks as CRF drops
 (YMIN 8 at CRF 19, 11 at CRF 12 on a 2s sample) and it is not the picture: the picture is
 seated at 25. `delivery-qc.sh` takes whole-clip min/max, which cannot tell a few ringing
 pixels from a mis-ranged image.
@@ -109,7 +109,7 @@ ffmpeg -v error -i SHORT.mp4 -vf "boxblur=1:1,signalstats=stat=brng,metadata=pri
 is giving its false FAIL.** Verified on the five batch-2 remix shorts: raw clip min/max ran
 0–255, 8–242, 8–255 and 3–248 — every one a FAIL — while blurred they measured **20–227,
 28–220 and 29–224**. The worst offender (`R2-switchboard`) is 1951 archive footage of a
-telephone cord board, a high-frequency black-and-white lattice, which is the pathological case
+telephone cord board, a high-frequency black-and-white lattice <!-- style-lint: ok (describes archive footage) -->, which is the pathological case
 for x264 ringing and nothing to do with range. ⬜ Whether `delivery-qc.sh` should run this blur
 itself before declaring a range failure is still Kai's call.
 
@@ -209,7 +209,7 @@ recognise. Every short belongs to exactly one.
 
 | Series | Shape | Length | Source | Why it earns its place |
 | --- | --- | --- | --- | --- |
-| **① TRANSMISSION** | One narrator line over one monumental shot. Hook bar up top, line burnt in, ident tail. | 12–25s | Story films + ident bank | The house voice, undiluted. Cheapest to make, most on-brand, and it is the format the narrator pattern was built for. |
+| **① TRANSMISSION** | One narrator line over one strong shot from the story, in that story's own look. Hook bar up top, line burnt in, ident tail. | 12–25s | Story films + ident bank | The narrator's words, undiluted. Cheapest to make, most on-brand, and it is the format the narrator pattern was built for. |
 | **② THE BIT** | A self-contained comic beat, set up and punched, lifted whole from a film. | 20–45s | Karen (comedy) · Camping (dark) | The shareable tier. Karen is genuinely funny and none of it has ever been seen. |
 | **③ ONE MINUTE OF THE FILM** | The strongest continuous 45–60s of a core, cut to end on an open loop, pinned comment to the full film. | 45–60s | Story films | The actual funnel. Sits in the ✅ 30–60s band and is the only format built to convert. |
 | **④ ARTEFACT** | A still or 3–6s loop of one object from the world — the redundancy screen, the burning newspaper, the `BAD C0DE` plate — with one caption. | 3–8s still / loop | Frame grabs | The meme tier. Posts as image *or* video, costs minutes, and is the only tier that can react to news the same day. |
@@ -328,7 +328,7 @@ repurposing survivable; ad-hoc posting is what kills it. That lands inside TikTo
 2. Pinned comment: *"The whole film: badcode.tv/…"* + UTM
    (`utm_source=<platform>&utm_campaign=<story>`), per the plan's attribution scheme.
 3. AI disclosure ticked. ✅ The label itself carries no ranking penalty and honesty is the brand.
-4. The story's own track as the audio where it fits — ◻ our own DnB as an original sound is a
+4. The story's own track as the audio where it fits — ◻ our own music as an original sound is a
    growth surface others can reuse.
 5. A 1.5–2s ident tail from `badcode logo designs/Badcode-logo-vid/`.
 
@@ -388,7 +388,7 @@ line as its own centred bar, burns captions, normalises loudness and tags the ou
 - 🔴 **`subtitles=…:force_style` margins are in the SRT's ASS play-res, not pixels.** ffmpeg
   converts an `.srt` with `PlayResX 384 / PlayResY 288`, so `MarginV=420` silently lands off a
   1920-tall frame and the captions simply never appear — no error. The tool converts to `.ass`,
-  rewrites the play-res to 1080×1920 and writes the house style in real pixels.
+  rewrites the play-res to 1080×1920 and writes the caption style in real pixels.
 - 🔴 **`scale=in_range=full:out_range=limited` is a no-op at the tail of a graphics graph.**
   With no resize and no format change, swscale fast-paths and the squeeze does nothing —
   measured: YMAX stayed at 255 while the file claimed `tv`. Worse, the conversion cannot go at
@@ -403,7 +403,7 @@ line as its own centred bar, burns captions, normalises loudness and tags the ou
 ## 11. Open, and owed a ruling
 
 - ⬜ **`slate` vs `crop` is unproven on our audience.** Full-bleed generally wins attention;
-  our register argues for the card. Both are **built and rendered** (C6/K1 slate, C7 crop, in
+  batch 1's design argues for the card. Both are **built and rendered** (C6/K1 slate, C7 crop, in
   `animation/shorts/batch-1/`) — decide from measured average-percentage-viewed, not taste.
 - ⬜ **JetBrains Mono is not installed in WSL.** Until it is, shorts go out in DejaVu Mono.
 - ⬜ **Karen's film is 4K** and Camping's is 1080p — the Karen crops can be genuinely sharp.

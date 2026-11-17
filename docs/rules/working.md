@@ -152,9 +152,9 @@ On Jack's machine (`/home/jackt`) the Suno listening loop records, measures and 
 Full table: `docs/listening/automation.md` §0. Related: `suno-account-is-kais-google-login`.
 - 🔴 2026-09-27: `gemini-3-flash-preview` then ALSO hit 429 after ~15 calls in a day; `gemini-3.5-flash` worked again —
   alternate the two, and call them one at a time (parallel calls tripped the quota).
-- 🔴 `record-yt-seg.mts` can capture a YouTube **mid-roll advert** inside a segment on long mixes (2026-09-27, Liquid Rasta:
+- 🔴 `record-yt-seg.mts` can capture a YouTube **mid-roll advert** inside a segment on long mixes (2026-09-27, Liquid Rasta: <!-- style-lint: ok (a mix's name in a tool-failure record) -->
   a clip "switched to a funky breakbeat" at 0:25, another was "tropical pop"). Ask Gemini "could this be an advert?" and
   discard those clips.
 - 🔴 2026-09-27 later: 3.5-flash, 3-flash-preview AND 3.1-pro-preview all 429'd; **`gemini-3.5-flash-lite` still worked** (lower
   confidence — say so). `3-pro-preview` and `3.1-flash-preview` are 404. The describe tool's `tempo` measurement returned
-  132.51 for five different clips — it is broken; use `librosa.beat.beat_track` directly (reggae reads double: ~130 = ~65).
+  132.51 for five different clips — it is broken; use `librosa.beat.beat_track` directly (reggae reads double: ~130 = ~65). <!-- style-lint: ok (engine fact: a tempo measurement) -->

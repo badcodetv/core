@@ -6,6 +6,7 @@ status: done
 ---
 
 > **GitPush Origin Master's anchor only.** Not a BadCode look; never a reference for another story.
+<!-- style-lint: story=gitpush-origin-master (a GPOM record kept in a shared folder) -->
 ![register anchor](register-anchor.jpg)
 
 **GPOM's register anchor** — the calibration reference for GPOM's MACHINE look

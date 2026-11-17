@@ -58,7 +58,7 @@ Run before anything else. A piece that fails a gate is not reviewed further unti
 7. **But / therefore, never and-then.** Every beat is caused by the last (Parker & Stone; Tony Zhou
    via Welles). Every scene turns a value from one charge to its opposite (McKee, Story Grid); if it
    doesn't, it is exposition wearing a scene's clothes. Scenes end on disaster, not resolution
-   (Swain) — **"No, and…" is the house default ending.** *(P — brief 03)*
+   (Swain) — **"No, and…" is the house default ending.** *(P — brief 03)* <!-- style-lint: ok (story structure, not a look or sound) -->
 8. **Compound arcs beat clean ones; speed helps the short and hurts the long.** The most-downloaded
    stories in Reagan et al. (2016) were stacked reversals, not one clean rise or fall. Toubia et al.
    (2021): fast semantic movement is liked in film/TV and penalised in long-form. Keep the 3–5 minute

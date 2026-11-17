@@ -64,8 +64,8 @@ numbers kept below are kept as ◻ claims to A/B, not as facts.
 - ◻ 🔑 **The very short tier is reported to be collapsing** — a sub-15s clip cannot clear an
   absolute watch-time bar even at full retention, with **30–45s** named as the band. Batch 1
   sits at 10–28s. Everything in §5/§6 is specced at **30–45s** as a result.
-- ◻ 🔑 **An "original sound" bonus was reportedly added to Shorts in March 2026.** We own two
-  finished drum & bass tracks. **This is the single cheapest lever on the page** and nothing we
+- ◻ 🔑 **An "original sound" bonus was reportedly added to Shorts in March 2026.** We own finished
+  tracks of our own (each in its story's genre). **This is the single cheapest lever on the page** and nothing we
   have posted uses it.
 
 **Unchanged and still ✅:**

@@ -38,6 +38,11 @@ given; ask him before reviving).
 - BadCode wears the brand balaclava: triangle over his LEFT eye (right of picture, inside the ring at eye height), gauntlet gloves, no skin. Zoom-check every still and clip.
 - Owed: `marketing-gatekeeper` on stamping the two parties' names.
 
+## Flow project
+- `9cc5b19c-6911-4463-83ac-69edc9e2878c` — scenes/the-envelope
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

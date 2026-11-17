@@ -126,12 +126,14 @@ free material), "how a panel gets made" shorts, Flow/Suno workflow peeks.
 - **Why it works:** the AI-makes-art process is itself high-curiosity content in 2026, and it's
   honest about what we are — leaning into AI authorship instead of hiding it.
 
-### 3.6 Music-first strategy — the DnB channel
+### 3.6 Music-first strategy — each story's own genre scene
 
-The music has its own scene with its own distribution: SoundCloud (DnB community, reposts),
-Spotify (editorial + algorithmic playlist pitching via Spotify for Artists, pre-save
-campaigns), full tracks on YouTube with comic-art visualizers, genre communities (UKF-adjacent,
-r/DnB, DnB TikTok). Tracks credit the story: every upload description carries the story link.
+There is no BadCode genre: each story's songs have their own sound (its `sound.md`), so each
+song reaches its own genre's scene with its own distribution: SoundCloud (that genre's community,
+reposts), Spotify (editorial + algorithmic playlist pitching via Spotify for Artists, pre-save
+campaigns), full tracks on YouTube with comic-art visualizers, and the genre's own communities
+(subreddits, TikTok niches; for GPOM's drum & bass that meant UKF-adjacent channels and r/DnB).
+Tracks credit the story: every upload description carries the story link.
 
 Two verified 2026 constraints (details in the playbooks §4–5): **SoundCloud will not
 distribute/monetize Suno-made tracks** (Suno isn't an approved AI partner — SoundCloud is
@@ -166,7 +168,7 @@ only audience asset no algorithm can take away.
 
 ### 3.9 Collab strategy — borrowed audiences
 
-Targeted collaborations: DnB producers/labels (track feedback, reposts, remix stems), political
+Targeted collaborations: producers/labels in each song's genre (track feedback, reposts, remix stems), political
 commentary creators (react to our comics), AI-art creators (process exchanges). One genuine
 collab beats a month of cold posting.
 
@@ -193,7 +195,7 @@ and re-checked monthly by `trend-scout`. Summary of intent:
 | TikTok | Discovery engine: shorts, react edits, duets | 3.1, 3.2, 3.5, 3.7 |
 | Instagram | Visual home: carousels, serialized panels, Reels | 3.2, 3.3, 3.4 |
 | X/Twitter | The narrator's voice + news reaction | 3.1, 3.4, 3.7 |
-| SoundCloud | DnB scene credibility | 3.6 |
+| SoundCloud | Genre-scene credibility, per story's song | 3.6 |
 | Spotify | Music distribution + playlists | 3.6 |
 | Facebook | Low-effort mirror of IG/YT content | 3.2 |
 | LinkedIn | Occasional: the economics/automation angle, making-of | 3.5, 3.10 |

@@ -1,4 +1,4 @@
-# Registers — the monumental, the documentary, and others a story may choose
+# Registers — the monumental, the documentary, and others a story may choose <!-- style-lint: ok (engine fact) -->
 
 > A menu, not a default: no register is BadCode's. A story's register is in its own `badcode.md`.
 
@@ -62,14 +62,14 @@ His prescribed opposite is not "look different", it is make the image argue abou
 That is a sharper description of BadCode's actual job than anything else in the sweep.
 
 **🔴 The single most reliable formal marker is the absence of a visible cost.** The Nuremberg
-cathedral of light, *Triumph of the Will*, Stalinist monumental photography — none shows
+cathedral of light, *Triumph of the Will*, Stalinist monumental photography — none shows <!-- style-lint: ok (engine fact) -->
 exhaustion, wreckage, a body that failed, or anyone the system is failing. The frame is clean
 because a cost would break the spell. The counter-tradition (*Metropolis*, *Brazil*) adds cost,
 agency-asymmetry and a visible outside, and never softens the scale.
 
 ### The gate
 
-> **Before any monumental shot ships: is there a visible cost in this frame?**
+> **Before any monumental shot ships: is there a visible cost in this frame?** <!-- style-lint: ok (engine fact) -->
 > *(Applies to any story whose look is monumental; GPOM's `look.md` carries it as a rule.)*
 > Wreckage, exhaustion, a body that failed, someone the system is failing.
 > If not, it is drifting toward celebration.
@@ -168,18 +168,18 @@ any other story may choose it in its `look.md`.
   depicted often do not recognise themselves in it. **A (mixed)**
 - **There is a counter-tradition.** Martin Parr's saturated-colour, on-camera-flash photography of
   British seaside working-class life (*The Last Resort*, 1983–85) was a deliberate break from
-  black-and-white miserabilism — and drew its own accusation of mocking its subjects. **P**
+  black-and-white miserabilism — and drew its own accusation of mocking its subjects. **P** <!-- style-lint: ok (engine fact) -->
 
 ### 🔴 The tension, unresolved
 
-Arnold's frame refuses to make a person small. The monumental register's most load-bearing awe device is
+Arnold's frame refuses to make a person small. The monumental register's most load-bearing awe device is <!-- style-lint: ok (engine fact) -->
 **one human-scale figure, visibly small against architecture**. Both are deliberate. They cannot
 coexist in one shot.
 
-**Our ruling (R2): pair, don't choose.** In a monumental look (GPOM's — see its `look.md`),
-monumental is the awe engine and Arnold's tight human-scale frame is a deliberate exception,
-spent on character beats inside the machine-scale story. A story whose `look.md` picks social
-realism inverts that.
+**Our ruling (R2): pair, don't choose, and the story decides which is the default.** One frame is
+the default and the other is spent on the beats that need it. A story built on awe may default to
+the vast frame and spend Arnold's human-scale frame on character beats (GPOM does, see its `look.md`); a
+story whose `look.md` picks social realism inverts that.
 
 **What is NOT resolved (R1):** whether either register actually works on this specific reader.
 Nobody has evidence. GPOM's look is not shown safe; social realism is not shown to be the

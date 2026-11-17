@@ -5,8 +5,7 @@ openers, social frames. Images here are produced with the **`new-image`** skill
 (`.claude/skills/new-image/`), which drives Google Flow to generate them.
 
 **There is no BadCode house look** (Kai, 2026-10-28; [`../stories/STYLE.md`](../stories/STYLE.md)).
-The images indexed below are **GPOM's anchors** — the near-black, one-thin-light,
-monumental-machine register is GitPush Origin Master's look (its
+The images indexed below are **GPOM's anchors**: records of GitPush Origin Master's look (its
 `docs/stories/gitpush-origin-master/look.md`), not BadCode's. They stay in this folder
 so existing links keep working; use them only when the job is GPOM's look. A brand image
 for anything else takes its look from the story it belongs to, or from a variation round.

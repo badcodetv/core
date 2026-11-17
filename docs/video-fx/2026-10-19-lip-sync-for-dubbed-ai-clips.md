@@ -42,7 +42,7 @@ Ingredients clips did not; `[inference]` the viseme explanation — we have n of
   <https://discuss.ai.google.dev/t/lip-sync-in-google-flow/179960>
 - `[paper]` **How much error is visible.** ITU-R BT.1359: detectable at about +45 ms (audio early) to −125 ms (audio
   late); acceptable to about +90 / −185 ms. ATSC is stricter: audio never more than 15 ms early or 45 ms late. The
-  thresholds come from newsreader clips; sign conventions differ between summaries.
+  thresholds come from newsreader clips; sign conventions differ between summaries. <!-- style-lint: ok (engine fact) -->
   <https://en.wikipedia.org/wiki/Audio-to-video_synchronization>, <https://www.tvtechnology.com/opinions/av-synchronization-how-bad-is-bad>
   - `[inference]` At 24 fps one frame is 42 ms: **audio one frame early is already at the detection edge; audio
     late is forgiven about three times more.** When in doubt, nudge the dub later, never earlier.

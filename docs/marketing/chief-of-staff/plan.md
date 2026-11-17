@@ -66,7 +66,7 @@ No schedule. A lane is a kind of thing we post; what goes out next is whatever's
 | **A. Money For Something** | the topical monologue. ⚠ A scratch pad until its pipeline exists (Kai, 15 October): BadCode in person is **a man in a white balaclava with the red-triangle eyepatch** (the logo's mark), mouth never seen, so the voice is **text-to-speech made outside the video model**. Content comes as we go | ⬜ pipeline first |
 | **B. The back catalogue** | the finished films sliced into serials with a series name, hook text and an end card. Camping first, then Karen once its beneficiary problem is fixed | ✅ Camping ready to cut |
 | **C. The Archive** | the seven unseen comics as the 30 shorts already cut, one panel and one line each. Best five first: `13-the-handshake`, `15-breaking`, `07-scarcity-wars`, `23-necessary`, `20-the-good-half` ([`../shorts-ideas.md`](../shorts-ideas.md)) | 🟡 needs sound |
-| **D. The song** | a 30–45 second song from an episode's main line, our own drum & bass ([`../money-for-something-series.md`](../money-for-something-series.md)) | ⬜ after lane A |
+| **D. The song** | a 30–45 second song from an episode's main line, in the story's own sound (its `sound.md`; [`../money-for-something-series.md`](../money-for-something-series.md)) | ⬜ after lane A |
 
 🔴 **Lane D costs Suno downloads:** a song can only earn money if a person downloaded it on the paid
 plan (20 a month). Downloads are always done by a person.
@@ -89,10 +89,10 @@ adult drifting right because the economy failed them. In one line they'd recogni
 that it is rigged; you were told the wrong story about who rigged it.* Every piece passes the reader's
 ten rules. The four that bite hardest: never "you've been duped"; name the decision-maker, never the
 technology; never raise automation fear without naming who benefits; never repeat the lie to refute it.
-**Second audience:** drum & bass listeners, reached through the music.
+**Second audience:** listeners of each story's music, reached through the songs (the genre is the story's, in its `sound.md`; there is no BadCode genre).
 
 **What we say:** BadCode is a superintelligence from a future that already went wrong. It tells you,
-in stories and drum & bass, which choices caused it, and that they were choices. Under everything:
+in stories and songs, which choices caused it, and that they were choices. Under everything:
 **"we can't afford it" is a decision, and someone benefits from it.**
 
 **How we sound:** the narrator from the future: certain, dark, funny, on the reader's side

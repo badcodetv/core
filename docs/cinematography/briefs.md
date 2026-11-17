@@ -13,7 +13,7 @@ not adopt.
 | # | Brief | Go here for |
 | --- | --- | --- |
 | 01 | Composition and framing | Depth layers, negative space, frame-within-frame, the case against rule-of-thirds orthodoxy, visual weight |
-| 02 | Lighting design | Ratios, hard/soft, direction, motivated light, **making near-black readable** |
+| 02 | Lighting design | Ratios, hard/soft, direction, motivated light, **making near-black readable** | <!-- style-lint: ok (engine fact) -->
 | 03 | Colour design | Colour scripts, restricted palettes, the teal-and-orange critique, what colour folklore is myth |
 | 04 | Lens language | Focal length psychology, the distance-not-lens fact, deep focus, rack focus, lens height |
 | 05 | Camera height, angle and POV | The controlled studies on angle and trust — **the best-evidenced brief on power framing** |
@@ -24,7 +24,7 @@ not adopt.
 | 10 | Editing rhythm and the cut | Murch, cutting on action, juxtaposition as argument, the Adam Curtis problem |
 | 11 | **The static frame** | *La Jetée*, the decisive moment, the gutter, duration — **our dominant form** |
 | 12 | The boring-shot diagnostic | The "AI look" and "stock look" as formal properties *(its symptom table was never delivered — ours is in [`symptoms.md`](./symptoms.md))* |
-| 13 | Register and genre grammar | Noir/horror/sci-fi codes; the brutalist and documentary registers |
+| 13 | Register and genre grammar | Noir/horror/sci-fi codes; the brutalist and documentary registers | <!-- style-lint: ok (engine fact) -->
 | 14 | Visual motif | Motifs, the bookend, the objective correlative, arguing in pictures |
 
 ## Wave two — closing the critic's gaps
@@ -36,14 +36,14 @@ not adopt.
 | 17 | **Monumentalism — critique or celebration** | Sontag, Benjamin, the visible-cost test, aspirational reading. **The most editorially important brief** |
 | 18 | Machines and architecture as subject | The Bechers, Burtynsky, Salgado, the Nostromo; scale cues; why aerials can't carry emptiness |
 | 19 | Text on image | Klein's lettering rules, halation, WCAG, anchorage, the case against captions |
-| 20 | Near-black in practice | Banding, dither, compression, range tagging, measuring instead of eyeballing |
+| 20 | Near-black in practice | Banding, dither, compression, range tagging, measuring instead of eyeballing | <!-- style-lint: ok (engine fact) -->
 
 ## The critic passes
 
 | File | What |
 | --- | --- |
 | `critic-notes.md` | Wave one: eight gaps, the grade-laundering pattern, four contradictions, the top 20 |
-| `critic-notes-wave2.md` | Wave two: gap-closure verdicts, the judgement on brief 17's tests, **the house-register tension stated plainly** |
+| `critic-notes-wave2.md` | Wave two: gap-closure verdicts, the judgement on brief 17's tests, **the house-register tension stated plainly** | <!-- style-lint: ok (engine fact) -->
 
 ## What the sweep never covered
 

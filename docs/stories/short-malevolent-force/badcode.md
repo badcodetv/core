@@ -37,6 +37,11 @@ agreed cut on Drive. Owed: export from Premiere, delivery QC, gatekeeper.
 - The logo ending: 2.6 s black, two lightning flashes, the logo file on #050607. Logo is the file, never Flow.
 - Suno tracks for this short are instrumental only. Run the Flow runner outside the Bash sandbox (inside, it loses every download).
 
+## Flow project
+- `0153219b-e10c-46ac-b2a7-5b50200e19fe` — scenes/malevolent-force
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

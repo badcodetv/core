@@ -234,7 +234,7 @@ ffmpeg -v error -i /tmp/f-0.png -i /tmp/f-1.5.png -i /tmp/f-3.png \
 ```
 
 `scripts/video-contact-sheet.sh` wraps this with a `REGION` crop and an exposure lift for
-near-black frames.
+near-black frames. <!-- style-lint: ok (engine fact) -->
 
 
 ## 3.9 🔴 Hold a Veo clip's colour — and anchor on a PERCENTILE, never the mean
@@ -301,7 +301,7 @@ change with what is displayed, so they are correct whatever you draw:
 base  = plate[y0:y1, x0:x1].mean(2)
 lowf  = blur(base, 55)                          # the panel's broad shading
 resid = blur(base - lowf + 128.0, 2) - 128.0    # its reflections, sign preserved
-glass = 4.5 + np.clip(resid, 0, None) * 0.85    # near-black, reflections intact
+glass = 4.5 + np.clip(resid, 0, None) * 0.85    # near-black, reflections intact <!-- style-lint: ok (engine fact) -->
 ```
 
 Add an inner rim falloff too (`0.55 → 1.0` over ~14px). Real panels sit darker at the edge, and
@@ -339,7 +339,7 @@ and 4K for Nano Banana Pro; the Flow canvas does not give it to us. That governs
 | 4× | 344px | 3.72× |
 
 **About 1.07× is free. Everything beyond it trades sharpness.** In practice ~2× still reads on a
-moody near-black shot where softness passes as atmosphere; past ~2.5× it looks like what it is.
+moody near-black shot where softness passes as atmosphere; past ~2.5× it looks like what it is. <!-- style-lint: ok (engine fact) -->
 
 **So a big reveal cannot be a single post move off one Flow still.** The routes that work:
 

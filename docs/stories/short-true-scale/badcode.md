@@ -44,6 +44,11 @@ Jack's notes, then Premiere and export. (The earlier true-scale 3D graphic versi
 - Source line goes in the description; `marketing-gatekeeper` before posting.
 - Unclear: the README says the short "links to" another story (end link); where that link goes in the cut is not decided.
 
+## Flow project
+- `b77f9021-3e67-44a8-8179-7924a1d24ad9` — scenes/true-scale
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

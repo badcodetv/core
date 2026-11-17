@@ -47,6 +47,17 @@ Status: LOCKED for every part made. A new part with no look is EXPLORING (variat
 - No stop-motion. Accepted plates are honed from the pick, never re-derived; Kai approves plates before video.
 - Words change only with Kai; record only when Kai says "record".
 
+## Flow project
+- `e0e94e23-fe5f-4585-8f40-4a3abf95e83d` — scenes/banks-recut
+- `9415739d-6c98-4e7c-b68c-71bcb5cd1fb3` — scenes/chorus-2
+- `7c30dbaf-9efd-4f94-84e6-49c3314cad21` — scenes/chorus-outbreak, scenes/chorus-sky, scenes/choruses-humans
+- `62268958-ba2f-4aa5-b0a7-9639b96808e2` — scenes/chorus-poverty
+- `ecb26938-c035-4f88-937a-987cf1d13f26` — scenes/mv-ending
+- `20b33d98-b68e-4961-ae3e-d5a28860bc44` — scenes/second-half-b-the-door
+- `f75d93cd-b3e2-4c05-bc28-d5493b7a9f0c` — scenes/war
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

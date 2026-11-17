@@ -31,13 +31,13 @@ the satire trap, the narration recipe).
 > shipped since launch. The headline changes: **a Speech model exists** (§1b — voice and score in
 > one take, which is exactly what our GPOM narration does by hand), **the credit cost is now
 > answered by Suno** (§6), **the one-word edit worked on a multi-word, different-syllable swap**
-> (§3 rung 1), and **Audio Influence 100 and Weirdness 100 are reported usable on v6** (§8c).
+> (§3 rung 1), and **Audio Influence 100 and Weirdness 100 are reported usable on v6** (§8c). <!-- style-lint: ok (engine fact) -->
 > Ledger: [`docs/misc/2026-10-14-suno-v6-refresh.md`](../../misc/2026-10-14-suno-v6-refresh.md).
 
 **Contents.** 1 the models · **1b Speech (beta)** · 2 the create form · **3 fixing one word, one
 bar, one phrase** · 4 Studio with v6 · 5 new things worth suggesting · 6 stems, quality,
 downloads · 7 voices and custom models · 8 prompt craft deltas · **8c the anti-slop moves** ·
-9 vocals and D&B · 10 our v5.5 back catalogue · 11 known bugs · 12 the test queue
+9 vocals, drums and tempo · 10 our v5.5 back catalogue · 11 known bugs · 12 the test queue
 
 ---
 
@@ -71,7 +71,7 @@ presenters read as part of the name. **Custom models sit in the same dropdown**,
   **model and weirdness are two different axes that overlap** — don't read a Wild win as proof
   that high weirdness would have done the same.
 - **Give Wild three or four takes before judging it** (Moe Lueker's 150-song comparison,
-  2026-09-19: v6 needed 1–2 takes per keeper, Wild "several"; weirdness 30–50 on v6, 60–75 on
+  2026-09-19: v6 needed 1–2 takes per keeper, Wild "several"; weirdness 30–50 on v6, 60–75 on <!-- style-lint: ok (engine fact) -->
   Wild). Mini was "closer to v6 than to Wild, but flatter". Subjective, one listener, no blind test.
 
 ### Why v6 sounds more generic (2026-10-14)
@@ -324,7 +324,7 @@ When the change is a **whole verse** or more. Tested once on camera (Tim Makes M
 
 1. On the song: **⋯ → Remix → Cover** (the song loads as the audio reference).
 2. Edit the **Lyrics** box — replace only the lines that change.
-3. More Options: **Variety Off · Audio Influence 100 · Style Influence 0 · Weirdness 0** — every
+3. More Options: **Variety Off · Audio Influence 100 · Style Influence 0 · Weirdness 0** — every <!-- style-lint: ok (engine fact) -->
    slider pushed to "keep".
 4. Create.
 
@@ -471,8 +471,8 @@ out of a full-song generation — so for a part we care about, **generate it as 
 rather than splitting it out. Generations still occasionally bleed onto the wrong track. The
 biggest v6 jump is said to be felt inside Studio.
 
-**For D&B specifically (untested lead):** build the drums as a Studio per-track generation
-("174 BPM amen break, full tempo") instead of hoping the full mix gets the breakbeat right.
+**For any drum-led genre (untested lead):** build the drums as a Studio per-track generation
+(BPM + the break or kit + "full tempo") instead of hoping the full mix gets the drums right.
 
 ---
 
@@ -500,12 +500,12 @@ click-path** — don't wait to be asked.
 | "these two songs, but as one" 🆕 | Simple, drag both in, *"Combine these songs"* — even southern gospel × Brazilian funk produced a coherent track. Also the strongest anti-generic move (§8c) | tested (ChillPanic) |
 | "a spoken piece with music under it" 🆕 | **Speech (beta)** — §1b | vendor |
 | "two singers, one song" 🆕 | **duet from two songs** in Simple — §7 | tested once |
-| "I just want the drums" 🆕 | **v6 Wild + "… drums only"**, no genre word — §9 | tested (not on D&B) |
+| "I just want the drums" 🆕 | **v6 Wild + "… drums only"**, no genre word — §9 | tested (not on D&B) <!-- style-lint: ok (engine fact) --> |
 | "build it up from parts" 🆕 | **Sounds tab** loops with BPM + Key locked → combine in Simple — §9 | tested once |
 | "it's slurring that word" 🆕 | **Subtle Remaster** on v6 — §3 problem B | vendor (untested) |
 | "rewrite the whole verse" 🆕 | **rung 1b** self-Cover, not a Simple edit — §3 | tested once |
 | "get the old singer back" 🆕 | old song → Wild "recreate vocals verbatim" → Remix → Voice — §7 | reported |
-| "it's half speed again" 🆕 | strip `slow` / `half-time` from Style — §9 | tested (not on D&B) |
+| "it's half speed again" 🆕 | strip `slow` / `half-time` from Style — §9 | tested (not on D&B) <!-- style-lint: ok (engine fact) --> |
 
 A short sound (~5 s or less) as the seed **errors repeatedly** — give it a longer clip.
 Uploaded audio passes an originality/rights check before it can be used.
@@ -576,7 +576,7 @@ Uploaded audio passes an originality/rights check before it can be used.
 - 🆕 **A thin or raspy v6 vocal fixed by prompt, not settings** (Fondrey, 2026-10-04, one
   controlled series): replace a short tag list with (a) a detailed description of the singer and
   how they perform, (b) section-by-section guidance written from the lyrics, (c) a sentence about
-  the backing vocals. Settings held at Max Mode on · Weirdness 22 · Style Influence 73 · Variety Off.
+  the backing vocals. Settings held at Max Mode on · Weirdness 22 · Style Influence 73 · Variety Off. <!-- style-lint: ok (engine fact) -->
 - **UK accent on the song model: still no evidence anywhere** — the sweep found none.
 - **Lyricist and Inspo: no v6 information at all.**
 
@@ -618,14 +618,14 @@ measured finding of ours, ours wins.
 
 | Claim | Who says it | Our status |
 |---|---|---|
-| Start at **Weirdness 20 · Style Influence 75 · Variety Off** | [sunostyles](https://sunostyles.com/blog/suno-v6-settings), repeated by several guides | 🟡 close to Camping's re-cut (SI 80, weirdness paired 30/60). The source explicitly says *"not a claim that one preset wins"* |
+| One guide's starting preset: **Weirdness 20 · Style Influence 75 · Variety Off** | [sunostyles](https://sunostyles.com/blog/suno-v6-settings), repeated by several guides | 🟡 untested by us as a preset. The source explicitly says *"not a claim that one preset wins"*; settings are each story's own call (its `sound.md`) <!-- style-lint: ok (engine fact) --> |
 | **Weirdness 0 sounds stale; above 90 produces artifacts; 30–50 for a detailed prompt** | [Moe Lueker](https://moelueker.com/blog/suno-v6-guide) | 🟡 untested. The w60 half of a pair sits above the recommended band on purpose — drift is how Camping's `1127446d` got the things Jack likes |
-| **Style Influence 40 for a vague prompt, 65+ for a precise one** | Moe Lueker | 🟡 consistent with Camping's 80 |
+| **Style Influence 40 for a vague prompt, 65+ for a precise one** | Moe Lueker | 🟡 untested <!-- style-lint: ok (engine fact) --> |
 | **Variety above Off rewrites your Style box** | [Suno's own v6 FAQ](https://help.suno.com/en/articles/13924481) + every guide | ✅ **proven by us** 2026-09-13, twelve takes |
 | 🔑 **Max Mode is aimed at songs over two minutes**, and at keeping vocals and style consistent across a whole track | Suno via [Jack Righteous](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/inside-suno-v6-create-simple-advanced-sounds-guide), [weraveyou](https://weraveyou.com/2026/09/suno-v6-models-features-editing-sampling-advanced-mode/) | ⬜ **never tried by us, and every Camping take is 3 minutes plus.** This is the most obviously untested lever we own. Cost is "more credits", amount unstated |
 | **A constant-tempo clause reduces drift** — *"constant tempo, steady groove, no tempo changes, 4/4 time"* | [MixMasterAI](https://www.mixmasterai.co/suno-prompts/fix/wrong-tempo), [GenX Notes](https://blog.genxnotes.com/en/fix-suno-bpm-tempo-drift/) | 🟡 first used by us in r54 (Camping), unmeasured |
-| **D&B works at 170–175; above 180 drum resolution degrades** | MixMasterAI | 🟡 consistent with Camping's 174 |
-| **Rap speed is set with musical units, not adjectives** — 16th-note subdivisions, ~16 syllables a bar, `double-time`, `rapid-fire`, `chopper`; and `laid-back`/`smooth` actively slow it | [HookGenius](https://hookgenius.app/learn/suno-hiphop-prompts/), [Undetectr](https://undetectr.com/blog/suno-prompts-for-hip-hop) | 🟡 the basis of r55's flow spec. **Do the arithmetic before pasting a number**: at 174 BPM, 16ths is 11.6 syllables a second, which no human does — eighths (5.8/sec) with 16th bursts is what "fast" actually means at this tempo |
+| **D&B works at 170–175; above 180 drum resolution degrades** | MixMasterAI | 🟡 untested by us above 175 <!-- style-lint: ok (engine fact) --> |
+| **Rap speed is set with musical units, not adjectives** — 16th-note subdivisions, ~16 syllables a bar, `double-time`, `rapid-fire`, `chopper`; and `laid-back`/`smooth` actively slow it | [HookGenius](https://hookgenius.app/learn/suno-hiphop-prompts/), [Undetectr](https://undetectr.com/blog/suno-prompts-for-hip-hop) | 🟡 the basis of r55's flow spec. **Do the arithmetic before pasting a number**: at 174 BPM, 16ths is 11.6 syllables a second, which no human does — eighths (5.8/sec) with 16th bursts is what "fast" actually means at this tempo <!-- style-lint: ok (engine fact) --> |
 | **Avoid the words `fusion` and `meets`; say which layer belongs to which genre** | [SunoPromptPro](https://www.sunopromptpro.com/en/guides/suno-genre-combinations) | 🟡 agrees with our unity-sentence rule (`suno-tag-mechanics.md`) |
 | **Name two or three instruments, not a full band** | [Brahmstorm](https://brahmstorm.com/blog/suno-genre-blending-prompts-that-actually-work/) | 🟡 adopted in r55 |
 | **v6 follows the Style field more literally than v5.5** | most guides | 🟡 consistent with Camping's r53 pivot to Style Influence 80 |
@@ -651,11 +651,11 @@ you.** Five ways out, best first for us:
 1. **Name the production techniques, not the genre.** For a niche genre the name alone gives a
    passable average. What landed was the *mechanics* — e.g. *"hardstyle kick, pitched down one
    octave on drop impact; breakbeat chops; supersaw chord burst, hard cut; FM bass growl, sub
-   drop"*. ✅ **This is already §9's D&B finding** (name the drum mechanics, not the sub-genre) —
+   drop"*. ✅ **This is already §9's D&B finding** (name the drum mechanics, not the sub-genre) — <!-- style-lint: ok (engine fact) -->
    now with a second, independent v6 data point.
 2. **Combine songs.** Make two unrelated songs, drag both into Simple, *"Combine these songs."*
 3. **Wild first, then Cover into v6.** Wild is worse on fidelity and mix but more creative; once
-   a Wild take has the idea, **Advanced → Cover on v6 at Weirdness 0, Audio Influence 80** — "the
+   a Wild take has the idea, **Advanced → Cover on v6 at Weirdness 0, Audio Influence 80** — "the <!-- style-lint: ok (engine fact) -->
    same melody and the same idea, just made it sound better." ✅ Matches §1's Wild-then-Cover option;
    now with numbers.
 4. **High weirdness as a quarry.** Generate at very high weirdness, then **Sample** or **Cover**
@@ -666,16 +666,16 @@ you.** Five ways out, best first for us:
 
 - **Draft with Max Mode off, polish with a Max Mode Cover.** Max Mode is audibly better and costs
   more (§6). Once a take is right: **Cover it with Max Mode on, Style box emptied, Weirdness 0,
-  Style Influence 100, Audio Influence 100.** 🔑 This is the cheapest test of Max Mode we own —
+  Style Influence 100, Audio Influence 100.** 🔑 This is the cheapest test of Max Mode we own — <!-- style-lint: ok (engine fact) -->
   Camping's accepted take is the obvious candidate (§12 test 8).
 - **Variety Off.** "Sometimes when I have variety on, it just doesn't listen to my prompt at all,
   even with balanced variety… worse generations every time." ✅ **Agrees with our proven finding**
   (§8: Variety rewrites the Style box) — an independent ear arriving at the same rule.
 - 🔴 **Audio Influence and Weirdness changed intensity on v6 — this overturns old advice.**
-  - **Audio Influence 100 is now usable with a Voice.** On v5.5 his deliberately over-the-top
+  - **Audio Influence 100 is now usable with a Voice.** On v5.5 his deliberately over-the-top <!-- style-lint: ok (engine fact) -->
     emo Voice at AI 100 was unlistenable; on v6 at AI 100 "it still maintains that character, but
     it sounds much better." The community "100 glitches, use 80–96" rule is **v5.5 advice**.
-  - **Weirdness 100 no longer glitches** — "doesn't sound like glitches to me." Moe Lueker
+  - **Weirdness 100 no longer glitches** — "doesn't sound like glitches to me." Moe Lueker <!-- style-lint: ok (engine fact) -->
     (2026-09-19) still says >90 risks artifacts, so: **reported both ways; test before relying.**
   - For a story with a saved narrator Voice (GPOM's): it may now hold at a much higher Audio
     Influence than that story's settings assume — a one-variable test, not a re-template (§12 test 6).
@@ -696,10 +696,10 @@ log every credit), and the training-set explanation (speculation — §1).
 
 ---
 
-## 9. Vocals and drum & bass
+## 9. Vocals, drums and tempo
 
-*D&B is here because GPOM's and Camping's tracks are D&B, so that's where our tests are — a genre
-we have worked in, not a default. A story's genre is in its `sound.md`.*
+*The genre examples below (D&B among them) are where tests happened to be run, not a recommended <!-- style-lint: ok (engine fact) -->
+genre. A story's genre and settings are in its `sound.md`.*
 
 - **Duets:** explicit `Male vocal` / `Female vocal` under section tags gave a real alternating
   duet; "male and female" in a Simple style also worked. Still no duet control — our "cut on the
@@ -712,8 +712,8 @@ we have worked in, not a default. A story's genre is in its `sound.md`.*
   British→Australian accent drift and has no saved Voice. Until tested, GPOM keeps its template in
   `docs/stories/gitpush-origin-master/songs/narration.md`. Other lever still untested: a
   **Studio vocal track** from typed lyrics.
-- **D&B:** a lazy `liquid DnB` prompt came back as **two-step drums** ("that does not sound like
-  D&B"); an **engineered** breakcore/jungle prompt worked on both models — *"aggressive breakcore
+- **D&B:** a lazy `liquid DnB` prompt came back as **two-step drums** ("that does not sound like <!-- style-lint: ok (engine fact) -->
+  D&B"); an **engineered** breakcore/jungle prompt worked on both models — *"aggressive breakcore <!-- style-lint: ok (engine fact) -->
   instrumental, rapid chop, jungle breaks, hyperdetail percussion, dark synth bassline, euphoric
   melodic chops"*. **Name the drum mechanics, not the sub-genre** — the same lesson as our
   riddim/neurofunk notes, now with a v6 data point. Half-time is **not known to be fixed**.
@@ -722,12 +722,12 @@ we have worked in, not a default. A story's genre is in its `sound.md`.*
 
 ### 🆕 Tempo on v6 — the likely cause of our half-time drift (SunoAI攻略ちゃんねる, 2026-10-06)
 
-Tested on camera with a metronome, on rock, J-pop, trance, R&B — **not on D&B**, so every row
+Tested on camera with a metronome, on rock, J-pop, trance, R&B — **not on D&B**, so every row <!-- style-lint: ok (engine fact) -->
 needs our own run at 170–175.
 
 - 🔑 **"slow" or "half-time" next to a BPM halves the effective tempo; "fast" doubles it.**
   `120bpm, fast, rock` played at an effective 240; `80bpm, slow, rock` at 40. And **v6 sometimes
-  halves a high BPM on its own.** For full-tempo D&B, keep `slow`, `half-time`, `laid-back` and
+  halves a high BPM on its own.** For full-tempo D&B, keep `slow`, `half-time`, `laid-back` and <!-- style-lint: ok (engine fact) -->
   similar out of the Style box entirely (they may be leaking in from mood words). For a deliberate
   half-time track, `<N>bpm, slow` may be the lever.
 - **Round BPMs hold harder** (reported): `120bpm` ≈ 120, `153bpm` drifts 151–156. So `170bpm` may
@@ -738,10 +738,10 @@ needs our own run at 170–175.
   a range `120bpm-140bpm` picks one end. One tempo per song.
 - Keep the BPM inside 50–200; any format works (`170bpm`, or even a bare number).
 
-### 🆕 Drums and D&B on v6 Wild and Sounds
+### 🆕 Drums on v6 Wild and Sounds
 
 - **Wild + "<instrument> only" returns just that instrument**; v6 adds a band (tested, 2026-09-14).
-  For a D&B drum bed, e.g.: v6-wild, Variety Off, `170bpm, chopped breakbeat drums only`. **No genre word** — "J-POP
+  For a drum bed: v6-wild, Variety Off, `<N>bpm, <drum description> drums only`. **No genre word** — "J-POP
   bass only" still gave a full J-pop track.
 - **Wild keeps uploaded drum rhythms that v6 normalises** (tested): an odd-meter home-made break
   Extended on Wild kept its pattern; v6 lost the time signature. Then **Cover** the Wild result to
@@ -752,7 +752,7 @@ needs our own run at 170–175.
 - **The Sounds tab — build element by element** (2026-09-28, tested): Create → **Sounds** → set
   **BPM** and **Key** (lock the same values on every element) → Type **Loop** for beds ("a seamless
   repeating clip"; vendor) → prompt each part with exclusions in the text: *"fast breakbeat drums
-  only, amen break, drums only, no melody, no bass, no guitar, no synth"*, then the bass, then a pad
+  only, amen break, drums only, no melody, no bass, no guitar, no synth"*, then the bass, then a pad <!-- style-lint: ok (engine fact) -->
   → **Simple → drag all the clips in → "combine this all together into one song"** (+ a Style with
   genre and BPM). Length goes in the prompt ("30 second long…"). Loops "may include full musical
   arrangements" — check. Also a candidate for **dry-and-separate narration beds**.
@@ -818,7 +818,7 @@ logged before and after.
    it), pause length, the last two seconds, singing drift. If a single word is wrong, try the
    Editor's word Replace before re-rolling. Compare against the accepted song-model take. Log
    credits. *Listening stays Kai's: no Gemini listen unless asked.*
-0b. 🆕 **D&B tempo words** — the same D&B sheet with every `slow` / `half-time` / `laid-back` /
+0b. 🆕 **D&B tempo words** — the same D&B sheet with every `slow` / `half-time` / `laid-back` / <!-- style-lint: ok (engine fact) -->
    mood word that implies slowness removed, and `170bpm` vs `174bpm`. Does the half-time drift go?
 0c. 🆕 **Subtle Remaster on a mis-sung word** (problem B) — a native take with one unclear word →
    Remaster, model v6, **Subtle**. Did the word clear up while the take stayed?
@@ -836,12 +836,12 @@ logged before and after.
    = the profile is kept out, and the box's contents stop mattering entirely.
 5. **A D&B sheet (Camping's) on v6 vs Wild** — grid round R1 (`automation.md` §9).
 6. **GPOM's narrator Voice on v6 and Wild** — quiet-section timbre, UK accent, sibilance. 🆕 Add
-   one cell at **Audio Influence 100** (§8c says v6 now holds character there).
+   one cell at **Audio Influence 100** (§8c says v6 now holds character there). <!-- style-lint: ok (engine fact) -->
 7. **Variety** — does it change how far apart the two takes are? *(ChillPanic, by ear: on = it
    ignores the prompt. Off for refining a liked take stands either way; an exploring round may
    choose Variety per prompt — `same-song-traps.md` trap 10.)*
 8. **Max Mode** — 🆕 run it as ChillPanic's **polish Cover**: Camping's accepted take → Cover,
-   Max Mode on, Style empty, Weirdness 0, Style Influence 100, Audio Influence 100. Better than
+   Max Mode on, Style empty, Weirdness 0, Style Influence 100, Audio Influence 100. Better than <!-- style-lint: ok (engine fact) -->
    the source? Log the credit delta (reported 2×).
 9. **Credit cost** — ✅ base v6 answered by Suno (10 per Create, §6). Still open: Wild, Max Mode,
    an edit, Speech.
@@ -877,7 +877,7 @@ logged before and after.
   [`docs/misc/2026-10-14-suno-v6-refresh.md`](../../misc/2026-10-14-suno-v6-refresh.md).
   Nothing in this pass was measured by us.
 - 2026-10-14 (later) — **sweep 2**, Kai's request, run as a workflow: five themed researchers
-  (Speech, one-word fixes, voices, D&B, platform), YouTube-transcript-first, each followed by an
+  (Speech, one-word fixes, voices, D&B, platform), YouTube-transcript-first, each followed by an <!-- style-lint: ok (engine fact) -->
   adversarial verifier that re-fetched every transcript. ~70 findings in, ~10 killed, ~20
   downgraded. Rewrote §1b's form; added rung 1b, Subtle Remaster for problem B, the Song Editor's
   new moves, Variety-default-by-model, Max Mode in Suno's words, the duet / old-singer / thin-vocal

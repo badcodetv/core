@@ -2,7 +2,7 @@
 title: Google AI Studio — the voice toolkit
 engine: gemini-3.1-flash-tts-preview
 built: 2026-09-04
-status: 🟢 licence cleared 2026-09-08 — free tier, commercial use, £0, and no training on UK prompts. Strong free engine; the camping narrator went to Hume Octave 2026-09-04, but a second candidate ("Bob", Algenib) was built here 2026-09-08 and is unjudged
+status: 🟢 licence cleared 2026-09-08 — free tier, commercial use, £0, and no training on UK prompts. Strong free engine; the camping narrator went to Hume Octave 2026-09-04, but a second Camping candidate ("Bob", Algenib) was built here 2026-09-08 and is unjudged
 ---
 
 # Google AI Studio — voice generation
@@ -43,18 +43,9 @@ still governs: *every route that works COPIES an accent; none invent one.*
 
 ## ✅ THE VOICE LANDED (2026-09-04, Camping's narrator) — Jack: *"that worked"*
 
-**The winning configuration for Camping's narrator**, after five rewrites. It is Camping's voice: a record of
-what worked there, not a starting point for another story's voice (that comes from the story's `badcode.md` and `voice-casting`).
-
-| Field | Value |
-|---|---|
-| **Model** | `gemini-3.1-flash-tts-preview`, Composer mode |
-| **Voice** | **Algenib** (Gravelly, lower pitch) |
-| **Temperature** | 1 |
-| **Voice Direction** | The `# AUDIO PROFILE: Gaz M.` block below |
-| **Scene** | Salford back room, voice-memo recording clause |
-| **Sample Context** | Casting blurb **with the accent named in it** |
-| **Transcript** | Chunk 1, elided |
+The configuration that landed Camping's narrator after five rewrites (voice, boxes, settings) is
+Camping's, and lives in [`../stories/camping/sound.md`](../stories/camping/sound.md) (moved 2026-11-17).
+A story's own voice comes from its `badcode.md` and `voice-casting`. What generalises is the engine lesson:
 
 🔑 **What actually fixed it, in order of contribution:**
 
@@ -136,8 +127,8 @@ part of the note aloud ("…fetch Andrew. Nothing plummy or put on"). Re-run wit
   1. **The web page defaults to 3.8** (since 2026-09-23). A take made by hand in the browser without checking
      the model picker is a 3.8 take, not a 3.1 take.
   2. **The voice resets on its own** in the web page (seen 2026-10-03). Check Speaker settings → **Current**.
-  3. **The profiles got heavier.** Jack's best pick (3 Oct) was `Zubenelgenubi` + British (Brixton) with **every
-     other box empty**. Priority Lane's casting profiles run 58–69 words over several fields. Google's own advice
+  3. **The profiles got heavier.** Jack's best pick (3 Oct, Money For Something's narrator) was a voice name plus the Accent setting with **every
+     other box empty** (the recipe is in `../stories/magic-money-tree/sound.md`). Priority Lane's casting profiles run 58–69 words over several fields. Google's own advice
      is not to overspecify.
 - **The fair test:** render one Priority Lane line twice, once with the old 3 Oct recipe (voice + accent, nothing else)
   and once with the Priority Lane profile, and Jack picks blind. If the bare one wins, the cause is prompting; if both
@@ -157,9 +148,9 @@ narrator audition). Everything here is ✅ seen unless marked.
 - **`gemini-3.1-flash-tts-preview` is still in the model picker** (Audio tab) and still has the
   Composer. Its voice list is the **30 prebuilt voices only**.
 - **The Accent dropdown has eight options:** Neutral, American (Gen), American (Valley),
-  American (South), **British (RP)**, **British (Brixton)**, Transatlantic, Australian.
+  American (South), **British (RP)**, **British (Brixton)**, Transatlantic, Australian. <!-- style-lint: ok (engine fact: the dropdown's options) -->
 - 🔑 **The dropdown is prose, not a parameter.** The request sent with only the Accent set is:
-  `Read the following transcript based on the director's note.\n\n# Director's note\nAccent: British (Brixton).\n\n## Transcript:\n<words>`.
+  `Read the following transcript based on the director's note.\n\n# Director's note\nAccent: British (Brixton).\n\n## Transcript:\n<words>`. <!-- style-lint: ok (engine fact: the request the page sends) -->
   So `scripts/aistudio-tts.py` can reproduce it exactly with that string as the profile.
 - 🔑 **Generation works from the CDP-attached browser on this page.** The 403 recorded for the chat
   page in [`../listening/automation.md`](../listening/automation.md) Trap 4b did not fire here:
@@ -172,12 +163,12 @@ narrator audition). Everything here is ✅ seen unless marked.
   event). Instead read the `GenerateContent` response body: it carries
   `"audio/l16; rate=24000; channels=1","<base64>"` chunks; concatenate, decode, wrap as WAV.
 - 🔴 **The voice resets on its own.** Later the same day the page showed **Achird** while the
-  Accent menu still read British (Brixton). Open Speaker settings and check the voice marked
+  Accent menu still read British (Brixton) (Money For Something audition). Open Speaker settings and check the voice marked
   **Current** before every session; `scripts/ai-studio/.tmp/render.mjs` does this and then
   renders a list of lines (11 of 11 returned complete audio on the first go, 1.4s to 8.6s).
-- ✅ **Judged by Jack, 3 October:** of five takes (Enceladus RP, Enceladus Brixton, Zubenelgenubi
-  RP, Zubenelgenubi Brixton, Puck RP) he picked **Zubenelgenubi + British (Brixton)**, with every
-  other box empty. One line only; not yet tested on a second line.
+- ✅ **Judged by Jack, 3 October, for Money For Something's narrator:** of five takes (two voices x two accents, plus
+  one more), the pick had **every other box empty**: a voice name and the Accent setting only. Which voice and
+  accent is that story's, in `../stories/magic-money-tree/sound.md`. One line only; not yet tested on a second line.
 
 ## 🆕 READ 2026-10-19 — Voice Design on 3.8 is in the API, and it changes how to prompt
 
@@ -318,11 +309,11 @@ with Thanks"* rule belongs to **Flow** and has no place here.
 | --- | --- |
 | 🔑 **VOICE DIRECTION** | *"Describe the voice persona."* **The load-bearing field.** Persona + accent + style + pace go here |
 | **Style / Pace / Accent** dropdowns | Presets sitting beside the box. ⬜ Unverified whether they beat writing the same thing in prose. Google's own rule says **specific beats generic**, so prose with a place name is the safer bet |
-| 🔑 **Voice** — *"Search 5,000+ voices"* | Filters: **Language · Accent · Gender · Age · Style · Use case**. Groups seen: *Featured* (Charon, Kore, Puck), *Studio classics* (Achernar, Achird, Algenib…), *Narration* (Alnilam…) |
+| 🔑 **Voice** — *"Search 5,000+ voices"* | Filters: **Language · Accent · Gender · Age · Style · Use case**. Groups seen: *Featured* (Charon, Kore, Puck), *Studio classics* (Achernar, Achird, Algenib…), *Narration* (Alnilam…) <!-- style-lint: ok (engine fact: UI catalogue) --> |
 | 🥇 **+ New voice** | ✅ **Opened 2026-09-04 — it is Voice Design *and* cloning.** See "the copy route" below. This is the most important control on the screen |
 
 🔴 **The 5,000-voice library is bigger than anything documented.** Every write-up and Google's own
-API docs say **30 prebuilt voices** (Zephyr, Puck, Charon, Kore … Sulafat). The UI says 5,000+ with
+API docs say **30 prebuilt voices** (Zephyr, Puck, Charon, Kore … Sulafat). <!-- style-lint: ok (engine fact: catalogue) --> The UI says 5,000+ with
 an **Accent filter**. **The UI is the truth; the docs describe the API.** This is the single most
 valuable thing on the screen and no article mentions it.
 
@@ -335,7 +326,7 @@ valuable thing on the screen and no article mentions it.
 
 ## The prompt structure — Google's own four parts
 
-Google's worked example ("Jaz R.", a Brixton radio DJ) maps 1:1 onto the Composer fields:
+Google's worked example ("Jaz R.", a Brixton radio DJ) maps 1:1 onto the Composer fields: <!-- style-lint: ok (engine fact: Google's own example) -->
 
 | Part | Definition, verbatim |
 | --- | --- |
@@ -404,7 +395,7 @@ Pace: <pace in plain words>. <how the pitch moves inside a sentence>.
 **→ SCENE** — where it is recorded and how close the mic is. **→ SAMPLE CONTEXT** — what kind of
 work this voice is hired for. (Camping's own boxes are in its `sound.md`.)
 
-### 🔴 Two clauses the Suno rounds ruled OUT — do not reintroduce them
+### 🔴 Clauses Camping's Suno narration rounds ruled OUT (Camping's narrator)
 
 | Do not write | Why | Source |
 |---|---|---|
@@ -412,8 +403,8 @@ work this voice is hired for. (Camping's own boxes are in its `sound.md`.)
 | **"mouth barely opening"** | Physically contradicts *"vowels drawn out and bent"*, and both are articulation clauses — the strongest lever we have. Two of them cancel | Round 19 |
 | **"in his fifties"** | Round 19 settled on **forties** | Round 19 |
 
-⚠️ **Try the Accent filter first anyway.** Filtering the 5,000-voice library to a real northern
-English male narrator **copies** an accent; the prose above **invents** one. Every previous engine
+⚠️ **Try the Accent filter first anyway.** Filtering the 5,000-voice library to the accent the story's
+`sound.md` asks for **copies** an accent; prose **invents** one. Every previous engine
 in this investigation failed at inventing.
 
 ## 🔴 FOUND 2026-09-04 — Voice Direction has a ceiling, and it is the accent
@@ -481,19 +472,16 @@ the one Jack called "spot on" — right accent, right age, right class.**
 
 ### → DESCRIBE IT
 
-*Worked example — Camping's narrator, as briefed on 2026-09-04 (a later ruling dropped the northern
-accent and the phonetics in it). A story's own description goes in its `sound.md`.*
+*Shape only, in the field's own order; every `<…>` comes from the story's `sound.md`. Camping's
+2026-09-04 description is in [`../stories/camping/sound.md`](../stories/camping/sound.md) (moved 2026-11-17).*
 
 ```
-Timbre and weight: a gravelly voice with real grit and a little smoke in it, worn and lived-in, mid-weight — never boomy, never resonant like an announcer, never a movie trailer. Age: forties. Gender: male. Pitch: mid-range to lower-middle, never a deep bass or a plummy baritone. Pacing: slow and unhurried, around 130 words per minute, ordinary conversational speech with uneven sentence lengths; he leaves gaps and does not rush to fill them, and every full stop is a real stop with a breath in it. Accent: working-class northern English, from Salford in Greater Manchester — hard flat vowels, a short hard "a" in bath and last, drawn out and leaned on and drooping at the ends of words, swallowed consonants, dropped T's and dropped H's. Never Received Pronunciation, never London, never American. Tone: bored, cocky and thoroughly unimpressed, deadpan and certain, with a warmth underneath that he would deny. Delivery quirks: he speaks through his nose with his chin lifted and his jaw pushed forward, a curled lip on every line; his pitch swoops up inside a sentence and drops away at the end of it, never droning and never on one note; he throws every punchline away instead of landing it and never once signals that something is funny.
+Timbre and weight: <texture, weight, and what it must never become>. Age: <age>. Gender: <gender>. Pitch: <where it sits, as pitch, not an archetype>. Pacing: <speed and rhythm in plain words>. Accent: <one mild clause naming a place>. Tone: <attitude, and what sits underneath it>. Delivery quirks: <how jokes land, how the pitch moves inside a sentence>.
 ```
 
-**Audition the three takes on one line only** — `voice.md`'s test, the driest thing in the script:
-
-> *"I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit."*
-
-Flat and amused is Camping's narrator. Any lift, any grandeur, any sense that it knows it is funny is
-wrong, however good the timbre.
+**Audition the three takes on one line only** — the line from the script that most tests the story's
+register (Camping used its driest line). Judge the takes against the story's `sound.md`, not against
+the timbre alone.
 
 ### 🔴 CLOSED 2026-09-04 — Voice Design is allowlisted, and money does not open it
 
@@ -511,8 +499,8 @@ description *and* a two-word one. **Same error, so the feature is gated, not the
 this particular door. **Do not attach billing on the strength of it.**
 
 ⚠️ **One door it does leave open, later:** the consent flow is designed for *a real person who
-agrees* — which is exactly `voice.md`'s £0 route (Jack, Kai, or a paid northern reader). If we ever
-want a permanent BadCode narrator voice, that is the legitimate path, and it starts with contacting
+agrees* — which is exactly `voice.md`'s £0 route (Jack, Kai, or a paid reader). If a story ever
+wants a permanent cloned voice of its own, that is the legitimate path, and it starts with contacting
 sales rather than clicking a button.
 
 ### 🔴 UNRESOLVED — can we publish audio made on the free tier?
@@ -525,16 +513,22 @@ terms, which say Google *"won't claim ownership"* of generated content on either
 the ElevenLabs free-tier problem `voice.md` found late. **Settle it against Google's own terms
 before any AI Studio narration ships**, not after.
 
-### Which prebuilt voice, if you are not designing one
+### Prebuilt voices: Google's own labels (engine catalogue, not a ranking)
 
-| Voice | Google's label | For this narrator |
+| Voice | Google's label | Notes |
 |---|---|---|
-| **Charon** | Informative, lower pitch | 🟡 The documentary default. Clear, neutral, safe — and *neutral* is what this brief is not |
-| 🥇 **Algenib** | **Gravelly**, lower pitch | Closest to the gravel-baritone reference. ✅ **Used 2026-09-08** for the "Bob" narrator candidate — a **southern** English profile, not northern, and it worked. Boxes: [`../stories/camping/narration/voice.md`](../stories/camping/narration/voice.md) § CANDIDATE 2026-09-08 |
-| **Alnilam** | Firm — filed under **Narration** in the UI | 🟡 Worth a pass |
-| **Orus** | Firm | 🟡 Also recommended for narration |
+| **Charon** | Informative, lower pitch | Measures as an American male, ~160 wpm (see below) |
+| **Algenib** | Gravelly, lower pitch | Used on Camping (Bob, 2026-09-08) <!-- style-lint: ok (engine fact: vendor label) --> |
+| **Alnilam** | Firm | Filed under **Narration** in the UI |
+| **Orus** | Firm | — |
 
-⚠️ **The documented accent set is RP and Brixton. No northern English variant is named anywhere in
+Which voice suits a story is that story's call (its `sound.md`, cast with `voice-casting`); how
+these four were weighed for Camping's narrator is in
+[`../stories/camping/sound.md`](../stories/camping/sound.md). The full list is
+[below](#the-16-male-voices-for-deliberate-contrast) and in the
+[female shortlist](#️-the-female-voice-shortlist--researched-2026-09-09).
+
+⚠️ **The documented accent set is RP and Brixton. No northern English variant is named anywhere in <!-- style-lint: ok (engine fact) -->
 Google's docs** — which is exactly why Voice Design and the Accent filter matter more than the prose.
 
 ## 🔑 ALL FOUR FIELDS VOTE — run the box audit before every generation
@@ -543,7 +537,7 @@ Google's docs** — which is exactly why Voice Design and the Accent filter matt
 There, the Exclude box was voting **9-to-2 against** the accent the Style box was asking for, and
 nineteen rounds of rewording never found it because nobody counted.
 
-**The same audit on this engine, 2026-09-04:**
+**The same audit on this engine, 2026-09-04 (Camping's narrator, which wanted a northern accent):**
 
 | Field | Accent-coded | Neutral | Verdict |
 |---|---|---|---|
@@ -574,9 +568,9 @@ nineteen rounds of rewording never found it because nobody counted.
 
 | Take | Pasted | Came back |
 | --- | --- | --- |
-| Kore, narrator | 9 lines | **42.6s, stops mid-word in line 4** |
-| Zubenelgenubi, Tarquin | 14 lines | **29.3s — skipped a whole line (T2), then stopped mid-word** |
-| Algenib, Bob | 5 lines | 49.2s, complete |
+| Kore, narrator (Camping) | 9 lines | **42.6s, stops mid-word in line 4** |
+| Zubenelgenubi, Tarquin (Camping) | 14 lines | **29.3s — skipped a whole line (T2), then stopped mid-word** |
+| Algenib, Bob (Camping) | 5 lines | 49.2s, complete |
 
 **None of these is near the ~10-minute output ceiling.** It is a known defect in the preview model,
 not a limit:
@@ -649,12 +643,12 @@ have vendor backing rather than one blog:
 
 ### ✅ And accent steering IS reliable — tested independently
 
-Simon Willison, testing 3.1 on launch day, swapped the accent line from **Brixton** to **Newcastle**
+Simon Willison, testing 3.1 on launch day, swapped the accent line from **Brixton** to **Newcastle** <!-- style-lint: ok (engine fact: external test) -->
 to **Exeter, Devon** and got *"noticeably different vocal outputs, indicating reliable accent
 directionality."* 🔑 **So naming a northern city does work.** Our failures were the phonetic stack
 and the flatness words, not the accent request itself.
 
-## 🎭 The storybook register — a Manchester version of the Ted opening
+## 🎭 The storybook register — a Manchester version of the Ted opening (explored for Camping)
 
 🔴 **Never name the actor.** Google enforces a **"prominent individuals"** filter across the
 platform, and Gemini TTS *"ships preset voices only… as a compliance measure."* Naming him gets the
@@ -686,15 +680,15 @@ nothing for TTS — **do not spend a round on it.**
 
 ### The 16 male voices, for deliberate contrast
 
-`Achird` · `Algenib` · `Algieba` · `Alnilam` · `Charon` · `Enceladus` · `Fenrir` · `Iapetus` ·
-`Orus` · `Puck` · `Rasalgethi` · `Sadachbia` · `Sadaltager` · `Schedar` · `Umbriel` · `Zubenelgenubi`
+`Achird` · `Algenib` · `Algieba` · `Alnilam` · `Charon` · `Enceladus` · `Fenrir` · `Iapetus` · <!-- style-lint: ok (engine catalogue) -->
+`Orus` · `Puck` · `Rasalgethi` · `Sadachbia` · `Sadaltager` · `Schedar` · `Umbriel` · `Zubenelgenubi` <!-- style-lint: ok (engine catalogue) -->
 
-⚠️ **Charon measures as an American male at ~160 wpm and ~152 Hz** — which is the family we spent
-the day trying to drag to Manchester. **Algenib sits in the same low, grave family.** If two voices
+⚠️ **Charon measures as an American male at ~160 wpm and ~152 Hz** — the family Camping's rounds spent
+the day trying to drag to Manchester. **Algenib (Camping) sits in the same low, grave family.** If two voices
 have produced "similar", the answer is to jump family, not to rewrite the notes: **`Puck` (Upbeat)**,
-**`Fenrir` (Excitable)**, **`Zubenelgenubi` (Casual)** and **`Iapetus` (Clear)** are the far end.
+**`Fenrir` (Excitable)**, **`Zubenelgenubi` (Casual)** and **`Iapetus` (Clear)** are the far end. <!-- style-lint: ok (engine fact: vendor labels) -->
 
-### 🎭 The register swing — the induction-video narrator
+### 🎭 The register swing — the induction-video narrator (tried on Camping)
 
 When the *grave* register has been tried five ways, **invert it.** A bright, brisk, relentlessly
 pleasant corporate-onboarding voice describing asset stripping and homelessness is the opposite
@@ -763,12 +757,12 @@ sets *"~155 words/minute"* as a **ceiling**. Running faster than that is a delib
 preference during the Suno casting rounds and, in that page's own words, *"has now cost more than
 every other decision on this film combined."* **It is now formally dropped.**
 
-### Which accents actually work — the evidence, ranked
+### Which accents have evidence behind them on this engine
 
-| Accent | Evidence | Verdict |
+| Accent | Evidence | Notes |
 |---|---|---|
-| 🥇 **Brixton / South-East London** | **Named in Google's own worked example** (*"Jaz is from Brixton, London"*) and in the documented accent set | **The best-evidenced British option on this engine.** (Camping also picked it because its film is set around the NatWest floor, the Shard and a Waitrose car park: a story call, in its `sound.md`) |
-| 🥈 **General American** | 🔑 **The model's native default** — Charon measures as an American male. And [`../stories/karen/narration/voice.md`](../stories/karen/narration/voice.md) already casts Karen's narrator as *"General American with a faint Western ease"* | `voice.md`'s own post-mortem: *"Karen's target IS the model's default. Camping's is the opposite of it."* **Karen worked. That is the reason** |
+| **Brixton / South-East London** | **Named in Google's own worked example** (*"Jaz is from Brixton, London"*) and in the documented accent set | Vendor-documented. It is also a *performed* register in Google's example (a radio DJ); see cause 4 below. Which story uses it is that story's call <!-- style-lint: ok (engine fact: vendor-documented accent) --> |
+| **General American** | 🔑 **The model's native default** — Charon measures as an American male. And [`../stories/karen/narration/voice.md`](../stories/karen/narration/voice.md) already casts Karen's narrator as *"General American with a faint Western ease"* | `voice.md`'s own post-mortem: *"Karen's target IS the model's default. Camping's is the opposite of it."* **Karen worked. That is the reason** |
 | **RP · Estuary · Transatlantic** | In the documented set | Available. (Camping ruled RP wrong for its reader: a story call, in its `sound.md`) |
 | **Newcastle · Exeter** | Simon Willison got *"noticeably different vocal outputs"* swapping these in | Steering works — but these are **undocumented**, i.e. what we spent a day failing at |
 
@@ -781,7 +775,7 @@ every other decision on this film combined."* **It is now formally dropped.**
 
 ## 🔑 CONFIRMED 2026-09-09 — the REAL blob shape, taken from AI Studio's own export
 
-**Jack pasted the `Get code` export of the working Kore build.** It is the authoritative answer to
+**Jack pasted the `Get code` export of the working Kore build (Camping's narrator).** It is the authoritative answer to
 a question this file has been guessing at: **how AI Studio actually assembles the four Composer
 fields into one prompt.** Verbatim shape:
 
@@ -838,10 +832,10 @@ with all four fixed. **Use the script, not a fresh paste.**
 
 ## ✅ CONFIRMED 2026-09-09 — `Kore` landed the camping narrator, first take
 
-**Jack: *"the Kore one works."*** The shortlist below is now `[confirmed]` where it was research,
+**Jack (Camping): *"the Kore one works."*** The shortlist below is now `[confirmed]` where it was research,
 and **three claims in this file are promoted:**
 
-1. ✅ **`voice_name` owns the outcome.** The pick moved `Gacrux` → `Kore` on a *character* argument,
+1. ✅ **`voice_name` owns the outcome.** Camping's pick moved `Gacrux` → `Kore` on a *character* argument,
    not a prose one, and that is what landed it. 🔑 **The open question this file asked — *does
    firmness carry restraint better than lowness?* — is answered: yes.** Authority comes from
    control, not depth.
@@ -860,7 +854,7 @@ rounds of rewording contributed nothing; **one voice-name change did it.**
 
 ## 🎙️ THE FEMALE VOICE SHORTLIST — researched 2026-09-09
 
-**Jack's brief: a ready-made voice, English, woman, otherwise free.** Researched properly rather
+**Jack's brief for Camping's narrator: a ready-made voice, English, woman, otherwise free.** Researched properly rather
 than guessed. **One of the two musts is deliverable from the voice list; the other is not.**
 
 ### 🔑 The finding that decides it: only TWO of the 30 are female AND low-pitched
@@ -873,13 +867,18 @@ The two are **`Gacrux`** and **`Vindemiatrix`**. That is the whole field.
 [`voice_name` owns timbre](#-ruled-2026-09-04--the-prompt-cannot-change-the-voice-only-the-voice-name-can)** —
 placement is the one axis prose has never been able to move.
 
-| Voice | Google's descriptor | Gender | Pitch | Verdict for a 51-year-old with banked anger |
-| --- | --- | --- | --- | --- |
-| 🥇 **`Gacrux`** | **Mature and experienced** | Female `[vendor]` | **Low** `[community]` | **The pick.** The only voice in the set that starts in the right place on both axes at once. *Mature and experienced* is the character description, not an approximation of it |
-| 🥈 **`Kore`** | **Firm and confident** | Female `[vendor]` | Not classified low | **Do not skip it.** *Firm* is the trait contained anger actually needs, and **firmness may beat lowness** — [the three dials](#-three-dials-that-are-easy-to-confuse--placement-melody-and-accent-strength) are independent and we have never tested which one carries restraint. A real A/B, not a fallback |
-| 🥉 **`Vindemiatrix`** | **Gentle and kind** | Female `[vendor]` | **Low** `[community]` | Right pitch, wrong disposition — *gentle* fights the whole brief. Only if the other two come back too hard |
-| ❌ **`Schedar`** | Even and balanced | **Male** `[community]` | — | Ruled out on gender. Recorded because it is an easy mis-shortlist |
-| ❌ `Achernar` `Aoede` `Autonoe` `Callirrhoe` `Despina` `Erinome` `Laomedeia` `Leda` `Pulcherrima` `Sulafat` `Zephyr` | Soft · Breezy · Bright · Easy-going · Smooth · Clear · Upbeat · Youthful · Forward · Warm · Bright | Female | Higher | Every descriptor is the opposite of the brief. **`Leda` (Youthful) is wrong by two decades** |
+| Voice | Google's descriptor | Gender | Pitch |
+| --- | --- | --- | --- |
+| **`Gacrux`** | Mature and experienced | Female `[vendor]` | **Low** `[community]` |
+| **`Kore`** | Firm and confident | Female `[vendor]` | Not classified low <!-- style-lint: ok (engine catalogue) --> |
+| **`Vindemiatrix`** | Gentle and kind | Female `[vendor]` | **Low** `[community]` |
+| **`Schedar`** | Even and balanced | **Male** `[community]` (an easy mis-shortlist) | — |
+| `Achernar` `Aoede` `Autonoe` `Callirrhoe` `Despina` `Erinome` `Laomedeia` `Leda` `Pulcherrima` `Sulafat` `Zephyr` | Soft · Breezy · Bright · Easy-going · Smooth · Clear · Upbeat · Youthful · Forward · Warm · Bright | Female | Higher |
+
+The shortlist was researched for Camping's narrator (a 51-year-old with banked anger); how each voice was
+judged for her, and which voice won (Camping), is in
+[`../stories/camping/sound.md`](../stories/camping/sound.md) (moved 2026-11-17). The engine lesson: firmness
+carried restraint better than lowness there, so the three dials are worth testing separately.
 
 ### 🔴 The second must is NOT deliverable from this list, and the evidence is now unambiguous
 
@@ -893,7 +892,7 @@ placement is the one axis prose has never been able to move.
   this file has now disproved three times in one day**
   ([the accent ruling](#-ruled-2026-09-09--the-accent-is-ridiculous-and-over-the-top-like-a-cartoon-five-causes)).
 
-> **So the position is honest and narrow: `Gacrux` gets us the woman and the register. It does not
+> **So the position (for Camping) was honest and narrow: `Gacrux` gets us the woman and the register. It does not
 > get us England, and no wording will.**
 
 ### ⬜ The one unknown left, and it is a 30-second check
@@ -929,8 +928,8 @@ Four of the five causes are in our own prompts and one is the engine.
 a field sit neutral."* **That was written to diagnose an accent being outvoted 9-to-2. It was read
 as an instruction to put the accent in every box, and it is not.**
 
-The Dez build voted for London in **all four fields** — `Londoner`, `Brixton` ×2, `south-east
-London`, `working class` in the Voice Direction, `Brixton pub` in the Scene, `City of London` in
+The Dez build (Camping) voted for London in **all four fields** — `Londoner`, `Brixton` ×2, `south-east
+London`, `working class` in the Voice Direction, `Brixton pub` in the Scene (Camping), `City of London` in
 the Sample Context, and `mate` in the transcript. **That is the accent dial at maximum.**
 
 > 🔑 **This is the same failure as stacked lighting in an image.** Four light sources make a frame
@@ -964,7 +963,7 @@ phonetic instructions wearing a different coat. **Neither should have been writt
 
 ### 🔴 4. An iconic place name pulls a performed register
 
-**`Brixton` is documented and safe — it is Google's own worked example — but it is not *ordinary*.**
+**`Brixton` is documented and safe — it is Google's own worked example — but it is not *ordinary*.** <!-- style-lint: ok (engine fact) -->
 Google's example is a **radio DJ**, which is a performance. ⬜ **Hypothesis: a place with a strong
 media identity returns the media version of it**, the way `deep` returns the trailer version.
 
@@ -983,7 +982,7 @@ brief gets an actor. **Add the clause explicitly:**
 
 > ***"He is not doing an accent. This is simply how he talks, and he has never thought about it."***
 
-⚠️ **And audit the Scene for performance cues.** *"The back room of a Brixton pub, half a lager
+⚠️ **And audit the Scene for performance cues.** Camping's *"The back room of a Brixton pub, half a lager
 gone, telling it to one person"* is a scene that **invites a turn**. A scene should set a mood, not
 cast a character actor.
 
@@ -1054,7 +1053,7 @@ finally worked.**
 
 | Dial | Say this | Never say |
 |---|---|---|
-| **Placement (how deep)** | *"The voice sits low, at the bottom of his natural range"* | `deep`, `bass`, `baritone`, `booming` — archetypes that summon a movie-trailer read and cancel against `never boomy` |
+| **Placement (how deep)** | *"The voice sits low, at the bottom of his natural range"* | `deep`, `bass`, `baritone`, `booming` <!-- style-lint: ok (a ban list) --> — archetypes that summon a movie-trailer read and cancel against `never boomy` |
 | **Melody (how animated)** | *"Wide, lively intonation — his pitch lifts and swoops up inside a sentence before dropping away at the end"* | `flat`, `level`, `monotone`, `never getting louder` — all flatness-inducing |
 | **Accent strength** | *"a mild, everyday <city> accent, the kind nobody would remark on"* | Phoneme lists — dropped H's, swallowed consonants, flattened vowels. **Every "too over the top" note traces to these** |
 
@@ -1065,7 +1064,7 @@ Ask for depth alone and you get a droning read; ask for melody alone and you get
 voice — *"Charon · Informative · Lower pitch"*, *"Achird · Friendly · Lower middle pitch"*. **If a
 take is not deep enough, change the voice, not the words** — `voice_name` owns timbre.
 
-## 🎭 The portentous-author register — researched properly 2026-09-04
+## 🎭 The portentous-author register — researched properly 2026-09-04 (for Camping)
 
 🔴 **The name never goes in the box.** Google runs a **"prominent individuals"** filter, and
 [`../stories/camping/narration/voice.md`](../stories/camping/narration/voice.md) already rules that
@@ -1097,10 +1096,10 @@ It also keeps the day's two hard-won ingredients: **grit** (it is a gravelly reg
 to sit nearer **160 wpm** than 175, with the weight carried by hard stresses rather than by pauses —
 **never by dead air**, which is the flatness trap again.
 
-## 🔴 THE ACCENT DIAL OVER-FIRES — the pattern across every take on 2026-09-04
+## 🔴 THE ACCENT DIAL OVER-FIRES — the pattern across every Camping take on 2026-09-04
 
 **Four accents asked for, four "too much" notes:** Salford *"too northern"*, Manchester *"too
-northern and weird"*, Brixton *"too over the top"*, Estuary *"the accent is too much"*.
+northern and weird"*, Brixton *"too over the top"*, Estuary *"the accent is too much"* (all Camping's narrator).
 
 🔑 **The variable was never the accent. It was how much of the prompt was spent on it.** Every
 block that came back over-cooked contained **three or more accent statements** — a city, a class
@@ -1116,7 +1115,7 @@ marker, a characterisation, and a `never` list — and the model summed them.
 advice is written for someone who *wants* a strong regional performance. **We want an accent the
 listener never notices** — the opposite target, and it needs the opposite dosage.
 
-## 🔑 Two more traits of the portentous-author register (third research pass, 2026-09-04)
+## 🔑 Two more traits of the portentous-author register (third research pass, 2026-09-04, Camping)
 
 | Trait | Evidence | How to direct it |
 |---|---|---|
@@ -1147,19 +1146,19 @@ have been editing the wrong lever for a dozen rounds.
 ### 🔴 The thing never tried in fifteen rounds: casting
 
 **The voice library has 5,000+ voices with Language / Accent / Gender / Age / Style / Use case
-filters, and it has not been opened once.** Every round has been spent rewriting notes for one of
+filters, and it has not been opened once.** Every Camping round had been spent rewriting notes for one of
 six prebuilt voices.
 
-| Untried male prebuilts | `Achird` · `Algieba` · `Alnilam` · `Fenrir` · `Iapetus` · `Rasalgethi` · `Sadachbia` · `Schedar` · `Umbriel` · `Zubenelgenubi` |
+| Prebuilts Camping had not tried by then (its brief was a man at the time; any story casts from all 30) | `Achird` · `Algieba` · `Alnilam` · `Fenrir` · `Iapetus` · `Rasalgethi` · `Sadachbia` · `Schedar` · `Umbriel` · `Zubenelgenubi` |
 |---|---|
-| **Untried entirely** | 🥇 **The 5,000-voice library.** Search `gravelly`, filter Style and Use case, audition |
+| **Untried entirely** | 🥇 **The 5,000-voice library.** Search the story's own timbre words, filter Style and Use case, audition |
 
 **Ruling: casting beats directing on this engine.** Change the voice, keep the notes frozen.
 
 ## 🔴 BOTH LEVERS ARE WEAK ON THIS ENGINE (2026-09-04)
 
 **Jack, after changing voices several times: *"it only makes a small difference."*** So neither
-`voice_name` nor the prompt moves it far. **The engine has a house sound and everything lands near
+`voice_name` nor the prompt moves it far. **The engine has a narrow default sound and everything lands near
 it.** That is the finding, and it is worth more than another round.
 
 ### What is still genuinely untried, cheapest first

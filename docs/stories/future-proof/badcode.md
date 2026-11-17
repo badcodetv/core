@@ -44,6 +44,9 @@ and Kai can also give it live on stage. Voice, score and sound effects not chose
   before any picture is made.
 - The talk is meme-laden: a meme after every diagram, simplest possible way to make each point, funnier rather than longer.
 
+## Flow project
+None recorded yet. Create one with `flow_create_project` before the first Flow call, and write its id here.
+
 ## Library pieces in use
 - none yet
 

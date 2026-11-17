@@ -1165,8 +1165,11 @@ idles is zero change from the plate, and the cut does the leaving for free.
 
 Additions to the table in the previous section:
 
-- **Film grain at 10–15% opacity** counteracts the too-clean look — for us this is
-  already Karen's §1 `STYLE LOCK`'s job, which is a point in that lock's favour.
+- **A texture layer at 10–15% opacity** counteracts the too-clean look. The sources say film
+  grain because they assume a photographic look; the general move is the texture of the story's
+  own medium (grain, sensor noise, scanlines, paper, print), per the
+  [anti-slop toolkit](nano-banana-2.md#the-anti-slop-toolkit-community).
+  On Karen it is already the job of Karen's §1 `STYLE LOCK`.
 - **A 10–15% speed adjustment in the edit** makes AI motion read as more natural.
   Post, not prompt, but worth knowing before a clip gets binned.
 - **Review frame by frame before accepting** — flicker, morphing, inconsistent
@@ -1265,7 +1268,7 @@ faces — our casting rule still holds, and it costs nothing here.
 
 The craft half of the same pass, and it lines up with Karen's `STYLE LOCK` `[community]`:
 
-- **Explicit imperfection tokens stop the smoothing.** `film grain`, `motion blur`,
+- **Explicit imperfection tokens stop the smoothing.** The sources' list is photographic (a drawn or painted look names its own medium's flaws instead): `film grain`, `motion blur`, <!-- style-lint: ok (engine fact) -->
   `slight chromatic aberration`, `ISO noise`, `halation` — *"prompts that include
   these stop the AI from smoothing everything out."* Our §1 lock already asks for
   most of them on the image side; **clip prompts should carry them too**, and mostly
@@ -1532,7 +1535,7 @@ Independent of the physics, and consistent across every source `[community]`:
   models were trained to produce 'high quality' output — but perfection is what makes
   it look fake."* Grain, slight overexposure, handheld wobble, imperfect focus.
 - **Describe how a real operator would have shot it**, not how the scene looks —
-  *"handheld camera with subtle movement, shot on 16mm, slightly warm colour cast"*
+  *"handheld camera with subtle movement, shot on 16mm, slightly warm colour cast"* <!-- style-lint: ok (engine fact) -->
   beats *"smooth steady shot"* on realism every time.
 - **Post does the last 10% — but it is a rescue, not a requirement.** A subtle grain
   layer *"instantly makes output feel captured rather than generated"*, and a 10–15%
@@ -1883,7 +1886,7 @@ afternoon, and every failure was an object the prompt itself had named.**
 | Round | What the prompt said | What came back |
 | --- | --- | --- |
 | 1 | An age-down clause, stubble and a new outfit | His **hair changed** during the clip |
-| 2 | *"shot on 35mm film"*, *"the building's signs are above the top of the frame"* | A **black film-frame border**, and **legible signs** on the building |
+| 2 | *"shot on 35mm film"*, *"the building's signs are above the top of the frame"* | A **black film-frame border**, and **legible signs** on the building | <!-- style-lint: ok (engine fact) -->
 | 3 | *"a still, locked-off camera on a tripod. The camera stands in the car park"* | **A camera on a stand** in the shot |
 | 1–3 *(round not recorded)* | An ashtray bin, tapping ash, a cigarette | **Duplicate cigarettes** (Jack) |
 | 4 | Two sentences: who, where, weather, one action, plus the audio line | ✅ **Worked** (Jack: *"that worked"*) |
@@ -2083,10 +2086,10 @@ observation.
 | --- | --- |
 | **Understated motion** — a near-static subject, ambient movement, **one** deliberate gesture | *"will almost always outperform a prompt packed with action verbs"*. Agrees with our own 1–2 motion-types rule |
 | **A named, positioned light setup** | *"believable light and shadow are among the strongest realism cues the eye accepts"* |
-| **A stock anchor** — *"shot on 16mm film, natural grain"* | Biases toward the imperfections audiences read as authentic |
+| **A medium anchor** — say what physically made the picture: a film stock (the sources' example is *"shot on 16mm film, natural grain"*), a camcorder, a phone, a hand-drawn cel, a printed page | Biases toward the imperfections of a real medium, which audiences read as authentic. The sources only tested the film case | <!-- style-lint: ok (engine fact) -->
 | **~50mm, human field of view** | Stylised focal lengths read as commercial |
 | **Rough, unpolished audio; no music bed** | Music is the polish tell. For us this is free — the track is Suno's and goes on in post |
-| **A loose edit; no aggressive grade** | Post-side, but it is the same instinct as GPOM's grain-in-shadows grade |
+| **A loose edit; no aggressive grade** | Post-side; the grade is whatever the story's `look.md` asks for |
 
 🔴 **Rejected in Veo: "introduce accidental camera shake."** Widely recommended, but it would
 remove the locked camera that is our documented mitigation for the hinge/regeneration bug (Veo
@@ -2096,7 +2099,7 @@ it adds the shake in Premiere or ffmpeg, where it is exact. **Our measured findi
 
 Also restated and worth holding: **`photorealistic` and `cinematic` are noise words** — they
 appear beside CGI and digital painting throughout training data and average toward the waxy look
-they are meant to prevent. Name the stock, the ISO, the source and the imperfection instead.
+they are meant to prevent. Name the medium (a stock and ISO, a brush, a print process, a tape format), the source and the imperfection instead.
 
 ### 📐 Reference fact — the supermarket wordmark
 
@@ -2322,7 +2325,7 @@ untested by us.** Sources are Aug–Sep 2026 unless stated.
 - **A master still at peak saturation/contrast leaves the engine no headroom** for light that
   changes during motion (neon flicker, a passing headlight), and bloom blows out. The counter is a
   *little* atmosphere (haze) in the plate and a described reflective ground. `[community]`
-  single source (Hailuo, neon-rain guide), not Omni-specific. ⚠️ Relevant to a near-black look
+  single source (Hailuo, neon-rain guide), not Omni-specific. ⚠️ Relevant to a near-black look <!-- style-lint: ok (engine fact) -->
   (GPOM's) only for shots where a light changes.
 - **In a public 19-model liquid-spill test (2026-09-18), Omni Flash was not in the top four**
   (Veo 3.1, Veo 3.1 Lite, Seedance 2.0, Wan 3.0). No commentary on Omni's result was published,
@@ -2409,7 +2412,7 @@ Read for Money For Something (a panel show, so mouths are on screen). **Nothing 
 - **Open:** whether a Character's Voice holds across separate clips. No independent test found. Plan and fallback:
   `docs/stories/magic-money-tree/money-for-something.md`, "The room reference and the voice plan".
 - **Seen in the UI, 2026-10-03:** Flow's Character voice chooser lists 30 presets with the same names as Gemini TTS
-  (Achernar … Zubenelgenubi), each with a gender, a trait and a pitch. A written performance makes a named custom
+  (Achernar … Zubenelgenubi), each with a gender, a trait and a pitch. A written performance makes a named custom <!-- style-lint: ok (engine fact) -->
   voice. Mechanics: `docs/flow/automation-2026-09-rebuild.md` items 37 to 41. Whether a name sounds the same in Flow
   and in AI Studio is not tested.
 
@@ -2588,7 +2591,7 @@ One film, one afternoon, Omni 1.1 Flash, 720p, 8 s, one take each. Prompts:
   might violate our policies"), where the same plate had animated on 8 October. Close-ups of the same men
   shouting in the same alarm light, no pistol in frame, passed three of three.
 - **`[observed, n=1]` A presenter with a microphone in front of a protest was refused** as "reputational risk or
-  misrepresent current events" with "television newsreader's accent" in the prompt, and passed twice with that
+  misrepresent current events" with "television newsreader's accent" in the prompt, and passed twice with that <!-- style-lint: ok (engine fact) -->
   phrase out and "an actor playing a made-up character… set in a made-up town" in. One change of several, so the
   cause is a guess.
 - **`[observed, n=1]` `UPLOAD_REFUSED` on a still that Flow itself had just made** (a crowd from above), three

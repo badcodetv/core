@@ -3,6 +3,20 @@
 > Mechanics and working habits only: no look or sound belongs here (that lives in a story's `badcode.md`).
 > Originals: `archive/messy-context-2026-11-17/memory/`.
 
+
+## One Flow project per story (2026-11-17 context reset)
+
+Flow follows a reference image more than the prompt, and a project carries its references, Characters, aspect
+and gallery forward. The MCP generate tools take no project: they use whichever project tab is open. So:
+
+- **Before the first Flow call for a story in a session, open that story's project**: `flow_open_project` with the
+  id in the story's `badcode.md` (*Look* → Flow project) or its scene's `scene.json` `flow_project`. A story with no
+  project yet gets `flow_create_project`, and its id is written into `badcode.md`.
+- **Never generate one story's shots in another story's project**, and never attach another story's still or
+  Character as a reference.
+- A plain `flow_generate_image` now refuses to run if a reference chip is left on the bar from an earlier call
+  (`packages/flow-mcp/src/flow-client.ts`, generateImage). If it refuses, remove the chip in Flow or open a fresh project.
+
 ## Jack's standing rule for Flow stills — always Nano Banana 2, never Nano Banana Pro, because NB2 costs no credits
 
 For Flow still images always use **Nano Banana 2**. Never switch to Nano Banana Pro, even if he says "Nano Banana Pro 2" in a request (Flow has no model by that name; he means the free one).
@@ -259,7 +273,7 @@ When Jack asks for look or style tests in Flow, do not save the images into a fo
 
 **Why:** 2026-10-01, Magic Money Tree style tests. I wrote seven stills to a Desktop folder and he deleted them: "Don't save them in a folder, I just mean remember the prompts, if I like them." By "make a file called that" he meant the prompt record, not an image folder.
 
-**How to apply:** the flow tools need an `outPath`, so point it at the session scratchpad. Record every prompt in the story's repo file. What Jack ruled about a look goes in that story's `look.md`, not here (`no-house-style-story-files`).
+**How to apply:** the flow tools need an `outPath`, so point it at the session scratchpad. Record every prompt in the story's repo file. What Jack ruled about a look goes in that story's `look.md`, not here (`no-house-style-story-files`). <!-- style-lint: ok (the rule's name) -->
 
 ## Standing preference — generate all Flow video on Omni Flash, not Veo 3.1.
 
@@ -307,7 +321,7 @@ Jack calls these "the cinematography skills". Two skills, strict order:
 
 1. **`shot-craft`** → `docs/cinematography/` — what the shot should **be**. Gates, then a shot
    spec a human can argue with. `symptoms.md` when something is wrong, `principles.md` for the
-   gates, `frame.md` for composition, **`stills.md` for any held image under narration**, `registers.md` for anything monumental.
+   gates, `frame.md` for composition, **`stills.md` for any held image under narration**, `registers.md` for the register the story's `look.md` names.
 2. **`flow-prompt`** → `docs/flow/` — how to **phrase** it so the generator obeys.
 
 **Never do design and phrasing in one breath.** The skill says outright that the design step is
@@ -317,7 +331,7 @@ the one that gets skipped and it is the one that decides whether the shot is int
 Each layer caught a different fault, and none of them was reachable from the layer above:
 `flow-prompt` found that the prompt *named the emotion* (Nano Banana has no negative-prompt
 field, so "not sad, not troubled" is sad in the scene). `principles.md` found gate 1 and gate 2
-failing — a still face asked to carry a change of inner state, in a monumental frame with the
+failing — a still face asked to carry a change of inner state, in Camping's monumental frame with the
 cost blurred out. **`stills.md` §1 found the real one:** every draft described a *finished*
 action, and a resting pose dies no matter how well composed. The fix was to move the moment
 earlier, not to describe the face harder.

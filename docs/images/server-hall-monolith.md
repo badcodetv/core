@@ -7,6 +7,7 @@ used_by:                       # not yet deployed
 ---
 
 > **GitPush Origin Master's anchor only.** Not a BadCode look; never a reference for another story.
+<!-- style-lint: story=gitpush-origin-master (a GPOM record kept in a shared folder) -->
 
 ![server-hall-monolith](server-hall-monolith.jpg)
 

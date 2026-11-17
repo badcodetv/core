@@ -134,10 +134,10 @@ When 2 rounds of style-prompt surgery haven't moved the vocal, stop prompting. T
 2. **Remix → Voice on the best take, selecting the sub-region** where the voice is right — 15
    clean seconds beat 60 contaminated ones, though up to 2 minutes makes a stabler clone.
    **Delete the attached style prompt** so the Voice isn't welded to one genre.
-3. **Apply the Voice to the real track**: audio influence 40–60, raise to 70+ if it drifts
+3. **Apply the Voice to the real track**: audio influence 40–60, raise to 70+ if it drifts <!-- style-lint: ok (engine fact / evidence) -->
    (artifacts expected), then two-pass — Cover the right-voiced take at ~25–40 to recover fidelity.
 4. **The floor that cannot fail: audio-seed a human.** 15s–4min of someone doing the voice into a
-   phone mic, one consistent register, Voice → Create voice, audio influence 70–100, two-pass down.
+   phone mic, one consistent register, Voice → Create voice, audio influence 70–100, two-pass down. <!-- style-lint: ok (engine fact / evidence) -->
    Perform the ownership-verification phrase in character; flat reading fails it.
 
 ### 4. Articulation beats attitude; onomatopoeia beats anatomy
@@ -215,7 +215,7 @@ architecture lives in dense per-section cues, structure-obedience beats vocal va
 ## Thread 3 — the two-voice problem (GPOM drum & bass cut, 2026-08-08)
 
 Context: the GPOM song forked into two cuts. The orchestral master's narrator is the best voice
-we have and is about to become the saved Voice `BC-NEWSREADER`; the D&B sibling needs the *chorus*
+we have and is about to become the saved Voice `BC-NEWSREADER`; the D&B sibling needs the *chorus* <!-- style-lint: ok (engine fact / evidence) -->
 to be somebody else. The question — can one generation carry a saved Voice on the verses and a
 different voice on the chorus? — turns out to have a clean answer.
 
@@ -458,7 +458,7 @@ from Suno.
 **The trap that follows directly from §2, and we walked into it.** Round 2 removed every accent word
 and both men came back **American**.
 
-The released take had carried `dark neurofunk with **UK grime influence**` in the genre stack.
+The released take had carried `dark neurofunk with **UK grime influence**` in the genre stack. <!-- style-lint: ok (engine fact / evidence) -->
 Round 2's rewrite dropped it while cleaning out the accent language. The Britishness had never been
 coming from "adenoidal Merseyside" or "clipped RP" at all — it was coming from the **genre**, which
 owns the vocalist pool (Thread 2 §1). Take out the UK genre and the pool reverts to its default,
@@ -466,7 +466,7 @@ which is American.
 
 Three rules, **for when a song wants a British voice** (whether it does is the story's `sound.md`):
 
-- **Nationality is a genre lever, not an adjective lever.** `UK grime`, `UK garage`, `grime`,
+- **Nationality is a genre lever, not an adjective lever.** `UK grime`, `UK garage`, `grime`, <!-- style-lint: ok (engine fact / evidence) -->
   `UK hip hop` are the strongest British-vocal controls available, because they are pool-selecting
   words. `British` is a weak adjective by comparison — useful as reinforcement, useless alone.
 - **Front-load the UK genre**, and let `British` repeat several times after it. Redundant
@@ -485,7 +485,7 @@ reported to move accent where a bare adjective does not.
 
 ### 2b. A genre tag carries a whole *performer*, not one attribute — pick the tradition, not the nationality
 
-**The trap on the other side of §2a, walked into one round later.** `UK grime` fixed the
+**The trap on the other side of §2a, walked into one round later.** `UK grime` fixed the <!-- style-lint: ok (engine fact / evidence) -->
 nationality and immediately miscast both men: Camping came back sung by young Black British MCs,
 when Bob is a weathered fifty-something white homeless Merseyside man and Tarquin a late-forties
 white City banker — both of whom **we have comic panels of**.
@@ -496,7 +496,7 @@ the rest. There is no such thing as borrowing a genre's nationality without its 
 
 **So choose the genre whose default performer *is* your character.** For a middle-aged white
 British man ranting over a beat, `British post-punk spoken word` is the pool — every bit as British
-as grime, and the right bloke. It also keeps our own **cast performance traditions, not
+as grime, and the right bloke. It also keeps our own **cast performance traditions, not <!-- style-lint: ok (engine fact / evidence) -->
 demographics** rule (Thread 3 §7) intact: naming a tradition the model has heard performed does the
 casting precisely, and no demographic adjective ever has to go in the prompt.
 
@@ -504,9 +504,9 @@ casting precisely, and no demographic adjective ever has to go in the prompt.
 
 | Character | Pool that casts them | Not |
 |---|---|---|
-| Weathered working-class British bloke, 40s–60s | British post-punk spoken word; Britpop snarl; British performance poet | grime, drill, road rap — young MC by default |
-| Posh / establishment British | BBC English, newsreader, after-dinner speaker | "posh" alone, `clipped RP` — register words without a tradition |
-| Young British street voice | grime, UK drill, road rap | — this is where grime is *correct* |
+| Weathered working-class British bloke, 40s–60s | British post-punk spoken word; Britpop snarl; British performance poet | grime, drill, road rap — young MC by default <!-- style-lint: ok (engine fact / evidence) --> |
+| Posh / establishment British | BBC English, newsreader, after-dinner speaker | "posh" alone, `clipped RP` — register words without a tradition <!-- style-lint: ok (engine fact / evidence) --> |
+| Young British street voice | grime, UK drill, road rap | — this is where grime is *correct* <!-- style-lint: ok (engine fact / evidence) --> |
 
 **Cross-medium corollary, new and load-bearing for us:** when a character already exists as an
 **image** — a comic panel, a character sheet — the voice has to match the picture, and "sounds
@@ -515,7 +515,7 @@ style prompt. A song and a comic that disagree about who someone is will read as
 characters.
 
 **Class register survives where regional accent doesn't** — name it as a *performance tradition* the
-model has heard: `BBC English`, `newsreader`, `after-dinner speaker` land where `clipped RP` and
+model has heard: `BBC English`, `newsreader`, `after-dinner speaker` land where `clipped RP` and <!-- style-lint: ok (engine fact / evidence) -->
 `Scouse` don't. This is Thread 2 §4's "name a performance tradition" rule, applied to class instead
 of to genre.
 
@@ -531,7 +531,7 @@ her voice — never the name, which Suno rejects or rewrites:
 
 | Reference (sheet only) | What went in the Style box, first |
 |---|---|
-| Amy Winehouse | `London retro soul, a raw husky contralto woman with a heavy North London accent, swaggering behind-the-beat phrasing` |
+| Amy Winehouse | `London retro soul, a raw husky contralto woman with a heavy North London accent, swaggering behind-the-beat phrasing` <!-- style-lint: ok (engine fact / evidence) --> |
 | Dusty Springfield | `1960s British blue-eyed soul, a breathy smoky English mezzo` |
 | Lily Allen | `British indie pop with a cockney London girl, sweet light voice, sarcastic sing-song verses` |
 | Poly Styrene / Siouxsie | `1977 London punk woman, a piercing yelping English voice, shrieked chorus` |
@@ -588,7 +588,7 @@ basically the same". Two research passes; tiers as found.
 - **Why English drifts American (inference, not a Suno test):** pop-rock singing has an American
   norm — British singers flap /t/ when singing but not speaking (MDPI *Languages* 9/6/203); Liam
   Gallagher sings near his speech, Noel more American. The training audio is likely American-leaning
-  even for British acts. Genres whose singers keep the accent (Britpop, punk, grime, folk, music
+  even for British acts. Genres whose singers keep the accent (Britpop, punk, grime, folk, music <!-- style-lint: ok (engine fact / evidence) -->
   hall) should carry it best — untested as a list.
 - **What changes the singer, by evidence:**
   1. **Voices** (vendor): your *own* voice only — a spoken verification phrase is matched to the
@@ -604,7 +604,7 @@ basically the same". Two research passes; tiers as found.
      convert cleanly (hearsay).
   5. **ElevenLabs Music "Vocals"** offers a consistent voice from its voice library, which filters
      by accent — British male *singing* voices unverified.
-- **Weak or unproven:** per-section `[Verse: male baritone]` tags ("doesn't always listen");
+- **Weak or unproven:** per-section `[Verse: male baritone]` tags ("doesn't always listen"); <!-- style-lint: ok (engine fact / evidence) -->
   phonetic respelling for accent (guides only); custom models (one review: they do not learn a
   vocal identity); Wild (style, not voice); artist names (Suno stored "Roger Daltrey" verbatim and it
   did nothing audible — Bank Robbery Round Y).
@@ -660,8 +660,8 @@ cause first:
 4. **Per-section delivery cues in the lyrics** (`[Verse 1: lazy drawl]`, `[Chorus: sneered]`). House
    rule (Thread 4 §3, "more markup is worse") had us sending the lyrics bare.
 5. **Accent and age written plainly**, against §2 ("accent does not render").
-6. **Settings varied per prompt**: weirdness 40–70, style influence 50–65, Variety Off/Normal/High,
-   Duration 190–240 s. House defaults were fixed (75, 30/60, Off, 170 s).
+6. **Settings varied per prompt**: weirdness 40–70, style influence 50–65, Variety Off/Normal/High, <!-- style-lint: ok (engine fact / evidence) -->
+   Duration 190–240 s. The defaults then in the tooling were fixed (75, 30/60, Off, 170 s). <!-- style-lint: ok (engine fact / evidence) -->
 
 **The lesson about the toolkit itself:** each rule here was learned honestly, mostly on one song
 (Karen, Camping) and often from a single round. Applied together as defaults to every prompt, they
@@ -673,7 +673,7 @@ when exploring.
 clean-room prompts with one identical music paragraph and one identical delivery (`half-sung
 half-rapped on the beat, narrow melody, dry and upfront`), differing only in region, age and
 timbre adjectives: Jack, *"the voices are the same again."* In CR the deliveries were different
-*categories* (bored drawl, crooned villain baritone, slow smoky contralto, choirgirl soprano). So it
+*categories* (bored drawl, crooned villain baritone, slow smoky contralto, choirgirl soprano). So it <!-- style-lint: ok (engine fact / evidence) -->
 was never the repo as such: it is **sameness of the strongest words**. Whatever is identical across
 prompts, whether a house rule or a helper's shared paragraph, wins.
 
@@ -729,7 +729,7 @@ character.
 
 ### 4. Cue density has a tempo cost — the playbook's warning gets its first observation
 
-Round 1 carried a bracket cue roughly every two lines and **broke into double time** for a stretch.
+Round 1 carried a bracket cue roughly every two lines and **broke into double time** for a stretch. <!-- style-lint: ok (engine fact / evidence) -->
 Two suspects, not separated: syllable cramming (the documented machine-gun rush, `lyric-craft.md`),
 and cue density chopping a verse into micro-sections that each re-decide their own phrasing.
 
@@ -817,7 +817,7 @@ lead-in cue **deleted** rather than moved, and the entrance stated once in the S
 and once in the drop cue. **Delete the mention; don't describe the absence.**
 
 The second half of it is that a reveal needs something to reveal. Camping's verse-one
-header asked for `amen break + deep sub`, so the verse and the drop were the same
+header asked for `amen break + deep sub`, so the verse and the drop were the same <!-- style-lint: ok (engine fact / evidence) -->
 weight and the drop had nowhere to go. The arrangement now climbs in **gears** — no
 drums → loose kit with no sub → full weight *and* the strings together — so one moment
 carries two reveals.
@@ -930,7 +930,7 @@ Three things this settles:
 |---|---|---|
 | Weathered northern working-class bloke, **talking** | **`Madchester skit`** — a place-name scene whose default performer is a northern working-class man half-talking over a loop | `British post-punk spoken word` is the right bloke but carries the poison noun |
 | The same man, if Madchester grows a guitar band | `UK hip hop skit`, `British rap skit` | ⚠️ §2b applies — these cast a **young MC** by default |
-| Posh / establishment British | `BBC English`, `newsreader`, `after-dinner speaker` | unchanged |
+| Posh / establishment British | `BBC English`, `newsreader`, `after-dinner speaker` | unchanged <!-- style-lint: ok (engine fact / evidence) --> |
 
 ### 4a. 🔴 The Exclude box votes on nationality too — and it can outvote the Style box
 
@@ -944,8 +944,8 @@ was not being ignored. **It was being outvoted, by the box nobody re-reads.**
 
 The ban list had grown across eleven rounds into a dense, specific statement of *not British*:
 `music hall, vaudeville, pantomime, panto, cabaret, variety show, oompah` (British comedy),
-`RP, received pronunciation, BBC newsreader, after-dinner speaker, posh, plummy` (British class),
-`grime MC, UK drill, road rap` (**three of the four strongest British-vocal pools we have**),
+`RP, received pronunciation, BBC newsreader, after-dinner speaker, posh, plummy` (British class), <!-- style-lint: ok (engine fact / evidence) -->
+`grime MC, UK drill, road rap` (**three of the four strongest British-vocal pools we have**), <!-- style-lint: ok (engine fact / evidence) -->
 and `indie rock, guitar band, post-punk band, band, rock band, live band, guitar, jangly guitars` —
 plus, self-cancelling and added in the very same round as the Style-box fix, **`Madchester baggy`**.
 

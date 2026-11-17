@@ -39,6 +39,11 @@ you, not a multiverse; "infinite yous, so nothing matters" is the excuse. State:
 - He is drunk with keys: the short is against drink-driving; gatekeeper to confirm it reads that way. Taxi livery invented, generic "TAXI" sign.
 - Never Flow speech that ends up audible: talking clips said "Thanks" (the prompt sign-off) after the line; mute them and dub.
 
+## Flow project
+- `28e36ecd-0a59-45db-aa58-a4a0e2c31b29` — scenes/infinite-yous
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

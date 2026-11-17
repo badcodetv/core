@@ -406,7 +406,7 @@ prompt box submits on Enter**. A ~2,000-character style-preamble prompt fired as
 generations, one per line, each seeing only a fragment.
 
 The tell, and how to recognise it instantly: **the project fills with images titled after your
-own prompt's lines** — `"Optics with soft edges"`, `"Visible film grain and dust"`, `"Vibrant
+own prompt's lines** — `"Optics with soft edges"`, `"Visible film grain and dust"`, `"Vibrant <!-- style-lint: ok (engine fact) -->
 color palette with warm…"`. The returned "result" is whatever the last fragment produced, so it
 looks like a bad prompt rather than a broken client.
 

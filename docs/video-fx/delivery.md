@@ -1,6 +1,6 @@
 # Delivery and QC — getting the file right, and proving it
 
-**The last step, and the one that silently ruins near-black films.** Premiere renders it;
+**The last step, and the one that silently ruins very dark films.** Premiere renders it;
 this is what happens between that render and the upload.
 
 > Run **[`scripts/delivery-qc.sh`](../../scripts/delivery-qc.sh)** on anything before it ships.
@@ -82,7 +82,7 @@ Keep the extra shadow precision in the *master*. Convert on the way out.
 
 ---
 
-## 🔴 Near-black — why a near-black look (GPOM's, for one) is the hardest case to deliver
+## 🔴 Very dark frames — why they are the hardest case to deliver
 
 From the 2026-08-26 cinematography sweep, brief 20. Craft side lives in
 [`../cinematography/`](../cinematography/README.md); the delivery side is here.
@@ -91,17 +91,19 @@ From the 2026-08-26 cinematography sweep, brief 20. Craft side lives in
 gradient occupies a small slice of that range, so the quantisation steps become visible as
 bands. **A**
 
-**Dither and grain are the fix, and they work the way film grain did for free for a century** —
-randomised noise breaks the hard edge between quantisation steps so the eye reads a smooth
-gradient. **Add deliberate grain to any near-black sequence before encode.** **A** (mechanism)
+**Dither is the fix** (film grain did the same job for free for a century): randomised noise <!-- style-lint: ok (engine fact) -->
+breaks the hard edge between quantisation steps so the eye reads a smooth gradient. **Before
+encode, give any dark gradient a dither or light noise pass.** **A** (mechanism) This is a
+delivery fix, not a look: it can sit below the level where it reads as texture, so a story whose
+`look.md` has no grain still gets it. <!-- style-lint: ok (engine fact) -->
 
 **🔴 The counter-intuitive corollary: more denoising makes banding worse.** A cleanly denoised
 dark frame is the *most* likely to band after re-encode, because you removed the noise that was
-masking the steps. Never denoise a near-black sequence on the way out.
+masking the steps. Never denoise a very dark sequence on the way out.
 
-**Compression punishes near-black structurally.** Encoders spend bits where rate-distortion maths
+**Compression punishes dark frames structurally.** Encoders spend bits where rate-distortion maths
 says they matter, and dark, low-contrast, low-detail regions are exactly where they spend least —
-which is most of a near-black frame. **A (mixed)** — the principle is engineering fact; which artifact
+which is most of a very dark frame. **A (mixed)** — the principle is engineering fact; which artifact
 dominates (banding vs blocking) depends on codec and bitrate.
 
 **Crushing and lifting are opposite and both destructive applied blind.** Crushing discards
@@ -129,7 +131,7 @@ Not yet implemented — this is the list, from brief 20:
 1. Colour range tag present and matching content *(the `camping.mp4` bug — already covered above)*
 2. Shadow floor: report the percentage of pixels sitting at 0, to catch clipping before upload
 3. Banding probe on the darkest region of a sample of frames
-4. Grain/noise floor present in near-black sequences — flag a suspiciously clean dark frame
+4. Dither/noise floor present in very dark sequences — flag a suspiciously clean dark frame
 5. A phone-in-daylight simulation check (elevated black level) as an advisory, not a gate
 
 ---
@@ -139,9 +141,9 @@ Not yet implemented — this is the list, from brief 20:
 🔴 **Every platform re-encodes what you upload.** `ffprobe` and `signalstats` prove your file is
 correct; they prove nothing about the transcode that actually reaches a viewer.
 
-That re-encode hurts a near-black film more than most: heavy compression bakes banding into
-exactly the low-entropy near-black gradients such a look is made of. The defence is to give
-the encoder something to chew on — a light dither/grain pass before delivery:
+That re-encode hurts a very dark film more than most: heavy compression bakes banding into
+exactly the low-entropy dark gradients such a film is made of. The defence is to give
+the encoder something to chew on — a light dither pass before delivery:
 
 ```bash
 ffmpeg -i in.mp4 -vf "noise=alls=3:allf=t" -c:a copy out.mp4

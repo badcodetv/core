@@ -19,7 +19,7 @@ the entry point — this is what it reads.
 |---|---|
 | [`system-prompt.txt`](./system-prompt.txt) | Base operating procedure — mode detection, output format, character limits, famous-artist translation, edge cases |
 | [`session-method.md`](./session-method.md) | **How to work, not what is true.** The iteration loop, the layer split (sheet / log / the story's `sound.md` / rules), diagnose-before-rewording, why boxes grow, mechanical lyric verification, and what counts as evidence. Read before a re-cut session |
-| [`automation.md`](./automation.md) | **Driving the app, not writing for it.** The `suno.com/create` DOM mapped over CDP — selector table, the golden rule (Simple and Advanced both mount, so scope to the Advanced panel), and **five silent traps**: the "Overwrite Styles?" dialog that swaps your Style box for the persona's, the Lexical lyrics editor that collapses to one paragraph, three `[role=dialog]` nodes, a form wiped by navigation, and a Style box that truncates at 1,000 instead of refusing. Plus the operating protocol — **the pair** (a working method for refining a take: one Create at weirdness 30, one at 60; an exploring round's writers choose their own settings), track naming, workspaces, and **never automate downloading** |
+| [`automation.md`](./automation.md) | **Driving the app, not writing for it.** The `suno.com/create` DOM mapped over CDP — selector table, the golden rule (Simple and Advanced both mount, so scope to the Advanced panel), and **five silent traps**: the "Overwrite Styles?" dialog that swaps your Style box for the persona's, the Lexical lyrics editor that collapses to one paragraph, three `[role=dialog]` nodes, a form wiped by navigation, and a Style box that truncates at 1,000 instead of refusing. Plus the operating protocol — **the pair** (a working method for refining a take: one Create at weirdness 30, one at 60; an exploring round's writers choose their own settings), track naming, workspaces, and **never automate downloading** <!-- style-lint: ok (engine fact) --> |
 | [`same-song-traps.md`](./same-song-traps.md) | **Every way we made the same song again** (Bank Robbery, 400+ takes, one voice) — 17 traps with the guard for each. Read before any exploring round; exploring rounds run through the `variations` skill |
 | [`speech-beta.md`](./speech-beta.md) | **Suno Speech (beta), the spoken-word tab.** What it is (narration over a score), its only controls (Male/Female + a tone box, Variety, music Off), what it cannot do (no saved voice, no Persona, British drifts to Australian), why our Priority Lane r5 came out as one voice, and when to use AI Studio instead (2026-11-13) |
 | [`files/suno-v6.md`](./files/suno-v6.md) | 🔑 **v6 (2026-09-09) — read first on any model or control question.** The three models and when to pick which, the new create-form controls (Variety, Personalize, Max Mode, Vocal Gender), **§3 the ladder for fixing one word / one bar / one phrase**, Studio click-paths on v6, new features worth suggesting unbidden, downloads and credits, what happens to our v5.5 back catalogue, and the prioritised test queue. 🆕 **Refreshed 2026-10-14: §1b Speech (beta) — Suno's voice-plus-score model, the obvious challenger to GPOM's narration template — and §8c the anti-slop moves.** **Day-one evidence — nothing measured yet.** Ledgers: [`../misc/2026-09-10-suno-v6-research.md`](../misc/2026-09-10-suno-v6-research.md), [`../misc/2026-10-14-suno-v6-refresh.md`](../misc/2026-10-14-suno-v6-refresh.md) |
@@ -124,11 +124,11 @@ Recorded so nobody re-derives them:
   real Max Mode toggle v6 added to the create form** (effect untested — `files/suno-v6.md` §2).
 - **Regional accents** — a detailed Scouse spec produced no accent at all (tested 2026-08-20). Accent
   sits with age words: describable, not summonable. Contrast voices on pitch, texture, delivery mode
-  and room instead. **But nationality is real and rides on the *genre* tag** — dropping `UK grime`
+  and room instead. **But nationality is real and rides on the *genre* tag** — dropping `UK grime` <!-- style-lint: ok (engine fact) -->
   turned the same voices American. When a song wants a British voice, keep a UK genre; `British`
   alone is weak reinforcement.
 - **Borrowing one attribute from a genre** — a vocalist pool is a *person*, not a property: accent,
-  age, class and race come as one package. `UK grime` bought Britishness and cast two middle-aged
+  age, class and race come as one package. `UK grime` bought Britishness and cast two middle-aged <!-- style-lint: ok (engine fact) -->
   white characters as young MCs. Pick the genre whose default performer *is* your character.
 - **Per-line voice labels to fix a duet** — tested worse than one repeated short label per character.
   More casting markup makes casting worse.
@@ -154,7 +154,7 @@ Recorded so nobody re-derives them:
   (2026-08-21). The rate rule above is for *continuous* density only. Describe the event:
   what changes, how long, how loud, and that it comes back.
 - **An accent made of the same material as the bed** — an amen-break *fill* over a kit the
-  prompt already called `chopped amen breaks` was inaudible (2026-08-21). Not a wording
+  prompt already called `chopped amen breaks` was inaudible (2026-08-21). Not a wording <!-- style-lint: ok (engine fact) -->
   fault: check what the prompt says the default already is before adding an accent.
 - **Plugin / brand names** (`Serum 2`, etc.) — no reliable effect, plus alias-collision
   risk. Name the synthesis technique (`wavetable`) and the behaviour instead.

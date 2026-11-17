@@ -66,6 +66,14 @@ EXPLORING; this take is the one in the cut.
 - The shared mask sentence repeats on purpose; check every triangle and ring by eye.
 - Mostly action, rap to camera sprinkled in, never two rap shots in a row; cut on the big drops.
 
+## Flow project
+- `dedfd16b-abd3-4d03-905d-1ddf4cdda4f0` — songs/mv-colour-noir
+- `9849e924-f5b1-411f-b0b7-49221714949a` — songs/mv-gang
+- `dedd295f-a519-46bb-aeb8-0e422a58e757` — songs/mv-speakeasy-mint
+- `706836d3-d133-4204-9ee3-fdf6a99fa961` — songs/mv-speakeasy-mint-alt
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

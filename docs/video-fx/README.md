@@ -115,7 +115,7 @@ this file. Read them for the *technique*, not the shopping.
 | # | Brief |
 | --- | --- |
 | 19 | Delivery specs and QC scopes — what Shorts/TikTok/Reels want, how to check levels |
-| 20 | Beat-synced and audio-driven cutting — **the most BadCode-relevant of the four gaps**, since the shorts are cut to drum & bass |
+| 20 | Beat-synced and audio-driven cutting — **the most BadCode-relevant of the four gaps**, since most of our films and shorts are cut to a music track |
 
 ---
 

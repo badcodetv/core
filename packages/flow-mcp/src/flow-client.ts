@@ -1703,9 +1703,24 @@ export class FlowClient {
     requireImageModel(opts?.model, 'generateImage')
     const numOutputs = opts?.numOutputs ?? 1
     await this.ensureProjectRoot()
+    // 2026-11-17 context reset: generateImage attaches no references, so any reference chip on the bar
+    // is a leftover from an earlier edit or refine, and it would silently carry that picture's look
+    // (possibly another story's) into this one. Flow follows a reference more than the prompt. Reload
+    // to clear it; if it survives the reload, refuse rather than generate against it.
+    let reloaded = false
+    if (this.isRebuilt() && (await this.ingredientChips().count())) {
+      await this.reloadProject()
+      reloaded = true
+      if (await this.ingredientChips().count()) {
+        throw new Error(
+          'flow: a reference image is still attached to the prompt bar from an earlier call and a reload did not clear it. ' +
+            'Refusing a plain generation that would use it: remove it in Flow, or open a fresh project for this story.',
+        )
+      }
+    }
     // Rebuilt Flow: Character rows drop out of the picker until a reload (rebuild doc items 29,
     // 49) — and a reload resets the model (law 15), so it must come BEFORE ensureImageMode.
-    if (opts?.character && this.isRebuilt()) await this.reloadProject()
+    if (opts?.character && this.isRebuilt() && !reloaded) await this.reloadProject()
     await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
     const before = await this.snapshotMediaNames()
     if (opts?.character) await this.submitWithCharacter(opts.character, prompt)
@@ -1838,7 +1853,7 @@ export class FlowClient {
    * prompt arrived as **Enter, and Flow's prompt box submits on Enter**. A ~2,000-character
    * multi-line prompt was therefore fired as ~15 separate generations, one per line, each
    * seeing a fragment: the project filled with junk images titled "Optics with soft edges",
-   * "Visible film grain and dust", "Vibrant color palette with warm…", and the returned
+   * "Visible film grain and dust", "Vibrant color palette with warm…", and the returned (style-lint: ok — quoting Flow's own UI)
    * "result" was whatever the last fragment produced. It cost real credits and looked exactly
    * like a bad prompt rather than a broken client.
    *

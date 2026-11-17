@@ -36,6 +36,11 @@ sadder: "Poor bastard..." The point: who is really "struggling". State: round 5 
 - No Flow speech: the nan's clip is muted and dubbed. A long timestamped motion prompt got clip 4 refused; a bare prompt with the real line passed.
 - Prompts end with "Thanks." Reader rules and `marketing-gatekeeper` before posting.
 
+## Flow project
+- `2ab052be-f268-47d0-8b8d-cdf772b864af` — scenes/sponsor-a-chancellor
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

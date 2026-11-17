@@ -46,7 +46,7 @@ Strategy context: [`plan.md`](./plan.md). Confidence legend: ✅ Verified (cited
   react mechanics and expose us to the source video's audience — this is the funnel strategy's
   native home. Reply to comments with follow-up videos. Niche hashtags (2–4) still help
   classification; broad ones don't.
-- Our DnB is an asset: original sounds that others can use are a TikTok growth surface.
+- Our own songs are an asset: original sounds that others can use are a TikTok growth surface.
 
 ## 3. YouTube (+ Shorts) — the core library
 
@@ -101,7 +101,7 @@ Strategy context: [`plan.md`](./plan.md). Confidence legend: ✅ Verified (cited
 - Distributor choice: DistroKid (first with DDEX AI credits) fits; verify current AI-content
   terms at signup.
 - Playlist pitching via Spotify for Artists (submit ≥7 days pre-release), pre-save campaigns,
-  Canvas visuals from comic art. Editorial playlisting for a new AI-assisted DnB act is a
+  Canvas visuals from comic art. Editorial playlisting for a new AI-assisted act is a
   long shot; algorithmic (Release Radar/Discover Weekly) flows from saves + completion rate —
   another reason to avoid the spam bucket. *(Playlist-pitching specifics did not survive
   verification — trend-scout task.)*
@@ -117,12 +117,12 @@ Strategy context: [`plan.md`](./plan.md). Confidence legend: ✅ Verified (cited
   distributed/monetized through SoundCloud for Artists. Rights burden sits with the uploader
   and SoundCloud verifies before approving.
 
-**Consequence:** SoundCloud = community/scene presence only (hosted tracks, reposts, DnB
-crowd); Spotify-and-co distribution goes via a DDEX-supporting distributor (§4). Re-check the
+**Consequence:** SoundCloud = community/scene presence only (hosted tracks, reposts, the song's
+genre crowd); Spotify-and-co distribution goes via a DDEX-supporting distributor (§4). Re-check the
 partner list quarterly — it moves.
 
-**◻ Provisional:** repost-exchange within the DnB community, tagging (drum & bass / neurofunk /
-174), free-download gates for remix stems as a collab hook.
+**◻ Provisional:** repost-exchange within each song's genre community, tagging by that genre (for
+GPOM's drum & bass: drum & bass / neurofunk / 174), free-download gates for remix stems as a collab hook.
 
 ## 6. Instagram (Reels + carousels) — the visual home *(coverage gap)*
 

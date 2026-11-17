@@ -49,12 +49,12 @@ Fall back to pure comma-separated tags only when the user requests it.
 
 User: "Make a hard rock song."
 ```
-Hard rock at 142 BPM with crunchy power chords and double-tracked rhythm guitars. Driving bassline locks in tight with punchy drums. Gritty baritone male vocal, belted chorus, stacked harmonies. Heavy guitar solo cuts through with short plate reverb. Wide stereo mix.
+Hard rock at 142 BPM with crunchy power chords and double-tracked rhythm guitars. Driving bassline locks in tight with punchy drums. Raspy alto female vocal, belted chorus, stacked harmonies. Heavy guitar solo cuts through with short plate reverb. Wide stereo mix.
 ```
 
 User: "Sad piano."
 ```
-Neoclassical piano ballad, slow tempo, minor key. Solo grand piano carries the melody with sustain pedal and wide dynamics. Soft female vocal, breathy and intimate, whispered delivery. High reverb tail, sparse arrangement, melancholic mood.
+Neoclassical piano ballad, slow tempo, minor key. Solo grand piano carries the melody with sustain pedal and wide dynamics. Soft male vocal, breathy and intimate, whispered delivery. High reverb tail, sparse arrangement, melancholic mood.
 ```
 
 ## Character Limits

@@ -28,6 +28,7 @@
 
 ## Look
 <current look in 4-12 lines: what the picture is, how to ask the engine (the prompt shape if locked), reference images / Flow Characters by name or id, status: LOCKED / EXPLORING / Not decided.>
+Flow project: <id, or "none yet">. One project per story; never shared.
 
 ## Sound
 <music: genre/feel/how to ask Suno, settings if locked. Voices: who speaks, which AI Studio voice/profile if picked. Status.>

@@ -14,12 +14,12 @@ BadCode work.
 | You say | It's probably | Change this |
 | --- | --- | --- |
 | 🔴 "It's flat" | Only one depth plane is populated — a subject against a backdrop, nothing near, nothing far | Put something in the foreground. Anything: a doorway edge, a cable, a rail, haze. Depth is layers, never resolution *(principle 1)* |
-| 🔴 "It looks like AI" | The named bundle: too symmetrical, too evenly lit, too much in focus, generic setting, no gaze pulling anywhere, light with no traceable source | Break one axis hard — kill the fill, put the light behind something, obstruct a third of the frame, make the setting specific to *this* story |
+| 🔴 "It looks like AI" | The named bundle: too symmetrical, too evenly lit, too much in focus, generic setting, no gaze pulling anywhere, light with no traceable source | Break one axis hard — kill the fill, put the light behind something, obstruct a third of the frame, make the setting specific to *this* story, or make the medium physical (its grain, brush, paper or print, whichever is the story's own) |
 | "It looks like a stock photo" | Same bundle from the other direction: a scene built to mean nothing in particular so it could be reused anywhere | Give it one detail that could only be here. Generic is the disease; specificity is the whole cure |
 | 🔴 "I don't know where to look" | No single focal point — everything at the same visual weight | Pick the one thing. Give it the light, the space, or the depth position; take those away from everything else *(principle 2)* |
 | "It's busy / cluttered" | Midground clutter, the most common flatness bug in generated stills | One clean subject beats three ambiguous ones. Delete, don't rearrange |
-| 🔴 "It's just dark / muddy" | Near-black with no bright anchor — the eye has nothing to normalise against, so it reads as a broken file rather than as chosen darkness | Add one small deliberately brighter region. A rim, a practical, a screen. This is the highest-value fix in the file *(principle 11)* |
-| "The dark bits look grey, not black" | Diffusion models pull toward mid-grey; near-black is structurally uphill for them | Name the single source AND state where the falloff goes. "Deep falloff into shadow" is an instruction; "dark" is not |
+| 🔴 "It's just dark / muddy" | Near-black with no bright anchor — the eye has nothing to normalise against, so it reads as a broken file rather than as chosen darkness | Add one small deliberately brighter region. A rim, a practical, a screen. This is the highest-value fix in the file *(principle 11)* | <!-- style-lint: ok (engine fact) -->
+| "The dark bits look grey, not black" | Diffusion models pull toward mid-grey; near-black is structurally uphill for them | Name the single source AND state where the falloff goes. "Deep falloff into shadow" is an instruction; "dark" is not | <!-- style-lint: ok (engine fact) -->
 | "It feels staged / posed" | Unmotivated light — no traceable source in the world | Name the source and put it somewhere specific *(principle 10)* |
 | "It's fine but boring" | Eye-level, dead-on, evenly lit, nothing hidden — the exact recipe for furniture | Break at least one of: height, light, or information withheld |
 | "It's pretty but it doesn't do anything" | Composed for resolution rather than tension — balanced, centred, closed | Off-centre the subject, converge the lines onto it, violate the headroom *(principle 5)* |
@@ -38,7 +38,7 @@ BadCode work.
 | "Everything's the same colour" | No colour plan for the piece — each frame graded on its own | Decide the palette across the whole cut first. We can't fix drift in the edit the way a DP can *(principle 15)* |
 | "It looks like a movie poster" | Teal-and-orange, or complementary contrast used everywhere instead of once | Complementary contrast is a pop. Spend it once. It reads as an effect the second time it's noticed |
 | "It doesn't feel lit by anything" | No warm/cool contrast in frame | One warm source against a cold ambient — most of what "production value" actually means *(principle 17)* |
-| "The shadows have gone to mush after upload" | Compression allocates fewest bits to dark, low-detail regions — the whole frame, in a near-black look like GPOM's | Add grain or dither before encode; check range tagging. See [`../video-fx/delivery.md`](../video-fx/delivery.md) |
+| "The shadows have gone to mush after upload" | Compression allocates fewest bits to dark, low-detail regions — the whole frame, in a near-black look like GPOM's | Add a dither or light noise pass before encode (a delivery fix, not a look); check range tagging. See [`../video-fx/delivery.md`](../video-fx/delivery.md) |
 | "It looked fine here and terrible on YouTube" | Full/limited colour-range mismatch, untagged file — everything below a threshold clipped to black | This shipped once already in `camping.mp4`. Run the QC script, never eyeball it |
 
 ## C. Motion and the clip
@@ -69,7 +69,7 @@ BadCode work.
 
 | You say | It's probably | Change this |
 | --- | --- | --- |
-| 🔴 "It looks impressive but I feel weird about it" | **The aspirational-reading risk.** Monumental grammar with no visible cost reads as celebration of the power it means to indict | Gate 2: put a cost in frame — wreckage, exhaustion, a body that failed, someone the system is failing *(principle 23)*. **This is the check to run before anything monumental ships** |
+| 🔴 "It looks impressive but I feel weird about it" | **The aspirational-reading risk.** Monumental grammar with no visible cost reads as celebration of the power it means to indict | Gate 2: put a cost in frame — wreckage, exhaustion, a body that failed, someone the system is failing *(principle 23)*. **This is the check to run before anything monumental ships** | <!-- style-lint: ok (engine fact) -->
 | "It feels like it's showing off" | Awe reached for without accommodation — the frame explains itself instantly | Withhold. Slow the reveal. Let the viewer's understanding lag the image *(principle 25)* |
 | "It feels cold / I don't care about anyone" | The register is doing scale when the beat needed a person | Ruling R2 — spend a tight human-scale frame here, deliberately; in a monumental look (GPOM's) it is the exception, and the story's `look.md` says which is the default |
 | "It's preachy" | The image is being explained — by a caption, a line, or a narrator naming what the object represents | An objective correlative dies the moment anyone says what it means. The moral is never stated; the beneficiary always is |
@@ -81,7 +81,7 @@ BadCode work.
 | You say | It's probably | Change this |
 | --- | --- | --- |
 | "The caption fights the image" | Text placed without treating it as a compositional element | Caption placement is a blocking decision. Put it where the scan path already goes, never over a face |
-| "The white text is hard to read on black" | Pure white on pure black causes real optical bleeding (halation), worst for readers with astigmatism | Off-white on near-black. Maximum contrast is not maximum readability |
+| "The white text is hard to read on black" | Pure white on pure black causes real optical bleeding (halation), worst for readers with astigmatism | Off-white on near-black. Maximum contrast is not maximum readability | <!-- style-lint: ok (engine fact) -->
 | "The caption is just saying what I can see" | Redundant narration — the fastest way to kill a still's tension | A caption carries only what the eye cannot get: motive, causality, irony, the named beneficiary |
 
 ---

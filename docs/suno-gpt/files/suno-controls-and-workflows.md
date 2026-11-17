@@ -48,8 +48,8 @@ prompts get more specific — high style influence rewards good vocabulary and p
 | 80+ | UI turns this red as a warning |
 | 90–100 | Glitch nonsense — but genuinely useful as free sample fodder (reversed beats, chopped vocals, IDM textures) |
 
-Pairing rule: **weirdness 60–70 + style influence 75** sticks to the brief while still surprising
-you. **Weirdness 0 + style influence 100** is maximum literal obedience.
+Pairing rule: **weirdness 60–70 + style influence 75** sticks to the brief while still surprising <!-- style-lint: ok (engine fact) -->
+you. **Weirdness 0 + style influence 100** is maximum literal obedience. <!-- style-lint: ok (engine fact) -->
 
 ### Audio influence — how hard your source audio drives the result
 
@@ -75,7 +75,7 @@ context-dependent, never a global setting.
 
 ### Studio's standard recipe
 
-**Weirdness 0 / style influence 75–80 / audio influence 25** is the reusable Studio combo for
+**Weirdness 0 / style influence 75–80 / audio influence 25** is the reusable Studio combo for <!-- style-lint: ok (engine fact) -->
 covering your own recorded audio into an instrument.
 
 ---
@@ -85,7 +85,7 @@ covering your own recorded audio into an instrument.
 **All new Suno work is v6, in the new UI** (Kai, 2026-09-10). The options: **v6** for fidelity,
 **v6 Wild** to hunt, then **Cover the winner into v6** — [`suno-v6.md`](./suno-v6.md) §1. Never
 v6 Mini. The v4.5-vs-v5.5 guidance that used to live here (and the "ideas in 4.5, Cover into 5.5"
-hybrid move, whose Cover settings — weirdness 0, style influence 0, audio influence 35–40 — are the
+hybrid move, whose Cover settings — weirdness 0, style influence 0, audio influence 35–40 — are the <!-- style-lint: ok (engine fact) -->
 natural untested starting point on v6) is archived in
 [`../archive/v5.5-era.md`](../archive/v5.5-era.md) §1.
 
@@ -146,7 +146,7 @@ Upload audio and Suno trains a model that generates in that idiom. **Minimum 6 f
 song or voice.
 
 **The "brainwashing" stack:** a Custom Model *and* a Voice trained on the same clip, used together.
-Audio influence 25–60; above 60 gives artifacts. This is the recipe for a locked-in recurring
+Audio influence 25–60; above 60 gives artifacts. This is the recipe for a locked-in recurring <!-- style-lint: ok (engine fact) -->
 narrator.
 
 **The maximum-information stack:** custom model + voice + the same song uploaded again as cover
@@ -178,8 +178,8 @@ breaks Suno out of its generic per-genre vocal default. Audio influence **40–6
 strongest effect.
 
 *Example (GPOM):* GPOM's narrator is a future superintelligence, not a D&B MC. Building its Voice
-from spoken oratory, opera, a gospel preacher or a sardonic crooner is the cheapest route to a vocal
-no other Suno D&B track has.
+from spoken oratory, opera, a gospel preacher or a sardonic crooner is the cheapest route to a vocal <!-- style-lint: ok (engine fact) -->
+no other Suno D&B track has. <!-- style-lint: ok (engine fact) -->
 
 ---
 
@@ -214,7 +214,7 @@ Casting stops being probabilistic.
    - **Do not mention the instrumental at all** — that is the load-bearing instruction. You are
      asking for a vocal performance, not a song.
    - Lyrics box: real lyrics, or a prose description of what the singer sings.
-   - Sliders: **weirdness 0, style influence 100, audio influence 40** (40–60 whenever the result
+   - Sliders: **weirdness 0, style influence 100, audio influence 40** (40–60 whenever the result <!-- style-lint: ok (engine fact) -->
      must stick to the source).
 4. **Repeat for voice two against the *same instrumental*** — not against the take you just made
    with voice one. The author corrects himself on camera specifically to say this.
@@ -296,7 +296,7 @@ Nothing gets you a byte-identical result. Expect small drift.
 **1. Custom model of the song itself (~99.9%, best).** Download the song as **WAV** → Create custom
 model → drag the same WAV in **6+ times** → name → create → wait. Select the model, drag the song
 into remix on **Cover**, **delete the styles box entirely**, paste lyrics with your edits, set
-**weirdness 0 / style influence 100 / audio influence 100**. Preserves voice and delivery exactly,
+**weirdness 0 / style influence 100 / audio influence 100**. Preserves voice and delivery exactly, <!-- style-lint: ok (engine fact) -->
 even when syllable counts change. Cost: one custom model per song.
 
 **2. Studio multitrack cover (best without building a model).** Three dots → Edit → Open in Studio →
@@ -308,7 +308,7 @@ style box blank** (a style prompt muddies the impersonation). **Weirdness 0, aud
 *Limitation:* regenerates the **lead vocal only** — backing vocals for that section are lost.
 
 **3. Remix → Cover.** Drag into the remix slot on **Cover**, **delete the styles box**, edit the
-lyrics, set **weirdness 0 / style influence 100 / audio influence 100**. No setup, but expect drift
+lyrics, set **weirdness 0 / style influence 100 / audio influence 100**. No setup, but expect drift <!-- style-lint: ok (engine fact) -->
 in guitar tone and delivery — it re-covers the whole song rather than patching a section.
 
 **4. The Editor (worst).** Three dots → Edit → Open in editor (Pro). Click a section, its lyrics
@@ -501,7 +501,7 @@ at launch and more promised**: reverb, delay, distortion, compressor, EQ among t
 - **The compressor takes a side-chain input**: select another track (the drums) as the trigger, and
   the source ducks to it. Demonstrated gluing a synth to a drum track.
 - **Automation** — parameters change over time. The demo automates an EQ to sweep a filter open,
-  which is a drum & bass staple we have never been able to ask for.
+  which is a drum & bass staple we have never been able to ask for. <!-- style-lint: ok (engine fact) -->
 
 > **⚠️ This does not overturn the §9 rule, and check before you assume it does.** That rule is
 > *"sidechain pumping cannot be undone — Suno learned to sound pumped without a real sidechain."*
@@ -615,7 +615,7 @@ always sound worse. Take stems only when you intend to genuinely re-produce.
 
 **De-artifact a stem by covering it in Studio:** solo it, highlight the region, set the instrument
 category → **Cover**, style = a plain description plus the word `only`, exclude the other
-instruments, **audio influence 30 / style influence ~60**. Low audio influence is what strips the
+instruments, **audio influence 30 / style influence ~60**. Low audio influence is what strips the <!-- style-lint: ok (engine fact) -->
 artifacts.
 
 **"Reduce more than you produce."** The single highest-value thing to do with stems, and it costs no
@@ -627,9 +627,9 @@ chorus. This is where a flat AI arrangement gains dynamics.
 
 ## 10. Known failure modes — plan around these, don't fight them
 
-1. **Half-time / double-time drums.** Across controlled tests a `breakdown` tag always slowed and
+1. **Half-time / double-time drums.** Across controlled tests a `breakdown` tag always slowed and <!-- style-lint: ok (engine fact) -->
    thinned the arrangement but **never produced half-time drums**. The model appears not to
-   understand the concept. **Directly relevant to D&B, where the half-time drop is a core device** —
+   understand the concept. **Directly relevant to D&B, where the half-time drop is a core device** — <!-- style-lint: ok (engine fact) -->
    get it by editing in Studio or splicing sections, not by prompting. **Untested lead (2026-08-13):**
    Studio 2.0's MIDI tracks let you *program* the pattern by hand and render it to a drum part, which
    sidesteps the model's missing concept entirely. Best candidate in the update for BadCode — test it
