@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r6/h07-a.jpg",
+ "made": "2026-11-17T18:22:51+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r6/run.mts",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/h07-a.jpg",
+ "why": "mv-gang her shot fix h07 from Kai's note (feedback/her-shots-r1)",
+ "prompt": "Using the attached image, make sure all of the small woman in the canary-yellow coat is inside the picture: her hat, her whole head and both shoulders sit fully inside the ring of heads, with none of her cut off by the edge of the frame. Shift the ring of men slightly to make room if needed. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/h07-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}

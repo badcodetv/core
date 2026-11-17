@@ -356,5 +356,17 @@
    "Kai picked sheet b (her-r4-sheet), now her-sheet.jpg",
    "Kai: she stands beside the men in a gap they open, never in front hiding one (all seven visible)"
   ]
+ },
+ {
+  "at": "2026-11-17T18:22:51+00:00",
+  "stage": "picks",
+  "round": 6,
+  "url": "https://claude.ai/artifact/6tMmUqXJW1yKr9Aa3MVvx6",
+  "what": "Her shots r2: 8 still fixes from Kai's notes to approve (h12 peg man and h18 into the line would not take)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-gang/her/r6/picks.json <out>/index.html",
+  "decided": [
+   "Kai: 27 shots get her; d10 and q09 keep the original",
+   "Kai a01m: she carries a gun pointing up like the men, slightly in front is fine here"
+  ]
  }
 ]
