@@ -1,5 +1,11 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-17 · PR #29
+
+**Opposition:** Freezing assessments prevents cuts on paper from looking like better care. But someone whose needs increase could receive their old hours and show no unmet care under this measure. Counting reassessments doesn't make that shortfall count towards failure. Keep the fixed measure, but independently check changed needs and add a failure safeguard for care those people still lack.
+**Answer (Health Secretary):** Right. Her needs went up in March and the yardstick still says she's fine. The fixed yardstick stays, because it's the one the council can't move. Now someone the council doesn't pay checks it. Every year an assessor working for neither the council nor the provider reassesses at least 300 people drawn at random from the fixed group in each set of councils, and records the hours each needs now and the hours delivered. If needed hours not delivered per person are more than one in twenty higher than in the councils waiting, at one year or at two, the trial fails.
+**Outcome:** Conceded: test.measure and fails_if, this commit (nothing else standing; `against` and `answer` stay empty)
+
 ## 2026-11-16 · PR #29
 
 **Opposition:** No strong case against this revision: unmet assessed care now counts whether or not a package has started, has its own failure threshold, and sits beside measures of existing care and hospital admissions. That answers yesterday's objection.
