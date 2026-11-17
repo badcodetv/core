@@ -21,12 +21,14 @@
  *
  *   FLOW_CDP_PORT=<port> npx tsx scripts/scene/run.mts <scene-dir> [key …]     # WAVE=5 by default
  *
- * Run it with run_in_background and never alongside another Flow runner or MCP call: one browser.
+ * Run it with run_in_background and never alongside another Flow runner or MCP call IN THE SAME TAB (law 16).
+ * To run several at once, use scripts/scene/pool.mts: it starts this script K times, each in its own tab and project.
  */
 import { execFileSync } from 'node:child_process'
-import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
+import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, renameSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { FlowClient } from '../../packages/flow-mcp/src/flow-client'
+import { withLock } from './lock'
 
 const REPO = new URL('../..', import.meta.url).pathname
 const HERE = join(REPO, 'scripts/scene')
@@ -35,8 +37,12 @@ if (!SCENE || !existsSync(join(SCENE, 'scene.json'))) throw new Error('usage: ru
 const CFG = JSON.parse(readFileSync(join(SCENE, 'scene.json'), 'utf8'))
 // scene.json's media folder may have been written on another machine: ask scripts/drive/localmap.py where it is here
 CFG.media = execFileSync('python3', [join(HERE, '../drive/localmap.py'), 'path', CFG.media], { encoding: 'utf8' }).trim()
-const PROJECT: string = CFG.flow_project
+// Pool mode (scripts/scene/pool.mts, 2026-11-17): FLOW_PROJECT gives this worker its own project, OPEN_TAB=1 its own
+// tab in the signed-in browser, WORKER a name that keeps its downloads and log lines apart from the other workers'.
+const PROJECT: string = process.env.FLOW_PROJECT || CFG.flow_project
 if (!PROJECT) throw new Error('scene.json has no flow_project')
+const WORKER = process.env.WORKER ?? ''
+const OPEN_TAB = process.env.OPEN_TAB === '1'
 const STAGE = join(process.env.HOME!, '.cache/badcode-scenes', CFG.scene, 'plates')
 const INBOX = join(CFG.media, 'video/inbox')
 const LOG = join(CFG.media, 'video/run.log')
@@ -68,20 +74,23 @@ mkdirSync(STAGE, { recursive: true })
 mkdirSync(INBOX, { recursive: true })
 
 const say = (o: Record<string, unknown>) => {
-  const line = JSON.stringify({ at: new Date().toISOString(), ...o })
+  const line = JSON.stringify({ at: new Date().toISOString(), ...(WORKER ? { worker: WORKER } : {}), ...o })
   console.log(line)
   appendFileSync(LOG, line + '\n')
 }
 const SETTINGS = join(INBOX, 'settings.json')
 /** What each submit actually asked Flow for, keyed by shot — match.py puts it on the recipe card. */
-const recordSettings = (s: Shot) => {
+const recordSettings = (s: Shot) => withLock(join(INBOX, '.settings.lock'), () => {
   const all = existsSync(SETTINGS) ? JSON.parse(readFileSync(SETTINGS, 'utf8')) : {}
   all[s.key] = { model: s.model, aspect: s.aspect, mode: s.mode, durationSeconds: s.duration, count: 1, resolution: '720p', at: new Date().toISOString() }
   writeFileSync(SETTINGS, JSON.stringify(all, null, 1))
-}
+})
 const missing = () => shots.filter(s => !(existsSync(s.out) && statSync(s.out).size > 0))
 
-const c: any = await FlowClient.connect(process.env.FLOW_CDP ?? `http://localhost:${process.env.FLOW_CDP_PORT ?? 9222}`)
+const ENDPOINT = process.env.FLOW_CDP ?? `http://localhost:${process.env.FLOW_CDP_PORT ?? 9222}`
+const c: any = OPEN_TAB
+  ? await FlowClient.openTab(ENDPOINT, `https://flow.google.com/project/${PROJECT}`, WORKER || 'run')
+  : await FlowClient.connect(ENDPOINT)
 const page = c.page
 const sleep = (ms: number) => page.waitForTimeout(ms)
 
@@ -158,7 +167,7 @@ const uploaded = new Set<string>()
 /** One submit, confirmed by a new key at the top of the grid. Throws on anything else. */
 async function submit(s: Shot) {
   const staged = join(STAGE, s.plate!)
-  if (!existsSync(staged)) copyFileSync(s.src!, staged)
+  if (!existsSync(staged)) { const tmp = `${staged}.${process.pid}.tmp`; copyFileSync(s.src!, tmp); renameSync(tmp, staged) }
   await c.reloadProject(); await closeAgentPanel(); await c.ensureAgentOff()
   if (!uploaded.has(staged)) {
     await c.uploadToProject(staged)
@@ -248,18 +257,22 @@ async function collect(baseline: Set<string>, keys: string[]) {
   if (fresh.length === want) fresh.forEach(({ i }: any, j: number) => hint.set(i, keys[want - 1 - j]))
   else say({ event: 'no-key-hints', fresh: fresh.length, want, why: 'tile count differs from jobs submitted; match.py names by first frame' })
   let order = readdirSync(INBOX).filter(f => f.endsWith('.mp4')).length
+  const tagW = WORKER ? `${WORKER}-` : ''
   for (const [i, t] of list.entries()) {
     if (!t.key || baseline.has(t.key) || t.failed || t.pct) {
       if (t.failed) say({ event: 'tile-failed', i, key: hint.get(i), text: t.text })
       continue
     }
-    const dst = join(INBOX, `raw-${String(order++).padStart(3, '0')}${hint.has(i) ? `--${hint.get(i)}` : ''}.mp4`)
+    let dst: string
+    do dst = join(INBOX, `raw-${tagW}${String(order++).padStart(3, '0')}${hint.has(i) ? `--${hint.get(i)}` : ''}.mp4`)
+    while (existsSync(dst))
     for (let d = 1; d <= 3; d++) {
       try { await download(i, dst); say({ event: 'harvested', i, file: dst }); break }
       catch (err) { say({ event: 'download-retry', i, d, why: (err as Error).message.split('\n')[0].slice(0, 120) }); await hardReload() }
     }
   }
-  try { execFileSync('python3', [join(HERE, 'match.py'), SCENE, '--apply'], { stdio: 'inherit' }) }
+  // flock: workers finish waves at the same time, and two match.py runs would move the same raw file twice.
+  try { execFileSync('flock', [join(INBOX, '.match.lock'), 'python3', join(HERE, 'match.py'), SCENE, '--apply'], { stdio: 'inherit' }) }
   catch (err) { say({ event: 'match-fail', why: (err as Error).message.slice(0, 160) }) }
 }
 
@@ -311,5 +324,6 @@ try {
   }
   say({ event: 'done', remaining: missing().map(s => s.key), blocked: [...blocked] })
 } finally {
-  await c.close?.().catch(() => {})
+  if (OPEN_TAB) await c.closeTab().catch(() => {})
+  else await c.close?.().catch(() => {})
 }

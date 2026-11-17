@@ -55,6 +55,13 @@ const FLOW_URL = 'https://flow.google.com'
 const PROJECTS_LIST_RE = /^https:\/\/flow\.google\.com\/?(\?.*)?$/
 const FLOW_HOST_RE = /^https:\/\/flow\.google\.com\//
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
+/** window.name prefix of a tab a pool worker owns (FlowClient.openTab). */
+export const POOL_TAB_PREFIX = 'badcode-pool:'
+/** True for a tab a pool worker opened. A page that can't answer (crashed, mid-navigation) is not one. */
+export async function isPoolTab(p: Page): Promise<boolean> {
+  const name = await p.evaluate(() => window.name).catch(() => '')
+  return typeof name === 'string' && name.startsWith(POOL_TAB_PREFIX)
+}
 const TURN_TIMEOUT_MS = 90_000
 // An uploaded reference that has not shown up in the picker after 30 s is stuck, not slow: a ~1 MB still
 // lands in a few seconds. Jack, 2026-11-12: "refresh the page and try again instead of waiting".
@@ -233,7 +240,10 @@ export class FlowClient {
     const browser = await chromium.connectOverCDP(endpoint)
     const context = browser.contexts()[0]
     if (!context) throw new Error('NO_CONTEXT')
-    const pages = context.pages()
+    // Tabs a pool worker opened (openTab) belong to that worker: never attach to one, or a session's
+    // MCP call lands in a worker's compose bar mid-submit (law 16, across tabs).
+    const pages: Page[] = []
+    for (const p of context.pages()) if (!(await isPoolTab(p))) pages.push(p)
     // Prefer an already-open project page; fall back to any Flow page.
     let page =
       pages.find((p) => FLOW_HOST_RE.test(p.url()) && /\/project\//.test(p.url())) ??
@@ -243,6 +253,29 @@ export class FlowClient {
       await page.goto(FLOW_URL, { waitUntil: 'domcontentloaded' })
     }
     return new FlowClient(browser, page)
+  }
+
+  /**
+   * Open a NEW tab in the signed-in browser and drive only that (2026-11-17, the tab pool). Each tab
+   * has its own compose bar, so K workers in K tabs run side by side where two calls into one tab
+   * kill each other (law 16). The tab is tagged so `connect` skips it, and `closeTab` closes it.
+   */
+  static async openTab(endpoint = DEFAULT_ENDPOINT, url = FLOW_URL, tag = 'worker'): Promise<FlowClient> {
+    const browser = await chromium.connectOverCDP(endpoint)
+    const context = browser.contexts()[0]
+    if (!context) throw new Error('NO_CONTEXT')
+    const page = await context.newPage()
+    // window.name survives same-site navigations and reloads, so the tag sticks for the tab's life.
+    await page.addInitScript((n) => { if (!window.name.startsWith('badcode-pool')) window.name = n }, `${POOL_TAB_PREFIX}${tag}`)
+    await page.goto(url, { waitUntil: 'domcontentloaded' })
+    await page.evaluate((n) => { window.name = n }, `${POOL_TAB_PREFIX}${tag}`)
+    return new FlowClient(browser, page)
+  }
+
+  /** Close this client's tab (a pool worker's own), then detach. Never call it on a `connect` client. */
+  async closeTab(): Promise<void> {
+    await this.page.close().catch(() => {})
+    await this.browser.close().catch(() => {})
   }
 
   async status(): Promise<FlowStatus> {

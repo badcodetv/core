@@ -161,4 +161,7 @@ exec "$CHROME" \
   --user-data-dir="$PROFILE" \
   --no-first-run --no-default-browser-check \
   --no-sandbox \
+  --disable-background-timer-throttling \
+  --disable-renderer-backgrounding \
+  --disable-backgrounding-occluded-windows \
   "https://flow.google.com"
