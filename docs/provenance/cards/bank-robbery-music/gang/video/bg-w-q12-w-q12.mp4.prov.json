@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q12-w-q12.mp4",
+ "made": "2026-11-17T18:29:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first half-second all seven wag their raised index fingers side to side in unison, on the beat, the fingers staying beside their heads, clear of the masks, the small woman in the canary-yellow coat in the middle wagging hers the hardest. On the fourth beat they all stop together, snap the finger down to point at the lens, then give one slow, sarcastic head shake, hers the most exaggerated. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Feet stay planted; masks, hats and clothes stay exactly as they are. The deckhand keeps coiling rope, ignoring them. SFX: gulls, water lapping, a ferry engine thrum, creaking deck.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q12.jpg",
+ "why": "her (the gang's leader) in q12: Kai's pick r5 q12-a (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q12.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-q12",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:28:58.970Z"
+ }
+}

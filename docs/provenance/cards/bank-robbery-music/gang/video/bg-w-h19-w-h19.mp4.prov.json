@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h19-w-h19.mp4",
+ "made": "2026-11-17T18:32:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera low at the lens, framing holds. From the first beat the small woman in the canary-yellow coat, in the middle of the gang, jabs her gloved finger at the lens on every beat, shoulders dipping, head pushing in. Either side of her the men pump their hands at the lens together, bouncing at the knees; on the third beat they all chop flat palms down at once, then point again. BOTTLE, at the back, bounces the umbrella up and down on the beat. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. All stay on their spots. The marquee bulbs keep blazing, rain falls steadily. SFX: shoe stamps on wet cobbles, rain, cloth. No voices.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h19.jpg",
+ "why": "her (the gang's leader) in h19: Kai's pick r5 h19-b (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h19.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-h19",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:26:02.098Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-p05-w-p05.mp4",
+ "made": "2026-11-17T18:32:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. The crouching man in the hat moves from the first instant: he taps both temples twice on the beat, then flings both hands open toward the lens, then bobs on bent knees, feet planted on the beam. Behind him the small woman in the canary-yellow coat hops on one foot on the girder, jabs her finger at the lens, and lands with a shrug, while the standing men nod together on each beat; the seated man holds his sandwich still. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Everyone stays on the girder. Masks, gloves and clothes unchanged; nothing new appears. SFX: wind gusting, steel creaking, distant city traffic far below.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-p05.jpg",
+ "why": "her (the gang's leader) in p05: Kai's pick r5 p05-a (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-p05.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-p05",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:26:58.073Z"
+ }
+}

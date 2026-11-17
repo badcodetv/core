@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-v11x-w-v11x.mp4",
+ "made": "2026-11-17T18:34:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no camera movement. From the first frame the small woman in the canary-yellow coat raps to the lens on the bank steps, leaning in. On the first beat she wags her raised finger at camera, mock-stern; on the next she tips her head up to the sky, exasperated; then she mimes holding a dainty invisible slice of cake between thumb and finger, little finger out, raises it to chin height, stops dead, and shakes her head at the lens; then she slides the empty hand forward, offering it to the viewer, and wags the finger again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Mask stays exactly as it is; her other hand stays on her hip.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-v11x.jpg",
+ "why": "her (the gang's leader) in v11x: Kai's pick r5 v11x-a (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-v11x.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-v11x",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:33:50.945Z"
+ }
+}

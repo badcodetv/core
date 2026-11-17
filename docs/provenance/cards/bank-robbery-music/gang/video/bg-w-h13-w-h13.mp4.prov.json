@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h13-w-h13.mp4",
+ "made": "2026-11-17T18:32:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first half-second the small woman in the canary-yellow coat, in the middle, jabs her finger at the lens on every beat, head pushed forward; on the third beat she sweeps the arm wide and jabs again. Either side of her the men bounce bent-kneed, chopping flat palms down on each beat, then all swing their hands at the lens together, then back to chopping. RUST keeps polishing the propeller with his handkerchief, ignoring them. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Propellers stay still, the plane stays parked. Seven figures throughout; masks, triangles, gloves and clothes unchanged. SFX: feet thudding on dry grass, cloth, summer wind, no voices.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h13.jpg",
+ "why": "her (the gang's leader) in h13: Kai's pick r5 h13-a (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h13.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-h13",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:25:08.167Z"
+ }
+}

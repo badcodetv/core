@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q08-w-q08.mp4",
+ "made": "2026-11-17T18:34:47+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. Both perform from the first half-second, sharp moves on the beat. The small woman in the canary-yellow coat, on the left, thrusts her flat palm at the lens twice, a hard stop sign, then wags one gloved finger side to side, then chops the palm down; her other glove keeps hold of the chrome microphone throughout. The man on the right keeps his hand cupped at his ear, leans further toward the brass horn, nods deeply on each beat and pops his shoulders. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Behind the counter the shopkeeper keeps calmly winding the gramophone. Masks, hats, gloves and clothes unchanged. SFX: gramophone crank, crackle, leather creak.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q08.jpg",
+ "why": "her (the gang's leader) in q08: Kai's pick r5 q08-a (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q08.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-q08",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:33:32.246Z"
+ }
+}

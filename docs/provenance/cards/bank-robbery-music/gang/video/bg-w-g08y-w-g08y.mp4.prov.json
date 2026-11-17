@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-g08y-w-g08y.mp4",
+ "made": "2026-11-17T18:31:57+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, pan or tilt; one continuous shot. The big gloved hand in the foreground stays up, fingers spread, never passing over her face: on each beat it wiggles its fingers like a stage magician, then snaps them, then waves slowly side to side. Behind, the small woman in the canary-yellow coat stands on the stage, head tilted showily, facing the lens, her other hand on her hip. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Her mask stays exactly as in the first frame: white ring, one red triangle, no holes. Smoke drifts in the spotlight. A finger snap, cloth rustle.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-g08y.jpg",
+ "why": "her (the gang's leader) in g08y: Kai's pick r5 g08y-a (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-g08y.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-g08y",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:23:34.502Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-d06m-w-d06m.mp4",
+ "made": "2026-11-17T18:32:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no camera movement. The small woman in the canary-yellow coat leans on the bar and performs straight into the lens from the first instant. First beat: her raised thumb jerks back over her shoulder at the barman, twice, sharp. Next beat: her lower gloved hand chops flat on the bar top, once per beat, like a metronome. Next: both palms open wide in an exaggerated shrug, head tilted. Then she counts off three gloved fingers close to the lens, head nodding on each. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Behind her the barman calmly keeps pouring from the tin jug into the bottle. Sound: palm thumps on wood. No speech.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-d06m.jpg",
+ "why": "her (the gang's leader) in d06m: Kai's pick r5 d06m-a (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-d06m.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-d06m",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:23:16.102Z"
+ }
+}

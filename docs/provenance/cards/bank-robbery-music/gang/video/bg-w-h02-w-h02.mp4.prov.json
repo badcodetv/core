@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h02-w-h02.mp4",
+ "made": "2026-11-17T18:32:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. On the first beat all seven chop their outstretched arms down hard and drop into a knee bounce together. On the next, the small woman in the canary-yellow coat, in the middle of the wedge, jabs a finger straight at the lens; the men either side lean toward her, palms rocking side to side. CRIMSON nods deep on every downbeat. MARINE swings his arm up late and points; SILVER shrugs, palms up, then chops again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. They never stop: a new move every beat, bouncing in their places. Masks, gloves and clothes stay unchanged; dust drifts, the parked cars stay put. SFX: shoes scuffing dry crust, cloth swish, gloved claps, wind. No voices.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h02.jpg",
+ "why": "her (the gang's leader) in h02: Kai's pick r5 h02-b (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h02.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-h02",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:24:10.849Z"
+ }
+}

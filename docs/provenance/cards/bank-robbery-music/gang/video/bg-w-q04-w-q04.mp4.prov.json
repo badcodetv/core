@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-q04-w-q04.mp4",
+ "made": "2026-11-17T18:28:37+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first half-second the small woman in the canary-yellow coat raps with her whole body, knees bouncing on the beat, feet planted on the step. On the first beat her raised finger jabs up at the racing paper twice; on the next her other glove rubs finger and thumb together at the lens, the money sign; then both arms snap wide, palms down; then a big sarcastic shrug, palms up; then the finger jabs up again. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Hands stay below and beside her masked face. The pressman keeps reading, bored. Mask, coat and gloves unchanged. SFX: rotary presses clattering, paper hissing.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+ "why": "her (the gang's leader) in q04: Kai's pick r5 q04-a (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-q04.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-q04",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:27:16.956Z"
+ }
+}

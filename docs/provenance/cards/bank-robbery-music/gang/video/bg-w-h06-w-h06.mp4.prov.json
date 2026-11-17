@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-h06-w-h06.mp4",
+ "made": "2026-11-17T18:31:57+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first half-second all seven bounce together on the beat, knees flexing. On the first beat the small woman in the canary-yellow coat, in the middle, jabs her finger at the lens while the men snap gloved right hands up from the low chop and chop down again. Next beat PLUM and MARINE swing open palms toward us. Then RUST and SILVER pump fists at the lens and BOTTLE rocks his free hand, the lunch pail kept low, while she jabs again and shrugs. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. They keep trading moves in their places. Seven figures throughout; masks, triangles, gloves, clothes and city unchanged. SFX: boot stamps on planks, cloth, wind, no voices.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h06.jpg",
+ "why": "her (the gang's leader) in h06: Kai's pick r5 h06-b (feedback/her-shots-r1), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-h06.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-h06",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:24:28.894Z"
+ }
+}
