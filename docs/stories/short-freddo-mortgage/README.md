@@ -12,6 +12,6 @@ whole context, and the library pieces it takes in are picked by Jack or Kai, not
 | --- | --- |
 | Drive | `Shorts/The Freddo Mortgage` (`1wAjf09XW8QR3UOJGHUK3kN7BmHUDUB7C`) |
 | Jack's media | `Desktop\Youtube Vids\animation\shorts\freddo-mortgage` |
-| Context (library pieces) | ⬜ waiting on Jack's pick |
+| Context (library pieces) | ✅ Clean room (Jack, 2026-11-17) |
 | Look / sound | ⬜ not decided |
 | Script | ⬜ beat brief, lines blank for Jack |
