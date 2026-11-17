@@ -37,6 +37,31 @@ Cheap first looks: many options per beat, not finished frames. **Stills cost no 
 - **A few stills to choose between outside a mood board round** (a fix, a missing shot): a picks page, `scripts/scene/build-picks.py` from the scene's `picks.json`. Every image enlarges on click. Never hand-make a page.
 - **Rounds:** a round answers Kai's notes, with new rows tagged by round. Keep going until every beat has a "This".
 
+## Before a still reaches the board (Jack, 2026-11-17)
+
+Priority Lane rounds 8-17 lost a round to every one of these. Each is a check, not a style rule.
+
+- **One world map per scene.** Any scene with roads, traffic, rooms or a vehicle interior gets a `geometry.md`
+  in its clean-room folder: every vehicle's lane, direction and which side it drives on (the UK keeps LEFT, the driver
+  sits on the RIGHT), where each camera stands and which way it looks. Every writer of every shot in the scene gets the
+  same map, so neighbouring shots agree. A writer who sees only their own shot invents the junction.
+- **The physics check.** Before publishing, look at each still and answer: which way is every vehicle pointing, which
+  lane is it in, is that the correct side, does it match the map and the shots either side, could the camera really be
+  there (a van cab sits high; a bus stop is on the near kerb)? A still that fails is redone or labelled, never shown as
+  if fine. Kai and Jack are not the physics checker.
+- **A pick must pass the check before it becomes a reference.** A reference image's mistakes are copied into every
+  shot made from it (HD14-c inherited CD8-b's wrong-way convoy).
+- **Describe only what should be there.** Never name the thing to remove ("the cars coming toward us are gone"):
+  naming summons it (same rule as Suno, memory "a ban loses to a positive instruction").
+- **Keep the story's look to one short line.** The look belongs in `look.md`; in a prompt it is a few words, not a
+  paragraph copied into every writer's brief. In rounds 8-17 one look sentence sat in ~55 of 69 prompts (avg 272 words)
+  and buried the facts that mattered. Put the shot's own facts (geometry, the face, the slogan) first. Treat the
+  same-prompt check's NEAR COPY / HABIT warnings as real: rewrite, don't wave them through.
+- **A lookalike stays invented** only if the face is big and the prompt does not stack the real person's cues; a small
+  face (a poster in a street) is made big first, then used as a reference. See `docs/google-flow/nano-banana-2.md`
+  ("A small reference face on a poster…").
+- **Reference results are checked automatically** by flow-mcp (`REFERENCE_COPY_ONLY`), but still look at each one.
+
 ## The storyboard
 
 Put the picked stills into a rough order of frames. One frame is one shot, and a frame may hold two or

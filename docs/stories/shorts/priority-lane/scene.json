@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 16, your note on PB15-c 'do multiple versions i can barely see the poster': four versions with the poster big (about half the frame), still from the bus-stop seat, the ambulance coming at us on the correct side. Pick one, or note what to change.",
+ "moodboard_intro": "Round 17: the traffic fixed in the cordon and the held shot (they were the convoy driving down the wrong side at the ambulance). Now the convoy CROSSES the junction left to right, police hold the oncoming side too, the ambulance stays in its lane. Every still checked for direction and lane: CD17-b, CD17-c, HD17-a, HD17-b pass; CD17-a borderline. Pick one cordon and one held shot from the same junction.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -186,9 +186,13 @@
   [
    "HD14-c",
    "B. Held (picked round 14)"
+  ],
+  [
+   "PB16-d",
+   "A2. His poster (picked round 16)"
   ]
  ],
- "board_round": 16,
+ "board_round": 17,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"

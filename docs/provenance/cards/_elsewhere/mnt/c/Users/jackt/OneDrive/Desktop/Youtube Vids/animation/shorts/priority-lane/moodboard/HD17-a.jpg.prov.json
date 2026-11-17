@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD17-a.jpg",
+ "made": "2026-11-17T13:35:41.323Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo. Keep the cab, framing, light and look of the reference image: inside a UK ambulance van cab at night, seen from just behind the driver who sits on the right, his green uniform sleeve and gloved hands on the wheel in the lower right, the dark van dashboard across the bottom, the tall upright windscreen beaded with rain and one wiper arm slanting up from the left, a real 35 mm colour-negative film photo with grain and halation, not CGI. Through the glass, the police line just ahead across the mouth of the yellow box junction stays as it is: officers in yellow hi-vis and white helmets between white police motorcycles with blue strobes, the middle officer holding a gloved hand up toward us. Change only the traffic beyond them. The main road beyond the junction, on our left half, is empty wet tarmac. The convoy is just entering the junction from the left side road, travelling left to right, side-on to us, in the far half of the box away from the police line: a white police motorcycle with blue strobes leads into the box, the first black saloon car is nosing out of the left side road behind it, two more black saloons follow in line, headlights pointing to the right of the frame and red tail lights to the left. Beyond the junction on the right half of the main road, a red double-decker and a queue of cars face us with headlights on, stopped at their far stop line, held by a white police motorcycle and a hi-vis officer standing in front of them. The cross road to the right is empty. Light: sodium-orange street lamps receding down the road, blue strobes flaring on the wet windscreen, white headlights, red tail lights, red traffic signals, the faint glow of the dashboard on the driver's gloves, cold teal shadows, rain streaks. Natural hands with five fingers, natural faces. No readable text, lettering, plates, route numbers, signs or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/HD14-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/HD14-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4d4f9302-646f-4503-9862-3957c9a28b01"
+}

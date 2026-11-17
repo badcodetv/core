@@ -382,5 +382,24 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 16: PB16-a..d bus-seat shot with the poster ~half the frame, ambulance on the UK side; 4/4 real on the fixed flow-mcp",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T13:37:23+00:00",
+  "stage": "moodboard",
+  "round": 16,
+  "what": "Round 16 votes dumped to feedback/moodboard-r16",
+  "decided": [
+   "PB16-d picked for the poster; Jack: fix the traffic in the junction shots"
+  ],
+  "feedback": "feedback/moodboard-r16",
+  "feedback_docs": 20
+ },
+ {
+  "at": "2026-11-17T13:37:23+00:00",
+  "stage": "moodboard",
+  "round": 17,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 17: CD17/HD17 with geometry.md (convoy crosses L-R, both sides held); physics-checked: CD17-b/c, HD17-a/b pass, CD17-a borderline",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]

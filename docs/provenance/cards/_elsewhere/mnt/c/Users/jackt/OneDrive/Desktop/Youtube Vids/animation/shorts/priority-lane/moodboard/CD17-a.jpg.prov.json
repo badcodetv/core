@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD17-a.jpg",
+ "made": "2026-11-17T13:32:39.836Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo. Keep the vantage, light and look of the reference image: looking down from the wet brick parapet of a railway bridge along a wide London main road at night in heavy rain, the dark iron railing and brick pier in the lower right, a real 35 mm colour-negative film photo with grain and soft halation, not CGI. Change only the traffic. Lower left, in the left half of the main road, the yellow-and-green UK ambulance sits at the stop line with its back to us and its nose pointing away from us toward the junction, blue lights flashing on its roof. Just ahead of it, across the mouth of the yellow box junction, five officers in yellow hi-vis jackets and white helmets stand between white police motorcycles whose blue strobes splash the wet tarmac; the middle officer raises a gloved hand flat toward the ambulance. The main road beyond the junction on our left half is empty and wet. The cross road runs left to right through the junction, and the convoy is just entering it from the left side road, travelling left to right, side-on to us, in the far half of the box junction away from the police line: a white police motorcycle with blue strobes already in the box, then the first of three black saloon cars nosing out of the left side road behind it, headlights pointing to the right of the frame, red tail lights to the left, the other two saloons following in line still in the side road. Nothing comes toward the camera on the main road except, beyond the junction on the right half, a held queue of a red double-decker and ordinary cars facing us with headlights on, stopped at their own stop line on the far side of the junction, held by two white police motorcycles and a hi-vis officer standing in front of them with a raised hand. The cross road to the right of the junction is empty. Light: sodium-orange street lamps in a receding row, cold teal shadows, blue strobes from the motorcycles, the ambulance and the lead bike, white headlights of the queue and the convoy, red tail lights, red traffic signals, rain streaking through every lamp. Faces small and natural, hands natural. No readable text anywhere: no lettering, no number plates, no route numbers, no signs, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5f27db38-5a37-4ec2-84c9-5ad86d472002"
+}

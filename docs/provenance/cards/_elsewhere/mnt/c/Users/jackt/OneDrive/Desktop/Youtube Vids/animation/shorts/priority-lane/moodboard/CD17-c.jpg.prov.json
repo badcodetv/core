@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD17-c.jpg",
+ "made": "2026-11-17T13:34:04.729Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo. Keep the vantage, light and look of the reference image: the wet brick railway-bridge parapet with its dark iron railing in the lower right, looking down along a wide London main road at night in steady rain, real 35 mm colour-negative film with grain, slight halation and cold teal shadows, not CGI. Only the traffic changes. On the left half of the main road, lower left of frame, the UK ambulance is held at the stop line with its back to us and its nose pointing toward the junction, its blue lights flashing. Across the mouth of the yellow box junction just ahead of it stands a heavy police cordon: seven officers in yellow hi-vis and white helmets between four white police motorcycles with blue strobes, shoulder to shoulder across our side of the road, one officer stepping toward the ambulance with a gloved hand raised. The convoy is leaving: it has crossed the junction from left to right in the far half of the cross road, away from the police line, and is heading out to the right, side-on to us. The white lead police motorcycle and the first black saloon are already in the cross road on the right edge of the frame, headlights pointing right; the second black saloon is at the right side of the box, and the third black saloon is still in the far half of the box, its red tail lights glowing toward the left, its headlights toward the right. The side road on the left is empty behind them. The main road beyond the junction is empty on the left half. On the right half beyond the junction a red double-decker and a queue of cars face us with headlights on, stopped at their far stop line, held by two white police motorcycles and an officer in hi-vis standing in front of them. Light sources: sodium-orange street lamps in a long row, blue strobes from the motorcycles and ambulance, white headlights of the queue and convoy, red tail lights, red traffic signals, all smeared across the wet tarmac with rain streaks in every lamp. Natural small faces and hands. No readable text, lettering, plates, route numbers, signs or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b93baa7f-7a71-4a42-8596-01f41c80e70a"
+}
