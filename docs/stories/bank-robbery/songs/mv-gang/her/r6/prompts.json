@@ -1,0 +1,59 @@
+{
+ "a01m": {
+  "take": "a",
+  "prompt": "Using the attached image, give the small woman in the canary-yellow coat a Tommy gun exactly like the men's, held upright with its stock against her shoulder and its muzzle pointing at the sky, the way each of them carries his. She stays where she is, half a step in front of the line, mid-stride. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/a01m-a.jpg"
+  ]
+ },
+ "a02m": {
+  "take": "a",
+  "prompt": "Using the attached image, spread the masked gang out a little wider behind the small woman in the canary-yellow coat: the man who is partly behind her steps out to one side so he is fully visible, and the others make room, so nobody is hidden behind her. She stays where she is, at the front, striding in. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/a02m-a.jpg"
+  ]
+ },
+ "c03g": {
+  "take": "b",
+  "prompt": "Using the attached image, the six masked men each take half a step back and spread a little apart, so the small woman in the canary-yellow coat stands clearly in front of them by the press with space around her. Light her exactly like the room: the red lamp overhead, the same warm shadow falling across her coat and onto the floor at her feet, so she belongs in the cellar and does not look pasted on. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/c03g-b.jpg"
+  ]
+ },
+ "h07": {
+  "take": "a",
+  "prompt": "Using the attached image, make sure all of the small woman in the canary-yellow coat is inside the picture: her hat, her whole head and both shoulders sit fully inside the ring of heads, with none of her cut off by the edge of the frame. Shift the ring of men slightly to make room if needed. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/h07-a.jpg"
+  ]
+ },
+ "h12": {
+  "take": "b",
+  "prompt": "Using the attached image, remove the man in the cap hammering the balloon peg into the ground; fill the grass where he was so nothing shows he was there. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/h12-b.jpg"
+  ]
+ },
+ "h18": {
+  "take": "a",
+  "prompt": "Using the attached image, move the small woman in the canary-yellow coat back into the line of masked men, shoulder to shoulder with the men either side of her and at the same distance from the lens as them, so she dances among the gang, not in front of it. All six men stay fully visible. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/h18-a.jpg"
+  ]
+ },
+ "k01m": {
+  "take": "a",
+  "prompt": "Using the attached images, there must be six masked men walking with the small woman in the canary-yellow coat, three on her left and three on her right: on her left, from the edge of the frame inward, PLUM in the mustard suit, BOTTLE in the brown suit, CRIMSON in the dark pinstripe suit and black fedora; on her right MARINE in the cream suit, RUST in the black suit, SILVER in the maroon suit. Masks copied exactly from the attached line-up card. Add whichever of them is missing, walking in step down the steps. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+  "refs": [
+   "/home/kai/.cache/badcode-refs/gang/gang-lineup-heads-kai.jpg",
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/k01m-a.jpg"
+  ]
+ },
+ "k19m": {
+  "take": "a",
+  "prompt": "Using the attached image, the men on the girder shift outward along it, so there is a clear gap of about one person's width on each side of the small woman in the canary-yellow coat, wider than the gaps between the men themselves: she sits in the middle with room around her, the boss, not squeezed in. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+  "refs": [
+   "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/k19m-a.jpg"
+  ]
+ }
+}
