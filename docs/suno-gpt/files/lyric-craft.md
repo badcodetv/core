@@ -282,7 +282,7 @@ voice, while the same clause absorbed into the tail of a long rushed line does n
 
 *Recorded but untested:* `[Tempo: 140 BPM]` / `[Tempo Change: 140 BPM]` appear in two independent
 tag references as mid-song tempo controls. Unattested in the ChillPanic corpus, and tempo-*shape*
-tags (half-time/double-time) are exactly where Suno is documented to be weakest — treat density as
+tags (half-time/double-time) are exactly where Suno is documented to be weakest — treat density as <!-- style-lint: ok (engine fact) -->
 the real lever and this as a long shot.
 
 #### Diagnose a "feels rushed" note by measuring the spread (2026-08-20)

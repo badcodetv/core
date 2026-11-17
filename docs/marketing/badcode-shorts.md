@@ -39,7 +39,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 10. 🌊 **The Radiator:** the radiator is labelled GULF STREAM and someone fiddles with it (5) → the room freezes (4) → "You broke the free heating." (4) **13s.**
 11. 📏 **Rules For Thee:** laws drop out for everyone else, ME is SOLD OUT. **8s.**
 12. 🎱 **Magic 8 Ball:** a question, a shake, the answer. **6s.** Fast enough to do three in one short.
-13. 🎙️ **Balaclava Newsreader:** one real headline read straight, and nobody blinks. **10s.**
+13. 🎙️ **Balaclava Newsreader:** one real headline read straight, and nobody blinks. **10s.** <!-- style-lint: ok (one short's premise, not a house look) -->
 14. 🍞 **Butter Side Down:** toast falls, then "It wasn't gravity." **6s.**
 15. 🐈 **Schrödinger:** the box opens and the cat is holding a complaint form. **6s.** The explainer is cut.
 16. 🦛 **Just a Hippo:** **5s.**
@@ -189,7 +189,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 
 ### 6. 💷 Sponsor a Chancellor
 **Source:** "£100k a year doesn't go far."
-**Hook:** a sad-piano charity advert in black and white, in slow motion.
+**Hook:** a sad-piano charity advert in black and white, in slow motion. <!-- style-lint: ok (one short's premise, not a house look) -->
 **What happens:** "This is Jeremy. Jeremy only earns £100,000 a year. For just £3 a month, you could help him afford a second wine fridge."
 **The turn:** a freeze frame and text with the real median UK salary. ⬜ Check the current figure before using it.
 **Point:** who is "struggling."

@@ -41,6 +41,11 @@ lip-sync. **Music:** Not decided — run story-style.
 - No Flow speech.
 - Unclear: the second date card reads "Now." (script.json) or "2026" (look.md, RESUME.md).
 
+## Flow project
+- `0f0d05fd-6ac0-4296-b669-7334529113d0` — scenes/same-bench
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

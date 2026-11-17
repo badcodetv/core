@@ -79,7 +79,7 @@ address it at all.
 
 These are built for broadcast, bright and busy. Whether that is right depends on the story's
 `look.md` (a game show may want exactly this furniture). For a quiet or dark look — GPOM's
-near-black with one thin light was the case tested — **the plain ones survive contact:**
+near-black with one thin light was the case tested — **the plain ones survive contact:** <!-- style-lint: ok (engine fact) -->
 `Basic Title`, `Basic Lower Third`, and the `Film` and `Simple` caption variants. Every one of
 them exposes colour controls, so the first move on any template is to take the fill and the type
 to the story's palette (for GPOM: near-black fill, cold off-white type).

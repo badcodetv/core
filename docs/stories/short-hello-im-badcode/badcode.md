@@ -35,6 +35,11 @@ intro and channel trailer. State: rough cut 1 (24.9 s) on the timeline page; tem
 - Put the brand mask sentence in the round's preamble so the sameness gate exempts it.
 - Strip audio from all real footage. `marketing-gatekeeper` before anything goes out; nothing is uploaded for now.
 
+## Flow project
+- `99357c2f-11c0-4909-94a8-adc5a2bbd692` — scenes/hello
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

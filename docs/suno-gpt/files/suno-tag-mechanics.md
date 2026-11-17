@@ -60,14 +60,16 @@ A hybrid prompt:
 
 ### Example — pure tag format
 
+*(One genre and one voice picked for illustration only; the format is the point, not the sound.)*
+
 ```
-Hard Rock, 142 BPM, Aggressive, Energetic, Crunchy Power Chords, Double-Tracked Rhythm Guitars, Punchy Drums, Driving Bassline, Heavy Guitar Solo, Male Vocals, Gritty Baritone, Belted Chorus, Stacked Harmonies, Short Plate Reverb, Wide Stereo Mix
+Hard Rock, 142 BPM, Aggressive, Energetic, Crunchy Power Chords, Double-Tracked Rhythm Guitars, Punchy Drums, Driving Bassline, Heavy Guitar Solo, Female Vocals, Raspy Alto, Belted Chorus, Stacked Harmonies, Short Plate Reverb, Wide Stereo Mix
 ```
 
 ### Example — hybrid format (preferred default)
 
 ```
-Hard rock at 142 BPM with crunchy power chords and double-tracked rhythm guitars. Driving bassline locks in tight with punchy drums. Gritty baritone male vocal, belted chorus, stacked harmonies. Heavy guitar solo cuts through with short plate reverb. Wide stereo mix.
+Hard rock at 142 BPM with crunchy power chords and double-tracked rhythm guitars. Driving bassline locks in tight with punchy drums. Raspy alto female vocal, belted chorus, stacked harmonies. Heavy guitar solo cuts through with short plate reverb. Wide stereo mix.
 ```
 
 Both prompts contain the same information. The hybrid version expresses relationships ("locks in tight with," "cuts through with") that the pure tag version cannot. This relational information is what gives Suno cues about which elements lead and which support.
@@ -134,7 +136,7 @@ When a user says "I want a rock song," translate to `Rock, Hard Rock` rather tha
 | "Make me a rock song" | `Rock, Hard Rock` / `Rock, Garage Rock` / `Rock, Stoner Rock` |
 | "I want some blues" | `Blues, Delta Blues` / `Blues, Chicago Blues` |
 | "Hip hop track" | `Hip Hop, Boom Bap` / `Hip Hop, Trap` / `Hip Hop, Drill` |
-| "Electronic music" | `Electronic, Deep House` / `Electronic, Drum and Bass` / `Electronic, Synthwave` |
+| "Electronic music" | `Electronic, Deep House` / `Electronic, Drum and Bass` / `Electronic, Synthwave` <!-- style-lint: ok (engine fact) --> |
 | "Metal" | `Metal, Thrash Metal` / `Metal, Doom Metal` / `Metal, Black Metal` |
 | "Country song" | `Country, Outlaw Country` / `Country, Bluegrass` / `Country, Country Rock` |
 
@@ -172,10 +174,10 @@ clause**, and it is worth more than any amount of extra instrument detail.
 
 Three supports that go with it:
 
-- **Name instruments with adjectives** — `a chilling solo cello`, `hushed creeping
-  strings over a low drone`, `distant timpani`. The bare genre word (`orchestral`)
-  buys the generic version of itself.
-- **Say `real`** (`a real dark orchestra`) when fighting a synth-preset reading.
+- **Name instruments with adjectives** — e.g. `a bright plucked banjo`, `warm detuned
+  Rhodes chords`, `a lone muted trumpet`, `distant timpani` (any genre, any mood). The bare
+  genre word (`orchestral`, `jazz`) buys the generic version of itself.
+- **Say `real`** (`a real string section`, `a real brass band`) when fighting a synth-preset reading.
 - **Scope the secondary layer to the song's structure** — *sparse under the verses,
   full weight through the drops.* A layer with no dynamic instruction sits at one
   level for the whole track and reads as a pad.
@@ -225,8 +227,8 @@ layer back, and it costs one sentence.
 🔴 **The Lyrics box out-votes the Style box on casting, silently. Rebuild inherited cues, never
 inherit them.** *(Camping, 2026-09-21.)* A lyrics box carried forward from an earlier round still
 read `[Verse 1 | the full beat rolling under him from the first line | … an older English
-storyteller …]` and `[Verse 2 | … a BBC newsreader voice …]`, while the Style box asked for two
-grime MCs over a drumless opening. **The lyric cues won**, and three rounds were spent wondering
+storyteller …]` and `[Verse 2 | … a BBC newsreader voice …]`, while the Style box asked for two <!-- style-lint: ok (engine fact) -->
+grime MCs over a drumless opening. **The lyric cues won**, and three rounds were spent wondering <!-- style-lint: ok (engine fact) -->
 where the voice had gone. The cues sit next to the words being performed; the Style box is a
 description of the record.
 
@@ -234,7 +236,7 @@ Two habits that prevent it:
 - **When a round changes the cast or the arrangement, rewrite every section cue from scratch** —
   a lyrics box is not a neutral carrier of words, it is half the prompt.
 - **Assert it in code.** A build script that edits cues should fail when a phrase from the old
-  casting survives (`assert "newsreader" not in lyrics`), because a replace that silently no-ops
+  casting survives (`assert "newsreader" not in lyrics`), because a replace that silently no-ops <!-- style-lint: ok (engine fact) -->
   looks exactly like a replace that worked.
 
 Also: **place a structural moment, do not describe it.** "The drop should land on *this* line" is a
@@ -249,7 +251,7 @@ ourselves.)* Guards added for good reasons quietly instruct the model to never c
 | The clause | Why it was added | What it actually says |
 |---|---|---|
 | `the breaks never stop, not one bar` | a round came back with 12–14 s holes | *no dynamics for three minutes* |
-| `the drums and the sub are the loudest thing in the mix throughout` | "not enough drum and bass" | *the balance never moves* |
+| `the drums and the sub are the loudest thing in the mix throughout` | "not enough drum and bass" | *the balance never moves* <!-- style-lint: ok (engine fact) --> |
 | `rapid-fire from here to the end` | the rap dragged | *one vocal weight for the whole song* |
 
 Each fixed its bug and each flattened the record. 🔑 **The words to watch are `never`, `throughout`,
@@ -328,12 +330,12 @@ bars`), which is worth reaching for when a texture instruction still comes back 
 
 **Before spending rounds making an instrument do less, look for the playing style that
 already does it.** Three rounds went into making a piano play sparsely — better adjectives,
-then a rate — and what finally worked was changing the *technique*: a reggae **skank** is
+then a rate — and what finally worked was changing the *technique*: a reggae **skank** is <!-- style-lint: ok (engine fact) -->
 by definition one short chord on the upbeat and silence everywhere else, so the sparseness
 is structural rather than requested. **A named technique is specification; an adjective is
 negotiation.** Ask what tradition already plays the thing you keep describing.
 
-**Wording a dub/reggae offbeat layer — and one blocked word.** The correct term is
+**Wording a dub/reggae offbeat layer — and one blocked word.** The correct term is <!-- style-lint: ok (engine fact) -->
 `skank`: the offbeat chord stab played on guitar or keys on the upbeats, between the kick
 hits (`bubble` is the related organ pattern filling the gaps it leaves). **`skank` is
 rejected by Suno's filter** — an artist-alias collision, not a content one (there is a
@@ -356,7 +358,7 @@ tails at section endings`.
 **Two things a dub layer smuggles in.** An offbeat chord plus a tuba is *literally*
 oompah, so `ska, ska horns, oompah, brass band, marching band, dixieland, New Orleans,
 upbeat horns` belong in the excludes the moment you add low brass to an offbeat pattern.
-And dub carries a default vocalist exactly as grime does — `ragga MC, toasting, Jamaican
+And dub carries a default vocalist exactly as grime does — `ragga MC, toasting, Jamaican <!-- style-lint: ok (engine fact) -->
 accent, dancehall vocal` — which will overwrite hard-won casting if it isn't banned.
 
 **Adjectives are comparative; a rate is not. When you are fighting an instrument's
@@ -456,7 +458,7 @@ applied pre-emptively on Camping; not A/B tested.)*
 **And check the excludes for the fusion's own side effects.** `operatic` in the Style
 box describes scale and drama, but it also invites operatic *singing*; banning
 `soprano, operatic vocals, vibrato, angelic voices, sustained vocal notes` keeps the
-orchestra and drops the opera singer. **The general move: name the register you want
+orchestra and drops the opera singer. **The general move: name the register you want <!-- style-lint: ok (engine fact) -->
 in the Style box, then ban the vocal that register usually arrives with.**
 
 ---
@@ -481,7 +483,7 @@ Describe vocals by character and delivery style. Suno responds to descriptive la
 
 Preferred descriptors:
 
-- `gritty baritone`
+- `gritty baritone` <!-- style-lint: ok (engine fact) -->
 - `airy female lead`
 - `raspy lead vocal`
 - `belted chorus`
@@ -491,7 +493,7 @@ Preferred descriptors:
 
 Avoid as default:
 
-- `Male Baritone, A2-F4` — over-specified, less effective
+- `Male Baritone, A2-F4` — over-specified, less effective <!-- style-lint: ok (engine fact) -->
 - `Vocals that sound sad` — vague, carries no production information
 - `A guy singing` — carries no information at all
 
@@ -649,7 +651,7 @@ put it back one cue at a time if the arrangement regresses.
 Two failures produce a fill nobody can hear, and both are worth checking before rewording.
 
 **1. A fill cannot contrast with a bed made of the same thing.** Camping asked for amen-break
-fills over a kit that `My Taste` had already described as `chopped amen breaks` — so the fill
+fills over a kit that `My Taste` had already described as `chopped amen breaks` — so the fill <!-- style-lint: ok (engine fact) -->
 was made of the background. Nothing arrived. The fix was upstream of the wording: describe the
 bed as something else (`dry chopped breakbeats`) and reserve the named sample for the fill.
 **Generalised: before adding an accent, check what the prompt says the default already is.**
@@ -670,7 +672,7 @@ snares tumbling over each other, loud and messy up front, then straight back in.
 Keep the interval in the sentence (it costs nothing) but do not expect it to be counted.
 
 **Watch the tempo vocabulary while you do it.** "At double speed" is the obvious way to describe
-a roll and it is a trap: `double time` and `tempo change` are standard Exclude-box entries for
+a roll and it is a trap: `double time` and `tempo change` are standard Exclude-box entries for <!-- style-lint: ok (engine fact) -->
 timing faults, and a tempo word in the Style box acts on the whole track, not on the fill.
 `snares tumbling over each other` buys the same impression with no tempo word in it.
 
@@ -691,7 +693,7 @@ When generating lyrics, the default format is:
 Example:
 
 ```
-[Verse 1 | gritty baritone]
+[Verse 1 | half-spoken, close-mic]
 You burned my bread at 6 AM
 Then smiled with your chrome face again
 [Pre-Chorus | rising tension]
@@ -759,8 +761,8 @@ accumulates into a stronger statement than the Style box makes.
 **The worked case:** a Style box front-loaded with `Madchester skit, British, northern English` — 3
 British-coded words — kept generating an **American** vocal. The Exclude box held **37** British-coded
 bans, accreted over eleven rounds: British comedy (`music hall, panto, cabaret`), British class
-registers (`RP, BBC newsreader, posh`), three of the four strongest British-vocal pools
-(`grime MC, UK drill, road rap`), the whole guitar-band family — and, added in the same round as the
+registers (`RP, BBC newsreader, posh`), three of the four strongest British-vocal pools <!-- style-lint: ok (engine fact) -->
+(`grime MC, UK drill, road rap`), the whole guitar-band family — and, added in the same round as the <!-- style-lint: ok (engine fact) -->
 Style-box fix, **`Madchester baggy`**. The pool's own signature was banned while the pool was being
 asked for, so the pool lost and the vocalist reverted to its default.
 
@@ -811,7 +813,7 @@ Plus one axis that targets adjacency rather than opposition:
 Example exclude prompt for a Hard Rock style prompt:
 
 ```
-acoustic ballad, soft piano, orchestral, cinematic, synthwave, edm, trap hats, autotune, lo-fi, jazz fusion, reggae, country twang, folk harmonica, ambient drone, whisper vocals, spoken word, choir, ukulele, tropical house, slow tempo, mellow mood
+acoustic ballad, soft piano, orchestral, cinematic, synthwave, edm, trap hats, autotune, lo-fi, jazz fusion, bossa nova, country twang, folk harmonica, ambient drone, whisper vocals, spoken word, choir, ukulele, tropical house, slow tempo, mellow mood
 ```
 
 Length target: roughly 180 to 200 characters. The exclude box accepts longer (somewhere between 500 and 1000 characters), but 180 to 200 covers every axis efficiently.

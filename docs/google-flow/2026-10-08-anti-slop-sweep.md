@@ -20,7 +20,10 @@ Read first, so that only the delta is reported: `docs/flow/` (indexes and sectio
 ## 1. Already in the repo (the sweep found these again, nothing to change)
 
 - Slop is polish: too clean, too evenly lit, too symmetrical, too composed. Counter with a named
-  capture, one positioned light, imperfection, off-centre framing, a foreground occluder.
+  capture, one positioned light, imperfection, off-centre framing, a foreground occluder. (All of
+  these sources assume a photographic look. Since 2026-11-17 the toolkit in `nano-banana-2.md`
+  states the lesson as "be concrete and physical in the story's own medium", with film as one
+  medium among several.)
 - `photorealistic`, `cinematic`, `8K`, `masterpiece` are noise words.
 - Describe the scene in sentences; positive framing ("empty street"); name materials; one camera.
 - Quote sign text, describe the lettering, keep it large; small text garbles.
@@ -79,7 +82,7 @@ What follows for prompts, all **UNVERIFIED** inferences from the model card:
   - **Half-committing to a camera look is its own tell**: "neither convincingly amateur nor cleanly
     pro, just off". Pick one capture and carry it through every clause.
   - **Golden-hour light is now an AI signature**: "every model reaches for it".
-  - **Portra 400 and Cinestill 800T are over-prompted** and read as "trying to look like film".
+  - **Portra 400 and Cinestill 800T are over-prompted** and read as "trying to look like film". <!-- style-lint: ok (engine fact) -->
     It suggests Kodak Gold 200, Ektachrome or Ilford HP5.
   - Humble gear: "a phone, a point-and-shoot, a Ricoh GR III, an old Canon AE-1". Studio rigs read
     as stock.
@@ -89,7 +92,7 @@ What follows for prompts, all **UNVERIFIED** inferences from the model card:
     they are not.
   - "If the input looks like AI slop, the footage will too." The start frame sets the ceiling.
   - Working wordings from its examples: "harsh direct on-camera flash, bright hotspot on the faces,
-    background falling into near-black, slight motion blur, framing a little tilted, ordinary
+    background falling into near-black, slight motion blur, framing a little tilted, ordinary <!-- style-lint: ok (engine fact) -->
     everyday people, unposed"; "flat overcast daylight, no sun, muted cool color".
 - **PRACTITIONER** fal, 2026-06-21: reasoning-based models gain less from quality boosters, which
   "crowd out concrete detail"; packing many instructions into one sentence makes the model drop
@@ -198,7 +201,7 @@ What follows for prompts, all **UNVERIFIED** inferences from the model card:
 | # | Repo says | Source says | Tier | Proposed handling |
 | --- | --- | --- | --- | --- |
 | 1 | `omni-flash.md`: "Negatives do not work, and they actively backfire" (community source) | Google's Omni page recommends "simple negative prompts": "No dialogue", "No extra sound effects", "Do not do X" | VERIFIED-PRIMARY | Narrow our rule. Short negatives for **audio and embellishment** are vendor-endorsed. Piles of visual negations stay banned. Our own record is mixed: "No music" failed 4 of 32, a positive sentence fixed laughter |
-| 2 | `nano-banana-2.md` toolkit: name a film stock, example `Kodak Portra 400` | Portra 400 and Cinestill 800T are over-prompted and read as trying to look like film; use Gold 200, Ektachrome, HP5 | PRACTITIONER, different model | Untested on Nano Banana. Cheap pair test: same prompt, Portra against Gold 200 |
+| 2 | `nano-banana-2.md` toolkit: name a film stock, example `Kodak Portra 400` | Portra 400 and Cinestill 800T are over-prompted and read as trying to look like film; use Gold 200, Ektachrome, HP5 | PRACTITIONER, different model | Untested on Nano Banana. Cheap pair test: same prompt, Portra against Gold 200 | <!-- style-lint: ok (engine fact) -->
 | 3 | `nano-banana-2.md` 2026-09-30: "2.1 … still unannounced" | Nano Banana 2.1 is GA since 2026-10-06 and Nano Banana 2 is deprecated in the API | VERIFIED-PRIMARY | Update the file; check the Flow picker and the price |
 | 4 | Standing rule: Nano Banana 2 because it is free | Reports that 2.1 uses credits in Flow | PRACTITIONER | Unverified. Read the credit line |
 | 5 | Motion-only prompts on Frames; preservation lists rejected (2026-09-29) | Runware 1.1: "say what holds still"; write "No camera movement" | PRACTITIONER | Partly compatible with our narrow exception (one sentence on what may move). Our observed fixes of 2026-10-06 ("stands still on the step", "apron … stays plain") agree with Runware. Suggest: one hold-still sentence per clip is now practice, a list is still out |
@@ -221,7 +224,7 @@ What follows for prompts, all **UNVERIFIED** inferences from the model card:
 
 ## 5. Cheap tests this suggests (none run)
 
-1. Portra 400 against Kodak Gold 200 against no stock, same still prompt, two candidates each.
+1. Portra 400 against Kodak Gold 200 against no stock, same still prompt, two candidates each. <!-- style-lint: ok (engine fact) -->
 2. Nano Banana 2 against 2.1 (if the picker has it) on one crowd still and one newspaper still.
 3. A clip with "No camera movement." against the same clip without it, same plate.
 4. A clip whose second beat is an event trigger against the same clip with a timecode.

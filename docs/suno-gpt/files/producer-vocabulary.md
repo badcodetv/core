@@ -42,7 +42,7 @@ many kinds of sad; the generic word gets you something that could equally be rea
 |---|---|
 | `glassy` | Clean and bright — like clinking wine glasses |
 | `velvety` | Soft and warm |
-| `dusty` | Vintage-record grime |
+| `dusty` | Vintage-record grime <!-- style-lint: ok (catalogue) --> |
 | `hollow` | Slightly empty, resonant, **less mid-range presence** |
 | `cavernous` | Huge and echoey — implies a big room and heavy reverb |
 | `distant` | Source pushed far from the listener |
@@ -94,8 +94,8 @@ word to arbitrate.**
   the bass survives on phone speakers.
 - **Legato + mono** — makes notes *slide* into each other rather than retrigger.
 - **Sample-and-hold LFO on the filter cutoff** — randomises the cutoff per note, adding life and
-  unpredictability. Directly applicable to D&B.
-- **Reese bass** — the detuned, moving, growling bass that defines much of D&B.
+  unpredictability. Common in bass music.
+- **Reese bass** — the detuned, moving, growling bass of much drum & bass and bass music. <!-- style-lint: ok (catalogue) -->
 - **Sidechain / ducking** — bass drops in volume when the kick hits so they don't fight.
 - **Notch filtering** — surgical narrow cuts; earns its keep on neuro bass.
 

@@ -52,7 +52,7 @@ parallel lines**, especially in a repeated chorus, and put the line whose rhythm
 template first.
 
 **The safe band is ~6–12 syllables per line; past ~15 the model compresses, smears consonants and
-mumbles.** For drum & bass and anything at 170+ BPM the ceiling is *lower*, because there is less
+mumbles.** For drum & bass and anything at 170+ BPM the ceiling is *lower*, because there is less <!-- style-lint: ok (engine fact) -->
 time per bar — sources warn that long lines at those tempos get rushed, mumbled, or cut off
 entirely. Dense rap bars deliberately run 12–16.
 
@@ -63,7 +63,7 @@ entirely. Dense rap bars deliberately run 12–16.
 
 **Two different "faster" levers appear across sources and nobody reconciles them:** per-line
 syllable density (a smooth, proportional speed-up) versus *overloading the whole section* with more
-bars than fit, which one source says triggers a global "double-time machine-gun" fallback. Unclear
+bars than fit, which one source says triggers a global "double-time machine-gun" fallback. Unclear <!-- style-lint: ok (engine fact) -->
 whether these are one mechanism at two scales.
 
 **Short lines are not fast.** This cuts against intuition and is worth stating plainly: sources
@@ -151,7 +151,7 @@ whole block extends across it.
 model and produce inconsistent results; a tag on every line is counterproductive.
 
 > **First supporting observation, 2026-08-20.** Camping's re-cut ran a bracket cue roughly every two
-> lines and **broke into double time** for a stretch. Not cleanly separated from syllable cramming
+> lines and **broke into double time** for a stretch. Not cleanly separated from syllable cramming <!-- style-lint: ok (engine fact) -->
 > as a cause — but cue overload is no longer only asserted, and **a tempo fault is now a reason to
 > strip cues before trying anything else.** ([`../suno-voices.md`](../suno-voices.md) Thread 4 §4.)
 
@@ -279,7 +279,7 @@ the error. And don't preemptively respell words that haven't actually failed.
 > **respell to an *attested* spelling → double the vowel → give it its own stress unit with a
 > comma.** "Attested" is the load-bearing word — pick a spelling a human writer would plausibly
 > use, because the model has seen those and has never seen your invention. `BLOUGH` came out as a
-> mumbled *bleh*; `blaow` — the real grime/hip-hop ad-lib spelling — reads exactly one way
+> mumbled *bleh*; `blaow` — the real grime/hip-hop ad-lib spelling — reads exactly one way <!-- style-lint: ok (engine fact) -->
 > (2026-08-20, Camping).
 >
 > **`-ough` is the worst cluster in English and should never survive a respelling pass.** It maps to
@@ -396,7 +396,7 @@ Recorded so they aren't silently resolved by whoever reads this next:
 5. **Cause of premature song endings** — missing outro tag vs lyric density over time budget.
 6. **Duet reliability** — "an exploit, not a feature" vs presented as routine.
 7. **Two "faster delivery" mechanisms** — per-line density vs whole-section overload triggering a
-   double-time fallback.
+   double-time fallback. <!-- style-lint: ok (engine fact) -->
 
 ## Provenance
 

@@ -144,7 +144,7 @@ gate G3 as a line-shape: the care beat is *where the naming happens*, every time
 
 **Stage it straight; snark after.** Loach's rule for every boss/landlord/algorithm scene — the
 cruelty is shown, not announced; the narrator's line lands *after* the scene, never instead of it
-(brief 16). The bulletins obey this: the newsreader never panics; the horror is in the gap between
+(brief 16). GPOM's bulletins obeyed this: its newsreader never panics; the horror is in the gap between
 the still voice and the content.
 
 **Deadpan literalism.** The narrator bets; it never cites (binding rule 5). Its register is
@@ -187,13 +187,14 @@ tests, every sarcastic beat:
 
 ## 6. Delivery
 
-The baseline is `{FLAT}` — certain, dry, administrative — and the reserved crack is `{WARM}`, spent
-once (the markup is in [`forms.md`](./forms.md#sound)). Speed signals stakes: an authoritative voice
-sits well under ACX's ~155 words a minute and speeds up only for urgency (brief 23). Narration lives
-in the breakdown; the drop is wordless. The newsreader (`BC-NEWSREADER`) is the same *carrier* across
-the song and the video — spoken register for narration, chant for the chorus — which is the Serling
-principle made literal. Read every line aloud with the picture off: if it is not a complete
-radio-drama beat, it is not finished (brief 23).
+How the narrator sounds (which voice, what accent, how dry) is the story's `sound.md`, never this
+file. What carries across stories: a baseline register (`{FLAT}`) and a reserved crack (`{WARM}`),
+spent once (the markup is in [`forms.md`](./forms.md#sound)). Speed signals stakes: an
+authoritative voice sits well under ACX's ~155 words a minute and speeds up only for urgency
+(brief 23). If the bed has a drop, narration lives in the breakdown and the drop is wordless.
+Keeping one *carrier* across a story's song and video is the Serling principle made literal
+(GPOM did it: its `BC-NEWSREADER` spoke the narration and chanted the chorus). Read every line
+aloud with the picture off: if it is not a complete radio-drama beat, it is not finished (brief 23).
 
 ## 7. The narrator rows of the pass
 

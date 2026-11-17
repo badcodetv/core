@@ -81,7 +81,7 @@ untested and Google's "relationship instruction" has never been shown to exclude
    **Fewer readable faces is fewer chances to clone.**
 3. One variety line: "No two people alike in age, height, build, hair or coat."
 4. 2K. Make four and pick; check faces at 100 per cent before animating, since Omni carries the clones on.
-5. No negative trait wording ("no wrinkles", "flawless skin") anywhere in the prompt or the style lock.
+5. No negative trait wording ("no wrinkles", "flawless skin") anywhere in the prompt or the style lock. <!-- style-lint: ok (engine fact) -->
 
 ## 2. Prop morphing in Frames (the phone that became a mug)
 
@@ -120,7 +120,7 @@ the hand" was to repaint the object it had. The action asked for a prop that was
 Most of the list in the brief is already in the repo (§0). Only these are new:
 
 - **[practitioner]** Negative trait wording ("no blemishes", "perfect skin") removes the asymmetries that make
-  faces individual (Seedance, above). Check style locks for it.
+  faces individual (Seedance, above). Check style locks for it. <!-- style-lint: ok (engine fact) -->
 - **[practitioner]** Archetype and quality words summon a default face; describe a person by structure and a job.
   (Seedance; matches CapCut in the 10-12 sweep.)
 - **[practitioner]** "Over-smooth, floaty, physics-defying" motion and frozen or mirrored expressions are named

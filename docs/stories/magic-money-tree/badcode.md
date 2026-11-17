@@ -53,6 +53,9 @@ locked frame per monologue. Cards: the "third style" (`build-topical-cards3.py`)
 - Anti-slop for show stills: describe the capture, one humble camera and stock, one named light, off-centre, something in the foreground, wear in the set, no quality words.
 - Song: never "we printed the war"; "Keynesian" never a lyric; never the liquid / spoken-word version.
 
+## Flow project
+None recorded yet. Create one with `flow_create_project` before the first Flow call, and write its id here.
+
 ## Library pieces in use
 - none yet
 

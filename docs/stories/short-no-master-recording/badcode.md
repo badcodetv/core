@@ -35,6 +35,11 @@ State: rough cut 1 on the timeline page and in Premiere (`short-no-master-record
 - The logo is the file, laid in by the edit.
 - `marketing-gatekeeper` before posting.
 
+## Flow project
+- `450ef78e-ccab-4d2c-9072-5b1b8ecfd1fe` — scenes/no-master-recording
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

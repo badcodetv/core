@@ -58,6 +58,13 @@ that stand: two voices that never blend, never double-time rap, no American acce
 - Jack's notes on a built cut: make only the noted changes, change nothing else.
 - Check every clip for skin, fingerless gloves and a lost triangle or ring before it goes in.
 
+## Flow project
+- `9b36496c-9bad-48dc-bead-2691d115a4fe` — mv-action
+- `76a7474d-c201-4f7c-8492-3b2c684de501` — mv-balaclava
+- `72255ea1-f3e6-4714-b415-a5cc21ab3bc0` — mv-r10
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

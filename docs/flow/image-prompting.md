@@ -57,31 +57,34 @@ camera, materiality.
 | --- | --- | --- |
 | **Lighting** | A named setup, **or a numeric ratio, or one source plus its falloff** | "three-point softbox setup"; "chiaroscuro lighting with harsh, high contrast"; "2:1 exposure ratio"; "one hard light source from a window at camera left, deep falloff into shadow" |
 | **Camera / lens** | Focal length + aperture together, **with the aperture's reason** | "low-angle shot with a shallow depth of field (f/1.8)"; "85mm lens at f/8 so the whole product stays sharp while the background falls into soft blur" |
-| **Film stock / grade** | A trailing clause, after everything else | "as if on 1980s color film, slightly grainy"; "cinematic color grading with muted teal tones" |
+| **Medium / finish** | A trailing clause, after everything else: what physically made the picture | Google's examples are photographic ("as if on 1980s color film, slightly grainy"; "cinematic color grading with muted teal tones"); the same slot takes "gouache on rough watercolour paper", "two-colour risograph print", "a VHS camcorder frame" | <!-- style-lint: ok (engine fact) -->
 | **Materiality** | Replace the category noun with the substance | not "suit jacket" → "navy blue tweed"; not "armor" → "ornate elven plate armor, etched with silver leaf patterns" |
 
 Full term reference with reliability tiers: [`camera-vocabulary.md`](./camera-vocabulary.md) —
-including the **near-black recipe**, which names the source *and* claims the shadow, and matters
-more to any near-black look (GPOM's, for one) than any other lighting note in these files.
+including the **dark-frame recipe**, which names the source *and* claims the shadow, for a story
+whose `look.md` asks for a very dark frame (GPOM's does).
 
-## 4. Realism — defeating the plastic default (when the look is photographic)
+## 4. Realism — defeating the plastic default
 
-The model defaults to studio-perfect (engine fact). **If the story's `look.md` is
-photographic**, explicitly grant it permission to be a real camera; a drawn, painted or
-deliberately glossy look takes its own counters from its `look.md`:
+The model defaults to studio-perfect (engine fact). **The counter is to be concrete and
+physical in the story's own medium**: name the real marks the medium leaves. Painted: brush
+marks, canvas, pigment. Drawn: line weight, pencil pressure, paper. Print: halftone, ink spread,
+misregistration. Video: scanlines, tape dropout, compression. The practitioner wordings below
+are for a **photographic** look, which is one medium among these, not the default (the story's
+`look.md` decides):
 
 - "hyper-realistic skin texture with visible pores and subtle imperfections"
 - "natural skin microtexture, subtle pores" — and prefer "soft key with diffusion"
   over "glossy skin"
 - Scene-level: "a tiny smear on the lens", "subtle handshake blur", "faint light leak",
-  "uneven exposure", "fine film grain"
+  "uneven exposure", "fine film grain" <!-- style-lint: ok (engine fact) -->
 
 Bare "photorealistic" as an adjective gets you plastic. The imperfection has to be
 named.
 
 **The imperfection vocabulary practitioners actually use**, beyond skin microtexture:
 asymmetrical features, scars, moles, wrinkles, *"slight redness or yellow in the sclera"*, stray
-hair strands, *"natural film grain, subtle lens breathing, analog bloom"*. ⚠️ The same worked
+hair strands, *"natural film grain, subtle lens breathing, analog bloom"*. ⚠️ The same worked <!-- style-lint: ok (engine fact) -->
 prompts also carry *"no AI look, no stylization"* as a bare negative in the main prompt body,
 which contradicts §7's official semantic-negative guidance; the shown outputs prove the whole
 prompt worked, not that clause. **Take the imperfection markers, leave the bare negative.**

@@ -29,6 +29,11 @@ Left: Jack's notes or "it's done", export, delivery QC, gatekeeper.
 - Real party names on signs are fine as text; keep the signs generic-made, no real candidate names, no real person.
 - Open for Jack: does BadCode-in-the-bin read as a joke on the parties or on us? Reader rules and `marketing-gatekeeper` check it before posting.
 
+## Flow project
+- `9fea9e3f-7a2a-478e-90a1-cd72e647a814` — scenes/signs
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

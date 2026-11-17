@@ -116,7 +116,9 @@ STORY_DIRS = {"bank-robbery", "camping", "camping-mv2", "downfall", "gaze-board"
               "money-for-something", "magic-money-tree", "galileo", "storyverse", "palettes"}
 SKIP_DIRS = {"node_modules", "dist", ".tmp", "archive", "__pycache__", ".git"}
 CODE_EXT = {".py", ".ts", ".mts", ".mjs", ".js", ".sh"}
-DOC_SKIP = ("docs/stories/", "docs/library/", "docs/provenance/", "docs/listening/log/", "docs/ideas/")
+DOC_SKIP = ("docs/stories/", "docs/library/", "docs/provenance/", "docs/listening/log/", "docs/ideas/",
+            # records of what was said or planned, not instructions (2026-11-17): meetings, old specs, the reset write-up, the logo
+            "docs/misc/", "docs/superpowers/", "docs/context.md", "docs/brand/")
 
 
 def memory_dir():

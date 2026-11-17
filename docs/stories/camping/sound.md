@@ -146,7 +146,7 @@ candidates; Nell's profile is what renders. (Moved from `docs/ai-studio/README.m
 
 **The narration boxes that got a man talking in Suno** (2026-09-01, ten rounds) — skit/interlude pool word,
 `a man talking over a beat`, one unpitched bed; the whole poetry pool excluded; `[Monologue]` + prose
-paragraphs — are in suno-prompt §Getting a man to TALK (labelled Camping's there) and
+paragraphs — are in this file, *Moved from .claude/skills/suno-prompt/SKILL.md* (below), and
 `docs/suno-gpt/suno-voices.md` Thread 5.
 
 ### AI Studio profile "Gaz M." (2026-09-04, superseded by the later rounds)
@@ -350,3 +350,56 @@ Gaz is the voice you hire for dry British satire — dark comedy, kitchen-sink d
   first take. Hume stays as the record ([`narration/voice.md`](./narration/voice.md)). ElevenLabs script:
   [`narration/elevenlabs-script.md`](./narration/elevenlabs-script.md); Suno narration:
   [`narration/suno-narration.md`](./narration/suno-narration.md).
+
+## Moved from docs/ai-studio/README.md (2026-11-17)
+
+**The configuration that landed Camping's narrator on 2026-09-04** (Jack: *"that worked"*), after five
+rewrites; later superseded by Nell (`Kore`) above. Verbatim from the shared AI Studio guide:
+
+| Field | Value |
+|---|---|
+| **Model** | `gemini-3.1-flash-tts-preview`, Composer mode |
+| **Voice** | **Algenib** (Gravelly, lower pitch) |
+| **Temperature** | 1 |
+| **Voice Direction** | The `# AUDIO PROFILE: Gaz M.` block above |
+| **Scene** | Salford back room, voice-memo recording clause |
+| **Sample Context** | Casting blurb **with the accent named in it** |
+| **Transcript** | Chunk 1, elided |
+
+**The Voice Design description for Camping's narrator, as briefed 2026-09-04** (a later ruling dropped the
+northern accent and the phonetics in it; Voice Design itself turned out to be allowlisted):
+
+```
+Timbre and weight: a gravelly voice with real grit and a little smoke in it, worn and lived-in, mid-weight — never boomy, never resonant like an announcer, never a movie trailer. Age: forties. Gender: male. Pitch: mid-range to lower-middle, never a deep bass or a plummy baritone. Pacing: slow and unhurried, around 130 words per minute, ordinary conversational speech with uneven sentence lengths; he leaves gaps and does not rush to fill them, and every full stop is a real stop with a breath in it. Accent: working-class northern English, from Salford in Greater Manchester — hard flat vowels, a short hard "a" in bath and last, drawn out and leaned on and drooping at the ends of words, swallowed consonants, dropped T's and dropped H's. Never Received Pronunciation, never London, never American. Tone: bored, cocky and thoroughly unimpressed, deadpan and certain, with a warmth underneath that he would deny. Delivery quirks: he speaks through his nose with his chin lifted and his jaw pushed forward, a curled lip on every line; his pitch swoops up inside a sentence and drops away at the end of it, never droning and never on one note; he throws every punchline away instead of landing it and never once signals that something is funny.
+```
+
+Audition line used: *"I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit."*
+Flat and amused was Camping's narrator; any lift, any grandeur, any sense that it knows it is funny was wrong,
+however good the timbre.
+
+**Prebuilt voices weighed for this narrator (2026-09-04), as the shared guide ranked them:** Charon
+(Informative, lower pitch: "the documentary default… *neutral* is what this brief is not"), 🥇 Algenib
+(Gravelly, lower pitch: closest to the gravel-baritone reference; used for Bob 2026-09-08), Alnilam (Firm,
+filed under Narration: worth a pass), Orus (Firm: also recommended for narration).
+
+**The female voice shortlist, judged for Nell (a 51-year-old with banked anger), 2026-09-09** — the verdicts,
+before `Kore` won on the first take:
+
+| Voice | Verdict |
+| --- | --- |
+| 🥇 `Gacrux` (Mature and experienced, low) | **The pick** on research. The only voice in the set that starts in the right place on both axes at once |
+| 🥈 `Kore` (Firm and confident) | **Do not skip it.** *Firm* is the trait contained anger needs, and firmness may beat lowness. A real A/B, not a fallback. (It won.) |
+| 🥉 `Vindemiatrix` (Gentle and kind, low) | Right pitch, wrong disposition. Only if the other two come back too hard |
+| ❌ `Schedar` | Male. Ruled out on gender |
+| ❌ The eleven higher female voices | Every descriptor the opposite of the brief; `Leda` (Youthful) wrong by two decades |
+
+## Moved from .claude/skills/suno-prompt/SKILL.md (2026-11-17)
+
+Camping's tested Suno narration boxes (2026-09-01, ten rounds; suno-prompt §Getting a man to TALK),
+verbatim. The shared skill now keeps only the engine mechanics.
+
+| Box | What goes in (Camping) |
+|---|---|
+| **Style** | a **skit / interlude** pool word · `a man talking over a beat` · a BPM · one **unpitched** bed · `voice-forward mix, no singing, no melody`. **No genre word containing "spoken" or "word"** |
+| **Exclude** | the **whole poetry pool**, named: `spoken word, performance poetry, poetry slam, dub poetry, beat poetry, recital, recitation, declamatory, oratory, verse, stanza, rhyming, metrical, incantation, dramatic reading, elocution` |
+| **Lyrics** | **`[Monologue]`, one label repeated identically**, then **continuous prose paragraphs** — natural punctuation, no rhyme, no parentheses. Ladder if ignored, lateral not longer: `[Monologue]` → `[Spoken Word Narration]` → `[Interlude]` → no label |

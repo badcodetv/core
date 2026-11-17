@@ -57,6 +57,9 @@ Status: LOCKED. Karen's imagery is Jack's, made by hand in Flow; generate only w
 - Satire played straight: the joke is in the words, never the music; no comedic/novelty in Style; no franchise or artist names in any box; the tempo never changes.
 - Write `Ay-Eye Sean` in TTS transcripts.
 
+## Flow project
+None recorded yet. Create one with `flow_create_project` before the first Flow call, and write its id here.
+
 ## Library pieces in use
 - none yet
 

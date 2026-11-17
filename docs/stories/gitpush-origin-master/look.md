@@ -309,3 +309,18 @@ futuristic.**
   humans).
 - **2026-10-23:** Maddie gleaming with no bunting from scene D on; ending E now ends on the Houses
   of Parliament.
+
+## Moved from docs/cinematography/principles.md (2026-11-17)
+
+The shared principles file now states R1 and R2 for every story. The GPOM-specific text they carried:
+
+- **R1 (open), as argued for GPOM:** the corpus contains material arguing against GPOM's look
+  (near-black, monumental; treated as BadCode's house register until Kai ruled on 2026-10-28 that
+  there is no house look). Brief 15: the grammar closest to the target reader is British social
+  realism, which refuses exactly the symmetry, engineered light and scale-dwarfing GPOM's look is
+  built from. Brief 17: monumental grammar with no visible cost reads as celebration of power to
+  part of any audience. Neither proves GPOM's look wrong or social realism the fix. Partial
+  reconciliation: R2 plus principle 23 made mandatory for GPOM. Until ruled: GPOM keeps its look,
+  and gate 2 (visible cost) applies to every monumental GPOM shot.
+- **R2, for GPOM:** monumental is GPOM's awe engine; the tight human-scale frame is a deliberate
+  exception for character beats, spent, not defaulted to.

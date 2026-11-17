@@ -40,7 +40,7 @@ import json, re, sys
 from collections import defaultdict
 
 VOICE = re.compile(r"voice|vocal|sing|sung|speak|spoken|talk|rap|man|woman|shout|croon|"
-                   r"falsetto|baritone|tenor|soprano|basso|bass voice|bass singer|accent|gravel|drawl|whisper|chant|"
+                   r"falsetto|baritone|tenor|soprano|basso|bass voice|bass singer|accent|gravel|drawl|whisper|chant|"  # style-lint: ok (the sameness detector's own word list)
                    r"singer|lead|harmon|choir|deliver", re.I)
 SETTINGS = {"suno": ("model", "variety", "weirdness", "styleInfluence", "vocalGender", "durationSec", "maxMode"),
             "flow": ("model", "aspect")}

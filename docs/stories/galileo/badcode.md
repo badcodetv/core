@@ -39,6 +39,9 @@ Look", "Woo", "The Payroll".
 - The tribunal is a declared composite (Bellarmine / Urban VIII / Maculano compressed to one face).
 - No established physics says consciousness is fundamental: say what's unsolved, never claim what's unproven.
 
+## Flow project
+None recorded yet. Create one with `flow_create_project` before the first Flow call, and write its id here.
+
 ## Library pieces in use
 - none yet
 

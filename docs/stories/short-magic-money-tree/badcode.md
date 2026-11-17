@@ -32,6 +32,11 @@ built in Premiere (`shorts-36-magic-money-tree-r1`); waiting on Jack's "it's don
 - Aim at the decision (who the money goes to), not at "the economy". `marketing-gatekeeper` before posting.
 - Close-ups exist because the wide shot's face is too small to lip-sync.
 
+## Flow project
+- `85b58ebb-2429-437c-80f1-f1f7b69520ef` — scenes/magic-money-tree
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

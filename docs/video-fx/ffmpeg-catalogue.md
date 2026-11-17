@@ -228,9 +228,12 @@ scale=1920:1080:flags=lanczos,noise=c0s=7:c0f=t+u,format=yuv420p" -c:v libx264 -
 ```
 
 **Three sines at incommensurate rates**, so the flicker never visibly repeats — one sine reads as
-a pulsing lamp, not as fire. **For a photographic look, `noise=…:allf=t+u` is not optional:** a locked plate with no moving
-grain reads as a frozen JPEG, and the grain is what makes it read as footage. (A drawn, flat or
-clean look may want no grain; then something else must move, or the still reads as a still.)
+a pulsing lamp, not as fire. **On a frozen plate, something has to move or it reads as a still.**
+The worked example above uses `noise=…:t+u` because its story was photographic: a locked
+photograph with no moving grain reads as a frozen JPEG. That is one answer. A drawn or painted
+look might boil its line or move its paper texture, a print look might drift its halftone, a
+clean graphic look might move the light or a single element instead; the story's `look.md`
+says which.
 
 ⚠️ **When the thing to modulate is a scattered field rather than one spot** — hundreds of rack
 lamps, each needing its own phase — `geq` is the wrong tool, because it cannot address a blob.

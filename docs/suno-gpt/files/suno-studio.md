@@ -248,7 +248,7 @@ break by deleting a track that "isn't doing anything".
 
 **This gives us a real sidechain for the first time.** Our doctrine says Suno's pumping is baked into
 the generation and can't be undone — that stands. But you can now *build* a genuine sidechain on
-material you're arranging in Studio, which for D&B is the difference between imitation pump and the
+material you're arranging in Studio, which for any genre built on pump is the difference between imitation pump and the
 real thing.
 
 **Automation** (panel `3`) changes any parameter over time — the demo swept the EQ so a synth opens
@@ -274,9 +274,9 @@ The flow, from the demo:
    project, and **you can keep iterating on it**.
 
 Worth understanding what this is: a personal effects library nobody else has, described rather than
-coded. For BadCode the obvious targets are the things we keep hand-building — a phone-line EQ for
-the skit voices, a de-esser aimed at the 2–6 kHz sizzle that the D&B notes say to budget for, a
-telephone/answering-machine chain, a tape-warble for the future-broadcast register.
+coded. Candidate targets are whatever a story keeps hand-building — e.g. a phone-line EQ for skit
+voices, a de-esser aimed at Suno's 2–6 kHz sizzle, a telephone/answering-machine chain, a tape warble.
+Which of them a story wants is in its `sound.md`.
 
 Unverified: how good the DSP actually is, whether it survives complex requests, and whether the
 generated UI reflects what the plugin does. The demo's own hosts were guessing what one knob

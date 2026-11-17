@@ -37,6 +37,11 @@ and built in Premiere (`short-ten-economic-commandments-1-tec-r1`); export to 10
 - Check every clip at three frames for suit, cap, mask and no skin; a clip that turns side-on late is used from its start.
 - The logo is a card at the tail, laid in by the edit. `marketing-gatekeeper` before posting.
 
+## Flow project
+- `17b708f8-d9d6-41ae-b562-8d161797b542` — scenes/ten-economic-commandments
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

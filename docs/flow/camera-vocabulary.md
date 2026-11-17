@@ -167,14 +167,14 @@ against colour creep down a shot chain.
 > **Official:** "The scene is lit by the harsh fluorescent overhead lights and the green
 > glow of the monochrome monitor."
 > "Film noir cinematography with dramatic chiaroscuro lighting, deep shadows, venetian
-> blind light patterns, and high contrast black and white aesthetic."
+> blind light patterns, and high contrast black and white aesthetic." <!-- style-lint: ok (engine fact) -->
 > "golden hour rim light on a dancer in a warehouse with backlight creating a halo and
 > dust particles in light beams"
 
-### Near-black: name the light, then claim the shadow
+### Near-black: name the light, then claim the shadow <!-- style-lint: ok (engine fact) -->
 
 **This is the second half of the motivated-lighting move above** — which names the
-source and never claims the shadow. Describing a frame as "dark" or "near-black" is not an
+source and never claims the shadow. Describing a frame as "dark" or "near-black" is not an <!-- style-lint: ok (engine fact) -->
 instruction. Say which single source is lit, and state explicitly where everything else falls:
 
 > *"one hard light source from a window at camera left, deep falloff into shadow, a thin rim of
@@ -188,15 +188,15 @@ lighting)."*
 [fal.ai](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide); low-key siblings
 single-source, [sider.ai](https://sider.ai/blog/ai-tools/best-prompt-techniques-for-veo-3_1-video-output-a-field-guide-to-cinematic-control))*
 
-**Why near-black is uphill.** Average frame brightness is the noise component that survives
+**Why near-black is uphill.** Average frame brightness is the noise component that survives <!-- style-lint: ok (engine fact) -->
 longest during forward noising in diffusion training, so a standard denoise pass cannot move
-global brightness far — near-black prompts tend to render as **muddy dark-grey rather than true
+global brightness far — near-black prompts tend to render as **muddy dark-grey rather than true <!-- style-lint: ok (engine fact) -->
 black** unless the prompt compensates. Background rationale, not a phrase to write: the
 actionable half is the one-light-plus-stated-falloff recipe above. (practitioner-with-evidence,
 [crosslabs.org](https://www.crosslabs.org/blog/diffusion-with-offset-noise))
 
 🔴 **This is the structural enemy of any near-black look** (GPOM's, for one) — near-black with
-one thin light is exactly what the model's training pulls against. Nobody outside has tested it;
+one thin light is exactly what the model's training pulls against. Nobody outside has tested it; <!-- style-lint: ok (engine fact) -->
 the settling test is a histogram, not a vibe.
 
 ### Two more lighting levers
@@ -204,7 +204,7 @@ the settling test is a histogram, not a vibe.
 **Numeric key:fill ratios are usable prompt vocabulary**, a lexical tier below named setups —
 *"2:1 exposure ratio, shallow depth of field, realistic lens flares, soft analog bloom"*, with
 2:1 or 4:1 for *"a balance of shadow detail and contrast"* and tighter ratios pushed toward
-near-black. The underlying ASC convention is a real film-industry standard regardless of AI
+near-black. The underlying ASC convention is a real film-industry standard regardless of AI <!-- style-lint: ok (engine fact) -->
 leverage. (corroborated — five shown generated images tied to numbered prompts,
 [blog.designhero.tv](https://blog.designhero.tv/veo-3-flow-cinematic-realism-midjourney/))
 
@@ -220,12 +220,12 @@ claim is a vendor thumbnail and is not evidence. (content-mill,
 > **A vocabulary, not a default.** Use these only when a story's `badcode.md` asks for a filmed look. Film
 > stock and grain words once crept into every story's prompts (2026-11-17 context reset); most stories want none of them.
 
-Composable into one dense trailing clause. Terms that land: "shot on 35mm film",
-"anamorphic lens", "fine film grain", "halation", "gate weave", named stocks ("Kodak
-Portra 400"), "teal-and-orange", "desaturated", "sepia", "muted teal tones".
+Composable into one dense trailing clause. Terms that land: "shot on 35mm film", <!-- style-lint: ok (engine fact) -->
+"anamorphic lens", "fine film grain", "halation", "gate weave", named stocks ("Kodak <!-- style-lint: ok (engine fact) -->
+Portra 400"), "teal-and-orange", "desaturated", "sepia", "muted teal tones". <!-- style-lint: ok (engine fact) -->
 
-> "Shot on 35mm anamorphic with shallow depth of field, oval bokeh from background
-> lights, fine film grain, and subtle halation around the brightest highlights. Calm,
+> "Shot on 35mm anamorphic with shallow depth of field, oval bokeh from background <!-- style-lint: ok (engine fact) -->
+> lights, fine film grain, and subtle halation around the brightest highlights. Calm, <!-- style-lint: ok (engine fact) -->
 > intimate, slow-cinema mood."
 > "Teal-and-orange cinema grade: warm orange skin tones against deep teal-blue shadows,
 > high but smooth contrast, rolled-off highlights, anamorphic 35mm, subtle blue lens
@@ -239,7 +239,7 @@ wanted. Real optics, independently documented in mainstream cinematography liter
 AI-behaviour claim. (corroborated,
 [diyphotography.net](https://www.diyphotography.net/this-is-why-anamorphic-lenses-have-oval-bokeh-its-nothing-to-do-with-the-aperture/))
 
-**Named stock vocabulary beyond Kodak Portra 400** — Kodak Vision3 500T (cool shadows, held
+**Named stock vocabulary beyond Kodak Portra 400** — Kodak Vision3 500T (cool shadows, held <!-- style-lint: ok (engine fact) -->
 highlights), Fujifilm Eterna (muted, desaturated, low-contrast indie), *"CineStill 800T,
 tungsten-balanced, visible halation around lights"* (the halation is stock-specific, not
 generic), Technicolor three-strip (punchy saturated reds/cyans), *"Bleach bypass process, silver
@@ -251,8 +251,9 @@ these names from generic "warm grainy film". (content-mill, no shown output,
 ### The one-line Style Bible
 
 Lock a single dense descriptor once per project — light direction, palette, contrast character,
-grain and halation in one clause — and paste it **verbatim** into every prompt. The clause itself
-comes from the story's `look.md` (its Preamble); the source's example shows only the shape:
+and the medium's texture (grain for film, brush or paper for paint, halftone for print) in one
+clause — and paste it **verbatim** into every prompt. The clause itself
+comes from the story's `look.md` (its Preamble); the source's example (a filmic one) shows only the shape:
 
 > *"soft north-light rim; muted earth tones; low-contrast filmic; subtle halation; fine grain"*
 
@@ -327,6 +328,6 @@ was added on 2026-08-20 and it points the same way — the rig name was not the 
 
 - [ANCESTRA behind the scenes — blog.google](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/) *(official — reference-video motion transfer, and the "add object" compositing path in [`consistency.md`](./consistency.md))*
 - [Kling vs Veo — Curious Refuge](https://curiousrefuge.com/blog/kling-vs-veo) *(named protocol, 5 tests — vocabulary does not port between models)*
-- [Diffusion with offset noise — Crosslabs](https://www.crosslabs.org/blog/diffusion-with-offset-noise) *(the mechanism behind near-black rendering as muddy grey)*
-- [Nano Banana Pro prompting guide — fal.ai](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide) *(prompts with shown outputs — the near-black recipe, the reasoned aperture)*
+- [Diffusion with offset noise — Crosslabs](https://www.crosslabs.org/blog/diffusion-with-offset-noise) *(the mechanism behind near-black rendering as muddy grey)* <!-- style-lint: ok (engine fact) -->
+- [Nano Banana Pro prompting guide — fal.ai](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide) *(prompts with shown outputs — the near-black recipe, the reasoned aperture)* <!-- style-lint: ok (engine fact) -->
 - Secondary, phrasing only: [lzyprompt.com](https://lzyprompt.com/blog/ai-video-camera-movement-prompts/) · [blog.designhero.tv](https://blog.designhero.tv/veo-3-flow-cinematic-realism-midjourney/) · [veo3ai.io](https://www.veo3ai.io/blog/veo-3-cinematic-film-look-color-grading-2026) · [clipia.ai](https://clipia.ai/en/blog/seedance-2-vs-kling-3-vs-veo-3)

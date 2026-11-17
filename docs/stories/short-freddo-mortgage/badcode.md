@@ -17,6 +17,9 @@ Not decided.
 ## Story-only rules
 - Jack writes the jokes: beats say what to joke about, lines are left blank for him.
 
+## Flow project
+None recorded yet. Create one with `flow_create_project` before the first Flow call, and write its id here.
+
 ## Library pieces in use
 - **Clean room** (picked by Jack, 2026-11-17, from real photo / music first / balaclava / clean room). Copied in:
   every still and clip prompt is written from fresh web research by sealed writers who read one brief file and

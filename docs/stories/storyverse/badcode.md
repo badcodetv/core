@@ -41,6 +41,9 @@ as physics (decisions.md, Call 6).
 - Never publish the confession without the refutation next to it. The confession is never script source for a surface.
 - The era is "the Age of Natural Philosophy", never "the Gilded Age" (telling.md).
 
+## Flow project
+None recorded yet. Create one with `flow_create_project` before the first Flow call, and write its id here.
+
 ## Library pieces in use
 - none yet
 

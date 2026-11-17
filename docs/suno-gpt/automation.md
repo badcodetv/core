@@ -158,9 +158,9 @@ Attaching a saved Voice pops a dialog:
 overwrite the styles every time."*
 
 Why it matters here specifically (a GPOM example): the `badcode newsreader` persona's own styles are the
-**orchestral cut's** — football-terrace crowd chant, drum and bass, 174 BPM. Clicking
+**orchestral cut's** — football-terrace crowd chant, drum and bass, 174 BPM. Clicking <!-- style-lint: ok (engine fact / tool behaviour) -->
 Overwrite on a narration generation replaces a near-silent two-instrument bed with a
-174 BPM D&B track, and the Style box will *look* populated afterwards.
+174 BPM D&B track, and the Style box will *look* populated afterwards. <!-- style-lint: ok (engine fact / tool behaviour) -->
 
 Automation must click **Keep Current** unconditionally and log that it did.
 
@@ -226,7 +226,7 @@ single digits of the limit.
 The one real violation is a box that **matches no sheet we can find**: The M3 Lane's Style box
 reads **1,186 characters** on its song page, the lane it descends from is 899, and it carries
 clauses from several other lanes. Its drum mechanics were at the tail, so a request for 174 BPM
-dark drum and bass arrived as **117 BPM indie breakbeat** — and nobody could hear why, because the
+dark drum and bass arrived as **117 BPM indie breakbeat** — and nobody could hear why, because the <!-- style-lint: ok (engine fact / tool behaviour) -->
 meters called the tempo but never the cause.
 
 ⚠️ **How that box came to exist is inference, not observation.** Growing it by hand in the create
@@ -284,7 +284,7 @@ Two further facts about the slider:
 - It lives inside **More Options**, which is **collapsed by default and unmounts its contents.**
   "The duration control has disappeared" almost always means that section is shut — not that a
   Voice hid it, which was a hypothesis worth testing and is **false** (verified on a clean page:
-  the control is present with `badcode newsreader` attached).
+  the control is present with `badcode newsreader` attached). <!-- style-lint: ok (engine fact / tool behaviour) -->
 - More Options' trigger is a React div that **ignores a native `el.click()`**. It needs a real
   mouse click at the element's coordinates.
 
@@ -321,7 +321,7 @@ Kai's practice, ruled 2026-08-24, when refining: run the same sheet at **both** 
 | **Take A** | 75 | **30** |
 | **Take B** | 75 | **60** |
 
-*"Sometimes weirdness 60 works better, sometimes weirdness 30 works better. I've not yet worked
+*"Sometimes weirdness 60 works better, sometimes weirdness 30 works better. I've not yet worked <!-- style-lint: ok (engine fact / tool behaviour) -->
 out which rule to apply."* — Kai, 2026-08-24
 
 So the refining unit is **load once → set w30 → Create → set w60 → Create**. Style influence
@@ -607,7 +607,7 @@ The atom rule and the pair survive unchanged: a **cell** is a slider round, so w
 | **R4 · the kazoo check** *(optional)* | an absurd My Taste ("only kazoos and yodelling") with Personalize **off** | 1 | confirms the ruling's premise — that Personalize off keeps the account-wide profile out of the song |
 
 **Baseline for every cell unless the round varies it** (a grid's controlled baseline, not a song's settings): Personalize **off** (always — never
-varied), Max Mode off, **Variety Off**, Style Influence 75, Vocal Gender unset unless the sheet
+varied), Max Mode off, **Variety Off**, Style Influence 75, Vocal Gender unset unless the sheet <!-- style-lint: ok (engine fact / tool behaviour) -->
 sets it, Duration explicit. **Never v6 Mini.**
 
 ⚠️ **Variety Off is the baseline, but not yet the code default** (2026-09-11). Suno's v6 FAQ says
@@ -729,14 +729,14 @@ npx tsx scripts/suno/suno.mts narrow <spec.json> <songId|id8|title> --round <N> 
   recorded by mistake; it stops itself on `ended` because Suno auto-advances (above); it keeps
   recording 1.5 s past the end with the player paused, then trims to the player's exact
   `duration` (stopping at once lost the last ~0.4 s, still in PulseAudio's pipe).
-- **`explore <spec> --round N`** — decision 6 of the loop plan: one **v6** Create at weirdness 30 /
-  Style Influence 75 and one **v6-wild** Create at weirdness 60 / Style Influence 60, **Variety
+- **`explore <spec> --round N`** — decision 6 of the loop plan: one **v6** Create at weirdness 30 / <!-- style-lint: ok (engine fact / tool behaviour) -->
+  Style Influence 75 and one **v6-wild** Create at weirdness 60 / Style Influence 60, **Variety <!-- style-lint: ok (engine fact / tool behaviour) -->
   Off**, Max Mode off, titles `<title>-r<N>-v6-w30` / `<title>-r<N>-wild-w60` (title ≤ 30 chars,
   because `takes` truncates at 48). Without `--yes` it prints the cells and `20 credits (2
   Creates)` and **never connects to a browser**.
 - **`narrow <spec> <key> --round N`** — decision 7: cover the pick with the spec's (refined)
   boxes. Without `--yes` it resolves the pick and prints it, the two cells (`-ai75-w30` /
-  `-ai40-w30`, Style Influence 75, Variety Off, on the pick's model read from its title tag) and
+  `-ai40-w30`, Style Influence 75, Variety Off, on the pick's model read from its title tag) and <!-- style-lint: ok (engine fact / tool behaviour) -->
   the cost, and attaches nothing. With `--yes`: attach **by song ID** → prove the source is the
   pick → write Style, Exclude and Lyrics over whatever the source brought (paragraph count and
   words checked) → per cell set model, controls, sliders and title, re-check the source is still
@@ -822,7 +822,7 @@ good (at the cost above).
   worked around; Gen A of the GPOM narration loaded end-to-end in one command (style 903,
   excludes 336, lyrics 15 paragraphs, voice attached, sliders 75/30/50, title `gpom-cut1-A-w30`,
   workspace `gpom-story`). Kai's rulings recorded: decline Overwrite every time, pair every
-  attempt at weirdness 30 and 60, name every track, file into a workspace, never automate
+  attempt at weirdness 30 and 60, name every track, file into a workspace, never automate <!-- style-lint: ok (engine fact / tool behaviour) -->
   downloads.
 
 - **2026-08-24 (Create proven)** — Kai authorised clicking Create. The full pair ran end to end for

@@ -1010,7 +1010,7 @@ and tiny; it is an occasional freebie, not a source.** No API to the free subset
 
 Genuinely excellent API — Invenio, keyless, no rate-limit friction, direct file downloads. And a
 dedicated **`type=FOOTAGE`** facet (36 items) of raw accelerator-tunnel, detector-assembly and
-lab-infrastructure b-roll — exactly the monumental-machine register.
+lab-infrastructure b-roll: vast machinery at architectural scale.
 
 ```bash
 curl -s 'https://videos.cern.ch/api/records/?q=collider&size=10&type=FOOTAGE'

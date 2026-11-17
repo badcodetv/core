@@ -44,6 +44,11 @@ quickening rate). It ends in the flatline tone, then silence: no music over the 
 - The logo at the end is the official file laid on in the edit, never drawn by Flow. No balaclava in this cut.
 - No early car shot and no poster-to-car dissolve.
 
+## Flow project
+- `57538600-142a-45b8-ac4c-e79e663de0c6` — .
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 

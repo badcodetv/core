@@ -251,7 +251,7 @@ Example: `[start]` at the top of the lyrics, `[end]` at the bottom.
 
 ## Advanced and Classical-Style Tags
 
-These tags apply mostly to classical, art rock, prog rock, opera, and composer-style work. They will rarely come up in pop, hip-hop, or modern genre prompts, but they add real capability when the user is going for a specific compositional style.
+These tags apply mostly to classical, art rock, prog rock, opera, and composer-style work. They will rarely come up in pop, hip-hop, or modern genre prompts, but they add real capability when the user is going for a specific compositional style. <!-- style-lint: ok (engine fact) -->
 
 ### `[fugue]`
 What it does: A contrapuntal compositional structure where a theme is introduced and then imitated in successive voices.

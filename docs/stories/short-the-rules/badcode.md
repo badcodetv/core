@@ -44,6 +44,11 @@ Every gang member wears a knitted balaclava covering the whole head, with no eye
 - People sleeping rough are shown with dignity: the camera never laughs at them.
 - Cut on the words (rough sleepers on "bed", an empty purse on "purse", the bin on "bin").
 
+## Flow project
+- `3b5e895b-c6cf-4467-a29a-7dbfcbbc0568` — scenes/the-rules
+
+Open the part's project before its first Flow call; never use it for another story.
+
 ## Library pieces in use
 - none yet
 
