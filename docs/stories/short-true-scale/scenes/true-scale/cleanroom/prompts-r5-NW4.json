@@ -1,0 +1,26 @@
+{
+  "research": [
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/character-consistency — Nano Banana 2 keeps a character from an attached reference; name the reference's role plainly and spend the words on scene, action, light",
+    "https://signals.aktagon.com/articles/2026/03/generating-consistent-imagery-with-gemini-a-practical-guide-to-building-a-prompt-based-generation-pipeline/ — label which attached image holds which element ('the attached reference sheet')",
+    "https://www.creativereview.co.uk/trivial-pursuits-photo-book/ — Orlando Gili / Tony Ray-Jones lineage: British leisure shot candid, wide, affectionate, people mid-gesture rather than posed",
+    "https://petapixel.com/2025/10/03/queen-of-the-night-cinestill-800t-film-feels-made-for-neon — fast tungsten-balanced night film: warm practicals, red halation around bulbs, coarse grain; cold blue where daylight-balanced or wet street light leaks in",
+    "https://www.35mmc.com/28/01/2020/5-frames-with-cinestill-800t-at-night-in-taipei-by-jim-sangwine — halos around point sources and wet teal exteriors are the signature; keep it unpolished"
+  ],
+  "notes": "Beat 4 is the room turning. Option a is the wide social picture: every head in the pub swivelled one way, Bob small and upright in the far corner, the first time he has been seen. Option b flips the axis: close to Bob at his table, low, with his answer sheet sharp in the foreground and the turned faces soft behind. Bob is never described; rucksack and rolled sleeping mat are named because the beat needs them. Only readable text: '300,000' on his sheet in b; a has none.",
+  "stills": [
+    {
+      "beat": "nw4",
+      "id": "NW4-a",
+      "look": "Wide from the bar: the whole room turned toward the corner",
+      "prompt": "Vertical 9:16 candid night photograph inside a worn British local pub on quiz night, shot from behind the bar at shoulder height with a wide lens. Every drinker in the room has twisted round in their seat to stare at the far corner: builders in hi-vis, a hen party in sashes, old regulars with pints halfway up. In that corner, small in the frame and standing upright beside table nine, is the man from the attached reference sheet, a rucksack on his back with a rolled sleeping mat strapped on top, calm, meeting their eyes. Patterned carpet, unbranded fruit machine glowing, answer sheets and tiny pencils on tables. Warm tungsten light, red halation on bulbs, coarse grain, a cold teal rain-streaked window behind him. No readable text. Thanks.",
+      "uses_bob_reference": true
+    },
+    {
+      "beat": "nw4",
+      "id": "NW4-b",
+      "look": "Low at his table: his sheet sharp, the turned faces soft",
+      "prompt": "Vertical 9:16 candid night photograph, camera low at the edge of a small sticky pub table, looking up. In sharp focus in the foreground lies a crumpled quiz answer sheet with a tiny pencil, the only writing on it the number \"300,000\". Just behind it, standing and already leaving, is the man from the attached reference sheet, rucksack on, rolled sleeping mat strapped across the top, half-turned back toward the room with a quiet, level look. Behind him, out of focus, a crowd of pub faces all turned toward him: hi-vis, a hen-party sash, a flat cap, mouths slightly open. Warm tungsten bar light, fruit-machine glow, red halation, coarse grain, cold teal rain on the window behind. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

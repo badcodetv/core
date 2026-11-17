@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-05-t1-SU4-3-b.mp4",
+ "made": "2026-11-16T18:12:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Single continuous shot, handheld camera walking backwards ahead of him, 8 seconds. The masked figure strides at us with a rolling swagger, mic swinging on its cable, head nodding to the beat. Banknotes flutter down from above and tumble across the cobbles; silhouetted pedestrians cross behind him. His mask stays on us all the way, markings untouched; the bridge holds steady behind. Sound: footsteps on cobbles, paper rustle, wind. No talking, no song.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-3-b.jpg",
+ "why": "anim r1 clean room, part: rule two",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/SU4-3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "05-t1",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T18:10:28.570Z"
+ }
+}

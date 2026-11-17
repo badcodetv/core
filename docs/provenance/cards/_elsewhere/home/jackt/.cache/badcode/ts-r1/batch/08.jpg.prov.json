@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/08.jpg",
+ "made": "2026-11-16T13:21:35.740Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph at night in an empty English community hall, folding chairs stacked against the wall, one fluorescent strip light overhead casting cold teal. On a long trestle table stretching away from camera sits a vast architectural model: rows and rows of tiny unpainted grey card terraced houses packed shoulder to shoulder to the far end of the table and spilling onto a second table, every one dark. In the near corner a much smaller cluster of tiny model figures, lit teal, dwarfed. A hand-lettered card propped at the front reads \"303,185\". Shot on cheap colour negative film with a 35mm lens, low angle, shallow depth of field, heavy grain, scuffed lino floor. Thanks.",
+ "source_id": "2a2c0124-302e-40fa-b650-42e49fb721e3"
+}

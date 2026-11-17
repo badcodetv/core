@@ -1,0 +1,239 @@
+{
+ "sequence": "short-ten-economic-commandments-1-tec-r1",
+ "title": "Ten Commandments Timeline",
+ "heading": "BadCode Shorts ▲ Ten Economic Commandments, rough cut 1",
+ "intro": "Your rap (jazz1) with your seven stills animated, cut on the rules, then the logo. Note anything.",
+ "fps": 24,
+ "total": 29.0,
+ "beats": [
+  {
+   "id": "intro",
+   "title": "1. Intro",
+   "start": 0.0,
+   "dur": 5.0,
+   "see": "Doorstep, the chalkboard: THE 10 MONEY COMMANDMENTS",
+   "lines": [
+    {
+     "i": 0,
+     "who": "rap",
+     "name": "The rap",
+     "t": 0.0,
+     "dur": 5.0,
+     "text": "\"Money printer manual. Take notes.\"",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "one",
+   "title": "2. Number one",
+   "start": 5.0,
+   "dur": 5.0,
+   "see": "Subway platform, fanning fresh banknotes",
+   "lines": [
+    {
+     "i": 0,
+     "who": "rap",
+     "name": "The rap",
+     "t": 5.0,
+     "dur": 5.0,
+     "text": "\"Never tell 'em what you printed…\"",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "two-a",
+   "title": "3. Number two",
+   "start": 10.0,
+   "dur": 2.6,
+   "see": "Red studio, fisheye, two fingers up",
+   "lines": [
+    {
+     "i": 0,
+     "who": "rap",
+     "name": "The rap",
+     "t": 10.0,
+     "dur": 2.6,
+     "text": "\"Never get high on your own supply…\"",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "two-b",
+   "title": "4. The rent",
+   "start": 12.6,
+   "dur": 2.4,
+   "see": "Bridge street, notes falling behind him",
+   "lines": [
+    {
+     "i": 0,
+     "who": "rap",
+     "name": "The rap",
+     "t": 12.6,
+     "dur": 2.4,
+     "text": "\"…banks took the first hit, now the rent's sky-high.\"",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "three-a",
+   "title": "5. Number three",
+   "start": 15.0,
+   "dur": 3.0,
+   "see": "The fence bench with two locals",
+   "lines": [
+    {
+     "i": 0,
+     "who": "rap",
+     "name": "The rap",
+     "t": 15.0,
+     "dur": 3.0,
+     "text": "\"No consignment, cash up front, that's law…\"",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "three-b",
+   "title": "6. The bailout",
+   "start": 18.0,
+   "dur": 3.0,
+   "see": "Dusk crowd, the mic pushed at the lens",
+   "lines": [
+    {
+     "i": 0,
+     "who": "rap",
+     "name": "The rap",
+     "t": 18.0,
+     "dur": 3.0,
+     "text": "\"…they took the bailout on tick and they ain't paid at all.\"",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "fix",
+   "title": "7. The fix",
+   "start": 21.0,
+   "dur": 4.5,
+   "see": "Night, streetlight, empty gloved hands raised",
+   "lines": [
+    {
+     "i": 0,
+     "who": "rap",
+     "name": "The rap",
+     "t": 21.0,
+     "dur": 4.5,
+     "text": "\"And the fix, from the future? No hand on the printer.\"",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "logo",
+   "title": "8. Logo",
+   "start": 25.5,
+   "dur": 3.5,
+   "see": "The BadCode logo on black, the beat playing out",
+   "lines": []
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-01-t1-RU4-1-b.mp4",
+   "in": 0.3,
+   "start": 0.0,
+   "dur": 5.0,
+   "beat": "intro",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-01-t1-RU4-1-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-03-t1-SU4-1-a.mp4",
+   "in": 0.5,
+   "start": 5.0,
+   "dur": 5.0,
+   "beat": "one",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-03-t1-SU4-1-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-04-t1-RU4-2-a.mp4",
+   "in": 0.4,
+   "start": 10.0,
+   "dur": 2.6,
+   "beat": "two-a",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-04-t1-RU4-2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-05-t1-SU4-3-b.mp4",
+   "in": 0.5,
+   "start": 12.6,
+   "dur": 2.4,
+   "beat": "two-b",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-05-t1-SU4-3-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-06-t2-RU4-3-a.mp4",
+   "in": 0.2,
+   "start": 15.0,
+   "dur": 3.0,
+   "beat": "three-a",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-06-t2-RU4-3-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-02-t1-RU4-5-b.mp4",
+   "in": 0.5,
+   "start": 18.0,
+   "dur": 3.0,
+   "beat": "three-b",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-02-t1-RU4-5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-07-t1-FX4-1-b.mp4",
+   "in": 0.3,
+   "start": 21.0,
+   "dur": 4.5,
+   "beat": "fix",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-07-t1-FX4-1-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r1/v9-logo.mp4",
+   "in": 0,
+   "start": 25.5,
+   "dur": 3.5,
+   "beat": "logo",
+   "source": "logo card",
+   "looped": false
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "mus-rap",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r1/mus-rap.wav"
+  }
+ ],
+ "events": [
+  {
+   "stem": "mus-rap",
+   "t": 0,
+   "dur": 29.0,
+   "what": "Jack's pick jazz1, Suno e4cb9be5 (the rap)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/audio/tec-r2-jazz-phrasing-v6-w30-e4cb9be5.wav"
+  }
+ ],
+ "flags": [
+  "Clip 06 used from its start: the head turns side-on later.",
+  "Take 1 of each clip unless noted; take 2 of each is in the video folder.",
+  "RU4-3-a (fence bench): check the phone booth for a fast-food sign."
+ ]
+}

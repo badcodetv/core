@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/FL1-b-a.jpg",
+ "made": "2026-11-15T10:25:53.187Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 night street, long lens, very shallow focus, background melted into soft amber, red, pink and cyan bokeh, inky blacks, lit only by signs, shop windows and street lamps. Low camera at the kerb, side-on. The silver taxi on the right with its rear door wide open, the plain TAXI roof sign glowing. The young man in the white shirt is caught in mid-air a metre from the open door, flat and horizontal, travelling back-first toward it, limbs trailing, face blank with surprise. His keys hang in the air where he stood. The figure in the lab coat stands at frame left in strict profile, holding one leg raised straight out at hip height like a calm dancer. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "2669cb63-0e06-4516-a341-252957e0e517"
+}

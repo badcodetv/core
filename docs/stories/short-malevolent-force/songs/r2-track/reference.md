@@ -1,0 +1,2 @@
+- Jack, 2026-11-16: "ambient silent hill music" (the Silent Hill video game series' ambient/industrial soundtrack). Research what that sound is. Never name the game, its composer or any track in a Suno prompt.
+- Round 1's reference (what he moved on from): the Black Ops 1 zombies theme "Damned", https://www.youtube.com/watch?v=LGD79pQY1kI.

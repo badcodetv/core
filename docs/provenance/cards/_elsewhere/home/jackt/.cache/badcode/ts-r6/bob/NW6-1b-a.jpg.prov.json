@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r6/bob/NW6-1b-a.jpg",
+ "made": "2026-11-16T14:58:24.010Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid photo, cheap colour film, grain, warm tungsten night. Wide from the back of a busy British local on quiz night. At the far end, by the bar, the quizmaster, an older Sikh man in a navy turban and a darts-club polo, holds up one sheet and speaks into a mic. Tables lean toward him: two Polish builders in hi-vis, a Caribbean grandmother with her teenage grandson, three women from an office in lanyards, a bald white bloke in a plain red football shirt, a Chinese student with an answer sheet. In the far corner, alone at a small table, the man from the attached reference sheet sits side-on, still, watching. Plain-wrapped meat raffle on the bar, patterned carpet, fruit machine glow, teal rain on the windows. All writing unreadable, no numbers. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "513f2e33-e68a-4879-ad10-fe28347fc4db"
+}

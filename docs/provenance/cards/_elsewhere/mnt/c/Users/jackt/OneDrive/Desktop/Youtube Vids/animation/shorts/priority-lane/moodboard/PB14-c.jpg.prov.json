@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB14-c.jpg",
+ "made": "2026-11-17T13:03:26.385Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 still on 35 mm colour-negative film, rainy London night, seen from seat height in the middle of the perch bench inside a roadside glass shelter, turned slightly toward its left end. The frame is built from the shelter itself: the dark steel frame of the glass roof crosses the top of the picture with rain sheeting over it, a rain-streaked glass side panel runs down the left, and set into the end of the shelter, at a gentle angle and filling the left-centre of the frame, is the inward face of the illuminated advertising case showing the poster from the reference image, reproduced exactly, the same man's face, sharp and luminous in the case's white backlight, its glow spilling onto the wet bench. To the right, through the open front of the shelter, the kerb and the empty near lane of a wide wet road, then the far pavement, all lit by tall sodium-orange street lamps whose reflections stretch down the tarmac; deep teal shadow under the trees opposite. From the right side of the frame a cold blue strobe glow from an ambulance still out of sight is beginning to flare in the raindrops on the shelter glass and to slide across the wet road surface, the first blue just touching the far edge of the poster case. Light sources: poster case backlight, sodium lamps, the first blue emergency wash. Heavy natural film grain, soft halation, no people, nothing readable except the poster, no signs, no plates. A real film photograph, not CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "84452162-3f78-4c60-a8b0-56b0797c84d8"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD17-b.jpg",
+ "made": "2026-11-17T13:36:42.244Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo. Keep the cab, framing, light and look of the reference image: the driver's seat of a UK ambulance van seen from just behind the driver on the right, his green sleeve and gloved hands gripping the wheel, the van dashboard dark across the bottom, the tall upright rain-spotted windscreen with the wiper slanting up from the left, grainy 35 mm colour-negative night film with soft halation, never glossy. Keep the police line just ahead through the glass exactly as in the reference: hi-vis officers in white helmets and white police motorcycles with blue strobes across the mouth of the yellow box junction, one gloved hand raised at us. Change only the traffic beyond the police line. Nothing drives toward us on the main road; the road straight ahead beyond the junction is empty on our left half. Instead, in the middle of the junction, in its far half beyond the police line, the convoy crosses from left to right, seen fully side-on: a white police motorcycle with blue strobes leading at the right, then three black saloon cars nose to tail, their headlights pointing to the right of the frame and their red tail lights to the left, spray lifting off their tyres, passing behind the police officers' helmets. The side road on the left is empty behind them and the cross road on the right is empty ahead of them. On the right half of the main road beyond the junction, a red double-decker and a line of cars face toward us with headlights on, stopped at their stop line on the far side of the junction, held by a white police motorcycle and a hi-vis officer standing in front of the bus. Light sources: sodium-orange street lamps, blue strobes reflecting in the wet glass and tarmac, white headlights, red tail lights, red traffic signals, a dim dashboard glow on the gloves, cold teal shadows, rain falling through every lamp. Natural hands, natural faces. No readable text, lettering, plates, route numbers, signs or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/HD14-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/HD14-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5a9af202-927b-495d-9e71-10b0e57c5e0e"
+}

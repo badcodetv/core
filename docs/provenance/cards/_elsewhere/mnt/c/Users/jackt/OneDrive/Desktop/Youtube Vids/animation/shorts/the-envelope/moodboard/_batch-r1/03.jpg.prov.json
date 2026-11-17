@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/03.jpg",
+ "made": "2026-11-15T12:35:23.554Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 overhead insert shot, like a 1970s British espionage film, the same scuffed green leather desk in the same Whitehall office: a second stiff buff government envelope has just landed squarely on top of the first, which pokes out beneath it. Printed at the top: \"O.H.M.S.\" beside a small invented crest of a crowned key between two herons, and \"EXPORT LICENCE\" in typewriter capitals. Across the middle, a slightly crooked red rubber stamp in heavy block capitals reads exactly \"APPROVED BY THE LABOUR PARTY\". The same brass banker's lamp, warm tungsten from the left, cold grey window light from the right. Kodak 35mm film stock, 40mm lens, fine grain, the same teacup ring stain. Thanks.",
+ "source_id": "a8da7011-44d4-4c53-9d8b-f1c9ecf21377"
+}

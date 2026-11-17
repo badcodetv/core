@@ -1,0 +1,80 @@
+[
+  {
+    "name": "solo-violin-jab-music-box",
+    "style": "instrumental only, no vocals. 15-second chamber-horror miniature, suspense underscore, completely beatless, rubato, no pulse. Solo violin, close-miked and dry, plus a small wind-up music box slightly out of tune. Opens pianissimo: faint night-city air, a thin music-box figure turning alone. The single violin enters, then echoes itself in overlapping canon, three, four, five voices drifting apart, sul ponticello whispers, rising unease. One savage sforzando down-bow stab, then dead silence. The canon folds back into one held violin note, pianissimo. A soft muffled door thump. Ending: the music box alone, slowing, with one low, distant, mellow car horn far off in the street, cinematic, gentle. Intimate, dark, tender dread",
+    "exclude": "vocals, voice, choir, humming, spoken word, drums, percussion, beat, kick, bass drop, trailer braam, epic orchestra, synth, EDM, fade in",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "club-thump-through-the-wall",
+    "style": "instrumental electronic cue, 15-second sound-design piece, 124 bpm UK garage and house drum machine with sampler, lo-fi and heavily filtered. Opens on a four-to-the-floor kick and shuffled hats heard muffled through a nightclub wall, low-passed to a dull bass thud, bassline smeared and boomy. The loop then stutters and doubles into several drifting out-of-sync copies of itself, phasing and flanging against each other, a woozy smeared stereo field. Sudden tape-stop: the pitch drags down to a halt, then a rising resonant filter sweep snaps everything back into one tight dry locked loop. Cut dead by a heavy car door slam, then silence. Last two seconds: dry outdoor night street air, a diesel taxi engine idling low, one short warm double-tap car horn decaying into a single long reverb tail. Sparse, cinematic, no melody",
+    "exclude": "vocals, vocal chops, MC, sung hook, spoken word, strings, orchestra, piano",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "pizzicato-caper-to-solemn-brass",
+    "style": "instrumental cinematic comedy cue that turns grave, 100 bpm. Small pit band: plucked pizzicato violins and cello with a reedy bassoon on a lopsided, staggering little march, tipsy oom-pah lilt, playful. The march tune then piles up in clashing keys at once, bitonal, crowded and dizzy. A rising slide whistle ends in one dry woodblock snap. A single deep timpani thud. Sudden hush: one muted flugelhorn holds a long lonely note, rubato, slowing, sparse and solemn, a soft cinematic car horn far away in the distance. Acoustic orchestra, close dry mix",
+    "exclude": "vocals, voice, choir, singing, humming, spoken word, synth, synth pad, electronic drums, drum kit, 808, EDM, bass drop",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "sound-design-only-foley-score",
+    "style": "instrumental cinematic sound design, musique concrète, foley arranged as rhythm, hits and transitions, no tune. Opens on a ring of car keys shaken in a dry little stuttering pattern, close and bright, the motif. Then a rubbery elastic stretch that pulls wide left to right and rips apart, a two-second tearing swoosh. A reversed swell climbs fast and lands on one tight rubber-band snap, short, centred. A deep heavy car-door slam, solid and dead, no ring. Two quick tyre hisses on wet tarmac pass by, left then right. Ends on a warm low two-tone car horn held like a final chord, soft attack, long tail fading into a dark empty street. Under it all, one clean sub-bass drone, steady. Tight, dry, sparse, every hit separated by silence, clear low end, short film sting",
+    "exclude": "vocals, voice, choir, humming, spoken word, melody, drums, drum kit, beat, strings, piano, synth lead, guitar, pads, reverb wash, muddy bass, lo-fi hiss",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 60,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "lullaby-piano-to-silence",
+    "style": "instrumental, solo felt piano, hushed lullaby in A minor, 70 bpm, close-miked hammers and pedal creak, a nursery tune heard from a kitchen at 3am, intimate and sad. Opens as one fragile childlike melody; the same phrase then multiplies into several detuned, overlapping piano copies drifting out of time, warped tape wobble and pitch sag, dissonant and crowded; a sudden dead stop, under a second of complete silence; then one clean unhurried phrase resolves home; ends on a single held low piano note, a soft distant car horn and the hiss of headlights sweeping past, clear final stop",
+    "exclude": "vocals, singing, humming, choir, spoken word, strings, drums, percussion, trailer hits, braams, synth pads, upbeat",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "taxi-meter-synth-pulse",
+    "style": "Instrumental, 120 BPM, a 15-second cold analogue synth cue. Opens on a dry ticking sequencer click, CR-78 rimshot pattern counting like a taxi meter. A glassy Roland Jupiter-8 arpeggio enters, then smears into a crowd of detuned, chorused copies drifting out of phase, then snaps back into one tight, perfectly in-time arpeggio with a crunchy bitcrushed cut. One huge gated-reverb tom hit. The pulse stops dead at 13 seconds: a warm Prophet-5 pad chord holds, a low Yamaha CS-80 brass swell rises like a distant horn, and a filtered white-noise whoosh sweeps left to right. Precise, clinical, retro-futurist. No vocals.",
+    "exclude": "vocals, singing, spoken word, choir, vocoder, talkbox, guitar, orchestra, strings, lyrics",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  }
+]

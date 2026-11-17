@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/00.jpg",
+ "made": "2026-11-15T12:35:23.519Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 overhead insert shot, like a 1970s British espionage film: a stiff buff government envelope has just dropped onto a scuffed green leather desk top in a Whitehall office, still sliding, a corner lifting. Printed at the top: \"O.H.M.S.\" beside a small invented crest of a crowned key between two herons, and \"EXPORT LICENCE\" in typewriter capitals. Across the middle, a slightly crooked red rubber stamp in heavy block capitals reads exactly \"APPROVED BY THE CONSERVATIVE PARTY\", the ink pooling at one edge. A brass banker's lamp throws warm tungsten light from the left; a cold grey window spills blue from the right. Kodak 35mm film stock, 40mm lens, fine grain, a ring stain from a teacup. Thanks.",
+ "source_id": "6e7e2d4f-bd55-4797-917b-fb457c809ea4"
+}

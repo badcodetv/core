@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD9-c.jpg",
+ "made": "2026-11-17T11:41:47.049Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photo on 35 mm colour-negative film, wet London night, camera low behind the right-hand driver's shoulder inside a tall ambulance van cab, the driver's dark green sleeve and black-gloved hand gripping the rim of a broad, nearly horizontal steering wheel in the bottom right corner, a sliver of dark dashboard and the corner of a mounted data terminal with a dim unreadable glow along the bottom edge. Most of the frame is windscreen: a tall vertical slab of glass running with rain, one wiper blade frozen mid-swipe in a diagonal across it, the cleared streak beside it sharp and the rest blurred by water. Very close in front of the bumper, so near that we look down on the top of his white helmet and his shoulders, a police motorcycle outrider has pulled his white motorbike right up to the ambulance, front wheel turned, and pushes one black leather glove up towards the glass, palm out, his fluorescent yellow jacket with its blue-and-yellow chequered band soaked and shining. Far behind him, small and empty, a junction under a red traffic light and a line of sodium street lamps. Light: blue strobe light from our own roof spilling over the wet bonnet and flaring on his reflective jacket, the blue flashing lamps on his bike's fairing, the red signal smeared through the water, sodium orange from the street lamps, faint amber from the dashboard. Teal shadows, heavy grain, halation, natural face and hands, no readable text, number plates or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0d56ca7f-2c8f-427c-b79e-f1a7b3808d7a"
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "name": "chest-voice-literal",
+    "style": "1997 New York boom bap, 90 BPM, East Coast hardcore hip hop. Male rap vocal: heavyset Brooklyn man in his mid-twenties, deep chest voice, plummy and wheezy, humid breathy tone, thick laid-back grumble with a slight rasp, audible breaths between lines. Calm, unhurried, menacing without raising his voice, every syllable enunciated, sitting right on the beat. Beat: hard dry kick, cracking snare, sparse swung drums, a short dark jazz-piano chord stab looping, vinyl crackle and tape hiss, mono-ish dusty mix, vocal loud and upfront. Between each rule a turntable scratch cuts in a shouted man's voice calling the number. Dark, cold, minimal.",
+    "exclude": "singing, melodic chorus, autotune, trap hi-hats, 808 bass, synth pads, choir, female vocals, fast double-time flow, shouting rapper, modern polished mix, reverb wash, guitar",
+    "lyrics": "[Intro: spoken, low and calm]\nUh. Money printer manual. Take notes.\n\n[Scratch: shouted number cut on the turntable]\n[Verse: deep chest voice, unhurried, on the beat]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch: shouted number]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch: shouted number]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: spoken, slow, beat drops out]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 15,
+    "styleInfluence": 85,
+    "vocalGender": "male",
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "drums-first-dj-cuts",
+    "style": "1997 East Coast boom bap, producer-led. Chopped breakbeat drums sliced and re-stacked on an MPC, kick and snare harder than nails, dry knock, slight swing, 92 BPM. Minimal two-bar loop of dark minor Rhodes chords, sparse and ominous, never resolving. Deep round sub bass walking under the loop. Turntablist cuts the spoken numbers on vinyl between each rule like a radio countdown, sharp chirp scratches. Mono-leaning 90s mix, gritty 12-bit sampler crunch, tape hiss, no chorus. Vocal: big heavyset deep male Brooklyn rapper, chesty and slightly wheezy, slow, cool, conversational, behind the beat, unhurried authority.",
+    "exclude": "trap, rolling hi-hats, 808 glide, autotune, sung hook, melodic singing, choir, female vocals, high-pitched voice, fast double-time flow, bright synths, EDM, reggae, shouting",
+    "lyrics": "[Intro: dusty drum break, Rhodes loop drops in]\nUh. Money printer manual. Take notes.\n\n[Scratched count: one]\n[Verse]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratched count: two]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratched count: three]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: drums cut out, spoken low]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 72,
+    "vocalGender": "male",
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "jazz-phrasing",
+    "style": "late-90s New York street rap, one heavyset MC who treats his verse like a bebop drum solo turned into words: rhythm played as melody, syllables dragged a hair behind the snare then tumbled out in quick clusters, stacked multisyllable rhymes rolling into each other, unbothered talking cadence, a deliberate beat of silence right before each punchline lands. Vocal: enormous man, low velvet chest baritone, lazy Brooklyn vowels, a short asthmatic wheeze audible on every inhale, dry and right on the mic. Instrumental: 88 BPM, swung dusty breakbeat with a thick knocking kick and a hard flat snare, a melancholy after-midnight Rhodes-and-organ soul-jazz figure sliced into a cold, menacing minor loop, walking acoustic-bass-style bottom end, tape hiss and crackle; between the rules a hoarse sampled crowd-chant voice barks the number; bare, minimal, threatening, no hook",
+    "exclude": "sung melody, chorus, auto-tune, trap hats, 808 glides, gospel choir, glossy synths, cavernous reverb, thin nasal voice, rapid chopper flow, female voice",
+    "lyrics": "[Intro: murmured aside, close to the mic]\nUh. Money printer manual. Take notes.\n\n[Hoarse sampled chant: One]\n[Verse: horn-player phrasing, lag behind the snare, hold a breath before the last word]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Hoarse sampled chant: Two]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Hoarse sampled chant: Three]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: drums cut, bare voice over the keys]\nAnd the fix, from the future? No hand on the printer.\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": "male",
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "radio-promo-countdown",
+    "style": "mid-90s New York hip-hop, a 9pm FM countdown promo built into a rap song, 90 BPM, sparse and grimy. A DJ scratches a loud booming announcer voice shouting each number, one cut per number, landing on beat one, stuttered and chopped. Heavy thumping kick, cracking dry snare on two and four, faint shaker, a single ominous low piano chord struck once a bar and left to ring, round sub bass, wide silences between hits. Solo male rapper, heavyset Brooklyn voice: deep, thick, raspy, nasal edge, lazy confident drawl, calm menace with a grin, talks the rules like a big brother laying it out at the table, every syllable clear, words dragged late against the snare, vocal tight and in your ear, dry",
+    "exclude": "trap, 808 rolls, autotune, sung hook, melodic rap, female vocals, choir, strings, reverb, EDM, lo-fi chill, saxophone, high-pitched voice, double-time, pop polish, live band",
+    "lyrics": "[Intro: dry ad-lib, close to the mic, needle hiss]\nUh. Money printer manual. Take notes.\n\n[Scratch cut: announcer voice shouts \"one\"]\n[Rap: deep, lazy, menacing grin]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch cut: announcer voice shouts \"two\"]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch cut: announcer voice shouts \"three\"]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Drums cut, piano chord rings alone, spoken low]\nAnd the fix, from the future? No hand on the printer.\n\n[Outro: one final scratch, hard stop]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 58,
+    "styleInfluence": 72,
+    "vocalGender": "male",
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "mafioso-menace",
+    "style": "Late-90s Brooklyn mafioso rap, a crime-film rulebook read aloud, 90 BPM, dim and minimal. Lead voice: a big heavyset Brooklyn boss, cavernous chest-deep baritone, round and thick, a faint asthmatic wheeze, slow audible inhales before each rule, lazy unhurried conversational flow that drags late into the pocket, cool menace, half-amused, volume level and low the whole time like a man who has never needed to shout. Beat: grimy New York street-corner hip hop from a dusty sampler, a lone eerie Rhodes-style minor-key jazz chord phrase repeating, fat thudding kick, snare that cracks like a slammed door, closed hats, deep upright bass notes, hiss and crackle, saturated cassette warmth, narrow mono mix, vocal dry, close and loud. Each number is a turntable scratch of a gruff barked count. Rules only: no hook, no chorus, no singing.",
+    "exclude": "trap, 808 rolls, rattling hi-hats, autotune, melodic singing, sung chorus, choir, glossy modern mix, EDM, synth pads, thin high voice, yelling, double-time flow, west coast g-funk",
+    "lyrics": "[Intro: low, unbothered, a slow breath first]\nUh. Money printer manual. Take notes.\n\n[Scratch: barked count \"One!\"]\n[Verse: lazy, late, calm menace]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch: barked count \"Two!\"]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch: barked count \"Three!\"]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: music cuts, just the voice, quiet threat]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 25,
+    "styleInfluence": 75,
+    "vocalGender": "male",
+    "durationSec": 20,
+    "maxMode": true
+  },
+  {
+    "name": "exclude-the-wrong-voice",
+    "style": "Late-90s East Coast street rap, 90 BPM, hookless, the track is a numbered list. Bare dusty boom-bap: heavy swung kick, crisp cracking snare, one moody jazz keys phrase repeating in a minor key, deep sub bass. A DJ chops in a hype-man voice barking each number before its rule. Lead: big-bodied Brooklyn man rapping, deep wheezy voice from the chest, round plummy tone, unhurried conversational flow that lags a fraction late, calm threat, dry and upfront in the mix",
+    "exclude": "gravelly old man voice, female vocals, high youthful voice, radio announcer, orchestral strings, spoken word poetry, trap hi-hats, 808 rolls, lo-fi chill, autotune, sung chorus, backing vocals, big reverb, cinematic swells",
+    "lyrics": "[Intro]\nUh. Money printer manual. Take notes.\n\n[Scratch: count]\n[Verse]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch: count]\n[Verse]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch: count]\n[Verse]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro]\nAnd the fix, from the future? No hand on the printer.",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 10,
+    "styleInfluence": 85,
+    "vocalGender": "male",
+    "durationSec": 20,
+    "maxMode": false
+  }
+]

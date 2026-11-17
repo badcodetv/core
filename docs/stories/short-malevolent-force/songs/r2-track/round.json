@@ -1,0 +1,80 @@
+[
+  {
+    "name": "rust-foundry-percussion",
+    "style": "instrumental, dark ambient industrial sound design of an abandoned iron foundry at 3am, no melody at all. Opens on one long slow scrape of a steel girder dragged across concrete, echoing into a huge cold hall. Then scrap metal struck with a hammer: rusted sheet iron, oil drum, hanging chain, cast pipe, each blow ringing into cavernous reverb. Lurching uneven meter, groups of seven grinding against four, so the pulse keeps stumbling. Every clang a little louder and nearer than the last, the space closing in; the final strike is the heaviest, then dead silence, hard stop. Grainy lo-fi tape hiss, low electrical mains hum, worn cassette texture, ritual and hypnotic, 60 bpm",
+    "exclude": "orchestra, strings, piano, drum kit, vocals, choir, synth pads, melody, bass guitar, guitar, trap hi-hats, cinematic braams, uplifting",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "high",
+    "weirdness": 65,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "detuned-bell-piano",
+    "style": "melancholic dark ambient, instrumental, detuned electric piano, bell tones, lo-fi, slow, 55 bpm, a sad minor figure of four notes with long gaps of silence between them, each note ringing like a small bell slightly out of tune with itself, cassette wow and flutter, long wet hall reverb tails, soft wide synth pad hanging like fog over an empty street, faint far-off mains hum, lonely not menacing, nobody coming, near the end the pad falls away, one low struck chord, the last bell note left ringing alone until silence",
+    "exclude": "vocals, drums, major key",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "shortwave-static-signal",
+    "style": "Instrumental dark ambient sound piece, no beat, about 15 seconds. The only instrument is an old transistor radio left switched on behind a shop counter at 3am, its dial drifting between stations. Opens on soft wet hiss and a low mains hum, a thin tuning whistle sliding up and down. Deep under the noise, a scrap of a scratchy 1950s waltz on a far-off station surfaces for two seconds, warbling and half drowned, then sinks again. Something is coming closer and the reception sickens: the hiss thickens into a grinding wall of crackle, heterodyne squeals, fading carrier tones and a slow metallic scrape like a shutter dragged on concrete. Four times the signal spikes in a sharp ragged burst of white noise and snaps back to near silence, like a light tube failing. Close, dry, lo-fi, mono, tape-saturated, a dead room with no reverb tail. Final second: one huge overloaded blast of static, then an abrupt cut to total dead air.",
+    "exclude": "clean melody, drums, percussion loop, beat, orchestra, strings, piano lead, synth pad wash, vocals, choir, humming, spoken word, radio announcer, bass drop, riser",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "high",
+    "weirdness": 75,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "lonely-reverb-guitar",
+    "style": "lonely dark ambient instrumental, sorrowful and uneasy, the dread of a place gone far too quiet at 3am. A single clean electric guitar played alone, drowned in wet spring reverb with a slow wavering tremolo, picking a slow mournful minor arpeggio that hangs in empty air. Barely-there sub-bass hum underneath, like a building breathing. Lo-fi, grainy, close and intimate, long silences between the notes. Halfway, one note bends sour and slides out of tune, and gritty crackling distortion seeps into the echo tail, unease turning to anxiety. Final moment: one heavy palm-muted chord, then the reverb rings out alone into nothing",
+    "exclude": "drums, percussion, beat, piano, orchestra, strings, vocals, choir, singing, upbeat, bright, happy, major key",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "siren-and-pulse",
+    "style": "Instrumental dark industrial ambient cue, 17 seconds, all electronic. Lead voice is a filtered warning siren far off across a dead town, a slow wail that climbs and sinks, smeared in long cold reverb and lo-fi grain. Underneath, a looping sub-bass throb at slow heartbeat pace, 60 bpm, hypnotic and patient. Cue sheet: 0s distant siren drifting over the low throb and a faint fluorescent electrical hum; 6s the throb tightens and quickens, a hard muffled metallic thud lands at 6s, 8s and 10s like a tube flickering; 12s the siren swells nearer, louder, rawer, rust and static in its tail; 15s one huge crashing hit; 15.5s to 17s dead silence.",
+    "exclude": "strings, piano, guitar, vocals, choir, singing, melody, acoustic instruments, drum kit, orchestra, upbeat, major key",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "high",
+    "weirdness": 60,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "inharmonic-vibraphone",
+    "style": "dark ambient, instrumental, no tempo, free time. Lead: soft-mallet vibraphone and tuned glass bells, each bar a few cents off its neighbour so struck notes beat and wobble against each other, inharmonic overtones, dark muffled timbre, slow swelling attack, long open cathedral reverb that turns a tiny room into an empty hall. Sparse single notes with long silences between. Beneath them a low grinding noise bed, like a distant motor or bowed sheet metal, rises slowly and thickens into dense spectral fullness. Three times a lone bell is struck hard and rings out, each harder than the last. Ending: every bar struck at once as one clashing dissonant cluster, then left to decay into near silence. Lo-fi, intimate, unresolved, cold",
+    "exclude": "drums, beat, percussion loop, vocals, choir, humming, guitar, orchestra, strings, piano, bright major, melody hook, synth pad, uplifting",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 65,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  }
+]

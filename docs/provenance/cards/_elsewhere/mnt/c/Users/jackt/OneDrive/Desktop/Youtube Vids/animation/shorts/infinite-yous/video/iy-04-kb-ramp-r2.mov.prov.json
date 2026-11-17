@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-kb-ramp-r2.mov",
+ "made": "2026-11-15T10:57:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-kb-KK1-c-c.mp4",
+ "why": "Jack 2026-11-15: aggressive and quick (not picked)",
+ "prompt": "0.35-0.8 s at 2x; 0.8-1.5 s at 6x (tmix 6, framestep 6) with a 1.08 scale and alternating 14/10 px shake; 1.5-2.9 s real time; prores, no audio"
+}

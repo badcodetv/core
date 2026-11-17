@@ -9,6 +9,7 @@ with `suno.mts record` into <media>/audio/suno-r6/ (never downloaded). The score
 song id (first 8 characters); the defaults below are the current picks. Ends on black with the logo.
 Writes <media>/cut-r3/edl.json (timeline format, scripts/scene/timeline.py), one stem per track, and preview.mp4.
 """
+# style-lint: story=shorts/priority-lane (this short's own picked voices and takes, read from its sound.md)
 import glob, json, pathlib, subprocess, sys
 
 REPO = pathlib.Path(__file__).resolve().parents[2]

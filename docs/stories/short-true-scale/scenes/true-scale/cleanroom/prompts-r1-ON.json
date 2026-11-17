@@ -1,0 +1,36 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write a scene in plain sentences with concrete detail and camera language, not keyword stacks",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — name a real film stock and a lens; grain kept subtle; one clear subject",
+    "https://budgetpixel.com/blog/analog-neon-prompting-1990s-cyberpunk-street-photography — analog constraints (stock, halation, grain, mixed practical light) remove the glossy AI sheen at night",
+    "https://z-image-astroblog.pages.dev/blog/nano-banana-image-prompting-the-5-layer-framework — '8k HDR ultra' modifiers add noise, not control; motivated light and imperfection do the work",
+    "https://flowingdata.com/2023/12/21/scale-of-all-the-things-compared-to-you/ — scale videos keep one human-sized anchor at every step; the opening shot must set that anchor",
+    "https://coolinfographics.com/blog/2019/10/17/star-wars-size-comparison-video — a true-scale comparison works by a shared baseline and lots of empty space to fill later",
+    "https://agent.vizard.ai/how-to/make-a-video-that-explains-the-scale-of-something.html — a number lands when mapped onto an everyday object first",
+    "https://england.shelter.org.uk/housing_advice/homelessness/housing_suitability_reviews/unsuitable_temporary_accommodation — a B&B placement is one room, no kitchen, shared bathroom",
+    "https://insidehousing.co.uk/insight/weve-got-no-dignity-life-in-poor-quality-temporary-accommodation-74652 — whole families in a single room: beds wall to wall, belongings in bags, kettle on the floor",
+    "https://www.childrenscommissioner.gov.uk/report/no-way-out — children sharing one room with parents in temporary accommodation is the norm, not the exception",
+    "https://virtualshoemuseum.com/?p=55050 — Shelter's 'Shoes Have Names': objects standing in for people tell the story without faces"
+  ],
+  "notes": "Beat A is the anchor the whole film scales from, so all three keep a household small, dark-surrounded and teal-lit, with no faces and no text. ON1-a is the literal true-scale opener (model figures on an empty dark table, room for 134,210 more). ON1-b is the real thing: a B&B room seen from directly above, the household asleep under covers. ON1-c is the surprise: no people at all, the household shown as everything it owns, lined up in a car park. Film language throughout (Portra 800 / Cinestill-style halation, 35mm, grain) after the reference photo's cheap-night-film feel.",
+  "stills": [
+    {
+      "beat": "one",
+      "id": "ON1-a",
+      "look": "True scale: three model figures on an empty table",
+      "prompt": "Vertical 9:16 photograph. A huge matte black tabletop stretches away into darkness. In the centre, very small, stand three 1:87 model-railway figures: an adult, a second adult, and a child holding a hand, with a tiny suitcase beside them. A single cold fluorescent teal light from above makes a small pool around them; everything beyond falls to black, so the empty table looks endless and ready to be filled. Shot low on a 50mm macro lens, shallow focus, the figures sharp and the table's dust and scratches visible. Cheap colour negative film at night, visible grain, slight halation round the light. Painted plastic figures, no faces readable. No text. Thanks."
+    },
+    {
+      "beat": "one",
+      "id": "ON1-b",
+      "look": "One room from the ceiling: a B&B at night",
+      "prompt": "Vertical 9:16 photograph looking straight down from the ceiling of one small bed-and-breakfast room in an English town at night. A double bed and a travel cot fill nearly the whole floor; between them a narrow strip of worn carpet with bin bags of clothes, a pushchair folded against the wall, a kettle and cereal boxes on the floor because there is no kitchen. Two adults and a small child asleep under the duvet, turned away, only hair and shapes. The only light is a buzzing fluorescent tube by the door, cold teal, with the rest in shadow. 28mm lens, slight wide-angle bend at the edges. Night colour film, heavy grain, muddy blacks. Thanks."
+    },
+    {
+      "beat": "one",
+      "id": "ON1-c",
+      "look": "A household as its belongings in an empty car park",
+      "prompt": "Vertical 9:16 photograph at night in an empty multi-storey car park in England. In one painted parking bay, everything one family owns is lined up neatly on the concrete: six black bin bags, a child's scooter, a folded cot, a microwave, two duvets in a laundry bag, a school uniform on a hanger hooked over a pushchair. No people. One cold fluorescent teal tube overhead lights only this bay; the rows of empty bays behind fade into dark. Oil stains, a puddle reflecting the light, a faded bay line. Shot from a standing height on a 35mm lens. Cheap colour film, grain, slight halation, lonely and quiet. No readable text. Thanks."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "research": [
+    "https://support.google.com/flow/answer/16894016 — In Flow, Frames mode takes the still as the start frame; the prompt only directs what follows.",
+    "https://fal.ai/learn/tools/how-to-use-gemini-omni-flash-1-1 — For Omni Flash image-to-video, name what must survive from the still. 'Locked-off' reads as a tripod. Structure: subject, action, camera, look, sound.",
+    "https://roo.beehiiv.com/p/google-omni-prompting-guide-every-technique-that-actually-works — 'Locked off' means no camera move; stacking camera instructions blurs results; describe the setting in one phrase; ask for 'keep everything else identical'.",
+    "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide — 'Static shot': the camera stays completely still. Avoid bare 'no X' wording; describe the wanted state instead.",
+    "https://theailab.substack.com/p/image-to-video-prompting-guide — Treat the image as the static truth and describe only what changes; dense small text can distort when animated.",
+    "https://apipass.dev/blogs/how-to-solve-veo-3-keep-generating-unwanted-dialogue — Give each character enough visible action to fill the clip, and describe the mouth state visually, so the model does not fill the time with talk.",
+    "https://support.sync.so/articles/7908962494-no-lipsync-on-my-ai-generated-character- — Ask for natural mouth movement on talking shots so the later dub has something to sync to.",
+    "https://recapio.com/digest/google-flow-how-to-use-frames-to-video-feature-by-ai-mind-revolution — Frames prompts can pick up unwanted music, singing or subtitles unless the prompt is precise."
+  ],
+  "notes": "Every prompt opens with the same locked-camera and look line, so the five clips match. The research says Omni stays closest to the start frame when you describe only the change and say plainly what must stay. Movers are named by clothing, not appearance, and kept to two or three. Each prompt asks for exactly one action in the first seconds. Talking is written as mouth movement with no words, and no quoted dialogue appears anywhere, because Omni voices quoted lines. Text frames (3, 4) state that the card stays flat, still and unchanged: the research found no guaranteed text lock, so any digit drift means a re-roll. Prompts say 'stays still' rather than 'no X', following Google's guidance. The audio is discarded, so sound is not prompted. Since the sheet in frame 1 is blank, a re-roll is needed if the model writes on it.",
+  "frames": [
+    {
+      "n": 1,
+      "still": "NW7-1-a",
+      "job": "The quizmaster poses the tiebreaker; the regulars lean in to listen.",
+      "prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The woman in the burgundy cardigan holds the blank sheet steady overhead and talks into the microphone, lips and jaw moving naturally, eyebrows lifting as she asks. In the first seconds the man in the flat cap narrows his eyes, and the lad in the hi-vis vest tilts his head, thinking. Everyone else stays seated and still; glasses and papers stay where they are. The fruit machine lights blink softly. Thanks.",
+      "risk": "Model may write marks on the blank sheet or invent a voice/music; the sheet arm may drift down. Audio discarded."
+    },
+    {
+      "n": 2,
+      "still": "NW6-2b1",
+      "job": "The loud table shouts its lowball guess; Bob alone in the corner keeps writing.",
+      "prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. At the centre table the man in the paint-spattered T-shirt leans forward and shouts, mouth wide, jabbing his open hand at the paper. The woman in the denim jacket cups her hand to her mouth and calls out with him. Far back in the corner, the bearded man in the beanie keeps his head down, writing slowly on his sheet, untouched by the noise. Everyone else stays seated, only blinking. Crisp packets and glasses stay still on the tables. Thanks.",
+      "risk": "Bob is small and distant: model may freeze him or have him look up. Shouting may spill into extra people gesturing; crisp-bag graphics may smear."
+    },
+    {
+      "n": 3,
+      "still": "NW6-3a",
+      "job": "She reveals 303,185; the foreground groans.",
+      "prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The woman in the burgundy cardigan holds the white card perfectly still beside her head; its printed number stays crisp, flat and unchanged for the whole shot. She speaks into the microphone, lips moving naturally, a dry half-smile. In the first seconds the man in the flat cap rubs his brow and lets his head sink, and the woman in the navy hijab presses her face deeper into her hands. The lad in the hi-vis vest sits still, watching her. Thanks.",
+      "risk": "Highest text risk: digits may morph if the card tilts or the hand moves; regenerate if any digit changes. Groans may become laughter."
+    },
+    {
+      "n": 4,
+      "still": "NW7-4-a",
+      "job": "The lad asks how he knew; Bob, standing, answers quietly.",
+      "prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The lad in the hi-vis vest looks up at the standing bearded man in the beanie and speaks, mouth moving, brow puzzled. A beat later the bearded man turns his eyes down to him and answers in a few calm words, lips barely moving, shoulders still, backpack and rolled mat unmoving. The quizmaster holds the microphone and watches. The handwritten card on the table lies flat and untouched, its number unchanged. Everyone else stays seated and still. Thanks.",
+      "risk": "Mouths may move in the wrong order or both at once (voices synced in edit, so trim to fit). The 300,000 card is large in foreground: watch for digit drift. Bob may wander."
+    },
+    {
+      "n": 5,
+      "still": "NW6-5a2",
+      "job": "Bob gives the meat-raffle prize to the next table and turns to go.",
+      "prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The bearded man in the beanie slides the wrapped tray of meat a few inches along the table towards the nurse in blue scrubs, lets go with both gloved hands and straightens up, turning slowly away out of frame right. The nurse looks from the tray up to him, a surprised soft smile. The young man in the red shirt raises his eyebrows. Everyone else stays seated, barely moving. The tray stays flat on the table, nothing lifted. Thanks.",
+      "risk": "Model may have him lift or drop the tray, or the cling film warp. Exit to frame right may stall within 8s; the hijab woman may keep laughing (fine, a fourth mover)."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD9-c.jpg",
+ "made": "2026-11-17T11:44:46.579Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph on 35 mm colour-negative film, rainy night in London, keeping the elevated railway-bridge vantage and colour of the reference image, with the wet stone coping and iron railings of the bridge running along the bottom of the frame. Traffic drives on the left. The convoy has just crossed: at the right edge of the empty yellow box junction, the last two black saloons are leaving along the right-hand side road, seen from behind with glowing red tail lights and their rear blue lights winking, two police motorcycles following them out. The junction is still held on every approach. Filling the lower left third of the frame, the whole ambulance is visible from above and behind, still stopped at its stop line in the left-hand lanes of our road: white body, bold yellow-green chequered sides, blue lights flashing, rain bouncing off its roof, its rear lettering a blur of reflection so nothing can be read. In front of it, three officers in hi-vis yellow and white helmets stand with their bikes across our lanes, one glancing back at the ambulance. On the far side of the junction, the right-hand lanes of the main road are blocked by two more bikes, with a waiting queue of cars and a red double-decker bus behind them, headlights facing the camera. On the left side road a queue waits in the nearer lane, headlights facing right, held by an officer standing in the road. Light sources: sodium-orange street lamps, blue strobes from the bikes and the ambulance, the convoy's red tail lights, the headlights of the held traffic, and a red traffic light on the pole at the near kerb. Puddles, rain streaks lit orange against the lamps, deep teal shadows, real film grain and gentle halation, no glossy finish, no readable text, plates or signage anywhere, natural faces and hands. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a6996bf4-9fe0-4f40-ab14-b4974d313e09"
+}

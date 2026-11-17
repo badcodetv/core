@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a3-constable-radio-iapetus.wav",
+ "made": "2026-11-17T15:17:59+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Constable ninety-seven. Junction's blocked, ready for the VIP.",
+ "inputs": {
+  "profile": "Accent: London.\nStyle: Police traffic constable on a motorcycle radio at a closed junction, routine procedure, flat and bored.\nPace: Steady and clipped.\n",
+  "profile_file": "docs/stories/shorts/priority-lane/voices/r5/constable-note.md"
+ },
+ "settings": {
+  "voice": "Iapetus",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

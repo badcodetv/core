@@ -1,0 +1,17 @@
+{
+  "style": "1997 New York boom bap, 90 BPM, East Coast hardcore hip hop. Male rap vocal: heavyset Brooklyn man in his mid-twenties, deep chest voice, plummy and wheezy, humid breathy tone, thick laid-back grumble with a slight rasp, audible breaths between lines. Calm, unhurried, menacing without raising his voice, every syllable enunciated, sitting right on the beat. Beat: hard dry kick, cracking snare, sparse swung drums, a short dark jazz-piano chord stab looping, vinyl crackle and tape hiss, mono-ish dusty mix, vocal loud and upfront. Between each rule a turntable scratch cuts in a shouted man's voice calling the number. Dark, cold, minimal.",
+  "exclude": "singing, melodic chorus, autotune, trap hi-hats, 808 bass, synth pads, choir, female vocals, fast double-time flow, shouting rapper, modern polished mix, reverb wash, guitar",
+  "lyrics": "[Intro: spoken, low and calm]\nUh. Money printer manual. Take notes.\n\n[Scratch: shouted number cut on the turntable]\n[Verse: deep chest voice, unhurried, on the beat]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch: shouted number]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch: shouted number]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: spoken, slow, beat drops out]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": [
+    15
+  ],
+  "styleInfluence": 85,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": false,
+  "title": "tec-r2-chest-voice-literal",
+  "mode": "custom",
+  "workspace": "short-ten-economic-commandments"
+}

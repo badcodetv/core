@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/BM8-c.jpg",
+ "made": "2026-11-17T11:08:15.588Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16, a tight medium close-up photographed on 35 mm colour-negative film with an 85 mm lens, shallow depth of field, coarse film grain and gentle halation. At eye height across the dim back seat of a large black luxury car at night. An invented British politician in his late fifties wears a scuffed white construction hard hat perched too small on his head, a big shock of unbrushed white-blond hair bursting out from under the brim on every side and falling over his brow. Large round ruddy face, small sly eyes glancing sideways, a rumpled navy suit straining at the button, a tie loosened and askew, white shirt collar half turned up. He holds a phone to his right ear with his right hand and leans in towards it to whisper conspiratorially, mouth slightly open mid-word, one corner curling into a smirk. His head sits in the upper half of the frame. At the bottom edge, on the leather armrest, the rim of a small silver tray of canapés catches the light. Light sources: a warm yellow reading lamp in the roof above him, the brim of the hard hat casting a soft shadow across his eyebrows while his cheeks and mouth stay brightly lit; the pale glow of the phone screen on his ear and fingers; and behind the camera, through the rain-streaked near-side window, cold blue emergency strobes we never see, which arrive as a flickering blue wash across his face and as reflected blue streaks on the glossy black leather behind him. Deep teal shadows in the corners. Realistic pores and stubble, natural fingers. No readable text, no logos on the hat or anywhere. Gritty real film photo, not glossy, not CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e5d68ea3-fd82-4fd2-a88e-f190962da0c4"
+}

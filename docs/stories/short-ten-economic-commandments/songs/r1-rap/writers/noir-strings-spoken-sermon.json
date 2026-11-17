@@ -1,0 +1,13 @@
+{
+  "name": "noir-strings-spoken-sermon",
+  "style": "mid-90s New York crime-saga hip hop, slow cinematic noir: a mournful minor-key violin phrase looping like an old detective-film score, bowed cello droning underneath, sparse dusty kick and a heavy dry snare at 82 BPM for a slow head nod, lots of air around the voice. Lead is a huge, slow, cavernous bass baritone, Brooklyn vowels, delivering each rule like a minister reading scripture, mostly talked rather than rapped, deliberate rests between lines, a dry smirk under the gravity. Each counted number lands in a big stone-church echo; the rest stays bone-dry and intimate. Chilly, patient, final.",
+  "exclude": "autotune, trap hi-hats, 808 bass slides, melodic hook, gospel choir, female voice, rapid double-time flow, EDM, pop, horn fanfare, bright major chords, vinyl crackle overload",
+  "lyrics": "[Intro: violin loop alone, a pulpit murmur, unhurried]\nUh. Uh-huh.\nMoney printer manual. Page one. Take notes.\n\n[Sermon: talked like scripture, a held breath after every number]\n[Numbers ring in the stone church]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Numbers ring in the stone church]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Numbers ring in the stone church]\nNumber six: no credit? Nah, they live on the slate,\nand you're paying it back in the price on your plate.\n\n[Numbers ring in the stone church]\nNumber seven: keep the family out the business,\nTreasury and the bank in one bed, God as my witness.\n\n[Numbers ring in the stone church]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Benediction: beat cuts, just cello, a near-whisper verdict]\nAnd the fix, from the future? Easy.\nNo hand on the printer.\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 72,
+  "vocalGender": "male",
+  "durationSec": 30,
+  "maxMode": true
+}

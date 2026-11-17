@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/03.jpg",
+ "made": "2026-11-16T13:36:21.953Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical photograph from a hotel balcony high above a package hotel pool before dawn, looking down the length of the deck. The pool glows cold fluorescent teal from its underwater lights. Long rows of white plastic sunloungers fill the deck, every one empty, every one claimed with a towel laid flat. Along the far edge, a few small families stand on the wet tiles, seen from behind and far off, holding holdalls and suitcases, with nowhere to sit: about four empty towelled loungers for every family. One orange sodium lamp by the gate. Cheap night colour film, coarse grain, still and sad, a little absurd. Thanks.",
+ "source_id": "b2d90b90-2911-4137-a11a-634fc9a46fc9"
+}

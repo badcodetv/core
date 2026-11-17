@@ -12,8 +12,8 @@ description: Use to CAST the speaking voices of a BadCode film, scene or short b
 ## Before anything
 - Read the story's `sound.md`. If a role is already ruled, don't recast it unless asked. If the file is empty, this
   skill fills its **Voices** part. Never carry a voice over from another story (CLAUDE.md, no house style).
-- Read `docs/ai-studio/README.md`: the engine, the traps, and **the free-tier limits: 3 calls a minute, 10 a day per
-  model**. A casting round is roughly 4 roles × options, so budget it, and say so if it won't fit in today's 10.
+- Read `docs/ai-studio/README.md`: the engine and the traps. **The key is PAID since 2026-09-30 (Kai), so there is no 10-a-day cap**
+  (README "UPDATE 2026-09-30"); keep the ~22 s pacing between calls. (Corrected 2026-11-15: this line still quoted the free-tier cap.)
 
 ## The round
 1. **Roles and lines** come from the scene's `script.json` (`lines[].who`). Each option reads that role's real lines,

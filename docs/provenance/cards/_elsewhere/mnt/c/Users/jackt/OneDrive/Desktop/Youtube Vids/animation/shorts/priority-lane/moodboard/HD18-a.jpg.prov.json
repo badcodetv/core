@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD18-a.jpg",
+ "made": "2026-11-17T14:40:24.185Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real perspective and dim lighting of the first reference photo, the view from just behind the front seats forward to the windscreen, but make it the cab of a tall UK ambulance: a high, upright, wide windscreen, a dashboard with a few lit dials, the driver's seat on the RIGHT. At the right edge, the driver's dark green sleeve and black-gloved hands grip the steering wheel. Rain beads the glass, a wiper mid-sweep, our own blue roof lights flickering on the bonnet. Through the windscreen, just ahead across our lane, a police line set out like the second reference photo: two white police motorcycles with an officer standing between them, officers in yellow hi-vis; that officer faces us, gloved hand raised, palm out. Beyond them is the yellow box junction: in its far half a convoy crosses from left to right, side-on to us, a white police motorcycle leading three black saloon cars, headlights pointing right, red tail lights trailing left. Further on, to the right of the centre line, a queue faces us with headlights on, a red double-decker and cars, held at their stop line by a police officer. Vertical 9:16. Night in the rain, like a real 35 mm film photo: sodium-orange street lamps, cold teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_zVbqJkl7D_U.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_zVbqJkl7D_U.jpg",
+   "/home/jackt/.cache/pl-refs/us/u_-GczePfvnNQ.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c300a823-66a7-4da1-9b96-f1e053e08842"
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/lad-b-achird.wav",
+ "made": "2026-11-15T11:35:48+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "One version of me gets home fine.",
+ "inputs": {
+  "profile": "# Audio Profile\nA lad in his mid-twenties from Basildon in Essex, swaggering and smug, slurring slightly, delivering the line like a winning argument he has rehearsed in his head.\n\n## Scene:\nLate night, a wet high street, a row of black cabs at the rank behind him.\n\n## Sample Context:\nHe is explaining his parallel-universe theory to a stranger like it is a well-known scientific fact, and he thinks it settles whether he can drive home.\n",
+  "profile_file": "docs/stories/short-infinite-yous/voices/profiles/lad-b-achird.md"
+ },
+ "settings": {
+  "voice": "Achird",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

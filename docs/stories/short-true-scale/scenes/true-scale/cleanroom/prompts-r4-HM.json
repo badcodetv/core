@@ -1,0 +1,33 @@
+{
+  "research": [
+    "https://blog.google/products/gemini/prompting-tips-nano-banana-pro/ — Google's own tips: describe the scene in full sentences like a brief, not tag lists",
+    "https://aimlapi.com/blog/banana-prompt-guid — treat the prompt as a photography brief: light setup, lens, camera position, grade, textures",
+    "https://www.atlabs.ai/blog/27-cinematic-lighting-looks-ai-prompts-guide — CineStill 800T style night: tungsten balance, red halation round lamps, grain; matches the cheap night colour film of the reference",
+    "https://en.wikipedia.org/wiki/Gregory_Crewdson — the lit window seen from outside at night, 'something slightly out of reach': the right feeling for a warm home cut between two homelessness graphics",
+    "https://amp.cnn.com/cnn/2024/06/04/style/gregory-crewdson-photos-suburbia-retrospective — twilight/night suburban houses, small warm windows against cold exterior light"
+  ],
+  "notes": "Three different moments: (a) the viewer as outsider on a cold pavement looking at a glowing front-room window (the Crewdson 'out of reach' read, closest cut to Bob's world); (b) inside at the dinner table, the warmth filling the frame and the teal night pressed against the glass behind (the warm side of the contrast); (c) a front door opening and lamp light spilling onto a wet step as someone arrives home, echoing the lit shop doorway of the reference but warm. Family always from behind, in silhouette or soft. No text, no brands. All keep the grain and cheap night film so the warmth reads as the same film, not a different advert.",
+  "stills": [
+    {
+      "beat": "home",
+      "id": "HM4-a",
+      "look": "Outside looking in: glowing front-room window on a cold teal terrace",
+      "prompt": "Vertical 9:16 night photograph of an ordinary British brick terraced street, shot on cheap 35mm colour film with heavy grain and slight halation. The camera stands low on the wet pavement opposite, looking across at one house. A cold teal streetlight washes the brickwork, parked cars and bins. In the middle of the frame one front window glows deep amber: through thin net curtains, the soft silhouettes of a family on a sofa, a parent's arm around a small child, the flicker of a television on their faces unseen. Every other window on the street is dark. The warm square sits like a small fire in the cold. Quiet, ordinary, slightly out of reach. No readable text. Thanks.",
+      "uses_bob_reference": false
+    },
+    {
+      "beat": "home",
+      "id": "HM4-b",
+      "look": "Inside at the dinner table: warm pendant lamp, teal night pressed on the glass",
+      "prompt": "Vertical 9:16 photograph inside a small, lived-in British kitchen at night, shot on cheap 35mm colour film, grain, tungsten warmth. Camera at seated height behind a parent's shoulder, slightly soft in the foreground. A low pendant lamp pours warm amber light onto a cluttered table: steaming pasta bowls, mismatched mugs, a hand passing a plate. Across the table a child seen from behind, hair lit gold, mid-laugh, shoulders lifted. Behind them the window is black-teal, cold streetlight and rain on the glass, the night pressing in but kept out. Ordinary tea time, nothing staged, the warmest frame in the film. No readable text. Thanks.",
+      "uses_bob_reference": false
+    },
+    {
+      "beat": "home",
+      "id": "HM4-c",
+      "look": "Coming home: front door opens, lamp light spills on a wet step",
+      "prompt": "Vertical 9:16 night photograph of a front door of a modest British house, shot on cheap 35mm colour film, grain, faint red halation around lights. Camera on the dark path behind a figure carrying a shopping bag, seen from behind as a soft silhouette. The door has just swung open: warm amber hallway light floods out, spills across the wet doorstep and the cold teal path. In the bright doorway a small child in pyjamas, softly out of focus, arms raised to be picked up; a coat rack and stair carpet glow behind. Around the door frame, the night is cold blue-green. A single welcome, held for a breath. No readable text. Thanks.",
+      "uses_bob_reference": false
+    }
+  ]
+}

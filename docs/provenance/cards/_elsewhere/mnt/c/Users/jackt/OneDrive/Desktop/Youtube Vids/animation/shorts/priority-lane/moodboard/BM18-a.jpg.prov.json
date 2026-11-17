@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/BM18-a.jpg",
+ "made": "2026-11-17T14:42:54.406Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real layout, perspective and lighting of the first reference photo: the view in through a car's side window, the glass edge and chrome frame in the foreground, plush dark blue velvet seats inside. Make it the back seat of a black luxury saloon at night. In the seat sits the man from the second reference image, the same face, kept identical. He holds a phone to his right ear with his right hand, mouth open mid-word, at ease. On the fold-down armrest beside him sits a small silver tray of canapés. Rain runs down the window in beads and streaks, and flashing blue light from outside washes across the glass, the velvet and one side of his face; a warm amber courtesy light glows above. Orange street lamps reflect in the wet glass. Vertical 9:16. Night in the rain, like a real 35 mm film photo: sodium-orange street lamps, cold teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_QJmimhHAnVQ.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_QJmimhHAnVQ.jpg",
+   "/home/jackt/.cache/pl-refs/us/BM9-b-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c0469884-0809-43a0-811d-aef8aa74218b"
+}

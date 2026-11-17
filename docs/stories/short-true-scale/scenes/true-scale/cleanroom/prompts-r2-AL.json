@@ -1,0 +1,25 @@
+{
+  "research": [
+    "https://www.henleystandard.co.uk/news/environment/703665/concerns-over-allotment-plots-left-neglected-despite-long-waiting-lists.html — Feb 2026: in Maidenhead several plots at one 55-plot site were left overgrown while the council said there were 'no vacant plots'. The real-world shape of this metaphor.",
+    "https://www.gardensillustrated.com/features/allotment-waiting-lists — waits of 5-10 years are common; overgrown plots are a well-known sore point. Real allotments have chain-link or palisade gates, padlocks, laminated notices, timber sheds, water troughs, old carpet laid over beds.",
+    "https://www.rochdale.gov.uk/sports-leisure/allotments/2 — a council quoting a 6-7 year wait; supports the 'years on the list' letter.",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own Nano Banana guide (covers Nano Banana 2): describe the scene in plain sentences, subject then setting then light then camera.",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — naming a film stock (e.g. CineStill 800T, halation) gives night grain and colour cast better than stacked quality words.",
+    "https://z-image-astroblog.pages.dev/blog/nano-banana-image-prompting-the-5-layer-framework — short specific texture terms beat '8k ultra HDR' noise; keep written text short and quoted exactly."
+  ],
+  "notes": "Setup and reveal are the same gate from the same spot so the cut reads as a head-turn: first the person and the letter, then what is behind the fence. Honesty to the ratio: the reveal shows a handful of tended plots (a few small lit sheds) against roughly twice as many gone wild, not a whole field of dereliction, so it reads 'more than enough' without exaggerating. Only text: the letter line 'You are on our waiting list' (no number in either image). The look holds Jack's night teal: one cold fluorescent lamp on a pole, cheap colour film grain, lonely. Slight break: it is an edge-of-town outdoor space rather than a shopfront, so the teal comes from a single security lamp and the sky stays deep blue-black. No faces; the figure is seen from behind.",
+  "stills": [
+    {
+      "beat": "allotment-waiting-list",
+      "id": "AL2-a",
+      "look": "setup: from behind, a lone figure at a padlocked allotment gate at night, holding the council letter, under one cold teal security lamp",
+      "prompt": "Vertical 9:16 night photograph shot on cheap colour film, visible grain, slight halation. A lone adult in a worn parka, seen from behind, stands at a padlocked chain-link gate to a British council allotment site at the edge of a housing estate. In one hand, lowered at their side and readable to us, a folded council letter whose top line reads \"You are on our waiting list\". A heavy padlock and rusted chain loop the gate. Beyond it, dark shapes of sheds and bean poles. One fluorescent security lamp on a pole casts a cold teal light over the wet path; the sky is deep blue-black. Quiet, lonely, faintly eerie. No other people. Thanks."
+    },
+    {
+      "beat": "allotment-waiting-list",
+      "id": "AL2-b",
+      "look": "reveal: over the fence, a few tended plots and twice as many gone to brambles, rotting sheds and an empty deckchair, lit cold teal",
+      "prompt": "Vertical 9:16 night photograph on cheap colour film, grain and soft halation, looking over a chain-link fence down a long British allotment site. Near the fence, a few neat plots with tidy rows and a small shed with a lit window. Beyond them, plot after plot left to ruin, about twice as many: brambles taller than a person, nettles, a timber shed collapsed inward, a greenhouse with smashed panes, old carpet rotting over a bed, a faded striped deckchair sitting alone in the weeds. A single fluorescent lamp throws cold teal light across it all; the sky is deep blue-black. Clearly plenty of empty ground. No people. Thanks."
+    }
+  ]
+}

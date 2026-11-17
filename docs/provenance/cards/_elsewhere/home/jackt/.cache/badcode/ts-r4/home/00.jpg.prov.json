@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r4/home/00.jpg",
+ "made": "2026-11-16T13:55:58.232Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 night photograph of an ordinary British brick terraced street, shot on cheap 35mm colour film with heavy grain and slight halation. The camera stands low on the wet pavement opposite, looking across at one house. A cold teal streetlight washes the brickwork, parked cars and bins. In the middle of the frame one front window glows deep amber: through thin net curtains, the soft silhouettes of a family on a sofa, a parent's arm around a small child, the flicker of a television on their faces unseen. Every other window on the street is dark. The warm square sits like a small fire in the cold. Quiet, ordinary, slightly out of reach. No readable text. Thanks.",
+ "source_id": "87513c9f-39bf-48e6-acf2-2556d8c28c21"
+}

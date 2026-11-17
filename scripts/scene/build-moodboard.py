@@ -12,7 +12,7 @@ shrunk to 760px and inlined, because the page may not fetch.
 
 `picked` (optional) is a list of [id, label] already chosen in earlier rounds: shown first as a
 "Picked so far" strip (no vote buttons; the votes stay on the stills in their beats).
-`board_round` (optional, a number): show only that round's stills as votable cards (the round is the
+`board_round` (optional, a number or a list of numbers): show only that round's (those rounds') stills as votable cards (the round is the
 number in the id, e.g. CT2-a is round 2); earlier rounds and `existing` cards leave the page (they stay
 in moodboard.json), and a beat with nothing new is left off. Use with `picked` (Kai, 2026-11-02:
 "show me only options that are genuinely new").
@@ -46,7 +46,8 @@ def main(scene_dir, out):
         key, iid, look, prompt = row[:4]
         if key not in cards:
             continue  # a beat cut from the scene stays in the record, off the board
-        if only and round_of(iid) != int(only):
+        sel = only if isinstance(only, list) else ([only] if only else [])
+        if only and not any((iid.startswith(r + '-') if isinstance(r, str) else round_of(iid) == int(r)) for r in sel):
             continue  # an earlier round: its picks are in the strip, the rest leave the page
         if only and not sc.still(iid):
             continue  # nothing to pick from

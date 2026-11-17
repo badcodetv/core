@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/CL3-a.jpg",
+ "made": "2026-11-15T11:45:15.842Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Create a vertical 9:16 night photograph, same street and camera position as the first image, with the dividing bars gone: one continuous frame. A single lad from the first image stands alone in the centre, whole and still, car keys hanging from his hand, blinking and dazed. The scientist from the second image stands just beside him, half a step back, gloved palms open at chest height as if he has just let go; balaclava exactly as the third image, full white ring and red triangle over his left eye visible, goggles up on his head. A few faint sparks fade in the air between them. Calm, steady framing, warm bokeh, shallow focus, signs blurred and unreadable. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SP1-a.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SP1-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SQ2-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-mask.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c7f80009-e3ea-4e95-96e5-6fcdda7b3af7"
+}

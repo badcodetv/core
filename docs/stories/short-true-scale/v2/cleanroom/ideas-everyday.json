@@ -1,0 +1,125 @@
+{
+  "angle": "Everyday British settings where people chat (sealed clean-room ideas writer, 2026-11-16)",
+  "research": [
+    "https://checkyourfact.com/2019/12/24/fact-check-633000-homeless-million-vacant-homes/ — the US podcast numbers come from Census vacancy counts that include holiday and seasonal homes; critics (e.g. https://www.theurbanist.org/sunday-video-the-15-million-home-vacancy-conspiracy-theory-debunked/) attack exactly that. Lesson for us: say 'empty six months or more' and 'second homes' as separate, named numbers, never one lump, so the clip survives a reply-guy.",
+    "https://www.homelessnessimpact.org/publication/public-perceptions-of-homelessness-2022 — Centre for Homelessness Impact / Ipsos: the UK public massively OVERestimates homelessness as a share of adults (guesses 11-21% vs ~0.5%) and thinks about half are on drink or drugs (official ~5-7%). Lesson: in the UK the guess-then-reveal should NOT be 'it's bigger than you think' on homelessness; it should be 'it's a different shape than you think' (families with kids in B&Bs, not the bloke in the doorway) and 'the empty homes number is bigger than you think'.",
+    "https://www.worldcoffeeportal.com/news/costa-coffee-says-uk-drive-thru-market-is-heating-up-as-it-pledges-dozens-of-new-locations/ — UK drive-thru coffee is booming (c. 900+ sites; Costa ~400, Starbucks ~400, Greggs ~50, Pret's first in Warrington May 2026). A drive-thru queue on a retail park is a completely ordinary UK image now, and the slow-crawling queue gives us natural dead time for a chat.",
+    "https://harrywallop.substack.com/p/why-has-britain-embraced-drive-thru — drive-thru is part of retail-park car culture: the same car parks where people now sleep in vehicles.",
+    "https://www.itv.com/news/westcountry/2025-04-15/we-cant-afford-anything-inside-glastonburys-growing-van-dweller-community — van dwelling is rising in the UK and is mostly a last resort; Crisis estimates 18,000+ people in England sleep in vehicles or tents; Bristol van dwellers roughly quadrupled since 2019 (council estimates, numbers vary). Bob in or under a campervan reads as real, not invented.",
+    "https://www.cambridge.org/core/product/ED1EBDE8DB35491DAFCA059098FC415D/core-reader — BJPsych Open 2022: UK barbershops are a setting where men talk frankly and non-judgementally; a Lions Barber Collective survey (industry-linked, treat as indicative) said 52% of men would rather talk to their barber than their GP. The barber's chair is a believable place for blokes to chat numbers.",
+    "https://wikipedia.com/wiki/Pub_quiz — pub quizzes are a fixture of UK pubs (a 2009 count put weekly quizzes at 22,000+); the 'nearest number wins' tiebreaker is a standard format (https://mail.skidd.me.uk/quiz/pubs/format.html). A tiebreaker IS a guess-then-reveal, built in, with a room full of reactions."
+  ],
+  "ideas": [
+    {
+      "slug": "drive-thru-queue",
+      "title": "The Queue",
+      "logline": "Two mates crawling through a retail-park drive-thru play 'guess the number' to kill the wait, and the real numbers land just as the queue inches them past Bob, under the bonnet of the campervan he lives in.",
+      "setting_and_genre": "Vertical, two-hander in a car, comedy-of-boredom that turns. A battered hatchback or a works van in an unbranded drive-thru lane on a grey retail park (no chain names or logos; the echo of the 'two people in a car getting coffee' format is the framing only). Camera on the dash looking back at both faces, the side window behind the passenger as a second screen. Natural light, condensation, a tree-shaped air freshener.",
+      "who": "DRIVER (the one with the numbers, read it on his phone on a lunch break, slightly smug) and PASSENGER (his mate, guesses confidently and wrong, the viewer's stand-in, never made a fool of). Bob, seen only through the window. BadCode optional: the order-speaker voice at the end.",
+      "beats": [
+        {
+          "seconds": "0-3",
+          "see": "Dash cam on two faces. Brake lights ahead. The queue has not moved.",
+          "said": "DRIVER: 'Go on then. How many homeless in England?' PASSENGER: 'Sleeping out? Hundreds of thousands. Half a million.' (DRAFT)"
+        },
+        {
+          "seconds": "3-8",
+          "see": "Driver shakes his head, holds up his phone. Queue creeps forward a car length.",
+          "said": "DRIVER: 'Sleeping out, about four thousand. But a hundred and thirty-four thousand households in B&Bs and hostels. Eighty-five thousand of them with kids.' PASSENGER: '...Kids?' (DRAFT)"
+        },
+        {
+          "seconds": "8-13",
+          "see": "Second question. Passenger sips nothing (no coffee yet). Behind him, through the window, the far edge of the car park comes into frame: an old campervan, bonnet up.",
+          "said": "DRIVER: 'Now. Empty homes. Empty six months plus.' PASSENGER: 'Fifty thousand?' DRIVER: 'Three hundred and three thousand. Plus two hundred and sixty-seven thousand second homes nobody lives in.' PASSENGER: (swears, in full). (DRAFT)"
+        },
+        {
+          "seconds": "13-18",
+          "see": "Passenger turns to the window. Bob straightens up from the engine, wipes his hands, opens the side door: a sleeping bag, a kettle, a life. Bob glances back at the car, no drama. The queue moves; they roll past him in silence.",
+          "said": "PASSENGER (quiet): 'That's four empty for every one of them.' DRIVER: 'And the council spends two point nine billion a year putting them in B&Bs.' (DRAFT)"
+        },
+        {
+          "seconds": "18-22",
+          "see": "Window up to the order speaker. Hold on the passenger still looking back.",
+          "said": "SPEAKER (could be BadCode's voice): '[PUNCHLINE BLANK for Jack: the order-speaker line that turns the drive-thru transaction into the point, e.g. the price of the coffee against the price of a B&B night, or 'anything else?' answered by the passenger asking who owns them]'"
+        }
+      ],
+      "the_turn": "Two guesses, wrong in opposite directions. The first guess OVERestimates rough sleeping (which is what the UK public actually does, per CHI/Ipsos) and the reveal reshapes it: not blokes in doorways, families with kids in B&Bs. The second guess UNDERestimates empty homes and the reveal is huge. The two numbers collide exactly as Bob enters frame: the abstract becomes a man with a spanner.",
+      "why_it_lands": "It is the most ordinary British scene there is: a queue, a mate, a phone fact. The passenger is the viewer, he guesses what anyone would, and he is never mocked for it; the numbers are the villain. Bob is not pitiable, he is fixing his own engine, doing what you'd do. Ends on a question about ownership the viewer asks for themselves.",
+      "risk": "Talking-heads-in-a-car can feel static in vertical; needs the queue movement and the window reveal timed tight. 'Who owns them?' is the left-coded beat; keep it as a question from the passenger, not an answer from the driver. Don't say councils rent the empty homes back (unverified). No chain branding, cups or uniforms; no likeness of the real car-coffee show host. £2.9bn and 4-to-1 must be quoted as England, 2025-26, temporary accommodation, and long-term empty + second homes respectively."
+    },
+    {
+      "slug": "barbers-mirror",
+      "title": "Short Back and Sides",
+      "logline": "A barber plays the numbers game with a lad in the chair, and when he holds up the hand mirror to show the back, the mirror shows Bob outside the shop window.",
+      "setting_and_genre": "Vertical, one-room comedy in a high-street barber's (independent, red-and-white pole, laminated price list, clippers buzzing). Shot mostly IN the big wall mirror, so both faces are visible in one frame and the street through the front window sits behind them, out of focus, the whole time. Warm interior, cold street.",
+      "who": "BARBER (fifties, has heard everything, unflappable, the one with the numbers because a customer told him last week). CUSTOMER (twenties, mouthy, guesses big). Bob outside, soft-focus then sharp.",
+      "beats": [
+        {
+          "seconds": "0-4",
+          "see": "Mirror shot, clippers going. Customer mid-rant about rent.",
+          "said": "CUSTOMER: '...and there's nowhere. Nowhere to live.' BARBER: 'Guess how many homes are just sat empty, then.' (DRAFT)"
+        },
+        {
+          "seconds": "4-9",
+          "see": "Customer squints, guesses. Barber keeps cutting, doesn't look up.",
+          "said": "CUSTOMER: 'Few thousand?' BARBER: 'Three hundred thousand. Empty six months or more. And two hundred and sixty-seven thousand second homes on top.' CUSTOMER: 'Fuck off.' BARBER: 'Head still.' (DRAFT)"
+        },
+        {
+          "seconds": "9-14",
+          "see": "Customer tries to turn; barber turns his head back to face the mirror.",
+          "said": "BARBER: 'Hundred and thirty-four thousand families in B&Bs and hostels. Council pays nearly three billion a year for it.' CUSTOMER: 'So four empty for every one.' (DRAFT)"
+        },
+        {
+          "seconds": "14-19",
+          "see": "Barber picks up the hand mirror, holds it behind the customer's head: 'How's that?' In the hand mirror, reflected through the shop window, Bob at the bus shelter across the road with his bags, sharp for the first time. Customer stops looking at his haircut.",
+          "said": "BARBER: 'How's the back?' CUSTOMER: (silence)"
+        },
+        {
+          "seconds": "19-22",
+          "see": "Customer, still looking.",
+          "said": "CUSTOMER: '[PUNCHLINE BLANK for Jack: the line that answers 'how's the back' with the point, e.g. about who's sat on the empty ones]'"
+        }
+      ],
+      "the_turn": "A single guess, wildly low, then the barber stacks the numbers like he's listing prices. The real turn is visual: the hand mirror, the ritual end of every haircut, 'shows you what's behind you', and what's behind him is Bob.",
+      "why_it_lands": "Barbers are where working-class blokes actually talk straight, and the barber is a trusted, unshowy authority, not a politician or a charity. The hand-mirror gag is a ritual everyone knows, so the reveal needs no explanation. The customer starts angry about his own rent: the point lands as HIS grievance, not a lecture about other people.",
+      "risk": "Mirror shots are hard for generators (reflections go wrong); may need to cut between a mirror two-shot and an insert of the hand mirror. Bob at a bus stop must not look like a charity poster: give him something to do (reading a timetable, checking a phone). Swearing is fine but the barber must not sermonise; keep his lines flat, like reading out prices."
+    },
+    {
+      "slug": "quiz-tiebreaker",
+      "title": "Nearest Wins",
+      "logline": "A pub quiz goes to the tiebreaker, 'how many homes in England are sitting empty?', every table guesses low, and the closest answer comes from the one-man team in the corner: Bob.",
+      "setting_and_genre": "Vertical, ensemble comedy in a local pub on quiz night: carpet, fruit machine, answer sheets, tiny pencils, a meat raffle on the bar. Quizmaster with a mic that feeds back. Bob as a team of one at the end table with a half he's made last all night.",
+      "who": "QUIZMASTER (landlord or landlady, booming, loves the drama). Two rival tables (builders in hi-vis on 'Quizteama Aguilera'-style pun teams; DRAFT names, Jack's call). Bob, team name on his sheet just 'Bob'. Denise and Barry from The Bank Robbery could be a table if the shared world helps.",
+      "beats": [
+        {
+          "seconds": "0-4",
+          "see": "Mic feedback. Quizmaster holds up a sheet.",
+          "said": "QUIZMASTER: 'Tiebreaker! Nearest wins the meat raffle. How many homes in England have been empty six months or more?' (DRAFT)"
+        },
+        {
+          "seconds": "4-9",
+          "see": "Quick-cut guesses being scribbled and shouted across tables, each one confident.",
+          "said": "'Ten grand.' 'Fifty thousand, tops.' 'Hundred thousand, if you count Wales.' (DRAFT) Bob writes without hesitating."
+        },
+        {
+          "seconds": "9-14",
+          "see": "Quizmaster reads the answer, then the sheets.",
+          "said": "QUIZMASTER: 'Three hundred and three thousand. And that's not counting the two hundred and sixty-seven thousand second homes.' Groans, a swear. 'Nearest... table nine. Bob. Three hundred thousand.' (DRAFT)"
+        },
+        {
+          "seconds": "14-19",
+          "see": "The whole pub turns to look at Bob for the first time. He stands, rucksack already on, sleeping-mat strapped to it.",
+          "said": "BUILDER: 'How'd you know that?' BOB: '[PUNCHLINE BLANK for Jack: Bob's dry answer, e.g. that he's been counting them; that he's had a lot of time to read; or that he sleeps opposite one]'"
+        },
+        {
+          "seconds": "19-23",
+          "see": "Bob takes the meat raffle prize, looks at it (he has nowhere to cook it), hands it to the next table, walks out into the rain. Caption, or quizmaster deadpan: 134,210 households in temporary accommodation. About four empty homes for every one.",
+          "said": "QUIZMASTER (mic, after a beat): '...Right. Picture round.' (DRAFT)"
+        }
+      ],
+      "the_turn": "The pub quiz tiebreaker is literally a guess-then-reveal built for a room: everyone commits a number on paper, then the real number humiliates the room, not one person. The second turn is WHO got it right: the man everyone ignored, because he's the only one who's had reason to look.",
+      "why_it_lands": "Quiz night is a working-class institution with no politics attached; nobody is lectured, they are beaten at a quiz. The room's wrong guesses are shared, so no one viewer is the fool. Bob winning flips him from object of pity to the cleverest man in the pub, which is exactly the 'he is you five bad years later' idea. The meat-raffle prize he can't cook is the dark joke without anyone saying it.",
+      "risk": "Lots of faces and cuts for 20 seconds; needs ruthless cutting of the guess montage. The meat-raffle beat could tip into sentimentality if held too long. Only one number question can really be asked in the time; the temporary-accommodation figure may have to go in a caption, which drifts toward 'graphic' rather than conversation. Pun team names must not reference real people's names in a way that reads as their likeness."
+    }
+  ]
+}

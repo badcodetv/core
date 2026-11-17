@@ -1,0 +1,105 @@
+[
+ {
+  "at": "2026-11-15T12:38:11+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
+  "what": "Mood board round 1: clean room, 9 stills, three looks (spy-film insert / linocut / stop-motion miniature) across three beats",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-envelope/scenes/the-envelope <out.html>"
+ },
+ {
+  "at": "2026-11-15T14:29:33+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
+  "what": "Sting switcheroo version, 4 beats x 3 looks (clean room)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-envelope/scenes/the-envelope <out.html>"
+ },
+ {
+  "at": "2026-11-15T14:54:13+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
+  "what": "Switch x3 more like the Sting (clean room), S4 mask + wrists fixed",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-envelope/scenes/the-envelope <out.html>"
+ },
+ {
+  "at": "2026-11-15T14:54:23+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "what": "Jack's votes and notes on round 2",
+  "decided": [
+   "Column b (painted chapter cards): SU2-b This, PK2-b This, SG2-b This ('no skin for the badcode guy and fix the mask'), SW2-b Maybe ('this style but change it make it more like the sting')"
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 6
+ },
+ {
+  "at": "2026-11-15T17:24:14+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
+  "what": "Round 3: S3 Switch x3, S4 mask fix",
+  "decided": [
+   "SW3-c This; SG3-b This, 'badcode guy triangle should be over the red eye'; 'go'"
+  ],
+  "feedback": "feedback/moodboard-r3",
+  "feedback_docs": 8
+ },
+ {
+  "at": "2026-11-15T17:34:35+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/SYmKwEYiBZxixJHpyduGod",
+  "what": "Clip picks: 2 animations per card, 8 Omni clips",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-envelope/scenes/the-envelope/picks.json envelope-clip-picks.html"
+ },
+ {
+  "at": "2026-11-15T17:44:09+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/SYmKwEYiBZxixJHpyduGod",
+  "what": "Clip picks round 1",
+  "decided": [
+   "01-a, 02-b, 03-b, 04-b (no notes)"
+  ],
+  "feedback": "feedback/picks-r1",
+  "feedback_docs": 4
+ },
+ {
+  "at": "2026-11-15T17:49:48+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/J9vW3RyYnMU2ygwwDuzE7o",
+  "what": "Sound picks: Suno round r1-track, 4 sounds x 2 takes",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-envelope/songs/r1-track/picks.json envelope-sound-picks.html"
+ },
+ {
+  "at": "2026-11-15T17:55:00+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/J9vW3RyYnMU2ygwwDuzE7o",
+  "what": "Sound picks round 2: 8 instrumental Suno takes + 4 AI Studio voices for the line",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-envelope/songs/r2-track/picks.json envelope-sound-picks.html"
+ },
+ {
+  "at": "2026-11-15T18:29:44+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/J9vW3RyYnMU2ygwwDuzE7o",
+  "what": "Sound picks round 2",
+  "decided": [
+   "hotclub2 (music), b Iapetus (voice)"
+  ],
+  "feedback": "feedback/picks-r3",
+  "feedback_docs": 2
+ },
+ {
+  "at": "2026-11-15T18:29:44+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/3zxgwRFeNQdFYHWpjuE6Cp",
+  "what": "Rough cut 1: 4 picked cards, hotclub2, Iapetus line",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-envelope/scenes/the-envelope <out-dir>"
+ }
+]

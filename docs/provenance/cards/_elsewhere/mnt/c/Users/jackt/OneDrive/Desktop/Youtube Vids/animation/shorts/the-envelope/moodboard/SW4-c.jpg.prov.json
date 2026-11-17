@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/SW4-c.jpg",
+ "made": "2026-11-15T17:23:21+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the banknotes: the stack on the crate and the fan of notes in the grinning man's hand become invented 1930s paper money, large cream and pale brown notes with a plain engraved border, an oval crest of a crowned key, and no portrait, no green and no dollar markings. Keep everything else in the image exactly the same, preserving the painted style, the hats, the envelopes, the lettering, lighting and composition. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/SW3-c.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/SW3-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2,
+  "picked_from": "SW4-c-a"
+ },
+ "source_id": "4a232e3b-62c6-455a-a6bb-9c23bc5e3cb5"
+}

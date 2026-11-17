@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PA12-d.jpg",
+ "made": "2026-11-17T12:36:17.596Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 portrait advert panel, photographed as a flat printed poster filling the frame square-on, with fine halftone grain and slightly muted ink. On the poster: the man in the reference image stands in a long hospital corridor with a stethoscope draped loosely around the neck of his navy chalk-stripe suit like a borrowed prop, caught mid slow nod, eyes half-lowered, chin tucked, the faint sly half-smile still there. He is framed from the chest up and close, his face taking up well over a third of the poster's height. His face matches the reference exactly: roughly sixty, a long fleshy hooked nose with broken red veins, narrow heavy-lidded eyes, freckled blotchy skin flushed across the cheeks, soft jowls. Behind him the corridor recedes in shallow focus: pale walls, a handrail, double doors with small windows. The only light sources are rows of cool fluorescent ceiling tubes overhead and a warm daylight spill from a side window, mixed and a little green. Across the top of the poster on a wide white band, SAVE OUR NHS in huge heavy black capitals, spelled exactly; no other words, signs or lettering anywhere in the image. Hands, if visible, natural with five fingers. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-b-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-b-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "425b5899-92f0-4c40-9948-20917d251f6a"
+}

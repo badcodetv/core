@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/_batch-r1/00.jpg",
+ "made": "2026-11-15T12:46:09.927Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph, low angle through a cheap fisheye lens, grainy 1990s 35mm colour negative, slightly underexposed. A figure in a black balaclava and puffer jacket sits on a brownstone stoop at dusk, holding a cracked school chalk slate on its knees that reads \"THE 10 MONEY COMMANDMENTS\" above roman numerals I to X. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Sodium streetlight from the left, cold blue sky above and bent railings curving at the frame's edges. Thanks.",
+ "source_id": "24669a67-7992-4c3f-a513-112b47687743"
+}

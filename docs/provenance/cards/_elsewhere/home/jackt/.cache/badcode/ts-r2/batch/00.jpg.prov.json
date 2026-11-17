@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/00.jpg",
+ "made": "2026-11-16T13:36:21.952Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph, shot on cheap expired colour film at night: a bare British parish hall, worn wooden floor with faded painted badminton lines, tall black windows. A ring of mismatched stacking chairs (orange plastic, old wooden, one folding metal) stands in the middle of the floor. Small children in paper party hats circle the ring mid-step, seen only from behind, slightly blurred with motion. On a trestle table at the edge, a cassette player with its lid open and a paper plate of half-eaten sandwiches. A single fluorescent tube overhead throws a cold teal light; the hall corners fall into darkness. Heavy grain, lonely, faintly eerie. Low camera at a child's hip height. Thanks.",
+ "source_id": "dcdf85ac-3838-4e7c-8b13-5ee6f64628f1"
+}

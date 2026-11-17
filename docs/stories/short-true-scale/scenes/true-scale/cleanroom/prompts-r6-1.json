@@ -1,0 +1,26 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: be concrete about content, say where any text goes; the model renders text readily, so unwanted text must be ruled out explicitly",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — quote exact text and place it; by inverse, sheets that must carry no number are best described as handwritten scrawl seen at an angle, too small to read",
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — specific description beats mood words; name each person rather than 'diverse crowd'",
+    "https://wikipedia.com/wiki/Pub_quiz — quizmaster often marks sheets; weekly midweek quiz is a fixture of the British local, teams named and seated at fixed tables",
+    "https://www.wikiwand.com/en/articles/Al_Murray's_Compete_for_the_Meat — the meat raffle as a recognised British pub ritual: plain wrapped joints, frozen chicken, tray on the bar"
+  ],
+  "notes": "Beat 1 carries none of the three allowed numbers, so every sheet is unreadable scrawl and both prompts say so. Option a is the quizmaster close and low, crowd behind; option b is a wide from the back of the room with Bob tiny and side-on in the far corner (uses the reference). Each names a specific, ordinary mix of people, the quizmaster included, no one group dominant. No brands: plain packets, unlabelled pumps.",
+  "stills": [
+    {
+      "beat": "nw1",
+      "id": "NW6-1a",
+      "look": "Low close on the quizmaster, the room in her glasses-light",
+      "prompt": "Vertical 9:16 candid photo on cheap colour negative film, heavy grain, warm tungsten pub at night. Low angle, close: the quizmaster, a Black British woman in her fifties with reading glasses on a beaded chain and a lilac cardigan, holds a mic to her mouth and raises a single answer sheet high, mid-announcement, eyebrows up. The sheet is handwritten scrawl seen at an angle, unreadable, no numbers. Behind her, soft focus: a South Asian lad in a plain football shirt leaning in, a white grandad in a flat cap squinting, a young woman in a navy hijab with a tiny pencil in her teeth, a nurse still wearing her lanyard. On the bar edge, a meat-raffle tray of plain paper-wrapped joints. Patterned carpet, a blinking fruit machine, cold teal rain on the window. No brands, no readable writing. Thanks.",
+      "uses_bob_reference": false
+    },
+    {
+      "beat": "nw1",
+      "id": "NW6-1b",
+      "look": "Wide from the back of the room, the whole local leaning in",
+      "prompt": "Vertical 9:16 candid photo, cheap colour film, grain, warm tungsten night. Wide from the back of a busy British local on quiz night. At the far end, by the bar, the quizmaster, an older Sikh man in a navy turban and a darts-club polo, holds up one sheet and speaks into a mic. Tables lean toward him: two Polish builders in hi-vis, a Caribbean grandmother with her teenage grandson, three women from an office in lanyards, a bald white bloke in a plain red football shirt, a Chinese student with an answer sheet. In the far corner, alone at a small table, the man from the attached reference sheet sits side-on, still, watching. Plain-wrapped meat raffle on the bar, patterned carpet, fruit machine glow, teal rain on the windows. All writing unreadable, no numbers. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

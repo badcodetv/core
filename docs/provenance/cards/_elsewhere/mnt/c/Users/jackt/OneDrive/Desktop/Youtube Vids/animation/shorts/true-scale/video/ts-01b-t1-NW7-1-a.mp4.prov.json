@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-01b-t1-NW7-1-a.mp4",
+ "made": "2026-11-16T15:42:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan behind the bar, keeps the blank sheet raised and speaks into the microphone, face to the room, mouth clearly visible. She says: How many homes in England have been empty six months or more? A steady, deliberate quiz voice, every word clear, filling most of the clip. Nobody else speaks. The woman in the navy hijab frowns and reaches for her pen. Low pub murmur, no music, no subtitles.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+ "why": "Jack 2026-11-16 'reshoot' for lip sync; words: How many homes in England have been empty six months or more?",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+  "key": "01b-t1",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T15:39:14.531Z"
+ }
+}

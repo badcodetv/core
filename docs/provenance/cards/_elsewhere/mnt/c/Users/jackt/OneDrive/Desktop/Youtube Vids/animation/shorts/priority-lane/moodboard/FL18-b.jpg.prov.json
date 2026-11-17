@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/FL18-b.jpg",
+ "made": "2026-11-17T14:46:01.414Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the real layout, perspective and lighting of the reference photo, the angled close view of a monitor with its handle on top and cables hanging below, now mounted on the wall of an ambulance at night. The screen is the brightest thing in the frame: the heart trace runs dead flat from edge to edge in green, every other line flat beneath it, and the readouts on the right have all dropped to dashes. A small red alarm light glows on the plain, unmarked housing. In the bottom corner, blurred, a gloved hand still lies on the patient's chest, a dark green cuff at the wrist. The cabin is dim; streaks of blue emergency light pass over the white plastic, and a rain-spotted window behind throws a faint orange street-lamp glow. Still, silent, final. Vertical 9:16. Night in the rain, like a real 35 mm film photo: sodium-orange street lamps, cold teal shadows, blue emergency lights. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/us/u_gzTKtM5biaA.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/us/u_gzTKtM5biaA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "49ed1f57-bc91-4171-84f3-b9a205a6e298"
+}

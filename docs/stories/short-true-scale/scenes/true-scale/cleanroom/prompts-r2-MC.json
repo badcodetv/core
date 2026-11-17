@@ -1,0 +1,25 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write a scene description, not keywords; name camera, light and medium",
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — camera vocabulary (overhead, low-angle, depth of field) steers framing; keep in-image text short",
+    "https://invideo.io/blog/nano-banana-2-prompt-guide/ — short specific briefs beat long vague ones; state aspect and the one focal point",
+    "https://trinityhenleazeurc.org.uk/bradbury/spec-church.php — British church halls: ceiling-mounted fluorescent tubes, wooden floors, tall windows",
+    "https://www.trentfurniture.co.uk/news/blog/40 — church halls run on stacking chairs and folding tables, mismatched over decades",
+    "https://giggster.com/uk/listing/church-hall-1 — UK church hall: wood floor with painted badminton court lines, a common detail"
+  ],
+  "notes": "Honest ratio: the counted ring is 12 chairs, 7 seated children, 1 child standing, 4 spare chairs claimed by coats, a handbag and RESERVED slips: four spare chairs for the one child out, matching about 4 homes nobody lives in per homeless household (counting second homes). No number written in either image; the only text is RESERVED. Children are always from behind or seen from directly above (party hats, crowns of heads) to stay clear of refusals. Keeps Jack's night/fluorescent-teal/cheap-film look: the hall at night, one flickering tube, black windows.",
+  "stills": [
+    {
+      "beat": "musical-chairs-backwards",
+      "id": "MC2-a",
+      "look": "setup: low wide from behind the children, the game in motion",
+      "prompt": "Vertical 9:16 photograph, shot on cheap expired colour film at night: a bare British parish hall, worn wooden floor with faded painted badminton lines, tall black windows. A ring of mismatched stacking chairs (orange plastic, old wooden, one folding metal) stands in the middle of the floor. Small children in paper party hats circle the ring mid-step, seen only from behind, slightly blurred with motion. On a trestle table at the edge, a cassette player with its lid open and a paper plate of half-eaten sandwiches. A single fluorescent tube overhead throws a cold teal light; the hall corners fall into darkness. Heavy grain, lonely, faintly eerie. Low camera at a child's hip height. Thanks."
+    },
+    {
+      "beat": "musical-chairs-backwards",
+      "id": "MC2-b",
+      "look": "reveal: straight top-down on the ring, the music has stopped",
+      "prompt": "Vertical 9:16 photograph looking straight down from the ceiling of a British church hall at night, cheap colour film, heavy grain, cold fluorescent teal light. A ring of exactly twelve mismatched stacking chairs on a worn wooden floor. Seven small children in paper party hats sit on seven chairs, seen only as the tops of their heads. Four chairs are empty but claimed: a coat draped over one, a handbag on another, and folded paper cards reading RESERVED on the last two. In the very centre of the ring one small child in a party hat stands alone, seen from above, arms by their sides. Long shadows, black edges, quiet and absurd. Thanks."
+    }
+  ]
+}

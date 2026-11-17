@@ -1,0 +1,13 @@
+{
+  "name": "jazz-phrasing",
+  "style": "late-90s New York street rap, one heavyset MC who treats his verse like a bebop drum solo turned into words: rhythm played as melody, syllables dragged a hair behind the snare then tumbled out in quick clusters, stacked multisyllable rhymes rolling into each other, unbothered talking cadence, a deliberate beat of silence right before each punchline lands. Vocal: enormous man, low velvet chest baritone, lazy Brooklyn vowels, a short asthmatic wheeze audible on every inhale, dry and right on the mic. Instrumental: 88 BPM, swung dusty breakbeat with a thick knocking kick and a hard flat snare, a melancholy after-midnight Rhodes-and-organ soul-jazz figure sliced into a cold, menacing minor loop, walking acoustic-bass-style bottom end, tape hiss and crackle; between the rules a hoarse sampled crowd-chant voice barks the number; bare, minimal, threatening, no hook",
+  "exclude": "sung melody, chorus, auto-tune, trap hats, 808 glides, gospel choir, glossy synths, cavernous reverb, thin nasal voice, rapid chopper flow, female voice",
+  "lyrics": "[Intro: murmured aside, close to the mic]\nUh. Money printer manual. Take notes.\n\n[Hoarse sampled chant: One]\n[Verse: horn-player phrasing, lag behind the snare, hold a breath before the last word]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Hoarse sampled chant: Two]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Hoarse sampled chant: Three]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro: drums cut, bare voice over the keys]\nAnd the fix, from the future? No hand on the printer.\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 75,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": false
+}

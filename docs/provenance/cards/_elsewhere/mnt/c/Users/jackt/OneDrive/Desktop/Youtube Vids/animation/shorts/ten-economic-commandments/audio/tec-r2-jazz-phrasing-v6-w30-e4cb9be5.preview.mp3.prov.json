@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/audio/tec-r2-jazz-phrasing-v6-w30-e4cb9be5.preview.mp3",
+ "made": "2026-11-16T17:37:24.067Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "e4cb9be5-5c68-484d-ace0-e0fed5592f59",
+ "inputs": {
+  "title": "tec-r2-jazz-phrasing-v6-w30",
+  "song": "https://suno.com/song/e4cb9be5-5c68-484d-ace0-e0fed5592f59"
+ },
+ "settings": {
+  "durationSec": 29
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/audio/tec-r2-jazz-phrasing-v6-w30-e4cb9be5.wav"
+}

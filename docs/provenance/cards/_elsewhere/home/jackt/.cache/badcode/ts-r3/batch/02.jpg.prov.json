@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r3/batch/02.jpg",
+ "made": "2026-11-16T13:53:02.776Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph of an English high street at night, shot from across the road and slightly above. At street level, one shuttered shop doorway is lit hard by a streetlight: a sleeping bag and a few carrier bags, the person inside just a shape. Above the shops rises a tired four-storey hostel, rows of small windows with thin curtains, each glowing faintly cold teal, a vague silhouette behind several of them, families crowded into single rooms. The doorway is the only bright spot; the windows go almost unnoticed. No signs or logos readable. Cheap colour film, coarse grain, sodium and fluorescent light mixing, damp pavement. Thanks.",
+ "source_id": "ce7977cb-3c79-4821-b61d-9e8babb3d437"
+}

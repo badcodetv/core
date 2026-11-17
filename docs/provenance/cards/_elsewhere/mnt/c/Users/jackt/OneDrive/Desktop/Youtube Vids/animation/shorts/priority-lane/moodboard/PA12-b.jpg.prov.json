@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PA12-b.jpg",
+ "made": "2026-11-17T12:34:47.193Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16, a photo of a printed poster laid flat and photographed straight-on, the poster filling the whole frame, with the faint dot texture of offset printing. The picture on the poster is a tight, documentary-style shot of the man in the reference image standing on a hospital ward holding a chunky white mug of tea in both hands just below his chin, a thread of steam rising, his face filling the upper half of the poster. His own face from the reference, unchanged: around sixty years old, long hooked fleshy nose threaded with red veins, narrow heavy-lidded eyes glancing slightly sideways, freckles and blotchy reddened skin, loose jowls, the corner of his mouth lifted in a knowing half-smile. Navy pinstripe jacket, open-collared white shirt. Warm tungsten light from a bedside reading lamp on one side meets cool fluorescent ceiling light from above; behind him a blurred row of empty beds and a drip stand. At the bottom of the poster a broad off-white band carries SAVE OUR NHS in enormous heavy black capitals, spelled exactly, and nothing else is written anywhere. Hands natural, five fingers each. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-b-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-b-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "bcaa7335-77db-4722-a4f4-b40ec3f110f3"
+}

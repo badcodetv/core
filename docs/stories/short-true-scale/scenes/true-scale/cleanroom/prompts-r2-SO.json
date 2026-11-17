@@ -1,0 +1,25 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write in natural sentences, describe subject, setting, light and camera like a brief to a photographer",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — Nano Banana 2 responds to named film stocks and lighting; being vague about environment and light is the commonest failure",
+    "https://blog.picassoia.com/nano-banana-2-photorealism-prompts-that-work-every-time — 'Cinestill 800T, tungsten halation' for night interiors; ask for grain explicitly ('pronounced grain') rather than 'cinematic'",
+    "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — the model infers era cues (grain, desaturation) from a short period phrase; keep text in quotes and short so it renders exactly",
+    "https://freshwayscc.co.uk/blog/wholesale-tinned-food-bulk-buying-guide/ — UK independent grocers buy ambient stock by the case from cash and carry; the back room is plain brown outer cases, not branded displays",
+    "https://palletower.com/industry/retail-ecommerce/ — stock in back rooms is grouped by category and secured in clear stretch wrap on pallets, which reads instantly as 'delivered and untouched'"
+  ],
+  "notes": "Look kept: night, cold fluorescent teal, cheap colour film grain, the corner-shop register of the reference doorway photo. Honesty to the ratio: the reveal asks for 'enough to refill that shelf about four times over' (the 4-to-1 counting second homes), never 'endless'; if a 2-to-1 version is wanted, change 'about four times over' to 'at least twice over'. No numbers drawn in either image; the only text is the handwritten card 'SORRY, SOLD OUT'. Boxes are plain unbranded brown cases with no labels, to avoid fake brands. The one person is seen from behind only. The stockroom is clearly the same shop (same teal tubes) so the cut reads as one place. The setup frames the doorway at the far end of the aisle so the camera drift to it in animation is natural.",
+  "stills": [
+    {
+      "beat": "sold-out-stockroom",
+      "id": "SO2-a",
+      "look": "setup: lonely night corner-shop aisle, empty shelf, handwritten SORRY, SOLD OUT card, figure from behind, teal strip lights, film grain",
+      "prompt": "Vertical 9:16 photograph down the narrow aisle of a small British corner shop late at night. Cold fluorescent tubes wash everything a sickly teal; the rest of the shop is crammed with cheap snacks and tins, but one shelf at eye level is completely bare, with a small handwritten card taped to its edge reading \"SORRY, SOLD OUT\" in biro capitals. A lone shopper in a worn parka stands in front of it, seen only from behind, shoulders slightly dropped. At the far end of the aisle, a plain back-room door stands a few inches ajar, dark beyond. Shot on Cinestill 800T, pronounced grain, slight halation on the tubes, cheap compact flash off, lonely and quietly eerie. Thanks."
+    },
+    {
+      "beat": "sold-out-stockroom",
+      "id": "SO2-b",
+      "look": "reveal: through the propped stockroom door, plain shrink-wrapped cases stacked floor to ceiling under one bare teal tube, untouched",
+      "prompt": "Vertical 9:16 photograph through the half-open back door of the same small British corner shop at night, looking into its cramped stockroom. A single bare fluorescent tube throws hard cold teal light down onto plain brown cardboard cases, unlabelled, stacked floor to ceiling on two pallets and still sealed in clear shrink-wrap, the plastic catching the light. Enough to refill the empty shelf out front about four times over, neat and untouched, a dusty delivery note pinned to the wrap. Foreground: the edge of the door and the dim shop aisle. No people. Shot on Cinestill 800T, pronounced grain, slight halation, deep shadows in the corners, quiet and accusing. Thanks."
+    }
+  ]
+}

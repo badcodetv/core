@@ -1,0 +1,842 @@
+{
+ "schema": "badcode.final/1",
+ "story": "short-true-scale",
+ "scene": "true-scale",
+ "sequence": "short-true-scale-1-nearest-wins-r5",
+ "frozen": "2026-11-16T16:25:48+00:00",
+ "note": "Jack 2026-11-16: save that put it on premiere and upload it to drive",
+ "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/edl.json",
+ "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/preview.mp4",
+ "total": 40.8,
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF",
+  "timeline": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8"
+ },
+ "words": {},
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 4.9,
+   "beat": "nw1",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-01a-t1-NW7-1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-01a-t1-NW7-1-a.mp4",
+     "made": "2026-11-16T15:42:29+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan standing behind the bar, holds the microphone to her mouth and gives the blank sheet in her raised hand a little shake. Facing the room, mouth clearly lit, she says: Tiebreaker! Nearest wins the meat raffle. She speaks loud, cheerful and unhurried. Nobody else speaks. The young man in hi-vis grins; the old man in the flat cap leans in. Only pub murmur under her voice, no music, no subtitles.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+     "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Tiebreaker! Nearest wins the meat raffle.",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+      "key": "01a-t1",
+      "frame": 1,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T15:37:25.127Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+     "made": "2026-11-16T15:09:50.408Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "A new vertical 9:16 candid photo in the same pub as the attached picture, earlier in the evening: the quizmaster from the attached picture stands behind the bar, microphone in one hand, the other hand lifting a blank answer sheet high, about to read the tiebreaker, a playful look on her face. The regulars from the attached picture sit at their tables leaning in, listening. Cheap colour film, heavy grain, warm tungsten light, fruit machine glow, cold teal rain on the window. No readable writing, no brands. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "e36253d6-0813-4fb3-85d6-6feaa69d8c0a"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 4.9,
+   "dur": 5.0,
+   "beat": "nw1b",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-01b-t2-NW7-1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-01b-t2-NW7-1-a.mp4",
+     "made": "2026-11-16T15:42:29+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan behind the bar, keeps the blank sheet raised and speaks into the microphone, face to the room, mouth clearly visible. She says: How many homes in England have been empty six months or more? A steady, deliberate quiz voice, every word clear, filling most of the clip. Nobody else speaks. The woman in the navy hijab frowns and reaches for her pen. Low pub murmur, no music, no subtitles.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+     "why": "Jack 2026-11-16 'reshoot' for lip sync; words: How many homes in England have been empty six months or more?",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+      "key": "01b-t2",
+      "frame": 1,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T15:40:14.129Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-1-a.jpg",
+     "made": "2026-11-16T15:09:50.408Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "A new vertical 9:16 candid photo in the same pub as the attached picture, earlier in the evening: the quizmaster from the attached picture stands behind the bar, microphone in one hand, the other hand lifting a blank answer sheet high, about to read the tiebreaker, a playful look on her face. The regulars from the attached picture sit at their tables leaning in, listening. Cheap colour film, heavy grain, warm tungsten light, fruit machine glow, cold teal rain on the window. No readable writing, no brands. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "e36253d6-0813-4fb3-85d6-6feaa69d8c0a"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 9.9,
+   "dur": 2.7,
+   "beat": "nw2",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-02-NW6-2b1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-02-NW6-2b1.mp4",
+     "made": "2026-11-16T15:19:40+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. At the centre table the man in the paint-spattered T-shirt leans forward and shouts, mouth wide, jabbing his open hand at the paper. The woman in the denim jacket cups her hand to her mouth and calls out with him. Far back in the corner, the bearded man in the beanie keeps his head down, writing slowly on his sheet, untouched by the noise. Everyone else stays seated, only blinking. Crisp packets and glasses stay still on the tables. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-2b1.jpg",
+     "why": "The loud table shouts its lowball guess; Bob alone in the corner keeps writing.",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-2b1.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+      "key": "02",
+      "frame": 2,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T15:15:27.185Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-2b1.jpg",
+     "made": "2026-11-16T14:59:04.117Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Vertical 9:16 candid photo on cheap colour film, grain, night. Wide shot across a busy British local pub on quiz night, low eye level from behind a cluttered table of empty glasses and plain unbranded crisp packets. Midground, tables shouting guesses at each other: a grey-haired Caribbean grandad in a cardigan with his grandson's mates in work polos, a young East Asian woman in a denim jacket cupping her mouth to yell, a white builder in plaster-flecked trousers half standing. In the far corner, alone at a small table under a wall lamp, the man from the attached reference sheet bends over his answer sheet, writing calmly without hesitating, the sheet angled away from camera. Warm tungsten inside, cold teal rain streaking the windows. All writing unreadable. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "a3fd5d4b-2051-4347-84de-434de4a635f5"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 12.6,
+   "dur": 6.2,
+   "beat": "nw3",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-03a-t1-NW6-3a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-03a-t1-NW6-3a.mp4",
+     "made": "2026-11-16T15:42:29+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan, holds the 303,185 sheet steady; the number never changes. Into the microphone, mouth clearly lit, she says: Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes. Calm, unhurried, a dry little pause after the first sentence. Nobody else speaks. The old man in the flat cap rubs his brow. Pub murmur only, no music, no subtitles.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-3a.jpg",
+     "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes.",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-3a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+      "key": "03a-t1",
+      "frame": 3,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T15:41:12.828Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-3a.jpg",
+     "made": "2026-11-16T14:57:00.984Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "prompt": "Vertical 9:16 candid night photograph on cheap colour film, heavy grain, inside a British local pub on quiz night. Low and close from a front table: the quizmaster, a Black British woman in her fifties in a burgundy cardigan, reading glasses on the end of her nose, holds a microphone and lifts a plain white answer sheet toward us, the sheet facing the camera the right way up, its only writing the handwritten number 303,185 in thick black marker. Soft and out of focus in the foreground: a young woman in a navy hijab with her head in her hands, an older white man in a flat cap groaning, a lad in a paint-spattered hi-vis vest tipping his chair back. Warm tungsten bulbs, patterned carpet, fruit machine glow, rain-streaked window cold teal behind. Unbranded glasses. All other writing unreadable. Thanks.",
+     "source_id": "f1dc03ba-5437-4f92-b41f-0d6b63f873ad"
+    }
+   ]
+  },
+  {
+   "t": 18.8,
+   "dur": 4.6,
+   "beat": "nw3b",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-03b-t2-NW6-3a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-03b-t2-NW6-3a.mp4",
+     "made": "2026-11-16T15:48:55+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan, lowers the 303,185 sheet a touch, its number unchanged, and looks across the room. Into the microphone, mouth clearly lit, she says: Nearest... table nine. Bob. A slow, drawn-out pause before table nine, then the name said plainly, surprised. Nobody else speaks. The young man in hi-vis turns his head toward her. Soft pub murmur, no music, no subtitles.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-3a.jpg",
+     "why": "Jack 2026-11-16 'reshoot' for lip sync; words: Nearest... table nine. Bob.",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-3a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+      "key": "03b-t2",
+      "frame": 3,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T15:44:42.737Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-3a.jpg",
+     "made": "2026-11-16T14:57:00.984Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "prompt": "Vertical 9:16 candid night photograph on cheap colour film, heavy grain, inside a British local pub on quiz night. Low and close from a front table: the quizmaster, a Black British woman in her fifties in a burgundy cardigan, reading glasses on the end of her nose, holds a microphone and lifts a plain white answer sheet toward us, the sheet facing the camera the right way up, its only writing the handwritten number 303,185 in thick black marker. Soft and out of focus in the foreground: a young woman in a navy hijab with her head in her hands, an older white man in a flat cap groaning, a lad in a paint-spattered hi-vis vest tipping his chair back. Warm tungsten bulbs, patterned carpet, fruit machine glow, rain-streaked window cold teal behind. Unbranded glasses. All other writing unreadable. Thanks.",
+     "source_id": "f1dc03ba-5437-4f92-b41f-0d6b63f873ad"
+    }
+   ]
+  },
+  {
+   "t": 23.4,
+   "dur": 4.9,
+   "beat": "nw4",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-04-t1-NW7-4-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-04-t1-NW7-4-a.mp4",
+     "made": "2026-11-16T15:48:55+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. First the young man in the hi-vis vest, seated on the right, turns to the standing man and says: How'd you know that? Then the standing man in the beanie with the rucksack and bedroll looks down at him and answers quietly: I sleep opposite one. Unhurried, a beat between lines, both mouths visible. Only those two speak; the quizmaster in the burgundy cardigan stays silent. The 300,000 sheet on the table never changes. Pub murmur, no music, no subtitles.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-4-a.jpg",
+     "why": "Jack 2026-11-16 'reshoot' for lip sync; words: How'd you know that? / I sleep opposite one.",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-4-a.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+      "key": "04-t1",
+      "frame": 4,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T15:45:42.465Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW7-4-a.jpg",
+     "made": "2026-11-16T15:11:18.907Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "A new vertical 9:16 candid photo in the same pub as the first attached picture, a moment later. Low angle from a small corner table: in sharp focus in the foreground, a quiz answer sheet lying on the table facing the camera, the right way up, with \"300,000\" written large in pencil. Just behind it, the man from the second attached picture has just stood up, a rucksack and rolled sleeping mat on his back, calm and a little unsure. Further back, softer, the quizmaster and the regulars from the first attached picture have turned in their seats toward him. Cheap colour film, heavy grain, warm tungsten light, cold teal rain on the window. No other readable writing, no brands. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+       "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "20505b7a-e9ce-4d47-962a-613832edd882"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 28.3,
+   "dur": 3.3,
+   "beat": "nw5",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-05-NW6-5a2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-05-NW6-5a2.mp4",
+     "made": "2026-11-16T15:19:39+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. The bearded man in the beanie slides the wrapped tray of meat a few inches along the table towards the nurse in blue scrubs, lets go with both gloved hands and straightens up, turning slowly away out of frame right. The nurse looks from the tray up to him, a surprised soft smile. The young man in the red shirt raises his eyebrows. Everyone else stays seated, barely moving. The tray stays flat on the table, nothing lifted. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-5a2.jpg",
+     "why": "Bob gives the meat-raffle prize to the next table and turns to go.",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-5a2.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+      "key": "05",
+      "frame": 5,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-16T15:18:23.128Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-5a2.jpg",
+     "made": "2026-11-16T15:03:02.317Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Vertical 9:16 candid photo, cheap colour film, heavy grain, night inside a British local pub under warm tungsten bulbs. Waist-high, slightly low angle across a sticky wooden table. The man from the attached reference sheet leans in from frame right, quietly setting down the meat-raffle prize: a plain tray of cling-filmed sausages, chops and a joint, with a white butcher's paper bag. Around the table, startled and touched: a Black woman in her forties in NHS-blue scrubs with a lanyard, a grey-haired Sikh man in a navy turban and fleece, a young white lad in a plain red football shirt with no badge, a South Asian woman in a black hijab laughing behind her hand. Answer sheets face down, tiny pencils, unbranded crisp packets. His expression: small, private, done. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+     "inputs": {
+      "references": [
+       "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "0cfd847c-277c-483f-b200-efe506f15034"
+    },
+    {
+     "file": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 31.6,
+   "dur": 5.0,
+   "beat": "stats",
+   "looped": false,
+   "file": "stats card",
+   "chain": [
+    {
+     "file": "stats card",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 36.6,
+   "dur": 4.2,
+   "beat": "logo",
+   "looped": false,
+   "file": "scripts/shorts/fruit_machine_logo.py",
+   "chain": [
+    {
+     "file": "scripts/shorts/fruit_machine_logo.py",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "vox-dialogue",
+   "t": 0.19,
+   "dur": 0.838,
+   "what": "v2-01-landlady 0.00-0.98 s x1.17",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-01-landlady.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-01-landlady.wav",
+     "made": "2026-11-16T15:28:18+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Tiebreaker! Nearest wins the meat raffle. How many homes in England have been empty six months or more?",
+     "inputs": {
+      "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+     },
+     "settings": {
+      "voice": "Sulafat",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 3.28,
+   "dur": 1.296,
+   "what": "v2-01-landlady 1.82-3.44 s x1.25",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-01-landlady.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-01-landlady.wav",
+     "made": "2026-11-16T15:28:18+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Tiebreaker! Nearest wins the meat raffle. How many homes in England have been empty six months or more?",
+     "inputs": {
+      "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+     },
+     "settings": {
+      "voice": "Sulafat",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 5.19,
+   "dur": 4.485,
+   "what": "v2-01-landlady 4.12-8.74 s x1.03",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-01-landlady.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-01-landlady.wav",
+     "made": "2026-11-16T15:28:18+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Tiebreaker! Nearest wins the meat raffle. How many homes in England have been empty six months or more?",
+     "inputs": {
+      "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+     },
+     "settings": {
+      "voice": "Sulafat",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 10.1,
+   "dur": 2.109,
+   "what": "v2-02-builder 0.00-2.32 s x1.1",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-02-builder.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-02-builder.wav",
+     "made": "2026-11-16T15:28:21+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Fifty thousand, tops!",
+     "inputs": {
+      "profile": "# Audio Profile\nA man in his thirties in work clothes, relaxed and friendly, a couple of pints in. Natural London accent. Says his line quickly and casually to his mates, half laughing, not shouting, not a character voice. Later, genuinely puzzled, quiet.\n\n## Scene:\nA small local pub on quiz night, his table near the bar.\n\n## Sample Context:\nA good bloke who guessed low like everyone else. Understated, real, conversational.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/builder-achird.md"
+     },
+     "settings": {
+      "voice": "Achird",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 12.91,
+   "dur": 1.985,
+   "what": "v2-03-landlady 0.00-2.58 s x1.3",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-03-landlady.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-03-landlady.wav",
+     "made": "2026-11-16T15:28:28+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes. Nearest... table nine. Bob.",
+     "inputs": {
+      "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+     },
+     "settings": {
+      "voice": "Sulafat",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 15.58,
+   "dur": 3.077,
+   "what": "v2-03-landlady 3.16-7.16 s x1.3",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-03-landlady.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-03-landlady.wav",
+     "made": "2026-11-16T15:28:28+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes. Nearest... table nine. Bob.",
+     "inputs": {
+      "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+     },
+     "settings": {
+      "voice": "Sulafat",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 19.1,
+   "dur": 0.84,
+   "what": "v2-03-landlady 9.00-9.84 s x1.0",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-03-landlady.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-03-landlady.wav",
+     "made": "2026-11-16T15:28:28+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes. Nearest... table nine. Bob.",
+     "inputs": {
+      "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+     },
+     "settings": {
+      "voice": "Sulafat",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 21.76,
+   "dur": 1.333,
+   "what": "v2-03-landlady 11.22-12.66 s x1.08",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-03-landlady.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-03-landlady.wav",
+     "made": "2026-11-16T15:28:28+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes. Nearest... table nine. Bob.",
+     "inputs": {
+      "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+     },
+     "settings": {
+      "voice": "Sulafat",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 23.95,
+   "dur": 0.94,
+   "what": "v2-04-builder 0.00-0.94 s x1.0",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-04-builder.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-04-builder.wav",
+     "made": "2026-11-16T15:28:30+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "How'd you know that?",
+     "inputs": {
+      "profile": "# Audio Profile\nA man in his thirties in work clothes, relaxed and friendly, a couple of pints in. Natural London accent. Says his line quickly and casually to his mates, half laughing, not shouting, not a character voice. Later, genuinely puzzled, quiet.\n\n## Scene:\nA small local pub on quiz night, his table near the bar.\n\n## Sample Context:\nA good bloke who guessed low like everyone else. Understated, real, conversational.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/builder-achird.md"
+     },
+     "settings": {
+      "voice": "Achird",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 26.83,
+   "dur": 1.154,
+   "what": "v2-05-bob 0.00-1.50 s x1.3",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-05-bob.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-05-bob.wav",
+     "made": "2026-11-16T14:40:27+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "I sleep opposite one.",
+     "inputs": {
+      "profile": "# Audio Profile\nBob, 47. Deep, gravelly, low chest tone, slightly rough from years of smoking. Restrained and inward. Intelligent, cynical, worn down. Delivery sits under the material rather than selling it. Natural conversational rhythm, short pauses, firm downward endings. Neutral southern English accent as heard in Reading or Guildford, faint London edge, no Cockney vowels or slang.\n\n## Scene:\nA busy local pub on quiz night. The whole room has just turned to look at him. He answers quietly, not performing, already leaving.\n\n## Sample Context:\nBob lives in a tent in a supermarket car park. He has just won the quiz tiebreaker because he knows the number. He is not bitter in the moment, just matter-of-fact.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/bob-algenib.md"
+     },
+     "settings": {
+      "voice": "Algenib",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-dialogue",
+   "t": 28.6,
+   "dur": 1.92,
+   "what": "v2-06-landlady 0.00-2.40 s x1.25",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-06-landlady.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-06-landlady.wav",
+     "made": "2026-11-16T15:28:31+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "...Right. Picture round.",
+     "inputs": {
+      "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+      "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+     },
+     "settings": {
+      "voice": "Sulafat",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "mus-rain1",
+   "t": 0,
+   "dur": 40.8,
+   "what": "Jack's pick rain1 (Suno c3f6c3ed), low under the talking, up for the numbers and logo",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/music/true-scale-r1-rain-and-room-ambient-v6-w40-c3f6c3ed.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/music/true-scale-r1-rain-and-room-ambient-v6-w40-c3f6c3ed.wav",
+     "made": "2026-11-16T16:14:45+00:00",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "suno.mts record",
+     "settings": {
+      "song": "c3f6c3ed-d5e7-4dc6-bb41-956367711875",
+      "pick": "Jack 2026-11-16 rain1"
+     }
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "scripts/shorts/fruit_machine_logo.py",
+  "stats card"
+ ]
+}

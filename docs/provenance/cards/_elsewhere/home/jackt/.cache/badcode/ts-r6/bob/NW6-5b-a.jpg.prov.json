@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r6/bob/NW6-5b-a.jpg",
+ "made": "2026-11-16T15:02:14.364Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid photo, cheap colour film, grain, night. Shot from inside a British local pub, low across a table. Foreground, sharp: a pencilled answer sheet flat on the table facing the camera, the only readable writing on it \"300,000\". Middle ground, in warm tungsten light, the next table holds up the meat-raffle prize, a plain cling-filmed tray of meat, and turns to watch the door: an older Black Caribbean man in a flat cap, a young East Asian woman in a hi-vis work jacket, a white grandmother in a cardigan, a Bangladeshi-British teenager in a plain grey tracksuit. Background: the open pub door, cold teal streetlight and slanting rain, the man from the attached reference sheet walking out into it, seen from behind, shoulders up. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0628dfab-1221-4b42-86a8-9ba025e53d5f"
+}

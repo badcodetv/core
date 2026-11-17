@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r6-A2-PS6-c.mp4",
+ "made": "2026-11-14T14:56:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The ambulance rolls slowly forward, so the bus shelter and its glowing poster slide gently across the side window while staying in view. Its blue emergency lights pulse across the wet door frame and the glass. Rain falls hard in the street-lamp glow and drops run down the window. The poster stays sharp and still. No talking. Siren and rain sounds only. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS6-c.jpg",
+ "why": "Jack 2026-11-14 picked PS6-c: his SAVE OUR NHS poster seen from the ambulance, cut into beat A",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS6-c.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "r6-A2",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-14T14:55:41.368Z"
+ }
+}

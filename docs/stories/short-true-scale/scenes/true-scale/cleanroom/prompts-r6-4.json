@@ -1,0 +1,26 @@
+{
+  "research": [
+    "https://runware.ai/docs/models/google-nano-banana-2-1/guides/text-and-layouts.md — wrap every string to be rendered in quotation marks; say where the text sits",
+    "https://morphic.com/resources/how-to/nano-banana-2-lite-guide — quote exact text, one clear idea per image; generated numbers are unreliable, so name the single number and make all other writing illegible",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — describe the scene as a photographer would (camera, lens, light, film) rather than a keyword list",
+    "https://www.stonegatepubpartners.co.uk/news/from-mornings-to-quiz-nights:-how-pubs-create-belonging-6EgN1bvG0zZqn2fxAFIc — quiz night is a weak-ties gathering of regulars, mixed ages, friends and strangers",
+    "https://www.digitalcameraworld.com/photography/awards-and-competitions/the-glorious-pub-photo-series-of-unique-community-owned-watering-hole-gets-major-uk-recognition — The Bevy (Brighton estate pub) series: candid, affectionate portraits of ordinary regulars as the register"
+  ],
+  "notes": "Beat 4 is the turn: the room's attention lands on Bob for the first time. Option a is the reverse over the turned crowd (their backs and profiles frame him), option b is a tabletop close with his sheet sharp in the foreground and faces turned at the frame edges. Each names who is in the frame person by person so the mix is concrete; nobody pushed to a corner. The only number is \"300,000\" on Bob's sheet, upright to camera. Bob described only by position, action, posture and expression; the rucksack and rolled mat are named because the beat requires them.",
+  "stills": [
+    {
+      "beat": "nw4",
+      "id": "NW6-4a",
+      "look": "Over the turned crowd: backs and profiles frame Bob standing in the corner",
+      "prompt": "Vertical 9:16 candid photo, cheap colour negative film, heavy grain, night. A crowded British local pub on quiz night, shot from behind the tables so the whole room is twisted round on stools staring at one corner. Foreground, sharp profiles: a Black woman in her sixties in a cardigan, a young South Asian lad in a plain football shirt with no badge, a white grandad in a flat cap, a woman in a hijab holding a tiny pencil, an East Asian nurse with a lanyard. In the corner, the man from the attached reference sheet stands up from his small table, a rucksack and rolled sleeping mat on his back, calm, slightly embarrassed. Warm tungsten bulbs, patterned carpet, fruit machine glow; cold teal rain on the window behind him. All writing unreadable, no brands. Thanks.",
+      "uses_bob_reference": true
+    },
+    {
+      "beat": "nw4",
+      "id": "NW6-4b",
+      "look": "Tabletop close: his answer sheet sharp in front, the room's faces turned in at the edges",
+      "prompt": "Vertical 9:16 candid photo, cheap colour film, grain, low angle from table height in a British local pub at night. Sharp in the foreground: a sticky wooden table, a half pint, a stubby pencil and a quiz answer sheet facing the camera, right way up, with \"300,000\" written large in pencil. Just behind it, the man from the attached reference sheet has just stood, a rucksack and rolled sleeping mat on his back, looking down at the room, quietly unsure. Leaning into the frame edges, turned toward him with open mouths: a Polish builder in hi-vis, a Nigerian quizmaster in a cardigan holding a mic, a young woman with braids, an older Sikh man in a turban. Warm tungsten light, cold teal rain behind. Other writing unreadable, no brands. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

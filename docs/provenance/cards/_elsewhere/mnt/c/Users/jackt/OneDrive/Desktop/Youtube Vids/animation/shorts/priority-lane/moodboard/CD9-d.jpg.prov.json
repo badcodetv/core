@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD9-d.jpg",
+ "made": "2026-11-17T11:45:27.578Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph shot on grainy 35 mm colour-negative film at night in pouring rain, from the railway-bridge parapet of the reference image but framed a little higher and wider so the whole crossroads and all four approaches fit, the dark wet brick parapet and iron railings across the bottom. UK traffic keeps left. The empty yellow box junction glistens in the centre of the frame. Every approach is held, and every stopped vehicle points the right way: in our road's left-hand lanes the ambulance sits at its stop line in the lower left, only its back half visible, white with yellow-green chequers and pulsing blue lights, behind a police motorcycle and an officer in hi-vis; on the left side road a line of cars waits in the nearer lane with headlights facing right, held by two officers and a bike; on the right side road cars wait in the farther lane with headlights facing left, held by two officers and a bike; and far down the main road, beyond the junction, the oncoming right-hand lanes are being kept empty for the convoy, which is coming straight toward us down those lanes as four black saloons in a tight column, headlights burning, led by two white police motorcycles with blue strobes; well behind the convoy, a separate queue of held cars and a red bus waits behind a police bike across that carriageway, headlights facing us. Eight officers in hi-vis yellow jackets and white helmets in total, small figures spread across the junction. Light sources: rows of sodium-orange street lamps, blue strobes of the escort bikes and the ambulance, convoy headlights, the headlights of all the held queues, and a red traffic light at the near-left kerb, all reflected as long streaks on the wet tarmac. Cold teal shadows, slight halation, heavy visible film grain, ordinary London buildings, no readable text, plates, route numbers or signs anywhere, natural faces and hands. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "02a74e17-8277-4953-a760-2cbae1c7641a"
+}

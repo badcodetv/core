@@ -1,0 +1,26 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — write the prompt as a photography brief: lens, angle, light, grading; skip '8K hyper-realistic' filler",
+    "https://www.atlascloud.ai/blog/nano-banana-2-prompts-guide — named film stocks steer colour: CineStill 800T gives tungsten halation glow at night, Portra for warm skin",
+    "https://wikipedia.com/wiki/Pub_quiz — questions read by the landlord or bar staff; quiz nights exist to fill quiet weeknights",
+    "https://www.morningadvertiser.co.uk/Article/2013/10/21/How-to-host-a-quiz-night/ — kit is a microphone, answer sheets, pens, a scoresheet",
+    "https://en.wikipedia.org/wiki/Meat_raffle — meat raffles are a working-class pub tradition in parts of Britain; prizes shown on trays at the bar (wrapping not confirmed by sources, cling film is my inference)"
+  ],
+  "notes": "Beat 1 is the quizmaster's moment, so neither option puts a number on screen: the sheet's question stays unreadable. Option a is the quizmaster's beat alone (no Bob), a low table-level angle that makes the landlady the room's authority with the meat raffle beside her. Option b plants Bob from the first frame: over his shoulder at table nine, the landlord small and sharp across the room, so the punchline later has been in shot all along. The rain window carries the warm/teal split from the look reference.",
+  "stills": [
+    {
+      "beat": "nw1",
+      "id": "NW1-a",
+      "look": "Low angle from a table: landlady mid-announcement, sheet raised, meat raffle beside her",
+      "prompt": "Vertical 9:16 candid photograph inside a small British local pub on quiz night. Low angle from a crowded table, a ring-marked beer mat and a tiny pencil soft in the foreground. A landlady in her sixties stands at the bar holding a handheld microphone close to her mouth, other arm raised high with a single answer sheet, mid-announcement, eyebrows up like she is about to cause trouble. Beside her on the bar, the meat raffle: trays of sausages and chops under cling film, a biscuit tin of raffle tickets. Worn patterned red carpet, an unbranded fruit machine glowing behind her. Warm tungsten light, cheap 35mm colour film, CineStill 800T halation, heavy grain, slight motion blur. All writing on the sheet unreadable. Thanks.",
+      "uses_bob_reference": false
+    },
+    {
+      "beat": "nw1",
+      "id": "NW1-b",
+      "look": "Over Bob's shoulder at table nine, landlord small and sharp across the room",
+      "prompt": "Vertical 9:16 candid photograph, night, a British local pub on quiz night. Over the shoulder of the man from the attached reference sheet, seated alone at a small corner table, back to camera and soft in the left foreground, one answer sheet and a tiny pencil in front of him, his hand already lifting the pencil. Deep across the room and sharp, a heavyset landlord at the bar leans into a handheld microphone and holds one sheet up at arm's length; beside him, meat raffle trays under cling film. Tables of drinkers between them, faces turned toward the landlord. A rain-streaked window at the right edge glows cold teal against the warm tungsten room and fruit-machine light. Cheap colour film, grain. All writing unreadable. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

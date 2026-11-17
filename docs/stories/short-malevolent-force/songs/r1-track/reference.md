@@ -1,0 +1,1 @@
+- https://www.youtube.com/watch?v=LGD79pQY1kI : Jack names it "dammed bo1 zombies" (the "Damned" music from Call of Duty: Black Ops (2010) Zombies mode). Nobody has listened to it in this session; research what it is and how it sounds. Never name the game, its composer or the track in a Suno prompt.

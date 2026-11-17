@@ -1,7 +1,7 @@
 # Karen music video re-cut: song map
 
 The words for the re-cut of "All Day to Complain" (Premiere sequence **Karen music**, project
-`D:\badcode-videos\karen-music\NEW Karen Music Vid_1.prproj`). Data: [`song-map.json`](./song-map.json).
+`D:\badcode-videos\karen-music\NEW Karen Music Vid.prproj`). Data: [`song-map.json`](./song-map.json).
 Footage: [`catalogue.md`](./catalogue.md).
 
 **The rule (Kai, 2026-11-05):** picture changes on the beat; **choruses = cartoon footage, verses =

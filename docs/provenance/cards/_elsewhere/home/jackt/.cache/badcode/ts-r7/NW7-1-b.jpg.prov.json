@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r7/NW7-1-b.jpg",
+ "made": "2026-11-16T15:09:50.409Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A new vertical 9:16 candid photo in the same pub as the attached picture, earlier in the evening: the quizmaster from the attached picture stands behind the bar, microphone in one hand, the other hand lifting a blank answer sheet high, about to read the tiebreaker, a playful look on her face. The regulars from the attached picture sit at their tables leaning in, listening. Cheap colour film, heavy grain, warm tungsten light, fruit machine glow, cold teal rain on the window. No readable writing, no brands. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "43924d80-579b-416b-abb0-8977d2cc78f5"
+}

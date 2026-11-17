@@ -3,7 +3,7 @@
 Jack 2026-11-05 (verbatim in `cleanroom/jack.md`): every shot where Bob or Tarquin raps to camera becomes a BadCode
 balaclava man (one rough sleeper, one posh); action shots stay. Clean room.
 
-- **Premiere project:** `songs\camping vid\camping vid Copy-test_1.prproj` (created 25.6, last saved 26.5.2; open in Premiere 2026).
+- **Premiere project:** `songs\camping vid\camping vid Copy-test.prproj` (created 25.6, last saved 26.5.2; open in Premiere 2026).
 - **Rap-to-camera clips** (`clips\bob rapping` 1, 1.1, 2, 3, 4, 5.5; `clips\Tarquin rapping` 1, 2, 2.1, 3, 4.3, 4.4, 5, 6).
   Maybes, unruled: loose clips 12, 13 (Bob), 19, 23 (Tarquin). In the project but missing from disk: bob 1.5, Tarquin 4.1, 4.2.
 - **Round 1 (designs), 2026-11-05:** web research `cleanroom/research.md`; sealed writers w1–w4 → 12 designs (r1–r6, p1–p6),

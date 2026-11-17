@@ -1,0 +1,27 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write a scene in full sentences (subject, action, setting, light, camera, style), not tag lists",
+    "https://www.imagine.art/blogs/nano-banana-2-prompt-guide — naming a film stock and 'candid and unposed' pushes Nano Banana 2 away from a polished stock-photo look",
+    "https://www.dzine.ai/blog/nano-banana-pro-prompts/ — order the prompt subject → action → environment → lighting → style, and put exclusions (no logos, no text) at the end",
+    "https://curify-frontend.vercel.app/blog/10-prompting-tips-nano-banana — 35mm grain and imperfections (motion blur, a tilted frame) read as a real snapshot, not a render",
+    "https://www.morningadvertiser.co.uk/Article/2013/10/21/How-to-host-a-quiz-night/ — the quiz is often run by the landlord or bar staff from behind the bar, with a mic",
+    "https://www.worddisk.com/wiki/Al_Murray's_Compete_for_the_Meat — the meat raffle as a British pub prize is well established, so the bag of meat on the bar reads"
+  ],
+  "notes": "Beat 3, the answer. Option a is the room's reaction: the quizmaster reads Bob's sheet (the only readable text is '300,000') while the crowd groans in the foreground, and Bob is not in frame, so the cut to him lands in beat 4. Option b is the naming: over the landlord's shoulder, his mic arm points across the pub to table nine, where Bob sits, calm, as the first heads begin to turn. No text in b. Bob appears only by reference, with no description of him.",
+  "stills": [
+    {
+      "beat": "nw3",
+      "id": "NW3-a",
+      "look": "Low angle from the crowd: the landlady reads the winning sheet while the tables groan",
+      "prompt": "Vertical 9:16 photograph, night, cheap 35mm colour film, heavy grain, slight motion blur. A British local pub on quiz night, shot from a low angle at a sticky table among the crowd. Behind the bar, a tired landlady leans into a microphone mid-word, holding up one pencilled answer sheet that reads \"300,000\". Under warm tungsten lights a clear plastic bag of raffle meat sits on the bar beside unbranded beer pumps. In the soft foreground, women from a hen do and two builders in hi-vis throw their heads back groaning, one crumpling her own sheet. Patterned carpet, fruit machine glow, rain-dark window. Candid, warm, unglamorous, affectionate. No logos, no other readable text. Thanks.",
+      "uses_bob_reference": false
+    },
+    {
+      "beat": "nw3",
+      "id": "NW3-b",
+      "look": "Over the landlord's shoulder: his mic arm points across the pub to Bob alone at table nine",
+      "prompt": "Vertical 9:16 photograph, night, cheap colour film, visible grain, warm tungsten against a cold teal window. Over the shoulder of a burly landlord behind the bar, his arm stretched out, microphone in hand, pointing across a crowded British local pub. The line of his arm leads to the far corner, where the man from the attached reference sheet sits alone at a small table, pencil set down, calm and unsurprised, lit by the coloured glow of an unbranded fruit machine; rain streaks the dark window behind him. In the midground, old regulars groan, a pint paused halfway, and the first heads begin to turn. Focus on the corner. No readable text, no logos. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

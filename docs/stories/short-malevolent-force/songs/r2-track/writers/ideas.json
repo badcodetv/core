@@ -1,0 +1,26 @@
+[
+  {
+    "name": "rust-foundry-percussion",
+    "idea": "The lead performer is struck scrap metal: sheet iron, chains, pipes hit with a hammer, played as percussion in a vast dark reverb, like an abandoned foundry. It opens on a single long echoing metal scrape, then slow clangs start in an uneven, lurching meter (sevens against fours) so the rhythm never settles. Each clang lands a little louder and closer, so the price-flicker hits come for free, and the last one is the loudest before everything stops dead. Ask for it as sound design of a place, not a genre: dark ambient industrial, metallic percussion, grainy lo-fi, no melody at all. Exclude orchestra, strings, piano, drum kit, vocals."
+  },
+  {
+    "name": "detuned-bell-piano",
+    "idea": "The lead performer is a slightly detuned electric piano whose notes ring like bells, playing a sparse, sad minor figure of four or five notes, far apart, with long wet reverb and tape wobble. Underneath, a soft wide synth pad sits like fog over open space. The feeling is loneliness and melancholy more than threat: an empty town at 3am, nobody coming. Near the end the pad drops out, one low struck chord lands, and the last bell note hangs alone into silence. Ask for it with short genre tags: melancholic dark ambient, detuned electric piano, bell tones, lo-fi, slow."
+  },
+  {
+    "name": "shortwave-static-signal",
+    "idea": "The lead performer is a radio: shortwave static, tuning whine, crackle and interference, played as the music itself, with a very faint, buried fragment of some old melody drifting in and out under the hiss. Write it as a small story in the style box: a portable radio left on in an empty shop at night, the signal getting worse as something gets nearer. On each flicker the static bursts and spikes, then drops back; the noise grows denser through the middle. At the end one violent burst of static, then a hard cut to dead air. Exclude clean melody, drums, orchestra, vocals."
+  },
+  {
+    "name": "lonely-reverb-guitar",
+    "idea": "The lead performer is one clean electric guitar with heavy wet spring reverb and slow tremolo, picking a slow, mournful minor arpeggio, like a lonely late-night guitar in a smoky room gone wrong. A low sub-bass drone sits underneath, barely there. Ask for it through feelings rather than instruments-first: loneliness, sadness, anxiety, the dread of a place that is too quiet. Halfway through, one guitar note bends sour and detunes, and grainy distortion creeps into the reverb tail. It ends on a single heavy muted chord and the reverb rings out. Exclude drums, piano, orchestra, vocals, upbeat."
+  },
+  {
+    "name": "siren-and-pulse",
+    "idea": "The lead performer is a processed siren: a slow rising and falling air-raid-style wail, filtered and distant, over a pulsating sub-bass loop that throbs like a heartbeat in a trance-like slow beat. Ask for it as a cue sheet in seconds: distant siren and low pulse from 0 s, the pulse tightens from 6 s with a hard thud on each flicker at about 6, 8 and 10 s, the siren swells closer from 12 s, a final crashing hit at 15 s, then silence. Dark industrial ambient, electronic, no acoustic instruments. Exclude strings, piano, guitar, vocals, melody."
+  },
+  {
+    "name": "inharmonic-vibraphone",
+    "idea": "The lead performer is a vibraphone and tuned bells played with soft mallets, slightly out of tune with each other so the notes beat and shimmer against one another, with long open reverb that makes a small shop sound like a vast empty hall. Ask for it in technical timbre words: dark timbre, inharmonic overtones, beating harmonics, dense spectral fullness, slow attack, no tempo. A grinding low noise rises slowly underneath the bells and thickens; on the flickers single bells are struck harder. At the end one dissonant cluster is hit together and left to decay. Exclude drums, vocals, guitar, orchestra, bright major."
+  }
+]

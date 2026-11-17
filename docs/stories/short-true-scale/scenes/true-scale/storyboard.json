@@ -1,0 +1,67 @@
+{
+ "acts": [
+  {
+   "id": "quiz",
+   "title": "Nearest Wins",
+   "beats": [
+    "nw1",
+    "nw2",
+    "nw3",
+    "nw4",
+    "nw5"
+   ]
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "quiz",
+   "title": "Tiebreaker",
+   "look": "pub night",
+   "stills": [
+    "NW7-1-a"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "quiz",
+   "title": "The guesses",
+   "look": "pub night",
+   "stills": [
+    "NW6-2b1"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "quiz",
+   "title": "The answer",
+   "look": "pub night",
+   "stills": [
+    "NW6-3a"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "quiz",
+   "title": "How'd you know?",
+   "look": "pub night",
+   "stills": [
+    "NW7-4-a"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "quiz",
+   "title": "The prize",
+   "look": "pub night",
+   "stills": [
+    "NW6-5a2"
+   ],
+   "anim": 5
+  }
+ ]
+}

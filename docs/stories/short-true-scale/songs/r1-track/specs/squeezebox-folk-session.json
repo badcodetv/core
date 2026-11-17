@@ -1,0 +1,17 @@
+{
+  "style": "instrumental English pub folk session recorded live in a small back room, close and boozy. A two-row melodeon works its left-hand bass buttons in a steady oom-pah push and pull, a frame drum (bodhran) keeps a loose tipper beat, a battered steel-string acoustic strums open chords; players slightly behind the beat, glasses clink, chairs creak, a low warm room murmur with no words. Rhythmic and chordal only, no tune on top, mids kept clear for speech. Mid-way the whole room drops out to a hush: one held melodeon chord breathing slowly over rain on a window. Final seconds: the squeezebox kicks back in with a cheeky quick run of chords and the piece ends on a single brass bell clang",
+  "exclude": "vocals, singing, sing-along, crowd chant, spoken words, fiddle lead, tin whistle lead, celtic epic, irish pub chorus, uilleann pipes, sad piano, cinematic strings",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 40,
+  "maxMode": false,
+  "title": "true scale r1-squeezebox-folk-session",
+  "mode": "custom",
+  "workspace": "short-true-scale"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/BM9-a.jpg",
+ "made": "2026-11-17T11:36:52.350Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph shot on 35 mm colour-negative film at night, real grain and soft halation, not CGI. Medium close-up at eye height across the back seat of a large black luxury saloon: a very fat English politician in his mid-fifties slumps deep into cream-stitched black leather, his head in the upper half of the frame. He has an enormous unbrushed shock of straw-blond hair, thick and messy, falling in a heavy fringe over his eyebrows and sticking out over his ears. His face is his own: round and pink, a small upturned button nose, little twinkling pale grey eyes half-buried in plump cheeks, a wide rubbery mouth, a soft double chin spilling over his collar, ruddy flushed complexion. He holds a phone to his right ear with his right hand, a gold signet ring on the little finger, and he is laughing mid-word, mouth open showing his teeth, delighted with himself. Expensive navy suit straining at the belly and badly creased, white shirt collar open, a striped old-school tie pulled loose. On the centre armrest beside him sits a small oval silver tray of canapés: tiny blinis with smoked salmon and cream. Light: a warm amber overhead reading lamp pours down onto his hair and forehead; the phone screen throws a faint cool glow up his cheek; cold blue emergency strobes flash through the rain-streaked side window behind him, scattering blue streaks across the wet glass and catching the edge of his jowls, with soft sodium-orange street lamps blurred far beyond. Natural skin with pores and stubble, natural hands with five fingers. No readable text, no logos, no number plates. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "42ba3d49-0f00-4398-ab1d-6f77979b5b1a"
+}

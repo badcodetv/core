@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/CA2-a.jpg",
+ "made": "2026-11-14T17:14:31.048Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Make a new vertical 9:16 night photograph with the composition, street, taxi and young man of the first image: the masked figure on the pavement mid-kick, booting the young man head-first through the open back door of the taxi. The masked figure is now the lab scientist from the second image: the same white lab coat with pens in the breast pocket and the black roll-neck covering the whole neck, his clear safety goggles pushed up onto his forehead so the front of the mask is fully visible. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Use the third image for the mask. Same light, colours and film grain as the first image. No text, lettering, logos or brand names anywhere in the image, except the glowing taxi roof sign as in the first image. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/CA1-a-fix-c.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/CA1-a-fix-c.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ2-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/cf3ce2c2-e0bc-4329-bdd3-73d0f6db269b/scratchpad/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "7f1d52e4-fd50-4688-a7fd-d546e2148837"
+}

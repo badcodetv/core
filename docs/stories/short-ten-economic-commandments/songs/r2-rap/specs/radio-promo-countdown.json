@@ -1,0 +1,17 @@
+{
+  "style": "mid-90s New York hip-hop, a 9pm FM countdown promo built into a rap song, 90 BPM, sparse and grimy. A DJ scratches a loud booming announcer voice shouting each number, one cut per number, landing on beat one, stuttered and chopped. Heavy thumping kick, cracking dry snare on two and four, faint shaker, a single ominous low piano chord struck once a bar and left to ring, round sub bass, wide silences between hits. Solo male rapper, heavyset Brooklyn voice: deep, thick, raspy, nasal edge, lazy confident drawl, calm menace with a grin, talks the rules like a big brother laying it out at the table, every syllable clear, words dragged late against the snare, vocal tight and in your ear, dry",
+  "exclude": "trap, 808 rolls, autotune, sung hook, melodic rap, female vocals, choir, strings, reverb, EDM, lo-fi chill, saxophone, high-pitched voice, double-time, pop polish, live band",
+  "lyrics": "[Intro: dry ad-lib, close to the mic, needle hiss]\nUh. Money printer manual. Take notes.\n\n[Scratch cut: announcer voice shouts \"one\"]\n[Rap: deep, lazy, menacing grin]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch cut: announcer voice shouts \"two\"]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch cut: announcer voice shouts \"three\"]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Drums cut, piano chord rings alone, spoken low]\nAnd the fix, from the future? No hand on the printer.\n\n[Outro: one final scratch, hard stop]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    58
+  ],
+  "styleInfluence": 72,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": false,
+  "title": "tec-r2-radio-promo-countdown",
+  "mode": "custom",
+  "workspace": "short-ten-economic-commandments"
+}

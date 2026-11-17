@@ -1,0 +1,13 @@
+{
+  "name": "hot-club-string-hustle",
+  "style": "instrumental 1930s Parisian string swing, acoustic hot-club quartet with no piano and no drums, two archtop rhythm guitars pumping a tight chopped offbeat, upright bass walking in fours, a sly swinging solo violin carries the tune like a smooth talker's sales pitch, brisk medium-up tempo, minor key with a wink. 0-3.5s: charming violin hook over the pumping guitars. 3.5-7s: violin hesitates, rocking back and forth between two neighbouring notes, bass holds. 7-10.5s: violin snaps one hard pizzicato pluck then a quick glissando falling down the neck, guitars cut off dead on the same beat. 10.5-15s: near silence, one soft bowed double-bass harmonic, a single high violin harmonic sustained thin and glassy, faint paper rustle of banknotes being counted. Close-miked, dry small room, warm 78rpm-era surface crackle, short cue that ends on the held harmonic",
+  "exclude": "vocals, voice, singing, spoken word, speech, narration, choir, humming, scat, piano, drums, cymbals, ragtime, accordion, clarinet, brass, synth, electric guitar, reverb wash, fade-in",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false
+}

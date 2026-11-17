@@ -1,0 +1,17 @@
+{
+  "style": "cinematic sound-design miniature, rainy city street at 2am, wet tyres hissing, far-off sirens, a lone tenor saxophone noodling from a bar doorway, a young British lad crooning off-key and slurred, sentimental and melancholy, half-singing to himself, his voice then multiplying into a whispered choir of himself, layered, wide stereo, drifting out of sync, sudden hush, one small boy speaking plainly with no melody, collapse to a single low piano note, ending on rain, a cab door and one soft low horn",
+  "exclude": "drums, beat, bass drop, EDM, trap, autotune, polished pop vocal, anthem, big chorus, female vocal, upbeat",
+  "lyrics": "[Intro]\n[rain on wet tarmac, tyres hiss past, a lonely sax from a bar]\n\n[Verse]\n[drunk British lad, crooning off-key, sentimental, to himself]\nThere's infinite versions of me. One of them gets home fine.\n\n[Choir]\n[his voice splits into many whispering copies of himself, spread left and right, slightly out of time, sax smearing underneath]\n\n[Break]\n[everything drops away, one small boy, spoken flatly, no melody]\nThere's only one.\n\n[Outro]\n[choir and sax fold into one low piano note, then rain, a taxi door thuds shut, one gentle low car horn]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    60
+  ],
+  "styleInfluence": 55,
+  "vocalGender": "male",
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "infinite yous r1-choir-of-yous-to-one",
+  "mode": "custom",
+  "workspace": "short-infinite-yous"
+}

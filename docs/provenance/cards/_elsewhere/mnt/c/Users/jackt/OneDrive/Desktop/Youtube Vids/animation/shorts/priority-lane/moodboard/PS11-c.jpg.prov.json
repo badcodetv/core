@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS11-c.jpg",
+ "made": "2026-11-17T12:24:52.640Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16, photo-real still that looks like a real 35 mm colour-negative film photo taken at night in the rain in an ordinary London street, fine grain, faint halation around lights. Seen from the high driver's seat of a UK ambulance travelling straight in its own left lane, looking directly out through the right-hand driver's door window at 90 degrees to the road. The cab frames the shot tightly: grey door trim along the bottom, the window's black seal and a grab handle above, and the big wing mirror at the left forward edge, its glass catching blue light. Faint reflections of the dark cab and a dashboard glow sit on the inside of the wet window. Across the oncoming lane a bus shelter on the far pavement stands parallel to the road, square-on, its illuminated ad panel large in the window. The poster is a glossy campaign photo of the man from the reference image shaking hands with a smiling nurse in a navy uniform, his head turned to look straight out at the viewer with a broad smile. Keep his face identical to the reference image, the same eyes, nose, mouth, jaw and hair, faithfully printed; he must read as the same man as in the reference. Natural hands in the handshake, correct fingers. Below them, SAVE OUR NHS in huge heavy capitals, spelled exactly, nothing else written. Light: the panel's white backlight, a sodium-orange lamp post at the shelter's end throwing a cone through the rain, and our blue roof strobe washing the wet tarmac and shelter roof. Foreground road streaked with motion, poster pin sharp. No readable text other than the slogan. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "78d52ec1-7c9b-495b-b210-75edc1a13225"
+}

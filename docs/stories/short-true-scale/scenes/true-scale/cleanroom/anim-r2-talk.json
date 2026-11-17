@@ -1,0 +1,42 @@
+{
+  "research": [
+    "https://www.atlascloud.ai/blog/tips/gemini-omni-1.2-flash-multi-speaker-dialogue — anchor the speaker by position and clothing, repeat the same anchor, state that only the named person speaks and the others stay silent and react; keep mouths visible in a continuous shot; name the room tone and keep it under the voice; 'no subtitles/music' is a request, not a guarantee",
+    "https://magichour.ai/blog/how-to-prompt-for-speaking-in-veo-3 — formula: shot/camera, speaker, action, exact line, delivery, ambience; for weak sync face the speaker toward camera, reduce motion, keep the line short; one line per shot when attribution fails",
+    "https://eastondev.com/blog/en/posts/ai/20251207-veo3-audio-generation-guide/ — single-speaker lip sync succeeds far more often than multi-speaker (~80% vs <40% reported); split two-speaker exchanges into separate shots where possible",
+    "https://invideo.io/blog/gemini-omni-flash-review/ — Omni lip sync holds best in the first ~6-7 s with one speaker; later seconds can drift, so let the line fill most of the clip but not spill to the end",
+    "https://akool.com/blog-posts/google-veo-3-1-video-prompt-guide — the 'says:' colon is the speech trigger; quotes can push words into on-screen text (our brief bans quotes, so the colon carries the trigger alone)"
+  ],
+  "notes": "Speaker is pinned by position + clothing + held object and repeated once ('the woman in the burgundy cardigan'), then an explicit 'nobody else speaks'. Line placed after the action, then delivery (unhurried, clear), then a silence clause for the end so the last second or two is reaction, not drift. No quotation marks, no sign-off. Clip 4 is the only two-speaker clip: the brief asks for it, so each speaker is anchored by clothing and side of frame and the handoff is ordered ('then'); if attribution fails, research says split it into two takes (4a hi-vis line, 4b Bob line) from the same still. Sheets' numbers are named as fixed so the model leaves them alone. Unverified: whether Omni 1.2 Flash in Flow honours 'no music' and 'no subtitles'; check each take.",
+  "clips": [
+    {
+      "key": "01a",
+      "still": "NW7-1-a",
+      "words": "Tiebreaker! Nearest wins the meat raffle.",
+      "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan standing behind the bar, holds the microphone to her mouth and gives the blank sheet in her raised hand a little shake. Facing the room, mouth clearly lit, she says: Tiebreaker! Nearest wins the meat raffle. She speaks loud, cheerful and unhurried. Nobody else speaks. The young man in hi-vis grins; the old man in the flat cap leans in. Only pub murmur under her voice, no music, no subtitles."
+    },
+    {
+      "key": "01b",
+      "still": "NW7-1-a",
+      "words": "How many homes in England have been empty six months or more?",
+      "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan behind the bar, keeps the blank sheet raised and speaks into the microphone, face to the room, mouth clearly visible. She says: How many homes in England have been empty six months or more? A steady, deliberate quiz voice, every word clear, filling most of the clip. Nobody else speaks. The woman in the navy hijab frowns and reaches for her pen. Low pub murmur, no music, no subtitles."
+    },
+    {
+      "key": "03a",
+      "still": "NW6-3a",
+      "words": "Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes.",
+      "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan, holds the 303,185 sheet steady; the number never changes. Into the microphone, mouth clearly lit, she says: Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes. Calm, unhurried, a dry little pause after the first sentence. Nobody else speaks. The old man in the flat cap rubs his brow. Pub murmur only, no music, no subtitles."
+    },
+    {
+      "key": "03b",
+      "still": "NW6-3a",
+      "words": "Nearest... table nine. Bob.",
+      "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. The quizmaster, the woman in glasses and a burgundy cardigan, lowers the 303,185 sheet a touch, its number unchanged, and looks across the room. Into the microphone, mouth clearly lit, she says: Nearest... table nine. Bob. A slow, drawn-out pause before table nine, then the name said plainly, surprised. Nobody else speaks. The young man in hi-vis turns his head toward her. Soft pub murmur, no music, no subtitles."
+    },
+    {
+      "key": "04",
+      "still": "NW7-4-a",
+      "words": "How'd you know that? / I sleep opposite one.",
+      "prompt": "Locked-off camera, one continuous shot in a warm, grainy pub on cheap colour film, teal rain on the windows. First the young man in the hi-vis vest, seated on the right, turns to the standing man and says: How'd you know that? Then the standing man in the beanie with the rucksack and bedroll looks down at him and answers quietly: I sleep opposite one. Unhurried, a beat between lines, both mouths visible. Only those two speak; the quizmaster in the burgundy cardigan stays silent. The 300,000 sheet on the table never changes. Pub murmur, no music, no subtitles."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/09.jpg",
+ "made": "2026-11-16T09:59:56.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 amateur night snapshot on cheap colour film, from the pavement looking in through the open glass door of a British corner shop. The shop is nearly dark now: one flickering tube at the back and the glow of a drinks fridge. On the rubber doormat a wire spinner rack has turned to face the door. A handwritten paper sign taped to the glass reads \"BREAD £5\", the £1 beneath it scribbled out. The inner door has swung half shut on its own. Deep murky teal-black, the fridge light blooming, coarse grain, soft focus, underexposed, slightly skewed. Nobody there. No brands, nothing staged or digital. Thanks.",
+ "source_id": "b1ad23ac-b832-4de9-8c4c-6d0256c8db8e"
+}

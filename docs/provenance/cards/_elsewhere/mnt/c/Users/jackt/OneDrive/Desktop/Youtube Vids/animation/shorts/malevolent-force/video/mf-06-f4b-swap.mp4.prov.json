@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-06-f4b-swap.mp4",
+ "made": "2026-11-16T11:58:52+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-06-f4b-FL4-b.mp4",
+ "why": "Jack 2026-11-16: only the prices change at the flash; the AFTER cards (edit of the same still, colour-matched) overlaid from the brightest flash frame",
+ "inputs": {
+  "patch": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL4-b2-patch.png"
+ },
+ "settings": {
+  "swap_at": "2.792"
+ }
+}

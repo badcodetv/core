@@ -32,5 +32,16 @@ the excuse; there is one of you, and one mum waiting up. Stake: his life.
 | --- | --- | --- |
 | Words | `scenes/infinite-yous/scene.json` beats | Jack's lines, 2026-11-13 |
 | Look | [`look.md`](./look.md) | EXPLORING: Jack's night-taxi photo |
-| Sound | [`sound.md`](./sound.md) | EMPTY |
-| Media | Jack: Desktop `Youtube Vids\animation\shorts\infinite-yous` · Drive `Shorts/Infinite Yous` | stills round 1 on the mood board https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ, awaiting Jack's picks |
+| Sound | [`sound.md`](./sound.md) | EXPLORING: Suno round `songs/r1-track` gated, NOT RUN (Suno sign-in) |
+| Media | Jack: Desktop `Youtube Vids\animation\shorts\infinite-yous` · Drive `Shorts/Infinite Yous` | stills round 1 PICKED 2026-11-14 (LI1-b, SP1-a, SQ1-a to redo, CA1-a-fix-c, LO1-b; notes in `scenes/infinite-yous/picks.md`) |
+
+## Resume here (2026-11-15)
+
+1. **Track LOCKED:** Suno 92821b14 (instrumental, taxi-meter synth), in `sound.md`, recorded to Desktop `audio\`.
+2. **Stills picked:** LI1-b, SP1-a, SQ2-a, CA2-a, LO1-b. **Animation picked** (storyboard https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3): 1b, 2a (edit), 3b (edit), 4a, 5a.
+3. **Clips** (Desktop `video\`): `iy-01-LI1-b.mp4` ✅. `iy-05-LO1-b.mp4` 🟡: a whole car crosses the wall (0-4 s), then the wall is clear; use the clear part or re-roll for light only. **Clip 4 = the kick ✅ PICKED by Jack:** `iy-04-ka-ramp-r1.mov` (dancer staging, ramped), at 4 s on Premiere seq `iy clip 4 kick r1`; picks.md 2026-11-15.
+4. ~~Open question~~ ruled 2026-11-15, voiced: are the lines heard at all ("One of them gets home fine" / "There's only one"): a voice on top, words on screen, or neither? The track has no lyrics.
+5. **Timeline page round 4** (2026-11-15): https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC, rough cut 4: lad lip-synced on camera (Leeds), the squeeze remade from the split frame's white lines (WL1r-b / WL2-b / WL3-a), figure line English and fast (stand-in h). Open: the figure's voice (g/h/i on https://claude.ai/artifact/4KMUnm467NUoLoGYffSWbs), lip-sync close enough (else LatentSync), then Premiere.
+5b. **SAVED 2026-11-15** (Jack: "great save infinite yous and upload it to drive"): rough cut 4 frozen (`scenes/infinite-yous/final.json`) and its media pushed to Drive `Shorts/Infinite Yous` (`scripts/drive/agreed/short-infinite-yous.list`, 30 files). Still open: figure voice pick (h is a stand-in), Premiere build + export.
+6. **Then (left from before):** build the split (frame 1's clip in five strips) and the squeeze (SQ2-a) in the edit, put the logo on the wall in the light, and cut it all to the track on a timeline page (`scene-timeline`), then Premiere.
+- Browser: Suno and Flow both run in the Flow browser (channel 2, port 9223), signed in. Never run Suno and Flow at the same time (download clash).

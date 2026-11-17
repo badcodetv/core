@@ -1,0 +1,9 @@
+# cartoon-studio-mickey-mouse-cue: what shaped it
+
+- **Stalling's timbre-for-action habit.** Andrés Lombana's essay on Stalling describes bassoons bouncing with a character's steps, plucked cellos for tiptoeing, sudden brass and percussion bursts for a hit, and abrupt starts and stops between cues. So: bassoon for the dealer's sly walk, plucked cellos plus wood block ticks for the old man's dithering, and a brass-and-cymbal stinger for the switch, written as a gag punchline. https://andreslombana.net/blog/?p=354
+- **Mickey-mousing: music mirrors the action beat for beat.** That is why the style box is written as a run of timed events (0, 7, 10.5 s) matching the four cards, not as a mood. https://en.wikipedia.org/wiki/Mickey_Mousing , https://en.wikipedia.org/wiki/Carl_W._Stalling
+- **Instrumental hygiene.** howtopromptsuno.com says the Instrumental switch alone does not guarantee no ghost vocals and to put "instrumental" in the style box too; I lead with it and end on "No vocals", and the exclude box bans every voice form (speech, narration, humming, scat), because round 1 spoke the line. Lyrics left "" as the brief says. https://howtopromptsuno.com/style-lyrics/how-do-i-make-instrumental
+- **Front-load the era.** Community guides say Suno weights the start of the style box most; era and genre go first. https://learnprompting.org/blog/guide-suno
+- **Nothing from The Sting.** Ragtime, stride piano, Joplin and The Entertainer are in the exclude box; the lead voices are bassoon, xylophone and brass, with no piano at all.
+- **The last card stays sparse** (timpani roll fading, one cello note, curtain swish) so the line can go over it outside Suno.
+- Settings: v6, 15 s fixed by the story. Variety normal and weirdness 45 to leave some drift for cartoon oddness; styleInfluence 70 so the timed events are followed. Unverified: whether v6 honours second-level timestamps inside the style box; if not, the order of events should still carry.

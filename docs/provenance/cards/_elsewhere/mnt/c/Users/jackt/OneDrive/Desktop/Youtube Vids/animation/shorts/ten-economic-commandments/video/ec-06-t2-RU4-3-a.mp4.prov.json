@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-06-t2-RU4-3-a.mp4",
+ "made": "2026-11-16T18:17:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A static 8-second take, no cuts. The masked figure leans back on the bench and rocks his head to a beat, then tilts the microphone slowly toward the older woman on his left; she folds her arms and shakes her head, unimpressed, mouth closed. The young man behind shrugs. Leaves shift in the sunlight, shadows of the chain-link fence move slightly. His mask turns only slightly and never leaves the lens. Sound: birds, a distant bus. Nobody says a word; no music.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-3-a.jpg",
+ "why": "anim r1 clean room, part: rule three",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "06-t2",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T18:14:01.223Z"
+ }
+}

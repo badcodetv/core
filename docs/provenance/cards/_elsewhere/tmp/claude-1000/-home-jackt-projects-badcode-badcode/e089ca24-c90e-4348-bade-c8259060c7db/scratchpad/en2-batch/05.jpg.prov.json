@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/en2-batch/05.jpg",
+ "made": "2026-11-15T14:28:53.410Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 black-and-white 1930s tabloid flash photograph, harsh flashbulb, hard shadow thrown on the wall. Tight on a working man's rough hand pressing one fingertip onto an envelope on a counter while a second envelope lies beside it. The only colour is the red stamp ink, legible: \"APPROVED BY THE CONSERVATIVE PARTY\" and \"APPROVED BY THE LABOUR PARTY\". At frame edge, a dealer's ringed hand taps the counter impatiently. High contrast, deep blacks, grain and dust. Thanks.",
+ "source_id": "d0e7c5ed-b43f-4f8d-bd00-f17d567cb97e"
+}

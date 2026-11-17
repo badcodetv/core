@@ -1,0 +1,13 @@
+{
+  "name": "radio-promo-countdown",
+  "style": "1996 New York FM hip-hop radio countdown jingle grown into a full rap track, 90 BPM east coast boom bap, stripped and dry. Turntable cuts scratch a booming hype-man voice shouting each number on the downbeat, chopped short, crackle on the edges. Raw dusty kick, hard cracking snare, closed hats barely there, one dark low piano stab per bar, deep sub bass under it, lots of empty space. Male rapper: deep heavy chest voice, husky rasp, big-framed Brooklyn drawl, unhurried and menacing with a smile in it, conversational like schooling a younger hustler across a kitchen table, lands slightly behind the beat, clear diction, mic close and dry, no reverb, no harmonies, no hook singing",
+  "exclude": "trap hi-hats, 808 rolls, autotune, sung chorus, melodic rap, female vocals, choir, strings, reverb wash, EDM, lo-fi chill, jazz saxophone, high-pitched voice, fast double-time, modern pop sheen",
+  "lyrics": "[Intro: dry close ad-lib, record crackle]\nUh. Money printer manual. Take notes.\n\n[Turntable scratch: hype-man voice cuts in the number one]\n[Verse: deep, relaxed, behind the beat]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Turntable scratch: hype-man voice cuts in the number two]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Turntable scratch: hype-man voice cuts in the number three]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Beat drops out, spoken, slight smile]\nAnd the fix, from the future? No hand on the printer.\n\n[End: one last scratch, cut to silence]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 58,
+  "styleInfluence": 72,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": false
+}

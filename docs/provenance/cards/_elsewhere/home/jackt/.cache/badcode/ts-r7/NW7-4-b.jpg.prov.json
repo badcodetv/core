@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r7/NW7-4-b.jpg",
+ "made": "2026-11-16T15:11:18.909Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A new vertical 9:16 candid photo in the same pub as the first attached picture, a moment later. Low angle from a small corner table: in sharp focus in the foreground, a quiz answer sheet lying on the table facing the camera, the right way up, with \"300,000\" written large in pencil. Just behind it, the man from the second attached picture has just stood up, a rucksack and rolled sleeping mat on his back, calm and a little unsure. Further back, softer, the quizmaster and the regulars from the first attached picture have turned in their seats toward him. Cheap colour film, heavy grain, warm tungsten light, cold teal rain on the window. No other readable writing, no brands. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r7/quizmaster-ref.jpg",
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "da20fd80-6e36-473d-8daf-6ea231901d73"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r4/batch/00.jpg",
+ "made": "2026-11-16T11:49:40.321Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical candid photo, close shot of the end of a scuffed shop counter in a small British corner shop at night. A single loaf of plain white sliced bread in a clear plastic bag with a twisted end lies on the worn laminate counter top and fills the middle of the frame, close enough that it takes up nearly half the picture. Just to its right, with a clear gap of bare counter between them, lies one small chocolate bar in a plain purple wrapper with no logo, no words and no print on it at all. Behind them, the left edge of the frame is the shop's front window, black outside, a few raindrops on the glass, nothing visible beyond it. Two plain white price cards are taped flat and square onto the vertical front face of the counter, facing the camera straight on, not bent, not overlapping anything: a larger card directly under the loaf reading \"£5\", and a wide landscape card directly under the chocolate bar reading \"10p\", both written by hand in thick black marker. Lit only by a cold teal fluorescent tube overhead. Shot on cheap colour negative film at night, heavy grain, slightly soft focus, muted teal cast, deep shadows. No people, no hands, no shadows of people. Thanks.",
+ "source_id": "2eb2767d-80e2-46e0-8580-69b6783dda62"
+}

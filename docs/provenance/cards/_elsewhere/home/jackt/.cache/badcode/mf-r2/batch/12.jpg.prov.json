@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/12.jpg",
+ "made": "2026-11-16T09:59:56.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical snapshot from across a wet British terraced street at 3am, cheap 35mm colour film, coarse grain, underexposed, cold teal shadows and green fluorescent glow. A tiny corner shop is the only lit window on the row; every house around it is dark. A hand-written card in the shop window reads \"BREAD £50\". The shop door stands open onto the empty pavement, warm-white light spilling across a puddle. No people, no cars moving, one sodium streetlamp out. The window display looks lived-in and ordinary, but the open door feels like an invitation. Slight camera shake, horizon a little tilted. Thanks.",
+ "source_id": "fc3ba82c-4d6a-4b83-948a-5156d6fa7013"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS11-b.jpg",
+ "made": "2026-11-17T12:24:22.978Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo-real night photograph shot on 35 mm colour-negative film, grainy, slight halation, heavy London rain. Camera at the raised driver's position of a UK ambulance moving straight down its own lane, looking sideways at 90 degrees out of the right-hand door window, slightly low so the poster rises in the glass. Inside the frame edges: the window's rubber seal, grey door trim with a grab handle, and the large wing mirror filling the left forward edge. The window is streaked with diagonal rain and a few fat drops on the inside of focus. Across the oncoming lane, on the far pavement, a bus shelter runs parallel to the road, square-on, its lit ad panel taking up most of the window's height. On it, a glossy hospital-visit campaign photo: the man from the reference image in a white hard hat and an orange hi-vis vest over his suit, grinning at the camera with a thumbs up, a blurred hospital corridor behind him. Reproduce his face exactly as in the reference image, the same eyes, nose, mouth, jaw and the hair showing under the hard hat, as a printed photo; same man, no substitute face. Under the photo, SAVE OUR NHS in enormous heavy capitals, spelled exactly, no other words. Our blue roof strobe is at peak, flooding the wet road, the shelter's glass and the edge of the poster with cold blue; the panel's white backlight and a sodium street lamp behind the shelter give warm orange spill on the puddles. Near road blurred with motion, poster sharp. Natural hands, five fingers. No plates, signs or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6a553a6b-de87-4b83-b2bf-e36b5ad999c2"
+}

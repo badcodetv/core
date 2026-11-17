@@ -1,51 +1,100 @@
 {
- "story": "short-infinite-yous",
- "scene": "infinite-yous",
- "prefix": "iy",
- "title": "Infinite Yous",
- "heading": "BadCode Shorts <span class=\"tri\">▲</span> Infinite Yous",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous",
- "beats": [
-  {
-   "key": "line",
-   "at": "0:00",
-   "name": "A. The line",
-   "blurb": "A drunk lad at night, car keys in hand: \"One version of me gets home fine.\""
+  "story": "short-infinite-yous",
+  "scene": "infinite-yous",
+  "prefix": "iy",
+  "title": "Infinite Yous",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Infinite Yous",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous",
+  "beats": [
+    {
+      "key": "line",
+      "at": "0:00",
+      "name": "A. The line",
+      "blurb": "A drunk lad at night, car keys in hand: \"One version of me gets home fine.\""
+    },
+    {
+      "key": "split",
+      "at": "0:03",
+      "name": "B. The split",
+      "blurb": "Multiple versions of him on the same screen, splitting off, separated by lines."
+    },
+    {
+      "key": "squeeze",
+      "at": "0:06",
+      "name": "C. Only one",
+      "blurb": "The BadCode balaclava figure in a science lab coat grabs the lines separating the versions and squeezes them into one, the original: \"There's only one.\""
+    },
+    {
+      "key": "cab",
+      "at": "0:10",
+      "name": "D. Into the cab",
+      "blurb": "He kicks the lad into a cab."
+    },
+    {
+      "key": "logo",
+      "at": "0:13",
+      "name": "E. Headlights",
+      "blurb": "The BadCode logo and name; taxi headlights sweep across and light it; a cinematic car horn, not annoying."
+    }
+  ],
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
   },
-  {
-   "key": "split",
-   "at": "0:03",
-   "name": "B. The split",
-   "blurb": "Multiple versions of him on the same screen, splitting off, separated by lines."
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ",
+    "storyboard": "https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3",
+    "timeline": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC"
   },
-  {
-   "key": "squeeze",
-   "at": "0:06",
-   "name": "C. Only one",
-   "blurb": "The BadCode balaclava figure in a science lab coat grabs the lines separating the versions and squeezes them into one, the original: \"There's only one.\""
+  "flow_project": "28e36ecd-0a59-45db-aa58-a4a0e2c31b29",
+  "moodboard_intro": "Round 2 (Jack's notes): C. Only one redone with SP1-a's five strips and the figure as a proper scientist, no skin; D. Into the cab with that scientist. Pick one of each.",
+  "picked": [
+    [
+      "LI1-b",
+      "A. The line"
+    ],
+    [
+      "SP1-a",
+      "B. The split"
+    ],
+    [
+      "SQ2-a",
+      "C. Only one (five strips, the scientist)"
+    ],
+    [
+      "CA2-a",
+      "D. Into the cab (the scientist, goggles up)"
+    ],
+    [
+      "LO1-b",
+      "E. Headlights (logo on the wall in the edit)"
+    ]
+  ],
+  "board_round": 2,
+  "track": {
+    "suno": "92821b14-f464-4826-9bbc-37cace91dbea",
+    "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/infinite-yous-r2-instrumental-taxi-meter-synth-p-92821b14.wav",
+    "dur": 15
   },
-  {
-   "key": "cab",
-   "at": "0:10",
-   "name": "D. Into the cab",
-   "blurb": "He kicks the lad into a cab."
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/preview.mp4",
+    "script": "scripts/infinite-yous/cut.py"
   },
-  {
-   "key": "logo",
-   "at": "0:13",
-   "name": "E. Headlights",
-   "blurb": "The BadCode logo and name; taxi headlights sweep across and light it; a cinematic car horn, not annoying."
+  "premiere": {
+    "current": "r4",
+    "r4": {
+      "sequence": "short-infinite-yous-1-infinite-yous-r4",
+      "guid": "6056bf19-9e30-4a95-8c2e-6d10cb10015a",
+      "bin": "short-infinite-yous-1-infinite-yous-r4",
+      "built": "2026-11-16",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/infinite yous.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/premiere-src/edl-premiere.json",
+      "what": "rough cut 4 as frozen: V1 = the r4 picture (split, squeeze and logo are built in ffmpeg) cut at its 5 shots; A1 lad dub, A2 figure (stand-in h), A3 music ducked under both lines",
+      "how": "premiere-plan.py edl-premiere.json plan-r4.json --tag r4 (Premiere 27.0.0)",
+      "note": "720x1280 like the r4 picture; the export to 1080x1920 is still owed"
+    }
   }
- ],
- "video": {
-  "model": "Omni 1.2 Flash",
-  "aspect": "9:16",
-  "mode": "Frames",
-  "duration": 8
- },
- "boards": {
-  "moodboard": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ"
- },
- "flow_project": "28e36ecd-0a59-45db-aa58-a4a0e2c31b29",
- "moodboard_intro": "Round 1, clean room: five sealed writers researched the web, each wrote three stagings of one beat in the look of your night-taxi photo (described in words, not attached). Pick This on one still per beat, or note what to change. Split and squeeze: the writers say the panels and the line-grab are best built in the edit from single stills of the lad, so read these as the look to aim for. The end card's logo is laid in later, lit by the headlights."
 }

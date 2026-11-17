@@ -1,0 +1,70 @@
+{
+  "story": "short-true-scale",
+  "scene": "true-scale",
+  "prefix": "ts",
+  "title": "True Scale",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> True Scale",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale",
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
+  },
+  "beats": [
+    {
+      "key": "nw1",
+      "at": "0:00",
+      "name": "1. Tiebreaker",
+      "blurb": "Pub quiz night. Mic feedback. The quizmaster: 'Tiebreaker! Nearest wins the meat raffle. How many homes in England have been empty six months or more?'"
+    },
+    {
+      "key": "nw2",
+      "at": "0:04",
+      "name": "2. The guesses",
+      "blurb": "Quick cuts: confident guesses scribbled and shouted ('Ten grand.' 'Fifty thousand, tops.'). Bob, a team of one in the corner, writes without hesitating."
+    },
+    {
+      "key": "nw3",
+      "at": "0:09",
+      "name": "3. The answer",
+      "blurb": "'Three hundred and three thousand. Not counting two hundred and sixty-seven thousand second homes.' Groans. 'Nearest... table nine. Bob.'"
+    },
+    {
+      "key": "nw4",
+      "at": "0:14",
+      "name": "4. How'd you know?",
+      "blurb": "The whole pub turns to look at Bob for the first time; rucksack and sleeping mat already on. 'How'd you know that?' Bob: Jack's line."
+    },
+    {
+      "key": "nw5",
+      "at": "0:19",
+      "name": "5. The prize",
+      "blurb": "Bob takes the meat raffle, has nowhere to cook it, hands it on, walks out into the rain. Quizmaster: '...Right. Picture round.'"
+    }
+  ],
+  "flow_project": "b77f9021-3e67-44a8-8179-7924a1d24ad9",
+  "moodboard_intro": "Round 1 (clean room, Jack 2026-11-16: \"do the uk stats, in intresting varied ways as stills\"): four sealed writers, one per beat, fresh web research, nothing from the repo, three different ideas each. A one household (model figures on an endless table; a B&B room from the ceiling; a family's belongings in one car-park bay) · B 134,210 (a car park of suitcases; a B&B key board that never ends; a pin map of England) · C 303,185 empty homes (an aerial of dark terraces; a lettings office wall of keys; a model on a community-hall table) · D 267,894 second homes (a diorama where the fourth block lights up; a seaside town lit for nobody; a wall of key safes). Keys turned up in three beats: it could be a thread through the film. Numbers: official, checked (numbers.md). Vote This / Maybe / No per still and note any beat.",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF",
+    "timeline": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/preview.mp4",
+    "script": "scripts/shorts/true_scale_cut.py"
+  },
+  "premiere": {
+    "current": "r5",
+    "r5": {
+      "sequence": "short-true-scale-1-nearest-wins-r5",
+      "guid": "90e4abee-4d2b-4eed-b974-67b43d4f0871",
+      "bin": "short-true-scale-1-nearest-wins-r5",
+      "built": "2026-11-16",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/true-scale.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/cut/r5/premiere-src/edl-premiere.json",
+      "what": "rough cut 5 frozen: V1 the 9 rendered shots (blurs, punch-ins, stats, fruit-machine logo baked), A1 the 11 dubbed phrases, A2 music rain1",
+      "how": "premiere-plan.py edl-premiere.json plan-r5.json --tag r5 (Premiere 27.0.0)"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/08.jpg",
+ "made": "2026-11-16T09:59:56.204Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 candid snapshot on grainy 35mm colour film, at night, across the counter of a small British corner shop. Nobody behind it: an empty stool, a cash register drawer left open and empty, a scratchcard stand with invented unreadable cards, a radio. On the counter a small open box of unbranded purple chocolate bars, a sticker on the box reading \"£5\". One white loaf waits on the counter as if someone set it down and left. Above, the single working tube buzzes cold green-blue; the doorway to the back room behind the counter is pitch black. Underexposed, muddy shadows, halation, grain, soft focus. No people, no logos, not glossy. Thanks.",
+ "source_id": "4b7bc40e-7752-4041-98ab-4448a306814e"
+}

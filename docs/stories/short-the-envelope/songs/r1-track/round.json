@@ -1,0 +1,54 @@
+[
+  {
+    "name": "radio-serial-organ-stings",
+    "style": "1930s wireless crime serial episode, sound play not a song, no beat, no tune. Cinema theatre organ fires one held stab chord at each scene change, tibia and vox humana stops with heavy tremulant, studio organist cueing danger. Live studio foley in the gaps: paper envelopes riffled, brass counter bell struck once, wooden crate dropped hard on boards, curtain rings rasping along a rail. Older English gentleman announcer, clipped plummy received pronunciation, dry and certain, unhurried, close to the ribbon microphone, speaking plainly. A final low pedal chord swells and sustains under the last words. Narrow mono AM band, valve hiss, shellac surface crackle.",
+    "exclude": "singing, melody, sung vocals, ragtime, rap, piano, drums, beat, chorus, jazz band, swing, orchestra, synth",
+    "lyrics": "[Intro: organ sting]\n[envelopes shuffled]\n[counter bell]\n\n[organ sting]\n[crate thuds down]\n\n[organ sting]\n[curtain swish]\n\n[Spoken word]\n[Man]\nThey're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\n\n[low organ chord holds]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 75,
+    "vocalGender": "male",
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "stride-hustle-cabaret-hostess",
+    "style": "1930s Harlem stride piano, solo, speakeasy, original composition, fast hustling two-handed piano, abrupt stop, low smoky female spoken word, no singing",
+    "exclude": "Scott Joplin, ragtime, The Entertainer, Marvin Hamlisch, orchestra, strings, drums, choir, sung vocals, singing",
+    "lyrics": "[Intro: solo stride piano, quick oom-pah bass, sly darting right hand, a shell game]\n\n[Build: the piano hurries, faster, both hands chasing]\n\n[Stop: one sour wrong chord, then dead silence]\n\n[Break]\n\n[Spoken Word: woman, low, smoky, amused, half to the room and half confiding, one unhurried breath, no melody]\nThey're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\n\n[single piano note, left to ring]\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 65,
+    "vocalGender": "female",
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "back-room-whisper-upright",
+    "style": "A short scene, not a song. The back room of a London pub in 1934, thick with pipe smoke. Through the wall, an out-of-tune upright piano picks out a slow, creeping minor-key shuffle, muffled and far off. Close by: glasses clink, men murmur low, a thumb riffles a wad of banknotes, a coin spins on a wooden counter and rattles flat. A young London man leans right into the microphone and whispers, hushed and conspiratorial, like a bookie's runner telling you the fix behind his hand: dry, certain, faintly amused. The room falls silent for his last words. Voice-forward, intimate, real room sound, no melody in the voice.",
+    "exclude": "singing, sung vocals, choir, chorus hook, drums, beat, bass drop, orchestra, string swell, cinematic score, ragtime, Scott Joplin, synth",
+    "lyrics": "[Intro: room ambience, distant muffled upright piano behind a wall, glasses clink, banknotes riffled, a coin spun on the counter]\n\n[Whispered spoken word]\n(They're going to print the money and the weapon sales will still happen anyway,\n\n[The room falls silent]\neverything else is a distraction.)\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": "male",
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "novelty-flurry-then-violin-jab",
+    "style": "15-second timed cue, solo piano then strings, spoken word, voice-forward. 0-7s: invented 1920s novelty piano showpiece, glittering chromatic right-hand runs, triplet figures, glissando sweeps, cheeky vaudeville bounce, dry woodblock ticking the pulse. 7-10s: the piano stumbles, fumbles a bar, then doubles its speed in a nervous scramble; a brass cash register bell rings once. 10.5s: dead stop, a single sharp violin stab, then a low sustained cello drone alone. Over the drone a very deep, slow, gravelly old man speaks, grandfatherly, unimpressed, weary authority, close dry mic, plain conversational pacing, no melody. Dry 78rpm room tone, intimate, low dynamics after the stab.",
+    "exclude": "ragtime, Joplin rag, stride piano, The Entertainer, film score pastiche, orchestral swell, sung vocals, singing, choir, chorus, rap, drums, bass guitar, synth",
+    "lyrics": "[Intro: 0-7s, solo novelty piano flurry, runs and glissandi, woodblock tick]\n\n[Break: 7-10s, piano trips and doubles up, cash register bell]\n\n[Violin stab, then low cello drone]\n\n[Spoken word: deep elderly man, slow, weary]\nThey're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\n\n[End: cello drone, silence]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 75,
+    "vocalGender": "male",
+    "durationSec": 15,
+    "maxMode": false
+  }
+]

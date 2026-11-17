@@ -1,0 +1,13 @@
+{
+  "name": "fruit-machine-electronics",
+  "style": "instrumental sound-design bed: a 1980s pub fruit machine as the band, stepper-motor reels whirring and ticking in a loop, relay clicks and coin-hopper rattle keeping a small tight groove, three-voice square-wave bleeps from an old sound chip tapping out a cheeky two-note figure, faint pub room hum and glass clinks behind, soft chiptune pads only as glue, quiet, dry and sparse so speech sits on top; halfway it thins to one lone reel ticking; finale: three reels thunk to a stop one after another, then a bright rising payout chime arpeggio, warm and wry",
+  "exclude": "vocals, voices, robotic speech, vocoder, drum kit, dubstep, casino jazz",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 65,
+  "vocalGender": null,
+  "durationSec": 40,
+  "maxMode": false
+}

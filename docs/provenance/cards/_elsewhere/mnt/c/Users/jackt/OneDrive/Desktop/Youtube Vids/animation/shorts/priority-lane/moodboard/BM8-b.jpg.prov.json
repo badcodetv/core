@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/BM8-b.jpg",
+ "made": "2026-11-17T11:07:39.887Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A vertical 9:16 night photograph that looks like a frame of 35 mm colour negative film, Cinestill 800T, heavy grain, red-orange halation blooming off the bright spots. Shot with a wider 35 mm lens from the far end of the back seat of a big black luxury car, at the man's eye height, so the long sweep of black leather, the closed door and the side window all read in the frame. In the foreground on the leather armrest, slightly soft, a small silver tray of fancy canapés: tiny pastry cases, quail eggs, sprigs of dill. Behind it, filling the upper half, a man in his late fifties, invented, unmistakably the floppy upper-class British politician type: a wild mop of white-blond hair falling into his eyes and sticking up at the crown, large florid round face, small narrowed eyes, navy suit crumpled and pulling at the button, tie loose and crooked, white shirt collar half up. No hat. He presses a phone to his right ear with his right hand and is talking impatiently, mid-word, lips parted, eyebrows pulled down, his free left hand flicking the air dismissively. Light sources: a warm amber overhead reading lamp lighting his hair and the top of his face; the cold glow of the phone on his jaw; and through the rain-covered side window on the far side of the car beyond him, hard cold blue flashes from emergency lights outside that we never see, the raindrops lit up like blue beads and a sodium-orange street lamp blurred far behind them. The blue throws a cold edge along one side of his face while the lamp keeps the other side warm. Teal shadows in the footwell. Natural hands with five fingers each. No readable text, no number plates, no logos. Real photograph, not CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ecfdd370-c796-4b8e-942d-d840cb565b8e"
+}

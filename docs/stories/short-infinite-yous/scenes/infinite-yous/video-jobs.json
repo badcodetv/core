@@ -1,0 +1,118 @@
+{
+ "anim_picks": {
+  "1": "b",
+  "2": "a",
+  "3": "b",
+  "4": "a",
+  "5": "a"
+ },
+ "still_picks": {
+  "1": "LI1-b",
+  "2": "SP1-a",
+  "3": "SQ2-a",
+  "4": "CA2-a",
+  "5": "LO1-b"
+ },
+ "skip": [
+  2,
+  3
+ ],
+ "note": "Jack 2026-11-14 storyboard round 1: 1b, 2a (edit), 3b (edit), 4a, 5a. Frames 2 and 3 are built in the edit.",
+ "extra": [
+  {
+   "key": "04-r2",
+   "n": 4,
+   "still": "CA2-a",
+   "motion": "The camera does not move. The young man in the white shirt topples forward the rest of the way onto the taxi's back seat, his legs following him in. The figure in the lab coat sets his foot back down on the pavement and straightens his coat. The city lights glow behind them. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: try clip 4 again. The 4a prompt was refused 3x (the word kick, a man struck); the still already shows the kick landed, so this asks only for the follow-through, no violent verbs."
+  },
+  {
+   "key": "04-r3",
+   "n": 4,
+   "still": "CA2-a",
+   "motion": "Locked-off camera, cartoon slapstick timing, like a silent-film pratfall. The young man sails forward with his arms flailing like a rag doll and flops face-first onto the taxi's back seat with a comic bounce, his legs wiggling in the air outside the door before they flop in after him. The figure in the lab coat lowers his foot, dusts off his gloves twice and gives one small satisfied nod. Exaggerated, bouncy and funny. One continuous shot, no cuts, no dialogue, no text. The camera stays locked. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: he falls into the car like a cartoon character, slapstick and funny; never say kick, the scientist's pose implies it."
+  },
+  {
+   "key": "04-r4",
+   "n": 4,
+   "still": "CA2-a",
+   "motion": "Locked-off camera. In a split second the young man is whipped off his feet as if yanked by an invisible wire, his whole body flying flat and straight through the open back door and vanishing deep inside the taxi in a few frames, a blur of white shirt. The car lurches on its springs and the open door judders. The figure in the lab coat holds his pose, perfectly still, then slowly sets his foot down. Absurd, over-the-top movie physics, played for laughs. A single unbroken take with no cuts, no speech and no on-screen words. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: like the end of Django Unchained when a character is blasted backwards through the doorway out of frame: he flies into the taxi. No kick, no weapon words."
+  },
+  {
+   "key": "04-fa",
+   "n": 4,
+   "still": "FL1-a-a",
+   "motion": "Locked-off camera, real-time speed. [00:00-00:01] Snapping backwards as if yanked by a rope at his waist, the young man in the white shirt leaves the pavement stiff and straight, flies back-first through the open door and is gone inside in a quarter of a second, keys flying. The taxi lurches and bounces hard on its springs. [00:01-00:08] Everything holds. The figure in the lab coat stays frozen in profile, hand still out. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: clean room the Django fling; he turned round mid-fall in r4. Staging: The doorway yank: the finale gag done straight. Side-on to everything, the lad sways two steps clear of the open door wi"
+  },
+  {
+   "key": "04-fb",
+   "n": 4,
+   "still": "FL1-b-b",
+   "motion": "Locked-off camera, real-time speed. [00:00-00:01] Finishing his flight in a split second, the young man in the white shirt shoots back-first through the open door and vanishes inside; the taxi rocks hard on its suspension. His car keys hang in the air for a beat, then drop to the pavement with a clink. [00:01-00:08] Stillness. The figure in the lab coat stays in profile and lowers the raised leg slowly, then stands still. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: clean room the Django fling; he turned round mid-fall in r4. Staging: The follow-through freeze: start the clip already in mid-flight. The figure, side-on, holds a ridiculous ballet-high leg"
+  },
+  {
+   "key": "04-fc",
+   "n": 4,
+   "still": "FL1-c-b",
+   "motion": "Locked-off camera, real-time speed. [00:00-00:01] Touching his forehead with one fingertip, the figure in the lab coat sends the young man in the white shirt rocketing back-first, stiff and level, through the open door; he is inside in a quarter of a second. The door swings shut by itself with a thud, the taxi bounces and the roof sign wobbles. [00:01-00:08] The figure, still in profile, blows on the fingertip once and holds. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: clean room the Django fling; he turned round mid-fall in r4. Staging: The fingertip boop, a deadpan wide. A low wide frame, symmetrical and still as a sitcom set. The figure in profile reach"
+  },
+  {
+   "key": "04-ka",
+   "n": 4,
+   "still": "KK1-a-b",
+   "motion": "Camera locked. [00:00-00:01] The figure in the lab coat unfolds his raised leg dead straight in a blur, the sole of his shoe pats the seat of the young man's jeans, and the young man zips head-first through the open door into the back seat like a cork from a bottle, gone in an instant, feet last. Comic cartoon physics, nobody hurt. [00:01-00:08] The taxi rocks on its springs; the figure holds the straight leg out, motionless, side-on. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: make it look like a kick and he flies into the taxi, the speed is the joke; clean room. Staging: The dancer's extension. The figure stands side-on with one knee drawn up high and folded, poised lik"
+  },
+  {
+   "key": "04-kb",
+   "n": 4,
+   "still": "KK1-c-c",
+   "motion": "Static camera. [00:00-00:01] The figure in the lab coat swings his drawn-back leg through like a footballer's penalty, a fast blur; his shoe meets the seat of the young man's jeans and the young man sails head-first through the open door onto the back seat like a ball into the net, a white streak, gone. Playful slapstick, nobody hurt. [00:01-00:08] The taxi bounces on its springs; the figure holds his follow-through pose, side-on, perfectly still. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: make it look like a kick and he flies into the taxi, the speed is the joke; clean room. Staging: The penalty. The figure is caught at the top of a footballer's swing: planted foot down, the other l"
+  },
+  {
+   "key": "04-kc",
+   "n": 4,
+   "still": "KK1-c-b",
+   "motion": "Camera does not move. [00:00-00:01] The figure in the lab coat flicks his lifted foot forward in a quick blur, a polite pat to the seat of the young man's jeans, and the young man pops head-first into the back seat like a letter through a letterbox, gone in a blink, comic bounce, nobody hurt. [00:01-00:02] The figure swings the door shut with his gloved hand. [00:02-00:08] The taxi rocks gently; the figure stands side-on, hands behind his back, still. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: make it look like a kick and he flies into the taxi, the speed is the joke; clean room. Staging: The doorman's helping foot. The figure stands side-on with one gloved hand holding the top of the op"
+  },
+  {
+   "key": "01t-a",
+   "n": 1,
+   "still": "TK1-b",
+   "motion": "The camera does not move. The young man grins at the camera and says, cocky and loud: One version of me gets home fine. He jiggles the keys beside his face as he talks, then gives a short laugh and holds the grin. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: make a talking clip for the lad's line (lip-sync-dub step 2: the mouth drawn to the same words; muted, dubbed with lad a Puck). Two candidates."
+  },
+  {
+   "key": "01t-b",
+   "n": 1,
+   "still": "TK1-b",
+   "motion": "The camera does not move. The young man grins at the camera and says, cocky and loud: One version of me gets home fine. He jiggles the keys beside his face as he talks, then gives a short laugh and holds the grin. Thanks.",
+   "character": null,
+   "why": "Jack 2026-11-15: make a talking clip for the lad's line (lip-sync-dub step 2: the mouth drawn to the same words; muted, dubbed with lad a Puck). Two candidates."
+  }
+ ],
+ "pick": {
+  "4": {
+   "clip": "iy-04-ka-ramp-r1.mov",
+   "raw": "iy-04-ka-KK1-a-b.mp4",
+   "why": "Jack 2026-11-15: \"use the clip at 4 secs on the premiere timeline\" (seq iy clip 4 kick r1)"
+  }
+ }
+}

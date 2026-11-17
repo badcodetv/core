@@ -1,0 +1,13 @@
+{
+  "name": "rhythm-section-trio",
+  "style": "Instrumental corner-of-the-bar jazz trio, 112 BPM, swung eighths, 4/4, F major. Upright double bass walking steady quarter notes. Snare played with brushes only, slow circular swirls, soft feathered hi-hat on 2 and 4. Vibraphone gives just two-note stabs, short and dry, one every two bars, motor off. Mixed low and distant, bass forward, wide gaps in the midrange, small wooden room. Around 0:28 the brushes drop out and the bass walks downward alone, half time, under light rain against glass. At 0:35 vibraphone climbs one quick four-note arpeggio, a single small bell rings, hard stop.",
+  "exclude": "vocals, scat, singing, saxophone, trumpet lead, piano melody, smooth jazz, crowd chant, drum solo",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 40,
+  "maxMode": false
+}

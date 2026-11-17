@@ -1,0 +1,54 @@
+[
+  {
+    "name": "threepenny-crook-pit-band",
+    "style": "instrumental, 1928 Weimar Berlin underworld cabaret pit band, seven-piece theatre band, sour minor-key march-foxtrot, 15-second cue. Chugging plectrum banjo on the offbeat and a wheezy pump harmonium hold up the swindle; a reedy, nasal alto saxophone slinks in as the lead, sliding between two notes like a hand hovering over two cards; a cup-muted trumpet answers it with a snide little bent reply; tuba-and-trombone oompah underneath, slightly out of tune, lopsided. Foley played inside the band, dry and close: a crisp paper riffle, a single coin clacked down on a wooden counter, then one deep timpani thump at the 7-second mark. At 10.5 seconds the band chokes off mid-bar: only one sustained harmonium chord hangs in the air with a lone dry banjo pluck, lots of empty space. Scratchy 78rpm theatre-pit room sound, gritty, mocking, genteel and crooked",
+    "exclude": "vocals, singing, spoken word, speech, narration, choir, voice, rap, piano lead, ragtime, stride piano, orchestral strings, modern drums, synth",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "hot-club-string-hustle",
+    "style": "instrumental 1930s Parisian string swing, acoustic hot-club quartet with no piano and no drums, two archtop rhythm guitars pumping a tight chopped offbeat, upright bass walking in fours, a sly swinging solo violin carries the tune like a smooth talker's sales pitch, brisk medium-up tempo, minor key with a wink. 0-3.5s: charming violin hook over the pumping guitars. 3.5-7s: violin hesitates, rocking back and forth between two neighbouring notes, bass holds. 7-10.5s: violin snaps one hard pizzicato pluck then a quick glissando falling down the neck, guitars cut off dead on the same beat. 10.5-15s: near silence, one soft bowed double-bass harmonic, a single high violin harmonic sustained thin and glassy, faint paper rustle of banknotes being counted. Close-miked, dry small room, warm 78rpm-era surface crackle, short cue that ends on the held harmonic",
+    "exclude": "vocals, voice, singing, spoken word, speech, narration, choir, humming, scat, piano, drums, cymbals, ragtime, accordion, clarinet, brass, synth, electric guitar, reverb wash, fade-in",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "habanera-bandoneon-card-sharp",
+    "style": "instrumental, 15-second cue, slow sly tango-habanera duet, 1930s smoke-room parlour: lone bandoneon breathing a slinky, sidelong melody over an upright piano limping the dotted habanera bass, invented tune, close dry room. Card riffles and a small counter-bell ting fall on the offbeats like percussion. At 7 seconds one hard bandoneon sforzando stab and a staccato low piano cluster, then dead silence. Last four seconds: a single thin bandoneon note held unresolved, a velvet curtain swishing open, near-empty air. no vocals",
+    "exclude": "vocals, spoken word, ragtime",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "cartoon-studio-mickey-mouse-cue",
+    "style": "instrumental, 1930s black-and-white studio cartoon underscore, small theatre orchestra, mono shellac recording, hit-every-move mickey-mousing. Opens on a sly tiptoe bassoon line for a smooth con man, xylophone glissando and slide whistle as two envelopes fan out. Then a dithering old man: plucked cellos, wood block ticks, a hesitant clarinet trill. At 7 s a bright muted-trumpet and trombone stinger chord with a cymbal crash, a gag punchline. At 10.5 s the joke dies: muffled low timpani roll falling to near silence, one long bowed cello note, a heavy stage curtain swishing open. No vocals",
+    "exclude": "vocals, singing, speech, spoken word, narration, voice, choir, humming, scat, ragtime, stride piano, Scott Joplin, The Entertainer, modern production, synth, drum kit, EDM, trap beat",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  }
+]

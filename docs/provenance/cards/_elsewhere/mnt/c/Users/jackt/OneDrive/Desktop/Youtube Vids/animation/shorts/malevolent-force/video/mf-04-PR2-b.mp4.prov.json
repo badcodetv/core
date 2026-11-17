@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-04-PR2-b.mp4",
+ "made": "2026-11-16T10:45:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom or pan, one continuous shot, no cuts. The loaf sits still on the bare metal shelf. At about one second the fluorescent tube above cuts out and the shelf drops to near-black for a quarter of a second, then snaps back. At about two point eight seconds it cuts out again, a little longer, then returns. Only two flickers, irregular, never faster than three a second. After each, the loaf and the '50p' card are unchanged. Keep the still's grainy night colour-film look, soft focus and teal light; every sign and label stays exactly as written. No people, figures, shadows or voices. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-b.jpg",
+ "why": "two sharp flickers",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "04",
+  "frame": 4,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T10:41:22.701Z"
+ }
+}

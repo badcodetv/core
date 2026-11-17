@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX2-b-a.jpg",
+ "made": "2026-11-16T16:45:40.962Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 high angle from a fire escape at dawn over the cobbled street of the attached image, the bridge tower huge in cold blue haze. Far below, tiny in frame, a lone figure in a baggy beige thrift-shop suit, trousers too short, a battered tan fedora over a black balaclava holds a microphone out to nobody in the empty street. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Pigeons lifting, steam from a grate. 35mm, pale blue light, film grain, no readable signs. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/tec-refs/ref4-bridge-street.png",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/tec-refs/ref4-bridge-street.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "f32f23e2-6ee2-4b37-b965-5b9eee094c34"
+}

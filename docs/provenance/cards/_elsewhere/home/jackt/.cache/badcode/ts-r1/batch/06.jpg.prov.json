@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/06.jpg",
+ "made": "2026-11-16T13:21:35.740Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 aerial photograph at night, looking straight down from very high over an endless grid of English Victorian brick terraced streets, rows of slate roofs and back yards running to the edge of the frame in every direction, every house dark, windows sealed with grey perforated steel security screens, no lights on anywhere. In the lower left corner, one small patch of the grid glows cold fluorescent teal: a few streets of tiny lit windows, small enough to cover with a thumb, utterly outnumbered by the darkness around it. Shot on cheap 35mm colour negative film pushed two stops, heavy grain, slight halation round the teal, faint motion blur, no people visible. Thanks.",
+ "source_id": "474620f5-64f1-4050-9506-59618b9dd086"
+}

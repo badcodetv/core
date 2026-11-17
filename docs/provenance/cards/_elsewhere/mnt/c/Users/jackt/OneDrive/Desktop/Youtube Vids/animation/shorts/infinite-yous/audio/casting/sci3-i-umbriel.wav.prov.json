@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/sci3-i-umbriel.wav",
+ "made": "2026-11-15T12:20:54+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "There's only one.",
+ "inputs": {
+  "profile": "# Audio Profile\nA cynical Birmingham boffin, about sixty, gravelly and unimpressed, smirking through it. He fires the line off at speed, like a punchline he has told a thousand times.\n\n## Scene:\nOutside a pub under orange street lamps in the West Midlands.\n\n## Sample Context:\nShooting down a drunk lad's parallel-universe excuse with lazy, rapid-fire sarcasm.\n",
+  "profile_file": "docs/stories/short-infinite-yous/voices/profiles/sci3-i-umbriel.md"
+ },
+ "settings": {
+  "voice": "Umbriel",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

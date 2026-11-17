@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r6/nobob/01.jpg",
+ "made": "2026-11-16T14:57:00.983Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 candid photo on cheap colour film, heavy grain, night. A crowded British local pub on quiz night, patterned carpet, a fruit machine blinking behind. Close on the loud table mid-shout: a Black woman in her fifties in a hi-vis work jacket slaps a paper answer sheet onto the sticky table, the sheet facing the camera, written in thick biro: \"50,000\". Beside her a young South Asian lad in a plain red football shirt with no badge points across the room, laughing; an older white man in a flat cap leans in nodding; a woman in a navy hijab with a nurse's lanyard grips a tiny pencil, unconvinced. Warm tungsten wall lamps, cold teal rain on the window behind them. Plain unbranded glasses and packets. Any other writing unreadable. Thanks.",
+ "source_id": "050135c8-f86b-4106-8b19-5ddbeb156a27"
+}

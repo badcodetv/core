@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/13.jpg",
+ "made": "2026-11-16T09:59:56.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical night photograph on grainy colour negative film, amateur and underexposed, fluorescent light rendered sickly green-blue with soft halation. Looking up at a round convex security mirror in the corner of a cramped British corner shop. In the curved mirror the narrow aisle bends away, completely empty: snack racks, a lit drinks fridge, a bread shelf at the end with one loaf and a tiny label reading \"£50\". On the floor of the aisle, scattered blank uncut sheets of fresh paper banknotes with no readable design, as if dropped moments ago. No figure anywhere, only the sense someone just left. Thanks.",
+ "source_id": "f37b34e0-4cd1-4d48-8d6d-1976f49e198d"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/_batch-r1/07.jpg",
+ "made": "2026-11-15T12:46:10.008Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 illustration in the style of a banknote intaglio engraving: fine green line work and guilloche rosettes on cream security paper, crosshatched shading, a decorative border. At the centre an elaborate printing machine is driven by a clockwork mechanism, its single lever locked inside a glass case by gears. From the edges of the frame, many hands in shirt cuffs reach in toward the lever and all press flat against the glass, unable to touch it. A small engraved ribbon beneath reads \"NO HAND ON THE PRESS\". Slight ink bleed, a fold crease across the paper. Thanks.",
+ "source_id": "68503777-62c9-49aa-b096-583315e72b49"
+}

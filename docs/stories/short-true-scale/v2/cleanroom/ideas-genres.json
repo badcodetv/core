@@ -1,0 +1,67 @@
+{
+  "angle": "Genre parodies and formats: the guess-then-reveal carried by the genre's own machinery",
+  "research": [
+    "https://www.actiononemptyhomes.org/the-last-decade — long-term empties up 38,301 to 303,185 (MHCLG council taxbase 2025), highest since 2011; second homes out of residential use 267,894; London long-term empties up ~23% to 47,287. Confirms the brief's numbers.",
+    "https://www.bigissue.com/news/housing/empty-homes-uk-2026/ — same council tax data read as 268,153 second homes; small differences between outlets, so quote the brief's figures and say 'about'.",
+    "https://AllTheTropes.org/wiki/Bullseye_(UK_game_show) — the classic UK game-show beat: the loser is shown 'what you could have won' as the stage revolves and a sad version of the theme plays. A reveal of something you can't have is a format everyone over 30 in the UK knows in the bones.",
+    "https://shapes.inc/fandom/bullseye/prizes — the reveal prize was often absurdly lavish (a speedboat) for ordinary contestants; the gap between the prize and the contestant IS the joke. Echo the mechanic, not the show, set or catchphrase.",
+    "https://necsus-ejms.org/can-you-see-yourself-living-here-structures-of-desire-in-recent-british-lifestyle-television/ — British property-search TV is built on 'can you see yourself living here?' and is inseparable from the housing market; its rhetoric is aspiration, which makes it the perfect skin to turn.",
+    "https://newstatesman.com/culture/tv/2017/08/property-programmes-are-torture-millennials-so-why-do-we-keep-watching — property shows read as torture to people priced out; viewers already resent the format's assumption of money, so a parody is on the viewer's side, not the pupil's.",
+    "https://elenafernandezcollins.com/2018/07/02/genre-discussion-the-necessity-of-subversion-in-true-crime-parody/ — a formula with recognisable patterns is ripe for satire; parody works when it uses the genre's machinery straight and subverts the object, not when it just mocks the genre.",
+    "https://www.nbcnews.com/pop-culture/tv/vengeance-only-murders-building-rise-true-crime-podcast-satires-rcna40111 — true-crime podcast satire is mainstream; the 'missing' framing and hushed host voice are instantly readable in a few seconds, useful for a 20 s vertical.",
+    "https://www.tvtropes.org/pmwiki/pmwiki.php/Main/ParodyTropes — parody either plays the trope realistically or exaggerates it; for a 15-25 s short, play it dead straight and let the numbers be the exaggeration (they need none)."
+  ],
+  "ideas": [
+    {
+      "slug": "what-you-couldve-won",
+      "title": "What You Could Have Won",
+      "logline": "A cheap Saturday-teatime game show asks Bob to guess higher or lower on homeless households and empty homes, then revolves the stage to show him the prize he was never going to get: a house, keys in the door, nobody living in it.",
+      "setting_and_genre": "UK light-entertainment game show, tired studio glitter, giant playing-card-style number boards, a revolving stage, a live audience laughing on cue. An echo of the 80s/90s teatime format, no real show's name, set, host likeness or catchphrase.",
+      "who": "Bob as the contestant (still in his car-park clothes, name badge 'BOB, CAR PARK'); a glossy host (invented, or BadCode in the balaclava in a sequined jacket as host, which tells you whose show this is); the studio audience.",
+      "beats": [
+        {"t": "0-4s", "see": "Spotlight on Bob at the podium. Host leans in. Board shows a face-down card.", "say": "HOST (DRAFT): 'Bob! Homeless families in England. In B&Bs, hostels, one room. Higher or lower than ten thousand?' BOB (DRAFT): 'Lower, surely. It's not the third world.'"},
+        {"t": "4-8s", "see": "Card flips: 134,210. Audience 'ooooh'. Small line under it: 85,800 with kids.", "say": "HOST (DRAFT): 'Ooh, higher, Bob. A lot higher.' [Jack's joke slot: Bob's reaction line]"},
+        {"t": "8-13s", "see": "Second card face down. Host grins.", "say": "HOST (DRAFT): 'Now. Homes sat empty, or a second home nobody lives in. Higher or lower than the families?' BOB (DRAFT): 'Lower. Got to be. Otherwise we'd just…'"},
+        {"t": "13-17s", "see": "Card flips: 571,079 (303,185 empty + 267,894 second homes). Audience falls silent. Bob doesn't finish his sentence.", "say": "HOST (DRAFT, cheerful): 'Four for every family, Bob!'"},
+        {"t": "17-23s", "see": "The stage revolves. Sad version of the jingle. A front door, lit, keys in it, nobody home. Hold on Bob. Super: 'Councils spent £2.9bn on B&Bs and nightly lets last year. The houses stayed empty.'", "say": "HOST (DRAFT): 'Let's have a look at what you could have won…' [Jack's punchline slot: the line over the revolving door; who owns the prize]"}
+      ],
+      "the_turn": "The genre's own two-card higher-or-lower does the guessing: Bob guesses low twice, the viewer guesses with him, the cards flip. The second flip is the scale gap; the revolving-stage 'what you could have won' then makes it personal and physical, a house you can see and not have.",
+      "why_it_lands": "Every working-class UK viewer knows this format; it is theirs, not a lecture. Bob guesses what the viewer would guess, so the viewer is on his side being wrong, not being taught. The 'what you could have won' sting is about being robbed of a prize that exists, which is the feeling of someone drifting right because the economy failed them. The decision-maker is implied by the empty prize: someone holds it.",
+      "risk": "Combining 303,185 + 267,894 into one card is honest only if the super says 'empty or a second home'; a pedant will say second homes are not available. Keep the split visible under the card. Don't let the host mock Bob (the joke is on the show, not him). Avoid echoing any real show's exact set, theme tune, catchphrase wording or host; 'what you could have won' as a phrase is generic but don't pair it with darts or a bull. Not a charity advert: no sad piano, no donate line."
+    },
+    {
+      "slug": "location-vacation",
+      "title": "Location, Vacancy",
+      "logline": "A breezy property programme takes a family from a B&B on a house hunt, with the council's real budget, and every gorgeous house they view is empty, ready, and not for them.",
+      "setting_and_genre": "Daytime UK property-search TV: chirpy presenter walking backwards up a garden path, swooping drone shot, three-house format, 'can you see yourselves living here?', a budget caption, the final 'so, which one?' sit-down in a café. Format echo only, invented presenter, no real show's name or branding.",
+      "who": "An invented presenter (posh, warm, relentless); a family of three with their life in two bin bags (from a B&B, one room, kids' uniforms on the radiator); optionally Denise as the mum (she counts, so she asks the money question). BadCode can be the voiceover narrator.",
+      "beats": [
+        {"t": "0-4s", "see": "Drone swoop to a family outside a tired B&B. Caption: 'THE FAMILY: one room, 14 months. BUDGET: ?'", "say": "PRESENTER (DRAFT): 'Today we're helping the Okafors find a home. Their budget? Let's ask the council.'"},
+        {"t": "4-9s", "see": "Caption fills in: '£2.9 BILLION (that's what councils spent last year on B&Bs and nightly lets)'. Presenter does a double take.", "say": "PRESENTER (DRAFT): 'Well! That should get you something.' MUM (DRAFT): 'It got us this.' (gestures at the one room)"},
+        {"t": "9-15s", "see": "Fast montage of three houses: post piled behind the door, dust sheets, a holiday cottage with a key safe. Each one: empty.", "say": "PRESENTER (DRAFT, walking backwards): 'Lovely light. Nobody in. Nobody in. Nobody's been in since Easter.' [Jack's joke slot]"},
+        {"t": "15-21s", "see": "The café sit-down. Presenter with the clipboard.", "say": "PRESENTER (DRAFT): 'So, how many of these do you think there are?' DAD (DRAFT): 'Dunno. Few thousand?' PRESENTER: 'Five hundred and seventy thousand. Empty, or someone's second home.' Family stares."},
+        {"t": "21-25s", "see": "Mum asks the presenter's own catchphrase back.", "say": "MUM (DRAFT): 'So which one can we have?' Presenter's smile freezes. [Jack's punchline slot: the presenter's answer, which names who decides]"}
+      ],
+      "the_turn": "The format's café 'final decision' becomes the guess-and-reveal: the presenter asks the family how many, they guess low, the real number (about 571,000 empty or second homes, four per homeless household) lands while the £2.9bn budget caption is still in the viewer's head. The money was there; the houses were there; the family is still in one room.",
+      "why_it_lands": "Property TV is the aspirational telly the viewer was sold and priced out of; turning it on itself puts the viewer on the family's side, not lectured. The £2.9bn caption reframes 'we can't afford it' as 'we're already paying, for the worst option', which lands with anyone who feels taxed and robbed, left or right. It names a decision (the council's spending, the owners' choice to keep houses empty) without blaming the family.",
+      "risk": "Show title must not riff closely on a real one ('Location, Vacancy' may be too close; alternatives: 'Home Truths', 'Room To Let'). Invented presenter must not resemble a real presenter. Do not imply the three houses shown are real addresses. The family casting must not turn into poverty-porn or a charity appeal; keep them dry and funny. Showing a family of colour could trip the immigration-resentment frame for this reader; consider casting deliberately so the family reads as 'people like the viewer' (or use Denise). The £2.9bn is all of England's TA, not this family's; the caption must say 'councils spent', not 'their budget is'."
+    },
+    {
+      "slug": "the-empty-house-documentary",
+      "title": "Planet Vacant",
+      "logline": "A hushed wildlife documentary stalks the rarest creature in Britain, the occupied affordable home, and instead keeps finding herds of empty ones, while a family migrates nightly between B&Bs.",
+      "setting_and_genre": "Natural-history documentary: long-lens hides, a reverent whisper narrator, time-lapse, slow drone over a herd, 'remarkably…' lines. BadCode voices the narrator (sarcastic, certain, on our side); the warm-grandad register is echoed but no real broadcaster's voice or likeness.",
+      "who": "BadCode (narrator, maybe glimpsed in the balaclava in camouflage in a hide); a terraced street of empty homes as 'the herd'; Bob as the creature in the car park who is never filmed because the crew walks past him; a family hauling bags at night as 'the migration'.",
+      "beats": [
+        {"t": "0-5s", "see": "Long lens through grass at a terraced house, curtains shut, post piled behind the door. Hide, camera, whisper.", "say": "NARRATOR (DRAFT): 'Here, in the wild, we find the empty home. Shy. Furnished. Undisturbed for six months or more.'"},
+        {"t": "5-9s", "see": "Time-lapse: seasons pass, the house never changes. Weeds grow, a Christmas comes and goes, the post grows.", "say": "NARRATOR (DRAFT): 'How many survive in England? Take a guess.' (a beat, for the viewer)"},
+        {"t": "9-14s", "see": "Drone pulls up and up: the street, then the town, then a whole valley of shut houses, little dots tagged like tracked animals. Counter climbs: 303,185 … then +267,894 second homes.", "say": "NARRATOR (DRAFT): 'Not endangered. Thriving. Half a million of them.'"},
+        {"t": "14-20s", "see": "Night-vision: a family drags bags out of one B&B and into another, kids in pyjamas. Caption: 134,210 households in temporary accommodation.", "say": "NARRATOR (DRAFT): 'Meanwhile, the great migration. One hundred and thirty-four thousand families, moved on by the night. Five and a half grand a minute it costs to keep them moving.'"},
+        {"t": "20-25s", "see": "The crew packs up and walks past Bob's tent in the car park without filming him. Bob looks at the lens.", "say": "NARRATOR (DRAFT): [Jack's punchline slot: the narrator's sign-off, naming who keeps the herd empty]"}
+      ],
+      "the_turn": "The narrator invites the guess ('take a guess'), and the genre's signature move does the reveal: the slow drone pullback from one shy house to a valley of them. Scale is shown, not stated, and the counter ticks past the viewer's guess while they watch. Then the night-vision migration is the cut-back to the human cost, using the doc's own vocabulary.",
+      "why_it_lands": "Everyone knows the hushed-documentary voice, and hearing it used on a boarded-up house next door is funny before it is angry. The viewer is the expert watching with the narrator, not the pupil. 'Not endangered, thriving' flips the scarcity story the viewer has been told ('there aren't enough houses') without calling them fooled. Bob being walked past is the 'ignored' note, landing quietly.",
+      "risk": "Narrator must not imitate a real broadcaster's voice (legal and reader-trust risk); BadCode's own voice in a whisper is safer. 'Half a million' rounds 571,079 empty + second homes; keep the split on screen. The 'five and a half grand a minute' line is £2.9bn / 525,600 minutes = about £5,518 a minute (computed, not a published figure). Treating homeless families as 'wildlife' could read as dehumanising: frame the family with dignity (the joke is on the doc crew and the empty houses, never on them). Keep 'second homes' from sounding like an attack on someone with a caravan; target the scale, not the individual owner."
+    }
+  ]
+}

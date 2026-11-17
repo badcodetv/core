@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/nobob/01.jpg",
+ "made": "2026-11-16T14:17:40.641Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph, night, cheap 35mm colour film, heavy grain, slight motion blur. A British local pub on quiz night, shot from a low angle at a sticky table among the crowd. Behind the bar, a tired landlady leans into a microphone mid-word, holding up one pencilled answer sheet that reads \"300,000\". Under warm tungsten lights a clear plastic bag of raffle meat sits on the bar beside unbranded beer pumps. In the soft foreground, women from a hen do and two builders in hi-vis throw their heads back groaning, one crumpling her own sheet. Patterned carpet, fruit machine glow, rain-dark window. Candid, warm, unglamorous, affectionate. No logos, no other readable text. Thanks.",
+ "source_id": "d394786b-02a4-485f-9f28-55fd9e0ff44a"
+}

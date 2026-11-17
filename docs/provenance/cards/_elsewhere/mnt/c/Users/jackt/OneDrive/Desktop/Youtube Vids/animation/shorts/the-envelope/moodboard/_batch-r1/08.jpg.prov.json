@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/_batch-r1/08.jpg",
+ "made": "2026-11-15T12:35:23.615Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical 9:16 macro photograph of a handmade stop-motion miniature: a tabletop printing press built from brass clock gears, a cotton reel for a roller and painted card, turned by a small crank. Tiny invented banknotes, hand-printed in faded purple and olive with a heron and a crowned key, fly out of it on visible threads and pile up in a heap taller than the press. Beside the heap, on a tiny balsa desk, two paper envelopes with red stamps sit ignored under a thumbnail-sized brass lamp. Warm practical light, dust, glue strings, fingerprints in the plasticine floor, shallow depth of field from a 100mm macro lens. Thanks.",
+ "source_id": "a68b906b-cddf-414b-bfa6-7ddd3fff5da7"
+}

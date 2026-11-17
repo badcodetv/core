@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD17-b.jpg",
+ "made": "2026-11-17T13:30:30.215Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo. Keep the vantage, light and look of the reference image: from high on a wet brick railway-bridge parapet, looking down along a broad London main road at night in rain, the black iron bridge railing and brick pier filling the lower right, shot like a grainy 35 mm colour-negative night photograph with gentle halation, never glossy. Rebuild the traffic as follows. The four black cars driving toward us down the middle of the main road in the reference are gone; the main road beyond the junction is empty on its left half. In the lower left, on the left half of the main road, the UK ambulance waits at the stop line, its back to us, nose toward the junction, roof blue lights flashing. Directly ahead of it a thin police line of just three officers in yellow hi-vis and white helmets with three white police motorcycles stretches across the mouth of the yellow box junction; one officer faces the ambulance with a gloved palm raised. In the middle of the box junction, in its far half away from the police line, the convoy is crossing from left to right, seen exactly side-on: a white police motorcycle with blue strobes leading at the right, then three black saloon cars nose to tail behind it, their headlights throwing white beams toward the right edge of the frame and their red tail lights glowing to the left, spray kicking up from their wheels. The cross road to the right of the junction is empty and wet, cleared for them; the side road on the left behind them is empty. On the right half of the main road beyond the junction, a red double-decker bus and a line of cars face toward us with headlights on, stopped at their stop line on the far side of the junction, held by a white police motorcycle and a hi-vis officer standing in front of the bus. Light sources: a long receding row of sodium-orange street lamps, blue strobes from motorcycles and ambulance, white headlights, red tail lights, red traffic signals, all reflected in the wet tarmac with cold teal shadows and visible rain streaks. Small natural faces and hands. No readable text, plates, route numbers, signs or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "51f68b3e-b0d7-4b29-871a-c633d26b4e33"
+}

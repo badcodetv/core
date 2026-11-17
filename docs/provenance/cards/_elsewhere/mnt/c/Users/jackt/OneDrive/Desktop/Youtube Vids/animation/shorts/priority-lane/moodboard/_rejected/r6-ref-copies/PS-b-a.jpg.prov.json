@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/_rejected/r6-ref-copies/PS-b-a.jpg",
+ "made": "2026-11-14T14:23:19.650Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph on 35 mm film at night, taken from inside the cab of a stopped ambulance, looking sideways out through its rain-spattered passenger window at a bus shelter on the pavement a few metres away. The dark edge of the window frame and the door's inner trim run down the left and bottom edges of the picture, lit in pulses of blue from the ambulance's own emergency lights bouncing off the wet bodywork, while raindrops and streaks cling to the outer corners of the glass. Through the clear middle of the window, filling well over half the frame's height and in sharp focus, is the shelter's backlit end-panel poster, glowing evenly from LED tubes behind it inside a thin dark metal frame: a glossy campaign portrait of the man from the reference image, head and shoulders, holding a phone to his right ear with his right hand, eyes to camera, a wide confident smile, on a flat deep magenta background, and beneath his face, in enormous heavy condensed white sans-serif capitals, the single line \"SAVE OUR NHS\". The shelter's glass side panes and perch bench sit dim and empty beside it; a sodium-orange street lamp behind the shelter hazes the rain into an orange glow, and the pavement in front reflects the poster's light in a long wet smear. Cold teal shadows, visible film grain, slight halation round the bright panel. The slogan is the only readable text in the frame: no party name, logo, small print, timetable writing, signs or number plates. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "cea346ce-0ab0-4e2f-9fb6-430f6d92f4dd"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/07.jpg",
+ "made": "2026-11-16T09:59:56.204Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 night photograph on cheap colour negative film, standing at the front of a narrow British corner-shop aisle and looking straight down it. Only the front tube is still on; each one after is off, so the aisle fades step by step into near-black at the back, where the stockroom door stands open a hand's width. Crisps and tins on cluttered shelves, unbranded. On the floor halfway down, a single loaf of white sliced bread lies dropped, a price sticker reading \"£5\". Cold teal fluorescent cast, blown highlights, thick grain, soft focus, slightly crooked framing. Empty of people, but the dark end feels occupied. No digital sheen. Thanks.",
+ "source_id": "3cd68585-82b4-4b10-b6e8-7ed4925c77e7"
+}

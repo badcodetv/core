@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/bob/NW2-a-a.jpg",
+ "made": "2026-11-16T14:19:32.511Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid photograph inside a worn British local pub on quiz night, shot from table height. Foreground: a builder in a hi-vis vest half out of his chair, mouth open mid-shout, jabbing a tiny pencil at a crumpled answer sheet that reads \"50,000\" in big confident scrawl, mates grinning and pint glasses crowding the table. Patterned carpet, an unbranded fruit machine glowing pink and green. Far back, in sharp focus through the gap between shoulders, the man from the attached reference sheet sits alone at a corner table, head down, calmly writing. Warm tungsten light, cheap colour film, heavy grain, slight flash falloff, cold teal rain on the black window behind him. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "ec2a0402-7387-4dcb-b5a1-d77aea687dc2"
+}

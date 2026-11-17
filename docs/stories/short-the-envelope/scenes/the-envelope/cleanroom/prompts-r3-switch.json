@@ -1,0 +1,31 @@
+{
+  "research": [
+    "https://en.wikipedia.org/wiki/The_Sting — the big con is 'the wire': a crew builds a whole fake off-track betting parlour full of shills, and the mark's bets are placed after the result is already fixed; the film's sections open with old-fashioned painted title cards in a Saturday Evening Post manner with a warm golden glow; muted browns and maroons, ragtime mood, charm over menace",
+    "https://catalog.afi.com/Catalog/moviedetails/54391 — the chapter cards name the stages of a con (set-up, hook, tale, wire, shut-out), so the card title itself tells the audience which move is being played",
+    "https://checkplease.neocities.org/p/40-beats-the-sting — the opening street con is 'the switch': the real money bundle is swapped for a lookalike wad of tissue paper; the fake parlour works as a stage set, a metaphor for the film itself",
+    "https://en.wikipedia.org/wiki/The_switch_(con) — the switch is a two-person con: a phoney package is exchanged for the one holding the money, so the mark keeps holding something that looks identical",
+    "https://en.wikipedia.org/wiki/Shell_game — the shell game is a short con: the dealer moves or hides the marker by sleight of hand and replaces it as required, and shills or a few early wins convince the mark the game is straight",
+    "https://cavac.at/cavacopedia/Pigeon%20Drop — pigeon drop: two grifters posing as strangers hand the mark a decoy envelope by sleight of hand while the real stake leaves with them"
+  ],
+  "notes": "The Sting's pleasure is that the audience is let in on the trick: we see the crew, the set, the sleeve, the backroom, while the mark sees only the counter. So each staging shows the machinery of the con from the crew's side, with the crew pleased with themselves, and keeps the working man out of the joke (absent, or a small back view in good faith). A: the reveal as an opened hand: both envelopes slit open on the felt, the same order inside each. B: the wire-store backroom: past the curtain, the parlour is a set, one telegraph line runs from both envelopes to a single arms order. C: the shell game with bowler hats: whichever hat you lift, the same crate. Stamps are kept short and exact, the order number is the one repeated element, and every face is under a brim. No film characters, cards, poster or actors; invented notes, no currency marks.",
+  "stills": [
+    {
+      "beat": "switch",
+      "id": "SW3-a",
+      "look": "the opened hand: both envelopes slit, same order inside",
+      "prompt": "Vertical 9:16 painted 1930s magazine-cover chapter card in the style of the reference: opaque gouache, flat poster colour, visible brush strokes, ochre, maroon and bottle green. Mustard band at the top, hand-lettered: THE SWITCH. Overhead view of a green baize betting counter. A dealer's hands, sleeve garters and a gold ring, lay two slit-open envelopes side by side, stamped APPROVED BY THE CONSERVATIVE PARTY and APPROVED BY THE LABOUR PARTY. From each one slides the identical typed slip, RIFLES, ORDER No. 0417, wrapped in crisp invented banknotes. A third matching slip peeks from his cuff. Thanks."
+    },
+    {
+      "beat": "switch",
+      "id": "SW3-b",
+      "look": "behind the curtain: the parlour is a set, one wire",
+      "prompt": "Vertical 9:16 painted 1930s magazine-cover chapter card in the style of the reference: opaque gouache, flat poster colour, visible brush strokes, ochre, maroon and bottle green. Mustard band at the top, hand-lettered: THE SWITCH. A maroon curtain half drawn on the backroom of a betting parlour. Two envelopes pinned to a corkboard, stamped APPROVED BY THE CONSERVATIVE PARTY and APPROVED BY THE LABOUR PARTY, red string from both running into one brass telegraph key. A clerk in a green eyeshade taps it beside a wooden rifle crate stencilled ORDER No. 0417, bundles of fresh invented banknotes on top. Grinning shills in waistcoats lean in the doorway. Thanks."
+    },
+    {
+      "beat": "switch",
+      "id": "SW3-c",
+      "look": "shell game with bowlers: every hat hides the crate",
+      "prompt": "Vertical 9:16 painted 1930s magazine-cover chapter card in the style of the reference: opaque gouache, flat poster colour, visible brush strokes, ochre, maroon and bottle green. Mustard band at the top, hand-lettered: THE SWITCH. A dealer in a pinstripe waistcoat, face shaded by his hat brim, lifts two bowler hats off a felt table at once, an envelope tucked in each hatband, stamped APPROVED BY THE CONSERVATIVE PARTY and APPROVED BY THE LABOUR PARTY. Under both hats sits the same small rifle crate stencilled ORDER No. 0417, topped with fresh invented banknotes. Behind him a partner winks, fanning more notes. Thanks."
+    }
+  ]
+}

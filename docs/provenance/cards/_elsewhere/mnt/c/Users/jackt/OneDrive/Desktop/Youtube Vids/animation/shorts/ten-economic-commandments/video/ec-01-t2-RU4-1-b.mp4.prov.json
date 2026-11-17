@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-01-t2-RU4-1-b.mp4",
+ "made": "2026-11-16T18:07:10+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Single continuous handheld shot, fisheye lens, 8 seconds. The seated masked figure nods slowly to a heavy beat, shoulders rocking, then raises the chalkboard a few inches closer and holds it there. His blank mask stays dead-on to camera the whole time. Not one chalk mark on the board changes; railings and brownstones hold still. The streetlamp flickers once. Sound: distant traffic, a car door, a dog barking far off. Nobody talks or sings; leave out any music.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-1-b.jpg",
+ "why": "anim r1 clean room, part: intro",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU4-1-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "01-t2",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T18:02:47.053Z"
+ }
+}

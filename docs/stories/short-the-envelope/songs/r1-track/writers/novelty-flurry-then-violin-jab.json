@@ -1,0 +1,13 @@
+{
+  "name": "novelty-flurry-then-violin-jab",
+  "style": "15-second timed cue, solo piano then strings, spoken word, voice-forward. 0-7s: invented 1920s novelty piano showpiece, glittering chromatic right-hand runs, triplet figures, glissando sweeps, cheeky vaudeville bounce, dry woodblock ticking the pulse. 7-10s: the piano stumbles, fumbles a bar, then doubles its speed in a nervous scramble; a brass cash register bell rings once. 10.5s: dead stop, a single sharp violin stab, then a low sustained cello drone alone. Over the drone a very deep, slow, gravelly old man speaks, grandfatherly, unimpressed, weary authority, close dry mic, plain conversational pacing, no melody. Dry 78rpm room tone, intimate, low dynamics after the stab.",
+  "exclude": "ragtime, Joplin rag, stride piano, The Entertainer, film score pastiche, orchestral swell, sung vocals, singing, choir, chorus, rap, drums, bass guitar, synth",
+  "lyrics": "[Intro: 0-7s, solo novelty piano flurry, runs and glissandi, woodblock tick]\n\n[Break: 7-10s, piano trips and doubles up, cash register bell]\n\n[Violin stab, then low cello drone]\n\n[Spoken word: deep elderly man, slow, weary]\nThey're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\n\n[End: cello drone, silence]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 75,
+  "vocalGender": "male",
+  "durationSec": 15,
+  "maxMode": false
+}

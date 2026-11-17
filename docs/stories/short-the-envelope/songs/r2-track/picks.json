@@ -1,0 +1,162 @@
+{
+ "title": "Envelope Sound Picks",
+ "eyebrow": "BadCode Shorts · The Envelope · sound",
+ "heading": "The Envelope: pick the music and the voice",
+ "round": 2,
+ "intro": "Your rules: the Suno track is music and sounds only; the line is an AI Studio voice. Pick one track and one voice (and note anything). Round 1's speaking tracks are folded away below.",
+ "sections": [
+  {
+   "h": "Round 2",
+   "lede": "Four instrumental sounds, two takes each (open in Suno); four voices for the line, playing here.",
+   "groups": [
+    {
+     "slot": "track-r2",
+     "round": 2,
+     "title": "The music (instrumental)",
+     "line": "About 15 s; the last card is left sparse for the line.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "pit1",
+       "href": "https://suno.com/song/752c27c3-af5f-4f71-930e-4c4513f6b76c",
+       "label": "pit1: 1928 Berlin crook-cabaret pit band: banjo, wheezing harmonium, nasal alto sax (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "pit2",
+       "href": "https://suno.com/song/631485eb-017e-4ee1-ae95-ffb91eef1beb",
+       "label": "pit2: 1928 Berlin crook-cabaret pit band: banjo, wheezing harmonium, nasal alto sax (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "hotclub1",
+       "href": "https://suno.com/song/584c8aff-7bf8-4e10-8ce4-d6f991b351e4",
+       "label": "hotclub1: 1930s Paris string band: chopping guitars, walking bass, swinging violin lead (0:24) (runs long, trimmed in the cut)",
+       "warn": ""
+      },
+      {
+       "id": "hotclub2",
+       "href": "https://suno.com/song/0408a874-28c7-4d5d-9ac0-a05c520da292",
+       "label": "hotclub2: 1930s Paris string band: chopping guitars, walking bass, swinging violin lead (0:18) (runs long, trimmed in the cut)",
+       "warn": ""
+      },
+      {
+       "id": "tango1",
+       "href": "https://suno.com/song/775163f6-1f4c-42a5-bf42-d6dfbd0c7df3",
+       "label": "tango1: Slinky 1930s tango: habanera parlour piano + breathing bandoneon (0:18) (runs long, trimmed in the cut)",
+       "warn": ""
+      },
+      {
+       "id": "tango2",
+       "href": "https://suno.com/song/a34f722a-c219-4bf0-9006-73864f647fae",
+       "label": "tango2: Slinky 1930s tango: habanera parlour piano + breathing bandoneon (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "cartoon1",
+       "href": "https://suno.com/song/6e38a9b2-5a00-49ed-9ad8-999281600d85",
+       "label": "cartoon1: 1930s cartoon-studio orchestra scoring every move: tiptoe bassoon, pizzicato (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "cartoon2",
+       "href": "https://suno.com/song/48f35d21-2499-47f1-8e59-157eb3157261",
+       "label": "cartoon2: 1930s cartoon-studio orchestra scoring every move: tiptoe bassoon, pizzicato (0:15)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-badcode",
+     "round": 2,
+     "title": "The voice: BadCode",
+     "line": "\"They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "voices/badcode-a-algenib.wav",
+       "label": "a: Algenib: East End bookie's runner, gravelly, confiding, 60s",
+       "warn": "9.6 s; Whisper heard 'weapon's size' (accent? check)"
+      },
+      {
+       "id": "b",
+       "src": "voices/badcode-b-iapetus.wav",
+       "label": "b: Iapetus: clipped 1930s wireless announcer, deadpan",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "voices/badcode-c-kore.wav",
+       "label": "c: Kore: Glasgow croupier, wry, quick, 50s (woman)",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "voices/badcode-d-puck.wav",
+       "label": "d: Puck: breezy Brummie compere, sunny (the register swing)",
+       "warn": "8.2 s; Whisper heard 'are still up in any way' (check)"
+      }
+     ]
+    },
+    {
+     "slot": "track-r1",
+     "title": "The track",
+     "line": "Round 1 (these speak the line: dropped by Jack's rule)",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "radio1",
+       "href": "https://suno.com/song/976ac88e-4bf4-45fc-80db-3f2ca6d2a69a",
+       "label": "radio1: Radio crime serial: organ stings + foley, plummy announcer (0:14)",
+       "warn": ""
+      },
+      {
+       "id": "radio2",
+       "href": "https://suno.com/song/0f3bde40-ac0a-4358-ad6d-60238d7327e6",
+       "label": "radio2: Radio crime serial: organ stings + foley, plummy announcer (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "stride1",
+       "href": "https://suno.com/song/e5731a22-a1bd-4a9e-a334-d9f1e8f29a56",
+       "label": "stride1: Stride-piano hustle that stops dead; a smoky cabaret hostess says the line (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "stride2",
+       "href": "https://suno.com/song/5394546a-cfce-43d7-b5e1-394fff3088af",
+       "label": "stride2: Stride-piano hustle that stops dead; a smoky cabaret hostess says the line (0:17)",
+       "warn": ""
+      },
+      {
+       "id": "back1",
+       "href": "https://suno.com/song/a30fe222-19cc-42ab-871a-d1fd033e601a",
+       "label": "back1: A back room: detuned upright behind a wall, a man's low aside (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "back2",
+       "href": "https://suno.com/song/bf6aa9a8-d51a-4a55-ab54-73c38b9a2fa5",
+       "label": "back2: A back room: detuned upright behind a wall, a man's low aside (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "novelty1",
+       "href": "https://suno.com/song/4cbcd605-f7be-4e03-9c30-5f1bf47c5735",
+       "label": "novelty1: Novelty piano flurry, then a violin jab and the line (0:14)",
+       "warn": ""
+      },
+      {
+       "id": "novelty2",
+       "href": "https://suno.com/song/be917e95-0e22-4bcc-984b-317162c7ee9e",
+       "label": "novelty2: Novelty piano flurry, then a violin jab and the line (0:15)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ]
+}

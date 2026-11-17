@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/lad-a-puck.wav",
+ "made": "2026-11-15T11:38:08+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "One version of me gets home fine.",
+ "inputs": {
+  "profile": "# Audio Profile\nThe speaker is a twenty-two-year-old lad from Leeds who has had a few too many. He sounds cocky and loud, grinning as he talks, with a laugh breaking into his words.\n\n## Scene:\nA city street at night outside a pub, taxis idling, car keys jangling in his raised hand.\n\n## Sample Context:\nHis mates have told him to get a cab. He has just read online that there are infinite versions of him in parallel universes, so he is certain it doesn't matter if he drives.\n",
+  "profile_file": "docs/stories/short-infinite-yous/voices/profiles/lad-a-puck.md"
+ },
+ "settings": {
+  "voice": "Puck",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

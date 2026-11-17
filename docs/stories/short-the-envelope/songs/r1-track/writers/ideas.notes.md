@@ -1,0 +1,21 @@
+# Round r1-track: research notes (ideas writer)
+
+- Suno speech: a dedicated Speech beta exists for narration-first audio; inside the song model, `[Spoken word]`-style tags help but are unreliable (sometimes the tag gets sung). Keep spoken lines plain, unrhymed, no chorus/hook; generate several takes. Fewer syllables beats more adjectives for delivery. Unverified third-party guides.
+  - https://jackrighteous.com/es/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-narration-workflow
+  - https://jackrighteous.com/es/blogs/guides-using-suno-ai-music-creation/suno-speech-beta-spoken-audio-background-music
+  - https://sunowatermark.com/blog/suno-v6-vocal-prompts-2026/
+  - https://reddit.birdcat.cafe/r/SunoAI/comments/1dwqexa/my_prompting_tips_for_v35_v2/lbwdljh/?context=3
+- Tags: keep them 1–3 words, early and at section changes; `[Intro: Sound Effect]`, `[Intro: Spoken Word]`, `[Man]`/`[Woman]`; bracketed SFX (bell ding, applause, static) are reported to work. No official grammar.
+  - https://learnprompting.org/blog/guide-suno
+  - https://sunohk.pages.dev/suno-tutorial/suno-handbook-02-song-structure-tags/
+  - https://musci.io/blog/suno-tags
+- Novelty piano (Confrey, "Kitten on the Keys" 1921): light, flashy, showy runs, often less syncopated than ragtime; distinct from stride. A period piano vocabulary that is not Joplin.
+  - https://en.wikipedia.org/wiki/Novelty_piano
+  - https://syncopatedtimes.com/novelty-piano-ragtime-where-it-came-from-where-it-went/
+- Stride (James P. Johnson, Fats Waller): left hand leaps bass note (1, 3) to chord (2, 4), "oom-pah", right hand free for melody; harder-swinging than ragtime.
+  - https://www.thejazzpianosite.com/?p=3670
+  - https://www.masterclass.com/articles/stride-piano-guide
+- 1930s radio drama: the studio organist's "sting" (one long note or chord stabbing a line), cue words like "danger", "sting", "ominous"; turntable and prop sound effects. A ready-made period grammar for "sound, jab, line".
+  - https://ruyasonic.com/mus_score_1.htm
+  - https://otrr.org/FILES/Articles/Jack_French_Articles/Old_Time_Radio_Sound_Effects.htm
+  - https://otrr.org/FILES/Articles/Elizabeth%20McLeod/Dramatic%20Scoring%20For%20Radio.htm

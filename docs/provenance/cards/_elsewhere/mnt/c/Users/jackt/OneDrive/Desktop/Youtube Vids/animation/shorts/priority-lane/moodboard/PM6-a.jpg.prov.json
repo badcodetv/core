@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PM6-a.jpg",
+ "made": "2026-11-14T14:18:55.584Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph, shot on 35 mm colour negative film at night in the rain: an extreme close view of a backlit advertising poster in the end panel of a London bus shelter, the camera so near that the poster fills almost the whole frame and only a sliver of thin dark aluminium frame shows down the left and right edges. The poster is a glossy, airbrushed campaign photograph of the man from the reference image, head and shoulders, his head in the upper middle of the frame at the same size and place as in the reference, holding a phone to his right ear with his right hand, elbow tucked in, eyes looking straight into the lens, brows lifted, a wide practised smile showing teeth, the reassuring face of a man taking your call personally. Behind him the poster has a flat, clean cream-white studio background. Across the lower third of the poster, in sharp focus, a large headline in heavy condensed black sans-serif capitals reads \"SAVE OUR NHS\", and there is no other text anywhere in the frame. The poster is lit evenly from behind by the light box's LED tubes, so it glows softly and the print shows a faint dot grain up close; a sheet of toughened glass sits in front of it, beaded with raindrops and running streaks that catch the glow, with a soft reflection of sodium-orange street lamps across the upper corner and a smear of blue emergency light sliding over the glass from the road. Cold teal shadow at the frame edges, visible film grain, no logos, real photograph, not CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "54f86b56-340d-4e61-8d17-f9dce6c3f59e"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "threepenny-crook-pit-band",
+  "style": "instrumental, 1928 Weimar Berlin underworld cabaret pit band, seven-piece theatre band, sour minor-key march-foxtrot, 15-second cue. Chugging plectrum banjo on the offbeat and a wheezy pump harmonium hold up the swindle; a reedy, nasal alto saxophone slinks in as the lead, sliding between two notes like a hand hovering over two cards; a cup-muted trumpet answers it with a snide little bent reply; tuba-and-trombone oompah underneath, slightly out of tune, lopsided. Foley played inside the band, dry and close: a crisp paper riffle, a single coin clacked down on a wooden counter, then one deep timpani thump at the 7-second mark. At 10.5 seconds the band chokes off mid-bar: only one sustained harmonium chord hangs in the air with a lone dry banjo pluck, lots of empty space. Scratchy 78rpm theatre-pit room sound, gritty, mocking, genteel and crooked",
+  "exclude": "vocals, singing, spoken word, speech, narration, choir, voice, rap, piano lead, ragtime, stride piano, orchestral strings, modern drums, synth",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false
+}

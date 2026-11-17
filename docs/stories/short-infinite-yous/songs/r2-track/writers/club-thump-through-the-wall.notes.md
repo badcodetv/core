@@ -1,0 +1,10 @@
+# club-thump-through-the-wall: what shaped it
+
+- The arc is written as a chain of production moves (muffled, doubling/phasing, tape-stop, filter sweep, door slam, silence, street air) because the brief asks for the sequence rather than a genre, and Suno has no lyrics box to carry section tags here (lyrics must stay empty).
+- "Through the wall" = low-pass filtering. Audio guides put the through-a-wall sound at a low cutoff (roughly 200-500 Hz; others say up to 3 kHz) and note a plain low-pass alone can sound fake, so the prompt also says "dull bass thud" and "smeared, boomy" to describe the result, not the filter setting. Sources: https://www.audeobox.com/learn/glossary/low-pass-filter/ , https://www.dvinfo.net/forum/archive/index.php/t-140250.html , https://www.musicianwave.com/how-to-make-audio-sound-muffled/
+- Tape-stop described by what it sounds like (pitch dragging down to a halt), since no Suno-specific guidance for the term turned up: https://morphic.com/resources/sounds/tape-stop-sound-effects
+- The rising filter sweep as the "reveal" move (dark to bright) follows the low-pass glossary's description of cutoff automation as a reveal: https://www.audeobox.com/learn/glossary/low-pass-filter/
+- Style box written as dense descriptive phrases (genre, tempo, production, atmosphere) with the excludes in the Exclude field, not inline, and the exclude list kept short-ish, per https://github.com/mttkllr/suno-field-guide . That guide also gives weirdness 40-60 as balanced and style influence ~70 for strict adherence: 55 / 70 chosen so the odd production moves get room but the drum-machine palette holds.
+- "no melody" and excluding piano/strings/orchestra keep the performer a drum machine and sampler, per the experiment; vocal chops/MC/spoken word excluded since a garage loop often summons them.
+- Sound effects (door slam, taxi idle, two-tap horn) go in the style box because the lyrics box must stay empty; the field guide notes SFX cues usually live in lyrics, so whether Suno renders them from the style box alone is unverified.
+- Duration fixed at 15 s, model v6, as the brief sets.

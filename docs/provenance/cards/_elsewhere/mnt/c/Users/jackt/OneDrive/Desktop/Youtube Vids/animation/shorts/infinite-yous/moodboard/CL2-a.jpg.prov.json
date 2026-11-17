@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/CL2-a.jpg",
+ "made": "2026-11-15T11:44:05.703Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Create a vertical 9:16 night photograph, the next instant after the scientist from the second image grabbed the dividing bars. Lads, strips and street from the first image; his balaclava exactly as the third image, full white ring and red triangle over his left eye showing, goggles up on his head. He drags the bars inward with all his weight, shoulders hunched, teeth-gritted posture. The five strips are crushed into thin warped slivers, bars bowing and bunching together in the centre where hot white light flares between them. The five lads are squeezed shoulder to shoulder, faces overlapping and stretched, mid-merge. Slight motion blur on the bars, warm bokeh behind, signs blurred and unreadable. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SP1-a.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SP1-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-SQ2-a.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-mask.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9cb77f31-a2ca-4fcd-b052-1b89af8b86aa"
+}

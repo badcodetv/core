@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/05.jpg",
+ "made": "2026-11-16T13:21:35.740Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph, close and slightly overhead, of a large paper map of England pinned to a cork board on a council office wall after hours. The map is crowded with small teal map pins, so dense around London, Birmingham, Manchester and the coast towns that the pins merge into solid glittering crusts and the printed roads disappear beneath them; thinner scatterings reach every county. A desk lamp is off; the only light is a buzzing fluorescent tube overhead, cold teal, with the pins casting tiny shadows. Shallow depth of field, 50mm, cheap colour film, grain, slight vignette. No text, no people, no logos. Thanks.",
+ "source_id": "7a04f10b-6615-447e-ad32-4441642a4271"
+}

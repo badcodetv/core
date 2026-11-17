@@ -1,0 +1,91 @@
+[
+ {
+  "at": "2026-11-16T13:22:12+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/7w4eY8PR6FXMiin5rEggmF",
+  "what": "Mood board round 1: clean room, 4 sealed writers, 12 stills of the UK numbers in varied ways",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-true-scale/scenes/true-scale <out.html>"
+ },
+ {
+  "at": "2026-11-16T13:37:11+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
+  "what": "Round 2: six other ways to convey it (clean room ideas writer + 6 sealed writers), setup + reveal each, 12 stills",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-16T13:53:51+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
+  "what": "Round 3: bomber maybe stills (4) added to the ideas page",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-16T14:24:19+00:00",
+  "stage": "picks",
+  "round": 5,
+  "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
+  "what": "Round 5: v2 Nearest Wins stills (clean room, 18)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-true-scale/scenes/true-scale/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-16T14:45:49+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "Rough cut 1: v1 then v2 back to back, stills with pushes, AI Studio voices, 49.5 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/ts-timeline",
+  "decided": [
+   "Jack: 'you decide' on picks, Bob's line and voices"
+  ]
+ },
+ {
+  "at": "2026-11-16T14:48:47+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "Rough cut 1 fix: voice lines were stacked at 0 s (loudnorm dropped adelay); each line now placed at its own time"
+ },
+ {
+  "at": "2026-11-16T15:04:27+00:00",
+  "stage": "picks",
+  "round": 6,
+  "url": "https://claude.ai/artifact/N37DuqVLCYaLkQV2cEuVfN",
+  "what": "Round 6: diverse crowd, numbers fixed; 8 passed, beats 1 and 4 blocked"
+ },
+ {
+  "at": "2026-11-16T15:23:47+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "Rough cut 2: Nearest Wins only, five Omni clips, subtler voices, packets blurred, 34.1 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/ts-timeline"
+ },
+ {
+  "at": "2026-11-16T15:33:35+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "Rough cut 3: faster dialogue, stats card, fruit-machine logo; 36.5 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/ts-timeline"
+ },
+ {
+  "at": "2026-11-16T15:59:33+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "rough cut 4: talking shots re-shot with the words, dubbed the Bank Robbery way (mouths read by eye at 12 fps, never early)",
+  "rebuild": "python3 scripts/shorts/true_scale_cut.py --round 4 && python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale <out>"
+ },
+ {
+  "at": "2026-11-16T16:15:04+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8",
+  "what": "rough cut 5: Jack's music pick rain1 (Suno c3f6c3ed) under the cut",
+  "rebuild": "python3 scripts/shorts/true_scale_cut.py --round 5 && python3 scripts/scene/build-timeline.py docs/stories/short-true-scale/scenes/true-scale <out>"
+ }
+]

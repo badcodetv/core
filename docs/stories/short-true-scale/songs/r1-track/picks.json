@@ -1,0 +1,94 @@
+{
+ "title": "True Scale Music",
+ "eyebrow": "BadCode Shorts · True Scale · music",
+ "heading": "Nearest Wins: pick the music and pub atmosphere",
+ "intro": "Six instrumental directions, two takes each (open in Suno). It sits under the whole short, under the voices. Pick one and note anything.",
+ "sections": [
+  {
+   "h": "Round 1",
+   "lede": "Music and sounds only, no voices.",
+   "groups": [
+    {
+     "slot": "track-r1",
+     "title": "The music bed",
+     "line": "About 35-40 s.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "piano1",
+       "href": "https://suno.com/song/e9e19c06-0e52-4522-a0ff-4f040c96a56e",
+       "label": "piano1: Pub upright piano (0:37). The lead performer is a slightly out-of-tune pub upright piano played by one bloke in the corner, low left-han",
+       "warn": ""
+      },
+      {
+       "id": "piano2",
+       "href": "https://suno.com/song/47a4983d-09db-4022-b40f-c6cb94099b51",
+       "label": "piano2: Pub upright piano (0:40). The lead performer is a slightly out-of-tune pub upright piano played by one bloke in the corner, low left-han",
+       "warn": ""
+      },
+      {
+       "id": "brass1",
+       "href": "https://suno.com/song/df0f4792-3a64-4c4c-8c49-5b1880d5448d",
+       "label": "brass1: Colliery brass band (0:40). The performer is a northern colliery brass band heard through a pub wall: tubas and baritone horns only in the",
+       "warn": ""
+      },
+      {
+       "id": "brass2",
+       "href": "https://suno.com/song/0e6180df-e564-4e92-b48d-aa45dd69969e",
+       "label": "brass2: Colliery brass band (0:40). The performer is a northern colliery brass band heard through a pub wall: tubas and baritone horns only in the",
+       "warn": ""
+      },
+      {
+       "id": "fruit1",
+       "href": "https://suno.com/song/4ae7d9c8-8c0c-4bb4-9ba2-2a3119af0134",
+       "label": "fruit1: Fruit-machine electronics (0:48). The performer is the fruit machine itself: 1980s arcade-cabinet electronics, square-wave bleeps, reel whir loo",
+       "warn": ""
+      },
+      {
+       "id": "fruit2",
+       "href": "https://suno.com/song/c238aeb4-dcc8-4a37-af45-f3536705d44c",
+       "label": "fruit2: Fruit-machine electronics (0:41). The performer is the fruit machine itself: 1980s arcade-cabinet electronics, square-wave bleeps, reel whir loo",
+       "warn": ""
+      },
+      {
+       "id": "trio1",
+       "href": "https://suno.com/song/6913aa13-fcd8-430d-8c0c-a4086b99f566",
+       "label": "trio1: Rhythm section trio (0:40). The performer is a lounge jazz trio of double bass, brushed snare and a soft vibraphone that only plays two-no",
+       "warn": ""
+      },
+      {
+       "id": "trio2",
+       "href": "https://suno.com/song/6346c48b-e042-4459-8331-c943bbbe8021",
+       "label": "trio2: Rhythm section trio (0:39). The performer is a lounge jazz trio of double bass, brushed snare and a soft vibraphone that only plays two-no",
+       "warn": ""
+      },
+      {
+       "id": "squeeze1",
+       "href": "https://suno.com/song/e74f3bcc-29b0-4a08-99e1-4bec6027a96d",
+       "label": "squeeze1: Squeezebox folk session (0:41). The performers are a pub folk session: a melodeon or accordion pumping chords, a bodhran and a strummed acoust",
+       "warn": ""
+      },
+      {
+       "id": "squeeze2",
+       "href": "https://suno.com/song/5da8973f-a123-478a-8c91-3d7152bbb09e",
+       "label": "squeeze2: Squeezebox folk session (0:40). The performers are a pub folk session: a melodeon or accordion pumping chords, a bodhran and a strummed acoust",
+       "warn": ""
+      },
+      {
+       "id": "rain1",
+       "href": "https://suno.com/song/c3f6c3ed-d5e7-4dc6-bb41-956367711875",
+       "label": "rain1: Rain and room ambience (0:40). The performer is barely a musician: an ambient-electronic producer making a bed out of the pub room tone itsel",
+       "warn": ""
+      },
+      {
+       "id": "rain2",
+       "href": "https://suno.com/song/2d4ace93-3414-4927-95ff-e900ac06d471",
+       "label": "rain2: Rain and room ambience (0:40). The performer is barely a musician: an ambient-electronic producer making a bed out of the pub room tone itsel",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

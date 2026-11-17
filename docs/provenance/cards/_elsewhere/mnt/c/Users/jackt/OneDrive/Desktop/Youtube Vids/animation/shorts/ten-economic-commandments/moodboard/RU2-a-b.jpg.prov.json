@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/RU2-a-b.jpg",
+ "made": "2026-11-16T16:40:30.135Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 street portrait, setting and colour as the attached photo: bench, chain-link fence, payphone booths, warm late sun, faded 1980s film. Sitting centre, knees wide, a figure in a baggy beige thrift-shop suit, trousers too short, a battered tan fedora over a black balaclava, a foam-headed corded microphone on one knee. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Flanking him, an older woman in a tracksuit and a lanky teenager pose like a crew. 50mm, grain, no lettering. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/tec-refs/ref1-fence-bench.png",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/tec-refs/ref1-fence-bench.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "4aa45d5b-d6c3-4cf3-bd45-d840b4b9f864"
+}

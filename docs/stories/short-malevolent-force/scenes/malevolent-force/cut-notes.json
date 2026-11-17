@@ -1,0 +1,31 @@
+{
+ "round": 2,
+ "plan": [
+  {
+   "h": "Done (edit only, nothing generated)",
+   "items": [
+    "After the end card: black, a lightning flash, a dip, a second flash that fades and leaves the BadCode logo standing (the stacked logo, reversed, on the brand black). 2.6 s; the cut is now 20.8 s."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "The ending plays in silence (vibes1 ends at 15 s). A thunder crack under the flash would land it; say if you want one.",
+    "Not in Premiere yet: say \"build it in Premiere\" for short-malevolent-force-1-malevolent-force-r2."
+   ]
+  }
+ ],
+ "replies": {
+  "at441": "Done: after the card, black, two lightning flashes (the second fades out) and the BadCode logo is standing there, held for 2 s. Edit only."
+ },
+ "kai_round1": {
+  "at441": {
+   "at": 1794831198717,
+   "beat": "card",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at441",
+   "note": "after this part put the badcode logo, make lightning flash and then it appear thanks. ",
+   "tc": "00:00:18:09"
+  }
+ }
+}

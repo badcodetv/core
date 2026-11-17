@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/14.jpg",
+ "made": "2026-11-16T09:59:56.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical snapshot from the pavement through the open glass door of a small British corner shop at night, shot on cheap 35mm colour film, grainy, soft, underexposed, cold teal cast with overblown fluorescent tubes. Hand-printed paper sign taped to the door glass reads \"BREAD £50\". Inside: a wire spinner rack, a lit fridge, a wall fan, and at the far end the stockroom door wide open, a cold blue light pulsing from inside it. On the dirty doormat a small unbranded purple chocolate bar has fallen, its sticker reading \"£12\". The shop is empty yet feels occupied. Thanks.",
+ "source_id": "c46f750e-b151-4a87-b66c-cacb9f2d0d31"
+}

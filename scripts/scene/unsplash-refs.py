@@ -38,7 +38,8 @@ def env_key():
     env = ROOT / '.env'
     if env.exists():
         for line in env.read_text().splitlines():
-            if line.strip().startswith('UNSPLASH_ACCESS_KEY='):
+            line = line.strip().removeprefix('export ').strip()
+            if line.startswith('UNSPLASH_ACCESS_KEY='):
                 return line.split('=', 1)[1].strip().strip('"\'')
     return None
 

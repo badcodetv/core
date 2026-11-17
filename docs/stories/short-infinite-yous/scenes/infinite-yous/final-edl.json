@@ -1,0 +1,158 @@
+{
+ "sequence": "short-infinite-yous-1-infinite-yous-r4",
+ "title": "Infinite Yous: rough cut",
+ "heading": "BadCode Shorts \u25b2 Infinite Yous",
+ "fps": 24,
+ "total": 15.0,
+ "intro": "Rough cut 4 (Jack: \"use the white lines from the first video as a reference for BadCode to close; remove the other thing\" + voice note \"make them English, say this line fast\"): the squeeze is remade from the split frame itself, gripping and closing the thin white lines (no metal bars); the figure's line is a fast English take (London) as a stand-in; the lad's line is louder over the music.",
+ "beats": [
+  {
+   "id": "line",
+   "title": "A. The line",
+   "start": 0.0,
+   "dur": 3.5,
+   "see": "talking close-up iy-01t-a (TK1-b) lip-synced 0-2.0, then clip 1 wide from 1.5 s",
+   "act": "track: meter tick",
+   "lines": []
+  },
+  {
+   "id": "split",
+   "title": "B. The split",
+   "start": 3.5,
+   "dur": 3.0,
+   "see": "built in the edit (2a): clip 1 in five strips, offset 4 frames each, drifting apart",
+   "act": "track: the arpeggio smears",
+   "lines": []
+  },
+  {
+   "id": "squeeze",
+   "title": "C. Only one",
+   "start": 6.5,
+   "dur": 4.25,
+   "see": "stills from the split frame: WL1r-b grip on the white lines (6.5), WL2-b squeeze (7.5), white flash into WL3-a one (8.5)",
+   "act": "track: accents every second",
+   "lines": []
+  },
+  {
+   "id": "cab",
+   "title": "D. Into the cab",
+   "start": 10.75,
+   "dur": 2.583333333333334,
+   "see": "Jack's pick iy-04-ka-ramp-r1 (dancer kick, ramped); contact on the 11.3 s tom",
+   "act": "track: the gated tom",
+   "lines": []
+  },
+  {
+   "id": "logo",
+   "title": "E. Headlights",
+   "start": 13.333333333333334,
+   "dur": 1.666666666666666,
+   "see": "clip 5 clear wall from 4.6 s + the official stacked logo fading up",
+   "act": "track: pad, brass swell, whoosh",
+   "lines": []
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/preview.mp4",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-01t-a-TK1-b.mp4",
+   "start": 0.0,
+   "dur": 3.5,
+   "beat": "line",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/preview.mp4",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-01-LI1-b.mp4",
+   "start": 3.5,
+   "dur": 3.0,
+   "beat": "split",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/preview.mp4",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ2-a.jpg",
+   "start": 6.5,
+   "dur": 4.25,
+   "beat": "squeeze",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/preview.mp4",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-ka-ramp-r1.mov",
+   "start": 10.75,
+   "dur": 2.583333333333334,
+   "beat": "cab",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/preview.mp4",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-05-LO1-b.mp4",
+   "start": 13.333333333333334,
+   "dur": 1.666666666666666,
+   "beat": "logo",
+   "looped": false
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "mus-track"
+  },
+  {
+   "track": "A2",
+   "name": "vox-lad"
+  },
+  {
+   "track": "A3",
+   "name": "vox-figure"
+  }
+ ],
+ "events": [
+  {
+   "stem": "mus-track",
+   "t": 0,
+   "dur": 15.0,
+   "what": "the locked track, 92821b14, ducked under the lines",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/infinite-yous-r2-instrumental-taxi-meter-synth-p-92821b14.wav"
+  },
+  {
+   "stem": "vox-lad",
+   "t": 0.0,
+   "dur": 2.0,
+   "what": "lad a (Puck, brisk take 2), lip-synced to iy-01t-a x1.20: \"One version of me gets home fine.\"",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/dub/iy-01t-a-dub.wav"
+  },
+  {
+   "stem": "vox-figure",
+   "t": 8.6,
+   "dur": 1.6,
+   "what": "figure round 3 h (Sadaltager, London, fast; stand-in): \"There's only one.\"",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/sci3-h-sadaltager.wav"
+  }
+ ],
+ "flags": [
+  "Lad: Jack's pick a (Puck), a brisk retake fitted to the talking clip at x1.20 (\"home\" lands 0.12 s after his lips close). Figure: round-3 take h (English, fast) as a stand-in until Jack picks.",
+  "WL2-b (1 s, mid-squeeze): the light-lines cover the mask, so the triangle is hidden.",
+  "E: the logo fades up rather than being lit by a moving headlight; clip 5's own sweep is in its first 4 s, under a car."
+ ],
+ "round": 4,
+ "plan": [
+  {
+   "h": "What changed",
+   "items": [
+    "The squeeze: three new stills made from the split frame: WL1r-b grips the white lines (6.5), WL2-b crushes the five into a blazing seam (7.5), a white flash into WL3-a, one dazed lad (8.5). No metal bars.",
+    "Figure voice: round 3, English and fast: g Oxford, h London (in the cut), i Birmingham, on the voice page.",
+    "Mix: the lad's dubbed line is louder and the music dips further under both lines."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Pick the figure's voice (g, h or i).",
+    "Is the lip-sync close enough? Else LatentSync (install).",
+    "WL2-b's light-lines hide the mask's triangle for that one second: keep or re-roll."
+   ]
+  }
+ ]
+}

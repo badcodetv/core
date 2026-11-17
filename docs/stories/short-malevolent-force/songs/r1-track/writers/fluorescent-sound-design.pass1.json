@@ -1,0 +1,13 @@
+{
+  "name": "fluorescent-sound-design",
+  "style": "instrumental sound design piece, not a song, no beat. Objects and events in a small empty shop at night, close and dry: an old magnetic ballast fluorescent tube buzzing low near G, the buzz sitting under a dark G minor tone like a held drone; a refrigerator compressor rattling as it cycles on; a glass door creaking slowly open on stiff hinges; then three lone notes on a battered, badly out-of-tune upright piano, wrong notes, spaced apart, each one snapped off by a crackling electrical spark and a stutter in the buzz; a faint concrete stockroom echo behind. Final event: one deep sub impact boom, a single high glassy ping from the tube, then the hum clicks off into dead silence.",
+  "exclude": "vocals, singing, spoken word, choir, humming voice, drums, percussion loop, beat, bassline, synth pad, orchestra, strings, guitar, melody, chorus, epic trailer brass, lo-fi hip hop",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 60,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}

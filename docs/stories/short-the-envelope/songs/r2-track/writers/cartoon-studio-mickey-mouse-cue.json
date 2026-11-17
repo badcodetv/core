@@ -1,0 +1,13 @@
+{
+  "name": "cartoon-studio-mickey-mouse-cue",
+  "style": "instrumental, 1930s black-and-white studio cartoon underscore, small theatre orchestra, mono shellac recording, hit-every-move mickey-mousing. Opens on a sly tiptoe bassoon line for a smooth con man, xylophone glissando and slide whistle as two envelopes fan out. Then a dithering old man: plucked cellos, wood block ticks, a hesitant clarinet trill. At 7 s a bright muted-trumpet and trombone stinger chord with a cymbal crash, a gag punchline. At 10.5 s the joke dies: muffled low timpani roll falling to near silence, one long bowed cello note, a heavy stage curtain swishing open. No vocals",
+  "exclude": "vocals, singing, speech, spoken word, narration, voice, choir, humming, scat, ragtime, stride piano, Scott Joplin, The Entertainer, modern production, synth, drum kit, EDM, trap beat",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false
+}

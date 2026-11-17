@@ -91,6 +91,18 @@ def corpus(kind):
     return out
 
 
+def staged(path):
+    """A clean-room prompts file written in the last 6 hours holds prompts staged for THIS run (2026-11-17:
+    every Priority Lane call was flagged IDENTICAL against its own just-written file, so the real warnings
+    drowned in noise and got ignored). Its exact match is not a repeat; near copies against it still count."""
+    import time
+    f = ROOT / path
+    try:
+        return f.name.startswith("prompts") and time.time() - f.stat().st_mtime < 6 * 3600
+    except OSError:
+        return False
+
+
 def check(prompt, kind="any"):
     ws = words(prompt)
     past = corpus(kind)
@@ -103,6 +115,8 @@ def check(prompt, kind="any"):
     for path, text in past:
         pw = words(text)
         if " ".join(pw) == norm:
+            if staged(path):
+                continue  # the prompt's own staged copy, written just before this run: not a repeat
             res["identical"].append(path)
             continue
         g4 = grams(pw, 4)

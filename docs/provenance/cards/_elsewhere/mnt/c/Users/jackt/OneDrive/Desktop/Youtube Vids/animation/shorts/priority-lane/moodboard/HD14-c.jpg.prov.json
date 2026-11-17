@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD14-c.jpg",
+ "made": "2026-11-17T13:00:46.584Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 photograph on grainy 35 mm colour-negative film, rainy London night, taken from further back inside a UK ambulance cab, the camera between and slightly behind the two front seats, high up, so the cab frames the view like a dark box: the edge of the driver's headrest and green-uniformed shoulder on the right, the driver's gloved hands on a big flat-angled wheel, a long flat van dashboard spanning the frame with a radio handset on its clip, and a data terminal on a metal arm whose screen casts an unreadable cyan glow onto the headliner and the driver's sleeve. The windscreen is tall and upright, wipers frozen halfway up, rain gathering in streams. Through it, the junction, police line and street from the reference image, seen from the ambulance at its stop line, a little further off: the line of white police motorcycles and officers in yellow hi-vis spaced across the road half a street ahead, one with a raised glove, the yellow box junction shining wet and empty, a red double-decker bus and held cars on the right with brake lights glowing, and a convoy of headlights coming down the long straight road under the lamps. Light sources: sodium-orange street lamps in a receding row, blue police strobes, our own blue beacons reflecting off the wet bonnet and pulsing faintly across the dashboard, red brake lights, the convoy's white headlights, the terminal's glow inside. Deep teal shadows in the cab, warm orange outside, film grain and halation, raindrops sharp on the glass. Natural hands, no extra fingers, no readable text, plates, signs or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "70fe15c0-b844-4ef5-9685-3b2cc13eed2a"
+}

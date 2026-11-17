@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/07.jpg",
+ "made": "2026-11-16T13:21:35.740Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph at night inside a shabby English lettings office after closing, a single flickering fluorescent tube overhead throwing cold teal light. The whole back wall, floor to ceiling and receding down a long corridor into darkness, is pegboard hung with thousands upon thousands of identical brass Yale-style house keys on small paper tags, each one for a house nobody lives in, dust on the tags, keys untouched for months. At the bottom of the frame, on a worn grey carpet tile, one small cardboard box of a few keys, lit brighter, looking tiny against the wall. No people. Cheap colour negative film, grain, slight green-teal cast, lonely and eerie. Thanks.",
+ "source_id": "4a863b25-a689-437a-ab9e-ec941a97c101"
+}

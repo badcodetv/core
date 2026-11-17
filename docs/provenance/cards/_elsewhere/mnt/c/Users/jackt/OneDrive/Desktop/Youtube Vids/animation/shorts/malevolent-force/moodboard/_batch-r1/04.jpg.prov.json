@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/_batch-r1/04.jpg",
+ "made": "2026-11-15T12:41:03.582Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Create a vertical 9:16 photograph of a handmade stop-motion miniature set: a tiny British corner shop built from cardboard, felt and plasticine, with visible thumbprints in the clay and fraying felt edges. A loaf of plain white bread the size of a fingertip sits on the counter with a little paper price flag reading \"£5\"; a crossed-out paper flag reading \"£1\" lies on the floor. An unbranded small purple chocolate bar with a plain wrapper sits beside it, flagged \"£2\". Lit by a single miniature filament bulb, so the set falls into shadow fast; the painted backdrop of the shop's rear wall is darker than it should be, and the shelving's shadow leans toward the loaf. Macro lens, shallow depth of field, practical-effects charm turned uneasy. Thanks.",
+ "source_id": "e3124f0e-b3a3-4226-abba-6dddcb5a6f81"
+}

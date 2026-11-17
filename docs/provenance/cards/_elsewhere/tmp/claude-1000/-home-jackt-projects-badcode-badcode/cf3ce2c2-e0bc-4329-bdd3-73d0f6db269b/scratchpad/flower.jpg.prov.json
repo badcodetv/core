@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/cf3ce2c2-e0bc-4329-bdd3-73d0f6db269b/scratchpad/flower.jpg",
+ "made": "2026-11-14T16:55:29.301Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A single red poppy in a wild meadow at golden hour, backlit so the thin petals glow, soft green grass blurred behind it, dew on the stem, shot close with a 100mm macro lens, natural photograph. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "52dce2f0-4a67-4b97-b40f-d3df5c05e17d"
+}

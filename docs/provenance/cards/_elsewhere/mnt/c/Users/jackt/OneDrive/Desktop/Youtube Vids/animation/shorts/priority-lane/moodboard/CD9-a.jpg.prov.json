@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD9-a.jpg",
+ "made": "2026-11-17T11:43:49.250Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph shot on 35 mm colour-negative film at night in heavy rain, keeping the vantage and look of the reference image: we lean over a wet brick railway-bridge parapet with black iron railings in the lower right corner and look down a wide London main road to a big crossroads with a yellow criss-cross box junction painted on the tarmac. Traffic here drives on the left. The junction is completely sealed on all four approaches. On our own side of the road, the left-hand lanes, a white ambulance with a yellow-green chequered body and flashing blue roof lights sits stopped at its white stop line in the lower left of the frame, seen from above and behind, its back doors toward us and its rear lettering lost in glare and rain so nothing is readable; just ahead of it six police officers in hi-vis yellow jackets and white helmets stand in a line beside three white police motorcycles with blue strobes, one officer holding up a flat palm. Across the junction, on the far side of the road, the right-hand lanes are held too: two more police motorcycles park across the far stop line, and behind them a queue of cars and a red double-decker bus wait facing us, their headlights pointing toward the camera, the bus destination blind a blurred unreadable glow. On the side road to the left, cars queue in the nearer lane with headlights facing right toward the junction, stopped by a single officer with a bike; on the side road to the right, cars queue in the farther lane with headlights facing left, stopped by another officer. Through the empty wet middle of the box junction, three black saloon cars drive in a tight line from left to right, headlights blazing, blue grille lights flickering, rain caught in their beams. Light sources: sodium-orange street lamps marching down the road, the blue strobes of the motorcycles and ambulance, a red traffic signal on a pole at the left kerb, the headlights of the held queues and the convoy, all smeared on the wet tarmac. Cold teal shadows, coarse visible film grain, soft halation around every lamp, natural faces and gloved hands, no readable text, plates or signs anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "3eea0ac8-2858-4ea4-85e3-cbc12cd27702"
+}

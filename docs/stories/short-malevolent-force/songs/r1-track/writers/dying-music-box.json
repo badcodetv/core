@@ -1,0 +1,13 @@
+{
+  "name": "dying-music-box",
+  "style": "Instrumental, 17 seconds, music box horror miniature. 3am in an empty corner shop under buzzing strip lights, and a tune starts from nowhere: a tiny wind-up music box, celesta shadowing it note for note, plucking a five-note minor lullaby in a lopsided limping meter, repeating like a child humming. Close and dry, the comb's teeth and the clockwork ticking right in your ear, a cold fluorescent hum underneath. The spring is running out: each pass a little slower, the pitch sagging flat, notes stretching apart. Three bright metallic plinks snap out of the middle like a light flickering, then the tune drags to almost nothing and one deep struck bell lands, and stops dead, only the hum left ringing for a breath.",
+  "exclude": "vocals, singing, choir, humming voice, spoken word, drums, beat, bass drop, synth pad swell, epic orchestra, guitar, happy, major key",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "high",
+  "weirdness": 60,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}

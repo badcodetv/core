@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/FX4-1-b.jpg",
+ "made": "2026-11-16T17:50:15.752Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using this image, cover every bit of the masked man's skin and change nothing else. His beige suit trousers now reach all the way down to his shoes, over black socks; a black roll-neck jumper under the jacket closes the gap between his black balaclava and the collar; his black gloves run up inside his jacket cuffs so no wrist shows. Keep the black balaclava with its white ring and red triangle exactly as it is, and keep the cap, the setting, the other people, the light, the framing and the film look exactly the same.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/tec-refs/r3-FX3-1-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/tec-refs/r3-FX3-1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "d92fb894-76d7-41ed-8d2e-29ca0bd05bc2"
+}

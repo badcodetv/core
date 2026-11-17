@@ -1,0 +1,80 @@
+[
+  {
+    "name": "lone-reverb-piano",
+    "style": "dark ambient horror piano, solo grand piano up high, restless running eighth-note figure in E minor at 180 BPM, stepwise minor phrase that circles and never resolves, cavernous cathedral reverb so every note bleeds into the next, haunting menu theme, sparse, echoing, deep menacing growls far below, dry mechanical clicks, no percussion, three stuttering staccato stabs in the middle, final hard low piano cluster then a long reverb tail fading to silence, instrumental",
+    "exclude": "vocals, singing, choir, spoken word, drums, drum kit, beat, bass drop, strings, synth lead, guitar, major key, uplifting, lo-fi",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "dying-music-box",
+    "style": "Instrumental, 17 seconds, music box horror miniature. 3am in an empty corner shop under buzzing strip lights, and a tune starts from nowhere: a tiny wind-up music box, celesta shadowing it note for note, plucking a five-note minor lullaby in a lopsided limping meter, repeating like a child humming. Close and dry, the comb's teeth and the clockwork ticking right in your ear, a cold fluorescent hum underneath. The spring is running out: each pass a little slower, the pitch sagging flat, notes stretching apart. Three bright metallic plinks snap out of the middle like a light flickering, then the tune drags to almost nothing and one deep struck bell lands, and stops dead, only the hum left ringing for a breath.",
+    "exclude": "vocals, singing, choir, humming voice, spoken word, drums, beat, bass drop, synth pad swell, epic orchestra, guitar, happy, major key",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "high",
+    "weirdness": 60,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "distorted-industrial-theme",
+    "style": "Industrial horror instrumental, E minor, 90 BPM half-time. Detuned upright piano slammed through tape saturation and a heavy bitcrusher, playing a fast nervous minor-key ostinato in the high octaves, high-pass filtered and thin at first over a sidechained sub drone that pumps. Downtuned baritone electric guitar on one low E, palm-muted, hits three separate slams two seconds apart, each slam doubled by an anvil strike and a struck steel sheet in a gated room. After the third slam the filter rips open: guitar chugs eighths on the low E, crushed piano screams on top, metal clanks tighten. Ends on one enormous slam of everything at once, then a hard cut to dead silence, no tail. Tight, dry, clipped transients, cold, close-miked. No vocals, instrumental only.",
+    "exclude": "vocals, choir, singing, spoken word, orchestral strings, cinematic swell, synthwave, EDM drop, four-on-the-floor kick, guitar solo, fade out, long reverb tail, music box, lo-fi",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "techno-through-the-wall",
+    "style": "instrumental, 17-second cold minimal techno horror cue, 124 bpm, analog synth lead. 0-6s: a kick drum thudding four-to-the-floor from behind a wall, low-passed and muffled, one sustained frozen pad, faint tape hiss. 6-10s: three short detuned synth stabs, each one opens the filter wider than the last. 10-15s: the wall gives way, the kick comes through dry and full, a cold square-wave arpeggio climbs a minor scale step by step, closed hats tick in. 15s: one deep sub-bass drop, then dead silence. Retro-futuristic, sparse, clinical, menacing, empty-room reverb",
+    "exclude": "vocals, singing, choir, spoken word, guitar, piano, music box, strings, orchestra, brass, metal, rock drums, happy, uplifting, euphoric build, long fade out",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "horror-trailer-strings",
+    "style": "Instrumental 17-second horror film teaser cue for chamber string orchestra, composer's brief. Opens in near silence: a low cello drone on a single open note, dry col legno tapping in the violas ticking like a slow clock, faint distant growls and clicks under the floor. Violins enter sul ponticello tremolo, thin and glassy near the bridge, creeping upward in a slow chromatic glissando; artificial harmonics shimmer on top like cold fluorescent light. Around 6, 8 and 9 seconds: three vicious full-section string stabs, sforzando, each sharper than the last, with dead air between. After the third stab a deep braam-like low brass swell rises and fills the room. At 15 seconds one huge final orchestral hit, then abrupt trailer silence, and a single high violin harmonic left hanging, very quiet, until it fades. Close mic, dark, minor, atonal clusters, cinematic, dry room with a long cold tail.",
+    "exclude": "vocals, choir, singing, spoken word, drums, beat, synth pads, piano, guitar, happy, major key, epic hero theme, electronic, pop",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "fluorescent-sound-design",
+    "style": "instrumental, foley soundscape rather than a song, no groove, no tune. Recorded close in a cramped night shop with tiled floor: the 100 Hz mains buzz of an ageing strip light, gritty and steady, tuned to sit just under a low G and swelling into a dark minor drone; a chiller cabinet compressor shuddering awake and ticking; a hinge groaning as a glass door eases open; three sour notes from a neglected, detuned pub upright, far apart, every note answered by a sharp arcing crackle and the strip light stuttering; distant hollow room tone from a back store. Last moments: a heavy subsonic thud, one bright glassy tink from the tube, then a relay click and the buzz is gone, total silence.",
+    "exclude": "vocals, singing, speech, choir, hummed voice, drum kit, percussion groove, beat, bass line, synth pads, orchestral strings, brass, guitar, melodic theme, hook, cinematic trailer, lo-fi hip hop",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 60,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  }
+]

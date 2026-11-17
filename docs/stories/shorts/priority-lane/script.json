@@ -1,6 +1,6 @@
 {
-  "round": 3,
-  "dialogue": "1B The countdown (Jack picked 2026-11-13, no notes), https://claude.ai/artifact/QgbHdwSjBNJRJsx2Q9CNcc",
+  "round": 5,
+  "dialogue": "1B The countdown, round 5 changes from Kai 2026-11-17 (feedback/meeting-2026-11-17/notes.md); round 3 kept as script-r3.json",
   "beats": [
     {
       "id": "losing",
@@ -30,6 +30,21 @@
       "sfx": "siren, monitor racing, engine, rain"
     },
     {
+      "id": "cordon",
+      "title": "The cordon",
+      "see": "CD8 (mood board round 8)",
+      "lines": [
+        {
+          "who": "constable",
+          "text": "Constable 97. Junction's blocked, ready for the VIP.",
+          "by": "kai",
+          "how": "police radio, flat and routine"
+        }
+      ],
+      "music": "",
+      "sfx": "radio squelch, police bike idling, rain"
+    },
+    {
       "id": "held",
       "title": "Held",
       "see": "HD3 or OUT1-c",
@@ -47,13 +62,13 @@
     {
       "id": "motorcade",
       "title": "The motorcade",
-      "see": "WS3 or MIN1-b",
+      "see": "BM8 (the Boris-alike, round 8)",
       "lines": [
         {
           "who": "minister",
-          "text": "I said raspberry-shaped hors d'oeuvres!",
-          "by": "jack",
-          "how": "muffled through the glass"
+          "text": "Hey Jeffrey, what time's the plane to the island? ... I'm on my way to fetch Andrew.",
+          "by": "kai + jack",
+          "how": "jovial, on the phone; through the glass. Gatekeeper legal check owed before release"
         }
       ],
       "music": "",
@@ -94,7 +109,12 @@
     {
       "id": "minister",
       "name": "Minister",
-      "profile": "Orus (voices/profiles/min-b-orus.md) unless a Suno take beats it"
+      "profile": "to recast for the Boris-alike (voice-casting); Charon was the old face"
+    },
+    {
+      "id": "constable",
+      "name": "Constable 97",
+      "profile": "to cast (voice-casting): police radio"
     }
   ]
 }

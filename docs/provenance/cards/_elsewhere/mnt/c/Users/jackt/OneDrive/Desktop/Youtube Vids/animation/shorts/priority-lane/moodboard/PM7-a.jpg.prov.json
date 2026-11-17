@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PM7-a.jpg",
+ "made": "2026-11-14T14:48:00.492Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Make a new vertical 9:16 night photograph: a close, straight-on view of the magenta campaign poster from the first reference image, so close that the poster fills the whole frame and the shelter is gone. Same poster design: the same man smiling with the phone at his right ear, the same magenta background, the same white slogan \"SAVE OUR NHS\" across the lower part, spelled exactly like that. Frame it so his head sits in the same place and at the same size as the man's head in the second reference image (upper middle of the frame, phone hand on the left of the picture), so the two pictures line up when one dissolves into the other. It is a printed poster glowing from behind inside a lit case, with rain drops and thin streaks on the glass in front, a soft orange street-lamp reflection near the top and a faint blue light sliding across the wet glass. 35 mm film grain, night, real photograph. No other text. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS6-c.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS6-c.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "31f897fd-cdce-41cf-ad15-80bf7ece2ecc"
+}

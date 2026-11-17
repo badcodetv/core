@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD14-a.jpg",
+ "made": "2026-11-17T13:00:09.335Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 photograph shot on 35 mm colour-negative film at night in heavy rain, taken from inside the cab of a UK ambulance, a tall box-bodied van: the camera sits just behind and above the driver's seat on the right-hand side, looking forward and down through a tall, nearly upright windscreen beaded with rain, wipers parked at the bottom of the glass. The lower third of the frame is the cab: a broad flat van dashboard in dark grey plastic, a coiled radio handset clipped to the dash, a rugged data terminal on a swivel arm whose screen gives only a soft unreadable blue-white glow, and the driver's forearms in green paramedic sleeves with black nitrile-gloved hands resting on a large, flat-angled steering wheel, knuckles tight. Through the glass, the junction, police line and street from the reference image, seen from the ambulance at its stop line: a few car lengths ahead, a row of white police motorcycles and officers in yellow hi-vis stretched across the wet road, the middle officer holding up one gloved hand to stop us, the yellow box-junction hatching glistening beyond them, the junction empty, a red double-decker bus and a queue of cars held on the right with red brake lights, and far up the road a convoy of dark saloon headlights approaching. Light sources: rows of sodium-orange street lamps haloed in the rain, the police bikes' blue strobes, our own blue roof beacons bouncing off the wet bonnet and the windscreen edges, the terminal's faint glow on the driver's gloves, the convoy's white headlights. Cold teal shadows, orange highlights, visible grain, slight halation round every lamp, rain streaks lit in the air. Natural hands with five fingers each, no readable text, numbers, plates or logos anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a9342468-2934-4d41-b826-b9fea5884d25"
+}

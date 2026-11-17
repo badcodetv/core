@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-06-c1-FL3-c1.mp4",
+ "made": "2026-11-16T11:14:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off tripod shot, no camera movement, no zoom. One continuous shot. Rain runs down the shop window, the streetlamp outside glows orange, the fluorescent lights hum. At about two and a half seconds, lightning fills the sky over the street: the whole window becomes a sheet of blue-white light, the terraced houses and parked cars outside flash into hard silhouette, and the bread and the purple chocolate bar on the ledge turn to black shapes against the glare for an instant. Then it cuts back to darkness and the room's dim teal light. The price cards and their writing stay exactly as they are. Nothing falls, nothing moves on the ledge. No people. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL3-c1.jpg",
+ "why": "Jack 2026-11-16 shot 6 note: lightning flash, then the bread and freddo change price, somewhere else in the shop (before the flash)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL3-c1.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "06-c1",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T11:13:30.684Z"
+ }
+}

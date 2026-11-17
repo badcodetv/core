@@ -59,6 +59,7 @@ picks the stills, OKs words and spend). What is different for a short:
 - **Aspect: offer portrait (9:16) as the sensible default, and ask.** Kai, 2026-11-10: "the skill shouldn't assume, but it should have the options of sensible defaults." Offer 9:16 first (phones), with 16:9 and both as the alternatives; put the answer in `scene.json` `video.aspect`.
 - **Suno workspace per short:** `short-<slug>`, written into every round folder's `workspace` file before any Create (Kai, 2026-11-10: don't pollute other workspaces).
 - **Music** is a Suno track of its own when the short has music (suno-prompt / suno-automation / variations, reading the short's `sound.md`).
+- 🔴 **No dialogue on a short's Suno track** (Jack, 2026-11-15: "never should be dialogue on these suno tracks for shorts unless i ask specifically, please only do music and sounds"): music and sound effects only, the round folder gets an empty `instrumental` file. **Every spoken line is an AI Studio voice** ("only dialogue should be ai studio"), cast with `voice-casting`.
 - **Clips page alongside the timeline** (Kai, 2026-11-11: *"it would be really useful to see these full screen,
   because if we're looking for artefacts…"*): a page of every clip in cut order, flagged good or fault, with a
   fullscreen viewer (frame step, ¼ and ½ speed). Still candidates awaiting approval sit on the same page. The model is

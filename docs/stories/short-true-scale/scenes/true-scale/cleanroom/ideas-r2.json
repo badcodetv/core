@@ -1,0 +1,92 @@
+{
+  "research": [
+    "https://archive.strongtowns.org/journal/2024/1/3/the-best-evidence-yet-for-the-housing-musical-chairs-theory — 'musical chairs' is the standard housing metaphor (first used by Sclar and McChesney in a 1990 AJPH editorial): too few chairs, someone left standing. Nobody seems to have flipped it: more chairs than players and someone STILL standing. That flip is our honest ratio.",
+    "https://bendbulletin.com/2024/05/16/editorial-how-musical-chairs-helps-understand-homelessness — critics say the metaphor reads as cutthroat scarcity; inverting it turns that criticism into the joke (the scarcity is the rules, not the chairs).",
+    "https://www.adsoftheworld.com/campaigns/our-house-is-not-a-home — Shelter's 2025 'Our House is not a Home': wordplay on house vs home, temporary accommodation shown as a building that isn't a home. Shelter leans on interiors; leaves room for everyday-life metaphors.",
+    "https://www.thedrum.com/news/2023/03/15/ad-the-day-shelter-s-squalid-ikea-bedsits-show-grim-reality-temporary-housing — Shelter used a familiar British consumer setting (flat-pack showroom) to carry temporary-accommodation squalor: the everyday frame does the work, not the stats.",
+    "https://www.thedrum.com/news/2024/09/09/shelter-ad-satirizes-prime-ministerial-announcements-fight-housing-rights — Shelter's satire of a lectern announcement: sarcasm aimed at decision-makers, not the public, is a tested charity register.",
+    "https://www.bigissue.com/news/fill-em-launch-empty-homes-campaign/ — Big Issue 'Fill 'Em' empty-homes campaign: the empty-vs-homeless comparison is used by charities, but often with inflated ratios (10:1); we must keep to ~2:1 / ~4:1.",
+    "https://www.crisis.org.uk/ending-homelessness/about-homelessness/how-many-empty-homes-are-there-in-the-uk/ — Crisis frames empty homes carefully (not all instantly usable); honesty about the ratio protects credibility.",
+    "https://thepinknews.com/2023/11/05/joe-lycett-suella-braverman-homelessness-lifestyle-comment — Joe Lycett's 'lifestyle choice' bit: British comedy lands homelessness by mocking the powerful framing, never the homeless person.",
+    "https://sofii.org/case-study/crisis-at-christmas — Crisis 'Reserve a Place': a seat at a table as the unit of help. A place/seat is the most legible everyday unit for 'room for one more'.",
+    "https://lbbonline.com/news/single-homeless-projects-festive-sitting-room-highlights-homelessness-in-london — Single Homeless Project put a cosy sitting room under a bridge: the punch is the misplaced domestic object, readable in one look.",
+    "https://data.europa.eu/apps/data-visualisation-guide/when-data-needs-to-be-made-relatable-to-people — make big numbers relatable by converting them into familiar units; one familiar unit beats a raw count.",
+    "https://datajournalism.com/read/longreads/communicating-large-amounts-please-no-more-football-fields — warning against tired comparison units (football fields); pick a unit with feeling, not just size.",
+    "https://numiko.com/insights/how-to-make-stats-stand-out-using-data-visualisation — people can't emotionally process big numbers; show individual items that add up to the whole (counting objects in frame works).",
+    "https://www.bigissue.com/news/housing/why-second-homes-are-a-problem-for-housing-in-the-uk/ — second homes are furnished and nobody's main home; a distinct category from long-term empties, good for a 'someone has already got one' joke."
+  ],
+  "ideas": [
+    {
+      "slug": "musical-chairs-backwards",
+      "pitch": "The housing crisis as musical chairs, except there are four chairs per kid and one kid is still out.",
+      "beats": [
+        "SETUP (0-4s): a church-hall party at night, strip lights buzzing teal; a ring of chairs and a handful of kids circling, the tape player mid-song.",
+        "REVEAL (4-10s): the music stops; every kid is sat with chairs to spare, roughly four empty chairs to each child, yet one child stands in the middle because the spare chairs have coats, handbags and 'RESERVED' notes on them.",
+        "STING (10-13s): narrator: 'You were told it's musical chairs. Count the chairs.'"
+      ],
+      "setup": "Wide 9:16 of a ring of mismatched stacking chairs in a dim parish hall at night, small figures from behind circling it under a flickering teal strip light.",
+      "reveal": "Top-down on the ring after the music stops: most chairs empty but draped with coats and 'RESERVED' slips, the kids seated with gaps between them, one small figure standing alone in the middle of the ring.",
+      "why": "Everyone in Britain has played it at a birthday party; the familiar rule says 'someone has to lose because there aren't enough', and the picture shows there are, so the viewer does the maths themselves without a single number. The kid standing is blameless, it's the rules that are rigged."
+    },
+    {
+      "slug": "sunbed-towels-at-dawn",
+      "pitch": "The great British sunbed war: rows of loungers bagsied with towels at 6am, nobody on them, and one family with nowhere to put their bags.",
+      "beats": [
+        "SETUP (0-4s): a package-hotel pool before dawn, lit only by the cold teal underwater lights; rows of sunloungers, each with a towel laid flat.",
+        "REVEAL (4-10s): pull back: four towelled, empty loungers for every one family; at the edge a family from behind, bags in hand, standing on wet tiles with no lounger.",
+        "STING (10-13s): narrator: 'Nobody's lying on them. They're just... taken.'"
+      ],
+      "setup": "Low wide of a hotel pool at night, its underwater lights glowing fluorescent teal, rows of white loungers each with a towel spread neatly across it.",
+      "reveal": "High angle down the pool deck: long rows of towel-claimed empty loungers, and at the far end a small family seen from behind with holdalls, standing on the tiles with nowhere to sit.",
+      "why": "The towel-at-dawn is a national joke every working-class family who's done a cheap package holiday knows and resents; it maps straight onto second homes (claimed, furnished, unused). The anger is pointed at the claiming, not at the family; and the teal pool light keeps Jack's look."
+    },
+    {
+      "slug": "homework-marked-correct",
+      "pitch": "A kid's maths homework: 'There are 4 houses and 1 family. How many families have no house?' The kid writes 1. The teacher ticks it.",
+      "beats": [
+        "SETUP (0-4s): a kitchen table at night under a cheap teal-ish fluorescent tube; an exercise book with a word problem and a child's drawing of four houses and one stick family.",
+        "REVEAL (4-10s): the answer box: the child has written '1', and a red-pen tick sits beside it.",
+        "STING (10-13s): narrator: 'Wrong maths. Right answer. In England.'"
+      ],
+      "setup": "Overhead close-up of a squared-paper exercise book on a worn kitchen table, a child's crayon drawing of four little houses and one stick-figure family, pencil and rubber beside it.",
+      "reveal": "Tighter on the answer box: a child's pencilled '1' with a confident red teacher's tick next to it, the only number on the page.",
+      "why": "Every parent has sat at the kitchen table doing homework; the gag is that the obviously wrong answer is the true one, which is exactly the absurdity of homelessness amid four times enough homes (counting second homes). It's dark, certain and on the viewer's side, and it reads in one look without a statistic."
+    },
+    {
+      "slug": "sold-out-stockroom",
+      "pitch": "The corner shop's 'SORRY, SOLD OUT' sign on an empty shelf, and through the stockroom door, crates piled to the ceiling.",
+      "beats": [
+        "SETUP (0-4s): a late-night corner shop under humming teal fluorescents; a bare shelf with a handwritten 'SORRY, SOLD OUT' card, a figure from behind standing in front of it.",
+        "REVEAL (4-10s): the camera drifts to the stockroom door, propped ajar: stacked crates, at least two or three for every empty slot on the shelf, wrapped and untouched.",
+        "STING (10-13s): narrator: 'There's no shortage. There's a stockroom.'"
+      ],
+      "setup": "Vertical shot down a narrow corner-shop aisle at night, cold teal strip lights, one empty shelf with a handwritten 'SORRY, SOLD OUT' card and a lone shopper seen from behind.",
+      "reveal": "Through the half-open stockroom door at the back: floor-to-ceiling stacked crates in shrink-wrap, lit by a bare teal tube, clearly more than enough to fill the shelf several times.",
+      "why": "Directly kin to the bread-prices horror short Jack's look comes from, so it carries the same eerie corner-shop register; working-class viewers know the 'sold out' sign and the suspicion that it isn't true. It frames homelessness as a decision about what's kept back, not what exists."
+    },
+    {
+      "slug": "allotment-waiting-list",
+      "pitch": "Ten years on the allotment waiting list, while behind the padlocked gate whole plots are gone to brambles and nobody's been in years.",
+      "beats": [
+        "SETUP (0-4s): at dusk/night, a figure from behind at a padlocked allotment gate, holding a letter that says 'You are on our waiting list'.",
+        "REVEAL (4-10s): over the fence: plot after plot overgrown, sheds rotting, a deckchair nobody has sat in, more than two abandoned plots for every name on the list.",
+        "STING (10-13s): narrator: 'Not full. Just not yours.'"
+      ],
+      "setup": "Night-time 9:16 of a chain-link allotment gate with a padlock and a laminated 'WAITING LIST CLOSED' sign, a figure from behind holding a council letter under a sodium-turned-teal lamp.",
+      "reveal": "Over the fence, a long view of allotment plots gone wild with brambles and nettles, collapsed sheds and a lone faded deckchair, lit cold teal by a single lamp, clearly plenty of empty ground.",
+      "why": "Allotment waiting lists are a famously British grievance (years-long queues for land that sits idle), so it's a gentler, slightly comic stand-in for the council housing list; the viewer gets 'there's room, it's just being held' instantly. Breaks the look slightly toward rural dusk, which is fine."
+    },
+    {
+      "slug": "party-bags-for-no-shows",
+      "pitch": "End of a kids' party: a table of party bags with names on, most for kids who never came, and the one kid who did leaves empty-handed.",
+      "beats": [
+        "SETUP (0-4s): a soft-play or community-centre party winding down at night; a trestle table lined with paper party bags, each with a name written on it.",
+        "REVEAL (4-10s): close on the bags: around four for every kid present, the names belonging to kids who already went home with a bag earlier, or never turned up; one small figure by the door, coat on, hands empty.",
+        "STING (10-13s): narrator: 'Plenty to go round. It just went to people who already had one.'"
+      ],
+      "setup": "A long trestle table at night under teal fluorescent tubes, crowded with identical paper party bags each labelled with a handwritten name, balloons sagging behind.",
+      "reveal": "Wide from the hall door: the table still almost full of untouched named bags, and in the foreground a small figure from behind in a coat, holding nothing, heading out.",
+      "why": "Party bags are a tiny British ritual about fairness that every parent and kid feels; the 'already has one' named bags map neatly onto second homes (furnished, belonging to someone with a main home). It hits the 4-to-1 ratio honestly and makes the injustice obvious to a child, which is the point."
+    }
+  ]
+}

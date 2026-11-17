@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental. A northern colliery brass band is rehearsing in the function room next door, and we hear it through the wall of a busy local pub on quiz night. Only the low end comes through clearly: E-flat and B-flat basses and baritone horns walking a lazy, good-humoured oompah figure, a soft bass drum on every downbeat. A cornet is somewhere behind the plaster, muffled and distant, playing short held tones and never a tune. The room around us is warm and close: glasses, chair legs, a low indistinct murmur with no words. Lo-fi, boxy, dull top end, lots of space in the middle for people talking over it. Near the end the band drops out until there is a single long tuba note and rain on the window. Then, for the last two seconds, the full band bursts in with one bright, cheeky rising fanfare stab and stops dead.",
+  "exclude": "vocals, singing, spoken words, crowd chanting, orchestral strings, epic trailer brass, cinematic hybrid, synth brass, piano lead",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 40,
+  "maxMode": false,
+  "title": "true scale r1-colliery-brass-band",
+  "mode": "custom",
+  "workspace": "short-true-scale"
+}

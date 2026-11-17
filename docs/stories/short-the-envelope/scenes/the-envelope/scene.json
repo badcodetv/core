@@ -1,0 +1,82 @@
+{
+  "story": "short-the-envelope",
+  "scene": "the-envelope",
+  "prefix": "en",
+  "title": "The Envelope",
+  "heading": "BadCode Shorts <span class=\"tri\">▲</span> The Envelope",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope",
+  "video": {
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
+  },
+  "flow_project": "9cc5b19c-6911-4463-83ac-69edc9e2878c",
+  "beats": [
+    {
+      "key": "tory",
+      "at": "0:00",
+      "name": "A. Approved (1)",
+      "blurb": "An arms-deal envelope lands on a desk, stamped APPROVED BY THE CONSERVATIVE PARTY."
+    },
+    {
+      "key": "labour",
+      "at": "0:04",
+      "name": "B. Approved (2)",
+      "blurb": "The next one lands: APPROVED BY THE LABOUR PARTY."
+    },
+    {
+      "key": "print",
+      "at": "0:08",
+      "name": "C. Anyway",
+      "blurb": "\"They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\""
+    },
+    {
+      "key": "setup",
+      "at": "0:00",
+      "name": "S1. The set-up",
+      "blurb": "A 1930s backstreet 'betting parlour' where the race has two runners: the dealer fans two envelopes, APPROVED BY THE CONSERVATIVE PARTY and APPROVED BY THE LABOUR PARTY, at even odds."
+    },
+    {
+      "key": "pick",
+      "at": "0:03",
+      "name": "S2. The pick",
+      "blurb": "The working man, the mark, chooses one envelope in good faith; the dealer plays the fair host."
+    },
+    {
+      "key": "switch",
+      "at": "0:07",
+      "name": "S3. The switch",
+      "blurb": "Under the counter both envelopes are opened: the same arms order, same number, comes out of each, next to a drawer of freshly printed money. The choice was rigged both ways."
+    },
+    {
+      "key": "sting",
+      "at": "0:11",
+      "name": "S4. The sting",
+      "blurb": "BadCode rips back the curtain and catches the house: blue tie and red tie shaking hands over the stamped rifle crate and the new money. Spoken (and optionally on screen): \"They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\""
+    }
+  ],
+  "moodboard_intro": "Round 3 (Jack's notes on round 2): column b, the painted chapter cards, is the look. S1 and S2 picked. S3 The Switch: \"this style but more like the Sting\": a sealed writer researched the film's cons (the wire, the bundle switch, the shell game) and staged three switches: a the dealer's hands (both envelopes hold the same order, a spare up his cuff), b the wire room (both envelopes strung to one telegraph key, shills in the doorway), c the shell game with bowler hats (same crate under both). S4 The Pay-off: \"no skin for the badcode guy and fix the mask\": mask fixed to the brand design, gauntlet gloves, the stray 'CHAPTER TITLE' gone. Note: the banknotes still look a bit like dollars; they get invented notes in the animation pass.",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/6s11eH4KjKifYppEfQXsFe",
+    "clip_picks": "https://claude.ai/artifact/SYmKwEYiBZxixJHpyduGod",
+    "timeline": "https://claude.ai/artifact/3zxgwRFeNQdFYHWpjuE6Cp"
+  },
+  "line": "They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.",
+  "board_round": 3,
+  "picked": [
+    [
+      "SU2-b",
+      "S1. The set-up"
+    ],
+    [
+      "PK2-b",
+      "S2. The pick"
+    ]
+  ],
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/cut/r1/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/cut/r1/preview.mp4",
+    "script": "scripts/shorts/envelope_cut.py"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "style": "melancholic dark ambient, instrumental, detuned electric piano, bell tones, lo-fi, slow, 55 bpm, a sad minor figure of four notes with long gaps of silence between them, each note ringing like a small bell slightly out of tune with itself, cassette wow and flutter, long wet hall reverb tails, soft wide synth pad hanging like fog over an empty street, faint far-off mains hum, lonely not menacing, nobody coming, near the end the pad falls away, one low struck chord, the last bell note left ringing alone until silence",
+  "exclude": "vocals, drums, major key",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false,
+  "title": "malevolent force r2-detuned-bell-piano",
+  "mode": "custom",
+  "workspace": "short-malevolent-force"
+}

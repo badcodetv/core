@@ -1,0 +1,25 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — official guide: write in full sentences as a scene, subject + setting + light + camera, not keyword lists",
+    "https://www.atlabs.ai/de/blog/nano-banana-2-prompting-guide — naming a film stock / camera translates into concrete grain, halation and colour; avoid '8k HDR' hype stacks",
+    "https://blog.picassoia.com/nano-banana-2-photorealism-prompts-that-work-every-time — a short realism list (subtle film grain, 35mm look) beats piling on adjectives; Cinestill 800T suits night scenes lit by artificial light",
+    "https://amp.majorcadailybulletin.com/holiday/hotels/2025/09/09/136299/crazy-spain-sunbed-bedlam-mallorca-hotel.html — Mallorca package hotels: towels laid on loungers before dawn, pool area sometimes locked until 8am",
+    "https://inspain.news/?p=27712 — Costa del Sol: guests queue at the pool gate from 6:30am though it opens at nine; the real look is white plastic loungers in tight rows on pale tiles beside low concrete hotel blocks",
+    "https://www.gbnews.com/news/world/spain-news-british-tourists-sunbed-wars-tenerife-hotel — Tenerife: the 'sunbed wars' are a national British joke, which is what this idea borrows"
+  ],
+  "notes": "Kept Jack's look: the only light is the pool's own underwater lamps, which give the fluorescent teal for free, plus one sodium lamp for contrast; cheap night colour film and grain. Honesty to the numbers: rather than one lone family facing an endless deck (which would overstate it), the reveal shows a few families standing along the deck with roughly four towelled loungers for every family, the about-4-to-1 ratio counting second homes. If the director wants the 2-to-1 (long-term empty only) version, change 'about four' to 'about two' in the reveal. Children appear only as small figures from behind, far off, with bags; no faces, no brands on towels or bags, no numbers in either image.",
+  "stills": [
+    {
+      "beat": "sunbed-towels-at-dawn",
+      "id": "ST2-a",
+      "look": "setup: low wide, pool at 5am, every lounger towelled, nobody there",
+      "prompt": "A vertical photograph taken just before dawn at a cheap package hotel pool on the Spanish coast. The camera sits low at the edge of the water, looking along the pool deck. The underwater lights make the pool glow a cold fluorescent teal, and that glow is the only light, washing the pale wet tiles. Tight rows of white plastic sunloungers line the deck, and every single one has a plain beach towel spread neatly flat across it, corners squared. Nobody is anywhere. Behind them, a dark concrete hotel block with unlit balconies. Shot on Cinestill 800T, heavy grain, slight halation, lonely and quietly eerie. Thanks."
+    },
+    {
+      "beat": "sunbed-towels-at-dawn",
+      "id": "ST2-b",
+      "look": "reveal: high angle, rows of claimed empty loungers, families standing with bags",
+      "prompt": "A vertical photograph from a hotel balcony high above a package hotel pool before dawn, looking down the length of the deck. The pool glows cold fluorescent teal from its underwater lights. Long rows of white plastic sunloungers fill the deck, every one empty, every one claimed with a towel laid flat. Along the far edge, a few small families stand on the wet tiles, seen from behind and far off, holding holdalls and suitcases, with nowhere to sit: about four empty towelled loungers for every family. One orange sodium lamp by the gate. Cheap night colour film, coarse grain, still and sad, a little absurd. Thanks."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "name": "pub-upright-piano",
+    "style": "instrumental, no vocals, solo honky-tonk upright piano, slightly detuned saloon piano with a tack-hammer jangle, one player in the corner of a British local, loose stride left hand thumping low bass notes, right hand only sparse high tinkly chord stabs, empty middle register, no tune, laid-back walking tempo, warm wood-panelled room, live room recording with glasses clinking, low wordless pub murmur, a till drawer opening, ending: tempo sags and drops to long held low chords as rain starts on the windows, then a quick bright rattling major glissando up to the top keys and one cheeky final plink",
+    "exclude": "vocals, singing, spoken word, choir, chant, crowd singalong, strings, orchestra, sad cinematic piano, emotional piano ballad, reverb-drenched grand piano, lead melody, drums, synth",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 40,
+    "maxMode": false
+  },
+  {
+    "name": "colliery-brass-band",
+    "style": "Instrumental. A northern colliery brass band is rehearsing in the function room next door, and we hear it through the wall of a busy local pub on quiz night. Only the low end comes through clearly: E-flat and B-flat basses and baritone horns walking a lazy, good-humoured oompah figure, a soft bass drum on every downbeat. A cornet is somewhere behind the plaster, muffled and distant, playing short held tones and never a tune. The room around us is warm and close: glasses, chair legs, a low indistinct murmur with no words. Lo-fi, boxy, dull top end, lots of space in the middle for people talking over it. Near the end the band drops out until there is a single long tuba note and rain on the window. Then, for the last two seconds, the full band bursts in with one bright, cheeky rising fanfare stab and stops dead.",
+    "exclude": "vocals, singing, spoken words, crowd chanting, orchestral strings, epic trailer brass, cinematic hybrid, synth brass, piano lead",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 40,
+    "maxMode": false
+  },
+  {
+    "name": "fruit-machine-electronics",
+    "style": "instrumental sound-design bed: a 1980s pub fruit machine as the band, stepper-motor reels whirring and ticking in a loop, relay clicks and coin-hopper rattle keeping a small tight groove, three-voice square-wave bleeps from an old sound chip tapping out a cheeky two-note figure, faint pub room hum and glass clinks behind, soft chiptune pads only as glue, quiet, dry and sparse so speech sits on top; halfway it thins to one lone reel ticking; finale: three reels thunk to a stop one after another, then a bright rising payout chime arpeggio, warm and wry",
+    "exclude": "vocals, voices, robotic speech, vocoder, drum kit, dubstep, casino jazz",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 65,
+    "vocalGender": null,
+    "durationSec": 40,
+    "maxMode": false
+  },
+  {
+    "name": "rhythm-section-trio",
+    "style": "Instrumental corner-of-the-bar jazz trio, 112 BPM, swung eighths, 4/4, F major. Upright double bass walking steady quarter notes. Snare played with brushes only, slow circular swirls, soft feathered hi-hat on 2 and 4. Vibraphone gives just two-note stabs, short and dry, one every two bars, motor off. Mixed low and distant, bass forward, wide gaps in the midrange, small wooden room. Around 0:28 the brushes drop out and the bass walks downward alone, half time, under light rain against glass. At 0:35 vibraphone climbs one quick four-note arpeggio, a single small bell rings, hard stop.",
+    "exclude": "vocals, scat, singing, saxophone, trumpet lead, piano melody, smooth jazz, crowd chant, drum solo",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 40,
+    "maxMode": false
+  },
+  {
+    "name": "squeezebox-folk-session",
+    "style": "instrumental English pub folk session recorded live in a small back room, close and boozy. A two-row melodeon works its left-hand bass buttons in a steady oom-pah push and pull, a frame drum (bodhran) keeps a loose tipper beat, a battered steel-string acoustic strums open chords; players slightly behind the beat, glasses clink, chairs creak, a low warm room murmur with no words. Rhythmic and chordal only, no tune on top, mids kept clear for speech. Mid-way the whole room drops out to a hush: one held melodeon chord breathing slowly over rain on a window. Final seconds: the squeezebox kicks back in with a cheeky quick run of chords and the piece ends on a single brass bell clang",
+    "exclude": "vocals, singing, sing-along, crowd chant, spoken words, fiddle lead, tin whistle lead, celtic epic, irish pub chorus, uilleann pipes, sad piano, cinematic strings",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 40,
+    "maxMode": false
+  },
+  {
+    "name": "rain-and-room-ambient",
+    "style": "instrumental ambient drone, field recording of a small British pub on a wet night, muffled room murmur and glasses clinking, low-passed warm analog synth pads far back in the mix, soft sub-bass pulse like a slow heartbeat, rain tapping a window pane that slowly swells louder, wide stereo, lo-fi tape hiss, subliminal and spacious, hollow midrange, final seconds: rain peaks, then a sudden dry mechanical click-click-click and one bright shimmering synth chime chord",
+    "exclude": "vocals, singing, spoken word, choir, drums, beat, percussion loop, piano melody, guitar, orchestral swell, strings, lead synth",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 40,
+    "styleInfluence": 65,
+    "vocalGender": null,
+    "durationSec": 40,
+    "maxMode": false
+  }
+]

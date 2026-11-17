@@ -1,0 +1,8 @@
+# squeezebox-folk-session — notes
+
+- The melodeon is asked for by its left-hand side: bass and chord levers pushed and pulled give a natural oom-pah (tonic on push, dominant on pull), which keeps the squeezebox chordal and rhythmic rather than playing a melody over the dialogue. Sources: https://www.eatmt.org.uk/melodeon-2/ , https://www.wikipedia.com/wiki/Button_box
+- Suno's own Irish-folk library pairs bodhran with strummed guitar on a lilting pulse; I kept the pairing but framed it as an English back-room session and excluded the fiddle/whistle/pipes that usually bring a jig melody and "Celtic epic". Source: https://suno.com/es/music-library/genres/irish-folk
+- Guides say name instruments concretely (e.g. "battered steel-string") and state "instrumental" in the style box, plus use the Instrumental switch; lyrics left empty. Sources: https://roo.beehiiv.com/p/150-suno-ai-prompts-that-actually-work-in-2026 , https://howtopromptsuno.com/style-lyrics/how-do-i-make-instrumental , https://alexanderweichart.de/2_Areas/Music/Suno-Instructions
+- Three-part story in time order is written straight into the style box (no lyrics to carry section tags): busy session, hush to one held melodeon chord under rain, cheeky chord flourish and a bell clang (the fruit-machine logo landing). Section-direction idea: https://blakecrosley.com/guides/suno
+- Room murmur asked for "with no words"; exclude carries crowd chant / sing-along / spoken words (shorts tracks are music and sounds only).
+- Settings: v6 (fixed), 40 s (fixed), variety normal, weirdness 35 (loose and a bit drunk without going strange), styleInfluence 70 to hold the instrument list, maxMode off.

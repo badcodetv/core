@@ -1,0 +1,40 @@
+You are writing Suno v6 prompts for a song. Research the internet first (search and read pages) and base your work on what you find. Do not read files in this repository: everything you are meant to know is in this brief.
+
+## The request, word for word
+
+look at the notes, also the do this "- ⬜ Lip sync: the mouths move, but they aren't synced to the voices yet.
+  - ⬜ No music or pub atmosphere.
+  - 🟡 The answer line is long (about 13 s), and clip 4 holds its last frame for 1.6 s. Trimming that line would tighten both." make all of the dialogue faster too. maybe also put stats at the end in just plain text, then put the badcode logo after, animate it like a pub fruit machine but the name and logo instead thanks
+
+## What happened in earlier rounds (facts)
+
+- The track is the whole music bed of a ~35-second vertical short (BadCode Shorts, "True Scale: Nearest Wins"): a British local pub on quiz night. The quizmaster asks the tiebreaker ("How many homes in England have been empty six months or more?"), a table shouts "Fifty thousand, tops!", she reads the answer (303,185, plus 267,894 second homes), "Nearest... table nine. Bob." The pub turns to Bob, who lives in a tent: "How'd you know that?" "I sleep opposite one." He hands the meat-raffle prize to the next table and walks out into the rain. Then plain text with the numbers, then the BadCode logo landing like a pub fruit machine (reels spinning and stopping).
+- Dialogue sits on top of the whole thing (AI Studio voices, not in this track): the bed must stay under speech: no lead melody fighting the voices, sparse in the 300 Hz-3 kHz voice band.
+- Jack asked for "music or pub atmosphere". Shorts Suno tracks are music and sounds only, never speech (Jack, 2026-11-15): no vocals, no words, no crowd chant with words.
+- Tone: warm, funny, a bit sad at the end (Bob leaves into the rain), never a sad-charity-advert piano.
+- No earlier music rounds for this short.
+
+## Settings the story fixes for this part
+
+Use exactly these values for these keys (choose the others yourself):
+
+```json
+{
+  "model": "v6",
+  "durationSec": 40
+}
+```
+
+## No lyrics
+
+This is an INSTRUMENTAL: no voice, no singing, no words. Leave "lyrics" as an empty string ""; everything goes in the style and exclude boxes.
+
+## What to produce now
+
+Not prompts yet. Propose exactly 6 experiments for this round. Each one is a genuinely different idea for how to answer the request — different from each other in the voice (who is singing and how — different performers, not one performer in different accents) and in how the music is asked for. A separate writer will turn each idea into one prompt, and none of them will see the others'
+prompts, so make each idea complete and distinct on its own.
+
+Write a short list of what your research found (with source URLs) to
+`/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/songs/r1-track/writers/ideas.notes.md`, and write ONLY a JSON array to
+`/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/songs/r1-track/writers/ideas.json`: objects with keys "name" (short kebab-case) and "idea"
+(3–6 sentences). Reply with just the two paths.

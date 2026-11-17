@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 5: A. Losing him, redone. The gloves on the bag now belong to a visible second paramedic. Pick one.",
+ "moodboard_intro": "Round 19, your note 'the view outside the ambulance from the drivers perspective needs to be of the picks': the held shot rebuilt from your picks, the same junction, police, convoy, bus and light as CD18-a, inside the same ambulance as LS18-b. All three pass the traffic check; HD19-c is the closest match. Pick one.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -13,6 +13,18 @@
    "at": "0:00",
    "name": "A. Losing him",
    "blurb": "Inside the ambulance at ER pace: a masked paramedic over the patient, 'BP 60 over 30, we're gonna lose him!'; the driver: 'Come on, get out of the way!'; the monitor racing."
+  },
+  {
+   "key": "poster",
+   "at": "0:02",
+   "name": "A2. His poster (cut into A)",
+   "blurb": "His SAVE OUR NHS poster, seen sideways out of the ambulance's LEFT window as it passes (parallel to the shelter, ambulance interior in the foreground), held ~3 s (Kai: double it). No more dissolve into his car (Kai, 2026-11-17)."
+  },
+  {
+   "key": "cordon",
+   "at": "0:08",
+   "name": "A3. The cordon",
+   "blurb": "High and wide over the junction: police bikes and hi-vis officers have closed it, the junction empty, the convoy's headlights coming; the ambulance held at the stop line. Radio: 'Constable 97, junction blocked, ready for VIP' (Kai, 2026-11-17)."
   },
   {
    "key": "held",
@@ -24,7 +36,7 @@
    "key": "motorcade",
    "at": "0:07",
    "name": "C. The motorcade",
-   "blurb": "The minister's car crosses slowly, right in front of the ambulance; he's on the phone: 'I said raspberry-shaped hors d'oeuvres!' Bolder: seen through the ambulance windscreen, inches away, his line heard through the glass."
+   "blurb": "The Boris-alike minister crosses in the back of his car, on the phone: 'Hey Jeffrey, what time's the plane to the island? ... I'm on my way to fetch Andrew.'"
   },
   {
    "key": "flatline",
@@ -54,13 +66,13 @@
   "timeline_r1": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/edl.json",
-  "by": "scripts/shorts/priority_lane_cut_r3.py",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/preview.mp4",
-  "script": "python3 scripts/shorts/priority_lane_cut_r3.py"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r5/edl.json",
+  "by": "scripts/shorts/priority_lane_cut_r5.py",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r5/preview.mp4",
+  "script": "python3 scripts/shorts/priority_lane_cut_r5.py"
  },
  "premiere": {
-  "current": "r3",
+  "current": "r4",
   "r2": {
    "sequence": "shorts-1-priority-lane-r2",
    "guid": "758d9e17-99fd-4286-b79d-05d0eada2437",
@@ -80,6 +92,21 @@
    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/edl.json",
    "what": "Round 3 rough cut with Jack's ending note (push into the flatline, logo on the screen); Premiere 26.5.2; Omni clips at Motion Scale 150 in a 1080x1920 sequence",
    "how": "premiere-plan.py --tag r3 + place.js via premiere_eval"
+  },
+  "r4": {
+   "sequence": "shorts-1-priority-lane-r4",
+   "guid": "81eb4f79-6acb-4a96-8d67-b0a1a35ad40d",
+   "bin": "shorts-1-priority-lane-r4",
+   "built": "2026-11-14",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/priotity lane.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/edl.json",
+   "what": "Round 4b, Jack: 'Priority Lane is great'. His SAVE OUR NHS poster cut into beat A (shelter shot at 2x), the poster face dissolving into him in the car on the matched pose (baked v2-losing-transition.mp4), then round 3 as before. Omni clips at Motion Scale 150.",
+   "how": "premiere-plan.py --tag r4 --seq + place.js via premiere_eval; Scale 150 on v0:0, v0:3, v0:4, v0:5",
+   "check": {
+    "at": "2026-11-14",
+    "state": "in sync",
+    "why": "7 shots and 12 audio clips placed as the edl; frames checked at 1, 2.5, 3.7, 6, 9, 12, 18.5 s"
+   }
   }
  },
  "beats_r1": [
@@ -141,25 +168,34 @@
  },
  "picked": [
   [
-   "LS4-b-fix-a",
-   "A. Losing him (LS4-b, badge removed)"
+   "LS18-b",
+   "A. Losing him"
   ],
   [
-   "HD3-b",
-   "B. Held"
+   "PB18-a",
+   "A2. His poster (bus stop)"
   ],
   [
-   "NOW-MIN1-b",
-   "C. The motorcade (round 1 minister, clip pl-04 + lip-sync)"
+   "CD18-a",
+   "A3. The cordon"
   ],
   [
-   "FL4-a",
+   "BM18-a",
+   "C. The minister (Jack picked over the likeness flag)"
+  ],
+  [
+   "FL18-a",
    "D. Flatline"
   ]
  ],
- "board_round": 5,
+ "board_round": 19,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"
+ },
+ "cut_r3": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r3/preview.mp4",
+  "by": "scripts/shorts/priority_lane_cut_r3.py"
  }
 }

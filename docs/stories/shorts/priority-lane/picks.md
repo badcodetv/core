@@ -56,3 +56,11 @@ Left in view:
 - **2026-11-13, Jack:** "there are gloves floating on the device in his mouth": LS4-b-fix-a's bag-valve mask was held by hands with no body. Redone as a fresh generation from LS4-b-fix-a as the reference (not a change-only edit): **LS5-a/b/c**, each with the second paramedic visible and his arms attached. On the mood board, round 5.
 
 - **2026-11-13, flatline re-rolls (Jack: "reroll the clip").** r3-D2 (bare prompt) let the monitor come back to a live trace after ~2.5 s, so it was moved to `video/_unpicked/`. r3-D3 ("the screen stays dark") was refused 5 times. **r3-D4 ("one straight green line that never changes") passes:** a flat green line 0-4 s, then the screen goes black from ~4 s; no live trace at any point. He sits back from about 2 s. Use 0-4 s, or run on into the dark screen if it reads as the monitor dying.
+
+## 2026-11-14: round 6, his poster
+
+- **Jack picked PS6-c** (the shelter poster seen through the ambulance's side window). There was no PM6 pick, and the PM6 posters are cream where PS6-c is magenta, so **PM7-a/b** were made: a close-up of PS6-c's own poster (references PS6-c + MIN1-b). These are short reference prompts written by me, not clean-room ones. PM7 is the start frame for the poster-to-car transition.
+- The four "never generated" prompts in round 6 were **Flow's unusual-activity failure**, not refusals: reload the project, retry. flow_edit_image saved the uploaded reference tile as a candidate when that happened (bug).
+- **Jack picked PM7-a** (round 7) as the transition start frame.
+- **Clip `pl-r6-A2-PS6-c.mp4` made** (Omni 1.2 Flash, scene runner, job r6-A2): the poster is readable 0-3 s, then slides out of the window as the ambulance moves. Use 0-2.5 s.
+- **Transition PM7-a to MIN1-b NOT made.** Omni (1.1 and 1.2) refuses a last frame, so it has to be a Veo 3.1 tier (flagged to Jack as the Veo-only exception). `flow_generate_video` couldn't set the Veo model: VIDEO_MODEL_NOT_APPLIED four times, with the menu flipping between Fast and Lite (the check reads the label one step behind, or the click picks the neighbour). Bug in flow-mcp's model picker on the rebuilt Flow. Also `flow_list_media` is unmapped on the rebuilt Flow.

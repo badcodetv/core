@@ -1,0 +1,47 @@
+{
+  "research": [
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — write prose sentences, not keyword lists; naming a film stock (Portra 400, Cinestill 800T) and the light source steers the rendering",
+    "https://budgetpixel.com/blog/analog-neon-prompting-1990s-cyberpunk-street-photography — anti-CGI phrasing that works: heavy organic grain, halation round bright sources, 'no digital render, no smooth plastic surfaces'",
+    "https://www.imagine.art/blogs/nano-banana-2-prompt-guide — name camera and lens; describe flaws (tilt, soft focus, underexposure) to get a candid snapshot instead of a staged image",
+    "https://brooklynfilmcamera.com/blogs/guides/after-dark-the-best-film-stocks-for-cinematic-night-photography — Portra is flatter and neutral, Cinestill/400-speed consumer stocks saturate; night stocks are pushed and grainy",
+    "https://madssmidstrup.squarespace.com/blog/night-photography-with-cinestill-800t — fluorescent and neon light on tungsten/consumer film render cold, blue-green, with tubes blowing out and halation",
+    "https://www.photrio.com/forum/threads/help-with-options-for-low-light-night-time-street-photography.216371 — underexposed night colour negative gives a green-teal cast and muddy, lifted shadows (the reference's look)",
+    "https://www.mentalfloss.com/science/psychology/why-are-liminal-spaces-creepy — an ordinary place built for people feels wrong when shown empty and out of context",
+    "https://photofocus.com/found/capturing-the-eerie-atmosphere-of-liminal-spaces/ — liminal eeriness comes from flat fluorescent light, emptiness and a place that should be in use",
+    "https://theasc.com/article/shot-craft-halloween-horrors-creating-visual-cues-to-foster-fright/ — leave a suspiciously empty part of the frame where the eye expects something; edge-of-frame tension",
+    "https://www.denofgeek.com/?p=68353 — It Follows / Sinister: negative space and dark depths behind the subject make an unseen presence felt"
+  ],
+  "notes": "Beat B (climb) is £1 then £5, the shop getting darker each time. Ids a/b lean on £1 and some failing light; c/d/e are £5 and darker, so they can be cut in that order. Only CL2-e echoes the reference's pavement-through-the-doorway framing (brief allows one). Every prompt names a consumer colour film at night, available light only, grain, cold teal fluorescent cast, and the unseen presence as an empty space/moved object/dead light, never a figure. Price text is quoted exactly ('£1', '£5'); check every still for misspelt or extra prices and reroll if wrong. No brands: packets and signs are asked to be invented or unreadable. If Nano Banana 2 drifts glossy, the anti-CGI sentence is the one to strengthen, not the scene.",
+  "stills": [
+    {
+      "beat": "climb",
+      "id": "CL2-a",
+      "look": "Street wide, half the tubes dead",
+      "prompt": "A vertical 9:16 amateur snapshot on cheap 400-speed colour negative film, taken at night from across a wet terraced British street, looking at a small corner shop on the end of the row. The shop is the only lit thing, but half its ceiling tubes are dead, so the left side of the window is black and the right side glows cold blue-green. A handwritten fluorescent card in the window reads \"BREAD £1\". Newspaper board, wheelie bin, a lamp post at the frame edge. The open doorway is dark and empty. Underexposed, heavy grain, soft focus, halation round the tubes, muddy teal shadows, slightly tilted. No people, no brands, no digital render. Thanks."
+    },
+    {
+      "beat": "climb",
+      "id": "CL2-b",
+      "look": "Bread shelf, £1 label, missing loaves",
+      "prompt": "Vertical 9:16 close snapshot on grainy consumer colour film, flash off, inside a cramped British corner shop at night. A low metal shelf of plain white sliced bread in clear plastic bags, most of the row gone: one loaf left at the end, a gap where the others were, crumbs on the shelf. A white shelf-edge label in sharp focus reads \"£1\". Above it a fluorescent tube flickers, caught half-bright, throwing a cold green-blue cast. The aisle behind falls off into soft blur and shadow, deeper than it should be. Off-centre, slightly underexposed, lifted murky blacks, visible grain. Unbranded packets, no people. Not polished, not CGI. Thanks."
+    },
+    {
+      "beat": "climb",
+      "id": "CL2-c",
+      "look": "Aisle to the back, lights out in stages",
+      "prompt": "Vertical 9:16 night photograph on cheap colour negative film, standing at the front of a narrow British corner-shop aisle and looking straight down it. Only the front tube is still on; each one after is off, so the aisle fades step by step into near-black at the back, where the stockroom door stands open a hand's width. Crisps and tins on cluttered shelves, unbranded. On the floor halfway down, a single loaf of white sliced bread lies dropped, a price sticker reading \"£5\". Cold teal fluorescent cast, blown highlights, thick grain, soft focus, slightly crooked framing. Empty of people, but the dark end feels occupied. No digital sheen. Thanks."
+    },
+    {
+      "beat": "climb",
+      "id": "CL2-d",
+      "look": "Unattended counter, chocolate bar £5",
+      "prompt": "A vertical 9:16 candid snapshot on grainy 35mm colour film, at night, across the counter of a small British corner shop. Nobody behind it: an empty stool, a cash register drawer left open and empty, a scratchcard stand with invented unreadable cards, a radio. On the counter a small open box of unbranded purple chocolate bars, a sticker on the box reading \"£5\". One white loaf waits on the counter as if someone set it down and left. Above, the single working tube buzzes cold green-blue; the doorway to the back room behind the counter is pitch black. Underexposed, muddy shadows, halation, grain, soft focus. No people, no logos, not glossy. Thanks."
+    },
+    {
+      "beat": "climb",
+      "id": "CL2-e",
+      "look": "Pavement through the door, almost dark",
+      "prompt": "Vertical 9:16 amateur night snapshot on cheap colour film, from the pavement looking in through the open glass door of a British corner shop. The shop is nearly dark now: one flickering tube at the back and the glow of a drinks fridge. On the rubber doormat a wire spinner rack has turned to face the door. A handwritten paper sign taped to the glass reads \"BREAD £5\", the £1 beneath it scribbled out. The inner door has swung half shut on its own. Deep murky teal-black, the fridge light blooming, coarse grain, soft focus, underexposed, slightly skewed. Nobody there. No brands, nothing staged or digital. Thanks."
+    }
+  ]
+}

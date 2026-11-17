@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-05-LO1-b.mp4",
+ "made": "2026-11-14T17:38:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A dark brick wall beside a wet street at night. The headlights of a passing car sweep slowly across the wall from left to right, lighting the bricks, then fade. Rain glistens on the road. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LO1-b.jpg",
+ "why": "Omni sweeps the light, logo in the edit (recommended)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LO1-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-infinite-yous/scenes/infinite-yous",
+  "key": "05",
+  "frame": 5,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-14T17:36:53.597Z"
+ }
+}

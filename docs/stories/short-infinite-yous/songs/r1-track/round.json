@@ -1,0 +1,80 @@
+[
+  {
+    "name": "violin-jab-music-box",
+    "style": "cinematic spoken-word sound design cue, no singing, two speaking voices. Opens on a raw hoarse young British man bellowing his words across a rainy late-night taxi rank, drunk, slurred, half-laughing. Instantly after his last word: one savage solo violin stab, bow scraped hard, a single sforzando hit then silence. Then a tiny detuned wind-up music box, a slow three-note loop ticking like a bedside clock, dry and close. Over it a low, warm older woman speaks quietly, unhurried and immovable, like a mother waiting up at the kitchen table. Final seconds: one soft distant car horn melting into a long hall reverb tail. Sparse, intimate, voice-forward mix, rubato, beatless",
+    "exclude": "drums, percussion, beat, bass drop, sung vocals, melody singing, chorus, choir, rap, autotune, synth pads, EDM, orchestral swell",
+    "lyrics": "[Spoken, shouted, drunk young man]\n(There's infinite versions of me. One of them gets home fine.)\n\n[Single violin stab]\n\n[Detuned music box loop]\n\n[Spoken, calm older woman, quiet]\n(There's only one.)\n\n[Soft distant car horn, reverb tail]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": true
+  },
+  {
+    "name": "garage-pulse-cut-dead",
+    "style": "UK garage 2-step, 132 bpm, skippy swung sixteenth hats, broken kick, rubbery sub bass, chopped vocal stab, heard muffled through a club door at 2am, low-pass filtered, street air. Spoken word, not rapped, not sung: a cocky young South London MC voice, drunk, giddy, too loud. Mid-track the groove stutters, gates, beat-repeats and doubles into glitched copies of itself, then a hard stop into total silence. Second voice: a very deep, slow bass-baritone man, dry, close-mic, unhurried, no reverb, nothing under him. Ending: one low sub boom and a single taxi horn pitched to the key, cinematic, rings out. Short sound-design cue, speech-led.",
+    "exclude": "singing, melody vocals, rap flow, autotune, choir, female vocals, four-on-the-floor house, EDM drop, long intro, fade-in, outro jam, repeated lyrics, crowd cheering",
+    "lyrics": "[Intro: 2-step groove through a club door, muffled]\n\n[Spoken: cocky drunk young MC, half-shouting over the beat]\nThere's infinite versions of me. One of them gets home fine.\n\n[Break: beat stutters, chops and doubles into glitch copies]\n\n[Hard stop: dead silence, no music]\n\n[Spoken: very deep slow bass-baritone man, dry and close]\nThere's only one.\n\n[Sub boom, one taxi horn in key, ring out]\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 70,
+    "vocalGender": "male",
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "lab-theremin-documentary",
+    "style": "Spoken-word sci-fi lab cue, 1950s B-movie laboratory, no singing. Warbling theremin glides with wide hand vibrato, oscillator bleeps, a dry Geiger-counter clicking as the only pulse, a glassy synth arpeggio that doubles, triples and detunes into a smeared shimmer, then snaps to one pure sine tone. Two male speakers: a sleepy young British drunk mumbling close to the mic, confiding to himself; a crisp middle-aged British documentary narrator, precise and certain, like a nature presenter naming a specimen. Ends on a heavy car-door thunk, one warm distant car horn and a fading electrical hum. Cinematic short sting.",
+    "exclude": "singing, sung melody, rap, choir, drum kit, bass drop, pop chorus, autotune, female vocals, guitar",
+    "lyrics": "[Intro: theremin swell, Geiger clicks]\n\n[Spoken, mumbled, close-mic, sleepy young British drunk]\nThere's infinite versions of me. One of them gets home fine.\n\n[Arpeggio multiplies, voices detune and split]\n\n[Spoken, crisp British documentary narrator, calm]\nThere's only one.\n\n[Arpeggio collapses into one pure sine tone]\n\n[Car door thunk, warm distant car horn, hum fades out]\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 70,
+    "vocalGender": "male",
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "terrace-chant-collapse",
+    "style": "drunk lads' football terrace chant, gang vocals in rough unison, half-sung half-shouted, scrappy supporters' brass band of trumpets and tuba, big bass drum and stomping, beery stadium echo, 105 bpm, chant splinters into overlapping out-of-time copies, sudden tape-stop to silence, deadpan bored female spoken voice, comic trombone slide down, one short polite car horn",
+    "exclude": "polished pop, orchestral strings, solemn piano, cinematic trailer, autotune, smooth R&B, long outro, fade out",
+    "lyrics": "[Intro: crowd chatter, bass drum stomps]\n[Gang Vocals: drunk lads chanting in unison, brass band]\nThere's infinite versions of me. One of them gets home fine.\n[Chant echoes and overlaps out of time, voices tumbling over each other]\n[Tape Stop]\n[Silence]\n[Spoken Word: flat, bored young woman, deadpan]\n(There's only one.)\n[Trombone slide down]\n[Sound effect: single short car horn beep]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 62,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "vocoder-trailer-braam",
+    "style": "blockbuster trailer sound design score, two talked voices with zero melody, endless climbing Shepard-tone riser, dry clock tick that accelerates, distorted low brass braam with long reverb tail, sub-bass boom, deep vocoded synthetic narrator voice an octave down, dialogue dry and loud above the effects, near-silence vacuum before the final line, title-card slam, cinematic car horn, headlight swoosh",
+    "exclude": "singing, sung chorus, melodic lead vocal, refrain, rap, rhyme, autotune on the lad, guitar, piano ballad, EDM drop, four-on-the-floor, laughter track, comedy",
+    "lyrics": "[Intro: Shepard-tone riser begins, clock ticks quick and dry]\n[Talking, no melody: British teenage lad, drunk, out of breath, giggling nervously, gabbling the line]\nThere's infinite versions of me. One of them gets home fine.\n[Riser crests, ticks race, braam, then a vacuum of silence]\n[Talking, no melody: vocoded synthetic voice, an octave down, slow, colossal, utterly sure]\nThere's only one.\n[Massive sub impact, nothing else left]\n[Outro: title-card slam, one car horn, headlights swoosh past, tail rings out]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 75,
+    "vocalGender": "male",
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "choir-of-yous-to-one",
+    "style": "cinematic sound-design miniature, rainy city street at 2am, wet tyres hissing, far-off sirens, a lone tenor saxophone noodling from a bar doorway, a young British lad crooning off-key and slurred, sentimental and melancholy, half-singing to himself, his voice then multiplying into a whispered choir of himself, layered, wide stereo, drifting out of sync, sudden hush, one small boy speaking plainly with no melody, collapse to a single low piano note, ending on rain, a cab door and one soft low horn",
+    "exclude": "drums, beat, bass drop, EDM, trap, autotune, polished pop vocal, anthem, big chorus, female vocal, upbeat",
+    "lyrics": "[Intro]\n[rain on wet tarmac, tyres hiss past, a lonely sax from a bar]\n\n[Verse]\n[drunk British lad, crooning off-key, sentimental, to himself]\nThere's infinite versions of me. One of them gets home fine.\n\n[Choir]\n[his voice splits into many whispering copies of himself, spread left and right, slightly out of time, sax smearing underneath]\n\n[Break]\n[everything drops away, one small boy, spoken flatly, no melody]\nThere's only one.\n\n[Outro]\n[choir and sax fold into one low piano note, then rain, a taxi door thuds shut, one gentle low car horn]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 60,
+    "styleInfluence": 55,
+    "vocalGender": "male",
+    "durationSec": 15,
+    "maxMode": false
+  }
+]

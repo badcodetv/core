@@ -1,0 +1,13 @@
+{
+  "name": "violin-jab-music-box",
+  "style": "cinematic spoken-word sound design cue, no singing, two speaking voices. Opens on a raw hoarse young British man bellowing his words across a rainy late-night taxi rank, drunk, slurred, half-laughing. Instantly after his last word: one savage solo violin stab, bow scraped hard, a single sforzando hit then silence. Then a tiny detuned wind-up music box, a slow three-note loop ticking like a bedside clock, dry and close. Over it a low, warm older woman speaks quietly, unhurried and immovable, like a mother waiting up at the kitchen table. Final seconds: one soft distant car horn melting into a long hall reverb tail. Sparse, intimate, voice-forward mix, rubato, beatless",
+  "exclude": "drums, percussion, beat, bass drop, sung vocals, melody singing, chorus, choir, rap, autotune, synth pads, EDM, orchestral swell",
+  "lyrics": "[Spoken, shouted, drunk young man]\n(There's infinite versions of me. One of them gets home fine.)\n\n[Single violin stab]\n\n[Detuned music box loop]\n\n[Spoken, calm older woman, quiet]\n(There's only one.)\n\n[Soft distant car horn, reverb tail]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": true
+}

@@ -1,0 +1,47 @@
+{
+  "research": [
+    "https://developers.googleblog.com/en/how-to-prompt-gemini-2-5-flash-image-generation-for-the-best-results/ — Google's own guidance: describe the scene as a narrative paragraph (subject, setting, light, camera), not a keyword list; 'photorealistic' plus concrete action and lighting.",
+    "https://www.atlabs.ai/blog/nano-banana-2-prompting-guide — Nano Banana 2 responds strongly to named photographic language (film stock, lens, lighting); be explicit about environment and light or it fills gaps with glossy defaults.",
+    "https://www.hooked.so/prompts/nano-banana?page=3 — practitioner snapshot prompts work by naming the flaws: grain, motion blur, harsh or no flash, tilted messy composition, cheap camera.",
+    "https://localbanana.io/docs/realistic-photos-guide — realism comes from naming the camera/film simulation and imperfections rather than 'high quality' words.",
+    "https://www.photrio.com/forum/threads/cinestill-800t-whats-it-all-about.166552/ — tungsten-balanced/cross-processed cine film under fluorescent goes cold and greenish, with halation round bright lights: the reference's teal cast.",
+    "https://gridfiti.com/cinestill-vs-portra — daylight stocks (Portra) push warm; the cold blue-teal look at night comes from fluorescent tubes on cheap or tungsten stock, slightly underexposed.",
+    "https://photofocus.com/found/photographing-the-mood-and-unease-of-liminal-spaces/ — ordinary transit places (storefronts, car parks) turn eerie once empty; frame to suggest being alone; lighting makes the mood.",
+    "https://howtofilmschool.com/dictionary/negative-space/ — horror leaves a suspiciously empty part of the frame where the viewer expects something; the mind fills it.",
+    "https://www.slashfilm.com/578134/fractured/ — The Invisible Man frames empty rooms and doorways as if occupied: the camera lingers on nothing.",
+    "https://www.studiobinder.com/blog/liminal-space-movies/ — one-point perspective corridors and doorways-within-doorways as thresholds of dread."
+  ],
+  "notes": "All five are no-people, no-brand, available-light colour-film snapshots in the reference's teal fluorescent look. Only PR2-e echoes the doorway, and reverses it (from inside looking out). The unseen force is carried by negative space: a half-open stockroom door with one tube out (c), an empty stool behind the counter (d), a door ajar on its own (e). Price text '50p' is asked for in b, d and e; check it renders exactly. No flash in any prompt (the reference has none).",
+  "stills": [
+    {
+      "beat": "price50",
+      "id": "PR2-a",
+      "look": "Street wide: the only lit shop on the row",
+      "prompt": "A vertical amateur snapshot on cheap colour negative film, taken at night from across a damp British terraced street. A small corner shop glows alone, the only lit window on the whole row; every house around it is dark. A hand-written paper sign is taped inside the glass, unreadable. Fluorescent tubes spill a cold blue-teal light onto the wet pavement, a far-off sodium streetlamp gives a weak orange. The shop door is propped open and nobody is inside or outside. Slightly underexposed, heavy grain, soft focus, faint halation round the tubes, horizon a little tilted. Unglamorous and lonely, like a photo taken walking home. No people, no brands. Thanks."
+    },
+    {
+      "beat": "price50",
+      "id": "PR2-b",
+      "look": "Shelf insert: one loaf, label reads 50p",
+      "prompt": "A close vertical snapshot on grainy colour film, no flash, of a low metal shelf in a cramped British corner shop at night. One loaf of plain white sliced bread in a clear unbranded plastic bag sits alone; the rest of the shelf is bare. A white shelf-edge price label clipped in front of it reads \"50p\" in black marker. A single fluorescent tube overhead casts a cold blue-green tint, and the back of the shelf sinks into murky shadow. Soft focus, slightly underexposed, dust on the plastic, a crooked handheld frame. Ordinary, cheap, and quietly unsettling, as if the price is a trap. Thanks."
+    },
+    {
+      "beat": "price50",
+      "id": "PR2-c",
+      "look": "Down the aisle: stockroom door half open, one tube out",
+      "prompt": "A vertical amateur photograph on cheap ISO 400 colour film at night, taken from the front end of the single narrow aisle of a British corner shop, looking straight down it to the back. Shelves of tins, crisps and loo roll on both sides, packets unreadable. At the far end a stockroom door stands half open onto pure black. The fluorescent tube nearest the back is dead, so the far end sits in gloom while the near end is lit teal-white. The aisle is empty, yet it feels as if someone has just stepped out of it. Grain, soft focus, slight shake blur, underexposed. Thanks."
+    },
+    {
+      "beat": "price50",
+      "id": "PR2-d",
+      "look": "At the counter: bread, coins, empty stool",
+      "prompt": "A vertical snapshot on grainy colour film, from the customer's side of a British corner shop counter late at night. On the scuffed counter: a loaf of plain white sliced bread, a small handwritten card propped against it reading \"50p\", a few copper and silver coins, and a small unbranded purple chocolate bar. Behind the counter nobody, just an empty stool still turning slightly, a pulled-down metal shutter, a newspaper rack with unreadable headlines, a UK three-pin plug socket with a kettle lead. Fluorescent tubes blow out at the top of frame, cold teal cast, dark corners, soft focus. Unstaged, ordinary, and wrong. Thanks."
+    },
+    {
+      "beat": "price50",
+      "id": "PR2-e",
+      "look": "Reverse doorway: from inside, door ajar onto black street",
+      "prompt": "A vertical amateur snapshot on cheap colour film at night, taken from inside a small British corner shop looking out through its open glass front door at an empty dark street. The door has swung ajar on its own. In the foreground a dirty rubber doormat and a plastic bread crate holding a single white sliced loaf with a sticker reading \"50p\"; a wire spinner rack of crisps at the edge; a handwritten paper sign taped to the glass, seen backwards. Outside is black, one distant streetlamp, wet pavement. Teal fluorescent light inside, grain, soft focus, underexposed, slight motion blur. Something just came in. Thanks."
+    }
+  ]
+}

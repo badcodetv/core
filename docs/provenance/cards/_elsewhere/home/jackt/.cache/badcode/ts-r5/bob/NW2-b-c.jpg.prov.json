@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/bob/NW2-b-c.jpg",
+ "made": "2026-11-16T14:20:09.210Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid photograph, high angle over the shoulder of the man from the attached reference sheet, seated alone at a small corner table in a worn British local pub. His hand presses a tiny betting-shop pencil to an answer sheet, already writing \"300,000\" without pause, a half pint and a folded quiz sheet beside it. His face in partial profile, focused and still. Behind him, soft out of focus, a hen do in sashes and plastic tiaras shrieks and argues over their own guess, and old regulars lean in at the bar. Warm tungsten glow, unbranded fruit machine light on the carpet, cheap colour film, coarse grain, rain-streaked teal window at the edge of frame. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "fc826ec8-ab0b-400e-a8c7-ff83a17e542c"
+}

@@ -1,0 +1,117 @@
+{
+ "skip": [],
+ "extra": [
+  {
+   "key": "01-t1",
+   "n": 1,
+   "still": "RU4-1-b",
+   "motion": "Single continuous handheld shot, fisheye lens, 8 seconds. The seated masked figure nods slowly to a heavy beat, shoulders rocking, then raises the chalkboard a few inches closer and holds it there. His blank mask stays dead-on to camera the whole time. Not one chalk mark on the board changes; railings and brownstones hold still. The streetlamp flickers once. Sound: distant traffic, a car door, a dog barking far off. Nobody talks or sings; leave out any music.",
+   "character": null,
+   "why": "anim r1 clean room, part: intro"
+  },
+  {
+   "key": "01-t2",
+   "n": 1,
+   "still": "RU4-1-b",
+   "motion": "Single continuous handheld shot, fisheye lens, 8 seconds. The seated masked figure nods slowly to a heavy beat, shoulders rocking, then raises the chalkboard a few inches closer and holds it there. His blank mask stays dead-on to camera the whole time. Not one chalk mark on the board changes; railings and brownstones hold still. The streetlamp flickers once. Sound: distant traffic, a car door, a dog barking far off. Nobody talks or sings; leave out any music.",
+   "character": null,
+   "why": "anim r1 clean room, part: intro"
+  },
+  {
+   "key": "03-t1",
+   "n": 3,
+   "still": "SU4-1-a",
+   "motion": "One unbroken 8-second take from a fixed tripod. The masked figure bobs his head to a beat and slowly fans the banknotes wider, then snaps them shut against one gloved palm. Behind him a train pulls out of the station, commuters stream past in motion blur, the fluorescent tubes buzz. His masked face never turns from us and its markings never change; the mic stand doesn't move. Sound: train doors, rumble, footsteps. No voices, no score.",
+   "character": null,
+   "why": "anim r1 clean room, part: rule one"
+  },
+  {
+   "key": "03-t2",
+   "n": 3,
+   "still": "SU4-1-a",
+   "motion": "One unbroken 8-second take from a fixed tripod. The masked figure bobs his head to a beat and slowly fans the banknotes wider, then snaps them shut against one gloved palm. Behind him a train pulls out of the station, commuters stream past in motion blur, the fluorescent tubes buzz. His masked face never turns from us and its markings never change; the mic stand doesn't move. Sound: train doors, rumble, footsteps. No voices, no score.",
+   "character": null,
+   "why": "anim r1 clean room, part: rule one"
+  },
+  {
+   "key": "04-t1",
+   "n": 4,
+   "still": "RU4-2-a",
+   "motion": "Single continuous shot, fisheye lens, slow push in, 8 seconds. Bent low into the fisheye, the masked figure pumps the two-finger sign forward on each beat while his other hand jabs the pointing finger in time, knees bouncing. A thin haze drifts across the red backdrop. The masked face stays pointed at us, its stitching fixed; the headstones never move. Sound: studio room tone, shoe scuffs on the floor. Silent mouthless figure, no speech, no backing track.",
+   "character": null,
+   "why": "anim r1 clean room, part: rule two"
+  },
+  {
+   "key": "04-t2",
+   "n": 4,
+   "still": "RU4-2-a",
+   "motion": "Single continuous shot, fisheye lens, slow push in, 8 seconds. Bent low into the fisheye, the masked figure pumps the two-finger sign forward on each beat while his other hand jabs the pointing finger in time, knees bouncing. A thin haze drifts across the red backdrop. The masked face stays pointed at us, its stitching fixed; the headstones never move. Sound: studio room tone, shoe scuffs on the floor. Silent mouthless figure, no speech, no backing track.",
+   "character": null,
+   "why": "anim r1 clean room, part: rule two"
+  },
+  {
+   "key": "05-t1",
+   "n": 5,
+   "still": "SU4-3-b",
+   "motion": "Single continuous shot, handheld camera walking backwards ahead of him, 8 seconds. The masked figure strides at us with a rolling swagger, mic swinging on its cable, head nodding to the beat. Banknotes flutter down from above and tumble across the cobbles; silhouetted pedestrians cross behind him. His mask stays on us all the way, markings untouched; the bridge holds steady behind. Sound: footsteps on cobbles, paper rustle, wind. No talking, no song.",
+   "character": null,
+   "why": "anim r1 clean room, part: rule two"
+  },
+  {
+   "key": "05-t2",
+   "n": 5,
+   "still": "SU4-3-b",
+   "motion": "Single continuous shot, handheld camera walking backwards ahead of him, 8 seconds. The masked figure strides at us with a rolling swagger, mic swinging on its cable, head nodding to the beat. Banknotes flutter down from above and tumble across the cobbles; silhouetted pedestrians cross behind him. His mask stays on us all the way, markings untouched; the bridge holds steady behind. Sound: footsteps on cobbles, paper rustle, wind. No talking, no song.",
+   "character": null,
+   "why": "anim r1 clean room, part: rule two"
+  },
+  {
+   "key": "06-t1",
+   "n": 6,
+   "still": "RU4-3-a",
+   "motion": "A static 8-second take, no cuts. The masked figure leans back on the bench and rocks his head to a beat, then tilts the microphone slowly toward the older woman on his left; she folds her arms and shakes her head, unimpressed, mouth closed. The young man behind shrugs. Leaves shift in the sunlight, shadows of the chain-link fence move slightly. His mask turns only slightly and never leaves the lens. Sound: birds, a distant bus. Nobody says a word; no music.",
+   "character": null,
+   "why": "anim r1 clean room, part: rule three"
+  },
+  {
+   "key": "06-t2",
+   "n": 6,
+   "still": "RU4-3-a",
+   "motion": "A static 8-second take, no cuts. The masked figure leans back on the bench and rocks his head to a beat, then tilts the microphone slowly toward the older woman on his left; she folds her arms and shakes her head, unimpressed, mouth closed. The young man behind shrugs. Leaves shift in the sunlight, shadows of the chain-link fence move slightly. His mask turns only slightly and never leaves the lens. Sound: birds, a distant bus. Nobody says a word; no music.",
+   "character": null,
+   "why": "anim r1 clean room, part: rule three"
+  },
+  {
+   "key": "07-t1",
+   "n": 7,
+   "still": "FX4-1-b",
+   "motion": "Eight seconds, one take, the camera dead still on a tripod. The masked figure holds both empty gloved hands up, palms out, and slowly turns them over and back on the beat, showing nothing in them. The microphone hangs in place in front of his chest, untouched. Moths circle the streetlight; a faint mist drifts through the orange glow. The masked face looks only at us, its pattern never altering. Sound: streetlight hum, distant siren. No speech, no soundtrack.",
+   "character": null,
+   "why": "anim r1 clean room, part: fix"
+  },
+  {
+   "key": "07-t2",
+   "n": 7,
+   "still": "FX4-1-b",
+   "motion": "Eight seconds, one take, the camera dead still on a tripod. The masked figure holds both empty gloved hands up, palms out, and slowly turns them over and back on the beat, showing nothing in them. The microphone hangs in place in front of his chest, untouched. Moths circle the streetlight; a faint mist drifts through the orange glow. The masked face looks only at us, its pattern never altering. Sound: streetlight hum, distant siren. No speech, no soundtrack.",
+   "character": null,
+   "why": "anim r1 clean room, part: fix"
+  },
+  {
+   "key": "02-t1",
+   "n": 2,
+   "still": "RU4-5-b",
+   "motion": "Single continuous shot, handheld camera backing away slowly at his pace, 8 seconds. The masked figure keeps walking at us through the dusk crowd, holding the microphone out at arm's length, swaying it gently side to side with the beat. Blurred pedestrians brush past both edges of frame; traffic lights blink in the haze behind. His mask stays aimed down the lens, its design identical start to finish. Sound: indistinct crowd murmur, car horns, footsteps. No spoken words, no music.",
+   "character": null,
+   "why": "anim r1 clean room, part: outro"
+  },
+  {
+   "key": "02-t2",
+   "n": 2,
+   "still": "RU4-5-b",
+   "motion": "Single continuous shot, handheld camera backing away slowly at his pace, 8 seconds. The masked figure keeps walking at us through the dusk crowd, holding the microphone out at arm's length, swaying it gently side to side with the beat. Blurred pedestrians brush past both edges of frame; traffic lights blink in the haze behind. His mask stays aimed down the lens, its design identical start to finish. Sound: indistinct crowd murmur, car horns, footsteps. No spoken words, no music.",
+   "character": null,
+   "why": "anim r1 clean room, part: outro"
+  }
+ ]
+}

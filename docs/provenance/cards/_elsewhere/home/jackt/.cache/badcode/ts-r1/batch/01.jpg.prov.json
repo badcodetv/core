@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/01.jpg",
+ "made": "2026-11-16T13:21:35.739Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph looking straight down from the ceiling of one small bed-and-breakfast room in an English town at night. A double bed and a travel cot fill nearly the whole floor; between them a narrow strip of worn carpet with bin bags of clothes, a pushchair folded against the wall, a kettle and cereal boxes on the floor because there is no kitchen. Two adults and a small child asleep under the duvet, turned away, only hair and shapes. The only light is a buzzing fluorescent tube by the door, cold teal, with the rest in shadow. 28mm lens, slight wide-angle bend at the edges. Night colour film, heavy grain, muddy blacks. Thanks.",
+ "source_id": "5849abd4-e74c-4c20-b40b-e32bd1292f81"
+}

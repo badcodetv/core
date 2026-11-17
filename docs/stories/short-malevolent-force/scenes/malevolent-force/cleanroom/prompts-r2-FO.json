@@ -1,0 +1,46 @@
+{
+  "research": [
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — write Nano Banana 2 prompts as full prose sentences, not comma-separated tag lists",
+    "https://carat.im/en/prompt-gallery/film-grain-photo — community film-look prompts name a specific stock/35mm camera and spell out grain and halation around bright areas",
+    "https://budgetpixel.com/blog/analog-neon-prompting-1990s-cyberpunk-street-photography — snapshot realism comes from listing imperfections: tilted, messy framing, motion blur, harsh shadows, documentary handheld feel, avoid HDR/AI glow",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide covers Nano Banana 2; use photographic vocabulary (camera, lens, light); earlier words weigh more, so lead with the film look",
+    "https://www.uniquephoto.com/photoinsider/cinestill-800t-vs-kodak-portra-800-which-fast-color-film-for-night-photography — fast colour stocks at night: tungsten-balanced 800T turns light cool and blooms light sources (halation); Portra 800 warmer and punchier",
+    "https://www.adorama.com/CS800135.html — 800T is balanced for incandescent, not fluorescent, so fluorescent shops render off-colour (green/teal), which is exactly the reference's cast",
+    "https://en.wikipedia.org/wiki/Liminal_space_(aesthetic) — empty everyday places become eerie through the absence of the people who should be there; fluorescent light and odd angles push it",
+    "https://www.slashfilm.com/578134/fractured/ — The Invisible Man weaponises negative space: the audience distrusts any empty part of the frame",
+    "https://nofilmschool.com/ways-horror-likes-scare-its-audience — a door ajar, a reflection in a dark surface, a suspiciously empty patch of frame keep the viewer hunting for an unseen threat"
+  ],
+  "notes": "Beat C, £50. The force is shown only by its traces: a price on its own, a till printer running with nobody there, blank uncut banknote sheets on the floor (the printer's leavings, never the printer's owner), an open stockroom door with light inside. No person, no face, no hand in any prompt. FO2-e is the one prompt that echoes the reference's doorway framing. Price text: every label is \"£50\" except the till (\"£50.00\") and the purple bar in FO2-e (\"£12\", its own rising price; change if the Fredo ladder uses another number). Banknotes in FO2-d are specified with no readable design to avoid currency-reproduction blocks; if Flow blocks it, swap to 'blank paper sheets fresh from a printer'. If the model drifts glossy, move 'cheap 35mm colour film, grainy, underexposed' even earlier and add 'not HDR'.",
+  "stills": [
+    {
+      "beat": "force",
+      "id": "FO2-a",
+      "look": "Insert: the £50 shelf label, nothing else left",
+      "prompt": "A vertical amateur snapshot on cheap 35mm colour negative film, pushed at night, heavy grain, slightly soft focus, underexposed, a cold teal-green fluorescent cast. Close-up of a bread shelf in a small British corner shop: one plain white sliced loaf left on a bare metal shelf, its paper shelf-edge price label reading exactly \"£50\" in black marker, older crossed-out prices beneath it. The fluorescent tube above is half dead, so the left of the frame falls into murky darkness. Crumbs, a torn plastic bag clip, dust. Flash not used, available light only, nobody in the shop. Thanks."
+    },
+    {
+      "beat": "force",
+      "id": "FO2-b",
+      "look": "Till printer spilling paper, empty counter",
+      "prompt": "A vertical night snapshot on grainy expired colour film, available light only, soft focus, blue-teal cast, blown-out fluorescent tubes. A cluttered British corner shop counter with no one behind it: an unbranded lottery stand, a newspaper rack, cigarette shutters closed. The small receipt printer beside the till is still running by itself, a long curling ribbon of paper spilling over the counter edge and piling on the lino floor. The till display glows green and reads \"£50.00\". A plain white sliced loaf sits waiting on the counter. The door to the back room behind is ajar, black inside. Candid, slightly crooked framing. Thanks."
+    },
+    {
+      "beat": "force",
+      "id": "FO2-c",
+      "look": "Street wide: the only lit shop on the terrace",
+      "prompt": "A vertical snapshot from across a wet British terraced street at 3am, cheap 35mm colour film, coarse grain, underexposed, cold teal shadows and green fluorescent glow. A tiny corner shop is the only lit window on the row; every house around it is dark. A hand-written card in the shop window reads \"BREAD £50\". The shop door stands open onto the empty pavement, warm-white light spilling across a puddle. No people, no cars moving, one sodium streetlamp out. The window display looks lived-in and ordinary, but the open door feels like an invitation. Slight camera shake, horizon a little tilted. Thanks."
+    },
+    {
+      "beat": "force",
+      "id": "FO2-d",
+      "look": "Convex mirror: the aisle watched from above",
+      "prompt": "A vertical night photograph on grainy colour negative film, amateur and underexposed, fluorescent light rendered sickly green-blue with soft halation. Looking up at a round convex security mirror in the corner of a cramped British corner shop. In the curved mirror the narrow aisle bends away, completely empty: snack racks, a lit drinks fridge, a bread shelf at the end with one loaf and a tiny label reading \"£50\". On the floor of the aisle, scattered blank uncut sheets of fresh paper banknotes with no readable design, as if dropped moments ago. No figure anywhere, only the sense someone just left. Thanks."
+    },
+    {
+      "beat": "force",
+      "id": "FO2-e",
+      "look": "Doorway at closing: sign, purple bar, back door open",
+      "prompt": "A vertical snapshot from the pavement through the open glass door of a small British corner shop at night, shot on cheap 35mm colour film, grainy, soft, underexposed, cold teal cast with overblown fluorescent tubes. Hand-printed paper sign taped to the door glass reads \"BREAD £50\". Inside: a wire spinner rack, a lit fridge, a wall fan, and at the far end the stockroom door wide open, a cold blue light pulsing from inside it. On the dirty doormat a small unbranded purple chocolate bar has fallen, its sticker reading \"£12\". The shop is empty yet feels occupied. Thanks."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+ "research": [
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write a scene in plain sentences with concrete detail and camera language, not keyword stacks",
+  "https://fliki.ai/blog/nano-banana-2-prompting-guide — name a real film stock and a lens; grain kept subtle; one clear subject",
+  "https://budgetpixel.com/blog/analog-neon-prompting-1990s-cyberpunk-street-photography — analog constraints (stock, halation, grain, mixed practical light) remove the glossy AI sheen at night",
+  "https://z-image-astroblog.pages.dev/blog/nano-banana-image-prompting-the-5-layer-framework — '8k HDR ultra' modifiers add noise, not control; motivated light and imperfection do the work",
+  "https://flowingdata.com/2023/12/21/scale-of-all-the-things-compared-to-you/ — scale videos keep one human-sized anchor at every step; the opening shot must set that anchor",
+  "https://coolinfographics.com/blog/2019/10/17/star-wars-size-comparison-video — a true-scale comparison works by a shared baseline and lots of empty space to fill later",
+  "https://agent.vizard.ai/how-to/make-a-video-that-explains-the-scale-of-something.html — a number lands when mapped onto an everyday object first",
+  "https://england.shelter.org.uk/housing_advice/homelessness/housing_suitability_reviews/unsuitable_temporary_accommodation — a B&B placement is one room, no kitchen, shared bathroom",
+  "https://insidehousing.co.uk/insight/weve-got-no-dignity-life-in-poor-quality-temporary-accommodation-74652 — whole families in a single room: beds wall to wall, belongings in bags, kettle on the floor",
+  "https://www.childrenscommissioner.gov.uk/report/no-way-out — children sharing one room with parents in temporary accommodation is the norm, not the exception",
+  "https://virtualshoemuseum.com/?p=55050 — Shelter's 'Shoes Have Names': objects standing in for people tell the story without faces",
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google: concrete detail over vague decoration, specific camera/composition language, positive framing; NB2 renders short legible text well",
+  "https://www.atlabs.ai/blog/nano-banana-2-prompting-guide — keep in-image text to a few words; quote the exact string",
+  "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — a period/film-stock cue makes the model infer matching grain and colour on its own",
+  "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — most models treat text as texture; name lens, angle, depth of field",
+  "https://www.wangarattachronicle.com.au/news/unveiling-of-seats-without-shelter-gives-homeless-youth-a-voice-ijocx16l — 'Seats without Shelter': 231 empty seats, one per young person, a number made physical by objects",
+  "https://sheffieldwire.co.uk/?p=75993 — Sheffield exhibition: concrete-slab beds beside statistics; objects carry the number",
+  "https://insidehousing.co.uk/insight/weve-got-no-dignity-life-in-poor-quality-temporary-accommodation-74652 — temporary accommodation: cold, overcrowding, shared facilities",
+  "https://committees.parliament.uk/publications/47349/documents/245409/default/ — committee report: families in B&Bs 'live out of suitcases'; one room, shared kitchens",
+  "https://www.gov.uk/government/publications/housing-conditions-in-temporary-accommodation-government-response-to-the-housing-communities-and-local-government-committee-report/housing-conditions-in-temporary-accommodation-government-response-to-the-housing-communities-and-local-government-committee-report-accessible-versi — B&B/hostel TA as the official context",
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google: Nano Banana 2 renders short legible text well; structure prompts as subject, composition, action, setting, style; concrete composition and lighting beat adjectives",
+  "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — naming an era or medium makes the model infer grain, colour and period composition on its own; useful for cheap-film night looks",
+  "https://morphed.app/blog/nano-banana-2-prompts — short text (1-4 words) in quotes renders most reliably (vendor claim, unverified); keep the number to one short string",
+  "https://fliki.ai/blog/nano-banana-2-prompting-guide — name a specific film stock, lens and light source rather than 'cinematic'",
+  "https://www.lifehacker.com.au/?p=1060791 — size-comparison videos work through the relation between objects and a familiar reference (a person beside the giant), not the objects alone",
+  "https://the-dots.com/projects/home-truths-90048 — Home Truths (London): empty homes vs homelessness shown as 3D-printed sculptural data maps and a fold-out map; the physical model is an established way in",
+  "https://www.citylab.com/housing/2017/04/learning-from-two-months-of-illuminating-abandoned-homes/523317/ — Breathing Lights lit vacant houses' windows; light in an empty window reads strongly, but audiences can misread it as celebration, so keep the empties dark and the lit thing the households",
+  "https://www.goethe.de/ins/gb/en/m/kul/past/glei/liv/21152755.html — empty England pictured as Victorian brick terraces in Liverpool and Manchester; boarded rows are the recognisable image",
+  "https://www.safesitefacilities.co.uk/case-studies/sitex-steel-security-screens-southampton — long-term voids in England are sealed with grey perforated steel security screens over windows and doors: the specific, un-generic signifier of an empty English home",
+  "https://live.historicengland.org.uk/advice/planning/housing/low-demand-housing — whole streets of terraced houses empty and boarded in the Midlands and north",
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write a scene in prose, not keyword lists; order it subject, composition, action, location, style; Nano Banana 2 renders short text sharply",
+  "https://fliki.ai/blog/nano-banana-2-prompting-guide — name a real camera, lens and film stock and keep to one style family; a named film stock (Portra, CineStill) moves it off the glossy stock-photo default",
+  "https://www.leonardo.ai/news/nano-banana-prompt-guide — 'documentary photography' wording keeps results believable rather than polished; describe motivated light sources",
+  "https://www.imagine.art/blogs/nano-banana-2-prompt-guide — in-image text is reliable when short (3-5 words); put it in quotes and say where it sits and what it is printed on",
+  "https://www.actiononemptyhomes.org/work — England, council tax data Nov 2025: 267,894 second homes out of residential use; total vacancy over 1,022,158",
+  "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-research-unit-publications/empty-homes-london — London alone 55,978 second homes in 2025; second homes are furnished but nobody's main home (so lamps, curtains, furniture: lived-in looking, unlived-in)",
+  "https://www.generationrent.org/2026/02/02/what-have-tax-changes-done-to-the-number-of-holiday-homes/ — second homes are growing in city boroughs as well as coastal towns, so not only seaside cottages",
+  "https://www.media.io/ai-prompts/product-size-video-prompts.html — size-comparison images work with a flat, level camera and one shared reference object so the ratio reads honestly",
+  "https://adamandeveddb.com/work/crisis-impossible-to-ignore and https://www.lukejerram.com/invisible-homeless/ — UK homelessness art works by making the invisible physically present and unavoidable, not by charts"
+ ],
+ "notes": {
+  "ON": "Beat A is the anchor the whole film scales from, so all three keep a household small, dark-surrounded and teal-lit, with no faces and no text. ON1-a is the literal true-scale opener (model figures on an empty dark table, room for 134,210 more). ON1-b is the real thing: a B&B room seen from directly above, the household asleep under covers. ON1-c is the surprise: no people at all, the household shown as everything it owns, lined up in a car park. Film language throughout (Portra 800 / Cinestill-style halation, 35mm, grain) after the reference photo's cheap-night-film feel.",
+  "CR": "Beat B = every household in temporary accommodation at once. Three different ideas: (a) literal true-scale aerial: one packed suitcase per household (from the 'living out of suitcases' testimony) filling a retail-park car park to the horizon, one terraced house for scale; (b) the surprise / counting device: a B&B reception key board that never ends, the last fob reading 134,210 (the only written number); (c) the map: a council office wall map of England so thick with teal pins the cities become solid. All carry the reference's night, cheap colour film, grain, cold fluorescent teal. No faces, no brands, no landmarks. Each ends 'Thanks.'",
+  "EM": "Beat C must make the 134,210 households (beat B) suddenly small. All three keep the empties DARK and the households as the only warm-cold teal light, so the eye measures the ratio. a = the literal true-scale comparison (aerial, ratio of lit to dark roughly 1:2.3). b = the surprise: the empties as house keys on an office wall, no houses at all. c = a physical data model on a trestle table, the Home Truths approach, with the one number written. English specifics: brick terraces, grey perforated steel window screens, wheelie bins, sodium-free fluorescent teal. Film language from the reference: night, cheap colour negative, grain, cold fluorescent teal, lonely. Only image c carries text: '303,185'.",
+  "SH": "Beat D's job: the second homes are FURNISHED, so they can light up (timer lamps, a lamp left on, made beds) while being nobody's home; that is the visual difference from beat C's dark empty homes. Three different ideas: (a) the literal true-scale diorama with the ratio built in, one small teal-lit cluster against three dark blocks and a fourth block of warm lit windows; (b) an aerial-feeling night of a whole coastal town lit for nobody, the surprise being that the brightest town in the picture has no one in it; (c) a counting device made of a real object: a brick wall grid of combination key safes, the thing that lets a home be let and left, with one stencilled number. All shot on named cheap night film (CineStill 800T / Portra 800 pushed) with grain, teal fluorescent against sodium-warm windows, to match the shop-doorway reference. Figures only tiny or absent. Only image (c) carries a number, written exactly 267,894."
+ },
+ "stills": [
+  {
+   "beat": "one",
+   "id": "ON1-a",
+   "look": "True scale: three model figures on an empty table",
+   "prompt": "Vertical 9:16 photograph. A huge matte black tabletop stretches away into darkness. In the centre, very small, stand three 1:87 model-railway figures: an adult, a second adult, and a child holding a hand, with a tiny suitcase beside them. A single cold fluorescent teal light from above makes a small pool around them; everything beyond falls to black, so the empty table looks endless and ready to be filled. Shot low on a 50mm macro lens, shallow focus, the figures sharp and the table's dust and scratches visible. Cheap colour negative film at night, visible grain, slight halation round the light. Painted plastic figures, no faces readable. No text. Thanks."
+  },
+  {
+   "beat": "one",
+   "id": "ON1-b",
+   "look": "One room from the ceiling: a B&B at night",
+   "prompt": "Vertical 9:16 photograph looking straight down from the ceiling of one small bed-and-breakfast room in an English town at night. A double bed and a travel cot fill nearly the whole floor; between them a narrow strip of worn carpet with bin bags of clothes, a pushchair folded against the wall, a kettle and cereal boxes on the floor because there is no kitchen. Two adults and a small child asleep under the duvet, turned away, only hair and shapes. The only light is a buzzing fluorescent tube by the door, cold teal, with the rest in shadow. 28mm lens, slight wide-angle bend at the edges. Night colour film, heavy grain, muddy blacks. Thanks."
+  },
+  {
+   "beat": "one",
+   "id": "ON1-c",
+   "look": "A household as its belongings in an empty car park",
+   "prompt": "Vertical 9:16 photograph at night in an empty multi-storey car park in England. In one painted parking bay, everything one family owns is lined up neatly on the concrete: six black bin bags, a child's scooter, a folded cot, a microwave, two duvets in a laundry bag, a school uniform on a hanger hooked over a pushchair. No people. One cold fluorescent teal tube overhead lights only this bay; the rows of empty bays behind fade into dark. Oil stains, a puddle reflecting the light, a faded bay line. Shot from a standing height on a 35mm lens. Cheap colour film, grain, slight halation, lonely and quiet. No readable text. Thanks."
+  },
+  {
+   "beat": "crowd",
+   "id": "CR1-a",
+   "look": "Suitcase car park, true-scale aerial",
+   "prompt": "Vertical 9:16 night photograph from a drone high above an empty English retail-park car park. Every parking bay and the road beyond is filled with small packed suitcases and holdalls, stood upright in tight rows, one per family, thousands upon thousands running past the edge of the frame into the dark. At the bottom edge, a single red-brick terraced house with one lit window gives the scale. Cold fluorescent teal from tall car-park lamps, pools of light falling off into black, wet tarmac. Shot on cheap 35mm colour negative film, heavy grain, slight blur, muted greens, no people visible, no signage or logos. Lonely, quiet, slightly eerie. Thanks."
+  },
+  {
+   "beat": "crowd",
+   "id": "CR1-b",
+   "look": "The B&B key board that never ends",
+   "prompt": "Vertical 9:16 photograph inside the reception of a cheap English bed-and-breakfast at night. Behind an empty wooden counter with a brass bell, a wall of numbered room keys on hooks, each with a worn plastic fob, runs up past the ceiling and back down a narrow corridor into darkness, rows multiplying until they blur into a texture. One key fob in the foreground, sharp, is stamped in plain black numerals \"134,210\". A single flickering fluorescent tube gives cold teal light, magnolia walls, swirly carpet, fire-door sign without words. 35mm lens, cheap colour film, grain, faint halation, no people. Thanks."
+  },
+  {
+   "beat": "crowd",
+   "id": "CR1-c",
+   "look": "Pin map, cities gone solid",
+   "prompt": "Vertical 9:16 photograph, close and slightly overhead, of a large paper map of England pinned to a cork board on a council office wall after hours. The map is crowded with small teal map pins, so dense around London, Birmingham, Manchester and the coast towns that the pins merge into solid glittering crusts and the printed roads disappear beneath them; thinner scatterings reach every county. A desk lamp is off; the only light is a buzzing fluorescent tube overhead, cold teal, with the pins casting tiny shadows. Shallow depth of field, 50mm, cheap colour film, grain, slight vignette. No text, no people, no logos. Thanks."
+  },
+  {
+   "beat": "empty",
+   "id": "EM1-a",
+   "look": "The dark city of empties (aerial true scale)",
+   "prompt": "Vertical 9:16 aerial photograph at night, looking straight down from very high over an endless grid of English Victorian brick terraced streets, rows of slate roofs and back yards running to the edge of the frame in every direction, every house dark, windows sealed with grey perforated steel security screens, no lights on anywhere. In the lower left corner, one small patch of the grid glows cold fluorescent teal: a few streets of tiny lit windows, small enough to cover with a thumb, utterly outnumbered by the darkness around it. Shot on cheap 35mm colour negative film pushed two stops, heavy grain, slight halation round the teal, faint motion blur, no people visible. Thanks."
+  },
+  {
+   "beat": "empty",
+   "id": "EM1-b",
+   "look": "The key wall (every empty house as a key)",
+   "prompt": "Vertical 9:16 photograph at night inside a shabby English lettings office after closing, a single flickering fluorescent tube overhead throwing cold teal light. The whole back wall, floor to ceiling and receding down a long corridor into darkness, is pegboard hung with thousands upon thousands of identical brass Yale-style house keys on small paper tags, each one for a house nobody lives in, dust on the tags, keys untouched for months. At the bottom of the frame, on a worn grey carpet tile, one small cardboard box of a few keys, lit brighter, looking tiny against the wall. No people. Cheap colour negative film, grain, slight green-teal cast, lonely and eerie. Thanks."
+  },
+  {
+   "beat": "empty",
+   "id": "EM1-c",
+   "look": "The community-hall model (physical data map)",
+   "prompt": "Vertical 9:16 photograph at night in an empty English community hall, folding chairs stacked against the wall, one fluorescent strip light overhead casting cold teal. On a long trestle table stretching away from camera sits a vast architectural model: rows and rows of tiny unpainted grey card terraced houses packed shoulder to shoulder to the far end of the table and spilling onto a second table, every one dark. In the near corner a much smaller cluster of tiny model figures, lit teal, dwarfed. A hand-lettered card propped at the front reads \"303,185\". Shot on cheap colour negative film with a 35mm lens, low angle, shallow depth of field, heavy grain, scuffed lino floor. Thanks."
+  },
+  {
+   "beat": "second",
+   "id": "SH1-a",
+   "look": "True-scale diorama: the fourth block lights up",
+   "prompt": "Vertical 9:16 night photograph of a huge model-railway diorama on a warehouse floor, seen from a low, level camera. Rows of tiny grey English terraced houses, thousands of them, laid out in four rectangular blocks. Front left, one small cluster of houses lit cold fluorescent teal from a single overhead tube: the homeless households. Behind it, two long blocks of dark, unlit houses. Beyond those, a fourth block the same size again where every tiny window glows warm amber with a lamp left on, curtains half drawn, no figures anywhere. The teal cluster looks small now, roughly a quarter of everything else. Shot on CineStill 800T, 35mm lens, visible grain, halation round the windows, slightly underexposed, dust on the model roofs. Thanks."
+  },
+  {
+   "beat": "second",
+   "id": "SH1-b",
+   "look": "A seaside town lit for nobody",
+   "prompt": "Vertical 9:16 night photograph from a hillside above a small English harbour town out of season, January. Steep rows of painted fishermen's cottages and newer holiday flats tumble down to a dark harbour, and nearly every window is lit warm and identical by a timer lamp, yet the streets are completely empty, no cars moving, no one on the quay. In the foreground, at the bottom of the frame, one cold teal fluorescent doorway of a run-down guesthouse used as a hostel, a single tiny silhouette standing in it. The brightest town you have ever seen, and nobody home. Shot on Kodak Portra 800 pushed two stops, 50mm, handheld, heavy grain, mist off the sea, slight motion softness. Thanks."
+  },
+  {
+   "beat": "second",
+   "id": "SH1-c",
+   "look": "A wall of key safes, counted",
+   "prompt": "Vertical 9:16 night photograph of a long, wet London-brick wall lit by one buzzing teal fluorescent tube, covered top to bottom in a tight grid of hundreds of small black combination key safes, the kind screwed beside the front doors of short lets, their dials catching the light, every one shut, the grid running out of frame on all sides as if it never ends. Stencilled once in white paint across the bricks near the bottom, slightly flaked: \"267,894\". No people, a puddle on the pavement reflecting the teal. Documentary street photography, shot on CineStill 800T, 28mm lens, slight vignette, coarse grain, a little camera tilt, cheap and cold. Thanks."
+  }
+ ]
+}

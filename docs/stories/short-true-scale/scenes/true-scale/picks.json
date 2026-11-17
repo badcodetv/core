@@ -1,0 +1,486 @@
+{
+ "title": "True Scale Ideas",
+ "eyebrow": "BadCode Shorts · True Scale · round 2 ideas",
+ "heading": "True Scale: other ways to convey it",
+ "intro": "Round 6, on Jack's notes (version 1 scrapped; diversify the crowd; fix the numbers; subtler voices). Clean room. 8 stills passed; beats 1 and 4 are missing: Flow refused them repeatedly (it went strict on this project after a run of blocks), so they are owed. Numbers now right: 50,000 facing us, the quizmaster's sheet 303,185.",
+ "sections": [
+  {
+   "h": "Round 6: diverse crowd, numbers fixed",
+   "lede": "Beats 1 and 4 still to make.",
+   "groups": [
+    {
+     "slot": "r6-nw2",
+     "round": 6,
+     "title": "2. The guesses",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "2a",
+       "src": "img/NW6-2a.jpg",
+       "label": "NW6-2a: Loud table close-up, 50,000 slapped down",
+       "warn": ""
+      },
+      {
+       "id": "2b1",
+       "src": "img/NW6-2b1.jpg",
+       "label": "NW6-2b1: Wide across the shouting room, Bob alone in the corner",
+       "warn": ""
+      },
+      {
+       "id": "2b2",
+       "src": "img/NW6-2b2.jpg",
+       "label": "NW6-2b2: Wide across the shouting room, Bob alone in the corner",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r6-nw3",
+     "round": 6,
+     "title": "3. The answer",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "3a",
+       "src": "img/NW6-3a.jpg",
+       "label": "NW6-3a: The sheet to camera: low close on the quizmaster lifting 303,185, groans soft in front",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r6-nw5",
+     "round": 6,
+     "title": "5. The prize",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "5a1",
+       "src": "img/NW6-5a1.jpg",
+       "label": "NW6-5a1: The handover: close, warm, the next table receives",
+       "warn": ""
+      },
+      {
+       "id": "5a2",
+       "src": "img/NW6-5a2.jpg",
+       "label": "NW6-5a2: The handover: close, warm, the next table receives",
+       "warn": ""
+      },
+      {
+       "id": "5b1",
+       "src": "img/NW6-5b1.jpg",
+       "label": "NW6-5b1: The exit: doorway silhouette into teal rain, his sheet left behind",
+       "warn": ""
+      },
+      {
+       "id": "5b2",
+       "src": "img/NW6-5b2.jpg",
+       "label": "NW6-5b2: The exit: doorway silhouette into teal rain, his sheet left behind",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Version 2: Nearest Wins",
+   "lede": "Pub quiz tiebreaker: everyone guesses low; Bob wins.",
+   "groups": [
+    {
+     "slot": "v2-nw1",
+     "round": 5,
+     "title": "1. Tiebreaker",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/NW1-a.jpg",
+       "label": "NW1-a: Low angle from a table: landlady mid-announcement, sheet raised, meat raffle beside her",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW1-b1.jpg",
+       "label": "NW1-b1: Over Bob's shoulder at table nine, landlord small and sharp across the room",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW1-b2.jpg",
+       "label": "NW1-b2: Over Bob's shoulder at table nine, landlord small and sharp across the room (take 2)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "v2-nw2",
+     "round": 5,
+     "title": "2. The guesses",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a1",
+       "src": "img/NW2-a1.jpg",
+       "label": "NW2-a1: Loud wrong guess in front, Bob quiet in the far corner",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "img/NW2-a2.jpg",
+       "label": "NW2-a2: Loud wrong guess in front, Bob quiet in the far corner (take 2)",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW2-b1.jpg",
+       "label": "NW2-b1: Over Bob's shoulder writing 300,000, the pub a blur of noise",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW2-b2.jpg",
+       "label": "NW2-b2: Over Bob's shoulder writing 300,000, the pub a blur of noise (take 2)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "v2-nw3",
+     "round": 5,
+     "title": "3. The answer",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/NW3-a.jpg",
+       "label": "NW3-a: Low angle from the crowd: the landlady reads the winning sheet while the tables groan",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW3-b1.jpg",
+       "label": "NW3-b1: Over the landlord's shoulder: his mic arm points across the pub to Bob alone at table nine",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW3-b2.jpg",
+       "label": "NW3-b2: Over the landlord's shoulder: his mic arm points across the pub to Bob alone at table nine (take 2)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "v2-nw4",
+     "round": 5,
+     "title": "4. How'd you know?",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a1",
+       "src": "img/NW4-a1.jpg",
+       "label": "NW4-a1: Wide from the bar: the whole room turned toward the corner",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "img/NW4-a2.jpg",
+       "label": "NW4-a2: Wide from the bar: the whole room turned toward the corner (take 2)",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW4-b1.jpg",
+       "label": "NW4-b1: Low at his table: his sheet sharp, the turned faces soft",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW4-b2.jpg",
+       "label": "NW4-b2: Low at his table: his sheet sharp, the turned faces soft (take 2)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "v2-nw5",
+     "round": 5,
+     "title": "5. The prize",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a1",
+       "src": "img/NW5-a1.jpg",
+       "label": "NW5-a1: The hand-over: low across-the-table close, warm tungsten",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "img/NW5-a2.jpg",
+       "label": "NW5-a2: The hand-over: low across-the-table close, warm tungsten (take 2)",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "img/NW5-b1.jpg",
+       "label": "NW5-b1: The exit: wide from across the wet street, warm window vs teal rain",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "img/NW5-b2.jpg",
+       "label": "NW5-b2: The exit: wide from across the wet street, warm window vs teal rain (take 2)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The flashes",
+   "lede": "Pick one per row.",
+   "groups": [
+    {
+     "slot": "flash-bob",
+     "round": 4,
+     "title": "1. Bob (flash)",
+     "line": "A regular bloke who lost it all in 2008, not \"them\".",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/BO4-a.jpg",
+       "label": "BO4-a: Small in the empty car park: wide, low, one lamp",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/BO4-b.jpg",
+       "label": "BO4-b: Beside the doors: close profile, shoppers as blurred legs",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "img/BO4-c.jpg",
+       "label": "BO4-c: Through your windscreen: he looks back",
+       "warn": ""
+      },
+      {
+       "id": "c2",
+       "src": "img/BO4-c2.jpg",
+       "label": "BO4-c2: Through your windscreen: he looks back (second take)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "flash-home",
+     "round": 4,
+     "title": "3. A warm, lit, happy home (flash)",
+     "line": "The one warm thing in the film.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/HM4-a.jpg",
+       "label": "HM4-a: Outside looking in: glowing front-room window on a cold teal terrace",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/HM4-b.jpg",
+       "label": "HM4-b: Inside at the dinner table: warm pendant lamp, teal night pressed on the glass",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "img/HM4-c.jpg",
+       "label": "HM4-c: Coming home: front door opens, lamp light spills on a wet step",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Maybe: the bomber",
+   "lede": "Four example stills, our own drawn bomber, no copied diagram.",
+   "groups": [
+    {
+     "slot": "idea-bomber",
+     "round": 3,
+     "title": "The bomber (survivorship bias)",
+     "line": "Armour where there are no holes: the planes hit there never came back. The armour is a home.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/BM3-a.jpg",
+       "label": "BM3-a: Night hangar, cheap colour film, cold teal fluorescent, the holes chalk-ringed",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/BM3-b.jpg",
+       "label": "BM3-b: Period look on purpose: the reveal as a 1940s pencil diagram on graph paper under a desk lamp",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "img/BM3-c.jpg",
+       "label": "BM3-c: Present-day England, high angle: the doorway everyone sees vs the hostel windows nobody counts",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "img/BM3-d.jpg",
+       "label": "BM3-d: The armour as a home: a sealed empty terraced house, steel sheet on the window as armour, one stencilled number",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Six ideas",
+   "lede": "Setup on the left, reveal on the right.",
+   "groups": [
+    {
+     "slot": "idea-musical-chairs-backwards",
+     "title": "Musical chairs backwards",
+     "line": "The housing crisis as musical chairs, except there are four chairs per kid and one kid is still out.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/MC2-a.jpg",
+       "label": "MC2-a: setup: low wide from behind the children, the game in motion",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/MC2-b.jpg",
+       "label": "MC2-b: reveal: straight top-down on the ring, the music has stopped",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "idea-sunbed-towels-at-dawn",
+     "title": "Sunbed towels at dawn",
+     "line": "The great British sunbed war: rows of loungers bagsied with towels at 6am, nobody on them, and one family with nowhere to put their bags.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/ST2-a.jpg",
+       "label": "ST2-a: setup: low wide, pool at 5am, every lounger towelled, nobody there",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/ST2-b.jpg",
+       "label": "ST2-b: reveal: high angle, rows of claimed empty loungers, families standing with bags",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "idea-homework-marked-correct",
+     "title": "Homework marked correct",
+     "line": "A kid's maths homework: 'There are 4 houses and 1 family. How many families have no house?' The kid writes 1. The teacher ticks it.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/HW2-a.jpg",
+       "label": "HW2-a: setup: overhead night shot of a child's maths homework on a worn kitchen table, teal fluorescent cast, film grain",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/HW2-b.jpg",
+       "label": "HW2-b: reveal: close-up of the answer box, a pencilled '1' and a bold red tick, same teal night light",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "idea-sold-out-stockroom",
+     "title": "Sold out stockroom",
+     "line": "The corner shop's 'SORRY, SOLD OUT' sign on an empty shelf, and through the stockroom door, crates piled to the ceiling.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/SO2-a.jpg",
+       "label": "SO2-a: setup: lonely night corner-shop aisle, empty shelf, handwritten SORRY, SOLD OUT card, figure from behind, teal strip lights, film grain",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/SO2-b.jpg",
+       "label": "SO2-b: reveal: through the propped stockroom door, plain shrink-wrapped cases stacked floor to ceiling under one bare teal tube, untouched",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "idea-allotment-waiting-list",
+     "title": "Allotment waiting list",
+     "line": "Ten years on the allotment waiting list, while behind the padlocked gate whole plots are gone to brambles and nobody's been in years.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/AL2-a.jpg",
+       "label": "AL2-a: setup: from behind, a lone figure at a padlocked allotment gate at night, holding the council letter, under one cold teal security lamp",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/AL2-b.jpg",
+       "label": "AL2-b: reveal: over the fence, a few tended plots and twice as many gone to brambles, rotting sheds and an empty deckchair, lit cold teal",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "idea-party-bags-for-no-shows",
+     "title": "Party bags for no shows",
+     "line": "End of a kids' party: a table of party bags with names on, most for kids who never came, and the one kid who did leaves empty-handed.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/PB2-a.jpg",
+       "label": "PB2-a: setup: a crowded table of named party bags in an empty church hall at night, teal tubes, colour-film grain",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "img/PB2-b.jpg",
+       "label": "PB2-b: reveal: four untouched named bags left on the table, one small coated figure leaving empty-handed through the hall door",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    }
+   ]
+  }
+ ],
+ "round": 6
+}

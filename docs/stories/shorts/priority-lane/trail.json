@@ -212,5 +212,235 @@
   "stage": "premiere",
   "round": 3,
   "what": "Built shorts-1-priority-lane-r3 in priotity lane.prproj (Premiere 26.5.2): 4 shots V1, 12 audio clips on 9 tracks, ending with the push-in and logo"
+ },
+ {
+  "at": "2026-11-14T14:31:39+00:00",
+  "stage": "moodboard",
+  "round": 6,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 6: the minister's own SAVE OUR NHS poster (Jack 2026-11-14: make it clear he's a politician). Clean room: research-engine.md + research-world.md, three sealed writers (shelter, bus, poster close-up for the poster-to-car transition), run verbatim with MIN1-b as reference. 10 stills: PS6-a..d, PB6-a..d, PM6-a/b. Four prompts never generated (cupped ear, stethoscope, slow-shutter shelter, telephoto bus): Flow returned only the reference tile, likely a silent refusal (unverified).",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-14T14:53:04+00:00",
+  "stage": "moodboard",
+  "round": 7,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 7: PM7-a/b, close-ups of the picked PS6-c poster, the start frame for the poster-to-car transition",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-14T15:04:50+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Round 4: his SAVE OUR NHS poster (PS6-c clip) cut into beat A, push into PM7-a, 5-frame dissolve on the matched phone pose into the car clip (zoomed 2.7x, easing out), back inside; done in the edit (Jack)",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-14T15:27:53+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Round 4b (Jack's notes at101 'play it quickly', at117 'remove this part'): shelter poster shot at 2x, poster close-up hold removed, ambulance takes the time back; notes dumped to feedback/timeline-r4",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-17T11:13:15+00:00",
+  "stage": "moodboard",
+  "round": 8,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 8 (Kai 2026-11-17): Boris-alike minister BM8-a..d and police cordon CD8-a..d, clean room cleanroom/r8 (three sealed writers), run verbatim on Nano Banana 2; poster PS8 waits on the face pick",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T11:50:50+00:00",
+  "stage": "moodboard",
+  "round": 8,
+  "what": "Round 8 votes and notes dumped to feedback/moodboard-r8",
+  "decided": [
+   "CD8-b picked for the cordon ('both sides of the street should be blocked by the police'); minister: 'more borris-like politiicians, keep the hair and him being fat and posh looking, just slightly change the face'; chat: poster out of the driver's (right) window, driving down the road not into the kerb; held shot must look like a high van cab"
+  ],
+  "feedback": "feedback/moodboard-r8",
+  "feedback_docs": 14
+ },
+ {
+  "at": "2026-11-17T11:50:50+00:00",
+  "stage": "moodboard",
+  "round": 9,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 9: PS9 poster out of the driver's window (stand-in face BM9-c), HD9 held from a high van cab, CD9 cordon with every approach held (ref CD8-b), BM9 more Boris-alikes; clean room cleanroom/r9 (four sealed writers with web research)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T12:21:03+00:00",
+  "stage": "moodboard",
+  "round": 9,
+  "what": "Round 9 votes dumped to feedback/moodboard-r9",
+  "decided": [
+   "BM9-b is the minister (Jack: 'you have to use the borris i chose for it to be consistant'); remake the bus-stop posters with him"
+  ],
+  "feedback": "feedback/moodboard-r9",
+  "feedback_docs": 15
+ },
+ {
+  "at": "2026-11-17T12:21:03+00:00",
+  "stage": "moodboard",
+  "round": 10,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 10: PS10-a..d, the round 9 poster prompts re-run with BM9-b as the face reference",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T12:26:43+00:00",
+  "stage": "moodboard",
+  "round": 11,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 11 (Jack: 'use the accepted borris lookalike as the reference image, and dont mention his name in the prompt'): PS11-b..d from a nameless clean-room brief, BM9-b attached; PS11-a failed twice (reference returned)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T12:38:48+00:00",
+  "stage": "moodboard",
+  "round": 12,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 12 (Jack: 'it is still borris, what in the prompt is making that happen'): research-likeness.md (tiny poster face + stacked cues), two-step poster: PA12-a/b/d art match BM9-b, PS12-a street shot from PA12-a. Round 11 files renamed (saved one call late).",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T12:53:31+00:00",
+  "stage": "moodboard",
+  "round": 12,
+  "what": "Round 12 notes dumped to feedback/moodboard-r12",
+  "decided": [
+   "poster: 'make it more obvious that it is him and do a few different bus poster stills but on the actual busstop'; chat: is B. Held fixed (yes, HD9 round 9, shown again)"
+  ],
+  "feedback": "feedback/moodboard-r12",
+  "feedback_docs": 16
+ },
+ {
+  "at": "2026-11-17T12:53:31+00:00",
+  "stage": "moodboard",
+  "round": 13,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 13: PS13-b/c/d his poster (PA12-b/d/a) in a real London bus shelter's end panel, big; HD9 held shots brought back (board_round [13,'HD9'])",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T13:06:20+00:00",
+  "stage": "moodboard",
+  "round": 13,
+  "what": "Round 13 notes dumped to feedback/moodboard-r13",
+  "decided": [
+   "held: 'match the overhead view of the other image … the street with the police blocking traffic'; poster: 'see it from the angle of the bus stop seat, then seeing the ambulance drive past in the video'"
+  ],
+  "feedback": "feedback/moodboard-r13",
+  "feedback_docs": 17
+ },
+ {
+  "at": "2026-11-17T13:06:20+00:00",
+  "stage": "moodboard",
+  "round": 14,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 14: HD14-a/c held from the cab with CD8-b as reference (same junction); PB14-a/c poster from the bus-stop seat, road empty for the ambulance pass; HD14-b and PB14-b were reference copies",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T13:12:32+00:00",
+  "stage": "moodboard",
+  "round": 14,
+  "what": "Round 14 votes and notes dumped to feedback/moodboard-r14",
+  "decided": [
+   "HD14-c picked for B. Held; PB14-c maybe, 'the ambulance needs to be on the english side of the road'"
+  ],
+  "feedback": "feedback/moodboard-r14",
+  "feedback_docs": 19
+ },
+ {
+  "at": "2026-11-17T13:12:32+00:00",
+  "stage": "moodboard",
+  "round": 15,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 15: PB15-c, the ambulance in frame in the near lane, pavement on its left (UK side); PB15-a/b were reference copies",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T13:23:47+00:00",
+  "stage": "moodboard",
+  "round": 15,
+  "what": "Round 15 notes dumped to feedback/moodboard-r15",
+  "decided": [
+   "PB15-c: 'do mulitple versions i can barely see the poster'"
+  ],
+  "feedback": "feedback/moodboard-r15",
+  "feedback_docs": 19
+ },
+ {
+  "at": "2026-11-17T13:23:47+00:00",
+  "stage": "moodboard",
+  "round": 16,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 16: PB16-a..d bus-seat shot with the poster ~half the frame, ambulance on the UK side; 4/4 real on the fixed flow-mcp",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T13:37:23+00:00",
+  "stage": "moodboard",
+  "round": 16,
+  "what": "Round 16 votes dumped to feedback/moodboard-r16",
+  "decided": [
+   "PB16-d picked for the poster; Jack: fix the traffic in the junction shots"
+  ],
+  "feedback": "feedback/moodboard-r16",
+  "feedback_docs": 20
+ },
+ {
+  "at": "2026-11-17T13:37:23+00:00",
+  "stage": "moodboard",
+  "round": 17,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 17: CD17/HD17 with geometry.md (convoy crosses L-R, both sides held); physics-checked: CD17-b/c, HD17-a/b pass, CD17-a borderline",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T14:48:27+00:00",
+  "stage": "moodboard",
+  "round": 18,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 18: every still rebuilt on Unsplash templates, checked: LS/PB/HD pass, CD18-a dusk, CD18-b fail (convoy turns toward camera), BM18 fail (face drifts to the real man), FL18 trace flatness unclear",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T14:51:30+00:00",
+  "stage": "moodboard",
+  "round": 18,
+  "what": "Round 18 votes",
+  "decided": [
+   "Picks: LS18-b, PB18-a, CD18-a, BM18-a, FL18-a. Jack: 'please match the images consistancy wise, the view outside the ambulance from the drivers perspective needs to be of the picks'"
+  ],
+  "feedback": "feedback/moodboard-r18",
+  "feedback_docs": 19
+ },
+ {
+  "at": "2026-11-17T15:03:50+00:00",
+  "stage": "moodboard",
+  "round": 19,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 19: HD19-a/b/c held shot built from the picks (CD18-a junction, LS18-b crew); all pass",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T15:20:04+00:00",
+  "stage": "clips",
+  "round": 5,
+  "what": "Six picks animated (Omni 1.2 Flash, 9:16): r5-A LS18-b, r5-A2 PB18-a, r5-A3 CD18-a, r5-B HD19-b, r5-C BM18-a pass; r5-D FL18-a refused 3x (flatline used as a still push-in)"
+ },
+ {
+  "at": "2026-11-17T15:20:04+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Round 5 rough cut (26 s): Unsplash-built shots, Kai's meeting notes, new minister line (Charon) and constable radio (stand-in Iapetus), score c5d8704d + Suno effects; transcript checked against the script",
+  "rebuild": "python3 scripts/shorts/priority_lane_cut_r5.py && python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
  }
 ]

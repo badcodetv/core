@@ -1,0 +1,17 @@
+{
+  "style": "lonely dark ambient instrumental, sorrowful and uneasy, the dread of a place gone far too quiet at 3am. A single clean electric guitar played alone, drowned in wet spring reverb with a slow wavering tremolo, picking a slow mournful minor arpeggio that hangs in empty air. Barely-there sub-bass hum underneath, like a building breathing. Lo-fi, grainy, close and intimate, long silences between the notes. Halfway, one note bends sour and slides out of tune, and gritty crackling distortion seeps into the echo tail, unease turning to anxiety. Final moment: one heavy palm-muted chord, then the reverb rings out alone into nothing",
+  "exclude": "drums, percussion, beat, piano, orchestra, strings, vocals, choir, singing, upbeat, bright, happy, major key",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    45
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false,
+  "title": "malevolent force r2-lonely-reverb-guitar",
+  "mode": "custom",
+  "workspace": "short-malevolent-force"
+}

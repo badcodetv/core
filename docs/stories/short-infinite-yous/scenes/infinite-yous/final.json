@@ -1,0 +1,429 @@
+{
+ "schema": "badcode.final/1",
+ "story": "short-infinite-yous",
+ "scene": "infinite-yous",
+ "sequence": "short-infinite-yous-1-infinite-yous-r4",
+ "frozen": "2026-11-15T14:15:23+00:00",
+ "note": "Jack 2026-11-15: \"great save infinite yous and upload it to drive\" (rough cut 4; figure voice h is a stand-in, not picked)",
+ "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/edl.json",
+ "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r4/preview.mp4",
+ "total": 15.0,
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/9Yq6Y7YmeFh6HvwcguLftQ",
+  "storyboard": "https://claude.ai/artifact/BqWBCxV7jwBSnNcQEsfzY3",
+  "timeline": "https://claude.ai/artifact/SfemmvinkbLtrBodx3NQrC"
+ },
+ "words": {},
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 3.5,
+   "beat": "line",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-01t-a-TK1-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-01t-a-TK1-b.mp4",
+     "made": "2026-11-15T11:56:33+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. The young man grins at the camera and says, cocky and loud: One version of me gets home fine. He jiggles the keys beside his face as he talks, then gives a short laugh and holds the grin. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/TK1-b.jpg",
+     "why": "Jack 2026-11-15: make a talking clip for the lad's line (lip-sync-dub step 2: the mouth drawn to the same words; muted, dubbed with lad a Puck). Two candidates.",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/TK1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-infinite-yous/scenes/infinite-yous",
+      "key": "01t-a",
+      "frame": 1,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-15T11:54:30.849Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/TK1-b.jpg",
+     "made": "2026-11-15T11:53:40.615Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image as the reference for the young man, his shirt, the street and the light, make a new vertical 9:16 photograph: a medium close-up of the same young man from the chest up, facing the camera, his face about a third of the frame's height. He holds his car keys up beside his cheek in one hand, a cocky grin, mouth closed, lips together. Behind him the same night street melts into soft bokeh, and the warm yellow glow of a taxi roof sign lights his face from below on one side. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-LI1-b.jpg",
+     "inputs": {
+      "references": [
+       "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-LI1-b.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "4029c166-29da-46d7-9175-3447ee88f2fd"
+    },
+    {
+     "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-LI1-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 3.5,
+   "dur": 3.0,
+   "beat": "split",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-01-LI1-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-01-LI1-b.mp4",
+     "made": "2026-11-14T17:38:07+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. A drunk young man on a night street spins his car keys round one finger, laughs, and turns away towards the dark end of the street. The city lights glow behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LI1-b.jpg",
+     "why": "He turns for his car",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LI1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-infinite-yous/scenes/infinite-yous",
+      "key": "01",
+      "frame": 1,
+      "option": "b"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-14T17:34:04.080Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LI1-b.jpg",
+     "made": "2026-11-13T11:22:08.896Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "Photorealistic vertical 9:16 night film still, shot on a 135mm telephoto at f/1.8 from across a wet city street. In the soft out-of-focus foreground, the bottom third of the frame is the silver roof of a parked car with a glowing yellow roof sign reading \"TAXI\", its light reflected on the paintwork. Beyond it, sharp, a young man in his early twenties with short dark hair and an untucked white going-out shirt, flushed and a little sweaty, stands on the pavement outside a pub, holding his lanyard of car keys high and talking with smug drunk confidence. Behind him, shop windows and street lamps melt into large creamy bokeh discs of amber, red, pink and cyan. Inky blacks, practical light only, cinematic grain. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "980925d7-c21d-4e30-8808-13f17b094eba"
+    }
+   ]
+  },
+  {
+   "t": 6.5,
+   "dur": 4.25,
+   "beat": "squeeze",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ2-a.jpg",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ2-a.jpg",
+     "made": "2026-11-14T17:10:30.823Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Make a new vertical 9:16 night photograph that combines the two pictures. Take the layout of the first image: the frame cut into five tall vertical strips by thin bright dividing lines, the same young man from the first image in each strip, on the same night street. In front of the strips, centred and facing camera, stands the masked figure from the second image, now plainly a lab scientist: a crisp white lab coat buttoned to the collar, pens clipped in the breast pocket, a black roll-neck under it covering the whole neck, clear safety goggles strapped over the mask. Both gloved fists grip the dividing lines and drag them together towards the middle, so the five strips buckle and squeeze inwards and the five young men are being pressed back into one. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Use the third image for the mask. Same light, colours and film grain as the first image. No text, lettering, logos or brand names anywhere in the image. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SP1-a.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SP1-a.jpg",
+       "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SQ1-a.jpg",
+       "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/cf3ce2c2-e0bc-4329-bdd3-73d0f6db269b/scratchpad/mask-reference.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "dc6c7808-904c-4727-96e3-77601fa78659"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/SP1-a.jpg",
+     "made": "2026-11-13T11:23:28.632Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "A vertical 9:16 night photograph divided into five tall vertical strips by thin, straight, polished steel rods that catch glints of amber streetlight. In every strip stands the same young man with the same face: early twenties, short dark hair, untucked white going-out shirt, flushed and a bit sweaty, a lanyard of car keys in one hand, outside a pub on one city street. Strip by strip he is laughing, swaying, frowning with worry, holding the keys up proudly, reaching for a car door. Medium shot at chest height, 85mm lens at f/1.4, his face sharp, the background melting into large soft bokeh circles of amber, red, pink and cyan. Deep inky blacks, lit only by shop windows, street lamps and a glowing TAXI roof sign. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "cbb05475-1e2f-410b-be12-19629b503007"
+    }
+   ]
+  },
+  {
+   "t": 10.75,
+   "dur": 2.583333333333334,
+   "beat": "cab",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-ka-ramp-r1.mov",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-ka-ramp-r1.mov",
+     "made": "2026-11-15T10:46:00+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-ka-KK1-a-b.mp4",
+     "why": "Jack 2026-11-15: the kick must read and he flies in, the speed is the joke",
+     "prompt": "speed ramp: 0-0.55 s real time; 0.55-1.3 s at 4x (tmix=frames=4,framestep=4); 1.3-3.1 s real time; prores_ks profile 3, no audio"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-ka-KK1-a-b.mp4",
+     "made": "2026-11-15T10:44:49+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "Camera locked. [00:00-00:01] The figure in the lab coat unfolds his raised leg dead straight in a blur, the sole of his shoe pats the seat of the young man's jeans, and the young man zips head-first through the open door into the back seat like a cork from a bottle, gone in an instant, feet last. Comic cartoon physics, nobody hurt. [00:01-00:08] The taxi rocks on its springs; the figure holds the straight leg out, motionless, side-on. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/KK1-a-b.jpg",
+     "why": "Jack 2026-11-15: make it look like a kick and he flies into the taxi, the speed is the joke; clean room. Staging: The dancer's extension. The figure stands side-on with one knee drawn up high and folded, poised lik",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/KK1-a-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-infinite-yous/scenes/infinite-yous",
+      "key": "04-ka",
+      "frame": 4,
+      "option": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-15T10:41:47.537Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/KK1-a-b.jpg",
+     "made": "2026-11-15T10:39:27.995Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Vertical 9:16 night street, long lens, very shallow focus, the background melted into big soft amber, red, pink and cyan bokeh, inky blacks, light only from signs, shop windows and street lamps. The silver taxi stands at the kerb, its rear door wide open, glowing yellow TAXI roof sign. The young man in the white shirt stands one pace back from the open door, facing into the car, his back and backside to camera-left, arms loose. Behind him, side-on to camera, the figure in the lab coat balances on one leg, the other knee drawn high and folded tight at his chest, sole of the shoe aimed at the seat of the young man's jeans, gloved hands out for balance, calm as a dancer. Thanks.",
+     "model": "Nano Banana 2",
+     "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg",
+     "inputs": {
+      "references": [
+       "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 2
+     },
+     "source_id": "dc621f80-c403-4df7-919c-2c3a5807442d"
+    },
+    {
+     "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 13.333333333333334,
+   "dur": 1.666666666666666,
+   "beat": "logo",
+   "looped": false,
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-05-LO1-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-05-LO1-b.mp4",
+     "made": "2026-11-14T17:38:07+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera does not move. A dark brick wall beside a wet street at night. The headlights of a passing car sweep slowly across the wall from left to right, lighting the bricks, then fade. Rain glistens on the road. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LO1-b.jpg",
+     "why": "Omni sweeps the light, logo in the edit (recommended)",
+     "inputs": {
+      "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LO1-b.jpg",
+      "character": null,
+      "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-infinite-yous/scenes/infinite-yous",
+      "key": "05",
+      "frame": 5,
+      "option": "a"
+     },
+     "settings": {
+      "aspect": "9:16",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-14T17:36:53.597Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/LO1-b.jpg",
+     "made": "2026-11-13T11:30:36.810Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_image",
+     "prompt": "Vertical 9:16 cinematic night photograph, straight-on to a plain dark brick wall on a quiet UK side street, shot on a 50mm lens at f/1.8 from across the road. The wall fills most of the frame and sits in near-black shadow, with a broad, smooth, empty area at the centre where the bricks are barely visible. Along the bottom edge, a soft out-of-focus strip of wet pavement catches warm amber and red reflections. Along the top edge, a few large soft bokeh circles of amber and cyan street lamps hang in the dark. A faint warm wash spills across the far right bricks, as if headlights are about to swing round the corner. Moody, deep blacks, subtle film grain. Thanks.",
+     "model": "Nano Banana 2",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "9:16",
+      "numOutputs": 1
+     },
+     "source_id": "c64d2685-99ce-4e2a-a414-f5afba8f1323"
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "mus-track",
+   "t": 0,
+   "dur": 15.0,
+   "what": "the locked track, 92821b14, ducked under the lines",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/infinite-yous-r2-instrumental-taxi-meter-synth-p-92821b14.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/infinite-yous-r2-instrumental-taxi-meter-synth-p-92821b14.wav",
+     "made": "2026-11-14T17:25:59.419Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "92821b14-f464-4826-9bbc-37cace91dbea",
+     "inputs": {
+      "title": "infinite yous r2 instrumental-taxi-meter-synth-p",
+      "song": "https://suno.com/song/92821b14-f464-4826-9bbc-37cace91dbea"
+     },
+     "settings": {
+      "durationSec": 15
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-lad",
+   "t": 0.0,
+   "dur": 2.0,
+   "what": "lad a (Puck, brisk take 2), lip-synced to iy-01t-a x1.20: \"One version of me gets home fine.\"",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/dub/iy-01t-a-dub.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/dub/iy-01t-a-dub.wav",
+     "made": "2026-11-15T12:04:42+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/lipsync/place-dub.py",
+     "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/lad-a2-brisk-2.wav",
+     "why": "lad's line fitted to iy-01t-a",
+     "prompt": "docs/stories/short-infinite-yous/voices/dub-01t-a.json"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/lad-a2-brisk-2.wav",
+     "made": "2026-11-15T12:01:39+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "One version of me gets home fine.",
+     "inputs": {
+      "profile": "# Audio Profile\nThe speaker is a twenty-two-year-old lad from Leeds who has had a few too many. He sounds cocky and loud, grinning, and he blurts the whole line out quickly in one breath, a brisk pace, no pauses between the words.\n\n## Scene:\nA city street at night outside a pub, taxis idling, car keys jangling in his raised hand.\n\n## Sample Context:\nHis mates have told him to get a cab. He has just read online that there are infinite versions of him in parallel universes, so he is certain it doesn't matter if he drives.\n",
+      "profile_file": "docs/stories/short-infinite-yous/voices/profiles/lad-a2-puck-brisk.md"
+     },
+     "settings": {
+      "voice": "Puck",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-figure",
+   "t": 8.6,
+   "dur": 1.6,
+   "what": "figure round 3 h (Sadaltager, London, fast; stand-in): \"There's only one.\"",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/sci3-h-sadaltager.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/audio/casting/sci3-h-sadaltager.wav",
+     "made": "2026-11-15T12:20:33+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "There's only one.",
+     "inputs": {
+      "profile": "# Audio Profile\nA sardonic London scientist, late fifties, Estuary English, hoarse from years of shouting at idiots. Bone-dry, mocking, quick: he spits the line out in one fast, bored breath.\n\n## Scene:\nA taxi rank in London at two in the morning, engines idling.\n\n## Sample Context:\nHe has just mashed five versions of a drunk kid back into one and cannot believe he has to explain it. Fast, flat, sarcastic.\n",
+      "profile_file": "docs/stories/short-infinite-yous/voices/profiles/sci3-h-sadaltager.md"
+     },
+     "settings": {
+      "voice": "Sadaltager",
+      "temperature": 1,
+      "channels": 2,
+      "wrapper": "audio profile"
+     }
+    }
+   ]
+  }
+ ],
+ "no_card": []
+}

@@ -13,6 +13,10 @@ variety: **separate writers who cannot copy each other, and a gate that refuses 
 A round is checked against itself here; a single prompt outside a round is checked against every past
 prompt by `scripts/variations/fresh.py` (a hook runs it before every Flow and `suno.mts` call).
 
+**2026-11-17: the writers must not be plain `general-purpose` subagents.** Tested: they load the whole CLAUDE.md and
+the memory index, which has grown back to 120+ lines of other stories' details. Run each writer with
+`scripts/variations/sealed-writer.sh` (or the `clean-room-writer` agent, `omitClaudeMd: true`).
+
 **You do not write the prompts. Not one word of them.** You collect raw inputs, spawn writers,
 run the gate, and run the round. Every step where the session paraphrases, retypes or "tidies"
 a prompt is a step where the round converges again.

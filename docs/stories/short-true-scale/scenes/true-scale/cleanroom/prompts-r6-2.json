@@ -1,0 +1,28 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Nano Banana renders in-image text well when it is short; put the exact text in quotes",
+    "https://fliki.ai/blog/nano-banana-2-prompting-guide — keep rendered text to a few words; give it a physical surface and a placement (here: biro on an answer sheet facing camera)",
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — the model treats the prompt as instructions to satisfy, so name each person in frame concretely rather than 'diverse crowd'",
+    "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — one short style cue (cheap colour film, grain) carries the whole look; specific beats long and vague",
+    "https://oxforddrinker.camra.org.uk/2023/01/whats-in-a-quiz/ — quiz night draws its own regulars, mixed teams, a community ritual; some come only for the quiz",
+    "https://www.stonegatepubpartners.co.uk/news/from-mornings-to-quiz-nights:-how-pubs-create-belonging-6EgN1bvG0zZqn2fxAFIc — different ages and backgrounds mix at quiz nights (promotional source, anecdotal)",
+    "https://wikipedia.com/wiki/Pub_quiz — quizzes date from 1970s midweek trade; over half of UK pubs ran one by 2020"
+  ],
+  "notes": "Beat 2, two different cameras. NW6-2a: tight on the loud table, the only readable number is 50,000 in quotes on their sheet facing camera; four specific people of different age, ethnicity and gender, no Bob. NW6-2b: wide across the room, shouting tables in the foreground and Bob alone in the far corner writing calmly; his sheet is angled away so 300,000 is saved for beat 4 and no number appears. No research found hard UK demographic data on quiz regulars, so the crowd mix follows the brief's note, not a measured statistic.",
+  "stills": [
+    {
+      "beat": "nw2",
+      "id": "NW6-2a",
+      "look": "Loud table close-up, 50,000 slapped down",
+      "prompt": "Vertical 9:16 candid photo on cheap colour film, heavy grain, night. A crowded British local pub on quiz night, patterned carpet, a fruit machine blinking behind. Close on the loud table mid-shout: a Black woman in her fifties in a hi-vis work jacket slaps a paper answer sheet onto the sticky table, the sheet facing the camera, written in thick biro: \"50,000\". Beside her a young South Asian lad in a plain red football shirt with no badge points across the room, laughing; an older white man in a flat cap leans in nodding; a woman in a navy hijab with a nurse's lanyard grips a tiny pencil, unconvinced. Warm tungsten wall lamps, cold teal rain on the window behind them. Plain unbranded glasses and packets. Any other writing unreadable. Thanks.",
+      "uses_bob_reference": false
+    },
+    {
+      "beat": "nw2",
+      "id": "NW6-2b",
+      "look": "Wide across the shouting room, Bob alone in the corner",
+      "prompt": "Vertical 9:16 candid photo on cheap colour film, grain, night. Wide shot across a busy British local pub on quiz night, low eye level from behind a cluttered table of empty glasses and plain unbranded crisp packets. Midground, tables shouting guesses at each other: a grey-haired Caribbean grandad in a cardigan with his grandson's mates in work polos, a young East Asian woman in a denim jacket cupping her mouth to yell, a white builder in plaster-flecked trousers half standing. In the far corner, alone at a small table under a wall lamp, the man from the attached reference sheet bends over his answer sheet, writing calmly without hesitating, the sheet angled away from camera. Warm tungsten inside, cold teal rain streaking the windows. All writing unreadable. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

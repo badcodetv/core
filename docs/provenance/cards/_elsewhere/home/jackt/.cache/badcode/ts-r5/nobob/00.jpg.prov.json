@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r5/nobob/00.jpg",
+ "made": "2026-11-16T14:17:40.639Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 candid photograph inside a small British local pub on quiz night. Low angle from a crowded table, a ring-marked beer mat and a tiny pencil soft in the foreground. A landlady in her sixties stands at the bar holding a handheld microphone close to her mouth, other arm raised high with a single answer sheet, mid-announcement, eyebrows up like she is about to cause trouble. Beside her on the bar, the meat raffle: trays of sausages and chops under cling film, a biscuit tin of raffle tickets. Worn patterned red carpet, an unbranded fruit machine glowing behind her. Warm tungsten light, cheap 35mm colour film, CineStill 800T halation, heavy grain, slight motion blur. All writing on the sheet unreadable. Thanks.",
+ "source_id": "f900f75e-10e7-4ee8-95b0-c98fcd84f434"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-06-b1-FL3-b1.mp4",
+ "made": "2026-11-16T11:14:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static camera on a tripod, completely locked, no camera movement. One continuous shot. The fluorescent tube overhead flickers weakly and the freezer hums. At about two seconds the small frosted window above the freezer flares white with lightning, twice in quick succession about half a second apart: the grille throws hard black bar shadows down across the freezer lid, the bread and the purple bar, then the light snaps away and the room drops nearly to black for a beat before the tube flickers back. The star price cards and their writing stay exactly as they are. Nothing moves, nothing falls. No people. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL3-b1.jpg",
+ "why": "Jack 2026-11-16 shot 6 note: lightning flash, then the bread and freddo change price, somewhere else in the shop (before the flash)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL3-b1.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "06-b1",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T11:11:33.002Z"
+ }
+}

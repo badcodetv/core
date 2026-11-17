@@ -1,0 +1,291 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Cut to the locked track (Suno 92821b14, 15 s): meter tick 0-3 (the line), the arpeggio smears into detuned copies (the split, ~3-6), snaps back into one (the squeeze, ~6-10), a gated tom hit (the kick, ~10-13), the pulse stops dead at 13 s, a horn-like brass swell and a left-to-right whoosh (the headlights on the logo).",
+   "why": "the picture is cut to the track",
+   "source": "sound.md"
+  },
+  {
+   "rule": "Omni's camera is locked; Premiere does every push and pan, eased.",
+   "why": "generated camera moves drift and redraw",
+   "source": "docs/video-fx/hybrid-method.md"
+  },
+  {
+   "rule": "No Flow speech; the track has no lyrics (Jack). Whether the lines are heard at all (a voice, or words on screen) is still open.",
+   "why": "Jack 2026-11-10 and 2026-11-14",
+   "source": "picks.md"
+  },
+  {
+   "rule": "The split and the line-grab are built in the edit where Omni can't hold five copies of one face (the writers' advice, round 1).",
+   "why": "Omni struggles past about three movers",
+   "source": "cleanroom notes"
+  },
+  {
+   "rule": "The logo is never drawn by Flow: the official file goes on LO1-b's wall in the edit, lit by the headlight sweep.",
+   "why": "brand rule; Jack's note on LO1-b",
+   "source": "README checks"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Meet him: a cocky lad, keys up, sure he'll be fine.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Keys jingle, the grin",
+     "idea": "He lifts the keys and jangles them at the camera, grinning, swaying a little; the bokeh and taxi signs shimmer behind. Premiere: a slow 4% push.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "his keys and sway"
+      },
+      {
+       "lane": "Premiere",
+       "does": "slow push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A drunk young man on a night street lifts his car keys and jangles them towards the camera, grinning, swaying slightly on his feet. Behind him the city lights glow and the taxi roof sign shines. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "cut": "0:00 to ~3.0 s on the first arpeggio",
+     "seconds": 6,
+     "risk": "his hand may morph round the keys"
+    },
+    {
+     "id": "b",
+     "label": "He turns for his car",
+     "idea": "He spins the keys round a finger and turns away towards the dark street, as if heading for his car. Premiere: hold, then cut as he turns.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the spin and the turn"
+      },
+      {
+       "lane": "Premiere",
+       "does": "hold"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A drunk young man on a night street spins his car keys round one finger, laughs, and turns away towards the dark end of the street. The city lights glow behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "cut": "0:00 to ~3.0 s",
+     "seconds": 6,
+     "risk": "the keys may vanish mid-spin"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "Infinite yous: one lad becomes many, splitting apart as the music smears.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Built in the edit (recommended)",
+     "idea": "No new clip: frame 1's clip copied into five tall strips, each a few frames offset, sliding apart on the smear; SP1-a is the look to match.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "nothing"
+      },
+      {
+       "lane": "Premiere",
+       "does": "five strips of the frame 1 clip, offset in time, sliding apart"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "the thin bright dividing lines"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "~3.0 to ~6.0 s",
+     "seconds": 3,
+     "risk": "needs the edit time, but every face stays his"
+    },
+    {
+     "id": "b",
+     "label": "Animate SP1-a",
+     "idea": "Omni moves the five versions in SP1-a a little each, the strips holding still. Premiere: the strips slide apart on the smear.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "small moves for five figures"
+      },
+      {
+       "lane": "Premiere",
+       "does": "strip slide"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing"
+      }
+     ],
+     "veo_prompt": "The camera does not move. Five versions of the same young man stand side by side in five tall vertical strips on a night street; each one moves a little differently: one laughs, one checks his keys, one sways, one frowns, one looks away. The thin bright lines between the strips hold steady. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "cut": "~3.0 to ~6.0 s",
+     "seconds": 6,
+     "risk": "five movers: faces may drift apart or merge"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "Only one: the scientist squeezes the copies back into the real one.",
+   "options": [
+    {
+     "id": "a",
+     "label": "He drags the lines in",
+     "idea": "The scientist hauls the dividing lines together; the strips buckle inwards. Premiere: push in as the squeeze lands on the snap.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "his pull, the buckling strips"
+      },
+      {
+       "lane": "Premiere",
+       "does": "push on the snap"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A masked scientist in a white lab coat stands in front of five tall vertical strips, gripping the bright dividing lines in his gloved fists, and drags them together towards the middle with one hard pull; the strips buckle inwards. The young men behind stay where they are. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "cut": "~6.0 to ~10.0 s, the snap on ~8",
+     "seconds": 6,
+     "risk": "the lines may bend wrongly or the mask may drift"
+    },
+    {
+     "id": "b",
+     "label": "Still + edit squeeze",
+     "idea": "SQ2-a held as a still; the strips are squeezed in the edit to one lad on the snap.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "nothing"
+      },
+      {
+       "lane": "Premiere",
+       "does": "the still, a slow push"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "the strips compressed to one on the snap"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "~6.0 to ~10.0 s",
+     "seconds": 4,
+     "risk": "less alive, but exact"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "The kick: no debate, into the cab.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The boot lands",
+     "idea": "The scientist's kick lands and the lad pitches head-first into the back seat; we cut as he goes in (no long tumble). Premiere: a hit of shake on the tom.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the kick and the lunge in"
+      },
+      {
+       "lane": "Premiere",
+       "does": "shake on the tom hit"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing"
+      }
+     ],
+     "veo_prompt": "The camera does not move. On a night street a masked scientist in a white lab coat kicks a young man in the backside and the young man pitches head-first through the open back door of a taxi, out of sight onto the back seat. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "cut": "~10.0 to ~13.0 s, the kick on the tom",
+     "seconds": 4,
+     "risk": "the lad's body may bend oddly mid-air"
+    },
+    {
+     "id": "b",
+     "label": "He shuts the door and taps the roof",
+     "idea": "From CA2-a: the scientist pushes the door shut, taps the taxi's roof twice, and the taxi pulls away.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "door, roof tap, taxi pulls away"
+      },
+      {
+       "lane": "Premiere",
+       "does": "hold"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing"
+      }
+     ],
+     "veo_prompt": "The camera does not move. On a night street a masked scientist in a white lab coat pushes the taxi's back door shut, taps the roof twice with his gloved hand, and the taxi pulls away down the street, its rear lights glowing. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "cut": "~10.0 to ~13.0 s",
+     "seconds": 6,
+     "risk": "loses the kick itself"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "The sign-off: BadCode on the wall, lit by the taxi's headlights.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Omni sweeps the light, logo in the edit (recommended)",
+     "idea": "Omni animates headlights sweeping left to right across LO1-b's empty wall; the official logo is laid on the wall in the edit and revealed by the same light.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "the headlight sweep"
+      },
+      {
+       "lane": "Premiere",
+       "does": "the logo on the wall, masked to the light"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing"
+      }
+     ],
+     "veo_prompt": "The camera does not move. A dark brick wall beside a wet street at night. The headlights of a passing car sweep slowly across the wall from left to right, lighting the bricks, then fade. Rain glistens on the road. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks.",
+     "cut": "13.0 to 15.0 s, the sweep on the whoosh",
+     "seconds": 4,
+     "risk": "the light may not travel evenly"
+    },
+    {
+     "id": "b",
+     "label": "All in the edit",
+     "idea": "LO1-b as a still; a light sweep and the logo built in Premiere.",
+     "lanes": [
+      {
+       "lane": "Omni",
+       "does": "nothing"
+      },
+      {
+       "lane": "Premiere",
+       "does": "light sweep, the logo"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "nothing"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "13.0 to 15.0 s",
+     "seconds": 2,
+     "risk": "the light can look painted on"
+    }
+   ]
+  }
+ ]
+}

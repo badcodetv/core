@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/mf-r2/batch/03.jpg",
+ "made": "2026-11-16T09:59:56.202Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "A vertical snapshot on grainy colour film, from the customer's side of a British corner shop counter late at night. On the scuffed counter: a loaf of plain white sliced bread, a small handwritten card propped against it reading \"50p\", a few copper and silver coins, and a small unbranded purple chocolate bar. Behind the counter nobody, just an empty stool still turning slightly, a pulled-down metal shutter, a newspaper rack with unreadable headlines, a UK three-pin plug socket with a kettle lead. Fluorescent tubes blow out at the top of frame, cold teal cast, dark corners, soft focus. Unstaged, ordinary, and wrong. Thanks.",
+ "source_id": "68010ca6-aee2-4fcb-838d-6863d47558b7"
+}

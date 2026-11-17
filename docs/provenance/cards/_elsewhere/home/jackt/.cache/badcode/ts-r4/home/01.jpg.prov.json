@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r4/home/01.jpg",
+ "made": "2026-11-16T13:55:58.233Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph inside a small, lived-in British kitchen at night, shot on cheap 35mm colour film, grain, tungsten warmth. Camera at seated height behind a parent's shoulder, slightly soft in the foreground. A low pendant lamp pours warm amber light onto a cluttered table: steaming pasta bowls, mismatched mugs, a hand passing a plate. Across the table a child seen from behind, hair lit gold, mid-laugh, shoulders lifted. Behind them the window is black-teal, cold streetlight and rain on the glass, the night pressing in but kept out. Ordinary tea time, nothing staged, the warmest frame in the film. No readable text. Thanks.",
+ "source_id": "d88c6b92-b3a5-43e9-839e-85311aaf809c"
+}

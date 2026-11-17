@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS10-b.jpg",
+ "made": "2026-11-17T12:19:16.181Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 night photograph on grainy 35 mm colour-negative film, rain-soaked ordinary London street, taken from the passenger side looking right across the cab of a UK ambulance van toward the open driver's side window, camera at the high seat height. In the foreground, soft and blurred, the paramedic driver's forearm in a dark green uniform sleeve rests on the steering wheel rim; above the dashboard a black mobile data terminal on its swing arm glows faintly, and a coiled radio handset hangs by the door. Through the driver's window, at ninety degrees to the van's straight-ahead travel, across the oncoming lane where a single car's headlights smear in the distance, a bus shelter on the far pavement sits parallel to the road, square-on and a little lower than us. Its backlit advertising panel shows a glossy staged campaign photo of the man from the reference image wearing a white hard hat and an orange hi-vis vest, standing in front of a blurred hospital ward, grinning and giving a big thumbs up to the camera, above the words \"SAVE OUR NHS\" in huge heavy capitals, spelled exactly, no other words. The wing mirror's black housing cuts into the left side of the window, wet. Light sources: the shelter's bright backlit panel, a sodium street lamp casting orange on the wet road, the dim green glow of the dashboard terminal, and blue strobe light from our own roof bar washing the shelter roof and puddles. Raindrops on the glass catch blue and orange. Road and kerb streak with speed; the poster reads cleanly. Teal shadows, halation, no readable text other than the slogan, no plates or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ef9ba471-6ac8-4e70-bf44-108f381915b9"
+}

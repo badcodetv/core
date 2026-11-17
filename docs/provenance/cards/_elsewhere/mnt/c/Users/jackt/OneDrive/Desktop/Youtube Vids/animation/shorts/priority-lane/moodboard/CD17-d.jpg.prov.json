@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD17-d.jpg",
+ "made": "2026-11-17T13:45:27.220Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo-real night photograph, keeping the reference image's exact vantage, framing, light and look: a 35 mm colour-negative film shot with visible grain and slight halation, taken from high on a wet, dark brick railway-bridge parapet with black iron railings in the lower right foreground, looking straight along a wide, rain-soaked London main road toward a crossroads painted with a yellow criss-cross box junction. Heavy rain streaks fall through the air. In the lower left, on our side of the main road (the left half), a yellow-and-green chequered ambulance sits at the stop line with its back to the camera and its nose toward the junction, its blue roof lights flashing; its rear doors carry only the chequered pattern and no lettering. Just ahead of it, across the mouth of the junction on our side, a line of white police motorcycles with blue lights and officers in yellow hi-vis jackets and white helmets stands in the rain, one officer raising a gloved hand toward the ambulance. Inside the box junction, in its FAR half (the half away from the camera), a short convoy crosses the frame from LEFT to RIGHT, every vehicle seen side-on: at the front, the right-hand end of the convoy, a single white police motorcycle with its rider leaning forward and its blue lights on; behind it, to its left, three black saloon cars nose-to-tail, all pointing to the right of the frame, white headlight beams thrown forward to the right across the wet tarmac and red tail lights glowing at their left ends. No vehicle in the convoy faces the camera and none is on the main road. The cross road beyond the junction on the right is empty, and the cross road on the left, behind the convoy, is empty too. Beyond the junction, on the oncoming side of the main road (the right half), a stopped queue waits at its stop line facing the camera, headlights toward us: a red double-decker bus with its interior lit, then ordinary cars behind it, held by two white police motorcycles parked across the lane and an officer in hi-vis standing in front of the bus with one arm out. The far stretch of the main road behind is empty, receding into rain mist. Light sources: tall sodium-orange street lamps lining both pavements, the flashing blue lights of the ambulance and police motorcycles, the convoy's headlights and red tail lights, the oncoming queue's headlights, the bus's interior lights, and a red traffic signal on the left pavement; orange and blue reflections smear across the wet road under cold teal shadows. No readable text anywhere: no number plates, signs, route numbers, logos or lettering on any vehicle. Faces and hands natural, five fingers on every hand. Ordinary London street, gritty and real, not glossy, not CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b35b1ccf-ade4-4c8e-b4b0-f46934819c20"
+}

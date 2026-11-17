@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/_rejected/r6-ref-copies/PM-b2-a.jpg",
+ "made": "2026-11-14T14:28:52.705Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 night photograph with the texture of 35 mm film: the camera stands right up against the rain-covered glass of a bus shelter's illuminated poster case on an ordinary London street, and the printed poster fills the frame edge to edge, its slim metal frame only just visible at the very top corners. The poster is a slick election-style portrait of the man from the reference image, his head placed in the upper middle of the vertical frame at the same scale as the reference, turned slightly towards camera; his right hand is raised and cupped behind his right ear in a theatrical \"I'm listening\" gesture, fingers curled where a phone would sit, his eyes turned up and to one side as if hearing every voice, eyebrows raised in earnest concern, lips pressed into a gentle, sympathetic smile. The photo behind him is a soft-focus field of pale sky blue with an airbrushed glow on his skin. Over the bottom of the poster, on a solid deep maroon band, big bold white sans-serif capitals read \"SAVE OUR NHS\", crisp and in sharp focus, the only legible words in the picture. Light sources: the even white backlight glowing through the poster from the LED tubes inside the case, the orange spill of a sodium street lamp reflected faintly on the wet glass, and the pulse of blue emergency lights from a passing ambulance washing across the raindrops on the glass. Droplets and thin rivulets sit in front of the print, slightly out of focus, teal shadows in the corners, fine film grain, photo-real, not a render. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "d35a31d2-9152-4e19-9a5c-a513f26b049b"
+}

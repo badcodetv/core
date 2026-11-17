@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r6/bob/NW6-2b-b.jpg",
+ "made": "2026-11-16T14:59:04.117Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid photo on cheap colour film, grain, night. Wide shot across a busy British local pub on quiz night, low eye level from behind a cluttered table of empty glasses and plain unbranded crisp packets. Midground, tables shouting guesses at each other: a grey-haired Caribbean grandad in a cardigan with his grandson's mates in work polos, a young East Asian woman in a denim jacket cupping her mouth to yell, a white builder in plaster-flecked trousers half standing. In the far corner, alone at a small table under a wall lamp, the man from the attached reference sheet bends over his answer sheet, writing calmly without hesitating, the sheet angled away from camera. Warm tungsten inside, cold teal rain streaking the windows. All writing unreadable. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "a3fd5d4b-2051-4347-84de-434de4a635f5"
+}

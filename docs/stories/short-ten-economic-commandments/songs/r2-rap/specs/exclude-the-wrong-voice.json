@@ -1,0 +1,17 @@
+{
+  "style": "Late-90s East Coast street rap, 90 BPM, hookless, the track is a numbered list. Bare dusty boom-bap: heavy swung kick, crisp cracking snare, one moody jazz keys phrase repeating in a minor key, deep sub bass. A DJ chops in a hype-man voice barking each number before its rule. Lead: big-bodied Brooklyn man rapping, deep wheezy voice from the chest, round plummy tone, unhurried conversational flow that lags a fraction late, calm threat, dry and upfront in the mix",
+  "exclude": "gravelly old man voice, female vocals, high youthful voice, radio announcer, orchestral strings, spoken word poetry, trap hi-hats, 808 rolls, lo-fi chill, autotune, sung chorus, backing vocals, big reverb, cinematic swells",
+  "lyrics": "[Intro]\nUh. Money printer manual. Take notes.\n\n[Scratch: count]\n[Verse]\nNumber one: never tell 'em what you printed,\ntrillions out the back door, keep the ledger tinted.\n\n[Scratch: count]\n[Verse]\nNumber two: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Scratch: count]\n[Verse]\nNumber three: no consignment, cash up front, that's law,\nthey took the bailout on tick and they ain't paid at all.\n\n[Outro]\nAnd the fix, from the future? No hand on the printer.",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": [
+    10
+  ],
+  "styleInfluence": 85,
+  "vocalGender": "male",
+  "durationSec": 20,
+  "maxMode": false,
+  "title": "tec-r2-exclude-the-wrong-voice",
+  "mode": "custom",
+  "workspace": "short-ten-economic-commandments"
+}

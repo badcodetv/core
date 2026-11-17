@@ -1,0 +1,115 @@
+{
+ "title": "Infinite Yous Voices",
+ "eyebrow": "Infinite Yous \u00b7 voices \u00b7 round 3",
+ "heading": "Pick the two voices",
+ "intro": "Round 3. Jack on round 2: \"make them english and they should say this line fast\". Three English, fast, deadpan-sarcastic geniuses. The cut uses h (London) until you pick.",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "One line each, the real words.",
+   "groups": [
+    {
+     "slot": "figure-r3",
+     "round": 3,
+     "title": "The BadCode figure, round 3",
+     "line": "\"There's only one.\" English, fast, deadpan.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "g",
+       "src": "takes/sci3-g-iapetus.mp3",
+       "label": "g: Iapetus, Oxford, plummy and withering",
+       "warn": ""
+      },
+      {
+       "id": "h",
+       "src": "takes/sci3-h-sadaltager.mp3",
+       "label": "h: Sadaltager, London Estuary, bone-dry",
+       "warn": "in rough cut 4"
+      },
+      {
+       "id": "i",
+       "src": "takes/sci3-i-umbriel.mp3",
+       "label": "i: Umbriel, Birmingham, smirking",
+       "warn": "transcriber missed \"There's\": listen"
+      }
+     ]
+    },
+    {
+     "slot": "figure-r2",
+     "round": 2,
+     "title": "The BadCode figure, round 2",
+     "line": "\"There's only one.\" Jaded, deadpan, sarcastic genius.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "d",
+       "src": "takes/sci2-d-enceladus.mp3",
+       "label": "d: Enceladus, raspy burnt-out genius, a sigh first",
+       "warn": ""
+      },
+      {
+       "id": "e",
+       "src": "takes/sci2-e-algieba.mp3",
+       "label": "e: Algieba, nasal and gravelly, thrown away",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "lad",
+     "title": "The lad",
+     "line": "\"One version of me gets home fine.\" (0:00, keys up, grinning)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "takes/lad-a-puck.mp3",
+       "label": "a: Puck, Leeds, loud and laughing",
+       "warn": "retake; the transcriber heard \"gets on fine\", listen for \"home\""
+      },
+      {
+       "id": "b",
+       "src": "takes/lad-b-achird.mp3",
+       "label": "b: Achird, Essex, smug and slurred",
+       "warn": "in rough cut 2"
+      },
+      {
+       "id": "c",
+       "src": "takes/lad-c-fenrir.mp3",
+       "label": "c: Fenrir, Cardiff, giddy and fast",
+       "warn": "adds a \"Well\" at the start"
+      }
+     ]
+    },
+    {
+     "slot": "figure",
+     "title": "The BadCode figure",
+     "line": "\"There's only one.\" (as the timelines close into one)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "takes/sci-a-charon.mp3",
+       "label": "a: Charon, deep, certain, from the future",
+       "warn": "in rough cut 2"
+      },
+      {
+       "id": "b",
+       "src": "takes/sci-b-kore.mp3",
+       "label": "b: Kore, Edinburgh scientist, cool and clipped",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "takes/sci-c-algenib.mp3",
+       "label": "c: Algenib, Salford, weary dad",
+       "warn": "retake"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "round": 3
+}

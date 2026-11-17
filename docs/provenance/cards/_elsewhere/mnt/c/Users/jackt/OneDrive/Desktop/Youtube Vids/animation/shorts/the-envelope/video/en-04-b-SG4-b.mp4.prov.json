@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/video/en-04-b-SG4-b.mp4",
+ "made": "2026-11-15T17:33:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A painted 1930s chapter card comes to life. The two men in hats stop mid-handshake over the rifle crate and slowly turn their shadowed faces towards the curtain, caught. The figure in the dark knitted balaclava holds perfectly still, gloved hands gripping the red curtain, which sways gently. The painted lettering of the title band stays crisp and still. The picture keeps its flat painted 1930s poster look, brushstrokes and grain. One continuous shot, no cuts, no dialogue. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/SG4-b.jpg",
+ "why": "option b, so Jack can pick (he said go, 2026-11-15)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-envelope/moodboard/SG4-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-envelope/scenes/the-envelope",
+  "key": "04-b",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-15T17:31:53.739Z"
+ }
+}

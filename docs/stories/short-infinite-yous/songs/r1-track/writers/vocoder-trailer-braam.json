@@ -1,0 +1,13 @@
+{
+  "name": "vocoder-trailer-braam",
+  "style": "blockbuster trailer sound design score, two talked voices with zero melody, endless climbing Shepard-tone riser, dry clock tick that accelerates, distorted low brass braam with long reverb tail, sub-bass boom, deep vocoded synthetic narrator voice an octave down, dialogue dry and loud above the effects, near-silence vacuum before the final line, title-card slam, cinematic car horn, headlight swoosh",
+  "exclude": "singing, sung chorus, melodic lead vocal, refrain, rap, rhyme, autotune on the lad, guitar, piano ballad, EDM drop, four-on-the-floor, laughter track, comedy",
+  "lyrics": "[Intro: Shepard-tone riser begins, clock ticks quick and dry]\n[Talking, no melody: British teenage lad, drunk, out of breath, giggling nervously, gabbling the line]\nThere's infinite versions of me. One of them gets home fine.\n[Riser crests, ticks race, braam, then a vacuum of silence]\n[Talking, no melody: vocoded synthetic voice, an octave down, slow, colossal, utterly sure]\nThere's only one.\n[Massive sub impact, nothing else left]\n[Outro: title-card slam, one car horn, headlights swoosh past, tail rings out]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 55,
+  "styleInfluence": 75,
+  "vocalGender": "male",
+  "durationSec": 15,
+  "maxMode": false
+}

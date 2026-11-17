@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/_batch-r1/02.jpg",
+ "made": "2026-11-15T12:46:09.954Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph in a late-90s rap video studio: seamless red paper backdrop, wide fisheye from knee height, hard ring flash plus a magenta gel rim light, light haze. A figure in a mirror-shine silver PVC suit and black balaclava counts on gloved fingers toward the lens, three fingers up, the near hand huge and distorted. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. Behind, ten small stone tablets stand on plinths in a row. Slight motion blur, gel spill, film grain. Thanks.",
+ "source_id": "d5ee641b-8804-4ec9-a9b8-73c99b617f0b"
+}

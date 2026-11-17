@@ -1,0 +1,27 @@
+{
+  "research": [
+    "https://en.wikipedia.org/wiki/Meat_raffle — meat raffles are a real pub tradition in parts of Britain; keeps the prize grounded, not a gag prop",
+    "https://www.creativereview.co.uk/trivial-pursuits-photo-book/ — documentary photography of English leisure shows these rituals with affection: candid, unposed, ordinary rooms",
+    "https://www.bloomberg.com/news/features/2019-07-19/chronicles-of-the-last-quizmaster-in-the-age-of-big-trivia — traditional English pub quiz photographed (Muir Vidler) as a working local, not a theme bar",
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — describe the scene as a photograph with camera, light and composition; reference images carry character consistency",
+    "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — period/film cues make the model infer grain and colour; name the medium rather than stacking style adjectives",
+    "https://www.leonardo.ai/news/nano-banana-prompt-guide — a character sheet is the most reliable route to consistency; keep the prompt to position, action, expression"
+  ],
+  "notes": "Two angles on the same beat. NW2-a is the crowd's view: a loud wrong guess (50,000) in the foreground, Bob tiny but sharp in the far corner, the only quiet person in the room. NW2-b flips it: over Bob's shoulder as he writes 300,000 without hesitating, the hen do and regulars blurred noise behind. One readable number per image. Bob's appearance never described; both attach the reference sheet. 'Betting-shop pencil' is a generic object, no brand.",
+  "stills": [
+    {
+      "beat": "nw2",
+      "id": "NW2-a",
+      "look": "Loud wrong guess in front, Bob quiet in the far corner",
+      "prompt": "Vertical 9:16 candid photograph inside a worn British local pub on quiz night, shot from table height. Foreground: a builder in a hi-vis vest half out of his chair, mouth open mid-shout, jabbing a tiny pencil at a crumpled answer sheet that reads \"50,000\" in big confident scrawl, mates grinning and pint glasses crowding the table. Patterned carpet, an unbranded fruit machine glowing pink and green. Far back, in sharp focus through the gap between shoulders, the man from the attached reference sheet sits alone at a corner table, head down, calmly writing. Warm tungsten light, cheap colour film, heavy grain, slight flash falloff, cold teal rain on the black window behind him. Thanks.",
+      "uses_bob_reference": true
+    },
+    {
+      "beat": "nw2",
+      "id": "NW2-b",
+      "look": "Over Bob's shoulder writing 300,000, the pub a blur of noise",
+      "prompt": "Vertical 9:16 candid photograph, high angle over the shoulder of the man from the attached reference sheet, seated alone at a small corner table in a worn British local pub. His hand presses a tiny betting-shop pencil to an answer sheet, already writing \"300,000\" without pause, a half pint and a folded quiz sheet beside it. His face in partial profile, focused and still. Behind him, soft out of focus, a hen do in sashes and plastic tiaras shrieks and argues over their own guess, and old regulars lean in at the bar. Warm tungsten glow, unbranded fruit machine light on the carpet, cheap colour film, coarse grain, rain-streaked teal window at the edge of frame. Thanks.",
+      "uses_bob_reference": true
+    }
+  ]
+}

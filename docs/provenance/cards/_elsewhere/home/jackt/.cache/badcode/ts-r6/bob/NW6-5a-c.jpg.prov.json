@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r6/bob/NW6-5a-c.jpg",
+ "made": "2026-11-16T15:03:02.317Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 candid photo, cheap colour film, heavy grain, night inside a British local pub under warm tungsten bulbs. Waist-high, slightly low angle across a sticky wooden table. The man from the attached reference sheet leans in from frame right, quietly setting down the meat-raffle prize: a plain tray of cling-filmed sausages, chops and a joint, with a white butcher's paper bag. Around the table, startled and touched: a Black woman in her forties in NHS-blue scrubs with a lanyard, a grey-haired Sikh man in a navy turban and fleece, a young white lad in a plain red football shirt with no badge, a South Asian woman in a black hijab laughing behind her hand. Answer sheets face down, tiny pencils, unbranded crisp packets. His expression: small, private, done. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode/ts-r4/bob-sheet.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0cfd847c-277c-483f-b200-efe506f15034"
+}

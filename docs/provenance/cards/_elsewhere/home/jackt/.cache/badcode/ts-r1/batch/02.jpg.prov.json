@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/02.jpg",
+ "made": "2026-11-16T13:21:35.739Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph at night in an empty multi-storey car park in England. In one painted parking bay, everything one family owns is lined up neatly on the concrete: six black bin bags, a child's scooter, a folded cot, a microwave, two duvets in a laundry bag, a school uniform on a hanger hooked over a pushchair. No people. One cold fluorescent teal tube overhead lights only this bay; the rows of empty bays behind fade into dark. Oil stains, a puddle reflecting the light, a faded bay line. Shot from a standing height on a 35mm lens. Cheap colour film, grain, slight halation, lonely and quiet. No readable text. Thanks.",
+ "source_id": "18b1eef4-ebd0-4bd3-8803-7dc7746e408a"
+}

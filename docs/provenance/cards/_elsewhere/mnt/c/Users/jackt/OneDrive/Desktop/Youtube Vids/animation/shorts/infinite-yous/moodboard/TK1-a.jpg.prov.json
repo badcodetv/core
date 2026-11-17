@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/TK1-a.jpg",
+ "made": "2026-11-15T11:53:40.601Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image as the reference for the young man, his shirt, the street and the light, make a new vertical 9:16 photograph: a medium close-up of the same young man from the chest up, facing the camera, his face about a third of the frame's height. He holds his car keys up beside his cheek in one hand, a cocky grin, mouth closed, lips together. Behind him the same night street melts into soft bokeh, and the warm yellow glow of a taxi roof sign lights his face from below on one side. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-LI1-b.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-ref-LI1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "8c52df34-137e-4615-853d-ba3d423bea5f"
+}

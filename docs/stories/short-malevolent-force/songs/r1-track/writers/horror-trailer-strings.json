@@ -1,0 +1,13 @@
+{
+  "name": "horror-trailer-strings",
+  "style": "Instrumental 17-second horror film teaser cue for chamber string orchestra, composer's brief. Opens in near silence: a low cello drone on a single open note, dry col legno tapping in the violas ticking like a slow clock, faint distant growls and clicks under the floor. Violins enter sul ponticello tremolo, thin and glassy near the bridge, creeping upward in a slow chromatic glissando; artificial harmonics shimmer on top like cold fluorescent light. Around 6, 8 and 9 seconds: three vicious full-section string stabs, sforzando, each sharper than the last, with dead air between. After the third stab a deep braam-like low brass swell rises and fills the room. At 15 seconds one huge final orchestral hit, then abrupt trailer silence, and a single high violin harmonic left hanging, very quiet, until it fades. Close mic, dark, minor, atonal clusters, cinematic, dry room with a long cold tail.",
+  "exclude": "vocals, choir, singing, spoken word, drums, beat, synth pads, piano, guitar, happy, major key, epic hero theme, electronic, pop",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}

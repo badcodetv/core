@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/video/iy-04-fc-FL1-c-b.mp4",
+ "made": "2026-11-15T10:30:56+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, real-time speed. [00:00-00:01] Touching his forehead with one fingertip, the figure in the lab coat sends the young man in the white shirt rocketing back-first, stiff and level, through the open door; he is inside in a quarter of a second. The door swings shut by itself with a thud, the taxi bounces and the roof sign wobbles. [00:01-00:08] The figure, still in profile, blows on the fingertip once and holds. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/FL1-c-b.jpg",
+ "why": "Jack 2026-11-15: clean room the Django fling; he turned round mid-fall in r4. Staging: The fingertip boop, a deadpan wide. A low wide frame, symmetrical and still as a sitcom set. The figure in profile reach",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/FL1-c-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-infinite-yous/scenes/infinite-yous",
+  "key": "04-fc",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-15T10:29:52.171Z"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD8-b.jpg",
+ "made": "2026-11-17T11:10:51.024Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 night photograph, 35 mm colour-negative film, rain falling, taken from the parapet of a Victorian railway bridge that crosses above a wide London junction, looking down the length of the road into the crossing. In the lower edge of the frame only the back third of a stopped ambulance shows: a slice of white roof, the corner of its yellow-green chequered side and a rear light bar throwing blue light across the wet road. Ahead of it a long, orderly line of five white police motorcycles is parked nose-to-tail across the full width of the junction mouth, blue lights pulsing, and five officers in hi-vis jackets with blue-and-yellow chequer stand beside them motionless, white helmets wet, one at the centre with a gloved arm raised flat. Beyond that line the four-way crossing is eerily bare, an empty plain of glistening tarmac and painted white lines with not one vehicle in it, drawing the eye to the middle. The convoy of black cars is halfway across the far approach, four sets of white headlights in a tight column, still some distance off. On the right a stopped red double-decker bus and a queue of cars with red brake lights are held at their own line. Lighting: blue strobes from bikes and ambulance, rows of sodium-orange street lamps, one red traffic signal, headlights, every light doubled as long reflections on the wet surface, rain visible as fine slanting lines in the lamp glow. Teal shadows, coarse film grain, halation, no readable text, numbers, plates or signage, no faces visible. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "2d77536f-3ded-4c41-98b5-999136e4dad8"
+}

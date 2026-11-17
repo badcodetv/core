@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/BM9-c.jpg",
+ "made": "2026-11-17T11:39:00.074Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 candid night photo on 35 mm colour-negative stock, coarse grain, slight halation, slightly underexposed, the feeling of a real photograph not a render. Shot on a wider 28 mm lens from close in, at eye height across the back seat of a large black luxury car, so the cabin bends a little at the edges; his head sits in the upper half of the frame. A fat, posh English politician in his early fifties lounges sideways with his belly pushing his shirt buttons, utterly bored, eyes rolled up toward the roof lining, talking flatly mid-word with his mouth half open. A thick, wild haystack of straw-yellow hair, never brushed, tumbles down across his forehead. His face: a broad flattened nose, small round brown eyes, a pouting lower lip, a wide jaw softened by a double chin, a sallow complexion. Phone held to his right ear in his right hand, a signet ring on the little finger; his left hand hovers over a small silver tray of canapés on the armrest, tiny sausage rolls and quail eggs. Expensive navy suit jacket rucked up around his shoulders, white shirt untucked at the waist, a dark navy tie with thin stripes pulled loose. Light: a warm overhead reading lamp directly above makes a golden halo in his hair; the phone glow lights his cheek; cold blue emergency strobes blaze through the rain-streaked rear and side windows, blue light sliding across the wet glass and the black leather, with sodium-orange street lamps glowing beyond. Natural skin and natural five-fingered hands. No readable text, no logos, no plates. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c013d8ac-b202-4d23-bf0a-9d0686772ed8"
+}

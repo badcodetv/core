@@ -1,0 +1,17 @@
+{
+  "style": "instrumental cinematic comedy cue that turns grave, 100 bpm. Small pit band: plucked pizzicato violins and cello with a reedy bassoon on a lopsided, staggering little march, tipsy oom-pah lilt, playful. The march tune then piles up in clashing keys at once, bitonal, crowded and dizzy. A rising slide whistle ends in one dry woodblock snap. A single deep timpani thud. Sudden hush: one muted flugelhorn holds a long lonely note, rubato, slowing, sparse and solemn, a soft cinematic car horn far away in the distance. Acoustic orchestra, close dry mix",
+  "exclude": "vocals, voice, choir, singing, humming, spoken word, synth, synth pad, electronic drums, drum kit, 808, EDM, bass drop",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false,
+  "title": "infinite yous r2 instrumental-pizzicato-caper-to-solemn-brass",
+  "mode": "custom",
+  "workspace": "short-infinite-yous"
+}

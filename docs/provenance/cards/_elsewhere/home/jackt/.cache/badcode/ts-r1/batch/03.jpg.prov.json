@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r1/batch/03.jpg",
+ "made": "2026-11-16T13:21:35.739Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 night photograph from a drone high above an empty English retail-park car park. Every parking bay and the road beyond is filled with small packed suitcases and holdalls, stood upright in tight rows, one per family, thousands upon thousands running past the edge of the frame into the dark. At the bottom edge, a single red-brick terraced house with one lit window gives the scale. Cold fluorescent teal from tall car-park lamps, pools of light falling off into black, wet tarmac. Shot on cheap 35mm colour negative film, heavy grain, slight blur, muted greens, no people visible, no signage or logos. Lonely, quiet, slightly eerie. Thanks.",
+ "source_id": "bbcf97d3-e56c-4c82-bf7d-11c7bde2bbbe"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r2/batch/10.jpg",
+ "made": "2026-11-16T13:36:21.954Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 photograph, shot on cheap colour film with visible grain, at night inside an empty British church hall after a children's birthday party. A long folding trestle table with a paper tablecloth fills the frame, lined end to end with small identical paper party bags with handles, each with a different child's first name handwritten in felt tip. Cold fluorescent teal light from buzzing ceiling tubes, deep shadows at the edges, a sagging bunch of helium balloons and paper bunting drained of colour behind. Paper plates, a half-eaten cake, a stacked pile of plastic chairs. Eye-level, 35mm, slightly off-centre, lonely and faintly eerie, no people. Thanks.",
+ "source_id": "b6b9176f-6642-4a38-860c-f953377f29d3"
+}

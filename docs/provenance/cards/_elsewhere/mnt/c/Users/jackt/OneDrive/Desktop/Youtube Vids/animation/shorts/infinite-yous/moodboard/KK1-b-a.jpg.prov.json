@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/KK1-b-a.jpg",
+ "made": "2026-11-15T10:40:14.397Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16, night city street on a long lens, very shallow focus, warm amber and red bokeh with touches of pink and cyan, deep black sky, lit only by street lamps and shop signs. The silver taxi waits at the kerb with its rear door open and a plain glowing TAXI roof sign. The young man in the white shirt stands a step back from the doorway, facing the car, swaying slightly, his backside toward the figure. The figure in the lab coat, side-on to camera, is frozen at the top of a footballer's penalty run-up: planted foot beside the young man, swinging leg drawn far back behind him, arms flung out, coat flaring, eyes on the target. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c386fa59-2031-4cd9-9291-5ad0bd7d7b80"
+}

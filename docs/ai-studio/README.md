@@ -100,6 +100,14 @@ explicit: *"overtly sarcastic, dark humour, **total authority**… nurturing und
 **A narrator who cannot be bothered is not the narrator `voice.md` describes.** He is enjoying this; he simply
 will not admit it.
 
+## 🔴 FOUND 2026-11-17 — a director's NOTE passed as a profile is read aloud
+
+`scripts/aistudio-tts.py` takes two shapes of voice file. A short director's note (`Accent:` / `Style:` / `Pace:`,
+the Bank Robbery recipe) must be passed with **`--note`**; a full audio profile (`# Audio Profile` / `## Scene:`)
+goes in without it. Priority Lane's minister note went in without `--note`, and the take ended with the voice reading
+part of the note aloud ("…fetch Andrew. Nothing plummy or put on"). Re-run with `--note`, the take was clean.
+**Check:** transcribe every new take (`scripts/transcribe.py`) and diff it with the script before it goes in a cut.
+
 ## Where this lane sits
 
 | Lane | What it is | Verdict |

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "chest-voice-literal",
+    "idea": "The most literal portrait of the voice: a heavyset Brooklyn man in his mid-twenties whose voice is plummy, wheezy and humid, sitting deep in the chest, a thick jaunty grumble with a slight rasp. Delivery is calm, unhurried and menacing without shouting, every word enunciated, landing mostly on the beat. Music asked for plainly: 1997 New York boom bap at 90 BPM, hard dry kick and cracking snare, a short dark jazz-piano stab looping, vinyl crackle, nothing else. Between each rule a scratched, turntable-cut shouted voice says the number. Low weirdness, high style influence, so Suno stays on the era."
+  },
+  {
+    "name": "drums-first-dj-cuts",
+    "idea": "Lead with the producer side: the prompt is mostly about the beat, chopped boom-bap drums sliced and re-layered, drums 'harder than nails', a minimal two-bar loop of dark Rhodes chords, deep sub bassline under it, and a DJ scratching the numbers one to five on the turntable between verses like a radio countdown. Tempo 92 BPM, mono-ish 90s mix, MPC grit. The rapper is described in fewer, punchy words: obese-sounding deep male Brooklyn rapper, slow, cool, conversational. Put a [Scratched count: one] style direction in brackets before each rule (and note the risk Suno sings it). Medium weirdness."
+  },
+  {
+    "name": "jazz-phrasing",
+    "idea": "Build it on the fact the rapper learned phrasing from a jazz saxophonist: describe a rapper who phrases like a horn player, slowing down to place each syllable, then picking up, chopping it up, smooth multisyllabic rhymes, conversational and deliberate pauses before each punchline. Voice: big man, deep warm resonant baritone with a wheezy breath between lines, Brooklyn accent. Music: smoky late-night soul-jazz keys sample chopped into an ominous loop, dusty boom-bap drums at 88 BPM, upright-bass feel, cassette hiss. Keep the count as a gritty sampled shout between rules."
+  },
+  {
+    "name": "radio-promo-countdown",
+    "idea": "Lean on the beat's origin as a radio countdown promo: a 1996 New York hip-hop radio drop turned into a song, the turntable cutting a booming hype-man voice that counts one, two, three, four, five, each number scratched in on the downbeat. The rapper: deep, raspy, heavyset Brooklyn voice, menacing but relaxed, like he's explaining the rules to a younger dealer across a table, a slight smile in it. Beat: stripped boom bap, hard snare, single dark piano stab, 90 BPM, short intro 'Uh. Uh-huh.' ad-lib dry and close. Raise weirdness a little to let the scratch section breathe."
+  },
+  {
+    "name": "mafioso-menace",
+    "idea": "Go at the mood of the 1997 album: mafioso rap, dark and cinematic but minimal, the voice of a confident Brooklyn kingpin reading his rulebook, deep chest voice, slight wheeze, slow heavy breathing, totally calm authority, never yelling. Music words: gritty East Coast boom bap, ominous minor-key jazz-piano loop, crunchy snare, booming kick, tape saturation, sparse, no hook, no singing, no chorus. Count between rules is a scratched shouted voice. Exclude trap, 808 rolls, autotune, melodic singing, modern polish."
+  },
+  {
+    "name": "exclude-the-wrong-voice",
+    "idea": "Get there by subtraction as much as addition, because round 1 drifted: a short positive box (deep heavyset Brooklyn male rapper, plummy wheezy chest voice, laid-back conversational flow, 1997 New York boom bap, 90 BPM, dark jazz keys loop, hard drums, scratched number count) and a long, specific exclude list built from what round 1 produced: gravel old man, female vocals, youthful high voice, radio announcer, strings, spoken word, trap hi-hats, lo-fi chill, autotune. Use bracket tags in the lyrics only for [Intro], [Scratch: count], [Verse] and [Outro]. Low weirdness, high style influence."
+  }
+]

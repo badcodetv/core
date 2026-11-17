@@ -1,0 +1,13 @@
+{
+  "name": "habanera-bandoneon-card-sharp",
+  "style": "instrumental, 15-second cue, slow sly tango-habanera duet, 1930s smoke-room parlour: lone bandoneon breathing a slinky, sidelong melody over an upright piano limping the dotted habanera bass, invented tune, close dry room. Card riffles and a small counter-bell ting fall on the offbeats like percussion. At 7 seconds one hard bandoneon sforzando stab and a staccato low piano cluster, then dead silence. Last four seconds: a single thin bandoneon note held unresolved, a velvet curtain swishing open, near-empty air. no vocals",
+  "exclude": "vocals, spoken word, ragtime",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false
+}

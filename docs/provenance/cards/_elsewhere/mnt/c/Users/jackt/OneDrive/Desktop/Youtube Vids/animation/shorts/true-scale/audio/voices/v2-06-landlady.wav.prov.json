@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-06-landlady.wav",
+ "made": "2026-11-16T15:28:31+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "...Right. Picture round.",
+ "inputs": {
+  "profile": "# Audio Profile\nA pub landlady in her fifties running the Thursday quiz. Warm, low, unforced voice; dry humour under it. London accent, softly spoken. She is not a performer: she reads into a cheap mic the way you'd talk to friends across a small room, relaxed, a little amused, never shouting, never sing-song. Pace: quick and brisk, rattling through it like a host who has done this a thousand times, barely any pauses, a tiny beat before the name only.\n\n## Scene:\nA small, busy local pub on quiz night. She is behind the bar with the mic held loosely, reading from a sheet.\n\n## Sample Context:\nShe has run this quiz for years. Understated and natural; the drama is in the room, not in her voice.\n",
+  "profile_file": "docs/stories/short-true-scale/voices/profiles/landlady-sulafat.md"
+ },
+ "settings": {
+  "voice": "Sulafat",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

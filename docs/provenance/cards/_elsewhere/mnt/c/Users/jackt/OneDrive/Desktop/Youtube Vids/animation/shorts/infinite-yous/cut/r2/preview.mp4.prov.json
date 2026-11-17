@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/cut/r2/preview.mp4",
+ "made": "2026-11-15T11:47:20+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/infinite-yous/cut.py",
+ "why": "rough cut 2: voices + squeeze stills",
+ "prompt": "python3 scripts/infinite-yous/cut.py 2"
+}

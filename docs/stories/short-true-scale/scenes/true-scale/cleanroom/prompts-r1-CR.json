@@ -1,0 +1,34 @@
+{
+  "research": [
+    "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google: concrete detail over vague decoration, specific camera/composition language, positive framing; NB2 renders short legible text well",
+    "https://www.atlabs.ai/blog/nano-banana-2-prompting-guide — keep in-image text to a few words; quote the exact string",
+    "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — a period/film-stock cue makes the model infer matching grain and colour on its own",
+    "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — most models treat text as texture; name lens, angle, depth of field",
+    "https://www.wangarattachronicle.com.au/news/unveiling-of-seats-without-shelter-gives-homeless-youth-a-voice-ijocx16l — 'Seats without Shelter': 231 empty seats, one per young person, a number made physical by objects",
+    "https://sheffieldwire.co.uk/?p=75993 — Sheffield exhibition: concrete-slab beds beside statistics; objects carry the number",
+    "https://insidehousing.co.uk/insight/weve-got-no-dignity-life-in-poor-quality-temporary-accommodation-74652 — temporary accommodation: cold, overcrowding, shared facilities",
+    "https://committees.parliament.uk/publications/47349/documents/245409/default/ — committee report: families in B&Bs 'live out of suitcases'; one room, shared kitchens",
+    "https://www.gov.uk/government/publications/housing-conditions-in-temporary-accommodation-government-response-to-the-housing-communities-and-local-government-committee-report/housing-conditions-in-temporary-accommodation-government-response-to-the-housing-communities-and-local-government-committee-report-accessible-versi — B&B/hostel TA as the official context"
+  ],
+  "notes": "Beat B = every household in temporary accommodation at once. Three different ideas: (a) literal true-scale aerial: one packed suitcase per household (from the 'living out of suitcases' testimony) filling a retail-park car park to the horizon, one terraced house for scale; (b) the surprise / counting device: a B&B reception key board that never ends, the last fob reading 134,210 (the only written number); (c) the map: a council office wall map of England so thick with teal pins the cities become solid. All carry the reference's night, cheap colour film, grain, cold fluorescent teal. No faces, no brands, no landmarks. Each ends 'Thanks.'",
+  "stills": [
+    {
+      "beat": "crowd",
+      "id": "CR1-a",
+      "look": "Suitcase car park, true-scale aerial",
+      "prompt": "Vertical 9:16 night photograph from a drone high above an empty English retail-park car park. Every parking bay and the road beyond is filled with small packed suitcases and holdalls, stood upright in tight rows, one per family, thousands upon thousands running past the edge of the frame into the dark. At the bottom edge, a single red-brick terraced house with one lit window gives the scale. Cold fluorescent teal from tall car-park lamps, pools of light falling off into black, wet tarmac. Shot on cheap 35mm colour negative film, heavy grain, slight blur, muted greens, no people visible, no signage or logos. Lonely, quiet, slightly eerie. Thanks."
+    },
+    {
+      "beat": "crowd",
+      "id": "CR1-b",
+      "look": "The B&B key board that never ends",
+      "prompt": "Vertical 9:16 photograph inside the reception of a cheap English bed-and-breakfast at night. Behind an empty wooden counter with a brass bell, a wall of numbered room keys on hooks, each with a worn plastic fob, runs up past the ceiling and back down a narrow corridor into darkness, rows multiplying until they blur into a texture. One key fob in the foreground, sharp, is stamped in plain black numerals \"134,210\". A single flickering fluorescent tube gives cold teal light, magnolia walls, swirly carpet, fire-door sign without words. 35mm lens, cheap colour film, grain, faint halation, no people. Thanks."
+    },
+    {
+      "beat": "crowd",
+      "id": "CR1-c",
+      "look": "Pin map, cities gone solid",
+      "prompt": "Vertical 9:16 photograph, close and slightly overhead, of a large paper map of England pinned to a cork board on a council office wall after hours. The map is crowded with small teal map pins, so dense around London, Birmingham, Manchester and the coast towns that the pins merge into solid glittering crusts and the printed roads disappear beneath them; thinner scatterings reach every county. A desk lamp is off; the only light is a buzzing fluorescent tube overhead, cold teal, with the pins casting tiny shadows. Shallow depth of field, 50mm, cheap colour film, grain, slight vignette. No text, no people, no logos. Thanks."
+    }
+  ]
+}

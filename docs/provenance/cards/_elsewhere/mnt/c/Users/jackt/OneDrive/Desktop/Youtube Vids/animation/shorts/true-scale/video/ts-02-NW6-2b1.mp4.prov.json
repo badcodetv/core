@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/video/ts-02-NW6-2b1.mp4",
+ "made": "2026-11-16T15:19:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off static camera, the frame never moves. One continuous shot, no cuts. Cheap colour film, soft grain, warm pub lamps, teal rain on the windows. At the centre table the man in the paint-spattered T-shirt leans forward and shouts, mouth wide, jabbing his open hand at the paper. The woman in the denim jacket cups her hand to her mouth and calls out with him. Far back in the corner, the bearded man in the beanie keeps his head down, writing slowly on his sheet, untouched by the noise. Everyone else stays seated, only blinking. Crisp packets and glasses stay still on the tables. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-2b1.jpg",
+ "why": "The loud table shouts its lowball guess; Bob alone in the corner keeps writing.",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/moodboard/NW6-2b1.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-true-scale/scenes/true-scale",
+  "key": "02",
+  "frame": 2,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-16T15:15:27.185Z"
+ }
+}

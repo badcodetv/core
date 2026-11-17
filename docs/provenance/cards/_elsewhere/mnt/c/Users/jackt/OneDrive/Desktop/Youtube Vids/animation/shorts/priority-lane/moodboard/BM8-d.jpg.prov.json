@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/BM8-d.jpg",
+ "made": "2026-11-17T11:09:06.461Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph, a real 35 mm colour-negative snapshot taken at night with a slightly wide 40 mm lens at eye height, visible grain, mild halation on the lamps, a little underexposed in the shadows. The back seat of a large black luxury car parked still in the rain. Sunk low into the leather, legs stretched out, an invented British politician in his late fifties: a thick shock of untidy white-blond hair flopping forward over his brow and sticking out at the sides, a large ruddy round face slightly puffy, small heavy-lidded eyes, a creased navy suit tight across the belly at the button, tie pulled loose and twisted, white shirt collar half up on one side. No hat. He holds his phone against his right ear with his right hand, talking in a bored drawl, mouth half open mid-word, eyes rolled up towards the roof. With his other hand he lifts a single canapé from a small silver tray on the armrest beside him, the tray full of tiny tartlets with piped cream and herbs. His head sits in the upper third of the frame. Light sources: one warm orange overhead reading lamp making a small golden island around his hair, face and the silver tray; the faint glow of the phone screen; and outside, through both the rain-streaked rear window and the side window behind him, cold blue strobing light from emergency vehicles we never see, mixed with the dull sodium orange of a distant street lamp, so the glass all around him is a dark blue blur of water droplets while he sits warm and comfortable in the middle. Teal-black shadows fill the rest of the cabin. Natural hands and fingers, real skin. No readable text, no plates, no logos. Not CGI, not polished. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b740e519-4ef0-4806-be34-ef0114e30f76"
+}

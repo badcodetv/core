@@ -1,0 +1,405 @@
+{
+ "title": "Malevolent Force Picks",
+ "eyebrow": "BadCode Shorts · The Malevolent Force · clips and music",
+ "heading": "The Malevolent Force: pick a clip per shot, and the music",
+ "round": 3,
+ "intro": "Round 3, on your note: the setting stays the same and only the prices change, close on the bread. One still per option and one lightning clip; the new price cards are an edit of that same still, cut out and laid over the clip from the brightest flash frame, so nothing else can change. Shots 1-5 and the music (vibes1) are picked; earlier rounds are folded below.",
+ "sections": [
+  {
+   "h": "Round 3",
+   "lede": "Pick the lightning shot.",
+   "groups": [
+    {
+     "slot": "clip-06-swap",
+     "round": 3,
+     "title": "6. Lightning, only the prices change (£5 → £50, 10p → £12)",
+     "line": "Close on the bread; the flash is at about 2.5 s.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-06-f4a-swap.mp4",
+       "label": "a: the end of the counter by the dark window",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-06-f4b-swap.mp4",
+       "label": "b: the freezer lid by the door glass",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "clips/mf-06-f4c-swap.mp4",
+       "label": "c: the window ledge, the bolt in the glass",
+       "warn": "a dark blurred shape sits in the glass behind the loaf (a reflection?)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 2",
+   "lede": "Pick the lightning shot and the music.",
+   "groups": [
+    {
+     "slot": "clip-06-flash",
+     "round": 2,
+     "title": "6. Lightning, then the price changes (joined on the flash)",
+     "line": "The after still is framed a little differently from the before in each, most in a and c; b (the freezer) is closest, but its mist covers the price cards after ~3 s, so it's cut short.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-06-a-preview.mp4",
+       "label": "a: at the till, lightning through the front door; after, the till drawer hangs open",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-06-b-preview.mp4",
+       "label": "b: the chest freezer under the barred back window; the room drops to black after the flash; after, frost spreads",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "clips/mf-06-c-preview.mp4",
+       "label": "c: the front-window ledge, the bolt over the street; after, the streetlamp is out",
+       "warn": "price cards small in a wide shot"
+      }
+     ]
+    },
+    {
+     "slot": "track-r2",
+     "round": 2,
+     "title": "The music: ambient, Silent Hill vein (instrumental)",
+     "line": "About 15 s; bells1 and bells2 ran long (2:08, 0:54), trimmed in the cut.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "bells1",
+       "href": "https://suno.com/song/1f6d8984-04de-4842-ae73-9886c2b4afdb",
+       "label": "bells1: Detuned bell-like electric piano, four or five sad notes, far apart (2:08)",
+       "warn": ""
+      },
+      {
+       "id": "bells2",
+       "href": "https://suno.com/song/1a1860c8-f5cd-4cf6-a9d7-6112fecf35ac",
+       "label": "bells2: Detuned bell-like electric piano, four or five sad notes, far apart (0:54)",
+       "warn": ""
+      },
+      {
+       "id": "vibes1",
+       "href": "https://suno.com/song/f7b238d2-fbb9-4ee1-9b9d-5d9600291c27",
+       "label": "vibes1: Out-of-tune vibraphone and bells shimmering against each other (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "vibes2",
+       "href": "https://suno.com/song/476176ce-b612-45da-a01d-39fac97df84e",
+       "label": "vibes2: Out-of-tune vibraphone and bells shimmering against each other (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "guitar1",
+       "href": "https://suno.com/song/3a783ffd-046d-47b1-ba39-ea1d400fc993",
+       "label": "guitar1: One clean electric guitar, wet spring reverb, slow mournful arpeggio (0:21)",
+       "warn": ""
+      },
+      {
+       "id": "guitar2",
+       "href": "https://suno.com/song/f5d9a3f9-8858-43f8-86d0-74140d814847",
+       "label": "guitar2: One clean electric guitar, wet spring reverb, slow mournful arpeggio (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "foundry1",
+       "href": "https://suno.com/song/e5223065-077d-43e4-a477-37c98dd954ef",
+       "label": "foundry1: Struck scrap metal, chains and pipes in a vast dark reverb (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "foundry2",
+       "href": "https://suno.com/song/4c85e24c-d057-4a3b-951e-7902f7d2b988",
+       "label": "foundry2: Struck scrap metal, chains and pipes in a vast dark reverb (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "radio1",
+       "href": "https://suno.com/song/a31d1da3-2d7e-47d8-a158-b3ffb6638320",
+       "label": "radio1: Shortwave static and tuning whine as the music, a buried far-off fragment (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "radio2",
+       "href": "https://suno.com/song/772eaf83-2986-478c-adae-bd05cef65734",
+       "label": "radio2: Shortwave static and tuning whine as the music, a buried far-off fragment (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "siren1",
+       "href": "https://suno.com/song/dd712154-b86f-4b6f-9be5-651a0ac5e061",
+       "label": "siren1: A distant filtered siren wail over a throbbing sub-bass pulse (0:17)",
+       "warn": ""
+      },
+      {
+       "id": "siren2",
+       "href": "https://suno.com/song/d8792d95-abae-44be-8b46-8515e1f7dbee",
+       "label": "siren2: A distant filtered siren wail over a throbbing sub-bass pulse (0:16)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The shots",
+   "lede": "Six shots in film order; the end card is text.",
+   "groups": [
+    {
+     "slot": "clip-01",
+     "title": "1. Establish the one lit shop on a dead street at 3am, and that something is awake in it.",
+     "line": "Still FO2-c. Pick the take for this shot.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-01-FO2-c.mp4",
+       "label": "a: shop lights dip",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "clips/mf-01-w2-FO2-c.mp4",
+       "label": "a2: shop lights dip (second take)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-01-b-FO2-c.mp4",
+       "label": "b: streetlamp dies",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "clips/mf-01-b-w2-FO2-c.mp4",
+       "label": "b2: streetlamp dies (second take)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "clip-02",
+     "title": "2. The force arrives: the front door moves with nobody touching it.",
+     "line": "Still PR2-e. Pick the take for this shot.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-02-PR2-e.mp4",
+       "label": "a: door swings wider",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "clips/mf-02-w2-PR2-e.mp4",
+       "label": "a2: door swings wider (second take)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-02-b-PR2-e.mp4",
+       "label": "b: door swings shut",
+       "warn": ""
+      },
+      {
+       "id": "b2",
+       "src": "clips/mf-02-b-w2-PR2-e.mp4",
+       "label": "b2: door swings shut (second take)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "clip-03",
+     "title": "3. Lead the eye down the aisle to the stockroom: the back room is where it lives.",
+     "line": "Still PR2-c. Pick the take for this shot.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-03-PR2-c.mp4",
+       "label": "a: stockroom door opens",
+       "warn": ""
+      },
+      {
+       "id": "a2",
+       "src": "clips/mf-03-w2-PR2-c.mp4",
+       "label": "a2: stockroom door opens (second take)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-03-b-PR2-c.mp4",
+       "label": "b: basket slides",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "clip-04",
+     "title": "4. The loaf and its price, watched by a failing light; the flicker frames carry the price changes in the edit.",
+     "line": "Still PR2-b. Pick the take for this shot.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-04-PR2-b.mp4",
+       "label": "a: two sharp flickers",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-04-b-PR2-b.mp4",
+       "label": "b: slow brownout, bag stirs",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "clip-05",
+     "title": "5. Look for the culprit in the security mirror and find only an empty aisle and money on the floor.",
+     "line": "Still FO2-d. Pick the take for this shot.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-05-FO2-d.mp4",
+       "label": "a: notes creep across floor",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-05-b-FO2-d.mp4",
+       "label": "b: mirror rocks",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "clip-06",
+     "title": "6. The last frame before the end card: £50 bread at the door, the back room open and working.",
+     "line": "Still FO2-e. Pick the take for this shot.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/mf-06-FO2-e.mp4",
+       "label": "a: back room pulses",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/mf-06-b-FO2-e.mp4",
+       "label": "b: back door shuts",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  },
+  {
+   "h": "The music",
+   "lede": "Instrumental, about 15 s (the Duration box read 15 s, not 17). Open each in Suno.",
+   "groups": [
+    {
+     "slot": "track-r1",
+     "title": "The music (instrumental)",
+     "line": "Like the Black Ops 1 zombies \"Damned\" theme: pick one take.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "piano1",
+       "href": "https://suno.com/song/ffa372df-1c2b-40c2-963f-c26653d69a41",
+       "label": "piano1: Lone grand piano, fast repeating minor figure, deep reverb (closest to the reference) (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "piano2",
+       "href": "https://suno.com/song/bbbd0df7-e9a6-4e7b-bb9f-4a9b00e3ace7",
+       "label": "piano2: Lone grand piano, fast repeating minor figure, deep reverb (closest to the reference) (0:17)",
+       "warn": ""
+      },
+      {
+       "id": "box1",
+       "href": "https://suno.com/song/dbb952e6-5653-4f67-9d18-ce52b692bed4",
+       "label": "box1: Wind-up music box and celesta, a minor lullaby winding down (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "box2",
+       "href": "https://suno.com/song/21532151-5aa0-4e9d-ba60-96236f285c88",
+       "label": "box2: Wind-up music box and celesta, a minor lullaby winding down (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "indus1",
+       "href": "https://suno.com/song/a76750c5-a14a-4230-95dc-5afb5af35999",
+       "label": "indus1: Distorted piano and down-tuned guitar chug, metal-sheet percussion (0:38)",
+       "warn": ""
+      },
+      {
+       "id": "indus2",
+       "href": "https://suno.com/song/56c0e2b8-0298-4b60-8b3d-f3f79e77370d",
+       "label": "indus2: Distorted piano and down-tuned guitar chug, metal-sheet percussion (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "techno1",
+       "href": "https://suno.com/song/9fa1cc3d-58b7-49ea-9803-5cc8dca55116",
+       "label": "techno1: Muffled techno kick through the stockroom wall, cold synth arpeggio (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "techno2",
+       "href": "https://suno.com/song/eed263a4-1e74-40a6-9218-373c4593a932",
+       "label": "techno2: Muffled techno kick through the stockroom wall, cold synth arpeggio (0:18)",
+       "warn": ""
+      },
+      {
+       "id": "strings1",
+       "href": "https://suno.com/song/3d3047b0-1f5c-4453-9d11-c3802ddafbb0",
+       "label": "strings1: Horror-trailer strings: tapping, tremolo, glassy harmonics, cello drone (0:14)",
+       "warn": ""
+      },
+      {
+       "id": "strings2",
+       "href": "https://suno.com/song/ec8b88de-3849-459a-8c49-e0a088f1a58a",
+       "label": "strings2: Horror-trailer strings: tapping, tremolo, glassy harmonics, cello drone (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "shop1",
+       "href": "https://suno.com/song/4acfea95-982a-412b-8caa-afab9c92796c",
+       "label": "shop1: Almost no music: tube hum, fridge, door creak, a detuned upright (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "shop2",
+       "href": "https://suno.com/song/0d90e68e-baed-46de-aaef-f02d26a64b73",
+       "label": "shop2: Almost no music: tube hum, fridge, door creak, a detuned upright (0:15)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ]
+}

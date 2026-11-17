@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/_batch-r1/04.jpg",
+ "made": "2026-11-15T12:46:09.977Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 risograph print in two inks, fluorescent pink and teal, slightly misregistered, visible paper tooth and ink speckle. Bold flat cartoon: a gigantic printing press spews a river of banknotes upward. Four men in pinstripe suits float cross-legged above it, blissed out, eyes drawn as spirals, tongues lolling, money wrapped round their necks like scarves. One sticks a straw into the press's output tray. Far below, tiny ordinary people queue at a closed shop, holding empty purses, looking up. Thick wobbly linework, halftone dots, hand-lettered title at the bottom: \"NEVER GET HIGH ON YOUR OWN SUPPLY\". Thanks.",
+ "source_id": "c299d045-1fc6-429a-8e3a-daade214f145"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/infinite-yous/moodboard/KK1-c-a.jpg",
+ "made": "2026-11-15T10:41:01.017Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16, night street on a long lens, shallow focus, background dissolved into large soft bokeh of amber, red, pink and a little cyan, inky shadows, only sign and lamp light. The silver taxi at the kerb, rear door swung wide, plain yellow TAXI roof sign glowing. The young man in the white shirt stands just clear of the door, facing into the back seat, his back to the figure, keys still raised in one hand. The figure in the lab coat stands side-on to camera at the door's edge, one gloved hand resting on top of the open door like a hotel doorman, the other behind his back, one foot lifted behind the young man, knee bent, toe pointed, deadpan. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/e089ca24-c90e-4348-bade-c8259060c7db/scratchpad/iy-cast-CA2-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "8f81d7eb-ea9b-4324-a43b-64a229535c5e"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB6-b.jpg",
+ "made": "2026-11-14T14:25:23.633Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph shot on 35 mm colour negative film at night in heavy London rain, camera at standing head height on the wet kerb about two metres from a red double-decker bus that has stopped at a junction, lens almost square-on to its flank so the front drop of the bus's T-shaped side advert fills the upper two thirds of the frame. The advert is a printed vinyl campaign poster stuck flat to the bus panel, its seams and rivet lines showing through, rain beading and running in thin streams down its surface: on it, a glossy, airbrushed head-and-shoulders campaign photograph of the man from the reference image, head in the upper middle of the poster, holding a phone to his right ear with his right hand, brows lifted, a broad practised smile, eyes straight to camera, against a plain off-white field. Across the lower third of the poster, in very large heavy condensed black sans-serif capitals, one line reading \"SAVE OUR NHS\", in sharp focus, no other words, no logo, no small print. Light sources: a sodium-orange street lamp above raking the wet bus side, the bus's own warm interior lights glowing in the upper-deck windows at the top edge, and a sweep of blue emergency light from an ambulance just out of frame catching the raindrops on the poster. Below the bus, wet black tarmac mirrors the orange and blue in long smears; cold teal shadows under the wheel arch. Visible film grain, slight halation round the lamps, shallow depth of field with the slogan crisp. The slogan is the only readable text in the frame: no route number, no destination, no plates, no other signs. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "315a7963-435c-4a4d-a99d-573f1078c00b"
+}

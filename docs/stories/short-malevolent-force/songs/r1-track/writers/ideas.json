@@ -1,0 +1,26 @@
+[
+  {
+    "name": "lone-reverb-piano",
+    "idea": "The closest answer to the reference: one grand piano alone, high register, playing a fast repeating stepwise minor-key figure (around E minor, quick pulse near 180 BPM) that never resolves, drenched in a long cavernous reverb so each note smears into the next. Underneath, only low menacing growls and dry clicks, no drums. Ask for it as a short comma list of genre and texture tags (dark ambient horror piano, haunting menu theme, sparse, echoing). The figure stutters on three hits in the middle as the light flickers and ends on one hard low piano cluster at about 15 seconds, then the reverb tail hangs to silence."
+  },
+  {
+    "name": "dying-music-box",
+    "idea": "The lead performer is a wind-up music box (with a celesta doubling it) playing a simple minor lullaby figure, its mechanism audibly winding down so the tempo drags and pitches sag. Ask for it as a little scene in prose: an empty fluorescent shop at 3am, a tune coming from nowhere, the spring running out. Mechanical ticks and a cold room tone sit under it; three sharp metallic plinks land on the mid-section flickers. It stops dead on a final struck low bell, leaving a second of hum."
+  },
+  {
+    "name": "distorted-industrial-theme",
+    "idea": "The theme played by a heavily distorted, bitcrushed piano and a downtuned baritone electric guitar chugging palm-muted on one low note, with clanging metal-sheet and anvil percussion: the industrial, mangled skin of a creepy piano theme. Ask for it in production-engineer language (saturation, bitcrush, gated room, sidechained sub drone, tight mix). It starts as a filtered rumble, the guitar slams in on the three flicker hits, and it all cuts out on one enormous slam at 15 seconds with nothing after."
+  },
+  {
+    "name": "techno-through-the-wall",
+    "idea": "A futuristic minimal techno cue: a muffled four-on-the-floor kick heard as if through the stockroom wall, a cold analog synth arpeggio picking out a minor stepwise melody, eerie pads. Ask for it as a timeline of cues by the second (0-6 s muffled pulse and pad, 6-10 s three filter-opening stabs, 10-15 s the kick unmuffles and the arpeggio climbs, 15 s one sub drop then silence). No guitar, no piano: the lead voice is the analog synth."
+  },
+  {
+    "name": "horror-trailer-strings",
+    "idea": "A string ensemble horror-trailer cue: col legno tapping and sul ponticello tremolo violins build tension, with glassy harmonics on top and a low cello drone. Ask for it like a film composer's brief for a 17-second teaser, naming the techniques. The three flickers are three vicious string stabs with a braam-like low brass swell after the last; a final orchestral hit at 15 seconds, then the trailer silence and one high violin harmonic hanging."
+  },
+  {
+    "name": "fluorescent-sound-design",
+    "idea": "Almost no music: the lead voice is the shop itself. A buzzing fluorescent tube hum pitched to a minor drone, a fridge compressor, a slow door creak, a single detuned old upright piano that plays just three wrong notes, one per flicker, each with an electrical spark crackle. Ask for it as a sound-design list of objects and events rather than a genre. It ends on a deep impact boom with a last tube ping and then the hum switching off to dead silence."
+  }
+]

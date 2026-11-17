@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/true-scale/audio/voices/v2-05-bob.wav",
+ "made": "2026-11-16T14:40:27+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I sleep opposite one.",
+ "inputs": {
+  "profile": "# Audio Profile\nBob, 47. Deep, gravelly, low chest tone, slightly rough from years of smoking. Restrained and inward. Intelligent, cynical, worn down. Delivery sits under the material rather than selling it. Natural conversational rhythm, short pauses, firm downward endings. Neutral southern English accent as heard in Reading or Guildford, faint London edge, no Cockney vowels or slang.\n\n## Scene:\nA busy local pub on quiz night. The whole room has just turned to look at him. He answers quietly, not performing, already leaving.\n\n## Sample Context:\nBob lives in a tent in a supermarket car park. He has just won the quiz tiebreaker because he knows the number. He is not bitter in the moment, just matter-of-fact.\n",
+  "profile_file": "docs/stories/short-true-scale/voices/profiles/bob-algenib.md"
+ },
+ "settings": {
+  "voice": "Algenib",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

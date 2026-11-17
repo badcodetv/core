@@ -1,207 +1,340 @@
 {
- "sequence": "shorts-priority-lane-r1",
+ "sequence": "shorts-1-priority-lane-r4",
  "title": "Priority Lane Timeline",
- "heading": "BadCode Shorts ▲ Priority Lane, rough cut 1",
- "intro": "All five shots with the picked voices (reporter: Enceladus; minister: Orus, lip-synced). Note anything: a beat, a shot, a line, a sound, or a single frame.",
+ "heading": "BadCode Shorts ▲ Priority Lane, round 4 rough cut",
+ "intro": "Round 4: his SAVE OUR NHS poster cut into beat A, with a matched-pose dissolve from the poster into him in his car (Jack, 2026-11-14). Otherwise round 3: the picked shots, the picked voices (Kore, Algieba, Alnilam, minister Charon), a Suno score (c5d8704d) and Suno sound effects. Note anything: a beat, a shot, a line, a sound, or a single frame.",
  "fps": 24,
- "total": 21.86,
+ "total": 19.4,
  "beats": [
   {
-   "id": "outside",
-   "title": "The ambulance is held",
+   "id": "losing",
+   "title": "A. Losing him",
    "start": 0.0,
-   "dur": 3.0,
-   "see": "The junction: the outrider holds the ambulance at the red light while the motorcade glides through.",
-   "lines": []
-  },
-  {
-   "id": "ambulance",
-   "title": "Inside the ambulance",
-   "start": 3.0,
-   "dur": 2.5,
-   "see": "Inside the ambulance: nobody moves, the light stays red.",
-   "lines": []
-  },
-  {
-   "id": "reporter",
-   "title": "The BadCode reporter",
-   "start": 5.5,
-   "dur": 6.15,
-   "see": "The BadCode reporter, straight to camera, the motorcade behind him.",
+   "dur": 7.9,
+   "see": "Inside the ambulance at full pace; cut out to his SAVE OUR NHS poster at the shelter as they pass, push into it, and his face dissolves into him in the back of his car (same phone pose), then back inside.",
    "lines": [
     {
      "i": 0,
-     "who": "reporter",
-     "name": "Reporter",
-     "t": 5.9,
-     "dur": 5.4,
-     "text": "Traffic is being managed, to keep an important journey moving.",
+     "who": "driver",
+     "name": "Driver",
+     "t": 0.3,
+     "dur": 1.12,
+     "text": "Two minutes out!",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "paramedic1",
+     "name": "Paramedic1",
+     "t": 1.25,
+     "dur": 3.2,
+     "text": "BP 60 over 30! Fucking hurry up, we're gonna lose him!",
+     "by": "claude"
+    },
+    {
+     "i": 2,
+     "who": "paramedic2",
+     "name": "Paramedic2",
+     "t": 4.2,
+     "dur": 2.09,
+     "text": "Sats dropping, he's peri-arrest!",
+     "by": "claude"
+    },
+    {
+     "i": 3,
+     "who": "driver",
+     "name": "Driver",
+     "t": 6.1,
+     "dur": 1.7,
+     "text": "Get the fuck out of the way!",
      "by": "claude"
     }
    ]
   },
   {
-   "id": "minister",
-   "title": "The minister",
-   "start": 11.65,
-   "dur": 3.6999999999999997,
-   "see": "The minister in the back of the car, furious, on the phone (lip-synced).",
+   "id": "held",
+   "title": "B. Held",
+   "start": 7.9,
+   "dur": 2.6,
+   "see": "Through the windscreen: the outrider holds his glove up; the black car glides across.",
+   "lines": [
+    {
+     "i": 0,
+     "who": "paramedic2",
+     "name": "Paramedic2",
+     "t": 8.35,
+     "dur": 1.15,
+     "text": "Why have we stopped?!",
+     "by": "claude"
+    }
+   ]
+  },
+  {
+   "id": "motorcade",
+   "title": "C. The motorcade",
+   "start": 10.5,
+   "dur": 3.3,
+   "see": "The minister in the back of his car, on the phone (lip-synced to Charon).",
    "lines": [
     {
      "i": 0,
      "who": "minister",
      "name": "Minister",
-     "t": 12.01,
-     "dur": 2.75,
+     "t": 10.84,
+     "dur": 2.58,
      "text": "I said raspberry-shaped hors d'oeuvres!",
-     "by": "jack"
+     "by": "claude"
     }
    ]
   },
   {
-   "id": "button",
-   "title": "The button",
-   "start": 15.35,
-   "dur": 6.51,
-   "see": "Back to the reporter as the ambulance finally pulls away.",
+   "id": "flatline",
+   "title": "D. Flatline",
+   "start": 13.8,
+   "dur": 5.6,
+   "see": "Back inside: the line goes flat; he sits back. We push in on the flat line, the screen dies, and the BadCode logo comes up on it (Jack, round 3).",
    "lines": [
     {
      "i": 0,
-     "who": "reporter",
-     "name": "Reporter",
-     "t": 15.75,
-     "dur": 5.11,
-     "text": "A politician blocking the path of an ambulance. Poetic, really...",
-     "by": "jack"
+     "who": "paramedic1",
+     "name": "Paramedic1",
+     "t": 14.04,
+     "dur": 0.76,
+     "text": "Fifty over twen-",
+     "by": "claude"
     }
    ]
   }
  ],
  "video": [
   {
-   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4",
-   "in": 0.5,
-   "start": 0.0,
-   "dur": 3.0,
-   "beat": "outside",
-   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4",
-   "looped": false
-  },
-  {
-   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4",
-   "in": 0.5,
-   "start": 3.0,
-   "dur": 2.5,
-   "beat": "ambulance",
-   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4",
-   "looped": false
-  },
-  {
-   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
    "in": 0.0,
-   "start": 5.5,
-   "dur": 6.15,
-   "beat": "reporter",
-   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4",
+   "start": 0.0,
+   "dur": 1.8,
+   "beat": "losing",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
-   "in": 0.35,
-   "start": 11.65,
-   "dur": 3.6999999999999997,
-   "beat": "minister",
-   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/v1-losing.mp4",
+   "in": 0.0,
+   "start": 1.8,
+   "dur": 1.5,
+   "beat": "losing",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r6-A2-PS6-c.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4",
-   "in": 1.2,
-   "start": 15.35,
-   "dur": 6.51,
-   "beat": "button",
-   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/v2-losing-transition.mp4",
+   "in": 0.0,
+   "start": 3.3,
+   "dur": 1.05,
+   "beat": "losing",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PM7-a.jpg + /mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
+   "in": 1.8,
+   "start": 4.35,
+   "dur": 3.55,
+   "beat": "losing",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-A-LS5-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-B-HD3-b.mp4",
+   "in": 1.5,
+   "start": 7.9,
+   "dur": 2.6,
+   "beat": "held",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-B-HD3-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4",
+   "in": 0.6,
+   "start": 10.5,
+   "dur": 3.3,
+   "beat": "motorcade",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b-charon.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/v6-flatline.mp4",
+   "in": 0.0,
+   "start": 13.8,
+   "dur": 5.6,
+   "beat": "flatline",
+   "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r3-D4-FL4-a.mp4",
    "looped": false
   }
  ],
  "audio": [
   {
    "track": "A1",
-   "name": "vox-reporter",
-   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/vox-reporter.wav"
+   "name": "vox-paramedic1",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/vox-paramedic1.wav"
   },
   {
    "track": "A2",
-   "name": "vox-minister",
-   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/vox-minister.wav"
+   "name": "vox-paramedic2",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/vox-paramedic2.wav"
   },
   {
    "track": "A3",
-   "name": "sfx-world",
-   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/sfx-world.wav"
+   "name": "vox-driver",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/vox-driver.wav"
+  },
+  {
+   "track": "A4",
+   "name": "vox-minister",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/vox-minister.wav"
+  },
+  {
+   "track": "A5",
+   "name": "music-score",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/music-score.wav"
+  },
+  {
+   "track": "A6",
+   "name": "sfx-siren",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/sfx-siren.wav"
+  },
+  {
+   "track": "A7",
+   "name": "sfx-monitor",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/sfx-monitor.wav"
+  },
+  {
+   "track": "A8",
+   "name": "sfx-cars",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/sfx-cars.wav"
+  },
+  {
+   "track": "A9",
+   "name": "sfx-cabin",
+   "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/sfx-cabin.wav"
   }
  ],
  "events": [
   {
-   "stem": "vox-reporter",
-   "t": 5.9,
-   "dur": 5.4,
-   "what": "reporter line 1",
-   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav"
+   "stem": "vox-driver",
+   "t": 0.3,
+   "dur": 1.12,
+   "what": "driver: Two minutes out!",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a3-driver-two-minutes.wav"
+  },
+  {
+   "stem": "vox-paramedic1",
+   "t": 1.25,
+   "dur": 3.2,
+   "what": "paramedic1: BP 60 over 30! Fucking hurry up, we're gonna lose him!",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a1-paramedic1-bp.wav"
+  },
+  {
+   "stem": "vox-paramedic2",
+   "t": 4.2,
+   "dur": 2.09,
+   "what": "paramedic2: Sats dropping, he's peri-arrest!",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a2-paramedic2-sats.wav"
+  },
+  {
+   "stem": "vox-driver",
+   "t": 6.1,
+   "dur": 1.7,
+   "what": "driver: Get the fuck out of the way!",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/a3-driver-two-minutes.wav"
+  },
+  {
+   "stem": "vox-paramedic2",
+   "t": 8.35,
+   "dur": 1.15,
+   "what": "paramedic2: Why have we stopped?!",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/b1-paramedic2-why.wav"
+  },
+  {
+   "stem": "vox-paramedic1",
+   "t": 14.04,
+   "dur": 0.76,
+   "what": "paramedic1: Fifty over twen-",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/voices/d1-paramedic1-fifty.wav"
   },
   {
    "stem": "vox-minister",
-   "t": 12.01,
-   "dur": 2.75,
-   "what": "minister line (lip-synced)",
-   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-minister-dub.wav"
+   "t": 10.84,
+   "dur": 2.58,
+   "what": "minister: I said raspberry-shaped hors d'oeuvres! (lip-synced, through glass)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-minister-charon-dub.wav"
   },
   {
-   "stem": "vox-reporter",
-   "t": 15.75,
-   "dur": 5.11,
-   "what": "reporter line 2 (the button)",
-   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting/rep2-e-enceladus.wav"
-  },
-  {
-   "stem": "sfx-world",
+   "stem": "sfx-cabin",
    "t": 0.0,
+   "dur": 10.5,
+   "what": "cabin (Suno Sounds 88c2320f)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/interior-ambience-of-a-moving-ambulance-at-night-88c2320f.wav"
+  },
+  {
+   "stem": "sfx-siren",
+   "t": 0.0,
+   "dur": 8.05,
+   "what": "siren (Suno Sounds 956b121e)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/6-second-sound-of-a-british-ambulance-electronic-956b121e.wav"
+  },
+  {
+   "stem": "sfx-monitor",
+   "t": 0.0,
+   "dur": 10.5,
+   "what": "monitor (Suno Sounds 0de628b4, one beep laid at a quickening rate)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/monitor-racing-0de628b4.wav"
+  },
+  {
+   "stem": "sfx-cars",
+   "t": 7.8,
+   "dur": 2.0,
+   "what": "stop (Suno Sounds 29374f46)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/2-second-sound-of-a-heavy-van-braking-hard-to-a-29374f46.wav"
+  },
+  {
+   "stem": "sfx-cars",
+   "t": 8.5,
    "dur": 3.0,
-   "what": "outside: clip's own ambience",
-   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-01-OUT1-c.mp4"
+   "what": "passby (Suno Sounds 3cad4a31)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/4-second-sound-of-a-large-quiet-luxury-saloon-ca-3cad4a31.wav"
   },
   {
-   "stem": "sfx-world",
-   "t": 3.0,
-   "dur": 2.5,
-   "what": "ambulance: clip's own ambience",
-   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-02-AMB1-a.mp4"
+   "stem": "sfx-cabin",
+   "t": 13.8,
+   "dur": 3.5,
+   "what": "cabin (Suno Sounds 88c2320f)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/interior-ambience-of-a-moving-ambulance-at-night-88c2320f.wav"
   },
   {
-   "stem": "sfx-world",
-   "t": 5.5,
-   "dur": 6.15,
-   "what": "reporter: clip's own ambience",
-   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-03-cr2A-REP1-a.mp4"
+   "stem": "sfx-monitor",
+   "t": 14.8,
+   "dur": 3.0,
+   "what": "flatline (Suno Sounds cbe45667)",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/5-second-sound-of-a-medical-monitor-flatline-on-cbe45667.wav"
   },
   {
-   "stem": "sfx-world",
-   "t": 11.65,
-   "dur": 3.6999999999999997,
-   "what": "minister: room bed",
+   "stem": "sfx-cabin",
+   "t": 10.5,
+   "dur": 3.3,
+   "what": "minister's car: its own room bed",
    "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/dub/pl-04-bed.wav"
   },
   {
-   "stem": "sfx-world",
-   "t": 15.35,
-   "dur": 6.51,
-   "what": "button: clip's own ambience",
-   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-05-cr2A-REP1-a.mp4"
+   "stem": "music-score",
+   "t": 0.0,
+   "dur": 14.8,
+   "what": "score (Suno r6 c5d8704d), cut dead on the flatline",
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/suno-r6/priority-lane-score-r6-subliminal-pulse-bed-v6-w-c5d8704d.wav"
   }
  ],
  "flags": [
-  "Runs 21.9 s, a little over the 20 s target: the reporter reads slowly (line 1 is 5.3 s). Trim or re-voice brisker if it drags.",
-  "Minister line is the picked take sped x1.26 to fit the mouth; unheard by a human yet.",
-  "No music yet (sound.md has none)."
+  "Runs 19.4 s (14 s was the brief): the three shouted lines need ~6 s even overlapping.",
+  "Score and effects are Suno takes recorded off the page (no downloads); every alternative take is in audio\\suno-r6.",
+  "The minister is filtered as if through glass; say if you want him clean."
  ]
 }

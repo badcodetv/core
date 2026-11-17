@@ -24,7 +24,7 @@ Page: https://claude.ai/artifact/XNEc7Q7fADNmZjpVhRtCz3 — round 1 picked (12, 
 - Runner: `scripts/scene/run-rolling.mts` (NEW, Jack asked for a rolling queue): SLOTS=5 clips in flight, each harvested and replaced the
   moment it finishes; submitted-not-on-disk clips (run.log) count as in flight at start; SEED=1 marks tiles already downloaded.
   Renders took ~2–4 min each once rolling. Clips land as `<media>/video/ca-<key>-<still>.mp4` (match.py names them by first frame).
-- Premiere (project `songs\camping vid\camping vid Copy-test_1.prproj`, open in Premiere 2026): `camping balaclava 1` cloned to
+- Premiere (project `songs\camping vid\camping vid Copy-test.prproj`, open in Premiere 2026): `camping balaclava 1` cloned to
   **`camping song 2`**; A1 = `song 2 maybe (audio).wav` (bin `song 2`, extracted from the .mov so its picture stays off the timeline).
   `camping` and `camping balaclava 1` untouched. Song 2 is NOT the old song shifted (section offsets −2…+7.6 s), so the old picture is
   not on its beat; song 2 measures 176 BPM, first downbeat 0.122 s. Overwrite onto track index 6 creates V7 (tested, probe removed).

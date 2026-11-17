@@ -1,0 +1,13 @@
+{
+  "name": "techno-through-the-wall",
+  "style": "instrumental, 17-second cold minimal techno horror cue, 124 bpm, analog synth lead. 0-6s: a kick drum thudding four-to-the-floor from behind a wall, low-passed and muffled, one sustained frozen pad, faint tape hiss. 6-10s: three short detuned synth stabs, each one opens the filter wider than the last. 10-15s: the wall gives way, the kick comes through dry and full, a cold square-wave arpeggio climbs a minor scale step by step, closed hats tick in. 15s: one deep sub-bass drop, then dead silence. Retro-futuristic, sparse, clinical, menacing, empty-room reverb",
+  "exclude": "vocals, singing, choir, spoken word, guitar, piano, music box, strings, orchestra, brass, metal, rock drums, happy, uplifting, euphoric build, long fade out",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}

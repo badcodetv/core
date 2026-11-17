@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/badcode/ts-r3/batch/01.jpg",
+ "made": "2026-11-16T13:53:02.776Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "prompt": "Vertical 9:16 close photograph looking down at a worn sheet of 1940s graph paper on a wooden desk at night, lit by one small lamp, the corners of the frame falling into deep teal shadow. On the paper, a simple hand-drawn top-down outline of an invented twin-engine bomber with no markings. Its wings and tail are covered in dozens of tiny pencil dots marking bullet holes. The engines and the cockpit are completely empty of dots. A man's hand, cuff of a tweed sleeve visible, is pressing a pencil hard, shading those empty engines and cockpit dark. Faded colour film, soft grain, shallow focus, eraser crumbs on the paper. Thanks.",
+ "source_id": "3d72b038-ed66-45ef-b6f0-dd053209187f"
+}

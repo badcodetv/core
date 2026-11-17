@@ -1,0 +1,70 @@
+{
+ "title": "Envelope Sound Picks",
+ "eyebrow": "BadCode Shorts · The Envelope · sound",
+ "heading": "The Envelope: pick the track",
+ "intro": "One Suno track carries the line, the stings and the music (Kai's rule for shorts). Four genuinely different sounds, two takes each, all about 15 s. Each opens in Suno. Pick one and note what to change; the rough cut is built to your pick.",
+ "sections": [
+  {
+   "h": "Round 1",
+   "lede": "Each idea in a line; the full prompts are in the repo.",
+   "groups": [
+    {
+     "slot": "track-r1",
+     "title": "The track",
+     "line": "The line: \"They're going to print the money and the weapon sales will still happen anyway, everything else is a distraction.\"",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "radio1",
+       "href": "https://suno.com/song/976ac88e-4bf4-45fc-80db-3f2ca6d2a69a",
+       "label": "radio1: Radio crime serial: organ stings + foley, plummy announcer (0:14)",
+       "warn": ""
+      },
+      {
+       "id": "radio2",
+       "href": "https://suno.com/song/0f3bde40-ac0a-4358-ad6d-60238d7327e6",
+       "label": "radio2: Radio crime serial: organ stings + foley, plummy announcer (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "stride1",
+       "href": "https://suno.com/song/e5731a22-a1bd-4a9e-a334-d9f1e8f29a56",
+       "label": "stride1: Stride-piano hustle that stops dead; a smoky cabaret hostess says the line (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "stride2",
+       "href": "https://suno.com/song/5394546a-cfce-43d7-b5e1-394fff3088af",
+       "label": "stride2: Stride-piano hustle that stops dead; a smoky cabaret hostess says the line (0:17)",
+       "warn": ""
+      },
+      {
+       "id": "back1",
+       "href": "https://suno.com/song/a30fe222-19cc-42ab-871a-d1fd033e601a",
+       "label": "back1: A back room: detuned upright behind a wall, a man's low aside (0:15)",
+       "warn": ""
+      },
+      {
+       "id": "back2",
+       "href": "https://suno.com/song/bf6aa9a8-d51a-4a55-ab54-73c38b9a2fa5",
+       "label": "back2: A back room: detuned upright behind a wall, a man's low aside (0:16)",
+       "warn": ""
+      },
+      {
+       "id": "novelty1",
+       "href": "https://suno.com/song/4cbcd605-f7be-4e03-9c30-5f1bf47c5735",
+       "label": "novelty1: Novelty piano flurry, then a violin jab and the line (0:14)",
+       "warn": ""
+      },
+      {
+       "id": "novelty2",
+       "href": "https://suno.com/song/be917e95-0e22-4bcc-984b-317162c7ee9e",
+       "label": "novelty2: Novelty piano flurry, then a violin jab and the line (0:15)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

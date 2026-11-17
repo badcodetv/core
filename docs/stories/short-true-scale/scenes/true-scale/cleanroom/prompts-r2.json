@@ -1,0 +1,121 @@
+{
+ "research": [
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write a scene description, not keywords; name camera, light and medium",
+  "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — camera vocabulary (overhead, low-angle, depth of field) steers framing; keep in-image text short",
+  "https://invideo.io/blog/nano-banana-2-prompt-guide/ — short specific briefs beat long vague ones; state aspect and the one focal point",
+  "https://trinityhenleazeurc.org.uk/bradbury/spec-church.php — British church halls: ceiling-mounted fluorescent tubes, wooden floors, tall windows",
+  "https://www.trentfurniture.co.uk/news/blog/40 — church halls run on stacking chairs and folding tables, mismatched over decades",
+  "https://giggster.com/uk/listing/church-hall-1 — UK church hall: wood floor with painted badminton court lines, a common detail",
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — official guide: write in full sentences as a scene, subject + setting + light + camera, not keyword lists",
+  "https://www.atlabs.ai/de/blog/nano-banana-2-prompting-guide — naming a film stock / camera translates into concrete grain, halation and colour; avoid '8k HDR' hype stacks",
+  "https://blog.picassoia.com/nano-banana-2-photorealism-prompts-that-work-every-time — a short realism list (subtle film grain, 35mm look) beats piling on adjectives; Cinestill 800T suits night scenes lit by artificial light",
+  "https://amp.majorcadailybulletin.com/holiday/hotels/2025/09/09/136299/crazy-spain-sunbed-bedlam-mallorca-hotel.html — Mallorca package hotels: towels laid on loungers before dawn, pool area sometimes locked until 8am",
+  "https://inspain.news/?p=27712 — Costa del Sol: guests queue at the pool gate from 6:30am though it opens at nine; the real look is white plastic loungers in tight rows on pale tiles beside low concrete hotel blocks",
+  "https://www.gbnews.com/news/world/spain-news-british-tourists-sunbed-wars-tenerife-hotel — Tenerife: the 'sunbed wars' are a national British joke, which is what this idea borrows",
+  "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — keep in-image text to a few words per element; long sentences garble",
+  "https://aimlapi.com/blog/banana-prompt-guid — put the exact wanted text in quotation marks and describe where it sits on the page",
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — write a scene description in full sentences (subject, setting, light, camera), not keyword lists",
+  "https://romanroad.newham.sch.uk/assets/files/Marking-andfeedback2024.pdf — many UK primaries mark in green pen, not red",
+  "https://mayfield12.lancsngfl.ac.uk/serve_file/8386877 — some still mark maths in red; marking colour varies by school",
+  "https://www.sambuz.com/doc/southcote-primary-school-marking-feedback-and-pdf-document-531855 — UK maths books are squared paper, one digit per square",
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write in natural sentences, describe subject, setting, light and camera like a brief to a photographer",
+  "https://fliki.ai/blog/nano-banana-2-prompting-guide — Nano Banana 2 responds to named film stocks and lighting; being vague about environment and light is the commonest failure",
+  "https://blog.picassoia.com/nano-banana-2-photorealism-prompts-that-work-every-time — 'Cinestill 800T, tungsten halation' for night interiors; ask for grain explicitly ('pronounced grain') rather than 'cinematic'",
+  "https://fal.ai/learn/tools/how-to-use-nano-banana-2 — the model infers era cues (grain, desaturation) from a short period phrase; keep text in quotes and short so it renders exactly",
+  "https://freshwayscc.co.uk/blog/wholesale-tinned-food-bulk-buying-guide/ — UK independent grocers buy ambient stock by the case from cash and carry; the back room is plain brown outer cases, not branded displays",
+  "https://palletower.com/industry/retail-ecommerce/ — stock in back rooms is grouped by category and secured in clear stretch wrap on pallets, which reads instantly as 'delivered and untouched'",
+  "https://www.henleystandard.co.uk/news/environment/703665/concerns-over-allotment-plots-left-neglected-despite-long-waiting-lists.html — Feb 2026: in Maidenhead several plots at one 55-plot site were left overgrown while the council said there were 'no vacant plots'. The real-world shape of this metaphor.",
+  "https://www.gardensillustrated.com/features/allotment-waiting-lists — waits of 5-10 years are common; overgrown plots are a well-known sore point. Real allotments have chain-link or palisade gates, padlocks, laminated notices, timber sheds, water troughs, old carpet laid over beds.",
+  "https://www.rochdale.gov.uk/sports-leisure/allotments/2 — a council quoting a 6-7 year wait; supports the 'years on the list' letter.",
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own Nano Banana guide (covers Nano Banana 2): describe the scene in plain sentences, subject then setting then light then camera.",
+  "https://fliki.ai/blog/nano-banana-2-prompting-guide — naming a film stock (e.g. CineStill 800T, halation) gives night grain and colour cast better than stacked quality words.",
+  "https://z-image-astroblog.pages.dev/blog/nano-banana-image-prompting-the-5-layer-framework — short specific texture terms beat '8k ultra HDR' noise; keep written text short and quoted exactly.",
+  "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana — Google's own guide: write it as a brief (subject, setting, camera, light, style), not a list of keywords",
+  "https://runware.ai/docs/models/google-nano-banana-2/guides/prompting — name the camera angle and depth of field; models treat text as texture, so keep any written words short and few",
+  "https://fliki.ai/blog/nano-banana-2-prompting-guide — NB2 reads a prompt as instructions to satisfy, so state counts and positions plainly (e.g. 'exactly four bags')",
+  "https://www.cardfactory.co.uk/blog/party-inspiration/the-best-kids-party-bag-ideas/ — UK party bags are handed out at the END of the party as each guest leaves; small paper bags with handles, stickers, bubbles, a slice of cake in a napkin",
+  "https://www.mumsnet.com/articles/kids-party-bag-ideas — the UK ritual: one bag per child, name on it, collected at the door on the way out"
+ ],
+ "notes": {
+  "MC": "Honest ratio: the counted ring is 12 chairs, 7 seated children, 1 child standing, 4 spare chairs claimed by coats, a handbag and RESERVED slips: four spare chairs for the one child out, matching about 4 homes nobody lives in per homeless household (counting second homes). No number written in either image; the only text is RESERVED. Children are always from behind or seen from directly above (party hats, crowns of heads) to stay clear of refusals. Keeps Jack's night/fluorescent-teal/cheap-film look: the hall at night, one flickering tube, black windows.",
+  "ST": "Kept Jack's look: the only light is the pool's own underwater lamps, which give the fluorescent teal for free, plus one sodium lamp for contrast; cheap night colour film and grain. Honesty to the numbers: rather than one lone family facing an endless deck (which would overstate it), the reveal shows a few families standing along the deck with roughly four towelled loungers for every family, the about-4-to-1 ratio counting second homes. If the director wants the 2-to-1 (long-term empty only) version, change 'about four' to 'about two' in the reveal. Children appear only as small figures from behind, far off, with bags; no faces, no brands on towels or bags, no numbers in either image.",
+  "HW": "Kept the red tick on purpose: green is common in UK schools now, but red is the tick everyone recognises in one look and it is the only warm colour against the teal, so the eye lands on it. Switch to green if Jack wants it truer to a current classroom. The one-number rule: the setup shows no digits at all (four drawn houses, one drawn family, the question written in words), so the reveal's '1' is the only number in either image. Question shortened to 'How many families have no home?' so the model can render it. No child is shown, only their things (pencil, rubber, crayons, a juice beaker). Look: night kitchen under a cheap fluorescent tube, teal cast, grain, as the reference; no break from it.",
+  "SO": "Look kept: night, cold fluorescent teal, cheap colour film grain, the corner-shop register of the reference doorway photo. Honesty to the ratio: the reveal asks for 'enough to refill that shelf about four times over' (the 4-to-1 counting second homes), never 'endless'; if a 2-to-1 version is wanted, change 'about four times over' to 'at least twice over'. No numbers drawn in either image; the only text is the handwritten card 'SORRY, SOLD OUT'. Boxes are plain unbranded brown cases with no labels, to avoid fake brands. The one person is seen from behind only. The stockroom is clearly the same shop (same teal tubes) so the cut reads as one place. The setup frames the doorway at the far end of the aisle so the camera drift to it in animation is natural.",
+  "AL": "Setup and reveal are the same gate from the same spot so the cut reads as a head-turn: first the person and the letter, then what is behind the fence. Honesty to the ratio: the reveal shows a handful of tended plots (a few small lit sheds) against roughly twice as many gone wild, not a whole field of dereliction, so it reads 'more than enough' without exaggerating. Only text: the letter line 'You are on our waiting list' (no number in either image). The look holds Jack's night teal: one cold fluorescent lamp on a pole, cheap colour film grain, lonely. Slight break: it is an edge-of-town outdoor space rather than a shopfront, so the teal comes from a single security lamp and the sky stays deep blue-black. No faces; the figure is seen from behind.",
+  "PB": "Honesty to the numbers: the reveal shows exactly FOUR untouched named party bags left on the table for the ONE child leaving with nothing, which is the 4-to-1 ratio counting second homes (571,079 homes that are nobody's main home vs 134,210 homeless households); the narrator's 'already had one' maps the extra bags to second homes and empties. The setup establishes the hall and the crowded table (the plenty); the reveal is the end of the night. No numbers written in either image, so nothing can misread. The child is only ever a small figure from behind in a coat (refusal risk with children), no faces; names on the bags are invented first names, no brands. Look follows Jack's reference: night, cheap colour film, grain, cold fluorescent teal, slightly eerie; the party colours (balloons, bunting) are kept but drained under the tubes, which helps the 'party's over' feeling. The bags carry no handwritten text in the reveal beyond a name each, so the model has little lettering to garble."
+ },
+ "stills": [
+  {
+   "beat": "musical-chairs-backwards",
+   "id": "MC2-a",
+   "look": "setup: low wide from behind the children, the game in motion",
+   "prompt": "Vertical 9:16 photograph, shot on cheap expired colour film at night: a bare British parish hall, worn wooden floor with faded painted badminton lines, tall black windows. A ring of mismatched stacking chairs (orange plastic, old wooden, one folding metal) stands in the middle of the floor. Small children in paper party hats circle the ring mid-step, seen only from behind, slightly blurred with motion. On a trestle table at the edge, a cassette player with its lid open and a paper plate of half-eaten sandwiches. A single fluorescent tube overhead throws a cold teal light; the hall corners fall into darkness. Heavy grain, lonely, faintly eerie. Low camera at a child's hip height. Thanks."
+  },
+  {
+   "beat": "musical-chairs-backwards",
+   "id": "MC2-b",
+   "look": "reveal: straight top-down on the ring, the music has stopped",
+   "prompt": "Vertical 9:16 photograph looking straight down from the ceiling of a British church hall at night, cheap colour film, heavy grain, cold fluorescent teal light. A ring of exactly twelve mismatched stacking chairs on a worn wooden floor. Seven small children in paper party hats sit on seven chairs, seen only as the tops of their heads. Four chairs are empty but claimed: a coat draped over one, a handbag on another, and folded paper cards reading RESERVED on the last two. In the very centre of the ring one small child in a party hat stands alone, seen from above, arms by their sides. Long shadows, black edges, quiet and absurd. Thanks."
+  },
+  {
+   "beat": "sunbed-towels-at-dawn",
+   "id": "ST2-a",
+   "look": "setup: low wide, pool at 5am, every lounger towelled, nobody there",
+   "prompt": "A vertical photograph taken just before dawn at a cheap package hotel pool on the Spanish coast. The camera sits low at the edge of the water, looking along the pool deck. The underwater lights make the pool glow a cold fluorescent teal, and that glow is the only light, washing the pale wet tiles. Tight rows of white plastic sunloungers line the deck, and every single one has a plain beach towel spread neatly flat across it, corners squared. Nobody is anywhere. Behind them, a dark concrete hotel block with unlit balconies. Shot on Cinestill 800T, heavy grain, slight halation, lonely and quietly eerie. Thanks."
+  },
+  {
+   "beat": "sunbed-towels-at-dawn",
+   "id": "ST2-b",
+   "look": "reveal: high angle, rows of claimed empty loungers, families standing with bags",
+   "prompt": "A vertical photograph from a hotel balcony high above a package hotel pool before dawn, looking down the length of the deck. The pool glows cold fluorescent teal from its underwater lights. Long rows of white plastic sunloungers fill the deck, every one empty, every one claimed with a towel laid flat. Along the far edge, a few small families stand on the wet tiles, seen from behind and far off, holding holdalls and suitcases, with nowhere to sit: about four empty towelled loungers for every family. One orange sodium lamp by the gate. Cheap night colour film, coarse grain, still and sad, a little absurd. Thanks."
+  },
+  {
+   "beat": "homework-marked-correct",
+   "id": "HW2-a",
+   "look": "setup: overhead night shot of a child's maths homework on a worn kitchen table, teal fluorescent cast, film grain",
+   "prompt": "Vertical 9:16 photograph shot straight down onto a worn Formica kitchen table at night, lit only by a cheap fluorescent tube that turns everything a cold teal, with grainy, slightly underexposed colour film texture. An open primary-school maths exercise book with squared paper fills the frame. At the top, in a child's careful pencil handwriting: \"How many families have no home?\" Below it, a wax-crayon drawing: four small wonky houses in a row, each with a door and a chimney, and beside them one stick-figure family holding hands. An empty box drawn in pencil sits at the bottom of the page. A chewed pencil, a pink rubber, loose crayons and a plastic juice beaker lie at the edges. No digits anywhere. Quiet, lonely, a little eerie. Thanks."
+  },
+  {
+   "beat": "homework-marked-correct",
+   "id": "HW2-b",
+   "look": "reveal: close-up of the answer box, a pencilled '1' and a bold red tick, same teal night light",
+   "prompt": "Vertical 9:16 close-up photograph of a squared-paper page in a primary-school maths exercise book on a kitchen table at night, under a cold teal fluorescent tube, grainy cheap colour film, shallow focus. Sharp in the centre: a small pencil answer box containing one large, slightly wobbly child's handwritten number \"1\". Right beside it, a big confident teacher's tick in bright red pen, the only warm colour in the picture, ink slightly bled into the paper. At the soft edge of frame, out of focus, the corner of a crayon drawing of little houses. No other numbers or words in focus. Flat, matter-of-fact, quietly wrong. Thanks."
+  },
+  {
+   "beat": "sold-out-stockroom",
+   "id": "SO2-a",
+   "look": "setup: lonely night corner-shop aisle, empty shelf, handwritten SORRY, SOLD OUT card, figure from behind, teal strip lights, film grain",
+   "prompt": "Vertical 9:16 photograph down the narrow aisle of a small British corner shop late at night. Cold fluorescent tubes wash everything a sickly teal; the rest of the shop is crammed with cheap snacks and tins, but one shelf at eye level is completely bare, with a small handwritten card taped to its edge reading \"SORRY, SOLD OUT\" in biro capitals. A lone shopper in a worn parka stands in front of it, seen only from behind, shoulders slightly dropped. At the far end of the aisle, a plain back-room door stands a few inches ajar, dark beyond. Shot on Cinestill 800T, pronounced grain, slight halation on the tubes, cheap compact flash off, lonely and quietly eerie. Thanks."
+  },
+  {
+   "beat": "sold-out-stockroom",
+   "id": "SO2-b",
+   "look": "reveal: through the propped stockroom door, plain shrink-wrapped cases stacked floor to ceiling under one bare teal tube, untouched",
+   "prompt": "Vertical 9:16 photograph through the half-open back door of the same small British corner shop at night, looking into its cramped stockroom. A single bare fluorescent tube throws hard cold teal light down onto plain brown cardboard cases, unlabelled, stacked floor to ceiling on two pallets and still sealed in clear shrink-wrap, the plastic catching the light. Enough to refill the empty shelf out front about four times over, neat and untouched, a dusty delivery note pinned to the wrap. Foreground: the edge of the door and the dim shop aisle. No people. Shot on Cinestill 800T, pronounced grain, slight halation, deep shadows in the corners, quiet and accusing. Thanks."
+  },
+  {
+   "beat": "allotment-waiting-list",
+   "id": "AL2-a",
+   "look": "setup: from behind, a lone figure at a padlocked allotment gate at night, holding the council letter, under one cold teal security lamp",
+   "prompt": "Vertical 9:16 night photograph shot on cheap colour film, visible grain, slight halation. A lone adult in a worn parka, seen from behind, stands at a padlocked chain-link gate to a British council allotment site at the edge of a housing estate. In one hand, lowered at their side and readable to us, a folded council letter whose top line reads \"You are on our waiting list\". A heavy padlock and rusted chain loop the gate. Beyond it, dark shapes of sheds and bean poles. One fluorescent security lamp on a pole casts a cold teal light over the wet path; the sky is deep blue-black. Quiet, lonely, faintly eerie. No other people. Thanks."
+  },
+  {
+   "beat": "allotment-waiting-list",
+   "id": "AL2-b",
+   "look": "reveal: over the fence, a few tended plots and twice as many gone to brambles, rotting sheds and an empty deckchair, lit cold teal",
+   "prompt": "Vertical 9:16 night photograph on cheap colour film, grain and soft halation, looking over a chain-link fence down a long British allotment site. Near the fence, a few neat plots with tidy rows and a small shed with a lit window. Beyond them, plot after plot left to ruin, about twice as many: brambles taller than a person, nettles, a timber shed collapsed inward, a greenhouse with smashed panes, old carpet rotting over a bed, a faded striped deckchair sitting alone in the weeds. A single fluorescent lamp throws cold teal light across it all; the sky is deep blue-black. Clearly plenty of empty ground. No people. Thanks."
+  },
+  {
+   "beat": "party-bags-for-no-shows",
+   "id": "PB2-a",
+   "look": "setup: a crowded table of named party bags in an empty church hall at night, teal tubes, colour-film grain",
+   "prompt": "Vertical 9:16 photograph, shot on cheap colour film with visible grain, at night inside an empty British church hall after a children's birthday party. A long folding trestle table with a paper tablecloth fills the frame, lined end to end with small identical paper party bags with handles, each with a different child's first name handwritten in felt tip. Cold fluorescent teal light from buzzing ceiling tubes, deep shadows at the edges, a sagging bunch of helium balloons and paper bunting drained of colour behind. Paper plates, a half-eaten cake, a stacked pile of plastic chairs. Eye-level, 35mm, slightly off-centre, lonely and faintly eerie, no people. Thanks."
+  },
+  {
+   "beat": "party-bags-for-no-shows",
+   "id": "PB2-b",
+   "look": "reveal: four untouched named bags left on the table, one small coated figure leaving empty-handed through the hall door",
+   "prompt": "Vertical 9:16 photograph on grainy cheap colour film, night, the same British church hall now almost empty. Low wide view from the far end: on a long trestle table under cold flickering teal fluorescent tubes sit exactly four untouched paper party bags, each with a different name handwritten on it, neatly lined up. In the foreground near the open double doors, a small child seen only from behind, in a zipped winter coat and woolly hat, hands empty at their sides, walking out into the dark car park. Deflated balloons on the floor, folded chairs stacked against the wall. Quiet, cold, slightly eerie, the bags in sharp focus. Thanks."
+  }
+ ]
+}

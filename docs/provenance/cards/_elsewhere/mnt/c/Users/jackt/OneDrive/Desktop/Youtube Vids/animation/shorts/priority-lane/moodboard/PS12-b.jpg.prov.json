@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS12-b.jpg",
+ "made": "2026-11-17T12:38:02.927Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16, a gritty 35 mm film still at night in heavy rain on an ordinary UK city road, coarse grain, faint halation round every light. Point of view of the driver of a tall box-bodied UK ambulance, seated high on the right of the cab, the vehicle moving straight along its left-hand lane, the camera turned to look directly out of the right-hand door window at a right angle to travel. The window is wound halfway down: the upper half is seen through rain-streaked glass with running droplets, the lower half is open air with rain slanting in. Grey door trim and a black window seal frame the shot, a grab handle at the top corner, the large wing mirror at the left, forward edge holding a smeared blue reflection. Beyond the oncoming lane, where a car's headlights smear into a long white-and-red streak, a roadside advertising panel stands on the far pavement parallel to the kerb and square-on, filling a big part of the window, showing the poster from the reference image, reproduced exactly and held in sharp focus. Light sources: the panel's even white backlight, a sodium-orange lamp post behind it, the passing car's headlights, and the ambulance's blue roof strobe pulsing on the wet tarmac and the glass. Near road blurred with motion, poster sharp, cold teal shadows. No readable text other than the poster. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a788a982-af59-42f9-976f-d06b8b2b3817"
+}
