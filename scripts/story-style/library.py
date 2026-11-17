@@ -5,8 +5,8 @@ There is no house style (docs/stories/STYLE.md). The library is how a new story 
 a wide, honest menu, one file per style, each saying what it is good for AND what it would
 undermine. It is not a default and nothing else reads it (scripts/style-lint.py checks).
 
-    python3 scripts/story-style/library.py build <research.json>   write docs/style-library/{look,sound}/*.md
-    python3 scripts/story-style/library.py index                    rebuild docs/style-library/README.md
+    python3 scripts/story-style/library.py build <research.json>   write docs/library/{look,sound}/*.md
+    python3 scripts/story-style/library.py index                    rebuild docs/library/README.md
     python3 scripts/story-style/library.py apply-check <check.json>  fold a web check into the entries
 
 research.json is a list of families: {kind: visual|music, family, family_note, styles:[...], left_out}
@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-LIB = ROOT / "docs" / "style-library"
+LIB = ROOT / "docs" / "library"
 KIND_DIR = {"visual": "look", "music": "sound"}
 
 
@@ -187,18 +187,21 @@ def apply_check(path, date="2026-10-28"):
     print("checked:", ", ".join(f"{k} {v}" for k, v in sorted(counts.items())))
 
 
-HEADER = """# The style library
+HEADER = """# The library
 
-> **Read only by the `story-style` interview** (Kai, 2026-10-28). Not a house style, not a
-> default, not a shortlist. It is a wide menu so a new story can find a look and a sound of its
-> own. No other skill, CLAUDE.md or memory may point here: `scripts/style-lint.py` fails if one does.
+> **The tool shed** (Kai and Jack, 2026-11-17 context reset). Looks, sounds and tricks that might serve
+> more than one story. **Nothing here applies to any story until that story copies it into its own
+> `badcode.md`.** Opened only when a story is being set up or restyled (`story-style`, `new-story`,
+> `new-short`): Claude proposes which pieces to take in, Jack or Kai picks, and the picked piece is
+> **copied** (adapted) into the story. Editing an entry here never changes a story that already took it.
 
-**How it is used.** The interview starts from the story (what it argues, who it is for, how the end
-should feel), and only then opens this index. It proposes options from **at least three different
-families**, **at least one off the library** (invented for this story), and avoids a style another
-story already uses (the *Used by* column) unless asked. The picked style is **copied** into the
-story's `look.md` / `sound.md` (the parts it needs, adapted) and named on its `**Library:**` line.
-Editing an entry here never changes a story that has already picked it.
+- `look/` — 80 visual styles · `sound/` — 79 music styles (indexed below)
+- [`tricks/`](./tricks/README.md) — methods that work for any story (reference photos, clean room, the balaclava)
+
+**How a look or sound is picked.** The interview starts from the story (what it argues, who it is for,
+how the end should feel), and only then opens this index. It proposes options from **at least three
+different families**, **at least one off the library** (invented for this story), and avoids a style
+another story already uses (the *Used by* column) unless asked.
 
 **Where it came from.** 20 research agents, 2026-10-28, one per family (10 visual, 10 music), each
 told to say what a style undermines as well as what it serves. They wrote from model knowledge; a

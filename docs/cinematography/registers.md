@@ -1,4 +1,6 @@
-# Registers — the monumental, the documentary, and the one we did not choose
+# Registers — the monumental, the documentary, and others a story may choose
+
+> A menu, not a default: no register is BadCode's. A story's register is in its own `badcode.md`.
 
 A register is a set of learned conventions an audience reads as "this kind of thing". It is not
 a natural law: a viewer reads noir or horror because they have seen the codes before, not because

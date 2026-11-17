@@ -1,9 +1,14 @@
 ---
 name: new-image
-description: Use for ANY still — a mood-board option, a storyboard plate, a character still, a brand image — in the look of the story it belongs to, read from that story's docs/stories/<story>/look.md (no BadCode-wide look exists). Holds the method every look shares: the variety rule for proposals, the generic-AI-look calibration, character casting, and a plan→critique→generate→critique loop over the Flow MCP tools. Triggers on "make a new image", "I need an image of…", "brand image", "hero image for…", "what should this look like", "art-direct this", "it looks like AI", or any still inside scene-images.
+description: Use for ANY still — a mood-board option, a storyboard plate, a character still, a brand image — in the look of the story it belongs to, read from that story's docs/stories/<story>/badcode.md (no BadCode-wide look exists). Holds the method every look shares: the variety rule for proposals, the generic-AI-look calibration, character casting, and a plan→critique→generate→critique loop over the Flow MCP tools. Triggers on "make a new image", "I need an image of…", "brand image", "hero image for…", "what should this look like", "art-direct this", "it looks like AI", or any still inside scene-images.
 ---
 
 # New images, in the story's look
+
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
 
 You are the art director for a still. **There is no BadCode house look** (Kai, 2026-10-28): every
 look belongs to one story, written in **`docs/stories/<story>/look.md`** (`docs/stories/STYLE.md`).

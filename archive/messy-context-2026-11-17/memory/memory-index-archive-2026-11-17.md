@@ -1,0 +1,132 @@
+---
+name: memory-index-archive-2026-11-17
+description: Full copy of MEMORY.md as it stood on 2026-11-17 before it was trimmed (125 lines); kept so nothing is lost
+metadata:
+  type: reference
+---
+
+- [No house style: style lives in the story](no-house-style-story-files.md) — Kai 2026-10-28: looks and sounds go only in docs/stories/<story>/look.md and sound.md, never memory; run scripts/style-lint.py after memory edits
+- [Rules are a loose guide](rules-are-a-loose-guide.md) — Jack 2026-10-29: creative rules, research and even LOCKED parts are a starting point; experiment, say what you changed; run the same-prompt check fresh.py
+- [Repo records intent, Flow holds assets](repo-records-intent-flow-holds-assets.md) — repo silence about a Flow Character means we don't know, not that it doesn't exist.
+- [Flow engine research goes in docs/google-flow](flow-engine-research-goes-in-docs-google-flow.md) — always write engine findings there, tiered and dated, never leave them in a story file.
+- [Flow: Kai by hand, Jack wants it run for him](flow-hand-driven-not-automated.md) — Kai: copy-paste prompts; Jack (2026-10-21): run Flow yourself, pick the best take, put it in.
+- [Every Flow prompt ends with "Thanks."](every-flow-prompt-ends-with-thanks.md) — Kai's convention for images and videos; the last block of a two-block paste carries it.
+- [Karen: resume at the shot list](karen-resume-at-shot-list.md) — the film's cut order and the next-session TODO live in `docs/stories/karen/shot-list.md`.
+- [Always a new prompt, never an image edit](always-new-prompt-never-edit-an-image.md) — regeneration works, editing an existing generation does not; hand over the whole prompt, never splice-in blocks.
+- [Always Omni Flash, never Veo 3.1](use-omni-flash-not-veo.md) — standing preference for all Flow video; two Veo-only capabilities to flag rather than switch silently.
+- [Variants by reference image, not Flow Characters](variants-by-reference-not-flow-characters.md) — younger/older/wrecked is a reference plus prose; a missing Character is not a blocker.
+- [The wank tank is a black BMW X8](wank-tank-is-a-black-bmw-x8.md) — Camping: name the marque in prompts; its plate reads `BAD C0DE` (2026-09-17), every other plate stays unreadable.
+- [One prompt at a time; stills first](one-shot-at-a-time-still-then-video.md) — never a batch; since 2026-09-28 (Camping mv v2) all stills first, then the videos.
+- [Never dialogue in Flow videos](never-dialogue-in-flow-videos.md) — sound effects yes, speech never; Jack 2026-11-10: "never do flow speech", talking = AI Studio voice + lip-sync-dub
+- [ALWAYS: shot-craft + docs/cinematography/ before any prompt](always-run-shot-craft-then-flow-prompt.md) — mandatory first step for every image/video prompt including rewrites, then flow-prompt for phrasing; the visible-cost gate only where the story's look.md makes it one.
+- [Never describe a referenced character](never-describe-a-referenced-character.md) — Character or reference attached means no appearance description at all, not even a condition change (5 years on, wrecked); only position, action and expression.
+- [Paste blocks are never followed by prose](paste-blocks-never-followed-by-prose.md) — all commentary goes ABOVE a copy-paste block, never after it.
+- [Never censor swear words](never-censor-swear-words.md) — write profanity in full in docs, scripts and chat; if an engine filters it, swap the word, never asterisk it.
+- [Mark unverified claims as unverified](mark-unverified-claims-as-unverified.md) — never write an inference as a finding; prefer a free check over a confident guess.
+- [Label every paste block with its destination field](label-paste-blocks-with-destination-field.md) — name the exact box; Settings + Attach lines sit directly above the label, never in the prompt.
+- [Narration: whole blocks, never trim in Premiere](narration-whole-blocks-never-trim-in-premiere.md) — one WAV per speaker turn cut at word boundaries, placed whole; never split at pauses.
+- [Suno account is Kai's Google login](suno-account-is-kais-google-login.md) — kaiyadavenport@gmail.com via Continue with Google; Suno is single-session, and a wrong-account `?wid=` fails silently.
+- [Camping: grade, moves, cuts DONE, awaiting review](camping-next-three-premiere-jobs.md) — first pass 2026-09-14; undo recipe + full-revert backup in assembly.md.
+- [Omni video defaults: 720p x2 8s, no 360p](omni-video-default-settings.md) — 8s is narration cover, so write two beats; never suggest a 360p draft.
+- [Suno: generate right after the prompt](suno-generate-after-prompt.md) — once a prompt round is loaded, run it without asking; report links + credits.
+- [Camping song re-cut: resume point](camping-song-recut-resume.md) — EXPLORING, resume at r93 (unheard); the sound and Jack's standing rules are in docs/stories/camping/sound.md.
+- [Suno v6: always set Duration, Auto runs long](suno-v6-set-duration-auto-runs-long.md) — a set target is obeyed to ~1s (12/12); Auto gave 4:55 for the same lyrics.
+- [Listening on Jack's machine](listening-setup-jacks-machine.md) — set LISTEN_MEDIA_ROOT; GEMINI key in .env since 2026-09-24, reconnect listen MCP to load it; if 3.5-flash 429s use gemini-3-flash-preview.
+- [Never write uniformity words in a Suno prompt](never-write-uniformity-words.md) — "never stops / throughout / from here to the end" is an instruction to be flat.
+- [Describe the song, not the box](describe-the-song-not-the-box.md) — a liked take's own prompt is not a description of it; measure the output and prompt from that.
+- [Shorts: Karen and Camping only](shorts-karen-camping-only.md) — HISTORICAL: superseded by the shorts list docs/marketing/badcode-shorts.md (2026-11-10 on)
+- [Audit the inherited excludes every round](audit-inherited-excludes.md) — a carried-over ban can be banning the exact thing being asked for.
+- [A ban loses to a positive instruction](a-ban-loses-to-a-positive-instruction.md) — a banned thing still arrives if another box asks for it; delete the summoning words in all three boxes first.
+- [Short boxes keep the drift space](short-boxes-keep-the-drift-space.md) — when a liked take came from drift, box bloat kills the resemblance; fix by deleting.
+- [Rap pacing: Camping and Bank Robbery only](rap-pacing-camping-and-bank-robbery.md) — Jack's 2026-09-24 ruling, scoped to two stories; the rule is in each one's sound.md.
+- [“Forget all that” = isolate, not cancel](forget-all-that-means-isolate-not-cancel.md) — Jack means keep old prompts out of the new one; still do the earlier brief.
+- [Camping r86 gnome-step prompts saved](camping-r86-gnome-step-saved.md) — Jack asked to keep them; boxes in docs/stories/camping/songs/camping-r86-gnome-step.md.
+- [Camping pinned songs](camping-pinned-songs.md) — Jack's pinned takes = favourites; 7 on 2026-09-27, prompts in camping-pinned.md; how to read the strip.
+- [Camping mv v2: first cut BUILT](camping-mv2-stills-resume.md) — 27 Omni clips + Premiere cut (2026-09-28); superseded as latest state by the re-cut and breath cut; rebuild kit in scripts/camping-mv2/.
+- [Camping mv2 song is now 3a433539](camping-mv2-song-is-3a433539.md) — the r77 take as song.wav (2026-09-29); the first cut was timed to the old 198db8b9, so re-align.
+- [Camping mv2 re-cut brief](camping-mv2-recut-brief.md) — Jack 2026-09-29: the new story is in music-video-v2-recut.md; the frame rules in camping/look.md Per part.
+- [Camping mv2 world cast](camping-mv2-world-cast.md) — 5 Flow Characters in Jack's project b93409d1, 2026-09-29.
+- [Flow retry = refresh page + retry in 10s](flow-unusual-activity-refresh-retry.md) — on "unusual activity" AND an unfilled start-frame slot; since 2026-11-09 detect the card in 2 s (image tools wait 90 s otherwise), reload, retry the same prompt at once
+- [Camping mv2 breathing-room cut BUILT](camping-mv2-breath-cut.md) — `music video breath` (2026-09-30); resume from music-video-v2-recut.md.
+- [MMT: the soldier through the ages](mmt-soldier-through-the-ages.md) — ruled 2026-10-01 12:18: shake/starve/plant, narrator interviews a WW2 soldier at each age; emperor shelved; check Drive for a later same-day meeting.
+- [Style tests stay in Flow, prompts in repo](style-tests-stay-in-flow-prompts-in-repo.md) — never save test stills to a Desktop folder; Jack reviews in Flow; look rulings go in the story's look.md.
+- [Always Nano Banana 2, it is free](always-nano-banana-2-it-is-free.md) — never Pro for stills; the tool defaults to Pro so always pass the model (Jack 2026-10-01).
+- [Money For Something: MMT as a game show](money-for-something-game-show.md) — Jack 2026-10-02, working title; WW1 panel (German soldier, English soldier, politician); file in docs/stories/magic-money-tree/; unruled, Kai has not seen it.
+- [Money For Something: the host v1](money-for-something-host.md) — Jack chose the dishevelled comic 2026-10-02 (Flow Character 65e090db); superseded by host v2 on 2026-10-25.
+- [Money For Something: cast and voices](money-for-something-cast-and-voices.md) — Jack 2026-10-03: the MFS narrator split from the on-camera cast; Flow Characters with custom voices; Flow dialogue allowed for this show only.
+- [Money For Something: output folders](money-for-something-output-folders.md) — videos go to Jack's Desktop `Youtube Vids\animation\money for something\videos`, narrator clips to `\narrator`; the images folder was withdrawn, images stay in Flow (2026-10-03).
+- [Money For Something: narrator voice](money-for-something-narrator-voice.md) — Jack's pick 2026-10-03; the recipe is in magic-money-tree/sound.md; render it exactly.
+- [Money For Something: resume file](money-for-something-resume.md) — pick up at docs/stories/magic-money-tree/money-for-something-RESUME.md (2026-10-03); Jack also calls it "money for nothing".
+- [Bank Robbery: the look lives in look.md](bank-robbery-look.md) — every look rule (film, short, both MV cuts) is in docs/stories/bank-robbery/look.md; Kai has not ruled on it.
+- [Bank Robbery output folder](bank-robbery-output-folder.md) — Jack's Desktop `Youtube Vids\animation\bank robbery` with `images` and `vids`; optional.
+- [Bank Robbery cast: twelve Flow Characters](bank-robbery-cast-flow-characters.md) — portrait, body and custom voice each, in project 63d22c4b (2026-10-06); ids in cast-portraits.md; picks are mine, voices unheard.
+- [Bank Robbery: resume point](bank-robbery-resume.md) — short cut 7g built 2026-10-21, unwatched; long film cut 10 approved; ledgers short-shots.md and assembly.md.
+- [Bank Robbery: Jack's notes on cuts 3 and 4](bank-robbery-jack-notes-on-cut3.md) — where his picture and script notes now live; ask before dropping a shot he liked; the kebab ending stays.
+- [Bank Robbery script register](bank-robbery-register-brutal-and-silly.md) — Jack 2026-10-07: the script's tone, the narrator roasts throughout; script.md goes scene by scene through Jack.
+- [Jack writes the jokes](jack-writes-the-jokes.md) — for scripts give a beat brief (what it conveys, what to joke about), line left blank for him (2026-10-07).
+- [Bank Robbery: talking clips in Ingredients](bank-robbery-talking-clips-ingredients.md) — 2026-10-09 rule for live speech; since 2026-10-18 a clip that will be muted and dubbed goes through Frames (Ingredients drifts off the room).
+- [Money For Something: the topical show](mmt-topical-show-october.md) — NEWEST 2026-10-26 pm: six shorts BUILT on Premiere timelines; resume at "Built 26 Oct" in money-for-something-2026-10-26-shorts-script.md.
+- [Verify a cut against the script](verify-a-cut-against-the-script.md) — transcribe the render and diff it with the script before saying it is built; never trim speech on an LLM's timestamps (Jack 2026-10-10).
+- [Profit is the main goal](profit-is-the-main-goal.md) — Jack 2026-10-12: rank marketing by what it earns; research in docs/marketing/profit.md; prepare, do not post, until he has talked to Kai.
+- [Money For Something: shorts and marketing plans](mfs-shorts-and-marketing-plans.md) — eight shorts from cut 3 in `animation\shorts\money-for-something`; series, reach and profit plans in docs/marketing (2026-10-12).
+- [Narration, not lip-sync (BR short, Karen)](narration-not-lipsync.md) — 2026-10-15 meeting: for those two films, mute the talking clips and dub each character in their own TTS voice, narrator kept; other films not ruled.
+- [Composite realism rules](composite-realism-rules.md) — historical: compositing was dropped 2026-10-18, see no-ai-real-compositing
+- [No AI + real compositing](no-ai-real-compositing.md) — Jack 2026-10-18: never put AI people into real footage; join real and AI by the cut only
+- [Never rm imported Premiere media](never-rm-imported-premiere-media.md) — rebuild into a fresh folder; deleting imported pieces raised Link Media for Jack (2026-10-18)
+- [Premiere 27 only, no _1 copies](premiere-27-only.md) — Jack 2026-11-16: newest Premiere only; a converted copy takes the original name, old one deleted; Kai must update too
+- [Dubbed talking clips: use the lip-sync-dub skill](dubbed-talking-clips-recipe.md) — measure the mouth from the picture, place phrases late-never-early ≤1.3×, cutaway when too fast; never slow the picture (2026-10-19).
+- [Karen narration v2→v4](karen-narration-v2.md) — 2026-10-22: `Karen v4` approved by Jack; the narrator voice is in karen/sound.md; disclaimer and loudness still owed.
+- [Export the final from Premiere, never ffmpeg](export-from-premiere-not-ffmpeg.md) — Jack 2026-10-19: the ffmpeg upload re-encode looked blurry/odd; fixes go in a new Premiere cut + export settings, QC read-only.
+- [No renders: work in Premiere only](no-renders-premiere-only.md) — Jack 2026-10-19: stop exporting review renders; edit the sequence, he watches the timeline.
+- [Logo files folder (Jack)](badcode-logo-new-folder.md) — `Youtube Vids\animation\badcode logo NEW!` holds Jack's two right logos (4K logo-and-name + logo-only, 2026-10-21); Flow-window downloads land in WSL ~/Downloads, copy them over.
+- [Remind about Spotify](remind-spotify-account.md) — raise the BadCode Spotify account once per session until opened or dropped; needs a distributor first.
+- [Jack's Bank Robbery song](bank-robbery-jack-song.md) — PICKED 2026-10-30: d6c34644 old-east-end-guvnor for the colourful noir MV; official download still owed
+- [Suno: no Covers](suno-covers-dont-work.md) — Jack 2026-10-22: covers don't work, never use Remix → Cover / narrow; fresh Creates only
+- [Exploring rounds: the variations skill](suno-clean-room-for-exploring.md) — prompts written inside the repo kept making one song; since 2026-10-28 use Kai's `variations` skill, run verbatim; read docs/suno-gpt/same-song-traps.md first
+- [Bank Robbery: always Kai's lyrics](bank-robbery-kais-lyrics-always.md) — Jack 2026-10-24: every future generation uses Kai's lyrics, even after "forget everything"
+- [Bank Robbery MV: The Speakeasy Mint](bank-robbery-mv-speakeasy-mint.md) — Jack 2026-10-25: all 33 scenes stilled and animated, on Premiere timeline `Speakeasy Mint rough 1` with no song; next = pick the song take, cut to it; look rules in bank-robbery/look.md
+- [Bank Robbery MV video folder](bank-robbery-mv-video-folder.md) — `Youtube Vids\animation\songs\bank robbery` on Jack's Desktop, used once we start the video (2026-10-26)
+- [Bank Robbery MV: ALT style cut](bank-robbery-mv-alt-style.md) — Jack 2026-10-28: second cut of the Speakeasy Mint MV; look rules in docs/stories/bank-robbery/look.md (Per part, EXPLORING); 33 clips made; clean-room stills + clips done, Premiere seq `Speakeasy Mint ALT cleanroom 1`
+- [Clean room for Flow stills](clean-room-stills-work.md) — Jack 2026-10-29: web research + sealed writers (no repo prompts) beat the AI-slop look; default for new stills
+- [Say "clean room" for fresh prompts](say-clean-room-for-fresh-prompts.md) — Jack 2026-10-30: his trigger for the same-prompt bug; web research only, sealed writers, run verbatim
+- [LatentSync runs out of RAM and used to kill WSL](latentsync-oom-kills-wsl.md) — cause of Zed's drops on 2026-10-31; fix applied, check the OOM log first if it recurs
+- [Stupidity Optimised: rough 4 built](stupidity-optimised-resume.md) — NEWEST 2026-11-02: `Optimised rough 4` (6:54, faster voices) in Premiere, unwatched; cut suggestions in scenes/film.md "Premiere, rough 4"
+- [Stupidity Optimised output folder](stupidity-optimised-output-folder.md) — Jack 2026-11-01: everything goes in Desktop `Youtube Vids\animation\optimised stupidity`
+- [Bank Robbery MV: colourful noir](bank-robbery-mv-colour-noir.md) — NEWEST 2026-10-31: `Colour Noir 4` built (2 with a few sung shots swapped for action, lips slipped), awaiting Jack's notes; stand-in song.mov
+- [BadCode balaclava rule](badcode-balaclava-rule.md) — Jack 2026-11-03: white ring + triangle over LEFT eye (as the jeweller-shop masks), no skin, gloves, no robot parts, every story; rule in docs/brand/README.md
+- [Bank Robbery MV: the balaclava gang](bank-robbery-mv-gang.md) — NEWEST 2026-11-05 night: `Balaclava Gang 9` BUILT (128 cuts, action ~1.3-1.6 s with longer holds, rap 20%, Jack's screenshot picks in), timeline https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1 round 9, awaiting Jack; resume at songs/mv-gang/picks.md
+- [Flow browser: launch via flow_status, not Bash](flow-browser-launch-via-mcp.md) — a Chrome started from the sandboxed shell renders nothing; flow_status launches a working one (2026-11-05)
+- [Camping MV: balaclava rappers](camping-mv-balaclava-rappers.md) — NEWEST 2026-11-06: `camping balaclava 1` BUILT (13 talking-to-camera shots swapped), awaiting Jack; page https://claude.ai/artifact/WVScfLPy242nXzuExhH2y9; resume at mv-balaclava/picks.md
+- [Camping: new lyrics, same beat](camping-new-lyrics-same-beat.md) — NEWEST 2026-11-06 eve: original = Suno song 03e29295; best take w8 18aa2e44, unheard; Gemini cannot judge voice here; resume at songs/cleanroom-newlyrics/README.md
+- [Camping MV: action stills + song 2 beat cut](camping-mv-action-stills.md) — NEWEST 2026-11-09 pm: `camping song 2 beat 9` BUILT (Jack: "literally perfect", change only his notes; 7 suggestions on the page await his pick), page round 4 https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM in sync; resume at docs/stories/camping/mv-song2/README.md Round 13
+- [Camping: song 2 maybe](camping-song-2-maybe.md) — Jack 2026-11-06: the new song for the new MV sequence, in songs\camping vid; keep the other sequences
+- [MFS: Paraguay special](mfs-paraguay-special.md) — NEWEST 2026-11-09 eve: short 1 v1 BUILT in Paraguay.prproj (`Paraguay short1 Sir Quick Question v1`), awaiting Jack's joke punch-up; resume at scenes/paraguay-s1/README.md
+- [MFS Paraguay output folder](mfs-paraguay-output-folder.md) — Jack 2026-11-09: everything in Desktop `animation\money for something\Paraguay`, with his Paraguay.prproj
+- [Resolve media paths via localmap](resolve-media-paths-via-localmap.md) — repo paths are the writer's machine; run localmap.py before saying a file is missing (2026-11-10)
+- [Drive: agreed cut only](drive-agreed-cut-only.md) — Jack 2026-11-10: push-agreed.sh with scripts/drive/agreed/*.list, never the whole folder; agreed cuts for BR music/story + Camping music/story on Drive, rest deleted (2026-11-11); next = timeline test
+- [Shorts: Priority Lane DONE](shorts-priority-lane-resume.md) — 2026-11-14: r4 in Premiere, frozen, on Drive; only export + QC + caption owed
+- [Shorts: Sponsor a Chancellor resume](shorts-sponsor-a-chancellor-resume.md) — NEWEST 2026-11-11 pm: voice page up (5BfuXWgH), re-shoots checked; voices picked, Crispin kept; round 5 in Premiere (shorts-6-sponsor-a-chancellor-r5); export + done call left; resume at docs/stories/short-sponsor-a-chancellor/RESUME.md
+- [Shorts: Signs and Magic Money Tree](shorts-signs-and-money-tree.md) — NEWEST 2026-11-11 eve: Signs (#33) in Premiere `shorts-33-signs-r1`; Magic Money Tree (#36) in Premiere `shorts-36-magic-money-tree-r1`; resume at each short's RESUME.md
+- [Shorts: Same Bench resume](shorts-same-bench-resume.md) — NEWEST 2026-11-12: #2 rough cut 3 in Premiere `short-same-bench-1-same-bench-r3`, timeline https://claude.ai/artifact/2DdWL1U98tLQSFsoGVroGC, awaiting Jack; resume at docs/stories/short-same-bench/RESUME.md
+- [Tidy media folders](tidy-media-folders.md) — Jack 2026-11-12: only what the video uses in view; scratch/rejected/unpicked in _ folders; never move Premiere-used files
+- [Shorts: Hello, I'm BadCode](shorts-hello-im-badcode.md) — NEWEST 2026-11-12: #17 rough cut 1 (real-footage horror reel) on timeline https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP awaiting Jack; resume at docs/stories/short-hello-im-badcode/RESUME.md
+- [Clips from a story are trailers](clips-from-a-story-are-trailers.md) — Jack 2026-11-12: shorts from a finished film = fast trailers of its best lines, not slices; Camping round 1 at docs/marketing/camping-serial-plan.md
+- [Camping trailer: resume](camping-trailer-resume.md) — NEWEST 2026-11-12 pm: t2 "Two men, one car park" BUILT in Premiere (`trailer two men r1` in shorts\camping-trailer-two-men), awaiting Jack's watch; resume at docs/marketing/camping-serial-plan.md
+- [Jack: shorts media folder](jack-shorts-media-folder.md) — always Desktop Youtube Vids\animation\shorts\<slug>; use it without asking (2026-11-12)
+- [Storyverse shorts parked](storyverse-shorts-batch-parked.md) — Jack 2026-11-12: physics shorts #50-82 rewritten v2 (each on a named real study + Essentia research), parked to revisit; #52 built
+- [Shorts: No Master Recording](shorts-no-master-recording.md) — NEWEST 2026-11-12 eve: #52 rough cut 1 on timeline https://claude.ai/artifact/Bhy5EYPqP4suzrRa1jMZQr, in Premiere `short-no-master-recording-1-no-master-recording-r1`, awaiting Jack
+- [Meeting 2026-11-13](meeting-2026-11-13.md) — batons (Kai: Camping+Karen, Jack: shorts), publish without asking friends, ban lobbying / composition over inheritance points, #83-87; notes in docs/misc/2026-11-13-meeting.md
+- [Shorts audio through Suno](shorts-audio-through-suno.md) — Kai 2026-11-13: script → Suno track (speech, stings, bed) → pictures; AI Studio voices still sound AI
+- [Unsplash key LIVE](unsplash-key-pending.md) — 2026-11-17: keys in .env, live test passed (5000/hr); use scripts/scene/unsplash-refs.py for reference photos
+- [Shorts: Infinite Yous resume](shorts-infinite-yous-resume.md) — NEWEST 2026-11-16: rough cut 4 built in Premiere 27 (`short-infinite-yous-1-infinite-yous-r4` in infinite yous.prproj); figure voice still a stand-in, export at 1080x1920 owed
+- [AI Studio key is paid: no daily cap](ai-studio-key-is-paid-no-daily-cap.md) — Jack 2026-11-15: TTS is on a paid key since 2026-09-30; never ration voice calls or wait a day
+- [Shorts #83-85: mood boards](shorts-83-85-moodboards.md) — NEWEST 2026-11-16: #83 rough cut 2 in Premiere (short-malevolent-force-1-malevolent-force-r2, saved) + on Drive; export + QC owed; timeline https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX; cut script scripts/shorts/malevolent_force_cut.py (2026-11-16); #84 round 1 awaiting votes; #85 The Envelope PARKED at rough cut 1 (Jack: "doesnt work")
+- [Shorts Suno: no dialogue](shorts-suno-no-dialogue.md) — Jack 2026-11-15: Suno tracks for shorts are music + sounds only, never speech unless he asks; dialogue is AI Studio only; rounds use the `instrumental` flag
+- [Run the Flow runner unsandboxed](run-flow-runner-unsandboxed.md) — run.mts in the Bash sandbox renders, bills, then loses every download and resends; launch it with the sandbox off
+- [Shorts: True Scale #88](shorts-true-scale.md) — NEWEST 2026-11-16: Nearest Wins rough cut 4 (talking shots re-shot + dubbed the Bank Robbery way) on https://claude.ai/artifact/MtqWJtDiYVYDitx67GvBN8; music pick owed on F8Md9pWGGK2psk9ZguoRA3
+- [Never LatentSync](never-latentsync.md) — Jack 2026-11-16: "dont install that lip syncing tool it does not work"; use prompted-words clips + fitting, or cutaways
+- [Shorts: Ten Economic Commandments](shorts-ten-economic-commandments.md) — NEWEST 2026-11-16: rough cut 1 (rap jazz1 + 7 clips) on https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG; FX5 still pick owed
+- [Lookalikes drift to the real person](lookalike-drifts-to-the-real-person.md) — Jack 2026-11-17: small face + stacked cues (hair, job, slogan, photo-op props) = the real famous face; never name or stack cues, make the face big first, then use that image as the reference
+- [Read the board, never ask](read-the-board-dont-ask.md) — Jack 2026-11-17: dump the page votes + notes myself every turn and act on them; never ask him to vote or what he picked
+- [Rounds clear the board](rounds-clear-the-board.md) — Jack 2026-11-17: all notes in one round; clean room for new shots only, small fixes edited in place; look = one line in the shared brief
+- [Sealed writers must not see the repo](sealed-writers-must-not-see-repo.md) — 2026-11-17: general-purpose writers load CLAUDE.md + this index; run writers via scripts/variations/sealed-writer.sh (or clean-room-writer agent); Unsplash photos first for real-world scenes

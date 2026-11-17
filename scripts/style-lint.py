@@ -13,12 +13,12 @@ ALWAYS-LOADED (the HARD check, unchanged — exit 1 on any hit):
   the memory index (MEMORY.md)               every line
   .claude/skills/*/SKILL.md, .claude/agents/*.md   the description: line only
   any skill body but story-style, any agent, CLAUDE.md outside its repo-map row, the memory index
-                                             a pointer to docs/style-library/
+                                             a pointer to docs/library/
 
 WIDE (2026-10-29 — exit 1 on any unlabelled hit):
   skill bodies       .claude/skills/**/*.md, .claude/agents/*.md (every line)
   shared docs        docs/**/*.md except docs/stories/ (where style belongs), any archive/ folder,
-                     docs/style-library/ (the menu itself), docs/provenance/ and docs/listening/log/
+                     docs/library/ (the menu itself), docs/provenance/ and docs/listening/log/
                      (records of what was run), docs/ideas/ (story seeds)
   generic code       scripts/** and packages/** (.py .ts .mts .mjs .js .sh, and packages' .md),
                      except story-named folders (scripts/bank-robbery, camping*, gpom, karen, …),
@@ -57,7 +57,7 @@ ROOT = Path(__file__).resolve().parent.parent
 STYLE = re.compile("|".join([
     r"drum ?(&|and|n) ?bass", r"\bd&b\b", r"\bdnb\b", r"\bbpm\b", r"\bjungle\b", r"amen break",
     r"near-black", r"monolith", r"\b35 ?mm\b", r"documentary (look|register)", r"cool-neutral",
-    r"teal", r"one thin (light|blade)", r"thin light", r"newsreader", r"cello",
+    r"teal", r"one thin (light|blade)", r"thin light", r"newsreader", r"\bcello\b",
     r"house (look|sound|register|settings|voice|preamble|style)", r"badcode (look|sound|register)",
     r"look like badcode", r"(machine|people) register", r"\bw(eirdness)? ?\d{2}\b",
     r"style influence \d", r"\bsi \d{2}\b", r"\bpair 20/35\b",
@@ -79,6 +79,10 @@ WIDE = re.compile("|".join([
     r"\bopera\b", r"\brasta\b", r"\breggae\b", r"\bgrime\b", r"\bzimmer\b", r"black[- ]and[- ]white",
     r"double[- ]time", r"\bbrixton\b", r"zubenelgenubi", r"\balgenib\b", r"sadaltager", r"\bkore\b",
     r"style lock",
+    # 2026-11-17 context reset: the film-look words the 10-29 list still missed (sweep found 35mm ×49
+    # across three stories' prompts, and grain/stock in the anti-slop recipes).
+    r"\b(16|35|65) ?mm (film|stock)\b", r"shot on \d+ ?mm", r"film grain", r"\bportra\b", r"\btri-x\b",
+    r"\bmonumental\b", r"\bbaritone\b", r"\bcontralto\b",
 ]), re.I)
 
 # Code defaults: a choice written into generic code, so it fires with nobody choosing it.
@@ -112,7 +116,7 @@ STORY_DIRS = {"bank-robbery", "camping", "camping-mv2", "downfall", "gaze-board"
               "money-for-something", "magic-money-tree", "galileo", "storyverse", "palettes"}
 SKIP_DIRS = {"node_modules", "dist", ".tmp", "archive", "__pycache__", ".git"}
 CODE_EXT = {".py", ".ts", ".mts", ".mjs", ".js", ".sh"}
-DOC_SKIP = ("docs/stories/", "docs/style-library/", "docs/provenance/", "docs/listening/log/", "docs/ideas/")
+DOC_SKIP = ("docs/stories/", "docs/library/", "docs/provenance/", "docs/listening/log/", "docs/ideas/")
 
 
 def memory_dir():
@@ -150,20 +154,20 @@ def description(path):
     return [(n, l) for n, l in numbered(path) if l.startswith("description:")][:1]
 
 
-LIBRARY = re.compile(r"style-library")
+LIBRARY = re.compile(r"(docs/library|style-library)/(look|sound)/")  # a pointer at one named style
 
 
 def library_pointers(mem):
     """Only story-style may send a session to the library; anywhere else it becomes a menu every
     story picks from, which is a house style again."""
     hits = []
-    files = [f for f in sorted((ROOT / ".claude" / "skills").glob("*/SKILL.md")) if f.parent.name != "story-style"]
+    files = [f for f in sorted((ROOT / ".claude" / "skills").glob("*/SKILL.md")) if f.parent.name not in ("story-style", "new-story", "new-short")]
     files += sorted((ROOT / ".claude" / "agents").glob("*.md"))
     for f in files:
         hits += [f"🔴 {f.relative_to(ROOT)}:{n}  points at the style library  {l.strip()[:90]}"
                  for n, l in numbered(f) if LIBRARY.search(l)]
     for n, l in numbered(ROOT / "CLAUDE.md"):
-        if LIBRARY.search(l) and not l.startswith("| `docs/style-library/` |"):
+        if LIBRARY.search(l) and not l.startswith("| `docs/library/` |"):
             hits.append(f"🔴 CLAUDE.md:{n}  points at the style library outside its repo-map row")
     if (mem / "MEMORY.md").exists():
         hits += [f"🔴 MEMORY.md:{n}  points at the style library" for n, l in numbered(mem / "MEMORY.md") if LIBRARY.search(l)]

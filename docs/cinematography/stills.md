@@ -1,6 +1,6 @@
 # The static frame — making stillness grip
 
-Our dominant form. A held image under narration is not film coverage and not a photograph — it
+Common in our films so far, though each story picks its own form. A held image under narration is not film coverage and not a photograph — it
 is closer to a comic panel with a caption box. The viewer scans it actively *while* listening,
 so it needs a clear entry point and somewhere for the eye to land when the sentence ends.
 

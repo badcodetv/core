@@ -10,8 +10,8 @@ most of our work lives, because most of our shots are stills.
 **Foreground, midground, background.** A subject on one plane against a backdrop reads as flat
 no matter how sharp, detailed or well-exposed it is. Resolution never fixes flatness; layers do.
 
-For our subject matter, the foreground layer is usually free: a doorway edge, a cable run, a
-handrail, a stack, a pipe, haze. It does not need to be interesting — it needs to be *nearer*.
+The foreground layer is usually free: whatever sits nearer the lens in that story's world (a doorway edge,
+a railing, a shoulder, a branch). It does not need to be interesting — it needs to be *nearer*.
 
 **Atmospheric perspective is real optics, not a look.** Dust and haze in the air scatter light
 and soften contrast with distance, and it is one of the primary cues human vision uses to judge
@@ -151,7 +151,7 @@ direct-address trust study found eye-level was trusted *more* than either low or
 another found it running backwards. Decide whether you are optimising for dramatic dominance or
 for credibility — they pull opposite ways.
 
-**The overhead is our narrator's natural position** — omniscience, irony, dread, not contempt.
+**The overhead reads as a narrator who knows the ending** — omniscience, irony, dread, not contempt. One option among many, not a default.
 But it buys omniscience free and must earn scale separately: from above, an empty space collapses
 into pattern rather than absence.
 

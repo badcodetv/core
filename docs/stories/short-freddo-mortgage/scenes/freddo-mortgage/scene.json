@@ -1,0 +1,13 @@
+{
+ "story": "short-freddo-mortgage",
+ "scene": "freddo-mortgage",
+ "prefix": "fm",
+ "title": "The Freddo Mortgage",
+ "heading": "BadCode Shorts: The Freddo Mortgage",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/freddo-mortgage",
+ "beats": [
+  {"key": "ask", "name": "The question", "at": "0-5s", "blurb": "A mortgage adviser across the desk: what brings you here today, Mr Davis? (line: Jack)"},
+  {"key": "freddo", "name": "The Freddo", "at": "5-10s", "blurb": "He wants to buy a Freddo. (line: Jack)"},
+  {"key": "punch", "name": "The punch", "at": "10-15s", "blurb": "The adviser takes it seriously. What the joke lands on is Jack's. (line: Jack)"}
+ ]
+}

@@ -5,6 +5,11 @@ description: Use when making a BadCode story more engaging or reviewing whether 
 
 # Story Craft (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 Make the thing grip. Two modes, one knowledge base:
 
 - **Build** — you are drafting or sharpening (beats, a scene, a script, narration, captions, lyrics,

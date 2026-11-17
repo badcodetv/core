@@ -1,9 +1,14 @@
 ---
 name: flow-prompt
-description: Use when writing or debugging a prompt for Google Flow — a still image, an image-to-video motion prompt, a character reference, or a generation that failed. Encodes how the Flow platform actually behaves (Nano Banana and Veo), the policy-block triggers and rewrites, and the reference/consistency disciplines. Triggers on "write a Flow prompt", "why did this generation fail", "the prompt got blocked", "make this prompt better", "how do I animate this", or any prompt-craft step inside new-image, scene-images or scene-animation. Platform craft only — what a story looks like lives in that story's docs/stories/<story>/look.md.
+description: Use when writing or debugging a prompt for Google Flow — a still image, an image-to-video motion prompt, a character reference, or a generation that failed. Encodes how the Flow platform actually behaves (Nano Banana and Veo), the policy-block triggers and rewrites, and the reference/consistency disciplines. Triggers on "write a Flow prompt", "why did this generation fail", "the prompt got blocked", "make this prompt better", "how do I animate this", or any prompt-craft step inside new-image, scene-images or scene-animation. Platform craft only — what a story looks like lives in that story's docs/stories/<story>/badcode.md.
 ---
 
 # Flow Prompt
+
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
 
 How to get what you asked for out of Google Flow. This skill owns **platform craft** —
 how Veo and Nano Banana actually behave. It owns **no look at all**: there is no BadCode house look (Kai, 2026-10-28). Each story's look is its `docs/stories/<story>/look.md`.

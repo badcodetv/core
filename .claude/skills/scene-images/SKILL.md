@@ -5,6 +5,11 @@ description: Use for the IMAGE IDEATION of one BadCode scene — a mood board of
 
 # Scene images: mood board → storyboard (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 **Stage 2 of a scene.** Cheap first looks, then the picked stills in order. Before it: **`scene-beats`**
 (the brief). After it: **`scene-animation`**. The whole loop is **`new-scene`**, which also holds the scene
 folder layout and `scene.json`.

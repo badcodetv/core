@@ -89,7 +89,7 @@ a dead screen — not as mood. There is now a perceptual mechanism for this, not
 the visual system computes how dark a thing is relative to the brightest region it can group
 into the same scene (anchoring theory of lightness perception, Gilchrist). Remove the anchor and
 there is nothing to normalise against. **This is the most load-bearing single principle for any
-dark look** (GPOM's, for one). **A** (mechanism) / **P** (craft rule)
+dark look**, if a story has chosen one. **A** (mechanism) / **P** (craft rule)
 
 **12 — Hard versus soft is optical fact, not taste.** A small or distant source gives
 sharp-edged shadow and reads as harsh, exposing, unforgiving. A large or close source gives
@@ -141,7 +141,7 @@ optimising for dramatic dominance or for credibility — they pull in opposite d
 **A (mixed)**
 
 **21 — The overhead is the position of a narrator who already knows how it ends.** It produces
-detachment, irony or dread rather than contempt — which is exactly our narrator's gaze. But an
+detachment, irony or dread rather than contempt. (A story whose narrator knows how it ends may want that; it is a choice, not a default.) But an
 overhead buys omniscience for free and must earn *scale* separately: from above, an empty space
 collapses into geometry and pattern rather than absence. **P** (omniscience) / **A (mixed)** (the
 scale caveat)
@@ -172,7 +172,7 @@ small argument, and depth order is the order its steps are read in. **H**
 
 ---
 
-## 5. Register — the monumental problem
+## 5. Register — the monumental problem (only for a story whose look is monumental)
 
 **22 — 🔴 The monumental grammar is neutral; the reading is built by what surrounds it.**
 Soviet monumentalism, Nazi rally architecture and Deakins' *Blade Runner 2049* interiors are
@@ -207,8 +207,8 @@ reported awe experiences) is the variant our narrator embodies: awed by its own 
 
 **26 — Scale for a non-human subject must be manufactured in frame.** There is no default sense
 of how big a machine or building is without a known-size reference — a doorway, a stair, a
-vehicle, a figure. One human-scale figure visibly small against architecture is the single most
-load-bearing awe device available to us. **P** (application) / **A** (the size-perception
+vehicle, a figure. If a story wants awe, one human-scale figure visibly small against architecture is the single most
+load-bearing device for it. **P** (application) / **A** (the size-perception
 mechanism)
 
 ---
