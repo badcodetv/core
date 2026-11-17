@@ -49,8 +49,7 @@ Cheap first looks: many options per beat, not finished frames. **Stills cost no 
 - **Lean on Unsplash.** For anything real-world (a street, a junction, a vehicle interior, a building, a shelter),
   start from real photos: `python3 scripts/scene/unsplash-refs.py <scene-dir> "<query>" ...` and the picks page. A real
   photo carries correct physics, proportions and traffic for free; the generator only has to restyle it. Jack: "the
-  Unsplash fix does seem to solve a lot of these problems". (Unverified: whether Unsplash's API terms allow uploading
-  their photos to Flow as a reference; Jack has been told.)
+  Unsplash fix does seem to solve a lot of these problems".
 - **Writers must not see the repo.** A `general-purpose` subagent loads the whole CLAUDE.md and the memory index
   (tested 2026-11-17), so a "sealed" writer is not sealed. Run every clean-room writer with
   `scripts/variations/sealed-writer.sh <round-dir> <brief files...> -- <output.json>` (an empty temp folder,
