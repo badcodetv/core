@@ -344,5 +344,24 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 14: HD14-a/c held from the cab with CD8-b as reference (same junction); PB14-a/c poster from the bus-stop seat, road empty for the ambulance pass; HD14-b and PB14-b were reference copies",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T13:12:32+00:00",
+  "stage": "moodboard",
+  "round": 14,
+  "what": "Round 14 votes and notes dumped to feedback/moodboard-r14",
+  "decided": [
+   "HD14-c picked for B. Held; PB14-c maybe, 'the ambulance needs to be on the english side of the road'"
+  ],
+  "feedback": "feedback/moodboard-r14",
+  "feedback_docs": 19
+ },
+ {
+  "at": "2026-11-17T13:12:32+00:00",
+  "stage": "moodboard",
+  "round": 15,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 15: PB15-c, the ambulance in frame in the near lane, pavement on its left (UK side); PB15-a/b were reference copies",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB15-a.jpg",
+ "made": "2026-11-17T13:11:59.444Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph shot on 35 mm colour-negative film at night in heavy rain, seen from the middle of the bench inside a glass street shelter on a London pavement, the camera at seated eye height looking out through the shelter's open front. The shelter's dark metal roof frame and rain-beaded glass roof cross the top of the frame, a tall rain-streaked glass side panel fills the left edge, and the lit advertising case at the far end of the shelter stands at a slight angle just left of centre, showing the poster from the reference image, reproduced exactly, the same man's face, glowing from its own white backlight. Through the open front on the right the wet road runs across the frame from left to right and away into the distance on the right, Britain's left-hand traffic: the kerb of our pavement in the foreground, the near lane right beside it, a white centre line, the far lane beyond. Far down the road on the right, small in the frame, a British ambulance, a tall box van with yellow-green chequered Battenburg sides, drives in the lane nearest our kerb, travelling toward the camera with the kerb on its left, headlights on and blue roof lights flashing, still a long way off; its blue flash is only a faint cold pulse on the distant wet tarmac. In the far lane a single car moves the other way, away from us, red tail lights smearing on the road. Light sources: sodium-orange street lamps along the road, the poster case's white backlight, the ambulance's distant blue lights and white headlights, warm glow from terraced house windows across the road. Orange puddle reflections, cold teal shadows, visible film grain, slight halation around every lamp, rain streaks caught in the light. No readable text anywhere except the poster: no plates, no signs, no lettering on the ambulance. Real photograph, not CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-a-v2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-a-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "43dcb646-0ff0-44af-9a37-ef876292d9f3"
+}

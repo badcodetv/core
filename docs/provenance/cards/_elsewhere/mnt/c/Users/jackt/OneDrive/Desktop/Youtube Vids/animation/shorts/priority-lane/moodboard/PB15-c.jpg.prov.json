@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB15-c.jpg",
+ "made": "2026-11-17T13:11:24.042Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16, a genuine 35 mm colour-negative film photo at night in pouring rain, seen from the centre of the bench in a glass shelter at the kerb of a London street. The shelter's roof frame cuts across the top of the picture with rain running off the glass canopy, a tall glass side panel takes up the left edge, and just left of centre the lit advertising case at the end of the shelter sits at a slight angle, showing the poster from the reference image, reproduced exactly, the same man's face, its white backlight now competing with cold blue. Through the open front on the right only a narrow strip of wet road shows, a short stretch running off to the right, British left-hand traffic. In that strip, in the lane nearest the shelter's kerb, travelling toward the camera with the kerb on its left, a British ambulance, tall box van with yellow-green chequered Battenburg sides, is close now, perhaps two shelter-lengths away, headlights glaring through the rain and blue lights flashing hard, but not yet level with us. Its blue strobe floods the scene: it bounces off the wet road, sprays across the raindrops on the shelter glass on both sides, rims the edge of the poster case and the wet bench slats in blue. Nothing else on the road except a faint pair of red tail lights far off in the opposite lane, moving away. Light sources: the ambulance's flashing blue lights and white headlights, sodium-orange street lamps behind it, the poster case's white backlight. Sodium orange fighting electric blue, teal shadows, coarse film grain, halation bloom on the headlights, rain streaks frozen in the beams. No readable text anywhere except the poster; no plates, no signs, no lettering on the ambulance. Real photograph, never CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-a-v2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-a-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "fecb9001-bd07-4dcb-85fb-b75a26017c1e"
+}
