@@ -5,6 +5,11 @@ description: Use to turn a BadCode scene's picked stills into a SEQUENCE OF ANIM
 
 # Scene animation: options → clips (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 **Stage 3 of a scene.** Before it: **`scene-images`** (the storyboard). After it: **`scene-timeline`**.
 The whole loop is **`new-scene`**, which also holds the scene folder layout and the tools.
 

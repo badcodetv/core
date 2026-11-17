@@ -1,9 +1,14 @@
 ---
 name: story-style
-description: Use to FIND a story's own look and sound and write them into its docs/stories/<story>/look.md and sound.md — an interview that starts from the story (what it argues, who it is for, how the end should feel), then proposes genuinely different looks and sounds from a wide style library plus at least one invented for this story, shows them on a picking page (a test still per look, references per sound), runs rounds on Kai's and Jack's votes, and locks the pick. Runs inside new-story, or alone. Triggers on "find the look for <story>", "what should <story> look / sound like", "style interview", "bootstrap look.md / sound.md", "this story has no look yet", "the look isn't working, start again", "story style".
+description: Use to FIND a story's own look and sound and write them into its docs/stories/<story>/badcode.md (and the longer look.md / sound.md record) — an interview that starts from the story (what it argues, who it is for, how the end should feel), then proposes genuinely different looks and sounds from a wide style library plus at least one invented for this story, shows them on a picking page (a test still per look, references per sound), runs rounds on Kai's and Jack's votes, and locks the pick. Runs inside new-story, or alone. Triggers on "find the look for <story>", "what should <story> look / sound like", "style interview", "bootstrap look.md / sound.md", "this story has no look yet", "the look isn't working, start again", "story style".
 ---
 
 # Story style: find this story's look and sound
+
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
 
 **Why this exists** (Kai, 2026-10-28). What every session loads ends up in every prompt: one story's
 dark register and drum & bass became every story's, and 400+ Bank Robbery takes came out in one
@@ -12,7 +17,7 @@ strong identity, obvious in every still, clip and track it makes. That identity 
 here, deliberately, and written into the story's own `look.md` and `sound.md`, which only that
 story's work reads.
 
-**The library.** `docs/style-library/` is a wide menu (looks and sounds, one file each, saying
+**The library.** `docs/library/` is a wide menu (looks and sounds, one file each, saying
 what each serves *and* what it would undermine). **Only this skill reads it.** It is a menu, never a
 default: the story comes first, and the library is opened only after the interview.
 
@@ -57,7 +62,7 @@ Then say back the story in five lines (these become the page's "The story" secti
    `general-purpose` research subagents in one message (≤ 6 web searches each; the session budget
    is shared): what did that world look and sound like, and what did the art *about* it look and
    sound like? This is where the off-library option usually comes from.
-2. **Then the library.** Read `docs/style-library/README.md` (one line per style and its *Used by*
+2. **Then the library.** Read `docs/library/README.md` (one line per style and its *Used by*
    column), then open the 10–15 most promising entries.
 3. **The shortlist: 6 to 8 looks and 6 to 8 sounds.** Rules, all of them:
    - **at least three different families** in each list;
@@ -108,6 +113,9 @@ in `docs/stories/STYLE.md`:
     `suno-prompt` work then runs a `variations` round inside it and locks it.
 - **Anchors:** the picked test still (path + Flow media id). **History:** every option shown and why
   it lost, with a link to the page.
+- **Then `badcode.md`:** rewrite its *Look* / *Sound* sections to the picked style, current only (no history,
+  no other story named), and add the library slugs under *Library pieces in use*. This is the file every later
+  prompt reads; `look.md` / `sound.md` are the record ([template](../../../docs/stories/badcode-template.md)).
 
 ## Never
 
@@ -115,6 +123,6 @@ in `docs/stories/STYLE.md`:
   is agreed.
 - Never seed a story from another story's `look.md` / `sound.md`, and never call a style
   "BadCode's".
-- Never point any other skill, CLAUDE.md or memory at `docs/style-library/` (`scripts/style-lint.py`
+- Never point any other skill, CLAUDE.md or memory at `docs/library/` (`scripts/style-lint.py`
   fails). A story's style reaches other work only through that story's own files.
 - Never write the test-still prompts yourself; the `variations` writers do.

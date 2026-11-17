@@ -1,0 +1,66 @@
+- [No house style: style lives in the story](no-house-style-story-files.md) — Kai 2026-10-28: looks and sounds go only in docs/stories/<story>/look.md and sound.md, never memory; run scripts/style-lint.py after memory edits
+- [Rules are a loose guide](rules-are-a-loose-guide.md) — Jack 2026-10-29: creative rules, research and even LOCKED parts are a starting point; experiment, say what you changed; run the same-prompt check fresh.py
+- [Repo records intent, Flow holds assets](repo-records-intent-flow-holds-assets.md) — repo silence about a Flow Character means we don't know, not that it doesn't exist.
+- [Flow engine research goes in docs/google-flow](flow-engine-research-goes-in-docs-google-flow.md) — always write engine findings there, tiered and dated, never leave them in a story file.
+- [Flow: Kai by hand, Jack wants it run for him](flow-hand-driven-not-automated.md) — Kai: copy-paste prompts; Jack (2026-10-21): run Flow yourself, pick the best take, put it in.
+- [Every Flow prompt ends with "Thanks."](every-flow-prompt-ends-with-thanks.md) — Kai's convention for images and videos; the last block of a two-block paste carries it.
+- [Always a new prompt, never an image edit](always-new-prompt-never-edit-an-image.md) — regeneration works, editing an existing generation does not; hand over the whole prompt, never splice-in blocks.
+- [Always Omni Flash, never Veo 3.1](use-omni-flash-not-veo.md) — standing preference for all Flow video; two Veo-only capabilities to flag rather than switch silently.
+- [Variants by reference image, not Flow Characters](variants-by-reference-not-flow-characters.md) — younger/older/wrecked is a reference plus prose; a missing Character is not a blocker.
+- [One prompt at a time; stills first](one-shot-at-a-time-still-then-video.md) — never a batch; since 2026-09-28 (Camping mv v2) all stills first, then the videos.
+- [Never dialogue in Flow videos](never-dialogue-in-flow-videos.md) — sound effects yes, speech never; Jack 2026-11-10: "never do flow speech", talking = AI Studio voice + lip-sync-dub
+- [ALWAYS: shot-craft + docs/cinematography/ before any prompt](always-run-shot-craft-then-flow-prompt.md) — mandatory first step for every image/video prompt including rewrites, then flow-prompt for phrasing; the visible-cost gate only where the story's look.md makes it one.
+- [Never describe a referenced character](never-describe-a-referenced-character.md) — Character or reference attached means no appearance description at all, not even a condition change (5 years on, wrecked); only position, action and expression.
+- [Paste blocks are never followed by prose](paste-blocks-never-followed-by-prose.md) — all commentary goes ABOVE a copy-paste block, never after it.
+- [Never censor swear words](never-censor-swear-words.md) — write profanity in full in docs, scripts and chat; if an engine filters it, swap the word, never asterisk it.
+- [Mark unverified claims as unverified](mark-unverified-claims-as-unverified.md) — never write an inference as a finding; prefer a free check over a confident guess.
+- [Label every paste block with its destination field](label-paste-blocks-with-destination-field.md) — name the exact box; Settings + Attach lines sit directly above the label, never in the prompt.
+- [Narration: whole blocks, never trim in Premiere](narration-whole-blocks-never-trim-in-premiere.md) — one WAV per speaker turn cut at word boundaries, placed whole; never split at pauses.
+- [Suno account is Kai's Google login](suno-account-is-kais-google-login.md) — kaiyadavenport@gmail.com via Continue with Google; Suno is single-session, and a wrong-account `?wid=` fails silently.
+- [Omni video defaults: 720p x2 8s, no 360p](omni-video-default-settings.md) — 8s is narration cover, so write two beats; never suggest a 360p draft.
+- [Suno: generate right after the prompt](suno-generate-after-prompt.md) — once a prompt round is loaded, run it without asking; report links + credits.
+- [Suno v6: always set Duration, Auto runs long](suno-v6-set-duration-auto-runs-long.md) — a set target is obeyed to ~1s (12/12); Auto gave 4:55 for the same lyrics.
+- [Listening on Jack's machine](listening-setup-jacks-machine.md) — set LISTEN_MEDIA_ROOT; GEMINI key in .env since 2026-09-24, reconnect listen MCP to load it; if 3.5-flash 429s use gemini-3-flash-preview.
+- [Never write uniformity words in a Suno prompt](never-write-uniformity-words.md) — "never stops / throughout / from here to the end" is an instruction to be flat.
+- [Describe the song, not the box](describe-the-song-not-the-box.md) — a liked take's own prompt is not a description of it; measure the output and prompt from that.
+- [Audit the inherited excludes every round](audit-inherited-excludes.md) — a carried-over ban can be banning the exact thing being asked for.
+- [A ban loses to a positive instruction](a-ban-loses-to-a-positive-instruction.md) — a banned thing still arrives if another box asks for it; delete the summoning words in all three boxes first.
+- [Short boxes keep the drift space](short-boxes-keep-the-drift-space.md) — when a liked take came from drift, box bloat kills the resemblance; fix by deleting.
+- [“Forget all that” = isolate, not cancel](forget-all-that-means-isolate-not-cancel.md) — Jack means keep old prompts out of the new one; still do the earlier brief.
+- [Flow retry = refresh page + retry in 10s](flow-unusual-activity-refresh-retry.md) — on "unusual activity" AND an unfilled start-frame slot; since 2026-11-09 detect the card in 2 s (image tools wait 90 s otherwise), reload, retry the same prompt at once
+- [Style tests stay in Flow, prompts in repo](style-tests-stay-in-flow-prompts-in-repo.md) — never save test stills to a Desktop folder; Jack reviews in Flow; look rulings go in the story's look.md.
+- [Always Nano Banana 2, it is free](always-nano-banana-2-it-is-free.md) — never Pro for stills; the tool defaults to Pro so always pass the model (Jack 2026-10-01).
+- [Jack writes the jokes](jack-writes-the-jokes.md) — for scripts give a beat brief (what it conveys, what to joke about), line left blank for him (2026-10-07).
+- [Verify a cut against the script](verify-a-cut-against-the-script.md) — transcribe the render and diff it with the script before saying it is built; never trim speech on an LLM's timestamps (Jack 2026-10-10).
+- [Profit is the main goal](profit-is-the-main-goal.md) — Jack 2026-10-12: rank marketing by what it earns; research in docs/marketing/profit.md; prepare, do not post, until he has talked to Kai.
+- [No AI + real compositing](no-ai-real-compositing.md) — Jack 2026-10-18: never put AI people into real footage; join real and AI by the cut only
+- [Never rm imported Premiere media](never-rm-imported-premiere-media.md) — rebuild into a fresh folder; deleting imported pieces raised Link Media for Jack (2026-10-18)
+- [Premiere 27 only, no _1 copies](premiere-27-only.md) — Jack 2026-11-16: newest Premiere only; a converted copy takes the original name, old one deleted; Kai must update too
+- [Dubbed talking clips: use the lip-sync-dub skill](dubbed-talking-clips-recipe.md) — measure the mouth from the picture, place phrases late-never-early ≤1.3×, cutaway when too fast; never slow the picture (2026-10-19).
+- [Export the final from Premiere, never ffmpeg](export-from-premiere-not-ffmpeg.md) — Jack 2026-10-19: the ffmpeg upload re-encode looked blurry/odd; fixes go in a new Premiere cut + export settings, QC read-only.
+- [No renders: work in Premiere only](no-renders-premiere-only.md) — Jack 2026-10-19: stop exporting review renders; edit the sequence, he watches the timeline.
+- [Remind about Spotify](remind-spotify-account.md) — raise the BadCode Spotify account once per session until opened or dropped; needs a distributor first.
+- [Suno: no Covers](suno-covers-dont-work.md) — Jack 2026-10-22: covers don't work, never use Remix → Cover / narrow; fresh Creates only
+- [Exploring rounds: the variations skill](suno-clean-room-for-exploring.md) — prompts written inside the repo kept making one song; since 2026-10-28 use Kai's `variations` skill, run verbatim; read docs/suno-gpt/same-song-traps.md first
+- [Clean room for Flow stills](clean-room-stills-work.md) — Jack 2026-10-29: web research + sealed writers (no repo prompts) beat the AI-slop look; default for new stills
+- [Say "clean room" for fresh prompts](say-clean-room-for-fresh-prompts.md) — Jack 2026-10-30: his trigger for the same-prompt bug; web research only, sealed writers, run verbatim
+- [LatentSync runs out of RAM and used to kill WSL](latentsync-oom-kills-wsl.md) — cause of Zed's drops on 2026-10-31; fix applied, check the OOM log first if it recurs
+- [BadCode balaclava rule](badcode-balaclava-rule.md) — Jack 2026-11-03: white ring + triangle over LEFT eye (as the jeweller-shop masks), no skin, gloves, no robot parts, every story; rule in docs/brand/README.md
+- [Flow browser: launch via flow_status, not Bash](flow-browser-launch-via-mcp.md) — a Chrome started from the sandboxed shell renders nothing; flow_status launches a working one (2026-11-05)
+- [Resolve media paths via localmap](resolve-media-paths-via-localmap.md) — repo paths are the writer's machine; run localmap.py before saying a file is missing (2026-11-10)
+- [Drive: agreed cut only](drive-agreed-cut-only.md) — Jack 2026-11-10: push-agreed.sh with scripts/drive/agreed/*.list, never the whole folder; agreed cuts for BR music/story + Camping music/story on Drive, rest deleted (2026-11-11); next = timeline test
+- [Tidy media folders](tidy-media-folders.md) — Jack 2026-11-12: only what the video uses in view; scratch/rejected/unpicked in _ folders; never move Premiere-used files
+- [Clips from a story are trailers](clips-from-a-story-are-trailers.md) — Jack 2026-11-12: shorts from a finished film = fast trailers of its best lines, not slices; Camping round 1 at docs/marketing/camping-serial-plan.md
+- [Jack: shorts media folder](jack-shorts-media-folder.md) — always Desktop Youtube Vids\animation\shorts\<slug>; use it without asking (2026-11-12)
+- [Shorts audio through Suno](shorts-audio-through-suno.md) — Kai 2026-11-13: script → Suno track (speech, stings, bed) → pictures; AI Studio voices still sound AI
+- [Unsplash key LIVE](unsplash-key-pending.md) — 2026-11-17: keys in .env, live test passed (5000/hr); use scripts/scene/unsplash-refs.py for reference photos
+- [AI Studio key is paid: no daily cap](ai-studio-key-is-paid-no-daily-cap.md) — Jack 2026-11-15: TTS is on a paid key since 2026-09-30; never ration voice calls or wait a day
+- [Shorts Suno: no dialogue](shorts-suno-no-dialogue.md) — Jack 2026-11-15: Suno tracks for shorts are music + sounds only, never speech unless he asks; dialogue is AI Studio only; rounds use the `instrumental` flag
+- [Run the Flow runner unsandboxed](run-flow-runner-unsandboxed.md) — run.mts in the Bash sandbox renders, bills, then loses every download and resends; launch it with the sandbox off
+- [Never LatentSync](never-latentsync.md) — Jack 2026-11-16: "dont install that lip syncing tool it does not work"; use prompted-words clips + fitting, or cutaways
+- [Lookalikes drift to the real person](lookalike-drifts-to-the-real-person.md) — Jack 2026-11-17: small face + stacked cues (hair, job, slogan, photo-op props) = the real famous face; never name or stack cues, make the face big first, then use that image as the reference
+- [Read the board, never ask](read-the-board-dont-ask.md) — Jack 2026-11-17: dump the page votes + notes myself every turn and act on them; never ask him to vote or what he picked
+- [Rounds clear the board](rounds-clear-the-board.md) — Jack 2026-11-17: all notes in one round; clean room for new shots only, small fixes edited in place; look = one line in the shared brief
+- [Sealed writers must not see the repo](sealed-writers-must-not-see-repo.md) — 2026-11-17: general-purpose writers load CLAUDE.md + this index; run writers via scripts/variations/sealed-writer.sh (or clean-room-writer agent); Unsplash photos first for real-world scenes
+- [Story status index](story-status-index.md) — every story/short resume point, pick, output folder and per-story ruling (moved out of this index 2026-11-17); open it when working on a story; full old index in memory-index-archive-2026-11-17.md
+- [Flow calls one at a time](flow-calls-one-at-a-time.md) — Jack 2026-11-17: never parallel flow_* calls (one browser; they collide); one per message, check, then the next

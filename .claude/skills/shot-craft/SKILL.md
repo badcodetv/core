@@ -5,6 +5,11 @@ description: Use when deciding or judging what a shot should BE — designing a 
 
 # Shot Craft (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 Make the picture grip. This skill owns **what the shot should be** — the judgement layer,
 decided before any tool is asked for anything, and deliberately tool-agnostic so it survives the
 next generator.

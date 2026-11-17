@@ -5,6 +5,11 @@ description: Use to make a BadCode MEME SLIDESHOW: a talk that works as a websit
 
 # New slideshow: the meme talk (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 **One talk, three outputs:** a page people click through, a video (the narrator voices it), and
 Kai on a stage with a projector. Kai, 2026-11-05: *"given ten minutes on a stage and a projector, I
 could just show one meme after the other whilst making a point."* If an obvious diagram explains

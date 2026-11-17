@@ -217,6 +217,9 @@ claim is a vendor thumbnail and is not evidence. (content-mill,
 
 ## Film stock, grain, grade
 
+> **A vocabulary, not a default.** Use these only when a story's `badcode.md` asks for a filmed look. Film
+> stock and grain words once crept into every story's prompts (2026-11-17 context reset); most stories want none of them.
+
 Composable into one dense trailing clause. Terms that land: "shot on 35mm film",
 "anamorphic lens", "fine film grain", "halation", "gate weave", named stocks ("Kodak
 Portra 400"), "teal-and-orange", "desaturated", "sepia", "muted teal tones".

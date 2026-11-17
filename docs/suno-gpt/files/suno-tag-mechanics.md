@@ -559,8 +559,9 @@ bracket plus the line itself in parentheses beneath it:
 
 The redundancy matters: `[spoken word]` → `[spoken word speech]` → `[spoken word speech talking]` is
 an escalation ladder for a tag that's being ignored. Emotion escalates reliably across consecutive
-cues (`[spoken word speech sad]` → `[angry voice]` → `[yelling]`). Pair it with `spoken word` plus a
-mood word in the **Style** box.
+cues (`[spoken word speech sad]` → `[angry voice]` → `[yelling]`). In the **Style** box, describe the
+delivery plainly ("a man talking", "half-spoken") rather than writing `spoken word`: in Style it reads as the
+performance-poetry genre and gives a poem (measured on Camping; `suno-prompt` §Never put `spoken word` in any box).
 
 *This is the mechanism GPOM's superintelligence narration uses — and it composes with a saved
 Voice, so the narrator can speak in one track and sing in the next with the same identity.*

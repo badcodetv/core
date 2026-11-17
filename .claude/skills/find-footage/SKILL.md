@@ -5,6 +5,11 @@ description: Use when looking for real footage that already exists and is free f
 
 # Find Footage
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 **The sourcing lane.** Footage that *already exists* and is *free to use* — find it, prove we may
 publish it, get it onto disk in a state Premiere can open.
 

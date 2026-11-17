@@ -15,6 +15,11 @@ description: >
 
 # video-fx — which lane, which effect, and what it costs
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 **The judgement half.** You have been asked for a *result* — fire, a map zoom, a film look, a
 glitch, a file that survives YouTube. This skill decides **what to reach for**. It does not
 drive anything.

@@ -5,6 +5,11 @@ description: Use when turning a song idea into a Suno prompt — a style prompt,
 
 # Suno Prompt (BadCode)
 
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
 Take what's in the user's head — a vague idea, a reference track, a feeling, a story beat — and
 turn it into a Suno prompt that produces accurate, high-quality output, **in the story's own sound**
 (its `docs/stories/<story>/sound.md`), with lyrics in the BadCode voice (`docs/voice.md`, words only).

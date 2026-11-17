@@ -1,15 +1,18 @@
-# The style library
+# The library
 
-> **Read only by the `story-style` interview** (Kai, 2026-10-28). Not a house style, not a
-> default, not a shortlist. It is a wide menu so a new story can find a look and a sound of its
-> own. No other skill, CLAUDE.md or memory may point here: `scripts/style-lint.py` fails if one does.
+> **The tool shed** (Kai and Jack, 2026-11-17 context reset). Looks, sounds and tricks that might serve
+> more than one story. **Nothing here applies to any story until that story copies it into its own
+> `badcode.md`.** Opened only when a story is being set up or restyled (`story-style`, `new-story`,
+> `new-short`): Claude proposes which pieces to take in, Jack or Kai picks, and the picked piece is
+> **copied** (adapted) into the story. Editing an entry here never changes a story that already took it.
 
-**How it is used.** The interview starts from the story (what it argues, who it is for, how the end
-should feel), and only then opens this index. It proposes options from **at least three different
-families**, **at least one off the library** (invented for this story), and avoids a style another
-story already uses (the *Used by* column) unless asked. The picked style is **copied** into the
-story's `look.md` / `sound.md` (the parts it needs, adapted) and named on its `**Library:**` line.
-Editing an entry here never changes a story that has already picked it.
+- `look/` — 80 visual styles · `sound/` — 79 music styles (indexed below)
+- [`tricks/`](./tricks/README.md) — methods that work for any story (reference photos, clean room, the balaclava)
+
+**How a look or sound is picked.** The interview starts from the story (what it argues, who it is for,
+how the end should feel), and only then opens this index. It proposes options from **at least three
+different families**, **at least one off the library** (invented for this story), and avoids a style
+another story already uses (the *Used by* column) unless asked.
 
 **Where it came from.** 20 research agents, 2026-10-28, one per family (10 visual, 10 music), each
 told to say what a style undermines as well as what it serves. They wrote from model knowledge; a

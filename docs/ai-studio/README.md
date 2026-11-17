@@ -43,8 +43,8 @@ still governs: *every route that works COPIES an accent; none invent one.*
 
 ## ✅ THE VOICE LANDED (2026-09-04, Camping's narrator) — Jack: *"that worked"*
 
-**The winning configuration for Camping's narrator**, after five rewrites — a worked example, not a
-default. Change one field at a time from here.
+**The winning configuration for Camping's narrator**, after five rewrites. It is Camping's voice: a record of
+what worked there, not a starting point for another story's voice (that comes from the story's `badcode.md` and `voice-casting`).
 
 | Field | Value |
 |---|---|

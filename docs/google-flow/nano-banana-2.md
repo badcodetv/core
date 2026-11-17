@@ -363,10 +363,10 @@ Four sources is how a frame gets *lit* rather than *photographed*.
 **Web pass, same date, one addition worth keeping:** the word **`photorealistic` is now noise** —
 it appears in so much training data beside CGI and digital painting that it no longer
 discriminates, and it averages toward the waxy look it is meant to prevent `[community]`. The
-working substitute, for a photographic look, is the stack GPOM's and Camping's preambles use: **named camera body, named stock, a stated ISO,
-one positioned light, surface imperfection, and asymmetry.** GPOM's documentary preamble says
-*"hyper-realistic documentary photograph"* rather than *"photorealistic"*, which is the right
-side of this line already — any story's preamble should stay on that side.
+engine fact: concrete, physical description beats the word "photorealistic". **Only if a story has chosen a photographic
+look**, the concrete words are things like a named camera, a stated ISO, a positioned light, surface imperfection and
+asymmetry. A story with a painted, drawn, graphic or any other look ignores this paragraph: the equivalent for it is
+naming its own medium concretely (the paper, the brush, the print process).
 
 Sources: [Why "photorealistic" doesn't work in AI prompts](https://roo.beehiiv.com/p/why-photorealistic-doesn-t-work-in-ai-prompts-and-what-to-write-instead) `[community]` ·
 [Nano Banana Pro prompting tips — blog.google](https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]` ·
