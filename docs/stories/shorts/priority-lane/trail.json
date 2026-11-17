@@ -306,5 +306,24 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 12 (Jack: 'it is still borris, what in the prompt is making that happen'): research-likeness.md (tiny poster face + stacked cues), two-step poster: PA12-a/b/d art match BM9-b, PS12-a street shot from PA12-a. Round 11 files renamed (saved one call late).",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T12:53:31+00:00",
+  "stage": "moodboard",
+  "round": 12,
+  "what": "Round 12 notes dumped to feedback/moodboard-r12",
+  "decided": [
+   "poster: 'make it more obvious that it is him and do a few different bus poster stills but on the actual busstop'; chat: is B. Held fixed (yes, HD9 round 9, shown again)"
+  ],
+  "feedback": "feedback/moodboard-r12",
+  "feedback_docs": 16
+ },
+ {
+  "at": "2026-11-17T12:53:31+00:00",
+  "stage": "moodboard",
+  "round": 13,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 13: PS13-b/c/d his poster (PA12-b/d/a) in a real London bus shelter's end panel, big; HD9 held shots brought back (board_round [13,'HD9'])",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]

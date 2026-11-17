@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 12: why it kept being the real man, and the fix. The face on the poster was tiny (~70 px), so Flow filled it from memory, and our cues (blond mop + posh minister + 'campaign' poster + NHS + hard hat / hi-vis / thumbs up / pointing) all point at one real person. New method in two steps: PA12 = the poster artwork alone, his face big, no politician/campaign words or photo-op props: all three match BM9-b. PS12-a = that poster (PA12-a) put into the driver's-window street shot. Pick a poster artwork; I'll make its street shot.",
+ "moodboard_intro": "Round 13. POSTER (your note: 'more obvious that it is him … on the actual bus stop'): his poster in a real London bus shelter's end panel, big and clear, seen out of the driver's window: PS13-b tea, PS13-c stethoscope, PS13-d bedside. HELD: yes, fixed in round 9 and brought back here: HD9-a..d are shot from a high ambulance van cab looking down on the outrider. Pick one of each.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -188,7 +188,10 @@
    "C. The minister (picked round 9)"
   ]
  ],
- "board_round": 12,
+ "board_round": [
+  13,
+  "HD9"
+ ],
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"
