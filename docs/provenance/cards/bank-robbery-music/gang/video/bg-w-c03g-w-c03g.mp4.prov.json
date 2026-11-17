@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-c03g-w-c03g.mp4",
+ "made": "2026-11-17T18:43:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no camera movement. The seven round the iron press perform together like a stadium act in a cellar, the small woman in the canary-yellow coat in front in the middle. On the first beat all seven punch their fists up at the low ceiling in unison. On the next they bounce at the knees, shoulders shrugging, heads nodding hard. Then she slams both gloves flat on top of the press while the men point down at it with both hands, mock-outraged. Then all seven throw both arms up, palms raised, and pump them on every beat. She moves with swagger and attitude the whole time: chin up, hips leading, a loose bratty shoulder roll on the beat, never stiff. Nobody leaves their place. Stamps and cloth rustle.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
+ "why": "her in c03g: Kai's fix pick (r6/c03g-a.jpg, feedback/her-shots-r2), original motion + her swagger",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-c03g.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-c03g",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-17T18:41:45.669Z"
+ }
+}
