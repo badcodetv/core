@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 9, from Jack's notes (2026-11-17). Poster: now seen out of the ambulance's right-hand DRIVER'S window, the van driving straight down its lane, the shelter across the road (the face on it is a stand-in, BM9-c, until you pick the minister). Held: the outrider seen from a high van cab, not a car. Cordon: CD8-b's angle with police holding BOTH sides of the road and the side roads. Minister: more Boris-alikes, hair and size kept, the face changed. ⚠ BM9-a is very close to the real man.",
+ "moodboard_intro": "Round 10: the four driver's-window bus-stop posters remade with YOUR minister, BM9-b, so it's the same man in the car and on the poster. Same prompts as round 9; only the face changed. Pick one.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -176,19 +176,19 @@
    "B. Held"
   ],
   [
-   "NOW-MIN1-b",
-   "C. The motorcade (round 1 minister, clip pl-04 + lip-sync)"
-  ],
-  [
    "FL4-a",
    "D. Flatline"
   ],
   [
    "CD8-b",
    "A3. The cordon (picked round 8)"
+  ],
+  [
+   "BM9-b",
+   "C. The minister (picked round 9)"
   ]
  ],
- "board_round": 9,
+ "board_round": 10,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"

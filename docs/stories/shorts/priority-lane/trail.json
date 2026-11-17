@@ -271,5 +271,24 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 9: PS9 poster out of the driver's window (stand-in face BM9-c), HD9 held from a high van cab, CD9 cordon with every approach held (ref CD8-b), BM9 more Boris-alikes; clean room cleanroom/r9 (four sealed writers with web research)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T12:21:03+00:00",
+  "stage": "moodboard",
+  "round": 9,
+  "what": "Round 9 votes dumped to feedback/moodboard-r9",
+  "decided": [
+   "BM9-b is the minister (Jack: 'you have to use the borris i chose for it to be consistant'); remake the bus-stop posters with him"
+  ],
+  "feedback": "feedback/moodboard-r9",
+  "feedback_docs": 15
+ },
+ {
+  "at": "2026-11-17T12:21:03+00:00",
+  "stage": "moodboard",
+  "round": 10,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 10: PS10-a..d, the round 9 poster prompts re-run with BM9-b as the face reference",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]
