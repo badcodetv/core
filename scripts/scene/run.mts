@@ -308,6 +308,9 @@ async function collect(baseline: Set<string>, keys: string[]) {
   catch (err) { say({ event: 'match-fail', why: (err as Error).message.slice(0, 160) }) }
 }
 
+// A stopped worker still closes its own tab (pool run 1 left two open when its workers were killed).
+if (OPEN_TAB) for (const sig of ['SIGINT', 'SIGTERM'] as const)
+  process.on(sig, () => { c.closeTab().catch(() => {}).finally(() => process.exit(130)) })
 try {
   await page.goto(`https://flow.google.com/project/${PROJECT}`, { waitUntil: 'domcontentloaded' })
   await sleep(5000)

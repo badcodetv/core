@@ -12,7 +12,7 @@ what to put in it.
 ### Speed rules (Jack, 2026-11-12: "refresh the page and try again instead of waiting")
 
 - **Many clips at once: `scripts/scene/pool.mts` (2026-11-17).** `TABS=3 npx tsx scripts/scene/pool.mts <scene-dir>`
-  runs a scene's missing clips in K tabs of the signed-in browser, each tab its own Flow project and its own
+  runs a scene's missing clips in K tabs (default 10, never more than jobs) of the signed-in browser, each tab its own Flow project and its own
   `run.mts` worker (law 16 is two jobs in ONE tab; separate tabs don't share a compose bar). Jobs that cast a
   Character stay on the scene's own project (Characters live in a project). The MCP skips pool tabs. Google's
   per-account limit is unmeasured: start at 3, read `<media>/video/pool.log`, then raise it.

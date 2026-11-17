@@ -18,12 +18,13 @@
  * - Workers start STAGGER_MS apart (default 20 s) so their first uploads don't all hit Flow in the same second.
  *
  * 🔴 Credits and Google's rate limits are per ACCOUNT. More tabs is not free throughput past Google's own limit, which
- * is unmeasured: start at TABS=3, read the pool log, then try more.
+ * is unmeasured: default 10 (Kai, 2026-11-17); never more tabs than jobs. Read the pool log for throttling.
  */
 import { execFileSync, spawn } from 'node:child_process'
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { FlowClient } from '../../packages/flow-mcp/src/flow-client'
+import { FlowClient, isPoolTab } from '../../packages/flow-mcp/src/flow-client'
+import { chromium } from 'playwright'
 import { planPool } from './pool-plan'
 
 const REPO = new URL('../..', import.meta.url).pathname
@@ -35,8 +36,9 @@ const MEDIA = execFileSync('python3', [join(HERE, '../drive/localmap.py'), 'path
 if (!CFG.flow_project) throw new Error('scene.json has no flow_project')
 const INBOX = join(MEDIA, 'video/inbox')
 mkdirSync(INBOX, { recursive: true })
-const TABS = Math.max(1, Number(process.env.TABS ?? 3))
-const STAGGER_MS = Number(process.env.STAGGER_MS ?? 20_000)
+// Kai, 2026-11-17: 10 by default (3 ran clean on run 1). Never more tabs than jobs.
+const TABS = Math.max(1, Number(process.env.TABS ?? 10))
+const STAGGER_MS = Number(process.env.STAGGER_MS ?? 10_000)
 const ENDPOINT = process.env.FLOW_CDP ?? `http://localhost:${process.env.FLOW_CDP_PORT ?? 9222}`
 const LOG = join(MEDIA, 'video/pool.log')
 const say = (o: Record<string, unknown>) => {
@@ -79,11 +81,29 @@ const runs = lanes.map((lane, i) => new Promise<number>((done) => {
       env: { ...process.env, WORKER: `w${i}`, OPEN_TAB: '1', FLOW_PROJECT: projects[i]!, FLOW_CDP: ENDPOINT },
       stdio: ['ignore', 'inherit', 'inherit'],
     })
+    children.push(child)
     say({ event: 'worker-start', worker: `w${i}`, pid: child.pid, keys: lane.map((s) => s.key) })
     child.on('exit', (code) => { say({ event: 'worker-exit', worker: `w${i}`, code }); done(code ?? 1) })
   }, i * STAGGER_MS)
 }))
+const children: import('node:child_process').ChildProcess[] = []
+/** Close every tab a pool worker opened and left behind (a killed worker never reaches its own closeTab). */
+async function sweepTabs() {
+  const b = await chromium.connectOverCDP(ENDPOINT).catch(() => null)
+  if (!b) return
+  let n = 0
+  for (const p of b.contexts()[0]?.pages() ?? []) if (await isPoolTab(p)) { await p.close().catch(() => {}); n++ }
+  await b.close().catch(() => {})
+  if (n) say({ event: 'swept-tabs', closed: n })
+}
+for (const sig of ['SIGINT', 'SIGTERM'] as const) process.on(sig, async () => {
+  for (const ch of children) ch.kill('SIGTERM')
+  await new Promise((r) => setTimeout(r, 2000))
+  await sweepTabs()
+  process.exit(130)
+})
 const codes = await Promise.all(runs)
+await sweepTabs()
 const left = missing().map((s) => s.key)
 say({ event: 'done', minutes: +((Date.now() - started) / 60_000).toFixed(1), made: todo.length - left.length, remaining: left, codes })
 process.exit(left.length ? 1 : 0)
