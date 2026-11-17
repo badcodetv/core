@@ -25,10 +25,11 @@
  * To run several at once, use scripts/scene/pool.mts: it starts this script K times, each in its own tab and project.
  */
 import { execFileSync } from 'node:child_process'
-import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, renameSync, statSync, writeFileSync } from 'node:fs'
+import { appendFileSync, copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { FlowClient } from '../../packages/flow-mcp/src/flow-client'
-import { withLock } from './lock'
+import { withLock, withLockAsync } from './lock'
 
 const REPO = new URL('../..', import.meta.url).pathname
 const HERE = join(REPO, 'scripts/scene')
@@ -43,6 +44,9 @@ const PROJECT: string = process.env.FLOW_PROJECT || CFG.flow_project
 if (!PROJECT) throw new Error('scene.json has no flow_project')
 const WORKER = process.env.WORKER ?? ''
 const OPEN_TAB = process.env.OPEN_TAB === '1'
+// Recovery: HARVEST_KEYS=k1,k2,… (in SUBMIT order) says the top N tiles of this project are those jobs, rendered and
+// paid for but never downloaded. Collect them, submit nothing, stop.
+const HARVEST = (process.env.HARVEST_KEYS ?? '').split(',').filter(Boolean)
 const STAGE = join(process.env.HOME!, '.cache/badcode-scenes', CFG.scene, 'plates')
 const INBOX = join(CFG.media, 'video/inbox')
 const LOG = join(CFG.media, 'video/run.log')
@@ -107,19 +111,47 @@ const topTiles = async (n: number) =>
   }), n)
 const allKeys = async (): Promise<Set<string>> => new Set((await topTiles(999)).map((t: any) => t.key).filter(Boolean))
 
+/**
+ * Download tile i to `out`. 🔴 Chrome has ONE download folder per browser context, and every Playwright connection
+ * points it at its own temp folder: with several workers (or a worker beside an MCP) the last one to connect gets
+ * everyone's files, and the rest fail with ENOENT (pool run 1, 2026-11-17; the 2026-10-23 lost hour was the same
+ * thing). So each download takes the folder for itself, under a lock all workers share, and reads the file Chrome
+ * names by its guid, instead of trusting Playwright's download object.
+ */
 async function download(i: number, out: string) {
-  const tile = page.locator('flow-video-tile').nth(i)
-  await tile.scrollIntoViewIfNeeded().catch(() => {})
-  const dl = page.waitForEvent('download', { timeout: 60_000 }); dl.catch(() => {})
-  await tile.evaluate((e: any) => { const b = [...e.querySelectorAll('button')].find((b: any) => b.getAttribute('aria-label') === 'More options') as any; b?.click() })
-  const item = page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /^\s*download\s*Download\s*$/ }).first()
-  await item.waitFor({ state: 'visible', timeout: 15_000 })
-  await item.click()
-  const orig = page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /Original size/i }).first()
-  await orig.waitFor({ state: 'visible', timeout: 15_000 })
-  await orig.click()
-  await (await dl).saveAs(out)
-  await page.keyboard.press('Escape').catch(() => {})
+  await withLockAsync(join(INBOX, '.download.lock'), async () => {
+    const tile = page.locator('flow-video-tile').nth(i)
+    await tile.scrollIntoViewIfNeeded().catch(() => {})
+    const ps = await page.context().newCDPSession(page)
+    const { targetInfo } = await ps.send('Target.getTargetInfo')
+    await ps.detach().catch(() => {})
+    const cdp = await c.browser.newBrowserCDPSession()
+    const dir = mkdtempSync(join(process.env.TMPDIR ?? tmpdir(), 'flowdl-'))
+    try {
+      await cdp.send('Browser.setDownloadBehavior', { behavior: 'allowAndName', downloadPath: dir, eventsEnabled: true, browserContextId: targetInfo.browserContextId })
+      const done = new Promise<string>((ok, bad) => {
+        const t = setTimeout(() => bad(new Error('DOWNLOAD_TIMEOUT')), 90_000)
+        cdp.on('Browser.downloadProgress', (e: any) => {
+          if (e.state === 'completed') { clearTimeout(t); ok(e.guid) }
+          else if (e.state === 'canceled') { clearTimeout(t); bad(new Error('DOWNLOAD_CANCELED')) }
+        })
+      })
+      done.catch(() => {})
+      await tile.evaluate((e: any) => { const b = [...e.querySelectorAll('button')].find((b: any) => b.getAttribute('aria-label') === 'More options') as any; b?.click() })
+      const item = page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /^\s*download\s*Download\s*$/ }).first()
+      await item.waitFor({ state: 'visible', timeout: 15_000 })
+      await item.click()
+      const orig = page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /Original size/i }).first()
+      await orig.waitFor({ state: 'visible', timeout: 15_000 })
+      await orig.click()
+      const guid = await done
+      copyFileSync(join(dir, guid), out)
+      await page.keyboard.press('Escape').catch(() => {})
+    } finally {
+      await cdp.detach().catch(() => {})
+      rmSync(dir, { recursive: true, force: true })
+    }
+  })
 }
 const clickText = async (t: string) => page.evaluate((t: string) => {
   const b = [...document.querySelectorAll('button')].find((b) => (b.textContent || '').trim() === t || b.getAttribute('aria-label') === t) as HTMLElement | undefined
@@ -279,9 +311,15 @@ async function collect(baseline: Set<string>, keys: string[]) {
 try {
   await page.goto(`https://flow.google.com/project/${PROJECT}`, { waitUntil: 'domcontentloaded' })
   await sleep(5000)
+  if (HARVEST.length) {
+    await c.reloadProject()
+    const top = await topTiles(999)
+    say({ event: 'harvest-only', keys: HARVEST, top: top.slice(0, HARVEST.length).map((t: any) => t.text) })
+    await collect(new Set(top.slice(HARVEST.length).map((t: any) => t.key).filter(Boolean)), HARVEST)
+  }
   let stuck = 0
   const blocked = new Set<string>()
-  for (let wave = 1; wave <= 8; wave++) {
+  for (let wave = 1; wave <= (HARVEST.length ? 0 : 8); wave++) {
     const todo = missing().filter(s => !blocked.has(s.key))
     if (!todo.length) { say({ event: 'all-present', wave }); break }
     const batch = todo.slice(0, WAVE)
