@@ -298,5 +298,13 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 11 (Jack: 'use the accepted borris lookalike as the reference image, and dont mention his name in the prompt'): PS11-b..d from a nameless clean-room brief, BM9-b attached; PS11-a failed twice (reference returned)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T12:38:48+00:00",
+  "stage": "moodboard",
+  "round": 12,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 12 (Jack: 'it is still borris, what in the prompt is making that happen'): research-likeness.md (tiny poster face + stacked cues), two-step poster: PA12-a/b/d art match BM9-b, PS12-a street shot from PA12-a. Round 11 files renamed (saved one call late).",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]
