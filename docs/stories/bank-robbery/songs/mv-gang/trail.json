@@ -379,5 +379,16 @@
   "decided": [
    "Clips by badcode-4f's tab pool (worktree-flow-tab-pool), 19/19, checked: no duplicates, 6.04 s each, first frames match"
   ]
+ },
+ {
+  "at": "2026-11-17T18:47:48+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "url": "https://claude.ai/artifact/63z6GJMxGiyKyoEaEPMqsp",
+  "what": "Cut 10H2: 10H1 plus the 8 approved fixes; her in 27 shots / 33 slots, same timing; d10 and q09 original",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/cuts/make-H1.py && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/cuts/make-H2.py && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/cuts/assemble.py H2 <out-dir> 0.12",
+  "decided": [
+   "Kai's fix picks (feedback/her-shots-r2): r6 take a for a01m a02m c03g h07 k01m k19m; original picks for h12 (peg man stays) and h18"
+  ]
  }
 ]

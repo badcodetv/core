@@ -14,7 +14,7 @@ END = 187.0
 FADE = float(sys.argv[3]) if len(sys.argv) > 3 else 1.0  # Kai on 10B: a 1 s fade is too aggressive, "just almost cut the audio off"
 plan = json.load(open(HERE / f'plan-{L}.json'))
 about = (HERE / f'about-{L}.md').read_text().strip() if (HERE / f'about-{L}.md').exists() else ''
-NAMES = {'A': "Jack's cut, fixed", 'B': 'Strict alternation', 'C': 'On the words', 'D': 'Breathing', 'E': 'Energy curve', 'B2': 'Strict alternation, round 2 (on the kick)', 'B3': 'Strict alternation, round 3', 'B4': 'Strict alternation, round 4', 'B5': 'Strict alternation, round 5', 'H1': 'Her in the gang, round 1'}
+NAMES = {'A': "Jack's cut, fixed", 'B': 'Strict alternation', 'C': 'On the words', 'D': 'Breathing', 'E': 'Energy curve', 'B2': 'Strict alternation, round 2 (on the kick)', 'B3': 'Strict alternation, round 3', 'B4': 'Strict alternation, round 4', 'B5': 'Strict alternation, round 5', 'H1': 'Her in the gang, round 1', 'H2': 'Her in the gang, round 2'}
 def resolve(ref):
     return NOIR / (ref[3:] + '.mp4') if ref.startswith('cn:') else sorted(VID.glob(f'bg-{ref}-*.mp4'))[0]
 BEATS = [("intro", "Intro", 0, 20.14), ("verse1", "Verse 1", 20.14, 41.2), ("verse2", "Verse 2", 41.2, 61.86),
