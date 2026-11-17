@@ -401,5 +401,13 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 17: CD17/HD17 with geometry.md (convoy crosses L-R, both sides held); physics-checked: CD17-b/c, HD17-a/b pass, CD17-a borderline",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T14:48:27+00:00",
+  "stage": "moodboard",
+  "round": 18,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 18: every still rebuilt on Unsplash templates, checked: LS/PB/HD pass, CD18-a dusk, CD18-b fail (convoy turns toward camera), BM18 fail (face drifts to the real man), FL18 trace flatness unclear",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]

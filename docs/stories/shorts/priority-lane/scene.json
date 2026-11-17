@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 17: the traffic fixed in the cordon and the held shot (they were the convoy driving down the wrong side at the ambulance). Now the convoy CROSSES the junction left to right, police hold the oncoming side too, the ambulance stays in its lane. Every still checked for direction and lane: CD17-b, CD17-c, HD17-a, HD17-b pass; CD17-a borderline; CD17-d (added) pass. Pick one cordon and one held shot from the same junction.",
+ "moodboard_intro": "Round 18: every still rebuilt on a real Unsplash photo as the template (your ruling). Each card says how it did on the traffic/physics and likeness check. Strongest: LS18 (ambulance interior), PB18 (poster at the bus stop), HD18 (from the cab). Failed: CD18-b (convoy turns toward us), BM18 (face drifted toward the real man). Pick per beat, or keep the earlier picks.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -192,7 +192,7 @@
    "A2. His poster (picked round 16)"
   ]
  ],
- "board_round": 17,
+ "board_round": 18,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"

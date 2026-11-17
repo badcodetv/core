@@ -1,6 +1,6 @@
 # Priority Lane: resume here
 
-**2026-11-17 (latest): ROUND 18, every still rebuilt from Unsplash photos** (Jack: "use unsplash to recreate every still … use the unsplash stuff as a template"). Real photos chosen per beat (refs.json, `reference/unsplash/`), one sealed writer (`clean-room-writer`), prompts in `cleanroom/r18/prompts.json`. Made: LS18-a/b, PB18-a/b, CD18-a/b, HD18-a/b, BM18-a/b, FL18-a/b (12 of 12, none a reference copy). Not yet checked for physics or put on the board. Picks before this round: BM9-b, PB16-d, LS5-b, FL4-a; junction pair still open (CD17-b/c/d, HD17-a/b).
+**2026-11-17 (latest): ROUND 18, every still rebuilt from Unsplash photos** (Jack: "use unsplash to recreate every still … use the unsplash stuff as a template"). Real photos chosen per beat (refs.json, `reference/unsplash/`), one sealed writer (`clean-room-writer`), prompts in `cleanroom/r18/prompts.json`. Made: LS18-a/b, PB18-a/b, CD18-a/b, HD18-a/b, BM18-a/b, FL18-a/b (12 of 12, none a reference copy). Checked and on the board: LS18, PB18, HD18 pass; CD18-a dusk; CD18-b fail (convoy turns toward camera); BM18 fail (face drifts to the real man; keep BM9-b); FL18 flat trace unclear. Picks before this round: BM9-b, PB16-d, LS5-b, FL4-a; junction pair still open (CD17-b/c/d, HD17-a/b).
 
 **2026-11-17 (latest): REOPENED, round 5 from Kai's meeting notes** (`feedback/meeting-2026-11-17/notes.md`). Kai: the jeopardy now works; the opening is fine. Changes:
 1. The minister becomes a **Boris-alike** (Jack's ruling: invented, never named, not his face), on the poster too.
