@@ -154,7 +154,7 @@ faithful than re-casting from a new reference, and recoverable via **Show histor
 **Model picker — two layouts, and it RESETS on navigation.** The canvas has one trigger
 concatenating model+aspect+count (`🍌 Nano Banana Pro crop_16_9 x2`) with the model
 submenu nested inside its menu; the character editor has a bare
-`🍌 <model> arrow_drop_down` trigger. Both default back to **Nano Banana 2** after
+`🍌 <model> arrow_drop_down` trigger. Both default back to the menu default (**Nano Banana Pro** on a fresh project, 2026-11-17; it was Nano Banana 2 until that left the menu) after
 navigation, so the model is asserted **per generation**. Tiers: **Nano Banana Pro** >
 Nano Banana 2 > Nano Banana 2 Lite. Beware: `Nano Banana 2` is a strict prefix of
 `Nano Banana 2 Lite`, so a substring check silently generates on the wrong tier

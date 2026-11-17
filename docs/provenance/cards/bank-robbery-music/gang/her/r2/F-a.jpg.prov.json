@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r2/F-a.jpg",
+ "made": "2026-11-17T15:16:41+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r2/run.mts",
+ "model": "Nano Banana 2.1",
+ "why": "mv-gang her look r2, design F (gang leader, Kai 2026-11-17)",
+ "prompt": "A frame from a 1920s period feature film on 35mm motion-picture film. The place is the bank steps in the attached frame from the film: keep its stone columns, the wide steps, the dusk sky, the fireball in the doorway and the banknotes drifting through the air. All six masked men from that frame stay, every one of them, in the same order from left to right: PLUM, BOTTLE, CRIMSON in his black fedora, MARINE, RUST and SILVER, suits and masks copied exactly from the attached line-up card. They have closed up into a tight wall one step behind her, big and broad, gloved fists at their sides, looming like bodyguards. In front of them, centre frame and nearest the lens, stands the seventh member and the gang's leader: a small, slight woman, a head and a half shorter than any of the men, seen whole from head to boots. She carries no weapon. She wears a 1920s cocoon opera coat in deep emerald velvet, swallowing her small frame, with a wide white fur shawl collar closed up round her neck and fur cuffs, a long rope of pearls hung over the coat, gold-studded black kid gloves, and black T-strap heels. A black cloche hat with one long pheasant feather is pulled low on the balaclava. Her raspberry knitted balaclava covers her whole head and neck with no eye, nose or mouth openings and tucks into her collar; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. She leans back with her chin up and one gloved hand on her hip, the other hand flicking two fingers at the lens, utterly unbothered by the fire behind her. Low camera at her chest height, 28mm lens, so the men tower behind her. No text, lettering or logos anywhere. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/home/kai/.cache/badcode-refs/gang/places/h17.png",
+  "ref2": "/home/kai/.cache/badcode-refs/gang/gang-lineup-heads-kai.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}

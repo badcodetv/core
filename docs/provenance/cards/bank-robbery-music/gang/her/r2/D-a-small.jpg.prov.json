@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r2/D-a-small.jpg",
+ "made": "2026-11-17T15:16:57+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r2/shrink.mts",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r2/D-a.jpg",
+ "why": "mv-gang her look r2 shrink pass (Kai: chest height)",
+ "prompt": "Using the attached image, change only the woman in the middle, the one in a different outfit from the six men in suits. Make her much smaller and slighter: the top of her hat reaches only the middle of the men's chests. Move her one stride forward, down onto the step in front of the men and closer to the lens, so she stands alone in front of them, centre frame, and close the six men up into a tight row directly behind her, so they tower over her like bodyguards. Keep her outfit, her balaclava, its white ring and red triangle, and her gesture exactly as they are. Keep every man, the columns, the steps, the fire, the flying banknotes, the light and the framing exactly the same. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r2/D-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "1"
+ }
+}

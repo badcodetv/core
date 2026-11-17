@@ -69,7 +69,7 @@ const UPLOAD_READY_MS = 30_000
  * Settings panel RESETS to Omni Flash on a fresh project (automation-video.md:20).
  */
 export type VideoAspect = '16:9' | '9:16'
-const IMAGE_MODELS_HINT = '"Nano Banana 2", "Nano Banana Pro" or "Nano Banana 2 Lite"'
+const IMAGE_MODELS_HINT = '"Nano Banana 2.1" (the newest, our default since 2026-11-17), "Nano Banana Pro" or "Nano Banana 2 Lite"; "Nano Banana 2" is no longer in Flow\'s menu'
 const VIDEO_MODELS_HINT = 'e.g. "Omni Flash", "Veo 3.1 Lite", "Veo 3.1 Fast", "Veo 3.1 Quality"'
 export function requireImageModel(model: string | undefined, where: string): string {
   if (!model)
@@ -759,7 +759,17 @@ export class FlowClient {
         .locator('.cdk-overlay-container button[role="menuitem"]')
         .filter({ hasText: new RegExp(`^\\s*🍌\\s*${escapeRegExp(model)}\\s*$`) })
         .first()
-      await option.waitFor({ state: 'visible', timeout: 10_000 })
+      try {
+        await option.waitFor({ state: 'visible', timeout: 10_000 })
+      } catch {
+        // 2026-11-17: "Nano Banana 2" left the menu (now Pro · 2 Lite · 2.1). Say what IS there, and close the
+        // popover first: left open, its backdrop swallows the next call's clicks (automation-2026-09-rebuild.md item 80).
+        const items = (await this.page.locator('.cdk-overlay-container button[role="menuitem"]').allInnerTexts())
+          .map(t => t.replace(/🍌/g, '').trim()).filter(Boolean)
+        await this.page.keyboard.press('Escape').catch(() => {})
+        await this.closeSettings().catch(() => {})
+        throw new Error(`MODEL_NOT_IN_MENU: "${model}" is not in Flow's image menu, which lists ${items.map(i => `"${i}"`).join(', ') || '(nothing read)'}. Use the newest Nano Banana there.`)
+      }
       await option.click()
       await this.closeSettings()
       const label = (await this.settingsTrigger().textContent()) ?? ''

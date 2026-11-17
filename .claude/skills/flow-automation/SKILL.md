@@ -210,6 +210,12 @@ your upload by diffing the tile grid, and that diff degrades in a cluttered proj
   `docs/google-flow/2026-11-09-omni-1-2-sweep.md`). It costs ~2× Omni 1.1 at 720p; 360p is the cheap draft.
 - ~~A cast character cannot run on Veo 3.1 Quality, and forces 8s. Character shots top out at Fast.~~ Moot once Fast and
   Quality leave; whether 1.2 holds a cast character is untested.
+- 🔴 **Stills: the newest Nano Banana in Flow's menu (Kai, 2026-11-17).** Today that is **`"Nano Banana 2.1"`**; the menu
+  reads **Nano Banana Pro · Nano Banana 2 Lite · Nano Banana 2.1**. **`"Nano Banana 2"` is gone** (first seen 2026-10-19,
+  `docs/flow/automation-2026-09-rebuild.md` item 78; it broke the Bank Robbery gang run on 2026-11-17): a call naming it
+  waits 10 s for a menu item that is not there, and the tool now fails with `MODEL_NOT_IN_MENU` and lists what the menu has.
+  A story's look.md that still names "Nano Banana 2" means its successor: use 2.1 and say so. When Flow adds a newer
+  Nano Banana, switch to it, and update this line and `IMAGE_MODELS_HINT` in `packages/flow-mcp/src/flow-client.ts`.
 - **Veo audio is always on and cannot be disabled.** Strip it: `ffmpeg -i in.mp4 -c:v copy -an out.mp4`.
 
 ---
@@ -340,7 +346,7 @@ explain most of what you will see.
     straight into the composer; one or more requires clicking the `New Character` tile first.
     Code tested only on an empty project ships broken and passes review — that is exactly how
     `createCharacterFromMedia` shipped.
-15. **Navigation clears the bar and resets the pickers.** Model reverts to Nano Banana 2, chips
+15. **Navigation clears the bar and resets the pickers.** Model reverts to the menu default (Nano Banana Pro on a fresh project, seen 2026-11-17), chips
     detach, frame slots wipe. That is also the reliable way to *guarantee* a clean bar before
     `Reuse prompt`.
 16. 🔴 **One browser, one generation at a time — and a second call kills BOTH.** Added

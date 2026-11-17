@@ -145,13 +145,13 @@ const IMAGE_ASPECTS = [
 
 const IMAGE_MODEL_DESC =
   'model is REQUIRED: the image model for this call, taken from the story\'s docs/stories/<story>/look.md — ' +
-  'there is no default (2026-10-29). Recorded tiers: "Nano Banana 2", "Nano Banana Pro", "Nano Banana 2 Lite". ' +
+  'there is no default (2026-10-29). Menu on 2026-11-17: "Nano Banana 2.1" (newest: use it), "Nano Banana Pro", "Nano Banana 2 Lite"; "Nano Banana 2" is gone. ' +
   'The model used is recorded on the result\'s recipe card.'
 
 /** refine only: model is optional there, because a follow-up keeps the previous turn's model. */
 const IMAGE_MODEL_REFINE_DESC =
   'model is optional here: omitted, the previous turn\'s model is kept (there is no default model). ' +
-  'Recorded tiers: "Nano Banana 2", "Nano Banana Pro", "Nano Banana 2 Lite".'
+  'Menu on 2026-11-17: "Nano Banana 2.1" (newest), "Nano Banana Pro", "Nano Banana 2 Lite"; "Nano Banana 2" is gone.'
 /** Character tools: model matters only when the call GENERATES (a body from a description, an edit). */
 const CHARACTER_MODEL_DESC =
   'Image model for any generation this call makes (a Body from a description, an edit) — required then, ' +

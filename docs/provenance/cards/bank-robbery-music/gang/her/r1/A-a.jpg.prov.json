@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r1/A-a.jpg",
+ "made": "2026-11-17T15:16:38+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r1/run.mts",
+ "model": "Nano Banana 2.1",
+ "why": "mv-gang her look r1, design A (gang leader, Kai 2026-11-17)",
+ "prompt": "A frame from a 1920s period feature film on 35mm motion-picture film. The place is the bank steps in the attached frame from the film: keep its stone columns, the wide steps, the dusk sky, the fireball in the doorway and the banknotes drifting through the air. The six masked men from that frame stay exactly as they are, same suits, same order, masks copied exactly from the attached line-up card, but the line has spread a little and moved two steps back, so there is room in front. A seventh robber, the gang's leader, is a woman. She stands one stride ahead of the men, centre frame, nearest the lens, seen whole from hat to boots. She wears a black velvet riding habit: a high-collared jacket buttoned to the throat and nipped tight at the waist, and a long full skirt that sweeps to her laced riding boots. A wide-brimmed black Stetson with a curling black ostrich plume sits on the balaclava. Two cartridge belts cross at her hips with a pearl-handled revolver holstered on each side, and black kid gauntlets cover her hands to the forearm. Her jet-black knitted balaclava covers her whole head and neck with no eye, nose or mouth openings and tucks into her collar; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. She stands perfectly still and upright like a studio portrait, chin raised, one revolver lifted beside her hat, the other gloved hand on her hip. Low camera at her knee height, 28mm lens, the men soft behind her. No text, lettering or logos anywhere. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/home/kai/.cache/badcode-refs/gang/places/h17.png",
+  "ref2": "/home/kai/.cache/badcode-refs/gang/gang-lineup-heads-kai.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}

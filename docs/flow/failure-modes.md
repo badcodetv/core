@@ -411,7 +411,7 @@ Not Flow's fault, but they present identically. Full detail in
 - **Stale-tab drift** — calls land on a tab left open at a different project.
 - **Multiple references or references over ~1 MB** are the two known causes of upload
   timeouts. Downscale to ~1600px and pass exactly one.
-- **The model picker resets to Nano Banana 2 on every navigation.**
+- **The model picker resets on every navigation** (to Nano Banana Pro on a fresh project, 2026-11-17). **"Nano Banana 2" is no longer in the menu**: use the newest, "Nano Banana 2.1".
 
 ---
 
