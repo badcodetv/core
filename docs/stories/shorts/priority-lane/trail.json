@@ -428,5 +428,19 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 19: HD19-a/b/c held shot built from the picks (CD18-a junction, LS18-b crew); all pass",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T15:20:04+00:00",
+  "stage": "clips",
+  "round": 5,
+  "what": "Six picks animated (Omni 1.2 Flash, 9:16): r5-A LS18-b, r5-A2 PB18-a, r5-A3 CD18-a, r5-B HD19-b, r5-C BM18-a pass; r5-D FL18-a refused 3x (flatline used as a still push-in)"
+ },
+ {
+  "at": "2026-11-17T15:20:04+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Round 5 rough cut (26 s): Unsplash-built shots, Kai's meeting notes, new minister line (Charon) and constable radio (stand-in Iapetus), score c5d8704d + Suno effects; transcript checked against the script",
+  "rebuild": "python3 scripts/shorts/priority_lane_cut_r5.py && python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
  }
 ]

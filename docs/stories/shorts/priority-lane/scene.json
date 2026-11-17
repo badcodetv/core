@@ -66,10 +66,10 @@
   "timeline_r1": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/edl.json",
-  "by": "scripts/shorts/priority_lane_cut_r4.py",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r4/preview.mp4",
-  "script": "python3 scripts/shorts/priority_lane_cut_r4.py"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r5/edl.json",
+  "by": "scripts/shorts/priority_lane_cut_r5.py",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r5/preview.mp4",
+  "script": "python3 scripts/shorts/priority_lane_cut_r5.py"
  },
  "premiere": {
   "current": "r4",

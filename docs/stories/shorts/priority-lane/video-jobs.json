@@ -77,6 +77,69 @@
    "character": null,
    "why": "Jack 2026-11-14 picked PS6-c: his SAVE OUR NHS poster seen from the ambulance, cut into beat A",
    "motion": "The ambulance rolls slowly forward, so the bus shelter and its glowing poster slide gently across the side window while staying in view. Its blue emergency lights pulse across the wet door frame and the glass. Rain falls hard in the street-lamp glow and drops run down the window. The poster stays sharp and still. No talking. Siren and rain sounds only. Thanks."
+  },
+  {
+   "key": "r5-A",
+   "n": 1,
+   "still": "LS18-b",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-17: 'please animate the images' (picks LS18-b, PB18-a, CD18-a, HD19-b, BM18-a, FL18-a)",
+   "motion": "The camera does not move. Looking in through the open rear doors of an ambulance at night. The paramedic in the left foreground keeps pumping hard chest compressions on the patient; the paramedic on the right tears the defibrillator pads from the orange case and turns to the monitor. The green trace on the monitor races. Rain falls past the open doors and blue light flickers on the wet door frame. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks."
+  },
+  {
+   "key": "r5-A2",
+   "n": 2,
+   "still": "PB18-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-17: 'please animate the images' (picks LS18-b, PB18-a, CD18-a, HD19-b, BM18-a, FL18-a)",
+   "motion": "The camera does not move. From the bench of a bus shelter at night in heavy rain, the lit poster glows steady and unchanged. The ambulance with flashing blue lights speeds toward us down the lane nearest the kerb, grows larger and rushes past out of the left side of the frame, its blue light sweeping across the wet pavement, the bench and the glass over the poster, spray lifting from its wheels. Rain streaks through the orange street lamps. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks."
+  },
+  {
+   "key": "r5-A3",
+   "n": 3,
+   "still": "CD18-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-17: 'please animate the images' (picks LS18-b, PB18-a, CD18-a, HD19-b, BM18-a, FL18-a)",
+   "motion": "The camera does not move. High above a rainy London junction at dusk. The two black saloon cars glide steadily across the yellow box junction from left to right and out of the frame on the right, the white police motorcycle following them. At the stop line the ambulance's blue roof lights keep flashing and the police officers stand still, one gloved hand raised. Rain falls through the orange street lamps. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks."
+  },
+  {
+   "key": "r5-B",
+   "n": 4,
+   "still": "HD19-b",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-17: 'please animate the images' (picks LS18-b, PB18-a, CD18-a, HD19-b, BM18-a, FL18-a)",
+   "motion": "The camera does not move. From the driver's seat of a stopped ambulance, through the rain-streaked windscreen. The police officer in front holds his gloved palm up toward us, steady. Behind him the two black saloon cars slide slowly across the junction from left to right. The wiper sweeps once across the glass, clearing a band of rain. Blue light pulses on the wet bonnet, and the driver's gloved hand tightens on the wheel. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks."
+  },
+  {
+   "key": "r5-C",
+   "n": 5,
+   "still": "BM18-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-17: 'please animate the images' (picks LS18-b, PB18-a, CD18-a, HD19-b, BM18-a, FL18-a)",
+   "motion": "The camera does not move. In the back seat of a black car at night, the man chats into the phone at his right ear, relaxed and amused, his lips moving as he talks; with his free hand he picks a canapé from the little silver tray. Rain runs down the side window and blue light from outside sweeps across the glass and his face. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks."
+  },
+  {
+   "key": "r5-D",
+   "n": 6,
+   "still": "FL18-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-17: 'please animate the images' (picks LS18-b, PB18-a, CD18-a, HD19-b, BM18-a, FL18-a)",
+   "motion": "The camera does not move. Close on the patient monitor inside an ambulance at night. The green trace across the screen settles into one steady flat line and the numbers fade to dashes. At the bottom of the frame the paramedic's gloved hand on the chest slowly lifts away and out of the frame. Blue light flickers across the white housing; rain runs down the dark window behind. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks."
+  },
+  {
+   "key": "r5-D2",
+   "n": 6,
+   "still": "FL18-a",
+   "duration": 6,
+   "character": null,
+   "why": "r5-D refused 3 times (tile gone in 30 s), the same as r3-D: chest / flat-line wording. Neutral rewrite.",
+   "motion": "The camera does not move. Close on a white medical monitor inside a vehicle at night. The green line across the screen slowly settles into one steady horizontal line and the numbers change to dashes. At the bottom of the frame a blue-gloved hand rests still for a moment, then slides away out of the frame. Blue light flickers across the white housing; rain runs down the dark window behind. Shot at 24fps with a 180-degree shutter. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks."
   }
  ],
  "note": "C (minister) keeps the round 1 clip pl-04-MIN1-b; it is re-synced to the Charon voice with lip-sync-dub, no new clip. Round 1 jobs are in video-jobs-r1.json."
