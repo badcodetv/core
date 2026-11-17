@@ -1,5 +1,19 @@
 # Police Cameras, Tested First (home/police-cameras-by-lot)
 
+## 2026-11-17 · PR #29
+
+**Opposition:** Police could improve your new charge rate by searching easier cases, without solving any extra crime. The code changes which cases enter its own test; drawing forces by lot doesn't fix that. Define eligible cases before allocation and judge outcomes across all of them, whether searched or not. Otherwise choosing the cases can look like better policing.
+**Answer (Home Secretary):** Fair, and the statistician found the same hole from the other side. Search only the easy cases and the share looks better without one more crime solved. The crime types the trial is judged on are now named in the code before the draw. The fail number is camera-assisted charges or summonses per thousand recorded crimes of those types, so the bottom of the fraction is every such crime, searched or not. And it also fails if charges or summonses across all crimes of those types, camera or no camera, fall by more than one in fifty against the forces waiting. The share per search and the number of searches sit beside them, so choosing cases shows up instead of passing as policing.
+**Outcome:** Conceded: test.where, test.measure and fails_if, this commit
+
+**Statistician:** The crime-solved share now counts only crimes where a camera was used, and the code itself changes which crimes get a camera search. A starting force that runs fewer, stronger searches raises its share without solving one more crime, and a waiting force that searches everything lowers its own. Fix: name the crime types before the draw, and make the fail number camera-assisted charges or summonses per thousand recorded crimes of those types, in both sets of forces; keep the share per search, and searches per thousand of those crimes, beside it.
+**Answer (Home Secretary):** Taken as written, with the opposition's half added. The crime types are named in the code before the draw. The fail number is camera-assisted charges or summonses per thousand recorded crimes of those types, in both sets of forces, each from its own baseline, relative; the share per search and searches per thousand beside it. A second line catches the force that claims the camera on crimes it would have solved anyway: charges or summonses per thousand of all crimes of those types, camera or not, must not fall by more than one in fifty.
+**Outcome:** Conceded: test.where, test.measure and fails_if, this commit
+
+**Statistician:** "so 6.0% must reach at least 6.3%" prints like a measured baseline for camera-assisted crime, which nobody has published. Fix: "for example, 6.0% must reach at least 6.3%", or drop the figures and keep "relative".
+**Answer (Home Secretary):** Right. Nobody has published that baseline, and an invented one dressed as measured is worse than none. The figures are gone; the clause says relative, from each force's own baseline.
+**Outcome:** Conceded: fails_if, this commit
+
 ## 2026-11-16 · PR #29
 
 **Opposition:** Putting the whole code into the lottery leaves a dangerous ambiguity: do waiting forces also wait for deletions already required, or the human hearing at the stop? State that existing duties and the permanent right apply everywhere and survive the trial ending. Test the extra vans and new procedures within that floor.
