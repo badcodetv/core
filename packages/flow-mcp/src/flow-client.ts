@@ -1,6 +1,6 @@
 import { basename, dirname, join } from 'node:path'
 import { tmpdir } from 'node:os'
-import { copyFile, mkdir, mkdtemp, writeFile } from 'node:fs/promises'
+import { copyFile, mkdir, mkdtemp, rename, unlink, writeFile } from 'node:fs/promises'
 import { chromium, type Browser, type Locator, type Page } from 'playwright'
 import { collectNewCanvases, pickActiveCanvas, type CanvasImg } from './canvas'
 import { toCanvasImgs, SCRAPE_IMGS, type RawImg } from './dom'
@@ -21,6 +21,7 @@ import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected, videoCountAlreadySelected, usesLengthSlider, SLIDER_MIN_SECONDS } from './compose'
 import { existsSync, readFileSync } from 'node:fs'
 import { jpegSize } from './jpeg-size'
+import { isCopyOfAny, thumbPrint } from './ref-copy'
 import { mediaIdFromContentUrl } from './media-url'
 import { dumpLines } from './page-dump'
 import { chooseVideoMode, refineRequestError, videoRequestError } from './video-mode'
@@ -1735,6 +1736,9 @@ export class FlowClient {
     await this.attachReferences(referenceImages)
     if (opts?.character) await this.addCharacterToPrompt(opts.character)
     // Snapshot AFTER attaching: the uploads themselves land in the media grid as new UUIDs.
+    // 2026-11-17: wait for the grid to go quiet first. On a slow Flow the upload's tile (or the previous
+    // call's late result) appeared AFTER the snapshot and was harvested as the new image.
+    await this.waitForGridToSettle()
     const before = await this.snapshotMediaNames()
     const box = this.promptBox()
     if (opts?.character && !this.isRebuilt()) {
@@ -1746,9 +1750,84 @@ export class FlowClient {
       await this.setPrompt(prompt) // ⚠️ chip survival across select-all on the rebuild: verify in smoke
     }
     await this.clickSubmit()
-    const canvases = await this.waitForNewCanvases(before, numOutputs, TURN_TIMEOUT_MS)
-    const candidates = await this.harvestCandidates(canvases, outPath, numOutputs)
-    return { candidates, ...(canvases.length < numOutputs ? { partial: true } : {}) }
+    return this.harvestRejectingCopies(before, referenceImages, outPath, numOutputs)
+  }
+
+  /**
+   * Poll the media grid until no new tile has appeared for `quietMs` (at most `maxMs`). Used before the
+   * pre-submit snapshot so late-rendering uploads and late results from the last call are counted as
+   * "already there", not as this turn's output (2026-11-17).
+   */
+  private async waitForGridToSettle(quietMs = 3_000, maxMs = 15_000): Promise<void> {
+    const end = Date.now() + maxMs
+    const scrape = async () => new Set(toCanvasImgs((await this.page.evaluate(`(${SCRAPE_IMGS})()`)) as RawImg[]).map((i) => i.name))
+    let seen = await scrape()
+    let quietSince = Date.now()
+    while (Date.now() < end) {
+      await this.page.waitForTimeout(500)
+      const now = await scrape()
+      if ([...now].some((n) => !seen.has(n))) {
+        seen = now
+        quietSince = Date.now()
+      } else if (Date.now() - quietSince >= quietMs) return
+    }
+  }
+
+  /**
+   * Wait for new tiles and harvest them, throwing away any that is a re-encoded copy of an attached
+   * reference (and remembering its name so it is not picked again), until `numOutputs` real results are
+   * saved or the turn times out. The 2026-11-17 failure: ~15 of ~40 reference calls returned the reference.
+   */
+  private async harvestRejectingCopies(
+    before: Set<string>,
+    referenceImages: string[],
+    outPath: string,
+    numOutputs: number,
+  ): Promise<EditResult> {
+    const refs = referenceImages.map((p) => thumbPrint(p))
+    const ignore = new Set(before)
+    const deadline = Date.now() + TURN_TIMEOUT_MS
+    const kept: ImageResult[] = []
+    let rejected = 0
+    while (kept.length < numOutputs) {
+      const remaining = deadline - Date.now()
+      if (remaining <= 0) break
+      let canvases: CanvasImg[]
+      try {
+        canvases = await this.waitForNewCanvases(ignore, numOutputs - kept.length, remaining)
+      } catch (e) {
+        if (kept.length) break // keep what we have; report partial below
+        if (rejected && !String((e as Error).message).startsWith('POLICY_BLOCKED')) {
+          throw new Error(
+            `REFERENCE_COPY_ONLY: Flow showed only copies of the reference image(s) (${rejected}) and no new image within ` +
+              `${TURN_TIMEOUT_MS / 1000}s. Reload the project (flow_open_project) and retry once.`,
+          )
+        }
+        throw e
+      }
+      for (const c of canvases) {
+        ignore.add(c.name)
+        if (kept.length >= numOutputs) break
+        const finalPath = candidateOutPath(outPath, kept.length, numOutputs)
+        const tmp = `${finalPath}.incoming`
+        await this.harvestMedia(c.name, tmp)
+        if (isCopyOfAny(thumbPrint(tmp), refs)) {
+          rejected++
+          await unlink(tmp).catch(() => {})
+          continue
+        }
+        await rename(tmp, finalPath)
+        const measured = this.measureFile(finalPath)
+        kept.push({
+          path: finalPath,
+          mediaId: c.name,
+          width: measured?.width ?? c.naturalWidth ?? c.width,
+          height: measured?.height ?? c.naturalHeight ?? c.height,
+        })
+      }
+    }
+    if (!kept.length) throw new Error(`REFERENCE_COPY_ONLY: no new image (${rejected} reference copies rejected). Reload and retry once.`)
+    return { candidates: kept, ...(kept.length < numOutputs ? { partial: true } : {}) }
   }
 
   /**
