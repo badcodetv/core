@@ -14,7 +14,7 @@ END = 187.0
 FADE = float(sys.argv[3]) if len(sys.argv) > 3 else 1.0  # Kai on 10B: a 1 s fade is too aggressive, "just almost cut the audio off"
 plan = json.load(open(HERE / f'plan-{L}.json'))
 about = (HERE / f'about-{L}.md').read_text().strip() if (HERE / f'about-{L}.md').exists() else ''
-NAMES = {'A': "Jack's cut, fixed", 'B': 'Strict alternation', 'C': 'On the words', 'D': 'Breathing', 'E': 'Energy curve', 'B2': 'Strict alternation, round 2 (on the kick)', 'B3': 'Strict alternation, round 3', 'B4': 'Strict alternation, round 4', 'B5': 'Strict alternation, round 5'}
+NAMES = {'A': "Jack's cut, fixed", 'B': 'Strict alternation', 'C': 'On the words', 'D': 'Breathing', 'E': 'Energy curve', 'B2': 'Strict alternation, round 2 (on the kick)', 'B3': 'Strict alternation, round 3', 'B4': 'Strict alternation, round 4', 'B5': 'Strict alternation, round 5', 'H1': 'Her in the gang, round 1', 'H2': 'Her in the gang, round 2'}
 def resolve(ref):
     return NOIR / (ref[3:] + '.mp4') if ref.startswith('cn:') else sorted(VID.glob(f'bg-{ref}-*.mp4'))[0]
 BEATS = [("intro", "Intro", 0, 20.14), ("verse1", "Verse 1", 20.14, 41.2), ("verse2", "Verse 2", 41.2, 61.86),
@@ -42,7 +42,7 @@ subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'concat', '-safe', '
                 '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-c:a', 'aac', '-b:a', '192k', '-t', str(END), str(prev)], check=True)
 seq = f'Balaclava Gang 10{L}'
 edl = {'sequence': seq, 'title': f'Gang Cut 10{L}', 'heading': f'The Bank Robbery MV, cut 10{L}: {NAMES.get(L, L)}',
-       'intro': f'One of five cuts made from your cut-9 notes, each under a different rule (A Jack\'s cut fixed, B strict alternation, C on the words, '
+       'intro': (HERE / f'intro-{L}.md').read_text().strip() if (HERE / f'intro-{L}.md').exists() else f'One of five cuts made from your cut-9 notes, each under a different rule (A Jack\'s cut fixed, B strict alternation, C on the words, '
                 f'D breathing, E energy curve). This is {L}: {NAMES.get(L, L)}. Ends on "Don\'t just eat cake" at 3:07. Note the bits you like ("keep this chorus") '
                 'and the bits you don\'t; the final cut takes the best of all five, then you finish it by hand in Premiere.',
        'fps': 24, 'total': END,

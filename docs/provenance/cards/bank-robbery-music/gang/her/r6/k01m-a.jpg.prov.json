@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r6/k01m-a.jpg",
+ "made": "2026-11-17T18:22:51+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r6/run.mts",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/k01m-a.jpg",
+ "why": "mv-gang her shot fix k01m from Kai's note (feedback/her-shots-r1)",
+ "prompt": "Using the attached images, there must be six masked men walking with the small woman in the canary-yellow coat, three on her left and three on her right: on her left, from the edge of the frame inward, PLUM in the mustard suit, BOTTLE in the brown suit, CRIMSON in the dark pinstripe suit and black fedora; on her right MARINE in the cream suit, RUST in the black suit, SILVER in the maroon suit. Masks copied exactly from the attached line-up card. Add whichever of them is missing, walking in step down the steps. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/k01m-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}

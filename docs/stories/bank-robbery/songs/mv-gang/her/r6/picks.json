@@ -1,0 +1,884 @@
+{
+ "title": "Her Shots",
+ "eyebrow": "The Bank Robbery music video \u00b7 her in the cut \u00b7 round 1",
+ "heading": "Her shots: approve the fixes",
+ "intro": "Round 2. 19 of your picks are being animated now. These 8 got a still fix from your notes first; pick the version to animate (or 'before' to animate your original pick). Two fixes, the balloon peg man and dancing in the street, would not take in Flow; pick 'before' or note another idea. Round 1 is folded underneath.",
+ "sections": [
+  {
+   "h": "The fixes",
+   "lede": "Before, then each fix take.",
+   "groups": [
+    {
+     "slot": "fix-a01m",
+     "round": 2,
+     "title": "The walk with Tommy guns",
+     "line": "Your note: I like this one, but it feels like she should have a gun in the same way the other gang members do I think that she I Like the way she's in front of the others in this one though, so although we have Applied rules about that. Let's keep the way. She's slightly in front But she should definitely have a gun pointing upwards in the air like the other gang members  My read: Check the gun reads: it is held up beside her hat.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "before",
+       "src": "r5/a01m-a.jpg",
+       "label": "before (your pick)"
+      },
+      {
+       "id": "a",
+       "src": "r6/a01m-a.jpg",
+       "label": "fix a"
+      }
+     ]
+    },
+    {
+     "slot": "fix-a02m",
+     "round": 2,
+     "title": "Bursting through the bank doors",
+     "line": "Your note: Yeah, here like she stood right in front of another gang member, so let's just spread the gang members out a little bit more here for you",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "before",
+       "src": "r5/a02m-a.jpg",
+       "label": "before (your pick)"
+      },
+      {
+       "id": "a",
+       "src": "r6/a02m-a.jpg",
+       "label": "fix a"
+      },
+      {
+       "id": "b",
+       "src": "r6/a02m-b.jpg",
+       "label": "fix b"
+      }
+     ]
+    },
+    {
+     "slot": "fix-c03g",
+     "round": 2,
+     "title": "Hands up in the cellar",
+     "line": "Your note: I like this one, but I think there needs to be a bit more the guys need to be stood back a little bit She looks slightly overlaid  My read: b sits in the room's light best.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "before",
+       "src": "r5/c03g-b.jpg",
+       "label": "before (your pick)"
+      },
+      {
+       "id": "a",
+       "src": "r6/c03g-a.jpg",
+       "label": "fix a"
+      },
+      {
+       "id": "b",
+       "src": "r6/c03g-b.jpg",
+       "label": "fix b"
+      }
+     ]
+    },
+    {
+     "slot": "fix-h07",
+     "round": 2,
+     "title": "Looking down into the lens",
+     "line": "Your note: I like this one, but um her shoulder seems to be cut off a little bit",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "before",
+       "src": "r5/h07-a.jpg",
+       "label": "before (your pick)"
+      },
+      {
+       "id": "a",
+       "src": "r6/h07-a.jpg",
+       "label": "fix a"
+      }
+     ]
+    },
+    {
+     "slot": "fix-h12",
+     "round": 2,
+     "title": "Balloon field",
+     "line": "Your note: This one we should lose the guy like banging like there's a there's an extra guy Banging the balloon peg into the ground. Let's just get rid of him",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "before",
+       "src": "r5/h12-b.jpg",
+       "label": "before (your pick)",
+       "warn": "The fix would not take in Flow (handed the picture back twice). Pick 'before' to animate it as it is, or note what to try."
+      }
+     ]
+    },
+    {
+     "slot": "fix-h18",
+     "round": 2,
+     "title": "Dancing in the street",
+     "line": "Your note: She needs to be in amongst the gang, this is one where she needs to be next to them rather than in front of them, definitely.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "before",
+       "src": "r5/h18-a.jpg",
+       "label": "before (your pick)",
+       "warn": "The fix would not take in Flow (handed the picture back twice). Pick 'before' to animate it as it is, or note what to try."
+      }
+     ]
+    },
+    {
+     "slot": "fix-k01m",
+     "round": 2,
+     "title": "Walking out of the exploding bank",
+     "line": "Your note: It would be nice here. This looks great by the way, but it'd be nice if there was Three people to the to her left so that is all the gang was there  My read: b has all six men, three either side; a is missing one.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "before",
+       "src": "r5/k01m-a.jpg",
+       "label": "before (your pick)"
+      },
+      {
+       "id": "a",
+       "src": "r6/k01m-a.jpg",
+       "label": "fix a"
+      },
+      {
+       "id": "b",
+       "src": "r6/k01m-b.jpg",
+       "label": "fix b"
+      }
+     ]
+    },
+    {
+     "slot": "fix-k19m",
+     "round": 2,
+     "title": "Sitting on the girder",
+     "line": "Your note: I like this, but there needs to be a bit more space between her and the other gang members I think it actually needs to be more space between her and the other gang members than the other gang members are Have space between them because she's the boss at the moment. She feels squeezed in",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "before",
+       "src": "r5/k19m-a.jpg",
+       "label": "before (your pick)"
+      },
+      {
+       "id": "a",
+       "src": "r6/k19m-a.jpg",
+       "label": "fix a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The whole gang (she stands in the line)",
+   "lede": "Listed in film order.",
+   "groups": [
+    {
+     "slot": "shot-k19m",
+     "title": "Sitting on the girder",
+     "line": "In the cut at 0:00.0 (intro). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/k19m.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/k19m-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/k19m-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-a01m",
+     "title": "The walk with Tommy guns",
+     "line": "In the cut at 0:10.5 (intro). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/a01m.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/a01m-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/a01m-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-k04m",
+     "title": "The walk under the theatre sign",
+     "line": "In the cut at 0:19.5 (intro), 1:46.0 (verse4). 2 uses.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/k04m.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/k04m-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/k04m-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h06",
+     "title": "Crew at the camera",
+     "line": "In the cut at 0:27.3 (verse1). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h06.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h06-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/h06-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h01",
+     "title": "Crew in the bank doorway",
+     "line": "In the cut at 0:31.2 (verse1). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h01.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h01-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/h01-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-c03g",
+     "title": "Hands up in the cellar",
+     "line": "In the cut at 0:38.9 (verse1), 1:09.8 (chorus1), 2:11.8 (chorus2). 3 uses.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/c03g.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/c03g-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/c03g-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-k01m",
+     "title": "Walking out of the exploding bank",
+     "line": "In the cut at 0:41.5 (verse2). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/k01m.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/k01m-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/k01m-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h02",
+     "title": "Salt flats",
+     "line": "In the cut at 0:55.7 (verse2). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h02.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h02-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/h02-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h19",
+     "title": "Under the theatre sign, pointing",
+     "line": "In the cut at 1:30.5 (verse3). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h19.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h19-a.jpg",
+       "label": "a: with her",
+       "warn": "The big lunging man in front became part of the line, so the frame is flatter than the original."
+      },
+      {
+       "id": "b",
+       "src": "r5/h19-b.jpg",
+       "label": "b: with her",
+       "warn": "The big lunging man in front became part of the line, so the frame is flatter than the original."
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-k36m",
+     "title": "Round the safe with the cake",
+     "line": "In the cut at 1:38.2 (verse3), 2:58.2 (verse5). 2 uses.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/k36m.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/k36m-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/k36m-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h07",
+     "title": "Looking down into the lens",
+     "line": "In the cut at 1:40.8 (verse3). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h07.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h07-a.jpg",
+       "label": "a: with her",
+       "warn": "Only one take came back."
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h17",
+     "title": "Bank steps, fire behind",
+     "line": "In the cut at 1:47.3 (verse4). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h17.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h17-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/h17-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h13",
+     "title": "Airfield",
+     "line": "In the cut at 1:55.0 (verse4). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h13.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h13-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/h13-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h18",
+     "title": "Dancing in the street",
+     "line": "In the cut at 2:29.7 (break). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h18.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h18-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/h18-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h15",
+     "title": "Dining car",
+     "line": "In the cut at 2:35.0 (verse5). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h15.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h15-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/h15-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h11",
+     "title": "Snow, arms up",
+     "line": "In the cut at 2:42.8 (verse5). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h11.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h11-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/h11-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-h12",
+     "title": "Balloon field",
+     "line": "In the cut at 2:45.3 (verse5). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/h12.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/h12-a.jpg",
+       "label": "a: with her",
+       "warn": "The crouching man in front stood up into the line; flatter than the original."
+      },
+      {
+       "id": "b",
+       "src": "r5/h12-b.jpg",
+       "label": "b: with her",
+       "warn": "The crouching man in front stood up into the line; flatter than the original."
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-p05",
+     "title": "On the girder",
+     "line": "In the cut at 2:50.5 (verse5). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/p05.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/p05-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/p05-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-q12",
+     "title": "On the jetty, pointing",
+     "line": "In the cut at 2:54.4 (verse5). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/q12.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/q12-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/q12-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    }
+   ]
+  },
+  {
+   "h": "One at the lens (she becomes the singer)",
+   "lede": "Listed in film order.",
+   "groups": [
+    {
+     "slot": "shot-a02m",
+     "title": "Bursting through the bank doors",
+     "line": "In the cut at 0:14.3 (intro). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/a02m.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/a02m-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/a02m-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-q01",
+     "title": "Rooftop rapper (verse 1 opens)",
+     "line": "In the cut at 0:20.8 (verse1). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/q01.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/q01-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/q01-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-q04",
+     "title": "Printing hall, arms out",
+     "line": "In the cut at 0:46.6 (verse2), 1:20.2 (chorus1), 2:22.1 (chorus2). 3 uses.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/q04.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/q04-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/q04-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-q05",
+     "title": "On stage at the microphone",
+     "line": "In the cut at 1:25.4 (verse3). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/q05.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/q05-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/q05-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-d06m",
+     "title": "At the bar",
+     "line": "In the cut at 1:34.4 (verse3). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/d06m.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/d06m-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/d06m-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-g08y",
+     "title": "On stage, hand to the lens",
+     "line": "In the cut at 1:44.7 (verse3). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/g08y.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/g08y-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/g08y-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-d10",
+     "title": "The devil's radio station",
+     "line": "In the cut at 1:51.2 (verse4). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/d10.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/d10-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/d10-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-q08",
+     "title": "The gramophone shop",
+     "line": "In the cut at 2:00.2 (verse4). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/q08.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/q08-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/q08-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-q09",
+     "title": "The pool table",
+     "line": "In the cut at 2:23.4 (chorus2). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/q09.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/q09-a.jpg",
+       "label": "a: with her",
+       "warn": "Take a has an odd lean; b is cleaner."
+      },
+      {
+       "id": "b",
+       "src": "r5/q09-b.jpg",
+       "label": "b: with her",
+       "warn": "Take a has an odd lean; b is cleaner."
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "shot-v11x",
+     "title": "The last shot: posing on the bank steps",
+     "line": "In the cut at 3:02.2 (verse5). 1 use.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "f/v11x.jpg",
+       "label": "keep the original"
+      },
+      {
+       "id": "a",
+       "src": "r5/v11x-a.jpg",
+       "label": "a: with her"
+      },
+      {
+       "id": "b",
+       "src": "r5/v11x-b.jpg",
+       "label": "b: with her"
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ],
+ "round": 2
+}

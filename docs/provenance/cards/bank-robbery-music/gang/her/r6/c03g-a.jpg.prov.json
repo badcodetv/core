@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r6/c03g-a.jpg",
+ "made": "2026-11-17T18:22:51+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "docs/stories/bank-robbery/songs/mv-gang/her/r6/run.mts",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/c03g-b.jpg",
+ "why": "mv-gang her shot fix c03g from Kai's note (feedback/her-shots-r1)",
+ "prompt": "Using the attached image, the six masked men each take half a step back and spread a little apart, so the small woman in the canary-yellow coat stands clearly in front of them by the press with space around her. Light her exactly like the room: the red lamp overhead, the same warm shadow falling across her coat and onto the floor at her feet, so she belongs in the cellar and does not look pasted on. Keep everything else exactly as it is: her outfit and balaclava, the men's suits and masks, the place, the light, the camera angle and the framing. No text or logos. 16:9.\n\nThanks.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/bank-robbery-music/gang/her/r5/c03g-b.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": "2"
+ }
+}
