@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PA12-a.jpg",
+ "made": "2026-11-17T12:33:53.870Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 photograph of a printed health-service advert poster, shot flat and square-on so the poster fills the entire frame edge to edge, matte paper with a fine print grain. The poster image is a candid-looking 35 mm photo of the man in the reference image sitting on a moulded plastic chair at a hospital bedside, leaning forward with his hands clasped solemnly between his knees, his head and shoulders large in the frame so his face takes up more than a third of the poster's height. Keep his face identical to the reference: about sixty, a long fleshy hooked nose with fine red veins, heavy-lidded narrow pale eyes, freckled blotchy ruddy skin, heavy jowls and a sly sideways half-smile. He wears a navy chalk-stripe suit. Behind him a pale green ward curtain and the edge of a white hospital blanket, softly out of focus. Light comes from a cool overhead fluorescent strip and a grey overcast window to his left, giving soft, slightly unflattering real-ward light. Across the top third of the poster, in huge heavy white block capitals on a deep charcoal band, the words SAVE OUR NHS, spelled exactly; these are the only words anywhere in the image. Natural hands with five fingers each. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-b-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-b-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "12f92508-54a6-429e-95f7-ae75401cc137"
+}

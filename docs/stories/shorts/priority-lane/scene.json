@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 13. POSTER (your note: 'more obvious that it is him … on the actual bus stop'): his poster in a real London bus shelter's end panel, big and clear, seen out of the driver's window: PS13-b tea, PS13-c stethoscope, PS13-d bedside. HELD: yes, fixed in round 9 and brought back here: HD9-a..d are shot from a high ambulance van cab looking down on the outrider. Pick one of each.",
+ "moodboard_intro": "Round 14, your notes. HELD: from the ambulance cab, the same junction and police line as the cordon shot CD8-b (it was the reference): HD14-a, HD14-c. POSTER: from the bus-stop seat, his poster big beside us, the wet road empty with the ambulance's blue light coming from the right; in the clip the ambulance races past right to left: PB14-a (tea), PB14-c (bedside). Pick one of each.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -188,10 +188,7 @@
    "C. The minister (picked round 9)"
   ]
  ],
- "board_round": [
-  13,
-  "HD9"
- ],
+ "board_round": 14,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"

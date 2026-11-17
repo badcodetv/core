@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS11-d.jpg",
+ "made": "2026-11-17T12:25:30.073Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo-real night photograph on 35 mm colour-negative film, gritty grain and halation, steady London rain. We look from the tall driver's seat of a UK ambulance, which is driving straight along its own lane, out through the right-hand driver's door window at a right angle; the window is nearly filled by the poster, as if we are passing it at close range across a narrow street. Cab cues around the edge: the black rubber window seal, a grab handle, grey door trim, and the large wing mirror at the left forward edge. Rain drops cling to the glass and smear into short trails. Across the oncoming lane, on the far pavement, a bus shelter parallel to the road, square-on, its backlit ad panel showing a glossy campaign photo of the man from the reference image leaning toward camera and pointing his finger straight at the viewer, mouth set in a confident grin. His face must stay identical to the reference image, the same eyes, nose, mouth, jaw and hair, reproduced as a printed photo, clearly the same man; one natural hand, correct fingers. Under him, SAVE OUR NHS in huge heavy capitals, spelled exactly, no other words anywhere. Light: the panel's flat white backlight, a sodium street lamp overhead turning the rain orange, and between flashes our blue roof strobe catching the shelter frame and the puddles at the kerb. The strip of near road at the bottom of the window streaks with motion blur; the poster is sharp. Cold teal shadows, no plates, signs or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "47a7c409-cce5-4212-aba6-7b4bf9de3832"
+}

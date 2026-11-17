@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD8-c.jpg",
+ "made": "2026-11-17T11:11:45.455Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photo on 35 mm colour-negative stock, rainy London night, seen from the flat roof of a four-storey corner building high above a junction, so everything below looks small and the scale is the point. At the bottom of the frame, small, a single ambulance is stopped at the stop line, its roof light bar flashing blue and the yellow-and-green chequered pattern on its sides catching the lamp light. A thin barrier of just two police motorcycles, white with blue lights flashing, is angled across the junction mouth, and two officers in hi-vis jackets with blue-and-yellow chequer and white helmets stand beside them, one with a gloved hand lifted. The rest of the frame is the junction itself, vast and empty, wet tarmac reflecting the sky glow, a cleared space far larger than anything in it. Near the top of the frame, already close and entering the far side of the crossing, three long black cars in a line with bright white headlights, a single white motorcycle with blue lights leading them. On one side a red double-decker bus and a handful of cars wait in a stalled queue with red tail lights. Lights: blue strobes, sodium-orange street lamps, the red traffic light, car headlights, all mirrored in puddles and the wet road, rain visible in the cones of lamp light. Cold teal shadow, heavy natural film grain, gentle halation, slight blur of rain on the lens edge, no legible words, numbers, plates or signs anywhere, nobody's face visible. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "14668bef-f34d-4c85-9a38-20c4a26ea8fe"
+}

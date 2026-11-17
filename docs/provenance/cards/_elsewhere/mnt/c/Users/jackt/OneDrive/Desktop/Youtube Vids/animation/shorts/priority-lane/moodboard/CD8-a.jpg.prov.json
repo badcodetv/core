@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD8-a.jpg",
+ "made": "2026-11-17T11:10:11.865Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph shot on 35 mm colour-negative film at night in steady rain, looking steeply down from a first-floor flat window across an ordinary London crossroads, the whole junction filling the frame. At the very bottom, close to the camera, the full roof of a UK ambulance sits stopped at the white stop line: its yellow-and-green chequered sides, a roof light bar flashing blue, rain beading on the white roof with no numbers or lettering on it. Just beyond it, three police officers in hi-vis jackets with blue-and-yellow chequered bands and white helmets stand in a spaced line across the mouth of the junction beside two white police motorcycles with blue lights flashing; the middle officer holds up one gloved hand, palm out, toward the ambulance. Past them the junction is completely empty: a wide shining square of wet black tarmac with nothing in it, the cleared space the centre of the picture. At the far edge, small and distant, the paired white headlights of three black saloon cars are just turning in. To the left a red double-decker bus waits with its interior lights on and blank destination display, and a few held cars sit behind it with red tail lights. Light sources: blue strobes from the motorbikes and the ambulance, sodium-orange street lamps on tall poles, a red traffic light glowing on its pole, the bus's cabin lights, all smeared and doubled in the wet road; rain streaks visible against each lamp. Cold teal shadows, visible film grain, soft halation around every light, slightly underexposed, no faces readable, no legible text, plates or signs anywhere, natural hands. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "743cacee-c57a-4393-a147-eaf326c4f120"
+}

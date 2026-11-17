@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS13-c.jpg",
+ "made": "2026-11-17T12:51:53.938Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 still that feels like a real 35 mm colour-negative film frame snatched at night in London rain: heavy grain, halation, true photographic imperfection, not CGI. We are perched in the right-hand driver's seat of a tall UK box ambulance driving straight forward; the driver's door window is wound halfway down, so the top half of the view is through rain-flecked glass and the bottom half is open air with rain blowing in over the grey door trim and the window's rubber seal. Directly across the oncoming lane, at 90 degrees to our travel, the glowing end advertising case of a London bus shelter fills well over half the window's height: a dark metal frame, a glass front, and inside it the poster from the reference image, reproduced exactly, the same man's face, square-on, sharp, evenly lit from behind so the face reads instantly. Our roof strobe is strong here: hard pulses of electric blue wash over the wet pavement, the shelter's glass side panel and the kerb, and catch the raindrops in mid-air, but the poster's face stays clean and free of glare. Light sources: the blue emergency strobe, the case's white internal backlight, a sodium-orange street lamp further along the pavement, and the faint red of our own side marker on the wet door. The big wing mirror sits at the left edge of the frame, beaded with water; the near lane streaks past in a motion blur. No readable route numbers, stop names, plates, signs or logos anywhere except the poster. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-d.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-d.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e87ce0b1-e022-4188-a527-837b65573782"
+}

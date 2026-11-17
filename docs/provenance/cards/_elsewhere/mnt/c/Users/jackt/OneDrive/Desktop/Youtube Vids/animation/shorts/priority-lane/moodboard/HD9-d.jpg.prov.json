@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD9-d.jpg",
+ "made": "2026-11-17T11:42:21.604Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph, 35 mm colour negative film, rainy London night, a wide view from just above and behind the right-hand driver's seat of a UK box ambulance, a high van cab that looks down on the road like a lorry. The windscreen is huge and nearly upright, wipers resting still at its base, the glass covered in fine rain beads that turn every light into soft discs. Down on the road, perhaps ten metres ahead and well below us, a police motorcycle outrider stands beside his parked white motorbike in the middle of the lane, legs planted, fluorescent yellow jacket with a blue-and-yellow chequered band, white helmet, one arm straight out with gloved palm raised towards us, the other hand on his radio. Behind him the junction has been emptied: wet black tarmac, a red traffic light, a far row of sodium-orange street lamps and a hint of more blue lights out of sight. In the lower third, the long flat dashboard of the van: a radio handset in its cradle, a ruggedised data terminal on an arm, a sat-nav with an unreadable glowing map, the top of a wide steering wheel with the driver's black-gloved hands resting on it, dark green paramedic sleeves. Light sources: our blue roof strobe reflecting off the wet bonnet and his hi-vis, his bike's pulsing blue lights, the red traffic light, sodium street lamps, the low green-and-amber glow of the dash. Cool teal shadows, visible grain, gentle halation, natural hands, no readable text, plates, signage or logos anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6f44eb7d-007a-4fc4-b727-baa1a3f9f44d"
+}

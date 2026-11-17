@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS13-a.jpg",
+ "made": "2026-11-17T12:49:02.687Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo-real still, a real 35 mm colour-negative night photograph in the rain, not CGI: visible grain, soft halation around every light. We sit high in the right-hand driver's seat of a tall box-bodied UK ambulance rolling straight down its lane, looking dead sideways at 90 degrees out of the closed driver's door window, across the empty oncoming lane to the far pavement. Filling more than two thirds of the window's height, almost touching distance across the road, is the end of an ordinary London bus shelter standing parallel to the kerb: its tall illuminated advertising case, a slim dark-grey metal frame with rounded corners and a glass front, and behind that glass the poster from the reference image, reproduced exactly, the same man's face, sharp, square-on to us, evenly backlit by the case's own cool white fluorescent tubes with no reflection or glare across the face. Just past the case the corner of the shelter's glass side panel and the edge of its thin glass roof catch the light. Light sources: the panel's internal fluorescent backlight, one sodium-orange street lamp above the shelter spilling orange onto the wet pavement, and our own blue roof strobe throwing a faint blue flicker on the wet tarmac in the foreground. Inside the cab: the black rubber window seal framing the view, a grey plastic door trim and grab handle along the bottom, the big wing mirror's housing cutting in at the left edge of the frame. A few raindrops beaded on the glass, the near road surface streaked with motion blur, the panel itself crisp. No readable text anywhere outside the poster, no route numbers, no stop names, no logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0d5790d2-5c0c-42dc-adab-ade6da7253bb"
+}

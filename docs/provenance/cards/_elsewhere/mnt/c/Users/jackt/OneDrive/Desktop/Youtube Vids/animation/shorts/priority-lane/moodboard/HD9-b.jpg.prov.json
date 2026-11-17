@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/HD9-b.jpg",
+ "made": "2026-11-17T11:41:09.347Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 night photograph on grainy 35 mm colour-negative stock, a real documentary frame, taken from far back in the cab of a UK front-line ambulance, from the doorway in the bulkhead behind the seats, so both front seats, the headrests and the roof-mounted grab handle frame the view: a high, boxy van cab with a huge upright windscreen streaked with rain. The paramedic driver sits on the right, seen from behind, dark green uniform, one gloved hand on top of the wide, flat-angled steering wheel, the other lifted off it in a half-shrug of disbelief. The whole width of the plain van dashboard runs across the frame: a radio handset on its curly cord, a small sat-nav on a suction mount, a rugged data terminal on a jointed arm glowing a faint green, nothing legible. Out through the glass and well below us on the drenched road, a police motorcycle outrider in a fluorescent yellow jacket with a blue-and-yellow chequer pattern and a white helmet has stopped his white bike side-on across our path, gloved hand raised high. Beyond him a cleared crossroads, a red traffic light, sodium street lamps. A wiper is caught mid-sweep, blurred, cutting an arc through the water. Lights: our blue roof strobe bouncing off the wet bonnet and his reflective jacket, his bike's flashing blue lamps, the red signal, orange sodium lamps, the dim instrument glow lighting the driver's knuckles. Cold teal shadows, halation, film grain, natural hands with five fingers, no text, plates, signs or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e86e6042-439d-42bf-8bcd-03eb0d67f11d"
+}

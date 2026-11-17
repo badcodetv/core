@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS9-a.jpg",
+ "made": "2026-11-17T11:47:02.158Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph shot on 35 mm colour-negative film at night in heavy rain, London, from inside the cab of a UK front-line ambulance, a tall box-bodied van. The camera sits at the high driver's seat on the right-hand side of the cab and looks straight out through the open-framed driver's door window at ninety degrees to the direction of travel, so the van is moving toward frame left along its own lane. The black rubber window seal and the grey plastic door trim frame the picture; a moulded grab handle runs along the top of the door; the large black wing mirror on its arm pokes into the left edge of the window, beaded with rain. Beyond the glass, across an empty wet oncoming lane, on the far pavement, a glass bus shelter stands parallel to the road, seen square-on and slightly below the camera, its illuminated advertising panel glowing at the near end. The poster in that panel is a glossy campaign photograph of the man from the reference image, head and shoulders, beaming a wide confident grin straight into the lens, with the words \"SAVE OUR NHS\" in huge heavy white capitals across the bottom, spelled exactly, nothing else written anywhere on it. Light sources: the poster panel's cool even backlight, one sodium-orange street lamp above the shelter, our own roof bar's blue strobe flaring across the wet tarmac and the shelter glass, and the reflected glow on raindrops on the window. The near road and kerb streak with motion blur while the poster stays sharp and readable. Cold teal shadows, visible grain, slight halation around the lamp and strobes, no other readable text, no plates or logos. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "7852a7f5-ceb7-4fd0-a89e-000bbc7668c3"
+}

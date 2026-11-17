@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/BM9-d.jpg",
+ "made": "2026-11-17T11:39:34.592Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16 photograph taken on 35 mm colour-negative film in a car at night in the London rain, visible grain and halation, real and gritty, never CGI. Medium close-up on a 35 mm lens at eye height across the back seat of a big black luxury saloon, his head in the upper half of the frame. A massively overweight, upper-class English minister in his late fifties sits bolt upright, impatient and irritated, jabbing the air with his left index finger while he barks a word into the phone held at his right ear with his right hand, mouth wide mid-shout, brows knotted. A huge disordered shock of platinum-white hair, floppy and unbrushed, falls over his brow and stands up at the crown. His face: a short thick snub nose, large protruding pale green eyes, a small tight mouth in a heavy square jaw, deep jowls and a thick neck, a weathered red-brown outdoor complexion with broken veins on the cheeks. Navy double-breasted suit, costly but wrinkled, its buttons straining; a loosened tie in faded old-school colours; a chunky gold signet ring on his right little finger. A small silver tray of canapés balances on the armrest beside him, crab croustades and a sprig of dill. Light: the warm overhead reading lamp lights his hair and the top of his face in amber; the phone screen glows faintly against his ear; cold blue emergency strobes flash through the rain-running window behind him, throwing streaks of blue water-shadow over his face and suit, with orange sodium street lamps blurred outside. Natural skin, natural hands, five fingers each. No readable text anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "452eae87-835d-43a8-98ac-42c5789a17c5"
+}

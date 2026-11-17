@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/CD9-b.jpg",
+ "made": "2026-11-17T11:44:09.834Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 night photograph on grainy 35 mm colour-negative film, taken in steady rain from the same high railway-bridge viewpoint as the reference image, a slice of wet brick parapet and iron railing cutting across the bottom right. Below, a wide ordinary London crossroads with a yellow box junction lies totally empty and shining, the focal point of the picture. UK traffic keeps left. Only the roof of the ambulance shows at the very bottom left edge of the frame: a white roof, a strip of yellow-green chequer and two blue light bars throwing cobalt flashes onto the puddles, stopped at the stop line in the left-hand lanes. Only four officers hold the whole junction, each with one white police motorcycle, one at the mouth of each approach: one directly in front of the ambulance on our side, one at the far stop line on the right-hand lanes where oncoming cars and a white van wait facing us with their headlights on, one on the left side road where a short queue waits with headlights pointing right, and one on the right side road where cars wait in the farther lane with headlights pointing left. The convoy has not arrived yet: from deep down the right side road comes a pale glow of approaching headlights and the faint flicker of blue escort lights, still far off. Light sources: sodium-orange street lamps, blue motorcycle strobes and the ambulance's blue light bars, one red traffic light glowing on the near-left pole, the headlights of the held cars, and the distant convoy glow. Long reflections streak the black-wet road, cold teal in the shadows, slight halation, heavy film grain, an unglamorous real London street, no readable text, plates, signs or logos. Natural faces and hands. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/CD8-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/CD8-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ff307553-0fcf-4a39-8d5d-81fc14b227ec"
+}

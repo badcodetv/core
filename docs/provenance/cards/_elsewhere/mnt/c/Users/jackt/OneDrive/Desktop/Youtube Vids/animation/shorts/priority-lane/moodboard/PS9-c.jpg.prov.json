@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PS9-c.jpg",
+ "made": "2026-11-17T11:47:57.543Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph, real 35 mm colour-negative film, night, driving rain in London. A tight view through the closed driver's side window of a UK ambulance, camera high in the right-hand driver's seat, lens pointed straight out sideways at ninety degrees to the direction of travel, the van running straight down its lane. Rain runs in diagonal rivulets across the window glass in the foreground, softly in focus, and a thin strip of grey door frame with a black grab handle crosses the top of the frame. Across the empty wet oncoming lane, the far pavement's glass bus shelter stands parallel to the kerb, square-on and slightly below eye level, its illuminated ad panel filling the right half of the window. The poster is a glossy campaign photograph of the man from the reference image shaking hands with a nurse in a navy tunic in a bright hospital corridor, his head turned to look directly out at the viewer with a practised smile, the nurse in profile; underneath, the words \"SAVE OUR NHS\" in huge heavy bold capitals, spelled exactly, nothing else written. Light sources: the poster panel's white backlight, the sodium-orange glow of a street lamp reflected in long streaks on the tarmac, and pulses of blue from our own roof-bar strobe that tint the rain on the glass and the shelter's metal frame. The kerb and the puddles below the shelter smear horizontally with motion; the poster face and slogan stay legible. Coarse film grain, gentle halation, cold teal shadows, no other readable text, no logos, natural hands. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "21394ca8-82f8-4863-92f7-f6892787d792"
+}

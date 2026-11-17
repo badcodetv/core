@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PA12-c.jpg",
+ "made": "2026-11-17T12:35:15.479Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 photograph of a printed advert poster shown full frame and perfectly square-on, slightly matte uncoated paper with visible print grain and a hint of ink texture. The poster is a bold graphic design: a close crop of the face of the man in the reference image set against a single flat deep teal-green background, his head and shoulders filling the top two thirds of the poster so his face is close to half its height. One hand rests flat on his heart. Keep his face exactly as the reference shows it: about sixty, a long fleshy hooked nose with visible red veins, heavy-lidded narrow pale blue eyes, freckled, blotchy ruddy skin with lines and pores, a heavy jaw, and a sly sideways half-smile as if sharing a private joke. Thin gold-rimmed reading glasses hang on a cord around his neck over a navy chalk-stripe suit. Lit by soft, even north-window daylight from the left with a gentle falloff on the right cheek, the look of a printed lithograph rather than a studio portrait. Below his chin, stacked on three lines in huge heavy white capitals, SAVE OUR NHS, spelled exactly, the only text in the image. Natural hand, five fingers. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/BM9-b-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/BM9-b-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ecc5b1e1-53ff-40cc-8cbd-e32d7a8175de"
+}

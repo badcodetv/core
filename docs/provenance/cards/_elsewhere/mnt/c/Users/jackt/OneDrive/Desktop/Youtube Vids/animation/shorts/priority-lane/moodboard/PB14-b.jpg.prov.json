@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/PB14-b.jpg",
+ "made": "2026-11-17T13:02:22.904Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 night photograph on grainy 35 mm colour-negative film, the camera low and close beside the right-hand end of a roadside glass shelter in the rain, as if sitting at the very end of its narrow perch seat with the brushed-steel seat edge just visible at the bottom of frame. The inward face of the lit advertising case at that end is so close it takes up the right half of the picture, angled slightly toward us, crisp and bright: the poster from the reference image, reproduced exactly, the same man's face, large and instantly readable, lit from behind by the case's flat white light, a few raindrops on its glass cover. The left half looks straight out past the shelter's open front onto the kerb and an empty, rain-slicked London road lit by sodium-orange lamps, puddles shivering with falling drops, cold teal darkness in the terraced shopfronts across the street, all slightly soft behind the sharp poster. Coming in from the right, past the poster case, the first spill of flashing blue light from an ambulance not yet in view is starting to colour the rain streaks and the wet tarmac of the near lane, reaching across toward the left. Lights in the scene: the poster case backlight, the sodium street lamps, the growing blue wash. Film grain, gentle halation, no people, no readable text except on the poster, no signs, no plates, no route numbers. A real photograph, not CGI. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/pl-refs/PA12-d.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/pl-refs/PA12-d.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d34f5b3a-fb14-4b95-b798-202b812e5b75"
+}
