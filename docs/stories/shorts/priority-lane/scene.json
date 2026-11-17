@@ -4,7 +4,7 @@
  "prefix": "pl",
  "title": "Priority Lane",
  "heading": "BadCode Shorts <span class=\"tri\">▲</span> Priority Lane",
- "moodboard_intro": "Round 8 (Kai's notes, 2026-11-17). The minister becomes a Boris-alike (invented, never named): pick his face first, because his SAVE OUR NHS poster (re-shot sideways out of the ambulance's left window) is made from it next. Plus a new wide shot of the police cordon holding the junction. ⚠ B and C came out very close to the real man; say if that's too close.",
+ "moodboard_intro": "Round 9, from Jack's notes (2026-11-17). Poster: now seen out of the ambulance's right-hand DRIVER'S window, the van driving straight down its lane, the shelter across the road (the face on it is a stand-in, BM9-c, until you pick the minister). Held: the outrider seen from a high van cab, not a car. Cordon: CD8-b's angle with police holding BOTH sides of the road and the side roads. Minister: more Boris-alikes, hair and size kept, the face changed. ⚠ BM9-a is very close to the real man.",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane",
  "flow_project": "57538600-142a-45b8-ac4c-e79e663de0c6",
  "beats": [
@@ -172,10 +172,6 @@
    "A. Losing him (LS4-b, badge removed)"
   ],
   [
-   "PS6-c",
-   "A2. His poster (through the ambulance window)"
-  ],
-  [
    "HD3-b",
    "B. Held"
   ],
@@ -186,9 +182,13 @@
   [
    "FL4-a",
    "D. Flatline"
+  ],
+  [
+   "CD8-b",
+   "A3. The cordon (picked round 8)"
   ]
  ],
- "board_round": 8,
+ "board_round": 9,
  "cut_r1": {
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut/edl.json",
   "by": "scripts/shorts/priority_lane_cut.py"

@@ -6,7 +6,7 @@
 3. Cut the poster-to-car dissolve (the early car shot).
 4. New beat A3 **the cordon**: a high wide shot of police holding the junction + radio "Constable 97, junction blocked, ready for VIP".
 5. New line (Jack: both): "Hey Jeffrey, what time's the plane to the island? ... I'm on my way to fetch Andrew." 🔴 marketing-gatekeeper legal check before release.
-Now: mood board round 8 (clean room in `cleanroom/r8/`: kai.md, specs.md, briefs, prompts). Then: animate the picks, cast the minister + constable voices, cut r5 on the timeline page, Premiere.
+Now: mood board round 9 (Jack 2026-11-17: poster out of the driver's window, held shot from a van cab, cordon both sides, more Boris-alikes); CD8-b picked. Clean room in `cleanroom/r8/` and `cleanroom/r9/`. Then: redo the poster with the picked face, animate the picks, cast the minister + constable voices, cut r5 on the timeline page, Premiere.
 
 **2026-11-14 (DONE, Jack: "Priority Lane is great"): r4 in Premiere** as `shorts-1-priority-lane-r4` in `priotity lane.prproj`, page round 4b in sync with it. Frozen (`final.json`). Agreed cut pushed to Drive `Shorts/Priority Lane` (69 files, `scripts/drive/agreed/short-priority-lane.list`).
 - **Pull it on another machine:** `git pull` → `scripts/drive/drive.sh where short-priority-lane "<your folder>"` → `scripts/drive/drive.sh pull short-priority-lane --go` → open `priotity lane.prproj` at sequence `shorts-1-priority-lane-r4`.

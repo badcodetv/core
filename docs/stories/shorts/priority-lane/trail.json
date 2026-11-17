@@ -252,5 +252,24 @@
   "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
   "what": "Round 8 (Kai 2026-11-17): Boris-alike minister BM8-a..d and police cordon CD8-a..d, clean room cleanroom/r8 (three sealed writers), run verbatim on Nano Banana 2; poster PS8 waits on the face pick",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
+ },
+ {
+  "at": "2026-11-17T11:50:50+00:00",
+  "stage": "moodboard",
+  "round": 8,
+  "what": "Round 8 votes and notes dumped to feedback/moodboard-r8",
+  "decided": [
+   "CD8-b picked for the cordon ('both sides of the street should be blocked by the police'); minister: 'more borris-like politiicians, keep the hair and him being fat and posh looking, just slightly change the face'; chat: poster out of the driver's (right) window, driving down the road not into the kerb; held shot must look like a high van cab"
+  ],
+  "feedback": "feedback/moodboard-r8",
+  "feedback_docs": 14
+ },
+ {
+  "at": "2026-11-17T11:50:50+00:00",
+  "stage": "moodboard",
+  "round": 9,
+  "url": "https://claude.ai/artifact/Ga9dkygvkQ9sL4g4hLga4V",
+  "what": "Round 9: PS9 poster out of the driver's window (stand-in face BM9-c), HD9 held from a high van cab, CD9 cordon with every approach held (ref CD8-b), BM9 more Boris-alikes; clean room cleanroom/r9 (four sealed writers with web research)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane <out.html>"
  }
 ]
