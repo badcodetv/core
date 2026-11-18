@@ -29,6 +29,24 @@ FIG, FIG_D = MB / 'FG3-b.jpg', 2.9
 BACK_D = 2.4            # the cut back to BadCode after the reel: Jack's line goes here once the words are written
 BLACK_D, LOGO_D = r1.BLACK_D, r1.LOGO_D
 
+# Rough cut 2b (Jack, 2026-11-18: "do the real versus flow by doing a cut 2b"): the same cut with the three openings as REAL
+# 2000s footage from research/footage-00s-shortlist.md (credits owed in the description; audio stripped). Run with --real.
+FOOT = MEDIA / 'footage/00s'
+# 06 at 209.5 s (the shortlist's pick) is a private man's face filling the frame, and 09 is a smeared daytime 640 px photo,
+# not the sunset silhouette the shortlist describes. 06 at 60 s puts the rider's face big in the vertical crop. 06 at 229.5 s: the bowl at dusk, empty, streetlights on.
+REAL = [(FOOT / '06-skate-marseille-bowl-vespa-2011.webm', 1.4, 'real: the Prado graffiti bowl at dusk, Marseille, 2011 (JC Pieri, CC BY 3.0)', 229.5),
+        (FOOT / '05-fw-darling-harbour-2011-portrait.jpg', 1.3, 'real: fireworks over Darling Harbour, Sydney, 2011 (CC BY 2.0, credit per shortlist)', None),
+        (FOOT / '10-arcade-southend-monte-carlo-neon-2009_PREVIEW960.jpg', 1.3, 'real: Monte Carlo arcade, Southend, 2009 (Dan Davison, CC BY 2.0)', None)]
+if '--real' in sys.argv:
+    OPENING = REAL
+    CUT = MEDIA / 'cut' / 'r2b'; CUT.mkdir(parents=True, exist_ok=True)
+    WORK = CUT / '_scratch'; WORK.mkdir(exist_ok=True)
+
+
+def clip(src, tin, out, d):
+    # Real footage: the audio is stripped (-an), no grade, cropped to fill the vertical frame.
+    r1.ff('-ss', tin, '-t', d + 0.1, '-i', src, '-an', '-vf', f'{r1.FILL},fps={FPS},format=yuv420p', '-t', d, *r1.ENC, out)
+
 
 def main():
     parts, rows, t = [], [], 0.0
@@ -37,8 +55,13 @@ def main():
         nonlocal t
         parts.append(path); rows.append({'file': str(path), 'in': 0, 'start': round(t, 3), 'dur': round(d, 3), 'beat': beat, 'source': str(src), 'looped': False, 'see': see}); t += d
 
-    for i, (src, d, see) in enumerate(OPENING):
-        out = WORK / f'p0{i}-open.mp4'; r1.push(src, out, d, 1.0, 1.07, grade=False); add(out, d, 'hello', src, see)
+    for i, (src, d, see, *tin) in enumerate(OPENING):
+        out = WORK / f'p0{i}-open.mp4'
+        if tin and tin[0] is not None:
+            clip(src, tin[0], out, d)
+        else:
+            r1.push(src, out, d, 1.0, 1.07, grade=False)
+        add(out, d, 'hello', src, see)
     out = WORK / 'p10-fig.mp4'; r1.push(FIG, out, FIG_D, 1.03, 1.10, grade=False); add(out, FIG_D, 'figure', FIG, 'BadCode in the launderette')
     reel_start = t
     for i, (key, kind, src, tin, credit) in enumerate(r1.SHOTS):
@@ -72,7 +95,8 @@ def main():
              {'id': 'back', 'title': 'D. Back to BadCode', 'start': span('back')[0], 'dur': span('back')[1], 'see': "Closer on BadCode: the slot for Jack's line (\"What do you think in your mind, what the worst-case scenario is?…\").", 'lines': []},
              {'id': 'button', 'title': 'E. Black, then the logo', 'start': span('button')[0], 'dur': span('button')[1], 'see': 'Black (the last line goes here), then the BadCode logo.', 'lines': []}]
     credits = sorted({r['see'].split('real footage, ')[1] for r in rows if 'real footage, ' in r['see']})
-    edl = {'sequence': 'short-hello-im-badcode-1-hello-r2', 'title': 'Hello Im BadCode Timeline', 'heading': "BadCode Shorts ▲ Hello, I'm BadCode, rough cut 2",
+    real = OPENING is REAL
+    edl = {'sequence': 'short-hello-im-badcode-1-hello-r2' + ('b' if real else ''), 'title': 'Hello Im BadCode Timeline', 'heading': "BadCode Shorts ▲ Hello, I'm BadCode, rough cut 2" + ('b (real 2000s footage in the opening)' if real else ''),
            'intro': ("Your round-2 picks on the timeline: the three openings (skatepark, fireworks, arcade), BadCode in the launderette, the "
                      "real-footage horror reel, back to BadCode, black, the logo, to the folktronica track. Stills with a slow push for now: "
                      "nothing animated until the cut works. No words yet. Note anything."),

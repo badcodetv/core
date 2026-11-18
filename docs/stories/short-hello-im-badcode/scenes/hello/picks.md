@@ -54,3 +54,8 @@
   Timeline page round 2: https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP. Rough 1's media was gone from Jack's machine and
   from Drive (footage, the eight reel stills, the Premiere project): the footage was re-fetched from its receipts in
   `docs/footage/`, the reel stills recovered from the Flow gallery.
+- **2026-11-18, rough cut 2b** (Jack: "do the real versus flow by doing a cut 2b"; `hello_cut_r2.py --real`, `<media>/cut/r2b/`):
+  rough cut 2 with the three openings as real 2000s footage: Marseille Prado bowl at dusk, empty (06 at 229.5 s, sound removed),
+  Darling Harbour fireworks 2011 (05), Monte Carlo arcade Southend 2009 (10, 960 px preview). Checked by eye: the shortlist's
+  skatepark picks were wrong (06 at 209.5 s is a private man's face; 09 is a smeared daytime photo, not a sunset silhouette).
+  Photosensitivity: pass. Own timeline page: https://claude.ai/artifact/H4j7N8WuK3KfprgMKA2bts (rough cut 2 stays at B5f8…).
