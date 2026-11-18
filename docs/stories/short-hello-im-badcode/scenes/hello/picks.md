@@ -14,3 +14,4 @@
   look/sound: **his own meme-edit direction plus synthwave**. Script: **options to pick from** (scene-dialogue: ten
   writers, a judge, three drafts). Voice: **cast options** (voice-casting). Kai's notes still standing: 13 Nov "a very basic
   interpretation … BadCode wouldn't say that", give it character; 17 Nov morning: move away from repetitive narration voices.
+- **2026-11-18:** script options round 1 (scene-dialogue, ten writers incl. 'chill guy from the future' and 'meme captions'): three drafts, 1A Receipts, 1B The good part, 1C One place, one task. Page https://claude.ai/artifact/Lvi2jXqY249k52Ss9Ja8x8 (`design/2026-11-18-hello-im-badcode-dialogue-script/`).

@@ -1,0 +1,311 @@
+{
+ "page_title": "Hello BadCode Script",
+ "title": "Hello, I'm BadCode: script options",
+ "about": "This page lays out options for BadCode's spoken lines in 'Hello, I'm BadCode': ten writers' shapes ranked, and three combined drafts to pick from. Nothing has changed yet: no scene file, script or voice has been touched.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Logic said plainly",
+   "title": "The logic said plainly",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "Comedy first",
+   "title": "Comedy first, bluntness and bad timing deliver the facts",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-04-comedy-first.md"
+  },
+  {
+   "id": "05",
+   "name": "Chill guy",
+   "title": "Chill guy from the future",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-05-chill-guy.md"
+  },
+  {
+   "id": "06",
+   "name": "Reversal",
+   "title": "Reversal, the viewer works out the point first",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "Meme captions",
+   "title": "Meme captions",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-07-meme-captions.md"
+  },
+  {
+   "id": "08",
+   "name": "Place is argument",
+   "title": "The place is the argument",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "borrowed craft from trailers, cold opens and channel intros",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, plant the debt",
+   "file": "design/2026-11-18-hello-im-badcode-dialogue-script/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "BadCode's lines (the whole short)",
+   "where": "hook 0-4 s over the warm opening; figure 4-7 s to camera; button on black after the reel, about 15-20 s",
+   "scene": "hello",
+   "target": "about 8 seconds of speech in total across the three moments; the hook short enough to land in the first 2 seconds",
+   "now_from": "docs/stories/short-hello-im-badcode/scenes/hello/scene.json",
+   "now": [
+    {
+     "who": "BadCode (voice over the warm opening)",
+     "line": "Hello. I'm from the future."
+    },
+    {
+     "who": "BadCode (masked, to camera)",
+     "line": "It didn't go well."
+    },
+    {
+     "who": "BadCode (on black, after the reel)",
+     "line": "Here's what to do next."
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "Receipts",
+     "length": "about 7 s",
+     "total": "~6.6 s",
+     "bet": "The hook is a verdict, not a greeting, so the warm opening is a countdown; the figure introduces itself and hands the future back to the viewer in one word.",
+     "lines": [
+      {
+       "who": "BadCode (voice over the warm opening)",
+       "line": "Enjoy this. I checked.",
+       "tags": [
+        "09"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "BadCode (masked, to camera)",
+       "line": "Hello. I'm from the future. Yours.",
+       "tags": [
+        "09"
+       ],
+       "s": "3.2"
+      },
+      {
+       "who": "BadCode (on black, after the reel)",
+       "line": "Here's what to do next.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.6"
+      }
+     ],
+     "notes": [
+      "Trim: nothing; already under 8 s. Hold a beat of silence before 'Yours.' and keep the close-up still.",
+      "Protected line kept verbatim, nothing after it.",
+      "Risk: 'Yours.' dies on a flat read or a loose cut; 'Enjoy this. I checked.' can read as menace without warmth (casting). 'It went wrong' is never said, so the reel must carry it. All guesses until heard."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "The good part",
+     "length": "about 6 s",
+     "total": "~6.0 s",
+     "bet": "The nostalgia is the last good thing, and BadCode names it on the cut, so the future going wrong is implied by one sentence and no disaster is mentioned.",
+     "lines": [
+      {
+       "who": "BadCode (voice over the warm opening)",
+       "line": "Hello. Enjoy this.",
+       "tags": [
+        "02",
+        "06"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "BadCode (masked, to camera)",
+       "line": "I'm from the future. [beat] That was the good part.",
+       "tags": [
+        "02",
+        "01"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "BadCode (on black, after the reel)",
+       "line": "Here's what to do next.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.6"
+      }
+     ],
+     "notes": [
+      "Trim: if the voice runs slow, drop 'Hello.' from the hook; keep the stillness before 'That was the good part.'",
+      "Protected line kept verbatim.",
+      "Risk: could be heard as sneering at the nostalgia the viewer loves (voice.md: contempt at the mistake, never the people); delivery must be dry and warm. Keeps the plain 'from the future' that shape 01's 'from later' risked losing."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "One place, one task",
+     "length": "about 8 s",
+     "total": "~8.0 s",
+     "bet": "A single concrete image of the future plus a task makes the case: the car park under the sea says it went wrong, and 'homework' makes the button a promise being collected.",
+     "lines": [
+      {
+       "who": "BadCode (voice over the warm opening)",
+       "line": "Hello. Lovely Tuesday. [beat] Keep it.",
+       "tags": [
+        "08"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "BadCode (masked, to camera)",
+       "line": "Where I'm from, the car park is the sea. [beat] I came back with homework.",
+       "tags": [
+        "08",
+        "10"
+       ],
+       "s": "4.4"
+      },
+      {
+       "who": "BadCode (on black, after the reel)",
+       "line": "[a full second of nothing] Here's what to do next.",
+       "tags": [
+        "Kai",
+        "10"
+       ],
+       "s": "1.8"
+      }
+     ],
+     "notes": [
+      "Trim: the figure line runs about 1.4 s past the 4-7 s window; if the cut is tight drop 'I came back with homework' (then ~6.6 s).",
+      "Protected line kept verbatim; only a silence is added before it.",
+      "Risk: 'car park' is British (swap 'parking lot' for a US audience) and is a climate-only image; 'future' is never said so a cold viewer may read it as a weather joke; 'homework' may sound childish and soften the reel."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "09",
+     "length": "~6.8 s",
+     "verdict": "Best fit. Hook is a finished fact that works muted; 'Yours.' puts the premise on the viewer without stating a moral; protected line untouched. Fails: 'Yours.' lives or dies on delivery; 'went wrong' only implied."
+    },
+    {
+     "rank": 2,
+     "shape": "01",
+     "length": "~4.9 s",
+     "verdict": "'That was the good part.' is the sharpest turn on the cut and says everything unstated. Fails: 'from later' may read as a typo; 3 s under target; no nurture before the button."
+    },
+    {
+     "rank": 3,
+     "shape": "02",
+     "length": "~4.4 s",
+     "verdict": "'Enjoy this' is the best hook and the silence does the writing. Fails: far under target; never says the future went wrong; generic sci-fi teaser if the reel is skipped."
+    },
+    {
+     "rank": 4,
+     "shape": "10",
+     "length": "~8.4 s",
+     "verdict": "Homework makes the button a payoff. Fails: keeps 'It didn't go well', the line Kai called basic; hook 3.4 s misses the 2 s landing; 'doing lovely' crowds the cut."
+    },
+    {
+     "rank": 5,
+     "shape": "06",
+     "length": "~6.0 s",
+     "verdict": "Withholding is right and 'Look' hands over to the reel. Fails: nothing says future; a cold viewer gets a creepy wellness line."
+    },
+    {
+     "rank": 6,
+     "shape": "08",
+     "length": "~6.4 s",
+     "verdict": "Specific and funny, only BadCode would say it. Fails: climate-only, British, 'future' never said; a cold viewer may hear weather small talk."
+    },
+    {
+     "rank": 7,
+     "shape": "07",
+     "length": "~6.9 s",
+     "verdict": "Quotable and caption-ready. Fails: 'Spoiler' and 'I'm the patch' are glib and dating, close to the 'BadCode wouldn't say that' note; 'patch' states the moral."
+    },
+    {
+     "rank": 8,
+     "shape": "04",
+     "length": "~8.0 s",
+     "verdict": "Bad timing as a joke is on voice. Fails: 'Sorry' risks flippancy about real suffering; 'I'm here to fix that' states the promise aloud; 'Don't get comfortable' is a trailer growl."
+    },
+    {
+     "rank": 9,
+     "shape": "05",
+     "length": "~7.4 s",
+     "verdict": "Customer-service calm is a clear character. Fails: 'Apologies for any inconvenience' mocks people who suffer, not the mistake; reads as a brand joke."
+    },
+    {
+     "rank": 10,
+     "shape": "03",
+     "length": "~7.4 s",
+     "verdict": "Fails hardest: 'Therefore, it went wrong' states the point the reel should make; no sarcasm, cold, essay voice."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "Here's what to do next."
+    ],
+    "rows": {
+     "1A": [
+      "verbatim"
+     ],
+     "1B": [
+      "verbatim"
+     ],
+     "1C": [
+      "verbatim (silence added before it)"
+     ]
+    }
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Should the figure say 'from the future' in words (1A, 1B), or should the viewer infer it (1C, shape 06)? A cold viewer on a trailer may need the plain phrase."
+  },
+  {
+   "id": "q2",
+   "text": "Is 'It didn't go well.' fully retired? Kai called it basic; only shape 10 kept it, and no draft here does."
+  },
+  {
+   "id": "q3",
+   "text": "Is about 6 s of speech acceptable against the 8 s target, or do you want more voice (1C reaches 8 s)?"
+  },
+  {
+   "id": "q4",
+   "text": "Is a spoken hook that tells people to enjoy the warm opening ('Enjoy this') right, or does it sneer at the nostalgia people love? It depends on the voice cast."
+  },
+  {
+   "id": "q5",
+   "text": "Should the full second of silence before 'Here's what to do next.' be written in the script (1C) or left to the edit?"
+  }
+ ]
+}

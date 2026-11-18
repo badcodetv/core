@@ -41,5 +41,13 @@
   "url": "https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP",
   "what": "rough cut 1 (24.9 s): hook, figure, 22-shot horror reel (real footage + Flow gap stills), here's what to do next, logo; temp voice + temp music",
   "rebuild": "python3 scripts/shorts/hello_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-hello-im-badcode/scenes/hello design/hello-im-badcode/timeline"
+ },
+ {
+  "at": "2026-11-18T14:31:43+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Lvi2jXqY249k52Ss9Ja8x8",
+  "what": "dialogue options: BadCode's lines (ten writers, three drafts)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-18-hello-im-badcode-dialogue-script/options.json design/2026-11-18-hello-im-badcode-dialogue-script.html"
  }
 ]
