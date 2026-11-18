@@ -38,8 +38,9 @@ it: the words before a pause land, every word after it is 0.3–0.66 s early or 
 3. **Re-voice to the clip with pause tags.** Same words, same locked voice and profile; add Gemini's `<short pause>` or
    `<long pause>` exactly where the clips pause, or a comma where the voice pauses and the clip doesn't (`Derek, you've…`
    for `Derek. You've…`). Two or three tag variants × three takes. Words never change; tags are not words.
-4. **Fit every take on every clip, rank by words in the window**, then near-misses, then the old loudness score. Show the
-   best three pairs (one per clip) on a picks page, labelled with "N of M words in time".
+4. **Fit every take on every clip, placed by its words** (onset + one tempo searched for the most words in the window, `word_place`; the mouth-loudness fit missed a 10/12 pair on GPOM scene C), **rank by words in the window**, then near-misses, then the old loudness score. Show the
+   best three pairs (one per clip) on a picks page, labelled with "N of M words in time". Anchor on the first word clip and
+   take share: whisper hears a phantom "it" before Derek's "Doesn't" on most clips.
 5. **Kai picks by VOICE as well as sync.** Takes differ a lot from each other in sound; he chose the take that sounds
    most like the character over the one with a word or two more in time. Keep every take on the locked model and
    profile (Gemini 3.8 changed Sandra's sound and twice read her whole profile aloud: fail any take longer than its line).

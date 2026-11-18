@@ -1,0 +1,177 @@
+{
+ "c4-0": {
+  "c4-0-b.wav": {
+   "miss": [
+    "i",
+    "hope"
+   ],
+   "heard": "i'll help you put that bloody seat down",
+   "dur": 2.84
+  },
+  "c4-0-c.wav": {
+   "miss": [
+    "hope",
+    "you"
+   ],
+   "heard": "i ought to put that bloody seat down",
+   "dur": 3.16
+  },
+  "c4-0-d.wav": {
+   "miss": [],
+   "heard": "i hope you put that bloody seat down",
+   "dur": 3.12
+  },
+  "c4-0-e.wav": {
+   "miss": [],
+   "heard": "i hope you put that bloody seat down",
+   "dur": 3.12
+  },
+  "c4-0-a.wav": {
+   "miss": [],
+   "heard": "i hope you put that bloody seat down",
+   "dur": 3.04
+  }
+ },
+ "c4-1": {
+  "c4-1-b.wav": {
+   "miss": [
+    "love",
+    "we're",
+    "not",
+    "coming"
+   ],
+   "heard": "it doesn't bloody matter now lough well i'll come and back are we",
+   "dur": 5.76
+  },
+  "c4-1-c.wav": {
+   "miss": [],
+   "heard": "it doesn't bloody matter now love we're not coming back are we",
+   "dur": 5.52
+  },
+  "c4-1-d.wav": {
+   "miss": [
+    "we're",
+    "not",
+    "coming",
+    "are",
+    "we"
+   ],
+   "heard": "it doesn't bloody matter now love when i come on back i owe you",
+   "dur": 5.16
+  },
+  "c4-1-e.wav": {
+   "miss": [
+    "we're"
+   ],
+   "heard": "it doesn't bloody matter now love i'm not coming back are we",
+   "dur": 5.88
+  },
+  "c4-1-a.wav": {
+   "miss": [],
+   "heard": "doesn't bloody matter now love we're not coming back are we",
+   "dur": 4.76
+  },
+  "c4-1-v1m31t1.wav": {
+   "miss": [],
+   "heard": "it doesn't bloody matter now love we're not coming back are we",
+   "dur": 6.76,
+   "text": "Doesn't bloody matter now, love. <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v1m31t2.wav": {
+   "miss": [
+    "doesn't"
+   ],
+   "heard": "there's some bloody matter now love we're not coming back are we",
+   "dur": 7.28,
+   "text": "Doesn't bloody matter now, love. <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v1m31t3.wav": {
+   "miss": [],
+   "heard": "it doesn't bloody matter now love we're not coming back are we",
+   "dur": 6.44,
+   "text": "Doesn't bloody matter now, love. <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v1m31t4.wav": {
+   "miss": [],
+   "heard": "doesn't bloody matter now love we're not coming back are we",
+   "dur": 8.56,
+   "text": "Doesn't bloody matter now, love. <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v2m31t1.wav": {
+   "miss": [],
+   "heard": "it doesn't bloody matter now love we're not coming back are we",
+   "dur": 7.32,
+   "text": "Doesn't bloody matter now, love... <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v2m31t2.wav": {
+   "miss": [
+    "doesn't"
+   ],
+   "heard": "it was a bloody matter now love we're not coming back are we",
+   "dur": 6.56,
+   "text": "Doesn't bloody matter now, love... <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v2m31t3.wav": {
+   "miss": [
+    "we're"
+   ],
+   "heard": "doesn't bloody matter now love you're not coming back are we",
+   "dur": 7.88,
+   "text": "Doesn't bloody matter now, love... <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v2m31t4.wav": {
+   "miss": [
+    "doesn't",
+    "we're",
+    "not",
+    "coming"
+   ],
+   "heard": "there's some bloody matter now love when i come back are we",
+   "dur": 7.88,
+   "text": "Doesn't bloody matter now, love... <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v3m31t1.wav": {
+   "miss": [
+    "doesn't"
+   ],
+   "heard": "that's a bloody matter now love we're not coming back are we",
+   "dur": 6.92,
+   "text": "Doesn't bloody matter now, love. <long pause> <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v3m31t2.wav": {
+   "miss": [],
+   "heard": "it doesn't bloody matter now love we're not coming back are we",
+   "dur": 7.52,
+   "text": "Doesn't bloody matter now, love. <long pause> <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v3m31t3.wav": {
+   "miss": [
+    "doesn't"
+   ],
+   "heard": "there's a bloody matter now love we're not coming back are we",
+   "dur": 7.2,
+   "text": "Doesn't bloody matter now, love. <long pause> <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "c4-1-v3m31t4.wav": {
+   "miss": [
+    "doesn't",
+    "we're"
+   ],
+   "heard": "it was a bloody matter now love i'm not coming back are we",
+   "dur": 8.72,
+   "text": "Doesn't bloody matter now, love. <long pause> <long pause> We're not coming back, are we?",
+   "model": "gemini-3.1-flash-tts-preview"
+  }
+ }
+}

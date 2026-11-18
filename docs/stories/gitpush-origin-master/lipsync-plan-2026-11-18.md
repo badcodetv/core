@@ -56,3 +56,9 @@ Steps 3-5 changed after the breakthrough (method: top of `.claude/skills/lip-syn
 clips first (5-10 per line on the tab pool, transcribed), a per-word table, then **re-voice the same words with pause tags
 where the clips pause**, ranked by words inside -45..+125 ms. Kai picks by voice likeness as well as sync. Scene A picks:
 `scenes/second-half-a-killbots/feedback/lipsync-picks-2026-11-18-r3.json`. Next: C, D, B with the same method.
+
+**Scene C (18 Nov evening):** 16 clips (Sandra 8; Derek 4 plain + 4 with the pause as an action), 6.4 min on the pool, all
+words right. Sandra fits as she was (7/8 words in time). Derek's second sentence was 0.8-0.9 s early (pause again); the
+action clips paused 1.26-1.68 s vs 0.24-1.22 plain, and placing the take by its words gave 10/12 on action clip m with
+take c. Pause-tag takes made Derek slow overall and fitted worse. Picks: https://claude.ai/artifact/2om1ZEtUKtgJfq96LhRoiz.
+Script: `scripts/gpom/second-half-video/lipsync-c-1118.py`.

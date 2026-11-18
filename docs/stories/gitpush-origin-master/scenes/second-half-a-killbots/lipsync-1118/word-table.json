@@ -2,614 +2,114 @@
  "6-0": [
   {
    "pick": "p1",
-   "clip": "la-L60g-sandra-SB07b.mp4",
-   "take": "6-0-e.wav",
+   "clip": "la-L60i-sandra-SB07b.mp4",
+   "take": "6-0-i.wav",
    "tempo": 0.97,
    "words": [
     [
      "derek",
-     -0.174
-    ],
-    [
-     "you've",
-     0.354
-    ],
-    [
-     "left",
-     -0.098
-    ],
-    [
-     "the",
-     -0.031
-    ],
-    [
-     "seat",
-     0.014
-    ],
-    [
-     "up",
-     0.063
-    ],
-    [
-     "again",
-     -0.061
-    ]
-   ],
-   "in_window": "3/7"
-  },
-  {
-   "pick": "p2",
-   "clip": "la-L60h-sandra-SB07b.mp4",
-   "take": "6-0-e.wav",
-   "tempo": 0.97,
-   "words": [
-    [
-     "derek",
-     0.034
-    ],
-    [
-     "you've",
-     0.703
-    ],
-    [
-     "left",
-     -0.11
-    ],
-    [
-     "the",
-     -0.063
-    ],
-    [
-     "seat",
-     -0.037
-    ],
-    [
-     "up",
-     -0.009
-    ],
-    [
-     "again",
-     0.247
-    ]
-   ],
-   "in_window": "3/7"
-  },
-  {
-   "pick": "p3",
-   "clip": "la-L60c-sandra-SB07b.mp4",
-   "take": "6-0-h.wav",
-   "tempo": 0.97,
-   "words": [
-    [
-     "derek",
-     -0.154
-    ],
-    [
-     "you've",
-     0.369
-    ],
-    [
-     "left",
-     -0.084
-    ],
-    [
-     "the",
-     -0.038
-    ],
-    [
-     "seat",
-     -0.013
-    ],
-    [
-     "up",
-     0.118
-    ],
-    [
-     "again",
-     -0.248
-    ]
-   ],
-   "in_window": "3/7"
-  }
- ],
- "7d-0": [
-  {
-   "pick": "p1",
-   "clip": "la-L7d0b-derek-SB07c.mp4",
-   "take": "7d-0-f.wav",
-   "tempo": 1.15,
-   "words": [
-    [
-     "i'm",
-     0.14
-    ],
-    [
-     "really",
-     0.02
-    ],
-    [
-     "sorry",
-     0.099
-    ],
-    [
-     "love",
-     0.2
-    ]
-   ],
-   "in_window": "2/4"
-  },
-  {
-   "pick": "p2",
-   "clip": "la-L7d0e-derek-SB07c.mp4",
-   "take": "7d-0-h.wav",
-   "tempo": 1.15,
-   "words": [
-    [
-     "i'm",
-     0.112
-    ],
-    [
-     "really",
-     -0.025
-    ],
-    [
-     "sorry",
-     0.016
-    ],
-    [
-     "love",
-     0.123
-    ]
-   ],
-   "in_window": "4/4"
-  },
-  {
-   "pick": "p3",
-   "clip": "la-L7d0a-derek-SB07c.mp4",
-   "take": "7d-0-f.wav",
-   "tempo": 1.15,
-   "words": [
-    [
-     "i'm",
-     -0.128
-    ],
-    [
-     "really",
-     -0.208
-    ],
-    [
-     "sorry",
-     -0.13
-    ],
-    [
-     "love",
-     0.012
-    ]
-   ],
-   "in_window": "1/4"
-  }
- ],
- "7-0": [
-  {
-   "pick": "p1",
-   "clip": "la-L70g-sandra-SB07b.mp4",
-   "take": "7-0-a.wav",
-   "tempo": 1.0,
-   "words": [
-    [
-     "five",
-     -0.166
-    ],
-    [
-     "years",
-     -0.466
-    ],
-    [
-     "underground",
-     -0.326
-    ],
-    [
-     "and",
-     -0.106
-    ],
-    [
-     "you",
-     -0.066
-    ],
-    [
-     "still",
-     -0.066
-    ],
-    [
-     "can't",
-     0.034
-    ],
-    [
-     "put",
-     0.034
-    ],
-    [
-     "a",
-     0.054
-    ],
-    [
-     "seat",
-     0.054
-    ],
-    [
-     "down",
-     0.074
-    ]
-   ],
-   "in_window": "5/11"
-  },
-  {
-   "pick": "p2",
-   "clip": "la-L70d-sandra-SB07b.mp4",
-   "take": "7-0-h.wav",
-   "tempo": 0.98,
-   "words": [
-    [
-     "five",
-     -0.11
-    ],
-    [
-     "years",
-     -0.337
-    ],
-    [
-     "underground",
-     -0.085
-    ],
-    [
-     "and",
-     0.111
-    ],
-    [
-     "you",
-     -0.119
-    ],
-    [
-     "still",
-     -0.137
-    ],
-    [
-     "can't",
-     0.013
-    ],
-    [
-     "put",
-     0.042
-    ],
-    [
-     "a",
-     0.044
-    ],
-    [
-     "seat",
-     0.047
-    ],
-    [
-     "down",
-     -0.009
-    ]
-   ],
-   "in_window": "6/11"
-  },
-  {
-   "pick": "p3",
-   "clip": "la-L70c-sandra-SB07b.mp4",
-   "take": "7-0-j.wav",
-   "tempo": 1.14,
-   "words": [
-    [
-     "five",
-     -0.128
-    ],
-    [
-     "years",
-     0.186
-    ],
-    [
-     "underground",
-     0.204
-    ],
-    [
-     "and",
-     0.196
-    ],
-    [
-     "you",
-     0.04
-    ],
-    [
-     "still",
-     0.023
-    ],
-    [
-     "can't",
-     -0.027
-    ],
-    [
-     "put",
-     -0.085
-    ],
-    [
-     "a",
-     -0.098
-    ],
-    [
-     "seat",
-     -0.137
-    ],
-    [
-     "down",
-     -0.139
-    ]
-   ],
-   "in_window": "3/11"
-  }
- ],
- "7d-1": [
-  {
-   "pick": "p1",
-   "clip": "la-L7d1i-derek-SB07c.mp4",
-   "take": "7d-1-d.wav",
-   "tempo": 0.98,
-   "words": [
-    [
-     "but",
-     -0.066
-    ],
-    [
-     "the",
-     -0.197
-    ],
-    [
-     "world",
-     -0.051
-    ],
-    [
-     "ended",
-     -0.004
-    ],
-    [
-     "sandra",
-     -0.03
-    ]
-   ],
-   "in_window": "2/5"
-  },
-  {
-   "pick": "p2",
-   "clip": "la-L7d1d-derek-SB07c.mp4",
-   "take": "7d-1-c.wav",
-   "tempo": 0.98,
-   "words": [
-    [
-     "but",
-     0.109
-    ],
-    [
-     "the",
      -0.143
     ],
     [
-     "world",
-     0.064
+     "you've",
+     0.095
     ],
     [
-     "ended",
-     0.111
-    ],
-    [
-     "sandra",
-     0.066
-    ]
-   ],
-   "in_window": "4/5"
-  },
-  {
-   "pick": "p3",
-   "clip": "la-L7d1a-derek-SB07c.mp4",
-   "take": "7d-1-c.wav",
-   "tempo": 0.97,
-   "words": [
-    [
-     "but",
-     0.169
+     "left",
+     -0.01
     ],
     [
      "the",
-     -0.358
+     0.057
     ],
     [
-     "world",
-     -0.168
+     "seat",
+     0.103
     ],
     [
-     "ended",
-     -0.118
+     "up",
+     0.192
     ],
     [
-     "sandra",
-     0.085
+     "again",
+     0.125
     ]
    ],
-   "in_window": "1/5"
-  }
- ],
- "7-2": [
-  {
-   "pick": "p1",
-   "clip": "la-L72b-sandra-SB07b.mp4",
-   "take": "7-2-d.wav",
-   "tempo": 1.11,
-   "words": [
-    [
-     "yeah",
-     -0.133
-    ],
-    [
-     "the",
-     -0.172
-    ],
-    [
-     "world",
-     -0.146
-    ],
-    [
-     "ended",
-     -0.104
-    ],
-    [
-     "doesn't",
-     -0.383
-    ],
-    [
-     "mean",
-     -0.302
-    ],
-    [
-     "you",
-     -0.32
-    ],
-    [
-     "get",
-     -0.298
-    ],
-    [
-     "to",
-     -0.274
-    ],
-    [
-     "stop",
-     -0.252
-    ],
-    [
-     "having",
-     -0.217
-    ],
-    [
-     "manners",
-     -0.283
-    ]
-   ],
-   "in_window": "0/12"
+   "in_window": "5/7"
   },
   {
    "pick": "p2",
-   "clip": "la-L72g-sandra-SB07b.mp4",
-   "take": "7-2-i.wav",
-   "tempo": 1.08,
-   "words": [
-    [
-     "yeah",
-     -0.315
-    ],
-    [
-     "the",
-     -0.172
-    ],
-    [
-     "world",
-     -0.105
-    ],
-    [
-     "ended",
-     0.002
-    ],
-    [
-     "doesn't",
-     -0.658
-    ],
-    [
-     "mean",
-     -0.467
-    ],
-    [
-     "you",
-     -0.459
-    ],
-    [
-     "get",
-     -0.284
-    ],
-    [
-     "to",
-     -0.181
-    ],
-    [
-     "stop",
-     -0.153
-    ],
-    [
-     "having",
-     -0.131
-    ],
-    [
-     "manners",
-     -0.209
-    ]
-   ],
-   "in_window": "1/12"
-  },
-  {
-   "pick": "p3",
-   "clip": "la-L72i-sandra-SB07b.mp4",
-   "take": "7-2-a.wav",
+   "clip": "la-L60a-sandra-SB07b.mp4",
+   "take": "6-0-a.wav",
    "tempo": 1.12,
    "words": [
     [
-     "yeah",
-     -0.196
+     "derek",
+     -0.065
+    ],
+    [
+     "you've",
+     0.499
+    ],
+    [
+     "left",
+     -0.01
     ],
     [
      "the",
-     -0.07
+     0.026
     ],
     [
-     "world",
-     -0.045
+     "seat",
+     0.009
     ],
     [
-     "ended",
-     0.048
+     "up",
+     0.055
     ],
     [
-     "doesn't",
-     -0.661
-    ],
-    [
-     "mean",
-     -0.324
-    ],
-    [
-     "you",
-     -0.357
-    ],
-    [
-     "get",
-     -0.412
-    ],
-    [
-     "to",
-     -0.443
-    ],
-    [
-     "stop",
-     -0.44
-    ],
-    [
-     "having",
-     -0.336
-    ],
-    [
-     "manners",
-     -0.442
+     "again",
+     -0.708
     ]
    ],
-   "in_window": "2/12"
+   "in_window": "4/7"
+  },
+  {
+   "pick": "p3",
+   "clip": "la-L60f-sandra-SB07b.mp4",
+   "take": "6-0-v1m31t1.wav",
+   "tempo": 1.15,
+   "words": [
+    [
+     "derek",
+     -0.087
+    ],
+    [
+     "you've",
+     0.035
+    ],
+    [
+     "left",
+     -0.118
+    ],
+    [
+     "the",
+     -0.034
+    ],
+    [
+     "seat",
+     -0.003
+    ],
+    [
+     "up",
+     0.07
+    ],
+    [
+     "again",
+     2.35
+    ]
+   ],
+   "in_window": "4/7"
   }
  ]
 }

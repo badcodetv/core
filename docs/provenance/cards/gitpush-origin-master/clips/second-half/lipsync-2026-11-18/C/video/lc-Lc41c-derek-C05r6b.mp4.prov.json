@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/C/video/lc-Lc41c-derek-C05r6b.mp4",
+ "made": "2026-11-18T19:01:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The man and the woman walk steadily towards the camera side by side, shoulder to shoulder, and stay level with each other the whole time. The man, looking straight ahead, speaks straight away, weary and gentle, slowly, each word separate, with a small pause after the first sentence. He says: Doesn't bloody matter now, love. We're not coming back, are we? Then he closes his mouth and walks on in silence, his jaw set. Then he turns his head and gives the woman beside him a long, flat look, his mouth closed, saying nothing. The woman keeps her mouth closed throughout. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/C/moodboard/derek-C05r6b.jpg",
+ "why": "lip-sync 18 Nov scene C: line c4-1 clip c",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/C/moodboard/derek-C05r6b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-c-walk-out/lipsync-1118",
+  "key": "Lc41c",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T18:59:53.092Z"
+ }
+}

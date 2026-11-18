@@ -14,5 +14,13 @@
   "url": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk",
   "what": "Rebuilt from '01 GPOM start r2' (0-150.92 s) after Kai's half-speed chorus edits; the two chorus nests flattened so each shot gets a slip; old page had no notes",
   "rebuild": "premiere_get_sequence the three sequences; flatten nests -> clips/mv-start/cut-r2-1118/state-flat.json; python3 scripts/scene/premiere-to-edl.py <state-flat.json> <media>/cut-r2-1118/edl.json --end 150.917 --from <media>/cut/edl.json --stem A1=mus-song --render renders/01-GPOM-start-r2-2026-11-18-halfspeed-choruses.mp4 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/mv-start <out-dir>"
+ },
+ {
+  "at": "2026-11-18T19:10:00+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk",
+  "what": "Rebuilt after Kai's re-edit of the outbreak chorus in Premiere",
+  "rebuild": "same as round 2, into clips/mv-start/cut-r3-1118/, render renders/01-GPOM-start-r2-2026-11-18-chorus2-reedit.mp4"
  }
 ]

@@ -82,6 +82,18 @@
     "state": "Premiere only",
     "why": "Kai's cut in Premiere is the truth; the page plays its render"
    }
+  },
+  "reedit-2026-11-18-evening": {
+   "sequence": "01 GPOM chorus outbreak r4",
+   "what": "Kai re-edited the outbreak chorus again (18 Nov evening): ob-02-FR1 out, ob-01-CA1 at 110.88, ob-s10-DV2 in at 112.62-114.67 (master time)",
+   "state": "/mnt/d/badcode-videos/gitpush-origin-master/.bridge/state-01 GPOM chorus outbreak r4.json",
+   "render": "/mnt/d/badcode-videos/gitpush-origin-master/renders/01-GPOM-start-r2-2026-11-18-chorus2-reedit.mp4",
+   "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk (version 5)",
+   "check": {
+    "at": "2026-11-18",
+    "state": "in sync",
+    "why": "page rebuilt from Premiere after the re-edit"
+   }
   }
  },
  "board_round": 2,

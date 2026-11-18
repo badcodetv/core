@@ -1,0 +1,73 @@
+{
+ "title": "Walk Out Lip Sync",
+ "eyebrow": "GPOM scene C · lip-sync pass, 18 Nov",
+ "heading": "The walk out: pick the best lip sync per line",
+ "intro": "Same method as the toilet row: new talking clips, every voice take fitted whole to every clip, ranked by how many words land inside film's lip-sync tolerance (45 ms early to 125 ms late). Derek's clips k-n wrote his pause as an action; his takes were also re-voiced with longer pauses. Pick the one that sounds most like the character as well as the one in time; 'Now in the film' keeps it.",
+ "sections": [
+  {
+   "h": "Scene C, the walk",
+   "lede": "Sandra and Derek walking out over the downs.",
+   "groups": [
+    {
+     "slot": "C-c4-0",
+     "title": "Line 1 · Sandra",
+     "line": "I hope you put that bloody seat down.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/c4-0-now.mp4",
+       "label": "Now in the film"
+      },
+      {
+       "id": "p1",
+       "src": "v/c4-0-pick1.mp4",
+       "label": "New 1: clip d, voice c4-0-a, 7 of 8 words in time, voice at 1.09x"
+      },
+      {
+       "id": "p2",
+       "src": "v/c4-0-pick2.mp4",
+       "label": "New 2: clip b, voice c4-0-a, 7 of 8 words in time, voice at 1.05x"
+      },
+      {
+       "id": "p3",
+       "src": "v/c4-0-pick3.mp4",
+       "label": "New 3: clip g, voice c4-0-a, 7 of 8 words in time, voice at 1.11x"
+      }
+     ]
+    },
+    {
+     "slot": "C-c4-1",
+     "title": "Line 2 · Derek",
+     "line": "Doesn't bloody matter now, love. We're not coming back, are we?",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/c4-1-now.mp4",
+       "label": "Now in the film"
+      },
+      {
+       "id": "p1",
+       "src": "v/c4-1-pick1.mp4",
+       "label": "New 1: clip m (pause written as an action), voice c4-1-c, 10 of 12 words in time, voice at 0.97x",
+       "warn": "listen: the transcriber hears 'It doesn't' in this take"
+      },
+      {
+       "id": "p2",
+       "src": "v/c4-1-pick2.mp4",
+       "label": "New 2: clip d, voice c4-1-c, 9 of 12 words in time, voice at 0.97x",
+       "warn": "listen: the transcriber hears 'It doesn't' in this take"
+      },
+      {
+       "id": "p3",
+       "src": "v/c4-1-pick3.mp4",
+       "label": "New 3: clip l (pause written as an action), voice c4-1-c, 8 of 12 words in time, voice at 0.97x",
+       "warn": "listen: the transcriber hears 'It doesn't' in this take"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

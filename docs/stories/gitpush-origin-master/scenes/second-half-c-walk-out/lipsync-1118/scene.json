@@ -1,0 +1,15 @@
+{
+ "story": "gitpush-origin-master",
+ "scene": "gpom-lipsync-c-1118",
+ "prefix": "lc",
+ "title": "GPOM scene C walk out: lip-sync pass 18 Nov",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/C",
+ "flow_project": "462e2124-a6c6-4630-a121-7ee651daf338",
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 6
+ },
+ "about": "Kai 18 Nov: scene C talking lines with the pause-tag method. Script: scripts/gpom/second-half-video/lipsync-c-1118.py"
+}

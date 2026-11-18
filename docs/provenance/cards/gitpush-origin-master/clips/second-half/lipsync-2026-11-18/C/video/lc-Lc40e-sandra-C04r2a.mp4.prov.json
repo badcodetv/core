@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/C/video/lc-Lc40e-sandra-C04r2a.mp4",
+ "made": "2026-11-18T19:02:05+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman walks steadily towards the camera with her mouth closed, her coat moving in the wind. After a moment she turns her head to the man beside her and speaks, slowly and pointedly, each word separate, as if to a child. She says: I hope you put that bloody seat down. Then she closes her mouth, looks ahead and keeps walking. The people behind keep walking. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/C/moodboard/sandra-C04r2a.jpg",
+ "why": "lip-sync 18 Nov scene C: line c4-0 clip e",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/C/moodboard/sandra-C04r2a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-c-walk-out/lipsync-1118",
+  "key": "Lc40e",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T18:59:21.833Z"
+ }
+}

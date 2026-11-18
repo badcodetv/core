@@ -29,6 +29,9 @@ CAST = f'{REPO}/docs/stories/gitpush-origin-master/scenes/second-half-cut3-cast.
 CUT = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27'
 STILL = {'woman': 'sandra-SB07b', 'man': 'derek-SB07c'}
 FPS = 24
+PREFIX = 'la'
+CASTD = json.load(open(CAST))['cast']
+BED = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3'
 
 # line: (who, words, direction for the voice, clip seconds, Flow motion prompt, fit window (clip s), fit only to (take phrase idx))
 LINES = {
@@ -98,7 +101,7 @@ def tts(line, k):
     who, text, direction = LINES[line][:3]
     if k in 'fghij':
         direction = FAST[line]
-    cast = json.load(open(CAST))['cast'][who]
+    cast = CASTD[who]
     prof = re.sub(r'^Pace: .*$', 'Pace: ' + direction + '.', cast['prompt'], count=1, flags=re.M)
     os.makedirs(SCENE, exist_ok=True); os.makedirs(VOX, exist_ok=True)
     pf, tf = f'{SCENE}/{line}{"-fast" if k in "fghij" else ""}.profile.md', f'{SCENE}/{line}.txt'
@@ -190,7 +193,7 @@ ARM_KEYS = {'action': 'klmnopqr', 'beat': 'stuvwxyz'}
 
 
 def arm_of(clip):
-    k = re.search(r'la-L[0-9d]+?([a-z])-', os.path.basename(clip)).group(1)
+    k = re.search(rf'{PREFIX}-L[0-9a-z]+?([a-z])-', os.path.basename(clip)).group(1)
     return next((a for a, ks in ARM_KEYS.items() if k in ks), 'plain')
 
 
@@ -213,7 +216,7 @@ def cmd_exp_jobs():
 def clips_of(line):
     tag = f'L{line.replace("-", "")}'
     return sorted(f'{CLIPS}/{f}' for f in os.listdir(CLIPS)
-                  if re.match(rf'la-{tag}[a-z]-', f) and f.endswith('.mp4') and '-muted' not in f)
+                  if re.match(rf'{PREFIX}-{tag}[a-z]-', f) and f.endswith('.mp4') and '-muted' not in f)
 
 
 def mouth(clip):
@@ -231,7 +234,7 @@ def cmd_check(lines):
     only = os.environ.get('ONLY')  # e.g. ONLY=fghij: check just the newer clips
     for ln in lines:
         for c in clips_of(ln):
-            if only and re.search(r'la-L[0-9d]+?([a-j])-', os.path.basename(c)).group(1) not in only:
+            if only and re.search(rf'{PREFIX}-L[0-9a-z]+?([a-z])-', os.path.basename(c)).group(1) not in only:
                 continue
             miss, heard = missing_words(ln, c)
             r = mouth(c)
@@ -294,8 +297,10 @@ def fit_pair(line, clip, take):
     tw = words_of(take)
     a, b = speech_span(take)
     e = vrf.fine_env(take, a, b)
-    first = cw[0][1] if cw else 0.0
-    t0 = (tw[0][1] - a) if tw else 0.0  # the take's first word, from its speech start
+    # anchor on the first word both share: whisper hears a phantom "it" before Derek's "Doesn't" on many clips (18 Nov)
+    j = next(((i, k) for k, (x, _, _) in enumerate(tw[:3]) for i, (y, _) in enumerate(cw[:3]) if x == y), (0, 0))
+    first = cw[j[0]][1] if cw else 0.0
+    t0 = (tw[j[1]][1] - a) if tw else 0.0  # that word in the take, from its speech start
     win = (max(-0.04, first - t0 - 0.35), first - t0 + 0.35)
     sc, on, tempo, det = vrf.fit(r, e, tempos=np.arange(0.97, 1.151, 0.01), window=win)
     if on is None:
@@ -321,6 +326,7 @@ def cmd_fit(lines):
             words_of(t)
         with ThreadPoolExecutor(6) as ex:
             res = [x for x in ex.map(lambda ct: fit_pair(ln, *ct), jobs) if x]
+        res = [word_place(x) for x in res]  # 18 Nov: also try placing the take by its words, keep the better
         for x in res:  # rank by words inside the tolerance window first (sweep try #2d), then the old score
             rows = word_table(x)
             x['in_window'] = sum(1 for _, d in rows if d is not None and -0.045 <= d <= 0.125)
@@ -347,7 +353,7 @@ def render_pair(x, out):
     dur = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', clip],
                                capture_output=True, text=True).stdout)
     delay = max(0, int(round(x['at'] * 1000)))
-    bed = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3'
+    bed = BED
     af = (f"[1:a]atrim={x['frm']}:{x['to']},asetpts=PTS-STARTPTS,atempo={x['tempo']},adelay={delay}|{delay},apad[v];"
           f"[2:a]volume=0.25,apad[b];[v][b]amix=inputs=2:normalize=0,atrim=0:{dur}[a]")
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', clip, '-i', take, '-i', bed, '-filter_complex', af,
@@ -394,7 +400,7 @@ MODELS = {'31': 'gemini-3.1-flash-tts-preview', '38': 'gemini-3.8-flash-tts'}
 
 def tts_tagged(line, text, model, name):
     who = LINES[line][0]
-    cast = json.load(open(CAST))['cast'][who]
+    cast = CASTD[who]
     tf = f'{SCENE}/{name}.txt'
     open(tf, 'w').write(text + '\n')
     pf = f'{SCENE}/{line}.profile.md'
@@ -415,7 +421,7 @@ def cmd_revoice(lines):
     p = f'{SCENE}/voices.json'
     rep = json.load(open(p))
     jobs = [(ln, vi, text, m, t) for ln in lines if ln in REVOICE for vi, text in enumerate(REVOICE[ln])
-            for m in MODELS for t in range(3)]
+            for m in MODELS for t in range(int(os.environ.get('NTAKES', 3)))]
     def one(j):
         ln, vi, text, m, t = j
         return j, tts_tagged(ln, text, m, f'{ln}-v{vi + 1}m{m}t{t + 1}')
@@ -445,6 +451,38 @@ def word_table(x):
             rows.append((w, None)); continue
         rows.append((w, round(x['at'] + (s_ - x['frm']) / x['tempo'] - cw[k][1], 3))); j = k + 1
     return rows
+
+
+def word_place(x):
+    """Search onset + tempo (0.97-1.15) for the most words inside -45..+125 ms of the clip's own words (shifted by its lag
+    to the tracked mouth). Keeps the mouth-score placement if that already does as well. The voice never starts more than
+    45 ms before the clip's first shared word."""
+    cw, _ = clip_anchors(f'{CLIPS}/{x["clip"]}')
+    tw = words_of(f'{VOX}/{x["take"]}')
+    pairs, j = [], 0
+    for w, s_, _ in tw:
+        k = next((i for i in range(j, len(cw)) if cw[i][0] == w), None)
+        if k is not None:
+            pairs.append((s_, cw[k][1])); j = k + 1
+    if len(pairs) < 2:
+        return x
+    ts = np.array([p[0] for p in pairs]); cs = np.array([p[1] for p in pairs])
+    best = None
+    for tempo in np.arange(0.97, 1.151, 0.01):
+        for i in range(len(pairs)):  # candidate: word i lands 40 ms late
+            at = cs[i] + 0.04 - (ts[i] - x['frm']) / tempo
+            d = at + (ts - x['frm']) / tempo - cs
+            if d[0] < -0.045:
+                continue
+            n = int(np.sum((d >= -0.045) & (d <= 0.125)))
+            err = float(np.mean(np.abs(d - 0.04)))
+            if best is None or (n, -err) > (best[0], -best[1]):
+                best = (n, err, round(float(at), 4), round(float(tempo), 2))
+    rows = word_table(x)
+    have = sum(1 for _, d in rows if d is not None and -0.045 <= d <= 0.125)
+    if best and best[0] > have:
+        x = dict(x, at=best[2], tempo=best[3], placed='by-words')
+    return x
 
 
 def cmd_words(lines):
