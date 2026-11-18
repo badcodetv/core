@@ -48,7 +48,20 @@ money, and the price changes. Kai: it makes it scarier and funnier. Not built ye
 Open the part's project before its first Flow call; never use it for another story.
 
 ## Library pieces in use
-- none yet
+Picked by Jack, 2026-11-18, for the "more horror" pass (from: clean room, real photo, VHS camcorder, hauntology,
+suspense strings). Copied and adapted here; the library entries are not live rules.
+- **Real photo (Unsplash):** the ghostly hand starts from a real photo of a hand, found with
+  `python3 scripts/scene/unsplash-refs.py <scene-dir> "<query>"`, picked on a picks page, then given to Flow as the
+  reference so the hand looks real, not AI. The prompt only says what the hand does.
+- **VHS camcorder look, as a finish:** the cut is treated like caught-on-tape footage: soft and horizontally smeared,
+  colour bleed (reds bloom, shadows go muddy green), chroma noise, a tracking-noise band and brief dropouts at the bottom,
+  a burned-in REC / date stamp. Kept 9:16. Applied in the edit (ffmpeg), the same chain on every shot, never asked of
+  Flow: models make "VHS" bright neon synthwave and garble the stamp. Dull and muddy, not purple and cyan.
+- **Suspense strings:** a strings-only suspense cue: a short rising two-to-four-note ostinato, tremolo violins, a low
+  double-bass pedal, dissonant chords left unresolved, near silence broken by shrieking violin stabs, timed to hit as
+  the hand snatches. Instrumental, no drums, no synth, no choir. Suno drifts to "epic trailer" braams and resolves the
+  dissonance: exclude epic, hybrid, braam, trailer, drums. Stabs on picture are placed in the edit. Whether it replaces
+  vibes1 or sits under it: Jack picks.
 
 ## Where the detail is
 - [README.md](./README.md) (Premiere track list), [scenes/malevolent-force/brief.md](./scenes/malevolent-force/brief.md) (beats), [look.md](./look.md), [sound.md](./sound.md)

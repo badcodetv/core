@@ -1,0 +1,127 @@
+{
+ "title": "Malevolent Force Horror",
+ "eyebrow": "The Malevolent Force · more horror · round 1",
+ "heading": "More horror: pick the hand, and say yes or no to the tape look",
+ "intro": "From the 17 Nov morning call: the force gets more visible, a ghostly hand snatching the price tags. Your library picks: a real Unsplash hand as the reference, a VHS camcorder finish, and suspense strings (the music comes in the next round). Pick one per row and leave a note.",
+ "round": 1,
+ "sections": [
+  {
+   "h": "The hand",
+   "lede": "Real photos from Unsplash; the one you pick goes to Flow as the reference for the hand shots (shot 4, the shelf label, and shot 6, the freezer cards). Darkest first.",
+   "groups": [
+    {
+     "slot": "hand-ref",
+     "title": "Which hand?",
+     "line": "Pick the hand the ghost's hand should look like. A note can say what to change (paler, thinner, longer nails…).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "LkPTJo7u6O8",
+       "src": "unsplash/LkPTJo7u6O8.jpg",
+       "label": "human hand reaching out · Jeff Hardi"
+      },
+      {
+       "id": "pLJ97CLuYcU",
+       "src": "unsplash/pLJ97CLuYcU.jpg",
+       "label": "person's right hand · Akira Hojo"
+      },
+      {
+       "id": "gytTQ0ESbtI",
+       "src": "unsplash/gytTQ0ESbtI.jpg",
+       "label": "persons left hand on white textile · Cat Han"
+      },
+      {
+       "id": "zwpAQdsrdR4",
+       "src": "unsplash/zwpAQdsrdR4.jpg",
+       "label": "left human hand with smoke · Gabriel Ramos"
+      },
+      {
+       "id": "E55iJtoy-zU",
+       "src": "unsplash/E55iJtoy-zU.jpg",
+       "label": "a hand holding a light in the dark · Rafay Ansari"
+      },
+      {
+       "id": "792DVvbiBBo",
+       "src": "unsplash/792DVvbiBBo.jpg",
+       "label": "grayscale photo of persons hand · Jorge Rojas"
+      },
+      {
+       "id": "jzdNYQr63S0",
+       "src": "unsplash/jzdNYQr63S0.jpg",
+       "label": "person in black long sleeve shirt raising right hand · Riccardo Mazzoni"
+      },
+      {
+       "id": "PrKE6nWcZZU",
+       "src": "unsplash/PrKE6nWcZZU.jpg",
+       "label": "A hand reaching up from darkness · Tony Chen"
+      },
+      {
+       "id": "5Nf88T1CU_U",
+       "src": "unsplash/5Nf88T1CU_U.jpg",
+       "label": "A hand reaching up towards a cloudy sky · J Murdoch"
+      },
+      {
+       "id": "wLy8hPgqPGY",
+       "src": "unsplash/wLy8hPgqPGY.jpg",
+       "label": "Hand reaching towards a bright light beam · Mustafi Numann"
+      },
+      {
+       "id": "IcycHW9DveY",
+       "src": "unsplash/IcycHW9DveY.jpg",
+       "label": "A human hand reaching upward against a clear blue sky · Sindy Süßengut"
+      },
+      {
+       "id": "iJ2IG8ckCpA",
+       "src": "unsplash/iJ2IG8ckCpA.jpg",
+       "label": "two person's arms · youssef naddam"
+      },
+      {
+       "id": "4qppAIOQjxI",
+       "src": "unsplash/4qppAIOQjxI.jpg",
+       "label": "a black and white photo of a hand reaching up · Meysam Moghimzade"
+      },
+      {
+       "id": "IQGba75-VjY",
+       "src": "unsplash/IQGba75-VjY.jpg",
+       "label": "persons left hand raising up · Hassan Weller"
+      },
+      {
+       "id": "4sLQldRt0sg",
+       "src": "unsplash/4sLQldRt0sg.jpg",
+       "label": "white textile with red stain · Crina Parasca"
+      },
+      {
+       "id": "XOLHAGi8oKc",
+       "src": "unsplash/XOLHAGi8oKc.jpg",
+       "label": "a black and white photo of a hand print · Andrzej"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The tape look",
+   "lede": "The whole rough cut 2, as it is, then with the VHS camcorder finish (made in the edit, free, the same on every shot).",
+   "groups": [
+    {
+     "slot": "vhs",
+     "title": "VHS finish?",
+     "line": "Pick the one you want. A note can say more or less smear, colour, noise, or a different stamp.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "cut/r2/preview.mp4",
+       "label": "now: rough cut 2 as it is"
+      },
+      {
+       "id": "vhs",
+       "src": "cut/vhs-test/preview-vhs-web.mp4",
+       "label": "vhs: with the camcorder finish"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

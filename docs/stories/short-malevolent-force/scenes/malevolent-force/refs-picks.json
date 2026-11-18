@@ -1,0 +1,166 @@
+{
+ "title": "The Malevolent Force Look Refs",
+ "eyebrow": "The Malevolent Force · look references",
+ "heading": "The Malevolent Force: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "pale hand reaching in the dark",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "LkPTJo7u6O8",
+       "src": "unsplash/LkPTJo7u6O8.jpg",
+       "label": "human hand reaching out · Jeff Hardi"
+      },
+      {
+       "id": "E55iJtoy-zU",
+       "src": "unsplash/E55iJtoy-zU.jpg",
+       "label": "a hand holding a light in the dark · Rafay Ansari"
+      },
+      {
+       "id": "pLJ97CLuYcU",
+       "src": "unsplash/pLJ97CLuYcU.jpg",
+       "label": "person's right hand · Akira Hojo"
+      },
+      {
+       "id": "792DVvbiBBo",
+       "src": "unsplash/792DVvbiBBo.jpg",
+       "label": "grayscale photo of persons hand · Jorge Rojas"
+      },
+      {
+       "id": "jzdNYQr63S0",
+       "src": "unsplash/jzdNYQr63S0.jpg",
+       "label": "person in black long sleeve shirt raising right hand · Riccardo Mazzoni"
+      },
+      {
+       "id": "PrKE6nWcZZU",
+       "src": "unsplash/PrKE6nWcZZU.jpg",
+       "label": "A hand reaching up from darkness · Tony Chen"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "hand reaching out of darkness",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "LkPTJo7u6O8",
+       "src": "unsplash/LkPTJo7u6O8.jpg",
+       "label": "human hand reaching out · Jeff Hardi"
+      },
+      {
+       "id": "pLJ97CLuYcU",
+       "src": "unsplash/pLJ97CLuYcU.jpg",
+       "label": "person's right hand · Akira Hojo"
+      },
+      {
+       "id": "PrKE6nWcZZU",
+       "src": "unsplash/PrKE6nWcZZU.jpg",
+       "label": "A hand reaching up from darkness · Tony Chen"
+      },
+      {
+       "id": "E55iJtoy-zU",
+       "src": "unsplash/E55iJtoy-zU.jpg",
+       "label": "a hand holding a light in the dark · Rafay Ansari"
+      },
+      {
+       "id": "5Nf88T1CU_U",
+       "src": "unsplash/5Nf88T1CU_U.jpg",
+       "label": "A hand reaching up towards a cloudy sky · J Murdoch"
+      },
+      {
+       "id": "wLy8hPgqPGY",
+       "src": "unsplash/wLy8hPgqPGY.jpg",
+       "label": "Hand reaching towards a bright light beam · Mustafi Numann"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "hand grabbing",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "gytTQ0ESbtI",
+       "src": "unsplash/gytTQ0ESbtI.jpg",
+       "label": "persons left hand on white textile · Cat Han"
+      },
+      {
+       "id": "792DVvbiBBo",
+       "src": "unsplash/792DVvbiBBo.jpg",
+       "label": "grayscale photo of persons hand · Jorge Rojas"
+      },
+      {
+       "id": "IcycHW9DveY",
+       "src": "unsplash/IcycHW9DveY.jpg",
+       "label": "A human hand reaching upward against a clear blue sky · Sindy Süßengut"
+      },
+      {
+       "id": "iJ2IG8ckCpA",
+       "src": "unsplash/iJ2IG8ckCpA.jpg",
+       "label": "two person's arms · youssef naddam"
+      },
+      {
+       "id": "4qppAIOQjxI",
+       "src": "unsplash/4qppAIOQjxI.jpg",
+       "label": "a black and white photo of a hand reaching up · Meysam Moghimzade"
+      },
+      {
+       "id": "IQGba75-VjY",
+       "src": "unsplash/IQGba75-VjY.jpg",
+       "label": "persons left hand raising up · Hassan Weller"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "ghostly hand",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "792DVvbiBBo",
+       "src": "unsplash/792DVvbiBBo.jpg",
+       "label": "grayscale photo of persons hand · Jorge Rojas"
+      },
+      {
+       "id": "4qppAIOQjxI",
+       "src": "unsplash/4qppAIOQjxI.jpg",
+       "label": "a black and white photo of a hand reaching up · Meysam Moghimzade"
+      },
+      {
+       "id": "4sLQldRt0sg",
+       "src": "unsplash/4sLQldRt0sg.jpg",
+       "label": "white textile with red stain · Crina Parasca"
+      },
+      {
+       "id": "XOLHAGi8oKc",
+       "src": "unsplash/XOLHAGi8oKc.jpg",
+       "label": "a black and white photo of a hand print · Andrzej"
+      },
+      {
+       "id": "zwpAQdsrdR4",
+       "src": "unsplash/zwpAQdsrdR4.jpg",
+       "label": "left human hand with smoke · Gabriel Ramos"
+      },
+      {
+       "id": "pLJ97CLuYcU",
+       "src": "unsplash/pLJ97CLuYcU.jpg",
+       "label": "person's right hand · Akira Hojo"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
