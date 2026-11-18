@@ -51,9 +51,9 @@
   ]
  ],
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r2/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r2/preview.mp4",
-  "script": "python3 scripts/shorts/hello_cut_r2.py"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r3-a-sadaltager-fig-b/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r3-a-sadaltager-fig-b/preview.mp4",
+  "script": "python3 scripts/shorts/hello_cut_r3.py --voice a-sadaltager --fig fig-b"
  },
  "premiere": {
   "current": "r1",

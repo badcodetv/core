@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/video/hb-fig-a-FG3-b.mp4",
+ "made": "2026-11-18T16:07:16+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A launderette at night. BadCode sits perfectly still on the bench, breathing slowly; behind him the washing machine drums turn and the fluorescent tube overhead flickers once. BadCode faces the camera the whole time, so the white ring and the red triangle of the balaclava stay in full view and keep exactly their shape. One continuous shot. The camera does not move.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG3-b.jpg",
+ "why": "still and patient: the room moves, he doesn't",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-hello-im-badcode/scenes/hello",
+  "key": "fig-a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T16:06:11.467Z"
+ }
+}

@@ -1,10 +1,69 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · picture and music · round 2",
- "heading": "More openings, more BadCode, acoustic music",
- "intro": "Your round-1 picks: opening d (skatepark at sunset), the bench (bubbles removed below), and for music \"acoustic guitar synth stuff… varied approaches\". Plus your ask: more warm openings and BadCode settings. Pick one per row; your round-1 picks are folded below.",
- "round": 2,
+ "eyebrow": "Hello, I'm BadCode · voice and movement · round 3",
+ "heading": "Who BadCode sounds like, and how he moves",
+ "intro": "Finishing the whole thing (your call: cut 2b's real opening won so far). Rough cut 3 is on its own timeline page with voice a and clip b. Here: pick BadCode's voice (each take reads the four lines of draft 1D, your line third), and how he moves in the launderette. Your earlier rounds are folded below.",
+ "round": 3,
  "sections": [
+  {
+   "h": "Round 3",
+   "lede": "Voices from AI Studio, four different people; clips animated on the tab pool (2 minutes for all three). The mask holds in all three, checked zoomed in.",
+   "groups": [
+    {
+     "slot": "voice3",
+     "round": 3,
+     "title": "BadCode's voice",
+     "line": "Pick one. A note like 'older' or 'less posh' makes the next round.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "audio/voice-a-sadaltager.mp3",
+       "label": "a: calm, polite, southern English, far-future (the temp voice)"
+      },
+      {
+       "id": "b",
+       "src": "audio/voice-b-algenib.mp3",
+       "label": "b: Yorkshire man in his sixties, gravelly, unimpressed"
+      },
+      {
+       "id": "c",
+       "src": "audio/voice-c-iapetus.mp3",
+       "label": "c: south London, late twenties, flat and bored"
+      },
+      {
+       "id": "d",
+       "src": "audio/voice-d-gacrux.mp3",
+       "label": "d: Glasgow woman in her fifties, warm and wry"
+      }
+     ]
+    },
+    {
+     "slot": "move3",
+     "round": 3,
+     "title": "How BadCode moves",
+     "line": "Pick one. The same clip, pushed in closer, is used after the reel for your line.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/fig-a.mp4",
+       "label": "a: still and patient, the room moves around him"
+      },
+      {
+       "id": "b",
+       "src": "clips/fig-b.mp4",
+       "label": "b: leans in toward you, hands together"
+      },
+      {
+       "id": "c",
+       "src": "clips/fig-c.mp4",
+       "label": "c: a small polite wave"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 2",
    "lede": "Openings from real photos with no faces; BadCode with the short mask line and his clothes stated.",

@@ -1,21 +1,20 @@
 {
- "round": 2,
+ "round": 3,
  "plan": [
   {
-   "h": "Done: rough cut 2, your round-2 picks",
+   "h": "Rough cut 3: the whole thing",
    "items": [
-    "Opening: skatepark at sunset, fireworks, the neon arcade (\"g and i as well\"), a quick montage.",
-    "BadCode in the launderette; then the real-footage horror reel (unchanged from rough 1); then back to BadCode, closer, where your after-the-reel line will go; black; the logo.",
-    "Music: your folktronica pick, faded as the reel slows. Photosensitivity check: pass (3 flashes a second at most)."
+    "Cut 2b's real 2000s opening; BadCode moving in the launderette (clip b, leaning in); your words (draft 1D: your line after the reel); a cast voice (a); the music dips under the voice and dies with the reel.",
+    "38.5 s, longer than the 25 s plan: your line takes about 10 s in this voice. Voices c and d read it in about 7.5 s.",
+    "Checked: every word is said (including \"bullshit\"), the mask holds zoomed in, loudness -14.5 LUFS, flashing check pass."
    ]
   },
   {
-   "h": "Not yet",
+   "h": "You decide (picks page, round 3)",
    "items": [
-    "Stills with a slow push only: nothing is animated until the cut works.",
-    "No words: they come once the picture is right (your call).",
-    "Real 2000s footage for the opening is being searched; it'll come as options against the Flow stills.",
-    "Rough 1's media had gone from this machine (not on Drive either); the reel's footage was re-fetched from its licence receipts and its stills recovered from Flow."
+    "The voice: four options. The cut is rebuilt in the one you pick.",
+    "How BadCode moves: three clips.",
+    "Whether \"Here's what to do next.\" stays after your line (draft 1D) or the logo comes straight after it (1E)."
    ]
   }
  ]

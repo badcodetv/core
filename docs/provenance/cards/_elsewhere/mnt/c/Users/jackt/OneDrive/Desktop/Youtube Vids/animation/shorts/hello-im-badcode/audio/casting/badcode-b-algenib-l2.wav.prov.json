@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/casting/badcode-b-algenib-l2.wav",
+ "made": "2026-11-18T16:07:03+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I'm from the future. That was the good part.",
+ "inputs": {
+  "profile": "# Audio Profile\nA man in his sixties from Yorkshire, gravelly and dry, who has seen it all and found most of it daft. Flat vowels, short patience, a hint of a smile under it.\n\n## Scene:\nSpeaking straight to one person through a phone screen, close, in a quiet launderette at night.\n\n## Sample Context:\nUnimpressed, plain-spoken, a bit of a grumble; the swear word lands like a shrug.\n",
+  "profile_file": "docs/stories/short-hello-im-badcode/scenes/hello/voices/profiles/badcode-b-algenib.md"
+ },
+ "settings": {
+  "voice": "Algenib",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

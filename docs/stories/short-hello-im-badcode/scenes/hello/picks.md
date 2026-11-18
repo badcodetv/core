@@ -59,3 +59,10 @@
   Darling Harbour fireworks 2011 (05), Monte Carlo arcade Southend 2009 (10, 960 px preview). Checked by eye: the shortlist's
   skatepark picks were wrong (06 at 209.5 s is a private man's face; 09 is a smeared daytime photo, not a sunset silhouette).
   Photosensitivity: pass. Own timeline page: https://claude.ai/artifact/H4j7N8WuK3KfprgMKA2bts (rough cut 2 stays at B5f8…).
+- **2026-11-18, Jack:** "cut 2B was way better but we don't know until we have the whole thing so let's finish the whole thing";
+  stills stay one at a time, clips always on the tab pool.
+- **2026-11-18, round 3 + rough cut 3** (`scripts/shorts/hello_cut_r3.py`, `<media>/cut/r3-<voice>-<fig>/`, 38.5 s with voice a, clip b):
+  the 2b opening, BadCode animated (FG3-b, three clips fig-a/b/c on the tab pool, 2 minutes, mask checked zoomed in at 3 points each),
+  the words of draft 1D (Jack's line after the reel), voice options a-d (`voices/profiles/`, AI Studio, transcribed), music
+  dipped under the voice and dead by the end of the reel. -14.5 LUFS, photosensitivity pass. Picks page round 3 (voice, movement):
+  https://claude.ai/artifact/NcX2aNGxH65LjjMdXs2oxa; timeline round 3: https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP.

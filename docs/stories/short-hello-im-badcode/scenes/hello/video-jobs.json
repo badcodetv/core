@@ -1,0 +1,29 @@
+{
+ "note": "Jack 2026-11-18 'finish the whole thing': the launderette figure (FG3-b, picked round 2) animated three ways, one take each, on the tab pool. The reel's 0.5 s Flow stills stay as a push.",
+ "extra": [
+  {
+   "key": "fig-a",
+   "n": 1,
+   "still": "FG3-b",
+   "motion": "The camera does not move. A launderette at night. BadCode sits perfectly still on the bench, breathing slowly; behind him the washing machine drums turn and the fluorescent tube overhead flickers once. BadCode faces the camera the whole time, so the white ring and the red triangle of the balaclava stay in full view and keep exactly their shape. One continuous shot. The camera does not move.",
+   "character": null,
+   "why": "still and patient: the room moves, he doesn't"
+  },
+  {
+   "key": "fig-b",
+   "n": 1,
+   "still": "FG3-b",
+   "motion": "The camera does not move. A launderette at night. BadCode leans slowly forward toward the camera, elbows coming to rest on his knees, gloved hands loosely together, as if about to tell you something. The washing machines turn behind him. BadCode faces the camera the whole time, so the white ring and the red triangle of the balaclava stay in full view and keep exactly their shape. One continuous shot. The camera does not move.",
+   "character": null,
+   "why": "leans in: the direct address"
+  },
+  {
+   "key": "fig-c",
+   "n": 1,
+   "still": "FG3-b",
+   "motion": "The camera does not move. A launderette at night. BadCode lifts one gloved hand to shoulder height in a small, polite wave, holds it a moment, then lowers it back to his knee. The washing machines turn behind him. BadCode faces the camera the whole time, so the white ring and the red triangle of the balaclava stay in full view and keep exactly their shape. One continuous shot. The camera does not move.",
+   "character": null,
+   "why": "a small wave for 'Hello'"
+  }
+ ]
+}
