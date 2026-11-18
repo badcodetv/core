@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HS4-b.jpg",
+ "made": "2026-11-18T11:28:37.631Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Take this shelf photo as it is and introduce one new thing: a burnt, inhuman hand descending from the blackness above the shelf, its long hooked fingers with nails like split slate gripping the \"50p\" card on the shelf lip, about to tug it free. Soot-black skin cracked like old tarmac, a dull ember glow inside the cracks, a faint thread of smoke rising off the knuckles. Light it with this shop's cold teal tube and let the shelf's shadows fall across it; it has the same softness, grain and faded colour as the rest of the photo, as if one camera caught it all at one instant. Hand and wrist only, nothing more of it. Leave the shelf, the loaf, the card and its handwriting, the composition and the lighting as they are.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "193345d0-d975-471f-8949-b9b284fe2f31"
+}

@@ -42,3 +42,9 @@
   the real tag. Same-prompt check flagged habit phrases; "cheap colour film" kept on purpose (the story's look), the rest
   reworded from b on. VHS turned down (`vhs_finish.sh`, subtle) beside the strong one. Same page, round 3.
   🔴 Whether Nano Banana 2.1 costs credits: still not read (no credit counter in the Flow tools).
+- **2026-11-18, Jack's round 3 picks (page dump):** hand **c** (burnt, glowing, from above): "use this hand but make it fit
+  the scene thanks". VHS **subtle** (no note): the turned-down `vhs_finish.sh` is the finish.
+- **2026-11-18, horror round 4:** hand c edited into Jack's picked stills with `flow_edit_image` (Nano Banana 2.1): shot 4
+  PR2-b → HS4-a/b, shot 6 FL4-b → HS6-a/b, the hand described in words because uploading HH1-c stuck (stills made inside this
+  project stuck in the ingredients picker twice; a reload fixed PR2-b and FL4-b). Same-prompt check: the hand wording repeats
+  between the two shots on purpose (one hand). Same page, round 4. Next: animate the picks (the snatch, then the price change).

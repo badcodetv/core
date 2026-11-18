@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HS6-b.jpg",
+ "made": "2026-11-18T11:30:23.905Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Take this photo of the freezer lid by the door glass as it is and introduce one new thing: a burnt, inhuman hand lowering into view from the dark above, long hooked fingers with nails like split slate closing on the \"£5\" price card beside the loaf, about to snatch it. Soot-black skin cracked like old tarmac, a dull ember glow inside the cracks, a faint thread of smoke curling off the knuckles. The freezer's cold light and the black door glass behind decide how it is lit and shaded; it carries the same softness, grain and faded colour as everything around it, caught by one camera at one instant. Only the hand and wrist. The lid, the loaf, the chocolate bar, both cards and their handwriting, the door glass, the composition and the lighting remain untouched.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL4-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FL4-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "88403b88-8def-4ed1-9fa7-838debe4df5c"
+}

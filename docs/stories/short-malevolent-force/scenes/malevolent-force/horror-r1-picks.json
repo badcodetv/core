@@ -1,10 +1,64 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 3",
- "heading": "More horror: four supernatural hands, and a subtler tape",
- "intro": "Your notes on round 2: \"please make the hands more supernatural\" and \"make the vhs finish less intense and more subtle\". Real photos couldn't go further, so these four hands are made in Flow (Nano Banana 2.1), each a different kind of wrong, each reaching for a price card. Pick one (or say which bits to combine) and leave a note.",
- "round": 3,
+ "eyebrow": "The Malevolent Force · more horror · round 4",
+ "heading": "Your burnt hand, in your two shots",
+ "intro": "You picked hand c, \"use this hand but make it fit the scene\", and the subtle VHS. Here hand c is put into your own picked stills (shot 4, the shelf; shot 6, the freezer), lit by the shop's teal light, with the same grain and the setting unchanged. The first option in each row is the shot as it is now. Pick one per shot; next they get animated: the hand snatches the card and the price changes.",
+ "round": 4,
  "sections": [
+  {
+   "h": "The hand in the shots",
+   "lede": "Edits of your picked stills: only the hand is added.",
+   "groups": [
+    {
+     "slot": "hand-shot4",
+     "round": 4,
+     "title": "Shot 4, the shelf (50p)",
+     "line": "Which take?",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "moodboard/PR2-b.jpg",
+       "label": "now: the shot as it is"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/HS4-a.jpg",
+       "label": "a: fingers curl over the card"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/HS4-b.jpg",
+       "label": "b: grips it from above"
+      }
+     ]
+    },
+    {
+     "slot": "hand-shot6",
+     "round": 4,
+     "title": "Shot 6, the freezer (£5 / 10p)",
+     "line": "Which take?",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "moodboard/FL4-b.jpg",
+       "label": "now: the shot as it is"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/HS6-a.jpg",
+       "label": "a: comes down on the £5 card"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/HS6-b.jpg",
+       "label": "b: lands between the cards"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The hand",
    "lede": "Real photos from Unsplash; the one you pick goes to Flow as the reference for the hand shots (shot 4, the shelf label, and shot 6, the freezer cards). Darkest first.",

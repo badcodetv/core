@@ -13,7 +13,10 @@ agreed cut on Drive. Owed: export from Premiere, delivery QC, gatekeeper.
 
 **Next: more horror, the force more visible** (Jack and Kai, 17 Nov morning call,
 [notes](../../misc/2026-11-17-morning-meeting.md)): a **ghostly hand** rapidly snatches the price tags, or waves over the
-money, and the price changes. Kai: it makes it scarier and funnier. Not built yet; the rough cut 2 stands until it is.
+money, and the price changes. Kai: it makes it scarier and funnier. In progress (2026-11-18): **the hand is picked**: burnt, soot-black, cracked like old tarmac with a dull ember glow in the
+cracks, long hooked fingers, nails like split slate, a thread of smoke; only hand and wrist, coming down from the dark
+above, lit by the shop's teal. Stills `HS4-*` / `HS6-*` in shots 4 and 6. The finish is the **subtle VHS**
+(`scripts/shorts/vhs_finish.sh`). Rough cut 2 stands until the new shots are cut in.
 
 ## Look
 - Status: look.md still says EXPLORING with no ruling written; in practice every shot is picked from Jack's reference.
