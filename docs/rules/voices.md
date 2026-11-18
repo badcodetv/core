@@ -96,7 +96,10 @@ which is itself pollution (a story's recipe is that story's).
 - **"Test plain TTS first":** the transcript alone, empty style. "Most requests need no style." Add a short style
   (`"casual, friendly"`) only for a line that needs it.
 - **Write the transcript as real speech:** contractions, commas, dashes, ellipses, the odd hesitation.
-- **Voice design** makes a reusable `voice_…` from a 1-2 sentence description, when no library voice fits.
+- **Voice design** makes a reusable `voice_…` from a 1-2 sentence description, when no library voice fits
+  (`POST /v1beta/voices`, `type: prompted`, `language_code: en-GB`; the id then works as `--voice`). Jack, 2026-11-18: the
+  library's British voices sounded "posh and too high pitched" (they're cast as lawyers, advisers, presenters); for an
+  ordinary voice, design one: who, where from, low voice, speaks plainly. One sentence, nothing about performing.
 
 **How to apply:** casting = pick 4-6 library voices by their metadata (region, age, gender), render each plain on 3.8
 (`scripts/aistudio-tts.py --plain --model gemini-3.8-flash-tts --voice en-gb-…`), then let Jack or Kai pick. No accent or

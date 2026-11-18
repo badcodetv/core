@@ -72,3 +72,6 @@
   old 3.1 preview model; my first fix copied Bank Robbery's narrator note (another story's recipe, removed from the rule).
   Round 5: six British voices from Google's Extended Voice Library on `gemini-3.8-flash-tts`, transcript only
   (`audio/casting/plain38/`). `aistudio-tts.py --plain` added; `docs/rules/voices.md` and `voice-casting` rewritten to this.
+- **2026-11-18, round 5 notes (`feedback/picks-r5/`):** move **b** (leans in, FG3-b2-a). Voices: "they all sound posh and too
+  high pitched". Round 6: four voices made with Google voice design (one plain sentence each, ids in
+  `voices/designed-voices.txt`, kept a year on Google's side) + two casual low library voices, `gemini-3.8-flash-tts`, plain.

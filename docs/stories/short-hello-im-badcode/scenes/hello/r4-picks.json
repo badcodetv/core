@@ -1,10 +1,57 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · voice · round 5",
- "heading": "Real British voices, read plain",
- "intro": "You picked script A (the confession). The voices were still uncanny, so they're rebuilt the way Google's own docs say: real regional voices from Google's library (the accent is recorded in, not acted), the newer model, and the words alone with no acting notes. Each reads your two middle lines.",
- "round": 5,
+ "eyebrow": "Hello, I'm BadCode · voice · round 6",
+ "heading": "Lower, ordinary, not posh",
+ "intro": "Your note: 'they all sound posh and too high pitched'. Google's library British voices are mostly cast as lawyers and presenters, so four of these are built with Google's voice design from one plain sentence each (an ordinary man, low voice, a region), plus the two most casual low library voices. Same model, no acting notes, your exact lines.",
+ "round": 6,
  "sections": [
+  {
+   "h": "Round 6",
+   "lede": "Each designed voice is described in one sentence: who, where from, low voice, speaks plainly. Nothing else.",
+   "groups": [
+    {
+     "slot": "voice6",
+     "round": 6,
+     "title": "BadCode's voice: lower and ordinary",
+     "line": "Pick one, or say which is closest and what's still off.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "audio/r6-design-south-london-40s.mp3",
+       "label": "a: designed: south London, man, forties, low and a bit rough"
+      },
+      {
+       "id": "b",
+       "src": "audio/r6-design-birmingham-30s.mp3",
+       "label": "b: designed: Birmingham, man, thirties, low and unhurried",
+       "warn": "may say \"that\" for \"what\" (by the transcript)"
+      },
+      {
+       "id": "c",
+       "src": "audio/r6-design-leeds-50s.mp3",
+       "label": "c: designed: Leeds, working man, fifties, deep and a bit worn"
+      },
+      {
+       "id": "d",
+       "src": "audio/r6-design-essex-30s.mp3",
+       "label": "d: designed: Essex, man, thirties, low and relaxed"
+      },
+      {
+       "id": "e",
+       "src": "audio/r6-lib-liverpool-38.mp3",
+       "label": "e: library: Liverpool, man, 38, warm"
+      },
+      {
+       "id": "f",
+       "src": "audio/r6-lib-glasgow-62.mp3",
+       "label": "f: library: Glasgow, man, 62",
+       "warn": "may say \"with\" for \"what\" (by the transcript)"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 5",
    "lede": "Google's library voice, model gemini-3.8-flash-tts, transcript only. No accent, age or personality in the prompt.",
@@ -12,7 +59,7 @@
     {
      "slot": "voice5",
      "round": 5,
-     "title": "BadCode's voice: six real British voices",
+     "title": "BadCode's voice: six real British voices (posh and high, per your note)",
      "line": "Pick one, or note which is closest and what's still off.",
      "kind": "audio",
      "opts": [
