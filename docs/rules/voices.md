@@ -78,21 +78,27 @@ picture, so never place a dub on Flow's audio or Whisper times.
 
 ## Jack 2026-11-18: voices must sound like real people, not performances ("uncanny valley… the accent is crazy")
 
-Jack, on four Hello, I'm BadCode casting takes: "they've been sort of triggering Uncanny Valley… they're really
-exaggerated… they sound realistic when they're subtle, like the accent is crazy and they just don't sound like real people."
+Jack, on two casting rounds for Hello, I'm BadCode: "they've been sort of triggering Uncanny Valley… really exaggerated… they
+sound realistic when they're subtle… they just don't sound like real people." Then: "research how to do this for Google AI
+Studio specifically… check the prompts… something in the repo polluting it."
 
-**Cause (found 2026-11-18):** the profiles described *characters* ("gravelly… found most of it daft", "a teacher who
-already knows your excuse", "Glasgow woman, warm and wry"), so the model acted them, accent turned up. The narrator Jack
-liked (Bank Robbery, cut 9) was the opposite: a three-line `--note` saying "an ordinary bloke… everyday, not posh, not stagey
-cockney… never performs".
+**Cause (found 2026-11-18):** we were doing what Google's current docs say not to do. We used the 30 basic voices (none of
+them British) and forced an accent, an age and a personality through the prompt, on an old preview model
+(`gemini-3.1-flash-tts-preview`) with a long prompt wrapper. The first fix attempt copied another story's narrator note,
+which is itself pollution (a story's recipe is that story's).
 
-**How to apply** (every casting round, every story):
-- Use the short `--note` shape (`Accent:` / `Style:` / `Pace:`), not the long `# Audio Profile` / `## Sample Context:` shape.
-  Outside guides report the model can read header words aloud ("DIRECTOR'S", "Sample Context"); LiveKit's 3.1 guide.
-- **Accent:** a region plus "an ordinary person… everyday, light accent, not stagey / not a character voice". Never a
-  personality in the accent line.
-- **Style:** a real person talking to someone (to camera on their phone, to a mate), "natural, conversational, never
-  performs". Make variety from the voice name, age and region, not from colourful adjectives.
-- Leave the model room: Google-cited guides say not to describe everything. Use audio tags (`[sighs]`) sparingly.
-- Trim take silence gently (`silenceremove` at -55 dB, 0.12 s): -45 dB cut a soft "I'm" off a line.
-- Test file: `docs/stories/short-hello-im-badcode/scenes/hello/voices/notes/` (the plain round).
+**Google's method** ([speech generation](https://aistudio.google.com/docs/speech-generation), [voice design](https://aistudio.google.com/docs/voice-design)):
+- **Model `gemini-3.8-flash-tts`** (GA; our key has it). The 3.1 preview is the old one.
+- **The accent comes from the voice, never the prompt.** "Avoid putting age, gender, names, or permanent accent changes in
+  `style`… pick a regional voice from the Extended Voice Library or create one with Voice design." The library has 2,140
+  voices, 117 of them British (Manchester, Liverpool, Newcastle, Glasgow, Bristol, Winchester), ids like `en-gb-tutor-8`;
+  list them with `GET /v1beta/voices` (they carry age, accent and a description).
+- **"Test plain TTS first":** the transcript alone, empty style. "Most requests need no style." Add a short style
+  (`"casual, friendly"`) only for a line that needs it.
+- **Write the transcript as real speech:** contractions, commas, dashes, ellipses, the odd hesitation.
+- **Voice design** makes a reusable `voice_…` from a 1-2 sentence description, when no library voice fits.
+
+**How to apply:** casting = pick 4-6 library voices by their metadata (region, age, gender), render each plain on 3.8
+(`scripts/aistudio-tts.py --plain --model gemini-3.8-flash-tts --voice en-gb-…`), then let Jack or Kai pick. No accent or
+personality adjectives in any prompt. Never copy another story's voice note or profile.
+Trim take silence gently (`silenceremove` at -55 dB, 0.12 s): -45 dB cut a soft "I'm" off a line.

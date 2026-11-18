@@ -79,7 +79,9 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("transcript", help="text file to read aloud")
     ap.add_argument("out", help="output .wav")
-    ap.add_argument("--profile", required=True,
+    ap.add_argument("--plain", action="store_true",
+                    help="send the transcript alone: no profile, no wrapper (Google's 'test plain TTS first'; docs/rules/voices.md)")
+    ap.add_argument("--profile", required=False,
                     help="file holding the audio profile — from the story's sound.md (no default)")
     ap.add_argument("--voice", required=True,
                     help="prebuilt voice name — from the story's sound.md (no default)")
@@ -96,9 +98,13 @@ def main():
     from google import genai
     from google.genai import types
 
-    profile = open(args.profile).read()
+    if not args.plain and not args.profile:
+        sys.exit("--profile is required unless --plain")
+    profile = open(args.profile).read() if args.profile else ""
     transcript = open(args.transcript).read().strip()
-    if args.note:
+    if args.plain:
+        prompt = transcript
+    elif args.note:
         prompt = (
             "Read the following transcript based on the director's note.\n\n"
             f"# Director's note\n{profile.strip()}\n\n## Transcript:\n{transcript}"
@@ -151,7 +157,7 @@ def main():
     write_card(args.out, kind="voice", engine="gemini-tts", tool="scripts/aistudio-tts.py", model=args.model,
                prompt=transcript, inputs={"profile": profile, "profile_file": args.profile},
                settings={"voice": args.voice, "temperature": 1, "channels": channels,
-                         "wrapper": "director's note" if args.note else "audio profile"})
+                         "wrapper": "none (plain)" if args.plain else ("director's note" if args.note else "audio profile")})
 
     seconds = len(data) / (rate * channels * bits // 8)
     print(f"{args.out} — {'mono' if args.mono else 'stereo'} · {rate} Hz · {bits}-bit · {seconds:.2f}s")

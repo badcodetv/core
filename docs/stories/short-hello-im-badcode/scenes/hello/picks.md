@@ -66,3 +66,9 @@
   the words of draft 1D (Jack's line after the reel), voice options a-d (`voices/profiles/`, AI Studio, transcribed), music
   dipped under the voice and dead by the end of the reel. -14.5 LUFS, photosensitivity pass. Picks page round 3 (voice, movement):
   https://claude.ai/artifact/NcX2aNGxH65LjjMdXs2oxa; timeline round 3: https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP.
+- **2026-11-18, round 4 (page dump `feedback/picks-r4/`):** script **A, the confession** picked (`script-directions-r1.md`).
+  Voices e-h "still sound like Uncanny Valley-esque": research for AI Studio specifically + a pollution check.
+  Found: the 30 basic voices aren't British, we forced accent/age/personality through prompts (Google says never), on the
+  old 3.1 preview model; my first fix copied Bank Robbery's narrator note (another story's recipe, removed from the rule).
+  Round 5: six British voices from Google's Extended Voice Library on `gemini-3.8-flash-tts`, transcript only
+  (`audio/casting/plain38/`). `aistudio-tts.py --plain` added; `docs/rules/voices.md` and `voice-casting` rewritten to this.

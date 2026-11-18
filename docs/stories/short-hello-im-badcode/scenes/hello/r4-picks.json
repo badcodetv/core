@@ -1,10 +1,56 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · script, voice, movement · round 4",
- "heading": "The script first, then a real-sounding voice",
- "intro": "Your notes: the voices sounded uncanny and over-acted, the washing machine was open and spinning, and the script is too basic. Here: four directions for the script (you and Kai write the lines), the same voices written as ordinary people, and BadCode re-animated with every machine still. Earlier rounds are folded below.",
- "round": 4,
+ "eyebrow": "Hello, I'm BadCode · voice · round 5",
+ "heading": "Real British voices, read plain",
+ "intro": "You picked script A (the confession). The voices were still uncanny, so they're rebuilt the way Google's own docs say: real regional voices from Google's library (the accent is recorded in, not acted), the newer model, and the words alone with no acting notes. Each reads your two middle lines.",
+ "round": 5,
  "sections": [
+  {
+   "h": "Round 5",
+   "lede": "Google's library voice, model gemini-3.8-flash-tts, transcript only. No accent, age or personality in the prompt.",
+   "groups": [
+    {
+     "slot": "voice5",
+     "round": 5,
+     "title": "BadCode's voice: six real British voices",
+     "line": "Pick one, or note which is closest and what's still off.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "audio/lib-en-gb-tutor-8.mp3",
+       "label": "a: Winchester (southern England), man, 49, relaxed"
+      },
+      {
+       "id": "b",
+       "src": "audio/lib-en-gb-concierge-10.mp3",
+       "label": "b: Liverpool, man, 64, deep"
+      },
+      {
+       "id": "c",
+       "src": "audio/lib-en-gb-podcaster-8.mp3",
+       "label": "c: Glasgow, man, 37, relaxed"
+      },
+      {
+       "id": "d",
+       "src": "audio/lib-en-gb-assistant-11.mp3",
+       "label": "d: Bristol, 38, deep and unhurried"
+      },
+      {
+       "id": "e",
+       "src": "audio/lib-en-gb-training-11.mp3",
+       "label": "e: Newcastle, man, 53, relaxed"
+      },
+      {
+       "id": "f",
+       "src": "audio/lib-en-gb-podcaster-9.mp3",
+       "label": "f: Manchester, man, 45, direct",
+       "warn": "said \"what are you thinking\" instead of \"what do you think\""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 4",
    "lede": "The 13 Nov call said the same about the script: \"a very basic interpretation… BadCode wouldn't say that.\" The four directions use the canon the short never mentions: BadCode removed humanity, got bored, found 100 survivors who'd logged off, regretted it.",
@@ -45,7 +91,7 @@
     {
      "slot": "voice4",
      "round": 4,
-     "title": "Voice: the same four, as ordinary people",
+     "title": "Voice: the same four, as ordinary people (second try, still uncanny)",
      "line": "Each says your two middle lines. Ordinary person, light accent, talking to camera, told never to perform. Pick one, or note what's still off.",
      "kind": "audio",
      "opts": [

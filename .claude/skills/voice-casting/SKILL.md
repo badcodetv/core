@@ -22,15 +22,14 @@ description: Use to CAST the speaking voices of a BadCode film, scene or short b
 ## The round
 1. **Roles and lines** come from the scene's `script.json` (`lines[].who`). Each option reads that role's real lines,
    joined into one take, so the pick is made on the actual words.
-2. **Options: 3-4 per role, each one different on purpose.** Change the voice name and at least two of: age,
-   gender, region or accent, class, delivery (deadpan / petulant / booming / hissing...). Name the region and don't
-   spell out phonetics (README: "too northern"). One profile per file in
-   `docs/stories/<story>/…/voices/profiles/<role>-<letter>-<voice>.md`, in Google's shape
-   (`# Audio Profile` / `## Scene:` / `## Sample Context:`; example: any file there).
-3. **The same-prompt check** on every profile: `python3 scripts/variations/fresh.py < profile.md`. Scene facts that
-   repeat (a car's back seat) can stay; a repeated *description of a voice* means rewrite it.
+2. **Options: 4-6 per role, picked from Google's voice library, rendered plain** (Jack, 2026-11-18, after two rounds sounded
+   "uncanny valley… really exaggerated"; the method and its sources are in `docs/rules/voices.md`). List the library with
+   `GET /v1beta/voices` (2,140 voices with region, age, gender and a description; 117 British, ids like `en-gb-tutor-8`) and
+   choose by that metadata, differing in region, age and gender. **No accent, age or personality goes in any prompt**: the
+   voice carries them. No profile files, and never copy another story's profile or note.
+3. **The same-prompt check** still runs on any style string you add (`scripts/variations/fresh.py`); plain takes have none.
 4. **Render**, paced (one call every ~22 s):
-   `scripts/aistudio-tts.sh <lines.txt> <out.wav> --profile <p.md> --voice <Name>` (loads `.env`; uses `uv` if installed, else `~/.venvs/genai`, which it makes once)
+   `scripts/aistudio-tts.sh <lines.txt> <out.wav> --plain --model gemini-3.8-flash-tts --voice <library id>` (loads `.env`; uses `uv` if installed, else `~/.venvs/genai`, which it makes once)
    into the media folder's `audio/casting/` (from `scene.json` `media`, through `scripts/drive/localmap.py`).
    **Check every take's length**: about one in five comes back cut short, so re-run those. **Check the words** with `scripts/transcribe.py <take.wav> …` (CPU faster-whisper; works on Jack's machine).
 5. **Recipe card** for each take: `scripts/provenance/prov.py card` (docs/provenance).
