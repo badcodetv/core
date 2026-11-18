@@ -27,6 +27,10 @@ what to put in it.
   per-account limit is unmeasured: start at 3, read `<media>/video/pool.log`, then raise it.
 - **Stills in parallel are fine; edits are not.** Several `flow_generate_image` calls at once worked all day; three
   `flow_edit_image` calls at once jammed the upload picker for every later edit.
+- **A stuck upload now retries itself (2026-11-18).** `flow_edit_image` reloads the project and re-attaches once on
+  `UPLOAD_STUCK`; if it sticks again the error lists the picker's options and a screenshot path
+  (`/tmp/flow-upload-stuck/`). Read the screenshot before guessing: every stuck file so far was a still made inside the
+  same project (cause unconfirmed).
 - **An upload that hasn't landed in 30 s is stuck.** The edit tool now fails with `UPLOAD_STUCK` after 30 s
   (it was 90 s) and closes any stuck picker overlay before the next upload.
 - **Two strikes, then switch route.** Reload (`flow_open_project`) and retry once; if the same step fails again,

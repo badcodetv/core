@@ -1791,7 +1791,17 @@ export class FlowClient {
     await this.ensureProjectRoot()
     if (opts?.character && this.isRebuilt()) await this.reloadProject() // see generateImage
     await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
-    await this.attachReferences(referenceImages)
+    try {
+      await this.attachReferences(referenceImages)
+    } catch (e) {
+      // 2026-11-18: a stuck upload was fixed by a reload every time but one, so do the reload-and-retry here, once,
+      // instead of handing it back to the caller. A reload clears the bar, so the chips are attached again from zero.
+      if (!String((e as Error)?.message ?? e).startsWith('UPLOAD_STUCK') || !this.isRebuilt()) throw e
+      console.error(`[flow] ${(e as Error).message} -> reloading the project and retrying the upload once`)
+      await this.reloadProject()
+      await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
+      await this.attachReferences(referenceImages)
+    }
     if (opts?.character) await this.addCharacterToPrompt(opts.character)
     // Snapshot AFTER attaching: the uploads themselves land in the media grid as new UUIDs.
     // 2026-11-17: wait for the grid to go quiet first. On a slow Flow the upload's tile (or the previous
@@ -2128,8 +2138,17 @@ export class FlowClient {
       try {
         await ready.waitFor({ state: 'visible', timeout: UPLOAD_READY_MS })
       } catch {
+        // 2026-11-18 (Jack: "why is flow failing so much"): four stuck uploads in one session, every one a still made in
+        // the same project, and a reload fixed most. Record what the picker actually shows before closing it, so the
+        // cause is seen rather than guessed: a screenshot plus the option labels go into the error.
+        const seen = await overlay.locator('[role="option"]').allInnerTexts().catch(() => [] as string[])
+        const shot = join(tmpdir(), 'flow-upload-stuck', `${Date.now()}-${name}.png`)
+        await mkdir(dirname(shot), { recursive: true }).catch(() => {})
+        await this.page.screenshot({ path: shot }).catch(() => {})
         for (let i = 0; i < 3; i++) await this.page.keyboard.press('Escape').catch(() => {})
+        const options = seen.slice(0, 12).map((s) => JSON.stringify(s.replace(/\s+/g, ' ').trim().slice(0, 60))).join(', ')
         throw new Error(`UPLOAD_STUCK: ${name} never appeared in the ingredients picker within ${UPLOAD_READY_MS / 1000}s. ` +
+          `Picker options seen: [${options}]. Screenshot: ${shot}. ` +
           'Reload the project (flow_open_project) and retry once; if it sticks again, switch route ' +
           '(e.g. a fresh flow_generate_image) rather than waiting.')
       }
