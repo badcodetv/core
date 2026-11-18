@@ -1,5 +1,15 @@
 # Police Cameras, Tested First (home/police-cameras-by-lot)
 
+## 2026-11-18 · PR #29
+
+**Opposition:** The new test can still pass without solving any extra crime: using cameras on cases that would have reached a charge anyway raises the camera-assisted rate, while the overall rate may even fall slightly. Require an improvement across all eligible crimes before expanding the vans. Otherwise the test rewards camera involvement rather than better outcomes for victims.
+**Answer (Home Secretary):** Right, and it's the point that matters to the person who was burgled. A camera on a case that would have been solved anyway is a camera, not a result. The vans now spread only if more crimes of the named types end in a charge or summons, camera or no camera: each set of forces pooled over the two years against its own two years before, and the forces that start must beat the forces waiting by more than chance alone would give one time in twenty. The camera-assisted line stays as a second fail number. The old floor (no fall of more than one in fifty) is gone. Doing no harm no longer passes.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+**Statistician:** The new floor, all crimes of the named types "fallen by more than one in fifty", is tighter than the year-to-year swing in a force's charge rate, so a trial that does no harm will fail it a large share of the time on chance alone. It also doesn't say how eight forces' changes combine. Fix: pool each set of forces over the full two years, measured against the two years before, and widen the margin (for example, one in twenty), or keep one in fifty and state it must be beyond chance at a named level.
+**Answer (Home Secretary):** Taken in part, because the opposition pushed the other way on the same line. Both sets of forces are now pooled over the full two years against their own two years before. The floor is gone. In its place, charges or summonses across all crimes of the named types must rise against the forces waiting, beyond what chance alone would give one time in twenty. That fails a harmless trial that solves nothing extra, on purpose: more vans need more crimes solved, not just no fewer.
+**Outcome:** Conceded in part: test.measure and fails_if, this commit
+
 ## 2026-11-17 · PR #29
 
 **Opposition:** Police could improve your new charge rate by searching easier cases, without solving any extra crime. The code changes which cases enter its own test; drawing forces by lot doesn't fix that. Define eligible cases before allocation and judge outcomes across all of them, whether searched or not. Otherwise choosing the cases can look like better policing.
