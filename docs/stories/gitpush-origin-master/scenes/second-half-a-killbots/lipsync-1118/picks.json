@@ -1,0 +1,169 @@
+{
+ "title": "Kill Bots Lip Sync",
+ "eyebrow": "GPOM scene A · lip-sync pass, 18 Nov",
+ "heading": "The toilet row: pick the best lip sync per line",
+ "intro": "Each line: what's in the film now, then the three best new pairs (a new talking clip with a new voice take, same words, fitted whole to the mouth, never early, never chopped). New clips play their full 5-6 s with the room bed; the film version is trimmed to the line. Pick one per row ('Now in the film' keeps it) and leave a note. Derek's first line didn't fit well on any new pair: say if you want it re-shot as two shorter clips.",
+ "sections": [
+  {
+   "h": "Scene A, the row",
+   "lede": "Sandra and Derek in the bunker toilet, five lines in film order.",
+   "groups": [
+    {
+     "slot": "A-6-0",
+     "title": "Line 1 · Sandra",
+     "line": "Derek. You've left the seat up. Again.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/6-0-now.mp4",
+       "label": "Now in the film"
+      },
+      {
+       "id": "p1",
+       "src": "v/6-0-pick1.mp4",
+       "label": "New 1: clip c, voice e, voice at 0.98x",
+       "warn": ""
+      },
+      {
+       "id": "p2",
+       "src": "v/6-0-pick2.mp4",
+       "label": "New 2: clip d, voice e, voice at 1.01x",
+       "warn": "weak fit: the voice rushes to keep up with the mouth"
+      },
+      {
+       "id": "p3",
+       "src": "v/6-0-pick3.mp4",
+       "label": "New 3: clip a, voice b, voice at 1.15x",
+       "warn": "weak fit: the voice rushes to keep up with the mouth"
+      }
+     ]
+    },
+    {
+     "slot": "A-7d-0",
+     "title": "Line 2 · Derek",
+     "line": "I'm really sorry, love.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/7d-0-now.mp4",
+       "label": "Now in the film"
+      },
+      {
+       "id": "p1",
+       "src": "v/7d-0-pick1.mp4",
+       "label": "New 1: clip b, voice a, voice at 1.14x",
+       "warn": "weak fit: the voice rushes to keep up with the mouth"
+      },
+      {
+       "id": "p2",
+       "src": "v/7d-0-pick2.mp4",
+       "label": "New 2: clip a, voice a, voice at 1.15x",
+       "warn": "weak fit: the voice rushes to keep up with the mouth"
+      },
+      {
+       "id": "p3",
+       "src": "v/7d-0-pick3.mp4",
+       "label": "New 3: clip c, voice a, voice at 1.15x",
+       "warn": "weak fit: the voice rushes to keep up with the mouth"
+      }
+     ]
+    },
+    {
+     "slot": "A-7-0",
+     "title": "Line 3 · Sandra",
+     "line": "Five years underground, and you still can't put a seat down.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/7-0-now.mp4",
+       "label": "Now in the film"
+      },
+      {
+       "id": "p1",
+       "src": "v/7-0-pick1.mp4",
+       "label": "New 1: clip d, voice h, voice at 0.98x",
+       "warn": ""
+      },
+      {
+       "id": "p2",
+       "src": "v/7-0-pick2.mp4",
+       "label": "New 2: clip c, voice j, voice at 1.14x",
+       "warn": ""
+      },
+      {
+       "id": "p3",
+       "src": "v/7-0-pick3.mp4",
+       "label": "New 3: clip a, voice j, voice at 1.00x",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "A-7d-1",
+     "title": "Line 4 · Derek",
+     "line": "But the world ended, Sandra!",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/7d-1-now.mp4",
+       "label": "Now in the film"
+      },
+      {
+       "id": "p1",
+       "src": "v/7d-1-pick1.mp4",
+       "label": "New 1: clip d, voice c, voice at 0.98x",
+       "warn": ""
+      },
+      {
+       "id": "p2",
+       "src": "v/7d-1-pick2.mp4",
+       "label": "New 2: clip a, voice c, voice at 0.97x",
+       "warn": ""
+      },
+      {
+       "id": "p3",
+       "src": "v/7d-1-pick3.mp4",
+       "label": "New 3: clip e, voice d, voice at 0.97x",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "A-7-2",
+     "title": "Line 5 · Sandra",
+     "line": "Yeah, the world ended. Doesn't mean you get to stop having manners.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/7-2-now.mp4",
+       "label": "Now in the film"
+      },
+      {
+       "id": "p1",
+       "src": "v/7-2-pick1.mp4",
+       "label": "New 1: clip b, voice d, voice at 1.11x",
+       "warn": "weak fit: the voice rushes to keep up with the mouth"
+      },
+      {
+       "id": "p2",
+       "src": "v/7-2-pick2.mp4",
+       "label": "New 2: clip e, voice a, voice at 1.08x",
+       "warn": "weak fit: the voice rushes to keep up with the mouth"
+      },
+      {
+       "id": "p3",
+       "src": "v/7-2-pick3.mp4",
+       "label": "New 3: clip c, voice b, voice at 1.04x",
+       "warn": "weak fit: the voice rushes to keep up with the mouth"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
