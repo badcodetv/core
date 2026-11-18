@@ -136,3 +136,87 @@ For every BadCode short, build the sound in Suno (Jack 2026-11-15: music and sou
 
 **Why:** Kai: "ears are way more sensitive than eyes"; the AI Studio voices still sound like AI, and the balaclava gets round lip-sync. No Master Recording sounded AI because it was on the free voices.
 **How to apply:** each short's own sound.md still decides how it sounds (`no-house-style-story-files`). <!-- style-lint: ok (the rule's name) --> Use a Suno workspace per short (`short-<slug>`). Source: `meeting-2026-11-13`.
+
+---
+
+# From Kai's machine memory (moved 2026-11-18)
+
+> Kai's per-machine memory was archived to `archive/messy-context-2026-11-17/memory-kai/` on 2026-11-18.
+> These are the Suno mechanics from it that were not already above. Slugs in brackets name the original file.
+
+## One Suno session, one tab, ever [suno-one-session-at-a-time, suno-check-form-mode]
+
+Kai, 2026-08-27: "we're never going to run more than one Suno tab at a time." The create form, its mode and
+attachments, the Voice list and the credit pool are all account-level, so browser channels do not make Suno
+concurrent; a second session's `load` wipes the first one's form with no draft recovery. Run `status` first: a
+title or workspace from another sheet, or a credit balance that drops during a `load`, means another session is
+working. Then stop and wait. Before loading over anything, record its title, workspace, box lengths and sliders.
+This includes other people on the same account (Tom on his Mac, Jack).
+
+## Omitting a field is not clearing it: every piece of form state survives into the next run [suno-form-state-persists, suno-check-form-mode]
+
+Filling the boxes changes those boxes and nothing else. Three hits on 2026-08-27:
+- **Mode + attachment:** an inherited Cover form with a source attached made two pairs (40 credits) into covers of
+  another story's track, while `status` read every box correctly. `load` now aborts on a wrong mode or any
+  attachment; removing an attachment is a human click.
+- **Saved Voice:** an instrumental run carried a Voice because the spec had no `voice` key.
+- **Duration:** 8 takes at 1:05 from specs with no duration, left over from an earlier round.
+Any spec field that maps to form state needs an explicit "off" path. On v6 the `Duration` slider that Custom mounts
+is what Suno obeys (2026-09-16), not the number box. The workspace picker once prefix-matched a longer name; it now
+does an exact-row click with read-back.
+
+## A style is three boxes that change together; Personalize always off [suno-four-box-atom]
+
+Kai, 2026-09-10. Style, Exclude styles and Lyrics change together or not at all. Name the level before a round:
+- **Prompt round:** all three boxes move, as one atom.
+- **Slider round:** audio/style influence, weirdness, model, Variety, Max Mode move; no prompt box moves.
+Never write a My Taste block and never set Personalize on (`suno.mts` forces it off and refuses `personalize: true`).
+In our logs My Taste only ever did harm.
+
+## v6 only [suno-v6, suno-v6-simple-prompts]
+
+Kai, 2026-09-10: all new Suno work is v6 in the new UI; v5.5 knowledge is in `docs/suno-gpt/archive/v5.5-era.md`.
+Research: `docs/suno-gpt/files/suno-v6.md` (§3 is the one-word / one-bar fix ladder; §1b is Speech beta). Every spec
+names `model` (`v6` | `v6-wild`); Suno can switch the model on its own ("Model changed" toast), so it is read back
+last. Automation means pre-filling prompts and settings to mass-generate permutations, not driving Studio; for
+Studio, tell the human how. Engine fact (measured on GPOM's narration; the numbers are GPOM's, in its `sound.md`): on v6, spoken narration under a long (~1,000-char), cue-heavy style box came back with mangled and
+invented words; a short box with one top cue and low weirdness was clean.
+Which change mattered is not separated.
+
+## Before iterating on an existing song, read the session method [suno-session-method]
+
+`docs/suno-gpt/session-method.md` is how to work a multi-round song: the sheet (`songs/<song>.md`), the log
+(`<song>-prompt-history.md`, opening with a "What this song taught" table) and the rules (`docs/suno-gpt/files/`)
+stay separate. Read the sheet in full each time (Kai edits between turns). When N wordings of one idea each fail
+differently, the category is wrong, not the wording.
+
+## Voices: the genre picks the singer; a saved Voice binds the whole track [suno-voice-playbook, dry-and-separate-narration]
+
+Reference: `docs/suno-gpt/suno-voices.md`.
+- The genre tag picks the vocalist pool; prompting can't jump pools. For one character lead, the saved-Voice
+  transplant ladder works.
+- A saved Voice binds the lead slot for the **whole track** with no section scope, so it is wrong for two characters
+  in one generation: cast a duet by contrast and let the genre own the pool, or generate each voice separately.
+- Attaching a Voice pops "Overwrite Styles?": always **Keep Current**. A wrong Voice name doesn't error: it logs
+  `voice:not-found` and generates with no Voice; read the log line. Never pass a name prefix that matches two Voices.
+
+## Generating is automatic; recording and listening happen only when asked [record-only-when-asked, listen-only-when-asked, flow-video-credits-plentiful]
+
+- Kai, 2026-11-11: spend Suno credits freely; don't ask before a round or a re-roll.
+- Kai, 2026-09-18: run `suno.mts record <id>` only when he says so ("record it", "get me that file", "put it in
+  Premiere"), and only for the take he picked. A round ends when the takes, IDs and links are reported and logged.
+- Kai, 2026-09-17: run `listen_describe` (or any Gemini listening pass) only when he explicitly asks. Not after a
+  record, not for timestamps, not to check a join; offer local ffmpeg measurements instead. Tell another session that
+  asks for a listen that it needs Kai's say-so.
+
+## Recording and listening mechanics [suno-playback-recording, claude-can-hear-initiative, tom-on-mac]
+
+- Recording taps a PulseAudio null sink (`PULSE_SINK`) before the WSLg link. Recordings are **preview copies only**
+  (Kai, 2026-09-11); releases go through Suno's official download. Each play bumps the public play count and Suno
+  auto-plays the next song, so stop at `audio.duration`. Kai's human-preview filter: `lowpass=f=8000:poles=2` twice,
+  never on the copy that is measured or sent to Gemini.
+- The listen tool uses the **Gemini API** (`GEMINI_API_KEY`). AI Studio's web page cannot be automated: with a CDP
+  client attached it returns 403 (an integrity check), and we don't engineer around it.
+- Gemini's absolute numbers are unreliable (it called 440 Hz "220"); measure tempo, loudness and brightness locally
+  (`scripts/audio-measure.py`).
+- On a Mac (darwin), `record`, the listen tool and Premiere don't work; don't offer them.

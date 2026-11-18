@@ -57,3 +57,21 @@ Rule (worked out 2026-10-19 on Jack's Bank Robbery notes, "some are perfect and 
 **Added 2026-10-19 night (Karen review 8):** Omni's own audio was 0.45 s off its picture on the last line, so own-speech word times are NOT safe either; read lips.py's per-frame inner-lip gap (mouth shut ~0, open >0.02) around each phrase and place the dub on the visible opening. When TTS can't match a fast on-screen read without warble (>~1.3×), slow the PICTURE for that stretch (ffmpeg minterpolate mci, 0.75×) and trim a silent tail.
 
 **Now a skill (2026-10-19): `.claude/skills/lip-sync-dub/` with `scripts/lipsync/mouth-map.py` and `place-dub.py`.** Superseded advice above: do NOT slow the picture (Jack: "weird"); a phrase too fast to match plays over a mouthless cutaway instead.
+
+---
+
+# From Kai's machine memory (moved 2026-11-18)
+
+> Kai's per-machine memory was archived to `archive/messy-context-2026-11-17/memory-kai/` on 2026-11-18.
+
+## Lip-sync a Flow talking clip with flow-align.py (Kai, 2026-11-11) [flow-lipsync-not-latentsync]
+
+Kai on LatentSync: "is not her actual natural mouth… regenerate in Flow". Omni's own audio is 0.45-0.7 s off its
+picture, so never place a dub on Flow's audio or Whisper times.
+- Make the clip in Flow with the spoken line in the prompt, paced to our voice take (starts ~0.5 s in, says it once,
+  mouth shuts). Face front or three-quarter. Roll 2+ takes.
+- On each take run `~/.cache/badcode-lips/venv/bin/python scripts/lipsync/flow-align.py <clip> <voice.wav> <out-dir> <name>`:
+  it measures the mouth, places the voice phrase by phrase, eases the picture ≤12% and prints before/after offsets.
+  Pick the take whose runs all land within −0.05 / +0.13 s.
+- If none does, the line is heard over another shot (side-on talking is always off screen).
+- Several Flow jobs sharing one start plate get their tiles mixed up: one job per plate per run.

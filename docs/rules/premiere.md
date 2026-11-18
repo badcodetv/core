@@ -58,3 +58,48 @@ Jack, 2026-10-10, on the first Money For Something topical cut: "there are a lot
 ## A cut made in Premiere before the timeline tool existed
 
 Moved from the old CLAUDE.md (Kai, 2026-11-13): bring such a cut onto a timeline page with `scripts/scene/premiere-to-edl.py` (`--stem`, `--beats-from`) plus a Premiere render. **Check which sequence is actually open first**: the Bank Robbery page was once built from the wrong cut.
+
+---
+
+# From Kai's machine memory (moved 2026-11-18)
+
+> Kai's per-machine memory was archived to `archive/messy-context-2026-11-17/memory-kai/` on 2026-11-18.
+> These are the Premiere mechanics from it that were not already above. Slugs in brackets name the original file.
+
+## Clips go into Premiere one per beat; an ffmpeg concat is a preview only [premiere-import-clips-individually]
+
+Kai, 2026-08-24. A concat is a frozen edit. The deliverable is the clips plus a sequence built from them
+(`premiere_import`, then `premiere_insert_clip` per beat). `ffmpeg -f concat` stays fine for a quick `*-ROUGH.mp4`.
+
+## Page and Premiere move together every round [timeline-drives-premiere, no-split-brain, premiere-changes-into-build-script]
+
+The procedure is the scene-timeline skill ("Premiere sync", "No split brain").
+- Kai keeps noting on the timeline page after a scene is in Premiere; every round reaches Premiere too. Each round is
+  a **new** sequence `…-r<N+1>` (`premiere-plan.py --seq`); `scene.json` `premiere.current` points at it.
+- Run `scripts/scene/premiere-check.py --write` before every Premiere step. "Edited in Pr" means stop: don't build
+  over him and don't leave the page behind.
+- Kai's Premiere-only decisions are **ported into the scene's build script** (e.g. `cut3.py`), so no rebuild drops
+  them (2026-11-11). A round that stays different on purpose carries `premiere_ahead` with the reason.
+- The check compares V1 picture only: ask about any sound he moved by hand. After a big rebuild, audit for shots past
+  their file's end and V1 gaps.
+- Close sequences not in use; open tabs in film order, one sequence per part.
+
+## When a cut vanishes, look in the auto-saves before anything else [premiere-autosave-recovery]
+
+Premiere writes `Adobe Premiere Pro Auto-Save/<project>--<uuid>-<date>_<time>.prproj` every few minutes. Copy them all
+somewhere safe first, then gunzip each and list its clips (Sequence → VideoTrackGroup → Track → TrackItem Start/End,
+254016000000 ticks per second → SubClip Name). Never Save As over anything until the right one is found. Trap: Save As
+switches the open project to the new file.
+
+## The bridge [premiere-bridge-initiative]
+
+Plan: `design/2026-08-21-premiere-bridge-and-video-fx.md`; API behaviours: `docs/premiere/api-notes.md`.
+- The bridge binds `ws://localhost:7890` on the **first** `premiere_*` call, never at startup. It is strictly one.
+- **Never kill another session's server to take the port.** Trace the holding pid up to its `claude` process and
+  compare with your own.
+- Never ask Kai to reload the panel for a connection problem: it is almost always that nothing is listening on our
+  side.
+- Premiere marshals only clip track items; Actions in one CompoundAction all compute against the start state (trim,
+  then move, as separate calls); transitions are write-only.
+- **No paid plugins** (Kai, 2026-08-21). For fire, smoke and sparks: make the element on black in Flow and composite
+  with a Screen blend. No After Effects.

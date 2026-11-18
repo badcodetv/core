@@ -376,3 +376,94 @@ Do **not** drive Google Flow through the browser/MCP automation by default when 
 **How to apply:** for every plate, output one fenced block — the story's own preamble from its `look.md` if it has one (none is a default), then the scene, then `Thanks.` — with a short header above it stating cast (`@X` or none), time of day, and whether ingredients/frames or a reference image are attached. One plate at a time so Kai can edit before firing. Source the craft from `flow-engine-research-goes-in-docs-google-flow` (`docs/google-flow/`) and `docs/flow/`. Only touch the Flow automation if Kai asks for it explicitly.
 
 **Jack, 2026-10-21 (Bank Robbery):** "just do the stuff in flow and we'll change it if it does not fit, just pick the best one." When **Jack** is driving, run the stills and clips through the Flow tooling yourself, choose the best candidate, put it on the timeline, and report what was picked and why. Handing him a paste block instead cost a round. Kai's 2026-08-16 rule above still stands for Kai.
+
+---
+
+# From Kai's machine memory (moved 2026-11-18)
+
+> Kai's per-machine memory was archived to `archive/messy-context-2026-11-17/memory-kai/` on 2026-11-18.
+> These are the Flow mechanics from it that were not already above. Slugs in brackets name the original file.
+
+## Two no-candidate failures on a healthy session = a policy block: rewrite, don't retry [flow-policy-blocks]
+
+Kai, 2026-07-25: over half of Flow prompts were being policy-blocked, and the MCP tools report a block as a timeout or
+a missing candidate. If `flow_status` is fine and sibling prompts succeed, two failures on one prompt mean it is
+blocked. The usual triggers: real brand names or legible logos; likeness phrasing ("same face, same bone structure");
+stacked destitution words next to a real business; legible text attributed to a real institution. Rewrite: invented
+near-miss brands, "character-design consistency" for faces, no legible real text, softer degradation words.
+Not built yet: a distinct `POLICY_BLOCKED` code in `@badcode/flow-mcp`.
+
+## Credits and the still gate (Kai) [flow-stills-are-free, flow-video-credits-plentiful, still-approval-gate, flow-video-count-one]
+
+- **Stills cost nothing on Kai's account** (2026-10-20: "Generating will use 0 credits"); make several options per
+  shot without asking. ⚠️ That was Nano Banana 2; whether 2.1 is free is unchecked (see the top of this file).
+- **Video credits are plentiful for now** (Kai, 2026-10-23): no per-round caps for agents, no asking before a
+  re-roll; still log spend in the ledgers. Drop this if Kai says credits are tight.
+- **The gate that stays: Kai sees every still candidate and picks before any video credit is spent.** Contact sheet per
+  subject, state your pick and every defect, then stop. (GPOM cut 4 shot a whole beat on the wrong plate when Claude
+  picked alone.)
+- **Video count 1 by default** (Kai, 2026-09-28): a second take on a locked plate comes back near-identical. Buy two
+  only when Kai asks or it is a genuinely new setup, and say so first. ⚠️ This differs from Jack's "x2" default in
+  *Omni Flash video defaults* above: count 1 when Kai is driving, x2 when Jack is.
+
+## Video model: Omni 1.2 Flash [omni-1-2-default]
+
+Kai, 2026-11-09: Omni 1.2 Flash replaces Omni 1.1 Flash and any Veo 3.1 Fast/Quality use. Google retires Veo 3.1
+Fast, Veo 3.1 Quality and Omni 1.1 Flash from Flow on 5 Dec 2026 (Omni 1.2 and Veo 3.1 Lite stay). An A/B came out
+2 better / 2 ties / 0 worse. 1.2 costs about twice 1.1 at 720p; it can insert a cut of its own, so ask for one
+continuous shot; length is a 3-15 s slider. Untested on 1.2: start+end frame, cast Characters, "Do not X" phrasing.
+Record: `docs/google-flow/2026-11-09-omni-1-2-sweep.md`; re-test with `scripts/flow-tests/model-ab.mts`.
+
+## Check every Flow output by content, never by the return value [flow-late-tile-shifts-batch]
+
+A late tile from an earlier call can be saved under the new call's name. Seen in batches after a TIMEOUT (2026-10-16,
+every file off by one) and in single `flow_generate_video` calls with no timeout (2026-11-10, three times in one
+session). After every call check: a repeated `mediaId`, a duration that doesn't match `durationSeconds`, an md5 equal
+to another file, and a 1 fps frame strip against the prompt. Rename by content, fix the recipe card's `source_id`, and
+regenerate a missing tail item on its own.
+
+## Video composer facts (settled by clicking, 2026-08-12; the UI has since been rebuilt) [flow-video-modes]
+
+Full write-up: `docs/superpowers/flow-video.md`; the rebuilt UI is `docs/flow/automation-2026-09-rebuild.md`.
+- One composer, picked by the images passed: start only = animate, start+end = first/last frame, none =
+  text-to-video. End-only does not exist. Omni rejects a last frame.
+- Duration and count live in the compose-bar popover, which overrides the Settings panel (that is how `count` was
+  once silently ignored).
+- Refine a clip = its own *Reuse prompt*, which restores prompt + source still, so `flow_refine_video` needs only
+  the `mediaId`.
+- The asset picker lists only what the current mode can use (video mode lists no clips).
+
+## Flow moved to flow.google.com (Angular rebuild, 2026-09-13) [flow-moved-to-flow-google-com, flow-wave-b-validation]
+
+Source of truth: `docs/flow/automation-2026-09-rebuild.md`. Silent traps: an old media URL returns HTML with 200;
+the tile `src` is a re-encode (harvest via More options → Download → Original size); an upload still "Uploading" lets
+Add to prompt attach a different image; a bare refine prompt makes an unrelated picture.
+- After editing `packages/flow-mcp`, `/mcp` reconnect `flow`. `.mcp.json` runs the server by a **relative** path, so
+  it runs the primary checkout's source: a fix on a worktree branch does nothing until it is merged.
+- Free test tiers (2026-09): Nano Banana 2 images and Veo 3.1 Lite [Lower Priority] video.
+
+## The shared browser [concurrent-browser-sessions, playwright-mcp-hijacks-shared-chrome, runmts-tmpdir-downloads]
+
+- **Never run `scripts/browser-channel.sh claim` in a session** (superseded 2026-09-28: it opened a second Chrome).
+  Call `flow_status`; flow-mcp launches and holds its own channel. Branded Google Chrome on every channel (Kai,
+  2026-09-13). Each channel's profile is a separate login.
+- **Don't `/mcp` reconnect `flow` while another session is doing Flow work** (2026-10-23: it took over the shared
+  Chrome's download path and cost the other session an hour). Check `ListAgents` first; a session that doesn't need
+  Flow leaves the server disconnected.
+- **Never give a subagent the Playwright MCP for general browsing.** It drives the live Suno/Flow Chrome on 9222; a
+  `browser_navigate` replaced the Suno create tab and wiped the form (2026-09-30). Use curl/WebFetch, or a fresh
+  headless `chromium.launch()`. If the MCP must be used: new tab first, never navigate an existing one.
+- **run.mts downloads:** besides running unsandboxed (above), launch it as
+  `TMPDIR=$HOME/.cache/pw-tmp FLOW_CDP_PORT=<port> npx tsx scripts/scene/run.mts …`. If the log shows `download-retry`
+  with ENOENT, kill it at once. Duplicate takes in `video/inbox/dupes/` are often usable.
+
+## Video lanes are layers: Flow animates the world, Premiere moves the camera, ffmpeg does the exact parts [hybrid-video-method]
+
+Kai, 2026-08-26 (measured on Veo; untested on Omni 1.2). Write-up: `docs/video-fx/hybrid-method.md`.
+- Animate the plate with the camera **explicitly locked**; camera translation is what triggers regeneration drift.
+  Six of eight locked plates held at 0-2 px drift (vs 34-66 px).
+- A **hinge-able surface in the near field** (doors, a louvre wall) drifts whatever the wording, tier or duration:
+  plan it as a locked plate + procedural life in post. Read `docs/flow/video-prompting.md` §9 before the first roll.
+- Move the camera in Premiere over the finished clip. ffmpeg is the only lane that puts text on screen.
+- Length: chain clips (last frame of N → first frame of N+1); never pin an `endImage` to join them.
+- On a frozen plate add moving grain; reverse or ping-pong only light, never settling matter.

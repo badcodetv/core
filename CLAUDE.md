@@ -56,6 +56,7 @@ only when `badcode.md` points to them.
 | Suno (songs, sound for shorts) | [`docs/rules/suno.md`](./docs/rules/suno.md) | `suno-automation`, `suno-prompt`, `variations` |
 | AI Studio voices, lip-sync | [`docs/rules/voices.md`](./docs/rules/voices.md) | `voice-casting`, `lip-sync-dub` |
 | Premiere | [`docs/rules/premiere.md`](./docs/rules/premiere.md) | `premiere-automation`, `drive-sync` |
+| YouTube (uploads, labels, playlists) | [`docs/rules/youtube.md`](./docs/rules/youtube.md) | `youtube-channel` |
 | Anything with Jack or Kai (rounds, picks pages, media folders, Drive) | [`docs/rules/working.md`](./docs/rules/working.md) | |
 
 Skills live in `.claude/skills/` and load on demand: the film is made with `overview-board` → `new-scene` →
