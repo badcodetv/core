@@ -42,8 +42,9 @@ them cut in, with the subtle VHS finish; its timeline page is the one linked bel
 ## Story-only rules
 - The evil is a force, never one person: never blame or show a person. Since 17 Nov it may show **a ghostly hand** (only a
   hand: no face, no body, no one you could name).
-- Price changes happen in the edit: only the price cards change, pasted onto their exact region from the brightest flash
-  frame; the setting stays identical before and after.
+- **Prices are drawn in the edit, never by Flow** (Jack, 2026-11-18): stills and clips have blank paper cards, and
+  `scripts/shorts/price_cards.py` writes the price in marker on each card, changing in the hand's wake as it passes over
+  (shelf 50p → £5; freezer £5 → £50, 10p crossed out → £12). Card corners and timings: `scenes/malevolent-force/prices-*.json`.
 - End card (Jack): "Based on true events. Coming to a shop near you."
 - The chocolate bar is the Freddo gag: "10p" crossed out, "£12" beside it.
 - Blur shot 1's "BREAD £50" window card (it spoils the end) and shot 2's legible "WALKERS" spinner.

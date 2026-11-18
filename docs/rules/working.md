@@ -195,3 +195,12 @@ together they are everything. Full convention: `docs/provenance/README.md`.
 - `prov.py trail` after every page publish, `check` before showing a cut, `freeze` when Kai or Jack says a cut is done.
   A lost page is rebuilt, then refilled with `prov.py restore`.
 - Going forward only: no backfill of older stories. The replay script stays unbuilt until a better model arrives.
+
+## Jack 2026-11-18: every track on a page gets a player with a time slider, never just a link
+
+"when you have tracks on the timeline page, can you make a player with a slider on it for the time, and then do that without
+downloading it? ... So that I don't have to click the link every time? for songs".
+
+**How to apply:** record each take (`suno.mts record <songId>`, no download spent; set `LISTEN_MEDIA_ROOT` to the short's
+`<media>/audio/<round>/` on Jack's machine) and put its `.preview.mp3` on the page as an `audio` row (`build-picks.py` kind
+`audio` draws a player with play and a time slider), published with the page. A Suno link can sit beside it, never instead.

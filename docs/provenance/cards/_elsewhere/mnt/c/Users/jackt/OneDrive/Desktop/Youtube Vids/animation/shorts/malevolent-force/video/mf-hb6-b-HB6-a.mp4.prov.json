@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-hb6-b-HB6-a.mp4",
+ "made": "2026-11-18T13:18:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] The burnt hand hangs over the freezer lid, hooked fingers hovering at the two blank price cards. [00:02-00:04] It sweeps down and across both cards, the palm and fingers smothering them, ember cracks glowing. [00:04-00:06] It whips up into the dark above and is gone, smoke trailing. The loaf and the chocolate bar hold their places. One continuous shot, no cuts. The paper card stays plain white throughout. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HB6-a.jpg",
+ "why": "Jack 2026-11-18: blank labels, prices changed in the edit as the hand passes over them",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HB6-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "hb6-b",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T13:17:24.531Z"
+ }
+}

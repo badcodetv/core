@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-basses-from-below-v6-bf7756d2.preview.mp3",
+ "made": "2026-11-18T13:29:56.281Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "bf7756d2-d00f-4b4c-bdc9-76ab998831eb",
+ "inputs": {
+  "title": "malevolent force r3-strings-basses-from-below-v6",
+  "song": "https://suno.com/song/bf7756d2-d00f-4b4c-bdc9-76ab998831eb"
+ },
+ "settings": {
+  "durationSec": 15
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-basses-from-below-v6-bf7756d2.wav"
+}

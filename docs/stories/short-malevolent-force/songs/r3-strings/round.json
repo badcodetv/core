@@ -1,0 +1,80 @@
+[
+  {
+    "name": "slasher-stab-section",
+    "style": "instrumental horror film cue, small dry string orchestra only, 1960 black-and-white thriller recording, close mono-feeling room. Opens in near silence, just a held low double-bass note, barely audible. Then muted violin section in shrieking high staccato stabs on one repeated note, hard downbows like a knife, each stab smeared with a slashing upward glissando. Stabs come in tight bursts of two or three, black silence between bursts, the gaps shrinking toward the end. Grinding semitone cluster chords, violas and cellos rubbing a half step apart, never resolving. Ends on a loud dissonant cluster stab cut off dead, no reverb tail. Tense, cold, no melody, no vocals",
+    "exclude": "epic, trailer, braam, drums, percussion, synth, choir, vocals, piano, brass, hybrid orchestral, ambient pads, major key resolution",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "lone-violin-near-the-bridge",
+    "style": "solo violin only, horror suspense cue, instrumental. One player alone in a small dead room after closing time, close-miked and bone dry, every bow hair audible, silences completely empty. Starts from almost nothing: a thin, glassy, whispering shiver of fast bow right against the bridge, airy and metallic, barely a pitch. A sour two-note half-step figure, slow and patient, that creeps up one step each time it returns, never resolving. Without warning the bow digs in hard and the violin screams high, scraping and grinding, then cuts to dead silence. Intimate, unsettling, sparse. Ends on a strained high note that simply stops.",
+    "exclude": "epic, trailer, braam, hybrid, drums, percussion, orchestra, string section, cello, double bass, piano, synth, choir, vocals, reverb wash",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 55,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": true
+  },
+  {
+    "name": "quartet-cluster-ostinato",
+    "style": "contemporary chamber horror, solo string quartet only (two violins, viola, cello), close-miked and dry, small room. Cello repeats a quiet four-note figure that climbs a step each time, soft and even like creeping footsteps. Above it the violins and viola hold tight tremolo clusters, a semitone apart, gritty near the bridge, gliding slowly upward. Every few seconds all four players strike one hard accented clashing chord together, then a beat of dead silence, then the cello figure creeps back in. Harmony never settles; the final chord is the harshest clash, cut off dead. Slow, sparse, tense, instrumental",
+    "exclude": "epic, trailer, braam, hybrid, orchestral, drums, percussion, synth, choir, vocals, piano",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "basses-from-below",
+    "style": "instrumental horror suspense cue for low string section, double basses and cellos only at the start, a growling sustained low drone with heavy bow pressure, a two-note semitone ostinato in the basses that begins slow and quiet and keeps speeding up and swelling, woody rosin grit, bows biting the string, close dry wooden room, dark and dissonant, harmony never resolves, high violins silent for long stretches then a sudden shrieking stab or screaming upward glissando that vanishes at once, stops abruptly mid-figure",
+    "exclude": "epic, hybrid, braam, trailer, drums, percussion, synth, choir, vocals, piano, brass, major key",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": true
+  },
+  {
+    "name": "aleatoric-swarm-strings",
+    "style": "experimental modernist string music for a horror film, 1960s avant-garde sound-mass, large string orchestra only, atonal, dense tone clusters packed at the very top of the violins' range, wide slow glissandi sliding like distant screams, rapid col legno tapping with the bow wood, scraping and creaking behind the bridge, glassy sul ponticello hiss, texture over melody, chaotic yet sparse, free time with no steady beat, short swarms that swell in seconds then collapse, sudden dead silences between waves, every chord left hanging, dry close concert-hall recording, instrumental",
+    "exclude": "epic, trailer, hybrid, braam, drums, percussion, synth, electronic, choir, vocals, piano, melody, heroic, uplifting, major key, tonal, orchestral hit, ambient pad",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 68,
+    "styleInfluence": 78,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  },
+  {
+    "name": "worn-tape-string-cue",
+    "style": "1970s production-library suspense cue, strings only, lo-fi mono transfer from a worn reel-to-reel tape. Small cheap string section: two slightly out-of-tune violins, one viola, one cello, thin and boxy, close and dry like a small back room. Opens almost silent on soft tape hiss; low cello repeats a two-note rising figure that creeps higher; violins slide in on slow, shivering tremolo; sour dissonant clusters that never settle. Gentle wow and flutter bends the pitch. Sudden shrill violin stabs, short and clipped, slightly overdriven, cut off into hiss and dead air. Muffled top end, narrow, dull, faded. Ends on a wobbling unresolved chord that sags in pitch and drops away into tape noise. Instrumental.",
+    "exclude": "vocals, choir, synth, synth pad, drums, percussion, beat, epic, trailer, braam, hybrid, brass, piano, major-key resolution, hi-fi",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 45,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 17,
+    "maxMode": false
+  }
+]

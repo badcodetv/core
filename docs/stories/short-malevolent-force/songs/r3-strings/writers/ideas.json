@@ -1,0 +1,26 @@
+[
+  {
+    "name": "slasher-stab-section",
+    "idea": "The classic 1960 slasher-film string sound: a full violin section with mutes, playing short shrieking high stabs on repeated notes with slashing upward glissandi, over a low double-bass pedal. Ask for it plainly in sound words: muted violins, piercing staccato stabs like a knife, semitone cluster chords, a held low bass note, black silence between stabs. The track should open almost silent, with stabs arriving in short bursts of two or three, getting closer together towards the end, and finish on an unresolved cluster cut off dead. Exclude epic, trailer, braam, drums and synth so it stays a dry, small mono-feeling orchestra."
+  },
+  {
+    "name": "lone-violin-near-the-bridge",
+    "idea": "A single solo violin, alone in a small dead room, is the whole performer: thin, glassy tremolo played near the bridge, a two-note semitone figure that keeps creeping up a step, and sudden scratching high shrieks with heavy bow pressure. No section, no bass, no reverb wash: it should feel like one person playing in the shop after closing, close-miked and dry, so the silences between notes are truly empty. Describe the sound rather than relying on Italian terms (glassy, whispering, scraping, then a scream of the bow). Keep it under 17 seconds of gesture, ending on a high note that just stops."
+  },
+  {
+    "name": "quartet-cluster-ostinato",
+    "idea": "A modern string quartet (two violins, viola, cello) playing a tight, rising four-note ostinato on the cello, quiet and pulsing like footsteps, while the violins hold dissonant tremolo clusters that slide slowly upwards. Every few seconds all four players hit one sharp, accented dissonant chord together and then fall silent for a beat before the ostinato creeps back. Ask for contemporary chamber horror, intimate and close, nothing orchestral or cinematic-big. The harmony must never resolve: the last chord is the most dissonant one, cut off abruptly."
+  },
+  {
+    "name": "basses-from-below",
+    "idea": "Build the cue from the bottom up: a low choir of double basses and cellos (instruments only, no voices) playing a growling sustained drone and a slow two-note semitone ostinato that gets faster and louder, like something approaching from under the floor. High violins are almost absent and only appear as rare, sudden shrieking stabs and screaming high glissandi that cut through the dark, then vanish. Ask for heavy, woody low strings, bows digging in, a dark wooden room tone. The rising speed of the ostinato carries the dread; the cue ends mid-figure as if the floor gave way."
+  },
+  {
+    "name": "aleatoric-swarm-strings",
+    "idea": "An avant-garde, mid-century concert-hall approach: a large string orchestra playing tone clusters at the very top of their range, wide sliding glissandi that sound like distant screams, rapid tapping with the wood of the bow, and scraping noises, more texture than melody. Frame it in the style box as experimental modernist string music for a horror film, atonal and chaotic but sparse, with sudden total silences. The swarm should swell and collapse in short waves rather than build one long crescendo, so the editor can cut each wave to a scare. Exclude melody-friendly and epic tags so it never turns heroic or tonal."
+  },
+  {
+    "name": "worn-tape-string-cue",
+    "idea": "A small, cheap-sounding string ensemble as if from a worn library-music tape played in a back room: slightly detuned violins and cello with a faint wow and flutter, slow tremolo dread, a two-note rising pulse, and sharp stabs that sound a little clipped and boxy. Ask for lo-fi, old film-library suspense cue, mono, muffled highs, tape hiss under the silences, so it sits with the subtle VHS finish of the picture. Still strings only: no synth pads, no drums, no beat. The stabs should feel startling despite the low fidelity, and the cue ends on a warbling, unresolved chord that drops away."
+  }
+]

@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-worn-tape-string-cue-5fcd72c0.wav",
+ "made": "2026-11-18T13:30:31.597Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "5fcd72c0-64ff-4e14-995b-f24abcb404ed",
+ "inputs": {
+  "title": "malevolent force r3-strings-worn-tape-string-cue",
+  "song": "https://suno.com/song/5fcd72c0-64ff-4e14-995b-f24abcb404ed"
+ },
+ "settings": {
+  "durationSec": 15
+ }
+}

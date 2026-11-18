@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-aleatoric-swarm-stri-48e2c83f.preview.mp3",
+ "made": "2026-11-18T13:31:42.625Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "48e2c83f-84f0-49a4-ae02-78d72b21cd6d",
+ "inputs": {
+  "title": "malevolent force r3-strings-aleatoric-swarm-stri",
+  "song": "https://suno.com/song/48e2c83f-84f0-49a4-ae02-78d72b21cd6d"
+ },
+ "settings": {
+  "durationSec": 16.12
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-aleatoric-swarm-stri-48e2c83f.wav"
+}

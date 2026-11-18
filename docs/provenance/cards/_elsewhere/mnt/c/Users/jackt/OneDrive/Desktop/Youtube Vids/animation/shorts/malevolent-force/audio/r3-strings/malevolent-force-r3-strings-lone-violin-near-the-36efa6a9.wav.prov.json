@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-lone-violin-near-the-36efa6a9.wav",
+ "made": "2026-11-18T13:31:09.284Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "36efa6a9-2d39-4ece-8020-d439051c32e8",
+ "inputs": {
+  "title": "malevolent force r3-strings-lone-violin-near-the",
+  "song": "https://suno.com/song/36efa6a9-2d39-4ece-8020-d439051c32e8"
+ },
+ "settings": {
+  "durationSec": 15
+ }
+}

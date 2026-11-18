@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-slasher-stab-section-9d0baddf.preview.mp3",
+ "made": "2026-11-18T13:32:58.900Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "9d0baddf-8759-48cd-9d3b-4e65cfe6bec6",
+ "inputs": {
+  "title": "malevolent force r3-strings-slasher-stab-section",
+  "song": "https://suno.com/song/9d0baddf-8759-48cd-9d3b-4e65cfe6bec6"
+ },
+ "settings": {
+  "durationSec": 15
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-slasher-stab-section-9d0baddf.wav"
+}

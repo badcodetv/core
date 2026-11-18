@@ -220,3 +220,12 @@ Reference: `docs/suno-gpt/suno-voices.md`.
 - Gemini's absolute numbers are unreliable (it called 440 Hz "220"); measure tempo, loudness and brightness locally
   (`scripts/audio-measure.py`).
 - On a Mac (darwin), `record`, the listen tool and Premiere don't work; don't offer them.
+
+## 2026-11-18: Suno quirks met on a round run from Jack's machine
+
+- `suno.mts` needs a suno.com tab in the browser on 9222; after `/mcp` relaunches that browser there is none
+  (`WRONG_CHANNEL`): `npx tsx scripts/suno/suno.mts open-tab`, then run again. Nothing is spent when this fails.
+- The workspace picker sometimes reads "Select Workspace" and the run aborts that prompt **before spending** (`workspace:WRONG`).
+  Re-run with `--only <names>`; it took up to two retries.
+- `suno.mts record` writes to `LISTEN_MEDIA_ROOT`, whose default is a path on Kai's machine: set it on Jack's.
+- A writer may choose Max Mode: those Creates cost 20, not 10.

@@ -1,0 +1,17 @@
+{
+  "style": "contemporary chamber horror, solo string quartet only (two violins, viola, cello), close-miked and dry, small room. Cello repeats a quiet four-note figure that climbs a step each time, soft and even like creeping footsteps. Above it the violins and viola hold tight tremolo clusters, a semitone apart, gritty near the bridge, gliding slowly upward. Every few seconds all four players strike one hard accented clashing chord together, then a beat of dead silence, then the cello figure creeps back in. Harmony never settles; the final chord is the harshest clash, cut off dead. Slow, sparse, tense, instrumental",
+  "exclude": "epic, trailer, braam, hybrid, orchestral, drums, percussion, synth, choir, vocals, piano",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    55
+  ],
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false,
+  "title": "malevolent force r3-strings-quartet-cluster-ostinato",
+  "mode": "custom",
+  "workspace": "short-malevolent-force"
+}

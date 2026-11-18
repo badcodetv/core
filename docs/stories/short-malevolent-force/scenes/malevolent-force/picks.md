@@ -89,3 +89,12 @@
   shot 3 aisle 0.7 + peek b 1.0 + top a 1.3; shot 4 hand c 2.0 + brownout 1.9 (£1, £5); shot 5 mirror b 1.6; shot 6 hand b
   1.6 + lightning swap 3.0. vibes1 slowed to 0.90x (pitch kept) to fit until the strings exist. Timeline page republished to
   https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX (round 3 plan on the page). Not in Premiere yet.
+- **2026-11-18, Jack:** "go" on the strings; and "i think it would be better if we had the prices labels blanks and change the
+  prices in the edit instead of in flow, so that we can have the hand go over the prices and as the hand goes over it the prices
+  change". Done: blank-card stills `HB4-a/b`, `HB6-a/b` (only the writing removed from the picked hand stills), animated on
+  Omni (`hb4-*`, `hb6-*`, 6 s, hand slides over the card and lifts away), prices drawn by `scripts/shorts/price_cards.py`
+  (marker font, keyed by the paper's brightness so the hand hides the ink, new price in the hand's wake; the £1 step is gone,
+  one pass = one change). The freezer's £5 card is barely touched, so it settles to £50 as the hand leaves.
+- **2026-11-18, strings round** (`songs/r3-strings/`, variations: sealed writers, gate passed first time): six ideas, 12
+  takes, 80 credits (5,703 → 5,623; two Max Mode prompts cost 20). Takes recorded to `<media>/audio/r3-strings/`.
+  Round 9 on the same page: the strings as audio players (Jack asked for a player with a slider), the price clips.

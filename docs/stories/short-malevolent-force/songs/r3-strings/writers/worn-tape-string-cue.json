@@ -1,0 +1,13 @@
+{
+  "name": "worn-tape-string-cue",
+  "style": "1970s production-library suspense cue, strings only, lo-fi mono transfer from a worn reel-to-reel tape. Small cheap string section: two slightly out-of-tune violins, one viola, one cello, thin and boxy, close and dry like a small back room. Opens almost silent on soft tape hiss; low cello repeats a two-note rising figure that creeps higher; violins slide in on slow, shivering tremolo; sour dissonant clusters that never settle. Gentle wow and flutter bends the pitch. Sudden shrill violin stabs, short and clipped, slightly overdriven, cut off into hiss and dead air. Muffled top end, narrow, dull, faded. Ends on a wobbling unresolved chord that sags in pitch and drops away into tape noise. Instrumental.",
+  "exclude": "vocals, choir, synth, synth pad, drums, percussion, beat, epic, trailer, braam, hybrid, brass, piano, major-key resolution, hi-fi",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 45,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}

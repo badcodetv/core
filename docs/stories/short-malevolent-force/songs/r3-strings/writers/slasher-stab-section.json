@@ -1,0 +1,13 @@
+{
+  "name": "slasher-stab-section",
+  "style": "instrumental horror film cue, small dry string orchestra only, 1960 black-and-white thriller recording, close mono-feeling room. Opens in near silence, just a held low double-bass note, barely audible. Then muted violin section in shrieking high staccato stabs on one repeated note, hard downbows like a knife, each stab smeared with a slashing upward glissando. Stabs come in tight bursts of two or three, black silence between bursts, the gaps shrinking toward the end. Grinding semitone cluster chords, violas and cellos rubbing a half step apart, never resolving. Ends on a loud dissonant cluster stab cut off dead, no reverb tail. Tense, cold, no melody, no vocals",
+  "exclude": "epic, trailer, braam, drums, percussion, synth, choir, vocals, piano, brass, hybrid orchestral, ambient pads, major key resolution",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false
+}

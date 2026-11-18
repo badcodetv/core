@@ -1,0 +1,13 @@
+{
+  "name": "basses-from-below",
+  "style": "instrumental horror suspense cue for low string section, double basses and cellos only at the start, a growling sustained low drone with heavy bow pressure, a two-note semitone ostinato in the basses that begins slow and quiet and keeps speeding up and swelling, woody rosin grit, bows biting the string, close dry wooden room, dark and dissonant, harmony never resolves, high violins silent for long stretches then a sudden shrieking stab or screaming upward glissando that vanishes at once, stops abruptly mid-figure",
+  "exclude": "epic, hybrid, braam, trailer, drums, percussion, synth, choir, vocals, piano, brass, major key",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": true
+}

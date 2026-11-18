@@ -1,0 +1,17 @@
+{
+  "style": "solo violin only, horror suspense cue, instrumental. One player alone in a small dead room after closing time, close-miked and bone dry, every bow hair audible, silences completely empty. Starts from almost nothing: a thin, glassy, whispering shiver of fast bow right against the bridge, airy and metallic, barely a pitch. A sour two-note half-step figure, slow and patient, that creeps up one step each time it returns, never resolving. Without warning the bow digs in hard and the violin screams high, scraping and grinding, then cuts to dead silence. Intimate, unsettling, sparse. Ends on a strained high note that simply stops.",
+  "exclude": "epic, trailer, braam, hybrid, drums, percussion, orchestra, string section, cello, double bass, piano, synth, choir, vocals, reverb wash",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": [
+    55
+  ],
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": true,
+  "title": "malevolent force r3-strings-lone-violin-near-the-bridge",
+  "mode": "custom",
+  "workspace": "short-malevolent-force"
+}

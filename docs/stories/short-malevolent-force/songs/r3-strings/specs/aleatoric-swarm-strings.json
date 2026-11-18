@@ -1,0 +1,17 @@
+{
+  "style": "experimental modernist string music for a horror film, 1960s avant-garde sound-mass, large string orchestra only, atonal, dense tone clusters packed at the very top of the violins' range, wide slow glissandi sliding like distant screams, rapid col legno tapping with the bow wood, scraping and creaking behind the bridge, glassy sul ponticello hiss, texture over melody, chaotic yet sparse, free time with no steady beat, short swarms that swell in seconds then collapse, sudden dead silences between waves, every chord left hanging, dry close concert-hall recording, instrumental",
+  "exclude": "epic, trailer, hybrid, braam, drums, percussion, synth, electronic, choir, vocals, piano, melody, heroic, uplifting, major key, tonal, orchestral hit, ambient pad",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    68
+  ],
+  "styleInfluence": 78,
+  "vocalGender": null,
+  "durationSec": 17,
+  "maxMode": false,
+  "title": "malevolent force r3-strings-aleatoric-swarm-strings",
+  "mode": "custom",
+  "workspace": "short-malevolent-force"
+}

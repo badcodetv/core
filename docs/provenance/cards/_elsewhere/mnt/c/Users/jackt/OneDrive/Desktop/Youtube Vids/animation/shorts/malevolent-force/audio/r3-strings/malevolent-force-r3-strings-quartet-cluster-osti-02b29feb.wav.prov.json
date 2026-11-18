@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/r3-strings/malevolent-force-r3-strings-quartet-cluster-osti-02b29feb.wav",
+ "made": "2026-11-18T13:32:23.132Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "02b29feb-70f8-413b-8014-0c38044daac7",
+ "inputs": {
+  "title": "malevolent force r3-strings-quartet-cluster-osti",
+  "song": "https://suno.com/song/02b29feb-70f8-413b-8014-0c38044daac7"
+ },
+ "settings": {
+  "durationSec": 15
+ }
+}

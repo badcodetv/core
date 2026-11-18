@@ -1,10 +1,123 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 8",
- "heading": "The horror, moving: pick a take for each",
- "intro": "All six pieces animated on Omni (your call: Omni for everything). Extra takes exist because a download bug made the first run render twice (fixed). These are the raw 4 s clips; in the cut each scare is only a few frames, with a strings stab, and the price cards still change in the edit. Pick one per row; a note can say where it should cut.",
- "round": 8,
+ "eyebrow": "The Malevolent Force · more horror · round 9",
+ "heading": "Suspense strings, and the prices drawn in the edit",
+ "intro": "Two things. The music: your suspense-strings pick, six genuinely different string ideas from separate writers, two takes each (15 s, instrumental). Each has a player with a slider: play it right here. The prices: as you asked, the cards are now blank in Flow and the prices are drawn in the edit, changing in the hand's wake as it passes over them (shelf 50p → £5; freezer £5 → £50, 10p crossed out → £12). Pick one per row.",
+ "round": 9,
  "sections": [
+  {
+   "h": "Round 9",
+   "lede": "Play the strings with the cut in mind: they replace vibes1 under the whole short; a stab gets placed on each scare in the edit.",
+   "groups": [
+    {
+     "slot": "strings",
+     "round": 9,
+     "title": "Which strings?",
+     "line": "Pick one take; a note can say what to keep or change.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "slasher-stab-section-1",
+       "src": "audio/malevolent-force-r3-strings-slasher-stab-section-65f9c223.preview.mp3",
+       "label": "a: slasher stabs: muted violins shrieking (take 1)"
+      },
+      {
+       "id": "slasher-stab-section-2",
+       "src": "audio/malevolent-force-r3-strings-slasher-stab-section-9d0baddf.preview.mp3",
+       "label": "b: slasher stabs: muted violins shrieking (take 2)"
+      },
+      {
+       "id": "lone-violin-near-the-bridge-1",
+       "src": "audio/malevolent-force-r3-strings-lone-violin-near-the-36efa6a9.preview.mp3",
+       "label": "c: one violin, glassy, alone (take 1)"
+      },
+      {
+       "id": "lone-violin-near-the-bridge-2",
+       "src": "audio/malevolent-force-r3-strings-lone-violin-near-the-3d25fd79.preview.mp3",
+       "label": "d: one violin, glassy, alone (take 2)"
+      },
+      {
+       "id": "quartet-cluster-ostinato-1",
+       "src": "audio/malevolent-force-r3-strings-quartet-cluster-osti-02b29feb.preview.mp3",
+       "label": "e: string quartet, a creeping cello figure (take 1)"
+      },
+      {
+       "id": "quartet-cluster-ostinato-2",
+       "src": "audio/malevolent-force-r3-strings-quartet-cluster-osti-5e127dce.preview.mp3",
+       "label": "f: string quartet, a creeping cello figure (take 2)"
+      },
+      {
+       "id": "basses-from-below-1",
+       "src": "audio/malevolent-force-r3-strings-basses-from-below-v6-32ef9301.preview.mp3",
+       "label": "g: growling basses from below (take 1)"
+      },
+      {
+       "id": "basses-from-below-2",
+       "src": "audio/malevolent-force-r3-strings-basses-from-below-v6-bf7756d2.preview.mp3",
+       "label": "h: growling basses from below (take 2)"
+      },
+      {
+       "id": "aleatoric-swarm-strings-1",
+       "src": "audio/malevolent-force-r3-strings-aleatoric-swarm-stri-48e2c83f.preview.mp3",
+       "label": "i: a swarm of sliding strings (take 1)"
+      },
+      {
+       "id": "aleatoric-swarm-strings-2",
+       "src": "audio/malevolent-force-r3-strings-aleatoric-swarm-stri-97ab1bf7.preview.mp3",
+       "label": "j: a swarm of sliding strings (take 2)"
+      },
+      {
+       "id": "worn-tape-string-cue-1",
+       "src": "audio/malevolent-force-r3-strings-worn-tape-string-cue-5fcd72c0.preview.mp3",
+       "label": "k: a worn library-music tape (take 1)"
+      },
+      {
+       "id": "worn-tape-string-cue-2",
+       "src": "audio/malevolent-force-r3-strings-worn-tape-string-cue-fb175ff6.preview.mp3",
+       "label": "l: a worn library-music tape (take 2)"
+      }
+     ]
+    },
+    {
+     "slot": "price-shelf",
+     "round": 9,
+     "title": "Shot 4: the hand over the 50p card",
+     "line": "Which take?",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "video/mf-hb4-a-HB4-a-prices.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "video/mf-hb4-b-HB4-a-prices.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "price-freezer",
+     "round": 9,
+     "title": "Shot 6: the hand over the freezer cards",
+     "line": "Which take? (The £5 card is barely touched by the hand, so it turns to £50 just as the hand leaves.)",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "video/mf-hb6-a-HB6-a-prices.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "video/mf-hb6-b-HB6-a-prices.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The clips",
    "lede": "Raw Omni clips, 4 s, camera locked.",
