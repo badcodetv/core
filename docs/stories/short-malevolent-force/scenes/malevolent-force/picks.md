@@ -57,3 +57,10 @@
   (rescued from the Flow gallery: the reference-copy guard had thrown them away, fixed), shot 3 top of the shelving
   `JS3-top-a/b`, shot 2 behind the door `JS2-door-a/b`, shot 5 in the mirror `JS5-mirror-a/b`
   (`scripts/jumpscares.mts`, run on the fixed flow-client). Each row has "none". Same page, round 5.
+- **2026-11-18, Jack's round 5 picks (page dump):** top of the shelving **b** (`JS3-top-b`), behind the door **b**
+  (`JS2-door-b`), in the mirror **b** (`JS5-mirror-b`). Dash, no pick, note verbatim: "he needs to be facing the camera and
+  sort of scuttle backwards and just slightly peak out of the open door in the video, so make the still so that is made
+  easier, otherwise he has to turn around and stuff lets keep it simple. thanks"
+- **2026-11-18, round 6:** the aisle scare redone as a peek: `JS3-peek-a/b` (`scripts/peek.mts`), facing the camera, leaning
+  out of the back doorway, a claw on the frame. The figure's wording repeats the other scares on purpose (one figure).
+  Same page, round 6.

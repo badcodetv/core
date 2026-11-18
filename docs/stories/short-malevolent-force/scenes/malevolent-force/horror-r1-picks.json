@@ -1,14 +1,34 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 5",
- "heading": "Jumpscares: where does the figure appear?",
- "intro": "You asked for a figure: walking around the shop or half behind a door, brief, like the Conjuring wardrobe or Scream's dash between the aisles. It's the burnt hand's owner: faceless, the same charred skin, never a person you could name. Four places; each row's first option leaves that shot clean. Pick a take, or leave the shot clean, in every row: you can have more than one scare. Each will be on screen for only a few frames, with a strings stab. Your hand picks (shot 4 a, shot 6 b) are saved.",
- "round": 5,
+ "eyebrow": "The Malevolent Force · more horror · round 6",
+ "heading": "The aisle scare, redone: it peeks out of the back door",
+ "intro": "Your round 5 picks are saved: on top of the shelving b, behind the door b, in the mirror b. Your note on the dash: \"he needs to be facing the camera and sort of scuttle backwards and just slightly peek out of the open door\". So here it faces the camera, leaning out of the back doorway with a claw round the frame, ready to scuttle back in the clip without turning. Pick one.",
+ "round": 6,
  "sections": [
   {
    "h": "Jumpscares",
    "lede": "The staging is borrowed, not those films' monsters. Edits of your picked stills: only the figure is added.",
    "groups": [
+    {
+     "slot": "js-peek",
+     "round": 6,
+     "title": "Shot 3, the aisle: it peeks out of the back door, then scuttles back",
+     "line": "Pick one.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "moodboard/JS3-peek-a.jpg",
+       "label": "a: grey, half in shadow, subtler"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS3-peek-b.jpg",
+       "label": "b: ember cracks showing, scarier",
+       "warn": "its dark hollow reads a little like an open mouth: closer to a face"
+      }
+     ]
+    },
     {
      "slot": "js-dash",
      "round": 5,

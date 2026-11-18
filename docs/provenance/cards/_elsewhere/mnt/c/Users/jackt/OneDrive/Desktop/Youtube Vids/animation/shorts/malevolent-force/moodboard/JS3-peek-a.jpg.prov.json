@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS3-peek-a.jpg",
+ "made": "2026-11-18T11:57:13+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/malevolent-force/scripts/peek.mts (FlowClient.editImage)",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-c.jpg",
+ "why": "Jack 2026-11-18 round 5 note: facing the camera, peeking out of the open door, so it can scuttle backwards in the clip",
+ "prompt": "Leave this narrow shop aisle just as photographed and add a single presence in the open back doorway beyond the shelves: a tall thin figure facing straight down the aisle toward the camera, only its head and one shoulder leaning out from behind the door frame, as if peeking, the rest of it hidden in the dark room behind. One long hooked hand curls around the edge of the frame. No face, only a smooth dark hollow where one should be. Soot-black skin split like dry tarmac, a dull ember glow in the splits, a faint thread of smoke. Distant and dim, easy to miss at first. Everything else in the aisle untouched, with the same grain and tired, faded colour.\nThanks."
+}
