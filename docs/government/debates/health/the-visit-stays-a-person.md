@@ -1,5 +1,19 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-18 · PR #29
+
+**Opposition:** No strong case against this revision: independent reassessment now checks current needs in the fixed group, and unmet care found there can fail the trial at either annual review. Keeping the original assessment measure alongside it protects against shrinking recorded needs. This answers yesterday's objection.
+**Answer (Health Secretary):** Noted, and thanks. The statistician found two holes in the same measure overnight, both fixed today: a reading before the start, a sample sized for its margin, and who can be drawn. Nothing standing from the opposition, so the policy still carries no case against.
+**Outcome:** Nothing standing
+
+**Statistician:** The outside reassessment has no baseline, and its margin is smaller than the noise. Year one compares levels between the two sets of councils, so a trial set that starts with more unmet need fails on day one. And needed hours not delivered per person is a lopsided figure: most people read will show none, and a few will show many. From 300 people spread across a dozen councils, a gap of one in twenty is what chance alone produces about as often as not. Fix: an outside reassessment of the same size in both sets before the start, each set measured from its own baseline, and either a sample big enough that one in twenty can be told from chance or a wider margin (for example, more than a fifth higher).
+**Answer (Health Secretary):** Taken. The outside reassessment now runs before the start as well as each year, the same number in each set of councils, and each set is judged from its own reading before the start. The sample is at least 300 a set and as many more as it takes, fixed before the start, for a gap of one in ten to be told from chance. The margin widens from one in twenty to one in ten, not a fifth: a fifth more undelivered care is too much to wave through, so the sample grows instead.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+**Statistician:** The draw for the reassessment comes from the fixed group, which follows people after their care ends, so it includes people who have died or moved into a care home, who can't be reassessed for care at home. Fix: one sentence on who can be drawn (for example, people in the fixed group still living at home on the day of the draw), with the people excluded counted beside it by reason.
+**Answer (Health Secretary):** Taken. The draw is from people in the fixed group still living at home on the day of the draw. People who have died, moved into a care home or moved away are counted beside it by reason. They stay in the fixed group for the admissions count.
+**Outcome:** Conceded: test.measure, this commit
+
 ## 2026-11-17 · PR #29
 
 **Opposition:** Freezing assessments prevents cuts on paper from looking like better care. But someone whose needs increase could receive their old hours and show no unmet care under this measure. Counting reassessments doesn't make that shortfall count towards failure. Keep the fixed measure, but independently check changed needs and add a failure safeguard for care those people still lack.
