@@ -1,0 +1,13 @@
+{
+  "name": "aero-nylon-bossa",
+  "style": "96 BPM instrumental, bossa nova turning to dark cinematic score, 22 seconds. Sunny, glossy, aqua: fingerpicked nylon-string classical guitar comping soft bossa chords with a short sweet melody, bell-like FM electric piano, bubbly sine plinks, water-droplet chimes, brushed shaker, late-2000s console menu and desktop demo warmth. At 4 seconds the guitar stops dead; its last chord rings back pitched down and slowed, melting into cold: dark slow synth drone, low cello and contrabass sustain, heartbeat sub kick, dread. From 17 seconds it thins and slows, silent by 20 seconds.",
+  "exclude": "vocals, singing, voice, choir, spoken words, EDM drop, trap, autotune, big pop chorus, drum kit groove, upbeat ending",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": false
+}

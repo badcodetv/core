@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r2-track/hello-badcode-r2-track-aero-nylon-bossa-v6-w40-aefce834.wav",
+ "made": "2026-11-18T15:22:41.937Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "aefce834-023f-43c8-b13c-de82c62ee230",
+ "inputs": {
+  "title": "hello badcode r2-track-aero-nylon-bossa-v6-w40",
+  "song": "https://suno.com/song/aefce834-023f-43c8-b13c-de82c62ee230"
+ },
+ "settings": {
+  "durationSec": 20
+ }
+}

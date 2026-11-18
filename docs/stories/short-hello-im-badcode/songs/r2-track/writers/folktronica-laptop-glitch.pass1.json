@@ -1,0 +1,13 @@
+{
+  "name": "folktronica-laptop-glitch",
+  "style": "early 2000s folktronica, laptop folk instrumental, 100 BPM. Open-tuned steel-string acoustic fingerpicking, close-miked, fret squeaks and room air, sliced into short repeating loops; crunchy clicky laptop beat, tiny glitch ticks, warm sine-wave pad; sunny, homemade. Abrupt turn at 0:04: the guitar loop skips like a scratched CD, stutters and crumbles into granular digital grains; cold cinematic synth drone, distant metallic impacts, slow dread. Beat drops away, noise thins, last stutter slows and stops in silence by 0:20. No vocals.",
+  "exclude": "vocals, singing, spoken word, choir, EDM drop, trap hi-hats, autotune, four-on-the-floor kick, bright pop chorus",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 55,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": true
+}

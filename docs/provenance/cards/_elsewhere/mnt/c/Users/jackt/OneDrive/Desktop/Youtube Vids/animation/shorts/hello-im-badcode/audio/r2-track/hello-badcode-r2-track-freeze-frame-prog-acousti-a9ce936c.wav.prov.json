@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r2-track/hello-badcode-r2-track-freeze-frame-prog-acousti-a9ce936c.wav",
+ "made": "2026-11-18T15:23:25.183Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "a9ce936c-5854-4ee0-b1ad-7a32900459d1",
+ "inputs": {
+  "title": "hello badcode r2-track-freeze-frame-prog-acousti",
+  "song": "https://suno.com/song/a9ce936c-5854-4ee0-b1ad-7a32900459d1"
+ },
+ "settings": {
+  "durationSec": 20
+ }
+}

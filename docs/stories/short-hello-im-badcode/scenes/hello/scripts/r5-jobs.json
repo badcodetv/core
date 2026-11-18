@@ -1,0 +1,93 @@
+[
+ {
+  "out": "HO2-a",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/096fgwrtBQ0.jpg"
+  ],
+  "prompt": "Borrow the sunset and the seafront of the reference photo for a tall 9:16 frame: a promenade at the end of a hot day, a Ferris wheel turning slowly against a peach and lilac sky, its lights just coming on, warm tarmac, a lone gull. Nobody close enough to see. The glow of a summer that felt like it would never end, about 2009. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "HO2-b",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/CBgNSqjHfQM.jpg"
+  ],
+  "prompt": "From the reference photo's leaping dolphins, make a tall 9:16 frame: two dolphins arcing out of impossibly clear turquoise water under a cloudless sky, spray glittering, everything glossy and perfect like a screensaver from a 2007 computer. Optimistic, clean, a little too beautiful. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "HO2-c",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/OUSa9MU4zZc.jpg"
+  ],
+  "prompt": "Take the fireworks of the reference photo for a tall 9:16 frame: bursts of red, gold and white over a harbour at night, their colours doubled in the dark water, a city skyline small along the bottom. The New Year everyone thought things were going to get better. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "HO2-d",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/PmmpX-KKoPk.jpg"
+  ],
+  "prompt": "Use the pale blue ice-cream van of the reference photo for a tall 9:16 frame: the van parked on a sunny residential street, its serving hatch open, a cone of soft-serve resting on the counter, bunting, a cloudless afternoon. Summer holidays, about 2004. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "HO2-e",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/UKZdwm4ngiY.jpg"
+  ],
+  "prompt": "Use the neon arcade of the reference photo for a tall 9:16 frame: rows of glowing arcade cabinets in pink, blue and green, a carpet patterned with stars, the screens bright and busy, nobody playing. The excitement of a Saturday in town with a pocket full of coins. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "HO2-f",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/vXvC6upalkc.jpg"
+  ],
+  "prompt": "Use the domed atrium and fountain of the reference photo for a tall 9:16 frame: a gleaming shopping centre atrium in the morning, the fountain leaping under a glass dome, polished floors, potted palms, shoppers tiny and far away. The 2000s promise that the future would be shiny and clean. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG3-a",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A tall 9:16 photo of a person wearing a balaclava, slouched on a wooden park bench at golden hour, one arm along the back of the bench, legs crossed, utterly unbothered, facing the camera. Green grass and a clear blue sky. Wearing a grey hoodie, dark jeans and white trainers. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG3-b",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A tall 9:16 photo of a person wearing a balaclava, sitting on a plastic chair in an empty launderette at night, watching a washing machine drum spin, then turned to face the camera, completely still. Fluorescent light, rows of machines. Wearing a navy puffer jacket and tracksuit bottoms. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG3-c",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A tall 9:16 photo of a person wearing a balaclava, standing in the aisle of a 2000s video rental shop, holding a plain unlabelled tape box, looking straight at the camera. Shelves of identical blank tape cases, a carpet, warm overhead light. Wearing a black bomber jacket and jeans. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG3-d",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A tall 9:16 photo of a person wearing a balaclava, sitting on a worn sofa holding a games controller, facing the camera, a chunky CRT television glowing blue behind on a stand, a bowl of crisps, curtains drawn on a sunny afternoon. Wearing a tracksuit top zipped to the chin. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG3-e",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A tall 9:16 photo of a person wearing a balaclava, sitting at a small kitchen table in morning light, a mug of tea in both gloved hands, a folded newspaper with no visible text beside it, facing the camera, calm. A kettle, a window over a garden. Wearing a plain dark jumper. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG3-f",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A tall 9:16 photo of a person wearing a balaclava, riding an escalator up through an empty 2000s shopping centre, facing the camera, one gloved hand on the rail, glass balconies and palm trees behind, bright morning light. Wearing a long beige raincoat. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG3-g",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A tall 9:16 photo of a person wearing a balaclava, sitting on the edge of a concrete skatepark bowl at sunset, legs dangling, a skateboard beside him, facing the camera, the sky peach and lilac. Wearing a loose hoodie and baggy trousers. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ }
+]

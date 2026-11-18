@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG3-f.jpg",
+ "made": "2026-11-18T15:26:57+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/hello/scripts/stills.mts (FlowClient.editImage); HO2-e, HO2-f, FG3-a re-collected from the gallery (results saved under the wrong names)",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-18: more warm openings and BadCode settings",
+ "prompt": "A tall 9:16 photo of a person wearing a balaclava, riding an escalator up through an empty 2000s shopping centre, facing the camera, one gloved hand on the rail, glass balconies and palm trees behind, bright morning light. Wearing a long beige raincoat. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks.",
+ "inputs": {
+  "refs": "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+ }
+}

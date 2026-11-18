@@ -1,0 +1,13 @@
+{
+  "name": "twinkle-emo-bedroom",
+  "style": "Instrumental, 22 s, 118 BPM then collapsing. First 4 s: a kid on a bunk bed under glow-in-the-dark stars, a battered dorm-room flattop guitar in open tuning, picked and finger-tapped, sparkly maj7 and add9 runs that tumble upward, twinkly 1999 Midwest emo noodling, hopeful, a little sad, taped on a cassette porta-studio with soft hiss and wobble. A plastic kids' keyboard with tinny beeps traces the same tune high above. At 4 s: one clumsy detuned clang, fingers slap the strings silent. A backwards cymbal swell inhales, then a dark orchestral film score: low cellos and contrabasses bowing long held notes, a grinding overdriven sub-bass hum, a muffled taiko boom once per bar, ominous, no tune. Around 17 s the whole thing drags like a dying tape motor, pitch sinking, fading to nothing by 20 s.",
+  "exclude": "vocals, singing, screaming, spoken words, choir, full band, drum kit, electric guitar, EDM drop, trap, hi-hats, autotune, pop chorus, upbeat ending",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 42,
+  "styleInfluence": 72,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": false
+}

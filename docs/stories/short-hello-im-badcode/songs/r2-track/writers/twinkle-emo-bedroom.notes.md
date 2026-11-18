@@ -1,0 +1,7 @@
+# twinkle-emo-bedroom: notes (redo)
+
+- Redo: removed the phrase "steel-string acoustic", which other prompts in the round also use. The guitar is now "a battered dorm-room flattop", and the rest of the scene was reworded (bunk bed, glow-in-the-dark stars, cassette porta-studio, plastic kids' keyboard, taiko boom, dying tape motor).
+- Twinkle = arpeggiated chord tones, open tunings, with tapping added on top. Open-tuned twinkle traces back to late-90s Midwest bands. Source: https://en.wikipedia.com/wiki/Midwest_emo and https://nyc1.lr.ggtyler.dev/r/Emo/comments/1i3vrth/tracing_the_origins_of_twinkly_noodley_guitar
+- The meme: "Midwest emo intro" parodies and the scooter-kid guitar dub (Dec 2020) made the noodly riff a TikTok joke. https://knowyourmeme.com/memes/midwest-emo-intro-parodies , https://www.pbs.org/video/what-is-midwest-emo-the-music-behind-the-meme-jfnegc
+- Suno: the early words count most, so tempo, length and the bedroom scene come first. I gave a BPM number plus a feel word, cued the turn with a transition sound (a reversed swell), and kept the style text under 1000 characters. https://sunowatermark.com/blog/suno-prompts-guide-2026/ , https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation/instrumentation-and-arrangement-in-suno-v5
+- Excluding "electric guitar" stops Suno from turning it into a full emo band. "Drum kit" and "hi-hats" are excluded so the only percussion is the single boom under the reel.

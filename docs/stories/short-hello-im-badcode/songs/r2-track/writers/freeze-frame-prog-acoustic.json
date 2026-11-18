@@ -1,0 +1,13 @@
+{
+  "name": "freeze-frame-prog-acoustic",
+  "style": "instrumental, 1971 progressive rock intro into dark cinematic score, 22-second cue. Opens on a lone small-body 1950s mahogany flat-top steel-string acoustic, fast fingerstyle jig-like figure, bright chiming 12th-fret harmonics and ringing open strings, close dry studio mic, warm analog tape. Around 3 seconds a round Minimoog-style bass glides upward underneath. At 4 seconds a sudden tape-stop freeze, a beat of silence, then a held low analog polysynth chord swells into dread: sub-bass pulses, detuned sawtooth drone, a dry ticking clock-like synth sequence, slow and tense. Final seconds the drone sinks in pitch and slows like a dying tape machine, ending in total silence",
+  "exclude": "vocals, singing, choir, spoken word, drum kit groove, rock band, EDM drop, trap, hi-hats, autotune, pop chorus, nylon strings, electric guitar",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": true
+}

@@ -1,10 +1,148 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · picture and music · round 1",
- "heading": "Start the video: the warm opening, BadCode, and the music",
- "intro": "Words wait for the picture (Jack). Pick the warm opening, BadCode's setting and the music; each row has a note. Every music take has its own player with a slider. The figure row uses the new short mask line with the mask photo attached; the long-sentence versions are underneath for comparison.",
- "round": 1,
+ "eyebrow": "Hello, I'm BadCode · picture and music · round 2",
+ "heading": "More openings, more BadCode, acoustic music",
+ "intro": "Your round-1 picks: opening d (skatepark at sunset), the bench (bubbles removed below), and for music \"acoustic guitar synth stuff… varied approaches\". Plus your ask: more warm openings and BadCode settings. Pick one per row; your round-1 picks are folded below.",
+ "round": 2,
  "sections": [
+  {
+   "h": "Round 2",
+   "lede": "Openings from real photos with no faces; BadCode with the short mask line and his clothes stated.",
+   "groups": [
+    {
+     "slot": "opening2",
+     "round": 2,
+     "title": "Warm opening: six more (or keep d)",
+     "line": "Pick one, or 'd' in a note to keep the skatepark.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "d",
+       "src": "stills/HO1-d.jpg",
+       "label": "d (your round-1 pick): skatepark at sunset"
+      },
+      {
+       "id": "e",
+       "src": "stills/HO2-a.jpg",
+       "label": "e: Ferris wheel on a promenade at sunset"
+      },
+      {
+       "id": "f",
+       "src": "stills/HO2-b.jpg",
+       "label": "f: dolphins leaping, screensaver-glossy"
+      },
+      {
+       "id": "g",
+       "src": "stills/HO2-c.jpg",
+       "label": "g: fireworks over a harbour"
+      },
+      {
+       "id": "h",
+       "src": "stills/HO2-d.jpg",
+       "label": "h: an ice-cream van on a sunny street"
+      },
+      {
+       "id": "i",
+       "src": "stills/HO2-e.jpg",
+       "label": "i: a neon arcade, nobody playing"
+      },
+      {
+       "id": "j",
+       "src": "stills/HO2-f.jpg",
+       "label": "j: a shopping-centre fountain under a glass dome"
+      }
+     ]
+    },
+    {
+     "slot": "figure2",
+     "round": 2,
+     "title": "BadCode: seven settings",
+     "line": "Pick one (or two: one for the cut to him, one for after the reel).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "stills/FG3-a.jpg",
+       "label": "a: the bench, no bubbles"
+      },
+      {
+       "id": "b",
+       "src": "stills/FG3-b.jpg",
+       "label": "b: a launderette at night"
+      },
+      {
+       "id": "c",
+       "src": "stills/FG3-c.jpg",
+       "label": "c: a video rental shop"
+      },
+      {
+       "id": "d",
+       "src": "stills/FG3-d.jpg",
+       "label": "d: sofa, games controller, a CRT"
+      },
+      {
+       "id": "e",
+       "src": "stills/FG3-e.jpg",
+       "label": "e: kitchen table, a mug of tea"
+      },
+      {
+       "id": "f",
+       "src": "stills/FG3-f.jpg",
+       "label": "f: an escalator in an empty mall"
+      },
+      {
+       "id": "g",
+       "src": "stills/FG3-g.jpg",
+       "label": "g: the edge of a skatepark bowl at sunset (matches opening d)"
+      }
+     ]
+    },
+    {
+     "slot": "music2",
+     "round": 2,
+     "title": "Music: acoustic guitar and synth",
+     "line": "Four new ideas from separate writers. Pick one; round-1 tracks are below if one grew on you.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "freeze-frame-1",
+       "src": "audio2/hello-badcode-r2-track-freeze-frame-prog-acousti-a9ce936c.preview.mp3",
+       "label": "a: prog-acoustic, a \"freeze frame\" meme guitar (take 1, 20 s)"
+      },
+      {
+       "id": "freeze-frame-2",
+       "src": "audio2/hello-badcode-r2-track-freeze-frame-prog-acousti-e7a24cdb.preview.mp3",
+       "label": "b: prog-acoustic, a \"freeze frame\" meme guitar (take 2, 20 s)"
+      },
+      {
+       "id": "aero-nylon-b-1",
+       "src": "audio2/hello-badcode-r2-track-aero-nylon-bossa-v6-w40-4c5bbe8c.preview.mp3",
+       "label": "c: nylon-string bossa with an Aero shine (take 1, 20 s)"
+      },
+      {
+       "id": "aero-nylon-b-2",
+       "src": "audio2/hello-badcode-r2-track-aero-nylon-bossa-v6-w40-aefce834.preview.mp3",
+       "label": "d: nylon-string bossa with an Aero shine (take 2, 20 s)"
+      },
+      {
+       "id": "folktronica--1",
+       "src": "audio2/hello-badcode-r2-track-folktronica-laptop-glitch-60a00ad7.preview.mp3",
+       "label": "e: folk guitar with laptop glitches (take 1, 40 s)"
+      },
+      {
+       "id": "folktronica--2",
+       "src": "audio2/hello-badcode-r2-track-folktronica-laptop-glitch-ff89ecc6.preview.mp3",
+       "label": "f: folk guitar with laptop glitches (take 2, 22 s)"
+      },
+      {
+       "id": "twinkle-emo--1",
+       "src": "audio2/hello-badcode-r2-track-twinkle-emo-bedroom-v6-w4-ef12c3e3.preview.mp3",
+       "label": "g: twinkly bedroom emo guitar (take 1, 22 s)"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The warm opening (0-4 s)",
    "lede": "Each made from a real Unsplash photo with no faces, turned into the 00s / Frutiger Aero meme-edit feel.",
@@ -35,7 +173,8 @@
        "src": "stills/HO1-d.jpg",
        "label": "d: a skatepark at sunset, tiny silhouettes"
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   },
@@ -65,7 +204,8 @@
        "src": "stills/FG2-c.jpg",
        "label": "c: slouched on a park bench at golden hour"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "figure-long",
@@ -88,7 +228,8 @@
        "src": "stills/FG1-c.jpg",
        "label": "c (long)"
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   },
@@ -174,7 +315,8 @@
        "src": "audio/hello-badcode-r1-track-piano-to-orchestra-traile-535fa973.preview.mp3",
        "label": "n: piano that grows into an orchestra (take 2, 19 s)"
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }

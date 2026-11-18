@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/HO2-a.jpg",
+ "made": "2026-11-18T15:26:56+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/hello/scripts/stills.mts (FlowClient.editImage); HO2-e, HO2-f, FG3-a re-collected from the gallery (results saved under the wrong names)",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-18: more warm openings and BadCode settings",
+ "prompt": "Borrow the sunset and the seafront of the reference photo for a tall 9:16 frame: a promenade at the end of a hot day, a Ferris wheel turning slowly against a peach and lilac sky, its lights just coming on, warm tarmac, a lone gull. Nobody close enough to see. The glow of a summer that felt like it would never end, about 2009. No text, lettering, logos or brand names anywhere in the image.\nThanks.",
+ "inputs": {
+  "refs": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/096fgwrtBQ0.jpg"
+ }
+}

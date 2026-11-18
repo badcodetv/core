@@ -1,0 +1,13 @@
+{
+  "name": "folktronica-laptop-glitch",
+  "style": "laptop folk, 2001-2004 folktronica, instrumental, 98 BPM. Open-tuned flat-top six-string guitar plucked by fingers, mic inches from the soundhole, fret squeak and breath of the room, chopped into short phrases and re-sequenced in an editor; dusty clicky laptop drum loop, tiny digital ticks, soft sine pad; sunny bedroom recording. Hard break at 0:04: the plucked loop catches and repeats, smears into granular grain clouds and buffer-skip stutter; a cold low cinematic drone rises with far-off metal strikes, slow dread. Drums fall out, grains thin, final stutter slows to nothing by 0:20. No vocals.",
+  "exclude": "vocals, singing, spoken word, choir, EDM drop, trap hi-hats, autotune, four-on-the-floor kick, big pop chorus, strummed campfire chords",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 55,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": true
+}

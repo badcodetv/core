@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r2-track/hello-badcode-r2-track-twinkle-emo-bedroom-v6-w4-ef12c3e3.preview.mp3",
+ "made": "2026-11-18T15:21:14.186Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "ef12c3e3-1a44-48bf-909a-da773319fae6",
+ "inputs": {
+  "title": "hello badcode r2-track-twinkle-emo-bedroom-v6-w4",
+  "song": "https://suno.com/song/ef12c3e3-1a44-48bf-909a-da773319fae6"
+ },
+ "settings": {
+  "durationSec": 22
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r2-track/hello-badcode-r2-track-twinkle-emo-bedroom-v6-w4-ef12c3e3.wav"
+}

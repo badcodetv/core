@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r2-track/hello-badcode-r2-track-folktronica-laptop-glitch-60a00ad7.preview.mp3",
+ "made": "2026-11-18T15:21:53.838Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "60a00ad7-d683-4305-8323-5a94837385fe",
+ "inputs": {
+  "title": "hello badcode r2-track-folktronica-laptop-glitch",
+  "song": "https://suno.com/song/60a00ad7-d683-4305-8323-5a94837385fe"
+ },
+ "settings": {
+  "durationSec": 40
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r2-track/hello-badcode-r2-track-folktronica-laptop-glitch-60a00ad7.wav"
+}

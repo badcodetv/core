@@ -1,0 +1,54 @@
+[
+  {
+    "name": "freeze-frame-prog-acoustic",
+    "style": "instrumental, 1971 progressive rock intro into dark cinematic score, 22-second cue. Opens on a lone small-body 1950s mahogany flat-top steel-string acoustic, fast fingerstyle jig-like figure, bright chiming 12th-fret harmonics and ringing open strings, close dry studio mic, warm analog tape. Around 3 seconds a round Minimoog-style bass glides upward underneath. At 4 seconds a sudden tape-stop freeze, a beat of silence, then a held low analog polysynth chord swells into dread: sub-bass pulses, detuned sawtooth drone, a dry ticking clock-like synth sequence, slow and tense. Final seconds the drone sinks in pitch and slows like a dying tape machine, ending in total silence",
+    "exclude": "vocals, singing, choir, spoken word, drum kit groove, rock band, EDM drop, trap, hi-hats, autotune, pop chorus, nylon strings, electric guitar",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": true
+  },
+  {
+    "name": "aero-nylon-bossa",
+    "style": "96 BPM instrumental, bossa nova turning to dark cinematic score, 22 seconds. Sunny, glossy, aqua: fingerpicked nylon-string classical guitar comping soft bossa chords with a short sweet melody, bell-like FM electric piano, bubbly sine plinks, water-droplet chimes, brushed shaker, late-2000s console menu and desktop demo warmth. At 4 seconds the guitar stops dead; its last chord rings back pitched down and slowed, melting into cold: dark slow synth drone, low cello and contrabass sustain, heartbeat sub kick, dread. From 17 seconds it thins and slows, silent by 20 seconds.",
+    "exclude": "vocals, singing, voice, choir, spoken words, EDM drop, trap, autotune, big pop chorus, drum kit groove, upbeat ending",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": false
+  },
+  {
+    "name": "folktronica-laptop-glitch",
+    "style": "laptop folk, 2001-2004 folktronica, instrumental, 98 BPM. Open-tuned flat-top six-string guitar plucked by fingers, mic inches from the soundhole, fret squeak and breath of the room, chopped into short phrases and re-sequenced in an editor; dusty clicky laptop drum loop, tiny digital ticks, soft sine pad; sunny bedroom recording. Hard break at 0:04: the plucked loop catches and repeats, smears into granular grain clouds and buffer-skip stutter; a cold low cinematic drone rises with far-off metal strikes, slow dread. Drums fall out, grains thin, final stutter slows to nothing by 0:20. No vocals.",
+    "exclude": "vocals, singing, spoken word, choir, EDM drop, trap hi-hats, autotune, four-on-the-floor kick, big pop chorus, strummed campfire chords",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 55,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": true
+  },
+  {
+    "name": "twinkle-emo-bedroom",
+    "style": "Instrumental, 22 s, 118 BPM then collapsing. First 4 s: a kid on a bunk bed under glow-in-the-dark stars, a battered dorm-room flattop guitar in open tuning, picked and finger-tapped, sparkly maj7 and add9 runs that tumble upward, twinkly 1999 Midwest emo noodling, hopeful, a little sad, taped on a cassette porta-studio with soft hiss and wobble. A plastic kids' keyboard with tinny beeps traces the same tune high above. At 4 s: one clumsy detuned clang, fingers slap the strings silent. A backwards cymbal swell inhales, then a dark orchestral film score: low cellos and contrabasses bowing long held notes, a grinding overdriven sub-bass hum, a muffled taiko boom once per bar, ominous, no tune. Around 17 s the whole thing drags like a dying tape motor, pitch sinking, fading to nothing by 20 s.",
+    "exclude": "vocals, singing, screaming, spoken words, choir, full band, drum kit, electric guitar, EDM drop, trap, hi-hats, autotune, pop chorus, upbeat ending",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 42,
+    "styleInfluence": 72,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": false
+  }
+]

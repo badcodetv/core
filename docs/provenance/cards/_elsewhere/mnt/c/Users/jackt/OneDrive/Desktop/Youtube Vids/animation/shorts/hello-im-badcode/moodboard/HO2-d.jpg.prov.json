@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/HO2-d.jpg",
+ "made": "2026-11-18T15:26:56+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/hello/scripts/stills.mts (FlowClient.editImage); HO2-e, HO2-f, FG3-a re-collected from the gallery (results saved under the wrong names)",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-18: more warm openings and BadCode settings",
+ "prompt": "Use the pale blue ice-cream van of the reference photo for a tall 9:16 frame: the van parked on a sunny residential street, its serving hatch open, a cone of soft-serve resting on the counter, bunting, a cloudless afternoon. Summer holidays, about 2004. No text, lettering, logos or brand names anywhere in the image.\nThanks.",
+ "inputs": {
+  "refs": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/PmmpX-KKoPk.jpg"
+ }
+}

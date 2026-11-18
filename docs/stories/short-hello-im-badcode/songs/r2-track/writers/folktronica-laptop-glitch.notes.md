@@ -1,0 +1,8 @@
+# folktronica-laptop-glitch: notes (redo)
+
+- Redo: the style box no longer says "steel string acoustic", which most of the round shared. The guitar is now an "open-tuned flat-top six-string guitar plucked by fingers", with the mic "inches from the soundhole".
+- Genre called by its two names and a year range ("laptop folk, 2001-2004 folktronica"). Never an artist. Wikipedia gives its roots as electronica, folk, glitch, IDM and downtempo, and says it is built by sampling and looping acoustic playing, then re-arranging it in non-linear editors. That is where "chopped into short phrases and re-sequenced in an editor" comes from: https://en.wikipedia.org/wiki/Folktronica
+- A producer interview describes recording guitar into the computer, breaking it into pieces and writing the melody from those pieces. This backs the chopped-loop lead: https://www.soundonsound.com/people/four-tet
+- Close-miked acoustic detail layered with soft pads, granular textures and drones led to the granular "grain clouds" and the cold drone after the 0:04 turn: https://www.melodigging.com/genre/folktronica
+- The post-digital glitch look on acoustic material ("buffer-skip stutter", the loop "catches and repeats") is from: https://eprints.leedsbeckett.ac.uk/id/eprint/10881/1/ThePerformanceOfMachineAestheticsAcousticReimaginingOfElectronicMusicPV-STEVENSON.pdf
+- Timestamps are in the style box for the turn (0:04) and the stop (0:20). Added "strummed campfire chords" to exclude so the guitar stays fingerpicked and looped rather than turning into generic acoustic pop. Settings are the same as the draft: v6, 22 s, max mode, weirdness 55 so the glitch gets in.

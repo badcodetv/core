@@ -1,0 +1,13 @@
+{
+  "name": "twinkle-emo-bedroom",
+  "style": "Instrumental, 22 seconds, two halves. Opening (0-4 s): a teenager alone in a small carpeted bedroom at dusk, cross-legged on the bed with a cheap steel-string acoustic, one close mic, cassette four-track hiss. Late-90s Midwest emo twinkle guitar: bright fingerpicked and two-hand tapped major-seventh and add9 arpeggios, open tuning, ringing open strings, quick and noodly, hopeful and wistful. A tiny toy keyboard plays the same melody an octave up, thin square-wave tone. At 4 s the guitarist strums one sour, out-of-tune chord and mutes the strings dead. A long reversed swell sucks in, then a heavy cinematic dread bed: bowed cellos and basses on low sustained notes, a distorted sub-bass drone, one dull war-drum hit per bar, dark and slow, no melody. From 17 s everything loses speed like a tape winding down, pitch sagging, decaying into silence by 20 s. Lo-fi warmth first, huge dark film score after.",
+  "exclude": "vocals, singing, screaming, spoken words, choir, full band, drum kit, electric guitar distortion riff, EDM drop, trap, hi-hats, autotune, pop chorus, happy ending",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": false
+}

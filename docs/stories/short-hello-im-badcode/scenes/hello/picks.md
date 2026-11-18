@@ -33,3 +33,15 @@
   vs FG1 (the 53-word sentence), three settings: every mask right in both. `docs/brand/balaclava/shared-wording.txt` is now
   the short line; the long one is kept as `shared-wording-long.txt` for prompts with no image. Seen in the test: unsaid
   clothes copy the reference photo's cream suit, so say what BadCode wears.
+- **2026-11-18, Jack's round-1 picks (page dump, `feedback/picks-r1/`):** opening **d** (skatepark at sunset); figure: the
+  long-sentence **c** (park bench) with "remove the bubbles thanks"; music, no pick: "lets try accoustic guitar synth stuff,
+  there has been a few meme like songs for that kind of thing so lets try varied appraoches thanks". And: "fuck around with
+  more warm openings and bad code settings. Like, not just the park bench and all that." Round 2: more openings, more
+  settings, the bench without bubbles, music r2 (acoustic guitar + synth, meme-song approaches).
+- **2026-11-18, picture + music round 2** (same page, https://claude.ai/artifact/NcX2aNGxH65LjjMdXs2oxa): openings HO2-a..f
+  (Ferris wheel, dolphins, fireworks, ice-cream van, arcade, mall fountain; Unsplash refs, no faces) beside the picked HO1-d;
+  figures FG3-a..g (the bench without bubbles, launderette, video shop, sofa + CRT, kitchen tea, escalator, skatepark bowl;
+  short mask line + mask photo, clothes stated); music `songs/r2-track/` (acoustic guitar + synth: freeze-frame prog,
+  nylon bossa, folktronica glitch, twinkle emo; gate sent two back once; 60 credits, every Create first time with the new
+  workspace retry; 7 takes). Three stills were saved under the wrong names (a late tile picked up as the next result; one
+  was a stray old armchair figure, moved to `<media>/moodboard/_rejected/`); re-collected from the gallery.
