@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS2-door-a.jpg",
+ "made": "2026-11-18T11:52:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scripts/flow/.tmp/jumpscares.mts (FlowClient.editImage)",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-e.jpg",
+ "why": "Jack 2026-11-18: a brief jumpscare figure (Conjuring wardrobe / Scream aisle staging), faceless, the burnt hand's owner",
+ "prompt": "Leave this view of the open glass shop door exactly as photographed and add a single presence: outside in the black street, right behind the half-open door, a tall thin figure stands half hidden by the metal door frame, only a sliver of it showing, as if it stepped back the instant the door swung. No face, only smooth darkness. Soot-black skin split like dry tarmac with a faint ember glow, a breath of smoke. It is barely lit, brushed by a sliver of the shop's teal spill, easy to miss. The door, the sign, the mat, the bread crate and the wet street are untouched, with the same grain and tired, faded colour.\nThanks."
+}

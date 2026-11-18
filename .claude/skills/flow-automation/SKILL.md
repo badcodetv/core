@@ -29,8 +29,8 @@ what to put in it.
   `flow_edit_image` calls at once jammed the upload picker for every later edit.
 - **A stuck upload now retries itself (2026-11-18).** `flow_edit_image` reloads the project and re-attaches once on
   `UPLOAD_STUCK`; if it sticks again the error lists the picker's options and a screenshot path
-  (`/tmp/flow-upload-stuck/`). Read the screenshot before guessing: every stuck file so far was a still made inside the
-  same project (cause unconfirmed).
+  (`/tmp/flow-upload-stuck/`). **Cause found the same day:** the finished option now reads "image <file> Image" (an icon word first) and the
+  match was anchored on the file name, so every finished upload was missed. The match allows one leading icon word now.
 - **`REFERENCE_COPY_ONLY` on a small edit was the guard, not Flow (fixed 2026-11-18).** A figure added to a shop aisle
   scored 1.5-2.0 on the 16x16 copy test and was thrown away at the old threshold of 3; true copies score 0.06-0.1. The
   threshold is now 0.5 (`packages/flow-mcp/src/ref-copy.ts`). If it fires again, look in the Flow gallery before retrying.

@@ -17,6 +17,15 @@ and gallery forward. The MCP generate tools take no project: they use whichever 
 - A plain `flow_generate_image` now refuses to run if a reference chip is left on the bar from an earlier call
   (`packages/flow-mcp/src/flow-client.ts`, generateImage). If it refuses, remove the chip in Flow or open a fresh project.
 
+## 2026-11-18: three Flow tool bugs found and fixed (Jack: "why is flow failing so much")
+
+- **`UPLOAD_STUCK`** was the tool, not Flow: the picker's finished option now reads "image <file> Image" and the tool
+  waited for one starting with the file name. Fixed; a stuck upload now also reloads and retries once by itself, and a
+  second failure lists the picker's options plus a screenshot in `/tmp/flow-upload-stuck/`.
+- **`REFERENCE_COPY_ONLY` on a small edit** was the copy guard throwing away real results (a small added figure scored
+  1.5-2.0; the cut-off was 3; true copies score 0.06). Cut-off now 0.5. If it fires, look in the Flow gallery first.
+- After changing `packages/flow-mcp`, the running tool keeps the old code until `/mcp` → reconnect **flow**.
+
 ## Jack's standing rule for Flow stills — the free Nano Banana, never Nano Banana Pro
 
 > **Updated 2026-11-18:** "Nano Banana 2" has left Flow's menu (Kai, 2026-11-17; the menu now reads Nano Banana Pro ·

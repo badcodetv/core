@@ -1,10 +1,137 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 4",
- "heading": "Your burnt hand, in your two shots",
- "intro": "You picked hand c, \"use this hand but make it fit the scene\", and the subtle VHS. Here hand c is put into your own picked stills (shot 4, the shelf; shot 6, the freezer), lit by the shop's teal light, with the same grain and the setting unchanged. The first option in each row is the shot as it is now. Pick one per shot; next they get animated: the hand snatches the card and the price changes.",
- "round": 4,
+ "eyebrow": "The Malevolent Force · more horror · round 6",
+ "heading": "The aisle scare, redone: it peeks out of the back door",
+ "intro": "Your round 5 picks are saved: on top of the shelving b, behind the door b, in the mirror b. Your note on the dash: \"he needs to be facing the camera and sort of scuttle backwards and just slightly peek out of the open door\". So here it faces the camera, leaning out of the back doorway with a claw round the frame, ready to scuttle back in the clip without turning. Pick one.",
+ "round": 6,
  "sections": [
+  {
+   "h": "Jumpscares",
+   "lede": "The staging is borrowed, not those films' monsters. Edits of your picked stills: only the figure is added.",
+   "groups": [
+    {
+     "slot": "js-peek",
+     "round": 6,
+     "title": "Shot 3, the aisle: it peeks out of the back door, then scuttles back",
+     "line": "Pick one.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "moodboard/JS3-peek-a.jpg",
+       "label": "a: grey, half in shadow, subtler"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS3-peek-b.jpg",
+       "label": "b: ember cracks showing, scarier",
+       "warn": "its dark hollow reads a little like an open mouth: closer to a face"
+      }
+     ]
+    },
+    {
+     "slot": "js-dash",
+     "round": 5,
+     "title": "Shot 3, the aisle: it dashes across the back (Scream)",
+     "line": "Pick one, or keep the aisle clean.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "none",
+       "src": "moodboard/PR2-c.jpg",
+       "label": "none: aisle stays clean"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/JS3-dash-a.jpg",
+       "label": "a: a crisp running silhouette"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS3-dash-b.jpg",
+       "label": "b: a blurred charred figure by the back door"
+      },
+      {
+       "id": "c",
+       "src": "moodboard/JS3-dash-c.jpg",
+       "label": "c: a faint smear, easy to miss"
+      }
+     ]
+    },
+    {
+     "slot": "js-top",
+     "round": 5,
+     "title": "Shot 3, the aisle: crouched on top of the shelving (Conjuring wardrobe)",
+     "line": "Pick one, or none. If you pick both a dash and this, they go in different frames of shot 3.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "none",
+       "src": "moodboard/PR2-c.jpg",
+       "label": "none"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/JS3-top-a.jpg",
+       "label": "a: folded up under the strip light"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS3-top-b.jpg",
+       "label": "b: hunched on the top shelf, closer"
+      }
+     ]
+    },
+    {
+     "slot": "js-door",
+     "round": 5,
+     "title": "Shot 2, the door: half hidden behind it",
+     "line": "Pick one, or none.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "none",
+       "src": "moodboard/PR2-e.jpg",
+       "label": "none"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/JS2-door-a.jpg",
+       "label": "a: a sliver behind the frame"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS2-door-b.jpg",
+       "label": "b: fainter, deeper in the dark"
+      }
+     ]
+    },
+    {
+     "slot": "js-mirror",
+     "round": 5,
+     "title": "Shot 5, the mirror: only in the reflection",
+     "line": "Pick one, or none.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "none",
+       "src": "moodboard/FO2-d.jpg",
+       "label": "none"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/JS5-mirror-a.jpg",
+       "label": "a: standing in the reflected aisle, clear"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS5-mirror-b.jpg",
+       "label": "b: at the reflection's edge, faint"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The hand in the shots",
    "lede": "Edits of your picked stills: only the hand is added.",

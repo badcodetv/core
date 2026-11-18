@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS5-mirror-b.jpg",
+ "made": "2026-11-18T11:52:10+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scripts/flow/.tmp/jumpscares.mts (FlowClient.editImage)",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/FO2-d.jpg",
+ "why": "Jack 2026-11-18: a brief jumpscare figure (Conjuring wardrobe / Scream aisle staging), faceless, the burnt hand's owner",
+ "prompt": "Leave this ceiling security mirror and the corner around it exactly as photographed and add a single presence, seen only inside the mirror's curved reflection: standing far down the reflected aisle, among the scattered blank notes on the floor, a tall thin figure with no face, only smooth darkness, its body soot-black and split like dry tarmac with a faint ember glow. In the real corner of the room outside the mirror, nothing is there. Small and warped by the convex glass, easy to miss. Everything else untouched, with the same grain and tired, faded colour.\nThanks."
+}

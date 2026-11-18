@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS3-top-b.jpg",
+ "made": "2026-11-18T11:52:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scripts/flow/.tmp/jumpscares.mts (FlowClient.editImage)",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-c.jpg",
+ "why": "Jack 2026-11-18: a brief jumpscare figure (Conjuring wardrobe / Scream aisle staging), faceless, the burnt hand's owner",
+ "prompt": "Leave this narrow shop aisle just as photographed and add a single presence: perched high above the tall right-hand shelving unit, pressed into the gap just under the ceiling tiles beside the strip light, something crouches folded up like a spider, long limbs bent too sharply, peering down the aisle. No face, only a smooth dark hollow where one should be. Soot-black skin split like dry tarmac, a dull ember glow in the splits, a curl of smoke. Mostly in shadow, the light only grazing one shoulder and two hooked fingers over the top shelf. Everything below and around it is untouched, with the same grain and tired, faded colour.\nThanks."
+}
