@@ -123,6 +123,114 @@
    "motion": "Locked camera on a tripod, perfectly still, no movement of any kind: no pan, tilt, zoom or shake. Nothing in the frame moves; the loaf, the chocolate bar and the price cards stay still and the writing on the cards never changes. Steady fluorescent light for the first two seconds. At about two seconds, lightning strikes outside: the black window behind the bread blows out to a blinding blue-white for a split second, throwing the loaf into hard silhouette, then one shorter flicker, then black again. The light inside returns to exactly the same steady level as the opening and holds unchanged to the end. Thunder rolls, then silence and the faint buzz of the tube. Nothing appears outside the window. No people, no voices. Thanks.",
    "character": null,
    "why": "Jack 2026-11-16: same setting before and after the flash, only the prices change; zoomed in on the bread"
+  },
+  {
+   "key": "h4-a",
+   "n": 4,
+   "still": "HS4-a",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:01] The burnt hand holds the price card on the shelf lip, its hooked fingers tightening. [00:01-00:03] The strip light sags to near darkness and buzzes. [00:03-00:04] The light snaps back to full and the hand is gone; the loaf and the shelf sit exactly as before. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "h4-b",
+   "n": 4,
+   "still": "HS4-a",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:01] The burnt hand holds the price card on the shelf lip, its hooked fingers tightening. [00:01-00:03] The strip light sags to near darkness and buzzes. [00:03-00:04] The light snaps back to full and the hand is gone; the loaf and the shelf sit exactly as before. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "h6-a",
+   "n": 6,
+   "still": "HS6-b",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] The burnt hand hangs over the freezer lid, fingers curling down toward the handwritten card. [00:02-00:03] It snatches upward into the dark above in one fast jerk, smoke trailing, and is gone. The loaf, the chocolate bar and both cards hold their places on the lid. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "h6-b",
+   "n": 6,
+   "still": "HS6-b",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] The burnt hand hangs over the freezer lid, fingers curling down toward the handwritten card. [00:02-00:03] It snatches upward into the dark above in one fast jerk, smoke trailing, and is gone. The loaf, the chocolate bar and both cards hold their places on the lid. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "p3-a",
+   "n": 3,
+   "still": "JS3-peek2-a",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] Far down the aisle, the black figure leans out of the back doorway, perfectly still, facing the camera. [00:02-00:03] It scuttles backwards into the dark room in one fast jerk, its thin hand the last thing to slip off the door frame. The shelves and packets hold still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "p3-b",
+   "n": 3,
+   "still": "JS3-peek2-a",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] Far down the aisle, the black figure leans out of the back doorway, perfectly still, facing the camera. [00:02-00:03] It scuttles backwards into the dark room in one fast jerk, its thin hand the last thing to slip off the door frame. The shelves and packets hold still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "t3-a",
+   "n": 3,
+   "still": "JS3-top-b",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] High on the top shelf the black figure crouches motionless under the strip light. [00:02-00:03] The tube flickers once and in that blink the figure lurches back out of sight behind the shelving. The packets and cans below hold still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "t3-b",
+   "n": 3,
+   "still": "JS3-top-b",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] High on the top shelf the black figure crouches motionless under the strip light. [00:02-00:03] The tube flickers once and in that blink the figure lurches back out of sight behind the shelving. The packets and cans below hold still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "d2-a",
+   "n": 2,
+   "still": "JS2-door-b",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] Outside, half hidden behind the glass door's frame, the black figure stands motionless in the dark street. [00:02-00:03] It slides sideways out of sight behind the frame, quick and smooth. The door, the taped card, the crate and the mat hold still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "d2-b",
+   "n": 2,
+   "still": "JS2-door-b",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] Outside, half hidden behind the glass door's frame, the black figure stands motionless in the dark street. [00:02-00:03] It slides sideways out of sight behind the frame, quick and smooth. The door, the taped card, the crate and the mat hold still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "m5-a",
+   "n": 5,
+   "still": "JS5-mirror-b",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] In the curved security mirror, the black figure stands at the edge of the reflected aisle. [00:02-00:03] The mirror rocks gently on its bracket and as it swings back the figure is no longer in the reflection. The real corner of the room stays still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
+  },
+  {
+   "key": "m5-b",
+   "n": 5,
+   "still": "JS5-mirror-b",
+   "duration": 4,
+   "motion": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] In the curved security mirror, the black figure stands at the edge of the reflected aisle. [00:02-00:03] The mirror rocks gently on its bracket and as it swings back the figure is no longer in the reflection. The real corner of the room stays still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+   "character": null,
+   "why": "Jack 2026-11-18: more horror; Omni for everything, two takes"
   }
  ]
 }

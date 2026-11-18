@@ -67,3 +67,8 @@
 - **2026-11-18, Jack on round 6 (peek), no pick:** "please make the figure match the other images, he looks too different here
   and scale wise thanks". **Round 7:** `JS3-peek2-a/b` (`scripts/peek2.mts`) with `JS3-top-b` attached as the figure
   reference: the same matte black figure, round featureless head, sized for the far doorway. Same page, round 7.
+- **2026-11-18, Jack's round 7 pick:** aisle peek **a** (`JS3-peek2-a`). All stills picked.
+- **2026-11-18, animation:** options in `animation-options-horror.json` (I recommended Omni for the shelf hand and the peek,
+  flash frames for the rest). Jack: **"Omni for everything"**. 12 jobs in `video-jobs.json` (`h4`, `h6`, `p3`, `t3`, `d2`,
+  `m5`, two takes each, 4 s, Omni 1.2 Flash, Frames, 9:16), run with `run.mts` in the story's own project (not the tab pool:
+  it opens a new Flow project per tab). Same-prompt check flagged only the skill's lock-and-shutter opener: kept on purpose.

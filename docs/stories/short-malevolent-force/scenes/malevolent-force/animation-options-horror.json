@@ -1,0 +1,161 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "scares are a few frames each, with a strings stab",
+   "why": "Jack 2026-11-18: briefly, jumpscare",
+   "source": "picks.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": "4h",
+   "job": "the force takes the 50p: the hand is the inflation",
+   "still": "moodboard/HS4-a.jpg",
+   "options": [
+    {
+     "id": "A",
+     "label": "Omni: the hand pulls the card away in the brownout",
+     "lanes": {
+      "veo": "hand grips, light sags to near-dark, light snaps back, hand gone",
+      "premiere": "none",
+      "ffmpeg": "new £1/£5 card pasted after the dark, as in rough cut 2"
+     },
+     "veo_prompt": "The camera does not move. Shot at 24fps with a 180-degree shutter. [00:00-00:01] The burnt hand holds the price card, its fingers tightening. [00:01-00:03] The strip light sags to near darkness, buzzing. [00:03-00:04] The light snaps back to full and the hand is gone, the shelf and loaf exactly as before. One continuous shot, no cuts. The camera does not move.\nThanks.",
+     "seconds": 6,
+     "risk": "the card or loaf may drift; the price change stays in the edit"
+    },
+    {
+     "id": "B",
+     "label": "Post only: 6 frames of the hand inside the brownout",
+     "lanes": {
+      "veo": "none",
+      "premiere": "cut HS4-a in for 6 frames at the darkest point of the existing clip",
+      "ffmpeg": "darken to match"
+     },
+     "veo_prompt": null,
+     "seconds": 0.25,
+     "risk": "reads as a still flash, not a grab"
+    }
+   ]
+  },
+  {
+   "n": "6h",
+   "job": "in the lightning, the hand is there; then the prices have changed",
+   "still": "moodboard/HS6-b.jpg",
+   "options": [
+    {
+     "id": "A",
+     "label": "Post only (recommended): the hand only exists in the lightning frames",
+     "lanes": {
+      "veo": "none",
+      "premiere": "the flash frames of mf-06-f4b-swap swapped for HS6-b, brightened to the flash",
+      "ffmpeg": "price cards change on the same frame, as now"
+     },
+     "veo_prompt": null,
+     "seconds": 0.4,
+     "risk": "low"
+    },
+    {
+     "id": "B",
+     "label": "Omni: the hand rakes the card off the lid and withdraws upward",
+     "lanes": {
+      "veo": "hand grips £5 card and lifts away",
+      "premiere": "none",
+      "ffmpeg": "price swap"
+     },
+     "veo_prompt": "The camera does not move. Shot at 24fps with a 180-degree shutter. [00:00-00:02] The burnt hand closes on the price card. [00:02-00:03] It withdraws upward into the dark above, fast. The freezer lid, loaf and chocolate bar hold still. One continuous shot, no cuts. The camera does not move.\nThanks.",
+     "seconds": 4,
+     "risk": "objects lifted with it; falling-object rule"
+    }
+   ]
+  },
+  {
+   "n": "3p",
+   "job": "something lives in the back room, and it saw you",
+   "still": "moodboard/JS3-peek2-a.jpg",
+   "options": [
+    {
+     "id": "A",
+     "label": "Omni (recommended): it holds, then scuttles backwards into the dark",
+     "lanes": {
+      "veo": "figure still, then jerks back out of sight",
+      "premiere": "used for ~1 s around the scuttle",
+      "ffmpeg": "none"
+     },
+     "veo_prompt": "The camera does not move. Shot at 24fps with a 180-degree shutter. [00:00-00:02] The black figure in the far doorway stays perfectly still, peeking out toward the camera. [00:02-00:03] It scuttles backwards fast into the dark room and is gone, its hand last to leave the door frame. The aisle and shelves hold still. One continuous shot, no cuts. The camera does not move.\nThanks.",
+     "seconds": 4,
+     "risk": "the figure may turn or morph; small in frame helps"
+    },
+    {
+     "id": "B",
+     "label": "Post only: 8 frames of the still, then the clean aisle",
+     "lanes": {
+      "veo": "none",
+      "premiere": "flash insert",
+      "ffmpeg": "none"
+     },
+     "veo_prompt": null,
+     "seconds": 0.33,
+     "risk": "no scuttle"
+    }
+   ]
+  },
+  {
+   "n": "3t",
+   "job": "it is above you",
+   "still": "moodboard/JS3-top-b.jpg",
+   "options": [
+    {
+     "id": "A",
+     "label": "Post only (recommended): 6 frames when the strip light flickers",
+     "lanes": {
+      "veo": "none",
+      "premiere": "flash insert into shot 3",
+      "ffmpeg": "flicker"
+     },
+     "veo_prompt": null,
+     "seconds": 0.25,
+     "risk": "low"
+    }
+   ]
+  },
+  {
+   "n": "2d",
+   "job": "it was outside the door",
+   "still": "moodboard/JS2-door-b.jpg",
+   "options": [
+    {
+     "id": "A",
+     "label": "Post only (recommended): 6 frames as the door swings",
+     "lanes": {
+      "veo": "none",
+      "premiere": "flash insert into shot 2",
+      "ffmpeg": "none"
+     },
+     "veo_prompt": null,
+     "seconds": 0.25,
+     "risk": "low"
+    }
+   ]
+  },
+  {
+   "n": "5m",
+   "job": "only the mirror sees it",
+   "still": "moodboard/JS5-mirror-b.jpg",
+   "options": [
+    {
+     "id": "A",
+     "label": "Post only (recommended): in the mirror while it rocks, gone when it settles",
+     "lanes": {
+      "veo": "none",
+      "premiere": "flash insert into shot 5",
+      "ffmpeg": "none"
+     },
+     "veo_prompt": null,
+     "seconds": 0.33,
+     "risk": "low"
+    }
+   ]
+  }
+ ]
+}
