@@ -134,6 +134,19 @@
     "why": "cut-r1a.json is not a timeline edl: Kai's cut in Premiere is the truth"
    },
    "media": "12 clips repointed (changeMediaFilePath) from video/1080/ (ffmpeg scale-up of Flow's 720p) to video/1080up/ (Flow's own 1080p upscale, scripts/scene/upscale.mts), 10 Nov; render cut/r1-1080up-check.mp4: timing identical, ~3x the fine detail"
+  },
+  "halfspeed-2026-11-18": {
+   "sequence": "01 GPOM chorus poverty r1",
+   "what": "Kai's hand edit in Premiere, 18 Nov: the chorus cut at half the speed (11 shots -> 8, about one shot every bar instead of every half bar)",
+   "backup": "01 GPOM chorus poverty r1 (before Kai's half-speed edit, 18 Nov)",
+   "state": "/mnt/d/badcode-videos/gitpush-origin-master/.bridge/state-01 GPOM chorus poverty r1.json",
+   "guide_song": "A1 guide song kept in the nest (disabled in 01 GPOM start r2's A9, so no double music)",
+   "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk",
+   "check": {
+    "at": "2026-11-18",
+    "state": "Premiere only",
+    "why": "Kai's cut in Premiere is the truth; the page plays its render"
+   }
   }
  }
 }

@@ -1,0 +1,294 @@
+{
+ "6-0": {
+  "6-0-a.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 5.76
+  },
+  "6-0-b.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 5.92
+  },
+  "6-0-c.wav": {
+   "miss": [
+    "seat",
+    "up"
+   ],
+   "heard": "derek you've left the sea top again",
+   "dur": 4.24
+  },
+  "6-0-d.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 10.8
+  },
+  "6-0-e.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 4.56
+  },
+  "6-0-f.wav": {
+   "miss": [
+    "seat",
+    "up"
+   ],
+   "heard": "derek you've left the sea top again",
+   "dur": 4.44
+  },
+  "6-0-g.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 4.48
+  },
+  "6-0-h.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 4.68
+  },
+  "6-0-i.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 4.48
+  },
+  "6-0-j.wav": {
+   "miss": [
+    "seat",
+    "up",
+    "again"
+   ],
+   "heard": "derek you've left the sea topagain",
+   "dur": 4.56
+  }
+ },
+ "7d-0": {
+  "7d-0-a.wav": {
+   "miss": [],
+   "heard": "i'm really sorry love",
+   "dur": 2.44
+  },
+  "7d-0-b.wav": {
+   "miss": [],
+   "heard": "i'm really sorry love",
+   "dur": 2.76
+  },
+  "7d-0-c.wav": {
+   "miss": [
+    "i'm"
+   ],
+   "heard": "oh really sorry love",
+   "dur": 3.08
+  },
+  "7d-0-d.wav": {
+   "miss": [],
+   "heard": "i'm really sorry love",
+   "dur": 2.32
+  },
+  "7d-0-e.wav": {
+   "miss": [
+    "really",
+    "sorry"
+   ],
+   "heard": "i'm nearly shoddy love",
+   "dur": 2.6
+  },
+  "7d-0-f.wav": {
+   "miss": [],
+   "heard": "i'm really sorry love",
+   "dur": 2.12
+  },
+  "7d-0-g.wav": {
+   "miss": [],
+   "heard": "i'm really sorry love",
+   "dur": 2.16
+  },
+  "7d-0-h.wav": {
+   "miss": [],
+   "heard": "i'm really sorry love",
+   "dur": 2.24
+  },
+  "7d-0-i.wav": {
+   "miss": [
+    "i'm"
+   ],
+   "heard": "oh really sorry love",
+   "dur": 2.68
+  },
+  "7d-0-j.wav": {
+   "miss": [
+    "love"
+   ],
+   "heard": "i'm really sorry lof",
+   "dur": 2.08
+  }
+ },
+ "7-0": {
+  "7-0-a.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.76
+  },
+  "7-0-b.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.52
+  },
+  "7-0-c.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.8
+  },
+  "7-0-d.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.88
+  },
+  "7-0-e.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.76
+  },
+  "7-0-f.wav": {
+   "miss": [
+    "put"
+   ],
+   "heard": "five years underground and you still can't pot a seat down",
+   "dur": 5.04
+  },
+  "7-0-g.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.52
+  },
+  "7-0-h.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.84
+  },
+  "7-0-i.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.92
+  },
+  "7-0-j.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.0
+  }
+ },
+ "7d-1": {
+  "7d-1-a.wav": {
+   "miss": [
+    "sandra"
+   ],
+   "heard": "but the world ended sansre",
+   "dur": 2.88
+  },
+  "7d-1-b.wav": {
+   "miss": [
+    "but",
+    "ended"
+   ],
+   "heard": "put the world end up sandra",
+   "dur": 3.0
+  },
+  "7d-1-c.wav": {
+   "miss": [],
+   "heard": "but the world ended sandra",
+   "dur": 2.72
+  },
+  "7d-1-d.wav": {
+   "miss": [],
+   "heard": "but the world ended sandra",
+   "dur": 3.12
+  },
+  "7d-1-e.wav": {
+   "miss": [
+    "world"
+   ],
+   "heard": "oh but the world's ended sandra",
+   "dur": 3.6
+  },
+  "7d-1-f.wav": {
+   "miss": [],
+   "heard": "but the world ended sandra",
+   "dur": 2.4
+  },
+  "7d-1-g.wav": {
+   "miss": [],
+   "heard": "but the world ended sandra",
+   "dur": 2.48
+  },
+  "7d-1-h.wav": {
+   "miss": [],
+   "heard": "but the world ended sandra",
+   "dur": 2.64
+  },
+  "7d-1-i.wav": {
+   "miss": [
+    "but"
+   ],
+   "heard": "what the world ended sandra",
+   "dur": 2.56
+  },
+  "7d-1-j.wav": {
+   "miss": [
+    "sandra"
+   ],
+   "heard": "but the world ended santa",
+   "dur": 2.68
+  }
+ },
+ "7-2": {
+  "7-2-a.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 5.32
+  },
+  "7-2-b.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.96
+  },
+  "7-2-c.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.72
+  },
+  "7-2-d.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 5.36
+  },
+  "7-2-e.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.52
+  },
+  "7-2-f.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.92
+  },
+  "7-2-g.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.32
+  },
+  "7-2-h.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.12
+  },
+  "7-2-i.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 5.28
+  },
+  "7-2-j.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.16
+  }
+ }
+}

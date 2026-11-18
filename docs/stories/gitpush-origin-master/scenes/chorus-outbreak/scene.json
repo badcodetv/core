@@ -69,6 +69,19 @@
     "state": "Premiere only",
     "why": "edl-r3.json is not a timeline edl: Kai's cut in Premiere is the truth"
    }
+  },
+  "halfspeed-2026-11-18": {
+   "sequence": "01 GPOM chorus outbreak r4",
+   "what": "Kai's hand edit in Premiere, 18 Nov: the chorus cut at half the speed (12 shots -> 7, about one shot every bar instead of every half bar)",
+   "backup": "01 GPOM chorus outbreak r4 (before Kai's half-speed edit, 18 Nov)",
+   "state": "/mnt/d/badcode-videos/gitpush-origin-master/.bridge/state-01 GPOM chorus outbreak r4.json",
+   "guide_song": "A1 guide song kept in the nest (disabled in 01 GPOM start r2's A9, so no double music)",
+   "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk",
+   "check": {
+    "at": "2026-11-18",
+    "state": "Premiere only",
+    "why": "Kai's cut in Premiere is the truth; the page plays its render"
+   }
   }
  },
  "board_round": 2,

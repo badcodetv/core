@@ -2,7 +2,7 @@
  "story": "gitpush-origin-master",
  "title": "GitPush Origin Master",
  "url": "https://claude.ai/artifact/AXJqmgAWTRhxK7fzMkKukp",
- "updated": "2026-11-09",
+ "updated": "2026-11-18",
  "open_now": "mv-chorus-2",
  "intro": "The whole film, start to end, and the timeline page for each part. Open the lit one first. Older pages for the same part sit under \"Earlier pages\" so nothing gets lost.",
  "sections": [
@@ -20,7 +20,7 @@
      "id": "mv-opening",
      "name": "Opening, the push, the drop",
      "at": "0:00",
-     "state": "in Premiere · page for notes: 01 GPOM start timeline (built from Kai's Premiere cut, 5 Nov)",
+     "state": "in Premiere · page for notes: 01 GPOM start timeline (rebuilt 18 Nov from '01 GPOM start r2' with Kai's half-speed choruses)",
      "tone": "premiere",
      "history": [
       {
@@ -42,7 +42,7 @@
      "id": "mv-chorus-1",
      "name": "Chorus 1: Skid Row Britain (the poverty twin of Outbreak Night; goes back in between the intro and the banks)",
      "at": "1:02",
-     "state": "SIGNED OFF (10 Nov, Kai: 'this is a sign off'): sequence A as cut, Flow's 1080p upscales, '01 GPOM chorus poverty r1' in '01 GPOM start r2' at 1:02.58 (film +11.04 s), so in 00 RENDER story; recipe frozen",
+     "state": "18 Nov: Kai's half-speed hand edit in Premiere, '01 GPOM chorus poverty r1' now 8 shots (was 11, about 1.4 s each), nested in '01 GPOM start r2' at 1:02.58 and so in 00 RENDER story; old cut kept as '01 GPOM chorus poverty r1 (before Kai's half-speed edit, 18 Nov)'. SIGNED OFF (10 Nov, Kai: 'this is a sign off'): sequence A as cut, Flow's 1080p upscales, '01 GPOM chorus poverty r1' in '01 GPOM start r2' at 1:02.58 (film +11.04 s), so in 00 RENDER story; recipe frozen",
      "tone": "done",
      "scene": "scenes/chorus-poverty",
      "history": [
@@ -58,13 +58,14 @@
        "kind": "picks",
        "date": "2026-11-10"
       }
-     ]
+     ],
+     "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
     },
     {
      "id": "mv-banks",
      "name": "The banks fall",
      "at": "1:14",
-     "state": "in Premiere · page for notes: 01 GPOM start timeline (built from Kai's Premiere cut, 5 Nov)",
+     "state": "in Premiere · page for notes: 01 GPOM start timeline (rebuilt 18 Nov from '01 GPOM start r2' with Kai's half-speed choruses)",
      "tone": "premiere",
      "scene": "scenes/banks-recut",
      "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
@@ -73,7 +74,7 @@
      "id": "mv-chorus-2",
      "name": "Chorus: Outbreak Night (the machines wake; replaces the robots in chorus 2)",
      "at": "1:47",
-     "state": "done (10 Nov): Kai's hand edit in Premiere, '01 GPOM chorus outbreak r3' (9 shots, airliner on the kick, cup held into the war), nested in '01 GPOM start r2' at 1:35.75 and so in 00 RENDER story. Chorus 1 and the second half of chorus 2 cut out of the story. Kai: 'a much better chorus arrangement'. Timeline page still plays cut E (r2). 12 Nov: '01 GPOM chorus outbreak r4' = r3 with the cup replaced by Kai's zoom-out, one bar each (North Downs skyline, above the cloud, the Solent, Britain from orbit; new Flow clips ob-z01-04, spares ob-z05/06 in the r4 bin), swapped into '01 GPOM start r2' (backup in zz old sequences)",
+     "state": "18 Nov: Kai's half-speed hand edit in Premiere, '01 GPOM chorus outbreak r4' now 7 shots (was 12), nested in '01 GPOM start r2' at 1:46.75; old cut kept as '01 GPOM chorus outbreak r4 (before Kai's half-speed edit, 18 Nov)'. done (10 Nov): Kai's hand edit in Premiere, '01 GPOM chorus outbreak r3' (9 shots, airliner on the kick, cup held into the war), nested in '01 GPOM start r2' at 1:35.75 and so in 00 RENDER story. Chorus 1 and the second half of chorus 2 cut out of the story. Kai: 'a much better chorus arrangement'. Timeline page still plays cut E (r2). 12 Nov: '01 GPOM chorus outbreak r4' = r3 with the cup replaced by Kai's zoom-out, one bar each (North Downs skyline, above the cloud, the Solent, Britain from orbit; new Flow clips ob-z01-04, spares ob-z05/06 in the r4 bin), swapped into '01 GPOM start r2' (backup in zz old sequences)",
      "tone": "done",
      "scene": "scenes/chorus-outbreak",
      "history": [
@@ -107,13 +108,14 @@
        "kind": "picks",
        "date": "2026-11-09"
       }
-     ]
+     ],
+     "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
     },
     {
      "id": "mv-war",
      "name": "War in Swindon",
      "at": "2:09",
-     "state": "cut by Kai · page for notes: 01 GPOM start timeline (built from Kai's Premiere cut, 5 Nov)",
+     "state": "cut by Kai · page for notes: 01 GPOM start timeline (rebuilt 18 Nov from '01 GPOM start r2' with Kai's half-speed choruses)",
      "tone": "premiere",
      "scene": "scenes/war",
      "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"

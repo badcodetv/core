@@ -1,0 +1,323 @@
+#!/usr/bin/env python3
+"""Lip-sync pass on scene A's row (Kai, 18 Nov 2026: "massively improve the lip syncing"; plan in
+docs/stories/gitpush-origin-master/lipsync-plan-2026-11-18.md, steps 3-6, steps 1-2 skipped on Kai's word).
+
+Per line: five new AI Studio takes (cast voice, same words), five new Omni talking clips from the approved start still
+(Frames, the line in the prompt), then every take fitted WHOLE on every clip's tracked mouth (voice-row-fit.fit: one
+onset + one tempo, never before the mouth opens), best three pairs rendered for the picks page.
+
+    python3 scripts/gpom/second-half-video/lipsync-a-1118.py voices [line...]   # 5 takes each, transcribed
+    python3 scripts/gpom/second-half-video/lipsync-a-1118.py jobs               # writes the pool scene's video-jobs.json
+    python3 scripts/gpom/second-half-video/lipsync-a-1118.py check [line...]    # transcribe + mouth-track the new clips
+    python3 scripts/gpom/second-half-video/lipsync-a-1118.py fit [line...]      # every take x every clip, top 3
+    python3 scripts/gpom/second-half-video/lipsync-a-1118.py render [line...]   # the top 3 + "now in the film" as mp4s
+"""
+import importlib.util, json, os, re, subprocess, sys
+from concurrent.futures import ThreadPoolExecutor
+import numpy as np
+
+REPO = '/home/kai/projects/badcode/badcode'
+spec = importlib.util.spec_from_file_location('vrf', f'{REPO}/scripts/gpom/second-half-video/voice-row-fit.py')
+vrf = importlib.util.module_from_spec(spec); spec.loader.exec_module(vrf)
+
+MEDIA = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A'
+VOX = f'{MEDIA}/voices'
+CLIPS = f'{MEDIA}/video'          # pool output (<prefix>-<key>-<still>.mp4)
+OUT = f'{MEDIA}/pairs'
+SCENE = f'{REPO}/docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/lipsync-1118'
+CAST = f'{REPO}/docs/stories/gitpush-origin-master/scenes/second-half-cut3-cast.json'
+CUT = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27'
+STILL = {'woman': 'sandra-SB07b', 'man': 'derek-SB07c'}
+FPS = 24
+
+# line: (who, words, direction for the voice, clip seconds, Flow motion prompt, fit window (clip s), fit only to (take phrase idx))
+LINES = {
+    '6-0': ('woman', "Derek. You've left the seat up. Again.",
+            "sharp, sarcastic; 'Derek.' clipped on its own, then a short beat, then 'You've left the seat up.' quick "
+            "and pointed; a long pause, glaring; then one flat word, 'Again.'", 6,
+            "Locked-off camera, no camera movement. The woman in the cream jumper, facing us, points at the man and "
+            "scolds him, sharp and sarcastic, her lips shaping every word clearly. She says: Derek. You've left the seat up. "
+            "She glares for a moment, then adds one flat word. She says: Again. Then her lips stay pressed shut. "
+            "The man seen from behind stays still and silent. Sound: tiled room echo, a dripping tap."),
+    '7d-0': ('man', "I'm really sorry, love.",
+             "sheepish and quick, a placating mumble, the words run together; a long, drawn-out 'I'm' at the start", 5,
+             "The shot stays fixed; only the people move. Derek, the husband in the dark green jumper, stands silent for "
+             "a second taking the telling-off, then mumbles a sheepish apology, his lips shaping every word. He says: "
+             "I'm really sorry, love. Then his mouth closes and he looks at the floor. His wife, her back to us, stays "
+             "quiet and still. Sound: tiled room echo, a dripping tap."),
+    '7-0': ('woman', "Five years underground, and you still can't put a seat down.",
+            "brisk and cutting, the words tumbling out, building; 'Five years underground,' fast, straight into the rest", 6,
+            "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, jabs a finger at the man "
+            "and tears into him, cutting and sarcastic, her lips shaping every word clearly. She says: Five years "
+            "underground, and you still can't put a seat down. Then she shuts her mouth and glares. The man seen from "
+            "behind does not move or speak. Sound: tiled room echo, a dripping tap."),
+    '7d-1': ('man', 'But the world ended, Sandra!',
+             "indignant, arms up, a burst; 'But the world ended,' then 'Sandra!' louder", 5,
+             "Static frame, nothing but the people moves. The husband in the dark green jumper flings his hands wide and "
+             "shouts at his wife, exasperated, his lips shaping every word. He says: But the world ended, Sandra! Then "
+             "his mouth shuts and he holds still, staring at her, hands still spread. His wife, seen from behind, holds "
+             "still and says nothing. Sound: tiled room echo, a dripping tap."),
+    '7-2': ('woman', "Yeah, the world ended. Doesn't mean you get to stop having manners.",
+            "snaps straight back, quick and cutting, the words tumbling out fast, no pause after 'ended.'", 6,
+            "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, fires straight back at "
+            "the man, quick, sharp and sarcastic, her lips shaping every word clearly. She says: Yeah, the world ended. "
+            "Doesn't mean you get to stop having manners. Then she shuts her mouth and folds her arms. The man seen from "
+            "behind does not move or speak. Sound: tiled room echo, a dripping tap."),
+}
+# where the line sits in the film now (A-d27): shot file, its in point, shot length; the voice wav and its start
+NOW = {
+    '6-0': ('cut3-lip-6-0-v3-muted.mp4', 0.0, 2.5, 129.208),
+    '7d-0': ('cut3-lip-7d-0-r19-muted.mp4', 1.7083, 1.9583, 131.708),
+    '7-0': ('cut3-lip-7-0-r24-muted.mp4', 0.0, 4.375, 133.667),
+    '7d-1': ('cut3-lip-7d-1-muted.mp4', 0.625, 1.9583, 138.042),
+    '7-2': ('cut3-lip-7-2-v3-muted.mp4', 0.0, 3.625, 140.0),
+}
+KEYS = 'abcde'
+WPY = vrf.WPY
+
+
+def norm(w):
+    return re.sub(r"[^a-z']", '', w.lower())
+
+
+def take_path(line, k):
+    return f'{VOX}/{line}-{k}.wav'
+
+
+FAST = {  # round 2 of voices: Omni's mouths run faster than the first takes; direct the take to the clip's pace
+    '6-0': "quick and sharp; 'Derek.' clipped, a short beat, 'You've left the seat up.' fast, a beat, then a flat 'Again.'",
+    '7d-0': "a fast, sheepish mumble, all four words run together in barely more than a second, no drawn-out 'I'm'",
+    '7-0': "fast and cutting, the whole line in one quick breath, no pause after 'underground'",
+    '7d-1': "a fast indignant burst, the whole line in about a second, 'Sandra!' louder",
+    '7-2': "rapid-fire, snapping straight back, the whole line fast in one breath, no pause after 'ended.'",
+}
+
+
+def tts(line, k):
+    who, text, direction = LINES[line][:3]
+    if k in 'fghij':
+        direction = FAST[line]
+    cast = json.load(open(CAST))['cast'][who]
+    prof = re.sub(r'^Pace: .*$', 'Pace: ' + direction + '.', cast['prompt'], count=1, flags=re.M)
+    os.makedirs(SCENE, exist_ok=True); os.makedirs(VOX, exist_ok=True)
+    pf, tf = f'{SCENE}/{line}{"-fast" if k in "fghij" else ""}.profile.md', f'{SCENE}/{line}.txt'
+    open(pf, 'w').write(prof); open(tf, 'w').write(text + '\n')
+    out = take_path(line, k)
+    if not os.path.exists(out):
+        subprocess.run(f'set -a; . ./.env; set +a; uv run -q --with "google-genai<2" python3 scripts/aistudio-tts.py {tf} {out} '
+                       f'--profile {pf} --voice {cast["voice"]}', shell=True, cwd=REPO, capture_output=True, check=True)
+        subprocess.run([sys.executable, f'{REPO}/scripts/provenance/prov.py', 'card', out, '--kind', 'voice', '--engine',
+                        'Gemini TTS', '--model', f'gemini-3.1-flash-tts-preview / {cast["voice"]}', '--tool',
+                        'scripts/aistudio-tts.py (billed key) via lipsync-a-1118.py', '--prompt-file', pf,
+                        '--setting', f'text={text}', '--why', 'lip-sync pass 18 Nov (Kai): five new takes per line'],
+                       check=True, capture_output=True)
+    return out
+
+
+_W = {}
+
+
+def words_of(path):
+    if path not in _W:
+        _W[path] = vrf.words_of(path)
+    return _W[path]
+
+
+def missing_words(line, path):
+    want = [norm(x) for x in LINES[line][1].split()]
+    got = [w for w, _, _ in words_of(path)]
+    return [x for x in want if x not in got], ' '.join(got)
+
+
+def cmd_voices(lines):
+    rep = {}
+    for ln in lines:
+        with ThreadPoolExecutor(3) as ex:
+            takes = list(ex.map(lambda k: tts(ln, k), os.environ.get('TAKES', KEYS)))
+        rep[ln] = {}
+        for t in takes:
+            miss, heard = missing_words(ln, t)
+            d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', t],
+                                     capture_output=True, text=True).stdout)
+            rep[ln][os.path.basename(t)] = dict(miss=miss, heard=heard, dur=round(d, 2))
+            print(ln, os.path.basename(t), round(d, 2), 'MISS' if miss else 'ok', miss, '|', heard)
+    p = f'{SCENE}/voices.json'
+    prev = json.load(open(p)) if os.path.exists(p) else {}
+    for k, v in rep.items():
+        prev.setdefault(k, {}).update(v)
+    json.dump(prev, open(p, 'w'), indent=1)
+
+
+def cmd_jobs():
+    extra = []
+    for ln, (who, text, _, dur, motion, *_r) in LINES.items():
+        for k in KEYS:
+            extra.append(dict(key=f'L{ln.replace("-", "")}{k}', n=0, still=STILL[who], duration=dur, motion=motion,
+                              character=None, why=f'lip-sync 18 Nov: line {ln} take {k}'))
+    json.dump(dict(extra=extra), open(f'{SCENE}/video-jobs.json', 'w'), indent=1)
+    print(len(extra), 'jobs')
+
+
+def clips_of(line):
+    tag = f'L{line.replace("-", "")}'
+    return sorted(f'{CLIPS}/{f}' for f in os.listdir(CLIPS)
+                  if re.match(rf'la-{tag}[a-z]-', f) and f.endswith('.mp4') and '-muted' not in f)
+
+
+def mouth(clip):
+    os.makedirs(f'{SCENE}/strips', exist_ok=True)
+    strip = f'{SCENE}/strips/{os.path.basename(clip)}-strip.jpg'
+    if not os.path.exists(strip + '.json'):
+        subprocess.run([vrf.LPY, f'{REPO}/scripts/lipsync/mouth-track.py', clip, strip], capture_output=True)
+    js = json.load(open(strip + '.json'))
+    return np.array([np.nan if x is None else x for x in js['scaled']], float)
+
+
+def cmd_check(lines):
+    p = f'{SCENE}/clips.json'
+    rep = json.load(open(p)) if os.path.exists(p) else {}
+    for ln in lines:
+        for c in clips_of(ln):
+            miss, heard = missing_words(ln, c)
+            r = mouth(c)
+            md5 = subprocess.run(['md5sum', c], capture_output=True, text=True).stdout.split()[0]
+            d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', c],
+                                     capture_output=True, text=True).stdout)
+            rep[os.path.basename(c)] = dict(line=ln, miss=miss, heard=heard, md5=md5, dur=round(d, 2),
+                                            tracked=round(float(np.mean(~np.isnan(r))), 2))
+            print(ln, os.path.basename(c), round(d, 2), md5[:8], 'tracked', rep[os.path.basename(c)]['tracked'],
+                  'MISS' if miss else 'ok', miss, '|', heard)
+    json.dump(rep, open(p, 'w'), indent=1)
+    dup = {}
+    for k, v in rep.items():
+        dup.setdefault(v['md5'], []).append(k)
+    for m, ks in dup.items():
+        if len(ks) > 1:
+            print('DUPLICATE md5', ks)
+
+
+def speech_span(path):
+    e = vrf.fine_env(path)
+    act = np.where(e > e.max() - 40)[0]
+    return max(0.0, act[0] * 0.01 - 0.03), (act[-1] + 1) * 0.01 + 0.05
+
+
+_ANCH = {}
+
+
+def clip_anchors(clip):
+    """The clip's own words, moved by the lag between its own audio and its tracked mouth (Omni's audio drifts)."""
+    if clip in _ANCH:
+        return _ANCH[clip]
+    w = words_of(clip)
+    e = vrf.env(clip); r = mouth(clip)
+    n = min(len(e), len(r))
+    ee = np.clip((e[:n] - (e[:n].max() - 30)) / 30, 0, 1); rr = np.nan_to_num(r[:n])
+    lags = list(range(-12, 13))
+    cc = [np.corrcoef(np.roll(ee, L)[12:-12], rr[12:-12])[0, 1] for L in lags]
+    lag = lags[int(np.nanargmax(cc))] / FPS
+    _ANCH[clip] = ([(x, s_ + lag) for x, s_, _ in w], lag)
+    return _ANCH[clip]
+
+
+def match_err(cw, tw, at, tempo, frm):
+    """Mean |clip word start - placed take word start| over the line's words, matched in order."""
+    errs, j = [], 0
+    for x, s_, _ in tw:
+        k = next((i for i in range(j, len(cw)) if cw[i][0] == x), None)
+        if k is None:
+            continue
+        errs.append(abs(cw[k][1] - (at + (s_ - frm) / tempo))); j = k + 1
+    return (float(np.mean(errs)), float(np.max(errs)), len(errs)) if errs else (9, 9, 0)
+
+
+def fit_pair(line, clip, take):
+    r = mouth(clip)
+    if np.mean(~np.isnan(r)) < 0.7:
+        return None
+    cw, lag = clip_anchors(clip)
+    tw = words_of(take)
+    a, b = speech_span(take)
+    e = vrf.fine_env(take, a, b)
+    first = cw[0][1] if cw else 0.0
+    t0 = (tw[0][1] - a) if tw else 0.0  # the take's first word, from its speech start
+    win = (max(-0.04, first - t0 - 0.35), first - t0 + 0.35)
+    sc, on, tempo, det = vrf.fit(r, e, tempos=np.arange(0.97, 1.151, 0.01), window=win)
+    if on is None:
+        return None
+    me, mx, nw = match_err(cw, tw, on, tempo, a)
+    return dict(line=line, clip=os.path.basename(clip), take=os.path.basename(take), score=round(float(sc - 1.5 * me), 3),
+                mouth=round(float(sc), 3), word_err=round(me, 3), word_max=round(mx, 3), words=nw, lag=round(lag, 3),
+                at=on, tempo=tempo, frm=round(float(a), 3), to=round(float(b), 3), **det)
+
+
+def cmd_fit(lines):
+    vrep = json.load(open(f'{SCENE}/voices.json'))
+    crep = json.load(open(f'{SCENE}/clips.json'))
+    p = f'{SCENE}/fits.json'
+    allf = json.load(open(p)) if os.path.exists(p) else {}
+    for ln in lines:
+        takes = [take_path(ln, k) for k in 'abcdefghij' if f'{ln}-{k}.wav' in vrep[ln] and not vrep[ln][f'{ln}-{k}.wav']['miss']]
+        clips = [c for c in clips_of(ln) if not crep.get(os.path.basename(c), {}).get('miss', ['?'])]
+        jobs = [(c, t) for c in clips for t in takes]
+        for c in clips:
+            clip_anchors(c)
+        for t in takes:
+            words_of(t)
+        with ThreadPoolExecutor(6) as ex:
+            res = [x for x in ex.map(lambda ct: fit_pair(ln, *ct), jobs) if x]
+        res.sort(key=lambda x: -x['score'])
+        # top 3, at most one per clip, so Kai sees three different pictures
+        top, seen = [], set()
+        for x in res:
+            if x['clip'] in seen:
+                continue
+            top.append(x); seen.add(x['clip'])
+            if len(top) == 3:
+                break
+        allf[ln] = dict(all=res, top=top, clips=len(clips), takes=len(takes))
+        print(ln, f'{len(clips)} clips x {len(takes)} takes')
+        for x in top:
+            print('  TOP', x)
+    json.dump(allf, open(p, 'w'), indent=1)
+
+
+def render_pair(x, out):
+    clip = f'{CLIPS}/{x["clip"]}'; take = take_path(x['line'], x['take'].split('-')[-1][0]) if False else f'{VOX}/{x["take"]}'
+    dur = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', clip],
+                               capture_output=True, text=True).stdout)
+    delay = max(0, int(round(x['at'] * 1000)))
+    bed = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3'
+    af = (f"[1:a]atrim={x['frm']}:{x['to']},asetpts=PTS-STARTPTS,atempo={x['tempo']},adelay={delay}|{delay},apad[v];"
+          f"[2:a]volume=0.25,apad[b];[v][b]amix=inputs=2:normalize=0,atrim=0:{dur}[a]")
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', clip, '-i', take, '-i', bed, '-filter_complex', af,
+                    '-map', '0:v', '-map', '[a]', '-c:v', 'libx264', '-crf', '20', '-preset', 'fast', '-pix_fmt', 'yuv420p',
+                    '-c:a', 'aac', '-b:a', '160k', '-t', str(dur), '-movflags', '+faststart', out], check=True)
+    subprocess.run([sys.executable, f'{REPO}/scripts/provenance/prov.py', 'card', out, '--kind', 'video', '--engine', 'ffmpeg',
+                    '--tool', 'lipsync-a-1118.py render', '--parent', clip, '--parent', take,
+                    '--why', f'lip-sync pair for line {x["line"]}: voice at {x["at"]} s x{x["tempo"]}, score {x["score"]}'],
+                   check=True, capture_output=True)
+
+
+def render_now(line, out):
+    f, i, d, t = NOW[line]
+    src = f'{CUT}/preview.mp4'
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(t), '-i', src, '-t', str(d + 0.9), '-c:v', 'libx264', '-crf', '20',
+                    '-preset', 'fast', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out],
+                   check=True)
+
+
+def cmd_render(lines):
+    os.makedirs(OUT, exist_ok=True)
+    fits = json.load(open(f'{SCENE}/fits.json'))
+    for ln in lines:
+        render_now(ln, f'{OUT}/{ln}-now.mp4')
+        for i, x in enumerate(fits[ln]['top']):
+            render_pair(x, f'{OUT}/{ln}-pick{i + 1}.mp4')
+            print(ln, i + 1, x['clip'], x['take'], x['score'], x['tempo'])
+
+
+if __name__ == '__main__':
+    c = sys.argv[1]; ls = sys.argv[2:] or list(LINES)
+    dict(voices=lambda: cmd_voices(ls), jobs=cmd_jobs, check=lambda: cmd_check(ls), fit=lambda: cmd_fit(ls),
+         render=lambda: cmd_render(ls))[c]()

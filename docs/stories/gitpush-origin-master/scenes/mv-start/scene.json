@@ -1,16 +1,31 @@
 {
-  "story": "gitpush-origin-master",
-  "scene": "mv-start",
-  "prefix": "ms",
-  "title": "01 GPOM start",
-  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> 01 start (the music video, Kai's hand cut)",
-  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start",
-  "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start/cut/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start/cut/preview.mp4",
-    "how": "premiere-to-edl.py from the bridge dump of '01 GPOM start'; preview = first 161.958 s of renders/GPOM-story-2026-11-04.mp4 (01 is nested at 0-161.96 in 00 RENDER story)"
-  },
-  "boards": {
-    "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
+ "story": "gitpush-origin-master",
+ "scene": "mv-start",
+ "prefix": "ms",
+ "title": "01 GPOM start",
+ "heading": "GitPush Origin Master <span class=\"tri\">▲</span> 01 start (the music video, Kai's hand cut)",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start",
+ "cut": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start/cut-r2-1118/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start/cut-r2-1118/preview.mp4",
+  "round": 2,
+  "what": "Kai's half-speed chorus edits (18 Nov): Skid Row Britain 11 -> 8 shots, Outbreak Night 12 -> 7 shots, done by hand in '01 GPOM chorus poverty r1' and '01 GPOM chorus outbreak r4'; nests flattened onto the page",
+  "how": "premiere_get_sequence '01 GPOM start r2' -> flatten the two chorus nests from their own bridge dumps (state-flat.json) -> premiere-to-edl.py --end 150.917 --from cut/edl.json --stem A1=mus-song --render renders/01-GPOM-start-r2-2026-11-18-halfspeed-choruses.mp4"
+ },
+ "boards": {
+  "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
+ },
+ "cut_previous": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start/cut/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start/cut/preview.mp4",
+  "how": "premiere-to-edl.py from the bridge dump of '01 GPOM start'; preview = first 161.958 s of renders/GPOM-story-2026-11-04.mp4 (01 is nested at 0-161.96 in 00 RENDER story)"
+ },
+ "premiere": {
+  "current": "r2",
+  "r2": {
+   "sequence": "01 GPOM start r2",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "what": "the music video's first 2:31, with chorus 1 and Outbreak Night nested; Kai cuts here by hand"
   }
+ }
 }
