@@ -51,9 +51,9 @@
   ]
  ],
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r3-bham-fig-b2/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r3-bham-fig-b2/preview.mp4",
-  "script": "python3 scripts/shorts/hello_cut_r3.py --voice bham --fig fig-b2"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r5/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r5/preview.mp4",
+  "script": "python3 scripts/shorts/hello_cut_r5.py"
  },
  "premiere": {
   "current": "r1",

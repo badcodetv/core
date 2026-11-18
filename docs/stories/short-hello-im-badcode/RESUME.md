@@ -1,6 +1,6 @@
 # Hello, I'm BadCode (short #17): resume
 
-**State 2026-11-18 eve: rough cut 4** (37.8 s) on the timeline page https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP.
+**State 2026-11-18 eve: rough cut 5** (38.05 s; built by `scripts/shorts/hello_cut_r5.py`) on the timeline page https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP.
 Picks page (rounds 1-8): https://claude.ai/artifact/NcX2aNGxH65LjjMdXs2oxa. Full log: `scenes/hello/picks.md`.
 
 **Locked by Jack:**
@@ -13,13 +13,14 @@ Picks page (rounds 1-8): https://claude.ai/artifact/NcX2aNGxH65LjjMdXs2oxa. Full
 - Voice: designed Birmingham `voice_61xqq38hm0da`, `gemini-3.8-flash-tts`, `--plain` (in `badcode.md`).
 - Music: Suno folktronica take 1 (60a00ad7), dips under the voice, dies with the reel.
 
-**Build:** `python3 scripts/shorts/hello_cut_r3.py --voice bham --fig fig-b2` (voice files `audio/casting/badcode-bham-l1..4.wav`).
+**Build:** `python3 scripts/shorts/hello_cut_r5.py` (calls hello_cut_r3.py with voice `bham5` = lines 1j, 2j, 4b, 5c, then adds logo
+reveal f at 33.75 s, captions, the camcorder stamp and the loop). Logo reveals: `scripts/shorts/logo_reveal.py` (f picked).
 
 **Next:**
 1. Read round 8 + timeline notes (line 4 pick; anything on rough cut 4; listen: line 1's "Ahhh" may sound like "Nah").
 2. Replace the reel's flat AI stills with REAL automation footage (Jack: "boring and flat… could be raw footage"). A find-footage
    search was running at the end of 2026-11-18: `research/footage-automation-shortlist.md`, media `footage/automation/`.
    If it's missing, rerun it. Credits into the description list.
-3. Jack to answer: what "Here's what to do next" leads to (pinned comment / end screen / part 2); captions on screen, a
-   date stamp (2009 / future year), sound in the reel (Suno stings; machine phrases are Jack and Kai's to write), a loop.
+3. Done in rough cut 5: captions, date stamp, loop, logo f. Jack: forget where "what to do next" leads; no new reel sound.
+   Open: the future year on the stamp (2049 is a guess).
 4. Then Premiere (new sequence), Drive (agreed list), gatekeeper before anything goes out. Nothing is uploaded yet.

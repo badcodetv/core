@@ -91,3 +91,8 @@
   vary and are interesting". Round 10: reveals d (letters roll in), e (the red-dot o leads), f (the triangle glances round like an
   eye), g (dial spin), from the logo's own pieces (`logo_reveal.py`), all ending exactly as the file. Real footage search still running.
 - **2026-11-18, round 10:** logo reveal **f** picked (watching you: the triangle glances round like an eye, then looks at you).
+- **2026-11-18, Jack's finishing calls:** "Forget number one" (where "what to do next" leads); captions yes; "do the stamp"; reel
+  sound: "We already have the real sound" (read as *reel* sound, the music already there: a guess, nothing new added); loop yes.
+  **Rough cut 5** (`scripts/shorts/hello_cut_r5.py`, `<media>/cut/r5/`, 38.05 s): line 4b, logo reveal f at 33.75 s, captions
+  (Anton, timed by `scripts/word_times.py`), camcorder stamp (VT323; JUL 18 2009 on the opening, NOV 18 2049 on BadCode: the
+  year is a guess), the loop dissolve. Flashing pass, -13.9 LUFS. Fonts are OFL (licences in `scripts/shorts/fonts/`).
