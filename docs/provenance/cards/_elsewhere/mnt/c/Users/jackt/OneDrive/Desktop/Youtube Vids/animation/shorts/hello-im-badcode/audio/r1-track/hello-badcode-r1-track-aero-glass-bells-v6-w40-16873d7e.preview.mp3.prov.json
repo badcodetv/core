@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r1-track/hello-badcode-r1-track-aero-glass-bells-v6-w40-16873d7e.preview.mp3",
+ "made": "2026-11-18T14:38:21.753Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "16873d7e-69f8-414c-814b-258921ccc50e",
+ "inputs": {
+  "title": "hello badcode r1-track-aero-glass-bells-v6-w40",
+  "song": "https://suno.com/song/16873d7e-69f8-414c-814b-258921ccc50e"
+ },
+ "settings": {
+  "durationSec": 52
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r1-track/hello-badcode-r1-track-aero-glass-bells-v6-w40-16873d7e.wav"
+}

@@ -204,6 +204,94 @@
       "Protected line kept verbatim; only a silence is added before it.",
       "Risk: 'car park' is British (swap 'parking lot' for a US audience) and is a climate-only image; 'future' is never said so a cold viewer may read it as a weather joke; 'homework' may sound childish and soften the reel."
      ]
+    },
+    {
+     "id": "1D",
+     "name": "Jack's line, then the button",
+     "length": "about 11.5 s",
+     "total": "~11.5 s",
+     "bet": "Jack, 2026-11-18: after the reel, cut back to BadCode for a challenge to the viewer, then the usual last line on black. The reel stops being the end of the argument and becomes BadCode's opening bid: you think you know how bad it is; I'll wait.",
+     "lines": [
+      {
+       "who": "BadCode (voice over the warm opening)",
+       "line": "Hello. Enjoy this.",
+       "tags": [
+        "02",
+        "06"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "BadCode (masked, to camera)",
+       "line": "I'm from the future. [beat] That was the good part.",
+       "tags": [
+        "02",
+        "01"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "BadCode (masked, to camera, straight after the reel)",
+       "line": "What do you think in your mind, what the worst-case scenario is?… I'll be patiently waiting to correct your bullshit.",
+       "tags": [
+        "Jack"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "BadCode (on black, after a beat)",
+       "line": "Here's what to do next.",
+       "tags": [
+        "Jack"
+       ],
+       "s": "1.6"
+      }
+     ],
+     "notes": [
+      "Jack's words, verbatim (Jack and Kai write the jokes).",
+      "A new beat: the cut back to BadCode after the reel (about 5.5 s on screen), so the short grows to about 28-30 s.",
+      "Risk: two lines in a row after the reel; the button may feel like an extra step after 'correct your bullshit'."
+     ]
+    },
+    {
+     "id": "1E",
+     "name": "Jack's line is the ending",
+     "length": "about 10 s",
+     "total": "~10 s",
+     "bet": "Jack, 2026-11-18: his line is the last thing BadCode says, then the logo. 'I'll be patiently waiting to correct your bullshit' already promises there is more to come, so it does the button's job with more character.",
+     "lines": [
+      {
+       "who": "BadCode (voice over the warm opening)",
+       "line": "Hello. Enjoy this.",
+       "tags": [
+        "02",
+        "06"
+       ],
+       "s": "1.4"
+      },
+      {
+       "who": "BadCode (masked, to camera)",
+       "line": "I'm from the future. [beat] That was the good part.",
+       "tags": [
+        "02",
+        "01"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "BadCode (masked, to camera, straight after the reel)",
+       "line": "What do you think in your mind, what the worst-case scenario is?… I'll be patiently waiting to correct your bullshit.",
+       "tags": [
+        "Jack"
+       ],
+       "s": "5.5"
+      }
+     ],
+     "notes": [
+      "Jack's words, verbatim.",
+      "Drops 'Here's what to do next.' (Jack's own earlier ruling); his new line carries the 'follow for the answer' promise instead.",
+      "Risk: ends on a jab rather than a way out; CLAUDE.md asks every piece to offer a way out, and the logo alone has to imply it."
+     ]
     }
    ],
    "ranking": [

@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r1-track/hello-badcode-r1-track-slowed-sax-meme-edit-v6-w-f14550a2.wav",
+ "made": "2026-11-18T14:39:12.429Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "f14550a2-a17b-472f-9dd9-264fc16c1e10",
+ "inputs": {
+  "title": "hello badcode r1-track-slowed-sax-meme-edit-v6-w",
+  "song": "https://suno.com/song/f14550a2-a17b-472f-9dd9-264fc16c1e10"
+ },
+ "settings": {
+  "durationSec": 22
+ }
+}
