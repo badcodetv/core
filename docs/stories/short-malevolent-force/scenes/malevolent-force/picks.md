@@ -48,3 +48,12 @@
   PR2-b → HS4-a/b, shot 6 FL4-b → HS6-a/b, the hand described in words because uploading HH1-c stuck (stills made inside this
   project stuck in the ingredients picker twice; a reload fixed PR2-b and FL4-b). Same-prompt check: the hand wording repeats
   between the two shots on purpose (one hand). Same page, round 4. Next: animate the picks (the snatch, then the price change).
+- **2026-11-18, Jack's round 4 picks (page dump):** shot 4 **a** (`HS4-a`), shot 6 **b** (`HS6-b`).
+- **2026-11-18, Jack:** "i also want a figure to walk around the shop, or be slightly behind a door in a jumpscare kind of
+  way, but briefly and like in the first conjuring with the women on the wardrobe jumpscare, or like the latest scream film
+  with him dashing between the isles of the shop". Played as the burnt hand's owner: faceless, never a person you could
+  name (bends the story rule "never show a person"; Jack to confirm). Staging borrowed, never those films' monsters.
+- **2026-11-18, horror round 5 (jumpscares):** edits of the picked stills, only the figure added: shot 3 dash `JS3-dash-a/b/c`
+  (rescued from the Flow gallery: the reference-copy guard had thrown them away, fixed), shot 3 top of the shelving
+  `JS3-top-a/b`, shot 2 behind the door `JS2-door-a/b`, shot 5 in the mirror `JS5-mirror-a/b`
+  (`scripts/jumpscares.mts`, run on the fixed flow-client). Each row has "none". Same page, round 5.

@@ -1,10 +1,117 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 4",
- "heading": "Your burnt hand, in your two shots",
- "intro": "You picked hand c, \"use this hand but make it fit the scene\", and the subtle VHS. Here hand c is put into your own picked stills (shot 4, the shelf; shot 6, the freezer), lit by the shop's teal light, with the same grain and the setting unchanged. The first option in each row is the shot as it is now. Pick one per shot; next they get animated: the hand snatches the card and the price changes.",
- "round": 4,
+ "eyebrow": "The Malevolent Force · more horror · round 5",
+ "heading": "Jumpscares: where does the figure appear?",
+ "intro": "You asked for a figure: walking around the shop or half behind a door, brief, like the Conjuring wardrobe or Scream's dash between the aisles. It's the burnt hand's owner: faceless, the same charred skin, never a person you could name. Four places; each row's first option leaves that shot clean. Pick a take, or leave the shot clean, in every row: you can have more than one scare. Each will be on screen for only a few frames, with a strings stab. Your hand picks (shot 4 a, shot 6 b) are saved.",
+ "round": 5,
  "sections": [
+  {
+   "h": "Jumpscares",
+   "lede": "The staging is borrowed, not those films' monsters. Edits of your picked stills: only the figure is added.",
+   "groups": [
+    {
+     "slot": "js-dash",
+     "round": 5,
+     "title": "Shot 3, the aisle: it dashes across the back (Scream)",
+     "line": "Pick one, or keep the aisle clean.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "none",
+       "src": "moodboard/PR2-c.jpg",
+       "label": "none: aisle stays clean"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/JS3-dash-a.jpg",
+       "label": "a: a crisp running silhouette"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS3-dash-b.jpg",
+       "label": "b: a blurred charred figure by the back door"
+      },
+      {
+       "id": "c",
+       "src": "moodboard/JS3-dash-c.jpg",
+       "label": "c: a faint smear, easy to miss"
+      }
+     ]
+    },
+    {
+     "slot": "js-top",
+     "round": 5,
+     "title": "Shot 3, the aisle: crouched on top of the shelving (Conjuring wardrobe)",
+     "line": "Pick one, or none. If you pick both a dash and this, they go in different frames of shot 3.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "none",
+       "src": "moodboard/PR2-c.jpg",
+       "label": "none"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/JS3-top-a.jpg",
+       "label": "a: folded up under the strip light"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS3-top-b.jpg",
+       "label": "b: hunched on the top shelf, closer"
+      }
+     ]
+    },
+    {
+     "slot": "js-door",
+     "round": 5,
+     "title": "Shot 2, the door: half hidden behind it",
+     "line": "Pick one, or none.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "none",
+       "src": "moodboard/PR2-e.jpg",
+       "label": "none"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/JS2-door-a.jpg",
+       "label": "a: a sliver behind the frame"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS2-door-b.jpg",
+       "label": "b: fainter, deeper in the dark"
+      }
+     ]
+    },
+    {
+     "slot": "js-mirror",
+     "round": 5,
+     "title": "Shot 5, the mirror: only in the reflection",
+     "line": "Pick one, or none.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "none",
+       "src": "moodboard/FO2-d.jpg",
+       "label": "none"
+      },
+      {
+       "id": "a",
+       "src": "moodboard/JS5-mirror-a.jpg",
+       "label": "a: standing in the reflected aisle, clear"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS5-mirror-b.jpg",
+       "label": "b: at the reflection's edge, faint"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The hand in the shots",
    "lede": "Edits of your picked stills: only the hand is added.",

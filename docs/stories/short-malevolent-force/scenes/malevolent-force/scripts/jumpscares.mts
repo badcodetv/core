@@ -1,5 +1,5 @@
 // Malevolent Force jumpscare stills, 2026-11-18, run on the repo's fixed flow-client (upload retry + copy threshold 0.5).
-import { FlowClient } from '../../../packages/flow-mcp/src/flow-client'
+import { FlowClient } from '../../../../../../packages/flow-mcp/src/flow-client'
 const M = '/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/'
 export const JOBS = [
   { out: 'JS3-top.jpg', ref: 'PR2-c.jpg', prompt: `Leave this narrow shop aisle just as photographed and add a single presence: perched high above the tall right-hand shelving unit, pressed into the gap just under the ceiling tiles beside the strip light, something crouches folded up like a spider, long limbs bent too sharply, peering down the aisle. No face, only a smooth dark hollow where one should be. Soot-black skin split like dry tarmac, a dull ember glow in the splits, a curl of smoke. Mostly in shadow, the light only grazing one shoulder and two hooked fingers over the top shelf. Everything below and around it is untouched, with the same grain and tired, faded colour.\nThanks.` },
