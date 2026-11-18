@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS3-dash-a.jpg",
+ "made": "2026-11-18T11:46:29+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "flow_edit_image",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-c.jpg",
+ "why": "Jack 2026-11-18: a figure dashing between the aisles (Scream-like), brief; rescued from the Flow gallery because the reference-copy guard wrongly rejected it",
+ "prompt": "Keep this shop-aisle photo as framed and lit, and add one thing way down the aisle, beside the dark back doorway: a tall, thin figure caught mid-dash from one side to the other, smeared by motion blur as if the camera barely caught it. It has no face, only smooth darkness where a face should be; its body is soot-black and cracked like old tarmac, a dull ember glow in the cracks, a trail of smoke dragged behind it. It is tiny and distant, half swallowed by shadow, a thing you would only notice on a second look. The shelves, the packets, the strip lights, the basket and the floor are unchanged, with the same grain and soft, faded colour.\nThanks."
+}

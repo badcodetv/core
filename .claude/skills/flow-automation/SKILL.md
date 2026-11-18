@@ -31,6 +31,9 @@ what to put in it.
   `UPLOAD_STUCK`; if it sticks again the error lists the picker's options and a screenshot path
   (`/tmp/flow-upload-stuck/`). Read the screenshot before guessing: every stuck file so far was a still made inside the
   same project (cause unconfirmed).
+- **`REFERENCE_COPY_ONLY` on a small edit was the guard, not Flow (fixed 2026-11-18).** A figure added to a shop aisle
+  scored 1.5-2.0 on the 16x16 copy test and was thrown away at the old threshold of 3; true copies score 0.06-0.1. The
+  threshold is now 0.5 (`packages/flow-mcp/src/ref-copy.ts`). If it fires again, look in the Flow gallery before retrying.
 - **An upload that hasn't landed in 30 s is stuck.** The edit tool now fails with `UPLOAD_STUCK` after 30 s
   (it was 90 s) and closes any stuck picker overlay before the next upload.
 - **Two strikes, then switch route.** Reload (`flow_open_project`) and retry once; if the same step fails again,

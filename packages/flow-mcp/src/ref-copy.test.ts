@@ -11,7 +11,7 @@ describe('meanAbsDiff', () => {
 
 describe('isCopyOfAny', () => {
   it('flags a re-encoded copy (tiny noise)', () => {
-    const noisy = flat(120).map((v, i) => v + (i % 2))
+    const noisy = flat(120).map((v, i) => v + (i % 8 === 0 ? 1 : 0)) // ~0.125, like the measured 0.06-0.1 copies
     expect(isCopyOfAny(noisy, [flat(120)])).toBe(true)
   })
   it('passes a genuinely new image', () => expect(isCopyOfAny(flat(40), [flat(120)])).toBe(false))
@@ -19,4 +19,6 @@ describe('isCopyOfAny', () => {
   it('never flags when the print is unreadable', () => expect(isCopyOfAny(null, [flat(1)])).toBe(false))
   it('ignores unreadable references', () => expect(isCopyOfAny(flat(1), [null])).toBe(false))
   it('uses a threshold well below real-result scores', () => expect(COPY_THRESHOLD).toBeLessThan(38))
+  it('keeps a small edit (a figure added: 1.5-2.0 on 2026-11-18)', () => expect(COPY_THRESHOLD).toBeLessThan(1.5))
+  it('still catches a true copy (0.06-0.1)', () => expect(COPY_THRESHOLD).toBeGreaterThan(0.1))
 })

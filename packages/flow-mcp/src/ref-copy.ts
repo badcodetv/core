@@ -10,7 +10,9 @@ import { execFileSync } from 'node:child_process'
  * landed one call late. Flow re-encodes uploads, so a copy is never byte-identical; compare a tiny greyscale
  * thumbnail instead. Measured: copies scored 0.1, real results 38-112 (mean absolute difference, 0-255).
  */
-export const COPY_THRESHOLD = 3
+// 2026-11-18 (Malevolent Force): an edit that adds only a small figure scored 1.5-2.0 and was thrown away as a copy
+// at the old threshold of 3; true copies scored 0.06 that day (0.1 on 2026-11-17). 0.5 sits between the two.
+export const COPY_THRESHOLD = 0.5
 
 const SIDE = 16
 
