@@ -81,3 +81,9 @@
   an apology for ending humanity will fall flat so, moving on"), asked to shorten line 4, picked 5c. Rough cut 4
   (`hello_cut_r3.py --voice bham --fig fig-b2`, 37.8 s, flashes pass, -14 LUFS) on the timeline page; line 4 options round 8.
   Also: "the AI takeover stuff is a bit boring and flat… could be raw footage": find-footage search for real automation footage.
+- **2026-11-18, round 8 + timeline r4 notes (`feedback/timeline-r4/`):** line 4 → **4b** ("Go on. Worst-case scenario? I'll be
+  patiently waiting to correct your bullshit."). At 00:17:07 (reel): "the clips from here on, are a bit ai slop and boring, please
+  use unsplash to make new ones also use real footage". At 00:33:18: "this is where the logo should appear, maybe make the logo
+  appear the way the netflix logo does, but in a badcode way". Done: Unsplash search, 50 real photos in `<media>/reference/unsplash/`
+  (`refs-picks.json`; the opening's old one kept as `refs-picks-opening-r1.json`); three logo reveals (`scripts/shorts/logo_reveal.py`,
+  `<media>/cut/logo/`) on picks round 9. Real automation footage search still running.

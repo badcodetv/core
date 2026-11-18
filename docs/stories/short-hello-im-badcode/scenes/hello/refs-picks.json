@@ -10,225 +10,326 @@
    "groups": [
     {
      "slot": "ref-1",
-     "title": "empty shopping mall fountain",
+     "title": "self checkout machines",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "vXvC6upalkc",
-       "src": "unsplash/vXvC6upalkc.jpg",
-       "label": "A large indoor water fountain with a glass dome ceiling in a · Christian"
+       "id": "PlIxH13NGL8",
+       "src": "unsplash/PlIxH13NGL8.jpg",
+       "label": "A checkout counter with a cell phone on it · Brett Wharton"
       },
       {
-       "id": "znLQcl6QgdQ",
-       "src": "unsplash/znLQcl6QgdQ.jpg",
-       "label": "A building with a fountain in front of it · Matti Rusch"
+       "id": "2sXLRagm-i8",
+       "src": "unsplash/2sXLRagm-i8.jpg",
+       "label": "a row of vending machines sitting inside of a building · Solomon Asare"
       },
       {
-       "id": "6S5cK7pFaaM",
-       "src": "unsplash/6S5cK7pFaaM.jpg",
-       "label": "People gathered around a fountain in a modern building · Sameep Adhikari"
+       "id": "FYPyfTxBfKU",
+       "src": "unsplash/FYPyfTxBfKU.jpg",
+       "label": "a close up of a machine with a hat on top of it · Jonathan Cooper"
       },
       {
-       "id": "gFmFt6sTIy8",
-       "src": "unsplash/gFmFt6sTIy8.jpg",
-       "label": "A large golden decorative structure under a domed ceiling in · Sabhyata Sahu"
+       "id": "aRYoTlxr5wE",
+       "src": "unsplash/aRYoTlxr5wE.jpg",
+       "label": "Shopping cart and bedding aisle at target store · Zoshua Colah"
+      },
+      {
+       "id": "K94eoUpU3bw",
+       "src": "unsplash/K94eoUpU3bw.jpg",
+       "label": "a few cash register machines · John Paul Cuvinar"
       }
      ]
     },
     {
      "slot": "ref-2",
-     "title": "ice cream van evening",
+     "title": "delivery robot on pavement",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "PmmpX-KKoPk",
-       "src": "unsplash/PmmpX-KKoPk.jpg",
-       "label": "blue and orange bus on road during daytime · Nik"
+       "id": "bEkTD2fb1vA",
+       "src": "unsplash/bEkTD2fb1vA.jpg",
+       "label": "A red scooter parked next to a tree on a sidewalk · Marco J Haenssgen"
       },
       {
-       "id": "f8t_ODQx4pY",
-       "src": "unsplash/f8t_ODQx4pY.jpg",
-       "label": "a couple of people standing outside of a food stand · Belkaa Photographer"
+       "id": "_JAyZU1R4V4",
+       "src": "unsplash/_JAyZU1R4V4.jpg",
+       "label": "A cart with colorful balloon animals on a city street · Arlind Photography"
       },
       {
-       "id": "OYYcadaidGI",
-       "src": "unsplash/OYYcadaidGI.jpg",
-       "label": "A couple of people holding ice cream cones in their hands · Toa Heftiba"
+       "id": "Nl2FaPyg2AA",
+       "src": "unsplash/Nl2FaPyg2AA.jpg",
+       "label": "A solitary scooter rests on a sunlit sidewalk · Arlind Photography"
       },
       {
-       "id": "BgeOsHVZzDk",
-       "src": "unsplash/BgeOsHVZzDk.jpg",
-       "label": "white food bus · Kazden Cattapan"
+       "id": "OU3Xz7eNHMM",
+       "src": "unsplash/OU3Xz7eNHMM.jpg",
+       "label": "White chess knight on an outdoor concrete chessboard · Arjun Raj"
+      },
+      {
+       "id": "46ueiSJorik",
+       "src": "unsplash/46ueiSJorik.jpg",
+       "label": "A street cleaner sweeps a sidewalk with a broom · Indra Projects"
       }
      ]
     },
     {
      "slot": "ref-3",
-     "title": "fireworks over city night",
+     "title": "cctv cameras",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "OUSa9MU4zZc",
-       "src": "unsplash/OUSa9MU4zZc.jpg",
-       "label": "selective focus photography of fireworks display at night · Andreas Rasmussen"
+       "id": "a40akJxBhT8",
+       "src": "unsplash/a40akJxBhT8.jpg",
+       "label": "A tall pole mounted with multiple Panomera surveillance came · Milan Malkomes"
       },
       {
-       "id": "EMUbtumRDuY",
-       "src": "unsplash/EMUbtumRDuY.jpg",
-       "label": "fireworks in the sky over a city · Tron Le"
+       "id": "9naPgAUBo2g",
+       "src": "unsplash/9naPgAUBo2g.jpg",
+       "label": "white and black corded device · Oxa Roxa"
       },
       {
-       "id": "w67DBLpptrQ",
-       "src": "unsplash/w67DBLpptrQ.jpg",
-       "label": "a city street filled with lots of traffic and fireworks · leoon liang"
+       "id": "ujSsIk5iZmA",
+       "src": "unsplash/ujSsIk5iZmA.jpg",
+       "label": "a security camera mounted to the ceiling of a building · Franck V."
       },
       {
-       "id": "kz4Yb-394R0",
-       "src": "unsplash/kz4Yb-394R0.jpg",
-       "label": "a city street filled with lots of traffic and fireworks · leoon liang"
+       "id": "42t-DKecmPk",
+       "src": "unsplash/42t-DKecmPk.jpg",
+       "label": "white and gray metal pipe · Arno Senoner"
+      },
+      {
+       "id": "oRZDnS2QkuE",
+       "src": "unsplash/oRZDnS2QkuE.jpg",
+       "label": "two bullet security camera attached on wall · Victor"
       }
      ]
     },
     {
      "slot": "ref-4",
-     "title": "seaside pier summer",
+     "title": "data center construction",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "PoiT3Aj5uMs",
-       "src": "unsplash/PoiT3Aj5uMs.jpg",
-       "label": "a pier with a few birds flying over it · Shawn"
+       "id": "zFYUsLk_50Y",
+       "src": "unsplash/zFYUsLk_50Y.jpg",
+       "label": "electronic wire lot · Massimo Botturi"
       },
       {
-       "id": "gijV5rJzHHY",
-       "src": "unsplash/gijV5rJzHHY.jpg",
-       "label": "brown wooden dock on sea during daytime · Brandi Alexandra"
+       "id": "k27hkqXuveo",
+       "src": "unsplash/k27hkqXuveo.jpg",
+       "label": "Two server racks filled with electronic components and wires · Eric Stoynov"
       },
       {
-       "id": "ir5EjgsEi_U",
-       "src": "unsplash/ir5EjgsEi_U.jpg",
-       "label": "People on a concrete pier extending into the sparkling ocean · Rafael Padeiro"
+       "id": "UfR_yqIcd4g",
+       "src": "unsplash/UfR_yqIcd4g.jpg",
+       "label": "Two blue cabinets filled with complex electronic components · Eric Stoynov"
       },
       {
-       "id": "I6Mq_9jYsbM",
-       "src": "unsplash/I6Mq_9jYsbM.jpg",
-       "label": "A long pier extends into the calm ocean at sunset · Rafael Padeiro"
+       "id": "UEx6fTODHzI",
+       "src": "unsplash/UEx6fTODHzI.jpg",
+       "label": "Industrial control panel with electronic modules and colorfu · Raymond Sime"
+      },
+      {
+       "id": "UpkcO_xS5k0",
+       "src": "unsplash/UpkcO_xS5k0.jpg",
+       "label": "Server rack filled with network and electronic equipment · Valentin Lacoste"
       }
      ]
     },
     {
      "slot": "ref-5",
-     "title": "dolphins jumping ocean",
+     "title": "warehouse robots",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "wN6EybHR2x8",
-       "src": "unsplash/wN6EybHR2x8.jpg",
-       "label": "2 dolphins in the water · Jonas Von Werne"
+       "id": "Y7tc66X79UI",
+       "src": "unsplash/Y7tc66X79UI.jpg",
+       "label": "a man working on a machine in a factory · Luna Dai"
       },
       {
-       "id": "qtHhv2NE1Vo",
-       "src": "unsplash/qtHhv2NE1Vo.jpg",
-       "label": "a group of dolphins swimming in the ocean · redcharlie"
+       "id": "bTZ7CLhJ-AU",
+       "src": "unsplash/bTZ7CLhJ-AU.jpg",
+       "label": "a robot sitting on the ground in front of a bus · aranprime"
       },
       {
-       "id": "CBgNSqjHfQM",
-       "src": "unsplash/CBgNSqjHfQM.jpg",
-       "label": "Two dolphins leaping out of blue water · Marian Florinel Condruz"
+       "id": "R2Rt_syeB7M",
+       "src": "unsplash/R2Rt_syeB7M.jpg",
+       "label": "Workers sort fish in orange crates at a processing plant · Bernd 📷 Dittrich"
       },
       {
-       "id": "x6EBznor9yk",
-       "src": "unsplash/x6EBznor9yk.jpg",
-       "label": "A whale is jumping out of the water · Nina Schneider"
+       "id": "3swGCOgTdV0",
+       "src": "unsplash/3swGCOgTdV0.jpg",
+       "label": "a snow covered bridge with a red flag on top of it · Kseniia Zapiatkina"
+      },
+      {
+       "id": "1Mwdhdj57Hc",
+       "src": "unsplash/1Mwdhdj57Hc.jpg",
+       "label": "a red light is on in the middle of a room · Klara Kulikova"
       }
      ]
     },
     {
      "slot": "ref-6",
-     "title": "ferris wheel dusk",
+     "title": "empty office at night",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "w2KG8YFf2IM",
-       "src": "unsplash/w2KG8YFf2IM.jpg",
-       "label": "Ferris Wheel under blue sky · Vincent Camacho"
+       "id": "sEdGIL-MpqU",
+       "src": "unsplash/sEdGIL-MpqU.jpg",
+       "label": "an empty room with a bench in the middle of it · yaman zaareer"
       },
       {
-       "id": "q7CVii-ThRg",
-       "src": "unsplash/q7CVii-ThRg.jpg",
-       "label": "a large ferris wheel sitting on top of a snow covered field · Steven Wright"
+       "id": "P6GD-V1CIDA",
+       "src": "unsplash/P6GD-V1CIDA.jpg",
+       "label": "a room with a table and a chair in it · SungGeun Hwang"
       },
       {
-       "id": "096fgwrtBQ0",
-       "src": "unsplash/096fgwrtBQ0.jpg",
-       "label": "ferris wheel under cloudy sky during sunset · Hugo Clément"
+       "id": "hQEvJZ2FWVM",
+       "src": "unsplash/hQEvJZ2FWVM.jpg",
+       "label": "A room with a long table and a large window · Annie Spratt"
       },
       {
-       "id": "aZQl6O07P4c",
-       "src": "unsplash/aZQl6O07P4c.jpg",
-       "label": "Ferris wheel · Wesley Tingey"
+       "id": "0_Hp9s_hW6g",
+       "src": "unsplash/0_Hp9s_hW6g.jpg",
+       "label": "Dark building facade with illuminated windows at night · Matthew Dlr"
+      },
+      {
+       "id": "uXmbzYj2qtg",
+       "src": "unsplash/uXmbzYj2qtg.jpg",
+       "label": "Dark building facade with illuminated windows at night · LISK OBE"
       }
      ]
     },
     {
      "slot": "ref-7",
-     "title": "arcade machines neon",
+     "title": "drone in the sky",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "QVN5ydW0k1k",
-       "src": "unsplash/QVN5ydW0k1k.jpg",
-       "label": "Retro Arcade cabinet · Benjamin Szabo"
+       "id": "fOF3v1VDouw",
+       "src": "unsplash/fOF3v1VDouw.jpg",
+       "label": "a white and black remote controlled flying over a field · Lukáš Vaňátko"
       },
       {
-       "id": "ma-N9sW3sx8",
-       "src": "unsplash/ma-N9sW3sx8.jpg",
-       "label": "assorted-color arcade machines · Soheb Zaidi"
+       "id": "6G0QHoGS_kQ",
+       "src": "unsplash/6G0QHoGS_kQ.jpg",
+       "label": "A man flying through the air while riding a bike · Andri Aeschlimann"
       },
       {
-       "id": "UKZdwm4ngiY",
-       "src": "unsplash/UKZdwm4ngiY.jpg",
-       "label": "lighted arcade machines · George Lakos"
+       "id": "uln2oLjaprc",
+       "src": "unsplash/uln2oLjaprc.jpg",
+       "label": "man in blue jacket looking at gray drone · Tandem X Visuals"
       },
       {
-       "id": "siMO8TWzLYM",
-       "src": "unsplash/siMO8TWzLYM.jpg",
-       "label": "arcade machines lot · Kyle Nieber"
+       "id": "82Kd_0xSLaU",
+       "src": "unsplash/82Kd_0xSLaU.jpg",
+       "label": "grey mountain during daytime · Mo Rashidi"
+      },
+      {
+       "id": "tcpqjLXa9S8",
+       "src": "unsplash/tcpqjLXa9S8.jpg",
+       "label": "a close up of a camera attached to a device · Gabriel Mihalcea"
       }
      ]
     },
     {
      "slot": "ref-8",
-     "title": "trampoline garden summer",
+     "title": "people looking at phones",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "QNdhnUeodWs",
-       "src": "unsplash/QNdhnUeodWs.jpg",
-       "label": "a person jumping in the air on a trampoline · Kevin Woblick"
+       "id": "q9dg0vrPgnM",
+       "src": "unsplash/q9dg0vrPgnM.jpg",
+       "label": "Two women looking at a smartphone at a smartphone · Valentin"
       },
       {
-       "id": "yAhGpsat9gY",
-       "src": "unsplash/yAhGpsat9gY.jpg",
-       "label": "a little girl that is standing on a trampoline · Richard Stachmann"
+       "id": "7oDY0oTiPkI",
+       "src": "unsplash/7oDY0oTiPkI.jpg",
+       "label": "People using smartphones while leaning against a brick wall  · Lee Eden"
       },
       {
-       "id": "Ng_Kl7K6V8Y",
-       "src": "unsplash/Ng_Kl7K6V8Y.jpg",
-       "label": "person wearing red and black flip flops · Jasper Garratt"
+       "id": "qomP9n-hJYQ",
+       "src": "unsplash/qomP9n-hJYQ.jpg",
+       "label": "Two women standing by a car, looking at their phones · Eduard Pretsi"
       },
       {
-       "id": "GJT3IY9jFIw",
-       "src": "unsplash/GJT3IY9jFIw.jpg",
-       "label": "Young girl jumping on a trampoline outdoors · Dominic Chasse"
+       "id": "milGaRyN54M",
+       "src": "unsplash/milGaRyN54M.jpg",
+       "label": "Three men looking at their phones outdoors · Will Haddock"
+      },
+      {
+       "id": "Sti5RV6Z8iA",
+       "src": "unsplash/Sti5RV6Z8iA.jpg",
+       "label": "Two people sitting on a couch with phones · Haberdoedas"
+      }
+     ]
+    },
+    {
+     "slot": "ref-9",
+     "title": "self driving car",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Ddjl0Cicdr4",
+       "src": "unsplash/Ddjl0Cicdr4.jpg",
+       "label": "interior view of Tesla car · Roberto Nickson"
+      },
+      {
+       "id": "-exfbuYFstk",
+       "src": "unsplash/-exfbuYFstk.jpg",
+       "label": "a police car parked in front of a building · Timo Wielink"
+      },
+      {
+       "id": "BOUihMiliyk",
+       "src": "unsplash/BOUihMiliyk.jpg",
+       "label": "a multicolored car parked on the side of the road · Timo Wielink"
+      },
+      {
+       "id": "WVk5utkN__A",
+       "src": "unsplash/WVk5utkN__A.jpg",
+       "label": "a car parked on the side of the road · Amar A"
+      },
+      {
+       "id": "eVHrw9tk9VI",
+       "src": "unsplash/eVHrw9tk9VI.jpg",
+       "label": "a car parked on the side of the road · Timo Wielink"
+      }
+     ]
+    },
+    {
+     "slot": "ref-10",
+     "title": "server room cables",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "knUZi7dzb58",
+       "src": "unsplash/knUZi7dzb58.jpg",
+       "label": "man in blue denim button up shirt standing beside white meta · Sammyayot254"
+      },
+      {
+       "id": "ufT32_VFS-I",
+       "src": "unsplash/ufT32_VFS-I.jpg",
+       "label": "Technician working on server equipment with tools · Valentin Lacoste"
+      },
+      {
+       "id": "Au6-AcBY-rg",
+       "src": "unsplash/Au6-AcBY-rg.jpg",
+       "label": "A technician works on a server rack with electronic equipmen · Valentin Lacoste"
+      },
+      {
+       "id": "UpkcO_xS5k0",
+       "src": "unsplash/UpkcO_xS5k0.jpg",
+       "label": "Server rack filled with network and electronic equipment · Valentin Lacoste"
       }
      ]
     }

@@ -1,0 +1,238 @@
+{
+ "title": "Hello, I'm BadCode Look Refs",
+ "eyebrow": "Hello, I'm BadCode · look references",
+ "heading": "Hello, I'm BadCode: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "empty shopping mall fountain",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "vXvC6upalkc",
+       "src": "unsplash/vXvC6upalkc.jpg",
+       "label": "A large indoor water fountain with a glass dome ceiling in a · Christian"
+      },
+      {
+       "id": "znLQcl6QgdQ",
+       "src": "unsplash/znLQcl6QgdQ.jpg",
+       "label": "A building with a fountain in front of it · Matti Rusch"
+      },
+      {
+       "id": "6S5cK7pFaaM",
+       "src": "unsplash/6S5cK7pFaaM.jpg",
+       "label": "People gathered around a fountain in a modern building · Sameep Adhikari"
+      },
+      {
+       "id": "gFmFt6sTIy8",
+       "src": "unsplash/gFmFt6sTIy8.jpg",
+       "label": "A large golden decorative structure under a domed ceiling in · Sabhyata Sahu"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "ice cream van evening",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "PmmpX-KKoPk",
+       "src": "unsplash/PmmpX-KKoPk.jpg",
+       "label": "blue and orange bus on road during daytime · Nik"
+      },
+      {
+       "id": "f8t_ODQx4pY",
+       "src": "unsplash/f8t_ODQx4pY.jpg",
+       "label": "a couple of people standing outside of a food stand · Belkaa Photographer"
+      },
+      {
+       "id": "OYYcadaidGI",
+       "src": "unsplash/OYYcadaidGI.jpg",
+       "label": "A couple of people holding ice cream cones in their hands · Toa Heftiba"
+      },
+      {
+       "id": "BgeOsHVZzDk",
+       "src": "unsplash/BgeOsHVZzDk.jpg",
+       "label": "white food bus · Kazden Cattapan"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "fireworks over city night",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "OUSa9MU4zZc",
+       "src": "unsplash/OUSa9MU4zZc.jpg",
+       "label": "selective focus photography of fireworks display at night · Andreas Rasmussen"
+      },
+      {
+       "id": "EMUbtumRDuY",
+       "src": "unsplash/EMUbtumRDuY.jpg",
+       "label": "fireworks in the sky over a city · Tron Le"
+      },
+      {
+       "id": "w67DBLpptrQ",
+       "src": "unsplash/w67DBLpptrQ.jpg",
+       "label": "a city street filled with lots of traffic and fireworks · leoon liang"
+      },
+      {
+       "id": "kz4Yb-394R0",
+       "src": "unsplash/kz4Yb-394R0.jpg",
+       "label": "a city street filled with lots of traffic and fireworks · leoon liang"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "seaside pier summer",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "PoiT3Aj5uMs",
+       "src": "unsplash/PoiT3Aj5uMs.jpg",
+       "label": "a pier with a few birds flying over it · Shawn"
+      },
+      {
+       "id": "gijV5rJzHHY",
+       "src": "unsplash/gijV5rJzHHY.jpg",
+       "label": "brown wooden dock on sea during daytime · Brandi Alexandra"
+      },
+      {
+       "id": "ir5EjgsEi_U",
+       "src": "unsplash/ir5EjgsEi_U.jpg",
+       "label": "People on a concrete pier extending into the sparkling ocean · Rafael Padeiro"
+      },
+      {
+       "id": "I6Mq_9jYsbM",
+       "src": "unsplash/I6Mq_9jYsbM.jpg",
+       "label": "A long pier extends into the calm ocean at sunset · Rafael Padeiro"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "dolphins jumping ocean",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "wN6EybHR2x8",
+       "src": "unsplash/wN6EybHR2x8.jpg",
+       "label": "2 dolphins in the water · Jonas Von Werne"
+      },
+      {
+       "id": "qtHhv2NE1Vo",
+       "src": "unsplash/qtHhv2NE1Vo.jpg",
+       "label": "a group of dolphins swimming in the ocean · redcharlie"
+      },
+      {
+       "id": "CBgNSqjHfQM",
+       "src": "unsplash/CBgNSqjHfQM.jpg",
+       "label": "Two dolphins leaping out of blue water · Marian Florinel Condruz"
+      },
+      {
+       "id": "x6EBznor9yk",
+       "src": "unsplash/x6EBznor9yk.jpg",
+       "label": "A whale is jumping out of the water · Nina Schneider"
+      }
+     ]
+    },
+    {
+     "slot": "ref-6",
+     "title": "ferris wheel dusk",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "w2KG8YFf2IM",
+       "src": "unsplash/w2KG8YFf2IM.jpg",
+       "label": "Ferris Wheel under blue sky · Vincent Camacho"
+      },
+      {
+       "id": "q7CVii-ThRg",
+       "src": "unsplash/q7CVii-ThRg.jpg",
+       "label": "a large ferris wheel sitting on top of a snow covered field · Steven Wright"
+      },
+      {
+       "id": "096fgwrtBQ0",
+       "src": "unsplash/096fgwrtBQ0.jpg",
+       "label": "ferris wheel under cloudy sky during sunset · Hugo Clément"
+      },
+      {
+       "id": "aZQl6O07P4c",
+       "src": "unsplash/aZQl6O07P4c.jpg",
+       "label": "Ferris wheel · Wesley Tingey"
+      }
+     ]
+    },
+    {
+     "slot": "ref-7",
+     "title": "arcade machines neon",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "QVN5ydW0k1k",
+       "src": "unsplash/QVN5ydW0k1k.jpg",
+       "label": "Retro Arcade cabinet · Benjamin Szabo"
+      },
+      {
+       "id": "ma-N9sW3sx8",
+       "src": "unsplash/ma-N9sW3sx8.jpg",
+       "label": "assorted-color arcade machines · Soheb Zaidi"
+      },
+      {
+       "id": "UKZdwm4ngiY",
+       "src": "unsplash/UKZdwm4ngiY.jpg",
+       "label": "lighted arcade machines · George Lakos"
+      },
+      {
+       "id": "siMO8TWzLYM",
+       "src": "unsplash/siMO8TWzLYM.jpg",
+       "label": "arcade machines lot · Kyle Nieber"
+      }
+     ]
+    },
+    {
+     "slot": "ref-8",
+     "title": "trampoline garden summer",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "QNdhnUeodWs",
+       "src": "unsplash/QNdhnUeodWs.jpg",
+       "label": "a person jumping in the air on a trampoline · Kevin Woblick"
+      },
+      {
+       "id": "yAhGpsat9gY",
+       "src": "unsplash/yAhGpsat9gY.jpg",
+       "label": "a little girl that is standing on a trampoline · Richard Stachmann"
+      },
+      {
+       "id": "Ng_Kl7K6V8Y",
+       "src": "unsplash/Ng_Kl7K6V8Y.jpg",
+       "label": "person wearing red and black flip flops · Jasper Garratt"
+      },
+      {
+       "id": "GJT3IY9jFIw",
+       "src": "unsplash/GJT3IY9jFIw.jpg",
+       "label": "Young girl jumping on a trampoline outdoors · Dominic Chasse"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
