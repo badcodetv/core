@@ -60,11 +60,12 @@ def main():
     ap.add_argument('--voice', default='bham5')
     ap.add_argument('--fig', default='fig-b2')
     ap.add_argument('--future', default='2049')
+    ap.add_argument('--reel', default='', help="'r6': rough cut 6, the reel from picks round 11 (hello_cut_r6.py)")
     a = ap.parse_args()
-    subprocess.run([sys.executable, str(REPO / 'scripts/shorts/hello_cut_r3.py'), '--voice', a.voice, '--fig', a.fig], check=True)
-    BASE = MEDIA / 'cut' / f'r3-{a.voice}-{a.fig}'
+    subprocess.run([sys.executable, str(REPO / 'scripts/shorts/hello_cut_r3.py'), '--voice', a.voice, '--fig', a.fig, '--reel', a.reel], check=True)
+    BASE = MEDIA / 'cut' / (f'r3-{a.voice}-{a.fig}' + (f'-{a.reel}' if a.reel else ''))
     edl = json.loads((BASE / 'edl.json').read_text())
-    CUT = MEDIA / 'cut' / 'r5'; CUT.mkdir(parents=True, exist_ok=True)
+    CUT = MEDIA / 'cut' / (a.reel or 'r5'); CUT.mkdir(parents=True, exist_ok=True)
     WORK = CUT / '_scratch'; WORK.mkdir(exist_ok=True)
     said = [(e['t'], e['dur']) for e in edl['events'] if e['stem'] == 'vox-badcode']
     t_logo = round(said[3][0] + LOGO_AT, 3)
@@ -132,6 +133,14 @@ def main():
                 'total': total, 'video': keep,
                 'events': [dict(e, what=LINES[2]) if e['stem'] == 'vox-badcode' and e['what'].startswith("What's your") else e for e in edl['events']] + [{'stem': 'sfx-thump', 't': t_logo, 'dur': 1.4, 'what': 'the logo thump (made in logo_reveal.py)', 'src': str(REVEAL)}],
                 'audio': edl['audio'] + [{'track': 'A3', 'name': 'sfx-thump', 'file': str(REVEAL)}]})
+    if a.reel == 'r6':
+        edl.update({'sequence': 'short-hello-im-badcode-1-hello-r6', 'heading': "BadCode Shorts ▲ Hello, I'm BadCode, rough cut 6",
+                    'intro': ("Rough cut 5 with your round-11 picks in the reel: no Flow stills left. Six real pictures (the London robotaxi "
+                              "and the lollipop man, the delivery robot, the war drone, the camera pole, the tip screen, the hobby drone) "
+                              "between the real disaster footage, bright to dark. Note anything.")})
+        edl['flags'] = [f for f in edl['flags'] if not f.startswith('Flow-made')] + [
+            'The three Commons pictures are from the thumbnail server (the originals host rate-limited us): fetch the originals before the final export.',
+            'Unsplash photos are credited in the description as a courtesy (the Unsplash licence does not require it).']
     edl['flags'] = edl['flags'] + [f'The future date on BadCode ({a.future}) is a guess: nothing in the canon fixes the year. Say the year.',
                                    'Captions are timed by spreading each line across its spoken words (whisper word times), in groups of three.']
     (CUT / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))

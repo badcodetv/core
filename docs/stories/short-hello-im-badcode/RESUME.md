@@ -1,6 +1,6 @@
 # Hello, I'm BadCode (short #17): resume
 
-**State 2026-11-18 eve: rough cut 5** (38.05 s; built by `scripts/shorts/hello_cut_r5.py`) on the timeline page https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP.
+**State 2026-11-18 eve: rough cut 6** (37.05 s; `python3 scripts/shorts/hello_cut_r5.py --reel r6`) on the timeline page https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP.
 Picks page (rounds 1-8): https://claude.ai/artifact/NcX2aNGxH65LjjMdXs2oxa. Full log: `scenes/hello/picks.md`.
 
 **Locked by Jack:**
@@ -18,12 +18,10 @@ reveal f at 33.75 s, captions, the camcorder stamp and the loop). Logo reveals: 
 
 **Next:**
 1. Line 1 listen check still open: the "Ahhh" may sound like "Nah".
-2. **Reel to real footage, round 11 is on the picks page** (12 theme rows: Commons footage A01-A49 + Unsplash `U-…`; log in
-   `scenes/hello/picks.md`). Next: dump `picks` into `feedback/picks-r11/`, read slots `reel11-*` and their notes (extras named in notes),
-   then download ONLY the picked Commons originals into `footage/automation/` (one at a time, 4 s apart, stop on 429; direct URLs
-   in `research/footage-automation-shortlist.md`, sha1 check), watch each video for an in-point and a clean 9:16 crop, give the
-   picked Unsplash photos a little Flow movement (nothing added to the picture), order bright to dark, 0.5 s each, and build rough cut 6.
-   Credits into the description list.
+2. **Reel done in rough cut 6** (Jack's round-11 picks; no Flow stills left). Next: read the timeline round-6 notes (dump `notes` into
+   `feedback/timeline-r6/`). Before the final export: fetch the full-size originals of A04, A05 (Commons) and the A29 video (pick a clean
+   8 s frame or a moving stretch) when Wikimedia stops returning 429 (direct URLs in `research/footage-automation-shortlist.md`).
+   Credits for the description: in the cut's `edl.json` flags.
 3. Done in rough cut 5: captions, date stamp, loop, logo f. Jack: forget where "what to do next" leads; no new reel sound.
    Open: the future year on the stamp (2049 is a guess).
 4. Then Premiere (new sequence), Drive (agreed list), gatekeeper before anything goes out. Nothing is uploaded yet.

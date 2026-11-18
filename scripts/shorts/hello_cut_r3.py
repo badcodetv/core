@@ -46,8 +46,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--voice', default='a-sadaltager')
     ap.add_argument('--fig', default='fig-a')
+    ap.add_argument('--reel', default='', help="'r6': rough cut 6's reel (picks round 11's real pictures, no Flow stills)")
     a = ap.parse_args()
-    CUT = MEDIA / 'cut' / f'r3-{a.voice}-{a.fig}'; CUT.mkdir(parents=True, exist_ok=True)
+    if a.reel == 'r6':
+        r1.hello_cut_r6_crops(); r1.SHOTS = r1.SHOTS_R6
+    CUT = MEDIA / 'cut' / (f'r3-{a.voice}-{a.fig}' + (f'-{a.reel}' if a.reel else '')); CUT.mkdir(parents=True, exist_ok=True)
     WORK = CUT / '_scratch'; WORK.mkdir(exist_ok=True)
     raw = [MEDIA / f'audio/casting/badcode-{a.voice}-l{i}.wav' for i in range(1, 5)]
     vo = []
@@ -82,7 +85,7 @@ def main():
         last = i >= len(r1.SHOTS) - 3
         d = r1.REEL + (r1.SLOW / 3 if last else 0)
         out = WORK / f'p{i + 20:02d}-{key}.mp4'
-        r1.seg(src, tin, out, d, speed=0.5 if last else 1.0) if kind == 'v' else r1.push(src, out, d, 1.0, 1.10)
+        r1.seg(src, tin, out, d, speed=0.5 if last else 1.0) if kind == 'v' else r1.push(src, out, d, 1.0, 1.04 if a.reel else 1.10)  # r6: a gentler push; 1.10 brightened mid-shot and failed the flashing gate
         add(out, d, 'horror', src, 'AI-made (Flow) still' if kind == 'f' else f'real footage, {credit}')
     reel_end = t
     back_d = round(vd[2] + 1.0, 2)
@@ -120,7 +123,7 @@ def main():
     ln = lambda i: {'i': 0, 'who': 'badcode', 'name': f'BadCode ({a.voice})', 't': dict(said)[i], 'dur': round(vd[i], 3), 'text': LINES[i], 'by': BY[i]}
     beats = [{'id': 'hello', 'title': 'A. "Ahhh, the good ol\' days…"', 'start': span('hello')[0], 'dur': span('hello')[1], 'see': 'Real 2000s footage: the skatepark at dusk, harbour fireworks, the neon arcade.', 'lines': [ln(0)]},
              {'id': 'figure', 'title': 'B. "…so, moving on."', 'start': span('figure')[0], 'dur': span('figure')[1], 'see': 'BadCode in the launderette, moving.', 'lines': [ln(1)]},
-             {'id': 'horror', 'title': 'C. The horror reel', 'start': span('horror')[0], 'dur': span('horror')[1], 'see': 'Real footage and Flow gap stills; the music dies.', 'lines': []},
+             {'id': 'horror', 'title': 'C. The horror reel', 'start': span('horror')[0], 'dur': span('horror')[1], 'see': 'Real footage and real photos (no Flow); the music dies.' if a.reel else 'Real footage and Flow gap stills; the music dies.', 'lines': []},
              {'id': 'back', 'title': "D. Jack's line", 'start': span('back')[0], 'dur': span('back')[1], 'see': 'Back to BadCode, closer, no music.', 'lines': [ln(2)]},
              {'id': 'button', 'title': 'E. "This time, I\'m helping." + logo', 'start': span('button')[0], 'dur': span('button')[1], 'see': 'Black, the line, the logo.', 'lines': [ln(3)]}]
     credits = sorted({r['note'].split('real footage, ')[1] for r in rows if 'real footage, ' in r['note']} |

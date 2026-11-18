@@ -103,3 +103,12 @@
   metadata `research/footage-automation-items.json`, keys A01-A49), beside the 50 Unsplash photos (`refs-picks.json`, ids `U-<unsplash id>`),
   in 12 theme rows. Flagged by eye from the thumbnails: faces (A17, A19, A30, A32, ref-8 all, ref-10 a/b, ref-7 c), burned-in logos or
   captions (A14, A21, A22, A29), gore (A34). Videos were judged on one frame only.
+- **2026-11-18 eve, Jack's round-11 picks (`feedback/picks-r11/`, no notes):** robotaxi **A04** (Waymo stopped by a lollipop man, London),
+  delivery **A05** (Starship robot at a crossing), war drones **A29** (UAS munitions drop, Poland), cameras **U-a40akJxBhT8** (Panomera
+  pole, Milan Malkomes), checkout **U-PlIxH13NGL8** (the "Add Tip?" kiosk, Brett Wharton), sky drones **U-6G0QHoGS_kQ** (hobby FPV drone,
+  Andri Aeschlimann). Six other rows left empty.
+- **2026-11-18 eve, rough cut 6** (`hello_cut_r5.py --reel r6`, `<media>/cut/r6/`, 37.05 s): the six replace all eight Flow stills; the
+  real disaster footage stays; 20 shots. Wikimedia's originals host 429'd again, so the Commons three are thumbnail-server copies
+  (A04 1920 px, A05 3840 px, A29 a 1920 px frame at 8 s; the trench shot Jack saw carries "Increased Lethality" captions from 15 to 23 s).
+  Crops in `hello_cut.py` (`R6_CROPS`), carded. Flashing: a straight brightness sort FAILED (5/s at 15.2 s); fixed by an order where nearly
+  every cut goes darker and a gentler still push in the reel (1.04, was 1.10): **pass, 2/s**. -13.9 LUFS. Timeline page round 6 (same link).

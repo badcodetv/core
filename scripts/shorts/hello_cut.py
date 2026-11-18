@@ -57,6 +57,59 @@ SHOTS = [
     ('fermilab', 's', FC / 'fermilab-racks.jpg', 0, 'Fermilab / US DOE (public domain)'),
     ('embers', 'v', FC / 'eaton-firestorm.webm', 4.5, 'USDA Forest Service (public domain)'),
 ]
+# Rough cut 6 (picks round 11, 2026-11-18): Jack's six real pictures replace the eight Flow stills ("the clips from here on
+# are a bit AI slop and boring… use unsplash… also use real footage"). The rest of the real footage stays. Re-sorted as one
+# descent by brightness, ordered so nearly every cut goes darker on the pixels it changes (two small steps up): the
+# straight luma sort failed the flashing gate at 15.2 s (5 flashes/s); this order passes. The six are 9:16 crops
+# made by hello_cut_r6_crops() below: Commons previews from the thumbnail server (the originals host was rate-limited),
+# A29 a single 1920 px frame at 8 s (its 15-23 s trench shots carry the Army's burned-in captions).
+FA = MEDIA / 'footage/automation/crop'
+SHOTS_R6 = [
+    ('cams', 's', FA / 'U-a40akJxBhT8.jpg', 0, 'Milan Malkomes on Unsplash'),
+    ('fpv', 's', FA / 'U-6G0QHoGS_kQ.jpg', 0, 'Andri Aeschlimann on Unsplash'),
+    ('ruins', 'v', FC / 'lahaina-broll.webm', 744.5, 'FEMA (public domain)'),
+    ('wardrone', 's', FA / 'A29.jpg', 0, 'U.S. Army, 1ABCT-1AD, Sgt. Marquis McCants (public domain)'),
+    ('nsa', 's', FC / 'nsa-utah-dc.jpg', 0, 'EFF (CC0)'),
+    ('flood', 'v', FC / 'lagrange-flood.webm', 45.5, 'Colton Brugger, CC BY 3.0'),
+    ('waymo', 's', FA / 'A04.jpg', 0, 'Matt Brown, CC BY 4.0'),
+    ('burnt', 'v', FC / 'lahaina-broll.webm', 48.5, 'FEMA (public domain)'),
+    ('ashburn', 's', FC / 'ashburn-dcs.jpg', 0, 'Wikimedia Commons (CC0)'),
+    ('kiosk', 's', FA / 'U-PlIxH13NGL8.jpg', 0, 'Brett Wharton on Unsplash'),
+    ('car', 'v', FC / 'lahaina-broll.webm', 240.5, 'FEMA (public domain)'),
+    ('cables', 'v', FN / 'aitken-large.mp4', 104.5, 'NASA (public domain)'),
+    ('tornado', 'v', FC / 'elreno-tornado.webm', 2.0, 'Ray Bohac, CC BY 3.0'),
+    ('racks', 'v', FN / 'aitken-large.mp4', 120.5, 'NASA (public domain)'),
+    ('robot', 's', FA / 'A05.jpg', 0, 'Christopher Down, CC BY 4.0'),
+    ('robotarm', 's', FC / 'nersc-robot-arm.jpg', 0, 'Derrick Coetzee (CC0)'),
+    ('tornado2', 'v', FC / 'elreno-tornado.webm', 102.0, 'Ray Bohac, CC BY 3.0'),
+    ('eaton', 'v', FC / 'eaton-firestorm.webm', 0.3, 'USDA Forest Service (public domain)'),
+    ('fermilab', 's', FC / 'fermilab-racks.jpg', 0, 'Fermilab / US DOE (public domain)'),
+    ('embers', 'v', FC / 'eaton-firestorm.webm', 4.5, 'USDA Forest Service (public domain)'),
+]
+R6_CROPS = {  # pick: (source, box in source pixels or None), then a centre 9:16 crop
+    'A04': (MEDIA / 'footage/automation/A04.jpg', (940, 15, 1740, 1437)),  # the robotaxi's nose and the lollipop man stopping it
+    'A05': (MEDIA / 'footage/automation/A05.jpg', (2200, 0, 3820, 2880)),   # the robot at the crossing; the man left out
+    'A29': (MEDIA / 'footage/automation/A29.jpg', (300, 0, 907, 1080)),     # the drone above the smoke on the range; no caption, no bug
+    'U-a40akJxBhT8': (MEDIA / 'reference/unsplash/a40akJxBhT8.jpg', None),
+    'U-PlIxH13NGL8': (MEDIA / 'reference/unsplash/PlIxH13NGL8.jpg', None),
+    'U-6G0QHoGS_kQ': (MEDIA / 'reference/unsplash/6G0QHoGS_kQ.jpg', None),
+}
+
+
+def hello_cut_r6_crops():
+    from PIL import Image
+    FA.mkdir(parents=True, exist_ok=True)
+    for k, (src, box) in R6_CROPS.items():
+        im = Image.open(src).convert('RGB')
+        im = im.crop(box) if box else im
+        w, h = im.size
+        if w / h > 9 / 16:
+            tw = int(h * 9 / 16); im = im.crop(((w - tw) // 2, 0, (w - tw) // 2 + tw, h))
+        else:
+            th = int(w * 16 / 9); im = im.crop((0, (h - th) // 2, w, (h - th) // 2 + th))
+        im.save(FA / f'{k}.jpg', quality=95)
+
+
 HOOK, HOOK_D = MB / 'A3-a.jpg', 4.0      # placeholder: Frutiger Aero bubble meadow
 FIG, FIG_D = MB / 'B3-b.jpg', 2.9        # placeholder: the figure at the 2016 festival
 SLOW = 1.2                               # the last reel shots slow down with the music
