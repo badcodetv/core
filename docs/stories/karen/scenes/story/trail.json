@@ -26,5 +26,14 @@
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story /mnt/d/badcode-videos/karen-story/timeline/page",
   "feedback": "feedback/timeline-r2",
   "feedback_docs": 12
+ },
+ {
+  "at": "2026-11-18T17:59:42+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Round 3 notes dumped: 2 new (1:59 and 2:08, the calling-everyone sequence: pins on the map, three named managers, then a fast seasons montage); read and summarised, plan to follow",
+  "feedback": "feedback/timeline-r3",
+  "feedback_docs": 14
  }
 ]
