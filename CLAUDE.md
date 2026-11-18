@@ -45,7 +45,11 @@ only when `badcode.md` points to them.
 - **Read the board, never ask.** On any picks or notes page, dump the votes and notes yourself and act on them.
 - **Generated files leave a recipe** ([`docs/provenance/`](./docs/provenance/README.md)): the Flow MCP,
   `run.mts`, the TTS script and Suno `record` write it themselves; otherwise `scripts/provenance/prov.py card`.
-- **The same-prompt check** (`scripts/variations/fresh.py`) runs by itself before every Flow and Suno call. It
+- **Another story's example is never a recipe.** When a shared file names a story ("the Bank Robbery recipe", "Camping's
+  narrator"), that's history: never copy its wording, settings or voice into another story unless Jack or Kai asks for
+  exactly that. Write a prompt only from the story's own `badcode.md` and the engine's rules.
+- **The same-prompt check** (`scripts/variations/fresh.py`) runs by itself before every Flow, Suno and voice call, and flags
+  LEAK / MIXED STORIES when a prompt carries another story's words. It
   reports and never blocks: rewrite the repeat, or keep it on purpose and say so.
 
 ## Engines and tools: read the rules before you drive one

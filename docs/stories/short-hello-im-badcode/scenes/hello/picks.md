@@ -75,3 +75,5 @@
 - **2026-11-18, round 5 notes (`feedback/picks-r5/`):** move **b** (leans in, FG3-b2-a). Voices: "they all sound posh and too
   high pitched". Round 6: four voices made with Google voice design (one plain sentence each, ids in
   `voices/designed-voices.txt`, kept a year on Google's side) + two casual low library voices, `gemini-3.8-flash-tts`, plain.
+- **2026-11-18, round 6:** voice **b** picked (designed Birmingham, `voice_61xqq38hm0da`; in `badcode.md`). Jack asked for the lines:
+  `script-lines-r1.md`, three per beat, all rendered in his voice (`audio/lines-r1/`), round 7 on the picks page.

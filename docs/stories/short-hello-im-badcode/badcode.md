@@ -21,9 +21,11 @@ intro and channel trailer. State: rough cut 1 (24.9 s) on the timeline page; tem
 ## Sound
 - Status: Not decided — run story-style (sound.md is EMPTY).
 - Music: cinematic under the horror reel, then slows down to nothing before the last line. Current music is a temp.
-- Voice: one voice, BadCode. Current take is TEMP (Sadaltager, profile `scenes/hello/voices/temp-badcode.md`:
-  calm, very polite, far-future, deadpan and courteous). Voice casting still owed.
-- Words: only the three lines plus "Here's what to do next." No other words.
+- Voice: one voice, BadCode. **PICKED 2026-11-18 (Jack, round 6):** a Google designed voice, `voice_61xqq38hm0da`
+  ("An ordinary man in his thirties from Birmingham, low-voiced and unhurried, talking plainly like he would to a
+  neighbour."), model `gemini-3.8-flash-tts`, rendered plain: `scripts/aistudio-tts.sh <lines> <out> --plain --model
+  gemini-3.8-flash-tts --voice voice_61xqq38hm0da`. No style notes. (Rounds 1-5 sounded uncanny or posh: `scenes/hello/picks.md`.)
+- Words: script A, the confession (Jack, 2026-11-18), `scenes/hello/script-directions-r1.md`; Jack's line after the reel.
 
 ## Story-only rules
 - The balaclava follows `docs/brand/README.md`: a large white ring round the WHOLE face, the red triangle high

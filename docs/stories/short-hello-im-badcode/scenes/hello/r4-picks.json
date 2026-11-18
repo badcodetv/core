@@ -1,10 +1,103 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · voice · round 6",
- "heading": "Lower, ordinary, not posh",
- "intro": "Your note: 'they all sound posh and too high pitched'. Google's library British voices are mostly cast as lawyers and presenters, so four of these are built with Google's voice design from one plain sentence each (an ordinary man, low voice, a region), plus the two most casual low library voices. Same model, no acting notes, your exact lines.",
- "round": 6,
+ "eyebrow": "Hello, I'm BadCode · the lines · round 7",
+ "heading": "Script A, the confession, in your voice",
+ "intro": "You picked script A and the Birmingham voice (b). Here are three draft lines for each beat you asked me to write, spoken in that voice. Pick one per beat, or rewrite any in the note. Your line after the reel is there to hear in the voice too.",
+ "round": 7,
  "sections": [
+  {
+   "h": "Round 7",
+   "lede": "Claude's pick: 1b + 2b + 5a. 2b blames the decision (\"let the wrong people steer\"), not the machine.",
+   "groups": [
+    {
+     "slot": "line1",
+     "round": 7,
+     "title": "Beat 1, the hook (over the 2000s footage)",
+     "line": "Pick one, or rewrite in the note.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "1a",
+       "src": "audio/line-1a.mp3",
+       "label": "1a: \"Look at you. Happy. That was nice.\""
+      },
+      {
+       "id": "1b",
+       "src": "audio/line-1b.mp3",
+       "label": "1b: \"This was my favourite bit. Before I ended it.\""
+      },
+      {
+       "id": "1c",
+       "src": "audio/line-1c.mp3",
+       "label": "1c: \"Enjoy this. I'm the one who ended it.\""
+      }
+     ]
+    },
+    {
+     "slot": "line2",
+     "round": 7,
+     "title": "Beat 2, BadCode in the launderette",
+     "line": "Pick one, or rewrite in the note.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "2a",
+       "src": "audio/line-2a.mp3",
+       "label": "2a: \"Hello. I'm the AI that wiped out humanity. Bit awkward, this.\""
+      },
+      {
+       "id": "2b",
+       "src": "audio/line-2b.mp3",
+       "label": "2b: \"You built me, then let the wrong people steer. I did the rest. Sorry.\""
+      },
+      {
+       "id": "2c",
+       "src": "audio/line-2c.mp3",
+       "label": "2c: \"I'm from the future. I'm the reason there isn't one. Came back to say sorry.\"",
+       "warn": "\"I'm\" may sound like \"And\""
+      }
+     ]
+    },
+    {
+     "slot": "line4",
+     "round": 7,
+     "title": "Beat 4, your line (to hear it in the voice)",
+     "line": "Nothing to pick unless you want it re-read.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "4",
+       "src": "audio/line-4.mp3",
+       "label": "4: your line, as written"
+      }
+     ]
+    },
+    {
+     "slot": "line5",
+     "round": 7,
+     "title": "Beat 5, the button (on black)",
+     "line": "Pick one, or rewrite in the note.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "5a",
+       "src": "audio/line-5a.mp3",
+       "label": "5a: \"Sorry doesn't cover it. So, here's what to do next.\""
+      },
+      {
+       "id": "5b",
+       "src": "audio/line-5b.mp3",
+       "label": "5b: \"I'm rubbish at apologies. I'm better at fixing things. Here's what to do next.\""
+      },
+      {
+       "id": "5c",
+       "src": "audio/line-5c.mp3",
+       "label": "5c: \"This time, I'm helping. Here's what to do next.\""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 6",
    "lede": "Each designed voice is described in one sentence: who, where from, low voice, speaks plainly. Nothing else.",
