@@ -44,8 +44,9 @@
   to a story), and whether a reference chip left over from an earlier generation rides into the next one is
   **untested**. Use one Flow project per story; Kai's parallel-tab rework of the Flow driver is the place to
   enforce it.
-- 🔴 **Kai's machine has its own memory**, which this reset did not touch. It needs the same treatment
-  (archive it, keep it empty).
+- ✅ **Kai's machine memory** got the same treatment on 2026-11-18: archived to
+  `archive/messy-context-2026-11-17/memory-kai/` (136 files), engine rules moved into `docs/rules/` (new
+  `youtube.md`), memory emptied to one file saying rules live in the repo.
 - 🟡 **Shared engine docs still carry ~500 style words**, mostly labelled with the story they came from (voice
   names in the AI Studio guide, Suno settings measured on one story). They are read on demand, and a labelled
   example is still an example. `python3 scripts/style-lint.py --summary` lists them; fix them as they come up.
