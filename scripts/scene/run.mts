@@ -29,7 +29,8 @@ import { appendFileSync, copyFileSync, existsSync, mkdirSync, mkdtempSync, readF
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { FlowClient } from '../../packages/flow-mcp/src/flow-client'
-import { withLock, withLockAsync } from './lock'
+import { withLock } from './lock'
+import { DOWNLOAD_LOCK, withLock as withFlowLock } from '../../packages/flow-mcp/src/lock'
 
 const REPO = new URL('../..', import.meta.url).pathname
 const HERE = join(REPO, 'scripts/scene')
@@ -119,7 +120,8 @@ const allKeys = async (): Promise<Set<string>> => new Set((await topTiles(999)).
  * names by its guid, instead of trusting Playwright's download object.
  */
 async function download(i: number, out: string) {
-  await withLockAsync(join(INBOX, '.download.lock'), async () => {
+  // 2026-11-18: the machine-wide lock the Flow MCP and the Flow queue take too (they all share Chrome's one folder).
+  await withFlowLock(DOWNLOAD_LOCK, async () => {
     const tile = page.locator('flow-video-tile').nth(i)
     await tile.scrollIntoViewIfNeeded().catch(() => {})
     const ps = await page.context().newCDPSession(page)

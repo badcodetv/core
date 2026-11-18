@@ -85,8 +85,9 @@ python3 scripts/variations/round.py brief <dir>    # brief.md + writers/ideas.as
    - Suno: `python3 scripts/variations/round.py run <dir> <title> --yes` (`--only a,b` retries a
      Create that timed out, still from the stamped round). Mechanics: `suno-automation`.
    - Flow: first `python3 scripts/variations/round.py check <dir>` (verifies the gate stamp; exit 1 =
-     the round was edited, do not run it). Then one `flow_generate_image` per `round.json` prompt,
-     **text verbatim**, with that prompt's own `model` and `aspect`, count 1.
+     the round was edited, do not run it). Then one `flow_queue` call with an `image` job per `round.json`
+     prompt, **text verbatim**, with that prompt's own `model` and `aspect`, count 1 (one job per tab:
+     `docs/rules/flow.md`).
      Stills are free; video asks Kai first (`scene-animation`).
 7. **Pick, then write it back.** The human picks. The pick (its prompt verbatim, the take or media
    id, the settings) goes into the story's `sound.md` / `look.md`, and Status moves to LOCKED for

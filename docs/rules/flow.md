@@ -18,6 +18,8 @@ and gallery forward. The MCP generate tools take no project: they use whichever 
   gives each worker tab a project of its own, made once per story and listed in `<media>/video/inbox/pool.json`; they
   only ever hold that story's stills and clips, and every job that casts a Character stays on the main project (w0).
   So **every video, for every story, goes through the pool** (Jack, 2026-11-18, twice: "make that a rule for all videos going forward"), even a single clip; never `run.mts` alone, never `flow_generate_video`: `FLOW_CDP_PORT=<port> npx tsx scripts/scene/pool.mts <scene-dir>`.
+  A story's queue helper projects (`flow_queue`, below) are its own too: the queue only ever uses the helpers made
+  for the project it was given.
 - A plain `flow_generate_image` now refuses to run if a reference chip is left on the bar from an earlier call
   (`packages/flow-mcp/src/flow-client.ts`, generateImage). If it refuses, remove the chip in Flow or open a fresh project.
 
@@ -85,12 +87,42 @@ On 2026-11-05 the Flow browser was launched with `scripts/flow-chrome.sh` from a
 
 **How to apply:** if CDP on 9222 is not up, call `flow_status` first; do not launch Chrome from Bash. If a CDP attach times out, check whether the browser was started from a sandboxed shell. See `flow-unusual-activity-refresh-retry`.
 
-## Jack 2026-11-17 "remember this for next time": never send Flow MCP calls in parallel; one flow_* call per message, wait for its result, check it, then the next
+## One job per tab: a single job in the session's tab, two or more through the queue (Kai, 2026-11-18)
+
+This replaces "never send Flow MCP calls in parallel" (Jack, 2026-11-17). That rule was right about **one tab** and
+still is: two jobs in the same tab fight over its prompt box, uploads, overlays and downloads, and the results get
+crossed or lost. What changed is that we no longer have only one tab.
+
+- **One job** (a single still or edit): the ordinary `flow_*` tool, in the session's own tab. One `flow_*` call
+  per message; wait for its result and check it before the next.
+- **Two or more jobs** (a notes round that needs ten stills or edits redone, a mood board, a variations round):
+  **`flow_queue`** with the whole list. It opens up to **10 tabs**, each in a Flow project of its own, and each tab takes
+  the next job the moment it is free; jobs beyond 10 wait for a tab. Follow it with `flow_queue_status` (pass
+  `waitSeconds` to wait), check every file as it lands, and stop a run with `flow_queue_stop`.
+- **Every clip, even one** (Jack's rule above): `scripts/scene/pool.mts` (scene-animation), which runs the scene
+  runner in several tabs. It takes its tabs from the same budget of 10, so a pool and a queue together never pass 10.
+  Measured 2026-11-18: 25 Omni clips on 10 tabs in 6.9 min, about 2.3 min a clip with no slowdown at 10 tabs; ask for
+  jobs in tens so the last round isn't half empty.
+- **Never send several `flow_*` calls in one message.** They all land in the session's one tab. That is what broke
+  on 2026-11-17, and it still would. Batch them into one `flow_queue` call instead.
+
+How it stays safe (`packages/flow-mcp/src/queue-*.ts`):
+- **Each tab has its own project.** A tab finds its results by diffing its project's grid, so no two tabs ever share a
+  project at once. A story's queue work goes in that story's **helper projects** (made on first use, reused, listed in
+  `.flow-queue/helpers.json` on each machine), so it never mixes with another story or with the session's own tab.
+  A job that casts a Flow **Character** runs in the story's own project, because Characters live there; while such a run
+  is going, make no `flow_*` calls of your own in that project.
+- **Downloads can't cross.** Chrome has one download folder, and every attachment re-points it. Every attach, detach
+  and download (MCP, queue, scene runner) takes one machine-wide lock (`packages/flow-mcp/src/lock.ts`).
+- **Re-sending a run only pays for what is missing**: a job whose file is already on disk is skipped. Stills and edits
+  are retried up to 3 times on a flaky failure; a video only when nothing was submitted yet. Policy blocks and refused
+  uploads are never retried: rewrite them.
+- **Google's own limit is per account and unmeasured.** If a run shows throttling (slow or refused jobs across every
+  tab), ask for fewer `tabs`.
+
+The incident behind the original rule:
 
 On 2026-11-17 (Priority Lane round 19) three `flow_edit_image` calls sent in one message collided in the single Flow browser: two failed (a download into a missing temp file, a click blocked by another call's overlay) and one ran on into the background. Re-run one at a time, all three worked.
-
-**Why:** there is one Flow browser tab; parallel calls fight over its prompt box, uploads, overlays and downloads, and the results get crossed or lost.
-**How to apply:** one `flow_*` call per message (stills and videos alike), wait for its result, run the reference-copy / physics check, then send the next. Writers and other non-Flow work can still run in parallel. See `flow-unusual-activity-refresh-retry`, `run-flow-runner-unsandboxed`.
 
 ## Standing instruction — any research about how a Flow/Gemini engine behaves must be written into docs/google-flow/, not left in a story file or the chat.
 

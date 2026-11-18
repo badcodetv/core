@@ -23,7 +23,8 @@
 import { execFileSync, spawn } from 'node:child_process'
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { FlowClient, isPoolTab } from '../../packages/flow-mcp/src/flow-client'
+import { FlowClient, POOL_TAB_PREFIX, isPoolTab } from '../../packages/flow-mcp/src/flow-client'
+import { release, takeSlot } from '../../packages/flow-mcp/src/queue-slots'
 import { chromium } from 'playwright'
 import { planPool } from './pool-plan'
 
@@ -74,16 +75,20 @@ const projects = [CFG.flow_project as string, ...saved]
 say({ event: 'start', tabs: lanes.length, jobs: todo.length, lanes: lanes.map((l, i) => ({ worker: `w${i}`, project: projects[i], keys: l.map((s) => s.key) })) })
 
 const started = Date.now()
+// 2026-11-18: every worker tab takes a slot from the machine-wide budget the Flow queue shares (MAX_TABS = 10,
+// packages/flow-mcp/src/queue-slots.ts), so a pool and a flow_queue run together never open more than 10 tabs.
+// A worker with no free slot waits for one.
 const runs = lanes.map((lane, i) => new Promise<number>((done) => {
   if (!lane.length) return done(0)
-  setTimeout(() => {
+  setTimeout(async () => {
+    const slot = await takeSlot(`pool ${CFG.scene} w${i}`, () => say({ event: 'slot-wait', worker: `w${i}`, why: 'all 10 Flow tab slots in use' }))
     const child = spawn('npx', ['tsx', join(HERE, 'run.mts'), SCENE, ...lane.map((s) => s.key)], {
       env: { ...process.env, WORKER: `w${i}`, OPEN_TAB: '1', FLOW_PROJECT: projects[i]!, FLOW_CDP: ENDPOINT },
       stdio: ['ignore', 'inherit', 'inherit'],
     })
     children.push(child)
     say({ event: 'worker-start', worker: `w${i}`, pid: child.pid, keys: lane.map((s) => s.key) })
-    child.on('exit', (code) => { say({ event: 'worker-exit', worker: `w${i}`, code }); done(code ?? 1) })
+    child.on('exit', (code) => { release(slot); say({ event: 'worker-exit', worker: `w${i}`, code }); done(code ?? 1) })
   }, i * STAGGER_MS)
 }))
 const children: import('node:child_process').ChildProcess[] = []
@@ -92,7 +97,12 @@ async function sweepTabs() {
   const b = await chromium.connectOverCDP(ENDPOINT).catch(() => null)
   if (!b) return
   let n = 0
-  for (const p of b.contexts()[0]?.pages() ?? []) if (await isPoolTab(p)) { await p.close().catch(() => {}); n++ }
+  // Only this pool's own tabs (w0, w1, … and setup): a flow_queue run's tabs (q:…) may be working right now.
+  for (const p of b.contexts()[0]?.pages() ?? []) {
+    if (!(await isPoolTab(p))) continue
+    const tag = String(await p.evaluate(() => window.name).catch(() => '')).slice(POOL_TAB_PREFIX.length)
+    if (/^(w\d+|setup)$/.test(tag)) { await p.close().catch(() => {}); n++ }
+  }
   await b.close().catch(() => {})
   if (n) say({ event: 'swept-tabs', closed: n })
 }

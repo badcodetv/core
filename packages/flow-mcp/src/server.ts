@@ -5,6 +5,7 @@ import { NAME, VERSION } from './version'
 import { FlowClient } from './flow-client'
 import { ok, fail, NOT_RUNNING_HINT, type ToolResult } from './result'
 import { stampFlow } from './prov'
+import { registerQueueTools } from './queue-tools'
 import { resolveChannel, releaseLock, surveyChannels, profileFor, probe, type Resolution } from './channel'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
@@ -786,6 +787,9 @@ server.registerTool(
     }
   },
 )
+
+// The Flow queue (2026-11-18): two or more jobs at once, one per tab, up to 10 tabs. See queue-tools.ts.
+registerQueueTools(server, async () => (await currentChannel()).endpoint, toToolError)
 
 const transport = new StdioServerTransport()
 await server.connect(transport)

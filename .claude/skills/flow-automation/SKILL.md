@@ -20,14 +20,20 @@ what to put in it.
 
 ### Speed rules (Jack, 2026-11-12: "refresh the page and try again instead of waiting")
 
-- 🔴 **Every video goes through the tab pool** (Jack, 2026-11-18: "make that a rule for all videos going forward"), for any story, even one clip. Stills stay one at a time.
-- **Many clips at once: `scripts/scene/pool.mts` (2026-11-17).** `TABS=3 npx tsx scripts/scene/pool.mts <scene-dir>`
-  runs a scene's missing clips in K tabs (default 10, never more than jobs) of the signed-in browser, each tab its own Flow project and its own
-  `run.mts` worker (law 16 is two jobs in ONE tab; separate tabs don't share a compose bar). Jobs that cast a
-  Character stay on the scene's own project (Characters live in a project). The MCP skips pool tabs. Google's
-  per-account limit is unmeasured: start at 3, read `<media>/video/pool.log`, then raise it.
-- **Stills in parallel are fine; edits are not.** Several `flow_generate_image` calls at once worked all day; three
-  `flow_edit_image` calls at once jammed the upload picker for every later edit.
+- 🔴 **One job per tab (Kai, 2026-11-18; `docs/rules/flow.md`).** One still or edit: the ordinary `flow_*` tool in
+  the session's tab, one call per message. **Two or more stills or edits: `flow_queue`** with the whole list. It runs
+  them in up to 10 tabs, each in a helper project of the story's own, every tab taking the next job when free, and
+  returns at once; follow with `flow_queue_status {runId, waitSeconds}`, check each file, `flow_queue_stop` to stop.
+  Never send several `flow_*` calls in one message: they all hit the session's one tab (law 16).
+- 🔴 **Every video goes through the tab pool** (Jack, 2026-11-18: "make that a rule for all videos going forward"), for
+  any story, even one clip: `scripts/scene/pool.mts` (2026-11-17). `TABS=3 npx tsx scripts/scene/pool.mts <scene-dir>`
+  runs a scene's missing clips in K tabs, each tab its own Flow project and its own `run.mts` worker. Jobs that cast a
+  Character stay on the scene's own project (Characters live in a project). It takes its tabs from the same
+  machine-wide budget of 10 as `flow_queue` (`packages/flow-mcp/src/queue-slots.ts`) and waits when they are all in
+  use. The MCP skips pool and queue tabs. Measured 2026-11-18: 25 Omni clips on 10 tabs in 6.9 min (~2.3 min a clip,
+  no slowdown at 10); give it jobs in tens so no round runs half empty.
+- **`flow_queue` accepts video jobs, but they go through `flow_generate_video`'s route**, which scene-animation records
+  as failing on Omni Frames (not re-tested). Clips stay on the pool (rule above); queue stills and edits are the proven path.
 - **A stuck upload now retries itself (2026-11-18).** `flow_edit_image` reloads the project and re-attaches once on
   `UPLOAD_STUCK`; if it sticks again the error lists the picker's options and a screenshot path
   (`/tmp/flow-upload-stuck/`). **Cause found the same day:** the finished option now reads "image <file> Image" (an icon word first) and the
@@ -371,7 +377,8 @@ explain most of what you will see.
 15. **Navigation clears the bar and resets the pickers.** Model reverts to the menu default (Nano Banana Pro on a fresh project, seen 2026-11-17), chips
     detach, frame slots wipe. That is also the reliable way to *guarantee* a clean bar before
     `Reuse prompt`.
-16. 🔴 **One browser, one generation at a time — and a second call kills BOTH.** Added
+16. 🔴 **One TAB, one generation at a time — and a second call kills BOTH.** (Read "browser" below as "tab": separate
+    tabs, each in its own project, run side by side; that is how `flow_queue` and `pool.mts` work, 2026-11-17/18.) Added
     2026-08-20 after doing exactly this. A `flow_generate_video` that runs past ~116s is moved
     to the background, and it *keeps owning* the cached CDP attachment, the compose bar and the
     asset picker. Firing a second call into that same bar **overwrites the prompt the first one

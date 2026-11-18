@@ -30,7 +30,7 @@ Cheap first looks: many options per beat, not finished frames. **Stills cost no 
 2026-10-20), so make options freely.
 
 - Per beat, 3–6 prompts across different ideas *and* the styles from the brief. Write them with `flow-prompt`. Put every reference character in through its canonical image or Flow Character.
-- Generate with `flow_generate_image` (new) or `flow_edit_image` (variations of an existing still: "Using the provided image, change only…"). Save to `<media>/moodboard/<id>.jpg`, using ids like `ST4-a`/`-b`/`-c` (beat letters + round number + candidate).
+- Generate with `flow_generate_image` (new) or `flow_edit_image` (variations of an existing still: "Using the provided image, change only…"). A round of several stills or edits goes in ONE `flow_queue` call (kinds `image` / `edit`, same fields), one job per tab, up to 10 at once (`docs/rules/flow.md`). Save to `<media>/moodboard/<id>.jpg`, using ids like `ST4-a`/`-b`/`-c` (beat letters + round number + candidate).
 - Stage references in `~/.cache/…` and **never upload from `/mnt`**. Check candidates with md5; Flow sometimes returns duplicates.
 - A **silent block looks like a vanished tile or a timeout**. Rewrite, don't retry. Known refusals:
   - any image with a child in it (mask the child out locally with ffmpeg `drawbox`, then edit-fill)

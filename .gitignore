@@ -18,6 +18,7 @@ coverage/
 
 # Browser channel locks — PID files, per-machine, never shared
 .flow-channels/
+.flow-queue/
 
 # Flow automation: scratch screenshots from the Playwright/CDP browser workflow
 # (keep the folder + its README, ignore the captured PNGs)

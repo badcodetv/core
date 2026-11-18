@@ -1,4 +1,5 @@
 import { basename, dirname, join } from 'node:path'
+import { rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { copyFile, mkdir, mkdtemp, rename, unlink, writeFile } from 'node:fs/promises'
 import { chromium, type Browser, type Locator, type Page } from 'playwright'
@@ -24,6 +25,7 @@ import { jpegSize } from './jpeg-size'
 import { isCopyOfAny, thumbPrint } from './ref-copy'
 import { mediaIdFromContentUrl } from './media-url'
 import { dumpLines } from './page-dump'
+import { DOWNLOAD_LOCK, withLock } from './lock'
 import { chooseVideoMode, refineRequestError, videoRequestError } from './video-mode'
 import {
   sceneUrl,
@@ -237,7 +239,7 @@ export class FlowClient {
 
   /** Attach to the already-logged-in Chrome launched by scripts/flow-chrome.sh. */
   static async connect(endpoint = DEFAULT_ENDPOINT): Promise<FlowClient> {
-    const browser = await chromium.connectOverCDP(endpoint)
+    const browser = await attach(endpoint)
     const context = browser.contexts()[0]
     if (!context) throw new Error('NO_CONTEXT')
     // Tabs a pool worker opened (openTab) belong to that worker: never attach to one, or a session's
@@ -261,7 +263,7 @@ export class FlowClient {
    * kill each other (law 16). The tab is tagged so `connect` skips it, and `closeTab` closes it.
    */
   static async openTab(endpoint = DEFAULT_ENDPOINT, url = FLOW_URL, tag = 'worker'): Promise<FlowClient> {
-    const browser = await chromium.connectOverCDP(endpoint)
+    const browser = await attach(endpoint)
     const context = browser.contexts()[0]
     if (!context) throw new Error('NO_CONTEXT')
     const page = await context.newPage()
@@ -272,10 +274,30 @@ export class FlowClient {
     return new FlowClient(browser, page)
   }
 
+  /**
+   * Re-attach to a tab `openTab(…, tag)` opened earlier (2026-11-18, the Flow queue). The queue gives
+   * every job a FRESH attachment, the way the MCP server gives every tool call one: a Playwright
+   * attachment held for a long time was measured to misfire clicks (server.ts, 2026-09-17).
+   * Throws TAB_GONE when no tab carries the tag (closed by hand, or Chrome restarted).
+   */
+  static async attachTab(endpoint = DEFAULT_ENDPOINT, tag: string): Promise<FlowClient> {
+    const browser = await attach(endpoint)
+    const context = browser.contexts()[0]
+    if (!context) {
+      await detach(browser)
+      throw new Error('NO_CONTEXT')
+    }
+    for (const p of context.pages()) {
+      if ((await p.evaluate(() => window.name).catch(() => '')) === `${POOL_TAB_PREFIX}${tag}`) return new FlowClient(browser, p)
+    }
+    await detach(browser)
+    throw new Error(`TAB_GONE: no Flow tab tagged ${tag}`)
+  }
+
   /** Close this client's tab (a pool worker's own), then detach. Never call it on a `connect` client. */
   async closeTab(): Promise<void> {
     await this.page.close().catch(() => {})
-    await this.browser.close().catch(() => {})
+    await detach(this.browser)
   }
 
   async status(): Promise<FlowStatus> {
@@ -547,35 +569,74 @@ export class FlowClient {
     await tile.hover().catch(() => {})
     if (!(await more.isVisible().catch(() => false))) await this.hoverElement(tile)
     await more.waitFor({ state: 'visible', timeout: 10_000 })
-    // Arm the listener BEFORE the click: an image downloads immediately on `Download`, and a
-    // listener armed afterwards misses it (measured — the first probe did exactly that).
-    const download = this.page.waitForEvent('download', { timeout: TURN_TIMEOUT_MS })
-    download.catch(() => {})
+    // 2026-11-18 (the Flow queue): the whole download runs under DOWNLOAD_LOCK and points Chrome's one
+    // download folder at a folder of its own, then reads the file Chrome names by its guid, instead of trusting
+    // Playwright's download object. With several tabs (and the MCP) attached at once, Playwright's object
+    // pointed at whichever connection attached last and the rest failed with ENOENT. Same method as
+    // scripts/scene/run.mts's download(), which ran clean across the 2026-11-17 pool runs.
+    return withLock(DOWNLOAD_LOCK, () => this.downloadFromTileLocked(more, outPath), { who: 'download' })
+  }
+
+  private async downloadFromTileLocked(more: Locator, outPath: string): Promise<string> {
+    const ps = await this.page.context().newCDPSession(this.page)
+    const { targetInfo } = (await ps.send('Target.getTargetInfo')) as { targetInfo: { browserContextId?: string } }
+    await ps.detach().catch(() => {})
+    const cdp = await this.browser.newBrowserCDPSession()
+    const dir = await mkdtemp(join(tmpdir(), 'flowdl-'))
     // The download's own URL is a blob, so catch the signed original Flow fetches to build it —
     // `flow-content.google/<kind>/<uuid>` is the only place a VIDEO's media id is visible at all.
     const contentUrls: string[] = []
     const onRequest = (r: { url(): string }) => { if (r.url().includes('flow-content.google/')) contentUrls.push(r.url()) }
-    this.page.on('request', onRequest)
-    await more.click()
-    // Match on text, not accessible name: a submenu item's name also carries its arrow, so an
-    // anchored name regex missed it on freshly generated images (measured 2026-09-13).
-    const item = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /^\s*download\s*Download\s*$/ }).first()
-    await item.waitFor({ state: 'visible', timeout: 10_000 })
-    await item.click()
-    // Generated media opens a size submenu (uploads download at once). Only "Original size" is
-    // the untouched file; every other row is an upscale or a GIF, and the 4K one costs credits.
-    const original = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /Original size/i }).first()
-    const first = await Promise.race([
-      download.then(() => 'download' as const),
-      original.waitFor({ state: 'visible', timeout: 8_000 }).then(() => 'submenu' as const).catch(() => 'none' as const),
-    ])
-    if (first === 'submenu') await original.click()
-    const dl = await download.finally(() => this.page.off('request', onRequest))
-    await mkdir(dirname(outPath), { recursive: true })
-    await dl.saveAs(outPath)
-    // The menu usually closes itself; an Escape on a closed menu is harmless.
-    await this.page.keyboard.press('Escape').catch(() => {})
-    return [dl.url(), ...contentUrls.reverse()].find((u) => mediaIdFromContentUrl(u)) ?? dl.url()
+    try {
+      // A tab in Chrome's DEFAULT context fails "Failed to find browser context for id …" when its id is named
+      // (Jack, 2026-11-18, run.mts); the default context is addressed by leaving the id out, so retry that way.
+      const dl = { behavior: 'allowAndName' as const, downloadPath: dir, eventsEnabled: true }
+      try {
+        await cdp.send('Browser.setDownloadBehavior', { ...dl, ...(targetInfo.browserContextId ? { browserContextId: targetInfo.browserContextId } : {}) })
+      } catch (e) {
+        if (!/Failed to find browser context/.test(String((e as Error)?.message ?? e))) throw e
+        await cdp.send('Browser.setDownloadBehavior', dl)
+      }
+      let began = ''
+      let guid = ''
+      // Armed BEFORE the click: an image downloads immediately on `Download` (measured — a listener armed
+      // afterwards missed it).
+      const done = new Promise<string>((ok, bad) => {
+        const t = setTimeout(() => bad(new Error('DOWNLOAD_TIMEOUT: Flow never finished the download')), TURN_TIMEOUT_MS)
+        cdp.on('Browser.downloadWillBegin', (e: { guid: string; url: string }) => { if (!guid) { guid = e.guid; began = e.url } })
+        cdp.on('Browser.downloadProgress', (e: { guid: string; state: string }) => {
+          if (guid && e.guid !== guid) return
+          if (e.state === 'completed') { clearTimeout(t); ok(e.guid) }
+          else if (e.state === 'canceled') { clearTimeout(t); bad(new Error('DOWNLOAD_CANCELED')) }
+        })
+      })
+      done.catch(() => {})
+      this.page.on('request', onRequest)
+      await more.click()
+      // Match on text, not accessible name: a submenu item's name also carries its arrow, so an
+      // anchored name regex missed it on freshly generated images (measured 2026-09-13).
+      const item = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /^\s*download\s*Download\s*$/ }).first()
+      await item.waitFor({ state: 'visible', timeout: 10_000 })
+      await item.click()
+      // Generated media opens a size submenu (uploads download at once). Only "Original size" is
+      // the untouched file; every other row is an upscale or a GIF, and the 4K one costs credits.
+      const original = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /Original size/i }).first()
+      const first = await Promise.race([
+        done.then(() => 'download' as const),
+        original.waitFor({ state: 'visible', timeout: 8_000 }).then(() => 'submenu' as const).catch(() => 'none' as const),
+      ])
+      if (first === 'submenu') await original.click()
+      const id = await done
+      await mkdir(dirname(outPath), { recursive: true })
+      await copyFile(join(dir, id), outPath)
+      // The menu usually closes itself; an Escape on a closed menu is harmless.
+      await this.page.keyboard.press('Escape').catch(() => {})
+      return [began, ...contentUrls.reverse()].find((u) => mediaIdFromContentUrl(u)) ?? began
+    } finally {
+      this.page.off('request', onRequest)
+      await cdp.detach().catch(() => {})
+      rmSync(dir, { recursive: true, force: true })
+    }
   }
 
   /** True on the 2026-09-13 Angular rebuild at flow.google.com. */
@@ -4187,7 +4248,21 @@ export class FlowClient {
     return this.browser.isConnected() && !this.page.isClosed()
   }
 
+  /** Detach from the browser. On a connectOverCDP browser this never closes Chrome or the tab. */
   async close(): Promise<void> {
-    await this.browser.close()
+    await detach(this.browser)
   }
+}
+
+/**
+ * Attach to the signed-in Chrome, under DOWNLOAD_LOCK (lock.ts): every Playwright attachment re-points
+ * Chrome's single download folder at its own temp folder, so attaching while another tab's download is
+ * in flight sends that file somewhere its owner will never look.
+ */
+async function attach(endpoint: string): Promise<Browser> {
+  return withLock(DOWNLOAD_LOCK, () => chromium.connectOverCDP(endpoint), { who: 'attach' })
+}
+
+async function detach(browser: Browser): Promise<void> {
+  await withLock(DOWNLOAD_LOCK, () => browser.close(), { who: 'detach' }).catch(() => {})
 }
