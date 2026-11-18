@@ -158,3 +158,40 @@ Full table: `docs/listening/automation.md` §0. Related: `suno-account-is-kais-g
 - 🔴 2026-09-27 later: 3.5-flash, 3-flash-preview AND 3.1-pro-preview all 429'd; **`gemini-3.5-flash-lite` still worked** (lower
   confidence — say so). `3-pro-preview` and `3.1-flash-preview` are 404. The describe tool's `tempo` measurement returned
   132.51 for five different clips — it is broken; use `librosa.beat.beat_track` directly (reggae reads double: ~130 = ~65). <!-- style-lint: ok (engine fact: a tempo measurement) -->
+
+---
+
+# From Kai's machine memory (moved 2026-11-18)
+
+> Kai's per-machine memory was archived to `archive/messy-context-2026-11-17/memory-kai/` on 2026-11-18. Kai,
+> 2026-11-18: these two are "very important"; keep them.
+
+## Media goes in the project's clips folder; prompts and words stay in the repo [clips-folder-convention]
+
+Kai, 2026-08-26, amended 2026-08-27. **Never state one half without the other.**
+- **Media** lives in the open Premiere project's `clips/<scene>/` folder (`<mediaRoot>/<story>/clips/<scene>/` +
+  `.../final/`), created if missing. Find the root with `premiere_status()` (`dirname(project.path)`) before the first
+  generation of a session. Never the project root; never the Desktop when a project exists. A short follows its own
+  media folder (*Jack's short media folders* above; Kai's are `D:\badcode-videos\shorts\<slug>`).
+- **Words** (prompts, beat lists, motion plans, rulings, revision logs) stay **in the repo**, in the story's scene
+  folder. Kai: "we work on prompts and reference stills inside the repository, and then larger video iterations
+  happen inside the clips folder." A prompt written into a media folder is unversioned, invisible to other sessions
+  and on an unbacked-up drive.
+- Before saying media is missing, resolve the path with `localmap.py` (above).
+
+**Why:** scratch had drifted across the Desktop and D: at once and Kai thought clips were lost; a day later a whole
+prompt sheet was written into a clips folder because only the media half of the rule had been stated.
+
+## The provenance trail: the prompts for everything we make live in the repo [provenance-trail]
+
+Kai, 2026-10-23, and again 2026-11-18 ("we absolutely need to keep the provenance trail"). The goal: rerun a whole
+story's exact prompts on a better model one day. The repo holds every word; D: (backed up to Drive) holds the media;
+together they are everything. Full convention: `docs/provenance/README.md`.
+- **A recipe card for every generated file.** The Flow MCP, `run.mts`, the TTS script and Suno `record` write them
+  themselves; anything else gets `scripts/provenance/prov.py card`.
+- **Artifacts are the UI, the repo is the record.** Every page is built by a builder whose command goes in the trail
+  (`--rebuild`). Every read of a page's votes and notes is dumped raw into the scene's `feedback/` first
+  (`ArtifactData list … out_dir=$(prov.py feedback-dir …)`), then logged with `prov.py trail … --feedback --decided "<words>"`.
+- `prov.py trail` after every page publish, `check` before showing a cut, `freeze` when Kai or Jack says a cut is done.
+  A lost page is rebuilt, then refilled with `prov.py restore`.
+- Going forward only: no backfill of older stories. The replay script stays unbuilt until a better model arrives.

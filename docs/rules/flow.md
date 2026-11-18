@@ -402,9 +402,8 @@ Not built yet: a distinct `POLICY_BLOCKED` code in `@badcode/flow-mcp`.
 - **The gate that stays: Kai sees every still candidate and picks before any video credit is spent.** Contact sheet per
   subject, state your pick and every defect, then stop. (GPOM cut 4 shot a whole beat on the wrong plate when Claude
   picked alone.)
-- **Video count 1 by default** (Kai, 2026-09-28): a second take on a locked plate comes back near-identical. Buy two
-  only when Kai asks or it is a genuinely new setup, and say so first. ⚠️ This differs from Jack's "x2" default in
-  *Omni Flash video defaults* above: count 1 when Kai is driving, x2 when Jack is.
+- **Video count follows Jack's default: x2** (see *Omni Flash video defaults* above). Kai, 2026-11-18: "take Jack's
+  standard". This replaces Kai's older count-1 rule.
 
 ## Video model: Omni 1.2 Flash [omni-1-2-default]
 
@@ -424,7 +423,7 @@ regenerate a missing tail item on its own.
 
 ## Video composer facts (settled by clicking, 2026-08-12; the UI has since been rebuilt) [flow-video-modes]
 
-Full write-up: `docs/superpowers/flow-video.md`; the rebuilt UI is `docs/flow/automation-2026-09-rebuild.md`.
+The rebuilt UI is `docs/flow/automation-2026-09-rebuild.md` (the old 2026-08 write-up is no longer in the repo).
 - One composer, picked by the images passed: start only = animate, start+end = first/last frame, none =
   text-to-video. End-only does not exist. Omni rejects a last frame.
 - Duration and count live in the compose-bar popover, which overrides the Settings panel (that is how `count` was
