@@ -18,7 +18,10 @@ Not decided.
 - Jack writes the jokes: beats say what to joke about, lines are left blank for him.
 
 ## Flow project
-None recorded yet. Create one with `flow_create_project` before the first Flow call, and write its id here.
+`3ed3991e-c128-460b-9bfc-dce74f2ad5f1` (created 2026-11-18; Flow named it "Nov 18 - 09:56"). Open it with
+`flow_open_project` before any Flow call for this story.
+
+Stills model: **Nano Banana 2.1** (Nano Banana 2 left Flow's menu on 2026-11-17; see the flow-automation skill).
 
 ## Library pieces in use
 - **Clean room** (picked by Jack, 2026-11-17, from real photo / music first / balaclava / clean room). Copied in:

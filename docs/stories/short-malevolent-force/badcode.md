@@ -11,6 +11,10 @@ nearest the printer), and you meet it last, at the till. The force is never seen
 end card, then the logo. State: rough cut 2 built in Premiere (`short-malevolent-force-1-malevolent-force-r2`), saved,
 agreed cut on Drive. Owed: export from Premiere, delivery QC, gatekeeper.
 
+**Next: more horror, the force more visible** (Jack and Kai, 17 Nov morning call,
+[notes](../../misc/2026-11-17-morning-meeting.md)): a **ghostly hand** rapidly snatches the price tags, or waves over the
+money, and the price changes. Kai: it makes it scarier and funnier. Not built yet; the rough cut 2 stands until it is.
+
 ## Look
 - Status: look.md still says EXPLORING with no ruling written; in practice every shot is picked from Jack's reference.
 - Jack's reference photo `scenes/malevolent-force/reference/jack-r2-shop-doorway.png`: a corner-shop doorway at night,
@@ -28,7 +32,8 @@ agreed cut on Drive. Owed: export from Premiere, delivery QC, gatekeeper.
 - No voice at all. A thunder hit under the logo flash is optional, not decided.
 
 ## Story-only rules
-- The evil is a force you can't see; never blame or show one person.
+- The evil is a force, never one person: never blame or show a person. Since 17 Nov it may show **a ghostly hand** (only a
+  hand: no face, no body, no one you could name).
 - Price changes happen in the edit: only the price cards change, pasted onto their exact region from the brightest flash
   frame; the setting stays identical before and after.
 - End card (Jack): "Based on true events. Coming to a shop near you."

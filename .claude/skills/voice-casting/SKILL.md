@@ -10,9 +10,8 @@ description: Use to CAST the speaking voices of a BadCode film, scene or short b
 > for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
 
 
-**A picking page for voices, like the mood board is for stills.** Jack asked for it on 2026-11-11 (Priority Lane:
-"put the voices in a skill that I can pick from like the new scene artifact"). First run:
-`docs/stories/shorts/priority-lane/voices/`.
+**A picking page for voices, like the mood board is for stills.** Jack asked for it on 2026-11-11:
+"put the voices in a skill that I can pick from like the new scene artifact".
 
 ## Before anything
 - Read the story's `sound.md`. If a role is already ruled, don't recast it unless asked. If the file is empty, this

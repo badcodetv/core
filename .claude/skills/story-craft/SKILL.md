@@ -117,9 +117,7 @@ short version:
 9. **Write back.** What the review taught goes into the toolkit, dated.
 
 Output is the **coverage sheet** in `checklist.md`; for a large piece, write it to
-`docs/stories/<story>/critique-pass-N.md` (the existing convention —
-[`docs/stories/gitpush-origin-master/critique-pass-2.md`](../../../docs/stories/gitpush-origin-master/critique-pass-2.md)
-is the worked reference) so the next session inherits it.
+`docs/stories/<story>/critique-pass-N.md` (the existing convention) so the next session inherits it.
 
 ## Rules that are not negotiable
 
@@ -134,9 +132,8 @@ is the worked reference) so the next session inherits it.
   "The scene has no turn — the value at the end is the charge it started with (principle 7)" is.
 - **Scope is the user's.** An adversarial review of a committed story does not propose a different
   story. Arc, backbone, conclusion and ratified rulings are held fixed unless the user opens them.
-- **Respect the canon's own rules.** GPOM's nine binding accuracy rules, the unpersonified-AI rule,
-  the metaphor budget and the Storyverse discipline are constraints on every suggestion, not
-  targets for one.
+- **Respect the canon's own rules.** Whatever binding rules the story's `badcode.md` (and the storyverse, if it
+  belongs to it) sets are constraints on every suggestion, not targets for one.
 - **Don't restate the-reader.md.** The gates are referenced, not re-derived, and "beneficiary
   on-panel" appears at most once in a review, as advice, not once per layer.
 

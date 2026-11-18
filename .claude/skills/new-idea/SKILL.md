@@ -89,7 +89,7 @@ speakers know things they didn't say.
    - **Medium instinct.** Comic, song, short, image, marketing plan — any signal, even
      "no idea yet" is an answer.
    - **New or extension?** Standalone, or does it belong to an existing story
-     (`docs/stories/`) or the GPOM arc?
+     (`docs/stories/`) or the shared storyverse (`docs/stories/storyverse/`)?
    - **The punchline.** Is there a twist/ending already, or is that open?
    - **Anything said out loud but not in the transcript?** The best line is often the
      one that didn't get typed.

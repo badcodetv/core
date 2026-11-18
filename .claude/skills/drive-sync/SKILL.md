@@ -1,6 +1,6 @@
 ---
 name: drive-sync
-description: Use to push or pull ONE story's Premiere folder between this machine and its folder in the shared Google Drive ("Badcode - Official"), to check what would move, to hand the baton over (or take it), and to record which local folder holds a story on this machine. Triggers on "here's where my karen story lives", "my <story> is in <folder>", "my Karen music folder is …", "push karen music", "pull the camping story", "sync <story> with Drive", "is <story> in sync", "what's on Drive", "I'm handing over <story>", "I've got the baton for <story>", "where is <story> on this machine", "set up the drive tool", "add a story to Drive".
+description: Use to push or pull ONE story's Premiere folder between this machine and its folder in the shared Google Drive ("Badcode - Official"), to check what would move, to hand the baton over (or take it), and to record which local folder holds a story on this machine. Triggers on "here's where my <story> lives", "my <story> is in <folder>", "my <story> music folder is …", "push <story> music", "pull the <story> story", "sync <story> with Drive", "is <story> in sync", "what's on Drive", "I'm handing over <story>", "I've got the baton for <story>", "where is <story> on this machine", "set up the drive tool", "add a story to Drive".
 ---
 
 # drive-sync
@@ -38,9 +38,9 @@ ONE card in `docs/provenance/cards/` whichever machine made it (`flow-mcp` `prov
 
 ## "Here's where my <story> lives"
 
-When someone tells you in their own words where a story sits on their machine ("my Karen story is in
-C:\Users\jackt\OneDrive\Desktop\Youtube Vids\Karen", "Camping music lives in /mnt/c/.../camping"):
-1. Work out which story they mean (`drive.sh list`). If it could be two (Karen Music or Karen Story), ask.
+When someone tells you in their own words where a story sits on their machine ("my <story> story is in
+C:\Users\...\Youtube Vids\<story>", "<story> music lives in /mnt/c/.../<story>"):
+1. Work out which story they mean (`drive.sh list`). If it could be two (a story's Music and Story folders), ask.
 2. Run `scripts/drive/drive.sh where <story> "<their folder exactly as given>"`. It checks the folder exists;
    if it doesn't, read the error back and ask them to check the path. Don't hunt for a lookalike.
 3. If it printed "added this machine's folder to <story>'s homes", commit and push `scripts/drive/folders.json`
@@ -56,9 +56,9 @@ If the story is not in this machine's map, the tool exits 3 with `NOT SET`. Then
 `D:\badcode-videos\<story>`. When they answer, record it with
 `scripts/drive/drive.sh where <story> "<their folder>"` (it checks the folder exists), then carry on.
 Same if they name a story with no row in `folders.json`: ask which Drive folder it is (its link), and add
-the row (key = a short story name such as `bank-robbery-music`; ID = the end of the folder's URL).
+the row (key = a short story name such as `<story>-music`; ID = the end of the folder's URL).
 
-"Karen" alone is ambiguous: ask whether it's Karen Music or Karen Story. Run `drive.sh list` to show the options.
+A bare story name is ambiguous when it has both a Music and a Story folder: ask which. Run `drive.sh list` to show the options.
 
 ## Procedure
 

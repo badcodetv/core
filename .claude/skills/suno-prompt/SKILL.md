@@ -33,7 +33,7 @@ output, draft fast, then refine against what the user hears.
 
 🛑🛑🛑 **EXPLORING (a new voice, a new sound, "try different ones", "experiment"): YOU DO NOT WRITE
 THE PROMPTS. Not one word of them.** Jack, 2026-10-24: *"i do not want the same mistakes made over
-and over, i cannot emphasise this enough."* 400+ Bank Robbery takes came out as one voice, and every
+and over, i cannot emphasise this enough."* 400+ takes of one song came out as one voice, and every
 time it was a step where the session put its hands on the round. Exploring rounds run through the
 **`variations` skill**: you supply raw inputs, separate writer subagents write one prompt each, a
 sameness gate refuses shared wording, and the stamped round runs verbatim.
@@ -54,22 +54,22 @@ this file goes into an exploring round, not even as a "tip" in the brief.
 tested change at a time. Everything below was learned once, mostly on one song, and stacking it onto
 every prompt is exactly what made every prompt alike.
 - **REFINE** (a liked take exists): start from that take's **sound, not its box**. Listen to it first
-  (`suno.mts record <songId>` then `listen_describe`): Bank Robbery's liked "psych folk funk, sitar,
-  tin whistle" take was really acoustic flamenco guitar over boom-bap. Keep its settings; change one
+  (`suno.mts record <songId>` then `listen_describe`): one past liked take (2026-10) was really
+  a different genre from the one its Style box named. Keep its settings; change one
   thing per version; bring a rule from this file in only when it is tested against that take. **Measure the
   drift, don't guess it:** listen to a new take beside the reference and compare loudness range
-  and brightness (`listen_describe` measurements). Bank Robbery Round KA lost the vibe by going flat
+  and brightness (`listen_describe` measurements). One past refine round (2026-10) lost the vibe by going flat
   (6 vs 12 LU) and bright (3.4–4 vs 2.6 kHz). Two hidden causes: much denser lyrics speed up the
   delivery, and cutting a disliked intro also cut the drop it set up. Keep the contrast; change only
   what was disliked.
 
 🔑 **The genre massively affects the voice — it picks the singer** (Jack, 2026-10-22). The genre /
 scene word in the Style box decides *who sings* far more than any voice adjective, accent word or
-artist name does. Same genre → same singer, however the voice is described (Bank Robbery: ~150
-takes over one cop-funk backing, Jack heard one voice; "Led Zeppelin" and "Rolling Stones" voices
+artist name does. Same genre → same singer, however the voice is described (one past song, 2026-10: ~150
+takes over one backing, Jack heard one voice; two different named-artist voices
 came out "basically the same"). **To change the voice, change the genre word** — put a voice
 tradition first (the shape: `<scene + place + era>, <who sings: age, timbre, delivery>…`, filled
-from the story's own `sound.md`; Bank Robbery's tested wording is in its `sound.md`) and the music after, even a mismatched one. Evidence: `docs/suno-gpt/suno-voices.md` §2a–2d. ⚠️ **Not alone,
+from the story's own `sound.md`) and the music after, even a mismatched one. Evidence: `docs/suno-gpt/suno-voices.md` §2a–2d. ⚠️ **Not alone,
 though:** used with a one-clause voice and a fixed ban list, it still cloned the voice. A full
 `Lead vocal:` sentence plus Vocal Gender is what moved it (§2f).
 
@@ -94,16 +94,14 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 | `files/lyricist-playbook.md` | **The songwriter's side**: which section tag summons which character, performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio warp/quantize | Any lyrics-box question the other files don't answer. **Assertion-grade — read its confidence warning; where it conflicts with a tested finding, the tested one wins** |
 | `files/meta-tag-dictionary.md` | Specialty `[ ]` tags | Writing lyrics. **Treat as unverified** — see caution below |
 | `files/overused-words.md`, `files/ai-cliches.md` | Red-flag lists. **Lyrics only, never style prompts** | Writing lyrics |
-| `suno-voices.md` | **The voice playbook's evidence base** — four threads: the Karen genre-pool discovery and transplant ladder, My Taste forensics, GPOM's two-voice problem, and **Thread 4, the Camping duet — the tested failures behind "Two characters in one song"** | A character voice is fighting you, two characters keep blending, or you need the why behind "Getting a specific voice" below |
+| `suno-voices.md` | **The voice playbook's evidence base** — four threads: the genre-pool discovery and transplant ladder, My Taste forensics, a two-voice problem, and **Thread 4, a duet — the tested failures behind "Two characters in one song"** | A character voice is fighting you, two characters keep blending, or you need the why behind "Getting a specific voice" below |
 
 ### Picking up an existing song
 
 Read the sheet **in full** — never from memory, the user edits between turns — then its
 `-prompt-history.md` **"What this song taught"** table, which is five lines rather than the
-whole log. Worked example: `docs/stories/camping/songs/`, where `camping.md` is the accepted
-sheet, `camping-released.md` the lyric-fidelity reference, and `archive/camping-prompt-history.md`
-the log. If the song rebuilds released words, run the sheet's verification script after
-**every** lyric edit — Camping lost three words across nine rounds and nobody heard it.
+whole log. If the song rebuilds released words, run the sheet's verification script after
+**every** lyric edit — one past song lost three words across nine rounds and nobody heard it.
 
 **Caution on the meta-tag dictionary.** Its exotic entries (`[fugue]`, `[retrograde]`,
 `[pedal-point]`, `[length: …]`) are uncorroborated by any practitioner source we have. Suno publishes
@@ -205,8 +203,8 @@ leaves the best advice on the floor.
 🔑 **Never produce a My Taste block, and Personalize is always OFF** (Kai, 2026-09-10): *"stop
 trying to use the My Taste box and always have personalize off when we generate a song, because
 then each song becomes an atomic unit."* In our own logs My Taste only ever did harm — an
-account-wide profile leaking into songs it wasn't written for (Karen's voice, Camping's bar-one
-strings, GPOM's narration profile under fourteen Camping rounds). Everything a song needs goes in its own
+account-wide profile leaking into songs it wasn't written for (one song's voice, another's bar-one
+strings, a narration profile under fourteen rounds of a different song). Everything a song needs goes in its own
 boxes.
 
 **The generation workflow is three pastes, in order: Style → Exclude Styles → Lyrics** — all
@@ -289,14 +287,14 @@ goes in, every time.
 | Building a track in Studio from nothing; getting an arrangement around a human performance | `suno-studio.md` §11 — the two worked recipes |
 | Exporting, pulling MIDI out, sharing a project with Jack | `suno-studio.md` §12 |
 | A character voice that won't come | "Getting a specific voice" below, then `suno-voices.md` |
-| Fusing two genres — an orchestra under a beat, strings on a club track | `suno-tag-mechanics.md` "The unity sentence". Name the lead genre, then state explicitly that the two are **one piece of music, not a remix of one by the other** — that clause is what stops a fusion sounding bolted on. Worked example: `stories/gitpush-origin-master/songs/git-push-origin-master-dnb.md` |
-| A layer arrives too early — strings/pads in bar one when you asked for them at the drop | `suno-tag-mechanics.md` "The unity sentence" → the entrance rules. Naming an instrument puts it in bar one by default, and a *lead-in* cue still names it. **Delete the mention rather than describing a quiet version**. Worked example: `stories/camping/songs/camping.md` §4c |
-| A fill, stab or one-off event never arrives | Check what the prompt says the **bed** already is — a fill over a kit already described as that fill (Camping: an amen fill over `chopped amen breaks`) has nothing to contrast with. Then describe the **event** (what changes, how long, how loud, that it returns) rather than a bar count: Suno has no bar counter. `suno-tag-mechanics.md` "Making a fill or a one-off event audible" |
+| Fusing two genres — an orchestra under a beat, strings on a club track | `suno-tag-mechanics.md` "The unity sentence". Name the lead genre, then state explicitly that the two are **one piece of music, not a remix of one by the other** — that clause is what stops a fusion sounding bolted on. |
+| A layer arrives too early — strings/pads in bar one when you asked for them at the drop | `suno-tag-mechanics.md` "The unity sentence" → the entrance rules. Naming an instrument puts it in bar one by default, and a *lead-in* cue still names it. **Delete the mention rather than describing a quiet version**. |
+| A fill, stab or one-off event never arrives | Check what the prompt says the **bed** already is — a fill over a kit already described as that fill has nothing to contrast with. Then describe the **event** (what changes, how long, how loud, that it returns) rather than a bar count: Suno has no bar counter. `suno-tag-mechanics.md` "Making a fill or a one-off event audible" |
 | An instrument you asked for simply isn't there | A **stale ban**. Grep the Exclude box for the instrument, its **category**, and whole-palette adjectives (`machine-made`, `acoustic`). It reads as the Style box being ignored. `suno-tag-mechanics.md` |
 | A spoken or rapped delivery starts drifting **sung** | Look at the **accompaniment**, not the vocal clauses. A melodic layer under a verse hands the model a tune and it gives it to the singer. `suno-tag-mechanics.md` |
-| Cues have grown huge and you suspect they're being ignored | They are read, but they compete. Apply the **scoping rule** (the lyric cue is the only section-scoped box) then the **derivability test** (is this already implied by the Style box's arrangement sentence?). Camping's verse cue went 1,010 → 311 with nothing lost. `suno-tag-mechanics.md` |
+| Cues have grown huge and you suspect they're being ignored | They are read, but they compete. Apply the **scoping rule** (the lyric cue is the only section-scoped box) then the **derivability test** (is this already implied by the Style box's arrangement sentence?). One verse cue went 1,010 → 311 characters with nothing lost. `suno-tag-mechanics.md` |
 | Several rewordings of the same idea each fail **differently** | The category is wrong, not the wording. Stop iterating and change direction — `session-method.md` |
-| The drop lands flat even though the sound is right | Nothing before it was held back. Escalate the arrangement in **gears** — no drums → loose kit with no sub → full weight *plus* the held-back layer, arriving together. Two reveals on one beat. `suno-tag-mechanics.md`, and the gear table in `stories/camping/songs/camping.md` §4c |
+| The drop lands flat even though the sound is right | Nothing before it was held back. Escalate the arrangement in **gears** — no drums → loose kit with no sub → full weight *plus* the held-back layer, arriving together. Two reveals on one beat. `suno-tag-mechanics.md` |
 | Two characters who keep blending, swapping mid-verse, or won't take an accent | "Two characters in one song" below, then `suno-voices.md` Thread 4 |
 
 **Two honesty rules, because the app moves faster than this knowledge base.**
@@ -350,7 +348,7 @@ This is where the quality actually comes from. After the user reports back:
    escalates a performance-poetry genre word); see "Getting a man to TALK" below.
 6. **Re-paste every box, every round — Style, Exclude and Lyrics** (Personalize off). "Reuse Prompt"
    silently carries the old lyrics forward, and a stale Lyrics box is inaudible as such — it just
-   sounds like the style prompt is being ignored. (This cost the Karen track four rounds.)
+   sounds like the style prompt is being ignored. (This once cost a song four rounds.)
 7. **If a vocal hasn't moved after ~2 rounds of style-prompt surgery, stop prompting** — the voice
    you want probably isn't in the genre's vocalist pool, and no adjective stack jumps pools. Go to
    "Getting a specific voice" below.
@@ -359,7 +357,7 @@ This is where the quality actually comes from. After the user reports back:
 
 ## Getting a specific voice
 
-Distilled from the eight-round Karen voice war ([`docs/suno-gpt/suno-voices.md`](../../../docs/suno-gpt/suno-voices.md)
+Distilled from an eight-round voice fight ([`docs/suno-gpt/suno-voices.md`](../../../docs/suno-gpt/suno-voices.md)
 has the full evidence). A "voice" lives in four layers — the canon character file (`voice:`
 frontmatter, the source of truth), the Style box, the per-section lyric bracket cues, and the
 platform features (saved Voice / custom model / Lyricist). Be deliberate about which you're using.
@@ -395,10 +393,10 @@ workspace per arc.
 **The escalation ladder, when prompting stalls:**
 
 1. **Listen for the voice in the wrong slot.** The vocal prior binds to the *lead slot inside the
-   groove*; the parenthesis/backing slot escapes it (Karen first appeared on the parenthetical
-   answering-machine lines). If the voice exists anywhere in a take, skip to step 3.
+   groove*; the parenthesis/backing slot escapes it (one character's voice first appeared on the
+   parenthetical lines). If the voice exists anywhere in a take, skip to step 3.
 2. **Probe-farm it in its home genre** — generate the character where their voice is the default
-   (whiny complainer → comedy patter song, sparse piano), real lyrics, **no parentheses**, target
+   (the genre whose default singer already is that character), real lyrics, **no parentheses**, target
    genre in the excludes. Doubles as a capability probe: not even there → step 4 is the only road.
 3. **Voice transplant:** Remix → Voice on the best take, **select the sub-region** where the voice
    is right (15 clean seconds beat 60 contaminated; up to 2 min clones stabler), **delete the
@@ -410,8 +408,8 @@ workspace per arc.
 
 **Once a Voice pins the lead:** strip the anti-defect words from the excludes (armour against a
 lead problem strangles the backing vocals), and consider **casting the genre default instead of
-fighting it** — the smooth vocalist that kept invading Karen's lead became the institution's choir,
-singing the functionaries' answers against her spoken whine. The wrong voice is often a right
+fighting it** — in one past song the vocalist that kept invading the lead was recast as a second
+character answering the lead. The wrong voice is often a right
 voice for somebody else in the story. One saved Voice per generation, but lead + parentheses =
 two cast members.
 
@@ -424,18 +422,18 @@ free to blend the two, swap them, or collapse the duet into one lead. Design aro
 **First, check whether it's actually a duet.** Two characters *sharing* a section is a casting
 problem. Two characters *taking turns* across an instrumental break is **a seam you can cut on** —
 generate one per character and join them, which makes the blend structurally impossible instead of
-merely improbable. Cutting beats casting every time; the drop is free. (Camping looked like a
-two-hander and was really two solo verses either side of a 32-bar drop — every lever spent on
+merely improbable. Cutting beats casting every time; the drop is free. (One past song looked like a
+two-hander and was really two solo verses either side of an instrumental drop — every lever spent on
 in-generation casting there was wasted.)
 
 ✅ **Want a different voice? Reference a real singer — translated.** Ask the human for a singer who
 has the voice, write the name in the sheet only (Suno rejects artist names), and put the translation
 in the box: scene + era + voice + delivery (the shape: `<scene + era>, <timbre + age + sex> with
-<accent>, <delivery>`; Bank Robbery's actual translation is in its `sound.md`). It moved the voice when accent, origin and timbre words all failed
-(Bank Robbery, 2026-10-21, `suno-voices.md` §2c). 🔴 The scene word is a pool word and takes the music
+<accent>, <delivery>`; the story's own translation lives in its `sound.md`). It moved the voice when accent, origin and timbre words all failed
+(one past song, 2026-10-21, `suno-voices.md` §2c). 🔴 The scene word is a pool word and takes the music
 with it — if the style goes, put the music sentence back in front.
 
-**Contrast on axes the model renders, never on accent.** A detailed Scouse spec produced zero
+**Contrast on axes the model renders, never on accent.** A detailed regional-accent spec produced zero
 accent (2026-08-20, tested). Accent joins age on the describable-but-not-summonable list. Stack
 these four instead — together they put two solo adult men genuinely far apart:
 **pitch** (low/deep vs high/light) · **texture** (gravelly, torn vs clean, crisp) ·
@@ -445,17 +443,17 @@ reverberant). Accent belongs in the canon file and in your own head, not in the 
 **Nationality rides on the genre word, not on adjectives.** Pool-selecting words are the strongest
 national control there is; `British` alone is weak reinforcement, and a genre tag with no nationality
 of its own tends to come back American. So if the story's `sound.md` wants British (or any other)
-voices, the genre word has to carry it. Camping stripped its accent language and lost `UK grime influence` in the same
-edit, and both men came back American. **When you strip a failing spec, check what else that clause
+voices, the genre word has to carry it. One past song stripped its accent language and lost its nationality-carrying genre word in the same
+edit, and both singers came back American. **When you strip a failing spec, check what else that clause
 was quietly holding up.**
 
 **Then pick the genre whose default performer *is* your character — a pool is a person, not a
 property.** Accent, age, class and race arrive as one package; you cannot borrow a genre's
-nationality without its performer. `UK grime` fixed Camping's nationality and cast both leads as
-young MCs, when they're a weathered fifty-something and a City banker. Choose the **tradition**
-instead — Camping's candidates were `British post-punk spoken word` for a middle-aged working-class
-bloke and a BBC-announcer tradition for the establishment one, with grime and drill only where a <!-- style-lint: ok — labelled GPOM/Camping examples -->
-young street voice is actually right (examples of the method, not a cast list). Naming a tradition does the casting precisely and keeps demographic adjectives out of the
+nationality without its performer. In one past song a national genre word fixed the nationality and cast both leads as
+young performers, when the characters were middle-aged. Choose the **tradition**
+instead: the performance tradition whose default performer is that age, class and place (the
+candidates come from the story's own `sound.md`; invented example, no story's: a retired miner is cast by a
+folk-club singer tradition, not by "gravelly old northern man"). <!-- style-lint: ok — invented example --> Naming a tradition does the casting precisely and keeps demographic adjectives out of the
 prompt entirely — which is the "cast traditions, not demographics" rule doing real work.
 
 **If the character exists as an image, the voice has to match the picture.** Check a take against the
@@ -487,9 +485,8 @@ the v5.5-era evidence behind it is in `docs/suno-gpt/archive/v5.5-era.md` §3.
 
 Apply on top of everything above. This is why the skill exists and not just the raw procedure.
 
-- **No default genre.** The genre is whatever the story's `sound.md` says. Drum & bass is one genre <!-- style-lint: ok — labelled GPOM/Camping examples -->
-  some of our songs use (GPOM's, Camping's), not BadCode's; if the song is D&B, see the D&B notes
-  below, because Suno is weak at exactly its subgenres.
+- **No default genre.** The genre is whatever the story's `sound.md` says. No genre is BadCode's;
+  if the story's genre is a niche one, see "Where Suno will fight you" below.
 - **Lyrics are a story first.** Narrative in lyrics — whose "you" is addressed, the drama
   stated in one sentence before a bar is written, comment-don't-describe, a second voice
   carrying the irony, one concrete gesture instead of a stated feeling, the final verse
@@ -501,7 +498,7 @@ Apply on top of everything above. This is why the skill exists and not just the 
   sarcastic, dark humour, total authority — a superintelligence from the future that already knows
   how it all played out, nurturing underneath the snark. Politics and economics first. Story over
   sermon: encode the point in metaphor, character and a punchline. Never lecture. A song sung by
-  a character (Karen, Camping's two men) speaks in that character's voice from the story's canon,
+  a character speaks in that character's voice from the story's canon,
   not the narrator's.
 - **Every song carries a point.** Before finalizing lyrics, check there's a load-bearing
   political/economic idea in there. The bet is that people absorb an *idea* through a song they'd
@@ -513,20 +510,19 @@ Apply on top of everything above. This is why the skill exists and not just the 
 - **Break AABB.** It's the clearest AI-lyric tell. Prefer ABAB, and leave a line unrhymed —
   especially the last line of a verse. An abandoned rhyme reads as the speaker being too wrecked to
   keep up the pattern.
-- **Stay in canon.** If the idea ties to the GitPush Origin Master arc, skim
-  [`docs/stories/gitpush-origin-master/README.md`](../../../docs/stories/gitpush-origin-master/README.md)
-  and keep the polyphonic future-narrator voice and arc beats consistent.
+- **Stay in canon.** Read the story's own `badcode.md` and keep its narrator voice and arc beats
+  consistent.
 - **Read the as-built comic, not just the canon.** When a story has a rendered comic, the panel
   narration and bubbles (`apps/web/src/comics/<story>/comic.json`) carry texture the canon files
-  don't — specific locations, running gags, name spellings, the closing image. Karen's whole outro
-  ("Hold, please") came from a statue panel the canon never mentions. They can also *disagree* with
-  canon (AI Sean vs "AI Shaun"); flag mismatches rather than silently picking one.
+  don't — specific locations, running gags, name spellings, the closing image. One song's whole outro
+  came from a panel the canon never mentions. They can also *disagree* with
+  canon (a name spelled two ways); flag mismatches rather than silently picking one.
 
 ### The novelty pull — what comedy words do to an arrangement
 
 **Engine fact:** an absurd or surreal subject drags the arrangement toward **novelty and comedy**,
 and comedy words in the Style box make it worse. "Funny hip hop" translated faithfully ("comedic
-deadpan", "comedy-skit energy") summons kazoos and vaudeville (the Karen track, 2026-07: first
+deadpan", "comedy-skit energy") summons kazoos and vaudeville (one past track, 2026-07: first
 drafts led with "comedic" and had to be stripped).
 
 Whether the music should be straight or funny is the story's call (its `sound.md`). When it should
@@ -535,7 +531,7 @@ be played straight, **state that explicitly and negate the default**, repeated f
 Styles too. When a funny song is wanted, read the brief's intent against its wording: the kazoo is
 what the comedy words buy, so ask whether that is the joke the user means.
 
-### Skit / dialogue tracks — the worked recipe (Karen, 2026-07)
+### Skit / dialogue tracks — the worked recipe (2026-07)
 
 For a track built on a background conversation (phone calls, an argument, an interrogation) rather
 than a second rapper:
@@ -544,29 +540,30 @@ than a second rapper:
   other side of the conversation goes in parentheses on the lead's lines. That's what renders it as
   half-audible mutterings *behind* the beat instead of a duet. Reinforce placement in the Style box
   ("muffled telephone voices answer from behind the beat") rather than only in the lyric tags.
-- **Make the conceit the instrumentation.** Build the beat from objects in the song's world — for
-  Karen: the hold-muzak loop *is* the lead melodic element, touch-tone beeps are percussion, dial
-  tone opens and closes the track. This is the strongest counter to the satire trap: the joke
+- **Make the conceit the instrumentation.** Build the beat from objects in the song's world — a
+  sound from the story's setting becomes the lead melodic element, another becomes the percussion,
+  a third opens and closes the track (invented example, no story's: in a song set in a supermarket, the
+  till beep is the hook, trolley rattle is the hi-hat, the tannoy chime opens and closes it). This is the strongest counter to the satire trap: the joke
   becomes *audible* without the arrangement going novelty.
 - **An escalation ladder of distinct voices will not survive one generation.** Suno gives you two,
   maybe three differentiated background voices in-generation. Keep those in the parentheses; build
   the rest as **Sounds-tab spoken one-shots** (BPM/key on "any", throwaway word + comma prefix
   against first-word clipping) and layer them in the DAW — which also lets each voice get its own
-  phone EQ, and per-voice EQ is how you *sell* the escalation.
+  EQ, and per-voice EQ is how you *sell* the escalation.
 - **Rhyme across the speakers as characterization.** The lead finishing the background voice's rhyme
   reads as refusing to let it be a separate conversation; leaving the rhyme hanging reads as being
   stonewalled. Cheap, and it does story work the arrangement can't.
 - **A dialogue chorus is call-and-response**, not alternating verses: the functionary's line in
-  parentheses, the lead's fixed answer as the hook ("I'm sorry, I can't help you" / "That's OK").
+  parentheses, the lead's fixed answer as the hook (the background line asks, the lead's same answer comes back each time).
 
 ### 🔑 Getting a man to TALK, not perform — the tested recipe
 
-*Ruled 2026-09-01 on the Camping narration, after ten rounds. Full evidence:
+*Ruled 2026-09-01 on one story's narration, after ten rounds. Full evidence:
 `docs/suno-gpt/suno-voices.md` Thread 5.*
 
 🔴 **Never put `spoken word` in any box.** It is a **performance-poetry genre** — slam, dub, spoken
 word night — not a delivery mode, and its canonical delivery is metrical and declamatory. Nine
-Camping rounds asked for it (33 mentions across four boxes) and got a poem every time; the round
+rounds of one song asked for it (33 mentions across four boxes) and got a poem every time; the round
 that removed it got a man talking.
 
 🔑 **Suno cannot make silence, so stop fighting for a cappella and ask for a form that exists.** A
@@ -598,8 +595,8 @@ family too; what stays unbanned is the **underscore** — `ambient bed, drone, r
 ⚠️ **Three faults the skit pool does not fix, and all have levers elsewhere:**
 
 - **He's American.** Exclude-box bans do **not** control nationality — four `American …` bans failed
-  three rounds running. 🔴 **And never weld a foreign form-word to a native pool word:** `Madchester
-  skit` is a British place name plus an *American* form word in the same slot, and the model picks
+  three rounds running. 🔴 **And never weld a foreign form-word to a native pool word:** a British
+  scene name plus `skit` is a British place word plus an *American* form word in the same slot, and the model picks
   rather than averages. **Run the accent audit — all three boxes at once** — grepping for the wrong
   nationality's scene names, form words (`skit`, `interlude`), production slang (`dusty`, `boom bap`)
   and the literal country adjective, then weight by **position**: genre position and the form word are
@@ -619,38 +616,36 @@ family too; what stays unbanned is the **underscore** — `ambient bed, drone, r
 
 ### The narrator problem
 
-A story may need one recurring voice across a whole release arc (GPOM's narrator: its `sound.md`). That is a *feature* problem, not a
+A story may need one recurring voice across a whole release arc (that story's `sound.md` holds its recipe). That is a *feature* problem, not a
 prompt problem — see `suno-controls-and-workflows.md` §4 for the full stack (Voice + custom model +
-Lyricist). Two notes from building GPOM's (its recipe and settings live in GPOM's `sound.md`):
+Lyricist). Two notes from building one (its recipe and settings live in that story's `sound.md`):
 
 - **Engine fact: a Voice built in a register unrelated to the song's genre escapes the per-genre
-  vocal default.** GPOM built its narrator that way; which register (oratory, opera, preacher,
-  crooner, anything) is the story's choice. Audio influence 40–60 had the strongest effect there. <!-- style-lint: ok — GPOM's narrator, labelled on the line above -->
+  vocal default.** One story built its narrator that way; which register is the story's choice. Audio influence
+  40–60 had the strongest effect there.
 - **Narration segments** use "Getting a man to TALK" below — **not** the spoken-word recipe in
   `suno-tag-mechanics.md`, which is superseded for narration. It composes with
   a saved Voice — so the narrator can speak in one track and sing in the next as the same character.
 
-### If the song is drum & bass — where Suno will fight you
+### Where Suno will fight you (niche genres)
+
+Engine facts measured on one genre; the genre itself is the story's call. The genre-specific version lives
+with that genre's library entry, for a story that picks it.
 
 1. **Half-time drums are a known blind spot.** Repeated controlled tests never produced half-time
-   from a `breakdown` tag — it slows and thins the arrangement instead. Since the half-time drop is a
-   defining D&B device, **assume you cannot prompt it.** Get it by editing in Studio or splicing
+   from a `breakdown` tag — it slows and thins the arrangement instead. If a genre's defining device
+   is a half-time drop, **assume you cannot prompt it.** Get it by editing in Studio or splicing
    sections, and tell the user that rather than selling them a prompt that won't work. **Live lead,
-   untested:** Studio 2.0's MIDI tracks let you program the pattern by hand instead of asking the
-   model for a concept it doesn't hold (`suno-studio.md` §2). Offer it as an experiment worth an
-   hour, not as a solution — and write the result back into the doc either way.
-2. **Niche subgenres fail; broad ones work.** Riddim came back as generic dubstep with none of the
-   characteristic sound design — expect the same at neurofunk / liquid / jump-up level. **Mitigation:
-   describe the sound design and rhythm rather than relying on the subgenre name.** **v6 data
-   point (2026-09-09, ChillPanic):** a lazy `liquid DnB` prompt came back as two-step drums, while
-   an engineered one naming the drum mechanics (`jungle breaks, rapid chop, hyperdetail
-   percussion, dark synth bassline`) worked on both models. Same lesson, now on v6. v6 Wild is
-   deliberately "less tuned towards preferences" — the model to hunt niche D&B in, then Cover
-   into v6 (`suno-v6.md` §9). `producer-
-   vocabulary.md` is exactly that toolkit — reese bass, sample-and-hold on the cutoff, amen break,
-   sub layering, sparse drop.
-3. **Suno's harshness sits exactly where D&B lives** — brittle cymbals, sizzling hats, sibilance in
-   2–6 kHz. Budget for de-essing, or plan to replace the drum stem.
+   untested:** Studio 2.0's MIDI tracks let you program the pattern by hand (`suno-studio.md` §2).
+   Offer it as an experiment worth an hour, not as a solution, and write the result back either way.
+2. **Niche subgenres fail; broad ones work.** A niche subgenre name comes back as its broad parent
+   with none of the characteristic sound design. **Mitigation: describe the sound design and rhythm
+   rather than relying on the subgenre name** (v6, 2026-09-09: a lazy subgenre prompt failed, one
+   naming the drum mechanics worked on both models). v6 Wild is deliberately "less tuned towards
+   preferences": the model to hunt a niche sound in, then Cover into v6 (`suno-v6.md` §9).
+   `producer-vocabulary.md` is the toolkit for naming the mechanics.
+3. **Suno's harshness sits in 2–6 kHz** — brittle cymbals, sizzling hats, sibilance. Budget for
+   de-essing, or plan to replace the drum stem.
 4. **Sidechain pumping can't be undone** — it's baked in, not a real sidechain.
 5. **Sounds mode is a post-production kit** — risers, downlifters, sweeps, impacts, fills, at
    your project's BPM and key. Suno won't build transitions into a generation, so this is how you get

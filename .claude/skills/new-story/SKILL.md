@@ -1,6 +1,6 @@
 ---
 name: new-story
-description: Use when starting, capturing, or developing a BadCode story — scaffolds docs/stories/<story>/ (concept, characters, beats, its own look and sound via story-style, song) as the single source of truth and drives idea → media. Triggers on "new story", "capture this story", "let's develop <story>", "write the canon for <story>", or working on camping / Karen Will Lead the Revolution / The Magic Money Tree / GitPush Origin Master.
+description: Use when starting, capturing, or developing a BadCode story — scaffolds docs/stories/<story>/ (concept, characters, beats, its own look and sound via story-style, song) as the single source of truth and drives idea → media. Triggers on "new story", "capture this story", "let's develop <story>", "write the canon for <story>", or developing any story under docs/stories/.
 ---
 
 # New Story (BadCode)
@@ -10,7 +10,7 @@ description: Use when starting, capturing, or developing a BadCode story — sca
 > for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
 
 
-Take a story idea — a fragment, a reference, an existing comic, a GPOM beat — and
+Take a story idea — a fragment, a reference, an existing comic, a beat from another story — and
 capture it as canon under `docs/stories/<story>/`, the single source of truth that the
 comic, the song(s), and any later media derive from. Drive it collaboratively
 from the CLI; write the files as you go.
@@ -32,8 +32,8 @@ from the CLI; write the files as you go.
   causal sentence, the one costed object that carries it, the last beat fixed first,
   beats joined by but/therefore, a midpoint that reverses. Hand over beats with the
   checklist rows you ran (`docs/story-craft/checklist.md` §0–§2).
-- For canon-linked stories, skim `docs/stories/gitpush-origin-master/README.md` to stay
-  consistent with the arc.
+- If the story belongs to the shared storyverse, skim `docs/stories/storyverse/` to stay
+  consistent with it.
 
 ## The structure you produce
 
@@ -57,7 +57,8 @@ Frontmatter is light and is the subset machine artifacts need:
 - `characters/<name>.md`: `name, role, voice, sheet, signals`
 - `songs/<slug>.md`: `title, status, suno: {style, exclude}, bpm, voices`
 
-`docs/stories/camping/` is the worked reference — match its shape.
+`docs/stories/badcode-template.md` is the shape of the `badcode.md` at the top. Build from the templates only;
+never open another story's folder to copy its shape (that is how one story's look leaks into another).
 
 **There is no house style** (Kai, 2026-10-28). A new story's `look.md` and `sound.md` start EMPTY
 from the templates in `docs/stories/STYLE.md`. Never seed them from another story: a new story's
@@ -65,18 +66,19 @@ look and sound are found by the **`story-style`** skill (step 4) and written bac
 
 ## Workflow
 
-1. **Take the idea.** Fragment, reference, existing comic, or GPOM beat. Don't
+1. **Take the idea.** Fragment, reference, existing comic, or a beat from another story. Don't
    demand a brief.
 2. **Scaffold** `docs/stories/<story>/` with the files above, plus **`badcode.md`** ([template](../../../docs/stories/badcode-template.md)).
    **What goes in its context (Jack's rule, 2026-11-17).** Before anything is generated, open the
    [library](../../../docs/library/README.md) and propose the pieces this story should take in: two to five looks, sounds
-   or tricks, each with one line on why, plus "nothing from the library" as an option. Put it to Jack or Kai as one
+   or tricks, each with one line on why, **always including at least one trick** from
+   [`tricks/`](../../../docs/library/tricks/README.md) (clean room, reference photo, balaclava…), plus "nothing from the library" as an option. Put it to Jack or Kai as one
    question (AskUserQuestion, multi-select). Copy only the picked pieces into the story's `badcode.md` under **Library
    pieces in use** (adapted, never linked as a live rule). Nothing else from the library, another story or a shared doc's
    examples applies.
 3. **Capture the spine** collaboratively, writing each file as it firms up:
    **Key concept** (the one idea), **Background** (real-world grounding), then
-   **characters**, then **high-level beats**. For an *existing* story, reverse-
+   **characters**, then **high-level beats** (Jack and Kai write the jokes (`docs/rules/working.md`): a beat says what to joke about and what it must convey; the joke line and the punchline stay blank for them. Never draft one unless one of them asks.). For an *existing* story, reverse-
    engineer from current material (comic scenes in `comic.meta.ts`, existing
    lyrics) rather than inventing.
 4. **Look and sound.** Once the spine and beats hold, run the **`story-style`** skill: an interview
@@ -100,7 +102,7 @@ look and sound are found by the **`story-style`** skill (step 4) and written bac
    `python3 scripts/provenance/build-timelines.py docs/stories/<story>` and publish
    `timelines/index.html` as an artifact. Put its link in `timelines.json` (`url`) and **at the top of
    the story's `README.md`**. Then rebuild and republish to the same link whenever a timeline changes.
-   Full rules: [`docs/provenance/README.md`](../../../docs/provenance/README.md). Worked example: GPOM.
+   Full rules: [`docs/provenance/README.md`](../../../docs/provenance/README.md).
 
 ## Principles
 

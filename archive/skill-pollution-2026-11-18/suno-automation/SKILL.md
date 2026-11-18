@@ -1,0 +1,541 @@
+---
+name: suno-automation
+description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running a slider pair, constraining a track to a target length, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "make it 30 seconds", "constrain the length", "set the duration", "put this in the gpom-story workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand; also "mass generate", "run a grid", "try every permutation", "v6 vs Wild", "set the model", "set Variety". Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
+---
+
+# Suno Automation
+
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
+**The machine half of Suno.** Everything about making the app do what the sheet says, and
+nothing about what the sheet should say.
+
+🛑 **An exploring round (new voices, new sounds, "experiment") runs ONLY through
+the `variations` skill** (`scripts/variations/round.py`: separate writer subagents, a sameness gate,
+then `round.py run <dir> <title> --yes`) — never `pair`, `grid` or `load` on prompts this session
+wrote or retyped. `run` refuses a round edited after its gate. What a song should sound like comes
+only from the story's `docs/stories/<story>/sound.md`. Why, and every trap it guards: [`docs/suno-gpt/same-song-traps.md`](../../../docs/suno-gpt/same-song-traps.md)
+(Jack, 2026-10-24: *"i do not want the same mistakes made over and over"*).
+
+## What this is not
+
+Three jobs touch Suno and they are deliberately separate. Reaching for the wrong one is how
+guidance drifts.
+
+| Job | Skill | Question it answers |
+| --- | --- | --- |
+| **Driving it from code** | **this skill** | Which selector? Why did it silently do the wrong thing? How do I not spend credits twice? |
+| **Writing for it** | `suno-prompt` | What words go in the Style box? What lyrics? Which slider? |
+| **How to run a session** | [`session-method.md`](../../../docs/suno-gpt/session-method.md) | One variable per round; diagnose before rewording |
+
+`suno-prompt` also owns **human click-paths** — "what do I click to split stems", Studio, Voice
+creation. This skill owns **programmatic driving over CDP**.
+
+## Knowledge base
+
+📖 **[`docs/suno-gpt/automation.md`](../../../docs/suno-gpt/automation.md) is mandatory reading
+before changing any selector.** It carries the DOM map, the eight silent traps, the operating
+protocol and the verified/unverified table. Every workaround in the script exists because the
+obvious approach produced a plausible-looking wrong result.
+
+🛠 **The tool is [`scripts/suno/suno.mts`](../../../scripts/suno/suno.mts).**
+
+## 🔑 v6 — all new Suno work is v6, in the new UI (Kai, 2026-09-10)
+
+v6 retired v5.5 on 2026-09-09 and added form state. **Mapped live and wired into `suno.mts` on
+2026-09-10** — [`automation.md`](../../../docs/suno-gpt/automation.md) §9:
+
+- **Every spec needs `model`** — `'v6'` or `'v6-wild'` (exact menu labels). `load` refuses without
+  one, refuses anything older than v6, and warns on `v6-mini`.
+- It also sets and **reads back** `variety` (`off` · `normal` · `high` · `extra` · `max`, default
+  normal), `maxMode` (default false) and `vocalGender` (default null = neither), and forces
+  **Personalize OFF — always** (Kai, 2026-09-10). Omitting a field sets its default — never
+  "whatever was left".
+- 🔴 **Suno can switch the model by itself** ("Model changed… to support your selected
+  conditions"), so the model is read back **last**, after the Voice, before any Create.
+- **`controls <spec>`** sets and reads back only those settings — no prompt box. Free.
+- **`grid-plan <spec>`** prints the cells and titles and spends nothing; **`grid <spec>`** loads
+  the atom once, then Creates every cell of `spec.grid` (model × variety × maxMode × weirdness),
+  logging the credit balance around each Create. **`pair` is now a one-axis grid.**
+
+What the controls *do* is `suno-prompt`'s side: [`suno-v6.md`](../../../docs/suno-gpt/files/suno-v6.md) §2.
+Which cells a round runs (model, Variety, the slider values) comes from the story's `sound.md`,
+never from this skill; §9 of `automation.md` records the grid mechanics.
+
+✅ **A v6 Create costs 10 credits for 2 takes** — proven 2026-09-21 across twelve Creates
+(Camping r54), custom Duration included, so a pair is 20 credits exactly as on v5.5.
+
+## Preflight
+
+Suno runs in **this session's channel — the same browser as Flow**, one login per profile.
+
+```bash
+npx tsx scripts/suno/suno.mts status          # starts this session's browser if it is down, reads the form back
+```
+
+### 🔑 Channels — ask for one, never pick a port (2026-08-26)
+
+A **channel** is one CDP port plus one Chrome profile, merged into one number. `suno.mts`
+resolves it as: `SUNO_CDP_ENDPOINT` → `FLOW_CDP_PORT` → **the channel this session's flow MCP
+server has locked** → 9222. So Suno and Flow in one session share a browser (correct), and two
+sessions never collide.
+
+Nothing to configure, and **nothing to launch**: `suno.mts` starts the session's own browser if it
+is down (2026-09-28). 🔴 **Never run `browser-channel.sh claim`** — it skips the channel the flow MCP
+already holds and opens a **second** Chrome (Kai saw two windows every session). If a launch fails,
+`browser-channel.sh list` then `up <n>` for *this* session's channel.
+
+🔴 **`LOGGED_IN=no` means STOP and ask the user to sign in to Suno** in that window, naming the
+channel. A fresh profile is always logged out — relaunching only makes a second logged-out
+browser.
+### 🔴 ONE Suno session at a time — the channel system does NOT make Suno concurrent (2026-08-27)
+
+Browser channels give Flow safe concurrency because each channel is its own tab and profile.
+**Suno defeats that, twice over, and both are account-level:**
+
+1. **There is ONE create form.** It is a single shared surface. A second session running `load`
+   **wipes whatever the first was holding, with no draft recovery.**
+2. ~~**My Taste is ONE account-wide box.**~~ No longer a reason since 2026-09-10 — we don't use it
+   and Personalize is always off. Reason 1 stands on its own, and so does Kai's one-tab rule.
+
+**So before touching Suno: check no other session is mid-run.** `status` is the tell — if the
+form holds a title and workspace belonging to another sheet, **stop and ask** rather than
+loading over it. Note the title, workspace, `styleLen`, `excludeLen` and sliders first, so the
+other session can reload.
+
+📎 **Proven the hard way 2026-08-27:** a GPOM narration session and a Camping session ran
+simultaneously. The GPOM session read `status`, found a Camping cover loaded (`camping-duet`,
+take c3), and loaded over it. Separately, the credit balance **dropped by 30 mid-session** —
+the other session generating — which is the other reliable tell.
+
+🔴 **We still never automate downloading.** Suno caps downloads per month and that allowance is
+only ever spent by a human. Two channels do not double it.
+
+Model: [`docs/flow/concurrent-sessions.md`](../../../docs/flow/concurrent-sessions.md).
+
+`status` failing with `NO_CONTEXT` means Chrome isn't up. `status` returning nulls means the
+create page isn't open — the script will navigate there itself on the next command.
+
+## The loop
+
+```bash
+# 1 ── pull the three boxes straight out of the sheet (no transcription risk)
+npx tsx scripts/suno/suno.mts extract \
+  docs/stories/gitpush-origin-master/songs/narration.md '`gpom-datacentre` — ' > /tmp/spec.json
+
+# 2 ── add how to file and grade it
+#      { ...boxes, model, title, workspace, voice, styleInfluence, audioInfluence, weirdness,
+#        variety, maxMode, vocalGender, personalize, grid }
+#      ← model AND the sliders are REQUIRED, copied from the story's sound.md
+
+# 3 ── load everything. Spends NO credits.
+npx tsx scripts/suno/suno.mts load /tmp/spec.json
+
+# 4 ── or load AND generate both cells of a slider pair (the spec names both values)
+npx tsx scripts/suno/suno.mts pair /tmp/spec.json
+
+# 5 ── or a whole grid: preview it (free), then run it
+npx tsx scripts/suno/suno.mts grid-plan /tmp/spec.json
+npx tsx scripts/suno/suno.mts grid /tmp/spec.json
+
+# 6 ── read the takes back
+npx tsx scripts/suno/suno.mts takes gpom-cut1
+```
+
+`load`, `controls` and `grid-plan` are always safe. A v5.5 Create cost 10 credits for 2 takes;
+**the v6 cost is not yet known** — `pair` and `grid` print the balance around every Create.
+
+## The rules that are not negotiable
+
+### 🔑 THE ATOM — three boxes + the settings, one unit (Kai, 2026-08-27; amended 2026-09-10)
+
+**A "style" is not the Style box. A style is THREE boxes**, and they describe one sound:
+
+| | |
+|---|---|
+| **Style** | the arrangement |
+| **Exclude styles** | what it must not become |
+| **Lyrics** | the words and their bracket cues |
+
+🔑 **My Taste is retired and Personalize is ALWAYS OFF** — Kai, 2026-09-10: *"we should stop
+trying to use the My Taste box and always have personalize off when we generate a song, because
+then each song becomes an atomic unit."* Until then My Taste was the atom's fourth box; it was
+account-wide and invisible, so it was always the one left behind. `load` now forces Personalize
+off, asserts it before every Create, and never reads, writes or checks My Taste.
+
+🔴 **The boxes change together or not at all.** Kai: *"if we're changing any of the prompts, we
+should change all of the prompts… it's an atomic action."* Changing some leaves a **hybrid nobody
+designed**.
+
+📎 **This is not theoretical.** GPOM's narration taste profile sat in My Taste under **fourteen**
+Camping cover rounds and a scouting set, demanding *one voice* for a two-man duet and *almost no
+music* for a drum-and-bass track. Every "genre X didn't work" finding from those rounds is unsafe.
+
+### 🔑 The two levels of change — and only two
+
+Every round is one of these. Naming which one you are doing is the discipline.
+
+| Level | What moves | What must NOT move |
+| --- | --- | --- |
+| **1 · Prompt round** | **all three boxes**, together | — |
+| **2 · Slider round** | audio influence · style influence · weirdness | **every prompt box.** Not one word |
+
+**A round that changes a prompt *and* a slider tells you nothing**, because two variables moved.
+Within one atom you may run as many slider rounds as you like — that is the cheap axis, and it is
+where a slider pair lives.
+
+### 🔴 BOLD, NOT MEEK — a genre experiment rewrites the prompt, it does not patch it
+
+Kai's ruling, 2026-08-27: *"the idea of changing a single sentence inside the style to represent a
+new style, I would call a meek effort. So let's do a bold effort… completely change the style
+prompt when we are in this mode of experimenting with different styles."*
+
+The four-box rule above says the boxes move **together**. It does not say how far, and that gap
+produced two failed sweeps: ten "different genres" built from one shared skeleton with a swapped
+clause. They were atomic *and* meek, and they sounded like one record ten times.
+
+**Measure it before spending.** Take the longest run of identical text between any two variations'
+Style boxes:
+
+| Longest shared run | Verdict |
+|---|---|
+| **> 40% of the prompt** | 🔴 meek — this is one prompt with a costume. Rewrite before running |
+| **10–40%** | 🟡 check *what* is shared: production language shared = still meek |
+| **< 10%, and only the cast** | ✅ bold |
+
+*(Camping's sweep: 644 chars / 78% shared at g1 → 69 chars / 10% at g3, where those 69 characters
+are the casting phrase and nothing else.)*
+
+**What may be shared, and it is a short list:** the cast, the words, and the one musical constant
+the brief actually names (Camping's brief named its drum foundation; another story's names its own,
+or none). **Everything else
+belongs to the variation** — and two categories matter more than the genre noun itself:
+
+- 🔑 **Mix and production language decides how a record sounds.** `wide, surgical, mastered loud
+  and airless` versus `mid-heavy, narrow, tape hiss and clipping left in` versus `crushed to
+  twelve bits, almost mono, no highs` are three different records. Ten variations that all say
+  *"dry, raw and close-mic'd"* are one record. **If the production sentence is shared, the sweep
+  is meek no matter how different the genre words are.**
+- 🔑 **Vocal delivery belongs to the genre too.** Camping g1 said *"barked and metrical, locked to
+  the beat"* in all ten lanes, so ten genres arrived in one voice. Keep only the delivery rules
+  that are the *song* (for Camping: two named men, `never sung`) and let the genre own the rest —
+  spat, chanted, rapped, roared, half-yelled, screamed.
+
+**Excludes go per-variation, and each one bans the OTHER variations' sounds.** A shared ban list
+is itself a flattening force: it applies one aesthetic decision to every lane, and it will happily
+ban `guitar` on a lane built out of guitars.
+
+**Write each variation EXTREME, not tasteful.** The point of a sweep is to find the edges so an ear
+can choose; a tasteful spread returns ten versions of what you already had.
+
+### 🔑 How sheets must be written
+
+**Each experiment is a self-contained block holding all three boxes**, separate from every other
+experiment — so a variation can be heard as fully itself. No ```taste fence (retired
+2026-09-10); older sheets that have one still extract, and `load` ignores it loudly.
+
+````markdown
+#### variation-name
+
+Style:
+
+```
+…
+```
+
+Exclude styles:
+
+```
+…
+```
+
+Lyrics:
+
+```lyrics
+…
+```
+````
+
+⚠️ **An INSTRUMENTAL atom has no lyrics** — style + excludes is the whole of it, and that is
+valid, not short.
+
+### 🔑 What the tooling now enforces
+
+- **`load` forces Personalize OFF** and asserts it before every Create; a spec with
+  `personalize: true` is refused.
+- **`load` never touches My Taste** — no read, no write, no ownership check. (Until 2026-09-10 it
+  wrote and read back the box every run; Kai had accepted that latency. It is gone.)
+- **`load` REFUSES a spec with no `model`.**
+- `npx tsx scripts/suno/suno.mts taste` still exists to *look* at the box when debugging a leak.
+
+### 🔴 Never automate downloading
+
+Suno **caps downloads per month** — a **cost rule, not a permission one**. A script must never
+spend that metered allowance. Automation generates, names, files into a workspace, and **stops**.
+Downloading and stem-splitting stay deliberate human acts because the allowance is small.
+
+There is no download tool and there must not be one.
+
+✅ **Recording the player's output is not a download** and is allowed: it spends no allowance and is
+equivalent to pressing Play (Kai, 2026-09-12). `suno.mts record`, and `docs/suno-gpt/automation.md` §10.
+
+### 🔑 HOW TO REPORT A ROUND (Kai, 2026-09-19)
+
+A round is reported as **one line per take: its NAME, its length, and its suno.com link.** A bare
+`/song/<uuid>` says nothing about which take it is — the title carries the revision and the weirdness.
+
+```bash
+npx tsx scripts/suno/suno.mts takes <titleFilter> --links
+# gpom-c12-cues3-v6-w10  1:40  https://suno.com/song/2ef65422-9967-4ddb-a6f3-1f5a56c96b71
+```
+
+Paste those lines into the reply and into the song sheet's round log. Then stop — the human listens
+and picks. (Without `--links`, `takes` still prints the JSON rows for a script to read.)
+
+### 🔴 RECORD ONLY WHEN THE USER SAYS "RECORD" (Kai, 2026-09-18)
+
+**Generating a take does NOT mean recording it.** `record` is its own explicit step, asked for in
+words — *"record it"*, *"get me that file"*, *"put it in Premiere"*. Never chain it onto a Create,
+never record "so it's ready", and never record every take of a round on spec.
+
+Kai: *"I want to make sure that recording is a very explicit step… I don't want, when we generate a
+track, to automatically record it. When I say record, is the only time we should ever run that skill."*
+
+**Why it matters even though it is free:** it takes real minutes per take (each one plays in full),
+it fills the media folder with takes nobody picked, and it quietly assumes the judging is done.
+
+**So a round ends at:** the takes exist, their titles and song IDs are reported with links, and the
+round is logged. Then stop and let the human listen and pick. Record the pick, and only the pick.
+
+🔴 The same rule governs **listening** (`mcp__listen__listen_describe`): only on an explicit request
+(Kai, 2026-09-17). Generating is automatic; hearing and keeping are human-triggered.
+
+### 🔴 Credits are Kai's to spend
+
+`load` freely. **Do not run `pair`, or click Create, unless the user asked for that round.**
+Report the credit balance (`status` returns it) rather than assuming.
+
+### 🔑 The settings come from the story — and the spec must carry them
+
+**There are no house slider values.** Style Influence, Audio Influence and Weirdness are written in
+the story's `sound.md` (per track, beside the picked take's boxes) and copied into the spec. A spec
+without them is refused: `suno.mts` and `take-row.mts` no longer fill a missing slider or an
+`explore` / `narrow` cell with a built-in number (2026-10-29). If `sound.md` has no settings yet,
+that is an exploring round → `variations`.
+
+**A slider round may pair two values chosen from the story's `sound.md`** (e.g. two weirdness
+values), titled by the value (`…-w<n>`). Which value reads better is not predictable in advance,
+so a pair is a cheap data point. **Record which won and why — in the story's `sound.md`.**
+
+**On v6 a pair is one row of a grid.** Model and Variety are slider-round axes too — a cell may
+change them and nothing else. The grid mechanics are in `automation.md` §9.
+
+### 🔑 Timing — narration lands within ±10s of the picture
+
+Narration is cut against **built picture**, so a take that misses its budget costs an edit.
+**Ruled 2026-08-24: within 10 seconds of the cut's budget.** Set `durationSec` in the spec, from
+the cut's budget (a story's per-cut budgets live in its own files, e.g. GPOM's narration sheet).
+
+🔴 **Always aim slightly ABOVE the budget.** Suno's duration is a **target, not a contract**, and
+it **shortens reliably but repeatedly fails to stretch**. Long trims; short is a reshoot.
+
+🔴 **Two duration controls exist and only one is Advanced Mode's.** The number input with
+Custom/Auto is the **Simple** panel's, and it is **not linked** — writing to it does nothing,
+silently. Advanced's is the slider `[role="slider"][aria-label="Duration"]`, 10–360, step 5,
+inside **More Options** (collapsed by default; its trigger needs a **real mouse click**).
+
+🖐 For an exact value by hand: hit **Custom**, then **double-click the number** — it becomes a
+typeable text box. Automation uses the slider, whose 5s granularity is inside the ±10s tolerance.
+
+✅ **Proven 2026-09-18 (Camping r48):** a 195 s target produced **12 takes out of 12 at 3:14–3:16**
+— about ±1 s, across three Style boxes and two weirdness settings. 🔑 **On v6, Duration Auto runs
+long:** the same lyrics on Auto the same day came back at 4:38 and 4:55. **Set the number.**
+✅ **Custom duration does not double the credit cost** — 2026-09-21 (Camping r54): twelve v6 Creates at Duration 195 s, **10 credits each**, read before and after every Create.
+
+### 🔑 Naming
+
+`<story>-<cut>-<revision>-<model>-w<weirdness>` — e.g. `gpom-cut1-A-v6-w<n>`,
+`gpom-cut1-A-wild-w<n>`; a grid that varies Variety or Max Mode adds `-var-<step>` / `-max`. The
+script builds these from the spec's `title` (the part up to the revision). The **letter is the
+prompt revision** and advances every time the prompt changes. Never a bare letter: the sheets also use
+A/B/C for scenes.
+
+### 🔑 Workspaces
+
+Set the workspace **before** Create — it routes the output, and moving clips afterwards is
+manual. The workspace id lands in the URL as `?wid=<uuid>`.
+
+---
+
+## 🔴 INHERITANCE IS A BUG. Declare the whole form, assert it, then Create.
+
+**Ruled 2026-08-27, after four separate versions of the same failure in one day.** The create form
+is **persistent, account-level and shared** — with a human, and with any other session. Every field
+you do not set this run is a field someone else set, and **none of them error**:
+
+| What leaked | How it looked | What it cost |
+| --- | --- | --- |
+| **My Taste** | invisible from the create page | fourteen Camping rounds under another song's profile |
+| **A saved Voice** | 🔴 the worst one — **overrides the casting outright**, silently | a two-man duet generated in GPOM's one narrator voice |
+| **Workspace** | takes simply appear somewhere else | twelve takes filed into another story, moved back by hand |
+| **Duration** | a number left behind by another sheet | every take clipped, or padded, with nothing saying so |
+
+**So a run must state its COMPLETE intended form state and verify the live form against it before
+clicking Create.** Not just the boxes it is changing this round. Concretely, assert **all** of:
+style length · exclude length · lyric paragraphs · **model** · Variety · Max Mode · Vocal Gender ·
+**Personalize OFF** · **attached Voice** ·
+workspace · Weirdness · Style Influence · Audio Influence · Duration · title · (covers) the
+attached audio.
+
+🔴 **Voices specifically: assert NO voice unless the sheet names one.** With none attached the
+control reads exactly `Voice`; attached, it reads the persona's **name**. A sheet that casts its
+voices in the Style box — which is all the Camping sheets — must abort when anything is attached,
+because a Voice beats the Style box and the take will sound *plausible*, just not cast.
+`cover-genre.mts` carries the reference implementation (`EXPECT_VOICE` / `NO_VOICE`).
+
+### 🔴 EVERYTHING ON THE FORM PERSISTS — the general law (2026-08-27)
+
+**Filling the four boxes changes the four boxes and NOTHING ELSE.** Every other piece of form state
+survives into the next run, and each one has now bitten us, in this order:
+
+| State | How it bit | Guard |
+| --- | --- | --- |
+| **Mode + attachment** | an inherited **Cover** form generated two narration pairs as covers of a Camping track — 40 credits, and a confident false diagnosis | `formMode()` aborts on wrong mode or any attachment |
+| **Saved Voice** | an *instrumental* generation ran with GPOM's saved Voice (`badcode newsreader`) still attached, because the spec simply had no `voice` key | `load` aborts if a Voice is on and the spec asks for none |
+| **Duration** | **eight takes came back at 1:05 apiece from specs with no `durationSec` at all** — an earlier round had set 65 and omitting the field cleared nothing | `setDurationAuto()` runs whenever `durationSec` is absent |
+
+🔑 **The law: OMITTING A FIELD IS NOT THE SAME AS CLEARING IT.** Any spec field that maps to form
+state must have an explicit "off" path, or the next run silently inherits the last one's setting.
+**Assume anything you did not actively set is still whatever the previous session left.**
+
+⚠️ **`status`'s `durationSec` is not trustworthy** — it kept reading `65` after the input was
+verified empty. The authoritative read is `input[placeholder="Auto"][type=number]`, whose
+**placeholder is "Auto", so an empty value IS Auto**.
+
+### 🔴 CHECK THE MODE BEFORE THE BOXES — the most expensive miss so far (2026-08-27)
+
+**The create form has FOUR mode tabs — Simple · Audio · Custom · Cover — and an
+`Audio / Voice / Inspo` attachment row. Filling the four boxes clears NONE of it.**
+
+So a form inherited in **Cover** mode with a source attached **silently generates covers of
+somebody else's track**, carrying that track's arrangement — while `status` reports style,
+excludes, lyrics, sliders, title and workspace all perfectly correct.
+
+📎 **What it cost:** two GPOM narration pairs (revisions A and B, **40 credits**) were generated as
+covers of a Camping source left attached by another session. Both void. And it produced a
+convincing false diagnosis — "there is music under my dry read" was blamed on the taste box and on
+audio-influence bleed from the cloned Voice. **Those were real bugs and worth fixing, but the cover
+attachment was the dominant cause and nobody had looked at it.**
+
+🔑 **The lesson generalises: `status` reads the boxes, not the KIND of thing being made.** A
+green-looking form is not a safe form.
+
+`load` now calls `formMode(page)` **before it fills anything** and aborts when the mode is not
+`custom` or when anything is attached. Pass `mode: 'cover'` in the spec when a cover is genuinely
+wanted. ⬜ **The check reports; it does not clear.** Removing an attachment is still a human act —
+the selectors have had exactly one live read and are otherwise unverified.
+
+### 🔴 ONE SUNO TAB, EVER — Kai's ruling, 2026-08-27
+
+*"I'm going to say that we're never going to run more than one Suno tab at a time, because I think
+we're getting in a real mess here."*
+
+**Not one session per channel. One tab, full stop.** Everything that matters is account-level — the
+create form, its mode and attachments, My Taste, the Voice list, the credit pool — so two tabs are
+two hands on one instrument. The freedom token below manages the handover **between** sessions; it
+does not make them concurrent.
+
+**If another session is working, WAIT.** Do not open a second tab to be helpful.
+
+### 🗄 THE FREEDOM TOKEN — retired 2026-09-10
+
+**Retired with My Taste** (Kai, 2026-09-10: Personalize always off; we stop using the box).
+Nothing checks, claims or releases the box any more, and a profile sitting in it is no longer a
+reason to stop. Kept below as history — it was Kai's 2026-08-27 ruling, *a lock file in reverse*,
+for when the box was part of every generation:
+
+| When | Rule |
+| --- | --- |
+| **Before any generation** | My Taste MUST read exactly `MUST_REPLACE_HERE`. **Anything else means someone owns the box — PAUSE AND ASK THE HUMAN.** Never load over it. |
+| **After any generation** | Write `MUST_REPLACE_HERE` back. That is what hands the box to the next session. Do it on the failure path too — a half-finished round still leaves a profile installed account-wide. |
+
+The token is deliberately nonsense: a human who hand-generates while it is in force sees gibberish
+in the box and knows to fill it, instead of silently inheriting the wrong song's profile.
+
+**Do NOT restore "the previous profile" afterwards.** That was the old behaviour and it was the
+bug: `taste-backup` captured whatever was ambient and `taste-restore` faithfully reinstalled it,
+so a leaked profile was preserved forever and looked like the house default.
+
+Helpers in `suno.mts`: `TASTE_FREE`, `tasteOwner(page)` (null when free, else the live text),
+`releaseTaste(page)`. Reference use: `cover-genre.mts` — gate 1 claims, gate 2 releases.
+Taking the box off someone is one explicit command that backs up first: `… taste-release`.
+
+🔴 **And Suno is not concurrent.** Browser channels make *Flow* parallel; they do nothing here,
+because the create form, My Taste, the Voice list and the credit pool are all **account-level**.
+**One Suno session at a time.** Run `status` first, and if the form holds another sheet's title or
+workspace, stop and ask rather than loading over it.
+
+## The seven traps that will bite you
+
+Full detail in the knowledge base; this is the short list.
+
+| Trap | What it looks like | The rule |
+| --- | --- | --- |
+| **Overwrite Styles?** | Attaching a Voice offers to replace your Style box with the persona's own — for GPOM's saved Voice (`badcode newsreader`) that's GPOM's own track style. Box looks populated afterwards. | **Always Keep Current.** The script does this and logs it. |
+| **Lexical lyrics** | `fill()` puts all lines in ONE paragraph with raw `\n`. Renders convincingly, structurally destroyed. | Insert line by line. **Verify by counting `<p>`, never characters.** |
+| **Two panels mounted** | Selectors match twice; one copy hidden, one at negative `y`. | Scope to the Advanced panel via the styles wrapper; keep `offsetParent !== null`. |
+| **Navigation wipes the form** | Clicking Library or reloading clears everything. No draft recovery. | Never browse mid-load. Re-run `load`. |
+| **Shared right pane** | Opening the workspace picker replaces the clip list with the workspace browser, so a take listing comes back **empty though the takes exist**. | Click back into the workspace. **Never navigate** — that wipes the form. |
+| **Save-to naming** | The picker button's text is the *current workspace name*, and the label is a separate element. | Anchor on the `Save to...` container; take the **longest** match to read the name. |
+| **Two duration controls** | The Simple panel's number input is unlinked; writing to it changes nothing in Advanced. | Drive `[role="slider"][aria-label="Duration"]`. Expand More Options with a **real mouse click** first. |
+
+Two smaller ones: the Style box **truncates** at its 1,000 cap rather than refusing (the script
+asserts the length back), and `aria-label="Generate"` is the **Lyricist**, not Create — Create is
+`aria-label="Create song"`.
+
+### 🆕 Three more, found 2026-10-22 (Bank Robbery)
+
+- **The cookie banner blocks Create.** On a fresh profile, Suno's consent banner (`#cmp-banner-container`)
+  sits over the Create button: `pair` hangs with the form loaded and nothing generated. Click
+  **Reject All** once per profile (`scripts/suno/.tmp/cookies.mts`) before a run.
+- **A pinned take has no row.** It shows only as a card in the strip above the list, so `takes` and
+  `record <title>` cannot see it. `record <full song id>` now falls back to the card's own Play button.
+- **To listen, record; never fetch the stream.** The CDN `.m4a` is encrypted (no `moov` atom). If
+  `record` says `PULSE_FAILED … Connection refused`, WSLg's audio is wedged: run `./scripts/audio-server.sh`,
+  then `browser-channel.sh down 1 && up 1` (Chrome reads the sink at launch), then `open-tab`.
+
+## Verifying, not assuming
+
+Every command ends by reading the form back. Two checks earn their keep:
+
+- **`styleLen` must equal the source length** — otherwise the cap truncated it and the tail, where
+  the arc lives, is gone.
+- **`lyricParas` must equal the line count** — character count passes on a broken lyrics load, so
+  paragraphs are the only check that fails when the Lexical trap fires.
+
+`load` refuses to continue into `pair` if either assertion fails, so a bad load never spends
+credits.
+
+## When something goes wrong
+
+| Symptom | Likely cause |
+| --- | --- |
+| `NO_CONTEXT` | Chrome isn't up — run `scripts/flow-chrome.sh` |
+| `workspace:no-picker` / picked the wrong thing | The picker button's text is the *current workspace name*, so never match it by text — anchor on the `Save to...` label |
+| `voice:not-found` | There are three `[role="dialog"]` nodes, most empty — search the document, not the dialog |
+| Takes sound like the wrong song entirely | Overwrite Styles was accepted somewhere — check the Style box length |
+| Bracket cues ignored in the read | Lyrics went in as one paragraph — check `lyricParas` |
+| Everything blank after a command | Something navigated; re-run `load` |
+| Timeout clicking a control | It's the hidden twin or it's in a scroll container — use the native `el.click()` recipe |
+
+## Extending it
+
+The script is deliberately a script, not yet an MCP server. If it grows past this, promote it to
+`packages/suno-mcp` mirroring `packages/flow-mcp`'s shape — see the build order in the knowledge
+base §7. **Do not add a download tool.**
+
+Anything learned about the DOM goes **into the knowledge base**, with a note saying whether it was
+proven live or only read. The verified/unverified table there is the point of the whole document.

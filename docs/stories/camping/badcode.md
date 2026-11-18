@@ -54,6 +54,14 @@ which Suno take song 2 is; [sound.md](./sound.md) has the released drum & bass t
 reggae re-cut as EXPLORING, and its "the men never sing" rule conflicts with song 2's sung hook. Song rules
 that stand: two voices that never blend, never double-time rap, no American accents, the words are fixed.
 
+**Voice lessons from this song's Suno rounds** (moved here 2026-11-18 from the suno skills, where they sat as
+examples): `UK grime influence` kept both men British but cast them as young MCs, when they are a weathered
+fifty-something and a City banker; stripping the accent words and losing `UK grime` in the same edit brought
+both back American. The fix is to name a performance tradition, not the age or class. Candidates written up
+then, never picked: `British post-punk spoken word` for Bob, a BBC-announcer register for Tarquin. Also: a
+fill over a bed that already is that fill never arrives (an amen fill over `chopped amen breaks`); three words
+went missing across nine rounds of lyric edits, so diff the lyrics against the released sheet every round.
+
 **Story-only rules (MV)**
 - Jack's notes on a built cut: make only the noted changes, change nothing else.
 - Check every clip for skin, fingerless gloves and a lost triangle or ring before it goes in.

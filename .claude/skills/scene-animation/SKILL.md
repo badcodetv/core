@@ -43,12 +43,12 @@ read it before writing options. Method rules that have held on every story:
 - **Timed events** use timestamp brackets `[00:00-00:01]` in whole seconds. These place things roughly; Premiere puts them on the beat. Keep flashes at **3 a second or fewer** (photosensitivity).
 - **6–8s clips.** Eight seconds is never a reason to cut a beat short: chain clips last frame to first instead (`docs/video-fx/continuous-shot.md`). Long clips redraw the scene after a few seconds, so cut before that happens.
 
-**The motion is an argument, not decoration**: one deliberate move that serves the beat (GPOM's examples: the machine that doesn't care, the wealth piling while the room dims). Imply it; never sermonise it.
+**The motion is an argument, not decoration**: one deliberate move that serves the beat. Imply it; never sermonise it.
 
 ## What the model cannot do, whichever model it is
 
-**Added 2026-08-14** (moved here from the archived `animate-slide` by the 2026-10-23 skills audit), paid for with five rounds on one four-second shot (the Karen river
-drop). These are properties of video diffusion, not of Veo or Omni, so they survive an
+**Added 2026-08-14** (moved here from the archived `animate-slide` by the 2026-10-23 skills audit), paid for with five rounds on one four-second shot (a
+river drop). These are properties of video diffusion, not of Veo or Omni, so they survive an
 engine change. Engine-specific craft lives in
 [`docs/google-flow/omni-flash.md`](../../../docs/google-flow/omni-flash.md) — check it
 before writing a prompt for a named engine.
@@ -79,7 +79,7 @@ before writing a prompt for a named engine.
 - **State constraints positively.** Most of these engines have no negative-prompt
   support and `no…`/`don't…` phrasing backfires, putting the unwanted thing into the
   prompt as content. Write `the bridge lights hold steady`, not `the bridge does not
-  move`. (`no cuts` and `no dialogue` are vendor idiom and safe, and so is our lock line "The camera does not move.", which is proven across every GPOM clip.)
+  move`. (`no cuts` and `no dialogue` are vendor idiom and safe, and so is our lock line "The camera does not move.", which is proven across a whole film's clips.)
 
 - **Name exactly one ambient motion.** Given none, models tend to animate the whole
   frame; given one — *"the reflections shift on the dark water"* — the rest settles.

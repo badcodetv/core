@@ -11,6 +11,10 @@ original ("There's only one."), kicks him into a cab; the logo is lit by taxi he
 you, not a multiverse; "infinite yous, so nothing matters" is the excuse. State: rough cut 4 frozen
 (`scenes/infinite-yous/final.json`) and on Drive; figure voice, Premiere build and 1080x1920 export still owed.
 
+
+**Paused** (Jack and Kai, 17 Nov morning call, [notes](../../misc/2026-11-17-morning-meeting.md)): the hardest to bring up to
+quality, and the taxi ride home is too boring. Comes back later as a series, not one short; to be talked about at the pub.
+
 ## Look
 - Status: EXPLORING, with every beat picked: LI1-b, SP1-a, SQ2-a, CA2-a, LO1-b.
 - Jack's reference: a night street photo, shallow focus, the city melted into big warm bokeh (amber, red, a little

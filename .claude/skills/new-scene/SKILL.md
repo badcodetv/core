@@ -10,8 +10,8 @@ description: Use to take one scene of a BadCode film from an idea all the way to
 > for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
 
 
-Take **one scene** of a film from a conversation to a noted cut. This is the loop that made the GPOM
-opening recut, the second half, the gaze sequence and the ending. It is a conductor: each stage is its
+Take **one scene** of a film from a conversation to a noted cut. This loop has made a whole film's
+scenes, from the opening to the ending. It is a conductor: each stage is its
 own skill, and this one runs them in order and holds what they share.
 
 ```
@@ -70,15 +70,15 @@ The words live in the repo and the media lives outside it (the clips/ convention
 
 ```json
 {
-  "story": "gitpush-origin-master", "scene": "the-vault", "prefix": "vt",
-  "title": "GPOM The Vault",
-  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> the vault",
+  "story": "<story>", "scene": "<scene>", "prefix": "<2 letters>",
+  "title": "<Story> <Scene>",
+  "heading": "<Story> <span class=\"tri\">▲</span> <scene>",
   "moodboard_intro": "What this board is for, in plain words. Tap This, Maybe or No; leave a note per beat.",
   "storyboard_intro": "Frames in story order. Pick one still and one way to animate each.",
-  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/the-vault",
+  "media": "/mnt/d/badcode-videos/<story>/clips/<scene>",
   "flow_project": "<Flow project id>",
-  "beats": [{"key": "door", "at": "0:00", "name": "The door", "blurb": "What this beat must do."}],
-  "existing": {"door": [["NOW-door", "On the timeline now (replace)", "moodboard/current/NOW-door.jpg"]]},
+  "beats": [{"key": "<beat>", "at": "0:00", "name": "<Beat name>", "blurb": "What this beat must do."}],
+  "existing": {"<beat>": [["NOW-<beat>", "On the timeline now (replace)", "moodboard/current/NOW-<beat>.jpg"]]},
   "styles": {"<style key>": "<a look named in the story's look.md>"},
   "looks": {"<look key>": "<a look named in the story's look.md>"},
   "video": {"model": "Omni 1.2 Flash", "aspect": "<16:9 | 9:16, from look.md>", "mode": "Frames", "duration": 8},
@@ -103,10 +103,8 @@ Tools in `scripts/scene/`, all taking the scene folder:
 thumbnails you couldn't enlarge). Never hand-write a page's HTML. If no builder fits, extend one of these (or add one
 here) and keep its spec in the scene folder, so the page can be rebuilt from the repo.
 
-Worked examples, built before the tools were generalised: the GPOM opening recut
-(`scripts/gpom/build-opening-*.py`, `scripts/gpom/opening-video/`,
-`docs/stories/gitpush-origin-master/scenes/opening-recut-*`) and the second half
-(`scripts/gpom/second-half-video/`).
+Older one-off builders from before the tools were generalised live in `scripts/gpom/` (code only; their
+looks belong to that story).
 
 ## Provenance (every stage)
 

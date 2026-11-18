@@ -75,8 +75,7 @@ process rule), **Omni 1.2 Flash since 2026-11-09** ([the switch and its A/B](../
 (`omni-flash.md`, `nano-banana-2.md`, the dated sweeps). **Open that README before writing any video prompt:** its
 first section is the list of moves the model cannot do and the rules for the words (keep it short; name the
 story's colours and lights from its `look.md`, because unnamed the model goes muted; never describe an attached
-Character; check at four frames a second). Bank Robbery's answer to the muted default (saturated colour per
-place, two lights of different colours) is that story's rule, not a default for every prompt. Where the two folders disagree about Omni, `docs/google-flow/`
+Character; check at four frames a second). Where the two folders disagree about Omni, `docs/google-flow/`
 wins. Added 2026-10-09 after a film's worth of prompts ignored research that this skill never pointed at.
 
 ## The five rules that carry most of the value

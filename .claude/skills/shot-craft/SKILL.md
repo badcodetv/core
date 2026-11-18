@@ -192,6 +192,6 @@ caption carrying the beneficiary, a bookend made by repeating an existing frame 
 - **All candidates go to Kai** before any video credit is spent — the still-approval gate. This
   skill says what to look at; it does not pre-filter his choice.
 - **Write back.** Something learned in production goes into `docs/cinematography/` graded **H**,
-  with the date and what happened. Our own measured findings outrank the briefs — the GPOM
+  with the date and what happened. Our own measured findings outrank the briefs — one film's
   `vantage` discovery that an aerial cannot carry emptiness predates the research that later
   explained it.
