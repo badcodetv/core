@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/HO1-c.jpg",
+ "made": "2026-11-18T14:53:04+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/hello/scripts/stills.mts (FlowClient.editImage), harvested from the gallery after a download clash",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-18: start the video process (picture round 1)",
+ "prompt": "Use the room and the warm light of the reference photo for a vertical 9:16 frame: a cream beige desktop computer with a chunky monitor on a wooden desk, the screen glowing with a bright aqua sky-and-grass wallpaper, a potted plant, afternoon sun slanting through a window, dust in the beam. Cosy, quiet, a summer holiday afternoon in about 2005. Nobody in the picture. No text, lettering, logos or brand names anywhere in the image.\nThanks.",
+ "inputs": {
+  "refs": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/Fm17vn1lmAQ.jpg"
+ }
+}

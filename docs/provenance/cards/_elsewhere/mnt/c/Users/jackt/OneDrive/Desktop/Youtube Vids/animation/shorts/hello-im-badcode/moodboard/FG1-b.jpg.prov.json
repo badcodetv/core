@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG1-b.jpg",
+ "made": "2026-11-18T14:53:04+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/hello/scripts/stills.mts (FlowClient.editImage), harvested from the gallery after a download clash",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-18: start the video process (picture round 1)",
+ "prompt": "The attached image shows the mask exactly; copy it. A vertical 9:16 studio photo of a person wearing that balaclava, framed from the chest up and facing the camera dead on, against a smooth glossy gradient backdrop of aqua and sky blue with soft white light bubbles floating behind, like a 2007 computer advert. Plain dark jumper, completely still. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. No text, lettering, logos or brand names anywhere in the image.\nThanks.",
+ "inputs": {
+  "refs": "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+ }
+}

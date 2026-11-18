@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/HO1-a.jpg",
+ "made": "2026-11-18T14:53:04+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/hello/scripts/stills.mts (FlowClient.editImage), harvested from the gallery after a download clash",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-18: start the video process (picture round 1)",
+ "prompt": "Take the light, colour and sky from the reference photo and make it a vertical 9:16 frame: a deep glossy blue summer sky full of drifting soap bubbles, each one catching a rainbow sheen and a little star of sunlight, a soft green hill curving along the bottom like an old computer desktop wallpaper from about 2008. Bright, clean, optimistic, slightly too perfect. Nobody in the picture. No text, lettering, logos or brand names anywhere in the image.\nThanks.",
+ "inputs": {
+  "refs": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/-F3oAaWG2GU.jpg"
+ }
+}

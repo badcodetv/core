@@ -51,7 +51,7 @@ no robot feature, just have gloves on and never show skin."*
   high inside the ring. Facing the camera, that puts the triangle on the **right of the picture**, at about
   2 o'clock, the same as the logo. (This replaces the "right eye" reading of earlier the same day.)
   Reference image (picked 2026-11-03): `Youtube Vids\animation\songs\bank robbery\gang\reference\lineup-a.jpg`, the six-man Bank Robbery gang facing camera.
-- **Prompt wording:** paste [`balaclava/shared-wording.txt`](./balaclava/shared-wording.txt) verbatim (a variations round takes it as `shared.txt`, exempt from the sameness gate). 🔴 Never brief it as "a ring round the left eye": that reads as a small ring round one eye hole (Hello, I'm BadCode, 2026-11-12).
+- **Prompt wording:** paste [`balaclava/shared-wording.txt`](./balaclava/shared-wording.txt) verbatim **and attach `balaclava/mask-reference.jpg`** (the short line relies on it; without the image use `shared-wording-long.txt`) (a variations round takes it as `shared.txt`, exempt from the sameness gate). 🔴 Never brief it as "a ring round the left eye": that reads as a small ring round one eye hole (Hello, I'm BadCode, 2026-11-12).
 - **No skin, ever.** The balaclava has no eye, nose or mouth holes; its neck tucks into a collar; gloves on
   both hands; cuffs over the wrists. Nothing human shows, so it *could* be a machine underneath (the
   GitPush idea), but **no robot features**: no metal, no lights, no seams, no visor. Just cloth and gloves.
@@ -81,6 +81,14 @@ up on top of the rings, and earlier Bank Robbery rounds centred it. So, every ti
    them ("delete any extra red triangle on the crown or on top of the ring").
 4. **Clips** start from a still that passed step 3. Check the masks again in the clip's frames.
 
+
+### The wording in prompts (Jack, 2026-11-18: shorter, with the photo attached)
+
+`balaclava/shared-wording.txt` is now one short line: "The balaclava exactly as in the attached image: no holes, no skin,
+gloves." It works only with `balaclava/mask-reference.jpg` **attached** to the call. Tested on Hello, I'm BadCode (FG1 long
+vs FG2 short, three settings each): every mask right in both. Jack: "the problem with polluting stuff before was just the
+amount of sheer text". With no image attached, use `balaclava/shared-wording-long.txt` (the old 53-word sentence).
+Always say what BadCode wears: left unsaid, Flow copies the reference photo's cream suit.
 
 ## The settings (the source of truth)
 

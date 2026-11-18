@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/HO1-d.jpg",
+ "made": "2026-11-18T14:53:04+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/hello/scripts/stills.mts (FlowClient.editImage), harvested from the gallery after a download clash",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-18: start the video process (picture round 1)",
+ "prompt": "Keep the sky and the silhouettes' mood of the reference photo for a vertical 9:16 frame: a concrete skatepark at sunset, the sky melting from peach to lilac, a few tiny distant figures as dark silhouettes against it, one mid-air off a ramp, too far away to have faces. Warm, golden, endless summer, the feeling of a 2000s video someone filmed on a phone and never deleted. No text, lettering, logos or brand names anywhere in the image.\nThanks.",
+ "inputs": {
+  "refs": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/PJzKcNOH91s.jpg"
+ }
+}

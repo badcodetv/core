@@ -1,0 +1,23 @@
+[
+ {
+  "out": "FG2-a",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A vertical 9:16 photo of a person wearing a balaclava, sitting relaxed in a swivel chair beside a beige 2000s desktop computer in a small bedroom, glossy aqua wallpaper glowing on the monitor, a lava lamp, warm afternoon light. Body turned to the camera, hands folded, perfectly calm, like someone about to give bad news politely. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG2-b",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A vertical 9:16 studio photo of a person wearing a balaclava, framed from the chest up and facing the camera dead on, against a smooth glossy gradient backdrop of aqua and sky blue with soft white light bubbles floating behind, like a 2007 computer advert. Plain dark jumper, completely still. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG2-c",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "A vertical 9:16 photo of a person wearing a balaclava, slouched on a park bench at golden hour with one arm along the back of the bench, legs crossed, utterly unbothered, facing the camera. Green grass, a blue sky, a few soap bubbles drifting past. Casual hoodie and trainers. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ }
+]

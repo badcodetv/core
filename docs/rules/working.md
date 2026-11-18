@@ -204,3 +204,9 @@ downloading it? ... So that I don't have to click the link every time? for songs
 **How to apply:** record each take (`suno.mts record <songId>`, no download spent; set `LISTEN_MEDIA_ROOT` to the short's
 `<media>/audio/<round>/` on Jack's machine) and put its `.preview.mp3` on the page as an `audio` row (`build-picks.py` kind
 `audio` draws a player with play and a time slider), published with the page. A Suno link can sit beside it, never instead.
+
+## 2026-11-18: never run two browser scripts at once (Flow runner, Suno record, a Flow edit script)
+
+Every Playwright connection points Chrome's download folder at its own temp folder, so two scripts on the one browser steal
+each other's downloads: seven Flow stills rendered and none downloaded while a Suno recording ran. Run them one after
+another; if it happens, the images are in the Flow gallery (collect them, don't regenerate).

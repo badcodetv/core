@@ -1,0 +1,182 @@
+{
+ "title": "Hello BadCode Picks",
+ "eyebrow": "Hello, I'm BadCode · picture and music · round 1",
+ "heading": "Start the video: the warm opening, BadCode, and the music",
+ "intro": "Words wait for the picture (Jack). Pick the warm opening, BadCode's setting and the music; each row has a note. Every music take has its own player with a slider. The figure row uses the new short mask line with the mask photo attached; the long-sentence versions are underneath for comparison.",
+ "round": 1,
+ "sections": [
+  {
+   "h": "The warm opening (0-4 s)",
+   "lede": "Each made from a real Unsplash photo with no faces, turned into the 00s / Frutiger Aero meme-edit feel.",
+   "groups": [
+    {
+     "slot": "opening",
+     "title": "Which opening?",
+     "line": "Pick one (or say which to combine).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "stills/HO1-a.jpg",
+       "label": "a: bubbles over a glossy blue sky, a green hill like a 2008 desktop"
+      },
+      {
+       "id": "b",
+       "src": "stills/HO1-b.jpg",
+       "label": "b: a sunlit pool from above, an inflatable ring"
+      },
+      {
+       "id": "c",
+       "src": "stills/HO1-c.jpg",
+       "label": "c: a beige 2000s computer, aqua wallpaper, afternoon sun"
+      },
+      {
+       "id": "d",
+       "src": "stills/HO1-d.jpg",
+       "label": "d: a skatepark at sunset, tiny silhouettes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "BadCode (the cut to him, and again after the reel)",
+   "lede": "Same figure in three settings. Short mask line + the mask photo.",
+   "groups": [
+    {
+     "slot": "figure",
+     "title": "Which setting?",
+     "line": "Pick one. A note can say what he should wear.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "stills/FG2-a.jpg",
+       "label": "a: a 2000s bedroom, beige computer, lava lamp",
+       "warn": "he wears the reference photo's cream suit (the prompt didn't say)"
+      },
+      {
+       "id": "b",
+       "src": "stills/FG2-b.jpg",
+       "label": "b: studio, glossy aqua backdrop like a 2007 advert"
+      },
+      {
+       "id": "c",
+       "src": "stills/FG2-c.jpg",
+       "label": "c: slouched on a park bench at golden hour"
+      }
+     ]
+    },
+    {
+     "slot": "figure-long",
+     "title": "For comparison: the same three with the long mask sentence",
+     "line": "No pick needed; this is the test of the short wording.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "stills/FG1-a.jpg",
+       "label": "a (long)"
+      },
+      {
+       "id": "b",
+       "src": "stills/FG1-b.jpg",
+       "label": "b (long)"
+      },
+      {
+       "id": "c",
+       "src": "stills/FG1-c.jpg",
+       "label": "c (long)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The music (about 22 s)",
+   "lede": "Synthwave warmth at the top, a turn at the cut, dread under the reel, slowing to nothing. Four ideas from separate writers.",
+   "groups": [
+    {
+     "slot": "music",
+     "title": "Which track?",
+     "line": "Pick one take; a note can say what to keep or change.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "analog-lead--1",
+       "src": "audio/hello-badcode-r1-track-analog-lead-into-braam-v6-4c8d78d2.preview.mp3",
+       "label": "a: analog synth lead that hits a trailer braam (take 1, 30 s)",
+       "warn": "Suno ran 30 s against the 22 s asked"
+      },
+      {
+       "id": "analog-lead--2",
+       "src": "audio/hello-badcode-r1-track-analog-lead-into-braam-v6-5e6d5e40.preview.mp3",
+       "label": "b: analog synth lead that hits a trailer braam (take 2, 23 s)"
+      },
+      {
+       "id": "analog-lead--3",
+       "src": "audio/hello-badcode-r1-track-analog-lead-into-braam-v6-923cc9f6.preview.mp3",
+       "label": "c: analog synth lead that hits a trailer braam (take 3, 23 s)"
+      },
+      {
+       "id": "analog-lead--4",
+       "src": "audio/hello-badcode-r1-track-analog-lead-into-braam-v6-e63b0ffb.preview.mp3",
+       "label": "d: analog synth lead that hits a trailer braam (take 4, 22 s)"
+      },
+      {
+       "id": "aero-glass-b-1",
+       "src": "audio/hello-badcode-r1-track-aero-glass-bells-v6-w40-16873d7e.preview.mp3",
+       "label": "e: glassy Frutiger Aero bells (take 1, 52 s)",
+       "warn": "Suno ran 52 s against the 22 s asked"
+      },
+      {
+       "id": "aero-glass-b-2",
+       "src": "audio/hello-badcode-r1-track-aero-glass-bells-v6-w40-e90d088c.preview.mp3",
+       "label": "f: glassy Frutiger Aero bells (take 2, 23 s)"
+      },
+      {
+       "id": "slowed-sax-m-1",
+       "src": "audio/hello-badcode-r1-track-slowed-sax-meme-edit-v6-w-372ab70e.preview.mp3",
+       "label": "g: slowed-down sax, meme-edit style (take 1, 22 s)"
+      },
+      {
+       "id": "slowed-sax-m-2",
+       "src": "audio/hello-badcode-r1-track-slowed-sax-meme-edit-v6-w-56e4a36a.preview.mp3",
+       "label": "h: slowed-down sax, meme-edit style (take 2, 20 s)"
+      },
+      {
+       "id": "slowed-sax-m-3",
+       "src": "audio/hello-badcode-r1-track-slowed-sax-meme-edit-v6-w-77e21e6e.preview.mp3",
+       "label": "i: slowed-down sax, meme-edit style (take 3, 20 s)"
+      },
+      {
+       "id": "slowed-sax-m-4",
+       "src": "audio/hello-badcode-r1-track-slowed-sax-meme-edit-v6-w-7f32253c.preview.mp3",
+       "label": "j: slowed-down sax, meme-edit style (take 4, 23 s)"
+      },
+      {
+       "id": "slowed-sax-m-5",
+       "src": "audio/hello-badcode-r1-track-slowed-sax-meme-edit-v6-w-8cad07bb.preview.mp3",
+       "label": "k: slowed-down sax, meme-edit style (take 5, 20 s)"
+      },
+      {
+       "id": "slowed-sax-m-6",
+       "src": "audio/hello-badcode-r1-track-slowed-sax-meme-edit-v6-w-f14550a2.preview.mp3",
+       "label": "l: slowed-down sax, meme-edit style (take 6, 22 s)"
+      },
+      {
+       "id": "piano-to-orc-1",
+       "src": "audio/hello-badcode-r1-track-piano-to-orchestra-traile-2c256397.preview.mp3",
+       "label": "m: piano that grows into an orchestra (take 1, 20 s)"
+      },
+      {
+       "id": "piano-to-orc-2",
+       "src": "audio/hello-badcode-r1-track-piano-to-orchestra-traile-535fa973.preview.mp3",
+       "label": "n: piano that grows into an orchestra (take 2, 19 s)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

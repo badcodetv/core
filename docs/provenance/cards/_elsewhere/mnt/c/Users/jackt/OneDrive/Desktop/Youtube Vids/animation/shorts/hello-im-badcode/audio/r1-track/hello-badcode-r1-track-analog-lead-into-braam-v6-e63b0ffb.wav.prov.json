@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r1-track/hello-badcode-r1-track-analog-lead-into-braam-v6-e63b0ffb.wav",
+ "made": "2026-11-18T14:42:09.992Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "e63b0ffb-849a-4bb6-979c-2e30b94e19f9",
+ "inputs": {
+  "title": "hello badcode r1-track-analog-lead-into-braam-v6",
+  "song": "https://suno.com/song/e63b0ffb-849a-4bb6-979c-2e30b94e19f9"
+ },
+ "settings": {
+  "durationSec": 22
+ }
+}

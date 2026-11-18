@@ -1,0 +1,51 @@
+[
+ {
+  "out": "HO1-a",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/-F3oAaWG2GU.jpg"
+  ],
+  "prompt": "Take the light, colour and sky from the reference photo and make it a vertical 9:16 frame: a deep glossy blue summer sky full of drifting soap bubbles, each one catching a rainbow sheen and a little star of sunlight, a soft green hill curving along the bottom like an old computer desktop wallpaper from about 2008. Bright, clean, optimistic, slightly too perfect. Nobody in the picture. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "HO1-b",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/3ktBQ3-zOzE.jpg"
+  ],
+  "prompt": "Keep the water and the light of the reference photo and make it a vertical 9:16 frame: looking straight down into a sunlit swimming pool on a hot afternoon, turquoise water rippling with bright gold caustic lines, a single inflatable ring drifting at the edge of the frame. The colours saturated and glossy, like a holiday photo from a 2000s digital camera. Nobody in the picture. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "HO1-c",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/Fm17vn1lmAQ.jpg"
+  ],
+  "prompt": "Use the room and the warm light of the reference photo for a vertical 9:16 frame: a cream beige desktop computer with a chunky monitor on a wooden desk, the screen glowing with a bright aqua sky-and-grass wallpaper, a potted plant, afternoon sun slanting through a window, dust in the beam. Cosy, quiet, a summer holiday afternoon in about 2005. Nobody in the picture. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "HO1-d",
+  "refs": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/PJzKcNOH91s.jpg"
+  ],
+  "prompt": "Keep the sky and the silhouettes' mood of the reference photo for a vertical 9:16 frame: a concrete skatepark at sunset, the sky melting from peach to lilac, a few tiny distant figures as dark silhouettes against it, one mid-air off a ramp, too far away to have faces. Warm, golden, endless summer, the feeling of a 2000s video someone filmed on a phone and never deleted. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG1-a",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "The attached image shows the mask exactly; copy it. A vertical 9:16 photo of a person wearing that balaclava, sitting relaxed in a swivel chair beside a beige 2000s desktop computer in a small bedroom, glossy aqua wallpaper glowing on the monitor, a lava lamp, warm afternoon light. Body turned to the camera, hands folded, perfectly calm, like someone about to give bad news politely. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG1-b",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "The attached image shows the mask exactly; copy it. A vertical 9:16 studio photo of a person wearing that balaclava, framed from the chest up and facing the camera dead on, against a smooth glossy gradient backdrop of aqua and sky blue with soft white light bubbles floating behind, like a 2007 computer advert. Plain dark jumper, completely still. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ },
+ {
+  "out": "FG1-c",
+  "refs": [
+   "/home/jackt/projects/badcode/badcode/docs/brand/balaclava/mask-reference.jpg"
+  ],
+  "prompt": "The attached image shows the mask exactly; copy it. A vertical 9:16 photo of a person wearing that balaclava, slouched on a park bench at golden hour with one arm along the back of the bench, legs crossed, utterly unbothered, facing the camera. Green grass, a blue sky, a few soap bubbles drifting past. Casual hoodie and trainers. The balaclava has no eye, nose or mouth holes, so no skin shows anywhere; a large white ring is stitched round the whole face, and one small red triangle with rounded corners, pointing down, sits high inside the ring on the right-hand side of the picture. Gloves on both hands; no robot parts. No text, lettering, logos or brand names anywhere in the image.\nThanks."
+ }
+]

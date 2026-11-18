@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/HO1-b.jpg",
+ "made": "2026-11-18T14:53:04+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/hello/scripts/stills.mts (FlowClient.editImage), harvested from the gallery after a download clash",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-18: start the video process (picture round 1)",
+ "prompt": "Keep the water and the light of the reference photo and make it a vertical 9:16 frame: looking straight down into a sunlit swimming pool on a hot afternoon, turquoise water rippling with bright gold caustic lines, a single inflatable ring drifting at the edge of the frame. The colours saturated and glossy, like a holiday photo from a 2000s digital camera. Nobody in the picture. No text, lettering, logos or brand names anywhere in the image.\nThanks.",
+ "inputs": {
+  "refs": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/reference/unsplash/3ktBQ3-zOzE.jpg"
+ }
+}

@@ -19,3 +19,17 @@
   like, 'What do you think in your mind, what the worst-case scenario is?… I'll be patiently waiting to correct your
   bullshit' i dont know if this fits but yeah." Added verbatim as a new beat (cut back to BadCode after the reel), two
   drafts on the script page: 1D (then "Here's what to do next." on black) and 1E (his line ends it, then the logo).
+- **2026-11-18 (Jack), on the script page:** quoting 1B's hook ("Hello. Enjoy this.") and figure line ("I'm from the
+  future. [beat] That was the good part."): "i dont like these parts, i think we will know what to say once we have the
+  video so lets start on that proccess thanks". Words wait for the picture; the script page stays as the record (1D/1E
+  hold his after-the-reel line). Picture round 1 next: the warm opening from real photos, the figure with the mask reference.
+- **2026-11-18, picture + music round 1** (page https://claude.ai/artifact/NcX2aNGxH65LjjMdXs2oxa, spec `r4-picks.json`):
+  openings HO1-a..d (from Unsplash photos with no faces), figure FG2-a..c (short mask line) and FG1-a..c (long, comparison),
+  music `songs/r1-track/` (4 ideas, 14 takes, players). The 7 first stills rendered but lost their downloads because the Suno
+  recording ran on the same browser at the same time (two Playwright clients fight over the download folder); collected
+  from the Flow gallery with recipe cards. Lesson: never run two browser scripts at once.
+- **2026-11-18 (Jack), the mask wording:** "if the reference image works with this text, I think just do that, because I
+  think the problem with polluting stuff before was just the amount of sheer text". Tested: FG2 (short line + the mask photo)
+  vs FG1 (the 53-word sentence), three settings: every mask right in both. `docs/brand/balaclava/shared-wording.txt` is now
+  the short line; the long one is kept as `shared-wording-long.txt` for prompts with no image. Seen in the test: unsaid
+  clothes copy the reference photo's cream suit, so say what BadCode wears.
