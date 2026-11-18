@@ -55,7 +55,7 @@ def main():
     if a.stabs:
         stabs = [float(x) for x in a.stabs.split(',')]
     else:  # a stab where each scare lands (seconds into its segment, from the clips' own timing)
-        at = {'2b.': 0.15, '3b.': 0.55, '3c.': 0.75, '4. ': 1.9, '5. ': 0.9, '6. ': 1.95}
+        at = {'2b.': 0.15, '3b.': 0.55, '3c.': 0.75, '4. ': 1.45, '5. ': 0.9, '6. ': 1.3}
         stabs = sorted(round(b['start'] + off, 2) for k, off in at.items() for b in edl['beats'] if b['title'].startswith(k))
     stab = cut / 'stab.wav'
     r2.ff('-ss', STAB_IN, '-t', STAB_DUR, '-i', STAB_SRC, '-af', 'afade=t=out:st=0.35:d=0.35', '-ar', 48000, '-ac', 2, stab)

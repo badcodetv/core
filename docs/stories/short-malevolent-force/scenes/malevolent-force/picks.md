@@ -103,3 +103,8 @@
   thanks". Freezer price, no pick: "this looks a bit shit, i think the hand should swoop over the prices like a magic trick,
   as in the entire hand swoops past and covers both prices, when they hand goes away the prices change thanks". Plan: blank,
   no-hand stills of both shots, so each clip opens on the prices and the hand arrives; freezer as a full swoop across both cards.
+- **2026-11-18, rough cut 4** (`scripts/shorts/malevolent_force_cut_r4.py`, `cut/r4/`, 21.5 s): basses take 2 at 0.92x with a
+  stab from the slasher take (65f9c223, its opening stab) at 3.15, 4.75, 5.95, 7.95, 12.0, 14.0 s, the strings ducked under
+  each; shelf `hn4-a` (50p seen, hand, £5), freezer `hn6-b` (£5/10p seen, the swoop, an instant flip to £50 / 10p struck £12
+  as it passes: the swoop runs just above the cards, so the flip is timed to its shadow, `prices-hn6.json`). Timeline page
+  round 4: https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX.

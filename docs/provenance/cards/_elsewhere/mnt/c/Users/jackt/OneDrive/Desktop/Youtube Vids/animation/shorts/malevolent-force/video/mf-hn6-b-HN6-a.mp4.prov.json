@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-hn6-b-HN6-a.mp4",
+ "made": "2026-11-18T13:52:57+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] Nothing moves: the loaf, the chocolate bar and the two blank price cards on the freezer's side. [00:02-00:03] In from the left edge of the frame swoops a burnt hand, soot-black skin cracked like old tarmac with a dull ember glow in the cracks, long hooked fingers with nails like split slate, a thin thread of smoke, palm flat and fingers spread, in one fast flowing arc like a magician's flourish, sweeping across both cards and covering them completely as it passes. [00:03-00:04] It carries on out of the right edge of the frame and is gone, smoke trailing behind. The loaf and the chocolate bar hold their places. One continuous shot, no cuts. The paper cards stay plain white throughout. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HN6-a.jpg",
+ "why": "Jack 2026-11-18 round 9: see the prices first; the hand swoops over like a magic trick",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HN6-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "hn6-b",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T13:51:37.245Z"
+ }
+}

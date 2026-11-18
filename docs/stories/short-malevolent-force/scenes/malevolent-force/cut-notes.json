@@ -1,21 +1,21 @@
 {
- "round": 3,
+ "round": 4,
  "plan": [
   {
-   "h": "Done: rough cut 3, the more-horror cut (from the horror picks page, rounds 1-8)",
+   "h": "Done: rough cut 4, from your round-9 picks and notes",
    "items": [
-    "Shot 2: the door swings open, then half a second of the figure behind the frame (door b).",
-    "Shot 3: the aisle, the figure peeks from the back door and scuttles back (peek b), then drops off the shelving (top a).",
-    "Shot 4: the burnt hand holds the 50p card and snatches it up (hand c); then the brownout: £1 in the dark, £5 in the light.",
-    "Shot 5: the mirror take (mirror b). Shot 6: the hand snatches up off the freezer (hand b), then the lightning: £50, 10p struck for £12.",
-    "The subtle VHS finish on every shot; the end card and the logo stay clean. 16.6 s of shots, 21.8 s in all."
+    "Music: your suspense strings (basses from below, take 2) under the whole cut, slowed slightly to fit; a strings stab on every scare (door, peek, shelf drop, the shelf hand, the mirror, the freezer swoop), the strings dipping under each.",
+    "Shelf: you see 50p first; the burnt hand comes down over the card and when it lifts away it says £5.",
+    "Freezer: you see £5 and 10p first; the hand swoops across like a magic trick and as it passes they snap to £50 and 10p crossed out for £12.",
+    "Prices are drawn in the edit (blank cards in Flow). The subtle VHS finish on every shot; the card and logo stay clean."
    ]
   },
   {
-   "h": "Not yet",
+   "h": "Worth knowing",
    "items": [
-    "Music is still vibes1, slowed to 0.90x to fit the longer picture; the suspense strings (your library pick) come next.",
-    "No strings stab under each scare yet: that comes with the strings track."
+    "The swoop passes just above the freezer cards (its shadow crosses them), so the prices flip as it passes rather than under the palm.",
+    "The £1 step is gone: one pass of the hand, one change.",
+    "Not in Premiere yet: say \"build it in Premiere\" when it's right."
    ]
   }
  ],

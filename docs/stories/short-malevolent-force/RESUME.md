@@ -8,8 +8,7 @@
   `video/inbox/dupes/`).
 - **Clips picked (round 8):** shelf hand c, freezer hand b, peek b, shelf top a, door b, mirror b (files in `picks.md`).
 - **Rough cut 3 built** (`cut/r3/`, 21.8 s), on the timeline page https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX.
-- **Waiting on Jack:** round 9 on the horror page: a strings take, and a take each of the blank-card hand clips
-  (prices drawn in the edit).
-- **Next:** dump the timeline notes → the suspense-strings Suno round (variations, sealed writers, ~60 credits) with a
-  stab under each scare → re-cut → build in Premiere when Jack says.
+- **Rough cut 4 built** (`cut/r4/`, 21.5 s) on the timeline page https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX.
+- **Waiting on Jack:** notes on rough cut 4.
+- **Next:** dump the timeline notes → fix → build in Premiere when Jack says → export, delivery QC, gatekeeper.
 - Every ruling: `scenes/malevolent-force/picks.md`. Library pieces in use: `badcode.md`.

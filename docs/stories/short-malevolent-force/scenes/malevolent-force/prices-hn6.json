@@ -1,0 +1,70 @@
+{
+ "key": 85,
+ "cards": [
+  {
+   "quad": [
+    [
+     72,
+     855
+    ],
+    [
+     271,
+     855
+    ],
+    [
+     293,
+     994
+    ],
+    [
+     94,
+     989
+    ]
+   ],
+   "states": [
+    {
+     "text": "\u00a35"
+    },
+    {
+     "text": "\u00a350",
+     "from": 3.0,
+     "settle": 3.05,
+     "fade": 0.04
+    }
+   ]
+  },
+  {
+   "quad": [
+    [
+     411,
+     854
+    ],
+    [
+     680,
+     855
+    ],
+    [
+     666,
+     957
+    ],
+    [
+     406,
+     953
+    ]
+   ],
+   "states": [
+    {
+     "text": "10p"
+    },
+    {
+     "text": "10p",
+     "strike": true,
+     "add": "\u00a312",
+     "from": 3.0,
+     "settle": 3.05,
+     "fade": 0.04
+    }
+   ]
+  }
+ ],
+ "_why": "The hand swoops along the lid just above the cards; only its shadow crosses them. Ink stays visible in shadow (key 85: only the hand itself hides it) and the prices flip in one beat as the shadow passes (settle), Jack: 'when the hand goes away the prices change'."
+}

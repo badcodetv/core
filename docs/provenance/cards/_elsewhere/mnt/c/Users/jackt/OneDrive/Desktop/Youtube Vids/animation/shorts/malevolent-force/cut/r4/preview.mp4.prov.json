@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r4/preview.mp4",
+ "made": "2026-11-18T13:59:41+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/malevolent_force_cut_r4.py",
+ "why": "Jack 2026-11-18 round 9: basses take 2, stabs on the scares, prices drawn in the edit, seen first, the freezer swoop",
+ "inputs": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r4/edl.json"
+ }
+}
