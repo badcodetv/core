@@ -96,3 +96,10 @@
   **Rough cut 5** (`scripts/shorts/hello_cut_r5.py`, `<media>/cut/r5/`, 38.05 s): line 4b, logo reveal f at 33.75 s, captions
   (Anton, timed by `scripts/word_times.py`), camcorder stamp (VT323; JUL 18 2009 on the opening, NOV 18 2049 on BadCode: the
   year is a guess), the loop dissolve. Flashing pass, -13.9 LUFS. Fonts are OFL (licences in `scripts/shorts/fonts/`).
+- **2026-11-18 eve, timeline r5 dump (`feedback/timeline-r5/`):** only the two round-4 notes, already acted on; nothing new on rough cut 5.
+  Picks page: no new picks since round 10.
+- **2026-11-18 eve, round 11, the reel made real** (picks page, `r4-picks.json`): Wikimedia's 429 had cleared; one 640 px Commons
+  thumbnail per shortlisted item fetched 4 s apart (44 items, the 6 rejects skipped; `<media>/reference/footage-automation-thumbs/items/`,
+  metadata `research/footage-automation-items.json`, keys A01-A49), beside the 50 Unsplash photos (`refs-picks.json`, ids `U-<unsplash id>`),
+  in 12 theme rows. Flagged by eye from the thumbnails: faces (A17, A19, A30, A32, ref-8 all, ref-10 a/b, ref-7 c), burned-in logos or
+  captions (A14, A21, A22, A29), gore (A34). Videos were judged on one frame only.

@@ -1,10 +1,613 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · the logo · round 10",
- "heading": "The logo, rolling in",
- "intro": "Your note: 'all of the letters are somewhat circular so make them roll, also make a few of these that vary and are interesting'. Four new reveals made from the logo's own pieces (ring, triangle, each letter), each ending exactly as the logo file is. Unmute for the thump. The real reel footage search is still running; the new reel comes next.",
- "round": 10,
+ "eyebrow": "Hello, I'm BadCode · the reel · round 11",
+ "heading": "The reel, made real",
+ "intro": "Your timeline note: the reel's AI stills are slop and boring, use Unsplash and real footage. Here are 44 real Commons clips and stills plus 50 Unsplash photos, one row per theme. Pick the best in each row; name extras in the note. Only your picks get downloaded, then rough cut 6.",
+ "round": 11,
  "sections": [
+  {
+   "h": "Round 11",
+   "lede": "The reel, made real (your note: \"ai slop and boring… use unsplash… also use real footage\"). One row per theme. A-numbers are real footage from Wikimedia Commons: free to publish, sound stripped; for a video you see one frame only, nothing's been watched yet. U- photos are real Unsplash photos; Flow would give them a little movement, with nothing added to the picture. Only your picks get downloaded. Orange = a face, a burned-in logo or gore. Six rejected before this page (faces fill the frame, or the licence doesn't hold). Shortlist: research/footage-automation-shortlist.md.",
+   "groups": [
+    {
+     "slot": "reel11-robotaxi",
+     "round": 11,
+     "title": "Robotaxis: the empty driver's seat",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A01",
+       "src": "footage/A01.jpg",
+       "label": "A01 · real footage · ▶ video 10.8 s, one frame shown: Vertical, from the back seat of a Waymo: the empty driver's seat and the steering wheel, downtown LA, Jan 2026. Already 9:16 (CC0, green)"
+      },
+      {
+       "id": "A02",
+       "src": "footage/A02.jpg",
+       "label": "A02 · real footage · still: A Waymo on a sunny San Francisco street, palm trees, traffic, Jan 2026 (CC BY 4, green)",
+       "warn": "a motorcyclist, small"
+      },
+      {
+       "id": "A03",
+       "src": "footage/A03.jpg",
+       "label": "A03 · real footage · still: A Waymo at night with a door open, blue roof light glowing, 2024 (CC BY 4, green)"
+      },
+      {
+       "id": "A04",
+       "src": "footage/A04.jpg",
+       "label": "A04 · real footage · still: A white Waymo Jaguar with its roof sensor, held up by a man in hi-vis with a STOP lollipop sign, Wood Street, London, May 2026 (CC BY 4, green)"
+      },
+      {
+       "id": "U-Ddjl0Cicdr4",
+       "src": "unsplash/Ddjl0Cicdr4.jpg",
+       "label": "Unsplash photo: interior view of Tesla car · Roberto Nickson (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U--exfbuYFstk",
+       "src": "unsplash/-exfbuYFstk.jpg",
+       "label": "Unsplash photo: a police car parked in front of a building · Timo Wielink (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-BOUihMiliyk",
+       "src": "unsplash/BOUihMiliyk.jpg",
+       "label": "Unsplash photo: a multicolored car parked on the side of the road · Timo Wielink (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-WVk5utkN__A",
+       "src": "unsplash/WVk5utkN__A.jpg",
+       "label": "Unsplash photo: a car parked on the side of the road · Amar A (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-eVHrw9tk9VI",
+       "src": "unsplash/eVHrw9tk9VI.jpg",
+       "label": "Unsplash photo: a car parked on the side of the road · Timo Wielink (Unsplash licence; Flow would move it)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-delivery",
+     "round": 11,
+     "title": "Delivery robots and drones on the pavement",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A05",
+       "src": "footage/A05.jpg",
+       "label": "A05 · real footage · still: A man walks past a Starship robot waiting at a crossing, Redwood City, 2017 (CC BY 4, green)",
+       "warn": "a man, back turned"
+      },
+      {
+       "id": "A06",
+       "src": "footage/A06.jpg",
+       "label": "A06 · real footage · still: A six-wheeled Yandex delivery robot with a flag stops in snow by a zebra crossing, Moscow, Feb 2026 (CC0, green)"
+      },
+      {
+       "id": "A07",
+       "src": "footage/A07.jpg",
+       "label": "A07 · real footage · still: Two white Starship robots on an empty wet road at a crossing, flats behind. Portrait (CC0, green)"
+      },
+      {
+       "id": "A08",
+       "src": "footage/A08.jpg",
+       "label": "A08 · real footage · still: One Starship robot close up on the tarmac, flag up. Portrait (CC0, green)"
+      },
+      {
+       "id": "A49",
+       "src": "footage/A49.jpg",
+       "label": "A49 · real footage · ▶ video 173.1 s, one frame shown: Top-down view of a drone dropping a package on the ground, 2015 (CC BY 3, amber: needs a check)"
+      },
+      {
+       "id": "U-bEkTD2fb1vA",
+       "src": "unsplash/bEkTD2fb1vA.jpg",
+       "label": "Unsplash photo: A red scooter parked next to a tree on a sidewalk · Marco J Haenssgen (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-_JAyZU1R4V4",
+       "src": "unsplash/_JAyZU1R4V4.jpg",
+       "label": "Unsplash photo: A cart with colorful balloon animals on a city street · Arlind Photography (Unsplash licence; Flow would move it)",
+       "warn": "shoppers, backs"
+      },
+      {
+       "id": "U-Nl2FaPyg2AA",
+       "src": "unsplash/Nl2FaPyg2AA.jpg",
+       "label": "Unsplash photo: A solitary scooter rests on a sunlit sidewalk · Arlind Photography (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-OU3Xz7eNHMM",
+       "src": "unsplash/OU3Xz7eNHMM.jpg",
+       "label": "Unsplash photo: White chess knight on an outdoor concrete chessboard · Arjun Raj (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-46ueiSJorik",
+       "src": "unsplash/46ueiSJorik.jpg",
+       "label": "Unsplash photo: A street cleaner sweeps a sidewalk with a broom · Indra Projects (Unsplash licence; Flow would move it)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-warehouse",
+     "round": 11,
+     "title": "Warehouse robots",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A13",
+       "src": "footage/A13.jpg",
+       "label": "A13 · real footage · still: A blue Amazon drive-unit robot (the shelf lifter) on a display stand, labelled 2021 (CC BY 4, green)"
+      },
+      {
+       "id": "A14",
+       "src": "footage/A14.jpg",
+       "label": "A14 · real footage · ▶ video 8.0 s, one frame shown: A humanoid robot sorting parcels at a conveyor; \"2x\" burned in, near black-and-white (CC BY 3, amber: needs a check)",
+       "warn": "\"2x\" burned in"
+      },
+      {
+       "id": "A15",
+       "src": "footage/A15.jpg",
+       "label": "A15 · real footage · ▶ video 65.6 s, one frame shown: Landscape version of the above, 65 s. NOT VIEWED (CC BY 4, green)"
+      },
+      {
+       "id": "A16",
+       "src": "footage/A16.jpg",
+       "label": "A16 · real footage · ▶ video 33.3 s, one frame shown: Vertical: a Fanuc arm sorting at Amazon's Swindon fulfilment centre, March 2025. NOT VIEWED (no thumbnail pulled) (CC BY 4, green)"
+      },
+      {
+       "id": "U-Y7tc66X79UI",
+       "src": "unsplash/Y7tc66X79UI.jpg",
+       "label": "Unsplash photo: a man working on a machine in a factory · Luna Dai (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-bTZ7CLhJ-AU",
+       "src": "unsplash/bTZ7CLhJ-AU.jpg",
+       "label": "Unsplash photo: a robot sitting on the ground in front of a bus · aranprime (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-R2Rt_syeB7M",
+       "src": "unsplash/R2Rt_syeB7M.jpg",
+       "label": "Unsplash photo: Workers sort fish in orange crates at a processing plant · Bernd 📷 Dittrich (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-3swGCOgTdV0",
+       "src": "unsplash/3swGCOgTdV0.jpg",
+       "label": "Unsplash photo: a snow covered bridge with a red flag on top of it · Kseniia Zapiatkina (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-1Mwdhdj57Hc",
+       "src": "unsplash/1Mwdhdj57Hc.jpg",
+       "label": "Unsplash photo: a red light is on in the middle of a room · Klara Kulikova (Unsplash licence; Flow would move it)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-checkout",
+     "round": 11,
+     "title": "Self-checkout, kiosks, tills with nobody at them",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A17",
+       "src": "footage/A17.jpg",
+       "label": "A17 · real footage · still: Hong Kong Wellcome supermarket: a big \"SELF CHECKOUT\" sign over a bank of tills, shoppers using them, 2024 (CC0, green)",
+       "warn": "faces: shoppers visible"
+      },
+      {
+       "id": "A18",
+       "src": "footage/A18.jpg",
+       "label": "A18 · real footage · still: An empty self-checkout till in a small supermarket, Vilnius, May 2026, nobody at it. Portrait (CC0, green)"
+      },
+      {
+       "id": "A19",
+       "src": "footage/A19.jpg",
+       "label": "A19 · real footage · still: A row of self-checkout tills in Lidl, Poland, 2020; a young woman at one, back to camera (Public domain, green)",
+       "warn": "a woman fills the frame (back view)"
+      },
+      {
+       "id": "A20",
+       "src": "footage/A20.jpg",
+       "label": "A20 · real footage · still: Close-up of a Tesco self-checkout screen and card reader, Poland, 2020 (Public domain, green)"
+      },
+      {
+       "id": "A21",
+       "src": "footage/A21.jpg",
+       "label": "A21 · real footage · ▶ video 30.0 s, one frame shown: A finger on a touchscreen kiosk, 2025 (Public domain, green)",
+       "warn": "base name burned in"
+      },
+      {
+       "id": "U-PlIxH13NGL8",
+       "src": "unsplash/PlIxH13NGL8.jpg",
+       "label": "Unsplash photo: A checkout counter with a cell phone on it · Brett Wharton (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-2sXLRagm-i8",
+       "src": "unsplash/2sXLRagm-i8.jpg",
+       "label": "Unsplash photo: a row of vending machines sitting inside of a building · Solomon Asare (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-FYPyfTxBfKU",
+       "src": "unsplash/FYPyfTxBfKU.jpg",
+       "label": "Unsplash photo: a close up of a machine with a hat on top of it · Jonathan Cooper (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-aRYoTlxr5wE",
+       "src": "unsplash/aRYoTlxr5wE.jpg",
+       "label": "Unsplash photo: Shopping cart and bedding aisle at target store · Zoshua Colah (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-K94eoUpU3bw",
+       "src": "unsplash/K94eoUpU3bw.jpg",
+       "label": "Unsplash photo: a few cash register machines · John Paul Cuvinar (Unsplash licence; Flow would move it)",
+       "warn": "Bitcoin ATM branding"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-cameras",
+     "round": 11,
+     "title": "Cameras on poles",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A37",
+       "src": "footage/A37.jpg",
+       "label": "A37 · real footage · still: A tall pole with a ring of cameras in a city square, Saarbrücken 2020. Portrait (CC BY 4, green)"
+      },
+      {
+       "id": "A38",
+       "src": "footage/A38.jpg",
+       "label": "A38 · real footage · still: A border surveillance tower on a pole in desert scrub, Arizona 2022 (CC BY 3, green)"
+      },
+      {
+       "id": "A39",
+       "src": "footage/A39.jpg",
+       "label": "A39 · real footage · ▶ video 316.7 s, one frame shown: A PTZ security camera's view of a car park with a timestamp, 2012 (Public domain, amber: needs a check)"
+      },
+      {
+       "id": "A40",
+       "src": "footage/A40.jpg",
+       "label": "A40 · real footage · still: A Flock licence-plate camera and solar panel on a pole, looking up at blue sky, 2024. Portrait (CC0, green)"
+      },
+      {
+       "id": "A41",
+       "src": "footage/A41.jpg",
+       "label": "A41 · real footage · still: A Flock Raven sensor on a street lamp outside a brick building, 2026 (CC0, green)"
+      },
+      {
+       "id": "A42",
+       "src": "footage/A42.jpg",
+       "label": "A42 · real footage · still: A pole of dome and box cameras standing over grey water, Moscow 2025. Portrait (CC0, green)"
+      },
+      {
+       "id": "A43",
+       "src": "footage/A43.jpg",
+       "label": "A43 · real footage · still: The same kind of pole, more cameras stacked, brown water. Portrait (CC0, green)"
+      },
+      {
+       "id": "A44",
+       "src": "footage/A44.jpg",
+       "label": "A44 · real footage · still: A lone camera on a tall pole above a car park and trees, 2026. Portrait (CC0, green)"
+      },
+      {
+       "id": "A45",
+       "src": "footage/A45.jpg",
+       "label": "A45 · real footage · ▶ video 18.3 s, one frame shown: 18 s clip titled \"face recognition\", 2021; the poster frame is a dark street with a pole. NOT VIEWED further (CC BY 3, green)",
+       "warn": "may show real faces later in the clip"
+      },
+      {
+       "id": "U-a40akJxBhT8",
+       "src": "unsplash/a40akJxBhT8.jpg",
+       "label": "Unsplash photo: A tall pole mounted with multiple Panomera surveillance came · Milan Malkomes (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-9naPgAUBo2g",
+       "src": "unsplash/9naPgAUBo2g.jpg",
+       "label": "Unsplash photo: white and black corded device · Oxa Roxa (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-ujSsIk5iZmA",
+       "src": "unsplash/ujSsIk5iZmA.jpg",
+       "label": "Unsplash photo: a security camera mounted to the ceiling of a building · Franck V. (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-42t-DKecmPk",
+       "src": "unsplash/42t-DKecmPk.jpg",
+       "label": "Unsplash photo: white and gray metal pipe · Arno Senoner (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-oRZDnS2QkuE",
+       "src": "unsplash/oRZDnS2QkuE.jpg",
+       "label": "Unsplash photo: two bullet security camera attached on wall · Victor (Unsplash licence; Flow would move it)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-drones-war",
+     "round": 11,
+     "title": "Military drones",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A22",
+       "src": "footage/A22.jpg",
+       "label": "A22 · real footage · ▶ video 60.0 s, one frame shown: Vertical: a small military drone with a camera pod hovering against plain blue sky, Jan 2025 (Public domain, green)",
+       "warn": "\"U.S. ARMY\" bug burned in"
+      },
+      {
+       "id": "A23",
+       "src": "footage/A23.jpg",
+       "label": "A23 · real footage · still: An MQ-9 Reaper alone in a dark, empty hangar, July 2025. 7323 px (Public domain, green)"
+      },
+      {
+       "id": "A24",
+       "src": "footage/A24.jpg",
+       "label": "A24 · real footage · ▶ video 18.1 s, one frame shown: A tiny drone dot against a pale sky, Aug 2026 (weak poster frame) (Public domain, green)",
+       "warn": "drone is a dot"
+      },
+      {
+       "id": "A29",
+       "src": "footage/A29.jpg",
+       "label": "A29 · real footage · ▶ video 38.1 s, one frame shown: Overhead drone-camera view over trenches, Poland, Sept 2025 (Public domain, green)",
+       "warn": "burned-in captions + Army logo"
+      },
+      {
+       "id": "A30",
+       "src": "footage/A30.jpg",
+       "label": "A30 · real footage · ▶ video 46.4 s, one frame shown: Vertical: a soldier in foliage, counter-drone exercise, 2025 (Public domain, green)",
+       "warn": "a soldier's face"
+      },
+      {
+       "id": "A31",
+       "src": "footage/A31.jpg",
+       "label": "A31 · real footage · ▶ video 60.1 s, one frame shown: 4K Army feature on drone pilots, May 2025. NOT VIEWED (Public domain, green)",
+       "warn": "a soldier, side-on"
+      },
+      {
+       "id": "A32",
+       "src": "footage/A32.jpg",
+       "label": "A32 · real footage · ▶ video 36.0 s, one frame shown: Soldiers setting up drones, April 2026. NOT VIEWED (Public domain, green)",
+       "warn": "a soldier's face"
+      },
+      {
+       "id": "A33",
+       "src": "footage/A33.jpg",
+       "label": "A33 · real footage · ▶ video 54.1 s, one frame shown: Vertical Army feature on drones, May 2025. NOT VIEWED (Public domain, green)"
+      },
+      {
+       "id": "A34",
+       "src": "footage/A34.jpg",
+       "label": "A34 · real footage · ▶ video 32.2 s, one frame shown: Vertical: hands treating a fake wound on a robotic training dog, 2026 (Public domain, green)",
+       "warn": "fake blood: reads as gore"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-drones-sky",
+     "round": 11,
+     "title": "Drones in the sky: light shows, hobby drones",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A35",
+       "src": "footage/A35.jpg",
+       "label": "A35 · real footage · still: A blue drone-light formation (a molecule) over trees at night, crowd silhouettes below, Berlin 2025 (CC0, green)"
+      },
+      {
+       "id": "A36",
+       "src": "footage/A36.jpg",
+       "label": "A36 · real footage · still: A multicolour drone-light globe in a dark sky, Gijón 2023 (CC BY 2, green)"
+      },
+      {
+       "id": "U-fOF3v1VDouw",
+       "src": "unsplash/fOF3v1VDouw.jpg",
+       "label": "Unsplash photo: a white and black remote controlled flying over a field · Lukáš Vaňátko (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-6G0QHoGS_kQ",
+       "src": "unsplash/6G0QHoGS_kQ.jpg",
+       "label": "Unsplash photo: A man flying through the air while riding a bike · Andri Aeschlimann (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-uln2oLjaprc",
+       "src": "unsplash/uln2oLjaprc.jpg",
+       "label": "Unsplash photo: man in blue jacket looking at gray drone · Tandem X Visuals (Unsplash licence; Flow would move it)",
+       "warn": "a man in the foreground"
+      },
+      {
+       "id": "U-82Kd_0xSLaU",
+       "src": "unsplash/82Kd_0xSLaU.jpg",
+       "label": "Unsplash photo: grey mountain during daytime · Mo Rashidi (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-tcpqjLXa9S8",
+       "src": "unsplash/tcpqjLXa9S8.jpg",
+       "label": "Unsplash photo: a close up of a camera attached to a device · Gabriel Mihalcea (Unsplash licence; Flow would move it)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-home",
+     "round": 11,
+     "title": "Robots indoors: waiter, vacuum",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A09",
+       "src": "footage/A09.jpg",
+       "label": "A09 · real footage · ▶ video 20.3 s, one frame shown: A BellaBot serving robot (blue lights) rolling across a library floor, Jan 2026 (CC BY 4, green)"
+      },
+      {
+       "id": "A48",
+       "src": "footage/A48.jpg",
+       "label": "A48 · real footage · ▶ video 15.5 s, one frame shown: A robot vacuum crossing a wooden floor in front of shuttered cupboards, Japan 2024, 4K (CC BY 4, green)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-driverless",
+     "round": 11,
+     "title": "Driverless tractor and train",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A11",
+       "src": "footage/A11.jpg",
+       "label": "A11 · real footage · ▶ video 88.2 s, one frame shown: A driverless red tractor in a field behind tape, barn and trees behind, 2022 (Public domain, green)"
+      },
+      {
+       "id": "A12",
+       "src": "footage/A12.jpg",
+       "label": "A12 · real footage · ▶ video 58.3 s, one frame shown: Front-window view from a driverless metro train in a dark tunnel, 2014 (CC BY 2, green)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-power",
+     "round": 11,
+     "title": "Power and data centres",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A46",
+       "src": "footage/A46.jpg",
+       "label": "A46 · real footage · still: Three huge 750 kV pylons under a blue sky with clouds, 2010 (CC0, green)"
+      },
+      {
+       "id": "A47",
+       "src": "footage/A47.jpg",
+       "label": "A47 · real footage · still: The Swiss army's \"CAMPUS\" data-centre building, 2022. NOT VIEWED (CC BY 2, green)"
+      },
+      {
+       "id": "U-zFYUsLk_50Y",
+       "src": "unsplash/zFYUsLk_50Y.jpg",
+       "label": "Unsplash photo: electronic wire lot · Massimo Botturi (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-k27hkqXuveo",
+       "src": "unsplash/k27hkqXuveo.jpg",
+       "label": "Unsplash photo: Two server racks filled with electronic components and wires · Eric Stoynov (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-UfR_yqIcd4g",
+       "src": "unsplash/UfR_yqIcd4g.jpg",
+       "label": "Unsplash photo: Two blue cabinets filled with complex electronic components · Eric Stoynov (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-UEx6fTODHzI",
+       "src": "unsplash/UEx6fTODHzI.jpg",
+       "label": "Unsplash photo: Industrial control panel with electronic modules and colorfu · Raymond Sime (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-UpkcO_xS5k0",
+       "src": "unsplash/UpkcO_xS5k0.jpg",
+       "label": "Unsplash photo: Server rack filled with network and electronic equipment · Valentin Lacoste (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-knUZi7dzb58",
+       "src": "unsplash/knUZi7dzb58.jpg",
+       "label": "Unsplash photo: man in blue denim button up shirt standing beside white meta · Sammyayot254 (Unsplash licence; Flow would move it)",
+       "warn": "engineer's face"
+      },
+      {
+       "id": "U-ufT32_VFS-I",
+       "src": "unsplash/ufT32_VFS-I.jpg",
+       "label": "Unsplash photo: Technician working on server equipment with tools · Valentin Lacoste (Unsplash licence; Flow would move it)",
+       "warn": "a worker, face half seen"
+      },
+      {
+       "id": "U-Au6-AcBY-rg",
+       "src": "unsplash/Au6-AcBY-rg.jpg",
+       "label": "Unsplash photo: A technician works on a server rack with electronic equipmen · Valentin Lacoste (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-UpkcO_xS5k0",
+       "src": "unsplash/UpkcO_xS5k0.jpg",
+       "label": "Unsplash photo: Server rack filled with network and electronic equipment · Valentin Lacoste (Unsplash licence; Flow would move it)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-office",
+     "round": 11,
+     "title": "Empty offices at night",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "U-sEdGIL-MpqU",
+       "src": "unsplash/sEdGIL-MpqU.jpg",
+       "label": "Unsplash photo: an empty room with a bench in the middle of it · yaman zaareer (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-P6GD-V1CIDA",
+       "src": "unsplash/P6GD-V1CIDA.jpg",
+       "label": "Unsplash photo: a room with a table and a chair in it · SungGeun Hwang (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-hQEvJZ2FWVM",
+       "src": "unsplash/hQEvJZ2FWVM.jpg",
+       "label": "Unsplash photo: A room with a long table and a large window · Annie Spratt (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-0_Hp9s_hW6g",
+       "src": "unsplash/0_Hp9s_hW6g.jpg",
+       "label": "Unsplash photo: Dark building facade with illuminated windows at night · Matthew Dlr (Unsplash licence; Flow would move it)"
+      },
+      {
+       "id": "U-uXmbzYj2qtg",
+       "src": "unsplash/uXmbzYj2qtg.jpg",
+       "label": "Unsplash photo: Dark building facade with illuminated windows at night · LISK OBE (Unsplash licence; Flow would move it)"
+      }
+     ]
+    },
+    {
+     "slot": "reel11-phones",
+     "round": 11,
+     "title": "People looking at phones",
+     "line": "Pick the best for the reel, or none. Want more than one? Name them in the note (e.g. \"also A03\").",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "U-q9dg0vrPgnM",
+       "src": "unsplash/q9dg0vrPgnM.jpg",
+       "label": "Unsplash photo: Two women looking at a smartphone at a smartphone · Valentin (Unsplash licence; Flow would move it)",
+       "warn": "faces: identifiable people"
+      },
+      {
+       "id": "U-7oDY0oTiPkI",
+       "src": "unsplash/7oDY0oTiPkI.jpg",
+       "label": "Unsplash photo: People using smartphones while leaning against a brick wall  · Lee Eden (Unsplash licence; Flow would move it)",
+       "warn": "faces: identifiable people"
+      },
+      {
+       "id": "U-qomP9n-hJYQ",
+       "src": "unsplash/qomP9n-hJYQ.jpg",
+       "label": "Unsplash photo: Two women standing by a car, looking at their phones · Eduard Pretsi (Unsplash licence; Flow would move it)",
+       "warn": "faces: identifiable people"
+      },
+      {
+       "id": "U-milGaRyN54M",
+       "src": "unsplash/milGaRyN54M.jpg",
+       "label": "Unsplash photo: Three men looking at their phones outdoors · Will Haddock (Unsplash licence; Flow would move it)",
+       "warn": "faces: identifiable people"
+      },
+      {
+       "id": "U-Sti5RV6Z8iA",
+       "src": "unsplash/Sti5RV6Z8iA.jpg",
+       "label": "Unsplash photo: Two people sitting on a couch with phones · Haberdoedas (Unsplash licence; Flow would move it)",
+       "warn": "faces: identifiable people"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 10",
    "lede": "All pass the flashing check. Pick one, or mix two in a note.",
