@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HH1-d.jpg",
+ "made": "2026-11-18T11:05:09.528Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Upright phone-shaped picture. A bare painted wall beside a metal bread shelf in a deserted late-night shop, one loaf on the shelf and its little paper price tag, \"50p\", stuck on the shelf lip. There is no one in the room, yet a huge shadow of a hand stretches across the wall from nowhere, fingers impossibly long and bent backwards at the knuckles, and where the shadow's fingertips touch the price tag the real paper tag is lifting off the shelf, peeling up in the shadow's grip. Hard sideways strip-light glare, cold blue-green, everything else dim. Looks like a genuine flash-less night photo on budget colour stock: grain, softness, muddy blacks.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "1be8b0ac-6bac-433f-aa4a-5bfe402c621d"
+}

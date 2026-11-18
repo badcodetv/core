@@ -34,3 +34,11 @@
 - **2026-11-18, Jack on round 1:** "none of the hands are horror like, please try again". **Round 2:** eight horror searches
   (creepy, horror, zombie, hand on glass, shadow, skeleton, through a door, under the bed), 49 new photos, 20 kept by eye
   (no skeleton props, no faces, no empty doors; the teal ones first). Same page, round 2.
+- **2026-11-18, Jack's round 2 notes (page dump):** hands, no pick: "please make the hands more supernatural thanks". VHS,
+  pick **vhs**: "make the vhs finish less intense and more subtle thanks".
+- **2026-11-18, horror round 3:** four supernatural hands made in Flow (Nano Banana 2.1, project 0153219b, written by me,
+  no clean room per Jack's library pick): HH1-a long grey fingers from under the shelf, HH1-b mist hand through the freezer
+  lid (Flow added real brand logos: idea only), HH1-c burnt glowing hand from the ceiling, HH1-d only its shadow, lifting
+  the real tag. Same-prompt check flagged habit phrases; "cheap colour film" kept on purpose (the story's look), the rest
+  reworded from b on. VHS turned down (`vhs_finish.sh`, subtle) beside the strong one. Same page, round 3.
+  🔴 Whether Nano Banana 2.1 costs credits: still not read (no credit counter in the Flow tools).

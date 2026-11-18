@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HH1-c.jpg",
+ "made": "2026-11-18T11:04:12.694Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Portrait 9:16 frame, tight on a till counter in an all-night newsagent, plain unbranded packets behind, no logos or brand names anywhere. On the counter sits one handwritten price card reading \"£1\", propped against a bagged loaf. Reaching down into the frame from the dark ceiling above is a burnt hand: soot-black skin cracked like old tarmac, glowing faintly orange in the cracks, fingers long and hooked, nails like split slate, a thin smoke trailing up from the knuckles. It is plucking the card away. No arm visible past the wrist, no body, no face. Lit only by one buzzing tube light, green-teal and cold. Real-photo grain, soft focus, colour faded as if printed from a cheap night film roll.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "cf0bb696-0375-43ac-ab2f-47bb6e85bff8"
+}

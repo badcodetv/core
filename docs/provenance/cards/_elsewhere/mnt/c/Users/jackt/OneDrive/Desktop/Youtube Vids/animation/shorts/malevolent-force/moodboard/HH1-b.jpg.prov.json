@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HH1-b.jpg",
+ "made": "2026-11-18T11:03:19.399Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Tall portrait frame. A chest freezer by the glass door of a small British corner shop, past three in the morning. On its white lid lie a bagged loaf and a chocolate bar, each with a little handwritten price card propped in front: \"£5\" and \"10p\". A ghost's hand is coming up through the frosted lid itself, translucent and milky, half made of cold mist, the freezer's fog curling off its fingers as they close on the \"£5\" card. You can see the lid's frost through its palm. Only that one hand, no arm beyond the mist, no person anywhere. Light: the hum of a single flickering strip light, sickly blue-green, with black street outside the door glass. Grainy, soft, washed-out colour like a real snapshot on cheap film.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0d52b64a-7f20-4062-b2ed-89871b72e526"
+}

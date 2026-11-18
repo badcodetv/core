@@ -1,14 +1,45 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 2",
- "heading": "More horror: the hand, round 2 (horror hands only)",
- "intro": "Round 1's hands weren't horror (Jack). Round 2 searched for horror hands only: claw shadows, hands pressed behind frosted glass, a handprint on a misty window, grasping fingers. Teal ones that match the shop come first. Pick one and leave a note; the VHS question from round 1 is still open below.",
- "round": 2,
+ "eyebrow": "The Malevolent Force · more horror · round 3",
+ "heading": "More horror: four supernatural hands, and a subtler tape",
+ "intro": "Your notes on round 2: \"please make the hands more supernatural\" and \"make the vhs finish less intense and more subtle\". Real photos couldn't go further, so these four hands are made in Flow (Nano Banana 2.1), each a different kind of wrong, each reaching for a price card. Pick one (or say which bits to combine) and leave a note.",
+ "round": 3,
  "sections": [
   {
    "h": "The hand",
    "lede": "Real photos from Unsplash; the one you pick goes to Flow as the reference for the hand shots (shot 4, the shelf label, and shot 6, the freezer cards). Darkest first.",
    "groups": [
+    {
+     "slot": "hand-r3",
+     "round": 3,
+     "title": "Which supernatural hand?",
+     "line": "The one you pick becomes the hand in shot 4 (shelf) and shot 6 (freezer).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "moodboard/HH1-a.jpg",
+       "label": "a: long grey fingers, one joint too many, up from under the shelf"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/HH1-b.jpg",
+       "label": "b: a ghost's hand of mist through the freezer lid",
+       "warn": "Flow added real brand logos (Snickers, Lay's, Doritos): the hand idea only; a re-roll would be logo-free"
+      },
+      {
+       "id": "c",
+       "src": "moodboard/HH1-c.jpg",
+       "label": "c: burnt, cracked, glowing, down from the ceiling",
+       "warn": "reads a bit like a polished monster-film poster, less like a real photo"
+      },
+      {
+       "id": "d",
+       "src": "moodboard/HH1-d.jpg",
+       "label": "d: only its shadow, and the shadow lifts the real tag"
+      }
+     ]
+    },
     {
      "slot": "hand-ref-r2",
      "round": 2,
@@ -214,6 +245,30 @@
    "lede": "The whole rough cut 2, as it is, then with the VHS camcorder finish (made in the edit, free, the same on every shot).",
    "groups": [
     {
+     "slot": "vhs-r3",
+     "round": 3,
+     "title": "Subtler VHS?",
+     "line": "Your pick was the VHS finish; this is it turned down (less smear, colour shift and noise, smaller stamp).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "cut/r2/preview.mp4",
+       "label": "now: no finish"
+      },
+      {
+       "id": "subtle",
+       "src": "cut/vhs-test/preview-vhs2-web.mp4",
+       "label": "subtle: the turned-down finish"
+      },
+      {
+       "id": "strong",
+       "src": "cut/vhs-test/preview-vhs-web.mp4",
+       "label": "strong: round 1's finish"
+      }
+     ]
+    },
+    {
      "slot": "vhs",
      "title": "VHS finish?",
      "line": "Pick the one you want. A note can say more or less smear, colour, noise, or a different stamp.",
@@ -230,7 +285,7 @@
        "label": "vhs: with the camcorder finish"
       }
      ],
-     "round": 2
+     "round": 1
     }
    ]
   }

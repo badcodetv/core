@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/HH1-a.jpg",
+ "made": "2026-11-18T11:02:04.754Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Vertical 9:16. Close on a bare metal shop shelf in a UK corner shop at 3am: one sliced white loaf in a plastic bag, and a small handwritten price card on the shelf edge reading \"50p\". From the black gap beneath the shelf, a supernatural hand reaches up for the card: impossibly long, thin grey fingers with one joint too many each, skin like wet paper, nails yellow and cracked, the wrist disappearing into darkness. The fingertips are about to pinch the card. Cold fluorescent teal light from above, deep shadows, nobody else in the frame. Shot on cheap colour film at night: soft, washed-out, grainy, slightly blurred, like a real photograph, not a film still.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4dfe3b68-2344-4294-9339-fed080d6b197"
+}
