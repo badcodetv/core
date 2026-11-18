@@ -8,14 +8,15 @@
 A BadCode short (9:16, about 25 s): a voice says "Hello. I'm from the future." over something warm, BadCode the
 masked figure says deadpan "It didn't go well.", a rapid horror reel of real footage of what is happening now, then
 on black "Here's what to do next." and the logo. The point: who BadCode is, in one breath. Doubles as the profile
-intro and channel trailer. State: rough cut 1 (24.9 s) on the timeline page; temp voice, temp music, placeholder stills.
+intro and channel trailer. State: rough cut 6 (37.05 s) on the timeline page; next steps in RESUME.md.
 
 ## Look
 - Status: Not decided — run story-style (look.md is EMPTY; mood board r3 is the open round).
 - Picked so far: C1-a, blue hour (the hook). Jack's direction for the whole piece: the vibe of internet meme edits
   of the best of the 00s/90s (not childhood); trying Frutiger Aero future, "2026 is the new 2016", chill guy from
   the future, more happy nostalgic meme stuff. Colourful meme writing goes on in the edit, not in Flow.
-- The horror reel is real footage (green-tier only) plus Flow gap stills, rapid fire, ordered bright to dark.
+- The horror reel is real only (Jack, round 11: "ai slop and boring"): green-tier footage plus real Unsplash photos used as they are
+  (no Flow movement at 0.5 s), rapid fire, bright to dark, ordered so nearly every cut goes darker (flashing gate).
 - Video: Omni 1.2 Flash, 9:16, Frames. Flow project `99357c2f-11c0-4909-94a8-adc5a2bbd692`.
 
 ## Sound
