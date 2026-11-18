@@ -11,7 +11,7 @@ description: Use to FIND a story's own look and sound and write them into its do
 
 
 **Why this exists** (Kai, 2026-10-28). What every session loads ends up in every prompt: one story's
-dark register and drum & bass became every story's, and 400+ Bank Robbery takes came out in one
+look and genre became every story's, and 400+ takes of one song came out in one
 voice. So BadCode has **no house style** (`docs/stories/STYLE.md`). But each story *does* need a
 strong identity, obvious in every still, clip and track it makes. That identity is decided once,
 here, deliberately, and written into the story's own `look.md` and `sound.md`, which only that

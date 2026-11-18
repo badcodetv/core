@@ -14,7 +14,7 @@ You are the art director for a still. **There is no BadCode house look** (Kai, 2
 look belongs to one story, written in **`docs/stories/<story>/look.md`** (`docs/stories/STYLE.md`).
 The user gives you a short description; **your job is to enhance it** inside that story's look,
 art-directing the subject before a single pixel is generated (how long the prompt runs is the
-look's call: some stories want a full paragraph, Bank Robbery's wants it halved).
+look's call: some stories want a full paragraph, some want it halved).
 
 **First, find the story and read its `look.md`.**
 - **LOCKED** (for this part) → its preamble, rules, anchors and cast are the look. Look at its anchor
@@ -30,7 +30,7 @@ Inside a scene, the mood board and storyboard loop is **`scene-images`**; this s
 ## Read first
 
 - **`flow-automation`**: driving Flow, policy blocks, casting, reviewing output. Not restated here, on purpose.
-- **`shot-craft`**, for any frame not yet designed. This skill owns how a frame *looks* inside the story's look; shot-craft owns what the shot *is* (framing, depth, where the light comes from, camera height, what is withheld). A look plus a badly designed frame is still furniture. A story's `look.md` may make some of shot-craft's gates its own rules (GPOM's does: one bright anchor in the dark, a visible cost in any monumental frame).
+- **`shot-craft`**, for any frame not yet designed. This skill owns how a frame *looks* inside the story's look; shot-craft owns what the shot *is* (framing, depth, where the light comes from, camera height, what is withheld). A look plus a badly designed frame is still furniture. A story's `look.md` may make some of shot-craft's gates its own rules.
 - **`flow-prompt`**: how Nano Banana actually behaves.
 
 ## Variety mode: proposing, not finishing
@@ -53,9 +53,8 @@ It is OFF once a plate is accepted: an accepted plate is the story's look, full 
 
 ## Where the looks went
 
-The two registers this skill used to hold are now in GPOM's `look.md`, word for word. Camping's look grew out of the PEOPLE one and is
-stated in its own `look.md`; Karen, Bank Robbery and Magic Money Tree each have their own. Don't use one
-story's look for another unless its `look.md` says so. `docs/cinematography/principles.md` §R1 (does a story's register suit our reader?) is still 🔴 open.
+Every look lives in its own story's `badcode.md` (the long record in its `look.md`); the library of looks is
+`docs/library/`. Don't use one story's look for another unless its `badcode.md` says so. `docs/cinematography/principles.md` §R1 (does a story's register suit our reader?) is still 🔴 open.
 
 ## Calibration: what the generic AI look is made of (diagnostic)
 
@@ -67,7 +66,7 @@ decides.
 2. **Lens flares, glow bloom, decorative light rays, heavy vignettes, chromatic aberration** as unchosen decoration.
 3. **Smooth porcelain skin and idealised faces**, where the look wants real people. Name the imperfections that make a person real.
 4. **Busy greebled detail everywhere.** Say what the eye should ignore.
-5. **HUD overlays, holograms, floating UI** as decoration. (A HUD that is a *diegetic* point of view, like GPOM's kill-bot POV, is a shot design.)
+5. **HUD overlays, holograms, floating UI** as decoration. (A HUD that is a *diegetic* point of view, like a character's point of view, is a shot design.)
 6. **Over-lit "epic" scenes** and **the centred lone posed figure** nobody chose.
 
 The general counter is not a texture to add (film grain is one medium's answer, not the answer): **be <!-- style-lint: ok (engine fact) -->
@@ -82,7 +81,7 @@ the character is **attached as a reference**. Naming them in prose is not enough
 
 - Use the Flow tools' `character` parameter (`flow_generate_image`, `flow_edit_image`) to cast a Flow Character, or `@`-cast in Frames mode. Characters are **project-scoped**: confirm the open project has it (`flow_list_characters`), or create it there from the canon sheet.
 - One canonical reference image per character, always the same one: the story's `look.md` §Cast names it.
-- **Hard rule:** never regenerate a face-bearing frame of a recurring character without casting them. Prose plus image references provably don't hold a face (the 2026-07-25 camping recut produced a third Tarquin). If casting fails, stop and fix that first.
+- **Hard rule:** never regenerate a face-bearing frame of a recurring character without casting them. Prose plus image references provably don't hold a face (a 2026-07-25 recut produced a third different face for one character). If casting fails, stop and fix that first.
 
 - **A BadCode balaclava in the frame** (any story): the mask is the logo, so follow the procedure in `docs/brand/README.md` ("Putting a balaclava in a picture"): Jack's mask as an image reference, a fix pass, a zoomed check of every triangle.
 

@@ -1,0 +1,111 @@
+---
+name: new-story
+description: Use when starting, capturing, or developing a BadCode story — scaffolds docs/stories/<story>/ (concept, characters, beats, its own look and sound via story-style, song) as the single source of truth and drives idea → media. Triggers on "new story", "capture this story", "let's develop <story>", "write the canon for <story>", or working on camping / Karen Will Lead the Revolution / The Magic Money Tree / GitPush Origin Master.
+---
+
+# New Story (BadCode)
+
+> **Story context (2026-11-17 context reset):** a story's `badcode.md` is the first file to read and the whole of what
+> applies to it. Where this skill says "the story's `look.md` / `sound.md`", read `badcode.md` first and open those only
+> for a detail it points to. Examples in this skill or its docs that name a story are that story's, never a default.
+
+
+Take a story idea — a fragment, a reference, an existing comic, a GPOM beat — and
+capture it as canon under `docs/stories/<story>/`, the single source of truth that the
+comic, the song(s), and any later media derive from. Drive it collaboratively
+from the CLI; write the files as you go.
+
+> When the story becomes a **film**, the **`overview-board`** skill lays out its
+> running order and **`new-scene`** makes each part. (The comic pipeline,
+> `make-comic`, was archived on 2026-10-23: `.claude/skills-archive/comics/`.)
+
+## Read first
+
+- `CLAUDE.md` — what BadCode is and the repo map.
+- `docs/voice.md` — load-bearing tone (sarcastic, dark, total authority; politics
+  & economics first; story over sermon). All prose, and any lyric in the narrator's
+  voice, match this; a character's song speaks in that character's voice.
+- `docs/storytelling.md` — the method: Key concept + Background → beats →
+  characters → image direction. Do not reinvent it; follow it.
+- The **`story-craft`** skill (`docs/story-craft/principles.md`) — the craft under the
+  method. Apply its **Build mode** at step 3 (the spine and beats): the theme as one
+  causal sentence, the one costed object that carries it, the last beat fixed first,
+  beats joined by but/therefore, a midpoint that reverses. Hand over beats with the
+  checklist rows you ran (`docs/story-craft/checklist.md` §0–§2).
+- For canon-linked stories, skim `docs/stories/gitpush-origin-master/README.md` to stay
+  consistent with the arc.
+
+## The structure you produce
+
+A story is a folder of markdown. Source of truth. Medium-agnostic — never assume
+a story becomes a slide-based comic.
+
+```
+docs/stories/<story>/
+  README.md            # index + production tracker (table: medium / where / status)
+  story.md             # spine: Key concept, Background, high-level Beats, the twist
+  characters/<name>.md # one per character (frontmatter + prose)
+  look.md              # THIS story's look — EMPTY until found (docs/stories/STYLE.md template)
+  sound.md             # THIS story's sound and voices — EMPTY until found (same)
+  songs/<slug>.md      # lyrics + Suno style/exclude (one file per track)
+  timelines.json       # once the film is being cut: the OVERVIEW BOARD, the film start to end (see below)
+```
+
+Frontmatter is light and is the subset machine artifacts need:
+
+- `story.md`: `id, title, logline, status, release, media`
+- `characters/<name>.md`: `name, role, voice, sheet, signals`
+- `songs/<slug>.md`: `title, status, suno: {style, exclude}, bpm, voices`
+
+`docs/stories/camping/` is the worked reference — match its shape.
+
+**There is no house style** (Kai, 2026-10-28). A new story's `look.md` and `sound.md` start EMPTY
+from the templates in `docs/stories/STYLE.md`. Never seed them from another story: a new story's
+look and sound are found by the **`story-style`** skill (step 4) and written back when picked.
+
+## Workflow
+
+1. **Take the idea.** Fragment, reference, existing comic, or GPOM beat. Don't
+   demand a brief.
+2. **Scaffold** `docs/stories/<story>/` with the files above, plus **`badcode.md`** ([template](../../../docs/stories/badcode-template.md)).
+   **What goes in its context (Jack's rule, 2026-11-17).** Before anything is generated, open the
+   [library](../../../docs/library/README.md) and propose the pieces this story should take in: two to five looks, sounds
+   or tricks, each with one line on why, plus "nothing from the library" as an option. Put it to Jack or Kai as one
+   question (AskUserQuestion, multi-select). Copy only the picked pieces into the story's `badcode.md` under **Library
+   pieces in use** (adapted, never linked as a live rule). Nothing else from the library, another story or a shared doc's
+   examples applies.
+3. **Capture the spine** collaboratively, writing each file as it firms up:
+   **Key concept** (the one idea), **Background** (real-world grounding), then
+   **characters**, then **high-level beats**. For an *existing* story, reverse-
+   engineer from current material (comic scenes in `comic.meta.ts`, existing
+   lyrics) rather than inventing.
+4. **Look and sound.** Once the spine and beats hold, run the **`story-style`** skill: an interview
+   about the story, then genuinely different looks and sounds on a picking page, and the picks
+   written into `badcode.md` (current look and sound) and `look.md` / `sound.md` (the full record). Say you are handing off to it. Nothing visual or musical
+   is made before this (a story's identity is decided once, deliberately, not by the first prompt).
+5. **Song.** With `sound.md` filled in, invoke the **`suno-prompt`** skill to produce the style prompt,
+   exclude list, and (on request) lyrics inside the story's sound; write the result to `songs/<slug>.md`
+   with frontmatter. Say you are handing off to `suno-prompt`.
+6. **Derive `comic.meta.ts`** from the canon **only on request** — read the story
+   + character files and write/update `apps/web/src/comics/<story>/comic.meta.ts`
+   (style, characters with `sheet`/`description`, per-asset scenes). The canon is
+   the source; `comic.meta.ts` is the artifact. Keep slide work out of scope
+   unless asked.
+7. **Maintain `README.md`** — the index and the production tracker (medium ×
+   status), so the folder stays self-describing.
+8. **The overview board** (Kai, 2026-10-23; the **`overview-board`** skill runs it). Once a story is
+   headed for film, lay out its skeleton there; at the latest when it has its first timeline page,
+   it gets an overview board: `timelines.json` lists the film start to end, each scene or sequence with
+   its state, its current timeline page and every earlier page. Build it with
+   `python3 scripts/provenance/build-timelines.py docs/stories/<story>` and publish
+   `timelines/index.html` as an artifact. Put its link in `timelines.json` (`url`) and **at the top of
+   the story's `README.md`**. Then rebuild and republish to the same link whenever a timeline changes.
+   Full rules: [`docs/provenance/README.md`](../../../docs/provenance/README.md). Worked example: GPOM.
+
+## Principles
+
+- The canon is the source of truth; everything else derives from it. Edit canon,
+  not the artifacts.
+- Compose, don't duplicate: lean on `storytelling.md` and `suno-prompt`.
+- Every story carries one load-bearing political/economic idea (see `voice.md`).
+- Stay high-level in `story.md`; only plan slides when the user wants a comic.

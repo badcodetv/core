@@ -48,6 +48,31 @@ Suno Style box: 'jungle, 165 BPM, chopped Amen breakbeat, fast ghost snares, dee
 
 Suno tends to produce modern polished drum and bass (clean 174 BPM two-step drums, melodic synth lead, festival drop) or a stiff loop of a single break rather than real edit-heavy chopping; breaks are often quantised and too regular. The ragga voice tends to become a generic rap or sing vocal. Fix by naming 'chopped, edited breakbeat, rolling snares, lo-fi 1994 sampler grit', and generate only short sections that you then edit together. Bass may come out at full speed rather than the half-time feel; add 'half-time bass line'.
 
+## Measured in our own Suno runs (drum and bass, 2026-09)
+
+Moved here on 2026-11-18 from the `suno-prompt` skill, where it sat as BadCode's own notes on drum and bass
+(original: `archive/skill-pollution-2026-11-18/suno-prompt/SKILL.md`). Drum and bass is filed under jungle in
+this library because the two are close in tool prompts. These are tested findings, not first guesses.
+
+1. **Half-time drums are a blind spot.** Repeated controlled tests never produced half-time from a `breakdown`
+   tag; it slows and thins the arrangement instead. Since the half-time drop is a defining drum and bass device,
+   assume it cannot be prompted: edit it in Studio or splice sections, and say so. Untested lead: Studio 2.0's
+   MIDI tracks to program the pattern by hand (`docs/suno-gpt/suno-studio.md` §2).
+2. **Niche subgenres fail; broad ones work.** Riddim came back as generic dubstep with none of its sound design;
+   expect the same at neurofunk, liquid and jump-up level. Describe the sound design and rhythm instead of the
+   subgenre name. v6, 2026-09-09: a lazy `liquid DnB` prompt came back as two-step drums, while one naming the
+   drum mechanics (`jungle breaks, rapid chop, hyperdetail percussion, dark synth bassline`) worked on both
+   models. v6 Wild is the model to hunt niche drum and bass in, then Cover into v6 (`docs/suno-gpt/suno-v6.md` §9).
+   `producer-vocabulary.md` has the toolkit: reese bass, sample-and-hold on the cutoff, amen break, sub layering,
+   sparse drop.
+3. **Suno's harshness sits where drum and bass lives:** brittle cymbals, sizzling hats, sibilance at 2–6 kHz.
+   Budget for de-essing, or plan to replace the drum stem.
+4. **Sidechain pumping is baked in** and cannot be undone.
+5. **Sounds mode is the transitions kit** (risers, downlifters, sweeps, impacts, fills at the project's BPM and
+   key); Suno won't build transitions into a generation.
+6. **A fill over a bed that already is that fill never arrives** (an amen fill over `chopped amen breaks`):
+   describe the event that changes against the bed, not a bar count.
+
 ## Production cost
 
 Rhythms are consistent within a prompt, but long takes tend to loop. Cutting between sections is easy in an edit, so jungle is workable across a story as a recurring cue. Vocals are the weak point and are best kept as sparse chants.

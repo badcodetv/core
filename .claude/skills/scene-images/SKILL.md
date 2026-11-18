@@ -66,7 +66,7 @@ Cheap first looks: many options per beat, not finished frames. **Stills cost no 
 
 ## Before a still reaches the board (Jack, 2026-11-17)
 
-Priority Lane rounds 8-17 lost a round to every one of these. Each is a check, not a style rule.
+One short's rounds 8-17 lost a round to every one of these. Each is a check, not a style rule.
 
 - **One world map per scene.** Any scene with roads, traffic, rooms or a vehicle interior gets a `geometry.md`
   in its clean-room folder: every vehicle's lane, direction and which side it drives on (the UK keeps LEFT, the driver

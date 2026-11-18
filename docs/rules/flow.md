@@ -17,7 +17,12 @@ and gallery forward. The MCP generate tools take no project: they use whichever 
 - A plain `flow_generate_image` now refuses to run if a reference chip is left on the bar from an earlier call
   (`packages/flow-mcp/src/flow-client.ts`, generateImage). If it refuses, remove the chip in Flow or open a fresh project.
 
-## Jack's standing rule for Flow stills — always Nano Banana 2, never Nano Banana Pro, because NB2 costs no credits
+## Jack's standing rule for Flow stills — the free Nano Banana, never Nano Banana Pro
+
+> **Updated 2026-11-18:** "Nano Banana 2" has left Flow's menu (Kai, 2026-11-17; the menu now reads Nano Banana Pro ·
+> Nano Banana 2 Lite · Nano Banana 2.1). Use **`"Nano Banana 2.1"`** wherever this section says Nano Banana 2.
+> 🔴 **Unchecked:** whether 2.1 costs credits like Pro or is free like 2 was. Read the credit count before and after
+> the first 2.1 still of a session and write the answer here.
 
 For Flow still images always use **Nano Banana 2**. Never switch to Nano Banana Pro, even if he says "Nano Banana Pro 2" in a request (Flow has no model by that name; he means the free one).
 

@@ -90,7 +90,7 @@ turning, a face — or **only the camera**?
 
 If only the camera moves, this is not a Flow job. It is a scale-and-crop on one still in `ffmpeg`:
 free, any length, an exact ease curve, and **no artefact is possible** because it is one image.
-Veo can only make it worse — GPOM scene 0 burned four generations on a camera-only move that post
+Veo can only make it worse — one scene burned four generations on a camera-only move that post
 rendered perfectly in five seconds.
 
 And when Veo refuses a move, ask whether it will do the **inverse**. A push-in reversed in post is
@@ -226,7 +226,7 @@ your upload by diffing the tile grid, and that diff degrades in a cluttered proj
   Quality leave; whether 1.2 holds a cast character is untested.
 - 🔴 **Stills: the newest Nano Banana in Flow's menu (Kai, 2026-11-17).** Today that is **`"Nano Banana 2.1"`**; the menu
   reads **Nano Banana Pro · Nano Banana 2 Lite · Nano Banana 2.1**. **`"Nano Banana 2"` is gone** (first seen 2026-10-19,
-  `docs/flow/automation-2026-09-rebuild.md` item 78; it broke the Bank Robbery gang run on 2026-11-17): a call naming it
+  `docs/flow/automation-2026-09-rebuild.md` item 78; it broke a story's run on 2026-11-17): a call naming it
   waits 10 s for a menu item that is not there, and the tool now fails with `MODEL_NOT_IN_MENU` and lists what the menu has.
   A story's look.md that still names "Nano Banana 2" means its successor: use 2.1 and say so. When Flow adds a newer
   Nano Banana, switch to it, and update this line and `IMAGE_MODELS_HINT` in `packages/flow-mcp/src/flow-client.ts`.
@@ -245,7 +245,7 @@ your upload by diffing the tile grid, and that diff degrades in a cluttered proj
 | Card reads **"Audio Generation Failed"** | Veo killed its own output over audio | **Retry unchanged.** Credits refunded. Not a prompt verdict |
 | **"You're requesting generations too quickly"** | Rate limit, tightens with the day's volume | **Wait.** Rewriting changes nothing |
 | `FRAME_SLOT_NOT_FILLED` (the Start frame didn't take the image) | The frame picker didn't commit | **Refresh the page (a real reload), then retry.** Jack's rule, 2026-09-28: the same refresh as for "unusual activity" below |
-| **"We noticed some unusual activity"** | Anti-abuse, transient | **Refresh the page (a real reload, not just re-navigating) and retry after ~10 s.** No long back-off, and no pause between clips. The card says *"You have not been charged"*. ~~Wait a couple of minutes~~: corrected by Jack 2026-09-28 during the Camping mv2 run, and a 10 s reload-retry was enough there. Disable any VPN if it keeps coming back |
+| **"We noticed some unusual activity"** | Anti-abuse, transient | **Refresh the page (a real reload, not just re-navigating) and retry after ~10 s.** No long back-off, and no pause between clips. The card says *"You have not been charged"*. ~~Wait a couple of minutes~~: corrected by Jack 2026-09-28 during a 26-clip run, and a 10 s reload-retry was enough there. Disable any VPN if it keeps coming back |
 | A stuck **"Pending"** card | Failed on policy or credits, left a husk | Manually retry or delete it. It will not clear itself |
 | `TIMEOUT` after ~90s on a *control* | A hard wait on something that already vanished, or never arrived | §4 law 13. Look at the window |
 | `TIMEOUT` on a *generation* | Queue, or a block | Veo Quality queues for minutes under load. Two clean failures ⇒ block |
@@ -296,7 +296,7 @@ as an asset — use that when the next generation needs to reference it.
 
 **Chain; do not pin an `endImage`.** Frames-to-Video *interpolates between two pictures* — Google
 documents it as a morph tool — and every inconsistency between the two images gets animated away as
-sliding joins and deforming structure. Measured on GPOM scene 0: dropping `endImage` took the same
+sliding joins and deforming structure. Measured on one scene: dropping `endImage` took the same
 prompt from *"joins slide and deform throughout"* to *"completely rigid."* **Chaining buys
 rigidity; pinning buys arrival.**
 
@@ -509,9 +509,7 @@ detail is small or dark.
 
 🔴 **A camera-only move on a still is not a Flow job.** If nothing in the world actually moves,
 it is a scale-and-crop on one image: no 8s cap, no 720p ceiling, no artefacts, no credits.
-Render it with ffmpeg. Worked example:
-`docs/stories/gitpush-origin-master/storyboard/img/s00-pullback-post-12s.mp4` — 12s at 1080p,
-after Veo failed at it four times.
+Render it with ffmpeg. One 12 s pull-back was made this way at 1080p, after Veo failed at it four times.
 
 ---
 
@@ -638,10 +636,9 @@ drive that is not backed up. **Write the prompt in the repo, then generate.**
 Desktop just because the folder is missing. Never write generated media to the project root: it
 belongs one level down, in `clips/`, beside the other scenes.
 
-Worked example — GPOM's project is `/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj`,
-so the plant-room scratch is `/mnt/d/badcode-videos/gitpush-origin-master/clips/plant-room/`, and
-the bulletin's is `.../clips/bulletin/`. **Scratch folders used to live on the Desktop and no
-longer do** (the last five were migrated 2026-08-26); anything still pointing at `~/Desktop/gpom-*`
+Example: a project at `/mnt/d/badcode-videos/<story>/<story>.prproj` puts a scene's scratch in
+`/mnt/d/badcode-videos/<story>/clips/<scene>/`. **Scratch folders used to live on the Desktop and no
+longer do** (the last five were migrated 2026-08-26); anything still pointing at the Desktop
 is stale.
 
 Kai watches from there, so **name files so a human can tell them apart** and tell him the folder,
@@ -695,8 +692,8 @@ post step. Add the recovery table:
 `prompts.md`, naming where the real record lives and how far the shoot drifted:
 
 ```markdown
-> ✅ **BUILT 2026-08-21** as [`scenes/s00-awakening.md`](../../../docs/stories/gitpush-origin-master/scenes/s00-awakening.md).
-> Diverged from this board: no descent, no Dubai, no lens flare — the cut ends on Earth from orbit.
+> ✅ **BUILT <date>** as [`scenes/<scene>.md`](<link to the scene's record>).
+> Diverged from this board: <what the shoot dropped or changed, in one line>.
 > **This section is the pre-production suggestion and is left as written.**
 ```
 
@@ -715,9 +712,9 @@ A ruling that some shot *cannot* be done in Flow is a reading of the models on t
 written, and the models move. **Every such ruling carries a date and the one test that would
 overturn it, and gets retested before it is allowed to stop anything.**
 
-Worked example, 2026-08-21: `prompts.md` §5 ruled GPOM scenes 1–4 "not a Flow job" on 2026-08-08,
+Worked example, 2026-08-21: `prompts.md` §5 ruled four scenes "not a Flow job" on 2026-08-08,
 because legible text is a policy-block trigger and Flow renders text badly. Both halves had stopped
-being true. Nano Banana Pro rendered `git push origin master` on a CRT correctly in **4 of 4**
+being true. Nano Banana Pro rendered a short line of code on a screen correctly in **4 of 4**
 candidates with no block, and Veo held the spelling and spacing intact through an 8s push-in. The
 ruling cost two weeks of a scene being considered unshootable.
 

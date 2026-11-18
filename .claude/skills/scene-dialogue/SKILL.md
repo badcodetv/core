@@ -9,7 +9,7 @@ description: Use to REWRITE the spoken words of one or more BadCode scenes by op
 uses); this skill is how they get rewritten when they aren't working. Then **`scene-timeline`** voices
 them and puts them on the timeline page. Part of the scene editor (`new-scene`); usable on its own.
 
-Kai, 2026-10-27, after the first round (GPOM's intro and doorstep): *"ranking and reflowing dialogue into
+Kai, 2026-10-27, after the first round (one film's intro and doorstep): *"ranking and reflowing dialogue into
 something else could be a skill that we put alongside the rest of the timeline editor skills."* He also
 said the first page was hard to follow: the rankings did not link to the dialogue they ranked. **So the
 page is built one tab per dialogue, and every ranking row opens that writer's version.** Never go back to
@@ -18,7 +18,7 @@ layout in §3 as it is; change it only on his word.
 
 ## When
 
-- A speech is too long for the attention it gets (GPOM: a 55 s intro cut to under 20 s).
+- A speech is too long for the attention it gets (one film: a 55 s intro cut to under 20 s).
 - A scene must land an argument without a lecture (the doorstep's game theory).
 - Kai asks for options, or his timeline notes say "rewrite this" for more than a line or two. One line
   is a timeline note, answered on the timeline page; a whole dialogue is this skill.
@@ -27,14 +27,14 @@ layout in §3 as it is; change it only on his word.
 
 Agree with Kai, in one message he can answer quickly:
 
-| What | Example (GPOM, 26 Oct) |
+| What | What to fill in |
 | --- | --- |
-| **Which dialogues** (one or several; one page covers them all) | Maddie's intro (scene A beat 0), the doorstep (scene B) |
-| **Target length** each | 20 s or less · about 60 s |
-| **What each must still do** (the plants and payoffs) | she's friendly; he misses us; his worlds failed for want of consciousness; the patrol is out |
-| **Protected lines**: Kai's words, kept verbatim if at all possible | "It runs on... well... you." |
-| **Rules** | no stated moral; Maddie stays warm and West Country; the lady stays stern; the vote is off screen |
-| **What's in the cut now**, and where it lives | `voice3.py` `MADDIE`; `second-half-b-the-door/script.json` |
+| **Which dialogues** (one or several; one page covers them all) | <speech> (scene, beat) |
+| **Target length** each | <seconds> |
+| **What each must still do** (the plants and payoffs) | <each plant or payoff, in a few words> |
+| **Protected lines**: Kai's words, kept verbatim if at all possible | <the lines, quoted> |
+| **Rules** | <from the story's `badcode.md`: how each character must stay, what stays off screen> |
+| **What's in the cut now**, and where it lives | <the voice script or `script.json` path> |
 
 The brief also names what the writers read first: `docs/voice.md`, `docs/marketing/the-reader.md`,
 `docs/story-craft/principles.md`, the story's beats and `timelines.json`, and the scene's own script.
@@ -53,7 +53,7 @@ changes; the writers only write options.
   comedy first · the other side wins · reversal · the chorus · the place is the argument · borrowed craft ·
   ending first. Swap one when the scene calls for it (a comedy scene doesn't need "comedy first"). Each is
   pushed to its **extreme**: the point is to find the edges, as on Suno.
-- 📎 A writer can return text without writing its file (GPOM's shape 07 did). The synthesis is told to
+- 📎 A writer can return text without writing its file (it has happened). The synthesis is told to
   check and fill in missing files. If one is still missing, recover it from the run's journal.
 
 ## 3. The dialogue page
@@ -106,7 +106,7 @@ After publishing, add a line to each scene's trail:
 
 Once a dialogue is picked:
 1. Write the lines into the scene's home for words: `script.json` lines with `by: kai` for his words and
-   `by: claude` for drafted ones, or the cut's voice script (GPOM: `voice3.py`).
+   `by: claude` for drafted ones, or the cut's voice script .
 2. Record the pick in the scene's `scene.json`, under `dialogue`: `{page, options, picked, round}`.
 3. Hand over to **`scene-timeline`**: voice the new lines, re-time the cut, and republish the timeline page.
    If the scene is in Premiere, the same round also lands as the next `…-r<N+1>` sequence: page and Premiere
@@ -114,7 +114,7 @@ Once a dialogue is picked:
 
 ## Worked example
 
-GPOM, 26–27 Oct: `design/2026-10-26-gpom-dialogue-options/` (`options.json` plus ten `shape-*.md` files), with
+The first run, 26–27 Oct (mechanics only, its words are that story's): `design/2026-10-26-gpom-dialogue-options/` (`options.json` plus ten `shape-*.md` files), with
 the page at https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN. That first run used a one-off version of the
 workflow, and its `options.json` was converted from the synthesis's markdown
 (`design/2026-10-26-gpom-dialogue-options.md`). Later runs write `options.json` directly.

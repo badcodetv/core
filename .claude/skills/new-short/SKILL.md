@@ -1,6 +1,6 @@
 ---
 name: new-short
-description: Use to start or make a BadCode SHORT (a 5-20 second piece of social commentary, "BadCode Shorts") — sets the short up as its own project (an ID, its own Google Drive folder, this machine's media folder, a repo folder with its own look and sound), then hands it to new-scene to make. Also keeps the running list of every short. Triggers on "new short", "let's make a short", "build this short", "short idea", "add a short to the list", "what shorts have we got", or any short named on the list (Priority Lane, The Rules, Howard Street…).
+description: Use to start or make a BadCode SHORT (a 5-20 second piece of social commentary, "BadCode Shorts") — sets the short up as its own project (an ID, its own Google Drive folder, this machine's media folder, a repo folder with its own look and sound), then hands it to new-scene to make. Also keeps the running list of every short. Triggers on "new short", "let's make a short", "build this short", "short idea", "add a short to the list", "what shorts have we got", or any short named on the list.
 ---
 
 # New short (BadCode)
@@ -22,7 +22,8 @@ short's one scene. Nothing in `new-scene` is duplicated here.
 **Every short, idea or made, is on [`docs/marketing/badcode-shorts.md`](../../../docs/marketing/badcode-shorts.md)**:
 the 20-second cut list at the top (one line each) and a section per idea below. New ideas get the next number,
 at the foot of both. When a short is being built, mark it `BUILDING` there and link its project folder; when it
-ships, `DONE` with the link. Jack writes the jokes; an idea's punchline may be a blank for him.
+ships, `DONE` with the link. **Jack writes the jokes, always** (`docs/rules/working.md`): beats say what to joke
+about, and every joke line and punchline stays blank for him; never draft one unless he asks.
 
 What a short is (from the 2026-11-10 meeting, written up in that file): 5 to 20 seconds, social commentary not news,
 no format. The `🔴 Lines that apply to every short` section there (no AI people in real footage, no AI likeness
@@ -49,9 +50,12 @@ ID: `short-<slug>` (kebab case, e.g. `short-the-rules`). Ask only what you can't
      reference stills; the mask itself is fixed by `docs/brand/README.md`, the rest is free.
    - `scenes/<slug>/scene.json` (`story` = the ID, `media` = this machine's folder, `beats` = the pitch's rough beats)
      and `picks.md` (dated rulings, the pitcher's words kept).
+  Build every file from the templates named here; **never open another story's or short's folder to copy its
+   shape** (2026-11-18: a test session read another short's files to copy the layout, which is how one story's look leaks).
 5. **What goes in its context (Jack's rule, 2026-11-17).** Before anything is generated, open the
    [library](../../../docs/library/README.md) and propose the pieces this story should take in: two to five looks, sounds
-   or tricks, each with one line on why, plus "nothing from the library" as an option. Put it to Jack or Kai as one
+   or tricks, each with one line on why, **always including at least one trick** from
+   [`tricks/`](../../../docs/library/tricks/README.md) (clean room, reference photo, balaclava…), plus "nothing from the library" as an option. Put it to Jack or Kai as one
    question (AskUserQuestion, multi-select). Copy only the picked pieces into the story's `badcode.md` under **Library
    pieces in use** (adapted, never linked as a live rule). Nothing else from the library, another story or a shared doc's
    examples applies.
@@ -74,11 +78,8 @@ picks the stills, OKs words and spend). What is different for a short:
 - 🔴 **No dialogue on a short's Suno track** (Jack, 2026-11-15: "never should be dialogue on these suno tracks for shorts unless i ask specifically, please only do music and sounds"): music and sound effects only, the round folder gets an empty `instrumental` file. **Every spoken line is an AI Studio voice** ("only dialogue should be ai studio"), cast with `voice-casting`.
 - **Clips page alongside the timeline** (Kai, 2026-11-11: *"it would be really useful to see these full screen,
   because if we're looking for artefacts…"*): a page of every clip in cut order, flagged good or fault, with a
-  fullscreen viewer (frame step, ¼ and ½ speed). Still candidates awaiting approval sit on the same page. The model is
-  The Rules' https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY.
-- **Balaclava gang in motion:** Omni redraws the masks every frame, and the triangles vanish when heads turn
-  (The Rules, 2026-11-11). Write "every mask keeps facing the camera" into the motion prompt, then check the
-  masks zoomed in at three points in each clip.
+  fullscreen viewer (frame step, ¼ and ½ speed). Still candidates awaiting approval sit on the same page. The first one
+  (layout only): https://claude.ai/artifact/GE8koyRsGnm3m3fNiVJTYY.
 - **Premiere and release: [`docs/marketing/shorts-release.md`](../../../docs/marketing/shorts-release.md).**
   - One master goes to all three platforms (YouTube, TikTok, Instagram).
   - One `.prproj` per short in its media folder.
@@ -90,7 +91,7 @@ picks the stills, OKs words and spend). What is different for a short:
   - Stay under 60 s, because past 60 s a copyright claim blocks a YouTube Short.
   - 🔴 Turn the AI-content label on, on every app.
 - **Growth and the funnel: [`docs/marketing/shorts-growth.md`](../../../docs/marketing/shorts-growth.md)** (2026-11-11, ten researchers). State the claim in frame one; one line worth forwarding; YouTube's Related Video link set by hand on every short (pinned comments are not clickable on Shorts); one landing page with `?src=` tags and a free offer for the email list; judge a short at 48–72 h against our own median, a series after 10–12.
-- **When Kai or Jack says it's a cut — the handover** (The Rules, 2026-11-11; model: `docs/stories/short-the-rules/README.md` § "Jack: pulling it"):
+- **When Kai or Jack says it's a cut — the handover** (2026-11-11; first done in `docs/stories/short-the-rules/README.md` § "Jack: pulling it"):
   1. Read the sequence (`premiere_get_sequence`) and copy its state into `feedback/premiere-rN-final/`. The bridge can't
      read transitions: read the fades from the saved `.prproj` (gzipped XML, `zcat`, never save to read it) into `transitions.json`.
   2. Port every trim, in-point, music move and fade into the short's cut script, rebuild, republish the timeline page to

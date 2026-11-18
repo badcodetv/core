@@ -155,10 +155,10 @@ Read-only, needs only ffmpeg, exits non-zero on a real fault. Reference:
 
 ### The one that actually bit us
 
-`camping.mp4` — the finished film — shipped **full-range content with no colour tag at all**
+One finished film shipped **full-range content with no colour tag at all**
 (`YMIN=0 YMAX=255`, `color_range=unknown`). A player that finds no tag assumes limited range and
 expands 16–235 to 0–255. Applied to content already at 0–255, **everything below 16 flattens to
-black.** On a dark film (Camping and GPOM both are) this is not a subtle grading difference
+black.** On a dark film this is not a subtle grading difference
 — it is the picture. It is invisible until you measure it.
 
 ```bash

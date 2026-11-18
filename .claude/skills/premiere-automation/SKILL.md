@@ -183,7 +183,7 @@ Ruled 2026-08-27 by Kai after a prompt sheet was written into `clips/` by mistak
 is a *preview* — it lets you see the shape in one file, and it is the wrong thing to cut with. The
 timeline wants every take, including the rejected ones, so a montage can be re-ordered and
 re-trimmed in Premiere rather than re-rendered in `ffmpeg`. One bin per cut, named `NN-<cut-id>`.
-GPOM's are `01-s00-orbital` … `06-vantage` (209 clips, imported 2026-08-26).
+For example `01-<cut-id>` … `06-<cut-id>`.
 
 ### §1c — Not installed: the full walkthrough
 
@@ -290,7 +290,7 @@ Two ways, and exactly one is required:
 
 ```
 premiere_open_project({ path: "/mnt/d/some/folder/thing.prproj" })   # anywhere on disk
-premiere_open_project({ story: "camping" })                          # <mediaRoot>\camping\camping.prproj
+premiere_open_project({ story: "<story>" })                          # <mediaRoot>\<story>\<story>.prproj
 ```
 
 **`path` is the one to reach for when the user pastes you a path** — any absolute `.prproj`, WSL

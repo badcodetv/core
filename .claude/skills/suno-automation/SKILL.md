@@ -1,6 +1,6 @@
 ---
 name: suno-automation
-description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running a slider pair, constraining a track to a target length, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "make it 30 seconds", "constrain the length", "set the duration", "put this in the gpom-story workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand; also "mass generate", "run a grid", "try every permutation", "v6 vs Wild", "set the model", "set Variety". Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
+description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running a slider pair, constraining a track to a target length, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "make it 30 seconds", "constrain the length", "set the duration", "put this in the story's workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand; also "mass generate", "run a grid", "try every permutation", "v6 vs Wild", "set the model", "set Variety". Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
 ---
 
 # Suno Automation
@@ -66,7 +66,7 @@ Which cells a round runs (model, Variety, the slider values) comes from the stor
 never from this skill; §9 of `automation.md` records the grid mechanics.
 
 ✅ **A v6 Create costs 10 credits for 2 takes** — proven 2026-09-21 across twelve Creates
-(Camping r54), custom Duration included, so a pair is 20 credits exactly as on v5.5.
+(one story's round), custom Duration included, so a pair is 20 credits exactly as on v5.5.
 
 ## Preflight
 
@@ -106,9 +106,8 @@ form holds a title and workspace belonging to another sheet, **stop and ask** ra
 loading over it. Note the title, workspace, `styleLen`, `excludeLen` and sliders first, so the
 other session can reload.
 
-📎 **Proven the hard way 2026-08-27:** a GPOM narration session and a Camping session ran
-simultaneously. The GPOM session read `status`, found a Camping cover loaded (`camping-duet`,
-take c3), and loaded over it. Separately, the credit balance **dropped by 30 mid-session** —
+📎 **Proven the hard way 2026-08-27:** two sessions working on two different stories ran
+simultaneously. One read `status`, found the other's cover loaded, and loaded over it. Separately, the credit balance **dropped by 30 mid-session** —
 the other session generating — which is the other reliable tell.
 
 🔴 **We still never automate downloading.** Suno caps downloads per month and that allowance is
@@ -124,7 +123,7 @@ create page isn't open — the script will navigate there itself on the next com
 ```bash
 # 1 ── pull the three boxes straight out of the sheet (no transcription risk)
 npx tsx scripts/suno/suno.mts extract \
-  docs/stories/gitpush-origin-master/songs/narration.md '`gpom-datacentre` — ' > /tmp/spec.json
+  docs/stories/<story>/songs/<sheet>.md '`<cue-id>` — ' > /tmp/spec.json
 
 # 2 ── add how to file and grade it
 #      { ...boxes, model, title, workspace, voice, styleInfluence, audioInfluence, weirdness,
@@ -142,7 +141,7 @@ npx tsx scripts/suno/suno.mts grid-plan /tmp/spec.json
 npx tsx scripts/suno/suno.mts grid /tmp/spec.json
 
 # 6 ── read the takes back
-npx tsx scripts/suno/suno.mts takes gpom-cut1
+npx tsx scripts/suno/suno.mts takes <story>-<cut>
 ```
 
 `load`, `controls` and `grid-plan` are always safe. A v5.5 Create cost 10 credits for 2 takes;
@@ -170,9 +169,9 @@ off, asserts it before every Create, and never reads, writes or checks My Taste.
 should change all of the prompts… it's an atomic action."* Changing some leaves a **hybrid nobody
 designed**.
 
-📎 **This is not theoretical.** GPOM's narration taste profile sat in My Taste under **fourteen**
-Camping cover rounds and a scouting set, demanding *one voice* for a two-man duet and *almost no
-music* for a drum-and-bass track. Every "genre X didn't work" finding from those rounds is unsafe.
+📎 **This is not theoretical.** one story's narration taste profile sat in My Taste under **fourteen**
+rounds of a different story's song and a scouting set, demanding *one voice* for a two-voice duet and *almost no
+music* for a full-band track. Every "genre X didn't work" finding from those rounds is unsafe.
 
 ### 🔑 The two levels of change — and only two
 
@@ -206,11 +205,11 @@ Style boxes:
 | **10–40%** | 🟡 check *what* is shared: production language shared = still meek |
 | **< 10%, and only the cast** | ✅ bold |
 
-*(Camping's sweep: 644 chars / 78% shared at g1 → 69 chars / 10% at g3, where those 69 characters
+*(One sweep, 2026-09: 644 chars / 78% shared at g1 → 69 chars / 10% at g3, where those 69 characters
 are the casting phrase and nothing else.)*
 
 **What may be shared, and it is a short list:** the cast, the words, and the one musical constant
-the brief actually names (Camping's brief named its drum foundation; another story's names its own,
+the brief actually names (one brief named its drum foundation; another story's names its own,
 or none). **Everything else
 belongs to the variation** — and two categories matter more than the genre noun itself:
 
@@ -219,9 +218,9 @@ belongs to the variation** — and two categories matter more than the genre nou
   twelve bits, almost mono, no highs` are three different records. Ten variations that all say
   *"dry, raw and close-mic'd"* are one record. **If the production sentence is shared, the sweep
   is meek no matter how different the genre words are.**
-- 🔑 **Vocal delivery belongs to the genre too.** Camping g1 said *"barked and metrical, locked to
-  the beat"* in all ten lanes, so ten genres arrived in one voice. Keep only the delivery rules
-  that are the *song* (for Camping: two named men, `never sung`) and let the genre own the rest —
+- 🔑 **Vocal delivery belongs to the genre too.** One sweep's g1 used the same delivery phrase
+  in all ten lanes, so ten genres arrived in one voice. Keep only the delivery rules
+  that are the *song* (e.g. who is singing, and whether they sing at all) and let the genre own the rest —
   spat, chanted, rapped, roared, half-yelled, screamed.
 
 **Excludes go per-variation, and each one bans the OTHER variations' sounds.** A shared ban list
@@ -289,7 +288,7 @@ A round is reported as **one line per take: its NAME, its length, and its suno.c
 
 ```bash
 npx tsx scripts/suno/suno.mts takes <titleFilter> --links
-# gpom-c12-cues3-v6-w10  1:40  https://suno.com/song/2ef65422-9967-4ddb-a6f3-1f5a56c96b71
+# <story>-<cut>-<rev>-v6-w10  1:40  https://suno.com/song/<id>
 ```
 
 Paste those lines into the reply and into the song sheet's round log. Then stop — the human listens
@@ -337,7 +336,7 @@ change them and nothing else. The grid mechanics are in `automation.md` §9.
 
 Narration is cut against **built picture**, so a take that misses its budget costs an edit.
 **Ruled 2026-08-24: within 10 seconds of the cut's budget.** Set `durationSec` in the spec, from
-the cut's budget (a story's per-cut budgets live in its own files, e.g. GPOM's narration sheet).
+the cut's budget (a story's per-cut budgets live in its own files).
 
 🔴 **Always aim slightly ABOVE the budget.** Suno's duration is a **target, not a contract**, and
 it **shortens reliably but repeatedly fails to stretch**. Long trims; short is a reshoot.
@@ -350,15 +349,15 @@ inside **More Options** (collapsed by default; its trigger needs a **real mouse 
 🖐 For an exact value by hand: hit **Custom**, then **double-click the number** — it becomes a
 typeable text box. Automation uses the slider, whose 5s granularity is inside the ±10s tolerance.
 
-✅ **Proven 2026-09-18 (Camping r48):** a 195 s target produced **12 takes out of 12 at 3:14–3:16**
+✅ **Proven 2026-09-18:** a 195 s target produced **12 takes out of 12 at 3:14–3:16**
 — about ±1 s, across three Style boxes and two weirdness settings. 🔑 **On v6, Duration Auto runs
 long:** the same lyrics on Auto the same day came back at 4:38 and 4:55. **Set the number.**
-✅ **Custom duration does not double the credit cost** — 2026-09-21 (Camping r54): twelve v6 Creates at Duration 195 s, **10 credits each**, read before and after every Create.
+✅ **Custom duration does not double the credit cost** — 2026-09-21: twelve v6 Creates at Duration 195 s, **10 credits each**, read before and after every Create.
 
 ### 🔑 Naming
 
-`<story>-<cut>-<revision>-<model>-w<weirdness>` — e.g. `gpom-cut1-A-v6-w<n>`,
-`gpom-cut1-A-wild-w<n>`; a grid that varies Variety or Max Mode adds `-var-<step>` / `-max`. The
+`<story>-<cut>-<revision>-<model>-w<weirdness>` — e.g. `<story>-cut1-A-v6-w<n>`,
+`<story>-cut1-A-wild-w<n>`; a grid that varies Variety or Max Mode adds `-var-<step>` / `-max`. The
 script builds these from the spec's `title` (the part up to the revision). The **letter is the
 prompt revision** and advances every time the prompt changes. Never a bare letter: the sheets also use
 A/B/C for scenes.
@@ -378,8 +377,8 @@ you do not set this run is a field someone else set, and **none of them error**:
 
 | What leaked | How it looked | What it cost |
 | --- | --- | --- |
-| **My Taste** | invisible from the create page | fourteen Camping rounds under another song's profile |
-| **A saved Voice** | 🔴 the worst one — **overrides the casting outright**, silently | a two-man duet generated in GPOM's one narrator voice |
+| **My Taste** | invisible from the create page | fourteen rounds under another song's profile |
+| **A saved Voice** | 🔴 the worst one — **overrides the casting outright**, silently | a two-voice duet generated in another story's one narrator voice |
 | **Workspace** | takes simply appear somewhere else | twelve takes filed into another story, moved back by hand |
 | **Duration** | a number left behind by another sheet | every take clipped, or padded, with nothing saying so |
 
@@ -392,7 +391,7 @@ attached audio.
 
 🔴 **Voices specifically: assert NO voice unless the sheet names one.** With none attached the
 control reads exactly `Voice`; attached, it reads the persona's **name**. A sheet that casts its
-voices in the Style box — which is all the Camping sheets — must abort when anything is attached,
+voices in the Style box — as some stories' sheets do — must abort when anything is attached,
 because a Voice beats the Style box and the take will sound *plausible*, just not cast.
 `cover-genre.mts` carries the reference implementation (`EXPECT_VOICE` / `NO_VOICE`).
 
@@ -403,8 +402,8 @@ survives into the next run, and each one has now bitten us, in this order:
 
 | State | How it bit | Guard |
 | --- | --- | --- |
-| **Mode + attachment** | an inherited **Cover** form generated two narration pairs as covers of a Camping track — 40 credits, and a confident false diagnosis | `formMode()` aborts on wrong mode or any attachment |
-| **Saved Voice** | an *instrumental* generation ran with GPOM's saved Voice (`badcode newsreader`) still attached, because the spec simply had no `voice` key | `load` aborts if a Voice is on and the spec asks for none |
+| **Mode + attachment** | an inherited **Cover** form generated two narration pairs as covers of another story's track — 40 credits, and a confident false diagnosis | `formMode()` aborts on wrong mode or any attachment |
+| **Saved Voice** | an *instrumental* generation ran with another story's saved Voice still attached, because the spec simply had no `voice` key | `load` aborts if a Voice is on and the spec asks for none |
 | **Duration** | **eight takes came back at 1:05 apiece from specs with no `durationSec` at all** — an earlier round had set 65 and omitting the field cleared nothing | `setDurationAuto()` runs whenever `durationSec` is absent |
 
 🔑 **The law: OMITTING A FIELD IS NOT THE SAME AS CLEARING IT.** Any spec field that maps to form
@@ -424,8 +423,8 @@ So a form inherited in **Cover** mode with a source attached **silently generate
 somebody else's track**, carrying that track's arrangement — while `status` reports style,
 excludes, lyrics, sliders, title and workspace all perfectly correct.
 
-📎 **What it cost:** two GPOM narration pairs (revisions A and B, **40 credits**) were generated as
-covers of a Camping source left attached by another session. Both void. And it produced a
+📎 **What it cost:** two narration pairs (revisions A and B, **40 credits**) were generated as
+covers of another story's source left attached by another session. Both void. And it produced a
 convincing false diagnosis — "there is music under my dry read" was blamed on the taste box and on
 audio-influence bleed from the cloned Voice. **Those were real bugs and worth fixing, but the cover
 attachment was the dominant cause and nobody had looked at it.**
@@ -484,7 +483,7 @@ Full detail in the knowledge base; this is the short list.
 
 | Trap | What it looks like | The rule |
 | --- | --- | --- |
-| **Overwrite Styles?** | Attaching a Voice offers to replace your Style box with the persona's own — for GPOM's saved Voice (`badcode newsreader`) that's GPOM's own track style. Box looks populated afterwards. | **Always Keep Current.** The script does this and logs it. |
+| **Overwrite Styles?** | Attaching a Voice offers to replace your Style box with the persona's own — that persona's own track style. Box looks populated afterwards. | **Always Keep Current.** The script does this and logs it. |
 | **Lexical lyrics** | `fill()` puts all lines in ONE paragraph with raw `\n`. Renders convincingly, structurally destroyed. | Insert line by line. **Verify by counting `<p>`, never characters.** |
 | **Two panels mounted** | Selectors match twice; one copy hidden, one at negative `y`. | Scope to the Advanced panel via the styles wrapper; keep `offsetParent !== null`. |
 | **Navigation wipes the form** | Clicking Library or reloading clears everything. No draft recovery. | Never browse mid-load. Re-run `load`. |
@@ -496,7 +495,7 @@ Two smaller ones: the Style box **truncates** at its 1,000 cap rather than refus
 asserts the length back), and `aria-label="Generate"` is the **Lyricist**, not Create — Create is
 `aria-label="Create song"`.
 
-### 🆕 Three more, found 2026-10-22 (Bank Robbery)
+### 🆕 Three more, found 2026-10-22
 
 - **The cookie banner blocks Create.** On a fresh profile, Suno's consent banner (`#cmp-banner-container`)
   sits over the Create button: `pair` hangs with the form loaded and nothing generated. Click

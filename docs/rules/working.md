@@ -20,13 +20,13 @@ Jack, 2026-11-17, after Priority Lane took 9 rounds for 4 shots ("it feels like 
 **Why:** rounds themselves were not slower (6-38 min); the count was, mostly rework and one-fix-per-round.
 **How to apply:** written into `.claude/skills/scene-images/SKILL.md`; see also `read-the-board-dont-ask` and `lookalike-drifts-to-the-real-person`.
 
-## For scripts, give Jack a beat brief (what each line conveys, what to joke about), not written jokes
+## Jack writes the jokes, in every story, short and script: give him a beat brief (what each line conveys, what to joke about), never written jokes
 
 Jack, 2026-10-07, on the Bank Robbery script: "instead of writing the jokes, just say what to joke about and what the scene/line is supposed to convey, I'll write it."
 
 **Why:** he wants to write the comedy himself; my drafted punchlines were not what he asked for.
 
-**How to apply:** per scene, hand over a beat list: who speaks, what the beat must convey, what the joke is about, with the line left blank for him. Said about The Bank Robbery (`docs/stories/bank-robbery/script.md`); my reading is that it holds for other comedy scripts too unless he says otherwise. See `bank-robbery-register-brutal-and-silly`.
+**How to apply:** per scene, hand over a beat list: who speaks, what the beat must convey, what the joke is about, with the line left blank for him. Jack, 2026-11-18: this holds for everything, not one story (a fresh test session drafted a Freddo joke because the rule was only written for one story). Applies to beats, scripts, shorts and captions with a gag in them, unless he asks for a draft. See `bank-robbery-register-brutal-and-silly`.
 
 ## When Jack says "forget all that" before a new brief, he means keep earlier prompts out of the new one — not cancel the earlier request.
 

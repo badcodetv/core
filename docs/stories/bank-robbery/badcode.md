@@ -42,9 +42,14 @@ the narrator's. Unclear: whether the short's music tracks are the same lo-fi set
 
 ## Music video ("The Speakeasy Mint")
 
-**Current state (2026-11-17): Kai is cutting it.** The direction now adds a **woman gang leader who is the
-singer**, in a **"poor chic"** style. These two rulings are not yet written anywhere in this folder; get
-the detail from Kai before prompting her.
+**Current state: final cut 10H2 is done** (Kai, 2026-11-17): built in Premiere as `Balaclava Gang 11`, on
+YouTube (private, `LV4twP4qyiU`) and on Drive. **The gang has a seventh member, its leader and the singer**
+(full brief: [songs/mv-gang/her/brief.md](./songs/mv-gang/her/brief.md)): small and slight, unarmed, always
+front and centre and a stride ahead; she is the one rapping at the lens. **Her look (locked):** canary-yellow
+belted duster, black beaded dress, black flat-brimmed hat, black gloves and boots, canary balaclava; no skin, so
+a red high-neck top under the dress and red tights in the triangle's red. Reference: the Canary character sheet
+(`songs/mv-gang/her/r4/`), attached to every shot she is in. Every motion prompt with her carries swagger and
+attitude (the walk, the head tilt, the finger, the shrug).
 
 **Look — EXPLORING.** A Prohibition-era world: the balaclava gang (six men, each a different coloured
 hand-knitted balaclava and a sharp suit: plum, bottle, crimson, marine, rust, silver) raps and gestures

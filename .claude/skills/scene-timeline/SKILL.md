@@ -127,9 +127,9 @@ that we don't diverge that much."* The page and the sequence are **two views of 
 ```json
 "premiere": {
   "current": "rough2",
-  "rough1": {"sequence": "gpom-sh-B-rough1", "guid": "…", "bin": "gpom-sh-B-rough1", "built": "2026-10-23",
-             "project": "/mnt/d/…/gpom-story.prproj", "stale": "why it must not be used, if so"},
-  "rough2": {"sequence": "gpom-sh-B-rough2", "guid": "…", "bin": "gpom-sh-B-rough2", "built": "2026-10-23",
+  "rough1": {"sequence": "<story>-<part>-rough1", "guid": "…", "bin": "<story>-<part>-rough1", "built": "2026-10-23",
+             "project": "/mnt/d/…/<story>.prproj", "stale": "why it must not be used, if so"},
+  "rough2": {"sequence": "<story>-<part>-rough2", "guid": "…", "bin": "<story>-<part>-rough2", "built": "2026-10-23",
              "edl": "/mnt/d/…/cut3/B/edl.json", "what": "Kai's picks in", "how": "premiere-plan.py --tag rough2",
              "check": {"at": "…", "state": "in sync", "why": ""}}
 }
@@ -166,8 +166,8 @@ Effects Kai adds are only seen in a dump read with `params` on; read that way wh
 ### Names say where the part sits in the film (Kai, 2026-10-26)
 
 `<story>-<order>-<part>-r<N>`: the part's position on the overview board, its letter and short name, and
-the round, e.g. `gpom-2-A-killbots-r1`, `gpom-3-B-door-r2`. Its media bin has the same name. Kai's own cuts get
-an order number and a name too (`gpom-1-track-and-off-switch`), so the Project panel sorts as the film.
+the round, e.g. `<story>-2-A-<name>-r1`, `<story>-3-B-<name>-r2`. Its media bin has the same name. Kai's own cuts get
+an order number and a name too (`<story>-1-<name>`), so the Project panel sorts as the film.
 When a part moves on the board, rename its sequences and bins (`projectItem.createSetNameAction` /
 `folder.createRenameBinAction`), and record `renamed_from` on the build record.
 
