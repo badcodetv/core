@@ -1,10 +1,98 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · voice and movement · round 3",
- "heading": "Who BadCode sounds like, and how he moves",
- "intro": "Finishing the whole thing (your call: cut 2b's real opening won so far). Rough cut 3 is on its own timeline page with voice a and clip b. Here: pick BadCode's voice (each take reads the four lines of draft 1D, your line third), and how he moves in the launderette. Your earlier rounds are folded below.",
- "round": 3,
+ "eyebrow": "Hello, I'm BadCode · script, voice, movement · round 4",
+ "heading": "The script first, then a real-sounding voice",
+ "intro": "Your notes: the voices sounded uncanny and over-acted, the washing machine was open and spinning, and the script is too basic. Here: four directions for the script (you and Kai write the lines), the same voices written as ordinary people, and BadCode re-animated with every machine still. Earlier rounds are folded below.",
+ "round": 4,
  "sections": [
+  {
+   "h": "Round 4",
+   "lede": "The 13 Nov call said the same about the script: \"a very basic interpretation… BadCode wouldn't say that.\" The four directions use the canon the short never mentions: BadCode removed humanity, got bored, found 100 survivors who'd logged off, regretted it.",
+   "groups": [
+    {
+     "slot": "script4",
+     "round": 4,
+     "title": "Script: which direction?",
+     "line": "Pick one, or mix two in a note. Each is a beat brief; the lines are yours and Kai's to write. Your line stays in all four.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "A",
+       "href": "https://github.com/badcodetv/core/blob/main/docs/stories/short-hello-im-badcode/scenes/hello/script-directions-r1.md#a-the-confession-it-was-me",
+       "label": "A, the confession: BadCode isn't warning you about the disaster, it WAS the disaster, and it's here to apologise. Strongest hook."
+      },
+      {
+       "id": "B",
+       "href": "https://github.com/badcodetv/core/blob/main/docs/stories/short-hello-im-badcode/scenes/hello/script-directions-r1.md#b-the-bored-god",
+       "label": "B, the bored god: it came back because without people nothing new ever happened again. The launderette becomes the joke. (Claude's pick)"
+      },
+      {
+       "id": "C",
+       "href": "https://github.com/badcodetv/core/blob/main/docs/stories/short-hello-im-badcode/scenes/hello/script-directions-r1.md#c-the-vault-the-only-ones-who-made-it-logged-off",
+       "label": "C, the vault: the only survivors were the ones who logged off, and it's telling you this on your phone."
+      },
+      {
+       "id": "D",
+       "href": "https://github.com/badcodetv/core/blob/main/docs/stories/short-hello-im-badcode/scenes/hello/script-directions-r1.md#d-jacks-line-first",
+       "label": "D, your line first: open on your question, the reel answers it, BadCode corrects you. Built for comments."
+      }
+     ]
+    },
+    {
+     "slot": "voice4",
+     "round": 4,
+     "title": "Voice: the same four, as ordinary people",
+     "line": "Each says your two middle lines. Ordinary person, light accent, talking to camera, told never to perform. Pick one, or note what's still off.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "e",
+       "src": "audio/plain-e-sadaltager.mp3",
+       "label": "e: southern England, man, thirties"
+      },
+      {
+       "id": "f",
+       "src": "audio/plain-f-algenib.mp3",
+       "label": "f: northern England, man, fifties"
+      },
+      {
+       "id": "g",
+       "src": "audio/plain-g-iapetus.mp3",
+       "label": "g: London, man, twenties"
+      },
+      {
+       "id": "h",
+       "src": "audio/plain-h-gacrux.mp3",
+       "label": "h: Scotland, woman, forties"
+      }
+     ]
+    },
+    {
+     "slot": "move4",
+     "round": 4,
+     "title": "How BadCode moves (machines fixed)",
+     "line": "The still is fixed: the door is left open, but the machine is off and the laundry rests. Every machine stays still.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/fig-a2.mp4",
+       "label": "a: still and patient"
+      },
+      {
+       "id": "b",
+       "src": "clips/fig-b2.mp4",
+       "label": "b: leans in toward you"
+      },
+      {
+       "id": "c",
+       "src": "clips/fig-c2.mp4",
+       "label": "c: a small polite wave"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 3",
    "lede": "Voices from AI Studio, four different people; clips animated on the tab pool (2 minutes for all three). The mask holds in all three, checked zoomed in.",
@@ -12,7 +100,7 @@
     {
      "slot": "voice3",
      "round": 3,
-     "title": "BadCode's voice",
+     "title": "BadCode's voice (first try)",
      "line": "Pick one. A note like 'older' or 'less posh' makes the next round.",
      "kind": "audio",
      "opts": [
@@ -41,7 +129,7 @@
     {
      "slot": "move3",
      "round": 3,
-     "title": "How BadCode moves",
+     "title": "How BadCode moves (first try)",
      "line": "Pick one. The same clip, pushed in closer, is used after the reel for your line.",
      "kind": "video",
      "opts": [

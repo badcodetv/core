@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/casting/badcode-h-gacrux-l3.wav",
+ "made": "2026-11-18T16:25:00+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "What do you think in your mind, what the worst-case scenario is? I'll be patiently waiting to correct your bullshit.",
+ "inputs": {
+  "profile": "Accent: British (Scotland, an ordinary woman in her forties; everyday, light accent, not a character voice).\nStyle: a real person talking straight to the camera on their phone. Natural and conversational, plain and sincere, never performs, never acts, no put-on character.\nPace: normal speaking pace, even, short natural pauses.\n",
+  "profile_file": "docs/stories/short-hello-im-badcode/scenes/hello/voices/notes/h-gacrux.md"
+ },
+ "settings": {
+  "voice": "Gacrux",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "director's note"
+ }
+}

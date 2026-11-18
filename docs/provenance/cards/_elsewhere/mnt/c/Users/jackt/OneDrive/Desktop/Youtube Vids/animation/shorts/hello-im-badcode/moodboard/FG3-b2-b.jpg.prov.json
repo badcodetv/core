@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG3-b2-b.jpg",
+ "made": "2026-11-18T16:24:58.117Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the washing machine on the left with the open door: its round glass door is now shut, flush with the front of the machine, and the drum behind the glass is still with folded laundry resting in it. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG3-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG3-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "7236bd4d-0080-42ed-853f-9200fa5f502e"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/video/hb-fig-a2-FG3-b2-a.mp4",
+ "made": "2026-11-18T16:28:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A launderette late at night. Every washing machine is switched off and motionless; the left machine's door stays open exactly as it is, the laundry inside resting. He sits completely still on the plastic chair, chest rising and falling slowly as he breathes; overhead, one fluorescent tube flickers once. BadCode keeps his masked face toward the lens throughout, the white ring and red triangle unchanged. One continuous shot. The camera does not move.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG3-b2-a.jpg",
+ "why": "Jack 2026-11-18: 'the washing machine door is open and spinning like it is on, please change it so it is realistic' (a re-roll: still and patient)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/moodboard/FG3-b2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-hello-im-badcode/scenes/hello",
+  "key": "fig-a2",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T16:27:07.439Z"
+ }
+}

@@ -51,7 +51,7 @@ def main():
     vo = []
     for i, p in enumerate(raw):  # the takes come with silence at both ends: trim it, keep 0.05 s of air
         o = WORK / f'vo-{i + 1}.wav'
-        sr = 'silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05'
+        sr = 'silenceremove=start_periods=1:start_threshold=-55dB:start_silence=0.12'
         r1.ff('-i', p, '-af', f'{sr},areverse,{sr},areverse', o); vo.append(o)
     vd = [dur(p) for p in vo]
     clipf = next((MEDIA / 'video').glob(f'*-{a.fig}-FG3-b.mp4'))

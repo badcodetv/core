@@ -24,6 +24,30 @@
    "motion": "The camera does not move. A launderette at night. BadCode lifts one gloved hand to shoulder height in a small, polite wave, holds it a moment, then lowers it back to his knee. The washing machines turn behind him. BadCode faces the camera the whole time, so the white ring and the red triangle of the balaclava stay in full view and keep exactly their shape. One continuous shot. The camera does not move.",
    "character": null,
    "why": "a small wave for 'Hello'"
+  },
+  {
+   "key": "fig-a2",
+   "n": 1,
+   "still": "FG3-b2-a",
+   "motion": "The camera does not move. A launderette late at night. Every washing machine is switched off and motionless; the left machine's door stays open exactly as it is, the laundry inside resting. He sits completely still on the plastic chair, chest rising and falling slowly as he breathes; overhead, one fluorescent tube flickers once. BadCode keeps his masked face toward the lens throughout, the white ring and red triangle unchanged. One continuous shot. The camera does not move.",
+   "character": null,
+   "why": "Jack 2026-11-18: 'the washing machine door is open and spinning like it is on, please change it so it is realistic' (a re-roll: still and patient)"
+  },
+  {
+   "key": "fig-b2",
+   "n": 1,
+   "still": "FG3-b2-a",
+   "motion": "The camera does not move. A launderette late at night. Every washing machine is switched off and motionless; the left machine's door stays open exactly as it is, the laundry inside resting. He leans slowly forward, forearms coming to rest on his knees, gloved hands loosely together, as if about to say something to you. BadCode keeps his masked face toward the lens throughout, the white ring and red triangle unchanged. One continuous shot. The camera does not move.",
+   "character": null,
+   "why": "Jack 2026-11-18: 'the washing machine door is open and spinning like it is on, please change it so it is realistic' (b re-roll: leans in)"
+  },
+  {
+   "key": "fig-c2",
+   "n": 1,
+   "still": "FG3-b2-a",
+   "motion": "The camera does not move. A launderette late at night. Every washing machine is switched off and motionless; the left machine's door stays open exactly as it is, the laundry inside resting. He raises one gloved hand to shoulder height in a small, polite wave, holds it a beat, then rests it back on his knee. BadCode keeps his masked face toward the lens throughout, the white ring and red triangle unchanged. One continuous shot. The camera does not move.",
+   "character": null,
+   "why": "Jack 2026-11-18: 'the washing machine door is open and spinning like it is on, please change it so it is realistic' (c re-roll: a small wave)"
   }
  ]
 }
