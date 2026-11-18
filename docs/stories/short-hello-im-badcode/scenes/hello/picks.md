@@ -45,3 +45,12 @@
   nylon bossa, folktronica glitch, twinkle emo; gate sent two back once; 60 credits, every Create first time with the new
   workspace retry; 7 takes). Three stills were saved under the wrong names (a late tile picked up as the next result; one
   was a stray old armchair figure, moved to `<media>/moodboard/_rejected/`); re-collected from the gallery.
+- **2026-11-18, Jack's round-2 picks (page dump, `feedback/picks-r2/`):** opening **d** "g and i as well thanks" (skatepark,
+  fireworks, arcade), figure **b** (the launderette), music **folktronica take 1** (`60a00ad7`). "Picks, please put them on the
+  timeline". Also: search for real 2000s footage for the opening (find-footage helper running).
+- **2026-11-18, rough cut 2** (`scripts/shorts/hello_cut_r2.py`, `<media>/cut/r2/`, 27.3 s): the three openings as a montage,
+  the launderette, rough 1's real-footage reel, back to BadCode closer (the slot for Jack's after-the-reel line), black, the
+  logo; folktronica, faded as the reel slows. Stills with a slow push; nothing animated, no words. Photosensitivity: pass.
+  Timeline page round 2: https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP. Rough 1's media was gone from Jack's machine and
+  from Drive (footage, the eight reel stills, the Premiere project): the footage was re-fetched from its receipts in
+  `docs/footage/`, the reel stills recovered from the Flow gallery.

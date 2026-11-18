@@ -51,9 +51,9 @@
   ]
  ],
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/preview.mp4",
-  "script": "python3 scripts/shorts/hello_cut.py"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r2/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r2/preview.mp4",
+  "script": "python3 scripts/shorts/hello_cut_r2.py"
  },
  "premiere": {
   "current": "r1",
