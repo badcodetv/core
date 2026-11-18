@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/seg/card-shout.png",
+ "made": "2026-11-18T18:31:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "pil",
+ "tool": "scripts/karen/story-cut-r3.py",
+ "why": "Karen story cut r3 (2026-11-18), made by scripts/karen/story-cut-r3.py: placeholder/post graphic"
+}

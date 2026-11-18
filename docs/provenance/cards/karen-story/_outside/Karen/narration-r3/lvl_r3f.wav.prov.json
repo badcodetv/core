@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r3/lvl_r3f.wav",
+ "made": "2026-11-18T18:31:32+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r3/r3f-a.wav",
+ "why": "edge silence trimmed at -55 dB, levelled to -18 LUFS"
+}

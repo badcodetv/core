@@ -35,5 +35,13 @@
   "what": "Round 3 notes dumped: 2 new (1:59 and 2:08, the calling-everyone sequence: pins on the map, three named managers, then a fast seasons montage); read and summarised, plan to follow",
   "feedback": "feedback/timeline-r3",
   "feedback_docs": 14
+ },
+ {
+  "at": "2026-11-18T18:31:34+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r3 on the page: Kai's notes up to 2:08 attempted in one cut (protest throw, reminder + flashback, Martha/Clive/Harriet pins, seasons montage); head re-assembled, Viral onward = v4 render; 10 new TTS lines; 5:41 total",
+  "rebuild": "scripts/karen/render-narration-r3.sh && python3 scripts/karen/story-cut-r3.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story /mnt/d/badcode-videos/karen-story/timeline/page"
  }
 ]

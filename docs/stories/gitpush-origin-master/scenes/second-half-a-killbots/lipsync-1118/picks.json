@@ -1,16 +1,16 @@
 {
  "title": "Kill Bots Lip Sync",
- "eyebrow": "GPOM scene A · lip-sync pass, 18 Nov · round 2 (50 clips)",
+ "eyebrow": "GPOM scene A · lip-sync pass, 18 Nov · round 3 (pauses moved)",
  "heading": "The toilet row: pick the best lip sync per line",
- "intro": "Round 2: ten new talking clips per line now (five more made this afternoon), every voice take fitted whole to every clip's mouth, never early, never chopped. Each line: what's in the film now, then the three best pairs out of all of them (at most one per clip, so three different pictures). New clips play their full 5-6 s with the room bed; the film version is trimmed to the line. Pick one per row ('Now in the film' keeps it) and leave a note. Derek's first line still fits badly on every clip (his mouth is faster than any take): say if you want it re-voiced faster or re-shot.",
+ "intro": "Round 3, lines 1, 3 and 5: the voice re-made with Gemini's pause tags so its pauses sit where the clip's mouth pauses (same words), plus 32 new clips that write the pause as an action. Pairs are now ranked by how many words land inside film's lip-sync tolerance (45 ms early to 125 ms late). Lines 2 and 4 keep your round-2 picks. Voices marked 'new model' are Gemini 3.8: listen for whether Sandra still sounds like Sandra.",
  "sections": [
   {
    "h": "Scene A, the row",
    "lede": "Sandra and Derek in the bunker toilet, five lines in film order.",
    "groups": [
     {
-     "slot": "A-6-0",
-     "title": "Line 1 · Sandra",
+     "slot": "A-6-0-r3",
+     "title": "Line 1 · Sandra · round 3",
      "line": "Derek. You've left the seat up. Again.",
      "kind": "video",
      "opts": [
@@ -21,18 +21,18 @@
       },
       {
        "id": "p1",
-       "src": "v/6-0-r2-pick1.mp4",
-       "label": "New 1: clip g (new), voice e, voice at 0.97x"
+       "src": "v/6-0-r3-pick1.mp4",
+       "label": "New 1: clip i, voice 6-0-i, 5 of 7 words in time, voice at 0.97x"
       },
       {
        "id": "p2",
-       "src": "v/6-0-r2-pick2.mp4",
-       "label": "New 2: clip h (new), voice e, voice at 0.97x"
+       "src": "v/6-0-r3-pick2.mp4",
+       "label": "New 2: clip a, voice 6-0-a, 4 of 7 words in time, voice at 1.12x"
       },
       {
        "id": "p3",
-       "src": "v/6-0-r2-pick3.mp4",
-       "label": "New 3: clip c, voice h, voice at 0.97x"
+       "src": "v/6-0-r3-pick3.mp4",
+       "label": "New 3: clip f, voice 6-0-v1m31t1 with pause tags, 4 of 7 words in time, voice at 1.15x"
       }
      ]
     },
@@ -68,8 +68,8 @@
      ]
     },
     {
-     "slot": "A-7-0",
-     "title": "Line 3 · Sandra",
+     "slot": "A-7-0-r3",
+     "title": "Line 3 · Sandra · round 3",
      "line": "Five years underground, and you still can't put a seat down.",
      "kind": "video",
      "opts": [
@@ -80,18 +80,18 @@
       },
       {
        "id": "p1",
-       "src": "v/7-0-r2-pick1.mp4",
-       "label": "New 1: clip g (new), voice a, voice at 1.0x"
+       "src": "v/7-0-r3-pick1.mp4",
+       "label": "New 1: clip i, voice 7-0-v1m38t3 with pause tags, new model (3.8), 9 of 11 words in time, voice at 1.15x"
       },
       {
        "id": "p2",
-       "src": "v/7-0-r2-pick2.mp4",
-       "label": "New 2: clip d, voice h, voice at 0.98x"
+       "src": "v/7-0-r3-pick2.mp4",
+       "label": "New 2: clip g, voice 7-0-v2m31t2 with pause tags, 8 of 11 words in time, voice at 1.14x"
       },
       {
        "id": "p3",
-       "src": "v/7-0-r2-pick3.mp4",
-       "label": "New 3: clip c, voice j, voice at 1.14x"
+       "src": "v/7-0-r3-pick3.mp4",
+       "label": "New 3: clip z, voice 7-0-v1m38t3 with pause tags, new model (3.8), 8 of 11 words in time, voice at 0.98x"
       }
      ]
     },
@@ -124,8 +124,8 @@
      ]
     },
     {
-     "slot": "A-7-2",
-     "title": "Line 5 · Sandra",
+     "slot": "A-7-2-r3",
+     "title": "Line 5 · Sandra · round 3",
      "line": "Yeah, the world ended. Doesn't mean you get to stop having manners.",
      "kind": "video",
      "opts": [
@@ -136,21 +136,18 @@
       },
       {
        "id": "p1",
-       "src": "v/7-2-r2-pick1.mp4",
-       "label": "New 1: clip b, voice d, voice at 1.11x",
-       "warn": "weak fit: the voice rushes to keep up with the mouth"
+       "src": "v/7-2-r3-pick1.mp4",
+       "label": "New 1: clip b, voice 7-2-v1m31t2 with pause tags, 10 of 12 words in time, voice at 1.12x"
       },
       {
        "id": "p2",
-       "src": "v/7-2-r2-pick2.mp4",
-       "label": "New 2: clip g (new), voice i, voice at 1.08x",
-       "warn": "weak fit: the voice rushes to keep up with the mouth"
+       "src": "v/7-2-r3-pick2.mp4",
+       "label": "New 2: clip a, voice 7-2-v2m31t2 with pause tags, 9 of 12 words in time, voice at 1.15x"
       },
       {
        "id": "p3",
-       "src": "v/7-2-r2-pick3.mp4",
-       "label": "New 3: clip i (new), voice a, voice at 1.12x",
-       "warn": "weak fit: the voice rushes to keep up with the mouth"
+       "src": "v/7-2-r3-pick3.mp4",
+       "label": "New 3: clip s, voice 7-2-v2m38t2 with pause tags, new model (3.8), 8 of 12 words in time, voice at 0.99x"
       }
      ]
     }

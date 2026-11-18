@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/seg/pin-BC.mp4",
+ "made": "2026-11-18T18:31:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "pil+ffmpeg",
+ "tool": "scripts/karen/story-cut-r3.py",
+ "parent": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+ "why": "Karen story cut r3 (2026-11-18), made by scripts/karen/story-cut-r3.py: map pins zoom"
+}
