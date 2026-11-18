@@ -16,9 +16,10 @@ agreed cut on Drive. Owed: export from Premiere, delivery QC, gatekeeper.
 money, and the price changes. Kai: it makes it scarier and funnier. In progress (2026-11-18): **the hand is picked**: burnt, soot-black, cracked like old tarmac with a dull ember glow in the
 cracks, long hooked fingers, nails like split slate, a thread of smoke; only hand and wrist, coming down from the dark
 above, lit by the shop's teal. Picked: shot 4 `HS4-a`, shot 6 `HS6-b`.
-**Jumpscare figure (Jack, 2026-11-18, round 5 awaiting picks):** the hand's owner, faceless, the same burnt char, on screen
+**Jumpscare figure (Jack, 2026-11-18):** a matte black, thin figure with a smooth, round, featureless head, almost a
+silhouette (as in `JS3-top-b`, the reference for every new shot of it; never grey or lit like a face). On screen
 for a few frames with a strings stab. Picked: crouched on top of the shelving `JS3-top-b`, half behind the door `JS2-door-b`,
-only in the mirror `JS5-mirror-b`; the aisle peek (out of the back door, scuttling backwards, never turning) is in round 6. Unclear: whether Jack keeps the figure as a rule change (the force was "never a person"). The finish is the **subtle VHS**
+only in the mirror `JS5-mirror-b`; the aisle peek (out of the back door, scuttling backwards, never turning) is in round 7. Unclear: whether Jack keeps the figure as a rule change (the force was "never a person"). The finish is the **subtle VHS**
 (`scripts/shorts/vhs_finish.sh`). Rough cut 2 stands until the new shots are cut in.
 
 ## Look

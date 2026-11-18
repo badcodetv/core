@@ -64,3 +64,6 @@
 - **2026-11-18, round 6:** the aisle scare redone as a peek: `JS3-peek-a/b` (`scripts/peek.mts`), facing the camera, leaning
   out of the back doorway, a claw on the frame. The figure's wording repeats the other scares on purpose (one figure).
   Same page, round 6.
+- **2026-11-18, Jack on round 6 (peek), no pick:** "please make the figure match the other images, he looks too different here
+  and scale wise thanks". **Round 7:** `JS3-peek2-a/b` (`scripts/peek2.mts`) with `JS3-top-b` attached as the figure
+  reference: the same matte black figure, round featureless head, sized for the far doorway. Same page, round 7.

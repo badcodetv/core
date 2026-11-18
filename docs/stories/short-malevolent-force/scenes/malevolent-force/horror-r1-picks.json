@@ -1,14 +1,33 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 6",
- "heading": "The aisle scare, redone: it peeks out of the back door",
- "intro": "Your round 5 picks are saved: on top of the shelving b, behind the door b, in the mirror b. Your note on the dash: \"he needs to be facing the camera and sort of scuttle backwards and just slightly peek out of the open door\". So here it faces the camera, leaning out of the back doorway with a claw round the frame, ready to scuttle back in the clip without turning. Pick one.",
- "round": 6,
+ "eyebrow": "The Malevolent Force · more horror · round 7",
+ "heading": "The aisle peek, matched to your figure",
+ "intro": "Your note: \"please make the figure match the other images, he looks too different here and scale wise\". Remade with your shelf-top figure (top b) attached as the reference, so it's the same matte black figure with the round featureless head, sized for the far doorway, peeking out toward the camera. Pick one.",
+ "round": 7,
  "sections": [
   {
    "h": "Jumpscares",
    "lede": "The staging is borrowed, not those films' monsters. Edits of your picked stills: only the figure is added.",
    "groups": [
+    {
+     "slot": "js-peek2",
+     "round": 7,
+     "title": "Shot 3, the aisle: it peeks out of the back door, then scuttles back",
+     "line": "Pick one.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "moodboard/JS3-peek2-a.jpg",
+       "label": "a: leaning out of the left doorway"
+      },
+      {
+       "id": "b",
+       "src": "moodboard/JS3-peek2-b.jpg",
+       "label": "b: in the right doorway, claw on the frame"
+      }
+     ]
+    },
     {
      "slot": "js-peek",
      "round": 6,

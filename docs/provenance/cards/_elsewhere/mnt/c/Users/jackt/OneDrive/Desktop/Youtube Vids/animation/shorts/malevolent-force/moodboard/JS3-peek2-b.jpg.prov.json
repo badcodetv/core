@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS3-peek2-b.jpg",
+ "made": "2026-11-18T12:12:45+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "scenes/malevolent-force/scripts/peek2.mts (FlowClient.editImage)",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/PR2-c.jpg",
+ "why": "Jack 2026-11-18 round 6 note: match the figure to the other scares, and its scale",
+ "prompt": "The first image is the shop aisle; keep it just as photographed. The second image shows the figure: copy that exact figure, the same matte black, smooth, round featureless head and the same thin black body, nothing added to it. Place it in the open back doorway at the far end of the first image's aisle, facing straight up the aisle toward the camera, only its head and one shoulder leaning out from behind the door frame as if peeking, one long thin black hand curled around the frame's edge. Size it for that distance: it stands no taller than the doorway, its head about two thirds of the way up the frame, small in the picture. Almost a silhouette, barely touched by the strip light. Everything else in the aisle stays untouched, with the same grain and tired, faded colour.\nThanks.",
+ "inputs": {
+  "figure_reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS3-top-b.jpg"
+ }
+}

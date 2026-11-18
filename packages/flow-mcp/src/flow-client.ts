@@ -2133,10 +2133,11 @@ export class FlowClient {
       const name = basename(ref)
       const ready = overlay
         .locator('[role="option"]')
-        // 2026-11-18: the finished option now reads "image <file> Image": an icon ligature comes first. Anchoring on the
-        // file name at the start missed every finished upload (UPLOAD_STUCK with the file plainly listed). Allow one
-        // leading icon word, never "Uploading" (still in flight).
-        .filter({ hasText: new RegExp(`^\\s*(?:(?!Uploading)[a-z_]+\\s+)?${escapeRegExp(name)}`) })
+        // 2026-11-18: the finished option now reads "image <file> Image": an icon ligature comes first, and in the raw
+        // text Playwright matches there is NO space after it ("imageJS3-top-b.jpg"). Anchoring on the file name missed
+        // every finished upload (UPLOAD_STUCK with the file plainly listed). Allow one leading lowercase icon word with
+        // or without a space; "Uploading<file>" (still in flight) starts with a capital and never matches.
+        .filter({ hasText: new RegExp(`^\\s*(?:[a-z_]+\\s*)?${escapeRegExp(name)}`) })
         .first()
       try {
         await ready.waitFor({ state: 'visible', timeout: UPLOAD_READY_MS })

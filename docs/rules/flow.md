@@ -20,7 +20,8 @@ and gallery forward. The MCP generate tools take no project: they use whichever 
 ## 2026-11-18: three Flow tool bugs found and fixed (Jack: "why is flow failing so much")
 
 - **`UPLOAD_STUCK`** was the tool, not Flow: the picker's finished option now reads "image <file> Image" and the tool
-  waited for one starting with the file name. Fixed; a stuck upload now also reloads and retries once by itself, and a
+  waited for one starting with the file name; in the raw text Playwright matches there is no space after the icon word
+  ("imageJS3-top-b.jpg"), so the match allows the word with or without a space. Fixed; a stuck upload now also reloads and retries once by itself, and a
   second failure lists the picker's options plus a screenshot in `/tmp/flow-upload-stuck/`.
 - **`REFERENCE_COPY_ONLY` on a small edit** was the copy guard throwing away real results (a small added figure scored
   1.5-2.0; the cut-off was 3; true copies score 0.06). Cut-off now 0.5. If it fires, look in the Flow gallery first.
