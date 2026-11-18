@@ -1,0 +1,4 @@
+# Wording every story may share: never reported as a LEAK (fresh.py). Engine templates only, never a look or a sound.
+Using the provided image, change only X to Y. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition.
+No text, lettering, logos or brand names anywhere in the image.
+The camera does not move. One continuous shot.

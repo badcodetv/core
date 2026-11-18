@@ -17,6 +17,14 @@ It never blocks. It reports, and the writer decides:
   --kind flow|suno|any   which corpus to compare against (default any)
   --json                 machine output (used by the PreToolUse hook)
 
+  --story <slug>         the story this prompt is for: turns on the LEAK check (below)
+
+LEAK (Jack, 2026-11-18: "why does the pollution stuff happen to the prompts… analyse the prompt for pollution before
+you even send it"): with a story, any run of LEAK_RUN+ words shared with ANOTHER story's prompts or its own files
+(badcode.md, look.md, sound.md, voice profiles and notes) is reported as "LEAK from <story>". A run that sits in
+LEAK_COMMON+ stories, or in docs/brand/, is shared house wording, not a leak. The hook works out the story from
+the paths in the call (docs/stories/<slug>/…, or a story's media folder from its scene.json).
+
 Exit 0 always; with --quiet it prints nothing when the prompt is fresh.
 """
 import argparse, json, re, sys
@@ -28,6 +36,10 @@ KEYS = {"prompt", "style", "motion", "motion_prompt", "image_prompt", "video_pro
 NEAR_RUN = 10          # words in a row shared with one past prompt
 HABIT_MIN = 6          # a 4-word phrase in at least this many past prompts is a habit
 SKIP = {"node_modules", ".git", "archive", ".tmp"}
+LEAK_RUN = 7           # words in a row shared with another story = a leak
+LEAK_COMMON = 3        # ...unless that run sits in this many stories (house wording)
+STORY_MD = ("badcode.md", "look.md", "sound.md")
+STORY_MD_DIRS = ("voices", "narration", "profiles", "notes")
 # Four words made only of these is not a phrase anyone chose.
 FUNCTION = set("a an the of in on at to and or but with from by for is are was be it its this that "
                "his her their our your one two no not as into over under up down out off so very".split())
@@ -103,7 +115,7 @@ def staged(path):
         return False
 
 
-def check(prompt, kind="any"):
+def check(prompt, kind="any", story=None):
     ws = words(prompt)
     past = corpus(kind)
     res = {"compared_with": len(past), "identical": [], "near": [], "habits": []}
@@ -128,12 +140,113 @@ def check(prompt, kind="any"):
                 res["near"].append({"file": path, "shared_run": run, "of_words": len(ws)})
     res["near"].sort(key=lambda r: -r["shared_run"])
     res["near"] = res["near"][:3]
+    res["leaks"] = leaks(prompt, story)
     res["habits"] = [{"phrase": g, "in_past_prompts": n} for g, n in counts.most_common() if n >= HABIT_MIN][:8]
     return res
 
 
+def story_of(path):
+    """docs/stories/<slug>/… → slug (a path from the corpus or a call)."""
+    m = re.search(r"docs/stories/([^/]+)/", str(path).replace("\\", "/"))
+    return m.group(1) if m else None
+
+
+def media_roots():
+    """Each story's media folder (scene.json "media"), normalised, → slug. Lets a call's output path name its story."""
+    out = {}
+    for sj in (ROOT / "docs/stories").glob("*/scenes/*/scene.json"):
+        try:
+            m = json.loads(sj.read_text()).get("media")
+        except (OSError, ValueError):
+            continue
+        if m:
+            out[norm_path(m)] = sj.parts[sj.parts.index("stories") + 1]
+    return out
+
+
+def norm_path(s):
+    s = str(s).replace("\\", "/").lower()
+    s = re.sub(r"^([a-z]):/", lambda m: f"/mnt/{m.group(1)}/", s)
+    return s.rstrip("/")
+
+
+def stories_in(text):
+    """Every story a tool call names: media folders first (where the output goes), then docs/stories/<slug> paths."""
+    t, found = norm_path(text), []
+    for root, slug in sorted(media_roots().items(), key=lambda kv: -len(kv[0])):
+        if root in t and slug not in found:
+            found.append(slug)
+    for s in re.findall(r"docs/stories/([^/\\\"' ]+)/", str(text).replace("\\\\", "/")):
+        if s not in found and (ROOT / "docs/stories" / s).is_dir():
+            found.append(s)
+    return found
+
+
+def story_in(text):
+    """The story a tool call is for: where its output goes, else the first story path in it."""
+    s = stories_in(text)
+    return s[0] if s else None
+
+
+def story_texts():
+    """(path, text, story) for every story's own words: its prompts (JSON corpus) and its style/voice files."""
+    out = [(p, x, story_of(p)) for p, x in corpus("any") if story_of(p)]
+    for sd in (ROOT / "docs/stories").iterdir():
+        if not sd.is_dir():
+            continue
+        files = [sd / n for n in STORY_MD if (sd / n).exists()]
+        for d in STORY_MD_DIRS:
+            files += list(sd.rglob(f"{d}/**/*.md")) + list(sd.rglob(f"{d}/*.md")) + list(sd.rglob(f"{d}/*.txt"))
+        for f in set(files):
+            try:
+                out.append((str(f.relative_to(ROOT)), f.read_text(), sd.name))
+            except (OSError, UnicodeDecodeError):
+                pass
+    return out
+
+
+def brand_grams():
+    g = set()
+    for f in [*(ROOT / "docs/brand").rglob("*"), ROOT / "scripts/variations/house-wording.txt"]:
+        if f.suffix in (".md", ".txt"):
+            try:
+                g |= grams(words(f.read_text()), LEAK_RUN)
+            except (OSError, UnicodeDecodeError):
+                pass
+    return g
+
+
+def leaks(prompt, story):
+    """Runs of LEAK_RUN+ words this prompt shares with another story's words."""
+    ws = words(prompt)
+    if not story or len(ws) < LEAK_RUN:
+        return []
+    house5 = {g for x in brand_grams() for g in grams(x.split(), 5)}
+    mine = {g for g in grams(ws, LEAK_RUN) if not grams(g.split(), 5) & house5}  # a run touching shared wording is not a leak
+    if not mine:
+        return []
+    where = {}  # gram -> {story: path}
+    for path, text, s in story_texts():
+        for g in mine & grams(words(text), LEAK_RUN):
+            where.setdefault(g, {}).setdefault(s, path)
+    hits = {}
+    for g, by in where.items():
+        if len(by) >= LEAK_COMMON or story in by:
+            continue  # house wording, or wording this story already uses
+        for s, path in by.items():
+            if s != story:
+                hits.setdefault((s, path), []).append(g)
+    out = []
+    for (s, path), gs in sorted(hits.items(), key=lambda kv: -len(kv[1])):
+        out.append({"from_story": s, "file": path, "shared": " ".join(gs[0].split()), "runs": len(gs)})
+    return out[:4]
+
+
 def report(res):
     lines = []
+    for r in res.get("leaks", []):
+        lines.append(f"LEAK from {r['from_story']}: shares \"{r['shared']}…\" ({r['runs']} overlapping runs) with {r['file']}. "
+                     "Another story's wording; rewrite it from this story's own badcode.md, or say why it belongs.")
     if res["identical"]:
         lines.append(f"IDENTICAL to a past prompt ({res['identical'][0]}). Fine if this is a deliberate re-roll; "
                      "otherwise write a new one.")
@@ -152,9 +265,10 @@ def main():
     ap.add_argument("--kind", default="any", choices=["flow", "suno", "any"])
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--quiet", action="store_true")
+    ap.add_argument("--story", help="the story the prompt is for (turns on the leak check)")
     a = ap.parse_args()
     text = a.prompt if a.prompt is not None else sys.stdin.read()
-    res = check(text, a.kind)
+    res = check(text, a.kind, a.story)
     if a.json:
         print(json.dumps(res))
         return

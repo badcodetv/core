@@ -222,3 +222,25 @@ another; if it happens, the images are in the Flow gallery (collect them, don't 
   the music round, the cut script, footage searches, sealed writers for the next round. Browser jobs (Flow, Suno, record)
   still run one after another, never at once (the rule above); the parallel work is everything else.
 - **Fixed tool bugs stay fixed:** a new failure gets fixed and written into the engine's rules the same day.
+
+## Jack 2026-11-18: why prompts get polluted, and the check that runs before every send
+
+Jack: "why does the pollution stuff happen to the prompts… is there a way we can check it every time? Like, analyse the
+prompt for pollution before you even send it?"
+
+**Why it happens:** shared files (skills, engine rules, engine docs, script help text) quote what worked on one story as
+an example ("the Bank Robbery recipe"). Every session reads them, and when a session wants something that works it
+copies the proven example, so one story's recipe becomes every story's. `scripts/style-lint.py` lets a labelled
+example through and only hunts style words, so it never caught these. On 2026-11-18 it put Bank Robbery's narrator
+note into Hello, I'm BadCode's voices; ~530 lines in shared docs still name a story.
+
+**The check (built 2026-11-18):** the same pre-send hook as the same-prompt check (`scripts/variations/fresh-hook.py`)
+now, before every Flow call, Suno call and AI Studio voice call:
+- names the story the call is for, from the paths in it (where the output goes, or `docs/stories/<slug>/`);
+- flags **MIXED STORIES** when a call touches two stories' files (the clearest sign of a leak);
+- flags **LEAK from <story>** when the prompt shares 7+ words in a row with another story's prompts or its own files
+  (badcode.md, look.md, sound.md, voice notes). Shared engine wording (`scripts/variations/house-wording.txt`) and the
+  brand files (`docs/brand/`) are exempt.
+It reports and never blocks. On a LEAK or MIXED flag: rewrite from this story's own `badcode.md`, and tell Jack or Kai.
+**Its limit:** it catches copied words, not a copied idea reworded. So when writing any prompt, take it only from the
+story's own `badcode.md` and the engine's rules, never from another story's folder or a shared doc's example.
