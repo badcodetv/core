@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r3/preview.mp4",
+ "made": "2026-11-18T12:57:22+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/malevolent_force_cut_r3.py",
+ "why": "Jack 2026-11-18: rough cut 3, the more-horror cut from his round-8 picks, subtle VHS finish",
+ "inputs": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r3/edl.json",
+  "track": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/audio/malevolent-force-r2-inharmonic-vibraphone-v6-w65-f7b238d2.wav"
+ }
+}

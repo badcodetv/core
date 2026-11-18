@@ -1,17 +1,21 @@
 {
- "round": 2,
+ "round": 3,
  "plan": [
   {
-   "h": "Done (edit only, nothing generated)",
+   "h": "Done: rough cut 3, the more-horror cut (from the horror picks page, rounds 1-8)",
    "items": [
-    "After the end card: black, a lightning flash, a dip, a second flash that fades and leaves the BadCode logo standing (the stacked logo, reversed, on the brand black). 2.6 s; the cut is now 20.8 s."
+    "Shot 2: the door swings open, then half a second of the figure behind the frame (door b).",
+    "Shot 3: the aisle, the figure peeks from the back door and scuttles back (peek b), then drops off the shelving (top a).",
+    "Shot 4: the burnt hand holds the 50p card and snatches it up (hand c); then the brownout: £1 in the dark, £5 in the light.",
+    "Shot 5: the mirror take (mirror b). Shot 6: the hand snatches up off the freezer (hand b), then the lightning: £50, 10p struck for £12.",
+    "The subtle VHS finish on every shot; the end card and the logo stay clean. 16.6 s of shots, 21.8 s in all."
    ]
   },
   {
-   "h": "You decide",
+   "h": "Not yet",
    "items": [
-    "The ending plays in silence (vibes1 ends at 15 s). A thunder crack under the flash would land it; say if you want one.",
-    "Not in Premiere yet: say \"build it in Premiere\" for short-malevolent-force-1-malevolent-force-r2."
+    "Music is still vibes1, slowed to 0.90x to fit the longer picture; the suspense strings (your library pick) come next.",
+    "No strings stab under each scare yet: that comes with the strings track."
    ]
   }
  ],

@@ -84,3 +84,8 @@
   freezer hand **b** (`video/inbox/dupes/h6-a-raw-005--h6-a.mp4`), peek **b** (`mf-p3-b-JS3-peek2-a`), shelf top **a**
   (`mf-t3-a-JS3-top-b`, drops into the aisle), door **b** (`mf-d2-b-JS2-door-b`, barely seen), mirror **b**
   (`mf-m5-b-JS5-mirror-b`). Next: rough cut 3.
+- **2026-11-18, rough cut 3** (`scripts/shorts/malevolent_force_cut_r3.py`, `cut/r3/`): Jack's round-8 clips cut in, the
+  subtle VHS finish on the shots only (end card and logo clean). 16.6 s of shots, 21.8 s in all. Shot 2 door + 0.5 s door b;
+  shot 3 aisle 0.7 + peek b 1.0 + top a 1.3; shot 4 hand c 2.0 + brownout 1.9 (£1, £5); shot 5 mirror b 1.6; shot 6 hand b
+  1.6 + lightning swap 3.0. vibes1 slowed to 0.90x (pitch kept) to fit until the strings exist. Timeline page republished to
+  https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX (round 3 plan on the page). Not in Premiere yet.

@@ -8,8 +8,8 @@
 A BadCode horror short (9:16, 20.8 s): one trip to the corner shop for bread, shot like a haunting, the price climbing
 50p → £1 → £5 → £50. The point: inflation is not weather; someone decides who gets the new money first (whoever stands
 nearest the printer), and you meet it last, at the till. The force is never seen and never one person. No voice; an
-end card, then the logo. State: rough cut 2 built in Premiere (`short-malevolent-force-1-malevolent-force-r2`), saved,
-agreed cut on Drive. Owed: export from Premiere, delivery QC, gatekeeper.
+end card, then the logo. State: rough cut 3 built (not in Premiere yet; rough cut 2 is in Premiere as
+`short-malevolent-force-1-malevolent-force-r2` and on Drive). Owed: export from Premiere, delivery QC, gatekeeper.
 
 **Next: more horror, the force more visible** (Jack and Kai, 17 Nov morning call,
 [notes](../../misc/2026-11-17-morning-meeting.md)): a **ghostly hand** rapidly snatches the price tags, or waves over the
@@ -20,8 +20,8 @@ above, lit by the shop's teal. Picked: shot 4 `HS4-a`, shot 6 `HS6-b`.
 silhouette (as in `JS3-top-b`, the reference for every new shot of it; never grey or lit like a face). On screen
 for a few frames with a strings stab. Picked: crouched on top of the shelving `JS3-top-b`, half behind the door `JS2-door-b`,
 only in the mirror `JS5-mirror-b`; the aisle peek (out of the back door, scuttling backwards, never turning) is in round 7. Unclear: whether Jack keeps the figure as a rule change (the force was "never a person"). The finish is the **subtle VHS**
-(`scripts/shorts/vhs_finish.sh`). All six horror pieces are animated and picked (round 8, `scenes/malevolent-force/picks.md`). Rough cut 2 stands until
-rough cut 3 is built with them.
+(`scripts/shorts/vhs_finish.sh`). All six horror pieces are animated and picked (round 8, `scenes/malevolent-force/picks.md`). Rough cut 3 (`cut/r3/`, 21.8 s) has
+them cut in, with the subtle VHS finish; its timeline page is the one linked below.
 
 ## Look
 - Status: look.md still says EXPLORING with no ruling written; in practice every shot is picked from Jack's reference.
