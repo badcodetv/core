@@ -1,22 +1,121 @@
 {
- "round": 1,
+ "round": 2,
  "plan": [
-  {"h": "Round 1: your notes so far (1 note, read 2026-11-14)",
+  {
+   "h": "Round 2: 12 notes read 2026-11-18. The big one: Karen throws her phone away ON PURPOSE, as a protest",
    "items": [
-    "1:06 \"The morning after\": cut the Susan-asleep shot (new clip 9, 8 s) and let \"In these moments, even atheists pray to Christ\" land on Karen waking (new clip 44). Edit only, no new material."]},
-  {"h": "The knock-on",
+    "The night before becomes the turning point: drunk at the river, Karen swears to make the complaint of the century, tells Sean to fuck off, and throws her phone in. That's why she's in a phone box next morning (no 'why didn't she just buy a new phone' worry).",
+    "Next morning Susan reminds her of the pact; a quick flashback to the river; Karen rolls her sleeves up at the real phone box. The 'People like Susan lie in bed doing nothing' speech goes. The film shows 'be proactive', it doesn't say it."
+   ]
+  },
+  {
+   "h": "Words (new narration in the Algenib voice; drafts, by Claude, yours to change)",
    "items": [
-    "\"Lesson learned. Know your limit... and eat something. Get fucked up responsibly, folks.\" (8.8 s) currently plays over that Susan shot, so it needs a new home.",
-    "My fix: close the 2 s pause before \"Get fucked up responsibly, folks\" (edit only, same take) and let that punchline land on Karen waking hungover, then \"In these moments...\" on her hand going to her forehead. The film gets about 4-5 s shorter; I'll set the exact frames when I build Karen v5."]},
-  {"h": "You decide",
+    "0:38 replaces 'She smugly turns the laptop around...': \"Stunned, Karen hands the laptop back to her boss. A.I. Sean fires him too.\" Then the boss's reaction, then the defenestrate line as it is.",
+    "0:50 drop 'one bar tab': \"Next stop: getting fucked up with Susan. A.I. Sean sacked her this morning too. Two redundancies.\"",
+    "1:02 at the river, two short spoken lines (muted clips, dubbed the way this film does it): KAREN (Gacrux): \"Tomorrow I'm making the complaint of the century. You hear that, Sean? Fuck you, Sean. Fuck this technology.\" [phone goes in] SUSAN (Kore): \"Karen, you mad lad.\"",
+    "1:26 replaces the Susan-explains / bar-tab / 'She doesn't' lines: \"Susan reminds her. Last night she threw her phone in the river, and swore to make the biggest complaint the world has ever seen.\" [flashback: Karen at the river, her line again]",
+    "1:38 replaces the whole 'People like Susan lie in bed...' speech: \"So Karen rolls her sleeves up, and starts feeding the pay phone.\""
+   ]
+  },
+  {
+   "h": "Picture",
    "items": [
-    "Go on the fix above, or keep the line whole and hold the night-time river longer instead (it saves less time).",
-    "Any more notes? Put them on the page and I'll batch them into the same round before building Karen v5."]}
+    "Edit only: fix the 2-frame flicker at 1:02 (the throw clip starts on two frames of a different wide shot; trim them). Cut the Susan-asleep shot (1:06, agreed round 1). Swap the night phone box at 1:39 for the canonical daytime box (new clip 12), and keep that box the whole way.",
+    "New shots in Flow (stills first, you approve, then clips): 1) Karen in a coffee shop, finger pointed at a barista (replaces 0:09). 2) The laptop: Sean firing the boss (a screen, no face; the words go on in post). 3) The boss reacting. 4) Karen at the river railing, phone held up, shouting at it (for the protest line). The throw itself (new clip 8) we keep: it already looks deliberate, which is now right.",
+    "Flashback: re-use the river shots with a flashback treatment in post (no new clip needed)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Go on the words above as drafted, or send them through a dialogue-options round (ten writers, three drafts per line, you pick on a page) first.",
+    "Go on the four new Flow shots (stills are free; clips use video credits).",
+    "Premiere: I build all this as a new sequence 'karen-1-story-r2' next to Jack's 'Karen v4' (his cut is never touched). OK?"
+   ]
+  }
  ],
  "replies": {
-  "at1599": "Agreed: cut. The Susan-asleep shot (new clip 9) goes, and Karen waking (new clip 44) moves up so \"In these moments, even atheists pray to Christ\" is on her. Edit only, no new material. Knock-on: the \"Lesson learned... get fucked up responsibly, folks\" line runs over this shot today, so I'll close its 2 s pause and land the punchline on hungover Karen. The film gets about 4-5 s shorter. Waiting for your go (and any more notes) before building Karen v5."
+  "at229": "Agreed: the opening should plant the archetype. New shot: Karen in a coffee shop, finger pointed at a barista, can-I-speak-to-your-manager face, replacing this phone shot (old clip 2). New material: a Flow still for you to approve, then one clip. The narration over it stays.",
+  "at1075": "Agreed. Narration drafted: \"Stunned, Karen hands the laptop back to her boss. A.I. Sean fires him too.\" (replaces 'smugly turns the laptop around'). New shot: the laptop screen as Sean fires the boss (Sean is a screen, never a face; the words go on in post). New material: still, then clip; plus a new narration take.",
+  "at1135": "Agreed: order becomes laptop handed back → Sean fires him → the boss reacting (new shot) → the defenestrate line, unchanged. New material: one still + one clip for the boss's reaction.",
+  "at1511": "Two answers. 1) The flicker: the throw clip (new clip 8) opens on two frames of a different wide shot; I'll trim them off. Edit only. 2) The throw becomes a protest. Drafted, dubbed like the rest of this film: KAREN (her voice, Gacrux): \"Tomorrow I'm making the complaint of the century. You hear that, Sean? Fuck you, Sean. Fuck this technology.\" [throws it] SUSAN (Kore): \"Karen, you mad lad.\" The throw shot already looks deliberate, so it stays; I'd add one new shot of Karen holding the phone up shouting at it. It answers the 'why no new phone' worry: she binned the tech on purpose.",
+  "at1599": "Agreed in round 1: the Susan-asleep shot goes, Karen waking moves up, and 'In these moments, even atheists pray to Christ' lands on her. Edit only.",
+  "at1649": "Yes, it's recorded (round 1, the note at 1:06): this scene is dropped.",
+  "at2213": "Agreed: it now says she threw her phone in the river. Draft: \"Susan reminds her. Last night she threw her phone in the river, and swore to make the biggest complaint the world has ever seen.\"",
+  "at2230": "Agreed: the bar tab is gone, here and at 0:50 ('Two redundancies... one bar tab' loses 'one bar tab'). 'Susan explains that A.I. Sean fired her' goes too: Karen already knows. Susan's job now is the reminder of the pact (draft above).",
+  "at2343": "Understood: the narrator tells it, not Susan. Karen has always complained; now she's really got something to complain about, the thing the viewer fears too (AI taking your job). The draft above is the narrator; the flashback to the river carries Karen's own vow.",
+  "at2383": "Agreed: the night box (old clip 9) comes out and the canonical daytime box (new clip 12, the one at 1:49) runs through. Edit only, as long as there's enough clip; if it runs short, a re-roll of the same box.",
+  "at2502": "Agreed: the whole 'People like Susan lie in bed all day, doing nothing about AI taking everyone's jobs' speech goes. The river night now does that work, by showing it.",
+  "at2624": "Agreed. Order: Susan's reminder (narrator) → flashback to the river, Karen's vow → \"So Karen rolls her sleeves up, and starts feeding the pay phone.\" on the canonical box. The flashback re-uses the river shots with a flashback look in post; no new clip."
  },
  "kai_round1": {
-  "at1599": {"beat": "3", "tc": "00:01:06:15", "note": "I think we cut this scene, I think it's an unnecessary scene, it's much better in these moments with Karen when she wakes up."}
+  "at1599": {
+   "beat": "3",
+   "tc": "00:01:06:15",
+   "note": "I think we cut this scene, I think it's an unnecessary scene, it's much better in these moments with Karen when she wakes up."
+  }
+ },
+ "kai_round2": {
+  "at229": {
+   "beat": "0",
+   "tc": "00:00:09:13",
+   "note": "It feels like this shot could be replaced with her yelling at somebody else. I like the way she's sort of pointing her finger at this guy. What would be classic is her in a coffee shop doing the same to a barrister, because this is the classic Karen scenario, like her complaining about a lack of service and can I speak to the manager in some kind of customer service scenario. I think that as these first few shots are really setting up the archetype in people's heads, we should really lean into that as opposed to this scene where she's just looking down at the phone."
+  },
+  "at1075": {
+   "beat": "2",
+   "tc": "00:00:44:19",
+   "note": "So, I think at this point, like, she wouldn't smugly turn the laptop around to her boss. It would be more like shocked Karen gives the laptop back to her boss. And then I want another scene of AI Sean firing him as well. Because that's the drama. Like, don't forget the end of this story is where AI Sean fires the president live on TV. So, like, this is an escalation thing we're setting up here. So I think it's very much like we need to include that part in the scene here."
+  },
+  "at1135": {
+   "beat": "2",
+   "tc": "00:00:47:07",
+   "note": "I think the defenestrate bit would work much better. Once shocked Karen passes the computer to her boss, AI Sean promptly fires her boss, we need to see a reaction. We need new footage here of the boss reacting. Then we can use this defenestrate line after that, and I think it works."
+  },
+  "at1511": {
+   "beat": "2",
+   "tc": "00:01:02:23",
+   "note": "Two things. First of all, there's a very quick flicker of another shot just before this one. Can we fix that? The second thing is this shot of Karen dropping her phone into the river. It kind of needs to be an accident. And at the moment, it looks like she willfully throws it. What might be more fun. It's like if Karen were to be like, Susan, I'm going to give them so much shit tomorrow. Like it's in this build up this narrative that's set up like Karen's like that. I'm I'm going to I'm going to make the complaint of the century or something like that. And then she could hold her phone up and like, did you hear that, Sean? In fact, fuck you, Sean. And she could throw the phone into the river. And then Susan could be like, Karen, you're a mad lad. And then the next morning wakes up and it feels a little bit like Karen has forced herself into the phone box on purpose rather than it's an accident. There's a little background worry I have of like, why didn't Karen just get a replacement phone after all these months, you know? So if we just make this like I forcibly threw away my tech, my phone in protest at Sean. We could almost drop, you know, in fact, fuck this technology, she could say and throw it into the river. And it sets up like she's old school, you know, which is why she's in the payphone and it sets the whole thing up."
+  },
+  "at1599": {
+   "beat": "3",
+   "tc": "00:01:06:15",
+   "note": "I think we cut this scene, I think it's an unnecessary scene, it's much better in these moments with Karen when she wakes up."
+  },
+  "at1649": {
+   "beat": "3",
+   "tc": "00:01:08:17",
+   "note": "I'm just checking that we have recorded the note that we're just going to drop this scene altogether. If not, then let's just drop this scene, please."
+  },
+  "at2213": {
+   "beat": "4",
+   "tc": "00:01:32:05",
+   "note": "I think we should say, and that she threw her phone into the river, because of course that's what we've just set up in the previous scene."
+  },
+  "at2230": {
+   "beat": "4",
+   "tc": "00:01:32:22",
+   "note": "I think we don't mention the bar tab at all. I think that just is a lame joke, so let's just not say that. We need Susan to be like, Karen, do you remember what we said? You're going to go on the biggest complaining session the world has ever seen. This is the key joke."
+  },
+  "at2343": {
+   "beat": "4",
+   "tc": "00:01:37:15",
+   "note": "So yeah, this is the this was the previous note I've left is this line needs to be much bigger And it means to be like Karen. Don't you remember? It's not that Susan says it the narrator says Karen Susan reminds Karen that the night before they had made a pact to do the biggest complaining the world has ever seen To be clear, we're kind of making the joke, Karen complains and now she's really got something to complain about. It's the same thing you're scared that's going to happen, dear viewer, i.e. AI will take your job."
+  },
+  "at2383": {
+   "beat": "5",
+   "tc": "00:01:39:07",
+   "note": "So this is weird because it's a totally different phone box and it's at night time So I think we need to maybe be consistent with the phone box because it's one of the most important parts of this whole story But yeah this the night time is throw it throws the viewer"
+  },
+  "at2502": {
+   "beat": "5",
+   "tc": "00:01:44:06",
+   "note": "I think this whole speech, as well as it being at night time, this whole section is like rubbish. I think what I mean by that is the script is complaining, and it's like making it too obvious. Nobody's doing anything about AI taking a job, as opposed to the night before, them being so drunk, Karen being like, fuck this technology, tomorrow I'm going to complain the most that anybody's ever heard. Throws the phone in the water, wakes up tomorrow, Susan's like, do you remember yesterday? You need to go and complain now. We, the viewers get it, it's like, look, be proactive. I think we just lose this entire script chunk here."
+  },
+  "at2624": {
+   "beat": "5",
+   "tc": "00:01:49:08",
+   "note": "So, I think the rolls the sleeves up bit is good, because I think once Susan reminds Karen of her complaining, we could also have like a really cool thought bubble where Karen in the phone box remembers the night before, where she's like, I'm going to complain the most the world's ever seen. We could sort of have a little remembering cut back to that. And then we could kick into like, so then Karen rolls up her sleeves and starts feeding the pay phone. This, by the way, this scene here is the canonical pay phone."
+  }
  }
 }
