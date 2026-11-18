@@ -25,6 +25,9 @@ and gallery forward. The MCP generate tools take no project: they use whichever 
   second failure lists the picker's options plus a screenshot in `/tmp/flow-upload-stuck/`.
 - **`REFERENCE_COPY_ONLY` on a small edit** was the copy guard throwing away real results (a small added figure scored
   1.5-2.0; the cut-off was 3; true copies score 0.06). Cut-off now 0.5. If it fires, look in the Flow gallery first.
+- **`run.mts` downloads failing with "Failed to find browser context"** (every clip, then the runner resends the batch and
+  spends credits twice): the tab is in Chrome's default context; the download call now retries with no context id. If
+  clips render but none download, stop the run and collect them with `HARVEST_KEYS=` (in submit order) before resending.
 - After changing `packages/flow-mcp`, the running tool keeps the old code until `/mcp` → reconnect **flow**.
 
 ## Jack's standing rule for Flow stills — the free Nano Banana, never Nano Banana Pro

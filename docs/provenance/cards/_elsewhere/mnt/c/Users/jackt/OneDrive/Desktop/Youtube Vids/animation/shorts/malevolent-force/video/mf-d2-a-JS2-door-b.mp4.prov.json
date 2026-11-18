@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/video/mf-d2-a-JS2-door-b.mp4",
+ "made": "2026-11-18T12:32:05+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Shot at 24fps with a 180-degree shutter, so anything fast smears with natural motion blur. [00:00-00:02] Outside, half hidden behind the glass door's frame, the black figure stands motionless in the dark street. [00:02-00:03] It slides sideways out of sight behind the frame, quick and smooth. The door, the taped card, the crate and the mat hold still. One continuous shot, no cuts. Keep the grainy, soft, faded night colour and the teal strip light. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS2-door-b.jpg",
+ "why": "Jack 2026-11-18: more horror; Omni for everything, two takes",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/moodboard/JS2-door-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-malevolent-force/scenes/malevolent-force",
+  "key": "d2-a",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T12:22:44.690Z"
+ }
+}

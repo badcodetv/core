@@ -1,10 +1,155 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 7",
- "heading": "The aisle peek, matched to your figure",
- "intro": "Your note: \"please make the figure match the other images, he looks too different here and scale wise\". Remade with your shelf-top figure (top b) attached as the reference, so it's the same matte black figure with the round featureless head, sized for the far doorway, peeking out toward the camera. Pick one.",
- "round": 7,
+ "eyebrow": "The Malevolent Force · more horror · round 8",
+ "heading": "The horror, moving: pick a take for each",
+ "intro": "All six pieces animated on Omni (your call: Omni for everything). Extra takes exist because a download bug made the first run render twice (fixed). These are the raw 4 s clips; in the cut each scare is only a few frames, with a strings stab, and the price cards still change in the edit. Pick one per row; a note can say where it should cut.",
+ "round": 8,
  "sections": [
+  {
+   "h": "The clips",
+   "lede": "Raw Omni clips, 4 s, camera locked.",
+   "groups": [
+    {
+     "slot": "v-h4",
+     "round": 8,
+     "title": "Shot 4: the hand on the 50p card, through the brownout",
+     "line": "Five takes (three from the double run).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "video/mf-h4-a-HS4-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "video/mf-h4-b-HS4-a.mp4",
+       "label": "b"
+      },
+      {
+       "id": "c",
+       "src": "video/h4-a-raw-002--h4-a2.mp4",
+       "label": "c",
+       "warn": "the hand floats loose for a moment"
+      },
+      {
+       "id": "d",
+       "src": "video/h4-a-raw-003--d2-b2.mp4",
+       "label": "d",
+       "warn": "the light comes back much brighter"
+      },
+      {
+       "id": "e",
+       "src": "video/h4-a-raw-007--h4-a.mp4",
+       "label": "e",
+       "warn": "the light comes back much brighter"
+      }
+     ]
+    },
+    {
+     "slot": "v-h6",
+     "round": 8,
+     "title": "Shot 6: the hand over the freezer, snatching up into the dark",
+     "line": "Two takes.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "video/mf-h6-a-HS6-b.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "video/h6-a-raw-005--h6-a.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v-p3",
+     "round": 8,
+     "title": "Shot 3: the peek from the back door",
+     "line": "Two takes. Distant and subtle.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "video/mf-p3-a-JS3-peek2-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "video/mf-p3-b-JS3-peek2-a.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v-t3",
+     "round": 8,
+     "title": "Shot 3: on top of the shelving",
+     "line": "Two takes. Both leap off the shelf instead of slipping back.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "video/mf-t3-a-JS3-top-b.mp4",
+       "label": "a: drops down into the aisle"
+      },
+      {
+       "id": "b",
+       "src": "video/mf-t3-b-JS3-top-b.mp4",
+       "label": "b: springs toward the camera"
+      }
+     ]
+    },
+    {
+     "slot": "v-d2",
+     "round": 8,
+     "title": "Shot 2: behind the door",
+     "line": "Three takes. In two it steps out into the doorway instead of slipping away.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "video/mf-d2-a-JS2-door-b.mp4",
+       "label": "a: steps out"
+      },
+      {
+       "id": "b",
+       "src": "video/mf-d2-b-JS2-door-b.mp4",
+       "label": "b: barely seen"
+      },
+      {
+       "id": "c",
+       "src": "video/d2-a-raw-009--d2-a.mp4",
+       "label": "c: steps out"
+      }
+     ]
+    },
+    {
+     "slot": "v-m5",
+     "round": 8,
+     "title": "Shot 5: only in the mirror",
+     "line": "Two takes.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "video/mf-m5-a-JS5-mirror-b.mp4",
+       "label": "a",
+       "warn": "the figure is tiny in the reflection: check it is there"
+      },
+      {
+       "id": "b",
+       "src": "video/mf-m5-b-JS5-mirror-b.mp4",
+       "label": "b",
+       "warn": "the figure is tiny in the reflection: check it is there"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Jumpscares",
    "lede": "The staging is borrowed, not those films' monsters. Edits of your picked stills: only the figure is added.",

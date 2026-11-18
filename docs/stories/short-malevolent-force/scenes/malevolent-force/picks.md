@@ -72,3 +72,11 @@
   flash frames for the rest). Jack: **"Omni for everything"**. 12 jobs in `video-jobs.json` (`h4`, `h6`, `p3`, `t3`, `d2`,
   `m5`, two takes each, 4 s, Omni 1.2 Flash, Frames, 9:16), run with `run.mts` in the story's own project (not the tab pool:
   it opens a new Flow project per tab). Same-prompt check flagged only the skill's lock-and-shutter opener: kept on purpose.
+- **2026-11-18, the Omni run:** run 1 (inside the Bash sandbox) rendered 10 clips but downloaded none: `run.mts` asked
+  Chrome for downloads in a browser context it could not find, saw nothing arrive, and resent the same 5 jobs (credits
+  spent twice). Not the sandbox (it failed outside too): on the MCP-launched browser the tab is in Chrome's default context,
+  which must be addressed with no id. Fixed in `run.mts`; the 10 were collected with `HARVEST_KEYS` (no new generation).
+  The second-wave takes landed in `video/inbox/dupes/` and are kept as extra takes. h6-b skipped (two takes already). Run 2
+  (p3, t3, m5, outside the sandbox) clean. 16 clips checked on contact sheets: the shelf-top figure leaps off the shelf in
+  both takes; two door takes have it step out into the doorway; two shelf-hand takes return to a much brighter light; the
+  mirror figure is too small to confirm from thumbnails. Same page, round 8.

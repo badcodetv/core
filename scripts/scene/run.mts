@@ -128,7 +128,16 @@ async function download(i: number, out: string) {
     const cdp = await c.browser.newBrowserCDPSession()
     const dir = mkdtempSync(join(process.env.TMPDIR ?? tmpdir(), 'flowdl-'))
     try {
-      await cdp.send('Browser.setDownloadBehavior', { behavior: 'allowAndName', downloadPath: dir, eventsEnabled: true, browserContextId: targetInfo.browserContextId })
+      // 2026-11-18: on a browser launched by the flow MCP the tab sits in Chrome's DEFAULT context, and naming its id fails
+      // with "Failed to find browser context for id …" (every download of a 12-clip run, credits spent twice). The default
+      // context is addressed by leaving the id out, so retry that way.
+      const dl = { behavior: 'allowAndName', downloadPath: dir, eventsEnabled: true }
+      try {
+        await cdp.send('Browser.setDownloadBehavior', { ...dl, browserContextId: targetInfo.browserContextId } as any)
+      } catch (e) {
+        if (!/Failed to find browser context/.test(String((e as Error)?.message ?? e))) throw e
+        await cdp.send('Browser.setDownloadBehavior', dl as any)
+      }
       const done = new Promise<string>((ok, bad) => {
         const t = setTimeout(() => bad(new Error('DOWNLOAD_TIMEOUT')), 90_000)
         cdp.on('Browser.downloadProgress', (e: any) => {
