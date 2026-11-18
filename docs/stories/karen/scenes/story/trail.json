@@ -16,5 +16,15 @@
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story /mnt/d/badcode-videos/karen-story/timeline/page",
   "feedback": "feedback/timeline-r1",
   "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-18T10:02:55+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Round 2: 12 notes dumped and answered on the page (phone thrown in protest, Susan's reminder + flashback, bar tab and 'Susan lies in bed' speech cut, canonical daytime box, flicker fix, 4 new Flow shots proposed); Karen r2 waits for Kai's go",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story /mnt/d/badcode-videos/karen-story/timeline/page",
+  "feedback": "feedback/timeline-r2",
+  "feedback_docs": 12
  }
 ]
