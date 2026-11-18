@@ -1,0 +1,242 @@
+{
+ "title": "Hello, I'm BadCode Look Refs",
+ "eyebrow": "Hello, I'm BadCode · look references",
+ "heading": "Hello, I'm BadCode: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "glossy blue sky bubbles",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "swdRH05wYhA",
+       "src": "unsplash/swdRH05wYhA.jpg",
+       "label": "clear bubbles in the air · Alfred Kenneally"
+      },
+      {
+       "id": "hNNSbezVREg",
+       "src": "unsplash/hNNSbezVREg.jpg",
+       "label": "a clear bubble floating in the air on a cloudy day · Dynamic Wang"
+      },
+      {
+       "id": "dVYGdp34BTU",
+       "src": "unsplash/dVYGdp34BTU.jpg",
+       "label": "water droplets on glass panel · Max Kleinen"
+      },
+      {
+       "id": "FRHGHpK_9D8",
+       "src": "unsplash/FRHGHpK_9D8.jpg",
+       "label": "soap bubbles floating in the air on a sunny day · Elisabeth Arnold"
+      },
+      {
+       "id": "jntZsbQ1WoU",
+       "src": "unsplash/jntZsbQ1WoU.jpg",
+       "label": "Bubbles floating against a clear blue sky · Oskari Räsänen"
+      },
+      {
+       "id": "-F3oAaWG2GU",
+       "src": "unsplash/-F3oAaWG2GU.jpg",
+       "label": "a soap bubble floating in the air on a sunny day · Elisabeth Arnold"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "summer friends 2000s",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "o2z7d48rnn8",
+       "src": "unsplash/o2z7d48rnn8.jpg",
+       "label": "a group of women standing next to each other on a beach · University of Washington Libraries"
+      },
+      {
+       "id": "6Bl4l9QlYQM",
+       "src": "unsplash/6Bl4l9QlYQM.jpg",
+       "label": "3 women sitting on green grass field near body of water duri · Andrea Riondino"
+      },
+      {
+       "id": "8l6qQ8AJ51U",
+       "src": "unsplash/8l6qQ8AJ51U.jpg",
+       "label": "girl and boy kissing on beach during daytime · Limor Zellermayer"
+      },
+      {
+       "id": "7V5FCRPQGWA",
+       "src": "unsplash/7V5FCRPQGWA.jpg",
+       "label": "two women and a man standing on a beach with a surfboard · The Australian War Memorial"
+      },
+      {
+       "id": "DwfJK5VFNbQ",
+       "src": "unsplash/DwfJK5VFNbQ.jpg",
+       "label": "Two women relax on a beach · CRYSTALWEED cannabis"
+      },
+      {
+       "id": "Kto60h_XH6Y",
+       "src": "unsplash/Kto60h_XH6Y.jpg",
+       "label": "2 women walking on beach during daytime · Jimmy Fotografía"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "skatepark sunset",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "t8E_JNzYsoA",
+       "src": "unsplash/t8E_JNzYsoA.jpg",
+       "label": "grayscale photo of palm trees · Erika Mendes"
+      },
+      {
+       "id": "NKTjkRkluXQ",
+       "src": "unsplash/NKTjkRkluXQ.jpg",
+       "label": "a person standing on top of a skateboard ramp · David Reyes"
+      },
+      {
+       "id": "Duzr5I_ssqU",
+       "src": "unsplash/Duzr5I_ssqU.jpg",
+       "label": "man takes photo · Anton Shakirov"
+      },
+      {
+       "id": "iiIilIzMbL8",
+       "src": "unsplash/iiIilIzMbL8.jpg",
+       "label": "a man riding a skateboard up the side of a ramp · Alessandro Cavestro"
+      },
+      {
+       "id": "9j7swKZBDIM",
+       "src": "unsplash/9j7swKZBDIM.jpg",
+       "label": "a man riding a skateboard up the side of a ramp · Alessandro Cavestro"
+      },
+      {
+       "id": "w8TJG7PdnfQ",
+       "src": "unsplash/w8TJG7PdnfQ.jpg",
+       "label": "a man riding a bike up the side of a ramp · Alessandro Cavestro"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "aqua water reflection",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "xV_UvPT3XAw",
+       "src": "unsplash/xV_UvPT3XAw.jpg",
+       "label": "the water is reflecting the sunlight on the surface · Adam Rabshau"
+      },
+      {
+       "id": "LeggnVTkNOk",
+       "src": "unsplash/LeggnVTkNOk.jpg",
+       "label": "blue water with white bubbles · ALi"
+      },
+      {
+       "id": "yS7iTY_nZE0",
+       "src": "unsplash/yS7iTY_nZE0.jpg",
+       "label": "A pool with blue water and ripples of water · Yevhenii Deshko"
+      },
+      {
+       "id": "vTu1f4PDUuo",
+       "src": "unsplash/vTu1f4PDUuo.jpg",
+       "label": "Sunlight refracting through clear blue water onto a sandy se · Adam Neumann"
+      },
+      {
+       "id": "3ktBQ3-zOzE",
+       "src": "unsplash/3ktBQ3-zOzE.jpg",
+       "label": "a pool with clear blue water and no one in it · Carla Oliveira"
+      },
+      {
+       "id": "evzdsqpbrpI",
+       "src": "unsplash/evzdsqpbrpI.jpg",
+       "label": "a close up of a body of water with ripples · Slava Stupachenko"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "retro computer desk",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "PoL7eR-p4Z0",
+       "src": "unsplash/PoL7eR-p4Z0.jpg",
+       "label": "a desktop computer sitting on top of a wooden desk · Marissa Lewis"
+      },
+      {
+       "id": "Zd6PL6PSW5E",
+       "src": "unsplash/Zd6PL6PSW5E.jpg",
+       "label": "white Macintosh computer · bert b"
+      },
+      {
+       "id": "A1exYcu_Kus",
+       "src": "unsplash/A1exYcu_Kus.jpg",
+       "label": "a computer on a desk · Szymonek Pograniczny"
+      },
+      {
+       "id": "KdMgF5Q9EP4",
+       "src": "unsplash/KdMgF5Q9EP4.jpg",
+       "label": "silver crt computer monitor on brown wooden desk · Siri louis"
+      },
+      {
+       "id": "Fm17vn1lmAQ",
+       "src": "unsplash/Fm17vn1lmAQ.jpg",
+       "label": "a desk with a computer and a chair · Marissa Lewis"
+      },
+      {
+       "id": "rZzpoVJzT-I",
+       "src": "unsplash/rZzpoVJzT-I.jpg",
+       "label": "Vintage computer monitor and keyboard on a desk · Brooke Balentine"
+      }
+     ]
+    },
+    {
+     "slot": "ref-6",
+     "title": "teenagers summer evening",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "PJzKcNOH91s",
+       "src": "unsplash/PJzKcNOH91s.jpg",
+       "label": "people standing on concrete wall during daytime · Nathan Ziemanski"
+      },
+      {
+       "id": "PZlWp4b0Hwg",
+       "src": "unsplash/PZlWp4b0Hwg.jpg",
+       "label": "Boy diving into swimming pool above pink inflatable · Brooke Balentine"
+      },
+      {
+       "id": "vPf4Jy0RA30",
+       "src": "unsplash/vPf4Jy0RA30.jpg",
+       "label": "Two young women skateboarding on a street · Deny Hill"
+      },
+      {
+       "id": "oUFiXKtbpIs",
+       "src": "unsplash/oUFiXKtbpIs.jpg",
+       "label": "Young boy roasting a marshmallow over a backyard fire · Lisa Marie Theck"
+      },
+      {
+       "id": "HDA3JeS5zrU",
+       "src": "unsplash/HDA3JeS5zrU.jpg",
+       "label": "Two women holding skateboards in a parking lot · Deny Hill"
+      },
+      {
+       "id": "oscZ8BJ51Rg",
+       "src": "unsplash/oscZ8BJ51Rg.jpg",
+       "label": "Two young women with skateboards in a parking lot · Deny Hill"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

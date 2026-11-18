@@ -1,0 +1,4 @@
+- The track is the whole music of a ~22-second vertical short (BadCode Shorts, "Hello, I'm BadCode"), the channel's intro and trailer. One voice (BadCode) speaks over it; the music is instrumental only (Jack, 2026-11-15: shorts' Suno tracks are music and sounds only, never speech).
+- The picture, in order: 0-4 s something warm and happy from the internet of the 00s/90s, meme-edit style (glossy blue skies, bubbles, pool water, old computers, skateparks at sunset); 4-7 s a cut to a masked figure, to camera, deadpan; 7-17 s a rapid horror reel of real footage of now (AI data centres, climate disaster, cost of living, war), half a second a shot; 17-20 s the music slows down to nothing; on black, one spoken line; then the logo.
+- So the track turns: warm nostalgic synths at the top, a hard turn at about 4 s, cinematic dread under the reel, then a slow-down to silence by about 20 s.
+- The previous music on this short was a temp track nobody picked.

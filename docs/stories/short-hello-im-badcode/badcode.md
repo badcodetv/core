@@ -41,7 +41,20 @@ intro and channel trailer. State: rough cut 1 (24.9 s) on the timeline page; tem
 Open the part's project before its first Flow call; never use it for another story.
 
 ## Library pieces in use
-- none yet
+Picked by Jack, 2026-11-18, starting the full remake (from: balaclava, clean room, real photo; VHS camcorder, chiptune,
+synthwave). Copied and adapted here; the library entries are not live rules.
+- **Balaclava:** BadCode on screen is the brand balaclava, fixed by `docs/brand/README.md` (the rules are in *Story-only
+  rules* above). In motion, the model redraws the mask every frame and the ring and triangle vanish when the head turns:
+  write that the face keeps toward the camera into every motion prompt, and check the mask zoomed in at three points per clip.
+- **Real photo (Unsplash):** the warm 00s opening starts from real photos found with
+  `python3 scripts/scene/unsplash-refs.py <scene-dir> "<query>"`, picked on a picks page and given to Flow as the reference,
+  so it reads as real footage of the time, not AI. The prompt says only what happens.
+- **Synthwave, alongside Jack's meme-edit direction (under the warm opening):** a 2010s revival of 80s film-score synths:
+  pulsing 16th-note analog bass, detuned saw pads, sweeping arpeggios, gated-reverb snare, a sad-heroic lead, about
+  90-130 BPM, instrumental. It reads as "the cool figure from a future that already happened". Risk: it is the most
+  familiar style of its kind and flatters nostalgia, so it can read as borrowed; keep it as the warm half only, against
+  the horror reel's cinematic dread. Ask Suno for the period and the gear, never an artist; exclude EDM drop, trap,
+  autotune, big pop chorus.
 
 ## Where the detail is
 - [README.md](./README.md), [RESUME.md](./RESUME.md) (next steps), [look.md](./look.md), [sound.md](./sound.md)
