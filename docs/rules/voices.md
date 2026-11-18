@@ -75,3 +75,24 @@ picture, so never place a dub on Flow's audio or Whisper times.
   Pick the take whose runs all land within −0.05 / +0.13 s.
 - If none does, the line is heard over another shot (side-on talking is always off screen).
 - Several Flow jobs sharing one start plate get their tiles mixed up: one job per plate per run.
+
+## Jack 2026-11-18: voices must sound like real people, not performances ("uncanny valley… the accent is crazy")
+
+Jack, on four Hello, I'm BadCode casting takes: "they've been sort of triggering Uncanny Valley… they're really
+exaggerated… they sound realistic when they're subtle, like the accent is crazy and they just don't sound like real people."
+
+**Cause (found 2026-11-18):** the profiles described *characters* ("gravelly… found most of it daft", "a teacher who
+already knows your excuse", "Glasgow woman, warm and wry"), so the model acted them, accent turned up. The narrator Jack
+liked (Bank Robbery, cut 9) was the opposite: a three-line `--note` saying "an ordinary bloke… everyday, not posh, not stagey
+cockney… never performs".
+
+**How to apply** (every casting round, every story):
+- Use the short `--note` shape (`Accent:` / `Style:` / `Pace:`), not the long `# Audio Profile` / `## Sample Context:` shape.
+  Outside guides report the model can read header words aloud ("DIRECTOR'S", "Sample Context"); LiveKit's 3.1 guide.
+- **Accent:** a region plus "an ordinary person… everyday, light accent, not stagey / not a character voice". Never a
+  personality in the accent line.
+- **Style:** a real person talking to someone (to camera on their phone, to a mate), "natural, conversational, never
+  performs". Make variety from the voice name, age and region, not from colourful adjectives.
+- Leave the model room: Google-cited guides say not to describe everything. Use audio tags (`[sighs]`) sparingly.
+- Trim take silence gently (`silenceremove` at -55 dB, 0.12 s): -45 dB cut a soft "I'm" off a line.
+- Test file: `docs/stories/short-hello-im-badcode/scenes/hello/voices/notes/` (the plain round).

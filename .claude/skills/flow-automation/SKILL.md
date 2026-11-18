@@ -20,6 +20,7 @@ what to put in it.
 
 ### Speed rules (Jack, 2026-11-12: "refresh the page and try again instead of waiting")
 
+- 🔴 **Every video goes through the tab pool** (Jack, 2026-11-18: "make that a rule for all videos going forward"), for any story, even one clip. Stills stay one at a time.
 - **Many clips at once: `scripts/scene/pool.mts` (2026-11-17).** `TABS=3 npx tsx scripts/scene/pool.mts <scene-dir>`
   runs a scene's missing clips in K tabs (default 10, never more than jobs) of the signed-in browser, each tab its own Flow project and its own
   `run.mts` worker (law 16 is two jobs in ONE tab; separate tabs don't share a compose bar). Jobs that cast a

@@ -52,7 +52,7 @@ only when `badcode.md` points to them.
 
 | Driving… | Read first | Skills |
 | --- | --- | --- |
-| Google Flow (stills, clips) | [`docs/rules/flow.md`](./docs/rules/flow.md) | `flow-automation`, `flow-prompt`, `shot-craft` |
+| Google Flow (stills one at a time; every video on the tab pool, `scripts/scene/pool.mts`) | [`docs/rules/flow.md`](./docs/rules/flow.md) | `flow-automation`, `flow-prompt`, `shot-craft` |
 | Suno (songs, sound for shorts) | [`docs/rules/suno.md`](./docs/rules/suno.md) | `suno-automation`, `suno-prompt`, `variations` |
 | AI Studio voices, lip-sync | [`docs/rules/voices.md`](./docs/rules/voices.md) | `voice-casting`, `lip-sync-dub` |
 | Premiere | [`docs/rules/premiere.md`](./docs/rules/premiere.md) | `premiere-automation`, `drive-sync` |
