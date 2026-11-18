@@ -1,20 +1,19 @@
 {
- "round": 3,
+ "round": 4,
  "plan": [
   {
-   "h": "Rough cut 3: the whole thing",
+   "h": "Rough cut 4: your script and voice",
    "items": [
-    "Cut 2b's real 2000s opening; BadCode moving in the launderette (clip b, leaning in); your words (draft 1D: your line after the reel); a cast voice (a); the music dips under the voice and dies with the reel.",
-    "38.5 s, longer than the 25 s plan: your line takes about 10 s in this voice. Voices c and d read it in about 7.5 s.",
-    "Checked: every word is said (including \"bullshit\"), the mask holds zoomed in, loudness -14.5 LUFS, flashing check pass."
+    "Script A in your lines: \"Ahhh, the good ol' days…\", \"I feel like an apology for ending humanity will fall flat, so… moving on\", your line shortened (\"What's your worst-case scenario? I'll be patiently waiting to correct your bullshit.\"), and 5c.",
+    "Your Birmingham voice; BadCode leans in (machines off). 37.8 s. Flashing check pass, -14 LUFS.",
+    "Listen to the first line: the transcript hears \"Nah, the good old days\", so the \"Ahhh\" may sound like \"Nah\"."
    ]
   },
   {
-   "h": "You decide (picks page, round 3)",
+   "h": "Coming next",
    "items": [
-    "The voice: four options. The cut is rebuilt in the one you pick.",
-    "How BadCode moves: three clips.",
-    "Whether \"Here's what to do next.\" stays after your line (draft 1D) or the logo comes straight after it (1E)."
+    "The reel's AI stills (robots, data centre, drone, missile…) get replaced with real footage of automation already here; the search is running.",
+    "Line 4 has two other short versions on the picks page (round 8) if this one isn't right."
    ]
   }
  ]

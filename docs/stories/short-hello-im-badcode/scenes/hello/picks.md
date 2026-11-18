@@ -77,3 +77,7 @@
   `voices/designed-voices.txt`, kept a year on Google's side) + two casual low library voices, `gemini-3.8-flash-tts`, plain.
 - **2026-11-18, round 6:** voice **b** picked (designed Birmingham, `voice_61xqq38hm0da`; in `badcode.md`). Jack asked for the lines:
   `script-lines-r1.md`, three per beat, all rendered in his voice (`audio/lines-r1/`), round 7 on the picks page.
+- **2026-11-18, round 7 notes (`feedback/picks-r7/`):** Jack wrote lines 1 and 2 himself ("ahhh, the good ol' days…"; "I feel like
+  an apology for ending humanity will fall flat so, moving on"), asked to shorten line 4, picked 5c. Rough cut 4
+  (`hello_cut_r3.py --voice bham --fig fig-b2`, 37.8 s, flashes pass, -14 LUFS) on the timeline page; line 4 options round 8.
+  Also: "the AI takeover stuff is a bit boring and flat… could be raw footage": find-footage search for real automation footage.

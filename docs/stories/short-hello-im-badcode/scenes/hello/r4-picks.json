@@ -1,10 +1,40 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · the lines · round 7",
- "heading": "Script A, the confession, in your voice",
- "intro": "You picked script A and the Birmingham voice (b). Here are three draft lines for each beat you asked me to write, spoken in that voice. Pick one per beat, or rewrite any in the note. Your line after the reel is there to hear in the voice too.",
- "round": 7,
+ "eyebrow": "Hello, I'm BadCode · your line, shorter · round 8",
+ "heading": "Your line, shorter",
+ "intro": "Your round-7 lines are in rough cut 4 on the timeline page. You asked to shorten line 4: three versions, each keeping your punchline. Rough cut 4 uses a; pick another if it's better.",
+ "round": 8,
  "sections": [
+  {
+   "h": "Round 8",
+   "lede": "About 6 s each, down from about 10 s.",
+   "groups": [
+    {
+     "slot": "line4b",
+     "round": 8,
+     "title": "Line 4, shorter",
+     "line": "Pick one, or rewrite it in the note.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "4a",
+       "src": "audio/line-4a.mp3",
+       "label": "a: \"What's your worst-case scenario? I'll be patiently waiting to correct your bullshit.\" (in rough cut 4)"
+      },
+      {
+       "id": "4b",
+       "src": "audio/line-4b.mp3",
+       "label": "b: \"Go on. Worst-case scenario? I'll be patiently waiting to correct your bullshit.\""
+      },
+      {
+       "id": "4c",
+       "src": "audio/line-4c.mp3",
+       "label": "c: \"Your worst-case scenario? I'll wait. Then I'll correct your bullshit.\""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 7",
    "lede": "Claude's pick: 1b + 2b + 5a. 2b blames the decision (\"let the wrong people steer\"), not the machine.",

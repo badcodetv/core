@@ -21,10 +21,12 @@ import hello_cut as r1  # noqa: E402  (the reel, push(), seg(), ff())
 import hello_cut_r2 as r2  # noqa: E402  (REAL opening, clip(), MUSIC, FIG)
 
 MEDIA, W, H, FPS = r1.MEDIA, r1.W, r1.H, r1.FPS
-LINES = ["Hello. Enjoy this.", "I'm from the future. That was the good part.",
-         "What do you think in your mind, what the worst-case scenario is? I'll be patiently waiting to correct your bullshit.",
-         "Here's what to do next."]
-BY = ['claude', 'claude', 'jack', 'kai']
+# Script A, the confession (Jack, 2026-11-18, round 7 notes; scenes/hello/script-lines-r1.md). Rough cut 3 used draft 1D.
+LINES = ["Ahhh, the good ol' days...",
+         "I feel like an apology for ending humanity will fall flat, so... moving on.",
+         "What's your worst-case scenario? I'll be patiently waiting to correct your bullshit.",
+         "This time, I'm helping. Here's what to do next."]
+BY = ['jack', 'jack', 'jack', 'claude']
 
 
 def dur(p):
@@ -54,7 +56,7 @@ def main():
         sr = 'silenceremove=start_periods=1:start_threshold=-55dB:start_silence=0.12'
         r1.ff('-i', p, '-af', f'{sr},areverse,{sr},areverse', o); vo.append(o)
     vd = [dur(p) for p in vo]
-    clipf = next((MEDIA / 'video').glob(f'*-{a.fig}-FG3-b.mp4'))
+    clipf = next((MEDIA / 'video').glob(f'*-{a.fig}-FG3-*.mp4'))
     cdur = dur(clipf)
 
     parts, rows, said, t = [], [], [], 0.0
@@ -116,17 +118,17 @@ def main():
     beat = lambda b: [r for r in rows if r['beat'] == b]
     span = lambda b: (beat(b)[0]['start'], round(sum(r['dur'] for r in beat(b)), 3))
     ln = lambda i: {'i': 0, 'who': 'badcode', 'name': f'BadCode ({a.voice})', 't': dict(said)[i], 'dur': round(vd[i], 3), 'text': LINES[i], 'by': BY[i]}
-    beats = [{'id': 'hello', 'title': 'A. "Hello. Enjoy this."', 'start': span('hello')[0], 'dur': span('hello')[1], 'see': 'Real 2000s footage: the skatepark at dusk, harbour fireworks, the neon arcade.', 'lines': [ln(0)]},
-             {'id': 'figure', 'title': 'B. "I\'m from the future."', 'start': span('figure')[0], 'dur': span('figure')[1], 'see': 'BadCode in the launderette, moving.', 'lines': [ln(1)]},
+    beats = [{'id': 'hello', 'title': 'A. "Ahhh, the good ol\' days…"', 'start': span('hello')[0], 'dur': span('hello')[1], 'see': 'Real 2000s footage: the skatepark at dusk, harbour fireworks, the neon arcade.', 'lines': [ln(0)]},
+             {'id': 'figure', 'title': 'B. "…so, moving on."', 'start': span('figure')[0], 'dur': span('figure')[1], 'see': 'BadCode in the launderette, moving.', 'lines': [ln(1)]},
              {'id': 'horror', 'title': 'C. The horror reel', 'start': span('horror')[0], 'dur': span('horror')[1], 'see': 'Real footage and Flow gap stills; the music dies.', 'lines': []},
              {'id': 'back', 'title': "D. Jack's line", 'start': span('back')[0], 'dur': span('back')[1], 'see': 'Back to BadCode, closer, no music.', 'lines': [ln(2)]},
-             {'id': 'button', 'title': 'E. "Here\'s what to do next." + logo', 'start': span('button')[0], 'dur': span('button')[1], 'see': 'Black, the line, the logo.', 'lines': [ln(3)]}]
+             {'id': 'button', 'title': 'E. "This time, I\'m helping." + logo', 'start': span('button')[0], 'dur': span('button')[1], 'see': 'Black, the line, the logo.', 'lines': [ln(3)]}]
     credits = sorted({r['note'].split('real footage, ')[1] for r in rows if 'real footage, ' in r['note']} |
                      {s.split('(')[-1].rstrip(')') for _, _, s, _ in r2.REAL})
     edl = {'sequence': f'short-hello-im-badcode-1-hello-r3-{a.voice}-{a.fig}', 'title': 'Hello Im BadCode Timeline',
-           'heading': "BadCode Shorts ▲ Hello, I'm BadCode, rough cut 3 (the whole thing)",
-           'intro': ("The whole short: cut 2b's real opening, BadCode moving in the launderette, the words (draft 1D: your line after "
-                     "the reel), a cast voice, the music dying into the end. Note anything."),
+           'heading': f"BadCode Shorts ▲ Hello, I'm BadCode, rough cut 4 (script A, {a.voice} voice)",
+           'intro': ("Script A, the confession, in your lines and your picked voice (designed Birmingham); BadCode leans in (move b, "
+                     "machines off); the real 2000s opening; the reel is still rough cut 3's while real automation footage is found. Note anything."),
            'fps': FPS, 'total': TOTAL, 'beats': beats, 'video': rows,
            'audio': [{'track': 'A1', 'name': 'vox-badcode', 'file': str(vox)}, {'track': 'A2', 'name': 'mus-track', 'file': str(mus)}],
            'events': [{'stem': 'vox-badcode', 't': at, 'dur': round(vd[i], 3), 'what': LINES[i], 'src': str(vo[i])} for i, at in said] +
