@@ -1,10 +1,45 @@
 {
  "title": "Hello BadCode Picks",
- "eyebrow": "Hello, I'm BadCode · the logo · round 9",
- "heading": "The logo, Netflix-style but BadCode",
- "intro": "Your notes: line 4b (in the next cut); the reel 'a bit ai slop and boring' (real footage and Unsplash photos coming next, on this page); and the logo at 0:33 'the way the netflix logo does, but in a badcode way'. Three reveals made from the real logo file, each with a low thump made here (nothing borrowed from Netflix). Unmute the player to hear the thump.",
- "round": 9,
+ "eyebrow": "Hello, I'm BadCode · the logo · round 10",
+ "heading": "The logo, rolling in",
+ "intro": "Your note: 'all of the letters are somewhat circular so make them roll, also make a few of these that vary and are interesting'. Four new reveals made from the logo's own pieces (ring, triangle, each letter), each ending exactly as the logo file is. Unmute for the thump. The real reel footage search is still running; the new reel comes next.",
+ "round": 10,
  "sections": [
+  {
+   "h": "Round 10",
+   "lede": "All pass the flashing check. Pick one, or mix two in a note.",
+   "groups": [
+    {
+     "slot": "logo10",
+     "round": 10,
+     "title": "How the logo arrives: four new ways",
+     "line": "Pick one (or a, b, c from the first three, below).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "d",
+       "src": "clips/reveal-d.mp4",
+       "label": "d: roll in: each letter rolls in like a wheel and lands, then the ring rolls in, the triangle pops"
+      },
+      {
+       "id": "e",
+       "src": "clips/reveal-e.mp4",
+       "label": "e: the dot leads: the red-dot o rolls across, each letter pops up as it passes, the dot rolls home, the ring drops in"
+      },
+      {
+       "id": "f",
+       "src": "clips/reveal-f.mp4",
+       "label": "f: watching you: the ring appears, the red triangle glances round inside it like an eye, then looks at you"
+      },
+      {
+       "id": "g",
+       "src": "clips/reveal-g.mp4",
+       "label": "g: dial spin: the ring spins in like a dial with the triangle orbiting, lands on its spot, the letters roll in"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 9",
    "lede": "Each one is 3 s and passes the flashing check. The logo itself is never redrawn, only moved and scaled.",
@@ -12,7 +47,7 @@
     {
      "slot": "logo9",
      "round": 9,
-     "title": "How the logo arrives",
+     "title": "How the logo arrives (first three)",
      "line": "Pick one, or mix (e.g. 'a, but with c's glitch at the end').",
      "kind": "video",
      "opts": [

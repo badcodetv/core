@@ -87,3 +87,6 @@
   appear the way the netflix logo does, but in a badcode way". Done: Unsplash search, 50 real photos in `<media>/reference/unsplash/`
   (`refs-picks.json`; the opening's old one kept as `refs-picks-opening-r1.json`); three logo reveals (`scripts/shorts/logo_reveal.py`,
   `<media>/cut/logo/`) on picks round 9. Real automation footage search still running.
+- **2026-11-18, round 9 note (logo):** "all of teh letters are somewhat circular so make them role also make a few of these that
+  vary and are interesting". Round 10: reveals d (letters roll in), e (the red-dot o leads), f (the triangle glances round like an
+  eye), g (dial spin), from the logo's own pieces (`logo_reveal.py`), all ending exactly as the file. Real footage search still running.
