@@ -20,7 +20,8 @@ above, lit by the shop's teal. Picked: shot 4 `HS4-a`, shot 6 `HS6-b`.
 silhouette (as in `JS3-top-b`, the reference for every new shot of it; never grey or lit like a face). On screen
 for a few frames with a strings stab. Picked: crouched on top of the shelving `JS3-top-b`, half behind the door `JS2-door-b`,
 only in the mirror `JS5-mirror-b`; the aisle peek (out of the back door, scuttling backwards, never turning) is in round 7. Unclear: whether Jack keeps the figure as a rule change (the force was "never a person"). The finish is the **subtle VHS**
-(`scripts/shorts/vhs_finish.sh`). Rough cut 2 stands until the new shots are cut in.
+(`scripts/shorts/vhs_finish.sh`). All six horror pieces are animated and picked (round 8, `scenes/malevolent-force/picks.md`). Rough cut 2 stands until
+rough cut 3 is built with them.
 
 ## Look
 - Status: look.md still says EXPLORING with no ruling written; in practice every shot is picked from Jack's reference.

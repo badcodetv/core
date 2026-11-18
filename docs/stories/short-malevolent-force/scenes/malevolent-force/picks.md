@@ -80,3 +80,7 @@
   (p3, t3, m5, outside the sandbox) clean. 16 clips checked on contact sheets: the shelf-top figure leaps off the shelf in
   both takes; two door takes have it step out into the doorway; two shelf-hand takes return to a much brighter light; the
   mirror figure is too small to confirm from thumbnails. Same page, round 8.
+- **2026-11-18, Jack's round 8 clip picks (page dump, no notes):** shelf hand **c** (`video/inbox/dupes/h4-a-raw-002--h4-a2.mp4`),
+  freezer hand **b** (`video/inbox/dupes/h6-a-raw-005--h6-a.mp4`), peek **b** (`mf-p3-b-JS3-peek2-a`), shelf top **a**
+  (`mf-t3-a-JS3-top-b`, drops into the aisle), door **b** (`mf-d2-b-JS2-door-b`, barely seen), mirror **b**
+  (`mf-m5-b-JS5-mirror-b`). Next: rough cut 3.
