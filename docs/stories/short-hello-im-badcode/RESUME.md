@@ -19,7 +19,7 @@ reveal f at 33.75 s, captions, the camcorder stamp and the loop). Logo reveals: 
 **Next:**
 1. Read round 8 + timeline notes (line 4 pick; anything on rough cut 4; listen: line 1's "Ahhh" may sound like "Nah").
 2. Replace the reel's flat AI stills with REAL automation footage (Jack: "boring and flat… could be raw footage"). A find-footage
-   search ran on 2026-11-18. Wikimedia blocked its downloads (429 "too many requests"), so Jack said skip the wait: it was
+   search ran on 2026-11-18. Wikimedia blocked its downloads (429 "too many requests"), so Jack said skip the wait: the agent
    wrote `research/footage-automation-shortlist.md` (50 Commons candidates, links + licences, best per theme, ambers, rejects; nothing downloaded). Its thumbnail sheets + API metadata: `<media>/reference/footage-automation-thumbs/`. Next: put the shortlist (previews/links)
    + the 50 Unsplash photos (`reference/unsplash/`) on the picks page, flag brands and faces, Jack picks, then download ONLY
    the picks into `footage/automation/` (slowly: Wikimedia rate-limits) and build rough cut 6. If the shortlist is
