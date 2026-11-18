@@ -22,8 +22,8 @@ short's one scene. Nothing in `new-scene` is duplicated here.
 **Every short, idea or made, is on [`docs/marketing/badcode-shorts.md`](../../../docs/marketing/badcode-shorts.md)**:
 the 20-second cut list at the top (one line each) and a section per idea below. New ideas get the next number,
 at the foot of both. When a short is being built, mark it `BUILDING` there and link its project folder; when it
-ships, `DONE` with the link. **Jack writes the jokes, always** (`docs/rules/working.md`): beats say what to joke
-about, and every joke line and punchline stays blank for him; never draft one unless he asks.
+ships, `DONE` with the link. **Jack and Kai write the jokes, always** (`docs/rules/working.md`): beats say what to joke
+about, and every joke line and punchline stays blank for them; never draft one unless one of them asks.
 
 What a short is (from the 2026-11-10 meeting, written up in that file): 5 to 20 seconds, social commentary not news,
 no format. The `🔴 Lines that apply to every short` section there (no AI people in real footage, no AI likeness

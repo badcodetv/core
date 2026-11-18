@@ -78,7 +78,7 @@ look and sound are found by the **`story-style`** skill (step 4) and written bac
    examples applies.
 3. **Capture the spine** collaboratively, writing each file as it firms up:
    **Key concept** (the one idea), **Background** (real-world grounding), then
-   **characters**, then **high-level beats** (Jack writes the jokes (`docs/rules/working.md`): a beat says what to joke about and what it must convey; the joke line and the punchline stay blank for him. Never draft one unless he asks.). For an *existing* story, reverse-
+   **characters**, then **high-level beats** (Jack and Kai write the jokes (`docs/rules/working.md`): a beat says what to joke about and what it must convey; the joke line and the punchline stay blank for them. Never draft one unless one of them asks.). For an *existing* story, reverse-
    engineer from current material (comic scenes in `comic.meta.ts`, existing
    lyrics) rather than inventing.
 4. **Look and sound.** Once the spine and beats hold, run the **`story-style`** skill: an interview
