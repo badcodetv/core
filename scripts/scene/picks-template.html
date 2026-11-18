@@ -109,7 +109,7 @@ for (const s of order) {
     g.opts.forEach((x, i) => {
       const c = el('div', 'card'); c.append(el('div', 'v', x.label));
       if (g.kind === 'audio') { const au = el('audio'); au.controls = true; au.preload = 'none'; au.src = x.src; c.append(au) }
-      if (g.kind === 'link') { const a = el('a', 'open', 'Listen on Suno ↗'); a.href = x.href; a.target = '_blank'; a.rel = 'noopener'; c.append(a) }
+      if (g.kind === 'link') { const a = el('a', 'open', x.linkText || 'Listen on Suno ↗'); a.href = x.href; a.target = '_blank'; a.rel = 'noopener'; c.append(a) }
       if (g.kind === 'video') { const v = el('video'); v.controls = true; v.muted = true; v.playsInline = true; v.preload = 'metadata'; v.src = x.src; c.append(v) }
       if (g.kind === 'image') { const z = el('button', 'zoom'); z.type = 'button'; z.setAttribute('aria-label', 'Enlarge ' + x.label);
         const im = el('img'); im.src = x.src; im.alt = g.title + ' ' + x.label; im.loading = 'lazy'; z.append(im); z.onclick = () => openLb(g, i); c.append(z) }

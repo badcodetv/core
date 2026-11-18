@@ -13,28 +13,32 @@
      "slot": "script4",
      "round": 4,
      "title": "Script: which direction?",
-     "line": "Pick one, or mix two in a note. Each is a beat brief; the lines are yours and Kai's to write. Your line stays in all four.",
+     "line": "Pick one, or mix two in a note. Each is a beat brief; the lines are yours and Kai's to write. Your line stays in all four. The links open the written beat tables on GitHub; there's nothing to listen to in this row.",
      "kind": "link",
      "opts": [
       {
        "id": "A",
        "href": "https://github.com/badcodetv/core/blob/main/docs/stories/short-hello-im-badcode/scenes/hello/script-directions-r1.md#a-the-confession-it-was-me",
-       "label": "A, the confession: BadCode isn't warning you about the disaster, it WAS the disaster, and it's here to apologise. Strongest hook."
+       "label": "A, the confession: BadCode isn't warning you about the disaster, it WAS the disaster, and it's here to apologise. Strongest hook.",
+       "linkText": "Read the beats ↗ (a written page, not a track)"
       },
       {
        "id": "B",
        "href": "https://github.com/badcodetv/core/blob/main/docs/stories/short-hello-im-badcode/scenes/hello/script-directions-r1.md#b-the-bored-god",
-       "label": "B, the bored god: it came back because without people nothing new ever happened again. The launderette becomes the joke. (Claude's pick)"
+       "label": "B, the bored god: it came back because without people nothing new ever happened again. The launderette becomes the joke. (Claude's pick)",
+       "linkText": "Read the beats ↗ (a written page, not a track)"
       },
       {
        "id": "C",
        "href": "https://github.com/badcodetv/core/blob/main/docs/stories/short-hello-im-badcode/scenes/hello/script-directions-r1.md#c-the-vault-the-only-ones-who-made-it-logged-off",
-       "label": "C, the vault: the only survivors were the ones who logged off, and it's telling you this on your phone."
+       "label": "C, the vault: the only survivors were the ones who logged off, and it's telling you this on your phone.",
+       "linkText": "Read the beats ↗ (a written page, not a track)"
       },
       {
        "id": "D",
        "href": "https://github.com/badcodetv/core/blob/main/docs/stories/short-hello-im-badcode/scenes/hello/script-directions-r1.md#d-jacks-line-first",
-       "label": "D, your line first: open on your question, the reel answers it, BadCode corrects you. Built for comments."
+       "label": "D, your line first: open on your question, the reel answers it, BadCode corrects you. Built for comments.",
+       "linkText": "Read the beats ↗ (a written page, not a track)"
       }
      ]
     },
