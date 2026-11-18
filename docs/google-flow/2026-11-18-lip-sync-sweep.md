@@ -20,6 +20,19 @@ Three standing rules are flagged wherever an idea touches them. Nothing here dec
 
 ---
 
+## Result, same evening: the breakthrough (try #2b and #2d)
+
+Tried first, inside Flow and Gemini, no new tools: the free per-word table, then **re-voicing the same words with Gemini
+pause tags where the clips pause, ranked by words inside 45 ms early to 125 ms late.** Line 7-2 went from 2 of 12 words in
+time to 10 of 12; 7-0 from 5 of 11 to 9 of 11. Kai: *"a magnificent improvement… in every case, the lips and the voice lined
+up."* He picked by voice likeness as well as sync. Method now at the top of `.claude/skills/lip-sync-dub/SKILL.md` and in
+`docs/rules/voices.md`. The outside-Flow bets (#1, #3, #5) are parked.
+
+Also measured (try #2a): writing the pause as an action in the Omni prompt lengthened it on one line (0.68 → 1.12 s, n 8-10
+per arm; `[beat]` 0.84 s) and did nothing on the other.
+
+---
+
 ## The short answer
 
 There is no timing prompt we have missed. Google documents no way to pin words to times in Omni or Veo, and

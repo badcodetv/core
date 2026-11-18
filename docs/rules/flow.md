@@ -515,3 +515,14 @@ Kai, 2026-08-26 (measured on Veo; untested on Omni 1.2). Write-up: `docs/video-f
 - Move the camera in Premiere over the finished clip. ffmpeg is the only lane that puts text on screen.
 - Length: chain clips (last frame of N → first frame of N+1); never pin an `endImage` to join them.
 - On a frozen plate add moving grain; reverse or ping-pong only light, never settling matter.
+
+
+## 2026-11-18 — Omni dialogue: a pause written as an action holds; one pool tab, one still per job
+
+- **A pause in an Omni line:** write it as an action between two `She says:` (*"She rolls her eyes and tilts her head, lips
+  pressed shut, then says: …"*). GPOM 7-2, 8-10 clips per arm: plain 0.68 s, `[beat]` in the words 0.84 s, the action
+  1.12 s. On GPOM 7-0 every arm ran straight through the comma. Pace words in the prompt still do nothing.
+- **Crossed clips in the pool:** 3 of 32 clips came back filed under the wrong line. Two came from one tab whose jobs all
+  started from the same still: a submit retry left one tile too many, `match.py` fell back to naming by first frame,
+  and the first frames were identical. (The third is unexplained.) Transcribe every talking clip after harvest; until
+  `pool.mts` is fixed, don't put two same-still jobs with different words in one lane.

@@ -1,6 +1,6 @@
 ---
 name: lip-sync-dub
-description: Use when a Flow (Omni) talking clip is muted and dubbed with an AI Studio text-to-speech voice and the lips must line up — making the talking clip, measuring the mouth, placing the voice phrase by phrase, choosing a cutaway when it can't match, and checking the result. Triggers on "lip sync", "the lips don't line up", "dub this clip", "make him say the line", "the voice is early/late", "his mouth moves but nobody's talking", "sync the TTS to the video", or any talking-character shot in a narrated film. Mechanics of Flow stay with flow-automation, prompt craft with flow-prompt, the voice itself with docs/ai-studio, and the timeline with premiere-automation.
+description: Use when a Flow (Omni) talking clip is muted and dubbed with an AI Studio text-to-speech voice and the lips must line up — making the talking clip, measuring the mouth, re-voicing the line with pause tags so its pauses sit where the mouth pauses, fitting the whole take, choosing a cutaway when it can't match, and checking the result. Triggers on "lip sync", "the lips don't line up", "dub this clip", "make him say the line", "the voice is early/late", "his mouth moves but nobody's talking", "sync the TTS to the video", or any talking-character shot in a narrated film. Mechanics of Flow stay with flow-automation, prompt craft with flow-prompt, the voice itself with docs/ai-studio, and the timeline with premiere-automation.
 ---
 
 # Lip-sync dub (BadCode)
@@ -18,37 +18,38 @@ dubbed scenes, after three rounds Jack rejected. The research behind it:
 3. **Late is forgiven, early is not.** Audio a frame early (~45 ms) is already noticeable; late is tolerated about three
    times further. Every phrase starts 0–0.1 s *after* the mouth opens, never before.
 
-## Redraw the mouth first: LatentSync (2026-11-06)
+## 🔑 The method that works: re-voice to the clip with pause tags (Kai, 2026-11-18: "a breakthrough")
 
-When a row's mouths were drawn at a different speed from the voice (re-timing won't converge), **redraw the mouth to the
-voice** with LatentSync 1.6 (open source, local GPU, keeps the face and expression, redraws the lower face; no Flow credits).
-**Before using it, check it is installed:**
+GPOM scene A, the toilet row, after months of "just off". Kai: *"a magnificent improvement… in every case, the lips and
+the voice lined up."* Record: `docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/lipsync-2026-11-18.md`;
+research behind it: `docs/google-flow/2026-11-18-lip-sync-sweep.md`; reference script:
+`scripts/gpom/second-half-video/lipsync-a-1118.py` (`check`, `fit`, `words`, `revoice`, `render`).
 
-```bash
-scripts/lipsync/latentsync-setup.sh check     # INSTALLED, or NOT INSTALLED + what's missing
-```
+**Why lines were "just off":** Omni draws the mouth at its own rhythm and Flow takes no audio, so mouth and voice are made
+blind to each other. One start + one tempo can match the line's LENGTH but cannot move a pause. The per-word table showed
+it: the words before a pause land, every word after it is 0.3–0.66 s early or late. **Pause in the wrong place, not pace.**
 
-If it says NOT INSTALLED, **ask the user (Kai or Jack) "LatentSync isn't installed on this machine. Shall I install it? About 10 GB,
-Linux/WSL with an NVIDIA GPU only."** On a yes, run `scripts/lipsync/latentsync-setup.sh install` (pinned commit, same on
-every machine). Never install it unasked. Not available on macOS (Tom): use the procedure below or a cutaway.
+1. **Clips.** Omni, Frames, exact words in the prompt (step 2 below). Make 5–10 per line on the tab pool. **Transcribe
+   every harvested clip** (`check`): it must say its own line; a clip saying another line is a crossed clip, set it aside.
+2. **Per-word table first (free).** For each clip × take, place the take whole (onset + one tempo 0.97–1.15, never before
+   the mouth opens), then list each word's start minus the clip's own word start (the clip's own audio, shifted by its
+   lag to the tracked mouth). Window: **45 ms early to 125 ms late** (ITU-R BT.1359). Misses bunched after one word =
+   that pause is wrong.
+3. **Re-voice to the clip with pause tags.** Same words, same locked voice and profile; add Gemini's `<short pause>` or
+   `<long pause>` exactly where the clips pause, or a comma where the voice pauses and the clip doesn't (`Derek, you've…`
+   for `Derek. You've…`). Two or three tag variants × three takes. Words never change; tags are not words.
+4. **Fit every take on every clip, rank by words in the window**, then near-misses, then the old loudness score. Show the
+   best three pairs (one per clip) on a picks page, labelled with "N of M words in time".
+5. **Kai picks by VOICE as well as sync.** Takes differ a lot from each other in sound; he chose the take that sounds
+   most like the character over the one with a word or two more in time. Keep every take on the locked model and
+   profile (Gemini 3.8 changed Sandra's sound and twice read her whole profile aloud: fail any take longer than its line).
+6. **Optional, in Flow:** to lengthen the clip's own pause, write it as an action between two `She says:` (*"She rolls
+   her eyes, lips pressed shut, then says: …"*). Measured on one line: 0.68 s plain → 1.12 s with the action, 0.84 s
+   with `[beat]`. On another line Omni ran straight through every way of writing it.
 
-**Running it** (Kai, 2026-11-06: *"rather than me running bash commands… something we should be able to do via a skill"*).
-The user names the scene and the lines in plain words ("lip sync the argument in kill bots"); never ask them for shot ids.
-Find the scene's current cut (`scene.json` `cut.edl`), then:
-
-```bash
-python3 scripts/lipsync/redraw.py list <edl>               # the talking shots (lip-<id> on V1) and who speaks in each
-python3 scripts/lipsync/redraw.py prep <edl> <dir> [ids]   # muted picture as cut + only the on-screen speaker's voice
-python3 scripts/lipsync/redraw.py run  <dir> [ids]         # LatentSync, ~40-85 s of GPU per shot
-python3 scripts/lipsync/redraw.py post <edl> <dir> [ids]   # back to 24 fps, row-before.mp4 / row-after.mp4 with the mix
-```
-
-`<dir>` = `D:\badcode-videos\<story>\clips\…\video\latentsync-<round>\`. `run` executes downloaded model code, so the
-auto-mode safety check refuses it unless `.claude/settings.json` allows `Bash(bash scripts/lipsync/latentsync-row.sh:*)`;
-without the rule, give the user the `! bash scripts/lipsync/latentsync-row.sh <dir> <ids>` line to run themselves.
-After `post`: measure with `row-measure.py`, look at frame strips for changed faces, smeared teeth or a seam round the
-mouth, show the user row-before/row-after side by side, card every `-ls24.mp4`, and swap the five files into the next
-round's V1 (same lengths and voices, so nothing else moves).
+Never: chop the take into phrases (Kai 2026-11-04 "choppy"), speed or slow the picture (Kai round 18 "looks speeded
+up"), or LatentSync/any mouth redraw (Jack 2026-11-16, Kai 2026-11-11 "not her actual natural mouth"; `redraw.py` is
+history only). Steps 5–9 of the old procedure below are kept for the mouth-tracking detail.
 
 ## The procedure
 
@@ -56,7 +57,7 @@ round's V1 (same lengths and voices, so nothing else moves).
 `narration/profiles/`). It is the master; everything is fitted to it. Write names the way they must be said
 (spell out an initialism phonetically: `A.I.` written with full stops made a 1.2 s pause).
 
-**2. The talking clip.** Flow, Omni 1.2 Flash (since 2026-11-09; lip-sync not yet re-checked on 1.2, and talking takes past ~10 s drop lines per the sweep), **Frames mode** with the still as start image. 🔑 **Size each clip to the voice,
+**2. The talking clip.** Flow, Omni 1.2 Flash (since 2026-11-09; lip-sync on 1.2 confirmed workable 2026-11-18 with the method at the top; talking takes past ~10 s drop lines per the sweep), **Frames mode** with the still as start image. 🔑 **Size each clip to the voice,
 not to 8 seconds:** give a clip only as many words as the TTS speaks in about 5–6 s (one past film: three clips, 11 / 15 / 5 words,
 for a 13 s line). Packed clips make Omni rush, and a rushed mouth can't take the voice without warble. The prompt carries the exact line:
 `He says: <the words>` (no quotation marks), plus a line holding whatever must not
@@ -94,18 +95,11 @@ them land together; that is the one alignment the eye can't be fooled on.
 ⚠️ lips.py's "runs" also fire on the mouth *closing*, and the detector wobbles ±0.25 s between runs. Read the strip around
 each phrase, and when in doubt look at a frame strip of the mouth (`ffmpeg … crop … tile`).
 
-**6. Cut the voice into phrases** at its natural pauses (whisper word times, then check the gaps by loudness). One phrase per
-mouth burst: `<phrase 1>`, `<phrase 2>` …
+**6. Do not cut the voice into phrases.** Superseded 2026-11-18 by the method at the top: the whole take, re-voiced with
+pause tags so its pauses sit where the mouth pauses. (The phrase-cutting lane, `place-dub.py`, is what Kai called
+"choppy" on 2026-11-04.)
 
-**7. Place them.** Write a phrase table and build the track:
-
-```bash
-python3 scripts/lipsync/place-dub.py phrases.json out.wav      # a past phrase table sits in scripts/lipsync/ as example-*.json
-```
-
-Each phrase starts at its mouth opening (+0.02–0.1 s), evenly retimed to the mouth burst's length, **tempo 0.85–1.30**
-(**cap 1.15 on a breathy or whispered voice**: one warbled at 1.17–1.30). A slice of the take often begins with
-0.05–0.26 s of near-silence: place-dub prints the real voice onset, so set `at` = opening + 0.03 − that lead-in.
+**7. Place the whole take** with one onset and one tempo, 0.97–1.15, never before the mouth opens; check per word.
 
 **8. When a phrase can't fit** (the on-screen read is much faster than any voice take, e.g. one three-word phrase:
 every TTS read ≥ 1.8 s, the mouth 1.0–1.2 s):
@@ -157,6 +151,8 @@ put correctly placed dubs 0.35 s "late".
 | Sped the picture with its dub (round 18) | Kai, round 18 at3777: "This clip looks speeded up." x1.08-1.15 on a talking shot reads as sped-up footage even when the lips match. Round 19 went back to natural speed and re-fitted instead: `scripts/gpom/second-half-video/voice-row-fit.py` voices six takes in the cast voice, fits each WHOLE take on the tracked mouth (loudness vs mouth gap, onset + one tempo 0.97-1.15, no voice before an opening), cross-fits every existing clip of the shot first (free), and only then renders new clips. Gotchas: a clip that opens on a held parted mouth fools the fit (window it to the clip's own speech), and a clip whose mouth track is mostly missing scores well on almost nothing (gate on missing frames). Confirm the final onsets on the 12 fps strip: rounded lips read as nearly shut to the detector |
 | Re-timed the PICTURE to the whole voice (DTW of mouth gap vs loudness, then per-phrase anchors, rate clamped 0.85-1.18, frames sampled) on the round 19 row (one past film, 2026-11-06, Kai at3436 "the lip syncing here is really bad") | Did not converge: fixing one phrase moved the next 0.1-0.25 s the wrong way, because Omni drew the mouths at its own syllable rhythm (~1.2-1.3x the voice), so no single time map lines up every syllable. `scripts/lipsync/row-measure.py` (measures an assembled cut shot by shot) found the real errors: the voice 0.2-0.25 s EARLY on single phrases inside 6-0, 7-0 and 7d-1, which onset fitting and whole-take scores both miss. Next is an audio-driven mouth re-render (LatentSync 1.6 fits the local RTX 4090, 24 GB); installing it needs Kai's permission |
 | Re-voiced a 1.26x-slow take "a little brisk" to get under the stretch cap (one past short, 2026-11-11) | The brisk take fitted at x1.20 but garbled a two-word French phrase into nonsense; the original whole take at x1.26 (a non-breathy voice) kept every word and its b/p closures landed. Transcribe a re-voice before preferring it to the picked take |
+| Ranked pairs by a loudness-vs-mouth score (GPOM scene A, 2026-11-18) | Kai picked the 3rd-ranked pair on 2 of 4 lines and called line 7-0 "just off" at tempo 1.00. Rank by words inside -45..+125 ms instead (method at the top) |
+| Two jobs from the SAME still in one pool tab, and a submit retry (2026-11-18) | 5 tiles for 4 jobs, so `match.py` named clips by first frame, which is identical for every job: 3 of 32 clips filed under the wrong line. The transcribe check caught them. Give same-still jobs a tab each, and always transcribe |
 | Ended an Omni talking-clip prompt with the house sign-off "Thanks." (one past short, 2026-11-15) | Both takes SPOKE "Thanks" after the line (b at 5.0 s, a straight after it at 2.7 s). Cut before it, or leave the sign-off off a talking clip's prompt. Also: a 7-word line came back at ~1.4-1.7 s of mouth against a 2.9 s TTS take (x1.7-2.0): a short punchy line still runs fast |
 
 ## Tools

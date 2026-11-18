@@ -39,6 +39,11 @@ Status: LOCKED for every part made. A new part with no look is EXPLORING (variat
 - **Humans and Maddie:** AI Studio (Gemini TTS), regional British, never American: Maddie `Aoede` (Bristol), Sandra `Autonoe` (Bolton), Derek `Algieba` (Liverpool), the old lady `Vindemiatrix` (Sheffield, plain-spoken, not posh); the crowd `Orus`, `Leda`, `Schedar`, `Vindemiatrix`, `Zubenelgenubi`, `Gacrux`. Profiles in sound.md and `scenes/second-half-cut3-cast.json`. LOCKED.
 
 ## Story-only rules
+
+- **Talking lines (Kai, 2026-11-18):** dub with the lip-sync-dub skill's pause-tag method (re-voice the same words with
+  `<short pause>`/`<long pause>` where the Omni clip pauses, rank by words in time). Keep every take on the LOCKED cast
+  voice, model `gemini-3.1-flash-tts-preview` and profile: Kai picks the take that sounds like the character. Plan and
+  progress: `lipsync-plan-2026-11-18.md` (A done; C, D, B next).
 - The AI is never given a body, face, orb or avatar; it speaks through Maddie's speaker and her beacon pulses on his words.
 - Maddie is never voiced in Suno (she comes back American).
 - The newsreader never swears and never panics; the drama is the gap between the still voice and the music.

@@ -1,0 +1,69 @@
+{
+ "page": "https://claude.ai/artifact/UKPJMCxRgcMTKfgrxMenBG",
+ "version": 3,
+ "read": "2026-11-18",
+ "by": "Kai",
+ "kai_said": "the lip-syncing is much better... a magnificent improvement... in every case, the lips and the voice lined up. Each voice is significantly different to each other voice, so I'm tending to pick the one that sounds the most similar to the actual character's voice rather than the one that has the most perfect lip-syncing.",
+ "picks": {
+  "6-0": {
+   "clip": "la-L60a-sandra-SB07b.mp4",
+   "take": "6-0-a.wav",
+   "at": -0.0208,
+   "tempo": 1.12,
+   "frm": 0.19,
+   "to": 5.08,
+   "score": -0.135,
+   "round": "r3",
+   "option": "p2",
+   "render": "pairs/6-0-r3-pick2.mp4"
+  },
+  "7d-0": {
+   "clip": "la-L7d0a-derek-SB07c.mp4",
+   "take": "7d-0-f.wav",
+   "at": 1.125,
+   "tempo": 1.15,
+   "frm": 0.22,
+   "to": 1.82,
+   "score": -0.381,
+   "round": "r2",
+   "option": "p3",
+   "render": "pairs/7d-0-r2-pick3.mp4"
+  },
+  "7-0": {
+   "clip": "la-L70g-sandra-SB07b.mp4",
+   "take": "7-0-v2m31t2.wav",
+   "at": -0.0208,
+   "tempo": 1.14,
+   "frm": 0.23,
+   "to": 4.91,
+   "score": 0.059,
+   "round": "r3",
+   "option": "p2",
+   "render": "pairs/7-0-r3-pick2.mp4"
+  },
+  "7d-1": {
+   "clip": "la-L7d1d-derek-SB07c.mp4",
+   "take": "7d-1-c.wav",
+   "at": 0.3125,
+   "tempo": 0.98,
+   "frm": 0.24,
+   "to": 2.39,
+   "score": 0.634,
+   "round": "r2",
+   "option": "p2",
+   "render": "pairs/7d-1-r2-pick2.mp4"
+  },
+  "7-2": {
+   "clip": "la-L72b-sandra-SB07b.mp4",
+   "take": "7-2-v1m31t2.wav",
+   "at": -0.0208,
+   "tempo": 1.12,
+   "frm": 0.28,
+   "to": 5.25,
+   "score": 0.117,
+   "round": "r3",
+   "option": "p1",
+   "render": "pairs/7-2-r3-pick1.mp4"
+  }
+ }
+}

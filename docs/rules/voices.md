@@ -37,7 +37,7 @@ Then: "you said you wanted to use the new tool for the lip syncing, do not do th
 
 **Why:** Kai has judged it doesn't work for our clips (see `latentsync-oom-kills-wsl` for the earlier crash too).
 
-**How to apply:** never offer or install LatentSync, even though the lip-sync-dub skill opens with it. Use the Bank Robbery method in that skill: re-shoot with the exact words, read mouth openings by eye from 12 fps mouth strips (mouth-track.py), place phrases with place-dub.py 0-0.1 s late, tempo 0.85-1.30. Never anchor on the clip's own audio or Whisper times (0.4 s early). For talking shots use the skill's other lanes: put the exact words in the Omni prompt so the mouth is drawn to them, size clips to the voice, fit the voice to the measured mouth; or keep the face off-screen/wide for that line. See `dubbed-talking-clips-recipe`.
+**How to apply:** never offer or install LatentSync, or any tool that redraws the mouth. Use the method at the top of the lip-sync-dub skill (2026-11-18, below): the whole voice take, re-voiced with pause tags to the clip's pauses, ranked by words in time. Put the exact words in the Omni prompt, size clips to the voice, never chop the take, never speed the picture; or keep the face off-screen/wide for that line.
 
 ## How to lip-sync a muted Flow talking clip to a TTS dub — Frames mode with the exact line, test, then time-warp to the clip's own speech; mouthless pans for failures.
 
@@ -105,3 +105,26 @@ which is itself pollution (a story's recipe is that story's).
 (`scripts/aistudio-tts.py --plain --model gemini-3.8-flash-tts --voice en-gb-…`), then let Jack or Kai pick. No accent or
 personality adjectives in any prompt. Never copy another story's voice note or profile.
 Trim take silence gently (`silenceremove` at -55 dB, 0.12 s): -45 dB cut a soft "I'm" off a line.
+
+
+## Kai 2026-11-18 — the lip-sync breakthrough: re-voice to the clip with pause tags
+
+Kai, on GPOM scene A round 3: *"the lip-syncing is much better… a magnificent improvement… in every case, the lips and the
+voice lined up… whatever that breakthrough is, document it throughout the repository."*
+
+**What it was:** a per-word table (each word's start against the clip's own word, window 45 ms early to 125 ms late)
+showed lines were off because a pause sat in a different place, not because of speed. Re-voicing the SAME words with
+Gemini's `<short pause>` / `<long pause>` tags (or a comma to shorten a pause) at the spots where the clip pauses, then
+ranking every take × clip by words inside the window, took line 7-2 from 2/12 words in time to 10/12, 7-0 from 5/11 to
+9/11. Procedure: the top of `.claude/skills/lip-sync-dub/SKILL.md`. Record: `docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/lipsync-2026-11-18.md`.
+
+**Why:** Flow takes no audio and Omni sets its own rhythm, so a voice made blind to the clip can only be slid and evenly
+stretched, which never moves a pause. Moving the pause in the voice can.
+
+**How to apply:**
+- Every dubbed talking line: clips first, per-word table, re-voice with pause tags, rank by words in time, picks page.
+- Tags only, never new words ("words change only with Kai/Jack").
+- **Kai picks by voice as well as sync**: takes vary a lot in sound. Keep every take on the character's locked model and
+  profile; show the pairs that are in time and let him choose the one that sounds like the character.
+- Gemini 3.8 with a long profile sometimes reads the profile aloud (4 of 18 takes, 2026-11-18): fail any take whose
+  transcript is longer than its line.

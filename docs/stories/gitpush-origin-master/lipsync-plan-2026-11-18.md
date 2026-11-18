@@ -48,3 +48,11 @@ that building." (wide), D "What is it?", d3 lines 13 and 16, "Are you ready for 
    swapped into `00 RENDER story`.
 
 Order: scene A's row first (five lines, the worst-known, Kai at3436 "really bad"), then C, D, B.
+
+
+## Update, 18 Nov evening: what works (scene A done)
+
+Steps 3-5 changed after the breakthrough (method: top of `.claude/skills/lip-sync-dub/SKILL.md`):
+clips first (5-10 per line on the tab pool, transcribed), a per-word table, then **re-voice the same words with pause tags
+where the clips pause**, ranked by words inside -45..+125 ms. Kai picks by voice likeness as well as sync. Scene A picks:
+`scenes/second-half-a-killbots/feedback/lipsync-picks-2026-11-18-r3.json`. Next: C, D, B with the same method.
