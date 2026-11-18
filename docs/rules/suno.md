@@ -229,3 +229,6 @@ Reference: `docs/suno-gpt/suno-voices.md`.
   Re-run with `--only <names>`; it took up to two retries.
 - `suno.mts record` writes to `LISTEN_MEDIA_ROOT`, whose default is a path on Kai's machine: set it on Jack's.
 - A writer may choose Max Mode: those Creates cost 20, not 10.
+- **Why takes are recorded, not downloaded** (Jack asked, 2026-11-18): Suno's audio URL refuses scripted requests (403) and
+  downloads are capped and human-only, so `record` plays each take in real time (~20 s a take). Run it in the background
+  while other work goes on, never while Jack waits; record only what goes on a page.

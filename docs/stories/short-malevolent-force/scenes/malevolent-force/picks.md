@@ -98,3 +98,8 @@
 - **2026-11-18, strings round** (`songs/r3-strings/`, variations: sealed writers, gate passed first time): six ideas, 12
   takes, 80 credits (5,703 → 5,623; two Max Mode prompts cost 20). Takes recorded to `<media>/audio/r3-strings/`.
   Round 9 on the same page: the strings as audio players (Jack asked for a player with a slider), the price clips.
+- **2026-11-18, Jack's round 9 (page dump, `feedback/horror-r9/`):** strings **basses-from-below take 2**
+  (`32ef9301`). Shelf price, no pick: "we need to see the prices first, the hand covers the 50p, otherwise this works
+  thanks". Freezer price, no pick: "this looks a bit shit, i think the hand should swoop over the prices like a magic trick,
+  as in the entire hand swoops past and covers both prices, when they hand goes away the prices change thanks". Plan: blank,
+  no-hand stills of both shots, so each clip opens on the prices and the hand arrives; freezer as a full swoop across both cards.
