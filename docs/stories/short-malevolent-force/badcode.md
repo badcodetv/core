@@ -15,7 +15,10 @@ agreed cut on Drive. Owed: export from Premiere, delivery QC, gatekeeper.
 [notes](../../misc/2026-11-17-morning-meeting.md)): a **ghostly hand** rapidly snatches the price tags, or waves over the
 money, and the price changes. Kai: it makes it scarier and funnier. In progress (2026-11-18): **the hand is picked**: burnt, soot-black, cracked like old tarmac with a dull ember glow in the
 cracks, long hooked fingers, nails like split slate, a thread of smoke; only hand and wrist, coming down from the dark
-above, lit by the shop's teal. Stills `HS4-*` / `HS6-*` in shots 4 and 6. The finish is the **subtle VHS**
+above, lit by the shop's teal. Picked: shot 4 `HS4-a`, shot 6 `HS6-b`.
+**Jumpscare figure (Jack, 2026-11-18, round 5 awaiting picks):** the hand's owner, faceless, the same burnt char, on screen
+for a few frames with a strings stab: a dash across the back of the aisle, crouched on top of the shelving, half behind the
+door, or only in the mirror. Unclear: whether Jack keeps the figure as a rule change (the force was "never a person"). The finish is the **subtle VHS**
 (`scripts/shorts/vhs_finish.sh`). Rough cut 2 stands until the new shots are cut in.
 
 ## Look
