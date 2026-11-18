@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/video/la-L70t-sandra-SB07b.mp4",
+ "made": "2026-11-18T18:00:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, jabs a finger at the man and tears into him, cutting and sarcastic, her lips shaping every word clearly. She says: Five years underground, [beat] and you still can't put a seat down. Then she shuts her mouth and glares. The man seen from behind does not move or speak. Sound: tiled room echo, a dripping tap.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/moodboard/sandra-SB07b.jpg",
+ "why": "pause test 18 Nov: line 7-0, arm beat, clip t",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/moodboard/sandra-SB07b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/lipsync-1118",
+  "key": "L70t",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T17:54:11.049Z"
+ }
+}

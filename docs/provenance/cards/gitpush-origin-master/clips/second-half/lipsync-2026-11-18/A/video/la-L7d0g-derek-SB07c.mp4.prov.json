@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/video/la-L7d0g-derek-SB07c.mp4",
+ "made": "2026-11-18T16:50:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The shot stays fixed; only the people move. Derek, the husband in the dark green jumper, stands silent for a second taking the telling-off, then mumbles a sheepish apology, his lips shaping every word. He says: I'm really sorry, love. Then his mouth closes and he looks at the floor. His wife, her back to us, stays quiet and still. Sound: tiled room echo, a dripping tap.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/moodboard/derek-SB07c.jpg",
+ "why": "lip-sync 18 Nov: line 7d-0 clip g",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/moodboard/derek-SB07c.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/lipsync-1118",
+  "key": "L7d0g",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 5,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T16:47:12.233Z"
+ }
+}

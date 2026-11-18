@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r3/r3b-a.wav",
+ "made": "2026-11-18T18:06:07+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Susan reminds her. Last night, Karen threw her phone in the river... and swore to make the biggest complaint the world has ever seen.",
+ "inputs": {
+  "profile": "# Audio Profile\nA dry, wry storyteller in his late fifties, a voice from the future that has already seen how all of this ends. American, with a faint Western ease. His voice sits in the middle of his range with a light sandy rasp, lived-in and weathered but clear and crisp. He talks straight to the listener, conversational and completely certain, with real pressure under the dryness: anger banked down and held in check, sarcasm used as a weapon, tightening rather than getting louder when it matters. He lands the dry asides cleanly and moves on.\n\n## Scene:\nLate at night, telling one person a story he is tired of being right about.\n\n## Sample Context:\nThe narrator of a dark satirical comedy, hired for voice-over with a bite.\n",
+  "profile_file": "docs/stories/karen/narration/profiles/narrator-algenib.md"
+ },
+ "settings": {
+  "voice": "Algenib",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

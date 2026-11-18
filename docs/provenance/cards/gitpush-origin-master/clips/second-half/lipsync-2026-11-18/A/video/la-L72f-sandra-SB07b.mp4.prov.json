@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/video/la-L72f-sandra-SB07b.mp4",
+ "made": "2026-11-18T16:48:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, fires straight back at the man, quick, sharp and sarcastic, her lips shaping every word clearly. She says: Yeah, the world ended. Doesn't mean you get to stop having manners. Then she shuts her mouth and folds her arms. The man seen from behind does not move or speak. Sound: tiled room echo, a dripping tap.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/moodboard/sandra-SB07b.jpg",
+ "why": "lip-sync 18 Nov: line 7-2 clip f",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/moodboard/sandra-SB07b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/lipsync-1118",
+  "key": "L72f",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T16:46:13.708Z"
+ }
+}

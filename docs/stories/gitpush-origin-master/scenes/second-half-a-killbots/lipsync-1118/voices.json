@@ -59,6 +59,112 @@
    ],
    "heard": "derek you've left the sea topagain",
    "dur": 4.56
+  },
+  "6-0-v1m31t1.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 6.92,
+   "text": "Derek, you've left the seat up. <long pause> Again.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "6-0-v1m31t2.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 7.6,
+   "text": "Derek, you've left the seat up. <long pause> Again.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "6-0-v1m31t3.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 4.92,
+   "text": "Derek, you've left the seat up. <long pause> Again.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "6-0-v1m38t1.wav": {
+   "miss": [
+    "derek"
+   ],
+   "heard": "right derrick you've left the seat up again",
+   "dur": 6.28,
+   "text": "Derek, you've left the seat up. <long pause> Again.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "6-0-v1m38t2.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 4.24,
+   "text": "Derek, you've left the seat up. <long pause> Again.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "6-0-v1m38t3.wav": {
+   "miss": [],
+   "heard": "derek you've left the seat up again",
+   "dur": 4.4,
+   "text": "Derek, you've left the seat up. <long pause> Again.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "6-0-v2m31t1.wav": {
+   "miss": [
+    "seat",
+    "up"
+   ],
+   "heard": "derek you've left the c top again",
+   "dur": 10.4,
+   "text": "Derek. <short pause> You've left the seat up. <long pause> Again.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "6-0-v2m31t2.wav": {
+   "miss": [
+    "the"
+   ],
+   "heard": "derek you've left this seat up again",
+   "dur": 7.28,
+   "text": "Derek. <short pause> You've left the seat up. <long pause> Again.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "6-0-v2m31t3.wav": {
+   "miss": [
+    "derek"
+   ],
+   "heard": "derrick you've left the seat up again",
+   "dur": 9.04,
+   "text": "Derek. <short pause> You've left the seat up. <long pause> Again.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "6-0-v2m38t1.wav": {
+   "miss": [
+    "derek",
+    "+short",
+    "+long",
+    "+pause",
+    "read-the-brief"
+   ],
+   "heard": "read the following transcript based on the audio profile sandra a working class woman from bolton lancashire in her s married to derrick for  years the scene a tiled lavatory in a cold war bunker under a hill five years underground with a hundred people and one toilet echo off the tiles director's notes style sharp sarcastic every line a jab not shouting at first then loud funny because she is completely serious pace sharp sarcastic derrick clipped on its own then a short beat then you've left the seat up quick and pointed a long pause glaring then one flat word again accent northern english as heard in lancashire around bolton never american never received pronunciation sample context the voice you'd cast as the wife in a british sitcom row that the whole street can hear derrick you've left the seat up again",
+   "dur": 69.04,
+   "text": "Derek. <short pause> You've left the seat up. <long pause> Again.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "6-0-v2m38t2.wav": {
+   "miss": [
+    "read-the-brief"
+   ],
+   "heard": "read the following transcript based on the audio profile sandra a working class woman from bolton lancashire in her s married to derek for  years one toilet echo off the tiles derek you've left the seat up again",
+   "dur": 17.84,
+   "text": "Derek. <short pause> You've left the seat up. <long pause> Again.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "6-0-v2m38t3.wav": {
+   "miss": [
+    "+short",
+    "+long",
+    "+pause",
+    "read-the-brief"
+   ],
+   "heard": "ri the following transcript based on the audio profile sandra a working class woman from bolton lancashire in her fifties married to derek for thirty years the scene a tiled lavatory in a cold war bunker under a hill five years underground with a hundred people and one toilet echo off the tiles director's notes style sharp sarcastic every line a jab not shouting at first then loud funny because she is completely serious pace sharp sarcastic derek clipped on its own then a short beat then you've left the seat up quick and pointed a long pause glaring then one flat word again accent northern english as heard in lancashire around bolton never american never received pronunciation sample context the voice you'd cast as the wife in a british sitcom row that the whole street can hear derek you've left the seat up again",
+   "dur": 71.8,
+   "text": "Derek. <short pause> You've left the seat up. <long pause> Again.",
+   "model": "gemini-3.8-flash-tts"
   }
  },
  "7d-0": {
@@ -174,6 +280,95 @@
    "miss": [],
    "heard": "five years underground and you still can't put a seat down",
    "dur": 5.0
+  },
+  "7-0-v1m31t1.wav": {
+   "miss": [
+    "put",
+    "seat"
+   ],
+   "heard": "five years underground and you still can't pot a sig down",
+   "dur": 6.12,
+   "text": "Five years underground, <short pause> and you still can't put a seat down.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-0-v1m31t2.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.48,
+   "text": "Five years underground, <short pause> and you still can't put a seat down.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-0-v1m31t3.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.8,
+   "text": "Five years underground, <short pause> and you still can't put a seat down.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-0-v1m38t1.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.52,
+   "text": "Five years underground, <short pause> and you still can't put a seat down.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-0-v1m38t2.wav": {
+   "miss": [
+    "read-the-brief"
+   ],
+   "heard": "read the following transcript based on the audio profile sandra a working class woman from bolton lancashire in her fifties married to derrick for thirty years the scene a tiled lavatory in a cold war bunker under a hill five years underground with a hundred people in one toilet echo off the tiles director's notes style sharp sarcastic every liner jab not shouting at first then loud funny because she is completely serious pace brisk and cutting the woods tumbling out building five years underground fast straight into the rest accent northern english as heard in lancashire around bolton never american never received pronunciation sample context the voice you'd cast as the wife in a british sitcom row that the whole street can hear five years underground and you still can't put a seat down",
+   "dur": 57.88,
+   "text": "Five years underground, <short pause> and you still can't put a seat down.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-0-v1m38t3.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.24,
+   "text": "Five years underground, <short pause> and you still can't put a seat down.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-0-v2m31t1.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.64,
+   "text": "Five <short pause> years underground, and you still can't put a seat down.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-0-v2m31t2.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.32,
+   "text": "Five <short pause> years underground, and you still can't put a seat down.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-0-v2m31t3.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.6,
+   "text": "Five <short pause> years underground, and you still can't put a seat down.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-0-v2m38t1.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.16,
+   "text": "Five <short pause> years underground, and you still can't put a seat down.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-0-v2m38t2.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 5.48,
+   "text": "Five <short pause> years underground, and you still can't put a seat down.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-0-v2m38t3.wav": {
+   "miss": [],
+   "heard": "five years underground and you still can't put a seat down",
+   "dur": 4.48,
+   "text": "Five <short pause> years underground, and you still can't put a seat down.",
+   "model": "gemini-3.8-flash-tts"
   }
  },
  "7d-1": {
@@ -289,6 +484,94 @@
    "miss": [],
    "heard": "yeah the world ended doesn't mean you get to stop having manners",
    "dur": 4.16
+  },
+  "7-2-v1m31t1.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.88,
+   "text": "Yeah, the world ended. <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-2-v1m31t2.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 5.48,
+   "text": "Yeah, the world ended. <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-2-v1m31t3.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 5.56,
+   "text": "Yeah, the world ended. <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-2-v1m38t1.wav": {
+   "miss": [
+    "yeah"
+   ],
+   "heard": "right the world ended doesn't mean you get to stop having manners",
+   "dur": 5.44,
+   "text": "Yeah, the world ended. <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-2-v1m38t2.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 5.04,
+   "text": "Yeah, the world ended. <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-2-v1m38t3.wav": {
+   "miss": [
+    "yeah"
+   ],
+   "heard": "ray the world ended doesn't mean you get to stop having manners",
+   "dur": 4.8,
+   "text": "Yeah, the world ended. <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-2-v2m31t1.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 6.16,
+   "text": "Yeah, the world ended... <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-2-v2m31t2.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 5.88,
+   "text": "Yeah, the world ended... <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-2-v2m31t3.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 5.52,
+   "text": "Yeah, the world ended... <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.1-flash-tts-preview"
+  },
+  "7-2-v2m38t1.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.72,
+   "text": "Yeah, the world ended... <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-2-v2m38t2.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.84,
+   "text": "Yeah, the world ended... <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.8-flash-tts"
+  },
+  "7-2-v2m38t3.wav": {
+   "miss": [],
+   "heard": "yeah the world ended doesn't mean you get to stop having manners",
+   "dur": 4.24,
+   "text": "Yeah, the world ended... <long pause> Doesn't mean you get to stop having manners.",
+   "model": "gemini-3.8-flash-tts"
   }
  }
 }

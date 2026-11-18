@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r3/n13-sleeves.wav",
+ "made": "2026-11-18T18:06:41+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-v2/final/lvl_n13lie-b.wav",
+ "why": "Karen story r3: Kai cut the 'People like Susan lie in bed' speech, kept the sleeves bit; trimmed at the silence before 'Karen, well' (6.62 s)"
+}

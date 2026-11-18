@@ -198,5 +198,494 @@
   "md5": "93a08f6eae6959d7608983fdb170ecb6",
   "dur": 6.04,
   "tracked": 1.0
+ },
+ "la-L60f-sandra-SB07b.mp4": {
+  "line": "6-0",
+  "miss": [],
+  "heard": "derek you've left the seat up again",
+  "md5": "f21b1091226a43d5de276af37a10de5e",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L60g-sandra-SB07b.mp4": {
+  "line": "6-0",
+  "miss": [],
+  "heard": "derek you've left the seat up again",
+  "md5": "dc8c8242dc74969b9e5c910d0e5c9386",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70f-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "66a811dea4e5fa91b107edbb81ed118d",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L7d1f-derek-SB07c.mp4": {
+  "line": "7d-1",
+  "miss": [],
+  "heard": "but the world ended sandra",
+  "md5": "57a772e6a7ec13e28701a5d25d1925f4",
+  "dur": 5.04,
+  "tracked": 1.0
+ },
+ "la-L7d1g-derek-SB07c.mp4": {
+  "line": "7d-1",
+  "miss": [],
+  "heard": "but the world ended sandra",
+  "md5": "a787d665269f0b55cf67f36600355fc5",
+  "dur": 5.04,
+  "tracked": 0.08
+ },
+ "la-L7d1i-derek-SB07c.mp4": {
+  "line": "7d-1",
+  "miss": [],
+  "heard": "but the world ended sandra",
+  "md5": "4ab5428eea201d944817f635a85a9fd2",
+  "dur": 5.04,
+  "tracked": 1.0
+ },
+ "la-L72f-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "0b603553cc496c4a1b8cf61aa0e05c27",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72g-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "81e65793f669a78b43b24f8db059433d",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72i-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "da9b9fcdaad2431a50a2fc6bfdf3e873",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L60h-sandra-SB07b.mp4": {
+  "line": "6-0",
+  "miss": [],
+  "heard": "derek you've left the seat up again",
+  "md5": "f9d3c8d5e5ca34d4edddf304798a63cf",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L60i-sandra-SB07b.mp4": {
+  "line": "6-0",
+  "miss": [],
+  "heard": "derek you've left the seat up again",
+  "md5": "5247bf62e0afcb65f288ce75478f4e54",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L60j-sandra-SB07b.mp4": {
+  "line": "6-0",
+  "miss": [],
+  "heard": "derek you've left the seat up again",
+  "md5": "db25eb56d8df6e614e6d7f91bd1c7fc0",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L7d0f-derek-SB07c.mp4": {
+  "line": "7d-0",
+  "miss": [],
+  "heard": "i'm really sorry love",
+  "md5": "b3039682e6813a8052f010f791deb768",
+  "dur": 5.04,
+  "tracked": 1.0
+ },
+ "la-L7d0g-derek-SB07c.mp4": {
+  "line": "7d-0",
+  "miss": [],
+  "heard": "i'm really sorry love",
+  "md5": "0961b8a053b683f3a3508b0b603d97c2",
+  "dur": 5.04,
+  "tracked": 1.0
+ },
+ "la-L7d0h-derek-SB07c.mp4": {
+  "line": "7d-0",
+  "miss": [],
+  "heard": "i'm really sorry love",
+  "md5": "6b9721ec692a6f36068d2589e33c409a",
+  "dur": 5.04,
+  "tracked": 0.99
+ },
+ "la-L7d0i-derek-SB07c.mp4": {
+  "line": "7d-0",
+  "miss": [],
+  "heard": "i'm really sorry love",
+  "md5": "2d591b2efc4243c7361182cbb8ba169d",
+  "dur": 5.04,
+  "tracked": 1.0
+ },
+ "la-L7d0j-derek-SB07c.mp4": {
+  "line": "7d-0",
+  "miss": [],
+  "heard": "i'm really sorry love",
+  "md5": "ad36d688ecff4f9b95aa3855c59f2ff2",
+  "dur": 5.04,
+  "tracked": 1.0
+ },
+ "la-L70g-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "b6908c6dfb5d18aaea0fc7e942ed74fd",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70h-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "38b299de673fc24c4ef52f0ddc1e864b",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70i-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "5222e0fc1fed271849b062c7cf626dea",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70j-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "e6bab82ad6567b229ab9da436c86b110",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L7d1h-derek-SB07c.mp4": {
+  "line": "7d-1",
+  "miss": [],
+  "heard": "but the world ended sandra",
+  "md5": "89c9825fb7d95b14511e1a0f44b3072e",
+  "dur": 5.04,
+  "tracked": 1.0
+ },
+ "la-L7d1j-derek-SB07c.mp4": {
+  "line": "7d-1",
+  "miss": [],
+  "heard": "but the world ended sandra",
+  "md5": "b9ccdeef6dfd118a973f5dbee4eede5a",
+  "dur": 5.04,
+  "tracked": 1.0
+ },
+ "la-L72h-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "875fc3d2c9d46af3e8032ee1e535ecbe",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72j-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "083376df15b3605f00de8047b5124baf",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70k-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "d1c32f1836de6b3ed9190a121970ae9c",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70l-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [
+   "five",
+   "years",
+   "underground",
+   "and",
+   "still",
+   "can't",
+   "put",
+   "a",
+   "seat",
+   "down"
+  ],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "4a88ed271e028ca595db59aa9cd12c6b",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70m-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "ce0c9c83ecee6a9284404917b8c56ff3",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70n-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "0de44b950506edfd85da83de901c9ca1",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70o-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [
+   "five",
+   "years",
+   "underground",
+   "and",
+   "still",
+   "can't",
+   "put",
+   "a",
+   "seat",
+   "down"
+  ],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "ef298134b59e4dd587dab43539005071",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70p-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "7702cedca18905ba17425368eefb1a88",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70q-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "9aa805856cc2a3549b6520a709ae70a2",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70r-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "4c47f7e2de3edee0bd8c3877ddf77635",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70s-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "342cb01abea5b05b0e30a38abcdfa182",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70t-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "11fd3660a3782bdb47f97de7709dab44",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70u-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "037513c3c191f4f36f9698bd3562f974",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70v-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [
+   "five",
+   "years",
+   "underground",
+   "and",
+   "still",
+   "can't",
+   "put",
+   "a",
+   "seat",
+   "down"
+  ],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "b666e94a90457f3d78a9e47418370ddc",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70w-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "b605ea8eed53d8eff3189dcd4a16eb93",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70x-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "43f2decd950891e9e5e2c121062335b6",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70y-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "1b70444fced94bb5c49fc573d407629e",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L70z-sandra-SB07b.mp4": {
+  "line": "7-0",
+  "miss": [],
+  "heard": "five years underground and you still can't put a seat down",
+  "md5": "8c032c2bfe177d31ff102e1ff084c926",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72k-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "749681c3dcc6dd1ba2a9d26f1e2d3c68",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72l-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "7baff680b5ec9e234499b461436384e2",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72m-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "d7e15332eecf7877b983f88cd844e5dd",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72n-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "ab62226b3c7f459aa82095811be4abb8",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72o-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "a8f6df129eef1b78281130dc81ff1b92",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72p-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "2113e57c25e40ca40a35a147fdaadb21",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72q-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "7ce91e0b4cba590d5c214e669cf7342c",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72r-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "792f5892defb5c1c378505b3c528da6e",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72s-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "9a89754d0bb750fdcd33d2ad73dd87cd",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72t-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "ae3d690b4a3383345c02dcf694607a97",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72u-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "9ca65b25b0e7e14d0b84c5e08427af30",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72v-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "1bde415dcd9e3a5a0d8338937df6feef",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72w-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "1c4abb5ba453a9d6650b212995ae3072",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72x-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "md5": "dc143145033744f57ccd24e744458aa6",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72y-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean doesn't mean you get to stop having manners",
+  "md5": "ec4a57dafa6bc13b440b6ea273dcc503",
+  "dur": 6.04,
+  "tracked": 1.0
+ },
+ "la-L72z-sandra-SB07b.mp4": {
+  "line": "7-2",
+  "miss": [],
+  "heard": "yeah the world ended doesn't mean doesn't mean you get to stop having manners",
+  "md5": "6ce21649c273c7d0fcc3893e57180f8d",
+  "dur": 6.04,
+  "tracked": 1.0
  }
 }

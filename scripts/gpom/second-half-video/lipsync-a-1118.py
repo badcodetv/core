@@ -73,6 +73,7 @@ NOW = {
     '7-2': ('cut3-lip-7-2-v3-muted.mp4', 0.0, 3.625, 140.0),
 }
 KEYS = 'abcde'
+CLIP_KEYS = 'abcdefghij'
 WPY = vrf.WPY
 
 
@@ -151,11 +152,62 @@ def cmd_voices(lines):
 def cmd_jobs():
     extra = []
     for ln, (who, text, _, dur, motion, *_r) in LINES.items():
-        for k in KEYS:
+        for k in CLIP_KEYS:  # a-e: first five (18 Nov am); f-j: five more (Kai, 18 Nov pm), new keys so nothing is overwritten
             extra.append(dict(key=f'L{ln.replace("-", "")}{k}', n=0, still=STILL[who], duration=dur, motion=motion,
-                              character=None, why=f'lip-sync 18 Nov: line {ln} take {k}'))
+                              character=None, why=f'lip-sync 18 Nov: line {ln} clip {k}'))
     json.dump(dict(extra=extra), open(f'{SCENE}/video-jobs.json', 'w'), indent=1)
     print(len(extra), 'jobs')
+
+
+# Pause test (Kai, 18 Nov evening: "all in on the Flow plan"; docs/google-flow/2026-11-18-lip-sync-sweep.md, try #2).
+# Lines 7-0 and 7-2 have a pause inside. Control arm = the plain clips a-j already made. Arm "action" (keys k-r):
+# the pause written as an action between two "She says:". Arm "beat" (keys s-z): a [beat] token in the words.
+EXP = {
+    '7-0': {
+        'action': "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, tears into the man, "
+                  "cutting and sarcastic, her lips shaping every word clearly. She says: Five years underground. "
+                  "She stops and jabs her finger hard at the toilet seat, lips pressed shut, then says: and you still can't "
+                  "put a seat down. Then she shuts her mouth and glares. The man seen from behind does not move or speak. "
+                  "Sound: tiled room echo, a dripping tap.",
+        'beat': "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, jabs a finger at the man "
+                "and tears into him, cutting and sarcastic, her lips shaping every word clearly. She says: Five years "
+                "underground, [beat] and you still can't put a seat down. Then she shuts her mouth and glares. The man seen "
+                "from behind does not move or speak. Sound: tiled room echo, a dripping tap.",
+    },
+    '7-2': {
+        'action': "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, fires straight back at "
+                  "the man, sharp and sarcastic, her lips shaping every word clearly. She says: Yeah, the world ended. "
+                  "She rolls her eyes and tilts her head, lips pressed shut, then says: Doesn't mean you get to stop having "
+                  "manners. Then she shuts her mouth and folds her arms. The man seen from behind does not move or speak. "
+                  "Sound: tiled room echo, a dripping tap.",
+        'beat': "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, fires straight back at "
+                "the man, quick, sharp and sarcastic, her lips shaping every word clearly. She says: Yeah, the world ended. "
+                "[beat] Doesn't mean you get to stop having manners. Then she shuts her mouth and folds her arms. The man "
+                "seen from behind does not move or speak. Sound: tiled room echo, a dripping tap.",
+    },
+}
+ARM_KEYS = {'action': 'klmnopqr', 'beat': 'stuvwxyz'}
+
+
+def arm_of(clip):
+    k = re.search(r'la-L[0-9d]+?([a-z])-', os.path.basename(clip)).group(1)
+    return next((a for a, ks in ARM_KEYS.items() if k in ks), 'plain')
+
+
+def cmd_exp_jobs():
+    p = f'{SCENE}/video-jobs.json'
+    jobs = json.load(open(p))
+    have = {e['key'] for e in jobs['extra']}
+    for ln, arms in EXP.items():
+        who, _, _, dur = LINES[ln][:4]
+        for arm, motion in arms.items():
+            for k in ARM_KEYS[arm]:
+                key = f'L{ln.replace("-", "")}{k}'
+                if key not in have:
+                    jobs['extra'].append(dict(key=key, n=0, still=STILL[who], duration=dur, motion=motion, character=None,
+                                              why=f'pause test 18 Nov: line {ln}, arm {arm}, clip {k}'))
+    json.dump(jobs, open(p, 'w'), indent=1)
+    print(len(jobs['extra']), 'jobs')
 
 
 def clips_of(line):
@@ -165,8 +217,8 @@ def clips_of(line):
 
 
 def mouth(clip):
-    os.makedirs(f'{SCENE}/strips', exist_ok=True)
-    strip = f'{SCENE}/strips/{os.path.basename(clip)}-strip.jpg'
+    os.makedirs(f'{MEDIA}/strips', exist_ok=True)  # media, not the repo (Kai 18 Nov: no images committed)
+    strip = f'{MEDIA}/strips/{os.path.basename(clip)}-strip.jpg'
     if not os.path.exists(strip + '.json'):
         subprocess.run([vrf.LPY, f'{REPO}/scripts/lipsync/mouth-track.py', clip, strip], capture_output=True)
     js = json.load(open(strip + '.json'))
@@ -176,8 +228,11 @@ def mouth(clip):
 def cmd_check(lines):
     p = f'{SCENE}/clips.json'
     rep = json.load(open(p)) if os.path.exists(p) else {}
+    only = os.environ.get('ONLY')  # e.g. ONLY=fghij: check just the newer clips
     for ln in lines:
         for c in clips_of(ln):
+            if only and re.search(r'la-L[0-9d]+?([a-j])-', os.path.basename(c)).group(1) not in only:
+                continue
             miss, heard = missing_words(ln, c)
             r = mouth(c)
             md5 = subprocess.run(['md5sum', c], capture_output=True, text=True).stdout.split()[0]
@@ -257,7 +312,7 @@ def cmd_fit(lines):
     p = f'{SCENE}/fits.json'
     allf = json.load(open(p)) if os.path.exists(p) else {}
     for ln in lines:
-        takes = [take_path(ln, k) for k in 'abcdefghij' if f'{ln}-{k}.wav' in vrep[ln] and not vrep[ln][f'{ln}-{k}.wav']['miss']]
+        takes = [f'{VOX}/{n}' for n, v in vrep[ln].items() if not v['miss']]
         clips = [c for c in clips_of(ln) if not crep.get(os.path.basename(c), {}).get('miss', ['?'])]
         jobs = [(c, t) for c in clips for t in takes]
         for c in clips:
@@ -266,7 +321,12 @@ def cmd_fit(lines):
             words_of(t)
         with ThreadPoolExecutor(6) as ex:
             res = [x for x in ex.map(lambda ct: fit_pair(ln, *ct), jobs) if x]
-        res.sort(key=lambda x: -x['score'])
+        for x in res:  # rank by words inside the tolerance window first (sweep try #2d), then the old score
+            rows = word_table(x)
+            x['in_window'] = sum(1 for _, d in rows if d is not None and -0.045 <= d <= 0.125)
+            x['near'] = sum(1 for _, d in rows if d is not None and -0.1 <= d <= 0.2)
+            x['n_words'] = len(rows)
+        res.sort(key=lambda x: (-x['in_window'], -x['near'], -x['score']))
         # top 3, at most one per clip, so Kai sees three different pictures
         top, seen = [], set()
         for x in res:
@@ -310,14 +370,99 @@ def render_now(line, out):
 def cmd_render(lines):
     os.makedirs(OUT, exist_ok=True)
     fits = json.load(open(f'{SCENE}/fits.json'))
+    tag = os.environ.get('TAG', '')  # TAG=r2-: the 50-clip round (Kai, 18 Nov pm) renders beside round 1, never over it
     for ln in lines:
-        render_now(ln, f'{OUT}/{ln}-now.mp4')
+        if not os.path.exists(f'{OUT}/{ln}-now.mp4'):
+            render_now(ln, f'{OUT}/{ln}-now.mp4')
         for i, x in enumerate(fits[ln]['top']):
-            render_pair(x, f'{OUT}/{ln}-pick{i + 1}.mp4')
+            render_pair(x, f'{OUT}/{ln}-{tag}pick{i + 1}.mp4')
             print(ln, i + 1, x['clip'], x['take'], x['score'], x['tempo'])
+
+
+# Re-voice to the clip (sweep 2026-11-18 try #2b): same words, the pauses moved with Gemini's pause tags to where the
+# word table says the picked clips pause. Both the locked 3.1 sound and 3.8 (the voice rule's model), three takes each.
+REVOICE = {
+    '6-0': ["Derek, you've left the seat up. <long pause> Again.",
+            "Derek. <short pause> You've left the seat up. <long pause> Again."],
+    '7-0': ["Five years underground, <short pause> and you still can't put a seat down.",
+            "Five <short pause> years underground, and you still can't put a seat down."],
+    '7-2': ["Yeah, the world ended. <long pause> Doesn't mean you get to stop having manners.",
+            "Yeah, the world ended... <long pause> Doesn't mean you get to stop having manners."],
+}
+MODELS = {'31': 'gemini-3.1-flash-tts-preview', '38': 'gemini-3.8-flash-tts'}
+
+
+def tts_tagged(line, text, model, name):
+    who = LINES[line][0]
+    cast = json.load(open(CAST))['cast'][who]
+    tf = f'{SCENE}/{name}.txt'
+    open(tf, 'w').write(text + '\n')
+    pf = f'{SCENE}/{line}.profile.md'
+    out = f'{VOX}/{name}.wav'
+    if not os.path.exists(out):
+        subprocess.run(f'set -a; . ./.env; set +a; uv run -q --with "google-genai<2" python3 scripts/aistudio-tts.py {tf} {out} '
+                       f'--profile {pf} --voice {cast["voice"]} --model {MODELS[model]}', shell=True, cwd=REPO,
+                       capture_output=True, check=True)
+        subprocess.run([sys.executable, f'{REPO}/scripts/provenance/prov.py', 'card', out, '--kind', 'voice', '--engine',
+                        'Gemini TTS', '--model', f'{MODELS[model]} / {cast["voice"]}', '--tool',
+                        'scripts/aistudio-tts.py via lipsync-a-1118.py revoice', '--prompt-file', pf,
+                        '--setting', f'text={text}', '--why', 'lip-sync 18 Nov: re-voice with pause tags to the clips'],
+                       check=True, capture_output=True)
+    return out
+
+
+def cmd_revoice(lines):
+    p = f'{SCENE}/voices.json'
+    rep = json.load(open(p))
+    jobs = [(ln, vi, text, m, t) for ln in lines if ln in REVOICE for vi, text in enumerate(REVOICE[ln])
+            for m in MODELS for t in range(3)]
+    def one(j):
+        ln, vi, text, m, t = j
+        return j, tts_tagged(ln, text, m, f'{ln}-v{vi + 1}m{m}t{t + 1}')
+    with ThreadPoolExecutor(4) as ex:
+        done = list(ex.map(one, jobs))
+    for (ln, vi, text, m, t), out in done:
+        miss, heard = missing_words(ln, out)
+        extra = [w for w in heard.split() if w in ('pause', 'long', 'short')]
+        miss = miss + [f'+{w}' for w in extra]  # a spoken tag counts as a fail
+        if len(heard.split()) > len(LINES[ln][1].split()) + 2:
+            miss.append('read-the-brief')  # 3.8 sometimes reads the whole profile aloud (18 Nov)
+        d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', out],
+                                 capture_output=True, text=True).stdout)
+        rep[ln][os.path.basename(out)] = dict(miss=miss, heard=heard, dur=round(d, 2), text=text, model=MODELS[m])
+        print(ln, os.path.basename(out), round(d, 2), 'MISS' if miss else 'ok', miss, '|', heard)
+    json.dump(rep, open(p, 'w'), indent=1)
+
+
+def word_table(x):
+    """Per word: placed voice start minus the clip's own word start (s). + = voice late. Window -0.045..+0.125 (ITU-R BT.1359)."""
+    cw, _ = clip_anchors(f'{CLIPS}/{x["clip"]}')
+    tw = words_of(f'{VOX}/{x["take"]}')
+    rows, j = [], 0
+    for w, s_, _ in tw:
+        k = next((i for i in range(j, len(cw)) if cw[i][0] == w), None)
+        if k is None:
+            rows.append((w, None)); continue
+        rows.append((w, round(x['at'] + (s_ - x['frm']) / x['tempo'] - cw[k][1], 3))); j = k + 1
+    return rows
+
+
+def cmd_words(lines):
+    fits = json.load(open(f'{SCENE}/fits.json'))
+    out = {}
+    for ln in lines:
+        out[ln] = []
+        for i, x in enumerate(fits[ln]['top']):
+            rows = word_table(x)
+            ok = sum(1 for _, d in rows if d is not None and -0.045 <= d <= 0.125)
+            out[ln].append(dict(pick=f'p{i + 1}', clip=x['clip'], take=x['take'], tempo=x['tempo'], words=rows,
+                                in_window=f'{ok}/{len(rows)}'))
+            print(ln, f'p{i + 1}', x['clip'][5:9], x['take'], f'{ok}/{len(rows)} in window', '  '.join(
+                f'{w}:{"?" if d is None else f"{int(d * 1000):+d}"}' for w, d in rows))
+    json.dump(out, open(f'{SCENE}/word-table.json', 'w'), indent=1)
 
 
 if __name__ == '__main__':
     c = sys.argv[1]; ls = sys.argv[2:] or list(LINES)
-    dict(voices=lambda: cmd_voices(ls), jobs=cmd_jobs, check=lambda: cmd_check(ls), fit=lambda: cmd_fit(ls),
+    dict(voices=lambda: cmd_voices(ls), jobs=cmd_jobs, exp_jobs=cmd_exp_jobs, revoice=lambda: cmd_revoice(ls), words=lambda: cmd_words(ls), check=lambda: cmd_check(ls), fit=lambda: cmd_fit(ls),
          render=lambda: cmd_render(ls))[c]()

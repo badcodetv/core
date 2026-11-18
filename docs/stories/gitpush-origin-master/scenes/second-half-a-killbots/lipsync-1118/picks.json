@@ -1,8 +1,8 @@
 {
  "title": "Kill Bots Lip Sync",
- "eyebrow": "GPOM scene A · lip-sync pass, 18 Nov",
+ "eyebrow": "GPOM scene A · lip-sync pass, 18 Nov · round 2 (50 clips)",
  "heading": "The toilet row: pick the best lip sync per line",
- "intro": "Each line: what's in the film now, then the three best new pairs (a new talking clip with a new voice take, same words, fitted whole to the mouth, never early, never chopped). New clips play their full 5-6 s with the room bed; the film version is trimmed to the line. Pick one per row ('Now in the film' keeps it) and leave a note. Derek's first line didn't fit well on any new pair: say if you want it re-shot as two shorter clips.",
+ "intro": "Round 2: ten new talking clips per line now (five more made this afternoon), every voice take fitted whole to every clip's mouth, never early, never chopped. Each line: what's in the film now, then the three best pairs out of all of them (at most one per clip, so three different pictures). New clips play their full 5-6 s with the room bed; the film version is trimmed to the line. Pick one per row ('Now in the film' keeps it) and leave a note. Derek's first line still fits badly on every clip (his mouth is faster than any take): say if you want it re-voiced faster or re-shot.",
  "sections": [
   {
    "h": "Scene A, the row",
@@ -21,21 +21,18 @@
       },
       {
        "id": "p1",
-       "src": "v/6-0-pick1.mp4",
-       "label": "New 1: clip c, voice e, voice at 0.98x",
-       "warn": ""
+       "src": "v/6-0-r2-pick1.mp4",
+       "label": "New 1: clip g (new), voice e, voice at 0.97x"
       },
       {
        "id": "p2",
-       "src": "v/6-0-pick2.mp4",
-       "label": "New 2: clip d, voice e, voice at 1.01x",
-       "warn": "weak fit: the voice rushes to keep up with the mouth"
+       "src": "v/6-0-r2-pick2.mp4",
+       "label": "New 2: clip h (new), voice e, voice at 0.97x"
       },
       {
        "id": "p3",
-       "src": "v/6-0-pick3.mp4",
-       "label": "New 3: clip a, voice b, voice at 1.15x",
-       "warn": "weak fit: the voice rushes to keep up with the mouth"
+       "src": "v/6-0-r2-pick3.mp4",
+       "label": "New 3: clip c, voice h, voice at 0.97x"
       }
      ]
     },
@@ -52,20 +49,20 @@
       },
       {
        "id": "p1",
-       "src": "v/7d-0-pick1.mp4",
-       "label": "New 1: clip b, voice a, voice at 1.14x",
+       "src": "v/7d-0-r2-pick1.mp4",
+       "label": "New 1: clip b, voice f, voice at 1.15x",
        "warn": "weak fit: the voice rushes to keep up with the mouth"
       },
       {
        "id": "p2",
-       "src": "v/7d-0-pick2.mp4",
-       "label": "New 2: clip a, voice a, voice at 1.15x",
+       "src": "v/7d-0-r2-pick2.mp4",
+       "label": "New 2: clip e, voice h, voice at 1.15x",
        "warn": "weak fit: the voice rushes to keep up with the mouth"
       },
       {
        "id": "p3",
-       "src": "v/7d-0-pick3.mp4",
-       "label": "New 3: clip c, voice a, voice at 1.15x",
+       "src": "v/7d-0-r2-pick3.mp4",
+       "label": "New 3: clip a, voice f, voice at 1.15x",
        "warn": "weak fit: the voice rushes to keep up with the mouth"
       }
      ]
@@ -83,21 +80,18 @@
       },
       {
        "id": "p1",
-       "src": "v/7-0-pick1.mp4",
-       "label": "New 1: clip d, voice h, voice at 0.98x",
-       "warn": ""
+       "src": "v/7-0-r2-pick1.mp4",
+       "label": "New 1: clip g (new), voice a, voice at 1.0x"
       },
       {
        "id": "p2",
-       "src": "v/7-0-pick2.mp4",
-       "label": "New 2: clip c, voice j, voice at 1.14x",
-       "warn": ""
+       "src": "v/7-0-r2-pick2.mp4",
+       "label": "New 2: clip d, voice h, voice at 0.98x"
       },
       {
        "id": "p3",
-       "src": "v/7-0-pick3.mp4",
-       "label": "New 3: clip a, voice j, voice at 1.00x",
-       "warn": ""
+       "src": "v/7-0-r2-pick3.mp4",
+       "label": "New 3: clip c, voice j, voice at 1.14x"
       }
      ]
     },
@@ -114,21 +108,18 @@
       },
       {
        "id": "p1",
-       "src": "v/7d-1-pick1.mp4",
-       "label": "New 1: clip d, voice c, voice at 0.98x",
-       "warn": ""
+       "src": "v/7d-1-r2-pick1.mp4",
+       "label": "New 1: clip i (new), voice d, voice at 0.98x"
       },
       {
        "id": "p2",
-       "src": "v/7d-1-pick2.mp4",
-       "label": "New 2: clip a, voice c, voice at 0.97x",
-       "warn": ""
+       "src": "v/7d-1-r2-pick2.mp4",
+       "label": "New 2: clip d, voice c, voice at 0.98x"
       },
       {
        "id": "p3",
-       "src": "v/7d-1-pick3.mp4",
-       "label": "New 3: clip e, voice d, voice at 0.97x",
-       "warn": ""
+       "src": "v/7d-1-r2-pick3.mp4",
+       "label": "New 3: clip a, voice c, voice at 0.97x"
       }
      ]
     },
@@ -145,20 +136,20 @@
       },
       {
        "id": "p1",
-       "src": "v/7-2-pick1.mp4",
+       "src": "v/7-2-r2-pick1.mp4",
        "label": "New 1: clip b, voice d, voice at 1.11x",
        "warn": "weak fit: the voice rushes to keep up with the mouth"
       },
       {
        "id": "p2",
-       "src": "v/7-2-pick2.mp4",
-       "label": "New 2: clip e, voice a, voice at 1.08x",
+       "src": "v/7-2-r2-pick2.mp4",
+       "label": "New 2: clip g (new), voice i, voice at 1.08x",
        "warn": "weak fit: the voice rushes to keep up with the mouth"
       },
       {
        "id": "p3",
-       "src": "v/7-2-pick3.mp4",
-       "label": "New 3: clip c, voice b, voice at 1.04x",
+       "src": "v/7-2-r2-pick3.mp4",
+       "label": "New 3: clip i (new), voice a, voice at 1.12x",
        "warn": "weak fit: the voice rushes to keep up with the mouth"
       }
      ]

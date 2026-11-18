@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/video/la-L7d1h-derek-SB07c.mp4",
+ "made": "2026-11-18T16:50:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static frame, nothing but the people moves. The husband in the dark green jumper flings his hands wide and shouts at his wife, exasperated, his lips shaping every word. He says: But the world ended, Sandra! Then his mouth shuts and he holds still, staring at her, hands still spread. His wife, seen from behind, holds still and says nothing. Sound: tiled room echo, a dripping tap.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/moodboard/derek-SB07c.jpg",
+ "why": "lip-sync 18 Nov: line 7d-1 clip h",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/moodboard/derek-SB07c.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/lipsync-1118",
+  "key": "L7d1h",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 5,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-18T16:47:36.365Z"
+ }
+}

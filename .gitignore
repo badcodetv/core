@@ -75,3 +75,7 @@ docs/stories/**/moodboard.html
 # folder (Desktop / D:), and already published on the page. Never in git.
 design/**/timeline/media/
 design/**/clips/video/
+
+# mouth-tracking strips (lip-sync): media, kept on D:, never in the repo (Kai 2026-11-18)
+**/strips/*.jpg
+**/strips/*.jpg.json
