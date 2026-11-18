@@ -14,6 +14,10 @@ and gallery forward. The MCP generate tools take no project: they use whichever 
   project yet gets `flow_create_project`, and its id is written into `badcode.md`.
 - **Never generate one story's shots in another story's project**, and never attach another story's still or
   Character as a reference.
+- **The tab pool's worker projects count as the story's own** (Jack, 2026-11-18: "do this"). `scripts/scene/pool.mts`
+  gives each worker tab a project of its own, made once per story and listed in `<media>/video/inbox/pool.json`; they
+  only ever hold that story's stills and clips, and every job that casts a Character stays on the main project (w0).
+  So clips (Omni) **always go through the pool**, never `run.mts` alone: `FLOW_CDP_PORT=<port> npx tsx scripts/scene/pool.mts <scene-dir>`.
 - A plain `flow_generate_image` now refuses to run if a reference chip is left on the bar from an earlier call
   (`packages/flow-mcp/src/flow-client.ts`, generateImage). If it refuses, remove the chip in Flow or open a fresh project.
 

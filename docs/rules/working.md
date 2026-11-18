@@ -210,3 +210,15 @@ downloading it? ... So that I don't have to click the link every time? for songs
 Every Playwright connection points Chrome's download folder at its own temp folder, so two scripts on the one browser steal
 each other's downloads: seven Flow stills rendered and none downloaded while a Suno recording ran. Run them one after
 another; if it happens, the images are in the Flow gallery (collect them, don't regenerate).
+
+## Jack 2026-11-18: work at Kai's speed ("do this", after asking why Kai's Bank Robbery pass felt quicker)
+
+- **Clips through the tab pool**, always (`scripts/scene/pool.mts`, `docs/rules/flow.md`): 20 clips in about 5 minutes,
+  not 25 one wave at a time.
+- **Bigger rounds, fewer of them: aim for 2-3 rounds a pass, not 9.** Each round offers a wider spread (about 8 options
+  for an open question, not 4-6), covers every open beat at once, and puts pictures, music and words on one page when
+  they're all open. Narrow down only once Jack has picked a direction.
+- **Keep working while Jack reviews.** The moment a page goes out, start the next thing that doesn't depend on his pick:
+  the music round, the cut script, footage searches, sealed writers for the next round. Browser jobs (Flow, Suno, record)
+  still run one after another, never at once (the rule above); the parallel work is everything else.
+- **Fixed tool bugs stay fixed:** a new failure gets fixed and written into the engine's rules the same day.
