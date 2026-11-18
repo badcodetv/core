@@ -602,7 +602,20 @@ export async function setTitle(page: Page, value: string) {
 }
 
 /** Set the destination workspace. Must happen BEFORE Create — it routes the output. */
+// 2026-11-18: the picker reads "Select Workspace" on about every other Create (seen 8 times in two rounds), and the run
+// aborted that prompt. A second pick fixes it, so retry here, up to twice, before reporting WRONG.
 export async function setWorkspace(page: Page, name: string): Promise<string> {
+  let r = ''
+  for (let attempt = 0; attempt < 3; attempt++) {
+    r = await setWorkspaceOnce(page, name)
+    if (!r.startsWith('workspace:WRONG')) return attempt ? `${r} (after ${attempt} retr${attempt > 1 ? 'ies' : 'y'})` : r
+    await page.keyboard.press('Escape').catch(() => {})
+    await page.waitForTimeout(1500)
+  }
+  return r
+}
+
+async function setWorkspaceOnce(page: Page, name: string): Promise<string> {
   const opened = await ev(
     page,
     // The Save-to control sits OUTSIDE panel(), below the form next to Create. Do NOT match the

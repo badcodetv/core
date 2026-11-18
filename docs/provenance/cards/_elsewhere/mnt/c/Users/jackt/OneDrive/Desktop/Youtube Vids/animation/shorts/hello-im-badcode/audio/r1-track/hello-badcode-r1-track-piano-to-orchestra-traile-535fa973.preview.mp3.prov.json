@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r1-track/hello-badcode-r1-track-piano-to-orchestra-traile-535fa973.preview.mp3",
+ "made": "2026-11-18T14:37:08.143Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "535fa973-0b20-4d81-86c8-084b9c3871a9",
+ "inputs": {
+  "title": "hello badcode r1-track-piano-to-orchestra-traile",
+  "song": "https://suno.com/song/535fa973-0b20-4d81-86c8-084b9c3871a9"
+ },
+ "settings": {
+  "durationSec": 19
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/r1-track/hello-badcode-r1-track-piano-to-orchestra-traile-535fa973.wav"
+}

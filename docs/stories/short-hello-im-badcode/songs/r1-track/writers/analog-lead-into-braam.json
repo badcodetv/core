@@ -1,0 +1,13 @@
+{
+  "name": "analog-lead-into-braam",
+  "style": "120 BPM, instrumental, 1980s film-score synths, 2010s revival, analog synthesizers, drum machine. Opening four seconds bright and wistful: lone mono saw lead, wide chorus, slight glide, bittersweet heroic melody; pulsing 16th-note analog bass; warm detuned polysynth pads; LinnDrum groove with gated-reverb snare. At 4 seconds lead and drums stop dead on one enormous low synth-brass braam. Then dark and dry: ticking low-string and sub-bass ostinato locked to the same 120 pulse, one metallic impact on every beat, growing heavier and grimmer. Final bars: tape-stop, pitch and speed sag to silence",
+  "exclude": "EDM drop, trap, autotune, big pop chorus, vocals, choir, singing, spoken word, dubstep wobble, guitar solo, fade-in",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 30,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": true
+}

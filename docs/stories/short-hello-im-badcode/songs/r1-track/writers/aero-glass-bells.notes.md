@@ -1,0 +1,9 @@
+# aero-glass-bells: what shaped it
+
+- Frutiger Aero has no fixed music genre; fans point to slow-to-mid tempos, lots of reverb, synths layered with bell tones, and held seventh chords, so the opening asks for bells, glassy keys, major sevenths, airy reverb and ~95 BPM downtempo as a mood rather than a named genre. Vendors describe it as "glossy synths, airy pads, glassy textures", which fed the texture words.
+  https://forum.frutigeraeroarchive.org/viewtopic.php?p=2991 (search snippet; page blocked) · https://cradle.app/products/state-machine-frutiger-aero · https://www.last.fm/tag/frutiger+aero/wiki
+- The turn uses a descending Shepard tone, the never-resolving falling illusion that film sound uses for unease. It is written as "endless-descent tone" so it reads as texture, with sub rumble and distant impacts and no beat, keeping the dread in sound design, not orchestra (orchestra and brass are excluded so it stays apart from the other experiments).
+  https://www.popsci.com/science/shepard-tone/ · https://producelikeapro.com/blog/understanding-shepard-tone-effect/ · https://www.premiumbeat.com/blog/shepard-tone-sound-design-filmmaking
+- Suno guides: with an instrumental the style box does all the work; mood words beat technical terms; name what enters and leaves at each change (groove stops, bell frozen, drone enters, drone thins) instead of piling up adjectives; early terms carry more weight, so the bright opening comes first.
+  https://sunowatermark.com/blog/suno-prompts-guide-2026/ · https://diyai.io/ai-tools/audio-generation/ai-music-prompts/ · https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/master-suno-ai-with-effective-music-prompts-focus-on-arrangement
+- Settings: v6 and 22 s fixed by the story; weirdness 40 to allow the odd frozen-reverb turn without losing the clean opening; styleInfluence 70 so the two-part description is followed; maxMode on for quality; no vocal gender (instrumental).

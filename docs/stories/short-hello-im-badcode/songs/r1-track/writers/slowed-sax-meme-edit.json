@@ -1,0 +1,13 @@
+{
+  "name": "slowed-sax-meme-edit",
+  "style": "instrumental, slowed + reverb mallsoft meme edit, 22 seconds in two halves. Opens mid-loop: breathy late-80s synth saxophone melody, smooth and sunny, over round fretless bass, glossy chorus pads and a soft 80s drum machine near 100 BPM, pitched a little low and swimming in hall reverb, like old shopping-mall background music on a hazy summer afternoon, happy and over-nostalgic. At 4 seconds the sax and beat cut off mid-phrase on a chopped edit; what is left is the same cassette going bad: detuned pads bending with heavy VHS wow and flutter, a nervous ticking clock, low distorted bass pulses, tape hiss, growing dark cinematic dread. The warble deepens and the pitch sinks further each bar, then at 17 seconds the whole tape drags, slows and droops in pitch down to a standstill, silent by 20 seconds",
+  "exclude": "vocals, singing, spoken words, choir, trap hi-hats, EDM drop, autotune, big pop chorus, guitar solo, upbeat ending",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 55,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": false
+}

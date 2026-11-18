@@ -1,0 +1,54 @@
+[
+  {
+    "name": "analog-lead-into-braam",
+    "style": "120 BPM, instrumental, 1980s film-score synths, 2010s revival, analog synthesizers, drum machine. Opening four seconds bright and wistful: lone mono saw lead, wide chorus, slight glide, bittersweet heroic melody; pulsing 16th-note analog bass; warm detuned polysynth pads; LinnDrum groove with gated-reverb snare. At 4 seconds lead and drums stop dead on one enormous low synth-brass braam. Then dark and dry: ticking low-string and sub-bass ostinato locked to the same 120 pulse, one metallic impact on every beat, growing heavier and grimmer. Final bars: tape-stop, pitch and speed sag to silence",
+    "exclude": "EDM drop, trap, autotune, big pop chorus, vocals, choir, singing, spoken word, dubstep wobble, guitar solo, fade-in",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": true
+  },
+  {
+    "name": "aero-glass-bells",
+    "style": "instrumental, glossy mid-2000s tech-optimism chillout turning into cold ambient horror drone. Opens bright and sunny: shimmering glassy electric piano and crystal bell tones ringing out warm major-seventh chords, airy wide reverb, little bubbly digital chirps like water droplets on a clean desktop, a laid-back downtempo groove around 95 BPM, a hopeful start-up-screen glow, blue sky nostalgia. After a few seconds the groove stops dead: the last bell chord hangs frozen in an endless shimmering reverb tail, then a cold falling endless-descent tone slides underneath, deep sub-bass rumble, far-off muffled metallic impacts, no beat, uneasy and hollow, pure sound design. Near the end the drone keeps sinking lower and thinning out, fading to complete silence.",
+    "exclude": "vocals, singing, spoken word, choir, drums after the turn, EDM drop, trap, hi-hat rolls, autotune, big pop chorus, orchestra, brass stabs, guitar solo, heavy metal, happy ending",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": true
+  },
+  {
+    "name": "slowed-sax-meme-edit",
+    "style": "instrumental, slowed + reverb mallsoft meme edit, 22 seconds in two halves. Opens mid-loop: breathy late-80s synth saxophone melody, smooth and sunny, over round fretless bass, glossy chorus pads and a soft 80s drum machine near 100 BPM, pitched a little low and swimming in hall reverb, like old shopping-mall background music on a hazy summer afternoon, happy and over-nostalgic. At 4 seconds the sax and beat cut off mid-phrase on a chopped edit; what is left is the same cassette going bad: detuned pads bending with heavy VHS wow and flutter, a nervous ticking clock, low distorted bass pulses, tape hiss, growing dark cinematic dread. The warble deepens and the pitch sinks further each bar, then at 17 seconds the whole tape drags, slows and droops in pitch down to a standstill, silent by 20 seconds",
+    "exclude": "vocals, singing, spoken words, choir, trap hi-hats, EDM drop, autotune, big pop chorus, guitar solo, upbeat ending",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": false
+  },
+  {
+    "name": "piano-to-orchestra-trailer",
+    "style": "Short instrumental cinematic trailer cue, 120 BPM, about 22 seconds, four sections in order. 0-4s warm intro: solo grand piano plays a simple hopeful major-key melody over a soft 2010s synthwave arpeggio and a warm analog pad, sunny and nostalgic. 4s hard turn: the piano breaks off on one dissonant low cluster, then a full hybrid trailer orchestra hits. 4-17s building dread, minor key: relentless staccato low strings on every beat, deep taiko and orchestral drum hits, swelling brass, one long riser climbing the whole way, tight on the grid. 17-20s slowing to silence: the orchestra drags into a ritardando, drums drop out, one low string note held and fading to total silence, no final hit, no impact. Instrumental, no vocals.",
+    "exclude": "vocals, singing, spoken words, choir, chant, EDM drop, dubstep, trap, autotune, pop chorus, final impact, ending boom",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": true
+  }
+]

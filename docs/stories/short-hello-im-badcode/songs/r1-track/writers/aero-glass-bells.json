@@ -1,0 +1,13 @@
+{
+  "name": "aero-glass-bells",
+  "style": "instrumental, glossy mid-2000s tech-optimism chillout turning into cold ambient horror drone. Opens bright and sunny: shimmering glassy electric piano and crystal bell tones ringing out warm major-seventh chords, airy wide reverb, little bubbly digital chirps like water droplets on a clean desktop, a laid-back downtempo groove around 95 BPM, a hopeful start-up-screen glow, blue sky nostalgia. After a few seconds the groove stops dead: the last bell chord hangs frozen in an endless shimmering reverb tail, then a cold falling endless-descent tone slides underneath, deep sub-bass rumble, far-off muffled metallic impacts, no beat, uneasy and hollow, pure sound design. Near the end the drone keeps sinking lower and thinning out, fading to complete silence.",
+  "exclude": "vocals, singing, spoken word, choir, drums after the turn, EDM drop, trap, hi-hat rolls, autotune, big pop chorus, orchestra, brass stabs, guitar solo, heavy metal, happy ending",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 40,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": true
+}

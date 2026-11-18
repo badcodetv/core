@@ -226,7 +226,10 @@ Reference: `docs/suno-gpt/suno-voices.md`.
 - `suno.mts` needs a suno.com tab in the browser on 9222; after `/mcp` relaunches that browser there is none
   (`WRONG_CHANNEL`): `npx tsx scripts/suno/suno.mts open-tab`, then run again. Nothing is spent when this fails.
 - The workspace picker sometimes reads "Select Workspace" and the run aborts that prompt **before spending** (`workspace:WRONG`).
-  Re-run with `--only <names>`; it took up to two retries.
+  Fixed the same day: `setWorkspace` now retries the pick up to twice itself. If it still aborts, re-run with
+  `--only <one name>` and check success by the line `▶ … <name> … create:ok`, never by the name appearing in the log:
+  the run reprints every prompt's settings at the end, and a loop that looked for the name re-ran two ideas three times
+  each (~60 credits of duplicates, Hello, I'm BadCode r1-track).
 - `suno.mts record` writes to `LISTEN_MEDIA_ROOT`, whose default is a path on Kai's machine: set it on Jack's.
 - A writer may choose Max Mode: those Creates cost 20, not 10.
 - **Why takes are recorded, not downloaded** (Jack asked, 2026-11-18): Suno's audio URL refuses scripted requests (403) and

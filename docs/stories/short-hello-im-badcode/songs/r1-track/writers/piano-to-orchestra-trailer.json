@@ -1,0 +1,13 @@
+{
+  "name": "piano-to-orchestra-trailer",
+  "style": "Short instrumental cinematic trailer cue, 120 BPM, about 22 seconds, four sections in order. 0-4s warm intro: solo grand piano plays a simple hopeful major-key melody over a soft 2010s synthwave arpeggio and a warm analog pad, sunny and nostalgic. 4s hard turn: the piano breaks off on one dissonant low cluster, then a full hybrid trailer orchestra hits. 4-17s building dread, minor key: relentless staccato low strings on every beat, deep taiko and orchestral drum hits, swelling brass, one long riser climbing the whole way, tight on the grid. 17-20s slowing to silence: the orchestra drags into a ritardando, drums drop out, one low string note held and fading to total silence, no final hit, no impact. Instrumental, no vocals.",
+  "exclude": "vocals, singing, spoken words, choir, chant, EDM drop, dubstep, trap, autotune, pop chorus, final impact, ending boom",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 30,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": true
+}
