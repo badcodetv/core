@@ -90,3 +90,4 @@
 - **2026-11-18, round 9 note (logo):** "all of teh letters are somewhat circular so make them role also make a few of these that
   vary and are interesting". Round 10: reveals d (letters roll in), e (the red-dot o leads), f (the triangle glances round like an
   eye), g (dial spin), from the logo's own pieces (`logo_reveal.py`), all ending exactly as the file. Real footage search still running.
+- **2026-11-18, round 10:** logo reveal **f** picked (watching you: the triangle glances round like an eye, then looks at you).
