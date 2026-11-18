@@ -28,11 +28,17 @@ Kai and Jack, 2026-11-13 meeting (docs/misc/2026-11-13-meeting.md): "make going 
 
 ## Premiere
 
-**Project:** `C:\Users\jackt\OneDrive\Desktop\Youtube Vids\animation\shorts\malevolent-force\malevolent force.prproj` · **Sequence:** `short-malevolent-force-1-malevolent-force-r2`, 720×1280 @ 24, 20.8 s · built 2026-11-16 from `cut/r2/edl.json`
+**Project:** `C:\Users\jackt\OneDrive\Desktop\Youtube Vids\animation\shorts\malevolent-force\malevolent force.prproj`
+**Current sequence:** `short-malevolent-force-1-malevolent-force-r5`, 1080×1920 @ 24, 21.5 s · built 2026-11-18 from `cut/r5/edl-premiere.json`
+(rough cut 2, `…-r2`, is kept beside it, untouched).
 
 | Track | What |
 | --- | --- |
-| V1 | shot 1 `mf-01-w2-FO2-c-treated` 0→2 · 2 `mf-02-PR2-e-treated` 2→4.21 · 3 `mf-03-w2-PR2-c-noaudio` 4.21→6.21 · 4 `mf-04-b-PR2-b-treated` 6.21→10 · 5 `mf-05-b-FO2-d-noaudio` 10→12 · 6 `mf-06-f4b-swap` 12→15.58 · card `v6-card` 15.58→18.21 · logo `v7-logo` 18.21→20.79 (card and logo Motion Scale 66.67) |
-| A1 | `mus-track.wav` (vibes1) 0→20.79, silent after 15 s |
+| V1 | `r5-01` shop 0→1.58 · `r5-02` door 1.58→3 · `r5-03` figure behind the door 3→3.5 · `r5-04` aisle 3.5→4.21 · `r5-05` peek 4.21→5.21 · `r5-06` shelf drop 5.21→6.5 · `r5-07` shelf hand, 50p → £5 6.5→11.08 · `r5-08` mirror 11.08→12.71 · `r5-09` freezer swoop, £5/10p → £50/£12 12.71→16.29 · `v-card` 16.29→18.92 · `v-logo` 18.92→21.5 |
+| A1 | `mus-track.wav`: suspense strings (basses take 2, 0.92x) with a stab at 7.95 and 14.0 s (the hand), silent under the card and logo |
 
-**Needs a human:** the export (from Premiere, never ffmpeg), then `scripts/delivery-qc.sh`; a thunder hit under the logo flash if wanted.
+Shots are cut from the finished picture (`cut/r5/shots-vhs.mp4`), so the subtle VHS, the blurs and the drawn prices are baked
+in and there are **no handles**: a re-trim beyond a shot's edges means a rebuild from `scripts/shorts/malevolent_force_cut_r4.py`.
+`v0:7` (mirror) and `v0:9` (card) were each lengthened one frame to close two rounding gaps. Frames 10.6 s and 15.8 s exported and checked.
+
+**Needs a human:** the export (from Premiere, never ffmpeg), then `scripts/delivery-qc.sh`.

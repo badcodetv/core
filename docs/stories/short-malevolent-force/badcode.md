@@ -8,8 +8,7 @@
 A BadCode horror short (9:16, 20.8 s): one trip to the corner shop for bread, shot like a haunting, the price climbing
 50p → £1 → £5 → £50. The point: inflation is not weather; someone decides who gets the new money first (whoever stands
 nearest the printer), and you meet it last, at the till. The force is never seen and never one person. No voice; an
-end card, then the logo. State: rough cut 3 built (not in Premiere yet; rough cut 2 is in Premiere as
-`short-malevolent-force-1-malevolent-force-r2` and on Drive). Owed: export from Premiere, delivery QC, gatekeeper.
+end card, then the logo. State: rough cut 5 is the cut, in Premiere as `short-malevolent-force-1-malevolent-force-r5` and on Drive. Owed: export from Premiere, delivery QC, gatekeeper.
 
 **Next: more horror, the force more visible** (Jack and Kai, 17 Nov morning call,
 [notes](../../misc/2026-11-17-morning-meeting.md)): a **ghostly hand** rapidly snatches the price tags, or waves over the

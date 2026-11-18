@@ -8,7 +8,7 @@
   `video/inbox/dupes/`).
 - **Clips picked (round 8):** shelf hand c, freezer hand b, peek b, shelf top a, door b, mirror b (files in `picks.md`).
 - **Rough cut 3 built** (`cut/r3/`, 21.8 s), on the timeline page https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX.
-- **Rough cut 4 built** (`cut/r4/`, 21.5 s) on the timeline page https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX.
-- **Waiting on Jack:** notes on rough cut 4.
-- **Next:** dump the timeline notes → fix → build in Premiere when Jack says → export, delivery QC, gatekeeper.
+- **Rough cut 5 is the cut:** in Premiere as `short-malevolent-force-1-malevolent-force-r5` (saved) and on Drive (agreed list).
+- **Waiting on Jack:** nothing; he said "it's all good" once the figure's sounds went.
+- **Next:** export from Premiere (never ffmpeg) → `scripts/delivery-qc.sh … shorts` → gatekeeper → release.
 - Every ruling: `scenes/malevolent-force/picks.md`. Library pieces in use: `badcode.md`.

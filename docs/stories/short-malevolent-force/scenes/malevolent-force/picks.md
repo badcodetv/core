@@ -108,3 +108,8 @@
   each; shelf `hn4-a` (50p seen, hand, £5), freezer `hn6-b` (£5/10p seen, the swoop, an instant flip to £50 / 10p struck £12
   as it passes: the swoop runs just above the cards, so the flip is timed to its shadow, `prices-hn6.json`). Timeline page
   round 4: https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX.
+- **2026-11-18, Jack on rough cut 4:** "Please remove the sound effects from when the guy appears, it's really annoying.
+  Other than that, it's all good. And then once you've done that, build it in Premiere. And then upload it as a drive".
+  Rough cut 5 (`cut/r5/`): stabs only on the hand (7.95, 14.0 s). Built in Premiere as
+  `short-malevolent-force-1-malevolent-force-r5` (1080×1920, 21.5 s; ledger in the README), saved. Drive: 19 files added
+  to `scripts/drive/agreed/short-malevolent-force.list`, 20 copied (with the .prproj), 0 errors, 0 left.

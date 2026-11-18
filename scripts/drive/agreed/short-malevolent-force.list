@@ -1,5 +1,9 @@
 audio/malevolent-force-r2-inharmonic-vibraphone-v6-w65-f7b238d2.wav
 audio/malevolent-force-r2-inharmonic-vibraphone-v6-w65-f7b238d2.wav.prov.json
+audio/r3-strings/malevolent-force-r3-strings-basses-from-below-v6-32ef9301.wav
+audio/r3-strings/malevolent-force-r3-strings-basses-from-below-v6-32ef9301.wav.prov.json
+audio/r3-strings/malevolent-force-r3-strings-slasher-stab-section-65f9c223.wav
+audio/r3-strings/malevolent-force-r3-strings-slasher-stab-section-65f9c223.wav.prov.json
 cut/r2/edl.json
 cut/r2/mus-track.wav
 cut/r2/preview.mp4
@@ -7,6 +11,21 @@ cut/r2/v6-card.mp4
 cut/r2/v6-card.mp4.prov.json
 cut/r2/v7-logo.mp4
 cut/r2/v7-logo.mp4.prov.json
+cut/r5/edl-premiere.json
+cut/r5/edl.json
+cut/r5/mus-track.wav
+cut/r5/premiere-media/r5-01-mf-01-w2-FO2-c.mp4
+cut/r5/premiere-media/r5-02-mf-02-PR2-e.mp4
+cut/r5/premiere-media/r5-03-mf-d2-b-JS2-door-b.mp4
+cut/r5/premiere-media/r5-04-mf-03-w2-PR2-c.mp4
+cut/r5/premiere-media/r5-05-mf-p3-b-JS3-peek2-a.mp4
+cut/r5/premiere-media/r5-06-mf-t3-a-JS3-top-b.mp4
+cut/r5/premiere-media/r5-07-mf-hn4-a-HN4-a-prices.mp4
+cut/r5/premiere-media/r5-08-mf-m5-b-JS5-mirror-b.mp4
+cut/r5/premiere-media/r5-09-mf-hn6-b-HN6-a-prices.mp4
+cut/r5/preview.mp4
+cut/r5/v-card.mp4
+cut/r5/v-logo.mp4
 malevolent force.prproj
 moodboard/FL4-b.jpg
 moodboard/FL4-b.jpg.prov.json

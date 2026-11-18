@@ -38,12 +38,12 @@
   "timeline": "https://claude.ai/artifact/2xC772Jtzb5LNK5qWYYFFX"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r4/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r4/preview.mp4",
-  "script": "scripts/shorts/malevolent_force_cut_r4.py"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r5/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r5/preview.mp4",
+  "script": "scripts/shorts/malevolent_force_cut_r4.py --round 5 --stabs 7.95,14.0"
  },
  "premiere": {
-  "current": "r2",
+  "current": "r5",
   "r2": {
    "sequence": "short-malevolent-force-1-malevolent-force-r2",
    "guid": "b98b9ff6-fb63-4db2-89c0-1167c1f06cd6",
@@ -53,6 +53,16 @@
    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r2/edl.json",
    "what": "rough cut 2 (logo ending), Jack: build it in Premiere",
    "how": "premiere-plan.py --tag r2; then sliver at 4.17 s removed, shot 2 and the card +1 frame, card and logo Motion Scale 66.67"
+  },
+  "r5": {
+   "sequence": "short-malevolent-force-1-malevolent-force-r5",
+   "guid": "8b8903e9-a5df-4609-8db9-b8ed48971f6a",
+   "bin": "short-malevolent-force-1-malevolent-force-r5",
+   "built": "2026-11-18",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/malevolent force.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/malevolent-force/cut/r5/edl-premiere.json",
+   "what": "rough cut 5: the more-horror cut, strings + stabs only on the hand (Jack: no sound on the figure), prices drawn in the edit, subtle VHS",
+   "how": "shots cut from cut/r5/shots-vhs.mp4 into cut/r5/premiere-media/ (VHS and prices baked in, no handles), premiere-plan.py --tag r5; then v0:7 (mirror) and v0:9 (card) +1 frame to close two rounding gaps"
   }
  }
 }
