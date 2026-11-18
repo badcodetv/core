@@ -31,3 +31,6 @@
 - **2026-11-18, horror round 1:** 16 Unsplash hands (`refs.json`, four searches) and the VHS finish on rough cut 2
   (`scripts/shorts/vhs_finish.sh`, `<media>/cut/vhs-test/`) on a picks page:
   https://claude.ai/artifact/4tizwo1we4aYm9KMtxjbVK (`horror-r1-picks.json`). Strings round to follow.
+- **2026-11-18, Jack on round 1:** "none of the hands are horror like, please try again". **Round 2:** eight horror searches
+  (creepy, horror, zombie, hand on glass, shadow, skeleton, through a door, under the bed), 49 new photos, 20 kept by eye
+  (no skeleton props, no faces, no empty doors; the teal ones first). Same page, round 2.

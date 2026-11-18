@@ -1,14 +1,123 @@
 {
  "title": "Malevolent Force Horror",
- "eyebrow": "The Malevolent Force · more horror · round 1",
- "heading": "More horror: pick the hand, and say yes or no to the tape look",
- "intro": "From the 17 Nov morning call: the force gets more visible, a ghostly hand snatching the price tags. Your library picks: a real Unsplash hand as the reference, a VHS camcorder finish, and suspense strings (the music comes in the next round). Pick one per row and leave a note.",
- "round": 1,
+ "eyebrow": "The Malevolent Force · more horror · round 2",
+ "heading": "More horror: the hand, round 2 (horror hands only)",
+ "intro": "Round 1's hands weren't horror (Jack). Round 2 searched for horror hands only: claw shadows, hands pressed behind frosted glass, a handprint on a misty window, grasping fingers. Teal ones that match the shop come first. Pick one and leave a note; the VHS question from round 1 is still open below.",
+ "round": 2,
  "sections": [
   {
    "h": "The hand",
    "lede": "Real photos from Unsplash; the one you pick goes to Flow as the reference for the hand shots (shot 4, the shelf label, and shot 6, the freezer cards). Darkest first.",
    "groups": [
+    {
+     "slot": "hand-ref-r2",
+     "round": 2,
+     "title": "Which horror hand?",
+     "line": "Pick the hand the ghost's hand should look like. A note can say what to change.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "TOGacYjIEQ8",
+       "src": "unsplash/TOGacYjIEQ8.jpg",
+       "label": "a chair and a table in a dark room · Georgi Kalaydzhiev"
+      },
+      {
+       "id": "u4gDc8rU7ZQ",
+       "src": "unsplash/u4gDc8rU7ZQ.jpg",
+       "label": "persons hand on water · Kahfiara Krisna"
+      },
+      {
+       "id": "M4-xrT1jNwQ",
+       "src": "unsplash/M4-xrT1jNwQ.jpg",
+       "label": "a shadow of a person on a metal surface · Chelsey Marques"
+      },
+      {
+       "id": "NVc5po_BEHI",
+       "src": "unsplash/NVc5po_BEHI.jpg",
+       "label": "person touching frosted glass door · Clem Onojeghuo"
+      },
+      {
+       "id": "hAgwFwSRr1w",
+       "src": "unsplash/hAgwFwSRr1w.jpg",
+       "label": "a black and white photo of two hands in the fog · Palak Trivedi"
+      },
+      {
+       "id": "aSg5OS7FbxY",
+       "src": "unsplash/aSg5OS7FbxY.jpg",
+       "label": "black wooden framed glass window · alex mihu"
+      },
+      {
+       "id": "rOyaiDNvBBU",
+       "src": "unsplash/rOyaiDNvBBU.jpg",
+       "label": "photo of person's hand on wall · MontyLov"
+      },
+      {
+       "id": "JGH0H5IyyM8",
+       "src": "unsplash/JGH0H5IyyM8.jpg",
+       "label": "a silhouette of a hand reaching up into the air · Jonas Jaeken"
+      },
+      {
+       "id": "6s6ck0P8M_Q",
+       "src": "unsplash/6s6ck0P8M_Q.jpg",
+       "label": "grayscale photo of woman raising her hands · Ilona Panych"
+      },
+      {
+       "id": "spNJB-m-M64",
+       "src": "unsplash/spNJB-m-M64.jpg",
+       "label": "persons hand forming heart · Juliano Chaves"
+      },
+      {
+       "id": "IQlaNiHmkAA",
+       "src": "unsplash/IQlaNiHmkAA.jpg",
+       "label": "persons left hand doing peace sign · gryffyn m"
+      },
+      {
+       "id": "-S4OsO0c6Ts",
+       "src": "unsplash/-S4OsO0c6Ts.jpg",
+       "label": "person raising both hands · Nahid Hatami"
+      },
+      {
+       "id": "LjDptLm9xO8",
+       "src": "unsplash/LjDptLm9xO8.jpg",
+       "label": "A hand silhouetted against a bright light with long shadows · Mohamed Marey"
+      },
+      {
+       "id": "Scn5vzk3D2c",
+       "src": "unsplash/Scn5vzk3D2c.jpg",
+       "label": "a person's hand reaching up into the air · PaaZ PG"
+      },
+      {
+       "id": "IvTCN1H4X1k",
+       "src": "unsplash/IvTCN1H4X1k.jpg",
+       "label": "right person's palm · Melchior Damu"
+      },
+      {
+       "id": "4P8G7B-6_kQ",
+       "src": "unsplash/4P8G7B-6_kQ.jpg",
+       "label": "grayscale photo of person lying on bed · Francisco Andreotti"
+      },
+      {
+       "id": "zL7FnUb4FKg",
+       "src": "unsplash/zL7FnUb4FKg.jpg",
+       "label": "white bed linen near brown wooden drawer · Nick Shandra"
+      },
+      {
+       "id": "kKf-Kw0NPOU",
+       "src": "unsplash/kKf-Kw0NPOU.jpg",
+       "label": "a hand holding a light bulb · moon child"
+      },
+      {
+       "id": "BAlUdD_gcbw",
+       "src": "unsplash/BAlUdD_gcbw.jpg",
+       "label": "persons left hand on white surface · Foad Roshan"
+      },
+      {
+       "id": "FsMuoi7IeZg",
+       "src": "unsplash/FsMuoi7IeZg.jpg",
+       "label": "black bird logo on yellow paper · gryffyn m"
+      }
+     ]
+    },
     {
      "slot": "hand-ref",
      "title": "Which hand?",
@@ -95,7 +204,8 @@
        "src": "unsplash/XOLHAGi8oKc.jpg",
        "label": "a black and white photo of a hand print · Andrzej"
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   },
@@ -119,7 +229,8 @@
        "src": "cut/vhs-test/preview-vhs-web.mp4",
        "label": "vhs: with the camcorder finish"
       }
-     ]
+     ],
+     "round": 2
     }
    ]
   }

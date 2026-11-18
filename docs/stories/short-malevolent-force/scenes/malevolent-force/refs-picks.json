@@ -10,121 +10,7 @@
    "groups": [
     {
      "slot": "ref-1",
-     "title": "pale hand reaching in the dark",
-     "line": "Pick the photo whose look this scene should start from.",
-     "kind": "image",
-     "opts": [
-      {
-       "id": "LkPTJo7u6O8",
-       "src": "unsplash/LkPTJo7u6O8.jpg",
-       "label": "human hand reaching out · Jeff Hardi"
-      },
-      {
-       "id": "E55iJtoy-zU",
-       "src": "unsplash/E55iJtoy-zU.jpg",
-       "label": "a hand holding a light in the dark · Rafay Ansari"
-      },
-      {
-       "id": "pLJ97CLuYcU",
-       "src": "unsplash/pLJ97CLuYcU.jpg",
-       "label": "person's right hand · Akira Hojo"
-      },
-      {
-       "id": "792DVvbiBBo",
-       "src": "unsplash/792DVvbiBBo.jpg",
-       "label": "grayscale photo of persons hand · Jorge Rojas"
-      },
-      {
-       "id": "jzdNYQr63S0",
-       "src": "unsplash/jzdNYQr63S0.jpg",
-       "label": "person in black long sleeve shirt raising right hand · Riccardo Mazzoni"
-      },
-      {
-       "id": "PrKE6nWcZZU",
-       "src": "unsplash/PrKE6nWcZZU.jpg",
-       "label": "A hand reaching up from darkness · Tony Chen"
-      }
-     ]
-    },
-    {
-     "slot": "ref-2",
-     "title": "hand reaching out of darkness",
-     "line": "Pick the photo whose look this scene should start from.",
-     "kind": "image",
-     "opts": [
-      {
-       "id": "LkPTJo7u6O8",
-       "src": "unsplash/LkPTJo7u6O8.jpg",
-       "label": "human hand reaching out · Jeff Hardi"
-      },
-      {
-       "id": "pLJ97CLuYcU",
-       "src": "unsplash/pLJ97CLuYcU.jpg",
-       "label": "person's right hand · Akira Hojo"
-      },
-      {
-       "id": "PrKE6nWcZZU",
-       "src": "unsplash/PrKE6nWcZZU.jpg",
-       "label": "A hand reaching up from darkness · Tony Chen"
-      },
-      {
-       "id": "E55iJtoy-zU",
-       "src": "unsplash/E55iJtoy-zU.jpg",
-       "label": "a hand holding a light in the dark · Rafay Ansari"
-      },
-      {
-       "id": "5Nf88T1CU_U",
-       "src": "unsplash/5Nf88T1CU_U.jpg",
-       "label": "A hand reaching up towards a cloudy sky · J Murdoch"
-      },
-      {
-       "id": "wLy8hPgqPGY",
-       "src": "unsplash/wLy8hPgqPGY.jpg",
-       "label": "Hand reaching towards a bright light beam · Mustafi Numann"
-      }
-     ]
-    },
-    {
-     "slot": "ref-3",
-     "title": "hand grabbing",
-     "line": "Pick the photo whose look this scene should start from.",
-     "kind": "image",
-     "opts": [
-      {
-       "id": "gytTQ0ESbtI",
-       "src": "unsplash/gytTQ0ESbtI.jpg",
-       "label": "persons left hand on white textile · Cat Han"
-      },
-      {
-       "id": "792DVvbiBBo",
-       "src": "unsplash/792DVvbiBBo.jpg",
-       "label": "grayscale photo of persons hand · Jorge Rojas"
-      },
-      {
-       "id": "IcycHW9DveY",
-       "src": "unsplash/IcycHW9DveY.jpg",
-       "label": "A human hand reaching upward against a clear blue sky · Sindy Süßengut"
-      },
-      {
-       "id": "iJ2IG8ckCpA",
-       "src": "unsplash/iJ2IG8ckCpA.jpg",
-       "label": "two person's arms · youssef naddam"
-      },
-      {
-       "id": "4qppAIOQjxI",
-       "src": "unsplash/4qppAIOQjxI.jpg",
-       "label": "a black and white photo of a hand reaching up · Meysam Moghimzade"
-      },
-      {
-       "id": "IQGba75-VjY",
-       "src": "unsplash/IQGba75-VjY.jpg",
-       "label": "persons left hand raising up · Hassan Weller"
-      }
-     ]
-    },
-    {
-     "slot": "ref-4",
-     "title": "ghostly hand",
+     "title": "creepy hand",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
@@ -137,6 +23,11 @@
        "id": "4qppAIOQjxI",
        "src": "unsplash/4qppAIOQjxI.jpg",
        "label": "a black and white photo of a hand reaching up · Meysam Moghimzade"
+      },
+      {
+       "id": "rX12B5uX7QM",
+       "src": "unsplash/rX12B5uX7QM.jpg",
+       "label": "a person drowns underwater · Stormseeker"
       },
       {
        "id": "4sLQldRt0sg",
@@ -144,9 +35,47 @@
        "label": "white textile with red stain · Crina Parasca"
       },
       {
-       "id": "XOLHAGi8oKc",
-       "src": "unsplash/XOLHAGi8oKc.jpg",
-       "label": "a black and white photo of a hand print · Andrzej"
+       "id": "zwpAQdsrdR4",
+       "src": "unsplash/zwpAQdsrdR4.jpg",
+       "label": "left human hand with smoke · Gabriel Ramos"
+      },
+      {
+       "id": "IvTCN1H4X1k",
+       "src": "unsplash/IvTCN1H4X1k.jpg",
+       "label": "right person's palm · Melchior Damu"
+      },
+      {
+       "id": "pLJ97CLuYcU",
+       "src": "unsplash/pLJ97CLuYcU.jpg",
+       "label": "person's right hand · Akira Hojo"
+      },
+      {
+       "id": "spNJB-m-M64",
+       "src": "unsplash/spNJB-m-M64.jpg",
+       "label": "persons hand forming heart · Juliano Chaves"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "horror hand",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "9kbaq1xoIr0",
+       "src": "unsplash/9kbaq1xoIr0.jpg",
+       "label": "A clenched fist covered in red liquid dripping against a whi · Valentin Salja"
+      },
+      {
+       "id": "4qppAIOQjxI",
+       "src": "unsplash/4qppAIOQjxI.jpg",
+       "label": "a black and white photo of a hand reaching up · Meysam Moghimzade"
+      },
+      {
+       "id": "aSg5OS7FbxY",
+       "src": "unsplash/aSg5OS7FbxY.jpg",
+       "label": "black wooden framed glass window · alex mihu"
       },
       {
        "id": "zwpAQdsrdR4",
@@ -157,6 +86,309 @@
        "id": "pLJ97CLuYcU",
        "src": "unsplash/pLJ97CLuYcU.jpg",
        "label": "person's right hand · Akira Hojo"
+      },
+      {
+       "id": "Scn5vzk3D2c",
+       "src": "unsplash/Scn5vzk3D2c.jpg",
+       "label": "a person's hand reaching up into the air · PaaZ PG"
+      },
+      {
+       "id": "spNJB-m-M64",
+       "src": "unsplash/spNJB-m-M64.jpg",
+       "label": "persons hand forming heart · Juliano Chaves"
+      },
+      {
+       "id": "u4gDc8rU7ZQ",
+       "src": "unsplash/u4gDc8rU7ZQ.jpg",
+       "label": "persons hand on water · Kahfiara Krisna"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "zombie hand",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "_fWOxKmNBww",
+       "src": "unsplash/_fWOxKmNBww.jpg",
+       "label": "A bloodied hand holding a small purple flower against a dark · Mohamed Nohassi"
+      },
+      {
+       "id": "spNJB-m-M64",
+       "src": "unsplash/spNJB-m-M64.jpg",
+       "label": "persons hand forming heart · Juliano Chaves"
+      },
+      {
+       "id": "8j6ZwO3eIfA",
+       "src": "unsplash/8j6ZwO3eIfA.jpg",
+       "label": "a man holding a woman in the dark · Iluha Zavaley"
+      },
+      {
+       "id": "ixqCOdch5J4",
+       "src": "unsplash/ixqCOdch5J4.jpg",
+       "label": "a hand that is laying on the ground · CrowN"
+      },
+      {
+       "id": "yga47Oc9AxQ",
+       "src": "unsplash/yga47Oc9AxQ.jpg",
+       "label": "a person's hand resting on the ground in the grass · Cash Macanaya"
+      },
+      {
+       "id": "ItHwRPwrf9s",
+       "src": "unsplash/ItHwRPwrf9s.jpg",
+       "label": "a white skull on a black surface · Carlos Felipe Ramírez Mesa"
+      },
+      {
+       "id": "YwTCAkY_DVw",
+       "src": "unsplash/YwTCAkY_DVw.jpg",
+       "label": "a skeleton with a helmet · Carlos Felipe Ramírez Mesa"
+      },
+      {
+       "id": "88bVwPKdlCA",
+       "src": "unsplash/88bVwPKdlCA.jpg",
+       "label": "a person wearing a mask · Carlos Felipe Ramírez Mesa"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "hand on glass horror",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "aSg5OS7FbxY",
+       "src": "unsplash/aSg5OS7FbxY.jpg",
+       "label": "black wooden framed glass window · alex mihu"
+      },
+      {
+       "id": "rOyaiDNvBBU",
+       "src": "unsplash/rOyaiDNvBBU.jpg",
+       "label": "photo of person's hand on wall · MontyLov"
+      },
+      {
+       "id": "TOGacYjIEQ8",
+       "src": "unsplash/TOGacYjIEQ8.jpg",
+       "label": "a chair and a table in a dark room · Georgi Kalaydzhiev"
+      },
+      {
+       "id": "Scn5vzk3D2c",
+       "src": "unsplash/Scn5vzk3D2c.jpg",
+       "label": "a person's hand reaching up into the air · PaaZ PG"
+      },
+      {
+       "id": "u4gDc8rU7ZQ",
+       "src": "unsplash/u4gDc8rU7ZQ.jpg",
+       "label": "persons hand on water · Kahfiara Krisna"
+      },
+      {
+       "id": "gKzJ8QBnGZo",
+       "src": "unsplash/gKzJ8QBnGZo.jpg",
+       "label": "a person wearing a creepy mask with their finger in their mo · Rob Griffin"
+      },
+      {
+       "id": "hAgwFwSRr1w",
+       "src": "unsplash/hAgwFwSRr1w.jpg",
+       "label": "a black and white photo of two hands in the fog · Palak Trivedi"
+      },
+      {
+       "id": "NVc5po_BEHI",
+       "src": "unsplash/NVc5po_BEHI.jpg",
+       "label": "person touching frosted glass door · Clem Onojeghuo"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "scary hand shadow",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "FsMuoi7IeZg",
+       "src": "unsplash/FsMuoi7IeZg.jpg",
+       "label": "black bird logo on yellow paper · gryffyn m"
+      },
+      {
+       "id": "BAlUdD_gcbw",
+       "src": "unsplash/BAlUdD_gcbw.jpg",
+       "label": "persons left hand on white surface · Foad Roshan"
+      },
+      {
+       "id": "uxZtYwHxLpQ",
+       "src": "unsplash/uxZtYwHxLpQ.jpg",
+       "label": "a shadow of a hand on a brick floor · Hayley Murray"
+      },
+      {
+       "id": "kKf-Kw0NPOU",
+       "src": "unsplash/kKf-Kw0NPOU.jpg",
+       "label": "a hand holding a light bulb · moon child"
+      },
+      {
+       "id": "JGH0H5IyyM8",
+       "src": "unsplash/JGH0H5IyyM8.jpg",
+       "label": "a silhouette of a hand reaching up into the air · Jonas Jaeken"
+      },
+      {
+       "id": "M4-xrT1jNwQ",
+       "src": "unsplash/M4-xrT1jNwQ.jpg",
+       "label": "a shadow of a person on a metal surface · Chelsey Marques"
+      },
+      {
+       "id": "LjDptLm9xO8",
+       "src": "unsplash/LjDptLm9xO8.jpg",
+       "label": "A hand silhouetted against a bright light with long shadows · Mohamed Marey"
+      },
+      {
+       "id": "IQlaNiHmkAA",
+       "src": "unsplash/IQlaNiHmkAA.jpg",
+       "label": "persons left hand doing peace sign · gryffyn m"
+      }
+     ]
+    },
+    {
+     "slot": "ref-6",
+     "title": "skeleton hand",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "-S4OsO0c6Ts",
+       "src": "unsplash/-S4OsO0c6Ts.jpg",
+       "label": "person raising both hands · Nahid Hatami"
+      },
+      {
+       "id": "AxGJf-W8erg",
+       "src": "unsplash/AxGJf-W8erg.jpg",
+       "label": "An anatomical drawing of the human hand bones and nerves · Europeana"
+      },
+      {
+       "id": "zyydGXyIRnI",
+       "src": "unsplash/zyydGXyIRnI.jpg",
+       "label": "Four anatomical views of a human hand skeleton · Europeana"
+      },
+      {
+       "id": "k5I4flX0l5Q",
+       "src": "unsplash/k5I4flX0l5Q.jpg",
+       "label": "a painting of a hand reaching towards a red object · 8machine _"
+      },
+      {
+       "id": "88bVwPKdlCA",
+       "src": "unsplash/88bVwPKdlCA.jpg",
+       "label": "a person wearing a mask · Carlos Felipe Ramírez Mesa"
+      },
+      {
+       "id": "CoW0oC1tEfY",
+       "src": "unsplash/CoW0oC1tEfY.jpg",
+       "label": "a black sign with a white cross on it · Abigail Silver"
+      },
+      {
+       "id": "MWzmr0DyOSI",
+       "src": "unsplash/MWzmr0DyOSI.jpg",
+       "label": "Anatomical human skeleton model with colored muscles · Andre da Silva"
+      },
+      {
+       "id": "aiZHkceGrLI",
+       "src": "unsplash/aiZHkceGrLI.jpg",
+       "label": "a skeleton of a bird · Carlos Felipe Ramírez Mesa"
+      }
+     ]
+    },
+    {
+     "slot": "ref-7",
+     "title": "hand reaching through door dark",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "vu0fO-dcG54",
+       "src": "unsplash/vu0fO-dcG54.jpg",
+       "label": "a black and white photo of a clock in a dark room · Milan Solanki"
+      },
+      {
+       "id": "hmgZJxujXq8",
+       "src": "unsplash/hmgZJxujXq8.jpg",
+       "label": "a person in a black robe standing in front of a door · Anton Malanin"
+      },
+      {
+       "id": "59FY_W5GN_0",
+       "src": "unsplash/59FY_W5GN_0.jpg",
+       "label": "A closed door outlined by a thin sliver of warm orange light · Sebastian Schuster"
+      },
+      {
+       "id": "ouZiur2pR48",
+       "src": "unsplash/ouZiur2pR48.jpg",
+       "label": "A beam of light through an open doorway onto patterned floor · Luciano Donoso"
+      },
+      {
+       "id": "JxTL_Oxww5M",
+       "src": "unsplash/JxTL_Oxww5M.jpg",
+       "label": "Dark wooden doors with warm light shining through · M. Rokhman Az-Ziqro N.S."
+      },
+      {
+       "id": "M0yKKN5TyiI",
+       "src": "unsplash/M0yKKN5TyiI.jpg",
+       "label": "a door is open in a dark room · Dubenkoff"
+      },
+      {
+       "id": "LooDj2Julu0",
+       "src": "unsplash/LooDj2Julu0.jpg",
+       "label": "A slightly open door in a dimly lit hallway · Ben Kim"
+      },
+      {
+       "id": "HW8OCGtgJH0",
+       "src": "unsplash/HW8OCGtgJH0.jpg",
+       "label": "an airplane is flying through the sky through a window · yechan park"
+      }
+     ]
+    },
+    {
+     "slot": "ref-8",
+     "title": "hand under bed horror",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Scn5vzk3D2c",
+       "src": "unsplash/Scn5vzk3D2c.jpg",
+       "label": "a person's hand reaching up into the air · PaaZ PG"
+      },
+      {
+       "id": "v5oafxFZQqc",
+       "src": "unsplash/v5oafxFZQqc.jpg",
+       "label": "woman lying on bed · Hayley Murray"
+      },
+      {
+       "id": "6s6ck0P8M_Q",
+       "src": "unsplash/6s6ck0P8M_Q.jpg",
+       "label": "grayscale photo of woman raising her hands · Ilona Panych"
+      },
+      {
+       "id": "AVEndOkflCE",
+       "src": "unsplash/AVEndOkflCE.jpg",
+       "label": "persons hand on white textile · Valeriia Miller"
+      },
+      {
+       "id": "zL7FnUb4FKg",
+       "src": "unsplash/zL7FnUb4FKg.jpg",
+       "label": "white bed linen near brown wooden drawer · Nick Shandra"
+      },
+      {
+       "id": "4P8G7B-6_kQ",
+       "src": "unsplash/4P8G7B-6_kQ.jpg",
+       "label": "grayscale photo of person lying on bed · Francisco Andreotti"
+      },
+      {
+       "id": "XoTyUsCI_1w",
+       "src": "unsplash/XoTyUsCI_1w.jpg",
+       "label": "persons hand on blue textile · Masha Raymers"
+      },
+      {
+       "id": "xlPKDPvEs-Y",
+       "src": "unsplash/xlPKDPvEs-Y.jpg",
+       "label": "persons left hand on black textile · MAK"
       }
      ]
     }
