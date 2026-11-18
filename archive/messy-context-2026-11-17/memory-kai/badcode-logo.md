@@ -1,0 +1,29 @@
+---
+name: badcode-logo
+description: "BadCode logo — **2026-10-19 RULED (final): bench Saved version 5 = 2f6bogo164mzzi4lzz00 — ring 15% + red triangle, DRAWN letters (Kai: same font always), SOLID red o**; 2026-10-15 triangle save b0dhojp15efdyw7rboj6 (ring 8%, ring+triangle o) superseded; dot logo archived. Was: 2026-09-29 RULED: 'The Look' (ring + off-centre red dot) + round lowercase badcode with a solid red o; canon docs/brand/README.md; brace logo archived"
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: 5bc732ff-3da3-4f20-aa22-43414a1f6474
+  modified: 2026-09-29T14:45:21.218Z
+---
+
+**2026-10-19 — Kai: "I'm just going to say that's our logo."** Bench "Saved version 5" (= newest save; the bench numbers saves oldest=1) id 2f6bogo164mzzi4lzz00: ring 0.15, triangle unchanged (tSize 0.36, tPush 0.61, tAngle/tRot 55, tRound 0.55), ck 0.35, font drawn, oStyle solid. Kai: ring thickness, triangle, name beside the ring, the o (not a triangle) all good; "very important that we use the same font" and he likes the drawn letters. build-logo.mjs SET.ring → 0.15 and the o → solid red circle; README + CLAUDE.md updated; uncommitted at time of writing.
+
+**2026-10-15 — Kai: the triangle is canonical "for a minute"** (provisional; expect more bench saves). Bench save b0dhojp15efdyw7rboj6: ring 0.08, tSize 0.36, tPush 0.61, tAngle 55, tRot 55, tRound 0.55, ck 0.35, solid red o. Same red triangle is the eyepatch of the white-balaclava Money For Something host (BadCode personified, TTS voice). Bench now has a Triangle/Dot switch + drag (Shift = rotate). Dot logo + its generator archived: docs/brand/archive/2026-09-29-dot/, scripts/brand/archive/build-logo-dot.mjs. Committed f82f616. **Same day: the name's o = the icon (ring at letter line weight + triangle)** — Kai: a bare triangle o "reads as an A" (badcade); solid dot o superseded. Bench v4 also has a letters picker (drawn + 9 Google fonts); font NOT changed, still drawn letters. **Same day: the name's o = the icon (ring at letter line weight + triangle)** — Kai: a bare triangle o "reads as an A" (badcade); solid dot o superseded. Bench v4 also has a letters picker (drawn + 9 Google fonts); font NOT changed, still drawn letters.
+
+**2026-09-29 RULED by Kai — 'The Look' is the logo** ("I love this… it's perfect"): settings ring 0.17, dot 0.245, push 0.51, angle 55°, red #cc2b37, lw 0.30, tr 0.26, ck 0.42; canon docs/brand/README.md; files docs/brand/logo/ from scripts/brand/build-logo.mjs (sharp, no font). Rules: dot never centred; ring-with-dot never inside the word (Badoo 2006–17); <48px use favicon files. Open: Jack's say, UK IPO search, Big Brother eyes look, wire into apps/web, Flow mock-ups. Pushed to origin/main as dfd5b21 (cherry-pick of local 382053e; local main still diverged — camping.md conflict owed).
+
+**SUPERSEDED — the brace logo (archived to docs/brand/archive/2026-09-13-brace/):** picked 2026-09-13 after a four-round artifact design session (https://claude.ai/code/artifact/9deb86d9-a05b-4360-84ff-a894e925edaf): tuning fork → fork rotated 90° into a C → curly brace `{` → hand-tuned sliders. Final: depth 0.59, point 0.54, dot 0.50, red #cc2b37 top, blue #2696d4 bottom, IBM Plex Mono SemiBold "Bad{ode". Kai liked it **on white**. Canon: docs/brand/README.md; generator scripts/brand/build-logo.mjs (needs opentype.js + the Plex Mono TTF). Regenerate from the settings, never hand-edit SVGs. Not wired into apps/web.
+
+**2026-09-29 — Kai reopened it.** Kai's words: the brace "feels very obvious and very cliché"; wants a logo "simple and very unmistakably bad code"; keeps seeing "a terminator red dot, somewhat threatening"; BadCode is NOT "a friendly, happy vibe" and the logo should "lean into that as a character".
+
+**What was done:** 16-agent Sonnet web sweep (123 searches) + three rounds of rough sketches → `design/research/2026-09-29-logo/` (README index, 16 briefs, `direction.md`, `sketches/direction-sheet.png`).
+
+**Proposed direction (NOT ruled): "End of the Line"** — a thin line of cold light from the top edge ending in one red lamp; wordmark rule "the O is the lamp"; two-second ident "the drop" (line falls, silence, lamp lights on the sub-bass). Alternatives offered: B "The Look" (side-eye machine eye), C "The Notice" (type + numbering only).
+
+**Why:** it is the house blade-of-light image plus the red the film rations; six agents reached it unprompted; a bare red dot is un-ownable (Leica/HAL/Target) so the dot must be *doing* something; an eye reads as surveillance to [[target-reader-pivot]]'s reader, so the light is framed as the warner, not the watcher.
+
+**2026-09-29 later — Kai PICKED after the Flow round:** B "The Look" (ring + solid red dot off-centre, upper right; "a bit like a Death Star… an eyeball") as the icon, ring line thicker; name = round lowercase "badcode" with the o a fully filled red dot. Overturns the A/caps recommendation. Sheet: design/research/2026-09-29-logo/sketches/look-sheet.png; log in concepts.md. Ring weight RULED "thicker 3" (21/160 of radius). Collision checks done (no match; never put ring-with-dot inside the word = Badoo 2006–17). Logo bench artifact https://claude.ai/artifact/4Tf8nXY8RmRokTevDQ7cWe — Kai saves versions to its db collection `saves`; build final SVGs by script from the chosen save.
+
+**How to apply:** don't call the new direction decided — seven decisions are owed in `direction.md` §12 (direction, lamp-vs-eye, caps-vs-lowercase, colour, SOLD sticker, "8 BC", Jack's say). Design iteration is planned on Opus with the frontend-design skill. Retiring blue would close the UK party-colour risk that was raised twice and never ruled. Manual checks owed: youtube.com/@badcode (taken, unread), the BADCODE streetwear label's logo, UK IPO register. Never a BC monogram (Bad Company's D&B logo) or a lowercase b with a red bowl (Beats).
