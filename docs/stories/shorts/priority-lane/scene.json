@@ -66,10 +66,10 @@
   "timeline_r1": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r5/edl.json",
-  "by": "scripts/shorts/priority_lane_cut_r5.py",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r5/preview.mp4",
-  "script": "python3 scripts/shorts/priority_lane_cut_r5.py"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r6/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r6/preview.mp4",
+  "by": "scripts/shorts/priority_lane_cut_r6.py",
+  "script": "python3 scripts/shorts/priority_lane_cut_r6.py [--finish night35|dashcam|bleach]"
  },
  "premiere": {
   "current": "r4",

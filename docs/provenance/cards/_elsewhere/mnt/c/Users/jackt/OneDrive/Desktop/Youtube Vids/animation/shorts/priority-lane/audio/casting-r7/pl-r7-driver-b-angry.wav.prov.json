@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r7/pl-r7-driver-b-angry.wav",
+ "made": "2026-11-19T11:34:40+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ai-studio",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "why": "driver round 2 (Jack: 'this needs to be said angrily')",
+ "prompt": "Two minutes out! Get the fuck out of the way!",
+ "settings": {
+  "voice": "voice_lptrg2knt9wt",
+  "style": "angry, shouting"
+ }
+}

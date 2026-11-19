@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS21-b.jpg",
+ "made": "2026-11-19T11:43:13.248Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "A new photo of these same two paramedics and this same patient, taken from INSIDE the moving ambulance: the photographer sits on the bench seat at the back, the rear doors shut behind them and out of shot. We look forward along the stretcher, past the paramedics working on the patient, towards the cab and the windscreen, where blue light flickers. Same uniforms, masks, gloves, monitor and cold strip lights, same 35 mm night film look. The whole space is closed in; no rain falls inside.",
+ "model": "Nano Banana 2.1",
+ "why": "docs/stories/shorts/priority-lane: Jack 2026-11-19 at 6:19, back doors open while driving; LS20 kept the outside view",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/pl-refs/LS18-b.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/pl-refs/LS18-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "02e3d551-d8fd-4c65-b158-69a1adbb5849"
+}

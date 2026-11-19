@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r20-LG-LG20-a.mp4",
+ "made": "2026-11-19T11:46:47+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A dark monitor screen at night. A bright green line sweeps steadily from left to right across the black glass, drawing two last sharp peaks, then it carries on as one steady horizontal line all the way to the right edge. The green glow flickers faintly. Nothing else on the screen changes. No numbers, no text, no people. The camera does not move.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LG20-a.jpg",
+ "why": "Jack 2026-11-19: 'do the flatline style logo animation in Flow… it can just show the screen and then cut to it' (trace only; the official logo is laid on in the edit)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LG20-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "r20-LG",
+  "frame": 7,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T11:45:40.010Z"
+ }
+}

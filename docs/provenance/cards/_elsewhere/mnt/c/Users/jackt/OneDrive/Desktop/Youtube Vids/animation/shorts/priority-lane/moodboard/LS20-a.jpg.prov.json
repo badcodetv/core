@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS20-a.jpg",
+ "made": "2026-11-19T11:41:13.481Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep the same paramedics, the same patient on the stretcher, the same interior, light and film look. Change only this: the two rear doors are shut. We look at the crew from inside the patient compartment, from just in front of the closed rear doors, with the rain outside on the small rear-door windows at the edges of the frame and no rain falling in front of us. Nothing else changes.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-19 at 6:19: 'they're driving with the back door open, it makes no sense'",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/pl-refs/LS18-b.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/pl-refs/LS18-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "17b5fa15-5bd4-4b7a-bab8-beef947563c3"
+}

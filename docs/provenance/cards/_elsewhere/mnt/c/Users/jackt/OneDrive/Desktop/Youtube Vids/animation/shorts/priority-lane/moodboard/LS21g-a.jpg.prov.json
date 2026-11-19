@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS21g-a.jpg",
+ "made": "2026-11-19T11:42:57.163Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "Inside the back of a UK ambulance racing through the city at night, seen from the bench seat at the rear with the back doors shut. Two paramedics in dark green uniforms, surgical masks and blue gloves lean over a man on the stretcher; one presses on his chest, the other reaches for the heart monitor on the wall, its green trace racing. Hard cold strip lights overhead, blue emergency light flickering through the small cab window ahead. The compartment sways; slight motion blur on their hands. Real 35 mm night film photograph, grainy, a little underexposed, handheld.",
+ "model": "Nano Banana 2.1",
+ "why": "docs/stories/shorts/priority-lane: Jack 2026-11-19 at 6:19; a fresh still from inside",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c488ec0b-ff9b-4cb8-aeb7-2bc34779daf7"
+}

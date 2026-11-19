@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r20-A-LS21-b.mp4",
+ "made": "2026-11-19T11:45:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Inside the back of a speeding ambulance at night, the rear doors shut. The paramedic on the left keeps pressing hard and fast on the patient's chest; the paramedic on the right works the monitor on the wall, its green trace racing. The whole compartment sways and jolts with the road, cables swinging. Blue light flickers through the windscreen far ahead. Fast hands smear with natural motion blur. One continuous shot, no cuts, no text. The camera does not move.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS21-b.jpg",
+ "why": "Jack 2026-11-19 at 6:19: 'they're driving with the back door open, it makes no sense' (LS21-b: inside, doors shut)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/LS21-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "r20-A",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T11:44:46.398Z"
+ }
+}
