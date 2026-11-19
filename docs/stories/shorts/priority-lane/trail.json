@@ -450,5 +450,13 @@
   "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
   "what": "Voice recast round 6 (casting r7): 5 roles x 4 voices, 2 library + 2 designed, plain on gemini-3.8-flash-tts, vs the cut's voices; the 12 score takes shown again",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/shorts/priority-lane/voices/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-19T11:50:47+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Rough cut 6: all voices recast, score c2, doors shut (LS21-b), no food (BM20-a), flatline end card from Flow (LG20-a) with the official logo; 29.2 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
  }
 ]
