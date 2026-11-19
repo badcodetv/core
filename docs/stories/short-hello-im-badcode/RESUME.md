@@ -18,10 +18,10 @@ reveal f at 33.75 s, captions, the camcorder stamp and the loop). Logo reveals: 
 
 **Next:**
 1. Line 1 listen check still open: the "Ahhh" may sound like "Nah".
-2. **Reel done in rough cut 6** (Jack's round-11 picks; no Flow stills left). Next: read the timeline round-6 notes (dump `notes` into
-   `feedback/timeline-r6/`). Before the final export: fetch the full-size originals of A04, A05 (Commons) and the A29 video (pick a clean
-   8 s frame or a moving stretch) when Wikimedia stops returning 429 (direct URLs in `research/footage-automation-shortlist.md`).
-   Credits for the description: in the cut's `edl.json` flags.
+2. **Reel done in rough cut 6** (Jack's round-11 picks; no Flow stills left). Checked 2026-11-19: the timeline page has no notes
+   since round 5 and the picks page none since round 11, so rough cut 6 is unwatched. The Commons originals are **not needed**: the
+   copies in the cut are A04 1920 px (original 2259), A05 3840 px (original 4000), A29 1920x1080 (the video's full size). Open for Jack:
+   A29 as the 8 s still or a moving stretch. Credits for the description: in the cut's `edl.json` flags.
 3. Done in rough cut 5: captions, date stamp, loop, logo f. Jack: forget where "what to do next" leads; no new reel sound.
    Open: the future year on the stamp (2049 is a guess).
 4. Then Premiere (new sequence), Drive (agreed list), gatekeeper before anything goes out. Nothing is uploaded yet.
