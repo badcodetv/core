@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F7-vibe2-a.jpg",
+ "made": "2026-11-19T16:24:48.808Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Image 1 is the place: keep this red-brick rowhouse, bare tree at left, brick stoop with steel rails, flat winter daylight. Image 2 is the man: use only the masked man in the baggy beige suit, black roll-neck, dark cap. He stands ON the stoop's steps in front of the open steel gate, full figure seen from the sidewalk, one foot a step higher than the other, right glove pointing at the lens, left hand on a corded mic, masked face to camera. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Grainy 1990s rap-video film still.",
+ "model": "Nano Banana 2.1",
+ "why": "docs/stories/short-ten-economic-commandments: Jack's notes on figure round 6, 2026-11-19",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/U5-vibe2.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/U5-vibe2.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/RU4-3-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "8fe0548e-c2e6-4ae3-b2d4-158bbd136d54"
+}

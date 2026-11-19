@@ -54,5 +54,13 @@
   "url": "https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf",
   "what": "Round 3 on the stills page: BadCode rapping in 10 locations (20 new Flow stills made from Jack's photos as layout guides) + 6 subtle finishes",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments/stills-r5-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-19T16:28:24+00:00",
+  "stage": "picks",
+  "round": 7,
+  "url": "https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf",
+  "what": "Round 4 on the stills page: Empire State top, stoop on the steps, Wall Street sign back, bodega sign cleaned; five lights filters",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments/stills-r5-picks.json <out.html>"
  }
 ]

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F7-r3-press2-a.jpg",
+ "made": "2026-11-19T16:28:03+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "pil",
+ "tool": "PIL ImageDraw (DejaVu Sans Bold)",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F6-r3-press2-a.jpg",
+ "why": "Jack: put the Wall Street sign back; Flow edit refused twice (REFERENCE_COPY_ONLY), so lettered by hand"
+}

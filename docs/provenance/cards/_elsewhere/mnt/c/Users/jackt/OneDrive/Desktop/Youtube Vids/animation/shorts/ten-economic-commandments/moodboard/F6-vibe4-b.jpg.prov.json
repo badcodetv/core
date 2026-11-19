@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F6-vibe4-b.jpg",
+ "made": "2026-11-19T16:14:27.780Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Image 1 is the place: keep this rusty brown metal door with purple and white graffiti swirls, the concrete step and sidewalk, bright flat daylight. Image 2 is the man: use only the masked man in the baggy beige suit, black roll-neck, dark cap. He walks past the door mid-stride, the only person in frame, body in profile, masked face turned to camera, framed head to shoes, a plain silver boombox swinging from his left glove, right glove pointing at the lens. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Grainy 1990s rap-video film still.",
+ "model": "Nano Banana 2.1",
+ "why": "docs/stories/short-ten-economic-commandments: Jack 2026-11-19 'a lot of these locations should have the bad guy in it, rapping'",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/U5-vibe4.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/U5-vibe4.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/RU4-3-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "62238723-0e84-40f9-a6e0-d852e7b4a5ff"
+}

@@ -10,7 +10,83 @@
    "groups": [
     {
      "slot": "ref-1",
-     "title": "new york sunrise skyline",
+     "title": "empire state building top spire",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "VedK8_UlmkY",
+       "src": "unsplash/VedK8_UlmkY.jpg",
+       "label": "The Empire State Building in New York City under a pale cres · Ben Dumond"
+      },
+      {
+       "id": "fM_2IoBf-Nc",
+       "src": "unsplash/fM_2IoBf-Nc.jpg",
+       "label": "high rise buildings during daytime · Guille Sánchez"
+      },
+      {
+       "id": "c_4lnBjQBPc",
+       "src": "unsplash/c_4lnBjQBPc.jpg",
+       "label": "brown concrete building under blue sky during daytime · Juan Pablo Mascanfroni"
+      },
+      {
+       "id": "mt1XnBeaQEE",
+       "src": "unsplash/mt1XnBeaQEE.jpg",
+       "label": "grayscale photo of building · Jonathan Pease"
+      },
+      {
+       "id": "bJyQu2omalY",
+       "src": "unsplash/bJyQu2omalY.jpg",
+       "label": "low-angle photography of white concrete building tower · Nicole Padin"
+      },
+      {
+       "id": "0VpT7AjISK4",
+       "src": "unsplash/0VpT7AjISK4.jpg",
+       "label": "low-angle photography of curtain wall building · Chris Czermak"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "empire state building observation deck",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "dewrlOeh7Ko",
+       "src": "unsplash/dewrlOeh7Ko.jpg",
+       "label": "an aerial view of a city with tall buildings · Filipe Freitas"
+      },
+      {
+       "id": "QB4is6tulxE",
+       "src": "unsplash/QB4is6tulxE.jpg",
+       "label": "a city with tall buildings · Tobias Reich"
+      },
+      {
+       "id": "EIaicA9ngik",
+       "src": "unsplash/EIaicA9ngik.jpg",
+       "label": "a city with many tall buildings · Tobias Reich"
+      },
+      {
+       "id": "PtgP1w1p_mc",
+       "src": "unsplash/PtgP1w1p_mc.jpg",
+       "label": "a view of a city at night from the top of a building · Jacob Fryer"
+      },
+      {
+       "id": "o4hc0kNCg74",
+       "src": "unsplash/o4hc0kNCg74.jpg",
+       "label": "the empire building lit up at night in new york city · Valeriia Neganova"
+      },
+      {
+       "id": "R00wBXxtvig",
+       "src": "unsplash/R00wBXxtvig.jpg",
+       "label": "the top of a building lit up at night · Valeriia Neganova"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "new york rooftop night skyline empire state",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
@@ -20,57 +96,29 @@
        "label": "Empire State Building, New York at night · Timo Wagner"
       },
       {
-       "id": "YcqXpi4yVcw",
-       "src": "unsplash/YcqXpi4yVcw.jpg",
-       "label": "city skyline across body of water during daytime · Julien Maculan"
+       "id": "iygYE1CQnd4",
+       "src": "unsplash/iygYE1CQnd4.jpg",
+       "label": "high rise buildings during night time · Christian Di Fede"
       },
       {
-       "id": "bK6Fr5PoplI",
-       "src": "unsplash/bK6Fr5PoplI.jpg",
-       "label": "New york city skyline with one world trade center · Katie Mukhina"
+       "id": "FXKohzaR3Uo",
+       "src": "unsplash/FXKohzaR3Uo.jpg",
+       "label": "a city skyline at night with a lit up skyscraper · Ryan Geller"
       },
       {
-       "id": "fuvvJ2W43gM",
-       "src": "unsplash/fuvvJ2W43gM.jpg",
-       "label": "a city skyline at sunset · Theo"
+       "id": "yK1n9by1NtE",
+       "src": "unsplash/yK1n9by1NtE.jpg",
+       "label": "a view of the empire building at night · Meadow Marie"
       },
       {
-       "id": "8gWXf45We4Q",
-       "src": "unsplash/8gWXf45We4Q.jpg",
-       "label": "a city street filled with lots of traffic at sunset · Aditya Chinchure"
-      }
-     ]
-    },
-    {
-     "slot": "ref-2",
-     "title": "open empty hands",
-     "line": "Pick the photo whose look this scene should start from.",
-     "kind": "image",
-     "opts": [
-      {
-       "id": "se3tHNszbkM",
-       "src": "unsplash/se3tHNszbkM.jpg",
-       "label": "A hand reaching toward a bright low sun in a warm hazy sky · Billy Pasco"
+       "id": "A_tEqbUkCtI",
+       "src": "unsplash/A_tEqbUkCtI.jpg",
+       "label": "aerial view of city buildings during sunset · Nirmal Rajendharkumar"
       },
       {
-       "id": "f9IR_6hg0Qo",
-       "src": "unsplash/f9IR_6hg0Qo.jpg",
-       "label": "persons hand with white nail polish · A. C."
-      },
-      {
-       "id": "QyCH5jwrD_A",
-       "src": "unsplash/QyCH5jwrD_A.jpg",
-       "label": "person's left palm · Kira auf der Heide"
-      },
-      {
-       "id": "2-612OQxktw",
-       "src": "unsplash/2-612OQxktw.jpg",
-       "label": "persons left hand on white wall · Joel Timothy"
-      },
-      {
-       "id": "fI4gfcuHoxU",
-       "src": "unsplash/fI4gfcuHoxU.jpg",
-       "label": "person with black tattoo on right hand · Gabriela Fechet"
+       "id": "6rCXTrzfehQ",
+       "src": "unsplash/6rCXTrzfehQ.jpg",
+       "label": "a view of a city at night from the top of a building · Nikoloz Gachechiladze"
       }
      ]
     }

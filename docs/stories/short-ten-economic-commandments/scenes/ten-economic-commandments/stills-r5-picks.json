@@ -1,9 +1,138 @@
 {
  "title": "Ten Commandments Stills",
  "eyebrow": "BadCode Shorts · Ten Economic Commandments · real photos (Unsplash)",
- "heading": "BadCode on location, and subtler filters",
- "intro": "Round 3. Your locations with BadCode rapping in them: new pictures made from your photos (an AI figure is never pasted into a real photo), two versions each. And six subtler filters. Pick the ones you want and I'll animate them; rounds 1-2 are folded below.",
+ "heading": "Fixes and filters with lots of lights",
+ "intro": "Round 4, your notes on round 3: the Empire State top, the stoop steps, the Wall Street sign back, the bodega sign cleaned, and five filters that throw light everywhere. Your other picks (columns b, walkway b, boombox b, court a, taxi a, fire escape b) are kept; I animate everything once these are picked.",
  "sections": [
+  {
+   "h": "Round 4",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "finish-lights",
+     "round": 4,
+     "title": "Filters, round 3: lots of lights",
+     "line": "Your note: \"lots of lights, kind of like Taxi Driver, kind of overwhelming\". On neon night shots (the bodega, the walkway, the skyline).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "none",
+       "src": "finish3/none.mp4",
+       "label": "none: as it is",
+       "warn": ""
+      },
+      {
+       "id": "neonglow",
+       "src": "finish3/neonglow.mp4",
+       "label": "neonglow: the lights flood out",
+       "warn": ""
+      },
+      {
+       "id": "streaks",
+       "src": "finish3/streaks.mp4",
+       "label": "streaks: light streaks",
+       "warn": ""
+      },
+      {
+       "id": "halation",
+       "src": "finish3/halation.mp4",
+       "label": "halation: red-orange burn round the lights",
+       "warn": ""
+      },
+      {
+       "id": "bokeh",
+       "src": "finish3/bokeh.mp4",
+       "label": "bokeh: huge soft blooms of light",
+       "warn": ""
+      },
+      {
+       "id": "nightfever",
+       "src": "finish3/nightfever.mp4",
+       "label": "nightfever: all of it at once",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig7-fix1",
+     "round": 4,
+     "title": "BadCode on top of the Empire State (redone)",
+     "line": "Your note: actually on top of the Empire State; built from a real Unsplash photo of the lit top.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig7/F7-fix1-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig7/F7-fix1-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig7-vibe2",
+     "round": 4,
+     "title": "Stoop (redone)",
+     "line": "Your note: \"these should be on the steps\". b is up on the steps; a stayed at the bottom.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig7/F7-vibe2-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig7/F7-vibe2-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig7-r3",
+     "round": 4,
+     "title": "Wall Street, sign back",
+     "line": "Your pick a, with the Wall Street sign on the column again.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig7/F7-r3-press2-a.jpg",
+       "label": "a + sign",
+       "warn": "Flow refused the edit twice, so the sign is lettered in by hand"
+      }
+     ]
+    },
+    {
+     "slot": "fig7-vibe6",
+     "round": 4,
+     "title": "Bodega, sign cleaned",
+     "line": "Your pick b with the shop sign turned into abstract neon, no words.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig7/F7-vibe6-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig7/F7-vibe6-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 3",
    "lede": "",
@@ -1780,5 +1909,5 @@
    ]
   }
  ],
- "round": 3
+ "round": 4
 }

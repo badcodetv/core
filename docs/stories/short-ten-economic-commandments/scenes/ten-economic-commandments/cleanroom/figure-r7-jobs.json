@@ -1,0 +1,56 @@
+[
+ {
+  "kind": "edit",
+  "key": "F7-fix1",
+  "model": "Nano Banana 2.1",
+  "aspect": "9:16",
+  "numOutputs": 2,
+  "referenceImages": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/ESB-top.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/RU4-3-a.jpg"
+  ],
+  "outPath": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F7-fix1.jpg",
+  "why": "docs/stories/short-ten-economic-commandments: Jack's notes on figure round 6, 2026-11-19",
+  "prompt": "Image 1 is the place: the lit top of the Empire State Building at night, the spire rising from the glowing crown against a deep teal sky. Image 2 is the man: use only the masked man in the baggy beige suit, black roll-neck, dark cap. He stands on the building's top terrace just below the spire, seen waist up and close, the city lights far below behind him, right glove pointing at the lens, left hand on a corded mic, masked face to camera. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Grainy 1990s rap-video film still."
+ },
+ {
+  "kind": "edit",
+  "key": "F7-vibe2",
+  "model": "Nano Banana 2.1",
+  "aspect": "9:16",
+  "numOutputs": 2,
+  "referenceImages": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/U5-vibe2.jpg",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/RU4-3-a.jpg"
+  ],
+  "outPath": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F7-vibe2.jpg",
+  "why": "docs/stories/short-ten-economic-commandments: Jack's notes on figure round 6, 2026-11-19",
+  "prompt": "Image 1 is the place: keep this red-brick rowhouse, bare tree at left, brick stoop with steel rails, flat winter daylight. Image 2 is the man: use only the masked man in the baggy beige suit, black roll-neck, dark cap. He stands ON the stoop's steps in front of the open steel gate, full figure seen from the sidewalk, one foot a step higher than the other, right glove pointing at the lens, left hand on a corded mic, masked face to camera. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Grainy 1990s rap-video film still."
+ },
+ {
+  "kind": "edit",
+  "key": "F7-r3-press2",
+  "model": "Nano Banana 2.1",
+  "aspect": "9:16",
+  "numOutputs": 2,
+  "referenceImages": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/F6-r3-press2-a.jpg"
+  ],
+  "outPath": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F7-r3-press2.jpg",
+  "why": "docs/stories/short-ten-economic-commandments: Jack's notes on figure round 6, 2026-11-19",
+  "prompt": "Keep this image exactly as it is: the man, his mask, his pose, the platform, the train and the light. Change only one thing: the plain black panel on the riveted column is the station's sign again, white letters on black reading Wall Street, as on a real New York subway column."
+ },
+ {
+  "kind": "edit",
+  "key": "F7-vibe6",
+  "model": "Nano Banana 2.1",
+  "aspect": "9:16",
+  "numOutputs": 2,
+  "referenceImages": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/tec-refs6/F6-vibe6-b.jpg"
+  ],
+  "outPath": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F7-vibe6.jpg",
+  "why": "docs/stories/short-ten-economic-commandments: Jack's notes on figure round 6, 2026-11-19",
+  "prompt": "Keep this image exactly as it is: the man, his mask, his pose, the doorway, the shelves and the light. Change only the neon sign above the door: it glows with abstract shapes and lines, with no readable words or letters anywhere."
+ }
+]
