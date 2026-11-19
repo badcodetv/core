@@ -72,13 +72,16 @@ SHOTS = [('losing', 'pl-r21-A-LS21-a.mp4', 0.0, 2.4),
          ('losing', 'pl-r21-A-LS21-a.mp4', 2.4, 2.5),
          ('cordon', 'pl-r5-A3-CD18-a.mp4', 0.4, 4.9),     # the police holding the junction, the radio call
          ('held', 'pl-r5-B-HD19-b.mp4', 1.0, 2.6),
-         ('motorcade', 'pl-r20-C-BM20-a.mp4', 0.2, 5.8),
+         ('motorcade', 'pl-r22-C3-BM20-a-sync.mp4', 0.2, 5.8),   # round 6c: lip-synced take C3 (flow-align.py; Jack at 20:16)
          ('flatline', 'STILL', 0.0, 2.4),
-         ('end', 'pl-r20-LG-LG20-a.mp4', 0.0, 5.6)]   # the Flow trace: two last beats, flat by ~4 s; the logo at LOGO_AT
+         ('end', 'pl-r20-LG-LG20-a.mp4', 3.7, 3.4)]   # round 6c: 0.6 s of the Flow trace already flat, then the flatline logo
 END = 0.0
 ZOOM_FROM, ZOOM_TO, ZOOM = 0.2, 2.4, 2.4
 SCREEN = (0.565, 0.436)                     # FL18-a's monitor screen centre (measured on the still)
-LOGO_AT = 4.0                               # seconds into the end clip, once the line is flat
+LOGO_AT = 1.6                               # round 6c: seconds into the end beat when the ring is drawn and the triangle beeps
+SCREEN_VID = MEDIA / 'cut-r6/flatline-screen.mp4'   # priority_lane_endcard.py: the trace going flat on FL18-a's screen (Jack, 22:06)
+LOGO_VID, BEEP = MEDIA / 'cut-r6/logo-flatline.mp4', MEDIA / 'cut-r6/logo-beep.wav'   # the flatline logo (Jack, 29:06)
+END_FLOW, XF = 0.6, 0.2
 starts, t = [], 0.0
 for s in SHOTS: starts.append(round(t, 3)); t += s[3]
 PIC = round(t, 3); TOTAL = round(PIC + END, 3)
@@ -94,8 +97,9 @@ LINES = [('vox-driver', 'pl-r7-driver-d-angry.wav', A + 0.3, 0.0, 1.3, 'driver',
          ('vox-paramedic2', 'pl-r7-paramedic2-d.wav', B + 0.3, 2.25, 3.15, 'paramedic2', 'Why have we stopped?!'),
          ('vox-paramedic1', 'pl-r7-paramedic1-a.wav', D + 0.15, 4.1, 4.7, 'paramedic1', 'Fifty over twen-')]
 RADIO = ('vox-constable', 'pl-r7-constable-b-radio.wav', K + 0.2, 0.0, 3.5, 'constable', "Constable ninety-seven. Junction's blocked, ready for the VIP.")
-MINISTER = ('vox-minister', 'pl-r7-minister-d.wav', C + 0.2, 0.0, 2.9, 'minister', "Hey Jeffrey, what time's the plane to the island?")
-MINISTER_2 = ('vox-minister', 'pl-r7-minister-d.wav', C + 0.2 + 2.9 + 0.4, 3.7, 5.2, 'minister', "I'm on my way to fetch Andrew.")
+# Round 6c: the voice as flow-align placed it on take C3's mouth (same clock as the clip), from the clip's in-point 0.2 s
+MINISTER = ('vox-minister', 'pl-r7-minister-d-sync-C3.wav', C, 0.2 + 0.0, 0.2 + 3.4, 'minister', "Hey Jeffrey, what time's the plane to the island?")
+MINISTER_2 = ('vox-minister', 'pl-r7-minister-d-sync-C3.wav', C + 3.4, 0.2 + 3.4, 0.2 + 5.8, 'minister', "I'm on my way to fetch Andrew.")
 FLAT = D + 0.9
 # Effects: (stem, key, at, dur, gain dB, loop)
 EFX = [('sfx-cabin', 'cabin', 0.0, K, -10, True),
@@ -189,16 +193,15 @@ def main():
                   f":y='({H / 2}+({cy}-{H / 2})*(zoom-1)/{ZOOM - 1})-ih/zoom/2':d=1:s={W}x{H}:fps={FPS}")
             pre = f'scale={2 * W}:{2 * H}:force_original_aspect_ratio=increase,crop={2 * W}:{2 * H},fps={FPS},'
             zp = zp.replace(f'{W / 2}', f'{W}').replace(f'{H / 2}', f'{H}').replace(f'{cx}', f'{2 * cx}').replace(f'{cy}', f'{2 * cy}')
-            ff('-loop', '1', '-framerate', FPS, '-t', d, '-i', STILL, '-filter_complex', f"[0]{pre}{zp},{vf}", '-t', d, '-an', *enc, out)
+            ff('-i', SCREEN_VID, '-filter_complex', f"[0]{pre}{zp},{vf}", '-t', d, '-an', *enc, out)
             if FINISH: finish(out)
         elif beat == 'end':
-            # The Flow trace, (finish), then the official logo laid on once the line is flat. The logo is never filtered.
+            # Round 6c: a moment of the Flow trace already flat (filtered like every shot), then a short dissolve into the
+            # flatline logo (priority_lane_endcard.py), which is never filtered.
             src = CUT / 'end-src.mp4'
-            ff('-ss', tin, '-t', d, '-i', VID / clip, '-an', '-vf', vf, *enc, src)
+            ff('-ss', tin, '-t', END_FLOW + XF, '-i', VID / clip, '-an', '-vf', vf, *enc, src)
             if FINISH: finish(src)
-            ff('-i', src, '-i', LOGO, '-filter_complex',
-               f"[1]scale=560:-1,format=rgba,loop=-1:size=1,fps={FPS},trim=0:{d + 0.5},setpts=N/{FPS}/TB,"
-               f"fade=t=in:st={LOGO_AT}:d=0.4:alpha=1[l];[0][l]overlay=(W-w)/2:H*0.36-h/2:eof_action=pass,format=yuv420p",
+            ff('-i', src, '-i', LOGO_VID, '-filter_complex', f"[0]fps={FPS},setsar=1,settb=AVTB[a];[1]{vf},setsar=1,settb=AVTB[l];[a][l]xfade=transition=fade:duration={XF}:offset={END_FLOW},format=yuv420p",
                '-t', d, '-an', *enc, out)
         elif clip in SPEED:
             ff('-ss', tin, '-t', d * SPEED[clip], '-i', VID / clip, '-an', '-vf', f'setpts=PTS/{SPEED[clip]},{vf}', '-t', d, *enc, out)
@@ -228,7 +231,9 @@ def main():
         events.append({'stem': stem, 't': round(at, 2), 'dur': round(d, 2), 'what': f'{key} (Suno Sounds {SFX[key]}' + (', one beep laid at a quickening rate)' if key == 'monitor' else ')'), 'src': str(src)})
     # Score: from the top, stops dead on the flatline (Jack's brief: no music over the flatline).
     sc = take(SCORE)
-    stems['music-score'] = [(sc, 0.0, FLAT, -7, False, '')]
+    stems['music-score'] = [(sc, 0.0, FLAT, -10, False, '')]   # round 6c: 3 dB down (Jack: "a little bit too loud… we want to hear the dialogue")
+    stems.setdefault('sfx-monitor', []).append((BEEP, E + END_FLOW, None, -4, False, ''))
+    events.append({'stem': 'sfx-monitor', 't': round(E + END_FLOW + 1.25, 2), 'dur': 0.14, 'what': 'one beep as the triangle blips in (made in priority_lane_endcard.py)', 'src': str(BEEP)})
     events.append({'stem': 'music-score', 't': 0.0, 'dur': round(FLAT, 2), 'what': f'score (Suno r6 {SCORE}), cut dead on the flatline', 'src': str(sc)})
 
     order = ['vox-paramedic1', 'vox-paramedic2', 'vox-driver', 'vox-constable', 'vox-minister', 'music-score', 'sfx-siren', 'sfx-monitor', 'sfx-cars', 'sfx-cabin']
@@ -247,8 +252,8 @@ def main():
            'cordon': 'High over the junction (CD18-a): police hold every side, the convoy crosses; the radio: junction blocked for the VIP.',
            'held': 'From the cab (HD19-b): the officer holds his glove up; the convoy crosses beyond him.',
            'motorcade': 'The minister in the back of his car (BM18-a), on the phone, through the glass.',
-           'flatline': 'The monitor (FL18-a): the trace flat; we push into the screen.',
-           'end': 'Cut to the flatline end card (Flow, LG20-a): two last beats, then flat, and the BadCode logo comes up.'}
+           'flatline': 'The monitor (FL18-a): the trace beats once and goes flat on its screen as we push in.',
+           'end': 'The flat line (Flow, LG20-a) becomes the logo: the line draws the ring, the triangle blips in with a beep, a sweep wipes the wordmark on.'}
     TITLES = {'losing': 'A. Losing him', 'cordon': 'A3. The cordon', 'held': 'B. Held', 'motorcade': 'C. The motorcade', 'flatline': 'D. Flatline', 'end': 'E. The flatline logo'}
     beats = []
     for beat in ('losing', 'cordon', 'held', 'motorcade', 'flatline', 'end'):
@@ -272,7 +277,7 @@ def main():
            'events': [{k: v for k, v in e.items() if k not in ('who', 'text')} for e in events],
            'flags': [f'Runs {TOTAL:.1f} s, about 3 s longer than round 5: the flatline end card is a shot of its own now.',
                      'Voices: plain reads on gemini-3.8-flash-tts (the driver with the style "angry, shouting"), cut at the word gaps.',
-                     'The minister is not lip-synced: the clip mouths generic talk and the line plays through the glass.',
+                     'The minister is lip-synced on take C3 (flow-align.py): 3 of 5 mouth runs within the bar, 2 about 0.2 s late in "fetch Andrew"; through the glass it reads.',
                      'The flatline still (FL18-a) keeps its push-in, now without the logo; the logo is on the end card.']}
     (CUT / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': TOTAL, 'starts': starts, 'preview': str(CUT / 'preview.mp4')}))

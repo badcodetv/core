@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r7/pl-r7-minister-d-sync-C3.wav",
+ "made": "2026-11-19T12:30:31+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "flow-align",
+ "tool": "scripts/lipsync/flow-align.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r7/pl-r7-minister-d.wav",
+ "why": "minister d placed phrase by phrase on C3's mouth"
+}

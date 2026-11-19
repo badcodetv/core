@@ -1,20 +1,20 @@
 {
- "round": "6b",
+ "round": "6c",
  "plan": [
   {
-   "h": "Rough cut 6",
+   "h": "Rough cut 6c: your notes on 6b",
    "items": [
-    "Every voice recast the new way and picked by you: paramedic 1 a, paramedic 2 d, the driver d (angry), the minister d, the constable b on the radio.",
-    "Score: c2, percussion only, cut dead on the flatline.",
-    "The end: the push into the monitor cuts to the flatline end card made in Flow (two last beats, then flat), and the real logo comes up on it. 29.2 s, about 3 s longer than round 5.",
-    "Round 6b, your picks page round 8: the bleach bypass filter over every shot (the logo untouched), and doors a (LS21-a) inside the ambulance."
+    "Music 3 dB down: it now sits about 10 dB under the voices, so the dialogue reads and the music is still there.",
+    "The minister is lip-synced: three new takes with his exact line, the best (C3) aligned to the voice. 3 of 5 mouth movements land on the words; the last two (\"fetch Andrew\") are ~0.2 s late, softened by the glass.",
+    "The flatline now happens on the monitor: the trace beats once and goes flat on its screen as we push in.",
+    "The end: the flat line becomes the logo. It draws the ring round from where it meets it, the red triangle blips in with one beep, and a monitor sweep wipes the wordmark on. Built from the brand file's own pieces. 27.0 s in all."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Whether 29 s is too long: the end card could lose a second.",
-    "Then Premiere: say so and I build r6 into it and push to Drive."
+    "Lip sync: good enough through the glass, or roll more takes?",
+    "Then Premiere and Drive."
    ]
   }
  ],
@@ -24,7 +24,10 @@
   "at619": "Done: a flatline end card made in Flow (the green trace, two last beats, then flat), cut to straight after the monitor. The logo is the official file laid on once the line is flat, because Flow never draws the logo.",
   "at456": "Done in round 4: from 1.4 s into the flatline shot the camera pushes in on the monitor until the flat line fills the frame. Round 6: the logo now comes on the flatline end card that follows it.",
   "at101": "Done: the shelter poster shot plays at 2x (its first 3 s in 1.5 s), so it zips past but SAVE OUR NHS still reads.",
-  "at117": "Done: the poster close-up hold is gone; it now only appears inside the 5-frame dissolve into him in the car."
+  "at117": "Done: the poster close-up hold is gone; it now only appears inside the 5-frame dissolve into him in the car.",
+  "at496": "Done: re-shot with the exact line (3 takes) and aligned the best one, C3. 3 of 5 mouth runs on the words, \"fetch Andrew\" ~0.2 s late. Say if you want more takes.",
+  "at534": "Done: the Flow trace is mapped onto the monitor's screen, so it beats once and goes flat as we push in.",
+  "at702": "Done: the flat line turns into the logo: it draws the ring, the triangle blips in with a beep, a sweep wipes the wordmark on."
  },
  "kai_round1": {
   "at529": "the ending of this should show real life news stories flash on screen in like a meme format, as he is saying the last lines. also have a badcode overlay over all of it. THanks",

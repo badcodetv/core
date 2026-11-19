@@ -74,7 +74,7 @@ for i in range(1, n):
         D[i][better] = cand[better]; B[i][better] = st
 j = int(np.argmin(D[-1])); path = [j]
 for i in range(n - 1, 0, -1):
-    j -= B[i, j]; path.append(j)
+    j -= int(B[i, j]); path.append(j)   # int(): j - np.int8 stays int8 and overflows past 127 frames (2026-11-19)
 path = np.array(path[::-1], float)
 # smooth and clamp the local rate
 k = 11

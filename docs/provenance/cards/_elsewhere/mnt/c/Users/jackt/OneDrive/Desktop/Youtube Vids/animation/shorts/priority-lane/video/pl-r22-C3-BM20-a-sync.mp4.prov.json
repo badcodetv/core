@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r22-C3-BM20-a-sync.mp4",
+ "made": "2026-11-19T12:30:30+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "flow-align",
+ "tool": "scripts/lipsync/flow-align.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r22-C3-BM20-a.mp4",
+ "why": "take C3 picture-warped to the minister's voice (Jack 20:16)"
+}

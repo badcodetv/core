@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r6/logo-flatline.mp4",
+ "made": "2026-11-19T12:30:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/priority_lane_endcard.py",
+ "why": "Jack's notes 22:06 / 29:06 on rough cut 6b"
+}
