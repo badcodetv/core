@@ -29,6 +29,7 @@ are in [`docs/youtube/README.md`](../../../docs/youtube/README.md). This file is
 - **Kai or Jack picks the titles.** Retitle only on their word. The first four, as ruled 2026-11-12: "Git
   Push Origin Master", "Karen will lead the revolution (music video)", "The bank robbery (music video)",
   "The Rules Are Not Working Anymore".
+- **Naming (Kai, 2026-11-19): a plain title means a story.** Only a music video says so, as "<name> (music video)"; a story or short film is just its name ("The bank robbery", "Git Push Origin Master"), and a Short gets no tag either: "The Rules Are Not Working Anymore" is now "The Rules".
 - **Descriptions and tags are written for growth.** They come from the story's own canon and the growth
   playbooks the repo already has, not from new research (the chief-of-staff plan's rule one). No spoilers:
   setup only, never the twist.
