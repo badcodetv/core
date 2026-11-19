@@ -10,7 +10,7 @@ out loud, the beneficiary is on screen. Beats: inside the ambulance at ER pace (
 him!") → his SAVE OUR NHS poster seen sideways out of the ambulance's left window, held ~3 s → the cordon: police hold
 the junction, radio "Constable 97, junction blocked, ready for VIP" → held at the light, an outrider's raised glove →
 the minister crosses in the back of his car on the phone: "Hey Jeffrey, what time's the plane to the island? ... I'm on
-my way to fetch Andrew." → the monitor flatlines, black, the BadCode logo. State: rough cut r5 on the timeline page,
+my way to fetch Andrew." → the monitor flatlines, black, the BadCode logo. State: rough cut 6 (bleach finish) on the timeline page, awaiting Jack; earlier: rough cut r5 on the timeline page,
 awaiting Jack's notes; the earlier agreed cut r4 is in Premiere (`shorts-1-priority-lane-r4`). Resume at RESUME.md.
 
 ## Look
@@ -24,6 +24,7 @@ Inside the ambulance the light is harsher: cold strip lights and the monitor's g
 - Junction and traffic obey UK keep-left geometry: `cleanroom/r18/geometry.md`.
 - Picks in the r5 cut: LS18-b, PB18-a, CD18-a, HD19-b, BM18-a, FL18-a. Stills Nano Banana 2; clips Omni 1.2 Flash,
   9:16, Frames, 8 s. Flow project `57538600-142a-45b8-ac4c-e79e663de0c6`.
+- **Finish (Jack, 2026-11-19, picks round 8): bleach bypass** over every shot, `scripts/shorts/priority_lane_finish.sh bleach` (the cut script's `--finish bleach`); the logo is never filtered.
 - Never: glossy, clean, daylight or "cinematic CGI". No readable text except the poster's SAVE OUR NHS.
 
 ## Sound

@@ -1,24 +1,25 @@
 {
- "round": 6,
+ "round": "6b",
  "plan": [
   {
    "h": "Rough cut 6",
    "items": [
     "Every voice recast the new way and picked by you: paramedic 1 a, paramedic 2 d, the driver d (angry), the minister d, the constable b on the radio.",
     "Score: c2, percussion only, cut dead on the flatline.",
-    "The end: the push into the monitor cuts to the flatline end card made in Flow (two last beats, then flat), and the real logo comes up on it. 29.2 s, about 3 s longer than round 5."
+    "The end: the push into the monitor cuts to the flatline end card made in Flow (two last beats, then flat), and the real logo comes up on it. 29.2 s, about 3 s longer than round 5.",
+    "Round 6b, your picks page round 8: the bleach bypass filter over every shot (the logo untouched), and doors a (LS21-a) inside the ambulance."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "The filter: none, night 35 mm, dashcam or bleach bypass, on the picks page. Say which and I build it in.",
-    "Whether 29 s is too long: the end card could lose a second."
+    "Whether 29 s is too long: the end card could lose a second.",
+    "Then Premiere: say so and I build r6 into it and push to Drive."
    ]
   }
  ],
  "replies": {
-  "at163": "Fixed: the ambulance shots are now from inside with the rear doors shut (LS21-b, animated). The other three versions are on the picks page if you prefer one.",
+  "at163": "Fixed: the ambulance is now seen from inside with the rear doors shut: your pick a (LS21-a), animated.",
   "at427": "Fixed: the canapés are gone (BM20-a) and he just talks on the phone, free hand on his knee.",
   "at619": "Done: a flatline end card made in Flow (the green trace, two last beats, then flat), cut to straight after the monitor. The logo is the official file laid on once the line is flat, because Flow never draws the logo.",
   "at456": "Done in round 4: from 1.4 s into the flatline shot the camera pushes in on the monitor until the flat line fills the frame. Round 6: the logo now comes on the flatline end card that follows it.",

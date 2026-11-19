@@ -458,5 +458,18 @@
   "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
   "what": "Rough cut 6: all voices recast, score c2, doors shut (LS21-b), no food (BM20-a), flatline end card from Flow (LG20-a) with the official logo; 29.2 s",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-19T12:06:38+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Rough cut 6b: bleach bypass finish, doors a (LS21-a)",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>",
+  "decided": [
+   "Jack, picks round 8: finish bleach, doors a, minister a, flatline end card a"
+  ],
+  "feedback": "feedback/timeline-r6",
+  "feedback_docs": 6
  }
 ]

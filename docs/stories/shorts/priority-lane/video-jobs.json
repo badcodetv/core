@@ -167,6 +167,15 @@
    "character": null,
    "why": "Jack 2026-11-19 at 6:19: 'they're driving with the back door open, it makes no sense' (LS21-b: inside, doors shut)",
    "motion": "The camera does not move. Inside the back of a speeding ambulance at night, the rear doors shut. The paramedic on the left keeps pressing hard and fast on the patient's chest; the paramedic on the right works the monitor on the wall, its green trace racing. The whole compartment sways and jolts with the road, cables swinging. Blue light flickers through the windscreen far ahead. Fast hands smear with natural motion blur. One continuous shot, no cuts, no text. The camera does not move."
+  },
+  {
+   "key": "r21-A",
+   "n": 1,
+   "still": "LS21-a",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-19 picks round 8: doors a (LS21-a), inside with the doors shut",
+   "motion": "The camera does not move. Inside the back of a speeding ambulance at night, the rear doors shut. The paramedic on the left keeps pressing hard and fast on the patient's chest; the paramedic on the right works the monitor on the wall, its green trace racing. The whole compartment sways and jolts with the road, cables swinging. Blue light flickers through the windscreen far ahead. Fast hands smear with natural motion blur. One continuous shot, no cuts, no text. The camera does not move."
   }
  ],
  "note": "C (minister) keeps the round 1 clip pl-04-MIN1-b; it is re-synced to the Charon voice with lip-sync-dub, no new clip. Round 1 jobs are in video-jobs-r1.json."

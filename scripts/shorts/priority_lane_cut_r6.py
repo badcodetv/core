@@ -67,9 +67,9 @@ def take(id8):
 # close-up no longer holds: it only shows inside the dissolve into the car. The ambulance takes the time back.
 SPEED = {}
 STILL = MEDIA / 'moodboard/FL18-a.jpg'
-SHOTS = [('losing', 'pl-r20-A-LS21-b.mp4', 0.0, 2.4),
+SHOTS = [('losing', 'pl-r21-A-LS21-a.mp4', 0.0, 2.4),
          ('losing', 'pl-r5-A2-PB18-a.mp4', 0.3, 3.0),     # his poster at the bus stop, the ambulance races past (~3 s, Kai)
-         ('losing', 'pl-r20-A-LS21-b.mp4', 2.4, 2.5),
+         ('losing', 'pl-r21-A-LS21-a.mp4', 2.4, 2.5),
          ('cordon', 'pl-r5-A3-CD18-a.mp4', 0.4, 4.9),     # the police holding the junction, the radio call
          ('held', 'pl-r5-B-HD19-b.mp4', 1.0, 2.6),
          ('motorcade', 'pl-r20-C-BM20-a.mp4', 0.2, 5.8),
