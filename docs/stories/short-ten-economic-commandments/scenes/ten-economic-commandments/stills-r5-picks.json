@@ -1,9 +1,246 @@
 {
  "title": "Ten Commandments Stills",
  "eyebrow": "BadCode Shorts · Ten Economic Commandments · real photos (Unsplash)",
- "heading": "Fixes and filters with lots of lights",
- "intro": "Round 4, your notes on round 3: the Empire State top, the stoop steps, the Wall Street sign back, the bodega sign cleaned, and five filters that throw light everywhere. Your other picks (columns b, walkway b, boombox b, court a, taxi a, fire escape b) are kept; I animate everything once these are picked.",
+ "heading": "BadCode rapping on location",
+ "intro": "Round 5: BadCode rapping in all 11 locations, two takes each, with your nightfever filter on. Pick one take per location (write \"both\" in the note to keep both, or \"cut\" to drop a location); the cut is built from your picks. Masks checked frame by frame: all on brand.",
  "sections": [
+  {
+   "h": "Round 5: rapping",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "rap-fix1-a",
+     "round": 5,
+     "title": "Empire State top",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/fix1-a-a.mp4",
+       "label": "a: point then hard chops",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/fix1-a-b.mp4",
+       "label": "b: mic close, slow nods",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-r3-press2-a",
+     "round": 5,
+     "title": "Wall Street platform",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/r3-press2-a-a.mp4",
+       "label": "a: finger jabs at lens",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/r3-press2-a-b.mp4",
+       "label": "b: back on column, cool",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-vibe6-b",
+     "round": 5,
+     "title": "Bodega doorway",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/vibe6-b-a.mp4",
+       "label": "a: doorway chops, body rocking",
+       "warn": "Flow lit the neon up as LOTTO / ATM; a cutaway or a crop if you mind it"
+      },
+      {
+       "id": "b",
+       "src": "rap/vibe6-b-b.mp4",
+       "label": "b: doorway sway, steady nods",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-r10-bailout2-b",
+     "round": 5,
+     "title": "Marble columns",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/r10-bailout2-b-a.mp4",
+       "label": "a: small figure, big jabs",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/r10-bailout2-b-b.mp4",
+       "label": "b: weight shifts between columns",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-vibe3-b",
+     "round": 5,
+     "title": "Walkway under the El",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/vibe3-b-a.mp4",
+       "label": "a: walkway stomps and chops",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/vibe3-b-b.mp4",
+       "label": "b: planted, heavy shoulder bounce",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-vibe4-b",
+     "round": 5,
+     "title": "Boombox, graffiti door",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/vibe4-b-a.mp4",
+       "label": "a: stops, points, boombox swings",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/vibe4-b-b.mp4",
+       "label": "b: strut in place, nodding",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-vibe7-a",
+     "round": 5,
+     "title": "Snowy court, through the fence",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/vibe7-a-a.mp4",
+       "label": "a: through fence, sharp chops",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/vibe7-a-b.mp4",
+       "label": "b: heel-toe rock, low sway",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-vibe8-a",
+     "round": 5,
+     "title": "Leaning on the taxi",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/vibe8-a-a.mp4",
+       "label": "a: pushes off taxi, jabs",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/vibe8-a-b.mp4",
+       "label": "b: leaning, tapping the roof",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-vibe9-b",
+     "round": 5,
+     "title": "Fire escape",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/vibe9-b-a.mp4",
+       "label": "a: pointing down from balcony",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/vibe9-b-b.mp4",
+       "label": "b: forearms on rail, drumming",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-vibe2-a",
+     "round": 5,
+     "title": "Stoop, sitting upright",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/vibe2-a-a.mp4",
+       "label": "a: seated chops, foot stamps",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/vibe2-a-b.mp4",
+       "label": "b: leans back, heel taps",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "rap-vibe2-b",
+     "round": 5,
+     "title": "Stoop, leaning forward",
+     "line": "a = big (points, hard chops on the beat), b = laid-back (mic close, nods, shoulders). Nightfever on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "rap/vibe2-b-a.mp4",
+       "label": "a: hunched, stabbing flat chops",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "rap/vibe2-b-b.mp4",
+       "label": "b: elbows on knees, rocking",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 4",
    "lede": "",
@@ -1909,5 +2146,5 @@
    ]
   }
  ],
- "round": 4
+ "round": 5
 }

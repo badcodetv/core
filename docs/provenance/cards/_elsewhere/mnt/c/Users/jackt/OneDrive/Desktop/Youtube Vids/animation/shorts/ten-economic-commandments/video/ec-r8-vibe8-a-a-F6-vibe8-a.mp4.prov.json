@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-r8-vibe8-a-a-F6-vibe8-a.mp4",
+ "made": "2026-11-19T16:43:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off camera. Behind the street barriers, he leans on the yellow taxi at the right. He pushes off the car to stand, mic in one hand; on a slow 90 bpm beat his free hand jabs toward the lens and chops down, head and shoulders pumping on each hit, then he settles back against the car. His masked face stays turned to the camera throughout; nothing on the mask moves. Beige suit, cap, gloves unchanged; no skin. No new people, no text. Camera stays locked off.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F6-vibe8-a.jpg",
+ "why": "Jack 2026-11-19: 'a lot of these locations should have the bad guy in it, rapping like he was' (clean-room motion, cleanroom/perform-r8.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F6-vibe8-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "r8-vibe8-a-a",
+  "frame": 944,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T16:41:48.454Z"
+ }
+}

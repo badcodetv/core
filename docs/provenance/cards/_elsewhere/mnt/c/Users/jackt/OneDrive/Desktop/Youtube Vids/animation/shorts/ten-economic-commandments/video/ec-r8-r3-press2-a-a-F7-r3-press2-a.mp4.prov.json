@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-r8-r3-press2-a-a-F7-r3-press2-a.mp4",
+ "made": "2026-11-19T16:41:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off camera. Subway platform: he leans a shoulder on the riveted column, mic in his left hand at his chest. On a slow 90 bpm beat his right index finger jabs at the lens again and again, then chops sideways through the air, knees bending with each hit. The train stays parked; far commuters drift. His masked face stays turned to the camera throughout; nothing on the mask moves. Beige suit, cap, gloves unchanged; no skin. No new people, no text. Camera stays locked off.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F7-r3-press2-a.jpg",
+ "why": "Jack 2026-11-19: 'a lot of these locations should have the bad guy in it, rapping like he was' (clean-room motion, cleanroom/perform-r8.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F7-r3-press2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "r8-r3-press2-a-a",
+  "frame": 932,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T16:39:05.905Z"
+ }
+}

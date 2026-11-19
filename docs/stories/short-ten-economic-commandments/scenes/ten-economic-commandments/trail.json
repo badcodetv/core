@@ -62,5 +62,21 @@
   "url": "https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf",
   "what": "Round 4 on the stills page: Empire State top, stoop on the steps, Wall Street sign back, bodega sign cleaned; five lights filters",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments/stills-r5-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-19T17:06:11+00:00",
+  "stage": "picks",
+  "round": 8,
+  "url": "https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf",
+  "what": "Round 5 on the stills page: 22 rapping clips (11 locations x 2 takes), nightfever",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments/stills-r5-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-19T17:06:12+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG",
+  "what": "rough cut 2: all-ten rap e689e000, BadCode rapping on 11 locations, cut on the bar, nightfever, logo tail",
+  "rebuild": "python3 scripts/shorts/tec_cut_r2.py --round 2 && python3 scripts/scene/build-timeline.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments <out-dir>"
  }
 ]

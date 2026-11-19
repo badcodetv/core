@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-r8-vibe3-b-a-F6-vibe3-b.mp4",
+ "made": "2026-11-19T16:47:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off camera. Night walkway under the elevated track, full figure: mic at the mask in his right hand, cord on the ground. On a slow 90 bpm beat his free left hand chops down hard, then stabs a finger at the lens; he rocks a half-step forward and back, knees pumping. Lamps glow. His masked face stays turned to the camera throughout; nothing on the mask moves. Beige suit, cap, gloves unchanged; no skin. No new people, no text. Camera stays locked off.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F6-vibe3-b.jpg",
+ "why": "Jack 2026-11-19: 'a lot of these locations should have the bad guy in it, rapping like he was' (clean-room motion, cleanroom/perform-r8.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/F6-vibe3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "r8-vibe3-b-a",
+  "frame": 938,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T16:46:26.449Z"
+ }
+}
