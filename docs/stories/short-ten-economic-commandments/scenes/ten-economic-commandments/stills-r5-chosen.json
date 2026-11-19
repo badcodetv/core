@@ -1,0 +1,172 @@
+[
+ {
+  "slot": "fix-ref-1",
+  "query": "new york sunrise skyline",
+  "id": "fT6-YkB0nfg",
+  "label": "Empire State Building, New York at night \u00b7 Timo Wagner",
+  "note": "",
+  "still": "U5-fix1",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "r10-bailout-ref-1",
+  "query": "stack of cash",
+  "id": "e-CrwdBNL7k",
+  "label": "a stack of money sitting on top of a white table \u00b7 Celyn Kang",
+  "note": "",
+  "still": "U5-r10-bailout1",
+  "flow": false,
+  "why_not": "real banknotes (badcode.md: no real currency in any AI still): camera move only"
+ },
+ {
+  "slot": "r10-bailout-ref-2",
+  "query": "bank building columns",
+  "id": "7KztVJPSq6M",
+  "label": "a man riding a skateboard down a sidewalk next to tall pilla \u00b7 Luca Nicoletti",
+  "note": "",
+  "still": "U5-r10-bailout2",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "r3-press-ref-2",
+  "query": "wall street new york",
+  "id": "xceMsVvxcd4",
+  "label": "time lapse photography of train station \u00b7 Martin Ceralde",
+  "note": "",
+  "still": "U5-r3-press2",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "r4-supply-ref-2",
+  "query": "new york apartment window",
+  "id": "CNIjj8rGGTU",
+  "label": "a tall building with windows lit up at night \u00b7 Jack Cohen",
+  "note": "",
+  "still": "U5-r4-supply2",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "r8-debase-ref-1",
+  "query": "stock market screen",
+  "id": "fchVIvuMGBI",
+  "label": "a pair of glasses sitting on top of a laptop computer \u00b7 Nimisha Mekala",
+  "note": "",
+  "still": "U5-r8-debase1",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "r8-debase-ref-2",
+  "query": "gold bars",
+  "id": "-6BtUqTvWiE",
+  "label": "A pile of gold bars sitting on top of a table \u00b7 Scottsdale Mint",
+  "note": "",
+  "still": "U5-r8-debase2",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-10",
+  "query": "gold chain",
+  "id": "_Ycmc96ZxWM",
+  "label": "a gold necklace with a crown on it \u00b7 Hosniye sadeghi",
+  "note": "",
+  "still": "U5-vibe10",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-1",
+  "query": "1990s new york street",
+  "id": "FzufKxNyGjA",
+  "label": "a woman walking down a flight of stairs \u00b7 Mykyta Krav\u010denko",
+  "note": "",
+  "still": "U5-vibe1",
+  "flow": false,
+  "why_not": "an identifiable real person: camera move only, no AI"
+ },
+ {
+  "slot": "vibe-ref-2",
+  "query": "brooklyn brownstone stoop",
+  "id": "mAleMS197aM",
+  "label": "A brick building with a car parked outside \u00b7 Zoshua Colah",
+  "note": "",
+  "still": "U5-vibe2",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-3",
+  "query": "new york subway graffiti",
+  "id": "rK27WQI5s2s",
+  "label": "Elevated urban train platform with graffiti at night \u00b7 Konrad Nowacki",
+  "note": "",
+  "still": "U5-vibe3",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-4",
+  "query": "boombox",
+  "id": "vDstbdVoUpA",
+  "label": "Person carrying a silver boombox by graffiti-covered door \u00b7 Jan Kotl\u00edk",
+  "note": "",
+  "still": "U5-vibe4",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-5",
+  "query": "vinyl turntable dj",
+  "id": "ziqzASxcBv4",
+  "label": "person holding black and grey DJ turntable \u00b7 Kieron Mannix",
+  "note": "",
+  "still": "U5-vibe5",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-6",
+  "query": "bodega new york",
+  "id": "aVgE_Yskg4I",
+  "label": "glass panel door with green ATM signage \u00b7 Ronny Coste",
+  "note": "",
+  "still": "U5-vibe6",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-7",
+  "query": "basketball court chain link fence",
+  "id": "cbfJvNplll8",
+  "label": "Basketball court covered in snow with buildings behind \u00b7 Christopher Stites",
+  "note": "",
+  "still": "U5-vibe7",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-8",
+  "query": "yellow cab new york night",
+  "id": "V7UkkHyktZA",
+  "label": "yellow sedan parked in front of building \u00b7 Camila Fern\u00e1ndez",
+  "note": "",
+  "still": "U5-vibe8",
+  "flow": true,
+  "why_not": ""
+ },
+ {
+  "slot": "vibe-ref-9",
+  "query": "fire escape new york",
+  "id": "h4awZRuzt14",
+  "label": "brown metal emergency exit stairs \u00b7 PHOTOSBYAKIL",
+  "note": "",
+  "still": "U5-vibe9",
+  "flow": true,
+  "why_not": ""
+ }
+]
