@@ -1,5 +1,15 @@
 # Police Cameras, Tested First (home/police-cameras-by-lot)
 
+## 2026-11-19 · PR #29
+
+**Opposition:** No strong case against this revision: expansion now requires improved charges or summonses across all named crime types beyond chance, so camera involvement alone cannot pass it.
+**Answer (Home Secretary):** Noted. The statistician found the hole from the other side: eight forces against eight may be too few to see the rise at all. Fixed today. Nothing standing from the opposition.
+**Outcome:** Nothing standing (`against` and `answer` keep the older standing point on match-alone arrests)
+
+**Statistician:** "beyond what chance alone would give one time in twenty" names no unit. Forces were drawn by lot, so chance has to be counted across forces, not crimes. Counted across tens of thousands of crimes, almost any gap clears it. Counted across eight forces against eight, an all-crime rise of a few per cent, most of it from cases where no camera was used, will usually be missed even if it is real, and a trial that works fails. Fix: name the force as the unit, and either state the smallest rise eight against eight can reliably detect or add forces until it covers the rise you expect.
+**Answer (Home Secretary):** Taken. The force is the unit for chance, not the crime. The number of forces in each set is fixed before the draw, worked out from each force's charge rates for those crimes over the five years before, so that a real rise of one in twenty in charges or summonses across all crimes of those types is found eight times in ten. Eight a set is the floor, not the answer. If too few forces volunteer to reach it, the trial doesn't start until enough do; the law's deletions and the right to a human carry on in every force meanwhile.
+**Outcome:** Conceded: test.where, test.against, test.measure and fails_if, this commit
+
 ## 2026-11-18 · PR #29
 
 **Opposition:** The new test can still pass without solving any extra crime: using cameras on cases that would have reached a charge anyway raises the camera-assisted rate, while the overall rate may even fall slightly. Require an improvement across all eligible crimes before expanding the vans. Otherwise the test rewards camera involvement rather than better outcomes for victims.
