@@ -33,6 +33,9 @@ and built in Premiere (`short-ten-economic-commandments-1-tec-r1`); export to 10
 - Lyrics: [songs/r2-rap/lyrics.txt](./songs/r2-rap/lyrics.txt), three rules numbered 1-3 plus "And the fix, from the future? No hand on the printer."
 - Vocals are wanted on this short (a rapped male vocal); no other voices.
 
+- **Finish (Jack, 2026-11-19, stills page round 4): nightfever** (`scripts/shorts/tec_finish.sh nightfever`): heavy glow, red light streaks, saturated night; "lots of lights, kind of like taxi driver, where it's kind of overwhelming". The logo card is never filtered.
+- **BadCode on location (round 4 picks):** Empire State top F7-fix1-a, Wall Street F7-r3-press2-a (sign lettered by hand), bodega F7-vibe6-b, columns F6-r10-bailout2-b, walkway F6-vibe3-b, boombox F6-vibe4-b, court F6-vibe7-a, taxi F6-vibe8-a, fire escape F6-vibe9-b, stoop seated F8-vibe2 (a or b). All new Flow pictures built from Jack's Unsplash photos as layout guides; never an AI figure pasted into a real photo.
+
 ## Story-only rules
 - Never write "trousers a little too short" (or anything that bares ankles, wrists or neck) for the figure.
 - When fixing masks, attach the still only: with the navy mask reference attached the masks turned navy.
