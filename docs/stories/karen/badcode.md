@@ -11,7 +11,7 @@ there. Two videos: a **narrated story film** (ends on Sean AI's card, the sacked
 "To be continued"; no stated moral) and a **music video** for the song "All Day to Complain" (about 4:10).
 
 ## Parts
-- Story film — `scenes/story/` — on its timeline page at **cut r3** (2026-11-18): Kai's notes to 2:08 attempted in one cut (`scripts/karen/story-cut-r3.py`; office → calling everyone re-cut, Viral onward still Jack's `Karen v4` render). r3b (19 Nov): the same cut with no clip sound (Kai's rule below), on the same page; Kai noting. Premiere still holds only `Karen v4`. Names for the first three calls (Kai): Martha (receptionist), Clive (local council), Harriet (borough representative).
+- Story film — `scenes/story/` — on its timeline page at **cut r3** (2026-11-18): Kai's notes to 2:08 attempted in one cut (`scripts/karen/story-cut-r3.py`; office → calling everyone re-cut, Viral onward still Jack's `Karen v4` render). r3b (19 Nov): the same cut with no clip sound (Kai's rule below), on the same page; Kai paused noting 19 Nov (26 notes on the page, dumped to `scenes/story/feedback/timeline-r3-2026-11-19/`); pick up from there, nothing answered yet. Premiere still holds only `Karen v4`. Names for the first three calls (Kai): Martha (receptionist), Clive (local council), Harriet (borough representative).
 - Music video — `scenes/music-video/` — final cut frozen 2026-11-09 (Kai's hand edit on `karen-music-r4`).
 - **The two have different looks and different Karens. Don't carry one part's look or voice into the other.**
 
