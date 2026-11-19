@@ -406,5 +406,13 @@
   "round": 11,
   "url": "https://youtu.be/LV4twP4qyiU",
   "what": "Final cut 10H2 rendered (YouTube 1080p HD) and uploaded private as a new video, words copied from XinO1Kze_5A, AI label on, her as the thumbnail; Drive agreed list extended with her footage + cut10H2 and pushed (498 files)"
+ },
+ {
+  "at": "2026-11-19T14:35:30+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "url": "https://claude.ai/artifact/63z6GJMxGiyKyoEaEPMqsp",
+  "what": "cut 10H4: cake-toss finger-wag ending (Kai's pick b), vault mask fixed at 1:38 and 2:58",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/cuts/make-H3.py && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/cuts/make-H4.py && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r10/cuts/assemble.py H4 <out-dir>"
  }
 ]

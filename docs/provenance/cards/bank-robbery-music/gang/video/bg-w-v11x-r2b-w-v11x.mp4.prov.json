@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-v11x-r2b-w-v11x.mp4",
+ "made": "2026-11-19T14:15:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no camera movement. The small woman in the canary-yellow coat stands on the bank steps facing the lens, other hand on her hip. From the first frame she mimes holding a dainty invisible slice of cake between thumb and finger, little finger out, raises it to chin height and stops dead; then she drops it, and she raises one gloved index finger upright beside her face and wags it side to side, left, right, left, right, in a steady tick-tock on the beat, the clear universal gesture for \"no\", her head giving a small matching shake, mock-stern and sure of herself, wagging it to the very end of the shot. She moves with swagger and attitude the whole time: chin up, a loose bratty shoulder roll, never stiff. Her canary-yellow balaclava is one smooth, seamless knitted dome over her whole head and face: plain canary knit with only the white ring and the red triangle on it, the knit lying flat and still over her face the whole time.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-v11x.jpg",
+ "why": "Kai 2026-11-19: end the film on her wagging her finger side to side, 'no' (the 10H3 ending had no real wag)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-v11x.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-v11x-r2b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T14:14:35.669Z"
+ }
+}

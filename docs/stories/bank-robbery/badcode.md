@@ -42,7 +42,9 @@ the narrator's. Unclear: whether the short's music tracks are the same lo-fi set
 
 ## Music video ("The Speakeasy Mint")
 
-**Current state: final cut 10H2 is done** (Kai, 2026-11-17): built in Premiere as `Balaclava Gang 11`, on
+**Newest: cut 10H4, Kai's pick** (2026-11-19): 10H2 plus three fixes. (1) Tom's note on the ending: the last shot is the new wag take `w-v11x-r2b` from 3:03.5: she holds up a slice of cake on "heaven's sake", tosses it on "Don't", wags her finger "no" to the end (Kai: "definitely B because it's got a cake in it"). (2) Both uses of the vault shot (1:38 and 2:58) are the re-roll `w-k36m-r2b`; the old take grew eye and mouth gaps in her mask. Preview `cut10H4/preview.mp4`; timeline page https://claude.ai/artifact/63z6GJMxGiyKyoEaEPMqsp; options page https://claude.ai/artifact/1gJqd59bEep7A4jr35qn9w; recipe `songs/mv-gang/cleanroom/r10/cuts/make-H4.py`. Next: Premiere sequence `Balaclava Gang 12` once Kai frees Premiere; YouTube only if asked. **Her mask rule:** it is one sealed knit dome; animation can open gaps in it, so check her face across the whole clip, not just the still.
+
+**Before that: final cut 10H2 was done** (Kai, 2026-11-17): built in Premiere as `Balaclava Gang 11`, on
 YouTube (private, `LV4twP4qyiU`) and on Drive. **The gang has a seventh member, its leader and the singer**
 (full brief: [songs/mv-gang/her/brief.md](./songs/mv-gang/her/brief.md)): small and slight, unarmed, always
 front and centre and a stride ahead; she is the one rapping at the lens. **Her look (locked):** canary-yellow

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/bank-robbery-music/gang/video/bg-w-k36m-r2b-w-k36m.mp4",
+ "made": "2026-11-19T13:52:14+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Her canary-yellow balaclava is one smooth, seamless knitted dome over her whole head and face, like a blank mannequin head: plain canary knit with only the white ring and the red triangle on it, the knit lying flat and still over her face the whole time, her head always wrapped in yellow from every angle under the black hat. From the first frame the bright spark races along the fuse across the sunburst floor toward the black safe, scattering small sparks that drop and die out. The six crouching men stay crouched in their arc, puffing their cigars, smoke curling upward. In the middle, the small woman in the canary-yellow coat holds her blank masked face square to the lens, jabs a gloved finger at the cake, then at the lens, then rolls her shoulders in a slow, smug shrug, all swagger. The cake on the safe stays still. Locked-off camera, framing holds. SFX: hissing fizzing fuse, soft puffs of cigar smoke, distant ticking clock.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k36m.jpg",
+ "why": "Kai 2026-11-19: w-k36m showed an eye gap and a mouth gap in her mask from ~3.3 s (reads as a human under it); same still, mask sealed in the prompt",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/bank-robbery-music/gang/moodboard/w-k36m.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "w-k36m-r2b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T13:51:07.482Z"
+ }
+}

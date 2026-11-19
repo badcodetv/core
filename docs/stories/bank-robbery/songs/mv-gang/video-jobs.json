@@ -780,7 +780,7 @@
    "key": "k03-a",
    "n": 0,
    "still": "k03r3-a",
-   "motion": "Slow motion, as in the classic sideways-dive clich\u00e9. From the first frame the man keeps gliding through the air toward the left of frame, body horizontal, sinking very gently, both prop guns still pointed up at the ceiling, jacket tails rippling. The chandelier crystals keep falling slowly and twinkle; a few land and skitter on the marble. He stays fully in frame. Locked-off camera, framing holds; mask, suit and gloves unchanged. SFX: a slowed-down whoosh, tinkling glass. No speech, no music.\n\nThanks.",
+   "motion": "Slow motion, as in the classic sideways-dive cliché. From the first frame the man keeps gliding through the air toward the left of frame, body horizontal, sinking very gently, both prop guns still pointed up at the ceiling, jacket tails rippling. The chandelier crystals keep falling slowly and twinkle; a few land and skitter on the marble. He stays fully in frame. Locked-off camera, framing holds; mask, suit and gloves unchanged. SFX: a slowed-down whoosh, tinkling glass. No speech, no music.\n\nThanks.",
    "character": null,
    "why": "mv-gang r3 action clip, writer cw1"
   },
@@ -1292,7 +1292,7 @@
    "key": "k03m-a",
    "n": 0,
    "still": "k03r5-a",
-   "motion": "Slow motion, as in the classic sideways-dive clich\u00e9. From the first frame the man keeps gliding through the air toward the left of frame, body horizontal, sinking very gently, both prop guns still pointed up at the ceiling, jacket tails rippling. The chandelier crystals keep falling slowly and twinkle; a few land and skitter on the marble. He stays fully in frame. Locked-off camera, framing holds; mask, suit and gloves unchanged. SFX: a slowed-down whoosh, tinkling glass. No speech, no music.\n\nThanks.",
+   "motion": "Slow motion, as in the classic sideways-dive cliché. From the first frame the man keeps gliding through the air toward the left of frame, body horizontal, sinking very gently, both prop guns still pointed up at the ceiling, jacket tails rippling. The chandelier crystals keep falling slowly and twinkle; a few land and skitter on the marble. He stays fully in frame. Locked-off camera, framing holds; mask, suit and gloves unchanged. SFX: a slowed-down whoosh, tinkling glass. No speech, no music.\n\nThanks.",
    "character": null,
    "why": "mask fix of k03-a (r3/mask-audit.md): new still k03r5-a, same motion as k03-a"
   },
@@ -2187,6 +2187,56 @@
    "model": "Omni 1.2 Flash",
    "duration": 6,
    "why": "her in h18: Kai's fix pick (r5/h18-a.jpg, feedback/her-shots-r2), original motion + her swagger"
+  },
+  {
+   "key": "w-k36m-r2a",
+   "n": 0,
+   "still": "w-k36m",
+   "motion": "From the first frame the bright spark races along the fuse across the sunburst floor toward the black safe, scattering small sparks that drop and die out. The six crouching men stay crouched in their arc, puffing their cigars, smoke curling upward; nobody hurries. The small woman in the canary-yellow coat, crouched in the middle with empty gloved hands, keeps her masked face turned to the lens; she points at the cake, then at the lens, then gives a slow, smug shrug. She moves with swagger and attitude the whole time: hips leading, a loose bratty shoulder roll on the beat, never stiff. Her canary-yellow balaclava is one smooth, seamless knitted dome over her whole head and face, like a blank mannequin head: plain canary knit with only the white ring and the red triangle on it, the knit lying flat and still over her face the whole time, her head always wrapped in yellow from every angle under the black hat. The cake on the safe stays still. The men's masks, hats, clothes and gloves stay exactly the same. Locked-off camera, framing holds. SFX: hissing fizzing fuse, soft puffs of cigar smoke, distant ticking clock.\n\nThanks.",
+   "character": null,
+   "model": "Omni 1.2 Flash",
+   "duration": 6,
+   "why": "Kai 2026-11-19: w-k36m showed an eye gap and a mouth gap in her mask from ~3.3 s (reads as a human under it); same still, mask sealed in the prompt"
+  },
+  {
+   "key": "w-k36m-r2b",
+   "n": 0,
+   "still": "w-k36m",
+   "motion": "Her canary-yellow balaclava is one smooth, seamless knitted dome over her whole head and face, like a blank mannequin head: plain canary knit with only the white ring and the red triangle on it, the knit lying flat and still over her face the whole time, her head always wrapped in yellow from every angle under the black hat. From the first frame the bright spark races along the fuse across the sunburst floor toward the black safe, scattering small sparks that drop and die out. The six crouching men stay crouched in their arc, puffing their cigars, smoke curling upward. In the middle, the small woman in the canary-yellow coat holds her blank masked face square to the lens, jabs a gloved finger at the cake, then at the lens, then rolls her shoulders in a slow, smug shrug, all swagger. The cake on the safe stays still. Locked-off camera, framing holds. SFX: hissing fizzing fuse, soft puffs of cigar smoke, distant ticking clock.\n\nThanks.",
+   "character": null,
+   "model": "Omni 1.2 Flash",
+   "duration": 6,
+   "why": "Kai 2026-11-19: w-k36m showed an eye gap and a mouth gap in her mask from ~3.3 s (reads as a human under it); same still, mask sealed in the prompt"
+  },
+  {
+   "key": "w-v11x-r2a",
+   "n": 0,
+   "still": "w-v11x",
+   "motion": "Locked-off camera, no camera movement. The small woman in the canary-yellow coat stands on the bank steps facing the lens, other hand on her hip. From the first frame she raises one gloved index finger upright beside her face and wags it side to side, left, right, left, right, in a steady tick-tock on the beat, the clear universal gesture for \"no\", her head giving a small matching shake, mock-stern and sure of herself, and she keeps wagging it to the very end of the shot. She moves with swagger and attitude the whole time: chin up, a loose bratty shoulder roll, never stiff. Her canary-yellow balaclava is one smooth, seamless knitted dome over her whole head and face: plain canary knit with only the white ring and the red triangle on it, the knit lying flat and still over her face the whole time.\n\nThanks.",
+   "character": null,
+   "model": "Omni 1.2 Flash",
+   "duration": 6,
+   "why": "Kai 2026-11-19: end the film on her wagging her finger side to side, 'no' (the 10H3 ending had no real wag)"
+  },
+  {
+   "key": "w-v11x-r2b",
+   "n": 0,
+   "still": "w-v11x",
+   "motion": "Locked-off camera, no camera movement. The small woman in the canary-yellow coat stands on the bank steps facing the lens, other hand on her hip. From the first frame she mimes holding a dainty invisible slice of cake between thumb and finger, little finger out, raises it to chin height and stops dead; then she drops it, and she raises one gloved index finger upright beside her face and wags it side to side, left, right, left, right, in a steady tick-tock on the beat, the clear universal gesture for \"no\", her head giving a small matching shake, mock-stern and sure of herself, wagging it to the very end of the shot. She moves with swagger and attitude the whole time: chin up, a loose bratty shoulder roll, never stiff. Her canary-yellow balaclava is one smooth, seamless knitted dome over her whole head and face: plain canary knit with only the white ring and the red triangle on it, the knit lying flat and still over her face the whole time.\n\nThanks.",
+   "character": null,
+   "model": "Omni 1.2 Flash",
+   "duration": 6,
+   "why": "Kai 2026-11-19: end the film on her wagging her finger side to side, 'no' (the 10H3 ending had no real wag)"
+  },
+  {
+   "key": "w-v11x-r2c",
+   "n": 0,
+   "still": "w-v11x",
+   "motion": "Locked-off camera, no camera movement. The small woman in the canary-yellow coat stands on the bank steps facing the lens, other hand on her hip. From the first frame she raises one gloved index finger upright beside her face and wags it side to side, left, right, left, right, in a steady tick-tock on the beat, the clear universal gesture for \"no\", her head giving a small matching shake, mock-stern and sure of herself; on the last beat she stops the finger dead and points it straight at the lens, and holds it there. She moves with swagger and attitude the whole time: chin up, a loose bratty shoulder roll, never stiff. Her canary-yellow balaclava is one smooth, seamless knitted dome over her whole head and face: plain canary knit with only the white ring and the red triangle on it, the knit lying flat and still over her face the whole time.\n\nThanks.",
+   "character": null,
+   "model": "Omni 1.2 Flash",
+   "duration": 6,
+   "why": "Kai 2026-11-19: end the film on her wagging her finger side to side, 'no' (the 10H3 ending had no real wag)"
   }
  ]
 }
