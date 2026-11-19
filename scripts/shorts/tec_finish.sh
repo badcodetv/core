@@ -22,6 +22,14 @@ case "$K" in
   cabletv)    VF="scale=1080:1920,setsar=1,scale=360:640,scale=1080:1920:flags=neighbor,chromashift=cbh=4:crh=-4,eq=saturation=1.1:contrast=1.05,geq=lum='lum(X,Y)*(0.82+0.18*mod(Y,4)/3)':cb='cb(X,Y)':cr='cr(X,Y)',format=yuv420p" ;;
   riso)       VF="scale=1080:1920,setsar=1,format=gray,curves=all='0/0 0.5/0.45 1/1',format=rgb24,lutrgb=r='val*0.98':g='val*0.6+(255-val)*0.35':b='val*0.35+(255-val)*0.4',format=yuv420p,noise=alls=8:allf=t" ;;
   goldleaf)   VF="scale=1080:1920,setsar=1,format=gray,curves=all='0/0 0.3/0.15 0.8/0.9 1/1',format=rgb24,lutrgb=r='val*1.0':g='val*0.78':b='val*0.32',format=yuv420p,noise=c0s=6:c0f=t" ;;
+  # Round 2, subtle (Jack, 2026-11-19: "less abrasive filters like more subtle ones and that fit the vibe"): each one a
+  # light touch on colour and grain, never a new picture.
+  warm35)     VF="scale=1080:1920,setsar=1,colorbalance=rh=0.025:gh=0.01:bh=-0.02:bs=0.01,curves=master='0/0.02 1/0.98',eq=saturation=0.95,format=yuv420p,noise=c0s=5:c0f=t" ;;
+  matte)      VF="scale=1080:1920,setsar=1,curves=master='0/0.07 0.5/0.5 1/0.94',eq=saturation=0.88:contrast=0.97,format=yuv420p,noise=c0s=3:c0f=t" ;;
+  dusk)       VF="scale=1080:1920,setsar=1,colorbalance=bs=0.035:gs=0.01:rh=0.03:bh=-0.02,eq=saturation=0.97,format=yuv420p,noise=c0s=4:c0f=t" ;;
+  bloom)      VF="scale=1080:1920,setsar=1,format=gbrp,split[b][h];[h]curves=all='0/0 0.7/0 1/1',gblur=sigma=14[g];[b][g]blend=all_mode=screen:all_opacity=0.18,format=yuv420p,noise=c0s=4:c0f=t" ;;
+  magazine)   VF="scale=1080:1920,setsar=1,curves=master='0/0.03 0.25/0.22 0.75/0.8 1/0.97',colorbalance=rm=0.02:gm=0.01:bm=-0.02,eq=saturation=0.9,vignette=angle=PI/7,format=yuv420p,noise=c0s=6:c0f=t" ;;
+  tapelight)  VF="scale=1080:1920,setsar=1,chromashift=cbh=2:crh=-2,eq=saturation=1.05:brightness=0.01,curves=master='0/0.03 1/0.98',format=yuv420p,noise=alls=4:allf=t" ;;
   *) echo "unknown finish $K" >&2; exit 2 ;;
 esac
 ffmpeg -nostdin -loglevel error -y -i "$IN" -vf "$VF" -map 0:v -map 0:a? -c:v libx264 -crf 18 -preset medium -c:a copy "$OUT"
