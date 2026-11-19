@@ -387,10 +387,12 @@
   "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/preview.mp4",
-  "round": "noaliens",
-  "what": "round 9 (Kai, 4 Nov, at534): Sandra's aliens punchline cut; the row ends on Derek"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-lip1119/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-lip1119/preview.mp4",
+  "round": "lip1119",
+  "what": "round 10 (Kai 19 Nov): noaliens with the seat row from his lip-sync picks (Sandra clip g, Derek clip d take c), each take placed whole (feedback/lipsync-picks-2026-11-19.json); 0:35",
+  "how": "python3 scripts/gpom/second-half-video/ending/cut_end.py C --tag lip1119",
+  "premiere_plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-lip1119/premiere-r5.json (sequence \"05 GPOM story C walk out r5\", built 19 Nov)"
  },
  "round1": {
   "date": "2026-10-22",
@@ -420,7 +422,7 @@
     "why": ""
    }
   },
-  "current": "r4",
+  "current": "r5",
   "r2": {
    "sequence": "05 GPOM story C walk out r2",
    "guid": "6c1a576d-5695-419a-a130-44224e3c08db",
@@ -467,6 +469,22 @@
     "state": "in sync",
     "why": ""
    }
+  },
+  "r5": {
+   "sequence": "05 GPOM story C walk out r5",
+   "guid": "671c3a44-619d-4314-9d4f-1e2d0693d7af",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-lip1119/edl.json",
+   "what": "lip1119: the seat row from Kai's lip-sync picks; 0:35",
+   "how": "premiere-plan.py --tag r5; import 19; create_sequence; eval place (19 placed, 0 failed)",
+   "check": {
+    "at": "2026-11-19T14:39",
+    "state": "in sync",
+    "why": ""
+   },
+   "master": "swapped into 00 RENDER story 19 Nov (nest at 150%, ripple; backup \"00 RENDER story (before lip sync A C D, 19 Nov)\" in zz old sequences); at 399.58 s",
+   "bin": "05 GPOM story C walk out r5",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-19"
   }
  },
  "cut_history": [
@@ -485,6 +503,12 @@
    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-nextday/preview.mp4",
    "round": "nextday",
    "what": "round 8 (Kai, 4 Nov): the \"Some negotiation later.\" card cut (at44); Maddie held still over the brow (at794)"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/preview.mp4",
+   "round": "noaliens",
+   "what": "round 9 (Kai, 4 Nov, at534): Sandra's aliens punchline cut; the row ends on Derek"
   }
  ],
  "video": {

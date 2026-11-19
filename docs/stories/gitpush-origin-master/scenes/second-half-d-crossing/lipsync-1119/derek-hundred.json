@@ -1,0 +1,164 @@
+{
+ "d3-13-v1t1.wav": {
+  "text": "Hundred. <long pause> What will it feel like?",
+  "miss": [
+   "hundred",
+   "what",
+   "will",
+   "it",
+   "feel",
+   "like"
+  ],
+  "heard": " probably a lot",
+  "dur": 6.2,
+  "speech": [
+   0.21,
+   5.98
+  ]
+ },
+ "d3-13-v1t2.wav": {
+  "text": "Hundred. <long pause> What will it feel like?",
+  "miss": [
+   "hundred",
+   "what",
+   "it",
+   "feel",
+   "like"
+  ],
+  "heard": " i will live for your life",
+  "dur": 6.48,
+  "speech": [
+   0.26,
+   5.41
+  ]
+ },
+ "d3-13-v1t3.wav": {
+  "text": "Hundred. <long pause> What will it feel like?",
+  "miss": [
+   "hundred",
+   "feel"
+  ],
+  "heard": " what will it fail like",
+  "dur": 5.8,
+  "speech": [
+   0.25,
+   5.3
+  ]
+ },
+ "d3-13-v2t1.wav": {
+  "text": "Hundred... <short pause> What will it feel like?",
+  "miss": [
+   "hundred",
+   "feel"
+  ],
+  "heard": " what will it fail like",
+  "dur": 5.76,
+  "speech": [
+   0.25,
+   5.33
+  ]
+ },
+ "d3-13-v2t2.wav": {
+  "text": "Hundred... <short pause> What will it feel like?",
+  "miss": [
+   "hundred",
+   ""
+  ],
+  "heard": "what will it feel like",
+  "dur": 5.76,
+  "speech": [
+   0.39,
+   5.41
+  ]
+ },
+ "d3-13-v2t3.wav": {
+  "text": "Hundred... <short pause> What will it feel like?",
+  "miss": [],
+  "heard": " what will it feel like",
+  "dur": 4.76,
+  "speech": [
+   0.28,
+   4.4
+  ],
+  "note": "whisper writes \"Hundred\" as the number 100, which the word check reads as an empty word (it does the same on the take in the cut, r20cd); the rest heard exactly"
+ },
+ "d3-13-v3t1.wav": {
+  "text": "Hundred. ... What will it feel like?",
+  "miss": [
+   "hundred",
+   "",
+   "it"
+  ],
+  "heard": "what will he feel like",
+  "dur": 6.68,
+  "speech": [
+   0.28,
+   5.89
+  ]
+ },
+ "d3-13-v3t2.wav": {
+  "text": "Hundred. ... What will it feel like?",
+  "miss": [
+   "hundred",
+   "what",
+   "will",
+   "it",
+   "feel"
+  ],
+  "heard": " not really fair like",
+  "dur": 5.76,
+  "speech": [
+   0.41,
+   5.33
+  ]
+ },
+ "d3-13-v3t3.wav": {
+  "text": "Hundred. ... What will it feel like?",
+  "miss": [],
+  "heard": " what will it feel like",
+  "dur": 4.68,
+  "speech": [
+   0.27,
+   4.41
+  ],
+  "note": "whisper writes \"Hundred\" as the number 100, which the word check reads as an empty word (it does the same on the take in the cut, r20cd); the rest heard exactly"
+ },
+ "d3-13-v4t1.wav": {
+  "text": "Hundred. <short pause> What will it feel like?",
+  "miss": [],
+  "heard": " what will it feel like",
+  "dur": 4.12,
+  "speech": [
+   0.25,
+   3.79
+  ],
+  "note": "whisper writes \"Hundred\" as the number 100, which the word check reads as an empty word (it does the same on the take in the cut, r20cd); the rest heard exactly"
+ },
+ "d3-13-v4t2.wav": {
+  "text": "Hundred. <short pause> What will it feel like?",
+  "miss": [
+   "hundred",
+   "it",
+   "feel"
+  ],
+  "heard": " what will he fail like",
+  "dur": 5.76,
+  "speech": [
+   0.19,
+   5.38
+  ]
+ },
+ "d3-13-v4t3.wav": {
+  "text": "Hundred. <short pause> What will it feel like?",
+  "miss": [
+   "hundred",
+   ""
+  ],
+  "heard": "what will it feel like",
+  "dur": 4.24,
+  "speech": [
+   0.27,
+   3.79
+  ]
+ }
+}

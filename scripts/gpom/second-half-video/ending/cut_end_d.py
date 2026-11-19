@@ -70,6 +70,34 @@ R9 = E.TAG in ('r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r1
 R8 = E.TAG in ('r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai, 6 Nov, timeline r7 notes: cut to the chase (at1400), no tea (at1750), cello from 'they sit' (at1849), hands straight to white (at2360)
 R7 = E.TAG in ('r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # Kai, 6 Nov: dialogue page draft 1F (the wafer: what it costs) + 2D (the goodbye)
 R5 = E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22', 'r23')  # r6: the same edit, with the re-made suits (D00r7) and tea (D06r7) shots
+# lip1119 (Kai, 19 Nov, lip-sync picks page HKTfRjjzyy8kaayEBKZmaM): r23 with the talking shots re-made by the pause-tag
+# method (lipsync-d-1119.py): new Omni clips, each take placed whole at the onset and tempo the page showed. Derek's
+# "Hundred. ... What will it feel like?" (off screen) is his new reading v3t3 (derek-hundred-1119.py).
+LIP = E.TAG == 'lip1119'
+if LIP:
+    R20 = R17 = R16 = R15 = R14 = R13 = R11 = R9 = R8 = R7 = R5 = True
+LIPD = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D'
+LIP_PICKS = {  # fits.json top rows Kai picked: d1-1 p1, d3-10 p3, d3-14 p1
+    'd1-1': dict(pick='p1', clip='ld-Ld11a-sandra-D01h.mp4', take='d1-1-b.wav', at=1.9792, tempo=1.15, frm=0.24, to=2.66),
+    'd3-10': dict(pick='p3', clip='ld-Ld310d-lady-D11c6.mp4', take='d3-10-a.wav', at=1.3125, tempo=1.13, frm=0.26, to=1.55),
+    'd3-14': dict(pick='p1', clip='ld-Ld314b-sandra-D08c.mp4', take='d3-14-a.wav', at=1.0982, tempo=1.14, frm=0.27, to=4.91)}
+LIP_D313 = 'voices/d3-13-derek-lip1119-v3t3.wav'  # copied in from lipsync-2026-11-18/D/voices/d3-13-v3t3.wav
+
+
+def lip_say(S, ln, key, stem, t, beat, i, who, lufs):
+    """Kai's pick for line ln: the whole take from its speech start, at its tempo, starting at timeline t."""
+    P = LIP_PICKS[ln]
+    src = f"{LIPD}/voices/{P['take']}"
+    e = S.c.say(stem, src, P['frm'], P['to'], t, f"{beat} line {i} {who} (lip-sync pick {P['pick']}: whole take, "
+                f"x{P['tempo']})", tempo=P['tempo'], lufs=lufs, ref=span(src))
+    S.c.line(beat_of(S.c, beat), i, who, t, e - t, S.sc.text(key), by_of(S.sc, key))
+    return e
+
+
+def lip_clip(ln):
+    return pathlib.Path(f"{LIPD}/video/{LIP_PICKS[ln]['clip']}")
+
+
 I16N, PULSE16N = 1.9, 3.0  # D16n-t1: her lamp glows at ~3.0 s, then she turns to face the chairs (4-6 s); 'Boss...' on the glow
 INTERIOR_EXCLUDE = {'D14'}  # the dusk exterior keeps its own light
 BEACON = {'D00': ([536, 111], 34), 'D03': ([642, 455], 16), 'D03c': ([432, 92], 24), 'D08': ([627, 390], 20), 'D11': ([354, 290], 24),
@@ -187,14 +215,21 @@ def build(sc):
     zero01 = cut01 - i01
     S.piece('D00', S.clip('D00'), 0.0, 0.0, cut01, 'd1', glow=True, zoom=[[0.0, 1.035]])
     k = 'd1-1-sandra'
+    if LIP:  # the new D01h clip says the whole line on her face: the take whole, at the page's onset
+        P = LIP_PICKS['d1-1']
+        t1 = cut01 + P['at'] - i01
+        e1 = lip_say(S, 'd1-1', k, 'vox-sandra', t1, 'd1', 1, 'sandra', -15.0)
+        cut02 = fr(e1 + 0.35)
+        S.piece('D01h', lip_clip('d1-1'), i01, cut01, cut02, 'd1')
     t1 = zero01 + 1.55  # "I" 0.13 s after her mouth opens; the p of "hope" on her lips shut at ~1.9
     # the p of "hope" releases at ~0.64-0.66 in the take: the first cut there was heard "Oh, this..."
-    say('vox-sandra', k, 0.22, 0.67, t1, 'd1 line 1 sandra: "I hope" (lip-sync, x1.0)', lufs=-15.0)
-    e1 = say('vox-sandra', k, 0.67, 2.42, zero01 + 2.09, 'd1 line 1 sandra: "this bloody" on her mouth, "plan works." '
-             'over the cut to D02 (x1.0)', lufs=-15.0)
-    c.line(b, 1, 'sandra', t1, e1 - t1, sc.text(k), 'kai')
-    cut02 = fr(zero01 + 2.66)
-    S.piece('D01h', S.clip('D01h'), i01, cut01, cut02, 'd1')
+    if not LIP:
+        say('vox-sandra', k, 0.22, 0.67, t1, 'd1 line 1 sandra: "I hope" (lip-sync, x1.0)', lufs=-15.0)
+        e1 = say('vox-sandra', k, 0.67, 2.42, zero01 + 2.09, 'd1 line 1 sandra: "this bloody" on her mouth, "plan works." '
+                 'over the cut to D02 (x1.0)', lufs=-15.0)
+        c.line(b, 1, 'sandra', t1, e1 - t1, sc.text(k), 'kai')
+        cut02 = fr(zero01 + 2.66)
+        S.piece('D01h', S.clip('D01h'), i01, cut01, cut02, 'd1')
     m['fussy'] = e1
     t = c.close(b, cut02)
     c.flags.append('d1 (Kai ld1-0/ld1-1): Maddie says "Suits on, please. It\'s a clean room." over D00 (still the battered '
@@ -271,7 +306,11 @@ def build(sc):
                 S.piece('D05', sc.picks['picks']['D05']['file'], 0.0, cut05, cut11c, 'd3', still=True,
                         zoom=[[0.0, 1.04], [1.0, 1.04], [d05, 1.18]], rot=[[0.0, 0.0], [1.0, 0.0], [d05, 3.0]])
             i11c = 0.5
-            e10 = S.human('vox-lady', 'd3-10-lady', fr(cut11c + 0.6), 'd3', 10, 'lady', lufs=-17.0)
+            if LIP:  # her voice where it was (0.6 s into the shot); the new clip starts so her mouth opens under it
+                i11c = fr(LIP_PICKS['d3-10']['at'] - 0.6)
+                e10 = lip_say(S, 'd3-10', 'd3-10-lady', 'vox-lady', fr(cut11c + 0.6), 'd3', 10, 'lady', -17.0)
+            else:
+                e10 = S.human('vox-lady', 'd3-10-lady', fr(cut11c + 0.6), 'd3', 10, 'lady', lufs=-17.0)
             m['lady_q'] = (fr(cut11c + 0.6), e10, cut11c, i11c)
             e11 = S.human('vox-maddie', 'd3-11-maddie', fr(e10 + 0.5), 'd3', 11, 'maddie')
             # Picture for the answer and the vow: the lady (D11c) for the start of the answer, her hands on the patchwork
@@ -279,7 +318,7 @@ def build(sc):
             # end of the vow on Maddie's beacon (D03c's unused tail); the cut to them sitting lands on "take a seat".
             MAX6 = 6.0 - 1 / FPS
             cut11b = fr(min(cut11c + MAX6 - i11c, max(e10 + 2.5, e11 + 0.4 - MAX6)))
-            S.piece('D11c', S.clip('D11c'), i11c, cut11c, cut11b, 'd3', grade=LIFT)
+            S.piece('D11c', lip_clip('d3-10') if LIP else S.clip('D11c'), i11c, cut11c, cut11b, 'd3', grade=LIFT)
             cut08 = fr(min(cut11b + MAX6, e11 + 0.4))  # if the answer runs past her hands, Sandra hears its end
             if not R14:
                 S.piece('D11b', S.clip('D11b'), 0.0, cut11b, cut08, 'd3', grade=LIFT)
@@ -293,7 +332,11 @@ def build(sc):
                 if R17:  # Kai's pick a-d: the dub is fitted to D08c-t2a's mouth, so it starts exactly 1.10 s into the clip
                     assert e11 + 0.2 <= cut08 + 1.10, ('the line before still talking when Sandra\'s mouth opens', e11, cut08)
                     a14 = fr(cut08 + 1.10)
-                e14 = S.human('vox-sandra', 'd3-14-sandra', a14, 'd3', 14, 'sandra', lufs=-17.0)
+                if LIP:  # the new D08c clip from its start, her take whole at the page's onset
+                    a14 = cut08 + LIP_PICKS['d3-14']['at']
+                    e14 = lip_say(S, 'd3-14', 'd3-14-sandra', 'vox-sandra', a14, 'd3', 14, 'sandra', -17.0)
+                else:
+                    e14 = S.human('vox-sandra', 'd3-14-sandra', a14, 'd3', 14, 'sandra', lufs=-17.0)
                 if R15:
                     # Kai's pick D08c b (chairs picks r14): Sandra and Derek with the clean, small Maddie behind. Omni 1.2
                     # made her speak; LatentSync redraws her mouth to the take (latentsync-r15, voice at m['d08c_voice']
@@ -301,7 +344,7 @@ def build(sc):
                     a15 = fr(e14 + 0.4)
                     # r17 (Kai at1300): cut slightly earlier, as Maddie starts the vow
                     cutm = fr(min(cut08 + 8.0 - 1 / FPS, a15 + (0.4 if R17 else 1.5)))
-                    S.piece('D08c', S.clip('D08c'), 0.0, cut08, cutm, 'd3')
+                    S.piece('D08c', lip_clip('d3-14') if LIP else S.clip('D08c'), 0.0, cut08, cutm, 'd3')
                     m['d08c_voice'] = (round(a14 - cut08, 3), cut08, cutm)
                     e15 = S.human('vox-maddie', 'd3-15-maddie', a15, 'd3', 15, 'maddie')
                     m['vow'] = (a15, e15)
@@ -1029,8 +1072,16 @@ def main():
     # r23ya on D11c-t2a's mouth). r18-r22 were cut with the Sulafat dub; they keep it, so rebuilding them gives them back.
     if E.TAG in ('r18', 'r19', 'r20', 'r21', 'r22'):
         sc.vox['lines']['d3-10-lady']['file'] = 'voices/d3-10-lady-r18-D11c-t2a-dub.wav'
+    if LIP:
+        sc.vox['lines']['d3-13-derek']['file'] = LIP_D313
     E.C3.ROOT = sc.media / (f'cut-{E.TAG}' if E.TAG else 'cut')
     c = scene_d(sc)
+    if LIP:
+        c.flags.append('Lip sync (Kai, 19 Nov picks): the three talking shots are the new clips from the pause-tag pass, each '
+                       'take placed whole as on the picks page: Sandra in the changing room on ld-Ld11a (take b, x1.15; the '
+                       'whole line now on her face, nothing over D02), the lady on ld-Ld310d (take a, x1.13), Sandra in the '
+                       'two-shot on ld-Ld314b (take a, x1.14, 9/10 words in time). Derek\'s "Hundred. ... What will it feel '
+                       'like?" is his new reading v3t3 (pick p2). Everything else as r23. Not listened to.')
     if E.TAG == 'r23':
         c.flags.append('D round 23 (Kai, 11 Nov): the old lady\'s "And afterwards?" re-voiced in her Yorkshire voice '
                        '(Vindemiatrix, as everywhere else since 3 Nov; it was still the posh Sulafat take). Take r23ya, '

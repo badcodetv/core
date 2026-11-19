@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/video/ld-Ld310a-lady-D11c6.mp4",
+ "made": "2026-11-19T10:37:05+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "One continuous close-up, the camera holds completely still on the old woman in glasses resting her head against the dark chair. For a moment she listens, eyes on someone off to the right. Then she lifts her chin slightly and asks, quietly and plainly: And afterwards? Then her lips close and stay closed; she waits for the answer, still looking right, and gives one small slow breath. No cuts, no music.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/moodboard/lady-D11c6.jpg",
+ "why": "lip-sync 19 Nov scene D: line d3-10 clip a",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/moodboard/lady-D11c6.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/lipsync-1119",
+  "key": "Ld310a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T10:33:31.137Z"
+ }
+}

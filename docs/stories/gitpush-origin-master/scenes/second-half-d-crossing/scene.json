@@ -1409,11 +1409,12 @@
     "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/preview.mp4",
-    "round": "r23",
-    "what": "round 23 (Kai 11 Nov, watching the story film): the old lady's 'And afterwards?' re-voiced in her Yorkshire voice (Vindemiatrix; it was still the old posh Sulafat), refitted to her mouth; rest as r22",
-    "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r23"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-lip1119/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-lip1119/preview.mp4",
+    "round": "lip1119",
+    "what": "lip-sync pass (Kai 19 Nov): r23 with the talking shots re-made by the pause-tag method, his picks from the page HKTfRjjzyy8kaayEBKZmaM (feedback/lipsync-picks-2026-11-19/), each take placed whole; Derek's \"Hundred...\" new reading v3t3; 1:28",
+    "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag lip1119",
+    "premiere_plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-lip1119/premiere-r20.json (sequence \"06 GPOM story D crossing r20\", built 19 Nov)"
   },
   "round3_media": {
     "date": "2026-10-23",
@@ -1438,7 +1439,7 @@
       "was_named": "gpom-5-D-crossing-r1",
       "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     },
-    "current": "r19",
+    "current": "r20",
     "r2": {
       "sequence": "06 GPOM story D crossing r2",
       "guid": "1ed65d4a-e317-4465-8969-d47edb3a44ba",
@@ -1751,6 +1752,22 @@
         "state": "in sync",
         "why": ""
       }
+    },
+    "r20": {
+      "sequence": "06 GPOM story D crossing r20",
+      "guid": "0dc8cc1a-36de-4361-baf2-196595e57f5f",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-lip1119/edl.json",
+      "what": "lip1119: the three talking shots from Kai's lip-sync picks (d1-1 p1, d3-10 p3, d3-14 p1) and Derek's new \"Hundred. ... What will it feel like?\" (p2); 1:28",
+      "how": "premiere-plan.py --tag r20; import 37; create_sequence; eval place (37 placed, 0 failed)",
+      "check": {
+        "at": "2026-11-19T14:39",
+        "state": "in sync",
+        "why": ""
+      },
+      "master": "swapped into 00 RENDER story 19 Nov (nest at 150%, ripple; backup \"00 RENDER story (before lip sync A C D, 19 Nov)\" in zz old sequences); at 434.71 s",
+      "bin": "06 GPOM story D crossing r20",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-19"
     }
   },
   "video": {
@@ -1866,6 +1883,13 @@
       "round": "r21",
       "what": "round 21 (Kai at1559): Derek's whisper 'my sweetheart'; rest as r20.",
       "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r21"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r23/preview.mp4",
+      "round": "r23",
+      "what": "round 23 (Kai 11 Nov, watching the story film): the old lady's 'And afterwards?' re-voiced in her Yorkshire voice (Vindemiatrix; it was still the old posh Sulafat), refitted to her mouth; rest as r22",
+      "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r23"
     }
   ],
   "dialogue": {

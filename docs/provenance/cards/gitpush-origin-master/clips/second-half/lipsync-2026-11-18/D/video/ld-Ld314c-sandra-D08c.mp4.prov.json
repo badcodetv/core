@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/video/ld-Ld314c-sandra-D08c.mp4",
+ "made": "2026-11-19T10:36:11+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "One continuous shot, the camera holds still on the two of them. The woman in the cream polo neck looks at the man and, quietly and uneasily, she says: I don't like the idea of... She stops, lips pressed shut, and glances down for a moment, then looks back up at him and says: it feels like dying. Then her mouth stays closed and she just looks at him, frightened, to the end. The man on the left listens, still. The small robot behind them waits. No cuts, no music.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/moodboard/sandra-D08c.jpg",
+ "why": "lip-sync 19 Nov scene D: line d3-14 clip c",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/moodboard/sandra-D08c.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/lipsync-1119",
+  "key": "Ld314c",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T10:34:20.591Z"
+ }
+}

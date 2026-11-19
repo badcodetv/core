@@ -54,10 +54,12 @@
   "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/preview.mp4",
-  "round": "d27",
-  "what": "cut3 d27 (Kai 12 Nov): scissors-only hologram (1:28, no time machine: ends on 'driving me barmy'), no overhead shot, 'Oh, hello!' at 2.75 s, row A (tightened), Derek +4 frames; 2:55"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d28/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d28/preview.mp4",
+  "round": "d28",
+  "what": "cut3 d28 (Kai 19 Nov): d27 with the row (beats 6-7) from his final lip-sync picks (feedback/lipsync-picks-2026-11-18-r3.json), each take placed whole on its picked clip, lines 0.10 s apart (row-r28/build_row.py); 2:58",
+  "how": "python3 scripts/gpom/second-half-video/row-r28/build_row.py && python3 scripts/gpom/second-half-video/cut3.py A --tag d28",
+  "premiere_plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d28/premiere-r22.json (sequence \"03 GPOM story A kill bots r22\", built 19 Nov)"
  },
  "premiere": {
   "rough1": {
@@ -76,7 +78,7 @@
     "why": ""
    }
   },
-  "current": "r21",
+  "current": "r22",
   "r2": {
    "sequence": "gpom-2-A-killbots-r2",
    "guid": "aa1a4760-5308-4c2c-a37b-b0de52256eba",
@@ -408,6 +410,22 @@
     "state": "in sync",
     "why": ""
    }
+  },
+  "r22": {
+   "sequence": "03 GPOM story A kill bots r22",
+   "guid": "98fbd07e-fa82-4cf5-9313-2ebd1c8138b2",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d28/edl.json",
+   "what": "cut3 d28: the row from Kai's lip-sync picks; 2:58",
+   "how": "premiere-plan.py --tag r22; import 49; create_sequence; eval place (51 placed, 0 failed)",
+   "check": {
+    "at": "2026-11-19T14:39",
+    "state": "in sync",
+    "why": ""
+   },
+   "master": "swapped into 00 RENDER story 19 Nov (nest at 150%, ripple; backup \"00 RENDER story (before lip sync A C D, 19 Nov)\" in zz old sequences); at 150.92 s",
+   "bin": "03 GPOM story A kill bots r22",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-19"
   }
  },
  "cut_history": [
@@ -505,6 +523,12 @@
    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d16/preview.mp4",
    "round": "d16",
    "what": "round 18 (Kai, 5 Nov meeting): faster voices: the row sped picture+voice together (6-0 x1.15, 7d-0 x1.08, 7-0/7d-1/7-2 x1.15), 0.2 s gaps; Maddie re-voiced fast (11-0, 10b-0, 12-0); boss re-recorded in Suno (tight takes); 3:08"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27/preview.mp4",
+   "round": "d27",
+   "what": "cut3 d27 (Kai 12 Nov): scissors-only hologram (1:28, no time machine: ends on 'driving me barmy'), no overhead shot, 'Oh, hello!' at 2.75 s, row A (tightened), Derek +4 frames; 2:55"
   }
  ],
  "dialogue": {

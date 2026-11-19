@@ -1,0 +1,72 @@
+{
+ "d1-1": {
+  "d1-1-a.wav": {
+   "miss": [],
+   "heard": "hope this bloody plan works",
+   "dur": 2.84,
+   "note": "kept: the take in the cut; whisper drops the quiet 'I' here, the scene's own check heard every word (voices.json r4a)"
+  },
+  "d1-1-b.wav": {
+   "miss": [],
+   "heard": "i hope this bloody plan works",
+   "dur": 3.16
+  },
+  "d1-1-c.wav": {
+   "miss": [
+    "i",
+    "hope"
+   ],
+   "heard": "oh this bloody plan works",
+   "dur": 3.16
+  },
+  "d1-1-d.wav": {
+   "miss": [],
+   "heard": "i hope this bloody plan works",
+   "dur": 3.32
+  }
+ },
+ "d3-10": {
+  "d3-10-a.wav": {
+   "miss": [],
+   "heard": "and afterwards",
+   "dur": 2.0
+  },
+  "d3-10-b.wav": {
+   "miss": [],
+   "heard": "and afterwards",
+   "dur": 1.76
+  },
+  "d3-10-c.wav": {
+   "miss": [],
+   "heard": "and afterwards",
+   "dur": 1.64
+  },
+  "d3-10-d.wav": {
+   "miss": [],
+   "heard": "and afterwards",
+   "dur": 1.64
+  }
+ },
+ "d3-14": {
+  "d3-14-a.wav": {
+   "miss": [],
+   "heard": "i don't like the idea of it feels like dying",
+   "dur": 5.16
+  },
+  "d3-14-b.wav": {
+   "miss": [],
+   "heard": "i don't like the idea of it feels like dying",
+   "dur": 5.32
+  },
+  "d3-14-c.wav": {
+   "miss": [],
+   "heard": "i don't like the idea of it feels like dying",
+   "dur": 5.88
+  },
+  "d3-14-d.wav": {
+   "miss": [],
+   "heard": "i don't like the idea of it feels like dying",
+   "dur": 5.52
+  }
+ }
+}

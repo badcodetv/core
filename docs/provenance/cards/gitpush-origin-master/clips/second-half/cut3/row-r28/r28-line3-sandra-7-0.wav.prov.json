@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r28/r28-line3-sandra-7-0.wav",
+ "made": "2026-11-19T10:34:15+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "row-r28/build_row.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/A/video/la-L70g-sandra-SB07b.mp4",
+ "why": "scene A d28 row line 3 (7-0): Kai's lip-sync pick p2 (r3), whole take at 0.0 s x1.14"
+}

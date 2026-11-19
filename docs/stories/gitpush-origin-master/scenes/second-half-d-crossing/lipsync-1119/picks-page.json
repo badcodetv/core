@@ -1,0 +1,135 @@
+{
+ "title": "Scene D Lip Sync",
+ "eyebrow": "GPOM second half \u00b7 scene D \u00b7 the clean room",
+ "heading": "Scene D: pick the lip sync for each line",
+ "intro": "Same method as scenes A and C: new talking clips from Flow, each voice take placed whole (never cut up, never sped past 1.15x), ranked by how many words land on the mouth. \"now\" is what is in the cut today. Pick one per line by sync and by whether the voice sounds like her; add a note if none is right.",
+ "sections": [
+  {
+   "h": "Three lines",
+   "lede": "Sandra twice, the old lady once.",
+   "groups": [
+    {
+     "slot": "D-d1-1",
+     "title": "Sandra, changing room (D01h)",
+     "line": "I hope this bloody plan works.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/d1-1-now.mp4",
+       "label": "now: in the cut (the shot is 2.0 s; \"plan works\" plays over the next shot)"
+      },
+      {
+       "id": "p1",
+       "src": "v/d1-1-pick1.mp4",
+       "label": "p1: new clip a, voice take b, 5 of 6 words on time, voice at 1.15x"
+      },
+      {
+       "id": "p2",
+       "src": "v/d1-1-pick2.mp4",
+       "label": "p2: new clip f, voice take b, 5 of 6 words on time, voice at 1.03x"
+      },
+      {
+       "id": "p3",
+       "src": "v/d1-1-pick3.mp4",
+       "label": "p3: new clip d, voice take b, 5 of 6 words on time, voice at 1.14x"
+      }
+     ]
+    },
+    {
+     "slot": "D-d3-10",
+     "title": "The old lady, close-up (D11c)",
+     "line": "And afterwards?",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/d3-10-now.mp4",
+       "label": "now: in the cut (voice cut up phrase by phrase, the old way)"
+      },
+      {
+       "id": "p1",
+       "src": "v/d3-10-pick1.mp4",
+       "label": "p1: an older Flow clip, voice take a, 1 of 2 words on time, voice at 1.03x",
+       "warn": "Two words only: \"and\" is too short to time, so judge by eye"
+      },
+      {
+       "id": "p2",
+       "src": "v/d3-10-pick2.mp4",
+       "label": "p2: an older Flow clip, voice take a, 1 of 2 words on time, voice at 1.13x",
+       "warn": "Two words only: \"and\" is too short to time, so judge by eye"
+      },
+      {
+       "id": "p3",
+       "src": "v/d3-10-pick3.mp4",
+       "label": "p3: new clip d, voice take a, 1 of 2 words on time, voice at 1.13x",
+       "warn": "Two words only: \"and\" is too short to time, so judge by eye"
+      }
+     ]
+    },
+    {
+     "slot": "D-d3-14",
+     "title": "Sandra, two-shot with Derek (D08c)",
+     "line": "I don't like the idea of... it feels like dying.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/d3-14-now.mp4",
+       "label": "now: in the cut (voice cut up phrase by phrase, the old way)"
+      },
+      {
+       "id": "p1",
+       "src": "v/d3-14-pick1.mp4",
+       "label": "p1: new clip b, voice take a, 9 of 10 words on time, voice at 1.14x"
+      },
+      {
+       "id": "p2",
+       "src": "v/d3-14-pick2.mp4",
+       "label": "p2: new clip c, voice take a, 8 of 10 words on time, voice at 1.13x"
+      },
+      {
+       "id": "p3",
+       "src": "v/d3-14-pick3.mp4",
+       "label": "p3: an older Flow clip, voice take a, 8 of 10 words on time, voice at 1.15x"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Derek's line (voice only)",
+   "lede": "He isn't on screen, so nothing to sync: pick the reading. Same voice and direction as the take in the cut; each plays in place with Maddie's answer after it.",
+   "groups": [
+    {
+     "slot": "D-d3-13",
+     "title": "Derek, off screen over the hundred chairs",
+     "line": "Hundred. ... What will it feel like?",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "now",
+       "src": "v/hundred-now.mp4",
+       "label": "now: in the cut (your round 20 pick, \"curious, not depressed\")"
+      },
+      {
+       "id": "p1",
+       "src": "v/hundred-d3-13-v2t3.mp4",
+       "label": "p1: \"Hundred...\" then a short pause"
+      },
+      {
+       "id": "p2",
+       "src": "v/hundred-d3-13-v3t3.mp4",
+       "label": "p2: written the way the cut has it, \"Hundred. ... What\""
+      },
+      {
+       "id": "p3",
+       "src": "v/hundred-d3-13-v4t1.mp4",
+       "label": "p3: \"Hundred.\" then a short pause, the quickest"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

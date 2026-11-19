@@ -1,0 +1,11 @@
+{
+ "page": "https://claude.ai/artifact/2om1ZEtUKtgJfq96LhRoiz",
+ "read": "2026-11-19",
+ "by": "Kai",
+ "raw": "lipsync-picks-2026-11-19/picks/ (the page's db rows, no notes)",
+ "picks": {
+  "c4-0": {"option": "p3", "clip": "lc-Lc40g-sandra-C04r2a.mp4", "take": "c4-0-a.wav", "at": 2.0599, "tempo": 1.11, "frm": 0.3, "to": 2.61, "words_in_time": "7/8", "render": "pairs/c4-0-pick3.mp4"},
+  "c4-1": {"option": "p2", "clip": "lc-Lc41d-derek-C05r6b.mp4", "take": "c4-1-c.wav", "at": -0.0237, "tempo": 0.97, "frm": 0.18, "to": 4.71, "words_in_time": "9/12", "render": "pairs/c4-1-pick2.mp4", "note": "a plain clip, not the pause-as-action arm (m, 10/12): Kai chose the look over one word"}
+ },
+ "built": "cut_end.py C --tag lip1119 (19 Nov)"
+}

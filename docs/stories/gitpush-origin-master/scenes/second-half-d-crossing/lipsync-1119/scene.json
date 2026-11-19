@@ -1,0 +1,16 @@
+{
+ "story": "gitpush-origin-master",
+ "scene": "gpom-lipsync-d-1119",
+ "prefix": "ld",
+ "title": "GPOM scene D clean room: lip-sync pass 19 Nov",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D",
+ "flow_project": "462e2124-a6c6-4630-a121-7ee651daf338",
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 6
+ },
+ "about": "Kai 19 Nov: scene D talking lines with the pause-tag method. Script: scripts/gpom/second-half-video/lipsync-d-1119.py",
+ "picks_page": "https://claude.ai/artifact/HKTfRjjzyy8kaayEBKZmaM"
+}

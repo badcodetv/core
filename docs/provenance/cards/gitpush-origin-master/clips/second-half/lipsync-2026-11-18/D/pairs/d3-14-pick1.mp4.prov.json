@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/pairs/d3-14-pick1.mp4",
+ "made": "2026-11-19T12:25:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "lipsync-a-1118.py render",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/voices/d3-14-a.wav",
+ "why": "lip-sync pair for line d3-14: voice at 1.0982 s x1.14, score 0.637"
+}

@@ -28,6 +28,7 @@ SCENE = f'{REPO}/docs/stories/gitpush-origin-master/scenes/second-half-a-killbot
 CAST = f'{REPO}/docs/stories/gitpush-origin-master/scenes/second-half-cut3-cast.json'
 CUT = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d27'
 STILL = {'woman': 'sandra-SB07b', 'man': 'derek-SB07c'}
+FACE = {}
 FPS = 24
 PREFIX = 'la'
 CASTD = json.load(open(CAST))['cast']
@@ -222,8 +223,10 @@ def clips_of(line):
 def mouth(clip):
     os.makedirs(f'{MEDIA}/strips', exist_ok=True)  # media, not the repo (Kai 18 Nov: no images committed)
     strip = f'{MEDIA}/strips/{os.path.basename(clip)}-strip.jpg'
+    # two faces in frame (scene D, 19 Nov): FACE maps a still's name to which face is talking ('left'/'right', default 'big')
+    face = next((f for s, f in FACE.items() if s in os.path.basename(clip)), 'big')
     if not os.path.exists(strip + '.json'):
-        subprocess.run([vrf.LPY, f'{REPO}/scripts/lipsync/mouth-track.py', clip, strip], capture_output=True)
+        subprocess.run([vrf.LPY, f'{REPO}/scripts/lipsync/mouth-track.py', clip, strip, '--face', face], capture_output=True)
     js = json.load(open(strip + '.json'))
     return np.array([np.nan if x is None else x for x in js['scaled']], float)
 
@@ -298,10 +301,17 @@ def fit_pair(line, clip, take):
     a, b = speech_span(take)
     e = vrf.fine_env(take, a, b)
     # anchor on the first word both share: whisper hears a phantom "it" before Derek's "Doesn't" on many clips (18 Nov)
-    j = next(((i, k) for k, (x, _, _) in enumerate(tw[:3]) for i, (y, _) in enumerate(cw[:3]) if x == y), (0, 0))
-    first = cw[j[0]][1] if cw else 0.0
-    t0 = (tw[j[1]][1] - a) if tw else 0.0  # that word in the take, from its speech start
-    win = (max(-0.04, first - t0 - 0.35), first - t0 + 0.35)
+    # 19 Nov (scene D "And afterwards?"): whisper put the clip's first word at 0.0, before the mouth opens, which
+    # left an empty window; take the first shared word whose window can hold a take that never starts early
+    pairs = [(i, k) for k, (x, _, _) in enumerate(tw[:3]) for i, (y, _) in enumerate(cw[:3]) if x == y] or [(0, 0)]
+    # a word whisper starts at 0.0 in the file is a guess (it pins the first word to the start), not a time
+    pairs = [p for p in pairs if cw[p[0]][1] - lag > 0.05 and tw[p[1]][1] > 0.05] or pairs
+    for j in pairs:
+        first = cw[j[0]][1] if cw else 0.0
+        t0 = (tw[j[1]][1] - a) if tw else 0.0  # that word in the take, from its speech start
+        win = (max(-0.04, first - t0 - 0.35), first - t0 + 0.35)
+        if win[1] > win[0] + 0.1:
+            break
     sc, on, tempo, det = vrf.fit(r, e, tempos=np.arange(0.97, 1.151, 0.01), window=win)
     if on is None:
         return None

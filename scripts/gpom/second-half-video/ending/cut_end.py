@@ -53,14 +53,22 @@ C1_KEEP = False  # Kai reel at73: beat c1 (the door from inside) is cut
 ROUND_KEYS = ('file_round20', 'file_round19', 'file_round18', 'file_round17', 'file_round15', 'file_round13', 'file_round8', 'file_round7', 'file_round6', 'file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
-LATER = TAG in ('later', 'nextday', 'noaliens')
+LATER = TAG in ('later', 'nextday', 'noaliens', 'lip1119')
 # --tag nextday (Kai, 4 Nov, at44 + at794): the bridge before C now ends on its own "The next day." card, so C's
 # "Some negotiation later." card goes and C opens on the long walk; and C06 plays with Maddie held still
 # (hold_region.py) instead of sliding down the hill.
-NEXTDAY = TAG in ('nextday', 'noaliens')
+NEXTDAY = TAG in ('nextday', 'noaliens', 'lip1119')
 # --tag noaliens (Kai, 4 Nov, at534): round 8 plus Sandra's aliens punchline cut; Derek's "We're not coming back,
 # are we?" goes straight to the building.
-NOALIENS = TAG == 'noaliens'
+NOALIENS = TAG in ('noaliens', 'lip1119')
+# --tag lip1119 (Kai, 19 Nov): noaliens with the seat row from his lip-sync picks (lipsync-c-1118.py; picks page
+# https://claude.ai/artifact/2om1ZEtUKtgJfq96LhRoiz, feedback/lipsync-picks-2026-11-19/): each line its picked Omni clip
+# with its take placed WHOLE as on the page (one start, one tempo, never chopped).
+LIP19 = TAG == 'lip1119'
+LIPC = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/C'
+LIP19_PICKS = {  # from lipsync-1118/fits.json: Kai's p3 (Sandra) and p2 (Derek)
+    'c4-0': dict(clip='lc-Lc40g-sandra-C04r2a.mp4', take='c4-0-a.wav', at=2.0599, tempo=1.11, frm=0.3, to=2.61),
+    'c4-1': dict(clip='lc-Lc41d-derek-C05r6b.mp4', take='c4-1-c.wav', at=-0.0237, tempo=0.97, frm=0.18, to=4.71)}
 CARD = 'Some negotiation later.'  # Kai's words, 28 Oct
 CARD_D = 2.5
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
@@ -122,7 +130,7 @@ class Cut:
         ref=(a0, b0): take the gain from that whole span of src (the full atom) instead of from the fragment. A
         fragment under 0.4 s cannot be measured by ebur128 (review round 2: the 0.37 s "You don't." went in ~45 dB
         hot that way and dragged the whole of scene D down 10 dB in the loudness pass)."""
-        assert tempo >= 1.0, 'never slow speech'
+        assert tempo >= 0.97, 'never slow speech past the lip-sync method\'s 0.97 (lip-sync-dub skill, 18 Nov)'
         self.voices.append(dict(stem=stem, src=str(src), i=a, d=b - a, t=fr(t) if cut is None else t, chain=list(chain),
                                 lufs=lufs, what=what, tempo=tempo, cut=cut, ref=ref))
         return t + (b - a) / tempo
@@ -386,87 +394,112 @@ def scene_c(sc):
                see=('Sandra and Derek, walking. The row one last time, and what it now means: nobody is coming back.'
                     if NOALIENS else 'Sandra and Derek, walking. The row one last time, and what it now means: nobody is '
                     'coming back, and she is still right. He gives her a look.'))
-    i04 = 1.2
-    k = 'c4-0-sandra'
-    # C04 (c04r1-seat-t1): mouth shut to 2.25, speech 2.25-4.4; voice 0.30-2.56 at x1.07: the b of "bloody" lands
-    # on the lips shut at 3.12-3.37
-    a = s4 + 2.27 - i04
-    e = c.say('vox-sandra', sc.voice(k), 0.30, 2.56, a, 'c4 line 0 sandra (lip-sync, x1.07)', tempo=1.07, ref=speech(k))
-    c.line(b, 0, 'sandra', a, e - a, sc.text(k), by(k))
-    cut05 = fr(e + 0.25)
-    c.pic(sc.clip('C04'), i04, s4, cut05, 'c4')
-    k = 'c4-1-derek'
-    # C05, C round 6 (Kai at896: Derek walks ALONGSIDE Sandra): c05r6-t1. His mouth (mouth-map, --face left): open
-    # 0.21-0.92, lips shut 0.92-1.12 (the b of "bloody"), open 1.12-2.04, shut to ~3.2 (a breath 3.25-4.0), "We're not
-    # coming back, are we?" 4.62-6.04 (a closure 4.92-5.12). Omni's own audio runs ~0.45 s ahead of its picture (as on
-    # Karen), so the picture is the timing. Take r1c: phrase 1 0.24-2.34 (the b of "bloody" at 1.07), phrase 2 3.00-4.30.
-    # Phrase 1 whole at x1.15 from 0.25 puts the b of "bloody" at 0.97, on the closure; phrase 2 whole at x1.0 from 4.66.
-    D4 = [(0.24, 2.34, 0.25, 1.15, '"Doesn\'t bloody matter now, love."'), (3.00, 4.30, 4.66, 1.0, '"We\'re not coming back, are we?"')]
-    for v0, v1, at, tp, txt in D4:
-        e = c.say('vox-derek', sc.voice(k), v0, v1, cut05 + at, f'c4 line 1 derek: {txt} (lip-sync, x{tp})', tempo=tp,
-                  ref=speech(k))
-    a = cut05 + D4[0][2]
-    c.line(b, 1, 'derek', a, e - a, sc.text(k), by(k))
-    o05 = 6.1  # C round 6: his second phrase ends ~6.0 on c05r6-t1
-    cut04b = fr(cut05 + o05)
-    if NOALIENS:  # Kai at534: no punchline. C05 holds 0.7 s past his last word, then the building.
-        end_c4 = fr(cut05 + 6.8)
-        c.pic(sc.clip('C05'), 0.0, cut05, end_c4, 'c4')
+    if LIP19:
+        P0, P1 = LIP19_PICKS['c4-0'], LIP19_PICKS['c4-1']
+        c0, c1 = f"{LIPC}/video/{P0['clip']}", f"{LIPC}/video/{P1['clip']}"
+        at0, at1 = max(0.0, P0['at']), max(0.0, P1['at'])  # the page's render clamps an early start to 0: same here
+        i04 = fr(max(0.0, at0 - 1.0))  # about a second of her walking before she speaks, as before
+        a = s4 + at0 - i04
+        e = c.say('vox-sandra', f"{LIPC}/voices/{P0['take']}", P0['frm'], P0['to'], a,
+                  'c4 line 0 sandra (lip-sync pick p3: whole take, x1.11)', tempo=P0['tempo'], ref=speech('c4-0-sandra'))
+        c.line(b, 0, 'sandra', a + 0.03, e - a - 0.08, sc.text('c4-0-sandra'), by('c4-0-sandra'))
+        cut05 = fr(e + 0.25)
+        c.pic(c0, i04, s4, cut05, 'c4')
+        a = cut05 + at1
+        e = c.say('vox-derek', f"{LIPC}/voices/{P1['take']}", P1['frm'], P1['to'], a,
+                  'c4 line 1 derek (lip-sync pick p2: whole take, x0.97)', tempo=P1['tempo'], ref=speech('c4-1-derek'))
+        c.line(b, 1, 'derek', a + 0.03, e - a - 0.08, sc.text('c4-1-derek'), by('c4-1-derek'))
+        end_c4 = fr(min(cut05 + dur(c1) - 1 / FPS, e + 0.7))
+        c.pic(c1, 0.0, cut05, end_c4, 'c4')
         m['c4'] = (s4, end_c4)
-        m['c4_lines'] = (s4 + 2.27 - i04, e)
+        m['c4_lines'] = (s4 + at0 - i04, e)
         m['you'] = e
         t = c.close(b, end_c4)
-        c.flags.append('Round 9 (Kai, 4 Nov, at534): Sandra\'s "It does matter. In ten thousand years, when the aliens '
-                       'dig up that bunker, they\'ll know it was you." is cut, with her C04b shot and Derek\'s flat look. '
-                       'The row ends on Derek\'s "We\'re not coming back, are we?"; C05 holds 0.7 s past his last word, '
-                       'then the cut to the building.')
-    k = 'c4-2-sandra'
-    # C04b (c04r1-aliens-t1), in at 0.5: mouth parted and held to ~0.92 (first check put "It" 0.13 s before the
-    # full opening at 0.96: moved to 0.92); "It does" to 1.33, lips shut 1.375-1.42 for
-    # the m of "matter" (voice 1.11-1.17), "matter" 1.46-1.79; shut to 2.42; "In ten thousand years," 2.42-3.96;
-    # "when the aliens dig up that bunker," 4.17-6.0; "they'll know it was you." 6.08-6.88 (lips shut 6.50-6.58 for the
-    # w of "was", rounded on "you" 6.67-6.83). "bunker" keeps its soft "-er" tail (voice to 6.26: cut at 6.08, the
-    # mix was heard as "bunk they'll"). The voice's 0.25 s gap inside "It does" is dropped; its 0.5 s pause
-    # before "they'll" is not in her mouth, so it goes.
-    if not NOALIENS:
-        i4b = 0.5
-        t4b = cut04b - i4b
-        S4 = [(0.29, 0.62, 0.92, 1.0, '"It"'), (0.84, 1.82, 1.24, 1.3, '"does matter."'),
-              (2.36, 3.96, 2.40, 1.0, '"In ten thousand years,"'), (4.16, 6.26, 4.20, 1.12, '"when the aliens dig up that bunker,"'),
-              (6.54, 7.82, 6.10, 1.3, '"they\'ll know it was you."')]
-        for v0, v1, at, tp, txt in S4:
-            e = c.say('vox-sandra', sc.voice(k), v0, v1, t4b + at, f'c4 line 2 sandra: {txt} (lip-sync, x{tp})', tempo=tp,
+        c.flags.append('Lip sync (Kai, 19 Nov picks): the seat row is his picks: Sandra on clip lc-Lc40g with her take as it '
+                       'was (x1.11), Derek on lc-Lc41d with take c (x0.97), each placed whole as on the picks page, 7/8 and '
+                       '9/12 words in time. C05 holds 0.7 s past his last word, then the building. Not listened to.')
+    if not LIP19:  # the older rounds: the seat row phrase by phrase on the round-1/6 clips
+        i04 = 1.2
+        k = 'c4-0-sandra'
+        # C04 (c04r1-seat-t1): mouth shut to 2.25, speech 2.25-4.4; voice 0.30-2.56 at x1.07: the b of "bloody" lands
+        # on the lips shut at 3.12-3.37
+        a = s4 + 2.27 - i04
+        e = c.say('vox-sandra', sc.voice(k), 0.30, 2.56, a, 'c4 line 0 sandra (lip-sync, x1.07)', tempo=1.07, ref=speech(k))
+        c.line(b, 0, 'sandra', a, e - a, sc.text(k), by(k))
+        cut05 = fr(e + 0.25)
+        c.pic(sc.clip('C04'), i04, s4, cut05, 'c4')
+        k = 'c4-1-derek'
+        # C05, C round 6 (Kai at896: Derek walks ALONGSIDE Sandra): c05r6-t1. His mouth (mouth-map, --face left): open
+        # 0.21-0.92, lips shut 0.92-1.12 (the b of "bloody"), open 1.12-2.04, shut to ~3.2 (a breath 3.25-4.0), "We're not
+        # coming back, are we?" 4.62-6.04 (a closure 4.92-5.12). Omni's own audio runs ~0.45 s ahead of its picture (as on
+        # Karen), so the picture is the timing. Take r1c: phrase 1 0.24-2.34 (the b of "bloody" at 1.07), phrase 2 3.00-4.30.
+        # Phrase 1 whole at x1.15 from 0.25 puts the b of "bloody" at 0.97, on the closure; phrase 2 whole at x1.0 from 4.66.
+        D4 = [(0.24, 2.34, 0.25, 1.15, '"Doesn\'t bloody matter now, love."'), (3.00, 4.30, 4.66, 1.0, '"We\'re not coming back, are we?"')]
+        for v0, v1, at, tp, txt in D4:
+            e = c.say('vox-derek', sc.voice(k), v0, v1, cut05 + at, f'c4 line 1 derek: {txt} (lip-sync, x{tp})', tempo=tp,
                       ref=speech(k))
-        a = t4b + S4[0][2]
-        c.line(b, 2, 'sandra', a, e - a, sc.text(k), by(k))
-        out4b = 7.3  # Omni added "You cannot..." from 7.56
-        cutlook = fr(t4b + out4b)
-        c.pic(sc.clip('C04b'), i4b, cut04b, cutlook, 'c4')
-        look0, look1 = 6.2, 8.0 - 1 / FPS  # c05r6-t1: he turns his head to her from ~6 s
-        end_c4 = fr(cutlook + look1 - look0)
-        c.pic(sc.clip('C05'), look0, cutlook, end_c4, 'c4')
-        m['c4'] = (s4, end_c4)
-        m['c4_lines'] = (s4 + 2.27 - i04, e)
-        m['you'] = e
-        t = c.close(b, end_c4)
-    c.flags.append('C round 6 (Kai at896, pick C05r6-b): Derek now walks level with Sandra, shoulder to shoulder '
-                   '(c05r6-t1, 12 credits). His line is on his mouth in two phrases (x1.15 and x1.0), read from the '
-                   'picture, not from Omni\'s own audio; the flat look is the clip\'s last 1.8 s as he turns to her.')
-    c.flags.append('C round 6 (Kai at299, pick c01br6-a): the step-out is on scene B\'s trampled grass, no mud, Maddie '
-                   'knee-high (c01br6-t1, 6 s, 10 credits): they stride out, he shades his eyes, the crowd follows.')
-    c.flags.append('Round 1 (Kai, lc4-0/lc4-1/bc4, Q1 a): the seat is four shots now: C04 (her line) -> C05 (his) -> '
-                   'C04b (her punchline) -> C05 again for his flat look, no reply. All four lines are lip-synced phrase '
-                   'by phrase on the mouth (lip-sync-dub), never on Omni\'s own audio.')
-    c.flags.append('c4 lip-sync: Sandra\'s seat line x1.07 (the b of "bloody" on her shut lips). Derek in four pieces: '
-                   '"Doesn\'t" x1.0, "bloody matter now, love." x1.3 (the cap), "We\'re not coming" x1.0, "back, are '
-                   'we?" x1.0, each b landing on a lip closure (0.92-1.00 and 4.25-4.33 s of C05). Sandra\'s punchline in '
-                   'five pieces: x1.0 / x1.3 / x1.0 / x1.12 / x1.3. Her mouth gives the last phrase 0.8 s for 1.3 s of '
-                   'voice, so "they\'ll know it was you." is at the 1.3 cap and the take\'s 0.5 s pause before it is gone: '
-                   'the line to listen to for squeeze. A slower Omni take of that phrase alone would fix it.')
-    if not NOALIENS:
-      c.flags.append(f'c4: C04b goes in at 0.5 s (she has already turned to him; her mouth is parted and still to ~0.9 s) '
-                   f'and out at 7.3 s, before the words Omni invented from 7.56 s. Derek\'s look is C05 5.8-8.0 '
-                   f'({look1 - look0:.1f} s): he turns his head to her, mouth shut.')
+        a = cut05 + D4[0][2]
+        c.line(b, 1, 'derek', a, e - a, sc.text(k), by(k))
+        o05 = 6.1  # C round 6: his second phrase ends ~6.0 on c05r6-t1
+        cut04b = fr(cut05 + o05)
+        if NOALIENS:  # Kai at534: no punchline. C05 holds 0.7 s past his last word, then the building.
+            end_c4 = fr(cut05 + 6.8)
+            c.pic(sc.clip('C05'), 0.0, cut05, end_c4, 'c4')
+            m['c4'] = (s4, end_c4)
+            m['c4_lines'] = (s4 + 2.27 - i04, e)
+            m['you'] = e
+            t = c.close(b, end_c4)
+            c.flags.append('Round 9 (Kai, 4 Nov, at534): Sandra\'s "It does matter. In ten thousand years, when the aliens '
+                           'dig up that bunker, they\'ll know it was you." is cut, with her C04b shot and Derek\'s flat look. '
+                           'The row ends on Derek\'s "We\'re not coming back, are we?"; C05 holds 0.7 s past his last word, '
+                           'then the cut to the building.')
+        k = 'c4-2-sandra'
+        # C04b (c04r1-aliens-t1), in at 0.5: mouth parted and held to ~0.92 (first check put "It" 0.13 s before the
+        # full opening at 0.96: moved to 0.92); "It does" to 1.33, lips shut 1.375-1.42 for
+        # the m of "matter" (voice 1.11-1.17), "matter" 1.46-1.79; shut to 2.42; "In ten thousand years," 2.42-3.96;
+        # "when the aliens dig up that bunker," 4.17-6.0; "they'll know it was you." 6.08-6.88 (lips shut 6.50-6.58 for the
+        # w of "was", rounded on "you" 6.67-6.83). "bunker" keeps its soft "-er" tail (voice to 6.26: cut at 6.08, the
+        # mix was heard as "bunk they'll"). The voice's 0.25 s gap inside "It does" is dropped; its 0.5 s pause
+        # before "they'll" is not in her mouth, so it goes.
+        if not NOALIENS:
+            i4b = 0.5
+            t4b = cut04b - i4b
+            S4 = [(0.29, 0.62, 0.92, 1.0, '"It"'), (0.84, 1.82, 1.24, 1.3, '"does matter."'),
+                  (2.36, 3.96, 2.40, 1.0, '"In ten thousand years,"'), (4.16, 6.26, 4.20, 1.12, '"when the aliens dig up that bunker,"'),
+                  (6.54, 7.82, 6.10, 1.3, '"they\'ll know it was you."')]
+            for v0, v1, at, tp, txt in S4:
+                e = c.say('vox-sandra', sc.voice(k), v0, v1, t4b + at, f'c4 line 2 sandra: {txt} (lip-sync, x{tp})', tempo=tp,
+                          ref=speech(k))
+            a = t4b + S4[0][2]
+            c.line(b, 2, 'sandra', a, e - a, sc.text(k), by(k))
+            out4b = 7.3  # Omni added "You cannot..." from 7.56
+            cutlook = fr(t4b + out4b)
+            c.pic(sc.clip('C04b'), i4b, cut04b, cutlook, 'c4')
+            look0, look1 = 6.2, 8.0 - 1 / FPS  # c05r6-t1: he turns his head to her from ~6 s
+            end_c4 = fr(cutlook + look1 - look0)
+            c.pic(sc.clip('C05'), look0, cutlook, end_c4, 'c4')
+            m['c4'] = (s4, end_c4)
+            m['c4_lines'] = (s4 + 2.27 - i04, e)
+            m['you'] = e
+            t = c.close(b, end_c4)
+        c.flags.append('C round 6 (Kai at896, pick C05r6-b): Derek now walks level with Sandra, shoulder to shoulder '
+                       '(c05r6-t1, 12 credits). His line is on his mouth in two phrases (x1.15 and x1.0), read from the '
+                       'picture, not from Omni\'s own audio; the flat look is the clip\'s last 1.8 s as he turns to her.')
+        c.flags.append('C round 6 (Kai at299, pick c01br6-a): the step-out is on scene B\'s trampled grass, no mud, Maddie '
+                       'knee-high (c01br6-t1, 6 s, 10 credits): they stride out, he shades his eyes, the crowd follows.')
+        c.flags.append('Round 1 (Kai, lc4-0/lc4-1/bc4, Q1 a): the seat is four shots now: C04 (her line) -> C05 (his) -> '
+                       'C04b (her punchline) -> C05 again for his flat look, no reply. All four lines are lip-synced phrase '
+                       'by phrase on the mouth (lip-sync-dub), never on Omni\'s own audio.')
+        c.flags.append('c4 lip-sync: Sandra\'s seat line x1.07 (the b of "bloody" on her shut lips). Derek in four pieces: '
+                       '"Doesn\'t" x1.0, "bloody matter now, love." x1.3 (the cap), "We\'re not coming" x1.0, "back, are '
+                       'we?" x1.0, each b landing on a lip closure (0.92-1.00 and 4.25-4.33 s of C05). Sandra\'s punchline in '
+                       'five pieces: x1.0 / x1.3 / x1.0 / x1.12 / x1.3. Her mouth gives the last phrase 0.8 s for 1.3 s of '
+                       'voice, so "they\'ll know it was you." is at the 1.3 cap and the take\'s 0.5 s pause before it is gone: '
+                       'the line to listen to for squeeze. A slower Omni take of that phrase alone would fix it.')
+        if not NOALIENS:
+          c.flags.append(f'c4: C04b goes in at 0.5 s (she has already turned to him; her mouth is parted and still to ~0.9 s) '
+                       f'and out at 7.3 s, before the words Omni invented from 7.56 s. Derek\'s look is C05 5.8-8.0 '
+                       f'({look1 - look0:.1f} s): he turns his head to her, mouth shut.')
 
     # ---- c5: over the brow (C06, round 2: the old man and his helper painted out, nobody turns; push 100 -> 112%).
     # Derek among the backs (no close-up was made, so no lip-sync). Round 2 (Kai, at1342): Maddie says nothing here;

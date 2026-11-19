@@ -68,14 +68,16 @@ NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'm
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
 # d25s (12 Nov, scissors): exactly d24 but with the scissors hologram (design/2026-11-12-gpom-hologram-1f5-scissors). It runs every
 # d24 branch (TAG is set to 'd24' for them) and only its output folder (A-d25s) and the hologram files differ (D25S below).
-D25S = TAG in ('d25s', 'd26a', 'd26b', 'd26c', 'd27')
+D25S = TAG in ('d25s', 'd26a', 'd26b', 'd26c', 'd27', 'd28')
 # d26a/b/c (12 Nov, Kai's notes on d25s, his pick): d25s plus no overhead shot in the opening (side, then front), "Oh, hello!"
 # about 2.75 s in (the head trimmed), Derek's "But the world ended" picture slid 4 frames to his mouth, and three ways to cut
 # the row (row_d26): a = same shots, gaps closed; b = overlaps and a reaction cutaway; c = brutal, three lines.
 # d27 (12 Nov, Kai picked d26a): d26a with no time machine yet ("Don't let the viewer know until later"): the scissors hologram
 # re-rendered without f07a and its arc (make.py --d27, render-1f5-scissors-d27-24), ending on f06 "...driving me barmy".
-D27 = TAG == 'd27'
-D26 = TAG in ('d26a', 'd26b', 'd26c', 'd27')
+D27 = TAG in ('d27', 'd28')
+# d28 (19 Nov, Kai: build the lip-sync picks in): d27 with the row from his final lip-sync picks (row-r28, row_r28)
+D28 = TAG == 'd28'
+D26 = TAG in ('d26a', 'd26b', 'd26c', 'd27', 'd28')
 ROW26 = 'a' if D27 else TAG[-1] if D26 else None
 OUT_TAG_S = TAG
 if D25S:
@@ -609,6 +611,7 @@ if D22:
     H_EDIT = HOLO / 'render-1f3-24' / 'edit.json'
     H_LINES = S.REPO / 'design' / '2026-11-05-gpom-meeting' / 'voice-1f' / 'lines-1f3.json'
 ROW24 = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/row-spec.json')
+ROW28 = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r28/row-spec.json')
 DET24 = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/detect-spec.json')
 if D23:
     H_PIC = HOLO / 'render-1f4-24' / 'hologram-1f4-beads-24fps-picture.mp4'
@@ -1632,6 +1635,36 @@ def row_d26(c, t0, m):
     return c.close(b7, t0 + total)
 
 
+def row_r28(c, t0, m):
+    """Round 28 (Kai, 19 Nov): the row from his final lip-sync picks (feedback/lipsync-picks-2026-11-18-r3.json; spec
+    row-r28/row-spec.json by row-r28/build_row.py). Each voice wav is its whole picked take placed on its picked clip exactly
+    as on the picks page, file time = clip time, so laying file and picture from the same in-point keeps the fit."""
+    sp = json.loads(ROW28.read_text())
+    b6 = c.beat('6', 'The lavatory', t0, act='The row', see='Hard cut to full volume: Sandra.')
+    b7 = None
+    whos = {'Sandra': 'woman', 'Derek': 'man'}
+    for sh, v in zip(sp['shots'], sp['voices']):
+        if sh['beat'] == '7' and b7 is None:
+            c.close(b6, fr(t0 + sh['offset']))
+            b7 = c.beat('7', 'The row, up close', fr(t0 + sh['offset']), act='The row',
+                        see='Each line on the face that says it, lip-synced: Derek, Sandra, Derek, Sandra.')
+        a = t0 + sh['offset']
+        c.pic(sh['file'], sh['in'], a, a + sh['dur'], sh['beat'], source=sh['file'])
+        # pic() rounds start and in-point to whole frames; lay the voice on the rounded picture so the lock is exact
+        dz = (fr(a) - fr(sh['in'])) - (a - sh['in'])
+        c.dub(v['stem'], v['file'], v['in'], v['in'] + v['dur'], a + dz, f"row r28 line {v['line']} ({v['who']}, lip-sync pick)",
+              chain=sp['chain'])
+        bb = b6 if sh['beat'] == '6' else b7
+        s0, s1 = v['speech']
+        c.line(bb, len(bb['lines']), whos[v['who']], a + s0 - sh['in'], s1 - s0, v['text'], 'kai')
+    m['s6'] = t0
+    end = fr(t0 + sp['total'])
+    c.flags.append(f'Beats 6-7, round 28 (Kai, 19 Nov): the row from his final lip-sync picks, {sp["total"]:.2f} s (d27: d26a). '
+                   'Each line is its picked clip with its picked take placed whole, as on the picks page; lines 0.10 s apart. '
+                   'Not listened to.')
+    return c.close(b7, end)
+
+
 def detect_r24(c, t0, m):
     """Round 24 (Kai at4401): a kill bot hears them, ~3 s between the row and the motorway: the vent on the hill, the
     turret's lenses snapping round (white lamp), its teal patrol HUD locking ORGANIC SIGNAL with the row on the meter."""
@@ -1655,7 +1688,7 @@ def rest_d15(c, t, m):
     8, 9b and 10a are gone."""
     # ---- 6-7: the row, exactly as round 16, from a hard cut (round 18: sped, picture and voice together)
     if D22:
-        t = row_d26(c, t, m) if D26 else row_r24(c, t, m)
+        t = row_r28(c, t, m) if D28 else row_d26(c, t, m) if D26 else row_r24(c, t, m)
         t = detect_r24(c, t, m)
     else:
         t = row_d16(c, t, m, LINES) if D16 else row_d8(c, t, m, LINES)

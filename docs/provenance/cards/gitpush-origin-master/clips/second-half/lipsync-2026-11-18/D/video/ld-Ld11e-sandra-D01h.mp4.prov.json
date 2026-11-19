@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/video/ld-Ld11e-sandra-D01h.mp4",
+ "made": "2026-11-19T10:36:11+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. In the white changing room the old woman on the left fastens her white suit and says nothing. The woman on the right, in the cream polo neck and an open white suit, stands with her mouth closed for a moment, then, worried, under her breath, she says: I hope this bloody plan works. Then she closes her mouth and looks ahead. The people behind keep pulling on their suits. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/moodboard/sandra-D01h.jpg",
+ "why": "lip-sync 19 Nov scene D: line d1-1 clip e",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/lipsync-2026-11-18/D/moodboard/sandra-D01h.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/lipsync-1119",
+  "key": "Ld11e",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T10:33:20.276Z"
+ }
+}

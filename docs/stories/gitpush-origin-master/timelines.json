@@ -2,7 +2,7 @@
  "story": "gitpush-origin-master",
  "title": "GitPush Origin Master",
  "url": "https://claude.ai/artifact/AXJqmgAWTRhxK7fzMkKukp",
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "open_now": "mv-chorus-2",
  "intro": "The whole film, start to end, and the timeline page for each part. Open the lit one first. Older pages for the same part sit under \"Earlier pages\" so nothing gets lost.",
  "sections": [
@@ -161,12 +161,12 @@
    "id": "a-killbots",
    "group": "Part 2 · The humans (not in Premiere yet)",
    "name": "A · Kill bots",
-   "length": "2:55",
-   "state": "SHORTENED 12 Nov (Kai): scissors-only presentation, no time machine (ends 'driving me barmy'), no sky shot, 'Oh, hello!' at 2.75 s, row A · Premiere 03 GPOM story A kill bots r21, in sync, in 00 RENDER story at 2:30.92 (story film now 9:13) · the full presentation kept as 'the video Maddie left' (r20 + render-1f5-24/hologram-1f5-full-video-maddie-left.mp4) · owed by Kai: Derek's 'But the world ended, Sandra' lips",
+   "length": "2:58",
+   "state": "LIP SYNC 19 Nov (Kai: \"It's a cut\"): the bathroom row re-made by the pause-tag method from his picks, each take whole on its clip · Premiere 03 GPOM story A kill bots r22, in sync, in 00 RENDER story at 2:30.92 (story film now 9:16)",
    "tone": "ok",
    "scene": "scenes/second-half-a-killbots",
    "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
-   "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r21 (cut3 A-d27; radio cue from its stem); r20 kept (the full presentation); backup '00 RENDER story (before A r21, 12 Nov)' in zz old sequences",
+   "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r22 (cut3 A-d28); r21 kept; backup '00 RENDER story (before lip sync A C D, 19 Nov)' in zz old sequences",
    "what": "Maddie on the high street; 'we didn't realise how important you were... let me show you what we found'; her Storyverse hologram opens on the materialist stack (society to maths, then consciousness), then dialogue 1F: Derek picks toast and Sandra says sorry first (Kai's stills in the beads), qualia, the multiverse laughed off ('it just isn't decided yet'), a storyverse you write one decision at a time, no conscious decisions means no new training data ('he's driving me barmy'), 'of course he's built a time machine, it just needs consciousness to drive it'; the argument re-edited around Sandra; a kill bot hears them (vent, lenses, HUD), the kill bots, the call to the boss, the stand-down, \"That was close.\" Signed off at round 25.",
    "history": [
     {
@@ -283,7 +283,7 @@
     {
      "id": "c-walk-out",
      "name": "C · The walk out",
-     "state": "SIGNED OFF (round 9, Kai 4 Nov: \"perfect... No changes.\") · Premiere 05 GPOM story C walk out r4, in sync, in 00 RENDER story",
+     "state": "LIP SYNC 19 Nov: the seat row re-made from Kai's picks (Sandra clip g, Derek clip d) · Premiere 05 GPOM story C walk out r5, in sync, in 00 RENDER story at 6:39.58",
      "tone": "premiere",
      "scene": "scenes/second-half-c-walk-out",
      "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
@@ -291,7 +291,7 @@
     {
      "id": "d-crossing",
      "name": "D · The clean room and the crossing",
-     "state": "SIGNED OFF (round 22, Kai 10 Nov: \"we're there. Well done. Send it.\") · Premiere 06 GPOM story D crossing r18, in sync, in 00 RENDER story",
+     "state": "LIP SYNC 19 Nov: Sandra twice and the old lady re-made from Kai's picks, Derek's 'Hundred. ... What will it feel like?' a new reading (p2) · Premiere 06 GPOM story D crossing r20, in sync, in 00 RENDER story at 7:14.71",
      "tone": "premiere",
      "scene": "scenes/second-half-d-crossing",
      "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
@@ -316,7 +316,7 @@
    },
    {
     "sequence": "00 RENDER story",
-    "what": "The story film (10 Nov, 10:37): 01 GPOM start r2 (the opening with chorus 1 = Skid Row Britain and Kai's outbreak chorus r3), then A (r20, signed off), B (r1), C (r4), D (r18), E (r5, the round 9 cut). Nested. Backups in zz old sequences: '(before chorus outbreak, 10 Nov)', '(before poverty chorus, 10 Nov)', '(before A r18, 10 Nov)'"
+    "what": "The story film (19 Nov, 9:16): 01 GPOM start r2 (with Kai's hand-edited choruses poverty r1 and outbreak r4), then A r22, B r3, C r5, D r20, E r5. Nested, each scene at 150%. Rendered 19 Nov: D:\\badcode-videos\\gitpush-origin-master\\renders\\gpom-story-final-2026-11-19.mp4. Backups in zz old sequences, newest '(before lip sync A C D, 19 Nov)'"
    },
    {
     "sequence": "01 GPOM start r2",
