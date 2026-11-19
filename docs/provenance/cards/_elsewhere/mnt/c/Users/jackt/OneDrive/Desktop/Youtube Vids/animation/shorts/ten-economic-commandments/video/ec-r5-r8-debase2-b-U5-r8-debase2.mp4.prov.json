@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-r5-r8-debase2-b-U5-r8-debase2.mp4",
+ "made": "2026-11-19T15:47:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off camera, fixed shot. The warm light on the gold bars slowly fades, shadow creeping across the rows from the edges inward, until the bright gold turns dull, dim brass-brown and the shine is nearly gone. The bars never move; their shapes and stamped markings stay exact. Slow, sinking mood. The camera does not move at all.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-r8-debase2.jpg",
+ "why": "Jack 2026-11-19: 'Please use the pics and animate them… do a bunch of varied ones' (clean-room motion, cleanroom/anim-r5.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-r8-debase2.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "r5-r8-debase2-b",
+  "frame": 911,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T15:44:52.939Z"
+ }
+}

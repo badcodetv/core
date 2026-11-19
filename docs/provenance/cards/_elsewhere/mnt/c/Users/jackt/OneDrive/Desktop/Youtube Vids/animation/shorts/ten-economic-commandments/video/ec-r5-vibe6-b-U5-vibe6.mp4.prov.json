@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-r5-vibe6-b-U5-vibe6.mp4",
+ "made": "2026-11-19T15:48:47+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off camera, fixed shot. Light from passing cars on the unseen street sweeps across the scene: bright headlight reflections slide over the metal shutters and the glass door, and a soft glow runs along the pavement, then fades. The neon signs hold steady. The shopfront, shelves and signs stay exactly as they are. The camera does not move at all.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-vibe6.jpg",
+ "why": "Jack 2026-11-19: 'Please use the pics and animate them… do a bunch of varied ones' (clean-room motion, cleanroom/anim-r5.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-vibe6.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "r5-vibe6-b",
+  "frame": 923,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T15:46:39.093Z"
+ }
+}

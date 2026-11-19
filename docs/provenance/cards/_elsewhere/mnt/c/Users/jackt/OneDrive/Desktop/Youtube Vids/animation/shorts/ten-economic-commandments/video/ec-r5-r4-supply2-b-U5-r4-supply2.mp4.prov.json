@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-r5-r4-supply2-b-U5-r4-supply2.mp4",
+ "made": "2026-11-19T15:51:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off camera, fixed shot. Late at night on this blue brick facade, the bright amber window clicks off, leaving the pane dark blue like its neighbours. A beat later the lower warm window fades to dark too, and the whole wall settles into deep blue night. The building, bricks and window frames stay rigid and unchanged throughout. The camera does not move at all.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-r4-supply2.jpg",
+ "why": "Jack 2026-11-19: 'Please use the pics and animate them… do a bunch of varied ones' (clean-room motion, cleanroom/anim-r5.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-r4-supply2.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "r5-r4-supply2-b",
+  "frame": 907,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T15:44:51.914Z"
+ }
+}

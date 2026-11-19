@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/tec-r5-r10-bailout1-drift.mp4",
+ "made": "2026-11-19T15:42:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "zoompan",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-r10-bailout1.jpg",
+ "why": "Jack's pick, camera move only (no AI): real banknotes"
+}

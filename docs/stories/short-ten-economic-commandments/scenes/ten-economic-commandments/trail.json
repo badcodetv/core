@@ -38,5 +38,13 @@
   "url": "https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf",
   "what": "Stills round 5: 148 Unsplash photos for the all-ten song (vibe, rules 1-10, the fix)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments/stills-r5-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-19T15:54:15+00:00",
+  "stage": "clips",
+  "round": 5,
+  "url": "https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf",
+  "what": "Round 2 on the stills page: 30 Flow clips (15 picks x 2 clean-room motions) + 4 no-AI camera moves + 8 finishes",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments/stills-r5-picks.json <out.html>"
  }
 ]

@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/audio/tec-all10-a-number-gets-its-bar-v6-w25-e689e000.wav",
+ "made": "2026-11-19T15:31:28.472Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "e689e000-f4db-43c0-85cb-2388d4f866ef",
+ "inputs": {
+  "title": "tec-all10-A-number-gets-its-bar-v6-w25",
+  "song": "https://suno.com/song/e689e000-f4db-43c0-85cb-2388d4f866ef"
+ },
+ "settings": {
+  "durationSec": 74.4
+ }
+}

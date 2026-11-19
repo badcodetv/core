@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-r5-vibe10-b-U5-vibe10.mp4",
+ "made": "2026-11-19T15:49:17+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off camera, fixed shot. The necklace hangs perfectly still while a single bright highlight travels slowly along the twisted gold rope chain, from the left end down to the crown and back up the right side. When it reaches the crown, the diamonds flash and the red stone warms from within. Black background stays plain and dark. The camera does not move at all.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-vibe10.jpg",
+ "why": "Jack 2026-11-19: 'Please use the pics and animate them… do a bunch of varied ones' (clean-room motion, cleanroom/anim-r5.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-vibe10.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "r5-vibe10-b",
+  "frame": 913,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T15:45:21.853Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/video/ec-r5-r3-press2-a-U5-r3-press2.mp4",
+ "made": "2026-11-19T15:50:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked-off camera, fixed shot. The silver subway train on the right keeps rushing past along the platform edge as one continuous motion blur, its windows streaking by, light flashing off its side. The people at the far left shift and walk slowly along the platform. The riveted pillar, its sign and the yellow edge line stay sharp, exact and still, lettering unchanged. The camera does not move at all.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-r3-press2.jpg",
+ "why": "Jack 2026-11-19: 'Please use the pics and animate them… do a bunch of varied ones' (clean-room motion, cleanroom/anim-r5.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/moodboard/U5-r3-press2.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments",
+  "key": "r5-r3-press2-a",
+  "frame": 904,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-19T15:44:19.641Z"
+ }
+}

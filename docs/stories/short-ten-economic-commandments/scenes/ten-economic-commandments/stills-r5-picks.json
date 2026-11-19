@@ -1,9 +1,435 @@
 {
  "title": "Ten Commandments Stills",
  "eyebrow": "BadCode Shorts · Ten Economic Commandments · real photos (Unsplash)",
- "heading": "Stills for all ten",
- "intro": "148 real photos from Unsplash for the 75 s all-ten song: the 90s New York vibe, then each rule and the fix. Pick your favourite per row and name any others in the note; I'll cut them to the beat with the seven picked stills we have. No real people's likenesses were searched for.",
+ "heading": "The clips and a filter",
+ "intro": "Round 2: your 17 picks animated. 15 in Flow, two motions each (clean-room prompts, researched, pollution-checked); the woman on the stairs and the cash are camera moves over the real photo (no AI). Pick a motion per photo and a filter; the stills from round 1 are folded below.",
  "sections": [
+  {
+   "h": "Round 2: clips",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "finish",
+     "round": 2,
+     "title": "A filter over the whole short",
+     "line": "The same 8 s (taxi, gold, boombox, skyline) under each. The logo is never filtered.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "none",
+       "src": "finish/none.mp4",
+       "label": "none: as it is",
+       "warn": ""
+      },
+      {
+       "id": "fisheye",
+       "src": "finish/fisheye.mp4",
+       "label": "fisheye: wide rap-video lens",
+       "warn": ""
+      },
+      {
+       "id": "hi8",
+       "src": "finish/hi8.mp4",
+       "label": "hi8: 90s camcorder tape",
+       "warn": ""
+      },
+      {
+       "id": "xerox",
+       "src": "finish/xerox.mp4",
+       "label": "xerox: photocopied mixtape flyer",
+       "warn": ""
+      },
+      {
+       "id": "trix",
+       "src": "finish/trix.mp4",
+       "label": "trix: black and white street film",
+       "warn": ""
+      },
+      {
+       "id": "kodachrome",
+       "src": "finish/kodachrome.mp4",
+       "label": "kodachrome: warm slide film",
+       "warn": ""
+      },
+      {
+       "id": "cabletv",
+       "src": "finish/cabletv.mp4",
+       "label": "cabletv: 90s cable broadcast",
+       "warn": ""
+      },
+      {
+       "id": "riso",
+       "src": "finish/riso.mp4",
+       "label": "riso: two-ink print, teal and orange",
+       "warn": ""
+      },
+      {
+       "id": "goldleaf",
+       "src": "finish/goldleaf.mp4",
+       "label": "goldleaf: gold and black",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-fix1",
+     "round": 2,
+     "title": "new york sunrise skyline (Empire State Building, New York at night)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-fix1-a-U5-fix1.mp4",
+       "label": "a: city lights twinkle, boats drift",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-fix1-b-U5-fix1.mp4",
+       "label": "b: dusk sinks into full night",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-r10-bailout1",
+     "round": 2,
+     "title": "stack of cash (a stack of money sitting on top of a white table)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "push",
+       "src": "clips/tec-r5-r10-bailout1-push.mp4",
+       "label": "push: camera push in",
+       "warn": "no AI: real banknotes (badcode.md"
+      },
+      {
+       "id": "drift",
+       "src": "clips/tec-r5-r10-bailout1-drift.mp4",
+       "label": "drift: camera drift across",
+       "warn": "no AI: real banknotes (badcode.md"
+      }
+     ]
+    },
+    {
+     "slot": "clip-r10-bailout2",
+     "round": 2,
+     "title": "bank building columns (a man riding a skateboard down a sidewalk next to tall pilla)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-r10-bailout2-a-U5-r10-bailout2.mp4",
+       "label": "a: trees sway between marble columns",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-r10-bailout2-b-U5-r10-bailout2.mp4",
+       "label": "b: sunlight bands slide across floor",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-r3-press2",
+     "round": 2,
+     "title": "wall street new york (time lapse photography of train station)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-r3-press2-a-U5-r3-press2.mp4",
+       "label": "a: train keeps roaring past platform",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-r3-press2-b-U5-r3-press2.mp4",
+       "label": "b: train slows, lights flicker",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-r4-supply2",
+     "round": 2,
+     "title": "new york apartment window (a tall building with windows lit up at night)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-r4-supply2-a-U5-r4-supply2.mp4",
+       "label": "a: amber window flickers like TV",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-r4-supply2-b-U5-r4-supply2.mp4",
+       "label": "b: lights go out one by one",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-r8-debase1",
+     "round": 2,
+     "title": "stock market screen (a pair of glasses sitting on top of a laptop computer)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-r8-debase1-a-U5-r8-debase1.mp4",
+       "label": "a: chart scrolls, candles slide down",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-r8-debase1-b-U5-r8-debase1.mp4",
+       "label": "b: screen glow breathes, then dims",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-r8-debase2",
+     "round": 2,
+     "title": "gold bars (A pile of gold bars sitting on top of a table)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-r8-debase2-a-U5-r8-debase2.mp4",
+       "label": "a: light glint sweeps across bars",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-r8-debase2-b-U5-r8-debase2.mp4",
+       "label": "b: gold dims into dull shadow",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe10",
+     "round": 2,
+     "title": "gold chain (a gold necklace with a crown on it)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe10-a-U5-vibe10.mp4",
+       "label": "a: crown pendant sways, diamonds sparkle",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe10-b-U5-vibe10.mp4",
+       "label": "b: highlight runs along rope chain",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe1",
+     "round": 2,
+     "title": "1990s new york street (a woman walking down a flight of stairs)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "push",
+       "src": "clips/tec-r5-vibe1-push.mp4",
+       "label": "push: camera push in",
+       "warn": "no AI: an identifiable real person"
+      },
+      {
+       "id": "drift",
+       "src": "clips/tec-r5-vibe1-drift.mp4",
+       "label": "drift: camera drift across",
+       "warn": "no AI: an identifiable real person"
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe2",
+     "round": 2,
+     "title": "brooklyn brownstone stoop (A brick building with a car parked outside)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe2-a-U5-vibe2.mp4",
+       "label": "a: winter wind: flag and branches",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe2-b-U5-vibe2.mp4",
+       "label": "b: light snow begins to fall",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe3",
+     "round": 2,
+     "title": "new york subway graffiti (Elevated urban train platform with graffiti at night)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe3-a-U5-vibe3.mp4",
+       "label": "a: train pulls away from platform",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe3-b-U5-vibe3.mp4",
+       "label": "b: lone walker recedes, lights flicker",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe4",
+     "round": 2,
+     "title": "boombox (Person carrying a silver boombox by graffiti-covered door)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe4-a-U5-vibe4.mp4",
+       "label": "a: walks out of frame left",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe4-b-U5-vibe4.mp4",
+       "label": "b: steps in place to beat",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe5",
+     "round": 2,
+     "title": "vinyl turntable dj (person holding black and grey DJ turntable)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe5-a-crop.mp4",
+       "label": "a: hand scratches the spinning record",
+       "warn": "shown cropped to the decks: the crowd sharpened into real faces"
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe5-b-crop.mp4",
+       "label": "b: crowd sways, lights pulse",
+       "warn": "shown cropped to the decks: the crowd sharpened into real faces"
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe6",
+     "round": 2,
+     "title": "bodega new york (glass panel door with green ATM signage)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe6-a-U5-vibe6.mp4",
+       "label": "a: neon signs buzz and chase",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe6-b-U5-vibe6.mp4",
+       "label": "b: passing headlights sweep the shutters",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe7",
+     "round": 2,
+     "title": "basketball court chain link fence (Basketball court covered in snow with buildings behind)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe7-a-U5-vibe7.mp4",
+       "label": "a: snow flurries behind chain-link",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe7-b-U5-vibe7.mp4",
+       "label": "b: wind, rooftop steam, streetlight on",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe8",
+     "round": 2,
+     "title": "yellow cab new york night (yellow sedan parked in front of building)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe8-a-U5-vibe8.mp4",
+       "label": "a: taxi pulls away right",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe8-b-U5-vibe8.mp4",
+       "label": "b: barrier lamps blink, taxi idles",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-vibe9",
+     "round": 2,
+     "title": "fire escape new york (brown metal emergency exit stairs)",
+     "line": "Two motions; pick one (or note both).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "clips/ec-r5-vibe9-a-U5-vibe9.mp4",
+       "label": "a: grate shadows slide across brick",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "clips/ec-r5-vibe9-b-U5-vibe9.mp4",
+       "label": "b: clouds pass, sunlight dims, returns",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The vibe: 90s New York",
    "lede": "Intro and the spaces between rules",
@@ -1086,5 +1512,6 @@
     }
    ]
   }
- ]
+ ],
+ "round": 2
 }

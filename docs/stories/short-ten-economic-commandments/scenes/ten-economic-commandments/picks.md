@@ -24,3 +24,4 @@
   says ten, shows three); the FX5 fire-escape redo is unpicked; export owed.
 - **2026-11-19, Jack picked** A number-gets-its-bar take 2 (e689e000, 1:14) for the all-ten version.
 - **2026-11-19:** all-ten take recorded (`audio/tec-all10-a-number-gets-its-bar-v6-w25-e689e000.wav`, 74.4 s). Stills round 5: 148 Unsplash photos on https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf (searches in `stills-r5-picks.json`, credits in `refs.json`); no real people's likenesses searched for.
+- **2026-11-19, clips round 5:** 30 Omni clips from Jack's 15 Flow-able picks (two clean-room motions each, cleanroom/anim-r5.json; 0 leaks), tab pool 10 tabs, 8 min; the woman on the stairs and the cash are camera moves only (no AI). The DJ clips (vibe5) sharpened the blurred crowd into real faces: shown cropped to the decks only. Eight finishes (scripts/shorts/tec_finish.sh) on the page too.
