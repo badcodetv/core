@@ -4,12 +4,14 @@ used, and the song cut to 187.0 s with the 0.12 s fade baked in (Premiere has no
 In Premiere the A1 clip's Volume > Level is then raised +1.6 dB (Premiere-only, set by hand through the bridge) so the
 export lands at YouTube's -14 LUFS: the song alone measures -16.1 LUFS, true peak -3.2.
     python3 premiere-edl.py B5 0.12  ->  /mnt/d/.../gang/cut10B5/premiere/edl.json"""
-import json, pathlib, subprocess, sys
+import json, pathlib, re, subprocess, sys
 HERE = pathlib.Path(__file__).parent
 L, FADE = sys.argv[1], float(sys.argv[2])
 MEDIA = pathlib.Path('/mnt/d/badcode-videos/bank-robbery-music/gang'); VID, NOIR = MEDIA / 'video', MEDIA.parent / 'noir' / 'video'
 SONG = MEDIA.parent / 'the version.wav'; END = 187.0
-src = lambda ref: NOIR / (ref[3:] + '.mp4') if ref.startswith('cn:') else sorted(VID.glob(f'bg-{ref}-*.mp4'))[0]
+# skip re-rolls of the same key (bg-<ref>-r2a-...), so an old plan keeps resolving to its own clip
+src = lambda ref: NOIR / (ref[3:] + '.mp4') if ref.startswith('cn:') else sorted(
+    p for p in VID.glob(f'bg-{ref}-*.mp4') if not re.match(rf'bg-{re.escape(ref)}-r\d+[a-z]-', p.name))[0]
 out = MEDIA / f'cut10{L}' / 'premiere'; out.mkdir(parents=True, exist_ok=True)
 song = out / f'the version-cut10{L}.wav'
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(SONG), '-t', str(END), '-af', f'afade=t=out:st={END - FADE}:d={FADE}',
