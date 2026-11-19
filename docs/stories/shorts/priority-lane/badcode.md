@@ -24,7 +24,7 @@ Inside the ambulance the light is harsher: cold strip lights and the monitor's g
 - Junction and traffic obey UK keep-left geometry: `cleanroom/r18/geometry.md`.
 - Picks in the r5 cut: LS18-b, PB18-a, CD18-a, HD19-b, BM18-a, FL18-a. Stills Nano Banana 2; clips Omni 1.2 Flash,
   9:16, Frames, 8 s. Flow project `57538600-142a-45b8-ac4c-e79e663de0c6`.
-- **Finish (Jack, 2026-11-19, picks round 8): bleach bypass** over every shot, `scripts/shorts/priority_lane_finish.sh bleach` (the cut script's `--finish bleach`); the logo is never filtered.
+- **Finish (Jack, 2026-11-19, picks round 8, kept after round 9's twelve: "let's just use what we have"): bleach bypass** over every shot, `scripts/shorts/priority_lane_finish.sh bleach` (the cut script's `--finish bleach`); the logo is never filtered.
 - Never: glossy, clean, daylight or "cinematic CGI". No readable text except the poster's SAVE OUR NHS.
 
 ## Sound
