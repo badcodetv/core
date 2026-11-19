@@ -86,6 +86,11 @@ SHOTS_R6 = [
     ('fermilab', 's', FC / 'fermilab-racks.jpg', 0, 'Fermilab / US DOE (public domain)'),
     ('embers', 'v', FC / 'eaton-firestorm.webm', 4.5, 'USDA Forest Service (public domain)'),
 ]
+# Rough cut 7 (Jack, 2026-11-19: "way too many cuts… distracting… take away some of the clips"): half the shots, each
+# held twice as long (REEL_R7), so the reel keeps its length. All six of his round-11 picks stay; four of the disaster
+# clips stay (ruins, tornado and the Eaton fire into the embers), in rough cut 6's bright-to-dark order.
+REEL_R7 = 1.0
+SHOTS_R7 = [s for s in SHOTS_R6 if s[0] in ('cams', 'fpv', 'ruins', 'wardrone', 'waymo', 'kiosk', 'tornado', 'robot', 'eaton', 'embers')]
 R6_CROPS = {  # pick: (source, box in source pixels or None), then a centre 9:16 crop
     'A04': (MEDIA / 'footage/automation/A04.jpg', (940, 15, 1740, 1437)),  # the robotaxi's nose and the lollipop man stopping it
     'A05': (MEDIA / 'footage/automation/A05.jpg', (2200, 0, 3820, 2880)),   # the robot at the crossing; the man left out

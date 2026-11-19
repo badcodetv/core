@@ -1,29 +1,57 @@
 {
- "round": 6,
+ "round": 7,
  "plan": [
   {
-   "h": "Rough cut 6: the reel, made real",
+   "h": "Rough cut 7: your four notes (from chat, 19 Nov)",
    "items": [
-    "Your six round-11 picks replace all eight Flow stills. There's no AI left in the reel. The other real footage (Lahaina, the flood, the tornado, the data centres) stays.",
-    "The six, in reel order: the camera pole, the hobby drone, the war drone over the smoking range, the London robotaxi stopped by the lollipop man, the tip screen, the delivery robot at the crossing.",
-    "The war drone is a frame from 8 s. The trench shot you picked from the preview has the Army's 'Increased Lethality' caption burned in under it the whole time, so I used the moment before.",
-    "The robotaxi is cropped to the car's nose and the lollipop man; the delivery robot is cropped to leave the man out.",
-    "The reel is 20 shots (was 22), so everything after it comes about a second earlier. 37.05 s in all."
+    "Fewer cuts: the reel is 10 shots instead of 20, each held 1 s instead of 0.5 s, so it's the same length. All six of your round-11 picks stay, plus the ruins, the tornado and the Eaton fire into the embers.",
+    "A finish over it, and not the VHS one: a 16mm film look. Fine moving grain, a red-orange glow round bright things, the frame drifting a pixel or two, a soft vignette and a warm print grade. Everything gets it except the logo reveal, which is left as it is.",
+    "Captions: one style now (Archivo Black, white, thin outline, soft shadow), no white/yellow swap. Each group of three words comes in on its first spoken word and goes on its last, instead of being spread evenly over the line.",
+    "Date stamps: no year on BadCode's (it reads NOV 18). The 2000s one keeps JUL 18 2009. Both moved up to the top left, smaller, out of the way of the Shorts buttons and title."
    ]
   },
   {
-   "h": "What changed to pass the flashing check",
+   "h": "Checked",
    "items": [
-    "The order is still bright to dark, but set so nearly every cut goes darker. The straight sort failed (5 flashes a second at 15 s).",
-    "The zoom on the reel's still pictures is gentler (4% instead of 10%): the bigger zoom counted as extra flashes. Now 2 a second, safer than rough cut 5's 3."
+    "The flashing check passes (the longer holds made it calmer). Loudness is unchanged from rough cut 6."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Any shot to swap or drop? The other round-11 options are still on the picks page.",
-    "Before the final export: the three Commons pictures come from Wikimedia's preview server (the full-size originals were blocked for too many requests). They look fine at phone size; I'll fetch the originals once it lets us."
+    "Is the film finish too strong, too weak, or right? It's one number, so I can turn it up or down.",
+    "Do you want the year off the 2009 stamp too?",
+    "Line 1: does the 'Ahhh' sound like 'Nah'?"
    ]
   }
- ]
+ ],
+ "round_6": {
+  "round": 6,
+  "plan": [
+   {
+    "h": "Rough cut 6: the reel, made real",
+    "items": [
+     "Your six round-11 picks replace all eight Flow stills. There's no AI left in the reel. The other real footage (Lahaina, the flood, the tornado, the data centres) stays.",
+     "The six, in reel order: the camera pole, the hobby drone, the war drone over the smoking range, the London robotaxi stopped by the lollipop man, the tip screen, the delivery robot at the crossing.",
+     "The war drone is a frame from 8 s. The trench shot you picked from the preview has the Army's 'Increased Lethality' caption burned in under it the whole time, so I used the moment before.",
+     "The robotaxi is cropped to the car's nose and the lollipop man; the delivery robot is cropped to leave the man out.",
+     "The reel is 20 shots (was 22), so everything after it comes about a second earlier. 37.05 s in all."
+    ]
+   },
+   {
+    "h": "What changed to pass the flashing check",
+    "items": [
+     "The order is still bright to dark, but set so nearly every cut goes darker. The straight sort failed (5 flashes a second at 15 s).",
+     "The zoom on the reel's still pictures is gentler (4% instead of 10%): the bigger zoom counted as extra flashes. Now 2 a second, safer than rough cut 5's 3."
+    ]
+   },
+   {
+    "h": "You decide",
+    "items": [
+     "Any shot to swap or drop? The other round-11 options are still on the picks page.",
+     "Before the final export: the three Commons pictures come from Wikimedia's preview server (the full-size originals were blocked for too many requests). They look fine at phone size; I'll fetch the originals once it lets us."
+    ]
+   }
+  ]
+ }
 }

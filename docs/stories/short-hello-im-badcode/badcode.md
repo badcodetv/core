@@ -8,7 +8,7 @@
 A BadCode short (9:16, about 25 s): a voice says "Hello. I'm from the future." over something warm, BadCode the
 masked figure says deadpan "It didn't go well.", a rapid horror reel of real footage of what is happening now, then
 on black "Here's what to do next." and the logo. The point: who BadCode is, in one breath. Doubles as the profile
-intro and channel trailer. State: rough cut 6 (37.05 s) on the timeline page; next steps in RESUME.md.
+intro and channel trailer. State: rough cut 7 (37.05 s) on the timeline page; next steps in RESUME.md.
 
 ## Look
 - Status: Not decided — run story-style (look.md is EMPTY; mood board r3 is the open round).
@@ -17,6 +17,11 @@ intro and channel trailer. State: rough cut 6 (37.05 s) on the timeline page; ne
   the future, more happy nostalgic meme stuff. Colourful meme writing goes on in the edit, not in Flow.
 - The horror reel is real only (Jack, round 11: "ai slop and boring"): green-tier footage plus real Unsplash photos used as they are
   (no Flow movement at 0.5 s), rapid fire, bright to dark, ordered so nearly every cut goes darker (flashing gate).
+- **Finish (Jack, 2026-11-19):** a 16mm film look over the whole cut except the logo reveal, `scripts/shorts/film_finish.sh`
+  (grain, red-orange halation, gate weave, vignette, warm print grade). Not the VHS finish: that one belongs to Malevolent Force.
+- **Reel pace (Jack, 2026-11-19, "way too many cuts… distracting"):** 10 shots at 1 s each, not 20 at 0.5 s.
+- **Captions (rough cut 7):** Archivo Black, white, thin outline, one style; each group of three on its spoken words.
+  BadCode's date stamp has no year (Jack: "remove the year").
 - Video: Omni 1.2 Flash, 9:16, Frames. Flow project `99357c2f-11c0-4909-94a8-adc5a2bbd692`.
 
 ## Sound

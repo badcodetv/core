@@ -50,6 +50,8 @@ def main():
     a = ap.parse_args()
     if a.reel == 'r6':
         r1.hello_cut_r6_crops(); r1.SHOTS = r1.SHOTS_R6
+    elif a.reel == 'r7':  # half the cuts, twice the hold (Jack, 2026-11-19)
+        r1.hello_cut_r6_crops(); r1.SHOTS = r1.SHOTS_R7; r1.REEL = r1.REEL_R7
     CUT = MEDIA / 'cut' / (f'r3-{a.voice}-{a.fig}' + (f'-{a.reel}' if a.reel else '')); CUT.mkdir(parents=True, exist_ok=True)
     WORK = CUT / '_scratch'; WORK.mkdir(exist_ok=True)
     raw = [MEDIA / f'audio/casting/badcode-{a.voice}-l{i}.wav' for i in range(1, 5)]

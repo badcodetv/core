@@ -1,6 +1,6 @@
 # Hello, I'm BadCode (short #17): resume
 
-**State 2026-11-18 eve: rough cut 6** (37.05 s; `python3 scripts/shorts/hello_cut_r5.py --reel r6`) on the timeline page https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP.
+**State 2026-11-19: rough cut 7** (37.05 s; `python3 scripts/shorts/hello_cut_r5.py --reel r7`; Jack's chat notes: half the reel cuts, 16mm film finish, captions retimed and restyled, no year on BadCode's stamp) on the timeline page https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP.
 Picks page (rounds 1-8): https://claude.ai/artifact/NcX2aNGxH65LjjMdXs2oxa. Full log: `scenes/hello/picks.md`.
 
 **Locked by Jack:**

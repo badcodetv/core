@@ -66,5 +66,16 @@
   "what": "the reel made real: 44 Commons previews + 50 Unsplash photos in 12 theme rows",
   "feedback": "feedback/picks-r11",
   "feedback_docs": 6
+ },
+ {
+  "at": "2026-11-19T10:30:20+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/B5f8vmPozGXf7f9CpFNGBP",
+  "what": "Rough cut 7: reel halved to 10 shots at 1 s, 16mm film finish, captions timed to words in one style, no year on BadCode's stamp",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-hello-im-badcode/scenes/hello <out-dir>",
+  "decided": [
+   "Jack (chat, 2026-11-19): remove the year on the camcorder thing; an overlay like Malevolent Force's but not that one; way too many cuts, take away some clips; fix the timing and look of the subtitles"
+  ]
  }
 ]
