@@ -140,6 +140,33 @@
    "character": null,
    "why": "r5-D refused 3 times (tile gone in 30 s), the same as r3-D: chest / flat-line wording. Neutral rewrite.",
    "motion": "The camera does not move. Close on a white medical monitor inside a vehicle at night. The green line across the screen slowly settles into one steady horizontal line and the numbers change to dashes. At the bottom of the frame a blue-gloved hand rests still for a moment, then slides away out of the frame. Blue light flickers across the white housing; rain runs down the dark window behind. Shot at 24fps with a 180-degree shutter. One continuous shot, no cuts, no dialogue, no text. The camera does not move. Thanks."
+  },
+  {
+   "key": "r20-C",
+   "n": 5,
+   "still": "BM20-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-19 at 17:19: 'hes eating and talking at the same time' (food removed in BM20-a)",
+   "motion": "The camera does not move. In the back seat of a black car at night, the man talks into the phone at his right ear, relaxed and amused, his lips moving as he speaks; his free hand stays resting on his knee the whole time and he eats nothing. Rain runs down the side window and blue light from outside sweeps across the glass and his face. One continuous shot, no cuts, no text. The camera does not move."
+  },
+  {
+   "key": "r20-LG",
+   "n": 7,
+   "still": "LG20-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-19: 'do the flatline style logo animation in Flow… it can just show the screen and then cut to it' (trace only; the official logo is laid on in the edit)",
+   "motion": "The camera does not move. A dark monitor screen at night. A bright green line sweeps steadily from left to right across the black glass, drawing two last sharp peaks, then it carries on as one steady horizontal line all the way to the right edge. The green glow flickers faintly. Nothing else on the screen changes. No numbers, no text, no people. The camera does not move."
+  },
+  {
+   "key": "r20-A",
+   "n": 1,
+   "still": "LS21-b",
+   "duration": 8,
+   "character": null,
+   "why": "Jack 2026-11-19 at 6:19: 'they're driving with the back door open, it makes no sense' (LS21-b: inside, doors shut)",
+   "motion": "The camera does not move. Inside the back of a speeding ambulance at night, the rear doors shut. The paramedic on the left keeps pressing hard and fast on the patient's chest; the paramedic on the right works the monitor on the wall, its green trace racing. The whole compartment sways and jolts with the road, cables swinging. Blue light flickers through the windscreen far ahead. Fast hands smear with natural motion blur. One continuous shot, no cuts, no text. The camera does not move."
   }
  ],
  "note": "C (minister) keeps the round 1 clip pl-04-MIN1-b; it is re-synced to the Charon voice with lip-sync-dub, no new clip. Round 1 jobs are in video-jobs-r1.json."

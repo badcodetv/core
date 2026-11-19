@@ -1,9 +1,123 @@
 {
  "title": "Priority Lane Voices",
- "eyebrow": "Priority Lane · picks · round 7",
- "heading": "The driver, angry",
- "intro": "Round 7: your picks are in (paramedic 1 a, paramedic 2 d, minister d, constable b, music c2). The driver needed anger, so the same four voices read his line with one short direction, \"angry, shouting\", sent the way Google's newest model takes it (a separate field, never spoken). Pick one. Round 6 is folded below.",
+ "eyebrow": "Priority Lane · picks · round 8",
+ "heading": "Filter, fixes and the flatline end card",
+ "intro": "Round 8. Voices are all picked (driver d, angry). Here: a filter for the whole short (watch the four), the fixes for your two timeline notes (doors shut, no food), and the flatline end card's monitor. The marked option in each is already being animated, so you only need to pick if you want a different one.",
  "sections": [
+  {
+   "h": "Round 8",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "finish",
+     "round": 8,
+     "title": "A filter over the whole short",
+     "line": "The first 10 s of rough cut 5 under each finish. The logo stays untouched.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "none",
+       "src": "finish/none.mp4",
+       "label": "none: as it is now",
+       "warn": ""
+      },
+      {
+       "id": "night35",
+       "src": "finish/night35.mp4",
+       "label": "night35: night 35 mm print",
+       "warn": "coarse grain, glow round the lamps and blue lights"
+      },
+      {
+       "id": "dashcam",
+       "src": "finish/dashcam.mp4",
+       "label": "dashcam: caught on a cab camera",
+       "warn": "wide-lens bend, hard edges, cold digital"
+      },
+      {
+       "id": "bleach",
+       "src": "finish/bleach.mp4",
+       "label": "bleach: bleach bypass",
+       "warn": "half the colour, hard contrast, silvery"
+      }
+     ]
+    },
+    {
+     "slot": "doors",
+     "round": 8,
+     "title": "6:19, the back doors open (your note)",
+     "line": "Now from inside with the doors shut. b is being animated; pick another and I'll animate that instead.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "stills-r20/LS21-a.jpg",
+       "label": "a: edit of the same crew, looking forward",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "stills-r20/LS21-b.jpg",
+       "label": "b: edit of the same crew, down the aisle",
+       "warn": "animating"
+      },
+      {
+       "id": "c",
+       "src": "stills-r20/LS21g-a.jpg",
+       "label": "c: fresh still, side view",
+       "warn": "a new crew"
+      },
+      {
+       "id": "d",
+       "src": "stills-r20/LS21g-b.jpg",
+       "label": "d: fresh still, from the seat",
+       "warn": "a new crew"
+      }
+     ]
+    },
+    {
+     "slot": "minister-food",
+     "round": 8,
+     "title": "17:19, eating while talking (your note)",
+     "line": "The canapés are gone; his free hand rests. a is being animated.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "stills-r20/BM20-a.jpg",
+       "label": "a",
+       "warn": "animating"
+      },
+      {
+       "id": "b",
+       "src": "stills-r20/BM20-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "flatline-logo",
+     "round": 8,
+     "title": "The flatline end card (made in Flow)",
+     "line": "Flow makes the monitor trace: two last beats, then flat. The real logo is laid on in the edit once the line is flat (Flow never draws the logo). a is being animated.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "stills-r20/LG20-a.jpg",
+       "label": "a",
+       "warn": "animating"
+      },
+      {
+       "id": "b",
+       "src": "stills-r20/LG20-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Voices",
    "lede": "Each role reads its real lines from rough cut 5.",
@@ -551,5 +665,5 @@
    ]
   }
  ],
- "round": 7
+ "round": 8
 }

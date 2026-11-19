@@ -1,0 +1,43 @@
+{
+ "why": "Jack 2026-11-19 timeline note at 25:19: 'a flatline style badcode logo cool thing at the end, as in animate that'; then: 'do the flatline style logo animation in Flow, it doesn't have to match the videos and it doesn't have to transition into the screen, it can just show the screen and then cut to it'. Flow makes the monitor trace only; the official logo is laid on in the edit (badcode.md: never drawn by Flow).",
+ "stills": [
+  {
+   "id": "LG20",
+   "model": "Nano Banana 2.1",
+   "aspect": "9:16",
+   "prompt": "Extreme close-up of the screen of an old ambulance patient monitor at night, the screen filling the whole frame. Black glass with a faint dark grid. One bright green heartbeat trace runs across the middle from the left edge: two sharp spikes, then the line runs dead flat and level to the right edge. The green phosphor glows and bleeds softly into the black. A faint reflection of blue emergency light on the glass. Shot on 35 mm film, real grain, slightly soft focus. No numbers, no letters, no text and no logos anywhere on the screen."
+  },
+  {
+   "id": "LS21g",
+   "model": "Nano Banana 2.1",
+   "aspect": "9:16",
+   "why": "LS20 failed; a fresh still of the same moment from inside",
+   "prompt": "Inside the back of a UK ambulance racing through the city at night, seen from the bench seat at the rear with the back doors shut. Two paramedics in dark green uniforms, surgical masks and blue gloves lean over a man on the stretcher; one presses on his chest, the other reaches for the heart monitor on the wall, its green trace racing. Hard cold strip lights overhead, blue emergency light flickering through the small cab window ahead. The compartment sways; slight motion blur on their hands. Real 35 mm night film photograph, grainy, a little underexposed, handheld."
+  }
+ ],
+ "clip": {
+  "key": "r20-LG",
+  "duration": 6,
+  "motion": "The camera does not move. The screen of an ambulance heart monitor at night. A bright green heartbeat trace sweeps from left to right across the black screen, drawing two last sharp heartbeats, then the line goes completely flat and keeps sweeping, dead level, to the right edge. The green glow flickers faintly. Nothing else on the screen changes. No numbers, no text, no logos, no people. The camera does not move."
+ },
+ "edits": [
+  {
+   "id": "LS20",
+   "ref": "LS18-b",
+   "why": "Jack 2026-11-19 timeline note at 6:19: 'they're driving with the back door open, it makes no sense'",
+   "prompt": "Keep the same paramedics, the same patient on the stretcher, the same interior, light and film look. Change only this: the two rear doors are shut. We look at the crew from inside the patient compartment, from just in front of the closed rear doors, with the rain outside on the small rear-door windows at the edges of the frame and no rain falling in front of us. Nothing else changes."
+  },
+  {
+   "id": "BM20",
+   "ref": "BM18-a",
+   "why": "Jack 2026-11-19 timeline note at 17:19: 'hes eating and talking at the same time'",
+   "prompt": "Keep the same man, the same car, the same pose, light and film look. Change only this: there is no food anywhere. Remove the plate of canapes from the armrest and anything from his free hand; that hand rests on his knee while he talks on the phone. Nothing else changes."
+  },
+  {
+   "id": "LS21",
+   "ref": "LS18-b",
+   "why": "LS20 failed: the edit kept the outside viewpoint and left the doors half open",
+   "prompt": "A new photo of these same two paramedics and this same patient, taken from INSIDE the moving ambulance: the photographer sits on the bench seat at the back, the rear doors shut behind them and out of shot. We look forward along the stretcher, past the paramedics working on the patient, towards the cab and the windscreen, where blue light flickers. Same uniforms, masks, gloves, monitor and cold strip lights, same 35 mm night film look. The whole space is closed in; no rain falls inside."
+  }
+ ]
+}
