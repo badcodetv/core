@@ -24,7 +24,10 @@ and built in Premiere (`short-ten-economic-commandments-1-tec-r1`); export to 10
 - Stills Nano Banana 2; clips Omni 1.2 Flash, Frames, 9:16, 8 s. Flow project `17b708f8-d9d6-41ae-b562-8d161797b542`.
 
 ## Sound
-- Status: LOCKED. The rap = **jazz1**, Suno https://suno.com/song/e4cb9be5-5c68-484d-ace0-e0fed5592f59 (round
+- **PICKED 2026-11-19 (Jack, all ten):** `tec-all10-A-number-gets-its-bar` take 2, https://suno.com/song/e689e000-f4db-43c0-85cb-2388d4f866ef
+  (1:14; round `songs/r4a-rap`, prompt verbatim in its `round.json`; lyric `songs/r4a-rap/lyrics.txt`). The jazz1 rapper slowed, each
+  number on its own bar. Replaces jazz1 for the cut; not yet recorded.
+- Before: LOCKED. The rap = **jazz1**, Suno https://suno.com/song/e4cb9be5-5c68-484d-ace0-e0fed5592f59 (round
   `songs/r2-rap`, writer `jazz-phrasing`; prompt verbatim in `songs/r2-rap/round.json`). v6, Duration set 20 s, came back 29.0 s.
 - Sections: intro 0-5, rule one 5-10, rule two 10-15, rule three 15-21, the fix 21-24, beat out to 29.
 - Lyrics: [songs/r2-rap/lyrics.txt](./songs/r2-rap/lyrics.txt), three rules numbered 1-3 plus "And the fix, from the future? No hand on the printer."

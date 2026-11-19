@@ -22,3 +22,4 @@
   rule "keeps facing the camera"), and "don't get high on your own supply" is the Biggie line itself, which Magic Money
   Tree also quotes. Open from the meetings (13 and 17 Nov): fix the rhythm; ten commandments if the length allows (the song
   says ten, shows three); the FX5 fire-escape redo is unpicked; export owed.
+- **2026-11-19, Jack picked** A number-gets-its-bar take 2 (e689e000, 1:14) for the all-ten version.
