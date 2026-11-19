@@ -75,6 +75,26 @@ def wav(pcm, bits_per_sample, rate, channels):
     ) + pcm
 
 
+def styled(transcript, args):
+    """3.8's turn-level style (speech_metadata.style) via POST v1beta/interactions: the text stays a verbatim transcript."""
+    import base64, json, subprocess, tempfile, urllib.request
+    body = {"model": args.model,
+            "input": [{"type": "user_input", "content": [{"type": "text", "text": transcript,
+                       "annotations": [{"type": "speech_metadata", "style": args.style.strip()}]}]}],
+            "response_format": {"type": "audio"},
+            "generation_config": {"speech_config": [{"voice": args.voice}]}}
+    req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/interactions", data=json.dumps(body).encode(),
+                                 headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"})
+    res = json.load(urllib.request.urlopen(req, timeout=180))
+    audio = [c for st in res.get("steps", []) for c in st.get("content", []) if c.get("type") == "audio"]
+    if not audio:
+        sys.exit(f"no audio returned: {json.dumps(res)[:400]}")
+    with tempfile.NamedTemporaryFile(suffix=".wav") as t:
+        t.write(base64.b64decode(audio[0]["data"])); t.flush()
+        subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-i", t.name, "-ac", "1" if args.mono else "2", args.out], check=True)
+    print(f"wrote {args.out} (style: {args.style.strip()})")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("transcript", help="text file to read aloud")
@@ -87,6 +107,10 @@ def main():
                     help="prebuilt voice name — from the story's sound.md (no default)")
     ap.add_argument("--model", default=MODEL, help=f"model id (default: {MODEL})")
     ap.add_argument("--mono", action="store_true", help="write mono — Premiere may not display it")
+    ap.add_argument("--style", default="",
+                    help="with --plain: a short delivery direction for this line only (\"angry, shouting\"), sent as "
+                         "speech_metadata.style through the Interactions API so it is never spoken (a \"Say angrily:\" prefix "
+                         "IS spoken on 3.8, checked 2026-11-19). A few words, never an accent, age or persona (docs/rules/voices.md).")
     ap.add_argument("--note", action="store_true",
                     help="the profile file is a short director's note (Accent:/Style:/Pace:), wrapped the way the "
                          "AI Studio page wraps its Accent dropdown (the Bank Robbery recipe) instead of as an audio profile")
@@ -104,6 +128,8 @@ def main():
     transcript = open(args.transcript).read().strip()
     if args.plain:
         prompt = transcript
+        if args.style.strip():
+            return styled(transcript, args)
     elif args.note:
         prompt = (
             "Read the following transcript based on the director's note.\n\n"

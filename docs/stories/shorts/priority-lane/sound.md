@@ -9,6 +9,16 @@
 - **Voices:** Google AI Studio TTS, lip-synced to muted Omni clips with `lip-sync-dub` (Jack, 2026-11-10: never Flow speech). The reporter's voice and the minister's voice are still to be chosen.
 - **Music / SFX:** ⬜
 
+## Voices, round 6 (2026-11-19): RECAST, PICKED (Jack, https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm; dump `feedback/picks-r6/`)
+
+Replaces round 3 below. Model `gemini-3.8-flash-tts`, read plain (`scripts/aistudio-tts.sh <lines> <out> --plain --model gemini-3.8-flash-tts --voice <id>`); no profiles, no notes. Ids in `voices/r7/casting.tsv` (designed voices kept by Google until 2027-11).
+- **Paramedic 1: a**, designed `voice_27bvg0cxdu0g` ("A paramedic in her forties from south London, with a low, slightly rough voice, speaking plainly.").
+- **Paramedic 2: d**, library `en-gb-csagent-11` (Liverpool man, 36).
+- **Driver: not picked yet.** Jack: "this needs to be said angrily". Round 7 = the same four voices with `--style "angry, shouting"`, on the page.
+- **Minister: d**, designed `voice_7do40qwtj0br` ("An upper-class Englishman in his sixties from Surrey, with a fruity, slightly hoarse voice, speaking casually."). Muffled through the glass in the edit.
+- **Constable 97: b**, designed `voice_63o225fw9ehm` ("A police officer in his thirties from Essex, with a plain, clipped voice, speaking matter-of-factly."), through the police-radio filter in `scripts/shorts/priority_lane_cast_r7.sh`.
+- **Score: c2**, percussion only `bec07ebd` (`audio/suno-r6/priority-lane-score-r6-percussion-only-ensemble-bec07ebd.wav`). Replaces the stand-in `c5d8704d`.
+
 ## Voices, round 3 (2026-11-13): the crew PICKED (Jack, https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm)
 
 AI Studio, model `gemini-3.1-flash-tts-preview`, wrapped as a director's note (`scripts/aistudio-tts.py --note`). Takes in Desktop `priority-lane\audio\casting-r6\`. Picks dumped in `feedback/voices-r3/`.

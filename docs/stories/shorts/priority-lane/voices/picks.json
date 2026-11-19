@@ -1,13 +1,46 @@
 {
  "title": "Priority Lane Voices",
- "eyebrow": "Priority Lane · picks · round 6",
- "heading": "Fix the voices, pick the music",
- "intro": "Round 6. Every speaking role recast the new way: Google's newest voice model, the voice itself carries the accent and age, and the line is read plain with no acting notes (the old takes were told how to perform, which is what made them sound like AI). Four new voices per role: two from Google's British library, two designed from one plain sentence (the library has no London voices). 'now' is what's in the cut, for comparison. The constable is played through a police-radio filter, as in the cut. Below that, the 12 music takes: still no pick, so the cut runs on a1.",
+ "eyebrow": "Priority Lane · picks · round 7",
+ "heading": "The driver, angry",
+ "intro": "Round 7: your picks are in (paramedic 1 a, paramedic 2 d, minister d, constable b, music c2). The driver needed anger, so the same four voices read his line with one short direction, \"angry, shouting\", sent the way Google's newest model takes it (a separate field, never spoken). Pick one. Round 6 is folded below.",
  "sections": [
   {
    "h": "Voices",
    "lede": "Each role reads its real lines from rough cut 5.",
    "groups": [
+    {
+     "slot": "driver-angry",
+     "round": 7,
+     "title": "The driver, angry (your note: \"this needs to be said angrily\")",
+     "line": "\"Two minutes out! Get the fuck out of the way!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "voices-r7/driver-a-angry.mp3",
+       "label": "a: designed: An ambulance driver in his fifties from south-east London, with a deep, gravelly voice",
+       "warn": "style: \"angry, shouting\""
+      },
+      {
+       "id": "b",
+       "src": "voices-r7/driver-b-angry.mp3",
+       "label": "b: designed: A man in his forties from Nottingham, with a low, flat voice",
+       "warn": "style: \"angry, shouting\""
+      },
+      {
+       "id": "c",
+       "src": "voices-r7/driver-c-angry.mp3",
+       "label": "c: library: Bristol man, 57, low",
+       "warn": "style: \"angry, shouting\""
+      },
+      {
+       "id": "d",
+       "src": "voices-r7/driver-d-angry.mp3",
+       "label": "d: library: Glasgow man, 62, low",
+       "warn": "style: \"angry, shouting\""
+      }
+     ]
+    },
     {
      "slot": "paramedic1-r7",
      "round": 6,
@@ -518,5 +551,5 @@
    ]
   }
  ],
- "round": 6
+ "round": 7
 }

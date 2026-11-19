@@ -128,3 +128,11 @@ stretched, which never moves a pause. Moving the pause in the voice can.
   profile; show the pairs that are in time and let him choose the one that sounds like the character.
 - Gemini 3.8 with a long profile sometimes reads the profile aloud (4 of 18 takes, 2026-11-18): fail any take whose
   transcript is longer than its line.
+
+## A short style for one line on 3.8 goes in speech_metadata.style, never in the text (2026-11-19, Priority Lane)
+
+A "Say angrily: …" prefix is SPOKEN on `gemini-3.8-flash-tts` (all four test takes read it out). Google's 3.8 docs: the
+text is a verbatim transcript; turn-level delivery goes in `speech_metadata.style`, momentary sounds inline in angle
+brackets (`<shout>`, `<gasp>`, `<short pause>`). The google-genai SDK has no field for it, so `scripts/aistudio-tts.py
+--plain --style "angry, shouting"` sends it through `POST v1beta/interactions` (text part + `speech_metadata` annotation).
+Use it only for a line that needs it (Jack: "this needs to be said angrily"), a few words, never an accent or persona.
