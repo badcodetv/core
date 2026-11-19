@@ -442,5 +442,13 @@
   "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
   "what": "Round 5 rough cut (26 s): Unsplash-built shots, Kai's meeting notes, new minister line (Charon) and constable radio (stand-in Iapetus), score c5d8704d + Suno effects; transcript checked against the script",
   "rebuild": "python3 scripts/shorts/priority_lane_cut_r5.py && python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-19T11:20:37+00:00",
+  "stage": "picks",
+  "round": 6,
+  "url": "https://claude.ai/artifact/BpkaAfAwZ6gS4k5TarNWtm",
+  "what": "Voice recast round 6 (casting r7): 5 roles x 4 voices, 2 library + 2 designed, plain on gemini-3.8-flash-tts, vs the cut's voices; the 12 score takes shown again",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/shorts/priority-lane/voices/picks.json <out.html>"
  }
 ]
