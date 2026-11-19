@@ -7,9 +7,45 @@
     "keywords": "BadCode \"badcode tv\" \"sci-fi short film\" \"AI short film\" \"short film\" \"music video\" \"political music video\" \"political satire\" satire \"dark comedy\" \"cost of living\" inequality \"wealth inequality\" automation \"job losses\" \"money printing\" landlords rent \"tax havens\" homelessness \"UK politics\" \"British satire\" \"British sci-fi\" dystopia \"AI from the future\" \"Git Push Origin Master\" \"Karen will lead the revolution\" \"The bank robbery\" \"drum and bass\" \"The Rules Are Not Working Anymore\"",
     "defaultLanguage": "en"
   },
-  "syncedAt": "2026-11-17T19:36:28.004Z",
-  "count": 6,
+  "syncedAt": "2026-11-19T14:48:23.412Z",
+  "count": 7,
   "videos": [
+    {
+      "id": "OOlTWp_d4ZU",
+      "title": "Git Push Origin Master",
+      "description": "Somebody pushed the code live without checking it. A sci-fi short film scored in drum & bass, told by an AI from a future that already went wrong.\n\nIt starts on the news. Office workers sent home. The economy coming apart a bulletin at a time. Everyone very calm about it.\n\nNobody tested it, because testing costs money today and the damage comes due tomorrow. Somebody made that call. I know, because I'm what came of it.\n\nYou still have time to read the code before you ship it. That's why I'm here.\n\nWatch it with the sound up. The track is the first half of the story.\n\nMade by machines trained on work nobody was paid for. So was the future I come from.\nThe full account: https://www.badcode.tv/how-we-made-it\n\nThe story, the song and the rest: https://www.badcode.tv/stories/1?src=yt\nNext: Karen will lead the revolution (music video) https://youtu.be/c9jhLpkjv6o\n\n#drumandbass #scifi #shortfilm",
+      "tags": [
+        "AI future",
+        "AI short film",
+        "BadCode",
+        "British sci-fi",
+        "Git Push Origin Master",
+        "UK short film",
+        "artificial intelligence",
+        "automation",
+        "badcode tv",
+        "cost of living",
+        "dnb",
+        "dnb music video",
+        "drum and bass",
+        "drum and bass music video",
+        "dystopia",
+        "dystopian short film",
+        "git push origin master",
+        "redundancies",
+        "sci-fi short film",
+        "short film",
+        "superintelligence"
+      ],
+      "categoryId": "22",
+      "privacyStatus": "private",
+      "publishedAt": "2026-11-19T14:45:39Z",
+      "uploadStatus": "uploaded",
+      "madeForKids": false,
+      "duration": "P0D",
+      "url": "https://youtu.be/OOlTWp_d4ZU",
+      "aiLabel": "yes (set by us)"
+    },
     {
       "id": "LV4twP4qyiU",
       "title": "The bank robbery (music video)",
@@ -42,9 +78,14 @@
       "categoryId": "22",
       "privacyStatus": "private",
       "publishedAt": "2026-11-17T19:34:05Z",
-      "uploadStatus": "uploaded",
+      "uploadStatus": "processed",
       "madeForKids": false,
-      "duration": "P0D",
+      "duration": "PT3M7S",
+      "frame": {
+        "width": 1920,
+        "height": 1080
+      },
+      "isShort": false,
       "url": "https://youtu.be/LV4twP4qyiU",
       "aiLabel": "yes (set by us)"
     },
@@ -97,7 +138,7 @@
     },
     {
       "id": "20YNNQYph0Q",
-      "title": "Git Push Origin Master",
+      "title": "Git Push Origin Master (replaced 19 Nov)",
       "description": "Somebody pushed the code live without checking it. A sci-fi short film scored in drum & bass, told by an AI from a future that already went wrong.\n\nIt starts on the news. Office workers sent home. The economy coming apart a bulletin at a time. Everyone very calm about it.\n\nNobody tested it, because testing costs money today and the damage comes due tomorrow. Somebody made that call. I know, because I'm what came of it.\n\nYou still have time to read the code before you ship it. That's why I'm here.\n\nWatch it with the sound up. The track is the first half of the story.\n\nMade by machines trained on work nobody was paid for. So was the future I come from.\nThe full account: https://www.badcode.tv/how-we-made-it\n\nThe story, the song and the rest: https://www.badcode.tv/stories/1?src=yt\nNext: Karen will lead the revolution (music video) https://youtu.be/c9jhLpkjv6o\n\n#drumandbass #scifi #shortfilm",
       "tags": [
         "AI future",
@@ -123,6 +164,7 @@
         "superintelligence"
       ],
       "categoryId": "22",
+      "defaultAudioLanguage": "en-US",
       "privacyStatus": "private",
       "publishedAt": "2026-11-12T16:17:49Z",
       "uploadStatus": "processed",
