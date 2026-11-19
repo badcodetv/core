@@ -1,21 +1,12 @@
 {
- "round": "6d",
+ "round": "6e",
  "plan": [
   {
-   "h": "Rough cut 6d: your notes on 6c",
+   "h": "Rough cut 6e: in Premiere and on Drive",
    "items": [
-    "The constable's line now plays to the end: \"ready for the VIP\".",
-    "\"Fifty over twen-\" is gone; the flatline plays in silence but for the tone.",
-    "Lip sync: four more takes; the best (C5), with a slightly wider picture warp, has every mouth movement within 0.17 s of the words (C3 was 0.25 s out).",
-    "Filters: twelve to choose from on the picks page (round 9). The cut keeps bleach until you pick."
-   ]
-  },
-  {
-   "h": "You decide",
-   "items": [
-    "The filter.",
-    "Lips good enough now? If not, the other route is to re-voice his line a touch faster to fit the mouth.",
-    "Then Premiere and Drive."
+    "Music 3 dB lower again (about 14 dB under the voices).",
+    "The end card holds the finished logo for ~1.2 s (27.8 s in all).",
+    "In Premiere as shorts-1-priority-lane-r6e; pushed to Drive."
    ]
   }
  ],

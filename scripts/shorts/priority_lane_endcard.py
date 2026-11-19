@@ -31,7 +31,7 @@ TRACE = MEDIA / 'video/pl-r20-LG-LG20-a.mp4'          # 720x1280, two last beats
 STILL = MEDIA / 'moodboard/FL18-a.jpg'                # 768x1376
 QUAD = [(316, 436), (486, 394), (486, 820), (316, 790)]  # FL18-a's waveform area: TL, TR, BR, BL (measured by eye)
 FL_IN, FL_D = 1.6, 2.4                                 # which stretch of the trace plays on the monitor (a beat, then flat)
-LOGO_D = 3.0
+LOGO_D = 3.6                                   # 6e: the finished logo holds ~1.2 s (it held 0.45 s in 6d)
 LINE_Y = round(0.493 * H)
 GREEN = (60, 255, 140)
 

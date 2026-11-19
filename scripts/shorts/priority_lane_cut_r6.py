@@ -40,7 +40,8 @@ VOX, SUNO = AUD / 'voices', AUD / 'suno-r6'
 CAST = AUD / 'casting-r7'
 args0 = sys.argv[1:]
 FINISH = args0[args0.index('--finish') + 1] if '--finish' in args0 else ''
-CUT = MEDIA / ('cut-r6' + (f'-{FINISH}' if FINISH else '')); CUT.mkdir(parents=True, exist_ok=True)
+# 6e: a new folder, so Premiere's r6 media are never rewritten under it
+CUT = MEDIA / ('cut-r6e' + (f'-{FINISH}' if FINISH else '')); CUT.mkdir(parents=True, exist_ok=True)
 LOGO = MEDIA / 'overlay/badcode-lockup-reversed-420.png'
 W, H, FPS, SR = 1080, 1920, 24, 48000
 
@@ -74,7 +75,7 @@ SHOTS = [('losing', 'pl-r21-A-LS21-a.mp4', 0.0, 2.4),
          ('held', 'pl-r5-B-HD19-b.mp4', 1.0, 2.6),
          ('motorcade', 'pl-r23-C5-BM20-a-sync.mp4', 0.2, 5.8),   # round 6d: take C5, flow-align --lo 0.8 --hi 1.25 (Jack at 20:16 and 20:19)
          ('flatline', 'STILL', 0.0, 2.4),
-         ('end', 'pl-r20-LG-LG20-a.mp4', 3.7, 3.4)]   # round 6c: 0.6 s of the Flow trace already flat, then the flatline logo
+         ('end', 'pl-r20-LG-LG20-a.mp4', 3.7, 4.2)]   # 6e: 4.2 s so the finished logo holds ~1.2 s   # round 6c: 0.6 s of the Flow trace already flat, then the flatline logo
 END = 0.0
 ZOOM_FROM, ZOOM_TO, ZOOM = 0.2, 2.4, 2.4
 SCREEN = (0.565, 0.436)                     # FL18-a's monitor screen centre (measured on the still)
@@ -232,7 +233,7 @@ def main():
         events.append({'stem': stem, 't': round(at, 2), 'dur': round(d, 2), 'what': f'{key} (Suno Sounds {SFX[key]}' + (', one beep laid at a quickening rate)' if key == 'monitor' else ')'), 'src': str(src)})
     # Score: from the top, stops dead on the flatline (Jack's brief: no music over the flatline).
     sc = take(SCORE)
-    stems['music-score'] = [(sc, 0.0, FLAT, -10, False, '')]   # round 6c: 3 dB down (Jack: "a little bit too loud… we want to hear the dialogue")
+    stems['music-score'] = [(sc, 0.0, FLAT, -13, False, '')]   # 6c -3 dB ("a little bit too loud… we want to hear the dialogue"), 6e -3 dB more ("turn down the music more")
     stems.setdefault('sfx-monitor', []).append((BEEP, E + END_FLOW, None, -4, False, ''))
     events.append({'stem': 'sfx-monitor', 't': round(E + END_FLOW + 1.25, 2), 'dur': 0.14, 'what': 'one beep as the triangle blips in (made in priority_lane_endcard.py)', 'src': str(BEEP)})
     events.append({'stem': 'music-score', 't': 0.0, 'dur': round(FLAT, 2), 'what': f'score (Suno r6 {SCORE}), cut dead on the flatline', 'src': str(sc)})

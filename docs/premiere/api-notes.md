@@ -2146,3 +2146,9 @@ Auto-Save` folder (timed backups) and the `.prin` sidecars are Premiere's own.
 **Fix: one Premiere version on the machine.** Ruling owed from Jack (2026-11-13: asked which to keep); the
 recommendation given was 2026, because the current work (Paraguay, The Rules, Karen vid_1, the Bank Robbery and
 Camping song cuts) is already Version 45 and 2025 can't open it. Whoever shares a project through Drive needs the same version.
+
+## createOverwriteItemAction makes missing audio tracks (2026-11-19, Priority Lane r6e)
+
+A sequence made `fromItems` with one video clip has 3 audio tracks. `ed.createOverwriteItemAction(item, tick, 2, k)` for
+k = 0..9 (ten full-length WAV stems) placed every stem on its own track A1-A10 in one `premiere_eval`, creating A4-A10 as
+it went; no per-track `premiere_insert_clip` calls needed. (n=1 run, 10 stems.)

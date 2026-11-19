@@ -66,13 +66,13 @@
   "timeline_r1": "https://claude.ai/artifact/GThYPTmuJ6DorNBmaL2Swn"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r6-bleach/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r6-bleach/preview.mp4",
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r6e-bleach/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r6e-bleach/preview.mp4",
   "by": "scripts/shorts/priority_lane_cut_r6.py",
   "script": "python3 scripts/shorts/priority_lane_cut_r6.py --finish bleach"
  },
  "premiere": {
-  "current": "r4",
+  "current": "r6e",
   "r2": {
    "sequence": "shorts-1-priority-lane-r2",
    "guid": "758d9e17-99fd-4286-b79d-05d0eada2437",
@@ -107,6 +107,23 @@
     "state": "in sync",
     "why": "7 shots and 12 audio clips placed as the edl; frames checked at 1, 2.5, 3.7, 6, 9, 12, 18.5 s"
    }
+  },
+  "r6": {
+   "sequence": "shorts-1-priority-lane-r6",
+   "guid": "50dc93a6-6d0b-41f9-8f6e-c26d48494f4a",
+   "built": "2026-11-19",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/priotity lane.prproj",
+   "stale": "its logo held only 0.45 s; replaced minutes later by r6e (never touched by Jack, safe to delete)"
+  },
+  "r6e": {
+   "sequence": "shorts-1-priority-lane-r6e",
+   "guid": "350ed276-0ed1-4e96-ac4c-621b3705e156",
+   "bin": "shorts-1-priority-lane-r6e",
+   "built": "2026-11-19",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/priotity lane.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/cut-r6e-bleach/edl.json",
+   "what": "rough cut 6e: new voices, score c2 at -13 dB, doors a, no food, lip-sync C5, flatline on the monitor, flatline logo reveal, bleach finish; 27.8 s",
+   "how": "V1 = the 8 finished shots of cut-r6e-bleach (finish and logo baked in, no handles); A1-A10 = the cut's full-length stems at 0 (vox x5, music, siren, monitor, cars, cabin); placed by premiere_eval createOverwriteItemAction"
   }
  },
  "beats_r1": [

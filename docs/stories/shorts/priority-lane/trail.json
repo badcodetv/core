@@ -487,5 +487,13 @@
   "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
   "what": "Rough cut 6d: constable's whole take, 'Fifty over' removed, minister lip-sync take C5 (warp 0.8-1.25); 12 filters on the picks page round 9",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-19T13:16:43+00:00",
+  "stage": "premiere",
+  "round": 6,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Rough cut 6e built into Premiere as shorts-1-priority-lane-r6e (music -13 dB, logo hold 1.2 s, 27.8 s); page in sync; agreed cut pushed to Drive",
+  "rebuild": "python3 scripts/shorts/priority_lane_endcard.py && python3 scripts/shorts/priority_lane_cut_r6.py --finish bleach"
  }
 ]
