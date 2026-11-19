@@ -20,8 +20,8 @@ are in [`docs/youtube/README.md`](../../../docs/youtube/README.md). This file is
   remove: trim, cut a section, blur, swap music; views kept); a real recut is a new upload, with the old video
   pointing at it (card or end screen, pinned comment, description line). **Replacing a private video** = upload the
   new cut private, copy title, description, tags, category and thumbnail across, retitle the old one
-  "… (replaced <date>)", and Kai or Jack deletes it in Studio (the tool can't delete).
-- **Delete as we go; the latest wins (Kai, 2026-11-19).** Private uploads are review copies between Kai and Jack, not published candidates. Each film or video keeps ONE private copy: the newest upload. When a new cut goes up, the older one is retitled "(replaced <date>)" the same day and deleted in Studio; when the cut locks, that same video is the one made public.
+  "… (replaced <date>)", then `youtube_delete_video` (title check; private only) deletes it (added 2026-11-19).
+- **Delete as we go; the latest wins (Kai, 2026-11-19).** Private uploads are review copies between Kai and Jack, not published candidates. Each film or video keeps ONE private copy: the newest upload. When a new cut goes up, the older one is retitled "(replaced <date>)" the same day and deleted with `youtube_delete_video`; when the cut locks, that same video is the one made public.
 - **Every video carries the AI label** (YouTube's "altered or synthetic content"). Kai, 2026-11-12.
   `youtube_upload` sets it by default; `youtube_label_ai` labels anything else (Jack's hand uploads).
   🔴 YouTube **accepts** this label but **never reads it back**, so `docs/youtube/log.jsonl` is the only

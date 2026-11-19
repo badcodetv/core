@@ -56,7 +56,7 @@ export function writeSnapshot(dir: string, channel: ChannelRecord, videos: Video
 }
 
 export interface LogLine {
-  action: 'upload' | 'update' | 'thumbnail' | 'playlist-create' | 'playlist-add' | 'channel'
+  action: 'upload' | 'update' | 'thumbnail' | 'playlist-create' | 'playlist-add' | 'channel' | 'delete'
   videoId?: string
   playlistId?: string
   title?: string

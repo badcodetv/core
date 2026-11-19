@@ -290,6 +290,11 @@ export class YouTube {
     return v
   }
 
+  /** Delete a video for good (videos.delete; the youtube.force-ssl scope covers it). YouTube answers 204. */
+  async deleteVideo(id: string): Promise<void> {
+    await this.req('DELETE', `${API}/videos?id=${encodeURIComponent(id)}`)
+  }
+
   /** Every upload on the channel, private and scheduled ones included, newest first. */
   async allUploads(): Promise<Json[]> {
     const ch = await this.myChannel()

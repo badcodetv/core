@@ -29,6 +29,7 @@ you has asked for that video in words.)
 | `youtube_update_video` | Change only the fields you pass; the rest is kept. Tags are replaced as a whole list. |
 | `youtube_update_channel` | The channel itself: description (About text, 1,000 characters, first ~130 on the header), keywords, country, language, trailer for visitors who haven't subscribed. Only what you pass changes. Pass nothing to read it. **Studio only:** name, handle, profile picture, links row. |
 | `youtube_set_thumbnail` | PNG/JPEG under 2 MB, 1280×720 ideal. Needs the channel phone-verified: `youtube_status` must show `longUploadsStatus: "allowed"`; `"eligible"` means not yet. The files live in `D:\badcode-videos\youtube\thumbnails\` (`<videoId>-<story>-<seconds>s.jpg`). |
+| `youtube_delete_video` | Deletes a video for good (no undo). Guards: `confirmTitle` must match the current title exactly; public or unlisted videos are refused unless `allowNonPrivate` (only when Kai or Jack named the video). Writes the title, description and tags to `log.jsonl` first. For replaced review copies: retitle "(replaced <date>)", then delete (Kai, 2026-11-19). |
 | `youtube_playlists` | List, create, add a video. |
 | `youtube_categories` | Category ids. Default on upload is `1` (Film & Animation); `10` Music, `25` News & Politics. |
 

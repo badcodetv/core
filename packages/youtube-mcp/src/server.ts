@@ -300,6 +300,41 @@ server.registerTool(
 )
 
 server.registerTool(
+  'youtube_delete_video',
+  {
+    description:
+      'Delete a video from the channel FOR GOOD (no undo, no bin; its link and views are gone). For replaced review ' +
+      'copies (Kai, 2026-11-19: "delete as we go, the latest wins"): retitle the old copy "(replaced <date>)" first, then ' +
+      'delete it. Guards: `confirmTitle` must equal the video\'s current title exactly, and a public or unlisted video ' +
+      'is refused unless `allowNonPrivate` is true (only when Kai or Jack named that video). The full title, ' +
+      'description and tags are written to docs/youtube/log.jsonl before the delete, so the words are never lost.',
+    inputSchema: {
+      videoId: z.string().describe('The id or a link.'),
+      confirmTitle: z.string().describe("The video's current title, exactly, as youtube_get_video shows it."),
+      allowNonPrivate: z.boolean().default(false),
+    },
+  },
+  ({ videoId, confirmTitle, allowNonPrivate }) =>
+    run(async () => {
+      const id = parseId(videoId)
+      const v = summarise(await yt.getVideo(id))
+      if (v.title !== confirmTitle)
+        throw new Error(`Title check failed: the video is "${v.title}", not "${confirmTitle}". Nothing deleted.`)
+      if (v.privacyStatus !== 'private' && !allowNonPrivate)
+        throw new Error(`"${v.title}" is ${v.privacyStatus}, not private. Nothing deleted; pass allowNonPrivate only if Kai or Jack named it.`)
+      appendLog(RECORD_DIR, {
+        action: 'delete',
+        videoId: id,
+        title: v.title,
+        requested: { privacyStatus: v.privacyStatus, publishedAt: v.publishedAt, description: v.description, tags: v.tags },
+        note: 'deleted for good; the words above are the only copy',
+      })
+      await yt.deleteVideo(id)
+      return { deleted: { id, title: v.title, privacyStatus: v.privacyStatus }, snapshot: await snapshotAfterChange() }
+    }),
+)
+
+server.registerTool(
   'youtube_label_ai',
   {
     description:
