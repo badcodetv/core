@@ -1,9 +1,276 @@
 {
  "title": "Ten Commandments Stills",
  "eyebrow": "BadCode Shorts · Ten Economic Commandments · real photos (Unsplash)",
- "heading": "The clips and a filter",
- "intro": "Round 2: your 17 picks animated. 15 in Flow, two motions each (clean-room prompts, researched, pollution-checked); the woman on the stairs and the cash are camera moves over the real photo (no AI). Pick a motion per photo and a filter; the stills from round 1 are folded below.",
+ "heading": "BadCode on location, and subtler filters",
+ "intro": "Round 3. Your locations with BadCode rapping in them: new pictures made from your photos (an AI figure is never pasted into a real photo), two versions each. And six subtler filters. Pick the ones you want and I'll animate them; rounds 1-2 are folded below.",
  "sections": [
+  {
+   "h": "Round 3",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "finish-subtle",
+     "round": 3,
+     "title": "Subtler filters",
+     "line": "Light touches only, on the same 8 s. The logo is never filtered.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "none",
+       "src": "finish2/none.mp4",
+       "label": "none: as it is",
+       "warn": ""
+      },
+      {
+       "id": "warm35",
+       "src": "finish2/warm35.mp4",
+       "label": "warm35: warm film, a little grain",
+       "warn": ""
+      },
+      {
+       "id": "matte",
+       "src": "finish2/matte.mp4",
+       "label": "matte: soft, slightly faded",
+       "warn": ""
+      },
+      {
+       "id": "dusk",
+       "src": "finish2/dusk.mp4",
+       "label": "dusk: cool shadows, warm highlights",
+       "warn": ""
+      },
+      {
+       "id": "bloom",
+       "src": "finish2/bloom.mp4",
+       "label": "bloom: soft glow on the lights",
+       "warn": ""
+      },
+      {
+       "id": "magazine",
+       "src": "finish2/magazine.mp4",
+       "label": "magazine: gentle print look",
+       "warn": ""
+      },
+      {
+       "id": "tapelight",
+       "src": "finish2/tapelight.mp4",
+       "label": "tapelight: a hint of 90s tape",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-vibe2",
+     "round": 3,
+     "title": "BadCode at: Brownstone stoop",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-vibe2-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-vibe2-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-vibe3",
+     "round": 3,
+     "title": "BadCode at: Elevated walkway, graffiti",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-vibe3-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-vibe3-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-r3-press2",
+     "round": 3,
+     "title": "BadCode at: Wall Street platform",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-r3-press2-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-r3-press2-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-vibe6",
+     "round": 3,
+     "title": "BadCode at: Bodega doorway",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-vibe6-a.jpg",
+       "label": "a",
+       "warn": "the shop sign stayed readable (\"SMOKE SHOP\"): I fix it if you pick this"
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-vibe6-b.jpg",
+       "label": "b",
+       "warn": "the shop sign stayed readable (\"SMOKE SHOP\"): I fix it if you pick this"
+      }
+     ]
+    },
+    {
+     "slot": "fig-vibe7",
+     "round": 3,
+     "title": "BadCode at: Snowy court through the fence",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-vibe7-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-vibe7-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-vibe8",
+     "round": 3,
+     "title": "BadCode at: Taxi street",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-vibe8-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-vibe8-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-vibe9",
+     "round": 3,
+     "title": "BadCode at: Fire-escape balcony",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-vibe9-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-vibe9-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-r10-bailout2",
+     "round": 3,
+     "title": "BadCode at: Marble columns",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-r10-bailout2-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-r10-bailout2-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-vibe4",
+     "round": 3,
+     "title": "BadCode at: Graffiti door, boombox",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-vibe4-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-vibe4-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "fig-fix1",
+     "round": 3,
+     "title": "BadCode at: Rooftop skyline",
+     "line": "A new picture of your location with him rapping in it. Pick one (or none).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fig/F6-fix1-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "fig/F6-fix1-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 2: clips",
    "lede": "",
@@ -1513,5 +1780,5 @@
    ]
   }
  ],
- "round": 2
+ "round": 3
 }
