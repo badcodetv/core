@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/logo/reveal-f.mp4",
+ "made": "2026-11-19T10:28:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/logo_reveal.py",
+ "why": "logo reveal f, picked by Jack (picks round 10)"
+}

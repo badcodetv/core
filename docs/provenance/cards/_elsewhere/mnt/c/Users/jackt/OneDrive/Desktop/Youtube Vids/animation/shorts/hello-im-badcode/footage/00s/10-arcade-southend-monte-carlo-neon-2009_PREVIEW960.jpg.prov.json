@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/footage/00s/10-arcade-southend-monte-carlo-neon-2009_PREVIEW960.jpg",
+ "made": "2026-11-19T10:28:54+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "real-footage",
+ "tool": "wikimedia-commons",
+ "why": "real 2000s footage, licence and source in docs/stories/short-hello-im-badcode/research/footage-00s-shortlist.md"
+}

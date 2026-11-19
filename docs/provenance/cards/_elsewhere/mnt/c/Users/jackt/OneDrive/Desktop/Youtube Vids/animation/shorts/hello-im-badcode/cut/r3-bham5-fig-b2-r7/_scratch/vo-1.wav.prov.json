@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r3-bham5-fig-b2-r7/_scratch/vo-1.wav",
+ "made": "2026-11-19T10:28:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/hello_cut_r3.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/audio/casting/badcode-bham5-l1.wav",
+ "why": "line 1, silence trimmed (rough cut 7)"
+}
