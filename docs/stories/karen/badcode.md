@@ -11,7 +11,7 @@ there. Two videos: a **narrated story film** (ends on Sean AI's card, the sacked
 "To be continued"; no stated moral) and a **music video** for the song "All Day to Complain" (about 4:10).
 
 ## Parts
-- Story film — `scenes/story/` — on its timeline page at **cut r3** (2026-11-18): Kai's notes to 2:08 attempted in one cut (`scripts/karen/story-cut-r3.py`; office → calling everyone re-cut, Viral onward still Jack's `Karen v4` render). Waiting for Kai's notes on r3. Premiere still holds only `Karen v4`. Names for the first three calls (Kai): Martha (receptionist), Clive (local council), Harriet (borough representative).
+- Story film — `scenes/story/` — on its timeline page at **cut r3** (2026-11-18): Kai's notes to 2:08 attempted in one cut (`scripts/karen/story-cut-r3.py`; office → calling everyone re-cut, Viral onward still Jack's `Karen v4` render). r3b (19 Nov): the same cut with no clip sound (Kai's rule below), on the same page; Kai noting. Premiere still holds only `Karen v4`. Names for the first three calls (Kai): Martha (receptionist), Clive (local council), Harriet (borough representative).
 - Music video — `scenes/music-video/` — final cut frozen 2026-11-09 (Kai's hand edit on `karen-music-r4`).
 - **The two have different looks and different Karens. Don't carry one part's look or voice into the other.**
 
@@ -43,6 +43,8 @@ Status: LOCKED. Karen's imagery is Jack's, made by hand in Flow; generate only w
 - **Narrator (story film):** AI Studio `Algenib`, model `gemini-3.1-flash-tts-preview`, accent Neutral,
   Style/Pace empty; a dry, wry American storyteller from the future, anger banked down, never deep or
   booming. Profile: [narration/profiles/narrator-algenib.md](./narration/profiles/narrator-algenib.md). LOCKED.
+- **No clip sound (Kai, 2026-11-19):** the Flow clips' own audio is never heard in the story film. Only the narration, the
+  music and sound effects placed on the timeline on purpose. (Jack's v4 Premiere cut had the clips' sound on A1; r3b drops it.)
 - **Ending voices:** the President `Charon`, Tarquin `Zubenelgenubi`. LOCKED in the cut.
 - **Karen's voice:** story film = natural, grounded (Flow base voice `Gacrux`); music video = the song's performed whine.
 - **Score:** EMPTY — six cues in [narration/score.md](./narration/score.md); stem-split an accepted song take first.

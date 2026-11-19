@@ -20,7 +20,13 @@ K = pathlib.Path('/mnt/d/badcode-videos/karen-story')
 NC, OC = K / 'new clips', K / 'old clips'
 N2 = K / '_outside/Karen/narration-v2/final'
 N3 = K / '_outside/Karen/narration-r3'
-OUT = K / 'timeline/cut-r3'
+# r3b (Kai, 19 Nov): "we're hearing the audio track from the videos ... We should only be hearing the music and the
+# narration and sound effects we've explicitly put in the timeline." So: no clip sound anywhere, and the tail (Viral on)
+# gets its sound rebuilt from v4's own events (narration, score, hold music) instead of the render's mix, which has
+# Jack's A1 clip sound baked in. Same picture as r3, so notes pinned to r3's frames still line up.
+NO_CLIP = '--no-clip-sound' in sys.argv
+TAIL_DB = -4.0  # measured: the rebuilt tail ran -14.0 LUFS against the v4 render's -18.0 (Jack's mix sat lower)
+OUT = K / ('timeline/cut-r3b' if NO_CLIP else 'timeline/cut-r3')
 SEG = OUT / 'seg'
 V4 = json.loads((K / 'timeline/cut-v4/edl.json').read_text())
 RENDER = K / 'renders/karen-v4-r0.mp4'
@@ -172,7 +178,7 @@ def add_shot(src, inp, dur, fx=None, lt=None, still=False, looped=False, what=No
     key.write_text(sig)
     video.append({'file': str(seg), 'source': str(src), 'start': q(t), 'dur': dur, 'beat': cur_beat['id'],
                   'track': 'V1', 'in': inp, 'looped': bool(looped or hold > 0.2), 'what': what or pathlib.Path(src).name})
-    if not still and str(src).endswith('.mp4') and not str(src).startswith(str(SEG)):
+    if not NO_CLIP and not still and str(src).endswith('.mp4') and not str(src).startswith(str(SEG)):
         events.append({'stem': 'sfx-clip-sound', 't': q(t), 'dur': dur, 'what': pathlib.Path(src).name, 'src': str(src),
                            'in': inp, 'gain': CLIP_DB})
     t += dur
@@ -319,7 +325,7 @@ for v in V4['video']:
     if v['start'] >= TAIL_FROM - 0.01:
         video.append({**v, 'start': v['start'] + DELTA})
 for e in V4['events']:
-    if e['t'] >= TAIL_FROM - 0.05:
+    if e['t'] >= TAIL_FROM - 0.05 and not (NO_CLIP and e['stem'] == 'sfx-clip-sound'):
         events.append({**e, 't': e['t'] + DELTA, 'in_render': True})
 TOTAL = HEAD + (V4['total'] - TAIL_FROM)
 
@@ -359,6 +365,27 @@ mix = ';'.join(fl) + ';' + ''.join(f'[a{i}]' for i in range(n)) + f'amix=inputs=
 head_a = SEG / 'head-a.wav'
 ff(*ins, '-filter_complex', mix, '-map', '[m]', '-ar', 48000, '-ac', 2, head_a)
 
+if NO_CLIP:  # the tail's sound rebuilt from v4's events, the same way as the head (narration and hold music as recorded,
+    # the score at MUS_DB with short fades), over the render's picture only
+    tins, tfl = [], []
+    for e in [e for e in events if e.get('in_render')]:
+        k = len(tfl); a = e['t'] - HEAD
+        if e['stem'] == 'mus-score':
+            tins += ['-stream_loop', '-1', '-i', e['src']]
+            tfl.append(f"[{k}:a]atrim=0:{e['dur'] + 0.6:.3f},aresample=48000,aformat=channel_layouts=stereo,volume={MUS_DB}dB,"
+                       f"afade=t=in:d=0.3,afade=t=out:st={max(e['dur'] - 0.4, 0):.3f}:d=1.0,adelay={int(a * 1000)}:all=1[t{k}]")
+        else:
+            tins += ['-i', e['src']]
+            tfl.append(f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={int(a * 1000)}:all=1[t{k}]")
+    TL = TOTAL - HEAD
+    tail_a = SEG / 'tail-a-noclip.wav'
+    ff(*tins, '-filter_complex', ';'.join(tfl) + ';' + ''.join(f'[t{i}]' for i in range(len(tfl))) +
+       f'amix=inputs={len(tfl)}:normalize=0:dropout_transition=0,volume={TAIL_DB}dB,atrim=0:{TL:.3f},apad=whole_dur={TL:.3f}[m]',
+       '-map', '[m]', '-ar', 48000, '-ac', 2, tail_a)
+    tail_nc = SEG / 'tail-noclip.mov'
+    ff('-i', tail_mov, '-i', tail_a, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'pcm_s16le', '-shortest', tail_nc)
+    tail_mov = tail_nc
+
 head_av = SEG / 'head-av.mov'
 ff('-i', head_v, '-i', head_a, '-c:v', 'copy', '-c:a', 'pcm_s16le', '-shortest', head_av)
 preview = OUT / 'preview.mp4'
@@ -378,7 +405,10 @@ edl = {
     'beats': beats, 'video': video,
     'audio': [{'track': f'A{i + 1}', 'name': s} for i, s in enumerate(stems)],
     'events': [{k: v for k, v in e.items() if k in ('stem', 't', 'dur', 'what', 'src')} for e in events],
-    'flags': ['Viral onward is the Karen v4 render (Premiere effects baked in); its sound is that render\'s mix.',
+    'flags': (["r3b (Kai, 19 Nov): no clip sound anywhere. Only narration, score and the hold music play; Viral onward keeps "
+               "the v4 render's picture with its sound rebuilt from v4's narration, score and hold-music events (Jack's A1 clip "
+               "sound left out). Same picture as r3."] if NO_CLIP else
+              ['Viral onward is the Karen v4 render (Premiere effects baked in); its sound is that render\'s mix.']) + [
               'New lines are drafts unless marked by Kai or Jack; jokes stay theirs.',
               'Grey "NEW SHOT TO MAKE" cards stand in for the coffee shop and the shouting-at-the-phone shots.'],
     'render': str(preview),

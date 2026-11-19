@@ -8,11 +8,12 @@
   "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
   "source_sequence": "Karen v4",
   "cut": {
-    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json",
-    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/preview.mp4",
-    "script": "python3 scripts/karen/story-cut-r3.py  (new lines: scripts/karen/narration-r3.tsv via render-narration-r3.sh)",
+    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/preview.mp4",
+    "script": "python3 scripts/karen/story-cut-r3.py --no-clip-sound  (r3b, Kai 19 Nov: no clip sound; new lines: scripts/karen/narration-r3.tsv via render-narration-r3.sh)",
     "previous": {
-      "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json"
+      "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
+      "r3": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json"
     }
   },
   "premiere": {
