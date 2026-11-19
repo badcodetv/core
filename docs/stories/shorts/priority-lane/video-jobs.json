@@ -203,6 +203,42 @@
    "character": null,
    "why": "Jack 2026-11-19 at 20:16: 'Please fix the lip syncing' (exact line in the prompt, paced to the take; lip-sync-dub / flow-align.py)",
    "motion": "The camera does not move. In the back seat of a black car at night, the man holds the phone to his right ear and speaks into it, relaxed and amused, his free hand resting on his knee. About half a second in he says: \"Hey Jeffrey, what time's the plane to the island?\" He pauses for a second, smiling, then says: \"I'm on my way to fetch Andrew.\" and his mouth closes. His face stays turned three-quarters toward us the whole time. Rain runs down the side window and blue light sweeps across the glass. One continuous shot, no cuts, no text. The camera does not move."
+  },
+  {
+   "key": "r23-C4",
+   "n": 5,
+   "still": "BM20-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-19 at 20:19 on rough cut 6c: 'please fix the lip syncing' (C3 was ~0.2 s late on 'fetch Andrew'): more takes, keep the best",
+   "motion": "The camera does not move. In the back seat of a black car at night, the man holds the phone to his right ear and speaks into it, relaxed and amused, his free hand resting on his knee. About half a second in he says: \"Hey Jeffrey, what time's the plane to the island?\" He pauses for a second, smiling, then says: \"I'm on my way to fetch Andrew.\" and his mouth closes. His face stays turned three-quarters toward us the whole time. Rain runs down the side window and blue light sweeps across the glass. One continuous shot, no cuts, no text. The camera does not move."
+  },
+  {
+   "key": "r23-C5",
+   "n": 5,
+   "still": "BM20-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-19 at 20:19 on rough cut 6c: 'please fix the lip syncing' (C3 was ~0.2 s late on 'fetch Andrew'): more takes, keep the best",
+   "motion": "The camera does not move. In the back seat of a black car at night, the man holds the phone to his right ear and speaks into it, relaxed and amused, his free hand resting on his knee. About half a second in he says: \"Hey Jeffrey, what time's the plane to the island?\" He pauses for a second, smiling, then says: \"I'm on my way to fetch Andrew.\" and his mouth closes. His face stays turned three-quarters toward us the whole time. Rain runs down the side window and blue light sweeps across the glass. One continuous shot, no cuts, no text. The camera does not move."
+  },
+  {
+   "key": "r23-C6",
+   "n": 5,
+   "still": "BM20-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-19 at 20:19 on rough cut 6c: 'please fix the lip syncing' (C3 was ~0.2 s late on 'fetch Andrew'): more takes, keep the best",
+   "motion": "The camera does not move. In the back seat of a black car at night, the man holds the phone to his right ear and speaks into it, relaxed and amused, his free hand resting on his knee. About half a second in he says: \"Hey Jeffrey, what time's the plane to the island?\" He pauses for a second, smiling, then says: \"I'm on my way to fetch Andrew.\" and his mouth closes. His face stays turned three-quarters toward us the whole time. Rain runs down the side window and blue light sweeps across the glass. One continuous shot, no cuts, no text. The camera does not move."
+  },
+  {
+   "key": "r23-C7",
+   "n": 5,
+   "still": "BM20-a",
+   "duration": 6,
+   "character": null,
+   "why": "Jack 2026-11-19 at 20:19 on rough cut 6c: 'please fix the lip syncing' (C3 was ~0.2 s late on 'fetch Andrew'): more takes, keep the best",
+   "motion": "The camera does not move. In the back seat of a black car at night, the man holds the phone to his right ear and speaks into it, relaxed and amused, his free hand resting on his knee. About half a second in he says: \"Hey Jeffrey, what time's the plane to the island?\" He pauses for a second, smiling, then says: \"I'm on my way to fetch Andrew.\" and his mouth closes. His face stays turned three-quarters toward us the whole time. Rain runs down the side window and blue light sweeps across the glass. One continuous shot, no cuts, no text. The camera does not move."
   }
  ],
  "note": "C (minister) keeps the round 1 clip pl-04-MIN1-b; it is re-synced to the Charon voice with lip-sync-dub, no new clip. Round 1 jobs are in video-jobs-r1.json."

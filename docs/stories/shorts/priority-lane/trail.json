@@ -479,5 +479,13 @@
   "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
   "what": "Rough cut 6c: music -3 dB, minister lip-synced (C3), flatline on the monitor, flatline logo reveal; 27.0 s",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
+ },
+ {
+  "at": "2026-11-19T12:45:28+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/LssFw3FGc6u5mr1fVM3STd",
+  "what": "Rough cut 6d: constable's whole take, 'Fifty over' removed, minister lip-sync take C5 (warp 0.8-1.25); 12 filters on the picks page round 9",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/shorts/priority-lane <out-dir>"
  }
 ]

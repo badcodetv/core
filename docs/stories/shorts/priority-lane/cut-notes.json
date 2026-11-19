@@ -1,19 +1,20 @@
 {
- "round": "6c",
+ "round": "6d",
  "plan": [
   {
-   "h": "Rough cut 6c: your notes on 6b",
+   "h": "Rough cut 6d: your notes on 6c",
    "items": [
-    "Music 3 dB down: it now sits about 10 dB under the voices, so the dialogue reads and the music is still there.",
-    "The minister is lip-synced: three new takes with his exact line, the best (C3) aligned to the voice. 3 of 5 mouth movements land on the words; the last two (\"fetch Andrew\") are ~0.2 s late, softened by the glass.",
-    "The flatline now happens on the monitor: the trace beats once and goes flat on its screen as we push in.",
-    "The end: the flat line becomes the logo. It draws the ring round from where it meets it, the red triangle blips in with one beep, and a monitor sweep wipes the wordmark on. Built from the brand file's own pieces. 27.0 s in all."
+    "The constable's line now plays to the end: \"ready for the VIP\".",
+    "\"Fifty over twen-\" is gone; the flatline plays in silence but for the tone.",
+    "Lip sync: four more takes; the best (C5), with a slightly wider picture warp, has every mouth movement within 0.17 s of the words (C3 was 0.25 s out).",
+    "Filters: twelve to choose from on the picks page (round 9). The cut keeps bleach until you pick."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Lip sync: good enough through the glass, or roll more takes?",
+    "The filter.",
+    "Lips good enough now? If not, the other route is to re-voice his line a touch faster to fit the mouth.",
     "Then Premiere and Drive."
    ]
   }
@@ -27,7 +28,10 @@
   "at117": "Done: the poster close-up hold is gone; it now only appears inside the 5-frame dissolve into him in the car.",
   "at496": "Done: re-shot with the exact line (3 takes) and aligned the best one, C3. 3 of 5 mouth runs on the words, \"fetch Andrew\" ~0.2 s late. Say if you want more takes.",
   "at534": "Done: the Flow trace is mapped onto the monitor's screen, so it beats once and goes flat as we push in.",
-  "at702": "Done: the flat line turns into the logo: it draws the ring, the triangle blips in with a beep, a sweep wipes the wordmark on."
+  "at702": "Done: the flat line turns into the logo: it draws the ring, the triangle blips in with a beep, a sweep wipes the wordmark on.",
+  "at304": "Fixed: the whole radio take plays now, \"ready for the VIP\" to the end.",
+  "at499": "Re-done: 4 more takes, the best (C5) aligned with a wider warp. Every phrase within 0.17 s now (was 0.25 s).",
+  "at559": "Removed: \"Fifty over twen-\" is out."
  },
  "kai_round1": {
   "at529": "the ending of this should show real life news stories flash on screen in like a meme format, as he is saying the last lines. also have a badcode overlay over all of it. THanks",

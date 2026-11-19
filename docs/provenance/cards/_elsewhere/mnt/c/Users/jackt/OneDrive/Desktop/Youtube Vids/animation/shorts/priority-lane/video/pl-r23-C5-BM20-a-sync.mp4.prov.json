@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r23-C5-BM20-a-sync.mp4",
+ "made": "2026-11-19T12:43:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "flow-align",
+ "tool": "scripts/lipsync/flow-align.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r23-C5-BM20-a.mp4",
+ "why": "take C5 warped to the minister's voice (Jack 20:19)",
+ "settings": {
+  "lo": "0.8",
+  "hi": "1.25"
+ }
+}

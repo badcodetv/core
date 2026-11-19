@@ -72,7 +72,7 @@ SHOTS = [('losing', 'pl-r21-A-LS21-a.mp4', 0.0, 2.4),
          ('losing', 'pl-r21-A-LS21-a.mp4', 2.4, 2.5),
          ('cordon', 'pl-r5-A3-CD18-a.mp4', 0.4, 4.9),     # the police holding the junction, the radio call
          ('held', 'pl-r5-B-HD19-b.mp4', 1.0, 2.6),
-         ('motorcade', 'pl-r22-C3-BM20-a-sync.mp4', 0.2, 5.8),   # round 6c: lip-synced take C3 (flow-align.py; Jack at 20:16)
+         ('motorcade', 'pl-r23-C5-BM20-a-sync.mp4', 0.2, 5.8),   # round 6d: take C5, flow-align --lo 0.8 --hi 1.25 (Jack at 20:16 and 20:19)
          ('flatline', 'STILL', 0.0, 2.4),
          ('end', 'pl-r20-LG-LG20-a.mp4', 3.7, 3.4)]   # round 6c: 0.6 s of the Flow trace already flat, then the flatline logo
 END = 0.0
@@ -94,12 +94,13 @@ LINES = [('vox-driver', 'pl-r7-driver-d-angry.wav', A + 0.3, 0.0, 1.3, 'driver',
          ('vox-paramedic1', 'pl-r7-paramedic1-a.wav', A + 1.3, 0.4, 3.7, 'paramedic1', "BP 60 over 30! Fucking hurry up, we're gonna lose him!"),
          ('vox-paramedic2', 'pl-r7-paramedic2-d.wav', A + 4.5, 0.0, 1.95, 'paramedic2', "Sats dropping, he's peri-arrest!"),
          ('vox-driver', 'pl-r7-driver-d-angry.wav', A + 6.4, 1.5, 3.1, 'driver', 'Get the fuck out of the way!'),
-         ('vox-paramedic2', 'pl-r7-paramedic2-d.wav', B + 0.3, 2.25, 3.15, 'paramedic2', 'Why have we stopped?!'),
-         ('vox-paramedic1', 'pl-r7-paramedic1-a.wav', D + 0.15, 4.1, 4.7, 'paramedic1', 'Fifty over twen-')]
-RADIO = ('vox-constable', 'pl-r7-constable-b-radio.wav', K + 0.2, 0.0, 3.5, 'constable', "Constable ninety-seven. Junction's blocked, ready for the VIP.")
+         ('vox-paramedic2', 'pl-r7-paramedic2-d.wav', B + 0.3, 2.25, 3.15, 'paramedic2', 'Why have we stopped?!')]
+# 6d: "Fifty over twen-" removed (Jack, 23:07: "50 over - then it cuts out, maybe just remove the line")
+# 6d: the constable's whole take (3.5 s clipped "VIP", Jack 12:16)
+RADIO = ('vox-constable', 'pl-r7-constable-b-radio.wav', K + 0.2, 0.0, 4.04, 'constable', "Constable ninety-seven. Junction's blocked, ready for the VIP.")
 # Round 6c: the voice as flow-align placed it on take C3's mouth (same clock as the clip), from the clip's in-point 0.2 s
-MINISTER = ('vox-minister', 'pl-r7-minister-d-sync-C3.wav', C, 0.2 + 0.0, 0.2 + 3.4, 'minister', "Hey Jeffrey, what time's the plane to the island?")
-MINISTER_2 = ('vox-minister', 'pl-r7-minister-d-sync-C3.wav', C + 3.4, 0.2 + 3.4, 0.2 + 5.8, 'minister', "I'm on my way to fetch Andrew.")
+MINISTER = ('vox-minister', 'pl-r7-minister-d-sync-C5.wav', C, 0.2 + 0.0, 0.2 + 3.4, 'minister', "Hey Jeffrey, what time's the plane to the island?")
+MINISTER_2 = ('vox-minister', 'pl-r7-minister-d-sync-C5.wav', C + 3.4, 0.2 + 3.4, 0.2 + 5.8, 'minister', "I'm on my way to fetch Andrew.")
 FLAT = D + 0.9
 # Effects: (stem, key, at, dur, gain dB, loop)
 EFX = [('sfx-cabin', 'cabin', 0.0, K, -10, True),
@@ -277,7 +278,7 @@ def main():
            'events': [{k: v for k, v in e.items() if k not in ('who', 'text')} for e in events],
            'flags': [f'Runs {TOTAL:.1f} s, about 3 s longer than round 5: the flatline end card is a shot of its own now.',
                      'Voices: plain reads on gemini-3.8-flash-tts (the driver with the style "angry, shouting"), cut at the word gaps.',
-                     'The minister is lip-synced on take C3 (flow-align.py): 3 of 5 mouth runs within the bar, 2 about 0.2 s late in "fetch Andrew"; through the glass it reads.',
+                     'The minister is lip-synced on take C5 (flow-align.py, warp 0.8-1.25): every mouth run within 0.17 s, 3 of 5 inside the strict bar.',
                      'The flatline still (FL18-a) keeps its push-in, now without the logo; the logo is on the end card.']}
     (CUT / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': TOTAL, 'starts': starts, 'preview': str(CUT / 'preview.mp4')}))

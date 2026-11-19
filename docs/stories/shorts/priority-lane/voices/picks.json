@@ -1,9 +1,96 @@
 {
  "title": "Priority Lane Voices",
- "eyebrow": "Priority Lane · picks · round 8",
- "heading": "Filter, fixes and the flatline end card",
- "intro": "Round 8. Voices are all picked (driver d, angry). Here: a filter for the whole short (watch the four), the fixes for your two timeline notes (doors shut, no food), and the flatline end card's monitor. The marked option in each is already being animated, so you only need to pick if you want a different one.",
+ "eyebrow": "Priority Lane · picks · round 9",
+ "heading": "An array of filters",
+ "intro": "Round 9 (your ask: \"an array of differing filters\"): twelve looks on the same 10 seconds, the first four from round 8 and eight new ones. Pick one and I build it in; bleach stays until you do.",
  "sections": [
+  {
+   "h": "Round 9",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "finish2",
+     "round": 9,
+     "title": "Filters, round 2: a wider spread",
+     "line": "The same 10 s (the ambulance, then the minister) under each. bleach is what the cut uses now. The logo is never filtered.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "none",
+       "src": "finish2/none.mp4",
+       "label": "none: as it is",
+       "warn": ""
+      },
+      {
+       "id": "night35",
+       "src": "finish2/night35.mp4",
+       "label": "night35: night 35 mm print",
+       "warn": ""
+      },
+      {
+       "id": "dashcam",
+       "src": "finish2/dashcam.mp4",
+       "label": "dashcam: cab camera",
+       "warn": ""
+      },
+      {
+       "id": "bleach",
+       "src": "finish2/bleach.mp4",
+       "label": "bleach: bleach bypass",
+       "warn": "in the cut now"
+      },
+      {
+       "id": "noir",
+       "src": "finish2/noir.mp4",
+       "label": "noir: hard black and white",
+       "warn": ""
+      },
+      {
+       "id": "nightvision",
+       "src": "finish2/nightvision.mp4",
+       "label": "nightvision: green image intensifier",
+       "warn": ""
+      },
+      {
+       "id": "cctv",
+       "src": "finish2/cctv.mp4",
+       "label": "cctv: 12 fps, blocky, cold",
+       "warn": ""
+      },
+      {
+       "id": "sodium",
+       "src": "finish2/sodium.mp4",
+       "label": "sodium: street-lamp orange and blue duotone",
+       "warn": ""
+      },
+      {
+       "id": "crossproc",
+       "src": "finish2/crossproc.mp4",
+       "label": "crossproc: cross-processed film",
+       "warn": ""
+      },
+      {
+       "id": "super8",
+       "src": "finish2/super8.mp4",
+       "label": "super8: warm faded home movie",
+       "warn": ""
+      },
+      {
+       "id": "tealorange",
+       "src": "finish2/tealorange.mp4",
+       "label": "tealorange: blockbuster grade",
+       "warn": ""
+      },
+      {
+       "id": "thermal",
+       "src": "finish2/thermal.mp4",
+       "label": "thermal: heat-camera false colour",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 8",
    "lede": "",
@@ -665,5 +752,5 @@
    ]
   }
  ],
- "round": 8
+ "round": 9
 }

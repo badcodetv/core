@@ -1,0 +1,44 @@
+{
+ "clip": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-r23-C5-BM20-a.mp4",
+ "voice": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r7/pl-r7-minister-d.wav",
+ "mouth_runs": [
+  [
+   0.458,
+   2.792
+  ],
+  [
+   3.375,
+   4.667
+  ]
+ ],
+ "voice_phrases": [
+  [
+   0.0,
+   3.06746
+  ],
+  [
+   3.86088,
+   5.30325
+  ]
+ ],
+ "how": "phrase by phrase",
+ "placed": [
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r7/pl-r7-minister-d.wav",
+   "from": 0,
+   "to": 3.12746,
+   "at": 0.468,
+   "text": "phrase 1"
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/audio/casting-r7/pl-r7-minister-d.wav",
+   "from": 3.84088,
+   "to": 5.36325,
+   "at": 3.645,
+   "text": "phrase 2"
+  }
+ ],
+ "place_dub": "phrase 1                           3.13s x1.00 -> 3.13s at 0.47, voice on 0.73, ends 3.60\nphrase 2                           1.52s x1.00 -> 1.52s at 3.65, voice on 3.67, ends 5.17\nwrote /tmp/claude-1000/-home-jackt-projects-badcode-badcode/9852d996-da1d-48e2-9f11-6d8b51bc439c/scratchpad/lipsync/min-C5w-voice.wav (-12.8 -> -20.5 LUFS)\n",
+ "warp": "{\"runs_before(t, voice_late_s, corr)\": [[0.75, -0.25, 0.55], [1.96, -0.125, 0.79], [2.54, 0.25, 0.05], [3.67, -0.25, 0.27], [4.5, 0.208, 0.71]], \"runs_after\": [[0.75, 0.042, 0.25], [1.96, -0.083, 0.67], [2.54, 0.125, 0.64], [3.67, 0.167, 0.46], [4.5, -0.042, 0.65]], \"rate_min\": 0.8, \"rate_max\": 1.25, \"src_start\": 0.135, \"src_end\": 5.861}\nWARNING: Logging before InitGoogle() is written to STDERR\nW0000 00:00:1795092188.970185  115969 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.\nINFO: Created TensorFlow Lite XNNPACK delegate for CPU.\nW0000 00:00:1795092188.993026  115974 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.\nW0000 00:00:1795092189.003159  115973 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.\n",
+ "warp_ok": true
+}
