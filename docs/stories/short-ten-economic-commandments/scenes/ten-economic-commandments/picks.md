@@ -23,3 +23,4 @@
   Tree also quotes. Open from the meetings (13 and 17 Nov): fix the rhythm; ten commandments if the length allows (the song
   says ten, shows three); the FX5 fire-escape redo is unpicked; export owed.
 - **2026-11-19, Jack picked** A number-gets-its-bar take 2 (e689e000, 1:14) for the all-ten version.
+- **2026-11-19:** all-ten take recorded (`audio/tec-all10-a-number-gets-its-bar-v6-w25-e689e000.wav`, 74.4 s). Stills round 5: 148 Unsplash photos on https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf (searches in `stills-r5-picks.json`, credits in `refs.json`); no real people's likenesses searched for.

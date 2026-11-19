@@ -1,0 +1,80 @@
+{
+ "title": "Ten Economic Commandments Look Refs",
+ "eyebrow": "Ten Economic Commandments · look references",
+ "heading": "Ten Economic Commandments: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "new york sunrise skyline",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "fT6-YkB0nfg",
+       "src": "unsplash/fT6-YkB0nfg.jpg",
+       "label": "Empire State Building, New York at night · Timo Wagner"
+      },
+      {
+       "id": "YcqXpi4yVcw",
+       "src": "unsplash/YcqXpi4yVcw.jpg",
+       "label": "city skyline across body of water during daytime · Julien Maculan"
+      },
+      {
+       "id": "bK6Fr5PoplI",
+       "src": "unsplash/bK6Fr5PoplI.jpg",
+       "label": "New york city skyline with one world trade center · Katie Mukhina"
+      },
+      {
+       "id": "fuvvJ2W43gM",
+       "src": "unsplash/fuvvJ2W43gM.jpg",
+       "label": "a city skyline at sunset · Theo"
+      },
+      {
+       "id": "8gWXf45We4Q",
+       "src": "unsplash/8gWXf45We4Q.jpg",
+       "label": "a city street filled with lots of traffic at sunset · Aditya Chinchure"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "open empty hands",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "se3tHNszbkM",
+       "src": "unsplash/se3tHNszbkM.jpg",
+       "label": "A hand reaching toward a bright low sun in a warm hazy sky · Billy Pasco"
+      },
+      {
+       "id": "f9IR_6hg0Qo",
+       "src": "unsplash/f9IR_6hg0Qo.jpg",
+       "label": "persons hand with white nail polish · A. C."
+      },
+      {
+       "id": "QyCH5jwrD_A",
+       "src": "unsplash/QyCH5jwrD_A.jpg",
+       "label": "person's left palm · Kira auf der Heide"
+      },
+      {
+       "id": "2-612OQxktw",
+       "src": "unsplash/2-612OQxktw.jpg",
+       "label": "persons left hand on white wall · Joel Timothy"
+      },
+      {
+       "id": "fI4gfcuHoxU",
+       "src": "unsplash/fI4gfcuHoxU.jpg",
+       "label": "person with black tattoo on right hand · Gabriela Fechet"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
