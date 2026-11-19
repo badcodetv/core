@@ -1,18 +1,219 @@
 {
  "title": "Priority Lane Voices",
- "eyebrow": "Priority Lane · picks · round 5",
- "heading": "Pick the score",
- "intro": "Round 5: the background score. Six different ideas from separate clean-room writers, two takes each, recorded off Suno (no downloads). The rough cut uses a1 (the clinical pulse); pick another and I'll swap it in. Only the first ~14 s plays in the cut, and it stops dead on the flatline.",
+ "eyebrow": "Priority Lane · picks · round 6",
+ "heading": "Fix the voices, pick the music",
+ "intro": "Round 6. Every speaking role recast the new way: Google's newest voice model, the voice itself carries the accent and age, and the line is read plain with no acting notes (the old takes were told how to perform, which is what made them sound like AI). Four new voices per role: two from Google's British library, two designed from one plain sentence (the library has no London voices). 'now' is what's in the cut, for comparison. The constable is played through a police-radio filter, as in the cut. Below that, the 12 music takes: still no pick, so the cut runs on a1.",
  "sections": [
   {
    "h": "Voices",
-   "lede": "Real lines from the locked dialogue (1D).",
+   "lede": "Each role reads its real lines from rough cut 5.",
+   "groups": [
+    {
+     "slot": "paramedic1-r7",
+     "round": 6,
+     "title": "Paramedic 1 (the woman)",
+     "line": "BP sixty over thirty! Fucking hurry up, we're gonna lose him! / Fifty over twen—",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "now",
+       "src": "now/paramedic1.mp3",
+       "label": "now: in the cut (Kore)",
+       "warn": "the old way: preview model + a written performance note"
+      },
+      {
+       "id": "a",
+       "src": "voices-r7/paramedic1-a.mp3",
+       "label": "a: designed: A paramedic in her forties from south London, with a low, slightly rough voice",
+       "warn": "voice_27bvg0cxdu0g"
+      },
+      {
+       "id": "b",
+       "src": "voices-r7/paramedic1-b.mp3",
+       "label": "b: designed: An NHS paramedic in her late twenties from east London, with a clear, quick voice",
+       "warn": "voice_eevddl74gog6"
+      },
+      {
+       "id": "c",
+       "src": "voices-r7/paramedic1-c.mp3",
+       "label": "c: library: Liverpool woman, 47, low",
+       "warn": "en-gb-assistant-7"
+      },
+      {
+       "id": "d",
+       "src": "voices-r7/paramedic1-d.mp3",
+       "label": "d: library: Manchester woman, 35, low",
+       "warn": "en-gb-techagent-6"
+      }
+     ]
+    },
+    {
+     "slot": "paramedic2-r7",
+     "round": 6,
+     "title": "Paramedic 2 (the man)",
+     "line": "Sats dropping, he's peri-arrest! / Why have we stopped?!",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "now",
+       "src": "now/paramedic2.mp3",
+       "label": "now: in the cut (Algieba)",
+       "warn": "the old way: preview model + a written performance note"
+      },
+      {
+       "id": "a",
+       "src": "voices-r7/paramedic2-a.mp3",
+       "label": "a: designed: A paramedic in his thirties from north London, with a low, steady voice",
+       "warn": "voice_d17gsyxmez0a"
+      },
+      {
+       "id": "b",
+       "src": "voices-r7/paramedic2-b.mp3",
+       "label": "b: designed: A man in his late twenties from Kent, with a light, ordinary voice",
+       "warn": "voice_cqaftfu44s2g"
+      },
+      {
+       "id": "c",
+       "src": "voices-r7/paramedic2-c.mp3",
+       "label": "c: library: Newcastle man, 45, low",
+       "warn": "en-gb-csagent-12"
+      },
+      {
+       "id": "d",
+       "src": "voices-r7/paramedic2-d.mp3",
+       "label": "d: library: Liverpool man, 36, low",
+       "warn": "en-gb-csagent-11"
+      }
+     ]
+    },
+    {
+     "slot": "driver-r7",
+     "round": 6,
+     "title": "The driver",
+     "line": "Two minutes out! Get the fuck out of the way!",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "now",
+       "src": "now/driver.mp3",
+       "label": "now: in the cut (Alnilam)",
+       "warn": "the old way: preview model + a written performance note"
+      },
+      {
+       "id": "a",
+       "src": "voices-r7/driver-a.mp3",
+       "label": "a: designed: An ambulance driver in his fifties from south-east London, with a deep, gravelly voice",
+       "warn": "voice_nj21m8n876az"
+      },
+      {
+       "id": "b",
+       "src": "voices-r7/driver-b.mp3",
+       "label": "b: designed: A man in his forties from Nottingham, with a low, flat voice",
+       "warn": "voice_lptrg2knt9wt"
+      },
+      {
+       "id": "c",
+       "src": "voices-r7/driver-c.mp3",
+       "label": "c: library: Bristol man, 57, low",
+       "warn": "en-gb-csagent-14"
+      },
+      {
+       "id": "d",
+       "src": "voices-r7/driver-d.mp3",
+       "label": "d: library: Glasgow man, 62, low",
+       "warn": "en-gb-assistant-5"
+      }
+     ]
+    },
+    {
+     "slot": "minister-r7",
+     "round": 6,
+     "title": "The minister",
+     "line": "Hey Jeffrey, what time's the plane to the island? ... I'm on my way to fetch Andrew.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "now",
+       "src": "now/minister.mp3",
+       "label": "now: in the cut (Charon)",
+       "warn": "the old way: preview model + a written performance note"
+      },
+      {
+       "id": "a",
+       "src": "voices-r7/minister-a.mp3",
+       "label": "a: library: Winchester man, 55, low",
+       "warn": "en-gb-training-1"
+      },
+      {
+       "id": "b",
+       "src": "voices-r7/minister-b.mp3",
+       "label": "b: library: Winchester man, 49, low",
+       "warn": "en-gb-tutor-8"
+      },
+      {
+       "id": "c",
+       "src": "voices-r7/minister-c.mp3",
+       "label": "c: designed: A wealthy, privately educated Englishman in his late fifties from the Home Counties, with a plummy, booming voice, speaking breezily",
+       "warn": "voice_l18ckfmg4jus"
+      },
+      {
+       "id": "d",
+       "src": "voices-r7/minister-d.mp3",
+       "label": "d: designed: An upper-class Englishman in his sixties from Surrey, with a fruity, slightly hoarse voice, speaking casually",
+       "warn": "voice_7do40qwtj0br"
+      }
+     ]
+    },
+    {
+     "slot": "constable-r7",
+     "round": 6,
+     "title": "Constable 97 (police radio)",
+     "line": "Constable ninety-seven. Junction's blocked, ready for the VIP.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "now",
+       "src": "now/constable.mp3",
+       "label": "now: in the cut (Iapetus, stand-in)",
+       "warn": "the old way: preview model + a written performance note"
+      },
+      {
+       "id": "a",
+       "src": "voices-r7/constable-a-radio.mp3",
+       "label": "a: designed: A police constable in his forties from north London, with a low voice, speaking flatly and routinely",
+       "warn": "voice_hihgaznu4rz3"
+      },
+      {
+       "id": "b",
+       "src": "voices-r7/constable-b-radio.mp3",
+       "label": "b: designed: A police officer in his thirties from Essex, with a plain, clipped voice, speaking matter-of-factly",
+       "warn": "voice_63o225fw9ehm"
+      },
+      {
+       "id": "c",
+       "src": "voices-r7/constable-c-radio.mp3",
+       "label": "c: library: Liverpool man, 57, low",
+       "warn": "en-gb-podcaster-11"
+      },
+      {
+       "id": "d",
+       "src": "voices-r7/constable-d-radio.mp3",
+       "label": "d: library: Newcastle man, 57, low",
+       "warn": "en-gb-concierge-12"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Music",
+   "lede": "Under the whole short; cut dead on the flatline.",
    "groups": [
     {
      "slot": "score-r6",
-     "round": 5,
-     "title": "The score",
-     "line": "Under the whole short; cut dead at the flatline.",
+     "round": 6,
+     "title": "The music (still not picked)",
+     "line": "Under the whole short; cut dead at the flatline. a1 is the stand-in in the cut now.",
      "kind": "audio",
      "opts": [
       {
@@ -88,7 +289,13 @@
        "warn": ""
       }
      ]
-    },
+    }
+   ]
+  },
+  {
+   "h": "Earlier rounds",
+   "lede": "",
+   "groups": [
     {
      "slot": "minister-r4",
      "round": 4,
@@ -311,5 +518,5 @@
    ]
   }
  ],
- "round": 5
+ "round": 6
 }

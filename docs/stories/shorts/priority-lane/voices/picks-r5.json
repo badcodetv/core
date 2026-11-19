@@ -1,0 +1,315 @@
+{
+ "title": "Priority Lane Voices",
+ "eyebrow": "Priority Lane · picks · round 5",
+ "heading": "Pick the score",
+ "intro": "Round 5: the background score. Six different ideas from separate clean-room writers, two takes each, recorded off Suno (no downloads). The rough cut uses a1 (the clinical pulse); pick another and I'll swap it in. Only the first ~14 s plays in the cut, and it stops dead on the flatline.",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "Real lines from the locked dialogue (1D).",
+   "groups": [
+    {
+     "slot": "score-r6",
+     "round": 5,
+     "title": "The score",
+     "line": "Under the whole short; cut dead at the flatline.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a1",
+       "src": "score-r6/c5d8704d.mp3",
+       "label": "a1: subliminal pulse",
+       "warn": "clinical ticking pulse, shift at 6 s (in the cut)"
+      },
+      {
+       "id": "a2",
+       "src": "score-r6/50e03758.mp3",
+       "label": "a2: subliminal pulse",
+       "warn": ""
+      },
+      {
+       "id": "b1",
+       "src": "score-r6/16031e6a.mp3",
+       "label": "b1: Shepard rise",
+       "warn": "endless-rise ostinato, whoosh at 6 s"
+      },
+      {
+       "id": "b2",
+       "src": "score-r6/c1fa7a39.mp3",
+       "label": "b2: Shepard rise",
+       "warn": ""
+      },
+      {
+       "id": "c1",
+       "src": "score-r6/52895c20.mp3",
+       "label": "c1: percussion only",
+       "warn": "hand drums, heavy hits from 6 s"
+      },
+      {
+       "id": "c2",
+       "src": "score-r6/bec07ebd.mp3",
+       "label": "c2: percussion only",
+       "warn": ""
+      },
+      {
+       "id": "d1",
+       "src": "score-r6/730f5693.mp3",
+       "label": "d1: viola tremolo",
+       "warn": "dark strings, solo violin, hit at 9 s"
+      },
+      {
+       "id": "d2",
+       "src": "score-r6/134f7866.mp3",
+       "label": "d2: viola tremolo",
+       "warn": ""
+      },
+      {
+       "id": "e1",
+       "src": "score-r6/0094f4a1.mp3",
+       "label": "e1: UK procedural piano",
+       "warn": "racing synth ostinato, action-leaning"
+      },
+      {
+       "id": "e2",
+       "src": "score-r6/1b62f30f.mp3",
+       "label": "e2: UK procedural piano",
+       "warn": ""
+      },
+      {
+       "id": "f1",
+       "src": "score-r6/f921cfe5.mp3",
+       "label": "f1: broken cardiac electronica",
+       "warn": "glitchy electronic, tape-stop at 6 s"
+      },
+      {
+       "id": "f2",
+       "src": "score-r6/30ead36f.mp3",
+       "label": "f2: broken cardiac electronica",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "minister-r4",
+     "round": 4,
+     "title": "The minister",
+     "line": "\"I said raspberry-shaped hors d'oeuvres!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting-r6/minister-a-charon.mp3",
+       "label": "a: Home Counties Tory, 50s (Charon)",
+       "warn": "smooth, media-trained, irritated"
+      },
+      {
+       "id": "b",
+       "src": "casting-r6/minister-b-iapetus.mp3",
+       "label": "b: Edinburgh ex-lawyer, ~50 (Iapetus)",
+       "warn": "cool, weary, lawyerly"
+      },
+      {
+       "id": "c",
+       "src": "casting-r6/minister-c-orus.mp3",
+       "label": "c: self-made Cheshire, late 50s (Orus)",
+       "warn": "bossy; may sit close to the Liverpool driver"
+      },
+      {
+       "id": "d",
+       "src": "casting/min-b-orus.mp3",
+       "label": "d: the round 1 pick (Orus, old method)",
+       "warn": "slick, low venomous hiss"
+      }
+     ]
+    },
+    {
+     "slot": "paramedic1-r3",
+     "round": 3,
+     "title": "Paramedic 1 (the woman at the monitor)",
+     "line": "\"BP 60 over 30! Fucking hurry up, we're gonna lose him!\" … \"Fifty over twen—\"  (the cut-off \"twen—\" is finished as \"twenty\" in every take; the flatline cuts it in the edit)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting-r6/paramedic1-a-gacrux.mp3",
+       "label": "a: Leeds veteran, 50s (Gacrux)",
+       "warn": "mature, steady, almost kind at the end · ad-libs \"He'll be alright\" at the end (trim)"
+      },
+      {
+       "id": "b",
+       "src": "casting-r6/paramedic1-b-kore.mp3",
+       "label": "b: South London, early 40s (Kore)",
+       "warn": "firm, in command, furious"
+      },
+      {
+       "id": "c",
+       "src": "casting-r6/paramedic1-c-sulafat.mp3",
+       "label": "c: Glasgow, mid 30s (Sulafat)",
+       "warn": "warm, scared under the swearing"
+      }
+     ]
+    },
+    {
+     "slot": "paramedic2-r3",
+     "round": 3,
+     "title": "Paramedic 2 (the man on the bag)",
+     "line": "\"Sats dropping, he's peri-arrest!\" … \"Why have we stopped?!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting-r6/paramedic2-a-enceladus.mp3",
+       "label": "a: Birmingham lifer, 40s (Enceladus)",
+       "warn": "breathy, tired, calm that cracks"
+      },
+      {
+       "id": "b",
+       "src": "casting-r6/paramedic2-b-puck.mp3",
+       "label": "b: Croydon, late 20s (Puck)",
+       "warn": "young, adrenaline and fear"
+      },
+      {
+       "id": "c",
+       "src": "casting-r6/paramedic2-c-algieba.mp3",
+       "label": "c: Leeds ex-army, mid 30s (Algieba)",
+       "warn": "smooth and even, control snaps"
+      }
+     ]
+    },
+    {
+     "slot": "driver-r3",
+     "round": 3,
+     "title": "The driver",
+     "line": "\"Two minutes out! Get the fuck out of the way!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting-r6/driver-a-algenib.mp3",
+       "label": "a: East London, late 40s (Algenib)",
+       "warn": "gravelly, heavy, properly angry"
+      },
+      {
+       "id": "b",
+       "src": "casting-r6/driver-b-alnilam.mp3",
+       "label": "b: Liverpool ex-army, early 40s (Alnilam)",
+       "warn": "firm, crisp, then loses it"
+      },
+      {
+       "id": "c",
+       "src": "casting-r6/driver-c-charon.mp3",
+       "label": "c: Birmingham dad, early 50s (Charon)",
+       "warn": "deep, reassuring, patience snaps"
+      }
+     ]
+    },
+    {
+     "slot": "reporter-r2",
+     "round": 2,
+     "title": "The reporter: London men",
+     "line": "\"Traffic is being managed, to keep an important journey moving.\" … \"A politician blocking the path of an ambulance. Poetic, really...\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting/rep2-a-algenib.mp3",
+       "label": "a: Bermondsey ex-docker, 60s (Algenib)",
+       "warn": "shipping-forecast deadpan"
+      },
+      {
+       "id": "b",
+       "src": "casting/rep2-b-umbriel.mp3",
+       "label": "b: Hackney citizen journalist, 20s (Umbriel)",
+       "warn": "relaxed, raised eyebrow"
+      },
+      {
+       "id": "c",
+       "src": "casting/rep2-c-sadaltager.mp3",
+       "label": "c: Walthamstow market trader, 40s (Sadaltager)",
+       "warn": "cheeky patter, sharp edge"
+      },
+      {
+       "id": "d",
+       "src": "casting/rep2-d-achird.mp3",
+       "label": "d: Islington broadsheet journalist, 30s (Achird)",
+       "warn": "dry, polite contempt"
+      },
+      {
+       "id": "e",
+       "src": "casting/rep2-e-enceladus.mp3",
+       "label": "e: Croydon courts reporter, 50s (Enceladus)",
+       "warn": "breathy, off the record"
+      }
+     ]
+    },
+    {
+     "slot": "reporter",
+     "title": "The reporter",
+     "line": "\"Traffic is being managed, to keep an important journey moving.\" … \"A politician blocking the path of an ambulance. Poetic, really...\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting/rep-a-charon.mp3",
+       "label": "a: Birmingham local-news veteran, 50s (Charon)",
+       "warn": "dry, level, unimpressed"
+      },
+      {
+       "id": "b",
+       "src": "casting/rep-b-despina.mp3",
+       "label": "b: Glasgow roving reporter, woman, 30s (Despina)",
+       "warn": "brisk, with a deadpan pause"
+      },
+      {
+       "id": "c",
+       "src": "casting/rep-c-iapetus.mp3",
+       "label": "c: 1960s newsreel announcer, RP (Iapetus)",
+       "warn": "grand, makes it sound official"
+      },
+      {
+       "id": "d",
+       "src": "casting/rep-d-algenib.mp3",
+       "label": "d: South London night stringer, 40s (Algenib)",
+       "warn": "knackered, talking to a mate"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "minister",
+     "title": "The minister",
+     "line": "\"I said raspberry-shaped hors d'oeuvres!\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "casting/min-a-fenrir.mp3",
+       "label": "a: Home Counties toff, 40s (Fenrir)",
+       "warn": "petulant toddler, voice cracking"
+      },
+      {
+       "id": "b",
+       "src": "casting/min-b-orus.mp3",
+       "label": "b: slick media-trained minister, 50s (Orus)",
+       "warn": "low venomous hiss"
+      },
+      {
+       "id": "c",
+       "src": "casting/min-c-gacrux.mp3",
+       "label": "c: Cheshire cabinet minister, woman, late 50s (Gacrux)",
+       "warn": "icy, rises to a shriek"
+      },
+      {
+       "id": "d",
+       "src": "casting/min-d-rasalgethi.mp3",
+       "label": "d: blustering shire baronet, 60s (Rasalgethi)",
+       "warn": "booming harrumph"
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ],
+ "round": 5
+}
