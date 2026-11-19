@@ -7,7 +7,7 @@
     "keywords": "BadCode \"badcode tv\" \"sci-fi short film\" \"AI short film\" \"short film\" \"music video\" \"political music video\" \"political satire\" satire \"dark comedy\" \"cost of living\" inequality \"wealth inequality\" automation \"job losses\" \"money printing\" landlords rent \"tax havens\" homelessness \"UK politics\" \"British satire\" \"British sci-fi\" dystopia \"AI from the future\" \"Git Push Origin Master\" \"Karen will lead the revolution\" \"The bank robbery\" \"drum and bass\" \"The Rules Are Not Working Anymore\"",
     "defaultLanguage": "en"
   },
-  "syncedAt": "2026-11-19T14:48:23.412Z",
+  "syncedAt": "2026-11-19T14:59:43.158Z",
   "count": 7,
   "videos": [
     {
@@ -40,9 +40,14 @@
       "categoryId": "22",
       "privacyStatus": "private",
       "publishedAt": "2026-11-19T14:45:39Z",
-      "uploadStatus": "uploaded",
+      "uploadStatus": "processed",
       "madeForKids": false,
-      "duration": "P0D",
+      "duration": "PT9M17S",
+      "frame": {
+        "width": 1920,
+        "height": 1080
+      },
+      "isShort": false,
       "url": "https://youtu.be/OOlTWp_d4ZU",
       "aiLabel": "yes (set by us)"
     },
