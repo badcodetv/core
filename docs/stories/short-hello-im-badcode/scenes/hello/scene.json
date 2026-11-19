@@ -56,7 +56,7 @@
   "script": "python3 scripts/shorts/hello_cut_r5.py --reel r7"
  },
  "premiere": {
-  "current": "r1",
+  "current": "r7",
   "r1": {
    "sequence": "short-hello-im-badcode-1-hello-r1",
    "guid": "4b36490b-d3f4-401b-9989-5ec825a7649e",
@@ -64,7 +64,19 @@
    "built": "2026-11-12",
    "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/hello im badcode.prproj",
    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/edl-premiere.json",
-   "what": "rough 1: 26 parts on V1 (graded/pushed renders), 3 temp voice lines A1, temp music A2"
+   "what": "rough 1: 26 parts on V1 (graded/pushed renders), 3 temp voice lines A1, temp music A2",
+   "stale": "its project 'hello im badcode.prproj' is no longer on this machine; r7 lives in hello-im-badcode.prproj"
+  },
+  "r7": {
+   "sequence": "short-hello-im-badcode-1-hello-r7",
+   "guid": "f34fa215-64a3-4ce1-b552-02504675346e",
+   "bin": "short-hello-im-badcode-1-hello-r7",
+   "built": "2026-11-19",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/hello-im-badcode.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/hello-im-badcode/cut/r7/edl-premiere.json",
+   "what": "rough cut 7: V1 18 shots with the 16mm film finish baked in (no handles); V2 overlay.mov = captions + date stamps on alpha (ProRes 4444); A1 4 voice lines, A2 music, A3 logo thump",
+   "how": "hello_cut_r5.py --reel r7; hello_premiere_r7.py; premiere-plan.py --tag r7 --seq (the reveal-f.mp4 'sfx' row dropped: it would have landed at 0 s and over V1); overlay.mov on V2 at 0 and sfx-thump.wav on A3 at 32.75 placed by premiere_insert_clip",
+   "needs_a_human": "the loop's last 0.5 s of opening sound (in the page's mix) is not on a track"
   }
  }
 }

@@ -140,6 +140,8 @@ def main():
         vf += [vcr('PLAY', 70, 110, o0, o1), vcr('JUL 18 2009', 'w-tw-70', 'h-190', o0, o1), vcr('4\\:21 PM', 'w-tw-70', 'h-120', o0, o1),
                vcr(f'NOV 18 {a.future}', 'w-tw-70', 'h-190', f0, f1), vcr(f'NOV 18 {a.future}', 'w-tw-70', 'h-190', b0, b1)]
     r1.ff('-i', WORK / 'raw.mp4', '-vf', ','.join(vf + ['format=yuv420p']), *r1.ENC, CUT / 'picture.mp4')
+    if R7:  # for Premiere: the captions and stamps alone, so V2 can carry them as a layer over the finished shots
+        (CUT / 'overlay-vf.json').write_text(json.dumps({'vf': vf, 'total': total}))
 
     # Sound: rough cut 4's mix to the end of the last line, the reveal's thump at the mark, and the first half-second
     # of the opening under the dissolve so the loop joins in sound too.
