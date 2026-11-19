@@ -1,0 +1,28 @@
+[
+  {
+    "name": "number-gets-its-bar",
+    "style": "Late-nineties East Coast boom-bap, a single big-bodied rapper whose verse moves like a bebop kit solo spoken aloud: the cadence carries the tune, words held behind the backbeat then spilled in loose clusters, multi-syllable rhyme chains piling end to end, a relaxed conversational flow, a planned hush ahead of every payoff line. Voice: a huge heavy man, deep smooth baritone from the chest, Brooklyn drawl on the vowels, a small wheezing rasp catching on each intake of air, close-miked and dry. Beat: 88 BPM, swung, dusty drum break, fat thudding kick, crisp unvarnished snare, a sad late-night Rhodes and organ jazz-soul phrase chopped into a chilly, ominous minor-key loop, upright-bass walk underneath, cassette hiss and vinyl crackle; countdown: a raspy chopped-up shout calls each number by itself, then a full bar of only drums and loop, and the rapper starts his line on the following downbeat, so each rule is counted off before it is explained; sparse, stripped, menacing, no chorus",
+    "exclude": "double-time flow, rushed delivery, sung chorus, female vocals, autotune, trap hi-hats, 808 rolls",
+    "lyrics": "[Intro]\nUh. Money printer manual. Take notes.\n\n[Rule One]\n[sampled shout: the number, then one bare bar of beat]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[Rule Two]\n[sampled shout: the number, then one bare bar of beat]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[Rule Three]\n[sampled shout: the number, then one bare bar of beat]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[Rule Four]\n[sampled shout: the number, then one bare bar of beat]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Rule Five]\n[sampled shout: the number, then one bare bar of beat]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n\n[Rule Six]\n[sampled shout: the number, then one bare bar of beat]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n\n[Rule Seven]\n[sampled shout: the number, then one bare bar of beat]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[Rule Eight]\n[sampled shout: the number, then one bare bar of beat]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[Rule Nine]\n[sampled shout: the number, then one bare bar of beat]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n\n[Rule Ten]\n[sampled shout: the number, then one bare bar of beat]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[Outro]\n[one bare bar of beat, then the MC]\nAnd the fix, from the future? No hand on the printer.\n\n[Instrumental: beat rides out, two bars, then stops]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 25,
+    "styleInfluence": 80,
+    "vocalGender": "male",
+    "durationSec": 75,
+    "maxMode": false
+  },
+  {
+    "name": "lazy-behind-the-beat",
+    "style": "late-90s New York street rap, one heavyset MC who phrases his verse like a tenor sax strolling home: rhythm played as melody, syllables dragged a hair behind the snare, stretched and leaned on, stacked multisyllable rhymes rolling into each other, unbothered talking cadence, a deliberate beat of silence right before each punchline lands; unhurried, patient delivery, every line finishes before the next number. Vocal: enormous man, low velvet chest baritone, lazy Brooklyn vowels, a short asthmatic wheeze audible on every inhale, dry and right on the mic. Instrumental: 88 BPM, swung dusty breakbeat with a thick knocking kick and a hard flat snare, a melancholy after-midnight Rhodes-and-organ soul-jazz figure sliced into a cold, menacing minor loop, walking acoustic-bass-style bottom end, tape hiss and crackle; between the rules a hoarse sampled crowd-chant voice barks the number; bare, minimal, threatening, no hook",
+    "exclude": "female vocals, sung chorus, autotune, crammed bars",
+    "lyrics": "[Intro]\nUh. Money printer manual. Take notes.\n\n[Verse 1]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[Verse 2]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[Verse 3]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[Verse 4]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Verse 5]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n\n[Verse 6]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n\n[Verse 7]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[Verse 8]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[Verse 9]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n\n[Verse 10]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[Outro]\nAnd the fix, from the future? No hand on the printer.",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 50,
+    "styleInfluence": 65,
+    "vocalGender": "male",
+    "durationSec": 75,
+    "maxMode": false
+  }
+]

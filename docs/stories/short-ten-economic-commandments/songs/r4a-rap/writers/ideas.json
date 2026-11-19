@@ -1,0 +1,10 @@
+[
+ {
+  "name": "number-gets-its-bar",
+  "idea": "Fix the pace with structure, not slowness. Keep 88 BPM. The hoarse sampled voice that barks the number gets a whole bar to itself over just the beat, and the MC comes in only on the next downbeat, so every 'Number ...' lands alone with room before the line. That leans further into the original's countdown-and-explanation list. In the box, rewrite only the last part of the instrumental sentence to say this, and soften 'quick clusters' to 'loose clusters'. Everything else stays verbatim. Lyrics: locked words, each rule under its own tag, with a short bracketed direction such as [sampled voice: the number, then one bar of beat] before every rule. Settings: v6, 75 s, male, weirdness about 25, style influence about 80."
+ },
+ {
+  "name": "lazy-behind-the-beat",
+  "idea": "Recast the speed clauses in the kept box as a lazy, behind-the-beat drawl. Swap 'a verse like a bebop drum solo turned into words' for a verse delivered like a slow-walking saxophone line. Swap 'quick clusters' for 'syllables stretched and leaned on'. Add 'unhurried, patient delivery, every line finishes before the next number'. Keep the 88 BPM swung breakbeat, the instruments, the voice description, the barked number and 'no hook' as they are. Keep the box under 950 characters, using no speed words and no fast/slow contradiction. Lyrics: locked words with plain section tags only. Settings: v6, 75 s, male, weirdness about 50, style influence about 65."
+ }
+]

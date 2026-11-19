@@ -1,0 +1,13 @@
+{
+  "name": "weathered-ledger-reader",
+  "style": "Slow head-nod boom bap, about 82 BPM, late-90s East Coast feel. Minimal arrangement: a dry kick, a rimshot snare on two and four, one soft Rhodes chord repeating, and a single low bass note under it. Very sparse with plenty of air between hits, nothing else in the loop. Vocal: older male, low and raspy, weathered, half-spoken and half-rapped, dry and conversational, like a veteran going down a list of house rules for a new hire. Unhurried delivery, every line gets its own bar with breathing room before it, never rushed. Wry and patient, not aggressive. Voice upfront and close, music tucked underneath; the beat drops nearly to silence before the last line.",
+  "exclude": "choir, sung chorus, trap drums, auto-tune, hi-hat rolls, 808 slides, singing, fast flow, synth pads",
+  "lyrics": "[Slow Flow]\n\n[Intro]\n[Spoken, almost no music]\nUh. Money printer manual. Take notes.\n\n[Break]\n[Verse 1]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[Break]\n[Verse 2]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[Break]\n[Verse 3]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[Break]\n[Verse 4]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Break]\n[Verse 5]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n\n[Break]\n[Verse 6]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n\n[Break]\n[Verse 7]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[Break]\n[Verse 8]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[Break]\n[Verse 9]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n\n[Break]\n[Verse 10]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[Breakdown: beat fades to near silence]\n[Outro]\n[Spoken, plain]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 22,
+  "styleInfluence": 74,
+  "vocalGender": "male",
+  "durationSec": 75,
+  "maxMode": false
+}

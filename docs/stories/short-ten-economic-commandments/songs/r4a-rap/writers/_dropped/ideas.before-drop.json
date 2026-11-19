@@ -1,0 +1,18 @@
+[
+  {
+    "name": "slower-pocket",
+    "idea": "Keep the kept box word for word except for two edits that slow the take down. Lower the tempo from 88 to 84 BPM. Replace 'then tumbled out in quick clusters' with a clause where each line rolls out at an easy talking pace, one rhyme cluster per bar and never crammed. Everything else stays exactly as it is: the voice, the wheeze, the Rhodes-and-organ loop, the walking bass, the hiss, the barked number and 'no hook'. Keep the Style box under 950 characters. Lyrics: the locked words, with only a section tag on each rule. Settings: v6, 75 s, male, weirdness about 35, style influence about 70."
+  },
+  {
+    "name": "number-gets-its-bar",
+    "idea": "Fix the pace with structure, not slowness. Keep 88 BPM. The hoarse sampled voice that barks the number gets a whole bar to itself over just the beat, and the MC comes in only on the next downbeat, so every 'Number ...' lands alone with room before the line. That leans further into the original's countdown-and-explanation list. In the box, rewrite only the last part of the instrumental sentence to say this, and soften 'quick clusters' to 'loose clusters'. Everything else stays verbatim. Lyrics: locked words, each rule under its own tag, with a short bracketed direction such as [sampled voice: the number, then one bar of beat] before every rule. Settings: v6, 75 s, male, weirdness about 25, style influence about 80."
+  },
+  {
+    "name": "lyric-field-spacing",
+    "idea": "Leave the Style box almost exactly as kept: only 'then tumbled out in quick clusters' changes, to 'then let out patiently'. Do the pace work in the lyric field, since v6 takes phrasing and timing from there more reliably than from style text. Put [Intro], [Rule 1] to [Rule 10] and [Outro] tags around the locked words. Add a [two-bar beat break] direction between rules and a [pause] direction right after each rule's opening phrase, so every line gets space to breathe. Change no words. Settings: v6, 75 s, male, weirdness about 45, style influence about 60."
+  },
+  {
+    "name": "lazy-behind-the-beat",
+    "idea": "Recast the speed clauses in the kept box as a lazy, behind-the-beat drawl. Swap 'a verse like a bebop drum solo turned into words' for a verse delivered like a slow-walking saxophone line. Swap 'quick clusters' for 'syllables stretched and leaned on'. Add 'unhurried, patient delivery, every line finishes before the next number'. Keep the 88 BPM swung breakbeat, the instruments, the voice description, the barked number and 'no hook' as they are. Keep the box under 950 characters, using no speed words and no fast/slow contradiction. Lyrics: locked words with plain section tags only. Settings: v6, 75 s, male, weirdness about 50, style influence about 65."
+  }
+]

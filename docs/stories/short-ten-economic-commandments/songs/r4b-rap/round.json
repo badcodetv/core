@@ -1,0 +1,41 @@
+[
+  {
+    "name": "baritone-behind-the-beat",
+    "style": "Late-1990s East Coast boom bap, 86 BPM, rap. Vocal up front and dry: a deep, calm male baritone with light gravel, laying each line a hair behind the snare, unhurried, every word clear, finishing each rule and letting the beat breathe before the next. Parts: dusty sampled drum break, round kick, hard cracking snare on 2 and 4, loose swung hats. Upright bass loops a short two-bar phrase. Muted jazz piano chop, two chords, repeating. Faint vinyl crackle under everything. Arrangement: the loop never changes, short drum-only gaps between rules, beat rides out alone after the last line. Warm, slightly lo-fi, 12-bit grit, mono-leaning mix.",
+    "exclude": "trap hi-hats, auto-tune, sung hook, singing, double-time flow, fast rap, 808 bass, synth pads, female vocals",
+    "lyrics": "[Intro: drum break alone for two bars, then calm baritone]\nUh. Money printer manual. Take notes.\n\n[Two-bar drum break, then]\n[Rule 1: laid back, behind the beat]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[Two-bar drum break, then]\n[Rule 2]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[Two-bar drum break, then]\n[Rule 3]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[Two-bar drum break, then]\n[Rule 4]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Two-bar drum break, then]\n[Rule 5]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n\n[Two-bar drum break, then]\n[Rule 6]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n\n[Two-bar drum break, then]\n[Rule 7: slower, deliberate]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[Two-bar drum break, then]\n[Rule 8]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[Two-bar drum break, then]\n[Rule 9: slower, deliberate]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n\n[Two-bar drum break, then]\n[Rule 10]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[Outro: beat drops to bass and piano, spoken low]\nAnd the fix, from the future? No hand on the printer.\n\n[Drum break rides out, end]",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 25,
+    "styleInfluence": 80,
+    "vocalGender": "male",
+    "durationSec": 75,
+    "maxMode": false
+  },
+  {
+    "name": "street-tenor-horn-stabs",
+    "style": "Gritty late-90s New York street rap, dusty sampled breakbeat, 90 BPM, unhurried countdown. Mood: a frozen city block at 3 a.m. in 1997, streetlight hum, nobody trusts anybody, tense and sly. Sample: a dark half-second horn hit layered on minor-key strings, cut from an old soul record, firing once on each number and then going silent. Drums: fat thumping kick, hard rimshot-bright snare, loose shuffled hats, warm low bass, vinyl hiss. Voice: young male tenor, high, nasal, a little raspy, bold corner bark, punchy and on the grid but relaxed; he calls the number, pauses a beat, then raps the rule. Wordless DJ scratch fills between rules. Final line over drums alone.",
+    "exclude": "sung chorus, melodic singing, choir, autotune, trap hats, 808 slides, EDM drop, double-time flow, rushed delivery, female vocals, crowd chant, spoken-word poetry",
+    "lyrics": "[Intro: single horn-and-strings hit, then kick and snare drop in; cold, sly]\nUh. Money printer manual. Take notes.\n\n[Instrumental break: DJ scratch fill, no vocals]\n\n[Verse: punchy, deliberate, one bar per line; the number alone, a breath, then the rule]\n[horn stab]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[Instrumental break: chirp scratch, no vocals]\n\n[horn stab]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[Instrumental break: scratch cut, no vocals]\n\n[horn stab]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[Instrumental break: chirp scratch, no vocals]\n\n[horn stab]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Instrumental break: scratch cut, no vocals]\n\n[horn stab]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n\n[Instrumental break: short scratch, no vocals]\n\n[horn stab]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n\n[Instrumental break: dragged scratch, no vocals]\n\n[horn stab, quieter, voice drops low]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[Instrumental break: chirp scratch, no vocals]\n\n[horn stab]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[Instrumental break: stutter scratch, no vocals]\n\n[horn stab, knowing, a little smirk]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n\n[Instrumental break: double scratch, no vocals]\n\n[horn stab, loudest of all]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[Outro: sample and bass drop out, drums only; plain, slow]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 72,
+    "vocalGender": "male",
+    "durationSec": 75,
+    "maxMode": false
+  },
+  {
+    "name": "weathered-ledger-reader",
+    "style": "Bare head-nod boom bap at 82 BPM in a dusty late-90s New York vein. Only four parts: a thumping kick, a woody rimshot crack on the backbeat, one mellow Rhodes chord that loops and loops, and a deep bass tone sitting below it. Long gaps of silence between hits; nothing gets added as the track goes on. Narrator is a grizzled older man with a gravelly low rasp, half talking and half rapping, dry as old paper, like a seasoned hand reading the rules aloud from a battered account book to a rookie. He takes his time: a pause before every numbered rule, each line given a full bar, never crammed. Wry, patient, a little amused, never angry. Rasp sits loud and near the mic, the loop stays small behind him, and the whole groove empties out to a whisper of Rhodes ahead of his closing remark.",
+    "exclude": "choir, sung chorus, trap drums, auto-tune, hi-hat rolls, 808 glides, melodic singing, double-time rap, synth pads, strings",
+    "lyrics": "[Slow Flow]\n\n[Intro]\n[Spoken, over near silence]\nUh. Money printer manual. Take notes.\n\n[Break]\n[Verse 1]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[Break]\n[Verse 2]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[Break]\n[Verse 3]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[Break]\n[Verse 4]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Break]\n[Verse 5]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n\n[Break]\n[Verse 6]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n\n[Break]\n[Verse 7]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[Break]\n[Verse 8]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[Break]\n[Verse 9]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n\n[Break]\n[Verse 10]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[Breakdown: drums drop out, one Rhodes chord rings]\n[Outro]\n[Spoken, plain and flat]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 20,
+    "styleInfluence": 72,
+    "vocalGender": "male",
+    "durationSec": 75,
+    "maxMode": false
+  }
+]

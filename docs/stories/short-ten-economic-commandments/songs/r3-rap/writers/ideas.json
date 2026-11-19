@@ -1,0 +1,18 @@
+[
+  {
+    "name": "minimal-swap-patient-cadence",
+    "idea": "Keep the box almost word for word: same heavyset MC, same velvet baritone with the wheeze, same 88 BPM soul-jazz Rhodes-and-organ loop, same barked numbers, no hook. Change only the delivery clause: take out 'tumbled out in quick clusters' and 'rolling into each other' and put in an unhurried, patient talking cadence, one couplet stretched across two full bars and never crammed, with a breath at every line end. Add one short phrase that between rules the beat runs alone for a moment so each barked number lands by itself on the downbeat. In the lyric field put each rule under its own section tag, with a bracket direction before every 'Number ...' line (for example [beat breathes, sampled voice barks the number]), and a [one bar of beat] gap after the intro and before the fix. This is the control take: the smallest change that fixes the speed and fits all ten."
+  },
+  {
+    "name": "slower-tempo-more-air",
+    "idea": "Fix the rhythm mainly through tempo and space: drop the beat from 88 to about 82 BPM and say laid-back, relaxed pacing, lots of breathing room between lines, so ten couplets fill roughly 75 seconds without being rushed. Keep the MC, the voice, the wheeze, the Brooklyn vowels, the Rhodes-and-organ figure, the walking bass, the tape hiss and the barked numbers exactly as they are, and keep 'no hook'. Swap the bebop-cluster wording for 'drags each line a hair behind the snare and lets the last word hang', keeping the deliberate silence before each punchline. In the lyric field, every rule gets its own [Verse] style tag and a short [pause] direction after the punchline line, so each 'Number ...' starts fresh on its own beat. Leave out any word that suggests speed (driving, energetic, uptempo)."
+  },
+  {
+    "name": "closer-to-the-original-loop",
+    "idea": "Lean on the 'sound a bit more like the original' part by reshaping only the instrumental: build the loop around a short, wailing jazz-guitar slide stab taken from a late-70s jazz record, repeated over hard, sparse boom-bap drums at about 88-90 BPM, with the Rhodes-and-organ figure pushed far back as a dark pad under it; cold, ominous, almost empty. Make the number caller clearly a different, gruff shouted voice chopped from an old record, punching in on its own like a scratch, then a beat of silence before the MC answers. Keep the MC's identity, voice, wheeze and dry mix as they are, but replace the quick-cluster flow with a calm, conversational, matter-of-fact list reading: rule, short explanation, done, with no hurry. In the lyric field, tag each rule as its own section and put a [sampled shout] direction before each number line. Still no hook and no singing."
+  },
+  {
+    "name": "lyric-field-carries-the-timing",
+    "idea": "Leave the style box as close to verbatim as possible (change only 'tumbled out in quick clusters' to 'placed in slow, even clusters with room around them', and add 'ten numbered rules, each given room') and put the rhythm fix in the lyric field, since timing follows lyric shape more reliably than adjectives. Lay out the song as [Intro], then ten separate sections named [Rule 1] to [Rule 10] and a closing [Outro: the fix], each starting with a bracket direction like [beat only, one bar] then [number barked, then a breath], so every 'Number ...' falls alone on beat one before the MC carries on. Put a [half-time drop, beat breathes] direction before the fix so the last line lands slow and clear, then [beat rides out]. 'Uno' should land as a deliberate, slightly amused stress. The words themselves stay untouched; only tags and directions are added."
+  }
+]

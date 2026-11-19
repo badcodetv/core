@@ -1,0 +1,10 @@
+# lyric-field-spacing: notes
+
+- Style box: the kept jazz1 box word for word. The only change is "then tumbled out in quick clusters" to "then let out patiently". The previous draft reworded the whole box and ended up sharing phrases with the other writers. Going back to the kept words also keeps this take closest to what Jack liked.
+- The pacing work happens in the lyric field. A v6 community reference says a bare `[Pause]` or break tag is weak and tends to shrink to about a second. It says to state the length and what plays during it. So every pause and break here gives a length in beats or bars and says what fills it: "one full beat, nothing said", or two bars of break plus organ with the MC resting (https://pastebin.com/ZFsx2ZAt).
+- Guides agree that a section tag works best placed right before the event, with no lyric lines under it. They also say tags steer the result but are not commands (https://jackrighteous.com/pages/suno-guide-meta-tags, https://niller2005.github.io/suno/guide/meta-tags.html, https://dev.to/promptmaster/suno-metatags-the-structure-tricks-most-people-never-find-3cad).
+- Each rule's opening phrase gets an inline one-beat `[pause]`. No line is split or changed, and every locked word is unchanged.
+- The two-bar breaks go only between rules (nine of them). They also hand the number call to the crowd-chant voice the style box already describes. The intro and outro get shorter one-bar pauses.
+- Timing risk: at 88 BPM a two-bar break is about 5.5 s, so nine breaks add about 49 s on top of about 21 lines of rap. That is well over the locked 75 s. Expect Suno to shorten the breaks, or the song to run long or cut off. If it cuts before the fix, this experiment needs one-bar breaks.
+- Exclude: written fresh in my own words. It targets rushing (machine-gun cadence, words piled onto one bar, breathless sprinting delivery), plus a female voice, a sung hook, auto-tune and trap hats.
+- Settings as the brief asks: v6, 75 s, male, weirdness 45, style influence 60, variety normal, max mode off.

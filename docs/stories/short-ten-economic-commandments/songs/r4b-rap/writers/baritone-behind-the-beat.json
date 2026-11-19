@@ -1,0 +1,13 @@
+{
+  "name": "baritone-behind-the-beat",
+  "style": "Late-1990s East Coast boom bap, 86 BPM, rap. Vocal up front and dry: a deep, calm male baritone with light gravel, laying each line a hair behind the snare, unhurried, every word clear, finishing each rule and letting the beat breathe before the next. Parts: dusty sampled drum break, round kick, hard cracking snare on 2 and 4, loose swung hats. Upright bass loops a short two-bar phrase. Muted jazz piano chop, two chords, repeating. Faint vinyl crackle under everything. Arrangement: the loop never changes, short drum-only gaps between rules, beat rides out alone after the last line. Warm, slightly lo-fi, 12-bit grit, mono-leaning mix.",
+  "exclude": "trap hi-hats, auto-tune, sung hook, singing, double-time flow, fast rap, 808 bass, synth pads, female vocals",
+  "lyrics": "[Intro: drum break alone for two bars, then calm baritone]\nUh. Money printer manual. Take notes.\n\n[Two-bar drum break, then]\n[Rule 1: laid back, behind the beat]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[Two-bar drum break, then]\n[Rule 2]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[Two-bar drum break, then]\n[Rule 3]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[Two-bar drum break, then]\n[Rule 4]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Two-bar drum break, then]\n[Rule 5]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n\n[Two-bar drum break, then]\n[Rule 6]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n\n[Two-bar drum break, then]\n[Rule 7: slower, deliberate]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[Two-bar drum break, then]\n[Rule 8]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[Two-bar drum break, then]\n[Rule 9: slower, deliberate]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n\n[Two-bar drum break, then]\n[Rule 10]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[Outro: beat drops to bass and piano, spoken low]\nAnd the fix, from the future? No hand on the printer.\n\n[Drum break rides out, end]",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 25,
+  "styleInfluence": 80,
+  "vocalGender": "male",
+  "durationSec": 75,
+  "maxMode": false
+}

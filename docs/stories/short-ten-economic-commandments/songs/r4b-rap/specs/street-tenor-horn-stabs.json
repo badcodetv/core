@@ -1,0 +1,17 @@
+{
+  "style": "Gritty late-90s New York street rap, dusty sampled breakbeat, 90 BPM, unhurried countdown. Mood: a frozen city block at 3 a.m. in 1997, streetlight hum, nobody trusts anybody, tense and sly. Sample: a dark half-second horn hit layered on minor-key strings, cut from an old soul record, firing once on each number and then going silent. Drums: fat thumping kick, hard rimshot-bright snare, loose shuffled hats, warm low bass, vinyl hiss. Voice: young male tenor, high, nasal, a little raspy, bold corner bark, punchy and on the grid but relaxed; he calls the number, pauses a beat, then raps the rule. Wordless DJ scratch fills between rules. Final line over drums alone.",
+  "exclude": "sung chorus, melodic singing, choir, autotune, trap hats, 808 slides, EDM drop, double-time flow, rushed delivery, female vocals, crowd chant, spoken-word poetry",
+  "lyrics": "[Intro: single horn-and-strings hit, then kick and snare drop in; cold, sly]\nUh. Money printer manual. Take notes.\n\n[Instrumental break: DJ scratch fill, no vocals]\n\n[Verse: punchy, deliberate, one bar per line; the number alone, a breath, then the rule]\n[horn stab]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[Instrumental break: chirp scratch, no vocals]\n\n[horn stab]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[Instrumental break: scratch cut, no vocals]\n\n[horn stab]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[Instrumental break: chirp scratch, no vocals]\n\n[horn stab]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[Instrumental break: scratch cut, no vocals]\n\n[horn stab]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n\n[Instrumental break: short scratch, no vocals]\n\n[horn stab]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n\n[Instrumental break: dragged scratch, no vocals]\n\n[horn stab, quieter, voice drops low]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[Instrumental break: chirp scratch, no vocals]\n\n[horn stab]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[Instrumental break: stutter scratch, no vocals]\n\n[horn stab, knowing, a little smirk]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n\n[Instrumental break: double scratch, no vocals]\n\n[horn stab, loudest of all]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[Outro: sample and bass drop out, drums only; plain, slow]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    30
+  ],
+  "styleInfluence": 72,
+  "vocalGender": "male",
+  "durationSec": 75,
+  "maxMode": false,
+  "title": "tec-all10-B-street-tenor-horn-stabs",
+  "mode": "custom",
+  "workspace": "short-ten-economic-commandments"
+}

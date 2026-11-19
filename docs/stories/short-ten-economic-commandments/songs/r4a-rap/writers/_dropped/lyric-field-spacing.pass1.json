@@ -1,0 +1,13 @@
+{
+  "name": "lyric-field-spacing",
+  "style": "late-90s New York street rap, one heavyset MC who treats his verse like a bebop drum solo turned into words: rhythm played as melody, syllables dragged a hair behind the snare then let out patiently, stacked multisyllable rhymes rolling into each other, unbothered talking cadence, a deliberate beat of silence right before each punchline lands. Vocal: enormous man, low velvet chest baritone, lazy Brooklyn vowels, a short asthmatic wheeze audible on every inhale, dry and right on the mic. Instrumental: 88 BPM, swung dusty breakbeat with a thick knocking kick and a hard flat snare, a melancholy after-midnight Rhodes-and-organ soul-jazz figure sliced into a cold, menacing minor loop, walking acoustic-bass-style bottom end, tape hiss and crackle; between the rules a hoarse sampled crowd-chant voice barks the number; bare, minimal, threatening, no hook",
+  "exclude": "double-time, chopper flow, crammed syllables, female vocals, sung chorus, autotune, trap hi-hats",
+  "lyrics": "[Intro]\nUh. Money printer manual. Take notes.\n\n[two-bar beat break]\n\n[Rule 1]\nRule number Uno: [pause] never say how much you made,\ndoesn't matter anyway, since the gold went away.\n\n[two-bar beat break]\n\n[Rule 2]\nNumber two: [pause] never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n\n[two-bar beat break]\n\n[Rule 3]\nNumber three: [pause] never trust nobody with the press,\nbefore Bernie gets made off face loss.\n\n[two-bar beat break]\n\n[Rule 4]\nNumber four: [pause] never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n\n[two-bar beat break]\n\n[Rule 5]\nNumber five: [pause] never print where you sleep,\nnever let them owe the oats you reap.\n\n[two-bar beat break]\n\n[Rule 6]\nNumber six: [pause] no credit? Forget it,\nlet the junkie know you better forget that.\n\n[two-bar beat break]\n\n[Rule 7]\nSeven, [pause] and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n\n[two-bar beat break]\n\n[Rule 8]\nNumber eight: [pause] hold none of it yourself,\ndebase 'em till the numbers go through.\n\n[two-bar beat break]\n\n[Rule 9]\nNine's the one they'd rather you skipped: [pause]\nkeep the auditors out, sporadic trips and you out.\n\n[two-bar beat break]\n\n[Rule 10]\nNumber ten: [pause] no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n\n[two-bar beat break]\n\n[Outro]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 60,
+  "vocalGender": "male",
+  "durationSec": 75,
+  "maxMode": false
+}

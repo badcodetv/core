@@ -1,0 +1,13 @@
+{
+  "name": "slower-tempo-more-air",
+  "style": "East Coast boom-bap from the back end of the nineties, a lone big-bodied rapper taking his time: laid-back, relaxed pacing, he drags each line a hair behind the snare and lets the last word hang, wide breathing room between lines, unbothered conversational tone, a deliberate beat of silence held just ahead of every punchline. Voice: a huge-framed man, deep smooth baritone from the chest, slurred Brooklyn vowels, a short asthmatic wheeze on each intake of breath, dry, close to the mic. Instrumental: 82 BPM, swung dusty breakbeat with a thick knocking kick and a hard flat snare, a melancholy after-midnight Rhodes-and-organ soul-jazz figure sliced into a cold, menacing minor loop, walking acoustic-bass-style bottom end, tape hiss and crackle; in the gap after each rule a gravelly chopped-up group shout calls out the next number; bare, minimal, threatening, no hook",
+  "exclude": "double-time flow, crammed syllables, rushed delivery, sung chorus, female vocals, autotune",
+  "lyrics": "[Intro]\nUh. Money printer manual. Take notes.\n[pause]\n\n[Verse 1]\nRule number Uno: never say how much you made,\ndoesn't matter anyway, since the gold went away.\n[pause]\n\n[Verse 2]\nNumber two: never show 'em your next move,\ncut the rate for the banks, hike it when you land.\n[pause]\n\n[Verse 3]\nNumber three: never trust nobody with the press,\nbefore Bernie gets made off face loss.\n[pause]\n\n[Verse 4]\nNumber four: never get high on your own supply,\nbanks took the first hit, now the rent's sky-high.\n[pause]\n\n[Verse 5]\nNumber five: never print where you sleep,\nnever let them owe the oats you reap.\n[pause]\n\n[Verse 6]\nNumber six: no credit? Forget it,\nlet the junkie know you better forget that.\n[pause]\n\n[Verse 7]\nSeven, and nobody says it out loud:\nkeep your money and your assets apart, not in one crowd.\n[pause]\n\n[Verse 8]\nNumber eight: hold none of it yourself,\ndebase 'em till the numbers go through.\n[pause]\n\n[Verse 9]\nNine's the one they'd rather you skipped:\nkeep the auditors out, sporadic trips and you out.\n[pause]\n\n[Verse 10]\nNumber ten: no consignment, cash up front, that's law,\nthey took the bailout in stride and they ain't paid it all.\n[pause]\n\n[Outro]\nAnd the fix, from the future? No hand on the printer.\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 70,
+  "vocalGender": "male",
+  "durationSec": 75,
+  "maxMode": false
+}
