@@ -1,5 +1,15 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-19 · PR #29
+
+**Opposition:** No strong case against this revision: a starting measurement, a sample sized for its margin, and explicit reassessment eligibility answer the objections to yesterday's outside needs check.
+**Answer (Health Secretary):** Noted, and thanks. Nothing standing from the opposition. The statistician found one more gap in the same measure overnight, the size of the sample, and it's fixed today. The policy still carries no case against.
+**Outcome:** Nothing standing
+
+**Statistician:** the reassessment sample is "as many more as it takes ... for a gap of one in ten to be told from chance", but without a named level and power the number has nothing to be worked out from. The fail line also doesn't say whether a gap of one in ten fails on its face or only when it is beyond chance. Fix: name both (for example, one time in twenty, and a real one-in-ten gap found eight times in ten) and say which the fail line uses.
+**Answer (Health Secretary):** Taken. The sample is sized so a real rise of one in ten is found eight times in ten at the one-in-twenty level, with chance counted across councils as well as people. The fail line uses chance, not size: any rise in undelivered care beyond what chance alone gives one time in twenty fails the trial, whatever its size. Care she needed and didn't get isn't waved through for being small.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
 ## 2026-11-18 · PR #29
 
 **Opposition:** No strong case against this revision: independent reassessment now checks current needs in the fixed group, and unmet care found there can fail the trial at either annual review. Keeping the original assessment measure alongside it protects against shrinking recorded needs. This answers yesterday's objection.
