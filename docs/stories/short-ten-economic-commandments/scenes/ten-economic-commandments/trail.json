@@ -22,5 +22,13 @@
   "url": "https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG",
   "what": "rough cut 1: jazz1 rap, seven animated stills cut on the rules, logo tail",
   "rebuild": "python3 scripts/shorts/tec_cut.py --round 1 && python3 scripts/scene/build-timeline.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments /tmp/claude-1000/-home-jackt-projects-badcode-badcode/49cb0755-0505-489f-9ce7-b2b926d9d108/scratchpad/tec-timeline"
+ },
+ {
+  "at": "2026-11-19T15:21:11+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/8g5haV7wncRBKwKmtgcPaR",
+  "what": "Rap round 3 on the picks page: 10 takes of all ten commandments (A jazz1 slowed x4, B inspiration x6)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-ten-economic-commandments/songs/r1-rap/picks.json <out.html>"
  }
 ]

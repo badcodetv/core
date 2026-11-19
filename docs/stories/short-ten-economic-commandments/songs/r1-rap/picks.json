@@ -1,9 +1,84 @@
 {
  "title": "Ten Commandments Music",
  "eyebrow": "BadCode Shorts · Ten Economic Commandments · the rap",
- "heading": "Pick the rap",
- "intro": "Round 2 at the top: one target, as close as possible to the original's voice and beat, your lyrics numbered 1-3, about 20-30 s. Round 1 below. Pick one and note anything.",
+ "heading": "All ten: pick the take",
+ "intro": "Round 3 (Jack: \"rap all ten\" and \"sometimes he says the line too fast\"). Ten takes of your full lyric, about 75 s each. A keeps the jazz1 rapper and slows him down; B is the inspiration version with new voices. Open each on Suno, then Pick one here and leave a note.",
  "sections": [
+  {
+   "h": "Round 3",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "rap-r3-all10",
+     "round": 3,
+     "title": "All ten commandments (about 75 s)",
+     "line": "Your lyric, all ten rules. A = your jazz1 rapper slowed down; B = the inspiration version, new voices. Pick one, note any line he still rushes.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "A-lazy-behind-the-beat-1",
+       "href": "https://suno.com/song/6457a57d-029d-410d-a0db-ff4f6b705b66",
+       "label": "A1 · jazz1 rapper; lazy, behind the beat (1:15)",
+       "warn": ""
+      },
+      {
+       "id": "A-lazy-behind-the-beat-2",
+       "href": "https://suno.com/song/cb908d27-ff25-4573-a86d-ac45e9393aa8",
+       "label": "A2 · jazz1 rapper; lazy, behind the beat (1:15)",
+       "warn": ""
+      },
+      {
+       "id": "A-number-gets-its-bar-1",
+       "href": "https://suno.com/song/e689e000-f4db-43c0-85cb-2388d4f866ef",
+       "label": "A1 · jazz1 rapper; each number gets its own bar (1:14)",
+       "warn": ""
+      },
+      {
+       "id": "A-number-gets-its-bar-2",
+       "href": "https://suno.com/song/3b44e6e5-c72d-4b54-bd68-3cfcd7da901a",
+       "label": "A2 · jazz1 rapper; each number gets its own bar (1:16)",
+       "warn": ""
+      },
+      {
+       "id": "B-baritone-behind-the-beat-1",
+       "href": "https://suno.com/song/3b4343eb-c2a1-4115-878d-10228863d64d",
+       "label": "B1 · new: deep, unhurried baritone (1:14)",
+       "warn": ""
+      },
+      {
+       "id": "B-baritone-behind-the-beat-2",
+       "href": "https://suno.com/song/d16230d3-6c2d-48b9-a22a-0c2d5dbf3095",
+       "label": "B2 · new: deep, unhurried baritone (1:14)",
+       "warn": ""
+      },
+      {
+       "id": "B-street-tenor-horn-stabs-1",
+       "href": "https://suno.com/song/be4b5b78-4940-44c0-bd23-2c1ced08bd5c",
+       "label": "B1 · new: street tenor over horn stabs (1:16)",
+       "warn": ""
+      },
+      {
+       "id": "B-street-tenor-horn-stabs-2",
+       "href": "https://suno.com/song/d91b238c-d988-48f7-8ea9-ec25f35b5f7b",
+       "label": "B2 · new: street tenor over horn stabs (1:24)",
+       "warn": ""
+      },
+      {
+       "id": "B-weathered-ledger-reader-1",
+       "href": "https://suno.com/song/277e9551-672b-4c75-9fa1-f7df85b50507",
+       "label": "B1 · new: older voice reading the rules like a ledger (1:17)",
+       "warn": ""
+      },
+      {
+       "id": "B-weathered-ledger-reader-2",
+       "href": "https://suno.com/song/fe64755c-0538-4392-9052-c22ec9bd411a",
+       "label": "B2 · new: older voice reading the rules like a ledger (1:18)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 2",
    "lede": "As close as possible. Numbered one, two, three.",
@@ -86,7 +161,8 @@
        "label": "exclude2: Ruling out the wrong voices (0:29)",
        "warn": ""
       }
-     ]
+     ],
+     "round": 2
     }
    ]
   },
@@ -172,9 +248,11 @@
        "label": "noir2: Noir strings, spoken sermon (0:30). A tall, slow, preacher-deep bass voice from Brooklyn delivering the rules like commandments from a pulpit, almost spoken word, hea",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }
- ]
+ ],
+ "round": 3
 }
