@@ -14,3 +14,11 @@
 - **2026-11-16, round 4 picks (Jack):** RU4-1-b (doorstep, chalkboard), RU4-2-a (red studio), RU4-3-a (fence bench), RU4-5-b (dusk crowd, mic), SU4-1-a (subway, banknotes), SU4-3-b (bridge street, falling notes), FX4-1-b (streetlight, empty gloved hands). Zoom-checked: no skin, masks right. Note on the fire-escape wide (FX2-b-a line): "you need to ffix this one it looks terrible and like ai slop" → a fresh clean-room still, not an edit.
 - **2026-11-16, FX5 (fire-escape wide redone):** clean-room writer (`cleanroom/brief-anim-r1.md` → `anim-r1.json`) read the old one as postcard symmetry, a spotlight, a teal HDR grade and staged steam; two fresh stills FX5-a (35mm from the kerb under the bridge, overcast, wet cobbles, a van) and FX5-b (long lens, low sun through girders, a passing car), 2 takes each, on the board for Jack. Clips: 7 picks x2 takes started (video-jobs.json, run.mts).
 - **2026-11-16, rough cut 1:** 14 clips (7 picks x2), checked at three frames each: suit, cap, mask, no skin; clip 06 turns side-on late, used from its start. Cut on the rap sections (scripts/shorts/tec_cut.py), logo tail, 29 s. Timeline https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG
+- **2026-11-19, pollution check (Jack: "check if there's any pollution in this one"):** `fresh.py` leak check over all 201
+  prompts, lyrics and briefs in the story. The cut is clean: the picked rap (jazz1), the round-4 stills and the clips carry
+  no other story's wording. Flags, none in the cut: `cleanroom/brief-r1.md` (round 1 stills, archived, never picked)
+  describes BadCode as "dark humour, total authority, nurturing underneath", a phrase from Camping's narrator note
+  (`camping/sound.md`): a leak into that brief only. The rest is shared housekeeping (sealed-writer boilerplate; the mask
+  rule "keeps facing the camera"), and "don't get high on your own supply" is the Biggie line itself, which Magic Money
+  Tree also quotes. Open from the meetings (13 and 17 Nov): fix the rhythm; ten commandments if the length allows (the song
+  says ten, shows three); the FX5 fire-escape redo is unpicked; export owed.
