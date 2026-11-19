@@ -294,7 +294,19 @@
         "state": "in sync",
         "why": "all 93 shots match plan-H4 (start, end, in, file), no gaps, ends 187.0; frames at 99, 184, 186.5 s checked"
       },
-      "premiere_ahead": "none: A1 Volume Level 0.2138 (+1.6 dB) set as the last build step, as on Balaclava Gang 11"
+      "premiere_ahead": "none: A1 Volume Level 0.2138 (+1.6 dB) set as the last build step, as on Balaclava Gang 11",
+      "renders": {
+        "youtube": "/mnt/d/badcode-videos/bank-robbery-music/renders/Balaclava Gang 12 - YouTube 1080p.mp4 (Premiere 2026 'YouTube 1080p HD' preset, 400 MB, 187.03 s, -14.4 LUFS, true peak -1.6; delivery-qc: untagged full range as on cut 10 and 11)"
+      },
+      "youtube": {
+        "id": "UitMrUEqUfk",
+        "url": "https://youtu.be/UitMrUEqUfk",
+        "privacy": "private",
+        "uploaded": "2026-11-19",
+        "words": "title, description, tags and category copied from LV4twP4qyiU (cut 11), AI label on",
+        "thumbnail": "/mnt/d/badcode-videos/youtube/thumbnails/UitMrUEqUfk-bank-robbery-86s.jpg (same frame as cut 11: her at the mic, 86 s, unchanged in this cut)",
+        "replaces": "LV4twP4qyiU, retitled '(replaced 19 Nov)'; no delete tool in this session, so Kai deletes it in Studio"
+      }
     }
   },
   "cut": {
