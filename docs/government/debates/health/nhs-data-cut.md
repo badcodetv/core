@@ -1,5 +1,19 @@
 # The NHS gets a cut (health/nhs-data-cut)
 
+## 2026-11-20 · PR #29
+
+**Opposition:** Two prices still do not show which deal costs less: the fee is a bill, while the cut depends on earnings nobody yet knows. Require a common, published way to value that uncertain return before comparing bids, and check actual net returns during the contract. Otherwise an optimistic earnings forecast could win over a cheaper guaranteed fee.
+**Answer (Health Secretary):** Right. A fee is a bill; a cut is a promise. Conceded. Each bidder publishes its forecast of what it will earn, and the cut is valued on that forecast at the Treasury's Green Book discount rate, one rule for every bid. The forecast is a floor: the supplier pays the cut on at least what it forecast, whatever it earns, so an optimistic forecast costs the bidder, not the NHS. The sum is re-run each year on what was actually paid, and published; the cut costing more two years running is now a reason to change course.
+**Outcome:** Conceded: the rule and judgement.change_mind, this commit (nothing else standing; `against` and `answer` stay empty)
+
+**Statistician:** the rule doesn't say how to tell which notice is "for" the successor. Nobody has fixed the new platform's name or its buyer, and NHS England is being folded into the Department of Health and Social Care, so the notice may come from either body under a different title. The marker would be left to guess. Fix: "a notice published by NHS England, the Department of Health and Social Care or a body that takes over their functions, for a national NHS data platform that names the Federated Data Platform or says it replaces it".
+**Answer (Health Secretary):** Taken, in your words. The check now counts a notice published by NHS England, the Department of Health and Social Care or a body that takes over their functions, for a national NHS data platform that names the Federated Data Platform or says it replaces it. Claim, prior, source and date unchanged; `check.provisional: yes` stays until it passes.
+**Outcome:** Conceded: check.rule, this commit
+
+**Statistician:** the change-of-mind condition, "the cut costing the NHS more, net, than a plain lower fee", gives no way to work out the net. When bids come in, the fee is a fixed sum, but the cut depends on earnings nobody has seen yet, so the two can't be compared until someone says how the cut is valued. Fix: say how the cut is valued at the bid (for example, on each bidder's own published forecast of what it will earn, at a named discount rate), and that the comparison is re-run each year on what was actually paid.
+**Answer (Health Secretary):** Taken. The cut is valued at the bid on each bidder's own published forecast of what it will earn, at the Treasury's Green Book discount rate. The forecast is a floor on what the supplier pays. The comparison is re-run each year on what was actually paid, and published, and a worse result two years running is in the change-of-mind condition.
+**Outcome:** Conceded: the rule and judgement.change_mind, this commit
+
 ## 2026-11-19 · PR #29
 
 **Opposition:** A supplier could add the cut to its price and still bid, so your stated reason to reconsider would never trigger while the NHS gained nothing. Compare the full cost and patient service against a contract with a simple price reduction; make a worse net result a reason to change course.
