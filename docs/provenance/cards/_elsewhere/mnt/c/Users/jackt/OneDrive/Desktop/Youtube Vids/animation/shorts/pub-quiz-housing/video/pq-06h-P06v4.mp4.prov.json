@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-06h-P06v4.mp4",
+ "made": "2026-11-20T15:02:05+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The plasterer in the plaster-dusted camouflage jacket stares straight at the red-bearded young man at the other table, eye to eye, the whole time, leans a little towards him and says low and flat: \"Fuck off, get your own answers.\" The red-bearded young man raises both palms and turns back to his pint; the silver-haired woman looks away. The plasterer's teammates hold still. A lamp glows steadily over the bar. Quiet pub murmur. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P06v4.jpg",
+ "why": "Jack on clip 06 r3: \"hes not facing the ginger man fix it\" (leans in, palms up)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P06v4.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "06h",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T15:01:04.391Z"
+ }
+}

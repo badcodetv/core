@@ -29,3 +29,4 @@
 - **2026-11-20, Jack on clip 06 r2 (dumped to `feedback/clips-r2/`):** "The plasterer's facing the camera, not the people eaves dropping." New still r8/S06-turned-a (already turned to the other table, profile), `moodboard/P06v3`; clips 06e/06f ("keeps his face turned towards them the whole time"). Lesson in docs/rules/flow.md.
 - **2026-11-20, clips 06e/06f made** (P06v3): checked frame by frame; he stays turned to the eavesdroppers throughout. Leak check: none. Clips page round 3.
 - **2026-11-20, Jack on clip 06 r3 (dumped to `feedback/clips-r3/`):** "hes not facing the ginger man fix it". New still r9/S06-ginger-b (eye to eye, the red-bearded man looks back), `moodboard/P06v4`; clips 06g/06h ("eyes locked on the red-bearded young man the whole time"). Lesson in docs/rules/flow.md.
+- **2026-11-20, clips 06g/06h made** (P06v4): checked frame by frame; his eyes stay on the red-bearded man throughout. Leak check: none. Clips page round 4.

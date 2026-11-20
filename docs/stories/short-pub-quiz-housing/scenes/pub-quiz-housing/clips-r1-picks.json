@@ -2,8 +2,35 @@
  "title": "Pub Quiz Clips",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · clips round 1",
  "heading": "The clips: pick one per shot",
- "intro": "Round 3: shot 6 with the plasterer facing the eavesdroppers. Pick one.",
+ "intro": "Round 4: shot 6, the plasterer eye to eye with the red-bearded man. Pick one.",
  "sections": [
+  {
+   "h": "Round 4: shot 6, eye to eye",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "clip-06-r4",
+     "round": 4,
+     "title": "6. Eavesdroppers, eye to eye with the red-bearded man",
+     "line": "Your note: \"hes not facing the ginger man\". The still now has them looking straight at each other, and his eyes stay on him the whole clip.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "06g",
+       "src": "clips/pq-06g-P06v4.mp4",
+       "label": "g: eyes locked, he shrinks back",
+       "warn": ""
+      },
+      {
+       "id": "06h",
+       "src": "clips/pq-06h-P06v4.mp4",
+       "label": "h: leans in, palms up",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 3: shot 6, facing them",
    "lede": "",
@@ -317,5 +344,5 @@
    ]
   }
  ],
- "round": 3
+ "round": 4
 }
