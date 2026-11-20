@@ -43,5 +43,19 @@
  "boards": {
   "storyboard": "https://claude.ai/artifact/GSaZgWX1btP21dy3b3iDar"
  },
- "prefix": "pq"
+ "prefix": "pq",
+ "clip_picks": {
+  "01": "pq-01a-P01",
+  "02": "pq-02b-P02",
+  "03": "pq-03a-P03",
+  "04": "pq-04b-P04",
+  "05": "pq-05a-P05",
+  "06": "pq-06i-P06v5a",
+  "07": "pq-07b-P07",
+  "08": "pq-08b-P08",
+  "09": "pq-09b-P09",
+  "10": "pq-10a-P10",
+  "11": "pq-11b-P11",
+  "12": "pq-12b-P12"
+ }
 }

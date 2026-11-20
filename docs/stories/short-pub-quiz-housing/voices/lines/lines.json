@@ -1,0 +1,98 @@
+[
+ {
+  "key": "01-quizmaster-question",
+  "role": "quizmaster",
+  "text": "How much did councils in England spend on temporary accommodation last year? Nearest wins. Thirty seconds.",
+  "whisper": false
+ },
+ {
+  "key": "02-student-hundred",
+  "role": "student",
+  "text": "A hundred million? That's loads.",
+  "whisper": true
+ },
+ {
+  "key": "03-plasterer-more",
+  "role": "plasterer",
+  "text": "More. I've done three of them B&B jobs for the council this year. Every room, every night.",
+  "whisper": true
+ },
+ {
+  "key": "04-student-sum",
+  "role": "student",
+  "text": "Every night... Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Times three-sixty-five. Times a hundred thousand rooms?",
+  "whisper": true
+ },
+ {
+  "key": "05-student-billions",
+  "role": "student",
+  "text": "That's billions. That can't be right.",
+  "whisper": true
+ },
+ {
+  "key": "06-plasterer-fuckoff",
+  "role": "plasterer",
+  "text": "Fuck off, get your own answers.",
+  "whisper": true
+ },
+ {
+  "key": "07-quizmaster-twenty",
+  "role": "quizmaster",
+  "text": "Twenty seconds.",
+  "whisper": false
+ },
+ {
+  "key": "08-banker-billions",
+  "role": "banker",
+  "text": "Paying by the night is the dearest way to buy anything. It's billions with a B. Keep up, you morons.",
+  "whisper": true
+ },
+ {
+  "key": "09-banker-bob",
+  "role": "banker",
+  "text": "Bob.",
+  "whisper": true
+ },
+ {
+  "key": "10-bob-noone",
+  "role": "bob",
+  "text": "I know literally no one who's been in them.",
+  "whisper": true
+ },
+ {
+  "key": "11-quizmaster-pens",
+  "role": "quizmaster",
+  "text": "Pens down.",
+  "whisper": false
+ },
+ {
+  "key": "12-quizmaster-answer",
+  "role": "quizmaster",
+  "text": "Two point nine billion pounds. One point eight billion of it on B&Bs and nightly lets.",
+  "whisper": false
+ },
+ {
+  "key": "13-student-own",
+  "role": "student",
+  "text": "So they rent the same rooms every year? Why don't they just own them?",
+  "whisper": false
+ },
+ {
+  "key": "14-banker-gets",
+  "role": "banker",
+  "text": "Now he gets it.",
+  "whisper": false
+ },
+ {
+  "key": "15-plasterer-brick",
+  "role": "plasterer",
+  "text": "Every year. And at the end nobody owns a single brick.",
+  "whisper": false
+ },
+ {
+  "key": "16-banker-bricks",
+  "role": "banker",
+  "text": "So buy the bricks.",
+  "whisper": false
+ }
+]
