@@ -49,7 +49,7 @@ From the dialogue page https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC. Whispe
 - The student's sum is his guess ("say", "I don't know"): fifty × 365 × 100,000 ≈ £1.8 billion, short of the real £2.9 billion, so Bob is still nearer.
 - To trim to ~28 s: drop "Twenty seconds." and "Bob."
 
-### 3. The answer (36-46 s)
+### 3. The answer (38-46 s)
 - **Quizmaster** (DRAFT): "Two point nine billion pounds." Then: "One point eight billion of it on B&Bs and nightly lets."
 - The table looks at Bob's sheet. ⬜ how close Bob was, and what that does to the table.
 
