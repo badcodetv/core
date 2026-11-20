@@ -23,9 +23,10 @@ Homelessness costs a fortune already; the money goes on renting rooms by the nig
 | Step | State |
 | --- | --- |
 | Set up | ✅ 2026-11-20 |
-| Script | 🟡 draft 1, huddle picked (1D = 1A + 1C); question, table and way out not ruled; jokes blank |
-| Library pieces | ⬜ asked before the first still |
-| Look, sound, voices | ⬜ not decided |
+| Script | 🟡 cut down for rough cut 2 (lines 05, 07, 09, 14 out; the sum shortened); opening jokes still Jack's to write |
+| Library pieces | ✅ real photo as the look, clean room, the balaclava (2026-11-20) |
+| Look, sound, voices | ✅ look picked, voices locked (badcode.md); music not decided |
+| Cut | 🟡 rough cut 4, 56 s, lip-synced, on https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb (2026-11-20), awaiting Jack; no Premiere project yet |
 
 ## Checks owed
 - Numbers: re-check the temporary-accommodation spend for a newer year before posting (source in `badcode.md`).

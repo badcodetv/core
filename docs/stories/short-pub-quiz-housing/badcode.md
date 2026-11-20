@@ -8,7 +8,10 @@
 A BadCode short (9:16 offered, not ruled; about 45-55 s, under 60): a pub quiz question about housing, and one table
 whispering its answer against the clock so the next table can't hear. The argument is the short: each person brings what
 they know from their own life and work. The point: homelessness already costs billions, spent renting rooms by the night
-instead of on homes anyone owns. State: script draft 1 ([script.md](./script.md)), jokes blank for Jack and Kai.
+instead of on homes anyone owns. State (2026-11-20 eve): **rough cut 4**, 56 s, lip-synced, on the timeline page
+https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb, awaiting Jack. Owed: the opening jokes (a team name on the sheet, a
+quizmaster line before the question: Jack's to write), music, export loudness. Rebuild: `scripts/shorts/pq_lipsync.py check|fit`,
+then `scripts/shorts/pq_cut.py --round 4 --lines audio/lines-fast-pick --room`. Full record: [picks.md](./scenes/pub-quiz-housing/picks.md).
 
 ## Look
 - Status: EXPLORING (round 1 stills). A proper old English pub (Jack, 2026-11-20: "use unsplash for what the pub looks like,
@@ -36,7 +39,20 @@ age or acting in the prompt; the accent is the voice. Huddle lines are whispered
 - **Bob:** Camping's Bob, at Jack's ask: `Algenib` with Camping's profile `docs/stories/camping/narration/profiles/bob-algenib.md`
   on `gemini-3.1-flash-tts-preview` (the model Camping used; still answering 2026-11-20, retired by Google). The
   same-prompt check flags it as MIXED/LEAK: deliberate.
-Music: not decided. Any Suno track is music and sound only.
+- **Pace (Jack, 2026-11-20: "make the whole thing fast"):** the takes in use are fast re-voices (`--style` "whispering, fast" /
+  "fast, brisk"; whispers without "fast" come out far too slow), `<media>/audio/lines-fast-pick/`, three re-voiced with pause
+  tags to their lip-sync clips (`audio/lines-sync/`); lines overlap 0.15 s. Room sound on the voices (a guess at Jack's "bar
+  appropriate filter", asked on the page).
+Music: not decided. Any Suno track is music and sound only. Pub room bed: built from the no-dialogue clips' own sound.
+
+## The drunk regular and the outro (Jack, 2026-11-20)
+- **The drunk regular:** a running background gag, worse each time (leaning; slid off his stool; dozing off onto the bar
+  on "Pens down"). Portrait `stills/r11/D00-a` (staged `drunk-face.jpg`): 63, sandy-grey comb-over, bushy grey eyebrows,
+  big ears, red bulbous nose, brown corduroy jacket, mustard tank top. He plays OVER the lines, never in a gap. A flying
+  fall was rejected as "ai slop": keep his gags small and real.
+- **The outro:** a pint poured into a plain glass (`stills/r12/G01-b`, clip `pq-G01ma-G01`) with the official stacked logo
+  file laid onto the glass in ffmpeg (Jack: "a pint is being poured into a badge logo and named pint glass").
+- **Bob** says his line on his own close-up (`stills/r12/S08c-b`): Jack, "bob is not in the clip".
 
 ## Story-only rules
 - The script comes first (Jack, 2026-11-20); nothing is generated until the script is agreed.
