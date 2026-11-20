@@ -27,6 +27,7 @@ Jack, 2026-10-07, on the Bank Robbery script: "instead of writing the jokes, jus
 **Why:** he wants to write the comedy himself; my drafted punchlines were not what he asked for.
 
 **How to apply:** per scene, hand over a beat list: who speaks, what the beat must convey, what the joke is about, with the line left blank for them. Jack, 2026-11-18: this holds for everything, and for Kai as well as Jack, not one story (a fresh test session drafted a Freddo joke because the rule was only written for one story). Applies to beats, scripts, shorts and captions with a gag in them, unless he asks for a draft. See `bank-robbery-register-brutal-and-silly`.
+Jack, 2026-11-20, on a list of short ideas: "whats failing to grab me are the descriptions of these shorts trying to be funny, i think make the point of the story/short first, then we will make the jokes after". Pitching ideas counts too: a short is pitched as **the point** (what it argues), **the story** (who, what happens, what is at stake, in plain words) and **the way out** (the better choice, or ⬜ if it has none yet). No punchlines, no quoted gag lines, no "the meme lands". The jokes come after he picks.
 
 ## When Jack says "forget all that" before a new brief, he means keep earlier prompts out of the new one — not cancel the earlier request.
 
