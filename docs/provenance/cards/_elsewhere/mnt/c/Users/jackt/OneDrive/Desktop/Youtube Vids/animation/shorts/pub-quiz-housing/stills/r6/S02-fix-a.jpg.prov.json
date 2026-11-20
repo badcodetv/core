@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r6/S02-fix-a.jpg",
+ "made": "2026-11-20T14:10:48.074Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using image 1, change only the face of the plasterer in the grey camouflage jacket so it is the plasterer's face from image 2: long narrow face, slightly crooked nose, heavy-lidded dark eyes, short black beard greying at the chin, small scar through his left eyebrow, very short receding black hair. Keep the other three men, every pose, the table, the flash lighting and everything else in image 1 exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack's pick S02-b-bob-a, with the plasterer's locked face",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r4/S02-b-bob-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r4/S02-b-bob-a.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "ea3116cc-4be0-4a65-8ee5-d31c6fd494db"
+}

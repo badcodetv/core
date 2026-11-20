@@ -14,6 +14,9 @@ instead of on homes anyone owns. State: script draft 1 ([script.md](./script.md)
 - Status: EXPLORING (round 1 stills). A proper old English pub (Jack, 2026-11-20: "use unsplash for what the pub looks like,
   make it look like a proper english old pub"): dark wood, brass pumps, etched mirrors, low warm light; never neon, never
   modern. Layout references: Unsplash photos in `<media>/reference/unsplash/` (credits in `scenes/pub-quiz-housing/refs.json`).
+- **The cast (one big portrait each; attach to every shot of that person):** Bob `stills/r6/bob-face-a.jpg`, the plasterer
+  `stills/r5/plasterer-face-a.jpg`, the student `stills/r3/S05-a.jpg`, the banker `stills/r3/S07-a.jpg`, the quizmaster
+  `stills/r1/Q1-a-fix-a.jpg` (+ the mask reference). Staged for uploads in `~/.cache/badcode-refs/pub-quiz-housing/`.
 - **The table reference is now `table-newbob-a`** (Jack's pick, 2026-11-20): Bob has his own face and a clean olive
   waterproof; the old one read as a famous actor. Faces must be big in a reference before a close-up (docs/rules/flow.md).
 - **Picked (Jack, 2026-11-20):** quizmaster **Q1-a-fix-a** (brown tweed three-piece, tweed flat cap, navy roll-neck, gold

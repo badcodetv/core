@@ -2,8 +2,191 @@
  "title": "Pub Quiz Stills",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · round 1",
  "heading": "The look: the pub and the quizmaster",
- "intro": "Round 5: the plasterer given his own face, S04 and S06 rebuilt from it.",
+ "intro": "Round 6: the cast portraits, and every open mistake fixed. Pick a take per row.",
  "sections": [
+  {
+   "h": "Round 6: every face locked",
+   "lede": "Picked and kept: S01-a-mix-a, S03-a-cuff-a, S05-a, S07, S10 still open (round 3), S06 round 5. Every shot now uses the same five faces.",
+   "groups": [
+    {
+     "slot": "cast",
+     "round": 6,
+     "title": "The cast: one big portrait each",
+     "line": "Every close-up and clip is built from these, so no face can drift again. Student and banker are your picked close-ups (S05-a, S07-a).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "bob-face-a",
+       "src": "r6/bob-face-a.jpg",
+       "label": "Bob a",
+       "warn": ""
+      },
+      {
+       "id": "bob-face-b",
+       "src": "r6/bob-face-b.jpg",
+       "label": "Bob b",
+       "warn": ""
+      },
+      {
+       "id": "plasterer-face-a",
+       "src": "r5/plasterer-face-a.jpg",
+       "label": "plasterer",
+       "warn": ""
+      },
+      {
+       "id": "S05-a",
+       "src": "r3/S05-a.jpg",
+       "label": "student",
+       "warn": ""
+      },
+      {
+       "id": "S07-a",
+       "src": "r3/S07-a.jpg",
+       "label": "banker",
+       "warn": ""
+      },
+      {
+       "id": "Q1-a-fix-a",
+       "src": "r1/Q1-a-fix-a.jpg",
+       "label": "quizmaster",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S02-r6",
+     "round": 6,
+     "title": "2. Your pick S02, plasterer's face locked",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S02-fix-a",
+       "src": "r6/S02-fix-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S02-fix-b",
+       "src": "r6/S02-fix-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S04-r6",
+     "round": 6,
+     "title": "4. S04-b with the printed words removed",
+     "line": "S04-a (round 5) was already clean.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S04-a",
+       "src": "r5/S04-a.jpg",
+       "label": "a (round 5)",
+       "warn": ""
+      },
+      {
+       "id": "S04-b-fix-a",
+       "src": "r6/S04-b-fix-a.jpg",
+       "label": "b fixed",
+       "warn": ""
+      },
+      {
+       "id": "S04-b-fix-b",
+       "src": "r6/S04-b-fix-b.jpg",
+       "label": "b fixed, second",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S08-r6",
+     "round": 6,
+     "title": "8. Bob takes the pen, plasterer's face locked",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S08-a-fix",
+       "src": "r6/S08-a-fix.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S08-b-fix",
+       "src": "r6/S08-b-fix.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S09-r6",
+     "round": 6,
+     "title": "9. The nod, the banker's face from S07",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S09-a-fix",
+       "src": "r6/S09-a-fix.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S09-b",
+       "src": "r4/S09-b.jpg",
+       "label": "b (round 4, not changed)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S11-r6",
+     "round": 6,
+     "title": "11. The answer lands, plasterer's face locked",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S11-a-fix",
+       "src": "r6/S11-a-fix.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S11-b-fix",
+       "src": "r6/S11-b-fix.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S12-r6",
+     "round": 6,
+     "title": "12. The way out, banker and student faces locked",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S12-a-fix",
+       "src": "r6/S12-a-fix.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S12-b-fix",
+       "src": "r6/S12-b-fix.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 5: the plasterer",
    "lede": "Picked and kept: new Bob table, S01-a-mix-a, S02-b-bob-a, S03-a-cuff-a, S05-a, S07. Open: S08, S09, S11 (round 4), S10, S12 (round 3).",
@@ -749,5 +932,5 @@
    ]
   }
  ],
- "round": 5
+ "round": 6
 }

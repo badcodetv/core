@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r6/bob-face-b.jpg",
+ "made": "2026-11-20T14:10:22.719Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Head-and-shoulders portrait photograph of the man in the clean faded olive waterproof jacket from the attached image, sitting at the pub table, face large in the frame and sharp. Keep his own face exactly: a round, broad face, a wide flattened nose, small brown eyes, short grey stubble beard, ruddy cheeks, thinning cropped grey hair. Quiet, steady expression, looking just off camera. Dark wood pub behind, late night, direct on-camera flash.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack: \"make all the portraits\": Bob's big-face reference",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "bebb50df-fa9a-435a-bcf1-c7e4d6efbdb8"
+}
