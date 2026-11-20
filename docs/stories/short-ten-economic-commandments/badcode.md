@@ -14,8 +14,8 @@ https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG, awaiting Jack. All ten rules 
 rapping on location (number bar) to a rough-cut-1 clip (next bar); logo on the last bar. "Add the clips from the last version on top"
 was read as intercut (a guess, flagged on the page). Rapping takes default to a until Jack's round-5 picks on
 https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf are read (dump `picks`, then `tec_cut_r3.py --picks <json>`). Rough cut 2 (74 s,
-`tec_cut_r2.py`, `<media>/cut/r2/`) is kept. Open: lyric captions; bodega neon reads LOTTO / ATM. Then Premiere (new sequence) and
-Drive. Rough cut 1 (old 29 s song) is in Premiere as `short-ten-economic-commandments-1-tec-r1` and is superseded.
+`tec_cut_r2.py`, `<media>/cut/r2/`) is kept. In Premiere as `short-ten-economic-commandments-1-tec-r3` (23 finished shots frozen in `premiere/r3/`, in sync, saved) and on
+Drive (agreed list). Open: lyric captions; bodega neon reads LOTTO / ATM; export from Premiere + delivery QC. Rough cut 1 (old 29 s song) is in Premiere as `short-ten-economic-commandments-1-tec-r1` and is superseded.
 
 ## Look
 - Status: the 2026-11-19 look is BadCode rapping on real-NYC-style locations, rebuilt in Flow from Jack's Unsplash photos, with

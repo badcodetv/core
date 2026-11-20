@@ -43,7 +43,7 @@
   "script": "scripts/shorts/tec_cut_r3.py"
  },
  "premiere": {
-  "current": "r1",
+  "current": "r3",
   "r1": {
    "sequence": "short-ten-economic-commandments-1-tec-r1",
    "guid": "e874a303-d161-46a1-bdd4-d2fcb7f0e48f",
@@ -53,7 +53,23 @@
    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/premiere/edl-premiere-r1.json",
    "what": "rough cut 1 frozen: V1 the 7 clips (silent copies) + the logo card, A1 the rap (jazz1)",
    "how": "premiere-plan.py edl-premiere-r1.json plan-r1.json --tag r1 (Premiere 27.0.0)",
-   "note": "720x1280 like the Omni clips; export to 1080x1920 owed"
+   "note": "720x1280 like the Omni clips; export to 1080x1920 owed",
+   "stale": "superseded by r3 (old 29 s song)"
+  },
+  "r3": {
+   "sequence": "short-ten-economic-commandments-1-tec-r3",
+   "guid": "50f32cd9-ea86-47a6-a8d4-97471f47f782",
+   "bin": "short-ten-economic-commandments-1-tec-r3",
+   "built": "2026-11-20",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/ten-economic-commandments.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/premiere/edl-premiere-r3.json",
+   "what": "rough cut 3, 62 s: V1 the 23 finished shots (nightfever baked in, frozen copies in premiere/r3/) + logo card, A1 the rap (e689e000 from 1.358 s, faded under the logo)",
+   "how": "premiere-plan.py edl-premiere-r3.json plan-r3.json --tag r3 --seq short-ten-economic-commandments-1-tec-r3 (Premiere 27.0.0)",
+   "check": {
+    "at": "2026-11-20",
+    "state": "in sync",
+    "why": "23/23 V1 shots match edl-premiere-r3.json (start, dur, file); A1 the rap 0-62 s; checked by hand (no timelines.json for shorts)"
+   }
   }
  }
 }
