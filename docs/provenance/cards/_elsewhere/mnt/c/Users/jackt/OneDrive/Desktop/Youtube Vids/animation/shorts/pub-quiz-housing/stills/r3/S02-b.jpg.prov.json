@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S02-b.jpg",
+ "made": "2026-11-20T13:23:28.591Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Medium-wide portrait photograph from slightly above, the small round wooden table in the centre. The four from the attached image drag their chairs and stools in close: the man in the old waterproof jacket, the plasterer with dried plaster dust, the man in the suit with a loosened tie, the young man in the hoodie. Shoulders touching, heads bent together over one answer sheet, a hand cupped beside a mouth. Pints, empty glass and crisp packets on the table. Green leather stools, dark wood bar behind. Late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "8010a9eb-8998-4a01-9e6b-6c62c0ec262e"
+}

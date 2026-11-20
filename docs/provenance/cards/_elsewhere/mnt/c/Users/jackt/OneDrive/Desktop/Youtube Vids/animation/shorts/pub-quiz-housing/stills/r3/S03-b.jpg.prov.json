@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S03-b.jpg",
+ "made": "2026-11-20T13:19:29.802Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Close-up portrait photograph looking straight down at the round wooden table from the attached image. An answer sheet fills the middle of the frame; a weathered hand with a waterproof-jacket cuff grips a short stubby pencil, mid-stroke, forming a number. Every mark on the paper is a soft, smeared scrawl, unreadable. At the edges: the wet base of a pint glass, a ring of beer on the varnish, plain foil crisp packets with crumbs. Shallow depth of field. Direct on-camera flash, crisp shadow of the hand thrown across the paper, dark surroundings.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 3: the story shots in the picked look",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "87ed00d7-53dd-4f3b-886d-f7b415ef2217"
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "S01",
+    "idea": "Wide: the quizmaster at the bar asks the question, the room looks up at him.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-quizmaster.jpg",
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+    ],
+    "prompt": "Wide portrait photograph, camera low at table height looking across the pub to the Victorian bar. The quizmaster stands at the bar, centre frame: brown tweed three-piece suit, tweed flat cap, navy roll-neck, gold rings over black leather gloves, navy balaclava with white ring and red triangle. The balaclava exactly as in the attached image: no holes, no skin, gloves. Microphone held to his mouth, a plain white question card in his other hand. Foreground: shoulders and backs of drinkers at small round tables, heads tilted up towards him. Ornate clock above the bar, blank pump badges. Warm amber bar light.\nThanks."
+  },
+  {
+    "id": "S02",
+    "idea": "The four pull in round the small table, heads together over one sheet.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Medium-wide portrait photograph from slightly above, the small round wooden table in the centre. The four from the attached image drag their chairs and stools in close: the man in the old waterproof jacket, the plasterer with dried plaster dust, the man in the suit with a loosened tie, the young man in the hoodie. Shoulders touching, heads bent together over one answer sheet, a hand cupped beside a mouth. Pints, empty glass and crisp packets on the table. Green leather stools, dark wood bar behind. Late night, direct on-camera flash, hard shadows.\nThanks."
+  },
+  {
+    "id": "S03",
+    "idea": "Insert: a hand writes a number on the answer sheet with a short pencil.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Close-up portrait photograph looking straight down at the round wooden table from the attached image. An answer sheet fills the middle of the frame; a weathered hand with a waterproof-jacket cuff grips a short stubby pencil, mid-stroke, forming a number. Every mark on the paper is a soft, smeared scrawl, unreadable. At the edges: the wet base of a pint glass, a ring of beer on the varnish, plain foil crisp packets with crumbs. Shallow depth of field. Direct on-camera flash, crisp shadow of the hand thrown across the paper, dark surroundings.\nThanks."
+  },
+  {
+    "id": "S04",
+    "idea": "The plasterer's dusty hand strikes through the number, his face insistent at the edge.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Close portrait photograph, low over the table. The plasterer from the attached image, his sleeve and hand caked in dried white plaster dust, drags the pencil hard through the number on the answer sheet in one heavy line. His face cut by the top of the frame, leaning in, jaw set, eyes fixed on the paper, insistent. Paper markings blurred and unreadable. Pint glass and crumbs at the edge, dark wood behind. Direct on-camera flash, hard shadows, dust catching the light.\nThanks."
+  },
+  {
+    "id": "S05",
+    "idea": "The young man in the hoodie does sums on a beer mat.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Medium close-up portrait photograph, slightly from the side. The young man in the navy hoodie from the attached image hunches over the table, a pen scratching rows of tiny figures onto a plain cardboard beer mat held flat under his other hand. Brow knotted, lips moving as he counts under his breath. The scribbles on the mat are tiny and unreadable. Half a pint beside him, the edge of the plasterer's dusty sleeve in the foreground, out of focus. Late night, direct on-camera flash, hard shadows.\nThanks."
+  },
+  {
+    "id": "S06",
+    "idea": "The next table leans in to listen; the plasterer turns round and glares.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Over-the-shoulder portrait photograph. Foreground right: the plasterer from the attached image, plaster-dusted jacket, twisted round in his seat, glaring back over his shoulder. Behind him, at the neighbouring round table, two other drinkers lean far out of their chairs towards the camera, one man cupping a hand behind his ear, the other pretending to study his pint. Green leather stools, dark wood bar and brass lamp in the background. Late night, direct on-camera flash, hard shadows falling behind them.\nThanks."
+  },
+  {
+    "id": "S07",
+    "idea": "The man in the suit, eyes on his pint, dismissive mid-sentence.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Close-up portrait photograph, head and shoulders. The man in the navy suit with the loosened tie from the attached image, eyes down on the pint glass in his hand, not looking up. Mouth open mid-sentence, one corner curled in a small sneer, unimpressed. The young man's hoodie shoulder soft in the foreground. Dark panelled wood behind. Late night, direct on-camera flash, hard shadow behind his head, beer glinting.\nThanks."
+  },
+  {
+    "id": "S08",
+    "idea": "The quiet man in the waterproof jacket takes the pen and the sheet; the others watch.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Medium portrait photograph from across the table. The man in the old waterproof jacket from the attached image calmly slides the answer sheet towards himself and takes the pencil, eyes lowered, unhurried. Around him the plasterer, the man in the suit and the young man in the hoodie have gone still, all three watching his hands. Paper markings unreadable. Pints and crisp packets on the round table, green leather stools. Late night, direct on-camera flash, hard shadows.\nThanks."
+  },
+  {
+    "id": "S09",
+    "idea": "The man in the suit reads the turned sheet and gives a small nod.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Over-the-shoulder portrait photograph, from behind the waterproof-jacketed shoulder of the quiet man from the attached image, whose hand turns the answer sheet round on the table. Facing camera, the man in the suit with the loosened tie looks down at the sheet, chin dipping in a small, grudging nod, lips pressed together. Writing on the sheet blurred and unreadable. Pint glass between them. Late night, direct on-camera flash, hard shadows, dark wood behind.\nThanks."
+  },
+  {
+    "id": "S10",
+    "idea": "Pens down: the quizmaster, microphone up, answer card in hand, looking out.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-quizmaster.jpg",
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+    ],
+    "prompt": "Medium close-up portrait photograph, slightly low angle, the quizmaster framed from the chest up at the Victorian bar: brown tweed three-piece suit, tweed flat cap, navy roll-neck, gold rings over black leather gloves, navy balaclava with white ring and red triangle. The balaclava exactly as in the attached image: no holes, no skin, gloves. Microphone raised close to his mouth, a blank white answer card held up in his other gloved hand, head turned out towards the room. Ornate clock behind him, soft and out of focus. Warm amber bar light.\nThanks."
+  },
+  {
+    "id": "S11",
+    "idea": "The four frozen, all eyes on the quiet man's sheet.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "High-angle portrait photograph looking down on the round table. The four from the attached image sit frozen: the man in the old waterproof jacket with his hand still flat on the answer sheet, the plasterer with dried plaster dust, the man in the suit with a loosened tie, the young man in the hoodie. All three others stare at the sheet, mouths slightly open, a pint halfway to one mouth. Paper markings unreadable. Crisp packets, beer mat, green leather stools around. Late night, direct on-camera flash, hard shadows.\nThanks."
+  },
+  {
+    "id": "S12",
+    "idea": "The young man in the hoodie asks, open-handed; the man in the suit turns to him.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+    ],
+    "prompt": "Two-shot portrait photograph, medium, across the corner of the table. Left: the young man in the navy hoodie from the attached image, leaning forward, both palms open and raised, eyebrows up, asking a question. Right: the man in the suit with the loosened tie turning his head and shoulders towards him, pint in hand, expression guarded. The plasterer's dusty sleeve soft in the foreground. Dark wood bar and green leather stools behind. Late night, direct on-camera flash, hard shadows.\nThanks."
+  }
+]

@@ -2,8 +2,266 @@
  "title": "Pub Quiz Stills",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · round 1",
  "heading": "The look: the pub and the quizmaster",
- "intro": "Round 2: your T1 and T3 notes done (mixed table, T3's vibe kept). Your quizmaster pick Q1-a-fix-a is kept. Round 1 is folded below.",
+ "intro": "Round 3: the twelve shots of the short in your picked look. Pick a take per shot, or note what to change. Earlier rounds are folded below.",
  "sections": [
+  {
+   "h": "Round 3: the shots, in story order",
+   "lede": "Your picked quizmaster and table, in twelve shots that follow the script. Quizmaster masks checked up close: all right.",
+   "groups": [
+    {
+     "slot": "S01",
+     "round": 3,
+     "title": "1. The question",
+     "line": "Wide: the quizmaster at the bar asks the question, the room looks up at him.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S01-a",
+       "src": "r3/S01-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S01-b",
+       "src": "r3/S01-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S02",
+     "round": 3,
+     "title": "2. The huddle starts",
+     "line": "The four pull in round the small table, heads together over one sheet.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S02-a",
+       "src": "r3/S02-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S02-b",
+       "src": "r3/S02-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S03",
+     "round": 3,
+     "title": "3. The pen",
+     "line": "Insert: a hand writes a number on the answer sheet with a short pencil.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S03-a",
+       "src": "r3/S03-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S03-b",
+       "src": "r3/S03-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S04",
+     "round": 3,
+     "title": "4. Crossed out",
+     "line": "The plasterer's dusty hand strikes through the number, his face insistent at the edge.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S04-a",
+       "src": "r3/S04-a.jpg",
+       "label": "a",
+       "warn": "Flow merged two people: the plaster-dusted jacket is on the man in the waterproof (Bob), not the plasterer you picked. Fixed on pick"
+      },
+      {
+       "id": "S04-b",
+       "src": "r3/S04-b.jpg",
+       "label": "b",
+       "warn": "Flow merged two people: the plaster-dusted jacket is on the man in the waterproof (Bob), not the plasterer you picked. Fixed on pick"
+      }
+     ]
+    },
+    {
+     "slot": "S05",
+     "round": 3,
+     "title": "5. The beer mat",
+     "line": "The young man in the hoodie does sums on a beer mat.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S05-a",
+       "src": "r3/S05-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S05-b",
+       "src": "r3/S05-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S06",
+     "round": 3,
+     "title": "6. Eavesdroppers",
+     "line": "The next table leans in to listen; the plasterer turns round and glares.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S06-a",
+       "src": "r3/S06-a.jpg",
+       "label": "a",
+       "warn": "Same mix-up: the dusty jacket is on the white man, not the plasterer. Fixed on pick"
+      },
+      {
+       "id": "S06-b",
+       "src": "r3/S06-b.jpg",
+       "label": "b",
+       "warn": "Same mix-up: the dusty jacket is on the white man, not the plasterer. Fixed on pick"
+      }
+     ]
+    },
+    {
+     "slot": "S07",
+     "round": 3,
+     "title": "7. The banker",
+     "line": "The man in the suit, eyes on his pint, dismissive mid-sentence.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S07-a",
+       "src": "r3/S07-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S07-b",
+       "src": "r3/S07-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S08",
+     "round": 3,
+     "title": "8. Bob takes the pen",
+     "line": "The quiet man in the waterproof jacket takes the pen and the sheet; the others watch.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S08-a",
+       "src": "r3/S08-a.jpg",
+       "label": "a",
+       "warn": "Check: the man in the waterproof jacket looks a lot like a well-known actor (my guess). Fixed on pick, never a famous face"
+      },
+      {
+       "id": "S08-b",
+       "src": "r3/S08-b.jpg",
+       "label": "b",
+       "warn": "Check: the man in the waterproof jacket looks a lot like a well-known actor (my guess). Fixed on pick, never a famous face"
+      }
+     ]
+    },
+    {
+     "slot": "S09",
+     "round": 3,
+     "title": "9. The nod",
+     "line": "The man in the suit reads the turned sheet and gives a small nod.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S09-a",
+       "src": "r3/S09-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S09-b",
+       "src": "r3/S09-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S10",
+     "round": 3,
+     "title": "10. Pens down",
+     "line": "Pens down: the quizmaster, microphone up, answer card in hand, looking out.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S10-a",
+       "src": "r3/S10-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S10-b",
+       "src": "r3/S10-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S11",
+     "round": 3,
+     "title": "11. The answer lands",
+     "line": "The four frozen, all eyes on the quiet man's sheet.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S11-a",
+       "src": "r3/S11-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S11-b",
+       "src": "r3/S11-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S12",
+     "round": 3,
+     "title": "12. The way out",
+     "line": "The young man in the hoodie asks, open-handed; the man in the suit turns to him.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S12-a",
+       "src": "r3/S12-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "S12-b",
+       "src": "r3/S12-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 2: the table, mixed",
    "lede": "Your notes: T1 \"make it diverse, as in add at least one person that is not white\"; T3 \"keep this vibe\". Same pictures, the student and the plasterer changed.",
@@ -215,5 +473,5 @@
    ]
   }
  ],
- "round": 2
+ "round": 3
 }

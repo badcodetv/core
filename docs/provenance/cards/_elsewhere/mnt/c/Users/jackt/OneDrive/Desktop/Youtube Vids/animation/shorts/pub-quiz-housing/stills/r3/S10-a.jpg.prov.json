@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S10-a.jpg",
+ "made": "2026-11-20T13:20:23.609Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Medium close-up portrait photograph, slightly low angle, the quizmaster framed from the chest up at the Victorian bar: brown tweed three-piece suit, tweed flat cap, navy roll-neck, gold rings over black leather gloves, navy balaclava with white ring and red triangle. The balaclava exactly as in the attached image: no holes, no skin, gloves. Microphone raised close to his mouth, a blank white answer card held up in his other gloved hand, head turned out towards the room. Ornate clock behind him, soft and out of focus. Warm amber bar light.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 3: the story shots in the picked look",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-quizmaster.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-quizmaster.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0e9a093b-9eea-44b7-93fd-6e6acc1c6792"
+}

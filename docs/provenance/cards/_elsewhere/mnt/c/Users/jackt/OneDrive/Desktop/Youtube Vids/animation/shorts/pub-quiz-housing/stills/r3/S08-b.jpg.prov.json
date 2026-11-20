@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S08-b.jpg",
+ "made": "2026-11-20T13:21:10.614Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Medium portrait photograph from across the table. The man in the old waterproof jacket from the attached image calmly slides the answer sheet towards himself and takes the pencil, eyes lowered, unhurried. Around him the plasterer, the man in the suit and the young man in the hoodie have gone still, all three watching his hands. Paper markings unreadable. Pints and crisp packets on the round table, green leather stools. Late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 3: the story shots in the picked look",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "ac16ccc6-cdf3-4b20-9677-e31c619b2f63"
+}

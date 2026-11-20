@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S11-a.jpg",
+ "made": "2026-11-20T13:20:47.124Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "High-angle portrait photograph looking down on the round table. The four from the attached image sit frozen: the man in the old waterproof jacket with his hand still flat on the answer sheet, the plasterer with dried plaster dust, the man in the suit with a loosened tie, the young man in the hoodie. All three others stare at the sheet, mouths slightly open, a pint halfway to one mouth. Paper markings unreadable. Crisp packets, beer mat, green leather stools around. Late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 3: the story shots in the picked look",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0d423cb1-902f-4170-bcd3-ee2d3a76eb82"
+}

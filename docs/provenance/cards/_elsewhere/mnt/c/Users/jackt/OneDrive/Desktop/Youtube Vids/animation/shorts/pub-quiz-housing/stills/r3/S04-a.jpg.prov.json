@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S04-a.jpg",
+ "made": "2026-11-20T13:19:23.231Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Close portrait photograph, low over the table. The plasterer from the attached image, his sleeve and hand caked in dried white plaster dust, drags the pencil hard through the number on the answer sheet in one heavy line. His face cut by the top of the frame, leaning in, jaw set, eyes fixed on the paper, insistent. Paper markings blurred and unreadable. Pint glass and crumbs at the edge, dark wood behind. Direct on-camera flash, hard shadows, dust catching the light.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 3: the story shots in the picked look",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c70cbc97-125e-4e10-9573-7724205d9c9d"
+}

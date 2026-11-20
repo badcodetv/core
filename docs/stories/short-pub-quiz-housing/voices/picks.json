@@ -2,8 +2,101 @@
  "title": "Pub Quiz Voices",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · voices round 1",
  "heading": "Cast the voices",
- "intro": "Four voices per role, each reading that role's real lines plain: no accent, age or acting in the prompt (your \"uncanny valley\" rule). The accent is the voice itself: Google library voices, plus five designed from one plain sentence (London, Essex, West Midlands) because the library has no London voice. These are normal speech; the huddle lines get whispered once the voices are picked. Pick one per role, or note \"older\", \"less posh\" and so on.",
+ "intro": "Round 2 from your notes: a new quizmaster, more bankers, and Bob in his Camping voice. Plain reads, no acting in the prompt.",
  "sections": [
+  {
+   "h": "Round 2",
+   "lede": "Picked already: plasterer (Manchester, 48) and student (designed south London). Folded below.",
+   "groups": [
+    {
+     "slot": "voice-quizmaster-r2",
+     "round": 2,
+     "title": "The quizmaster (BadCode), round 2",
+     "line": "Your note: \"more of a black ray winston but with a subtle accent\". Never a copy of a real actor: designed from the qualities (a Black British man from London, deep and gravelly, a light London accent). How much did councils in England spend on temporary accommodation last year? Nearest wins. Thirty seconds. / Twenty seconds. / Pens down. / Two point nine billion pounds. One point eight billion of it on B&Bs and nightly lets.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "voice_g24m2n8fdcqs",
+       "src": "casting/quizmaster-voice_g24m2n8fdcqs.mp3",
+       "label": "c: east London, fifties, deep and gravelly",
+       "warn": ""
+      },
+      {
+       "id": "voice_584qiyf2h9cj",
+       "src": "casting/quizmaster-voice_584qiyf2h9cj.mp3",
+       "label": "d: south London, forties, low and rough",
+       "warn": ""
+      },
+      {
+       "id": "voice_ray1c235bi3m",
+       "src": "casting/quizmaster-voice_ray1c235bi3m.mp3",
+       "label": "e: north London, sixties, deep and husky",
+       "warn": ""
+      },
+      {
+       "id": "voice_dhmsepjvpkst",
+       "src": "casting/quizmaster-voice_dhmsepjvpkst.mp3",
+       "label": "f: London, fifties, gravelly baritone",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-banker-r2",
+     "round": 2,
+     "title": "The banker, round 2",
+     "line": "Your note: \"please do more voices\". Paying by the night is the dearest way to buy anything. It's billions with a B. Keep up, you morons. / Bob. / Now he gets it. / So buy the bricks.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "voice_4ces9zm1rl3h",
+       "src": "casting/banker-voice_4ces9zm1rl3h.mp3",
+       "label": "e: designed, Surrey, fifties, smooth and low",
+       "warn": ""
+      },
+      {
+       "id": "voice_9ck2xsq9c502",
+       "src": "casting/banker-voice_9ck2xsq9c502.mp3",
+       "label": "f: designed, London, forties, clipped and dry",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-training-1",
+       "src": "casting/banker-en-gb-training-1.mp3",
+       "label": "g: library, Winchester, 55",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-podcaster-11",
+       "src": "casting/banker-en-gb-podcaster-11.mp3",
+       "label": "h: library, Liverpool, 57",
+       "warn": "Whisper heard \"now he gets it\" as \"now he gets you\": check by ear"
+      }
+     ]
+    },
+    {
+     "slot": "voice-bob-r2",
+     "round": 2,
+     "title": "Bob, his Camping voice (Algenib)",
+     "line": "Your note: \"bob already has a voice, use his voice from the camping story\". I know literally no one who's been in them.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "Algenib",
+       "src": "casting/bob-Algenib.mp3",
+       "label": "a: Algenib, plain (no Camping wording carried over)",
+       "warn": ""
+      },
+      {
+       "id": "Algenib-camping-profile",
+       "src": "casting/bob-Algenib-camping-profile.mp3",
+       "label": "b: Algenib with his Camping voice profile, as Camping renders him",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Voices",
    "lede": "",
@@ -38,7 +131,8 @@
        "label": "d: library: Manchester, 45",
        "warn": "Whisper heard \"How much did\" as \"Our watch\": check by ear"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "voice-student",
@@ -70,7 +164,8 @@
        "label": "d: library: Winchester, 22",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "voice-plasterer",
@@ -102,7 +197,8 @@
        "label": "d: library: Manchester, 48",
        "warn": "Whisper heard \"brick\" as \"break\": check by ear"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "voice-banker",
@@ -134,7 +230,8 @@
        "label": "d: library: Bristol, 46",
        "warn": "Whisper heard \"now he gets it\" as \"now we guess it\": check by ear"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "voice-bob",
@@ -166,9 +263,11 @@
        "label": "d: library: Glasgow, 62",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }
- ]
+ ],
+ "round": 2
 }

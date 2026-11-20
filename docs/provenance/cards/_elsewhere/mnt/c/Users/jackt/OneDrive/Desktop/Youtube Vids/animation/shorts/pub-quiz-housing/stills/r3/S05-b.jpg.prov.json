@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S05-b.jpg",
+ "made": "2026-11-20T13:20:09.748Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Medium close-up portrait photograph, slightly from the side. The young man in the navy hoodie from the attached image hunches over the table, a pen scratching rows of tiny figures onto a plain cardboard beer mat held flat under his other hand. Brow knotted, lips moving as he counts under his breath. The scribbles on the mat are tiny and unreadable. Half a pint beside him, the edge of the plasterer's dusty sleeve in the foreground, out of focus. Late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 3: the story shots in the picked look",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "aa143b88-76f2-42d2-b746-e6d6f63f21db"
+}
