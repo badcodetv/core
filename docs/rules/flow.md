@@ -219,6 +219,9 @@ On one short (five still rounds) almost every fault traced to process and wordin
 - **Start the still where the clip must end.** A still facing the camera, animated "he turns to glare at them", turned
   and drifted back to the lens (Jack: "facing the camera, not the people eavesdropping"). Make the still already turned
   to what he looks at, and write "keeps his face turned towards them the whole time".
+- **Name the one person he looks at, and have them look back.** "Turned to the other table" let his eyes land between two
+  people (Jack: "hes not facing the ginger man"). Write who the eyes lock on ("eye to eye with the red-bearded young man")
+  and make that person look back, in the still first.
 
 ## When a Character or reference image is attached, never describe the person's appearance — only what they are doing and their facial expression.
 

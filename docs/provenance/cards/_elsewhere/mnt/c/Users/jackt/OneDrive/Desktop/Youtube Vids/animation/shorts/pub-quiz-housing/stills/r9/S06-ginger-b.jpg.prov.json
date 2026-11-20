@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r9/S06-ginger-b.jpg",
+ "made": "2026-11-20T14:59:55.367Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using image 1, change only where the two men are looking: the plasterer in the plaster-dusted camouflage jacket stares straight into the eyes of the red-bearded young man in the denim jacket at the other table, his whole head and gaze aimed at that young man, and the red-bearded young man has turned his face to look straight back at the plasterer, eye to eye, caught out. The silver-haired woman still cups her ear. Keep the plasterer's face as in image 2, his teammates, the two separate tables, the gap of floor and everything else in image 1 exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P06v3.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P06v3.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 3
+ },
+ "source_id": "9d77461c-828a-4a57-942b-2db14849ce48"
+}
