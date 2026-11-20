@@ -1,0 +1,22 @@
+{
+ "pub-quiz-quizmaster-a": {
+  "id": "voice_7dh6mksbnzz8",
+  "desc": "A man in his forties from east London, with a low voice, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-b": {
+  "id": "voice_saimern1juve",
+  "desc": "A man in his fifties from south London, with a deep, rough voice, who speaks plainly."
+ },
+ "pub-quiz-plasterer": {
+  "id": "voice_h471s9l7pwni",
+  "desc": "A plasterer in his forties from Essex, with a low voice, who speaks plainly."
+ },
+ "pub-quiz-student": {
+  "id": "voice_ivtrurh0qn32",
+  "desc": "A man of twenty from south London, with a light voice, who speaks plainly."
+ },
+ "pub-quiz-bob": {
+  "id": "voice_74om0juhzl5u",
+  "desc": "A man in his fifties from the West Midlands, with a low voice, who speaks plainly."
+ }
+}

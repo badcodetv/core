@@ -49,15 +49,15 @@ From the dialogue page https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC. Whispe
 - The student's sum is his guess ("say", and he admits he doesn't know prices): fifty × 365 × 100,000 ≈ £1.8 billion, short of the real £2.9 billion, so Bob is still nearer.
 - To trim to ~28 s: drop "Twenty seconds." and "Bob."
 
-### 3. The answer (38-46 s)
-- **Quizmaster** (DRAFT): "Two point nine billion pounds." Then: "One point eight billion of it on B&Bs and nightly lets."
+### 3. The answer (38-46 s): AGREED (Jack, 2026-11-20: "this works")
+- **Quizmaster**: "Two point nine billion pounds. One point eight billion of it on B&Bs and nightly lets."
 - The table looks at Bob's sheet. ⬜ how close Bob was, and what that does to the table.
 
-### 4. The way out (46-54 s): proposed, to rule on
-- **Plasterer** (DRAFT): "Every year. And at the end of it the council owns nothing."
-- **Banker** (DRAFT): "Spend it on homes the council keeps, and it's paid once."
-  - Conveys: the better choice, in the banker's own terms (so it isn't a lecture from the obvious side).
-  - 🔴 Not ruled: this is my proposal for the way out. Jack and Kai decide it.
+### 4. The way out (46-54 s): Jack's picks, 2026-11-20 (two of the suggested exchanges; the order is Claude's)
+- **Student**: "So they rent the same rooms every year? Why don't they just own them?"
+- **Banker**: "Now he gets it."
+- **Plasterer**: "Every year. And at the end nobody owns a single brick."
+- **Banker**: "So buy the bricks."
 - Logo.
 
 ## What this draft is trying to get right
