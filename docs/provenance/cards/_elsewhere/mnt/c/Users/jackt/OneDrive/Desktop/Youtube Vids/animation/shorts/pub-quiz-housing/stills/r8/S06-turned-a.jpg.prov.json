@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r8/S06-turned-a.jpg",
+ "made": "2026-11-20T14:51:51.726Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using image 1, change only the plasterer in the plaster-dusted camouflage jacket: he is twisted round in his chair with his head and shoulders turned fully towards the other table on the right, where the silver-haired woman and the red-bearded young man sit, glaring straight at them, his face in sharp three-quarter profile pointed at them and away from the camera, jaw set. His face stays the plasterer's face from image 2. Keep his teammates at his table, the gap of floor, the other table and everything else in image 1 exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P06v2.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P06v2.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "13d09f5a-cdf3-4ae0-89a4-8fa59511a633"
+}

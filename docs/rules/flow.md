@@ -216,6 +216,9 @@ On one short (five still rounds) almost every fault traced to process and wordin
 - **"The next table" merges with the subject's own table.** Twice an eavesdropping table came out as the same table (Jack:
   "this has happened twice now"). Stage the space: the subject's own teammates visible at his table, "a clear gap of bare
   floor", then "a different table two metres away" with its people named. One "neighbouring table" phrase is not enough.
+- **Start the still where the clip must end.** A still facing the camera, animated "he turns to glare at them", turned
+  and drifted back to the lens (Jack: "facing the camera, not the people eavesdropping"). Make the still already turned
+  to what he looks at, and write "keeps his face turned towards them the whole time".
 
 ## When a Character or reference image is attached, never describe the person's appearance — only what they are doing and their facial expression.
 
