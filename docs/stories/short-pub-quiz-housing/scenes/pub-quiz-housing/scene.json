@@ -4,7 +4,7 @@
  "title": "Pub Quiz: Housing",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing",
  "video": {
-  "aspect": "not ruled (9:16 offered)"
+  "aspect": "9:16"
  },
  "beats": [
   {
@@ -28,7 +28,7 @@
    "what": "The better choice, said at the table"
   }
  ],
- "flow_project": null,
+ "flow_project": "8fa2bbdc-7db6-49b9-893b-cc7b0bd06102",
  "dialogue": {
   "page": "https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC",
   "options": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/options.json",

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "Q1",
+    "idea": "Early evening, half-full room: quizmaster in a brown tweed three-piece and flat cap, square-on in front of the clock bar back, 35mm at chest height.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/Q42GVPmNvy4.jpg",
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+    ],
+    "prompt": "Portrait 9:16 photograph inside the Victorian bar in the attached photo: carved dark wood bar back with the round clock, a row of brass beer pumps with blank badges. A man stands in front of the bar, facing the camera, a microphone on a black lead in his right hand, a sheaf of plain white question cards in his left. He wears a brown tweed three-piece suit, waistcoat buttoned, a matching tweed flat cap, an open-collar cream shirt, chunky gold rings over black leather gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Its neck is tucked into his collar; cuffs cover his wrists. Early evening, a few drinkers behind him, warm glow from the globe lamp. 35mm lens at chest height. No lettering anywhere.\nThanks."
+  },
+  {
+    "id": "Q2",
+    "idea": "Late night, almost empty: quizmaster in a long camel overcoat over a chalk-stripe suit, leaning on the curved bar, low wide 24mm from stool height.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/Vpbp6pl6oGQ.jpg",
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+    ],
+    "prompt": "Portrait 9:16 photograph of the curved dark wood bar in the attached photo, green leather stools in the foreground, brass foot rail, worn floorboards. A man leans one elbow on the bar, body turned three-quarters to the camera, microphone on a black lead raised to his mouth, question cards fanned in the other hand. A small black speaker sits on the bar beside a half-drunk pint. He wears a long camel overcoat open over a charcoal chalk-stripe double-breasted suit and a black open-collar shirt, heavy signet rings over black leather gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Neck tucked into his collar, cuffs over wrists. Late night, room nearly empty, one regular hunched at the far end. Low 24mm lens at stool height. No lettering; chalkboard blank.\nThanks."
+  },
+  {
+    "id": "Q3",
+    "idea": "Mid-quiz in deep shadow: quizmaster in a black leather three-quarter coat and grey sharkskin suit, lit only by the red fringed lamp, tight 85mm, grainy.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/FxO0uSQDeJk.jpg",
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+    ],
+    "prompt": "Portrait 9:16 photograph in the dark corner from the attached photo: striped banquette, round wooden table, the red fringed lamp glowing. A man stands beside the table, framed from the waist up, head bowed to read a question card held close to the lamp, microphone on a lead at his chin. On the table: two answer sheets with unreadable scribbles, short pencils, a bag of crisps. He wears a black leather three-quarter coat over a slim grey sharkskin suit, a burgundy shirt with a long pointed collar worn open, gold rings over black leather gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Neck tucked into collar, cuffs over wrists. Red lamplight only; drinkers soft shapes behind. 85mm lens, high-ISO grain.\nThanks."
+  },
+  {
+    "id": "T1",
+    "idea": "Rainy weeknight in the panelled corner: the four huddled at a small table under the crystal wall lamps, calm eye-level 50mm, neighbours leaning in behind.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/u5KnPb6SOj0.jpg"
+    ],
+    "prompt": "Portrait 9:16 photograph in the wood-panelled corner from the attached photo, the two crystal wall lamps lit, the window black and streaked with rain, the framed pictures plain. Four men lean in round the small table, heads almost touching, one answer sheet in the middle. Left: a plasterer in his forties, work fleece and trousers dusted with dried white plaster. Right: a banker in his fifties, navy suit, tie loosened. Back left: a student of about twenty in a grey hoodie. Back right: a weathered man in his fifties in an old faded waterproof jacket, quiet, holding the pen. Pints and crisps around the sheet. Behind them a couple at the next table tilt their heads towards them. Ordinary faces, mixed ethnicities. 50mm lens at eye level, warm lamplight. No lettering.\nThanks."
+  },
+  {
+    "id": "T2",
+    "idea": "Packed, noisy room: shot over the shoulders of the eavesdropping next table, the four in focus beyond, picture-crowded walls, 35mm, busy.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/8A4ZnQ9vxYg.jpg"
+    ],
+    "prompt": "Portrait 9:16 photograph using only the room from the attached photo: dark wood walls crowded with framed pictures, low patterned ceiling, warm tungsten wall lamps; every sign plain dark wood, a small speaker on a stand in the far corner. Foreground, out of focus: the backs of two people at the next table, leaning towards the camera's subject. Beyond them, sharp: four men huddled round one small table, whispering over a single answer sheet. A plaster-dusted plasterer in his forties, a banker in his fifties with tie loosened, a student of about twenty in a hoodie, and a weathered man in his fifties in an old waterproof jacket gripping the pen. Pints, crisp packets, short pencils. Every other table full. New faces, mixed ethnicities. 35mm lens, busy and warm. No lettering.\nThanks."
+  },
+  {
+    "id": "T3",
+    "idea": "Last orders, on-camera flash: the four seen from slightly above at a small table by the green-stool bar, harsh snapshot light, room emptying.",
+    "refs": [
+      "/home/jackt/.cache/badcode-refs/pub-quiz-housing/Vpbp6pl6oGQ.jpg"
+    ],
+    "prompt": "Portrait 9:16 photograph by the curved dark wood bar from the attached photo, green leather stools pushed aside, a small round table set near the bar. Shot from slightly above, as if standing over them. Four men hunch over one answer sheet, heads together. The weathered man in his fifties in a cracked old waterproof jacket holds the pen; the plasterer in his forties, plaster dust dried on his sleeves, points at the sheet; the banker in his fifties, good suit, tie loose, cups his hand to whisper; the student of about twenty in a hoodie leans in. Empty glasses, crumpled crisp packets. At the next table one man turns his ear towards them. Late, room thinning. Direct on-camera flash, 28mm, hard shadows. No lettering; pump badges blank.\nThanks."
+  }
+]

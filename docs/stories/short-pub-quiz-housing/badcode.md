@@ -11,7 +11,12 @@ they know from their own life and work. The point: homelessness already costs bi
 instead of on homes anyone owns. State: script draft 1 ([script.md](./script.md)), jokes blank for Jack and Kai.
 
 ## Look
-Not decided — run story-style. Flow project: none yet.
+- Status: EXPLORING (round 1 stills). A proper old English pub (Jack, 2026-11-20: "use unsplash for what the pub looks like,
+  make it look like a proper english old pub"): dark wood, brass pumps, etched mirrors, low warm light; never neon, never
+  modern. Layout references: Unsplash photos in `<media>/reference/unsplash/` (credits in `scenes/pub-quiz-housing/refs.json`).
+- **The quizmaster is BadCode in the balaclava**, dressed in a Guy Ritchie-film-style outfit (Jack, 2026-11-20). In prompts,
+  describe the clothes only; never name a film, director, actor or character.
+Flow project: `8fa2bbdc-7db6-49b9-893b-cc7b0bd06102` (shown in Flow as "Nov 20 - 11:57"). Stills: Nano Banana 2.1, 9:16.
 
 ## Sound
 Not decided — run story-style. Every spoken line is an AI Studio voice; a Suno track is music and sound only.
@@ -26,8 +31,13 @@ Not decided — run story-style. Every spoken line is an AI Studio voice; a Suno
   newer year before posting.
 - Bob is the Camping character; his place at the table is Jack's ask (2026-11-20).
 
-## Library pieces in use
-- none yet
+## Library pieces in use (Jack, 2026-11-20)
+- **Real photo as the look:** an Unsplash photo is attached to each Flow call as the layout; the prompt says what happens in
+  it. New Flow pictures built from the photo, never an AI figure pasted into a real photo.
+- **Clean room:** prompts are written by a sealed writer from one brief file plus fresh web research (`scenes/pub-quiz-housing/cleanroom/`).
+- **The BadCode balaclava:** the quizmaster. Attach `docs/brand/balaclava/mask-reference.jpg` (staged under `~/.cache/`) and
+  paste "The balaclava exactly as in the attached image: no holes, no skin, gloves." White ring, red triangle over his left
+  eye (right of picture), gloves, no skin, no robot parts. Always say what he wears. Check the mask zoomed on every still.
 
 ## Where the detail is
 - [README.md](./README.md) (Jack's pitch), [script.md](./script.md), rulings [scenes/pub-quiz-housing/picks.md](./scenes/pub-quiz-housing/picks.md)

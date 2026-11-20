@@ -27,7 +27,7 @@ The next table along leans in to listen; the whispering is to stop them. ⬜ wha
 ## The beats (about 50 s)
 
 ### 1. The question (0-6 s)
-- **Quizmaster**, into the mic: reads the question. "Thirty seconds." The clock starts on the screen.
+- **Quizmaster** (BadCode in the balaclava, in a Guy Ritchie-film-style outfit: Jack, 2026-11-20), into the mic: reads the question. "Thirty seconds." The clock starts on the screen.
 - The table pulls in close. ⬜ the team name on their answer sheet.
 
 ### 2. The huddle (6-38 s): PICKED, take 1D (Jack, 2026-11-20: "1A combined with 1C")
@@ -35,18 +35,18 @@ From the dialogue page https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC. Whispe
 
 1. **Student** [writes on the sheet, pen in close-up]: "A hundred million? That's loads."
 2. **Plasterer** [crosses it out]: "More. I've done three of them B&B jobs for the council this year. Every room, every night."
-3. **Student** [on a beer mat]: "Every night… Say fifty quid a night. Times three-sixty-five. Times, I don't know, a hundred thousand rooms?" ⬜ the student doing sums on a beer mat.
+3. **Student** [on a beer mat]: "Every night… Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Times three-sixty-five. Times a hundred thousand rooms?" (Jack's line, 2026-11-20)
 4. **Student** [stares at the beer mat]: "That's billions. That can't be right."
-5. **Next table** leans in; the table goes silent until they lean back. ⬜ the eavesdroppers.
+5. **Next table** leans in. **Plasterer**: "Fuck off, get your own answers." They lean back. (Jack's line, 2026-11-20)
 6. **Quizmaster** [off]: "Twenty seconds."
 7. **Banker** [calm, not looking up]: "Nightly's the dearest way to buy anything. It's billions." ⬜ what the banker lets slip about himself.
 8. **Banker** [low]: "Bob."
-9. **Bob** [takes the pen, no hurry]: "I was in one. They paid by the night." ⬜ Bob's line, if any. 🔴 Invented: Jack to confirm against Bob's canon, or Bob only writes.
+9. **Bob** [takes the pen, no hurry]: "I know literally no one who's been in them." (Jack's line, 2026-11-20)
 10. **Bob** writes a number and turns the sheet so only the table sees.
 11. **Banker** reads it: a small nod.
 12. **Quizmaster**: "Pens down."
 
-- The student's sum is his guess ("say", "I don't know"): fifty × 365 × 100,000 ≈ £1.8 billion, short of the real £2.9 billion, so Bob is still nearer.
+- The student's sum is his guess ("say", and he admits he doesn't know prices): fifty × 365 × 100,000 ≈ £1.8 billion, short of the real £2.9 billion, so Bob is still nearer.
 - To trim to ~28 s: drop "Twenty seconds." and "Bob."
 
 ### 3. The answer (38-46 s)

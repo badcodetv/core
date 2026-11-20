@@ -1,0 +1,217 @@
+{
+ "title": "Pub Quiz: Housing Look Refs",
+ "eyebrow": "Pub Quiz: Housing · look references",
+ "heading": "Pub Quiz: Housing: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "old english pub interior",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "wwo7gsbx9eU",
+       "src": "unsplash/wwo7gsbx9eU.jpg",
+       "label": "a table with two glasses of wine on it · Mario Amé"
+      },
+      {
+       "id": "-orQIACGDLA",
+       "src": "unsplash/-orQIACGDLA.jpg",
+       "label": "a bar with a flag hanging from the ceiling · Stephanie Klepacki"
+      },
+      {
+       "id": "jyAG98eMoZw",
+       "src": "unsplash/jyAG98eMoZw.jpg",
+       "label": "a lamp sitting on top of a wooden bar · Stephanie Klepacki"
+      },
+      {
+       "id": "8A4ZnQ9vxYg",
+       "src": "unsplash/8A4ZnQ9vxYg.jpg",
+       "label": "Live music performance by two men in a traditional pub · Jonathan Borba"
+      },
+      {
+       "id": "TL0jo9ovyXo",
+       "src": "unsplash/TL0jo9ovyXo.jpg",
+       "label": "a dimly lit room with a wooden table and chairs · Lawrence Chismorie"
+      },
+      {
+       "id": "TA5bVI9qiLY",
+       "src": "unsplash/TA5bVI9qiLY.jpg",
+       "label": "People enjoying live music in a traditional irish pub · Jonathan Borba"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "traditional british pub bar",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Uz1ZeMJ2lsI",
+       "src": "unsplash/Uz1ZeMJ2lsI.jpg",
+       "label": "vintage bar station · Florencia Viadana"
+      },
+      {
+       "id": "-orQIACGDLA",
+       "src": "unsplash/-orQIACGDLA.jpg",
+       "label": "a bar with a flag hanging from the ceiling · Stephanie Klepacki"
+      },
+      {
+       "id": "jyAG98eMoZw",
+       "src": "unsplash/jyAG98eMoZw.jpg",
+       "label": "a lamp sitting on top of a wooden bar · Stephanie Klepacki"
+      },
+      {
+       "id": "2Y2rgC2SHZY",
+       "src": "unsplash/2Y2rgC2SHZY.jpg",
+       "label": "a group of people standing outside of a building · Grégory Dupont"
+      },
+      {
+       "id": "A7nAGuGUToI",
+       "src": "unsplash/A7nAGuGUToI.jpg",
+       "label": "people sitting on chair near the store during night time · Soroush Karimi"
+      },
+      {
+       "id": "6xHyLtoHnm4",
+       "src": "unsplash/6xHyLtoHnm4.jpg",
+       "label": "gold trophy on brown wooden table · Andrea Mininni"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "victorian pub wood panelling",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "H9AL2DtiaiE",
+       "src": "unsplash/H9AL2DtiaiE.jpg",
+       "label": "a lamp that is sitting on a table · Clay Banks"
+      },
+      {
+       "id": "o74pMRr4F0Y",
+       "src": "unsplash/o74pMRr4F0Y.jpg",
+       "label": "Intricate wooden paneling features a vintage clock · Ann Ann"
+      },
+      {
+       "id": "u5KnPb6SOj0",
+       "src": "unsplash/u5KnPb6SOj0.jpg",
+       "label": "Cozy booth seating with wood paneling and vintage decor · Ahmet Yüksek ✪"
+      },
+      {
+       "id": "Vpbp6pl6oGQ",
+       "src": "unsplash/Vpbp6pl6oGQ.jpg",
+       "label": "Traditional wooden bar with green leather stools and bottles · Jonathan Borba"
+      },
+      {
+       "id": "Q42GVPmNvy4",
+       "src": "unsplash/Q42GVPmNvy4.jpg",
+       "label": "Traditional pub bar with brass beer taps and wooden decor · Jonathan Borba"
+      },
+      {
+       "id": "1BjhKpdp7Og",
+       "src": "unsplash/1BjhKpdp7Og.jpg",
+       "label": "two chairs and a table in a room · Manel Mizyed"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "london pub interior night",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "t1-x9i8c10Y",
+       "src": "unsplash/t1-x9i8c10Y.jpg",
+       "label": "Two arched windows glow warmly on a dark brick building · Alex Lion"
+      },
+      {
+       "id": "h-ldS_q4nD8",
+       "src": "unsplash/h-ldS_q4nD8.jpg",
+       "label": "a bar with a lot of bottles on it · Kevin Grieve"
+      },
+      {
+       "id": "FxO0uSQDeJk",
+       "src": "unsplash/FxO0uSQDeJk.jpg",
+       "label": "A lamp sitting on top of a wooden table · Bodega"
+      },
+      {
+       "id": "eKRlFw4fLvs",
+       "src": "unsplash/eKRlFw4fLvs.jpg",
+       "label": "a group of people sitting at a table in front of a window · Metin Ozer"
+      },
+      {
+       "id": "PcdW64j7rZE",
+       "src": "unsplash/PcdW64j7rZE.jpg",
+       "label": "a restaurant with bikes parked outside of it · jana bemol"
+      },
+      {
+       "id": "oKeuVrrTjII",
+       "src": "unsplash/oKeuVrrTjII.jpg",
+       "label": "a building that has a sign in front of it · Albert Pataki"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "pub quiz night",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A7nAGuGUToI",
+       "src": "unsplash/A7nAGuGUToI.jpg",
+       "label": "people sitting on chair near the store during night time · Soroush Karimi"
+      },
+      {
+       "id": "TA5bVI9qiLY",
+       "src": "unsplash/TA5bVI9qiLY.jpg",
+       "label": "People enjoying live music in a traditional irish pub · Jonathan Borba"
+      },
+      {
+       "id": "AqnURyMlg7g",
+       "src": "unsplash/AqnURyMlg7g.jpg",
+       "label": "People sitting at tables in a dimly lit restaurant · Aaron Clark"
+      },
+      {
+       "id": "WVtlHXblhMk",
+       "src": "unsplash/WVtlHXblhMk.jpg",
+       "label": "A group of people sitting around a bar · Cord Allman"
+      },
+      {
+       "id": "3xDGWLk67IU",
+       "src": "unsplash/3xDGWLk67IU.jpg",
+       "label": "a group of people are gathered in a room · Cord Allman"
+      },
+      {
+       "id": "OHltxgC47p8",
+       "src": "unsplash/OHltxgC47p8.jpg",
+       "label": "Large yellow balloons with text float above a crowd · You Le"
+      }
+     ]
+    },
+    {
+     "slot": "ref-6",
+     "title": "country pub fireplace",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "QHdsm9kvKwI",
+       "src": "unsplash/QHdsm9kvKwI.jpg",
+       "label": "rectangular brown wooden table · Rich Tervet"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
