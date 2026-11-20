@@ -18,5 +18,29 @@
  "pub-quiz-bob": {
   "id": "voice_74om0juhzl5u",
   "desc": "A man in his fifties from the West Midlands, with a low voice, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-c": {
+  "id": "voice_g24m2n8fdcqs",
+  "desc": "A Black British man in his fifties from east London, with a deep, gravelly voice and a light London accent, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-d": {
+  "id": "voice_584qiyf2h9cj",
+  "desc": "A Black British man in his forties from south London, with a low, rough voice and a light London accent, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-e": {
+  "id": "voice_ray1c235bi3m",
+  "desc": "A Black British man in his sixties from north London, with a deep, husky voice and a light London accent, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-f": {
+  "id": "voice_dhmsepjvpkst",
+  "desc": "A Black British man in his fifties from London, with a gravelly baritone and a subtle London accent, who speaks plainly."
+ },
+ "pub-quiz-banker-a": {
+  "id": "voice_4ces9zm1rl3h",
+  "desc": "A banker in his fifties from Surrey, with a smooth, low voice, who speaks plainly."
+ },
+ "pub-quiz-banker-b": {
+  "id": "voice_9ck2xsq9c502",
+  "desc": "A banker in his forties from London, with a clipped, dry voice, who speaks plainly."
  }
 }
