@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r7/S06-b.jpg",
+ "made": "2026-11-20T14:45:03.180Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Portrait photograph across two separate pub tables. Foreground: the plasterer's own small round table, with the plasterer (his face exactly as in image 1, plaster-dusted grey camouflage jacket) sitting at it beside his teammates from image 2 (the man in the navy suit and the young man in the navy hoodie, both visible at his table, the answer sheet between them). The plasterer twists round in his chair to glare behind him, across a clear gap of bare floorboards, at a different round table two metres away, where a silver-haired woman in round glasses cups a hand to her ear and a young man with a red beard in a denim jacket leans out to listen. Green leather stools, dark wood bar. Late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "be8c2f3d-e998-4725-afa3-48441ccd571a"
+}

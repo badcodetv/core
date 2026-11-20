@@ -213,6 +213,9 @@ On one short (five still rounds) almost every fault traced to process and wordin
 - **Unnamed extras are cloned.** "Two other drinkers" came back as twins; describe each one.
 - **Never put a word that breaks a rule into the prompt.** "Open-collar shirt" on a no-skin character gave a bare chest.
 - Point at a reference by role ("the plasterer's face from image 1"), not "from the first image, the same face".
+- **"The next table" merges with the subject's own table.** Twice an eavesdropping table came out as the same table (Jack:
+  "this has happened twice now"). Stage the space: the subject's own teammates visible at his table, "a clear gap of bare
+  floor", then "a different table two metres away" with its people named. One "neighbouring table" phrase is not enough.
 
 ## When a Character or reference image is attached, never describe the person's appearance — only what they are doing and their facial expression.
 
