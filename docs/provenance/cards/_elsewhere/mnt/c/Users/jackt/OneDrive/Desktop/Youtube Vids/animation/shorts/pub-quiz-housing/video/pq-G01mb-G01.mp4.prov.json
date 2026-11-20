@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-G01mb-G01.mp4",
+ "made": "2026-11-20T18:06:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no movement at all. The pint glass stays fixed dead centre, never moving, turning, tilting or changing shape. Beer runs from the tap in a steady amber stream into the glass; over about six seconds the level rises, bubbles climbing, until it is full to the top with a clean, tight white head. Then the stream stops and everything is still. The pub behind stays soft and warm.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/G01.jpg",
+ "why": "rough cut 3 notes (Jack 2026-11-20): G01m try b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/G01.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "G01mb",
+  "frame": 17,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 7,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T17:59:03.981Z"
+ }
+}

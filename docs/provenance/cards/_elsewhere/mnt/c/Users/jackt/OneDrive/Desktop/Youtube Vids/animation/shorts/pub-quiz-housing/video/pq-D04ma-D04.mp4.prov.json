@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-D04ma-D04.mp4",
+ "made": "2026-11-20T18:03:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Fixed camera. The man asleep at the bar stays asleep throughout. In the first two seconds his cheek slowly slips off his palm, his head sags and drops onto the bar top with a small, dull thunk beside his pint, his arm sliding flat. Then he lies there, mouth open, breathing faintly; nothing else moves. The pint stays put. Real, small, heavy movement.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/D04.jpg",
+ "why": "rough cut 3 notes (Jack 2026-11-20): D04m try a",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/D04.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "D04ma",
+  "frame": 16,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 5,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T17:58:42.685Z"
+ }
+}

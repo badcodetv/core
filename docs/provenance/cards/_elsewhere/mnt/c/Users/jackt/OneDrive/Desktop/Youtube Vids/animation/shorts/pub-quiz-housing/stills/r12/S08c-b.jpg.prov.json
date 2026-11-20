@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r12/S08c-b.jpg",
+ "made": "2026-11-20T17:57:35.374Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Use his face from the portrait, and the room, the round table and the three other men from the pub photo. Vertical 9:16 medium close-up at the table: the older man in the olive waterproof jacket, short grey hair, white stubble, ruddy cheeks, his face about a third of the frame, lit by a direct on-camera flash. On the table in front of him lie the answer sheet, covered in faint unreadable pencil marks, and a short pencil. He has just raised his eyes from the sheet to the others across the table, mouth closed, calm and sure. The others sit out of focus at the frame edge. Dark wood panelling behind.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "rough cut 3 notes (Jack 2026-11-20): Bob not in the clip / ai slop / pint-glass logo",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/bob-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/bob-face.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "4f4bac06-acd3-493d-b38e-06c3fc084584"
+}

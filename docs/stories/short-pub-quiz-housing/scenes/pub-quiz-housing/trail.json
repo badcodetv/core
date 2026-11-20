@@ -81,5 +81,13 @@
   "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
   "what": "rough cut 3: edit fixes (drunk over the lines, shots broken up, whispers overlap, pub bed), beer outro; 51 s",
   "rebuild": "python3 scripts/shorts/pq_cut.py --round 3 --lines audio/lines-fast-pick --room && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>"
+ },
+ {
+  "at": "2026-11-20T19:02:42+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
+  "what": "rough cut 4: lip-synced talking clips, Bob close-up, drunk dozes off, pint-glass logo outro; 56 s",
+  "rebuild": "python3 scripts/shorts/pq_lipsync.py check && python3 scripts/shorts/pq_lipsync.py fit && python3 scripts/shorts/pq_cut.py --round 4 --lines audio/lines-fast-pick --room && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>"
  }
 ]

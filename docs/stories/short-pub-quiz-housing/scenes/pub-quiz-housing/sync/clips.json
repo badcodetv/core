@@ -1,0 +1,265 @@
+{
+ "pq-L02a-P02.mp4": {
+  "seg": "L02",
+  "miss": [
+   "low"
+  ],
+  "heard": "million that's loads",
+  "lag": 0.0,
+  "tracked": 0.0
+ },
+ "pq-L02b-P02.mp4": {
+  "seg": "L02",
+  "miss": [
+   "low"
+  ],
+  "heard": "a hundred million that's loads",
+  "lag": 0.0,
+  "tracked": 0.0
+ },
+ "pq-L02c-P02.mp4": {
+  "seg": "L02",
+  "miss": [
+   "low"
+  ],
+  "heard": "a hundred million that's loads",
+  "lag": 0.0,
+  "tracked": 0.08
+ },
+ "pq-L03a-P04.mp4": {
+  "seg": "L03",
+  "miss": [
+   "but",
+   "of",
+   "them"
+  ],
+  "heard": "more i've done three at mb b jobs for the council this year every room every night",
+  "lag": 0.5,
+  "tracked": 1.0
+ },
+ "pq-L03b-P04.mp4": {
+  "seg": "L03",
+  "miss": [
+   "but",
+   "of",
+   "them"
+  ],
+  "heard": "more i've done three at mb b jobs for the council this year every room every night",
+  "lag": 0.5,
+  "tracked": 1.0
+ },
+ "pq-L03c-P04.mp4": {
+  "seg": "L03",
+  "miss": [
+   "but"
+  ],
+  "heard": "more i've done three of them b b jobs for the council this year every room every night",
+  "lag": 0.5,
+  "tracked": 1.0
+ },
+ "pq-L04aa-P05.mp4": {
+  "seg": "L04a",
+  "miss": [
+   "only"
+  ],
+  "heard": "say quid a night i don't know how much things are",
+  "lag": -0.083,
+  "tracked": 1.0
+ },
+ "pq-L04ab-P05.mp4": {
+  "seg": "L04a",
+  "miss": [
+   "only"
+  ],
+  "heard": "say quid a night i don't know how much things are",
+  "lag": -0.083,
+  "tracked": 1.0
+ },
+ "pq-L04ac-P05.mp4": {
+  "seg": "L04a",
+  "miss": [
+   "only"
+  ],
+  "heard": "say quid a night i don't know how much things are",
+  "lag": -0.083,
+  "tracked": 1.0
+ },
+ "pq-L04ba-P05.mp4": {
+  "seg": "L04b",
+  "miss": [
+   "by"
+  ],
+  "heard": "i only buy cbd ramen suppositories every night rooms",
+  "lag": -0.25,
+  "tracked": 1.0
+ },
+ "pq-L04bb-P05.mp4": {
+  "seg": "L04b",
+  "miss": [
+   "by"
+  ],
+  "heard": "i only buy cbd ramen suppositories every night rooms",
+  "lag": -0.292,
+  "tracked": 1.0
+ },
+ "pq-L04bc-P05.mp4": {
+  "seg": "L04b",
+  "miss": [
+   "by"
+  ],
+  "heard": "i only buy cbd ramen suppositories every night rooms",
+  "lag": -0.25,
+  "tracked": 1.0
+ },
+ "pq-L06a-P06v5a.mp4": {
+  "seg": "L06",
+  "miss": [],
+  "heard": "fuck off get your own answers",
+  "lag": -0.458,
+  "tracked": 1.0
+ },
+ "pq-L06b-P06v5a.mp4": {
+  "seg": "L06",
+  "miss": [],
+  "heard": "fuck off get your own answers",
+  "lag": -0.5,
+  "tracked": 1.0
+ },
+ "pq-L06c-P06v5a.mp4": {
+  "seg": "L06",
+  "miss": [],
+  "heard": "fuck off get your own answers",
+  "lag": 0.083,
+  "tracked": 1.0
+ },
+ "pq-L08aa-P07.mp4": {
+  "seg": "L08a",
+  "miss": [],
+  "heard": "paying by the night is the dearest way to buy anything",
+  "lag": -0.083,
+  "tracked": 1.0
+ },
+ "pq-L08ab-P07.mp4": {
+  "seg": "L08a",
+  "miss": [],
+  "heard": "paying by the night is the dearest way to buy anything",
+  "lag": -0.083,
+  "tracked": 1.0
+ },
+ "pq-L08ac-P07.mp4": {
+  "seg": "L08a",
+  "miss": [],
+  "heard": "paying by the night is the dearest way to buy anything",
+  "lag": -0.083,
+  "tracked": 1.0
+ },
+ "pq-L08ba-P07.mp4": {
+  "seg": "L08b",
+  "miss": [],
+  "heard": "it's billions with a b keep up your morons",
+  "lag": -0.042,
+  "tracked": 1.0
+ },
+ "pq-L08bb-P07.mp4": {
+  "seg": "L08b",
+  "miss": [
+   "your"
+  ],
+  "heard": "it's billions with a b keep up you morons",
+  "lag": -0.042,
+  "tracked": 1.0
+ },
+ "pq-L08bc-P07.mp4": {
+  "seg": "L08b",
+  "miss": [
+   "your"
+  ],
+  "heard": "it's billions with a b keep up you morons",
+  "lag": -0.042,
+  "tracked": 1.0
+ },
+ "pq-L10a-S08c.mp4": {
+  "seg": "L10",
+  "miss": [],
+  "heard": "i know literally no one who's been in them",
+  "lag": -0.125,
+  "tracked": 1.0
+ },
+ "pq-L10b-S08c.mp4": {
+  "seg": "L10",
+  "miss": [],
+  "heard": "i know literally no one who's been in them",
+  "lag": -0.208,
+  "tracked": 1.0
+ },
+ "pq-L10c-S08c.mp4": {
+  "seg": "L10",
+  "miss": [],
+  "heard": "i know literally no one who's been in them",
+  "lag": -0.333,
+  "tracked": 1.0
+ },
+ "pq-L13a-P12.mp4": {
+  "seg": "L13",
+  "miss": [],
+  "heard": "so they rent the same rooms every year why don't they just own them",
+  "lag": -0.5,
+  "tracked": 1.0
+ },
+ "pq-L13b-P12.mp4": {
+  "seg": "L13",
+  "miss": [],
+  "heard": "so they rent the same rooms every year why don't they just own them",
+  "lag": -0.417,
+  "tracked": 1.0
+ },
+ "pq-L13c-P12.mp4": {
+  "seg": "L13",
+  "miss": [],
+  "heard": "so they rent the same rooms every year why don't they just own them",
+  "lag": -0.292,
+  "tracked": 1.0
+ },
+ "pq-L15a-P04.mp4": {
+  "seg": "L15",
+  "miss": [],
+  "heard": "every year and at the end nobody owns a single brick",
+  "lag": -0.125,
+  "tracked": 1.0
+ },
+ "pq-L15b-P04.mp4": {
+  "seg": "L15",
+  "miss": [],
+  "heard": "every year and at the end nobody owns a single brick",
+  "lag": -0.167,
+  "tracked": 1.0
+ },
+ "pq-L15c-P04.mp4": {
+  "seg": "L15",
+  "miss": [],
+  "heard": "every year and at the end nobody owns a single brick",
+  "lag": -0.125,
+  "tracked": 1.0
+ },
+ "pq-L16a-P12.mp4": {
+  "seg": "L16",
+  "miss": [],
+  "heard": "so buy the bricks",
+  "lag": -0.208,
+  "tracked": 1.0
+ },
+ "pq-L16b-P12.mp4": {
+  "seg": "L16",
+  "miss": [],
+  "heard": "so buy the bricks",
+  "lag": -0.375,
+  "tracked": 1.0
+ },
+ "pq-L16c-P12.mp4": {
+  "seg": "L16",
+  "miss": [],
+  "heard": "so buy the bricks",
+  "lag": -0.417,
+  "tracked": 1.0
+ }
+}

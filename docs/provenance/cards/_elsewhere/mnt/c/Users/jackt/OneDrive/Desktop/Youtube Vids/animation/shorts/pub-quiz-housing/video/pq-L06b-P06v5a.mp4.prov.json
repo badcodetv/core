@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-L06b-P06v5a.mp4",
+ "made": "2026-11-20T18:06:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Fixed camera. The bearded man in the plaster-spattered camouflage jacket, seated at left in profile, keeps his eyes on the red-bearded man in the denim jacket facing him and, about half a second in, whispers sharply and fast through barely parted lips. When the line ends his mouth shuts and he holds still. The red-bearded man and the grey-haired woman stay still. He whispers: Fuck off, get your own answers.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P06v5a.jpg",
+ "why": "lip-sync r4 (Jack 2026-11-20: \"fix the lip synccing\"): L06 try b, exact words, sized to the fast take",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P06v5a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "L06b",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T18:01:06.985Z"
+ }
+}

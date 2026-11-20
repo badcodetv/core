@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r12/G01-a.jpg",
+ "made": "2026-11-20T17:57:12.453Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Use the bar and its warm light from the pub photo. Vertical 9:16 product shot. One clear, straight-sided pint glass, empty and upright, stands dead centre on the dark polished wood bar, filling the middle of the frame, seen front-on from the glass's own height. A brass beer tap sits just above and behind it. The glass is spotless and completely plain all the way round, smooth bare glass. Shallow depth of field: the pub behind melts into warm amber blur. Pump badges plain and blank. Clean, still, crisp.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "rough cut 3 notes (Jack 2026-11-20): Bob not in the clip / ai slop / pint-glass logo",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "8de7d518-b515-4197-b4f1-9080f5368da4"
+}

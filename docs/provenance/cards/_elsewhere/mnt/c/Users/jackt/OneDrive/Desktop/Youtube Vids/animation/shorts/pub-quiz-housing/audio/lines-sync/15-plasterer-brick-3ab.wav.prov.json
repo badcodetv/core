@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/lines-sync/15-plasterer-brick-3ab.wav",
+ "made": "2026-11-20T18:26:55+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Every <short pause> year. And <short pause> at the end nobody owns a single brick.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "en-gb-advisor-5",
+  "style": "whispering, brisk",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-L13b-P12.mp4",
+ "made": "2026-11-20T18:05:03+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static camera. The young man in the dark navy hoodie at the centre, hands open in a puzzled shrug, looks at the man in the suit and, about half a second in, whispers quickly, lips clear. When the line ends he closes his mouth and holds still, hands where they are. The man in the suit and the man in the foreground hold almost still. He whispers: So they rent the same rooms every year? Why don't they just own them?",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P12.jpg",
+ "why": "lip-sync r4 (Jack 2026-11-20: \"fix the lip synccing\"): L13 try b, exact words, sized to the fast take",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P12.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "L13b",
+  "frame": 13,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 5,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T18:03:21.437Z"
+ }
+}

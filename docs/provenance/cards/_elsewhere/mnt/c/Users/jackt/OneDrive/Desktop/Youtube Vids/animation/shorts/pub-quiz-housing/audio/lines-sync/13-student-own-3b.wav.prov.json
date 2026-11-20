@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/lines-sync/13-student-own-3b.wav",
+ "made": "2026-11-20T18:26:56+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "So they rent the same rooms every year? <short pause> Why don't they just own them?",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_ivtrurh0qn32",
+  "style": "whispering, fast",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

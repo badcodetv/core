@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r4/line-16-banker-bricks.wav",
+ "made": "2026-11-20T19:01:27+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/pq_cut.py main4 (atempo)",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/lines-fast-pick/16-banker-bricks.wav",
+ "why": "lip-sync r4: the take and tempo pq_lipsync.py fitted to the clip",
+ "settings": {
+  "atempo": "0.97"
+ }
+}

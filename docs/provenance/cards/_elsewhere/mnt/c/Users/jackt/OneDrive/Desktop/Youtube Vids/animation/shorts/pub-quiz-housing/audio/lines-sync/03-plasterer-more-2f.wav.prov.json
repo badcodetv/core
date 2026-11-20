@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/lines-sync/03-plasterer-more-2f.wav",
+ "made": "2026-11-20T18:19:32+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "More. <long pause> I've done three of them B&B jobs for the council this year. <short pause> Every room, every night.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "en-gb-advisor-5",
+  "style": "whispering, very fast",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

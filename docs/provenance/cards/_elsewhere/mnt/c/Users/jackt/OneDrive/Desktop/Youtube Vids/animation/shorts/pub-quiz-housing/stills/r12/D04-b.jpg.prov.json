@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r12/D04-b.jpg",
+ "made": "2026-11-20T17:57:27.723Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Use his face, hair and clothes from the portrait, and the bar from the pub photo. Vertical 9:16 medium shot at the dark wooden bar, on-camera flash. The same sixty-three-year-old regular: thin sandy-grey comb-over, bushy grey eyebrows, big ears, red bulbous nose, grey stubble, brown corduroy jacket, mustard knitted tank top over a checked shirt. He sits on a green leather stool, asleep, elbow on the bar, cheek pushed up against his palm, eyes shut, mouth hanging open. A half-drunk pint stands by his elbow. Unposed and real, a tired man dozing. Bottles behind soft, their labels blank.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "rough cut 3 notes (Jack 2026-11-20): Bob not in the clip / ai slop / pint-glass logo",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/drunk-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/drunk-face.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "dc3a3fa1-fc95-4188-9720-14e3e27045a4"
+}

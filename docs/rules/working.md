@@ -224,6 +224,13 @@ another; if it happens, the images are in the Flow gallery (collect them, don't 
   still run one after another, never at once (the rule above); the parallel work is everything else.
 - **Fixed tool bugs stay fixed:** a new failure gets fixed and written into the engine's rules the same day.
 
+## Jack 2026-11-20: read the page's notes before EVERY rebuild, not once ("did you read the notes on the last one")
+
+On Pub Quiz: Housing I listed the timeline page's notes once (none yet), then built cuts 2 and 3 without looking again;
+Jack's three notes (the logo, the fall, Bob) sat unread for two rounds. **Before every rebuild or republish of a page,
+dump its notes** (scene-timeline "Rounds"), file each under the cut it was left on (match its `at` time to the publish
+times in trail.json), and answer each on the page.
+
 ## Jack 2026-11-20: I pick, Jack vetoes (after "I feel like I've been working on this same short all day")
 
 Every still, clip and voice take round: **Claude picks** the best option per slot, checks it (full size, frame by frame,
