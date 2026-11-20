@@ -201,6 +201,12 @@ Evidence and sources: `docs/google-flow/nano-banana-2.md` (section "A small refe
 
 ## Jack 2026-11-20 "fix all the mistakes and remember them": a cast built from a group shot needs a portrait per person first, and five prompt habits that cause most still faults
 
+🔴 **Portraits first, every time** (Jack, 2026-11-20 pm, "do this", after asking why one short took all day): the
+first Flow job of any story with recurring people is **one big portrait per character** (and per recurring extra, like a
+background running gag), before the first scene still. The famous-face and merged-character re-rolls were the biggest
+single cost on Pub Quiz: Housing (six still rounds); its drunk regular, made portrait-first the same evening, landed all
+three shots first try.
+
 On one short (five still rounds) almost every fault traced to process and wording, not pollution (all 35 prompts leak-checked):
 - **A close-up made from a group shot invents the face.** Faces in a wide or overhead group photo are tiny; a close-up
   built from it drifted to a famous actor twice (two different characters). Before any close-up or clip, make **one

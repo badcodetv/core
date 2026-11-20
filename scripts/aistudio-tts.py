@@ -92,7 +92,36 @@ def styled(transcript, args):
     with tempfile.NamedTemporaryFile(suffix=".wav") as t:
         t.write(base64.b64decode(audio[0]["data"])); t.flush()
         subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-i", t.name, "-ac", "1" if args.mono else "2", args.out], check=True)
+    # The recipe card here too (2026-11-20: styled takes had none, so prov.py check listed them all as uncarded).
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "provenance"))
+    from prov import write_card
+    write_card(args.out, kind="voice", engine="gemini-tts", tool="scripts/aistudio-tts.py", model=args.model,
+               prompt=transcript, inputs={"profile": "", "profile_file": None},
+               settings={"voice": args.voice, "style": args.style.strip(), "channels": 1 if args.mono else 2,
+                         "wrapper": "none (plain) + speech_metadata.style"})
     print(f"wrote {args.out} (style: {args.style.strip()})")
+
+
+GENAI_PY = os.path.expanduser("~/.venvs/genai/bin/python")
+
+
+def bootstrap():
+    """Run anywhere (2026-11-20: three failed runs in one session): read GEMINI_API_KEY from the repo's .env when it
+    is not exported, and re-run under the genai venv when google-genai is not importable here."""
+    if not os.environ.get("GEMINI_API_KEY"):
+        env = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env")
+        if os.path.exists(env):
+            for line in open(env):
+                k, _, v = line.strip().removeprefix("export ").partition("=")
+                if k == "GEMINI_API_KEY" and v:
+                    os.environ[k] = v.strip().strip("'\"")
+    try:
+        import google.genai  # noqa: F401
+    except ImportError:
+        if os.path.exists(GENAI_PY) and not os.environ.get("AISTUDIO_TTS_REEXEC"):  # the venv's python is a symlink to the system one, so compare by flag
+            os.environ["AISTUDIO_TTS_REEXEC"] = "1"
+            os.execv(GENAI_PY, [GENAI_PY, os.path.abspath(__file__), *sys.argv[1:]])
+        sys.exit(f"google-genai is not importable here, nor under {GENAI_PY}: pip install 'google-genai<2'")
 
 
 def main():
@@ -116,8 +145,9 @@ def main():
                          "AI Studio page wraps its Accent dropdown (the Bank Robbery recipe) instead of as an audio profile")
     args = ap.parse_args()
 
+    bootstrap()
     if not os.environ.get("GEMINI_API_KEY"):
-        sys.exit("GEMINI_API_KEY is not set")
+        sys.exit("GEMINI_API_KEY is not set (and not found in the repo's .env)")
 
     from google import genai
     from google.genai import types
@@ -189,5 +219,22 @@ def main():
     print(f"{args.out} — {'mono' if args.mono else 'stereo'} · {rate} Hz · {bits}-bit · {seconds:.2f}s")
 
 
+def run():
+    """No fixed pacing between calls on the paid key (Jack, 2026-11-20): a real 429 waits and retries instead."""
+    import time
+    for wait in (20, 40, 60, 0):
+        try:
+            return main()
+        except SystemExit:
+            raise
+        except Exception as e:  # noqa: BLE001
+            text = f"{getattr(e, 'code', '')} {e}"
+            if wait and ("429" in text or "RESOURCE_EXHAUSTED" in text):
+                print(f"429 from Google: waiting {wait}s, then retrying", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            raise
+
+
 if __name__ == "__main__":
-    main()
+    run()

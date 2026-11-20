@@ -224,6 +224,17 @@ another; if it happens, the images are in the Flow gallery (collect them, don't 
   still run one after another, never at once (the rule above); the parallel work is everything else.
 - **Fixed tool bugs stay fixed:** a new failure gets fixed and written into the engine's rules the same day.
 
+## Jack 2026-11-20: I pick, Jack vetoes (after "I feel like I've been working on this same short all day")
+
+Every still, clip and voice take round: **Claude picks** the best option per slot, checks it (full size, frame by frame,
+words heard), and carries straight on to the next stage; the picks page still goes up with every option and the pick
+marked, so Jack can overrule any of them. Don't stop and wait for a pick. Wait only on what is Jack's and Kai's by rule:
+the script and its jokes, the look and sound of a new story, money (Suno credits), the logo, and anything going public.
+**Why:** on Pub Quiz: Housing the rounds that waited for a pick (script, three voice rounds, six still rounds, five clip
+rounds) took the day; the evening's stages where Claude picked (stills → clips → cut) took under an hour.
+**How to apply:** say "my pick, overrule on the page" in the reply, and treat a later veto as a normal note for the next round.
+Setting a short's length up front was considered and left out (Jack: "might complicate things").
+
 ## Jack 2026-11-18: why prompts get polluted, and the check that runs before every send
 
 Jack: "why does the pollution stuff happen to the prompts… is there a way we can check it every time? Like, analyse the

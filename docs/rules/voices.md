@@ -5,7 +5,15 @@
 
 ## AI Studio TTS runs on a PAID key since 2026-09-30, so there is no 10-a-day free cap; never stop or wait a day for voice calls
 
-The Gemini / AI Studio TTS key in `.env` (`GEMINI_API_KEY`) is a **paid key** (Kai's call, 2026-09-30; docs/ai-studio/README.md "UPDATE 2026-09-30"). The free tier's 10-calls-a-day-per-model cap does **not** apply. Keep only the ~22 s pacing between calls.
+The Gemini / AI Studio TTS key in `.env` (`GEMINI_API_KEY`) is a **paid key** (Kai's call, 2026-09-30; docs/ai-studio/README.md "UPDATE 2026-09-30"). The free tier's 10-calls-a-day-per-model cap does **not** apply. ~~Keep only the ~22 s pacing between calls.~~
+**No pacing (Jack, 2026-11-20):** the 22 s gap was the free tier's 3-requests-a-minute limit, carried over after the key
+became paid. Run voice calls **in parallel**: four at once came back in 2 s with no 429 (2026-11-20). `scripts/aistudio-tts.py`
+waits and retries by itself on a real 429 (20, 40, 60 s).
+
+**The script sets itself up (2026-11-20):** it reads `GEMINI_API_KEY` from the repo's `.env` and re-runs under
+`~/.venvs/genai` when `google-genai` isn't importable, so a bare `python3 scripts/aistudio-tts.py …` works from any shell.
+Styled takes (`--style`) now write a recipe card too. Whisper (`~/.venvs/whisper`) needs `av<16`: av 19 broke
+faster-whisper 1.2.1's file decode (`metadata_errors`); pinned 2026-11-20.
 
 **Why:** On 2026-11-15 (Infinite Yous) I told Jack the day's voice calls were used up and offered "re-voice tomorrow", because the voice-casting skill still quoted the free cap. Jack: "why cant you use google ai studio, i thought that was paid for". He was right; 11+ calls that day had gone through with no 429. He asked me to remember it.
 
