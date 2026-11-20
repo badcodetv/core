@@ -39,7 +39,7 @@ From the dialogue page https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC. Whispe
 4. **Student** [stares at the beer mat]: "That's billions. That can't be right."
 5. **Next table** leans in. **Plasterer**: "Fuck off, get your own answers." They lean back. (Jack's line, 2026-11-20)
 6. **Quizmaster** [off]: "Twenty seconds."
-7. **Banker** [calm, not looking up]: "Nightly's the dearest way to buy anything. It's billions." ⬜ what the banker lets slip about himself.
+7. **Banker** [doesn't look up, like he's explaining it to children]: "Paying by the night is the dearest way to buy anything. It's billions with a B. Keep up, you morons." (Jack's line, 2026-11-20) ⬜ what the banker lets slip about himself (still open).
 8. **Banker** [low]: "Bob."
 9. **Bob** [takes the pen, no hurry]: "I know literally no one who's been in them." (Jack's line, 2026-11-20)
 10. **Bob** writes a number and turns the sheet so only the table sees.

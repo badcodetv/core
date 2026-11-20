@@ -14,6 +14,9 @@ instead of on homes anyone owns. State: script draft 1 ([script.md](./script.md)
 - Status: EXPLORING (round 1 stills). A proper old English pub (Jack, 2026-11-20: "use unsplash for what the pub looks like,
   make it look like a proper english old pub"): dark wood, brass pumps, etched mirrors, low warm light; never neon, never
   modern. Layout references: Unsplash photos in `<media>/reference/unsplash/` (credits in `scenes/pub-quiz-housing/refs.json`).
+- **Picked (Jack, 2026-11-20):** quizmaster **Q1-a-fix-a** (brown tweed three-piece, tweed flat cap, navy roll-neck, gold
+  rings over black gloves, navy mask; the Victorian bar with the clock); the table **T3-a-mix-a** (last orders, on-camera flash,
+  from slightly above, the green-stool bar; a mixed table). Files in `<media>/stills/r1/` and `r2/`.
 - **The quizmaster is BadCode in the balaclava**, dressed in a Guy Ritchie-film-style outfit (Jack, 2026-11-20). In prompts,
   describe the clothes only; never name a film, director, actor or character.
 Flow project: `8fa2bbdc-7db6-49b9-893b-cc7b0bd06102` (shown in Flow as "Nov 20 - 11:57"). Stills: Nano Banana 2.1, 9:16.
