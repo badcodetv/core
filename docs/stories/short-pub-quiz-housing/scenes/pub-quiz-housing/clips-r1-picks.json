@@ -2,8 +2,35 @@
  "title": "Pub Quiz Clips",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · clips round 1",
  "heading": "The clips: pick one per shot",
- "intro": "Two motions per shot, 8 s each, from the stills I picked (your \"you pick and start the clips\"). Faces, masks and the room checked at the first, middle and last frame: all hold. The sound here is Flow's own; your recorded voices replace it in the cut. Pick one per shot, or note a change.",
+ "intro": "Round 2: shot 6 restaged on two separate tables. Pick one.",
  "sections": [
+  {
+   "h": "Round 2: shot 6 on two tables",
+   "lede": "Your other eleven picks are kept (folded below).",
+   "groups": [
+    {
+     "slot": "clip-06-r2",
+     "round": 2,
+     "title": "6. Eavesdroppers, restaged",
+     "line": "Your note: \"the plasterer should be looking at another table, not the same table he is on\". Now his teammates sit at his table, a gap of floor, then the other table; he turns to glare at it. His beard reads a little lighter while he moves.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "06c",
+       "src": "clips/pq-06c-P06v2.mp4",
+       "label": "c: full turn, they recoil",
+       "warn": ""
+      },
+      {
+       "id": "06d",
+       "src": "clips/pq-06d-P06v2.mp4",
+       "label": "d: side glance, quiet threat",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Clips",
    "lede": "",
@@ -26,7 +53,8 @@
        "label": "b: The listeners react",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-02",
@@ -46,7 +74,8 @@
        "label": "b: Whisper, plasterer glances over",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-03",
@@ -66,7 +95,8 @@
        "label": "b: Writes, taps, lifts away",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-04",
@@ -86,7 +116,8 @@
        "label": "b: Crosses out, looks up",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-05",
@@ -106,7 +137,8 @@
        "label": "b: Taps figures, glances up",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-06",
@@ -126,7 +158,8 @@
        "label": "b: Side glance, quiet threat",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-07",
@@ -146,7 +179,8 @@
        "label": "b: Turns glass, lip curls",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-08",
@@ -166,7 +200,8 @@
        "label": "b: Heads turn to watch",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-09",
@@ -186,7 +221,8 @@
        "label": "b: Sheet tilted, pressed lips",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-10",
@@ -206,7 +242,8 @@
        "label": "b: Mic flourish, head bows",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-11",
@@ -226,7 +263,8 @@
        "label": "b: Young man leans in",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "clip-12",
@@ -246,9 +284,11 @@
        "label": "b: Shrug, suit turns fully",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }
- ]
+ ],
+ "round": 2
 }
