@@ -57,5 +57,13 @@
   "url": "https://claude.ai/artifact/GR3C3oCEkc28RN9oKpQoCw",
   "what": "clips round 1: 12 shots x 2 motions",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing/clips-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-20T15:44:48+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
+  "what": "rough cut 1: twelve picked clips + 16 voice lines, 98 s",
+  "rebuild": "python3 scripts/shorts/pq_cut.py --round 1 && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>"
  }
 ]
