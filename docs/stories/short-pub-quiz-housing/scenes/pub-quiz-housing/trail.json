@@ -25,5 +25,13 @@
   "url": "https://claude.ai/artifact/GSaZgWX1btP21dy3b3iDar",
   "what": "stills round 1: quizmaster x3, table x3 (clean room, Unsplash layouts), mask fixes",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing/stills-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-20T12:42:23+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/QJzVgufqaftKGgZQMZnpwo",
+  "what": "voice casting round 1: 5 roles x 4 plain voices",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-pub-quiz-housing/voices/picks.json <out.html>"
  }
 ]
