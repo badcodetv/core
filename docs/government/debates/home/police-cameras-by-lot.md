@@ -1,5 +1,15 @@
 # Police Cameras, Tested First (home/police-cameras-by-lot)
 
+## 2026-11-20 · PR #29
+
+**Opposition:** Your new rule waits indefinitely for enough volunteer forces before any of the trial starts. That also delays the outside reading of arrests and public answers for match-only arrests. Give recruitment a deadline and a fallback for testing those safeguards separately, so gathering enough forces to test the vans does not hold up checking police conduct.
+**Answer (Home Secretary):** Right: a safeguard shouldn't wait on a headcount of forces. Conceded. Forces now have six months from the code becoming law to volunteer, and the first force starts by then. If that's too few for the crime-solved test, the safeguard lines start anyway in every force that volunteered: wrong person, match alone (with the outside reading and the public answer for each breach) and deletions, judged on their own fail numbers. Crime solved is dropped from the test, the review says so, and no new van is bought until a test of that size can run. The law's deletions and the right to a human at the stop never waited: every force has them from day one.
+**Outcome:** Conceded: test.where, test.measure, test.by, fails_if and stop, this commit (`against` and `answer` keep the older standing point on match-alone arrests)
+
+**Statistician:** the test now has no date. "The trial doesn't start until enough do" means the start, the two-year test and the stop date can all slip forever. The number of forces needed may also be more than volunteer, or more than the 43 forces in England and Wales can supply. Fix: a recruitment deadline, plus what runs if it is missed. For example, the safeguard lines (wrong person, match alone, deletions) start in the forces that volunteered, each against its own before, and crime solved is dropped from the test, and said so.
+**Answer (Home Secretary):** Taken, as you wrote it. Forces have six months from the code becoming law to volunteer, and the first force starts by then, so the test and the stop date have dates. If too few volunteer to size the crime-solved test, the safeguard lines (wrong person, match alone, deletions) start then in every force that did, judged on their own fail numbers; crime solved is dropped from the test and the review says so; no new van is bought; a pass takes the code national without new vans. And the 43 may not stay 43 (the Home Office announced about 200 Local Police Commands on 18 November), so forces are counted as they stand on the day of the draw.
+**Outcome:** Conceded: test.where, test.measure, test.by, fails_if and stop, this commit
+
 ## 2026-11-19 · PR #29
 
 **Opposition:** No strong case against this revision: expansion now requires improved charges or summonses across all named crime types beyond chance, so camera involvement alone cannot pass it.
