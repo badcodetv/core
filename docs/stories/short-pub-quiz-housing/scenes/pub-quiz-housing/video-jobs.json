@@ -1,0 +1,172 @@
+{
+ "extra": [
+  {
+   "key": "01a",
+   "n": 1,
+   "still": "P01",
+   "motion": "The camera does not move. The quizmaster at the bar holds the microphone close to his face and slowly lifts the white cards a few centimetres, tilting his head down toward them as if reading. Partway through he raises the cards slightly toward the room. The seated drinkers keep their faces turned up to him, almost still. A candle flame flickers gently on the table. Sound: a quiet pub murmur and the clink of glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Quizmaster reads, card lifts (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "01b",
+   "n": 1,
+   "still": "P01",
+   "motion": "The camera does not move. The quizmaster stands still at the bar, microphone at his face. The grey-bearded man in the foreground slowly rubs his chin with his fingers, thinking. The woman on the right tilts her head a little and narrows her eyes, listening hard. Everyone else holds almost still, looking up at the quizmaster. A candle flame flickers gently on the table. Sound: a quiet pub murmur and the clink of glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: The listeners react (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "02a",
+   "n": 2,
+   "still": "P02",
+   "motion": "The camera does not move. The young man in the hoodie, front right, leans a little closer over the answer sheet. About half a second in he whispers once, softly: \"A hundred million? That's loads.\" His lips move only to these words, then close. The other three stay hunched over the sheet, almost still. Froth settles slowly in the pint beside him. Sound: his whisper and a quiet pub murmur. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Hoodie whispers, others still (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "02b",
+   "n": 2,
+   "still": "P02",
+   "motion": "The camera does not move. About half a second in, the young man in the hoodie whispers once, eyebrows raised: \"A hundred million? That's loads.\" His lips move only to these words, then close. As he finishes, the man in the camouflage jacket shifts his eyes toward him, and the man in the olive waterproof stops his pen above the sheet. The man in the suit holds still. Froth settles slowly in the pint. Sound: his whisper and a quiet pub murmur. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Whisper, plasterer glances over (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "03a",
+   "n": 3,
+   "still": "P03",
+   "motion": "The camera does not move. Seen from directly above, the hand in the olive sleeve moves the pencil in small, careful strokes on one line of the answer sheet, writing a short scrawl, then rests still on the paper. The sheet stays flat and in place. A thin film of foam slides slowly down inside the empty glass. Shot at 24fps with a 180-degree shutter. Sound: a quiet pub murmur, glasses, the faint scratch of pencil. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Slow careful pencil strokes (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "03b",
+   "n": 3,
+   "still": "P03",
+   "motion": "The camera does not move. Seen from directly above, the hand in the olive sleeve writes a quick scrawl on one line of the answer sheet, taps the pencil twice on the paper, then lifts the hand a few centimetres and holds it there. The sheet stays flat and in place. A thin film of foam slides slowly down inside the empty glass. Shot at 24fps with a 180-degree shutter. Sound: a quiet pub murmur, glasses, the scratch of pencil. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Writes, taps, lifts away (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "04a",
+   "n": 4,
+   "still": "P04",
+   "motion": "The camera does not move. The plasterer draws two firm pencil lines across the figure on the sheet, eyes staying down. About half a second in he whispers once, low and certain: \"More. I've done three of them B&B jobs for the council this year. Every room, every night.\" His lips move only to these words, then close. The man in the background holds still. Bubbles rise slowly in the pint. Shot at 24fps with a 180-degree shutter. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Eyes down, firm whisper (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "04b",
+   "n": 4,
+   "still": "P04",
+   "motion": "The camera does not move. The plasterer strikes the pencil hard across the figure on the sheet, then raises his eyes toward the left of frame, at the table. About half a second in he whispers once, insistent: \"More. I've done three of them B&B jobs for the council this year. Every room, every night.\" His lips move only to these words, then close. The background man holds still. Bubbles rise in the pint. Shot at 24fps with a 180-degree shutter. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Crosses out, looks up (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "05a",
+   "n": 5,
+   "still": "P05",
+   "motion": "The camera does not move. The young man in the hoodie writes small figures on the beer mat with the blue pen, frowning in concentration. About half a second in he whispers once, slowly: \"Say fifty quid a night. Times three-sixty-five. Times a hundred thousand rooms?\" His lips move only to these words, then close. The plasterer in the foreground holds still, watching the mat. Froth settles slowly in the pint. Shot at 24fps with a 180-degree shutter. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Writing sums, whispering (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "05b",
+   "n": 5,
+   "still": "P05",
+   "motion": "The camera does not move. The young man in the hoodie taps the pen on the beer mat at each figure. About half a second in he whispers once, counting: \"Say fifty quid a night. Times three-sixty-five. Times a hundred thousand rooms?\" His lips move only to these words, then close, and his eyes lift up toward the plasterer, unsure. The plasterer holds still. Froth settles slowly in the pint. Shot at 24fps with a 180-degree shutter. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Taps figures, glances up (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "06a",
+   "n": 6,
+   "still": "P06",
+   "motion": "The camera does not move. The plasterer turns his head over his shoulder toward the woman and the bearded man behind him and, about half a second in, whispers once, hard and low: \"Fuck off, get your own answers.\" His lips move only to these words, then close. The woman drops her hand from her ear and both of them lean back. The far-right man holds still. Bubbles rise in the woman's pint. Shot at 24fps with a 180-degree shutter. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Full turn, they recoil (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "06b",
+   "n": 6,
+   "still": "P06",
+   "motion": "The camera does not move. The plasterer keeps his body still and slides only his eyes and chin toward the woman and the bearded man behind him. About half a second in he whispers once, flat and cold: \"Fuck off, get your own answers.\" His lips move only to these words, then close. The woman slowly lowers her hand from her ear and eases back; the bearded man sits back, eyes on his pint. The far-right man holds still. Bubbles rise in the woman's pint. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Side glance, quiet threat (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "07a",
+   "n": 7,
+   "still": "P07",
+   "motion": "The camera does not move. The man in the suit keeps his eyes down on his pint. About half a second in he whispers once, with a weary sneer: \"Paying by the night is the dearest way to buy anything. It's billions with a B. Keep up, you morons.\" His lips move only to these words, then close. The shoulder in the foreground holds still. Bubbles rise slowly in his lager. Sound: his whisper and a quiet pub murmur. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Eyes on pint, flat sneer (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "07b",
+   "n": 7,
+   "still": "P07",
+   "motion": "The camera does not move. The man in the suit slowly turns his pint a little on the table, eyes on the beer. About half a second in he whispers once, lip curling: \"Paying by the night is the dearest way to buy anything. It's billions with a B. Keep up, you morons.\" His lips move only to these words, then close, and he gives a small scornful breath through his nose. The foreground shoulder holds still. Bubbles rise in his lager. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Turns glass, lip curls (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "08a",
+   "n": 8,
+   "still": "P08",
+   "motion": "The camera does not move. The man in the olive waterproof slowly slides the answer sheet toward himself with his left hand and settles the pen on it, calm and unhurried. The other three at the table go completely still, their eyes fixed on his hands. The man at the far table holds still. Froth settles slowly in the pint beside the young man. Sound: a quiet pub murmur and the clink of glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Draws sheet in, all still (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "08b",
+   "n": 8,
+   "still": "P08",
+   "motion": "The camera does not move. The man in the olive waterproof draws the sheet a few centimetres closer and holds the pen over it. The man in the camouflage jacket and the man in the suit slowly turn their heads to watch him, then hold perfectly still. The young man and the man at the far table stay still. Froth settles slowly in the pint beside the young man. Sound: a quiet pub murmur and the clink of glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Heads turn to watch (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "09a",
+   "n": 9,
+   "still": "P09",
+   "motion": "The camera does not move. Seen over his shoulder, the man in the olive waterproof turns the answer sheet round on the table so it faces the man in the suit. The man in the suit closes his mouth, drops his eyes to the sheet, reads, and gives one small, slow, grudging nod. The man in the camouflage jacket and the young man hold still. Bubbles rise slowly in the suit's pint. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Sheet turned, slow nod (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "09b",
+   "n": 9,
+   "still": "P09",
+   "motion": "The camera does not move. Seen over his shoulder, the man in the olive waterproof tilts the answer sheet up toward the man in the suit. The man in the suit closes his mouth, leans in a little, reads with narrowed eyes, then presses his lips together and dips his head once in a reluctant nod. The man in the camouflage jacket and the young man hold still. Bubbles rise slowly in the suit's pint. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Sheet tilted, pressed lips (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "10a",
+   "n": 10,
+   "still": "P10",
+   "motion": "The camera does not move. The quizmaster holds the microphone at his face and raises the white card toward the room for a moment, a firm signal. Then he brings the card in front of him and tilts his head down toward it, as if reading, the microphone staying close. His body otherwise stays steady. The globe lamp's glow flickers softly at the top left. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Card held out, then read (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "10b",
+   "n": 10,
+   "still": "P10",
+   "motion": "The camera does not move. The quizmaster lowers the microphone a few centimetres, then lifts it back to his face with a small, theatrical flourish of the gloved hand. He brings the white card up and bows his head slightly toward it, as if reading, holding that pose. His body otherwise stays steady. The globe lamp's glow flickers softly at the top left. Shot at 24fps with a 180-degree shutter. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Mic flourish, head bows (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "11a",
+   "n": 11,
+   "still": "P11",
+   "motion": "The camera does not move. Seen from above, the man in the suit closes his mouth and slowly lowers his pint to the table. Then all four hold almost perfectly still, eyes fixed on the answer sheet, the olive-sleeved hand resting flat on it. The man at the top right holds still. Froth settles slowly in the young man's pint. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Pint lowered, table freezes (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "11b",
+   "n": 11,
+   "still": "P11",
+   "motion": "The camera does not move. Seen from above, the young man in the hoodie slowly leans closer to the answer sheet, staring at it. The man in the suit closes his mouth and holds his pint still in mid-air. The man in the olive waterproof and the man in the camouflage jacket stay frozen, eyes on the sheet. The man at the top right holds still. Froth settles slowly in the young man's pint. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Young man leans in (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "12a",
+   "n": 12,
+   "still": "P12",
+   "motion": "The camera does not move. The young man in the hoodie keeps his hands open in front of him. About half a second in he whispers once, puzzled: \"So they rent the same rooms every year? Why don't they just own them?\" His lips move only to these words, then close. The man in the suit keeps his eyes on him and narrows them slightly. The plasterer holds still. Bubbles rise in the suit's pint. Shot at 24fps with a 180-degree shutter. The camera does not move.\nThanks.",
+   "why": "clips r1, option a: Open hands, suit stares (Jack: you pick and start the clips)"
+  },
+  {
+   "key": "12b",
+   "n": 12,
+   "still": "P12",
+   "motion": "The camera does not move. About half a second in, the young man in the hoodie whispers once, lifting his open hands in a shrug: \"So they rent the same rooms every year? Why don't they just own them?\" His lips move only to these words, then close. The man in the suit turns his head and shoulders fully toward him, jaw tightening, lips shut. The plasterer holds still. Bubbles rise slowly in the suit's pint. Shot at 24fps with a 180-degree shutter. The camera does not move.\nThanks.",
+   "why": "clips r1, option b: Shrug, suit turns fully (Jack: you pick and start the clips)"
+  }
+ ]
+}
