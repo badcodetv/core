@@ -1,0 +1,174 @@
+{
+ "title": "Pub Quiz Voices",
+ "eyebrow": "BadCode Shorts · Pub Quiz: Housing · voices round 1",
+ "heading": "Cast the voices",
+ "intro": "Four voices per role, each reading that role's real lines plain: no accent, age or acting in the prompt (your \"uncanny valley\" rule). The accent is the voice itself: Google library voices, plus five designed from one plain sentence (London, Essex, West Midlands) because the library has no London voice. These are normal speech; the huddle lines get whispered once the voices are picked. Pick one per role, or note \"older\", \"less posh\" and so on.",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "voice-quizmaster",
+     "title": "The quizmaster (BadCode)",
+     "line": "How much did councils in England spend on temporary accommodation last year? Nearest wins. Thirty seconds. / Twenty seconds. / Pens down. / Two point nine billion pounds. One point eight billion of it on B&Bs and nightly lets.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "voice_7dh6mksbnzz8",
+       "src": "casting/quizmaster-voice_7dh6mksbnzz8.mp3",
+       "label": "a: designed: east London, forties, low",
+       "warn": ""
+      },
+      {
+       "id": "voice_saimern1juve",
+       "src": "casting/quizmaster-voice_saimern1juve.mp3",
+       "label": "b: designed: south London, fifties, deep and rough",
+       "warn": "Whisper heard \"nearest\" and \"pens\" oddly: check by ear"
+      },
+      {
+       "id": "en-gb-concierge-10",
+       "src": "casting/quizmaster-en-gb-concierge-10.mp3",
+       "label": "c: library: Liverpool, 64, deep",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-podcaster-9",
+       "src": "casting/quizmaster-en-gb-podcaster-9.mp3",
+       "label": "d: library: Manchester, 45",
+       "warn": "Whisper heard \"How much did\" as \"Our watch\": check by ear"
+      }
+     ]
+    },
+    {
+     "slot": "voice-student",
+     "title": "The student",
+     "line": "A hundred million? That's loads. / Every night... Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Times three-sixty-five. Times a hundred thousand rooms? / That's billions. That can't be right. / So they rent the same rooms every year? Why don't they just own them?",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "voice_ivtrurh0qn32",
+       "src": "casting/student-voice_ivtrurh0qn32.mp3",
+       "label": "a: designed: south London, twenty, light",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-csagent-13",
+       "src": "casting/student-en-gb-csagent-13.mp3",
+       "label": "b: library: Bristol, 22",
+       "warn": "Whisper heard \"quid\" as \"good\": check by ear"
+      },
+      {
+       "id": "en-gb-concierge-9",
+       "src": "casting/student-en-gb-concierge-9.mp3",
+       "label": "c: library: Newcastle, 25",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-podcaster-4",
+       "src": "casting/student-en-gb-podcaster-4.mp3",
+       "label": "d: library: Winchester, 22",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-plasterer",
+     "title": "The plasterer",
+     "line": "More. I've done three of them B&B jobs for the council this year. Every room, every night. / Fuck off, get your own answers. / Every year. And at the end nobody owns a single brick.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "voice_h471s9l7pwni",
+       "src": "casting/plasterer-voice_h471s9l7pwni.mp3",
+       "label": "a: designed: Essex plasterer, forties, low",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-tutor-2",
+       "src": "casting/plasterer-en-gb-tutor-2.mp3",
+       "label": "b: library: Newcastle, 42",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-csagent-11",
+       "src": "casting/plasterer-en-gb-csagent-11.mp3",
+       "label": "c: library: Liverpool, 36",
+       "warn": "Whisper heard \"brick\" as \"break\": check by ear"
+      },
+      {
+       "id": "en-gb-advisor-5",
+       "src": "casting/plasterer-en-gb-advisor-5.mp3",
+       "label": "d: library: Manchester, 48",
+       "warn": "Whisper heard \"brick\" as \"break\": check by ear"
+      }
+     ]
+    },
+    {
+     "slot": "voice-banker",
+     "title": "The banker",
+     "line": "Paying by the night is the dearest way to buy anything. It's billions with a B. Keep up, you morons. / Bob. / Now he gets it. / So buy the bricks.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-advisor-8",
+       "src": "casting/banker-en-gb-advisor-8.mp3",
+       "label": "a: library: Winchester, 42, crisp",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-tutor-8",
+       "src": "casting/banker-en-gb-tutor-8.mp3",
+       "label": "b: library: Winchester, 49",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-advisor-9",
+       "src": "casting/banker-en-gb-advisor-9.mp3",
+       "label": "c: library: Glasgow, 50",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-advisor-3",
+       "src": "casting/banker-en-gb-advisor-3.mp3",
+       "label": "d: library: Bristol, 46",
+       "warn": "Whisper heard \"now he gets it\" as \"now we guess it\": check by ear"
+      }
+     ]
+    },
+    {
+     "slot": "voice-bob",
+     "title": "Bob",
+     "line": "I know literally no one who's been in them.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "voice_74om0juhzl5u",
+       "src": "casting/bob-voice_74om0juhzl5u.mp3",
+       "label": "a: designed: West Midlands, fifties, low",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-concierge-12",
+       "src": "casting/bob-en-gb-concierge-12.mp3",
+       "label": "b: library: Newcastle, 57",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-csagent-14",
+       "src": "casting/bob-en-gb-csagent-14.mp3",
+       "label": "c: library: Bristol, 57",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-assistant-5",
+       "src": "casting/bob-en-gb-assistant-5.mp3",
+       "label": "d: library: Glasgow, 62",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
