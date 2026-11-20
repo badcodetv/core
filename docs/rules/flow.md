@@ -222,6 +222,13 @@ On one short (five still rounds) almost every fault traced to process and wordin
 - **Name the one person he looks at, and have them look back.** "Turned to the other table" let his eyes land between two
   people (Jack: "hes not facing the ginger man"). Write who the eyes lock on ("eye to eye with the red-bearded young man")
   and make that person look back, in the still first.
+- **When the layout is wrong, regenerate it; never edit it.** Three rounds of "change only where he looks… keep everything
+  else exactly the same" kept a layout where the other man sat at the frame edge, behind and below, so the eyeline could
+  never reach him (Jack: "still not facing him why is this happening… fix this bullshit"). An edit keeps the geometry;
+  a clip keeps the still's geometry. Fix the staging in a fresh still: e.g. a side-on two-shot, both faces in profile at
+  the same height, facing each other.
+- **Judge eyelines and facing at full size, never on a contact-sheet thumbnail.** I passed shot 6 twice from 200-px
+  thumbnails; at 540 px it was plain he was looking at the woman, not the man.
 
 ## When a Character or reference image is attached, never describe the person's appearance — only what they are doing and their facial expression.
 

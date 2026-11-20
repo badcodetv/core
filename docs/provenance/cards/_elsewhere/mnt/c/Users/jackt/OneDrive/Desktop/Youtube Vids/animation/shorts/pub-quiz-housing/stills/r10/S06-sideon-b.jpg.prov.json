@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r10/S06-sideon-b.jpg",
+ "made": "2026-11-20T15:14:00.307Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Side-on portrait photograph at seated eye level, the camera looking across the gap between two separate round pub tables. On the left, the plasterer (his face from image 1, plaster-dusted grey camouflage jacket) sits at his own table, body and face turned to the right, in sharp profile. On the right, the red-bearded young man in the denim jacket (as in image 3) sits at the other table, body and face turned to the left, in profile, facing the plasterer. Their two faces are at the same height, about two metres apart, eyes locked on each other, the plasterer glaring, the young man caught out. Behind the young man the silver-haired woman in round glasses watches. A strip of bare floorboards between the tables. Dark wood pub behind, late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r9/S06-ginger-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 3
+ },
+ "source_id": "4ce04246-23ce-4480-b05f-3ed7a560f33e"
+}
