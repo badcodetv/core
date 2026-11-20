@@ -73,5 +73,13 @@
   "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
   "what": "rough cut 2: fast voices, cuts, drunk running gag, room sound; 58 s",
   "rebuild": "python3 scripts/shorts/pq_cut.py --round 2 --lines audio/lines-fast-pick --tight --room && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>"
+ },
+ {
+  "at": "2026-11-20T17:47:24+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
+  "what": "rough cut 3: edit fixes (drunk over the lines, shots broken up, whispers overlap, pub bed), beer outro; 51 s",
+  "rebuild": "python3 scripts/shorts/pq_cut.py --round 3 --lines audio/lines-fast-pick --room && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>"
  }
 ]

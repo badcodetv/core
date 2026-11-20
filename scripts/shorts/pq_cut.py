@@ -77,6 +77,8 @@ def main():
     LINES = MEDIA / a.lines
     if a.tight:
         LEAD, GAP, TAIL, HOLD = 0.15, 0.1, 0.25, 1.0
+    if a.round >= 3:
+        return main3(a)
     cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
     picks = cfg['clip_picks']
     t, beats, vids, events, parts, flags = 0.0, [], [], [], [], []
@@ -149,6 +151,145 @@ def main():
     edl = {'sequence': f'short-pub-quiz-housing-1-pub-quiz-r{a.round}', 'title': 'Pub Quiz Timeline',
            'heading': f'BadCode Shorts ▲ Pub Quiz: Housing, rough cut {a.round}',
            'intro': 'Your twelve picked clips with the recorded voices, timed to the words. Note anything: a beat, a line, a shot, or a frame.',
+           'fps': FPS, 'total': total, 'beats': beats, 'video': vids, 'audio': audio, 'events': events, 'flags': flags}
+    (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
+    print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4'), 'looped': sum(v['looped'] for v in vids)}))
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Rough cut 3 (Jack, 2026-11-20: "do the edit fixes and use the beer outro i asked for"). Edit only, nothing generated:
+#  1. the drunk's cutaways play OVER the lines (inserted into a talking shot), never in a silent gap;
+#  2. long shots are broken up with inserts from clips we already have, so nothing plays forward-and-back if avoidable;
+#  3. the whispers overlap (a negative gap between lines; short lead and tail);
+#  4. a pub-room bed built from the no-dialogue clips' own sound (Flow's murmur and glasses), and the drunk's own sound
+#     (thud, clatter, laugh) on his cutaways;
+#  5. the outro is the end of the logo-bank clip `4/bottled it.mp4` (the spilt beer spells BADCODE on the cobbles),
+#     cropped to 9:16 (a guess at "the beer outro i asked for": no record of the ask was found).
+# Inserts: shot id -> [(offset from shot start | 'L<n>' = that line's start, clip key, in, length, label, own sound?)]
+INSERTS = {
+    'more': [(2.4, 'D01', 0.7, 1.6, 'The drunk: leaning, then a lurch', True)],
+    'sum': [(2.4, 'D02', 0.3, 1.3, 'The drunk: slid off his stool', True), (5.6, '02', 2.0, 1.2, 'The table leans in', False)],
+    'banker': [(3.0, '05', 4.0, 1.4, 'The student, stung', False)],
+    'answer': [(0.0, 'D03', 0.1, 2.2, 'The drunk goes over on "Pens down"', True)],
+    'wayout': [('L1', '11', 0.5, 1.6, 'The table from above', False)],
+}
+FX_GAIN = {'pq-13a-P13': 0, 'pq-14a-P14': 12, 'pq-15b-P15': -6}  # dB, from each clip's measured loudness (-29, -44, -21 LUFS)
+BED = ['pq-03a-P03', 'pq-03b-P03', 'pq-11a-P11', 'pq-09b-P09', 'pq-11b-P11', 'pq-14a-P14']  # whisper-checked: no speech
+OUTRO = (pathlib.Path(cfg['media']).parent.parent / 'badcode logo designs/Badcode-logo-vid/4/bottled it.mp4', 21.0, 3.0,
+         'crop=420:580:38:60')  # the whole width (the word fills it), the black bars and the bottom-corner watermark cut off
+L3 = dict(first_lead=0.15, lead=0.05, gap=-0.15, tail=0.12)
+
+
+def seg(src, sin, d, out, vf):
+    """d seconds of src from sin, forward then back as often as needed; returns True if it had to loop."""
+    cd = dur(src) - sin
+    if d <= cd - 0.05:
+        ff('-ss', sin, '-i', src, '-t', d, '-vf', vf, '-an', *ENC, out); return False
+    n = int(d // cd) + 1
+    labels = ''.join(f'[p{k}]' for k in range(n))
+    chain = f'[0:v]{vf},split={n}{labels};' + ';'.join(f'[p{k}]{"reverse" if k % 2 else "null"}[q{k}]' for k in range(n))
+    ff('-ss', sin, '-i', src, '-filter_complex', chain + ';' + ''.join(f'[q{k}]' for k in range(n)) + f'concat=n={n}:v=1[v]',
+       '-map', '[v]', '-t', d, '-an', *ENC, out)
+    return True
+
+
+def main3(a):
+    cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
+    picks = cfg['clip_picks']
+    vf = f'scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},{CLAMP}'
+    shots = [(b, t, c, i_, [k for k in ks if not LINE_TXT[k].get('cut')], s_) for b, t, c, i_, ks, s_ in SHOTS if b not in CUT_SHOTS]
+    t, beats, vids, events, parts, flags, fx = 0.0, [], [], [], [], [], []
+    stems = {}
+    for n, (bid, title, ck, tin, keys, see) in enumerate(shots):
+        title = f'{n + 1}. ' + title.split('. ', 1)[-1]
+        st = t; lt = t + (L3['first_lead'] if n == 0 else L3['lead']); lines, starts = [], []
+        for j, k in enumerate(keys):
+            w = LINES / f'{k}.wav'; d = round(dur(w), 3); role = LINE_TXT[k]['role']
+            stems.setdefault(role, []).append((round(lt, 3), w)); starts.append(lt - st)
+            lines.append({'i': j, 'who': role, 'name': NAMES[role], 't': round(lt, 3), 'dur': d, 'text': LINE_TXT[k]['text'], 'by': 'jack' if k in JACKS else 'claude'})
+            events.append({'stem': f'vox-{role}', 't': round(lt, 3), 'dur': d, 'what': f'{title}: {NAMES[role]}', 'src': str(w)})
+            lt += d + (L3['gap'] if j < len(keys) - 1 else 0)
+        sd = round(lt + L3['tail'] - st, 3) if keys else 1.0  # a reaction shot with no words holds 1 s
+        ins = []
+        for off, ik, iin, ilen, lab, own in INSERTS.get(bid, []):
+            o = starts[int(off[1:])] if isinstance(off, str) else off
+            ins.append((round(o, 3), ik, iin, min(ilen, sd - o), lab, own))
+        ins.sort()
+        main_src = VID / f'{picks[ck]}.mp4'
+        need = sd - sum(i[3] for i in ins)
+        mfile = cut / f'm{n:02d}-{bid}.mp4'; looped = seg(main_src, tin, need, mfile, vf)
+        if looped:
+            flags.append(f'{title}: {need:.1f}s of its own clip needed on a {dur(main_src) - tin:.1f}s clip, so it plays forward and back.')
+        cur, used = 0.0, 0.0
+        pieces = []
+        for o, ik, iin, ilen, lab, own in ins + [(sd, None, 0, 0, '', False)]:
+            if o > cur + 0.01:  # a stretch of the shot's own clip
+                pf = cut / f'v{n:02d}-{len(pieces)}-{bid}.mp4'
+                ff('-ss', used, '-i', mfile, '-t', o - cur, '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p',
+                   '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', pf)
+                pieces.append(pf)
+                vids.append({'file': str(pf), 'in': round(tin + used, 3), 'start': round(st + cur, 3), 'dur': round(o - cur, 3), 'beat': bid, 'source': str(main_src), 'looped': looped})
+                used += o - cur; cur = o
+            if ik is None:
+                break
+            isrc = VID / f'{picks[ik]}.mp4'; pf = cut / f'v{n:02d}-{len(pieces)}-{bid}-ins.mp4'
+            seg(isrc, iin, ilen, pf, vf); pieces.append(pf)
+            vids.append({'file': str(pf), 'in': iin, 'start': round(st + cur, 3), 'dur': round(ilen, 3), 'beat': bid, 'source': str(isrc), 'looped': False, 'note': lab})
+            if own:
+                fx.append((round(st + cur, 3), isrc, iin, ilen, lab))
+                events.append({'stem': 'fx-drunk', 't': round(st + cur, 3), 'dur': round(ilen, 3), 'what': f'{title}: {lab} (its own sound)', 'src': str(isrc)})
+            cur += ilen
+        parts += pieces
+        beats.append({'id': bid, 'title': title, 'start': round(st, 3), 'dur': sd, 'see': see + ''.join(f'; insert: {i[4]}' for i in ins), 'lines': lines})
+        t = st + sd
+    # the outro: the logo bank's beer clip
+    ls = round(t, 3); osrc, oin, od, ocrop = OUTRO
+    ff('-ss', oin, '-i', osrc, '-t', od, '-filter_complex',
+       f'[0:v]{ocrop},split[a][b];[b]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=30:2,eq=brightness=-0.15[bg];'
+       f'[a]scale={W}:-2:flags=lanczos[fg];[bg][fg]overlay=0:(H-h)/2,fps={FPS},{CLAMP}[v]', '-map', '[v]', '-an', *ENC, cut / 'v99-outro.mp4')
+    parts.append(cut / 'v99-outro.mp4')
+    vids.append({'file': str(cut / 'v99-outro.mp4'), 'in': oin, 'start': ls, 'dur': od, 'beat': 'logo', 'source': str(osrc), 'looped': False})
+    beats.append({'id': 'logo', 'title': f'{len(shots) + 1}. Outro', 'start': ls, 'dur': od, 'see': 'The spilt beer spells BADCODE on the cobbles (logo bank: 4/bottled it.mp4, from 21 s)', 'lines': []})
+    total = round(ls + od, 3)
+    (cut / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
+    ff('-f', 'concat', '-safe', '0', '-i', cut / 'list.txt', '-c', 'copy', cut / 'picture.mp4')
+    audio = []
+    for role, items in stems.items():
+        ins_, fl = [], []
+        for k, (at, w) in enumerate(items):
+            ins_ += ['-i', w]
+            room = (ROOM['whisper' if LINE_TXT[w.stem]['whisper'] else 'talk'] + ',') if a.room else ''
+            fl.append(f'[{k}]aresample=48000,aformat=channel_layouts=stereo,{room}adelay={int(at * 1000)}|{int(at * 1000)}[s{k}]')
+        fl.append(f"{''.join(f'[s{k}]' for k in range(len(items)))}amix=inputs={len(items)}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]")
+        stp = cut / f'vox-{role}.wav'; ff(*ins_, '-filter_complex', ';'.join(fl), '-map', '[o]', '-ar', 48000, stp)
+        audio.append({'track': f'A{len(audio) + 1}', 'name': f'vox-{role}', 'file': str(stp)})
+    # the drunk's own sound on his cutaways
+    ins_, fl = [], []
+    for k, (at, src, iin, ilen, _) in enumerate(fx):
+        ins_ += ['-ss', iin, '-t', ilen, '-i', src]
+        fl.append(f'[{k}:a]asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.05,afade=t=out:st={max(0, ilen - 0.15)}:d=0.15,volume={FX_GAIN.get(src.stem, 0)}dB,adelay={int(at * 1000)}|{int(at * 1000)},asetpts=N/SR/TB[f{k}]')  # reset pts: -ss inputs + atrim shifted every sound by the first delay (2026-11-20)
+    fl.append(f"{''.join(f'[f{k}]' for k in range(len(fx)))}amix=inputs={len(fx)}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]")
+    stp = cut / 'fx-drunk.wav'; ff(*ins_, '-filter_complex', ';'.join(fl), '-map', '[o]', '-ar', 48000, stp)
+    audio.append({'track': f'A{len(audio) + 1}', 'name': 'fx-drunk', 'file': str(stp)})
+    # the pub-room bed: the no-dialogue clips' own sound, crossfaded and looped under the whole cut, out under the outro
+    ins_ = sum([['-i', VID / f'{b}.mp4'] for b in BED], [])
+    chain = '[0:a]aresample=48000,aformat=channel_layouts=stereo[b0];'
+    for k in range(1, len(BED)):
+        chain += f'[{k}:a]aresample=48000,aformat=channel_layouts=stereo[r{k}];[b{k - 1}][r{k}]acrossfade=d=1.5[b{k}];'
+    chain += f'[b{len(BED) - 1}]aloop=loop=-1:size=2e9,atrim=end={total},loudnorm=I=-30,volume=-14dB,afade=t=out:st={ls}:d={od}[o]'
+    stp = cut / 'amb-pub.wav'; ff(*ins_, '-filter_complex', chain, '-map', '[o]', '-ar', 48000, '-ac', 2, stp)
+    audio.append({'track': f'A{len(audio) + 1}', 'name': 'amb-pub', 'file': str(stp)})
+    events.append({'stem': 'amb-pub', 't': 0, 'dur': total, 'what': 'Pub room: murmur and glasses (from the clips\' own sound)', 'src': str(VID / f'{BED[0]}.mp4')})  # the bed's first clip; all of them are in BED
+    ins_ = sum([['-i', x['file']] for x in audio], [])
+    ff(*ins_, '-filter_complex', f"{''.join(f'[{k}]' for k in range(len(audio)))}amix=inputs={len(audio)}:normalize=0,loudnorm=I=-14:TP=-1.5,alimiter=limit=0.85:level=0[o]",
+       '-map', '[o]', '-ar', 48000, '-ac', 2, cut / 'mix.wav')
+    ff('-i', cut / 'picture.mp4', '-i', cut / 'mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-t', total, cut / 'preview.mp4')
+    flags = ['No music yet. Pub room sound is built from the clips\' own murmur (no library sound).',
+             'Lips: not yet synced (step 2, after this pacing is agreed).',
+             'Outro: the end of the logo bank\'s "bottled it" clip (spilt beer spells BADCODE), my guess at "the beer outro"; it is a 496x744 source, so it is soft at 1080x1920.'] + flags
+    edl = {'sequence': f'short-pub-quiz-housing-1-pub-quiz-r{a.round}', 'title': 'Pub Quiz Timeline',
+           'heading': f'BadCode Shorts ▲ Pub Quiz: Housing, rough cut {a.round}',
+           'intro': 'Edit fixes: the drunk plays over the lines, long shots broken up, whispers overlapping, pub room sound, the beer outro.',
            'fps': FPS, 'total': total, 'beats': beats, 'video': vids, 'audio': audio, 'events': events, 'flags': flags}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4'), 'looped': sum(v['looped'] for v in vids)}))

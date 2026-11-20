@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/a1e365ba-732e-4b19-9808-5249e483b73b/scratchpad/par-16-banker-bricks.wav",
+ "made": "2026-11-20T17:35:21+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "So buy the bricks.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "en-gb-podcaster-11",
+  "style": "fast",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

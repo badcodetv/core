@@ -63,8 +63,8 @@
   "D03": "pq-15b-P15"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r2/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r2/preview.mp4",
-  "script": "scripts/shorts/pq_cut.py --round 2 --lines audio/lines-fast-pick --tight --room"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r3/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r3/preview.mp4",
+  "script": "scripts/shorts/pq_cut.py --round 3 --lines audio/lines-fast-pick --room"
  }
 }
