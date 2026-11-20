@@ -44,6 +44,13 @@ Music: not decided. Any Suno track is music and sound only.
   nightly-paid lets. Say "B&Bs and nightly-paid lets", never "hotels" alone, never "all council money". Re-check for a
   newer year before posting.
 - Bob is the Camping character; his place at the table is Jack's ask (2026-11-20).
+- **Stills: why the round-1-5 mistakes happened, and the rules that stop them** (Jack, 2026-11-20: "why is flow making so
+  many mistakes"; pollution checked: none). (1) A big-face portrait of each character first (`plasterer-face.jpg`, Bob in
+  `pick-table-v2.jpg`; student and banker before their next close-up), attached to every close-up: a tiny reference face
+  is filled from memory and drifts to a famous face. (2) Check a reference before using it: no two people in clashing
+  clothes, no lookalike. (3) Name every extra person (age, hair, clothes), never "a mixed crowd" or "two drinkers".
+  (4) Nothing in a prompt that contradicts a rule (an open collar against no skin). (5) Point at a reference by role,
+  ("the plasterer's face from image 1"), not "from the first image, the same face" (flagged as shared with GPOM).
 - **Pollution, every round** (Jack, 2026-11-20: "please constantly check"): before reporting any round, run
   `scripts/variations/fresh.py --story short-pub-quiz-housing` over every new prompt, line and brief, and say the result in the reply.
 
