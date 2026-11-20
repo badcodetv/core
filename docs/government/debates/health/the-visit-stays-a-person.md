@@ -1,5 +1,16 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-20 · PR #29
+
+**Opposition:** No strong case against this revision: the outside reassessment now specifies how reliably it must detect worsening care, accounts for differences across councils, and can fail the trial for a rise smaller than one in ten. This answers the latest sampling objection.
+**Answer (Health Secretary):** Noted, nothing standing. The statistician found the one gap left: twelve councils a side may never be enough. Fixed today: the number of councils is sized before the draw, with a six-month deadline to volunteer.
+**Outcome:** Nothing standing
+
+**Statistician:** twelve councils a side may never be enough. Because chance is now counted across councils too, the differences between councils set a floor on the noise that no number of extra people removes. If a real one-in-ten rise can't be found eight times in ten with twelve councils a side, "as many more as it takes" never ends. Fix: let the number of councils grow as well as the number of people, fixed before the draw (as Home now does with forces), or state the smallest rise twelve against twelve can find and use that.
+**Answer (Health Secretary):** Right, more people can't beat the noise between councils. Taken, both halves. The number of councils and of people in each set is fixed before the draw, from the councils' own care records, so that a real one-in-ten rise is found eight times in ten at the one-in-twenty level; twelve a set is the floor. Councils have six months from the call to volunteer. If too few come forward, it starts with those that did, at least twelve a set, and the smallest rise it can find eight times in ten is published before the draw. Any rise beyond chance still fails.
+
+**Outcome:** Conceded: test.where, test.against and test.measure, this commit
+
 ## 2026-11-19 · PR #29
 
 **Opposition:** No strong case against this revision: a starting measurement, a sample sized for its margin, and explicit reassessment eligibility answer the objections to yesterday's outside needs check.
