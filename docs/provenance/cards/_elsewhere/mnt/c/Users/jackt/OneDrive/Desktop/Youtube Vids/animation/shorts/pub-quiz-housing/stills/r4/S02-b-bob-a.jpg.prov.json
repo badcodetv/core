@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r4/S02-b-bob-a.jpg",
+ "made": "2026-11-20T13:45:35.294Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the first image, change only the white man in the olive waterproof jacket so he is the same man as the one in the olive waterproof jacket in the second image: his round, broad face, wide nose, short grey stubble beard, ruddy cheeks, thinning cropped grey hair, and a clean faded olive waterproof with no plaster dust and no camouflage. Keep the other three men, the poses, the table and everything else in the first image exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack's pick S02-b, with Bob's new face (the old one read as a famous actor)",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S02-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S02-b.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "8498803c-e1fc-4d1b-b549-5a22a9025475"
+}

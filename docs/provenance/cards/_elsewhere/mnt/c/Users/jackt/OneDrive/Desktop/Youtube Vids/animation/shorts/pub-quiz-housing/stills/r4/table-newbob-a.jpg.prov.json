@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r4/table-newbob-a.jpg",
+ "made": "2026-11-20T13:42:36.061Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the white man in the old olive waterproof jacket at the front left: give him a different, ordinary face of his own: a round, broad face, a wide flattened nose, small brown eyes, short grey stubble beard, ruddy cheeks, thinning cropped grey hair. His waterproof jacket is clean, faded olive, with no plaster dust and no camouflage pattern. Keep the other three men, every pose, the table, the flash lighting, the high camera angle and everything else in the image exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "805b5b9b-3a70-459a-b304-f78e1ffd6906"
+}

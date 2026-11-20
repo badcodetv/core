@@ -42,5 +42,29 @@
  "pub-quiz-banker-b": {
   "id": "voice_9ck2xsq9c502",
   "desc": "A banker in his forties from London, with a clipped, dry voice, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-g": {
+  "id": "voice_mpvu5n9m5ncz",
+  "desc": "A Londoner of Jamaican heritage in his fifties, with a deep, gravelly voice and a mild London accent, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-h": {
+  "id": "voice_fxmjbgda3vzu",
+  "desc": "A Black man in his fifties born and raised in Hackney, London, with a deep, husky voice and a soft London accent, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-i": {
+  "id": "voice_tihz6q1cbfus",
+  "desc": "A Black British cab driver in his fifties from south London, with a deep, gravelly voice and a light accent, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-j": {
+  "id": "voice_tj0nqw6465i6",
+  "desc": "A Black British man in his forties from Tottenham, London, with a very deep, rough voice and a gentle London accent, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-k": {
+  "id": "voice_3lxymihn136l",
+  "desc": "A gravelly-voiced Black Londoner in his sixties, with a very low voice and a mild cockney accent, who speaks plainly."
+ },
+ "pub-quiz-quizmaster-l": {
+  "id": "voice_w77lrer3lejz",
+  "desc": "A Black British man in his fifties from Peckham, London, with a low, smoky voice and a subtle London accent, who speaks plainly."
  }
 }

@@ -2,8 +2,215 @@
  "title": "Pub Quiz Stills",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · round 1",
  "heading": "The look: the pub and the quizmaster",
- "intro": "Round 3: the twelve shots of the short in your picked look. Pick a take per shot, or note what to change. Earlier rounds are folded below.",
+ "intro": "Round 4: every note on the shots answered. Pick a take per row; earlier rounds are folded below.",
  "sections": [
+  {
+   "h": "Round 4: your notes on the shots",
+   "lede": "Kept as picked: S05-a, S07 (\"this vibe and camera shot\"). S10 and S12 unchanged (no Bob in them).",
+   "groups": [
+    {
+     "slot": "B4-table",
+     "round": 4,
+     "title": "The new Bob (the reference for every table shot)",
+     "line": "Your \"thats hugh laurie\": the lookalike was in the picked table photo itself, so it spread. Bob now has his own ordinary face and a clean olive waterproof (no plaster dust, so he stops merging with the plasterer).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "table-newbob-a",
+       "src": "r4/table-newbob-a.jpg",
+       "label": "table-newbob-a",
+       "warn": ""
+      },
+      {
+       "id": "table-newbob-b",
+       "src": "r4/table-newbob-b.jpg",
+       "label": "table-newbob-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S01-r4",
+     "round": 4,
+     "title": "1. The question, crowd mixed",
+     "line": "Your note: \"diverisfy the crowd please\". Masks checked up close: right.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S01-a-mix-a",
+       "src": "r4/S01-a-mix-a.jpg",
+       "label": "S01-a-mix-a",
+       "warn": ""
+      },
+      {
+       "id": "S01-a-mix-b",
+       "src": "r4/S01-a-mix-b.jpg",
+       "label": "S01-a-mix-b",
+       "warn": ""
+      },
+      {
+       "id": "S01-b-mix-a",
+       "src": "r4/S01-b-mix-a.jpg",
+       "label": "S01-b-mix-a",
+       "warn": ""
+      },
+      {
+       "id": "S01-b-mix-b",
+       "src": "r4/S01-b-mix-b.jpg",
+       "label": "S01-b-mix-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S02-r4",
+     "round": 4,
+     "title": "2. Your pick S02-b, with Bob's new face",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S02-b-bob-a",
+       "src": "r4/S02-b-bob-a.jpg",
+       "label": "S02-b-bob-a",
+       "warn": ""
+      },
+      {
+       "id": "S02-b-bob-b",
+       "src": "r4/S02-b-bob-b.jpg",
+       "label": "S02-b-bob-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S03-r4",
+     "round": 4,
+     "title": "3. Your pick S03-a, with Bob's clean sleeve",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S03-a-cuff-a",
+       "src": "r4/S03-a-cuff-a.jpg",
+       "label": "S03-a-cuff-a",
+       "warn": ""
+      },
+      {
+       "id": "S03-a-cuff-b",
+       "src": "r4/S03-a-cuff-b.jpg",
+       "label": "S03-a-cuff-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S04-r4",
+     "round": 4,
+     "title": "4. Crossed out, now the plasterer",
+     "line": "Your note: \"thats hugh laurie, please no famous people\".",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S04-a",
+       "src": "r4/S04-a.jpg",
+       "label": "S04-a",
+       "warn": "a branded crisp packet in the bottom right: I blur or swap it if you pick this"
+      },
+      {
+       "id": "S04-b",
+       "src": "r4/S04-b.jpg",
+       "label": "S04-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S06-r4",
+     "round": 4,
+     "title": "6. Eavesdroppers, two different people",
+     "line": "Your note: \"...and the other two look the same\".",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S06-a",
+       "src": "r4/S06-a.jpg",
+       "label": "S06-a",
+       "warn": ""
+      },
+      {
+       "id": "S06-b",
+       "src": "r4/S06-b.jpg",
+       "label": "S06-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S08-r4",
+     "round": 4,
+     "title": "8. Bob takes the pen (new face)",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S08-a",
+       "src": "r4/S08-a.jpg",
+       "label": "S08-a",
+       "warn": ""
+      },
+      {
+       "id": "S08-b",
+       "src": "r4/S08-b.jpg",
+       "label": "S08-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S09-r4",
+     "round": 4,
+     "title": "9. The nod (new face)",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S09-a",
+       "src": "r4/S09-a.jpg",
+       "label": "S09-a",
+       "warn": ""
+      },
+      {
+       "id": "S09-b",
+       "src": "r4/S09-b.jpg",
+       "label": "S09-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S11-r4",
+     "round": 4,
+     "title": "11. The answer lands (new face)",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S11-a",
+       "src": "r4/S11-a.jpg",
+       "label": "S11-a",
+       "warn": ""
+      },
+      {
+       "id": "S11-b",
+       "src": "r4/S11-b.jpg",
+       "label": "S11-b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 3: the shots, in story order",
    "lede": "Your picked quizmaster and table, in twelve shots that follow the script. Quizmaster masks checked up close: all right.",
@@ -473,5 +680,5 @@
    ]
   }
  ],
- "round": 3
+ "round": 4
 }

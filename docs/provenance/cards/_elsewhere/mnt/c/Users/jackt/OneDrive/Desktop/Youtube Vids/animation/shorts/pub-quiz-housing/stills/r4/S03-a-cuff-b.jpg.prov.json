@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r4/S03-a-cuff-b.jpg",
+ "made": "2026-11-20T13:45:43.766Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the first image, change only the sleeve and cuff of the writing hand so it is the clean, faded olive waterproof jacket sleeve worn by the man in the olive waterproof in the second image: no plaster dust, no camouflage pattern. Keep the hand, the pencil, the answer sheet, the table and everything else in the first image exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack's pick S03-a, with Bob's clean jacket for continuity",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S03-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r3/S03-a.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "03fbe5e3-c627-4c4c-be95-5d345362c3e0"
+}

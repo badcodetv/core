@@ -2,8 +2,86 @@
  "title": "Pub Quiz Voices",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · voices round 1",
  "heading": "Cast the voices",
- "intro": "Round 2 from your notes: a new quizmaster, more bankers, and Bob in his Camping voice. Plain reads, no acting in the prompt.",
+ "intro": "Round 3 from your notes: six new quizmasters, and Bob made exactly the way Camping makes him.",
  "sections": [
+  {
+   "h": "Round 3",
+   "lede": "Locked: plasterer (Manchester, 48), student (designed south London), banker en-gb-podcaster-11 (Liverpool, 57).",
+   "groups": [
+    {
+     "slot": "voice-quizmaster-r3",
+     "round": 3,
+     "title": "The quizmaster (BadCode), round 3",
+     "line": "Your note: the last four did not sound like the description. Six new designs, each worded differently (designed voices vary a lot from one call to the next). How much did councils in England spend on temporary accommodation last year? Nearest wins. Thirty seconds. / Twenty seconds. / Pens down. / Two point nine billion pounds. One point eight billion of it on B&Bs and nightly lets.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "voice_mpvu5n9m5ncz",
+       "src": "casting/quizmaster-voice_mpvu5n9m5ncz.mp3",
+       "label": "g: A Londoner of Jamaican heritage in his fifties, with a deep, gravelly voice and a mild London accent",
+       "warn": "Whisper heard \"pens down\" oddly: check by ear"
+      },
+      {
+       "id": "voice_fxmjbgda3vzu",
+       "src": "casting/quizmaster-voice_fxmjbgda3vzu.mp3",
+       "label": "h: A Black man in his fifties born and raised in Hackney, London, with a deep, husky voice and a soft London accent",
+       "warn": ""
+      },
+      {
+       "id": "voice_tihz6q1cbfus",
+       "src": "casting/quizmaster-voice_tihz6q1cbfus.mp3",
+       "label": "i: A Black British cab driver in his fifties from south London, with a deep, gravelly voice and a light accent",
+       "warn": "may say \"do\" for \"did\": check by ear"
+      },
+      {
+       "id": "voice_tj0nqw6465i6",
+       "src": "casting/quizmaster-voice_tj0nqw6465i6.mp3",
+       "label": "j: A Black British man in his forties from Tottenham, London, with a very deep, rough voice and a gentle London accent",
+       "warn": ""
+      },
+      {
+       "id": "voice_3lxymihn136l",
+       "src": "casting/quizmaster-voice_3lxymihn136l.mp3",
+       "label": "k: A gravelly-voiced Black Londoner in his sixties, with a very low voice and a mild cockney accent",
+       "warn": ""
+      },
+      {
+       "id": "voice_w77lrer3lejz",
+       "src": "casting/quizmaster-voice_w77lrer3lejz.mp3",
+       "label": "l: A Black British man in his fifties from Peckham, London, with a low, smoky voice and a subtle London accent",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-bob-r3",
+     "round": 3,
+     "title": "Bob, exactly as Camping makes him",
+     "line": "Your note: \"look up the voice in the repo, these two sound nothing like him\". Camping renders Bob as Algenib with his voice profile on the older voice model (gemini-3.1-flash-tts-preview); my round-2 takes used the new model. These three use the older one. I know literally no one who's been in them.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "Algenib-3.1-camping-profile",
+       "src": "casting/bob-Algenib-3.1-camping-profile.mp3",
+       "label": "take 1",
+       "warn": ""
+      },
+      {
+       "id": "Algenib-3.1-camping-profile-2",
+       "src": "casting/bob-Algenib-3.1-camping-profile-2.mp3",
+       "label": "take 2",
+       "warn": ""
+      },
+      {
+       "id": "Algenib-3.1-camping-profile-3",
+       "src": "casting/bob-Algenib-3.1-camping-profile-3.mp3",
+       "label": "take 3",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 2",
    "lede": "Picked already: plasterer (Manchester, 48) and student (designed south London). Folded below.",
@@ -269,5 +347,5 @@
    ]
   }
  ],
- "round": 2
+ "round": 3
 }

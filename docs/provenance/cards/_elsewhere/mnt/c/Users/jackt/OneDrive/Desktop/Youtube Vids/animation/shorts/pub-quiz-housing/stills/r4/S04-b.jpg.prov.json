@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r4/S04-b.jpg",
+ "made": "2026-11-20T13:45:28.146Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Close portrait photograph, low over the round table. The plasterer from the attached image, the British South Asian man with short dark hair and a dark beard in the grey camouflage jacket thick with dried white plaster dust, drags a pencil hard through the number on the answer sheet in one heavy line; his dusty hand and sleeve big in frame, his face leaning in at the top of the frame, jaw set, eyes on the paper, insistent. Paper markings unreadable. Pint glass and crumbs at the edge. Late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack on S04: \"thats hugh laurie, please no famous people\": the plasterer, not the man in the waterproof",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "51cf1f4b-a808-4cf5-9446-4d694cb4234e"
+}

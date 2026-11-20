@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r4/S09-a.jpg",
+ "made": "2026-11-20T13:50:20.106Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Over-the-shoulder portrait photograph, from behind the clean olive waterproof shoulder of the quiet man from the attached image, whose hand turns the answer sheet round on the table. Facing camera, the man in the suit with the loosened tie looks down at the sheet, chin dipping in a small, grudging nod, lips pressed together. Writing on the sheet blurred and unreadable. Pint glass between them. Late night, direct on-camera flash, hard shadows, dark wood behind.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "27693b4c-30ab-41e3-8333-603e955a3082"
+}

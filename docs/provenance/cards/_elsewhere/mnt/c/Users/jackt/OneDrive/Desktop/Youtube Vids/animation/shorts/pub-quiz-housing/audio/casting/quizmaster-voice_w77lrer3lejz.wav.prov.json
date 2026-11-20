@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/casting/quizmaster-voice_w77lrer3lejz.wav",
+ "made": "2026-11-20T13:44:02+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "How much did councils in England spend on temporary accommodation last year? Nearest wins. Thirty seconds. ... Twenty seconds. ... Pens down. ... Two point nine billion pounds. One point eight billion of it on B&Bs and nightly lets.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_w77lrer3lejz",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "none (plain)"
+ }
+}
