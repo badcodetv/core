@@ -1,0 +1,579 @@
+{
+ "page_title": "Pub Quiz Huddle",
+ "title": "Pub Quiz: Housing, the huddle",
+ "about": "This page offers three combined drafts of the huddle (beat 2) built from ten writers' shapes, with every shape ranked and open questions at the end. Nothing has changed yet: no scene file, script or voice has been touched.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Plain step-by-step logic",
+   "title": "The logic said plainly, one step at a time",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "Clock drives it",
+   "title": "The clock drives every line",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-04-the-clock.md"
+  },
+  {
+   "id": "05",
+   "name": "Doubter sets terms",
+   "title": "The other side wins: the doubter sets the terms",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-05-other-side-wins.md"
+  },
+  {
+   "id": "06",
+   "name": "Student gets there first",
+   "title": "Reversal, the student gets there first",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "Room voices doubts",
+   "title": "The chorus, the room voices the doubts",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-07-chorus.md"
+  },
+  {
+   "id": "08",
+   "name": "Pub is the argument",
+   "title": "The pub itself is the argument",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft, the overheard room",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending written first",
+   "title": "Ending first, written backwards",
+   "file": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "The huddle",
+   "where": "Beat 2, 6-36 s, after the question and before 'Pens down'",
+   "scene": "Pub Quiz: Housing, beat 2 (the huddle)",
+   "target": "about 30 seconds of whispered lines (the clock can interrupt)",
+   "now_from": "docs/stories/short-pub-quiz-housing/script.md (draft 1)",
+   "now": [
+    {
+     "who": "Student",
+     "line": "A hundred million? That's loads."
+    },
+    {
+     "who": "Plasterer",
+     "line": "More. I've done three of them B&B jobs for the council this year. They're paying for every room, every night."
+    },
+    {
+     "who": "Banker",
+     "line": "Nightly's the dearest way to buy anything. You're renting it, not buying it. It's billions, not millions. [JOKE SLOT: what the banker lets slip about himself]"
+    },
+    {
+     "who": "Student",
+     "line": "Billions? On rooms? That's not possible."
+    },
+    {
+     "who": "Next table",
+     "line": "[leans in; the table goes silent until they lean back] [JOKE SLOT: the eavesdroppers]"
+    },
+    {
+     "who": "Bob",
+     "line": "[takes the pen, doesn't argue, writes a number] [JOKE SLOT: Bob's line, if any]"
+    },
+    {
+     "who": "Quizmaster",
+     "line": "Pens down."
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "The sum on a beer mat",
+     "length": "about 32 s",
+     "total": "~32 s",
+     "bet": "Betting that the viewer enjoys catching the doubt and the sum themselves: the student works it out, the plasterer who has seen the rooms resists, and Bob arrives last with the one thing no sum has.",
+     "lines": [
+      {
+       "who": "Student",
+       "line": "A hundred million? That's loads.",
+       "tags": [
+        "all"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Plasterer",
+       "line": "More. I've done three of them B&B jobs for the council this year. Every room, every night.",
+       "tags": [
+        "06",
+        "01",
+        "02",
+        "09"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Banker",
+       "line": "[low] Nightly's the dearest way to--",
+       "tags": [
+        "06",
+        "04"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Student",
+       "line": "[cutting in] --every night. So it's rooms times nights. Say fifty quid a night. Times three-sixty-five. Times, I don't know, a hundred thousand rooms? [JOKE SLOT: the student doing sums on a beer mat] That's billions.",
+       "tags": [
+        "06",
+        "03"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Plasterer",
+       "line": "Billions? On rooms? Come off it. I've seen the rooms.",
+       "tags": [
+        "06"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Banker",
+       "line": "[a beat] Nightly's the dearest way to buy anything. He's not wrong. [JOKE SLOT: what the banker lets slip about himself]",
+       "tags": [
+        "all",
+        "06"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "[off] Ten seconds.",
+       "tags": [
+        "04",
+        "09",
+        "10"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Next table",
+       "line": "[leans in; the table goes silent until they lean back] [JOKE SLOT: the eavesdroppers]",
+       "tags": [
+        "all"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Bob",
+       "line": "[quiet, to the sheet] I was in one. They paid by the night. [JOKE SLOT: Bob's line, if any]",
+       "tags": [
+        "02",
+        "06",
+        "10"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Bob",
+       "line": "[takes the pen, crosses out the hundred million, writes a number; the others watch the pen, not him]",
+       "tags": [
+        "02",
+        "06"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "Pens down.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "1"
+      }
+     ],
+     "notes": [
+      "Trims: cut the plasterer's 'I've seen the rooms' and the clock line to land about 28 s.",
+      "Protected lines kept: none exist in draft 1; 'Pens down.' kept word for word.",
+      "Fixed from shape 06: its sum (a few thousand rooms) did not reach a billion, so the maths here is fifty a night, times 365, times a hundred thousand rooms, which comes to about 1.8 billion. All three figures are the student's guesses, marked as guesses by 'say' and 'I don't know'.",
+      "Risk: the sum lands close to the real answer, so it can sound too neat; the beer-mat slot is there to roughen it. The banker must stay warm and not look slow.",
+      "Risk: Bob's 'I was in one' is new and invented (draft 1 gave him silence); flat delivery, pen beat straight after, or it tips into pity."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "The clock cuts everyone off",
+     "length": "about 30 s",
+     "total": "~29.5 s",
+     "bet": "Betting that pressure carries the argument: nobody finishes a sentence, the quizmaster's calls land as hard stops, and the viewer assembles the point from fragments.",
+     "lines": [
+      {
+       "who": "Quizmaster",
+       "line": "[off, over the room] Thirty seconds. Go.",
+       "tags": [
+        "04",
+        "09"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Student",
+       "line": "[fast] Fifty million. Put fifty.",
+       "tags": [
+        "04"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Plasterer",
+       "line": "Fifty? I've done three B&B jobs for the council this year, they pay for every room, every ni--",
+       "tags": [
+        "04",
+        "09"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Student",
+       "line": "[over him] Then a hundred. A hundred million.",
+       "tags": [
+        "04",
+        "09"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "[off] Twenty.",
+       "tags": [
+        "04",
+        "09"
+       ],
+       "s": "1"
+      },
+      {
+       "who": "Banker",
+       "line": "[low, calm] Nightly's the dearest way to buy anything. So it's not millions. [JOKE SLOT: what the banker lets slip about himself]",
+       "tags": [
+        "04",
+        "all"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Student",
+       "line": "Billions? On rooms? It can't be, that's--",
+       "tags": [
+        "04",
+        "all"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Plasterer",
+       "line": "[barely audible, eyes on the clock] Two? Three?",
+       "tags": [
+        "01",
+        "09"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Banker",
+       "line": "[mouthing] Three. Nearer three.",
+       "tags": [
+        "09"
+       ],
+       "s": "1"
+      },
+      {
+       "who": "Next table",
+       "line": "[leans in; the table goes silent until they lean back] [JOKE SLOT: the eavesdroppers]",
+       "tags": [
+        "all"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "[off] Ten.",
+       "tags": [
+        "04",
+        "09"
+       ],
+       "s": "1"
+      },
+      {
+       "who": "Bob",
+       "line": "[quiet, not looking up; the others stop] I was in one. They moved you every few nights. [JOKE SLOT: Bob's line, if any]",
+       "tags": [
+        "09",
+        "02"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "Bob",
+       "line": "[takes the pen, writes a number, turns the sheet face down]",
+       "tags": [
+        "09",
+        "02"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "Pens down.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "1"
+      }
+     ],
+     "notes": [
+      "Trims: drop the 'Ten.' call and the banker's mouthed line to reach about 27 s.",
+      "Protected lines kept: none; 'Pens down.' unchanged.",
+      "Cut from the shapes: 'you never own a brick of it' (09) and 'I didn't even get to the north' (09, an invented claim), both near the moral or a statistic. Also shape 04's 'three rooms and the kids' stuff in a bag', which pushes toward pity.",
+      "Risk: cut-off lines and overlapping whispers are hard to voice in AI Studio and need pause tags so they do not read as errors; the mouthed 'Three. Nearer three.' only works in picture.",
+      "Risk: three countdown calls can feel like a gimmick; reduce to two if so. Bob's 'moved every few nights' is invented experience for Jack to confirm."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "The pen and the nod",
+     "length": "about 33 s",
+     "total": "~33 s",
+     "bet": "Betting on the quiet ending: the guesses climb on the answer sheet, the banker concedes with a nod instead of a line, and the short's payoff is Bob being right without anyone saying why.",
+     "lines": [
+      {
+       "who": "Student",
+       "line": "[writes the number on the sheet, pen in close-up] A hundred million? That's loads.",
+       "tags": [
+        "02",
+        "all"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Plasterer",
+       "line": "[crosses it out] More. Three B&B jobs for the council this year. Every room, every night.",
+       "tags": [
+        "02",
+        "01",
+        "10"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Student",
+       "line": "Five hundred million, then. [JOKE SLOT: the student's guess at scale]",
+       "tags": [
+        "10"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Next table",
+       "line": "[leans in; the table goes silent until they lean back] [JOKE SLOT: the eavesdroppers]",
+       "tags": [
+        "all"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "[off] Twenty seconds.",
+       "tags": [
+        "10",
+        "04"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Banker",
+       "line": "[calm, not looking up] Nightly's the dearest way to buy anything. It's billions. [JOKE SLOT: what the banker lets slip about himself]",
+       "tags": [
+        "01",
+        "02",
+        "10",
+        "all"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Student",
+       "line": "[pen stops] Billions? On rooms? That's not possible.",
+       "tags": [
+        "all",
+        "02"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Plasterer",
+       "line": "Billions? That's a lot of rooms.",
+       "tags": [
+        "06"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Banker",
+       "line": "[low] Bob.",
+       "tags": [
+        "10"
+       ],
+       "s": "1"
+      },
+      {
+       "who": "Bob",
+       "line": "[takes the pen, no hurry] I was in one. Nightly, they said. [JOKE SLOT: Bob's line, if any]",
+       "tags": [
+        "10",
+        "02"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "Bob",
+       "line": "[writes a number; turns the sheet so only the table sees]",
+       "tags": [
+        "10",
+        "02"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Banker",
+       "line": "[reads it; a small nod]",
+       "tags": [
+        "10"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "Pens down.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "1"
+      }
+     ],
+     "notes": [
+      "Trims: cut the student's 'Five hundred million' and the plasterer's 'That's a lot of rooms' to land about 28 s.",
+      "Protected lines kept: none; 'Pens down.' unchanged.",
+      "Cut from shape 10: the plasterer's 'Three jobs, one council. Do the sum.' (near a quip, and the table would be doing the sum for us) and Bob's 'Every night.' (a half-sentence of moral). Bob's written number is left unspecified; shape 10 had 'three billion'.",
+      "Risk: needs the answer sheet legible in shot (shape 02); if not, the climb vanishes. The pen and nod are silent, so the beat could read as dead air in a short this tight.",
+      "Risk: the banker's 'It's billions' is a guess voiced as sure; it must not sound like a statistic stated as fact."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "06",
+     "length": "~31 s",
+     "verdict": "Best on real resistance: the man who has seen the rooms doubts the student's sum, and the doubt is earned. Point lands unstated, voices differ, Bob arrives last and writes. Fails on arithmetic (a few thousand rooms does not make a billion, so it must be repaired) and the banker risks looking slow beside the student."
+    },
+    {
+     "rank": 2,
+     "shape": "10",
+     "length": "~36 s (30 with overlaps)",
+     "verdict": "Strongest structure: guesses climb in three steps so Bob's number feels inevitable, and the banker's nod concedes without a speech. Over length before overlaps; the plasterer's 'Do the sum' is a near-quip; the sum is not actually done by anyone, so the doubt is thin."
+    },
+    {
+     "rank": 3,
+     "shape": "02",
+     "length": "~30 s",
+     "verdict": "On length and says the climb in pictures, not words. Weak on resistance (the student's stalled pen is the whole argument) and wholly dependent on a legible sheet and a five-second silent clock beat."
+    },
+    {
+     "rank": 4,
+     "shape": "04",
+     "length": "~37 s",
+     "verdict": "Best pressure: the cut-offs make the reasons land unfinished. Runs long, hard to voice, and the 'Add it up' and 'Four's too much' lines edge toward the banker asserting a figure."
+    },
+    {
+     "rank": 5,
+     "shape": "09",
+     "length": "~44 s",
+     "verdict": "Good fragmenting and a strong 'three jobs is three jobs' doubt, but far too long, 'you never own a brick of it' is a moral aloud, and 'didn't get to the north' is an invented claim."
+    },
+    {
+     "rank": 6,
+     "shape": "01",
+     "length": "~25 s",
+     "verdict": "Under length and clean, but too thin: 'Four rooms in a year' is unclear and the jump to billions has no support. Little real argument; the slots would have to carry the colour."
+    },
+    {
+     "rank": 7,
+     "shape": "07",
+     "length": "~32.5 s",
+     "verdict": "Nice idea that the room voices our doubt, but the table's own argument is stolen by the bystanders, and it needs two extra voices. Most of the original lines survive unchanged, so it is the least rewritten."
+    },
+    {
+     "rank": 8,
+     "shape": "08",
+     "length": "~34.5 s",
+     "verdict": "Puts evidence in the set, which is attractive, but 'count the doors' is an aphorism for Bob, the pub needs rooms upstairs, and a VACANCIES sign blurs 'B&Bs and nightly lets'. Little real resistance."
+    },
+    {
+     "rank": 9,
+     "shape": "05",
+     "length": "~38 s",
+     "verdict": "The student's terms ('one reason each, no jargon') make him the teacher, the banker goes vague, and Bob's 'not once did they get a flat out of it' states the moral aloud. Breaks the never-preachy rule."
+    },
+    {
+     "rank": 10,
+     "shape": "03",
+     "length": "~44 s",
+     "verdict": "A worked sum said step by step is the lecture the brief rules out. Twice the length of the target, and the specific guesses (eighty quid, a hundred thousand households) could be taken as claims."
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Bob: every shape broke his silence with one line of his own experience ('I was in one'). Do you want that, or should he only take the pen and write? A spoken line risks pity; none risks making him a prop."
+  },
+  {
+   "id": "q2",
+   "text": "The detail of Bob's time in temporary accommodation (they paid by the night, moved every few nights, nine or eleven months) is invented in every shape. Which, if any, is true to his canon?"
+  },
+  {
+   "id": "q3",
+   "text": "Is a spoken sum by the student (fifty quid a night, a hundred thousand rooms, all marked as guesses) acceptable under the facts rule, or does it read as stating statistics?"
+  },
+  {
+   "id": "q4",
+   "text": "Should the quizmaster call the time inside the huddle (Twenty, Ten), adding about 3 s and some pressure, or should the clock be left to the picture?"
+  },
+  {
+   "id": "q5",
+   "text": "Should Bob's written number be shown to camera in this beat (near £2.9bn) or hidden until the answer, with the sheet turned face down?"
+  }
+ ]
+}

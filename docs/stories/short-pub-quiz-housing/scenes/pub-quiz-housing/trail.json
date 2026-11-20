@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-20T11:16:00+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC",
+  "what": "dialogue options: the huddle (three takes, argument only, jokes blank)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-20-pub-quiz-housing-dialogue-huddle/options.json design/2026-11-20-pub-quiz-housing-dialogue-huddle.html"
+ }
+]
