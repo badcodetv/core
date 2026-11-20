@@ -1,43 +1,47 @@
 {
-  "story": "short-pub-quiz-housing",
-  "scene": "pub-quiz-housing",
-  "title": "Pub Quiz: Housing",
-  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing",
-  "video": {
-    "aspect": "9:16"
+ "story": "short-pub-quiz-housing",
+ "scene": "pub-quiz-housing",
+ "title": "Pub Quiz: Housing",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing",
+ "video": {
+  "aspect": "9:16",
+  "model": "Omni 1.2 Flash",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "beats": [
+  {
+   "id": "question",
+   "t": "0-6",
+   "what": "The quizmaster reads the question and starts the clock"
   },
-  "beats": [
-    {
-      "id": "question",
-      "t": "0-6",
-      "what": "The quizmaster reads the question and starts the clock"
-    },
-    {
-      "id": "huddle",
-      "t": "6-36",
-      "what": "The table whispers: guesses climb as each person adds what they know"
-    },
-    {
-      "id": "answer",
-      "t": "36-46",
-      "what": "The answer, and where the money went"
-    },
-    {
-      "id": "way-out",
-      "t": "46-54",
-      "what": "The better choice, said at the table"
-    }
-  ],
-  "flow_project": "8fa2bbdc-7db6-49b9-893b-cc7b0bd06102",
-  "dialogue": {
-    "page": "https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC",
-    "options": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/options.json",
-    "picked": {
-      "d1": "1D"
-    },
-    "round": 1
+  {
+   "id": "huddle",
+   "t": "6-36",
+   "what": "The table whispers: guesses climb as each person adds what they know"
   },
-  "boards": {
-    "storyboard": "https://claude.ai/artifact/GSaZgWX1btP21dy3b3iDar"
+  {
+   "id": "answer",
+   "t": "36-46",
+   "what": "The answer, and where the money went"
+  },
+  {
+   "id": "way-out",
+   "t": "46-54",
+   "what": "The better choice, said at the table"
   }
+ ],
+ "flow_project": "8fa2bbdc-7db6-49b9-893b-cc7b0bd06102",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC",
+  "options": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/options.json",
+  "picked": {
+   "d1": "1D"
+  },
+  "round": 1
+ },
+ "boards": {
+  "storyboard": "https://claude.ai/artifact/GSaZgWX1btP21dy3b3iDar"
+ },
+ "prefix": "pq"
 }
