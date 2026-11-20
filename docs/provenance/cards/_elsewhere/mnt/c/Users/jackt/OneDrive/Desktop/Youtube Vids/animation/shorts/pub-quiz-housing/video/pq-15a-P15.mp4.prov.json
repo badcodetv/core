@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-15a-P15.mp4",
+ "made": "2026-11-20T17:07:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The grey-haired man tipping backwards on the green stool, arms flung up, pint in his raised hand, keeps falling. In the first second the stool tips over and he drops flat onto his back on the wooden floorboards, legs up then down, while the stool clatters and rolls beside him and the beer splashes onto the boards. He lies still, arms spread, the empty glass unbroken in his hand, blinking at the ceiling. Quiet pub murmur, a thud and a wooden clatter. No speech. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P15.jpg",
+ "why": "drunk gag clips, option a: The stool tips all the way and he lands flat on his back on the floorboards, stool clattering beside him. (Jack 2026-11-20: \"do this\")",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P15.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "15a",
+  "frame": 15,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T17:06:21.757Z"
+ }
+}

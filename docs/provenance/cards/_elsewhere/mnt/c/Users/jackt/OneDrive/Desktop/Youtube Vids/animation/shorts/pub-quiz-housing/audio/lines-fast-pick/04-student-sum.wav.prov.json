@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/lines-fast-pick/04-student-sum.wav",
+ "made": "2026-11-20T17:10:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py then ffmpeg trim",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/lines-fast/04-student-sum-b.wav",
+ "why": "Jack 2026-11-20: \"speed up everything they are saying\"; quickest take Whisper heard right, head/tail silence trimmed",
+ "settings": {
+  "take": "b",
+  "atempo": "1.15",
+  "style": "whispering, fast (huddle) / fast, brisk"
+ }
+}

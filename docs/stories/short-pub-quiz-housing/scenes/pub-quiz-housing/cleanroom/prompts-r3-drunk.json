@@ -1,0 +1,26 @@
+[
+  {
+    "id": "D00",
+    "idea": "Face reference: the new drunk regular, head and shoulders at the bar, eyes half shut, happily sozzled.",
+    "refs": ["/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"],
+    "prompt": "Use the attached pub photo for the room and light only; none of its people appear. Portrait 9:16, head and shoulders, face filling the frame: a man of sixty-three with thin sandy-grey hair combed over a pink scalp, bushy grey eyebrows, big ears, red bulbous nose, broken-veined cheeks, grey stubble, in a brown corduroy jacket, mustard knitted tank top and checked shirt, sits at the dark wood bar on a green leather stool, a full pint in front of him. Eyes half shut, lopsided happy grin, head tipped, cheerfully sozzled. Nobody else. Direct on-camera flash, late night, hard shadow, grain. No text or logos; pump clips blank.\nThanks."
+  },
+  {
+    "id": "D01",
+    "idea": "Gag 1: on his stool, leaning hugely sideways, pint held perfectly level with fierce concentration.",
+    "refs": ["/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg", "D00"],
+    "prompt": "Attached: the room (pub photo, none of its people) and his face (portrait). Portrait 9:16, medium-wide, front three-quarter, eye level. At the dark wood bar sits a man of sixty-three with thin sandy-grey hair combed over a pink scalp, bushy grey eyebrows, big ears, red bulbous nose, broken-veined cheeks, grey stubble, in a brown corduroy jacket, mustard knitted tank top and checked shirt, on a green leather stool, leaning hugely sideways, one foot hooked on the brass footrail. He holds his pint dead level, eyes fixed on it, tongue out. Nobody else around. Direct flash, hard shadows, grain. No text or logos; pump clips blank.\nThanks."
+  },
+  {
+    "id": "D02",
+    "idea": "Gag 2: slid almost off the stool, hanging by one arm over the bar, legs splayed, pint upright, acting casual.",
+    "refs": ["/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg", "D00"],
+    "prompt": "Attached: the room (pub photo, none of its people) and his face (portrait). Portrait 9:16, wide, low angle from the floorboards. At the dark wood bar, a man of sixty-three with thin sandy-grey hair combed over a pink scalp, bushy grey eyebrows, big ears, red bulbous nose, broken-veined cheeks, grey stubble, in a brown corduroy jacket, mustard knitted tank top and checked shirt, has slid almost off his green leather stool: one arm hooked over the bar holds him up, legs splayed. Pint still upright, not a drop spilled; breezy casual half-smile. Nobody else. Direct flash, hard shadows, grain. No text or logos; pump clips blank.\nThanks."
+  },
+  {
+    "id": "D03",
+    "idea": "Gag 3: frozen at the peak of a backwards fall, stool tipping, pint flying with beer arcing through the air.",
+    "refs": ["/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg", "D00"],
+    "prompt": "Attached: the room (pub photo, none of its people) and his face (portrait). Portrait 9:16, wide, side-on. By the dark wood bar, a man of sixty-three with thin sandy-grey hair combed over a pink scalp, bushy grey eyebrows, big ears, red bulbous nose, broken-veined cheeks, grey stubble, in a brown corduroy jacket, mustard knitted tank top and checked shirt, is frozen mid-air at the peak of a backwards fall: the green leather stool tipping on two legs, his arms and legs flung up, mouth an O. His pint flies above him, beer arcing out. Comic, unhurt. Nobody else. Direct flash, grain. No text or logos; pump clips blank.\nThanks."
+  }
+]

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-13b-P13.mp4",
+ "made": "2026-11-20T17:07:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The grey-haired man on the green stool, leaning on the bar to frame right, lifts his pint toward his mouth in one quick, wobbly swing. He misses: the rim bumps his cheek beside his mouth and a dab of foam lands on his nose. He blinks at the glass, puzzled, then lowers it and settles, leaning on the bar, foam still on his nose. Quiet pub murmur, a tiny clink of glass on stubble. No speech. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P13.jpg",
+ "why": "drunk gag clips, option b: He lifts the pint to drink, misses his mouth and bumps the glass into his cheek, foam on his nose. (Jack 2026-11-20: \"do this\")",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P13.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "13b",
+  "frame": 13,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T17:06:32.859Z"
+ }
+}

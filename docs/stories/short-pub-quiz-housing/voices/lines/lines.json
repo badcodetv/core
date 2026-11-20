@@ -20,14 +20,16 @@
  {
   "key": "04-student-sum",
   "role": "student",
-  "text": "Every night... Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Times three-sixty-five. Times a hundred thousand rooms?",
-  "whisper": true
+  "text": "Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Every night. A hundred thousand rooms?",
+  "whisper": true,
+  "text_r1": "Every night... Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Times three-sixty-five. Times a hundred thousand rooms?"
  },
  {
   "key": "05-student-billions",
   "role": "student",
   "text": "That's billions. That can't be right.",
-  "whisper": true
+  "whisper": true,
+  "cut": "rough cut 2 (Jack, 2026-11-20: \"cut what you think should go\")"
  },
  {
   "key": "06-plasterer-fuckoff",
@@ -39,7 +41,8 @@
   "key": "07-quizmaster-twenty",
   "role": "quizmaster",
   "text": "Twenty seconds.",
-  "whisper": false
+  "whisper": false,
+  "cut": "rough cut 2 (Jack, 2026-11-20: \"cut what you think should go\")"
  },
  {
   "key": "08-banker-billions",
@@ -51,7 +54,8 @@
   "key": "09-banker-bob",
   "role": "banker",
   "text": "Bob.",
-  "whisper": true
+  "whisper": true,
+  "cut": "rough cut 2 (Jack, 2026-11-20: \"cut what you think should go\")"
  },
  {
   "key": "10-bob-noone",
@@ -81,7 +85,8 @@
   "key": "14-banker-gets",
   "role": "banker",
   "text": "Now he gets it.",
-  "whisper": false
+  "whisper": false,
+  "cut": "rough cut 2 (Jack, 2026-11-20: \"cut what you think should go\")"
  },
  {
   "key": "15-plasterer-brick",

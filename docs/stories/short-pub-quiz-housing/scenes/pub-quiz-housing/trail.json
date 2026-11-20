@@ -65,5 +65,13 @@
   "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
   "what": "rough cut 1: twelve picked clips + 16 voice lines, 98 s",
   "rebuild": "python3 scripts/shorts/pq_cut.py --round 1 && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>"
+ },
+ {
+  "at": "2026-11-20T17:12:15+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
+  "what": "rough cut 2: fast voices, cuts, drunk running gag, room sound; 58 s",
+  "rebuild": "python3 scripts/shorts/pq_cut.py --round 2 --lines audio/lines-fast-pick --tight --room && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>"
  }
 ]

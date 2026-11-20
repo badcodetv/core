@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-14b-P14.mp4",
+ "made": "2026-11-20T17:07:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The grey-haired man slumped on the floorboards, one arm over the bar edge beside his pint, legs splayed, grips the bar and heaves. His body rises a few inches, legs scrabbling on the boards, then his grip gives and he slides straight back down to where he started with a bump, still smiling. The pint stays on the bar. He settles, arm still hooked over the bar, and nods to himself. Quiet pub murmur, a thud on the boards. No speech. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P14.jpg",
+ "why": "drunk gag clips, option b: He hauls himself up by the bar, rises a few inches, and slides straight back down to the floor. (Jack 2026-11-20: \"do this\")",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P14.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "14b",
+  "frame": 14,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T17:06:11.205Z"
+ }
+}

@@ -40,6 +40,19 @@ SHOTS = [
     ('lands', '11. The answer lands', '11', 0.3, [], 'The table frozen at Bob\'s sheet'),
     ('wayout', '12. The way out', '12', 0.2, ['13-student-own', '14-banker-gets', '15-plasterer-brick', '16-banker-bricks'], 'The student asks; the banker turns'),
 ]
+# Rough cut 2 (Jack, 2026-11-20: "cut what you think should go"): shots 3 (the pen) and 9 (the nod) out; lines 05, 07, 09
+# and 14 out (marked "cut" in lines.json); the drunk regular's three cutaways in (clip keys D01-D03 in scene.json clip_picks).
+CUT_SHOTS = {'pen', 'nod'}
+CUTAWAYS = [  # (after beat id, beat, title, clip key, in, length, what we see); in/length set from the contact sheet
+    ('q', 'drunk1', 'The drunk: leaning', 'D01', 0.7, 1.6, 'The drunk regular at the bar, leaning; he lurches and catches himself'),
+    ('sum', 'drunk2', 'The drunk: sliding', 'D02', 0.3, 1.2, 'The drunk regular, slid most of the way off his stool'),
+    ('answer', 'drunk3', 'The drunk: going over', 'D03', 0.1, 2.2, 'The drunk regular goes over; the pint lands upright in his hand'),
+]
+CUT_LEN = {c[1]: c[5] for c in CUTAWAYS}
+# The bar filter (Jack, 2026-11-20: "lets add a bar appropriate filter"; read as the voices in a small pub room, a guess):
+# a short early-reflection echo, band-limited; whispers get less room (they are close to the mic).
+ROOM = {'talk': 'highpass=f=90,lowpass=f=9000,aecho=0.85:0.55:23|37|58:0.22|0.15|0.09',
+        'whisper': 'highpass=f=110,lowpass=f=8500,aecho=0.9:0.6:19|31:0.12|0.07'}
 CLAMP = 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)'
 ENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', '-color_range', 'tv',
        '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709']
@@ -55,12 +68,31 @@ def dur(p):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=1); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=1)
+    ap.add_argument('--lines', default='audio/lines', help='voice-line folder under <media> (round 2: audio/lines-fast-pick)')
+    ap.add_argument('--tight', action='store_true', help='round 2 on (Jack: "make the whole thing fast"): lead 0.15, gap 0.1, tail 0.25, hold 1.0')
+    ap.add_argument('--room', action='store_true', help='the bar filter on the voices (ROOM)')
+    a = ap.parse_args()
+    global LINES, LEAD, GAP, TAIL, HOLD
+    LINES = MEDIA / a.lines
+    if a.tight:
+        LEAD, GAP, TAIL, HOLD = 0.15, 0.1, 0.25, 1.0
     cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
     picks = cfg['clip_picks']
     t, beats, vids, events, parts, flags = 0.0, [], [], [], [], []
     stems = {}  # role -> [(t, wav)]
-    for i, (bid, title, ck, tin, keys, see) in enumerate(SHOTS):
+    shots = SHOTS
+    if a.round >= 2:
+        shots = []
+        for bid, title, ck, tin, keys, see in SHOTS:
+            if bid in CUT_SHOTS:
+                continue
+            shots.append((bid, title, ck, tin, [k for k in keys if not LINE_TXT[k].get('cut')], see))
+            for after, cb, ct, cck, cin, _, csee in CUTAWAYS:
+                if after == bid and cck in picks:
+                    shots.append((cb, ct, cck, cin, [], csee))
+        shots = [(b, f'{n + 1}. ' + t.split('. ', 1)[-1], c, i_, k, s_) for n, (b, t, c, i_, k, s_) in enumerate(shots)]
+    for i, (bid, title, ck, tin, keys, see) in enumerate(shots):
         st = t; lt = t + (LEAD if keys else 0); lines = []
         for j, k in enumerate(keys):
             w = LINES / f'{k}.wav'; d = round(dur(w), 3); role = LINE_TXT[k]['role']
@@ -68,7 +100,7 @@ def main():
             lines.append({'i': j, 'who': role, 'name': NAMES[role], 't': round(lt, 3), 'dur': d, 'text': LINE_TXT[k]['text'], 'by': 'jack' if k in JACKS else 'claude'})
             events.append({'stem': f'vox-{role}', 't': round(lt, 3), 'dur': d, 'what': f'{title}: {NAMES[role]}', 'src': str(w)})
             lt += d + (GAP if j < len(keys) - 1 else 0)
-        sd = round((lt + TAIL - st) if keys else HOLD, 3)
+        sd = round((lt + TAIL - st) if keys else CUT_LEN.get(bid, HOLD), 3)
         src = VID / f"{picks[ck]}.mp4"; cd = dur(src) - tin; looped = sd > cd - 0.05
         out = cut / f'v{i:02d}-{bid}.mp4'
         vf = f'scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},{CLAMP}'
@@ -91,7 +123,7 @@ def main():
        '-t', LOGO_D, *ENC, cut / 'v99-logo.mp4')
     parts.append(cut / 'v99-logo.mp4')
     vids.append({'file': str(cut / 'v99-logo.mp4'), 'in': 0, 'start': ls, 'dur': LOGO_D, 'beat': 'logo', 'source': 'logo card', 'looped': False})
-    beats.append({'id': 'logo', 'title': '13. Logo', 'start': ls, 'dur': LOGO_D, 'see': 'The BadCode logo on black', 'lines': []})
+    beats.append({'id': 'logo', 'title': f'{len(shots) + 1}. Logo', 'start': ls, 'dur': LOGO_D, 'see': 'The BadCode logo on black', 'lines': []})
     total = round(ls + LOGO_D, 3)
     (cut / 'list.txt').write_text(''.join(f"file '{p.name}'\n" for p in parts))
     ff('-f', 'concat', '-safe', '0', '-i', cut / 'list.txt', '-c', 'copy', cut / 'picture.mp4')
@@ -99,7 +131,9 @@ def main():
     for role, items in stems.items():
         ins, fl = [], []
         for n, (at, w) in enumerate(items):
-            ins += ['-i', w]; fl.append(f'[{n}]aresample=48000,aformat=channel_layouts=stereo,adelay={int(at * 1000)}|{int(at * 1000)}[s{n}]')
+            ins += ['-i', w]
+            room = (ROOM['whisper' if LINE_TXT[w.stem.rsplit('-', 1)[0] if w.stem not in LINE_TXT else w.stem]['whisper'] else 'talk'] + ',') if a.room else ''
+            fl.append(f'[{n}]aresample=48000,aformat=channel_layouts=stereo,{room}adelay={int(at * 1000)}|{int(at * 1000)}[s{n}]')
         mixin = ''.join(f'[s{n}]' for n in range(len(items)))
         fl.append(f'{mixin}amix=inputs={len(items)}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]')
         st = cut / f'vox-{role}.wav'

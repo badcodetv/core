@@ -1,0 +1,25 @@
+{
+ "round": 2,
+ "jack_round1": "Jack, 2026-11-20 (said in chat, not on the page): speed up everything they say; then lip-sync; add music and background noise; the beginning is flat, no jokes; it drags, cut what should go; a drunk running gag in the background; a bar-appropriate filter.",
+ "plan": [
+  {"h": "Faster: 98 s → 58 s", "items": [
+   "Every line re-voiced fast (two takes each, the quickest one Whisper heard right), silence trimmed; the sum and the banker's billions line nudged 15% faster on top.",
+   "Gaps between lines tightened (0.35 s → 0.1 s)."]},
+  {"h": "Cut", "items": [
+   "Shots: the pen, the nod.",
+   "Lines: \"That's billions. That can't be right.\", \"Twenty seconds.\", \"Bob.\", \"Now he gets it.\"",
+   "The sum shortened to one beat; your CBD ramen line kept."]},
+  {"h": "The drunk regular (new)", "items": [
+   "Three cutaways, worse each time: leaning and lurching after the question; slid off his stool after the sum; going over on the answer, the pint landing upright in his hand."]},
+  {"h": "The bar filter (a guess)", "items": [
+   "Read as the voices sounding in a small pub room: a short room echo, whispers kept closer. Say if you meant a picture filter instead."]},
+  {"h": "Not done yet", "items": [
+   "Lip-sync (step 2), music, pub background noise.",
+   "Opening jokes: yours to write (the team name on the sheet, a quizmaster line before the question)."]},
+  {"h": "You decide", "items": [
+   "Is it fast enough now?",
+   "Keep the drunk gag as it is?",
+   "Room sound on the voices: right, or too much?"]}
+ ],
+ "replies": {}
+}

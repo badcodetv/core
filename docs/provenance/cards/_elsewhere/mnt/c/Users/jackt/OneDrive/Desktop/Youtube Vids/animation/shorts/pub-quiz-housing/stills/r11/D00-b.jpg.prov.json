@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r11/D00-b.jpg",
+ "made": "2026-11-20T17:01:01.587Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Use the attached pub photo for the room and light only; none of its people appear. Portrait 9:16, head and shoulders, face filling the frame: a man of sixty-three with thin sandy-grey hair combed over a pink scalp, bushy grey eyebrows, big ears, red bulbous nose, broken-veined cheeks, grey stubble, in a brown corduroy jacket, mustard knitted tank top and checked shirt, sits at the dark wood bar on a green leather stool, a full pint in front of him. Eyes half shut, lopsided happy grin, head tipped, cheerfully sozzled. Nobody else. Direct on-camera flash, late night, hard shadow, grain. No text or logos; pump clips blank.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "7b40e20e-b300-4158-8017-c8c49b30008a"
+}

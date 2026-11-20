@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-15b-P15.mp4",
+ "made": "2026-11-20T17:08:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The grey-haired man tipping backwards on the green stool, arms flung up, pint held high with beer arcing out of it, falls. In the first second he lands on his back on the floorboards, the stool clattering over beside him, but his raised hand stays perfectly steady: the arc of beer falls back into the glass, which ends upright and full above him. He looks up at it, delighted. Quiet pub murmur, a thud and a wooden clatter. No speech. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P15.jpg",
+ "why": "drunk gag clips, option b: He crashes to the floor, but the airborne beer falls neatly back into the pint he holds up, not a drop lost. (Jack 2026-11-20: \"do this\")",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P15.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "15b",
+  "frame": 15,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T17:07:27.326Z"
+ }
+}
