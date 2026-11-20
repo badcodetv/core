@@ -2,8 +2,35 @@
  "title": "Pub Quiz Clips",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · clips round 1",
  "heading": "The clips: pick one per shot",
- "intro": "Round 2: shot 6 restaged on two separate tables. Pick one.",
+ "intro": "Round 3: shot 6 with the plasterer facing the eavesdroppers. Pick one.",
  "sections": [
+  {
+   "h": "Round 3: shot 6, facing them",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "clip-06-r3",
+     "round": 3,
+     "title": "6. Eavesdroppers, he faces them",
+     "line": "Your note: \"The plasterer's facing the camera, not the people eavesdropping.\" The still now starts with him already turned to them, and he keeps facing them the whole clip.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "06e",
+       "src": "clips/pq-06e-P06v3.mp4",
+       "label": "e: glares, they recoil",
+       "warn": ""
+      },
+      {
+       "id": "06f",
+       "src": "clips/pq-06f-P06v3.mp4",
+       "label": "f: leans in, quiet threat",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 2: shot 6 on two tables",
    "lede": "Your other eleven picks are kept (folded below).",
@@ -290,5 +317,5 @@
    ]
   }
  ],
- "round": 2
+ "round": 3
 }
