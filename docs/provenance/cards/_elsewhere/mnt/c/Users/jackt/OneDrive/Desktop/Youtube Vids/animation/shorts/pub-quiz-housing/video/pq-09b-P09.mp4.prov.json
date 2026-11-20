@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-09b-P09.mp4",
+ "made": "2026-11-20T14:33:58+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Seen over his shoulder, the man in the olive waterproof tilts the answer sheet up toward the man in the suit. The man in the suit closes his mouth, leans in a little, reads with narrowed eyes, then presses his lips together and dips his head once in a reluctant nod. The man in the camouflage jacket and the young man hold still. Bubbles rise slowly in the suit's pint. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P09.jpg",
+ "why": "clips r1, option b: Sheet tilted, pressed lips (Jack: you pick and start the clips)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P09.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "09b",
+  "frame": 9,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T14:32:31.869Z"
+ }
+}

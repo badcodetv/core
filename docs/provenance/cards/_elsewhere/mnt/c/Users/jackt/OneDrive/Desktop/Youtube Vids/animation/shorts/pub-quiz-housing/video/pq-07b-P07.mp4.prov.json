@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-07b-P07.mp4",
+ "made": "2026-11-20T14:33:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The man in the suit slowly turns his pint a little on the table, eyes on the beer. About half a second in he whispers once, lip curling: \"Paying by the night is the dearest way to buy anything. It's billions with a B. Keep up, you morons.\" His lips move only to these words, then close, and he gives a small scornful breath through his nose. The foreground shoulder holds still. Bubbles rise in his lager. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P07.jpg",
+ "why": "clips r1, option b: Turns glass, lip curls (Jack: you pick and start the clips)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P07.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "07b",
+  "frame": 7,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T14:30:30.623Z"
+ }
+}

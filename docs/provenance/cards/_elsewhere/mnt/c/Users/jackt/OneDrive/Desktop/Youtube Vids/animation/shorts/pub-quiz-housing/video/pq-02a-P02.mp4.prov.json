@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-02a-P02.mp4",
+ "made": "2026-11-20T14:34:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The young man in the hoodie, front right, leans a little closer over the answer sheet. About half a second in he whispers once, softly: \"A hundred million? That's loads.\" His lips move only to these words, then close. The other three stay hunched over the sheet, almost still. Froth settles slowly in the pint beside him. Sound: his whisper and a quiet pub murmur. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P02.jpg",
+ "why": "clips r1, option a: Hoodie whispers, others still (Jack: you pick and start the clips)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P02.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "02a",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T14:29:24.831Z"
+ }
+}

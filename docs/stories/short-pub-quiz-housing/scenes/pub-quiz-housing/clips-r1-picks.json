@@ -1,0 +1,254 @@
+{
+ "title": "Pub Quiz Clips",
+ "eyebrow": "BadCode Shorts · Pub Quiz: Housing · clips round 1",
+ "heading": "The clips: pick one per shot",
+ "intro": "Two motions per shot, 8 s each, from the stills I picked (your \"you pick and start the clips\"). Faces, masks and the room checked at the first, middle and last frame: all hold. The sound here is Flow's own; your recorded voices replace it in the cut. Pick one per shot, or note a change.",
+ "sections": [
+  {
+   "h": "Clips",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "clip-01",
+     "title": "1. The question",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "01a",
+       "src": "clips/pq-01a-P01.mp4",
+       "label": "a: Quizmaster reads, card lifts",
+       "warn": ""
+      },
+      {
+       "id": "01b",
+       "src": "clips/pq-01b-P01.mp4",
+       "label": "b: The listeners react",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-02",
+     "title": "2. The huddle starts",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "02a",
+       "src": "clips/pq-02a-P02.mp4",
+       "label": "a: Hoodie whispers, others still",
+       "warn": ""
+      },
+      {
+       "id": "02b",
+       "src": "clips/pq-02b-P02.mp4",
+       "label": "b: Whisper, plasterer glances over",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-03",
+     "title": "3. The pen",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "03a",
+       "src": "clips/pq-03a-P03.mp4",
+       "label": "a: Slow careful pencil strokes",
+       "warn": ""
+      },
+      {
+       "id": "03b",
+       "src": "clips/pq-03b-P03.mp4",
+       "label": "b: Writes, taps, lifts away",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-04",
+     "title": "4. Crossed out",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "04a",
+       "src": "clips/pq-04a-P04.mp4",
+       "label": "a: Eyes down, firm whisper",
+       "warn": ""
+      },
+      {
+       "id": "04b",
+       "src": "clips/pq-04b-P04.mp4",
+       "label": "b: Crosses out, looks up",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-05",
+     "title": "5. The beer mat",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "05a",
+       "src": "clips/pq-05a-P05.mp4",
+       "label": "a: Writing sums, whispering",
+       "warn": ""
+      },
+      {
+       "id": "05b",
+       "src": "clips/pq-05b-P05.mp4",
+       "label": "b: Taps figures, glances up",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-06",
+     "title": "6. Eavesdroppers",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "06a",
+       "src": "clips/pq-06a-P06.mp4",
+       "label": "a: Full turn, they recoil",
+       "warn": ""
+      },
+      {
+       "id": "06b",
+       "src": "clips/pq-06b-P06.mp4",
+       "label": "b: Side glance, quiet threat",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-07",
+     "title": "7. The banker",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "07a",
+       "src": "clips/pq-07a-P07.mp4",
+       "label": "a: Eyes on pint, flat sneer",
+       "warn": ""
+      },
+      {
+       "id": "07b",
+       "src": "clips/pq-07b-P07.mp4",
+       "label": "b: Turns glass, lip curls",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-08",
+     "title": "8. Bob takes the pen",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "08a",
+       "src": "clips/pq-08a-P08.mp4",
+       "label": "a: Draws sheet in, all still",
+       "warn": ""
+      },
+      {
+       "id": "08b",
+       "src": "clips/pq-08b-P08.mp4",
+       "label": "b: Heads turn to watch",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-09",
+     "title": "9. The nod",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "09a",
+       "src": "clips/pq-09a-P09.mp4",
+       "label": "a: Sheet turned, slow nod",
+       "warn": ""
+      },
+      {
+       "id": "09b",
+       "src": "clips/pq-09b-P09.mp4",
+       "label": "b: Sheet tilted, pressed lips",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-10",
+     "title": "10. Pens down",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "10a",
+       "src": "clips/pq-10a-P10.mp4",
+       "label": "a: Card held out, then read",
+       "warn": ""
+      },
+      {
+       "id": "10b",
+       "src": "clips/pq-10b-P10.mp4",
+       "label": "b: Mic flourish, head bows",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-11",
+     "title": "11. The answer lands",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "11a",
+       "src": "clips/pq-11a-P11.mp4",
+       "label": "a: Pint lowered, table freezes",
+       "warn": ""
+      },
+      {
+       "id": "11b",
+       "src": "clips/pq-11b-P11.mp4",
+       "label": "b: Young man leans in",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-12",
+     "title": "12. The way out",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "12a",
+       "src": "clips/pq-12a-P12.mp4",
+       "label": "a: Open hands, suit stares",
+       "warn": ""
+      },
+      {
+       "id": "12b",
+       "src": "clips/pq-12b-P12.mp4",
+       "label": "b: Shrug, suit turns fully",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

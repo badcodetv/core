@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-11a-P11.mp4",
+ "made": "2026-11-20T14:32:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Seen from above, the man in the suit closes his mouth and slowly lowers his pint to the table. Then all four hold almost perfectly still, eyes fixed on the answer sheet, the olive-sleeved hand resting flat on it. The man at the top right holds still. Froth settles slowly in the young man's pint. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P11.jpg",
+ "why": "clips r1, option a: Pint lowered, table freezes (Jack: you pick and start the clips)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P11.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "11a",
+  "frame": 11,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T14:31:21.941Z"
+ }
+}

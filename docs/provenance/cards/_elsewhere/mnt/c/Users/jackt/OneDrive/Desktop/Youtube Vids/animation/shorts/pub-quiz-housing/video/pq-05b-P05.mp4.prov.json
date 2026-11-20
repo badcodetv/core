@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-05b-P05.mp4",
+ "made": "2026-11-20T14:33:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The young man in the hoodie taps the pen on the beer mat at each figure. About half a second in he whispers once, counting: \"Say fifty quid a night. Times three-sixty-five. Times a hundred thousand rooms?\" His lips move only to these words, then close, and his eyes lift up toward the plasterer, unsure. The plasterer holds still. Froth settles slowly in the pint. Shot at 24fps with a 180-degree shutter. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P05.jpg",
+ "why": "clips r1, option b: Taps figures, glances up (Jack: you pick and start the clips)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P05.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "05b",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T14:30:29.958Z"
+ }
+}

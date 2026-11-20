@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-02b-P02.mp4",
+ "made": "2026-11-20T14:33:47+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. About half a second in, the young man in the hoodie whispers once, eyebrows raised: \"A hundred million? That's loads.\" His lips move only to these words, then close. As he finishes, the man in the camouflage jacket shifts his eyes toward him, and the man in the olive waterproof stops his pen above the sheet. The man in the suit holds still. Froth settles slowly in the pint. Sound: his whisper and a quiet pub murmur. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P02.jpg",
+ "why": "clips r1, option b: Whisper, plasterer glances over (Jack: you pick and start the clips)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P02.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "02b",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T14:29:31.589Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/video/pq-10b-P10.mp4",
+ "made": "2026-11-20T14:33:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The quizmaster lowers the microphone a few centimetres, then lifts it back to his face with a small, theatrical flourish of the gloved hand. He brings the white card up and bows his head slightly toward it, as if reading, holding that pose. His body otherwise stays steady. The globe lamp's glow flickers softly at the top left. Shot at 24fps with a 180-degree shutter. Sound: a quiet pub murmur and glasses. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P10.jpg",
+ "why": "clips r1, option b: Mic flourish, head bows (Jack: you pick and start the clips)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/moodboard/P10.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing",
+  "key": "10b",
+  "frame": 10,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-20T14:31:32.869Z"
+ }
+}
