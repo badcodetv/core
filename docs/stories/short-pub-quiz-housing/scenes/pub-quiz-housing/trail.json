@@ -6,5 +6,16 @@
   "url": "https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC",
   "what": "dialogue options: the huddle (three takes, argument only, jokes blank)",
   "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-20-pub-quiz-housing-dialogue-huddle/options.json design/2026-11-20-pub-quiz-housing-dialogue-huddle.html"
+ },
+ {
+  "at": "2026-11-20T11:19:29+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC",
+  "what": "huddle picked: 1D = 1A + 1C",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-20-pub-quiz-housing-dialogue-huddle/options.json design/2026-11-20-pub-quiz-housing-dialogue-huddle.html --notes design/2026-11-20-pub-quiz-housing-dialogue-huddle/notes-r1.json",
+  "decided": [
+   "1A combined with 1C thanks"
+  ]
  }
 ]

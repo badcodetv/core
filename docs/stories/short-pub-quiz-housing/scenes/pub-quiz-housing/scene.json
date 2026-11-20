@@ -3,12 +3,38 @@
  "scene": "pub-quiz-housing",
  "title": "Pub Quiz: Housing",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing",
- "video": {"aspect": "not ruled (9:16 offered)"},
+ "video": {
+  "aspect": "not ruled (9:16 offered)"
+ },
  "beats": [
-  {"id": "question", "t": "0-6", "what": "The quizmaster reads the question and starts the clock"},
-  {"id": "huddle", "t": "6-36", "what": "The table whispers: guesses climb as each person adds what they know"},
-  {"id": "answer", "t": "36-46", "what": "The answer, and where the money went"},
-  {"id": "way-out", "t": "46-54", "what": "The better choice, said at the table"}
+  {
+   "id": "question",
+   "t": "0-6",
+   "what": "The quizmaster reads the question and starts the clock"
+  },
+  {
+   "id": "huddle",
+   "t": "6-36",
+   "what": "The table whispers: guesses climb as each person adds what they know"
+  },
+  {
+   "id": "answer",
+   "t": "36-46",
+   "what": "The answer, and where the money went"
+  },
+  {
+   "id": "way-out",
+   "t": "46-54",
+   "what": "The better choice, said at the table"
+  }
  ],
- "flow_project": null
+ "flow_project": null,
+ "dialogue": {
+  "page": "https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC",
+  "options": "design/2026-11-20-pub-quiz-housing-dialogue-huddle/options.json",
+  "picked": {
+   "d1": "1D"
+  },
+  "round": 1
+ }
 }

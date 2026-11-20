@@ -30,21 +30,24 @@ The next table along leans in to listen; the whispering is to stop them. ⬜ wha
 - **Quizmaster**, into the mic: reads the question. "Thirty seconds." The clock starts on the screen.
 - The table pulls in close. ⬜ the team name on their answer sheet.
 
-### 2. The huddle (6-36 s): guesses climb as each person adds what they know
-Each line is whispered and short; the clock keeps cutting in.
+### 2. The huddle (6-38 s): PICKED, take 1D (Jack, 2026-11-20: "1A combined with 1C")
+From the dialogue page https://claude.ai/artifact/TQ54rNs2whoBWjLo3Z1thC. Whispered and short; about 32 s.
 
-1. **Student** (DRAFT): guesses low: "A hundred million? That's loads."
-   - Conveys: what most of us would guess.
-2. **Plasterer** (DRAFT): "More. I've done three of them B&B jobs for the council this year. They're paying for every room, every night."
-   - Conveys: he has seen the money from the inside, on the job.
-3. **Banker** (DRAFT): "Nightly's the dearest way to buy anything. You're renting it, not buying it. It's billions, not millions."
-   - Conveys: the reasoning, calmly; he's right and he knows the system. ⬜ what the banker lets slip about himself.
-4. **Student** (DRAFT): pushes back: "Billions? On rooms? That's not possible."
-   - Conveys: the slight argument, and the viewer's own doubt.
-5. **Next table** leans in. The table goes silent until they lean back. ⬜
-6. **Bob** (DRAFT): takes the pen. Doesn't argue. Writes a number.
-   - Conveys: he doesn't need to reason it out. ⬜ what Bob says, if anything (Jack: his line).
-7. **Quizmaster**: "Pens down."
+1. **Student** [writes on the sheet, pen in close-up]: "A hundred million? That's loads."
+2. **Plasterer** [crosses it out]: "More. I've done three of them B&B jobs for the council this year. Every room, every night."
+3. **Student** [on a beer mat]: "Every night… Say fifty quid a night. Times three-sixty-five. Times, I don't know, a hundred thousand rooms?" ⬜ the student doing sums on a beer mat.
+4. **Student** [stares at the beer mat]: "That's billions. That can't be right."
+5. **Next table** leans in; the table goes silent until they lean back. ⬜ the eavesdroppers.
+6. **Quizmaster** [off]: "Twenty seconds."
+7. **Banker** [calm, not looking up]: "Nightly's the dearest way to buy anything. It's billions." ⬜ what the banker lets slip about himself.
+8. **Banker** [low]: "Bob."
+9. **Bob** [takes the pen, no hurry]: "I was in one. They paid by the night." ⬜ Bob's line, if any. 🔴 Invented: Jack to confirm against Bob's canon, or Bob only writes.
+10. **Bob** writes a number and turns the sheet so only the table sees.
+11. **Banker** reads it: a small nod.
+12. **Quizmaster**: "Pens down."
+
+- The student's sum is his guess ("say", "I don't know"): fifty × 365 × 100,000 ≈ £1.8 billion, short of the real £2.9 billion, so Bob is still nearer.
+- To trim to ~28 s: drop "Twenty seconds." and "Bob."
 
 ### 3. The answer (36-46 s)
 - **Quizmaster** (DRAFT): "Two point nine billion pounds." Then: "One point eight billion of it on B&Bs and nightly lets."

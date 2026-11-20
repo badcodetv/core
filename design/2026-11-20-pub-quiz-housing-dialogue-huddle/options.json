@@ -104,6 +104,124 @@
    ],
    "drafts": [
     {
+     "id": "1D",
+     "name": "Beer mat, pen and nod (1A + 1C, Jack's pick)",
+     "length": "about 32 s",
+     "total": "~32 s",
+     "bet": "1C's frame (the guesses climb on the sheet, the banker hands it to Bob, a nod instead of a line) with 1A's beer-mat sum in the middle, so the viewer catches the scale before the answer.",
+     "lines": [
+      {
+       "who": "Student",
+       "line": "[writes the number on the sheet, pen in close-up] A hundred million? That's loads.",
+       "tags": [
+        "1C",
+        "all"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Plasterer",
+       "line": "[crosses it out] More. I've done three of them B&B jobs for the council this year. Every room, every night.",
+       "tags": [
+        "1A",
+        "1C"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Student",
+       "line": "[on a beer mat] Every night… Say fifty quid a night. Times three-sixty-five. Times, I don't know, a hundred thousand rooms? [JOKE SLOT: the student doing sums on a beer mat]",
+       "tags": [
+        "1A"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Student",
+       "line": "[stares at the beer mat] That's billions. That can't be right.",
+       "tags": [
+        "1A",
+        "1C"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Next table",
+       "line": "[leans in; the table goes silent until they lean back] [JOKE SLOT: the eavesdroppers]",
+       "tags": [
+        "all"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "[off] Twenty seconds.",
+       "tags": [
+        "1C"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Banker",
+       "line": "[calm, not looking up] Nightly's the dearest way to buy anything. It's billions. [JOKE SLOT: what the banker lets slip about himself]",
+       "tags": [
+        "1A",
+        "1C",
+        "all"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Banker",
+       "line": "[low] Bob.",
+       "tags": [
+        "1C"
+       ],
+       "s": "1"
+      },
+      {
+       "who": "Bob",
+       "line": "[takes the pen, no hurry] I was in one. They paid by the night. [JOKE SLOT: Bob's line, if any]",
+       "tags": [
+        "1A",
+        "1C"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Bob",
+       "line": "[writes a number; turns the sheet so only the table sees]",
+       "tags": [
+        "1C"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Banker",
+       "line": "[reads it; a small nod]",
+       "tags": [
+        "1C"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Quizmaster",
+       "line": "Pens down.",
+       "tags": [
+        "all"
+       ],
+       "s": "1"
+      }
+     ],
+     "notes": [
+      "Fixed from 1A: the plasterer no longer argues both sides. He pushes the guess up and stays there; the doubt is the student's, at his own sum.",
+      "The sum's three numbers are the student's guesses ('say', 'I don't know'); fifty × 365 × 100,000 ≈ £1.8 billion, short of the real £2.9 billion, so Bob still has to be nearer.",
+      "Bob's 'I was in one. They paid by the night.' is invented (open question 2): Jack to confirm against Bob's canon, or Bob says nothing and only writes.",
+      "Every joke slot is still blank for Jack and Kai.",
+      "To trim to ~28 s: drop 'Twenty seconds.' and the banker's 'Bob.'"
+     ]
+    },
+    {
      "id": "1A",
      "name": "The sum on a beer mat",
      "length": "about 32 s",

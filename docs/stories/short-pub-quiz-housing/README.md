@@ -23,7 +23,7 @@ Homelessness costs a fortune already; the money goes on renting rooms by the nig
 | Step | State |
 | --- | --- |
 | Set up | ✅ 2026-11-20 |
-| Script | 🟡 draft 1 (`script.md`): the argument, jokes blank for Jack and Kai |
+| Script | 🟡 draft 1, huddle picked (1D = 1A + 1C); question, table and way out not ruled; jokes blank |
 | Library pieces | ⬜ asked before the first still |
 | Look, sound, voices | ⬜ not decided |
 
