@@ -1,0 +1,152 @@
+{
+ "title": "Pub Quiz Stills",
+ "eyebrow": "BadCode Shorts · Pub Quiz: Housing · round 1",
+ "heading": "The look: the pub and the quizmaster",
+ "intro": "Six looks, two takes each, built in Flow from your Unsplash pub photos (as layout) with clean-room prompts. Every quizmaster mask checked up close: three needed a fix pass (shown). Pick one per row, or note what to change; a note on any row is read as an instruction.",
+ "sections": [
+  {
+   "h": "The quizmaster",
+   "lede": "BadCode in the balaclava, three takes on the outfit.",
+   "groups": [
+    {
+     "slot": "Q1",
+     "title": "The quizmaster: brown tweed three-piece and flat cap",
+     "line": "Early evening, half-full room: quizmaster in a brown tweed three-piece and flat cap, square-on in front of the clock bar back, 35mm at chest height.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Q1-a-fix-a",
+       "src": "r1/Q1-a-fix-a.jpg",
+       "label": "a (collar closed with a navy roll-neck)",
+       "warn": ""
+      },
+      {
+       "id": "Q1-a-fix-b",
+       "src": "r1/Q1-a-fix-b.jpg",
+       "label": "a, second fix",
+       "warn": ""
+      },
+      {
+       "id": "Q1-b",
+       "src": "r1/Q1-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "Q2",
+     "title": "The quizmaster: camel overcoat over a chalk-stripe suit",
+     "line": "Late night, almost empty: quizmaster in a long camel overcoat over a chalk-stripe suit, leaning on the curved bar, low wide 24mm from stool height.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Q2-a-fix-a",
+       "src": "r1/Q2-a-fix-a.jpg",
+       "label": "a (mask fixed)",
+       "warn": ""
+      },
+      {
+       "id": "Q2-a-fix-b",
+       "src": "r1/Q2-a-fix-b.jpg",
+       "label": "a, second fix",
+       "warn": ""
+      },
+      {
+       "id": "Q2-b",
+       "src": "r1/Q2-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "Q3",
+     "title": "The quizmaster: black leather coat, red lamp corner",
+     "line": "Mid-quiz in deep shadow: quizmaster in a black leather three-quarter coat and grey sharkskin suit, lit only by the red fringed lamp, tight 85mm, grainy.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Q3-b",
+       "src": "r1/Q3-b.jpg",
+       "label": "b",
+       "warn": ""
+      },
+      {
+       "id": "Q3-a",
+       "src": "r1/Q3-a.jpg",
+       "label": "a",
+       "warn": "the triangle sits in the middle of the ring; two fixes did not move it. Not usable as is"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The table",
+   "lede": "The four whispering, the next table leaning in.",
+   "groups": [
+    {
+     "slot": "T1",
+     "title": "The table: panelled corner, rain on the window",
+     "line": "Rainy weeknight in the panelled corner: the four huddled at a small table under the crystal wall lamps, calm eye-level 50mm, neighbours leaning in behind.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "T1-a",
+       "src": "r1/T1-a.jpg",
+       "label": "a",
+       "warn": "the brief asked for a mix of ethnicities; Flow gave four white men. I fix that on whichever you pick"
+      },
+      {
+       "id": "T1-b",
+       "src": "r1/T1-b.jpg",
+       "label": "b",
+       "warn": "the brief asked for a mix of ethnicities; Flow gave four white men. I fix that on whichever you pick"
+      }
+     ]
+    },
+    {
+     "slot": "T2",
+     "title": "The table: packed room, over the eavesdroppers' shoulders",
+     "line": "Packed, noisy room: shot over the shoulders of the eavesdropping next table, the four in focus beyond, picture-crowded walls, 35mm, busy.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "T2-a",
+       "src": "r1/T2-a.jpg",
+       "label": "a",
+       "warn": "the brief asked for a mix of ethnicities; Flow gave four white men. I fix that on whichever you pick"
+      },
+      {
+       "id": "T2-b",
+       "src": "r1/T2-b.jpg",
+       "label": "b",
+       "warn": "the brief asked for a mix of ethnicities; Flow gave four white men. I fix that on whichever you pick"
+      }
+     ]
+    },
+    {
+     "slot": "T3",
+     "title": "The table: last orders, flash, from above",
+     "line": "Last orders, on-camera flash: the four seen from slightly above at a small table by the green-stool bar, harsh snapshot light, room emptying.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "T3-a",
+       "src": "r1/T3-a.jpg",
+       "label": "a",
+       "warn": "the brief asked for a mix of ethnicities; Flow gave four white men. I fix that on whichever you pick"
+      },
+      {
+       "id": "T3-b",
+       "src": "r1/T3-b.jpg",
+       "label": "b",
+       "warn": "the brief asked for a mix of ethnicities; Flow gave four white men. I fix that on whichever you pick"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
