@@ -33,6 +33,8 @@ Not decided — run story-style. Every spoken line is an AI Studio voice; a Suno
   nightly-paid lets. Say "B&Bs and nightly-paid lets", never "hotels" alone, never "all council money". Re-check for a
   newer year before posting.
 - Bob is the Camping character; his place at the table is Jack's ask (2026-11-20).
+- **Pollution, every round** (Jack, 2026-11-20: "please constantly check"): before reporting any round, run
+  `scripts/variations/fresh.py --story short-pub-quiz-housing` over every new prompt, line and brief, and say the result in the reply.
 
 ## Library pieces in use (Jack, 2026-11-20)
 - **Real photo as the look:** an Unsplash photo is attached to each Flow call as the layout; the prompt says what happens in
