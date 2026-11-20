@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/T3-a.jpg",
+ "made": "2026-11-20T12:00:47.620Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Portrait 9:16 photograph by the curved dark wood bar from the attached photo, green leather stools pushed aside, a small round table set near the bar. Shot from slightly above, as if standing over them. Four men hunch over one answer sheet, heads together. The weathered man in his fifties in a cracked old waterproof jacket holds the pen; the plasterer in his forties, plaster dust dried on his sleeves, points at the sheet; the banker in his fifties, good suit, tie loose, cups his hand to whisper; the student of about twenty in a hoodie leans in. Empty glasses, crumpled crisp packets. At the next table one man turns his ear towards them. Late, room thinning. Direct on-camera flash, 28mm, hard shadows. No lettering; pump badges blank.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "round 1 look: clean-room prompt, Unsplash layout",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/Vpbp6pl6oGQ.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/Vpbp6pl6oGQ.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0593c983-5153-4a31-bdbe-97b302015c98"
+}

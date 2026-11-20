@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/Q2-b.jpg",
+ "made": "2026-11-20T12:00:09.793Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Portrait 9:16 photograph of the curved dark wood bar in the attached photo, green leather stools in the foreground, brass foot rail, worn floorboards. A man leans one elbow on the bar, body turned three-quarters to the camera, microphone on a black lead raised to his mouth, question cards fanned in the other hand. A small black speaker sits on the bar beside a half-drunk pint. He wears a long camel overcoat open over a charcoal chalk-stripe double-breasted suit and a black open-collar shirt, heavy signet rings over black leather gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Neck tucked into his collar, cuffs over wrists. Late night, room nearly empty, one regular hunched at the far end. Low 24mm lens at stool height. No lettering; chalkboard blank.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "round 1 look: clean-room prompt, Unsplash layout",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/Vpbp6pl6oGQ.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/Vpbp6pl6oGQ.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b896b739-f98d-48ec-9eaa-49412ee2d3ed"
+}

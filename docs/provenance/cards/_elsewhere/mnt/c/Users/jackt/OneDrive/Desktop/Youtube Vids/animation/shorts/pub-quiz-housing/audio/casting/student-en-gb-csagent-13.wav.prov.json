@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/casting/student-en-gb-csagent-13.wav",
+ "made": "2026-11-20T12:34:58+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "A hundred million? That's loads. ... Every night... Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Times three-sixty-five. Times a hundred thousand rooms? ... That's billions. That can't be right. ... So they rent the same rooms every year? Why don't they just own them?",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "en-gb-csagent-13",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "none (plain)"
+ }
+}

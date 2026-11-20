@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r2/T3-b-mix-b.jpg",
+ "made": "2026-11-20T12:17:43.241Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the provided image, change only two of the four men: the young man in the dark hoodie becomes a young Black British man of about twenty, and the plaster-dusted man in his forties becomes a British South Asian plasterer in his forties, still in his plaster-dusted work clothes. Keep the man in the suit, the man in the old waterproof jacket holding the pen, the poses, the table, the flash lighting, the high camera angle and everything else in the image exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack on T3: \"keep this vibe\"; on T1: \"make it diverse, as in add at least one person that is not white\"",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/T3-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/T3-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "a020f3cc-ffa9-48ec-8c46-d703a7e0638a"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/Q3-a-fix-a.jpg",
+ "made": "2026-11-20T12:08:58.316Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the balaclava so it is the same design as the mask in the second image: the red triangle pointing down sits high inside the white ring on the right-hand side of the picture, over the wearer's left eye, and there is only one triangle. Keep the mask navy, keep the head bowed. Keep everything else in the first image exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/Q3-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/Q3-a.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "55e64c67-3c3f-47da-8735-cd21791ea28c"
+}

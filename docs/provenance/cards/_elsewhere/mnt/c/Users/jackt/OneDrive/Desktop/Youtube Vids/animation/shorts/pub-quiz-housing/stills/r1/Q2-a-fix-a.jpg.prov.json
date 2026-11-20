@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/Q2-a-fix-a.jpg",
+ "made": "2026-11-20T12:03:00.213Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the first image, change only the balaclava so it is the same design as the mask in the second image: a full-face knitted balaclava with no eye, nose or mouth holes, no skin showing, a large white ring stitched round the whole face, and one small red triangle pointing down, high inside the ring on the right-hand side of the picture. Keep the mask navy. Keep everything else in the first image exactly the same, preserving the original style, lighting, and composition.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "brand fix: Q2-a came back as a three-hole balaclava with skin",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/Q2-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/Q2-a.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "3b06e5e6-1bb1-43dc-8ffb-4b2e95f9b327"
+}

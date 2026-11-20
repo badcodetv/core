@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r1/Q3-b.jpg",
+ "made": "2026-11-20T12:00:14.916Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Portrait 9:16 photograph in the dark corner from the attached photo: striped banquette, round wooden table, the red fringed lamp glowing. A man stands beside the table, framed from the waist up, head bowed to read a question card held close to the lamp, microphone on a lead at his chin. On the table: two answer sheets with unreadable scribbles, short pencils, a bag of crisps. He wears a black leather three-quarter coat over a slim grey sharkskin suit, a burgundy shirt with a long pointed collar worn open, gold rings over black leather gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Neck tucked into collar, cuffs over wrists. Red lamplight only; drinkers soft shapes behind. 85mm lens, high-ISO grain.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "round 1 look: clean-room prompt, Unsplash layout",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/FxO0uSQDeJk.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/FxO0uSQDeJk.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "59159a1e-9209-47c3-a9dc-292d5b67dd9c"
+}
