@@ -30,21 +30,27 @@ def decode(path):
         capture_output=True, text=True).stdout.strip()
     num, den = (probe.split("/") + ["1"])[:2]
     fps = float(num)/float(den)
-    raw = subprocess.run(["ffmpeg","-v","error","-i",path,"-vf",f"scale={W}:{H}",
-        "-pix_fmt","rgb24","-f","rawvideo","-"], capture_output=True).stdout
-    n = len(raw)//(W*H*3)
-    a = np.frombuffer(raw, np.uint8)[:n*W*H*3].reshape(n, H*W, 3).astype(np.float32)/255.0
-    return a, fps
+    # Streamed in chunks (2026-11-20, Jack: "things are running slow"): decoding a whole 98 s cut to float RGB at once, plus
+    # the copies linearise made, took several GB and swapped the machine for 10+ minutes. Only L and the red mask are kept.
+    proc = subprocess.Popen(["ffmpeg","-v","error","-i",path,"-vf",f"scale={W}:{H}",
+        "-pix_fmt","rgb24","-f","rawvideo","-"], stdout=subprocess.PIPE)
+    frame, Ls, reds = W*H*3, [], []
+    while True:
+        raw = proc.stdout.read(frame*120)
+        n = len(raw)//frame
+        if n == 0: break
+        rgb = np.frombuffer(raw[:n*frame], np.uint8).reshape(n, H*W, 3).astype(np.float32)/255.0
+        lin = linearise(rgb)
+        Ls.append((lin[:,:,0]*0.2126 + lin[:,:,1]*0.7152 + lin[:,:,2]*0.0722).astype(np.float32))
+        reds.append((rgb[:,:,0]/(rgb.sum(axis=2) + 1e-6)) >= 0.8)   # saturated-red mask, per pixel
+    proc.wait()
+    return np.concatenate(Ls), np.concatenate(reds), fps
 
 def linearise(c):
     return np.where(c <= 0.04045, c/12.92, ((c+0.055)/1.055)**2.4)
 
 def analyse(path):
-    rgb, fps = decode(path)
-    lin = linearise(rgb)
-    L = lin[:,:,0]*0.2126 + lin[:,:,1]*0.7152 + lin[:,:,2]*0.0722
-    tot = rgb.sum(axis=2) + 1e-6
-    red = (rgb[:,:,0]/tot) >= 0.8                      # saturated-red mask, per pixel
+    L, red, fps = decode(path)
 
     def transitions(state_L, state_mask=None):
         """Walk frames, holding the last accepted state as reference."""
