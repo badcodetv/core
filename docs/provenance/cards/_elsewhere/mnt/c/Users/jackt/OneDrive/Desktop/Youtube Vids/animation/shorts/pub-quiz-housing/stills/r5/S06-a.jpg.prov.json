@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r5/S06-a.jpg",
+ "made": "2026-11-20T14:00:37.747Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Over-the-shoulder portrait photograph in the pub from the second image. Foreground right: the plasterer from the first image, the same face exactly, in his plaster-dusted grey camouflage jacket, twisted round in his seat, glaring back over his shoulder. Behind him at the neighbouring round table, two other drinkers lean out towards him: a woman in her sixties with short silver hair and round glasses, cupping a hand behind her ear, and a young man with a red beard in a denim jacket, pretending to study his pint. Green leather stools, dark wood bar. Late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "the plasterer's face from the big-face portrait, so it stops drifting",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "f1d1dc44-5239-4780-b5b0-dc7cb3971c09"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r5/S04-b.jpg",
+ "made": "2026-11-20T14:00:24.048Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Close portrait photograph, low over the round pub table from the second image. The plasterer from the first image, the same face exactly (long narrow face, crooked nose, heavy-lidded dark eyes, short black beard greying at the chin, scar through his left eyebrow), in his plaster-dusted grey camouflage jacket, drags a pencil hard through the number on the answer sheet in one heavy line; his dusty hand big in the foreground, his face leaning in above it, jaw set, eyes on the paper. Paper markings unreadable; plain crisp packets with no logos. Late night, direct on-camera flash, hard shadows.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack on S04: \"another famous guy please change him why does this keep happeing\": built from a big-face portrait",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/plasterer-face.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "4119cafc-8c4c-4df9-a870-e85f708b70ad"
+}

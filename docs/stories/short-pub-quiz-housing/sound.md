@@ -1,3 +1,3 @@
 # Pub Quiz: Housing: sound
 
-Not decided — run story-style. Every spoken line is an AI Studio voice; any Suno track is music and sound only.
+The voices are locked in `badcode.md` (Sound). The casting record: `voices/picks.json`, `voices/casting/` (lines, cast lists, designed-voice descriptions) and `scenes/pub-quiz-housing/picks.md`. Music: not decided.

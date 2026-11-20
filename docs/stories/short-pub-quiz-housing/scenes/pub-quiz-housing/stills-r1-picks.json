@@ -2,8 +2,77 @@
  "title": "Pub Quiz Stills",
  "eyebrow": "BadCode Shorts · Pub Quiz: Housing · round 1",
  "heading": "The look: the pub and the quizmaster",
- "intro": "Round 4: every note on the shots answered. Pick a take per row; earlier rounds are folded below.",
+ "intro": "Round 5: the plasterer given his own face, S04 and S06 rebuilt from it.",
  "sections": [
+  {
+   "h": "Round 5: the plasterer",
+   "lede": "Picked and kept: new Bob table, S01-a-mix-a, S02-b-bob-a, S03-a-cuff-a, S05-a, S07. Open: S08, S09, S11 (round 4), S10, S12 (round 3).",
+   "groups": [
+    {
+     "slot": "P5-face",
+     "round": 5,
+     "title": "The plasterer's own face (the reference for his close-ups)",
+     "line": "Why it kept happening: every face in the table photo is tiny (shot from above, flash), so a close-up made Flow fill the face from memory, and memory drifts to famous faces. Fix: a big portrait first, with features of his own, then every close-up is built from it.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "plasterer-face-a",
+       "src": "r5/plasterer-face-a.jpg",
+       "label": "plasterer-face-a",
+       "warn": ""
+      },
+      {
+       "id": "plasterer-face-b",
+       "src": "r5/plasterer-face-b.jpg",
+       "label": "plasterer-face-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "S04-r5",
+     "round": 5,
+     "title": "4. Crossed out, from the portrait",
+     "line": "Your note: \"another famous guy please change him why does this keep happening\".",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S04-a",
+       "src": "r5/S04-a.jpg",
+       "label": "S04-a",
+       "warn": ""
+      },
+      {
+       "id": "S04-b",
+       "src": "r5/S04-b.jpg",
+       "label": "S04-b",
+       "warn": "readable text on the answer sheet (\"ANSWER QUIZ\"): I remove it if you pick this"
+      }
+     ]
+    },
+    {
+     "slot": "S06-r5",
+     "round": 5,
+     "title": "6. Eavesdroppers, from the portrait",
+     "line": "The same plasterer face, so the two shots match.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S06-a",
+       "src": "r5/S06-a.jpg",
+       "label": "S06-a",
+       "warn": ""
+      },
+      {
+       "id": "S06-b",
+       "src": "r5/S06-b.jpg",
+       "label": "S06-b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 4: your notes on the shots",
    "lede": "Kept as picked: S05-a, S07 (\"this vibe and camera shot\"). S10 and S12 unchanged (no Bob in them).",
@@ -680,5 +749,5 @@
    ]
   }
  ],
- "round": 4
+ "round": 5
 }

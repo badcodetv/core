@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/stills/r5/plasterer-face-b.jpg",
+ "made": "2026-11-20T13:58:37.083Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Head-and-shoulders portrait photograph of the plasterer from the attached image, the man in the grey camouflage work jacket thick with dried white plaster dust, sitting at the pub table. Give him an ordinary face of his own, not resembling anyone famous: British South Asian man in his forties, a long narrow face, a slightly crooked nose, heavy-lidded dark eyes, a short black beard going grey at the chin, a small scar through his left eyebrow, receding black hair cut very short, plaster dust on his cheek. Tired, unimpressed expression. Face large in the frame, sharp. Dark wood pub behind, late night, direct on-camera flash.\nThanks.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-housing/pick-table-v2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "cb0b5065-674f-46b5-b248-c28c923248f9"
+}
