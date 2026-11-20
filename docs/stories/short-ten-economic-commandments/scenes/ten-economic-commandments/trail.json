@@ -78,5 +78,13 @@
   "url": "https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG",
   "what": "rough cut 2: all-ten rap e689e000, BadCode rapping on 11 locations, cut on the bar, nightfever, logo tail",
   "rebuild": "python3 scripts/shorts/tec_cut_r2.py --round 2 && python3 scripts/scene/build-timeline.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments <out-dir>"
+ },
+ {
+  "at": "2026-11-20T00:00:00+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG",
+  "what": "rough cut 3, 62 s: song from 1.358 s, all ten rules + fix, no beat-out; each rule = rapper on the number bar, rough-cut-1 clip on the next bar; fix = gloved hands; logo 2.1 s",
+  "rebuild": "python3 scripts/shorts/tec_cut_r3.py --round 3 && python3 scripts/scene/build-timeline.py docs/stories/short-ten-economic-commandments/scenes/ten-economic-commandments <out-dir>"
  }
 ]

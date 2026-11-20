@@ -38,9 +38,9 @@
   "timeline": "https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r2/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r2/preview.mp4",
-  "script": "scripts/shorts/tec_cut_r2.py"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r3/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/ten-economic-commandments/cut/r3/preview.mp4",
+  "script": "scripts/shorts/tec_cut_r3.py"
  },
  "premiere": {
   "current": "r1",

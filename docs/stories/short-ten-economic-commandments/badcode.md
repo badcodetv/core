@@ -9,13 +9,13 @@ A BadCode short (9:16, 74 s): a 90s East Coast rap inspired by a famous "ten com
 money printer. All ten numbered rules (Jack's lyric, 2026-11-19), then the fix. The point: whoever holds the money printer
 will get high on their own supply; the fix is that no human controls the printer.
 
-**State (2026-11-19):** rough cut 2 (`scripts/shorts/tec_cut_r2.py`, `<media>/cut/r2/`) on the timeline page
-https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG, awaiting Jack's notes. BadCode raps on 11 locations, one per rule, cut on
-the bar, nightfever on, logo tail; flash check passes. Takes in the cut are Claude's default (a) until Jack's round-5 picks on
-the stills page https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf are read (dump `picks`, then
-`tec_cut_r2.py --round 3 --picks <json>`). Open questions: a shorter cut for Shorts (vocals end at 61 s); lyric captions;
-bodega neon came out as LOTTO / ATM. Then Premiere (new sequence) and Drive. Rough cut 1 (old 29 s song) is in Premiere as
-`short-ten-economic-commandments-1-tec-r1` and is superseded.
+**State (2026-11-20):** rough cut 3, the **62 s version** (`scripts/shorts/tec_cut_r3.py`, `<media>/cut/r3/`), on the timeline page
+https://claude.ai/artifact/2vysJs9o1JJyPC4HztqzjG, awaiting Jack. All ten rules and the fix, no beat-out; each rule cuts from BadCode
+rapping on location (number bar) to a rough-cut-1 clip (next bar); logo on the last bar. "Add the clips from the last version on top"
+was read as intercut (a guess, flagged on the page). Rapping takes default to a until Jack's round-5 picks on
+https://claude.ai/artifact/5CWLPYrPzkLK9fjHd9vvzf are read (dump `picks`, then `tec_cut_r3.py --picks <json>`). Rough cut 2 (74 s,
+`tec_cut_r2.py`, `<media>/cut/r2/`) is kept. Open: lyric captions; bodega neon reads LOTTO / ATM. Then Premiere (new sequence) and
+Drive. Rough cut 1 (old 29 s song) is in Premiere as `short-ten-economic-commandments-1-tec-r1` and is superseded.
 
 ## Look
 - Status: the 2026-11-19 look is BadCode rapping on real-NYC-style locations, rebuilt in Flow from Jack's Unsplash photos, with
