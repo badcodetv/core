@@ -199,6 +199,21 @@ An invented lookalike of a famous person (Priority Lane's Boris-alike minister, 
 
 Evidence and sources: `docs/google-flow/nano-banana-2.md` (section "A small reference face on a poster drifts to a famous politician") and `docs/stories/shorts/priority-lane/cleanroom/r12/research-likeness.md`. See `clean-room-stills-work`.
 
+## Jack 2026-11-20 "fix all the mistakes and remember them": a cast built from a group shot needs a portrait per person first, and five prompt habits that cause most still faults
+
+On one short (five still rounds) almost every fault traced to process and wording, not pollution (all 35 prompts leak-checked):
+- **A close-up made from a group shot invents the face.** Faces in a wide or overhead group photo are tiny; a close-up
+  built from it drifted to a famous actor twice (two different characters). Before any close-up or clip, make **one
+  big portrait per character** (head and shoulders, face a third of the frame, a few features of his own: nose, beard,
+  scar, hair) and attach it to every shot of that person. The same rule as the lookalike section above, applied to a cast.
+- **A reference with two people in similar clothes merges them.** Two men in dusty camo-looking jackets became one man
+  in three shots. Fix the reference first (one distinct outfit each), then build from it.
+- **Vague crowd words are ignored.** "Mixed ethnicities" at the end of a long prompt gave four white men three times;
+  naming each person (who, age, hair, clothes) worked first time.
+- **Unnamed extras are cloned.** "Two other drinkers" came back as twins; describe each one.
+- **Never put a word that breaks a rule into the prompt.** "Open-collar shirt" on a no-skin character gave a bare chest.
+- Point at a reference by role ("the plasterer's face from image 1"), not "from the first image, the same face".
+
 ## When a Character or reference image is attached, never describe the person's appearance — only what they are doing and their facial expression.
 
 **If a Flow Character is cast or a reference image is attached, write nothing about how the
