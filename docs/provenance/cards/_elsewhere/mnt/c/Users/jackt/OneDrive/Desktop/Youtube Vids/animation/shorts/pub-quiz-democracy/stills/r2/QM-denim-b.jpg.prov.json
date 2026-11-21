@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r2/QM-denim-b.jpg",
+ "made": "2026-11-21T12:43:32.845Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided portrait of the quizmaster, change only the balaclava's cloth: it is now made of faded blue denim, the same washed denim as his western shirt, with visible denim weave and a little stitching at the seams, still covering his whole head and neck with no holes. Keep the thick white ring stitched round the face and the small red triangle over his left eye (on the right of the picture) exactly where they are. The balaclava exactly as in the attached image: no holes, no skin, gloves. Keep everything else in the image exactly the same: the white cowboy hat, the denim shirt, bolo tie, black gloves, microphone, belt buckle, the pub behind him, the light and the framing.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-QM.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-QM.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0ac3bf82-0121-40ca-9fe5-8c611a1a4f0f"
+}

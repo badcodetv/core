@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/QM-b.jpg",
+ "made": "2026-11-21T12:08:55.783Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of the quizmaster in a beamed English country pub at night, his body turned slightly to the left and his masked face turned back to the camera, his head large and sharp in the frame. A navy knitted balaclava covers his entire head and neck, with a thick white ring around the face area and a small red triangle over his left eye, on the right side of the picture. The balaclava exactly as in the attached image: no holes, no skin, gloves. He wears a big white cowboy hat tipped slightly back, a blue denim western shirt with pearl snaps closed to the collar and long sleeves, a bolo tie, and black leather gloves; he holds a black microphone up by his chin in one gloved hand, the other gloved hand resting on a huge oval silver belt buckle just visible at the bottom edge. Background from the pub photo, blurred: heavy dark beams, white plaster between timber posts, a lit candle on a wooden table, an amber lamp. Warm low lamplight, deep shadows. Plain, unmarked surfaces. Natural, slightly grainy real-photo look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "9d600801-5517-4f58-be6d-7c2f5bb85bf9"
+}

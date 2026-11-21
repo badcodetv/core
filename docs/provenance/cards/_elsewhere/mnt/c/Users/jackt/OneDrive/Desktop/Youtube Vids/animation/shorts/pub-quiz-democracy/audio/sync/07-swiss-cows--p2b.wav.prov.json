@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/audio/sync/07-swiss-cows--p2b.wav",
+ "made": "2026-11-21T13:17:33+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Back home, we vote on each thing. <long pause> We had a vote on cow horns.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_e465k0967ygc",
+  "style": "fast, brisk",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

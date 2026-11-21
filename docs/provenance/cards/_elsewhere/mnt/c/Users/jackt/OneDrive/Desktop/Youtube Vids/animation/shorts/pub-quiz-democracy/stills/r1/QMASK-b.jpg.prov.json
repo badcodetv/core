@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/QMASK-b.jpg",
+ "made": "2026-11-21T12:17:41.848Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 low shot from table height in the main room of an old English country pub at night, laid out like the pub photo: dark beams overhead, flagstones, dark wooden tables and chairs, a candle burning on the nearest table. The quizmaster from his portrait stands in the middle distance, slightly to the right of centre, three-quarters toward the camera, microphone held up close in one gloved hand, the other gloved hand open as he reads the question out. Navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture; white cowboy hat; blue denim western shirt with pearl snaps, closed up to the mask; bolo tie; a huge silver belt buckle; black gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. In the foreground left, the backs of heads and shoulders of drinkers at a table looking at him: a Black woman of about 45 with short natural hair in a mustard jumper, chin on her hand; a white man of about 65, bald with a grey fringe at the back, in a maroon V-neck jumper, holding a pint of dark bitter. Further back on the right, a white woman of about 30 with a long brown ponytail in a denim jacket, seen in profile. Pints and plain beer mats on the tables. Warm amber lamplight. All surfaces plain and unmarked. Real-photo look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-QM.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "1f3484fd-69e2-4b56-9d3d-c1947bb6ad89"
+}

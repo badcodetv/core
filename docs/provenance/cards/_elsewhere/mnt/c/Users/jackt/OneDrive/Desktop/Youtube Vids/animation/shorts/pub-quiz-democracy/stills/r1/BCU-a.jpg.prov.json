@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/BCU-a.jpg",
+ "made": "2026-11-21T12:27:10.183Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close-up of Bob, the man from his photo, at the small round pub table: about 50, cropped grey hair, white stubble beard, ruddy weathered face, olive-green hooded waterproof jacket, his face and clothes exactly as in his photo. He leans in over his forearms on the dark wooden table, talking quietly, eyes flicking sideways as if sharing something he should not, a pint of ale cupped in his hands. His face fills the upper part of the frame. At the edges, blurred: a turquoise fleece shoulder on one side, a navy gilet on the other. Background soft, from the table photo: dark beams, warm plaster, a glowing wall lamp. Warm low light. All surfaces plain and unmarked. Real candid photo look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/bob-face.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "74308eab-b081-4cec-a635-f82f82992070"
+}

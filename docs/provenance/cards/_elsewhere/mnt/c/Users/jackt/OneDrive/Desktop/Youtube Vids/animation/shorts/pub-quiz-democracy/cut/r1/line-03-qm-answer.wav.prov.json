@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/cut/r1/line-03-qm-answer.wav",
+ "made": "2026-11-21T13:21:44+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/pqd_cut.py (trim + atempo)",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/audio/casting/03-qm-answer--quizmaster-b.wav",
+ "why": "rough cut 1: the picked take at the fitted tempo",
+ "settings": {
+  "atempo": "1.12"
+ }
+}

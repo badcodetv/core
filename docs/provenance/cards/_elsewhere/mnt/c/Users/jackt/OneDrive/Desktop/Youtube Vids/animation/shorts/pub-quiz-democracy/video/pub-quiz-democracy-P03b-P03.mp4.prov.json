@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P03b-P03.mp4",
+ "made": "2026-11-21T13:12:10+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The blonde woman in the turquoise fleece sits at the dark round table, centre of frame, forearms folded on the tabletop, looking across at the man in the olive jacket whose back fills the left foreground; a tweed sleeve and a hand on a pint at the right edge. She tilts her head, eyebrows up, and says \"I liked both things.\" plainly and earnestly, a small lift of the shoulders on \"both\", then a little nod as if that settles it, and she waits, still smiling. Only her mouth moves for words; the foreground men stay silent and still. Same room, same warm light, only the people already here, the picture clean. Understated, believable; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P03.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P03.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P03b",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:09:24.390Z"
+ }
+}

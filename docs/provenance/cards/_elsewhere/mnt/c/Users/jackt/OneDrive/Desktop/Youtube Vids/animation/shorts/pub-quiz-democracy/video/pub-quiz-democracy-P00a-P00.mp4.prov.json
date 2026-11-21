@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P00a-P00.mp4",
+ "made": "2026-11-21T13:11:56+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "An ivy-covered stone pub on a village street corner at dusk, slate roof against a deep blue sky, warm light in every window, a lantern on each side of the front door, an old street lamp glowing on the left, the empty road across the foreground. A very slow, smooth push in toward the front door. The lamplight in the windows and lanterns flickers softly; a thin low mist drifts slowly across the road from left to right; the ivy leaves barely stir. No other movement. Same building, same light, the street empty, the picture clean. Quiet, photographic, cinematic dusk.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P00.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P00.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P00a",
+  "frame": 19,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:08:13.064Z"
+ }
+}

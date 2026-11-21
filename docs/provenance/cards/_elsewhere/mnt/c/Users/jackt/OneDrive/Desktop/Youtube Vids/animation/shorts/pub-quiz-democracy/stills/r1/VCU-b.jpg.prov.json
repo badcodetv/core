@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/VCU-b.jpg",
+ "made": "2026-11-21T12:24:12.666Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close-up, slightly low angle, of the one-party voter from his portrait: a Black British man of about 70, short grey hair, grey moustache, brown tweed jacket, checked shirt, knitted tie. He sits back in a spindle-back chair with his chest puffed out, one hand pressed flat to his heart, mid-speech, deeply offended but proud. A pint glass in front of him on the small round wooden table. Behind him, soft, the timber-framed corner from the table photo: heavy dark beams, warm walls, amber wall lamps. The edge of an olive-green sleeve at the side of the frame. Warm low light. All surfaces plain and unmarked. Natural real-photo look, slight grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-V.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4479c93b-a836-44dd-a700-17c0ffe7ee56"
+}

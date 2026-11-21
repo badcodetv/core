@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P07a-P07.mp4",
+ "made": "2026-11-21T13:12:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. At the bar: left, the blonde woman in the turquoise fleece with a bum bag, one hand resting on the bar top; centre behind the bar, the red-bearded barman in a black jumper pulling a pint at the hand pump; right, the masked quizmaster in the denim shirt and cream cowboy hat, microphone held low in his right gloved hand. She turns to him and says \"Can I get the crisps but not the nuts?\" at a brisk natural pace, hopeful, then stops and waits. The barman stops mid-pour, hand still on the pump, glass held still, eyes moving to the quizmaster. The quizmaster turns his head a little toward her, the mask still mostly facing the camera, and answers without a mouth: one slow shake of the head and his free gloved hand lifting and making a small flat sideways gesture (timing only: \"Comes as a set.\"). The white ring and the red triangle stay exactly where they are in the first frame. Only her mouth moves for words; the barman's mouth stays closed. Same bar, same light, only these three people, the picture clean. Small, real pub performance; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P07.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P07.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P07a",
+  "frame": 15,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:10:16.340Z"
+ }
+}

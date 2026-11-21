@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P02b-P02.mp4",
+ "made": "2026-11-21T13:13:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. A round pub table with pints and an answer sheet. Centre, the blonde woman in the turquoise fleece with a pink collar faces the camera, one hand raised. Left, the older man in the tweed jacket and green tie; behind right, the man in glasses and the navy gilet; front right, the grey-haired man in the olive waterproof. The men turn their heads toward her and settle into a flat stare. She draws her shoulders up a little, lifts both hands slightly, palms toward them, and says \"I plead the Fifth.\" briskly, then gives a small guilty grin and glances down at her pint. Only her mouth moves for words. The men stay silent with mouths closed: the man in glasses raises one eyebrow, the tweed man leans back a fraction, the man in the waterproof keeps staring without blinking. Same room, same warm light, only the people already in the frame, the picture clean. Understated, believable pub moment; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P02.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P02.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P02b",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:09:03.817Z"
+ }
+}

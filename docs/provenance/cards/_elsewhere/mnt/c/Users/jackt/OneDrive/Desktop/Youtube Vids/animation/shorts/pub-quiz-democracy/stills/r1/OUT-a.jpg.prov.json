@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/OUT-a.jpg",
+ "made": "2026-11-21T12:14:31.828Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 view of the old village pub from the street, the same kind of building as in the photo: a two-storey honey-coloured stone house with a grey stone-slate roof, two brick chimneys, the front wall thick with ivy, dark-framed small-paned windows and a low doorway with a small canopy and two brass lanterns either side. It is dusk: the sky deep blue fading to a last band of pale orange, the street empty and slightly damp. Every downstairs window glows warm amber from lamps inside, with soft shapes of people behind the glass; the lanterns by the door are lit. A plain painted hanging sign board with only a simple picture on it. Pavement and road in the foreground. All signs and boards plain and unmarked. Quiet, real, a little moody, like a real photo taken on a phone at dusk.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/5Ns22AXZ0D4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/5Ns22AXZ0D4.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "db02f817-87cc-4f8f-a57a-6a4575be5fb6"
+}

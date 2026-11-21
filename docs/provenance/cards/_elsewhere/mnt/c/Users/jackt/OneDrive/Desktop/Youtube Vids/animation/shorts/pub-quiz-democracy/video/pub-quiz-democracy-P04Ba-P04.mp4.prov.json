@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P04Ba-P04.mp4",
+ "made": "2026-11-21T13:13:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The older man in the brown tweed jacket, check shirt and green knitted tie sits on a Windsor chair, centre, facing the camera, right hand on his chest; a pint on the round table at frame right, an olive sleeve and hand in the foreground. He leans forward and says firmly, at a brisk natural pace, \"You can't just like things. You get the whole party. Five years.\" On \"whole party\" his hand comes down from his chest and lands flat on the table beside the pint, and stays there. He finishes with his chin up, proud and stubborn, then stops and holds the look. Only his mouth moves for words; the foreground hand stays still. Same room, same warm light, only the people already in the frame, the picture clean. Small, real pub performance; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P04.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P04.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P04Ba",
+  "frame": 9,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:09:43.415Z"
+ }
+}

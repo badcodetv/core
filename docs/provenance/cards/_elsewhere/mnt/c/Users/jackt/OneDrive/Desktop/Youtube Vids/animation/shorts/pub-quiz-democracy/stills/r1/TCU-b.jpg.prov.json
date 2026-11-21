@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/TCU-b.jpg",
+ "made": "2026-11-21T12:22:20.108Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 tight close-up over a blurred shoulder of the tourist from her portrait: a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece zipped over a pink polo. She leans forward on her elbows at the small round wooden table, mid-word, smiling hopefully, eyes moving from one listener to another. In the near foreground left, out of focus, the olive-green waterproof shoulder of the man opposite her; at the right edge, a tweed sleeve resting by a pint. Background from the table photo, soft: heavy dark beams, spindle-back chairs, warm amber wall lamps. Low warm light. All surfaces plain and unmarked. Natural real-photo look, slight grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-T.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "bbecbeeb-2a0f-4c57-94fe-54ff6f5acdca"
+}

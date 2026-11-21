@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/audio/casting/05-tourist-liked--tourist-a.wav",
+ "made": "2026-11-21T13:00:10+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "I liked both things.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_v632ap39kxx0",
+  "style": "fast, brisk",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/BAR-a.jpg",
+ "made": "2026-11-21T12:30:05.814Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 shot at the bar end of an old English country pub at night, built like the bar-end photo: dark ceiling beams over white plaster walls, a rough timber post, a long wooden bar with brass hand pumps whose clips are plain and blank, shelves of unlabelled bottles behind. On the left, side-on to the camera at the bar, is the tourist from her portrait, a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece zipped over a pink polo, leaning on the bar with a purse in hand, ordering. On the right, standing at the bar facing her, three-quarters toward the camera, is the quizmaster from his portrait: navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture; white cowboy hat; blue denim western shirt with pearl snaps closed to the collar; bolo tie; huge silver belt buckle; black gloves; microphone lowered in one hand. The balaclava exactly as in the attached image: no holes, no skin, gloves. Behind the bar in the middle, the barman: a white man of about 30 with short ginger hair and a ginger beard, a black long-sleeved shirt, pulling a pint and glancing between them. The tourist and the quizmaster come from the cast sheet (tourist on its left, quizmaster on its right). Warm low lamplight. All surfaces plain and unmarked. Real candid photo look, slight grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/ULysA-AxywY.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/ULysA-AxywY.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/cast-bar.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "774a5dae-a6b1-47b4-852f-820adaf3d4bb"
+}

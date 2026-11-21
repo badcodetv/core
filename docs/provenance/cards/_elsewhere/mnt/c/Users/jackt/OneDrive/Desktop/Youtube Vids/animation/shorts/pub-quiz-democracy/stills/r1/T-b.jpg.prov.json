@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/T-b.jpg",
+ "made": "2026-11-21T12:10:13.628Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of the tourist, a white American woman of about 55 from Florida, seated in an old English country pub at night, turned three-quarters toward the camera, her face large and sharp in the frame. Sun-faded tan, a highlighted blonde bob tucked behind one ear, pale pink lipstick, eyebrows raised in a cheerful, slightly lost expression as if she has just asked a question. Turquoise fleece zipped up over a pink polo shirt, the polo collar showing; the strap of a small bum bag across her front. Blurred background from the pub photo: dark ceiling beams, white walls between timber posts, a tall lit candle on a table. Warm low amber light. Plain, unmarked surfaces. Natural real-photo look, slight grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "f1082cf8-46db-4a6c-8cd5-2a682a78e96b"
+}

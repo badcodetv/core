@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P05a-P05.mp4",
+ "made": "2026-11-21T13:15:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The man in rimless glasses, short beard, navy quilted gilet over a grey jumper sits centre frame facing the camera, right hand raised mid-explanation; the blurred tweed shoulder and grey head of a listener fill the right foreground. He says calmly and matter-of-factly, at a brisk natural pace, \"Back home we vote on each thing. We had a vote on cow horns.\" with small, tidy hand movements, a tiny shrug of the shoulders on \"cow horns\", then stops and looks at the listener, waiting. Only his mouth moves for words; the listener in the foreground stays still. Same room, same warm wall-lamp light, only the people already in the frame, the picture clean. Small, real pub performance; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P05.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P05.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P05a",
+  "frame": 11,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:14:35.517Z"
+ }
+}

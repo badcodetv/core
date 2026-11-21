@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/outro-pint-logo.mp4",
+ "made": "2026-11-21T13:20:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "copy",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r5/v99-outro.mp4",
+ "why": "the Pub Quiz series outro (Jack 2026-11-21: a second episode of the Pub Quiz), copied so this project is self-contained"
+}

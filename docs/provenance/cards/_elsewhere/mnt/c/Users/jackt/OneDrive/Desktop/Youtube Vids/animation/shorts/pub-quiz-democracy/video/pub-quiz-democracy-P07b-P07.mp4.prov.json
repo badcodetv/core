@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P07b-P07.mp4",
+ "made": "2026-11-21T13:11:56+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. At the bar: left, the blonde woman in the turquoise fleece with a bum bag, hand on the bar top; centre behind the bar, the red-bearded barman in a black jumper at the hand pump with a glass; right, the masked quizmaster in the denim shirt and cream cowboy hat, microphone low in his right gloved hand. She leans toward him a touch and asks with a polite little smile, \"Can I get the crisps but not the nuts?\", then waits. The barman freezes halfway through the pour and raises his eyebrows. The quizmaster turns his head slightly toward her, mask still mostly to the camera, a slow, patient shake of the head, then his free gloved hand comes up and taps the air twice, palm down, as if to say it can't be split (timing only: \"Comes as a set.\"). The white ring and the red triangle never move from where they sit in the first frame. Only her mouth moves for words; the barman's mouth stays closed. Same bar, same light, only the people already here, the picture clean. Understated, believable; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P07.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P07.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P07b",
+  "frame": 16,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:10:32.638Z"
+ }
+}

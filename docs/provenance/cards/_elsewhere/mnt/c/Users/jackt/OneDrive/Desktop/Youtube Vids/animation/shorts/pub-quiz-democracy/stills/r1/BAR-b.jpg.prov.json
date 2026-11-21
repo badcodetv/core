@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/BAR-b.jpg",
+ "made": "2026-11-21T12:31:19.963Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 shot from behind the bar looking out, at the bar end of an old English country pub at night, built like the bar-end photo: dark beams over white walls, a timber post, wooden benches with cushions in the background. On the near side of the frame, the barman from behind and in profile at the left edge: a white man of about 30 with short ginger hair and a ginger beard in a black long-sleeved shirt, holding an empty pint glass under a brass hand pump with a blank clip. Across the bar, both facing each other and both faces visible in three-quarter: on the left, the tourist from her portrait, a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece over a pink polo, holding up two fingers to order; on the right, close beside her and turned toward her, the quizmaster from his portrait in a navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture, a white cowboy hat, a blue denim western shirt with pearl snaps closed to the collar, a bolo tie, a big silver belt buckle and black gloves, one gloved elbow on the bar. The balaclava exactly as in the attached image: no holes, no skin, gloves. The tourist and the quizmaster come from the cast sheet (tourist on its left, quizmaster on its right). Warm low lamplight. All surfaces plain and unmarked. Natural real-photo look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/ULysA-AxywY.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/ULysA-AxywY.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/cast-bar.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8d0d21ae-c6f6-45df-9063-92bb1ab81c47"
+}

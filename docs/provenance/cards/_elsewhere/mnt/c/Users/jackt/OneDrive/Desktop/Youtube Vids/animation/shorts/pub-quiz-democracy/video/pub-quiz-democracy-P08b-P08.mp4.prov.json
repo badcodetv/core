@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P08b-P08.mp4",
+ "made": "2026-11-21T13:13:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, slightly high angle over the room. The masked quizmaster stands in the right foreground in the denim shirt and cream cowboy hat, mask toward the camera, left gloved hand raised, microphone in his right. Beyond him the whole pub faces him: the tall man in the navy cardigan standing, the woman in the striped top half-standing, the bearded man in the check shirt, the blonde woman in the red jacket, the older man in the flat cap at the left, the curly-haired young man at the right, others behind. They shout \"Why?!\" all at once, one word, mouths wide, arms flung up, the woman in stripes rising fully; then they sag in exasperation, the man in the flat cap dropping his hand onto the table, the tall man spreading his arms wide and staying there, all mouths now closed. The quizmaster lets the shout land, then shrugs very slowly, both gloved palms up and out, microphone still held in his right hand, and holds the shrug. The mask keeps facing the camera; the white ring and the red triangle never move from where they sit in the first frame. Same room, same light, only the people already here, the picture clean. Believable pub crowd; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P08.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P08.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P08b",
+  "frame": 18,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:11:46.230Z"
+ }
+}

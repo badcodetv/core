@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-21T13:22:39+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/DEKaVZRAwX8driT4buhyBW",
+  "what": "rough cut 1: 34.7 s, voices fitted to the mouths, the series outro; no music or room sound",
+  "rebuild": "python3 scripts/shorts/pqd_sync.py && python3 scripts/shorts/pqd_cut.py --round 1 && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy <out-dir>"
+ }
+]

@@ -8,7 +8,7 @@
 A BadCode short (9:16, aim 25-35 s), the second episode of the Pub Quiz series, at Jack's ask (2026-11-21): the same
 pub, table, quizmaster and voices. A quiz question shows people splitting from their party when they get to choose one
 issue at a time; the table argues it out. The point: you shouldn't have to take a whole party for five years, and some
-countries already vote issue by issue. State: script draft 1 ([script.md](./script.md)), nothing generated.
+countries already vote issue by issue. State (2026-11-21): **rough cut 1**, 34.7 s, on https://claude.ai/artifact/DEKaVZRAwX8driT4buhyBW. Rebuild: `scripts/shorts/pqd_sync.py` then `scripts/shorts/pqd_cut.py --round 1`. Owed: music, room sound, export.
 
 ## Made fast (Jack, 2026-11-21: "the quickest way possible")
 - Reuse before making: Bob, three locked voices and the pint-glass outro already exist. New clips only where a line

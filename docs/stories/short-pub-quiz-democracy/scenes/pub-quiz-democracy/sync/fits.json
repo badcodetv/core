@@ -1,0 +1,256 @@
+{
+ "02-tourist-fifth": [
+  {
+   "clip": "pub-quiz-democracy-P02a-P02.mp4",
+   "take": "02-tourist-fifth--tourist-a.wav",
+   "on": 1.56,
+   "tempo": 1.0,
+   "words": 3,
+   "of": 4
+  },
+  {
+   "clip": "pub-quiz-democracy-P02b-P02.mp4",
+   "take": "02-tourist-fifth--tourist-a.wav",
+   "on": 2.3,
+   "tempo": 1.0,
+   "words": 3,
+   "of": 4
+  }
+ ],
+ "05-tourist-liked": [
+  {
+   "clip": "pub-quiz-democracy-P03a-P03.mp4",
+   "take": "05-tourist-liked--tourist-a.wav",
+   "on": 1.144,
+   "tempo": 0.95,
+   "words": 3,
+   "of": 4
+  },
+  {
+   "clip": "pub-quiz-democracy-P03b-P03.mp4",
+   "take": "05-tourist-liked--tourist-a.wav",
+   "on": 1.997,
+   "tempo": 0.92,
+   "words": 3,
+   "of": 4
+  }
+ ],
+ "04-voter-both": [
+  {
+   "clip": "pub-quiz-democracy-P04a-P04.mp4",
+   "take": "04-voter-both--voter-a.wav",
+   "on": 1.34,
+   "tempo": 1.0,
+   "words": 3,
+   "of": 4
+  },
+  {
+   "clip": "pub-quiz-democracy-P04b-P04.mp4",
+   "take": "04-voter-both--voter-a.wav",
+   "on": 1.32,
+   "tempo": 1.0,
+   "words": 3,
+   "of": 4
+  }
+ ],
+ "06-voter-like": [
+  {
+   "clip": "pub-quiz-democracy-P04Ba-P04.mp4",
+   "take": "06-voter-like--p1b.wav",
+   "on": 1.8,
+   "tempo": 1.0,
+   "words": 9,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Ba-P04.mp4",
+   "take": "06-voter-like--p1a.wav",
+   "on": 1.799,
+   "tempo": 1.02,
+   "words": 9,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Ba-P04.mp4",
+   "take": "06-voter-like--p2b.wav",
+   "on": 1.903,
+   "tempo": 0.94,
+   "words": 9,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Ba-P04.mp4",
+   "take": "06-voter-like--p2a.wav",
+   "on": 1.78,
+   "tempo": 1.06,
+   "words": 7,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Ba-P04.mp4",
+   "take": "06-voter-like--voter-a.wav",
+   "on": 1.8,
+   "tempo": 1.0,
+   "words": 4,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Bb-P04.mp4",
+   "take": "06-voter-like--p1a.wav",
+   "on": 2.08,
+   "tempo": 1.0,
+   "words": 4,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Bb-P04.mp4",
+   "take": "06-voter-like--p1b.wav",
+   "on": 2.22,
+   "tempo": 1.0,
+   "words": 4,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Bb-P04.mp4",
+   "take": "06-voter-like--p2a.wav",
+   "on": 1.08,
+   "tempo": 1.0,
+   "words": 4,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Bb-P04.mp4",
+   "take": "06-voter-like--p2b.wav",
+   "on": 2.397,
+   "tempo": 0.96,
+   "words": 4,
+   "of": 12
+  },
+  {
+   "clip": "pub-quiz-democracy-P04Bb-P04.mp4",
+   "take": "06-voter-like--voter-a.wav",
+   "on": 2.458,
+   "tempo": 0.91,
+   "words": 4,
+   "of": 12
+  }
+ ],
+ "07-swiss-cows": [
+  {
+   "clip": "pub-quiz-democracy-P05a-P05.mp4",
+   "take": "07-swiss-cows--p2b.wav",
+   "on": 1.14,
+   "tempo": 1.0,
+   "words": 7,
+   "of": 14
+  },
+  {
+   "clip": "pub-quiz-democracy-P05b-P05.mp4",
+   "take": "07-swiss-cows--p2b.wav",
+   "on": 0.72,
+   "tempo": 1.0,
+   "words": 7,
+   "of": 14
+  },
+  {
+   "clip": "pub-quiz-democracy-P05b-P05.mp4",
+   "take": "07-swiss-cows--p1a.wav",
+   "on": 0.796,
+   "tempo": 0.94,
+   "words": 7,
+   "of": 14
+  },
+  {
+   "clip": "pub-quiz-democracy-P05a-P05.mp4",
+   "take": "07-swiss-cows--p1a.wav",
+   "on": 0.961,
+   "tempo": 0.91,
+   "words": 7,
+   "of": 14
+  },
+  {
+   "clip": "pub-quiz-democracy-P05b-P05.mp4",
+   "take": "07-swiss-cows--p1b.wav",
+   "on": 0.961,
+   "tempo": 0.94,
+   "words": 6,
+   "of": 13
+  },
+  {
+   "clip": "pub-quiz-democracy-P05b-P05.mp4",
+   "take": "07-swiss-cows--swiss-a.wav",
+   "on": 0.803,
+   "tempo": 0.91,
+   "words": 6,
+   "of": 13
+  },
+  {
+   "clip": "pub-quiz-democracy-P05a-P05.mp4",
+   "take": "07-swiss-cows--p2a.wav",
+   "on": 0.585,
+   "tempo": 0.91,
+   "words": 6,
+   "of": 14
+  },
+  {
+   "clip": "pub-quiz-democracy-P05b-P05.mp4",
+   "take": "07-swiss-cows--p2a.wav",
+   "on": 0.68,
+   "tempo": 0.91,
+   "words": 6,
+   "of": 14
+  },
+  {
+   "clip": "pub-quiz-democracy-P05a-P05.mp4",
+   "take": "07-swiss-cows--swiss-a.wav",
+   "on": 1.3,
+   "tempo": 1.0,
+   "words": 5,
+   "of": 13
+  },
+  {
+   "clip": "pub-quiz-democracy-P05a-P05.mp4",
+   "take": "07-swiss-cows--p1b.wav",
+   "on": 0.9,
+   "tempo": 1.0,
+   "words": 4,
+   "of": 13
+  }
+ ],
+ "08-bob-why": [
+  {
+   "clip": "pub-quiz-democracy-P06b-P06.mp4",
+   "take": "08-bob-why--bob-1.wav",
+   "on": 2.265,
+   "tempo": 0.97,
+   "words": 3,
+   "of": 4
+  },
+  {
+   "clip": "pub-quiz-democracy-P06a-P06.mp4",
+   "take": "08-bob-why--bob-1.wav",
+   "on": 0.82,
+   "tempo": 1.0,
+   "words": 2,
+   "of": 4
+  }
+ ],
+ "09-tourist-crisps": [
+  {
+   "clip": "pub-quiz-democracy-P07b-P07.mp4",
+   "take": "09-tourist-crisps--tourist-a.wav",
+   "on": 0.487,
+   "tempo": 0.91,
+   "words": 8,
+   "of": 9
+  },
+  {
+   "clip": "pub-quiz-democracy-P07a-P07.mp4",
+   "take": "09-tourist-crisps--tourist-a.wav",
+   "on": 0.724,
+   "tempo": 0.9,
+   "words": 5,
+   "of": 9
+  }
+ ]
+}

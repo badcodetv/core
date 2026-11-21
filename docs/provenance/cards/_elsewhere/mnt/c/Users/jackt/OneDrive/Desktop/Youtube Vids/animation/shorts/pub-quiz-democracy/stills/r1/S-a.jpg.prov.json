@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/S-a.jpg",
+ "made": "2026-11-21T12:10:48.077Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of the Swiss bloke: a white Swiss man of about 40 who works in England. Short, neatly cut brown hair, a closely trimmed brown beard, rimless glasses, a calm, level gaze and a faint polite smile. He wears a navy quilted gilet zipped halfway over a fine grey merino crew-neck jumper. He faces the camera, his face large and sharp in the frame. Behind him, out of focus, the room from the pub photo: low dark beams, flagstone floor, wooden chairs, a glowing fringed lamp. Warm evening lamplight. Plain, unmarked surfaces. Real candid photo, natural skin texture, slight grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "afa535a6-b7df-4bfb-9274-1be725e5fd1e"
+}

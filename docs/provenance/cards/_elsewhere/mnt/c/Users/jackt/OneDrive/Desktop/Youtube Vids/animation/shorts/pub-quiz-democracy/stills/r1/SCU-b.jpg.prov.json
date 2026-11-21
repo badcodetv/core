@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/SCU-b.jpg",
+ "made": "2026-11-21T12:26:07.474Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close-up of the Swiss bloke from his portrait, a white man of about 40 with short neat brown hair, trimmed beard and rimless glasses, in a navy quilted gilet over a grey jumper. He turns his head slightly to one side to explain, mid-word, one hand lifted with fingers counting off a point, completely unhurried. Seen past the blurred shoulder of a tweed jacket in the near foreground. Behind him, soft, the timber-framed corner from the table photo: heavy beams, spindle-back chairs, amber wall lamps. Warm low lamplight. All surfaces plain and unmarked. Natural real-photo look, slight grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-S.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "45260aeb-a06f-4b02-8cf8-5db3e1c8ccc6"
+}

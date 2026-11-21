@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r3/QMASK-faces-a.jpg",
+ "made": "2026-11-21T12:59:20.500Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided pub photo, change only two of the drinkers in the foreground and keep everything else in the image exactly the same, including the quizmaster, the woman in the plum cardigan writing, the table, the light and the framing. The man in the navy fleece on the left becomes a heavier-set South Asian man of about 58 with a round face, a grey-flecked short beard, thick black-rimmed glasses and receding grey-black hair, still in a navy fleece, still turned toward the front. The young man on the right in the check shirt becomes a broad white man of about 45 with a shaved head, a full dark-brown beard with a grey streak, a crooked nose and ruddy cheeks, in a mustard-yellow wool jumper, still holding his pint and looking toward the front. Both are ordinary, unknown people with plain, everyday faces.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r2/QMASK-a-denim-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r2/QMASK-a-denim-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "1511fa9c-a757-4409-a7fe-8a14bb182962"
+}

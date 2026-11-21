@@ -39,7 +39,8 @@
  "flow_project": "8fa2bbdc-7db6-49b9-893b-cc7b0bd06102",
  "boards": {
   "stills": "https://claude.ai/artifact/7DQ4wzcfrir5hTSJBzWoCK",
-  "voices": "https://claude.ai/artifact/2M79vGbmpHy163Gg15axQo"
+  "voices": "https://claude.ai/artifact/2M79vGbmpHy163Gg15axQo",
+  "timeline": "https://claude.ai/artifact/DEKaVZRAwX8driT4buhyBW"
  },
  "still_picks": {
   "QM": "r2/QM-denim-a",
@@ -62,5 +63,10 @@
   "voter": "voice_s2j90utnw3w4",
   "swiss": "voice_e465k0967ygc",
   "bob": "Algenib + bob-algenib.md (3.1)"
+ },
+ "cut": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/cut/r1/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/cut/r1/preview.mp4",
+  "script": "scripts/shorts/pqd_sync.py; scripts/shorts/pqd_cut.py --round 1"
  }
 }

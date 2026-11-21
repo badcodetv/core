@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/TABLE-b.jpg",
+ "made": "2026-11-21T12:20:27.781Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 slightly high view looking down at a small round wooden pub table where four people sit, in the timber-framed room from the table photo: dark beams, warm plaster walls, spindle-back chairs, amber wall lamps. On the table: four pints, two empty crisp packets in plain foil, plain beer mats, a blank answer sheet with a pencil lying across it. The tourist from her portrait sits at the top of the frame facing the camera, a white American woman of about 55 with a sun-faded tan and highlighted blonde bob, in a turquoise fleece zipped over a pink polo, smiling brightly and pointing at the answer sheet. The other three have all turned their heads to look at her, faces visible: lower left, the one-party voter from his portrait, a Black British man of about 70, short grey hair, grey moustache, brown tweed jacket, checked shirt, knitted tie, leaning back with arms folded; lower right, the Swiss bloke from his portrait, a white man of about 40, short neat brown hair, trimmed beard, rimless glasses, navy quilted gilet over a grey jumper, one hand on his pint; middle right, Bob, the man from his photo, about 50, cropped grey hair, white stubble beard, olive-green hooded waterproof jacket, face and clothes exactly as in his photo, mouth slightly open. Warm low light. All surfaces plain and unmarked. Real-photo look, slight grain. The four faces come from the cast sheet, left to right: the tourist, the Swiss bloke, the one-party voter, Bob; each keeps the face and clothes from the sheet.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/cast-table.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ad255a10-199b-4d3b-a1f5-f249721e5409"
+}

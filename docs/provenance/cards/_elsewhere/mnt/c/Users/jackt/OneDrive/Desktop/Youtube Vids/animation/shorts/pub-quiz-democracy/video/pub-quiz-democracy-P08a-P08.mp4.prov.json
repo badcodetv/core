@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P08a-P08.mp4",
+ "made": "2026-11-21T13:12:28+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, slightly high angle over the room. The masked quizmaster stands in the right foreground in the denim shirt and cream cowboy hat, mask turned toward the camera, left gloved hand raised, microphone in his right. Beyond him the whole pub faces him: the tall man in the navy cardigan standing and leaning forward, the woman in the striped top half out of her seat with an arm up, the bearded man in the check shirt pointing, the blonde woman in the red jacket, the older man in the flat cap seated at the left, the young curly-haired man at the right, more drinkers behind. All together they shout \"Why?!\" at him, every mouth open on the same single word, hands thrown up, a couple rising from their chairs, then they hold there, glaring, mouths closing. The quizmaster answers with a slow shrug, shoulders rising, both gloved palms turning up, microphone still in his right hand. The mask keeps facing the camera; the white ring and the red triangle stay exactly where they are in the first frame. Same room, same lamp light, only the people already here, the picture clean. Real pub crowd, believable; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P08.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P08.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P08a",
+  "frame": 17,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:10:45.756Z"
+ }
+}

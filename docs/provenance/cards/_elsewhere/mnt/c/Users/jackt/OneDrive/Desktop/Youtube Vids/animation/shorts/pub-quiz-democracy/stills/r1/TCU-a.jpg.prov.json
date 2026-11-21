@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/TCU-a.jpg",
+ "made": "2026-11-21T12:21:26.858Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close-up of the tourist from her portrait at the small round pub table: a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece zipped over a pink polo. Her face fills the upper middle of the frame; she is talking, eyebrows up, one hand open in front of her as she explains something with total sincerity. Her pint of pale ale sits in front of her on the dark wooden table. At the left edge, out of focus, the brown tweed shoulder of the man beside her; at the right edge, the navy quilted shoulder of another. Behind her, soft, the timber-framed corner from the table photo: dark beams, warm plaster wall, a glowing wall lamp. Warm low light on her face. All surfaces plain and unmarked. Real candid photo look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-T.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "eaf2ec0b-65e0-4a29-b891-dea529fbdfd6"
+}

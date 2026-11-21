@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r4/P08-eye-a.jpg",
+ "made": "2026-11-21T13:04:58.808Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided pub photo, change only the red triangle on the quizmaster's denim balaclava: it is on the wrong eye. Move it to his other eye, his left eye, which in this view is on the right-hand half of the white ring, high up near the top right of the ring. Remove it completely from where it is now so there is only one triangle. Keep everything else in the image exactly the same: the white ring, the denim mask, his hat, clothes and shrug, every shouting drinker, the room, the light and the framing.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P08.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P08.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "5592fb4a-c4b9-4a10-ad95-4784a9e6a002"
+}

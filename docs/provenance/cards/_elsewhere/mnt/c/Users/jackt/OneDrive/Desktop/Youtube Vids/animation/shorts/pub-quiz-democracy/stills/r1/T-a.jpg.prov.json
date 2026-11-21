@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/T-a.jpg",
+ "made": "2026-11-21T12:09:40.528Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of the tourist: a white American woman of about 55 from Florida on holiday in England. Sun-faded tan with fine lines from years of sunshine, a highlighted blonde chin-length bob, small gold stud earrings, a friendly open smile that looks a touch unsure of where she is. She wears a turquoise fleece zipped up to the collarbone with the collar of a pink polo shirt folded out over it; the strap of a bum bag crosses her chest. She faces the camera, her face large and sharp in the frame. Behind her, soft and out of focus, the room from the pub photo: low dark beams, flagstones, wooden chairs, a warm fringed lamp. Warm evening lamplight from one side. Plain, unmarked surfaces. Real candid photo, natural skin, slight grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4130ccfc-1482-498c-a374-ca948c783184"
+}

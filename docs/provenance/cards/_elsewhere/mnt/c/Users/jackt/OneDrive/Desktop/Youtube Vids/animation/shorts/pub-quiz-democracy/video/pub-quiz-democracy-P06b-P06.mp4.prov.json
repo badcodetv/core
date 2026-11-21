@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P06b-P06.mp4",
+ "made": "2026-11-21T13:13:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The grey-haired man in the olive waterproof sits at a small round pub table, centre, right hand on the tabletop beside a pint and a red cup; a blurred tweed shoulder in the left foreground. He glances down at his pint for a moment, looks up and says \"So why can't we?\" flat and quiet, then stays perfectly still for a beat and lets his eyes move slowly from one side of the table to the other, eyebrows lifting slightly, waiting for someone to answer. Only his mouth moves for words; the foreground shoulder stays still. Same room, same warm light, only the people already here, the picture clean. Understated, believable; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P06.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P06.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P06b",
+  "frame": 14,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:10:46.905Z"
+ }
+}

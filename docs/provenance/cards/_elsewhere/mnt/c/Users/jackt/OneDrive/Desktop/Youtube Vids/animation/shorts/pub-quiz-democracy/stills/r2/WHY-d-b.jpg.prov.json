@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r2/WHY-d-b.jpg",
+ "made": "2026-11-21T12:47:42.381Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 view from beside the bar of an old English country pub at night, looking out over the room, laid out like the pub photo: low dark beams, timber posts, flagstones, dark wooden tables and chairs, candles and an amber lamp. In the foreground right, at the bar, the quizmaster from his portrait in three-quarter view, giving a slow shrug, both gloved hands turned up, microphone in one of them: faded blue denim balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture; white cowboy hat; blue denim western shirt with pearl snaps closed to the collar; bolo tie; huge silver belt buckle; black gloves. The denim balaclava exactly as in his portrait: no holes, no skin, gloves. Across the room the drinkers all face toward him and toward the camera, all shouting at him at once, mouths wide open, hands thrown up in disbelief: a Black man of about 55 with a short grey beard in a navy cardigan; a white woman of about 30 with a dark brown bob in a striped Breton top; a white man of about 75 with thin white hair and a brown flat cap pushed back, in a corduroy jacket; a South Asian man of about 40 with a black beard in a checked flannel shirt; a white woman of about 50 with a blonde ponytail in a red fleece; a white man of about 25 with curly black hair in a plain grey sweatshirt. Some half-standing, one jabbing a finger at him. Warm low lamplight, deep shadows in the corners. All surfaces plain and unmarked. Natural real-photo look, slight grain. Facing the camera or not, the red triangle is always over his own left eye.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-QM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "a9a950c7-73e2-48e0-b1ec-fa0d88ecd602"
+}

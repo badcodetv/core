@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/SCU-a.jpg",
+ "made": "2026-11-21T12:25:13.369Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close-up of the Swiss bloke from his portrait at the small round pub table: a white man of about 40, short neat brown hair, trimmed brown beard, rimless glasses, navy quilted gilet over a grey merino jumper. He is talking calmly, hands loosely together on the dark wooden table beside a half-drunk pint, a patient, reasonable expression. His face fills the upper part of the frame. At the left edge, blurred, a brown tweed shoulder; at the right, a turquoise fleece sleeve. Background soft, from the table photo: dark timber beams, warm plaster, a glowing wall lamp. Warm low light, a small reflection of the lamp in his glasses. All surfaces plain and unmarked. Real candid photo look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/R6ddisVdIfU.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-S.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d3ec0de3-9453-4588-aea0-48198f377ca9"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r2/QMASK-d-a.jpg",
+ "made": "2026-11-21T12:45:18.767Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 view across the main room of an old English country pub at night, laid out like the pub photo: low dark ceiling beams on timber posts, worn flagstone floor, dark wooden tables and spindle-back chairs, a fringed lamp and candles glowing. At the far end, facing the camera and standing tall, is the quizmaster from his portrait, framed between two timber posts, holding a black microphone to his mouth and raising a gloved finger as he asks the question. He wears a faded blue denim balaclava with a white ring around the face and a small red triangle over his left eye, on the right side of the picture, a white cowboy hat, a blue denim western shirt with pearl snaps closed to the collar, a bolo tie, a huge silver belt buckle and black gloves. The denim balaclava exactly as in his portrait: no holes, no skin, gloves. In the foreground, seen from behind and the side at their tables: a white woman of about 60 with a grey pixie cut in a plum cardigan, pencil poised over a sheet of paper; a South Asian man of about 35 with short black hair and a navy fleece, turned in profile toward the front; a white man of about 25 with messy ginger hair in a green check flannel shirt, half a pint of amber ale in hand. Pints, beer mats and blank answer sheets on the tables. Warm low lamplight, shadowy corners. All surfaces plain and unmarked. Real candid photo look, slight grain. Facing the camera or not, the red triangle is always over his own left eye.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-QM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9c9fe08b-aaec-4604-bf3c-e3a42d1d8c6d"
+}

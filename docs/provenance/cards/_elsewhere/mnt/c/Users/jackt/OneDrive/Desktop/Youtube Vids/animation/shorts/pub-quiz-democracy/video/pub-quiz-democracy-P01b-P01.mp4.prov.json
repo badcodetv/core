@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P01b-P01.mp4",
+ "made": "2026-11-21T13:12:28+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The masked quizmaster stands at the back of the room between the timber posts, facing the camera: denim shirt, cream cowboy hat, microphone in his right gloved hand under the chin of the mask, left index finger raised. In the foreground the grey-haired woman in the plum cardigan writes, the man in glasses and the navy jumper sits behind her, the bald bearded man in the mustard jumper holds his pint on the right. The quizmaster brings the microphone up, cocks his head to one side, then delivers his question with his body only: a slow wag of the raised finger, a little lean forward, a tilt of the hat, a final small point toward the tables, about six seconds (timing only: \"Round two. Florida, twenty twenty. They voted Trump. What else did they vote for, same ballot?\"), then he settles, finger still up. The mask keeps facing the camera; the white ring and the red triangle never move from where they are in the first frame. The drinkers look up one by one: first the bearded man, setting his pint down slowly, then the man in glasses, then the woman, pen paused over the sheet, one eyebrow lifting. Mouths closed, eyes on him. Candle flame flickers. Same room, same light, only the people already here, the picture clean. Small, believable pub performance; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P01.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P01.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P01b",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:08:40.041Z"
+ }
+}

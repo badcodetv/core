@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/video/pub-quiz-democracy-P04b-P04.mp4",
+ "made": "2026-11-21T13:11:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The older man in the brown tweed jacket, check shirt and green knitted tie sits on a Windsor chair, centre, facing the camera, right hand on his chest; a pint on the round table at frame right, an olive sleeve and hand in the foreground. He narrows his eyes, tilts his head a little, and says \"So they wanted both?\" in honest confusion, his hand leaving his chest and opening palm up toward the table, then he holds the look, slowly shaking his head once. Only his mouth moves for words; the foreground hand stays put. Same room, same warm light, only the people already here, the picture clean. Understated, believable; photographic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P04.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/moodboard/P04.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-pub-quiz-democracy/scenes/pub-quiz-democracy",
+  "key": "P04b",
+  "frame": 8,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T13:09:26.988Z"
+ }
+}

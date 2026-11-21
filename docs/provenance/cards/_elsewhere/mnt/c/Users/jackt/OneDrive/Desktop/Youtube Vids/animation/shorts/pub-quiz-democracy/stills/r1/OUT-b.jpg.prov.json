@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/OUT-b.jpg",
+ "made": "2026-11-21T12:15:11.578Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 low three-quarter view of the ivy-covered stone pub from across a narrow village street at dusk, the same kind of building as in the photo: golden stone walls, a steep grey slate roof with two brick chimneys, ivy spilling over the front, small dark-framed windows. The ground-floor windows glow deep warm orange; through one a hanging lamp and the edge of a beam can be seen. A lit lantern by the open doorway throws a pool of light onto the pavement. An old black lamp post at the street corner, its lamp glowing. The sky is dark blue with a few thin clouds; a little mist low over the road. All surfaces plain, the hanging sign showing only a simple faded picture. Real-photo look, calm, evening chill.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/5Ns22AXZ0D4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/5Ns22AXZ0D4.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d7aef298-ca89-406c-aa01-e52cb48e5c9e"
+}

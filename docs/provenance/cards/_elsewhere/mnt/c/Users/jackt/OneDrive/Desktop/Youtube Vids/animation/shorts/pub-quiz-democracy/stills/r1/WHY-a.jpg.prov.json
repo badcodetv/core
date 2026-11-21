@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy/stills/r1/WHY-a.jpg",
+ "made": "2026-11-21T12:32:33.335Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 wide view down the length of an old English country pub at night, laid out like the pub photo: low dark beams on timber posts, flagstone floor, dark wooden tables and spindle-back chairs, candles and a fringed lamp glowing. At the far end, at the bar, the quizmaster from his portrait faces the room with a slow shrug, both gloved hands turned up, microphone in one of them: navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture; white cowboy hat; blue denim western shirt with pearl snaps closed to the collar; bolo tie; huge silver belt buckle; black gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Every drinker at the tables has twisted round in their seat toward him, faces seen in profile and three-quarter: a South Asian woman of about 25 with long black hair in a mustard cardigan; a white man of about 70 with white hair and a sleeveless argyle jumper over a shirt; a Black woman of about 35 with long braids in a burgundy roll-neck; a white man of about 45, bald, in a waxed green jacket; an East Asian man of about 30 with short black hair in a grey hoodie; a white woman of about 60 with curly red hair and a cream cable-knit jumper; a white man of about 20 with a blond buzz cut in a plain navy rugby shirt. All of them are shouting at him at once, mouths wide open, hands thrown up in disbelief, pints raised. Warm low lamplight. All surfaces plain and unmarked. Real candid photo look, slight grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/lX31bAy6ML0.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/portrait-QM.jpg",
+   "/home/jackt/.cache/badcode-refs/pub-quiz-democracy/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5146fc0b-afc0-426f-ab1d-379b40a621d0"
+}
