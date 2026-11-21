@@ -1,0 +1,16 @@
+{
+ "story": "short-pub-quiz-democracy",
+ "scene": "pub-quiz-democracy",
+ "title": "Pub Quiz: Democracy",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-democracy",
+ "video": {"aspect": "9:16", "model": "Omni 1.2 Flash", "mode": "Frames", "duration": 8},
+ "beats": [
+  {"id": "question", "t": "0-5", "what": "The quizmaster asks what Florida voted for on the Trump ballot"},
+  {"id": "guesses", "t": "5-13", "what": "The table guesses from their own lives"},
+  {"id": "answer", "t": "13-17", "what": "A $15 minimum wage, 61%"},
+  {"id": "argument", "t": "17-27", "what": "They wanted both; here you can't; Switzerland votes on each thing"},
+  {"id": "way-out", "t": "27-31", "what": "So why can't we?"}
+ ],
+ "flow_project": "8fa2bbdc-7db6-49b9-893b-cc7b0bd06102",
+ "boards": {}
+}

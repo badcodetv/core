@@ -1,0 +1,3 @@
+# Pub Quiz: Democracy: picks and rulings
+
+- **2026-11-21, Jack:** "you can't pick and choose, you have to wait 5 years and pick a party instead of vote on each topic/policy as it happens"; present it "so it is not just listing facts", like the pub quiz did, "whilst having people discuss the ideas". Picked "Pub Quiz: Democracy" from three formats (also The Takeaway, The House Share): "let's try and make it in the quickest way possible". Set up as its own short with the first Pub Quiz's pub, cast, voices, Flow project and library pieces carried over at his ask. Script draft 1 written (Claude), every joke slot blank.
