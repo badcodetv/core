@@ -1,9 +1,36 @@
 {
  "title": "Pub Quiz Democracy Stills",
  "eyebrow": "BadCode Shorts \u00b7 Pub Quiz: Democracy",
- "heading": "Stills, round 2: the denim mask",
- "intro": "Your note \"make his mask denim\" (the brand lets the mask's colour and cloth change; the white ring and the triangle over his left eye stay). Your other picks are in: T-b, S-a, V-b, OUT-b, TABLE-a, TCU-b, VCU-b, SCU-b, BCU-b. Every quizmaster shot redone in denim, masks checked zoomed. Pollution check: clean apart from the brand's own mask wording.",
+ "heading": "Stills, round 3: no famous faces",
+ "intro": "Your note on the question shot, \"check for famous faces\": the young ginger man and the man in the navy fleece both had a well-known-actor look (my guess), so both now have their own faces (glasses and a grey beard; a shaved head and a streaked beard). Everything else is your picks.",
  "sections": [
+  {
+   "h": "Round 3: the question shot, new faces",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "QMASK3",
+     "title": "1. The question, ordinary faces",
+     "line": "My pick: QMASK-faces-a (overrule here).",
+     "kind": "image",
+     "round": 3,
+     "opts": [
+      {
+       "id": "QMASK-faces-a",
+       "src": "s/QMASK-faces-a.jpg",
+       "label": "QMASK-faces-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "QMASK-faces-b",
+       "src": "s/QMASK-faces-b.jpg",
+       "label": "QMASK-faces-b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Round 2: the quizmaster in denim",
    "lede": "Each shot he's in, redone.",
@@ -386,5 +413,5 @@
    ]
   }
  ],
- "round": 2
+ "round": 3
 }

@@ -1,0 +1,174 @@
+{
+ "title": "Pub Quiz Democracy Voices",
+ "eyebrow": "BadCode Shorts \u00b7 Pub Quiz: Democracy",
+ "heading": "Voices, round 1",
+ "intro": "Every line in two designed voices per new role (plain reads, style \"fast, brisk\"). Words checked by Whisper. I've picked and carried on to the clips; overrule here.",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "voice-quizmaster",
+     "title": "The quizmaster (American)",
+     "line": "Designed voices: quizmaster-a: A man in his fifties from Texas, with a big, booming voice, who speaks plainly. / quizmaster-b: A man in his forties from the American South, with a deep, loud, cheerful voice, who speaks plainly.  My pick: quizmaster-b (overrule here).",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "quizmaster-a",
+       "src": "a/01-qm-question--quizmaster-a.mp3",
+       "label": "quizmaster-a: qm-question",
+       "warn": ""
+      },
+      {
+       "id": "quizmaster-a",
+       "src": "a/03-qm-answer--quizmaster-a.mp3",
+       "label": "quizmaster-a: qm-answer",
+       "warn": ""
+      },
+      {
+       "id": "quizmaster-a",
+       "src": "a/10-qm-set--quizmaster-a.mp3",
+       "label": "quizmaster-a: qm-set",
+       "warn": ""
+      },
+      {
+       "id": "quizmaster-b",
+       "src": "a/01-qm-question--quizmaster-b.mp3",
+       "label": "quizmaster-b: qm-question \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "quizmaster-b",
+       "src": "a/03-qm-answer--quizmaster-b.mp3",
+       "label": "quizmaster-b: qm-answer \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "quizmaster-b",
+       "src": "a/10-qm-set--quizmaster-b.mp3",
+       "label": "quizmaster-b: qm-set \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-tourist",
+     "title": "The Florida tourist",
+     "line": "Designed voices: tourist-a: A woman in her fifties from Florida, with a warm, bright voice, who speaks plainly. / tourist-b: A woman in her forties from Tampa, Florida, with a low, relaxed voice, who speaks plainly.  My pick: tourist-a (overrule here).",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "tourist-a",
+       "src": "a/02-tourist-fifth--tourist-a.mp3",
+       "label": "tourist-a: tourist-fifth \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "tourist-a",
+       "src": "a/05-tourist-liked--tourist-a.mp3",
+       "label": "tourist-a: tourist-liked \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "tourist-a",
+       "src": "a/09-tourist-crisps--tourist-a.mp3",
+       "label": "tourist-a: tourist-crisps \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "tourist-b",
+       "src": "a/02-tourist-fifth--tourist-b.mp3",
+       "label": "tourist-b: tourist-fifth",
+       "warn": ""
+      },
+      {
+       "id": "tourist-b",
+       "src": "a/05-tourist-liked--tourist-b.mp3",
+       "label": "tourist-b: tourist-liked",
+       "warn": ""
+      },
+      {
+       "id": "tourist-b",
+       "src": "a/09-tourist-crisps--tourist-b.mp3",
+       "label": "tourist-b: tourist-crisps",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-voter",
+     "title": "The one-party voter",
+     "line": "Designed voices: voter-a: A retired man in his late sixties from the north-east of England, with a low voice, who speaks plainly. / voter-b: A retired man in his seventies from Yorkshire, with a gruff voice, who speaks plainly.  My pick: voter-a (overrule here).",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "voter-a",
+       "src": "a/04-voter-both--voter-a.mp3",
+       "label": "voter-a: voter-both \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "voter-a",
+       "src": "a/06-voter-like--voter-a.mp3",
+       "label": "voter-a: voter-like \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "voter-b",
+       "src": "a/04-voter-both--voter-b.mp3",
+       "label": "voter-b: voter-both",
+       "warn": ""
+      },
+      {
+       "id": "voter-b",
+       "src": "a/06-voter-like--voter-b.mp3",
+       "label": "voter-b: voter-like",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-swiss",
+     "title": "The Swiss bloke",
+     "line": "Designed voices: swiss-a: A Swiss man in his thirties from Zurich, speaking English with a light Swiss German accent, with a calm voice, who speaks plainly. / swiss-b: A Swiss man in his forties from Bern, speaking English with a Swiss German accent, with a dry, low voice, who speaks plainly.  My pick: swiss-a (overrule here).",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "swiss-a",
+       "src": "a/07-swiss-cows--swiss-a.mp3",
+       "label": "swiss-a: swiss-cows \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "swiss-b",
+       "src": "a/07-swiss-cows--swiss-b.mp3",
+       "label": "swiss-b: swiss-cows",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-bob",
+     "title": "Bob (his locked voice)",
+     "line": "Two takes. My pick: bob-1.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "bob-1",
+       "src": "a/08-bob-why--bob-1.mp3",
+       "label": "bob-1 \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "bob-2",
+       "src": "a/08-bob-why--bob-2.mp3",
+       "label": "bob-2",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

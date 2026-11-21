@@ -38,7 +38,8 @@
  ],
  "flow_project": "8fa2bbdc-7db6-49b9-893b-cc7b0bd06102",
  "boards": {
-  "stills": "https://claude.ai/artifact/7DQ4wzcfrir5hTSJBzWoCK"
+  "stills": "https://claude.ai/artifact/7DQ4wzcfrir5hTSJBzWoCK",
+  "voices": "https://claude.ai/artifact/2M79vGbmpHy163Gg15axQo"
  },
  "still_picks": {
   "QM": "r2/QM-denim-a",
@@ -46,7 +47,7 @@
   "S": "S-a",
   "V": "V-b",
   "OUT": "OUT-b",
-  "QMASK": "r2/QMASK-a-denim-a",
+  "QMASK": "r3/QMASK-faces-a",
   "TABLE": "TABLE-a",
   "TCU": "TCU-b",
   "VCU": "VCU-b",
@@ -54,5 +55,12 @@
   "BCU": "BCU-b",
   "BAR": "r2/BAR-d-a",
   "WHY": "r2/WHY-b-denim-a"
+ },
+ "voices": {
+  "quizmaster": "voice_bvwdmcw6kw4y",
+  "tourist": "voice_v632ap39kxx0",
+  "voter": "voice_s2j90utnw3w4",
+  "swiss": "voice_e465k0967ygc",
+  "bob": "Algenib + bob-algenib.md (3.1)"
  }
 }

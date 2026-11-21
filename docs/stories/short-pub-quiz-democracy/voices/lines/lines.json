@@ -1,0 +1,52 @@
+[
+ {
+  "key": "01-qm-question",
+  "role": "quizmaster",
+  "text": "Round two. Florida, twenty twenty. They voted Trump. What else did they vote for, same ballot?"
+ },
+ {
+  "key": "02-tourist-fifth",
+  "role": "tourist",
+  "text": "I plead the Fifth."
+ },
+ {
+  "key": "03-qm-answer",
+  "role": "quizmaster",
+  "text": "A fifteen-dollar minimum wage. Sixty-one percent."
+ },
+ {
+  "key": "04-voter-both",
+  "role": "voter",
+  "text": "So they wanted both?"
+ },
+ {
+  "key": "05-tourist-liked",
+  "role": "tourist",
+  "text": "I liked both things."
+ },
+ {
+  "key": "06-voter-like",
+  "role": "voter",
+  "text": "You can't just like things. You get the whole party. Five years."
+ },
+ {
+  "key": "07-swiss-cows",
+  "role": "swiss",
+  "text": "Back home we vote on each thing. We had a vote on cow horns."
+ },
+ {
+  "key": "08-bob-why",
+  "role": "bob",
+  "text": "So why can't we?"
+ },
+ {
+  "key": "09-tourist-crisps",
+  "role": "tourist",
+  "text": "Can I get the crisps but not the nuts?"
+ },
+ {
+  "key": "10-qm-set",
+  "role": "quizmaster",
+  "text": "Comes as a set."
+ }
+]
