@@ -121,3 +121,68 @@ doing something different; they stay parked.
 - #32 Getaway, Held: a gag for Priority Lane, not its own short.
 
 Still parked: **#85 The Envelope** (Jack: "doesn't work").
+
+## New ideas, 2026-11-21 (not yet on the slate)
+
+Jack: "please do way out ideas". Claude drafts (`by: claude`); the policy each way out stands on is named, checked
+against its `line:` in `docs/government/policies/`. Where no policy exists it says so.
+
+- **Computer Says No**
+  - Now: you apply for help and the council's "officer" is a smart fridge. REJECTED. It just hums.
+  - Way out: you ask for a person; the door opens and a council worker is inside with a mug of tea, reads your claim and
+    signs it. (Work and Pensions: a human reads your claim, "Nobody's money stops until a person signs")
+- **The Driving Test**
+  - Now: a learner fails for one wobbly mirror check; an untested lorry marked NEW LAW is waved straight through.
+  - Way out: the examiner steps in front of the lorry with the clipboard: "Round the car park first." (Prime Minister:
+    test every law, "its test, its fail number and its stop date")
+- **Flat-Pack Instructions**
+  - Now: wordless picture steps: build a house, sell it to an investor, rent it back to the builders. Repeat.
+  - Way out: a confused little figure turns the sheet over. The back has one step: build homes, keep them. (Housing:
+    homes at field price)
+- **Wildlife Documentary: The Landlord**
+  - Now: a hushed narrator stalks the buy-to-let landlord as it circles the shoebox flat and raises the rent.
+  - Way out: the "prey", a young couple, quietly moves into a new council flat; the landlord is left alone with eleven
+    empty ones. (Housing: homes at field price)
+- **The Wedding**
+  - Now: marrying a party: every policy you like and hate, for five years, no way out.
+  - Way out: the bride takes a pen to the vows and keeps the bits she agrees with; the vicar gets a jury of ordinary
+    people's questions to answer. (Prime Minister: a say on more than one thing)
+  - ⚠️ Same point as Pub Quiz: Democracy. Make only one.
+- **The Escape Room**
+  - Now: four mates in an escape room; the clues are a deposit, a rent rise, NO PETS. The timer reads 60 YEARS.
+  - Way out: the key is outside: someone builds the council house and the door just opens. (Housing: homes at field price)
+- **The Award Ceremony**
+  - Now: Best Efficiency Saving goes to the man who cut 400 jobs.
+  - Way out: before he reaches the stage, the 400 get a vote on the saving and a share of it; he gets the trophy's
+    plinth. (Work and Pensions: a say before the saving)
+- **Same Sponsor**
+  - Now: a hustle podcast and a wellness podcast both break for the same £49 mushroom coffee.
+  - Way out: the sound engineer between them pays his rent, goes home and plays with his kids. Money for what money
+    fixes, then time with people. (No policy: the BadCode philosophy, same middle as The Retreat)
+  - ⚠️ Close to The Retreat's point. Space them apart.
+- **Manifest vs Grind**
+  - Now: the grinder works 23-hour days, the manifester pins a house on her vision board; years later both still rent.
+  - Way out: a dull council planner builds homes on land bought at its real price, and both move in. Neither grinding
+    nor wishing builds a house; a decision about land does. (Housing: homes at field price)
+- **Same Morning**
+  - Now: the bro's "billionaire routine" and the guru's "sacred ritual" are the same ice bath with different music.
+  - Way out: the neighbour sleeps till eight, makes his kid toast, and is the happiest man on the street.
+    (No policy; a joke with a middle, not a fix. Weakest of the ten.)
+
+## Second look at the four dropped for "no better choice to show"
+
+- **#9 Secretary's Rate**
+  - Now: her tax bill is higher than her boss's, because his money comes from shares.
+  - Way out: the tax office prints both receipts side by side, by household, in pounds, and the room sees it. (Chancellor:
+    the ledger.) A pound earned and a pound gained taxed alike has no policy on record: say so if it goes further.
+- **#40 Bootstraps**
+  - Now: "Pull yourself up by your bootstraps!" / "Sold them, rent was due."
+  - Way out: the helicopter man is billed for the bottom rung he sawed off, and a rung goes back on the ladder.
+    (Education: the rung fund)
+- **#47 Exposure**
+  - Now: "We can't pay, but you'll get exposure."
+  - Way out: the intern hands the boss the rules: if you work like a worker, you're paid like one. It already exists.
+    (Guess to check: UK interns who count as workers are owed the minimum wage. Check before writing it.)
+- **#48 Every Little Helps**
+  - Now: a private-jet owner tells a kid with a soggy paper straw "we all have to do our bit".
+  - Way out: the bill for the flight lands on the jet, not the kid. (No policy on record: say so, or drop it again.)
