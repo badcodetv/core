@@ -38,5 +38,11 @@
   "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/cut/r4/preview.mp4",
   "script": "python3 scripts/shorts/retreat_logo_tea.py <media>/video/the-retreat-MUGa-MUG.mp4 <media>/cut/logo-tea.mp4; python3 scripts/shorts/retreat_cut.py --round 4",
   "round": 4
+ },
+ "premiere": {
+  "project": "the-retreat.prproj",
+  "sequence": "short-the-retreat-1-the-retreat-r4",
+  "round": 4,
+  "checked": "8/8 shots at the planned times; voices share A1, room A2, bowl A3"
  }
 }
