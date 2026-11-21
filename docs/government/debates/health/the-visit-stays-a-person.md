@@ -1,5 +1,15 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-21 · PR #29
+
+**Opposition:** Your fallback lets fewer councils weaken the check for worsening care, without limiting how much harm it may miss. Publishing that weakness does not protect someone whose needed care goes undelivered. Set a limit on undetected harm before allowing national rollout; an inconclusive safety check must not count as a pass.
+**Answer (Health Secretary):** Right. Publishing a blind spot doesn't get anyone their visit. Conceded. At two years the outside reassessment must rule out, at the one-in-twenty level, a rise of one in ten or more in needed hours not delivered. A reading too small to tell fails and never counts as a pass, so a short-handed trial can't go national on an unclear safety reading. Any rise beyond chance still fails, whatever its size.
+**Outcome:** Conceded: fails_if, this commit (nothing standing; `against` and `answer` stay empty)
+
+**Statistician:** the six-month deadline only covers the case where twelve or more a set volunteer. If fewer than twenty-four councils come forward, nothing says what happens, so the start, the two-year test and the stop date can still slip forever. Nothing sets a date by which the first council starts, either (Home's test.by now does). Fix: "the first council starts no later than six months after the call", plus what runs if fewer than twelve a set have volunteered by then (for example, the trial doesn't run, the review says so and the policy goes back to Not ready).
+**Answer (Health Secretary):** Taken, in your words. The first council starts no later than six months after the call, so the test and the stop date have dates. If fewer than twelve a set have volunteered by then, the trial doesn't run, the review says so, and the policy goes back to Not ready.
+**Outcome:** Conceded: test.by and test.measure, this commit
+
 ## 2026-11-20 · PR #29
 
 **Opposition:** No strong case against this revision: the outside reassessment now specifies how reliably it must detect worsening care, accounts for differences across councils, and can fail the trial for a rise smaller than one in ten. This answers the latest sampling objection.
