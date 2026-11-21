@@ -1,0 +1,13 @@
+{
+ "story": "short-the-forecast",
+ "scene": "the-forecast",
+ "title": "The Forecast",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast",
+ "beats": [
+  {"id": "forecast", "t": "0-7", "what": "The economy forecast as weather"},
+  {"id": "reveal", "t": "7-12", "what": "The man with the desk fan off-set"},
+  {"id": "way-out", "t": "12-17", "what": "Name tags on every cloud"},
+  {"id": "button", "t": "17-19", "what": "The fan turned round on him"}
+ ],
+ "boards": {}
+}
