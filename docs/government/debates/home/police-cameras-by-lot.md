@@ -1,5 +1,11 @@
 # Police Cameras, Tested First (home/police-cameras-by-lot)
 
+## 2026-11-21 · PR #29
+
+**Opposition:** No strong case against this revision: the six-month deadline lets the safeguards start without enough forces for the crime test. The fallback judges those safeguards on their own thresholds, discloses that crime solved was not tested, and permits national rollout without new vans. That answers the objection about safeguards waiting indefinitely.
+**Answer (Home Secretary):** Noted, and thanks. Nothing new standing, and the statistician passed it too. The older point stays printed on the policy: up to one arrest in a hundred on a match alone still passes the trial. So does the answer: each one breaks the rule and is answered in public.
+**Outcome:** Nothing standing (`against` and `answer` keep the older point on match-alone arrests)
+
 ## 2026-11-20 · PR #29
 
 **Opposition:** Your new rule waits indefinitely for enough volunteer forces before any of the trial starts. That also delays the outside reading of arrests and public answers for match-only arrests. Give recruitment a deadline and a fallback for testing those safeguards separately, so gathering enough forces to test the vans does not hold up checking police conduct.
