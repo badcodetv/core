@@ -1,86 +1,122 @@
 # Shorts slate: the way-out review
 
 > 2026-11-21, Jack: "a lot of these are just making points in a moany way, and our rule is to have some sort of
-> solution or at least a new take." Then: "give each complaint-only idea a proposed way out, or mark it to drop."
-> Every way-out line below is a **Claude draft** (`by: claude`) for Jack and Kai to rewrite; the jokes stay theirs.
-> Nothing here is ruled. The slate itself is [`badcode-shorts.md`](./badcode-shorts.md) and is unchanged.
+> solution or at least a new take." Each complaint-only short below either gets a proposed way out or is dropped.
+> Every way out is a **Claude draft** (`by: claude`) for Jack and Kai to rewrite; the jokes stay theirs. Nothing here
+> is ruled. The slate itself is [`badcode-shorts.md`](./badcode-shorts.md) and is unchanged.
 
-## The test (from the meetings)
+## The test
 
-- **CLAUDE.md, 2026-11-17:** "Offer a way out, not just a complaint. Show the mistake, then the better choice."
-- **Kai, 13 Nov:** "sarcastic observers who seem to have more solutions than any of the authority." On Sponsor a
-  Chancellor, where the policy is the punchline: "anything we do pops when it ends with that."
-- **Jack, 13 Nov:** no "it's all a distraction, they'll do it anyway": everyone already sees through it.
-- **Kai, 13 Nov:** blaming one person makes it about money again; the evil is the system.
-- **Kai, 17 Nov:** "keep the dialogue from sounding preachy."
-- **The reader** ([`the-reader.md`](./the-reader.md)): they already know the game is rigged; a better story about the
-  same wound moves them, a lecture doesn't. Hero, not pupil.
+A short shows the problem, then **shows someone doing the better thing**. No speech, no lecture.
 
-So a way out is **shown, not said**: the last beat is someone doing the better thing (or the better rule switching
-on), and it lands as the button. Where one exists it comes from the BadCode government's own policies
-(`docs/government/policies/`), so the shorts and the government say the same thing.
+Where this comes from:
+- **CLAUDE.md:** "Offer a way out, not just a complaint."
+- **Kai, 13 Nov:** we are "sarcastic observers who seem to have more solutions than any of the authority", and
+  "anything we do pops when it ends with that" (the policy as the punchline).
+- **Jack, 13 Nov:** no "it's all a distraction" ending. Everyone already sees through it.
+- **Kai, 17 Nov:** don't sound preachy.
+
+Where a way out matches one of the BadCode government's policies, the policy is named in brackets.
 
 ## Keep, with a way out (19)
 
-| # | Short | The complaint now | Proposed way out (draft) | Source |
-| --- | --- | --- | --- | --- |
-| 3 | Howard Street | four neighbours bicker; one landlord owns all four houses | Not "it's all a distraction": the four notice the landlord, stop arguing, and sign one paper together, a street vote. The laugh track comes back, on their side. | `housing/street-votes` |
-| 4 | Name's Not Down | the man who wrote the rule is stopped by it | The door has a new sign: every rule is tried first on whoever wrote it. He's the test. (Absorbs #11 Rules For Thee and #31 Wanted.) | `prime-minister/test-every-law` |
-| 5 | Unelected | dolls of unelected power; the voter is the smallest, unopened | The voter doll finally opens, and inside it is not one tick box but a dozen, one per issue. | `prime-minister/a-say-on-more-than-one-thing` |
-| 7 | Party of One | a private flight for one minister, on your council tax | The receipt prints, with his name on the line it's charged to: every pound has an address. | `chancellor/the-ledger` |
-| 8 | Great Train Robbery | the gang sees the fares and leaves impressed | Masks off, nod of respect, then the new take: one set of rails, no rival, so it's a toll, and what can't compete the public owns. ⚠️ the policy names wires and water, not rail: a stretch. | `energy-climate/public-wires` |
-| 10 | The Radiator | someone fiddles with GULF STREAM and the room freezes | BadCode's own premise: the future reaches back and puts the dial in the hands of the household, not the person who broke it. | `energy-climate/households-first` |
-| 18 | By the Balls | the claw goes limp on the house; "it was never broken, it was set" | One line more: "It was set. So set it back." Someone opens the panel and turns the grip up. | `housing/homes-at-field-price` |
-| 19 | Unexpected Item | you scan, bag and ID yourself; WAGES £0.00 | The receipt adds a line: SAVING: £X, YOUR SLICE: £Y. A say in the saving before the job goes. | `work-pensions/a-say-before-the-saving` |
-| 20 | Trickle Down | the top glass grows, the rest stay dry | Someone turns the tower over, or pours from the bottom up, and every glass fills. Wages that keep up with prices, shown as champagne. | (Gary Stevenson, July brainstorm) |
-| 21 | Too Big to Fail | one piggy bank caught on a pillow, the kid gets the bill | The kid gets the bill, and a share certificate: if public money catches it, the public owns a slice. | `chancellor/the-slice` |
-| 23 | Stiff Upper Lip | three generations taught to stare at the wall | Already a new take (neglect, not character). Way out: the grandad, mid-lesson, stops and hugs the kid. | (story's own) |
-| 26 | The Basement | the gang finds a suit printing money | The new take is who creates money; the way out is Ten Commandments' fix, the printer behind glass that runs on rules nobody holds. | Ten Commandments |
-| 34 | Poor Nan: Record Profits | she's glad the energy firm made record profits | Next week's paper: one windfall act, the profits come back off her bill; she relights the candle. (Absorbs #35 and #39.) | `chancellor/windfall-act` |
-| 37 | The Viewing | a windowless cupboard sold as "bijou" | The next viewing: a council-built flat at field price. "There's a window." (Absorbs #45 Character.) | `housing/homes-at-field-price` |
-| 41 | Meritocracy | one runner is driven to the finish | The chauffeured winner is handed the bill for a starting block for every lane: keep the bottom rung, and whoever saws it off pays for a new one. | `education/the-rung-fund` |
-| 43 | Who Owns the Robot | the robot takes the job; the boss owns the robot | A say before the saving: the worker gets Fridays off and the robot's slice. (Absorbs #38 Fair Share and #42 Productivity.) | `work-pensions/a-say-before-the-saving` |
-| 46 | Waiting List | "next appointment is March." "Which year?" | The hour the machine saved goes to the bed, not the budget: a new appointment slot appears on screen. ⚠️ thin; check the policy before writing. | `health/the-time-goes-to-the-bed` |
-| 49 | We Can't Afford It (vault) | nurses get a coin; the vault is "Emergencies (ours)" | "We can't afford it" is never true as stated: the clerk is asked who can't, and who decided, and has no answer. Pairs with the idea *We Can Afford What We Can Create*. | `chancellor/the-money`, `docs/ideas/we-can-afford-what-we-can-create.md` |
-| 12 | Magic 8 Ball | a format, no point yet | Keep as a format, on one condition: each answer is a better question or a fix, never just "Outlook not so good." | — |
+**The top five** (Claude's pick, not ruled)
 
-Already a new take, no change needed: **#14 Butter Side Down** (Storyverse, no politics on purpose). The Storyverse
-batch (#50-82) is built with a turn in every short (the idea changes what the person does next) and stays parked
-by Jack.
+1. **#18 By the Balls**
+   - Now: a claw machine keeps dropping the house. It was never broken, it was set that way.
+   - Way out: "So set it back." Someone opens the machine and turns the grip up.
+2. **#49 We Can't Afford It**
+   - Now: the nurses' room has one coin; the vault next door is full.
+   - Way out: someone asks the clerk "Who can't afford it? Who decided?" He has no answer. (Chancellor: the money)
+3. **#43 Who Owns the Robot**
+   - Now: a robot takes a man's job, and his boss keeps all the savings.
+   - Way out: the worker gets a say first, and he gets Fridays off plus a share of what the robot earns. (Work and
+     Pensions: a say before the saving)
+4. **#3 Howard Street**
+   - Now: four neighbours argue over politics, and all four rent from the same landlord.
+   - Way out: they spot the landlord, stop arguing, and sign one petition together. (Housing: street votes)
+5. **#4 Name's Not Down**
+   - Now: the man who wrote a rule gets stopped by it.
+   - Way out: a new sign on the door: every rule is tested on the person who wrote it first. (Prime Minister: test
+     every law)
+
+**The rest**
+
+- **#5 Unelected**
+  - Now: Russian dolls of people nobody elected, and the voter is the smallest one.
+  - Way out: the voter doll opens, and inside is a vote on every issue, not just one every five years. (Prime Minister:
+    a say on more than one thing)
+- **#7 Party of One**
+  - Now: a private flight for one minister, paid for by you.
+  - Way out: the receipt prints with his name on the bill. (Chancellor: the ledger)
+- **#8 Great Train Robbery**
+  - Now: robbers see the train fares and leave impressed.
+  - Way out: there's only one railway, so nobody can compete with it; it should belong to the public.
+  - ⚠️ Our policy says this about power lines and water, not trains. A stretch.
+- **#10 The Radiator**
+  - Now: someone fiddles with the planet's heating and breaks it.
+  - Way out: BadCode, from the future, gives the controls to the families, not to whoever broke it. (Energy:
+    households first)
+- **#12 Magic 8 Ball**
+  - A format, not one short. Keep only if every answer is a fix, never just "Outlook not so good".
+- **#19 Unexpected Item**
+  - Now: you do the shop's work at the self-checkout for free.
+  - Way out: the receipt shows what the shop saved, and your share of it. (Work and Pensions: a say before the saving)
+- **#20 Trickle Down**
+  - Now: only the top glass of the champagne tower fills.
+  - Way out: someone pours from the bottom instead, and every glass fills.
+- **#21 Too Big to Fail**
+  - Now: the bank gets saved and the kid gets the bill.
+  - Way out: the kid gets a share in the bank too. If we save it, we own part of it. (Chancellor: the slice)
+- **#23 Stiff Upper Lip**
+  - Now: three generations taught not to show feelings.
+  - Way out: halfway through the lesson, the grandad stops and hugs the kid.
+- **#26 The Basement**
+  - Now: robbers tunnel into a vault and find a man printing money.
+  - Way out: the printer goes behind glass and runs on rules, not on whoever's holding it (Ten Commandments' fix).
+- **#34 Poor Nan**
+  - Now: a nan reads by candlelight that the energy company made record profits.
+  - Way out: next week the profits are taxed and taken off her bill, and she lights the candle again. (Chancellor: one
+    windfall act)
+  - Takes in #30, #35 and #39.
+- **#37 The Viewing**
+  - Now: an estate agent shows a cupboard with no window as a flat.
+  - Way out: the next viewing is a council-built flat. "There's a window." (Housing: homes at field price)
+  - Takes in #45.
+- **#41 Meritocracy**
+  - Now: one runner gets driven to the finish line.
+  - Way out: he has to pay for a proper start for everyone else. (Education: the rung fund)
+- **#46 Waiting List**
+  - Now: the next appointment is "March. Which year?"
+  - Way out: the time the hospital saves goes to patients, and a new slot appears. (Health: the time goes to the bed)
+  - ⚠️ Thin. Check the policy before writing it.
+
+**Already fine:** #14 Butter Side Down has a new take, no politics. The physics shorts (#50-82) all end with the person
+doing something different; they stay parked.
 
 ## Drop or merge (22)
 
-| # | Short | Why |
-| --- | --- | --- |
-| 9 | Secretary's Rate | a complaint with no policy to land on |
-| 11 | Rules For Thee | same point as #4; merged into it |
-| 13 | Balaclava Newsreader | Kai, 13 Nov: drop the reporter framing, "we fall into a trap when we do the reporter thing" |
-| 15 | Schrödinger | clashes with Storyverse doctrine; #50 replaces it |
-| 16 | Just a Hippo | no point on record; keep only if Jack has one |
-| 22 | Meal Deal Archaeology | inflation is covered (Malevolent Force, Ten Commandments) |
-| 25 | Call the Police | "that's the economy" is the complaint on its own |
-| 27 | The Fredo Job | the Freddo is a running joke in Malevolent Force and #89 already |
-| 28 | Wrong Way Round | inflation again; covered |
-| 29 | Look at the Hand | Jack, 13 Nov: no "it's all a distraction" |
-| 30 | Grandma Freezing | merged into #34 (the windfall act ends both) |
-| 31 | Wanted | merged into #4 |
-| 32 | Getaway, Held | a gag on Priority Lane, not a short |
-| 35 | Poor Nan: Bonus Season | weaker twin of #34 |
-| 38 | Fair Share | merged into #43 |
-| 39 | Heating or Eating | merged into #34 |
-| 40 | Bootstraps | a complaint; no turn that isn't a lecture |
-| 42 | Productivity | merged into #43 |
-| 44 | Clap Louder | a 2020 news-cycle memory, against Kai's no-news-cycle rule |
-| 45 | Character | merged into #37 |
-| 47 | Exposure | a complaint with no policy to land on |
-| 48 | Every Little Helps | hypocrisy alone, no better choice shown |
+**Already covered by other shorts**
+- #22 Meal Deal Archaeology, #27 The Fredo Job, #28 Wrong Way Round: inflation is covered by The Malevolent Force and
+  Ten Commandments.
 
-Still parked as before: **#85 The Envelope** (Jack: "doesn't work"; also the distraction line).
+**Merged into a keeper**
+- #11 Rules For Thee and #31 Wanted → #4 Name's Not Down
+- #30 Grandma Freezing, #35 Bonus Season and #39 Heating or Eating → #34 Poor Nan
+- #38 Fair Share and #42 Productivity → #43 Who Owns the Robot
+- #45 Character → #37 The Viewing
 
-## Strongest five after this (Claude's read, not ruled)
+**Against a rule from the meetings**
+- #29 Look at the Hand: the "it's all a distraction" ending (Jack).
+- #13 Balaclava Newsreader: the reporter framing (Kai).
+- #44 Clap Louder: an old news story (Kai: no news cycle).
 
-1. **#18 By the Balls**: the turn is one line ("so set it back") and the picture already exists.
-2. **#49 We Can't Afford It (vault)**: two rooms, one question, and the government's own line.
-3. **#43 Who Owns the Robot**: absorbs three moany ones and ends on a better deal.
-4. **#3 Howard Street**: the sitcom survives; the ending flips from "they're all the same" to "we outvote him".
-5. **#4 Name's Not Down**: ten seconds, and the fix is the punchline.
+**No better choice to show**
+- #9 Secretary's Rate, #40 Bootstraps, #47 Exposure, #48 Every Little Helps.
+
+**Other**
+- #15 Schrödinger: clashes with the Storyverse; #50 replaces it.
+- #16 Just a Hippo: no point on record. Keep only if Jack has one.
+- #32 Getaway, Held: a gag for Priority Lane, not its own short.
+
+Still parked: **#85 The Envelope** (Jack: "doesn't work").
