@@ -1,0 +1,86 @@
+{
+ "title": "The Queue Voices",
+ "eyebrow": "BadCode Shorts \u00b7 The Queue",
+ "heading": "Voices, round 1",
+ "intro": "Two designed voices per role, plain reads. I've picked and carried on; overrule here.",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "voice-tannoy",
+     "title": "The tannoy",
+     "line": "tannoy-a: A calm, flat, automated-sounding British woman of about 40, who speaks plainly. / tannoy-b: A polite, slightly bored British woman of about 50, an announcer's even voice, who speaks plainly.  My pick: tannoy-a (overrule here).",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "tannoy-a",
+       "src": "a/01-tannoy-three--tannoy-a.mp3",
+       "label": "tannoy-a: tannoy-three \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-a",
+       "src": "a/04-tannoy-households--tannoy-a.mp3",
+       "label": "tannoy-a: tannoy-households \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-b",
+       "src": "a/01-tannoy-three--tannoy-b.mp3",
+       "label": "tannoy-b: tannoy-three",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-b",
+       "src": "a/04-tannoy-households--tannoy-b.mp3",
+       "label": "tannoy-b: tannoy-households",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-pensioner",
+     "title": "The pensioner",
+     "line": "pensioner-a: A woman of about 75 from the south of England, with a warm, slightly creaky voice, who speaks plainly. / pensioner-b: A woman of about 78 from Yorkshire, with a dry, firm voice, who speaks plainly.  My pick: pensioner-b (overrule here).",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "pensioner-a",
+       "src": "a/02-pensioner-queue--pensioner-a.mp3",
+       "label": "pensioner-a: pensioner-queue",
+       "warn": ""
+      },
+      {
+       "id": "pensioner-b",
+       "src": "a/02-pensioner-queue--pensioner-b.mp3",
+       "label": "pensioner-b: pensioner-queue \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "voice-cashier",
+     "title": "The cashier (BadCode, dressed as a 60-year-old Karen)",
+     "line": "cashier-a: A woman of about 60 from the Home Counties, with a clipped, stern, slightly nasal voice, who speaks plainly. / cashier-b: A man of about 60 from the south of England, with a dry, deadpan, measured voice, who speaks plainly.  My pick: cashier-a (overrule here).",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "cashier-a",
+       "src": "a/03-cashier-wrong--cashier-a.mp3",
+       "label": "cashier-a: cashier-wrong \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "cashier-b",
+       "src": "a/03-cashier-wrong--cashier-b.mp3",
+       "label": "cashier-b: cashier-wrong",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

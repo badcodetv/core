@@ -1,0 +1,32 @@
+{
+ "tannoy-a": {
+  "desc": "A calm, flat, automated-sounding British woman of about 40, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_bp8x99nel6hd"
+ },
+ "tannoy-b": {
+  "desc": "A polite, slightly bored British woman of about 50, an announcer's even voice, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_f9ibeisbfhsp"
+ },
+ "pensioner-a": {
+  "desc": "A woman of about 75 from the south of England, with a warm, slightly creaky voice, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_kpxsupkevvcj"
+ },
+ "pensioner-b": {
+  "desc": "A woman of about 78 from Yorkshire, with a dry, firm voice, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_tt2ilo32ph5c"
+ },
+ "cashier-a": {
+  "desc": "A woman of about 60 from the Home Counties, with a clipped, stern, slightly nasal voice, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_8dq78aamddrk"
+ },
+ "cashier-b": {
+  "desc": "A man of about 60 from the south of England, with a dry, deadpan, measured voice, who speaks plainly.",
+  "gender": "male",
+  "id": "voice_33yqhuss0jdw"
+ }
+}

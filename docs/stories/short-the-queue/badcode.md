@@ -10,7 +10,7 @@ A BadCode short (9:16 offered, not ruled; aim 15-20 s). A Post Office-style queu
 to the back: "Brilliant machine. Wrong queue." "Households first." The point: homes come first on the grid; big
 new loads switch down first and pay for their own wires. From the BadCode government's Energy and Climate policy
 `households-first`, in that minister's voice (the engineer who can't stop being excited, sharp when someone profits
-from a shortage). State: script draft 3 ([script.md](./script.md)), nothing generated.
+from a shortage). State (2026-11-21): **rough cut 1**, 24.7 s, on https://claude.ai/artifact/GP42gfZhpUKiPHdCbizQsp. Rebuild: `scripts/shorts/queue_logo.py` then `scripts/shorts/queue_cut.py --round 1` (args in scene.json `cut.script`). Owed: music, Premiere, export.
 
 ## Look
 Status: EXPLORING (stills round 1). Jack, 2026-11-21: "show me stills, using unsplash": real-photo look, a British
@@ -28,7 +28,10 @@ glossy. Layouts (Unsplash): `V50uAd5i-Ag` (queue hall with barrier lanes), `GbY1
 Flow project: `c0e7c075-1dc4-4d65-bd20-84860de322f8` (shown in Flow as "Nov 21 - 14:37"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
-Not decided. Any Suno track is music and sound only; every spoken line is an AI Studio voice.
+Voices (designed, gemini-3.8-flash-tts, plain; Claude's picks, Jack to veto on https://claude.ai/artifact/23LrpLyR1MAaAW1gGu4GXD):
+tannoy `tannoy-a` (style "flat, automated announcement"), pensioner `pensioner-b`, cashier `cashier-a` (a stern Home
+Counties woman's voice, for the Karen look). Ids in `voices/casting/designed-voices.json`. A two-tone chime before each
+tannoy call. Music: not decided; any Suno track is music and sound only.
 
 ## Story-only rules
 - Jack and Kai write the jokes; Claude drafts only when asked, marked as Claude's.

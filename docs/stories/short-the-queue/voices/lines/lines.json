@@ -1,0 +1,22 @@
+[
+ {
+  "key": "01-tannoy-three",
+  "role": "tannoy",
+  "text": "Cashier number three, please."
+ },
+ {
+  "key": "02-pensioner-queue",
+  "role": "pensioner",
+  "text": "There's a queue, love."
+ },
+ {
+  "key": "03-cashier-wrong",
+  "role": "cashier",
+  "text": "Brilliant machine. Wrong queue."
+ },
+ {
+  "key": "04-tannoy-households",
+  "role": "tannoy",
+  "text": "Households first. Cashier number three, please."
+ }
+]
