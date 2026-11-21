@@ -12,7 +12,14 @@ the resort on the groundskeeper, on his break, watching the wind in the trees, a
 State: script draft 2 ([script.md](./script.md)), nothing generated.
 
 ## Look
-Not decided — run story-style (or a quick pick). Flow project: none yet.
+Status: EXPLORING (stills round 1). Jack, 2026-11-21: "do the unsplash for all of it": real-looking, every shot built on
+an Unsplash layout: `CKmLZ94isVM` (sunset), `oQPtUvNw2A4` (wooden sign), `A5WFGW3h5RA` (bamboo pavilion), `i2_kSnhQNJU`
+(gong), `2a-PH6dsAIw` (shop, made minimal and expensive), `fHWqP29e6Eo` (old man and dog: the groundskeeper). The retreat
+glossy and golden like its own advert; the groundskeeper in plain soft natural light. The quote is added in the edit.
+- Cast (portraits first): the guru (English, ~40, white linen, crystals, bare feet), her brother the bro (~38, navy
+  gilet, smartwatch), the groundskeeper (~70, faded green work jacket, flask) and his scruffy terrier; BadCode in a staff
+  linen shirt on the card machine (no portrait).
+Flow project: `18488ea0-30a2-4f48-9ebe-303245074be1` (shown in Flow as "Nov 21 - 18:45"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
 Not decided. Any Suno track is music and sound only; every spoken line is an AI Studio voice. Voices must sound English:
@@ -31,7 +38,11 @@ design them with an English region, never just "British".
 - Run `scripts/variations/fresh.py --story short-the-retreat` over every new prompt and line, and say the result.
 
 ## Library pieces in use
-- none yet
+- **Real photo as the look** (Jack: "do the unsplash for all of it"): an Unsplash photo is each still's layout; never an AI figure pasted into a real photo.
+- **Clean room:** prompts written by a sealed writer from one brief (`scenes/the-retreat/cleanroom/`).
+- **The BadCode balaclava:** on the card machine only. Attach `docs/brand/balaclava/mask-reference.jpg` with the line
+  "The balaclava exactly as in the attached image: no holes, no skin, gloves." Collar up to the mask; check which EYE
+  the triangle is over on a turned head.
 
 ## Where the detail is
 - [README.md](./README.md), [script.md](./script.md), rulings [scenes/the-retreat/picks.md](./scenes/the-retreat/picks.md)

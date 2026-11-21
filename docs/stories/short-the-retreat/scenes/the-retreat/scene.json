@@ -4,9 +4,28 @@
  "title": "The Retreat",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat",
  "beats": [
-  {"id": "retreat", "t": "0-13", "what": "The retreat: the bro trades in meditation, the paid gong, the gift shop"},
-  {"id": "dinner", "t": "13-21", "what": "Sunday dinner: enlightened for ten seconds, then the potato"},
-  {"id": "middle", "t": "21-25", "what": "Mum gives Nan the potato; the Ram Dass line"}
+  {
+   "id": "retreat",
+   "t": "0-13",
+   "what": "The retreat: the bro trades in meditation, the paid gong, the gift shop"
+  },
+  {
+   "id": "dinner",
+   "t": "13-21",
+   "what": "Sunday dinner: enlightened for ten seconds, then the potato"
+  },
+  {
+   "id": "middle",
+   "t": "21-25",
+   "what": "Mum gives Nan the potato; the Ram Dass line"
+  }
  ],
- "boards": {}
+ "boards": {},
+ "flow_project": "18488ea0-30a2-4f48-9ebe-303245074be1",
+ "video": {
+  "aspect": "9:16",
+  "model": "Omni 1.2 Flash",
+  "mode": "Frames",
+  "duration": 8
+ }
 }

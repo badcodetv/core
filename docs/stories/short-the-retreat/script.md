@@ -15,11 +15,9 @@ Jack's structure (2026-11-21): the Ram Dass quote on screen over a sunset → th
 5. **The gift shop (2 s).** EXIT THROUGH GIFT SHOP. Rocks at £80 each; a mug: NON-ATTACHMENT £24. *(joke, claude)*
 6. **The groundskeeper (5 s).** Behind the resort, an old groundskeeper on his break, flask of tea, watching the wind move
    through the trees. Actually calm. No words. (Jack)
-   - Claude's suggestion, to pay off the quote: his kid runs up and jumps on him (or his phone buzzes "MUM"), and he
-     stays exactly as calm. *(claude, optional)*
+   - His dog runs up to him; he pets it, still watching the trees. (Jack, 2026-11-21)
 7. Logo.
 
 ## To decide
 - The groundskeeper is a real person, never BadCode (BadCode's story: the AI is the one thing that can't feel the wind).
-- Does BadCode appear on the card machine, or is the short unmasked?
-- The kid / "MUM" payoff: in or out.
+- BadCode holds the card machine at the gong (Claude's pick; Jack can veto).

@@ -1,0 +1,266 @@
+{
+ "title": "The Retreat Look Refs",
+ "eyebrow": "The Retreat · look references",
+ "heading": "The Retreat: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "bamboo resort",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S0jkhVuO8EY",
+       "src": "unsplash/S0jkhVuO8EY.jpg",
+       "label": "Bamboo roof structure with diagonal beams · Manoj Poosam"
+      },
+      {
+       "id": "_JWJrP3BqMc",
+       "src": "unsplash/_JWJrP3BqMc.jpg",
+       "label": "Wooden hut with lush green trees visible through window · Hanna Lazar"
+      },
+      {
+       "id": "oQPtUvNw2A4",
+       "src": "unsplash/oQPtUvNw2A4.jpg",
+       "label": "Outdoor shower with bamboo screen surrounded by lush greener · Caroline Badran"
+      },
+      {
+       "id": "Jm_qUM_NOnM",
+       "src": "unsplash/Jm_qUM_NOnM.jpg",
+       "label": "A view of a misty beach from a bamboo patio with palm plants · Vincent Yap"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "bamboo pavilion yoga",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A5WFGW3h5RA",
+       "src": "unsplash/A5WFGW3h5RA.jpg",
+       "label": "Yoga mats with light blue bolsters and black blocks in a bam · Abiwin Krisna"
+      },
+      {
+       "id": "DTvhp4ITL-c",
+       "src": "unsplash/DTvhp4ITL-c.jpg",
+       "label": "Yoga mats with light blue bolsters and black blocks in a bam · Abiwin Krisna"
+      },
+      {
+       "id": "BhjztJOqjPg",
+       "src": "unsplash/BhjztJOqjPg.jpg",
+       "label": "woman in black sleeveless dress sitting on brown wooden armc · Phát Trương"
+      },
+      {
+       "id": "md6Ftt0s4ms",
+       "src": "unsplash/md6Ftt0s4ms.jpg",
+       "label": "a person laying on a raft in the water · Danielle Barnes"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "meditation retreat circle",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "NTyBbu66_SI",
+       "src": "unsplash/NTyBbu66_SI.jpg",
+       "label": "woman doing yoga meditation on brown parquet flooring · Jared Rice"
+      },
+      {
+       "id": "YEjwA2TofhQ",
+       "src": "unsplash/YEjwA2TofhQ.jpg",
+       "label": "a group of people sitting on top of a lush green field · Marea Wellness"
+      },
+      {
+       "id": "KQ3F3dkSWyA",
+       "src": "unsplash/KQ3F3dkSWyA.jpg",
+       "label": "A person sitting in a yoga position with the sun setting in  · Raspopova Marina"
+      },
+      {
+       "id": "0CPIYvrOoik",
+       "src": "unsplash/0CPIYvrOoik.jpg",
+       "label": "a group of people sitting on the floor in a room · Dillon Wanner"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "sound bath gong",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "0XwcHcG-lio",
+       "src": "unsplash/0XwcHcG-lio.jpg",
+       "label": "black round table with blue and white textile · Kitera Dent"
+      },
+      {
+       "id": "i2_kSnhQNJU",
+       "src": "unsplash/i2_kSnhQNJU.jpg",
+       "label": "a gong sitting on top of a wooden table next to a window · Julio Lopez"
+      },
+      {
+       "id": "Ha1v-xnlY78",
+       "src": "unsplash/Ha1v-xnlY78.jpg",
+       "label": "a person sitting on the floor next to a gong · Julio Lopez"
+      },
+      {
+       "id": "a7jh6Z2yuaA",
+       "src": "unsplash/a7jh6Z2yuaA.jpg",
+       "label": "a pair of mallets and a red ball on a wooden floor · Julio Lopez"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "tropical resort gift shop",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "-9c2XAosqsg",
+       "src": "unsplash/-9c2XAosqsg.jpg",
+       "label": "a pole with a bunch of signs on it · janilson furtado"
+      },
+      {
+       "id": "XSV91btxmhw",
+       "src": "unsplash/XSV91btxmhw.jpg",
+       "label": "a bunch of colorful clothing on display under a tree · Thuy"
+      },
+      {
+       "id": "HOidMbaG4ao",
+       "src": "unsplash/HOidMbaG4ao.jpg",
+       "label": "a store with a display of clothing · Andrew Valdivia"
+      },
+      {
+       "id": "2a-PH6dsAIw",
+       "src": "unsplash/2a-PH6dsAIw.jpg",
+       "label": "Traditional colorful wooden masks and carved animal figurine · Thilina Alagiyawanna"
+      }
+     ]
+    },
+    {
+     "slot": "ref-6",
+     "title": "sunset trees silhouette",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CKmLZ94isVM",
+       "src": "unsplash/CKmLZ94isVM.jpg",
+       "label": "flying birds above trees · Joe Pearson"
+      },
+      {
+       "id": "YHasaVvsTdc",
+       "src": "unsplash/YHasaVvsTdc.jpg",
+       "label": "leafless tree during golden hour · M Mitchell"
+      },
+      {
+       "id": "KHrhVDu_fs0",
+       "src": "unsplash/KHrhVDu_fs0.jpg",
+       "label": "silhouette photography of trees under white clouds · Stijn Kleerebezem"
+      },
+      {
+       "id": "gQIgYY8lsHw",
+       "src": "unsplash/gQIgYY8lsHw.jpg",
+       "label": "crimson sky at sunset · Sitraka"
+      }
+     ]
+    },
+    {
+     "slot": "ref-7",
+     "title": "groundskeeper gardener break",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "j8xUK4ijoj0",
+       "src": "unsplash/j8xUK4ijoj0.jpg",
+       "label": "brown wooden boat on green grass field during daytime · Annie Spratt"
+      },
+      {
+       "id": "xWAsrLw_1hk",
+       "src": "unsplash/xWAsrLw_1hk.jpg",
+       "label": "A man in a plaid shirt using a string trimmer on a green law · Michael Kahn"
+      },
+      {
+       "id": "UijIjarr5Gg",
+       "src": "unsplash/UijIjarr5Gg.jpg",
+       "label": "Man in blue work clothes holding shovel in garden · Lara John"
+      },
+      {
+       "id": "X20w904N_Z4",
+       "src": "unsplash/X20w904N_Z4.jpg",
+       "label": "man in black jacket and pants standing on sidewalk during da · Marcel Strauß"
+      }
+     ]
+    },
+    {
+     "slot": "ref-8",
+     "title": "old man dog garden",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "i8mg86o_Ujs",
+       "src": "unsplash/i8mg86o_Ujs.jpg",
+       "label": "a man sitting on a rock with a goat · Age Cymru"
+      },
+      {
+       "id": "r0WHBt_hLsU",
+       "src": "unsplash/r0WHBt_hLsU.jpg",
+       "label": "man in blue and white plaid dress shirt and blue denim jeans · Maxim Shklyaev"
+      },
+      {
+       "id": "fHWqP29e6Eo",
+       "src": "unsplash/fHWqP29e6Eo.jpg",
+       "label": "a man sitting on a rock with a dog · Age Cymru"
+      },
+      {
+       "id": "iGRrOLB_YnQ",
+       "src": "unsplash/iGRrOLB_YnQ.jpg",
+       "label": "brown dog standing beside green plant in the garden · Jonathon Young"
+      }
+     ]
+    },
+    {
+     "slot": "ref-9",
+     "title": "wind in trees",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "_pc3ONIFkAc",
+       "src": "unsplash/_pc3ONIFkAc.jpg",
+       "label": "a tree in a field · Aaron Huber"
+      },
+      {
+       "id": "rWD-rfloMlc",
+       "src": "unsplash/rWD-rfloMlc.jpg",
+       "label": "two palm trees blowing in the wind on a cloudy day · Sean Foster"
+      },
+      {
+       "id": "_63-w5Zj3hs",
+       "src": "unsplash/_63-w5Zj3hs.jpg",
+       "label": "a black and white photo of trees covered in snow · Ethan Yoo"
+      },
+      {
+       "id": "WpXqXh0RUnY",
+       "src": "unsplash/WpXqXh0RUnY.jpg",
+       "label": "gray electric post under gray clouds during daytime · Joshua Humpfer"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
