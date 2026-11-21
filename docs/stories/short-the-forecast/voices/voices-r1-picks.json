@@ -1,0 +1,174 @@
+{
+ "title": "Forecast Voices",
+ "eyebrow": "BadCode Shorts \u00b7 The Forecast \u00b7 voices round 1",
+ "heading": "The Forecast: the presenter's voice",
+ "intro": "Four English weather presenters, each reading the script. Every take checked word by word. Pick the voice in the top row; the line rows are there if one voice does one line better.",
+ "sections": [
+  {
+   "h": "Pick the voice",
+   "lede": "Claude's guess (from the descriptions; Claude can't hear them): b, the dry Yorkshire weatherman, for the deadpan.",
+   "groups": [
+    {
+     "slot": "presenter",
+     "title": "The presenter: whole read",
+     "line": "All four lines back to back. Pick the voice here.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/all--a.mp3",
+       "label": "a: Home Counties woman, breakfast-TV bright",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/all--b.mp3",
+       "label": "b: Yorkshire man, dry regional weatherman",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/all--c.mp3",
+       "label": "c: London man, polished national news",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "a/all--d.mp3",
+       "label": "d: Manchester woman, chirpy local radio",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "line-01-forecast",
+     "title": "Prices rising across the south. Wages staying cold in the north.",
+     "line": "by claude (script draft 1)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/01-forecast--a.mp3",
+       "label": "a: Home Counties woman",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/01-forecast--b.mp3",
+       "label": "b: Yorkshire man",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/01-forecast--c.mp3",
+       "label": "c: London man",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "a/01-forecast--d.mp3",
+       "label": "d: Manchester woman",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "line-02-front",
+     "title": "And a front of efficiency savings moving in from Westminster.",
+     "line": "by claude (joke draft)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/02-front--a.mp3",
+       "label": "a: Home Counties woman",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/02-front--b.mp3",
+       "label": "b: Yorkshire man",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/02-front--c.mp3",
+       "label": "c: London man",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "a/02-front--d.mp3",
+       "label": "d: Manchester woman",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "line-03-continue",
+     "title": "Expect it to continue.",
+     "line": "by claude (joke draft)",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/03-continue--a.mp3",
+       "label": "a: Home Counties woman",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/03-continue--b.mp3",
+       "label": "b: Yorkshire man",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/03-continue--c.mp3",
+       "label": "c: London man",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "a/03-continue--d.mp3",
+       "label": "d: Manchester woman",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "line-04-fan",
+     "title": "Forecast's the same. Now you know who's holding the fan.",
+     "line": "by script draft 1",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/04-fan--a.mp3",
+       "label": "a: Home Counties woman",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/04-fan--b.mp3",
+       "label": "b: Yorkshire man",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/04-fan--c.mp3",
+       "label": "c: London man",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "a/04-fan--d.mp3",
+       "label": "d: Manchester woman",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

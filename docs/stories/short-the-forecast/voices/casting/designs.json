@@ -1,0 +1,6 @@
+[
+ {"name":"presenter-a","gender":"female","desc":"A Home Counties English woman in her forties, a seasoned breakfast-TV weather presenter: bright, warm, unflappable, smiling through every word, crisp consonants, a gentle lift at the end of each sentence."},
+ {"name":"presenter-b","gender":"male","desc":"A Yorkshire man in his fifties, a regional TV weatherman from Leeds: dry, steady, matter-of-fact, flat vowels, never hurried, the calm of someone who has read out a thousand cold fronts."},
+ {"name":"presenter-c","gender":"male","desc":"A smooth London man in his thirties, a polished national-news weather presenter: confident, measured, faintly pleased with himself, warm low voice, every word placed carefully."},
+ {"name":"presenter-d","gender":"female","desc":"A Mancunian woman in her thirties, a lively local-radio weather voice from Manchester: quick, chirpy, a little deadpan underneath, clear Northern English vowels."}
+]

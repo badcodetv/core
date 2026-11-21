@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/TAGS-a2-b.jpg",
+ "made": "2026-11-21T17:24:14.315Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Change only the blurry orange smudge in the middle of the weather map over the Midlands: make it a crisp cartoon cloud, smoky orange-grey with a clean white outline, matching the drawing style of the other clouds, with its white name tag on a thin string reading ENERGY FIRMS in plain black block capitals. Every other part of the picture stays exactly the same: the presenter, his mask, the other clouds, tags, arrows and the studio.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/TAGS-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/TAGS-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "e774a392-2627-4486-980e-a099e95d4c40"
+}
