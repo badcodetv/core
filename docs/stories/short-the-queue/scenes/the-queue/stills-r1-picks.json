@@ -1,9 +1,99 @@
 {
  "title": "The Queue Stills",
  "eyebrow": "BadCode Shorts \u00b7 The Queue",
- "heading": "Stills, round 1",
- "intro": "A counter hall where every window says POWER, built from Unsplash layouts. Portraits first, then the story in order, ending on the phone screen the logo goes onto. I've picked one per row; overrule or note any. Pollution check: clean (only this short's own wording and the brand's mask line repeat).",
+ "heading": "Stills, round 2: the cashier as a 60-year-old Karen",
+ "intro": "Your note: \"make him look like a 60 year old karen\". My reading: BadCode stays in the balaclava, with the look over it: a blonde stacked bob wig (clear of the ring and triangle), reading glasses on a beaded chain, a floral blouse, beige cardigan, pearls. His three shots redone facing front (which also fixes the wrong-eye triangle), with your machine pick (M-b). Your other picks are in.",
  "sections": [
+  {
+   "h": "Round 2: the cashier",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "C2",
+     "title": "The cashier, 60-year-old Karen",
+     "line": "My pick: C-karen-a (overrule here).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "C-karen-a",
+       "src": "s/r2-C-karen-a.jpg",
+       "label": "C-karen-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "C-karen-b",
+       "src": "s/r2-C-karen-b.jpg",
+       "label": "C-karen-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CASHIER2",
+     "title": "3. Looks it up and down",
+     "line": "My pick: CASHIER-b (overrule here).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "CASHIER-a",
+       "src": "s/r2-CASHIER-a.jpg",
+       "label": "CASHIER-a",
+       "warn": ""
+      },
+      {
+       "id": "CASHIER-b",
+       "src": "s/r2-CASHIER-b.jpg",
+       "label": "CASHIER-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CLOSED2",
+     "title": "3. POSITION CLOSED",
+     "line": "My pick: CLOSED-a (overrule here).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "CLOSED-a",
+       "src": "s/r2-CLOSED-a.jpg",
+       "label": "CLOSED-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "CLOSED-b",
+       "src": "s/r2-CLOSED-b.jpg",
+       "label": "CLOSED-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "KETTLE2",
+     "title": "4. The kettle boils",
+     "line": "My pick: KETTLE-a (overrule here).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "KETTLE-a",
+       "src": "s/r2-KETTLE-a.jpg",
+       "label": "KETTLE-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "KETTLE-b",
+       "src": "s/r2-KETTLE-b.jpg",
+       "label": "KETTLE-b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Portraits",
    "lede": "Every later shot is built from these.",
@@ -26,7 +116,8 @@
        "label": "C-b",
        "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "K",
@@ -46,7 +137,8 @@
        "label": "K-b",
        "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "P",
@@ -66,7 +158,8 @@
        "label": "P-b",
        "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "L",
@@ -86,7 +179,8 @@
        "label": "L-b \u2713 my pick",
        "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "M",
@@ -106,7 +200,8 @@
        "label": "M-b",
        "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   },
@@ -132,7 +227,8 @@
        "label": "QUEUE-b \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "BARGE",
@@ -152,7 +248,8 @@
        "label": "BARGE-b",
        "warn": "the machine is one tall cabinet, not van-sized"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "CASHIER",
@@ -172,7 +269,8 @@
        "label": "CASHIER-b",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "CLOSED",
@@ -192,7 +290,8 @@
        "label": "CLOSED-b \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "KETTLE",
@@ -224,7 +323,8 @@
        "label": "KETTLE-b",
        "warn": "failed: empty hall"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "PHONE",
@@ -244,7 +344,8 @@
        "label": "PHONE-b \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "SCREEN",
@@ -264,9 +365,11 @@
        "label": "SCREEN-b",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }
- ]
+ ],
+ "round": 2
 }

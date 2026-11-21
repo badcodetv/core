@@ -17,7 +17,9 @@ Status: EXPLORING (stills round 1). Jack, 2026-11-21: "show me stills, using uns
 post-office-style counter hall where every window says POWER; weekday daylight and strip lights, a little drab, never
 glossy. Layouts (Unsplash): `V50uAd5i-Ag` (queue hall with barrier lanes), `GbY1IcKPvS0` (lanes to the counters),
 `Y63M9ZI29JM` (old wooden counter window). Only readable words: POWER, 3, POSITION CLOSED, DISCOUNT APPLIED.
-- Cast (portraits first): the cashier (BadCode, navy balaclava, navy cardigan, white shirt, blank badge), the woman with
+- Cast (portraits first): the cashier (BadCode in the navy balaclava, dressed as a 60-year-old 'Karen' at Jack's ask: a blonde
+  stacked-bob wig over the mask, never covering the ring or triangle; reading glasses on a beaded chain; coral floral
+  blouse; beige cardigan; pearls; blank badge; gloves. Keep him facing the camera so the triangle stays on his left eye), the woman with
   the kettle (~42, mustard raincoat), the pensioner (~75, lilac coat, fan heater), the lad (~19, ginger buzz cut, grey
   hoodie, phone on 1%), the machine (a van-sized server bank on castors, no face). No children.
 - **Logo ending (Jack, 2026-11-21: "The phone charging"):** close on the lad's phone; the charging ring fills and becomes
