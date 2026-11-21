@@ -42,10 +42,11 @@ Where a way out matches one of the BadCode government's policies, the policy is 
 
 **The rest**
 
-- **#5 Unelected**
-  - Now: Russian dolls of people nobody elected, and the voter is the smallest one.
-  - Way out: the voter doll opens, and inside is a vote on every issue, not just one every five years. (Prime Minister:
-    a say on more than one thing)
+- **#5 Unelected** → **You Can Pick and Choose** (Jack, 2026-11-21: no doll; this angle)
+  - Now: "you can't pick and choose", one vote every five years for a whole package.
+  - Way out: cut to places that already do: Switzerland votes on single questions, Ireland let random citizens settle
+    abortion and same-sex marriage, Taiwan found what everyone agreed on. "Turns out you can." Facts and sources:
+    [`../ideas/you-can-pick-and-choose.md`](../ideas/you-can-pick-and-choose.md). (Prime Minister: a say on more than one thing)
 - **#7 Party of One**
   - Now: a private flight for one minister, paid for by you.
   - Way out: the receipt prints with his name on the bill. (Chancellor: the ledger)

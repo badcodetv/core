@@ -28,6 +28,7 @@ scannable metadata lives in the table.
 
 | Idea | Hook | Media | Status |
 | --- | --- | --- | --- |
+| [You Can Pick and Choose](you-can-pick-and-choose.md) | "you can't pick and choose": Switzerland, Ireland and Taiwan already do (facts checked) | short | seed |
 | [The Basement Granny](basement-granny.md) | de-Basement: an inflation-blind granny | comic · video | seed |
 | [Centre of Gravity](centre-of-gravity.md) | low centre of gravity = a stable economy | comic | seed |
 | [The Inner Net](inner-net.md) | the connection that transcends the wire — why AI slop can't touch it | comic · music | seed |
