@@ -1,48 +1,44 @@
-# Pub Quiz: Democracy: script draft 2
+# Pub Quiz: Democracy: script draft 3
 
-Claude's draft (2026-11-21), the facts carried by the table arguing. `[JOKE]` slots are blank for Jack and Kai; under
-each is the angle (what to joke about), never the joke. Plain speech, quick. Aim ~30 s.
+Jokes drafted by Claude at Jack's ask (2026-11-21: "please write the jokes and I'll improve them"), marked `(joke,
+claude)`. Every other line is a Claude draft too. Plain speech, quick.
 
-**The table (Jack, 2026-11-21):** the Florida tourist (on holiday, dragged along; voted Trump and the $15 wage), the Swiss
-bloke (works here; votes four times a year back home), the lifelong one-party voter (voted like his dad, every time;
-loyal, not stupid), and Bob (the regular). The quizmaster is BadCode.
+**The table:** the Florida tourist, the Swiss bloke, the lifelong one-party voter, Bob. The quizmaster is BadCode.
 
-## 1. The question (~5 s)
-- QUIZMASTER: "Round two. Florida, 2020. They voted Trump. What else did they vote for, same ballot? Nearest wins."
+## The tight version (~22 s): build this one
 
-## 2. The guesses (~8 s): each guesses from their own life
-- ONE-PARTY VOTER: "Lower taxes."
-- SWISS BLOKE: [JOKE]
-  - Angle: he's used to voting on oddly specific things, so his guess is a tiny, practical question, not a big
-    ideology.
-- BOB: [JOKE]
-  - Angle: his guess comes from his own life (what he'd want on a ballot), dry, never self-pitying.
-- TOURIST: [JOKE, or silence]
-  - Angle: she knows the answer and is trying not to give it away, or she's forgotten what she voted for.
+1. **QUIZMASTER:** "Round two. Florida, 2020. They voted Trump. What else did they vote for, same ballot?"
+2. **TOURIST** (everyone looks at her): "I plead the Fifth." *(joke, claude)*
+3. **QUIZMASTER:** "A fifteen-dollar minimum wage. Sixty-one percent."
+4. **ONE-PARTY VOTER:** "So they wanted both?"
+5. **TOURIST:** "I liked both things."
+6. **ONE-PARTY VOTER:** "You can't just *like* things. You get the whole party. Five years."
+7. **SWISS BLOKE:** "Back home we vote on each thing. We had a vote on cow horns." *(joke, claude; true: the 2018
+   horned-cow initiative)*
+8. **BOB:** "So why can't we?"
+9. **The button:** the tourist at the bar: "Can I get the crisps but not the nuts?" QUIZMASTER: "Comes as a set."
+   *(joke, claude: the package, one last time)*
+10. Outro: the pint pour with the logo on the glass.
 
-## 3. The answer (~4 s)
-- QUIZMASTER: "A fifteen-dollar minimum wage. Sixty-one percent."
+## The longer version (~32 s): the extra beats, if there's room
 
-## 4. The argument (~10 s)
-- ONE-PARTY VOTER: "So they wanted both?"
-- TOURIST: "Yeah. I voted for both."
-- [JOKE, optional]
-  - Angle: she can't see why that's strange ("I liked both things"); the table can.
-- ONE-PARTY VOTER: "You can't do that. You get the whole party. Five years."
-- SWISS BLOKE: "Back home we vote on each thing. Four times a year."
-- [JOKE, optional]
-  - Angle: the one-party voter's horror at four votes a year; or the loyalty itself ("my dad voted for them").
-    Laugh with him, never at him.
+- After line 1, the guesses:
+  - ONE-PARTY VOTER: "Lower taxes."
+  - SWISS BLOKE: "Cow horns?" Table stares. *(joke, claude; then line 7 becomes "Back home we vote on each thing.
+    Four times a year.")*
+  - BOB: "A pint under a fiver." *(joke, claude)*
+- After line 7:
+  - ONE-PARTY VOTER: "Four times a year? When do you go to the pub?"
+  - SWISS BLOKE: "After." *(joke, claude)*
 
-## 5. The way out, then the button (~4 s)
-- BOB: "So why can't we?"
-- [JOKE: the button, the last laugh before the outro]
-  - Angle: the one-party voter quietly crossing out his party on the answer sheet; or the quizmaster cutting it dead
-    ("Pens down"); or the tourist picking and choosing her round of drinks.
-- Outro: the pint pour with the logo on the glass (reused).
+## Facts in it (checked 2026-11-21)
+- Florida 2020: the $15 minimum wage passed with 60.8% on the ballot where Trump won the state ("sixty-one percent").
+- Switzerland: about four national voting days a year.
+- Switzerland, 25 Nov 2018: the horned-cow initiative (subsidies for farmers who keep their cows' and goats' horns) was
+  rejected, 54.7% to 45.3%. ([Swiss government](https://www.admin.ch/en/horned-cow-initiative), [swissinfo](https://www.swissinfo.ch/eng/politics/november-25-vote_are-cows-with-horns-worth-a-bonus-for-the-swiss-/44564548))
+- Trump is named, never shown.
 
 ## How it gets made fast
-- Beats 1 and 3: the quizmaster's existing clips, his mouth under the mask: no new video.
-- Beat 2: the guesses come quick over a wide of the table: one new wide with the new cast.
-- Beats 4 and 5: new close-ups that say their lines (tourist, one-party voter, Swiss bloke, Bob), from big-face
-  portraits, one try each, best take kept.
+- Lines 1 and 3: the quizmaster's existing clips, his mouth under the mask: no new video.
+- New close-ups that say their lines (tourist, one-party voter, Swiss bloke, Bob), from big-face portraits, one try
+  each, best take kept. The button: one new shot at the bar.
