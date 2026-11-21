@@ -68,5 +68,23 @@
   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r5/edl.json",
   "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r5/preview.mp4",
   "script": "PQ_VOX=audio/lines-r5 scripts/shorts/pq_lipsync.py fit; scripts/shorts/pq_cut.py --round 5 --lines audio/lines-r5 --room"
+ },
+ "premiere": {
+  "current": "r5",
+  "r5": {
+   "sequence": "short-pub-quiz-housing-1-pub-quiz-r5",
+   "guid": "d7eb9e2f-cef0-44a4-9283-32d4c9ea720a",
+   "bin": "short-pub-quiz-housing-1-pub-quiz-r5",
+   "built": "2026-11-21",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/pub quiz housing.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r5/edl.json",
+   "what": "rough cut 5, 52.9 s: V1 the 22 finished pieces (cut/r5/v*.mp4, outro with the logo on the glass baked in); A1-A5 one track per speaker, a clip per line; A6 the drunk and the pour; A7 the pub bed",
+   "how": "premiere-plan.py cut/r5/edl.json premiere/plan-r5.json --tag r5 --seq short-pub-quiz-housing-1-pub-quiz-r5 (Premiere 27.0.0)",
+   "check": {
+    "at": "2026-11-21",
+    "state": "in sync",
+    "why": "22/22 V1 shots match plan-r5.json (start, dur, file); audio clip counts per track 3,3,3,2,1,1,1 as planned; checked by hand (no timelines.json for shorts)"
+   }
+  }
  }
 }
