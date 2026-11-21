@@ -1,13 +1,13 @@
-# The Queue: script draft 2
+# The Queue: script draft 3
 
-Jack, 2026-11-21: "do the power thing from before but do the cashier number 3 please thing with it". The power counter,
+Jack, 2026-11-21: no kids; the button is the lad on 1% plugging his phone into it. Earlier: "do the power thing from before but do the cashier number 3 please thing with it". The power counter,
 run like a Post Office queue. Lines marked `(joke, claude)` are Claude's first go, for Jack and Kai to rewrite. ~18 s.
 
 1. **The queue (4 s).** A Post Office-style hall, but every counter window says POWER. A slow British queue behind a
-   rope: a mum with a toddler holding a kettle, a pensioner with an electric heater under her arm, a lad holding a
+   rope: a woman of about 40 holding a kettle, a pensioner with an electric heater under her arm, a lad holding a
    phone on 1%. A screen above the counters: a number.
    - TANNOY (flat, automated): "Cashier number three, please."
-   - The mum starts forward.
+   - The woman with the kettle starts forward.
 2. **The barge (4 s).** The doors slide open: a data centre the size of a van, humming, fans whirring, rows of blinking
    lights, rolls past the whole queue and parks itself at window three. Its little screen flashes: DISCOUNT APPLIED.
    - The whole queue gasps. *(the most British reaction there is)*
@@ -17,9 +17,9 @@ run like a Post Office queue. Lines marked `(joke, claude)` are Claude's first g
    - He slides a POSITION CLOSED sign across in front of it. It reverses, sulking, to the back; its fans wind down.
 4. **The way out (3 s).** 
    - TANNOY: "Households first. Cashier number three, please."
-   - The mum steps up; the kettle plugs into the counter; it boils.
-   - [JOKE: the button. Angles: the data centre at the back of the queue taking a paper ticket; its screen now reads
-     'YOUR CALL IS IMPORTANT TO US'; or the lad on 1% plugs his phone into it.]
+   - The woman steps up; the kettle plugs into the counter; it boils.
+   - The button (Jack's pick): at the back of the queue, the lad on 1% plugs his phone into the data centre. It
+     charges.
 5. Logo.
 
 ## Fact (only if a caption is wanted)

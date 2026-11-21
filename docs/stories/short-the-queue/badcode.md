@@ -10,7 +10,7 @@ A BadCode short (9:16 offered, not ruled; aim 15-20 s). A Post Office-style queu
 to the back: "Brilliant machine. Wrong queue." "Households first." The point: homes come first on the grid; big
 new loads switch down first and pay for their own wires. From the BadCode government's Energy and Climate policy
 `households-first`, in that minister's voice (the engineer who can't stop being excited, sharp when someone profits
-from a shortage). State: script draft 2 ([script.md](./script.md)), nothing generated.
+from a shortage). State: script draft 3 ([script.md](./script.md)), nothing generated.
 
 ## Look
 Not decided — run story-style (or a quick pick on the mood board). Flow project: none yet.
@@ -20,6 +20,7 @@ Not decided. Any Suno track is music and sound only; every spoken line is an AI 
 
 ## Story-only rules
 - Jack and Kai write the jokes; Claude drafts only when asked, marked as Claude's.
+- No children in this short (Jack, 2026-11-21: "no kids").
 - The data centre is a thing, not a villain person: no real company, no logo, no real politician.
 - The fact, if said: ministers plan discounts of UP TO £24 per megawatt-hour for AI data centres in AI Growth Zones from
   April 2027, still subject to legislation; ministers say other billpayers won't fund it (disputed). Never say it is
