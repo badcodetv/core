@@ -7,9 +7,9 @@
 ## What it is
 A BadCode short (9:16, aim ~25 s) that takes the piss out of the materialist AND the spiritual escapist, then finds the
 middle. A £3,000 "Detox From Materialism" retreat: the bro trades during meditation, the gong costs extra, the exit is a
-gift shop of £80 rocks. Then the two of them (brother and sister) go home to Mum's for Sunday dinner, "enlightened", and
-are at each other's throats within ten seconds. Ends on the Ram Dass line about spending a week with your family.
-State: script draft 1 ([script.md](./script.md)), nothing generated.
+gift shop of £80 rocks. It opens on the Ram Dass line as a quote over a sunset (the wellness-post cliché), and ends behind
+the resort on the groundskeeper, on his break, watching the wind in the trees, actually calm. Set in a bamboo resort.
+State: script draft 2 ([script.md](./script.md)), nothing generated.
 
 ## Look
 Not decided — run story-style (or a quick pick). Flow project: none yet.
@@ -25,6 +25,7 @@ design them with an English region, never just "British".
 - The quote is Ram Dass's: credit him by name; check the exact wording and source before it goes on screen. No likeness
   of Ram Dass.
 - No real retreat, brand, guru, influencer or company. Invented names only.
+- The groundskeeper is a real person, never BadCode (in BadCode's story the AI is the one thing that can't feel the wind).
 - BadCode (the balaclava) is optional here; if he appears, he is retreat staff (e.g. on the card machine), never the joke's target.
 - Jack and Kai write the jokes; Claude's drafts are marked as Claude's.
 - Run `scripts/variations/fresh.py --story short-the-retreat` over every new prompt and line, and say the result.

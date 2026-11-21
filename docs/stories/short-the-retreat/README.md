@@ -14,7 +14,7 @@ Sunday dinner, both "enlightened", and lose it at the family within seconds.
 ## State
 | | |
 | --- | --- |
-| Script | draft 1 ([script.md](./script.md)), Claude's draft jokes marked |
+| Script | draft 2 ([script.md](./script.md)), Claude's draft jokes marked |
 | Look, sound | Not decided |
 | Media | Desktop `Youtube Vids\animation\shorts\the-retreat` (Jack's standing shorts folder) |
 | Drive | `Shorts/The Retreat` |

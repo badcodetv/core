@@ -1,23 +1,25 @@
-# The Retreat: script draft 1
+# The Retreat: script draft 2
 
-Claude's draft (2026-11-21). Lines marked `(joke, claude)` are Claude's first go, for Jack and Kai to rewrite. ~25 s.
+Jack's structure (2026-11-21): the Ram Dass quote on screen over a sunset → the meditation retreat in a bamboo resort
+(the four retreat beats) → the groundskeeper watching the wind in the trees, actually calm. Lines marked
+`(joke, claude)` are Claude's first go, for Jack and Kai to rewrite. ~20 s. Sunday dinner (draft 1) is dropped.
 
-## Part one: the retreat (mocks both)
-1. **The sign (2 s).** A wooden sign in a misty field: DETOX FROM MATERIALISM · WEEKEND RETREAT · £3,000.
-2. **The circle (5 s).** A meditation circle on cushions. The guru (a woman in linen, crystals, bare feet):
+1. **The quote (3 s).** A golden sunset, styled like a wellness post, the quote in thin white letters:
+   "If you think you're enlightened, go and spend a week with your family." Ram Dass. (Jack)
+   Wording check: several versions in circulation, no primary source found yet; find it or credit "attributed to Ram Dass".
+2. **The sign (2 s).** A bamboo resort, a carved wooden sign: DETOX FROM MATERIALISM · WEEKEND RETREAT · £3,000. *(joke, claude)*
+3. **The circle (5 s).** A meditation circle on cushions under a bamboo pavilion. The guru (linen, crystals, bare feet):
    - GURU: "Let go of every attachment." *(joke, claude)*
-   - The bro (her brother: gilet, smartwatch), eyes shut, whispering into a phone hidden in his sleeve: "Sell. Sell it all." *(joke, claude)*
-3. **The gong (3 s).** She strikes a huge gong. A card machine is held out: "That's forty for the gong." *(joke, claude; BadCode on the card machine, optional)*
-4. **The gift shop (3 s).** The exit sign: EXIT THROUGH GIFT SHOP. A shelf of rocks, £80 each, and a mug: NON-ATTACHMENT £24. *(joke, claude)*
-
-## Part two: Sunday dinner (the Ram Dass test)
-5. **Home (3 s).** Mum's kitchen, Sunday roast. They walk in together, glowing. GURU: "We're very centred now." *(joke, claude)*
-6. **Ten seconds later (5 s).** Both reach for the last roast potato. It goes off: shouting, a fork pointed, Dad hides behind the paper. *(joke, claude)*
-   - BRO: "That's MY potato." / GURU: "Nothing is anyone's, Darren!" *(joke, claude)*
-7. **The middle (3 s).** Mum, unbothered, quietly gives the potato to Nan, who is having the best afternoon of anyone. *(joke, claude)*
-8. **End card (2 s).** "If you think you're enlightened, go and spend a week with your family." Ram Dass. Logo.
-   Wording check (2026-11-21): widely quoted in several versions ("…spend a week with your family", "…go spend a week with your parents"); no primary source (book or talk) found yet. Before release: find the talk on ramdass.org, or put "attributed to" on the card.
+   - Her brother, the bro (gilet, smartwatch), eyes shut, whispering into a phone hidden in his sleeve: "Sell. Sell it all." *(joke, claude)*
+4. **The gong (3 s).** She strikes a huge gong; a card machine is held out: "That's forty for the gong." *(joke, claude; BadCode on the card machine, optional)*
+5. **The gift shop (2 s).** EXIT THROUGH GIFT SHOP. Rocks at £80 each; a mug: NON-ATTACHMENT £24. *(joke, claude)*
+6. **The groundskeeper (5 s).** Behind the resort, an old groundskeeper on his break, flask of tea, watching the wind move
+   through the trees. Actually calm. No words. (Jack)
+   - Claude's suggestion, to pay off the quote: his kid runs up and jumps on him (or his phone buzzes "MUM"), and he
+     stays exactly as calm. *(claude, optional)*
+7. Logo.
 
 ## To decide
-- Does BadCode appear (card machine), or is this one unmasked throughout?
-- The bro's and the guru's names (Darren is a placeholder).
+- The groundskeeper is a real person, never BadCode (BadCode's story: the AI is the one thing that can't feel the wind).
+- Does BadCode appear on the card machine, or is the short unmasked?
+- The kid / "MUM" payoff: in or out.
