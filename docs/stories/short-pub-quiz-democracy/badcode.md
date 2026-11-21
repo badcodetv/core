@@ -24,8 +24,8 @@ Status: EXPLORING (stills round 1). Jack, 2026-11-21: "it should be a english co
   ivy-covered stone pub on a village street. Layouts: Unsplash `lX31bAy6ML0` (main room), `R6ddisVdIfU` (the quiz table),
   `ULysA-AxywY` (the bar end), `5Ns22AXZ0D4` (outside); credits in `scenes/pub-quiz-democracy/refs.json`. No readable words.
 - **The quizmaster:** BadCode in the balaclava as an over-the-top American stereotype (Jack: "american streotypical
-  version"): white cowboy hat, blue denim western shirt with pearl snaps, bolo tie, big silver buckle, black gloves,
-  a microphone. No sunglasses (they hide the triangle). Describe the clothes only; never name a person, film or character.
+  version"; Jack 2026-11-21: "make his mask denim"): a faded blue denim balaclava (white ring, red triangle over his left eye), white cowboy hat, blue denim western shirt with pearl snaps, bolo tie, big silver buckle, black gloves,
+  a microphone. No sunglasses (they hide the triangle). Describe the clothes only; never name a person, film or character. For his shots attach his denim portrait, not the navy mask reference (it turns the mask navy); to fix a mask, edit the still and change only the cloth.
 - **The table:** the Florida tourist (white American woman ~55, highlighted blonde bob, turquoise fleece over a pink
   polo), the Swiss bloke (white, ~40, neat brown hair, trimmed beard, rimless glasses, navy gilet over a grey jumper),
   the one-party voter (Black British man ~70, grey hair and moustache, brown tweed jacket, checked shirt, knitted tie),

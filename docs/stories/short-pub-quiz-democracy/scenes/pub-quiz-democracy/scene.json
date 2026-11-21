@@ -41,18 +41,18 @@
   "stills": "https://claude.ai/artifact/7DQ4wzcfrir5hTSJBzWoCK"
  },
  "still_picks": {
-  "QM": "QM-b",
-  "T": "T-a",
+  "QM": "r2/QM-denim-a",
+  "T": "T-b",
   "S": "S-a",
   "V": "V-b",
-  "OUT": "OUT-a",
-  "QMASK": "QMASK-a",
-  "TABLE": "TABLE-b",
-  "TCU": "TCU-a",
-  "VCU": "VCU-a",
+  "OUT": "OUT-b",
+  "QMASK": "r2/QMASK-a-denim-a",
+  "TABLE": "TABLE-a",
+  "TCU": "TCU-b",
+  "VCU": "VCU-b",
   "SCU": "SCU-b",
-  "BCU": "BCU-a",
-  "BAR": "BAR-a-flip",
-  "WHY": "WHY-b"
+  "BCU": "BCU-b",
+  "BAR": "r2/BAR-d-a",
+  "WHY": "r2/WHY-b-denim-a"
  }
 }

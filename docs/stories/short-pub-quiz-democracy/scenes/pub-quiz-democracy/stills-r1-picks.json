@@ -1,9 +1,99 @@
 {
  "title": "Pub Quiz Democracy Stills",
  "eyebrow": "BadCode Shorts \u00b7 Pub Quiz: Democracy",
- "heading": "Stills, round 1: every still",
- "intro": "A countryside pub (Unsplash layouts), the American BadCode quizmaster, and the new table. I've picked one per row and carried on to the clips; overrule any pick or leave a note and I'll redo it. Pollution check: clean (the only repeats outside this short are the brand's balaclava wording, on purpose).",
+ "heading": "Stills, round 2: the denim mask",
+ "intro": "Your note \"make his mask denim\" (the brand lets the mask's colour and cloth change; the white ring and the triangle over his left eye stay). Your other picks are in: T-b, S-a, V-b, OUT-b, TABLE-a, TCU-b, VCU-b, SCU-b, BCU-b. Every quizmaster shot redone in denim, masks checked zoomed. Pollution check: clean apart from the brand's own mask wording.",
  "sections": [
+  {
+   "h": "Round 2: the quizmaster in denim",
+   "lede": "Each shot he's in, redone.",
+   "groups": [
+    {
+     "slot": "QM2",
+     "title": "The quizmaster, denim",
+     "line": "  My pick: QM-denim-a (overrule here).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "QM-denim-a",
+       "src": "s/QM-denim-a.jpg",
+       "label": "QM-denim-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "QM-denim-b",
+       "src": "s/QM-denim-b.jpg",
+       "label": "QM-denim-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "QMASK2",
+     "title": "1. The question, denim",
+     "line": "  My pick: QMASK-a-denim-a (overrule here).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "QMASK-a-denim-a",
+       "src": "s/QMASK-a-denim-a.jpg",
+       "label": "QMASK-a-denim-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "QMASK-a-denim-b",
+       "src": "s/QMASK-a-denim-b.jpg",
+       "label": "QMASK-a-denim-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BAR2",
+     "title": "9. The bar, denim",
+     "line": "With your tourist pick.  My pick: BAR-d-a (overrule here).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "BAR-d-a",
+       "src": "s/BAR-d-a.jpg",
+       "label": "BAR-d-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "BAR-d-b",
+       "src": "s/BAR-d-b.jpg",
+       "label": "BAR-d-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "WHY2",
+     "title": "9. The whole pub: \"Why?!\", denim",
+     "line": "  My pick: WHY-b-denim-a (overrule here).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "WHY-b-denim-a",
+       "src": "s/WHY-b-denim-a.jpg",
+       "label": "WHY-b-denim-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "WHY-b-denim-b",
+       "src": "s/WHY-b-denim-b.jpg",
+       "label": "WHY-b-denim-b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Portraits (every shot of a person is built from these)",
    "lede": "Faces big, one per person.",
@@ -26,7 +116,8 @@
        "label": "QM-b \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "T",
@@ -46,7 +137,8 @@
        "label": "T-b",
        "warn": "a small logo on the fleece sleeve"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "S",
@@ -66,7 +158,8 @@
        "label": "S-b",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "V",
@@ -86,7 +179,8 @@
        "label": "V-b \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   },
@@ -112,7 +206,8 @@
        "label": "OUT-b",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "QMASK",
@@ -132,7 +227,8 @@
        "label": "QMASK-b",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "TABLE",
@@ -152,7 +248,8 @@
        "label": "TABLE-b \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "TCU",
@@ -172,7 +269,8 @@
        "label": "TCU-b",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "VCU",
@@ -192,7 +290,8 @@
        "label": "VCU-b",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "SCU",
@@ -212,7 +311,8 @@
        "label": "SCU-b \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "BCU",
@@ -232,7 +332,8 @@
        "label": "BCU-b",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "BAR",
@@ -258,7 +359,8 @@
        "label": "BAR-b",
        "warn": "triangle on the wrong eye"
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "WHY",
@@ -278,9 +380,11 @@
        "label": "WHY-b \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }
- ]
+ ],
+ "round": 2
 }
