@@ -1,5 +1,5 @@
 {
- "round": 2,
+ "round": 3,
  "jack_round1": {
   "at52": {
    "beat": "queue",
@@ -14,21 +14,24 @@
  },
  "plan": [
   {
-   "h": "Rough cut 2: your two notes",
+   "h": "Rough cut 3: the English tannoy",
    "items": [
-    "Neck: fixed. The cashier's three shots re-made with a navy roll-neck under the blouse, up to the mask; checked frame by frame, no skin anywhere.",
-    "The real 'Cashier number three, please': the famous UK voice is a real company's recording, so we can't use it. The only free-to-use real recording I found (CC0, Freesound, nigelcoop) says 'Cashier number ONE, please'. The tannoy in this cut is still our AI voice."
-   ]
-  },
-  {
-   "h": "You decide",
-   "items": [
-    "Use the real CC0 recording and change the window to number one (the '3' on the display becomes '1'; 'Households first' stays our voice), or keep our voice saying three?"
+    "The tannoy is your pick, tannoy-c (an English woman from Surrey), on both calls.",
+    "Neck fix from cut 2 kept: no skin anywhere.",
+    "22.1 s (the new voice is quicker)."
    ]
   }
  ],
  "replies": {
   "at229": "Fixed in cut 2: the cashier now wears a navy roll-neck under the blouse, up to the mask, in all three of his shots (re-made from fixed stills). Checked frame by frame: no skin.",
-  "at52": "Looked: the real UK voice is a company's own recording, so it's off limits. The one free-to-use real recording (CC0 on Freesound, by nigelcoop) says 'Cashier number ONE, please'. I can switch to it and change the window to number one; say yes and it's done. This cut still uses our AI voice saying three."
+  "at52": "The real UK voices are companies' own recordings (off limits); the one free real recording says 'number one'. You picked an English designed voice instead (tannoy-c): in cut 3.",
+  "at79": "The Primark recording is Primark's own (a company's audio), so it's off limits like the Post Office one. The accent: fixed in cut 3 with your pick, tannoy-c, an English woman from Surrey."
+ },
+ "jack_round2": {
+  "at79": {
+   "beat": "queue",
+   "tc": "00:00:03:07",
+   "note": "try find the primark Cashier number three, please. soundbite thanks that was usa accent not english thanks"
+  }
  }
 }

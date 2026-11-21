@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r3/logo-phone.mp4",
+ "made": "2026-11-21T16:29:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "copy of cut/r1/logo-phone.mp4",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r1/logo-phone.mp4",
+ "why": "the phone-charging logo, unchanged"
+}

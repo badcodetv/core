@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/audio/casting/01-tannoy-three--tannoy-d.wav",
+ "made": "2026-11-21T16:26:11+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Cashier number three, please.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_x0qkyxygdnzh",
+  "style": "calm recorded announcement",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

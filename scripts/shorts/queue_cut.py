@@ -19,7 +19,7 @@ cfg = localize(json.loads((SCENE / 'scene.json').read_text()))
 MEDIA = pathlib.Path(cfg['media'])
 VID, CAST = MEDIA / 'video', MEDIA / 'audio/casting'
 TXT = {l['key']: l for l in json.loads((REPO / 'docs/stories/short-the-queue/voices/lines/lines.json').read_text())}
-PICK = {'tannoy': 'tannoy-a', 'pensioner': 'pensioner-b', 'cashier': 'cashier-a'}
+PICK = {'tannoy': 'tannoy-c', 'pensioner': 'pensioner-b', 'cashier': 'cashier-a'}
 NAMES = {'tannoy': 'Tannoy', 'pensioner': 'The pensioner', 'cashier': 'The cashier (BadCode)'}
 W, H, FPS = 1080, 1920, 24
 CLAMP = 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)'

@@ -52,8 +52,26 @@
   "SCREEN": "SCREEN-a"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r2/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r2/preview.mp4",
-  "script": "scripts/shorts/queue_logo.py ... --cx 554 --cy 968 --r 92 --cover 62 --zoom 1.7 --in 0.3 --dur 3.4; scripts/shorts/queue_cut.py --round 2"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r3/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r3/preview.mp4",
+  "script": "scripts/shorts/queue_logo.py ... --cx 554 --cy 968 --r 92 --cover 62 --zoom 1.7 --in 0.3 --dur 3.4; scripts/shorts/queue_cut.py --round 3"
+ },
+ "premiere": {
+  "current": "r3",
+  "r3": {
+   "sequence": "short-the-queue-1-the-queue-r3",
+   "guid": "f1796768-6848-4f93-91fb-fc155de5aede",
+   "bin": "short-the-queue-1-the-queue-r3",
+   "built": "2026-11-21",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/the-queue.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r3/edl.json",
+   "what": "rough cut 3, 22.1 s: V1 the 7 finished pieces (logo baked in); A1 tannoy, A2 pensioner, A3 cashier, A4 chime, A5 room",
+   "how": "premiere-plan.py cut/r3/edl.json premiere/plan-r3.json --tag r3 --seq short-the-queue-1-the-queue-r3 (Premiere 27.0.0)",
+   "check": {
+    "at": "2026-11-21",
+    "state": "in sync",
+    "why": "7/7 V1 shots match plan-r3.json; checked by hand"
+   }
+  }
  }
 }
