@@ -1,0 +1,160 @@
+{
+ "title": "Forecast Stills",
+ "eyebrow": "BadCode Shorts \u00b7 The Forecast \u00b7 stills round 1",
+ "heading": "The Forecast: stills",
+ "intro": "Real TV studio, built from Unsplash layouts. Pick one per row, or leave a note. The triangle is checked on every mask: over his left eye in all of them.",
+ "sections": [
+  {
+   "h": "Cast",
+   "lede": "Portraits first; every story shot copies these faces.",
+   "groups": [
+    {
+     "slot": "PR",
+     "title": "The presenter (BadCode)",
+     "line": "Portrait the other shots copy him from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/PR-a.jpg",
+       "label": "a: square on (used as the reference)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/PR-b.jpg",
+       "label": "b: half turned",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "F",
+     "title": "The man with the fan",
+     "line": "Invented face, nobody real.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/F-a.jpg",
+       "label": "a: looking off (used as the reference)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/F-b.jpg",
+       "label": "b: straight on, fan held up",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The short",
+   "lede": "Two takes per shot. Claude's picks: MAP-a, PULLBACK-a, FAN-a, TAGS-b, TURN-b.",
+   "groups": [
+    {
+     "slot": "MAP",
+     "title": "1. The forecast",
+     "line": "\"Prices rising across the south. Wages staying cold in the north.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/MAP-a.jpg",
+       "label": "a: wide, full map",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/MAP-b.jpg",
+       "label": "b: close, hand on RENT",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "PULLBACK",
+     "title": "2. The reveal",
+     "line": "The camera pulls back: a man off-set with a desk fan.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/PULLBACK-a.jpg",
+       "label": "a: closer, fan man clear",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/PULLBACK-b.jpg",
+       "label": "b: wider, past the camera operator",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "FAN",
+     "title": "2. Caught",
+     "line": "He sees the camera and keeps blowing.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/FAN-a.jpg",
+       "label": "a: guilty stare into the lens",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/FAN-b.jpg",
+       "label": "b: sheepish half-smile",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "TAGS",
+     "title": "3. The way out",
+     "line": "Every cloud gets a name tag. \"Now you know who's holding the fan.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/TAGS-a.jpg",
+       "label": "a: wide, pointing up",
+       "warn": "ENERGY FIRMS cloud came out as a blurry orange smudge; fixable with an edit."
+      },
+      {
+       "id": "b",
+       "src": "r1/TAGS-b.jpg",
+       "label": "b: close, finger on RENT",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "TURN",
+     "title": "4. The button",
+     "line": "The presenter turns the fan on him.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/TURN-a.jpg",
+       "label": "a: side on, tie flying",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/TURN-b.jpg",
+       "label": "b: low, hair blown up",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

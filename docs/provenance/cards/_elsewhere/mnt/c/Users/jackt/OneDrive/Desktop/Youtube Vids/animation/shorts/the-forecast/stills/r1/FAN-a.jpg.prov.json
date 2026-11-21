@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/FAN-a.jpg",
+ "made": "2026-11-21T17:04:15.378Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 close shot, the camera low at his level, of the man with the fan from his portrait: ruddy face, grey hair slicked back, navy pinstripe suit, red-and-gold striped tie, gold cufflinks, polished black shoes, crouched on his heels on the dark floor just off a TV set, both hands holding a plain white desk fan with its blades spinning to a blur, pointed off to the left of the frame towards the unseen screen. He has just been caught: his eyes have lifted up to look straight into the lens, eyebrows raised, mouth pressed shut, guilty, and he keeps the fan running anyway. Around him the off-set studio clutter from the studio photo, used as layout only: a light stand with a softbox, a rolling equipment cart, cables on a concrete floor. Hard bright spill from the set falls on him from the left; the rest is dim. Equipment plain and unmarked. His face large and sharp. Real photograph.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/Av7fp7AqJr0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/Av7fp7AqJr0.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/portrait-F.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "4f160fc3-666c-40dc-b21e-4bb18ebdf48d"
+}

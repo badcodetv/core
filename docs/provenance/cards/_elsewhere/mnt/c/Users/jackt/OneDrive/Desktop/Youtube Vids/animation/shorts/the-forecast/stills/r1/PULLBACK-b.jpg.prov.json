@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/PULLBACK-b.jpg",
+ "made": "2026-11-21T17:03:05.362Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 wide shot further back, the camera pulled away from a TV weather set, as in the over-the-shoulder studio photo: a studio camera on a pedestal and its operator dark in the bottom foreground, a light stand and a softbox top left. In the middle distance on the left, a bright island of light: the presenter, small but clear, standing full length beside a large screen with a cartoon map of Great Britain covered in clouds and arrows. He wears a navy knitted balaclava with a white ring and a red triangle over his own left eye. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy suit, pale blue shirt buttoned with the collar up to the mask, plain tie, black gloves. On the right, a metre beyond the edge of the light, in the gloom between a black flight case and a tangle of cables: the man in the suit from his portrait, ruddy face and slicked grey hair, navy pinstripe suit, red-and-gold striped tie, squatting on his heels with both arms out, pointing a plain white desk fan at the screen, the fan's lead snaking back across the floor to a plug strip. The set clean and glossy, the edges dark and cluttered. All gear and screens plain and unmarked. Real photograph. The presenter and the man with the fan come from the cast sheet (presenter on its left, man on its right); each keeps exactly the face and clothes from the sheet.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/fnjxpnaivnE.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/fnjxpnaivnE.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/cast-PRF.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d80afb14-f332-452f-9041-82b095cf6b18"
+}

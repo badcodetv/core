@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/F-b.jpg",
+ "made": "2026-11-21T16:56:43.749Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 portrait of an invented white man of about 55, head and shoulders filling the upper two thirds of the frame, face large, sharp and facing the camera straight on: grey hair slicked straight back with comb lines, ruddy pink cheeks and nose, heavy brows, thin lips pressed together, an unremarkable everyday face belonging to nobody known. Navy pinstripe suit jacket, crisp white shirt, red-and-gold striped tie with a neat knot, gold cufflinks, both hands holding a plain white plastic desk fan at chest height. He is down on his haunches in the dim edge of a television studio taken from the studio photo as layout only: behind him the blurred, brightly lit curve of a set in invented teal and white, a rolling studio camera with plain unmarked casing, cables across a dark floor. Hard light from the set on one side of his face, the other side darker. Real photograph, natural colour.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d7d2796a-4d4f-4943-a6a6-472bdf17058a"
+}

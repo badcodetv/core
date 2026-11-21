@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/PR-b.jpg",
+ "made": "2026-11-21T16:55:29.142Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 portrait of a TV weather presenter, framed from mid-chest up, head and shoulders large and sharp, his body turned a few degrees to the left of the frame while his masked face looks straight into the lens, as if just about to start the forecast. He wears a navy knitted balaclava with a white rope ring round the face and a red triangle that stays over his own left eye (the right side of the picture). The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy suit, pale blue shirt buttoned to the collar, plain dark tie, collar up against the mask so the knit and the collar meet with no gap, black gloves, a small black clicker held low in his right hand at the bottom edge of the frame. Background from the studio photo, for layout only and softly blurred: the curve of a news-style set with a raised round floor and a big screen glowing cool blue-green, the set colours invented teal and white, every surface plain. Bright even front light, a soft rim of light on the top of his head and shoulders, the glossy studio look of a morning forecast. Real photograph.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "785d7ba5-3a00-45e6-b3bc-47078b90cdca"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/MAP-a.jpg",
+ "made": "2026-11-21T16:58:55.103Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 shot of a TV weather forecast in progress. The weather presenter from his portrait stands on the left third of the frame, full figure from the knees up, facing the camera, his left arm stretched out towards a huge video wall that fills the right two thirds of the frame. He wears the navy knitted balaclava with the white ring and the red triangle over his own left eye. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy suit, pale blue shirt buttoned with the collar up against the mask, plain tie, black gloves, a small clicker in his right hand. The screen shows a bright weather map of Great Britain, green land on a blue sea, Scotland at the top, Cornwall bottom left. Three cartoon clouds sit on the map, each with one word in plain white block capitals: a pale grey cloud reading PRICES over the south of England, a soft blue cloud reading WAGES over northern England and Scotland, and a heavy dark charcoal cloud reading RENT drifting over London in the south-east. Fat white cartoon arrows curve across the map showing the wind. The studio floor and curved set shape come from the studio photo, used as layout only, now in invented teal and white; the floor is glossy and catches the screen's glow. Bright, even, shadowless front light on the presenter, the map glowing behind him. The only lettering anywhere is the three cloud words. Real photograph of a broadcast, slightly glossy.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/portrait-PR.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "fbef60ef-def1-4294-97b7-74c130c9ba65"
+}

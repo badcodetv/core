@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/FAN-b.jpg",
+ "made": "2026-11-21T17:05:19.831Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 shot slightly from above and to the side: the man with the fan from his portrait crouched in the shadowy edge of a studio, the off-set layout from the studio photo around him (light stand, softbox on a boom overhead, cart, coiled cables, a folding chair, a bare concrete floor). Navy pinstripe suit straining at the knees, red-and-gold striped tie hanging forward, gold cufflinks, polished shoes, grey slicked-back hair, ruddy face. He holds a plain white desk fan out at arm's length, its blades a blur, its white power cable trailing away behind him across the floor. His head is tilted up, eyes locked on the camera with a sheepish, guilty half-smile, as if to say nothing is happening, while his hands keep the fan aimed off frame. A wash of bright set light on his face, the background falling to dark grey. Every piece of kit plain and unmarked. His face large and clear. Real photograph.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/Av7fp7AqJr0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/Av7fp7AqJr0.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/portrait-F.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "f430f87c-fbe7-4254-954b-343fb26b16ab"
+}

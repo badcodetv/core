@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/TAGS-a.jpg",
+ "made": "2026-11-21T17:06:57.856Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 shot of the same TV weather forecast: the presenter from his portrait standing on the left third of the frame from the knees up, facing the camera, his gloved left arm raised, finger pointing up at the clouds on a huge screen filling the right of the frame. He wears the navy knitted balaclava with the white ring and the red triangle over his own left eye. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy suit, pale blue shirt buttoned with the collar up against the mask, plain tie, black gloves, a clicker in his other hand. The screen shows the cartoon map of Great Britain, green on blue, with four cartoon clouds and white arrows. Each cloud has a white luggage-style name tag hanging from it on a thin black string, the tag words in plain black block capitals: the pale grey cloud reading PRICES over the south carries a tag THE TREASURY; the light blue cloud reading WAGES over the north carries a tag BANK RATE; the dark charcoal cloud reading RENT over London carries a tag LANDLORDS' LOBBY; a fourth, smoky orange-grey cloud over the Midlands carries a tag ENERGY FIRMS. The tags are big and easy to read. Studio shape from the studio photo as layout only, invented teal and white set colours, glossy floor. Bright, even studio light. The only words in the picture are those on the clouds and tags. Real photograph of a broadcast.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/portrait-PR.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e544656d-c463-4321-bf5e-e828e1813ae6"
+}

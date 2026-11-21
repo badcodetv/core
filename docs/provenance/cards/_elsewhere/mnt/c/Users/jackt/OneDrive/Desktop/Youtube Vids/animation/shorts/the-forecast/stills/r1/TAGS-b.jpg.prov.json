@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/TAGS-b.jpg",
+ "made": "2026-11-21T17:08:36.222Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 tighter shot of the weather screen with the presenter from his portrait at the bottom right, seen from the chest up, turned in profile towards the screen and tapping the dark cloud with a gloved finger; his masked face is in three-quarter view so the red triangle on his own left eye is still visible. He wears the navy knitted balaclava with the white ring. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy suit, pale blue shirt with its collar up against the mask, plain tie, black gloves. The screen fills most of the frame: a cartoon map of Great Britain, green land, blue sea, white arrows, and four cartoon clouds each dangling a white rectangular name tag on a string, written in plain black block capitals. Dark charcoal cloud over London, reading RENT, tag LANDLORDS' LOBBY, right under his finger. Pale grey cloud over the south coast, reading PRICES, tag THE TREASURY. Light blue cloud over the north, reading WAGES, tag BANK RATE. Smoky orange-grey cloud over the Midlands, tag ENERGY FIRMS. Layout and set curve from the studio photo, invented teal and white colours. Bright, glossy studio light, the screen glow on his shoulder. Only those cloud and tag words are written anywhere. Real photograph.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/portrait-PR.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ca66f653-3dfc-45f4-9e37-19971d177d74"
+}

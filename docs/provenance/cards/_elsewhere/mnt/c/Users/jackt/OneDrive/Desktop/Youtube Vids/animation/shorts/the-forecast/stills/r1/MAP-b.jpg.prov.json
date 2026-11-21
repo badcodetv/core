@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/stills/r1/MAP-b.jpg",
+ "made": "2026-11-21T17:00:15.114Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A vertical 9:16 closer shot of a weather forecast: the presenter from his portrait, framed from the waist up on the right edge of the frame, half turned towards the big screen on the left while his masked face still looks back at the camera, his gloved right hand open and pointing at London on the map. He wears the navy knitted balaclava with the white ring, the red triangle staying over his own left eye. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy suit, pale blue shirt buttoned with its collar up against the mask, plain tie, black gloves, a small black clicker in his other hand. The screen fills the left and centre of the frame with a map of Great Britain, green land on deep blue sea. A heavy dark charcoal cartoon cloud with the word RENT in plain white block capitals hangs right over London, big and close to his hand; above it, over the south, a pale grey cloud with PRICES; up north over Scotland and northern England a light blue cloud with WAGES. White cartoon arrows sweep from left to right across the map. Studio shape from the studio photo as layout only, invented teal and white set colours, glossy floor edge at the bottom. Bright even studio light, a soft rim of light from the screen on his shoulder. Only those three cloud words are written anywhere. Real photograph.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-forecast/Krkr1WhLV-4.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/portrait-PR.jpg",
+   "/home/jackt/.cache/badcode-refs/the-forecast/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "bd7a70ae-b907-45aa-aefc-b2b086398819"
+}
