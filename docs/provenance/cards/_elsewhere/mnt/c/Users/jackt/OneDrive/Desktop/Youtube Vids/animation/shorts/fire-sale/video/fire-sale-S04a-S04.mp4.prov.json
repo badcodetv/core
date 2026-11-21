@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S04a-S04.mp4",
+ "made": "2026-11-21T21:44:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera stays fixed at standing height. The long black car is already moving in the first second, rolling slowly towards the camera along the rutted mud track, tyres sinking and pushing up brown water from the puddled ruts. It keeps coming, filling more of the frame, then veers slightly and slides past the camera to the left edge, the wet dark bodywork and smooth bonnet staying plain and unadorned. As it passes, the woman with the backpack on the left and the woman holding the teapot turn their heads to follow it; the old man in the flat cap on the right stares after it. Drizzle falls throughout. Sound: a low, quiet engine hum, tyres sucking through mud, splash of puddles, light rain, a crowd murmur that dips. Grey overcast daylight, realistic.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S04.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S04.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S04a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:40:14.926Z"
+ }
+}

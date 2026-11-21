@@ -139,6 +139,55 @@
    "still": "S10",
    "motion": "Static camera. Immediately a ripple of paddles goes up across the tent: the ordinary people in the rows behind lift their \"\u00a350\" paddles, a few at first, then many, faces calm and plain. The heavy man in the front row grips his knees, turns sharply round over his shoulder and glares at the room, eyes wide and outraged. The clerk beside him glances sideways at him, then down. The \"\u00a350\" lettering stays readable on every paddle. On the right, the masked auctioneer remains completely still behind the lectern, gavel held up, balaclava with its white ring and red triangle over his left eye exactly as it is, gloved hands only. No one talks. Sound: shuffle of chairs and paddles, a swelling murmur of a crowd, soft rain on canvas. Natural daylight inside the marquee.",
    "why": "clips round 1 (sealed writer)"
+  },
+  {
+   "key": "S02c",
+   "n": 1,
+   "still": "S02",
+   "motion": "The man in the flat cap holds the framed picture up towards the camera, gives it a little waggle and grins. He says, cheerfully, in a rough English market-trader voice: \"Hospitals, love. Forty quid.\" Light rain drips from the edge of the gazebo, people walk past behind him. Camera steady at chest height. The words on the small tag stay the same.",
+   "why": "S02 refused twice; plain wording"
+  },
+  {
+   "key": "S02d",
+   "n": 1,
+   "still": "S02",
+   "motion": "Camera holds still. The grinning trader in the flat cap lifts the picture frame a little higher for the customer and says, in a chirpy English accent: \"Hospitals, love. Forty quid.\" Then he raises his eyebrows, waiting. Drizzle, shoppers in hoods pass in the background. Nobody else speaks.",
+   "why": "S02 refused twice; plain wording"
+  },
+  {
+   "key": "S02ha",
+   "n": 1,
+   "still": "S02h",
+   "motion": "Camera steady at chest height. The grinning man in the flat cap lifts the framed picture a little towards the camera and says, cheerfully, in a rough English market-trader voice: \"Hospitals, love. Forty quid.\" Then he raises his eyebrows, waiting. Light drizzle, shoppers in hoods pass behind. The tag on the frame stays the same. Nobody else speaks.",
+   "why": "S02 refused (four times); new still from the courts shot"
+  },
+  {
+   "key": "S02hb",
+   "n": 1,
+   "still": "S02h",
+   "motion": "The trader in the flat cap holds the picture frame up with a big grin, gestures at it with his open hand and says, chirpy and quick, in an English accent: \"Hospitals, love. Forty quid.\" Rain drips from the gazebo edge, people walk past in the background. Camera still. The words on the tag do not change.",
+   "why": "S02 refused (four times); new still from the courts shot"
+  },
+  {
+   "key": "S02hc",
+   "n": 1,
+   "still": "S02h",
+   "motion": "Camera still. The man in the flat cap grins and gives the picture frame a little waggle, then nods. Light rain, people walk past behind him. No speech.",
+   "why": "test: is it the spoken line or the picture?"
+  },
+  {
+   "key": "S02hd",
+   "n": 1,
+   "still": "S02h",
+   "motion": "Camera steady at chest height. The grinning man in the flat cap lifts the picture frame towards the camera and says cheerfully, in a rough English market-trader voice: \"Here you go, love. Forty quid.\" Then he raises his eyebrows, waiting. Light drizzle, shoppers pass behind. Nobody else speaks.",
+   "why": "the hospital line is refused as speech; a same-length stand-in line, dubbed in the edit"
+  },
+  {
+   "key": "S02he",
+   "n": 1,
+   "still": "S02h",
+   "motion": "The trader in the flat cap holds up the framed picture with a big grin and says, chirpy, in an English accent: \"Lovely one, this. Forty quid.\" He gestures at it with his open hand. Rain drips from the gazebo, people pass behind. Camera still.",
+   "why": "the hospital line is refused as speech; a same-length stand-in line, dubbed in the edit"
   }
  ]
 }

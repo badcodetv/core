@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S05a-S05.mp4",
+ "made": "2026-11-21T21:43:30+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera holds steady. Within the first second the heavy bald man in the pinstripe suit, just out of the open car door, lifts his cane and plants its tip firmly in the mud. The uniformed chauffeur behind him keeps the black umbrella held high over his head. The heavy man then turns his head slowly left, then right, surveying the stalls with a smug, satisfied half-smile, chin up. Meanwhile the thin clerk in glasses hurries forward a few quick steps from the right to stay at his shoulder, clutching the clipboard marked \"PURCHASES\" to his chest, the word staying readable. Light rain falls; the shoppers behind keep browsing. Nobody speaks. Sound: rain drumming on the umbrella, a squelch as the cane hits mud, quick wet footsteps, distant crowd murmur. Real, overcast daylight.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S05.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S05.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S05a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:40:45.300Z"
+ }
+}

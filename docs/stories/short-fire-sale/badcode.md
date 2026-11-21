@@ -36,6 +36,7 @@ design them with an English region, never just "British".
 
 ## Story-only rules
 - No real politician, party, donor or broadcaster: invented names only (Phineas, Brian). No real party colours or logos.
+- **Flow refuses the hospital line as speech** ("Hospitals, love. Forty quid."): the clip speaks a same-length stand-in and the real line is dubbed.
 - The institutions on Jim's table are framed pictures with plain handwritten tags (e.g. "NHS – £40", "THE COURTS –
   SLIGHTLY USED"); words in pictures only where the script says.
 - BadCode is the auctioneer who announces the cap (Claude's pick; Jack can veto). Tweed jacket over a navy roll-neck up into the mask (no skin): white ring, red triangle over his left eye, no skin, gloves.

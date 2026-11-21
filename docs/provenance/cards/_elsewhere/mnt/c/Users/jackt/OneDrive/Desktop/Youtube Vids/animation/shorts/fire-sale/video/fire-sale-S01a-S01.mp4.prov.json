@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S01a-S01.mp4",
+ "made": "2026-11-21T21:41:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "From the very first frame the woman in the hooded olive parka is already walking straight towards the camera along the muddy grass path, hands deep in her pockets, boots squelching. The camera drifts slowly backwards at her walking pace, keeping her centred and the same size in frame. As she passes the table of mugs and jugs on the right, her eyes flick sideways to it for a moment, then back ahead, face flat and unimpressed. Fine drizzle falls the whole time, beading on her hood. Behind her the stallholders stay at their tables and the man under the umbrella stays seated; the blue gazebo and the open car boots stay where they are. She keeps her mouth closed. Sound: soft steady rain on canvas and parka, wet footsteps, a distant murmur of a crowd. Real, overcast English daylight, handheld-steady.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S01.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S01.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S01a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:39:27.552Z"
+ }
+}

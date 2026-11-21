@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S05b-S05.mp4",
+ "made": "2026-11-21T21:43:47+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static camera. At once the heavy bald man takes one deliberate step forward from the car, the chauffeur moving the umbrella with him to keep him dry, and sets his cane down in the mud with a firm tap. He pauses, looks slowly across the car-boot stalls like a man inspecting property he already owns, and gives a slight smug nod. The thin clerk scurries after him, small hurried steps, head bowed, gripping the \"PURCHASES\" clipboard, and stops just behind his right shoulder. The car door stays open and the car stays still and plain. Nobody talks. Sound: rain on the umbrella fabric, wet footsteps and mud, a soft murmur of a crowd. Natural grey light, realistic.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S05.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S05.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S05b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:40:42.680Z"
+ }
+}

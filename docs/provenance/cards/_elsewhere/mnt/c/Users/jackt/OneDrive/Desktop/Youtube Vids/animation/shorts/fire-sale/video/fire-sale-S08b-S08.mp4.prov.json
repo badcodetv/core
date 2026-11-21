@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S08b-S08.mp4",
+ "made": "2026-11-21T21:42:36+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Fixed camera. Immediately the clerk pushes paddle 29 up another few inches, arm trembling slightly, and looks towards the lectern with a tired, pleading face. Heads in the rows around him turn; a woman in the back raises her eyebrows. A low murmur rolls through the tent. The \"29\" on the paddle and the \"£150,000\" on the board stay exactly as they are and readable. The string lights sway very slightly; the man at the lectern holds his gesture. The clerk keeps his mouth closed. Sound: crowd murmur swelling, light rain on the marquee roof. Natural daylight in a white tent, realistic.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S08.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S08.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S08b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:41:11.523Z"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r2/HOSPITAL2.jpg",
+ "made": "2026-11-21T21:48:55.321Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Change only the framed picture the man in the flat cap is holding up: it is now a framed photograph of a large red-brick hospital building, with a small handwritten brown luggage tag tied to the frame reading \"NHS £40\". Change his expression to a big cheerful salesman's grin, as if saying a price. Everything else stays as it is: his face, cap and jacket, the stall, the gazebo, the rain and the people behind.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/S03.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/S03.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "96a7f83e-2069-4fd8-93bf-b3af183daa22"
+}

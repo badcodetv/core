@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S06b-S06.mp4",
+ "made": "2026-11-21T21:42:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Fixed camera. Immediately the heavy man gives the clerk's shoulder two slow pats, turns his face a little towards him and, savouring it, says in a smooth, posh English voice: \"All of it.\" Mouth moving naturally with each word, said once. The clerk swallows, a bead of sweat sliding down his cheek, and scribbles frantically, the pen racing down the checkboxes on the \"PURCHASES\" clipboard, which stays legible. Behind them a couple of shoppers browse slowly; the patterned umbrella stays still. Only the heavy man speaks. Sound: his line, the scratch of a hurried pen, gentle rain, soft crowd murmur. Damp grey light, realistic.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S06.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S06.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S06b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:40:39.911Z"
+ }
+}

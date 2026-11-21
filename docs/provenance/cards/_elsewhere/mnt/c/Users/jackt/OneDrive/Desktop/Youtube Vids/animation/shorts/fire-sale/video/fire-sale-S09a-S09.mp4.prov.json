@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S09a-S09.mp4",
+ "made": "2026-11-21T21:44:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera locked, looking up past the seated heads. At once the masked auctioneer, standing behind the wooden lectern, holds his black gloved palm out flat towards the room in a calm, firm \"stop\", keeping it there for a beat. Then he brings the gavel in his other hand down once on the lectern with a sharp crack, and goes still. His navy balaclava stays exactly the same throughout: the white ring around the face area and the small red triangle over his left eye, fully covering his head, with no opening; only the knitted fabric shows. The blackboard behind keeps its crossed-out figure and \"£50\" readable. Rain trickles down the clear tent wall behind. Sound: a hush in the crowd, one loud wooden gavel knock, rain on canvas. Soft natural light.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S09.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S09.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S09a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:41:17.718Z"
+ }
+}

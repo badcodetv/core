@@ -33,7 +33,8 @@
  ],
  "boards": {
   "stills": "https://claude.ai/artifact/URMdM8DmjjEc2gRGfssj7f",
-  "voices": "https://claude.ai/artifact/9uYTb9SPSbAFz1KycidYme"
+  "voices": "https://claude.ai/artifact/9uYTb9SPSbAFz1KycidYme",
+  "timeline": "https://claude.ai/artifact/TxVD7peAjq5G333Dmj73nS"
  },
  "flow_project": "3e35b83e-2dc8-440b-acc2-45d246df363f",
  "video": {
@@ -41,5 +42,11 @@
   "model": "Omni 1.2 Flash",
   "mode": "Frames",
   "duration": 8
+ },
+ "cut": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/cut/r1/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/cut/r1/preview.mp4",
+  "script": "python3 scripts/shorts/fire_cut.py --round 1",
+  "round": 1
  }
 }

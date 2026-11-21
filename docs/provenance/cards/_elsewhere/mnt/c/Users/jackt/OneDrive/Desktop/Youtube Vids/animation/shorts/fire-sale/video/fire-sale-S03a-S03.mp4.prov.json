@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S03a-S03.mp4",
+ "made": "2026-11-21T21:44:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera holds still at eye level. Straight away the dealer, holding the framed gavel picture in his left hand, lifts his open right hand and both shoulders in a slow shrug, tilts his head, and says in a dry English accent: \"The courts. Slightly used.\" His mouth matches each word, said once and plainly, with a little half-smile at the end. The card tag hanging from the frame keeps its handwritten \"THE COURTS - SLIGHTLY USED\" exactly as written. The red-brick picture in the crate in front stays where it is. Light rain falls beyond the white gazebo; people in the background drift slowly between stalls. Sound: his single line, rain on the gazebo roof, a low crowd murmur. Overcast natural light.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S03.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S03.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S03a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:39:55.741Z"
+ }
+}

@@ -1,0 +1,9 @@
+[
+ {
+  "at": "2026-11-21T21:57:35+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "what": "rough cut 1, 31.6 s, https://claude.ai/artifact/TxVD7peAjq5G333Dmj73nS",
+  "rebuild": "python3 scripts/shorts/fire_cut.py --round 1"
+ }
+]

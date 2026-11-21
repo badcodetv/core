@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S06a-S06.mp4",
+ "made": "2026-11-21T21:41:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera locked, close two-shot. From the first moment the heavy bald man, his ringed hand resting on the clerk's shoulder, narrows his eyes and says slowly and smugly in a deep English accent: \"All of it.\" His lips shape the three words clearly, in sync, said once with a pause between \"All\" and \"of it\". The clerk beside him, sweat and rain running down his face and fogging his glasses, starts writing faster on the clipboard, pen scratching, eyes darting nervously; his mouth stays closed. The clipboard keeps its printed heading \"PURCHASES\" readable. The framed pictures and plates on the stall behind stay where they are. Sound: the single line, low and pleased, pen scratching paper, light rain, a faint crowd murmur. Real overcast daylight.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S06.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S06.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S06a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T21:40:36.317Z"
+ }
+}
