@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q05d-Q05n.mp4",
+ "made": "2026-11-21T15:58:15+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, no pan. On the left, the woman in the mustard coat holds the white kettle on the wooden counter with her left hand while her right hand presses the plug the last little way into the white wall socket below. The small light on the kettle base comes on at once. She keeps her hand on the kettle and waits, glancing at it. Steam starts faintly from the spout, then thickens quickly and rolls out in a generous white cloud that drifts up toward the glass. As the steam pours, she smiles, a quiet, pleased smile, mouth closed, and lets go of the kettle. Behind the glass, the cashier in the blonde bob wig and navy balaclava with the white ring and the red triangle over his left eye (right of frame) stays facing the camera, gloved hands folded, and near the end gives one small, approving nod. The ring and triangle stay fixed. The carved sign above reads POWER, unchanged. Same light throughout.\nNatural documentary realism, soft daylight.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q05n.jpg",
+ "why": "Jack 2026-11-21 note: skin on the cashier's neck; still fixed (navy roll-neck), same motion",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q05n.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-queue/scenes/the-queue",
+  "key": "Q05d",
+  "frame": 20,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T15:57:10.529Z"
+ }
+}

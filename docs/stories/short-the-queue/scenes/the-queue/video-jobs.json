@@ -97,6 +97,48 @@
    "still": "Q07",
    "motion": "Locked-off camera, no zoom, no pan. Almost a still frame. A hand in a grey sleeve holds a black phone upright in the centre of frame, white cable hanging from its base, the hall a soft blur behind. For the first two seconds nothing changes. Then the thin white ring in the middle of the black screen begins to brighten, gently and evenly, until by the end it is a crisp, luminous white ring with a faint soft glow around it, the same size and in the same place. The rest of the screen remains pure black. The hand stays almost perfectly still, the thumb shifting a millimetre at most. The blurred background stays soft. Same light throughout.\nQuiet, natural realism, shallow depth of field.\nThanks.",
    "why": "clips r1 (clean-room anim-r1.json)"
+  },
+  {
+   "key": "Q03c",
+   "n": 15,
+   "still": "Q03n",
+   "motion": "Locked-off camera, no zoom, no pan. The cashier sits behind the glass of the wooden counter, facing straight to camera: blonde bob wig over a navy balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the frame. He has no mouth; he never speaks with his face. In the foreground at the bottom of frame sits the black mesh top of the server cabinet with its small green and blue lights. Slowly, the cashier looks the machine up and down: his chin lifts as if taking in its full height, holds for a beat, then lowers as his gaze travels down to its top in the foreground. Then, at about five seconds, a small, weary tilt of the head to one side, and a hold. His gloved hands rest on the counter, one fingertip tapping once. The white ring and the red triangle stay fixed on the balaclava, the triangle always on the right of frame. The sign above reads POWER and the now-serving card shows 3, letters unchanged. The machine's lights blink softly. Same light throughout.\nNatural documentary realism, soft overhead office light.\nThanks.",
+   "why": "Jack 2026-11-21 note: skin on the cashier's neck; still fixed (navy roll-neck), same motion"
+  },
+  {
+   "key": "Q03d",
+   "n": 16,
+   "still": "Q03n",
+   "motion": "Locked-off camera, no zoom, no pan. The cashier sits behind the glass of the wooden counter, facing straight to camera: blonde bob wig over a navy balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the frame. He has no mouth and makes no mouth movement. The black mesh top of the server cabinet fills the bottom of frame, its small lights blinking. He is still for a moment, then his chin rises slowly, a long look up at the machine, then his head lowers slowly back down, unimpressed. His gloved hands lift a few centimetres off the counter, palms half open, then settle back. Finally a small, tired tilt of the head, held until the end, as if to say it is in the wrong place. He keeps facing the camera the whole time; the white ring and the red triangle never move on the balaclava, the triangle stays on the right of frame. The sign above reads POWER and the now-serving card shows 3, unchanged. Same light throughout.\nNatural documentary realism, soft overhead office light.\nThanks.",
+   "why": "Jack 2026-11-21 note: skin on the cashier's neck; still fixed (navy roll-neck), same motion"
+  },
+  {
+   "key": "Q04c",
+   "n": 17,
+   "still": "Q04n",
+   "motion": "Locked-off camera, no zoom, no pan. Behind the glass at the wooden counter, the cashier in the blonde bob wig and navy balaclava with the white ring and the red triangle over his left eye (right of frame) faces the camera, his black-gloved hands on the small POSITION CLOSED sign on the counter ledge. He slides the sign the last few centimetres along the ledge, deliberately, lets go, and sits back in his chair, hands folding in front of him. On the right, the tall black server cabinet with its small screen reading DISCOUNT APPLIED stands close to the counter. Its fans visibly slow, their blades going from a blur to slowly turning, and its lights blink more slowly. Then it begins to roll backward on its castors, slowly and heavily, moving as one rigid upright box, sliding out of frame to the right until only the counter and the cashier remain, with the room behind the counter in view. The small sign reads POSITION CLOSED throughout, the screen reads DISCOUNT APPLIED while it is in view, and the carved sign above reads POWER. Same light throughout.\nNatural documentary realism, soft overhead light.\nThanks.",
+   "why": "Jack 2026-11-21 note: skin on the cashier's neck; still fixed (navy roll-neck), same motion"
+  },
+  {
+   "key": "Q04d",
+   "n": 18,
+   "still": "Q04n",
+   "motion": "Locked-off camera, no zoom, no pan. Behind the glass at the wooden counter, the cashier in the blonde bob wig and navy balaclava with the white ring and the red triangle over his left eye (right of frame) faces the camera. He pauses with his black-gloved hands on the POSITION CLOSED sign, then with one fingertip nudges it the last few centimetres across the ledge, small and precise. He leans back and rests his hands in his lap, perfectly still, still facing the camera. A beat later, on the right of frame, the tall black server cabinet with its small screen reading DISCOUNT APPLIED winds down: its fans slow to a lazy turn, its lights dim a little. It then reverses slowly on its castors, a heavy, smooth backward roll, staying rigid and upright, and drifts out of frame to the right. The counter, the carved wooden pillar and the POWER sign above stay exactly as they are; the small sign on the ledge reads POSITION CLOSED throughout and the screen reads DISCOUNT APPLIED while it is in view. Same light throughout.\nNatural documentary realism, soft overhead light.\nThanks.",
+   "why": "Jack 2026-11-21 note: skin on the cashier's neck; still fixed (navy roll-neck), same motion"
+  },
+  {
+   "key": "Q05c",
+   "n": 19,
+   "still": "Q05n",
+   "motion": "Locked-off camera, no zoom, no pan. On the left, the woman in the mustard coat stands at the wooden counter, her left hand steadying the white kettle on the counter, her right hand at the white wall socket below it on the right. She pushes the plug fully into the socket with a small firm press. A moment later a small light on the kettle's base glows on. Over the next few seconds the kettle begins to boil: a thin wisp of steam rises from the spout, builds, and then pours out in a steady white plume, curling up against the glass. She watches it and her face breaks into a warm, satisfied smile, mouth closed. Behind the glass, the cashier in the blonde bob wig and navy balaclava with the white ring and the red triangle over his left eye (right of frame) faces the camera with gloved hands folded on the counter, and gives a single small nod, then stays still. The ring and triangle never move. The carved sign above reads POWER, unchanged. Same light throughout.\nNatural documentary realism, soft daylight.\nThanks.",
+   "why": "Jack 2026-11-21 note: skin on the cashier's neck; still fixed (navy roll-neck), same motion"
+  },
+  {
+   "key": "Q05d",
+   "n": 20,
+   "still": "Q05n",
+   "motion": "Locked-off camera, no zoom, no pan. On the left, the woman in the mustard coat holds the white kettle on the wooden counter with her left hand while her right hand presses the plug the last little way into the white wall socket below. The small light on the kettle base comes on at once. She keeps her hand on the kettle and waits, glancing at it. Steam starts faintly from the spout, then thickens quickly and rolls out in a generous white cloud that drifts up toward the glass. As the steam pours, she smiles, a quiet, pleased smile, mouth closed, and lets go of the kettle. Behind the glass, the cashier in the blonde bob wig and navy balaclava with the white ring and the red triangle over his left eye (right of frame) stays facing the camera, gloved hands folded, and near the end gives one small, approving nod. The ring and triangle stay fixed. The carved sign above reads POWER, unchanged. Same light throughout.\nNatural documentary realism, soft daylight.\nThanks.",
+   "why": "Jack 2026-11-21 note: skin on the cashier's neck; still fixed (navy roll-neck), same motion"
   }
  ]
 }

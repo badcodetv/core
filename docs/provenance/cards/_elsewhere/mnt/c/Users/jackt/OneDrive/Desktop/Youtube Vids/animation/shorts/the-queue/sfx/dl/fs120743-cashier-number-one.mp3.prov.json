@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/sfx/dl/fs120743-cashier-number-one.mp3",
+ "made": "2026-11-21T15:56:15+00:00",
+ "by": "claude",
+ "kind": "sfx",
+ "engine": "freesound",
+ "tool": "curl",
+ "why": "Jack 2026-11-21: 'find the actual sound for Cashier number three, please'; the only CC0 recording found says 'number one'",
+ "source_id": "freesound:120743",
+ "settings": {
+  "licence": "CC0",
+  "uploader": "nigelcoop"
+ }
+}

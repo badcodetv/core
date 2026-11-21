@@ -26,13 +26,15 @@ CLAMP = 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\
 ENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', '-color_range', 'tv',
        '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709']
 VF = f'scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},{CLAMP}'
+# Rough cut 2 (Jack, 2026-11-21: "showing skin on the neck"): the cashier's three clips re-shot from stills with a navy
+# roll-neck under the blouse (Q03d, Q04c, Q05d); rough cut 1 used Q03b, Q04a, Q05a.
 # (beat, title, clip file (in video/ or cut dir), in, dur, [(line key, at seconds into the shot)], room sound?, what we see)
 SHOTS = [
     ('queue', 'The queue', 'the-queue-Q01b-Q01.mp4', 0.3, 3.3, [('01-tannoy-three', 0.55)], True, 'A slow queue at the POWER windows'),
     ('barge', 'The push-in', 'the-queue-Q02b-Q02.mp4', 0.6, 3.0, [('02-pensioner-queue', None)], False, 'The machine rolls past the queue'),
-    ('cashier', 'Wrong queue', 'the-queue-Q03b-Q03.mp4', 0.4, 2.6, [('03-cashier-wrong', 0.35)], True, 'The cashier looks it up and down'),
-    ('closed', 'Position closed', 'the-queue-Q04a-Q04.mp4', 0.2, 2.4, [], True, 'POSITION CLOSED; the machine backs off'),
-    ('kettle', 'Households first', 'the-queue-Q05a-Q05.mp4', 0.3, 3.6, [('04-tannoy-households', 0.45)], True, 'The kettle plugs in and boils'),
+    ('cashier', 'Wrong queue', 'the-queue-Q03d-Q03n.mp4', 0.4, 2.6, [('03-cashier-wrong', 0.35)], True, 'The cashier looks it up and down'),
+    ('closed', 'Position closed', 'the-queue-Q04c-Q04n.mp4', 0.2, 2.4, [], True, 'POSITION CLOSED; the machine backs off'),
+    ('kettle', 'Households first', 'the-queue-Q05d-Q05n.mp4', 0.3, 3.6, [('04-tannoy-households', 0.45)], True, 'The kettle plugs in and boils'),
     ('phone', 'The lad plugs in', 'the-queue-Q06a-Q06.mp4', 0.4, 2.6, [], True, 'The lad on 1% plugs his phone into the machine'),
     ('logo', 'The logo', 'logo-phone.mp4', 0.0, 3.4, [], False, 'The charging ring fills and becomes the BadCode logo'),
 ]

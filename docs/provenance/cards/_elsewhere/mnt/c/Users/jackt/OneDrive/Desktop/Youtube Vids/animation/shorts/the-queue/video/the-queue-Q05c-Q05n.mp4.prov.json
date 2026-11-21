@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q05c-Q05n.mp4",
+ "made": "2026-11-21T15:59:11+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, no pan. On the left, the woman in the mustard coat stands at the wooden counter, her left hand steadying the white kettle on the counter, her right hand at the white wall socket below it on the right. She pushes the plug fully into the socket with a small firm press. A moment later a small light on the kettle's base glows on. Over the next few seconds the kettle begins to boil: a thin wisp of steam rises from the spout, builds, and then pours out in a steady white plume, curling up against the glass. She watches it and her face breaks into a warm, satisfied smile, mouth closed. Behind the glass, the cashier in the blonde bob wig and navy balaclava with the white ring and the red triangle over his left eye (right of frame) faces the camera with gloved hands folded on the counter, and gives a single small nod, then stays still. The ring and triangle never move. The carved sign above reads POWER, unchanged. Same light throughout.\nNatural documentary realism, soft daylight.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q05n.jpg",
+ "why": "Jack 2026-11-21 note: skin on the cashier's neck; still fixed (navy roll-neck), same motion",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q05n.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-queue/scenes/the-queue",
+  "key": "Q05c",
+  "frame": 19,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T15:58:09.197Z"
+ }
+}

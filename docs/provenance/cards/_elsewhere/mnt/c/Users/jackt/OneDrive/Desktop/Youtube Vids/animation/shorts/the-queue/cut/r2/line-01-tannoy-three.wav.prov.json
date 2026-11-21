@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r2/line-01-tannoy-three.wav",
+ "made": "2026-11-21T16:00:25+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/queue_cut.py (silence trim)",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/audio/casting/01-tannoy-three--tannoy-a.wav",
+ "why": "rough cut 2: the picked take"
+}

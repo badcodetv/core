@@ -52,8 +52,8 @@
   "SCREEN": "SCREEN-a"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r1/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r1/preview.mp4",
-  "script": "scripts/shorts/queue_logo.py ... --cx 554 --cy 968 --r 92 --cover 62 --zoom 1.7 --in 0.3 --dur 3.4; scripts/shorts/queue_cut.py --round 1"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r2/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r2/preview.mp4",
+  "script": "scripts/shorts/queue_logo.py ... --cx 554 --cy 968 --r 92 --cover 62 --zoom 1.7 --in 0.3 --dur 3.4; scripts/shorts/queue_cut.py --round 2"
  }
 }

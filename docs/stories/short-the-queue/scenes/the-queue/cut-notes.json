@@ -1,0 +1,34 @@
+{
+ "round": 2,
+ "jack_round1": {
+  "at52": {
+   "beat": "queue",
+   "tc": "00:00:02:04",
+   "note": "\"Cashier number three, please.\" please find the actauly sound for this, there must be one out there,. thanks"
+  },
+  "at229": {
+   "beat": "cashier",
+   "tc": "00:00:09:13",
+   "note": "showing skin on the neck please fix thanks\n"
+  }
+ },
+ "plan": [
+  {
+   "h": "Rough cut 2: your two notes",
+   "items": [
+    "Neck: fixed. The cashier's three shots re-made with a navy roll-neck under the blouse, up to the mask; checked frame by frame, no skin anywhere.",
+    "The real 'Cashier number three, please': the famous UK voice is a real company's recording, so we can't use it. The only free-to-use real recording I found (CC0, Freesound, nigelcoop) says 'Cashier number ONE, please'. The tannoy in this cut is still our AI voice."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Use the real CC0 recording and change the window to number one (the '3' on the display becomes '1'; 'Households first' stays our voice), or keep our voice saying three?"
+   ]
+  }
+ ],
+ "replies": {
+  "at229": "Fixed in cut 2: the cashier now wears a navy roll-neck under the blouse, up to the mask, in all three of his shots (re-made from fixed stills). Checked frame by frame: no skin.",
+  "at52": "Looked: the real UK voice is a company's own recording, so it's off limits. The one free-to-use real recording (CC0 on Freesound, by nigelcoop) says 'Cashier number ONE, please'. I can switch to it and change the window to number one; say yes and it's done. This cut still uses our AI voice saying three."
+ }
+}

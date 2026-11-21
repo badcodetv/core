@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r3/Q05-neck.jpg",
+ "made": "2026-11-21T15:55:26.778Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided photo, change only the cashier's neckline so no skin shows anywhere: under the coral floral blouse he now wears a thin navy roll-neck jumper pulled up high, its collar meeting the bottom of the navy balaclava, and the blouse is buttoned up to the top button over it. Keep everything else in the image exactly the same: the balaclava with its white ring and red triangle, the blonde wig, the pearls, the beige cardigan, the badge, the gloves, the woman with the kettle, the kettle and its steam, the counter, the light and the framing.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q05.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q05.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "81244b54-7728-455a-8cdc-1f1814015246"
+}
