@@ -8,10 +8,10 @@
 A BadCode short (9:16 offered, not ruled; about 45-55 s, under 60): a pub quiz question about housing, and one table
 whispering its answer against the clock so the next table can't hear. The argument is the short: each person brings what
 they know from their own life and work. The point: homelessness already costs billions, spent renting rooms by the night
-instead of on homes anyone owns. State (2026-11-20 eve): **rough cut 4**, 56 s, lip-synced, on the timeline page
-https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb, awaiting Jack. Owed: the opening jokes (a team name on the sheet, a
-quizmaster line before the question: Jack's to write), music, export loudness. Rebuild: `scripts/shorts/pq_lipsync.py check|fit`,
-then `scripts/shorts/pq_cut.py --round 4 --lines audio/lines-fast-pick --room`. Full record: [picks.md](./scenes/pub-quiz-housing/picks.md).
+instead of on homes anyone owns. State (2026-11-21): **rough cut 5**, 53 s, spoken (only "Fuck off, get your own answers" is
+whispered), on the timeline page https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb, awaiting notes. Owed: the opening jokes (a team
+name on the sheet, a quizmaster line before the question: Jack's to write), music, export loudness, no Premiere project yet. Rebuild:
+`PQ_VOX=audio/lines-r5 scripts/shorts/pq_lipsync.py fit`, then `scripts/shorts/pq_cut.py --round 5 --lines audio/lines-r5 --room`. Full record: [picks.md](./scenes/pub-quiz-housing/picks.md).
 
 ## Look
 - Status: EXPLORING (round 1 stills). A proper old English pub (Jack, 2026-11-20: "use unsplash for what the pub looks like,
@@ -31,7 +31,7 @@ Flow project: `8fa2bbdc-7db6-49b9-893b-cc7b0bd06102` (shown in Flow as "Nov 20 -
 
 ## Sound
 Voices LOCKED (Jack, 2026-11-20, voice page https://claude.ai/artifact/QJzVgufqaftKGgZQMZnpwo). Plain reads: no accent,
-age or acting in the prompt; the accent is the voice. Huddle lines are whispered (a short style on those lines only).
+age or acting in the prompt; the accent is the voice. Spoken, not whispered, from rough cut 5 (see below).
 - **Quizmaster (BadCode):** `voice_tihz6q1cbfus`, designed: "A Black British cab driver in his fifties from south London, with a deep, gravelly voice and a light accent, who speaks plainly." on `gemini-3.8-flash-tts`, plain.
 - **Student:** `voice_ivtrurh0qn32`, designed: "A man of twenty from south London, with a light voice, who speaks plainly." on `gemini-3.8-flash-tts`, plain.
 - **Plasterer:** `en-gb-advisor-5` (library, Manchester, 48) on `gemini-3.8-flash-tts`, plain.
@@ -43,6 +43,9 @@ age or acting in the prompt; the accent is the voice. Huddle lines are whispered
   "fast, brisk"; whispers without "fast" come out far too slow), `<media>/audio/lines-fast-pick/`, three re-voiced with pause
   tags to their lip-sync clips (`audio/lines-sync/`); lines overlap 0.15 s. Room sound on the voices (a guess at Jack's "bar
   appropriate filter", asked on the page).
+- **No whispering (2026-11-21: "remove the whispering, maybe only keep it for a line so it adds something but it really is
+  just annoying"):** every line is spoken (style "fast, brisk"; `audio/lines-r5`, pause-tagged re-voices in `audio/lines-sync-r5`);
+  the one whisper is 06 "Fuck off, get your own answers", hissed at the next table. The pub bed sits 8 dB lower ("overpowering").
 Music: not decided. Any Suno track is music and sound only. Pub room bed: built from the no-dialogue clips' own sound.
 
 ## The drunk regular and the outro (Jack, 2026-11-20)

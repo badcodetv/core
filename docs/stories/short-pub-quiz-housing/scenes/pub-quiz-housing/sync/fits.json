@@ -4,24 +4,28 @@
    "seg": "L02",
    "clip": "pq-L02a-P02.mp4",
    "take": "02-student-hundred.wav",
-   "on": 1.24,
-   "tempo": 1.0,
-   "vs": 0.72,
-   "vs_raw": 0.72,
+   "on": 1.03,
+   "tempo": 0.88,
+   "vs": 0.0,
+   "vs_raw": 0.0,
    "words": 2,
-   "of": 3,
-   "matched": 2,
-   "err": 0.0,
+   "of": 5,
+   "matched": 3,
+   "err": 0.038,
    "lag": 0.0,
    "tracked": 0.0,
    "untracked": true,
    "table": [
     [
      "million",
-     0.04
+     0.148
     ],
     [
      "that's",
+     0.033
+    ],
+    [
+     "loads",
      0.04
     ]
    ]
@@ -30,24 +34,28 @@
    "seg": "L02",
    "clip": "pq-L02a-P02.mp4",
    "take": "02-student-hundred.wav",
-   "on": 1.232,
-   "tempo": 0.99,
-   "vs": 0.727,
-   "vs_raw": 0.72,
+   "on": 1.044,
+   "tempo": 0.89,
+   "vs": 0.0,
+   "vs_raw": 0.0,
    "words": 2,
-   "of": 3,
-   "matched": 2,
-   "err": 0.004,
+   "of": 5,
+   "matched": 3,
+   "err": 0.041,
    "lag": 0.0,
    "tracked": 0.0,
    "untracked": true,
    "table": [
     [
      "million",
-     0.032
+     0.159
     ],
     [
      "that's",
+     0.035
+    ],
+    [
+     "loads",
      0.04
     ]
    ]
@@ -56,50 +64,28 @@
    "seg": "L02",
    "clip": "pq-L02a-P02.mp4",
    "take": "02-student-hundred.wav",
-   "on": 1.24,
-   "tempo": 1.01,
-   "vs": 0.713,
-   "vs_raw": 0.72,
+   "on": 1.058,
+   "tempo": 0.9,
+   "vs": 0.0,
+   "vs_raw": 0.0,
    "words": 2,
-   "of": 3,
-   "matched": 2,
-   "err": 0.004,
+   "of": 5,
+   "matched": 3,
+   "err": 0.044,
    "lag": 0.0,
    "tracked": 0.0,
    "untracked": true,
    "table": [
     [
      "million",
-     0.04
+     0.169
     ],
     [
      "that's",
-     0.032
-    ]
-   ]
-  },
-  {
-   "seg": "L02",
-   "clip": "pq-L02a-P02.mp4",
-   "take": "02-student-hundred.wav",
-   "on": 1.223,
-   "tempo": 0.98,
-   "vs": 0.735,
-   "vs_raw": 0.72,
-   "words": 2,
-   "of": 3,
-   "matched": 2,
-   "err": 0.008,
-   "lag": 0.0,
-   "tracked": 0.0,
-   "untracked": true,
-   "table": [
-    [
-     "million",
-     0.023
+     0.038
     ],
     [
-     "that's",
+     "loads",
      0.04
     ]
    ]
@@ -108,25 +94,59 @@
    "seg": "L02",
    "clip": "pq-L02a-P02.mp4",
    "take": "02-student-hundred.wav",
-   "on": 1.24,
-   "tempo": 1.02,
-   "vs": 0.706,
-   "vs_raw": 0.72,
+   "on": 1.071,
+   "tempo": 0.91,
+   "vs": 0.0,
+   "vs_raw": 0.0,
    "words": 2,
-   "of": 3,
-   "matched": 2,
-   "err": 0.008,
+   "of": 5,
+   "matched": 3,
+   "err": 0.046,
    "lag": 0.0,
    "tracked": 0.0,
    "untracked": true,
    "table": [
     [
      "million",
-     0.04
+     0.179
     ],
     [
      "that's",
-     0.024
+     0.04
+    ],
+    [
+     "loads",
+     0.04
+    ]
+   ]
+  },
+  {
+   "seg": "L02",
+   "clip": "pq-L02a-P02.mp4",
+   "take": "02-student-hundred.wav",
+   "on": 1.082,
+   "tempo": 0.92,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 2,
+   "of": 5,
+   "matched": 3,
+   "err": 0.05,
+   "lag": 0.0,
+   "tracked": 0.0,
+   "untracked": true,
+   "table": [
+    [
+     "million",
+     0.186
+    ],
+    [
+     "that's",
+     0.04
+    ],
+    [
+     "loads",
+     0.037
     ]
    ]
   }
@@ -135,402 +155,300 @@
   {
    "seg": "L03",
    "clip": "pq-L03c-P04.mp4",
-   "take": "03-plasterer-more-2.wav",
-   "on": 0.788,
-   "tempo": 1.11,
+   "take": "03-plasterer-more-p1b.wav",
+   "on": 1.225,
+   "tempo": 0.91,
    "vs": 0.0,
    "vs_raw": 0.0,
-   "words": 17,
+   "words": 16,
    "of": 18,
-   "matched": 18,
-   "err": 0.038,
+   "matched": 17,
+   "err": 0.077,
    "lag": 0.5,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
      "more",
-     0.288
+     0.725
     ],
     [
      "i've",
-     -0.013
+     -0.038
     ],
     [
      "done",
-     0.003
+     0.004
     ],
     [
      "three",
+     0.014
+    ],
+    [
+     "of",
      0.047
     ],
     [
-     "of",
-     0.032
-    ],
-    [
      "them",
-     0.04
+     0.079
     ],
     [
      "b",
-     0.062
+     0.115
     ],
     [
      "b",
-     0.04
+     0.071
     ],
     [
      "jobs",
-     0.032
-    ],
-    [
-     "for",
-     0.061
+     0.075
     ],
     [
      "the",
-     0.043
-    ],
-    [
-     "council",
-     0.051
-    ],
-    [
-     "this",
-     0.021
-    ],
-    [
-     "year",
-     -0.045
-    ],
-    [
-     "every",
-     0.112
-    ],
-    [
-     "room",
-     0.098
-    ],
-    [
-     "every",
-     0.039
-    ],
-    [
-     "night",
-     0.069
-    ]
-   ]
-  },
-  {
-   "seg": "L03",
-   "clip": "pq-L03c-P04.mp4",
-   "take": "03-plasterer-more-1.wav",
-   "on": 0.75,
-   "tempo": 1.03,
-   "vs": 0.0,
-   "vs_raw": 0.0,
-   "words": 17,
-   "of": 18,
-   "matched": 18,
-   "err": 0.042,
-   "lag": 0.5,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "more",
-     0.25
-    ],
-    [
-     "i've",
-     -0.043
-    ],
-    [
-     "done",
-     0.009
-    ],
-    [
-     "three",
-     0.084
-    ],
-    [
-     "of",
-     0.093
-    ],
-    [
-     "them",
-     0.09
-    ],
-    [
-     "b",
-     0.086
-    ],
-    [
-     "b",
-     0.08
-    ],
-    [
-     "jobs",
-     0.053
-    ],
-    [
-     "for",
-     0.045
-    ],
-    [
-     "the",
-     0.04
-    ],
-    [
-     "council",
-     0.037
-    ],
-    [
-     "this",
-     0.048
-    ],
-    [
-     "year",
-     0.02
-    ],
-    [
-     "every",
-     0.002
-    ],
-    [
-     "room",
-     0.09
-    ],
-    [
-     "every",
-     0.053
-    ],
-    [
-     "night",
-     0.085
-    ]
-   ]
-  },
-  {
-   "seg": "L03",
-   "clip": "pq-L03c-P04.mp4",
-   "take": "03-plasterer-more-1.wav",
-   "on": 0.762,
-   "tempo": 1.04,
-   "vs": 0.0,
-   "vs_raw": 0.0,
-   "words": 17,
-   "of": 18,
-   "matched": 18,
-   "err": 0.042,
-   "lag": 0.5,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "more",
-     0.262
-    ],
-    [
-     "i've",
-     -0.042
-    ],
-    [
-     "done",
-     0.008
-    ],
-    [
-     "three",
-     0.081
-    ],
-    [
-     "of",
-     0.087
-    ],
-    [
-     "them",
-     0.083
-    ],
-    [
-     "b",
-     0.078
-    ],
-    [
-     "b",
-     0.069
-    ],
-    [
-     "jobs",
-     0.04
-    ],
-    [
-     "for",
      0.03
     ],
     [
-     "the",
-     0.023
-    ],
-    [
      "council",
-     0.019
-    ],
-    [
-     "this",
-     0.027
-    ],
-    [
-     "year",
-     -0.004
-    ],
-    [
-     "every",
-     -0.027
-    ],
-    [
-     "room",
-     0.057
-    ],
-    [
-     "every",
-     0.015
-    ],
-    [
-     "night",
-     0.044
-    ]
-   ]
-  },
-  {
-   "seg": "L03",
-   "clip": "pq-L03c-P04.mp4",
-   "take": "03-plasterer-more-2.wav",
-   "on": 0.758,
-   "tempo": 1.1,
-   "vs": 0.0,
-   "vs_raw": 0.0,
-   "words": 17,
-   "of": 18,
-   "matched": 18,
-   "err": 0.043,
-   "lag": 0.5,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "more",
-     0.258
-    ],
-    [
-     "i've",
-     -0.033
-    ],
-    [
-     "done",
-     -0.015
-    ],
-    [
-     "three",
-     0.031
-    ],
-    [
-     "of",
-     0.018
-    ],
-    [
-     "them",
-     0.027
-    ],
-    [
-     "b",
-     0.051
-    ],
-    [
-     "b",
-     0.031
-    ],
-    [
-     "jobs",
-     0.025
-    ],
-    [
-     "for",
-     0.056
-    ],
-    [
-     "the",
      0.04
     ],
     [
-     "council",
-     0.049
-    ],
-    [
      "this",
-     0.022
+     -0.018
     ],
     [
      "year",
-     -0.042
+     0.011
     ],
     [
      "every",
-     0.122
+     0.093
     ],
     [
      "room",
-     0.111
+     0.102
     ],
     [
      "every",
-     0.056
+     -0.014
     ],
     [
      "night",
-     0.089
+     0.01
     ]
    ]
   },
   {
    "seg": "L03",
    "clip": "pq-L03c-P04.mp4",
-   "take": "03-plasterer-more-1.wav",
-   "on": 0.798,
-   "tempo": 1.05,
+   "take": "03-plasterer-more-p1b.wav",
+   "on": 1.2,
+   "tempo": 0.9,
    "vs": 0.0,
    "vs_raw": 0.0,
-   "words": 17,
+   "words": 15,
    "of": 18,
-   "matched": 18,
-   "err": 0.046,
+   "matched": 17,
+   "err": 0.075,
    "lag": 0.5,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
      "more",
-     0.298
+     0.7
     ],
     [
      "i've",
-     -0.016
+     -0.056
     ],
     [
      "done",
-     0.031
+     -0.011
     ],
     [
      "three",
-     0.103
+     0.0
     ],
     [
      "of",
-     0.106
+     0.038
     ],
     [
      "them",
-     0.101
+     0.071
+    ],
+    [
+     "b",
+     0.109
+    ],
+    [
+     "b",
+     0.067
+    ],
+    [
+     "jobs",
+     0.073
+    ],
+    [
+     "the",
+     0.033
+    ],
+    [
+     "council",
+     0.044
+    ],
+    [
+     "this",
+     -0.011
+    ],
+    [
+     "year",
+     0.022
+    ],
+    [
+     "every",
+     0.111
+    ],
+    [
+     "room",
+     0.124
+    ],
+    [
+     "every",
+     0.013
+    ],
+    [
+     "night",
+     0.04
+    ]
+   ]
+  },
+  {
+   "seg": "L03",
+   "clip": "pq-L03c-P04.mp4",
+   "take": "03-plasterer-more-p1b.wav",
+   "on": 1.253,
+   "tempo": 0.92,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 15,
+   "of": 18,
+   "matched": 17,
+   "err": 0.08,
+   "lag": 0.5,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "more",
+     0.753
+    ],
+    [
+     "i've",
+     -0.017
+    ],
+    [
+     "done",
+     0.023
+    ],
+    [
+     "three",
+     0.031
+    ],
+    [
+     "of",
+     0.061
+    ],
+    [
+     "them",
+     0.091
+    ],
+    [
+     "b",
+     0.125
+    ],
+    [
+     "b",
+     0.079
+    ],
+    [
+     "jobs",
+     0.08
+    ],
+    [
+     "the",
+     0.031
+    ],
+    [
+     "council",
+     0.04
+    ],
+    [
+     "this",
+     -0.021
+    ],
+    [
+     "year",
+     0.005
+    ],
+    [
+     "every",
+     0.079
+    ],
+    [
+     "room",
+     0.085
+    ],
+    [
+     "every",
+     -0.037
+    ],
+    [
+     "night",
+     -0.016
+    ]
+   ]
+  },
+  {
+   "seg": "L03",
+   "clip": "pq-L03c-P04.mp4",
+   "take": "03-plasterer-more-p1b.wav",
+   "on": 1.166,
+   "tempo": 0.89,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 14,
+   "of": 18,
+   "matched": 17,
+   "err": 0.077,
+   "lag": 0.5,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "more",
+     0.666
+    ],
+    [
+     "i've",
+     -0.082
+    ],
+    [
+     "done",
+     -0.035
+    ],
+    [
+     "three",
+     -0.023
+    ],
+    [
+     "of",
+     0.019
+    ],
+    [
+     "them",
+     0.054
     ],
     [
      "b",
@@ -538,15 +456,97 @@
     ],
     [
      "b",
-     0.084
+     0.053
     ],
     [
      "jobs",
-     0.052
+     0.063
     ],
     [
-     "for",
+     "the",
+     0.028
+    ],
+    [
+     "council",
      0.04
+    ],
+    [
+     "this",
+     -0.013
+    ],
+    [
+     "year",
+     0.024
+    ],
+    [
+     "every",
+     0.121
+    ],
+    [
+     "room",
+     0.138
+    ],
+    [
+     "every",
+     0.032
+    ],
+    [
+     "night",
+     0.062
+    ]
+   ]
+  },
+  {
+   "seg": "L03",
+   "clip": "pq-L03c-P04.mp4",
+   "take": "03-plasterer-more-p1b.wav",
+   "on": 1.28,
+   "tempo": 0.93,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 14,
+   "of": 18,
+   "matched": 17,
+   "err": 0.083,
+   "lag": 0.5,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "more",
+     0.78
+    ],
+    [
+     "i've",
+     0.003
+    ],
+    [
+     "done",
+     0.04
+    ],
+    [
+     "three",
+     0.048
+    ],
+    [
+     "of",
+     0.073
+    ],
+    [
+     "them",
+     0.102
+    ],
+    [
+     "b",
+     0.134
+    ],
+    [
+     "b",
+     0.086
+    ],
+    [
+     "jobs",
+     0.084
     ],
     [
      "the",
@@ -554,11 +554,11 @@
     ],
     [
      "council",
-     0.027
+     0.039
     ],
     [
      "this",
-     0.031
+     -0.025
     ],
     [
      "year",
@@ -566,19 +566,19 @@
     ],
     [
      "every",
-     -0.03
+     0.065
     ],
     [
      "room",
-     0.05
+     0.067
     ],
     [
      "every",
-     0.002
+     -0.06
     ],
     [
      "night",
-     0.029
+     -0.042
     ]
    ]
   }
@@ -586,39 +586,39 @@
  "L04a": [
   {
    "seg": "L04a",
-   "clip": "pq-L04ab-P05.mp4",
+   "clip": "pq-L04ac-P05.mp4",
    "take": "04-student-sum.wav",
-   "on": 0.838,
-   "tempo": 1.01,
+   "on": 0.618,
+   "tempo": 0.88,
    "vs": 0.0,
    "vs_raw": 0.0,
-   "words": 7,
+   "words": 6,
    "of": 12,
    "matched": 11,
-   "err": 0.175,
+   "err": 0.16,
    "lag": -0.083,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
      "say",
-     0.121
+     0.701
     ],
     [
      "quid",
-     0.45
+     0.248
     ],
     [
      "a",
-     0.507
+     0.281
     ],
     [
      "night",
-     0.466
+     0.269
     ],
     [
      "i",
-     0.501
+     0.192
     ],
     [
      "don't",
@@ -626,185 +626,61 @@
     ],
     [
      "know",
-     0.039
+     0.082
     ],
     [
      "how",
-     0.038
+     0.093
     ],
     [
      "much",
-     0.037
+     -0.002
     ],
     [
      "things",
-     0.035
-    ],
-    [
-     "are",
-     -0.027
-    ]
-   ]
-  },
-  {
-   "seg": "L04a",
-   "clip": "pq-L04ab-P05.mp4",
-   "take": "04-student-sum.wav",
-   "on": 0.817,
-   "tempo": 1.0,
-   "vs": 0.0,
-   "vs_raw": 0.0,
-   "words": 7,
-   "of": 12,
-   "matched": 11,
-   "err": 0.169,
-   "lag": -0.083,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "say",
-     0.1
-    ],
-    [
-     "quid",
-     0.44
-    ],
-    [
-     "a",
-     0.5
-    ],
-    [
-     "night",
-     0.46
-    ],
-    [
-     "i",
-     0.5
-    ],
-    [
-     "don't",
-     0.04
-    ],
-    [
-     "know",
-     0.04
-    ],
-    [
-     "how",
-     0.04
-    ],
-    [
-     "much",
-     0.04
-    ],
-    [
-     "things",
-     0.04
-    ],
-    [
-     "are",
      -0.02
-    ]
-   ]
-  },
-  {
-   "seg": "L04a",
-   "clip": "pq-L04ac-P05.mp4",
-   "take": "04-student-sum-1x.wav",
-   "on": 0.08,
-   "tempo": 1.13,
-   "vs": 0.0,
-   "vs_raw": 0.0,
-   "words": 7,
-   "of": 12,
-   "matched": 11,
-   "err": 0.075,
-   "lag": -0.083,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "say",
-     0.164
-    ],
-    [
-     "quid",
-     0.187
-    ],
-    [
-     "a",
-     0.23
-    ],
-    [
-     "night",
-     0.221
-    ],
-    [
-     "i",
-     0.099
-    ],
-    [
-     "don't",
-     0.038
-    ],
-    [
-     "know",
-     0.04
-    ],
-    [
-     "how",
-     0.031
-    ],
-    [
-     "much",
-     0.032
-    ],
-    [
-     "things",
-     0.009
     ],
     [
      "are",
-     -0.034
+     -0.035
     ]
    ]
   },
   {
    "seg": "L04a",
    "clip": "pq-L04ac-P05.mp4",
-   "take": "04-student-sum-1x.wav",
-   "on": 0.101,
-   "tempo": 1.14,
+   "take": "04-student-sum.wav",
+   "on": 0.636,
+   "tempo": 0.89,
    "vs": 0.0,
    "vs_raw": 0.0,
-   "words": 7,
+   "words": 6,
    "of": 12,
    "matched": 11,
-   "err": 0.08,
+   "err": 0.165,
    "lag": -0.083,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
      "say",
-     0.184
+     0.72
     ],
     [
      "quid",
-     0.197
+     0.259
     ],
     [
      "a",
-     0.238
+     0.288
     ],
     [
      "night",
-     0.228
+     0.276
     ],
     [
      "i",
-     0.102
+     0.193
     ],
     [
      "don't",
@@ -812,19 +688,143 @@
     ],
     [
      "know",
-     0.04
+     0.08
     ],
     [
      "how",
-     0.03
+     0.09
     ],
     [
      "much",
-     0.031
+     -0.005
     ],
     [
      "things",
-     0.006
+     -0.026
+    ],
+    [
+     "are",
+     -0.043
+    ]
+   ]
+  },
+  {
+   "seg": "L04a",
+   "clip": "pq-L04ab-P05.mp4",
+   "take": "04-student-sum.wav",
+   "on": 1.354,
+   "tempo": 0.9,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 6,
+   "of": 12,
+   "matched": 11,
+   "err": 0.248,
+   "lag": -0.083,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "say",
+     0.638
+    ],
+    [
+     "quid",
+     0.509
+    ],
+    [
+     "a",
+     0.536
+    ],
+    [
+     "night",
+     0.502
+    ],
+    [
+     "i",
+     0.513
+    ],
+    [
+     "don't",
+     0.04
+    ],
+    [
+     "know",
+     0.078
+    ],
+    [
+     "how",
+     0.087
+    ],
+    [
+     "much",
+     0.011
+    ],
+    [
+     "things",
+     -0.011
+    ],
+    [
+     "are",
+     -0.031
+    ]
+   ]
+  },
+  {
+   "seg": "L04a",
+   "clip": "pq-L04ab-P05.mp4",
+   "take": "04-student-sum.wav",
+   "on": 1.372,
+   "tempo": 0.91,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 6,
+   "of": 12,
+   "matched": 11,
+   "err": 0.253,
+   "lag": -0.083,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "say",
+     0.656
+    ],
+    [
+     "quid",
+     0.519
+    ],
+    [
+     "a",
+     0.543
+    ],
+    [
+     "night",
+     0.509
+    ],
+    [
+     "i",
+     0.514
+    ],
+    [
+     "don't",
+     0.04
+    ],
+    [
+     "know",
+     0.076
+    ],
+    [
+     "how",
+     0.084
+    ],
+    [
+     "much",
+     0.008
+    ],
+    [
+     "things",
+     -0.016
     ],
     [
      "are",
@@ -834,55 +834,55 @@
   },
   {
    "seg": "L04a",
-   "clip": "pq-L04ac-P05.mp4",
-   "take": "04-student-sum-1x.wav",
-   "on": 0.12,
-   "tempo": 1.15,
+   "clip": "pq-L04ab-P05.mp4",
+   "take": "04-student-sum.wav",
+   "on": 1.559,
+   "tempo": 0.99,
    "vs": 0.0,
    "vs_raw": 0.0,
-   "words": 7,
+   "words": 6,
    "of": 12,
    "matched": 11,
-   "err": 0.085,
+   "err": 0.315,
    "lag": -0.083,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
      "say",
-     0.203
+     0.842
     ],
     [
      "quid",
-     0.206
+     0.649
     ],
     [
      "a",
-     0.244
+     0.651
     ],
     [
      "night",
-     0.234
+     0.612
     ],
     [
      "i",
-     0.103
+     0.577
     ],
     [
      "don't",
-     0.04
+     0.097
     ],
     [
      "know",
-     0.039
+     0.119
     ],
     [
      "how",
-     0.029
+     0.12
     ],
     [
      "much",
-     0.028
+     0.04
     ],
     [
      "things",
@@ -890,7 +890,7 @@
     ],
     [
      "are",
-     -0.044
+     -0.037
     ]
    ]
   }
@@ -900,41 +900,49 @@
    "seg": "L04b",
    "clip": "pq-L04bc-P05.mp4",
    "take": "04-student-sum.wav",
-   "on": 0.94,
-   "tempo": 1.01,
-   "vs": 3.545,
-   "vs_raw": 3.58,
-   "words": 4,
-   "of": 7,
-   "matched": 6,
-   "err": 0.099,
+   "on": 0.909,
+   "tempo": 0.88,
+   "vs": 2.75,
+   "vs_raw": 2.42,
+   "words": 6,
+   "of": 8,
+   "matched": 8,
+   "err": 0.111,
    "lag": -0.25,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
+     "only",
+     0.119
+    ],
+    [
+     "buy",
+     0.055
+    ],
+    [
      "cbd",
-     -0.033
+     0.04
     ],
     [
      "ramen",
-     0.28
+     -0.034
     ],
     [
      "suppositories",
-     0.236
+     -0.042
     ],
     [
      "every",
-     0.069
+     0.385
     ],
     [
      "night",
-     -0.018
+     0.063
     ],
     [
      "rooms",
-     0.04
+     -0.234
     ]
    ]
   },
@@ -942,29 +950,187 @@
    "seg": "L04b",
    "clip": "pq-L04bc-P05.mp4",
    "take": "04-student-sum.wav",
-   "on": 0.97,
-   "tempo": 1.0,
-   "vs": 3.58,
-   "vs_raw": 3.58,
-   "words": 4,
-   "of": 7,
-   "matched": 6,
-   "err": 0.12,
+   "on": 0.913,
+   "tempo": 0.89,
+   "vs": 2.719,
+   "vs_raw": 2.42,
+   "words": 5,
+   "of": 8,
+   "matched": 8,
+   "err": 0.115,
    "lag": -0.25,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
+     "only",
+     0.123
+    ],
+    [
+     "buy",
+     0.058
+    ],
+    [
      "cbd",
-     -0.0
+     0.04
     ],
     [
      "ramen",
-     0.32
+     -0.038
     ],
     [
      "suppositories",
-     0.28
+     -0.051
+    ],
+    [
+     "every",
+     0.362
+    ],
+    [
+     "night",
+     0.034
+    ],
+    [
+     "rooms",
+     -0.283
+    ]
+   ]
+  },
+  {
+   "seg": "L04b",
+   "clip": "pq-L04bc-P05.mp4",
+   "take": "04-student-sum.wav",
+   "on": 0.95,
+   "tempo": 0.9,
+   "vs": 2.689,
+   "vs_raw": 2.42,
+   "words": 5,
+   "of": 8,
+   "matched": 8,
+   "err": 0.124,
+   "lag": -0.25,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "only",
+     0.16
+    ],
+    [
+     "buy",
+     0.093
+    ],
+    [
+     "cbd",
+     0.073
+    ],
+    [
+     "ramen",
+     -0.009
+    ],
+    [
+     "suppositories",
+     -0.027
+    ],
+    [
+     "every",
+     0.373
+    ],
+    [
+     "night",
+     0.04
+    ],
+    [
+     "rooms",
+     -0.298
+    ]
+   ]
+  },
+  {
+   "seg": "L04b",
+   "clip": "pq-L04bc-P05.mp4",
+   "take": "04-student-sum.wav",
+   "on": 0.981,
+   "tempo": 0.91,
+   "vs": 2.659,
+   "vs_raw": 2.42,
+   "words": 5,
+   "of": 8,
+   "matched": 8,
+   "err": 0.133,
+   "lag": -0.25,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "only",
+     0.191
+    ],
+    [
+     "buy",
+     0.123
+    ],
+    [
+     "cbd",
+     0.1
+    ],
+    [
+     "ramen",
+     0.014
+    ],
+    [
+     "suppositories",
+     -0.008
+    ],
+    [
+     "every",
+     0.378
+    ],
+    [
+     "night",
+     0.04
+    ],
+    [
+     "rooms",
+     -0.318
+    ]
+   ]
+  },
+  {
+   "seg": "L04b",
+   "clip": "pq-L04bc-P05.mp4",
+   "take": "04-student-sum.wav",
+   "on": 0.909,
+   "tempo": 0.99,
+   "vs": 2.444,
+   "vs_raw": 2.42,
+   "words": 4,
+   "of": 8,
+   "matched": 8,
+   "err": 0.207,
+   "lag": -0.25,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "only",
+     0.119
+    ],
+    [
+     "buy",
+     0.04
+    ],
+    [
+     "cbd",
+     0.002
+    ],
+    [
+     "ramen",
+     -0.115
+    ],
+    [
+     "suppositories",
+     -0.171
     ],
     [
      "every",
@@ -972,125 +1138,11 @@
     ],
     [
      "night",
-     0.04
+     -0.256
     ],
     [
      "rooms",
-     0.12
-    ]
-   ]
-  },
-  {
-   "seg": "L04b",
-   "clip": "pq-L04bc-P05.mp4",
-   "take": "04-student-sum-1x.wav",
-   "on": 0.936,
-   "tempo": 1.13,
-   "vs": 3.646,
-   "vs_raw": 4.12,
-   "words": 3,
-   "of": 8,
-   "matched": 5,
-   "err": 0.121,
-   "lag": -0.25,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "cbd",
-     -0.044
-    ],
-    [
-     "suppositories",
-     0.383
-    ],
-    [
-     "every",
-     0.114
-    ],
-    [
-     "night",
-     0.04
-    ],
-    [
-     "rooms",
-     0.145
-    ]
-   ]
-  },
-  {
-   "seg": "L04b",
-   "clip": "pq-L04bc-P05.mp4",
-   "take": "04-student-sum-1x.wav",
-   "on": 0.961,
-   "tempo": 1.14,
-   "vs": 3.614,
-   "vs_raw": 4.12,
-   "words": 3,
-   "of": 8,
-   "matched": 5,
-   "err": 0.116,
-   "lag": -0.25,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "cbd",
-     -0.021
-    ],
-    [
-     "suppositories",
-     0.394
-    ],
-    [
-     "every",
-     0.121
-    ],
-    [
-     "night",
-     0.04
-    ],
-    [
-     "rooms",
-     0.126
-    ]
-   ]
-  },
-  {
-   "seg": "L04b",
-   "clip": "pq-L04bc-P05.mp4",
-   "take": "04-student-sum-1x.wav",
-   "on": 0.985,
-   "tempo": 1.15,
-   "vs": 3.583,
-   "vs_raw": 4.12,
-   "words": 3,
-   "of": 8,
-   "matched": 5,
-   "err": 0.111,
-   "lag": -0.25,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "cbd",
-     0.001
-    ],
-    [
-     "suppositories",
-     0.405
-    ],
-    [
-     "every",
-     0.127
-    ],
-    [
-     "night",
-     0.04
-    ],
-    [
-     "rooms",
-     0.106
+     -0.759
     ]
    ]
   }
@@ -1310,283 +1362,159 @@
  "L08a": [
   {
    "seg": "L08a",
-   "clip": "pq-L08ab-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.163,
-   "tempo": 1.02,
+   "clip": "pq-L08ac-P07.mp4",
+   "take": "08-banker-billions-p2b.wav",
+   "on": 0.738,
+   "tempo": 0.88,
    "vs": 0.0,
    "vs_raw": 0.0,
    "words": 10,
    "of": 11,
    "matched": 11,
-   "err": 0.052,
+   "err": 0.11,
    "lag": -0.083,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
      "paying",
-     0.246
+     0.822
     ],
     [
      "by",
-     0.032
-    ],
-    [
-     "the",
-     0.069
-    ],
-    [
-     "night",
-     0.065
-    ],
-    [
-     "is",
-     0.04
-    ],
-    [
-     "the",
-     -0.029
-    ],
-    [
-     "dearest",
-     0.008
-    ],
-    [
-     "way",
-     0.058
-    ],
-    [
-     "to",
-     0.073
-    ],
-    [
-     "buy",
-     0.109
-    ],
-    [
-     "anything",
-     0.124
-    ]
-   ]
-  },
-  {
-   "seg": "L08a",
-   "clip": "pq-L08ab-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.168,
-   "tempo": 1.03,
-   "vs": 0.0,
-   "vs_raw": 0.0,
-   "words": 10,
-   "of": 11,
-   "matched": 11,
-   "err": 0.047,
-   "lag": -0.083,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "paying",
-     0.252
-    ],
-    [
-     "by",
-     0.031
-    ],
-    [
-     "the",
-     0.065
-    ],
-    [
-     "night",
-     0.061
-    ],
-    [
-     "is",
-     0.033
-    ],
-    [
-     "the",
-     -0.04
-    ],
-    [
-     "dearest",
-     -0.005
-    ],
-    [
-     "way",
-     0.04
-    ],
-    [
-     "to",
-     0.053
-    ],
-    [
-     "buy",
-     0.087
-    ],
-    [
-     "anything",
      0.1
-    ]
-   ]
-  },
-  {
-   "seg": "L08a",
-   "clip": "pq-L08ab-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.181,
-   "tempo": 1.04,
-   "vs": 0.0,
-   "vs_raw": 0.0,
-   "words": 10,
-   "of": 11,
-   "matched": 11,
-   "err": 0.046,
-   "lag": -0.083,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "paying",
-     0.264
-    ],
-    [
-     "by",
-     0.036
     ],
     [
      "the",
-     0.069
+     0.099
     ],
     [
      "night",
-     0.063
+     0.095
     ],
     [
      "is",
-     0.032
-    ],
-    [
-     "the",
-     -0.045
-    ],
-    [
-     "dearest",
-     -0.012
-    ],
-    [
-     "way",
-     0.029
-    ],
-    [
-     "to",
      0.04
     ],
     [
-     "buy",
-     0.072
-    ],
-    [
-     "anything",
-     0.082
-    ]
-   ]
-  },
-  {
-   "seg": "L08a",
-   "clip": "pq-L08ab-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.2,
-   "tempo": 1.05,
-   "vs": 0.0,
-   "vs_raw": 0.0,
-   "words": 10,
-   "of": 11,
-   "matched": 11,
-   "err": 0.049,
-   "lag": -0.083,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "paying",
-     0.284
-    ],
-    [
-     "by",
-     0.05
-    ],
-    [
      "the",
+     -0.038
+    ],
+    [
+     "dearest",
+     -0.042
+    ],
+    [
+     "way",
+     0.03
+    ],
+    [
+     "to",
+     0.003
+    ],
+    [
+     "buy",
      0.081
     ],
     [
-     "night",
-     0.073
-    ],
-    [
-     "is",
-     0.04
-    ],
-    [
-     "the",
-     -0.041
-    ],
-    [
-     "dearest",
-     -0.01
-    ],
-    [
-     "way",
-     0.027
-    ],
-    [
-     "to",
-     0.035
-    ],
-    [
-     "buy",
-     0.066
-    ],
-    [
      "anything",
-     0.073
+     0.045
     ]
    ]
   },
   {
    "seg": "L08a",
-   "clip": "pq-L08ab-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.213,
-   "tempo": 1.06,
+   "clip": "pq-L08ac-P07.mp4",
+   "take": "08-banker-billions-p2b.wav",
+   "on": 0.76,
+   "tempo": 0.89,
    "vs": 0.0,
    "vs_raw": 0.0,
    "words": 10,
    "of": 11,
    "matched": 11,
-   "err": 0.051,
+   "err": 0.115,
    "lag": -0.083,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
      "paying",
-     0.296
+     0.843
     ],
     [
      "by",
-     0.055
+     0.118
     ],
     [
      "the",
-     0.085
+     0.115
     ],
     [
      "night",
-     0.076
+     0.11
+    ],
+    [
+     "is",
+     0.052
+    ],
+    [
+     "the",
+     -0.028
+    ],
+    [
+     "dearest",
+     -0.033
+    ],
+    [
+     "way",
+     0.033
+    ],
+    [
+     "to",
+     0.003
+    ],
+    [
+     "buy",
+     0.078
+    ],
+    [
+     "anything",
+     0.04
+    ]
+   ]
+  },
+  {
+   "seg": "L08a",
+   "clip": "pq-L08ac-P07.mp4",
+   "take": "08-banker-billions-p2b.wav",
+   "on": 0.757,
+   "tempo": 0.9,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 9,
+   "of": 11,
+   "matched": 11,
+   "err": 0.118,
+   "lag": -0.083,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "paying",
+     0.84
+    ],
+    [
+     "by",
+     0.111
+    ],
+    [
+     "the",
+     0.107
+    ],
+    [
+     "night",
+     0.1
     ],
     [
      "is",
@@ -1594,27 +1522,151 @@
     ],
     [
      "the",
-     -0.045
+     -0.042
     ],
     [
      "dearest",
-     -0.015
+     -0.049
     ],
     [
      "way",
-     0.017
+     0.013
     ],
     [
      "to",
-     0.023
+     -0.02
     ],
     [
      "buy",
-     0.052
+     0.051
     ],
     [
      "anything",
-     0.057
+     0.011
+    ]
+   ]
+  },
+  {
+   "seg": "L08a",
+   "clip": "pq-L08ac-P07.mp4",
+   "take": "08-banker-billions-p1b.wav",
+   "on": 0.749,
+   "tempo": 1.03,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 8,
+   "of": 11,
+   "matched": 11,
+   "err": 0.146,
+   "lag": -0.083,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "paying",
+     0.832
+    ],
+    [
+     "by",
+     0.083
+    ],
+    [
+     "the",
+     0.04
+    ],
+    [
+     "night",
+     -0.003
+    ],
+    [
+     "is",
+     -0.03
+    ],
+    [
+     "the",
+     0.118
+    ],
+    [
+     "dearest",
+     0.094
+    ],
+    [
+     "way",
+     0.123
+    ],
+    [
+     "to",
+     -0.003
+    ],
+    [
+     "buy",
+     -0.126
+    ],
+    [
+     "anything",
+     -0.191
+    ]
+   ]
+  },
+  {
+   "seg": "L08a",
+   "clip": "pq-L08ac-P07.mp4",
+   "take": "08-banker-billions-p1b.wav",
+   "on": 0.753,
+   "tempo": 1.04,
+   "vs": 0.0,
+   "vs_raw": 0.0,
+   "words": 8,
+   "of": 11,
+   "matched": 11,
+   "err": 0.148,
+   "lag": -0.083,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "paying",
+     0.836
+    ],
+    [
+     "by",
+     0.085
+    ],
+    [
+     "the",
+     0.04
+    ],
+    [
+     "night",
+     -0.004
+    ],
+    [
+     "is",
+     -0.033
+    ],
+    [
+     "the",
+     0.111
+    ],
+    [
+     "dearest",
+     0.086
+    ],
+    [
+     "way",
+     0.111
+    ],
+    [
+     "to",
+     -0.016
+    ],
+    [
+     "buy",
+     -0.141
+    ],
+    [
+     "anything",
+     -0.208
     ]
    ]
   }
@@ -1622,251 +1674,259 @@
  "L08b": [
   {
    "seg": "L08b",
-   "clip": "pq-L08bb-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.032,
-   "tempo": 1.02,
-   "vs": 3.667,
-   "vs_raw": 3.74,
-   "words": 5,
+   "clip": "pq-L08bc-P07.mp4",
+   "take": "08-banker-billions-p2b.wav",
+   "on": 0.473,
+   "tempo": 0.88,
+   "vs": 3.182,
+   "vs_raw": 2.8,
+   "words": 7,
    "of": 9,
    "matched": 8,
-   "err": 0.204,
+   "err": 0.08,
    "lag": -0.042,
    "tracked": 1.0,
    "untracked": false,
    "table": [
     [
      "it's",
-     0.074
+     0.515
     ],
     [
      "billions",
-     0.04
+     0.016
     ],
     [
      "with",
-     0.109
+     0.043
     ],
     [
      "a",
-     0.002
-    ],
-    [
-     "b",
-     0.019
-    ],
-    [
-     "keep",
-     -0.635
-    ],
-    [
-     "up",
-     -0.361
-    ],
-    [
-     "morons",
-     -0.35
-    ]
-   ]
-  },
-  {
-   "seg": "L08b",
-   "clip": "pq-L08bb-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.039,
-   "tempo": 1.03,
-   "vs": 3.631,
-   "vs_raw": 3.74,
-   "words": 5,
-   "of": 9,
-   "matched": 8,
-   "err": 0.214,
-   "lag": -0.042,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "it's",
-     0.081
-    ],
-    [
-     "billions",
-     0.04
-    ],
-    [
-     "with",
-     0.104
-    ],
-    [
-     "a",
-     -0.007
-    ],
-    [
-     "b",
-     0.009
-    ],
-    [
-     "keep",
-     -0.651
-    ],
-    [
-     "up",
-     -0.381
-    ],
-    [
-     "morons",
-     -0.375
-    ]
-   ]
-  },
-  {
-   "seg": "L08b",
-   "clip": "pq-L08bb-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.046,
-   "tempo": 1.04,
-   "vs": 3.596,
-   "vs_raw": 3.74,
-   "words": 5,
-   "of": 9,
-   "matched": 8,
-   "err": 0.224,
-   "lag": -0.042,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "it's",
-     0.088
-    ],
-    [
-     "billions",
-     0.04
-    ],
-    [
-     "with",
-     0.099
-    ],
-    [
-     "a",
-     -0.016
-    ],
-    [
-     "b",
-     -0.002
-    ],
-    [
-     "keep",
-     -0.668
-    ],
-    [
-     "up",
-     -0.401
-    ],
-    [
-     "morons",
-     -0.398
-    ]
-   ]
-  },
-  {
-   "seg": "L08b",
-   "clip": "pq-L08bb-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.053,
-   "tempo": 1.05,
-   "vs": 3.562,
-   "vs_raw": 3.74,
-   "words": 5,
-   "of": 9,
-   "matched": 8,
-   "err": 0.234,
-   "lag": -0.042,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "it's",
-     0.094
-    ],
-    [
-     "billions",
-     0.04
-    ],
-    [
-     "with",
-     0.094
-    ],
-    [
-     "a",
-     -0.025
-    ],
-    [
-     "b",
-     -0.011
-    ],
-    [
-     "keep",
-     -0.684
-    ],
-    [
-     "up",
-     -0.42
-    ],
-    [
-     "morons",
-     -0.422
-    ]
-   ]
-  },
-  {
-   "seg": "L08b",
-   "clip": "pq-L08bb-P07.mp4",
-   "take": "08-banker-billions-1x.wav",
-   "on": 0.059,
-   "tempo": 1.06,
-   "vs": 3.528,
-   "vs_raw": 3.74,
-   "words": 5,
-   "of": 9,
-   "matched": 8,
-   "err": 0.243,
-   "lag": -0.042,
-   "tracked": 1.0,
-   "untracked": false,
-   "table": [
-    [
-     "it's",
-     0.101
-    ],
-    [
-     "billions",
-     0.04
-    ],
-    [
-     "with",
      0.089
     ],
     [
-     "a",
-     -0.033
-    ],
-    [
      "b",
-     -0.021
+     0.04
     ],
     [
      "keep",
-     -0.7
+     0.008
     ],
     [
      "up",
-     -0.439
+     0.021
     ],
     [
      "morons",
-     -0.445
+     0.005
+    ]
+   ]
+  },
+  {
+   "seg": "L08b",
+   "clip": "pq-L08bc-P07.mp4",
+   "take": "08-banker-billions-p2b.wav",
+   "on": 0.499,
+   "tempo": 0.89,
+   "vs": 3.146,
+   "vs_raw": 2.8,
+   "words": 7,
+   "of": 9,
+   "matched": 8,
+   "err": 0.086,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "it's",
+     0.54
+    ],
+    [
+     "billions",
+     0.04
+    ],
+    [
+     "with",
+     0.062
+    ],
+    [
+     "a",
+     0.104
+    ],
+    [
+     "b",
+     0.054
+    ],
+    [
+     "keep",
+     0.01
+    ],
+    [
+     "up",
+     0.02
+    ],
+    [
+     "morons",
+     -0.001
+    ]
+   ]
+  },
+  {
+   "seg": "L08b",
+   "clip": "pq-L08bc-P07.mp4",
+   "take": "08-banker-billions-p2b.wav",
+   "on": 0.501,
+   "tempo": 0.9,
+   "vs": 3.111,
+   "vs_raw": 2.8,
+   "words": 7,
+   "of": 9,
+   "matched": 8,
+   "err": 0.093,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "it's",
+     0.542
+    ],
+    [
+     "billions",
+     0.04
+    ],
+    [
+     "with",
+     0.058
+    ],
+    [
+     "a",
+     0.096
+    ],
+    [
+     "b",
+     0.044
+    ],
+    [
+     "keep",
+     -0.011
+    ],
+    [
+     "up",
+     -0.004
+    ],
+    [
+     "morons",
+     -0.029
+    ]
+   ]
+  },
+  {
+   "seg": "L08b",
+   "clip": "pq-L08ba-P07.mp4",
+   "take": "08-banker-billions-p1b.wav",
+   "on": 0.429,
+   "tempo": 1.03,
+   "vs": 3.029,
+   "vs_raw": 3.12,
+   "words": 8,
+   "of": 9,
+   "matched": 9,
+   "err": 0.079,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "it's",
+     0.471
+    ],
+    [
+     "billions",
+     0.084
+    ],
+    [
+     "with",
+     0.016
+    ],
+    [
+     "a",
+     0.043
+    ],
+    [
+     "b",
+     0.079
+    ],
+    [
+     "keep",
+     -0.036
+    ],
+    [
+     "up",
+     0.04
+    ],
+    [
+     "your",
+     -0.006
+    ],
+    [
+     "morons",
+     -0.009
+    ]
+   ]
+  },
+  {
+   "seg": "L08b",
+   "clip": "pq-L08ba-P07.mp4",
+   "take": "08-banker-billions-p1b.wav",
+   "on": 0.445,
+   "tempo": 1.04,
+   "vs": 3.0,
+   "vs_raw": 3.12,
+   "words": 8,
+   "of": 9,
+   "matched": 9,
+   "err": 0.083,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "it's",
+     0.487
+    ],
+    [
+     "billions",
+     0.098
+    ],
+    [
+     "with",
+     0.027
+    ],
+    [
+     "a",
+     0.05
+    ],
+    [
+     "b",
+     0.085
+    ],
+    [
+     "keep",
+     -0.035
+    ],
+    [
+     "up",
+     0.04
+    ],
+    [
+     "your",
+     -0.008
+    ],
+    [
+     "morons",
+     -0.012
     ]
    ]
   }

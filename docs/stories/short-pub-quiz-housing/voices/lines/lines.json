@@ -9,20 +9,23 @@
   "key": "02-student-hundred",
   "role": "student",
   "text": "A hundred million? That's loads.",
-  "whisper": true
+  "whisper": false,
+  "whisper_was": "2026-11-21: spoken from rough cut 5 (Jack: \"remove the whispering, maybe only keep it for a line\")"
  },
  {
   "key": "03-plasterer-more",
   "role": "plasterer",
   "text": "More. I've done three of them B&B jobs for the council this year. Every room, every night.",
-  "whisper": true
+  "whisper": false,
+  "whisper_was": "2026-11-21: spoken from rough cut 5 (Jack: \"remove the whispering, maybe only keep it for a line\")"
  },
  {
   "key": "04-student-sum",
   "role": "student",
   "text": "Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Every night. A hundred thousand rooms?",
-  "whisper": true,
-  "text_r1": "Every night... Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Times three-sixty-five. Times a hundred thousand rooms?"
+  "whisper": false,
+  "text_r1": "Every night... Say fifty quid a night. I don't know how much things are, I only buy CBD ramen suppositories. Times three-sixty-five. Times a hundred thousand rooms?",
+  "whisper_was": "2026-11-21: spoken from rough cut 5 (Jack: \"remove the whispering, maybe only keep it for a line\")"
  },
  {
   "key": "05-student-billions",
@@ -48,7 +51,8 @@
   "key": "08-banker-billions",
   "role": "banker",
   "text": "Paying by the night is the dearest way to buy anything. It's billions with a B. Keep up, you morons.",
-  "whisper": true
+  "whisper": false,
+  "whisper_was": "2026-11-21: spoken from rough cut 5 (Jack: \"remove the whispering, maybe only keep it for a line\")"
  },
  {
   "key": "09-banker-bob",
@@ -61,7 +65,8 @@
   "key": "10-bob-noone",
   "role": "bob",
   "text": "I know literally no one who's been in them.",
-  "whisper": true
+  "whisper": false,
+  "whisper_was": "2026-11-21: spoken from rough cut 5 (Jack: \"remove the whispering, maybe only keep it for a line\")"
  },
  {
   "key": "11-quizmaster-pens",

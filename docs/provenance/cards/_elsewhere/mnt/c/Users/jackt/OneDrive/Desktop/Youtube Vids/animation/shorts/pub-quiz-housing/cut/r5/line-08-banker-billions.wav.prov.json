@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r5/line-08-banker-billions.wav",
+ "made": "2026-11-21T11:07:47+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/pq_cut.py main4 (atempo)",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/audio/lines-sync-r5/08-banker-billions-p2b.wav",
+ "why": "lip-sync r5: the take and tempo pq_lipsync.py fitted to the clip",
+ "settings": {
+  "atempo": "0.88"
+ }
+}

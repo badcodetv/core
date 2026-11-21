@@ -89,5 +89,15 @@
   "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
   "what": "rough cut 4: lip-synced talking clips, Bob close-up, drunk dozes off, pint-glass logo outro; 56 s",
   "rebuild": "python3 scripts/shorts/pq_lipsync.py check && python3 scripts/shorts/pq_lipsync.py fit && python3 scripts/shorts/pq_cut.py --round 4 --lines audio/lines-fast-pick --room && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>"
+ },
+ {
+  "at": "2026-11-21T11:08:43+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/Edzs6iVdcGwFJG4Em9omMb",
+  "what": "rough cut 5: spoken not whispered (one whisper kept), pub bed -8 dB, drunk's hand no longer through the pint, logo printed on the glass; 53 s",
+  "rebuild": "PQ_VOX=audio/lines-r5 python3 scripts/shorts/pq_lipsync.py fit && python3 scripts/shorts/pq_cut.py --round 5 --lines audio/lines-r5 --room && python3 scripts/scene/build-timeline.py docs/stories/short-pub-quiz-housing/scenes/pub-quiz-housing <out-dir>",
+  "feedback": "feedback/timeline-r5",
+  "feedback_docs": 5
  }
 ]

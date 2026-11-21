@@ -65,8 +65,8 @@
   "G01": "pq-G01ma-G01"
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r4/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r4/preview.mp4",
-  "script": "scripts/shorts/pq_lipsync.py check && fit; scripts/shorts/pq_cut.py --round 4 --lines audio/lines-fast-pick --room"
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r5/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/pub-quiz-housing/cut/r5/preview.mp4",
+  "script": "PQ_VOX=audio/lines-r5 scripts/shorts/pq_lipsync.py fit; scripts/shorts/pq_cut.py --round 5 --lines audio/lines-r5 --room"
  }
 }

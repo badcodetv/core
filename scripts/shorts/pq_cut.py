@@ -315,8 +315,43 @@ INSERTS4 = {
     'banker': [(3.3, '05', 4.0, 1.2, 'The student, stung', False)],
     'answer': [(0.0, 'D04', 0.2, 2.0, 'The drunk dozes off onto the bar on "Pens down"', True)],
 }
+INSERTS5_ANSWER = [(0.0, 'D04', 0.2, 1.5, 'The drunk dozes off onto the bar on "Pens down" (ends before his hand meets the pint)', True)]
 PINT = (2.0, 4.2)  # in, length of the pour clip used
 LOGO_ON_GLASS = dict(w=0.24, y=0.60, alpha=0.92)  # logo width as a share of frame width, centre height share, opacity
+# Rough cut 5 (Jack, 2026-11-21): "remove the whispering, maybe only keep it for a line" (02, 03, 04, 08 re-voiced spoken,
+# audio/lines-r5 + pause-tagged re-voices in audio/lines-sync-r5; only 06 "Fuck off, get your own answers" stays a whisper);
+# "the background noise is overpowering" (pub bed down 8 dB); "his hand goes through the glass" (the drunk's doze ends at
+# 1.7 s in the clip, before his hand swings through the pint at 2.0 s); "make the logo and writing look more like it is on
+# the glass rather than an overlay" (the logo wrapped round the glass's curve, shaded at its edges, the glass's own
+# highlights laid back over it). The glass, measured on the pour clip's frame (1080x1920; camera static): centre x 552,
+# half-width 142 px at y 1180, narrowing ~0.04 px per px downwards.
+R5_GLASS = dict(cx=552, cy=1185, r=142, taper=0.04, arc=196, alpha=0.9)
+R5_BED_DB = -22  # was -14
+
+
+def glass_logo(out, g=R5_GLASS):
+    """The stacked logo wrapped onto a cylinder of radius r (seen face-on), shaded by the cosine of its angle, as a
+    full-frame RGBA PNG placed on the glass."""
+    from PIL import Image
+    import numpy as np
+    lg = Image.open(LOGO).convert('RGBA')
+    lw = g['arc']; lh = round(lg.height * lw / lg.width)
+    src = np.asarray(lg.resize((lw, lh), Image.LANCZOS)).astype(np.float32) / 255
+    canvas = np.zeros((H, W, 4), np.float32)
+    y0 = g['cy'] - lh // 2
+    for yy in range(lh):
+        r = g['r'] - g['taper'] * (yy - lh / 2)  # the pint is wider at the top
+        xs = np.arange(-int(r) + 1, int(r))
+        th = np.arcsin(np.clip(xs / r, -1, 1))  # angle on the cylinder for each screen column
+        u = th * r + lw / 2  # arc length -> logo column
+        ok = (u >= 0) & (u <= lw - 1)
+        col = src[yy, np.clip(u, 0, lw - 1).astype(int)]
+        shade = (0.55 + 0.45 * np.cos(th))[:, None]
+        px = col.copy(); px[:, :3] *= shade; px[:, 3] *= g['alpha'] * (0.6 + 0.4 * np.cos(th))
+        px[~ok] = 0
+        canvas[y0 + yy, g['cx'] + xs] = px
+    canvas[..., :3] *= np.array([0.97, 0.95, 0.91], np.float32)  # warm pub light on white enamel
+    Image.fromarray((canvas * 255).astype(np.uint8), 'RGBA').save(out)
 
 
 def piece(src, sin, d, out, vf):
@@ -342,7 +377,7 @@ def main4(a):
             w = LINES / f'{k}.wav'; role = LINE_TXT[k]['role']
             b0 = best.get((SEG_OF.get(k) or ['-'])[0])
             if b0:  # the take and tempo the lip-sync fit chose (a re-voice in audio/lines-sync/ when that fitted better)
-                src_take = LINES / b0['take'] if (LINES / b0['take']).exists() else MEDIA / 'audio/lines-sync' / b0['take']
+                src_take = next((d / b0['take'] for d in (LINES, MEDIA / 'audio/lines-sync-r5', MEDIA / 'audio/lines-sync') if (d / b0['take']).exists()))
                 w = cut / f'line-{k}.wav'
                 ff('-i', src_take, '-af', f"atempo={b0['tempo']}", w)
             d = round(dur(w), 3)
@@ -361,7 +396,7 @@ def main4(a):
             lt += d + (L3['gap'] if j < len(keys) - 1 else 0)
         sd = round(lt + L3['tail'] - st, 3) if keys else 1.0
         # inserts cut into the base pieces; the clip clock keeps running underneath
-        ins = sorted(INSERTS4.get(bid, []))
+        ins = sorted(INSERTS5_ANSWER if (a.round >= 5 and bid == 'answer') else INSERTS4.get(bid, []))
         marks = sorted({round(x[0] - st, 3) for x in base} | {o for o, *_ in ins} | {round(o + l, 3) for o, _, _, l, _, _ in ins} | {0.0, sd})
         marks = [m for m in marks if 0 <= m <= sd]
         k_ = 0
@@ -391,9 +426,16 @@ def main4(a):
     # the outro: the pint pour with the real stacked logo on the glass
     ls = round(t, 3); pin, od = PINT
     g = VID / f"{picks['G01']}.mp4"; L = LOGO_ON_GLASS
-    ff('-ss', pin, '-i', g, '-loop', '1', '-i', LOGO, '-t', od, '-filter_complex',
-       f"[0:v]{vf}[b];[1:v]scale={int(W * L['w'])}:-1,format=rgba,colorchannelmixer=aa={L['alpha']}[l];"
-       f"[b][l]overlay=(W-w)/2:H*{L['y']}-h/2:shortest=1,format=yuv420p[v]", '-map', '[v]', '-t', od, '-an', *ENC, cut / 'v99-outro.mp4')
+    if a.round >= 5:  # printed on the glass: wrapped, shaded, softened, and the glass's own highlights back on top
+        gl = cut / 'glass-logo.png'; glass_logo(gl)
+        ff('-ss', pin, '-i', g, '-loop', '1', '-i', gl, '-t', od, '-filter_complex',
+           f"[0:v]{vf},format=gbrp,split[b][h];[1:v]format=rgba,gblur=sigma=0.7[l];[b][l]overlay=0:0:shortest=1:format=gbrp,format=gbrp[c];"
+           f"[h]curves=all='0/0 0.72/0 0.9/0.55 1/1',format=gbrp[hl];[c][hl]blend=all_mode=lighten,format=yuv420p[v]",  # blend in RGB: in YUV, lighten maxes the chroma and the beer turns pink
+           '-map', '[v]', '-t', od, '-an', *ENC, cut / 'v99-outro.mp4')
+    else:
+        ff('-ss', pin, '-i', g, '-loop', '1', '-i', LOGO, '-t', od, '-filter_complex',
+           f"[0:v]{vf}[b];[1:v]scale={int(W * L['w'])}:-1,format=rgba,colorchannelmixer=aa={L['alpha']}[l];"
+           f"[b][l]overlay=(W-w)/2:H*{L['y']}-h/2:shortest=1,format=yuv420p[v]", '-map', '[v]', '-t', od, '-an', *ENC, cut / 'v99-outro.mp4')
     parts.append(cut / 'v99-outro.mp4')
     vids.append({'file': str(cut / 'v99-outro.mp4'), 'in': pin, 'start': ls, 'dur': od, 'beat': 'logo', 'source': str(g), 'looped': False})
     beats.append({'id': 'logo', 'title': f'{len(shots) + 1}. Outro', 'start': ls, 'dur': od, 'see': 'A pint poured into a glass carrying the BadCode logo and name (the real logo file, laid on)', 'lines': []})
@@ -424,7 +466,7 @@ def main4(a):
     chain = '[0:a]aresample=48000,aformat=channel_layouts=stereo[b0];'
     for k in range(1, len(BED)):
         chain += f'[{k}:a]aresample=48000,aformat=channel_layouts=stereo[r{k}];[b{k - 1}][r{k}]acrossfade=d=1.5[b{k}];'
-    chain += f'[b{len(BED) - 1}]aloop=loop=-1:size=2e9,atrim=end={total},loudnorm=I=-30,volume=-14dB,afade=t=out:st={ls}:d={od}[o]'
+    chain += f'[b{len(BED) - 1}]aloop=loop=-1:size=2e9,atrim=end={total},loudnorm=I=-30,volume={R5_BED_DB if a.round >= 5 else -14}dB,afade=t=out:st={ls}:d={od}[o]'
     stp = cut / 'amb-pub.wav'; ff(*ins_, '-filter_complex', chain, '-map', '[o]', '-ar', 48000, '-ac', 2, stp)
     audio.append({'track': f'A{len(audio) + 1}', 'name': 'amb-pub', 'file': str(stp)})
     events.append({'stem': 'amb-pub', 't': 0, 'dur': total, 'what': "Pub room: murmur and glasses (from the clips' own sound)", 'src': str(VID / f'{BED[0]}.mp4')})
@@ -435,7 +477,9 @@ def main4(a):
     flags = ['Lip-sync: ' + '; '.join(synced), 'No music yet.'] + flags
     edl = {'sequence': f'short-pub-quiz-housing-1-pub-quiz-r{a.round}', 'title': 'Pub Quiz Timeline',
            'heading': f'BadCode Shorts ▲ Pub Quiz: Housing, rough cut {a.round}',
-           'intro': 'Lip-synced talking clips, Bob on his own close-up, the drunk dozing off, and the pint-glass logo.',
+           'intro': ('Spoken, not whispered (only "Fuck off, get your own answers" stays a whisper); the pub noise down; the drunk\'s hand '
+                     'no longer goes through his pint; the logo printed on the glass.' if a.round >= 5 else
+                     'Lip-synced talking clips, Bob on his own close-up, the drunk dozing off, and the pint-glass logo.'),
            'fps': FPS, 'total': total, 'beats': beats, 'video': vids, 'audio': audio, 'events': events, 'flags': flags}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4'), 'looped': sum(v['looped'] for v in vids)}))

@@ -1,33 +1,32 @@
 {
- "round": 4,
+ "round": 5,
  "jack_round1": "Jack, 2026-11-20 (said in chat, not on the page): speed up everything they say; then lip-sync; add music and background noise; the beginning is flat, no jokes; it drags, cut what should go; a drunk running gag in the background; a bar-appropriate filter.",
  "plan": [
   {
-   "h": "Rough cut 4: 56 s, your three notes and the lip-sync",
+   "h": "Rough cut 5: 53 s, your notes on cut 4",
    "items": [
-    "Every talking line re-shot so the mouth says exactly the words you hear (three tries per line), then each voice take fitted to its clip; three lines re-voiced with pauses where the clips pause.",
-    "Words in sync per line: fuck off 6/6, B&B 17/18, own them 13/14, billions 15/20, single brick 9/11, Bob 7/9, the sum 11/19 (partly under the drunk).",
-    "The quizmaster's lines need no sync: his mouth is under the balaclava."
-   ]
-  },
-  {
-   "h": "Sorry: I missed your notes",
-   "items": [
-    "I checked the page before you'd left them and didn't check again before cuts 2 and 3. I now dump the page's notes before every rebuild."
+    "Whispering gone: the student, the plasterer and the banker now speak (brisk, not hushed). One whisper kept: \"Fuck off, get your own answers\", hissed at the next table, where the whisper is the joke.",
+    "Pub background noise down 8 dB.",
+    "The drunk's hand no longer goes through his pint (his shot ends just before the swing).",
+    "The logo now sits on the glass: wrapped round its curve, darker at the edges, the glass's light streaks running over it.",
+    "Lips still in time with the new spoken takes: B&B line 16/18 words, billions 17/20 (better than cut 4), the sum 12/20 (partly under the drunk)."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Does the sync hold up when you watch it?",
-    "The pint-glass logo: right size and place?"
+    "Is the right line still whispered, or would you rather a different one, or none?",
+    "Background noise: right level now, or lower still?",
+    "Logo on the glass: does it read as printed now?"
    ]
   }
  ],
  "replies": {
   "at2343": "Done in cut 4: the outro is now a pint poured into a plain glass with the real BadCode logo and name laid onto the glass (the real file, never drawn by Flow). Sorry, I missed this note on cut 1 and made a different 'beer outro' in cut 3.",
   "at1123": "Agreed. The flying fall is gone. In cut 4 he dozes off on 'Pens down': his head slips off his hand onto the bar, small and real.",
-  "at916": "Fixed in cut 4: Bob now says his line on his own close-up, face to camera and lip-synced (before, he was a bowed head in a wide shot)."
+  "at916": "Fixed in cut 4: Bob now says his line on his own close-up, face to camera and lip-synced (before, he was a bowed head in a wide shot).",
+  "at1356": "Done in cut 5: the logo is wrapped round the glass's curve (squeezed toward its sides), darker at the edges, slightly soft, and the glass's own highlights run over it, so it reads as printed rather than floating. Still the real logo file, only bent to the glass. Say if it should be smaller or sit lower.",
+  "at903": "Fixed in cut 5: his hand swung through the pint 2 s into that clip. The shot now ends at 1.7 s, as his head drops onto his arm, before his hand reaches the glass."
  },
  "jack_round2": "Jack, 2026-11-20 (chat): \"do the edit fixes and use the beer outro i asked for\".",
  "jack_notes_r1_r2": {
@@ -35,5 +34,33 @@
   "at1123 (cut 2, the fall)": "ai slop thanks",
   "at916 (cut 2, Bob)": "bob is not in the clip thanks",
   "chat": "\"fix the lip synccing\""
- }
+ },
+ "jack_round4": {
+  "at1123": {
+   "beat": "drunk3",
+   "tc": "00:00:46:19",
+   "note": "ai slop thanks"
+  },
+  "at1356": {
+   "beat": "logo",
+   "tc": "00:00:56:12",
+   "note": "make the logo and writing look more like it is on the glass rather than an overlay. thanks"
+  },
+  "at2343": {
+   "beat": "logo",
+   "tc": "00:01:37:15",
+   "note": "do the logo like a pint is being poured into a badge logo and named pint glass, thanks"
+  },
+  "at903": {
+   "beat": "answer",
+   "tc": "00:00:37:15",
+   "note": "his hand goes through the glass, fix it thanks. "
+  },
+  "at916": {
+   "beat": "bob",
+   "tc": "00:00:38:04",
+   "note": "bob is not in the clip thanks"
+  }
+ },
+ "jack_round4_chat": "remove the whispering, maybe only keep it for a line so it adds something but it really is just annoying at the moment also the background noise is overpowering please lower the volume, please read the notes thanks"
 }

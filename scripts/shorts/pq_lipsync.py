@@ -24,7 +24,11 @@ vrf = importlib.util.module_from_spec(spec); spec.loader.exec_module(vrf)
 
 cfg = localize(json.loads((SCENE / 'scene.json').read_text()))
 MEDIA = pathlib.Path(cfg['media'])
-VID, VOX, STRIPS = MEDIA / 'video', MEDIA / 'audio/lines-fast-pick', MEDIA / 'strips'
+VID, STRIPS = MEDIA / 'video', MEDIA / 'strips'
+# round 5 (Jack, 2026-11-21: "remove the whispering, maybe only keep it for a line"): PQ_VOX=audio/lines-r5, where
+# 02, 03, 04 and 08 are spoken re-voices; their whispered re-voices in audio/lines-sync/ are then left out of the fit.
+VOX = MEDIA / os.environ.get('PQ_VOX', 'audio/lines-fast-pick')
+SPOKEN_R5 = {'02-student-hundred', '03-plasterer-more', '04-student-sum', '08-banker-billions'}
 OUT = SCENE / 'sync'
 FPS = 24
 LINE_TXT = {l['key']: l for l in json.loads((REPO / 'docs/stories/short-pub-quiz-housing/voices/lines/lines.json').read_text())}
@@ -45,7 +49,7 @@ SEGS = {
 FACE = json.loads((OUT / 'faces.json').read_text()) if (OUT / 'faces.json').exists() else {}  # clip key -> face override
 EARLY, LATE = -0.045, 0.125
 PRE_TEMPO = {'04-student-sum.wav': 1.15, '08-banker-billions.wav': 1.15}  # the picks already carry atempo 1.15 (rough cut 2)
-PRESPED = {'04-student-sum.wav', '08-banker-billions.wav'}
+PRESPED = set() if VOX.name == 'lines-r5' else {'04-student-sum.wav', '08-banker-billions.wav'}  # round 5's spoken takes are not sped
 _W = {}
 
 
@@ -145,6 +149,8 @@ def fit_one(seg, clip, face, take=None, tempos=np.arange(0.97, 1.151, 0.01)):
 
 def takes_of(key):
     """The picked fast take plus any re-voices in audio/lines-sync/<key>-*.wav."""
+    if VOX.name == 'lines-r5' and key in SPOKEN_R5:
+        return [VOX / f'{key}.wav'] + sorted((MEDIA / 'audio/lines-sync-r5').glob(f'{key}-*.wav'))  # spoken re-voices with pause tags
     return [VOX / f'{key}.wav'] + sorted((MEDIA / 'audio/lines-sync').glob(f'{key}-*.wav'))
 
 
@@ -159,7 +165,8 @@ def cmd_fit():
         for take in takes_of(key):
             # the picks for 04 and 08 were already sped x1.15 (rough cut 2): cap the total near x1.25, past it a whisper warbles
             top = 1.081 if take.name in PRESPED else 1.151
-            for tempo in np.arange(0.97, top, 0.01):
+            low = 0.88 if (VOX.name == 'lines-r5' and key in SPOKEN_R5) else 0.97  # spoken takes run ahead of the whispering mouths
+            for tempo in np.arange(low, top, 0.01):
                 pick, total, of = {}, 0, 0
                 for seg in segs:
                     face = SEGS[seg][4]
