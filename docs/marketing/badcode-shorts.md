@@ -1,6 +1,7 @@
 # BadCode Shorts: the idea slate
 
 **Status:** v6, 2026-11-13 (Kai and Jack meeting: shorts audio through Suno, the point of each short, #83–87 added; `docs/misc/2026-11-13-meeting.md`). v5, 2026-11-13 (Storyverse batch #50–82 rewritten with people and stakes). v4, 2026-11-12 (Storyverse batch #50–82 added). v3, 2026-11-10. v2 (Jack) added #23 and the **20-second cut** of every idea (below), which is the version to build from. v3 (Kai) adds **#24 The Rules, the short we are building first**, and #25 to #32, the balaclava gang. **This file is the running list of every short:** add new ones at the foot of the numbered list (the `new-short` skill keeps it). Written from the Kai and Jack meeting transcript and eleven reference images Jack collected.
+🔑 **Way-out review, 2026-11-21:** every complaint-only idea below has a proposed way out, or is marked drop/merge, in [`shorts-way-out-review.md`](./shorts-way-out-review.md) (Jack: "our rule is to have some sort of solution or at least a new take"). Read it before starting any short from this list.
 Nothing here is ruled. **Jack writes the jokes:** each idea has a premise and the shape of the punch. The punchline itself is a blank for him to fill.
 
 ## What a BadCode short is (from the meeting)
