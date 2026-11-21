@@ -1,0 +1,132 @@
+[
+  {
+    "id": "FI-a",
+    "prompt": "Vertical 9:16 head-and-shoulders portrait of FIONA, an English woman of about 30, her face large, sharp and filling the upper half of the frame, looking just past the camera. Take who she is from the attached character sheet: long untidy auburn hair with wet strands stuck to her cheek, pale skin with a few freckles, tired eyes with heavy lids, a flat unimpressed mouth. She wears an olive-green parka with the hood down, a dark green knitted scarf bunched at her throat, and a dark green backpack strap over one shoulder. An ordinary invented face, nobody real. Behind her, soft and out of focus, the car-boot sale from the attached photo used for layout only, moved to an English field in drizzle: square pop-up gazebos, a pasting table with crockery under clear plastic sheeting, an open hatchback boot, people in waterproofs, wet trampled grass. Fine drizzle beads on her parka and hair. The sheet is a painting; this is a real photograph. Grey overcast daylight, real muted colours.",
+    "refs": ["sheet-Fiona.jpg", "u-carboot.jpg"]
+  },
+  {
+    "id": "FI-b",
+    "prompt": "Vertical 9:16 close portrait of FIONA, head and shoulders, shot slightly from her left side as she half-turns her face toward the camera, face large and sharp. From the attached character sheet: an English woman of about 30, long untidy auburn hair, pale skin, tired eyes, a weary unimpressed look with one eyebrow a little lowered. Olive-green parka with the hood half pulled up over the back of her head, a dark green scarf, the strap of a dark green backpack across her shoulder. An ordinary invented face, nobody real. Background from the attached layout photo, turned into a drizzly English car-boot sale on a grass field: blurred gazebo canopies in faded blue and white, a seller hunched under an umbrella beside his table, open car boots, puddles in tyre ruts. Rain specks on the parka shoulder. Real photograph, never painted; flat grey daylight, natural colour.",
+    "refs": ["sheet-Fiona.jpg", "u-carboot.jpg"]
+  },
+  {
+    "id": "JI-a",
+    "prompt": "Vertical 9:16 head-and-shoulders portrait of JIM, an English market wheeler-dealer of about 55, face large and sharp in the upper half of the frame, grinning straight at the camera with a salesman's wide confident grin. Use the attached character sheet only for his face and build: round red-cheeked face, stubbly jaw, bright amused eyes, stocky. Dress him like this: a grey wool flat cap, a black crew-neck jumper, a dark worn jacket with frayed cuffs, wet across the shoulders. An ordinary invented face, nobody real. Behind him, softly blurred, the flea-market layout of the attached photo moved to a wet English car-boot field: a large striped umbrella over a folding chair, a pasting table crowded with china and glassware, shoppers in anoraks, grey sky, wet grass instead of cobbles. Light drizzle. Real photograph, not a painting; overcast grey light, honest colours.",
+    "refs": ["sheet-Jim.jpg", "u-stall.jpg"]
+  },
+  {
+    "id": "JI-b",
+    "prompt": "Vertical 9:16 close portrait of JIM, head and shoulders, three-quarter view, his chin tipped down and eyes up at the camera with a sly knowing grin, as if about to make you an offer. Face from the attached character sheet: an English man of about 55 with a round, red-cheeked, weathered face and a broad nose. Grey flat cap with rain dark on the peak, black jumper, dark worn jacket with the collar turned up. An ordinary invented face, nobody real. Background from the attached layout photo, rebuilt as an English car-boot sale in drizzle: out-of-focus gazebo frames, a table of plates and teacups under plastic sheeting, people walking past in hoods on muddy grass. Real photograph, never painted; soft grey daylight, true colour.",
+    "refs": ["sheet-Jim.jpg", "u-stall.jpg"]
+  },
+  {
+    "id": "PH-a",
+    "prompt": "Vertical 9:16 head-and-shoulders portrait of PHINEAS, an English man of about 65, very heavy, his face large and sharp, looking down his nose at the camera with a smug half-smile. From the attached character sheet: completely bald shining head, heavy jowls and double chin, small narrowed eyes under thick dark brows, fleshy nose. A three-piece navy pinstripe suit with the waistcoat buttoned tight over his stomach, crisp white shirt, red silk tie, a white pocket square; one hand resting on the silver-tipped head of a black cane near his chest, a gold signet ring on his finger. An ordinary invented face, nobody real. Behind him, soft focus, the front of a long gleaming black luxury saloon on wet grass, as laid out in the attached car photo, its bonnet smooth and bare, its grille plain dark chrome, the plate a blank black panel; dripping English trees and grey sky. Fine drizzle. Real photograph, not a painting; flat grey light, real colours.",
+    "refs": ["sheet-Phineas.jpg", "u-car.jpg"]
+  },
+  {
+    "id": "PH-b",
+    "prompt": "Vertical 9:16 close portrait of PHINEAS, head and shoulders, from slightly below so his jowls and chins dominate, his head turned three-quarters with small eyes sliding sideways toward the camera, lips pressed in a satisfied smirk. From the attached character sheet: an English man of about 65, very fat, entirely bald, small eyes, heavy brows. Navy pinstripe three-piece suit, red tie, gold signet ring on the hand that holds the lapel of his jacket. An ordinary invented face, nobody real. Background from the attached car photo: the long black saloon parked on a wet English field, its smooth unadorned bonnet and plain grille blurred behind his shoulder, raindrops beaded on the black paint, grey trees. Real photograph, never painted; dull grey daylight, natural colour.",
+    "refs": ["sheet-Phineas.jpg", "u-car.jpg"]
+  },
+  {
+    "id": "LA-a",
+    "prompt": "Vertical 9:16 head-and-shoulders portrait of LARRY, an English clerk of about 45, his face large and sharp, looking anxiously at the camera. From the attached character sheet: thin and stooped, a long narrow face, big heavy black-framed glasses, thinning brown hair plastered in wet strands across his forehead, drooping worried eyes, beads of sweat mixing with rain on his brow and upper lip. A crumpled grey suit, pale blue shirt, loosened dark red tie, a lanyard with a plain blank card, a clipboard clutched to his chest showing only its back. An ordinary invented face, nobody real. Behind him, blurred, the long black luxury saloon from the attached car photo parked on wet grass, smooth bare bonnet, plain grille, blank plate; dripping trees. Real photograph, not a painting; grey overcast light, honest colours.",
+    "refs": ["sheet-Larry.jpg", "u-car.jpg"]
+  },
+  {
+    "id": "LA-b",
+    "prompt": "Vertical 9:16 close portrait of LARRY, head and shoulders, three-quarter view, shoulders hunched, glancing nervously sideways out of frame as if someone important just called his name. From the attached character sheet: an English man of about 45, thin, big black-framed glasses slipping down his nose, thinning hair, a sallow anxious face glistening with sweat and drizzle. Crumpled grey suit jacket, lanyard, the top edge of a clipboard under his arm. An ordinary invented face, nobody real. Background from the attached car photo: the black saloon's long wet flank and smooth plain bonnet softly out of focus on a damp English field, grey sky. Real photograph, never painted; soft grey daylight, true colour.",
+    "refs": ["sheet-Larry.jpg", "u-car.jpg"]
+  },
+  {
+    "id": "CARBOOT-a",
+    "prompt": "Vertical 9:16 photograph, eye level, FIONA walking toward the camera down a muddy grass aisle between car-boot stalls, framed from the knees up, her face large and readable, from the attached portrait. Hands shoved in the pockets of her olive-green parka, hood half up over her untidy auburn hair, dark green scarf, backpack strap on one shoulder, a weary unimpressed look, eyes sliding past the stalls. The moment and composition follow the attached painted still: her in the centre, stalls on both sides. The place follows the attached car-boot photo as layout, moved to an English field in drizzle: square pop-up gazebos in faded blue and white, wallpaper pasting tables with old crockery, a beige computer monitor and a jug, open hatchback boots with boxes of bric-a-brac, clear plastic sheeting over goods, sellers in fleeces on camping chairs, a couple haggling over a teapot behind her. Trampled wet grass and brown mud. Real documentary photograph, not painted; grey drizzly daylight, real colours.",
+    "refs": ["u-carboot.jpg", "orig-1.jpg", "portrait-FI.jpg"]
+  },
+  {
+    "id": "CARBOOT-b",
+    "prompt": "Vertical 9:16 photograph, wider and slightly high, looking along a long row of car-boot pitches in an English field in drizzle; FIONA, from the attached portrait, trudging away from a stall and across the frame from left to right in the lower middle, turned three-quarters to the camera so her tired face is readable, hood half up over long auburn hair, olive-green parka, dark green scarf and backpack. Around her, laid out like the attached car-boot photo and following the moment of the attached painted still: estate cars and hatchbacks parked nose-out with boots open, pasting tables of china, toys and old electricals, gazebos with their sides flapping, people in waterproofs and wellies, a seller under a big black umbrella, puddles in tyre ruts, wet grass churned to mud. Low grey sky and a line of hedgerow trees. Real documentary photograph, never painted; soft grey light, natural colour.",
+    "refs": ["u-carboot.jpg", "orig-1.jpg", "portrait-FI.jpg"]
+  },
+  {
+    "id": "HOSPITAL-a",
+    "prompt": "Vertical 9:16 photograph from the point of view of a shopper standing at the stall: JIM, from the attached portrait, behind his wallpaper pasting table, framed from the waist up, holding up a wooden picture frame at chest height toward the camera and grinning straight into the lens. Grey flat cap, black jumper, dark worn jacket, round red-cheeked face. In the frame, a real photograph of a large red-brick hospital building. Tied to the corner of the frame with string, a small handwritten brown luggage tag reading \"NHS £40\". On the table in front, a few more framed pictures standing face-in against a cardboard crate. Behind him, as laid out in the attached stall photo and following the moment of the attached painted still: a white gazebo canopy dripping at the edge, other stalls and shoppers in hoods softly blurred, wet grass. Real documentary photograph, not painted; grey drizzle light, real colours.",
+    "refs": ["u-stall.jpg", "orig-5.jpg", "portrait-JI.jpg"]
+  },
+  {
+    "id": "HOSPITAL-b",
+    "prompt": "Vertical 9:16 photograph, closer and a little lower, the shopper's point of view across the wet table top: JIM, from the attached portrait, leaning over his pasting table, both hands presenting a wooden-framed photograph of a red-brick hospital tilted toward the camera like a prize, eyebrows raised, a big salesman's grin aimed at the lens. Grey flat cap with rain on the peak, black jumper, dark worn jacket. A small handwritten luggage tag on string hangs from the frame, reading \"NHS £40\". Raindrops on the glass of the frame and on the table. Behind him, softly out of focus and laid out like the attached stall photo, moment from the attached painted still: the frame of a pop-up gazebo, shoppers in anoraks, a striped umbrella, a grey sky over an English field. Real documentary photograph, never painted; flat overcast light, honest colour.",
+    "refs": ["u-stall.jpg", "orig-5.jpg", "portrait-JI.jpg"]
+  },
+  {
+    "id": "COURTS-a",
+    "prompt": "Vertical 9:16 photograph, eye level, JIM, from the attached portrait, behind his pasting table under a white gazebo, waist up, holding up a wooden picture frame in one hand and giving a shrug with the other palm up, mouth pulled down in a 'what can you do' face. The frame holds a real photograph of a polished wooden judge's gavel resting on its round block. A small handwritten luggage tag on string hangs from it, reading \"THE COURTS – SLIGHTLY USED\". Grey flat cap, black jumper, dark worn jacket, round red cheeks. On the table, a framed photo of a red-brick hospital leaning against a crate. Behind, laid out like the attached stall photo and following the moment in the attached painted still: drizzle, blurred shoppers in hoods, other gazebos, wet grass. Real documentary photograph, not painted; grey daylight, real colour.",
+    "refs": ["u-stall.jpg", "orig-7.jpg", "portrait-JI.jpg"]
+  },
+  {
+    "id": "COURTS-b",
+    "prompt": "Vertical 9:16 photograph, tighter, from slightly to the side of the table: JIM, from the attached portrait, his face large and readable, shoulders hitched up in a big shrug, the framed photograph of a wooden judge's gavel propped against his chest with one hand, a sheepish lopsided grin. The handwritten luggage tag dangling from the frame reads \"THE COURTS – SLIGHTLY USED\". Grey flat cap, black jumper, worn dark jacket glistening with drizzle. The edge of the wet pasting table in the foreground. Background laid out from the attached stall photo, moment from the attached painted still: an English car-boot field in light rain, blurred gazebos, an umbrella, people browsing. Real documentary photograph, never painted; soft grey light, natural colour.",
+    "refs": ["u-stall.jpg", "orig-7.jpg", "portrait-JI.jpg"]
+  },
+  {
+    "id": "CAR-a",
+    "prompt": "Vertical 9:16 photograph, wide, standing at the edge of a muddy grass aisle at an English car-boot sale in drizzle: a very long black luxury saloon rolls slowly toward and past the camera, three-quarter front view, between rows of stalls. Its shape follows the attached car photo: tall upright grille in plain dark chrome, slim headlamps, a long smooth unadorned bonnet, a blank black front plate, rain beaded on glossy black paint, the tyres throwing up mud from deep ruts and puddles. On both sides, as in the moment of the attached painted still: pop-up gazebos, pasting tables of crockery and boxes, estate cars with boots open; shoppers in hoods and anoraks stopping mid-browse and turning to stare, one woman holding a teapot, a seller half-risen from a camping chair. Low grey sky, wet grass. Real documentary photograph, not painted; dull grey daylight, real colours.",
+    "refs": ["u-car.jpg", "orig-9.jpg"]
+  },
+  {
+    "id": "CAR-b",
+    "prompt": "Vertical 9:16 photograph, low angle from just behind a seller's pasting table, a row of old jugs and mugs blurred in the foreground: across the muddy field, the long black luxury saloon glides side-on through the stalls, its long glossy flank reflecting gazebos and grey sky, smooth bare bonnet, plain upright grille, tinted rear windows, mud splashed up the lower doors. Car shape from the attached car photo; moment from the attached painted still. Behind and around it, people in waterproofs and wellies frozen and turning their heads to watch it pass, a child pointing, gazebos in faded blue and white, open car boots, a line of wet trees. Drizzle in the air. Real documentary photograph, never painted; flat grey light, natural colour.",
+    "refs": ["u-car.jpg", "orig-9.jpg"]
+  },
+  {
+    "id": "ARRIVAL-a",
+    "prompt": "Vertical 9:16 photograph at a car-boot sale in an English field in drizzle. The rear door of the long black luxury saloon stands open on the left, its glossy wet panel and plain chrome trim as in the attached car photo. PHINEAS, from the attached cast image (the man on its left), heaves himself out onto the wet grass in the centre, head and chest filling the middle of the frame: very heavy, completely bald, jowly, small eyes, navy pinstripe three-piece suit, red tie, gold signet ring, black cane planted in the mud, chin raised in a smug look. A chauffeur in a dark uniform and peaked cap stands beside the door holding a big plain black umbrella over him. Just behind on the right, LARRY, from the same cast image (the man on its right), scurries after him, thin and stooped, big black-framed glasses, crumpled grey suit, lanyard, sweating, clutching a clipboard whose top sheet reads \"PURCHASES\". Moment and placement follow the attached painted still. Behind them, gazebos and shoppers turning to look, muddy grass. Real documentary photograph, not painted; grey drizzly daylight, real colours.",
+    "refs": ["u-car.jpg", "orig-10.jpg", "cast-PHLA.jpg"]
+  },
+  {
+    "id": "ARRIVAL-b",
+    "prompt": "Vertical 9:16 photograph, slightly low and from in front, a moment later: PHINEAS, from the attached cast image (left figure), has just stepped clear of the open rear door of the long black saloon and stands on the wet grass straightening his navy pinstripe jacket with both ringed hands, black cane hooked over his forearm, bald head shining with rain, small eyes surveying the stalls with contempt. A chauffeur in a peaked cap holds a large plain black umbrella over him from behind. LARRY, from the same cast image (right figure), hurries in at the right edge of the frame, thin and stooped in his crumpled grey suit, big black-framed glasses misted, sweat on his forehead, lanyard swinging, holding the clipboard up with its top sheet reading \"PURCHASES\". The car follows the attached car photo; the moment follows the attached painted still. Behind them, blurred gazebos, pasting tables, open car boots, mud. Real documentary photograph, never painted; overcast grey light, natural colour.",
+    "refs": ["u-car.jpg", "orig-10.jpg", "cast-PHLA.jpg"]
+  },
+  {
+    "id": "ALLOFIT-a",
+    "prompt": "Vertical 9:16 close photograph, two men side by side filling the frame from the chest up, both faces large and readable. On the left, PHINEAS from the attached cast image (its left figure): very heavy, bald, jowly, small hard eyes, navy pinstripe suit, red tie, turned toward Larry, his fat hand with a gold signet ring resting heavily on Larry's shoulder. On the right, LARRY from the same cast image (its right figure): thin, big black-framed glasses, thinning hair, crumpled grey suit and lanyard, sweat running down his temple, eyes wide, writing fast on a clipboard held up in front of him; its sheet is headed \"PURCHASES\" with a column of ticked lines. Composition follows the attached painted still. Behind them, softly blurred, Jim's wet pasting table under a gazebo laid out like the attached stall photo, crowded with framed pictures standing in rows. Fine drizzle. Real documentary photograph, not painted; grey daylight, real colours.",
+    "refs": ["u-stall.jpg", "orig-11.jpg", "cast-PHLA.jpg"]
+  },
+  {
+    "id": "ALLOFIT-b",
+    "prompt": "Vertical 9:16 photograph, even closer, over Phineas's shoulder: in the foreground left, the back of PHINEAS's bald head, one heavy jowl and his navy pinstripe shoulder, from the attached cast image (left figure); his thick hand with the gold signet ring gripping LARRY's shoulder in the centre of the frame. LARRY, from the same cast image (right figure), faces the camera, his anxious face large and sharp: big black-framed glasses, beads of sweat and rain on his forehead, thinning wet hair, crumpled grey suit, biro moving on the clipboard whose sheet reads \"PURCHASES\". Moment from the attached painted still. Behind Larry, out of focus, the stall from the attached layout photo: a pasting table of framed pictures under a dripping gazebo on wet grass. Real documentary photograph, never painted; soft grey drizzle light, natural colour.",
+    "refs": ["u-stall.jpg", "orig-11.jpg", "cast-PHLA.jpg"]
+  },
+  {
+    "id": "HOME-a",
+    "prompt": "Vertical 9:16 photograph inside a small cosy front room of an English terraced house on a rainy afternoon. FIONA, from the attached portrait, sits curled at one end of a worn fabric sofa, framed from the knees up, her face large and readable, still in her olive-green parka over a rust jumper, auburn hair damp and untidy, a mug of tea in one hand and her phone in the other, its glowing screen turned toward her and lighting her tired face from below. Her expression is flat and disbelieving. Room laid out like the attached living-room photo but English: painted walls, a sash window with net curtains streaked with rain, a radiator beneath it, cushions, a throw over the sofa arm, a coffee table with a candle and another mug, a bookcase, a lamp on. Moment from the attached painted still. Real documentary photograph, not painted; grey window light mixed with warm lamp light, real colours.",
+    "refs": ["u-home.jpg", "orig-12.jpg", "portrait-FI.jpg"]
+  },
+  {
+    "id": "HOME-b",
+    "prompt": "Vertical 9:16 photograph, closer, from beside the rain-streaked sash window looking in: FIONA, from the attached portrait, slumped low on a worn sofa, waist up, staring down at the lit phone in her hand, the back of the phone toward the camera and its pale glow on her face, a steaming mug of tea held against her chest. Olive-green parka unzipped, dark green scarf loose, auburn hair messy, eyes heavy, mouth set in a weary line. Rain trickles down the glass in the near foreground. Behind her, as laid out in the attached living-room photo and following the moment of the attached painted still: a small English terraced front room with mismatched cushions, a bookcase, a framed print on the wall, a warm table lamp. Real documentary photograph, never painted; cool grey daylight and a little warm lamp light, natural colour.",
+    "refs": ["u-home.jpg", "orig-12.jpg", "portrait-FI.jpg"]
+  },
+  {
+    "id": "PADDLE-a",
+    "prompt": "Vertical 9:16 photograph inside a white village marquee set up for an auction on a wet English day. LARRY, from the attached portrait, stands in the middle of the frame among rows of white folding chairs, waist up, face large and readable: thin, stooped, big black-framed glasses, thinning hair, crumpled grey suit, lanyard, a clipboard under his arm, sweating, wearily holding up a round white bidding paddle that reads \"29\". Behind him, a wooden board on an easel by a small lectern with \"£150,000\" in big white figures. Well-dressed bidders seated nearby, some holding glasses of fizz. The tent follows the attached marquee photo: white canvas roof and poles, festoon lights, coconut matting over grass, rain pattering on the canvas and a grey field glimpsed through an open side. Composition follows the attached painted still. Real documentary photograph, not painted; soft diffused white tent light, real colours.",
+    "refs": ["u-tent.jpg", "orig-15.1.jpg", "portrait-LA.jpg"]
+  },
+  {
+    "id": "PADDLE-b",
+    "prompt": "Vertical 9:16 photograph from the aisle at the side of the rows of folding chairs, slightly low: LARRY, from the attached portrait, seated on a white folding chair in the near middle ground, turned three-quarters to the camera, arm raised high with the round white paddle reading \"29\", his face sweaty and resigned behind big black-framed glasses, crumpled grey suit, lanyard. Beyond him the white marquee runs back to a small lectern and an easel board reading \"£150,000\". Other bidders in rows, tweed and waxed jackets, heads turned toward the front. Tent layout from the attached marquee photo; moment from the attached painted still: white canvas, festoon bulbs, matting, rain beading on the side panels. Real documentary photograph, never painted; soft grey-white tent light, natural colour.",
+    "refs": ["u-tent.jpg", "orig-15.1.jpg", "portrait-LA.jpg"]
+  },
+  {
+    "id": "LIMIT-a",
+    "prompt": "Vertical 9:16 photograph from the front of a white village auction marquee, looking out over the audience. At the right edge of the frame, the auctioneer stands at a small wooden lectern, turned three-quarters toward the audience on the left so the near side of his masked face is toward the camera, gloved hand raising a wooden gavel, calmly shaking his head. He wears a navy knitted balaclava with a white ring round the face and a red triangle over his own left eye. The balaclava exactly as in the attached image: no holes, no skin, gloves. Tweed jacket over a navy roll-neck that runs up into the mask, black gloves. In the front row, seated on white folding chairs, PHINEAS (left) and LARRY (right) from the attached cast image, faces large and readable: Phineas very heavy, bald and jowly in his navy pinstripe suit and red tie, red-faced and outraged; Larry thin and stooped in his crumpled grey suit and big black-framed glasses, paddle limp in his lap. Behind them, rows of ordinary villagers in waxed jackets, fleeces and anoraks, every one holding up a round white paddle reading \"£50\". White canvas roof, festoon lights, rain on the canvas, as laid out in the attached marquee photo. Real documentary photograph, not painted; soft diffused tent light, real colours.",
+    "refs": ["u-tent.jpg", "mask-reference.jpg", "cast-PHLA.jpg"]
+  },
+  {
+    "id": "LIMIT-b",
+    "prompt": "Vertical 9:16 photograph, tighter, the moment the room responds. In the upper right foreground, the auctioneer from the shoulders up, turned toward the audience on the left with the near side of his masked face to the camera, gloved hand holding a gavel raised beside his head, a slow calm shake of the head. Navy knitted balaclava with a white ring round the face and a red triangle over his own left eye. The balaclava exactly as in the attached image: no holes, no skin, gloves. Tweed jacket, navy roll-neck rising into the mask, black gloves. In the middle ground, front row on white folding chairs, PHINEAS (left) and LARRY (right) from the attached cast image, faces readable: Phineas, bald, jowly and enormous in navy pinstripe, gripping his black cane, small eyes wide with fury; Larry in crumpled grey with big black-framed glasses, sweating, glancing back over his shoulder. Behind them a forest of raised arms: every ordinary person in the tent, young and old, in anoraks and wellies, holding up a round white paddle reading \"£50\". White marquee canvas and festoon bulbs laid out like the attached marquee photo, grey rain light through the open side. Real documentary photograph, never painted; diffused white light, natural colour.",
+    "refs": ["u-tent.jpg", "mask-reference.jpg", "cast-PHLA.jpg"]
+  }
+]

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/COURTS-b.jpg",
+ "made": "2026-11-21T21:12:40.878Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph, eye level, JIM, from the attached portrait, behind his pasting table under a white gazebo, waist up, holding up a wooden picture frame in one hand and giving a shrug with the other palm up, mouth pulled down in a 'what can you do' face. The frame holds a real photograph of a polished wooden judge's gavel resting on its round block. A small handwritten luggage tag on string hangs from it, reading \"THE COURTS – SLIGHTLY USED\". Grey flat cap, black jumper, dark worn jacket, round red cheeks. On the table, a framed photo of a red-brick hospital leaning against a crate. Behind, laid out like the attached stall photo and following the moment in the attached painted still: drizzle, blurred shoppers in hoods, other gazebos, wet grass. Real documentary photograph, not painted; grey daylight, real colour.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/u-stall.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-stall.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/orig-7.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/portrait-JI.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "42cdd592-6137-4cff-b7cd-213b601b76ee"
+}

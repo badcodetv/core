@@ -32,6 +32,7 @@ design them with an English region, never just "British".
 - **Larry:** his clerk, about 45, thin, big black glasses, a crumpled suit and lanyard, sweating, a PURCHASES clipboard.
 - **Brian:** the candidate who loses (seen only as a name on a phone; maybe a leaflet).
 - (Robert Lane, from the original's last still: not used unless Jack asks.)
+- **Faces:** FI-a, JI-a, PH-a, LA-a in `stills/r1/` (round 1 references). The car must never have a Rolls-Royce-shaped grille (CAR-b did): a wide, low, horizontal black mesh grille, no badge.
 
 ## Story-only rules
 - No real politician, party, donor or broadcaster: invented names only (Phineas, Brian). No real party colours or logos.

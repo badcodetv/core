@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/ALLOFIT-b.jpg",
+ "made": "2026-11-21T21:16:57.850Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close photograph, two men side by side filling the frame from the chest up, both faces large and readable. On the left, PHINEAS from the attached cast image (its left figure): very heavy, bald, jowly, small hard eyes, navy pinstripe suit, red tie, turned toward Larry, his fat hand with a gold signet ring resting heavily on Larry's shoulder. On the right, LARRY from the same cast image (its right figure): thin, big black-framed glasses, thinning hair, crumpled grey suit and lanyard, sweat running down his temple, eyes wide, writing fast on a clipboard held up in front of him; its sheet is headed \"PURCHASES\" with a column of ticked lines. Composition follows the attached painted still. Behind them, softly blurred, Jim's wet pasting table under a gazebo laid out like the attached stall photo, crowded with framed pictures standing in rows. Fine drizzle. Real documentary photograph, not painted; grey daylight, real colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/u-stall.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-stall.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/orig-11.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/cast-PHLA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "7b60a784-5421-471e-aaa9-b8977ac936fc"
+}

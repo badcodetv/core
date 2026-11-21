@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/LA-b.jpg",
+ "made": "2026-11-21T21:07:16.156Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of LARRY, an English clerk of about 45, his face large and sharp, looking anxiously at the camera. From the attached character sheet: thin and stooped, a long narrow face, big heavy black-framed glasses, thinning brown hair plastered in wet strands across his forehead, drooping worried eyes, beads of sweat mixing with rain on his brow and upper lip. A crumpled grey suit, pale blue shirt, loosened dark red tie, a lanyard with a plain blank card, a clipboard clutched to his chest showing only its back. An ordinary invented face, nobody real. Behind him, blurred, the long black luxury saloon from the attached car photo parked on wet grass, smooth bare bonnet, plain grille, blank plate; dripping trees. Real photograph, not a painting; grey overcast light, honest colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/sheet-Larry.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/sheet-Larry.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-car.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "61d00202-b0c8-4c45-8b35-5e890035f85c"
+}

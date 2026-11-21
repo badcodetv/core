@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/HOSPITAL-b.jpg",
+ "made": "2026-11-21T21:11:18.368Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph from the point of view of a shopper standing at the stall: JIM, from the attached portrait, behind his wallpaper pasting table, framed from the waist up, holding up a wooden picture frame at chest height toward the camera and grinning straight into the lens. Grey flat cap, black jumper, dark worn jacket, round red-cheeked face. In the frame, a real photograph of a large red-brick hospital building. Tied to the corner of the frame with string, a small handwritten brown luggage tag reading \"NHS £40\". On the table in front, a few more framed pictures standing face-in against a cardboard crate. Behind him, as laid out in the attached stall photo and following the moment of the attached painted still: a white gazebo canopy dripping at the edge, other stalls and shoppers in hoods softly blurred, wet grass. Real documentary photograph, not painted; grey drizzle light, real colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/u-stall.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-stall.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/orig-5.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/portrait-JI.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c1aa48ed-e54e-48e4-9391-25c0bec48850"
+}

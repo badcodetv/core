@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/PH-b.jpg",
+ "made": "2026-11-21T21:06:20.763Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of PHINEAS, an English man of about 65, very heavy, his face large and sharp, looking down his nose at the camera with a smug half-smile. From the attached character sheet: completely bald shining head, heavy jowls and double chin, small narrowed eyes under thick dark brows, fleshy nose. A three-piece navy pinstripe suit with the waistcoat buttoned tight over his stomach, crisp white shirt, red silk tie, a white pocket square; one hand resting on the silver-tipped head of a black cane near his chest, a gold signet ring on his finger. An ordinary invented face, nobody real. Behind him, soft focus, the front of a long gleaming black luxury saloon on wet grass, as laid out in the attached car photo, its bonnet smooth and bare, its grille plain dark chrome, the plate a blank black panel; dripping English trees and grey sky. Fine drizzle. Real photograph, not a painting; flat grey light, real colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/sheet-Phineas.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/sheet-Phineas.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-car.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "5e46aa4b-d596-42b2-b2ad-7c0f9f1f4d76"
+}

@@ -31,7 +31,9 @@
    "what": "The cap: fifty quid, same as everyone"
   }
  ],
- "boards": {},
+ "boards": {
+  "stills": "https://claude.ai/artifact/URMdM8DmjjEc2gRGfssj7f"
+ },
  "flow_project": "3e35b83e-2dc8-440b-acc2-45d246df363f",
  "video": {
   "aspect": "9:16",

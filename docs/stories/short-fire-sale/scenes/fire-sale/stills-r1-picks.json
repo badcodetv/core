@@ -1,0 +1,300 @@
+{
+ "title": "Fire Sale Stills",
+ "eyebrow": "BadCode Shorts \u00b7 Fire Sale \u00b7 stills round 1",
+ "heading": "Fire Sale: stills",
+ "intro": "Your 2025 painted Fire Sale, remade real from Unsplash layouts. Pick one per row, or leave a note.",
+ "sections": [
+  {
+   "h": "Cast",
+   "lede": "Real faces built from your painted character sheets. Invented: nobody real.",
+   "groups": [
+    {
+     "slot": "FI",
+     "title": "Fiona",
+     "line": "The weary bargain hunter.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/FI-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/FI-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "JI",
+     "title": "Jim",
+     "line": "The wheeler-dealer.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/JI-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/JI-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "PH",
+     "title": "Phineas",
+     "line": "The buyer.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/PH-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/PH-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "LA",
+     "title": "Larry",
+     "line": "His clerk.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/LA-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/LA-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The short",
+   "lede": "Claude's picks: all a, except ARRIVAL b.",
+   "groups": [
+    {
+     "slot": "CARBOOT",
+     "title": "1. The car boot",
+     "line": "Fiona trudges through the drizzle.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/CARBOOT-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/CARBOOT-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "HOSPITAL",
+     "title": "2. Hospitals",
+     "line": "\"Hospitals, love. Forty quid.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/HOSPITAL-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/HOSPITAL-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "COURTS",
+     "title": "3. The courts",
+     "line": "\"The courts. Slightly used.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/COURTS-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/COURTS-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CAR",
+     "title": "4. The car",
+     "line": "A long black car rolls across the mud.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/CAR-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/CAR-b.jpg",
+       "label": "b",
+       "warn": "b has a Rolls-Royce-shaped grille (a real brand): use a."
+      }
+     ]
+    },
+    {
+     "slot": "ARRIVAL",
+     "title": "5. Phineas arrives",
+     "line": "Under the chauffeur's umbrella, Larry behind.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/ARRIVAL-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/ARRIVAL-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "ALLOFIT",
+     "title": "6. All of it",
+     "line": "\"All of it.\" Ring on Larry's shoulder.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/ALLOFIT-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/ALLOFIT-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "HOME",
+     "title": "7. Home",
+     "line": "Her phone: \"Phineas narrowly defeats Brian in the polls.\" (text added in the edit)",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/HOME-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/HOME-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "PADDLE",
+     "title": "8. The auction",
+     "line": "Larry raises paddle 29: \u00a3150,000.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/PADDLE-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/PADDLE-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "AUCTIONEER",
+     "title": "9. The limit",
+     "line": "BadCode: \"Sorry, sir. Fifty quid's the limit now. Same as everyone.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/AUCTIONEER-a.jpg",
+       "label": "a",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/AUCTIONEER-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "LIMIT",
+     "title": "10. Same as everyone",
+     "line": "Phineas and Larry in the front row; every paddle behind them says \u00a350.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/LIMIT-a.jpg",
+       "label": "a",
+       "warn": "BadCode is cut off at the edge here; his face is in shot 9."
+      },
+      {
+       "id": "b",
+       "src": "r1/LIMIT-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

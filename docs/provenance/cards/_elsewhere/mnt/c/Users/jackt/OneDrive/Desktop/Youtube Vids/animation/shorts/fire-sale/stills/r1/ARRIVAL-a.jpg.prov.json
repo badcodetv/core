@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/ARRIVAL-a.jpg",
+ "made": "2026-11-21T21:15:28.802Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph at a car-boot sale in an English field in drizzle. The rear door of a long black luxury saloon stands open on the left: an invented car, no badge, no ornament, glossy wet black paint. PHINEAS, from the attached cast image (the man on its left), heaves himself out onto the wet grass in the centre, head and chest filling the middle of the frame: very heavy, completely bald, jowly, small eyes, navy pinstripe three-piece suit, red tie, gold signet ring, black cane planted in the mud, chin raised in a smug look. A chauffeur in a dark uniform and peaked cap stands beside the door holding a big plain black umbrella over him. Just behind on the right, LARRY, from the same cast image (the man on its right), scurries after him, thin and stooped, big black-framed glasses, crumpled grey suit, lanyard, sweating, clutching a clipboard whose top sheet reads \"PURCHASES\". Moment and placement follow the attached painted still. Behind them, gazebos and shoppers turning to look, muddy grass, laid out like the attached car-boot photo. Real documentary photograph, not painted; grey drizzly daylight, real colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/u-carboot2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-carboot2.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/orig-10.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/cast-PHLA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b6965387-11db-4738-b4be-df8c6eabb7a0"
+}

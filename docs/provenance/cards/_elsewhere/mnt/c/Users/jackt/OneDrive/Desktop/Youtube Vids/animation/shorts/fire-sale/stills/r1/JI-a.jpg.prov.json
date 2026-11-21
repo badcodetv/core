@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/JI-a.jpg",
+ "made": "2026-11-21T21:05:03.617Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of JIM, an English market wheeler-dealer of about 55, face large and sharp in the upper half of the frame, grinning straight at the camera with a salesman's wide confident grin. Use the attached character sheet only for his face and build: round red-cheeked face, stubbly jaw, bright amused eyes, stocky. Dress him like this: a grey wool flat cap, a black crew-neck jumper, a dark worn jacket with frayed cuffs, wet across the shoulders. An ordinary invented face, nobody real. Behind him, softly blurred, the flea-market layout of the attached photo moved to a wet English car-boot field: a large striped umbrella over a folding chair, a pasting table crowded with china and glassware, shoppers in anoraks, grey sky, wet grass instead of cobbles. Light drizzle. Real photograph, not a painting; overcast grey light, honest colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/sheet-Jim.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/sheet-Jim.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-stall.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0503d641-a188-420e-8149-8190dca42901"
+}

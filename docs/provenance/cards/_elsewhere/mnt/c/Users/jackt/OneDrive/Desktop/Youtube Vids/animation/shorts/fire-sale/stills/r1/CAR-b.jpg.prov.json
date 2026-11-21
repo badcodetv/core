@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/CAR-b.jpg",
+ "made": "2026-11-21T21:14:05.446Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph, wide, standing at the edge of a muddy grass aisle at an English car-boot sale in drizzle: a very long black luxury saloon rolls slowly toward and past the camera, three-quarter front view, between rows of stalls. An invented car, no real make: a wide, low, horizontal black mesh grille, slim headlamps, a long smooth bonnet with no ornament and no badge anywhere, a blank black front plate, rain beaded on glossy black paint, the tyres throwing up mud from deep ruts and puddles. On both sides, as in the moment of the attached painted still and laid out like the attached car-boot photo: pop-up gazebos, pasting tables of crockery and boxes, estate cars with boots open; shoppers in hoods and anoraks stopping mid-browse and turning to stare, one woman holding a teapot, a seller half-risen from a camping chair. Low grey sky, wet grass. Real documentary photograph, not painted; dull grey daylight, real colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/u-carboot2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-carboot2.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/orig-9.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "3b940318-0b4c-461a-9c36-576a253b3e64"
+}

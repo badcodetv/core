@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/CARBOOT-b.jpg",
+ "made": "2026-11-21T21:09:46.627Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph, eye level, FIONA walking toward the camera down a muddy grass aisle between car-boot stalls, framed from the knees up, her face large and readable, from the attached portrait. Hands shoved in the pockets of her olive-green parka, hood half up over her untidy auburn hair, dark green scarf, backpack strap on one shoulder, a weary unimpressed look, eyes sliding past the stalls. The moment and composition follow the attached painted still: her in the centre, stalls on both sides. The place follows the attached car-boot photo as layout, moved to an English field in drizzle: square pop-up gazebos in faded blue and white, wallpaper pasting tables with old crockery, a beige computer monitor and a jug, open hatchback boots with boxes of bric-a-brac, clear plastic sheeting over goods, sellers in fleeces on camping chairs, a couple haggling over a teapot behind her. Trampled wet grass and brown mud. Real documentary photograph, not painted; grey drizzly daylight, real colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/u-carboot.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-carboot.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/orig-1.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/portrait-FI.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "11f52470-ef8e-499c-bda6-9e8c3da8fc63"
+}

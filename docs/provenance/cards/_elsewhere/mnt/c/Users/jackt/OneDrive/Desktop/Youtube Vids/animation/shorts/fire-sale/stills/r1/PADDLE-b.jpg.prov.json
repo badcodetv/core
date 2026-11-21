@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/PADDLE-b.jpg",
+ "made": "2026-11-21T21:20:06.081Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph inside a white village marquee set up for an auction on a wet English day. LARRY, from the attached portrait, stands in the middle of the frame among rows of white folding chairs, waist up, face large and readable: thin, stooped, big black-framed glasses, thinning hair, crumpled grey suit, lanyard, a clipboard under his arm, sweating, wearily holding up a round white bidding paddle that reads \"29\". Behind him, a wooden board on an easel by a small lectern with \"£150,000\" in big white figures. Well-dressed bidders seated nearby, some holding glasses of fizz. The tent follows the attached marquee photo: white canvas roof and poles, festoon lights, coconut matting over grass, rain pattering on the canvas and a grey field glimpsed through an open side. Composition follows the attached painted still. Real documentary photograph, not painted; soft diffused white tent light, real colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/u-tent.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-tent.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/orig-15.1.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/portrait-LA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "1d8bd6e6-9d63-46eb-9b31-eb1bf50140fb"
+}

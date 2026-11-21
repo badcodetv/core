@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/FI-b.jpg",
+ "made": "2026-11-21T21:03:56.557Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of FIONA, an English woman of about 30, her face large, sharp and filling the upper half of the frame, looking just past the camera. Take who she is from the attached character sheet: long untidy auburn hair with wet strands stuck to her cheek, pale skin with a few freckles, tired eyes with heavy lids, a flat unimpressed mouth. She wears an olive-green parka with the hood down, a dark green knitted scarf bunched at her throat, and a dark green backpack strap over one shoulder. An ordinary invented face, nobody real. Behind her, soft and out of focus, the car-boot sale from the attached photo used for layout only, moved to an English field in drizzle: square pop-up gazebos, a pasting table with crockery under clear plastic sheeting, an open hatchback boot, people in waterproofs, wet trampled grass. Fine drizzle beads on her parka and hair. The sheet is a painting; this is a real photograph. Grey overcast daylight, real muted colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/sheet-Fiona.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/sheet-Fiona.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-carboot.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "8bcf1ee5-05fc-4e87-aed0-ae989981917d"
+}

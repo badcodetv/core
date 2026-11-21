@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/HOME-b.jpg",
+ "made": "2026-11-21T21:18:30.135Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photograph inside a small cosy front room of an English terraced house on a rainy afternoon. FIONA, from the attached portrait, sits curled at one end of a worn fabric sofa, framed from the knees up, her face large and readable, still in her olive-green parka over a rust jumper, auburn hair damp and untidy, a mug of tea in one hand and her phone in the other, its glowing screen turned toward her and lighting her tired face from below. Her expression is flat and disbelieving. Room laid out like the attached living-room photo but English: painted walls, a sash window with net curtains streaked with rain, a radiator beneath it, cushions, a throw over the sofa arm, a coffee table with a candle and another mug, a bookcase, a lamp on. Moment from the attached painted still. Real documentary photograph, not painted; grey window light mixed with warm lamp light, real colours.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/u-home.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/u-home.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/orig-12.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/portrait-FI.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "51c62684-4e91-4dc8-9a7b-b211a4ee4674"
+}
