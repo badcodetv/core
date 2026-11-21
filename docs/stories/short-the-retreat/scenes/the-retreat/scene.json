@@ -1,0 +1,12 @@
+{
+ "story": "short-the-retreat",
+ "scene": "the-retreat",
+ "title": "The Retreat",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat",
+ "beats": [
+  {"id": "retreat", "t": "0-13", "what": "The retreat: the bro trades in meditation, the paid gong, the gift shop"},
+  {"id": "dinner", "t": "13-21", "what": "Sunday dinner: enlightened for ten seconds, then the potato"},
+  {"id": "middle", "t": "21-25", "what": "Mum gives Nan the potato; the Ram Dass line"}
+ ],
+ "boards": {}
+}
