@@ -35,6 +35,8 @@ tannoy call. Music: not decided; any Suno track is music and sound only.
 
 ## Story-only rules
 - Jack and Kai write the jokes; Claude drafts only when asked, marked as Claude's.
+- The tannoy must sound English (Jack: the first one sounded American): design voices with an English region, never just
+  "British". Never use a real company's recording (Primark's, the Post Office's): only CC0 or our own.
 - Never write "post office" in a Flow prompt: it pulls in the real Post Office's branding. Say "a public counter hall".
 - No children in this short (Jack, 2026-11-21: "no kids").
 - The data centre is a thing, not a villain person: no real company, no logo, no real politician.

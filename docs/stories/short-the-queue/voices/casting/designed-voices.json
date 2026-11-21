@@ -28,5 +28,25 @@
   "desc": "A man of about 60 from the south of England, with a dry, deadpan, measured voice, who speaks plainly.",
   "gender": "male",
   "id": "voice_33yqhuss0jdw"
+ },
+ "tannoy-c": {
+  "desc": "An English woman of about 40 from Surrey, with a crisp southern English accent, the calm recorded voice of a shop's queue system, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_mh4951jq1l6h"
+ },
+ "tannoy-d": {
+  "desc": "An English woman of about 35 from London, with a standard southern English accent and a bright, neutral tone, a recorded store announcement voice, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_x0qkyxygdnzh"
+ },
+ "tannoy-e": {
+  "desc": "An English woman of about 45 from Kent, with a clear, received pronunciation accent, an automated public announcement voice, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_rsb98egqxgxf"
+ },
+ "tannoy-f": {
+  "desc": "An English woman of about 30 from the Midlands, with a soft English accent, a recorded queue announcement voice, who speaks plainly.",
+  "gender": "female",
+  "id": "voice_aez7kc723kc0"
  }
 }

@@ -1,9 +1,78 @@
 {
  "title": "The Queue Voices",
  "eyebrow": "BadCode Shorts \u00b7 The Queue",
- "heading": "Voices, round 1",
- "intro": "Two designed voices per role, plain reads. I've picked and carried on; overrule here.",
+ "heading": "Voices, round 2: an English tannoy",
+ "intro": "Your note: the tannoy sounded American, not English. Four new designed voices, each tied to an English region (Surrey, London, Kent, the Midlands); I can't judge an accent by ear, so this pick is yours. Also here: the one free-to-use real recording (it says 'number one'). The Primark recording is Primark's own, so it's off limits.",
  "sections": [
+  {
+   "h": "Round 2: the tannoy",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "tannoy2",
+     "title": "The tannoy, English",
+     "line": "tannoy-c: An English woman of about 40 from Surrey, with a crisp southern English accent, the calm recorded voice of a shop's queue system, who speaks plainly. / tannoy-d: An English woman of about 35 from London, with a standard southern English accent and a bright, neutral tone, a recorded store announcement voice, who speaks plainly. / tannoy-e: An English woman of about 45 from Kent, with a clear, received pronunciation accent, an automated public announcement voice, who speaks plainly. / tannoy-f: An English woman of about 30 from the Midlands, with a soft English accent, a recorded queue announcement voice, who speaks plainly.",
+     "kind": "audio",
+     "round": 2,
+     "opts": [
+      {
+       "id": "tannoy-c",
+       "src": "a/01-tannoy-three--tannoy-c.mp3",
+       "label": "tannoy-c: tannoy-three",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-c",
+       "src": "a/04-tannoy-households--tannoy-c.mp3",
+       "label": "tannoy-c: tannoy-households",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-d",
+       "src": "a/01-tannoy-three--tannoy-d.mp3",
+       "label": "tannoy-d: tannoy-three",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-d",
+       "src": "a/04-tannoy-households--tannoy-d.mp3",
+       "label": "tannoy-d: tannoy-households",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-e",
+       "src": "a/01-tannoy-three--tannoy-e.mp3",
+       "label": "tannoy-e: tannoy-three",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-e",
+       "src": "a/04-tannoy-households--tannoy-e.mp3",
+       "label": "tannoy-e: tannoy-households",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-f",
+       "src": "a/01-tannoy-three--tannoy-f.mp3",
+       "label": "tannoy-f: tannoy-three",
+       "warn": ""
+      },
+      {
+       "id": "tannoy-f",
+       "src": "a/04-tannoy-households--tannoy-f.mp3",
+       "label": "tannoy-f: tannoy-households",
+       "warn": ""
+      },
+      {
+       "id": "real-cc0",
+       "src": "a/real-cc0-cashier-number-one.mp3",
+       "label": "the real recording (CC0, Freesound, nigelcoop): says 'Cashier number ONE, please'",
+       "warn": "says one, not three"
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "Voices",
    "lede": "",
@@ -38,7 +107,8 @@
        "label": "tannoy-b: tannoy-households",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "voice-pensioner",
@@ -58,7 +128,8 @@
        "label": "pensioner-b: pensioner-queue \u2713 my pick",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     },
     {
      "slot": "voice-cashier",
@@ -78,9 +149,11 @@
        "label": "cashier-b: cashier-wrong",
        "warn": ""
       }
-     ]
+     ],
+     "round": 1
     }
    ]
   }
- ]
+ ],
+ "round": 2
 }
