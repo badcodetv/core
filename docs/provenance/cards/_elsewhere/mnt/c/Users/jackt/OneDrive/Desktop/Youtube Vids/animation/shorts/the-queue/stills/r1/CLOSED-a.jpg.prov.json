@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/CLOSED-a.jpg",
+ "made": "2026-11-21T14:59:30.447Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 shot over the top of the machine toward counter window three: an old wooden counter hall counter like the one in the layout photo, turned wooden balusters along the ledge, a carved column at one side, a glass screen, the word POWER in plain block letters above. Behind the glass, the cashier from his portrait slides a small plain standing sign across the ledge to sit in front of the machine; the sign reads POSITION CLOSED in plain block letters. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy knitted balaclava, white ring round the face, small red triangle over his own left eye; navy cardigan over a white shirt buttoned to the collar, blank plain name badge, black gloves. In the foreground, the machine from its portrait (black server cabinet bank with a perforated mesh front and tiny green and blue lights) with its small front screen in view, showing DISCOUNT APPLIED in plain block letters. Those words and POWER are the only words in the picture. Weekday daylight and strip light, a little drab, real-looking. Every sign is plain: the only words anywhere are the ones named here (POWER over each window, and any sign named above); no other words, logos, emblems or red company branding. Faces and clothes come from the cast sheet, left to right: the cashier, the machine; each keeps exactly the face and clothes from the sheet.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/cast-CM.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "dace73bb-b4f3-48c5-8c39-cf82dee35616"
+}

@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r1/chime.wav",
+ "made": "2026-11-21T15:35:43+00:00",
+ "by": "claude",
+ "kind": "sfx",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/queue_cut.py (two sine tones)",
+ "why": "the tannoy chime, made in ffmpeg"
+}

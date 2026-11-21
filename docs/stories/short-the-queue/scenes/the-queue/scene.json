@@ -26,7 +26,9 @@
   }
  ],
  "boards": {
-  "stills": "https://claude.ai/artifact/DJbQNvfGKHa5hMDHQXmvAY"
+  "stills": "https://claude.ai/artifact/DJbQNvfGKHa5hMDHQXmvAY",
+  "timeline": "https://claude.ai/artifact/GP42gfZhpUKiPHdCbizQsp",
+  "voices": "https://claude.ai/artifact/23LrpLyR1MAaAW1gGu4GXD"
  },
  "flow_project": "c0e7c075-1dc4-4d65-bd20-84860de322f8",
  "video": {
@@ -34,5 +36,24 @@
   "model": "Omni 1.2 Flash",
   "mode": "Frames",
   "duration": 8
+ },
+ "still_picks": {
+  "C": "r2/C-karen-a",
+  "K": "K-a",
+  "P": "P-a",
+  "L": "L-b",
+  "M": "M-b",
+  "QUEUE": "QUEUE-b",
+  "BARGE": "BARGE-a",
+  "CASHIER": "r2/CASHIER-b",
+  "CLOSED": "r2/CLOSED-a",
+  "KETTLE": "r2/KETTLE-a",
+  "PHONE": "PHONE-b",
+  "SCREEN": "SCREEN-a"
+ },
+ "cut": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r1/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r1/preview.mp4",
+  "script": "scripts/shorts/queue_logo.py ... --cx 554 --cy 968 --r 92 --cover 62 --zoom 1.7 --in 0.3 --dur 3.4; scripts/shorts/queue_cut.py --round 1"
  }
 }

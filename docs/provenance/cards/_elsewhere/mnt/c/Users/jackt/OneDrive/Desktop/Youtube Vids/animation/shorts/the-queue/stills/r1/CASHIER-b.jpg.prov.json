@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/CASHIER-b.jpg",
+ "made": "2026-11-21T14:58:05.523Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 tighter shot through the glass of counter window three: the cashier from his portrait, head and shoulders, behind an old wooden counter like the one in the layout photo, with turned wooden balusters along the ledge and a carved wooden column at the side. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy knitted balaclava, white ring round the face, small red triangle over his own left eye; navy cardigan, white shirt buttoned to the collar, blank plain name badge, black gloved fingers drumming once on the ledge. His head is lowered then raised, the slow unimpressed once-over of something very tall in front of him. The lower foreground holds the dark mesh top of the machine from its portrait, soft, with a few blinking green and blue lights and a fan grille. Above him, POWER in plain block letters on the window header, the only word in view. Weekday daylight and fluorescent light, slightly drab, real-looking. Every sign is plain: the only words anywhere are the ones named here (POWER over each window, and any sign named above); no other words, logos, emblems or red company branding.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/mask-reference.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/portrait-C.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "fd142f6e-f078-4ebf-b6bf-f2ac87625580"
+}

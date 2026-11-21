@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q07a-Q07.mp4",
+ "made": "2026-11-21T15:29:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, no pan. Almost a still frame. A hand in a grey sleeve holds a black phone upright in the centre of frame, the white charging cable hanging down from its base, the blurred hall behind it. The hand barely moves, the slightest natural tremor. On the black screen, the thin white ring in the middle slowly grows brighter over the whole eight seconds, from a soft grey-white to a clean, bright white with a faint glow, staying exactly the same size, shape and position. The rest of the screen stays pure black. The blurred background stays soft and still. Same light throughout.\nQuiet, natural realism, shallow depth of field.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q07.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q07.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-queue/scenes/the-queue",
+  "key": "Q07a",
+  "frame": 13,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T15:28:21.753Z"
+ }
+}

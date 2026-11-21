@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/cut/r1/logo-phone.mp4",
+ "made": "2026-11-21T15:35:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/shorts/queue_logo.py --cx 554 --cy 968 --r 92 --cover 62 --zoom 1.7 --in 0.3 --dur 3.4",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q07b-Q07.mp4",
+ "why": "the phone-charging logo ending (Jack): the official stacked logo revealed on the phone"
+}

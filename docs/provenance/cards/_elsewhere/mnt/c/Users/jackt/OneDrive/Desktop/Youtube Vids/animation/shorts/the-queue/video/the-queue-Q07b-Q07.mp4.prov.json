@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q07b-Q07.mp4",
+ "made": "2026-11-21T15:29:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, no pan. Almost a still frame. A hand in a grey sleeve holds a black phone upright in the centre of frame, white cable hanging from its base, the hall a soft blur behind. For the first two seconds nothing changes. Then the thin white ring in the middle of the black screen begins to brighten, gently and evenly, until by the end it is a crisp, luminous white ring with a faint soft glow around it, the same size and in the same place. The rest of the screen remains pure black. The hand stays almost perfectly still, the thumb shifting a millimetre at most. The blurred background stays soft. Same light throughout.\nQuiet, natural realism, shallow depth of field.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q07.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q07.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-queue/scenes/the-queue",
+  "key": "Q07b",
+  "frame": 14,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T15:28:27.537Z"
+ }
+}

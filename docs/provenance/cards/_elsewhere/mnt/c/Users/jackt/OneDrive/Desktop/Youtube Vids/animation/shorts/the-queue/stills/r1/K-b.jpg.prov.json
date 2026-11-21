@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/K-b.jpg",
+ "made": "2026-11-21T14:44:10.998Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close portrait of the woman with the kettle, a Black British woman of about 42 with short natural hair, in a mustard raincoat over a grey jumper, seen slightly from her left side in three-quarter view, glancing down at the white electric kettle she holds by its handle, the coiled cord in her other hand, a small sigh on her face. Her face is large, sharp and well lit by window light from one side. Behind her the queue hall from the layout photo, blurred: chrome posts, navy belt lanes, tall windows and ceiling strip lights of a British post office counter hall. Weekday daylight and fluorescent light, a little drab, real-looking, nothing polished.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "2b8e5db6-bc79-4479-8f92-01d1229b032e"
+}

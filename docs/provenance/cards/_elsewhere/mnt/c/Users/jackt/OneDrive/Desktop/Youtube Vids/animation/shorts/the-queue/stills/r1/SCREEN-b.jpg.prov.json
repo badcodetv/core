@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/SCREEN-b.jpg",
+ "made": "2026-11-21T15:06:51.148Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close-up looking down over a shoulder in a grey hoodie at a phone held flat in a young man's palm, a white charging cable plugged into it and trailing away. The screen fills the middle of the frame, square-on and sharp: plain black and bare, with a single thin plain white ring in the centre, a simple charging ring and nothing more. Around the phone, out of focus, the tiled floor and soft window light of the hall from the reference photo. Weekday daylight and strip light, slightly drab, real-looking. Every sign is plain: the only words anywhere are the ones named here (POWER over each window, and any sign named above); no other words, logos, emblems or red company branding.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b3a9d958-c74b-4c7b-a43a-3c061d9d4f66"
+}

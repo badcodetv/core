@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/PHONE-a.jpg",
+ "made": "2026-11-21T15:04:13.819Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 shot at the back of the queue in the long hall laid out like the layout photo: chrome posts with navy belts in lanes, tall windows, ceiling strip lights, a plain public counter hall. The machine from its portrait (a van-sized data centre on wheels, black server cabinets with a perforated mesh front, rows of tiny green and blue lights, cooling fans on the side, thick cables, heavy castors) has been parked at the very end of the line. Beside it, the lad from his portrait (white lad of about 19, ginger buzz cut, grey hoodie) crouches slightly and pushes his charging cable into a plain socket on the machine's side panel, his phone in his other hand, face sharp in three-quarter view with a sly little grin. Weekday daylight and strip light, a little drab, real-looking, no lettering anywhere. Every sign is plain: the only words anywhere are the ones named here (POWER over each window, and any sign named above); no other words, logos, emblems or red company branding.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/portrait-L.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/portrait-M.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "452de6a3-3866-409c-8b4b-f0e4bf214f91"
+}

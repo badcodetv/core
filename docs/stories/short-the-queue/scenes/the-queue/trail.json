@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-21T15:36:28+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/GP42gfZhpUKiPHdCbizQsp",
+  "what": "rough cut 1: 24.7 s, the cashier queue, the phone-charging logo",
+  "rebuild": "python3 scripts/shorts/queue_logo.py <Q07b> <out> --cx 554 --cy 968 --r 92 --cover 62 --zoom 1.7 --in 0.3 --dur 3.4 && python3 scripts/shorts/queue_cut.py --round 1 && python3 scripts/scene/build-timeline.py docs/stories/short-the-queue/scenes/the-queue <out-dir>"
+ }
+]

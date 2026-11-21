@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q01a-Q01.mp4",
+ "made": "2026-11-21T15:28:57+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, no pan. The three people stand in single file inside the blue-rope lane, all facing frame left toward the wooden counters: the woman in the mustard coat holding a white kettle at the front, the pensioner in the lilac puffer coat with silver curls hugging a small fan in the middle, and the red-haired lad in the grey hoodie nearest the camera on the right, looking down at his phone. For the first two seconds they wait: slight breathing, the pensioner adjusts the strap of her tote bag, the lad's thumb moves on his screen. At about three seconds, all three shuffle forward together by one short step, unhurried, the way people do when a number is called; the lad steps without looking up. They settle and wait again, weight shifting from foot to foot. Nobody speaks; all mouths stay closed. The red display above the counters stays showing the single digit 3, and every POWER sign keeps its exact letters. Same three people, same hall, same flat daylight from the tall windows throughout.\nNatural documentary realism, overcast daylight.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q01.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q01.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-queue/scenes/the-queue",
+  "key": "Q01a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T15:26:39.033Z"
+ }
+}

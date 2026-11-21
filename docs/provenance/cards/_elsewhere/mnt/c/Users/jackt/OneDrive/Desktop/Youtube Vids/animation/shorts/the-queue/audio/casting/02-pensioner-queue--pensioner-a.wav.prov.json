@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/audio/casting/02-pensioner-queue--pensioner-a.wav",
+ "made": "2026-11-21T15:22:37+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "There's a queue, love.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_kpxsupkevvcj",
+  "style": "fast, brisk",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

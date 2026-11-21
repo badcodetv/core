@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/KETTLE-a-eye-a.jpg",
+ "made": "2026-11-21T15:08:28.930Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided photo, change only the red triangle on the cashier's navy balaclava: it is on the wrong eye. Move it to his other eye, his left eye, which in this view is on the right-hand half of the white ring, high up near the top right of the ring. Remove it completely from where it is now so there is only one triangle. Keep everything else in the image exactly the same: the white ring, the mask, his cardigan and badge, the woman, the kettle and its steam, the counter, the light and the framing.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/KETTLE-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/KETTLE-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "fe87e3a2-25e3-427a-b544-087995bed37c"
+}

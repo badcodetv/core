@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/M-b.jpg",
+ "made": "2026-11-21T14:48:14.966Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 low three-quarter view of the machine from near floor level, so it looms tall: a data centre on wheels the size of a small van, a bank of black server cabinets with a perforated mesh front glowing with rows of tiny blinking green and blue lights, cooling fans set into its side, a bundle of thick cables snaking behind it, chunky castors in sharp focus in the foreground on the tiled floor, a small plain dark screen on its front. Boxy industrial hardware, panels and mesh only. Around it, the queue lanes of chrome posts and navy belts from the layout photo, in a British post office counter hall with tall windows and strip lights above. Ordinary weekday daylight mixed with fluorescent light, a little drab, real-looking.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e6185757-2c36-4e3f-a7c2-02259ea16bdf"
+}

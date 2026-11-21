@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r2/CLOSED-a.jpg",
+ "made": "2026-11-21T15:18:21.039Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 side-on shot at counter height: on the right, the front of the machine from the cast sheet pressed up to the counter, a black perforated mesh face with rows of tiny green and blue lights and a small screen reading DISCOUNT APPLIED in plain block letters. On the left, behind the glass of window three, an old wooden counter like the one in the layout photo with turned wooden balusters and a carved column, the cashier from the cast sheet faces the camera straight on and pushes a plain standing sign reading POSITION CLOSED in plain block letters across the ledge with one gloved finger, calm and deliberate. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy knitted balaclava with a white ring round the face and a small red triangle over his own left eye, on the right of the picture; over it a blonde wig in a short stacked bob, never covering the ring or triangle; reading glasses on a beaded chain, a coral floral blouse under a beige cardigan, pearls, a blank plain name badge. Above the window, POWER in plain block letters. Weekday daylight mixed with fluorescent light, slightly drab, real-looking. No other words, logos, emblems or red company branding anywhere. The cashier and the machine come from the cast sheet (cashier on its left, machine on its right).",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/cast-CM.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c0427887-1dfa-4931-9295-ff19cdba30f7"
+}

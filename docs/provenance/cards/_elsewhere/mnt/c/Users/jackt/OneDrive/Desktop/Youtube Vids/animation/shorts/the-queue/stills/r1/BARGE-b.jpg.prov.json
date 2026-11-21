@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/BARGE-b.jpg",
+ "made": "2026-11-21T14:55:24.992Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 shot from just ahead of the queue looking back toward them, the counter approach from the layout photo behind the camera: three people in a lane of chrome posts and belts, all turned to their right with mouths open in a shocked gasp, faces large enough to read: the woman with the kettle from her portrait (Black British woman of about 42, short natural hair, mustard raincoat over grey jumper, white kettle, coiled cord) in front, the pensioner from her portrait (white woman of about 75, silver set curls, lilac quilted coat, cream fan heater clutched under her arm, tote bag) behind, the lad from his portrait (white lad of about 19, ginger buzz cut, grey hoodie, phone in hand, cable dangling) at the back. Sweeping past them in the near foreground, slightly motion-blurred, the black mesh side of the machine from its portrait: a van-sized data centre on wheels, rows of blinking green and blue lights, cooling fans, heavy castors, cables dragging along the tiled floor. plain public counter hall, plain walls, strip lights, weekday daylight; slightly drab, real-looking. Every sign is plain: the only words anywhere are the ones named here (POWER over each window, and any sign named above); no other words, logos, emblems or red company branding. Faces and clothes come from the cast sheet, left to right: the woman with the kettle, the pensioner, the lad, the machine; each keeps exactly the face and clothes from the sheet.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/GbY1IcKPvS0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/GbY1IcKPvS0.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/cast-KPLM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "88482fa5-4d00-40b3-af89-0d7de8b698cf"
+}

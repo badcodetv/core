@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r2/C-karen-a.jpg",
+ "made": "2026-11-21T15:14:48.261Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided portrait of the cashier, restyle him as a fussy 60-year-old suburban customer-service manager, keeping the balaclava exactly as it is. Over the navy knitted balaclava he now wears a blonde wig in a short stacked bob, longer at the front and spiky at the back, with highlights; the hair frames the outside of the mask and never covers the white ring or the red triangle over his left eye. Reading glasses hang on a beaded chain round his neck, resting on his chest. He wears a coral floral blouse buttoned to the collar under a beige knitted cardigan, a string of pearls, a blank plain name badge, and black gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Keep the counter window, the hall behind him, the light and the framing exactly the same.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/C-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/C-a.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "fdc60272-5867-4cb2-84b3-a5389ecd1bc4"
+}

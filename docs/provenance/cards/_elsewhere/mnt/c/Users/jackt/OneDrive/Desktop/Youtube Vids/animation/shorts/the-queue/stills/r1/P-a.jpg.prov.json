@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/P-a.jpg",
+ "made": "2026-11-21T14:44:47.325Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of the pensioner: a white woman of about 75 with neat silver set curls, wearing a lilac quilted coat, a small cream fan heater tucked under one arm and a cloth tote bag hanging from the other shoulder. She faces the camera, her face large and sharp, with a resigned, been-here-before look. Behind her, soft and out of focus, the long hall from the layout photo remade as a British post office counter hall: chrome posts with navy belts forming queue lanes, tall windows, fluorescent strip lights. Ordinary weekday daylight mixed with strip light, slightly drab, real skin and wrinkles, real-looking.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "00aec664-f8dd-44b2-9004-ee8ae812d8fc"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/BARGE-a.jpg",
+ "made": "2026-11-21T14:54:12.573Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 shot along the approach to the counter windows, laid out like the layout photo: chrome posts and belts making lanes that lead up to service counters, in a plain public counter hall with strip lights and plain walls. The machine from its portrait (a data centre on wheels the size of a small van, black server cabinets with a perforated mesh front full of tiny green and blue lights, side cooling fans, thick trailing cables, heavy castors, small dark screen on its front) rolls up the outside of the lanes toward the windows, filling the right side of the frame. In the lane on the left, the queue turns to stare at it, mouths open in a gasp: the woman with the kettle from her portrait (Black British woman of about 42, short natural hair, mustard raincoat over grey jumper, white kettle held to her chest) at the front, the pensioner from her portrait (white woman of about 75, silver set curls, lilac quilted coat, cream fan heater under her arm, tote bag) behind her, and the lad from his portrait (white lad of about 19, ginger buzz cut, grey hoodie, phone and cable in hand) at the back. Above the counters, the word POWER in plain block letters over each window, the only words in view. Weekday daylight and strip light, a little drab, real-looking. Every sign is plain: the only words anywhere are the ones named here (POWER over each window, and any sign named above); no other words, logos, emblems or red company branding. Faces and clothes come from the cast sheet, left to right: the woman with the kettle, the pensioner, the lad, the machine; each keeps exactly the face and clothes from the sheet.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/GbY1IcKPvS0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/GbY1IcKPvS0.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/cast-KPLM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "1ca35365-62a3-447d-b39e-d42d4c6ddf04"
+}

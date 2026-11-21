@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/C-a.jpg",
+ "made": "2026-11-21T14:41:55.314Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of the cashier, a man standing behind an old British post office counter window, facing the camera straight on, his face filling the upper half of the frame, sharp. The balaclava exactly as in the attached image: no holes, no skin, gloves. It is a navy knitted balaclava covering the whole head, a thick white rope-like ring round the face area and a small red triangle sitting over his own left eye, which is on the viewer's right as he faces us. He wears a plain navy cardigan over a white shirt buttoned right up to the collar, a blank plain name badge pinned to the cardigan, and black gloves, one gloved hand resting on the wooden counter ledge in front of him. Behind him, soft and out of focus, a long counter hall laid out like the hall in the layout photo: rows of chrome posts with navy belts forming queue lanes, tall windows down one side, fluorescent strip lights in the ceiling. Ordinary weekday daylight mixed with strip light, a little drab, real-looking, unglamorous.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/mask-reference.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/mask-reference.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "204f8be0-49a2-41b8-9fab-5856fe6be542"
+}

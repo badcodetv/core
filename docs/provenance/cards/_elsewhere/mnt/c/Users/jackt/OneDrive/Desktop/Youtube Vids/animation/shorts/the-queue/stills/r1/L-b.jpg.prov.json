@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/L-b.jpg",
+ "made": "2026-11-21T14:46:47.719Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close portrait of the lad, a white lad of about 19 with a ginger buzz cut in a plain grey hoodie, looking up from his phone straight toward the camera with a hopeful, slightly desperate expression, the phone held low with its back to us and a charging cable looped round his other fingers. His face is large and sharp. Behind him, blurred, the queue hall from the layout photo as a British post office: chrome posts, navy belt lanes, tall windows, ceiling strip lights. Ordinary weekday daylight and fluorescent light, a little drab, real-looking.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/V50uAd5i-Ag.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5fea7673-8a88-4d2b-be28-d6ab366dc761"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/KETTLE-a.jpg",
+ "made": "2026-11-21T15:01:58.580Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 shot at counter window three, an old wooden counter hall counter like the one in the layout photo: dark wood, a ledge with turned wooden balusters, a carved column, a glass screen, POWER in plain block letters above the window. The woman with the kettle from her portrait (Black British woman of about 42, short natural hair, mustard raincoat over a grey jumper) stands at the ledge, seen in three-quarter view so her face reads, pushing the plug of her white electric kettle into a plain white wall socket set into the counter; the kettle sits on the ledge and a soft plume of steam is already rising from its spout. A small satisfied smile. Behind the glass, the cashier from his portrait watches with gloved hands folded. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy knitted balaclava, white ring round the face, small red triangle over his own left eye; navy cardigan over a white shirt buttoned to the collar, blank plain name badge. Weekday daylight and strip light, a little drab, real-looking. Every sign is plain: the only words anywhere are the ones named here (POWER over each window, and any sign named above); no other words, logos, emblems or red company branding. Faces and clothes come from the cast sheet, left to right: the woman with the kettle, the cashier; each keeps exactly the face and clothes from the sheet.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/cast-KC.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "bf91ab57-10b6-4114-9efd-44f57961ce01"
+}

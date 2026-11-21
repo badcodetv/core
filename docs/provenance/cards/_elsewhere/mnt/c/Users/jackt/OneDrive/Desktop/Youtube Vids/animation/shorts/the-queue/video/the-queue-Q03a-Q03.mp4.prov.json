@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q03a-Q03.mp4",
+ "made": "2026-11-21T15:30:25+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, no pan. The cashier sits behind the glass of the wooden counter, facing straight to camera: blonde bob wig over a navy balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the frame. He has no mouth; he never speaks with his face. In the foreground at the bottom of frame sits the black mesh top of the server cabinet with its small green and blue lights. Slowly, the cashier looks the machine up and down: his chin lifts as if taking in its full height, holds for a beat, then lowers as his gaze travels down to its top in the foreground. Then, at about five seconds, a small, weary tilt of the head to one side, and a hold. His gloved hands rest on the counter, one fingertip tapping once. The white ring and the red triangle stay fixed on the balaclava, the triangle always on the right of frame. The sign above reads POWER and the now-serving card shows 3, letters unchanged. The machine's lights blink softly. Same light throughout.\nNatural documentary realism, soft overhead office light.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q03.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q03.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-queue/scenes/the-queue",
+  "key": "Q03a",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T15:28:19.359Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q03b-Q03.mp4",
+ "made": "2026-11-21T15:29:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, no pan. The cashier sits behind the glass of the wooden counter, facing straight to camera: blonde bob wig over a navy balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the frame. He has no mouth and makes no mouth movement. The black mesh top of the server cabinet fills the bottom of frame, its small lights blinking. He is still for a moment, then his chin rises slowly, a long look up at the machine, then his head lowers slowly back down, unimpressed. His gloved hands lift a few centimetres off the counter, palms half open, then settle back. Finally a small, tired tilt of the head, held until the end, as if to say it is in the wrong place. He keeps facing the camera the whole time; the white ring and the red triangle never move on the balaclava, the triangle stays on the right of frame. The sign above reads POWER and the now-serving card shows 3, unchanged. Same light throughout.\nNatural documentary realism, soft overhead office light.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q03.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q03.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-queue/scenes/the-queue",
+  "key": "Q03b",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T15:27:23.261Z"
+ }
+}

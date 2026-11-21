@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/video/the-queue-Q02b-Q02.mp4",
+ "made": "2026-11-21T15:29:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, no zoom, no pan. The tall black server cabinet on the right begins to roll forward on its castors, away from the camera toward the POWER counters at the back of the hall, passing alongside the rope lane. It moves with real weight: a slow, smooth start, a steady glide, the whole cabinet staying rigid and upright, its trailing grey cables pulled along the floor behind it. Its front lights blink green and blue. The three in the queue on the left are frozen for a beat, then their heads turn together to track it as it passes, mouths dropping open: the woman in the mustard coat with the white kettle, the pensioner in the lilac coat with silver curls and the small fan, the red-haired lad in the grey hoodie behind them. Early, at about two seconds, the pensioner says quietly and indignantly, \"There's a queue, love.\", her lips moving with exactly those words, then she presses her lips together and keeps watching it, her eyebrows raised. The other two say nothing. The machine keeps rolling toward the counters. The people at the counters in the background stay in place. Every POWER sign keeps its exact letters. Same light throughout.\nNatural documentary realism, overcast daylight.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q02.jpg",
+ "why": "clips r1 (clean-room anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/moodboard/Q02.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-queue/scenes/the-queue",
+  "key": "Q02b",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T15:27:00.283Z"
+ }
+}

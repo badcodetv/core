@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue/stills/r1/CLOSED-b.jpg",
+ "made": "2026-11-21T15:00:36.441Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 side-on shot at counter height: on the right, the front of the machine from its portrait pressed up to the counter, a black perforated mesh face with rows of tiny green and blue lights and a small screen reading DISCOUNT APPLIED in plain block letters. On the left, behind the glass of window three, an old wooden counter like the one in the layout photo with turned wooden balusters and a carved column, the cashier from his portrait pushes a plain standing sign reading POSITION CLOSED in plain block letters across the ledge with one gloved finger, calm and deliberate. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy knitted balaclava, white ring round the face, small red triangle over his own left eye; navy cardigan over a white shirt buttoned to the collar, blank plain name badge. Above the window, POWER in plain block letters. No other words. Weekday daylight mixed with fluorescent light, slightly drab, real-looking. Every sign is plain: the only words anywhere are the ones named here (POWER over each window, and any sign named above); no other words, logos, emblems or red company branding. Faces and clothes come from the cast sheet, left to right: the cashier, the machine; each keeps exactly the face and clothes from the sheet.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-queue/Y63M9ZI29JM.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/cast-CM.jpg",
+   "/home/jackt/.cache/badcode-refs/the-queue/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "58f63037-fca9-43a0-9883-4f971b732a74"
+}
