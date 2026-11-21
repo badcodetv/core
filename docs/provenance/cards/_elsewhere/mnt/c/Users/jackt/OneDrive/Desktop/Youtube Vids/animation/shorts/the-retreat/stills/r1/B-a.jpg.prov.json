@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/B-a.jpg",
+ "made": "2026-11-21T18:50:29.554Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of an invented English man of about 38, his face large and sharp in the frame, looking into the lens. Expensive short haircut, neatly faded at the sides and swept back on top; an even holiday tan; clean-shaven jaw. He is trying hard to look relaxed: a fixed, slightly strained half-smile, his eyes a little too alert, a tight jaw. He wears a navy quilted gilet zipped halfway over a crisp white shirt, and one hand is lifted near his chest showing a big chunky smartwatch on his wrist. Behind him, softly out of focus, the open bamboo pavilion from the photo: tall curved golden bamboo columns, a woven bamboo ceiling, pale blue floor cushions on a polished wooden floor, tropical greenery past the railing. Warm golden late-afternoon light from the side. Glossy, aspirational resort-advert look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/A5WFGW3h5RA.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/A5WFGW3h5RA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a04a1cce-0ce3-4a3e-908f-b487df66583c"
+}

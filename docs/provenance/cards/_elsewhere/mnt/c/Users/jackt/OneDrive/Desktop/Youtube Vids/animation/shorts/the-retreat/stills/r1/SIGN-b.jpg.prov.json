@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/SIGN-b.jpg",
+ "made": "2026-11-21T18:55:05.344Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo, lower angle and closer than the photo: the resort's carved wooden gate sign filling the middle of the frame, looking up at it against tall bamboo and palm fronds with golden sky glowing behind. The sign is polished warm wood set in a frame of lashed bamboo poles, with plain carved letters filled in white, three lines, crisp and readable: \"DETOX FROM MATERIALISM\" / \"WEEKEND RETREAT\" / \"£3,000\". Those are the only words anywhere. Banana leaves overlap the bottom corners; a little sun flare at the edge. Rich golden-hour light, the polished look of the resort's own advert.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/oQPtUvNw2A4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/oQPtUvNw2A4.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "bf6618bf-17e1-451b-aa91-a3d3b53cd33e"
+}

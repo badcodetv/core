@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/K2-b.jpg",
+ "made": "2026-11-21T19:12:29.520Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 close portrait of a groundskeeper in his late sixties, a made-up man nobody would recognise: a broad, round, ruddy face, a crooked nose that was broken once, bushy grey eyebrows, a short patchy grey beard, a flat cap pushed back on his head, small kind eyes creased from squinting outdoors. A faded green work jacket over a grey jumper with a hole at the collar. He sits in the garden from the photo, its wheelbarrow and leafy trees soft behind him. Plain overcast daylight, honest colours, unposed, like a candid documentary still. His face fills the top half of the picture, sharp.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/j8xUK4ijoj0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/j8xUK4ijoj0.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "db738251-adb4-41b5-8da5-a76c0f4171af"
+}

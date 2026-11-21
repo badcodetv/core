@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/G-a.jpg",
+ "made": "2026-11-21T18:49:26.153Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of an invented English woman of about 40, her face large, sharp and filling the upper half of the frame, looking straight into the lens. Sun-bleached blonde hair gathered in a loose, slightly undone bun with a few strands falling by her cheek; lightly tanned skin with fine sun lines at the eyes; a calm, serene smile held a fraction too long, perfect white teeth just showing. She wears a loose flowing white linen top with a soft open neckline, a clear quartz crystal pendant on a thin cord at her collarbone, and one hand raised near her chin showing a stack of many wooden and stone beaded bracelets on her wrist. Behind her, softly out of focus, the open bamboo pavilion from the photo: tall curved golden bamboo columns, a woven bamboo ceiling, rows of pale blue floor cushions and dark mats on a polished wooden floor, tropical leaves beyond the railing. Warm late-afternoon sun slanting in from the side, glowing on her hair and the bamboo. Polished, golden, aspirational look, like a luxury wellness advert.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/A5WFGW3h5RA.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/A5WFGW3h5RA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "988c1faf-2b8f-481e-b1a2-ef5491040d15"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/DOG-a.jpg",
+ "made": "2026-11-21T19:14:35.317Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo in the rough garden from the photo, behind a jungle resort: the groundskeeper from his portrait sits on a mossy rock, flat cap, faded green work jacket, grey jumper, muddy boots, flask beside him. A scruffy little brown-and-white terrier cross, wiry coat and one floppy ear, has just run up and stands against his knee, tail wagging, looking up at him. He rests one rough hand on the dog's head, petting it, while his face, clearly visible in three-quarter view, stays turned up towards the tall trees swaying in the wind, with a small, easy smile. The resort's roofs small and far away behind. Soft natural late-afternoon light, true colours, plain documentary look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/j8xUK4ijoj0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/j8xUK4ijoj0.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/K2-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "8d97e6d0-4ad8-4eaf-86ab-55d4abe342e6"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/SHOP-a.jpg",
+ "made": "2026-11-21T18:56:08.692Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo of a small, calm, very expensive wellness gift shop at the resort, the same framing as the photo (a corner of wooden wall with stepped shelves) but almost bare and minimal: warm pale timber walls, a few wide floating wooden shelves, lots of empty space. On the shelves, a handful of ordinary grey river stones, each one alone on its own small white plinth, each with a tiny neat white price card in front reading \"£80\". On the lowest shelf, a single plain cream ceramic mug turned so its side reads \"NON-ATTACHMENT £24\" in simple black lettering. High on the wall, a small elegant wooden sign reading \"EXIT THROUGH GIFT SHOP\". These are the only words in the picture. A potted palm in the corner, soft golden spotlights on each stone. Glossy, hushed, luxury-boutique look. No people.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/2a-PH6dsAIw.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/2a-PH6dsAIw.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "9055bb73-574a-422f-93e9-a18d51724c4b"
+}

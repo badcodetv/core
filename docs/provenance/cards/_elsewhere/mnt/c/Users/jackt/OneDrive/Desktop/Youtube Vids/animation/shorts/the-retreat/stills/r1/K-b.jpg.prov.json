@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/K-b.jpg",
+ "made": "2026-11-21T18:52:20.870Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 portrait, head and shoulders, of an invented English man of about 70 with an ordinary, kind face, large and in crisp focus, turned three-quarters to camera. Weathered skin, white stubble, white hair cut short, small creases of an easy smile at his eyes. Faded green work jacket, collar turned up a little, an old tin flask cup of tea held near his chest in a rough hand with dirt under the nails. Behind him, blurred, long grass and tall dark trees as in the photo, sky pale behind the leaves. Soft natural late-afternoon light, no glamour. Plain documentary look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/fHWqP29e6Eo.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/fHWqP29e6Eo.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a4488047-b4d0-4a86-a1a8-43a6c2298dbb"
+}

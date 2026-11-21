@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/K-a.jpg",
+ "made": "2026-11-21T18:51:48.232Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 head-and-shoulders portrait of an invented English man of about 70, a new and ordinary face, large and sharp in the frame, looking slightly past the lens with a quiet, contented expression. Weathered, wind-reddened skin with deep lines, short white stubble on his chin and cheeks, thinning white hair a little ruffled. He wears a faded, worn green work jacket over an old checked shirt, the jacket's collar soft and frayed. Behind him, out of focus, the kind of place in the photo: long green grass, a mossy rock, dark leafy trees under a soft sky. Plain, soft, natural daylight, gently overcast, true colours. Honest documentary portrait, unpolished.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/fHWqP29e6Eo.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/fHWqP29e6Eo.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "618ea431-2d73-44dd-aca6-d6a094c925e4"
+}

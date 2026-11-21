@@ -1,0 +1,220 @@
+{
+ "title": "Retreat Stills",
+ "eyebrow": "BadCode Shorts \u00b7 The Retreat \u00b7 stills round 1",
+ "heading": "The Retreat: stills",
+ "intro": "Every shot built on an Unsplash layout. Pick one per row, or leave a note. BadCode's triangle is over his left eye in both gong shots.",
+ "sections": [
+  {
+   "h": "Cast",
+   "lede": "Portraits first; every story shot copies these faces.",
+   "groups": [
+    {
+     "slot": "G",
+     "title": "The guru",
+     "line": "Invented wellness influencer.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/G-a.jpg",
+       "label": "a: straight on (used as the reference)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/G-b.jpg",
+       "label": "b: hands together",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "B",
+     "title": "The bro, her brother",
+     "line": "Trying to look calm.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/B-a.jpg",
+       "label": "a: straight on (used as the reference)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/B-b.jpg",
+       "label": "b: meditating, not calm",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "K2",
+     "title": "The groundskeeper",
+     "line": "Recast: Flow refused the first face as a possible \"prominent person\" (he came from the man in the Unsplash photo).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/K2-a.jpg",
+       "label": "a: smiling (used as the reference)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/K2-b.jpg",
+       "label": "b: straight on",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The short",
+   "lede": "Two takes per shot. Claude's picks: SUNSET-a, SIGN-b, CIRCLE-b, GONG-b, SHOP-b, KEEPER-b, DOG-a.",
+   "groups": [
+    {
+     "slot": "SUNSET",
+     "title": "1. The quote",
+     "line": "The Ram Dass line goes in the empty sky, added in the edit.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/SUNSET-a.jpg",
+       "label": "a: big sun, birds",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/SUNSET-b.jpg",
+       "label": "b: sun through bamboo",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "SIGN",
+     "title": "2. The sign",
+     "line": "DETOX FROM MATERIALISM \u00b7 WEEKEND RETREAT \u00b7 \u00a33,000",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/SIGN-a.jpg",
+       "label": "a: the gate path",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/SIGN-b.jpg",
+       "label": "b: low, closer",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CIRCLE",
+     "title": "3. The circle",
+     "line": "\"Let go of every attachment.\" / \"Sell. Sell it all.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/CIRCLE-a.jpg",
+       "label": "a: wide, guru at the front",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/CIRCLE-b.jpg",
+       "label": "b: close on the bro",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "GONG",
+     "title": "4. The gong",
+     "line": "\"That's forty for the gong.\" BadCode on the card machine.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/GONG-a.jpg",
+       "label": "a: wide",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/GONG-b.jpg",
+       "label": "b: machine at the lens",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "SHOP",
+     "title": "5. The gift shop",
+     "line": "\u00a380 rocks, NON-ATTACHMENT \u00a324.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/SHOP-a.jpg",
+       "label": "a: the corner shelves",
+       "warn": "The mug and price cards are small; we can add the text in the edit if needed."
+      },
+      {
+       "id": "b",
+       "src": "r1/SHOP-b.jpg",
+       "label": "b: close on a rock",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "KEEPER",
+     "title": "6. The groundskeeper",
+     "line": "On his break, watching the wind in the trees.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/KEEPER-a.jpg",
+       "label": "a: closer",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/KEEPER-b.jpg",
+       "label": "b: wider, resort roofs behind",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "DOG",
+     "title": "7. The dog",
+     "line": "The dog runs up; he pets it, still watching the trees.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r1/DOG-a.jpg",
+       "label": "a: dog jumping up",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r1/DOG-b.jpg",
+       "label": "b: dog at his knee",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

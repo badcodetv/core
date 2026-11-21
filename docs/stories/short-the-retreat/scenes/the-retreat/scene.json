@@ -20,12 +20,15 @@
    "what": "Mum gives Nan the potato; the Ram Dass line"
   }
  ],
- "boards": {},
+ "boards": {
+  "stills": "https://claude.ai/artifact/KFJ1hym35rJzY8SftB4XE2"
+ },
  "flow_project": "18488ea0-30a2-4f48-9ebe-303245074be1",
  "video": {
   "aspect": "9:16",
   "model": "Omni 1.2 Flash",
   "mode": "Frames",
   "duration": 8
- }
+ },
+ "flow_project_2": "6081d7c5-19b5-4985-b1d1-f7fd404aa4dd"
 }

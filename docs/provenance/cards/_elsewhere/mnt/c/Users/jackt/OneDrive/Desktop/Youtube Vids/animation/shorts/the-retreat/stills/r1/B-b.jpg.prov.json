@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/B-b.jpg",
+ "made": "2026-11-21T18:50:59.394Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 portrait, head and shoulders, of an invented English man of about 38, his face large and in crisp focus, turned three-quarters to camera. Expensive trimmed haircut, a deep tan, clean-shaven. He sits cross-legged with his eyes closed in an attempt at meditation, but his brow is slightly furrowed and his lips pressed together, plainly not calm. Navy quilted gilet over a white shirt, sleeves rolled once, a large smartwatch on his wrist glowing faintly. Behind him, blurred, the bamboo pavilion from the photo: arching golden bamboo pillars, woven roof, rows of pale blue cushions on a dark polished floor, lush tropical leaves beyond. Golden backlight warming the edge of his hair and shoulders. Polished luxury-resort advert look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/A5WFGW3h5RA.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/A5WFGW3h5RA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "43b00f64-0d7b-41ba-90f2-3d5202748376"
+}

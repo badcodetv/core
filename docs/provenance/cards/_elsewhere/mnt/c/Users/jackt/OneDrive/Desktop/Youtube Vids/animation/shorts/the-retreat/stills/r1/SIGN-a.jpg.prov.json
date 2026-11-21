@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/SIGN-a.jpg",
+ "made": "2026-11-21T18:54:31.819Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo, using the layout of the photo: a carved wooden sign on two thick weathered posts, standing on red earth at the entrance of a jungle resort, framed by big glossy banana leaves, palms and tall green bamboo. The sign is a smooth panel of warm honey-coloured wood with a bamboo frame, its letters carved into the wood and filled in plain white, three lines, centred and fully legible: \"DETOX FROM MATERIALISM\" on top, \"WEEKEND RETREAT\" in the middle, \"£3,000\" at the bottom. Those three lines are the only words in the picture. A small path of flat stepping stones leads past it. Warm golden late sun slanting through the leaves and lighting the face of the sign. Glossy, aspirational resort-brochure look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/oQPtUvNw2A4.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/oQPtUvNw2A4.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d701204d-093e-4f24-b6cb-816b376b1f5d"
+}

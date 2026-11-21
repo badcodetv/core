@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/CIRCLE-b.jpg",
+ "made": "2026-11-21T19:00:08.257Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo, closer and from the side of the group, in the bamboo pavilion from the photo: golden curved bamboo pillars and woven roof above, pale blue cushions on a dark wooden floor. In the foreground, in sharp focus, the bro from the right of the cast sheet, in his navy quilted gilet and white shirt, sitting cross-legged with eyes shut and a strained calm face, his left wrist pulled up close to his lips as he whispers into a phone tucked inside his shirt cuff, its screen glowing faintly through the fabric. Around him other guests in linen sit cross-legged, eyes closed, peaceful. Behind, softly focused at the front of the room, the guru from the left of the cast sheet in white linen, barefoot on a cushion, palms open and raised, speaking mid-sentence with her serene smile. Warm golden sunlight through the bamboo arches. Polished luxury-retreat advert look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/A5WFGW3h5RA.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/A5WFGW3h5RA.jpg",
+   "/home/jackt/.cache/badcode-refs/the-retreat/cast-GB.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "52e99d47-904a-45d3-bbab-cf7c23d67d0e"
+}

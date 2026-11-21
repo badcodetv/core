@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/KEEPER-b.jpg",
+ "made": "2026-11-21T19:13:38.747Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 photo behind a jungle resort, the rough garden from the photo with its wheelbarrow: the groundskeeper from his portrait sits on a mossy rock on his break, flat cap, faded green work jacket, grey jumper, muddy boots, a battered metal flask beside him and its cup of tea in his hands. He is not looking at the camera; his face, turned three-quarters to us and clearly visible, is tipped up towards tall trees and bamboo swaying in the wind above him, leaves blurred with motion. Far behind, small, the curved thatched roofs of the resort over a hedge. Soft late-afternoon light, plain and natural, slightly hazy, true colours. Quiet documentary look.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/j8xUK4ijoj0.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/j8xUK4ijoj0.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/K2-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "2fc78199-d623-4bf1-895c-e5291d23c4df"
+}

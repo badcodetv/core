@@ -1,0 +1,102 @@
+[
+  {
+    "id": "G-a",
+    "prompt": "Vertical 9:16 head-and-shoulders portrait of an invented English woman of about 40, her face large, sharp and filling the upper half of the frame, looking straight into the lens. Sun-bleached blonde hair gathered in a loose, slightly undone bun with a few strands falling by her cheek; lightly tanned skin with fine sun lines at the eyes; a calm, serene smile held a fraction too long, perfect white teeth just showing. She wears a loose flowing white linen top with a soft open neckline, a clear quartz crystal pendant on a thin cord at her collarbone, and one hand raised near her chin showing a stack of many wooden and stone beaded bracelets on her wrist. Behind her, softly out of focus, the open bamboo pavilion from the photo: tall curved golden bamboo columns, a woven bamboo ceiling, rows of pale blue floor cushions and dark mats on a polished wooden floor, tropical leaves beyond the railing. Warm late-afternoon sun slanting in from the side, glowing on her hair and the bamboo. Polished, golden, aspirational look, like a luxury wellness advert.",
+    "refs": ["A5WFGW3h5RA.jpg"]
+  },
+  {
+    "id": "G-b",
+    "prompt": "Vertical 9:16 portrait, slightly from the side, of an invented English woman of about 40, head and shoulders, her face turned three-quarters towards the lens, large and in crisp focus. Sun-bleached blonde hair in a loose bun, a tanned, glowing complexion, eyes half-lowered in a practised look of inner peace with a small, too-perfect smile. Flowing white linen top, a crystal pendant catching the light at her throat, both hands pressed together at chest height so the many beaded bracelets on her wrists show. Behind her, blurred, the bamboo pavilion from the photo: arching golden bamboo pillars, a woven roof, pale blue cushions in rows on a dark wooden floor, bright green tropical plants beyond. Rich golden sunlight backlights her hair with a warm rim; soft fill on her face. Glossy, aspirational wellness-brand look.",
+    "refs": ["A5WFGW3h5RA.jpg"]
+  },
+  {
+    "id": "B-a",
+    "prompt": "Vertical 9:16 head-and-shoulders portrait of an invented English man of about 38, his face large and sharp in the frame, looking into the lens. Expensive short haircut, neatly faded at the sides and swept back on top; an even holiday tan; clean-shaven jaw. He is trying hard to look relaxed: a fixed, slightly strained half-smile, his eyes a little too alert, a tight jaw. He wears a navy quilted gilet zipped halfway over a crisp white shirt, and one hand is lifted near his chest showing a big chunky smartwatch on his wrist. Behind him, softly out of focus, the open bamboo pavilion from the photo: tall curved golden bamboo columns, a woven bamboo ceiling, pale blue floor cushions on a polished wooden floor, tropical greenery past the railing. Warm golden late-afternoon light from the side. Glossy, aspirational resort-advert look.",
+    "refs": ["A5WFGW3h5RA.jpg"]
+  },
+  {
+    "id": "B-b",
+    "prompt": "Vertical 9:16 portrait, head and shoulders, of an invented English man of about 38, his face large and in crisp focus, turned three-quarters to camera. Expensive trimmed haircut, a deep tan, clean-shaven. He sits cross-legged with his eyes closed in an attempt at meditation, but his brow is slightly furrowed and his lips pressed together, plainly not calm. Navy quilted gilet over a white shirt, sleeves rolled once, a large smartwatch on his wrist glowing faintly. Behind him, blurred, the bamboo pavilion from the photo: arching golden bamboo pillars, woven roof, rows of pale blue cushions on a dark polished floor, lush tropical leaves beyond. Golden backlight warming the edge of his hair and shoulders. Polished luxury-resort advert look.",
+    "refs": ["A5WFGW3h5RA.jpg"]
+  },
+  {
+    "id": "K-a",
+    "prompt": "Vertical 9:16 head-and-shoulders portrait of an invented English man of about 70, a new and ordinary face, large and sharp in the frame, looking slightly past the lens with a quiet, contented expression. Weathered, wind-reddened skin with deep lines, short white stubble on his chin and cheeks, thinning white hair a little ruffled. He wears a faded, worn green work jacket over an old checked shirt, the jacket's collar soft and frayed. Behind him, out of focus, the kind of place in the photo: long green grass, a mossy rock, dark leafy trees under a soft sky. Plain, soft, natural daylight, gently overcast, true colours. Honest documentary portrait, unpolished.",
+    "refs": ["fHWqP29e6Eo.jpg"]
+  },
+  {
+    "id": "K-b",
+    "prompt": "Vertical 9:16 portrait, head and shoulders, of an invented English man of about 70 with an ordinary, kind face, large and in crisp focus, turned three-quarters to camera. Weathered skin, white stubble, white hair cut short, small creases of an easy smile at his eyes. Faded green work jacket, collar turned up a little, an old tin flask cup of tea held near his chest in a rough hand with dirt under the nails. Behind him, blurred, long grass and tall dark trees as in the photo, sky pale behind the leaves. Soft natural late-afternoon light, no glamour. Plain documentary look.",
+    "refs": ["fHWqP29e6Eo.jpg"]
+  },
+  {
+    "id": "SUNSET-a",
+    "prompt": "Vertical 9:16 landscape at sunset, the same kind of picture as the photo: a huge glowing golden sun low in an orange and apricot sky, its glow filling the middle of the frame. In the lower third, the silhouetted canopy of a tropical resort: feathery tops of tall bamboo, two or three palm crowns, and the dark curved thatched roof of a bamboo pavilion just peeking through the trees. A few birds crossing the light. The top third of the frame is open, smooth, empty sky graded from warm gold to soft peach, clean space for words to be placed later. Lush, golden, aspirational travel-advert light. No people.",
+    "refs": ["CKmLZ94isVM.jpg"]
+  },
+  {
+    "id": "SUNSET-b",
+    "prompt": "Vertical 9:16 sunset, the same kind of picture as the photo but closer in: the sun sitting just behind the silhouette of a cluster of tall bamboo stems and a single palm, its leaves backlit and rimmed with gold, a soft haze over distant green hills. Below, the tips of several curved thatched bamboo roofs of a jungle resort catch the last light. The upper third of the frame is wide, clear, glowing sky in honey and rose tones, an empty band for words added later. Warm lens glow, rich saturated golden light, the look of a luxury resort's own advert. No people.",
+    "refs": ["CKmLZ94isVM.jpg"]
+  },
+  {
+    "id": "SIGN-a",
+    "prompt": "Vertical 9:16 photo, using the layout of the photo: a carved wooden sign on two thick weathered posts, standing on red earth at the entrance of a jungle resort, framed by big glossy banana leaves, palms and tall green bamboo. The sign is a smooth panel of warm honey-coloured wood with a bamboo frame, its letters carved into the wood and filled in plain white, three lines, centred and fully legible: \"DETOX FROM MATERIALISM\" on top, \"WEEKEND RETREAT\" in the middle, \"£3,000\" at the bottom. Those three lines are the only words in the picture. A small path of flat stepping stones leads past it. Warm golden late sun slanting through the leaves and lighting the face of the sign. Glossy, aspirational resort-brochure look.",
+    "refs": ["oQPtUvNw2A4.jpg"]
+  },
+  {
+    "id": "SIGN-b",
+    "prompt": "Vertical 9:16 photo, lower angle and closer than the photo: the resort's carved wooden gate sign filling the middle of the frame, looking up at it against tall bamboo and palm fronds with golden sky glowing behind. The sign is polished warm wood set in a frame of lashed bamboo poles, with plain carved letters filled in white, three lines, crisp and readable: \"DETOX FROM MATERIALISM\" / \"WEEKEND RETREAT\" / \"£3,000\". Those are the only words anywhere. Banana leaves overlap the bottom corners; a little sun flare at the edge. Rich golden-hour light, the polished look of the resort's own advert.",
+    "refs": ["oQPtUvNw2A4.jpg"]
+  },
+  {
+    "id": "CIRCLE-a",
+    "prompt": "Vertical 9:16 photo inside the open bamboo pavilion from the photo: tall curved golden bamboo columns, a woven bamboo roof, a dark polished wooden floor, tropical leaves beyond the bamboo railing. About ten guests in pale linen sit cross-legged on pale blue floor cushions in rows, eyes closed, hands on knees. At the front, facing them and the camera, the guru from the left of the cast sheet, in flowing white linen with her beaded bracelets and crystal pendant, barefoot, sitting tall, both palms open and raised, mouth open mid-sentence, with her serene smile. In the second row, nearer the camera on the right, the bro from the right of the cast sheet, in his navy quilted gilet and white shirt, eyes shut like everyone else, but head tipped down, whispering into a phone that is hidden up inside his shirt sleeve, his wrist held to his mouth. Faces of both clearly visible. Warm golden afternoon sun streaming in between the bamboo pillars. Glossy, aspirational wellness-advert look.",
+    "refs": ["A5WFGW3h5RA.jpg", "cast-GB.jpg"]
+  },
+  {
+    "id": "CIRCLE-b",
+    "prompt": "Vertical 9:16 photo, closer and from the side of the group, in the bamboo pavilion from the photo: golden curved bamboo pillars and woven roof above, pale blue cushions on a dark wooden floor. In the foreground, in sharp focus, the bro from the right of the cast sheet, in his navy quilted gilet and white shirt, sitting cross-legged with eyes shut and a strained calm face, his left wrist pulled up close to his lips as he whispers into a phone tucked inside his shirt cuff, its screen glowing faintly through the fabric. Around him other guests in linen sit cross-legged, eyes closed, peaceful. Behind, softly focused at the front of the room, the guru from the left of the cast sheet in white linen, barefoot on a cushion, palms open and raised, speaking mid-sentence with her serene smile. Warm golden sunlight through the bamboo arches. Polished luxury-retreat advert look.",
+    "refs": ["A5WFGW3h5RA.jpg", "cast-GB.jpg"]
+  },
+  {
+    "id": "GONG-a",
+    "prompt": "Vertical 9:16 photo in a jungle-side sound-bath room, as in the gong photo: a large brass gong hung by cord from a black stand, its bright golden ring and dark hammered rim shimmering, big tropical leaves glowing green through a wide window behind. On the left, the guru from her portrait, in flowing white linen with beaded bracelets and crystal pendant, barefoot, has just struck the gong; her padded red mallet is still raised in her hand and her face wears a blissful, eyes-half-closed smile. On the right, standing beside her and facing the camera, a man in a balaclava. The balaclava exactly as in the attached image: no holes, no skin, gloves. It is a navy knitted balaclava with a thick white ring round the face and a small red triangle over his own left eye (the right side of the face as we look at it); black leather gloves on both hands. He wears the resort's crisp white linen staff shirt with the collar turned up against the mask, and holds a card payment machine out straight towards the camera at arm's length, its screen lit. Warm, golden, glossy light, like the resort's own advert.",
+    "refs": ["i2_kSnhQNJU.jpg", "portrait-G.jpg", "mask-reference.jpg"]
+  },
+  {
+    "id": "GONG-b",
+    "prompt": "Vertical 9:16 photo, tighter, a low angle, in the sound-bath room from the gong photo: the big brass gong fills the upper middle of the frame, still visibly trembling, its golden ring catching warm light, lush green leaves beyond the glass. The guru from her portrait stands just left of the gong in white linen, beaded bracelets on her wrist, crystal pendant, mallet lowered, eyes closed and smiling serenely as the sound rings out. In the foreground right, close to the camera and in sharp focus, a man in a balaclava pushes a card payment machine right at the lens, the machine large in frame, its keypad and lit screen showing. The balaclava exactly as in the attached image: no holes, no skin, gloves. Navy knit with a thick white ring round the face and a red triangle over his own left eye, which is the right side of the face as we see it; black leather gloves. He wears the resort's white linen staff shirt, collar up against the mask. Rich golden light, polished luxury-advert look.",
+    "refs": ["i2_kSnhQNJU.jpg", "portrait-G.jpg", "mask-reference.jpg"]
+  },
+  {
+    "id": "SHOP-a",
+    "prompt": "Vertical 9:16 photo of a small, calm, very expensive wellness gift shop at the resort, the same framing as the photo (a corner of wooden wall with stepped shelves) but almost bare and minimal: warm pale timber walls, a few wide floating wooden shelves, lots of empty space. On the shelves, a handful of ordinary grey river stones, each one alone on its own small white plinth, each with a tiny neat white price card in front reading \"£80\". On the lowest shelf, a single plain cream ceramic mug turned so its side reads \"NON-ATTACHMENT £24\" in simple black lettering. High on the wall, a small elegant wooden sign reading \"EXIT THROUGH GIFT SHOP\". These are the only words in the picture. A potted palm in the corner, soft golden spotlights on each stone. Glossy, hushed, luxury-boutique look. No people.",
+    "refs": ["2a-PH6dsAIw.jpg"]
+  },
+  {
+    "id": "SHOP-b",
+    "prompt": "Vertical 9:16 close photo inside the resort's minimal wellness gift shop, warm timber shelving as in the photo but sparse and calm. In the foreground, in sharp focus, one ordinary smooth grey river stone on a small white plinth with a neat white price card reading \"£80\"; behind it, a line of more identical stones on identical plinths, each with its own \"£80\" card, fading into soft focus. On the shelf beside them, a plain cream mug clearly reading \"NON-ATTACHMENT £24\" in simple black letters. In the soft background, above a doorway, a slim wooden sign reading \"EXIT THROUGH GIFT SHOP\". These are the only words. Gentle golden spotlighting, a bamboo stem in a vase. Glossy, expensive, hushed boutique look. No people.",
+    "refs": ["2a-PH6dsAIw.jpg"]
+  },
+  {
+    "id": "KEEPER-a",
+    "prompt": "Vertical 9:16 photo, using the layout of the photo: behind the resort, in a rough patch of long grass, the groundskeeper from his portrait sits on a mossy rock on his break, in his faded green work jacket, old trousers and muddy boots, a battered metal flask beside him and its cup of tea in his hands. He is not looking at the camera; his face, turned three-quarters to us and clearly visible, is tipped up towards a stand of tall trees and bamboo moving in the wind above him, leaves blurred with motion. Far behind, small in the background, the curved thatched roofs of the resort peeping over a hedge. Soft late-afternoon light, plain and natural, slightly hazy, true colours. Quiet documentary look.",
+    "refs": ["fHWqP29e6Eo.jpg", "portrait-K.jpg"]
+  },
+  {
+    "id": "KEEPER-b",
+    "prompt": "Vertical 9:16 photo, a wider and lower view than the photo: the groundskeeper from his portrait small but clear in the lower third, sitting on a rock in long grass, faded green work jacket, old trousers, muddy boots, flask at his feet, both hands round his tea. Above him the frame is filled with tall trees and bamboo leaning and swaying in the wind, leaves turning silver, a soft pale sky. He watches them, face turned up, calm. In the far background at the edge of frame, the resort's thatched roofs small and distant. Gentle natural late light, no glow or gloss. Simple, honest documentary look.",
+    "refs": ["fHWqP29e6Eo.jpg", "portrait-K.jpg"]
+  },
+  {
+    "id": "DOG-a",
+    "prompt": "Vertical 9:16 photo, using the layout of the photo: the groundskeeper from his portrait sits on a mossy rock in long grass in his faded green work jacket, old trousers and muddy boots, flask beside him. A scruffy little brown-and-white terrier cross, wiry coat and one floppy ear, has just run up and stands against his knee, tail wagging, looking up at him. He rests one rough hand on the dog's head, petting it, while his face, clearly visible in three-quarter view, stays turned up towards the tall trees moving in the wind, with a small, easy smile. Behind, the resort's roofs small and far away. Soft natural late-afternoon light, true colours, plain documentary look.",
+    "refs": ["fHWqP29e6Eo.jpg", "portrait-K.jpg"]
+  },
+  {
+    "id": "DOG-b",
+    "prompt": "Vertical 9:16 photo, closer than the photo, at seated height: the groundskeeper from his portrait on his rock, head and chest in frame with his face large and clear, faded green work jacket, white stubble, a tin cup of tea in one hand. His other hand ruffles the head of a scruffy brown-and-white terrier cross whose wiry face pokes up into the bottom of the frame, mouth open, happy, mid-arrival with grass on its paws. He is not looking at the dog; his eyes are lifted to the trees swaying above, and the corner of his mouth lifts in a small, easy smile. Leaves and long grass softly out of focus behind. Soft, plain natural light, gentle and unforced, documentary look.",
+    "refs": ["fHWqP29e6Eo.jpg", "portrait-K.jpg"]
+  }
+]

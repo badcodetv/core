@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/SUNSET-b.jpg",
+ "made": "2026-11-21T18:53:38.730Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 sunset, the same kind of picture as the photo but closer in: the sun sitting just behind the silhouette of a cluster of tall bamboo stems and a single palm, its leaves backlit and rimmed with gold, a soft haze over distant green hills. Below, the tips of several curved thatched bamboo roofs of a jungle resort catch the last light. The upper third of the frame is wide, clear, glowing sky in honey and rose tones, an empty band for words added later. Warm lens glow, rich saturated golden light, the look of a luxury resort's own advert. No people.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/CKmLZ94isVM.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/CKmLZ94isVM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5d449b87-c775-4250-83eb-b1f3342faee8"
+}

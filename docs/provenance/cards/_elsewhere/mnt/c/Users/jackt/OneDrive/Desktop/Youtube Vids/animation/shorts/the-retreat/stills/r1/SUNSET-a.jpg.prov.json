@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/SUNSET-a.jpg",
+ "made": "2026-11-21T18:53:07.009Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Vertical 9:16 landscape at sunset, the same kind of picture as the photo: a huge glowing golden sun low in an orange and apricot sky, its glow filling the middle of the frame. In the lower third, the silhouetted canopy of a tropical resort: feathery tops of tall bamboo, two or three palm crowns, and the dark curved thatched roof of a bamboo pavilion just peeking through the trees. A few birds crossing the light. The top third of the frame is open, smooth, empty sky graded from warm gold to soft peach, clean space for words to be placed later. Lush, golden, aspirational travel-advert light. No people.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/CKmLZ94isVM.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/CKmLZ94isVM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c342e245-82ed-409b-9810-f022b5151525"
+}
