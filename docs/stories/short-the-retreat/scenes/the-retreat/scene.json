@@ -21,7 +21,9 @@
   }
  ],
  "boards": {
-  "stills": "https://claude.ai/artifact/KFJ1hym35rJzY8SftB4XE2"
+  "stills": "https://claude.ai/artifact/KFJ1hym35rJzY8SftB4XE2",
+  "timeline": "https://claude.ai/artifact/BisRmQP7NuaCPWMiWRy9SL",
+  "voices": "https://claude.ai/artifact/UjY93KkqJ4jPorVratmTcd"
  },
  "flow_project": "18488ea0-30a2-4f48-9ebe-303245074be1",
  "video": {
@@ -30,5 +32,11 @@
   "mode": "Frames",
   "duration": 8
  },
- "flow_project_2": "6081d7c5-19b5-4985-b1d1-f7fd404aa4dd"
+ "flow_project_2": "6081d7c5-19b5-4985-b1d1-f7fd404aa4dd",
+ "cut": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/cut/r1/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/cut/r1/preview.mp4",
+  "script": "python3 scripts/shorts/retreat_cut.py --round 1",
+  "round": 1
+ }
 }

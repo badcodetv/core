@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r2/GONG-a.jpg",
+ "made": "2026-11-21T19:29:26.892Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Change only the man in the balaclava: under his white linen staff shirt he now wears a thin navy roll-neck jumper that comes right up inside the balaclava, so no neck shows, and its long sleeves reach down inside his black leather gloves, so no wrist or arm shows anywhere. Not a single patch of his skin is visible. His balaclava, its white ring and red triangle, the card machine, the guru, the gong and the room stay exactly the same.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/GONG-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/GONG-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "78deda37-c4a7-4e2a-aa57-2f380d1dc856"
+}

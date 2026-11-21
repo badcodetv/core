@@ -11,7 +11,7 @@ Jack's structure (2026-11-21): the Ram Dass quote on screen over a sunset → th
 3. **The circle (5 s).** A meditation circle on cushions under a bamboo pavilion. The guru (linen, crystals, bare feet):
    - GURU: "Let go of every attachment." *(joke, claude)*
    - Her brother, the bro (gilet, smartwatch), eyes shut, whispering into a phone hidden in his sleeve: "Sell. Sell it all." *(joke, claude)*
-4. **The gong (3 s).** She strikes a huge gong; a card machine is held out: "That's forty for the gong." *(joke, claude; BadCode on the card machine, optional)*
+4. **The gong (3 s).** She strikes a huge gong; a card machine is held out: "That's forty quid for the gong." *(joke, claude; BadCode on the card machine, optional)*
 5. **The gift shop (2 s).** EXIT THROUGH GIFT SHOP. Rocks at £80 each; a mug: NON-ATTACHMENT £24. *(joke, claude)*
 6. **The groundskeeper (5 s).** Behind the resort, an old groundskeeper on his break, flask of tea, watching the wind move
    through the trees. Actually calm. No words. (Jack)

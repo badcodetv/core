@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/video/the-retreat-R06b-R06.mp4",
+ "made": "2026-11-21T19:39:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked camera. Immediately a gust sweeps across the treetops from right to left, the high leaves streaming and the slender trunks swaying; the hedge beneath shivers. The groundskeeper's eyes follow it slowly across the canopy, his head turning a little, a faint peaceful look on his weathered face. He breathes out, raises the cup in both hands for a slow sip, then lowers it and keeps watching the trees. The wheelbarrow, the flask and the thatched roof behind stay still. Grey, soft light, gentle and unhurried.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R06.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R06.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-retreat/scenes/the-retreat",
+  "key": "R06b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T19:38:05.218Z"
+ }
+}

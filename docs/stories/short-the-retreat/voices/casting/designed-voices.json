@@ -1,0 +1,47 @@
+{
+ "guru-a": {
+  "id": "voice_2hbbf9ooa1og",
+  "role": "guru",
+  "desc": "A Surrey woman of about forty, a wellness influencer: breathy, slow, soothing, every word drawn out like a guided meditation, a faint vocal fry, completely sure of herself."
+ },
+ "guru-b": {
+  "desc": "A West London woman of about forty who spent a gap year in Bali and never let it go: warm, airy, sing-song, a soft upward lilt, posh vowels gone hippy.",
+  "role": "guru",
+  "id": "voice_1a733as72nk8"
+ },
+ "guru-c": {
+  "desc": "A Brighton woman of about forty, a sound-bath teacher: low, hushed, very calm, half-whispered, long pauses between words.",
+  "role": "guru",
+  "id": "voice_x8wbt0yox2iv"
+ },
+ "bro-a": {
+  "desc": "An Essex man of about thirty-eight, a City trader: a tense, urgent whisper, clipped, quick, trying not to be overheard.",
+  "role": "bro",
+  "id": "voice_xmzel6byqakt"
+ },
+ "bro-b": {
+  "desc": "A Home Counties man of about thirty-eight, private-school, a hedge-fund type: a sharp, posh, hissed whisper, impatient, used to being obeyed.",
+  "role": "bro",
+  "id": "voice_n0s3wr14pf1x"
+ },
+ "bro-c": {
+  "desc": "A South London man of about thirty-eight, a crypto investor: a hushed, excited whisper, fast, barely holding it in.",
+  "role": "bro",
+  "id": "voice_0582aquhdmpr"
+ },
+ "badcode-a": {
+  "desc": "A Yorkshire man of about fifty, retreat staff: flat, deadpan, polite, utterly unbothered, a till assistant reading out a total.",
+  "role": "badcode",
+  "id": "voice_8vlvvansgjt8"
+ },
+ "badcode-b": {
+  "desc": "A Bristol man of about forty, retreat staff: friendly, dry, matter-of-fact, the faint smile of someone who knows exactly what this place is.",
+  "role": "badcode",
+  "id": "voice_x2w4m5w3ib7a"
+ },
+ "badcode-c": {
+  "desc": "A Midlands man of about sixty, retreat staff: slow, gentle, deadpan, a little weary, like a car park attendant.",
+  "role": "badcode",
+  "id": "voice_2xknla096e0a"
+ }
+}

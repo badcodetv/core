@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r2/DOG-b.jpg",
+ "made": "2026-11-21T19:31:12.348Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Add one thing to this picture: a scruffy little brown-and-white terrier cross with a wiry coat and one floppy ear has just run up to the groundskeeper and stands with its front paws on his knee, tail up, looking at him. He has one rough hand on the dog's head, petting it, while his face stays turned up to the swaying trees with a small easy smile. Everything else stays as it is: the garden, the wheelbarrow, the flask, the resort roofs behind, the soft natural light.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/KEEPER-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/KEEPER-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "793dda7d-2293-478c-8abc-dca39ec5e606"
+}

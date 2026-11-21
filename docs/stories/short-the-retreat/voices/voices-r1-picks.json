@@ -1,0 +1,92 @@
+{
+ "title": "Retreat Voices",
+ "eyebrow": "BadCode Shorts \u00b7 The Retreat \u00b7 voices round 1",
+ "heading": "The Retreat: voices",
+ "intro": "Three English voices per role, each reading its line. Every take checked word by word. The gong line is now \"That's forty quid for the gong\" (plain \"forty\" kept getting swallowed).",
+ "sections": [
+  {
+   "h": "Pick one per role",
+   "lede": "Claude can't hear these; any pick of Claude's would be a guess from the descriptions.",
+   "groups": [
+    {
+     "slot": "guru",
+     "title": "The guru",
+     "line": "\"Let go of every attachment.\" (claude (joke draft))",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/01-attachment--guru-a.mp3",
+       "label": "a: Surrey, breathy guided meditation",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/01-attachment--guru-b.mp3",
+       "label": "b: West London gone Bali, sing-song",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/01-attachment--guru-c.mp3",
+       "label": "c: Brighton sound-bath, hushed",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "bro",
+     "title": "The bro (whispering into his sleeve)",
+     "line": "\"Sell. Sell it all.\" (claude (joke draft))",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/02-sell--bro-a.mp3",
+       "label": "a: Essex City trader, urgent",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/02-sell--bro-b.mp3",
+       "label": "b: posh hedge-fund hiss",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/02-sell--bro-c.mp3",
+       "label": "c: South London crypto, excited",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "badcode",
+     "title": "BadCode on the card machine",
+     "line": "\"That's forty quid for the gong.\" (claude (joke draft))",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/03-gong--badcode-a.mp3",
+       "label": "a: Yorkshire, flat till voice",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/03-gong--badcode-b.mp3",
+       "label": "b: Bristol, dry, knowing",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/03-gong--badcode-c.mp3",
+       "label": "c: Midlands, weary car-park attendant",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

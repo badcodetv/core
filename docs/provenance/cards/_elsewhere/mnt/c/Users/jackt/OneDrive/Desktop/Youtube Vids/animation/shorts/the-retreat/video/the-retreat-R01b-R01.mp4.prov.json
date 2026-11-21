@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/video/the-retreat-R01b-R01.mp4",
+ "made": "2026-11-21T19:38:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A very slow, steady sideways glide to the right begins straight away, so the bamboo and palm shift gently against the distant hills, a soft parallax. At the same time the leaves rustle in a light wind and sunlight glitters through the gaps in the bamboo, the sun's glow pulsing softly as branches move over it. Mist hangs and creeps along the far valleys. The thatched roofs stay still. The top of the frame is open, cloudless sky the whole time, a clean warm gradient. Peaceful, slow, natural evening light.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R01.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R01.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-retreat/scenes/the-retreat",
+  "key": "R01b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T19:35:57.768Z"
+ }
+}

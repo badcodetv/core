@@ -35,6 +35,7 @@ design them with an English region, never just "British".
 - **The groundskeeper is face K2** (flat cap, broken nose, patchy grey beard), made on the empty-garden layout `j8xUK4ijoj0`.
   The first face (from the old man in Unsplash `fHWqP29e6Eo`) was refused by Flow as a possible "prominent person" on
   upload: never use that photo or that face again.
+- BadCode on the card machine wears a navy roll-neck under the linen staff shirt, sleeves into the gloves: no neck, wrist or arm skin (Jack, 2026-11-21: "no skin for badcode guy").
 - The groundskeeper is a real person, never BadCode (in BadCode's story the AI is the one thing that can't feel the wind).
 - BadCode (the balaclava) is optional here; if he appears, he is retreat staff (e.g. on the card machine), never the joke's target.
 - Jack and Kai write the jokes; Claude's drafts are marked as Claude's.

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/video/the-retreat-R03a-R03.mp4",
+ "made": "2026-11-21T19:39:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Fixed camera, framing unchanged. The man in the navy gilet in the foreground sits cross-legged with his eyes shut, his fist at his mouth; immediately his lips murmur quickly behind his hand as he whispers into the phone tucked in his shirt cuff, his head bowing a fraction toward his wrist, shoulders hunched. Behind him on the right, softly out of focus, the woman in white keeps her palms open on her knees and speaks slowly and calmly, her hands lifting slightly with the words. The woman on the left stays perfectly still with closed eyes and closed lips, breathing gently, and the guest at the far right edge stays still with closed lips. Soft morning light, leaves moving faintly outside the bamboo arches.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R03.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R03.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-retreat/scenes/the-retreat",
+  "key": "R03a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T19:37:01.288Z"
+ }
+}

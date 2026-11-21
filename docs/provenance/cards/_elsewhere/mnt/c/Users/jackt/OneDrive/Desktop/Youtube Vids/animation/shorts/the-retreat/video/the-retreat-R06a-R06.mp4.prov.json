@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/video/the-retreat-R06a-R06.mp4",
+ "made": "2026-11-21T19:40:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked camera, framing unchanged. From the first moment a strong wind moves through the tall trees at the top: branches bend and leaves stream sideways in long waves, the bushes behind him rustling. The old groundskeeper sits on the mossy rock, gazing up at the treetops, relaxed and content. After a moment he lifts the tin cup with both hands, takes one slow sip of tea, and lowers it to rest on his knee again, still looking up at the trees. His cap stays on. The wheelbarrow and the flask on the grass stay still. Overcast daylight, real footage, quiet and calm.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R06.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R06.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-retreat/scenes/the-retreat",
+  "key": "R06a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T19:39:27.417Z"
+ }
+}

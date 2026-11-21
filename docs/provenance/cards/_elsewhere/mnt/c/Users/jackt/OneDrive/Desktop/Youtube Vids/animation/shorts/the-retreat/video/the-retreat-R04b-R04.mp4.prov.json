@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/video/the-retreat-R04b-R04.mp4",
+ "made": "2026-11-21T19:38:11+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Fixed camera. Immediately the man in the balaclava extends the card machine toward the lens in one smooth, unhurried move, stops, and holds it out, steady, his masked head tilting a tiny degree as if waiting. Behind him the gong is still ringing visibly: its surface quivers and the whole disc rocks gently back and forth, catching the light. The woman in white stands serene, eyes closed, lips closed, breathing slowly, the mallet hanging at her side. His navy balaclava keeps its white ring and red triangle over his left eye exactly as they are; navy roll-neck up to the chin, black gloves sealed against his navy cuffs. The keypad stays identical. Bright tropical daylight, real footage.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R04.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R04.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-retreat/scenes/the-retreat",
+  "key": "R04b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T19:36:55.272Z"
+ }
+}
