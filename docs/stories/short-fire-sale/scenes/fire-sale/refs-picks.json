@@ -1,0 +1,133 @@
+{
+ "title": "Fire Sale Look Refs",
+ "eyebrow": "Fire Sale · look references",
+ "heading": "Fire Sale: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "cozy cottage living room",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BXIlH_nODgw",
+       "src": "unsplash/BXIlH_nODgw.jpg",
+       "label": "Sunlight streams into a room with a floral sofa · Vitalii Khodzinskyi"
+      },
+      {
+       "id": "AoWV295_E7w",
+       "src": "unsplash/AoWV295_E7w.jpg",
+       "label": "A cozy living room with a wooden wall, sofa, and lit candles · Ahmet Yüksek ✪"
+      },
+      {
+       "id": "cMr1SFgXrN8",
+       "src": "unsplash/cMr1SFgXrN8.jpg",
+       "label": "A cozy living room with a wooden sofa, candles, and windows  · Ahmet Yüksek ✪"
+      },
+      {
+       "id": "HwESU4g2F30",
+       "src": "unsplash/HwESU4g2F30.jpg",
+       "label": "a wicker chair and foot stool in a kitchen · Zane Persaud"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "old armchair living room lamp",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Hl3fvUU48Lw",
+       "src": "unsplash/Hl3fvUU48Lw.jpg",
+       "label": "brown wooden 2 drawer chest beside brown sofa chair · Alec Krum"
+      },
+      {
+       "id": "zBR_BtgRhMU",
+       "src": "unsplash/zBR_BtgRhMU.jpg",
+       "label": "A vintage living room with green wallpaper and ornate furnit · Erik Mclean"
+      },
+      {
+       "id": "ZvjrQQ5kBI8",
+       "src": "unsplash/ZvjrQQ5kBI8.jpg",
+       "label": "Brown armchair illuminated by a hanging lamp · Apekshit Srivastava"
+      },
+      {
+       "id": "xQmvihdTwrU",
+       "src": "unsplash/xQmvihdTwrU.jpg",
+       "label": "A lamp sits on a table between two chairs · Miah Dailey"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "auction paddle",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "898EGvsE-18",
+       "src": "unsplash/898EGvsE-18.jpg",
+       "label": "yellow and black kayak on blue sea · Emilia Morariu"
+      },
+      {
+       "id": "gVhyeqWK8UI",
+       "src": "unsplash/gVhyeqWK8UI.jpg",
+       "label": "gold-colored boat oar above sea water during golden hour · Ian Keefe"
+      },
+      {
+       "id": "Gak4WD4mNIM",
+       "src": "unsplash/Gak4WD4mNIM.jpg",
+       "label": "brown wooden board on brown wooden surface · Drew Taylor"
+      },
+      {
+       "id": "3wpfbyCO8Cs",
+       "src": "unsplash/3wpfbyCO8Cs.jpg",
+       "label": "a white spoon with a long handle on a black background · Evie S."
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "auctioneer",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    },
+    {
+     "slot": "ref-5",
+     "title": "wedding marquee interior",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "hw_sKmjb0ns",
+       "src": "unsplash/hw_sKmjb0ns.jpg",
+       "label": "clear long-stem wine glasses on table · Evelina Friman"
+      },
+      {
+       "id": "xdOWd_RV8mQ",
+       "src": "unsplash/xdOWd_RV8mQ.jpg",
+       "label": "a wedding reception setup with white chairs and pink tablecl · ISKRA Photography"
+      },
+      {
+       "id": "UtMFKdnxqfM",
+       "src": "unsplash/UtMFKdnxqfM.jpg",
+       "label": "a table is set for a formal dinner · ISKRA Photography"
+      },
+      {
+       "id": "B9MKtnDLZrw",
+       "src": "unsplash/B9MKtnDLZrw.jpg",
+       "label": "Tables with botanical print tablecloths and white chairs in  · Annie Spratt"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
