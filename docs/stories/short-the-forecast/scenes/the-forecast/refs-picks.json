@@ -1,0 +1,118 @@
+{
+ "title": "The Forecast Look Refs",
+ "eyebrow": "The Forecast · look references",
+ "heading": "The Forecast: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "news studio",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "w_zE6qlkQKA",
+       "src": "unsplash/w_zE6qlkQKA.jpg",
+       "label": "man in black and white checkered dress shirt sitting on blac · ThisisEngineering"
+      },
+      {
+       "id": "Krkr1WhLV-4",
+       "src": "unsplash/Krkr1WhLV-4.jpg",
+       "label": "man in white and black plaid button up shirt and black pants · ThisisEngineering"
+      },
+      {
+       "id": "GRUhkcD9k8o",
+       "src": "unsplash/GRUhkcD9k8o.jpg",
+       "label": "a person sitting at a table · Videodeck .co"
+      },
+      {
+       "id": "ntZM993INp0",
+       "src": "unsplash/ntZM993INp0.jpg",
+       "label": "man in white button up shirt standing on sidewalk during day · ThisisEngineering"
+      },
+      {
+       "id": "lfCEeTOyoXo",
+       "src": "unsplash/lfCEeTOyoXo.jpg",
+       "label": "a camera on a tripod · Videodeck .co"
+      },
+      {
+       "id": "qwPIDEckl70",
+       "src": "unsplash/qwPIDEckl70.jpg",
+       "label": "A woman with long dark hair and gold hoop earrings looking f · Vitaly Gariev"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "tv studio floor",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    },
+    {
+     "slot": "ref-3",
+     "title": "studio video wall screen",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    },
+    {
+     "slot": "ref-4",
+     "title": "television presenter studio",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    },
+    {
+     "slot": "ref-5",
+     "title": "newsroom set",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    },
+    {
+     "slot": "ref-6",
+     "title": "behind the scenes tv studio",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "7zAsfRmj6p4",
+       "src": "unsplash/7zAsfRmj6p4.jpg",
+       "label": "a photo studio with a camera and a light · nik radzi"
+      },
+      {
+       "id": "Av7fp7AqJr0",
+       "src": "unsplash/Av7fp7AqJr0.jpg",
+       "label": "a man sitting at a desk in front of a laptop computer · Jakob Owens"
+      },
+      {
+       "id": "w_zE6qlkQKA",
+       "src": "unsplash/w_zE6qlkQKA.jpg",
+       "label": "man in black and white checkered dress shirt sitting on blac · ThisisEngineering"
+      },
+      {
+       "id": "59F1pEb9GY8",
+       "src": "unsplash/59F1pEb9GY8.jpg",
+       "label": "a black and white photo of a group of people in a room · Drew Walker"
+      },
+      {
+       "id": "ptpljST64Uc",
+       "src": "unsplash/ptpljST64Uc.jpg",
+       "label": "a man sitting at a desk in front of a camera · Jakob Owens"
+      },
+      {
+       "id": "fnjxpnaivnE",
+       "src": "unsplash/fnjxpnaivnE.jpg",
+       "label": "a group of people sitting around a camera · Jakob Owens"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

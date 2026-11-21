@@ -4,10 +4,33 @@
  "title": "The Forecast",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast",
  "beats": [
-  {"id": "forecast", "t": "0-7", "what": "The economy forecast as weather"},
-  {"id": "reveal", "t": "7-12", "what": "The man with the desk fan off-set"},
-  {"id": "way-out", "t": "12-17", "what": "Name tags on every cloud"},
-  {"id": "button", "t": "17-19", "what": "The fan turned round on him"}
+  {
+   "id": "forecast",
+   "t": "0-7",
+   "what": "The economy forecast as weather"
+  },
+  {
+   "id": "reveal",
+   "t": "7-12",
+   "what": "The man with the desk fan off-set"
+  },
+  {
+   "id": "way-out",
+   "t": "12-17",
+   "what": "Name tags on every cloud"
+  },
+  {
+   "id": "button",
+   "t": "17-19",
+   "what": "The fan turned round on him"
+  }
  ],
- "boards": {}
+ "boards": {},
+ "flow_project": "44f7c34b-9f55-48c4-a688-3f1207971ee9",
+ "video": {
+  "aspect": "9:16",
+  "model": "Omni 1.2 Flash",
+  "mode": "Frames",
+  "duration": 8
+ }
 }

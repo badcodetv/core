@@ -11,7 +11,14 @@ across the map with a desk fan. The way out: every cloud gets a name tag (who de
 Chancellor policy `the-ledger`. State: script draft 1 ([script.md](./script.md)), nothing generated.
 
 ## Look
-Not decided — run story-style (or a quick pick). Flow project: none yet.
+Status: EXPLORING (stills round 1). Jack, 2026-11-21: "Real TV studio": real-looking, built from Unsplash layouts:
+`Krkr1WhLV-4` (news studio floor, the weather set), `Av7fp7AqJr0` (studio with light stands: off-set), `fnjxpnaivnE`
+(past a camera operator's shoulder: the pull-back). Bright even light on set, darker and messier off-set. An invented
+channel: no real broadcaster's look. Only words: RENT, PRICES, WAGES on the clouds; the name tags THE TREASURY,
+BANK RATE, LANDLORDS' LOBBY, ENERGY FIRMS.
+- Cast (portraits first): the presenter (BadCode in the navy balaclava, navy suit, pale blue shirt buttoned to the mask,
+  plain tie, gloves, a clicker); the man with the fan (invented, ~55, slicked grey hair, navy pinstripe, red-and-gold tie).
+Flow project: `44f7c34b-9f55-48c4-a688-3f1207971ee9` (shown in Flow as "Nov 21 - 16:51"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
 Not decided. Any Suno track is music and sound only; every spoken line is an AI Studio voice. Voices must sound English:
@@ -27,7 +34,11 @@ design them with an English region, never just "British".
 - Run `scripts/variations/fresh.py --story short-the-forecast` over every new prompt and line, and say the result.
 
 ## Library pieces in use
-- none yet
+- **Real photo as the look** (Jack, "Real TV studio"): an Unsplash photo is each still's layout; never an AI figure pasted into a real photo.
+- **Clean room:** prompts written by a sealed writer from one brief (`scenes/the-forecast/cleanroom/`).
+- **The BadCode balaclava:** the presenter. Attach `docs/brand/balaclava/mask-reference.jpg` with the line "The balaclava
+  exactly as in the attached image: no holes, no skin, gloves." Collar up to the mask (no neck); check which EYE the
+  triangle is over on a turned head.
 
 ## Where the detail is
 - [README.md](./README.md), [script.md](./script.md), rulings [scenes/the-forecast/picks.md](./scenes/the-forecast/picks.md)
