@@ -5,11 +5,12 @@
 > Library pieces this story uses are listed below; nothing else from `docs/library/` applies.
 
 ## What it is
-A BadCode short (9:16 offered, not ruled; aim 15-20 s). A family queues at a counter for power; a giant data centre
-pushes in front; the bouncer sends it to the back: "Households first." The point: homes come first on the grid; big
+A BadCode short (9:16 offered, not ruled; aim 15-20 s). A Post Office-style queue where every window says POWER
+("Cashier number three, please"); a giant data centre pushes in front; the cashier (BadCode in the balaclava) sends it
+to the back: "Brilliant machine. Wrong queue." "Households first." The point: homes come first on the grid; big
 new loads switch down first and pay for their own wires. From the BadCode government's Energy and Climate policy
 `households-first`, in that minister's voice (the engineer who can't stop being excited, sharp when someone profits
-from a shortage). State: script draft 1, nothing generated.
+from a shortage). State: script draft 2 ([script.md](./script.md)), nothing generated.
 
 ## Look
 Not decided — run story-style (or a quick pick on the mood board). Flow project: none yet.
