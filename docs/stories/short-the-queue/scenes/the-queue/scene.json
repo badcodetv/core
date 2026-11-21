@@ -1,0 +1,13 @@
+{
+ "story": "short-the-queue",
+ "scene": "the-queue",
+ "title": "The Queue",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-queue",
+ "beats": [
+  {"id": "queue", "t": "0-4", "what": "A plain queue at a counter marked POWER"},
+  {"id": "barge", "t": "4-8", "what": "A giant data centre barges to the front"},
+  {"id": "bouncer", "t": "8-13", "what": "Brilliant machine. Wrong queue."},
+  {"id": "way-out", "t": "13-16", "what": "Households first: the kettle boils"}
+ ],
+ "boards": {}
+}
