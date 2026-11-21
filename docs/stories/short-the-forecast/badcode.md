@@ -21,10 +21,16 @@ BANK RATE, LANDLORDS' LOBBY, ENERGY FIRMS.
 Flow project: `44f7c34b-9f55-48c4-a688-3f1207971ee9` (shown in Flow as "Nov 21 - 16:51"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
-Not decided. Any Suno track is music and sound only; every spoken line is an AI Studio voice. Voices must sound English:
+Voice: the presenter is `presenter-b` (Jack's pick, 2026-11-21): a dry Yorkshire weatherman from Leeds in his fifties, AI Studio
+voice `voice_ampe3xv1sq8t` (designs in `voices/casting/designed-voices.json`). Music: not decided. Any Suno track is music and sound only; every spoken line is an AI Studio voice. Voices must sound English:
 design them with an English region, never just "British".
 
 ## Story-only rules
+- **The presenter's mask is a sunshine-yellow chunky knit with a yellow pompom** (2026-11-21): Flow refused every clip of the
+  navy-masked presenter on the lit news set (6 tries, any wording); an empty set and the masked man off-set both animated,
+  so the guess is a masked man on a news set reads as a hostage or extremist video. The yellow bobble mask animated at
+  once. Still refused in yellow: the pull-back past the camera crew (F02); it is a pull-back on the still instead.
+  Keep "broadcast" and "footage" out of motion prompts.
 - The presenter is BadCode in the balaclava (white ring, red triangle over his left eye, gloves, no skin, collar up to
   the mask); masked, so no lip-sync. Keep him facing the camera.
 - The man with the fan is an invented man in a suit: no real politician's face or name. The name tags say roles and

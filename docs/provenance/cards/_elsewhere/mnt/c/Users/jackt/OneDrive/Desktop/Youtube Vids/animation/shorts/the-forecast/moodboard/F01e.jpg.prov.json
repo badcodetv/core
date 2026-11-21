@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F01e.jpg",
+ "made": "2026-11-21T17:40:39.907Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Remove the man in the navy suit standing beside the screen; where he stood, show the empty glossy studio floor and the curved set behind, continuing naturally. Nothing else changes.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F01n.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F01n.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "35a28a52-08c8-4956-9521-cbabd9f82ce6"
+}

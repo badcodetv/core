@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/video/the-forecast-F03b-F03.mp4",
+ "made": "2026-11-21T17:32:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked camera, no movement of the frame. The fan in his hand whirs from the first frame, blades blurred. The crouched man holds his gaze on the lens, frozen for a beat, then slowly presses his lips together in an awkward closed-mouth grin and tips his head a few degrees to one side, as if to say 'yes, that was me'. He keeps the fan held out and running, his arm steady, without putting it down. His striped tie and pinstripe jacket shift faintly with his breathing. The background studio gear stays still and sharp in place. Real-looking, quiet comic moment, soft studio light.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F03.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F03.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-forecast/scenes/the-forecast",
+  "key": "F03b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T17:31:36.588Z"
+ }
+}

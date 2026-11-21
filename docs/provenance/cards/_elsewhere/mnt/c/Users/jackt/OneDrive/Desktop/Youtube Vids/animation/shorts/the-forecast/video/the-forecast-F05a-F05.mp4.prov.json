@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/video/the-forecast-F05a-F05.mp4",
+ "made": "2026-11-21T17:33:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked camera, completely steady frame. The white desk fan in the presenter's gloved hands is running at full speed from the first frame, blades a blur, aimed squarely at the crouched man on the right. The wind hits the man hard: his grey hair streams back and whips about, his striped red tie flaps wildly over his shoulder, the tails of his pinstripe jacket flutter behind him. He screws his eyes into a squint, lips pressed shut, and leans his head and shoulders away from the blast while staying crouched. The masked presenter stands perfectly still and upright, fan held steady at chest height, his mask unchanged with its white ring and red triangle. The cable from the fan sways a little on the floor. The studio background stays still. Real-looking candid studio footage, deadpan.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F05.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F05.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-forecast/scenes/the-forecast",
+  "key": "F05a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T17:31:59.953Z"
+ }
+}

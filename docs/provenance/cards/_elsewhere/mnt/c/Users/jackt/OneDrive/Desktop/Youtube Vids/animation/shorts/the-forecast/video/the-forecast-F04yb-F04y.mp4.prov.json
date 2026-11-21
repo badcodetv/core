@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/video/the-forecast-F04yb-F04y.mp4",
+ "made": "2026-11-21T17:55:15+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A slight, slow push-in toward the map begins at once and stays gentle. The name tags on the clouds sway softly on their strings, each at its own easy rhythm, the writing staying crisp and legible as they move. The presenter lifts his pointing gloved hand a little higher toward WAGES and its BANK RATE tag, then sweeps it right and down to the LANDLORDS' LOBBY tag hanging under RENT, holding the point there with a small firm nod of the head. His balaclava keeps its exact pattern: white ring around the eye opening, red triangle over his left eye. The words stay identical throughout: WAGES, PRICES, RENT, BANK RATE, ENERGY FIRMS, THE TREASURY, LANDLORDS' LOBBY. The studio around him stays still. Bright and playful, a light comedy sketch.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F04y.jpg",
+ "why": "yellow bobble mask round (navy mask on the news set was refused)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F04y.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-forecast/scenes/the-forecast",
+  "key": "F04yb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T17:54:12.838Z"
+ }
+}

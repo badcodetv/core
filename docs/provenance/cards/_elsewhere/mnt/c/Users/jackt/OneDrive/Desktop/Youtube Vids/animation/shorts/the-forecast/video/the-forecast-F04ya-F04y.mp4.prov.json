@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/video/the-forecast-F04ya-F04y.mp4",
+ "made": "2026-11-21T17:55:51+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera holds still. The white paper tags hanging from the cartoon clouds on the big screen swing gently on their strings. The man in the navy suit points his gloved finger from one tag to the next, unhurried. His yellow knitted bobble hat-mask keeps its white ring and small red triangle unchanged. Every word on the clouds and tags stays sharp and unchanged. Bright and playful, a light comedy sketch.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F04y.jpg",
+ "why": "yellow bobble mask round (navy mask on the news set was refused)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F04y.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-forecast/scenes/the-forecast",
+  "key": "F04ya",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T17:54:40.615Z"
+ }
+}

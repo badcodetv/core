@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/video/the-forecast-F03a-F03.mp4",
+ "made": "2026-11-21T17:32:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static locked camera, frame completely steady. The white desk fan in the crouching man's outstretched hand is running, its blades a fast soft blur. He keeps looking straight up into the lens with the same caught, sheepish expression, then gives a small guilty half-smile, eyebrows lifting a touch, lips closed. His shoulders rise in a tiny shrug and settle. The fan stays pointed off to the right and keeps spinning the whole time; the cable on the floor twitches slightly. A few strands of his slicked grey hair stir in the air. The softbox light, the chair, the camera rig and the studio behind him stay still. Real candid studio footage, natural colour.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F03.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F03.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-forecast/scenes/the-forecast",
+  "key": "F03a",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T17:30:11.618Z"
+ }
+}

@@ -69,6 +69,104 @@
    "still": "F05",
    "motion": "Locked camera, frame steady. At once the fan roars into a stronger gust, blades blurred, the presenter holding it motionless and aimed at the crouched man. The man's hair flattens back then flickers in the turbulence, his tie snaps and flutters out to the side, his jacket billows; he raises one hand halfway toward his face to shield his eyes, squinting and turning his head slightly away, mouth kept shut. He wobbles a little on his heels but stays down in his crouch. The presenter in the balaclava does not move at all, standing like a statue with the fan held level, his white-ringed mask and red triangle exactly as before. The cluttered studio behind them stays still. Real studio footage, dry comic tone, natural light.",
    "why": "clips round 1 (sealed writer)"
+  },
+  {
+   "key": "F01c",
+   "n": 1,
+   "still": "F01",
+   "motion": "The camera holds still. The cartoon clouds on the big screen drift slowly: the dark RENT cloud slides down and settles over London, the other two clouds ease sideways a little, the white arrows pulse. The man in the navy suit beside the screen moves his open gloved hand down to follow the RENT cloud, then turns his head slightly to the screen and back. His knitted head covering keeps its white ring and small red triangle unchanged. The words on the clouds stay sharp and unchanged. Calm, bright, playful, a light comedy sketch.",
+   "why": "re-run: F01/F02/F04 refused (guess: news-broadcast wording); no broadcast or footage words"
+  },
+  {
+   "key": "F02c",
+   "n": 1,
+   "still": "F02",
+   "motion": "The camera eases slowly backwards and a little to the right. On the right, the crouching man in the pinstripe suit holds a small white desk fan aimed at the bright set; its blades spin to a blur, his grey hair and striped tie flutter. On the screen at the left, the cartoon clouds slide the way the fan blows. The man in the navy suit on the set holds his pose. Everything else stays still. Bright and playful, a light comedy sketch.",
+   "why": "re-run: F01/F02/F04 refused (guess: news-broadcast wording); no broadcast or footage words"
+  },
+  {
+   "key": "F04c",
+   "n": 1,
+   "still": "F04",
+   "motion": "The camera holds still. The white paper tags hanging from the cartoon clouds on the big screen swing gently on their strings. The man in the navy suit points his gloved finger from one tag to the next, unhurried. His knitted head covering keeps its white ring and small red triangle unchanged. Every word on the clouds and tags stays sharp and unchanged. Bright and playful, a light comedy sketch.",
+   "why": "re-run: F01/F02/F04 refused (guess: news-broadcast wording); no broadcast or footage words"
+  },
+  {
+   "key": "F01n",
+   "n": 1,
+   "still": "F01n",
+   "motion": "The camera holds still. The plain cartoon clouds on the big screen drift slowly: the dark cloud slides down and settles over London, the other two ease sideways a little, the white arrows pulse. The man in the navy suit beside the screen moves his open gloved hand down to follow the dark cloud, then turns his head slightly to the screen and back. His knitted head covering keeps its white ring and small red triangle unchanged. Calm, bright, playful, a light comedy sketch.",
+   "why": "test: F01 with blank clouds (are the words what Flow refuses?)"
+  },
+  {
+   "key": "F01e",
+   "n": 1,
+   "still": "F01e",
+   "motion": "The camera holds still on the empty set. The plain cartoon clouds on the big screen drift slowly: the dark cloud slides down and settles over London, the other two ease sideways a little, the white arrows pulse. The lights glint softly on the glossy floor. Calm, bright, playful.",
+   "why": "test: the set with nobody in it (is it the masked man on the set?)"
+  },
+  {
+   "key": "F01y",
+   "n": 1,
+   "still": "F01y",
+   "motion": "The camera holds still. The cartoon clouds on the big screen drift slowly: the dark RENT cloud slides down and settles over London, the other two clouds ease sideways a little, the white arrows pulse. The man in the navy suit beside the screen moves his open gloved hand down to follow the RENT cloud, then turns his head slightly to the screen and back. His yellow knitted bobble hat-mask keeps its white ring and small red triangle unchanged, the pompom bobbing slightly. The words on the clouds stay sharp and unchanged. Calm, bright, playful, a light comedy sketch.",
+   "why": "test: yellow bobble balaclava on the set (navy mask + news set was refused)"
+  },
+  {
+   "key": "F01y2",
+   "n": 1,
+   "still": "F01y",
+   "motion": "A very slow, smooth push-in toward the presenter and the map starts immediately and continues gently through the clip. At once the RENT cloud slides down the map from the east of England toward London in the bottom right of the country and comes to rest there, drawn like a weather graphic, its lettering sharp the whole way. The presenter, standing at left in a navy suit and balaclava, sweeps his extended open gloved hand from the middle of the map down to London in one easy, presenter-like gesture, a small shift of weight onto his front foot, then holds the hand there, palm up, as if presenting bad news calmly. His head turns slightly toward the cloud, then back toward the lens. The mask keeps its exact pattern: white ring around the eye opening, red triangle over his left eye. WAGES and PRICES stay where they are, readable and unchanged. Real television studio look, even soft light. Bright and playful, a light comedy sketch.",
+   "why": "yellow bobble mask round (navy mask on the news set was refused)"
+  },
+  {
+   "key": "F02ya",
+   "n": 1,
+   "still": "F02y",
+   "motion": "The camera eases slowly backwards and a little to the right. On the right, the crouching man in the pinstripe suit holds a small white desk fan aimed at the bright set; its blades spin to a blur, his grey hair and striped tie flutter. On the screen at the left, the cartoon clouds slide the way the fan blows. The man in the navy suit on the set holds his pose; his yellow bobble mask unchanged. Everything else stays still. Bright and playful, a light comedy sketch.",
+   "why": "yellow bobble mask round (navy mask on the news set was refused)"
+  },
+  {
+   "key": "F02yb",
+   "n": 1,
+   "still": "F02y",
+   "motion": "Camera starts moving straight away: a gentle pull-back with a slight sideways slide to the right, revealing more of the dark studio floor and keeping the crouched man with the fan near the centre. His desk fan whirs, blades blurred, pointed left toward the presenter's set; he tilts it a fraction to the left as if steering the wind, his tie flutters and his hair stirs. Up on the weather screen at left the cloud icons drift left across the map in time with his small tilt. The presenter in the balaclava stands on the lit set, turning his head slightly toward the screen and opening one gloved hand toward it, his mask staying exactly as it is: white ring, red triangle over his left eye. The camera operator in the right foreground remains still, back to us. Real studio, behind-the-scenes look, warm and cool practical lights. Bright and playful, a light comedy sketch.",
+   "why": "yellow bobble mask round (navy mask on the news set was refused)"
+  },
+  {
+   "key": "F04ya",
+   "n": 1,
+   "still": "F04y",
+   "motion": "The camera holds still. The white paper tags hanging from the cartoon clouds on the big screen swing gently on their strings. The man in the navy suit points his gloved finger from one tag to the next, unhurried. His yellow knitted bobble hat-mask keeps its white ring and small red triangle unchanged. Every word on the clouds and tags stays sharp and unchanged. Bright and playful, a light comedy sketch.",
+   "why": "yellow bobble mask round (navy mask on the news set was refused)"
+  },
+  {
+   "key": "F04yb",
+   "n": 1,
+   "still": "F04y",
+   "motion": "A slight, slow push-in toward the map begins at once and stays gentle. The name tags on the clouds sway softly on their strings, each at its own easy rhythm, the writing staying crisp and legible as they move. The presenter lifts his pointing gloved hand a little higher toward WAGES and its BANK RATE tag, then sweeps it right and down to the LANDLORDS' LOBBY tag hanging under RENT, holding the point there with a small firm nod of the head. His balaclava keeps its exact pattern: white ring around the eye opening, red triangle over his left eye. The words stay identical throughout: WAGES, PRICES, RENT, BANK RATE, ENERGY FIRMS, THE TREASURY, LANDLORDS' LOBBY. The studio around him stays still. Bright and playful, a light comedy sketch.",
+   "why": "yellow bobble mask round (navy mask on the news set was refused)"
+  },
+  {
+   "key": "F05ya",
+   "n": 1,
+   "still": "F05y",
+   "motion": "Static locked camera, completely steady frame. The white desk fan in the presenter's gloved hands is running at full speed from the first frame, blades a blur, aimed squarely at the crouched man on the right. The wind hits the man hard: his grey hair streams back and whips about, his striped red tie flaps wildly over his shoulder, the tails of his pinstripe jacket flutter behind him. He screws his eyes into a squint, lips pressed shut, and leans his head and shoulders away from the blast while staying crouched. The masked presenter stands perfectly still and upright, fan held steady at chest height, his mask unchanged with its white ring and red triangle. The cable from the fan sways a little on the floor. The studio background stays still. Bright and playful, a light comedy sketch.",
+   "why": "yellow bobble mask round (navy mask on the news set was refused)"
+  },
+  {
+   "key": "F05yb",
+   "n": 1,
+   "still": "F05y",
+   "motion": "Locked camera, frame steady. At once the fan roars into a stronger gust, blades blurred, the presenter holding it motionless and aimed at the crouched man. The man's hair flattens back then flickers in the turbulence, his tie snaps and flutters out to the side, his jacket billows; he raises one hand halfway toward his face to shield his eyes, squinting and turning his head slightly away, mouth kept shut. He wobbles a little on his heels but stays down in his crouch. The presenter in the balaclava does not move at all, standing like a statue with the fan held level, his white-ringed mask and red triangle exactly as before. The cluttered studio behind them stays still. Bright and playful, a light comedy sketch.",
+   "why": "yellow bobble mask round (navy mask on the news set was refused)"
+  },
+  {
+   "key": "F02yc",
+   "n": 1,
+   "still": "F02y",
+   "motion": "The camera holds still. On the right, the crouching man in the pinstripe suit holds a small white desk fan; its blades spin, his grey hair and striped tie flutter. On the big screen at the left the cartoon clouds slide slowly to the left. The man in the yellow bobble hat-mask stands still beside the screen. Calm, bright, playful, a light comedy sketch.",
+   "why": "F02 retry, shortest wording"
   }
  ]
 }

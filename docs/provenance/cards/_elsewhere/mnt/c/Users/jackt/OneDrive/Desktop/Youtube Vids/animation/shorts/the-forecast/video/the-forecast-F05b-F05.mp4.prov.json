@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/video/the-forecast-F05b-F05.mp4",
+ "made": "2026-11-21T17:32:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked camera, frame steady. At once the fan roars into a stronger gust, blades blurred, the presenter holding it motionless and aimed at the crouched man. The man's hair flattens back then flickers in the turbulence, his tie snaps and flutters out to the side, his jacket billows; he raises one hand halfway toward his face to shield his eyes, squinting and turning his head slightly away, mouth kept shut. He wobbles a little on his heels but stays down in his crouch. The presenter in the balaclava does not move at all, standing like a statue with the fan held level, his white-ringed mask and red triangle exactly as before. The cluttered studio behind them stays still. Real studio footage, dry comic tone, natural light.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F05.jpg",
+ "why": "clips round 1 (sealed writer)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F05.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-forecast/scenes/the-forecast",
+  "key": "F05b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T17:31:11.400Z"
+ }
+}

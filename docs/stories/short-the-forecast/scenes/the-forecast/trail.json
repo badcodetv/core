@@ -1,0 +1,9 @@
+[
+ {
+  "at": "2026-11-21T17:58:41+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "what": "rough cut 1, 20.7 s, https://claude.ai/artifact/9Nq2TR7sxK3NUVBUrENasU",
+  "rebuild": "python3 scripts/shorts/forecast_cut.py --round 1"
+ }
+]

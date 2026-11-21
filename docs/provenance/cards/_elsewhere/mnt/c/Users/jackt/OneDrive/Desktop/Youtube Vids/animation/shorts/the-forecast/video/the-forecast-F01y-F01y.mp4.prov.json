@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/video/the-forecast-F01y-F01y.mp4",
+ "made": "2026-11-21T17:45:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera holds still. The cartoon clouds on the big screen drift slowly: the dark RENT cloud slides down and settles over London, the other two clouds ease sideways a little, the white arrows pulse. The man in the navy suit beside the screen moves his open gloved hand down to follow the RENT cloud, then turns his head slightly to the screen and back. His yellow knitted bobble hat-mask keeps its white ring and small red triangle unchanged, the pompom bobbing slightly. The words on the clouds stay sharp and unchanged. Calm, bright, playful, a light comedy sketch.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F01y.jpg",
+ "why": "test: yellow bobble balaclava on the set (navy mask + news set was refused)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F01y.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-forecast/scenes/the-forecast",
+  "key": "F01y",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T17:44:52.686Z"
+ }
+}

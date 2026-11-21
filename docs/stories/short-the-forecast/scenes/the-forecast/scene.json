@@ -25,12 +25,22 @@
    "what": "The fan turned round on him"
   }
  ],
- "boards": {},
+ "boards": {
+  "timeline": "https://claude.ai/artifact/9Nq2TR7sxK3NUVBUrENasU",
+  "stills": "https://claude.ai/artifact/CJf3crHB5tTVE3Thwrsw8w",
+  "voices": "https://claude.ai/artifact/F16Yq2dqdSEnT1kGbnfNqA"
+ },
  "flow_project": "44f7c34b-9f55-48c4-a688-3f1207971ee9",
  "video": {
   "aspect": "9:16",
   "model": "Omni 1.2 Flash",
   "mode": "Frames",
   "duration": 8
+ },
+ "cut": {
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/cut/r1/edl.json",
+  "script": "python3 scripts/shorts/forecast_cut.py --round 1",
+  "round": 1,
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/cut/r1/preview.mp4"
  }
 }

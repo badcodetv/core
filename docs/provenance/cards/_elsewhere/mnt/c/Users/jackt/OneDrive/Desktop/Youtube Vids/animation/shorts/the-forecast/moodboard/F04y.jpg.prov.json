@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F04y.jpg",
+ "made": "2026-11-21T17:47:53.626Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Change only the colour of the presenter's knitted balaclava: make it a cheerful sunshine-yellow chunky knit with a small yellow pompom on top, like a winter bobble hat. Keep its white ring and the small red triangle where they are, over his own left eye; no holes, no skin. His suit and gloves, the map, the clouds, the hanging name tags and every word on them, and the studio stay unchanged.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F04.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/moodboard/F04.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "07494728-7a2f-413d-bde2-e4422b172321"
+}
