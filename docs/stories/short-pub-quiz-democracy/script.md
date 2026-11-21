@@ -1,4 +1,4 @@
-# Pub Quiz: Democracy: script draft 3
+# Pub Quiz: Democracy: script (LOCKED, Jack 2026-11-21: "lets make this")
 
 Jokes drafted by Claude at Jack's ask (2026-11-21: "please write the jokes and I'll improve them"), marked `(joke,
 claude)`. Every other line is a Claude draft too. Plain speech, quick.
@@ -17,7 +17,7 @@ claude)`. Every other line is a Claude draft too. Plain speech, quick.
    horned-cow initiative)*
 8. **BOB:** "So why can't we?"
 9. **The button:** the tourist at the bar: "Can I get the crisps but not the nuts?" QUIZMASTER: "Comes as a set."
-   *(joke, claude: the package, one last time)*
+   *(joke, claude: the package, one last time)* Then **the whole pub: "Why?!"** (Jack, 2026-11-21)
 10. Outro: the pint pour with the logo on the glass.
 
 ## The longer version (~32 s): the extra beats, if there's room

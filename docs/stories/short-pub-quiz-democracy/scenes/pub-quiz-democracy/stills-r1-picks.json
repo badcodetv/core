@@ -1,0 +1,286 @@
+{
+ "title": "Pub Quiz Democracy Stills",
+ "eyebrow": "BadCode Shorts \u00b7 Pub Quiz: Democracy",
+ "heading": "Stills, round 1: every still",
+ "intro": "A countryside pub (Unsplash layouts), the American BadCode quizmaster, and the new table. I've picked one per row and carried on to the clips; overrule any pick or leave a note and I'll redo it. Pollution check: clean (the only repeats outside this short are the brand's balaclava wording, on purpose).",
+ "sections": [
+  {
+   "h": "Portraits (every shot of a person is built from these)",
+   "lede": "Faces big, one per person.",
+   "groups": [
+    {
+     "slot": "QM",
+     "title": "The quizmaster",
+     "line": "BadCode in the balaclava, as an American stereotype.  My pick: QM-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "QM-a",
+       "src": "s/QM-a.jpg",
+       "label": "QM-a",
+       "warn": ""
+      },
+      {
+       "id": "QM-b",
+       "src": "s/QM-b.jpg",
+       "label": "QM-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "T",
+     "title": "The Florida tourist",
+     "line": "  My pick: T-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "T-a",
+       "src": "s/T-a.jpg",
+       "label": "T-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "T-b",
+       "src": "s/T-b.jpg",
+       "label": "T-b",
+       "warn": "a small logo on the fleece sleeve"
+      }
+     ]
+    },
+    {
+     "slot": "S",
+     "title": "The Swiss bloke",
+     "line": "  My pick: S-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S-a",
+       "src": "s/S-a.jpg",
+       "label": "S-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "S-b",
+       "src": "s/S-b.jpg",
+       "label": "S-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "V",
+     "title": "The one-party voter",
+     "line": "  My pick: V-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "V-a",
+       "src": "s/V-a.jpg",
+       "label": "V-a",
+       "warn": ""
+      },
+      {
+       "id": "V-b",
+       "src": "s/V-b.jpg",
+       "label": "V-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Story shots",
+   "lede": "In script order.",
+   "groups": [
+    {
+     "slot": "OUT",
+     "title": "Outside",
+     "line": "Opening establisher (optional).  My pick: OUT-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "OUT-a",
+       "src": "s/OUT-a.jpg",
+       "label": "OUT-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "OUT-b",
+       "src": "s/OUT-b.jpg",
+       "label": "OUT-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "QMASK",
+     "title": "1. The question",
+     "line": "Quizmaster asks.  My pick: QMASK-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "QMASK-a",
+       "src": "s/QMASK-a.jpg",
+       "label": "QMASK-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "QMASK-b",
+       "src": "s/QMASK-b.jpg",
+       "label": "QMASK-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "TABLE",
+     "title": "2. Everyone looks at the tourist",
+     "line": "\"I plead the Fifth.\"  My pick: TABLE-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "TABLE-a",
+       "src": "s/TABLE-a.jpg",
+       "label": "TABLE-a",
+       "warn": ""
+      },
+      {
+       "id": "TABLE-b",
+       "src": "s/TABLE-b.jpg",
+       "label": "TABLE-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "TCU",
+     "title": "5. Tourist close-up",
+     "line": "\"I liked both things.\"  My pick: TCU-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "TCU-a",
+       "src": "s/TCU-a.jpg",
+       "label": "TCU-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "TCU-b",
+       "src": "s/TCU-b.jpg",
+       "label": "TCU-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "VCU",
+     "title": "4 and 6. Voter close-up",
+     "line": "\"So they wanted both?\" / \"You can't just like things\u2026\"  My pick: VCU-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "VCU-a",
+       "src": "s/VCU-a.jpg",
+       "label": "VCU-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "VCU-b",
+       "src": "s/VCU-b.jpg",
+       "label": "VCU-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "SCU",
+     "title": "7. Swiss close-up",
+     "line": "\"\u2026We had a vote on cow horns.\"  My pick: SCU-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "SCU-a",
+       "src": "s/SCU-a.jpg",
+       "label": "SCU-a",
+       "warn": ""
+      },
+      {
+       "id": "SCU-b",
+       "src": "s/SCU-b.jpg",
+       "label": "SCU-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BCU",
+     "title": "8. Bob close-up",
+     "line": "\"So why can't we?\"  My pick: BCU-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BCU-a",
+       "src": "s/BCU-a.jpg",
+       "label": "BCU-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "BCU-b",
+       "src": "s/BCU-b.jpg",
+       "label": "BCU-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BAR",
+     "title": "9. The bar",
+     "line": "\"Can I get the crisps but not the nuts?\" \"Comes as a set.\"  My pick: BAR-a-flip (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BAR-a-flip",
+       "src": "s/BAR-a-flip.jpg",
+       "label": "BAR-a-flip \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "BAR-a",
+       "src": "s/BAR-a.jpg",
+       "label": "BAR-a",
+       "warn": "triangle on the wrong eye (mirrored copy fixes it)"
+      },
+      {
+       "id": "BAR-b",
+       "src": "s/BAR-b.jpg",
+       "label": "BAR-b",
+       "warn": "triangle on the wrong eye"
+      }
+     ]
+    },
+    {
+     "slot": "WHY",
+     "title": "9. The whole pub: \"Why?!\"",
+     "line": "  My pick: WHY-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WHY-a",
+       "src": "s/WHY-a.jpg",
+       "label": "WHY-a",
+       "warn": "triangle on the wrong eye"
+      },
+      {
+       "id": "WHY-b",
+       "src": "s/WHY-b.jpg",
+       "label": "WHY-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

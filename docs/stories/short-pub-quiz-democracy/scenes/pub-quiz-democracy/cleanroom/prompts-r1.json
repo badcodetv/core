@@ -1,0 +1,208 @@
+[
+ {
+  "id": "QM-a",
+  "prompt": "Vertical 9:16 head-and-shoulders portrait of the quizmaster, standing in an old English country pub at night, facing the camera straight on, his head large and sharp in the frame. He wears a navy knitted balaclava with a thick white ring around the face opening and a small red triangle over his left eye, which sits on the right side of the picture; the knit covers his whole head and neck. The balaclava exactly as in the attached image: no holes, no skin, gloves. On top sits a broad white cowboy hat. He wears a blue denim western shirt with pearl snap buttons, snapped right up to the throat so the collar meets the knit, a bolo tie with a silver clasp, and black leather gloves; one gloved hand holds a black handheld microphone near his chest. Behind him, softly out of focus, is the room from the pub photo: low dark ceiling beams, worn flagstone floor, dark wooden spindle chairs, a fringed table lamp glowing amber. Warm, low evening light from the side. Plain, unmarked surfaces throughout. Looks like a real candid photo taken in a dim pub, slightly grainy, natural colour.",
+  "refs": [
+   "lX31bAy6ML0.jpg",
+   "mask-reference.jpg"
+  ]
+ },
+ {
+  "id": "QM-b",
+  "prompt": "Vertical 9:16 head-and-shoulders portrait of the quizmaster in a beamed English country pub at night, his body turned slightly to the left and his masked face turned back to the camera, his head large and sharp in the frame. A navy knitted balaclava covers his entire head and neck, with a thick white ring around the face area and a small red triangle over his left eye, on the right side of the picture. The balaclava exactly as in the attached image: no holes, no skin, gloves. He wears a big white cowboy hat tipped slightly back, a blue denim western shirt with pearl snaps closed to the collar and long sleeves, a bolo tie, and black leather gloves; he holds a black microphone up by his chin in one gloved hand, the other gloved hand resting on a huge oval silver belt buckle just visible at the bottom edge. Background from the pub photo, blurred: heavy dark beams, white plaster between timber posts, a lit candle on a wooden table, an amber lamp. Warm low lamplight, deep shadows. Plain, unmarked surfaces. Natural, slightly grainy real-photo look.",
+  "refs": [
+   "lX31bAy6ML0.jpg",
+   "mask-reference.jpg"
+  ]
+ },
+ {
+  "id": "T-a",
+  "prompt": "Vertical 9:16 head-and-shoulders portrait of the tourist: a white American woman of about 55 from Florida on holiday in England. Sun-faded tan with fine lines from years of sunshine, a highlighted blonde chin-length bob, small gold stud earrings, a friendly open smile that looks a touch unsure of where she is. She wears a turquoise fleece zipped up to the collarbone with the collar of a pink polo shirt folded out over it; the strap of a bum bag crosses her chest. She faces the camera, her face large and sharp in the frame. Behind her, soft and out of focus, the room from the pub photo: low dark beams, flagstones, wooden chairs, a warm fringed lamp. Warm evening lamplight from one side. Plain, unmarked surfaces. Real candid photo, natural skin, slight grain.",
+  "refs": [
+   "lX31bAy6ML0.jpg"
+  ]
+ },
+ {
+  "id": "T-b",
+  "prompt": "Vertical 9:16 head-and-shoulders portrait of the tourist, a white American woman of about 55 from Florida, seated in an old English country pub at night, turned three-quarters toward the camera, her face large and sharp in the frame. Sun-faded tan, a highlighted blonde bob tucked behind one ear, pale pink lipstick, eyebrows raised in a cheerful, slightly lost expression as if she has just asked a question. Turquoise fleece zipped up over a pink polo shirt, the polo collar showing; the strap of a small bum bag across her front. Blurred background from the pub photo: dark ceiling beams, white walls between timber posts, a tall lit candle on a table. Warm low amber light. Plain, unmarked surfaces. Natural real-photo look, slight grain.",
+  "refs": [
+   "lX31bAy6ML0.jpg"
+  ]
+ },
+ {
+  "id": "S-a",
+  "prompt": "Vertical 9:16 head-and-shoulders portrait of the Swiss bloke: a white Swiss man of about 40 who works in England. Short, neatly cut brown hair, a closely trimmed brown beard, rimless glasses, a calm, level gaze and a faint polite smile. He wears a navy quilted gilet zipped halfway over a fine grey merino crew-neck jumper. He faces the camera, his face large and sharp in the frame. Behind him, out of focus, the room from the pub photo: low dark beams, flagstone floor, wooden chairs, a glowing fringed lamp. Warm evening lamplight. Plain, unmarked surfaces. Real candid photo, natural skin texture, slight grain.",
+  "refs": [
+   "lX31bAy6ML0.jpg"
+  ]
+ },
+ {
+  "id": "S-b",
+  "prompt": "Vertical 9:16 head-and-shoulders portrait of the Swiss bloke, a white Swiss man of about 40, sitting upright in a beamed English country pub at night, angled slightly to the right with his eyes on the camera, his face large and sharp in the frame. Short neat brown hair, trimmed brown beard, rimless glasses catching a small glint of lamplight, a composed, patient expression. Navy quilted gilet over a grey merino jumper, everything tidy. Soft blurred background from the pub photo: heavy dark beams, white plaster, timber posts, a candle on a wooden table. Warm low light, gentle shadows. Plain, unmarked surfaces. Natural real-photo look.",
+  "refs": [
+   "lX31bAy6ML0.jpg"
+  ]
+ },
+ {
+  "id": "V-a",
+  "prompt": "Vertical 9:16 head-and-shoulders portrait of the one-party voter: a Black British man of about 70, retired. Short grey hair, a neat grey moustache, lined dark-brown skin, chin lifted a little in a proud, stubborn but warm expression. He wears a brown tweed jacket over a blue-and-brown checked shirt buttoned to the top, with a dark green knitted tie. He faces the camera, his face large and sharp in the frame. Behind him, soft and out of focus, the room from the pub photo: low dark beams, flagstones, wooden spindle chairs, a warm fringed lamp. Warm evening lamplight from the side. Plain, unmarked surfaces. Real candid photo, natural skin, slight grain.",
+  "refs": [
+   "lX31bAy6ML0.jpg"
+  ]
+ },
+ {
+  "id": "V-b",
+  "prompt": "Vertical 9:16 head-and-shoulders portrait of the one-party voter, a Black British man of about 70, seated in an old English country pub at night, turned three-quarters with his head toward the camera, his face large and sharp in the frame. Short grey hair, grey moustache, one eyebrow raised as if he has heard something he firmly disagrees with, yet a hint of a smile. Brown tweed jacket, checked shirt, dark green knitted tie knotted snugly. Blurred background from the pub photo: dark beams, white walls between timber posts, a lit candle. Warm low amber light. Plain, unmarked surfaces. Natural real-photo look, slight grain.",
+  "refs": [
+   "lX31bAy6ML0.jpg"
+  ]
+ },
+ {
+  "id": "OUT-a",
+  "prompt": "Vertical 9:16 view of the old village pub from the street, the same kind of building as in the photo: a two-storey honey-coloured stone house with a grey stone-slate roof, two brick chimneys, the front wall thick with ivy, dark-framed small-paned windows and a low doorway with a small canopy and two brass lanterns either side. It is dusk: the sky deep blue fading to a last band of pale orange, the street empty and slightly damp. Every downstairs window glows warm amber from lamps inside, with soft shapes of people behind the glass; the lanterns by the door are lit. A plain painted hanging sign board with only a simple picture on it. Pavement and road in the foreground. All signs and boards plain and unmarked. Quiet, real, a little moody, like a real photo taken on a phone at dusk.",
+  "refs": [
+   "5Ns22AXZ0D4.jpg"
+  ]
+ },
+ {
+  "id": "OUT-b",
+  "prompt": "Vertical 9:16 low three-quarter view of the ivy-covered stone pub from across a narrow village street at dusk, the same kind of building as in the photo: golden stone walls, a steep grey slate roof with two brick chimneys, ivy spilling over the front, small dark-framed windows. The ground-floor windows glow deep warm orange; through one a hanging lamp and the edge of a beam can be seen. A lit lantern by the open doorway throws a pool of light onto the pavement. An old black lamp post at the street corner, its lamp glowing. The sky is dark blue with a few thin clouds; a little mist low over the road. All surfaces plain, the hanging sign showing only a simple faded picture. Real-photo look, calm, evening chill.",
+  "refs": [
+   "5Ns22AXZ0D4.jpg"
+  ]
+ },
+ {
+  "id": "QMASK-a",
+  "prompt": "Vertical 9:16 view across the main room of an old English country pub at night, laid out like the pub photo: low dark ceiling beams on timber posts, worn flagstone floor, dark wooden tables and spindle-back chairs, a fringed lamp and candles glowing. At the far end, facing the camera and standing tall, is the quizmaster from his portrait, framed between two timber posts, holding a black microphone to his mouth and raising a gloved finger as he asks the question. He wears a navy knitted balaclava with a white ring around the face and a small red triangle over his left eye, on the right side of the picture, a white cowboy hat, a blue denim western shirt with pearl snaps closed to the collar, a bolo tie, a huge silver belt buckle and black gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. In the foreground, seen from behind and the side at their tables: a white woman of about 60 with a grey pixie cut in a plum cardigan, pencil poised over a sheet of paper; a South Asian man of about 35 with short black hair and a navy fleece, turned in profile toward the front; a white man of about 25 with messy ginger hair in a green check flannel shirt, half a pint of amber ale in hand. Pints, beer mats and blank answer sheets on the tables. Warm low lamplight, shadowy corners. All surfaces plain and unmarked. Real candid photo look, slight grain.",
+  "refs": [
+   "lX31bAy6ML0.jpg",
+   "portrait-QM.jpg",
+   "mask-reference.jpg"
+  ]
+ },
+ {
+  "id": "QMASK-b",
+  "prompt": "Vertical 9:16 low shot from table height in the main room of an old English country pub at night, laid out like the pub photo: dark beams overhead, flagstones, dark wooden tables and chairs, a candle burning on the nearest table. The quizmaster from his portrait stands in the middle distance, slightly to the right of centre, three-quarters toward the camera, microphone held up close in one gloved hand, the other gloved hand open as he reads the question out. Navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture; white cowboy hat; blue denim western shirt with pearl snaps, closed up to the mask; bolo tie; a huge silver belt buckle; black gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. In the foreground left, the backs of heads and shoulders of drinkers at a table looking at him: a Black woman of about 45 with short natural hair in a mustard jumper, chin on her hand; a white man of about 65, bald with a grey fringe at the back, in a maroon V-neck jumper, holding a pint of dark bitter. Further back on the right, a white woman of about 30 with a long brown ponytail in a denim jacket, seen in profile. Pints and plain beer mats on the tables. Warm amber lamplight. All surfaces plain and unmarked. Real-photo look.",
+  "refs": [
+   "lX31bAy6ML0.jpg",
+   "portrait-QM.jpg",
+   "mask-reference.jpg"
+  ]
+ },
+ {
+  "id": "TABLE-a",
+  "prompt": "Vertical 9:16 shot of four people round a small round wooden pub table on a black cast-iron stand, in the beamed corner from the table photo: heavy dark timber beams and posts, warm plaster walls, spindle-back wooden chairs, wall lamps glowing. The camera sits at the open near side of the table, slightly above table height, so all four are arranged around the far half and every face reads. On the table: four pints of ale, a few plain beer mats, a blank answer sheet and a short pencil. In the centre at the back, facing the camera and mid-sentence with one hand raised, is the tourist from her portrait: a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece zipped over a pink polo. On the left, turned three-quarters toward her, is the one-party voter from his portrait: a Black British man of about 70 with short grey hair and a grey moustache, brown tweed jacket, checked shirt, knitted tie, eyebrows raised. On the right, turned three-quarters toward her, is the Swiss bloke from his portrait: a white man of about 40 with short neat brown hair, trimmed beard, rimless glasses, navy quilted gilet over a grey jumper. At the front right corner, in profile, leaning on the table and looking at her, is Bob, the man from his photo, about 50, cropped grey hair, white stubble beard, olive-green hooded waterproof jacket, his face and clothes exactly as in his photo. The four faces come from the cast sheet, left to right: the tourist, the Swiss bloke, the one-party voter, Bob; each keeps the face and clothes from the sheet. Warm low lamplight. All surfaces plain and unmarked. Real candid photo look, slight grain.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "cast-table.jpg"
+  ]
+ },
+ {
+  "id": "TABLE-b",
+  "prompt": "Vertical 9:16 slightly high view looking down at a small round wooden pub table where four people sit, in the timber-framed room from the table photo: dark beams, warm plaster walls, spindle-back chairs, amber wall lamps. On the table: four pints, two empty crisp packets in plain foil, plain beer mats, a blank answer sheet with a pencil lying across it. The tourist from her portrait sits at the top of the frame facing the camera, a white American woman of about 55 with a sun-faded tan and highlighted blonde bob, in a turquoise fleece zipped over a pink polo, smiling brightly and pointing at the answer sheet. The other three have all turned their heads to look at her, faces visible: lower left, the one-party voter from his portrait, a Black British man of about 70, short grey hair, grey moustache, brown tweed jacket, checked shirt, knitted tie, leaning back with arms folded; lower right, the Swiss bloke from his portrait, a white man of about 40, short neat brown hair, trimmed beard, rimless glasses, navy quilted gilet over a grey jumper, one hand on his pint; middle right, Bob, the man from his photo, about 50, cropped grey hair, white stubble beard, olive-green hooded waterproof jacket, face and clothes exactly as in his photo, mouth slightly open. Warm low light. All surfaces plain and unmarked. Real-photo look, slight grain. The four faces come from the cast sheet, left to right: the tourist, the Swiss bloke, the one-party voter, Bob; each keeps the face and clothes from the sheet.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "cast-table.jpg"
+  ]
+ },
+ {
+  "id": "TCU-a",
+  "prompt": "Vertical 9:16 close-up of the tourist from her portrait at the small round pub table: a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece zipped over a pink polo. Her face fills the upper middle of the frame; she is talking, eyebrows up, one hand open in front of her as she explains something with total sincerity. Her pint of pale ale sits in front of her on the dark wooden table. At the left edge, out of focus, the brown tweed shoulder of the man beside her; at the right edge, the navy quilted shoulder of another. Behind her, soft, the timber-framed corner from the table photo: dark beams, warm plaster wall, a glowing wall lamp. Warm low light on her face. All surfaces plain and unmarked. Real candid photo look.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "portrait-T.jpg"
+  ]
+ },
+ {
+  "id": "TCU-b",
+  "prompt": "Vertical 9:16 tight close-up over a blurred shoulder of the tourist from her portrait: a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece zipped over a pink polo. She leans forward on her elbows at the small round wooden table, mid-word, smiling hopefully, eyes moving from one listener to another. In the near foreground left, out of focus, the olive-green waterproof shoulder of the man opposite her; at the right edge, a tweed sleeve resting by a pint. Background from the table photo, soft: heavy dark beams, spindle-back chairs, warm amber wall lamps. Low warm light. All surfaces plain and unmarked. Natural real-photo look, slight grain.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "portrait-T.jpg"
+  ]
+ },
+ {
+  "id": "VCU-a",
+  "prompt": "Vertical 9:16 close-up of the one-party voter from his portrait, seated at the small round pub table: a Black British man of about 70, short grey hair, grey moustache, brown tweed jacket over a checked shirt and a knitted tie. He is talking, indignant: brow furrowed, eyes wide, one finger tapping the dark wooden table beside his pint of dark bitter. His face fills the upper part of the frame. At the edges, blurred shoulders of the others at the table: a turquoise fleece on the left, a navy gilet on the right. Background soft, from the table photo: dark timber beams, warm plaster, a glowing wall lamp. Warm low lamplight. All surfaces plain and unmarked. Real candid photo look.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "portrait-V.jpg"
+  ]
+ },
+ {
+  "id": "VCU-b",
+  "prompt": "Vertical 9:16 close-up, slightly low angle, of the one-party voter from his portrait: a Black British man of about 70, short grey hair, grey moustache, brown tweed jacket, checked shirt, knitted tie. He sits back in a spindle-back chair with his chest puffed out, one hand pressed flat to his heart, mid-speech, deeply offended but proud. A pint glass in front of him on the small round wooden table. Behind him, soft, the timber-framed corner from the table photo: heavy dark beams, warm walls, amber wall lamps. The edge of an olive-green sleeve at the side of the frame. Warm low light. All surfaces plain and unmarked. Natural real-photo look, slight grain.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "portrait-V.jpg"
+  ]
+ },
+ {
+  "id": "SCU-a",
+  "prompt": "Vertical 9:16 close-up of the Swiss bloke from his portrait at the small round pub table: a white man of about 40, short neat brown hair, trimmed brown beard, rimless glasses, navy quilted gilet over a grey merino jumper. He is talking calmly, hands loosely together on the dark wooden table beside a half-drunk pint, a patient, reasonable expression. His face fills the upper part of the frame. At the left edge, blurred, a brown tweed shoulder; at the right, a turquoise fleece sleeve. Background soft, from the table photo: dark timber beams, warm plaster, a glowing wall lamp. Warm low light, a small reflection of the lamp in his glasses. All surfaces plain and unmarked. Real candid photo look.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "portrait-S.jpg"
+  ]
+ },
+ {
+  "id": "SCU-b",
+  "prompt": "Vertical 9:16 close-up of the Swiss bloke from his portrait, a white man of about 40 with short neat brown hair, trimmed beard and rimless glasses, in a navy quilted gilet over a grey jumper. He turns his head slightly to one side to explain, mid-word, one hand lifted with fingers counting off a point, completely unhurried. Seen past the blurred shoulder of a tweed jacket in the near foreground. Behind him, soft, the timber-framed corner from the table photo: heavy beams, spindle-back chairs, amber wall lamps. Warm low lamplight. All surfaces plain and unmarked. Natural real-photo look, slight grain.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "portrait-S.jpg"
+  ]
+ },
+ {
+  "id": "BCU-a",
+  "prompt": "Vertical 9:16 close-up of Bob, the man from his photo, at the small round pub table: about 50, cropped grey hair, white stubble beard, ruddy weathered face, olive-green hooded waterproof jacket, his face and clothes exactly as in his photo. He leans in over his forearms on the dark wooden table, talking quietly, eyes flicking sideways as if sharing something he should not, a pint of ale cupped in his hands. His face fills the upper part of the frame. At the edges, blurred: a turquoise fleece shoulder on one side, a navy gilet on the other. Background soft, from the table photo: dark beams, warm plaster, a glowing wall lamp. Warm low light. All surfaces plain and unmarked. Real candid photo look.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "bob-face.jpg"
+  ]
+ },
+ {
+  "id": "BCU-b",
+  "prompt": "Vertical 9:16 close-up of Bob, the man from his photo: about 50, cropped grey hair, white stubble beard, ruddy face, olive-green hooded waterproof jacket, face and clothes exactly as in his photo. Seen in three-quarter view past a blurred tweed shoulder in the foreground, he speaks low out of the side of his mouth, head tilted, a dry, deadpan look. His pint sits on the small round wooden table in front of him. Behind him, soft, the timber-framed corner from the table photo: heavy dark beams, spindle-back chairs, amber wall lamps. Warm low lamplight, deep shadow on one side of his face. All surfaces plain and unmarked. Natural real-photo look, slight grain.",
+  "refs": [
+   "R6ddisVdIfU.jpg",
+   "bob-face.jpg"
+  ]
+ },
+ {
+  "id": "BAR-a",
+  "prompt": "Vertical 9:16 shot at the bar end of an old English country pub at night, built like the bar-end photo: dark ceiling beams over white plaster walls, a rough timber post, a long wooden bar with brass hand pumps whose clips are plain and blank, shelves of unlabelled bottles behind. On the left, side-on to the camera at the bar, is the tourist from her portrait, a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece zipped over a pink polo, leaning on the bar with a purse in hand, ordering. On the right, standing at the bar facing her, three-quarters toward the camera, is the quizmaster from his portrait: navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture; white cowboy hat; blue denim western shirt with pearl snaps closed to the collar; bolo tie; huge silver belt buckle; black gloves; microphone lowered in one hand. The balaclava exactly as in the attached image: no holes, no skin, gloves. Behind the bar in the middle, the barman: a white man of about 30 with short ginger hair and a ginger beard, a black long-sleeved shirt, pulling a pint and glancing between them. The tourist and the quizmaster come from the cast sheet (tourist on its left, quizmaster on its right). Warm low lamplight. All surfaces plain and unmarked. Real candid photo look, slight grain.",
+  "refs": [
+   "ULysA-AxywY.jpg",
+   "cast-bar.jpg",
+   "mask-reference.jpg"
+  ]
+ },
+ {
+  "id": "BAR-b",
+  "prompt": "Vertical 9:16 shot from behind the bar looking out, at the bar end of an old English country pub at night, built like the bar-end photo: dark beams over white walls, a timber post, wooden benches with cushions in the background. On the near side of the frame, the barman from behind and in profile at the left edge: a white man of about 30 with short ginger hair and a ginger beard in a black long-sleeved shirt, holding an empty pint glass under a brass hand pump with a blank clip. Across the bar, both facing each other and both faces visible in three-quarter: on the left, the tourist from her portrait, a white American woman of about 55, sun-faded tan, highlighted blonde bob, turquoise fleece over a pink polo, holding up two fingers to order; on the right, close beside her and turned toward her, the quizmaster from his portrait in a navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture, a white cowboy hat, a blue denim western shirt with pearl snaps closed to the collar, a bolo tie, a big silver belt buckle and black gloves, one gloved elbow on the bar. The balaclava exactly as in the attached image: no holes, no skin, gloves. The tourist and the quizmaster come from the cast sheet (tourist on its left, quizmaster on its right). Warm low lamplight. All surfaces plain and unmarked. Natural real-photo look.",
+  "refs": [
+   "ULysA-AxywY.jpg",
+   "cast-bar.jpg",
+   "mask-reference.jpg"
+  ]
+ },
+ {
+  "id": "WHY-a",
+  "prompt": "Vertical 9:16 wide view down the length of an old English country pub at night, laid out like the pub photo: low dark beams on timber posts, flagstone floor, dark wooden tables and spindle-back chairs, candles and a fringed lamp glowing. At the far end, at the bar, the quizmaster from his portrait faces the room with a slow shrug, both gloved hands turned up, microphone in one of them: navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture; white cowboy hat; blue denim western shirt with pearl snaps closed to the collar; bolo tie; huge silver belt buckle; black gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Every drinker at the tables has twisted round in their seat toward him, faces seen in profile and three-quarter: a South Asian woman of about 25 with long black hair in a mustard cardigan; a white man of about 70 with white hair and a sleeveless argyle jumper over a shirt; a Black woman of about 35 with long braids in a burgundy roll-neck; a white man of about 45, bald, in a waxed green jacket; an East Asian man of about 30 with short black hair in a grey hoodie; a white woman of about 60 with curly red hair and a cream cable-knit jumper; a white man of about 20 with a blond buzz cut in a plain navy rugby shirt. All of them are shouting at him at once, mouths wide open, hands thrown up in disbelief, pints raised. Warm low lamplight. All surfaces plain and unmarked. Real candid photo look, slight grain.",
+  "refs": [
+   "lX31bAy6ML0.jpg",
+   "portrait-QM.jpg",
+   "mask-reference.jpg"
+  ]
+ },
+ {
+  "id": "WHY-b",
+  "prompt": "Vertical 9:16 view from beside the bar of an old English country pub at night, looking out over the room, laid out like the pub photo: low dark beams, timber posts, flagstones, dark wooden tables and chairs, candles and an amber lamp. In the foreground right, at the bar, the quizmaster from his portrait in three-quarter view, giving a slow shrug, both gloved hands turned up, microphone in one of them: navy knitted balaclava with a white ring around the face and a red triangle over his left eye, on the right side of the picture; white cowboy hat; blue denim western shirt with pearl snaps closed to the collar; bolo tie; huge silver belt buckle; black gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Across the room the drinkers all face toward him and toward the camera, all shouting at him at once, mouths wide open, hands thrown up in disbelief: a Black man of about 55 with a short grey beard in a navy cardigan; a white woman of about 30 with a dark brown bob in a striped Breton top; a white man of about 75 with thin white hair and a brown flat cap pushed back, in a corduroy jacket; a South Asian man of about 40 with a black beard in a checked flannel shirt; a white woman of about 50 with a blonde ponytail in a red fleece; a white man of about 25 with curly black hair in a plain grey sweatshirt. Some half-standing, one jabbing a finger at him. Warm low lamplight, deep shadows in the corners. All surfaces plain and unmarked. Natural real-photo look, slight grain.",
+  "refs": [
+   "lX31bAy6ML0.jpg",
+   "portrait-QM.jpg",
+   "mask-reference.jpg"
+  ]
+ }
+]

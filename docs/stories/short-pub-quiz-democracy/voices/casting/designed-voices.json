@@ -1,0 +1,34 @@
+{
+ "tourist-a": {
+  "id": "voice_v632ap39kxx0",
+  "desc": "A woman in her fifties from Florida, with a warm, bright voice, who speaks plainly."
+ },
+ "tourist-b": {
+  "id": "voice_dsquuhovwslb",
+  "desc": "A woman in her forties from Tampa, Florida, with a low, relaxed voice, who speaks plainly."
+ },
+ "swiss-a": {
+  "id": "voice_e465k0967ygc",
+  "desc": "A Swiss man in his thirties from Zurich, speaking English with a light Swiss German accent, with a calm voice, who speaks plainly."
+ },
+ "swiss-b": {
+  "id": "voice_u8zlk3pnaur9",
+  "desc": "A Swiss man in his forties from Bern, speaking English with a Swiss German accent, with a dry, low voice, who speaks plainly."
+ },
+ "voter-a": {
+  "id": "voice_s2j90utnw3w4",
+  "desc": "A retired man in his late sixties from the north-east of England, with a low voice, who speaks plainly."
+ },
+ "voter-b": {
+  "id": "voice_ao1zki0jlh1e",
+  "desc": "A retired man in his seventies from Yorkshire, with a gruff voice, who speaks plainly."
+ },
+ "quizmaster-a": {
+  "id": "voice_9al2weltjfyr",
+  "desc": "A man in his fifties from Texas, with a big, booming voice, who speaks plainly."
+ },
+ "quizmaster-b": {
+  "id": "voice_bvwdmcw6kw4y",
+  "desc": "A man in his forties from the American South, with a deep, loud, cheerful voice, who speaks plainly."
+ }
+}

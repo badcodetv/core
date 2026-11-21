@@ -11,7 +11,7 @@ issue at a time; the table argues it out. The point: you shouldn't have to take 
 countries already vote issue by issue. State: script draft 1 ([script.md](./script.md)), nothing generated.
 
 ## Made fast (Jack, 2026-11-21: "the quickest way possible")
-- Reuse before making: the cast, the pub, the voices and the outro already exist (below). New clips only where a line
+- Reuse before making: Bob, three locked voices and the pint-glass outro already exist. New clips only where a line
   needs a face that says it.
 - Lines spoken plainly, never whispered.
 - Few on-camera talkers: lines over wides, reactions and backs of heads wherever the mouth needn't show; the
@@ -19,17 +19,19 @@ countries already vote issue by issue. State: script draft 1 ([script.md](./scri
 - The script is agreed before anything is generated; the page notes are read before every rebuild.
 
 ## Look
-Same pub and cast as the first Pub Quiz (Jack's ask). A proper old English pub: dark wood, brass pumps, etched mirrors,
-low warm light; never neon, never modern. Status: LOCKED (inherited).
-- Cast portraits (attach to every shot of that person), in the Pub Quiz: Housing media folder: Bob `stills/r6/bob-face-a.jpg`,
-  the plasterer `stills/r5/plasterer-face-a.jpg`, the student `stills/r3/S05-a.jpg`, the banker `stills/r3/S07-a.jpg`,
-  the quizmaster `stills/r1/Q1-a-fix-a.jpg`. Table reference `table-newbob-a`.
-- The quizmaster is BadCode in the balaclava, in a brown tweed three-piece, tweed flat cap, navy roll-neck, gold rings
-  over black gloves. Describe the clothes only; never name a film, director, actor or character.
-- Faces must be big in a reference before a close-up; name every extra person (age, hair, clothes).
-- Reusable clips (Pub Quiz: Housing media `video/`): quizmaster asks `pq-01a-P01`, quizmaster reads the answer `pq-10a-P10`,
-  the huddle `pq-02b-P02`, from above `pq-11b-P11`, the student stung `pq-05a-P05`, the pour `pq-G01ma-G01`.
-Flow project: `8fa2bbdc-7db6-49b9-893b-cc7b0bd06102` (the series' project, Jack's ask). Stills Nano Banana 2.1, 9:16; clips Omni 1.2 Flash, Frames, 8 s.
+Status: EXPLORING (stills round 1). Jack, 2026-11-21: "it should be a english countryside pub this time", "use unsplash".
+- An English countryside pub, evening: low dark beams, flagstones, small wooden tables, warm lamps; the outside an
+  ivy-covered stone pub on a village street. Layouts: Unsplash `lX31bAy6ML0` (main room), `R6ddisVdIfU` (the quiz table),
+  `ULysA-AxywY` (the bar end), `5Ns22AXZ0D4` (outside); credits in `scenes/pub-quiz-democracy/refs.json`. No readable words.
+- **The quizmaster:** BadCode in the balaclava as an over-the-top American stereotype (Jack: "american streotypical
+  version"): white cowboy hat, blue denim western shirt with pearl snaps, bolo tie, big silver buckle, black gloves,
+  a microphone. No sunglasses (they hide the triangle). Describe the clothes only; never name a person, film or character.
+- **The table:** the Florida tourist (white American woman ~55, highlighted blonde bob, turquoise fleece over a pink
+  polo), the Swiss bloke (white, ~40, neat brown hair, trimmed beard, rimless glasses, navy gilet over a grey jumper),
+  the one-party voter (Black British man ~70, grey hair and moustache, brown tweed jacket, checked shirt, knitted tie),
+  and Bob (his portrait `bob-face.jpg`, from the series).
+- Portraits first, big face, one per person, attached to every shot of them; name every extra (age, hair, clothes).
+Flow project: `8fa2bbdc-7db6-49b9-893b-cc7b0bd06102` (the series' project). Stills Nano Banana 2.1, 9:16; clips Omni 1.2 Flash, Frames, 8 s.
 
 ## Sound
 Voices LOCKED (the same cast). Plain reads: no accent, age or acting in the prompt. Style "fast, brisk" on every line.

@@ -1,0 +1,134 @@
+{
+ "title": "Pub Quiz: Democracy Look Refs",
+ "eyebrow": "Pub Quiz: Democracy · look references",
+ "heading": "Pub Quiz: Democracy: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "inglenook fireplace pub",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    },
+    {
+     "slot": "ref-2",
+     "title": "low beamed ceiling pub",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "lX31bAy6ML0",
+       "src": "unsplash/lX31bAy6ML0.jpg",
+       "label": "An empty restaurant with wooden tables and chairs · Phil Hearing"
+      },
+      {
+       "id": "ULysA-AxywY",
+       "src": "unsplash/ULysA-AxywY.jpg",
+       "label": "brown wooden table and chairs · Eranjan"
+      },
+      {
+       "id": "R6ddisVdIfU",
+       "src": "unsplash/R6ddisVdIfU.jpg",
+       "label": "A room with wooden chairs and tables in it · Fernando Santander"
+      },
+      {
+       "id": "bmvGgByXcLA",
+       "src": "unsplash/bmvGgByXcLA.jpg",
+       "label": "a very tall building with a clock on it's side · yasara hansani"
+      },
+      {
+       "id": "_0ClZS8AyfY",
+       "src": "unsplash/_0ClZS8AyfY.jpg",
+       "label": "Intricate wooden ceiling with patterned tiles and beams · Den K"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "country inn interior fireplace",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    },
+    {
+     "slot": "ref-4",
+     "title": "thatched pub interior",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "V0X3_buHN2c",
+       "src": "unsplash/V0X3_buHN2c.jpg",
+       "label": "brown wooden table and chairs · Nathan Van Egmond"
+      },
+      {
+       "id": "-orQIACGDLA",
+       "src": "unsplash/-orQIACGDLA.jpg",
+       "label": "a bar with a flag hanging from the ceiling · Stephanie Klepacki"
+      },
+      {
+       "id": "jyAG98eMoZw",
+       "src": "unsplash/jyAG98eMoZw.jpg",
+       "label": "a lamp sitting on top of a wooden bar · Stephanie Klepacki"
+      },
+      {
+       "id": "A7nAGuGUToI",
+       "src": "unsplash/A7nAGuGUToI.jpg",
+       "label": "people sitting on chair near the store during night time · Soroush Karimi"
+      },
+      {
+       "id": "8A4ZnQ9vxYg",
+       "src": "unsplash/8A4ZnQ9vxYg.jpg",
+       "label": "Live music performance by two men in a traditional pub · Jonathan Borba"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "old english inn bar wooden",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Vpbp6pl6oGQ",
+       "src": "unsplash/Vpbp6pl6oGQ.jpg",
+       "label": "Traditional wooden bar with green leather stools and bottles · Jonathan Borba"
+      },
+      {
+       "id": "Q42GVPmNvy4",
+       "src": "unsplash/Q42GVPmNvy4.jpg",
+       "label": "Traditional pub bar with brass beer taps and wooden decor · Jonathan Borba"
+      },
+      {
+       "id": "-orQIACGDLA",
+       "src": "unsplash/-orQIACGDLA.jpg",
+       "label": "a bar with a flag hanging from the ceiling · Stephanie Klepacki"
+      },
+      {
+       "id": "gndbTd0UeQI",
+       "src": "unsplash/gndbTd0UeQI.jpg",
+       "label": "a view of a counter in a restaurant · Jonny Gios"
+      },
+      {
+       "id": "VeCJc6DtAB4",
+       "src": "unsplash/VeCJc6DtAB4.jpg",
+       "label": "chairs and tables outside restaurant · Mathias Reding"
+      }
+     ]
+    },
+    {
+     "slot": "ref-6",
+     "title": "pub horse brasses",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    }
+   ]
+  }
+ ]
+}
