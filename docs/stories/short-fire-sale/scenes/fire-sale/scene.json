@@ -1,0 +1,15 @@
+{
+ "story": "short-fire-sale",
+ "scene": "fire-sale",
+ "title": "Fire Sale",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale",
+ "source": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Fire sale",
+ "beats": [
+  {"id": "carboot", "t": "0-3", "what": "Fiona at a rainy car boot"},
+  {"id": "stall", "t": "3-9", "what": "Jim sells the institutions as framed pictures"},
+  {"id": "rolls", "t": "9-13", "what": "Phineas arrives in a Rolls and buys the lot"},
+  {"id": "home", "t": "13-17", "what": "Phineas narrowly defeats Brian"},
+  {"id": "way-out", "t": "17-22", "what": "The cap: fifty quid, same as everyone"}
+ ],
+ "boards": {}
+}
