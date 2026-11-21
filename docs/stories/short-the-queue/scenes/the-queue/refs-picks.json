@@ -1,0 +1,204 @@
+{
+ "title": "The Queue Look Refs",
+ "eyebrow": "The Queue · look references",
+ "heading": "The Queue: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "bank teller counter interior",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "FnI2pRZ9xq4",
+       "src": "unsplash/FnI2pRZ9xq4.jpg",
+       "label": "A person at a yellow reception desk in a room with orange pa · Keithen Schwahn"
+      },
+      {
+       "id": "KBqF5zCeJro",
+       "src": "unsplash/KBqF5zCeJro.jpg",
+       "label": "a room with a desk and a chair in it · Chris Johnson"
+      },
+      {
+       "id": "gjHijlq6BLU",
+       "src": "unsplash/gjHijlq6BLU.jpg",
+       "label": "a machine that is sitting on a wall · Sulis Maulida"
+      },
+      {
+       "id": "CkuEEuqpfmI",
+       "src": "unsplash/CkuEEuqpfmI.jpg",
+       "label": "A cozy bookstore with tables and chairs · patrick kim"
+      },
+      {
+       "id": "Y63M9ZI29JM",
+       "src": "unsplash/Y63M9ZI29JM.jpg",
+       "label": "A model train set on a wooden shelf · Nüket Taş"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "queue barrier interior",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "hLmghUHBM1k",
+       "src": "unsplash/hLmghUHBM1k.jpg",
+       "label": "Retractable yellow belt barriers in an empty terminal at Col · Chris Weiher"
+      },
+      {
+       "id": "GbY1IcKPvS0",
+       "src": "unsplash/GbY1IcKPvS0.jpg",
+       "label": "People waiting in a modern airport terminal · You Le"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "people waiting in line indoors",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "drqX1LMg660",
+       "src": "unsplash/drqX1LMg660.jpg",
+       "label": "A large group of people standing in a long queue inside a bu · Josh"
+      },
+      {
+       "id": "19wq-LXcgSM",
+       "src": "unsplash/19wq-LXcgSM.jpg",
+       "label": "People standing on a covered platform · Barney Goodman"
+      },
+      {
+       "id": "pebDgutPwUo",
+       "src": "unsplash/pebDgutPwUo.jpg",
+       "label": "People walking down a dimly lit hallway · lesha tuman"
+      },
+      {
+       "id": "PA5CtEDvOsQ",
+       "src": "unsplash/PA5CtEDvOsQ.jpg",
+       "label": "Silhouettes of people in a sunlit hallway with long shadows · Juseol Kim"
+      },
+      {
+       "id": "QBd87MWqoPQ",
+       "src": "unsplash/QBd87MWqoPQ.jpg",
+       "label": "People walk through a busy indoor market with neon signs · Chuang XY"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "glass counter partition service",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "AORWSLV8Fg8",
+       "src": "unsplash/AORWSLV8Fg8.jpg",
+       "label": "a room with a bunch of glass doors in it · Craig Lovelidge"
+      },
+      {
+       "id": "UwnwMSFdwws",
+       "src": "unsplash/UwnwMSFdwws.jpg",
+       "label": "man in white shirt sitting on brown wooden bench · isaac."
+      },
+      {
+       "id": "o0aygXDzegs",
+       "src": "unsplash/o0aygXDzegs.jpg",
+       "label": "Modern frosted glass room divider with black frame · Marina Nazina"
+      },
+      {
+       "id": "IZnSYxgyrD8",
+       "src": "unsplash/IZnSYxgyrD8.jpg",
+       "label": "A serving station with stacks of plates and red ladles in a  · Ceba Solutions"
+      },
+      {
+       "id": "gcQKjO17eZM",
+       "src": "unsplash/gcQKjO17eZM.jpg",
+       "label": "Museum exhibit displaying artifacts behind glass · Bernd 📷 Dittrich"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "waiting room queue",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Tk66vSV4zhc",
+       "src": "unsplash/Tk66vSV4zhc.jpg",
+       "label": "a group of people sitting in chairs in a room · ManuelTheLensman"
+      },
+      {
+       "id": "pxOQ-P97sA8",
+       "src": "unsplash/pxOQ-P97sA8.jpg",
+       "label": "Modern waiting room with chairs and inspirational sign · Amy Vosters"
+      },
+      {
+       "id": "XQo3Y4n7QsA",
+       "src": "unsplash/XQo3Y4n7QsA.jpg",
+       "label": "a group of people sitting in a room · Alfred Guzman"
+      },
+      {
+       "id": "HgsEfR5oMZg",
+       "src": "unsplash/HgsEfR5oMZg.jpg",
+       "label": "a group of people sitting in chairs · Spencer Marsh"
+      },
+      {
+       "id": "tDzOi-BDbzA",
+       "src": "unsplash/tDzOi-BDbzA.jpg",
+       "label": "Empty room with 'atelier' sign and stanchions · Julia Taubitz"
+      }
+     ]
+    },
+    {
+     "slot": "ref-6",
+     "title": "retractable belt barrier queue",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "hLmghUHBM1k",
+       "src": "unsplash/hLmghUHBM1k.jpg",
+       "label": "Retractable yellow belt barriers in an empty terminal at Col · Chris Weiher"
+      },
+      {
+       "id": "V50uAd5i-Ag",
+       "src": "unsplash/V50uAd5i-Ag.jpg",
+       "label": "an empty airport terminal with a row of turns · D Galifianakis"
+      },
+      {
+       "id": "dKXWVUfM73A",
+       "src": "unsplash/dKXWVUfM73A.jpg",
+       "label": "a woman wearing headphones is leaning on a railing · Xingchen Yan"
+      },
+      {
+       "id": "HYghCp7nSzc",
+       "src": "unsplash/HYghCp7nSzc.jpg",
+       "label": "a close up of a white and red barricade · Abib"
+      },
+      {
+       "id": "h6Q4iEUU9S0",
+       "src": "unsplash/h6Q4iEUU9S0.jpg",
+       "label": "Metal turnstiles with red prohibition signs at station · KC Shum"
+      }
+     ]
+    },
+    {
+     "slot": "ref-7",
+     "title": "council office reception counter",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    }
+   ]
+  }
+ ]
+}
