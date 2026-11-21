@@ -106,3 +106,40 @@ Taiwanese one is "won't it just be a fight?"
 party lines, and the ideas often hold up. When it fails, it's usually because politicians took the decision back
 (France, Iceland, Utah). That could be the short's twist: the problem isn't people choosing, it's people being allowed
 to.
+
+## The biggest impact (checked 2026-11-21 unless marked)
+
+When people decided one question themselves, these changed the most:
+
+- **Northern Ireland, 1998: they voted for peace.** The Good Friday Agreement went to the people: 71.1% yes in
+  Northern Ireland (81% turnout) and 94.4% in the Republic, the same day. The vote, not just the politicians,
+  ended the Troubles' 30 years. ([ARK](https://ark.ac.uk/elections/fref98.htm), [CAIN](https://cain.ulster.ac.uk/issues/politics/election/ref1998.htm))
+- **South Africa, 1992: white voters voted to end apartheid.** 68.7% yes on an 85% turnout, after de Klerk said he'd
+  resign if he lost. "Today we have closed the book on apartheid." 🔴 Only white people could vote in it, which is
+  the point and the irony. ([Gulf News](https://gulfnews.com/world/africa/south-africa-the-remarkable-referendum-of-1992-1.1994113),
+  [SAHistory](https://www.sahistory.org.za/node/13012))
+- **New Zealand, 1993: the people changed how government works.** They voted out first-past-the-post for
+  proportional representation (53.9%, 85% turnout), after 70.5% picked it in a first vote in 1992. Every election
+  since has been proportional. This is the exact BadCode point: you can change how government works, not just who.
+  ([Te Ara](https://teara.govt.nz/en/graph/35700/results-of-the-1993-referendum-on-the-electoral-system),
+  [Wikipedia](https://en.wikipedia.org/wiki/1993_New_Zealand_electoral_reform_referendum))
+- **Australia, 1967: 90.77% yes**, the highest ever, to let the national government make laws for Aboriginal people
+  and count them in the census. 🔴 It did not give them the vote (a common myth). ([National Archives of Australia](https://www.naa.gov.au/explore-collection/first-australians/other-resources-about-first-australians/1967-referendum))
+- **Uruguay, 2004: water made a human right.** Started by a citizens' coalition, passed with 64.6%: water and
+  sanitation must be run by the state, and people come before profit. The first country to put it in its
+  constitution. ([Wikipedia](https://en.wikipedia.org/wiki/2004_Uruguayan_constitutional_referendum),
+  [TNI](https://tni.org/files/wateruruguayrev.pdf))
+- **Brazil: towns where people set the budget lost fewer babies.** Places using participatory budgeting spent more
+  on sanitation and health, and infant deaths fell by about 1-2 per 1,000 (5-10%), more the longer it ran.
+  (Gonçalves, *World Development* 2014; Touchton and Wampler 2020.) ([RePEc](https://ideas.repec.org/a/eee/wdevel/v53y2014icp94-110.html),
+  [People Powered](https://www.peoplepowered.org/resources-content/effects-pb-municipal-expenditures-infant-mortality))
+- **Ireland, 2015 and 2018** (above): random citizens unlocked same-sex marriage and abortion reform.
+
+Big, and the honest other side (from Claude's memory, not re-checked this session):
+- **Brexit, 2016:** 51.9% to 48.1% to leave the EU. The biggest single choice the UK public has made. The
+  counter-argument everyone will raise: a yes/no on a huge question, with no detail, split the country. Ireland's
+  route (a random jury that hears the evidence first, then the vote) is the answer to it.
+- **Switzerland, 1971:** women got the national vote only when Swiss men voted for it; one canton held out until a
+  court forced it in 1990. Direct democracy is only as good as who's allowed in the room.
+- **Chile, 2020-23:** 78% voted to write a new constitution, then rejected both drafts. People can say no to the
+  result as well as yes to the idea.
