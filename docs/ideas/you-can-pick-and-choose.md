@@ -59,3 +59,50 @@ The way out is real and already working. Three countries, three methods: vote on
 random jury of ordinary people work it out (Ireland), find what everyone agrees on (Taiwan). Each answers a different
 fear: the Swiss one is "will people vote for anything?", the Irish one is "won't it just be the loudest?", the
 Taiwanese one is "won't it just be a fight?"
+
+## More examples (checked 2026-11-21)
+
+**Proof the package doesn't fit: people split their own ticket when they're allowed to**
+- **Florida, Nov 2020:** the same voters, on the same ballot, backed Trump and voted 60.8% for a $15 minimum wage
+  (it needed 60%), a policy his party opposed. ([Ballotpedia](https://ballotpedia.org/Florida_$15_Minimum_Wage_Initiative_(2020)),
+  [Marketplace](https://marketplace.org/2020/11/04/florida-voters-approve-15-an-hour-minimum-wage))
+- **Republican US states voted for free healthcare for the poor (Medicaid expansion)** over their own leaders'
+  objections: Idaho 60%, Nebraska 54%, Utah 53% (2018); Missouri 53%, Oklahoma 50.5% (2020).
+  ([CNBC](https://www.cnbc.com/2018/11/07/utah-idaho-and-nebraska-approve-medicaid-expansion-ballot-measures.html),
+  [Georgetown CCF](https://ccf.georgetown.edu/2020/08/05/missouri-voters-approve-medicaid-expansion/),
+  [Commonwealth Fund](https://commonwealthfund.org/blog/2020/oklahoma-voters-approve-expanding-medicaid-eligibility-ballot-measure))
+  🔴 Utah's lawmakers later swapped it for a smaller plan: the vote was watered down.
+
+**Ordinary people decide the money directly**
+- **Porto Alegre, Brazil, from 1989:** residents in public meetings decided how part of the city budget was spent,
+  growing to about half of it by the late 1990s; tens of thousands took part. 🔴 Suspended in 2017 by a later
+  government. ([WRI](https://www.wri.org/insights/what-if-citizens-set-city-budgets-experiment-captivated-world-participatory-budgeting),
+  [Lincoln Institute](https://www.lincolninst.edu/node/43426))
+- **Paris, from 2014:** 5% of the city's investment budget, about €100 million a year, goes to projects residents
+  propose and vote on; anyone living there aged 7+ can vote, whatever their nationality. About 210,000 voted in 2018.
+  ([Paris city hall](https://www.paris.fr/pages/budget-participatif-3980),
+  [Banque des Territoires](https://www.banquedesterritoires.fr/la-mairie-de-paris-debloque-100-millions-deuros-par-pour-son-budget-participatif),
+  [CS Monitor](https://csmonitor.com/World/Europe/2015/0731/How-should-Paris-spend-its-budget-Locals-now-get-to-choose))
+
+**Random citizens, made permanent**
+- **East Belgium (Ostbelgien), from 2019:** the first region with a permanent citizens' council by law: 24 people
+  picked at random choose the topics, then assemblies of up to 50 random citizens work on them (so far health care,
+  education, affordable housing), and parliament must debate and answer. ([newDemocracy](https://www.newdemocracy.com.au/2019/02/25/ostbelgien-model-belgium/),
+  [Bertelsmann Stiftung](https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-7-the-ostbelgien-model))
+- **The UK has done it once:** Climate Assembly UK (2020), 108 people picked by lottery, commissioned by six Commons
+  committees, six weekends; advice only. ([Climate Assembly UK](https://www.climateassembly.uk/report/read/executive-summary.html),
+  [Carbon Brief](https://carbonbrief.org/qa-how-the-climate-assembly-says-the-uk-should-reach-net-zero))
+
+**Where politicians took it back (the honest downside, and maybe the joke)**
+- **France's climate convention (2019-20):** 150 random citizens wrote 149 proposals; Macron promised 146; by most
+  counts only about 10% went into law unchanged. ([Wikipedia](https://en.wikipedia.com/wiki/Citizens_Convention_for_Climate),
+  [Mehr Demokratie](https://www.mehr-demokratie.de/en/mehr-wissen/citizens-assemblies/news/details-view/french-climate-assembly-adopts-recommendations))
+- **Iceland's crowdsourced constitution:** 25 elected citizens drafted it in 2011 with public input online; 67% backed
+  it in the 2012 referendum (49% turnout); parliament shelved it and it was never adopted.
+  ([openDemocracy](https://www.opendemocracy.net/en/democracy-on-ice-post-mortem-of-icelandic-constitution/),
+  [Verfassungsblog](https://verfassungsblog.de/putsch-icelands-crowd-sourced-constitution-killed-by-parliament-2/))
+
+**What the pattern says (Claude's read):** when people get to choose one question at a time, they don't vote along
+party lines, and the ideas often hold up. When it fails, it's usually because politicians took the decision back
+(France, Iceland, Utah). That could be the short's twist: the problem isn't people choosing, it's people being allowed
+to.
