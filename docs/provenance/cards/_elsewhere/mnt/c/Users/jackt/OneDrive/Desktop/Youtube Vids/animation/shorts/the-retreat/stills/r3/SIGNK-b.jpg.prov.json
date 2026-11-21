@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r3/SIGNK-b.jpg",
+ "made": "2026-11-21T20:21:15.561Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Add one person to this picture of the resort's wooden sign: the groundskeeper from the second image (flat cap, broken nose, patchy grey beard, faded green work jacket, grey jumper, muddy boots) is working just behind and to the right of the sign, half in the background, raking fallen leaves into a small pile with an old wooden rake, head down, unhurried. He is clearly visible but not the centre of attention. The sign, its three lines of words, the leaves, the light and everything else stay exactly as they are.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/R02.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/R02.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/K2-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "83068e87-18c4-496c-a41d-acb95f3888d6"
+}

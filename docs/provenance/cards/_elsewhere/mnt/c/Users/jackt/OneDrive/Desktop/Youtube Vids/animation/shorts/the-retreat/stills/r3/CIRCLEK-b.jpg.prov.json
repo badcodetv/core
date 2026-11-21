@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r3/CIRCLEK-b.jpg",
+ "made": "2026-11-21T20:22:27.686Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Add one person to this picture of the meditation pavilion: outside, beyond the bamboo railing in the background, the groundskeeper from the second image (flat cap, faded green work jacket, grey jumper) is sweeping the path with a broom, small but clearly recognisable, nobody inside looking at him. The man in the gilet in the foreground, the woman in white, the guests, the pavilion and the light stay exactly as they are.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/R03.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/R03.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r1/K2-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b4d88f52-5ebb-44ad-aad3-7ab3007000d3"
+}

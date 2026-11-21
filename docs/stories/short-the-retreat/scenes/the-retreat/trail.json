@@ -19,5 +19,12 @@
   "round": 3,
   "what": "rough cut 3, 29.6 s, meditative logo",
   "rebuild": "python3 scripts/shorts/retreat_cut.py --round 3"
+ },
+ {
+  "at": "2026-11-21T20:31:03+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "what": "rough cut 4, 30.5 s: groundskeeper planted early, tea-mug logo",
+  "rebuild": "python3 scripts/shorts/retreat_cut.py --round 4"
  }
 ]

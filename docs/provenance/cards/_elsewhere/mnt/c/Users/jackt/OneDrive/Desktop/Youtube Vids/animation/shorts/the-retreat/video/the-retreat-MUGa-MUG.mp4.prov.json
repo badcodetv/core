@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/video/the-retreat-MUGa-MUG.mp4",
+ "made": "2026-11-21T20:26:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Looking straight down, camera completely still. The milky tea in the white enamel mug is still, a wisp of steam rising. After a moment a small bright red leaf drifts down from above and settles gently on the surface of the tea, up and to the right of the centre. Soft circular ripples spread out from it across the tea and fade. The mug, the rim and the mossy rock do not move. Quiet, calm.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/MUG.jpg",
+ "why": "round 3: plant the groundskeeper early (Jack); the tea-mug logo outro",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/MUG.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-retreat/scenes/the-retreat",
+  "key": "MUGa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T20:24:39.715Z"
+ }
+}

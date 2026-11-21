@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/video/the-retreat-MUGb-MUG.mp4",
+ "made": "2026-11-21T20:25:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Top-down, locked camera. Steam curls slowly off the tea in the white mug. A single small red leaf floats down, spinning once, and lands on the tea just up and right of the middle; gentle round ripples spread to the rim and settle. Moss and leaves around the mug stay still. Peaceful, natural light.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/MUG.jpg",
+ "why": "round 3: plant the groundskeeper early (Jack); the tea-mug logo outro",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/MUG.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-retreat/scenes/the-retreat",
+  "key": "MUGb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T20:24:43.575Z"
+ }
+}

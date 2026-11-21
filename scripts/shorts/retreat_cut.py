@@ -4,7 +4,7 @@
     python3 scripts/shorts/retreat_cut.py [--round N]
 
 No line needs lip-sync: the guru is soft in the background, the bro whispers behind his hand, BadCode is masked.
-The Ram Dass quote is drawn over the sunset. The clips' own sound runs low. Ends on the meditative logo (scripts/shorts/retreat_logo.py) and its singing bowl.
+The Ram Dass quote is drawn over the sunset. The clips' own sound runs low. Ends on the tea-mug logo (scripts/shorts/retreat_logo_tea.py): its own room sound and singing bowl.
 Writes <media>/cut/r<N>/ in the timeline format.
 """
 # style-lint: story=short-the-retreat
@@ -34,13 +34,13 @@ VF = f'scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}
 # (beat, title, source, kind, in, min dur, [(line key, at)], own sound?, what we see)
 SHOTS = [
     ('quote', 'The quote', 'the-retreat-R01b-R01.mp4', 'quote', 0.2, 4.2, [], True, 'The Ram Dass line over a golden sunset'),
-    ('sign', 'The sign', 'the-retreat-R02a-R02.mp4', 'clip', 0.6, 2.2, [], True, 'DETOX FROM MATERIALISM, £3,000'),
-    ('circle', 'The circle', 'the-retreat-R03a-R03.mp4', 'clip', 0.2, 4.0, [('01-attachment', 0.2), ('02-sell', None)], True, 'Let go of every attachment; the bro trades into his sleeve'),
+    ('sign', 'The sign', 'the-retreat-R02ka-R02k.mp4', 'clip', 0.4, 2.6, [], True, 'DETOX FROM MATERIALISM, £3,000; the groundskeeper rakes leaves behind it'),
+    ('circle', 'The circle', 'the-retreat-R03ka-R03k.mp4', 'clip', 0.2, 4.0, [('01-attachment', 0.2), ('02-sell', None)], True, 'Let go of every attachment; the bro trades into his sleeve; the groundskeeper sweeps outside'),
     ('gong', 'The gong', 'the-retreat-R04a-R04.mp4', 'clip', 0.1, 3.0, [('03-gong', 0.6)], True, 'The gong; BadCode holds out the card machine'),
     ('shop', 'The gift shop', 'the-retreat-R05a-R05.mp4', 'clip', 0.3, 2.6, [], True, '£80 rocks'),
-    ('keeper', 'The groundskeeper', 'the-retreat-R06a-R06.mp4', 'clip', 0.2, 3.0, [], True, 'On his break, the wind in the trees'),
-    ('dog', 'The dog', 'the-retreat-R07a-R07.mp4', 'clip', 0.2, 3.6, [], True, 'The dog runs up; he pets it'),
-    ('logo', 'The logo', 'logo-breath.mp4', 'logo', 0.0, 5.0, [], False, 'The meditative logo: the ring draws like an out-breath, a singing bowl'),
+    ('keeper', 'The groundskeeper', 'the-retreat-R06a-R06.mp4', 'clip', 0.2, 2.6, [], True, 'On his break, the wind in the trees'),
+    ('dog', 'The dog', 'the-retreat-R07a-R07.mp4', 'clip', 0.3, 3.0, [], True, 'The dog runs up; he pets it'),
+    ('logo', 'The logo', 'logo-tea.mp4', 'logo', 0.0, 6.5, [], False, 'His mug of tea from above: a red leaf lands, the rim becomes the ring, the leaf the triangle'),
 ]
 
 
@@ -90,7 +90,7 @@ def main():
             lg = MEDIA / 'cut' / src
             ff('-i', lg, '-t', sd, '-vf', VF, '-an', *ENC, pf)
             bowl = (round(st, 3), lg, sd)
-            events.append({'stem': 'fx-bowl', 't': round(st, 3), 'dur': sd, 'what': f'{title}: the singing bowl', 'src': str(lg)})
+            events.append({'stem': 'fx-bowl', 't': round(st, 3), 'dur': sd, 'what': f'{title}: the mug clip\'s own sound and the singing bowl', 'src': str(lg)})
         parts.append(pf); vids.append({'file': str(pf), 'in': cin, 'start': round(st, 3), 'dur': sd, 'beat': bid, 'source': str(src), 'looped': False})
         beats.append({'id': bid, 'title': title, 'start': round(st, 3), 'dur': sd, 'see': see, 'lines': ls})
         t = st + sd

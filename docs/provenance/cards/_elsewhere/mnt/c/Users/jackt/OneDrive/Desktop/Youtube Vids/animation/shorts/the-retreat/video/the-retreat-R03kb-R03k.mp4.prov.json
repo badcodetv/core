@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/video/the-retreat-R03kb-R03k.mp4",
+ "made": "2026-11-21T20:26:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A very slow push-in towards the man in the navy gilet, who whispers into his hand with his eyes shut. Behind, through the bamboo arches, the groundskeeper sweeps the path at an easy pace and stops for a second to lean on his broom. The woman in white speaks softly. Everyone else stays still.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R03k.jpg",
+ "why": "round 3: plant the groundskeeper early (Jack); the tea-mug logo outro",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/moodboard/R03k.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-retreat/scenes/the-retreat",
+  "key": "R03kb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-21T20:25:17.621Z"
+ }
+}

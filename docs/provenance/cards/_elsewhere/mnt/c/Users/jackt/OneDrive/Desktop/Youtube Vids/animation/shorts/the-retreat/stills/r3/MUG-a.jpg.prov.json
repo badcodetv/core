@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/stills/r3/MUG-a.jpg",
+ "made": "2026-11-21T20:23:19.756Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Looking straight down from directly above at a plain white enamel camping mug of tea resting on a mossy grey rock, the same rock and moss as in the garden picture. The mug sits exactly in the centre of the picture and fills about half its width; its round white rim is a clean, even circle, and the tea inside is milky brown, perfectly still, a faint curl of steam. Around it, moss, a few fallen leaves and grass at the edges. Soft, even late-afternoon daylight, no harsh shadows, calm and quiet. No hands, no people, no words or logos anywhere.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/the-retreat/R06.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-retreat/R06.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0821074f-52f6-4cbc-b3c9-8bb5290e2a91"
+}
