@@ -1,0 +1,272 @@
+{
+ "title": "The Queue Stills",
+ "eyebrow": "BadCode Shorts \u00b7 The Queue",
+ "heading": "Stills, round 1",
+ "intro": "A counter hall where every window says POWER, built from Unsplash layouts. Portraits first, then the story in order, ending on the phone screen the logo goes onto. I've picked one per row; overrule or note any. Pollution check: clean (only this short's own wording and the brand's mask line repeat).",
+ "sections": [
+  {
+   "h": "Portraits",
+   "lede": "Every later shot is built from these.",
+   "groups": [
+    {
+     "slot": "C",
+     "title": "The cashier (BadCode)",
+     "line": "  My pick: C-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "C-a",
+       "src": "s/C-a.jpg",
+       "label": "C-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "C-b",
+       "src": "s/C-b.jpg",
+       "label": "C-b",
+       "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
+      }
+     ]
+    },
+    {
+     "slot": "K",
+     "title": "The woman with the kettle",
+     "line": "  My pick: K-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "K-a",
+       "src": "s/K-a.jpg",
+       "label": "K-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "K-b",
+       "src": "s/K-b.jpg",
+       "label": "K-b",
+       "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
+      }
+     ]
+    },
+    {
+     "slot": "P",
+     "title": "The pensioner",
+     "line": "  My pick: P-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "P-a",
+       "src": "s/P-a.jpg",
+       "label": "P-a \u2713 my pick",
+       "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
+      },
+      {
+       "id": "P-b",
+       "src": "s/P-b.jpg",
+       "label": "P-b",
+       "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
+      }
+     ]
+    },
+    {
+     "slot": "L",
+     "title": "The lad on 1%",
+     "line": "  My pick: L-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "L-a",
+       "src": "s/L-a.jpg",
+       "label": "L-a",
+       "warn": ""
+      },
+      {
+       "id": "L-b",
+       "src": "s/L-b.jpg",
+       "label": "L-b \u2713 my pick",
+       "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
+      }
+     ]
+    },
+    {
+     "slot": "M",
+     "title": "The machine (a data centre)",
+     "line": "  My pick: M-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "M-a",
+       "src": "s/M-a.jpg",
+       "label": "M-a \u2713 my pick",
+       "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
+      },
+      {
+       "id": "M-b",
+       "src": "s/M-b.jpg",
+       "label": "M-b",
+       "warn": "real Post Office signs in the background (portrait only; cropped out for the later shots)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The story",
+   "lede": "In script order.",
+   "groups": [
+    {
+     "slot": "QUEUE",
+     "title": "1. The queue",
+     "line": "\"Cashier number three, please.\"  My pick: QUEUE-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "QUEUE-a",
+       "src": "s/QUEUE-a.jpg",
+       "label": "QUEUE-a",
+       "warn": ""
+      },
+      {
+       "id": "QUEUE-b",
+       "src": "s/QUEUE-b.jpg",
+       "label": "QUEUE-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BARGE",
+     "title": "2. The machine pushes in",
+     "line": "The queue gasps.  My pick: BARGE-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BARGE-a",
+       "src": "s/BARGE-a.jpg",
+       "label": "BARGE-a \u2713 my pick",
+       "warn": "the machine is one tall cabinet, not van-sized"
+      },
+      {
+       "id": "BARGE-b",
+       "src": "s/BARGE-b.jpg",
+       "label": "BARGE-b",
+       "warn": "the machine is one tall cabinet, not van-sized"
+      }
+     ]
+    },
+    {
+     "slot": "CASHIER",
+     "title": "3. The cashier looks it up and down",
+     "line": "\"Brilliant machine. Wrong queue.\"  My pick: CASHIER-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CASHIER-a",
+       "src": "s/CASHIER-a.jpg",
+       "label": "CASHIER-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "CASHIER-b",
+       "src": "s/CASHIER-b.jpg",
+       "label": "CASHIER-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CLOSED",
+     "title": "3. POSITION CLOSED",
+     "line": "  My pick: CLOSED-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CLOSED-a",
+       "src": "s/CLOSED-a.jpg",
+       "label": "CLOSED-a",
+       "warn": "triangle on his right eye"
+      },
+      {
+       "id": "CLOSED-b",
+       "src": "s/CLOSED-b.jpg",
+       "label": "CLOSED-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "KETTLE",
+     "title": "4. Households first: the kettle boils",
+     "line": "  My pick: KETTLE-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "KETTLE-a",
+       "src": "s/KETTLE-a.jpg",
+       "label": "KETTLE-a \u2713 my pick",
+       "warn": "triangle on his right eye: to fix"
+      },
+      {
+       "id": "KETTLE-a-eye-a",
+       "src": "s/KETTLE-a-eye-a.jpg",
+       "label": "KETTLE-a-eye-a",
+       "warn": "fix attempt: triangle still central"
+      },
+      {
+       "id": "KETTLE-a-eye-b",
+       "src": "s/KETTLE-a-eye-b.jpg",
+       "label": "KETTLE-a-eye-b",
+       "warn": "fix attempt: still on the left"
+      },
+      {
+       "id": "KETTLE-b",
+       "src": "s/KETTLE-b.jpg",
+       "label": "KETTLE-b",
+       "warn": "failed: empty hall"
+      }
+     ]
+    },
+    {
+     "slot": "PHONE",
+     "title": "4. The lad plugs his phone into it",
+     "line": "  My pick: PHONE-b (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "PHONE-a",
+       "src": "s/PHONE-a.jpg",
+       "label": "PHONE-a",
+       "warn": ""
+      },
+      {
+       "id": "PHONE-b",
+       "src": "s/PHONE-b.jpg",
+       "label": "PHONE-b \u2713 my pick",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "SCREEN",
+     "title": "5. The logo: the charging ring",
+     "line": "The real logo is laid onto this screen in the edit; the ring fills and becomes the BadCode ring.  My pick: SCREEN-a (overrule here).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "SCREEN-a",
+       "src": "s/SCREEN-a.jpg",
+       "label": "SCREEN-a \u2713 my pick",
+       "warn": ""
+      },
+      {
+       "id": "SCREEN-b",
+       "src": "s/SCREEN-b.jpg",
+       "label": "SCREEN-b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

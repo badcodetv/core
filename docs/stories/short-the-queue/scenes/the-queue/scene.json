@@ -25,7 +25,9 @@
    "what": "Households first: the kettle boils"
   }
  ],
- "boards": {},
+ "boards": {
+  "stills": "https://claude.ai/artifact/DJbQNvfGKHa5hMDHQXmvAY"
+ },
  "flow_project": "c0e7c075-1dc4-4d65-bd20-84860de322f8",
  "video": {
   "aspect": "9:16",

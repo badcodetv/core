@@ -30,6 +30,7 @@ Not decided. Any Suno track is music and sound only; every spoken line is an AI 
 
 ## Story-only rules
 - Jack and Kai write the jokes; Claude drafts only when asked, marked as Claude's.
+- Never write "post office" in a Flow prompt: it pulls in the real Post Office's branding. Say "a public counter hall".
 - No children in this short (Jack, 2026-11-21: "no kids").
 - The data centre is a thing, not a villain person: no real company, no logo, no real politician.
 - The fact, if said: ministers plan discounts of UP TO £24 per megawatt-hour for AI data centres in AI Growth Zones from
