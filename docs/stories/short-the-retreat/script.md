@@ -15,7 +15,8 @@ Claude's draft (2026-11-21). Lines marked `(joke, claude)` are Claude's first go
 6. **Ten seconds later (5 s).** Both reach for the last roast potato. It goes off: shouting, a fork pointed, Dad hides behind the paper. *(joke, claude)*
    - BRO: "That's MY potato." / GURU: "Nothing is anyone's, Darren!" *(joke, claude)*
 7. **The middle (3 s).** Mum, unbothered, quietly gives the potato to Nan, who is having the best afternoon of anyone. *(joke, claude)*
-8. **End card (2 s).** Ram Dass's line (exact wording to check), credited. Logo.
+8. **End card (2 s).** "If you think you're enlightened, go and spend a week with your family." Ram Dass. Logo.
+   Wording check (2026-11-21): widely quoted in several versions ("…spend a week with your family", "…go spend a week with your parents"); no primary source (book or talk) found yet. Before release: find the talk on ramdass.org, or put "attributed to" on the card.
 
 ## To decide
 - Does BadCode appear (card machine), or is this one unmasked throughout?
