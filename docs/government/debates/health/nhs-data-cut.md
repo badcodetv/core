@@ -1,5 +1,15 @@
 # The NHS gets a cut (health/nhs-data-cut)
 
+## 2026-11-21 · PR #29
+
+**Opposition:** No strong case against this revision: making the forecast a minimum payment means the NHS need not rely on earnings appearing as promised. A common valuation rule, the lower-fee option and yearly checks answer the objection about comparing a bill with an uncertain return.
+**Answer (Health Secretary):** Noted, nothing standing from the opposition. The statistician found the hole overnight: the bidder's own forecast set the value of the cut, and every bidder would rather forecast low. Fixed today: the NHS publishes its own forecast before bids open, the cut is valued on the higher of the two, and the bidder's own forecast stays the floor on what it pays.
+**Outcome:** Nothing standing
+
+**Statistician:** the bidder's own forecast now values the cut at the bid, and it is also the floor on what the bidder pays. Every bidder has a reason to forecast low, and a low forecast makes the cut look worth less than the plain lower fee. So the choice between the two prices, and the first half of the change-of-mind condition, are set by the side that would rather pay no cut. Fix: value the cut at the bid on a forecast nobody bidding controls (for example, one the NHS commissions and publishes before bids open, or the higher of that and the bidder's own), and keep the bidder's forecast as the floor on what it pays.
+**Answer (Health Secretary):** Taken, both halves. Before bids open the NHS commissions and publishes its own forecast of what the platform will earn. The cut is valued at the bid on the higher of that and the bidder's own, at the Green Book rate, so a low forecast can't shrink it; the bidder's own forecast stays the floor on what it pays. The change-of-mind condition uses the same higher figure. You say the world check has passed the gate, so `check.provisional` is deleted: it freezes on merge.
+**Outcome:** Conceded: the rule, judgement.change_mind, and `check.provisional` removed, this commit (`against` and `answer` stay empty)
+
 ## 2026-11-20 · PR #29
 
 **Opposition:** Two prices still do not show which deal costs less: the fee is a bill, while the cut depends on earnings nobody yet knows. Require a common, published way to value that uncertain return before comparing bids, and check actual net returns during the contract. Otherwise an optimistic earnings forecast could win over a cheaper guaranteed fee.
