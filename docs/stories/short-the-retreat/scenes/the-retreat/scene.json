@@ -34,9 +34,9 @@
  },
  "flow_project_2": "6081d7c5-19b5-4985-b1d1-f7fd404aa4dd",
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/cut/r2/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/cut/r2/preview.mp4",
-  "script": "python3 scripts/shorts/retreat_cut.py --round 2",
-  "round": 2
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/cut/r3/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-retreat/cut/r3/preview.mp4",
+  "script": "python3 scripts/shorts/retreat_logo.py <media>/cut/logo-breath.mp4 --dur 5; python3 scripts/shorts/retreat_cut.py --round 3",
+  "round": 3
  }
 }

@@ -12,5 +12,12 @@
   "round": 2,
   "what": "rough cut 2, 27.0 s, Jack's voices",
   "rebuild": "python3 scripts/shorts/retreat_cut.py --round 2"
+ },
+ {
+  "at": "2026-11-21T20:13:46+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "what": "rough cut 3, 29.6 s, meditative logo",
+  "rebuild": "python3 scripts/shorts/retreat_cut.py --round 3"
  }
 ]

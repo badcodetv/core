@@ -4,7 +4,7 @@
     python3 scripts/shorts/retreat_cut.py [--round N]
 
 No line needs lip-sync: the guru is soft in the background, the bro whispers behind his hand, BadCode is masked.
-The Ram Dass quote is drawn over the sunset. The clips' own sound runs low. Ends on a plain logo card.
+The Ram Dass quote is drawn over the sunset. The clips' own sound runs low. Ends on the meditative logo (scripts/shorts/retreat_logo.py) and its singing bowl.
 Writes <media>/cut/r<N>/ in the timeline format.
 """
 # style-lint: story=short-the-retreat
@@ -40,7 +40,7 @@ SHOTS = [
     ('shop', 'The gift shop', 'the-retreat-R05a-R05.mp4', 'clip', 0.3, 2.6, [], True, '£80 rocks'),
     ('keeper', 'The groundskeeper', 'the-retreat-R06a-R06.mp4', 'clip', 0.2, 3.0, [], True, 'On his break, the wind in the trees'),
     ('dog', 'The dog', 'the-retreat-R07a-R07.mp4', 'clip', 0.2, 3.6, [], True, 'The dog runs up; he pets it'),
-    ('logo', 'The logo', None, 'logo', 0.0, 2.4, [], False, 'Logo card'),
+    ('logo', 'The logo', 'logo-breath.mp4', 'logo', 0.0, 5.0, [], False, 'The meditative logo: the ring draws like an out-breath, a singing bowl'),
 ]
 
 
@@ -86,10 +86,11 @@ def main():
             s = MB / src; fr = int(sd * FPS)
             ff('-loop', 1, '-i', s, '-vf', f"scale=3240:-2,zoompan=z='1.9-0.9*(1-pow(1-on/{fr},2))':x='(iw-iw/zoom)*0.12*(1-on/{fr})+(iw-iw/zoom)/2*(on/{fr})':"
                f"y='(ih-ih/zoom)*0.45':d={fr}:s={W}x{H}:fps={FPS},{CLAMP}", '-frames:v', fr, *ENC, pf)
-        else:
-            ff('-f', 'lavfi', '-i', f'color=black:s={W}x{H}:r={FPS}:d={sd}', '-loop', 1, '-i', LOGO, '-filter_complex',
-               f"[1]scale=640:-1,format=rgba,fade=t=in:st=0.2:d=0.5:alpha=1[l];[0][l]overlay=(W-w)/2:(H-h)/2:shortest=1,{CLAMP}",
-               '-t', sd, *ENC, pf)
+        else:  # the meditative logo (scripts/shorts/retreat_logo.py), with its singing bowl on its own stem
+            lg = MEDIA / 'cut' / src
+            ff('-i', lg, '-t', sd, '-vf', VF, '-an', *ENC, pf)
+            bowl = (round(st, 3), lg, sd)
+            events.append({'stem': 'fx-bowl', 't': round(st, 3), 'dur': sd, 'what': f'{title}: the singing bowl', 'src': str(lg)})
         parts.append(pf); vids.append({'file': str(pf), 'in': cin, 'start': round(st, 3), 'dur': sd, 'beat': bid, 'source': str(src), 'looped': False})
         beats.append({'id': bid, 'title': title, 'start': round(st, 3), 'dur': sd, 'see': see, 'lines': ls})
         t = st + sd
@@ -115,6 +116,11 @@ def main():
     fl.append(f"{''.join(f'[f{k}]' for k in range(len(room)))}amix=inputs={len(room)}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]")
     sp = cut / 'amb-room.wav'; ff(*ins, '-filter_complex', ';'.join(fl), '-map', '[o]', '-ar', 48000, sp)
     audio.append({'track': f'A{len(audio) + 1}', 'name': 'amb-room', 'file': str(sp)})
+    at, lg, ln = bowl
+    sp = cut / 'fx-bowl.wav'
+    ff('-i', lg, '-filter_complex', f'[0:a]aresample=48000,adelay={int(at * 1000)}|{int(at * 1000)},apad=whole_dur={total},atrim=end={total}[o]',
+       '-map', '[o]', '-ar', 48000, sp)
+    audio.append({'track': f'A{len(audio) + 1}', 'name': 'fx-bowl', 'file': str(sp)})
     ins = sum([['-i', x['file']] for x in audio], [])
     ff(*ins, '-filter_complex', f"{''.join(f'[{k}]' for k in range(len(audio)))}amix=inputs={len(audio)}:normalize=0,loudnorm=I=-14:TP=-1.5,alimiter=limit=0.84:level=0[o]",
        '-map', '[o]', '-ar', 48000, '-ac', 2, cut / 'mix.wav')
