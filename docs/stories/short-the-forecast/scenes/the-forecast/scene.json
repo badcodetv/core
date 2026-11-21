@@ -42,5 +42,11 @@
   "script": "python3 scripts/shorts/forecast_cut.py --round 1",
   "round": 1,
   "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-forecast/cut/r1/preview.mp4"
+ },
+ "premiere": {
+  "project": "the-forecast.prproj",
+  "sequence": "short-the-forecast-1-the-forecast-r1",
+  "round": 1,
+  "checked": "6/6 shots at the planned times"
  }
 }
