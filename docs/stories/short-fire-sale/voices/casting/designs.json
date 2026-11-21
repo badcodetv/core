@@ -1,0 +1,11 @@
+[
+ {"name":"jim-a","role":"jim","gender":"male","desc":"An Essex market trader of about fifty-five: cheerful, chancing, quick patter, a warm rough voice that has shouted prices across a field for thirty years."},
+ {"name":"jim-b","role":"jim","gender":"male","desc":"A Black Country man of about fifty-five, a car-boot regular: friendly, matter-of-fact, flat West Midlands vowels, as if selling a kettle."},
+ {"name":"jim-c","role":"jim","gender":"male","desc":"A South London wheeler-dealer of about fifty-five: cocky, sing-song, a wink in every word, a bit of a geezer."},
+ {"name":"phineas-a","role":"phineas","gender":"male","desc":"A very old-money English man of about sixty-five from the shires: plummy, slow, bored, deep and fruity, used to never being refused."},
+ {"name":"phineas-b","role":"phineas","gender":"male","desc":"A self-made Yorkshire millionaire of about sixty-five: gruff, blunt, low, quietly menacing, every word a decision."},
+ {"name":"phineas-c","role":"phineas","gender":"male","desc":"A Home Counties financier of about sixty-five: smooth, soft, oily, faintly amused, speaks as if dictating to a secretary."},
+ {"name":"badcode-a","role":"badcode","gender":"male","desc":"A Cornish man of about fifty, a village auctioneer: kind, unhurried, gentle but firm, like a vicar running the tombola."},
+ {"name":"badcode-b","role":"badcode","gender":"male","desc":"A Liverpool man of about forty, an auctioneer: dry, quick, deadpan, polite with an edge."},
+ {"name":"badcode-c","role":"badcode","gender":"male","desc":"A Northumberland man of about sixty, an auctioneer: calm, clear, plain-spoken, warm, utterly unimpressed by money."}
+]

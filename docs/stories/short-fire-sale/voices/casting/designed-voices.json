@@ -1,0 +1,47 @@
+{
+ "jim-a": {
+  "id": "voice_sh6b33amm9pf",
+  "role": "jim",
+  "desc": "An Essex market trader of about fifty-five: cheerful, chancing, quick patter, a warm rough voice that has shouted prices across a field for thirty years."
+ },
+ "jim-b": {
+  "id": "voice_kpg47gfvn2q3",
+  "role": "jim",
+  "desc": "A Black Country man of about fifty-five, a car-boot regular: friendly, matter-of-fact, flat West Midlands vowels, as if selling a kettle."
+ },
+ "jim-c": {
+  "id": "voice_q1zpo29y36uc",
+  "role": "jim",
+  "desc": "A South London wheeler-dealer of about fifty-five: cocky, sing-song, a wink in every word, a bit of a geezer."
+ },
+ "phineas-a": {
+  "id": "voice_640eo43st5pq",
+  "role": "phineas",
+  "desc": "A very old-money English man of about sixty-five from the shires: plummy, slow, bored, deep and fruity, used to never being refused."
+ },
+ "phineas-b": {
+  "id": "voice_ydhhcdo8628m",
+  "role": "phineas",
+  "desc": "A self-made Yorkshire millionaire of about sixty-five: gruff, blunt, low, quietly menacing, every word a decision."
+ },
+ "phineas-c": {
+  "id": "voice_4xmof5h5vui6",
+  "role": "phineas",
+  "desc": "A Home Counties financier of about sixty-five: smooth, soft, oily, faintly amused, speaks as if dictating to a secretary."
+ },
+ "badcode-a": {
+  "id": "voice_t1x1lyvjqttv",
+  "role": "badcode",
+  "desc": "A Cornish man of about fifty, a village auctioneer: kind, unhurried, gentle but firm, like a vicar running the tombola."
+ },
+ "badcode-b": {
+  "id": "voice_7f3d5fcwhehh",
+  "role": "badcode",
+  "desc": "A Liverpool man of about forty, an auctioneer: dry, quick, deadpan, polite with an edge."
+ },
+ "badcode-c": {
+  "id": "voice_pspwcyo68znt",
+  "role": "badcode",
+  "desc": "A Northumberland man of about sixty, an auctioneer: calm, clear, plain-spoken, warm, utterly unimpressed by money."
+ }
+}

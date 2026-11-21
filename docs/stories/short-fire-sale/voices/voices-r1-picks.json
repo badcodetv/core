@@ -1,0 +1,92 @@
+{
+ "title": "Fire Sale Voices",
+ "eyebrow": "BadCode Shorts \u00b7 Fire Sale \u00b7 voices round 1",
+ "heading": "Fire Sale: voices",
+ "intro": "Three English voices per role. Every take checked word by word. The first cut uses Claude's guesses (Jim a, Phineas a, BadCode c) until you pick.",
+ "sections": [
+  {
+   "h": "Pick one per role",
+   "lede": "Claude can't hear these: its picks are guesses from the descriptions.",
+   "groups": [
+    {
+     "slot": "jim",
+     "title": "Jim",
+     "line": "\"Hospitals, love. Forty quid.\" / \"The courts. Slightly used.\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/both--jim-a.mp3",
+       "label": "a: Essex market trader",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/both--jim-b.mp3",
+       "label": "b: Black Country car-boot regular",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/both--jim-c.mp3",
+       "label": "c: South London geezer",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "phineas",
+     "title": "Phineas",
+     "line": "\"All of it.\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/03-allofit--phineas-a.mp3",
+       "label": "a: plummy old money",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/03-allofit--phineas-b.mp3",
+       "label": "b: gruff self-made Yorkshire",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/03-allofit--phineas-c.mp3",
+       "label": "c: oily Home Counties financier",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "badcode",
+     "title": "BadCode (the auctioneer)",
+     "line": "\"Sorry, sir. Fifty quid's the limit now. Same as everyone.\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/04-limit--badcode-a.mp3",
+       "label": "a: Cornish, kind but firm",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/04-limit--badcode-b.mp3",
+       "label": "b: Liverpool, dry and deadpan",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/04-limit--badcode-c.mp3",
+       "label": "c: Northumberland, calm and plain",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

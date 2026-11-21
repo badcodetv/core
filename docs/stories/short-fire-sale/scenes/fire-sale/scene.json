@@ -32,7 +32,8 @@
   }
  ],
  "boards": {
-  "stills": "https://claude.ai/artifact/URMdM8DmjjEc2gRGfssj7f"
+  "stills": "https://claude.ai/artifact/URMdM8DmjjEc2gRGfssj7f",
+  "voices": "https://claude.ai/artifact/9uYTb9SPSbAFz1KycidYme"
  },
  "flow_project": "3e35b83e-2dc8-440b-acc2-45d246df363f",
  "video": {

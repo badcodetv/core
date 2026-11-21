@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/audio/casting/04-limit--badcode-c.wav",
+ "made": "2026-11-21T21:35:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Sorry, sir. Fifty quid's the limit now. Same as everyone.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_pspwcyo68znt",
+  "style": "calm and polite, firm",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

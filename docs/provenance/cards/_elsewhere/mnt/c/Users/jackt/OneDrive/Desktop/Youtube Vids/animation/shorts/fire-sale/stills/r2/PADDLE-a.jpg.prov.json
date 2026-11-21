@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r2/PADDLE-a.jpg",
+ "made": "2026-11-21T21:36:21.793Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Change only the auctioneer standing at the lectern at the back of the tent: he becomes a man in a navy knitted balaclava with a white ring round his face and a small red triangle over his own left eye, wearing a brown tweed jacket over a navy roll-neck that runs up into the mask, and black gloves. The balaclava exactly as in the attached image: no holes, no skin, gloves. Everything else stays as it is: the man with glasses holding up paddle 29, the board reading £150,000, the bidders, the marquee and the light.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/badcode-refs/fire-sale/S08.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/fire-sale/S08.jpg",
+   "/home/jackt/.cache/badcode-refs/fire-sale/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9c38a26f-2dbe-4061-96b9-321acf1e755e"
+}
