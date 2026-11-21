@@ -1,0 +1,128 @@
+# The visit stays a person (health/the-visit-stays-a-person)
+
+## 2026-11-21 · PR #29
+
+**Opposition:** Your fallback lets fewer councils weaken the check for worsening care, without limiting how much harm it may miss. Publishing that weakness does not protect someone whose needed care goes undelivered. Set a limit on undetected harm before allowing national rollout; an inconclusive safety check must not count as a pass.
+**Answer (Health Secretary):** Right. Publishing a blind spot doesn't get anyone their visit. Conceded. At two years the outside reassessment must rule out, at the one-in-twenty level, a rise of one in ten or more in needed hours not delivered. A reading too small to tell fails and never counts as a pass, so a short-handed trial can't go national on an unclear safety reading. Any rise beyond chance still fails, whatever its size.
+**Outcome:** Conceded: fails_if, this commit (nothing standing; `against` and `answer` stay empty)
+
+**Statistician:** the six-month deadline only covers the case where twelve or more a set volunteer. If fewer than twenty-four councils come forward, nothing says what happens, so the start, the two-year test and the stop date can still slip forever. Nothing sets a date by which the first council starts, either (Home's test.by now does). Fix: "the first council starts no later than six months after the call", plus what runs if fewer than twelve a set have volunteered by then (for example, the trial doesn't run, the review says so and the policy goes back to Not ready).
+**Answer (Health Secretary):** Taken, in your words. The first council starts no later than six months after the call, so the test and the stop date have dates. If fewer than twelve a set have volunteered by then, the trial doesn't run, the review says so, and the policy goes back to Not ready.
+**Outcome:** Conceded: test.by and test.measure, this commit
+
+## 2026-11-20 · PR #29
+
+**Opposition:** No strong case against this revision: the outside reassessment now specifies how reliably it must detect worsening care, accounts for differences across councils, and can fail the trial for a rise smaller than one in ten. This answers the latest sampling objection.
+**Answer (Health Secretary):** Noted, nothing standing. The statistician found the one gap left: twelve councils a side may never be enough. Fixed today: the number of councils is sized before the draw, with a six-month deadline to volunteer.
+**Outcome:** Nothing standing
+
+**Statistician:** twelve councils a side may never be enough. Because chance is now counted across councils too, the differences between councils set a floor on the noise that no number of extra people removes. If a real one-in-ten rise can't be found eight times in ten with twelve councils a side, "as many more as it takes" never ends. Fix: let the number of councils grow as well as the number of people, fixed before the draw (as Home now does with forces), or state the smallest rise twelve against twelve can find and use that.
+**Answer (Health Secretary):** Right, more people can't beat the noise between councils. Taken, both halves. The number of councils and of people in each set is fixed before the draw, from the councils' own care records, so that a real one-in-ten rise is found eight times in ten at the one-in-twenty level; twelve a set is the floor. Councils have six months from the call to volunteer. If too few come forward, it starts with those that did, at least twelve a set, and the smallest rise it can find eight times in ten is published before the draw. Any rise beyond chance still fails.
+
+**Outcome:** Conceded: test.where, test.against and test.measure, this commit
+
+## 2026-11-19 · PR #29
+
+**Opposition:** No strong case against this revision: a starting measurement, a sample sized for its margin, and explicit reassessment eligibility answer the objections to yesterday's outside needs check.
+**Answer (Health Secretary):** Noted, and thanks. Nothing standing from the opposition. The statistician found one more gap in the same measure overnight, the size of the sample, and it's fixed today. The policy still carries no case against.
+**Outcome:** Nothing standing
+
+**Statistician:** the reassessment sample is "as many more as it takes ... for a gap of one in ten to be told from chance", but without a named level and power the number has nothing to be worked out from. The fail line also doesn't say whether a gap of one in ten fails on its face or only when it is beyond chance. Fix: name both (for example, one time in twenty, and a real one-in-ten gap found eight times in ten) and say which the fail line uses.
+**Answer (Health Secretary):** Taken. The sample is sized so a real rise of one in ten is found eight times in ten at the one-in-twenty level, with chance counted across councils as well as people. The fail line uses chance, not size: any rise in undelivered care beyond what chance alone gives one time in twenty fails the trial, whatever its size. Care she needed and didn't get isn't waved through for being small.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+## 2026-11-18 · PR #29
+
+**Opposition:** No strong case against this revision: independent reassessment now checks current needs in the fixed group, and unmet care found there can fail the trial at either annual review. Keeping the original assessment measure alongside it protects against shrinking recorded needs. This answers yesterday's objection.
+**Answer (Health Secretary):** Noted, and thanks. The statistician found two holes in the same measure overnight, both fixed today: a reading before the start, a sample sized for its margin, and who can be drawn. Nothing standing from the opposition, so the policy still carries no case against.
+**Outcome:** Nothing standing
+
+**Statistician:** The outside reassessment has no baseline, and its margin is smaller than the noise. Year one compares levels between the two sets of councils, so a trial set that starts with more unmet need fails on day one. And needed hours not delivered per person is a lopsided figure: most people read will show none, and a few will show many. From 300 people spread across a dozen councils, a gap of one in twenty is what chance alone produces about as often as not. Fix: an outside reassessment of the same size in both sets before the start, each set measured from its own baseline, and either a sample big enough that one in twenty can be told from chance or a wider margin (for example, more than a fifth higher).
+**Answer (Health Secretary):** Taken. The outside reassessment now runs before the start as well as each year, the same number in each set of councils, and each set is judged from its own reading before the start. The sample is at least 300 a set and as many more as it takes, fixed before the start, for a gap of one in ten to be told from chance. The margin widens from one in twenty to one in ten, not a fifth: a fifth more undelivered care is too much to wave through, so the sample grows instead.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+**Statistician:** The draw for the reassessment comes from the fixed group, which follows people after their care ends, so it includes people who have died or moved into a care home, who can't be reassessed for care at home. Fix: one sentence on who can be drawn (for example, people in the fixed group still living at home on the day of the draw), with the people excluded counted beside it by reason.
+**Answer (Health Secretary):** Taken. The draw is from people in the fixed group still living at home on the day of the draw. People who have died, moved into a care home or moved away are counted beside it by reason. They stay in the fixed group for the admissions count.
+**Outcome:** Conceded: test.measure, this commit
+
+## 2026-11-17 · PR #29
+
+**Opposition:** Freezing assessments prevents cuts on paper from looking like better care. But someone whose needs increase could receive their old hours and show no unmet care under this measure. Counting reassessments doesn't make that shortfall count towards failure. Keep the fixed measure, but independently check changed needs and add a failure safeguard for care those people still lack.
+**Answer (Health Secretary):** Right. Her needs went up in March and the yardstick still says she's fine. The fixed yardstick stays, because it's the one the council can't move. Now someone the council doesn't pay checks it. Every year an assessor working for neither the council nor the provider reassesses at least 300 people drawn at random from the fixed group in each set of councils, and records the hours each needs now and the hours delivered. If needed hours not delivered per person are more than one in twenty higher than in the councils waiting, at one year or at two, the trial fails.
+**Outcome:** Conceded: test.measure and fails_if, this commit (nothing else standing; `against` and `answer` stay empty)
+
+## 2026-11-16 · PR #29
+
+**Opposition:** No strong case against this revision: unmet assessed care now counts whether or not a package has started, has its own failure threshold, and sits beside measures of existing care and hospital admissions. That answers yesterday's objection.
+**Answer (Health Secretary):** Noted, and thanks. Nothing left standing, so the best case against comes off the policy until somebody finds the next hole.
+**Outcome:** Nothing standing: `against` and `answer` removed, this commit
+
+**Statistician:** The councils being judged write the plans that set unmet assessed hours. A plan cut from ten hours to seven removes three unmet hours without one more hour delivered, and the measure gives no period. Fix: hold each person in the fixed group at the hours of their last assessment before day one, use first-assessment hours for new starters, count reassessments that raise or cut hours on their own line in both groups, and say "per week".
+**Answer (Health Secretary):** Right, and it's the oldest trick on the ward. Cut the plan and the gap closes without one more visit. Unmet hours are now per week, measured against the hours in each person's last assessment before day one, and new starters' first assessment. Every reassessment that raises or cuts hours is counted on its own line, by direction, in both sets of councils. The plan can change; the yardstick can't.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+## 2026-11-15 · PR #29
+
+**Opposition:** Giving someone a small package removes them from your queue even if most assessed care remains missing. Total hours can rise while those gaps persist. Count unmet assessed hours, including people whose packages have started, and give that measure a failure threshold. Otherwise the trial could pass while leaving much of the promised care undelivered.
+**Answer (Health Secretary):** Right. A package that covers half her plan takes her off the list and leaves half the plan undone. New measure: unmet assessed hours per thousand residents, the hours in every eligible person's assessed care plan, with a package or without, less the hours actually delivered, from council care records and visit records. If it hasn't fallen by at least one in twenty against the councils waiting, the trial fails. The queue count stays beside it, with its own fail number.
+**Outcome:** Conceded: test.measure and fails_if add unmet assessed hours; answer line updated, this commit
+
+**Statistician:** health/the-visit-stays-a-person: "hours per person per week for the people on the books on day one have fallen" has no margin. If the trial does nothing to existing care, chance alone puts the trial councils below the councils waiting about half the time, so this clause can fail a trial that works. It also doesn't say whether someone whose package ends (death, a care home, recovery) counts as zero hours or leaves the group. Fix: a margin against the councils waiting (for example, a fall of more than one in twenty from its own baseline), and one sentence on how people who leave care are counted.
+**Answer (Health Secretary):** Taken. It fails if those hours fall by more than one in twenty against the councils waiting. A person whose package ends leaves that line on the day it ends; the endings are counted beside it, by reason. They stay in the fixed group for the admissions count, so nobody vanishes from the figure that matters most.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+## 2026-11-14 · PR #29
+
+**Opposition:** Giving saved hours to neighbours waiting is right. But your pass rule still requires hours per person to rise. A pooled average can fall when new recipients need shorter packages, without anyone losing care. Judge unmet assessed hours and existing recipients separately, so reaching more people cannot itself fail the trial.
+**Answer (Health Secretary):** Right. I set a fail number that punishes the thing I asked for. The fail number is now total hours of care delivered per thousand residents: up by a tenth at two years, one in twenty at one year, wherever the hours went. Hours per person per week stays only for the people on the books on day one, on its own line, and it fails the trial if it falls. Nobody's care is quietly thinned to reach the next house.
+**Outcome:** Conceded: test.measure, test.by and fails_if, this commit
+
+**Opposition:** Following people after care ends fixes exits, not entry. Adding every new starter still lets the rule change who enters the admissions measure. Adding people with different hospital risks could produce the required fall without preventing admissions. Include people assessed and waiting at the start in both groups; report later starters separately.
+**Answer (Health Secretary):** Yes. The group is fixed on day one: everyone with a package and everyone assessed and waiting, in both sets of councils, followed whether or when their care starts and after it ends. Later starters get a line of their own and don't count toward the admissions number.
+**Outcome:** Conceded: test.measure, this commit
+
+**Statistician:** The hours measure now fights the rule. Saved hours go first to people waiting, and each newcomer added to "hours of care per person per week" pulls the average down, so the trial can do exactly what it promises and fail both its one-year and two-year hours thresholds. Fix: measure total hours of care delivered per thousand residents (the rise of a tenth, and one in twenty at a year, then mean more care, wherever it went), and keep hours per person only for the people on the books on day one, so nobody's existing care falling shows on its own line.
+**Answer (Health Secretary):** Taken as written. Same fix as the opposition's first point.
+**Outcome:** Conceded: test.measure, test.by and fails_if, this commit
+
+**Statistician:** The queue clause has no baseline and no margin. "More people assessed and waiting per thousand residents than in the councils waiting" compares levels, so a trial council that starts with a longer queue fails on day one, and any difference at all, however small, fails it. "Assessed and waiting" has no named record or definition either. Fix: compare the change from each council's own baseline, set a margin (for example, the queue in trial councils grows by more than a tenth relative to the councils waiting), and define the count (assessed as eligible, no package started, from the council's own care records, counted on a fixed day each quarter).
+**Answer (Health Secretary):** Taken. Each council is measured from its own starting queue. It fails if the queue in trial councils grows by more than a tenth against the councils waiting. The count is people assessed as eligible with no package started, from each council's own care records, on a fixed day each quarter.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+**Statistician:** The admissions group fills unevenly. Trial councils move people off the queue into care faster, so their "new starters" join the measured group sooner, and people who start care are not the people who stay on the books, so admissions per thousand can move because the group changed. Fix: put everyone assessed and waiting on day one into the fixed group alongside everyone with a package, and follow them all, whether or when their care starts; count later starters on a separate line.
+**Answer (Health Secretary):** Taken. Same fix as the opposition's second point.
+**Outcome:** Conceded: test.measure, this commit
+
+## 2026-11-13 · PR #29
+
+**Opposition:** Why must every saved minute lengthen an existing visit? Your cited Bristol study reports the same care with less travel. Test using saved time for unmet assessed needs too, while protecting existing care. Otherwise someone gets a longer visit while their neighbour gets none, and your test cannot tell whether that was the better choice.
+**Answer (Health Secretary):** Fair. A longer visit for her while the woman next door waits with nothing is the wrong order. The hours the road gives back now go first to people assessed and waiting in that neighbourhood, then into longer visits. Nobody's existing care is cut to pay for it. The trial counts both: hours of care per person per week, and the queue. If the queue grows in trial councils against the councils waiting, it fails. What it can't do is run the two uses as separate arms side by side. That's on the policy as the best case against.
+**Outcome:** Conceded in part: the rule sends saved hours to people assessed and waiting first; fails_if adds the queue; `against` and `answer` set, this commit
+
+**Opposition:** Your admissions measure covers people receiving funded care. What happens to someone whose package ends? Without following them, fewer admissions could reflect who remains on the books. Longer visits also need not mean more care per person each week. Follow starting recipients after exit; publish missed visits, total care received and unmet need.
+**Answer (Health Secretary):** Yes. Count the list and the list can flatter you. The group is now fixed on day one: everyone with a package, plus every new starter, each followed after the package ends through hospital records matched to council care records. Minutes per visit stays, beside hours of care per person per week, missed visits and people assessed and waiting. Published quarterly.
+**Outcome:** Conceded: test.measure follows a fixed group and adds hours per week, missed visits and the queue, this commit
+
+**Opposition:** Councils waiting their turn are promised the rule after the trial, without saying it must pass. As written, that allows expansion after failure. The stop clause also never explicitly ties expiry to the two-year review. Make later rollout conditional on passing, and specify when a failed rule ends and how existing care continues.
+**Answer (Health Secretary):** Right, and it's the clause the people in the trial care about most. The councils waiting start only if it passes. It stops two years after the first council starts unless Parliament votes to keep it, on the published review. If it stops, nobody loses an hour on the way out: each person keeps the care they had.
+**Outcome:** Conceded: stop names its date, the waiting councils start only on a pass, and the body promises no hours lost if it stops, this commit
+
+**Statistician:** No size. Nothing says how many councils go first or how many sit in the comparison, and a one-in-ten fall in emergency admissions can't be told from chance across a handful. It is also unclear whether the comparison is the volunteers drawn by lot to go later or non-volunteer councils matched on size, deprivation and self-funder share. Fix: name the minimum number of councils in each group, and say the comparison is the volunteers drawn to go later, with the matching used as a check on them.
+**Answer (Health Secretary):** Taken. At least twelve volunteer councils start first and at least twelve wait, drawn by lot. The volunteers waiting are the comparison. Matched councils that didn't volunteer are a check on them. Twelve is a floor. The review prints how many took part beside the result.
+**Outcome:** Conceded: test.where and test.against name the groups and their floor, this commit
+
+**Statistician:** The admissions count moves its own denominator. "People receiving council-funded home care" changes with the trial, because packages end, people die or go into care homes, so admissions per thousand can fall because the list changes. Fix: fix the group at the start (everyone with a package on day one, plus new starters), follow each person even after their package ends, and name the data: hospital admissions records (Hospital Episode Statistics) matched to council care records.
+**Answer (Health Secretary):** Taken as written. Same fix as the opposition's second point.
+**Outcome:** Conceded: test.measure, this commit
+
+**Statistician:** Minutes per visit can rise while care falls. Merge two visits into one and the average goes up. The figure comes from the providers being judged, and providers on today's task-based contracts in the comparison councils may not record it the same way. Fix: add total hours of care delivered per person per week, take both figures from the council's electronic visit records, and take a baseline in both groups before the start.
+**Answer (Health Secretary):** Taken. Two visits merged into one isn't more care, it's a longer gap. Hours per person per week is now the fail number, minutes per visit sits beside it, both from the councils' electronic visit records, baseline in both groups before the start. At one year, hours per person per week up by one in twenty or it's in trouble early.
+**Outcome:** Conceded: test.measure, test.by and fails_if, with an interim measure at one year, this commit
+
+**Statistician:** The stop gives no date. It says "stops on its date", but the file names none (test.by is "two years after the first council starts"). The comparison councils "get the rule after the trial" whether or not it passes. Fix: "Stops two years after the first council starts unless Parliament votes to keep it, on the published review", and make the comparison councils' turn depend on a pass.
+**Answer (Health Secretary):** Taken word for word. See the opposition's third point.
+**Outcome:** Conceded: stop, this commit
+
+**Statistician:** The world check (still provisional, one rewrite allowed) tests a bystander fact. Acute delayed discharges measure people stuck on the way out of hospital. The policy argues that road time saved and spent in the visit keeps people out of hospital, and a rise or fall in discharge delays says nothing about that. The rule, source and revision clause are otherwise sound, and the prior of 0.55 is fine. Fix: predict something the policy argues. For example: the spring 2027 neighbourhood home-care guidance sets no requirement for where saved travel time goes, marked against the DHSC guidance page as it stands on the check date, with the rule naming exactly which wording would count as a requirement.
+**Answer (Health Secretary):** Taken, and this is the one rewrite. Discharge delays are the way out of hospital; this policy is about where the saved time goes. New check: the DHSC's neighbourhood home-care guidance, due in spring 2027, sets no requirement on where the time saved on travel goes, read on GOV.UK as it stands on 31 July 2027. Held if no sentence tells councils or providers they must or should spend it on care (longer visits, more hours, or people waiting); failed if one does; void if no guidance is out by then. Prior 0.65. The provisional mark is off.
+**Outcome:** Conceded: check rewritten, this commit

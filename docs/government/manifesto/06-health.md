@@ -5,7 +5,7 @@ policies: health/the-median-wait, health/tried-on-a-ward, health/the-time-goes-t
 ---
 ## Position
 
-Your mum's hip is one of 7.4 million waits for planned treatment in England. Hitting a date is not
+Your mum's hip is one of 7.38 million waits for planned treatment in England. Hitting a date is not
 fixing a queue.
 
 NHS England has told the health service to adopt AI note-takers that listen to your appointment.

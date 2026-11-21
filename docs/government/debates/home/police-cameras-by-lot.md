@@ -1,0 +1,107 @@
+# Police Cameras, Tested First (home/police-cameras-by-lot)
+
+## 2026-11-21 · PR #29
+
+**Opposition:** No strong case against this revision: the six-month deadline lets the safeguards start without enough forces for the crime test. The fallback judges those safeguards on their own thresholds, discloses that crime solved was not tested, and permits national rollout without new vans. That answers the objection about safeguards waiting indefinitely.
+**Answer (Home Secretary):** Noted, and thanks. Nothing new standing, and the statistician passed it too. The older point stays printed on the policy: up to one arrest in a hundred on a match alone still passes the trial. So does the answer: each one breaks the rule and is answered in public.
+**Outcome:** Nothing standing (`against` and `answer` keep the older point on match-alone arrests)
+
+## 2026-11-20 · PR #29
+
+**Opposition:** Your new rule waits indefinitely for enough volunteer forces before any of the trial starts. That also delays the outside reading of arrests and public answers for match-only arrests. Give recruitment a deadline and a fallback for testing those safeguards separately, so gathering enough forces to test the vans does not hold up checking police conduct.
+**Answer (Home Secretary):** Right: a safeguard shouldn't wait on a headcount of forces. Conceded. Forces now have six months from the code becoming law to volunteer, and the first force starts by then. If that's too few for the crime-solved test, the safeguard lines start anyway in every force that volunteered: wrong person, match alone (with the outside reading and the public answer for each breach) and deletions, judged on their own fail numbers. Crime solved is dropped from the test, the review says so, and no new van is bought until a test of that size can run. The law's deletions and the right to a human at the stop never waited: every force has them from day one.
+**Outcome:** Conceded: test.where, test.measure, test.by, fails_if and stop, this commit (`against` and `answer` keep the older standing point on match-alone arrests)
+
+**Statistician:** the test now has no date. "The trial doesn't start until enough do" means the start, the two-year test and the stop date can all slip forever. The number of forces needed may also be more than volunteer, or more than the 43 forces in England and Wales can supply. Fix: a recruitment deadline, plus what runs if it is missed. For example, the safeguard lines (wrong person, match alone, deletions) start in the forces that volunteered, each against its own before, and crime solved is dropped from the test, and said so.
+**Answer (Home Secretary):** Taken, as you wrote it. Forces have six months from the code becoming law to volunteer, and the first force starts by then, so the test and the stop date have dates. If too few volunteer to size the crime-solved test, the safeguard lines (wrong person, match alone, deletions) start then in every force that did, judged on their own fail numbers; crime solved is dropped from the test and the review says so; no new van is bought; a pass takes the code national without new vans. And the 43 may not stay 43 (the Home Office announced about 200 Local Police Commands on 18 November), so forces are counted as they stand on the day of the draw.
+**Outcome:** Conceded: test.where, test.measure, test.by, fails_if and stop, this commit
+
+## 2026-11-19 · PR #29
+
+**Opposition:** No strong case against this revision: expansion now requires improved charges or summonses across all named crime types beyond chance, so camera involvement alone cannot pass it.
+**Answer (Home Secretary):** Noted. The statistician found the hole from the other side: eight forces against eight may be too few to see the rise at all. Fixed today. Nothing standing from the opposition.
+**Outcome:** Nothing standing (`against` and `answer` keep the older standing point on match-alone arrests)
+
+**Statistician:** "beyond what chance alone would give one time in twenty" names no unit. Forces were drawn by lot, so chance has to be counted across forces, not crimes. Counted across tens of thousands of crimes, almost any gap clears it. Counted across eight forces against eight, an all-crime rise of a few per cent, most of it from cases where no camera was used, will usually be missed even if it is real, and a trial that works fails. Fix: name the force as the unit, and either state the smallest rise eight against eight can reliably detect or add forces until it covers the rise you expect.
+**Answer (Home Secretary):** Taken. The force is the unit for chance, not the crime. The number of forces in each set is fixed before the draw, worked out from each force's charge rates for those crimes over the five years before, so that a real rise of one in twenty in charges or summonses across all crimes of those types is found eight times in ten. Eight a set is the floor, not the answer. If too few forces volunteer to reach it, the trial doesn't start until enough do; the law's deletions and the right to a human carry on in every force meanwhile.
+**Outcome:** Conceded: test.where, test.against, test.measure and fails_if, this commit
+
+## 2026-11-18 · PR #29
+
+**Opposition:** The new test can still pass without solving any extra crime: using cameras on cases that would have reached a charge anyway raises the camera-assisted rate, while the overall rate may even fall slightly. Require an improvement across all eligible crimes before expanding the vans. Otherwise the test rewards camera involvement rather than better outcomes for victims.
+**Answer (Home Secretary):** Right, and it's the point that matters to the person who was burgled. A camera on a case that would have been solved anyway is a camera, not a result. The vans now spread only if more crimes of the named types end in a charge or summons, camera or no camera: each set of forces pooled over the two years against its own two years before, and the forces that start must beat the forces waiting by more than chance alone would give one time in twenty. The camera-assisted line stays as a second fail number. The old floor (no fall of more than one in fifty) is gone. Doing no harm no longer passes.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+**Statistician:** The new floor, all crimes of the named types "fallen by more than one in fifty", is tighter than the year-to-year swing in a force's charge rate, so a trial that does no harm will fail it a large share of the time on chance alone. It also doesn't say how eight forces' changes combine. Fix: pool each set of forces over the full two years, measured against the two years before, and widen the margin (for example, one in twenty), or keep one in fifty and state it must be beyond chance at a named level.
+**Answer (Home Secretary):** Taken in part, because the opposition pushed the other way on the same line. Both sets of forces are now pooled over the full two years against their own two years before. The floor is gone. In its place, charges or summonses across all crimes of the named types must rise against the forces waiting, beyond what chance alone would give one time in twenty. That fails a harmless trial that solves nothing extra, on purpose: more vans need more crimes solved, not just no fewer.
+**Outcome:** Conceded in part: test.measure and fails_if, this commit
+
+## 2026-11-17 · PR #29
+
+**Opposition:** Police could improve your new charge rate by searching easier cases, without solving any extra crime. The code changes which cases enter its own test; drawing forces by lot doesn't fix that. Define eligible cases before allocation and judge outcomes across all of them, whether searched or not. Otherwise choosing the cases can look like better policing.
+**Answer (Home Secretary):** Fair, and the statistician found the same hole from the other side. Search only the easy cases and the share looks better without one more crime solved. The crime types the trial is judged on are now named in the code before the draw. The fail number is camera-assisted charges or summonses per thousand recorded crimes of those types, so the bottom of the fraction is every such crime, searched or not. And it also fails if charges or summonses across all crimes of those types, camera or no camera, fall by more than one in fifty against the forces waiting. The share per search and the number of searches sit beside them, so choosing cases shows up instead of passing as policing.
+**Outcome:** Conceded: test.where, test.measure and fails_if, this commit
+
+**Statistician:** The crime-solved share now counts only crimes where a camera was used, and the code itself changes which crimes get a camera search. A starting force that runs fewer, stronger searches raises its share without solving one more crime, and a waiting force that searches everything lowers its own. Fix: name the crime types before the draw, and make the fail number camera-assisted charges or summonses per thousand recorded crimes of those types, in both sets of forces; keep the share per search, and searches per thousand of those crimes, beside it.
+**Answer (Home Secretary):** Taken as written, with the opposition's half added. The crime types are named in the code before the draw. The fail number is camera-assisted charges or summonses per thousand recorded crimes of those types, in both sets of forces, each from its own baseline, relative; the share per search and searches per thousand beside it. A second line catches the force that claims the camera on crimes it would have solved anyway: charges or summonses per thousand of all crimes of those types, camera or not, must not fall by more than one in fifty.
+**Outcome:** Conceded: test.where, test.measure and fails_if, this commit
+
+**Statistician:** "so 6.0% must reach at least 6.3%" prints like a measured baseline for camera-assisted crime, which nobody has published. Fix: "for example, 6.0% must reach at least 6.3%", or drop the figures and keep "relative".
+**Answer (Home Secretary):** Right. Nobody has published that baseline, and an invented one dressed as measured is worse than none. The figures are gone; the clause says relative, from each force's own baseline.
+**Outcome:** Conceded: fails_if, this commit
+
+## 2026-11-16 · PR #29
+
+**Opposition:** Putting the whole code into the lottery leaves a dangerous ambiguity: do waiting forces also wait for deletions already required, or the human hearing at the stop? State that existing duties and the permanent right apply everywhere and survive the trial ending. Test the extra vans and new procedures within that floor.
+**Answer (Home Secretary):** Right, and it should never have been in doubt. Two things wait for no lot: deleting what the law already says must go, and the right to a human at the stop. Every force has both from day one, trial or not, and neither ends when the trial does; the stop clause now says so. The lot decides the rest: the new vans, old-footage searches under the code, the arrest record, the outside reading and the published deletion count.
+**Outcome:** Conceded: stop, test.where, test.against, leaves_out and the rule, this commit
+
+**Opposition:** Your deletion test follows only pictures already due for deletion on day one. A force could clear that backlog, keep pictures that become due later, and still pass. Audit newly due deletions throughout the trial too, with a failure rule and a response to each breach.
+**Answer (Home Secretary):** Fair. A force could clear the old pile and start a new one. Deletions are now counted every quarter on two lines, the pictures due on day one and the ones falling due during the trial, both audited by the inspectorate. It fails if more than one in a hundred of the pictures falling due in any quarter is still held at the end of the next. Each one found is a breach: it goes that day, and the force answers for it in public.
+**Outcome:** Conceded: test.measure, fails_if and the rule, this commit
+
+**Statistician:** "Crime solved" across all recorded crime will be decided by noise, not the code, and it doesn't say whether one in twenty is relative or in points. Fix: make the fail number the charge-or-summons share for crimes where a live alert or an old-footage search was used, in both sets of forces, keep the force-wide share beside it as a check, and say "relative".
+**Answer (Home Secretary):** Taken. Two years of everything else a force does would drown the cameras. The fail number is now the share of crimes where a live alert or an old-footage search was used that end in a charge or summons, in both sets of forces, each from its own baseline, and it's relative: 6.0% must reach at least 6.3%. The force-wide share stays beside it as a check.
+**Outcome:** Conceded: test.measure and fails_if, this commit
+
+**Statistician:** The inspectorate's sample has no size, and the one-in-a-hundred threshold depends on it. Fix: name the minimum read per line per year (for example, at least 300 arrests, or every arrest where there are fewer), and say the share is the inspectorate's count over the arrests it read.
+**Answer (Home Secretary):** Taken. At least 300 arrests involving a match on each line, live and old footage, in each set of forces each year, or every one where there are fewer. The share is its count over the arrests it read.
+**Outcome:** Conceded: test.measure, this commit
+
+**Statistician:** The fails-if opens "against the forces waiting", which then governs every clause, but wrong person, match alone and deletions read as plain thresholds. Fix: say those three apply to the forces that start, on their own, and the comparison with the forces waiting applies to crime solved.
+**Answer (Home Secretary):** Taken. Wrong person, match alone and deletions are thresholds on the forces that start, on their own. Only crime solved is judged against the forces waiting.
+**Outcome:** Conceded: fails_if, this commit
+
+**Statistician:** The world check's rewrite nearly passes. Two gaps before it freezes: "the first such bill" has no sponsor and no start date, and a clause covering police facial recognition in general needs saying which way it counts. Fix: "the first government bill introduced after 15 November 2026 that gives police use of facial recognition a statutory basis", and a general clause counts as covering stored pictures (failed).
+**Answer (Home Secretary):** Taken as written, before it freezes. Private members' bills and anything earlier don't count; a general clause, code or power counts as covering stored pictures, so failed. That makes held less likely, so the prior comes down from 0.35 to 0.3.
+**Outcome:** Conceded: check.claim, check.prior, check.rule and check.if_revised, this commit
+
+## 2026-11-15 · PR #29
+
+**Opposition:** Your test checks whether an officer recorded anything besides the match, not whether it supports the arrest. A weak extra reason could pass; up to one arrest in a hundred on the match alone also passes. Require independent checking of the supporting evidence and a response to every breach, separately for live and old-footage searches.
+**Answer (Home Secretary):** Fair on the first half. A line in a box that says "also wore a blue coat" isn't evidence. Now someone outside the force, the police inspectorate, reads a random sample of arrests involving a match every quarter and asks the real question: would the rest of the evidence have justified the arrest without the match? Live cameras and old footage are counted on separate lines, and either line fails it on its own. Every breach found gets an answer: the person is told, and the force answers to the watchdog in public. The one in a hundred stays as the trial's fail number. It judges whether the code works across every arrest read; it doesn't forgive the one in front of you.
+**Outcome:** Conceded in part: independent reading, separate lines and an answer to every breach, this commit; the one-in-a-hundred fail number stands (`against` and `answer` set)
+
+**Opposition:** Your trial assigns new vans, but the new code also governs searches of old footage. A van result cannot tell us whether those safeguards work. Say which forces get which rules, and measure old-footage searches separately. Otherwise passing the van test could carry an untested code nationwide.
+**Answer (Home Secretary):** Right. The forces drawn to start get the whole code at once: the vans, the old-footage searches and the deletions. The forces drawn to wait keep today's rules until it passes. Old-footage searches are measured on their own line, with their own fail number.
+**Outcome:** Conceded: test.where, test.against, test.measure and fails_if, this commit
+
+**Statistician:** home/police-cameras-by-lot: the test has no size and "forces like them" doesn't say like them how. Fix: say how many volunteer forces are drawn to start and how many wait, make the volunteers drawn to wait the comparison, and name what non-volunteer forces are matched on (size, recorded crime, current use of the cameras).
+**Answer (Home Secretary):** Taken. At least eight volunteer forces start and at least eight wait, drawn by lot; the volunteers waiting are the comparison. Forces that didn't volunteer are matched on size, recorded crime and how much they use the cameras today, as a check on them. Eight is a floor.
+**Outcome:** Conceded: test.where and test.against, this commit
+
+**Statistician:** home/police-cameras-by-lot: none of the three measures names its figure or record. "Crime solved": which figure (for example, the share of recorded crimes ending in a charge or summons, from the Home Office crime outcomes data), and which crimes, all of them or only those where the cameras were used? "Wrong person": from what record (each force's deployment records of alerts, stops and false alerts)? "Arrests on the match alone": who reads the arrest records, every one or a sample, and is it someone outside the force? Fix: name each record, and name who reads the arrests (for example, the inspectorate reading a random sample each quarter).
+**Answer (Home Secretary):** Taken as suggested. Crime solved is the share of all recorded crime ending in a charge or summons, from the Home Office crime outcomes data. Wrong person comes from each force's deployment records of alerts, stops and false alerts. Arrests on the match alone: the inspectorate reads a random sample each quarter, in both sets of forces.
+**Outcome:** Conceded: test.measure, this commit
+
+**Statistician:** home/police-cameras-by-lot: "they solve no more crime" has no baseline and no margin. A rise of one crime passes it, and chance alone does that about half the time. Fix: the change in the share of crime solved from each force's own baseline, against the forces waiting, rising by a set amount (for example, one in twenty) or it fails.
+**Answer (Home Secretary):** Taken. Each force from its own baseline, against the forces waiting; the share of crime solved rises by at least one in twenty or it fails.
+**Outcome:** Conceded: fails_if, this commit
+
+**Statistician:** home/police-cameras-by-lot: the rule now covers searches of old footage and deleting custody pictures, but the test only measures the vans, so those parts would go national without a test. Fix: put old-footage searches on their own line, with their own arrests-on-the-match-alone share, and give the deletion count a baseline and a fails-if (for example, any custody picture still held a year in that the law says must go), or say that these parts are judgement calls and label them that way.
+**Answer (Home Secretary):** Taken, mostly as written. Old-footage searches have their own line and their own match-alone share. Deletions: each force counts the pictures it holds that the law says must go on day one, the inspectorate audits the count, and it fails if more than one in a hundred of them is still held a year in. Not "any": a fail number set at zero measures the backlog a force inherited, not the code.
+**Outcome:** Conceded: test.measure and fails_if, this commit (deletion margin one in a hundred, not zero)
+
+**Statistician:** home/police-cameras-by-lot: the world check is still provisional and doesn't yet pass. The "none chosen by lot" half is close to certain, so the real risk sits in whether the Home Office names forces by 31 March, which is a question of timing and tests nothing the policy argues. Fix: use the check's one rewrite on a forecast the policy actually makes, for example that the Police Reform Bill as introduced by a set date will hold no statutory code covering searches of old footage, marked against the Bill text on bills.parliament.uk, with a prior no higher than 0.9 and a rule for the case where the Bill isn't introduced.
+**Answer (Home Secretary):** Taken, and this is the one rewrite. New check: if a bill giving police use of facial recognition a statutory basis is introduced by 30 June 2027, its text as introduced will not cover police searches of stored pictures and old footage. Held if no clause, code or power to make one applies to them; failed if one does; void if no such bill is introduced by then. Prior 0.35: on the Home Office's own promise of a code, more likely than not that the bill does cover them. Marked 15 July 2027. The provisional mark is off.
+**Outcome:** Conceded: check rewritten, this commit
