@@ -22,7 +22,9 @@ glossy and golden like its own advert; the groundskeeper in plain soft natural l
 Flow projects: `18488ea0-30a2-4f48-9ebe-303245074be1` ("Nov 21 - 18:45"); the groundskeeper shots in `6081d7c5-19b5-4985-b1d1-f7fd404aa4dd` ("Nov 21 - 19:10") after uploads stalled in the first. Stills Nano Banana 2.1, 9:16.
 
 ## Sound
-Not decided. Any Suno track is music and sound only; every spoken line is an AI Studio voice. Voices must sound English:
+Voices (Jack's picks, 2026-11-21; designs in `voices/casting/designed-voices.json`): the guru `guru-c` (a Brighton
+sound-bath teacher, hushed; played 30% faster in the cut), the bro `bro-c` (a South London crypto investor's excited
+whisper), BadCode `badcode-b` (Bristol, dry, knowing). Music: not decided. Any Suno track is music and sound only; every spoken line is an AI Studio voice. Voices must sound English:
 design them with an English region, never just "British".
 
 ## Story-only rules

@@ -19,7 +19,7 @@ cfg = localize(json.loads((SCENE / 'scene.json').read_text()))
 MEDIA = pathlib.Path(cfg['media'])
 VID, CAST, MB = MEDIA / 'video', MEDIA / 'audio/casting', MEDIA / 'moodboard'
 TXT = {l['key']: l for l in json.loads((REPO / 'docs/stories/short-the-retreat/voices/lines/lines.json').read_text())}
-VOICE = {'guru': 'guru-a', 'bro': 'bro-a', 'badcode': 'badcode-a'}  # Claude's guesses until Jack picks
+VOICE = {'guru': 'guru-c', 'bro': 'bro-c', 'badcode': 'badcode-b'}  # Jack's picks, 2026-11-21
 TEMPO = {'guru': 1.3}  # the guru's meditation voice is slow; 30% faster, same pitch
 NAMES = {'guru': 'The guru', 'bro': 'The bro', 'badcode': 'BadCode (card machine)'}
 FONT = '/mnt/c/Windows/Fonts/georgiai.ttf'
@@ -123,7 +123,7 @@ def main():
            'heading': f'BadCode Shorts ▲ The Retreat, rough cut {a.round}',
            'intro': 'The Ram Dass line over a sunset; a £3,000 detox from materialism where nobody detoxes; behind it, the groundskeeper and his dog.',
            'fps': FPS, 'total': total, 'beats': beats, 'video': vids, 'audio': audio, 'events': events,
-           'flags': ['No music yet. Room sound is the clips\' own, low.', 'Voices are Claude\'s guesses (a for each role) until Jack picks on the voices page.', 'The quote is credited "attributed to Ram Dass" until we find its source.']}
+           'flags': ['No music yet. Room sound is the clips\' own, low.', 'Voices: Jack\'s picks (guru c, bro c, BadCode b).', 'The quote is credited "attributed to Ram Dass" until we find its source.']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4')}))
 
