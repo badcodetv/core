@@ -8,7 +8,7 @@
 A BadCode short (9:16, aim ~17 s): a horse race where new money is the starting gun. SHARES and HOUSES fly out of the
 stalls; WAGES doesn't leave its stall for eleven years and nine months. BadCode, in the mask, commentates. The point: when
 new money is made, it lifts what people own first and what people earn last. The way out: the next race has one gate, and
-everybody goes at once. State: rough cut 1 (33.7 s) on https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX; clips https://claude.ai/artifact/9ARwdm6AFEXxd9iwjowGsd; stills https://claude.ai/artifact/F8iA9UCLU774eYU5VeyokZ.
+everybody goes at once. State: rough cut 5 (35.3 s) on https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX, in Premiere as `short-starting-gate-1-starting-gate-r5` (in sync) and on Drive (agreed cut); outro: the BadCode logo painted on WAGES' flank as he walks (`scripts/shorts/gate_flank_logo.py`); clips https://claude.ai/artifact/9ARwdm6AFEXxd9iwjowGsd; stills https://claude.ai/artifact/F8iA9UCLU774eYU5VeyokZ.
 
 ## Look
 Jack, 2026-11-22: "use unsplash". Real-looking photographs of an English racecourse on a grey, wet day: starting stalls,

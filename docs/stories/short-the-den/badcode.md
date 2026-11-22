@@ -41,6 +41,11 @@ plain reads on `gemini-3.8-flash-tts`, no style. Narrator `en-gb-podcaster-2`; m
 Investor D `en-gb-assistant-6`. Line takes in the media folder's `audio/lines/` and `audio/casting/` (sound.md lists them).
 "I'm in." is hard for this voice (it says "Amen", "I mean"): transcribe every retake.
 
+## Outro
+The den's factory window (Flow clip GLASSa) steams up and the condensation clears in the exact shape of the brand
+logo file, then resolves into the full logo (`scripts/shorts/den_glass_logo.py`; Jack, 2026-11-22). State: rough cut 2
+(42.8 s) on https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6.
+
 ## Story-only rules
 - The script comes first; nothing is generated until Jack agrees it ([script.md](./script.md)). Lines are Claude's drafts until Jack or Kai rewrites them.
 - The closing card is Jack's wording, sourced: Petrosino et al. 2013 (Cochrane CD002796 / Campbell 2013:5).

@@ -18,4 +18,5 @@ bet. No policy without its test.
 | Set up (Drive `Shorts/The Den`, folder, repo) | done 2026-11-22 |
 | Script | draft 1 agreed (Jack: "go", 2026-11-22) |
 | Investors | locked (cast/) |
-| Pitch stills / clips / voices / cut | stills round 2 running |
+| Stills, voices, clips | locked (picks.md) |
+| Cut | rough cut 2 (42.8 s), timeline https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6; condensation logo outro |

@@ -12,7 +12,7 @@ Each is our own format, never a real show's name, logo or theme. Every number ge
   The valuer (BadCode in the mask): the house, "Oh my word"; the payslip, "Same as it was. Collectors aren't interested."
   Way out: she asks the question nobody asks on that kind of show: "Who decided that?" Fact: ONS house price to earnings,
   England 7.6x in 2025, about double the 1990s (the 1997 figure not yet checked).
-- **The Den** (investors hearing pitches; no policy without its test): a smooth minister pitches £2bn: "How will you know
+- **The Den** *(picked by Jack 2026-11-22: now `docs/stories/short-the-den/`, the close changed to the Scared Straight finding)* (investors hearing pitches; no policy without its test): a smooth minister pitches £2bn: "How will you know
   it works?" "I've got a good feeling." "I'm out." A nervous nurse pitches a one-ward trial with the number that would prove
   her wrong: everyone's in. Fact for one aside: the NAO (2021) found only 8% of major-project spend (£35bn of £432bn, 2019)
   had a robust evaluation plan.
