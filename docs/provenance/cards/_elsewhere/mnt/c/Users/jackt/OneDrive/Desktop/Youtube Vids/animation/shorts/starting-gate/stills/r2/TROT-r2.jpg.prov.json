@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r2/TROT-r2.jpg",
+ "made": "2026-11-22T11:59:58.495Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first picture so the lone trotting horse is the chestnut with a white blaze from the right-hand stall of the second picture, cloth reading WAGES, its jockey in maroon, green and blue panelled silks with a green-and-red cap. The single stall left behind becomes galvanised grey steel like the second picture. Keep the empty grandstand, the flooded turf, the reflections, the rain and the small figure in a big empty course. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "retry after Flow's 'unusual activity' refusal (not charged): consistency across stills (Jack, r1)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/TROT-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/TROT-b.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/GATE-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a601082f-da77-40d4-917c-8ad48463dacd"
+}

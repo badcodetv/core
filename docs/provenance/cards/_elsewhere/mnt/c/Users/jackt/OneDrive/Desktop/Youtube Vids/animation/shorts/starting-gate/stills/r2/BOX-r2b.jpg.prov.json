@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r2/BOX-r2b.jpg",
+ "made": "2026-11-22T11:57:44.634Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit this picture: lengthen both black leather gloves so their cuffs run well up inside the shirt and jacket sleeves, leaving no wrist or arm visible between glove and sleeve. Change nothing else: the tweed hood with its white circle and red triangle, the binoculars, the headset, the booth and the wet course. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "brand rule: no skin ever (bare wrist between glove and cuff on BOX-r2)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/BOX-r2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/BOX-r2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e36dc120-5163-446b-b9f5-96e8bb1750b4"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r2/ONEGATE-r2.jpg",
+ "made": "2026-11-22T11:53:30.530Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first picture so the long single gate is galvanised grey steel like the stalls in the second picture, and in the middle of the level line stand the three runners from the second picture side by side: the dark bay in maroon and mustard silks, the grey in black and orange, the chestnut with the white blaze in maroon, green and blue. Keep the gate running rail to rail, everyone level, the empty course ahead, the white rails and the misty grey sky. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "consistency across stills (Jack, r1): the same three runners and stalls",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ONEGATE-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ONEGATE-b.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/GATE-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0a2f28e5-7edc-49e9-a9b8-6b99e892d9e1"
+}

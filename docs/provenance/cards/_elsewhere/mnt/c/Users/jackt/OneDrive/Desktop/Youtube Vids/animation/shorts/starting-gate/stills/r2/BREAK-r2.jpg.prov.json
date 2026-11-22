@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r2/BREAK-r2.jpg",
+ "made": "2026-11-22T11:53:12.810Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first picture so its runners and course match the second picture. The horse on the left becomes the dark bay with its jockey in maroon silks with mustard-yellow sleeves and a pink-and-purple cap, cloth reading SHARES; the horse on the right becomes the grey with its jockey in black silks with orange sides and a black cap, cloth reading HOUSES. The stalls behind become galvanised grey steel like the second picture, and the one still shut holds the chestnut with a white blaze looking over its gate. Keep the head-on gallop, the flying mud, the rails, the stand and the drizzle. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack, stills r1 note on BREAK-a: 'make sure the jockey outfits, setting and everything is consistant across all stills'",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/BREAK-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/BREAK-a.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/GATE-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e4095c9a-f01b-47c0-a7b9-855c531eb510"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r2/WINNERS-r2.jpg",
+ "made": "2026-11-22T11:53:06.792Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first picture so the horse being celebrated is the grey from the middle stall of the second picture, dappled white, rosette still on its bridle, cloth reading HOUSES. If the jockey shows, he wears black silks with orange sides. Keep the owners, the champagne spraying, the kiss on the nose, the white rails, the grey grandstand and the drizzle exactly as they are. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "consistency across stills (Jack, r1): HOUSES is the grey",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/WINNERS-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/WINNERS-b.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/GATE-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "dc5d222a-1e4c-40bd-97b6-1e2193555d23"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r2/STALL-r2.jpg",
+ "made": "2026-11-22T11:52:59.729Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first picture so the horse is the chestnut with the white blaze from the right-hand stall of the second picture, still face on over the shut gate, hay hanging from its mouth, the white cloth reading WAGES on its chest. The stall and gate become the same galvanised grey steel as the second picture, with wet green turf, white rails and a grey stand softly behind. Keep the framing, the heap of hay and the deadpan look. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "consistency across stills (Jack, r1): WAGES is the chestnut with a white blaze",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/STALL-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/STALL-a.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/GATE-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "55764eaf-8c2d-4e7f-a2a3-d1cb9b1aa13c"
+}

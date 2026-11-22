@@ -23,8 +23,15 @@ named region, never just "British"). Any Suno track is music and sound only.
 ## Cast
 - **BadCode, the commentator:** in the BadCode balaclava (below), in the commentary box with binoculars. Heard as the
   race commentary; seen in the box. His clothes are Not decided (found on the mood board).
-- **The runners:** three horses with plain saddlecloths: SHARES, HOUSES, WAGES. Words in the picture only there and on
-  the one fact line.
+- **The runners (LOCKED, Jack 2026-11-22: "consistent across all stills"; anchor still `stills/r1/GATE-a.jpg`):**
+  - SHARES: dark bay horse; jockey in maroon silks with mustard-yellow sleeves, pink-and-purple cap.
+  - HOUSES: grey (dappled white) horse; jockey in black silks with orange sides, black cap.
+  - WAGES: chestnut horse with a white blaze; jockey in maroon, green and blue panelled silks, green-and-red cap.
+  - The words SHARES / HOUSES / WAGES in plain black capitals on white cloth; words in the picture only there and on the fact line.
+- **The setting (LOCKED, same anchor):** galvanised grey steel starting stalls, white running rails, a grey grandstand,
+  wet green turf, flat overcast light, drizzle. Every still attaches GATE-a as the reference for these.
+- **BadCode's mask is tweed** (Jack, 2026-11-22: "make his mask tweed"): brown tweed cloth, with the brand's white ring
+  and red triangle; no skin, gloves.
 
 ## Story-only rules
 - The script's lines are Claude's draft (`by: claude`); Jack and Kai write the jokes and rule the way out.

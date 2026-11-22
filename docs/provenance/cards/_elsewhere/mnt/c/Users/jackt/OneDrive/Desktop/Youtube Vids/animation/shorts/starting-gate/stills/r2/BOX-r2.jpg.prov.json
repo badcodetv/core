@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r2/BOX-r2.jpg",
+ "made": "2026-11-22T11:52:45.189Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first picture: the commentator's hood becomes brown herringbone tweed cloth, the same weave as his jacket, keeping its white circle sewn round the front and one red triangle with softened corners, tip down, high inside the circle above his left eye. No openings in the hood, black gloves on both hands. Everything else stays as it is: his pose, the binoculars, the headset, the desk and papers, the rain-streaked booth window and the wet green course below. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack, stills r1 note on BOX-a-fix: 'make his mask twead thanks but use the picked shot'",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/BOX-a-fix.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/BOX-a-fix.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0e0d6281-db1d-465f-b77e-e85773dd16b2"
+}
