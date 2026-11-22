@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/stills/r1/INV-C-a.jpg",
+ "made": "2026-11-22T16:06:08.004Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 medium shot, seated, three-quarter angle: a broad, heavy-set white man of about seventy fills a cracked dark brown leather armchair with a square back, turned slightly to frame left toward an unseen speaker. Bald on top with a fringe of white hair around the sides, ruddy cheeks, a mustard cardigan buttoned over a checked shirt and a knitted tie. He leans forward, big hands planted on his knees, eyes narrowed in a hard squint, jaw set, about to say something blunt. Beside him, a small round glass-topped side table on a chrome tube frame with neat stacks of banknotes, soft and unreadable. Behind him, out of focus, a dark converted warehouse loft: brick walls, tall gridded factory windows letting in cool daylight, worn wooden floorboards, warm lamps glowing low. Warm key light from the front side picks out his face and hands, a cool rim of window light behind him. Real photograph of a TV pitch show set, shallow depth of field, no text.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-22: \"we need to make the dragons, as in the investors\"; sealed writer cleanroom/investors-r1.json",
+ "parent": "/home/jackt/.cache/badcode-refs/the-den/set-chairs.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-den/set-chairs.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9d1e595d-2240-435e-b04d-c2b334bcee0e"
+}

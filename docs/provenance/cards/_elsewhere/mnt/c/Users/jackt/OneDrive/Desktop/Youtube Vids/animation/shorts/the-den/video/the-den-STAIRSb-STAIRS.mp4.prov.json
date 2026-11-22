@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-STAIRSb-STAIRS.mp4",
+ "made": "2026-11-22T17:20:08+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The man in the suit carries on down the iron staircase towards the camera with an easy, pleased swagger, grin fixed, eyes ahead. One hand trails loosely along the rail and slides off at the bottom. He takes the last two steps and plants both feet on the wooden floorboards, squaring his shoulders. The camera stays low on the floor and tilts gently down to follow him as he arrives, keeping him centred, the dark brick wall and raised walkway behind. His footsteps ring on the metal treads, then thud on the wood. Sound: footsteps clanging on iron steps then landing on floorboards, the hollow room tone of a big brick loft, no talking.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/STAIRS.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/STAIRS.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "STAIRSb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T17:18:01.177Z"
+ }
+}

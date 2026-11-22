@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/stills/r1/BADCODE-fix2-d.jpg",
+ "made": "2026-11-22T16:12:18.896Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Change only the small red patch on his mask: turn it into an upside-down triangle, wide flat side along the top and a single point at the bottom, like the triangle in the second image, in the same spot near the upper right of the white ring. Everything else in the first image stays as it is: the white ring, the dark knit, the suit, the chair, the room, the light.",
+ "model": "Nano Banana 2.1",
+ "why": "Brand fix 2: the triangle pointed sideways; turn it to point down as in the mask reference",
+ "parent": "/home/jackt/.cache/badcode-refs/the-den/BADCODE-fix-d.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-den/BADCODE-fix-d.jpg",
+   "/home/jackt/.cache/badcode-refs/the-den/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 4
+ },
+ "source_id": "433d7a79-6cb1-4c4d-a03d-16519a77ffb2"
+}

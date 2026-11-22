@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-INVCb-INVC.mp4",
+ "made": "2026-11-22T17:19:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The heavy-set older man in the mustard cardigan starts leaning forward with his hands on his knees, then pushes back and sits back heavily into the leather armchair, his shoulders dropping, his hands sliding off his knees onto the armrests. His face stays facing the same way and keeps roughly the same size in frame as the camera eases back a touch to hold him. Settled, he looks across towards the man on the floor and He says: I'm out. The factory windows glow steadily behind him. Sound: a deep leather creak and the chair taking his weight, then his gruff older male voice, over the room tone of a big brick loft.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/INVC.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/INVC.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "INVCb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T17:15:47.212Z"
+ }
+}

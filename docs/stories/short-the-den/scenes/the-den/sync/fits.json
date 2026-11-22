@@ -1,0 +1,318 @@
+{
+ "02-minister-pitch": [
+  {
+   "line": "02-minister-pitch",
+   "clip": "the-den-MIN1a-MIN.mp4",
+   "take": "02-minister-pitch--b.wav",
+   "on": 0.005,
+   "tempo": 1.15,
+   "file_at": 0.005,
+   "words": 7,
+   "of": 15,
+   "matched": 12,
+   "err": 0.191,
+   "lag": -0.458,
+   "tracked": 0.95,
+   "table": [
+    [
+     "every",
+     0.04
+    ],
+    [
+     "teenager",
+     0.271
+    ],
+    [
+     "in",
+     0.142
+    ],
+    [
+     "the",
+     0.11
+    ],
+    [
+     "country",
+     0.083
+    ],
+    [
+     "taken",
+     0.013
+    ],
+    [
+     "round",
+     0.094
+    ],
+    [
+     "a",
+     0.04
+    ],
+    [
+     "prison",
+     0.004
+    ],
+    [
+     "scare",
+     -0.567
+    ],
+    [
+     "them",
+     -0.516
+    ],
+    [
+     "straight",
+     -0.524
+    ]
+   ]
+  },
+  {
+   "line": "02-minister-pitch",
+   "clip": "the-den-MIN1a-MIN.mp4",
+   "take": "02-minister-pitch--a.wav",
+   "on": 0.039,
+   "tempo": 1.15,
+   "file_at": 0.039,
+   "words": 3,
+   "of": 15,
+   "matched": 12,
+   "err": 0.458,
+   "lag": -0.458,
+   "tracked": 0.95,
+   "table": [
+    [
+     "every",
+     0.213
+    ],
+    [
+     "teenager",
+     0.757
+    ],
+    [
+     "in",
+     0.68
+    ],
+    [
+     "the",
+     0.805
+    ],
+    [
+     "country",
+     0.812
+    ],
+    [
+     "taken",
+     0.725
+    ],
+    [
+     "round",
+     0.597
+    ],
+    [
+     "a",
+     0.596
+    ],
+    [
+     "prison",
+     0.56
+    ],
+    [
+     "scare",
+     -0.011
+    ],
+    [
+     "them",
+     0.04
+    ],
+    [
+     "straight",
+     -0.021
+    ]
+   ]
+  }
+ ],
+ "04-minister-feeling": [
+  {
+   "line": "04-minister-feeling",
+   "clip": "the-den-MIN2a-MIN.mp4",
+   "take": "04-minister-feeling--b.wav",
+   "on": 3.361,
+   "tempo": 1.04,
+   "file_at": 3.361,
+   "words": 5,
+   "of": 5,
+   "matched": 5,
+   "err": 0.023,
+   "lag": -0.5,
+   "tracked": 1.0,
+   "table": [
+    [
+     "i've",
+     0.041
+    ],
+    [
+     "got",
+     0.04
+    ],
+    [
+     "a",
+     -0.004
+    ],
+    [
+     "good",
+     0.012
+    ],
+    [
+     "feeling",
+     0.085
+    ]
+   ]
+  },
+  {
+   "line": "04-minister-feeling",
+   "clip": "the-den-MIN2a-MIN.mp4",
+   "take": "04-minister-feeling--a.wav",
+   "on": 2.6,
+   "tempo": 1.0,
+   "file_at": 2.6,
+   "words": 4,
+   "of": 6,
+   "matched": 5,
+   "err": 0.08,
+   "lag": -0.5,
+   "tracked": 1.0,
+   "table": [
+    [
+     "i've",
+     0.38
+    ],
+    [
+     "got",
+     0.04
+    ],
+    [
+     "a",
+     0.04
+    ],
+    [
+     "good",
+     0.04
+    ],
+    [
+     "feeling",
+     0.1
+    ]
+   ]
+  }
+ ],
+ "05a-inv-a-out": [
+  {
+   "line": "05a-inv-a-out",
+   "clip": "the-den-INVAb-INVA.mp4",
+   "take": "inv-a--en-gb-tutor-5.wav",
+   "on": 1.929,
+   "tempo": 0.97,
+   "file_at": 1.929,
+   "words": 1,
+   "of": 2,
+   "matched": 2,
+   "err": 0.351,
+   "lag": -0.333,
+   "tracked": 1.0,
+   "table": [
+    [
+     "i'm",
+     0.743
+    ],
+    [
+     "out",
+     0.04
+    ]
+   ]
+  }
+ ],
+ "05c-inv-c-out": [
+  {
+   "line": "05c-inv-c-out",
+   "clip": "the-den-INVCa-INVC.mp4",
+   "take": "inv-c--en-gb-assistant-5.wav",
+   "on": 3.3,
+   "tempo": 0.97,
+   "file_at": 3.3,
+   "words": 1,
+   "of": 2,
+   "matched": 2,
+   "err": 0.181,
+   "lag": 0.0,
+   "tracked": 0.27,
+   "table": [
+    [
+     "i'm",
+     0.04
+    ],
+    [
+     "out",
+     -0.322
+    ]
+   ]
+  }
+ ],
+ "05d-inv-d-out": [
+  {
+   "line": "05d-inv-d-out",
+   "clip": "the-den-INVDa-INVD.mp4",
+   "take": "inv-d--en-gb-assistant-6.wav",
+   "on": 2.933,
+   "tempo": 0.97,
+   "file_at": 2.933,
+   "words": 1,
+   "of": 2,
+   "matched": 2,
+   "err": 0.142,
+   "lag": -0.167,
+   "tracked": 1.0,
+   "table": [
+    [
+     "i'm",
+     0.04
+    ],
+    [
+     "out",
+     -0.245
+    ]
+   ]
+  }
+ ],
+ "06-nurse": [
+  {
+   "line": "06-nurse",
+   "clip": "the-den-NURSEc-NURSE.mp4",
+   "take": "nurse--en-gb-advisor-7.wav",
+   "on": 1.236,
+   "tempo": 0.97,
+   "file_at": 1.236,
+   "words": 2,
+   "of": 16,
+   "matched": 4,
+   "err": 0.442,
+   "lag": -0.083,
+   "tracked": 1.0,
+   "table": [
+    [
+     "one",
+     1.319
+    ],
+    [
+     "ward",
+     0.495
+    ],
+    [
+     "six",
+     0.04
+    ],
+    [
+     "months",
+     0.007
+    ]
+   ]
+  }
+ ]
+}

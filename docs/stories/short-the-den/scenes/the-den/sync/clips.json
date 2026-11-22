@@ -1,0 +1,58 @@
+{
+ "02-minister-pitch": {
+  "clip": "the-den-MIN1a-MIN.mp4",
+  "heard": "every teenager in the country taken round a prison scare them straight",
+  "lag": -0.458,
+  "tracked": 0.95,
+  "takes": {
+   "lines/02-minister-pitch--b.wav": "two billion pounds every teenager in the country taken round a prison scare them straight",
+   "lines/02-minister-pitch--a.wav": "two billion pounds every teenager in the country taken round a prison scare them straight"
+  }
+ },
+ "04-minister-feeling": {
+  "clip": "the-den-MIN2a-MIN.mp4",
+  "heard": "i've got a good feeling",
+  "lag": -0.5,
+  "tracked": 1.0,
+  "takes": {
+   "lines/04-minister-feeling--b.wav": "i've got a good feeling",
+   "lines/04-minister-feeling--a.wav": "oh i've got a good feeling"
+  }
+ },
+ "05a-inv-a-out": {
+  "clip": "the-den-INVAb-INVA.mp4",
+  "heard": "i'm out",
+  "lag": -0.333,
+  "tracked": 1.0,
+  "takes": {
+   "casting/inv-a--en-gb-tutor-5.wav": "i'm out"
+  }
+ },
+ "05c-inv-c-out": {
+  "clip": "the-den-INVCa-INVC.mp4",
+  "heard": "i'm out",
+  "lag": 0.0,
+  "tracked": 0.27,
+  "takes": {
+   "casting/inv-c--en-gb-assistant-5.wav": "i'm out"
+  }
+ },
+ "05d-inv-d-out": {
+  "clip": "the-den-INVDa-INVD.mp4",
+  "heard": "i'm out",
+  "lag": -0.167,
+  "tracked": 1.0,
+  "takes": {
+   "casting/inv-d--en-gb-assistant-6.wav": "i'm out"
+  }
+ },
+ "06-nurse": {
+  "clip": "the-den-NURSEc-NURSE.mp4",
+  "heard": "one ward six months",
+  "lag": -0.083,
+  "tracked": 1.0,
+  "takes": {
+   "casting/nurse--en-gb-advisor-7.wav": "one ward six months if re admissions don't fall by a tenth you stop paying me"
+  }
+ }
+}

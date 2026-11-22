@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/stills/r1/BADCODE-fix-c.jpg",
+ "made": "2026-11-22T16:10:34.799Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the first image, keep the man, his charcoal suit, the chair, the room and the light exactly as they are, and make his balaclava match the second image: the white ring circles his whole face, and the one solid red triangle with rounded corners sits inside the ring near its top right edge, high above where the wearer's left eye would be, its flat edge on top and its point aimed down. The rest of the face inside the ring is plain dark knit. No holes, no skin, gloves.",
+ "model": "Nano Banana 2.1",
+ "why": "Brand fix of BADCODE-b: the triangle sat near the centre; direct fix with the mask reference",
+ "parent": "/home/jackt/.cache/badcode-refs/the-den/BADCODE-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-den/BADCODE-b.jpg",
+   "/home/jackt/.cache/badcode-refs/the-den/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 4
+ },
+ "source_id": "de32e6a9-a453-4324-89ea-2660cb1ff5c0"
+}

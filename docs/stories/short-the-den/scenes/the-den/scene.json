@@ -15,7 +15,13 @@
   ],
   "flow_project": "c9bd669c-40b7-4009-b17c-24f38362ad89",
   "boards": {
-    "moodboard": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg"
+    "moodboard": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg",
+    "timeline": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6"
   },
-  "stills": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg"
+  "stills": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg",
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r1/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r1/preview.mp4",
+    "script": "python3 scripts/shorts/den_cut.py --round 1"
+  }
 }

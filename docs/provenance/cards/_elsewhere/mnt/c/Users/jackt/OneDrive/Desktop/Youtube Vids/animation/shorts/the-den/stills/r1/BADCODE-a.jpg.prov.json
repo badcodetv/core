@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/stills/r1/BADCODE-a.jpg",
+ "made": "2026-11-22T16:06:23.530Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 medium shot, seated, three-quarter angle: a figure sits perfectly upright and very still in a dark brown leather armchair with wooden arms, turned slightly to frame left toward an unseen speaker. The balaclava exactly as in the attached image: no holes, no skin, gloves. The balaclava is dark charcoal ribbed wool covering the whole head, with a large white rope-like ring circling the entire face and a single small red triangle inside the ring at its upper right, pointing down; the knit is tucked well down into the shirt collar. A charcoal suit, crisp white shirt and dark tie, black leather gloves with the shirt cuffs falling over the wrists, both hands resting flat on the chair arms. Beside the chair, a small round glass-topped table on a chrome tube frame holds neat stacks of banknotes, soft and unreadable. Behind, out of focus, a dark warehouse loft: brick walls, tall gridded factory windows with cool daylight, wooden floorboards, warm lamps glowing low. Real photograph of a TV pitch show set, low-key light, shallow depth of field, no text.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-22: \"we need to make the dragons, as in the investors\"; sealed writer cleanroom/investors-r1.json",
+ "parent": "/home/jackt/.cache/badcode-refs/the-den/set-chairs.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-den/set-chairs.jpg",
+   "/home/jackt/.cache/badcode-refs/the-den/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "16292ae2-bf4c-492f-87d7-8d80901d5ff0"
+}

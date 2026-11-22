@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-BCASKa-BC.mp4",
+ "made": "2026-11-22T17:20:08+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The man in the balaclava stays seated in the leather armchair, the camera held nearly still. His mask keeps facing the camera, the white ring and the red triangle unchanged. Slowly he tilts his head a few degrees to one side and eases his upper body a few centimetres forward, completely calm and unhurried. On the right armrest, one gloved forefinger lifts gently off the leather and hangs there, as if about to ask something. The rest of him stays utterly still, the factory windows glowing steadily behind. Sound: the soft creak of leather as he shifts, the low room tone of a big brick loft, no talking.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/BC.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/BC.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "BCASKa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T17:14:47.893Z"
+ }
+}

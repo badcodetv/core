@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/stills/r2/NURSE-a.jpg",
+ "made": "2026-11-22T16:35:48.064Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 medium close shot, camera at seated eye height from beside a row of leather armchairs, looking across the room at a woman standing on an open patch of worn floorboards, facing just off camera towards the unseen panel. Behind her: a dark exposed-brick wall and a black iron staircase, softly out of focus. No windows behind her. She is in her late twenties, dark hair tied back in a low bun with a few loose strands, no make-up, tired eyes. Plain mid-blue nurse's tunic with white piping, dark trousers, a fob watch pinned to the tunic, a plain lanyard with a blank card. She holds a clipboard flat against her chest with both hands, lips just parted as if about to speak; nervous, sincere. Framed from mid-chest up; her face fills about a third of the frame height, lit clearly by a soft warm key from the front with cool rim light from the side. Real-looking photograph of a TV pitch show set: dark converted warehouse loft, brick, warm lamps, cool window light.",
+ "model": "Nano Banana 2.1",
+ "why": "Script agreed (Jack: go); sealed writer cleanroom/shots-r2.json",
+ "parent": "/home/jackt/.cache/badcode-refs/the-den/x1oqVgXJSXA.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-den/x1oqVgXJSXA.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "94d89c15-633c-4fd9-bdb5-5bb737f67c41"
+}

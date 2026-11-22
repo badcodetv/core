@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-INVAa-INVA.mp4",
+ "made": "2026-11-22T17:18:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The woman in the burgundy suit stays seated in her oxblood armchair, arms still folded, her face at the same size and angle, the camera nearly still. She lowers her chin a fraction and looks out over the top of her half-moon glasses towards the man on the floor beside the camera, eyebrows level, plainly unimpressed. A short pause, then She says: I'm out. Her lips close and she holds the look, unmoved, the factory windows glowing behind her. Sound: her crisp, dry female voice, close and clear, over the low room tone of a big brick loft.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/INVA.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/INVA.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "INVAa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T17:15:21.710Z"
+ }
+}

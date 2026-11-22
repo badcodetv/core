@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/stills/r1/INV-B-a.jpg",
+ "made": "2026-11-22T16:09:38.400Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 medium shot, seated, three-quarter angle: a British Indian man in his late forties sits deep in a black leather armchair with angled bentwood arms and splayed wooden legs, turned slightly to frame left toward an unseen speaker. Neat short beard, black hair slicked back and greying at the temples, a navy three-piece suit with waistcoat buttoned and a folded pocket square. He leans back, elbows on the chair arms, fingertips pressed together in front of his chest, wearing a polite, cold smile that does not reach his eyes. At his side, a small round glass-topped table on a chrome tube frame carries neat stacks of banknotes, soft and unreadable. Behind him, out of focus, the dark warehouse loft: brick walls, tall gridded factory windows with cool daylight, wooden floorboards, warm practical lamps glowing in the gloom. Warm low-key light on his face, a cool edge of window light on his shoulder. Real photograph of a TV pitch show set, shallow depth of field, no text.",
+ "model": "Nano Banana 2.1",
+ "why": "Retry (REFERENCE_COPY_ONLY on the first run); sealed writer cleanroom/investors-r1.json",
+ "parent": "/home/jackt/.cache/badcode-refs/the-den/set-chairs.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-den/set-chairs.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "85d13535-d4c8-4653-9141-829401d7c5fd"
+}

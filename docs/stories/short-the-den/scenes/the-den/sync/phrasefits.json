@@ -1,0 +1,167 @@
+{
+ "02-minister-pitch": [
+  {
+   "take": "lines/02-minister-pitch--b.wav",
+   "n": 3.0,
+   "of": 4,
+   "tempo": 1.07,
+   "file_at": -0.34,
+   "err": 0.109,
+   "d": [
+    0.04,
+    0.09,
+    0.05,
+    -0.34
+   ]
+  },
+  {
+   "take": "lines-sync/02-minister-pitch--LP-1.wav",
+   "n": 3.0,
+   "of": 5,
+   "tempo": 1.15,
+   "file_at": 0.99,
+   "err": 0.385,
+   "d": [
+    1.43,
+    -0.03,
+    -0.04,
+    0.04
+   ]
+  },
+  {
+   "take": "lines-sync/02-minister-pitch--LP-3.wav",
+   "n": 2.0,
+   "of": 5,
+   "tempo": 1.07,
+   "file_at": -0.209,
+   "err": 0.157,
+   "d": [
+    0.49,
+    0.04,
+    -0.13,
+    0.05
+   ]
+  },
+  {
+   "take": "lines/02-minister-pitch--a.wav",
+   "n": 2.0,
+   "of": 4,
+   "tempo": 1.13,
+   "file_at": -0.352,
+   "err": 0.17,
+   "d": [
+    0.04,
+    0.4,
+    0.29,
+    -0.03
+   ]
+  },
+  {
+   "take": "lines-sync/02-minister-pitch--LP-2.wav",
+   "n": 2.0,
+   "of": 5,
+   "tempo": 1.03,
+   "file_at": 1.465,
+   "err": 0.557,
+   "d": [
+    1.91,
+    0.32,
+    -0.03,
+    0.04
+   ]
+  }
+ ],
+ "04-minister-feeling": [
+  {
+   "take": "lines/04-minister-feeling--b.wav",
+   "n": 1.0,
+   "of": 1,
+   "tempo": 0.97,
+   "file_at": 3.408,
+   "err": 0.0,
+   "d": [
+    0.04
+   ]
+  },
+  {
+   "take": "lines/04-minister-feeling--a.wav",
+   "n": 1.0,
+   "of": 1,
+   "tempo": 0.97,
+   "file_at": 3.552,
+   "err": 0.0,
+   "d": [
+    0.04
+   ]
+  }
+ ],
+ "05a-inv-a-out": [
+  {
+   "take": "casting/inv-a--en-gb-tutor-5.wav",
+   "n": 1.0,
+   "of": 1,
+   "tempo": 0.97,
+   "file_at": 2.007,
+   "err": 0.0,
+   "d": [
+    0.04
+   ]
+  }
+ ],
+ "05c-inv-c-out": [
+  {
+   "take": "casting/inv-c--en-gb-assistant-5.wav",
+   "n": 1.0,
+   "of": 2,
+   "tempo": 0.97,
+   "file_at": 2.439,
+   "err": 0.0,
+   "d": [
+    0.04
+   ]
+  }
+ ],
+ "05d-inv-d-out": [
+  {
+   "take": "casting/inv-d--en-gb-assistant-6.wav",
+   "n": 1.0,
+   "of": 1,
+   "tempo": 0.97,
+   "file_at": 3.315,
+   "err": 0.0,
+   "d": [
+    0.04
+   ]
+  }
+ ],
+ "06-nurse": [
+  {
+   "take": "lines-sync/06-nurse--L-1.wav",
+   "n": 4.0,
+   "of": 4,
+   "tempo": 1.05,
+   "file_at": 0.842,
+   "err": 0.029,
+   "d": [
+    0.07,
+    -0.04,
+    0.04,
+    0.03
+   ]
+  },
+  {
+   "take": "casting/nurse--en-gb-advisor-7.wav",
+   "n": 3.0,
+   "of": 4,
+   "tempo": 0.98,
+   "file_at": 1.369,
+   "err": 0.174,
+   "d": [
+    0.58,
+    0.12,
+    -0.04,
+    0.04
+   ]
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/stills/r2/WIDE-b.jpg",
+ "made": "2026-11-22T16:44:20.526Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 wide shot from standing height on the open floorboards, looking at five investors seated in a gentle arc of mismatched leather armchairs, their backs to a long brick wall of tall gridded factory windows glowing cool grey-blue. Keep each person's face, hair, clothes and chair exactly as in the attached lineup, left to right: the woman in the burgundy suit, arms folded; the man in the navy three-piece, fingers steepled; the masked figure in the centre in a dark suit; the older man in the mustard cardigan; the woman in the black polo-neck. The balaclava exactly as in the attached image: no holes, no skin, gloves. A small round glass side table beside each chair holds stacks of banknotes. Two warm lamps glow among them. The five fill the full width of the frame across the lower half; the tall windows rise above them through the upper half. Worn floorboards in the foreground. Real-looking photograph of a TV pitch show set: dark converted warehouse loft, brick, leather armchairs, warm lamps, cool window light.",
+ "model": "Nano Banana 2.1",
+ "why": "Retry alone (unusual-activity refusal, not charged); sealed writer cleanroom/shots-r2.json",
+ "parent": "/home/jackt/.cache/badcode-refs/the-den/panel-lineup.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-den/panel-lineup.jpg",
+   "/home/jackt/.cache/badcode-refs/the-den/x1oqVgXJSXA.jpg",
+   "/home/jackt/.cache/badcode-refs/the-den/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 4
+ },
+ "source_id": "d8a03c46-b8dd-4ff1-b4fa-857c4f96128d"
+}

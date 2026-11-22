@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-WIDEa-WIDE.mp4",
+ "made": "2026-11-22T17:20:08+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera pushes in slowly and smoothly from the floor towards the arc of five armchairs, the tall factory windows glowing behind the panel. Small natural movements around the arc: the woman on the far left shifts her glance; the man in the navy three-piece uncrosses his legs; the man in the mustard cardigan rests a hand on the stack of cash on his glass side table; the woman on the far right taps her tablet. The masked man in the centre stays perfectly still, his mask facing the camera, the white ring and the red triangle unchanged. Sound: the low room tone of a big brick loft, a faint chair creak, a soft rustle of clothing, no talking.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/WIDE.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/WIDE.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "WIDEa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T17:16:52.982Z"
+ }
+}

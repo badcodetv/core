@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-NURSEb-NURSE.mp4",
+ "made": "2026-11-22T17:17:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The young nurse stands on the spot with the clipboard pressed to her chest, facing the same way at the same size in frame, the camera nearly still. She draws a small breath, fingers tightening on the clipboard edge, and keeps her eyes on the people just beside the camera. She says: One ward. Six months. If readmissions don't fall by a tenth, you stop paying me. Her voice is slightly nervous at the start but she steadies, giving a small firm nod on the last words and holding her gaze. The staircase and brick wall behind her stay steady. Sound: her young female voice, earnest and clear, over the quiet room tone of a big brick loft.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/NURSE.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/NURSE.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "NURSEb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T17:16:44.139Z"
+ }
+}

@@ -38,5 +38,13 @@
   "url": "https://claude.ai/artifact/LGHFTwKjzemG1JTsRwySgV",
   "what": "Clips r1: 22 clips, transcribed, masks checked; Claude's picks marked",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/clips-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-22T17:38:52+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6",
+  "what": "Rough cut 1 (39.8 s): picked clips, locked voices fitted per line, evidence card, logo",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-den/scenes/the-den <out-dir>"
  }
 ]

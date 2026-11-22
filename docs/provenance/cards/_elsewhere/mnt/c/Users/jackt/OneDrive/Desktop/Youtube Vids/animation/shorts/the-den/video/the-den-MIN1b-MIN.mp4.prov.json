@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-MIN1b-MIN.mp4",
+ "made": "2026-11-22T17:20:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The man stays on the spot, facing the same way at the same size in frame, the camera almost motionless. His eyes stay on the people just beside the camera. He says: Two billion pounds. Every teenager in the country, taken round a prison. Scare them straight. As he speaks he spreads both open hands wide on the first words, sweeps one arm out across the room on the second sentence, then chops a hand down firmly on the last, a broad toothy salesman's smile between phrases. The staircase and brick wall behind him stay steady. Sound: his confident male voice, close and clear, over the quiet room tone of a big brick loft.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/MIN.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/MIN.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "MIN1b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T17:15:53.027Z"
+ }
+}
