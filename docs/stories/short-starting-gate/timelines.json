@@ -1,0 +1,8 @@
+{
+ "story": "short-starting-gate",
+ "note": "A short is one scene (new-short); this file only lets scripts/scene/premiere-check.py find it.",
+ "sections": [
+  {"id": "starting-gate", "title": "The Starting Gate", "scene": "scenes/starting-gate",
+   "timeline": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX"}
+ ]
+}

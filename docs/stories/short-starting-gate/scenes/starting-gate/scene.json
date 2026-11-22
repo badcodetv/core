@@ -40,5 +40,23 @@
   },
   "boards": {
     "timeline": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX"
+  },
+  "premiere": {
+    "current": "r5",
+    "r5": {
+      "sequence": "short-starting-gate-1-starting-gate-r5",
+      "guid": "09ae620f-5e7a-4ebb-bde7-5943713208f0",
+      "bin": "short-starting-gate-1-starting-gate-r5",
+      "built": "2026-11-22",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/starting-gate.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r5/edl.json",
+      "what": "rough cut 5: ONEGATEe, the logo sprayed on Wages' flank",
+      "how": "premiere-plan.py --tag r5",
+      "check": {
+        "at": "2026-11-22T15:16",
+        "state": "in sync",
+        "why": ""
+      }
+    }
   }
 }
