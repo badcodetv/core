@@ -1,0 +1,226 @@
+{
+ "title": "The Den Clips",
+ "eyebrow": "The Den \u00b7 clips",
+ "heading": "The clips, in script order",
+ "intro": "Every talking clip says its exact line (transcribed). BadCode's mask checked zoomed in at three points per clip: one triangle, pointing down, no skin. Claude's picks are marked; overrule freely.",
+ "sections": [
+  {
+   "h": "Round 1",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "stairs",
+     "title": "1. The minister comes down",
+     "line": "No talking (the narrator speaks over it).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "STAIRSa",
+       "src": "v/STAIRSa-STAIRS.mp4",
+       "label": "STAIRSa",
+       "warn": ""
+      },
+      {
+       "id": "STAIRSb",
+       "src": "v/STAIRSb-STAIRS.mp4",
+       "label": "STAIRSb (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "min1",
+     "title": "2. The pitch",
+     "line": "Two billion pounds... Scare them straight.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "MIN1a",
+       "src": "v/MIN1a-MIN.mp4",
+       "label": "MIN1a",
+       "warn": "says \"around\" (voice is laid over, fine)"
+      },
+      {
+       "id": "MIN1b",
+       "src": "v/MIN1b-MIN.mp4",
+       "label": "MIN1b (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "MIN1c",
+       "src": "v/MIN1c-MIN.mp4",
+       "label": "MIN1c",
+       "warn": "windows appear behind him mid-clip (should be brick)"
+      }
+     ]
+    },
+    {
+     "slot": "bcask",
+     "title": "3. \"And how will you know it works?\"",
+     "line": "BadCode, masked; his voice is laid over.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "BCASKa",
+       "src": "v/BCASKa-BC.mp4",
+       "label": "BCASKa (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "BCASKb",
+       "src": "v/BCASKb-BC.mp4",
+       "label": "BCASKb",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "min2",
+     "title": "4. \"I've got a good feeling.\"",
+     "line": "The grin holds, then the line.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "MIN2a",
+       "src": "v/MIN2a-MIN.mp4",
+       "label": "MIN2a (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "MIN2b",
+       "src": "v/MIN2b-MIN.mp4",
+       "label": "MIN2b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "inva",
+     "title": "5a. Investor A: \"I'm out.\"",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "INVAa",
+       "src": "v/INVAa-INVA.mp4",
+       "label": "INVAa (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "INVAb",
+       "src": "v/INVAb-INVA.mp4",
+       "label": "INVAb",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "invc",
+     "title": "5b. Investor C: \"I'm out.\"",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "INVCa",
+       "src": "v/INVCa-INVC.mp4",
+       "label": "INVCa (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "INVCb",
+       "src": "v/INVCb-INVC.mp4",
+       "label": "INVCb",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "invd",
+     "title": "5c. Investor D: \"I'm out.\"",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "INVDa",
+       "src": "v/INVDa-INVD.mp4",
+       "label": "INVDa (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "INVDb",
+       "src": "v/INVDb-INVD.mp4",
+       "label": "INVDb",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "nurse",
+     "title": "6. The nurse",
+     "line": "One ward. Six months...",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "NURSEa",
+       "src": "v/NURSEa-NURSE.mp4",
+       "label": "NURSEa",
+       "warn": "the clipboard grows into a big board"
+      },
+      {
+       "id": "NURSEb",
+       "src": "v/NURSEb-NURSE.mp4",
+       "label": "NURSEb",
+       "warn": "the clipboard grows into a big board"
+      },
+      {
+       "id": "NURSEc",
+       "src": "v/NURSEc-NURSE.mp4",
+       "label": "NURSEc (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "bcin",
+     "title": "7. \"I'm in.\"",
+     "line": "BadCode leans in.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "BCINa",
+       "src": "v/BCINa-BC.mp4",
+       "label": "BCINa (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "BCINb",
+       "src": "v/BCINb-BC.mp4",
+       "label": "BCINb",
+       "warn": "ends with his head turned side-on"
+      }
+     ]
+    },
+    {
+     "slot": "wide",
+     "title": "The panel (cutaway)",
+     "line": "A push in on all five.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "WIDEa",
+       "src": "v/WIDEa-WIDE.mp4",
+       "label": "WIDEa (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "WIDEb",
+       "src": "v/WIDEb-WIDE.mp4",
+       "label": "WIDEb",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

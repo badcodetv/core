@@ -30,5 +30,13 @@
   "url": "https://claude.ai/artifact/FjVZTA2eaYAZtZJpmKf7oc",
   "what": "Voice casting r1: 25 library takes across 7 roles (transcribed)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/voices/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-22T17:23:08+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/LGHFTwKjzemG1JTsRwySgV",
+  "what": "Clips r1: 22 clips, transcribed, masks checked; Claude's picks marked",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/clips-r1-picks.json <out.html>"
  }
 ]
