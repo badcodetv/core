@@ -1,9 +1,111 @@
 {
  "title": "The Den Investors",
  "eyebrow": "The Den \u00b7 casting",
- "heading": "The investors",
+ "heading": "The Den: the panel, the pitchers and the room",
  "intro": "Five investors in the den, all invented people (no lookalikes). Same room, same light, so they cut together. Pick one per investor; a note on any row gets a new round for that one.",
  "sections": [
+  {
+   "h": "Round 2: the pitch shots",
+   "lede": "Script agreed. One pick per shot; the investors' reactions start from your locked panel stills.",
+   "groups": [
+    {
+     "slot": "stairs",
+     "title": "1. The minister comes down",
+     "line": "Down the real stairs (your pick), already smiling.",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "STAIRS-a",
+       "src": "r2/STAIRS-a.jpg",
+       "label": "STAIRS-a",
+       "warn": ""
+      },
+      {
+       "id": "STAIRS-b",
+       "src": "r2/STAIRS-b.jpg",
+       "label": "STAIRS-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "min",
+     "title": "2. The minister pitches",
+     "line": "On the mark; he speaks here (lip-sync wants the face big).",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "MIN-b",
+       "src": "r2/MIN-b.jpg",
+       "label": "MIN-b",
+       "warn": "standing, good; face a bit small for lip-sync"
+      },
+      {
+       "id": "MIN-a",
+       "src": "r2/MIN-a.jpg",
+       "label": "MIN-a",
+       "warn": "looks seated among the chairs, not standing on the mark"
+      }
+     ]
+    },
+    {
+     "slot": "nurse",
+     "title": "6. The nurse pitches",
+     "line": "Same mark and framing as the minister.",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "NURSE-a",
+       "src": "r2/NURSE-a.jpg",
+       "label": "NURSE-a",
+       "warn": ""
+      },
+      {
+       "id": "NURSE-b",
+       "src": "r2/NURSE-b.jpg",
+       "label": "NURSE-b",
+       "warn": "wider: face small for lip-sync"
+      }
+     ]
+    },
+    {
+     "slot": "wide",
+     "title": "5. The panel (\"I'm out\")",
+     "line": "All five in the room. Masks are tiny at this size.",
+     "kind": "image",
+     "round": 2,
+     "opts": [
+      {
+       "id": "WIDE-b",
+       "src": "r2/WIDE-b.jpg",
+       "label": "WIDE-b",
+       "warn": ""
+      },
+      {
+       "id": "WIDE-c",
+       "src": "r2/WIDE-c.jpg",
+       "label": "WIDE-c",
+       "warn": ""
+      },
+      {
+       "id": "WIDE-a",
+       "src": "r2/WIDE-a.jpg",
+       "label": "WIDE-a",
+       "warn": ""
+      },
+      {
+       "id": "WIDE-d",
+       "src": "r2/WIDE-d.jpg",
+       "label": "WIDE-d",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
   {
    "h": "The panel",
    "lede": "Set: your window-loft pick as the room; chairs and cash from the brief.",
@@ -122,5 +224,6 @@
     }
    ]
   }
- ]
+ ],
+ "round": 2
 }

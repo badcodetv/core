@@ -1,0 +1,22 @@
+[
+  {
+    "id": "STAIRS",
+    "refs": ["show-stairs.jpg", "x1oqVgXJSXA.jpg"],
+    "prompt": "Vertical 9:16 photograph, low angle from the floorboards near the foot of an iron staircase, looking up. The staircase follows the attached stair photo: dark riveted steel stringers, chequer-plate treads, open risers, dark brick wall close behind, descending from a raised walkway. A man in his early fifties is halfway down, coming towards camera, one hand resting on the black iron rail, a thin plain leather folder tucked under the other arm. He is white and tanned, with swept-back sandy hair in a hard side parting and a broad smile showing very white, even teeth. Sharp navy suit, crisp pale blue shirt, silver tie, a small plain enamel pin on the lapel. Smooth, pleased with himself. A warm spotlight catches him from above; the room at the bottom of the frame falls away into darkness, worn floorboards just visible. He is the only person in the picture. Real-looking photograph of a TV pitch show set: dark converted warehouse loft, brick, warm lamps, cool window light."
+  },
+  {
+    "id": "MIN",
+    "refs": ["x1oqVgXJSXA.jpg"],
+    "prompt": "Vertical 9:16 medium close shot, camera at seated eye height from beside a row of leather armchairs, looking across the room at a man standing on an open patch of worn floorboards, facing just off camera towards the unseen panel. Behind him: a dark exposed-brick wall and the black iron staircase he came down, softly out of focus. No windows behind him. He is in his early fifties, white, tanned, swept-back sandy hair with a hard side parting, very white even teeth bared in a big confident grin. Sharp navy suit, crisp pale blue shirt, silver tie, a small plain enamel lapel pin, a thin plain leather folder under one arm. Mid-pitch, both hands open in front of his chest, palms up. Framed from mid-chest up; his face fills about a third of the frame height, lit clearly by a soft warm key from the front with cool rim light from the side. Real-looking photograph of a TV pitch show set: dark converted warehouse loft, brick, warm lamps, cool window light."
+  },
+  {
+    "id": "NURSE",
+    "refs": ["x1oqVgXJSXA.jpg"],
+    "prompt": "Vertical 9:16 medium close shot, camera at seated eye height from beside a row of leather armchairs, looking across the room at a woman standing on an open patch of worn floorboards, facing just off camera towards the unseen panel. Behind her: a dark exposed-brick wall and a black iron staircase, softly out of focus. No windows behind her. She is in her late twenties, dark hair tied back in a low bun with a few loose strands, no make-up, tired eyes. Plain mid-blue nurse's tunic with white piping, dark trousers, a fob watch pinned to the tunic, a plain lanyard with a blank card. She holds a clipboard flat against her chest with both hands, lips just parted as if about to speak; nervous, sincere. Framed from mid-chest up; her face fills about a third of the frame height, lit clearly by a soft warm key from the front with cool rim light from the side. Real-looking photograph of a TV pitch show set: dark converted warehouse loft, brick, warm lamps, cool window light."
+  },
+  {
+    "id": "WIDE",
+    "refs": ["panel-lineup.jpg", "x1oqVgXJSXA.jpg"],
+    "prompt": "Vertical 9:16 wide shot from standing height on the open floorboards, looking at five investors seated in a gentle arc of mismatched leather armchairs, their backs to a long brick wall of tall gridded factory windows glowing cool grey-blue. Keep each person's face, hair, clothes and chair exactly as in the attached lineup, left to right: the woman in the burgundy suit, arms folded; the man in the navy three-piece, fingers steepled; the masked figure in the centre in a dark suit; the older man in the mustard cardigan; the woman in the black polo-neck. The balaclava exactly as in the attached image: no holes, no skin, gloves. A small round glass side table beside each chair holds stacks of banknotes. Two warm lamps glow among them. The five fill the full width of the frame across the lower half; the tall windows rise above them through the upper half. Worn floorboards in the foreground. Real-looking photograph of a TV pitch show set: dark converted warehouse loft, brick, leather armchairs, warm lamps, cool window light."
+  }
+]

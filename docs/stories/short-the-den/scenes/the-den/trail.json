@@ -14,5 +14,13 @@
   "url": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg",
   "what": "Investors casting: INV-A..D (2 each) and BadCode (2 brand-fix passes)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/stills-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-22T16:45:03+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg",
+  "what": "Pitch shots: STAIRS, MIN, NURSE (2 each), WIDE (4)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/stills-r1-picks.json <out.html>"
  }
 ]
