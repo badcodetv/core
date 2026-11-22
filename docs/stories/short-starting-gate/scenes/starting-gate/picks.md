@@ -1,0 +1,4 @@
+# The Starting Gate: picks and rulings
+
+- **2026-11-22, Jack:** picked "The Starting Gate" from Claude's six format pitches (the others parked in `docs/ideas/shorts-formats.md`): "lets get started on this one … whats the script, make sure there is no pollution. use unsplash thanks". Set up as #96: folder `shorts\starting-gate`, Drive `Shorts/The Starting Gate`, 9:16, library pieces Real photo as the look, Clean room, The BadCode balaclava. Script draft 1 is Claude's; same-prompt check clean on every line.
+- **2026-11-22, fact check (Claude):** the pitch said "twelve years later"; the sourced figure is real regular pay passing its March 2008 peak in December 2019, by £1, on CPIH only: eleven years and nine months. Houses regained their 2007 peak in August 2014. Both from search summaries; fetch from source before release.
