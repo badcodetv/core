@@ -1,0 +1,86 @@
+[
+  {
+    "id": "GATE-a",
+    "look": "Real photograph, English racecourse, grey wet afternoon.",
+    "ref": "ref-gate.jpg",
+    "prompt": "9:16 portrait photograph, attached image used as the layout only. Looking straight at the front of a row of metal starting stalls standing on wet green turf: three narrow boxes side by side, each closed by a padded front gate at chest height. In each box a racehorse looks out over its gate towards the camera, ears pricked, a jockey crouched low in the saddle behind its neck, face shadowed by the cap peak. Each horse wears a plain white cloth whose front flap shows one word in big black plain capitals, left to right: SHARES, HOUSES, WAGES; WAGES is the right-hand box. Those three words are the only text anywhere. White running rails and a low grey grandstand blurred behind under a flat grey sky, drizzle in the air, damp sheen on the steel. Natural overcast light, real-looking sports photograph. Thanks."
+  },
+  {
+    "id": "GATE-b",
+    "look": "Real photograph, English racecourse, grey wet afternoon.",
+    "ref": "ref-gate.jpg",
+    "prompt": "9:16 portrait photograph, attached image used as the layout only. A slightly raised view from in front of and a little to the left of three adjoining metal starting stalls on soaked turf, so we see into the open tops of the boxes. Three horses stand in them shoulder to shoulder, heads over their closed front gates, nostrils flared, waiting for the off; anonymous jockeys in bright silks crouch over their necks. Each horse's plain saddlecloth shows one big plain capital word on its near side: SHARES in the left box, HOUSES in the middle, WAGES in the right box. No other lettering, numbers or logos. Beyond them the empty green straight runs towards us between white rails, a grandstand along one side under a low rain-heavy sky. Cold grey light, wet grass, real-looking racing photograph. Thanks."
+  },
+  {
+    "id": "BOX-a",
+    "look": "Real photograph, grey wet racecourse day seen through glass.",
+    "ref": "mask-reference.jpg",
+    "prompt": "9:16 portrait photograph. Inside a small glass-fronted commentary box high in a grandstand, a man sits at a narrow desk facing the window, binoculars raised to his face with both hands, a slim headset microphone at his chin. The balaclava exactly as in the attached image: no holes, no skin, gloves. Besides the mask he wears a brown tweed jacket, checked shirt and knitted tie, with a racecard folded on the desk beside a monitor showing only a blurred green picture. Through the rain-streaked glass, far below, the wet green course curves away between white rails, a row of starting stalls tiny in the distance. Flat grey daylight from the window, soft reflections on the glass. Real-looking documentary photograph. Thanks."
+  },
+  {
+    "id": "BOX-b",
+    "look": "Real photograph, grey wet racecourse day seen through glass.",
+    "ref": "mask-reference.jpg",
+    "prompt": "9:16 portrait photograph taken from outside and slightly below the commentary box: a small booth with a tall glass front set high in the grandstand roofline, raindrops beading on the pane. Behind the glass a man leans forward, elbows on the sill, binoculars pressed up to his face, staring out over the course. The balaclava exactly as in the attached image: no holes, no skin, gloves. Besides the mask he wears a dark green waxed racing coat over a shirt and tie, a lanyard pass hanging blank at his chest, a microphone on a short stand in front of him. The grey sky and the wet green course with its white rails reflect faintly across the glass. Overcast light, muted colours, real-looking photograph. Thanks."
+  },
+  {
+    "id": "BREAK-a",
+    "look": "Real photograph, English racecourse, grey wet afternoon.",
+    "ref": "ref-break.jpg",
+    "prompt": "9:16 portrait photograph, attached image used as the layout only. Head-on, low telephoto view: two racehorses explode out of the starting stalls and gallop straight towards the camera on wet turf, side by side, clods of mud and torn grass spraying from their hooves. The left horse's white saddlecloth reads SHARES, the right one's reads HOUSES, in big plain black capitals; jockeys crouched high, faces hidden behind goggles and cap peaks. Behind them, softer in focus, the metal row of stalls with its front gates flung open, except the right-hand box, whose front gate is still shut with a horse's head just visible over it. White rails, grey grandstand, heavy grey sky, drizzle. Only those two words are readable. Fast shutter, real-looking racing photograph. Thanks."
+  },
+  {
+    "id": "BREAK-b",
+    "look": "Real photograph, English racecourse, grey wet afternoon.",
+    "ref": "ref-break.jpg",
+    "prompt": "9:16 portrait photograph, attached image used as the layout only. Seen from just in front of the starting stalls at turf level, two horses burst out a stride apart and charge directly at the lens, legs stretched, nostrils wide, wet divots and spray thrown into the air. Saddlecloths in big plain capitals: SHARES on the horse to the left, HOUSES on the horse to the right. Their jockeys are anonymous, crouched low in splashed silks. Behind them the row of green-painted steel stalls stands open and empty, all but the box at the far right of the row, which stays closed, a calm horse's head resting over its gate. Grey rain-dark sky, white running rails receding, puddles shining on the grass. No other text or logos. Real-looking sports photograph, motion and weather. Thanks."
+  },
+  {
+    "id": "STALL-a",
+    "look": "Real photograph, grey wet racecourse day.",
+    "ref": "ref-stall.jpg",
+    "prompt": "9:16 portrait photograph, attached image used as the layout only. Close, face-on view of a single racehorse standing in a metal starting stall, its front gate firmly closed. The horse rests its head over the top bar of the gate, looking calmly at the camera, chewing slowly on a big mouthful of hay, loose strands hanging from its lips and a small heap of hay on the ground in front. On the plain white cloth on its chest and shoulder, the word WAGES in big plain black capitals, the only readable text. Wet steel bars and padding around it; behind, out of focus, empty open stalls and wet turf under a dull grey sky. Soft overcast light, raindrops on the metal. Real-looking photograph, quiet and deadpan. Thanks."
+  },
+  {
+    "id": "STALL-b",
+    "look": "Real photograph, grey wet racecourse day.",
+    "ref": "ref-stall.jpg",
+    "prompt": "9:16 portrait photograph, attached image used as the layout only. Slightly low angle, close on one horse inside a shut starting stall: its long face and neck stretch over the closed front gate, jaw working on a tuft of hay, eyes half-lidded and content. A hay net is tied to the stall's side bar, wisps blowing in the damp wind. Its saddlecloth, visible at the shoulder, says WAGES in big plain capitals, and nothing else in the frame is readable. Rain drips from the stall's top rail; beyond, slightly blurred, a long empty stretch of wet green course between white rails and a grey grandstand far off. Muted colours, flat grey light, real-looking photograph. Thanks."
+  },
+  {
+    "id": "WINNERS-a",
+    "look": "Real photograph, English racecourse, grey wet afternoon.",
+    "ref": "",
+    "prompt": "9:16 portrait photograph. A small railed ring of grass beside a grandstand: the winners' enclosure. In the middle stands a steaming bay racehorse, a large rosette pinned to its bridle, a groom holding its head. Its saddlecloth reads HOUSES in big plain capitals, the only readable word in the picture. Around it a group of well-dressed owners celebrate: a man in a morning suit and top hat pops a bottle of champagne, foam spraying; women in fitted coats and fascinators raise glasses and laugh; the jockey, face turned away, unbuckles the saddle. Umbrellas held over the owners, wet grass, a crowd behind the rails in raincoats. Grey drizzly light with a few camera flashes. Real-looking press photograph. Thanks."
+  },
+  {
+    "id": "WINNERS-b",
+    "look": "Real photograph, English racecourse, grey wet afternoon.",
+    "ref": "",
+    "prompt": "9:16 portrait photograph, close and crowded. Head and shoulders of a bay racehorse fill the right of the frame, a big rosette on its bridle, its saddlecloth showing HOUSES in plain capitals, the only readable text. Pressed in on the left, its owners in tailored suits, camel overcoats, pearls and wide hats clink champagne flutes, one of them kissing the horse's nose, another pouring champagne over a beaming friend. White rails of a small grass ring behind them, the grandstand rising beyond, grey sky, fine rain beading on coats and on the horse's wet coat. Natural overcast light, glossy and celebratory, real-looking society-pages photograph. Thanks."
+  },
+  {
+    "id": "TROT-a",
+    "look": "Real photograph, English racecourse, grey wet day.",
+    "ref": "",
+    "prompt": "9:16 portrait photograph, wide and lonely. Much later: a row of rusting metal starting stalls stands on overgrown wet turf, every front gate long since open. From the right-hand box a lone horse trots out towards the camera, unhurried, a few wisps of hay still in its mouth, its faded saddlecloth reading WAGES in plain capitals, the only readable word. A small rider sits slumped on its back, hood up against the rain. Ahead of it the course stretches away empty between white rails; the grandstand on one side is deserted, rows of bare wet seats. Steady rain, puddles, a heavy grey sky. Muted colours, real-looking photograph, melancholy and funny. Thanks."
+  },
+  {
+    "id": "TROT-b",
+    "look": "Real photograph, English racecourse, grey wet day.",
+    "ref": "",
+    "prompt": "9:16 portrait photograph, side-on from far away. A single horse trots from left to right along an empty wet racecourse in pouring rain, small in the frame, white rails running across the picture. On the far left, behind it, a lone starting stall with its front gate hanging open. Its rain-soaked saddlecloth says WAGES in big plain capitals, the only readable text; its rider is a hunched anonymous figure in a soaked jacket. Above them the grandstand rises across the top half of the frame, completely empty, seats glistening, no crowd. Low grey cloud, sheets of rain, long reflections on the waterlogged grass. Real-looking photograph, quiet and deadpan. Thanks."
+  },
+  {
+    "id": "ONEGATE-a",
+    "look": "Real photograph, English racecourse, grey wet afternoon, aerial.",
+    "ref": "",
+    "prompt": "9:16 portrait photograph from high above, like a drone shot. A wet green racecourse runs up the frame between white rails. Across its whole width, rail to rail, stretches one single long straight starting gate: a continuous padded metal bar on wheels with no partitions. Behind it, many racehorses with jockeys stand level in one neat line, shoulder to shoulder, noses at the bar, all facing up the course, their saddlecloths plain and blank. The course ahead is open and empty. A grandstand edges one side of the picture; grey low sky, drizzle softening the distance, puddles catching light. No readable text or logos anywhere. Real-looking aerial sports photograph. Thanks."
+  },
+  {
+    "id": "ONEGATE-b",
+    "look": "Real photograph, English racecourse, grey wet afternoon, aerial.",
+    "ref": "",
+    "prompt": "9:16 portrait photograph, wide and high from the top of the grandstand, looking down and across the course. One long starting gate, a single unbroken padded rail, spans the full width of the wet turf from the inside rail to the outside rail. Lined up behind it, perfectly level, a long row of horses of every colour, bays, greys, chestnuts, blacks, with anonymous jockeys in mixed silks, all waiting together for the same start. Plain saddlecloths with no markings. The green course beyond is empty and open, white rails curving into misty grey distance under a heavy sky. No words, numbers or logos readable. Real-looking photograph, calm and hopeful. Thanks."
+  }
+]

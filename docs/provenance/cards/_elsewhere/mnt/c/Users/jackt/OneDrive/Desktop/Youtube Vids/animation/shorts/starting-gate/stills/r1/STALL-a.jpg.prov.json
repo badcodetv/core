@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/STALL-a.jpg",
+ "made": "2026-11-22T11:41:23.373Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "9:16 portrait photograph, attached image used as the layout only. Close, face-on view of a single racehorse standing in a metal starting stall, its front gate firmly closed. The horse rests its head over the top bar of the gate, looking calmly at the camera, chewing slowly on a big mouthful of hay, loose strands hanging from its lips and a small heap of hay on the ground in front. On the plain white cloth on its chest and shoulder, the word WAGES in big plain black capitals, the only readable text. Wet steel bars and padding around it; behind, out of focus, empty open stalls and wet turf under a dull grey sky. Soft overcast light, raindrops on the metal. Real-looking photograph, quiet and deadpan. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ref-stall.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ref-stall.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "3d0aa587-4095-4492-a7ae-aee8f846275d"
+}

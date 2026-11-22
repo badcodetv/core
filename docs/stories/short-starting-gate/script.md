@@ -5,7 +5,7 @@ Every line is Claude's draft (`by: claude`, 2026-11-22), for Jack and Kai to rew
 
 1. **The gate (0-3 s).** A wet English racecourse. Three horses in the starting stalls, saddlecloths SHARES, HOUSES, WAGES.
    Up in the commentary box, BadCode in the mask, binoculars up.
-   - BADCODE: "New money's been made, the gates are open... and they're off!"
+   - BADCODE: "New money's been printed, the gates are open... and they're off!" *(Jack's wording, 2026-11-22)*
 2. **The break (3-8 s).** SHARES and HOUSES burst out. Close on the WAGES stall: the gate still shut, the horse chewing hay.
    - BADCODE: "Shares flies out! Houses right on its tail! And Wages... Wages hasn't left the stalls."
 3. **The wait (8-13 s).** Time passes over the stall (the light, the seasons). HOUSES crosses the line to the winners'

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/WINNERS-a.jpg",
+ "made": "2026-11-22T11:41:30.126Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "9:16 portrait photograph. A small railed ring of grass beside a grandstand: the winners' enclosure. In the middle stands a steaming bay racehorse, a large rosette pinned to its bridle, a groom holding its head. Its saddlecloth reads HOUSES in big plain capitals, the only readable word in the picture. Around it a group of well-dressed owners celebrate: a man in a morning suit and top hat pops a bottle of champagne, foam spraying; women in fitted coats and fascinators raise glasses and laugh; the jockey, face turned away, unbuckles the saddle. Umbrellas held over the owners, wet grass, a crowd behind the rails in raincoats. Grey drizzly light with a few camera flashes. Real-looking press photograph. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e5f952d7-389a-43f8-ab35-fc5c8144ce59"
+}

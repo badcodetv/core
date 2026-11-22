@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/BREAK-b.jpg",
+ "made": "2026-11-22T11:41:00.217Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "9:16 portrait photograph, attached image used as the layout only. Seen from just in front of the starting stalls at turf level, two horses burst out a stride apart and charge directly at the lens, legs stretched, nostrils wide, wet divots and spray thrown into the air. Saddlecloths in big plain capitals: SHARES on the horse to the left, HOUSES on the horse to the right. Their jockeys are anonymous, crouched low in splashed silks. Behind them the row of green-painted steel stalls stands open and empty, all but the box at the far right of the row, which stays closed, a calm horse's head resting over its gate. Grey rain-dark sky, white running rails receding, puddles shining on the grass. No other text or logos. Real-looking sports photograph, motion and weather. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ref-break.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ref-break.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "20ccc3e8-77e8-4c21-b106-aa14a2f5a565"
+}

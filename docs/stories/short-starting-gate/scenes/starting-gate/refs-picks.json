@@ -1,0 +1,237 @@
+{
+ "title": "The Starting Gate Look Refs",
+ "eyebrow": "The Starting Gate · look references",
+ "heading": "The Starting Gate: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "horse racing starting stalls",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "QjyXeXDlPvE",
+       "src": "unsplash/QjyXeXDlPvE.jpg",
+       "label": "brown and white horse during daytime · Kat Med"
+      },
+      {
+       "id": "HaSmNeQopzw",
+       "src": "unsplash/HaSmNeQopzw.jpg",
+       "label": "a person working in a room · Paul Millage"
+      },
+      {
+       "id": "Am_KTlR-Vzs",
+       "src": "unsplash/Am_KTlR-Vzs.jpg",
+       "label": "Mounted guards in white uniforms ride horses · Bradley Pritchard Jones"
+      },
+      {
+       "id": "pSqIdpZfgMo",
+       "src": "unsplash/pSqIdpZfgMo.jpg",
+       "label": "A row of miniature jockeys on horses in a mechanical horse r · Sébastien Lavalaye"
+      },
+      {
+       "id": "Q_TXAkugDNc",
+       "src": "unsplash/Q_TXAkugDNc.jpg",
+       "label": "a horse is being ridden by a crowd of people · james chan"
+      },
+      {
+       "id": "fuooYYn_NBc",
+       "src": "unsplash/fuooYYn_NBc.jpg",
+       "label": "a long hallway with a bunch of doors · Serg Magpie"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "racecourse starting gate horses",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "9rkiZ2POQUg",
+       "src": "unsplash/9rkiZ2POQUg.jpg",
+       "label": "a group of people watching a horse race · Alex"
+      },
+      {
+       "id": "Am_KTlR-Vzs",
+       "src": "unsplash/Am_KTlR-Vzs.jpg",
+       "label": "Mounted guards in white uniforms ride horses · Bradley Pritchard Jones"
+      },
+      {
+       "id": "DWs3CjTOldU",
+       "src": "unsplash/DWs3CjTOldU.jpg",
+       "label": "A blurred vintage car racing past spectators at a trackside  · PJ Wallace"
+      },
+      {
+       "id": "uCowS8_Sy-g",
+       "src": "unsplash/uCowS8_Sy-g.jpg",
+       "label": "A group of people riding horses down a dirt road · Fathur Rizki"
+      },
+      {
+       "id": "3VVWexEqo4A",
+       "src": "unsplash/3VVWexEqo4A.jpg",
+       "label": "grey and white horses · Jure Tufekcic"
+      },
+      {
+       "id": "_vpXJz8xPgA",
+       "src": "unsplash/_vpXJz8xPgA.jpg",
+       "label": "a group of people riding on the backs of horses · Luna Wang"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "horse race rain turf",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": []
+    },
+    {
+     "slot": "ref-4",
+     "title": "racecourse grandstand",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "79hMNx3zrWk",
+       "src": "unsplash/79hMNx3zrWk.jpg",
+       "label": "Sydney skyline viewed over racecourse and green hills · Andy Luo"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "horse racing finish line",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "gVGsobT3ekE",
+       "src": "unsplash/gVGsobT3ekE.jpg",
+       "label": "two people riding horses · Daniel Sánchez"
+      },
+      {
+       "id": "9rkiZ2POQUg",
+       "src": "unsplash/9rkiZ2POQUg.jpg",
+       "label": "a group of people watching a horse race · Alex"
+      },
+      {
+       "id": "pXEzBYfvooM",
+       "src": "unsplash/pXEzBYfvooM.jpg",
+       "label": "a gray horse standing next to a group of people · Ammar El Attar"
+      },
+      {
+       "id": "DAN-_SsyRZg",
+       "src": "unsplash/DAN-_SsyRZg.jpg",
+       "label": "A group of men riding on the backs of horses · HS Studio By Hussnain"
+      },
+      {
+       "id": "uCowS8_Sy-g",
+       "src": "unsplash/uCowS8_Sy-g.jpg",
+       "label": "A group of people riding horses down a dirt road · Fathur Rizki"
+      },
+      {
+       "id": "Am_KTlR-Vzs",
+       "src": "unsplash/Am_KTlR-Vzs.jpg",
+       "label": "Mounted guards in white uniforms ride horses · Bradley Pritchard Jones"
+      }
+     ]
+    },
+    {
+     "slot": "ref-6",
+     "title": "horse eating hay stable",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "JwQc6whFJeI",
+       "src": "unsplash/JwQc6whFJeI.jpg",
+       "label": "A light brown horse with a blonde mane rests head · Aweb Barouni"
+      },
+      {
+       "id": "PybtKBd6Bow",
+       "src": "unsplash/PybtKBd6Bow.jpg",
+       "label": "A person with a ponytail filling a hay net for a horse in a  · Dorina Perry"
+      },
+      {
+       "id": "IqD4sJfEJgE",
+       "src": "unsplash/IqD4sJfEJgE.jpg",
+       "label": "Two horses eating hay in the snow · YUNAN WANG"
+      },
+      {
+       "id": "aS37h_joQUk",
+       "src": "unsplash/aS37h_joQUk.jpg",
+       "label": "A white horse eating hay in a fenced in area · Alessandro Chitarrini"
+      },
+      {
+       "id": "dUmFWITnEkY",
+       "src": "unsplash/dUmFWITnEkY.jpg",
+       "label": "brown horse in cage during daytime · Danique Dohmen"
+      },
+      {
+       "id": "I5oDWXFYyH4",
+       "src": "unsplash/I5oDWXFYyH4.jpg",
+       "label": "a brown horse with a long mane standing next to a wooden fen · laura adai"
+      }
+     ]
+    },
+    {
+     "slot": "ref-7",
+     "title": "racecourse commentary box binoculars",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "S84sYV-p-kQ",
+       "src": "unsplash/S84sYV-p-kQ.jpg",
+       "label": "A woman in a dark hat and a man in a plaid blazer watching a · Martin Gleizes"
+      }
+     ]
+    },
+    {
+     "slot": "ref-8",
+     "title": "empty racecourse",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "DWs3CjTOldU",
+       "src": "unsplash/DWs3CjTOldU.jpg",
+       "label": "A blurred vintage car racing past spectators at a trackside  · PJ Wallace"
+      },
+      {
+       "id": "kkChUxZY5gE",
+       "src": "unsplash/kkChUxZY5gE.jpg",
+       "label": "A view of a race track from a car window · Maria Sime"
+      },
+      {
+       "id": "37YqOQhwyp8",
+       "src": "unsplash/37YqOQhwyp8.jpg",
+       "label": "A historical stadium prepares for an event · Nathan Wong"
+      },
+      {
+       "id": "M0DScxPx2g0",
+       "src": "unsplash/M0DScxPx2g0.jpg",
+       "label": "A view of a race track from a distance · Bhavya Patel"
+      },
+      {
+       "id": "79hMNx3zrWk",
+       "src": "unsplash/79hMNx3zrWk.jpg",
+       "label": "Sydney skyline viewed over racecourse and green hills · Andy Luo"
+      },
+      {
+       "id": "K0OEo4Iz2GY",
+       "src": "unsplash/K0OEo4Iz2GY.jpg",
+       "label": "red gangchair lot · Mohammed Al-Emran"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

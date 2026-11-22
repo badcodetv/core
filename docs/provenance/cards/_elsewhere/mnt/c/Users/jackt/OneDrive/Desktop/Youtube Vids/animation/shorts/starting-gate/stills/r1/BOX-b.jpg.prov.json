@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/BOX-b.jpg",
+ "made": "2026-11-22T11:40:37.971Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "9:16 portrait photograph taken from outside and slightly below the commentary box: a small booth with a tall glass front set high in the grandstand roofline, raindrops beading on the pane. Behind the glass a man leans forward, elbows on the sill, binoculars pressed up to his face, staring out over the course. The balaclava exactly as in the attached image: no holes, no skin, gloves. Besides the mask he wears a dark green waxed racing coat over a shirt and tie, a lanyard pass hanging blank at his chest, a microphone on a short stand in front of him. The grey sky and the wet green course with its white rails reflect faintly across the glass. Overcast light, muted colours, real-looking photograph. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/mask-reference.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "7c9afc46-025b-4de2-9310-5a0c2acbfd86"
+}

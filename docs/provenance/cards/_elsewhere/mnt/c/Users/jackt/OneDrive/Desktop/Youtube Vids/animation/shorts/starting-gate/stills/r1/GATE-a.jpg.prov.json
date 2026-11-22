@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/GATE-a.jpg",
+ "made": "2026-11-22T11:40:13.174Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "9:16 portrait photograph, attached image used as the layout only. Looking straight at the front of a row of metal starting stalls standing on wet green turf: three narrow boxes side by side, each closed by a padded front gate at chest height. In each box a racehorse looks out over its gate towards the camera, ears pricked, a jockey crouched low in the saddle behind its neck, face shadowed by the cap peak. Each horse wears a plain white cloth whose front flap shows one word in big black plain capitals, left to right: SHARES, HOUSES, WAGES; WAGES is the right-hand box. Those three words are the only text anywhere. White running rails and a low grey grandstand blurred behind under a flat grey sky, drizzle in the air, damp sheen on the steel. Natural overcast light, real-looking sports photograph. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ref-gate.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ref-gate.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "67bcb0aa-2c69-484e-a695-f799c89829a5"
+}

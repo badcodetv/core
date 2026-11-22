@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/STALL-b.jpg",
+ "made": "2026-11-22T11:41:15.843Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "9:16 portrait photograph, attached image used as the layout only. Slightly low angle, close on one horse inside a shut starting stall: its long face and neck stretch over the closed front gate, jaw working on a tuft of hay, eyes half-lidded and content. A hay net is tied to the stall's side bar, wisps blowing in the damp wind. Its saddlecloth, visible at the shoulder, says WAGES in big plain capitals, and nothing else in the frame is readable. Rain drips from the stall's top rail; beyond, slightly blurred, a long empty stretch of wet green course between white rails and a grey grandstand far off. Muted colours, flat grey light, real-looking photograph. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ref-stall.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ref-stall.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b82509a6-a1a2-4a34-92ab-e9292f7371bd"
+}

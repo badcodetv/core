@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/TROT-b.jpg",
+ "made": "2026-11-22T11:41:50.703Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "9:16 portrait photograph, side-on from far away. A single horse trots from left to right along an empty wet racecourse in pouring rain, small in the frame, white rails running across the picture. On the far left, behind it, a lone starting stall with its front gate hanging open. Its rain-soaked saddlecloth says WAGES in big plain capitals, the only readable text; its rider is a hunched anonymous figure in a soaked jacket. Above them the grandstand rises across the top half of the frame, completely empty, seats glistening, no crowd. Low grey cloud, sheets of rain, long reflections on the waterlogged grass. Real-looking photograph, quiet and deadpan. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6b602eb2-18ad-41a4-ad13-41482d01e47c"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/BOX-b-fix.jpg",
+ "made": "2026-11-22T11:45:57.089Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first picture: replace only the commentator's knitted hood with the design in the second picture. A white circle sewn round the whole front; one red triangle, softened corners, tip down, high inside that circle above his left eye, seen at the upper right of the circle from the front. All cloth, black gloves. Leave the rest of the first picture untouched: his waxed green coat, shirt and tie, the binoculars, the glass booth beaded with rain, the course behind. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "brand mask fix pass: the triangle on the wrong side, pointing the wrong way",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/BOX-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/BOX-b.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d88b17cc-890d-441b-afd4-03f6f9c8cfaa"
+}

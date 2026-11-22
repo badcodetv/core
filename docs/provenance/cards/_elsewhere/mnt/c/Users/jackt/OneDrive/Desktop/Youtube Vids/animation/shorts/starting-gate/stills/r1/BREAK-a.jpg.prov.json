@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/BREAK-a.jpg",
+ "made": "2026-11-22T11:42:57.870Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "9:16 portrait photograph, attached image used as the layout only. Head-on, low telephoto view: two racehorses explode out of the starting stalls and gallop straight towards the camera on wet turf, side by side, clods of mud and torn grass spraying from their hooves. The left horse's white saddlecloth reads SHARES, the right one's reads HOUSES, in big plain black capitals; jockeys crouched high, faces hidden behind goggles and cap peaks. Behind them, softer in focus, the metal row of stalls with its front gates flung open, except the right-hand box, whose front gate is still shut with a horse's head just visible over it. White rails, grey grandstand, heavy grey sky, drizzle. Only those two words are readable. Fast shutter, real-looking racing photograph. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ref-break.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ref-break.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ddd21bfb-2570-4b0c-a789-4b572178ce97"
+}

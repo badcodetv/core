@@ -1,0 +1,166 @@
+{
+ "title": "Starting Gate Stills",
+ "eyebrow": "BadCode Shorts · The Starting Gate · stills round 1",
+ "heading": "The Starting Gate: stills",
+ "intro": "Round 1: two takes per shot from a sealed writer, Unsplash photos as layouts. My pick is marked on every shot; overrule any with Pick, and leave a note for anything to change.",
+ "sections": [
+  {
+   "h": "Pick one per shot",
+   "lede": "Words on the cloths and the mask are checked by eye; problems are written under each still.",
+   "groups": [
+    {
+     "slot": "GATE",
+     "title": "1. The gate",
+     "line": "Three horses in the stalls: SHARES, HOUSES, WAGES",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "GATE-a",
+       "src": "r1/GATE-a.jpg",
+       "label": "a: straight on, the words on the gates (my pick: the words read at a glance)",
+       "warn": ""
+      },
+      {
+       "id": "GATE-b",
+       "src": "r1/GATE-b.jpg",
+       "label": "b: from the side, words small, horses half out already",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BOX",
+     "title": "2. BadCode in the box",
+     "line": "BadCode commentating, binoculars up",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BOX-b-fix",
+       "src": "r1/BOX-b-fix.jpg",
+       "label": "b fixed: seen through the booth glass, mask facing us (my pick)",
+       "warn": "Mask: triangle upper right inside the ring but pointing left, not down: one more fix pass if picked"
+      },
+      {
+       "id": "BOX-a-fix",
+       "src": "r1/BOX-a-fix.jpg",
+       "label": "a fixed: inside the booth, side-on",
+       "warn": "Side-on: the mask layout cannot read properly"
+      },
+      {
+       "id": "BOX-b",
+       "src": "r1/BOX-b.jpg",
+       "label": "b as made",
+       "warn": "Mask wrong: triangle on the wrong side"
+      },
+      {
+       "id": "BOX-a",
+       "src": "r1/BOX-a.jpg",
+       "label": "a as made",
+       "warn": "Mask wrong: triangle pointing sideways"
+      }
+     ]
+    },
+    {
+     "slot": "BREAK",
+     "title": "3. The break",
+     "line": "SHARES and HOUSES burst out; WAGES still in its stall",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BREAK-b",
+       "src": "r1/BREAK-b.jpg",
+       "label": "b: turf level, the shut stall with a head over the gate (my pick)",
+       "warn": "SHARES and HOUSES are small on the cloths"
+      },
+      {
+       "id": "BREAK-a",
+       "src": "r1/BREAK-a.jpg",
+       "label": "a: low and long-lens, stall behind them",
+       "warn": "SHARES and HOUSES are small on the cloths"
+      }
+     ]
+    },
+    {
+     "slot": "STALL",
+     "title": "4. Wages in the stall",
+     "line": "WAGES chewing hay behind the shut gate",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "STALL-a",
+       "src": "r1/STALL-a.jpg",
+       "label": "a: face on, hay hanging out, deadpan (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "STALL-b",
+       "src": "r1/STALL-b.jpg",
+       "label": "b: head over the gate, hay net, empty course behind",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "WINNERS",
+     "title": "5. Houses home",
+     "line": "HOUSES in the winners' enclosure, champagne",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WINNERS-b",
+       "src": "r1/WINNERS-b.jpg",
+       "label": "b: close, champagne spraying, horse kissed (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "WINNERS-a",
+       "src": "r1/WINNERS-a.jpg",
+       "label": "a: wide, the ring and the crowd",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "TROT",
+     "title": "6. Wages is away",
+     "line": "Years later: WAGES finally trots out",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "TROT-a",
+       "src": "r1/TROT-a.jpg",
+       "label": "a: rusted, overgrown stalls, horse stepping out (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "TROT-b",
+       "src": "r1/TROT-b.jpg",
+       "label": "b: alone on a flooded course, empty stand",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "ONEGATE",
+     "title": "7. One gate",
+     "line": "Next race: one gate for everyone",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ONEGATE-b",
+       "src": "r1/ONEGATE-b.jpg",
+       "label": "b: the gate runs rail to rail (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "ONEGATE-a",
+       "src": "r1/ONEGATE-a.jpg",
+       "label": "a: the gate only covers part of the track",
+       "warn": "Gate does not reach both rails"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

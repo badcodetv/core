@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/GATE-b.jpg",
+ "made": "2026-11-22T11:40:43.192Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "9:16 portrait photograph, attached image used as the layout only. A slightly raised view from in front of and a little to the left of three adjoining metal starting stalls on soaked turf, so we see into the open tops of the boxes. Three horses stand in them shoulder to shoulder, heads over their closed front gates, nostrils flared, waiting for the off; anonymous jockeys in bright silks crouch over their necks. Each horse's plain saddlecloth shows one big plain capital word on its near side: SHARES in the left box, HOUSES in the middle, WAGES in the right box. No other lettering, numbers or logos. Beyond them the empty green straight runs towards us between white rails, a grandstand along one side under a low rain-heavy sky. Cold grey light, wet grass, real-looking racing photograph. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ref-gate.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ref-gate.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "bc480090-b295-4641-a4df-3fab8575ed4a"
+}

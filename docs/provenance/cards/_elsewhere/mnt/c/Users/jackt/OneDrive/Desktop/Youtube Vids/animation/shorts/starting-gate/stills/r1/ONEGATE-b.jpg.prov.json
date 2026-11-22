@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/ONEGATE-b.jpg",
+ "made": "2026-11-22T11:42:02.847Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "9:16 portrait photograph, wide and high from the top of the grandstand, looking down and across the course. One long starting gate, a single unbroken padded rail, spans the full width of the wet turf from the inside rail to the outside rail. Lined up behind it, perfectly level, a long row of horses of every colour, bays, greys, chestnuts, blacks, with anonymous jockeys in mixed silks, all waiting together for the same start. Plain saddlecloths with no markings. The green course beyond is empty and open, white rails curving into misty grey distance under a heavy sky. No words, numbers or logos readable. Real-looking photograph, calm and hopeful. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "9dc28507-15bf-4d68-b29b-dc130f9efd5f"
+}

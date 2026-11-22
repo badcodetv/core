@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r1/WINNERS-b.jpg",
+ "made": "2026-11-22T11:41:43.780Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "9:16 portrait photograph, close and crowded. Head and shoulders of a bay racehorse fill the right of the frame, a big rosette on its bridle, its saddlecloth showing HOUSES in plain capitals, the only readable text. Pressed in on the left, its owners in tailored suits, camel overcoats, pearls and wide hats clink champagne flutes, one of them kissing the horse's nose, another pouring champagne over a beaming friend. White rails of a small grass ring behind them, the grandstand rising beyond, grey sky, fine rain beading on coats and on the horse's wet coat. Natural overcast light, glossy and celebratory, real-looking society-pages photograph. Thanks.",
+ "model": "Nano Banana 2.1",
+ "why": "stills round 1 (sealed writer, cleanroom/prompts-r1.json)",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8a3af556-ecb6-4989-ade9-653f757bfaa3"
+}
