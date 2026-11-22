@@ -36,5 +36,24 @@
   "url": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX",
   "what": "rough cut 1, 33.7 s",
   "rebuild": "python3 scripts/shorts/gate_cut.py --round 1"
+ },
+ {
+  "at": "2026-11-22T13:33:14+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "what": "Jack's notes on rough cut 1",
+  "decided": [
+   "Jack r1: at728 'ai slop the horse teleported' (ONEGATE); at788 'do a cool horse badcode outro thanks' (logo)"
+  ],
+  "feedback": "feedback/timeline-r1",
+  "feedback_docs": 2
+ },
+ {
+  "at": "2026-11-22T13:33:14+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX",
+  "what": "Rough cut 2 (35.8 s): ONEGATE re-shot (3 clips, ONEGATEe picked), photo-finish outro (scripts/shorts/gate_outro.py), both notes answered on the page",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-starting-gate/scenes/starting-gate <out-dir>"
  }
 ]

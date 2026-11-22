@@ -1,0 +1,43 @@
+{
+ "round": 2,
+ "plan": [
+  {
+   "h": "Rough cut 2: both notes answered",
+   "items": [
+    "One gate re-shot: 3 new clips; ONEGATEe picked (the field leaves as one row, the stall stays put, nothing jumps).",
+    "New outro, a photo finish: the field freezes level, flash, a judges' print scans across, then into the logo.",
+    "Now 35.8 s (the outro is 2 s longer than the old card)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Trim toward ~17 s: which pauses or lines go?",
+    "A stamp on the print (e.g. \"DEAD HEAT\": everyone finishes together)? Your words if so.",
+    "Music: a Suno round on your credits?"
+   ]
+  }
+ ],
+ "replies": {
+  "at728": "Fixed: ONEGATEa left a ghost row at the gate while the field ran (the \"teleport\"). Re-shot 3 takes with the stall kept standing; ONEGATEe has the whole field leave level and nothing jumps. The other two (c, d) are on the clips page. Picture only, no new words.",
+  "at788": "Done: a photo finish. The field freezes level on the line, a camera flash and shutter click, a black-and-white judges' print scans across left to right with a timing ruler and a finish line on the hooves, header \"PHOTOGRAPH\" (the call a UK course makes), then it dissolves into the logo. Sound synthesised, no outside clips. Want a stamp on it like \"DEAD HEAT\"? Your words."
+ },
+ "jack_round1": [
+  {
+   "at": 1795353811847,
+   "beat": "onegate",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at728",
+   "note": "ai slop the horse teleported thanks",
+   "tc": "00:00:30:08"
+  },
+  {
+   "at": 1795353824829,
+   "beat": "logo",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at788",
+   "note": "do a cool horse badcode outro thanks",
+   "tc": "00:00:32:20"
+  }
+ ]
+}

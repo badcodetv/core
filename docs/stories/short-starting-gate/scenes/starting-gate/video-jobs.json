@@ -97,6 +97,27 @@
    "still": "ONEGATE",
    "motion": "From the high vantage the camera tilts gently and begins to glide forward over the course. The row of horses stands ready at the long stalls; then all the front gates fly open in the same instant and every horse leaps out together, the field staying in one even line as it gallops along the striped turf between the white rails, coloured caps level across the whole width. The camera follows the line as it rolls away into the drifting fog. Sound: a single metal crash, a wave of hooves on soft ground, rain, a far-off crowd roar, no talking. Real-looking footage of an English racecourse on a grey, wet day. Thanks.",
    "why": "clips round 1 (sealed writer, cleanroom/anim-r1.json)"
+  },
+  {
+   "key": "ONEGATEc",
+   "n": 1,
+   "still": "ONEGATE",
+   "motion": "High, wide, locked-off view down the misty straight, the camera never moves. One long steel starting stall spans the track from rail to rail, a horse waiting in every bay, silks bright against the grass. After a short pause every front door along the stall swings open in the same instant. Each horse steps out of its own bay and the whole field gallops away together as one level line, the empty stall standing still behind them with all its doors hanging open. The single line of horses grows smaller as it runs up the wide green track toward the misty bend, spray rising from the wet turf. Sound: one crisp clang along the whole stall, a rumble of many hooves, light rain, a distant cheer, no talking. Real-looking footage of an English racecourse on a grey, wet day.",
+   "why": "timeline r1 note at728 (Jack: 'ai slop the horse teleported'): ONEGATEa leaves a ghost row at the gate, ONEGATEb's stall vanishes; direct prompt fix, no new writer"
+  },
+  {
+   "key": "ONEGATEd",
+   "n": 1,
+   "still": "ONEGATE",
+   "motion": "High, wide, locked-off view down the misty straight, the camera never moves. One long steel starting stall spans the track from rail to rail, a horse waiting in every bay, silks bright against the grass. After a short pause every front door along the stall swings open in the same instant. Each horse steps out of its own bay and the whole field gallops away together as one level line, the empty stall standing still behind them with all its doors hanging open. The single line of horses grows smaller as it runs up the wide green track toward the misty bend, spray rising from the wet turf. Sound: one crisp clang along the whole stall, a rumble of many hooves, light rain, a distant cheer, no talking. Real-looking footage of an English racecourse on a grey, wet day.",
+   "why": "timeline r1 note at728 (Jack: 'ai slop the horse teleported'): ONEGATEa leaves a ghost row at the gate, ONEGATEb's stall vanishes; direct prompt fix, no new writer"
+  },
+  {
+   "key": "ONEGATEe",
+   "n": 1,
+   "still": "ONEGATE",
+   "motion": "Fixed high camera looking straight down the course, no camera movement. The horses stand side by side in one row inside a long grey starting stall that reaches from the inside rail to the outside rail. A beat of stillness, heads bobbing, then the whole row of front doors bursts open at once and every horse leaves together; the steel stall stays exactly where it is, empty, as the field pulls away from it. The horses keep one even line across the full width of the track, every cap level, galloping away from us between the white rails into the fog. Sound: a single metal crash, a wave of hooves on soft ground, rain, a far-off crowd roar, no talking. Real-looking footage of an English racecourse on a grey, wet day.",
+   "why": "timeline r1 note at728 (Jack: 'ai slop the horse teleported'): ONEGATEa leaves a ghost row at the gate, ONEGATEb's stall vanishes; direct prompt fix, no new writer"
   }
  ]
 }

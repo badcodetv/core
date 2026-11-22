@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r2/v07-outro.mp4",
+ "made": "2026-11-22T13:33:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "opencv+ffmpeg",
+ "tool": "scripts/shorts/gate_outro.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r2/v06-onegate.mp4",
+ "why": "Photo-finish outro, Jack r1 at788",
+ "inputs": {
+  "logo": "docs/brand/logo/badcode-stacked-reversed.svg"
+ },
+ "settings": {
+  "line_y": "0.445",
+  "zoom": "1.35"
+ }
+}

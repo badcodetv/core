@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r2/sfx-outro-piece.wav",
+ "made": "2026-11-22T13:33:23+00:00",
+ "by": "claude",
+ "kind": "sfx",
+ "engine": "ffmpeg-lavfi",
+ "tool": "scripts/shorts/gate_outro.py",
+ "why": "Shutter click and print whirr, synthesised (no outside sound)"
+}
