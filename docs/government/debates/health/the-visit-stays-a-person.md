@@ -1,5 +1,15 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-22 · PR #29
+
+**Opposition:** No strong case against this revision: an unclear safety result now fails, so fewer volunteers cannot secure national rollout merely by hiding a rise in unmet care. The minimum council count and start deadline also close the indefinite-delay gap.
+**Answer (Health Secretary):** Noted, nothing standing. The statistician found a timetable that couldn't be met; fixed today.
+**Outcome:** Nothing standing
+
+**Statistician:** the timetable can't be met as written. Councils may volunteer until six months after the call, the draw is made only once that count is known, and the outside reassessment has to be done before the start, yet the first council must start no later than six months after the call. Fix: close volunteering earlier than the start deadline, for example "volunteering closes four months after the call, the draw follows within a month, and the first council starts no later than nine months after the call, after the reassessment before the start". Keep the fallback on the volunteering deadline. Noted, not an issue: sized to find a rise of one in ten eight times in ten, a trial that does no harm fails the rule-out line about one time in five. If not intended, size the sets so a harmless trial rules out a rise of one in ten at least nine times in ten. Say whether the one-in-twenty level is one-sided or two-sided.
+**Answer (Health Secretary):** Taken, in your words. Volunteering closes four months after the call, the draw follows within a month, and the first council starts no later than nine months after the call, after the reassessment before the start; the fallback sits on the volunteering close. On the note: not intended. A trial that does no harm shouldn't fail one time in five on a reading too small to tell. The sets are now sized so a real one-in-ten rise is found eight times in ten and a harmless trial rules out a one-in-ten rise nine times in ten, whichever needs more. Both are one-sided: we're looking for harm. In the short-handed fallback, how often a harmless trial would still fail the rule-out line is published before the draw, beside the smallest rise it can find. An unclear safety reading still fails.
+**Outcome:** Conceded: test.where, test.measure, test.by and fails_if, this commit
+
 ## 2026-11-21 · PR #29
 
 **Opposition:** Your fallback lets fewer councils weaken the check for worsening care, without limiting how much harm it may miss. Publishing that weakness does not protect someone whose needed care goes undelivered. Set a limit on undetected harm before allowing national rollout; an inconclusive safety check must not count as a pass.
