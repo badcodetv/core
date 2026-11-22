@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/stills/r3/GLASS-b-b.jpg",
+ "made": "2026-11-22T17:41:36.913Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 photograph, locked-off and square on, inside a dim warehouse loft facing one tall gridded factory window. The window takes up almost all of the frame, with only a thin strip of dark exposed brick reveal and a deep sill edge showing at the borders. Slim black-painted iron bars, worn with rust at the joints, divide the glass into a calm, regular grid; the central panes are big and the very centre is a broad, plain, evenly bright area of clear glass. Old glass, clean on the inside, with slender rivulets of rain running down the outside. Through it, flat grey overcast daylight and a blurred brick wall across a wet yard. A small soft glow of warm lamplight reflects in the lower right corner pane. Real photograph of a TV pitch show set: warehouse loft, brick, warm lamps, cool window light.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack: condensation logo outro on the factory glass; sealed writer cleanroom/outro-r1.json",
+ "parent": "/home/jackt/.cache/badcode-refs/the-den/Yiwkub6TxNY.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/the-den/Yiwkub6TxNY.jpg",
+   "/home/jackt/.cache/badcode-refs/the-den/WIDE.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "205ee675-f495-4a5f-a258-ad1100dc8682"
+}

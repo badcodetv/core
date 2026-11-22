@@ -43,6 +43,8 @@ LINES = {
 NAMES = {'narrator': 'Narrator', 'minister': 'The minister', 'badcode': 'BadCode', 'nurse': 'The nurse',
          'inv-a': 'Investor A', 'inv-c': 'Investor C', 'inv-d': 'Investor D'}
 PITCH_IN = 1.68  # MIN1a: the clip time 0.15 s before his mouth starts "Every" (measure with row-measure.py)
+GLASS = dict(cx=540, cy=820, w=560, fade=0.5)  # the logo's place on the GLASSa window (1080x1920 px)
+# Jack, 2026-11-22: "an outro where it goes onto the factory glass and the condensation spells out badcode with the logo"
 TALK = {'MIN1a', 'MIN2a', 'INVAb', 'INVCa', 'INVDa', 'NURSEc'}  # their own audio is Omni's voice: muted, room laid under
 # (beat, title, clip key, still, in, dur, hold-first-frame, [(line, the take FILE's start, s into the shot)], what we see)
 # The pitch: the take runs whole from the panel shot; the cut to MIN1a falls in the pause before "Every teenager" (voice
@@ -61,7 +63,7 @@ SHOTS = [
     ('nurse', '6. The nurse', 'NURSEc', 'NURSE', 0.6, 7.0, 0, [('06', 0.242)], 'One ward, six months'),
     ('in', '7. I\'m in', 'BCINa', 'BC', 4.0, 3.2, 0, [('07', 1.6)], 'BadCode leans right in'),
     ('card', '8. The evidence', None, None, 0, 5.0, 0, [], 'The Cochrane and Campbell finding'),
-    ('logo', '9. Logo', None, None, 0, 2.0, 0, [], 'Logo'),
+    ('glass', '9. The logo on the glass', 'GLASSa', 'GLASS', 0.5, 5.0, 0, [], 'The window steams up; the condensation clears in the shape of the BadCode logo'),
 ]
 
 
@@ -108,7 +110,11 @@ def main():
         if key:
             src = VID / f'the-den-{key}-{still}.mp4'
             vf = VF + (f',tpad=start_mode=clone:start_duration={hold}' if hold else '') + f',tpad=stop_mode=clone:stop_duration=4,{CLAMP}'
-            ff('-ss', cin, '-i', src, '-vf', vf, '-frames:v', fr, '-an', *ENC, pf)
+            if bid == 'glass':
+                subprocess.run([str(pathlib.Path.home() / '.cache/badcode-lips/venv/bin/python'), str(REPO / 'scripts/shorts/den_glass_logo.py'),
+                                str(src), str(pf), '--in', str(cin), '--dur', str(sd), *[x for k, v in GLASS.items() for x in (f'--{k}', str(v))]], check=True)
+            else:
+                ff('-ss', cin, '-i', src, '-vf', vf, '-frames:v', fr, '-an', *ENC, pf)
             # room: a silent clip's own sound; under a talking clip, the panel wide's room tone instead
             rs = VID / 'the-den-WIDEa-WIDE.mp4' if key in TALK else src
             rin = 0.3 if key in TALK else cin

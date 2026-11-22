@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-GLASSb-GLASS.mp4",
+ "made": "2026-11-22T17:47:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off static shot, 8 seconds, starting exactly on the still: a tall factory window seen square on from inside a dark warehouse loft, thin iron glazing bars in an even grid. The frame stays perfectly still for the whole clip, with no pan, zoom, drift or refocus. On the outside of the panes, thin rain streaks keep running downward at a slow, irregular pace, droplets gathering, joining and sliding away in fresh paths. The blurred brick wall and grey daylight beyond stay soft and steady, with the overcast light brightening and dimming by a tiny amount as cloud passes. The faint warm lamp reflection in the lower corner holds, glowing gently. The glass stays clean on the room side. Sound: steady soft rain pattering and trickling on old glass, with the hushed, airy stillness of a large quiet room.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/GLASS.jpg",
+ "why": "Jack: condensation logo outro on the factory glass; sealed writer cleanroom/outro-r1.json; \"plain bright area\" wording cut (the picked still has none; direct fix)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/GLASS.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "GLASSb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T17:46:31.835Z"
+ }
+}

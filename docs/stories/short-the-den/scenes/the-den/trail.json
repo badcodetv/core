@@ -46,5 +46,13 @@
   "url": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6",
   "what": "Rough cut 1 (39.8 s): picked clips, locked voices fitted per line, evidence card, logo",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-den/scenes/the-den <out-dir>"
+ },
+ {
+  "at": "2026-11-22T17:50:36+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6",
+  "what": "Rough cut 2 (42.8 s): the condensation logo outro on the den's window",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-den/scenes/the-den <out-dir>"
  }
 ]

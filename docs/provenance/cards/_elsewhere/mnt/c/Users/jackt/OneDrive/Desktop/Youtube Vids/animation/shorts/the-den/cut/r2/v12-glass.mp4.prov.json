@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r2/v12-glass.mp4",
+ "made": "2026-11-22T17:50:36+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "opencv+ffmpeg",
+ "tool": "scripts/shorts/den_glass_logo.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-GLASSa-GLASS.mp4",
+ "why": "Condensation logo outro (Jack)",
+ "inputs": {
+  "logo": "docs/brand/logo/badcode-stacked-reversed-2400.png"
+ },
+ "settings": {
+  "cx": "540",
+  "cy": "820",
+  "w": "560"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "round": 2,
+ "plan": [
+  {
+   "h": "Rough cut 2",
+   "items": [
+    "Outro: the factory window steams up and the condensation spells out the BadCode logo, then it resolves into the full logo.",
+    "Everything else as cut 1."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Does the minister's pitch sync read right? (flagged)",
+    "Trim toward ~20 s: which beats or lines go?",
+    "Music: a Suno round on your credits?"
+   ]
+  }
+ ],
+ "replies": {}
+}

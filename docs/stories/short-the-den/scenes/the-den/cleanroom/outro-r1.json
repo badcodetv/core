@@ -1,0 +1,16 @@
+{
+  "stills": [
+    {
+      "id": "outro-r1-still-a-pane-close",
+      "prompt": "Vertical 9:16 photograph from inside a dark converted warehouse loft, camera square on and level, looking straight at one tall old factory window that fills the entire frame edge to edge. Thin dark iron glazing bars, slightly rusted, form a simple even grid; the middle of the window is one large clear pane, wide and tall, evenly lit and uncrossed by any bar, with narrower panes ringing it at the top, bottom and sides. The glass is clean on the room side. Fine rain streaks trickle down the outside surface in thin wavering lines and tiny beads. Beyond, soft grey rainy daylight and a red brick yard wall, heavily out of focus. Low in the bottom left corner, a faint warm amber reflection of a room lamp glows on the glass. Real photograph of a TV pitch show set: warehouse loft, brick, warm lamps, cool window light."
+    },
+    {
+      "id": "outro-r1-still-b-wider",
+      "prompt": "Vertical 9:16 photograph, locked-off and square on, inside a dim warehouse loft facing one tall gridded factory window. The window takes up almost all of the frame, with only a thin strip of dark exposed brick reveal and a deep sill edge showing at the borders. Slim black-painted iron bars, worn with rust at the joints, divide the glass into a calm, regular grid; the central panes are big and the very centre is a broad, plain, evenly bright area of clear glass. Old glass, clean on the inside, with slender rivulets of rain running down the outside. Through it, flat grey overcast daylight and a blurred brick wall across a wet yard. A small soft glow of warm lamplight reflects in the lower right corner pane. Real photograph of a TV pitch show set: warehouse loft, brick, warm lamps, cool window light."
+    }
+  ],
+  "clip": {
+    "id": "outro-r1-clip",
+    "prompt": "Locked-off static shot, 8 seconds, starting exactly on the still: a tall factory window seen square on from inside a dark warehouse loft, thin iron glazing bars in an even grid, a large plain bright area of clear glass in the centre. The frame stays perfectly still for the whole clip, with no pan, zoom, drift or refocus. On the outside of the panes, thin rain streaks keep running downward at a slow, irregular pace, droplets gathering, joining and sliding away in fresh paths. The blurred brick wall and grey daylight beyond stay soft and steady, with the overcast light brightening and dimming by a tiny amount as cloud passes. The faint warm lamp reflection in the lower corner holds, glowing gently. The centre of the glass stays clean, even and uncluttered. Sound: steady soft rain pattering and trickling on old glass, with the hushed, airy stillness of a large quiet room."
+  }
+}

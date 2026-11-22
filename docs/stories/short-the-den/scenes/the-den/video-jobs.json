@@ -153,6 +153,20 @@
    "still": "WIDE",
    "motion": "The camera pushes in slowly and smoothly from the floor towards the arc of five armchairs, the tall factory windows glowing behind the panel. Small natural movements around the arc: the woman on the far left shifts her glance; the man in the navy three-piece uncrosses his legs; the man in the mustard cardigan rests a hand on the stack of cash on his glass side table; the woman on the far right taps her tablet. The masked man in the centre stays perfectly still, his mask facing the camera, the white ring and the red triangle unchanged. Sound: the low room tone of a big brick loft, a faint chair creak, a soft rustle of clothing, no talking.",
    "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "GLASSa",
+   "n": 1,
+   "still": "GLASS",
+   "motion": "Locked-off static shot, 8 seconds, starting exactly on the still: a tall factory window seen square on from inside a dark warehouse loft, thin iron glazing bars in an even grid. The frame stays perfectly still for the whole clip, with no pan, zoom, drift or refocus. On the outside of the panes, thin rain streaks keep running downward at a slow, irregular pace, droplets gathering, joining and sliding away in fresh paths. The blurred brick wall and grey daylight beyond stay soft and steady, with the overcast light brightening and dimming by a tiny amount as cloud passes. The faint warm lamp reflection in the lower corner holds, glowing gently. The glass stays clean on the room side. Sound: steady soft rain pattering and trickling on old glass, with the hushed, airy stillness of a large quiet room.",
+   "why": "Jack: condensation logo outro on the factory glass; sealed writer cleanroom/outro-r1.json; \"plain bright area\" wording cut (the picked still has none; direct fix)"
+  },
+  {
+   "key": "GLASSb",
+   "n": 1,
+   "still": "GLASS",
+   "motion": "Locked-off static shot, 8 seconds, starting exactly on the still: a tall factory window seen square on from inside a dark warehouse loft, thin iron glazing bars in an even grid. The frame stays perfectly still for the whole clip, with no pan, zoom, drift or refocus. On the outside of the panes, thin rain streaks keep running downward at a slow, irregular pace, droplets gathering, joining and sliding away in fresh paths. The blurred brick wall and grey daylight beyond stay soft and steady, with the overcast light brightening and dimming by a tiny amount as cloud passes. The faint warm lamp reflection in the lower corner holds, glowing gently. The glass stays clean on the room side. Sound: steady soft rain pattering and trickling on old glass, with the hushed, airy stillness of a large quiet room.",
+   "why": "Jack: condensation logo outro on the factory glass; sealed writer cleanroom/outro-r1.json; \"plain bright area\" wording cut (the picked still has none; direct fix)"
   }
  ]
 }
