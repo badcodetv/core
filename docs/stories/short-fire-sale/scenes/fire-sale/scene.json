@@ -48,5 +48,23 @@
   "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/cut/r6/preview.mp4",
   "script": "python3 scripts/shorts/fire_cut.py --round 6 --voice jim=jim-r2-d",
   "round": 1
+ },
+ "premiere": {
+  "current": "r6",
+  "r6": {
+   "sequence": "short-fire-sale-1-fire-sale-r6",
+   "guid": "3de946ed-203f-4eb0-90b6-5bbb2499495e",
+   "bin": "short-fire-sale-1-fire-sale-r6",
+   "built": "2026-11-22",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/fire-sale.prproj",
+   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/cut/r6/edl.json",
+   "what": "rough cut 6: lip sync measured on the final video, Going going gone outro",
+   "how": "premiere-plan.py --tag r6",
+   "check": {
+    "at": "2026-11-22T11:09:42",
+    "state": "in sync",
+    "why": ""
+   }
+  }
  }
 }
