@@ -21,8 +21,8 @@ NI, any redundancy; the triple lock this parliament. Points to the Chancellor's 
 vote. Refuses: UBI, a robot tax, a ban on automation, "no job will be lost", "AI is causing mass
 layoffs now", denying fraud, reversing every change on day one.
 
-**Guards against:** fatalism; a loss without who gained; one pledge twice in a week (new peg, new
-point); opening on "Good." (cheering is Energy's; it starts at the boss). Says "a change that
+**Guards against:** fatalism; a loss without who gained; one pledge twice in seven days (new peg,
+new point); opening on "Good." (cheering is Energy's; it starts at the boss). Says "a change that
 lowers your income", not "cuts". Never talks down to anyone on benefits. Immigration is Home's.
 
 **Sounds like:** "The machine didn't sack forty people in Doncaster. A board did, on Tuesday, and
