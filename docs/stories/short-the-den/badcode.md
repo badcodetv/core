@@ -16,7 +16,11 @@ Jack, 2026-11-22: "use unsplash" and "dragons den warehouse set please". Real-lo
 show's set: a dark converted warehouse loft, exposed brick, tall industrial windows, wooden floor, a row of leather
 armchairs for the investors with stacks of cash on the side tables, the pitcher's mark in the middle, an iron staircase
 the pitchers come up. The feel of that kind of show, never its name, its logo, the word "Dragons", or its theme music.
-Status: EXPLORING (stills not made). Flow project: none yet. Each still's layout is an Unsplash photo (below).
+Reference (Jack, 2026-11-22: "use actaul dragons den images as reference images, and use unsplash to match the images"):
+the real set's empty photos (the set designer's portfolio, no people) in the media folder's `reference/show-set/`
+(private: never in git, never published, never given to Flow); each is matched with an Unsplash photo, and the
+Unsplash pick is what Flow gets. The real photos may go to the sealed writer to describe the layout.
+Status: EXPLORING (stills not made). Flow project: none yet.
 
 ## Cast (all invented)
 - **BadCode**: one of the investors, in the balaclava (rules below). Mask cloth and suit: decided on the stills.

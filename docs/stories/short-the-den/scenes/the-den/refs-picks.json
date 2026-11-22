@@ -1,144 +1,343 @@
 {
- "title": "the-den Look Refs",
- "eyebrow": "the-den · look references",
- "heading": "the-den: pick a real photo to start the look from",
- "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "title": "The Den Set Refs",
+ "eyebrow": "The Den · set references",
+ "heading": "Match the show's set with Unsplash photos",
+ "intro": "Each row starts with the real set (the set designer's photos, empty, no people), followed by Unsplash photos that match it. Pick one Unsplash photo per row; that one goes to Flow as the layout. The show's own photos stay private and are never sent to Flow.",
+ "round": 2,
  "sections": [
   {
-   "h": "Searches",
-   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "h": "The set",
+   "lede": "",
    "groups": [
     {
-     "slot": "ref-1",
-     "title": "converted warehouse loft exposed brick dark interior",
-     "line": "Pick the photo whose look this scene should start from.",
+     "slot": "chairs-row",
+     "title": "The den: the investors' row",
+     "line": "Pick the Unsplash photo closest to the show (first tile). It becomes the layout Flow follows.",
      "kind": "image",
      "opts": [
       {
+       "id": "show",
+       "src": "show/set-chairs-row.jpg",
+       "label": "THE SHOW (what to match; never sent to Flow)",
+       "warn": ""
+      },
+      {
        "id": "vSfKVKPMvLw",
        "src": "unsplash/vSfKVKPMvLw.jpg",
-       "label": "a room with a ladder and bookshelves · Tim Wildsmith"
+       "label": "vSfKVKPMvLw: a room with a ladder and bookshelves (Unsplash, Tim Wildsmith)",
+       "warn": ""
       },
       {
        "id": "uHlKDdc_yIs",
        "src": "unsplash/uHlKDdc_yIs.jpg",
-       "label": "white wooden window frame on brown brick wall · Yi Sheng Low"
+       "label": "uHlKDdc_yIs: white wooden window frame on brown brick wall (Unsplash, Yi Sheng Low)",
+       "warn": ""
       },
       {
        "id": "g7erQWhu98g",
        "src": "unsplash/g7erQWhu98g.jpg",
-       "label": "A black and white photo of a room with a pool table · Eliezer Muller"
+       "label": "g7erQWhu98g: A black and white photo of a room with a pool table (Unsplash, Eliezer Muller)",
+       "warn": ""
       },
       {
        "id": "_QWsg5jp2Uc",
        "src": "unsplash/_QWsg5jp2Uc.jpg",
-       "label": "a living room with a large window and a couch · Alex Ugolkov"
+       "label": "_QWsg5jp2Uc: a living room with a large window and a couch (Unsplash, Alex Ugolkov)",
+       "warn": ""
       },
       {
        "id": "gwXKwOYBF-0",
        "src": "unsplash/gwXKwOYBF-0.jpg",
-       "label": "white and black checkered wall · Matthew LeJune"
+       "label": "gwXKwOYBF-0: white and black checkered wall (Unsplash, Matthew LeJune)",
+       "warn": ""
+      },
+      {
+       "id": "LIMsbquHur0",
+       "src": "unsplash/LIMsbquHur0.jpg",
+       "label": "LIMsbquHur0: Sunlight streams through a large window onto wooden floor (Unsplash, Yimeng Zhao)",
+       "warn": ""
+      },
+      {
+       "id": "Oj0rByE1XiA",
+       "src": "unsplash/Oj0rByE1XiA.jpg",
+       "label": "Oj0rByE1XiA: a room with a ceiling and pipes (Unsplash, Brice Cooper)",
+       "warn": ""
+      },
+      {
+       "id": "cYyvktFS3Pk",
+       "src": "unsplash/cYyvktFS3Pk.jpg",
+       "label": "cYyvktFS3Pk: an empty warehouse with a lot of windows (Unsplash, Dillon Wanner)",
+       "warn": ""
       }
-     ]
+     ],
+     "round": 2
     },
     {
-     "slot": "ref-2",
-     "title": "industrial loft armchairs row brick wall",
-     "line": "Pick the photo whose look this scene should start from.",
+     "slot": "chairs-close",
+     "title": "The investors' chairs",
+     "line": "Pick the Unsplash photo closest to the show (first tile). It becomes the layout Flow follows.",
      "kind": "image",
      "opts": [
       {
+       "id": "show",
+       "src": "show/set-chairs-close.jpg",
+       "label": "THE SHOW (what to match; never sent to Flow)",
+       "warn": ""
+      },
+      {
        "id": "_fL6usWF008",
        "src": "unsplash/_fL6usWF008.jpg",
-       "label": "Row of brick pillars with sunlight casting shadows · LISK OBE"
+       "label": "_fL6usWF008: Row of brick pillars with sunlight casting shadows (Unsplash, LISK OBE)",
+       "warn": ""
       },
       {
        "id": "j_-fLnrZr-s",
        "src": "unsplash/j_-fLnrZr-s.jpg",
-       "label": "A white armchair with a yellow pillow against a weathered in · tommao wang"
+       "label": "j_-fLnrZr-s: A white armchair with a yellow pillow against a weathered in (Unsplash, tommao wang)",
+       "warn": ""
       },
       {
        "id": "x1oqVgXJSXA",
        "src": "unsplash/x1oqVgXJSXA.jpg",
-       "label": "an empty room with large windows and wooden floors · Alex Kolundzija"
+       "label": "x1oqVgXJSXA: an empty room with large windows and wooden floors (Unsplash, Alex Kolundzija)",
+       "warn": ""
       },
       {
        "id": "rK3FKKFiuQI",
        "src": "unsplash/rK3FKKFiuQI.jpg",
-       "label": "Leather sofa in a library with tall bookshelves · Zhifei Zhou"
+       "label": "rK3FKKFiuQI: Leather sofa in a library with tall bookshelves (Unsplash, Zhifei Zhou)",
+       "warn": ""
       },
       {
        "id": "qYBMGzrYFJg",
        "src": "unsplash/qYBMGzrYFJg.jpg",
-       "label": "A red brick industrial building with green window frames and · Nathan Baessi"
+       "label": "qYBMGzrYFJg: A red brick industrial building with green window frames and (Unsplash, Nathan Baessi)",
+       "warn": ""
+      },
+      {
+       "id": "fupKD-E4GZ0",
+       "src": "unsplash/fupKD-E4GZ0.jpg",
+       "label": "fupKD-E4GZ0: brown wooden armchair beside white wall (Unsplash, Guglielmo Basile)",
+       "warn": ""
+      },
+      {
+       "id": "i62MqVZPpIY",
+       "src": "unsplash/i62MqVZPpIY.jpg",
+       "label": "i62MqVZPpIY: Two mid-century modern brown leather armchairs with black me (Unsplash, aurélie sgnl)",
+       "warn": ""
+      },
+      {
+       "id": "Qz9YyRAbGaI",
+       "src": "unsplash/Qz9YyRAbGaI.jpg",
+       "label": "Qz9YyRAbGaI: brown wooden armchair beside green plant (Unsplash, Aleksey Cherenkevich)",
+       "warn": ""
       }
-     ]
+     ],
+     "round": 2
     },
     {
-     "slot": "ref-3",
-     "title": "iron staircase warehouse loft",
-     "line": "Pick the photo whose look this scene should start from.",
+     "slot": "stairs",
+     "title": "The stairs the pitcher comes down",
+     "line": "Pick the Unsplash photo closest to the show (first tile). It becomes the layout Flow follows.",
      "kind": "image",
      "opts": [
       {
+       "id": "show",
+       "src": "show/set-iron-stairs.jpg",
+       "label": "THE SHOW (what to match; never sent to Flow)",
+       "warn": ""
+      },
+      {
        "id": "ECSP5pDeCI4",
        "src": "unsplash/ECSP5pDeCI4.jpg",
-       "label": "white and brown wooden staircase · Garin Chadwick"
+       "label": "ECSP5pDeCI4: white and brown wooden staircase (Unsplash, Garin Chadwick)",
+       "warn": ""
       },
       {
        "id": "iJuuCynzrdQ",
        "src": "unsplash/iJuuCynzrdQ.jpg",
-       "label": "a wooden staircase in a building · Maddison Reid"
+       "label": "iJuuCynzrdQ: a wooden staircase in a building (Unsplash, Maddison Reid)",
+       "warn": ""
       },
       {
        "id": "4rAkOR5qaFQ",
        "src": "unsplash/4rAkOR5qaFQ.jpg",
-       "label": "a group of people walking up a set of stairs · Ümit Yıldırım"
+       "label": "4rAkOR5qaFQ: a group of people walking up a set of stairs (Unsplash, Ümit Yıldırım)",
+       "warn": ""
       },
       {
        "id": "j2kVWD6eypc",
        "src": "unsplash/j2kVWD6eypc.jpg",
-       "label": "A staircase with windows casts striking shadows · Elizabeth Smirnova"
+       "label": "j2kVWD6eypc: A staircase with windows casts striking shadows (Unsplash, Elizabeth Smirnova)",
+       "warn": ""
       },
       {
        "id": "WGzdb6J-orI",
        "src": "unsplash/WGzdb6J-orI.jpg",
-       "label": "a staircase leading to a bed in a room · Komorebi Photo"
+       "label": "WGzdb6J-orI: a staircase leading to a bed in a room (Unsplash, Komorebi Photo)",
+       "warn": ""
+      },
+      {
+       "id": "nRAZa5S36JQ",
+       "src": "unsplash/nRAZa5S36JQ.jpg",
+       "label": "nRAZa5S36JQ: Dark staircase leading to a window at the top (Unsplash, Declan Sun)",
+       "warn": ""
+      },
+      {
+       "id": "ZhlMNCQZh0c",
+       "src": "unsplash/ZhlMNCQZh0c.jpg",
+       "label": "ZhlMNCQZh0c: Stairway leading to windows with bare trees outside (Unsplash, sadboytom)",
+       "warn": ""
+      },
+      {
+       "id": "1tYE9kdvEA0",
+       "src": "unsplash/1tYE9kdvEA0.jpg",
+       "label": "1tYE9kdvEA0: Outdoor staircase with brick wall and railing (Unsplash, Dmytro Yarish)",
+       "warn": ""
       }
-     ]
+     ],
+     "round": 2
     },
     {
-     "slot": "ref-4",
-     "title": "stacks of cash banknotes table",
-     "line": "Pick the photo whose look this scene should start from.",
+     "slot": "cog",
+     "title": "The big machine",
+     "line": "Pick the Unsplash photo closest to the show (first tile). It becomes the layout Flow follows.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "show",
+       "src": "show/set-cog-machine.jpg",
+       "label": "THE SHOW (what to match; never sent to Flow)",
+       "warn": ""
+      },
+      {
+       "id": "zA2T3gLa4yA",
+       "src": "unsplash/zA2T3gLa4yA.jpg",
+       "label": "zA2T3gLa4yA: Large rusted metal gears in a dark industrial brick building (Unsplash, Daniel Schiefner)",
+       "warn": ""
+      },
+      {
+       "id": "83Uszjs5LyM",
+       "src": "unsplash/83Uszjs5LyM.jpg",
+       "label": "83Uszjs5LyM: A vintage carousel horse and large wooden wheel against a ru (Unsplash, Jonathan Cosens Photography)",
+       "warn": ""
+      },
+      {
+       "id": "0QoR8X9J8Ps",
+       "src": "unsplash/0QoR8X9J8Ps.jpg",
+       "label": "0QoR8X9J8Ps: Historic brick interior with wooden walkway and windows (Unsplash, Alexandr Popadin)",
+       "warn": ""
+      },
+      {
+       "id": "HAyuP-Yjgf8",
+       "src": "unsplash/HAyuP-Yjgf8.jpg",
+       "label": "HAyuP-Yjgf8: A weathered brick wall with a plaque (Unsplash, Kouji Tsuru)",
+       "warn": ""
+      },
+      {
+       "id": "ombmNpq7orY",
+       "src": "unsplash/ombmNpq7orY.jpg",
+       "label": "ombmNpq7orY: Sunlit rustic studio with brick walls, arched windows (Unsplash, Emanuel Haas)",
+       "warn": ""
+      },
+      {
+       "id": "NkgmB5n4alo",
+       "src": "unsplash/NkgmB5n4alo.jpg",
+       "label": "NkgmB5n4alo: Industrial interior with metal stairs and machinery (Unsplash, Colin)",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "window",
+     "title": "The windows and the clock",
+     "line": "Pick the Unsplash photo closest to the show (first tile). It becomes the layout Flow follows.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "show",
+       "src": "show/set-window-clock.jpg",
+       "label": "THE SHOW (what to match; never sent to Flow)",
+       "warn": ""
+      },
+      {
+       "id": "vRuXImgD0jI",
+       "src": "unsplash/vRuXImgD0jI.jpg",
+       "label": "vRuXImgD0jI: Historic a. lange & söhne building with a large clock (Unsplash, Theodor Tietze)",
+       "warn": ""
+      },
+      {
+       "id": "ugyy1FwECgs",
+       "src": "unsplash/ugyy1FwECgs.jpg",
+       "label": "ugyy1FwECgs: A dilapidated window is set in a red brick wall (Unsplash, Alexandr Popadin)",
+       "warn": ""
+      },
+      {
+       "id": "6yVT_FymJ0Y",
+       "src": "unsplash/6yVT_FymJ0Y.jpg",
+       "label": "6yVT_FymJ0Y: Historic brick building with clock tower and windows (Unsplash, T)",
+       "warn": ""
+      },
+      {
+       "id": "hcfD5cJotNg",
+       "src": "unsplash/hcfD5cJotNg.jpg",
+       "label": "hcfD5cJotNg: black metal framed glass window (Unsplash, Naomi August)",
+       "warn": ""
+      },
+      {
+       "id": "Yiwkub6TxNY",
+       "src": "unsplash/Yiwkub6TxNY.jpg",
+       "label": "Yiwkub6TxNY: A broken window in a weathered brick wall (Unsplash, Alexandr Popadin)",
+       "warn": ""
+      },
+      {
+       "id": "hM3--DjCS7I",
+       "src": "unsplash/hM3--DjCS7I.jpg",
+       "label": "hM3--DjCS7I: a view of a building through a glass window (Unsplash, Martin Zenker)",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "cash",
+     "title": "The cash on the side tables",
+     "line": "Pick the Unsplash photo closest to the show (first tile). It becomes the layout Flow follows.",
      "kind": "image",
      "opts": [
       {
        "id": "WyxqQpyFNk8",
        "src": "unsplash/WyxqQpyFNk8.jpg",
-       "label": "close up of stacked hundred dollar bills · Giorgio Trovato"
+       "label": "WyxqQpyFNk8: close up of stacked hundred dollar bills (Unsplash, Giorgio Trovato)",
+       "warn": ""
       },
       {
        "id": "e-CrwdBNL7k",
        "src": "unsplash/e-CrwdBNL7k.jpg",
-       "label": "a stack of money sitting on top of a white table · Celyn Kang"
+       "label": "e-CrwdBNL7k: a stack of money sitting on top of a white table (Unsplash, Celyn Kang)",
+       "warn": ""
       },
       {
        "id": "mZZ0ls7X9tc",
        "src": "unsplash/mZZ0ls7X9tc.jpg",
-       "label": "100 us dollar bill · Nathan Dumlao"
+       "label": "mZZ0ls7X9tc: 100 us dollar bill (Unsplash, Nathan Dumlao)",
+       "warn": ""
       },
       {
        "id": "M7iMdnG4R_g",
        "src": "unsplash/M7iMdnG4R_g.jpg",
-       "label": "A spiraling stack of hundred dollar bills with crumpled bank · Igor Omilaev"
+       "label": "M7iMdnG4R_g: A spiraling stack of hundred dollar bills with crumpled bank (Unsplash, Igor Omilaev)",
+       "warn": ""
       },
       {
        "id": "flLIatOhneo",
        "src": "unsplash/flLIatOhneo.jpg",
-       "label": "A pile of foreign currency sitting on top of a wooden table · Karolina Bobek"
+       "label": "flLIatOhneo: A pile of foreign currency sitting on top of a wooden table (Unsplash, Karolina Bobek)",
+       "warn": ""
       }
-     ]
+     ],
+     "round": 2
     }
    ]
   }
