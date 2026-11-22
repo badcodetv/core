@@ -23,8 +23,13 @@ Unsplash pick is what Flow gets. The real photos may go to the sealed writer to 
 Status: EXPLORING (stills not made). Flow project: `c9bd669c-40b7-4009-b17c-24f38362ad89` ("Nov 22 - 16:03"). Stills Nano Banana 2.1, 9:16.
 
 ## Cast (all invented)
-- **BadCode**: one of the investors, in the balaclava (rules below). Mask cloth and suit: decided on the stills.
-- **The other investors** (two or three): invented faces; never a lookalike of any real panel member.
+- **The panel (LOCKED, Jack 2026-11-22)**, reference stills in the media folder's `cast/`:
+  - **Investor A** `INV-A-a`: early sixties, Black British, grey crop, half-moon glasses on a chain, burgundy skirt suit, gold bangle; oxblood armchair.
+  - **Investor B** `INV-B-b`: late forties, British Indian, neat beard, slicked hair greying, navy three-piece, pocket square; black bentwood armchair.
+  - **Investor C** `INV-C-b`: about seventy, white, bald with a white fringe, ruddy, mustard cardigan, checked shirt, knitted tie; brown leather armchair.
+  - **Investor D** `INV-D-a`: mid thirties, British Chinese, black bob with fringe, black polo-neck, silver rings, tablet; slim black armchair.
+  - **BadCode** `BADCODE-fix2-c`: navy ribbed balaclava, charcoal suit, white shirt, dark tie, black gloves; brown leather armchair. Its triangle points down but sits upper-centre (Jack picked it as is).
+  - All invented; never a lookalike of any real panel member. Round glass side tables on chrome frames with stacks of cash.
 - **The minister**: invented; never a real politician's likeness, name or party.
 - **The nurse**: invented; scrubs, a clipboard.
 
