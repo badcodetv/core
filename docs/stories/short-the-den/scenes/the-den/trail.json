@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/TqCfPD3aWvj7tw5hZgYjtL",
   "what": "Unsplash set references for the warehouse pitch-show set (4 rows x 5)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/refs-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-22T16:13:10+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg",
+  "what": "Investors casting: INV-A..D (2 each) and BadCode (2 brand-fix passes)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/stills-r1-picks.json <out.html>"
  }
 ]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "INV-A",
+    "ref": "set-chairs.jpg",
+    "prompt": "Vertical 9:16 medium shot, seated, three-quarter angle: a Black British woman in her early sixties sits in a worn oxblood leather armchair with a high back and wooden arms, her body turned slightly to frame left toward an unseen speaker. Close-cropped natural grey hair, gold-rimmed half-moon glasses on a thin chain resting low on her nose, a burgundy tailored skirt suit, a heavy gold bangle on one wrist. Her arms are folded tightly, one eyebrow raised, mouth flat: thoroughly unimpressed. Beside her at hip height, a small round glass-topped side table on a chrome tube frame holds two neat stacks of banknotes, soft and unreadable. Behind her, out of focus, a dark converted warehouse loft: brick walls, tall gridded factory windows glowing with cool daylight, scuffed wooden floorboards, a few warm lamps glowing low. A warm key light from the front side models her face against the dark room, a cool rim from the windows on her shoulder. Real photograph of a TV pitch show set, shallow depth of field, no text."
+  },
+  {
+    "id": "INV-B",
+    "ref": "set-chairs.jpg",
+    "prompt": "Vertical 9:16 medium shot, seated, three-quarter angle: a British Indian man in his late forties sits deep in a black leather armchair with angled bentwood arms and splayed wooden legs, turned slightly to frame left toward an unseen speaker. Neat short beard, black hair slicked back and greying at the temples, a navy three-piece suit with waistcoat buttoned and a folded pocket square. He leans back, elbows on the chair arms, fingertips pressed together in front of his chest, wearing a polite, cold smile that does not reach his eyes. At his side, a small round glass-topped table on a chrome tube frame carries neat stacks of banknotes, soft and unreadable. Behind him, out of focus, the dark warehouse loft: brick walls, tall gridded factory windows with cool daylight, wooden floorboards, warm practical lamps glowing in the gloom. Warm low-key light on his face, a cool edge of window light on his shoulder. Real photograph of a TV pitch show set, shallow depth of field, no text."
+  },
+  {
+    "id": "INV-C",
+    "ref": "set-chairs.jpg",
+    "prompt": "Vertical 9:16 medium shot, seated, three-quarter angle: a broad, heavy-set white man of about seventy fills a cracked dark brown leather armchair with a square back, turned slightly to frame left toward an unseen speaker. Bald on top with a fringe of white hair around the sides, ruddy cheeks, a mustard cardigan buttoned over a checked shirt and a knitted tie. He leans forward, big hands planted on his knees, eyes narrowed in a hard squint, jaw set, about to say something blunt. Beside him, a small round glass-topped side table on a chrome tube frame with neat stacks of banknotes, soft and unreadable. Behind him, out of focus, a dark converted warehouse loft: brick walls, tall gridded factory windows letting in cool daylight, worn wooden floorboards, warm lamps glowing low. Warm key light from the front side picks out his face and hands, a cool rim of window light behind him. Real photograph of a TV pitch show set, shallow depth of field, no text."
+  },
+  {
+    "id": "INV-D",
+    "ref": "set-chairs.jpg",
+    "prompt": "Vertical 9:16 medium shot, seated, three-quarter angle: a British Chinese woman in her mid thirties sits in a slim black leather armchair with pale wooden arms and splayed legs, turned slightly to frame left toward an unseen speaker. A sharp black bob with a dead-straight fringe, a black ribbed polo-neck, thin silver rings on several fingers. A slim dark tablet rests on her knee under one hand, its screen dark. Her head is tilted to one side, eyelids a little heavy, expression already bored. At her side, a small round glass-topped table on a chrome tube frame holds neat stacks of banknotes, soft and unreadable. Behind her, out of focus, the dark warehouse loft: brick walls, tall gridded factory windows glowing with cool daylight, wooden floorboards, warm practical lamps in the shadows. Low-key warm light on her face against the dark room, a cool window edge on her hair. Real photograph of a TV pitch show set, shallow depth of field, no text."
+  },
+  {
+    "id": "BADCODE",
+    "ref": "set-chairs.jpg+mask-reference.jpg",
+    "prompt": "Vertical 9:16 medium shot, seated, three-quarter angle: a figure sits perfectly upright and very still in a dark brown leather armchair with wooden arms, turned slightly to frame left toward an unseen speaker. The balaclava exactly as in the attached image: no holes, no skin, gloves. The balaclava is dark charcoal ribbed wool covering the whole head, with a large white rope-like ring circling the entire face and a single small red triangle inside the ring at its upper right, pointing down; the knit is tucked well down into the shirt collar. A charcoal suit, crisp white shirt and dark tie, black leather gloves with the shirt cuffs falling over the wrists, both hands resting flat on the chair arms. Beside the chair, a small round glass-topped table on a chrome tube frame holds neat stacks of banknotes, soft and unreadable. Behind, out of focus, a dark warehouse loft: brick walls, tall gridded factory windows with cool daylight, wooden floorboards, warm lamps glowing low. Real photograph of a TV pitch show set, low-key light, shallow depth of field, no text."
+  }
+]

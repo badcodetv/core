@@ -1,0 +1,126 @@
+{
+ "title": "The Den Investors",
+ "eyebrow": "The Den \u00b7 casting",
+ "heading": "The investors",
+ "intro": "Five investors in the den, all invented people (no lookalikes). Same room, same light, so they cut together. Pick one per investor; a note on any row gets a new round for that one.",
+ "sections": [
+  {
+   "h": "The panel",
+   "lede": "Set: your window-loft pick as the room; chairs and cash from the brief.",
+   "groups": [
+    {
+     "slot": "inv-a",
+     "title": "Investor A",
+     "line": "Early sixties, grey crop, half-moon glasses on a chain, burgundy suit. Unimpressed.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "INV-A-a",
+       "src": "r1/INV-A-a.jpg",
+       "label": "INV-A-a",
+       "warn": ""
+      },
+      {
+       "id": "INV-A-b",
+       "src": "r1/INV-A-b.jpg",
+       "label": "INV-A-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "inv-b",
+     "title": "Investor B",
+     "line": "Late forties, neat beard, navy three-piece. Fingertips together, cold smile.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "INV-B-a",
+       "src": "r1/INV-B-a.jpg",
+       "label": "INV-B-a",
+       "warn": ""
+      },
+      {
+       "id": "INV-B-b",
+       "src": "r1/INV-B-b.jpg",
+       "label": "INV-B-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "inv-c",
+     "title": "Investor C",
+     "line": "About seventy, bald, mustard cardigan, knitted tie. Leaning in, blunt.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "INV-C-a",
+       "src": "r1/INV-C-a.jpg",
+       "label": "INV-C-a",
+       "warn": ""
+      },
+      {
+       "id": "INV-C-b",
+       "src": "r1/INV-C-b.jpg",
+       "label": "INV-C-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "inv-d",
+     "title": "Investor D",
+     "line": "Mid thirties, black bob, polo-neck, tablet. Already bored.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "INV-D-a",
+       "src": "r1/INV-D-a.jpg",
+       "label": "INV-D-a",
+       "warn": ""
+      },
+      {
+       "id": "INV-D-b",
+       "src": "r1/INV-D-b.jpg",
+       "label": "INV-D-b",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "badcode",
+     "title": "BadCode",
+     "line": "In the balaclava. Two fix passes: the triangle now points down; placement is upper-centre, not quite 2 o'clock. d is closest.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BADCODE-fix2-d",
+       "src": "r1/BADCODE-fix2-d.jpg",
+       "label": "BADCODE-fix2-d",
+       "warn": ""
+      },
+      {
+       "id": "BADCODE-fix2-a",
+       "src": "r1/BADCODE-fix2-a.jpg",
+       "label": "BADCODE-fix2-a",
+       "warn": "triangle centred"
+      },
+      {
+       "id": "BADCODE-fix2-b",
+       "src": "r1/BADCODE-fix2-b.jpg",
+       "label": "BADCODE-fix2-b",
+       "warn": "triangle centred"
+      },
+      {
+       "id": "BADCODE-fix2-c",
+       "src": "r1/BADCODE-fix2-c.jpg",
+       "label": "BADCODE-fix2-c",
+       "warn": "triangle centred"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

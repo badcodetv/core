@@ -2,8 +2,16 @@
   "story": "short-the-den",
   "scene": "the-den",
   "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den",
-  "video": {"aspect": "9:16"},
-  "beats": ["The minister's pitch: two billion, scare them straight, a good feeling; everyone out",
-            "The nurse's pitch: one ward, the number that proves her wrong; BadCode in",
-            "End card: Scared Straight-type programmes increased offending (Cochrane, Campbell)"]
+  "video": {
+    "aspect": "9:16"
+  },
+  "beats": [
+    "The minister's pitch: two billion, scare them straight, a good feeling; everyone out",
+    "The nurse's pitch: one ward, the number that proves her wrong; BadCode in",
+    "End card: Scared Straight-type programmes increased offending (Cochrane, Campbell)"
+  ],
+  "flow_project": "c9bd669c-40b7-4009-b17c-24f38362ad89",
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg"
+  }
 }

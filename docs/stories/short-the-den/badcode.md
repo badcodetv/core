@@ -20,7 +20,7 @@ Reference (Jack, 2026-11-22: "use actaul dragons den images as reference images,
 the real set's empty photos (the set designer's portfolio, no people) in the media folder's `reference/show-set/`
 (private: never in git, never published, never given to Flow); each is matched with an Unsplash photo, and the
 Unsplash pick is what Flow gets. The real photos may go to the sealed writer to describe the layout.
-Status: EXPLORING (stills not made). Flow project: none yet.
+Status: EXPLORING (stills not made). Flow project: `c9bd669c-40b7-4009-b17c-24f38362ad89` ("Nov 22 - 16:03"). Stills Nano Banana 2.1, 9:16.
 
 ## Cast (all invented)
 - **BadCode**: one of the investors, in the balaclava (rules below). Mask cloth and suit: decided on the stills.
