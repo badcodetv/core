@@ -1,6 +1,6 @@
 # The Den: script
 
-Draft 1 (Claude, 2026-11-22; every line a draft for Jack and Kai to rewrite). About 22 s.
+Draft 1 (Claude, 2026-11-22), agreed by Jack ("go", 2026-11-22). About 22 s.
 
 | # | We see | Who | Line |
 | --- | --- | --- | --- |

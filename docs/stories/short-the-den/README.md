@@ -16,5 +16,6 @@ bet. No policy without its test.
 | Step | State |
 | --- | --- |
 | Set up (Drive `Shorts/The Den`, folder, repo) | done 2026-11-22 |
-| Script | draft 1, waiting for Jack |
-| Stills / clips / voices / cut | not started |
+| Script | draft 1 agreed (Jack: "go", 2026-11-22) |
+| Investors | locked (cast/) |
+| Pitch stills / clips / voices / cut | stills round 2 running |

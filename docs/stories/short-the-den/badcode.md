@@ -34,8 +34,12 @@ Status: EXPLORING (stills not made). Flow project: `c9bd669c-40b7-4009-b17c-24f3
 - **The nurse**: invented; scrubs, a clipboard.
 
 ## Sound
-Not decided: run story-style. Voices: every spoken line is an AI Studio voice, cast fresh with voice-casting
-(narrator, minister, nurse, BadCode, investors). Any Suno track is music and sound effects only, workspace `short-the-den`.
+Music: not decided (run story-style). Any Suno track is music and sound effects only, workspace `short-the-den`.
+Voices LOCKED (Jack, 2026-11-22, voices page https://claude.ai/artifact/FjVZTA2eaYAZtZJpmKf7oc): Google library voices,
+plain reads on `gemini-3.8-flash-tts`, no style. Narrator `en-gb-podcaster-2`; minister `en-gb-tutor-9`; nurse
+`en-gb-advisor-7`; BadCode `en-gb-podcaster-9`; Investor A `en-gb-tutor-5`; Investor C `en-gb-assistant-5`;
+Investor D `en-gb-assistant-6`. Line takes in the media folder's `audio/lines/` and `audio/casting/` (sound.md lists them).
+"I'm in." is hard for this voice (it says "Amen", "I mean"): transcribe every retake.
 
 ## Story-only rules
 - The script comes first; nothing is generated until Jack agrees it ([script.md](./script.md)). Lines are Claude's drafts until Jack or Kai rewrites them.
