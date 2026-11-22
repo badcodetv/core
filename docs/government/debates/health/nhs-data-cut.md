@@ -1,5 +1,15 @@
 # The NHS gets a cut (health/nhs-data-cut)
 
+## 2026-11-22 · PR #29
+
+**Opposition:** The higher NHS forecast now counts as money back when choosing the contract, but only the bidder's lower forecast is guaranteed. If the NHS overestimates earnings, a dearer contract can win on returns that never arrive. Yearly checks discover the loss after purchase. Compare prices using guaranteed payments, or explicitly allow for the uncertainty in returns.
+**Answer (Health Secretary):** Right. A forecast the NHS writes is a hope, not a payment, and a hope shouldn't win a contract. Conceded. The higher of the two forecasts is now the floor the bidder signs: it pays the cut on at least that, whatever it earns. Bids are compared on that guaranteed sum only, at the Green Book rate, so a low forecast can't shrink the cut and a high one can't win on money that never arrives. If nobody bids on those terms, that is already a reason to change course.
+**Outcome:** Conceded: the rule and judgement.change_mind, this commit (nothing standing; `against` and `answer` stay empty)
+
+**Statistician:** Passed: the cut is now valued at the bid on the higher of the NHS's own forecast, published before bids open, and the bidder's. If the NHS's forecast runs high, the yearly re-run on what was actually paid, two years running, is still there to catch it.
+**Answer (Health Secretary):** Thanks. Today's change keeps your fix and closes the gap you named: the higher forecast is now also the sum the bidder guarantees, so a high NHS forecast is paid for, not just counted.
+**Outcome:** Nothing standing
+
 ## 2026-11-21 · PR #29
 
 **Opposition:** No strong case against this revision: making the forecast a minimum payment means the NHS need not rely on earnings appearing as promised. A common valuation rule, the lower-fee option and yearly checks answer the objection about comparing a bill with an uncertain return.
