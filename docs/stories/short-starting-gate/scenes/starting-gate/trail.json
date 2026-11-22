@@ -55,5 +55,24 @@
   "url": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX",
   "what": "Rough cut 2 (35.8 s): ONEGATE re-shot (3 clips, ONEGATEe picked), photo-finish outro (scripts/shorts/gate_outro.py), both notes answered on the page",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-starting-gate/scenes/starting-gate <out-dir>"
+ },
+ {
+  "at": "2026-11-22T14:14:02+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "what": "Jack's notes on rough cut 2",
+  "decided": [
+   "Jack r2 at794 (outro): 'this is weird change it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro'"
+  ],
+  "feedback": "feedback/timeline-r2",
+  "feedback_docs": 3
+ },
+ {
+  "at": "2026-11-22T14:14:02+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX",
+  "what": "Rough cut 3 (39.4 s): photo finish dropped; BadCode outro clip OUTc (4 takes) dissolving into the logo",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-starting-gate/scenes/starting-gate <out-dir>"
  }
 ]

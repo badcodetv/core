@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-OUTa-BOX.mp4",
+ "made": "2026-11-22T14:11:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static camera inside the commentary booth. The race is over. The masked man in the tweed jacket slowly lowers the binoculars from his mask with his gloved hand and sets them down on the desk. He turns his head and shoulders until he faces straight into the camera, and holds there, perfectly still, looking at us, while the camera eases slowly closer until his mask fills the middle of the frame, its white ring square to us. Rain runs down the window behind him. Mask, gloves, shirt and tweed stay exactly as in the first frame. Sound: rain on glass, the crowd's roar fading away, no talking.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/BOX.jpg",
+ "why": "timeline r2 note at794 (Jack: 'this is weird change it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro'): the photo finish dropped for a simple BadCode clip ending on the logo; direct prompts, no new writer",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/BOX.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "OUTa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T14:10:14.414Z"
+ }
+}

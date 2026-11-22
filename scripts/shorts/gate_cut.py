@@ -19,9 +19,9 @@ MEDIA = pathlib.Path(cfg['media'])
 VID, CAST = MEDIA / 'video', MEDIA / 'audio/casting'
 VOICE = 'comm-b'  # Jack's pick, 2026-11-22
 LOGO = REPO / 'docs/brand/logo/badcode-stacked-reversed-2400.png'
-LIPS_PY = pathlib.Path.home() / '.cache/badcode-lips/venv/bin/python'
-OUTRO_LINE_Y = 0.445  # the finish line on the field's row in the one-gate shot's last frame (frame-height fraction)
-OUTRO_DUR = 4.45      # gate_outro.py T_END
+# Round 2's photo-finish outro (scripts/shorts/gate_outro.py) was dropped in round 3 (Jack r2 at794: "this is weird change
+# it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro").
+OUT_CLIP, OUT_IN, OUT_DUR = 'starting-gate-OUTc-BOX.mp4', 1.0, 5.5   # Claude's pick, round 3: the only take with the brand's mask (one triangle)
 W, H, FPS = 1080, 1920, 24
 CLAMP = 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)'
 ENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', '-color_range', 'tv',
@@ -43,7 +43,8 @@ SHOTS = [
     ('winners', '5. Houses home', 'starting-gate-WINNERSb-WINNERS.mp4', 0.0, 3.2, 0, [('03-home', 0.1)], 'HOUSES and its owners, champagne'),
     ('trot', '6. Wages is away', 'starting-gate-TROTb-TROT.mp4', 1.0, 5.3, 0, [], 'WAGES trots alone along the flooded course'),
     ('onegate', '7. One gate', 'starting-gate-ONEGATEe-ONEGATE.mp4', 0.0, 7.5, 2.3, [('04-onegate', 0.2)], 'Next race: everybody out at once'),
-    ('outro', '8. Photo finish', 'OUTRO', 0, OUTRO_DUR, 0, [], 'The field freezes level, a flash, a photo-finish print scans across ("PHOTOGRAPH"), dissolve to the logo'),
+    ('outro', '8. BadCode', OUT_CLIP, OUT_IN, OUT_DUR, 0, [], 'BadCode lowers the binoculars and turns to us; the camera eases in on the mask'),
+    ('logo', '9. The logo', None, 0, 2.6, 0, [], 'The mask dissolves into the logo card'),
 ]
 
 
@@ -59,24 +60,24 @@ def dur(p):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=1); a = ap.parse_args()
     cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
-    t, parts, vids, beats, vox, room, events, sfx = 0.0, [], [], [], [], [], [], []
+    t, parts, vids, beats, vox, room, events = 0.0, [], [], [], [], [], []
     for n, (bid, title, src, cin, sd, hold, lines, see) in enumerate(SHOTS):
         st = round(t, 3); fr = round(sd * FPS); sd = fr / FPS
         pf = cut / f'v{n:02d}-{bid}.mp4'
-        if src == 'OUTRO':
-            ff_out = cut / 'sfx-outro-piece.wav'
-            subprocess.run([str(LIPS_PY), str(REPO / 'scripts/shorts/gate_outro.py'), str(parts[-1]), str(pf), str(ff_out),
-                            '--line-y', str(OUTRO_LINE_Y)], check=True)
-            sfx.append((st, ff_out))
-            events.append({'stem': 'sfx-outro', 't': st, 'dur': sd, 'what': f'{title}: shutter click and the print\'s whirr (synthesised)', 'src': 'scripts/shorts/gate_outro.py'})
-        elif src:
+        if src:
             vf = VF + (f',tpad=start_mode=clone:start_duration={hold}' if hold else '') + f',tpad=stop_mode=clone:stop_duration=4,{CLAMP}'
             ff('-ss', cin, '-i', VID / src, '-vf', vf, '-frames:v', fr, '-an', *ENC, pf)
             room.append((st, VID / src, cin, sd, hold))
             events.append({'stem': 'amb-room', 't': st, 'dur': sd, 'what': f"{title}: the clip's own sound", 'src': src})
         else:
-            ff('-f', 'lavfi', '-i', f'color=black:s={W}x{H}:r={FPS}:d={sd}', '-loop', 1, '-i', LOGO, '-filter_complex',
-               f"[1]scale=640:-1,format=rgba,fade=t=in:st=0.2:d=0.5:alpha=1[l];[0][l]overlay=(W-w)/2:(H-h)/2:shortest=1,{CLAMP}",
+            # the last frame of the shot before fades to black as the logo fades in (a dissolve, not a hard cut)
+            lastpng = cut / f'v{n:02d}-from.png'
+            ff('-sseof', -0.05, '-i', parts[-1], '-frames:v', 1, '-update', 1, lastpng)
+            ff('-f', 'lavfi', '-i', f'color=black:s={W}x{H}:r={FPS}:d={sd}', '-loop', 1, '-r', FPS, '-i', lastpng, '-loop', 1, '-i', LOGO,
+               '-filter_complex',
+               f"[1]scale=in_range=limited:out_range=full,format=rgba,fade=t=out:st=0:d=0.6:alpha=1[p];"
+               f"[2]scale=640:-1,format=rgba,fade=t=in:st=0.3:d=0.6:alpha=1[l];"
+               f"[0][p]overlay=0:0:shortest=1[b];[b][l]overlay=(W-w)/2:(H-h)/2:shortest=1,{CLAMP}",
                '-frames:v', fr, *ENC, pf)
         ls = []
         for k, at in lines:
@@ -104,13 +105,10 @@ def main():
                   f'afade=t=out:st={max(0, ilen - hold - 0.15)}:d=0.15,atrim=end={max(0.2, ilen - hold)},volume=-12dB,adelay={d0}|{d0}[f{k}]')
     fl.append(f"{''.join(f'[f{k}]' for k in range(len(room)))}amix=inputs={len(room)}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]")
     ff(*ins, '-filter_complex', ';'.join(fl), '-map', '[o]', '-ar', 48000, cut / 'amb-room.wav')
-    (at, w), = sfx
-    ff('-i', w, '-af', f'adelay={int(at * 1000)}|{int(at * 1000)},apad=whole_dur={total},atrim=end={total}', '-ar', 48000, cut / 'sfx-outro.wav')
     audio = [{'track': 'A1', 'name': 'vox-badcode', 'file': str(cut / 'vox-badcode.wav')},
-             {'track': 'A2', 'name': 'amb-room', 'file': str(cut / 'amb-room.wav')},
-             {'track': 'A3', 'name': 'sfx-outro', 'file': str(cut / 'sfx-outro.wav')}]
-    ff('-i', audio[0]['file'], '-i', audio[1]['file'], '-i', audio[2]['file'], '-filter_complex',
-       '[0][1][2]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5,alimiter=limit=0.84:level=0[o]', '-map', '[o]', '-ar', 48000, '-ac', 2, cut / 'mix.wav')
+             {'track': 'A2', 'name': 'amb-room', 'file': str(cut / 'amb-room.wav')}]
+    ff('-i', audio[0]['file'], '-i', audio[1]['file'], '-filter_complex',
+       '[0][1]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5,alimiter=limit=0.84:level=0[o]', '-map', '[o]', '-ar', 48000, '-ac', 2, cut / 'mix.wav')
     ff('-i', cut / 'picture.mp4', '-i', cut / 'mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-t', total, cut / 'preview.mp4')
     edl = {'sequence': f'short-starting-gate-1-starting-gate-r{a.round}', 'title': 'Starting Gate Timeline',
            'heading': f'BadCode Shorts ▲ The Starting Gate, rough cut {a.round}',
@@ -119,7 +117,7 @@ def main():
            'flags': ['No music yet. Room sound is the clips\' own (no speech in any picked clip).',
                      'The commentary runs at its natural pace: about 34 s against the script\'s 17. Trim notes welcome (which pauses, which lines).',
                      'The way out (one gate) is Claude\'s: no BadCode government policy on record.',
-                     'Outro: a photo finish (Claude\'s idea for Jack\'s r1 note "do a cool horse badcode outro"); the header word is the racecourse call, no joke line added.']}
+                     'Outro: BadCode in the box turns to us, the mask dissolves into the logo (round 3, Jack r2 at794).']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4')}))
 

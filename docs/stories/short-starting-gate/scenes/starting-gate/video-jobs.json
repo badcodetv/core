@@ -118,6 +118,34 @@
    "still": "ONEGATE",
    "motion": "Fixed high camera looking straight down the course, no camera movement. The horses stand side by side in one row inside a long grey starting stall that reaches from the inside rail to the outside rail. A beat of stillness, heads bobbing, then the whole row of front doors bursts open at once and every horse leaves together; the steel stall stays exactly where it is, empty, as the field pulls away from it. The horses keep one even line across the full width of the track, every cap level, galloping away from us between the white rails into the fog. Sound: a single metal crash, a wave of hooves on soft ground, rain, a far-off crowd roar, no talking. Real-looking footage of an English racecourse on a grey, wet day.",
    "why": "timeline r1 note at728 (Jack: 'ai slop the horse teleported'): ONEGATEa leaves a ghost row at the gate, ONEGATEb's stall vanishes; direct prompt fix, no new writer"
+  },
+  {
+   "key": "OUTa",
+   "n": 1,
+   "still": "BOX",
+   "motion": "Static camera inside the commentary booth. The race is over. The masked man in the tweed jacket slowly lowers the binoculars from his mask with his gloved hand and sets them down on the desk. He turns his head and shoulders until he faces straight into the camera, and holds there, perfectly still, looking at us, while the camera eases slowly closer until his mask fills the middle of the frame, its white ring square to us. Rain runs down the window behind him. Mask, gloves, shirt and tweed stay exactly as in the first frame. Sound: rain on glass, the crowd's roar fading away, no talking.",
+   "why": "timeline r2 note at794 (Jack: 'this is weird change it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro'): the photo finish dropped for a simple BadCode clip ending on the logo; direct prompts, no new writer"
+  },
+  {
+   "key": "OUTb",
+   "n": 1,
+   "still": "BOX",
+   "motion": "Static camera inside the commentary booth. The race is over. The masked man in the tweed jacket slowly lowers the binoculars from his mask with his gloved hand and sets them down on the desk. He turns his head and shoulders until he faces straight into the camera, and holds there, perfectly still, looking at us, while the camera eases slowly closer until his mask fills the middle of the frame, its white ring square to us. Rain runs down the window behind him. Mask, gloves, shirt and tweed stay exactly as in the first frame. Sound: rain on glass, the crowd's roar fading away, no talking.",
+   "why": "timeline r2 note at794 (Jack: 'this is weird change it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro'): the photo finish dropped for a simple BadCode clip ending on the logo; direct prompts, no new writer"
+  },
+  {
+   "key": "OUTc",
+   "n": 1,
+   "still": "BOX",
+   "motion": "Inside the wet commentary box, after the finish. The commentator in the tweed mask brings the binoculars down from his face and lays them beside the microphone. Unhurried, he swivels on his stool to look directly down the lens, then gives one small, slow nod and stays still. The camera creeps in toward him the whole time, ending on a close shot of the mask, the white ring facing us head-on. His gloves, tie and tweed jacket are unchanged from the first frame; droplets slide down the glass behind. Sound: soft rain, a distant crowd settling, a chair creak, no talking.",
+   "why": "timeline r2 note at794 (Jack: 'this is weird change it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro'): the photo finish dropped for a simple BadCode clip ending on the logo; direct prompts, no new writer"
+  },
+  {
+   "key": "OUTd",
+   "n": 1,
+   "still": "BOX",
+   "motion": "Inside the wet commentary box, after the finish. The commentator in the tweed mask brings the binoculars down from his face and lays them beside the microphone. Unhurried, he swivels on his stool to look directly down the lens, then gives one small, slow nod and stays still. The camera creeps in toward him the whole time, ending on a close shot of the mask, the white ring facing us head-on. His gloves, tie and tweed jacket are unchanged from the first frame; droplets slide down the glass behind. Sound: soft rain, a distant crowd settling, a chair creak, no talking.",
+   "why": "timeline r2 note at794 (Jack: 'this is weird change it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro'): the photo finish dropped for a simple BadCode clip ending on the logo; direct prompts, no new writer"
   }
  ]
 }

@@ -1,26 +1,26 @@
 {
- "round": 2,
+ "round": 3,
  "plan": [
   {
-   "h": "Rough cut 2: both notes answered",
+   "h": "Rough cut 3: the outro is a simple clip",
    "items": [
-    "One gate re-shot: 3 new clips; ONEGATEe picked (the field leaves as one row, the stall stays put, nothing jumps).",
-    "New outro, a photo finish: the field freezes level, flash, a judges' print scans across, then into the logo.",
-    "Now 35.8 s (the outro is 2 s longer than the old card)."
+    "Photo finish dropped. BadCode in the box lowers his binoculars, turns to us, the camera eases in on the mask, then it dissolves into the logo.",
+    "4 takes made; OUTc is the only one with the right mask (one red triangle). The others grew two triangles or lost it.",
+    "Now 39.4 s."
    ]
   },
   {
    "h": "You decide",
    "items": [
     "Trim toward ~17 s: which pauses or lines go?",
-    "A stamp on the print (e.g. \"DEAD HEAT\": everyone finishes together)? Your words if so.",
     "Music: a Suno round on your credits?"
    ]
   }
  ],
  "replies": {
   "at728": "Fixed: ONEGATEa left a ghost row at the gate while the field ran (the \"teleport\"). Re-shot 3 takes with the stall kept standing; ONEGATEe has the whole field leave level and nothing jumps. The other two (c, d) are on the clips page. Picture only, no new words.",
-  "at788": "Done: a photo finish. The field freezes level on the line, a camera flash and shutter click, a black-and-white judges' print scans across left to right with a timing ruler and a finish line on the hooves, header \"PHOTOGRAPH\" (the call a UK course makes), then it dissolves into the logo. Sound synthesised, no outside clips. Want a stamp on it like \"DEAD HEAT\"? Your words."
+  "at788": "Done: a photo finish. The field freezes level on the line, a camera flash and shutter click, a black-and-white judges' print scans across left to right with a timing ruler and a finish line on the hooves, header \"PHOTOGRAPH\" (the call a UK course makes), then it dissolves into the logo. Sound synthesised, no outside clips. Want a stamp on it like \"DEAD HEAT\"? Your words. Round 3: replaced by the BadCode clip (see at794).",
+  "at794": "Changed: the photo finish is gone. Now a simple clip: BadCode in the commentary box lowers his binoculars, turns to camera, the camera eases in on the tweed mask, and the mask dissolves into the BadCode logo. Made 4 takes; OUTc picked, the only one with the brand mask (one red triangle; two takes grew a triangle on each eye). New material: 4 Flow clips."
  },
  "jack_round1": [
   {
@@ -38,6 +38,32 @@
    "key": "at788",
    "note": "do a cool horse badcode outro thanks",
    "tc": "00:00:32:20"
+  }
+ ],
+ "jack_round2": [
+  {
+   "at": 1795353811847,
+   "beat": "onegate",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at728",
+   "note": "ai slop the horse teleported thanks",
+   "tc": "00:00:30:08"
+  },
+  {
+   "at": 1795353824829,
+   "beat": "logo",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at788",
+   "note": "do a cool horse badcode outro thanks",
+   "tc": "00:00:32:20"
+  },
+  {
+   "at": 1795356517782,
+   "beat": "outro",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at794",
+   "note": "this is weird change it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro thanks\n",
+   "tc": "00:00:33:02"
   }
  ]
 }
