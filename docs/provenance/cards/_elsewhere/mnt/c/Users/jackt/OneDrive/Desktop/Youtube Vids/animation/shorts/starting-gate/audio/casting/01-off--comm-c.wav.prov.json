@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/audio/casting/01-off--comm-c.wav",
+ "made": "2026-11-22T12:14:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "New money's been printed, <short pause> the gates are open... <short pause> and they're off!",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_gkh4x3mulzd0",
+  "style": "calm, quick, lifting on the off",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

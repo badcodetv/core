@@ -1,33 +1,44 @@
 {
- "story": "short-starting-gate",
- "scene": "starting-gate",
- "title": "The Starting Gate",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate",
- "beats": [
-  {
-   "id": "gate",
-   "t": "0-3",
-   "what": "Three horses in the stalls: SHARES, HOUSES, WAGES; BadCode in the commentary box. 'And they're off!'"
+  "story": "short-starting-gate",
+  "scene": "starting-gate",
+  "title": "The Starting Gate",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate",
+  "beats": [
+    {
+      "id": "gate",
+      "t": "0-3",
+      "what": "Three horses in the stalls: SHARES, HOUSES, WAGES; BadCode in the commentary box. 'And they're off!'"
+    },
+    {
+      "id": "break",
+      "t": "3-8",
+      "what": "SHARES and HOUSES burst out; the WAGES stall stays shut, the horse chewing hay"
+    },
+    {
+      "id": "wait",
+      "t": "8-13",
+      "what": "Time passes over the stall; HOUSES home; WAGES finally trots out: eleven years and nine months"
+    },
+    {
+      "id": "way-out",
+      "t": "13-17",
+      "what": "Next race: one gate across the whole track, everybody out at once; logo"
+    }
+  ],
+  "video": {
+    "aspect": "9:16",
+    "model": "Omni 1.2 Flash",
+    "mode": "Frames",
+    "duration": 8
   },
-  {
-   "id": "break",
-   "t": "3-8",
-   "what": "SHARES and HOUSES burst out; the WAGES stall stays shut, the horse chewing hay"
+  "flow_project": "c1e0c728-9d37-442a-a858-915e0be94176",
+  "stills": "https://claude.ai/artifact/F8iA9UCLU774eYU5VeyokZ",
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r1/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r1/preview.mp4",
+    "script": "python3 scripts/shorts/gate_cut.py --round 1"
   },
-  {
-   "id": "wait",
-   "t": "8-13",
-   "what": "Time passes over the stall; HOUSES home; WAGES finally trots out: eleven years and nine months"
-  },
-  {
-   "id": "way-out",
-   "t": "13-17",
-   "what": "Next race: one gate across the whole track, everybody out at once; logo"
+  "boards": {
+    "timeline": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX"
   }
- ],
- "video": {
-  "aspect": "9:16"
- },
- "flow_project": "c1e0c728-9d37-442a-a858-915e0be94176",
- "stills": "https://claude.ai/artifact/F8iA9UCLU774eYU5VeyokZ"
 }

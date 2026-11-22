@@ -1,0 +1,154 @@
+{
+ "title": "Starting Gate Clips",
+ "eyebrow": "BadCode Shorts · The Starting Gate · clips round 1",
+ "heading": "The Starting Gate: clips",
+ "intro": "Two takes per shot, my pick first and in the cut. Overrule with Pick; a note on any clip is the next round.",
+ "sections": [
+  {
+   "h": "Every clip",
+   "lede": "Checked frame by frame; no speech in any picked clip.",
+   "groups": [
+    {
+     "slot": "BOX",
+     "title": "1. The commentator",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "BOXa",
+       "src": "c/starting-gate-BOXa-BOX.mp4",
+       "label": "a: mask steady (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "BOXb",
+       "src": "c/starting-gate-BOXb-BOX.mp4",
+       "label": "b: the triangle grows and drifts: off-brand",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "GATE",
+     "title": "2. And they're off",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "GATEa",
+       "src": "c/starting-gate-GATEa-GATE.mp4",
+       "label": "a: SHARES and HOUSES go, WAGES stays (my pick); extra horses appear as the gates widen",
+       "warn": ""
+      },
+      {
+       "id": "GATEb",
+       "src": "c/starting-gate-GATEb-GATE.mp4",
+       "label": "b: WAGES leaves with the others: wrong for the story",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BREAK",
+     "title": "3. The break",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "BREAKb",
+       "src": "c/starting-gate-BREAKb-BREAK.mp4",
+       "label": "b: they thunder past, ending on WAGES alone (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "BREAKa",
+       "src": "c/starting-gate-BREAKa-BREAK.mp4",
+       "label": "a: camera backs away with them",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "STALL",
+     "title": "4. Wages in the stall",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "STALLa",
+       "src": "c/starting-gate-STALLa-STALL.mp4",
+       "label": "a: sky turns over, deadpan (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "STALLb",
+       "src": "c/starting-gate-STALLb-STALL.mp4",
+       "label": "b: push-in through the bars",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "WINNERS",
+     "title": "5. Houses home",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "WINNERSb",
+       "src": "c/starting-gate-WINNERSb-WINNERS.mp4",
+       "label": "b: champagne arcs over the group (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "WINNERSa",
+       "src": "c/starting-gate-WINNERSa-WINNERS.mp4",
+       "label": "a: glasses up, less happens",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "TROT",
+     "title": "6. Wages is away",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "TROTb",
+       "src": "c/starting-gate-TROTb-TROT.mp4",
+       "label": "b: camera pans with him (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "TROTa",
+       "src": "c/starting-gate-TROTa-TROT.mp4",
+       "label": "a: its sound has stray speech (\"Thank you very much\")",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "ONEGATE",
+     "title": "7. One gate",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "ONEGATEa",
+       "src": "c/starting-gate-ONEGATEa-ONEGATE.mp4",
+       "label": "a: the whole field goes off level (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "ONEGATEb",
+       "src": "c/starting-gate-ONEGATEb-ONEGATE.mp4",
+       "label": "b: barely moves",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

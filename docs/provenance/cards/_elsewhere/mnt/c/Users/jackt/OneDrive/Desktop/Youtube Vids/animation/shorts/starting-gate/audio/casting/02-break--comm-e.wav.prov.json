@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/audio/casting/02-break--comm-e.wav",
+ "made": "2026-11-22T12:14:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Shares flies out! Houses right on its tail! <short pause> And Wages... <long pause> Wages hasn't left the stalls.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_i3o84zngn08j",
+  "style": "rising fast, then stalling flat",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

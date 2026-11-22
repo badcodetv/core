@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-GATEb-GATE.mp4",
+ "made": "2026-11-22T12:21:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera stays square to the stalls and creeps very slowly closer through the drizzle, building tension. The horses stand tight: bridles jingle, a jockey's gloved hand tightens on the reins, breath steams from the grey's nostrils. At about three seconds the three front gates fly open together with a loud spring-loaded crash and swing toward the lens. The two horses on the left and centre burst forward at once, flinging up wet grass; the chestnut on the right simply watches them go. Sound: rain patter, creak of steel, the crash of the gates, a rush of hooves, no talking. Real-looking footage of an English racecourse on a grey, wet day. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/GATE.jpg",
+ "why": "clips round 1 (sealed writer, cleanroom/anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/GATE.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "GATEb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T12:20:46.737Z"
+ }
+}

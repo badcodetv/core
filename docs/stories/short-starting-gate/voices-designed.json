@@ -1,0 +1,27 @@
+{
+ "comm-a": {
+  "id": "voice_2616mwlxu2xw",
+  "role": "commentator",
+  "desc": "A man in his mid-fifties from Lambourn in Berkshire, with an educated southern English accent. His voice is clear and medium-low, crisp at the consonants, and carries well over distance."
+ },
+ "comm-b": {
+  "id": "voice_ih3z7r9gfkkb",
+  "role": "commentator",
+  "desc": "A man in his early sixties from Malton in North Yorkshire, with a light Yorkshire accent. His baritone is warm and full, with a slight grain at the edges."
+ },
+ "comm-c": {
+  "id": "voice_gkh4x3mulzd0",
+  "role": "commentator",
+  "desc": "A man in his late sixties from Newmarket in Suffolk, with a refined older English accent. His voice is light and dry, slightly reedy, and very precise."
+ },
+ "comm-d": {
+  "id": "voice_hpizbj5w8fz7",
+  "role": "commentator",
+  "desc": "A man in his early forties from Liverpool, with a softened Merseyside accent. His tenor is bright, quick and forward."
+ },
+ "comm-e": {
+  "id": "voice_i3o84zngn08j",
+  "role": "commentator",
+  "desc": "A man in his late forties from Ayr on the west coast of Scotland, with a clear Ayrshire accent. His voice is mid-range, firm and evenly paced, with rounded vowels."
+ }
+}

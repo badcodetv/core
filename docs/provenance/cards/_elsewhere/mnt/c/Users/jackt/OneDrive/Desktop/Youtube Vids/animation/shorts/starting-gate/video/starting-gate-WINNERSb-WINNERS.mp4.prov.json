@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-WINNERSb-WINNERS.mp4",
+ "made": "2026-11-22T12:22:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera drifts slowly backward and slightly up, revealing more of the jostling celebration around the grey winner. The man in the camel coat shakes the bottle hard and a jet of champagne arcs across the group, catching the light; the older man throws his head back laughing, soaked. Glasses are raised high and clinked, the woman pats the grey's neck, the red and blue rosette bobs, and the HOUSES rug stays readable. Umbrellas and arms wave in the stands behind. Sound: a crowd roar, laughter, applause, pops and fizzing, rain, no talking. Real-looking footage of an English racecourse on a grey, wet day. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/WINNERS.jpg",
+ "why": "clips round 1 (sealed writer, cleanroom/anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/WINNERS.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "WINNERSb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T12:21:25.188Z"
+ }
+}

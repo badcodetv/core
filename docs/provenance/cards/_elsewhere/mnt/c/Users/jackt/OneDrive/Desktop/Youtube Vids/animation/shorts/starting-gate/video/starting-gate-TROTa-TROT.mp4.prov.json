@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-TROTa-TROT.mp4",
+ "made": "2026-11-22T12:19:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Wide static shot. The chestnut WAGES, rider aboard, trots steadily from left to right through the shallow floodwater on the empty course, each hoof splashing up small fans of water, its reflection rippling below. Heavy rain sweeps across in grey curtains in front of the deserted grandstand; the old stalls sit abandoned in the grass behind. The horse never hurries, just keeps an even, patient trot toward the right edge of frame. Sound: hard rain, sloshing hooves, wind, a creak of tack, no talking. Real-looking footage of an English racecourse on a grey, wet day. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/TROT.jpg",
+ "why": "clips round 1 (sealed writer, cleanroom/anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/TROT.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "TROTa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T12:17:56.303Z"
+ }
+}

@@ -8,7 +8,7 @@
 A BadCode short (9:16, aim ~17 s): a horse race where new money is the starting gun. SHARES and HOUSES fly out of the
 stalls; WAGES doesn't leave its stall for eleven years and nine months. BadCode, in the mask, commentates. The point: when
 new money is made, it lifts what people own first and what people earn last. The way out: the next race has one gate, and
-everybody goes at once. State: script draft 1 ([script.md](./script.md)); stills round 1 on https://claude.ai/artifact/F8iA9UCLU774eYU5VeyokZ.
+everybody goes at once. State: rough cut 1 (33.7 s) on https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX; clips https://claude.ai/artifact/9ARwdm6AFEXxd9iwjowGsd; stills https://claude.ai/artifact/F8iA9UCLU774eYU5VeyokZ.
 
 ## Look
 Jack, 2026-11-22: "use unsplash". Real-looking photographs of an English racecourse on a grey, wet day: starting stalls,
@@ -17,7 +17,7 @@ reference; the prompt only says what changes. Status: EXPLORING (no references p
 Flow project: `c1e0c728-9d37-442a-a858-915e0be94176` ("Nov 22 - 11:36"). Stills Nano Banana 2.1, 9:16. BadCode stills attach `docs/brand/balaclava/mask-reference.jpg` with the brand's one line.
 
 ## Sound
-Not decided — run story-style. Every spoken line is an AI Studio voice (cast fresh with voice-casting; English, with a
+Music: not decided — run story-style. Voice: LOCKED, comm-b (Jack, 2026-11-22): "A man in his early sixties from Malton in North Yorkshire…", `voice_ih3z7r9gfkkb`, per-line styles (page https://claude.ai/artifact/CfsbNwaWAwxA5We9Ukxikz; designs in `voices-designed.json`, lines and per-line styles in `scenes/starting-gate/cleanroom/voice-r1.json`). Every spoken line is an AI Studio voice (cast fresh with voice-casting; English, with a
 named region, never just "British"). Any Suno track is music and sound only.
 
 ## Cast

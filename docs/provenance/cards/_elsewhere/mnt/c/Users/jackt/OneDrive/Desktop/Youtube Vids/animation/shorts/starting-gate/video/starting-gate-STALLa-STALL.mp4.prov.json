@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-STALLa-STALL.mp4",
+ "made": "2026-11-22T12:17:56+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera facing the chestnut WAGES behind its shut barred gate. The horse chews a mouthful of hay slowly and contentedly, wisps waggling, ears soft, completely unhurried. As it keeps chewing, time passes like a time-lapse: grey clouds race overhead, the daylight dims to blue dusk, the empty grandstand fades into dark, then pale dawn light returns, rain comes and goes on the steel bars, and the hay pile in front shrinks. The horse stays in the same spot the whole time, still chewing. Sound: steady munching, rain on metal, wind, a lone bird at dawn, no talking. Real-looking footage of an English racecourse on a grey, wet day. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/STALL.jpg",
+ "why": "clips round 1 (sealed writer, cleanroom/anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/STALL.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "STALLa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T12:16:40.266Z"
+ }
+}

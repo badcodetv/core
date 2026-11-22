@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/audio/casting/04-onegate--comm-c.wav",
+ "made": "2026-11-22T12:14:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Next race. <short pause> One gate. <short pause> Everybody out at once.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_gkh4x3mulzd0",
+  "style": "flat, level, unhurried",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

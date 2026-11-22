@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/audio/casting/03-home--comm-a.wav",
+ "made": "2026-11-22T12:14:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Houses home in seven years! <long pause> And Wages is away! <short pause> Eleven years... <short pause> and nine months.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_2616mwlxu2xw",
+  "style": "full-voiced finish, then winding down",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

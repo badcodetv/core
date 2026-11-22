@@ -1,0 +1,57 @@
+{
+  "research": "1. Callers say the core skill is matching the pace of your delivery to the pace of the race: unhurried while they load and jump, quicker as the field strings out, fastest in the final furlong (https://www.greatbritishracing.com/features/painting-the-picture-racehorse-commentary/).\n2. Clear diction and accuracy matter more than colour. Every name is said cleanly and in full, usually leading off a short phrase ('X leads, Y on the rail'), then the call moves straight on (same source).\n3. The start is a quick, level list of runners in order as they break. Pitch and volume climb step by step through the race, and the big rise is saved for the run to the line (https://www.racingpost.com/news/features/series/one-of-the-best-in-the-business-spending-the-day-with-commentator-simon-holt-acrtK9w2UFqr/).\n4. Big-race finishes are fast and clipped, with short stacked phrases, a full-voiced call of the winner and a short verdict line after the post (https://www.racingpost.com/news/what-a-battle-simon-holt-on-the-commentary-that-matched-an-epic-king-george-aZRNy4g6QwC9/).\n5. Sounding real versus parody: the real thing is crisp and controlled even at the climax and drops back to a level voice once the line is passed. Parodies shout from the off, lean on stock phrases and sound frantic late on (https://www.racingpost.com/sport/opinion/bruce-millington/swap-silly-sayings-for-stopwatches-to-boost-racing-drama-aYcKb8V8zLxw/).\n6. Professional calm is part of the job. Callers hold their composure on air even when they have a personal interest in the race (https://www.racingpost.com/news/keeping-your-cool-racing-commentators-on-the-battle-to-stay-impartial-aP8Gc9h0ioFj).\n7. British callers come from a mix of regions, and imported accents have been accepted at the top level, so a regional voice is plausible as long as the diction is clear (https://en.wikipedia.org/wiki/Race_caller).",
+  "designs": [
+    {
+      "name": "comm-a",
+      "desc": "A man in his mid-fifties from Lambourn in Berkshire, with an educated southern English accent. His voice is clear and medium-low, crisp at the consonants, and carries well over distance.",
+      "why": "Closest to the standard sound of a British TV race caller. A clean, carrying mid-low voice has room to climb at the finish without going shrill, so the build in lines 1-3 and the deadpan of line 4 both land.",
+      "rank": 1
+    },
+    {
+      "name": "comm-b",
+      "desc": "A man in his early sixties from Malton in North Yorkshire, with a light Yorkshire accent. His baritone is warm and full, with a slight grain at the edges.",
+      "why": "Northern racing-country voice with weight. The grainy baritone gives the 'Houses home' call real chest, and the Yorkshire flatness suits the dry final line.",
+      "rank": 2
+    },
+    {
+      "name": "comm-c",
+      "desc": "A man in his late sixties from Newmarket in Suffolk, with a refined older English accent. His voice is light and dry, slightly reedy, and very precise.",
+      "why": "Old-school course commentator. The thin, precise voice gets high and urgent at the climax and turns bone-dry for 'Next race', which may suit the satire best.",
+      "rank": 3
+    },
+    {
+      "name": "comm-d",
+      "desc": "A man in his early forties from Liverpool, with a softened Merseyside accent. His tenor is bright, quick and forward.",
+      "why": "Younger radio-style caller. The bright tenor is naturally quick off the mark at the start and in the break, though the climax could be lighter than the others'.",
+      "rank": 4
+    },
+    {
+      "name": "comm-e",
+      "desc": "A man in his late forties from Ayr on the west coast of Scotland, with a clear Ayrshire accent. His voice is mid-range, firm and evenly paced, with rounded vowels.",
+      "why": "A distinct option from a real racing town. The firm, even voice keeps names clear, but the accent pulls a little away from the English-afternoon setting, so it ranks last.",
+      "rank": 5
+    }
+  ],
+  "lines": [
+    {
+      "key": "01-off",
+      "text": "New money's been printed, <short pause> the gates are open... <short pause> and they're off!",
+      "style": "calm, quick, lifting on the off"
+    },
+    {
+      "key": "02-break",
+      "text": "Shares flies out! Houses right on its tail! <short pause> And Wages... <long pause> Wages hasn't left the stalls.",
+      "style": "rising fast, then stalling flat"
+    },
+    {
+      "key": "03-home",
+      "text": "Houses home in seven years! <long pause> And Wages is away! <short pause> Eleven years... <short pause> and nine months.",
+      "style": "full-voiced finish, then winding down"
+    },
+    {
+      "key": "04-onegate",
+      "text": "Next race. <short pause> One gate. <short pause> Everybody out at once.",
+      "style": "flat, level, unhurried"
+    }
+  ]
+}

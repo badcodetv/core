@@ -1,0 +1,52 @@
+{
+ "title": "Starting Gate Voices",
+ "eyebrow": "BadCode Shorts · The Starting Gate · voices round 1",
+ "heading": "The Starting Gate: the commentator",
+ "intro": "Five race callers designed in Google AI Studio from a sealed writer's research on real British race calling (crisp and controlled, building to the finish; never shouting from the start). Each plays the whole call, all four lines. My pick is a, from the writer's ranking: I can't hear them, so overrule it.",
+ "sections": [
+  {
+   "h": "Pick the commentator",
+   "lede": "Every take checked word by word.",
+   "groups": [
+    {
+     "slot": "commentator",
+     "title": "BadCode, the race caller",
+     "line": "New money's been printed, the gates are open... and they're off! / Shares flies out! Houses right on its tail! And Wages... Wages hasn't left the stalls. / Houses home in seven years! And Wages is away! Eleven years... and nine months. / Next race. One gate. Everybody out at once.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "comm-a",
+       "src": "v/call--comm-a.mp3",
+       "label": "a: Lambourn, Berkshire, mid-fifties, crisp (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "comm-b",
+       "src": "v/call--comm-b.mp3",
+       "label": "b: Malton, North Yorkshire, early sixties, warm baritone",
+       "warn": "Line 3: Whisper hears \"The house is home\" on the best of three takes: check the start by ear"
+      },
+      {
+       "id": "comm-c",
+       "src": "v/call--comm-c.mp3",
+       "label": "c: Newmarket, Suffolk, late sixties, dry and precise",
+       "warn": ""
+      },
+      {
+       "id": "comm-d",
+       "src": "v/call--comm-d.mp3",
+       "label": "d: Liverpool, early forties, bright and quick",
+       "warn": ""
+      },
+      {
+       "id": "comm-e",
+       "src": "v/call--comm-e.mp3",
+       "label": "e: Ayr, Scotland, late forties, firm and even",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-BREAKb-BREAK.mp4",
+ "made": "2026-11-22T12:22:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera is fixed on the ground, low and still, as the two runners charge toward it: the dark bay SHARES and the grey HOUSES stretch into full gallop, legs reaching, manes flying, mud kicking up in slow heavy arcs. They thunder past either side of the lens and out of frame by six seconds, leaving the shot open on the stalls, where the chestnut WAGES stands alone behind its closed gate, chewing, ears relaxed. Rain keeps falling. Sound: hooves pounding and fading away, flying turf, rain, then quiet with a faint far-off crowd, no talking. Real-looking footage of an English racecourse on a grey, wet day. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/BREAK.jpg",
+ "why": "clips round 1 (sealed writer, cleanroom/anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/BREAK.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "BREAKb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T12:20:39.551Z"
+ }
+}

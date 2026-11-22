@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-GATEa-GATE.mp4",
+ "made": "2026-11-22T12:17:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off head-on shot of the three steel stalls, camera fixed at chest height. For two seconds nothing happens: fine rain drifts down, the dark bay SHARES flicks an ear, the grey HOUSES shifts its weight, the chestnut WAGES on the right blinks. Then all three front gates bang open outward at the same instant, the white cloths swinging away with them. SHARES and HOUSES lunge forward out of their stalls, jockeys crouching low; WAGES stays exactly where it is, calm, head steady. Sound: soft rain, a sharp metallic clang of the gates, a thud of hooves on wet turf, no talking. Real-looking footage of an English racecourse on a grey, wet day. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/GATE.jpg",
+ "why": "clips round 1 (sealed writer, cleanroom/anim-r1.json)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/GATE.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "GATEa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T12:16:17.167Z"
+ }
+}
