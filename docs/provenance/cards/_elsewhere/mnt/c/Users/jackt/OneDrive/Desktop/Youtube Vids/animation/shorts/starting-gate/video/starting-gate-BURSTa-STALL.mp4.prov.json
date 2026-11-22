@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-BURSTa-STALL.mp4",
+ "made": "2026-11-22T14:26:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera low and head-on at the stall's front gate. The chestnut horse with the white blaze stands chewing, ears flicking. Suddenly the steel front gate swings wide open toward the camera with a bang and the horse launches forward out of the stall, galloping straight at the lens, head down, nostrils flaring, growing huge in the frame until its dark chest and neck fill the whole picture and the screen goes dark. Wet turf flies up. Sound: a heavy metal clang, a sharp snort, thundering hooves coming right at us, no talking.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/STALL.jpg",
+ "why": "Jack 2026-11-22: 'please make a cool badcode logo outro to do with horses thanks': WAGES finally breaks out of his stall and charges the lens, blacking it out into the logo; direct prompts, no new writer",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/STALL.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "BURSTa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T14:25:14.392Z"
+ }
+}

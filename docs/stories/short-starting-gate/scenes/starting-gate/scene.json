@@ -34,9 +34,9 @@
   "flow_project": "c1e0c728-9d37-442a-a858-915e0be94176",
   "stills": "https://claude.ai/artifact/F8iA9UCLU774eYU5VeyokZ",
   "cut": {
-    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r3/edl.json",
-    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r3/preview.mp4",
-    "script": "python3 scripts/shorts/gate_cut.py --round 3"
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r4/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r4/preview.mp4",
+    "script": "python3 scripts/shorts/gate_cut.py --round 4"
   },
   "boards": {
     "timeline": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX"

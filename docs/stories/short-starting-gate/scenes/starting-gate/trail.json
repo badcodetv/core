@@ -74,5 +74,16 @@
   "url": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX",
   "what": "Rough cut 3 (39.4 s): photo finish dropped; BadCode outro clip OUTc (4 takes) dissolving into the logo",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-starting-gate/scenes/starting-gate <out-dir>"
+ },
+ {
+  "at": "2026-11-22T14:28:59+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/TXEaJCgufUovmCNUKgf5oX",
+  "what": "Rough cut 4 (39.3 s): WAGES breakout (BURSTb, 4 takes) blacks out the lens into the logo",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-starting-gate/scenes/starting-gate <out-dir>",
+  "decided": [
+   "Jack (chat): 'please make a cool badcode logo outro to do with horses thanks'"
+  ]
  }
 ]

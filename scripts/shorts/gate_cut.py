@@ -21,7 +21,10 @@ VOICE = 'comm-b'  # Jack's pick, 2026-11-22
 LOGO = REPO / 'docs/brand/logo/badcode-stacked-reversed-2400.png'
 # Round 2's photo-finish outro (scripts/shorts/gate_outro.py) was dropped in round 3 (Jack r2 at794: "this is weird change
 # it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro").
-OUT_CLIP, OUT_IN, OUT_DUR = 'starting-gate-OUTc-BOX.mp4', 1.0, 5.5   # Claude's pick, round 3: the only take with the brand's mask (one triangle)
+# Round 3's box clip (OUTc, BadCode turns to us) was replaced in round 4 (Jack: "please make a cool badcode logo outro to do
+# with horses"): WAGES finally bursts out of his stall and charges the lens until it goes black; the logo comes up out of it.
+OUT_CLIP, OUT_IN, OUT_DUR = 'starting-gate-BURSTb-STALL.mp4', 1.0, 5.4   # Claude's pick, round 4; black from clip 6.3 s
+ROOM_DB = {'outro': -3}   # the clip's own sound per shot (default -12 dB): the breakout's clank and hooves carry the end
 W, H, FPS = 1080, 1920, 24
 CLAMP = 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)'
 ENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', '-color_range', 'tv',
@@ -43,8 +46,8 @@ SHOTS = [
     ('winners', '5. Houses home', 'starting-gate-WINNERSb-WINNERS.mp4', 0.0, 3.2, 0, [('03-home', 0.1)], 'HOUSES and its owners, champagne'),
     ('trot', '6. Wages is away', 'starting-gate-TROTb-TROT.mp4', 1.0, 5.3, 0, [], 'WAGES trots alone along the flooded course'),
     ('onegate', '7. One gate', 'starting-gate-ONEGATEe-ONEGATE.mp4', 0.0, 7.5, 2.3, [('04-onegate', 0.2)], 'Next race: everybody out at once'),
-    ('outro', '8. BadCode', OUT_CLIP, OUT_IN, OUT_DUR, 0, [], 'BadCode lowers the binoculars and turns to us; the camera eases in on the mask'),
-    ('logo', '9. The logo', None, 0, 2.6, 0, [], 'The mask dissolves into the logo card'),
+    ('outro', '8. Wages breaks out', OUT_CLIP, OUT_IN, OUT_DUR, 0, [], 'The stall doors swing open; WAGES bursts out and charges the lens until it goes black'),
+    ('logo', '9. The logo', None, 0, 2.6, 0, [], 'The logo comes up out of the black'),
 ]
 
 
@@ -67,7 +70,7 @@ def main():
         if src:
             vf = VF + (f',tpad=start_mode=clone:start_duration={hold}' if hold else '') + f',tpad=stop_mode=clone:stop_duration=4,{CLAMP}'
             ff('-ss', cin, '-i', VID / src, '-vf', vf, '-frames:v', fr, '-an', *ENC, pf)
-            room.append((st, VID / src, cin, sd, hold))
+            room.append((st, VID / src, cin, sd, hold, ROOM_DB.get(bid, -12)))
             events.append({'stem': 'amb-room', 't': st, 'dur': sd, 'what': f"{title}: the clip's own sound", 'src': src})
         else:
             # the last frame of the shot before fades to black as the logo fades in (a dissolve, not a hard cut)
@@ -98,11 +101,11 @@ def main():
     fl.append(f"{''.join(f'[s{k}]' for k in range(len(vox)))}amix=inputs={len(vox)}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]")
     ff(*ins, '-filter_complex', ';'.join(fl), '-map', '[o]', '-ar', 48000, cut / 'vox-badcode.wav')
     ins, fl = [], []
-    for k, (at, s, iin, ilen, hold) in enumerate(room):
+    for k, (at, s, iin, ilen, hold, db) in enumerate(room):
         ins += ['-ss', iin, '-t', ilen, '-i', s]
         d0 = int((at + hold) * 1000)
         fl.append(f'[{k}:a]asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.1,'
-                  f'afade=t=out:st={max(0, ilen - hold - 0.15)}:d=0.15,atrim=end={max(0.2, ilen - hold)},volume=-12dB,adelay={d0}|{d0}[f{k}]')
+                  f'afade=t=out:st={max(0, ilen - hold - 0.15)}:d=0.15,atrim=end={max(0.2, ilen - hold)},volume={db}dB,adelay={d0}|{d0}[f{k}]')
     fl.append(f"{''.join(f'[f{k}]' for k in range(len(room)))}amix=inputs={len(room)}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]")
     ff(*ins, '-filter_complex', ';'.join(fl), '-map', '[o]', '-ar', 48000, cut / 'amb-room.wav')
     audio = [{'track': 'A1', 'name': 'vox-badcode', 'file': str(cut / 'vox-badcode.wav')},
@@ -117,7 +120,7 @@ def main():
            'flags': ['No music yet. Room sound is the clips\' own (no speech in any picked clip).',
                      'The commentary runs at its natural pace: about 34 s against the script\'s 17. Trim notes welcome (which pauses, which lines).',
                      'The way out (one gate) is Claude\'s: no BadCode government policy on record.',
-                     'Outro: BadCode in the box turns to us, the mask dissolves into the logo (round 3, Jack r2 at794).']}
+                     'Outro: WAGES breaks out of his stall and blacks out the lens into the logo (round 4, Jack: "a cool badcode logo outro to do with horses").']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4')}))
 
