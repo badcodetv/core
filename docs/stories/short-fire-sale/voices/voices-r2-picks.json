@@ -1,0 +1,132 @@
+{
+ "title": "Fire Sale Voices",
+ "eyebrow": "BadCode Shorts · Fire Sale · voices round 2",
+ "heading": "Fire Sale: voices",
+ "intro": "Round 2: five new Jims, all Essex, read plain (round 1 had a delivery style added, which made it acting). Phineas a and BadCode b are Kai's picks and are in the cut. My Jim pick is a (Basildon), a guess from the descriptions because I can't hear them: overrule it here.",
+ "sections": [
+  {
+   "h": "Pick one per role",
+   "lede": "Claude can't hear these: its picks are guesses from the descriptions.",
+   "groups": [
+    {
+     "slot": "jim-r2",
+     "round": 2,
+     "title": "Jim, round 2: Essex",
+     "line": "\"Hospitals, love. Forty quid.\" / \"The courts. Slightly used.\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r2/both--jim-r2-a.mp3",
+       "label": "a: Basildon, mild Essex, low and a bit rough (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r2/both--jim-r2-b.mp3",
+       "label": "b: Debden estate, East End parents, deep and gravelly",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "r2/both--jim-r2-c.mp3",
+       "label": "c: Southend, light Estuary, medium-low and husky",
+       "warn": ""
+      },
+      {
+       "id": "d",
+       "src": "r2/both--jim-r2-d.mp3",
+       "label": "d: Harlow builder, low and a bit hoarse",
+       "warn": ""
+      },
+      {
+       "id": "e",
+       "src": "r2/both--jim-r2-e.mp3",
+       "label": "e: Grays, Tilbury docks, low and flat",
+       "warn": "Whisper hears \"courts\" as \"quarts\" or \"cords\" on every take: probably his vowel, check it by ear."
+      }
+     ]
+    },
+    {
+     "slot": "jim",
+     "title": "Jim",
+     "line": "\"Hospitals, love. Forty quid.\" / \"The courts. Slightly used.\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/both--jim-a.mp3",
+       "label": "a: Essex market trader",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/both--jim-b.mp3",
+       "label": "b: Black Country car-boot regular",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/both--jim-c.mp3",
+       "label": "c: South London geezer",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "phineas",
+     "title": "Phineas (picked: a)",
+     "line": "\"All of it.\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/03-allofit--phineas-a.mp3",
+       "label": "a: plummy old money",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/03-allofit--phineas-b.mp3",
+       "label": "b: gruff self-made Yorkshire",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/03-allofit--phineas-c.mp3",
+       "label": "c: oily Home Counties financier",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "badcode",
+     "title": "BadCode (picked: b)",
+     "line": "\"Sorry, sir. Fifty quid's the limit now. Same as everyone.\"",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/04-limit--badcode-a.mp3",
+       "label": "a: Cornish, kind but firm",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/04-limit--badcode-b.mp3",
+       "label": "b: Liverpool, dry and deadpan",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/04-limit--badcode-c.mp3",
+       "label": "c: Northumberland, calm and plain",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "round": 2
+}

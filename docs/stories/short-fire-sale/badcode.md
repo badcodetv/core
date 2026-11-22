@@ -10,7 +10,7 @@ where Jim the wheeler-dealer flogs the country's institutions as framed pictures
 grotesque rich man, arrives in a Rolls with his sweating clerk Larry and buys the lot. Fiona, the weary bargain hunter,
 goes home; her phone says Phineas narrowly beat Brian in the polls. Source: `docs/ideas/fire-sale.md` and the 18 stills
 and 6 character sheets in `Desktop\Youtube Vids\animation\Fire sale` (the composition and cast reference).
-State: script draft 1 ([script.md](./script.md)), nothing generated.
+State: rough cut 6 on the timeline page (39.4 s) with the "Going, going, gone" outro; lip sync measured on the final video; voices locked: Jim r2-d, Phineas a, BadCode b (Kai). Script draft 1 ([script.md](./script.md)).
 
 ## Look
 Jack, 2026-11-21: "in a realistic style … use unsplash to recreate the realistic style". Real-looking photographs of an
@@ -36,7 +36,7 @@ design them with an English region, never just "British".
 
 ## Story-only rules
 - No real politician, party, donor or broadcaster: invented names only (Phineas, Brian). No real party colours or logos.
-- **Flow refuses the hospital line as speech** ("Hospitals, love. Forty quid."): the clip speaks a same-length stand-in and the real line is dubbed.
+- **Flow refuses the hospital line as speech** ("Hospitals, love. Forty quid."): the clip speaks a stand-in with the same mouth rhythm ("Top pickles, love. Forty quid.", clip S02hl) and the real line is dubbed.
 - The institutions on Jim's table are framed pictures with plain handwritten tags (e.g. "NHS – £40", "THE COURTS –
   SLIGHTLY USED"); words in pictures only where the script says.
 - BadCode is the auctioneer who announces the cap (Claude's pick; Jack can veto). Tweed jacket over a navy roll-neck up into the mask (no skin): white ring, red triangle over his left eye, no skin, gloves.

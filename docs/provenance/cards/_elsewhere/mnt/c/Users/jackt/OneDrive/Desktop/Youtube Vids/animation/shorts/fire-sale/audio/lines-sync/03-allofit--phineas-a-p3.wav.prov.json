@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/audio/lines-sync/03-allofit--phineas-a-p3.wav",
+ "made": "2026-11-22T10:06:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "All of it.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_640eo43st5pq",
+  "style": "slow and smug",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

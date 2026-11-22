@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S02hl-S02h.mp4",
+ "made": "2026-11-22T10:44:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off shot, eye level. Behind his wet pasting table the man in the flat cap keeps his lips together, tilts the picture frame towards us and says, matter-of-fact: Top pickles, love. Forty quid. Then he stops speaking and waits. Rain drips from the gazebo edge. Nobody else speaks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S02h.jpg",
+ "why": "lip-sync re-shoot 2: 'Lots of pals' has two syllables before the p closure, 'Hos-pitals' one; 'Top pickles' matches (one syllable, p closure, two)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S02h.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S02hl",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T10:43:42.062Z"
+ }
+}

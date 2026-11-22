@@ -1,0 +1,2861 @@
+{
+ "01-hospitals": [
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A2.wav",
+   "on": 1.91,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 3,
+   "of": 4,
+   "matched": 3,
+   "err": 0.037,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.042
+    ],
+    [
+     "quid",
+     0.068
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d.wav",
+   "on": 1.787,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 3,
+   "of": 4,
+   "matched": 4,
+   "err": 0.04,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.127
+    ],
+    [
+     "love",
+     -0.025
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     0.031
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p1.wav",
+   "on": 2.014,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 3,
+   "of": 4,
+   "matched": 4,
+   "err": 0.097,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.354
+    ],
+    [
+     "love",
+     -0.004
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     0.01
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B2.wav",
+   "on": 0.501,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 3,
+   "of": 4,
+   "matched": 4,
+   "err": 0.152,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.543
+    ],
+    [
+     "love",
+     -0.018
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     -0.007
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A3.wav",
+   "on": 1.078,
+   "tempo": 1.0,
+   "vs": 0.0,
+   "words": 3,
+   "of": 4,
+   "matched": 4,
+   "err": 0.295,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.12
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     0.02
+    ],
+    [
+     "quid",
+     0.12
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A3.wav",
+   "on": 1.219,
+   "tempo": 1.14,
+   "vs": 0.0,
+   "words": 3,
+   "of": 4,
+   "matched": 4,
+   "err": 0.332,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.26
+    ],
+    [
+     "love",
+     0.012
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     0.121
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A3.wav",
+   "on": 1.274,
+   "tempo": 1.12,
+   "vs": 0.0,
+   "words": 3,
+   "of": 4,
+   "matched": 4,
+   "err": 0.346,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.316
+    ],
+    [
+     "love",
+     -0.041
+    ],
+    [
+     "forty",
+     0.069
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A2.wav",
+   "on": 1.303,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 3,
+   "err": 0.126,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "love",
+     0.376
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     -0.003
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A2.wav",
+   "on": 1.167,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 3,
+   "err": 0.132,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "love",
+     0.359
+    ],
+    [
+     "forty",
+     -0.037
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p2.wav",
+   "on": 2.159,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.158,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.499
+    ],
+    [
+     "love",
+     0.161
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     -0.011
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B2.wav",
+   "on": 1.667,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.16,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.007
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     0.341
+    ],
+    [
+     "quid",
+     0.346
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A3.wav",
+   "on": 1.697,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.164,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.037
+    ],
+    [
+     "love",
+     -0.417
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     0.237
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A2.wav",
+   "on": 1.367,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 3,
+   "err": 0.205,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "love",
+     0.639
+    ],
+    [
+     "forty",
+     0.023
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B2.wav",
+   "on": 0.679,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.212,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.72
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     0.158
+    ],
+    [
+     "quid",
+     -0.009
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A1.wav",
+   "on": 2.074,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.263,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.414
+    ],
+    [
+     "love",
+     -0.023
+    ],
+    [
+     "forty",
+     -0.574
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B1.wav",
+   "on": 1.77,
+   "tempo": 1.13,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.313,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.11
+    ],
+    [
+     "love",
+     -0.12
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     1.061
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hj-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B3.wav",
+   "on": 1.7,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.373,
+   "lag": 0.0,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.04
+    ],
+    [
+     "love",
+     -0.327
+    ],
+    [
+     "forty",
+     0.043
+    ],
+    [
+     "quid",
+     1.162
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B1.wav",
+   "on": 0.068,
+   "tempo": 1.02,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.497,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.11
+    ],
+    [
+     "love",
+     -0.829
+    ],
+    [
+     "forty",
+     -1.009
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B1.wav",
+   "on": 1.019,
+   "tempo": 0.98,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.503,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.06
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.039
+    ],
+    [
+     "quid",
+     0.953
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B3.wav",
+   "on": 0.05,
+   "tempo": 1.03,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.529,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.091
+    ],
+    [
+     "love",
+     -0.913
+    ],
+    [
+     "forty",
+     -1.07
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B3.wav",
+   "on": 1.285,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.541,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.327
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     0.03
+    ],
+    [
+     "quid",
+     0.909
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B3.wav",
+   "on": 1.165,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.541,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.207
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.03
+    ],
+    [
+     "quid",
+     0.969
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B1.wav",
+   "on": 0.818,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.841,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.04
+    ],
+    [
+     "love",
+     -0.33
+    ],
+    [
+     "forty",
+     0.102
+    ],
+    [
+     "quid",
+     -2.89
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B3.wav",
+   "on": 0.818,
+   "tempo": 1.02,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.872,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.04
+    ],
+    [
+     "love",
+     -0.516
+    ],
+    [
+     "forty",
+     0.118
+    ],
+    [
+     "quid",
+     -2.815
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B2.wav",
+   "on": 0.818,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 1.052,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.04
+    ],
+    [
+     "love",
+     -0.0
+    ],
+    [
+     "forty",
+     0.617
+    ],
+    [
+     "quid",
+     -3.55
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A3.wav",
+   "on": 0.818,
+   "tempo": 1.02,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 1.157,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.04
+    ],
+    [
+     "love",
+     -0.614
+    ],
+    [
+     "forty",
+     0.118
+    ],
+    [
+     "quid",
+     -3.854
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d.wav",
+   "on": 1.287,
+   "tempo": 1.11,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 1.211,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.508
+    ],
+    [
+     "love",
+     -0.041
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     -4.254
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p2.wav",
+   "on": 1.436,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 1.228,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.658
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     0.039
+    ],
+    [
+     "quid",
+     -4.252
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p1.wav",
+   "on": 1.53,
+   "tempo": 1.08,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 1.254,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.752
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     0.122
+    ],
+    [
+     "quid",
+     -4.181
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A2.wav",
+   "on": 1.252,
+   "tempo": 1.08,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 3,
+   "err": 1.367,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     0.122
+    ],
+    [
+     "quid",
+     -3.978
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B2.wav",
+   "on": 0.641,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.228,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.683
+    ],
+    [
+     "love",
+     0.202
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     -0.067
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-B1.wav",
+   "on": 0.663,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.445,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.704
+    ],
+    [
+     "love",
+     -0.261
+    ],
+    [
+     "forty",
+     -0.777
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d.wav",
+   "on": 0.95,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.458,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.992
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.335
+    ],
+    [
+     "quid",
+     -0.465
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d.wav",
+   "on": 1.07,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.488,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.112
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.275
+    ],
+    [
+     "quid",
+     -0.525
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p1.wav",
+   "on": 1.553,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.525,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.594
+    ],
+    [
+     "love",
+     0.436
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     -0.11
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p1.wav",
+   "on": 1.277,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.555,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.318
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.296
+    ],
+    [
+     "quid",
+     -0.566
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d.wav",
+   "on": 0.87,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.563,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.912
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.555
+    ],
+    [
+     "quid",
+     -0.745
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A1.wav",
+   "on": 1.393,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.587,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.435
+    ],
+    [
+     "love",
+     0.318
+    ],
+    [
+     "forty",
+     -0.635
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hh-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p2.wav",
+   "on": 1.136,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.608,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.178
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.521
+    ],
+    [
+     "quid",
+     -0.692
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A1.wav",
+   "on": 1.573,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.617,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.615
+    ],
+    [
+     "love",
+     0.378
+    ],
+    [
+     "forty",
+     -0.515
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p1.wav",
+   "on": 1.077,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.63,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.118
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.576
+    ],
+    [
+     "quid",
+     -0.786
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hf-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p2.wav",
+   "on": 1.256,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.638,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.298
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.461
+    ],
+    [
+     "quid",
+     -0.752
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A1.wav",
+   "on": 1.593,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.692,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.635
+    ],
+    [
+     "love",
+     0.598
+    ],
+    [
+     "forty",
+     -0.575
+    ],
+    [
+     "quid",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hi-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-p2.wav",
+   "on": 1.837,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.713,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     1.879
+    ],
+    [
+     "love",
+     0.821
+    ],
+    [
+     "forty",
+     0.04
+    ],
+    [
+     "quid",
+     -0.191
+    ]
+   ]
+  },
+  {
+   "line": "01-hospitals",
+   "clip": "fire-sale-S02hg-S02h.mp4",
+   "take": "01-hospitals--jim-r2-d-A1.wav",
+   "on": 1.415,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 1.207,
+   "lag": -0.042,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "lots",
+     0.637
+    ],
+    [
+     "love",
+     0.04
+    ],
+    [
+     "forty",
+     -0.353
+    ],
+    [
+     "quid",
+     -3.798
+    ]
+   ]
+  }
+ ],
+ "02-courts": [
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-D4.wav",
+   "on": 1.736,
+   "tempo": 1.01,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.218,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.544
+    ],
+    [
+     "courts",
+     -0.04
+    ],
+    [
+     "slightly",
+     0.328
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-A1.wav",
+   "on": 1.799,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.221,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.608
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     0.273
+    ],
+    [
+     "used",
+     -0.045
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-D2.wav",
+   "on": 1.243,
+   "tempo": 1.08,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.241,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.051
+    ],
+    [
+     "courts",
+     -0.577
+    ],
+    [
+     "slightly",
+     0.376
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-D2.wav",
+   "on": 0.608,
+   "tempo": 0.98,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.264,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.816
+    ],
+    [
+     "courts",
+     -0.036
+    ],
+    [
+     "slightly",
+     0.244
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-D3.wav",
+   "on": 1.827,
+   "tempo": 1.04,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.278,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.635
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -0.475
+    ],
+    [
+     "used",
+     0.043
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-A2.wav",
+   "on": 2.003,
+   "tempo": 1.09,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 3,
+   "err": 0.284,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.812
+    ],
+    [
+     "slightly",
+     -0.039
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-D1.wav",
+   "on": 1.314,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.285,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.123
+    ],
+    [
+     "courts",
+     -0.544
+    ],
+    [
+     "slightly",
+     -0.433
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-A3.wav",
+   "on": 1.232,
+   "tempo": 1.05,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.305,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.04
+    ],
+    [
+     "courts",
+     -0.73
+    ],
+    [
+     "slightly",
+     0.123
+    ],
+    [
+     "used",
+     -0.327
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d.wav",
+   "on": 1.771,
+   "tempo": 1.06,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.321,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.579
+    ],
+    [
+     "courts",
+     -0.042
+    ],
+    [
+     "slightly",
+     0.04
+    ],
+    [
+     "used",
+     -0.623
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-A3.wav",
+   "on": 0.852,
+   "tempo": 1.0,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.345,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     1.06
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     0.12
+    ],
+    [
+     "used",
+     -0.24
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-E4.wav",
+   "on": 1.312,
+   "tempo": 1.0,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.365,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.12
+    ],
+    [
+     "courts",
+     -0.48
+    ],
+    [
+     "slightly",
+     -0.82
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-E2.wav",
+   "on": 1.294,
+   "tempo": 1.05,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.375,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.102
+    ],
+    [
+     "courts",
+     -0.478
+    ],
+    [
+     "slightly",
+     -0.882
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-B3.wav",
+   "on": 1.881,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.381,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.69
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     0.012
+    ],
+    [
+     "used",
+     0.885
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-D1.wav",
+   "on": 0.732,
+   "tempo": 1.06,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.392,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.94
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -0.625
+    ],
+    [
+     "used",
+     0.037
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-C2.wav",
+   "on": 1.279,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.415,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.088
+    ],
+    [
+     "courts",
+     -0.579
+    ],
+    [
+     "slightly",
+     -0.955
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-B3.wav",
+   "on": 0.696,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.461,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.904
+    ],
+    [
+     "courts",
+     -0.005
+    ],
+    [
+     "slightly",
+     -0.893
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-E3.wav",
+   "on": 0.644,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.522,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.852
+    ],
+    [
+     "courts",
+     0.03
+    ],
+    [
+     "slightly",
+     -1.223
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-C2.wav",
+   "on": 0.735,
+   "tempo": 1.07,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.528,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.944
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -1.158
+    ],
+    [
+     "used",
+     0.049
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-E2.wav",
+   "on": 0.72,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 4,
+   "err": 0.528,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.928
+    ],
+    [
+     "courts",
+     0.121
+    ],
+    [
+     "slightly",
+     -1.104
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-A2.wav",
+   "on": 1.774,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 4,
+   "matched": 3,
+   "err": 0.674,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     1.983
+    ],
+    [
+     "slightly",
+     -0.041
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-C1.wav",
+   "on": 1.82,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.263,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.628
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     0.356
+    ],
+    [
+     "used",
+     -0.107
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-C3.wav",
+   "on": 1.717,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.275,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.525
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -0.469
+    ],
+    [
+     "used",
+     -0.066
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03b-S03.mp4",
+   "take": "02-courts--jim-r2-d-E3.wav",
+   "on": 1.794,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.442,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.603
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -0.353
+    ],
+    [
+     "used",
+     0.85
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-D4.wav",
+   "on": 0.659,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.477,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.868
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -0.401
+    ],
+    [
+     "used",
+     -0.598
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-E4.wav",
+   "on": 0.884,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.559,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     1.093
+    ],
+    [
+     "courts",
+     0.245
+    ],
+    [
+     "slightly",
+     -0.939
+    ],
+    [
+     "used",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-A1.wav",
+   "on": 0.659,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.585,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.868
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -0.587
+    ],
+    [
+     "used",
+     -0.845
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-C1.wav",
+   "on": 1.224,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.585,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     1.432
+    ],
+    [
+     "courts",
+     0.584
+    ],
+    [
+     "slightly",
+     0.04
+    ],
+    [
+     "used",
+     -0.363
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d.wav",
+   "on": 0.68,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.698,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.888
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -0.648
+    ],
+    [
+     "used",
+     -1.216
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-D3.wav",
+   "on": 0.659,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.709,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.868
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -1.308
+    ],
+    [
+     "used",
+     -0.618
+    ]
+   ]
+  },
+  {
+   "line": "02-courts",
+   "clip": "fire-sale-S03a-S03.mp4",
+   "take": "02-courts--jim-r2-d-C3.wav",
+   "on": 0.577,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 4,
+   "matched": 4,
+   "err": 0.755,
+   "lag": -0.208,
+   "tracked": 1.0,
+   "untracked": false,
+   "table": [
+    [
+     "the",
+     0.785
+    ],
+    [
+     "courts",
+     0.04
+    ],
+    [
+     "slightly",
+     -1.329
+    ],
+    [
+     "used",
+     -0.866
+    ]
+   ]
+  }
+ ],
+ "03-allofit": [
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06b-S06.mp4",
+   "take": "03-allofit--phineas-a-A3.wav",
+   "on": 1.526,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 3,
+   "of": 3,
+   "matched": 3,
+   "err": 0.011,
+   "lag": -0.375,
+   "tracked": 0.94,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.021
+    ],
+    [
+     "of",
+     0.04
+    ],
+    [
+     "it",
+     0.054
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06b-S06.mp4",
+   "take": "03-allofit--phineas-a-A1.wav",
+   "on": 1.491,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 3,
+   "of": 3,
+   "matched": 3,
+   "err": 0.04,
+   "lag": -0.375,
+   "tracked": 0.94,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     -0.014
+    ],
+    [
+     "of",
+     0.04
+    ],
+    [
+     "it",
+     0.106
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06b-S06.mp4",
+   "take": "03-allofit--phineas-a-p2.wav",
+   "on": 1.545,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 2,
+   "of": 3,
+   "matched": 3,
+   "err": 0.121,
+   "lag": -0.375,
+   "tracked": 0.94,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.04
+    ],
+    [
+     "of",
+     -0.028
+    ],
+    [
+     "it",
+     0.334
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06b-S06.mp4",
+   "take": "03-allofit--phineas-a.wav",
+   "on": 1.545,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.122,
+   "lag": -0.375,
+   "tracked": 0.94,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.04
+    ],
+    [
+     "of",
+     0.146
+    ],
+    [
+     "it",
+     0.299
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06b-S06.mp4",
+   "take": "03-allofit--phineas-a-A2.wav",
+   "on": 1.545,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.133,
+   "lag": -0.375,
+   "tracked": 0.94,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.04
+    ],
+    [
+     "of",
+     0.163
+    ],
+    [
+     "it",
+     0.317
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06a-S06.mp4",
+   "take": "03-allofit--phineas-a-B2.wav",
+   "on": 0.107,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.199,
+   "lag": -0.125,
+   "tracked": 0.99,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.232
+    ],
+    [
+     "of",
+     0.04
+    ],
+    [
+     "it",
+     -0.366
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06b-S06.mp4",
+   "take": "03-allofit--phineas-a-B2.wav",
+   "on": 1.545,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.452,
+   "lag": -0.375,
+   "tracked": 0.94,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.04
+    ],
+    [
+     "of",
+     0.32
+    ],
+    [
+     "it",
+     1.117
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06a-S06.mp4",
+   "take": "03-allofit--phineas-a-p2.wav",
+   "on": 0.519,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.508,
+   "lag": -0.125,
+   "tracked": 0.99,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.644
+    ],
+    [
+     "of",
+     0.04
+    ],
+    [
+     "it",
+     -0.881
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06b-S06.mp4",
+   "take": "03-allofit--phineas-a-B1.wav",
+   "on": 1.545,
+   "tempo": 1.15,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.51,
+   "lag": -0.375,
+   "tracked": 0.94,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.04
+    ],
+    [
+     "of",
+     0.598
+    ],
+    [
+     "it",
+     1.012
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06a-S06.mp4",
+   "take": "03-allofit--phineas-a-A2.wav",
+   "on": 0.292,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.515,
+   "lag": -0.125,
+   "tracked": 0.99,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.417
+    ],
+    [
+     "of",
+     0.04
+    ],
+    [
+     "it",
+     -1.129
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06a-S06.mp4",
+   "take": "03-allofit--phineas-a.wav",
+   "on": 0.313,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.522,
+   "lag": -0.125,
+   "tracked": 0.99,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.438
+    ],
+    [
+     "of",
+     0.04
+    ],
+    [
+     "it",
+     -1.129
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06a-S06.mp4",
+   "take": "03-allofit--phineas-a-B1.wav",
+   "on": 0.636,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.527,
+   "lag": -0.125,
+   "tracked": 0.99,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.761
+    ],
+    [
+     "of",
+     0.9
+    ],
+    [
+     "it",
+     0.04
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06a-S06.mp4",
+   "take": "03-allofit--phineas-a-A1.wav",
+   "on": 0.375,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.577,
+   "lag": -0.125,
+   "tracked": 0.99,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.5
+    ],
+    [
+     "of",
+     0.04
+    ],
+    [
+     "it",
+     -1.232
+    ]
+   ]
+  },
+  {
+   "line": "03-allofit",
+   "clip": "fire-sale-S06a-S06.mp4",
+   "take": "03-allofit--phineas-a-A3.wav",
+   "on": 0.416,
+   "tempo": 0.97,
+   "vs": 0.0,
+   "words": 1,
+   "of": 3,
+   "matched": 3,
+   "err": 0.612,
+   "lag": -0.125,
+   "tracked": 0.99,
+   "untracked": false,
+   "table": [
+    [
+     "all",
+     0.541
+    ],
+    [
+     "of",
+     0.04
+    ],
+    [
+     "it",
+     -1.294
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-OUTb-OUT.mp4",
+ "made": "2026-11-22T11:02:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The auctioneer in the navy balaclava with the white ring stands at the wooden lectern, gavel raised, and the tent goes quiet. He pauses, then slams the gavel down once. Instantly the camera zooms straight in on his face until the white ring of the mask nearly fills the frame, centred, and stops dead; the mask stays still and staring. No talking. Sound: a single gavel bang that echoes, then near silence and soft rain.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/OUT.jpg",
+ "why": "outro (Kai 2026-11-22): 'Going, going, gone' into the mask. No speech in the clip (the voice is dubbed; the mask has no mouth); the push-in ends on the mask's white ring so the logo can be laid over it",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/OUT.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "OUTb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T11:01:21.141Z"
+ }
+}

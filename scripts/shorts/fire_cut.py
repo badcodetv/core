@@ -20,9 +20,21 @@ cfg = localize(json.loads((SCENE / 'scene.json').read_text()))
 MEDIA = pathlib.Path(cfg['media'])
 VID, CAST, MB = MEDIA / 'video', MEDIA / 'audio/casting', MEDIA / 'moodboard'
 TXT = {l['key']: l for l in json.loads((REPO / 'docs/stories/short-fire-sale/voices/lines/lines.json').read_text())}
-VOICE = {'jim': 'jim-a', 'phineas': 'phineas-a', 'badcode': 'badcode-c'}  # Claude's guesses while Jack is away
+VOICE = {'jim': 'jim-a', 'phineas': 'phineas-a', 'badcode': 'badcode-b'}  # Kai's picks 2026-11-22 (Phineas a, BadCode b); Jim: --voice jim=<take>
 TEMPO = {}
-HOSPITAL = 'fire-sale-S02hd-S02h.mp4'  # speaks a stand-in line (the hospital line is refused as speech); dubbed here
+# lip sync (2026-11-22, scripts/shorts/fire_lipsync.py + the mouth strips): line -> (take, tempo, clip time where the
+# take's file starts). Each take is laid WHOLE at one tempo; picked by words in time / phrases on mouth openings.
+SYNCED = {
+    '05-outro': ('casting/05-outro--badcode-b-a2.wav', 1.0, -0.46),             # 'gone' (take 2.96 s) +0.03 after the crack (2.47)
+    '01-hospitals': ('casting/01-hospitals--jim-r2-d.wav', 1.04, 0.953),          # Kai's take on S02hl ('Top pickles' stand-in): start +0.04, p +0.01, end -0.05, Forty +0.12, end +0.02 (hand-read strip)
+    '02-courts': ('lines-sync/02-courts--jim-r2-d-D4.wav', 0.97, 1.527),        # both phrases on S03b's mouth openings; measured GOOD on the final video (1.889, from Whisper's word times, read 0.375 s late)
+    '03-allofit': ('lines-sync/03-allofit--phineas-a-A3.wav', 1.04, 1.79),     # same voice, read 'smug': starts on the mouth opening (clip 1.98) and ends as it closes (2.88); Kai's slower take ran 0.3 s past the shut mouth
+}
+# talking clips: their own sound carries Flow's voice, so they get a bed from a silent clip of the same place instead
+# (Kai, 2026-11-22: "the flow video is playing its audio at the same time as the lip-syncing audio")
+BED = {'hospital': ('fire-sale-S01a-S01.mp4', 0.3), 'courts': ('fire-sale-S01a-S01.mp4', 3.0),
+       'allofit': ('fire-sale-S05b-S05.mp4', 0.2), 'limit': ('fire-sale-S08a-S08.mp4', 0.2)}
+HOSPITAL = 'fire-sale-S02hl-S02h.mp4'  # mouths 'Top pickles, love. Forty quid.' (same rhythm as 'Hospitals'); speaks a stand-in line (the hospital line is refused as speech); dubbed here
 NAMES = {'jim': 'Jim', 'phineas': 'Phineas', 'badcode': 'BadCode (auctioneer)'}
 FONT = '/mnt/c/Windows/Fonts/segoeui.ttf'
 NOTE = ['Phineas narrowly defeats', 'Brian in the polls']
@@ -35,16 +47,18 @@ VF = f'scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}
 # (beat, title, source, kind, in, min dur, [(line key, at)], own sound?, what we see)
 SHOTS = [
     ('carboot', 'The car boot', 'fire-sale-S01a-S01.mp4', 'clip', 0.3, 2.6, [], True, 'Fiona trudges through the drizzle'),
-    ('hospital', 'Hospitals', 'HOSPITAL_CLIP', 'clip', 0.0, 2.4, [('01-hospitals', 'sync')], True, 'NHS £40'),
+    ('hospital', 'Hospitals', 'HOSPITAL_CLIP', 'clip', 0.3, 2.4, [('01-hospitals', 'sync')], True, 'NHS £40'),
     ('courts', 'The courts', 'fire-sale-S03b-S03.mp4', 'clip', 1.1, 2.4, [('02-courts', 'sync')], True, 'THE COURTS – SLIGHTLY USED'),
     ('car', 'The car', 'fire-sale-S04a-S04.mp4', 'clip', 0.3, 2.6, [], True, 'A long black car rolls across the mud'),
     ('arrival', 'Phineas arrives', 'fire-sale-S05b-S05.mp4', 'clip', 0.2, 2.8, [], True, 'Under the chauffeur\'s umbrella, Larry behind'),
-    ('allofit', 'All of it', 'fire-sale-S06b-S06.mp4', 'clip', 1.2, 2.2, [('03-allofit', 'sync')], True, 'The ring on Larry\'s shoulder'),
+    ('allofit', 'All of it', 'fire-sale-S06a-S06.mp4', 'clip', 1.0, 2.6, [('03-allofit', 'sync')], True, 'The ring on Larry\'s shoulder'),
     ('home', 'Home', 'fire-sale-S07a-S07.mp4', 'note', 0.3, 3.4, [], True, 'Her phone: Phineas narrowly defeats Brian in the polls'),
     ('paddle', 'The auction', 'fire-sale-S08a-S08.mp4', 'clip', 0.2, 2.4, [], True, 'Paddle 29: £150,000'),
     ('limit', 'The limit', 'fire-sale-S09a-S09.mp4', 'clip', 0.2, 2.0, [('04-limit', 0.3)], True, 'Fifty quid, same as everyone'),
     ('everyone', 'Same as everyone', 'fire-sale-S10a-S10.mp4', 'clip', 0.3, 3.0, [], True, 'Every paddle in the tent says £50'),
-    ('logo', 'The logo', None, 'logo', 0.0, 2.4, [], False, 'Logo card'),
+    # outro (Kai 2026-11-22, "Going, going, gone into the mask"): scripts/shorts/fire_outro.py renders the clip, the
+    # ring-to-logo morph and the logo card; 'Going' starts over the paddles, 'gone' on the gavel's crack (clip 2.47 s)
+    ('logo', 'Going, going, gone', 'fire-sale-OUTc-OUT.mp4', 'outro', 0.0, 7.7, [('05-outro', 'sync')], True, 'The gavel; the mask becomes the logo'),
 ]
 
 
@@ -94,7 +108,9 @@ def phrases(wav):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=1); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument('--round', type=int, default=1)
+    ap.add_argument('--voice', action='append', default=[], help='role=take, e.g. jim=jim-r2-a'); a = ap.parse_args()
+    VOICE.update(dict(v.split('=', 1) for v in a.voice))
     cut = MEDIA / 'cut' / f'r{a.round}'; cut.mkdir(parents=True, exist_ok=True)
     t, beats, vids, parts, vox, events, room = 0.0, [], [], [], [], [], []
     for n, (bid, title, src, kind, cin, sd, lines, own, see) in enumerate(SHOTS):
@@ -104,6 +120,16 @@ def main():
         for k, at in lines:
             role = TXT[k]['role']; w = cut / f'line-{k}.wav'
             raw = cut / f'raw-{k}.wav'
+            if at == 'sync' and k in SYNCED:  # the whole take, one tempo, placed where the fit put it
+                tk, tp, fs = SYNCED[k]
+                ff('-i', MEDIA / 'audio' / tk, '-af', f'atempo={tp}', w)
+                at = round(fs - cin, 3)
+                d = round(dur(w), 3); lt = round(st + at, 3); prev_end = lt + d
+                vox.append((lt, w, role))
+                ls.append({'i': len(ls), 'who': role, 'name': NAMES[role], 't': lt, 'dur': d, 'text': TXT[k]['text'], 'by': TXT[k]['by']})
+                events.append({'stem': f'vox-{role}', 't': lt, 'dur': d, 'what': f'{title}: {NAMES[role]}', 'src': str(w)})
+                sd = max(sd, round(lt - st + d + 0.35, 3))
+                continue
             ff('-i', CAST / f'{k}--{VOICE[role]}.wav', '-af', 'silenceremove=start_periods=1:start_threshold=-55dB,areverse,'
                'silenceremove=start_periods=1:start_threshold=-55dB,areverse', raw)
             if at == 'sync':
@@ -136,6 +162,9 @@ def main():
             ls.append({'i': len(ls), 'who': role, 'name': NAMES[role], 't': lt, 'dur': d, 'text': TXT[k]['text'], 'by': TXT[k]['by']})
             events.append({'stem': f'vox-{role}', 't': lt, 'dur': d, 'what': f'{title}: {NAMES[role]}', 'src': str(w)})
             sd = max(sd, round(lt - st + d + 0.35, 3))
+        # whole frames only: a shot of 2.6 s rendered as 63 frames (2.625 s) pushed every later shot late against the
+        # sound, up to 0.13 s by the end of cut 4 (voice EARLY on the mouth; Kai 2026-11-22: "the lip-syncing is way off")
+        sd = round(sd * FPS) / FPS
         pf = cut / f'v{n:02d}-{bid}.mp4'
         if kind in ('clip', 'note'):
             s = VID / src
@@ -146,10 +175,18 @@ def main():
                                     for i, q in enumerate(NOTE))
                 txt += f"drawtext=fontfile='{FONT}':text='NEWS':fontsize=28:fontcolor=gray:x=140:y=272:enable='gte(t,0.5)'"
                 vf = vf.replace(CLAMP, txt + ',' + CLAMP)
-            ff('-ss', cin, '-i', s, '-t', sd, '-vf', vf, '-t', sd, '-an', *ENC, pf)
+            ff('-ss', cin, '-i', s, '-vf', vf, '-frames:v', round(sd * FPS), '-an', *ENC, pf)
             if own:
-                room.append((round(st, 3), s, cin, sd))
-                events.append({'stem': 'amb-room', 't': round(st, 3), 'dur': sd, 'what': f"{title}: the clip's own sound", 'src': str(s)})
+                bs, bin_ = (VID / BED[bid][0], BED[bid][1]) if bid in BED else (s, cin)
+                room.append((round(st, 3), bs, bin_, sd))
+                events.append({'stem': 'amb-room', 't': round(st, 3), 'dur': sd, 'src': str(bs),
+                               'what': f"{title}: room sound from {bs.name} (the clip's own has Flow's voice)" if bid in BED else f"{title}: the clip's own sound"})
+        elif kind == 'outro':
+            raw_o = cut / 'outro-raw.mp4'
+            subprocess.run([str(pathlib.Path.home() / '.cache/badcode-lips/venv/bin/python'), str(REPO / 'scripts/shorts/fire_outro.py'), str(raw_o)], check=True, capture_output=True)
+            ff('-i', raw_o, '-vf', f'tpad=stop_mode=clone:stop_duration=2,{CLAMP}', '-frames:v', round(sd * FPS), '-an', *ENC, pf)
+            room.append((round(st, 3), VID / src, cin, sd))
+            events.append({'stem': 'amb-room', 't': round(st, 3), 'dur': sd, 'src': src, 'what': f"{title}: the clip's own sound (rain, the gavel)"})
         elif kind == 'pullback':
             s = MB / src; fr = int(sd * FPS)
             ff('-loop', 1, '-i', s, '-vf', f"scale=3240:-2,zoompan=z='1.9-0.9*(1-pow(1-on/{fr},2))':x='(iw-iw/zoom)*0.12*(1-on/{fr})+(iw-iw/zoom)/2*(on/{fr})':"
@@ -157,7 +194,7 @@ def main():
         else:
             ff('-f', 'lavfi', '-i', f'color=black:s={W}x{H}:r={FPS}:d={sd}', '-loop', 1, '-i', LOGO, '-filter_complex',
                f"[1]scale=640:-1,format=rgba,fade=t=in:st=0.2:d=0.5:alpha=1[l];[0][l]overlay=(W-w)/2:(H-h)/2:shortest=1,{CLAMP}",
-               '-t', sd, *ENC, pf)
+               '-frames:v', round(sd * FPS), *ENC, pf)
         parts.append(pf); vids.append({'file': str(pf), 'in': cin, 'start': round(st, 3), 'dur': sd, 'beat': bid, 'source': str(src), 'looped': False})
         beats.append({'id': bid, 'title': title, 'start': round(st, 3), 'dur': sd, 'see': see, 'lines': ls})
         t = st + sd
@@ -191,7 +228,7 @@ def main():
            'heading': f'BadCode Shorts ▲ Fire Sale, rough cut {a.round}',
            'intro': 'A rainy car boot: Jim flogs the country; Phineas arrives in a long black car and buys the lot; he wins the election; at the auction, fifty quid is the limit, same as everyone.',
            'fps': FPS, 'total': total, 'beats': beats, 'video': vids, 'audio': audio, 'events': events,
-           'flags': ['No music yet. Room sound is the clips\' own, low.', 'Voices are Claude\'s guesses (Jim a, Phineas a, BadCode c) until Jack picks.', 'The way out (a fifty-pound cap on donations) is Claude\'s: no government policy on record.', 'Logo: a plain card for now.']}
+           'flags': ['Lip sync: each talking line is a whole re-voiced take (pause tags only) placed on the mouth; All of it on clip S06a; Hospitals on a new clip (S02hl) whose mouth has the line\'s rhythm.', 'No music yet. Room sound is the clips\' own, low; the four talking shots take theirs from a silent clip of the same place (Flow\'s own voice removed).', f"Voices: Phineas {VOICE['phineas']}, BadCode {VOICE['badcode']} (Kai's picks); Jim {VOICE['jim']}.", 'The way out (a fifty-pound cap on donations) is Claude\'s: no government policy on record.', 'Outro: Going, going, gone; the mask\'s ring becomes the logo (logo from the brand file).']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4')}))
 

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/audio/lines-sync/02-courts--jim-r2-d-B1.wav",
+ "made": "2026-11-22T10:06:27+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "The <short pause> courts. <long pause> Slightly <short pause> used.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_b0kbr9abni23",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "none (plain)"
+ }
+}

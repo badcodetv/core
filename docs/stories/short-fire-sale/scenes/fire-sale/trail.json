@@ -5,5 +5,68 @@
   "round": 1,
   "what": "rough cut 1, 31.6 s, https://claude.ai/artifact/TxVD7peAjq5G333Dmj73nS",
   "rebuild": "python3 scripts/shorts/fire_cut.py --round 1"
+ },
+ {
+  "at": "2026-11-22T10:00:36+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/9uYTb9SPSbAFz1KycidYme",
+  "what": "voices round 2: five designed Essex Jims read plain (clean-room designs), Phineas a and BadCode b kept",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fire-sale/voices/voices-r2-picks.json <out>/index.html",
+  "decided": [
+   "Kai (feedback/voices-r1): Phineas a, BadCode b; Jim round 2. Claude's Jim pick r2-a."
+  ]
+ },
+ {
+  "at": "2026-11-22T10:00:36+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/TxVD7peAjq5G333Dmj73nS",
+  "what": "rough cut 2, 33.4 s: Jim r2-a (Claude's pick), Phineas a, BadCode b (Kai's)",
+  "rebuild": "python3 scripts/shorts/fire_cut.py --round 2 --voice jim=jim-r2-a"
+ },
+ {
+  "at": "2026-11-22T10:13:12+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/TxVD7peAjq5G333Dmj73nS",
+  "what": "rough cut 3, 34.0 s: lip-synced (whole re-voiced takes placed on the mouth), Jim r2-d, Phineas a on S06a, BadCode b",
+  "rebuild": "python3 scripts/shorts/fire_cut.py --round 3 --voice jim=jim-r2-d",
+  "decided": [
+   "Kai: Jim d; lip sync"
+  ]
+ },
+ {
+  "at": "2026-11-22T10:31:01+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/TxVD7peAjq5G333Dmj73nS",
+  "what": "rough cut 4: talking shots' own sound (Flow's voice) replaced by a silent bed from the same place",
+  "rebuild": "python3 scripts/shorts/fire_cut.py --round 4 --voice jim=jim-r2-d",
+  "decided": [
+   "Kai: remove Flow's own voice under the dub"
+  ]
+ },
+ {
+  "at": "2026-11-22T10:50:35+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/TxVD7peAjq5G333Dmj73nS",
+  "what": "rough cut 5: lip sync measured on the final video; whole-frame shots; hospital re-shot (Top pickles stand-in, S02hl); Phineas take A3",
+  "rebuild": "python3 scripts/shorts/fire_cut.py --round 5 --voice jim=jim-r2-d",
+  "decided": [
+   "Kai: lip sync way off, analyse and fix"
+  ]
+ },
+ {
+  "at": "2026-11-22T11:07:05+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/TxVD7peAjq5G333Dmj73nS",
+  "what": "rough cut 6, 39.4 s: the Going, going, gone outro (OUTc; mask ring to logo, scripts/shorts/fire_outro.py)",
+  "rebuild": "python3 scripts/shorts/fire_cut.py --round 6 --voice jim=jim-r2-d",
+  "decided": [
+   "Kai: outro idea 1"
+  ]
  }
 ]

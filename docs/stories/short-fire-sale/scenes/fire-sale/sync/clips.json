@@ -1,0 +1,65 @@
+{
+ "fire-sale-S02hf-S02h.mp4": {
+  "line": "01-hospitals",
+  "miss": [],
+  "heard": "lots of powell's love forty quid",
+  "lag": -0.042,
+  "tracked": 1.0
+ },
+ "fire-sale-S02hg-S02h.mp4": {
+  "line": "01-hospitals",
+  "miss": [],
+  "heard": "lots of powell's love forty quid",
+  "lag": -0.042,
+  "tracked": 1.0
+ },
+ "fire-sale-S02hh-S02h.mp4": {
+  "line": "01-hospitals",
+  "miss": [],
+  "heard": "lots of pals love forty quid",
+  "lag": -0.042,
+  "tracked": 1.0
+ },
+ "fire-sale-S02hi-S02h.mp4": {
+  "line": "01-hospitals",
+  "miss": [],
+  "heard": "lots of pals love forty quid",
+  "lag": -0.042,
+  "tracked": 1.0
+ },
+ "fire-sale-S02hj-S02h.mp4": {
+  "line": "01-hospitals",
+  "miss": [],
+  "heard": "lots of pals love forty quid",
+  "lag": 0.0,
+  "tracked": 1.0
+ },
+ "fire-sale-S03a-S03.mp4": {
+  "line": "02-courts",
+  "miss": [],
+  "heard": "the courts slightly used",
+  "lag": -0.208,
+  "tracked": 1.0
+ },
+ "fire-sale-S03b-S03.mp4": {
+  "line": "02-courts",
+  "miss": [],
+  "heard": "the courts slightly used",
+  "lag": -0.208,
+  "tracked": 1.0
+ },
+ "fire-sale-S06a-S06.mp4": {
+  "line": "03-allofit",
+  "miss": [],
+  "heard": "all of it",
+  "lag": -0.125,
+  "tracked": 0.99
+ },
+ "fire-sale-S06b-S06.mp4": {
+  "line": "03-allofit",
+  "miss": [],
+  "heard": "all of it",
+  "lag": -0.375,
+  "tracked": 0.94
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-OUTa-OUT.mp4",
+ "made": "2026-11-22T11:01:08+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Fixed camera at first. The masked auctioneer at the lectern lifts the wooden gavel high and holds it there for a beat, gloved hand raised, completely still. Then he brings the gavel down on the lectern with one sharp crack. On the crack the camera rushes forward in one fast push to a tight close-up of his masked face, the white ring filling most of the frame, the red triangle over his left eye, and holds there, perfectly still. He does not speak. Sound: a hushed tent, rain on canvas, one loud wooden crack.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/OUT.jpg",
+ "why": "outro (Kai 2026-11-22): 'Going, going, gone' into the mask. No speech in the clip (the voice is dubbed; the mask has no mouth); the push-in ends on the mask's white ring so the logo can be laid over it",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/OUT.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "OUTa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T10:59:59.991Z"
+ }
+}

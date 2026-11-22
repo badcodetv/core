@@ -44,9 +44,9 @@
   "duration": 8
  },
  "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/cut/r1/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/cut/r1/preview.mp4",
-  "script": "python3 scripts/shorts/fire_cut.py --round 1",
+  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/cut/r6/edl.json",
+  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/cut/r6/preview.mp4",
+  "script": "python3 scripts/shorts/fire_cut.py --round 6 --voice jim=jim-r2-d",
   "round": 1
  }
 }

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/audio/casting/05-outro--badcode-b-b1.wav",
+ "made": "2026-11-22T10:59:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Going... going... <long pause> gone.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_7f3d5fcwhehh",
+  "style": "calm and polite, firm",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

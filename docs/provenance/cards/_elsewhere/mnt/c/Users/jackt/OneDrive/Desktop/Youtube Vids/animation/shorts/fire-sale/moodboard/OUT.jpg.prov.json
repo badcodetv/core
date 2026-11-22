@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/OUT.jpg",
+ "made": "2026-11-22T10:59:27+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "copy",
+ "tool": "cp",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/stills/r1/AUCTIONEER-a.jpg",
+ "why": "outro start frame (Going, going, gone into the mask), a copy of AUCTIONEER-a"
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/audio/casting/01-hospitals--jim-r2-e.wav",
+ "made": "2026-11-22T09:55:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Hospitals, love. Forty quid.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "voice_ip443r35af2s",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "none (plain)"
+ }
+}

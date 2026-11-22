@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S02hm-S02h.mp4",
+ "made": "2026-11-22T10:45:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera still. The stallholder in the flat cap, lips pressed together, gives the framed picture a small lift and says to the camera in an ordinary voice: Top pickles, love. Forty quid. A short pause after love. Mouth shut afterwards, a small nod. Drizzle, people in hoods walk past.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S02h.jpg",
+ "why": "lip-sync re-shoot 2: 'Lots of pals' has two syllables before the p closure, 'Hos-pitals' one; 'Top pickles' matches (one syllable, p closure, two)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S02h.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S02hm",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T10:43:59.160Z"
+ }
+}

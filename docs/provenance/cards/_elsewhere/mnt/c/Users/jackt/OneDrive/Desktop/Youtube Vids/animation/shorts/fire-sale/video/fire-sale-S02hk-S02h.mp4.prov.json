@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/video/fire-sale-S02hk-S02h.mp4",
+ "made": "2026-11-22T10:44:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera steady at chest height. The trader in the flat cap holds the framed picture up, mouth shut, then looks into the lens and says plainly: Top pickles, love. Forty quid. Once, at an easy talking pace, then his lips close and he raises his eyebrows. Light drizzle, shoppers pass behind. Nobody else speaks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S02h.jpg",
+ "why": "lip-sync re-shoot 2: 'Lots of pals' has two syllables before the p closure, 'Hos-pitals' one; 'Top pickles' matches (one syllable, p closure, two)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fire-sale/moodboard/S02h.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fire-sale/scenes/fire-sale",
+  "key": "S02hk",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T10:43:36.300Z"
+ }
+}
