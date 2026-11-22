@@ -1,0 +1,146 @@
+{
+ "title": "the-den Look Refs",
+ "eyebrow": "the-den · look references",
+ "heading": "the-den: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "converted warehouse loft exposed brick dark interior",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "vSfKVKPMvLw",
+       "src": "unsplash/vSfKVKPMvLw.jpg",
+       "label": "a room with a ladder and bookshelves · Tim Wildsmith"
+      },
+      {
+       "id": "uHlKDdc_yIs",
+       "src": "unsplash/uHlKDdc_yIs.jpg",
+       "label": "white wooden window frame on brown brick wall · Yi Sheng Low"
+      },
+      {
+       "id": "g7erQWhu98g",
+       "src": "unsplash/g7erQWhu98g.jpg",
+       "label": "A black and white photo of a room with a pool table · Eliezer Muller"
+      },
+      {
+       "id": "_QWsg5jp2Uc",
+       "src": "unsplash/_QWsg5jp2Uc.jpg",
+       "label": "a living room with a large window and a couch · Alex Ugolkov"
+      },
+      {
+       "id": "gwXKwOYBF-0",
+       "src": "unsplash/gwXKwOYBF-0.jpg",
+       "label": "white and black checkered wall · Matthew LeJune"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "industrial loft armchairs row brick wall",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "_fL6usWF008",
+       "src": "unsplash/_fL6usWF008.jpg",
+       "label": "Row of brick pillars with sunlight casting shadows · LISK OBE"
+      },
+      {
+       "id": "j_-fLnrZr-s",
+       "src": "unsplash/j_-fLnrZr-s.jpg",
+       "label": "A white armchair with a yellow pillow against a weathered in · tommao wang"
+      },
+      {
+       "id": "x1oqVgXJSXA",
+       "src": "unsplash/x1oqVgXJSXA.jpg",
+       "label": "an empty room with large windows and wooden floors · Alex Kolundzija"
+      },
+      {
+       "id": "rK3FKKFiuQI",
+       "src": "unsplash/rK3FKKFiuQI.jpg",
+       "label": "Leather sofa in a library with tall bookshelves · Zhifei Zhou"
+      },
+      {
+       "id": "qYBMGzrYFJg",
+       "src": "unsplash/qYBMGzrYFJg.jpg",
+       "label": "A red brick industrial building with green window frames and · Nathan Baessi"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "iron staircase warehouse loft",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ECSP5pDeCI4",
+       "src": "unsplash/ECSP5pDeCI4.jpg",
+       "label": "white and brown wooden staircase · Garin Chadwick"
+      },
+      {
+       "id": "iJuuCynzrdQ",
+       "src": "unsplash/iJuuCynzrdQ.jpg",
+       "label": "a wooden staircase in a building · Maddison Reid"
+      },
+      {
+       "id": "4rAkOR5qaFQ",
+       "src": "unsplash/4rAkOR5qaFQ.jpg",
+       "label": "a group of people walking up a set of stairs · Ümit Yıldırım"
+      },
+      {
+       "id": "j2kVWD6eypc",
+       "src": "unsplash/j2kVWD6eypc.jpg",
+       "label": "A staircase with windows casts striking shadows · Elizabeth Smirnova"
+      },
+      {
+       "id": "WGzdb6J-orI",
+       "src": "unsplash/WGzdb6J-orI.jpg",
+       "label": "a staircase leading to a bed in a room · Komorebi Photo"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "stacks of cash banknotes table",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WyxqQpyFNk8",
+       "src": "unsplash/WyxqQpyFNk8.jpg",
+       "label": "close up of stacked hundred dollar bills · Giorgio Trovato"
+      },
+      {
+       "id": "e-CrwdBNL7k",
+       "src": "unsplash/e-CrwdBNL7k.jpg",
+       "label": "a stack of money sitting on top of a white table · Celyn Kang"
+      },
+      {
+       "id": "mZZ0ls7X9tc",
+       "src": "unsplash/mZZ0ls7X9tc.jpg",
+       "label": "100 us dollar bill · Nathan Dumlao"
+      },
+      {
+       "id": "M7iMdnG4R_g",
+       "src": "unsplash/M7iMdnG4R_g.jpg",
+       "label": "A spiraling stack of hundred dollar bills with crumpled bank · Igor Omilaev"
+      },
+      {
+       "id": "flLIatOhneo",
+       "src": "unsplash/flLIatOhneo.jpg",
+       "label": "A pile of foreign currency sitting on top of a wooden table · Karolina Bobek"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

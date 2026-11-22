@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-22T15:49:27+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/TqCfPD3aWvj7tw5hZgYjtL",
+  "what": "Unsplash set references for the warehouse pitch-show set (4 rows x 5)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/refs-picks.json <out.html>"
+ }
+]
