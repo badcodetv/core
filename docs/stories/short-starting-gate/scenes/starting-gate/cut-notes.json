@@ -1,12 +1,12 @@
 {
- "round": 4,
+ "round": 5,
  "plan": [
   {
-   "h": "Rough cut 4: a horse logo outro",
+   "h": "Rough cut 5: the logo sprayed on Wages",
    "items": [
-    "WAGES finally breaks out: the stall doors swing open, he charges straight at the camera until his chest blacks out the lens, and the logo comes up out of the black.",
-    "4 takes; BURSTb picked (the doors open properly; BURSTa's gate and cloth vanish in one jump). Its own clank and hooves carry the end, no speech in it.",
-    "Round 3's box clip (BadCode turning to us) is out; it can come back before the breakout. Now 39.3 s."
+    "Breakout removed. WAGES walks side-on, the camera tracking with him, the BadCode logo painted on his flank, then a fade to black.",
+    "Done like the pint glass: a plain real-looking clip, the official logo file laid on in post, tracked to his coat, the hair texture and his light and shade through the paint.",
+    "Now 35.3 s (the outro is 4 s)."
    ]
   },
   {
@@ -20,7 +20,7 @@
  "replies": {
   "at728": "Fixed: ONEGATEa left a ghost row at the gate while the field ran (the \"teleport\"). Re-shot 3 takes with the stall kept standing; ONEGATEe has the whole field leave level and nothing jumps. The other two (c, d) are on the clips page. Picture only, no new words.",
   "at788": "Done: a photo finish. The field freezes level on the line, a camera flash and shutter click, a black-and-white judges' print scans across left to right with a timing ruler and a finish line on the hooves, header \"PHOTOGRAPH\" (the call a UK course makes), then it dissolves into the logo. Sound synthesised, no outside clips. Want a stamp on it like \"DEAD HEAT\"? Your words. Round 3: replaced by the BadCode clip (see at794).",
-  "at794": "Changed: the photo finish is gone. Now a simple clip: BadCode in the commentary box lowers his binoculars, turns to camera, the camera eases in on the tweed mask, and the mask dissolves into the BadCode logo. Made 4 takes; OUTc picked, the only one with the brand mask (one red triangle; two takes grew a triangle on each eye). New material: 4 Flow clips. Round 4: replaced by the WAGES breakout into the logo (your chat note: \"a cool badcode logo outro to do with horses\")."
+  "at794": "Changed: the photo finish is gone. Now a simple clip: BadCode in the commentary box lowers his binoculars, turns to camera, the camera eases in on the tweed mask, and the mask dissolves into the BadCode logo. Made 4 takes; OUTc picked, the only one with the brand mask (one red triangle; two takes grew a triangle on each eye). New material: 4 Flow clips. Round 4: replaced by the WAGES breakout into the logo (your chat note: \"a cool badcode logo outro to do with horses\"). Round 5: the logo is now sprayed on WAGES' flank as he walks (your chat note)."
  },
  "jack_round1": [
   {
@@ -66,5 +66,6 @@
    "tc": "00:00:33:02"
   }
  ],
- "jack_round3_chat": "please make a cool badcode logo outro to do with horses thanks"
+ "jack_round3_chat": "please make a cool badcode logo outro to do with horses thanks",
+ "jack_round4_chat": "remove the horse outro, it is ai slop, i mean like the beer outro, something like that but horse themed, like it is sprayed on the side of a horse and it is moving or somehting thanks"
 }

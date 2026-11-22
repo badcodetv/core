@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r5/FLANK-a-a.jpg",
+ "made": "2026-11-22T14:59:28.288Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 photograph. A chestnut thoroughbred with a long white blaze down his face walks calmly from right to left along a wet grass racecourse, seen exactly side-on with his left side to the camera, head at the left of frame and tail at the right. He fills the full width of the frame, legs mid-stride: near foreleg reaching forward, opposite hind leg pushing off. His bare shoulder and flank sit in the middle third of the picture as one broad, smooth, unbroken stretch of glossy chestnut coat, evenly lit, with only a plain leather bridle on his head. At the far left edge, just past his muzzle, a dark coat sleeve and a gloved hand hold the bridle. Above him, a pale grey sky and a long grey grandstand far in the distance behind a white running rail; below, dark rain-soaked turf with water beading on the blades. Camera level with his flank, medium distance. Real-looking photograph of an English racecourse on a grey, wet day, soft flat overcast light.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-22: horse-themed outro like the beer outro, logo sprayed on the side of a moving horse; sealed writer cleanroom/outro-r5.json; refs: Unsplash layout + WAGES identity",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ref-flank.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ref-flank.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/still-STALL.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "ac0ba79b-0e3f-41e7-98aa-5ff3667989ac"
+}

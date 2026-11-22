@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r5/FLANK-c-b.jpg",
+ "made": "2026-11-22T15:00:54.923Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the provided image, move the camera much closer to the same chestnut horse at the same side-on angle and flank height: his shoulder, barrel and the front of his hindquarters now fill the frame from edge to edge, his neck and the base of his mane entering at the upper left, his legs mid-stride running out of the bottom of the frame. The middle of the picture is one large, smooth, evenly lit stretch of bare chestnut coat, damp from the drizzle, with fine hair texture visible. Above his back, a strip of the white rail, the grey grandstand and the overcast sky, softly out of focus. Same light, same coat colour, same wet English racecourse.",
+ "model": "Nano Banana 2.1",
+ "why": "Direct fix of FLANK-b-a (horse too small for the logo): camera closer so the shoulder and barrel fill the frame",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/FLANK-b-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/FLANK-b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 4
+ },
+ "source_id": "a255c928-6735-4625-bb93-5fbe45957357"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/stills/r5/FLANK-b-a.jpg",
+ "made": "2026-11-22T14:59:25.922Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 photograph, slightly closer and a touch lower in tone. A chestnut racehorse with a white blaze, side-on with his left side facing us, walks steadily from right to left across soaked green turf, head toward the left edge, tail swinging at the right. His body spans the whole width of the frame, hooves just inside the lower part of the picture, one foreleg lifted and the hind legs staggered in a relaxed walking stride. The centre of the image is his clean, bare shoulder and barrel: a large calm field of rich chestnut coat, damp-sheened from light drizzle, lit evenly with no hard shadows, open and uncluttered from withers to belly. He wears only a simple bridle; a sleeve and hand rest on the cheekpiece at the very left edge beyond his head. Behind him, a white rail runs level across the frame, a misty grey grandstand sits small on the horizon, and a heavy grey sky fills the top. Camera at flank height. Real-looking photograph, English racecourse on a grey, rainy afternoon.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack 2026-11-22: horse-themed outro like the beer outro, logo sprayed on the side of a moving horse; sealed writer cleanroom/outro-r5.json; refs: Unsplash layout + WAGES identity",
+ "parent": "/home/jackt/.cache/badcode-refs/starting-gate/ref-flank.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/starting-gate/ref-flank.jpg",
+   "/home/jackt/.cache/badcode-refs/starting-gate/still-STALL.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "5bac44af-0964-47db-816e-5bf23e7eae9c"
+}

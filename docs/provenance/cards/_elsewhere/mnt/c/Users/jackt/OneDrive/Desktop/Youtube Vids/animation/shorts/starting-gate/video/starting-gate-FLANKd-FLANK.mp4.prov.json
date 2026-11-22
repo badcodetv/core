@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-FLANKd-FLANK.mp4",
+ "made": "2026-11-22T15:03:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Continuing from the opening frame, the camera glides parallel to the walking chestnut horse on a level, stable track, matching his speed so his body holds its exact position and size in the frame from start to finish while the racecourse slides by behind. He moves calmly from right to left, side-on, his left side to us: legs reaching and planting in an easy walk, fetlocks flexing, hooves pressing into the soaked turf; his neck lengthens and draws back with the rhythm of his stride, and he snorts once. The wide bare stretch of chestnut coat across his shoulder and flank stays clean and open in the centre of the frame, catching soft overcast light as the muscles beneath it ripple. In the background the white running rail and the distant grey grandstand drift steadily rightward under a grey sky, rain falling lightly. One unbroken shot at flank height. Sound: hooves on soft wet grass, a snort, gentle rain, a faraway crowd, no talking.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/FLANK.jpg",
+ "why": "Jack 2026-11-22 horse outro like the beer outro (logo sprayed on a moving horse): sealed writer cleanroom/outro-r5.json clips; head/ear/tail moves cut (the closer still FLANK-c-b has no head in frame), direct fix",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/moodboard/FLANK.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-starting-gate/scenes/starting-gate",
+  "key": "FLANKd",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-22T15:02:30.196Z"
+ }
+}

@@ -21,10 +21,13 @@ VOICE = 'comm-b'  # Jack's pick, 2026-11-22
 LOGO = REPO / 'docs/brand/logo/badcode-stacked-reversed-2400.png'
 # Round 2's photo-finish outro (scripts/shorts/gate_outro.py) was dropped in round 3 (Jack r2 at794: "this is weird change
 # it, all the horses morph and change, maybe make it more of a simple clip, also where is the badcode outro").
-# Round 3's box clip (OUTc, BadCode turns to us) was replaced in round 4 (Jack: "please make a cool badcode logo outro to do
-# with horses"): WAGES finally bursts out of his stall and charges the lens until it goes black; the logo comes up out of it.
-OUT_CLIP, OUT_IN, OUT_DUR = 'starting-gate-BURSTb-STALL.mp4', 1.0, 5.4   # Claude's pick, round 4; black from clip 6.3 s
-ROOM_DB = {'outro': -3}   # the clip's own sound per shot (default -12 dB): the breakout's clank and hooves carry the end
+# Round 3's box clip (OUTc) and round 4's breakout (BURSTb, Jack: "remove the horse outro, it is ai slop") are out. Round 5:
+# "like the beer outro ... horse themed, like it is sprayed on the side of a horse and it is moving": WAGES walks side-on,
+# the camera tracking with him, the official logo file painted onto his flank (scripts/shorts/gate_flank_logo.py).
+OUT_CLIP, OUT_IN, OUT_DUR = 'starting-gate-FLANKb-FLANK.mp4', 3.5, 4.0   # Claude's pick, round 5: the settled stretch
+FLANK = dict(cx=700, cy=900, w=380, opacity=0.94, fade=0.4)                 # the logo on the barrel at OUT_IN, 1080x1920 px
+FLANK_PY = pathlib.Path.home() / '.cache/badcode-lips/venv/bin/python'
+ROOM_DB = {'outro': 6}   # the clip's own sound per shot (default -12 dB): the flank clip is quiet (-31.5 LUFS), so up
 W, H, FPS = 1080, 1920, 24
 CLAMP = 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\\,20\\,235)'
 ENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', '-color_range', 'tv',
@@ -46,8 +49,7 @@ SHOTS = [
     ('winners', '5. Houses home', 'starting-gate-WINNERSb-WINNERS.mp4', 0.0, 3.2, 0, [('03-home', 0.1)], 'HOUSES and its owners, champagne'),
     ('trot', '6. Wages is away', 'starting-gate-TROTb-TROT.mp4', 1.0, 5.3, 0, [], 'WAGES trots alone along the flooded course'),
     ('onegate', '7. One gate', 'starting-gate-ONEGATEe-ONEGATE.mp4', 0.0, 7.5, 2.3, [('04-onegate', 0.2)], 'Next race: everybody out at once'),
-    ('outro', '8. Wages breaks out', OUT_CLIP, OUT_IN, OUT_DUR, 0, [], 'The stall doors swing open; WAGES bursts out and charges the lens until it goes black'),
-    ('logo', '9. The logo', None, 0, 2.6, 0, [], 'The logo comes up out of the black'),
+    ('outro', '8. The logo on Wages', OUT_CLIP, OUT_IN, OUT_DUR, 0, [], 'WAGES walks side-on with the BadCode logo sprayed on his flank; fade to black'),
 ]
 
 
@@ -69,7 +71,11 @@ def main():
         pf = cut / f'v{n:02d}-{bid}.mp4'
         if src:
             vf = VF + (f',tpad=start_mode=clone:start_duration={hold}' if hold else '') + f',tpad=stop_mode=clone:stop_duration=4,{CLAMP}'
-            ff('-ss', cin, '-i', VID / src, '-vf', vf, '-frames:v', fr, '-an', *ENC, pf)
+            if bid == 'outro':
+                subprocess.run([str(FLANK_PY), str(REPO / 'scripts/shorts/gate_flank_logo.py'), str(VID / src), str(pf), '--in', str(cin),
+                                '--dur', str(sd), *[x for k, v in FLANK.items() for x in (f'--{k}', str(v))]], check=True)
+            else:
+                ff('-ss', cin, '-i', VID / src, '-vf', vf, '-frames:v', fr, '-an', *ENC, pf)
             room.append((st, VID / src, cin, sd, hold, ROOM_DB.get(bid, -12)))
             events.append({'stem': 'amb-room', 't': st, 'dur': sd, 'what': f"{title}: the clip's own sound", 'src': src})
         else:
@@ -120,7 +126,7 @@ def main():
            'flags': ['No music yet. Room sound is the clips\' own (no speech in any picked clip).',
                      'The commentary runs at its natural pace: about 34 s against the script\'s 17. Trim notes welcome (which pauses, which lines).',
                      'The way out (one gate) is Claude\'s: no BadCode government policy on record.',
-                     'Outro: WAGES breaks out of his stall and blacks out the lens into the logo (round 4, Jack: "a cool badcode logo outro to do with horses").']}
+                     'Outro: the logo sprayed on WAGES\' flank as he walks (round 5, Jack: "like the beer outro ... sprayed on the side of a horse").']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4')}))
 

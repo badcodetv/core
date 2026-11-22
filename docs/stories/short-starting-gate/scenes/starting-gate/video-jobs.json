@@ -174,6 +174,34 @@
    "still": "STALL",
    "motion": "Fixed camera on the ground just in front of the stall, looking straight in at the chestnut horse with the white stripe down its face. A beat of stillness, then the gate bursts open and the horse explodes out, charging directly toward us at full gallop, so close that its body rushes over the camera and blots out all the light. Clods of mud spray at the lens. Sound: the gate crashing open, a whinny, hooves pounding closer and closer, then a rush of air, no talking.",
    "why": "Jack 2026-11-22: 'please make a cool badcode logo outro to do with horses thanks': WAGES finally breaks out of his stall and charges the lens, blacking it out into the logo; direct prompts, no new writer"
+  },
+  {
+   "key": "FLANKa",
+   "n": 1,
+   "still": "FLANK",
+   "motion": "Starting from the still, a single smooth tracking shot travels sideways alongside the chestnut horse at exactly his walking pace, lens held at the height of his flank, so he stays locked in the same place and size in the frame for all eight seconds. He walks right to left with an unhurried four-beat walk: each hoof lifts, swings forward and sets down softly into the wet grass, hind feet landing close to where the fore feet left. His neck rises and falls gently with each step. Across his bare shoulder and flank the muscles roll and shift under the smooth chestnut coat, which stays clear and evenly lit in the middle of the frame throughout. The white rail, grey grandstand and wet turf glide steadily past from left to right behind him. One continuous take, steady framing, same angle throughout. Light drizzle, soft grey daylight. Sound: hooves thudding on soft wet grass, one breathy snort, steady rain, a distant crowd murmur, no talking.",
+   "why": "Jack 2026-11-22 horse outro like the beer outro (logo sprayed on a moving horse): sealed writer cleanroom/outro-r5.json clips; head/ear/tail moves cut (the closer still FLANK-c-b has no head in frame), direct fix"
+  },
+  {
+   "key": "FLANKb",
+   "n": 1,
+   "still": "FLANK",
+   "motion": "Starting from the still, a single smooth tracking shot travels sideways alongside the chestnut horse at exactly his walking pace, lens held at the height of his flank, so he stays locked in the same place and size in the frame for all eight seconds. He walks right to left with an unhurried four-beat walk: each hoof lifts, swings forward and sets down softly into the wet grass, hind feet landing close to where the fore feet left. His neck rises and falls gently with each step. Across his bare shoulder and flank the muscles roll and shift under the smooth chestnut coat, which stays clear and evenly lit in the middle of the frame throughout. The white rail, grey grandstand and wet turf glide steadily past from left to right behind him. One continuous take, steady framing, same angle throughout. Light drizzle, soft grey daylight. Sound: hooves thudding on soft wet grass, one breathy snort, steady rain, a distant crowd murmur, no talking.",
+   "why": "Jack 2026-11-22 horse outro like the beer outro (logo sprayed on a moving horse): sealed writer cleanroom/outro-r5.json clips; head/ear/tail moves cut (the closer still FLANK-c-b has no head in frame), direct fix"
+  },
+  {
+   "key": "FLANKc",
+   "n": 1,
+   "still": "FLANK",
+   "motion": "Continuing from the opening frame, the camera glides parallel to the walking chestnut horse on a level, stable track, matching his speed so his body holds its exact position and size in the frame from start to finish while the racecourse slides by behind. He moves calmly from right to left, side-on, his left side to us: legs reaching and planting in an easy walk, fetlocks flexing, hooves pressing into the soaked turf; his neck lengthens and draws back with the rhythm of his stride, and he snorts once. The wide bare stretch of chestnut coat across his shoulder and flank stays clean and open in the centre of the frame, catching soft overcast light as the muscles beneath it ripple. In the background the white running rail and the distant grey grandstand drift steadily rightward under a grey sky, rain falling lightly. One unbroken shot at flank height. Sound: hooves on soft wet grass, a snort, gentle rain, a faraway crowd, no talking.",
+   "why": "Jack 2026-11-22 horse outro like the beer outro (logo sprayed on a moving horse): sealed writer cleanroom/outro-r5.json clips; head/ear/tail moves cut (the closer still FLANK-c-b has no head in frame), direct fix"
+  },
+  {
+   "key": "FLANKd",
+   "n": 1,
+   "still": "FLANK",
+   "motion": "Continuing from the opening frame, the camera glides parallel to the walking chestnut horse on a level, stable track, matching his speed so his body holds its exact position and size in the frame from start to finish while the racecourse slides by behind. He moves calmly from right to left, side-on, his left side to us: legs reaching and planting in an easy walk, fetlocks flexing, hooves pressing into the soaked turf; his neck lengthens and draws back with the rhythm of his stride, and he snorts once. The wide bare stretch of chestnut coat across his shoulder and flank stays clean and open in the centre of the frame, catching soft overcast light as the muscles beneath it ripple. In the background the white running rail and the distant grey grandstand drift steadily rightward under a grey sky, rain falling lightly. One unbroken shot at flank height. Sound: hooves on soft wet grass, a snort, gentle rain, a faraway crowd, no talking.",
+   "why": "Jack 2026-11-22 horse outro like the beer outro (logo sprayed on a moving horse): sealed writer cleanroom/outro-r5.json clips; head/ear/tail moves cut (the closer still FLANK-c-b has no head in frame), direct fix"
   }
  ]
 }

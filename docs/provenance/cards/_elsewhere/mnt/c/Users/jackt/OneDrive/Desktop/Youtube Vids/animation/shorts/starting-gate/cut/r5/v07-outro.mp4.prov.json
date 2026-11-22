@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/cut/r5/v07-outro.mp4",
+ "made": "2026-11-22T15:06:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "opencv+ffmpeg",
+ "tool": "scripts/shorts/gate_flank_logo.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/starting-gate/video/starting-gate-FLANKb-FLANK.mp4",
+ "why": "Logo painted on WAGES' flank, tracked (Jack round 5)",
+ "inputs": {
+  "logo": "docs/brand/logo/badcode-stacked-reversed-2400.png"
+ },
+ "settings": {
+  "cx": "700",
+  "cy": "900",
+  "w": "380",
+  "in": "3.5",
+  "dur": "4.0"
+ }
+}
