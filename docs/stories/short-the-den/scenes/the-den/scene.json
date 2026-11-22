@@ -3,7 +3,10 @@
   "scene": "the-den",
   "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den",
   "video": {
-    "aspect": "9:16"
+    "aspect": "9:16",
+    "model": "Omni 1.2 Flash",
+    "mode": "Frames",
+    "duration": 8
   },
   "beats": [
     "The minister's pitch: two billion, scare them straight, a good feeling; everyone out",
@@ -13,5 +16,6 @@
   "flow_project": "c9bd669c-40b7-4009-b17c-24f38362ad89",
   "boards": {
     "moodboard": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg"
-  }
+  },
+  "stills": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg"
 }
