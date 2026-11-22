@@ -1,0 +1,62 @@
+{
+ "narrator": {
+  "text": "Next into the den: a government minister, asking for two billion pounds.",
+  "voices": [
+   "en-gb-training-1",
+   "en-gb-storyteller-4",
+   "en-gb-podcaster-2",
+   "en-gb-training-11"
+  ]
+ },
+ "minister": {
+  "text": "Two billion pounds. Every teenager in the country, taken round a prison. Scare them straight. ... I've got a good feeling.",
+  "voices": [
+   "en-gb-advisor-8",
+   "en-gb-tutor-8",
+   "en-gb-tutor-9",
+   "en-gb-advisor-3"
+  ]
+ },
+ "nurse": {
+  "text": "One ward. Six months. If readmissions don't fall by a tenth, you stop paying me.",
+  "voices": [
+   "en-gb-assistant-9",
+   "en-gb-advisor-7",
+   "en-gb-training-4",
+   "en-gb-techagent-5"
+  ]
+ },
+ "badcode": {
+  "text": "And how will you know it works? ... I'm in.",
+  "voices": [
+   "en-gb-advisor-10",
+   "en-gb-podcaster-9",
+   "en-gb-assistant-8",
+   "en-gb-advisor-5"
+  ]
+ },
+ "inv-a": {
+  "text": "I'm out.",
+  "voices": [
+   "en-gb-training-6",
+   "en-gb-tutor-5",
+   "en-gb-tutor-20"
+  ]
+ },
+ "inv-c": {
+  "text": "I'm out.",
+  "voices": [
+   "en-gb-concierge-10",
+   "en-gb-csagent-3",
+   "en-gb-assistant-5"
+  ]
+ },
+ "inv-d": {
+  "text": "I'm out.",
+  "voices": [
+   "en-gb-techagent-6",
+   "en-gb-assistant-6",
+   "en-gb-concierge-11"
+  ]
+ }
+}
