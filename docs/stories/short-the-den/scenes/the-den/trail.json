@@ -22,5 +22,13 @@
   "url": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg",
   "what": "Pitch shots: STAIRS, MIN, NURSE (2 each), WIDE (4)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/stills-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-22T16:52:17+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/FjVZTA2eaYAZtZJpmKf7oc",
+  "what": "Voice casting r1: 25 library takes across 7 roles (transcribed)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/voices/picks.json <out.html>"
  }
 ]

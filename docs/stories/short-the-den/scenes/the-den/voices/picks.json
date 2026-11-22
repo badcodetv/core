@@ -1,0 +1,220 @@
+{
+ "title": "The Den Voices",
+ "eyebrow": "The Den \u00b7 voices",
+ "heading": "Cast the voices",
+ "intro": "Google's own voice library, read plain (no accent or acting in the prompt). One pick per role; a note like \"older\" or \"less posh\" gets a new round for that role.",
+ "sections": [
+  {
+   "h": "Round 1",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "narrator",
+     "title": "Narrator (the show's voice-over)",
+     "line": "Next into the den: a government minister, asking for two billion pounds.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-training-1",
+       "src": "casting/narrator--en-gb-training-1.wav",
+       "label": "en-gb-training-1: male, 55, Winchester",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-storyteller-4",
+       "src": "casting/narrator--en-gb-storyteller-4.wav",
+       "label": "en-gb-storyteller-4: male, 56, Bristol",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-podcaster-2",
+       "src": "casting/narrator--en-gb-podcaster-2.wav",
+       "label": "en-gb-podcaster-2: female, 49, Winchester",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-training-11",
+       "src": "casting/narrator--en-gb-training-11.wav",
+       "label": "en-gb-training-11: male, 53, Newcastle",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "minister",
+     "title": "The minister",
+     "line": "Two billion pounds. Every teenager in the country, taken round a prison. Scare them straight. ... I've got a good feeling.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-advisor-8",
+       "src": "casting/minister--en-gb-advisor-8.wav",
+       "label": "en-gb-advisor-8: male, 42, Winchester",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-tutor-8",
+       "src": "casting/minister--en-gb-tutor-8.wav",
+       "label": "en-gb-tutor-8: male, 49, Winchester",
+       "warn": "slow: 10.8 s"
+      },
+      {
+       "id": "en-gb-tutor-9",
+       "src": "casting/minister--en-gb-tutor-9.wav",
+       "label": "en-gb-tutor-9: male, 46, Winchester",
+       "warn": "whisper heard \"taking\": listen"
+      },
+      {
+       "id": "en-gb-advisor-3",
+       "src": "casting/minister--en-gb-advisor-3.wav",
+       "label": "en-gb-advisor-3: male, 46, Bristol",
+       "warn": "says \"take them around\" (wrong word)"
+      }
+     ]
+    },
+    {
+     "slot": "nurse",
+     "title": "The nurse",
+     "line": "One ward. Six months. If readmissions don't fall by a tenth, you stop paying me.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-assistant-9",
+       "src": "casting/nurse--en-gb-assistant-9.wav",
+       "label": "en-gb-assistant-9: female, 30, Newcastle",
+       "warn": "whisper heard \"peeing\" (accent on \"paying\"?): listen"
+      },
+      {
+       "id": "en-gb-advisor-7",
+       "src": "casting/nurse--en-gb-advisor-7.wav",
+       "label": "en-gb-advisor-7: female, 30, Newcastle",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-training-4",
+       "src": "casting/nurse--en-gb-training-4.wav",
+       "label": "en-gb-training-4: female, 26, Manchester",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-techagent-5",
+       "src": "casting/nurse--en-gb-techagent-5.wav",
+       "label": "en-gb-techagent-5: female, 26, Glasgow",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "badcode",
+     "title": "BadCode (masked investor)",
+     "line": "And how will you know it works? ... I'm in.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-advisor-10",
+       "src": "casting/badcode--en-gb-advisor-10.wav",
+       "label": "en-gb-advisor-10: male, 30, Bristol",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-podcaster-9",
+       "src": "casting/badcode--en-gb-podcaster-9.wav",
+       "label": "en-gb-podcaster-9: male, 45, Manchester",
+       "warn": "\"And\" may be swallowed"
+      },
+      {
+       "id": "en-gb-assistant-8",
+       "src": "casting/badcode--en-gb-assistant-8.wav",
+       "label": "en-gb-assistant-8: male, 39, Bristol",
+       "warn": "\"And\" may be swallowed"
+      },
+      {
+       "id": "en-gb-advisor-5",
+       "src": "casting/badcode--en-gb-advisor-5.wav",
+       "label": "en-gb-advisor-5: male, 48, Manchester",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "inv-a",
+     "title": "Investor A: \"I'm out.\"",
+     "line": "I'm out.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-training-6",
+       "src": "casting/inv-a--en-gb-training-6.wav",
+       "label": "en-gb-training-6: female, 61, Liverpool",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-tutor-5",
+       "src": "casting/inv-a--en-gb-tutor-5.wav",
+       "label": "en-gb-tutor-5: female, 62, Glasgow",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-tutor-20",
+       "src": "casting/inv-a--en-gb-tutor-20.wav",
+       "label": "en-gb-tutor-20: female, 63, Winchester",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "inv-c",
+     "title": "Investor C: \"I'm out.\"",
+     "line": "I'm out.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-concierge-10",
+       "src": "casting/inv-c--en-gb-concierge-10.wav",
+       "label": "en-gb-concierge-10: male, 64, Liverpool",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-csagent-3",
+       "src": "casting/inv-c--en-gb-csagent-3.wav",
+       "label": "en-gb-csagent-3: male, 62, Manchester",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-assistant-5",
+       "src": "casting/inv-c--en-gb-assistant-5.wav",
+       "label": "en-gb-assistant-5: male, 62, Glasgow",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "inv-d",
+     "title": "Investor D: \"I'm out.\"",
+     "line": "I'm out.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-techagent-6",
+       "src": "casting/inv-d--en-gb-techagent-6.wav",
+       "label": "en-gb-techagent-6: female, 35, Manchester",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-assistant-6",
+       "src": "casting/inv-d--en-gb-assistant-6.wav",
+       "label": "en-gb-assistant-6: female, 35, Glasgow",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-concierge-11",
+       "src": "casting/inv-d--en-gb-concierge-11.wav",
+       "label": "en-gb-concierge-11: female, 36, Bristol",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
