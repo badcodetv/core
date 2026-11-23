@@ -259,7 +259,7 @@
   {
    "id": "B",
    "title": "Move eviction claims to a dedicated housing tribunal",
-   "answer": "Possession claims rose 21% to 28,249 in a quarter, with accelerated claims up 68% to a record 12,156 (s1). The Ministry of Justice should move landlord possession claims out of the general courts into a dedicated housing tribunal with its own judges, staff and budget, so other cases stop queuing behind them. It would also run free early mediation for both sides before a hearing. The Law Society says the courts are not resourced for the increase (s2). We would know it worked if completed repossessions, down 10% to 6,886 (s1), recover, waits stay near 25.9 weeks or fall (s2), and the tribunal reports on both.",
+   "answer": "Possession claims rose 21% to 28,249 in a quarter, with accelerated claims up 68% to a record 12,156 (s1). The Ministry of Justice should move landlord possession claims out of the general courts into a dedicated housing tribunal with its own judges, staff and budget. It would also run free early mediation for both sides before a hearing. The Law Society says the courts are not resourced for the increase (s2). We would know it worked if completed repossessions, down 10% to 6,886 (s1), recover, waits stay near 25.9 weeks or fall (s2), and the tribunal reports on both.",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -501,7 +501,7 @@
   "trial": "In one simulated county court area, for six months, landlords pay a higher claim fee, ring-fenced for extra judge sitting days and court staff there. Landlords must offer mediation or a payment plan before issuing, and the fee is refunded if the case settles. Tenants keep full hearings.",
   "fail_number": "If median claim-to-possession time in the trial area is not at least 2 weeks shorter than before, or more than 1 in 10 landlords pass the fee into rent, it has failed.",
   "stop": "2027-06-01",
-  "statement": "Claims are up. Courts are full. Somebody has to pay for the extra bench. The jury, twelve simulated jurors, split four, three, two, three, and the biggest group said: landlords pay, and the money goes to judges. So we build exactly that, in one court area. The fee goes on the claim, not on the rent. Every pound is ring-fenced for sitting days. Tenants keep their hearing. Count the weeks. If the wait doesn't shorten, it was a drawing with no stairs."
+  "statement": "Claims are up. Courts are full. Somebody has to pay for the extra bench. The jury, twelve simulated jurors, split four, three, two, three, and the biggest group said: landlords pay, and the money goes to judges. So we build exactly that, in one court area. The fee goes on the claim, not on the rent. Every pound is ring-fenced for sitting days. Tenants keep their hearing. Count the weeks. If the wait doesn't shorten, it failed, and we stop."
  },
  "predictions": [
   {

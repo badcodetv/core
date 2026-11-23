@@ -453,7 +453,7 @@
   "post": "housing",
   "decision": "signed",
   "trial": "From 1 April 2027, in the tribunal's service charge cases in one region, landlords carry their own legal costs and cannot add them to the bill. Leaseholders who win recover theirs. Small landlords with a handful of flats get standard forms and a named helper.",
-  "fail_number": "Fewer than 1 in 10 challenges end with leaseholders dropping the case over cost by the stop date, against today's 89% who say charges are hard to challenge.",
+  "fail_number": "It fails if more than 1 in 10 service charge challenges in the trial region are dropped over cost.",
   "stop": "2027-09-30",
   "statement": "Five of twelve simulated jurors said: the landlord sends the bill, the landlord pays for the argument. Fair. I'm signing a small trial, not a national programme. One region. Landlords carry their own costs. Leaseholders who win get theirs back. The trade-off: small landlords. A one-flat landlord is not a fund, so they get the forms and a helper. Show me it works, or we stop."
  },

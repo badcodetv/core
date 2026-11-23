@@ -577,7 +577,7 @@
   {
    "id": "p3",
    "answer": "A",
-   "claim": "By 22 January 2027 DWP has confirmed in writing that the Jobs Guarantee opens after 12 months on Universal Credit, as the Secretary said it would.",
+   "claim": "By 22 January 2027 DWP has confirmed in writing that the Jobs Guarantee opens after 12 months on Universal Credit, as the 17 November statement said it would (s2).",
    "prior": 0.5,
    "due": "2027-01-22",
    "rule": "True if a GOV.UK DWP page dated up to 22 Jan 2027 states the 12-month start for the Jobs Guarantee.",
