@@ -62,10 +62,12 @@ from `/tmp/live`. Say in your final line that the push failed.
 
 ## 3. Build the feed
 
+Build inside the working directory, because a publish can only read files there or in your scratchpad:
+
 ```bash
-mkdir -p /tmp/page
-cp docs/government/simulation/page/index.html /tmp/page/index.html
-node scripts/government/sim/sim.mjs feed /tmp/live/docs/government/simulation/issues /tmp/page/feed.json --today <today>
+mkdir -p .sim-page
+cp docs/government/simulation/page/index.html .sim-page/index.html
+node scripts/government/sim/sim.mjs feed /tmp/live/docs/government/simulation/issues .sim-page/feed.json --today <today>
 ```
 
 The page is always built from `main`'s `index.html`. The issues come from `simulation/live`. Invalid or
@@ -73,13 +75,13 @@ unfinished issues are left out automatically and listed under `skipped`.
 
 ## 4. Republish the page
 
-- Call `Artifact` with `action: "read"` on the page URL first. A publish to an artifact this session
-  hasn't read is refused.
+- Read first: call `Artifact` with `action: "read"` on the page URL, then again with
+  `path: "feed.json"`. A publish that replaces a file this session hasn't read is refused.
 - Then call `Artifact` with:
   - `action: "publish"`;
   - `url`: the page URL;
-  - `file_path`: `/tmp/page/index.html`;
-  - `files`: `{"feed.json": "/tmp/page/feed.json"}`.
+  - `file_path`: `.sim-page/index.html` (as an absolute path);
+  - `files`: `{"feed.json": "<absolute path of .sim-page/feed.json>"}`.
 - Don't pass `icon`, `capabilities` or `force`.
 - If the publish is refused because of a conflict, read again and publish once more. If it still fails,
   stop.
