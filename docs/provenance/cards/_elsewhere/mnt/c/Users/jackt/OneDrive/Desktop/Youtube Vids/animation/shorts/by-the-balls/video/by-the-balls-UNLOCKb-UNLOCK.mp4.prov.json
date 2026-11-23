@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-UNLOCKb-UNLOCK.mp4",
+ "made": "2026-11-23T14:40:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A slight push-in towards the dial. The worker's gloved hand turns the key a firm quarter-turn; a beat. Then he hooks his fingers behind the edge of the steel cover and swings it wide open to the right in one smooth arc, until it stops against its hinge, catching a flash of light. He draws his hand back and stays bent over the panel, head still angled towards the uncovered dial. Keys sway on their ring. Sound: a crisp lock click, heavy metal swinging, a dull stop, keys chinking, arcade room tone.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/UNLOCK.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/UNLOCK.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "UNLOCKb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T14:39:32.681Z"
+ }
+}

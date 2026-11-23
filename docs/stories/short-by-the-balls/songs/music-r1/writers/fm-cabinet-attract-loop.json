@@ -1,0 +1,13 @@
+{
+  "name": "fm-cabinet-attract-loop",
+  "style": "1980s arcade game soundtrack, FM synthesis, 4-operator Yamaha FM chip lead, bright glassy bell-like melody, slap-style FM bass, thin sampled PCM drums, attract-mode loop, upbeat, 140 BPM, major key, short looping phrases, coin-op cabinet sound board, instrumental. An eager two-bar loop trips into a brief minor game-over phrase, drops to one nearly empty bar with only a soft held pad, then bursts into a quick bright stage-clear fanfare and stops.",
+  "exclude": "vocals, real guitars, orchestra, EDM drop",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 30,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 30,
+  "maxMode": false
+}

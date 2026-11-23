@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-UNLOCKa-UNLOCK.mp4",
+ "made": "2026-11-23T14:38:48+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera still. The worker, bent over the panel with his masked head angled down towards it, turns the small key in the steel cover's lock with his gloved hand; the ring of keys swings beneath. He then pulls the round steel cover outward on its right-hand hinge until it swings fully open and rests, revealing the whole dial and its needle in the pink light. The houses and coins in the case above stay put. Sound: a key grinding then clicking in a lock, keys jangling, a metal hinge creak and a soft clang.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/UNLOCK.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/UNLOCK.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "UNLOCKa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T14:36:51.122Z"
+ }
+}

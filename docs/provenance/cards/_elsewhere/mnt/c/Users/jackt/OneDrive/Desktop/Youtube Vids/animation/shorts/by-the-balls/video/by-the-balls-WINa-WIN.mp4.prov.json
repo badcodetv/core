@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-WINa-WIN.mp4",
+ "made": "2026-11-23T14:38:26+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera holds steady. Crouched either side of the prize hatch, the woman and the man draw the small white house with the red roof out of the opening together, both hands on it, and lift it up between them. They laugh, she throwing her head back a little, he grinning down at the house. Their faces and sizes stay as in the frame. The houses and coins in the case above stay still. Sound: the hatch flap clacking shut, a little coin shuffle in the cabinet, arcade room tone and jingles.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/WIN.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/WIN.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "WINa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T14:37:05.291Z"
+ }
+}

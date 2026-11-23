@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-PLAYb-PLAY.mp4",
+ "made": "2026-11-23T14:38:26+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A very slow push-in towards the glass. The woman pulls the joystick back, then holds it; the claw slides sideways along its rail in a short jerky run and stops, swinging gently, right above the white house with the red roof. She presses forward and the claw starts to drop on its cable, prongs open. The man straightens a little, then leans in beside her, his pointing hand lowering as both of them watch it descend, hopeful and still. Sound: motor whine and stop, a soft clunk as the claw releases, arcade bleeps and room tone.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/PLAY.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/PLAY.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "PLAYb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T14:36:40.186Z"
+ }
+}

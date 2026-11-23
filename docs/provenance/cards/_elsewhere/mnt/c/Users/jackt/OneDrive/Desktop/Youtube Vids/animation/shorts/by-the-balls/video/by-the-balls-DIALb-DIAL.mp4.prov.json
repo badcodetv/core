@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-DIALb-DIAL.mp4",
+ "made": "2026-11-23T14:39:21+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera still, very slight push-in. The four hands tighten their grip on the dial's rim, a short pause, then they turn it together in firm, coordinated pushes, wrists rolling round in sync. The needle swings all the way round the face, gathering speed, and settles pointing straight up. The hands stay on the rim a moment, then relax together. Fabric of the sleeves shifts with the effort. Sound: heavy clicking detents, metal scraping on metal, a satisfying latch clunk and soft arcade room tone.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/DIAL.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/DIAL.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "DIALb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T14:35:36.406Z"
+ }
+}

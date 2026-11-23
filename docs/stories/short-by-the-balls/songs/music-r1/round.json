@@ -1,0 +1,54 @@
+[
+  {
+    "name": "analog-arpeggio-score",
+    "style": "Instrumental 1980s analog synth film score, neon amusement arcade after dark, 110 BPM, A minor. Lead: one Prophet-style polysynth running a fast, hypnotic sixteenth-note arpeggio, cutoff creeping open bar by bar. Under it: a pulsing sawtooth mono-synth bass and a warm, chorused string-machine pad. Opening bars have no drums; then a soft gated-reverb kick enters. Midpoint: the arpeggio cuts out for about three seconds, leaving only a low sustained pad, sparse and hushed. Then the arpeggio returns brighter, climbs, and resolves into A major for a triumphant win. Tape warmth, dark reverb, clean separated mix.",
+    "exclude": "vocals, singing, choir, spoken word, voice samples, acoustic instruments, piano, guitars, electric guitar, live drums, orchestra",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 24,
+    "maxMode": true
+  },
+  {
+    "name": "fm-cabinet-attract-loop",
+    "style": "1980s arcade game soundtrack, FM synthesis, 4-operator Yamaha FM chip lead, bright glassy bell-like melody, slap-style FM bass, thin sampled PCM drums, attract-mode loop, upbeat, 140 BPM, major key, short looping phrases, coin-op cabinet sound board, instrumental. An eager two-bar loop trips into a brief minor game-over phrase, drops to one nearly empty bar with only a soft held pad, then bursts into a quick bright stage-clear fanfare and stops.",
+    "exclude": "vocals, real guitars, orchestra, EDM drop",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 30,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 30,
+    "maxMode": false
+  },
+  {
+    "name": "8bit-coin-slot-chiptune",
+    "style": "8-bit chiptune, 150 BPM, home-console sound chip: thin raw square-wave lead, triangle-wave bass, white-noise hi-hats, coin-drop blips and credit-insert chimes stitched onto the offbeats. A claw-machine game in a seaside amusement arcade at night: a bouncy, cheeky tune that climbs and keeps almost landing, then a sad three-note falling 'you lose' jingle, then two bars of near silence with only a soft ticking hat, then a bright major-key jackpot fanfare over a rattling cascade of payout coins. Tiny, dry, bleepy, lo-fi, instrumental",
+    "exclude": "vocals, spoken word, choir, analog pads, live drums, orchestra, guitar, reverb wash",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "arcade-radio-synth-rock",
+    "style": "128 BPM, E minor, instrumental 1984 hard rock anthem played over an amusement arcade's ceiling speakers. Lead: a crunchy overdriven humbucker electric guitar riff, palm-muted chugs on the low E, with a bright brassy analog synth stab hitting the same accents. Huge gated-reverb snare and tom fills, steady pumping eighth-note synth bass locked to the kick. Timed arrangement, 20 seconds total: 0-7s muted riff chugs alone with bass and closed hi-hat, tension climbing bar by bar; 7-10s everything cuts out, leaving one sustained warm synth chord and faint room ambience, open space for a spoken line; 10-18s crash cymbal and the full band slams back in, riff opened up, brass stab doubling, a short soaring bent-note guitar lick on top; 18-20s final unison hit, then a dead hard stop with no fade. Fist-pumping, cocky, bright and loud, compressed radio-ready mix.",
+    "exclude": "vocals, singing, gang shouts, choir, spoken word, acoustic guitar, chiptune bleeps, 8-bit sounds, fade out, long intro",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 78,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": true
+  }
+]

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-DIALa-DIAL.mp4",
+ "made": "2026-11-23T14:38:48+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera locked overhead. The four hands, plaid sleeve, denim sleeve, knitted sleeve and the hand with the wristwatch, all grip the dial's steel rim and turn it together, slowly and evenly, clockwise. The needle sweeps round the face in one full, steady circle and comes back to where it began. Nobody lets go; the hands move as one. The ball-top lever and the glass case behind stay still. Sound: a deep ratcheting click as the dial turns, a soft mechanical clunk at the end, arcade hum.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/DIAL.jpg",
+ "why": "clips r1, sealed writer cleanroom/anim-r1.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/DIAL.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "DIALa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T14:35:28.680Z"
+ }
+}

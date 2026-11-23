@@ -1,0 +1,13 @@
+{
+  "name": "arcade-radio-synth-rock",
+  "style": "128 BPM, E minor, instrumental 1984 hard rock anthem played over an amusement arcade's ceiling speakers. Lead: a crunchy overdriven humbucker electric guitar riff, palm-muted chugs on the low E, with a bright brassy analog synth stab hitting the same accents. Huge gated-reverb snare and tom fills, steady pumping eighth-note synth bass locked to the kick. Timed arrangement, 20 seconds total: 0-7s muted riff chugs alone with bass and closed hi-hat, tension climbing bar by bar; 7-10s everything cuts out, leaving one sustained warm synth chord and faint room ambience, open space for a spoken line; 10-18s crash cymbal and the full band slams back in, riff opened up, brass stab doubling, a short soaring bent-note guitar lick on top; 18-20s final unison hit, then a dead hard stop with no fade. Fist-pumping, cocky, bright and loud, compressed radio-ready mix.",
+  "exclude": "vocals, singing, gang shouts, choir, spoken word, acoustic guitar, chiptune bleeps, 8-bit sounds, fade out, long intro",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 78,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": true
+}

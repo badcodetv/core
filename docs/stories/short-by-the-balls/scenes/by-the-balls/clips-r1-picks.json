@@ -1,0 +1,174 @@
+{
+ "title": "By the Balls Clips",
+ "eyebrow": "BadCode Shorts · By the Balls · clips round 1",
+ "heading": "By the Balls: clips, round 1",
+ "intro": "16 clips (Omni 1.2 Flash, Frames, 8 s) from your locked stills, two per shot. No speech in any clip's own sound. Prompts by a sealed writer; pollution check clean. Pick one per shot; leave a note on anything that looks wrong.",
+ "sections": [
+  {
+   "h": "Clips",
+   "lede": "Claude's picks are marked; faults flagged.",
+   "groups": [
+    {
+     "slot": "PLAY",
+     "title": "1. The game: they play",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "PLAYa",
+       "src": "clips/PLAYa.mp4",
+       "label": "PLAYa: fine, little movement",
+       "warn": ""
+      },
+      {
+       "id": "PLAYb",
+       "src": "clips/PLAYb.mp4",
+       "label": "PLAYb: pushes in on the white house as they lean in (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "GRAB",
+     "title": "1. The claw grabs the house",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "GRABa",
+       "src": "clips/GRABa.mp4",
+       "label": "GRABa: lifts it cleanly (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "GRABb",
+       "src": "clips/GRABb.mp4",
+       "label": "GRABb: lifts it higher, out of frame",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "LIMP",
+     "title": "1. The claw goes limp",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "LIMPa",
+       "src": "clips/LIMPa.mp4",
+       "label": "LIMPa: the house drops back, clean (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "LIMPb",
+       "src": "clips/LIMPb.mp4",
+       "label": "LIMPb",
+       "warn": "A sudden zoom; a house lands by the panel"
+      }
+     ]
+    },
+    {
+     "slot": "FACES",
+     "title": "1. They deflate",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "FACESa",
+       "src": "clips/FACESa.mp4",
+       "label": "FACESa",
+       "warn": ""
+      },
+      {
+       "id": "FACESb",
+       "src": "clips/FACESb.mp4",
+       "label": "FACESb: (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BADCODE",
+     "title": "2. BadCode: \"It was never broken. It was set.\"",
+     "line": "His line is laid over later; the mask has no mouth.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "BADCODEa",
+       "src": "clips/BADCODEa.mp4",
+       "label": "BADCODEa: still, mask holds",
+       "warn": ""
+      },
+      {
+       "id": "BADCODEb",
+       "src": "clips/BADCODEb.mp4",
+       "label": "BADCODEb: slow push-in, mask holds (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "UNLOCK",
+     "title": "3. He unlocks the hidden dial",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "UNLOCKa",
+       "src": "clips/UNLOCKa.mp4",
+       "label": "UNLOCKa: the cover opens on the dial (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "UNLOCKb",
+       "src": "clips/UNLOCKb.mp4",
+       "label": "UNLOCKb",
+       "warn": "The dial turns into a safe lock"
+      }
+     ]
+    },
+    {
+     "slot": "DIAL",
+     "title": "3. Everyone turns the dial",
+     "line": "The LAND PRICE labels go on in post.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "DIALa",
+       "src": "clips/DIALa.mp4",
+       "label": "DIALa: the needle swings, hands consistent (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "DIALb",
+       "src": "clips/DIALb.mp4",
+       "label": "DIALb",
+       "warn": "The hands change as it zooms"
+      }
+     ]
+    },
+    {
+     "slot": "WIN",
+     "title": "3. They win the house",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "WINa",
+       "src": "clips/WINa.mp4",
+       "label": "WINa",
+       "warn": "Laughter in its own sound (room sound will come from b)"
+      },
+      {
+       "id": "WINb",
+       "src": "clips/WINb.mp4",
+       "label": "WINb: they lift it out (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

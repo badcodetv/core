@@ -1,0 +1,116 @@
+{
+ "extra": [
+  {
+   "key": "PLAYa",
+   "n": 1,
+   "still": "PLAY",
+   "motion": "Camera holds still. The woman nudges the joystick with small, careful pushes; up in the glass case the silver claw glides along its overhead rail, its coiled cable swaying, travelling across above the pile of little houses and coins until it hovers over the white two-storey house with the red roof. The man keeps his finger pointing at the white house and leans closer to the glass, coffee cup in his other hand. She bites her lip and leans in too. Their faces stay as they are, lit by the machine. Sound: whirring gantry motor, joystick clicks, distant arcade machines chiming over a low room hum.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "PLAYb",
+   "n": 1,
+   "still": "PLAY",
+   "motion": "A very slow push-in towards the glass. The woman pulls the joystick back, then holds it; the claw slides sideways along its rail in a short jerky run and stops, swinging gently, right above the white house with the red roof. She presses forward and the claw starts to drop on its cable, prongs open. The man straightens a little, then leans in beside her, his pointing hand lowering as both of them watch it descend, hopeful and still. Sound: motor whine and stop, a soft clunk as the claw releases, arcade bleeps and room tone.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "GRABa",
+   "n": 1,
+   "still": "GRAB",
+   "motion": "Camera locked off. The three steel prongs squeeze in round the white house with the red roof, settling their grip under its eaves. Then the claw begins to rise, drawing the house steadily upward and away from the heap of small houses, coins and rolled banknotes; it turns a few degrees on the cable as it climbs. A couple of coins under it slide and settle. The background shelves stay still and soft. Sound: a solenoid click as the claw closes, then the rising hum of the lift motor and coins slipping.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "GRABb",
+   "n": 1,
+   "still": "GRAB",
+   "motion": "Camera holds steady. For a beat the claw just holds the white house, prongs trembling slightly. Then it lifts in a short jolt, pauses, and keeps climbing slowly, the house swinging gently between the prongs like a pendulum as it rises out of the top of the frame by the end. The pile of little houses and coins below stays where it is, one small house tipping over in the space the white house leaves. Sound: a tight mechanical clack, the lift motor straining, faint coins rattling, muffled arcade room tone.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "LIMPa",
+   "n": 1,
+   "still": "LIMP",
+   "motion": "Camera completely still on the whole cabinet. The slack prongs hang open from the claw head while the white house with the red roof drops away, tumbling once and landing on the heap of coloured houses. It bounces, knocks two small houses aside and settles on its side; coins scatter across the pile. Above, the empty claw sways loosely on its coiled cable, then slowly comes to rest. The cabinet's yellow control panel and doors stay unchanged. Sound: plastic clattering onto plastic, a spill of coins, the faint whine of the idle motor and arcade room tone.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "LIMPb",
+   "n": 1,
+   "still": "LIMP",
+   "motion": "A barely noticeable push-in on the glass case. The white house falls from the limp, open prongs, hits the slope of the pile roof-first and rolls down among the blue, yellow and green houses before stopping near the front, tilted. A rolled banknote slides off after it. The empty claw dangles, its prongs drooping, then the gantry carries it back along the rail to the top-left corner and it stops there. Lights around the cabinet keep their glow. Sound: a hollow thud and clatter, coins chinking, the gantry motor buzzing back and a final click.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "FACESa",
+   "n": 1,
+   "still": "FACES",
+   "motion": "Camera holds still. The man drags his hand slowly down from his forehead over his eyes and lets it drop, staring at the glass. Beside him the woman breathes out a long, slow breath through parted lips, shoulders sinking, then opens her eyes and looks down at the controls. Small, tired, real movements; neither looks at the camera. Their faces and positions stay as in the frame, the coffee cup still in his hand. Arcade lights glow softly behind them. Sound: low arcade room tone, distant game jingles and a faint coin drop somewhere.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "FACESb",
+   "n": 1,
+   "still": "FACES",
+   "motion": "Camera nearly still, the slightest drift in. The man keeps his palm pressed to his forehead a moment longer, then pushes it back through his hair and shakes his head very slightly. The woman, eyes still closed, lets out one breath, presses her lips together and gives a tiny rueful nod. He takes a slow sip from his coffee cup. Their sizes and faces stay exactly as framed, both turned towards the machine. Sound: soft arcade hum, muffled beeps from nearby cabinets, the machine's idle whirr.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "BADCODEa",
+   "n": 1,
+   "still": "BADCODE",
+   "motion": "Camera locked off. The masked arcade worker stands perfectly still, square to the lens, gloved hands at his sides, the mask's white ring and red triangle steady and facing straight into camera throughout. Only the bunch of keys at his belt sways faintly. Behind him the young couple keep playing the claw machine, she working the controls, he leaning in to watch. Neon signs and game screens flicker softly in the background. Sound: arcade room tone, distant game music loops, coins dropping into a tray, a faint jingle of keys.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "BADCODEb",
+   "n": 1,
+   "still": "BADCODE",
+   "motion": "Camera holds, with a very slight push-in towards him. He stays still, facing the lens, then tilts his head a few degrees to one side and holds it there; the smooth mask keeps its white ring and red triangle exactly as they are, still looking straight at camera. His body and hands do not move. In the background the couple go on playing, the man pointing at the glass, the woman pressing a button. Arcade lights shimmer. Sound: low arcade hum, a claw machine's motor whirring behind, scattered chimes.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "UNLOCKa",
+   "n": 1,
+   "still": "UNLOCK",
+   "motion": "Camera still. The worker, bent over the panel with his masked head angled down towards it, turns the small key in the steel cover's lock with his gloved hand; the ring of keys swings beneath. He then pulls the round steel cover outward on its right-hand hinge until it swings fully open and rests, revealing the whole dial and its needle in the pink light. The houses and coins in the case above stay put. Sound: a key grinding then clicking in a lock, keys jangling, a metal hinge creak and a soft clang.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "UNLOCKb",
+   "n": 1,
+   "still": "UNLOCK",
+   "motion": "A slight push-in towards the dial. The worker's gloved hand turns the key a firm quarter-turn; a beat. Then he hooks his fingers behind the edge of the steel cover and swings it wide open to the right in one smooth arc, until it stops against its hinge, catching a flash of light. He draws his hand back and stays bent over the panel, head still angled towards the uncovered dial. Keys sway on their ring. Sound: a crisp lock click, heavy metal swinging, a dull stop, keys chinking, arcade room tone.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "DIALa",
+   "n": 1,
+   "still": "DIAL",
+   "motion": "Camera locked overhead. The four hands, plaid sleeve, denim sleeve, knitted sleeve and the hand with the wristwatch, all grip the dial's steel rim and turn it together, slowly and evenly, clockwise. The needle sweeps round the face in one full, steady circle and comes back to where it began. Nobody lets go; the hands move as one. The ball-top lever and the glass case behind stay still. Sound: a deep ratcheting click as the dial turns, a soft mechanical clunk at the end, arcade hum.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "DIALb",
+   "n": 1,
+   "still": "DIAL",
+   "motion": "Camera still, very slight push-in. The four hands tighten their grip on the dial's rim, a short pause, then they turn it together in firm, coordinated pushes, wrists rolling round in sync. The needle swings all the way round the face, gathering speed, and settles pointing straight up. The hands stay on the rim a moment, then relax together. Fabric of the sleeves shifts with the effort. Sound: heavy clicking detents, metal scraping on metal, a satisfying latch clunk and soft arcade room tone.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "WINa",
+   "n": 1,
+   "still": "WIN",
+   "motion": "Camera holds steady. Crouched either side of the prize hatch, the woman and the man draw the small white house with the red roof out of the opening together, both hands on it, and lift it up between them. They laugh, she throwing her head back a little, he grinning down at the house. Their faces and sizes stay as in the frame. The houses and coins in the case above stay still. Sound: the hatch flap clacking shut, a little coin shuffle in the cabinet, arcade room tone and jingles.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "WINb",
+   "n": 1,
+   "still": "WIN",
+   "motion": "A very slight push-in on the hatch. The man lets go and the woman lifts the white house out alone, holding it up to her face as if inspecting it, both of them laughing harder. He leans in and taps its red roof with a finger; she turns to him and they share a delighted look. Their crouched positions barely change. Sound: a plastic flap swinging back, the claw machine's victory chime from inside the cabinet, soft arcade hum.",
+   "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  }
+ ]
+}

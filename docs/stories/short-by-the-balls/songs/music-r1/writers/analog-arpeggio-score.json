@@ -1,0 +1,13 @@
+{
+  "name": "analog-arpeggio-score",
+  "style": "Instrumental 1980s analog synth film score, neon amusement arcade after dark, 110 BPM, A minor. Lead: one Prophet-style polysynth running a fast, hypnotic sixteenth-note arpeggio, cutoff creeping open bar by bar. Under it: a pulsing sawtooth mono-synth bass and a warm, chorused string-machine pad. Opening bars have no drums; then a soft gated-reverb kick enters. Midpoint: the arpeggio cuts out for about three seconds, leaving only a low sustained pad, sparse and hushed. Then the arpeggio returns brighter, climbs, and resolves into A major for a triumphant win. Tape warmth, dark reverb, clean separated mix.",
+  "exclude": "vocals, singing, choir, spoken word, voice samples, acoustic instruments, piano, guitars, electric guitar, live drums, orchestra",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 24,
+  "maxMode": true
+}

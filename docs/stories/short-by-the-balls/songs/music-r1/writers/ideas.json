@@ -1,0 +1,18 @@
+[
+  {
+    "name": "analog-arpeggio-score",
+    "idea": "The lead voice is a single analog polysynth playing a fast, hypnotic sixteenth-note arpeggio in a minor key, over a pulsing mono-synth bass and a warm string-machine pad: a 1980s synth film score heard inside a neon arcade at night. Ask for it as a short producer's brief in the style box: about 110 BPM, filter slowly opening, no drums for the first bars, then a soft gated-reverb kick. Spell out that around the midpoint the arpeggio drops out for about three seconds leaving only a low held pad, then the arpeggio returns brighter and rises into a major-key resolve for the win. Exclude vocals, choir, spoken words, acoustic instruments and guitars."
+  },
+  {
+    "name": "fm-cabinet-attract-loop",
+    "idea": "The lead voice is a bright, glassy FM-synthesis arcade-board melody, the kind of 8-voice FM chip sound found in mid-1980s racing and shooter cabinets, with a slap-style FM bass and thin sampled drums. Ask for it as a compact tag list rather than prose: 1980s arcade game soundtrack, FM synthesis, attract-mode loop, upbeat, 140 BPM, short looping phrases, instrumental. Add one plain sentence for shape: an eager loop that stumbles into a short minor 'game over' figure, a near-silent bar for a spoken line, then a fast 'stage clear' fanfare to end. Exclude vocals, real guitars, orchestra and modern EDM drops."
+  },
+  {
+    "name": "8bit-coin-slot-chiptune",
+    "idea": "The lead voice is a raw 8-bit square-wave chip lead with a triangle-wave bass and noise-channel hi-hats, small and bleepy like an old home console, with coin-drop and credit-insert chimes stitched into the rhythm. Ask for it by describing the scene in the style box: a claw machine game at a seaside amusement arcade at night, a playful tune that keeps nearly winning, a sad descending 'you lose' jingle, then a pause, then a triumphant jackpot jingle with rattling payout coins. Keep tempo around 150 BPM and the whole thing under 20 seconds of real music. Exclude vocals, spoken words, choir, analog pads and live drums."
+  },
+  {
+    "name": "arcade-radio-synth-rock",
+    "idea": "The lead voice is an overdriven 1980s electric guitar riff, doubled by a brassy synth stab, over big gated-reverb drums and pumping eighth-note synth bass: the hard-rock radio that blares across an arcade floor while kids play. Ask for it with a timed arrangement in the style box: 0-7s chugging muted riff building tension, 7-10s sudden drop to a lone held synth chord and room tone for a spoken line, 10-18s full riff kicks back in with a cymbal crash and a short soaring guitar lick, ending on a hard stop. Around 128 BPM, E minor, instrumental anthem energy. Exclude vocals, gang shouts, choir, acoustic guitar and chiptune bleeps."
+  }
+]

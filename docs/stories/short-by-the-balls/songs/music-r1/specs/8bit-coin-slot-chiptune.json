@@ -1,0 +1,17 @@
+{
+  "style": "8-bit chiptune, 150 BPM, home-console sound chip: thin raw square-wave lead, triangle-wave bass, white-noise hi-hats, coin-drop blips and credit-insert chimes stitched onto the offbeats. A claw-machine game in a seaside amusement arcade at night: a bouncy, cheeky tune that climbs and keeps almost landing, then a sad three-note falling 'you lose' jingle, then two bars of near silence with only a soft ticking hat, then a bright major-key jackpot fanfare over a rattling cascade of payout coins. Tiny, dry, bleepy, lo-fi, instrumental",
+  "exclude": "vocals, spoken word, choir, analog pads, live drums, orchestra, guitar, reverb wash",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false,
+  "title": "btb-music-r1-8bit-coin-slot-chiptune",
+  "mode": "custom",
+  "workspace": "short-by-the-balls"
+}
