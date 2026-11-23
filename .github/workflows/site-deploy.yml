@@ -2,6 +2,11 @@
 # (Kai, 2026-11-05: replaces "a push never deploys"). Same build and pinned wrangler as
 # scripts/site/deploy.sh. A failed run leaves the previous version live.
 # Plan: design/2026-11-05-site-government.md
+# Future Proof Live (SIMULATED, /future-proof/live/) is built from the branch simulation/live, which Bob's
+# workers push to every morning and the 13:00 UTC routine marks. The schedule below rebuilds the site after
+# each: 12:15 UTC (the minister is done by about 11:30 London) and 14:30 UTC (after the clock). Why a
+# schedule and not a push trigger: the data branch never touches main, and neither Bob nor the routine
+# needs a GitHub token that can start workflows (design/2026-11-23-future-proof-rework/build-log.md, D8).
 name: site-deploy
 on:
   push:
@@ -11,6 +16,11 @@ on:
       - docs/government/manifesto/**
       - docs/government/policies/**
       - docs/government/debates/**
+      - docs/government/simulation/page/**
+      - scripts/government/sim/**
+  schedule:
+    - cron: '15 12 * * *'
+    - cron: '30 14 * * *'
   workflow_dispatch:
 concurrency:
   group: site-deploy
@@ -22,6 +32,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0   # each policy page prints its own git history (design §4.2)
+      - name: Fetch the simulation's issues (branch simulation/live)
+        run: git fetch --no-tags origin +refs/heads/simulation/live:refs/remotes/origin/simulation/live
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -31,7 +43,7 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          SUBJECT: ${{ github.event.head_commit.message }}
+          SUBJECT: ${{ github.event.head_commit.message || format('{0} rebuild', github.event_name) }}
         run: >
           npx -y wrangler@4.40.0 pages deploy apps/site/dist
           --project-name badcode-web --branch main

@@ -59,7 +59,7 @@ aside.board{position:sticky;top:calc(env(safe-area-inset-top,0px) + 1rem);backgr
 .back{all:unset;cursor:pointer;font:600 .85rem/1 var(--body);color:var(--accent)}
 .back:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .detail{display:grid;gap:1.5rem}
-.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.1rem 1.2rem;display:grid;gap:.8rem;min-width:0}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.1rem 1.2rem;display:grid;gap:.8rem;min-width:0;align-content:start}
 .panel .ph{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline;flex-wrap:wrap}
 .canvas-wrap{width:100%}
 #loop{display:block;width:100%;cursor:pointer}
@@ -113,8 +113,10 @@ td.r{white-space:nowrap}
   <header class="top">
     <div class="row"><span class="stamp">SIMULATED</span><span class="eyebrow">BadCode government · Future Proof, running</span></div>
     <h1>Future Proof Live</h1>
-    <p>Every day one real news story goes round the Future Proof loop. Simulated citizens set the test, three answers are written blind, a gate checks them against every test, a simulated jury settles the values question, and a minister signs one small trial. Then the calendar marks the predictions.</p>
+    <p class="statement">What if the people who live with a decision set its test? Here's a machine pretending, every day, until real people do it.</p>
+    <p>Every day one real news story goes round the Future Proof loop. Simulated citizens set the test, three answers are written blind, a gate checks them against every test, a simulated jury settles the values question, and a simulated minister signs one small trial. Then the calendar marks the predictions.</p>
     <p class="banner"><b>Nothing here is real people taking part.</b> The citizens and jurors are AI stand-ins drawn by lot from a pool built from real census figures. Real polls sit beside them where they exist. The news, the sources and the dates are real. Not a real party. Yet.</p>
+    <p class="muted" style="font-size:.85rem">Every word below except the news and the sources was written by AI models, named on each item. <a href="https://www.badcode.tv/how-we-made-it/">The full account</a></p>
   </header>
 
   <div id="view"></div>
@@ -126,6 +128,7 @@ const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const day=d=>{const[y,m,dd]=d.split('-').map(Number);return dd+' '+MON[m-1]+' '+y};
 const POST={'prime-minister':'Prime Minister',chancellor:'Chancellor',foreign:'Foreign Secretary',home:'Home Secretary',education:'Education Secretary',defence:'Defence Secretary',health:'Health Secretary','work-pensions':'Work and Pensions Secretary',housing:'Housing Secretary','energy-climate':'Energy and Climate Secretary'};
+const MIN=p=>'Simulated '+(POST[p]||p);
 const RES={pass:['p','pass'],fail:['f','fail'],unclear:['u','unclear']};
 let FEED=null;
 
@@ -147,10 +150,10 @@ function showFeed(){
   const s=FEED.scoreboard;
   const cards=FEED.issues.map(d=>`
     <a class="card" href="#${esc(d.id)}">
-      <div class="meta"><span class="stamp">SIMULATED</span><span>${day(d.run.news_date)}</span><span class="chip">${esc(d.issue.field)}</span><span class="chip h">${esc(POST[d.minister.post]||d.minister.post)}</span>${d.run.mode==='replay'?`<span class="replay">${esc(d.run.replay_stamp)}</span>`:'<span class="chip a">live</span>'}</div>
+      <div class="meta"><span class="stamp">SIMULATED</span><span>${day(d.run.news_date)}</span><span class="chip">${esc(d.issue.field)}</span><span class="chip h">${esc(MIN(d.minister.post))}</span>${d.run.mode==='replay'?`<span class="replay">${esc(d.run.replay_stamp)}</span>`:'<span class="chip a">live</span>'}</div>
       <h3>${esc(d.issue.title)}</h3>
       <p class="q">${esc(d.issue.question)}</p>
-      <p class="out"><span class="chip ${passCount(d)?'p':'f'}">${passCount(d)} of 3 answers pass every test</span> <span class="chip h">jury: ${esc(d.jury.ruling.split(/[.:]/)[0])}</span> <span class="chip ${d.minister.decision==='signed'?'p':'f'}">${d.minister.decision}</span></p>
+      <p class="out"><span class="chip ${passCount(d)?'p':'f'}">${passCount(d)} of 3 answers pass every test</span> <span class="chip h">simulated jury: ${esc(d.jury.options[d.jury.votes.indexOf(Math.max(...d.jury.votes))])} (${Math.max(...d.jury.votes)}/${d.jury.size})</span> <span class="chip ${d.minister.decision==='signed'?'p':'f'}">${d.minister.decision}</span></p>
     </a>`).join('');
   $('#view').innerHTML=`
     <div class="layout">
@@ -159,7 +162,7 @@ function showFeed(){
         ${cards||'<div class="empty">No published issues yet.</div>'}
       </section>
       <aside class="board" aria-label="Scoreboard">
-        <div class="eyebrow">The calendar's scoreboard</div>
+        <div class="row" style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap"><span class="stamp">SIMULATED</span><span class="eyebrow">The calendar's scoreboard</span></div>
         <div class="tiles">
           <div class="tile"><span>Hits</span><div class="big">${s.hit}</div></div>
           <div class="tile"><span>Misses</span><div class="big">${s.miss}</div></div>
@@ -180,9 +183,9 @@ function showIssue(d){
     <div><span class="eyebrow">Real poll · ${esc(d.poll.pollster)}</span><span class="num">${Math.round(d.poll.real_share*100)}%</span><span class="muted" style="font-size:.8rem">${esc(d.poll.fieldwork)}, ${esc(d.poll.sample)}</span></div></div>
     <p class="muted" style="font-size:.82rem">"${esc(d.citizens.split.question)}" The gap between the two columns is part of the record: AI stand-ins are not people.</p>`:(d.poll?`<p class="muted" style="font-size:.85rem">Real poll: ${esc(d.poll.pollster)}, ${esc(d.poll.fieldwork)}: ${esc(d.poll.finding)}</p>`:'');
   const ans=d.bench.map(b=>{const rows=d.gate.rows.filter(r=>r.answer===b.id);const f=rows.filter(r=>r.result==='fail').length,p=rows.filter(r=>r.result==='pass').length,u=rows.length-f-p;
-    return `<div class="ans"><span class="id">${b.id}</span><h3>${esc(b.title)}</h3><p>${esc(b.answer)}</p><div><span class="chip p">${p} pass</span> <span class="chip f">${f} fail</span> <span class="chip u">${u} unclear</span></div><span class="by">written blind · ${esc(b.engine)} · ${esc(b.model)}</span></div>`}).join('');
+    return `<div class="ans"><span class="id">${b.id}</span><h3>${esc(b.title)}</h3><p>${esc(b.answer)}</p><div><span class="chip p">${p} pass</span> <span class="chip f">${f} fail</span> <span class="chip u">${u} unclear</span></div><span class="by">SIMULATED · written blind by AI · ${esc(b.engine)} · ${esc(b.model)}</span></div>`}).join('');
   const testNames=[...new Set(d.gate.rows.map(r=>r.test))];
-  const grid=`<table><thead><tr><th>Test or limit</th>${['A','B','C'].map(a=>`<th>${a}</th>`).join('')}</tr></thead><tbody>${testNames.map(t=>`<tr><td>${esc(t)}</td>${['A','B','C'].map(a=>{const r=d.gate.rows.find(x=>x.answer===a&&x.test===t);if(!r)return'<td>–</td>';const[c,l]=RES[r.result];return `<td><span class="chip ${c}">${l}</span><div class="muted" style="font-size:.78rem;margin-top:.25rem">${esc(r.note)}</div></td>`}).join('')}</tr>`).join('')}</tbody></table>`;
+  const grid=`<table><thead><tr><th>Test or limit</th>${['A','B','C'].map(a=>`<th>${a}</th>`).join('')}</tr></thead><tbody>${testNames.map(t=>`<tr><td>${esc(t)}</td>${['A','B','C'].map(a=>{const r=d.gate.rows.find(x=>x.answer===a&&x.test===t);if(!r)return'<td>–</td>';const[c,l]=RES[r.result];return `<td><span class="chip ${c}">${l}</span><div class="muted" style="font-size:.78rem;margin-top:.25rem">${esc(String(r.note).replace(/no source needed: logic\.?/gi,'Needs no source: it follows from what the answer says.'))}</div></td>`}).join('')}</tr>`).join('')}</tbody></table>`;
   const j=d.jury;const winner=j.votes.indexOf(Math.max(...j.votes));
   const seatCols=['var(--human)','var(--accent)','var(--muted)','var(--pass)','var(--fail)'];
   let seats='';j.options.forEach((o,i)=>{for(let k=0;k<j.votes[i];k++)seats+=`<i title="${esc(o)}" style="background:${seatCols[i]};border-color:${seatCols[i]}"></i>`});
@@ -206,16 +209,16 @@ function showIssue(d){
     </section>
 
     <section class="two">
-      <div class="panel"><div class="ph"><h3>1 · The test: what ${d.citizens.drawn} simulated citizens asked for</h3></div>
+      <div class="panel"><div class="ph"><h3>1 · The test: what ${d.citizens.drawn} simulated citizens asked for</h3><span class="stamp">SIMULATED</span></div>
         <p class="muted" style="font-size:.8rem">Drawn by lot (seed <code>${esc(d.citizens.seed)}</code>) from ${esc(d.citizens.pool)}. Written by ${esc(d.citizens.model)} in each citizen's circumstances. Not real people.</p>
         <div class="bars">${bars}</div>${split}</div>
       <div class="panel"><div class="ph"><h3>In their words</h3><span class="stamp">SIMULATED</span></div>
         <div class="voices">${d.citizens.voices.map(v=>`<div>${esc(v.text)}<small>${esc(v.who)} · simulated citizen ${esc(v.citizen)}</small></div>`).join('')}</div></div>
     </section>
 
-    <section class="panel"><div class="ph"><h3>2 · Three answers, written blind</h3><span class="muted" style="font-size:.8rem">No writer saw another's answer.</span></div><div class="bench">${ans}</div></section>
+    <section class="panel"><div class="ph"><h3>2 · Three answers, written blind by AI</h3><span class="stamp">SIMULATED</span></div><p class="muted" style="font-size:.8rem">No writer saw another's answer.</p><div class="bench">${ans}</div></section>
 
-    <section class="panel"><div class="ph"><h3>3 · The gate: every answer against every test</h3></div>
+    <section class="panel"><div class="ph"><h3>3 · The gate: every answer against every test</h3><span class="stamp">SIMULATED</span></div>
       <div class="gridwrap">${grid}</div>
       <p><b>Verdict.</b> ${esc(d.gate.verdict)}</p>
       ${d.gate.rejected_claims.length?`<div class="rej"><b>Struck out for having no source:</b><ul>${d.gate.rejected_claims.map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>`:'<p class="muted" style="font-size:.82rem">No claims were struck out.</p>'}</section>
@@ -228,14 +231,14 @@ function showIssue(d){
       <div class="voices">${j.reasons.map(r=>`<div>${esc(r.text)}<small>simulated juror ${esc(r.juror)}</small></div>`).join('')}</div>
       <p class="muted" style="font-size:.8rem">${j.size} simulated jurors drawn by lot (seed <code>${esc(j.seed)}</code>), none of whom set the test. Review on ${day(j.review)}. Jury: ${j.size}. Should be real people.</p></section>
 
-    <section class="panel"><div class="ph"><h3>5 · The minister ${d.minister.decision==='signed'?'signs':'refuses'}</h3><span class="chip ${d.minister.decision==='signed'?'p':'f'}">${d.minister.decision}</span></div>
-      <div class="minister"><span class="eyebrow">${esc(POST[d.minister.post]||d.minister.post)} · a simulated minister</span><p class="statement">${esc(d.minister.statement)}</p></div>
+    <section class="panel"><div class="ph"><h3>5 · The simulated minister ${d.minister.decision==='signed'?'signs':'refuses'}</h3><span><span class="stamp">SIMULATED</span> <span class="chip ${d.minister.decision==='signed'?'p':'f'}">${d.minister.decision}</span></span></div>
+      <div class="minister"><span class="eyebrow">${esc(MIN(d.minister.post))} · BadCode's AI stand-in, not the real office-holder</span><p class="statement">${esc(d.minister.statement)}</p></div>
       <div class="kv"><span>Trial</span><div>${esc(d.minister.trial)}</div><span>Fails if</span><div>${esc(d.minister.fail_number)}</div><span>Stops</span><div>${day(d.minister.stop)} unless it passes</div></div></section>
 
-    <section class="panel"><div class="ph"><h3>6 · The clock: what the calendar will mark</h3></div>
+    <section class="panel"><div class="ph"><h3>6 · The clock: what the calendar will mark</h3><span class="stamp">SIMULATED</span></div>
       <div class="preds">${d.predictions.map(p=>`<div class="pred"><div><span class="chip ${p.result==='hit'?'p':p.result==='miss'?'f':'a'}">${p.result==='pending'?'due '+day(p.due):p.result+' · marked '+day(p.marked_on)}</span> <span class="chip">chance given: ${Math.round(p.prior*100)}%</span></div><b>${esc(p.claim)}</b><span class="muted" style="font-size:.82rem">Counts if: ${esc(p.rule)}</span></div>`).join('')}</div></section>
 
-    <section class="panel"><div class="ph"><h3>Sources</h3><span class="muted" style="font-size:.8rem">Every fact on this page points at one of these.</span></div>
+    <section class="panel"><div class="ph"><h3>Sources</h3><span class="stamp">SIMULATED</span></div><p class="muted" style="font-size:.8rem">The sources are real. Every fact on this page points at one of these.</p>
       <ol class="src">${d.sources.map(s=>`<li><b>${esc(s.id)}</b> <a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title)}</a> · ${esc(s.publisher)}${s.date?' · '+day(s.date):''}</li>`).join('')}</ol>
       <p class="muted" style="font-size:.78rem">Made by: ${esc(d.made_by.workers.join(' → '))}. ${esc(d.made_by.note||'')}</p></section>
   </div>`;
@@ -252,11 +255,11 @@ function startLoop(d){
   const top=[...d.citizens.tests].sort((a,b)=>b.backers-a.backers)[0];
   const ST=[
     {k:'ask',name:'Set the test',tag:'simulated citizens',h:1,t:'Simulated citizens set the test',x:`${d.citizens.drawn} drawn by lot. Most backed: "${top.text}" (${top.backers}).`},
-    {k:'queue',name:'The queue',tag:'public rule',h:0,t:'A public rule picked it',x:d.issue.slot_reason},
+    {k:'queue',name:'Why this one',tag:'the reason',h:0,t:'Why this story',x:d.issue.slot_reason},
     {k:'bench',name:'Rival answers',tag:'written blind',h:0,t:'Three answers, written blind',x:d.bench.map(b=>b.id+': '+b.title).join(' · ')},
     {k:'gate',name:'The gate',tag:'checks',h:0,t:'Every answer against every test',x:d.gate.verdict},
     {k:'jury',name:'The jury',tag:'simulated · by lot',h:1,t:'A values question for the jury',x:`${j.question} Ruling: ${j.options[win]} (${j.votes[win]} of ${j.size}).`},
-    {k:'minister',name:'Minister signs',tag:'one small trial',h:1,t:`The minister ${d.minister.decision==='signed'?'signs':'refuses'}`,x:d.minister.trial},
+    {k:'minister',name:'Minister signs',tag:'one small trial',h:1,t:`The simulated minister ${d.minister.decision==='signed'?'signs':'refuses'}`,x:d.minister.trial},
     {k:'clock',name:'The clock',tag:'real dates',h:0,t:'The calendar marks it',x:d.predictions.map(p=>day(p.due)+': '+p.claim).join(' · ')},
     {k:'out',name:'Wider or undo',tag:'everyone sees',h:1,t:'Pass goes wider. Fail is undone.',x:`Fails if: ${d.minister.fail_number}. Stops ${day(d.minister.stop)} unless it passes.`}
   ];

@@ -320,6 +320,7 @@
           inner = `<p class="q">The manifesto</p><h1>${esc(g.promise)}</h1>${statusHtml()}
           <ul class="cab">${CAB.map(x => `<li><a href="/government/${x.post}/" data-minister="${x.post}"><b>${esc(x.title)}</b><span>${esc(x.line)}</span></a></li>`).join('')}</ul>
           <p class="tobrd"><a href="/government/scoreboard/" data-board>The scoreboard: every prediction we've made, and whether it held ▶</a></p>
+          <p class="tobrd"><a href="/future-proof/live/">SIMULATED · Future Proof Live: one real news story a day goes round the loop ▶</a></p>
           ${pm ? `<h2>The Prime Minister's policies</h2>${cards(listOf('prime-minister'))}` : ''}`;
         }
         prog.innerHTML = `<div class="p-gov">${bar}<div class="body">${inner}<p class="notreal">${esc(g.notReal)} Press 2 to watch it live. Future Proof is on NEWS.</p></div><div class="haz"></div>
