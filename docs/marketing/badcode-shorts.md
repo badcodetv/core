@@ -55,7 +55,7 @@ Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier whe
 24. 📜 **The Rules** *(Kai: ✅ CUT 2026-11-11, 27.6 s; not yet posted)*: the gang stares up at a huge stack of paper labelled THE RULES (5) → "If the rules were working… let's look out the window." Outside: chaos (6) → back inside, they tear the rules up (5), with music. **~16s.**
 25. 🚔 **Call the Police:** "It's a robbery!" "Where?" They point out of the window (6) → "That's not a robbery, that's the economy." (4) → the song's hook (3). **13s.**
 26. 🕳️ **The Basement:** the tunnel breaks into the vault (4) → a printer running, a suit feeding it: "Can I help you?" (5) → they back into the hole (3). **12s.**
-27. 🍫 **The Fredo Job:** heist planning montage (6) → the target: a 10p Fredo (3) → "It was 10p when we started planning." (4) **13s.**
+27. 🍫 **The Fredo Job** *(Jack, 2026-11-23: "have heavy oceans eleven references". **BUILDING**: set up, [`docs/stories/short-fredo-job/`](../stories/short-fredo-job/))*: heist planning montage (6) → the target: a 10p Fredo (3) → "It was 10p when we started planning." (4) **13s.**
 28. 💸 **Wrong Way Round:** CCTV, the gang runs INTO the bank and fills the vault (6) → "Nothing was taken. Somehow, everyone is poorer." (5) **11s.**
 29. 🪄 **Look at the Hand:** two blokes argue over which hand (6) → both empty, wallets gone (3) → "It's never the hand you're watching." (3) **12s.**
 30. 🥶 **Grandma Freezing:** a night break-in finds a pensioner by a dead radiator (6) → they feed her meter with the stolen coins (6). **12s.**

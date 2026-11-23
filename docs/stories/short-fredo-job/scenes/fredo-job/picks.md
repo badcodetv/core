@@ -1,0 +1,5 @@
+# The Fredo Job: picks and rulings
+
+- **2026-11-23, Jack:** "The Fredo Job: an Ocean's-style heist on a 10p Fredo; the price has gone up by the time they get there." lets do this and have heavy oceans eleven references thanks". Setup answers: folder `shorts\fredo-job`; 9:16; library pieces The BadCode balaclava, Heist and caper (look), Real photo as the look (not Clean room). Drive `Shorts/The Fredo Job` (1wQJd6jyIoa6ZdHp_kSFPBxrc-Q8kr2rv). Claude flagged: parody of the genre only (no film title, characters, likenesses, logo or music), and the way-out review had dropped #27 (Jack's pick overrides).
+- **2026-11-23, Jack:** "check for pollution thanks". The shorts list's #27 entry calls it another story's own Fredo: nothing from that story (look, sound, cast, jokes, wording) is carried in; the files are written from Jack's words and the pitch only.
+- **2026-11-23, pollution check (setup):** no other story named in the folder; style lint: only older files flagged elsewhere; same-prompt check on the premise: habit phrase "chocolate bar in a" (×10 in past prompts, another story's Fredo): prompts for this short use other words for the bar.
