@@ -22,7 +22,7 @@
   "field": "research-funding",
   "owner": "chancellor",
   "slot": "longest-wait",
-  "slot_reason": "Rule 2: the field research-funding has never run in the simulation, and this weight-2 UK item was in the news of 16 Nov 2026 (topic assigned by the orchestrator so parallel replays do not repeat a field). The EU trade field already ran, so the issue is framed around UK research funding choices.",
+  "slot_reason": "Research funding had not come up yet in the simulation, and a think tank's warning about the cost of the EU research programme was in the UK news that day.",
   "news": [
    {
     "headline": "Thinktank says joining EU's FP10 research programme could leave multi-billion-pound UK funding gap",
@@ -312,7 +312,7 @@
     "answer": "A",
     "test": "No NHS or school cuts",
     "result": "pass",
-    "note": "It rules out meeting any gap from NHS, school or lab budgets, though who then pays an overrun is left to the deal. (no source needed: logic)",
+    "note": "It rules out meeting any gap from NHS, school or lab budgets, though who then pays an overrun is left to the deal. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -328,7 +328,7 @@
     "answer": "A",
     "test": "No closing labs or universities",
     "result": "pass",
-    "note": "It rules out meeting any gap from lab budgets. (no source needed: logic)",
+    "note": "It rules out meeting any gap from lab budgets. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -353,7 +353,7 @@
     "answer": "B",
     "test": "Keep scientists here",
     "result": "unclear",
-    "note": "Nothing in the answer or sources shows what it does for researchers staying in Britain. (no source needed: logic)",
+    "note": "Nothing in the answer or sources shows what it does for researchers staying in Britain. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -369,21 +369,21 @@
     "answer": "B",
     "test": "No NHS or school cuts",
     "result": "pass",
-    "note": "It bars the board from drawing on NHS or school budgets. (no source needed: logic)",
+    "note": "It bars the board from drawing on NHS or school budgets. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "B",
     "test": "No billions without a vote or say",
     "result": "pass",
-    "note": "Parliament hands over the decision and costs are published yearly, giving a say through law and scrutiny. (no source needed: logic)",
+    "note": "Parliament hands over the decision and costs are published yearly, giving a say through law and scrutiny. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "B",
     "test": "No closing labs or universities",
     "result": "unclear",
-    "note": "It doesn't mention labs or universities; the fixed envelope may or may not force closures. (no source needed: logic)",
+    "note": "It doesn't mention labs or universities; the fixed envelope may or may not force closures. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -399,14 +399,14 @@
     "answer": "C",
     "test": "Fair deal, refund if costs run over",
     "result": "unclear",
-    "note": "It joins only one part and sets no refund rule, so a fair deal with a refund is not addressed. (no source needed: logic)",
+    "note": "It joins only one part and sets no refund rule, so a fair deal with a refund is not addressed. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Keep scientists here",
     "result": "unclear",
-    "note": "Local boards keep money at home, but nothing shows this keeps scientists from leaving. (no source needed: logic)",
+    "note": "Local boards keep money at home, but nothing shows this keeps scientists from leaving. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -422,21 +422,21 @@
     "answer": "C",
     "test": "No NHS or school cuts",
     "result": "pass",
-    "note": "It says not to cut schools or the NHS to cover membership. (no source needed: logic)",
+    "note": "It says not to cut schools or the NHS to cover membership. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "No billions without a vote or say",
     "result": "pass",
-    "note": "Elected boards of researchers and users give people a direct say. (no source needed: logic)",
+    "note": "Elected boards of researchers and users give people a direct say. (). Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "No closing labs or universities",
     "result": "pass",
-    "note": "It says not to close labs to cover membership. (no source needed: logic)",
+    "note": "It says not to close labs to cover membership. (). Needs no source: it follows from what the answer says.",
     "sources": []
    }
   ],
@@ -501,7 +501,7 @@
   "trial": "For two years from 1 Feb 2027, a ring-fenced research board advises the Treasury on the FP10 terms. Treasury keeps the budget line fixed at the £2.2bn a year already set aside, and the board publishes each yearly cost and any gap. No NHS or school money is used.",
   "fail_number": "Fails if the published yearly gap is above £1.2bn (the likeliest gap in 2029-30 projected by Science Works), or if any NHS or school budget is cut to cover it.",
   "stop": "2029-01-31",
-  "statement": "The jury chose an independent science board. Fine.\n\nBudget set aside: £2.2bn a year.\nLikeliest gap, 2029-30: £1.2bn.\nPlaces the board may take it from: NHS, schools, labs. None.\n\nEvery pound has an address. This trial publishes the address, every year, before anyone says we can't afford it. Full membership or Excellent Science only stays open until the board has costed both. If it can't hold the line, it stops."
+  "statement": "The jury chose an independent science board. I'm signing a lighter version: for now the board advises and the Treasury keeps the budget line. A board should cost both options before it holds £2.2bn a year.\n\nBudget set aside: £2.2bn a year.\nLikeliest gap, 2029-30: £1.2bn.\nPlaces the board may take it from: NHS, schools, labs. None.\n\nEvery pound has an address. This trial publishes the address, every year, before anyone says we can't afford it. Full membership or Excellent Science only stays open until the board has costed both. If it can't hold the line, it stops."
  },
  "predictions": [
   {

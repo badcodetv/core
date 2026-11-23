@@ -22,7 +22,7 @@
   "field": "nhs",
   "owner": "health",
   "slot": "longest-wait",
-  "slot_reason": "Rule 2: the field nhs has never run, and today's news (23 Nov 2026) has a weight-2 UK item on it (EDITH breast screening trial begins). Rule 1 does not apply: the earliest prediction due (30 Nov 2026) is more than 3 days after 23 Nov. Fields water (10 Nov), energy (17 Nov) and migration (18 Nov) had no weight-2 or weight-3 UK item today. Other never-run fields (defence, tax, schools, ai) also had one, so this is the clerk's choice among them: the clearest values question, who decides whether a machine can stand in for a human check. Eu-trade (21 Nov) and high-street-jobs (22 Nov) ran in the two days before and are excluded.",
+  "slot_reason": "The NHS had not come up yet in the simulation, and the start of the EDITH breast screening trial was in the UK news that day. Of that day's stories, it asked the clearest values question: who decides whether a machine can stand in for a human check.",
   "news": [
    {
     "headline": "AI-assisted NHS breast screening trial begins taking in women, with up to 700,000 to be invited",
@@ -268,7 +268,7 @@
   {
    "id": "A",
    "title": "Keep two experts for some women; test AI with one expert",
-   "answer": "The Health Secretary signs a rule for the 30 EDITH hospitals. No trust may cut reading jobs or hours because of the trial; time saved goes to shorter waits. Volunteers are placed by lot: two experts as now, or AI with one expert. Letters say which. Scan data stays in the NHS; no private firm may profit from it. Provisional fail: the AI group finds one in ten fewer cancers, or more cancers showing up between screens, than the two-expert group. First check at 12 months, including waits. Stops 31 December 2029 unless Parliament renews it. Leaves out women under 50 or over 71, and any who decline AI. Two-expert women get no less than today.",
+   "answer": "The Health Secretary would sign a rule for the 30 EDITH hospitals. No trust may cut reading jobs or hours because of the trial; time saved goes to shorter waits. Volunteers are placed by lot: two experts as now, or AI with one expert. Letters say which. Scan data stays in the NHS; no private firm may profit from it. Provisional fail: the AI group finds one in ten fewer cancers, or more cancers showing up between screens, than the two-expert group. First check at 12 months, including waits. Stops 31 December 2029 unless Parliament renews it. Leaves out women under 50 or over 71, and any who decline AI. Two-expert women get no less than today.",
    "sources": [
     "s1",
     "s2",
@@ -281,7 +281,7 @@
   {
    "id": "B",
    "title": "NHS-owned scan software, women told their group, staff can stop it",
-   "answer": "Inside EDITH's volunteer sites, the Health Secretary signs a rule: the NHS owns the software and every scan, and no firm may keep or sell them. Volunteers are picked by lot: two experts as now, or one expert plus the NHS-owned AI. Each woman is told her group. A woman can say no and keep two experts. No post is cut; time saved goes to shorter waits. Staff and women sit on a panel that can switch it off. Fail: if AI finds more than 1 in 100 fewer cancers than two experts, checked at 12 months, it stops. Ends 31 December 2029 unless Parliament renews it. Leaves out women who decline and women outside the 30 sites.",
+   "answer": "Inside EDITH's volunteer sites, the Health Secretary would sign a rule: the NHS owns the software and every scan, and no firm may keep or sell them. Volunteers are picked by lot: two experts as now, or one expert plus the NHS-owned AI. Each woman is told her group. A woman can say no and keep two experts. No post is cut; time saved goes to shorter waits. Staff and women sit on a panel that can switch it off. Fail: if AI finds more than 1 in 100 fewer cancers than two experts, checked at 12 months, it stops. Ends 31 December 2029 unless Parliament renews it. Leaves out women who decline and women outside the 30 sites.",
    "sources": [
     "s1",
     "s2",
@@ -309,7 +309,7 @@
     "answer": "A",
     "test": "Finds at least as many cancers as two readers",
     "result": "fail",
-    "note": "no source needed: logic. Its stop line lets the AI group find up to one in ten fewer cancers, so it does not hold to \"at least as many\".",
+    "note": "Its stop line lets the AI group find up to one in ten fewer cancers, so it does not hold to \"at least as many\". Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -325,7 +325,7 @@
     "answer": "A",
     "test": "Women told plainly which screen",
     "result": "pass",
-    "note": "no source needed: logic. Letters tell each woman which group she is in.",
+    "note": "Letters tell each woman which group she is in. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -350,7 +350,7 @@
     "answer": "A",
     "test": "Limit: no misses two readers would catch",
     "result": "fail",
-    "note": "no source needed: logic. It accepts a drop of up to one in ten cancers found before stopping, so some women could be missed.",
+    "note": "It accepts a drop of up to one in ten cancers found before stopping, so some women could be missed. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -384,7 +384,7 @@
     "answer": "B",
     "test": "Women told plainly which screen",
     "result": "pass",
-    "note": "no source needed: logic. Each woman is told her group and can say no.",
+    "note": "Each woman is told her group and can say no. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -427,14 +427,14 @@
     "answer": "C",
     "test": "Finds at least as many cancers as two readers",
     "result": "pass",
-    "note": "no source needed: logic. Its provisional failure is any fall in cancers found against two readers.",
+    "note": "Its provisional failure is any fall in cancers found against two readers. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Faster results, shorter waits",
     "result": "pass",
-    "note": "no source needed: logic. Sets a measured waits goal (median cut 10%) with a review at six months; whether it will be hit is not yet known.",
+    "note": "Sets a measured waits goal (median cut 10%) with a review at six months; whether it will be hit is not yet known.",
     "sources": [
      "s3"
     ]
@@ -443,7 +443,7 @@
     "answer": "C",
     "test": "Women told plainly which screen",
     "result": "pass",
-    "note": "no source needed: logic. Each woman is told how she was allocated.",
+    "note": "Each woman is told how she was allocated. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {

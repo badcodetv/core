@@ -23,7 +23,7 @@
   "field": "evictions",
   "owner": "housing",
   "slot": "longest-wait",
-  "slot_reason": "Rule 2: the field \"evictions\" has never run in the simulation, and this weight-2 UK item was in the news of 15 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+  "slot_reason": "Evictions had not come up yet in the simulation, and new court figures on possession claims were in the UK news that day.",
   "news": [
    {
     "headline": "Landlord possession claims in England rise 21% to 28,249 in Q3, with accelerated claims at a record",
@@ -295,21 +295,21 @@
     "answer": "A",
     "test": "Fair hearing, time to leave",
     "result": "pass",
-    "note": "A says tenants keep full hearings, and it keeps the Section 21 ban. no source needed: logic.",
+    "note": "A says tenants keep full hearings, and it keeps the Section 21 ban. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "A",
     "test": "Fast-track simple cases",
     "result": "fail",
-    "note": "A has no fast track for clear-cut cases. no source needed: logic.",
+    "note": "A has no fast track for clear-cut cases. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "A",
     "test": "Settle early, before court",
     "result": "pass",
-    "note": "Landlords must offer mediation or a payment plan before issuing, and the fee is refunded if the case settles. no source needed: logic.",
+    "note": "Landlords must offer mediation or a payment plan before issuing, and the fee is refunded if the case settles. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -323,7 +323,7 @@
     "answer": "A",
     "test": "Limit: no rushed evictions",
     "result": "pass",
-    "note": "Full hearings and a settlement step before issuing slow a rush. no source needed: logic.",
+    "note": "Full hearings and a settlement step before issuing slow a rush. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -354,14 +354,14 @@
     "answer": "B",
     "test": "Fast-track simple cases",
     "result": "fail",
-    "note": "B separates housing cases from other work but does not fast-track clear-cut cases within it. no source needed: logic.",
+    "note": "B separates housing cases from other work but does not fast-track clear-cut cases within it. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "B",
     "test": "Settle early, before court",
     "result": "pass",
-    "note": "B runs free early mediation for both sides before a hearing. no source needed: logic.",
+    "note": "B runs free early mediation for both sides before a hearing. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -389,28 +389,28 @@
     "answer": "C",
     "test": "Courts clear backlog, more staff and judges",
     "result": "fail",
-    "note": "C leaves the courts as they are and aims to divert cases to local desks, so it adds no judges or staff. no source needed: logic.",
+    "note": "C leaves the courts as they are and aims to divert cases to local desks, so it adds no judges or staff. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Fair hearing, time to leave",
     "result": "pass",
-    "note": "Refusing a deal does not weaken anyone's right to a hearing, and tenants stay until a lawful eviction. no source needed: logic.",
+    "note": "Refusing a deal does not weaken anyone's right to a hearing, and tenants stay until a lawful eviction. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Fast-track simple cases",
     "result": "fail",
-    "note": "C has no fast track for simple cases. no source needed: logic.",
+    "note": "C has no fast track for simple cases. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Settle early, before court",
     "result": "pass",
-    "note": "Local settlement desks offer voluntary payment plans or agreed moving dates before court. no source needed: logic.",
+    "note": "Local settlement desks offer voluntary payment plans or agreed moving dates before court. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -424,7 +424,7 @@
     "answer": "C",
     "test": "Limit: no rushed evictions",
     "result": "pass",
-    "note": "Tenants stay until lawful eviction and keep their hearing. no source needed: logic.",
+    "note": "Tenants stay until lawful eviction and keep their hearing. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {

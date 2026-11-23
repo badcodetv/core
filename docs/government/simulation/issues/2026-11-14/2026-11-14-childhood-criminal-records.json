@@ -22,7 +22,7 @@
     "field": "criminal-records",
     "owner": "home",
     "slot": "longest-wait",
-    "slot_reason": "Rule 2: the field \"criminal-records\" has never run in the simulation, and this weight-2 UK item was in the news of 14 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+    "slot_reason": "Criminal records had not come up yet in the simulation, and the government's consultation on childhood records was in the UK news that day.",
     "news": [
       {
         "headline": "Consultation opens on ending lifelong disclosure of some childhood convictions",
@@ -240,7 +240,7 @@
     {
       "id": "A",
       "title": "Keep the checks; add a spent date, a review panel and a safeguard lock",
-      "answer": "The Ministry of Justice keeps today's disclosure checks but changes the rules inside them. Minor childhood convictions drop off standard and enhanced checks after a fixed period, as proposed (s2). Serious violent and sexual offences stay on every check (s1). Checks for child-safety and care work keep full disclosure. Anyone refused a drop-off can ask a small independent panel to look at their record. The Youth Justice Board would publish yearly how many childhood records show on checks, using the same measure the consultation uses (s2). It worked if that share falls while safeguarding referrals do not rise.",
+      "answer": "The Ministry of Justice would keep today's disclosure checks but change the rules inside them. Minor childhood convictions drop off standard and enhanced checks after a fixed period, as proposed (s2). Serious violent and sexual offences stay on every check (s1). Checks for child-safety and care work keep full disclosure. Anyone refused a drop-off can ask a small independent panel to look at their record. The Youth Justice Board would publish yearly how many childhood records show on checks, using the same measure the consultation uses (s2). It worked if that share falls while safeguarding referrals do not rise.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -253,7 +253,7 @@
     {
       "id": "B",
       "title": "Give childhood records to an independent panel, not Whitehall",
-      "answer": "Move decisions on hiding childhood records from the Ministry's fixed rules to an independent youth records panel, with a youth justice specialist, a care-sector safeguarding lead and someone with a childhood record. Government sets the floor: serious violent and sexual offences always show (s1, s2). The panel reviews each other record, as 19 simulated citizens asked, and can add explanation support for employers, as 10 asked. Checks for child-safety and care work stay at least as strict (20 backers). We'd know it worked if the share of checks disclosing a childhood offence (0.71% standard, 0.35% enhanced, s2) falls while serious offences stay disclosed.",
+      "answer": "Move decisions on hiding childhood records from the Ministry's fixed rules to an independent youth records panel, with a youth justice specialist, a care-sector safeguarding lead and someone with a childhood record. The government would set the floor: serious violent and sexual offences always show (s1, s2). The panel reviews each other record, as 19 simulated citizens asked, and can add explanation support for employers, as 10 asked. Checks for child-safety and care work stay at least as strict (20 backers). We'd know it worked if the share of checks disclosing a childhood offence (0.71% standard, 0.35% enhanced, s2) falls while serious offences stay disclosed.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -300,7 +300,7 @@
         "answer": "A",
         "test": "Help explaining a record to employers",
         "result": "fail",
-        "note": "A offers no help for explaining a record to an employer; no source needed: logic.",
+        "note": "A offers no help for explaining a record to an employer. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -386,7 +386,7 @@
         "answer": "C",
         "test": "Help explaining a record to employers",
         "result": "pass",
-        "note": "Applicant-run advice groups help people challenge records; no source needed: logic. It is about corrections, not explaining.",
+        "note": "Applicant-run advice groups help people challenge records It is about corrections, not explaining. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {

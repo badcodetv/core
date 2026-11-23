@@ -23,7 +23,7 @@
     "field": "eu-trade",
     "owner": "foreign",
     "slot": "longest-wait",
-    "slot_reason": "Rule 2: the field eu-trade has never run, and the 21 Nov 2026 digest has a weight-3 UK item on it. The topic was assigned by the orchestrator so parallel replays do not repeat a field. Not rule 3: none of the pages opened says Parliament must approve the deal.",
+    "slot_reason": "EU trade had not come up yet in the simulation, and the UK-EU summit deal was in the UK news that day.",
     "news": [
       {
         "headline": "UK and EU agree food trade, carbon market link and youth scheme at Brussels summit",
@@ -240,9 +240,9 @@
     ],
     "voices": [
       {
-        "citizen": "c0203",
-        "who": "71, Wales, retired, social rent",
-        "text": "Don't hand fees to foreigners while our kids can't afford uni."
+        "citizen": "c0016",
+        "who": "46, South West, looking after home and family, social rent",
+        "text": "Something that helps families afford a weekly shop. No free-for-all for students while we pay the bills."
       },
       {
         "citizen": "c0271",
@@ -275,7 +275,7 @@
     {
       "id": "A",
       "title": "Home fees for EU students, but capped, reciprocal and costed in public",
-      "answer": "Keep the current fee system and universities; change the terms of the tuition deal due within six months (s4). Home-rate fees apply to EU students only inside a fixed yearly cap on places, set by ministers and kept separate from places for UK students, so none are cut. The deal starts only when the EU gives UK students equal fees. The Treasury publishes the yearly gap and funds it from a named budget line, not from NHS or school money. Parliament reviews it after three years, and the cap shrinks or the deal ends if the gap passes the published limit. It worked if UK places hold, the gap stays inside the limit, and UK students use the reciprocal rate. The Russell Group warns that cuts would squeeze places (s4).",
+      "answer": "Keep the current fee system and universities; change the terms of the tuition deal due within six months (s4). Home-rate fees would apply to EU students only inside a fixed yearly cap on places, set by ministers and kept separate from places for UK students, so none are cut. The deal would start only when the EU gives UK students equal fees. The Treasury would publish the yearly gap and fund it from a named budget line, not from NHS or school money. Parliament would review it after three years, and the cap shrinks or the deal ends if the gap passes the published limit. It worked if UK places hold, the gap stays inside the limit, and UK students use the reciprocal rate. The Russell Group warns that any cut to EU student fees would put pressure on UK places (s4).",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -286,7 +286,7 @@
     {
       "id": "B",
       "title": "A joint fees board, not a trade-off behind closed doors",
-      "answer": "Take the fee question out of the wider trade talks and give it to a joint UK-EU fees board with equal seats for UK students, EU students and universities, plus a fixed budget. The two governments would set that up within weeks, inside the six months they have already agreed for a fees deal (s4). EU officials say the deal hangs on fees, and the UK disputes that (s4), so a separate board lets the food, carbon and youth parts go ahead. The Russell Group warns that any fee cut would squeeze UK places (s4), and 26 simulated citizens set a limit of no free places paid by taxpayers, so the board's pot must be named and capped. It worked if the rest of the deal is not held up, the fee rate is published, and UK places do not fall.",
+      "answer": "Take the fee question out of the wider trade talks and give it to a joint UK-EU fees board with equal seats for UK students, EU students and universities, plus a fixed budget. The two governments would set that up within weeks, inside the six months they have already agreed for a fees deal (s4). Times Higher Education reports EU officials saying the rest of the deal hangs on fees, and the UK side disputing that (s4), so a separate board lets the food, carbon and youth parts go ahead. The Russell Group warns that any fee cut would put pressure on UK places (s4), and 26 simulated citizens set a limit of no free places paid by taxpayers, so the board's pot must be named and capped. It worked if the rest of the deal is not held up, the fee rate is published, and UK places do not fall.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -349,7 +349,7 @@
         "answer": "A",
         "test": "No free places for EU students paid by taxpayers",
         "result": "fail",
-        "note": "A has the Treasury fund the gap between home and international fees, so taxpayers pay. No source needed: logic.",
+        "note": "A has the Treasury fund the gap between home and international fees, so taxpayers pay.",
         "sources": [
           "s4"
         ]
@@ -367,7 +367,7 @@
         "answer": "A",
         "test": "No cuts to NHS, schools, nurses to pay",
         "result": "pass",
-        "note": "A funds the gap from a named budget line, not NHS or school money. It holds only if the line is kept apart. No source needed: logic.",
+        "note": "A funds the gap from a named budget line, not NHS or school money. It holds only if the line is kept apart. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -473,7 +473,7 @@
         "answer": "C",
         "test": "No free places for EU students paid by taxpayers",
         "result": "pass",
-        "note": "C has employers pay the gap through a charge, so taxpayers do not. Whether employers would accept the charge is untested. No source needed: logic.",
+        "note": "C has employers pay the gap through a charge, so taxpayers do not. Whether employers would accept the charge is untested. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -489,7 +489,7 @@
         "answer": "C",
         "test": "No cuts to NHS, schools, nurses to pay",
         "result": "pass",
-        "note": "C funds the gap from an employer charge, not NHS or school money. No source needed: logic.",
+        "note": "C funds the gap from an employer charge, not NHS or school money. Needs no source: it follows from what the answer says.",
         "sources": []
       }
     ],
@@ -556,7 +556,7 @@
     "trial": "In the six-month fee talks, the UK offers home-rate fees only to students from EU countries that give UK students the same rate back, in writing. Start with up to two such countries for one intake year. No new cost to UK taxpayers. Parliament sees the terms.",
     "fail_number": "Any extra taxpayer cost for the trial (target: 0p), or fewer than 1 EU country signing equal terms by the stop date.",
     "stop": "2027-09-30",
-    "statement": "The jury was split, and I will say so. Four of twelve wanted fees only when the other side gives the same back. Three wanted taxpayers to pay openly. Three said no to home fees at all. Two wanted employers to pay. So I'm signing one small thing. Home rates only for countries that match them, one intake year, nothing added to anyone's tax bill. Brussels says the deal hangs on fees. London says it doesn't. Both can be true on a Friday. If no country signs equal terms by the autumn, it failed, and I'll say so."
+    "statement": "The jury was split, and I will say so. Four of twelve wanted fees only when the other side gives the same back. Three wanted taxpayers to pay openly. Three said no to home fees at all. Two wanted employers to pay. So I'm signing one small thing. Home rates only for countries that match them, one intake year, nothing added to anyone's tax bill. EU officials say the rest of the deal hangs on fees, Times Higher Education reports. The UK side says the parts are separate. Either way, this offer stands on its own. If no country signs equal terms by the autumn, it failed, and I'll say so."
   },
   "predictions": [
     {

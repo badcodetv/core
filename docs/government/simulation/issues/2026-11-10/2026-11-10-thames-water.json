@@ -23,7 +23,7 @@
   "field": "water",
   "owner": "energy-climate",
   "slot": "parliament",
-  "slot_reason": "Rule 3: a court decides the rescue plan, starting with a hearing on 27 November 2026. Picked by hand as the simulation's first template, because Kai named it.",
+  "slot_reason": "This was the first issue, chosen by hand to try the loop out. A court starts deciding the rescue plan at a hearing on 27 November 2026.",
   "news": [
    {
     "headline": "Thames Water plans would push 2027 senior debt maturities to March 2028",
@@ -103,7 +103,7 @@
    "sim-jury",
    "sim-minister"
   ],
-  "note": "Clerk step done by hand in a Claude Code session as the first template; facts checked by a research subagent on 23 Nov 2026."
+  "note": "The first issue: its opening step was done by hand to try the loop out, and its facts were checked again on 23 Nov 2026."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -285,7 +285,7 @@
   {
    "id": "A",
    "title": "Keep Thames Water private, but tie bosses' pay and fines to rivers",
-   "answer": "Keep the owners and the court rescue. Change the rules attached to it. First, the regulator must ban bonuses and dividends until spills fall for three years running, since part of 2025's fall was dry weather (s5). Second, bosses' pay is held back and can be clawed back if the company breaks the rules. Third, the £122.7m fine is paid in full on its backstop date and not written down (s6). Fourth, a new customer panel gets a seat and a veto on bill rises. Bills do not rise to pay the debts. Ofwat does this. We would know it worked if spills keep falling in wet years and no bonus is paid.",
+   "answer": "Keep the owners and the court rescue. Change the rules attached to it. First, the regulator must ban bonuses and dividends until spills fall for three years running, since part of 2025's fall was dry weather (s5). Second, bosses' pay is held back and can be clawed back if the company breaks the rules. Third, the £122.7m fine is paid in full on its backstop date and not written down (s6). Fourth, a new customer panel gets a seat and a veto on bill rises. Bills do not rise to pay the debts. Ofwat would do this. We would know it worked if spills keep falling in wet years and no bonus is paid.",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -297,7 +297,7 @@
   {
    "id": "B",
    "title": "Hand Thames Water to its customers and staff, with debts written down",
-   "answer": "Put Thames Water into special administration, so a court-appointed administrator runs it while its debts are sorted out (s9 argues this can cost close to zero in law). Then move it into a public-benefit company. Customers and staff elect a board, with seats for river groups. Bosses who broke the rules answer for it, and creditors take the loss before any taxpayer does. Bills do not rise to pay old debts. Government does this. It worked if spills keep falling in a normal-weather year (s5), the £122.7m fine is paid (s6), and bills stay flat.",
+   "answer": "Put Thames Water into special administration, so a court-appointed administrator runs it while its debts are sorted out (s9 argues this can cost close to zero in law). Then move it into a public-benefit company. Customers and staff elect a board, with seats for river groups. Bosses who broke the rules answer for it, and creditors take the loss before any taxpayer does. Bills do not rise to pay old debts. The government would do this. It worked if spills keep falling in a normal-weather year (s5), the £122.7m fine is paid (s6), and bills stay flat.",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -334,7 +334,7 @@
     "answer": "A",
     "test": "Bosses who broke rules answer",
     "result": "pass",
-    "note": "The £122.7m fine is paid in full by the 31 March 2030 backstop and pay can be clawed back; no source needed beyond the fine terms.",
+    "note": "The £122.7m fine is paid in full by the 31 March 2030 backstop and pay can be clawed back.",
     "sources": [
      "s6"
     ]
@@ -343,7 +343,7 @@
     "answer": "A",
     "test": "Local say in company",
     "result": "pass",
-    "note": "no source needed: logic. A customer panel with a seat and a veto on bill rises is a real say.",
+    "note": "A customer panel with a seat and a veto on bill rises is a real say. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -357,14 +357,14 @@
     "answer": "A",
     "test": "Limit: taps not cut off",
     "result": "pass",
-    "note": "no source needed: logic. The same owner keeps running the company, so supply carries on.",
+    "note": "The same owner keeps running the company, so supply carries on. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "A",
     "test": "Limit: no bill/tax rise for debts",
     "result": "pass",
-    "note": "no source needed: logic. It says bills do not rise to pay the debts, and the owners and lenders keep the debt.",
+    "note": "It says bills do not rise to pay the debts, and the owners and lenders keep the debt. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -396,7 +396,7 @@
     "answer": "B",
     "test": "Local say in company",
     "result": "pass",
-    "note": "no source needed: logic. Customers and staff elect the board, with seats for river groups.",
+    "note": "Customers and staff elect the board, with seats for river groups. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -453,7 +453,7 @@
     "answer": "C",
     "test": "Local say in company",
     "result": "pass",
-    "note": "no source needed: logic. Users and workers elect the board and can vote directors out.",
+    "note": "Users and workers elect the board and can vote directors out. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -467,7 +467,7 @@
     "answer": "C",
     "test": "Limit: taps not cut off",
     "result": "pass",
-    "note": "no source needed: logic. It commits to keeping staff and water supplies running.",
+    "note": "It commits to keeping staff and water supplies running. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -483,7 +483,7 @@
     "answer": "C",
     "test": "Limit: jobs and services kept",
     "result": "pass",
-    "note": "no source needed: logic. It lists protected jobs as a success measure.",
+    "note": "It lists protected jobs as a success measure. Needs no source: it follows from what the answer says.",
     "sources": []
    }
   ],
@@ -552,7 +552,7 @@
   "trial": "In the Thames Water rescue, ask for a customer and staff panel: 12 people drawn by lot from its area, a seat in the creditor talks and a veto on any bill rise that pays old debt. Lenders take the loss first. One company, one panel, no change of owner yet.",
   "fail_number": "Any rise in the average Thames Water bill that the company ties to debt payments (target: 0%), or the panel not seated by the 13 January 2027 sanction hearing.",
   "stop": "2027-03-31",
-  "statement": "Brilliant news first: a hearing on 27 November decides a £18.5bn problem, and the jury picked a way out. Customers and staff get a say, lenders take the loss. Hard bit: five of twelve jurors is not a landslide, and none of the three answers shows who pays for the pipes. So I'm signing one small thing. One company, one panel of ordinary people with a veto on bills that pay old debts. If bills rise for debt, it failed. If it works, we try a bigger one."
+  "statement": "A court hearing on 27 November starts the process on the rescue plan, and the sanction hearing is on 13 January. Thames Water Utilities had £18.5bn of net debt in March 2026. The jury picked a way out. Customers and staff get a say, lenders take the loss. Hard bit: five of twelve jurors is not a landslide, and none of the three answers shows who pays for the pipes. So I'm signing one small thing. One company, one panel of ordinary people with a veto on bills that pay old debts. If bills rise for debt, it failed. If it works, we try a bigger one."
  },
  "predictions": [
   {

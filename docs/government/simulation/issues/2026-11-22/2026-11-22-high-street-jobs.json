@@ -14,7 +14,7 @@
   "title": "When a big chain fails, who looks after its workers and towns?",
   "short": "HIGH STREET JOBS",
   "question": "When a big high street chain is failing, what should the government do for its workers and the towns it leaves behind?",
-  "summary": "Poundland, a chain of about 600 stores and 12,000 staff, is in sale talks, with a preferred bid due by Wednesday and a pause on creditors' demands due to end on Thursday. If a whole-company bid fails, the stores, staff and stock could be auctioned to rivals. Its owner Gordon Brothers released about £20m last week, and ITV News reported that £60m of sales cash is still out of reach. The Business Secretary is due to meet the owner next week.",
+  "summary": "Poundland, a chain of about 600 stores and 12,000 staff, is in sale talks. City AM reported on 20 November 2026 that a preferred bid was due to be chosen by 25 November, and that a pause on creditors' demands was due to end on 26 November. If a whole-company bid fails, the stores, staff and stock could be auctioned to rivals. City AM said its owner, Gordon Brothers, made about £20m available in the week of 9 November, and that ITV News had reported £60m of sales cash still out of reach.",
   "summary_sources": [
    "s1",
    "s2"
@@ -22,7 +22,7 @@
   "field": "high-street-jobs",
   "owner": "work-pensions",
   "slot": "longest-wait",
-  "slot_reason": "Rule 2: the field high-street-jobs has never run, and the news of 22 Nov 2026 has a weight-2 UK item on it (Poundland sale talks). No field ran in the two days before 22 Nov. The question is the general one about workers and towns, not a verdict on any named company.",
+  "slot_reason": "The high street had not come up yet in the simulation, and the Poundland sale talks were in the UK news that day. The question is about workers and towns in general, not a verdict on one company.",
   "news": [
    {
     "headline": "Poundland sale talks run through the weekend as bids are weighed",
@@ -246,7 +246,7 @@
   {
    "id": "A",
    "title": "Workers paid first and fast, whoever buys or auctions the stores",
-   "answer": "The Business Secretary, who says intervention options are under review (s2), makes any sale or store auction (s1) conditional on workers being paid first, with no public money for owners. The Insolvency Service already aims to pay eligible employee claims within 6 weeks (s3); the Secretary makes that a hard limit. Contractors, who now queue as creditors (s4), get the same route through a rule change. Success: every eligible claim, contractors included, is paid within 6 weeks, and the department publishes the count of claims paid and days taken.",
+   "answer": "The government has said it is keeping its options open (s2). This answer would make any sale or store auction (s1) conditional on workers being paid first, with no public money for owners. The Insolvency Service already aims to pay eligible employee claims within 6 weeks (s3); the government would make that a hard limit. Contractors, who now queue as creditors (s4), would get the same route through a rule change. Success: every eligible claim, contractors included, is paid within 6 weeks, and the department publishes the count of claims paid and days taken.",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -260,7 +260,7 @@
   {
    "id": "B",
    "title": "Give staff and towns first call on stores before any auction",
-   "answer": "If a whole-company bid fails, Poundland's stores, staff and stock could be auctioned to rivals [s1]. Instead, the Business Secretary, who says his options are under review [s2], would give staff groups and local councils a short first right to take over any store due to close, with the Insolvency Service paying owed wages and notice directly [s3]. No public money goes to the owner or bosses; that limit had 51 backers among simulated citizens. Contractors, who must otherwise queue as creditors [s4], would be paid in the same round. It worked if workers were paid within 6 weeks [s3], and most closing stores were reopened or reused rather than left empty.",
+   "answer": "If a whole-company bid fails, Poundland's stores, staff and stock could be auctioned to rivals [s1]. Instead, the government, which has said it is keeping its options open [s2], would give staff groups and local councils a short first right to take over any store due to close, with the Insolvency Service paying owed wages and notice directly [s3]. No public money would go to the owner or bosses; that limit had 51 backers among simulated citizens. Contractors, who must otherwise queue as creditors [s4], would be paid in the same round. It worked if workers were paid within 6 weeks [s3], and most closing stores were reopened or reused rather than left empty.",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -273,7 +273,7 @@
   },
   {
    "id": "C",
-   "title": "SIMULATION: Let workers and towns buy a fresh start",
+   "title": "Let workers and towns buy a fresh start",
    "answer": "If Poundland is sold in pieces, which could happen [s1], government should fund a local rescue scheme. Workers and local shoppers would jointly own rescued shops, with one vote each. Councils would offer capped loans only where a plan shows sales can cover wages, rent and repayments. Money would buy shop assets, never shares in the failing owner. The same scheme would advance unpaid wages within two weeks and fund training where shops cannot survive. Each town would publish costs, repayments and jobs kept after a year. Success means workers paid promptly and shops covering their bills without repeat support.",
    "engine": "codex",
    "model": "gpt-6",
@@ -298,7 +298,7 @@
     "answer": "A",
     "test": "Reuse empty units",
     "result": "fail",
-    "note": "Nothing on reusing empty shops. no source needed: logic.",
+    "note": "Nothing on reusing empty shops. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -314,7 +314,7 @@
     "answer": "A",
     "test": "No public money for owners",
     "result": "pass",
-    "note": "no source needed: logic. States no public money for owners.",
+    "note": "States no public money for owners. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -339,7 +339,7 @@
     "answer": "B",
     "test": "Reuse empty units",
     "result": "pass",
-    "note": "Councils get first call on closing stores, and the test is stores reopened or reused. no source needed: logic.",
+    "note": "Councils get first call on closing stores, and the test is stores reopened or reused. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -355,7 +355,7 @@
     "answer": "B",
     "test": "No public money for owners",
     "result": "pass",
-    "note": "no source needed: logic. States no public money to the owner or bosses; takeover costs are not priced.",
+    "note": "States no public money to the owner or bosses; takeover costs are not priced. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -371,35 +371,35 @@
     "answer": "C",
     "test": "Pay owed, retrain",
     "result": "pass",
-    "note": "Advances unpaid wages within two weeks and funds training. no source needed: logic.",
+    "note": "Advances unpaid wages within two weeks and funds training. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Reuse empty units",
     "result": "unclear",
-    "note": "Keeps shops trading as worker-owned; it does not say what happens to units that stay empty. no source needed: logic.",
+    "note": "Keeps shops trading as worker-owned; it does not say what happens to units that stay empty. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Back a rescue",
     "result": "pass",
-    "note": "Keeps viable shops open under worker and shopper ownership, with sales plans checked. no source needed: logic.",
+    "note": "Keeps viable shops open under worker and shopper ownership, with sales plans checked. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "No public money for owners",
     "result": "unclear",
-    "note": "Loans go to co-owned shops, not to the owner, but the seller still gets paid for the assets. no source needed: logic.",
+    "note": "Loans go to co-owned shops, not to the owner, but the seller still gets paid for the assets. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "No months-long wait",
     "result": "pass",
-    "note": "Wages advanced within two weeks, faster than months. no source needed: logic.",
+    "note": "Wages advanced within two weeks, faster than months. Needs no source: it follows from what the answer says.",
     "sources": []
    }
   ],
@@ -468,7 +468,7 @@
   "trial": "In one council area that loses a big-chain store in administration, staff and the council get 28 days of first call on the empty unit, and the Insolvency Service's 6-week pay aim is tracked for every eligible employee. Contractors' pay is only logged, not changed.",
   "fail_number": "Fails if fewer than 1 in 4 closing stores get a staff or council bid in 28 days, or any eligible claim takes over 6 weeks.",
   "stop": "2027-06-30",
-  "statement": "Four of twelve jurors said staff and the council should get first call on a closing shop. Not the biggest win, so we start small. One council area. 28 days. No money to the owner or the bosses. The wages the law already promises get paid in 6 weeks, and we count every one. The people who stack the shelves know the shop better than any rival. Ask the board why they never asked."
+  "statement": "Four of twelve jurors said staff and the council should get first call on a closing shop. Not the biggest win, so we start small. One council area. 28 days. No money to the owner or the bosses. The wages the law already promises get paid in 6 weeks, and we count every one. The people who stack the shelves know the shop better than any rival. No law makes anyone ask them."
  },
  "predictions": [
   {

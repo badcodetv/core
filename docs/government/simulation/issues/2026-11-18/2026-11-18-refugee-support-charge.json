@@ -22,7 +22,7 @@
     "field": "migration",
     "owner": "home",
     "slot": "parliament",
-    "slot_reason": "Rule 3: the weight-3 UK item of 18 Nov 2026 says Parliament is deciding the Immigration and Asylum Bill at Commons report stage that day, and the migration field has never run (rule 2 would also allow it). Migration did not run in the two days before 18 Nov.",
+    "slot_reason": "Migration had not come up yet in the simulation, and Parliament was deciding the Immigration and Asylum Bill that day.",
     "news": [
       {
         "headline": "Immigration and Asylum Bill due at Commons report stage on 18 November",
@@ -245,7 +245,7 @@
     {
       "id": "B",
       "title": "Take refugee repayment out of the Home Office's hands",
-      "answer": "Drop the flat £10,000 charge on refugees who received asylum support (s1). The government says the Bill lets it require asylum seekers in taxpayer-funded accommodation to contribute when they can afford to (s2). Give that affordability test to an independent assessor, not the department that runs the asylum system. Parliament fixes a cap; the assessor sets income-based amounts, publishes every decision, and collects only through tax once someone works. Success: no one left without money, food or a bed while waiting, which 36 simulated citizens backed as a limit, and published figures show how much is recovered against what collecting it costs.",
+      "answer": "Drop the flat £10,000 charge on refugees who received asylum support (s1). The government says the Bill lets it require asylum seekers in taxpayer-funded accommodation to contribute when they can afford to (s2). Give that affordability test to an independent assessor, not the department that runs the asylum system. Parliament would fix a cap; the assessor would set income-based amounts, publish every decision, and collect only through tax once someone works. Success: no one left without money, food or a bed while waiting, which 36 simulated citizens backed as a limit, and published figures show how much is recovered against what collecting it costs.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -282,21 +282,21 @@
         "answer": "A",
         "test": "Drop the charge entirely",
         "result": "fail",
-        "note": "It keeps a charge, only smaller and means-tested, so the charge is not dropped. no source needed: logic.",
+        "note": "It keeps a charge, only smaller and means-tested, so the charge is not dropped. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "A",
         "test": "Pay back through tax once working",
         "result": "pass",
-        "note": "It collects only from earnings, so repayment starts once someone works. no source needed: logic.",
+        "note": "It collects only from earnings, so repayment starts once someone works. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "A",
         "test": "Repay full cost, any income",
         "result": "fail",
-        "note": "It caps the charge and tests means, so it does not repay the full cost whatever the income. no source needed: logic.",
+        "note": "It caps the charge and tests means, so it does not repay the full cost whatever the income. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -327,21 +327,21 @@
         "answer": "B",
         "test": "Drop the charge entirely",
         "result": "fail",
-        "note": "It drops the flat £10,000 but still charges by income, so it is not a full drop. no source needed: logic.",
+        "note": "It drops the flat £10,000 but still charges by income, so it is not a full drop. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "B",
         "test": "Pay back through tax once working",
         "result": "pass",
-        "note": "It collects only through tax once someone works. no source needed: logic.",
+        "note": "It collects only through tax once someone works. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "B",
         "test": "Repay full cost, any income",
         "result": "fail",
-        "note": "Amounts depend on income and sit under a cap, so not the full cost whatever the income. no source needed: logic.",
+        "note": "Amounts depend on income and sit under a cap, so not the full cost whatever the income. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -362,7 +362,7 @@
         "answer": "C",
         "test": "Repay only if affordable, fixed cap",
         "result": "fail",
-        "note": "It drops the charge (s1) and sets no repayment by ability to pay, so this test is not met. no source needed: logic.",
+        "note": "It drops the charge (s1) and sets no repayment by ability to pay, so this test is not met.",
         "sources": [
           "s1"
         ]
@@ -380,14 +380,14 @@
         "answer": "C",
         "test": "Pay back through tax once working",
         "result": "fail",
-        "note": "It has no repayment route, through tax or otherwise. no source needed: logic.",
+        "note": "It has no repayment route, through tax or otherwise. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "C",
         "test": "Repay full cost, any income",
         "result": "fail",
-        "note": "It removes repayment altogether, the opposite of this test. no source needed: logic.",
+        "note": "It removes repayment altogether, the opposite of this test. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -401,7 +401,7 @@
         "answer": "C",
         "test": "Limit: no debt that blocks a new life",
         "result": "pass",
-        "note": "It leaves no repayment debt from support received while waiting. no source needed: logic.",
+        "note": "It leaves no repayment debt from support received while waiting. Needs no source: it follows from what the answer says.",
         "sources": []
       }
     ],

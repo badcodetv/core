@@ -21,7 +21,7 @@
   "field": "leasehold",
   "owner": "housing",
   "slot": "longest-wait",
-  "slot_reason": "Rule 2: the field \"leasehold\" has never run in the simulation, and this weight-2 UK item was in the news of 13 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+  "slot_reason": "Leasehold had not come up yet in the simulation, and new rights for leaseholders were in the UK news that day.",
   "news": [
    {
     "headline": "Government sets out new leaseholder protections against service charges in England",
@@ -237,7 +237,7 @@
   {
    "id": "B",
    "title": "Let each building's leaseholders approve the budget before billing",
-   "answer": "The landlord stops being sole judge of its own bills. In each building, a leaseholder board, elected by the flat owners, approves the annual service charge budget before any demand goes out, and the landlord's agent reports to it. Landlords still cannot pass on dispute legal costs without tribunal approval from 1 April 2027 [s1], but disputes become rarer because bills are agreed first. Who: the government writes this into the coming Commonhold and Leasehold Reform Bill [s1]. How we'd know: fewer tribunal challenges, and the share of leaseholders calling unfair charges hard to challenge, 89% in a trade body survey [s2], falls. 31 simulated citizens backed checking charges before billing.",
+   "answer": "The landlord stops being sole judge of its own bills. In each building, a leaseholder board, elected by the flat owners, approves the annual service charge budget before any demand goes out, and the landlord's agent reports to it. Landlords still cannot pass on dispute legal costs without tribunal approval from 1 April 2027 [s1], but disputes become rarer because bills are agreed first. Who: the government would write this into the coming Commonhold and Leasehold Reform Bill [s1]. How we'd know: fewer tribunal challenges, and the share of leaseholders calling unfair charges hard to challenge, 89% in a trade body survey [s2], falls. 31 simulated citizens backed checking charges before billing.",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -345,7 +345,7 @@
     "answer": "B",
     "test": "Leaseholders keep homes, pay no more",
     "result": "unclear",
-    "note": "Fewer disputes would help, but nothing shows leaseholders pay less; no source needed: logic.",
+    "note": "Fewer disputes would help, but nothing shows leaseholders pay less. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -388,7 +388,7 @@
     "answer": "C",
     "test": "Leaseholders keep homes, pay no more",
     "result": "pass",
-    "note": "Holds a disputed sum safely so no one loses a home over it; no source needed: logic.",
+    "note": "Holds a disputed sum safely so no one loses a home over it. Needs no source: it follows from what the answer says.",
     "sources": []
    }
   ],
@@ -455,7 +455,7 @@
   "trial": "From 1 April 2027, in the tribunal's service charge cases in one region, landlords carry their own legal costs and cannot add them to the bill. Leaseholders who win recover theirs. Small landlords with a handful of flats get standard forms and a named helper.",
   "fail_number": "Fewer than 1 in 10 challenges end with leaseholders dropping the case over cost by the stop date, against today's 89% who say charges are hard to challenge.",
   "stop": "2027-09-30",
-  "statement": "Twelve simulated jurors said: the landlord sends the bill, the landlord pays for the argument. Fair. I'm signing a small trial, not a national programme. One region. Landlords carry their own costs. Leaseholders who win get theirs back. The trade-off: small landlords. A one-flat landlord is not a fund, so they get the forms and a helper. Show me it works, or we stop."
+  "statement": "Five of twelve simulated jurors said: the landlord sends the bill, the landlord pays for the argument. Fair. I'm signing a small trial, not a national programme. One region. Landlords carry their own costs. Leaseholders who win get theirs back. The trade-off: small landlords. A one-flat landlord is not a fund, so they get the forms and a helper. Show me it works, or we stop."
  },
  "predictions": [
   {

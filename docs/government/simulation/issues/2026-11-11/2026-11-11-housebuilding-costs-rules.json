@@ -22,7 +22,7 @@
     "field": "housebuilding-costs",
     "owner": "housing",
     "slot": "longest-wait",
-    "slot_reason": "Rule 2: the field \"housebuilding-costs\" has never run in the simulation, and this weight-2 UK item was in the news of 11 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+    "slot_reason": "Housebuilding costs had not come up yet in the simulation, and a think tank's report on them was in the UK news that day.",
     "news": [
       {
         "headline": "Think tank report says government-imposed costs make up 42-57% of new-build viable prices",
@@ -243,7 +243,7 @@
     {
       "id": "A",
       "title": "Keep the rules and taxes; fund planning teams, refund late decisions",
-      "answer": "Keep today's rules and taxes, and fix the referee. The housing department ring-fences planning fees and adds funding so each local planning authority can staff its planning team. If a standard housing application is decided late, the authority refunds the fee. The case: the 57% figure comes from two modelled developments, not a full assessment of new homes (s1), so cutting standards or affordable housing duties on it is a gamble. Separate research found 69% of respondents cited resource shortages in planning authorities as a cause of delay (s2). How we'd know: each authority publishes its share of decisions made on time, median wait, and homes started on approved sites, every quarter.",
+      "answer": "Keep today's rules and taxes, and fix the referee. The housing department would ring-fence planning fees and add funding so each local planning authority can staff its planning team. If a standard housing application is decided late, the authority would refund the fee. The case: the 57% figure comes from two modelled developments, not a full assessment of new homes (s1), so cutting standards or affordable housing duties on it is a gamble. Separate research found 69% of respondents cited resource shortages in planning authorities as a cause of delay (s2). How we'd know: each authority publishes its share of decisions made on time, median wait, and homes started on approved sites, every quarter.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -255,7 +255,7 @@
     {
       "id": "B",
       "title": "Let a national planning service take over stalled housing decisions",
-      "answer": "Government sets up a national planning service of qualified planners. Any council short of staff can hand it housing applications, and it must decide within a fixed deadline. Councils keep the final say on design. Fees on applications are ring-fenced to pay for it. Leave stamp duty, affordable-housing duties and green standards alone for now: the think tank's 57% figure rests on two modelled developments, not a full assessment (s1), while 69% of respondents in separate research blamed resource shortages in local planning authorities for delays (s2). You'd know it worked if the time from application to decision falls, councils report fewer staffing delays, and affordable homes on big sites don't drop.",
+      "answer": "The government would set up a national planning service of qualified planners. Any council short of staff can hand it housing applications, and it must decide within a fixed deadline. Councils keep the final say on design. Fees on applications are ring-fenced to pay for it. Leave stamp duty, affordable-housing duties and green standards alone for now: the think tank's 57% figure rests on two modelled developments, not a full assessment (s1), while 69% of respondents in separate research blamed resource shortages in local planning authorities for delays (s2). You'd know it worked if the time from application to decision falls, councils report fewer staffing delays, and affordable homes on big sites don't drop.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -291,7 +291,7 @@
         "answer": "A",
         "test": "Lower taxes on new homes",
         "result": "fail",
-        "note": "Keeps stamp duty and other taxes as they are. No source needed: logic.",
+        "note": "Keeps stamp duty and other taxes as they are. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -308,28 +308,28 @@
         "answer": "A",
         "test": "Fewer rules for small builders",
         "result": "fail",
-        "note": "Leaves the rules unchanged, so nothing is eased for small builders. No source needed: logic.",
+        "note": "Leaves the rules unchanged, so nothing is eased for small builders. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "A",
         "test": "Safety and quality not worse",
         "result": "pass",
-        "note": "Keeps all building rules and standards in place. No source needed: logic.",
+        "note": "Keeps all building rules and standards in place. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "A",
         "test": "Affordable homes not cut from big sites",
         "result": "pass",
-        "note": "Keeps affordable housing duties unchanged. No source needed: logic.",
+        "note": "Keeps affordable housing duties unchanged. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "A",
         "test": "Green standards not dropped",
         "result": "pass",
-        "note": "Keeps green standards unchanged. No source needed: logic.",
+        "note": "Keeps green standards unchanged. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -345,7 +345,7 @@
         "answer": "B",
         "test": "Lower taxes on new homes",
         "result": "fail",
-        "note": "Leaves stamp duty and other taxes alone. No source needed: logic.",
+        "note": "Leaves stamp duty and other taxes alone. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -362,28 +362,28 @@
         "answer": "B",
         "test": "Fewer rules for small builders",
         "result": "fail",
-        "note": "Rules stay as they are, so small builders get no relief from them. No source needed: logic.",
+        "note": "Rules stay as they are, so small builders get no relief from them. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "B",
         "test": "Safety and quality not worse",
         "result": "pass",
-        "note": "Standards untouched. No source needed: logic.",
+        "note": "Standards untouched. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "B",
         "test": "Affordable homes not cut from big sites",
         "result": "pass",
-        "note": "Affordable housing duties untouched; the answer names this as a measure of success. No source needed: logic.",
+        "note": "Affordable housing duties untouched; the answer names this as a measure of success. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "B",
         "test": "Green standards not dropped",
         "result": "pass",
-        "note": "Green standards untouched. No source needed: logic.",
+        "note": "Green standards untouched. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -417,28 +417,28 @@
         "answer": "C",
         "test": "Fewer rules for small builders",
         "result": "fail",
-        "note": "Does not ease any rule for small builders. No source needed: logic.",
+        "note": "Does not ease any rule for small builders. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "C",
         "test": "Safety and quality not worse",
         "result": "pass",
-        "note": "Keeps safety and quality standards in place. No source needed: logic.",
+        "note": "Keeps safety and quality standards in place. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "C",
         "test": "Affordable homes not cut from big sites",
         "result": "pass",
-        "note": "Keeps affordable housing duties. No source needed: logic.",
+        "note": "Keeps affordable housing duties. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "C",
         "test": "Green standards not dropped",
         "result": "pass",
-        "note": "Keeps green standards. No source needed: logic.",
+        "note": "Keeps green standards. Needs no source: it follows from what the answer says.",
         "sources": []
       }
     ],

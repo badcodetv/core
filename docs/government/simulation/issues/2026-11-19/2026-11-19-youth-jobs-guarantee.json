@@ -22,7 +22,7 @@
   "field": "youth-jobs",
   "owner": "work-pensions",
   "slot": "longest-wait",
-  "slot_reason": "Rule 2: the field youth-jobs has never run in the simulation, and the news of 19 Nov 2026 has a weight-3 UK item on it (the government's response to the Milburn review). The field is therefore past the 5-day wait. Topic assigned by the orchestrator so parallel replays don't repeat a field. The only earlier issue, water, ran on 10 Nov 2026, so no field ran in the two days before 19 Nov.",
+  "slot_reason": "Youth jobs had not come up yet in the simulation, and the government's response to the Milburn review was in the UK news that day.",
   "news": [
    {
     "headline": "Government responds to Milburn review on young people and work, promising a new settlement for young people",
@@ -237,9 +237,9 @@
     "text": "Support for people who are sick, not sanctions. Don't cut or force sick people into jobs."
    },
    {
-    "citizen": "c0577",
-    "who": "36, South West, employed, owns outright",
-    "text": "Young British lads first, before migrants. Don't give cash to people who won't graft."
+    "citizen": "c0973",
+    "who": "41, Yorkshire and The Humber, employed, social renter",
+    "text": "Proper training jobs, not made-up schemes. Don't let my taxes go on more unfunded promises."
    },
    {
     "citizen": "c0003",
@@ -261,8 +261,8 @@
  "bench": [
   {
    "id": "A",
-   "title": "Offer every young jobless person a real placement fast, with a fair du",
-   "answer": "What changes: the existing Jobs Guarantee, a fully funded six-month job, opens for under-25s after three months on Universal Credit instead of the planned 12, paid at least the legal wage. Taking a suitable offer becomes the condition of continued support, but nobody who is sick or disabled is sanctioned. Who does it: the Work and Pensions Secretary, paid for by moving money from the 2.5 billion pound Youth Guarantee and the spending on the consequences of inactivity (25 pounds for every 1 pound on opportunity), with no new tax. How we'd know: the Youth Opportunities Unit publishes quarterly, by area, how many take up offers, how many reach lasting work, and what each cost. [s1][s2]",
+   "title": "A real placement fast for every young jobless person, with a fair duty",
+   "answer": "What changes: the existing Jobs Guarantee, a fully funded six-month job, would open for under-25s after three months on Universal Credit instead of the planned 12, paid at least the legal wage. Taking a suitable offer would become the condition of continued support, but nobody who is sick or disabled would be sanctioned. Who would do it: the Work and Pensions Secretary, paying for it by moving money from the 2.5 billion pound Youth Guarantee and the spending on the consequences of inactivity (25 pounds for every 1 pound on opportunity), with no new tax. How we'd know: the Youth Opportunities Unit would publish quarterly, by area, how many take up offers, how many reach lasting work, and what each cost. [s1][s2]",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -310,21 +310,21 @@
     "answer": "A",
     "test": "Councils and colleges run it, with the money",
     "result": "fail",
-    "note": "Delivery stays with the Work and Pensions Secretary; no local control of money. no source needed: logic. ",
+    "note": "Delivery stays with the Work and Pensions Secretary; no local control of money. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "A",
     "test": "Benefits come with a clear duty to work or train",
     "result": "pass",
-    "note": "Taking a suitable offer becomes the condition of support. no source needed: logic. ",
+    "note": "Taking a suitable offer becomes the condition of support. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "A",
     "test": "Help with rent, childcare or travel",
     "result": "fail",
-    "note": "Says nothing about rent, childcare or travel help. no source needed: logic. ",
+    "note": "Says nothing about rent, childcare or travel help. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -340,7 +340,7 @@
     "answer": "A",
     "test": "Limit: don't cut or force sick or disabled",
     "result": "pass",
-    "note": "Says no one sick or disabled is sanctioned. no source needed: logic. ",
+    "note": "Says no one sick or disabled is sanctioned. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -356,7 +356,7 @@
     "answer": "A",
     "test": "Limit: no dead-end, far-off or unaffordable jobs or debt",
     "result": "unclear",
-    "note": "Only a legal-wage floor is set; what counts as a suitable offer is not defined. no source needed: logic. ",
+    "note": "Only a legal-wage floor is set; what counts as a suitable offer is not defined. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -372,7 +372,7 @@
     "answer": "B",
     "test": "Councils and colleges run it, with the money",
     "result": "pass",
-    "note": "Local boards of council, college and employers hold the money. The answer itself notes only 6 citizens backed this. no source needed: logic. ",
+    "note": "Local boards of council, college and employers hold the money. The answer itself notes only 6 citizens backed this. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -386,7 +386,7 @@
     "answer": "B",
     "test": "Help with rent, childcare or travel",
     "result": "fail",
-    "note": "No help with rent, childcare or travel is mentioned. no source needed: logic. ",
+    "note": "No help with rent, childcare or travel is mentioned. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -435,21 +435,21 @@
     "answer": "C",
     "test": "Councils and colleges run it, with the money",
     "result": "pass",
-    "note": "Councils and colleges deliver it under a board young users elect. no source needed: logic. ",
+    "note": "Councils and colleges deliver it under a board young users elect. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Benefits come with a clear duty to work or train",
     "result": "pass",
-    "note": "Young people able to take part must attend and follow an agreed plan. no source needed: logic. ",
+    "note": "Young people able to take part must attend and follow an agreed plan. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Help with rent, childcare or travel",
     "result": "pass",
-    "note": "Travel and childcare are covered when needed. Rent is not mentioned. no source needed: logic. ",
+    "note": "Travel and childcare are covered when needed. Rent is not mentioned. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -463,7 +463,7 @@
     "answer": "C",
     "test": "Limit: don't cut or force sick or disabled",
     "result": "pass",
-    "note": "Protects support during illness or disability. no source needed: logic. ",
+    "note": "Protects support during illness or disability. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -479,7 +479,7 @@
     "answer": "C",
     "test": "Limit: no dead-end, far-off or unaffordable jobs or debt",
     "result": "pass",
-    "note": "Right to change unsuitable placements; employers paid only when work lasts. no source needed: logic. ",
+    "note": "Right to change unsuitable placements; employers paid only when work lasts. Needs no source: it follows from what the answer says.",
     "sources": []
    }
   ],
@@ -546,7 +546,7 @@
   "trial": "In one area, 18- to 24-year-olds on Universal Credit are offered a paid, real placement after three months, not twelve. Taking a suitable offer is the condition. Nobody sick or disabled is sanctioned. Travel and childcare are covered. Results are published every quarter.",
   "fail_number": "Fewer than 4 in 10 of those offered a place are still in paid work or training six months later, against those who got no offer.",
   "stop": "2027-06-30",
-  "statement": "A million young people. Not working, not learning. Nobody asked them what they need.\nThe jury picked a place with a duty. Fine. We'll start small, in one area. A real job, real pay, and a fair ask in return.\nNo one sick gets sanctioned. Not on my watch.\nThe government's own figure: 25 pounds spent on the cost of doing nothing for every 1 pound spent on a start. That is the sum that needs changing.\nWe publish the results every quarter. If it fails, we say so."
+  "statement": "A million young people. Not working, not learning. The plan for them gives no cost for the new youth services yet.\nThe jury picked a place with a duty. Fine. We'll start small, in one area. A real job, real pay, and a fair ask in return.\nNo one sick gets sanctioned. Not on my watch.\nThe government's own figure: 25 pounds spent on the consequences of inactivity for every 1 pound spent on opportunity. That is the sum that needs changing.\nWe publish the results every quarter. If it fails, we say so."
  },
  "predictions": [
   {

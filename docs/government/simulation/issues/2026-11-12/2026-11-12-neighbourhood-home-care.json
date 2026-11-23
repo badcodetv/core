@@ -21,7 +21,7 @@
   "field": "social-care",
   "owner": "health",
   "slot": "longest-wait",
-  "slot_reason": "Rule 2: the field \"social-care\" has never run in the simulation, and this weight-2 UK item was in the news of 12 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field). Rule 1 does not apply to this pick. The field ran in neither of the two days before 12 Nov.",
+  "slot_reason": "Social care had not come up yet in the simulation, and the government's home care plans were in the UK news that day.",
   "news": [
    {
     "headline": "Government sets out neighbourhood home care plan, National Care Service pledge and \u00a340m GP winter scheme",
@@ -249,7 +249,7 @@
   {
    "id": "A",
    "title": "Fund care by reforming the Triple Lock, with pensioner floor and audit",
-   "answer": "Keep councils commissioning care, but change the rules. First, the Treasury publishes the Triple Lock change as a costed schedule, with a protected floor so no pensioner's income falls; the poll found 48% support when it funds care (s2). Second, the Department of Health and Social Care makes the neighbourhood-zone guidance (due spring, s1) conditional on carers' fair pay agreement and visit-time minimums, backed by the extra \u00a34.6 billion for councils (s1). Third, an independent auditor reports yearly on visit length, carer travel time and the Bristol-style savings claim of 35% less staff time (s1). It worked if savings reach pay and visit time, and no pensioner loses.",
+   "answer": "Keep councils commissioning care, but change the rules. First, the Treasury would publish the Triple Lock change as a costed schedule, with a protected floor so no pensioner's income falls; the poll found 48% support when it funds care (s2). Second, the Department of Health and Social Care would make the neighbourhood-zone guidance (due spring, s1) conditional on carers' fair pay agreement and visit-time minimums, backed by the extra \u00a34.6 billion for councils (s1). Third, an independent auditor reports yearly on visit length, carer travel time and the Bristol-style savings claim of 35% less staff time (s1). It worked if savings reach pay and visit time, and no pensioner loses.",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -378,7 +378,7 @@
     "answer": "B",
     "test": "Limit: pensions not cut to pay for care",
     "result": "pass",
-    "note": "It does not touch pensions. No source needed: logic.",
+    "note": "It does not touch pensions. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -428,7 +428,7 @@
     "answer": "C",
     "test": "Limit: pensions not cut to pay for care",
     "result": "pass",
-    "note": "It keeps the Triple Lock as it is, so no pension is cut. No source needed: logic.",
+    "note": "It keeps the Triple Lock as it is, so no pension is cut. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -500,7 +500,7 @@
   "trial": "In two councils that volunteer, run neighbourhood home care for one year: one main provider per neighbourhood, carers and people receiving care on its board, paid from existing council care budgets. Nothing taken from pensions.",
   "fail_number": "Fewer than 6 in 10 visits by one of a person's regular carers, or visits cut short, after 12 months, against each council's own figures today.",
   "stop": "2027-11-23",
-  "statement": "Triage. Jury said: hands off pensions, spread the bill wider. Fine. That bill is for the Chancellor, and nobody has costed it yet. What we can do is try the local bit on a small patch first. Two councils that volunteer. Same carers, same streets, people who get the care helping steer it. The visit stays a person. If six in ten visits don't come from a regular face in a year, we stop. No national scheme before a pilot that works."
+  "statement": "Triage. Jury said: hands off pensions, spread the bill wider. Fine. That bill is for the Chancellor. So I'm signing the jury's second choice, not its first: the local bit, on a small patch, from council budgets that already exist. Two councils that volunteer. Same carers, same streets, people who get the care helping steer it. The visit stays a person. If six in ten visits don't come from a regular face in a year, we stop. No national scheme before a pilot that works."
  },
  "predictions": [
   {

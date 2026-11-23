@@ -22,7 +22,7 @@
     "field": "policing",
     "owner": "home",
     "slot": "longest-wait",
-    "slot_reason": "Rule 2: the policing field has never run in the simulation (only water, 10 Nov), so it has waited longest. The news of 20 Nov 2026 holds a weight-3 UK item on it. Topic assigned by the orchestrator so parallel replays do not repeat a field.",
+    "slot_reason": "Policing had not come up yet in the simulation, and the Home Secretary's plan for Local Police Commands was in the UK news that day.",
     "news": [
       {
         "headline": "Home Secretary announces about 200 Local Police Commands in England and Wales",
@@ -206,9 +206,9 @@
         "text": "Local control, so people can throw out a bad Commander. Don't gut the neighbourhood teams."
       },
       {
-        "citizen": "c0595",
-        "who": "58, London, retired, owns outright",
-        "text": "Foreign gangs tackled hard, and local control. Don't let politicians pick the Commander."
+        "citizen": "c0814",
+        "who": "59, South East, employed, owns with a mortgage",
+        "text": "A named boss who is accountable when things go wrong. Don't let councillors tell coppers what to do."
       },
       {
         "citizen": "c0134",
@@ -230,8 +230,8 @@
   "bench": [
     {
       "id": "A",
-      "title": "Keep the 43 forces: name a local lead and ring-fence neighbourhood off",
-      "answer": "Skip the merger and keep the 43 forces. The Home Secretary sets two rules in law. First, every council area gets a named neighbourhood lead, and each force must publish that area's burglary, vehicle and phone theft outcomes every month. Second, neighbourhood officer numbers and front desks are ring-fenced; a force can't cut them to fund back-office changes. Forces cut the duplication the Home Office points to (s1) by sharing back-office services by agreement, which avoids the multi-billion start-up cost a chief constable warns mergers need (s2) and the opposition that ended the 2006 plan (s2). Inspectors check this yearly. It worked if published outcomes improve and neighbourhood numbers hold.",
+      "title": "Keep the 43 forces; name a local lead, ring-fence neighbourhood teams",
+      "answer": "Skip the merger and keep the 43 forces. The Home Secretary would set two rules in law. First, every council area would get a named neighbourhood lead, and each force would publish that area's burglary, vehicle and phone theft outcomes every month. Second, neighbourhood officer numbers and front desks would be ring-fenced; a force couldn't cut them to fund back-office changes. Forces would cut the duplication the Home Office points to (s1) by sharing back-office services by agreement, which avoids the multi-billion start-up cost a chief constable warns mergers need (s2) and the opposition that ended the 2006 plan (s2). Inspectors would check this yearly. It worked if published outcomes improve and neighbourhood numbers hold.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -243,7 +243,7 @@
     {
       "id": "B",
       "title": "Residents' panels, drawn by lot, can hire and fire each Commander",
-      "answer": "Each of the roughly 200 Commands (s1) gets a standing panel of residents drawn by lot, like jury service, instead of councillors or ministers. The panel appoints the Commander, can remove them by two-thirds vote, and sees priorities, spending and crime figures published each quarter. Day-to-day operations stay with the Commander. The Home Office writes this into the Command rules before launch, since the announcement gives no cost, officer number or timetable (s1). Simulated citizens' top choice was a named Commander answerable locally; some also said politicians should not run police day to day. It worked if every Command has a panel within a year, a removal vote has been held somewhere, and residents can name their Commander.",
+      "answer": "Each of the roughly 200 Commands (s1) gets a standing panel of residents drawn by lot, like jury service, instead of councillors or ministers. The panel appoints the Commander, can remove them by two-thirds vote, and sees priorities, spending and crime figures published each quarter. Day-to-day operations stay with the Commander. The Home Office would write this into the Command rules before launch, since the announcement gives no cost, officer number or timetable (s1). Simulated citizens' top choice was a named Commander answerable locally; some also said politicians should not run police day to day. It worked if every Command has a panel within a year, a removal vote has been held somewhere, and residents can name their Commander.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -296,7 +296,7 @@
         "answer": "A",
         "test": "No closing stations/desks to pay",
         "result": "pass",
-        "note": "Ring-fencing bars cuts to neighbourhood teams and desks to pay for change. Back-office sharing is by agreement, so no station closures are needed. No source needed: logic.",
+        "note": "Ring-fencing bars cuts to neighbourhood teams and desks to pay for change. Back-office sharing is by agreement, so no station closures are needed.",
         "sources": [
           "s1"
         ]
@@ -314,7 +314,7 @@
         "answer": "A",
         "test": "No politicians run police day to day",
         "result": "pass",
-        "note": "A leaves day-to-day running with each force and adds a published-outcomes rule and inspections, not a council or political role. No source needed: logic.",
+        "note": "A leaves day-to-day running with each force and adds a published-outcomes rule and inspections, not a council or political role.",
         "sources": [
           "s1"
         ]
@@ -368,7 +368,7 @@
         "answer": "B",
         "test": "No politicians run police day to day",
         "result": "pass",
-        "note": "Panels are drawn by lot and keep daily operations with the Commander, with no councillors or ministers. B says so itself. No source needed: logic.",
+        "note": "Panels are drawn by lot and keep daily operations with the Commander, with no councillors or ministers. B says so itself. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -420,7 +420,7 @@
         "answer": "C",
         "test": "No politicians run police day to day",
         "result": "pass",
-        "note": "C keeps individual investigations outside the board's control and bars politicians from seats. Board members are residents, not councillors. No source needed: logic.",
+        "note": "C keeps individual investigations outside the board's control and bars politicians from seats. Board members are residents, not councillors. Needs no source: it follows from what the answer says.",
         "sources": []
       }
     ],
@@ -487,7 +487,7 @@
     "trial": "In one Local Police Command area, seat a panel of 12 residents drawn by lot. It sees priorities, spending and crime figures each quarter and can ask for an independent review of the Commander. Operations and investigations stay with the Commander. No politicians on it. One area, one year.",
     "fail_number": "No fall in the share of panel members who can name their Commander by the first review (target: at least 8 of 12), or any extra council tax charged to pay for the panel (target: 0p).",
     "stop": "2027-06-30",
-    "statement": "The jury was split, and I'll say so. Four of twelve wanted a panel of residents with the power to hire and remove. Three wanted a lighter board. Three wanted councillors. So I'm signing one small thing, not a national scheme. One area. Twelve residents drawn by lot, like jury service. They see the figures and can ask for an outside review. Nobody picks them by party. The Commander still runs the police. Size of it: one of around 200. If residents can't name their Commander in a year, it failed, and I'll say so."
+    "statement": "The jury split four ways. Four of twelve wanted a panel of residents with the power to hire and remove. Three wanted a lighter board. Three wanted councillors. I'm signing the lighter version: this panel can ask for an outside review, but it can't sack the Commander. Hire and fire is a big power to hand a panel nobody has tried yet, so it earns it in one area first. One area. Twelve residents drawn by lot, like jury service. They see the figures. Nobody picks them by party. The Commander still runs the police. Size of it: one of around 200. If residents can't name their Commander in a year, it failed, and that goes on the record."
   },
   "predictions": [
     {

@@ -22,7 +22,7 @@
     "field": "school-curriculum",
     "owner": "education",
     "slot": "longest-wait",
-    "slot_reason": "Rule 2: the field \"school-curriculum\" has never run in the simulation, and this weight-2 UK item was in the news of 9 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+    "slot_reason": "Schools had not come up yet in the simulation, and the government's plan for the first years of secondary school was in the UK news that day.",
     "news": [
       {
         "headline": "Government restores Key Stage 3 as a distinct phase in curriculum overhaul",
@@ -252,7 +252,7 @@
     {
       "id": "A",
       "title": "Turn the Key Stage 3 rule into an inspected, funded promise",
-      "answer": "The Department for Education has told schools not to start GCSE courses early for large groups or routinely narrow options, but gives no cost, start date or check (s1). Change it: the department adds a ring-fenced grant, so no school pays by cutting subjects or staff, which school leaders warn is the risk without investment (s3). The school inspectorate then checks, in every secondary inspection, how many pupils start GCSEs before Year 10 and whether options narrowed. Each school publishes its Year 7 to 9 timetable and absence rate in plain words. It worked if early starts fall and Year 7 to 9 persistent absence, one in four by Year 9 (s1), stops rising.",
+      "answer": "The Department for Education has told schools not to start GCSE courses early for large groups or routinely narrow options, but gives no cost, start date or check (s1). Change it: the department would add a ring-fenced grant, so no school pays by cutting subjects or staff. School leaders warn that new duties without investment risk diluting what schools already offer (s3). The school inspectorate would then check, in every secondary inspection, how many pupils start GCSEs before Year 10 and whether options narrowed. Each school would publish its Year 7 to 9 timetable and absence rate in plain words. It worked if early starts fall and Year 7 to 9 persistent absence, one in four by Year 9 (s1), stops rising.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -264,7 +264,7 @@
     {
       "id": "B",
       "title": "Let each school's local panel decide what Years 7 to 9 are for",
-      "answer": "Instead of the Department for Education setting one rule from the centre (s1), each secondary school's governing body adds a panel drawn by lot from its teachers, parents and Year 7 to 9 pupils. The panel signs off a published three-year plan, including whether any GCSE teaching starts early. That moves the choice away from exam pressure, which 57% of surveyed teachers named a leading influence (s2). The department funds the panels' time, as school leaders warn extra duties without investment risk diluting provision (s3). It worked if absence, which the department says reaches one in four children by Year 9 (s1), falls, and more than 36% of pupils see learning's link beyond exams (s2).",
+      "answer": "Instead of the Department for Education setting one rule from the centre (s1), each secondary school's governing body would add a panel drawn by lot from its teachers, parents and Year 7 to 9 pupils. The panel would sign off a published three-year plan, including whether any GCSE teaching starts early. That moves the choice away from exam pressure, which 57% of surveyed teachers named a leading influence (s2). The department would fund the panels' time, as school leaders warn extra duties without investment risk diluting provision (s3). It worked if absence, which the department says reaches one in four children by Year 9 (s1), falls, and more than 36% of pupils see learning's link beyond exams (s2).",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -317,7 +317,7 @@
         "answer": "A",
         "test": "Parents get plain information",
         "result": "pass",
-        "note": "no source needed: logic. Each school publishes its Year 7 to 9 timetable and absence rate in plain words.",
+        "note": "Each school publishes its Year 7 to 9 timetable and absence rate in plain words. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -367,7 +367,7 @@
         "answer": "B",
         "test": "Parents get plain information",
         "result": "pass",
-        "note": "no source needed: logic. The panel signs off a published three-year plan.",
+        "note": "The panel signs off a published three-year plan. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -399,7 +399,7 @@
         "answer": "C",
         "test": "Skills that matter beyond exams",
         "result": "pass",
-        "note": "no source needed: logic. The plan must protect arts and asks for useful work beyond exam practice.",
+        "note": "The plan must protect arts and asks for useful work beyond exam practice. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
@@ -415,21 +415,21 @@
         "answer": "C",
         "test": "Parents get plain information",
         "result": "pass",
-        "note": "no source needed: logic. Schools publish a yearly plain account of lessons, spending and results.",
+        "note": "Schools publish a yearly plain account of lessons, spending and results. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "C",
         "test": "Limit: no loss of subjects, staff, money",
         "result": "pass",
-        "note": "no source needed: logic. The plan must protect subjects, staff and existing support; who pays for it is not said.",
+        "note": "The plan must protect subjects, staff and existing support; who pays for it is not said. Needs no source: it follows from what the answer says.",
         "sources": []
       },
       {
         "answer": "C",
         "test": "Limit: exam standards and basics stay",
         "result": "pass",
-        "note": "no source needed: logic. Reading, maths and science are protected and later GCSE results check standards.",
+        "note": "Reading, maths and science are protected and later GCSE results check standards. Needs no source: it follows from what the answer says.",
         "sources": []
       }
     ],

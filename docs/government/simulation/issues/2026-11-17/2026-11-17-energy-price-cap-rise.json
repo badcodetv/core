@@ -22,7 +22,7 @@
   "field": "energy",
   "owner": "energy-climate",
   "slot": "longest-wait",
-  "slot_reason": "Rule 2: the field \"energy\" has never run in the simulation, and this weight-2 UK item was in the news of 17 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+  "slot_reason": "Energy had not come up yet in the simulation, and the forecast rise in the price cap was in the UK news that day.",
   "news": [
    {
     "headline": "Suppliers' forecasts point to a large rise in the energy price cap from January; Ofgem announces by 25 November",
@@ -254,7 +254,7 @@
   {
    "id": "A",
    "title": "Aim help at those who can't pay; fix the cap's debt rules",
-   "answer": "No cheque for every household. In 2022 that cost £36 billion (s4). Keep Ofgem and the suppliers, but change the rules. The Government pays an automatic winter credit only to households on means-tested benefits, matched from tax and benefit records, with the council covering the old and sick who miss out. Ofgem bans debt chasing and forced prepayment meters for them until spring. Fund it by taking the old policy costs off electricity bills, worth about £60 a year (s3), and by not cutting NHS, schools or councils. It worked if household energy debt stops climbing towards £7 billion (s4) and few eligible homes are missed.",
+   "answer": "No cheque for every household. In 2022 that cost £36 billion (s4). Keep Ofgem and the suppliers, but change the rules. The Government would pay an automatic winter credit only to households on means-tested benefits, matched from tax and benefit records, with the council covering the old and sick who miss out. Ofgem would ban debt chasing and forced prepayment meters for them until spring. Fund it by taking the old policy costs off electricity bills, worth about £60 a year (s3), and by not cutting NHS, schools or councils. It worked if household energy debt stops climbing towards £7 billion (s4) and few eligible homes are missed.",
    "engine": "claude",
    "model": "claude-sonnet-5-5",
    "blind": true,
@@ -301,14 +301,14 @@
     "answer": "A",
     "test": "Energy firms or the rich pay",
     "result": "fail",
-    "note": "Costs move onto general taxation and nothing asks the firms or the rich to pay. No source needed: logic.",
+    "note": "Costs move onto general taxation and nothing asks the firms or the rich to pay. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "A",
     "test": "Warm homes for good (insulation)",
     "result": "fail",
-    "note": "A winter credit and a debt-chasing ban cut bills this year only. No insulation is offered. No source needed: logic.",
+    "note": "A winter credit and a debt-chasing ban cut bills this year only. No insulation is offered. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -354,7 +354,7 @@
     "answer": "B",
     "test": "Warm homes for good (insulation)",
     "result": "pass",
-    "note": "A fast, free insulation drive is exactly this test. No source needed: logic.",
+    "note": "A fast, free insulation drive is exactly this test. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -391,7 +391,7 @@
     "answer": "C",
     "test": "Energy firms or the rich pay",
     "result": "pass",
-    "note": "A levy on the richest households pays for it. No source needed: logic. Whether the levy raises enough is not shown.",
+    "note": "A levy on the richest households pays for it. Whether the levy raises enough is not shown. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
@@ -405,21 +405,21 @@
     "answer": "C",
     "test": "Limit: no NHS/schools/council cuts",
     "result": "pass",
-    "note": "It rules out NHS, school and council budgets as funding. No source needed: logic.",
+    "note": "It rules out NHS, school and council budgets as funding. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Limit: no new tax or bills on workers/middle",
     "result": "pass",
-    "note": "Only the richest households pay the levy, so working people and the middle are not charged. No source needed: logic.",
+    "note": "Only the richest households pay the levy, so working people and the middle are not charged. Needs no source: it follows from what the answer says.",
     "sources": []
    },
    {
     "answer": "C",
     "test": "Limit: don't leave old and sick cold",
     "result": "pass",
-    "note": "Existing help for older and sick people stays. No source needed: logic.",
+    "note": "Existing help for older and sick people stays. Needs no source: it follows from what the answer says.",
     "sources": []
    }
   ],
@@ -484,7 +484,7 @@
   "trial": "A winter credit for households on means-tested benefits in one region, paid before 1 January, funded by a levy on the richest households there. The council pays the old and sick who miss out and the same money starts insulation on their homes.",
   "fail_number": "Fewer than 80% of eligible households in the trial region paid by 1 January, or the levy raises less than the credits cost.",
   "stop": "2027-03-31",
-  "statement": "Brilliant news, nobody's cold by choice. Here's the picture: a pensioner with the heating off and the cap going up. The jury said help now, and make the richest pay for it. Not workers. So one region, one winter credit, paid before January. The council catches the old and sick who miss out. Insulation is slower, and the jury gave it less. We'll watch the number: how many get paid, and does the levy cover it."
+  "statement": "Five of twelve jurors said help now, and make the richest pay for it. Not workers. Picture a pensioner with the heating off and the cap going up. So one region, one winter credit, paid before January. The council catches the old and sick who miss out. Insulation is slower, and the jury gave it less. We'll watch the number: how many get paid, and does the levy cover it."
  },
  "predictions": [
   {
