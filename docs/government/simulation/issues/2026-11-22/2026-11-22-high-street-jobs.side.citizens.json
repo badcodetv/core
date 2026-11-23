@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0008",
+  "wants": "Keep the shops open if a sensible buyer can be found.",
+  "limit": "No more public money for owners who ran firms badly.",
+  "split": "no"
+ },
+ {
+  "id": "c0010",
+  "wants": "Stop wasting taxes on failing shops; help us find work.",
+  "limit": "Don't let rents rise in towns full of empty units.",
+  "split": "no"
+ },
+ {
+  "id": "c0012",
+  "wants": "Retrain people fast; nobody should be paid to sit idle.",
+  "limit": "Don't spend taxpayers' money propping up a dying chain.",
+  "split": "no"
+ },
+ {
+  "id": "c0023",
+  "wants": "Give the workers redundancy money and a training place.",
+  "limit": "Don't let people wait months for what they're owed.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0026",
+  "wants": "Let the shops go if no one pays; help staff move on.",
+  "limit": "Don't prop up owners with taxpayer cash.",
+  "split": "no"
+ },
+ {
+  "id": "c0028",
+  "wants": "Keep our high street shops open; they hold the town together.",
+  "limit": "Don't leave the old high street empty for years.",
+  "split": "yes"
+ },
+ {
+  "id": "c0047",
+  "wants": "Pay the staff what they're owed and find them new jobs.",
+  "limit": "No handouts keeping dead stores on life support.",
+  "split": "no"
+ },
+ {
+  "id": "c0050",
+  "wants": "Back a rescue if it saves the stores and jobs.",
+  "limit": "Don't let the state take on the debts of bosses.",
+  "split": "yes"
+ },
+ {
+  "id": "c0056",
+  "wants": "Something must be done for workers; not sure what.",
+  "limit": "Don't make people wait ages for their pay.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0057",
+  "wants": "Retrain the workers properly, not just a leaflet.",
+  "limit": "Don't pour money into a rescue that only delays closure.",
+  "split": "yes"
+ },
+ {
+  "id": "c0064",
+  "wants": "Let the market sort it; help people retrain.",
+  "limit": "No bail-out for shops that were already failing.",
+  "split": "no"
+ },
+ {
+  "id": "c0075",
+  "wants": "Keep the local shops open; it's where people meet.",
+  "limit": "Don't leave the town with boarded-up units.",
+  "split": "yes"
+ },
+ {
+  "id": "c0076",
+  "wants": "I don't know much about this, sorry.",
+  "limit": "Don't waste money on bailouts.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0077",
+  "wants": "Real redundancy money and a fair chance to retrain.",
+  "limit": "Don't drag it out; people need answers in weeks.",
+  "split": "yes"
+ },
+ {
+  "id": "c0083",
+  "wants": "Use the empty shops for homes or youth clubs.",
+  "limit": "No more public cash for a failing chain.",
+  "split": "no"
+ },
+ {
+  "id": "c0103",
+  "wants": "Keep the stores open so my town isn't cut off.",
+  "limit": "Don't cut workers' pay to save the owners.",
+  "split": "yes"
+ },
+ {
+  "id": "c0108",
+  "wants": "Back a buyer that keeps the high street shops going.",
+  "limit": "Don't let people lose their redundancy money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0131",
+  "wants": "Stop spending taxpayers' money on failing big firms.",
+  "limit": "Don't leave the workers out in the cold.",
+  "split": "no"
+ },
+ {
+  "id": "c0132",
+  "wants": "Pay the workers what they're owed and help them train.",
+  "limit": "No bailouts for owners who took the profits.",
+  "split": "no"
+ },
+ {
+  "id": "c0133",
+  "wants": "Don't know enough to say; something for the workers.",
+  "limit": "Don't leave workers waiting for money they need.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0144",
+  "wants": "Stop the decline; keep our town's shops open.",
+  "limit": "No new taxes to pay for other people's failures.",
+  "split": "no"
+ },
+ {
+  "id": "c0153",
+  "wants": "Get the workers retrained quick; I know that struggle.",
+  "limit": "Don't pay owners to walk away.",
+  "split": "no"
+ },
+ {
+  "id": "c0158",
+  "wants": "Let the shops go; the high street died years ago.",
+  "limit": "No bailouts with my tax money.",
+  "split": "no"
+ },
+ {
+  "id": "c0162",
+  "wants": "Turn the empty shops into homes or workshops.",
+  "limit": "Don't let the workers be forgotten in the process.",
+  "split": "yes"
+ },
+ {
+  "id": "c0164",
+  "wants": "Give workers training and income support, not just cash.",
+  "limit": "No bailing out companies that break the rules.",
+  "split": "yes"
+ },
+ {
+  "id": "c0173",
+  "wants": "Keep the shops open; the old high street is all we've got.",
+  "limit": "No public money for owners who walked away.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0185",
+  "wants": "Retrain the staff and pay what they're owed, quickly.",
+  "limit": "Don't let the state rescue the chain's bosses.",
+  "split": "no"
+ },
+ {
+  "id": "c0200",
+  "wants": "Something for the shop workers; they'll really struggle.",
+  "limit": "No waiting months for what workers are owed.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0210",
+  "wants": "Use the empty shops for something the town needs.",
+  "limit": "Don't spend money on big companies' mistakes.",
+  "split": "no"
+ },
+ {
+  "id": "c0215",
+  "wants": "Keep the shops open; that's where I got my first job.",
+  "limit": "Don't use my taxes to bail out failing companies.",
+  "split": "no"
+ },
+ {
+  "id": "c0218",
+  "wants": "I don't really know; the shops should stay open.",
+  "limit": "No handouts that let companies off the hook.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0225",
+  "wants": "Give workers proper redundancy pay and retraining, fast.",
+  "limit": "Don't let rescues drag on while workers wait.",
+  "split": "yes"
+ },
+ {
+  "id": "c0227",
+  "wants": "Help workers retrain, and find shops or homes for towns.",
+  "limit": "No state money for owners who took the profits.",
+  "split": "yes"
+ },
+ {
+  "id": "c0243",
+  "wants": "Keep the shops open; older people need them nearby.",
+  "limit": "Don't leave older people without a shop on the street.",
+  "split": "yes"
+ },
+ {
+  "id": "c0246",
+  "wants": "Stop spending money on shops that are already dead.",
+  "limit": "No taxpayer bailouts for business owners.",
+  "split": "no"
+ },
+ {
+  "id": "c0247",
+  "wants": "I don't know enough; something for the workers.",
+  "limit": "Don't let the high street turn into a ghost town.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0250",
+  "wants": "Give the workers redundancy money and training quickly.",
+  "limit": "Don't let anyone wait months for their money.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0284",
+  "wants": "Use empty shops for jobs, gyms, anything young people can use.",
+  "limit": "Don't pour money into rescues that never work.",
+  "split": "no"
+ },
+ {
+  "id": "c0294",
+  "wants": "Keep the shops; I don't trust the people who run them.",
+  "limit": "Don't pay owners to clear off with the cash.",
+  "split": "yes"
+ },
+ {
+  "id": "c0295",
+  "wants": "Give workers retraining and time to find new work.",
+  "limit": "Don't let companies leave towns with nothing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0297",
+  "wants": "Help workers retrain; shops can close if they must.",
+  "limit": "No bailouts for companies that mismanaged themselves.",
+  "split": "no"
+ },
+ {
+  "id": "c0306",
+  "wants": "Do something real for towns: homes, not empty units.",
+  "limit": "Don't let the workers take the blame for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0316",
+  "wants": "Let the market decide; help people retrain.",
+  "limit": "No taxpayer rescues for failing chains.",
+  "split": "no"
+ },
+ {
+  "id": "c0332",
+  "wants": "Keep the chain alive if it keeps jobs in our town.",
+  "limit": "Don't let the workers go without pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0345",
+  "wants": "I'm not sure; please help the workers somehow.",
+  "limit": "Don't make workers wait for redundancy pay.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0367",
+  "wants": "Keep the shops open, I still go in every week.",
+  "limit": "Don't use public money for a bailout.",
+  "split": "yes"
+ },
+ {
+  "id": "c0421",
+  "wants": "Back a rescue if it keeps the stores and jobs going.",
+  "limit": "Don't let owners walk away with the money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0432",
+  "wants": "Give people support while they retrain, not just a leaflet.",
+  "limit": "Don't let workers wait months for their pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0444",
+  "wants": "Turn empty shops into something the town can use.",
+  "limit": "No money for the chains that caused this.",
+  "split": "no"
+ },
+ {
+  "id": "c0445",
+  "wants": "Let the shops close; put the cash into training.",
+  "limit": "Don't prop up the bosses who failed.",
+  "split": "no"
+ },
+ {
+  "id": "c0457",
+  "wants": "Retrain people fast; I'd take a course tomorrow.",
+  "limit": "Don't spend tax on failing shops when jobs need filling.",
+  "split": "no"
+ },
+ {
+  "id": "c0466",
+  "wants": "Keep the high street alive; that's our community.",
+  "limit": "No pouring money into owners' failures.",
+  "split": "yes"
+ },
+ {
+  "id": "c0469",
+  "wants": "Let the company go; help us retrain.",
+  "limit": "No bailouts with taxpayer money.",
+  "split": "no"
+ },
+ {
+  "id": "c0474",
+  "wants": "Use the empty shops for start-ups and small businesses.",
+  "limit": "Don't let big firms walk away from workers.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0484",
+  "wants": "Pay the workers and let the shops go to buyers.",
+  "limit": "No public bailout for the company's owners.",
+  "split": "no"
+ },
+ {
+  "id": "c0485",
+  "wants": "Retrain staff, find them work; don't keep failing shops alive.",
+  "limit": "No public money for a company that failed.",
+  "split": "no"
+ },
+ {
+  "id": "c0504",
+  "wants": "Back a rescue that keeps the stores and staff.",
+  "limit": "Don't let workers be left waiting or with nothing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0505",
+  "wants": "Help workers retrain; I'd rather they had real jobs.",
+  "limit": "Don't spend money bailing out chains.",
+  "split": "no"
+ },
+ {
+  "id": "c0508",
+  "wants": "Keep stores open where buyers exist; help towns recover.",
+  "limit": "Don't let workers wait months for redundancy money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0510",
+  "wants": "Make the empty shops youth spaces or training rooms.",
+  "limit": "Don't let workers be dropped without pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0516",
+  "wants": "Train people for new jobs, fast; don't just pay them off.",
+  "limit": "No taxpayer money for owners of failing firms.",
+  "split": "no"
+ },
+ {
+  "id": "c0529",
+  "wants": "Keep the shops open; I walk to mine every day.",
+  "limit": "No handing money to rich owners.",
+  "split": "yes"
+ },
+ {
+  "id": "c0540",
+  "wants": "Let the company fail; pay workers and retrain them.",
+  "limit": "No state rescue for owners who run firms into the ground.",
+  "split": "no"
+ },
+ {
+  "id": "c0544",
+  "wants": "Let the shops go; there's plenty of work out there.",
+  "limit": "Don't pay people to sit at home.",
+  "split": "no"
+ },
+ {
+  "id": "c0554",
+  "wants": "Help the staff find new jobs; don't keep shops alive.",
+  "limit": "No taxpayer bailouts for failing companies.",
+  "split": "no"
+ },
+ {
+  "id": "c0565",
+  "wants": "Rescue the stores under worker ownership, not the bosses.",
+  "limit": "Don't let workers be left without pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0577",
+  "wants": "Stop the bailouts and retrain the workers properly.",
+  "limit": "Don't let towns be left with empty shops forever.",
+  "split": "no"
+ },
+ {
+  "id": "c0591",
+  "wants": "Keep the shops; who else will employ us round here?",
+  "limit": "No more handouts that go nowhere.",
+  "split": "no"
+ },
+ {
+  "id": "c0599",
+  "wants": "Give workers redundancy pay and retraining, quickly.",
+  "limit": "Don't let a rescue cost the state more than needed.",
+  "split": "yes"
+ },
+ {
+  "id": "c0606",
+  "wants": "Rescue the stores if buyers appear; protect staff first.",
+  "limit": "Don't let workers wait for their money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0618",
+  "wants": "Let the shops close; put the money into the towns.",
+  "limit": "No bailouts for big chains.",
+  "split": "no"
+ },
+ {
+  "id": "c0619",
+  "wants": "Use empty units for something young people can do.",
+  "limit": "Don't let workers get forgotten at the end.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0622",
+  "wants": "Back a rescue; we need the shops and the jobs.",
+  "limit": "No waiting months for redundancy money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0629",
+  "wants": "Pay out what's owed and train people properly.",
+  "limit": "Don't use public money to rescue firms.",
+  "split": "no"
+ },
+ {
+  "id": "c0636",
+  "wants": "I'm not sure; maybe get people into new work.",
+  "limit": "Don't let workers stay stuck on benefits for long.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0448",
+  "wants": "Keep the shops, but only with a plan that works.",
+  "limit": "No bailout that just hands money to owners.",
+  "split": "yes"
+ },
+ {
+  "id": "c0638",
+  "wants": "Give workers redundancy pay quickly and a route to new jobs.",
+  "limit": "Don't let workers wait months for their money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0639",
+  "wants": "I don't know; just don't let the workers be left out.",
+  "limit": "No public money to prop up failing shops.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0649",
+  "wants": "Let the company go, pay the staff and retrain them.",
+  "limit": "No taxpayer rescue for big chains.",
+  "split": "no"
+ },
+ {
+  "id": "c0659",
+  "wants": "Keep the shops open; the high street needs them.",
+  "limit": "Don't spend public money on a bailout.",
+  "split": "yes"
+ },
+ {
+  "id": "c0662",
+  "wants": "Back the rescue if it keeps jobs; retrain anyone left out.",
+  "limit": "Don't let people wait months for pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0675",
+  "wants": "Community use for empty shops; something for the towns.",
+  "limit": "Don't let the workers be forgotten.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0677",
+  "wants": "Use empty shops for co-ops, workshops and housing.",
+  "limit": "No bailouts for owners who run firms badly.",
+  "split": "yes"
+ },
+ {
+  "id": "c0687",
+  "wants": "Help workers train up; not sure about the shops.",
+  "limit": "Don't let workers wait on pay for ages.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0698",
+  "wants": "I don't really know enough about this.",
+  "limit": "Don't let workers be dumped with no help.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0707",
+  "wants": "Train people for jobs that exist, and help them find them.",
+  "limit": "Don't pour money into dead shops.",
+  "split": "no"
+ },
+ {
+  "id": "c0728",
+  "wants": "Let the shops go; help the workers find work.",
+  "limit": "No bailouts with taxpayers' money.",
+  "split": "no"
+ },
+ {
+  "id": "c0732",
+  "wants": "Let the market run its course; retrain the staff.",
+  "limit": "No handouts with my taxes.",
+  "split": "no"
+ },
+ {
+  "id": "c0744",
+  "wants": "Keep the stores open if it's cheap; retrain if not.",
+  "limit": "Don't drag this out for months.",
+  "split": "yes"
+ },
+ {
+  "id": "c0763",
+  "wants": "Keep the shops; they're our town's heart.",
+  "limit": "Don't let the workers be left without pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0815",
+  "wants": "Give workers retraining grants and money while they look.",
+  "limit": "Don't drag it out; workers need answers now.",
+  "split": "yes"
+ },
+ {
+  "id": "c0820",
+  "wants": "Use empty shops for something the town can use.",
+  "limit": "Don't let the workers' pay wait.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0823",
+  "wants": "Turn empty shops into community spaces and training rooms.",
+  "limit": "No taxpayer cash for owners who failed.",
+  "split": "yes"
+ },
+ {
+  "id": "c0856",
+  "wants": "Back British firms and keep our shops open.",
+  "limit": "No handouts to companies that failed.",
+  "split": "no"
+ },
+ {
+  "id": "c0883",
+  "wants": "I'd rather the shops stayed open, but I don't know how.",
+  "limit": "Don't let public money go to rich owners.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0925",
+  "wants": "Retrain the staff quickly and pay them what's owed.",
+  "limit": "Don't prop up the chain's owners.",
+  "split": "no"
+ },
+ {
+  "id": "c0947",
+  "wants": "Rescue the stores and keep the staff; I want them kept.",
+  "limit": "No bailouts that let owners off the hook.",
+  "split": "yes"
+ },
+ {
+  "id": "c0959",
+  "wants": "Help people retrain; I'm not sure about rescues.",
+  "limit": "Don't let workers wait for redundancy pay.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0986",
+  "wants": "Let the company fail; pay the workers and retrain them.",
+  "limit": "No public money to bail out owners.",
+  "split": "no"
+ },
+ {
+  "id": "c0993",
+  "wants": "Keep the shops and help the towns recover.",
+  "limit": "Don't let the workers be left out in the cold.",
+  "split": "yes"
+ }
+]

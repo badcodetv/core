@@ -1,0 +1,590 @@
+{
+ "schema": "fp-sim/1",
+ "id": "2026-11-19-youth-jobs-guarantee",
+ "simulated": true,
+ "stamp": "SIMULATED",
+ "stage": "published",
+ "run": {
+  "mode": "replay",
+  "run_date": "2026-11-23",
+  "news_date": "2026-11-19",
+  "replay_stamp": "Replayed on 23 Nov 2026 from the news of 19 Nov 2026"
+ },
+ "issue": {
+  "title": "A million young people not working or learning: what are they owed?",
+  "short": "YOUTH JOBS",
+  "question": "What should the state owe a young person who is not working or learning, and what can it ask of them in return?",
+  "summary": "On 17 November 2026 the government published the final Milburn Young People and Work Review and its response. The review followed a rise in the number of young people not in education, employment or training to close to a million. The government says it will start locally led youth services next year, back an Opportunity and Support Guarantee, and set up a Youth Opportunities Unit reporting to the Prime Minister. It gave no new cost figures. Welfare reform steps are due in the coming weeks and a White Paper in the new year. Whether a youth allowance should be paid is a Milburn recommendation, not a decision.",
+  "summary_sources": [
+   "s1",
+   "s2"
+  ],
+  "field": "youth-jobs",
+  "owner": "work-pensions",
+  "slot": "longest-wait",
+  "slot_reason": "Rule 2: the field youth-jobs has never run in the simulation, and the news of 19 Nov 2026 has a weight-3 UK item on it (the government's response to the Milburn review). The field is therefore past the 5-day wait. Topic assigned by the orchestrator so parallel replays don't repeat a field. The only earlier issue, water, ran on 10 Nov 2026, so no field ran in the two days before 19 Nov.",
+  "news": [
+   {
+    "headline": "Government responds to Milburn review on young people and work, promising a new settlement for young people",
+    "memory_id": "5b633851-52c0-4e7e-a380-b1b656079335",
+    "sources": [
+     "s1",
+     "s2"
+    ]
+   }
+  ]
+ },
+ "poll": {
+  "pollster": "Ipsos (for the Department for Work and Pensions)",
+  "fieldwork": "13 to 20 February 2026 (published 27 August 2026)",
+  "sample": "2,031 UK adults aged 16 to 75, online",
+  "finding": "82% agreed (49% strongly, 33% tend to) that the government should focus on supporting young people into work, education or training before it supports them through benefits. Separately, 75% said benefits should stop if a young person refuses a job because it does not interest them.",
+  "real_share": 0.82,
+  "sources": [
+   "s3"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Government commits to new settlement for young people and to invest in success rather than pay for failure",
+   "publisher": "Department for Work and Pensions (GOV.UK)",
+   "date": "2026-11-17",
+   "url": "https://www.gov.uk/government/news/government-commits-to-new-settlement-for-young-people-and-to-invest-in-success-rather-than-pay-for-failure"
+  },
+  {
+   "id": "s2",
+   "title": "Work and Pensions Secretary statement on the Milburn review into young people and work",
+   "publisher": "Department for Work and Pensions (GOV.UK)",
+   "date": "2026-11-17",
+   "url": "https://www.gov.uk/government/speeches/work-and-pensions-secretary-statement-on-the-milburn-review-into-young-people-and-work"
+  },
+  {
+   "id": "s3",
+   "title": "Young people and work report: general population polling (DWP ad hoc research report no. 138)",
+   "publisher": "Department for Work and Pensions (GOV.UK), fieldwork by Ipsos",
+   "date": "2026-08-27",
+   "url": "https://www.gov.uk/government/publications/young-people-and-work-report-general-population-polling/young-people-and-work-report-general-population-polling"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "sim-clerk",
+   "sim-citizens",
+   "sim-bench",
+   "sim-gate",
+   "sim-jury",
+   "sim-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-19-youth-jobs-guarantee/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0973",
+   "c0003",
+   "c0096",
+   "c0809",
+   "c0230",
+   "c0885",
+   "c0577",
+   "c0138",
+   "c0386",
+   "c0950",
+   "c0776",
+   "c0457",
+   "c0752",
+   "c0772",
+   "c0288",
+   "c0547",
+   "c0410",
+   "c0046",
+   "c0899",
+   "c0267",
+   "c0207",
+   "c0510",
+   "c0395",
+   "c0727",
+   "c0196",
+   "c0819",
+   "c0145",
+   "c0502",
+   "c0190",
+   "c0300",
+   "c0664",
+   "c0785",
+   "c0587",
+   "c0372",
+   "c0650",
+   "c0631",
+   "c0766",
+   "c0865",
+   "c0295",
+   "c0595",
+   "c0282",
+   "c0917",
+   "c0801",
+   "c0270",
+   "c0688",
+   "c0877",
+   "c0025",
+   "c0371",
+   "c0235",
+   "c0976",
+   "c0849",
+   "c0165",
+   "c0645",
+   "c0854",
+   "c0058",
+   "c0122",
+   "c0409",
+   "c0367",
+   "c0554",
+   "c0662",
+   "c0647",
+   "c0049",
+   "c0559",
+   "c0327",
+   "c0057",
+   "c0294",
+   "c0689",
+   "c0703",
+   "c0958",
+   "c0743",
+   "c0446",
+   "c0932",
+   "c0086",
+   "c0946",
+   "c0365",
+   "c0798",
+   "c0626",
+   "c0837",
+   "c0982",
+   "c0404",
+   "c0164",
+   "c0349",
+   "c0847",
+   "c0172",
+   "c0273",
+   "c0627",
+   "c0055",
+   "c0252",
+   "c0966",
+   "c0290",
+   "c0005",
+   "c0742",
+   "c0328",
+   "c0314",
+   "c0745",
+   "c0692",
+   "c0284",
+   "c0602",
+   "c0004",
+   "c0646"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "kind": "test",
+    "text": "A guaranteed place in real work or training, paid enough to live on.",
+    "backers": 35
+   },
+   {
+    "kind": "test",
+    "text": "Local councils and colleges run it, with the money, not Whitehall.",
+    "backers": 6
+   },
+   {
+    "kind": "test",
+    "text": "Benefits come with a clear duty to work or train.",
+    "backers": 19
+   },
+   {
+    "kind": "test",
+    "text": "Help with rent, childcare or travel, so young people can take the job.",
+    "backers": 13
+   },
+   {
+    "kind": "test",
+    "text": "A small allowance while young people train, not a sanction.",
+    "backers": 3
+   },
+   {
+    "kind": "limit",
+    "text": "Don't cut or force support for people who are sick or disabled.",
+    "backers": 6
+   },
+   {
+    "kind": "limit",
+    "text": "Don't add to taxes, debt or waste to pay for it.",
+    "backers": 22
+   },
+   {
+    "kind": "limit",
+    "text": "Don't push young people into dead-end, far-off or unaffordable jobs or debt.",
+    "backers": 13
+   }
+  ],
+  "split": {
+   "question": "Do you agree or disagree: the government should focus on supporting young people into work, education or training before it supports them through benefits?",
+   "sim_share": 0.44
+  },
+  "voices": [
+   {
+    "citizen": "c0809",
+    "who": "31, London, long-term sick or disabled, owns with a mortgage",
+    "text": "Support for people who are sick, not sanctions. Don't cut or force sick people into jobs."
+   },
+   {
+    "citizen": "c0577",
+    "who": "36, South West, employed, owns outright",
+    "text": "Young British lads first, before migrants. Don't give cash to people who won't graft."
+   },
+   {
+    "citizen": "c0003",
+    "who": "28, Scotland, employed, private renter",
+    "text": "A real apprenticeship with decent pay. Don't make young people work for nothing."
+   },
+   {
+    "citizen": "c0688",
+    "who": "76, South East, retired, social renter",
+    "text": "Young people need secure homes first. Don't blame young people for the economy."
+   },
+   {
+    "citizen": "c0547",
+    "who": "47, Scotland, employed, owns with a mortgage",
+    "text": "Cut benefits for young people who just won't work. Don't put more on income tax."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "title": "Offer every young jobless person a real placement fast, with a fair du",
+   "answer": "What changes: the existing Jobs Guarantee, a fully funded six-month job, opens for under-25s after three months on Universal Credit instead of the planned 12, paid at least the legal wage. Taking a suitable offer becomes the condition of continued support, but nobody who is sick or disabled is sanctioned. Who does it: the Work and Pensions Secretary, paid for by moving money from the 2.5 billion pound Youth Guarantee and the spending on the consequences of inactivity (25 pounds for every 1 pound on opportunity), with no new tax. How we'd know: the Youth Opportunities Unit publishes quarterly, by area, how many take up offers, how many reach lasting work, and what each cost. [s1][s2]",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1",
+    "s2"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Give each area's youth guarantee to a local board that holds the money",
+   "answer": "The government would not keep this in a Prime Minister-facing Unit [s1]; it would hand the existing 2.5 billion pound Youth Guarantee [s2] to local boards, one per area, run by the council, the college and local employers. Each board would also hold the Jobs Guarantee places [s2]. The Unit would audit and publish results, not run services. How we would know: after a year, compare each area's count of young people not in education, employment or training with the national figure of close to a million [s1], and see whether the boards beat it. Citizens in the simulation backed only 6 votes for local control, so it needs proving.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1",
+    "s2"
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Young people steer the service and hold the purse",
+   "answer": "Turn the planned local youth services [s1] into cooperatives where young people using them elect most of the board. The state should fund a paid work or training place, with travel and childcare covered when needed. Councils and colleges should deliver it under that board. Employers should earn further contracts only when placements lead to lasting paid work. In return, young people able to participate should attend and follow an agreed plan, with a right to change unsuitable placements. Protect support during illness or disability. Publish costs and six-month results: who remains in paid work or learning, and whether their income covers essentials.",
+   "engine": "codex",
+   "model": "gpt-6",
+   "blind": true,
+   "sources": [
+    "s1"
+   ]
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "Guaranteed place, paid enough to live on",
+    "result": "pass",
+    "note": "Offers the fully funded six-month Jobs Guarantee earlier, at least the legal wage. The Jobs Guarantee is a fully funded six-month job in s2.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Councils and colleges run it, with the money",
+    "result": "fail",
+    "note": "Delivery stays with the Work and Pensions Secretary; no local control of money. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Benefits come with a clear duty to work or train",
+    "result": "pass",
+    "note": "Taking a suitable offer becomes the condition of support. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Help with rent, childcare or travel",
+    "result": "fail",
+    "note": "Says nothing about rent, childcare or travel help. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Small allowance while training, not a sanction",
+    "result": "fail",
+    "note": "No allowance while training is offered. The youth allowance is only a recommendation in s2.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Limit: don't cut or force sick or disabled",
+    "result": "pass",
+    "note": "Says no one sick or disabled is sanctioned. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no added taxes, debt or waste",
+    "result": "unclear",
+    "note": "Says no new tax and pays by moving existing money, but s1 gives no cost figures, so it can't be checked.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no dead-end, far-off or unaffordable jobs or debt",
+    "result": "unclear",
+    "note": "Only a legal-wage floor is set; what counts as a suitable offer is not defined. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Guaranteed place, paid enough to live on",
+    "result": "unclear",
+    "note": "Hands over the Youth Guarantee and Jobs Guarantee places, but sets no pay level or guarantee of a place.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Councils and colleges run it, with the money",
+    "result": "pass",
+    "note": "Local boards of council, college and employers hold the money. The answer itself notes only 6 citizens backed this. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Benefits come with a clear duty to work or train",
+    "result": "unclear",
+    "note": "No duty to work or train is mentioned either way.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Help with rent, childcare or travel",
+    "result": "fail",
+    "note": "No help with rent, childcare or travel is mentioned. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Small allowance while training, not a sanction",
+    "result": "fail",
+    "note": "No allowance is mentioned. The youth allowance is only a recommendation in s2.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Limit: don't cut or force sick or disabled",
+    "result": "unclear",
+    "note": "Says nothing about sick or disabled people.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no added taxes, debt or waste",
+    "result": "pass",
+    "note": "Uses existing money (the 2.5 billion pound Youth Guarantee in s2) and adds no new tax. s1 gives no new costs.",
+    "sources": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no dead-end, far-off or unaffordable jobs or debt",
+    "result": "unclear",
+    "note": "Quality of local jobs is left to the boards; the evidence doesn't settle it.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Guaranteed place, paid enough to live on",
+    "result": "pass",
+    "note": "The state funds a paid work or training place. The answer sets no pay level, so 'enough to live on' rests on its own six-month income check.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Councils and colleges run it, with the money",
+    "result": "pass",
+    "note": "Councils and colleges deliver it under a board young users elect. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Benefits come with a clear duty to work or train",
+    "result": "pass",
+    "note": "Young people able to take part must attend and follow an agreed plan. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Help with rent, childcare or travel",
+    "result": "pass",
+    "note": "Travel and childcare are covered when needed. Rent is not mentioned. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Small allowance while training, not a sanction",
+    "result": "unclear",
+    "note": "Pays for a place, not a separate allowance; unclear if that meets the test.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: don't cut or force sick or disabled",
+    "result": "pass",
+    "note": "Protects support during illness or disability. no source needed: logic. ",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no added taxes, debt or waste",
+    "result": "unclear",
+    "note": "The state funds places with no cost given; s1 gives no new cost figures, so the limit can't be checked.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no dead-end, far-off or unaffordable jobs or debt",
+    "result": "pass",
+    "note": "Right to change unsuitable placements; employers paid only when work lasts. no source needed: logic. ",
+    "sources": []
+   }
+  ],
+  "verdict": "All three answers fail or leave unclear at least one test; none passes everything. Facts check out against s1 and s2. What can't be settled by facts is how much duty, local control and cost matter against each other.",
+  "to_jury": true,
+  "rejected_claims": []
+ },
+ "jury": {
+  "seed": "2026-11-19-youth-jobs-guarantee/jury",
+  "size": 12,
+  "ids": [
+   "c0331",
+   "c0222",
+   "c0775",
+   "c0713",
+   "c0424",
+   "c0173",
+   "c0832",
+   "c0572",
+   "c0909",
+   "c0609",
+   "c0081",
+   "c0163"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "Should a young person who is not working or learning be owed a guaranteed place first, with a duty to take it, or a local say in running the service?",
+  "options": [
+   "A guaranteed place with a duty to take it up",
+   "Local boards run it with the money",
+   "Young people elect the board that runs it",
+   "None of these: pay an allowance first"
+  ],
+  "votes": [
+   6,
+   1,
+   3,
+   2
+  ],
+  "ruling": "A guaranteed place with a duty to take it up: six of twelve simulated jurors wanted a real place waiting with a fair duty to take it, ahead of local control or an allowance.",
+  "reasons": [
+   {
+    "juror": "c0331",
+    "text": "Young people need a real job waiting. A duty is fair if the job is real and pays properly."
+   },
+   {
+    "juror": "c0713",
+    "text": "A guaranteed place with a duty. Too many sit idle and taxpayers like me pick up the bill."
+   },
+   {
+    "juror": "c0173",
+    "text": "Young people should steer it. Those who use a service know what's wrong with it."
+   },
+   {
+    "juror": "c0572",
+    "text": "They need money to live while they train. Pay an allowance first, ask later."
+   }
+  ],
+  "review": "2027-11-23",
+  "real_jury": false
+ },
+ "minister": {
+  "post": "work-pensions",
+  "decision": "signed",
+  "trial": "In one area, 18- to 24-year-olds on Universal Credit are offered a paid, real placement after three months, not twelve. Taking a suitable offer is the condition. Nobody sick or disabled is sanctioned. Travel and childcare are covered. Results are published every quarter.",
+  "fail_number": "Fewer than 4 in 10 of those offered a place are still in paid work or training six months later, against those who got no offer.",
+  "stop": "2027-06-30",
+  "statement": "A million young people. Not working, not learning. Nobody asked them what they need.\nThe jury picked a place with a duty. Fine. We'll start small, in one area. A real job, real pay, and a fair ask in return.\nNo one sick gets sanctioned. Not on my watch.\nThe government's own figure: 25 pounds spent on the cost of doing nothing for every 1 pound spent on a start. That is the sum that needs changing.\nWe publish the results every quarter. If it fails, we say so."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "answer": "issue",
+   "claim": "By 23 December 2026 the government publishes a cost figure for the locally led youth services or the Opportunity and Support Guarantee on GOV.UK.",
+   "prior": 0.3,
+   "due": "2026-12-23",
+   "rule": "True if a GOV.UK DWP page or statement dated 24 Nov to 23 Dec 2026 gives a pound figure for either measure. Otherwise false.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "answer": "issue",
+   "claim": "By 22 January 2027 the government publishes the welfare reform White Paper that the 17 November release said would come in the new year.",
+   "prior": 0.35,
+   "due": "2027-01-22",
+   "rule": "True if GOV.UK lists a White Paper on welfare reform or young people and work with a publication date up to 22 Jan 2027.",
+   "sources": [
+    "s1",
+    "s2"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p3",
+   "answer": "A",
+   "claim": "By 22 January 2027 DWP has confirmed in writing that the Jobs Guarantee opens after 12 months on Universal Credit, as the Secretary said it would.",
+   "prior": 0.5,
+   "due": "2027-01-22",
+   "rule": "True if a GOV.UK DWP page dated up to 22 Jan 2027 states the 12-month start for the Jobs Guarantee.",
+   "sources": [
+    "s2"
+   ],
+   "result": "pending"
+  }
+ ]
+}

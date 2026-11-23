@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Young people steer the service and hold the purse",
+  "answer": "Turn the planned local youth services [s1] into cooperatives where young people using them elect most of the board. The state should fund a paid work or training place, with travel and childcare covered when needed. Councils and colleges should deliver it under that board. Employers should earn further contracts only when placements lead to lasting paid work. In return, young people able to participate should attend and follow an agreed plan, with a right to change unsuitable placements. Protect support during illness or disability. Publish costs and six-month results: who remains in paid work or learning, and whether their income covers essentials.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat 8bdb76b1-99c2-4497-8f03-010864a8a063"
+}

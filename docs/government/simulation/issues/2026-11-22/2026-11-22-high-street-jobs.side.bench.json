@@ -1,0 +1,24 @@
+{
+ "A": {
+  "title": "Workers paid first and fast, whoever buys or auctions the stores",
+  "answer": "At next week's meeting with the owner, the Business Secretary, who says intervention options are under review (s2), makes any sale or store auction (s1) conditional on workers being paid first, with no public money for owners. The Insolvency Service already aims to pay eligible employee claims within 6 weeks (s3); the Secretary makes that a hard limit. Contractors, who now queue as creditors (s4), get the same route through a rule change. Success: every eligible claim, contractors included, is paid within 6 weeks, and the department publishes the count of claims paid and days taken.",
+  "sources": [
+   "s1",
+   "s2",
+   "s3",
+   "s4"
+  ],
+  "new_sources": []
+ },
+ "B": {
+  "title": "Give staff and towns first call on stores before any auction",
+  "answer": "If a whole-company bid fails, Poundland's stores, staff and stock could be auctioned to rivals [s1]. Instead, the Business Secretary, who says his options are under review [s2], would give staff groups and local councils a short first right to take over any store due to close, with the Insolvency Service paying owed wages and notice directly [s3]. No public money goes to the owner or bosses; that limit had 51 backers among simulated citizens. Contractors, who must otherwise queue as creditors [s4], would be paid in the same round. It worked if workers were paid within 6 weeks [s3], and most closing stores were reopened or reused rather than left empty.",
+  "sources": [
+   "s1",
+   "s2",
+   "s3",
+   "s4"
+  ],
+  "new_sources": []
+ }
+}

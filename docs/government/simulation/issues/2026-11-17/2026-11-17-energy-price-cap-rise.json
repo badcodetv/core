@@ -1,0 +1,515 @@
+{
+ "schema": "fp-sim/1",
+ "id": "2026-11-17-energy-price-cap-rise",
+ "simulated": true,
+ "stamp": "SIMULATED",
+ "stage": "published",
+ "run": {
+  "mode": "replay",
+  "run_date": "2026-11-23",
+  "news_date": "2026-11-17",
+  "replay_stamp": "Replayed on 23 Nov 2026 from the news of 17 Nov 2026"
+ },
+ "issue": {
+  "title": "The energy price cap looks set to jump 27% in January",
+  "short": "ENERGY PRICE CAP",
+  "question": "Energy bills are forecast to rise sharply from January. Who should pay to cushion the rise: every household, only the poorest, or nobody?",
+  "summary": "Uswitch, using predictions from British Gas, EDF and E.ON Next as of 16 November 2026, puts the January 2027 price cap for a typical household at about £2,184 a year, about 27% above the current £1,723 cap. Ofgem is due to announce the real figure on or before 25 November, using wholesale prices from 19 August to 17 November. The new cap starts on 1 January 2027. Forecasts from September were lower, between £1,872 and £2,165, and none of them is official.",
+  "summary_sources": [
+   "s1",
+   "s2"
+  ],
+  "field": "energy",
+  "owner": "energy-climate",
+  "slot": "longest-wait",
+  "slot_reason": "Rule 2: the field \"energy\" has never run in the simulation, and this weight-2 UK item was in the news of 17 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+  "news": [
+   {
+    "headline": "Suppliers' forecasts point to a large rise in the energy price cap from January; Ofgem announces by 25 November",
+    "memory_id": "4a57bd3e-e56d-4270-9403-eccb59e6e609",
+    "sources": [
+     "s1",
+     "s2"
+    ]
+   }
+  ]
+ },
+ "poll": {
+  "pollster": "More in Common (for the Joseph Rowntree Foundation)",
+  "fieldwork": "2026; exact dates not stated on the page (JRF briefing dated 14 Oct 2026)",
+  "sample": "Not stated on the page",
+  "finding": "70% feel they need more state support on energy bills this winter; 66% say the Government hasn't gone far enough to tackle energy bills.",
+  "sources": [
+   "s3"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "When is the next energy price cap?",
+   "publisher": "Uswitch",
+   "date": "2026-11-16",
+   "url": "https://www.uswitch.com/gas-electricity/news/when-is-the-next-energy-price-cap/"
+  },
+  {
+   "id": "s2",
+   "title": "January 2027 energy price cap forecasts",
+   "publisher": "IBTimes UK",
+   "date": "2026-09-27",
+   "url": "https://www.ibtimes.co.uk/january-2027-energy-price-cap-forecasts-1822143"
+  },
+  {
+   "id": "s3",
+   "title": "Helping households with energy costs this winter",
+   "publisher": "Joseph Rowntree Foundation",
+   "date": "2026-10-14",
+   "url": "https://www.jrf.org.uk/cost-of-living/helping-households-with-energy-costs-this-winter"
+  },
+  {
+   "id": "s4",
+   "title": "Economic defence: tackling energy bills in winter 2026/27",
+   "publisher": "Energy UK",
+   "date": "2026-10-03",
+   "url": "https://www.energy-uk.org.uk/publications/economic-defence-tackling-energy-bills-in-winter-2026-27/"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "sim-clerk",
+   "sim-citizens",
+   "sim-bench",
+   "sim-gate",
+   "sim-jury",
+   "sim-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-17-energy-price-cap-rise/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0226",
+   "c0312",
+   "c0298",
+   "c0316",
+   "c0664",
+   "c0156",
+   "c0342",
+   "c0870",
+   "c0948",
+   "c0787",
+   "c0205",
+   "c0534",
+   "c0692",
+   "c0900",
+   "c0234",
+   "c0713",
+   "c0476",
+   "c0222",
+   "c0838",
+   "c0579",
+   "c0539",
+   "c0575",
+   "c0197",
+   "c0876",
+   "c0872",
+   "c0895",
+   "c0502",
+   "c0774",
+   "c0521",
+   "c0733",
+   "c0866",
+   "c0252",
+   "c0844",
+   "c0606",
+   "c0681",
+   "c0621",
+   "c0100",
+   "c0998",
+   "c0228",
+   "c0083",
+   "c0550",
+   "c0382",
+   "c0227",
+   "c0643",
+   "c0426",
+   "c0949",
+   "c0381",
+   "c0518",
+   "c0050",
+   "c0344",
+   "c0586",
+   "c0839",
+   "c0968",
+   "c0102",
+   "c0709",
+   "c0947",
+   "c0063",
+   "c0583",
+   "c0760",
+   "c0182",
+   "c0804",
+   "c0074",
+   "c0271",
+   "c0351",
+   "c0331",
+   "c0946",
+   "c0546",
+   "c0040",
+   "c0000",
+   "c0906",
+   "c0724",
+   "c0291",
+   "c0407",
+   "c0274",
+   "c0299",
+   "c0937",
+   "c0251",
+   "c0829",
+   "c0022",
+   "c0765",
+   "c0249",
+   "c0954",
+   "c0506",
+   "c0529",
+   "c0902",
+   "c0395",
+   "c0452",
+   "c0422",
+   "c0488",
+   "c0784",
+   "c0715",
+   "c0113",
+   "c0704",
+   "c0823",
+   "c0777",
+   "c0659",
+   "c0043",
+   "c0821",
+   "c0991",
+   "c0723"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "kind": "test",
+    "text": "Help the poorest and those who can't pay, not everyone.",
+    "backers": 47
+   },
+   {
+    "kind": "test",
+    "text": "Make the energy firms or the rich pay, not ordinary workers.",
+    "backers": 12
+   },
+   {
+    "kind": "test",
+    "text": "Warm homes for good, through insulation, not one-off cheques.",
+    "backers": 10
+   },
+   {
+    "kind": "limit",
+    "text": "No cuts to the NHS, schools or councils to pay for it.",
+    "backers": 11
+   },
+   {
+    "kind": "limit",
+    "text": "Working people and the middle don't pay more tax or bills.",
+    "backers": 17
+   },
+   {
+    "kind": "limit",
+    "text": "Don't leave the old and sick cold or without help they have.",
+    "backers": 11
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0226",
+    "who": "41, North West, in work, rents privately",
+    "text": "Cut the taxes on energy, not give out money. Don't import more energy from abroad at high prices."
+   },
+   {
+    "citizen": "c0063",
+    "who": "40, Northern Ireland, in work, rents from a social landlord",
+    "text": "Insulate homes so bills fall for good, not one-off cheques."
+   },
+   {
+    "citizen": "c0113",
+    "who": "78, London, retired, rents from a social landlord",
+    "text": "Help the people who can't cook or heat, through the council. Don't leave the old ones sitting in the dark."
+   },
+   {
+    "citizen": "c0227",
+    "who": "43, North West, in work, owns outright",
+    "text": "Targeted help for families who can't pay, fast. No cuts to the services we rely on."
+   },
+   {
+    "citizen": "c0342",
+    "who": "37, Scotland, retired, owns outright",
+    "text": "Keep the help small and aimed at real need. No blanket support for everyone."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "title": "Aim help at those who can't pay; fix the cap's debt rules",
+   "answer": "No cheque for every household. In 2022 that cost £36 billion (s4). Keep Ofgem and the suppliers, but change the rules. The Government pays an automatic winter credit only to households on means-tested benefits, matched from tax and benefit records, with the council covering the old and sick who miss out. Ofgem bans debt chasing and forced prepayment meters for them until spring. Fund it by taking the old policy costs off electricity bills, worth about £60 a year (s3), and by not cutting NHS, schools or councils. It worked if household energy debt stops climbing towards £7 billion (s4) and few eligible homes are missed.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Set up a public energy arm to insulate homes and carry bills",
+   "answer": "Make a publicly owned energy body, run by a board that includes bill-payers chosen by lot. Its first job is a fast, free insulation drive. It starts with the homes of people who can't pay, and it works through councils. It also takes over help for people in arrears, so help is aimed at need, not paid to everyone. In 2022/23 universal support cost £36 billion (s4). Household energy debt may reach £7 billion by the end of 2026 (s4). We'd know it worked if debt stops growing, cap rises hurt poorer homes less, and the board publishes homes finished and money saved each quarter.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s4"
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Let households steer a local warmth fund",
+   "answer": "In this simulation, help goes to households that cannot afford enough heat. The January rise is still a forecast (s1). Parliament would fund local warmth funds through a levy on the richest households. Councils would handle payments, with elected service users setting priorities and checking spending. The funds would cover urgent bills and insulation for homes receiving help. Existing help for older and sick people would stay. NHS, school and council budgets would not fund it. Insulation firms would receive their final payment only after independent checks. After winter, success means fewer missed bills and fewer households reporting cold homes among those helped.",
+   "engine": "codex",
+   "model": "gpt-6",
+   "blind": true,
+   "sources": [
+    "s1"
+   ]
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "Help the poorest, not everyone",
+    "result": "pass",
+    "note": "Pays only households on means-tested benefits. Energy UK (s4) calls universal support inefficient and asks for targeted help.",
+    "sources": [
+     "s4"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Energy firms or the rich pay",
+    "result": "fail",
+    "note": "Costs move onto general taxation and nothing asks the firms or the rich to pay. No source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Warm homes for good (insulation)",
+    "result": "fail",
+    "note": "A winter credit and a debt-chasing ban cut bills this year only. No insulation is offered. No source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no NHS/schools/council cuts",
+    "result": "unclear",
+    "note": "It says no cuts, but gives no cost for the credit, so we can't tell whether it needs them.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no new tax or bills on workers/middle",
+    "result": "unclear",
+    "note": "Moving levies to taxation takes about £60 a year off bills (s3) but shifts the cost to taxpayers. Who pays more is not shown.",
+    "sources": [
+     "s3"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Limit: don't leave old and sick cold",
+    "result": "pass",
+    "note": "The council covers the old and sick who miss the credit, and debt chasing stops until spring. Matches targeted help in s4.",
+    "sources": [
+     "s4"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Help the poorest, not everyone",
+    "result": "unclear",
+    "note": "It starts with homes of people who can't pay, but gives no payment, so what reaches them this winter is not shown.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Energy firms or the rich pay",
+    "result": "unclear",
+    "note": "It names no source of money, so who pays is not stated.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Warm homes for good (insulation)",
+    "result": "pass",
+    "note": "A fast, free insulation drive is exactly this test. No source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no NHS/schools/council cuts",
+    "result": "unclear",
+    "note": "No funding is given, so the limit can't be checked.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no new tax or bills on workers/middle",
+    "result": "unclear",
+    "note": "No funding is given, so we can't tell if workers or the middle pay more.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: don't leave old and sick cold",
+    "result": "unclear",
+    "note": "Insulation and a new body take time. Nothing says the old and sick are warm this January.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Help the poorest, not everyone",
+    "result": "pass",
+    "note": "Help goes to households that cannot afford heat. Energy UK (s4) backs targeted help over universal support.",
+    "sources": [
+     "s4"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Energy firms or the rich pay",
+    "result": "pass",
+    "note": "A levy on the richest households pays for it. No source needed: logic. Whether the levy raises enough is not shown.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Warm homes for good (insulation)",
+    "result": "unclear",
+    "note": "Funds cover insulation for helped homes, but urgent bills come first, so lasting warmth is part of it only.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no NHS/schools/council cuts",
+    "result": "pass",
+    "note": "It rules out NHS, school and council budgets as funding. No source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no new tax or bills on workers/middle",
+    "result": "pass",
+    "note": "Only the richest households pay the levy, so working people and the middle are not charged. No source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: don't leave old and sick cold",
+    "result": "pass",
+    "note": "Existing help for older and sick people stays. No source needed: logic.",
+    "sources": []
+   }
+  ],
+  "verdict": "No answer clears every test and limit; C comes closest, with one test unclear. Facts can't settle whether to help the poorest only or lasting insulation first, or who should pay.",
+  "to_jury": true,
+  "rejected_claims": []
+ },
+ "jury": {
+  "seed": "2026-11-17-energy-price-cap-rise/jury",
+  "size": 12,
+  "ids": [
+   "c0001",
+   "c0911",
+   "c0396",
+   "c0562",
+   "c0238",
+   "c0355",
+   "c0424",
+   "c0897",
+   "c0247",
+   "c0490",
+   "c0487",
+   "c0383"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "With the January rise coming, should the money go first to quick help for households that can't pay, or to insulation that cuts bills for good, and who should pay?",
+  "options": [
+   "Quick help now for households that can't pay, paid for by the richest",
+   "Insulation for good, starting with the poorest homes, even if it is slower",
+   "Quick help now, paid for through general taxation"
+  ],
+  "votes": [
+   5,
+   4,
+   3
+  ],
+  "ruling": "Quick help now for households that can't pay, paid for by the richest. Five of twelve chose it, because help is needed before January and the jurors did not want working people to pay.",
+  "reasons": [
+   {
+    "juror": "c0396",
+    "text": "Quick help for those struggling, paid by those with the most. Not by people who work for a living."
+   },
+   {
+    "juror": "c0562",
+    "text": "I've lived in cold flats. Fixing the walls and windows is the only help that lasts."
+   },
+   {
+    "juror": "c0238",
+    "text": "Winter is here and I'm on my own. Help now, through general tax so it's quick and simple."
+   },
+   {
+    "juror": "c0490",
+    "text": "Targeted help, paid by the richest, not the middle. Insulation can wait a little."
+   }
+  ],
+  "review": "2027-11-23",
+  "real_jury": false
+ },
+ "minister": {
+  "post": "energy-climate",
+  "decision": "signed",
+  "trial": "A winter credit for households on means-tested benefits in one region, paid before 1 January, funded by a levy on the richest households there. The council pays the old and sick who miss out and the same money starts insulation on their homes.",
+  "fail_number": "Fewer than 80% of eligible households in the trial region paid by 1 January, or the levy raises less than the credits cost.",
+  "stop": "2027-03-31",
+  "statement": "Brilliant news, nobody's cold by choice. Here's the picture: a pensioner with the heating off and the cap going up. The jury said help now, and make the richest pay for it. Not workers. So one region, one winter credit, paid before January. The council catches the old and sick who miss out. Insulation is slower, and the jury gave it less. We'll watch the number: how many get paid, and does the levy cover it."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "answer": "issue",
+   "claim": "Ofgem's announced cap for 1 January to 31 March 2027 is above £2,000 a year for a typical household.",
+   "prior": 0.85,
+   "due": "2026-11-30",
+   "rule": "True if Ofgem's published figure for a typical dual fuel household on direct debit is over £2,000 a year. Check ofgem.gov.uk and the Uswitch page.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "answer": "issue",
+   "claim": "By 22 January 2027 the Government has not announced a payment to every household to cover the January price cap rise.",
+   "prior": 0.7,
+   "due": "2027-01-22",
+   "rule": "True if no GOV.UK announcement of a universal payment to all households exists by this date. Check gov.uk and BBC News.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  }
+ ]
+}

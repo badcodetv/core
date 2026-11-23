@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0000",
+  "wants": "Targeted help for pensioners on pension credit only.",
+  "limit": "No general handouts paid for by taxing work.",
+  "split": "no"
+ },
+ {
+  "id": "c0022",
+  "wants": "Help for renters, not landlords; my rent goes up too.",
+  "limit": "Don't push my job or wages down to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0040",
+  "wants": "Help older people who can't afford heating this winter.",
+  "limit": "Don't let it fall on people who only just get by.",
+  "split": "yes"
+ },
+ {
+  "id": "c0043",
+  "wants": "Help the poorest families first, then everyone else.",
+  "limit": "Don't waste money on bills for people who don't need it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0050",
+  "wants": "Fair help, but make the energy companies pay too.",
+  "limit": "No cuts to schools or the NHS to fund it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0063",
+  "wants": "Insulate homes so bills fall for good, not one-off cheques.",
+  "limit": "Don't just send money to the energy firms.",
+  "split": "no"
+ },
+ {
+  "id": "c0074",
+  "wants": "Warm homes help for pensioners, paid for by the rich.",
+  "limit": "Don't let the cap put me in the cold.",
+  "split": "yes"
+ },
+ {
+  "id": "c0083",
+  "wants": "Maybe help for the very poorest, I'm not sure.",
+  "limit": "Don't make young people pay for old people's bills.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0100",
+  "wants": "Something for us old ones who've paid in all our lives.",
+  "limit": "No more borrowing that my grandchildren pay back.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0102",
+  "wants": "Help where it's needed, not a blanket payout.",
+  "limit": "Don't add to the national debt for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0113",
+  "wants": "Help the people who can't cook or heat, through the council.",
+  "limit": "Don't leave the old ones sitting in the dark.",
+  "split": "yes"
+ },
+ {
+  "id": "c0156",
+  "wants": "Help us with the bills, quick and simple, no forms.",
+  "limit": "No forms that stop us getting it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0182",
+  "wants": "Help for families who can't afford the rise, like ours.",
+  "limit": "Don't make the kids go without to pay it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0197",
+  "wants": "Something for families with kids, the rise is cruel.",
+  "limit": "Don't tax what we already spend.",
+  "split": "yes"
+ },
+ {
+  "id": "c0205",
+  "wants": "Help the poorest. The rest of us can manage, just.",
+  "limit": "No big bill that's paid by us in the middle.",
+  "split": "no"
+ },
+ {
+  "id": "c0222",
+  "wants": "Stop the green levies on our bills, that's the real problem.",
+  "limit": "Don't let the state take more of my pension.",
+  "split": "no"
+ },
+ {
+  "id": "c0226",
+  "wants": "Cut the taxes on energy, not give out money.",
+  "limit": "Don't import more energy from abroad at high prices.",
+  "split": "no"
+ },
+ {
+  "id": "c0227",
+  "wants": "Targeted help for families who can't pay, fast.",
+  "limit": "No cuts to the services we rely on.",
+  "split": "yes"
+ },
+ {
+  "id": "c0228",
+  "wants": "Rent controls and cheaper energy would help more.",
+  "limit": "Don't let the rise hit people already skint.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0234",
+  "wants": "Help everyone on benefits, the cap bites hard.",
+  "limit": "Don't leave renters out just because we rent.",
+  "split": "yes"
+ },
+ {
+  "id": "c0249",
+  "wants": "Help for the poorest, and build more clean power.",
+  "limit": "Don't cut anything else to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0251",
+  "wants": "Freeze the bills. Pay for it by stopping foreign aid.",
+  "limit": "No more paying for other countries' problems.",
+  "split": "yes"
+ },
+ {
+  "id": "c0252",
+  "wants": "Help for people on low pay, not just benefits.",
+  "limit": "Don't let the bills go up anyway after the help.",
+  "split": "yes"
+ },
+ {
+  "id": "c0271",
+  "wants": "Lower the bills by cutting the net zero costs.",
+  "limit": "Don't pile new costs onto working people.",
+  "split": "no"
+ },
+ {
+  "id": "c0274",
+  "wants": "Something for the poorest, not a general handout.",
+  "limit": "Don't pay for it with more borrowing.",
+  "split": "no"
+ },
+ {
+  "id": "c0291",
+  "wants": "Help the people who really need it, then leave the rest.",
+  "limit": "Don't stop students getting a job by taxing it.",
+  "split": "no"
+ },
+ {
+  "id": "c0298",
+  "wants": "Help every home, but tell us clearly how it's paid for.",
+  "limit": "No secret costs hidden in the bills.",
+  "split": "yes"
+ },
+ {
+  "id": "c0299",
+  "wants": "A fair cap that the big firms can't game.",
+  "limit": "Don't let the old get frightened of the bill.",
+  "split": "yes"
+ },
+ {
+  "id": "c0312",
+  "wants": "Help the poorest, and make the homes warmer for good.",
+  "limit": "Don't just give money to big energy firms.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0316",
+  "wants": "Let the price settle and help people find work.",
+  "limit": "No new taxes on the middle to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0331",
+  "wants": "Help for disabled people who need heating all day.",
+  "limit": "Don't cut my disability payments to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0342",
+  "wants": "Keep the help small and aimed at real need.",
+  "limit": "No blanket support for everyone.",
+  "split": "no"
+ },
+ {
+  "id": "c0344",
+  "wants": "Help older renters, we've no way to fix the bills.",
+  "limit": "Don't let the landlord put the rent up.",
+  "split": "yes"
+ },
+ {
+  "id": "c0351",
+  "wants": "Less red tape so energy comes cheaper.",
+  "limit": "No big handouts that fuel inflation.",
+  "split": "no"
+ },
+ {
+  "id": "c0381",
+  "wants": "Probably some help, though I'm not sure how.",
+  "limit": "Don't waste the money on the wrong people.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0382",
+  "wants": "Help that comes automatically, like the old winter fuel.",
+  "limit": "Don't means-test us into a muddle.",
+  "split": "yes"
+ },
+ {
+  "id": "c0395",
+  "wants": "Help people my age who are renting. We're stuck.",
+  "limit": "Don't make us pay for the rich.",
+  "split": "yes"
+ },
+ {
+  "id": "c0407",
+  "wants": "Help for young families renting, not only the old.",
+  "limit": "No help that only goes to people who own.",
+  "split": "yes"
+ },
+ {
+  "id": "c0422",
+  "wants": "Warm homes for everyone, not just a cheque.",
+  "limit": "Don't let the rise come in January with no warning.",
+  "split": "yes"
+ },
+ {
+  "id": "c0426",
+  "wants": "Help the poorest, and put pressure on the big firms.",
+  "limit": "Don't put the cost on workers.",
+  "split": "yes"
+ },
+ {
+  "id": "c0452",
+  "wants": "I don't know much about this. Maybe help the poorest.",
+  "limit": "Don't cut anything I rely on.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0476",
+  "wants": "Targeted help, plus rent cuts for renters like me.",
+  "limit": "Don't wreck the NHS for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0488",
+  "wants": "Help with bills for families, through child benefit.",
+  "limit": "Don't make us choose between heating and food.",
+  "split": "yes"
+ },
+ {
+  "id": "c0502",
+  "wants": "Targeted help paid for by the windfall energy profits.",
+  "limit": "No new cost on households already stretched.",
+  "split": "yes"
+ },
+ {
+  "id": "c0506",
+  "wants": "Let the market work and help only the most vulnerable.",
+  "limit": "No big state bailout of the energy firms.",
+  "split": "no"
+ },
+ {
+  "id": "c0518",
+  "wants": "Help renters like me, most of all.",
+  "limit": "Don't cut council services to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0521",
+  "wants": "Something for pensioners in rented flats, please.",
+  "limit": "Don't leave us out because we aren't homeowners.",
+  "split": "yes"
+ },
+ {
+  "id": "c0529",
+  "wants": "Help me pay, I'm on a tight pension.",
+  "limit": "No more bills landing on the old without warning.",
+  "split": "yes"
+ },
+ {
+  "id": "c0534",
+  "wants": "Help for the disabled and sick, not everyone.",
+  "limit": "Don't stop the benefits I already get.",
+  "split": "yes"
+ },
+ {
+  "id": "c0539",
+  "wants": "Help for the poorest, and cap the profits of the big firms.",
+  "limit": "Don't let the energy firms just pocket it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0546",
+  "wants": "Let the price go up, it'll stop waste.",
+  "limit": "No help that stops me getting a job.",
+  "split": "no"
+ },
+ {
+  "id": "c0550",
+  "wants": "Help for families, especially with the kids at home.",
+  "limit": "Don't leave families with nothing to heat with.",
+  "split": "yes"
+ },
+ {
+  "id": "c0575",
+  "wants": "Help the poor and make the big firms pay.",
+  "limit": "No cut in the NHS for this.",
+  "split": "yes"
+ },
+ {
+  "id": "c0579",
+  "wants": "Targeted help, and a proper plan for insulation.",
+  "limit": "Don't make bills rise for everyone else.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0583",
+  "wants": "A short-term help for the poorest, nothing more.",
+  "limit": "No new spending the next government must fix.",
+  "split": "no"
+ },
+ {
+  "id": "c0586",
+  "wants": "Help people who can't afford the rise, that's most of us.",
+  "limit": "Don't just hand money to the energy companies.",
+  "split": "yes"
+ },
+ {
+  "id": "c0606",
+  "wants": "Targeted help now, plus long-term warm homes.",
+  "limit": "Don't let the energy firms profit from the rise.",
+  "split": "yes"
+ },
+ {
+  "id": "c0621",
+  "wants": "Help with the bills, we're already skipping meals.",
+  "limit": "Don't cut the support we have now to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0643",
+  "wants": "Help the poorest, and fix the grid so bills drop.",
+  "limit": "Don't tax the middle to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0659",
+  "wants": "Help older people on low incomes with bills.",
+  "limit": "No general handout that goes to the rich.",
+  "split": "yes"
+ },
+ {
+  "id": "c0664",
+  "wants": "Help for everyone on low incomes, and better homes.",
+  "limit": "Don't leave renters out of the help.",
+  "split": "yes"
+ },
+ {
+  "id": "c0681",
+  "wants": "I don't really know. Help people who can't pay.",
+  "limit": "Don't make it fall on young people.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0692",
+  "wants": "Cheaper energy by drilling more here at home.",
+  "limit": "No more tax on my wages for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0704",
+  "wants": "Keep the help to the people who really need it.",
+  "limit": "No big bills for my grandchildren.",
+  "split": "no"
+ },
+ {
+  "id": "c0709",
+  "wants": "Help people who are struggling, not everyone.",
+  "limit": "No cuts to the schools my kids go to.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0713",
+  "wants": "Help for pensioners, the cold is dangerous.",
+  "limit": "Don't stop the help we already have.",
+  "split": "yes"
+ },
+ {
+  "id": "c0715",
+  "wants": "Scotland should set its own help, not London.",
+  "limit": "Don't leave us paying for England's mess.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0723",
+  "wants": "Help with bills and insulating every home.",
+  "limit": "Don't let the rise make my flat unsafe to heat.",
+  "split": "yes"
+ },
+ {
+  "id": "c0724",
+  "wants": "I'm not sure. Some help, maybe.",
+  "limit": "Don't waste it on the wrong people.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0733",
+  "wants": "Stop the energy firms squeezing us with the rules.",
+  "limit": "No more green levies on my bill.",
+  "split": "no"
+ },
+ {
+  "id": "c0760",
+  "wants": "A direct payment to pensioners, paid for by cutting foreign aid.",
+  "limit": "Don't add to the debt.",
+  "split": "yes"
+ },
+ {
+  "id": "c0765",
+  "wants": "Help the poorest only, keep it simple.",
+  "limit": "No new spending on the wealthy.",
+  "split": "no"
+ },
+ {
+  "id": "c0774",
+  "wants": "Help for renters on low pay, like me.",
+  "limit": "Don't make the working poor pay more tax.",
+  "split": "yes"
+ },
+ {
+  "id": "c0777",
+  "wants": "Help pensioners, but don't spread it too thin.",
+  "limit": "Don't waste money on the big firms.",
+  "split": "yes"
+ },
+ {
+  "id": "c0784",
+  "wants": "Help the people who can't pay, I'm not sure beyond that.",
+  "limit": "No cuts to the hospital for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0787",
+  "wants": "Let people pay their bills, the market sorts it.",
+  "limit": "No new money thrown at it.",
+  "split": "no"
+ },
+ {
+  "id": "c0804",
+  "wants": "Cut the costs on bills, not hand out cash.",
+  "limit": "No big spending that's borrowed.",
+  "split": "no"
+ },
+ {
+  "id": "c0821",
+  "wants": "Help the old, we'll freeze in the house otherwise.",
+  "limit": "Don't cut the winter fuel help.",
+  "split": "yes"
+ },
+ {
+  "id": "c0823",
+  "wants": "Help for students and renters on low incomes.",
+  "limit": "Don't make it fall on the poorest.",
+  "split": "yes"
+ },
+ {
+  "id": "c0829",
+  "wants": "Something for all, but it should be funded by the wealthy.",
+  "limit": "Don't tax the pension I saved for.",
+  "split": "yes"
+ },
+ {
+  "id": "c0838",
+  "wants": "Help everyone who is struggling, not just a few.",
+  "limit": "Don't cut the child services for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0839",
+  "wants": "Targeted help, and a plan to make homes warmer.",
+  "limit": "No burdens on the next generation.",
+  "split": "yes"
+ },
+ {
+  "id": "c0844",
+  "wants": "Lower energy bills by drilling and cutting levies.",
+  "limit": "Don't ask families for more tax.",
+  "split": "no"
+ },
+ {
+  "id": "c0866",
+  "wants": "Help for the old ones who need it most.",
+  "limit": "No big cost to the country that we can't afford.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0870",
+  "wants": "Help us pensioners pay the bills this winter.",
+  "limit": "Don't take the help back from us later.",
+  "split": "yes"
+ },
+ {
+  "id": "c0872",
+  "wants": "Help for the poorest families, that's where it's needed.",
+  "limit": "Don't waste money on people who can cope.",
+  "split": "yes"
+ },
+ {
+  "id": "c0876",
+  "wants": "I don't know enough. Some help for the poor, probably.",
+  "limit": "Don't make us pay for it through the tax.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0895",
+  "wants": "Help for renters my age, we're getting crushed.",
+  "limit": "Don't pile more tax on the young.",
+  "split": "yes"
+ },
+ {
+  "id": "c0900",
+  "wants": "Help the poorest and cap what the energy firms take.",
+  "limit": "Don't cut the NHS to fund it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0902",
+  "wants": "Help people on low pay, and insulate council homes.",
+  "limit": "Don't leave the big firms off the hook.",
+  "split": "yes"
+ },
+ {
+  "id": "c0906",
+  "wants": "Help older renters with a warm home, paid by the rich.",
+  "limit": "No more costs on pensions.",
+  "split": "yes"
+ },
+ {
+  "id": "c0937",
+  "wants": "Help for the families who can't pay, and the rest can wait.",
+  "limit": "Don't stop the work on the NHS waiting lists.",
+  "split": "yes"
+ },
+ {
+  "id": "c0946",
+  "wants": "Something for working renters, not only the benefit claimants.",
+  "limit": "Don't push wages down to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0947",
+  "wants": "Insulate every home so the bill falls for good.",
+  "limit": "Don't just send cheques to the energy firms.",
+  "split": "no"
+ },
+ {
+  "id": "c0948",
+  "wants": "Help the people who can't cover the rise.",
+  "limit": "Don't cut my job to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0949",
+  "wants": "Help the poorest families, and reduce the bills overall.",
+  "limit": "No extra costs for us in the middle.",
+  "split": "yes"
+ },
+ {
+  "id": "c0954",
+  "wants": "Let energy prices settle, and build more gas here.",
+  "limit": "No big handouts that cost the taxpayer.",
+  "split": "no"
+ },
+ {
+  "id": "c0968",
+  "wants": "Help for everyone on the poverty line.",
+  "limit": "Don't leave the Welsh councils to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0991",
+  "wants": "Targeted help now, and cheaper power later.",
+  "limit": "No new taxes on my pay.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0998",
+  "wants": "I'm not sure this would help. Maybe rent caps first.",
+  "limit": "Don't push the cost onto renters.",
+  "split": "unsure"
+ }
+]

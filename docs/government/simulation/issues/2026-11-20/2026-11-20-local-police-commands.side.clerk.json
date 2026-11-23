@@ -1,0 +1,25 @@
+{
+ "split_question": "Should your local police be run by a named Commander for your council area, answerable to local people and elected officials?",
+ "angles": [
+  "named local Commander, as announced",
+  "bigger regional forces with local teams inside",
+  "local people hold the power: elected or directly accountable police chief for each area"
+ ],
+ "facts_for_writers": [
+  "The Home Office announced around 200 Local Police Commands on 18 November 2026, each with a named Commander accountable to the local community and elected officials, covering burglary, vehicle theft, phone theft and antisocial behaviour. [s1]",
+  "The announcement gives no cost, no exact officer number and no timetable; it says thousands of officers would be freed for neighbourhood policing. [s1]",
+  "Scotland combined eight forces in 2013; the Scottish Police Authority says this saves £200 million a year and 2.5 million officer hours. [s2]",
+  "Sir Stephen Watson of Greater Manchester Police says mergers need 'a couple of billion quid' to get started; forces raise different amounts from the police precept on council tax. [s2]",
+  "In 2006 Home Secretary Charles Clarke proposed 12 to 15 larger forces; the plan was dropped after opposition from some police authorities and chief constables. [s2]"
+ ],
+ "extra_sources": [
+  {
+   "id": "s3",
+   "title": "Would you support or oppose the creation of a national police service (daily question, 5,367 GB adults)",
+   "publisher": "YouGov",
+   "date": "2026-01-26",
+   "url": "https://yougov.com/en-gb/daily-results/20260126-956d4-2"
+  }
+ ],
+ "note": "Poll not used as the issue's poll: YouGov 26 Jan 2026 found 71% support (30% strongly, 41% somewhat) and 10% oppose a national police service, but that is a different question from local commands and is over a month older than the news. No exact poll on local commands found."
+}

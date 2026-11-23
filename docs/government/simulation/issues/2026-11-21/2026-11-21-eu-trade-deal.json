@@ -1,0 +1,599 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-21-eu-trade-deal",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "published",
+  "run": {
+    "mode": "replay",
+    "run_date": "2026-11-23",
+    "news_date": "2026-11-21",
+    "replay_stamp": "Replayed on 23 Nov 2026 from the news of 21 Nov 2026"
+  },
+  "issue": {
+    "title": "The EU deal: food, carbon and young people, and who pays for student fees",
+    "short": "EU DEAL",
+    "question": "How much should Britain give up to get closer trade and travel with the EU, and who should pay if EU students get home fees?",
+    "summary": "At the UK-EU summit in Brussels on 20 November 2026 the two sides agreed a food and farm trade deal, a link between their carbon markets and a youth scheme for 18 to 31 year olds. The government says the package could add up to 0.5% to UK GDP by 2040, about £17 billion a year. The youth scheme is capped and visa-based, with no access to benefits. Both sides also agreed to work towards a deal on tuition fees within six months; EU officials want EU students to pay UK home rates, and the UK disputes that this is linked to the rest of the deal.",
+    "summary_sources": [
+      "s1",
+      "s2",
+      "s3"
+    ],
+    "field": "eu-trade",
+    "owner": "foreign",
+    "slot": "longest-wait",
+    "slot_reason": "Rule 2: the field eu-trade has never run, and the 21 Nov 2026 digest has a weight-3 UK item on it. The topic was assigned by the orchestrator so parallel replays do not repeat a field. Not rule 3: none of the pages opened says Parliament must approve the deal.",
+    "news": [
+      {
+        "headline": "UK and EU agree food trade, carbon market link and youth scheme at Brussels summit",
+        "memory_id": "b3c6be47-6d58-475a-a919-2e0b1bef71f1",
+        "sources": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      }
+    ]
+  },
+  "poll": {
+    "pollster": "YouGov",
+    "fieldwork": "11-18 Nov 2024",
+    "sample": "not shown on the page",
+    "finding": "68% supported (32% strongly, 36% somewhat) and 16% opposed negotiating a deal that would let up to 200,000 18-30 year olds from the UK study and work in the EU for up to four years, with the same for EU young people in the UK; 16% did not know. This is the most recent poll on a youth scheme question that I could open, it is two years older than the news and a different version of the scheme from the one agreed (three years, 100,000 each way), so no single share is set.",
+    "real_share": null,
+    "sources": [
+      "s5"
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Costs cut: Prime Minister secures deal with EU to cut costs, keep prices down and create opportunities for young people worth up to £17 billion per year",
+      "publisher": "GOV.UK",
+      "date": "2026-11-20",
+      "url": "https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year"
+    },
+    {
+      "id": "s2",
+      "title": "Supermarket sweep: Morrisons, Tesco and M&S back government's business-boosting food trade deal with Europe",
+      "publisher": "GOV.UK",
+      "date": "2026-11-20",
+      "url": "https://www.gov.uk/government/news/supermarket-sweep-morrisons-tesco-and-ms-back-governments-business-boosting-food-trade-deal-with-europe"
+    },
+    {
+      "id": "s3",
+      "title": "Burnham hails UK-EU reset on food, carbon markets and youth mobility after Brexit decade of drift",
+      "publisher": "EUobserver",
+      "date": "2026-11-20",
+      "url": "https://euobserver.com/250317/burnham-hails-uk-eu-reset-on-food-carbon-markets-and-youth-mobility-after-brexit-decade-of-drift/"
+    },
+    {
+      "id": "s4",
+      "title": "EU officials won't budge on Brexit deal without cuts to tuition",
+      "publisher": "Times Higher Education",
+      "date": "2026-11-20",
+      "url": "https://www.timeshighereducation.com/news/eu-officials-wont-budge-brexit-deal-without-cuts-tuition"
+    },
+    {
+      "id": "s5",
+      "title": "Support or oppose negotiating a deal allowing up to 200,000 18-30-year-olds from the UK to study and work in the EU for up to four years",
+      "publisher": "What UK Thinks (YouGov poll)",
+      "date": "2024-11-18",
+      "url": "https://www.whatukthinks.org/eu/questions/to-what-extent-if-at-all-would-you-support-or-oppose-negotiating-a-deal-which-would-allow-up-to-200000-18-30-year-olds-from-the-uk-the-chance-to-study-and-work-in-the-eu-for-up-to-four-years-in-ex/"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "sim-clerk",
+      "sim-citizens",
+      "sim-bench",
+      "sim-gate",
+      "sim-jury",
+      "sim-minister"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-21-eu-trade-deal/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0203",
+      "c0253",
+      "c0991",
+      "c0884",
+      "c0154",
+      "c0204",
+      "c0241",
+      "c0221",
+      "c0779",
+      "c0672",
+      "c0694",
+      "c0306",
+      "c0160",
+      "c0270",
+      "c0271",
+      "c0440",
+      "c0800",
+      "c0921",
+      "c0053",
+      "c0326",
+      "c0742",
+      "c0822",
+      "c0988",
+      "c0397",
+      "c0330",
+      "c0761",
+      "c0838",
+      "c0566",
+      "c0849",
+      "c0485",
+      "c0758",
+      "c0868",
+      "c0897",
+      "c0857",
+      "c0858",
+      "c0401",
+      "c0666",
+      "c0596",
+      "c0220",
+      "c0496",
+      "c0147",
+      "c0041",
+      "c0159",
+      "c0966",
+      "c0815",
+      "c0581",
+      "c0421",
+      "c0282",
+      "c0453",
+      "c0773",
+      "c0778",
+      "c0562",
+      "c0681",
+      "c0945",
+      "c0663",
+      "c0872",
+      "c0817",
+      "c0368",
+      "c0674",
+      "c0114",
+      "c0545",
+      "c0927",
+      "c0803",
+      "c0474",
+      "c0003",
+      "c0162",
+      "c0657",
+      "c0379",
+      "c0600",
+      "c0009",
+      "c0037",
+      "c0658",
+      "c0334",
+      "c0291",
+      "c0016",
+      "c0109",
+      "c0892",
+      "c0153",
+      "c0416",
+      "c0411",
+      "c0757",
+      "c0187",
+      "c0638",
+      "c0011",
+      "c0636",
+      "c0590",
+      "c0612",
+      "c0248",
+      "c0842",
+      "c0699",
+      "c0240",
+      "c0718",
+      "c0569",
+      "c0978",
+      "c0974",
+      "c0729",
+      "c0373",
+      "c0092",
+      "c0583",
+      "c0956"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "Lower food prices on the shelves.",
+        "backers": 26
+      },
+      {
+        "kind": "test",
+        "text": "Young people able to study and work across Europe.",
+        "backers": 23
+      },
+      {
+        "kind": "test",
+        "text": "Trade with Europe moves faster, with fewer border delays.",
+        "backers": 23
+      },
+      {
+        "kind": "test",
+        "text": "A carbon market that really cuts pollution.",
+        "backers": 5
+      },
+      {
+        "kind": "limit",
+        "text": "No free places for EU students paid by taxpayers.",
+        "backers": 26
+      },
+      {
+        "kind": "limit",
+        "text": "No cuts to university places, courses or staff.",
+        "backers": 11
+      },
+      {
+        "kind": "limit",
+        "text": "No cuts to the NHS, schools or nurses to pay for it.",
+        "backers": 5
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0203",
+        "who": "71, Wales, retired, social rent",
+        "text": "Don't hand fees to foreigners while our kids can't afford uni."
+      },
+      {
+        "citizen": "c0271",
+        "who": "64, London, employed, private rent",
+        "text": "Stop Brussels deals that cost us control."
+      },
+      {
+        "citizen": "c0248",
+        "who": "28, Wales, employed, social rent",
+        "text": "Closer links with Europe and young people with options."
+      },
+      {
+        "citizen": "c0009",
+        "who": "30, East Midlands, employed, owned with a mortgage",
+        "text": "Lower food prices and a clear deal, not open borders."
+      },
+      {
+        "citizen": "c0884",
+        "who": "67, Yorkshire and The Humber, retired, owned with a mortgage",
+        "text": "A decent deal that helps farms and the young both."
+      },
+      {
+        "citizen": "c0221",
+        "who": "24, Yorkshire and The Humber, employed, owned outright",
+        "text": "Cheaper trips abroad and easier work for my mates."
+      }
+    ]
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Home fees for EU students, but capped, reciprocal and costed in public",
+      "answer": "Keep the current fee system and universities; change the terms of the tuition deal due within six months (s4). Home-rate fees apply to EU students only inside a fixed yearly cap on places, set by ministers and kept separate from places for UK students, so none are cut. The deal starts only when the EU gives UK students equal fees. The Treasury publishes the yearly gap and funds it from a named budget line, not from NHS or school money. Parliament reviews it after three years, and the cap shrinks or the deal ends if the gap passes the published limit. It worked if UK places hold, the gap stays inside the limit, and UK students use the reciprocal rate. The Russell Group warns that cuts would squeeze places (s4).",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s4"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "A joint fees board, not a trade-off behind closed doors",
+      "answer": "Take the fee question out of the wider trade talks and give it to a joint UK-EU fees board with equal seats for UK students, EU students and universities, plus a fixed budget. The two governments would set that up within weeks, inside the six months they have already agreed for a fees deal (s4). EU officials say the deal hangs on fees, and the UK disputes that (s4), so a separate board lets the food, carbon and youth parts go ahead. The Russell Group warns that any fee cut would squeeze UK places (s4), and 26 simulated citizens set a limit of no free places paid by taxpayers, so the board's pot must be named and capped. It worked if the rest of the deal is not held up, the fee rate is published, and UK places do not fall.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s4"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Trade access, but let students steer the fee bargain",
+      "answer": "In this simulation, Britain should accept shared food and carbon rules for easier trade, but offer home fees only with equal terms for UK students abroad. Fee talks are still open (s4). Parliament should set that bargain. Elected student and staff boards at each university should check its costs. Employers wanting to recruit through the youth scheme should fund any fee gap through a charge for taking part. No signed funding, no fee concession. Publish the accounts each year. Judge success by cheaper food, shorter border waits, students travelling both ways, falling emissions and no lost university places or courses.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s4"
+      ]
+    }
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "Lower food prices",
+        "result": "unclear",
+        "note": "A says nothing on food. s1 says the food deal scraps health certificates and could add up to £5.1bn a year by 2040, but no source shows lower shelf prices.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Young people study and work in Europe",
+        "result": "unclear",
+        "note": "A makes the fee deal start only when UK students get equal fees. That could hold up study abroad. The youth scheme is a separate part of the deal.",
+        "sources": [
+          "s1",
+          "s4"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Trade faster, fewer border delays",
+        "result": "unclear",
+        "note": "A says nothing on border checks. s1 says most food and plant checks end under the deal, which A leaves alone.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Carbon market cuts pollution",
+        "result": "unclear",
+        "note": "A says nothing on carbon. s1 says the two carbon markets would link, but no source says it cuts pollution.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "No free places for EU students paid by taxpayers",
+        "result": "fail",
+        "note": "A has the Treasury fund the gap between home and international fees, so taxpayers pay. No source needed: logic.",
+        "sources": [
+          "s4"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "No cuts to university places, courses, staff",
+        "result": "unclear",
+        "note": "A keeps EU places in a separate cap, so UK places are not squeezed on paper. The Russell Group warns of pressure on places; nothing shows the cap stops it.",
+        "sources": [
+          "s4"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "No cuts to NHS, schools, nurses to pay",
+        "result": "pass",
+        "note": "A funds the gap from a named budget line, not NHS or school money. It holds only if the line is kept apart. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Lower food prices",
+        "result": "unclear",
+        "note": "B lets the food part go ahead without the fee row. No source shows that prices fall.",
+        "sources": [
+          "s1",
+          "s4"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Young people study and work in Europe",
+        "result": "unclear",
+        "note": "B lets the youth part go ahead without the fee row, since the UK disputes the link. EU officials say the deal depends on fees.",
+        "sources": [
+          "s4"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Trade faster, fewer border delays",
+        "result": "unclear",
+        "note": "B says the food and carbon parts go ahead. Whether border delays fall is not settled by any source.",
+        "sources": [
+          "s1",
+          "s4"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Carbon market cuts pollution",
+        "result": "unclear",
+        "note": "B lets the carbon link go ahead. No source says it cuts pollution.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "No free places for EU students paid by taxpayers",
+        "result": "unclear",
+        "note": "B names and caps the pot but does not say who pays into it. Taxpayers might. Nothing settles it.",
+        "sources": [
+          "s4"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "No cuts to university places, courses, staff",
+        "result": "unclear",
+        "note": "B says UK places must not fall. The Russell Group warns they would be under pressure; the board has no stated power to stop that.",
+        "sources": [
+          "s4"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "No cuts to NHS, schools, nurses to pay",
+        "result": "unclear",
+        "note": "B does not say where its pot comes from, so NHS or school money is not ruled out.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Lower food prices",
+        "result": "unclear",
+        "note": "C accepts shared food rules. s1 says checks end and the food deal could add up to £5.1bn a year. No source shows lower shelf prices.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Young people study and work in Europe",
+        "result": "unclear",
+        "note": "C offers home fees only with equal terms for UK students abroad. s4 says the fee deal is meant to cover both sides, but it is still being negotiated.",
+        "sources": [
+          "s4"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Trade faster, fewer border delays",
+        "result": "unclear",
+        "note": "C accepts shared food rules, which s1 says end most food and plant checks. Fewer delays is likely but no source gives a figure.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Carbon market cuts pollution",
+        "result": "unclear",
+        "note": "C accepts shared carbon rules. No source says the link cuts pollution; C only lists falling emissions as a measure.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "No free places for EU students paid by taxpayers",
+        "result": "pass",
+        "note": "C has employers pay the gap through a charge, so taxpayers do not. Whether employers would accept the charge is untested. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "No cuts to university places, courses, staff",
+        "result": "unclear",
+        "note": "C lists no lost places as a measure but gives no way to stop the loss the Russell Group warns of.",
+        "sources": [
+          "s4"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "No cuts to NHS, schools, nurses to pay",
+        "result": "pass",
+        "note": "C funds the gap from an employer charge, not NHS or school money. No source needed: logic.",
+        "sources": []
+      }
+    ],
+    "verdict": "No answer passes every test. A fails the limit on taxpayers paying; C passes it; most of the rest cannot be settled by facts. Who should pay for fees is a values question.",
+    "to_jury": true,
+    "rejected_claims": []
+  },
+  "jury": {
+    "seed": "2026-11-21-eu-trade-deal/jury",
+    "size": 12,
+    "ids": [
+      "c0447",
+      "c0851",
+      "c0312",
+      "c0143",
+      "c0444",
+      "c0623",
+      "c0607",
+      "c0096",
+      "c0290",
+      "c0595",
+      "c0938",
+      "c0339"
+    ],
+    "model": "claude-sonnet-5-5",
+    "question": "If EU students get home fees, who should pay the gap between home and international fees?",
+    "options": [
+      "Taxpayers, from a named, capped budget line that is published each year",
+      "Employers who recruit through the youth scheme, by a charge",
+      "No one here: home fees only for countries that give UK students the same rate back",
+      "No home fees: say no and keep the rest of the deal, even if the EU objects"
+    ],
+    "votes": [
+      3,
+      2,
+      4,
+      3
+    ],
+    "ruling": "No one here: home fees only for countries that give UK students the same rate back. Four of twelve jurors chose it, the most of any option, because they wanted fair terms both ways and no new bill.",
+    "reasons": [
+      {
+        "juror": "c0339",
+        "text": "Reciprocal terms are the honest deal. Nobody here should pay more."
+      },
+      {
+        "juror": "c0312",
+        "text": "Closer ties matter. Pay for it openly from a named line, with a cap, and publish it."
+      },
+      {
+        "juror": "c0444",
+        "text": "Employers get the workers. Let them pay a charge, not us."
+      },
+      {
+        "juror": "c0447",
+        "text": "I won't pay fees for others while my own family struggles. Keep the rest of the deal."
+      }
+    ],
+    "review": "2027-11-23",
+    "real_jury": false
+  },
+  "minister": {
+    "post": "foreign",
+    "decision": "signed",
+    "trial": "In the six-month fee talks, the UK offers home-rate fees only to students from EU countries that give UK students the same rate back, in writing. Start with up to two such countries for one intake year. No new cost to UK taxpayers. Parliament sees the terms.",
+    "fail_number": "Any extra taxpayer cost for the trial (target: 0p), or fewer than 1 EU country signing equal terms by the stop date.",
+    "stop": "2027-09-30",
+    "statement": "The jury was split, and I will say so. Four of twelve wanted fees only when the other side gives the same back. Three wanted taxpayers to pay openly. Three said no to home fees at all. Two wanted employers to pay. So I'm signing one small thing. Home rates only for countries that match them, one intake year, nothing added to anyone's tax bill. Brussels says the deal hangs on fees. London says it doesn't. Both can be true on a Friday. If no country signs equal terms by the autumn, it failed, and I'll say so."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "answer": "issue",
+      "claim": "By 22 January 2027 the UK and EU have not published a concluded tuition-fee agreement.",
+      "prior": 0.85,
+      "due": "2027-01-22",
+      "rule": "True if no GOV.UK or EU Commission page dated on or before 22 January 2027 announces a concluded UK-EU tuition-fee agreement. False if one does.",
+      "sources": [
+        "s4"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "answer": "issue",
+      "claim": "By 21 May 2027 the UK and EU announce a concluded agreement on tuition fees for students from each side.",
+      "prior": 0.45,
+      "due": "2027-05-21",
+      "rule": "True if a GOV.UK or EU Commission page dated on or before 21 May 2027 says the tuition-fee negotiations are concluded. False otherwise.",
+      "sources": [
+        "s4"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p3",
+      "answer": "C",
+      "claim": "Any tuition-fee agreement announced by 21 May 2027 sets the same fee rate for students going each way.",
+      "prior": 0.5,
+      "due": "2027-05-21",
+      "rule": "True if an announced agreement dated on or before 21 May 2027 gives UK students in the EU and EU students in the UK the same fee treatment. False if the terms differ or no agreement is announced.",
+      "sources": [
+        "s4"
+      ],
+      "result": "pending"
+    }
+  ]
+}

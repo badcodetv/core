@@ -1,0 +1,500 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-18-refugee-support-charge",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "published",
+  "run": {
+    "mode": "replay",
+    "run_date": "2026-11-23",
+    "news_date": "2026-11-18",
+    "replay_stamp": "Replayed on 23 Nov 2026 from the news of 18 Nov 2026"
+  },
+  "issue": {
+    "title": "Should refugees repay the support they got while waiting?",
+    "short": "REFUGEE SUPPORT BILL",
+    "question": "When someone is granted refugee status, should they be made to repay what the state paid to support them while their claim was decided?",
+    "summary": "The Immigration and Asylum Bill was due back in the Commons for report stage on 18 November 2026, according to a newsletter dated 17 November (s1). The Refugee Council was asking supporters to back amendments that would remove the £10,000 charge on refugees who receive asylum support while their claim is considered (s1). The government says the Bill includes a new way to require asylum seekers in taxpayer-funded accommodation to contribute to costs when they can afford to (s2).",
+    "summary_sources": [
+      "s1",
+      "s2"
+    ],
+    "field": "migration",
+    "owner": "home",
+    "slot": "parliament",
+    "slot_reason": "Rule 3: the weight-3 UK item of 18 Nov 2026 says Parliament is deciding the Immigration and Asylum Bill at Commons report stage that day, and the migration field has never run (rule 2 would also allow it). Migration did not run in the two days before 18 Nov.",
+    "news": [
+      {
+        "headline": "Immigration and Asylum Bill due at Commons report stage on 18 November",
+        "memory_id": "44a46c9e-24c8-4cc2-9337-779d016a35f8",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      }
+    ]
+  },
+  "poll": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Free Movement weekly immigration newsletter 145",
+      "publisher": "Free Movement",
+      "date": "2026-11-17",
+      "url": "https://freemovement.org.uk/free-movement-weekly-immigration-newsletter-145/"
+    },
+    {
+      "id": "s2",
+      "title": "Home Secretary's landmark immigration reforms clear latest hurdle",
+      "publisher": "GOV.UK",
+      "date": "2026-11-18",
+      "url": "https://www.gov.uk/government/news/home-secretarys-landmark-immigration-reforms-clear-latest-hurdle"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "sim-clerk",
+      "sim-citizens",
+      "sim-bench",
+      "sim-gate",
+      "sim-jury",
+      "sim-minister"
+    ],
+    "note": "No poll: the only related poll found (More in Common, fieldwork 17-19 Nov 2025) asks about asylum seekers contributing, not refugees repaying, and is a year old; not used."
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-18-refugee-support-charge/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0802",
+      "c0439",
+      "c0313",
+      "c0433",
+      "c0114",
+      "c0265",
+      "c0721",
+      "c0733",
+      "c0565",
+      "c0653",
+      "c0472",
+      "c0745",
+      "c0610",
+      "c0724",
+      "c0515",
+      "c0941",
+      "c0987",
+      "c0247",
+      "c0522",
+      "c0192",
+      "c0585",
+      "c0035",
+      "c0064",
+      "c0658",
+      "c0121",
+      "c0344",
+      "c0215",
+      "c0623",
+      "c0506",
+      "c0426",
+      "c0342",
+      "c0655",
+      "c0264",
+      "c0633",
+      "c0000",
+      "c0360",
+      "c0696",
+      "c0461",
+      "c0860",
+      "c0038",
+      "c0137",
+      "c0680",
+      "c0859",
+      "c0504",
+      "c0736",
+      "c0301",
+      "c0652",
+      "c0783",
+      "c0099",
+      "c0712",
+      "c0927",
+      "c0013",
+      "c0227",
+      "c0288",
+      "c0113",
+      "c0315",
+      "c0475",
+      "c0354",
+      "c0790",
+      "c0218",
+      "c0562",
+      "c0868",
+      "c0132",
+      "c0685",
+      "c0901",
+      "c0619",
+      "c0952",
+      "c0951",
+      "c0767",
+      "c0067",
+      "c0749",
+      "c0642",
+      "c0217",
+      "c0687",
+      "c0278",
+      "c0211",
+      "c0649",
+      "c0246",
+      "c0459",
+      "c0886",
+      "c0291",
+      "c0295",
+      "c0152",
+      "c0874",
+      "c0976",
+      "c0436",
+      "c0363",
+      "c0564",
+      "c0158",
+      "c0761",
+      "c0580",
+      "c0302",
+      "c0280",
+      "c0701",
+      "c0990",
+      "c0425",
+      "c0081",
+      "c0609",
+      "c0629",
+      "c0201"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "Repay only if they can afford it, with a fixed cap",
+        "backers": 27
+      },
+      {
+        "kind": "test",
+        "text": "Drop the charge: support while waiting is part of a fair system",
+        "backers": 28
+      },
+      {
+        "kind": "test",
+        "text": "Pay back through tax once they are working, not up front",
+        "backers": 14
+      },
+      {
+        "kind": "test",
+        "text": "Repay the full cost, whatever their income",
+        "backers": 13
+      },
+      {
+        "kind": "limit",
+        "text": "No one left without money, food or a bed while they wait",
+        "backers": 36
+      },
+      {
+        "kind": "limit",
+        "text": "No debt that stops anyone rebuilding their life",
+        "backers": 15
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0000",
+        "who": "92, Yorkshire and The Humber, retired, owns outright",
+        "text": "Make them pay back all of it, every penny"
+      },
+      {
+        "citizen": "c0745",
+        "who": "40, South West, unemployed, owns with a mortgage",
+        "text": "Drop the charge, people fleeing shouldn't pay"
+      },
+      {
+        "citizen": "c0363",
+        "who": "42, North West, long-term sick or disabled, rents from a council or housing association",
+        "text": "Repay only if they can afford it, with a cap"
+      },
+      {
+        "citizen": "c0201",
+        "who": "19, London, student, owns outright",
+        "text": "Support should be free; charging people is unfair"
+      },
+      {
+        "citizen": "c0313",
+        "who": "59, North East, employed, rents from a council or housing association",
+        "text": "Not sure how it works, but fairness matters"
+      }
+    ]
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Cap the refugee charge and tie it to ability to pay",
+      "answer": "Keep the Bill's contribution mechanism, which the government says applies to asylum seekers in taxpayer-funded accommodation who can afford to pay (s2), but replace the flat £10,000 charge on refugees (s1) with an income-tested contribution under a fixed cap. The Home Office would assess means at the point of grant and collect only from earnings. Free food, money and a bed would stay in place while a claim is decided. Amendments at report stage (s1) would set this in the Bill. It worked if repayments are collected without causing destitution, and if the Home Office publishes yearly collected sums against collection costs. Simulated citizens backed an ability-to-pay cap (27 backers) and a no-destitution limit (36).",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Take refugee repayment out of the Home Office's hands",
+      "answer": "Drop the flat £10,000 charge on refugees who received asylum support (s1). The government says the Bill lets it require asylum seekers in taxpayer-funded accommodation to contribute when they can afford to (s2). Give that affordability test to an independent assessor, not the department that runs the asylum system. Parliament fixes a cap; the assessor sets income-based amounts, publishes every decision, and collects only through tax once someone works. Success: no one left without money, food or a bed while waiting, which 36 simulated citizens backed as a limit, and published figures show how much is recovered against what collecting it costs.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Drop the debt; put support under local control",
+      "answer": "In this simulation, Parliament should remove the £10,000 charge described in s1. Support while a claim is decided should not become a bill for gaining refugee status. Councils should fund local support groups steered jointly by refugees using the service and other local residents. Those groups should choose providers and publish spending, with no provider voting on its own contract. Central government should guarantee money for food and shelter, while residents steer delivery. Judge success after a year: lower costs per person, fewer people losing shelter, and no repayment debts from support received while waiting.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "Repay only if affordable, fixed cap",
+        "result": "pass",
+        "note": "It swaps the flat £10,000 for an income-tested, capped contribution. The flat charge is in s1; s2 says the Bill already asks for contributions from those able to pay.",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Drop the charge entirely",
+        "result": "fail",
+        "note": "It keeps a charge, only smaller and means-tested, so the charge is not dropped. no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Pay back through tax once working",
+        "result": "pass",
+        "note": "It collects only from earnings, so repayment starts once someone works. no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Repay full cost, any income",
+        "result": "fail",
+        "note": "It caps the charge and tests means, so it does not repay the full cost whatever the income. no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Limit: no one without money, food, bed",
+        "result": "unclear",
+        "note": "It says food, money and a bed stay in place while a claim is decided, but the sources do not show how that is paid for or kept.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Limit: no debt that blocks a new life",
+        "result": "unclear",
+        "note": "The cap and earnings-only collection limit the debt, but no cap figure is given, so we cannot tell if it blocks a fresh start.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Repay only if affordable, fixed cap",
+        "result": "pass",
+        "note": "It drops the flat £10,000 (s1) and has an assessor set income-based amounts under a cap Parliament fixes. s2 says contributions are for those able to pay.",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Drop the charge entirely",
+        "result": "fail",
+        "note": "It drops the flat £10,000 but still charges by income, so it is not a full drop. no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Pay back through tax once working",
+        "result": "pass",
+        "note": "It collects only through tax once someone works. no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Repay full cost, any income",
+        "result": "fail",
+        "note": "Amounts depend on income and sit under a cap, so not the full cost whatever the income. no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Limit: no one without money, food, bed",
+        "result": "unclear",
+        "note": "It names no-one-without-money-food-bed as its success test but does not say how that support is paid for or kept.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Limit: no debt that blocks a new life",
+        "result": "unclear",
+        "note": "A cap and tax collection limit debt, but no cap figure is given, so we cannot tell if it blocks a fresh start.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Repay only if affordable, fixed cap",
+        "result": "fail",
+        "note": "It drops the charge (s1) and sets no repayment by ability to pay, so this test is not met. no source needed: logic.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Drop the charge entirely",
+        "result": "pass",
+        "note": "It asks Parliament to remove the £10,000 charge, which s1 says the Refugee Council is asking supporters to back amendments to remove.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Pay back through tax once working",
+        "result": "fail",
+        "note": "It has no repayment route, through tax or otherwise. no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Repay full cost, any income",
+        "result": "fail",
+        "note": "It removes repayment altogether, the opposite of this test. no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: no one without money, food, bed",
+        "result": "unclear",
+        "note": "It says central government guarantees money for food and shelter, but the sources do not show how that is paid for or kept.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: no debt that blocks a new life",
+        "result": "pass",
+        "note": "It leaves no repayment debt from support received while waiting. no source needed: logic.",
+        "sources": []
+      }
+    ],
+    "verdict": "No answer passes everything: each meets some tests and fails others, because the tests pull in opposite directions. Facts cannot settle whether refugees should repay at all, or how a taxpayer's bill weighs against a fresh start.",
+    "to_jury": true,
+    "rejected_claims": []
+  },
+  "jury": {
+    "seed": "2026-11-18-refugee-support-charge/jury",
+    "size": 12,
+    "ids": [
+      "c0261",
+      "c0262",
+      "c0117",
+      "c0097",
+      "c0704",
+      "c0318",
+      "c0122",
+      "c0422",
+      "c0760",
+      "c0380",
+      "c0412",
+      "c0771"
+    ],
+    "model": "claude-sonnet-5-5",
+    "question": "Should refugees repay any of the support they got while waiting, or is that support simply part of running a fair asylum system?",
+    "options": [
+      "No charge: support while waiting is the cost of a fair system",
+      "Repay only what they can afford, under a fixed cap",
+      "Repay through tax once they are working",
+      "Repay the full cost, whatever their income"
+    ],
+    "votes": [
+      3,
+      4,
+      2,
+      3
+    ],
+    "ruling": "Repay only what they can afford, under a fixed cap. Four of 12 simulated jurors chose it, and it was the most common view in a split jury.",
+    "reasons": [
+      {
+        "juror": "c0261",
+        "text": "If they earn enough, fine, pay some back. But a limit, so it doesn't crush anyone starting out."
+      },
+      {
+        "juror": "c0117",
+        "text": "Support while waiting is part of a fair system. I would not bill people who fled."
+      },
+      {
+        "juror": "c0097",
+        "text": "The taxpayer paid, so they should pay it back. A mortgage is not optional for me either."
+      },
+      {
+        "juror": "c0422",
+        "text": "Take it from wages once they have a job, not before. Then they can stand up first."
+      }
+    ],
+    "review": "2027-11-23",
+    "real_jury": false
+  },
+  "minister": {
+    "post": "home",
+    "decision": "signed",
+    "trial": "In one simulated area, for six months, refugees granted status pay back support only from earnings, by an income test, under a fixed cap, with food, money and a bed kept in place while the claim is decided.",
+    "fail_number": "If more than 1 in 10 people in the trial fall behind on rent or go without food after paying, or the cost of collecting is above what is collected, it has failed.",
+    "stop": "2027-06-01",
+    "statement": "Yes, it's a cost. The jury, twelve simulated jurors, split: three said drop it, four said repay what you can afford, two said repay through tax, three said repay it all. So we start with the middle. Pay back from earnings, by an income test, under a cap. Nobody goes without food or a bed while they wait. We count who falls behind and what collecting costs. If the cost of chasing is bigger than the money chased, we stop."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "answer": "issue",
+      "claim": "The Immigration and Asylum Bill will not have received Royal Assent by 22 January 2027.",
+      "prior": 0.7,
+      "due": "2027-01-22",
+      "rule": "True if the Bill's page on bills.parliament.uk shows no Royal Assent on or before 22 January 2027. False if it shows Royal Assent by then.",
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "answer": "issue",
+      "claim": "By 31 May 2027 the Immigration and Asylum Bill becomes law with the £10,000 charge on refugees who received asylum support removed.",
+      "prior": 0.1,
+      "due": "2027-05-31",
+      "rule": "True if the Act, as it stands on legislation.gov.uk on 31 May 2027, has no £10,000 charge on refugees who received asylum support. False if the Bill has not become law, or the charge is still in it.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    }
+  ]
+}

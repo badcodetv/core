@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0802",
+  "wants": "Repay only if they can afford it, with a cap",
+  "limit": "Don't leave people with no money while they wait",
+  "split": "yes"
+ },
+ {
+  "id": "c0439",
+  "wants": "Make them repay all of it, it's taxpayers' money",
+  "limit": "Don't let it become a free ride for anyone",
+  "split": "yes"
+ },
+ {
+  "id": "c0313",
+  "wants": "Not sure how it works, but fairness matters",
+  "limit": "Don't make our rent bills higher for us",
+  "split": "unsure"
+ },
+ {
+  "id": "c0433",
+  "wants": "Let them work and pay tax back in time",
+  "limit": "Don't make it hard for them to get a job first",
+  "split": "no"
+ },
+ {
+  "id": "c0114",
+  "wants": "Charge them only when they have money, not before",
+  "limit": "Don't leave sick or disabled people with nothing",
+  "split": "yes"
+ },
+ {
+  "id": "c0265",
+  "wants": "Support should be free, it's the cost of a fair process",
+  "limit": "Don't let delays keep people waiting for years",
+  "split": "no"
+ },
+ {
+  "id": "c0721",
+  "wants": "Never really thought about it, don't mind either way",
+  "limit": "Don't make taxes go up for it",
+  "split": "unsure"
+ },
+ {
+  "id": "c0733",
+  "wants": "They should pay back every penny they were given",
+  "limit": "Don't cut services for the rest of us",
+  "split": "yes"
+ },
+ {
+  "id": "c0565",
+  "wants": "Support is right, a fair system costs money",
+  "limit": "Don't leave people destitute while claims are checked",
+  "split": "no"
+ },
+ {
+  "id": "c0653",
+  "wants": "Charge them once they can work and earn",
+  "limit": "Don't push anyone into debt they can't pay",
+  "split": "yes"
+ },
+ {
+  "id": "c0472",
+  "wants": "Make everyone pay back what they got, full stop",
+  "limit": "Don't let services for local people get worse",
+  "split": "yes"
+ },
+ {
+  "id": "c0745",
+  "wants": "Drop the charge, people fleeing shouldn't pay",
+  "limit": "Don't leave families without a roof while waiting",
+  "split": "no"
+ },
+ {
+  "id": "c0610",
+  "wants": "Depends on their income; those who can pay should",
+  "limit": "Don't let the system stay slow for years",
+  "split": "yes"
+ },
+ {
+  "id": "c0724",
+  "wants": "Don't know enough to say, sorry",
+  "limit": "Don't make it harder for people to get a fair hearing",
+  "split": "unsure"
+ },
+ {
+  "id": "c0515",
+  "wants": "Charge them, but only once they're earning",
+  "limit": "Don't leave families hungry in the meantime",
+  "split": "yes"
+ },
+ {
+  "id": "c0941",
+  "wants": "Drop the charge, it's unkind to people in fear",
+  "limit": "Don't leave children without food or a bed",
+  "split": "no"
+ },
+ {
+  "id": "c0987",
+  "wants": "Support should be free, it saves more trouble later",
+  "limit": "Don't make the system cruel for the sake of it",
+  "split": "no"
+ },
+ {
+  "id": "c0247",
+  "wants": "Charge a fixed amount they can manage each month",
+  "limit": "Don't leave anyone with a debt they can never clear",
+  "split": "yes"
+ },
+ {
+  "id": "c0522",
+  "wants": "Charge them after decisions, if they can pay",
+  "limit": "Don't let delays drag on for years",
+  "split": "yes"
+ },
+ {
+  "id": "c0192",
+  "wants": "Make them repay what they can, with a limit",
+  "limit": "Don't push costs onto pensioners and families",
+  "split": "yes"
+ },
+ {
+  "id": "c0585",
+  "wants": "Not sure, it's complicated, depends who it is",
+  "limit": "Don't make life worse for people working here",
+  "split": "unsure"
+ },
+ {
+  "id": "c0035",
+  "wants": "Support while waiting is basic, don't charge it",
+  "limit": "Don't cut support for children",
+  "split": "no"
+ },
+ {
+  "id": "c0064",
+  "wants": "Repay in full if they later earn well",
+  "limit": "Don't make it a trap that never ends",
+  "split": "yes"
+ },
+ {
+  "id": "c0658",
+  "wants": "Make them pay everything back, we're skint too",
+  "limit": "Don't cut the services we use",
+  "split": "yes"
+ },
+ {
+  "id": "c0121",
+  "wants": "Support should be free; charging people fleeing war is wrong",
+  "limit": "Don't leave anyone homeless while waiting",
+  "split": "no"
+ },
+ {
+  "id": "c0344",
+  "wants": "Charge them, but fairly, not punitively",
+  "limit": "Don't take everything and leave them nothing",
+  "split": "yes"
+ },
+ {
+  "id": "c0215",
+  "wants": "Pay back something, but not everything, as they can",
+  "limit": "Don't push people into debt they cannot pay",
+  "split": "yes"
+ },
+ {
+  "id": "c0623",
+  "wants": "Don't know much about it; help people, I suppose",
+  "limit": "Don't waste money on this",
+  "split": "unsure"
+ },
+ {
+  "id": "c0506",
+  "wants": "Charge them, it's fair when they can afford it",
+  "limit": "Don't let it slow down decisions for others",
+  "split": "yes"
+ },
+ {
+  "id": "c0426",
+  "wants": "Support should be free; the cost of decency",
+  "limit": "Don't let people sleep rough while claims are heard",
+  "split": "no"
+ },
+ {
+  "id": "c0342",
+  "wants": "Make them pay back once they work",
+  "limit": "Don't keep the job market closed to them",
+  "split": "yes"
+ },
+ {
+  "id": "c0655",
+  "wants": "Not sure yet, I'd want to know more",
+  "limit": "Don't make bills higher for people like us",
+  "split": "unsure"
+ },
+ {
+  "id": "c0264",
+  "wants": "Charge them only if they're earning, fair enough",
+  "limit": "Don't let it be a debt for life",
+  "split": "yes"
+ },
+ {
+  "id": "c0633",
+  "wants": "Keep support free, it's what a decent country does",
+  "limit": "Don't cut support for people who've fled danger",
+  "split": "no"
+ },
+ {
+  "id": "c0000",
+  "wants": "Make them pay back all of it, every penny",
+  "limit": "Don't hand out money nobody earned",
+  "split": "yes"
+ },
+ {
+  "id": "c0360",
+  "wants": "Pay back what they can, once they have a job",
+  "limit": "Don't leave people with nothing to live on",
+  "split": "yes"
+ },
+ {
+  "id": "c0696",
+  "wants": "Support should be free, don't charge desperate people",
+  "limit": "Don't let the wait drag on for years",
+  "split": "no"
+ },
+ {
+  "id": "c0461",
+  "wants": "Don't know enough to answer this",
+  "limit": "Don't make the process more cruel",
+  "split": "unsure"
+ },
+ {
+  "id": "c0860",
+  "wants": "Repay all of it; no free rides for anyone",
+  "limit": "Don't make it easier to take advantage of the system",
+  "split": "yes"
+ },
+ {
+  "id": "c0038",
+  "wants": "Charge only if they can really afford it",
+  "limit": "Don't leave people destitute while waiting",
+  "split": "yes"
+ },
+ {
+  "id": "c0137",
+  "wants": "Support free, but speed up decisions to spend less",
+  "limit": "Don't waste money on endless delays",
+  "split": "no"
+ },
+ {
+  "id": "c0680",
+  "wants": "Pay back when they earn, not while waiting",
+  "limit": "Don't make it a debt they can't escape",
+  "split": "yes"
+ },
+ {
+  "id": "c0859",
+  "wants": "Keep support free while claims are checked",
+  "limit": "Don't make waiting people go without food",
+  "split": "no"
+ },
+ {
+  "id": "c0504",
+  "wants": "Charge only what they can manage each month",
+  "limit": "Don't leave families with nothing",
+  "split": "yes"
+ },
+ {
+  "id": "c0736",
+  "wants": "Support while waiting should be free, no charge",
+  "limit": "Don't let delays go on forever",
+  "split": "no"
+ },
+ {
+  "id": "c0301",
+  "wants": "Make them pay back once they're settled and working",
+  "limit": "Don't let the state take everything",
+  "split": "yes"
+ },
+ {
+  "id": "c0652",
+  "wants": "Drop it; people with nothing shouldn't be charged",
+  "limit": "Don't make the system colder for everyone",
+  "split": "no"
+ },
+ {
+  "id": "c0783",
+  "wants": "Not sure, depends what the rules actually say",
+  "limit": "Don't spend money on pointless delays",
+  "split": "unsure"
+ },
+ {
+  "id": "c0099",
+  "wants": "Support is right; charge only when they can pay",
+  "limit": "Don't push people deeper into poverty",
+  "split": "yes"
+ },
+ {
+  "id": "c0712",
+  "wants": "Pay back over time, once they can afford it",
+  "limit": "Don't let the debt stop them working",
+  "split": "yes"
+ },
+ {
+  "id": "c0927",
+  "wants": "Not sure; it's a hard one, could go either way",
+  "limit": "Don't make life harder for people already struggling",
+  "split": "unsure"
+ },
+ {
+  "id": "c0013",
+  "wants": "Charge them when they earn, not when they arrive",
+  "limit": "Don't lock people in debt they can't escape",
+  "split": "yes"
+ },
+ {
+  "id": "c0227",
+  "wants": "Keep support free; a fair process costs money",
+  "limit": "Don't leave people destitute while waiting",
+  "split": "no"
+ },
+ {
+  "id": "c0288",
+  "wants": "Repay what they can; the rest should be waived",
+  "limit": "Don't let a debt stop anyone getting safety",
+  "split": "yes"
+ },
+ {
+  "id": "c0113",
+  "wants": "Don't know; the young ones need help, I suppose",
+  "limit": "Don't leave people on the street",
+  "split": "unsure"
+ },
+ {
+  "id": "c0315",
+  "wants": "Make them pay back, once they can work",
+  "limit": "Don't pay for it with cuts to pensions",
+  "split": "yes"
+ },
+ {
+  "id": "c0475",
+  "wants": "Support should be free, people have fled war",
+  "limit": "Don't cut support for the disabled",
+  "split": "no"
+ },
+ {
+  "id": "c0354",
+  "wants": "Repay when they can afford it, with a cap",
+  "limit": "Don't leave people without a bed while waiting",
+  "split": "yes"
+ },
+ {
+  "id": "c0790",
+  "wants": "Full repayment; every penny back to the taxpayer",
+  "limit": "Don't let our taxes rise for it",
+  "split": "yes"
+ },
+ {
+  "id": "c0218",
+  "wants": "Don't know enough to say, sorry",
+  "limit": "Don't waste money on it",
+  "split": "unsure"
+ },
+ {
+  "id": "c0562",
+  "wants": "Drop the charge; support is basic decency",
+  "limit": "Don't leave people without a roof",
+  "split": "no"
+ },
+ {
+  "id": "c0868",
+  "wants": "Make them pay back all of it, no exceptions",
+  "limit": "Don't let services for locals get worse",
+  "split": "yes"
+ },
+ {
+  "id": "c0132",
+  "wants": "Charge them once they can afford it, with limits",
+  "limit": "Don't make it too hard to get a fair hearing",
+  "split": "yes"
+ },
+ {
+  "id": "c0685",
+  "wants": "Not sure, I'd need to see the figures",
+  "limit": "Don't make the process cruel",
+  "split": "unsure"
+ },
+ {
+  "id": "c0901",
+  "wants": "Charge them when they're earning, not before",
+  "limit": "Don't leave families with nothing while waiting",
+  "split": "yes"
+ },
+ {
+  "id": "c0619",
+  "wants": "Support should be free; don't charge people fleeing",
+  "limit": "Don't leave anyone sleeping rough",
+  "split": "no"
+ },
+ {
+  "id": "c0952",
+  "wants": "Charge them only when they can truly pay",
+  "limit": "Don't leave families short of food",
+  "split": "yes"
+ },
+ {
+  "id": "c0951",
+  "wants": "Not sure; we need to be fair to locals too",
+  "limit": "Don't let the queue get longer for everyone",
+  "split": "unsure"
+ },
+ {
+  "id": "c0767",
+  "wants": "Make them pay back everything they got",
+  "limit": "Don't put more on taxpayers",
+  "split": "yes"
+ },
+ {
+  "id": "c0067",
+  "wants": "Repay once they're working, in small amounts",
+  "limit": "Don't let it become a debt for life",
+  "split": "yes"
+ },
+ {
+  "id": "c0749",
+  "wants": "Make them pay back whatever they can",
+  "limit": "Don't pay for it out of pensioners' pockets",
+  "split": "yes"
+ },
+ {
+  "id": "c0642",
+  "wants": "Drop the charge; people shouldn't be punished for waiting",
+  "limit": "Don't leave people without money or a home",
+  "split": "no"
+ },
+ {
+  "id": "c0217",
+  "wants": "Repay in full; we can't afford to subsidise everyone",
+  "limit": "Don't let our own struggling families lose out",
+  "split": "yes"
+ },
+ {
+  "id": "c0687",
+  "wants": "Not sure how it works, depends on the amount",
+  "limit": "Don't make it a trap that keeps people poor",
+  "split": "unsure"
+ },
+ {
+  "id": "c0278",
+  "wants": "Support while waiting should be free, honestly",
+  "limit": "Don't cut help for people who need it",
+  "split": "no"
+ },
+ {
+  "id": "c0211",
+  "wants": "Charge them after they get work, with a cap",
+  "limit": "Don't leave anyone without food while waiting",
+  "split": "yes"
+ },
+ {
+  "id": "c0649",
+  "wants": "Pay back what they can afford, not more",
+  "limit": "Don't make it impossible to start a new life",
+  "split": "yes"
+ },
+ {
+  "id": "c0246",
+  "wants": "Make them repay all of it, I think",
+  "limit": "Don't let it come out of our own bills",
+  "split": "yes"
+ },
+ {
+  "id": "c0459",
+  "wants": "Support should be free; the cost of a fair process",
+  "limit": "Don't leave families with nothing to live on",
+  "split": "no"
+ },
+ {
+  "id": "c0886",
+  "wants": "Pay back when they can afford it, with a limit",
+  "limit": "Don't let delays go on for years",
+  "split": "yes"
+ },
+ {
+  "id": "c0291",
+  "wants": "Repay once they're working, but make it fair",
+  "limit": "Don't saddle young people with debt they can't clear",
+  "split": "yes"
+ },
+ {
+  "id": "c0295",
+  "wants": "Keep support free while claims are decided",
+  "limit": "Don't leave people without a bed",
+  "split": "no"
+ },
+ {
+  "id": "c0152",
+  "wants": "Support should be free, nobody should pay to wait",
+  "limit": "Don't let people be stuck waiting for years",
+  "split": "no"
+ },
+ {
+  "id": "c0874",
+  "wants": "Charge them if they can, but not if they can't",
+  "limit": "Don't leave people with no money at all",
+  "split": "yes"
+ },
+ {
+  "id": "c0976",
+  "wants": "Not sure; depends on the person's circumstances",
+  "limit": "Don't make it harder for people to rebuild",
+  "split": "unsure"
+ },
+ {
+  "id": "c0436",
+  "wants": "Make them pay back everything; they should give back",
+  "limit": "Don't let services for us get worse",
+  "split": "yes"
+ },
+ {
+  "id": "c0363",
+  "wants": "Repay only if they can afford it, with a cap",
+  "limit": "Don't leave disabled people with no support",
+  "split": "yes"
+ },
+ {
+  "id": "c0564",
+  "wants": "Pay back once they're earning, in set amounts",
+  "limit": "Don't let debts stop them starting work",
+  "split": "yes"
+ },
+ {
+  "id": "c0158",
+  "wants": "Make them pay back everything, every penny",
+  "limit": "Don't put taxes up for our pensions",
+  "split": "yes"
+ },
+ {
+  "id": "c0761",
+  "wants": "Not sure; I'd like to see the rules first",
+  "limit": "Don't leave children without support",
+  "split": "unsure"
+ },
+ {
+  "id": "c0580",
+  "wants": "Drop the charge; fleeing danger isn't a crime",
+  "limit": "Don't leave families without a home",
+  "split": "no"
+ },
+ {
+  "id": "c0302",
+  "wants": "Support should be free, it's a decent thing to do",
+  "limit": "Don't leave anyone sleeping rough",
+  "split": "no"
+ },
+ {
+  "id": "c0280",
+  "wants": "Charge them only once they can pay, with a cap",
+  "limit": "Don't leave people hungry while waiting",
+  "split": "yes"
+ },
+ {
+  "id": "c0701",
+  "wants": "Keep support free; a fair system costs money",
+  "limit": "Don't cut services for pensioners",
+  "split": "no"
+ },
+ {
+  "id": "c0990",
+  "wants": "Drop the charge; a fair asylum system is worth paying for",
+  "limit": "Don't let people be pushed into destitution",
+  "split": "no"
+ },
+ {
+  "id": "c0425",
+  "wants": "Make them pay back once they are working",
+  "limit": "Don't let the debt follow them for life",
+  "split": "yes"
+ },
+ {
+  "id": "c0081",
+  "wants": "Not sure, it depends on how it's run",
+  "limit": "Don't waste money on red tape",
+  "split": "unsure"
+ },
+ {
+  "id": "c0609",
+  "wants": "Don't know enough to answer, sorry",
+  "limit": "Don't leave old people short of money",
+  "split": "unsure"
+ },
+ {
+  "id": "c0629",
+  "wants": "Pay back when they can afford it, with a cap",
+  "limit": "Don't leave people with nothing while waiting",
+  "split": "yes"
+ },
+ {
+  "id": "c0201",
+  "wants": "Support should be free; charging people is unfair",
+  "limit": "Don't leave people without a roof",
+  "split": "no"
+ }
+]

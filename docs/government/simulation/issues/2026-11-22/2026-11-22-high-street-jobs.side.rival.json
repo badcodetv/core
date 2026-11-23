@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "SIMULATION: Let workers and towns buy a fresh start",
+  "answer": "If Poundland is sold in pieces, as the packet says could happen [s1], government should fund a local rescue scheme. Workers and local shoppers would jointly own rescued shops, with one vote each. Councils would offer capped loans only where a plan shows sales can cover wages, rent and repayments. Money would buy shop assets, never shares in the failing owner. The same scheme would advance unpaid wages within two weeks and fund training where shops cannot survive. Each town would publish costs, repayments and jobs kept after a year. Success means workers paid promptly and shops covering their bills without repeat support.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat 1f4e9acc-ccc7-4489-84a1-047fc8698d16"
+}

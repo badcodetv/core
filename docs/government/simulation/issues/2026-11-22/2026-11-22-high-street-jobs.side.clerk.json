@@ -1,0 +1,38 @@
+{
+  "split_question": "When a big high street chain is failing, should the government step in to keep its stores open?",
+  "angles": [
+    "pay and retrain the workers, let the stores go",
+    "back a rescue to keep stores and jobs open",
+    "help the towns first: reuse the empty shops"
+  ],
+  "facts_for_writers": [
+    "Dismissed employees of a failed chain can claim statutory redundancy pay and notice pay from the Insolvency Service, which says it tries to pay eligible claims within 6 weeks (Wilko case, 2023). [s3]",
+    "Workers and self-employed contractors, as opposed to employees, cannot make that claim and must register as creditors with the administrators instead. [s4]",
+    "You are normally entitled to statutory redundancy pay if you have worked for your employer for 2 years or more; for redundancies from 6 April 2026 weekly pay is capped at £751 and the maximum is £22,530. [s5]",
+    "If whole-company bids for Poundland fail, its stores, staff and stock could be auctioned to rivals such as Tesco, B&M and Lidl. [s1]",
+    "The Business Secretary has said he is keeping his options for intervention in the Poundland case \"under review\". [s2]"
+  ],
+  "extra_sources": [
+    {
+      "id": "s3",
+      "title": "Wilko in administration: information for employees and creditors",
+      "publisher": "GOV.UK (Insolvency Service)",
+      "date": "2023-09-01",
+      "url": "https://www.gov.uk/government/news/wilko-in-administration-information-for-employees-and-creditors"
+    },
+    {
+      "id": "s4",
+      "title": "HHGL Limited and Hampden Group Limited trading as Homebase in administration: information for employees and creditors",
+      "publisher": "GOV.UK (Insolvency Service)",
+      "date": "2024-11-15",
+      "url": "https://www.gov.uk/government/news/hhgl-limited-and-hampden-group-limited-trading-as-homebase-in-administration-information-for-employees-and-creditors"
+    },
+    {
+      "id": "s5",
+      "title": "Redundancy pay",
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/redundant-your-rights/redundancy-pay"
+    }
+  ],
+  "notes": "No poll: the searches found only a YouGov piece on the state of high streets (35% of Britons with a local high street say it is in a good state, 11 Feb 2026; not this question) and a 2020 coronavirus-era YouGov piece on supporting jobs vs retraining. Neither asks this question, so poll is null."
+}

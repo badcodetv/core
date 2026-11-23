@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Let households steer a local warmth fund",
+  "answer": "In this simulation, help goes to households that cannot afford enough heat. The January rise is still a forecast (s1). Parliament would fund local warmth funds through a levy on the richest households. Councils would handle payments, with elected service users setting priorities and checking spending. The funds would cover urgent bills and insulation for homes receiving help. Existing help for older and sick people would stay. NHS, school and council budgets would not fund it. Insulation firms would receive their final payment only after independent checks. After winter, success means fewer missed bills and fewer households reporting cold homes among those helped.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat b8dd297a-6c4f-422e-b618-30c9424d4543"
+}

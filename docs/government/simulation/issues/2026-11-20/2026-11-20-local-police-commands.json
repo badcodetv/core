@@ -1,0 +1,518 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-20-local-police-commands",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "published",
+  "run": {
+    "mode": "replay",
+    "run_date": "2026-11-23",
+    "news_date": "2026-11-20",
+    "replay_stamp": "Replayed on 23 Nov 2026 from the news of 20 Nov 2026"
+  },
+  "issue": {
+    "title": "About 200 Local Police Commands: who should run your local police?",
+    "short": "LOCAL POLICE",
+    "question": "Who should run local policing, and who is it answerable to: a named local Commander, a bigger regional force, or the people who live there?",
+    "summary": "On 18 November 2026 the Home Secretary announced around 200 Local Police Commands across England and Wales, broadly matching council areas, each with a named Commander who is accountable to the local community and elected officials (s1). They focus on burglary, vehicle theft, phone theft and antisocial behaviour, and form the base of a three-layer system with specialist services above and a National Police Service on top (s1). The Home Office says this removes duplication across the existing 43 police headquarters and frees thousands of officers for neighbourhood policing, but gives no cost, no officer number and no timetable, and calls it the first step in a wider programme (s1). The last attempt to cut the number of forces, in 2006, was dropped after opposition (s2).",
+    "summary_sources": [
+      "s1",
+      "s2"
+    ],
+    "field": "policing",
+    "owner": "home",
+    "slot": "longest-wait",
+    "slot_reason": "Rule 2: the policing field has never run in the simulation (only water, 10 Nov), so it has waited longest. The news of 20 Nov 2026 holds a weight-3 UK item on it. Topic assigned by the orchestrator so parallel replays do not repeat a field.",
+    "news": [
+      {
+        "headline": "Home Secretary announces about 200 Local Police Commands in England and Wales",
+        "memory_id": "99ea05f0-6856-47a7-8cf7-be01a32dd170",
+        "sources": [
+          "s1"
+        ]
+      }
+    ]
+  },
+  "poll": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Local Police Commands created to tackle everyday crime",
+      "publisher": "Home Office (GOV.UK)",
+      "date": "2026-11-18",
+      "url": "https://www.gov.uk/government/news/local-police-commands-created-to-tackle-everyday-crime"
+    },
+    {
+      "id": "s2",
+      "title": "Mahmood, Burnham and the police force merger",
+      "publisher": "Institute for Government",
+      "date": "2026-09-23",
+      "url": "https://www.instituteforgovernment.org.uk/comment/mahmood-burnham-police-force-merger"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "sim-clerk",
+      "sim-citizens",
+      "sim-bench",
+      "sim-gate",
+      "sim-jury",
+      "sim-minister"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-20-local-police-commands/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0528",
+      "c0828",
+      "c0557",
+      "c0134",
+      "c0814",
+      "c0827",
+      "c0152",
+      "c0282",
+      "c0567",
+      "c0877",
+      "c0146",
+      "c0809",
+      "c0935",
+      "c0994",
+      "c0572",
+      "c0793",
+      "c0424",
+      "c0109",
+      "c0407",
+      "c0799",
+      "c0965",
+      "c0042",
+      "c0486",
+      "c0687",
+      "c0208",
+      "c0502",
+      "c0348",
+      "c0621",
+      "c0550",
+      "c0763",
+      "c0007",
+      "c0323",
+      "c0433",
+      "c0606",
+      "c0154",
+      "c0870",
+      "c0595",
+      "c0241",
+      "c0155",
+      "c0856",
+      "c0067",
+      "c0772",
+      "c0083",
+      "c0971",
+      "c0730",
+      "c0382",
+      "c0328",
+      "c0261",
+      "c0503",
+      "c0303",
+      "c0841",
+      "c0052",
+      "c0199",
+      "c0186",
+      "c0628",
+      "c0331",
+      "c0112",
+      "c0158",
+      "c0977",
+      "c0196",
+      "c0276",
+      "c0902",
+      "c0811",
+      "c0643",
+      "c0267",
+      "c0840",
+      "c0442",
+      "c0774",
+      "c0141",
+      "c0660",
+      "c0173",
+      "c0205",
+      "c0019",
+      "c0650",
+      "c0085",
+      "c0230",
+      "c0768",
+      "c0947",
+      "c0117",
+      "c0220",
+      "c0376",
+      "c0960",
+      "c0236",
+      "c0406",
+      "c0551",
+      "c0993",
+      "c0191",
+      "c0951",
+      "c0850",
+      "c0575",
+      "c0954",
+      "c0610",
+      "c0681",
+      "c0484",
+      "c0896",
+      "c0775",
+      "c0226",
+      "c0880",
+      "c0021",
+      "c0302"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "A named local Commander for each area, answerable to people there.",
+        "backers": 40
+      },
+      {
+        "kind": "test",
+        "text": "Neighbourhood officers and local front desks kept open, not cut.",
+        "backers": 38
+      },
+      {
+        "kind": "test",
+        "text": "Quicker action on burglary, car theft and phone theft.",
+        "backers": 18
+      },
+      {
+        "kind": "limit",
+        "text": "Don't close local stations, desks or neighbourhood teams to pay for it.",
+        "backers": 19
+      },
+      {
+        "kind": "limit",
+        "text": "Don't spend money nobody can see, or push it onto council tax.",
+        "backers": 15
+      },
+      {
+        "kind": "limit",
+        "text": "Don't let councils or politicians run the police day to day.",
+        "backers": 10
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0007",
+        "who": "73, South East, retired, owns outright",
+        "text": "Local control, so people can throw out a bad Commander. Don't gut the neighbourhood teams."
+      },
+      {
+        "citizen": "c0595",
+        "who": "58, London, retired, owns outright",
+        "text": "Foreign gangs tackled hard, and local control. Don't let politicians pick the Commander."
+      },
+      {
+        "citizen": "c0134",
+        "who": "68, London, retired, owns with a mortgage",
+        "text": "Bobbies on the beat like when I was young. No more new job titles and reorganisations."
+      },
+      {
+        "citizen": "c0019",
+        "who": "27, Scotland, employed, private rent",
+        "text": "I'd want the Scottish system, not an English copy. Don't mess with Scotland's police without asking."
+      },
+      {
+        "citizen": "c0083",
+        "who": "26, Scotland, employed, owns outright",
+        "text": "Honestly, I don't know enough about it. Don't make my area a test case."
+      }
+    ]
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Keep the 43 forces: name a local lead and ring-fence neighbourhood off",
+      "answer": "Skip the merger and keep the 43 forces. The Home Secretary sets two rules in law. First, every council area gets a named neighbourhood lead, and each force must publish that area's burglary, vehicle and phone theft outcomes every month. Second, neighbourhood officer numbers and front desks are ring-fenced; a force can't cut them to fund back-office changes. Forces cut the duplication the Home Office points to (s1) by sharing back-office services by agreement, which avoids the multi-billion start-up cost a chief constable warns mergers need (s2) and the opposition that ended the 2006 plan (s2). Inspectors check this yearly. It worked if published outcomes improve and neighbourhood numbers hold.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Residents' panels, drawn by lot, can hire and fire each Commander",
+      "answer": "Each of the roughly 200 Commands (s1) gets a standing panel of residents drawn by lot, like jury service, instead of councillors or ministers. The panel appoints the Commander, can remove them by two-thirds vote, and sees priorities, spending and crime figures published each quarter. Day-to-day operations stay with the Commander. The Home Office writes this into the Command rules before launch, since the announcement gives no cost, officer number or timetable (s1). Simulated citizens' top choice was a named Commander answerable locally; some also said politicians should not run police day to day. It worked if every Command has a panel within a year, a removal vote has been held somewhere, and residents can name their Commander.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Give residents the power to hold their Commander to account",
+      "answer": "In this simulation, put a resident board beside each named Commander proposed in the announcement (s1). Choose residents by lottery, with short terms and paid time. Let the board set neighbourhood priorities, inspect spending and require an independent review that can remove a failing Commander. Keep individual investigations outside its control. Give neither politicians nor contractors seats. Protect neighbourhood teams and front desks before funding reorganisation. Publish spending, staffing, response times and residents’ reports of whether police helped. Judge the change after a year: quicker help for burglary and theft, staffed desks, and no extra council tax to fund it.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "Named Commander, answerable locally",
+        "result": "unclear",
+        "note": "A keeps 43 forces and names a local lead in each area, but says nothing on who the lead answers to. Whether that satisfies the test is a matter of opinion.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Keep neighbourhood officers and desks",
+        "result": "pass",
+        "note": "A ring-fences neighbourhood officer numbers and front desks in law, so forces can't cut them for back-office changes. The ring-fence is a proposal, so it holds only if enacted.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Quicker action on theft",
+        "result": "unclear",
+        "note": "A promises monthly published outcomes on burglary, vehicle and phone theft. No source shows that publishing figures makes action quicker.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "No closing stations/desks to pay",
+        "result": "pass",
+        "note": "Ring-fencing bars cuts to neighbourhood teams and desks to pay for change. Back-office sharing is by agreement, so no station closures are needed. No source needed: logic.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "No hidden cost or council tax",
+        "result": "unclear",
+        "note": "A avoids merger start-up costs that s2 says are large, but gives no cost for its own rules or inspections, and says nothing on council tax.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "No politicians run police day to day",
+        "result": "pass",
+        "note": "A leaves day-to-day running with each force and adds a published-outcomes rule and inspections, not a council or political role. No source needed: logic.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Named Commander, answerable locally",
+        "result": "pass",
+        "note": "B gives each of the roughly 200 Commands a named Commander the panel appoints, so the Commander answers to residents. s1 says Commanders are to answer locally.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Keep neighbourhood officers and desks",
+        "result": "unclear",
+        "note": "B doesn't say what happens to neighbourhood teams or front desks. s1 says thousands of officers would return to neighbourhood work but gives no figure.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Quicker action on theft",
+        "result": "unclear",
+        "note": "B leaves operations with the Commander and sets no crime target. Nothing shows a panel would speed up action on theft.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "No closing stations/desks to pay",
+        "result": "unclear",
+        "note": "B is silent on station and desk closures. s1 gives no cost or timetable, so whether the reform forces closures can't be told.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "No hidden cost or council tax",
+        "result": "unclear",
+        "note": "B publishes spending quarterly, which helps people see it. It gives no cost for panels and says nothing on council tax. s1 gives no cost for the reform.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "No politicians run police day to day",
+        "result": "pass",
+        "note": "Panels are drawn by lot and keep daily operations with the Commander, with no councillors or ministers. B says so itself. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Named Commander, answerable locally",
+        "result": "pass",
+        "note": "C keeps the named Commander from s1 and adds a resident board that can force an independent review to remove a failing Commander.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Keep neighbourhood officers and desks",
+        "result": "pass",
+        "note": "C says to protect neighbourhood teams and front desks before funding any reorganisation. This is a promise in the proposal, not an enforced rule.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Quicker action on theft",
+        "result": "unclear",
+        "note": "C judges itself on quicker help after a year, but no source shows a resident board would speed up action on theft.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "No closing stations/desks to pay",
+        "result": "pass",
+        "note": "C puts neighbourhood teams and front desks first before paying for change, which answers the limit. It depends on being followed in practice.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "No hidden cost or council tax",
+        "result": "pass",
+        "note": "C publishes spending and staffing and sets no extra council tax. Paid board time has a cost it doesn't state, so this is only partly settled.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "No politicians run police day to day",
+        "result": "pass",
+        "note": "C keeps individual investigations outside the board's control and bars politicians from seats. Board members are residents, not councillors. No source needed: logic.",
+        "sources": []
+      }
+    ],
+    "verdict": "No answer fails a test outright. Three of six rows pass for A, two for B and five for C, but facts can't settle the open questions: whether residents or the Home Office should hold a Commander to account, and what happens to neighbourhood teams.",
+    "to_jury": true,
+    "rejected_claims": []
+  },
+  "jury": {
+    "seed": "2026-11-20-local-police-commands/jury",
+    "size": 12,
+    "ids": [
+      "c0164",
+      "c0871",
+      "c0271",
+      "c0616",
+      "c0958",
+      "c0753",
+      "c0665",
+      "c0252",
+      "c0829",
+      "c0249",
+      "c0011",
+      "c0658"
+    ],
+    "model": "claude-sonnet-5-5",
+    "question": "Who should a local police Commander answer to: the Home Office and the force, councillors and elected officials, or a panel of residents drawn by lot?",
+    "options": [
+      "Keep the 43 forces; ring-fence neighbourhood teams and publish results",
+      "Named Commander answerable to local councillors and elected officials, as announced",
+      "Commander appointed and removable by a panel of residents drawn by lot",
+      "Commander watched by a resident board that can force an independent review"
+    ],
+    "votes": [
+      2,
+      3,
+      4,
+      3
+    ],
+    "ruling": "Commander appointed and removable by a panel of residents drawn by lot. Four of twelve jurors chose it, the most of any option, because they wanted ordinary residents, not politicians, to hold a Commander to account.",
+    "reasons": [
+      {
+        "juror": "c0871",
+        "text": "Panels drawn by lot are like jury service. Nobody has to win an election, and a bad Commander can be removed."
+      },
+      {
+        "juror": "c0753",
+        "text": "Another reorganisation will cost money and distract police. Fix the rules, keep the neighbourhood officers, and publish the figures."
+      },
+      {
+        "juror": "c0252",
+        "text": "People who live there know what's wrong. Let a panel of residents hire and remove the Commander, and keep politicians out."
+      },
+      {
+        "juror": "c0249",
+        "text": "Councillors are known and can be held to account in public. A lottery panel feels untested to me."
+      }
+    ],
+    "review": "2027-11-23",
+    "real_jury": false
+  },
+  "minister": {
+    "post": "home",
+    "decision": "signed",
+    "trial": "In one Local Police Command area, seat a panel of 12 residents drawn by lot. It sees priorities, spending and crime figures each quarter and can ask for an independent review of the Commander. Operations and investigations stay with the Commander. No politicians on it. One area, one year.",
+    "fail_number": "No fall in the share of panel members who can name their Commander by the first review (target: at least 8 of 12), or any extra council tax charged to pay for the panel (target: 0p).",
+    "stop": "2027-06-30",
+    "statement": "The jury was split, and I'll say so. Four of twelve wanted a panel of residents with the power to hire and remove. Three wanted a lighter board. Three wanted councillors. So I'm signing one small thing, not a national scheme. One area. Twelve residents drawn by lot, like jury service. They see the figures and can ask for an outside review. Nobody picks them by party. The Commander still runs the police. Size of it: one of around 200. If residents can't name their Commander in a year, it failed, and I'll say so."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "answer": "issue",
+      "claim": "By 22 January 2027 the Home Office publishes a start date for at least one Local Police Command.",
+      "prior": 0.45,
+      "due": "2027-01-22",
+      "rule": "True if a GOV.UK Home Office page or a statement to Parliament dated on or before 22 January 2027 gives a date on which any Local Police Command starts. False otherwise.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "answer": "issue",
+      "claim": "By 22 January 2027 the Home Office publishes a total cost for creating the Local Police Commands.",
+      "prior": 0.2,
+      "due": "2027-01-22",
+      "rule": "True if a GOV.UK page or an official impact assessment dated on or before 22 January 2027 gives a cost figure for the whole Local Police Command reform. False otherwise.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    }
+  ]
+}

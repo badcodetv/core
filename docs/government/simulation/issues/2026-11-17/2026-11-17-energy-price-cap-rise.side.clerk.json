@@ -1,0 +1,18 @@
+{
+  "split_question": "Should the Government help households with the January rise in the energy price cap?",
+  "angles": [
+    "Help every household, as in 2022",
+    "Help only the poorest, by need",
+    "No new help: let the market price stand"
+  ],
+  "facts_for_writers": [
+    "The current cap is £1,723 a year for a typical household and the predicted January cap is about £2,184, but Ofgem has not yet announced it (s1).",
+    "The Joseph Rowntree Foundation says the £400 rebate in the last crisis cost £11.9 billion, and proposes a £6.3 billion winter package to cut average bills by about £230 (s3).",
+    "The Joseph Rowntree Foundation says taking the remaining Renewables Obligation, Feed-in Tariff and Warm Home Discount costs off electricity bills is worth about £60 a year to the average household (s3).",
+    "Energy UK, a trade body, says the Government spent £36 billion on universal household support in 2022/23 and calls that an inefficient use of public funds; it wants extra targeted help on top of the Warm Home Discount (s4).",
+    "Energy UK projects household energy debt reaching £7 billion by the end of 2026 (s4)."
+  ],
+  "extra_sources": [
+    {"id": "s4", "title": "Economic defence: tackling energy bills in winter 2026/27", "publisher": "Energy UK", "date": "2026-10-03", "url": "https://www.energy-uk.org.uk/publications/economic-defence-tackling-energy-bills-in-winter-2026-27/"}
+  ]
+}

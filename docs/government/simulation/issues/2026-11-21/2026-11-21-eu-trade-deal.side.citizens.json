@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0003",
+  "wants": "Cheaper food and easier work abroad for young people like me.",
+  "limit": "No sell-out on farms or the NHS.",
+  "split": "yes"
+ },
+ {
+  "id": "c0009",
+  "wants": "Lower food prices and a clear deal, not open borders.",
+  "limit": "Don't let EU students get British fees for nothing.",
+  "split": "no"
+ },
+ {
+  "id": "c0011",
+  "wants": "Keep the food deal and stop the fuss about students.",
+  "limit": "Don't hand over our fishing or farm rules.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0016",
+  "wants": "Something that helps families afford a weekly shop.",
+  "limit": "No free-for-all for students while we pay the bills.",
+  "split": "no"
+ },
+ {
+  "id": "c0037",
+  "wants": "Cheaper imports and fewer queues at the border.",
+  "limit": "Don't let Brussels rule the deal from outside.",
+  "split": "no"
+ },
+ {
+  "id": "c0041",
+  "wants": "Get on with it, sort the trade and stop dithering.",
+  "limit": "No open borders for young people.",
+  "split": "no"
+ },
+ {
+  "id": "c0053",
+  "wants": "A deal that lets young people work abroad for a bit.",
+  "limit": "Don't make my tuition or fees worse.",
+  "split": "yes"
+ },
+ {
+  "id": "c0092",
+  "wants": "Keep our borders and our money under our control.",
+  "limit": "No EU rules creeping in through the back door.",
+  "split": "no"
+ },
+ {
+  "id": "c0109",
+  "wants": "A carbon deal that actually cuts pollution, plus student mobility.",
+  "limit": "Don't trade away workers' rights or environment rules.",
+  "split": "yes"
+ },
+ {
+  "id": "c0114",
+  "wants": "Better healthcare and a deal that helps young people.",
+  "limit": "Don't cut university places to pay for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0147",
+  "wants": "Let students from Europe study here as before.",
+  "limit": "Don't let it cost British students their places.",
+  "split": "yes"
+ },
+ {
+  "id": "c0153",
+  "wants": "Jobs for British people first, then a deal.",
+  "limit": "No more foreign students taking the cheap places.",
+  "split": "no"
+ },
+ {
+  "id": "c0154",
+  "wants": "Cheaper food, and a say on what we pay.",
+  "limit": "Don't sell British farmers down the river.",
+  "split": "no"
+ },
+ {
+  "id": "c0159",
+  "wants": "Lower bills and fewer things that go up every year.",
+  "limit": "Nothing that pushes food prices higher.",
+  "split": "no"
+ },
+ {
+  "id": "c0160",
+  "wants": "A proper deal on food that keeps shelves full.",
+  "limit": "Not if taxpayers foot the bill.",
+  "split": "no"
+ },
+ {
+  "id": "c0162",
+  "wants": "Young people able to live and study across Europe.",
+  "limit": "Don't let the deal drop worker protections.",
+  "split": "yes"
+ },
+ {
+  "id": "c0187",
+  "wants": "Cheaper food and a carbon market that works.",
+  "limit": "Fair fees for everyone who studies here.",
+  "split": "yes"
+ },
+ {
+  "id": "c0203",
+  "wants": "Something that helps the Welsh farms and the young.",
+  "limit": "Don't hand fees to foreigners while our kids can't afford uni.",
+  "split": "no"
+ },
+ {
+  "id": "c0204",
+  "wants": "A deal our farmers can live with.",
+  "limit": "No more open doors without a say.",
+  "split": "no"
+ },
+ {
+  "id": "c0220",
+  "wants": "Mobility for young people, and a fair carbon price.",
+  "limit": "Don't make universities fold to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0221",
+  "wants": "Cheaper trips abroad and easier work for my mates.",
+  "limit": "Don't price out the people who already live here.",
+  "split": "yes"
+ },
+ {
+  "id": "c0240",
+  "wants": "Keep our border control and fair fees.",
+  "limit": "No deal that lets EU students in cheap.",
+  "split": "no"
+ },
+ {
+  "id": "c0241",
+  "wants": "A deal that makes food and bills cheaper.",
+  "limit": "No cuts to nurses or schools to pay for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0248",
+  "wants": "Closer links with Europe and young people with options.",
+  "limit": "Don't let universities get starved for money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0253",
+  "wants": "Get the food deal done and stop the arguing.",
+  "limit": "Don't let it cost us our pension or our bills.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0270",
+  "wants": "A fair deal for young people, travel and study.",
+  "limit": "Don't let it cost me or other young workers.",
+  "split": "yes"
+ },
+ {
+  "id": "c0271",
+  "wants": "Stop Brussels deals that cost us control.",
+  "limit": "No free tuition for EU kids, no open borders.",
+  "split": "no"
+ },
+ {
+  "id": "c0282",
+  "wants": "Cheap food and a chance for students to move.",
+  "limit": "Don't cut the courses I'd want to study.",
+  "split": "yes"
+ },
+ {
+  "id": "c0291",
+  "wants": "Keep the deal, but don't make it free for EU students.",
+  "limit": "Don't cap the places British students can get.",
+  "split": "no"
+ },
+ {
+  "id": "c0306",
+  "wants": "Lower food prices and easier trade with Europe.",
+  "limit": "Don't drop protections for workers and nature.",
+  "split": "yes"
+ },
+ {
+  "id": "c0326",
+  "wants": "Get the trade back on track, we've lost enough.",
+  "limit": "No more sweeteners for EU students.",
+  "split": "no"
+ },
+ {
+  "id": "c0330",
+  "wants": "Something to help the family budget.",
+  "limit": "Don't cut uni places to pay for fees.",
+  "split": "no"
+ },
+ {
+  "id": "c0334",
+  "wants": "Let young people study abroad and come back.",
+  "limit": "Don't let the price of uni go up for us.",
+  "split": "yes"
+ },
+ {
+  "id": "c0368",
+  "wants": "Keep trade with Europe easy for our businesses.",
+  "limit": "Don't let it split the community or cost us jobs.",
+  "split": "yes"
+ },
+ {
+  "id": "c0373",
+  "wants": "Cheaper food and a border I can trust.",
+  "limit": "No EU students at home fees with taxpayers paying.",
+  "split": "no"
+ },
+ {
+  "id": "c0379",
+  "wants": "Stop the EU telling us who pays for our uni.",
+  "limit": "No open-door scheme for young Europeans.",
+  "split": "no"
+ },
+ {
+  "id": "c0397",
+  "wants": "A trade deal that doesn't tie us to EU rules.",
+  "limit": "Don't let the fees fight drag on forever.",
+  "split": "no"
+ },
+ {
+  "id": "c0401",
+  "wants": "Keep trade flowing, stop the rules creeping in.",
+  "limit": "No deal that undercuts British students.",
+  "split": "no"
+ },
+ {
+  "id": "c0411",
+  "wants": "Stronger links with Europe, friends and family across.",
+  "limit": "Don't make our young pay more to study.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0416",
+  "wants": "Cheaper food, quicker trade, fewer delays at the ports.",
+  "limit": "Don't put the NHS or schools at risk for a deal.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0421",
+  "wants": "Lower food bills and a carbon deal that's real.",
+  "limit": "Don't let students pay the price for politics.",
+  "split": "yes"
+ },
+ {
+  "id": "c0440",
+  "wants": "Let my kids study and work in Europe.",
+  "limit": "Don't make the fees go up for British students.",
+  "split": "yes"
+ },
+ {
+  "id": "c0453",
+  "wants": "A decent deal that keeps food cheap.",
+  "limit": "No more EU money or rules pushed on us.",
+  "split": "no"
+ },
+ {
+  "id": "c0474",
+  "wants": "Working abroad for young people, and cheaper food.",
+  "limit": "Don't drive up London costs even more.",
+  "split": "yes"
+ },
+ {
+  "id": "c0485",
+  "wants": "Protect our farms and get the trade done.",
+  "limit": "No free EU students while our kids pay full.",
+  "split": "no"
+ },
+ {
+  "id": "c0496",
+  "wants": "Strong trade links and border checks that work.",
+  "limit": "Don't give away more control of our rules.",
+  "split": "no"
+ },
+ {
+  "id": "c0545",
+  "wants": "Cheaper food and easier trips for young people.",
+  "limit": "Don't cut our universities to fund it.",
+  "split": "no"
+ },
+ {
+  "id": "c0562",
+  "wants": "A carbon market that cuts emissions for real.",
+  "limit": "Don't drop climate promises for the trade.",
+  "split": "yes"
+ },
+ {
+  "id": "c0566",
+  "wants": "Keep our money here, our rules here.",
+  "limit": "No deal that lets EU students undercut us.",
+  "split": "no"
+ },
+ {
+  "id": "c0569",
+  "wants": "Young people able to work and study across Europe.",
+  "limit": "Don't let the deal leave young Brits out.",
+  "split": "yes"
+ },
+ {
+  "id": "c0581",
+  "wants": "Lower food prices and a carbon deal that works.",
+  "limit": "Don't let it cost us jobs in the factories.",
+  "split": "no"
+ },
+ {
+  "id": "c0583",
+  "wants": "Get the deal done, keep the farm rules sensible.",
+  "limit": "No fees deal that the taxpayer pays for.",
+  "split": "no"
+ },
+ {
+  "id": "c0590",
+  "wants": "Stop the EU dictating us. Keep it simple.",
+  "limit": "No deal that brings in more people from Europe.",
+  "split": "no"
+ },
+ {
+  "id": "c0596",
+  "wants": "Cheaper groceries and a fair go for workers.",
+  "limit": "Don't sell our workers' rights for a trade deal.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0600",
+  "wants": "A sensible deal that doesn't tie our hands.",
+  "limit": "No free student places for Europeans.",
+  "split": "no"
+ },
+ {
+  "id": "c0612",
+  "wants": "Something that helps everyone, not just the big firms.",
+  "limit": "Don't push fees up for our own students.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0636",
+  "wants": "Easier to work in Europe, cheaper stuff from the shops.",
+  "limit": "Don't make uni more expensive here.",
+  "split": "yes"
+ },
+ {
+  "id": "c0638",
+  "wants": "Lower bills and trade that doesn't stall.",
+  "limit": "Don't make nurses wait for the fallout.",
+  "split": "no"
+ },
+ {
+  "id": "c0657",
+  "wants": "Let young people study abroad and then come back.",
+  "limit": "No EU students at home rates while we pay.",
+  "split": "no"
+ },
+ {
+  "id": "c0658",
+  "wants": "Keep control and don't let EU rules rule our lives.",
+  "limit": "No open door for Europe's students.",
+  "split": "no"
+ },
+ {
+  "id": "c0663",
+  "wants": "Fair fees for everyone and cheaper food.",
+  "limit": "Don't let it get in the way of the EU deal.",
+  "split": "yes"
+ },
+ {
+  "id": "c0666",
+  "wants": "Trade with Europe as before, no more fuss.",
+  "limit": "No taxpayer money going on overseas students.",
+  "split": "no"
+ },
+ {
+  "id": "c0672",
+  "wants": "Closer ties with Europe and cleaner energy trading.",
+  "limit": "Don't cut higher education to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0674",
+  "wants": "A deal that stops prices going up and gets trade moving.",
+  "limit": "No free-for-all for students, I paid mine.",
+  "split": "no"
+ },
+ {
+  "id": "c0681",
+  "wants": "Chances for young people to travel and work abroad.",
+  "limit": "Don't make us pay more to get a place at uni.",
+  "split": "yes"
+ },
+ {
+  "id": "c0694",
+  "wants": "A deal that helps Welsh exporters, not more red tape.",
+  "limit": "No taxpayer-funded fees for EU students.",
+  "split": "no"
+ },
+ {
+  "id": "c0699",
+  "wants": "Keep the deal simple and the costs down.",
+  "limit": "No open borders by stealth.",
+  "split": "no"
+ },
+ {
+  "id": "c0718",
+  "wants": "Cheaper food and young people able to get about.",
+  "limit": "Don't push rents up more than they are.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0729",
+  "wants": "Stop the fight over fees and get food cheaper.",
+  "limit": "Don't let Scotland's students be left out.",
+  "split": "yes"
+ },
+ {
+  "id": "c0742",
+  "wants": "Keep the deal, but keep our universities ours.",
+  "limit": "No discount for EU students on our fees.",
+  "split": "no"
+ },
+ {
+  "id": "c0757",
+  "wants": "A deal that lets our students and workers move freely.",
+  "limit": "Don't make taxpayers pay for it alone.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0758",
+  "wants": "Let them get on with it, no more summits.",
+  "limit": "Don't let fees cost the nation money we haven't got.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0761",
+  "wants": "Food prices down and young people able to visit family.",
+  "limit": "Don't make it hard for families to get together.",
+  "split": "yes"
+ },
+ {
+  "id": "c0773",
+  "wants": "Something that helps the NHS and farms both.",
+  "limit": "Don't hand more to Europe for nothing back.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0778",
+  "wants": "Freer movement for young people, and food trade without the fuss.",
+  "limit": "Don't let the deal stall over students again.",
+  "split": "yes"
+ },
+ {
+  "id": "c0779",
+  "wants": "Lower food prices and a deal that's done.",
+  "limit": "Don't put more pressure on council housing.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0800",
+  "wants": "A deal that's fair for both sides, not just Brussels.",
+  "limit": "Don't change fees without a proper public say.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0803",
+  "wants": "Keep our borders managed and the trade open.",
+  "limit": "No free student deal paid by hard-working people.",
+  "split": "no"
+ },
+ {
+  "id": "c0815",
+  "wants": "Youth mobility, cheaper food, and a fair deal.",
+  "limit": "Don't cut the courses and the staff at universities.",
+  "split": "yes"
+ },
+ {
+  "id": "c0817",
+  "wants": "A clean, quick deal with fewer strings.",
+  "limit": "No fees deal that the taxpayer quietly pays.",
+  "split": "no"
+ },
+ {
+  "id": "c0822",
+  "wants": "Closer trade and easier student exchange with Europe.",
+  "limit": "Don't push up costs for Scottish universities.",
+  "split": "yes"
+ },
+ {
+  "id": "c0838",
+  "wants": "Food on the table cheaper and a fair deal for workers.",
+  "limit": "Don't let any deal cost us our jobs.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0842",
+  "wants": "Cheaper food, and a deal that works in practice.",
+  "limit": "Don't make the fee deal hit our kids.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0849",
+  "wants": "A job for me and open doors for young people.",
+  "limit": "Don't cut the help that we get now.",
+  "split": "yes"
+ },
+ {
+  "id": "c0857",
+  "wants": "Keep the trade but no EU rules over us.",
+  "limit": "No free places for EU students.",
+  "split": "no"
+ },
+ {
+  "id": "c0858",
+  "wants": "Control of our rules and cheaper goods.",
+  "limit": "No money sent to Brussels for the deal.",
+  "split": "no"
+ },
+ {
+  "id": "c0868",
+  "wants": "Keep our universities British and our borders ours.",
+  "limit": "No fees deal that puts more pressure on us.",
+  "split": "no"
+ },
+ {
+  "id": "c0872",
+  "wants": "Cheaper food and easier trips for my son.",
+  "limit": "Don't let it put fees up for our kids.",
+  "split": "no"
+ },
+ {
+  "id": "c0884",
+  "wants": "A decent deal that helps farms and the young both.",
+  "limit": "Don't rush it and sell the farmers short.",
+  "split": "yes"
+ },
+ {
+  "id": "c0892",
+  "wants": "Stop faffing and get the trade back on.",
+  "limit": "No open-ended deal on students.",
+  "split": "no"
+ },
+ {
+  "id": "c0897",
+  "wants": "Young people able to study and live in Europe.",
+  "limit": "Don't let the student loan debt grow more.",
+  "split": "yes"
+ },
+ {
+  "id": "c0921",
+  "wants": "Keep our own rules on who comes here.",
+  "limit": "No free uni for EU students paid by us.",
+  "split": "no"
+ },
+ {
+  "id": "c0927",
+  "wants": "Lower bills and an end to the endless talks.",
+  "limit": "Don't cut the NHS to pay for a deal.",
+  "split": "no"
+ },
+ {
+  "id": "c0945",
+  "wants": "Cheaper food and easy access to Europe for friends.",
+  "limit": "Don't break the Good Friday peace in the trade.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0956",
+  "wants": "Get on with it, and keep the prices down.",
+  "limit": "Don't let kids of the rich buy their way in.",
+  "split": "no"
+ },
+ {
+  "id": "c0966",
+  "wants": "Good ties with Europe, the way it was.",
+  "limit": "Don't make the young pay for all this.",
+  "split": "yes"
+ },
+ {
+  "id": "c0974",
+  "wants": "A deal with fewer problems at the border.",
+  "limit": "Don't cut uni places for British kids.",
+  "split": "no"
+ },
+ {
+  "id": "c0978",
+  "wants": "Food prices down and young people free to move.",
+  "limit": "Don't let fees become a fight nobody wins.",
+  "split": "yes"
+ },
+ {
+  "id": "c0988",
+  "wants": "Closer ties with Europe, and better for young people.",
+  "limit": "Don't let it swallow the whole budget.",
+  "split": "yes"
+ },
+ {
+  "id": "c0991",
+  "wants": "Lower food bills and a carbon deal that's honest.",
+  "limit": "Don't let it cost British students their places.",
+  "split": "unsure"
+ }
+]

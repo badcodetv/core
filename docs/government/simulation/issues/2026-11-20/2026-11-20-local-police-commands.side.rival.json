@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Give residents the power to hold their Commander to account",
+  "answer": "In this simulation, put a resident board beside each named Commander proposed in the announcement (s1). Choose residents by lottery, with short terms and paid time. Let the board set neighbourhood priorities, inspect spending and require an independent review that can remove a failing Commander. Keep individual investigations outside its control. Give neither politicians nor contractors seats. Protect neighbourhood teams and front desks before funding reorganisation. Publish spending, staffing, response times and residents’ reports of whether police helped. Judge the change after a year: quicker help for burglary and theft, staffed desks, and no extra council tax to fund it.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat ed5ad565-86d5-46b4-b92e-41bec5a0d3e2"
+}
