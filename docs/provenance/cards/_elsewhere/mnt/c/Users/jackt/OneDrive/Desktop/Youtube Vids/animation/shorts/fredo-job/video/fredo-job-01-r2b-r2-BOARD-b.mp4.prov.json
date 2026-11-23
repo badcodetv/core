@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/video/fredo-job-01-r2b-r2-BOARD-b.mp4",
+ "made": "2026-11-23T18:44:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A dim back room. The four crew stand with their backs to us, every head facing the plan on the wall the whole time. The crew member in the cream suit taps the circled spot on the plan twice with a gloved finger, firmly, his head still facing the wall. The hanging lamp sways gently, its light sliding across the brick wall. Every balaclava is one solid piece of knitted cloth over the whole face, smooth across the eyes, nose and mouth, with its white ring and red triangle steady. Gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r2-BOARD-b.jpg",
+ "why": "Jack, clips r1: \"fix the masks there are eye holes thanks\" (cream mask turned and showed an eye hole; now every head stays facing the wall)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r2-BOARD-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job",
+  "key": "01-r2b",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T18:43:40.070Z"
+ }
+}

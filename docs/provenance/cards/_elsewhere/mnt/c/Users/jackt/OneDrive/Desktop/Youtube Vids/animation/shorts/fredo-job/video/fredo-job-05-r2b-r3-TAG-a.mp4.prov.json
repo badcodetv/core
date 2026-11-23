@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/video/fredo-job-05-r2b-r3-TAG-a.mp4",
+ "made": "2026-11-23T18:44:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A corner shop at night under one bare bulb. The four crew stand completely still behind the counter, heads bowed, staring down at the jar. The bare bulb flickers once, briefly, and sways a little on its cord, its light sliding over the masks. Every balaclava is one solid piece of knitted cloth over the whole face, smooth across the eyes, nose and mouth, with its white ring and red triangle steady. Gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r3-TAG-a.jpg",
+ "why": "Jack, clips r1: \"fix the masks there are eye holes thanks\" (the navy mask grew eye holes leaning in; now nobody leans, only the bulb moves)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r3-TAG-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job",
+  "key": "05-r2b",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T18:43:48.659Z"
+ }
+}

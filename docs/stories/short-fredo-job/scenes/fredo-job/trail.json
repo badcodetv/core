@@ -50,5 +50,13 @@
   "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
   "what": "Clips r1: 10 Omni clips + 2 post-only previews for the 6 locked frames, Claude's picks marked",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/clips-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-23T18:46:21+00:00",
+  "stage": "clips",
+  "round": 6,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "Clips r2: masks fixed on clips 1 and 5 (2 takes each)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/clips-r2-picks.json <out.html>"
  }
 ]

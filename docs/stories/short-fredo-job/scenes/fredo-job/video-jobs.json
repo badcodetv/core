@@ -5,7 +5,7 @@
   "3": "a",
   "4": "a",
   "5": "a",
-  "6": "a"
+  "6": "b"
  },
  "extra": [
   {
@@ -35,6 +35,34 @@
    "still": "r4-WAY-C-b",
    "motion": "The camera does not move. A corner shop counter at night. A gloved hand rests calmly on the lid of the glass jar of coins beside the jar of purple wrapped chocolate frog bars. The crew member behind gives one small, satisfied nod. Warm light glints softly on the coins. The wrappers keep their exact design. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
    "why": "option b (The hand rests on the jar), so Jack can compare"
+  },
+  {
+   "key": "01-r2a",
+   "n": 1,
+   "still": "r2-BOARD-b",
+   "motion": "The camera does not move. A dim back room. The four crew stand with their backs to us, every head facing the plan on the wall the whole time. The crew member in the cream suit taps the circled spot on the plan twice with a gloved finger, firmly, his head still facing the wall. The hanging lamp sways gently, its light sliding across the brick wall. Every balaclava is one solid piece of knitted cloth over the whole face, smooth across the eyes, nose and mouth, with its white ring and red triangle steady. Gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+   "why": "Jack, clips r1: \"fix the masks there are eye holes thanks\" (cream mask turned and showed an eye hole; now every head stays facing the wall)"
+  },
+  {
+   "key": "05-r2a",
+   "n": 5,
+   "still": "r3-TAG-a",
+   "motion": "The camera does not move. A corner shop at night under one bare bulb. The four crew stand completely still behind the counter, heads bowed, staring down at the jar. The bare bulb flickers once, briefly, and sways a little on its cord, its light sliding over the masks. Every balaclava is one solid piece of knitted cloth over the whole face, smooth across the eyes, nose and mouth, with its white ring and red triangle steady. Gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+   "why": "Jack, clips r1: \"fix the masks there are eye holes thanks\" (the navy mask grew eye holes leaning in; now nobody leans, only the bulb moves)"
+  },
+  {
+   "key": "01-r2b",
+   "n": 1,
+   "still": "r2-BOARD-b",
+   "motion": "The camera does not move. A dim back room. The four crew stand with their backs to us, every head facing the plan on the wall the whole time. The crew member in the cream suit taps the circled spot on the plan twice with a gloved finger, firmly, his head still facing the wall. The hanging lamp sways gently, its light sliding across the brick wall. Every balaclava is one solid piece of knitted cloth over the whole face, smooth across the eyes, nose and mouth, with its white ring and red triangle steady. Gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+   "why": "Jack, clips r1: \"fix the masks there are eye holes thanks\" (cream mask turned and showed an eye hole; now every head stays facing the wall)"
+  },
+  {
+   "key": "05-r2b",
+   "n": 5,
+   "still": "r3-TAG-a",
+   "motion": "The camera does not move. A corner shop at night under one bare bulb. The four crew stand completely still behind the counter, heads bowed, staring down at the jar. The bare bulb flickers once, briefly, and sways a little on its cord, its light sliding over the masks. Every balaclava is one solid piece of knitted cloth over the whole face, smooth across the eyes, nose and mouth, with its white ring and red triangle steady. Gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+   "why": "Jack, clips r1: \"fix the masks there are eye holes thanks\" (the navy mask grew eye holes leaning in; now nobody leans, only the bulb moves)"
   }
  ]
 }
