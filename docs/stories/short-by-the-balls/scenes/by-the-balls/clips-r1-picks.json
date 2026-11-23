@@ -2,7 +2,7 @@
  "title": "By the Balls Clips",
  "eyebrow": "BadCode Shorts · By the Balls · clips round 1",
  "heading": "By the Balls: clips, round 1",
- "intro": "16 clips (Omni 1.2 Flash, Frames, 8 s) from your locked stills, two per shot. No speech in any clip's own sound. Prompts by a sealed writer; pollution check clean. Pick one per shot; leave a note on anything that looks wrong.",
+ "intro": "16 clips (Omni 1.2 Flash, Frames, 8 s) from your locked stills, two per shot. No speech in any clip's own sound. Prompts by a sealed writer; pollution check clean. Pick one per shot; leave a note on anything that looks wrong. The music takes are at the bottom.",
  "sections": [
   {
    "h": "Clips",
@@ -164,6 +164,68 @@
        "id": "WINb",
        "src": "clips/WINb.mp4",
        "label": "WINb: they lift it out (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Music",
+   "lede": "Your ask: \"start with arcade music too, think stranger things when they are in the arcade\". Four sealed writers, four different takes on it, two Suno takes each; instrumental only. Each opens on suno.com. Not heard by Claude.",
+   "groups": [
+    {
+     "slot": "MUSIC",
+     "title": "The arcade music",
+     "line": "Pick one take.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "analog-a",
+       "href": "https://suno.com/song/31f9ca22-5b60-4ccb-a9eb-f6fb23db940c",
+       "label": "Analog arpeggio score, take 1",
+       "warn": ""
+      },
+      {
+       "id": "analog-b",
+       "href": "https://suno.com/song/77f6c552-da2d-49bf-b841-49b4faef129d",
+       "label": "Analog arpeggio score, take 2",
+       "warn": ""
+      },
+      {
+       "id": "fm-a",
+       "href": "https://suno.com/song/ae605d80-bd5c-4f57-85d1-6cc875de29f4",
+       "label": "Cabinet attract loop, take 1 (0:29)",
+       "warn": ""
+      },
+      {
+       "id": "fm-b",
+       "href": "https://suno.com/song/98f575ef-a960-4f96-b91b-5b093c4b10c6",
+       "label": "Cabinet attract loop, take 2 (0:28)",
+       "warn": ""
+      },
+      {
+       "id": "chip-a",
+       "href": "https://suno.com/song/2b1fc882-d679-447f-a9b2-adebbb524ee6",
+       "label": "8-bit coin-slot chiptune, take 1 (0:20)",
+       "warn": ""
+      },
+      {
+       "id": "chip-b",
+       "href": "https://suno.com/song/dd735cdc-34ad-4b6d-8549-6ea0c6c577e3",
+       "label": "8-bit coin-slot chiptune, take 2 (0:22)",
+       "warn": ""
+      },
+      {
+       "id": "rock-a",
+       "href": "https://suno.com/song/bfeb56ed-3c3b-4695-9a6a-2d8cb53cc7a8",
+       "label": "Arcade-radio synth rock, take 1 (0:22)",
+       "warn": ""
+      },
+      {
+       "id": "rock-b",
+       "href": "https://suno.com/song/083da8e1-a50f-482e-9b98-b2358fd88b6c",
+       "label": "Arcade-radio synth rock, take 2 (0:20)",
        "warn": ""
       }
      ]
