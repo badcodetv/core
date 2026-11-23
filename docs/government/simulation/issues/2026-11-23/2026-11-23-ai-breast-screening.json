@@ -1,0 +1,90 @@
+{
+ "schema": "fp-sim/1",
+ "id": "2026-11-23-ai-breast-screening",
+ "simulated": true,
+ "stamp": "SIMULATED",
+ "stage": "clerk",
+ "run": {
+  "mode": "live",
+  "run_date": "2026-11-23",
+  "news_date": "2026-11-23"
+ },
+ "issue": {
+  "title": "Should AI stand in for one of the two experts who read a breast screen?",
+  "short": "AI BREAST SCREENING",
+  "question": "Should the NHS let an AI take the place of one of the two human experts who read a woman's breast screen, and who should decide?",
+  "summary": "Recruitment has started at Cambridge, the first of 30 hospitals in EDITH, a trial of AI in NHS breast screening, according to BBC reporting carried by the Copenhagen Post. Today two human experts read each screen. Women in the trial are randomly put into one of three groups: two experts as now, or AI used in one of two ways, either to review after the expert or to rate the risk before the experts read. The trial's information says \"All images will be looked at by at least one human expert\", and a woman can decline AI and have two experts read her images without it. Government support is £11 million, and the trial is expected to run about three years.",
+  "summary_sources": [
+   "s1",
+   "s2",
+   "s3"
+  ],
+  "field": "nhs",
+  "owner": "health",
+  "slot": "longest-wait",
+  "slot_reason": "Rule 2: the field nhs has never run, and today's news (23 Nov 2026) has a weight-2 UK item on it (EDITH breast screening trial begins). Rule 1 does not apply: the earliest prediction due (30 Nov 2026) is more than 3 days after 23 Nov. Fields water (10 Nov), energy (17 Nov) and migration (18 Nov) had no weight-2 or weight-3 UK item today. Other never-run fields (defence, tax, schools, ai) also had one, so this is the clerk's choice among them: the clearest values question, who decides whether a machine can stand in for a human check. Eu-trade (21 Nov) and high-street-jobs (22 Nov) ran in the two days before and are excluded.",
+  "news": [
+   {
+    "headline": "AI-assisted NHS breast screening trial begins taking in women, with up to 700,000 to be invited",
+    "memory_id": "ef2ad8b0-164d-4da2-bccd-7bf4ffe490c1",
+    "sources": [
+     "s1",
+     "s2",
+     "s3"
+    ]
+   }
+  ]
+ },
+ "poll": {
+  "pollster": "Focaldata (for King's Health Partners, Responsible AI UK and the Policy Institute at King's College London)",
+  "fieldwork": "24 to 30 March 2026, online",
+  "sample": "2,093 UK adults",
+  "finding": "If an NHS-approved AI system disagreed with a doctor's diagnosis, 55% said a second doctor should review before any decision is made and 7% said they would follow the AI's advice because it may be more accurate. This is not the same question as whether AI should replace one of two screen readers.",
+  "sources": [
+   "s4",
+   "s5"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "UK trial to test AI in breast cancer screening for around 700,000 women (Ritzau, crediting the BBC)",
+   "publisher": "The Copenhagen Post",
+   "date": "2026-11-23",
+   "url": "https://cphpost.dk/2026-11-23/global/uk-trial-to-test-ai-in-breast-cancer-screening-for-around-700000-women/"
+  },
+  {
+   "id": "s2",
+   "title": "EDITH: information for the public",
+   "publisher": "University of Warwick",
+   "date": "2026-11-11",
+   "url": "https://warwick.ac.uk/edith"
+  },
+  {
+   "id": "s3",
+   "title": "World-leading AI trial to tackle breast cancer launched",
+   "publisher": "GOV.UK (DHSC, DSIT and NHS England)",
+   "date": "2025-02-04",
+   "url": "https://www.gov.uk/government/news/world-leading-ai-trial-to-tackle-breast-cancer-launched"
+  },
+  {
+   "id": "s4",
+   "title": "One in seven people have used AI instead of seeing a GP, study finds",
+   "publisher": "King's College London",
+   "date": "2026-05-13",
+   "url": "https://www.kcl.ac.uk/news/one-in-seven-people-have-used-ai-instead-of-seeing-a-gp-study-finds"
+  },
+  {
+   "id": "s5",
+   "title": "Seventh of the public using AI for health advice",
+   "publisher": "Research Live",
+   "date": "2026-05-14",
+   "url": "https://www.research-live.com/article/news/seventh-of-the-public-using-ai-for-health-advice/id/5149323"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "sim-clerk"
+  ]
+ }
+}

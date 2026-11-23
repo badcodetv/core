@@ -1,0 +1,17 @@
+{
+  "split_question": "Should the NHS let an AI take the place of one of the two human experts who read a woman's breast screen?",
+  "angles": [
+    "yes, once the trial shows it finds as many cancers, and keep one human reader",
+    "no, keep two human readers and use AI only as an extra check",
+    "let each woman choose, and tell her plainly which kind of screen she is getting"
+  ],
+  "facts_for_writers": [
+    "Women aged 50 to 71 are screened every three years, about 2.1 million screens a year, and the programme says it prevents about 1,300 deaths; breast cancer has about 55,000 diagnoses a year. [s3]",
+    "The government said that if the trial succeeds, it \"could free up hundreds of radiologists and other specialists across the country\". [s3]",
+    "The trial will count cancers found (number, size and type), recalls for further tests, interval cancers, performance across different groups of women, NHS workload, and the views of women and screening staff. [s2]",
+    "The trial co-lead Professor Sian Taylor-Phillips told the BBC the team wants to avoid overdiagnosis of milder disease that would never have caused symptoms. [s1]",
+    "76% of UK adults said AI tools used in patient care should be officially approved and regulated. [s5]"
+  ],
+  "extra_sources": [],
+  "notes": "The poll is the nearest real one found, not the same question: no UK poll was found on AI replacing one of two screen readers. real_share is left unset. The Warwick page is dated 11 Nov 2026 and does not itself say recruitment has begun; that comes from the Copenhagen Post (Ritzau, crediting the BBC) only, and the BBC page itself was not opened. The Warwick page gives 660,000 women across 30 centres; the Post says about 700,000. Facts 1 and 2 come from a Feb 2025 page, so the figures are as of then. Fact 5 is from Research Live, which cites the King's study."
+}
