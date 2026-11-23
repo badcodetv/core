@@ -22,5 +22,13 @@
   "url": "https://claude.ai/artifact/KvpYixAvZKWBeRofPiLWvv",
   "what": "Clips r1: 16 clips, own sound checked, Claude's picks marked",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-by-the-balls/scenes/by-the-balls/clips-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-23T15:07:52+00:00",
+  "stage": "clips",
+  "round": 2,
+  "url": "https://claude.ai/artifact/KvpYixAvZKWBeRofPiLWvv",
+  "what": "Clips r2: LIMP claw view and wide, UNLOCK, WIN",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-by-the-balls/scenes/by-the-balls/clips-r2-picks.json <out.html>"
  }
 ]

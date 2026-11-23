@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-WINd-WIN.mp4",
+ "made": "2026-11-23T15:06:19+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Very slight slow push-in. Both of them raise the little white house with the red roof just above the edge of the hatch, holding it between them at the same height, and smile, his eyes on her, hers on the house. Little else moves. The hatch stays exactly as in the frame, its dark opening open and visible below the house until the last frame. They stay crouched in place; the machine and everything behind the glass stay still. Sound: a light scrape of plastic on metal, soft fabric rustle, low room tone.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/WIN.jpg",
+ "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/WIN.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "WINd",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:05:13.531Z"
+ }
+}

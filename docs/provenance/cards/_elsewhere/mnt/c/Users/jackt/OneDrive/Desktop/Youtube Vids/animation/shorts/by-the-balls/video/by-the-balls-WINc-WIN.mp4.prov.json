@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-WINc-WIN.mp4",
+ "made": "2026-11-23T15:06:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera locked. Kneeling either side of the prize hatch, they lift the small white house with the red roof a few centimetres up out of the opening together, both of them still holding it, and their smiles widen as they look at each other. Their knees and bodies stay where they are. The hatch's dark square opening stays open behind their hands for the whole clip. The machine, the houses and coins behind the glass and the room do not move. Sound: a soft plastic tap, a rustle of sleeves, faint arcade hum.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/WIN.jpg",
+ "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/WIN.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "WINc",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:05:13.821Z"
+ }
+}

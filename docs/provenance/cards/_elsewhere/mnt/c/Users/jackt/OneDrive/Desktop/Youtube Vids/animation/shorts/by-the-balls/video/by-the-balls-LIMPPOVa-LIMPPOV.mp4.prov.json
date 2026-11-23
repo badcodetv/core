@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-LIMPPOVa-LIMPPOV.mp4",
+ "made": "2026-11-23T15:05:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked overhead camera inside the glass, looking straight down past the open prongs. The white house with the red roof falls away from the camera, growing smaller as it drops, turning slowly a quarter turn, and lands on the pile with one small bounce, then lies still. The prongs at the top edge stay open and motionless. Every coin, banknote and other house in the pile holds exactly in place, even where the white house lands. The machine and the camera stay perfectly still. Sound: a short whoosh of air, then a light plastic clack on metal coins over a low arcade hum.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+ "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "LIMPPOVa",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:04:36.660Z"
+ }
+}

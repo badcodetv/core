@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-LIMPPOVb-LIMPPOV.mp4",
+ "made": "2026-11-23T15:05:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Overhead view from just above the claw, looking straight down, with a very slight, slow push downward. The white house drops away from the camera in slow motion, tumbling gently, shrinking toward the pile, and settles on top of it on its side, then stays put. The open prongs at the top edge do not move. The pile below is frozen: houses, coins and rolled banknotes stay exactly where they are for the whole clip. Only the white house moves. Sound: a faint mechanical tick, a soft rush of falling, a single hollow plastic knock on coins, steady room tone.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+ "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "LIMPPOVb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:04:23.000Z"
+ }
+}

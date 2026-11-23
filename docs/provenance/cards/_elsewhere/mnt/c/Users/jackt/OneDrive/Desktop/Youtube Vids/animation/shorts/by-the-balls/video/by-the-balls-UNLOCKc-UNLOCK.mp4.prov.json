@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-UNLOCKc-UNLOCK.mp4",
+ "made": "2026-11-23T15:06:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera locked. His gloved hand swings the round steel cover the rest of the way open on its hinge to the right, then lets go; the cover stops and stays. The ring of keys hanging below sways a little and settles. His masked head stays angled down toward the dial, exactly as in the frame. The dial behind stays the same dial the whole time: the same smooth pale face, the same single short needle pointing right, unchanged. The houses and coins on the shelf above stay still. Sound: a low metal hinge creak, soft key jingle, arcade room hum.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/UNLOCK.jpg",
+ "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/UNLOCK.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "UNLOCKc",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:04:47.166Z"
+ }
+}
