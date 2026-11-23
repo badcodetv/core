@@ -1,19 +1,26 @@
 {
- "round": 3,
+ "round": 5,
  "plan": [
   {
-   "h": "Rough cut 3: Jack's chat notes (2026-11-23)",
+   "h": "Why the lip-sync kept failing (found and fixed)",
    "items": [
-    "Lip-sync fixed. Measured cut 2 on the assembled film: all three \"I'm out\"s were 0.25 to 0.33 s early, and the nurse was off phrase by phrase. The voices stay where they were; each talking clip now starts where its mouth opens just before its voice (the three investors and the minister's pitch).",
-    "The nurse re-voiced in her locked voice, words unchanged, without pause tags: her clip barely pauses, so a plain read matches her mouth phrase for phrase (\"One ward\" on her pursed lips, then \"Six months\", the middle line, and \"you stop paying me\" landing on the p and m).",
-    "End card: the National Audit Office finding, as first pitched: only 8% of £432 billion of the government's biggest projects had a robust plan to find out if they worked (Evaluating government spending, HC 860, Dec 2021, read at source)."
+    "The Den's mix script dropped the silence before the first line, so every voice in rough cuts 1 to 3 played 0.35 s early against the picture. I proved it by matching each take against the voice track: all nine lines were 0.35 s early. Fixed with a silent bed from 0; every line now lands within 7 ms of its plan.",
+    "This page also played every voice two frames (0.08 s) early: the full-quality stream's picture started at 0.083 s. Fixed in the page builder for every timeline page from now on.",
+    "No pollution: the talking prompts carry only The Den's own words (same-prompt check)."
+   ]
+  },
+  {
+   "h": "Rough cut 5",
+   "items": [
+    "The three \"I'm out\"s and \"good feeling\" measure in sync; the nurse's voice sits 0.08 s behind her mouth phrase by phrase.",
+    "Music: your pick (piano and clock, take 1), ducked under the voices and faded at the end.",
+    "End card: the National Audit Office finding."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Music: four pitch-show-style beds are being made on Suno; links to follow.",
-    "The minister's head turns away mid-pitch for a moment (in cut 2 too): keep, or cut to the panel there?",
+    "The minister's pitch: his clip says \"Every teenager in the country\" faster than the voice, then grins while the voice finishes, and turns his head away for a moment. The fix is a re-shoot as two shorter talking clips (a Flow video round): say go.",
     "Trim toward ~20 s: which beats or lines go?"
    ]
   }

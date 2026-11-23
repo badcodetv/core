@@ -45,9 +45,14 @@ LINES = {
 }
 NAMES = {'narrator': 'Narrator', 'minister': 'The minister', 'badcode': 'BadCode', 'nurse': 'The nurse',
          'inv-a': 'Investor A', 'inv-c': 'Investor C', 'inv-d': 'Investor D'}
-PITCH_IN = 1.042  # MIN1a, refit 2026-11-23 on the tracked mouth (den_refit.py; r2's 1.68 measured off on the assembled cut)
+PITCH_IN = 0.69  # r5: 1.042 minus the 0.352 s mix shift; MIN1a, refit 2026-11-23 on the tracked mouth (den_refit.py; r2's 1.68 measured off on the assembled cut)
 GLASS = dict(cx=540, cy=820, w=560, fade=0.5)  # the logo's place on the GLASSa window (1080x1920 px)
 # Jack, 2026-11-22: "an outro where it goes onto the factory glass and the condensation spells out badcode with the logo"
+# Round 5 (2026-11-23): every talking in-point minus 0.352 s, the mix shift they had been fitted against (the nurse's 0.8
+# was fitted in planned time and stays). Round 4: the feeling's in-point 2.8 -> 2.9 (a larger in-point shows the mouth EARLIER, so the voice lands later:
+# r3 measured it 0.125 s early; the I'm-outs measured +0.083 s late in r3 and stay), and the music bed: Jack's pick piano-a (music r1 picks page), recorded from the player.
+MUSIC = AUD / 'music/den-music-r1-lone-piano-clock-v6-w20-ef69e318.wav'
+MUS_GAIN, MUS_FADE = -9, 1.5  # dB under the voices before ducking; fade-out at the end (s)
 TALK = {'MIN1a', 'MIN2a', 'INVAb', 'INVCa', 'INVDa', 'NURSEc'}  # their own audio is Omni's voice: muted, room laid under
 # (beat, title, clip key, still, in, dur, hold-first-frame, [(line, the take FILE's start, s into the shot)], what we see)
 # The pitch: the take runs whole from the panel shot; the cut to MIN1a falls in the pause before "Every teenager" (voice
@@ -61,10 +66,10 @@ SHOTS = [
     ('pitch', '2. The pitch', 'MIN1a', 'MIN', PITCH_IN, 2.9, 0, [], 'On the mark, all teeth'),
     ('react', '2. The pitch', 'WIDEa', 'WIDE', 0.5, 1.5, 0, [], 'The panel, over "Scare them straight"'),
     ('ask', '3. How will you know?', 'BCASKa', 'BC', 0.6, 2.6, 0, [('03', 0.15)], 'BadCode leans in'),
-    ('feeling', '4. A good feeling', 'MIN2a', 'MIN', 2.8, 2.6, 0, [('04', 0.608)], 'The grin holds'),
-    ('outa', '5. I\'m out', 'INVAb', 'INVA', 1.896, 1.5, 0, [('05a', 0.407)], 'Investor A'),
-    ('outc', '5. I\'m out', 'INVCa', 'INVC', 3.563, 1.5, 0, [('05c', 0.439)], 'Investor C'),
-    ('outd', '5. I\'m out', 'INVDa', 'INVD', 3.272, 1.5, 0, [('05d', 0.415)], 'Investor D'),
+    ('feeling', '4. A good feeling', 'MIN2a', 'MIN', 2.548, 2.6, 0, [('04', 0.608)], 'The grin holds'),
+    ('outa', '5. I\'m out', 'INVAb', 'INVA', 1.544, 1.5, 0, [('05a', 0.407)], 'Investor A'),
+    ('outc', '5. I\'m out', 'INVCa', 'INVC', 3.211, 1.5, 0, [('05c', 0.439)], 'Investor C'),
+    ('outd', '5. I\'m out', 'INVDa', 'INVD', 2.92, 1.5, 0, [('05d', 0.415)], 'Investor D'),
     ('nurse', '6. The nurse', 'NURSEc', 'NURSE', 0.8, 7.0, 0, [('06', 0.03)], 'One ward, six months'),
     ('in', '7. I\'m in', 'BCINa', 'BC', 4.0, 3.2, 0, [('07', 1.6)], 'BadCode leans right in'),
     ('card', '8. The evidence', None, None, 0, 5.0, 0, [], 'The National Audit Office finding'),
@@ -150,7 +155,11 @@ def main():
     for k, (at, w, tempo) in enumerate(vox):
         ins += ['-i', w]; ms = int(at * 1000)
         fl.append(f'[{k}]aresample=48000,aformat=channel_layouts=stereo,atempo={tempo},adelay={ms}|{ms}[s{k}]')
-    fl.append(f"{''.join(f'[s{k}]' for k in range(len(vox)))}amix=inputs={len(vox)}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]")
+    # 🔴 A silent bed from 0 as the mix's first input (2026-11-23, Jack: "see why the lip syncing is not working"): without it amix
+    # started at the earliest line (the narrator, 0.35 s) and the WAV dropped that gap, so EVERY voice in rough cuts 1-3 played
+    # 0.35 s early against the picture and the planned times. Measured by cross-correlating each take against vox.wav.
+    k0 = len(vox); ins += ['-f', 'lavfi', '-t', total, '-i', 'anullsrc=r=48000:cl=stereo']
+    fl.append(f"[{k0}][{']['.join(f's{k}' for k in range(len(vox)))}]amix=inputs={len(vox) + 1}:normalize=0,apad=whole_dur={total},atrim=end={total}[o]")
     ff(*ins, '-filter_complex', ';'.join(fl), '-map', '[o]', '-ar', 48000, cut / 'vox.wav')
     ins, fl = [], []
     for k, (at, s, iin, ilen) in enumerate(room):
@@ -161,14 +170,23 @@ def main():
     ff(*ins, '-filter_complex', ';'.join(fl), '-map', '[o]', '-ar', 48000, cut / 'amb-room.wav')
     audio = [{'track': 'A1', 'name': 'vox', 'file': str(cut / 'vox.wav')},
              {'track': 'A2', 'name': 'amb-room', 'file': str(cut / 'amb-room.wav')}]
-    ff('-i', audio[0]['file'], '-i', audio[1]['file'], '-filter_complex',
-       '[0][1]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5,alimiter=limit=0.84:level=0[o]', '-map', '[o]', '-ar', 48000, '-ac', 2, cut / 'mix.wav')
+    if MUSIC.exists():  # the bed, ducked under the voices (sidechain on the vox stem), faded out at the end
+        ff('-i', MUSIC, '-i', cut / 'vox.wav', '-filter_complex',
+           f'[0]aresample=48000,aformat=channel_layouts=stereo,volume={MUS_GAIN}dB,atrim=end={total},'
+           f'afade=t=out:st={total - MUS_FADE}:d={MUS_FADE}[m];[1]aformat=channel_layouts=stereo[k];'
+           '[m][k]sidechaincompress=threshold=0.03:ratio=5:attack=25:release=350:makeup=1[o]',
+           '-map', '[o]', '-ar', 48000, cut / 'mus-bed.wav')
+        audio.append({'track': 'A3', 'name': 'mus-bed', 'file': str(cut / 'mus-bed.wav')})
+        events.append({'stem': 'mus-bed', 't': 0.0, 'dur': total, 'what': "Music: Jack's pick (piano and clock, take 1)", 'src': MUSIC.name})
+    n = len(audio)
+    ff(*[x for a in audio for x in ('-i', a['file'])], '-filter_complex',
+       f"{''.join(f'[{k}]' for k in range(n))}amix=inputs={n}:normalize=0,loudnorm=I=-14:TP=-1.5,alimiter=limit=0.84:level=0[o]", '-map', '[o]', '-ar', 48000, '-ac', 2, cut / 'mix.wav')
     ff('-i', cut / 'picture.mp4', '-i', cut / 'mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-t', total, cut / 'preview.mp4')
     edl = {'sequence': f'short-the-den-1-the-den-r{a.round}', 'title': 'The Den Timeline',
            'heading': f'BadCode Shorts ▲ The Den, rough cut {a.round}',
            'intro': 'A TV pitch-show parody: a minister wants £2bn to scare teenagers straight on a good feeling; everyone is out. A nurse offers one ward and the number that proves her wrong; BadCode is in. The evidence closes it.',
            'fps': FPS, 'total': total, 'beats': beats, 'video': vids, 'audio': audio, 'events': events,
-           'flags': ['No music yet.',
+           'flags': ["Music: Jack's pick (piano and clock, take 1), ducked under the voices.",
                      'Lip-sync round 3: voices unchanged, each talking clip\'s in-point moved so the mouth opens just before its voice (scripts/shorts/den_refit.py; measured on the assembled cut with row-measure.py).',
                      'End card: the NAO finding (Evaluating government spending, HC 860, Dec 2021), read at source.']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))

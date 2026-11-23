@@ -34,8 +34,9 @@ Status: EXPLORING (stills not made). Flow project: `c9bd669c-40b7-4009-b17c-24f3
 - **The nurse**: invented; scrubs, a clipboard.
 
 ## Sound
-Music: EXPLORING. Jack, 2026-11-23: "please make dragons den like backround music. thanks": an instrumental bed under the
-dialogue with the feel of that kind of show (never its theme or any copy of it). Round 1: `songs/music-r1/` (variations).
+Music: LOCKED (Jack, 2026-11-23, picks page https://claude.ai/artifact/H48CK4HxJD6v1LGHqQ8y3c): **piano-a**, `den-music-r1-lone-piano-clock-v6-w20`
+https://suno.com/song/ef69e318-27b7-43c0-a92f-8013d2e2ed43 (its prompt verbatim in `songs/music-r1/round.json`, `lone-piano-clock`), recorded to the
+media folder's `audio/music/`; laid under the whole cut at -9 dB, ducked under the voices. His ask: "please make dragons den like backround music".
 Any Suno track is music and sound effects only, workspace `short-the-den`.
 Voices LOCKED (Jack, 2026-11-22, voices page https://claude.ai/artifact/FjVZTA2eaYAZtZJpmKf7oc): Google library voices,
 plain reads on `gemini-3.8-flash-tts`, no style. Narrator `en-gb-podcaster-2`; minister `en-gb-tutor-9`; nurse
@@ -45,7 +46,7 @@ Investor D `en-gb-assistant-6`. Line takes in the media folder's `audio/lines/` 
 
 ## Outro
 The den's factory window (Flow clip GLASSa) steams up and the condensation clears in the exact shape of the brand
-logo file, then resolves into the full logo (`scripts/shorts/den_glass_logo.py`; Jack, 2026-11-22). State: rough cut 3
+logo file, then resolves into the full logo (`scripts/shorts/den_glass_logo.py`; Jack, 2026-11-22). State: rough cut 5
 (42.8 s) on https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6.
 
 ## Story-only rules

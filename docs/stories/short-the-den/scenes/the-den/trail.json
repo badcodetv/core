@@ -73,5 +73,16 @@
   "url": "https://claude.ai/artifact/H48CK4HxJD6v1LGHqQ8y3c",
   "what": "Music r1 picks page: 8 Suno takes (4 ideas x 2), links out",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/music-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-23T12:20:39+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6",
+  "what": "Rough cut 5: voice mix offset fixed (0.35 s), page stream offset fixed, music piano-a in",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-den/scenes/the-den <out-dir>",
+  "decided": [
+   "please fix the lip syncing, check for pollution and see why the lip syncing is not working when it usually does thanks"
+  ]
  }
 ]

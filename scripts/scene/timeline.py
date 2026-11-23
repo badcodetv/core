@@ -49,10 +49,13 @@ def build(data, preview, out):
             '-c:a', 'aac', '-b:a', '64k', '-ac', '2', '-movflags', '+faststart', proxy)
     # Full-quality copy (Jack 2026-11-05: "why is the video in such low quality"): one fragmented MP4 at 720p, cut into byte pieces
     # under the 15 MB file limit; the page streams them back together with Media Source Extensions (cut.mp4 stays as the fallback).
+    # -bf 0 (2026-11-23, The Den, Jack: "see why the lip syncing is not working"): with B-frames the fragmented file's video
+    # started at 0.083 s and its audio at 0 (no edit list in a fragmented MP4), so every page played the voices two frames
+    # EARLY against the picture. No B-frames: both start at 0.
     hq = media / 'hq.mp4'
     if not hq.exists() or hq.stat().st_mtime < preview.stat().st_mtime:
         _ff('-i', preview, '-vf', 'scale=1280:-2', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-maxrate', '4000k', '-bufsize', '8000k',
-            '-profile:v', 'high', '-level', '4.0', '-pix_fmt', 'yuv420p', '-g', '48', '-c:a', 'aac', '-b:a', '128k', '-ac', '2',
+            '-profile:v', 'high', '-level', '4.0', '-pix_fmt', 'yuv420p', '-g', '48', '-bf', '0', '-c:a', 'aac', '-b:a', '128k', '-ac', '2',
             '-movflags', 'frag_keyframe+empty_moov+default_base_moof', hq)
         for old in media.glob('hq-*.mp4'): old.unlink()
         blob, size = hq.read_bytes(), 14_000_000
