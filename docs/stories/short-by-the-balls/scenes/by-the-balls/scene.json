@@ -22,5 +22,23 @@
   },
   "boards": {
     "timeline": "https://claude.ai/artifact/DXKshcwZZ21LCwNniyV83x"
+  },
+  "premiere": {
+    "current": "r2",
+    "r2": {
+      "sequence": "short-by-the-balls-1-by-the-balls-r2",
+      "guid": "acbf6f64-718a-43f1-8830-16c3be0c3646",
+      "bin": "short-by-the-balls-1-by-the-balls-r2",
+      "built": "2026-11-23",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/by-the-balls.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cut/r2/edl.json",
+      "what": "rough cut 2: hockey logo outro, the realistic fall",
+      "how": "premiere-plan.py --tag r2",
+      "check": {
+        "at": "2026-11-23T15:30",
+        "state": "in sync",
+        "why": ""
+      }
+    }
   }
 }

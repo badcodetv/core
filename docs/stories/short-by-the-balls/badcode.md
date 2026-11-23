@@ -49,5 +49,10 @@ Voice: LOCKED (Jack, 2026-11-23): BadCode = Google library voice `en-gb-csagent-
   motion, write that the mask keeps facing the camera and check the triangle zoomed in at three points per clip. No
   mouth, so its lines need no lip-sync.
 
+## State
+Rough cut 2 (23.7 s) on https://claude.ai/artifact/DXKshcwZZ21LCwNniyV83x; in Premiere `short-by-the-balls-1-by-the-balls-r2`
+(in sync) and on Drive (agreed cut). Outro: the logo printed on an air hockey table (`scripts/shorts/btb_hockey_logo.py`).
+Cut script `scripts/shorts/btb_cut.py`. Clips https://claude.ai/artifact/KvpYixAvZKWBeRofPiLWvv; stills https://claude.ai/artifact/61dzwTLv6Yp4yALDYmFfpn.
+
 ## Where the detail is
 [README.md](./README.md) · [look.md](./look.md) · [sound.md](./sound.md) · rulings [scenes/by-the-balls/picks.md](./scenes/by-the-balls/picks.md)

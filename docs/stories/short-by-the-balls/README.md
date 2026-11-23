@@ -21,7 +21,12 @@ Carlin's "The Owners"; his audio is never used.
 | Step | State |
 | --- | --- |
 | Set up (Drive `Shorts/By the Balls`, folder, repo) | done 2026-11-23 |
-| Beats / script | ⬜ |
-| Look | Not decided (Real photo as the look: Unsplash layouts) |
-| Sound | Not decided |
-| Stills · clips · cut | ⬜ |
+| Beats | agreed: the way out is the land-price dial (Jack: "land price") |
+| Look | real-photo arcade, start frames locked (`moodboard/`) |
+| Voice / music | BadCode `en-gb-csagent-11`; music fm-a (cabinet attract loop) |
+| Clips | picked (clips page https://claude.ai/artifact/KvpYixAvZKWBeRofPiLWvv) |
+| Cut | rough cut 2 (23.7 s) https://claude.ai/artifact/DXKshcwZZ21LCwNniyV83x; in Premiere `short-by-the-balls-1-by-the-balls-r2` (in sync); on Drive (agreed cut, 53 files) |
+| Owed | label wording ok, trim toward ~20 s (if wanted), the fact read at source, export, release title |
+
+## Pull it (other machine)
+git pull → `scripts/drive/drive.sh where short-by-the-balls "<folder>"` → `scripts/drive/push-agreed.sh`'s pair `drive.sh pull short-by-the-balls --go` → open `by-the-balls.prproj` at sequence r2.
