@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/audio/music-r1/fj-sound-r1-hard-funk-v6-w45-311a082b.wav",
+ "made": "2026-11-23T20:36:46.939Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "311a082b-56f9-4f6b-ab8e-218baeb48b12",
+ "inputs": {
+  "title": "fj-sound-r1-hard-funk-v6-w45",
+  "song": "https://suno.com/song/311a082b-56f9-4f6b-ab8e-218baeb48b12"
+ },
+ "settings": {
+  "durationSec": 27.96
+ }
+}
