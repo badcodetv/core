@@ -1,0 +1,7 @@
+{
+ "story": "short-by-the-balls",
+ "note": "A short is one scene (new-short); this file only lets scripts/scene/premiere-check.py find it.",
+ "sections": [
+  {"id": "by-the-balls", "title": "By the Balls", "scene": "scenes/by-the-balls", "timeline": ""}
+ ]
+}
