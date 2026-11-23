@@ -58,5 +58,17 @@
   "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
   "what": "Clips r2: masks fixed on clips 1 and 5 (2 takes each)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/clips-r2-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-23T18:46:26+00:00",
+  "stage": "clips",
+  "round": 5,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "Clips r1 board read",
+  "decided": [
+   "2a 3a 4a; 6b (Jack overrules 6a); clips 1 and 5: fix eye holes"
+  ],
+  "feedback": "feedback/clips-r5",
+  "feedback_docs": 22
  }
 ]
