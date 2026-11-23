@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-23T17:11:22+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "Stills r1: 2 crew portraits + 15 stills (3 way-out ideas), Claude's picks marked",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/stills-r1-picks.json <out.html>"
+ }
+]

@@ -1,0 +1,37 @@
+{
+ "title": "The Fredo Job Look Refs",
+ "eyebrow": "The Fredo Job · look references",
+ "heading": "The Fredo Job: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "laser grid security",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Y55UFwhjpf4",
+       "src": "unsplash/Y55UFwhjpf4.jpg",
+       "label": "Green grid pattern on a light gray background · Logan Voss"
+      },
+      {
+       "id": "xGb_kVL2AFM",
+       "src": "unsplash/xGb_kVL2AFM.jpg",
+       "label": "black and red metal frame · Tobias Kordt"
+      },
+      {
+       "id": "9aDgTPIVWKA",
+       "src": "unsplash/9aDgTPIVWKA.jpg",
+       "label": "a red abstract background with lines · Alex Quezada"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

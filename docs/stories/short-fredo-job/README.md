@@ -23,6 +23,8 @@ elsewhere"; Jack picked it anyway.
 | --- | --- |
 | Set up (Drive `Shorts/The Fredo Job`, folder, repo) | done 2026-11-23 |
 | Way out | done 2026-11-23: money that keeps up |
-| Beats | ⬜ |
+| Prices | done 2026-11-23: numbers.md |
+| Script | draft 1 (brief.md), jokes owed |
+| Stills | round 1 on https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM |
 | Look | Heist and caper, real-photo layouts; not found yet |
 | Sound | Not decided |

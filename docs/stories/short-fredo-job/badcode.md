@@ -12,7 +12,7 @@ money that keeps up: the crew's pay or savings ticks up with the price, so the n
 
 ## Look
 Heist and caper (library, below), on real-photo layouts. Not found yet: stills to come.
-Flow project: none yet. Stills Nano Banana 2.1, 9:16.
+Flow project: `8f55f330-03fa-409a-a911-9dd5b9c6693b` ("Nov 23 - 16:57"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
 Not decided — run story-style. Any Suno track is music and sound effects only (workspace `short-fredo-job`); every
