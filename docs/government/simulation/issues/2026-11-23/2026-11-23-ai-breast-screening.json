@@ -3,7 +3,7 @@
  "id": "2026-11-23-ai-breast-screening",
  "simulated": true,
  "stamp": "SIMULATED",
- "stage": "gate",
+ "stage": "jury",
  "run": {
   "mode": "live",
   "run_date": "2026-11-23",
@@ -87,7 +87,8 @@
    "sim-clerk",
    "sim-citizens",
    "sim-bench",
-   "sim-gate"
+   "sim-gate",
+   "sim-jury"
   ]
  },
  "citizens": {
@@ -484,5 +485,58 @@
   "verdict": "No answer passes every test and limit: A fails two, and the rest turn on evidence that does not exist yet, since whether AI finds as many cancers is what EDITH is running to learn. What cannot be settled by facts is who bears the risk of a possible miss and who controls scans held by firms.",
   "to_jury": true,
   "rejected_claims": []
+ },
+ "jury": {
+  "seed": "2026-11-23-ai-breast-screening/jury",
+  "size": 12,
+  "ids": [
+   "c0773",
+   "c0704",
+   "c0409",
+   "c0000",
+   "c0627",
+   "c0170",
+   "c0248",
+   "c0166",
+   "c0688",
+   "c0468",
+   "c0930",
+   "c0448"
+  ],
+  "model": "claude-haiku-5-5",
+  "question": "If AI replaces one of two expert readers, who should carry the risk of a missed cancer, and who should hold the scans?",
+  "options": [
+   "Trial it, with no cuts and no firm profiting",
+   "Local women get a veto before their hospital joins",
+   "Only NHS-owned AI, and strict stop numbers",
+   "Keep two human experts for every woman"
+  ],
+  "votes": [
+   4,
+   2,
+   3,
+   3
+  ],
+  "ruling": "Trial it, with no cuts and no firm profiting (4 of 12). Jurors wanted the test run on real women before anyone takes the risk, and the no-cuts and no-profit rules mattered most to them.",
+  "reasons": [
+   {
+    "juror": "c0000",
+    "text": "Two proper doctors looking at my pictures, like before. That's what I trust."
+   },
+   {
+    "juror": "c0627",
+    "text": "Local women should have a say before the hospital signs up. It's our body."
+   },
+   {
+    "juror": "c0170",
+    "text": "Keep it NHS-owned. I don't want a firm making money off my scans."
+   },
+   {
+    "juror": "c0704",
+    "text": "Trial it, but test it properly on real women first and don't cut any staff."
+   }
+  ],
+  "review": "2027-11-23",
+  "real_jury": false
  }
 }
