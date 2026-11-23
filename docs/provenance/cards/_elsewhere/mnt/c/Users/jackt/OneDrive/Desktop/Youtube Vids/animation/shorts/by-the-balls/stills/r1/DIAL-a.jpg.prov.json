@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r1/DIAL-a.jpg",
+ "made": "2026-11-23T13:52:16.902Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Take the attached photo's close, straight-on layout of round fittings set into a flat glossy panel, but make it the front panel of a claw machine at night in a dim arcade, lit by coloured cabinet lights instead of sunshine. One big round chrome-rimmed dial with a single pointer and a plain blank face sits in the panel beside a ball-topped joystick. Four hands of different people reach in together to turn it: a woman's with a gold ring, a man's with a flannel cuff, an older person's, a young one's with a hoodie sleeve. Real-looking photograph. No text, lettering, logos or brand names anywhere in the image.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r1, sealed writer cleanroom/prompts-r1.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-panel.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-panel.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "1d34f44e-af22-48bd-a886-efa9ad6a6927"
+}

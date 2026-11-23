@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r1/PLAY-a.jpg",
+ "made": "2026-11-23T13:51:38.484Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Follow the attached arcade photo's layout and purple machine glow: a tall claw machine fills the left of the frame, its glass box crammed with plain unbranded soft toys and, sitting among them, a small two-storey model family house about the size of a shoebox, white walls and a red roof. In place of the person on the right, the man from the portrait stands side-on, his right hand on the joystick, and the woman from the portrait leans in at his shoulder. Both faces are lit by the machine's light, eyes fixed on the claw, hopeful. Dark arcade behind. Real-looking photograph in a British arcade at night. No text, lettering, logos or brand names anywhere in the image.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r1, sealed writer cleanroom/prompts-r1.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-play.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-play.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-HER.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-HIM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "e8ea0474-cbe1-4711-9270-475948969d97"
+}

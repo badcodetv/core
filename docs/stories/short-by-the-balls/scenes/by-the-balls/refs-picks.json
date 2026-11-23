@@ -1,0 +1,179 @@
+{
+ "title": "By the Balls Look Refs",
+ "eyebrow": "By the Balls · look references",
+ "heading": "By the Balls: pick a real photo to start the look from",
+ "intro": "Real photos from Unsplash, one row per search. Pick one per row (or none) and leave a note on what you like in it.",
+ "sections": [
+  {
+   "h": "Searches",
+   "lede": "Photos by their Unsplash photographers, named under each one.",
+   "groups": [
+    {
+     "slot": "ref-1",
+     "title": "arcade claw machine",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Pyiknp-OOwQ",
+       "src": "unsplash/Pyiknp-OOwQ.jpg",
+       "label": "a group of stuffed animals in a room with colorful lights · Tom Caillarec"
+      },
+      {
+       "id": "dtABV4oOnPs",
+       "src": "unsplash/dtABV4oOnPs.jpg",
+       "label": "yellow and green arcade machine · Ronen Sigan"
+      },
+      {
+       "id": "asNyi71mKSI",
+       "src": "unsplash/asNyi71mKSI.jpg",
+       "label": "a woman standing in front of a vending machine filled with s · Mesha Mittanasala"
+      },
+      {
+       "id": "vY7GQsvkQ5A",
+       "src": "unsplash/vY7GQsvkQ5A.jpg",
+       "label": "A bunch of stuffed animals sitting in a bin · Long (lTiga) Nguyen"
+      },
+      {
+       "id": "JcffIJ39000",
+       "src": "unsplash/JcffIJ39000.jpg",
+       "label": "a bunch of stuffed animals in a display case · Nikolay Loubet"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "claw machine prize close up",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Pyiknp-OOwQ",
+       "src": "unsplash/Pyiknp-OOwQ.jpg",
+       "label": "a group of stuffed animals in a room with colorful lights · Tom Caillarec"
+      },
+      {
+       "id": "asNyi71mKSI",
+       "src": "unsplash/asNyi71mKSI.jpg",
+       "label": "a woman standing in front of a vending machine filled with s · Mesha Mittanasala"
+      },
+      {
+       "id": "vY7GQsvkQ5A",
+       "src": "unsplash/vY7GQsvkQ5A.jpg",
+       "label": "A bunch of stuffed animals sitting in a bin · Long (lTiga) Nguyen"
+      },
+      {
+       "id": "JcffIJ39000",
+       "src": "unsplash/JcffIJ39000.jpg",
+       "label": "a bunch of stuffed animals in a display case · Nikolay Loubet"
+      },
+      {
+       "id": "g3iPyBkN2vw",
+       "src": "unsplash/g3iPyBkN2vw.jpg",
+       "label": "Pokemon Pikachu plush toy in claw machine · Melvina Mak"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "couple playing arcade game",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "gQG5VKXPFaA",
+       "src": "unsplash/gQG5VKXPFaA.jpg",
+       "label": "girl playing arcade game · Brittani Burns"
+      },
+      {
+       "id": "MKQBVn7fShM",
+       "src": "unsplash/MKQBVn7fShM.jpg",
+       "label": "woman in black and white jacket sitting on train seat · Jayson Hinrichsen"
+      },
+      {
+       "id": "Ut0LMsfkBq0",
+       "src": "unsplash/Ut0LMsfkBq0.jpg",
+       "label": "woman in blue denim jacket standing near glass wall · Gabriel Tovar"
+      },
+      {
+       "id": "btZV5I39dZk",
+       "src": "unsplash/btZV5I39dZk.jpg",
+       "label": "People walk through a sunlit arcade with shops · Christina Terzidou"
+      },
+      {
+       "id": "l9rMV6kPf8Q",
+       "src": "unsplash/l9rMV6kPf8Q.jpg",
+       "label": "A man and a woman standing in front of a TV · Alexander Mass"
+      }
+     ]
+    },
+    {
+     "slot": "ref-4",
+     "title": "arcade machine knob dial",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BTsdF8T8hEE",
+       "src": "unsplash/BTsdF8T8hEE.jpg",
+       "label": "a video game machine with a video game on it · Caleb Valencia"
+      },
+      {
+       "id": "yLk0xdQFrQY",
+       "src": "unsplash/yLk0xdQFrQY.jpg",
+       "label": "a close up of a pinball machine with buttons · Zoe Wood"
+      },
+      {
+       "id": "xNyTVjiDXrg",
+       "src": "unsplash/xNyTVjiDXrg.jpg",
+       "label": "a close up of many different colored lights · Jayson Hinrichsen"
+      },
+      {
+       "id": "GRaIEwFhPtM",
+       "src": "unsplash/GRaIEwFhPtM.jpg",
+       "label": "Two colorful buttons on a yellow surface · Gabriel Vasiliu"
+      },
+      {
+       "id": "Cv0E78BiCvc",
+       "src": "unsplash/Cv0E78BiCvc.jpg",
+       "label": "Retro black joystick with red button on dark background · Phil Strahl"
+      }
+     ]
+    },
+    {
+     "slot": "ref-5",
+     "title": "person standing next to arcade machine",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "Ut0LMsfkBq0",
+       "src": "unsplash/Ut0LMsfkBq0.jpg",
+       "label": "woman in blue denim jacket standing near glass wall · Gabriel Tovar"
+      },
+      {
+       "id": "maJCVS9Xm1I",
+       "src": "unsplash/maJCVS9Xm1I.jpg",
+       "label": "A person in a grey fleece hoodie playing a vintage arcade ga · Kade Tyack"
+      },
+      {
+       "id": "sk_ijSqLQYE",
+       "src": "unsplash/sk_ijSqLQYE.jpg",
+       "label": "woman in black hoodie standing in front of arcade machine · Chris Andrawes"
+      },
+      {
+       "id": "a18sYz_l9EM",
+       "src": "unsplash/a18sYz_l9EM.jpg",
+       "label": "Man playing arcade games in a dimly lit room · Christian Agbede"
+      },
+      {
+       "id": "2OiarwOkkf8",
+       "src": "unsplash/2OiarwOkkf8.jpg",
+       "label": "Two men playing pinball machines indoors · Tom Caillarec"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r1/LIMP-b.jpg",
+ "made": "2026-11-23T13:51:21.130Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "The whole claw machine seen front-on as in the attached photo, glass box above and plain panel and chute below, but in a dim British arcade at night with coloured light spilling across the cabinet. Inside the glass, plain unbranded soft toys fill the floor; the chrome claw has stopped near the top, prongs hanging limp and splayed. The small white two-storey model house with a red roof has just landed back on the toys on its side, a few toys knocked aside, well away from the chute. Real-looking photograph. No text, lettering, logos or brand names anywhere in the image.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r1, sealed writer cleanroom/prompts-r1.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-machine.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-machine.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "f9d84be4-6ca8-4d8f-97a3-2ab9efa480bc"
+}

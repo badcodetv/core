@@ -13,7 +13,7 @@ who own the machine. The way out: ⬜ not decided.
 ## Look
 Not decided — run story-style (or a quick pick on the mood board). Each still's layout comes from a real Unsplash photo
 given to Flow as the reference (Library pieces below). 9:16.
-Flow project: none yet.
+Flow project: `ccce50b5-9b07-48f1-a62e-b710b6bc96e1` ("Nov 23 - 13:45"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
 Not decided — run story-style. Any Suno track is music and sound effects only (workspace `short-by-the-balls`); every
@@ -21,7 +21,7 @@ spoken line is an AI Studio voice, cast with voice-casting (English, with a name
 
 ## Cast
 - **BadCode** (Jack, 2026-11-23): on screen in the BadCode balaclava (below), beside the machine; says the line.
-- **The young couple** (Jack, 2026-11-23): one young couple feeding the machine coins. Not cast yet.
+- **The young couple** (Jack, 2026-11-23): one young couple feeding the machine coins; they look like stereotypical millennials (Jack). Not cast yet.
 
 ## Story-only rules
 - Jack and Kai write the jokes: beats say what each moment conveys; joke lines stay blank for them. The one line so far

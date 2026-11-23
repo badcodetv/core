@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r1/GRAB-b.jpg",
+ "made": "2026-11-23T13:50:55.736Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Close inside a claw machine's glass box, after the attached photo's close framing and gentle warm light, seen a little lower and nearer. The chrome three-pronged claw is clamped round a small two-storey model house, pale yellow walls, grey slate roof, white window frames, about the size of a shoebox, lifting it a finger's width off a pile of plain unbranded soft toys in red, cream and pink. Two prongs press the side walls, the third the back. Soft blurred reflections in the glass. Real-looking photograph. No text, lettering, logos or brand names anywhere in the image.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r1, sealed writer cleanroom/prompts-r1.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-claw.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-claw.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "8e6c3363-6b00-489b-a5dc-1d74ca5cdbb5"
+}

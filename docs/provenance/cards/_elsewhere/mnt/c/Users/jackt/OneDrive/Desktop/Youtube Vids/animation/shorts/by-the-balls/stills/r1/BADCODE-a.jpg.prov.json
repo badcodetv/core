@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r1/BADCODE-a.jpg",
+ "made": "2026-11-23T13:52:37.249Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Follow the attached arcade photo's layout and cool blue and pink light: in place of the woman behind the glass, the man from the BadCode portrait stands beside a tall claw machine, facing the camera and looking straight into the lens, gloved hands at his sides. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Small and soft-focus behind him, a young couple stand at another claw machine, one with a hand on the joystick. Rows of glowing machines fade into the dark. Real-looking photograph, British arcade at night.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r1, sealed writer cleanroom/prompts-r1.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-badcode.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-badcode.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-BADCODE.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d306e799-96f5-4177-8dbf-555b39a114b9"
+}

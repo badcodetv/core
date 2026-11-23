@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-HIM.jpg",
+ "made": "2026-11-23T13:48:05.816Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "Head-and-shoulders portrait, 9:16, of an ordinary British man of about thirty-four facing the camera, his face about a third of the frame. Dark hair pulled back into a small bun on top, sides short, and a full, neatly trimmed brown beard. Round tortoiseshell glasses, thick brows, a slightly long nose with a bump on the bridge. He wears a red-and-navy checked flannel shirt open over a plain grey T-shirt, and holds a plain white takeaway coffee cup with a brown sleeve near his chest. Easy, friendly expression. Soft, even light on his face; behind him a dark amusement arcade dissolves into blurred coloured lights. Real-looking photograph, natural skin texture. No text, lettering, logos or brand names anywhere in the image.",
+ "model": "Nano Banana 2.1",
+ "why": "portraits first, sealed writer cleanroom/prompts-r1.json",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "6e928a87-2cf8-498f-a62d-63cc607efcd1"
+}

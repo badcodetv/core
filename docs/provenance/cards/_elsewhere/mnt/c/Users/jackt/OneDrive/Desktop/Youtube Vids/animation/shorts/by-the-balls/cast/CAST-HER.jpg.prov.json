@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-HER.jpg",
+ "made": "2026-11-23T13:48:03.301Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "Head-and-shoulders portrait, 9:16, of an ordinary British woman of about thirty-three facing the camera, her face about a third of the frame. Long light-brown hair with a deep side parting and grown-out honey balayage tucked behind one ear. Straight dark brows, a small upturned nose, light freckles, a little gold hoop in each ear and a white wireless earbud in one. She wears an oversized dusty-pink knit jumper, and the strap of a plain cream canvas tote bag crosses her shoulder. Small, polite half-smile. Soft, even, flattering light on her face; behind her a dark amusement arcade melts into blurred coloured lights. Real-looking photograph, natural skin texture. No text, lettering, logos or brand names anywhere in the image.",
+ "model": "Nano Banana 2.1",
+ "why": "portraits first, sealed writer cleanroom/prompts-r1.json",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b4524b53-fbbe-4632-b013-bbdebecbf622"
+}

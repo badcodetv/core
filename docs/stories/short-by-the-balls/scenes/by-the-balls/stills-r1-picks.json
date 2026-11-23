@@ -1,0 +1,180 @@
+{
+ "title": "By the Balls Stills",
+ "eyebrow": "BadCode Shorts · By the Balls · stills round 1",
+ "heading": "By the Balls: stills, round 1",
+ "intro": "A young couple of millennials feed an arcade claw machine; the claw grabs the little house and goes limp. BadCode: \"It was never broken. It was set.\" Then everyone turns the land-price dial together and the claw holds. Every still follows a real Unsplash photo's layout; prompts by a sealed writer; pollution check clean. Pick one per shot and leave a note.",
+ "sections": [
+  {
+   "h": "Stills",
+   "lede": "Claude's picks are marked; problems are flagged on the still.",
+   "groups": [
+    {
+     "slot": "cast",
+     "title": "The cast (portraits first)",
+     "line": "The references for every still. Jack: \"make sure the young couple look like stereotypical millenials\".",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CAST-HER",
+       "src": "cast/CAST-HER.jpg",
+       "label": "Her",
+       "warn": ""
+      },
+      {
+       "id": "CAST-HIM",
+       "src": "cast/CAST-HIM.jpg",
+       "label": "Him",
+       "warn": ""
+      },
+      {
+       "id": "CAST-BADCODE",
+       "src": "cast/CAST-BADCODE.jpg",
+       "label": "BadCode",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "PLAY",
+     "title": "1. The game: the couple at the machine",
+     "line": "Coin in, the claw goes for the house.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "PLAY-a",
+       "src": "stills/r1/PLAY-a.jpg",
+       "label": "a: he plays, she watches (Claude's pick: the house clear in the glass)",
+       "warn": ""
+      },
+      {
+       "id": "PLAY-b",
+       "src": "stills/r1/PLAY-b.jpg",
+       "label": "b: she plays, he points",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "GRAB",
+     "title": "1. The game: the claw grabs the house",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "GRAB-a",
+       "src": "stills/r1/GRAB-a.jpg",
+       "label": "a: the white house, red roof (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "GRAB-b",
+       "src": "stills/r1/GRAB-b.jpg",
+       "label": "b: lifting it",
+       "warn": "A yellow house: doesn't match the other shots"
+      }
+     ]
+    },
+    {
+     "slot": "LIMP",
+     "title": "1. The game: the claw goes limp",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "LIMP-a",
+       "src": "stills/r1/LIMP-a.jpg",
+       "label": "a: the house falling mid-air (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "LIMP-b",
+       "src": "stills/r1/LIMP-b.jpg",
+       "label": "b: landed back on the toys",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "FACES",
+     "title": "1. The game: the couple deflate",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "FACES-a",
+       "src": "stills/r1/FACES-a.jpg",
+       "label": "a: glasses pushed up, she leans on him",
+       "warn": ""
+      },
+      {
+       "id": "FACES-b",
+       "src": "stills/r1/FACES-b.jpg",
+       "label": "b: hand on forehead, eyes closed (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BADCODE",
+     "title": "2. The reveal: BadCode says the line",
+     "line": "Jack's line: \"It was never broken. It was set.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BADCODE-a",
+       "src": "stills/r1/BADCODE-a.jpg",
+       "label": "a: beside the machine, the couple behind (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "BADCODE-b",
+       "src": "stills/r1/BADCODE-b.jpg",
+       "label": "b: closer, a gloved hand on the panel",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "DIAL",
+     "title": "3. The way out: everyone turns the dial",
+     "line": "The dial label (LAND PRICE: WHAT IT MIGHT BE WORTH → WHAT IT'S WORTH) goes on in post.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "DIAL-a",
+       "src": "stills/r1/DIAL-a.jpg",
+       "label": "a: four hands, an older one among them",
+       "warn": ""
+      },
+      {
+       "id": "DIAL-b",
+       "src": "stills/r1/DIAL-b.jpg",
+       "label": "b: five hands, a big clear dial (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "WIN",
+     "title": "3. The way out: the house in the chute",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WIN-a",
+       "src": "stills/r1/WIN-a.jpg",
+       "label": "a: crouched at the chute, laughing",
+       "warn": "Readable text on the panel (\"TRIPLE CATCHER MEGA…\")"
+      },
+      {
+       "id": "WIN-b",
+       "src": "stills/r1/WIN-b.jpg",
+       "label": "b: lifting it out, the queue cheering behind (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

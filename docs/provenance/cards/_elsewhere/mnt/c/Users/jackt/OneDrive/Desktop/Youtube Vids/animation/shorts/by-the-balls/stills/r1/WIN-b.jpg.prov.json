@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r1/WIN-b.jpg",
+ "made": "2026-11-23T13:52:45.245Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "The lower half of a claw machine, front-on as in the attached photo: plain panel and prize chute, in a British arcade at night. The small white two-storey model house with a red roof has just dropped into the chute. Hands of the man and the woman from the portraits reach in together, fingers touching on the roof; their faces lean in at the top of frame, beaming. Behind them, soft and blurred, a few people from the queue cheer. Real-looking photograph. No text, lettering, logos or brand names anywhere in the image.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r1, sealed writer cleanroom/prompts-r1.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-machine.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-machine.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-HER.jpg",
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-HIM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "1adf7674-ae67-4304-9ea5-1f38f5a770ae"
+}

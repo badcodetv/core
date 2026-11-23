@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-23T13:55:01+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/61dzwTLv6Yp4yALDYmFfpn",
+  "what": "Stills r1: 3 portraits + 14 stills, Claude's picks marked",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-by-the-balls/scenes/by-the-balls/stills-r1-picks.json <out.html>"
+ }
+]

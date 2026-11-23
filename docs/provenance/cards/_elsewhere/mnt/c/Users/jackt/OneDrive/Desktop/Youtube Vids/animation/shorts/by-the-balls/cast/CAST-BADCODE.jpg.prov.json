@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-BADCODE.jpg",
+ "made": "2026-11-23T13:48:24.632Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Head-and-shoulders portrait, 9:16, of a masked man standing square to the camera, his masked head about a third of the frame, facing straight into the lens. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Below the mask he wears a plain dark-navy zip-up bomber jacket over a white crew-neck T-shirt, and black leather gloves; one gloved hand rests at chest height. He stands very still. Soft, even light on him; behind him a dark amusement arcade blurs into soft coloured lights. Real-looking photograph.",
+ "model": "Nano Banana 2.1",
+ "why": "portraits first, sealed writer cleanroom/prompts-r1.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/mask-reference.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c1c71361-3d77-477c-be13-7161bf85109a"
+}
