@@ -3,7 +3,7 @@
  "id": "2026-11-23-ai-breast-screening",
  "simulated": true,
  "stamp": "SIMULATED",
- "stage": "clerk",
+ "stage": "citizens",
  "run": {
   "mode": "live",
   "run_date": "2026-11-23",
@@ -84,7 +84,180 @@
  ],
  "made_by": {
   "workers": [
-   "sim-clerk"
+   "sim-clerk",
+   "sim-citizens"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-23-ai-breast-screening/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0178",
+   "c0645",
+   "c0843",
+   "c0065",
+   "c0190",
+   "c0404",
+   "c0270",
+   "c0391",
+   "c0076",
+   "c0595",
+   "c0836",
+   "c0094",
+   "c0436",
+   "c0097",
+   "c0636",
+   "c0974",
+   "c0600",
+   "c0145",
+   "c0647",
+   "c0215",
+   "c0172",
+   "c0592",
+   "c0887",
+   "c0608",
+   "c0959",
+   "c0036",
+   "c0670",
+   "c0464",
+   "c0804",
+   "c0848",
+   "c0034",
+   "c0255",
+   "c0512",
+   "c0983",
+   "c0742",
+   "c0507",
+   "c0828",
+   "c0074",
+   "c0649",
+   "c0367",
+   "c0765",
+   "c0981",
+   "c0460",
+   "c0483",
+   "c0579",
+   "c0296",
+   "c0856",
+   "c0461",
+   "c0275",
+   "c0587",
+   "c0106",
+   "c0912",
+   "c0480",
+   "c0724",
+   "c0725",
+   "c0706",
+   "c0946",
+   "c0035",
+   "c0344",
+   "c0516",
+   "c0113",
+   "c0207",
+   "c0481",
+   "c0949",
+   "c0498",
+   "c0490",
+   "c0271",
+   "c0729",
+   "c0386",
+   "c0378",
+   "c0226",
+   "c0954",
+   "c0817",
+   "c0020",
+   "c0382",
+   "c0249",
+   "c0486",
+   "c0147",
+   "c0121",
+   "c0153",
+   "c0032",
+   "c0956",
+   "c0940",
+   "c0831",
+   "c0208",
+   "c0835",
+   "c0871",
+   "c0392",
+   "c0354",
+   "c0616",
+   "c0441",
+   "c0187",
+   "c0135",
+   "c0439",
+   "c0290",
+   "c0457",
+   "c0260",
+   "c0319",
+   "c0167",
+   "c0016"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "kind": "test",
+    "text": "Finds at least as many cancers as two readers do.",
+    "backers": 3
+   },
+   {
+    "kind": "test",
+    "text": "Faster results and shorter waits, so fewer women wait months.",
+    "backers": 22
+   },
+   {
+    "kind": "test",
+    "text": "Women are told plainly which screen they are getting.",
+    "backers": 11
+   },
+   {
+    "kind": "test",
+    "text": "A proper trial on real women before it goes wide.",
+    "backers": 16
+   },
+   {
+    "kind": "limit",
+    "text": "Doesn't cut staff, or leave women with no human to ask.",
+    "backers": 42
+   },
+   {
+    "kind": "limit",
+    "text": "Doesn't miss cancers that two readers would catch.",
+    "backers": 19
+   },
+   {
+    "kind": "limit",
+    "text": "Doesn't hand scans or data to private firms to profit from.",
+    "backers": 10
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0215",
+    "who": "19, East of England, a student, owns with a mortgage",
+    "text": "Stop us being guinea pigs for big tech firms."
+   },
+   {
+    "citizen": "c0020",
+    "who": "85, Yorkshire and The Humber, retired, owns with a mortgage",
+    "text": "Two proper doctors looking at my pictures, like before."
+   },
+   {
+    "citizen": "c0034",
+    "who": "27, West Midlands, out of work, owns with a mortgage",
+    "text": "If it finds more cancers, I'm all for it."
+   },
+   {
+    "citizen": "c0386",
+    "who": "28, London, in work, renting from the council or a housing association",
+    "text": "Use the AI, it's in most of my life already."
+   },
+   {
+    "citizen": "c0319",
+    "who": "78, South West, in work, renting from the council or a housing association",
+    "text": "Public ownership of the software, not a private firm."
+   }
   ]
  }
 }

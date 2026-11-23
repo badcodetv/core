@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0178",
+  "wants": "Don't know enough, but keep a doctor in the room.",
+  "limit": "Don't let it be a cost-cutting trick.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0645",
+  "wants": "A proper doctor who looks at me properly.",
+  "limit": "Don't turn my check into a computer's guess.",
+  "split": "no"
+ },
+ {
+  "id": "c0843",
+  "wants": "I want a real person to hold my hand.",
+  "limit": "Don't let it be a computer that talks back.",
+  "split": "no"
+ },
+ {
+  "id": "c0065",
+  "wants": "A machine that doesn't have a bad day, why not?",
+  "limit": "Don't use it as an excuse to cut staff.",
+  "split": "yes"
+ },
+ {
+  "id": "c0190",
+  "wants": "Two readers, the way it always was.",
+  "limit": "Don't lose the local clinic I can walk to.",
+  "split": "no"
+ },
+ {
+  "id": "c0404",
+  "wants": "Efficiency. If one reader can go, let it go.",
+  "limit": "Don't let women get worse care to save a pound.",
+  "split": "yes"
+ },
+ {
+  "id": "c0270",
+  "wants": "An honest leaflet, then I choose.",
+  "limit": "Don't make it sound like nobody's checking.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0391",
+  "wants": "A human I can ring if the result seems off.",
+  "limit": "Don't let the computer's word be final.",
+  "split": "no"
+ },
+ {
+  "id": "c0076",
+  "wants": "Trial it properly, then decide.",
+  "limit": "Don't rush it because the NHS is short of staff.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0595",
+  "wants": "Doctors first. The machine does what it's told.",
+  "limit": "Don't let the NHS sell our data to anyone.",
+  "split": "no"
+ },
+ {
+  "id": "c0836",
+  "wants": "Keep it, if it saves the long waits.",
+  "limit": "Don't leave me waiting months for the letter.",
+  "split": "yes"
+ },
+ {
+  "id": "c0094",
+  "wants": "Let the AI help the doctors, not replace them.",
+  "limit": "Don't let private firms own the software.",
+  "split": "no"
+ },
+ {
+  "id": "c0436",
+  "wants": "Stop the London hospitals getting the new toys first.",
+  "limit": "Don't let it be just the wealthy areas.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0097",
+  "wants": "If the numbers show it's better, use it.",
+  "limit": "Don't let it slow down the queue.",
+  "split": "yes"
+ },
+ {
+  "id": "c0636",
+  "wants": "No opinion, sorry. Just make it work.",
+  "limit": "Don't let it be used to avoid hiring.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0974",
+  "wants": "A human checks every one, always.",
+  "limit": "Don't cut the number of doctors on shift.",
+  "split": "no"
+ },
+ {
+  "id": "c0600",
+  "wants": "Trial it in a few hospitals first.",
+  "limit": "Don't force women onto it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0145",
+  "wants": "Tell me plainly which screen I'm getting.",
+  "limit": "Don't send me the machine without asking.",
+  "split": "yes"
+ },
+ {
+  "id": "c0647",
+  "wants": "If it's proven, fine. If not, drop it.",
+  "limit": "Don't let them decide before the results are in.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0215",
+  "wants": "Stop us being guinea pigs for big tech firms.",
+  "limit": "Don't let the machine be the one that decides.",
+  "split": "no"
+ },
+ {
+  "id": "c0172",
+  "wants": "Doctors are overworked. Use the tech.",
+  "limit": "Don't blame the nurses when it goes wrong.",
+  "split": "yes"
+ },
+ {
+  "id": "c0592",
+  "wants": "Use it where it works, bin it where it doesn't.",
+  "limit": "Don't let the NHS hide the failures.",
+  "split": "yes"
+ },
+ {
+  "id": "c0887",
+  "wants": "I'd want to know. Tell me, and I'll decide.",
+  "limit": "Don't do it without my say-so.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0608",
+  "wants": "Keep the two readers, and get the machine on top.",
+  "limit": "Don't cut any doctors' jobs over it.",
+  "split": "no"
+ },
+ {
+  "id": "c0959",
+  "wants": "Trial it, measure it, and publish what happened.",
+  "limit": "Don't hide the bad news.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0036",
+  "wants": "Computer checks first, a doctor signs it off.",
+  "limit": "Don't push women into it without asking.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0670",
+  "wants": "Keep it to the scans, not the decisions.",
+  "limit": "Don't let it be used to cut clinic hours.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0464",
+  "wants": "Let it read more scans, the NHS needs the hands.",
+  "limit": "Don't let the software be a black box.",
+  "split": "yes"
+ },
+ {
+  "id": "c0804",
+  "wants": "Whatever means fewer women go untreated.",
+  "limit": "Don't let it miss the women who need a second look.",
+  "split": "yes"
+ },
+ {
+  "id": "c0848",
+  "wants": "Anything that gets results quicker, why not?",
+  "limit": "Don't let a private firm get rich off our pictures.",
+  "split": "yes"
+ },
+ {
+  "id": "c0034",
+  "wants": "If it finds more cancers, I'm all for it.",
+  "limit": "Don't let it miss the small ones.",
+  "split": "yes"
+ },
+ {
+  "id": "c0255",
+  "wants": "If it catches cancer earlier, I want it.",
+  "limit": "Don't let it be used as a cheap replacement.",
+  "split": "yes"
+ },
+ {
+  "id": "c0512",
+  "wants": "Shorter waits, that's all. Don't mind how.",
+  "limit": "Don't leave the least well-off with the worse service.",
+  "split": "yes"
+ },
+ {
+  "id": "c0983",
+  "wants": "Public control, and workers have a say in how it's used.",
+  "limit": "Don't let it be sold to whoever pays most.",
+  "split": "no"
+ },
+ {
+  "id": "c0742",
+  "wants": "Faster and cheaper for the NHS, please.",
+  "limit": "Don't make me wait for a machine's decision.",
+  "split": "yes"
+ },
+ {
+  "id": "c0507",
+  "wants": "Use it as a second look, and keep the nurses.",
+  "limit": "Don't let it replace skilled staff.",
+  "split": "no"
+ },
+ {
+  "id": "c0828",
+  "wants": "Haven't a clue. Keep it safe.",
+  "limit": "Don't let my test get worse because of it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0074",
+  "wants": "Keep two pairs of eyes on my screen. Always.",
+  "limit": "Don't let the NHS save money on my check.",
+  "split": "no"
+ },
+ {
+  "id": "c0649",
+  "wants": "Faster checks. I'd take the help.",
+  "limit": "Don't leave any group out of the trial.",
+  "split": "yes"
+ },
+ {
+  "id": "c0367",
+  "wants": "Two sets of eyes, always. I want to be sure.",
+  "limit": "Don't cut back on the staff who take the pictures.",
+  "split": "no"
+ },
+ {
+  "id": "c0765",
+  "wants": "Two doctors, like I've always had. Don't muck about.",
+  "limit": "Don't let it miss my cancer.",
+  "split": "no"
+ },
+ {
+  "id": "c0981",
+  "wants": "Keep it out. The doctors know their job.",
+  "limit": "Don't let the government use us as the test.",
+  "split": "no"
+ },
+ {
+  "id": "c0460",
+  "wants": "Keep the doctor in charge. It's their job.",
+  "limit": "Don't let them tell me I've no choice.",
+  "split": "no"
+ },
+ {
+  "id": "c0483",
+  "wants": "Quicker results. I'd take the robot.",
+  "limit": "Don't let it start missing people.",
+  "split": "yes"
+ },
+ {
+  "id": "c0579",
+  "wants": "Clear rules, and a named person who answers for it.",
+  "limit": "Don't let it be a black box nobody can explain.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0296",
+  "wants": "Trust the doctors, they know their stuff.",
+  "limit": "Don't let it be a cheap way round the staff.",
+  "split": "no"
+ },
+ {
+  "id": "c0856",
+  "wants": "The NHS should be run by doctors, not contracts.",
+  "limit": "Don't let contract firms run the scanning.",
+  "split": "no"
+ },
+ {
+  "id": "c0461",
+  "wants": "Trial it first, then talk about it.",
+  "limit": "Don't do it quietly. Tell people what's going on.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0275",
+  "wants": "Put the money into more doctors, not gadgets.",
+  "limit": "Don't let the machine be the only one looking.",
+  "split": "no"
+ },
+ {
+  "id": "c0587",
+  "wants": "Two readers, same as always. Why change?",
+  "limit": "Don't spend the money on gadgets instead.",
+  "split": "no"
+ },
+ {
+  "id": "c0106",
+  "wants": "Doctors with time to talk to us.",
+  "limit": "No cuts to the screening service.",
+  "split": "no"
+ },
+ {
+  "id": "c0912",
+  "wants": "Quicker checks, less waiting. Do it.",
+  "limit": "Don't let it be used with no checks at all.",
+  "split": "yes"
+ },
+ {
+  "id": "c0480",
+  "wants": "Public money, public software, public results.",
+  "limit": "Don't let a company keep the data.",
+  "split": "no"
+ },
+ {
+  "id": "c0724",
+  "wants": "Doesn't bother me as long as it's accurate.",
+  "limit": "Don't let them skip the human check.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0725",
+  "wants": "Keep two doctors. Simple.",
+  "limit": "Don't let it go wrong and nobody say sorry.",
+  "split": "no"
+ },
+ {
+  "id": "c0706",
+  "wants": "A human reads every scan, even if the machine helps.",
+  "limit": "Don't let it lower the standard to save money.",
+  "split": "no"
+ },
+ {
+  "id": "c0946",
+  "wants": "Doctors who've got time, not gadgets to hide behind.",
+  "limit": "Don't let it be used to cut the team.",
+  "split": "no"
+ },
+ {
+  "id": "c0035",
+  "wants": "Faster results, and a real doctor checks each one.",
+  "limit": "Don't leave women waiting longer for results.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0344",
+  "wants": "Don't care who looks, as long as they're right.",
+  "limit": "Don't make me go through it twice.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0516",
+  "wants": "AI's already in everything, might as well.",
+  "limit": "Don't let it become a reason to drop staff.",
+  "split": "yes"
+ },
+ {
+  "id": "c0113",
+  "wants": "I don't understand the tech. Just get it right.",
+  "limit": "Don't stop my letter in the post.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0207",
+  "wants": "Let women choose, and say what it is.",
+  "limit": "Don't hide the machine in the small print.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0481",
+  "wants": "Check it on Welsh women before it's used here.",
+  "limit": "Don't roll it out before it's shown to work.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0949",
+  "wants": "Trial it properly, with women like me in it.",
+  "limit": "Don't let it miss the older women.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0498",
+  "wants": "Clear consent, and a human I can ask questions.",
+  "limit": "Don't hide the trial from the women in it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0490",
+  "wants": "Keep it out of our hospital, leave the old ways.",
+  "limit": "Don't let it be forced on women.",
+  "split": "no"
+ },
+ {
+  "id": "c0271",
+  "wants": "Doctors should be the ones signing it off.",
+  "limit": "Don't let the trust hide behind a computer.",
+  "split": "no"
+ },
+ {
+  "id": "c0729",
+  "wants": "I want to know what happened to me, every time.",
+  "limit": "Don't let it be secret who read my scan.",
+  "split": "no"
+ },
+ {
+  "id": "c0386",
+  "wants": "Use the AI, it's in most of my life already.",
+  "limit": "Don't let it be a sales pitch from the firm.",
+  "split": "yes"
+ },
+ {
+  "id": "c0378",
+  "wants": "Haven't heard much. Just make it safe.",
+  "limit": "Don't let it be rushed in before the checks.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0226",
+  "wants": "Real doctors, not some box on a screen.",
+  "limit": "Don't waste money on fancy kit we can't keep.",
+  "split": "no"
+ },
+ {
+  "id": "c0954",
+  "wants": "Anything that cuts waiting times, I'm for it.",
+  "limit": "Don't let it miss the signs in younger women.",
+  "split": "yes"
+ },
+ {
+  "id": "c0817",
+  "wants": "Use the tech, cut the waiting list.",
+  "limit": "Don't tell women it's all human when it isn't.",
+  "split": "yes"
+ },
+ {
+  "id": "c0020",
+  "wants": "Two proper doctors looking at my pictures, like before.",
+  "limit": "Don't tell me a computer read them.",
+  "split": "no"
+ },
+ {
+  "id": "c0382",
+  "wants": "Keep the doctor. I want to see a face.",
+  "limit": "Don't tell me it's computers and leave it there.",
+  "split": "no"
+ },
+ {
+  "id": "c0249",
+  "wants": "Let the machine check, but humans make the call.",
+  "limit": "Don't let a trial turn into the default quietly.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0486",
+  "wants": "Whatever gets me seen quicker, I'm fine.",
+  "limit": "Don't let it be a cheap trick by the government.",
+  "split": "yes"
+ },
+ {
+  "id": "c0147",
+  "wants": "Cheaper, quicker checks. Whatever works.",
+  "limit": "Don't let a machine decide on its own.",
+  "split": "yes"
+ },
+ {
+  "id": "c0121",
+  "wants": "A real person must see every scan.",
+  "limit": "Don't hide who answers if it goes wrong.",
+  "split": "no"
+ },
+ {
+  "id": "c0153",
+  "wants": "Get rid of the queues, the machine can stay.",
+  "limit": "Don't let it be used to refuse my check.",
+  "split": "yes"
+ },
+ {
+  "id": "c0032",
+  "wants": "Use the machine to help, but keep two readers.",
+  "limit": "Don't cut doctors to save the government money.",
+  "split": "no"
+ },
+ {
+  "id": "c0956",
+  "wants": "Two readers, please. I've been called back before.",
+  "limit": "Don't make more of us get called back.",
+  "split": "no"
+ },
+ {
+  "id": "c0940",
+  "wants": "A human I can appeal to if I'm turned away.",
+  "limit": "Don't let a machine decide I don't need a check.",
+  "split": "no"
+ },
+ {
+  "id": "c0831",
+  "wants": "Good for rural hospitals that can't staff a second reader.",
+  "limit": "Don't let it be the only reader in small clinics.",
+  "split": "yes"
+ },
+ {
+  "id": "c0208",
+  "wants": "Two doctors on my check. Nobody messes with that.",
+  "limit": "Don't let a computer be the only reader.",
+  "split": "no"
+ },
+ {
+  "id": "c0835",
+  "wants": "Stop experimenting on us. Do the grown-up options.",
+  "limit": "Don't hand the data to firms from abroad.",
+  "split": "no"
+ },
+ {
+  "id": "c0871",
+  "wants": "Let the computer do the boring bit, doctor decides.",
+  "limit": "Don't stop the trial results being published.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0392",
+  "wants": "Let the AI take one reader, if it's accurate.",
+  "limit": "Don't let it go into all the hospitals at once.",
+  "split": "yes"
+ },
+ {
+  "id": "c0354",
+  "wants": "Clear choice, clear label, and the results published.",
+  "limit": "Don't hide what happened to women in the trial.",
+  "split": "yes"
+ },
+ {
+  "id": "c0616",
+  "wants": "Anything that clears the backlog I'm stuck in.",
+  "limit": "Don't let it push people like me to the back.",
+  "split": "yes"
+ },
+ {
+  "id": "c0441",
+  "wants": "Don't care much, just don't let it be rubbish.",
+  "limit": "Don't rush it to the point of it being wrong.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0187",
+  "wants": "A proper trial with real women before anything.",
+  "limit": "Don't let it go national before it's proved.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0135",
+  "wants": "Whatever's quicker, so I'm not waiting months.",
+  "limit": "Don't let women be pushed without a choice.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0439",
+  "wants": "The machine should be a second opinion, nothing more.",
+  "limit": "Don't take jobs off nurses and radiographers.",
+  "split": "no"
+ },
+ {
+  "id": "c0290",
+  "wants": "Use it, but tell me which way I'm going.",
+  "limit": "Don't let it slow the clinic down.",
+  "split": "yes"
+ },
+ {
+  "id": "c0457",
+  "wants": "Cut waiting times, whatever the tech.",
+  "limit": "Don't make it harder to get an appointment.",
+  "split": "yes"
+ },
+ {
+  "id": "c0260",
+  "wants": "Faster appointments and results, that's all I care about.",
+  "limit": "Don't make me wait longer because of it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0319",
+  "wants": "Public ownership of the software, not a private firm.",
+  "limit": "Don't let profit decide who gets a second look.",
+  "split": "no"
+ },
+ {
+  "id": "c0167",
+  "wants": "Keep human readers, add the AI as backup.",
+  "limit": "Don't turn clinics into box-ticking exercises.",
+  "split": "no"
+ },
+ {
+  "id": "c0016",
+  "wants": "A person I can talk to, who knows my name.",
+  "limit": "Don't let a machine decide on its own.",
+  "split": "no"
+ }
+]
