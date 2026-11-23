@@ -1,0 +1,14 @@
+{"split_question": "Should water companies be run in the public sector rather than the private sector?",
+ "angles": ["keep private owners but change the rules and penalties", "change who owns or runs the company", "local or customer control, or a rule that makes good behaviour pay"],
+ "facts_for_writers": [
+  "Storm overflow spills averaged 20.5 per overflow in 2025, down from 31.8 in 2024; the Environment Agency says much of the fall reflects unusually dry weather (s5).",
+  "Ofwat fined Thames Water £122.7m in May 2025; 80% falls due 30 days after a rescue deal, with a backstop of 31 March 2030 (s6).",
+  "Defra's illustrative estimate for nationalising the whole water industry is about £100bn (s7). Frontier Economics, commissioned by Thames Water's creditors, puts it at £144bn in 2030 (s8). Common Wealth argues taking companies through special administration could cost close to zero in law (s9)."
+ ],
+ "extra_sources": [
+  {"id": "s5", "title": "Fewer and shorter storm overflow spills in 2025, new monitoring data shows", "publisher": "GOV.UK (Environment Agency)", "date": "2026-03-26", "url": "https://www.gov.uk/government/news/fewer-and-shorter-storm-overflow-spills-in-2025-new-monitoring-data-shows"},
+  {"id": "s6", "title": "Thames Water to pay fifth of record £122.7m fines by end of September", "publisher": "Hargreaves Lansdown", "date": "2025-08-27", "url": "https://www.hl.co.uk/news/thames-water-to-pay-fifth-of-record-1227m-fines-by-end-of-september"},
+  {"id": "s7", "title": "Nationalising the water sector: how we assessed the cost", "publisher": "GOV.UK (Defra)", "date": "2025-09-16", "url": "https://www.gov.uk/government/publications/nationalising-the-water-sector-how-we-assessed-the-cost/nationalising-the-water-sector-how-we-assessed-the-cost"},
+  {"id": "s8", "title": "New analysis estimates cost of water nationalisation", "publisher": "Frontier Economics", "date": "2026-08-07", "url": "https://www.frontier-economics.com/uk/en/news-and-insights/news/news-article-i22456-new-analysis-estimates-cost-of-water-nationalisation/"},
+  {"id": "s9", "title": "How to Clean Up Our Water: Why Public Ownership in Law Costs Zero", "publisher": "Common Wealth", "date": "2025-06-05", "url": "https://www.common-wealth.org/publications/how-to-clean-up-our-water"}
+ ]}

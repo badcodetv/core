@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0003",
+  "wants": "Cleaner rivers and beaches. That's what I'd want.",
+  "limit": "Bills and rents must not go up because of it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0025",
+  "wants": "Sort the sewage. I don't know much else about it.",
+  "limit": "Don't cut the staff who keep the water running.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0042",
+  "wants": "Make the bosses pay, not the people who live here.",
+  "limit": "Don't let the taxpayer pick up the debts.",
+  "split": "no"
+ },
+ {
+  "id": "c0044",
+  "wants": "Stop the bosses taking money out and leaving us the mess.",
+  "limit": "Taps must not run dry or get cut off.",
+  "split": "no"
+ },
+ {
+  "id": "c0051",
+  "wants": "Clean up the rivers and let local councils have a say.",
+  "limit": "Don't cut jobs or local services to save money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0062",
+  "wants": "Stop them dumping sewage in the river near us.",
+  "limit": "Taps must not run dry or get cut off.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0074",
+  "wants": "Fix the pipes before any more money goes out.",
+  "limit": "Don't let the company's debts land on my pension.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0110",
+  "wants": "Make the bosses who ran it badly answer for it.",
+  "limit": "Taxpayers must not carry the company's debts.",
+  "split": "no"
+ },
+ {
+  "id": "c0116",
+  "wants": "Stop the water firms making money off our bills.",
+  "limit": "Don't give our money to failed firms.",
+  "split": "no"
+ },
+ {
+  "id": "c0120",
+  "wants": "Local people run the water, and the rivers come first.",
+  "limit": "Jobs and local services must not be cut.",
+  "split": "yes"
+ },
+ {
+  "id": "c0132",
+  "wants": "Bosses who broke the rules must be punished.",
+  "limit": "Taxpayers must not pay for the company's mess.",
+  "split": "no"
+ },
+ {
+  "id": "c0139",
+  "wants": "Sewage out of our rivers, please. The kids swim there.",
+  "limit": "Don't put the bills up for the family.",
+  "split": "yes"
+ },
+ {
+  "id": "c0140",
+  "wants": "Make the company sort out its mess before anything else.",
+  "limit": "Don't let the taps go dry for old people.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0149",
+  "wants": "Make the firms pay for the fix, not the customers.",
+  "limit": "Don't cut the staff who fix the pipes.",
+  "split": "no"
+ },
+ {
+  "id": "c0161",
+  "wants": "Clean rivers, and local people able to challenge the firm.",
+  "limit": "Taxpayers must not pay the debts of shareholders.",
+  "split": "yes"
+ },
+ {
+  "id": "c0165",
+  "wants": "Stop the sewage. Let the regulator actually bite.",
+  "limit": "Don't let bills rise to pay the debts.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0170",
+  "wants": "Let local councils and users share control of it.",
+  "limit": "Don't cut jobs at the works.",
+  "split": "yes"
+ },
+ {
+  "id": "c0171",
+  "wants": "Make the owners carry the debt, not the workers.",
+  "limit": "Don't leave bills up for the fix.",
+  "split": "no"
+ },
+ {
+  "id": "c0175",
+  "wants": "Shareholders take the loss before any bailout.",
+  "limit": "Taps must not run dry or get cut off.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0180",
+  "wants": "Stop the sewage, and let people vote on who runs it.",
+  "limit": "Don't cut the local services we rely on.",
+  "split": "yes"
+ },
+ {
+  "id": "c0183",
+  "wants": "Stop the sewage in the rivers and the sea.",
+  "limit": "Bills must not go up for the fix.",
+  "split": "yes"
+ },
+ {
+  "id": "c0194",
+  "wants": "Sort the sewage and make the bosses answer for it.",
+  "limit": "Don't let the taps go off in our homes.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0195",
+  "wants": "I want the water clean. I don't know who should run it.",
+  "limit": "Don't let the bills go up.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0199",
+  "wants": "Fix the sewage. I'm sick of the smell from the river.",
+  "limit": "Don't let the firm get bailed out with our money.",
+  "split": "no"
+ },
+ {
+  "id": "c0200",
+  "wants": "Make the bosses pay back what they took.",
+  "limit": "Taps must not be cut off for pensioners.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0205",
+  "wants": "Make the sewage go down, and the firm answer to someone.",
+  "limit": "Taxpayers must not pay the debt.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0209",
+  "wants": "Clean the rivers. We fish there, and we've seen the mess.",
+  "limit": "Don't put the bills up on people like me.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0211",
+  "wants": "Local people should have a proper say in running it.",
+  "limit": "Don't let the taxpayer carry the debt.",
+  "split": "yes"
+ },
+ {
+  "id": "c0230",
+  "wants": "Bosses who took the money should have to pay it back.",
+  "limit": "Bills must not go up because of the fix.",
+  "split": "no"
+ },
+ {
+  "id": "c0239",
+  "wants": "Clean rivers. That's all I really want to hear.",
+  "limit": "Don't cut the water to our house.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0245",
+  "wants": "Make the company sort its own debts out.",
+  "limit": "Taxpayers must not carry the bailout.",
+  "split": "no"
+ },
+ {
+  "id": "c0250",
+  "wants": "Fix the sewage. Our river stinks in summer.",
+  "limit": "Don't put bills up on my wages.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0260",
+  "wants": "Make the bosses pay, not my generation.",
+  "limit": "Bills must not rise to pay the debt.",
+  "split": "no"
+ },
+ {
+  "id": "c0289",
+  "wants": "Let the regulator fine them properly and quickly.",
+  "limit": "Don't cut jobs in the company during the fix.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0292",
+  "wants": "Public control of water, with local people in charge.",
+  "limit": "Taxpayers must not pay the debts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0295",
+  "wants": "Sewage stops, and the workers get a fair say.",
+  "limit": "Jobs and local services must not be cut.",
+  "split": "yes"
+ },
+ {
+  "id": "c0311",
+  "wants": "Stop the sewage. And make sure bills stay sensible.",
+  "limit": "Taps must not run dry or get cut off.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0338",
+  "wants": "Make the bosses pay, not the workers in the firm.",
+  "limit": "Don't let the taxpayer bail them out.",
+  "split": "no"
+ },
+ {
+  "id": "c0339",
+  "wants": "Let local people have a say in how it's run.",
+  "limit": "Don't cut jobs in the workforce during the fix.",
+  "split": "yes"
+ },
+ {
+  "id": "c0348",
+  "wants": "Make the sewage stop. It's the most important thing.",
+  "limit": "Don't let the bills go up for the fix.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0400",
+  "wants": "Make the bosses accountable. They should answer for it.",
+  "limit": "Don't let the taps run dry.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0424",
+  "wants": "Stop the sewage, and let the water belong to everyone.",
+  "limit": "Don't cut the staff who keep the water flowing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0430",
+  "wants": "Clean the rivers and the beaches for the grandchildren.",
+  "limit": "Bills and rents must not go up because of it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0435",
+  "wants": "Make the bosses pay and stop the sewage now.",
+  "limit": "Don't let bills go up for us students.",
+  "split": "yes"
+ },
+ {
+  "id": "c0452",
+  "wants": "I'm not sure. Clean rivers, probably.",
+  "limit": "Don't put the bills up.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0453",
+  "wants": "Stop the firm wriggling out of its duties.",
+  "limit": "Taxpayers must not pay the debts.",
+  "split": "no"
+ },
+ {
+  "id": "c0475",
+  "wants": "Sewage out of the sea and rivers, and honest reporting.",
+  "limit": "Don't cut the water supply in our area.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0499",
+  "wants": "Local people and workers should run it, not shareholders.",
+  "limit": "Jobs and services must not be cut.",
+  "split": "yes"
+ },
+ {
+  "id": "c0504",
+  "wants": "Make the company pay, not the people.",
+  "limit": "Don't let the bills climb for pensioners.",
+  "split": "yes"
+ },
+ {
+  "id": "c0517",
+  "wants": "Make the firm fix the sewage at its own cost.",
+  "limit": "Taxpayers must not pay the company's debts.",
+  "split": "no"
+ },
+ {
+  "id": "c0518",
+  "wants": "Local people have a say, and the water is cleaned.",
+  "limit": "Don't cut the water service to people's homes.",
+  "split": "yes"
+ },
+ {
+  "id": "c0523",
+  "wants": "Get the market working. Punish the firm that failed.",
+  "limit": "Taxpayers must not carry the debt.",
+  "split": "no"
+ },
+ {
+  "id": "c0542",
+  "wants": "Clean up the rivers. I see the mess on my walks.",
+  "limit": "Bills must not go up because of it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0543",
+  "wants": "Local people get a real say in how it's run.",
+  "limit": "Jobs and services must not be cut.",
+  "split": "yes"
+ },
+ {
+  "id": "c0551",
+  "wants": "Bosses should answer to the courts for the mess.",
+  "limit": "Don't cut services people rely on.",
+  "split": "yes"
+ },
+ {
+  "id": "c0566",
+  "wants": "Make the sewage stop and punish the owners.",
+  "limit": "Don't let bills go up for renters.",
+  "split": "no"
+ },
+ {
+  "id": "c0586",
+  "wants": "Clean the rivers and make it public, with local say.",
+  "limit": "Taxpayers must not carry the debt.",
+  "split": "yes"
+ },
+ {
+  "id": "c0596",
+  "wants": "Stop them polluting and make bosses pay.",
+  "limit": "Taps must not run dry.",
+  "split": "yes"
+ },
+ {
+  "id": "c0603",
+  "wants": "Stop the sewage. We're tired of brown water.",
+  "limit": "Bills must not go up for the fix.",
+  "split": "yes"
+ },
+ {
+  "id": "c0609",
+  "wants": "Stop the sewage in the river I've known all my life.",
+  "limit": "Taps must not be cut off for old people.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0626",
+  "wants": "Keep it clean, and keep it in public hands.",
+  "limit": "Taxpayers must not pay the bosses' debts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0638",
+  "wants": "Fix the sewage. Bills are already too high.",
+  "limit": "Bills must not rise for the fix.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0639",
+  "wants": "Clean the rivers. I don't follow the rest.",
+  "limit": "Taps must not be cut off.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0650",
+  "wants": "Make the bosses answer, and fine them hard.",
+  "limit": "Jobs must not be cut while it's sorted.",
+  "split": "yes"
+ },
+ {
+  "id": "c0653",
+  "wants": "Public ownership, so the profits stay here.",
+  "limit": "Don't let the bills rise for the family.",
+  "split": "yes"
+ },
+ {
+  "id": "c0656",
+  "wants": "Clean water, and the firm pays for its own mess.",
+  "limit": "Bills must not go up for the fix.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0664",
+  "wants": "Local people should have the power to challenge the firm.",
+  "limit": "Don't cut jobs in the company.",
+  "split": "yes"
+ },
+ {
+  "id": "c0674",
+  "wants": "The bosses should be sacked and the firm restructured.",
+  "limit": "Taxpayers must not pay the company's debts.",
+  "split": "no"
+ },
+ {
+  "id": "c0675",
+  "wants": "Stop the sewage. I want to swim in the sea again.",
+  "limit": "Taps must not run dry.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0676",
+  "wants": "Clean rivers. Let the firm answer to the regulator.",
+  "limit": "Taxpayers must not pay the company's debts.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0686",
+  "wants": "Make the bosses answer for the mess.",
+  "limit": "Bills must not go up because of the fix.",
+  "split": "no"
+ },
+ {
+  "id": "c0715",
+  "wants": "Local control of water, I think it'd be fairer.",
+  "limit": "Taxpayers must not carry the debt.",
+  "split": "yes"
+ },
+ {
+  "id": "c0719",
+  "wants": "Make the firms pay for their mistakes first.",
+  "limit": "Don't waste the money on the bailout.",
+  "split": "no"
+ },
+ {
+  "id": "c0722",
+  "wants": "Let the market fix it, with proper fines.",
+  "limit": "Taxpayers must not carry the debts.",
+  "split": "no"
+ },
+ {
+  "id": "c0726",
+  "wants": "Make sure the bosses answer for the sewage.",
+  "limit": "Don't let bills go up for pensioners.",
+  "split": "no"
+ },
+ {
+  "id": "c0738",
+  "wants": "Public control, so no one profits from the water.",
+  "limit": "Don't cut the staff who keep the pipes working.",
+  "split": "yes"
+ },
+ {
+  "id": "c0752",
+  "wants": "Stop the sewage. It's gross, honestly.",
+  "limit": "Bills must not go up for young people.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0754",
+  "wants": "Something cleaner, and a fair deal for customers.",
+  "limit": "Don't cut jobs in the company.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0761",
+  "wants": "Clean the rivers, and make the owners answer.",
+  "limit": "Taps must not run dry or get cut off.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0771",
+  "wants": "I'd like the sewage sorted. I don't know much more.",
+  "limit": "Bills must not go up because of the fix.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0773",
+  "wants": "Stop the water firm taking the money out.",
+  "limit": "Don't cut the water to my house.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0795",
+  "wants": "Local people and councils should share control.",
+  "limit": "Taxpayers must not pay the debts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0797",
+  "wants": "Make the company sort out its own debts.",
+  "limit": "Taxpayers must not carry the bailout.",
+  "split": "no"
+ },
+ {
+  "id": "c0812",
+  "wants": "Clean water, and local people should decide.",
+  "limit": "Jobs and services must not be cut.",
+  "split": "yes"
+ },
+ {
+  "id": "c0815",
+  "wants": "Stop the sewage, and let the workers have a say.",
+  "limit": "Don't let bills go up for the fix.",
+  "split": "yes"
+ },
+ {
+  "id": "c0816",
+  "wants": "Make the bosses pay, and stop dumping sewage.",
+  "limit": "Don't cut jobs or the services we rely on.",
+  "split": "no"
+ },
+ {
+  "id": "c0835",
+  "wants": "Make the bosses answer, and sell the company if needed.",
+  "limit": "Taxpayers must not pay for the debts.",
+  "split": "no"
+ },
+ {
+  "id": "c0842",
+  "wants": "Stop the sewage. We pay enough already.",
+  "limit": "Bills must not go up for the fix.",
+  "split": "yes"
+ },
+ {
+  "id": "c0848",
+  "wants": "Make the firm fix its pipes and pay its fines.",
+  "limit": "Taxpayers must not carry the company's debts.",
+  "split": "no"
+ },
+ {
+  "id": "c0858",
+  "wants": "Stop the firms getting away with it, make them pay.",
+  "limit": "Don't cut the water supply to people.",
+  "split": "no"
+ },
+ {
+  "id": "c0864",
+  "wants": "Public ownership, and the sewage stops.",
+  "limit": "Jobs and services must not be cut.",
+  "split": "yes"
+ },
+ {
+  "id": "c0872",
+  "wants": "Clean the water. I'm not sure who should run it.",
+  "limit": "Don't put bills up for families.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0889",
+  "wants": "Local people should have a say in the water firm.",
+  "limit": "Taxpayers must not carry the debts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0900",
+  "wants": "Let the public run it, so profits don't leave.",
+  "limit": "Jobs and services must not be cut.",
+  "split": "yes"
+ },
+ {
+  "id": "c0901",
+  "wants": "Make the bosses pay back, then fix the sewage.",
+  "limit": "Bills must not go up for the fix.",
+  "split": "no"
+ },
+ {
+  "id": "c0942",
+  "wants": "Make the company fix its own mess first.",
+  "limit": "Taxpayers must not pay the debts.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0947",
+  "wants": "Clean the rivers and let local people decide.",
+  "limit": "Taps must not run dry or get cut off.",
+  "split": "yes"
+ },
+ {
+  "id": "c0950",
+  "wants": "Make the bosses pay back, and keep the bills fair.",
+  "limit": "Don't cut the services we all depend on.",
+  "split": "no"
+ },
+ {
+  "id": "c0955",
+  "wants": "Sort the sewage. I don't follow the money bit.",
+  "limit": "Taps must not run dry.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0978",
+  "wants": "Stop the sewage, and make the company answer for it.",
+  "limit": "Bills must not go up for the fix.",
+  "split": "yes"
+ }
+]

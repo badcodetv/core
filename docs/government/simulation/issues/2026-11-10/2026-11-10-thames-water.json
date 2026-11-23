@@ -1,0 +1,596 @@
+{
+ "schema": "fp-sim/1",
+ "id": "2026-11-10-thames-water",
+ "simulated": true,
+ "stamp": "SIMULATED",
+ "stage": "published",
+ "run": {
+  "mode": "replay",
+  "run_date": "2026-11-23",
+  "news_date": "2026-11-10",
+  "replay_stamp": "Replayed on 23 Nov 2026 from the news of 10 Nov 2026"
+ },
+ "issue": {
+  "title": "Thames Water's debts: rescue it, or take it back?",
+  "short": "THAMES WATER",
+  "question": "When a water company can't pay its debts, who should own and run it, and who takes the loss?",
+  "summary": "Thames Water's holding company has set out a debt rescue plan, with a court hearing on 27 November 2026, creditor meetings on 17 December and a sanction hearing on 13 January 2027. Thames Water Utilities had net debt of £18.5bn at March 2026. The government has ruled nationalising the water sector out of its review of water regulation.",
+  "summary_sources": [
+   "s1",
+   "s2",
+   "s3"
+  ],
+  "field": "water",
+  "owner": "energy-climate",
+  "slot": "parliament",
+  "slot_reason": "Rule 3: a court decides the rescue plan, starting with a hearing on 27 November 2026. Picked by hand as the simulation's first template, because Kai named it.",
+  "news": [
+   {
+    "headline": "Thames Water plans would push 2027 senior debt maturities to March 2028",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "poll": {
+  "pollster": "YouGov",
+  "fieldwork": "7-8 Sep 2026",
+  "sample": "2,072 GB adults",
+  "finding": "74% said water companies should be run in the public sector and 6% the private sector. Support for nationalisation falls to 30-31% if it raised bills, borrowing or taxes.",
+  "real_share": 0.74,
+  "sources": [
+   "s4"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Thames Water plans would push 2027 senior debt maturities to March 2028",
+   "publisher": "Smart Water Magazine",
+   "date": "2026-11-10",
+   "url": "https://smartwatermagazine.com/news/newsroom/thames-water-plans-would-push-2027-senior-debt-maturities-to-march-2028"
+  },
+  {
+   "id": "s2",
+   "title": "Thames Water Utilities Limited Annual Results for the year to 31 March 2026",
+   "publisher": "Thames Water",
+   "date": "2026-07-15",
+   "url": "https://thameswater.co.uk/news/2026/jul/thames-water-annual-results-2025-26"
+  },
+  {
+   "id": "s3",
+   "title": "Independent commission on the water sector regulatory system: terms of reference",
+   "publisher": "GOV.UK",
+   "date": "2024-10-23",
+   "url": "https://www.gov.uk/government/publications/independent-commission-on-the-water-sector-regulatory-system-terms-of-reference/independent-commission-on-the-water-sector-regulatory-system-terms-of-reference"
+  },
+  {
+   "id": "s4",
+   "title": "How far do Britons support nationalising water companies?",
+   "publisher": "YouGov",
+   "date": "2026-10-27",
+   "url": "https://yougov.com/en-gb/articles/55821-how-far-do-britons-support-nationalising-water-companies"
+  },
+  {
+   "id": "s5",
+   "title": "Fewer and shorter storm overflow spills in 2025, new monitoring data shows",
+   "publisher": "GOV.UK (Environment Agency)",
+   "date": "2026-03-26",
+   "url": "https://www.gov.uk/government/news/fewer-and-shorter-storm-overflow-spills-in-2025-new-monitoring-data-shows"
+  },
+  {
+   "id": "s6",
+   "title": "Thames Water to pay fifth of record £122.7m fines by end of September",
+   "publisher": "Hargreaves Lansdown",
+   "date": "2025-08-27",
+   "url": "https://www.hl.co.uk/news/thames-water-to-pay-fifth-of-record-1227m-fines-by-end-of-september"
+  },
+  {
+   "id": "s9",
+   "title": "How to Clean Up Our Water: Why Public Ownership in Law Costs Zero",
+   "publisher": "Common Wealth",
+   "date": "2025-06-05",
+   "url": "https://www.common-wealth.org/publications/how-to-clean-up-our-water"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "sim-clerk",
+   "sim-citizens",
+   "sim-bench",
+   "sim-gate",
+   "sim-jury",
+   "sim-minister"
+  ],
+  "note": "Clerk step done by hand in a Claude Code session as the first template; facts checked by a research subagent on 23 Nov 2026."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-10-thames-water/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0110",
+   "c0639",
+   "c0638",
+   "c0339",
+   "c0171",
+   "c0656",
+   "c0726",
+   "c0452",
+   "c0435",
+   "c0900",
+   "c0603",
+   "c0175",
+   "c0400",
+   "c0132",
+   "c0842",
+   "c0773",
+   "c0947",
+   "c0260",
+   "c0183",
+   "c0199",
+   "c0664",
+   "c0761",
+   "c0686",
+   "c0754",
+   "c0609",
+   "c0816",
+   "c0475",
+   "c0051",
+   "c0955",
+   "c0872",
+   "c0165",
+   "c0626",
+   "c0180",
+   "c0139",
+   "c0120",
+   "c0517",
+   "c0140",
+   "c0676",
+   "c0848",
+   "c0161",
+   "c0194",
+   "c0424",
+   "c0815",
+   "c0074",
+   "c0209",
+   "c0586",
+   "c0116",
+   "c0543",
+   "c0453",
+   "c0738",
+   "c0674",
+   "c0518",
+   "c0430",
+   "c0812",
+   "c0978",
+   "c0504",
+   "c0551",
+   "c0200",
+   "c0675",
+   "c0771",
+   "c0722",
+   "c0062",
+   "c0295",
+   "c0205",
+   "c0864",
+   "c0211",
+   "c0650",
+   "c0950",
+   "c0338",
+   "c0835",
+   "c0250",
+   "c0653",
+   "c0289",
+   "c0230",
+   "c0003",
+   "c0292",
+   "c0797",
+   "c0942",
+   "c0901",
+   "c0719",
+   "c0170",
+   "c0889",
+   "c0044",
+   "c0752",
+   "c0523",
+   "c0348",
+   "c0566",
+   "c0149",
+   "c0858",
+   "c0195",
+   "c0025",
+   "c0542",
+   "c0795",
+   "c0239",
+   "c0596",
+   "c0245",
+   "c0499",
+   "c0311",
+   "c0042",
+   "c0715"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "kind": "test",
+    "text": "Fewer sewage spills into rivers and the sea",
+    "backers": 33
+   },
+   {
+    "kind": "test",
+    "text": "Bosses who broke the rules answer for it",
+    "backers": 39
+   },
+   {
+    "kind": "test",
+    "text": "Local people get a real say in the company",
+    "backers": 25
+   },
+   {
+    "kind": "test",
+    "text": "Bills don't rise to pay for the fix",
+    "backers": 2
+   },
+   {
+    "kind": "limit",
+    "text": "Taps don't run dry or get cut off",
+    "backers": 20
+   },
+   {
+    "kind": "limit",
+    "text": "Bills and taxes don't go up to pay the company's debts",
+    "backers": 58
+   },
+   {
+    "kind": "limit",
+    "text": "Jobs and local services aren't cut",
+    "backers": 22
+   }
+  ],
+  "split": {
+   "question": "Should water companies be run in the public sector rather than the private sector?",
+   "sim_share": 0.37
+  },
+  "voices": [
+   {
+    "citizen": "c0523",
+    "who": "33, man, Scotland, works, has a mortgage",
+    "text": "Get the market working. Punish the firm that failed. Taxpayers must not carry the debt."
+   },
+   {
+    "citizen": "c0120",
+    "who": "59, man, Yorkshire and The Humber, works, rents privately",
+    "text": "Local people run the water, and the rivers come first. Jobs and local services must not be cut."
+   },
+   {
+    "citizen": "c0074",
+    "who": "74, man, East Midlands, retired, rents from council or housing association",
+    "text": "Fix the pipes before any more money goes out. Don't let the company's debts land on my pension."
+   },
+   {
+    "citizen": "c0042",
+    "who": "27, woman, South West, works, owns home outright",
+    "text": "Make the bosses pay, not the people who live here. Don't let the taxpayer pick up the debts."
+   },
+   {
+    "citizen": "c0200",
+    "who": "66, man, London, retired, rents from council or housing association",
+    "text": "Make the bosses pay back what they took. Taps must not be cut off for pensioners."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "title": "Keep Thames Water private, but tie bosses' pay and fines to rivers",
+   "answer": "Keep the owners and the court rescue. Change the rules attached to it. First, the regulator must ban bonuses and dividends until spills fall for three years running, since part of 2025's fall was dry weather (s5). Second, bosses' pay is held back and can be clawed back if the company breaks the rules. Third, the £122.7m fine is paid in full on its backstop date and not written down (s6). Fourth, a new customer panel gets a seat and a veto on bill rises. Bills do not rise to pay the debts. Ofwat does this. We would know it worked if spills keep falling in wet years and no bonus is paid.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s5",
+    "s6"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Hand Thames Water to its customers and staff, with debts written down",
+   "answer": "Put Thames Water into special administration, so a court-appointed administrator runs it while its debts are sorted out (s9 argues this can cost close to zero in law). Then move it into a public-benefit company. Customers and staff elect a board, with seats for river groups. Bosses who broke the rules answer for it, and creditors take the loss before any taxpayer does. Bills do not rise to pay old debts. Government does this. It worked if spills keep falling in a normal-weather year (s5), the £122.7m fine is paid (s6), and bills stay flat.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s5",
+    "s6",
+    "s9"
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Let water users own it, and investors take the loss",
+   "answer": "In this simulation, Parliament would put Thames Water into a trust owned by its water users. Shareholders lose their stake. Lenders take losses instead of passing old debts to bills or taxes. Users and workers elect the board, with local meetings able to demand repairs. Keep staff and water supplies running. Pay managers extra only when independently checked service targets are met. Publish repair spending, spills and board votes. Pursue proven wrongdoing through the courts. Judge success by reliable taps, protected jobs and fewer spills after accounting for rainfall: dry weather helped explain the 2025 fall (s5). Give users the power to vote directors out.",
+   "engine": "codex",
+   "model": "gpt-6",
+   "blind": true,
+   "sources": [
+    "s5"
+   ]
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "Fewer sewage spills",
+    "result": "unclear",
+    "note": "Spills fell in 2025 but dry weather explains much of it, so a fall alone proves nothing; the ban on bonuses is an incentive only.",
+    "sources": [
+     "s5"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Bosses who broke rules answer",
+    "result": "pass",
+    "note": "The £122.7m fine is paid in full by the 31 March 2030 backstop and pay can be clawed back; no source needed beyond the fine terms.",
+    "sources": [
+     "s6"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Local say in company",
+    "result": "pass",
+    "note": "no source needed: logic. A customer panel with a seat and a veto on bill rises is a real say.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Bills don't rise for the fix",
+    "result": "unclear",
+    "note": "It bars bill rises for the debts, but the plan does not say how the fix itself is paid for.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: taps not cut off",
+    "result": "pass",
+    "note": "no source needed: logic. The same owner keeps running the company, so supply carries on.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no bill/tax rise for debts",
+    "result": "pass",
+    "note": "no source needed: logic. It says bills do not rise to pay the debts, and the owners and lenders keep the debt.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: jobs and services kept",
+    "result": "unclear",
+    "note": "The answer says nothing about jobs or local services.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Fewer sewage spills",
+    "result": "unclear",
+    "note": "A fall in a normal-weather year would be a fair test, but the answer shows no way to get there; 2025's fall was helped by dry weather.",
+    "sources": [
+     "s5"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Bosses who broke rules answer",
+    "result": "unclear",
+    "note": "The answer says bosses answer for it but names no way; Common Wealth argues shareholders already took large returns, which is its view, not a finding.",
+    "sources": [
+     "s9"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Local say in company",
+    "result": "pass",
+    "note": "no source needed: logic. Customers and staff elect the board, with seats for river groups.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Bills don't rise for the fix",
+    "result": "unclear",
+    "note": "It says bills stay flat, but who pays for repairs after debts are written down is not shown.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: taps not cut off",
+    "result": "unclear",
+    "note": "An administrator runs the company, but the sources do not show that supply is kept safe through the change.",
+    "sources": [
+     "s9"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no bill/tax rise for debts",
+    "result": "unclear",
+    "note": "Common Wealth argues the legal cost is close to zero; whether creditors accept it, and whether taxpayers end up paying, is disputed and unsettled.",
+    "sources": [
+     "s9"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Limit: jobs and services kept",
+    "result": "unclear",
+    "note": "Staff get board seats, but the answer does not say jobs and services are kept.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Fewer sewage spills",
+    "result": "unclear",
+    "note": "The test adjusts for rainfall, which fits the dry-weather caveat, but no evidence shows the trust would cut spills.",
+    "sources": [
+     "s5"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Bosses who broke rules answer",
+    "result": "unclear",
+    "note": "It relies on courts for proven wrongdoing and says nothing on the £122.7m fine.",
+    "sources": [
+     "s6"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Local say in company",
+    "result": "pass",
+    "note": "no source needed: logic. Users and workers elect the board and can vote directors out.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Bills don't rise for the fix",
+    "result": "unclear",
+    "note": "Lenders take the losses, but the fix still has to be paid for and the answer does not say how.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: taps not cut off",
+    "result": "pass",
+    "note": "no source needed: logic. It commits to keeping staff and water supplies running.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no bill/tax rise for debts",
+    "result": "unclear",
+    "note": "Lenders are meant to take the loss; whether that holds in law is argued by Common Wealth and not settled.",
+    "sources": [
+     "s9"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Limit: jobs and services kept",
+    "result": "pass",
+    "note": "no source needed: logic. It lists protected jobs as a success measure.",
+    "sources": []
+   }
+  ],
+  "verdict": "None of the three passes everything: A and C clear the tests they speak to but leave others open, and B leaves most open. Facts cannot settle who should own Thames Water or who takes the loss.",
+  "to_jury": true,
+  "rejected_claims": [
+   "B: the court hearing on 27 November is the first step of special administration (s1 describes it as a hearing on the debt rescue plan and does not mention special administration)"
+  ]
+ },
+ "jury": {
+  "seed": "2026-11-10-thames-water/jury",
+  "size": 12,
+  "ids": [
+   "c0725",
+   "c0502",
+   "c0437",
+   "c0443",
+   "c0278",
+   "c0776",
+   "c0137",
+   "c0420",
+   "c0189",
+   "c0573",
+   "c0930",
+   "c0562"
+  ],
+  "model": "claude-haiku-5-5",
+  "question": "When a water company fails, who should carry the loss: the owners and lenders, the customers, or the taxpayer?",
+  "options": [
+   "Keep it private and tighten the rules on bosses",
+   "Move it to customers and staff, with lenders taking the loss",
+   "Let a court-run rescue go ahead, with no change of owner",
+   "Take it into public hands, whatever the cost"
+  ],
+  "votes": [
+   2,
+   5,
+   2,
+   3
+  ],
+  "ruling": "Move it to customers and staff, with lenders taking the loss. Five of the twelve jurors wanted the debt to fall on owners and lenders rather than bills or taxes, and a real say for the people who use the water.",
+  "reasons": [
+   {
+    "juror": "c0437",
+    "text": "Bills have gone up for years while the bosses got paid. Let the people who use the water have the say."
+   },
+   {
+    "juror": "c0725",
+    "text": "A court should sort the rescue quickly. I don't want a fight over who owns it, and my bills are already high."
+   },
+   {
+    "juror": "c0443",
+    "text": "Water is too important to leave to shareholders. Put it in public hands and stop the profit-taking."
+   },
+   {
+    "juror": "c0278",
+    "text": "Keep it running as it is, but make the bosses pay for what they broke. Don't add a new owner to the mess."
+   }
+  ],
+  "review": "2027-11-23",
+  "real_jury": false
+ },
+ "minister": {
+  "post": "energy-climate",
+  "decision": "signed",
+  "trial": "In the Thames Water rescue, ask for a customer and staff panel: 12 people drawn by lot from its area, a seat in the creditor talks and a veto on any bill rise that pays old debt. Lenders take the loss first. One company, one panel, no change of owner yet.",
+  "fail_number": "Any rise in the average Thames Water bill that the company ties to debt payments (target: 0%), or the panel not seated by the 13 January 2027 sanction hearing.",
+  "stop": "2027-03-31",
+  "statement": "Brilliant news first: a hearing on 27 November decides a £18.5bn problem, and the jury picked a way out. Customers and staff get a say, lenders take the loss. Hard bit: five of twelve jurors is not a landslide, and none of the three answers shows who pays for the pipes. So I'm signing one small thing. One company, one panel of ordinary people with a veto on bills that pay old debts. If bills rise for debt, it failed. If it works, we try a bigger one."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "answer": "issue",
+   "claim": "The court hearing on Thames Water's rescue plan goes ahead on 27 November 2026 without being adjourned.",
+   "prior": 0.8,
+   "due": "2026-11-30",
+   "rule": "True if Thames Water, the court or a major news outlet reports the hearing took place on 27 November 2026. False if it was moved to a later date.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "answer": "issue",
+   "claim": "The court sanctions Thames Water's debt rescue plan by 22 January 2027, after the 13 January sanction hearing.",
+   "prior": 0.5,
+   "due": "2027-01-22",
+   "rule": "True if a court order sanctioning the plan is reported by Thames Water or a major news outlet between 13 and 22 January 2027. False if the court refuses, or has not ruled by 22 January.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p3",
+   "answer": "B",
+   "claim": "The government does not put Thames Water into special administration before 30 June 2027.",
+   "prior": 0.85,
+   "due": "2027-06-30",
+   "rule": "True if no special administration order for Thames Water is made by 30 June 2027. Check GOV.UK and Thames Water's news page.",
+   "sources": [
+    "s3",
+    "s9"
+   ],
+   "result": "pending"
+  }
+ ]
+}
