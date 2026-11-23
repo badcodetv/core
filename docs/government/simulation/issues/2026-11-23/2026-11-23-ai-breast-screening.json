@@ -3,7 +3,7 @@
  "id": "2026-11-23-ai-breast-screening",
  "simulated": true,
  "stamp": "SIMULATED",
- "stage": "citizens",
+ "stage": "bench",
  "run": {
   "mode": "live",
   "run_date": "2026-11-23",
@@ -85,7 +85,8 @@
  "made_by": {
   "workers": [
    "sim-clerk",
-   "sim-citizens"
+   "sim-citizens",
+   "sim-bench"
   ]
  },
  "citizens": {
@@ -259,5 +260,44 @@
     "text": "Public ownership of the software, not a private firm."
    }
   ]
- }
+ },
+ "bench": [
+  {
+   "id": "A",
+   "title": "Keep two experts for some women; test AI with one expert",
+   "answer": "The Health Secretary signs a rule for the 30 EDITH hospitals. No trust may cut reading jobs or hours because of the trial; time saved goes to shorter waits. Volunteers are placed by lot: two experts as now, or AI with one expert. Letters say which. Scan data stays in the NHS; no private firm may profit from it. Provisional fail: the AI group finds one in ten fewer cancers, or more cancers showing up between screens, than the two-expert group. First check at 12 months, including waits. Stops 31 December 2029 unless Parliament renews it. Leaves out women under 50 or over 71, and any who decline AI. Two-expert women get no less than today.",
+   "sources": [
+    "s1",
+    "s2",
+    "s3"
+   ],
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true
+  },
+  {
+   "id": "B",
+   "title": "NHS-owned scan software, women told their group, staff can stop it",
+   "answer": "Inside EDITH's volunteer sites, the Health Secretary signs a rule: the NHS owns the software and every scan, and no firm may keep or sell them. Volunteers are picked by lot: two experts as now, or one expert plus the NHS-owned AI. Each woman is told her group. A woman can say no and keep two experts. No post is cut; time saved goes to shorter waits. Staff and women sit on a panel that can switch it off. Fail: if AI finds more than 1 in 100 fewer cancers than two experts, checked at 12 months, it stops. Ends 31 December 2029 unless Parliament renews it. Leaves out women who decline and women outside the 30 sites.",
+   "sources": [
+    "s1",
+    "s2",
+    "s3"
+   ],
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true
+  },
+  {
+   "id": "C",
+   "title": "Give local women the brake on AI screening",
+   "answer": "Your scan, your choice. Trial replacing one reader only with willing women, assigned by lot against two human readers. Each NHS unit needs approval from a local patient panel drawn by lot; its clinical director signs. Explain each woman's allocation. Keep staff, a named human contact and two readers for anyone declining. Contracts must forbid commercial reuse of scans. Publish results by ethnicity, age and deprivation, counting women missing from the trial. Provisional failure: fewer cancers found, more cancers between screens, or median waits not cut 10%. Review waits after six months; stop on 30 November 2029 unless Parliament renews after independent safety review. Patient panels can stop participation earlier. No national rollout on inconclusive evidence.",
+   "engine": "codex",
+   "model": "gpt-6",
+   "blind": true,
+   "sources": [
+    "s2"
+   ]
+  }
+ ]
 }

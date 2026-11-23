@@ -1,0 +1,23 @@
+{
+  "A": {
+    "title": "Keep two experts for some women; test AI with one expert, with safeguards",
+    "answer": "The Health Secretary signs a rule for the 30 EDITH hospitals. No trust may cut reading jobs or hours because of the trial; time saved goes to shorter waits. Volunteers are placed by lot: two experts as now, or AI with one expert. Letters say which. Scan data stays in the NHS; no private firm may profit from it. Provisional fail: the AI group finds one in ten fewer cancers, or more cancers showing up between screens, than the two-expert group. First check at 12 months, including waits. Stops 31 December 2029 unless Parliament renews it. Leaves out women under 50 or over 71, and any who decline AI. Two-expert women get no less than today.",
+    "sources": [
+      "s1",
+      "s2",
+      "s3"
+    ],
+    "new_sources": []
+  },
+  "B": {
+    "title": "NHS-owned scan software, women told their group, staff can switch it off",
+    "answer": "Inside EDITH's volunteer sites, the Health Secretary signs a rule: the NHS owns the software and every scan, and no firm may keep or sell them. Volunteers are picked by lot: two experts as now, or one expert plus the NHS-owned AI. Each woman is told her group. A woman can say no and keep two experts. No post is cut; time saved goes to shorter waits. Staff and women sit on a panel that can switch it off. Fail: if AI finds more than 1 in 100 fewer cancers than two experts, checked at 12 months, it stops. Ends 31 December 2029 unless Parliament renews it. Leaves out women who decline and women outside the 30 sites.",
+    "sources": [
+      "s1",
+      "s2",
+      "s3"
+    ],
+    "new_sources": []
+  },
+  "note": "Raw subagent replies. Titles trimmed to 70 characters in the issue file."
+}
