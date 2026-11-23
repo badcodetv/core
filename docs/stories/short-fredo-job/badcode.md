@@ -15,7 +15,7 @@ Heist and caper (library, below), on real-photo layouts. Not found yet: stills t
 Flow project: `8f55f330-03fa-409a-a911-9dd5b9c6693b` ("Nov 23 - 16:57"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
-Not decided — run story-style. Any Suno track is music and sound effects only (workspace `short-fredo-job`); every
+Not decided — run story-style (music and sound effects). **Voice (Jack, 2026-11-23):** the crew speak over the picture in one voice, Google library **`en-gb-concierge-10`** (Liverpool), read plain with `--plain --model gemini-3.8-flash-tts`. Any Suno track is music and sound effects only (workspace `short-fredo-job`); every
 spoken line is an AI Studio voice, cast with voice-casting (English, with a named region).
 
 ## Cast
