@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/projects/badcode/badcode/docs/government/simulation/citizens/pool.json",
+ "made": "2026-11-23T17:58:41+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "script",
+ "tool": "scripts/government/sim/make-pool.mjs",
+ "why": "Simulated citizen pool for the Future Proof simulation (labelled SIMULATED)",
+ "inputs": {
+  "distributions": "docs/government/simulation/citizens/distributions.json"
+ },
+ "settings": {
+  "seed": "pool-2026-11-23",
+  "size": "1000"
+ }
+}

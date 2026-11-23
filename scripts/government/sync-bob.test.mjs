@@ -97,3 +97,18 @@ describe('parseMcpReply', () => {
     expect(r.content).toEqual([]);
   });
 });
+
+describe('include: simulation', () => {
+  it('parses a list of includes and refuses unknown ones', () => {
+    const w = parseWorkerFile('---\nengine: claude\ninclude: simulation,ministers\n---\nBODY');
+    expect(w.include).toEqual(['simulation', 'ministers']);
+    expect(parseWorkerFile('---\nengine: claude\ninclude: simulation\n---\nB').include).toBe('simulation');
+    expect(() => parseWorkerFile('---\nengine: claude\ninclude: nope\n---\nB')).toThrow(/include must be one of/);
+  });
+  it('puts the simulation common text before the body and the ministers after', () => {
+    const p = assemblePrompt('S', { prompt: 'B', include: ['simulation', 'ministers'] }, ['### M\nm'], 'COMMON');
+    expect(p.indexOf('COMMON')).toBeLessThan(p.indexOf('B'));
+    expect(p.indexOf('B')).toBeLessThan(p.indexOf('## The ministers'));
+    expect(assemblePrompt('S', { prompt: 'B', include: null }, [], 'COMMON')).toBe('S\n\nB');
+  });
+});

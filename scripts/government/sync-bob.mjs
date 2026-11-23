@@ -8,6 +8,8 @@ import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 
 const ALLOWED_KEYS = ['engine', 'model', 'effort', 'labels', 'include', 'tools'];
+// include: ministers (the ten briefs, appended) and/or simulation (docs/government/simulation/worker-common.md, before the body)
+const INCLUDES = ['ministers', 'simulation'];
 const SCHEDULE_FIELDS = ['worker', 'cron', 'timezone', 'message', 'enabled', 'keep_sessions'];
 
 const csv = (s) => s.split(',').map((x) => x.trim()).filter(Boolean);
@@ -31,8 +33,9 @@ export function parseWorkerFile(text) {
     if (j < 1) throw new Error(`worker file: bad label (want k=v): ${pair}`);
     labels[pair.slice(0, j).trim()] = pair.slice(j + 1).trim();
   }
-  if (fm.include !== undefined && fm.include !== 'ministers') {
-    throw new Error(`worker file: include must be "ministers", got "${fm.include}"`);
+  const include = csv(fm.include ?? '');
+  for (const inc of include) {
+    if (!INCLUDES.includes(inc)) throw new Error(`worker file: include must be one of ${INCLUDES.join(', ')}, got "${inc}"`);
   }
   return {
     engine: fm.engine,
@@ -40,14 +43,19 @@ export function parseWorkerFile(text) {
     effort: fm.effort ?? '',
     labels,
     tools: csv(fm.tools ?? ''),
-    include: fm.include ?? null,
+    include: include.length === 1 ? include[0] : include.length ? include : null,
     prompt: m[2].replace(/^\n+/, '').replace(/\s+$/, ''),
   };
 }
 
-export function assemblePrompt(shared, worker, briefs = []) {
-  let out = `${shared.trim()}\n\n${worker.prompt.trim()}`;
-  if (worker.include === 'ministers') {
+const includes = (w) => (Array.isArray(w.include) ? w.include : w.include ? [w.include] : []);
+
+export function assemblePrompt(shared, worker, briefs = [], simCommon = '') {
+  const inc = includes(worker);
+  let out = shared.trim();
+  if (inc.includes('simulation')) out += `\n\n${simCommon.trim()}`;
+  out += `\n\n${worker.prompt.trim()}`;
+  if (inc.includes('ministers')) {
     out += `\n\n## The ministers\n\n${briefs.map((b) => b.trim()).join('\n\n')}`;
   }
   return out;
@@ -122,10 +130,13 @@ export function loadDesired(root) {
   const briefs = existsSync(mdir)
     ? readdirSync(mdir).filter((f) => f.endsWith('.md')).sort().map((f) => readFileSync(join(mdir, f), 'utf8'))
     : [];
+  const simPath = join(gov, 'simulation/worker-common.md');
+  const simCommon = existsSync(simPath) ? readFileSync(simPath, 'utf8') : '';
   const workers = wfiles.map((f) => {
     const w = parseWorkerFile(readFileSync(join(wdir, f), 'utf8'));
-    if (w.include === 'ministers' && !briefs.length) throw new Error(`${f} includes ministers but ${mdir} has no briefs`);
-    return { name: basename(f, '.md'), ...w, prompt: assemblePrompt(shared, w, briefs) };
+    if (includes(w).includes('ministers') && !briefs.length) throw new Error(`${f} includes ministers but ${mdir} has no briefs`);
+    if (includes(w).includes('simulation') && !simCommon) throw new Error(`${f} includes simulation but ${simPath} is missing`);
+    return { name: basename(f, '.md'), ...w, prompt: assemblePrompt(shared, w, briefs, simCommon) };
   });
   const schedules = JSON.parse(readFileSync(need(join(gov, 'schedules.json')), 'utf8'));
   for (const s of schedules) {

@@ -1,0 +1,303 @@
+<title>Future Proof Live</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: a feed of issue cards (newest first) beside a scoreboard; an issue opens to its loop and its record */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#14202d; --muted:#5a6676; --line:#d9dee6;
+  --accent:#b8650f; --accent-soft:#f6e7d4;
+  --pass:#1d7a4a; --pass-soft:#dff0e6; --fail:#b3302a; --fail-soft:#f6dedc; --unclear:#8a7a2a; --unclear-soft:#f3eed6;
+  --human:#2f5ea8; --human-soft:#dfe8f6; --stamp:#b3302a;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f151c; --surface:#16202a; --ink:#e7ecf2; --muted:#9aa7b6; --line:#2a3644;
+  --accent:#f0a24a; --accent-soft:#3a2a17; --pass:#5cc78d; --pass-soft:#16301f; --fail:#f07d74; --fail-soft:#3a1c1a;
+  --unclear:#d8c56a; --unclear-soft:#33301a; --human:#7fa8ec; --human-soft:#1a2740; --stamp:#f07d74; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f151c; --surface:#16202a; --ink:#e7ecf2; --muted:#9aa7b6; --line:#2a3644;
+  --accent:#f0a24a; --accent-soft:#3a2a17; --pass:#5cc78d; --pass-soft:#16301f; --fail:#f07d74; --fail-soft:#3a1c1a;
+  --unclear:#d8c56a; --unclear-soft:#33301a; --human:#7fa8ec; --human-soft:#1a2740; --stamp:#f07d74; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 4rem}
+main{max-width:1080px;margin:0 auto;display:grid;gap:2rem}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.12;text-wrap:balance}
+h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700}
+h3{font-size:1.02rem;font-weight:700}
+p{margin:0;max-width:68ch}
+a{color:var(--accent)}
+.eyebrow{font:500 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.stamp{display:inline-block;font:700 .7rem/1 var(--mono);letter-spacing:.18em;color:var(--stamp);border:2px solid var(--stamp);padding:.3rem .45rem;border-radius:3px;transform:rotate(-2deg)}
+.replay{display:inline-block;font:500 .72rem/1.3 var(--mono);color:var(--muted);border:1px dashed var(--muted);padding:.2rem .45rem;border-radius:3px}
+header.top{padding-top:2.5rem;display:grid;gap:.9rem}
+header.top .row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.banner{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--stamp);padding:.8rem 1rem;border-radius:4px;font-size:.9rem}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:1.5rem;align-items:start}
+.feed{display:grid;gap:.75rem}
+.card{all:unset;cursor:pointer;display:grid;gap:.45rem;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1rem 1.1rem;min-width:0}
+.card:hover{border-color:var(--accent)}
+.card:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.card .meta{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;font:500 .72rem/1.2 var(--mono);color:var(--muted)}
+.card .q{color:var(--muted);font-size:.92rem}
+.card .out{font-size:.9rem}
+.chip{display:inline-block;font:500 .7rem/1.3 var(--mono);padding:.12rem .4rem;border-radius:3px;background:var(--line);color:var(--ink)}
+.chip.p{background:var(--pass-soft);color:var(--pass)}.chip.f{background:var(--fail-soft);color:var(--fail)}.chip.u{background:var(--unclear-soft);color:var(--unclear)}.chip.h{background:var(--human-soft);color:var(--human)}.chip.a{background:var(--accent-soft);color:var(--accent)}
+aside.board{position:sticky;top:calc(env(safe-area-inset-top,0px) + 1rem);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1rem;display:grid;gap:.8rem}
+.big{font:800 2.4rem/1 var(--display);font-variant-numeric:tabular-nums}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.tile{display:grid;gap:.2rem}
+.tile span{font:500 .68rem/1 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.due{display:grid;gap:.45rem;font-size:.85rem}
+.due div{display:grid;grid-template-columns:5.2rem 1fr;gap:.5rem}
+.due b{font:500 .75rem/1.4 var(--mono);color:var(--accent)}
+/* detail */
+.back{all:unset;cursor:pointer;font:600 .85rem/1 var(--body);color:var(--accent)}
+.back:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.detail{display:grid;gap:1.5rem}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.1rem 1.2rem;display:grid;gap:.8rem;min-width:0}
+.panel .ph{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline;flex-wrap:wrap}
+.canvas-wrap{width:100%}
+#loop{display:block;width:100%;cursor:pointer}
+.caption{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1rem;align-items:start}
+.caption .n{font:800 2rem/1 var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
+.controls{display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{font:600 .82rem/1 var(--body);padding:.55rem .85rem;border-radius:4px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.controls button.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.controls button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.bars{display:grid;gap:.5rem}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) 3rem;gap:.6rem;align-items:center;font-size:.88rem}
+.bar .track{grid-column:1/-1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar .track i{display:block;height:100%;background:var(--pass)}
+.bar.lim .track i{background:var(--fail)}
+.bar b{font:500 .78rem/1 var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.vs div{border:1px solid var(--line);border-radius:4px;padding:.7rem;display:grid;gap:.25rem}
+.vs .num{font:800 1.8rem/1 var(--display);font-variant-numeric:tabular-nums}
+.voices{display:grid;gap:.5rem;font-size:.88rem}
+.voices div{border-left:3px solid var(--human);padding-left:.6rem}
+.voices small{display:block;font:400 .72rem/1.4 var(--mono);color:var(--muted)}
+.bench{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+.ans{border:1px solid var(--line);border-radius:6px;padding:.85rem;display:grid;gap:.4rem;align-content:start;min-width:0}
+.ans .id{font:800 1.4rem/1 var(--display);color:var(--accent)}
+.ans p{font-size:.88rem}
+.ans .by{font:400 .7rem/1.3 var(--mono);color:var(--muted)}
+.gridwrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.84rem;min-width:520px}
+th,td{border-bottom:1px solid var(--line);padding:.5rem;text-align:left;vertical-align:top}
+th{font:500 .7rem/1.2 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+td.r{white-space:nowrap}
+.jury{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.2rem;align-items:center}
+.seats{display:grid;grid-template-columns:repeat(6,22px);gap:6px}
+.seats i{width:22px;height:22px;border-radius:50%;display:block;border:2px solid var(--human)}
+.minister{border-left:4px solid var(--accent);padding-left:1rem;display:grid;gap:.5rem}
+.statement{font:500 1.05rem/1.5 var(--display)}
+.kv{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:.35rem .8rem;font-size:.88rem}
+.kv span{font:500 .72rem/1.5 var(--mono);color:var(--muted);text-transform:uppercase}
+.preds{display:grid;gap:.6rem}
+.pred{border:1px solid var(--line);border-radius:4px;padding:.7rem;display:grid;gap:.3rem;font-size:.88rem}
+.src{font-size:.82rem;display:grid;gap:.3rem;padding-left:1.2rem;margin:0}
+.src li{overflow-wrap:anywhere}
+.rej{font-size:.84rem;color:var(--fail)}
+.empty{padding:2rem;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:6px}
+@media (max-width:860px){.layout{grid-template-columns:1fr}aside.board{position:static}.two,.vs{grid-template-columns:1fr}.bench{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<main>
+  <header class="top">
+    <div class="row"><span class="stamp">SIMULATED</span><span class="eyebrow">BadCode government · Future Proof, running</span></div>
+    <h1>Future Proof Live</h1>
+    <p>Every day one real news story goes round the Future Proof loop. Simulated citizens set the test, three answers are written blind, a gate checks them against every test, a simulated jury settles the values question, and a minister signs one small trial. Then the calendar marks the predictions.</p>
+    <p class="banner"><b>Nothing here is real people taking part.</b> The citizens and jurors are AI stand-ins drawn by lot from a pool built from real census figures. Real polls sit beside them where they exist. The news, the sources and the dates are real. Not a real party. Yet.</p>
+  </header>
+
+  <div id="view"></div>
+</main>
+
+<script>
+const $=(s,el=document)=>el.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const day=d=>{const[y,m,dd]=d.split('-').map(Number);return dd+' '+MON[m-1]+' '+y};
+const POST={'prime-minister':'Prime Minister',chancellor:'Chancellor',foreign:'Foreign Secretary',home:'Home Secretary',education:'Education Secretary',defence:'Defence Secretary',health:'Health Secretary','work-pensions':'Work and Pensions Secretary',housing:'Housing Secretary','energy-climate':'Energy and Climate Secretary'};
+const RES={pass:['p','pass'],fail:['f','fail'],unclear:['u','unclear']};
+let FEED=null;
+
+async function load(){
+  try{const r=await fetch('feed.json',{cache:'no-store'});FEED=await r.json()}catch(e){FEED=null}
+  route();
+}
+window.addEventListener('hashchange',route);
+function route(){
+  const v=$('#view');
+  if(!FEED){v.innerHTML='<div class="empty">The feed hasn’t been built yet. It appears after the first daily run.</div>';return}
+  const id=location.hash.slice(1);
+  const d=FEED.issues.find(x=>x.id===id);
+  if(d)showIssue(d);else showFeed();
+  window.scrollTo(0,0);
+}
+function passCount(d){const ids=['A','B','C'];return ids.filter(a=>d.gate.rows.filter(r=>r.answer===a).every(r=>r.result==='pass')).length}
+function showFeed(){
+  const s=FEED.scoreboard;
+  const cards=FEED.issues.map(d=>`
+    <a class="card" href="#${esc(d.id)}">
+      <div class="meta"><span class="stamp">SIMULATED</span><span>${day(d.run.news_date)}</span><span class="chip">${esc(d.issue.field)}</span><span class="chip h">${esc(POST[d.minister.post]||d.minister.post)}</span>${d.run.mode==='replay'?`<span class="replay">${esc(d.run.replay_stamp)}</span>`:'<span class="chip a">live</span>'}</div>
+      <h3>${esc(d.issue.title)}</h3>
+      <p class="q">${esc(d.issue.question)}</p>
+      <p class="out"><span class="chip ${passCount(d)?'p':'f'}">${passCount(d)} of 3 answers pass every test</span> <span class="chip h">jury: ${esc(d.jury.ruling.split(/[.:]/)[0])}</span> <span class="chip ${d.minister.decision==='signed'?'p':'f'}">${d.minister.decision}</span></p>
+    </a>`).join('');
+  $('#view').innerHTML=`
+    <div class="layout">
+      <section class="feed" aria-label="Issues, newest first">
+        <div class="eyebrow">${FEED.issues.length} issues · newest first · built ${day(FEED.built)}</div>
+        ${cards||'<div class="empty">No published issues yet.</div>'}
+      </section>
+      <aside class="board" aria-label="Scoreboard">
+        <div class="eyebrow">The calendar's scoreboard</div>
+        <div class="tiles">
+          <div class="tile"><span>Hits</span><div class="big">${s.hit}</div></div>
+          <div class="tile"><span>Misses</span><div class="big">${s.miss}</div></div>
+          <div class="tile"><span>Waiting</span><div class="big">${s.pending}</div></div>
+        </div>
+        <p class="muted" style="font-size:.85rem">${s.hit+s.miss?`Hit rate ${Math.round(s.hit_rate*100)}%.`:'Nothing has been marked yet. Predictions are only marked on their real due date, never with hindsight.'}</p>
+        <div class="eyebrow">Next to be marked</div>
+        <div class="due">${s.next_due.map(p=>`<div><b>${day(p.due)}</b><span><a href="#${esc(p.issue)}">${esc(p.short)}</a>: ${esc(p.claim)}</span></div>`).join('')||'<span class="muted">None pending.</span>'}</div>
+      </aside>
+    </div>`;
+}
+
+function showIssue(d){
+  const tests=d.citizens.tests;
+  const bars=tests.map(t=>`<div class="bar ${t.kind==='limit'?'lim':''}"><span>${t.kind==='limit'?'<span class="chip f">limit</span> ':'<span class="chip p">test</span> '}${esc(t.text)}</span><b>${t.backers}/${d.citizens.drawn}</b><div class="track"><i style="width:${t.backers/d.citizens.drawn*100}%"></i></div></div>`).join('');
+  const split=d.citizens.split&&d.poll&&d.poll.real_share!=null?`
+    <div class="vs"><div><span class="eyebrow">Simulated citizens</span><span class="num">${Math.round(d.citizens.split.sim_share*100)}%</span><span class="muted" style="font-size:.8rem">said yes, of ${d.citizens.drawn} drawn by lot</span></div>
+    <div><span class="eyebrow">Real poll · ${esc(d.poll.pollster)}</span><span class="num">${Math.round(d.poll.real_share*100)}%</span><span class="muted" style="font-size:.8rem">${esc(d.poll.fieldwork)}, ${esc(d.poll.sample)}</span></div></div>
+    <p class="muted" style="font-size:.82rem">"${esc(d.citizens.split.question)}" The gap between the two columns is part of the record: AI stand-ins are not people.</p>`:(d.poll?`<p class="muted" style="font-size:.85rem">Real poll: ${esc(d.poll.pollster)}, ${esc(d.poll.fieldwork)}: ${esc(d.poll.finding)}</p>`:'');
+  const ans=d.bench.map(b=>{const rows=d.gate.rows.filter(r=>r.answer===b.id);const f=rows.filter(r=>r.result==='fail').length,p=rows.filter(r=>r.result==='pass').length,u=rows.length-f-p;
+    return `<div class="ans"><span class="id">${b.id}</span><h3>${esc(b.title)}</h3><p>${esc(b.answer)}</p><div><span class="chip p">${p} pass</span> <span class="chip f">${f} fail</span> <span class="chip u">${u} unclear</span></div><span class="by">written blind · ${esc(b.engine)} · ${esc(b.model)}</span></div>`}).join('');
+  const testNames=[...new Set(d.gate.rows.map(r=>r.test))];
+  const grid=`<table><thead><tr><th>Test or limit</th>${['A','B','C'].map(a=>`<th>${a}</th>`).join('')}</tr></thead><tbody>${testNames.map(t=>`<tr><td>${esc(t)}</td>${['A','B','C'].map(a=>{const r=d.gate.rows.find(x=>x.answer===a&&x.test===t);if(!r)return'<td>–</td>';const[c,l]=RES[r.result];return `<td><span class="chip ${c}">${l}</span><div class="muted" style="font-size:.78rem;margin-top:.25rem">${esc(r.note)}</div></td>`}).join('')}</tr>`).join('')}</tbody></table>`;
+  const j=d.jury;const winner=j.votes.indexOf(Math.max(...j.votes));
+  const seatCols=['var(--human)','var(--accent)','var(--muted)','var(--pass)','var(--fail)'];
+  let seats='';j.options.forEach((o,i)=>{for(let k=0;k<j.votes[i];k++)seats+=`<i title="${esc(o)}" style="background:${seatCols[i]};border-color:${seatCols[i]}"></i>`});
+  const srcIdx=Object.fromEntries(d.sources.map(s=>[s.id,s]));
+  $('#view').innerHTML=`
+  <div class="detail">
+    <a class="back" href="#">← All issues</a>
+    <div style="display:grid;gap:.6rem">
+      <div class="meta" style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;font:500 .72rem/1.2 var(--mono);color:var(--muted)"><span class="stamp">SIMULATED</span><span>news of ${day(d.run.news_date)}</span><span class="chip">${esc(d.issue.field)}</span>${d.run.mode==='replay'?`<span class="replay">${esc(d.run.replay_stamp)}</span>`:'<span class="chip a">live</span>'}</div>
+      <h2>${esc(d.issue.title)}</h2>
+      <p class="statement" style="font-size:1.1rem">${esc(d.issue.question)}</p>
+      <p>${esc(d.issue.summary)} <span class="muted">[${d.issue.summary_sources.join(', ')}]</span></p>
+      <p class="muted" style="font-size:.85rem">Why today: ${esc(d.issue.slot_reason)}</p>
+    </div>
+
+    <section class="panel" aria-label="The loop">
+      <div class="ph"><h3>Watch it go round</h3><span class="stamp">SIMULATED</span></div>
+      <div class="canvas-wrap"><canvas id="loop" role="img" aria-label="This issue travelling round the Future Proof loop, station by station."></canvas></div>
+      <div class="caption"><span class="n" id="cn">1</span><div><h3 id="ct"></h3><p id="cx" style="font-size:.92rem"></p></div></div>
+      <div class="controls"><button class="primary" id="play" type="button">❚❚ Pause</button><button id="prev" type="button">← Back</button><button id="next" type="button">Next →</button></div>
+    </section>
+
+    <section class="two">
+      <div class="panel"><div class="ph"><h3>1 · The test: what ${d.citizens.drawn} simulated citizens asked for</h3></div>
+        <p class="muted" style="font-size:.8rem">Drawn by lot (seed <code>${esc(d.citizens.seed)}</code>) from ${esc(d.citizens.pool)}. Written by ${esc(d.citizens.model)} in each citizen's circumstances. Not real people.</p>
+        <div class="bars">${bars}</div>${split}</div>
+      <div class="panel"><div class="ph"><h3>In their words</h3><span class="stamp">SIMULATED</span></div>
+        <div class="voices">${d.citizens.voices.map(v=>`<div>${esc(v.text)}<small>${esc(v.who)} · simulated citizen ${esc(v.citizen)}</small></div>`).join('')}</div></div>
+    </section>
+
+    <section class="panel"><div class="ph"><h3>2 · Three answers, written blind</h3><span class="muted" style="font-size:.8rem">No writer saw another's answer.</span></div><div class="bench">${ans}</div></section>
+
+    <section class="panel"><div class="ph"><h3>3 · The gate: every answer against every test</h3></div>
+      <div class="gridwrap">${grid}</div>
+      <p><b>Verdict.</b> ${esc(d.gate.verdict)}</p>
+      ${d.gate.rejected_claims.length?`<div class="rej"><b>Struck out for having no source:</b><ul>${d.gate.rejected_claims.map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>`:'<p class="muted" style="font-size:.82rem">No claims were struck out.</p>'}</section>
+
+    <section class="panel"><div class="ph"><h3>4 · The jury: a values question for people</h3><span class="stamp">SIMULATED</span></div>
+      <p class="statement">${esc(j.question)}</p>
+      <div class="jury"><div class="seats" aria-label="${j.size} jurors' votes">${seats}</div>
+        <div class="bars">${j.options.map((o,i)=>`<div class="bar"><span><i style="display:inline-block;width:.7rem;height:.7rem;border-radius:50%;background:${seatCols[i]};margin-right:.4rem"></i>${esc(o)}${i===winner?' <span class="chip h">ruling</span>':''}</span><b>${j.votes[i]}/${j.size}</b></div>`).join('')}</div></div>
+      <p><b>Ruling.</b> ${esc(j.ruling)}</p>
+      <div class="voices">${j.reasons.map(r=>`<div>${esc(r.text)}<small>simulated juror ${esc(r.juror)}</small></div>`).join('')}</div>
+      <p class="muted" style="font-size:.8rem">${j.size} simulated jurors drawn by lot (seed <code>${esc(j.seed)}</code>), none of whom set the test. Review on ${day(j.review)}. Jury: ${j.size}. Should be real people.</p></section>
+
+    <section class="panel"><div class="ph"><h3>5 · The minister ${d.minister.decision==='signed'?'signs':'refuses'}</h3><span class="chip ${d.minister.decision==='signed'?'p':'f'}">${d.minister.decision}</span></div>
+      <div class="minister"><span class="eyebrow">${esc(POST[d.minister.post]||d.minister.post)} · a simulated minister</span><p class="statement">${esc(d.minister.statement)}</p></div>
+      <div class="kv"><span>Trial</span><div>${esc(d.minister.trial)}</div><span>Fails if</span><div>${esc(d.minister.fail_number)}</div><span>Stops</span><div>${day(d.minister.stop)} unless it passes</div></div></section>
+
+    <section class="panel"><div class="ph"><h3>6 · The clock: what the calendar will mark</h3></div>
+      <div class="preds">${d.predictions.map(p=>`<div class="pred"><div><span class="chip ${p.result==='hit'?'p':p.result==='miss'?'f':'a'}">${p.result==='pending'?'due '+day(p.due):p.result+' · marked '+day(p.marked_on)}</span> <span class="chip">chance given: ${Math.round(p.prior*100)}%</span></div><b>${esc(p.claim)}</b><span class="muted" style="font-size:.82rem">Counts if: ${esc(p.rule)}</span></div>`).join('')}</div></section>
+
+    <section class="panel"><div class="ph"><h3>Sources</h3><span class="muted" style="font-size:.8rem">Every fact on this page points at one of these.</span></div>
+      <ol class="src">${d.sources.map(s=>`<li><b>${esc(s.id)}</b> <a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title)}</a> · ${esc(s.publisher)}${s.date?' · '+day(s.date):''}</li>`).join('')}</ol>
+      <p class="muted" style="font-size:.78rem">Made by: ${esc(d.made_by.workers.join(' → '))}. ${esc(d.made_by.note||'')}</p></section>
+  </div>`;
+  startLoop(d);
+}
+
+/* ---------- the loop for one issue ---------- */
+let LOOP=null;
+function startLoop(d){
+  if(LOOP){cancelAnimationFrame(LOOP.raf);clearInterval(LOOP.timer)}
+  const cv=$('#loop'),ctx=cv.getContext('2d'),reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const j=d.jury,win=j.votes.indexOf(Math.max(...j.votes));
+  const fails=a=>d.gate.rows.some(r=>r.answer===a&&r.result==='fail');
+  const top=[...d.citizens.tests].sort((a,b)=>b.backers-a.backers)[0];
+  const ST=[
+    {k:'ask',name:'Set the test',tag:'simulated citizens',h:1,t:'Simulated citizens set the test',x:`${d.citizens.drawn} drawn by lot. Most backed: "${top.text}" (${top.backers}).`},
+    {k:'queue',name:'The queue',tag:'public rule',h:0,t:'A public rule picked it',x:d.issue.slot_reason},
+    {k:'bench',name:'Rival answers',tag:'written blind',h:0,t:'Three answers, written blind',x:d.bench.map(b=>b.id+': '+b.title).join(' · ')},
+    {k:'gate',name:'The gate',tag:'checks',h:0,t:'Every answer against every test',x:d.gate.verdict},
+    {k:'jury',name:'The jury',tag:'simulated · by lot',h:1,t:'A values question for the jury',x:`${j.question} Ruling: ${j.options[win]} (${j.votes[win]} of ${j.size}).`},
+    {k:'minister',name:'Minister signs',tag:'one small trial',h:1,t:`The minister ${d.minister.decision==='signed'?'signs':'refuses'}`,x:d.minister.trial},
+    {k:'clock',name:'The clock',tag:'real dates',h:0,t:'The calendar marks it',x:d.predictions.map(p=>day(p.due)+': '+p.claim).join(' · ')},
+    {k:'out',name:'Wider or undo',tag:'everyone sees',h:1,t:'Pass goes wider. Fail is undone.',x:`Fails if: ${d.minister.fail_number}. Stops ${day(d.minister.stop)} unless it passes.`}
+  ];
+  const N=ST.length;let W,H,cx,cy,rx,ry,R,fs,pos,cur=0,t0=0,tokFrom=0,tokTo=0,tokT0=-9,tokAng=0;
+  const angOf=i=>-Math.PI+i*2*Math.PI/N;
+  const parts=Array.from({length:50},()=>({a:Math.random()*6.283,v:.12+Math.random()*.1,o:Math.random()-.5}));
+  const crowd=Array.from({length:16},()=>{const r=Math.sqrt(Math.random())*.62,a=Math.random()*6.283;return{x:Math.cos(a)*r,y:Math.sin(a)*r,p:Math.random()*6}});
+  const tok=()=>{const s=getComputedStyle(document.documentElement),g=n=>s.getPropertyValue(n).trim();return{sf:g('--surface'),ink:g('--ink'),mu:g('--muted'),ln:g('--line'),ac:g('--accent'),acs:g('--accent-soft'),ok:g('--pass'),bad:g('--fail'),hu:g('--human'),hus:g('--human-soft'),st:g('--stamp'),disp:'"Archivo",Arial,sans-serif',mono:'"IBM Plex Mono",monospace'}};
+  function layout(){const w=cv.parentElement.clientWidth,narrow=w<620;W=w;H=Math.round(narrow?w*1.3:w*.56);const dpr=Math.min(devicePixelRatio||1,2);cv.width=W*dpr;cv.height=H*dpr;cv.style.height=H+'px';ctx.setTransform(dpr,0,0,dpr,0,0);cx=W/2;cy=H*.49;rx=W*(narrow?.36:.38);ry=H*(narrow?.36:.34);R=Math.max(22,Math.min(42,Math.min(W,H)*.075));fs=Math.max(11,Math.min(14,W/62));pos=ST.map((_,i)=>({x:cx+rx*Math.cos(angOf(i)),y:cy+ry*Math.sin(angOf(i))}))}
+  const ell=(a,k)=>({x:cx+rx*k*Math.cos(a),y:cy+ry*k*Math.sin(a)});
+  const ease=u=>u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;
+  const circ=(x,y,r)=>{ctx.beginPath();ctx.arc(x,y,r,0,6.283)};
+  function cross(x,y,s,col){ctx.strokeStyle=col;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x-s,y-s);ctx.lineTo(x+s,y+s);ctx.moveTo(x+s,y-s);ctx.lineTo(x-s,y+s);ctx.stroke()}
+  function icon(i,x,y,t,on,c){const k=ST[i].k,r=R;ctx.save();ctx.translate(x,y);ctx.lineCap='round';
+    if(k==='ask'){crowd.forEach(p=>{const jj=on?Math.sin(t*3+p.p)*r*.05:0;circ(p.x*r+jj,p.y*r-jj,r*.085);ctx.fillStyle=c.hu;ctx.fill()})}
+    if(k==='queue'){const si=['parliament','longest-wait','alarm'].indexOf(d.issue.slot);for(let q=0;q<3;q++){ctx.fillStyle=q===si?c.ac:c.ln;ctx.beginPath();ctx.roundRect(-r*.5,(q-1)*r*.3-r*.08,r,r*.16,r*.08);ctx.fill()}}
+    if(k==='bench'){const sp=on?1+.12*Math.sin(t*2.5):1;['A','B','C'].forEach((L,q)=>{ctx.save();ctx.translate((q-1)*r*.42*sp,0);ctx.rotate((q-1)*.18);ctx.fillStyle=c.sf;ctx.strokeStyle=c.ink;ctx.lineWidth=1.2;ctx.beginPath();ctx.roundRect(-r*.18,-r*.27,r*.36,r*.54,2);ctx.fill();ctx.stroke();ctx.fillStyle=c.ink;ctx.font='600 '+Math.round(r*.26)+'px '+c.mono;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(L,0,0);if(cur>=3&&fails(L))cross(r*.08,-r*.2,r*.07,c.bad);ctx.restore()})}
+    if(k==='gate'){ctx.strokeStyle=c.ink;ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(-r*.42,-r*.5);ctx.lineTo(-r*.42,r*.5);ctx.moveTo(r*.42,-r*.5);ctx.lineTo(r*.42,r*.5);ctx.stroke();ctx.strokeStyle=on?(Math.sin(t*6)>0?c.bad:c.ink):c.mu;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(-r*.42,-r*.05);ctx.lineTo(r*.42,-r*.05);ctx.stroke();if(on)for(let q=0;q<3;q++){const u=(t*.7+q/3)%1;circ((q-1)*r*.22,r*.45-Math.sin(u*Math.PI)*r*.45,r*.06);ctx.fillStyle=fails('ABC'[q])?c.bad:c.ok;ctx.fill()}}
+    if(k==='jury'){const cols=[c.hu,c.ac,c.mu,c.ok,c.bad];let s=0;const rot=on?t*.25:0;j.votes.forEach((v,o)=>{for(let q=0;q<v;q++,s++){const a=rot+s/j.size*6.283-1.571;circ(Math.cos(a)*r*.62,Math.sin(a)*r*.62,r*.11);ctx.fillStyle=cols[o];ctx.fill()}});ctx.fillStyle=c.hu;ctx.font='600 '+Math.round(r*.28)+'px '+c.mono;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(j.votes[win]+'/'+j.size,0,0)}
+    if(k==='minister'){ctx.strokeStyle=c.hu;ctx.lineWidth=2;circ(-r*.1,-r*.22,r*.17);ctx.stroke();ctx.beginPath();ctx.ellipse(-r*.1,r*.4,r*.34,r*.3,0,Math.PI,0);ctx.stroke();if(cur>=5){if(d.minister.decision==='signed'){const u=i===cur?Math.min(1,(performance.now()/1000-t0)/.8):1;ctx.strokeStyle=c.ok;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(r*.2,-r*.05);if(u<.4){ctx.lineTo(r*.2+r*.14*u/.4,-r*.05+r*.15*u/.4)}else{ctx.lineTo(r*.34,r*.1);const v=(u-.4)/.6;ctx.lineTo(r*.34+r*.26*v,r*.1-r*.35*v)}ctx.stroke()}else cross(r*.42,-r*.1,r*.12,c.bad)}}
+    if(k==='clock'){ctx.strokeStyle=c.ink;ctx.lineWidth=1.6;circ(0,0,r*.6);ctx.stroke();for(let q=0;q<12;q++){const a=q/12*6.283;ctx.beginPath();ctx.moveTo(Math.cos(a)*r*.5,Math.sin(a)*r*.5);ctx.lineTo(Math.cos(a)*r*.58,Math.sin(a)*r*.58);ctx.stroke()}const a=t*(on?3:.25)-1.571;ctx.strokeStyle=on?c.ac:c.ink;ctx.lineWidth=2.4;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.cos(a)*r*.45,Math.sin(a)*r*.45);ctx.stroke()}
+    if(k==='out'){if(on){for(let q=0;q<3;q++){const u=(t*.6+q/3)%1;circ(r*.25,-r*.25,u*r*.6);ctx.strokeStyle=c.ok;ctx.globalAlpha=1-u;ctx.lineWidth=1.5;ctx.stroke()}ctx.globalAlpha=1}ctx.strokeStyle=c.ok;ctx.lineWidth=2.4;ctx.beginPath();ctx.moveTo(-r*.15,r*.15);ctx.lineTo(r*.4,-r*.4);ctx.stroke();ctx.strokeStyle=c.bad;ctx.beginPath();ctx.arc(-r*.15,r*.15,r*.32,-.2,Math.PI*.9);ctx.stroke()}
+    ctx.restore()}
+  function draw(t){const c=tok();ctx.clearRect(0,0,W,H);
+    ctx.save();ctx.setLineDash([2,6]);ctx.strokeStyle=c.mu;ctx.globalAlpha=.55;ctx.lineWidth=1.5;ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,0,6.283);ctx.stroke();ctx.restore();
+    if(cur>0){ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,angOf(0),tokAng);ctx.strokeStyle=c.ac;ctx.globalAlpha=.45;ctx.lineWidth=3;ctx.stroke();ctx.globalAlpha=1}
+    parts.forEach(p=>{const q=ell(reduce?p.a:p.a+t*p.v,1+p.o*.06);circ(q.x,q.y,1.6);ctx.fillStyle=c.mu;ctx.globalAlpha=.45;ctx.fill()});ctx.globalAlpha=1;
+    ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=c.st;ctx.font='700 '+Math.round(fs*.85)+'px '+c.mono;ctx.fillText('SIMULATED',cx,cy-fs*1.2);ctx.fillStyle=c.ink;ctx.font='800 '+Math.round(fs*1.25)+'px '+c.disp;ctx.fillText(d.issue.short,cx,cy+fs*.4);ctx.fillStyle=c.mu;ctx.font='500 '+Math.round(fs*.75)+'px '+c.mono;ctx.fillText('news of '+day(d.run.news_date),cx,cy+fs*1.8);
+    for(let i=0;i<N;i++){const s=ST[i],{x,y}=pos[i],on=i===cur;if(on&&!reduce){circ(x,y,R+7+Math.sin(t*3)*2.5);ctx.fillStyle=c.acs;ctx.fill()}circ(x,y,R);ctx.fillStyle=s.h?c.hus:c.sf;ctx.fill();ctx.lineWidth=on?3:1.5;ctx.strokeStyle=on?c.ac:(s.h?c.hu:c.ln);ctx.stroke();ctx.globalAlpha=i<=cur?1:.55;icon(i,x,y,t,on,c);ctx.globalAlpha=1;
+      const below=y>cy-ry*.2,ly=below?y+R+fs*1.1:y-R-fs*1.55;ctx.textAlign='center';ctx.fillStyle=on?c.ac:c.ink;ctx.font='700 '+Math.round(fs*1.05)+'px '+c.disp;ctx.fillText(s.name,x,ly);ctx.fillStyle=s.h?c.hu:c.mu;ctx.font='500 '+Math.round(fs*.72)+'px '+c.mono;ctx.fillText(s.tag.toUpperCase(),x,ly+fs*1.05)}
+    const u=reduce?1:Math.min(1,(t-tokT0)/.9);tokAng=tokFrom+(tokTo-tokFrom)*ease(Math.max(0,u));const q=ell(tokAng,.74);ctx.font='600 '+Math.round(fs*.78)+'px '+c.mono;const label=d.issue.short,tw=ctx.measureText(label).width+14,th=fs*1.6;ctx.fillStyle=c.ac;ctx.beginPath();ctx.roundRect(q.x-tw/2,q.y-th/2,tw,th,th/2);ctx.fill();ctx.fillStyle=c.sf;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(label,q.x,q.y+.5)}
+  function go(i){const prev=cur;cur=(i+N)%N;const now=performance.now()/1000;t0=now;tokFrom=tokAng;if(cur===0&&prev===N-1)tokFrom=angOf(N-1)-6.283;tokTo=angOf(cur);tokT0=now;$('#cn').textContent=cur+1;$('#ct').textContent=ST[cur].t;$('#cx').textContent=ST[cur].x;if(reduce)draw(now)}
+  const playBtn=$('#play');
+  function stop(){clearInterval(LOOP.timer);LOOP.timer=null;playBtn.textContent='▶ Play'}
+  function play(){if(LOOP.timer){stop();return}playBtn.textContent='❚❚ Pause';LOOP.timer=setInterval(()=>go(cur+1),4800)}
+  LOOP={raf:0,timer:null};
+  playBtn.onclick=play;$('#prev').onclick=()=>{stop();go(cur-1)};$('#next').onclick=()=>{stop();go(cur+1)};
+  cv.onclick=e=>{const b=cv.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;let bi=-1,bd=1e9;pos.forEach((p,i)=>{const dd=Math.hypot(p.x-x,p.y-y);if(dd<bd){bd=dd;bi=i}});if(bd<R*1.6){stop();go(bi)}};
+  window.onresize=()=>{layout();if(reduce)draw(performance.now()/1000)};
+  layout();tokAng=tokFrom=tokTo=angOf(0);go(0);
+  if(!reduce){const f=now=>{draw(now/1000);LOOP.raf=requestAnimationFrame(f)};LOOP.raf=requestAnimationFrame(f);LOOP.timer=setInterval(()=>go(cur+1),4800)}else{playBtn.textContent='▶ Play';draw(0)}
+}
+load();
+</script>
