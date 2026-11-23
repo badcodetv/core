@@ -8,8 +8,8 @@ Real photo as the look.
 **The pitch (shorts list #27):** a heist-film planning montage (blueprints, a laser grid) for the 10p chocolate frog in a
 corner-shop jar. They pull it off; the price has gone up. "It was 10p when we started planning."
 
-**The point:** prices rise faster than ordinary plans can keep up (inflation eats the plan). **The way out:** ⬜ not
-decided (Claude to propose; Jack or Kai picks). The way-out review (2026-11-21) had dropped #27 as "inflation, covered
+**The point:** prices rise faster than ordinary plans can keep up (inflation eats the plan). **The way out:** money that keeps up
+(Jack's pick 2026-11-23 from Claude's three options): pay or savings tied to prices, so the plan still works. The way-out review (2026-11-21) had dropped #27 as "inflation, covered
 elsewhere"; Jack picked it anyway.
 
 ## Checks owed
@@ -22,6 +22,7 @@ elsewhere"; Jack picked it anyway.
 | Step | State |
 | --- | --- |
 | Set up (Drive `Shorts/The Fredo Job`, folder, repo) | done 2026-11-23 |
-| Way out / beats | ⬜ |
+| Way out | done 2026-11-23: money that keeps up |
+| Beats | ⬜ |
 | Look | Heist and caper, real-photo layouts; not found yet |
 | Sound | Not decided |
