@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental dark electronic TV tension bed, 118 BPM, D minor. Low analog mono synth bass ostinato, steady eighth notes hammering one dark root with occasional octave hops, filter creeping open very slowly. Dry closed hi-hat ticking evenly like a wall clock, no kick drum. Cold detuned pad swelling in from silence underneath, long held minor chords. Sparse dialogue-friendly mix: sub and highs only, the midrange left empty, no melody at all. Controlled, ominous boardroom suspense, steady from the first bar, ends on a hard stop.",
+  "exclude": "vocals, singing, choir, spoken word, bright lead synth, melody, EDM drop, riser build-up, guitar, four-on-the-floor kick, piano lead, uplifting",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    25
+  ],
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": true,
+  "title": "den-music-r1-analog-synth-pulse",
+  "mode": "custom",
+  "workspace": "short-the-den"
+}

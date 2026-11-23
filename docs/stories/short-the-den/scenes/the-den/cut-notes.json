@@ -1,19 +1,20 @@
 {
- "round": 2,
+ "round": 3,
  "plan": [
   {
-   "h": "Rough cut 2",
+   "h": "Rough cut 3: Jack's chat notes (2026-11-23)",
    "items": [
-    "Outro: the factory window steams up and the condensation spells out the BadCode logo, then it resolves into the full logo.",
-    "Everything else as cut 1."
+    "Lip-sync fixed. Measured cut 2 on the assembled film: all three \"I'm out\"s were 0.25 to 0.33 s early, and the nurse was off phrase by phrase. The voices stay where they were; each talking clip now starts where its mouth opens just before its voice (the three investors and the minister's pitch).",
+    "The nurse re-voiced in her locked voice, words unchanged, without pause tags: her clip barely pauses, so a plain read matches her mouth phrase for phrase (\"One ward\" on her pursed lips, then \"Six months\", the middle line, and \"you stop paying me\" landing on the p and m).",
+    "End card: the National Audit Office finding, as first pitched: only 8% of £432 billion of the government's biggest projects had a robust plan to find out if they worked (Evaluating government spending, HC 860, Dec 2021, read at source)."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Does the minister's pitch sync read right? (flagged)",
-    "Trim toward ~20 s: which beats or lines go?",
-    "Music: a Suno round on your credits?"
+    "Music: four pitch-show-style beds are being made on Suno; links to follow.",
+    "The minister's head turns away mid-pitch for a moment (in cut 2 too): keep, or cut to the panel there?",
+    "Trim toward ~20 s: which beats or lines go?"
    ]
   }
  ],

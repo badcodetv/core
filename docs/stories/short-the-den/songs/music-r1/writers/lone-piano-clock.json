@@ -1,0 +1,13 @@
+{
+  "name": "lone-piano-clock",
+  "style": "Instrumental minimalist suspense underscore, 90 BPM. One felt-muffled upright piano taps a single low note again and again, steady and patient; now and then two neighbouring keys are struck together, a sour half-step cluster that lands like a raised eyebrow, then rings out. Under it, a real brass mechanical clock ticks dry and close, exactly on the beat. Far beneath, a barely-there sub-bass hum. Long rests and wide empty gaps, as if the whole room is holding its breath. Deadpan, poker-faced, quietly comic tension for a parody pitch scene. Dry, intimate close-miked room, very low and sparse so spoken voices sit easily on top. Ends on a lone note and a final tick.",
+  "exclude": "vocals, choir, humming, spoken word, strings, orchestra, drums, percussion kit, cymbals, synth lead, arpeggiator, melody hook, guitar, brass, build-up, drop, riser",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 20,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false
+}

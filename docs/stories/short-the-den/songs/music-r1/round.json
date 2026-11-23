@@ -1,0 +1,54 @@
+[
+  {
+    "name": "analog-synth-pulse",
+    "style": "Instrumental dark electronic TV tension bed, 118 BPM, D minor. Low analog mono synth bass ostinato, steady eighth notes hammering one dark root with occasional octave hops, filter creeping open very slowly. Dry closed hi-hat ticking evenly like a wall clock, no kick drum. Cold detuned pad swelling in from silence underneath, long held minor chords. Sparse dialogue-friendly mix: sub and highs only, the midrange left empty, no melody at all. Controlled, ominous boardroom suspense, steady from the first bar, ends on a hard stop.",
+    "exclude": "vocals, singing, choir, spoken word, bright lead synth, melody, EDM drop, riser build-up, guitar, four-on-the-floor kick, piano lead, uplifting",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 25,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": true
+  },
+  {
+    "name": "staccato-low-strings",
+    "style": "Instrumental underscore for a quiet, tense television studio: a jittery founder stands alone on a bare floor, pitching to a row of stern investors who sit still and say nothing. Lead: a section of cellos and double basses in the low register, playing short, dry, clipped staccato eighth-notes at 100 BPM, a steady nagging pulse in a minor key that rarely changes chord. Underneath, soft timpani rolls that swell and fall back like held breath. Upper strings stay low and sparse, only long quiet held notes, no melody above, leaving the middle and top open for spoken dialogue. Slow-burning orchestral TV-drama suspense, restrained dynamics that creep upward, then one muted French horn and trombone swell as the verdict lands, cut short into silence. Close, dry studio-orchestra recording, broadcast mix",
+    "exclude": "synthesizer, electronic, drum kit, choir, vocals, singing, high violin melody",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 25,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": false
+  },
+  {
+    "name": "lone-piano-clock",
+    "style": "Instrumental minimalist suspense underscore, 90 BPM. One felt-muffled upright piano taps a single low note again and again, steady and patient; now and then two neighbouring keys are struck together, a sour half-step cluster that lands like a raised eyebrow, then rings out. Under it, a real brass mechanical clock ticks dry and close, exactly on the beat. Far beneath, a barely-there sub-bass hum. Long rests and wide empty gaps, as if the whole room is holding its breath. Deadpan, poker-faced, quietly comic tension for a parody pitch scene. Dry, intimate close-miked room, very low and sparse so spoken voices sit easily on top. Ends on a lone note and a final tick.",
+    "exclude": "vocals, choir, humming, spoken word, strings, orchestra, drums, percussion kit, cymbals, synth lead, arpeggiator, melody hook, guitar, brass, build-up, drop, riser",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 20,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": false
+  },
+  {
+    "name": "industrial-hits-timeline",
+    "style": "Instrumental cinematic industrial underscore, 110 BPM, minor, tense and dry, 43 seconds. Timeline: 0:00-0:32 steady sparse pulse of low taiko hits and struck sheet metal, small anvil ticks on the offbeat, over a dark humming warehouse drone; wide gaps between hits, no melody, mid-range left open for dialogue. 0:30-0:32 short reverse riser. 0:32 one massive low boom, single hit. 0:33-0:43 drums stop, drone thins to a quiet tail with distant rain on glass, fade to silence.",
+    "exclude": "piano, guitars, bright synths, choir, vocals, singing, melodic lead",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 43,
+    "maxMode": false
+  }
+]

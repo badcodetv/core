@@ -25,9 +25,12 @@ CLAMP = 'scale=in_range=full:out_range=limited,format=yuv420p,lutyuv=y=clip(val\
 ENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', '-color_range', 'tv',
        '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709']
 VF = f'scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}'
-CARD = ["Programmes like Scared Straight were tested.",
-        "The Cochrane and Campbell research reviews found they increased offending."]
-SOURCE = "Petrosino et al., Cochrane Database of Systematic Reviews / Campbell Systematic Reviews, 2013"
+# Jack, 2026-11-23: "the quote is wrong, it should be about government investing going wrong, you showed me the original
+# quote please use that" (the pitch's NAO fact). Read at source 2026-11-23 (report PDF, para 8): "only nine out of 108 major
+# projects – representing £35 billion (8%) of £432 billion in expenditure – had plans for robust impact evaluation in place".
+CARD = ["The National Audit Office looked at £432 billion of the government's biggest projects.",
+        "Only 8% had a robust plan to find out if they worked."]
+SOURCE = "National Audit Office, Evaluating government spending (HC 860), December 2021"
 # line -> (who, take under audio/, tempo, text)
 LINES = {
     '01': ('narrator', 'casting/narrator--en-gb-podcaster-2.wav', 1.0, "Next into the den: a government minister, asking for two billion pounds."),
@@ -37,19 +40,21 @@ LINES = {
     '05a': ('inv-a', 'casting/inv-a--en-gb-tutor-5.wav', 0.97, "I'm out."),
     '05c': ('inv-c', 'casting/inv-c--en-gb-assistant-5.wav', 0.97, "I'm out."),
     '05d': ('inv-d', 'casting/inv-d--en-gb-assistant-6.wav', 0.97, "I'm out."),
-    '06': ('nurse', 'lines-sync/06-nurse--L-1.wav', 1.05, "One ward. Six months. If readmissions don't fall by a tenth, you stop paying me."),
+    '06': ('nurse', 'lines-sync/06-nurse--N5-2.wav', 1.02, "One ward. Six months. If readmissions don't fall by a tenth, you stop paying me."),
     '07': ('badcode', 'lines/07-badcode-in--e.wav', 1.0, "I'm in."),
 }
 NAMES = {'narrator': 'Narrator', 'minister': 'The minister', 'badcode': 'BadCode', 'nurse': 'The nurse',
          'inv-a': 'Investor A', 'inv-c': 'Investor C', 'inv-d': 'Investor D'}
-PITCH_IN = 1.68  # MIN1a: the clip time 0.15 s before his mouth starts "Every" (measure with row-measure.py)
+PITCH_IN = 1.042  # MIN1a, refit 2026-11-23 on the tracked mouth (den_refit.py; r2's 1.68 measured off on the assembled cut)
 GLASS = dict(cx=540, cy=820, w=560, fade=0.5)  # the logo's place on the GLASSa window (1080x1920 px)
 # Jack, 2026-11-22: "an outro where it goes onto the factory glass and the condensation spells out badcode with the logo"
 TALK = {'MIN1a', 'MIN2a', 'INVAb', 'INVCa', 'INVDa', 'NURSEc'}  # their own audio is Omni's voice: muted, room laid under
 # (beat, title, clip key, still, in, dur, hold-first-frame, [(line, the take FILE's start, s into the shot)], what we see)
 # The pitch: the take runs whole from the panel shot; the cut to MIN1a falls in the pause before "Every teenager" (voice
 # 2.30 s in, x1.07) and PITCH_IN puts his mouth's "Every" 0.04 s before it; the panel again for "Scare them straight".
-# Fitted file starts (clip time, sync/phrasefits.json) minus the in-point: MIN2a 3.408; INVAb 2.007; INVCa 2.439; INVDa 3.315; NURSEc L-1 0.842 x1.05.
+# Round 3 (2026-11-23): voices unchanged; talking in-points moved so each mouth opens 0.05 s before its voice (den_refit.py,
+# strips by eye: INVAb opens 2.17, INVCa 3.91, INVDa 3.54). The nurse re-voiced plain, no pause tags ("One ward, six
+# months.", take N5-2): its phrase gaps match her mouth's ("One" purses at clip 0.97, "Six" 2.46, the p/m of "paying me" 6.5/6.8). Round 1-2 fitted file starts: MIN2a 3.408; INVAb 2.007; INVCa 2.439; INVDa 3.315; NURSEc L-1 0.842 x1.05.
 SHOTS = [
     ('stairs', '1. Next into the den', 'STAIRSb', 'STAIRS', 0.0, 6.2, 0, [('01', 0.35)], 'The minister comes down the iron stairs'),
     ('listen', '2. The pitch', 'WIDEa', 'WIDE', 3.0, 2.35, 0, [('02', 0.2)], 'The panel listens: "Two billion pounds."'),
@@ -57,12 +62,12 @@ SHOTS = [
     ('react', '2. The pitch', 'WIDEa', 'WIDE', 0.5, 1.5, 0, [], 'The panel, over "Scare them straight"'),
     ('ask', '3. How will you know?', 'BCASKa', 'BC', 0.6, 2.6, 0, [('03', 0.15)], 'BadCode leans in'),
     ('feeling', '4. A good feeling', 'MIN2a', 'MIN', 2.8, 2.6, 0, [('04', 0.608)], 'The grin holds'),
-    ('outa', '5. I\'m out', 'INVAb', 'INVA', 1.6, 1.5, 0, [('05a', 0.407)], 'Investor A'),
-    ('outc', '5. I\'m out', 'INVCa', 'INVC', 2.0, 1.5, 0, [('05c', 0.439)], 'Investor C'),
-    ('outd', '5. I\'m out', 'INVDa', 'INVD', 2.9, 1.5, 0, [('05d', 0.415)], 'Investor D'),
-    ('nurse', '6. The nurse', 'NURSEc', 'NURSE', 0.6, 7.0, 0, [('06', 0.242)], 'One ward, six months'),
+    ('outa', '5. I\'m out', 'INVAb', 'INVA', 1.896, 1.5, 0, [('05a', 0.407)], 'Investor A'),
+    ('outc', '5. I\'m out', 'INVCa', 'INVC', 3.563, 1.5, 0, [('05c', 0.439)], 'Investor C'),
+    ('outd', '5. I\'m out', 'INVDa', 'INVD', 3.272, 1.5, 0, [('05d', 0.415)], 'Investor D'),
+    ('nurse', '6. The nurse', 'NURSEc', 'NURSE', 0.8, 7.0, 0, [('06', 0.03)], 'One ward, six months'),
     ('in', '7. I\'m in', 'BCINa', 'BC', 4.0, 3.2, 0, [('07', 1.6)], 'BadCode leans right in'),
-    ('card', '8. The evidence', None, None, 0, 5.0, 0, [], 'The Cochrane and Campbell finding'),
+    ('card', '8. The evidence', None, None, 0, 5.0, 0, [], 'The National Audit Office finding'),
     ('glass', '9. The logo on the glass', 'GLASSa', 'GLASS', 0.5, 5.0, 0, [], 'The window steams up; the condensation clears in the shape of the BadCode logo'),
 ]
 
@@ -164,8 +169,8 @@ def main():
            'intro': 'A TV pitch-show parody: a minister wants £2bn to scare teenagers straight on a good feeling; everyone is out. A nurse offers one ward and the number that proves her wrong; BadCode is in. The evidence closes it.',
            'fps': FPS, 'total': total, 'beats': beats, 'video': vids, 'audio': audio, 'events': events,
            'flags': ['No music yet.',
-                     'Lip-sync fitted per line (scenes sync/phrasefits.json): the nurse re-voiced with a pause tag (4/4 phrases in time); the minister\'s "Scare them straight" plays over the panel (his clip pauses longer there).',
-                     'End card wording is Jack\'s, sourced (Petrosino et al. 2013).']}
+                     'Lip-sync round 3: voices unchanged, each talking clip\'s in-point moved so the mouth opens just before its voice (scripts/shorts/den_refit.py; measured on the assembled cut with row-measure.py).',
+                     'End card: the NAO finding (Evaluating government spending, HC 860, Dec 2021), read at source.']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4')}))
 

@@ -8,8 +8,8 @@
 A short (9:16, about 20 s): a parody of a TV investors' pitch show. A smooth government minister asks for £2bn to take
 every teenager round a prison and "scare them straight"; asked how he'll know it works, he has "a good feeling", and
 every investor is out. A nervous nurse pitches one ward for six months with the number that would prove her wrong;
-BadCode is in. The point: no policy without its test. It ends on the evidence: Scared Straight-type programmes were
-tested, and the Cochrane and Campbell reviews found they increased offending.
+BadCode is in. The point: no policy without its test. It ends on the evidence: the National Audit Office found only 8% of
+the government's £432bn of major projects had a robust plan to find out if they worked.
 
 ## Look
 Jack, 2026-11-22: "use unsplash" and "dragons den warehouse set please". Real-looking photographs of a TV pitch
@@ -34,7 +34,9 @@ Status: EXPLORING (stills not made). Flow project: `c9bd669c-40b7-4009-b17c-24f3
 - **The nurse**: invented; scrubs, a clipboard.
 
 ## Sound
-Music: not decided (run story-style). Any Suno track is music and sound effects only, workspace `short-the-den`.
+Music: EXPLORING. Jack, 2026-11-23: "please make dragons den like backround music. thanks": an instrumental bed under the
+dialogue with the feel of that kind of show (never its theme or any copy of it). Round 1: `songs/music-r1/` (variations).
+Any Suno track is music and sound effects only, workspace `short-the-den`.
 Voices LOCKED (Jack, 2026-11-22, voices page https://claude.ai/artifact/FjVZTA2eaYAZtZJpmKf7oc): Google library voices,
 plain reads on `gemini-3.8-flash-tts`, no style. Narrator `en-gb-podcaster-2`; minister `en-gb-tutor-9`; nurse
 `en-gb-advisor-7`; BadCode `en-gb-podcaster-9`; Investor A `en-gb-tutor-5`; Investor C `en-gb-assistant-5`;
@@ -43,12 +45,14 @@ Investor D `en-gb-assistant-6`. Line takes in the media folder's `audio/lines/` 
 
 ## Outro
 The den's factory window (Flow clip GLASSa) steams up and the condensation clears in the exact shape of the brand
-logo file, then resolves into the full logo (`scripts/shorts/den_glass_logo.py`; Jack, 2026-11-22). State: rough cut 2
+logo file, then resolves into the full logo (`scripts/shorts/den_glass_logo.py`; Jack, 2026-11-22). State: rough cut 3
 (42.8 s) on https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6.
 
 ## Story-only rules
 - The script comes first; nothing is generated until Jack agrees it ([script.md](./script.md)). Lines are Claude's drafts until Jack or Kai rewrites them.
-- The closing card is Jack's wording, sourced: Petrosino et al. 2013 (Cochrane CD002796 / Campbell 2013:5).
+- The closing card is the NAO finding (Jack, 2026-11-23: "it should be about government investing going wrong, you showed
+  me the original quote please use that"), read at source: NAO, Evaluating government spending (HC 860, Dec 2021), para 8:
+  9 of 108 major projects, £35bn (8%) of £432bn, had plans for robust impact evaluation. Was Petrosino et al. 2013 (rough cuts 1-2).
 - The nurse's numbers (one ward, six months, a tenth) are the joke's, never shown as a statistic.
 - 🔴 Parody only: our own title on release (to decide), no show name, logo, theme or real person's face.
 

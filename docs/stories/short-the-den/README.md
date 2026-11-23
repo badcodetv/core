@@ -8,7 +8,7 @@ research the internet, check pollution", then "dragons den warehouse set please"
 bet. No policy without its test.
 
 ## Checks owed
-- The closing fact read at source before release (done for the draft: Cochrane CD002796, PubMed 23862186).
+- The closing fact read at source before release (done 2026-11-23: NAO HC 860 para 8, from the report PDF).
 - A release title of our own (parody: never the show's name).
 - marketing-gatekeeper before it goes out.
 
@@ -19,4 +19,4 @@ bet. No policy without its test.
 | Script | draft 1 agreed (Jack: "go", 2026-11-22) |
 | Investors | locked (cast/) |
 | Stills, voices, clips | locked (picks.md) |
-| Cut | rough cut 2 (42.8 s), timeline https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6; condensation logo outro |
+| Cut | rough cut 3 (42.8 s), timeline https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6; lip-sync refit, NAO end card, condensation logo outro |

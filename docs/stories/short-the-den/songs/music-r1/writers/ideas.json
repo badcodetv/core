@@ -1,0 +1,18 @@
+[
+  {
+    "name": "analog-synth-pulse",
+    "idea": "Write it as a tight producer's brief for a dark electronic TV tension bed. The lead is a low analog synth playing a repeating eighth-note bass ostinato at about 118 BPM in a minor key, with a closed hi-hat ticking like a clock on top. A cold pad swells slowly underneath. Nothing melodic sits in the voice range, so the speech stays clear. Exclude bright leads, EDM drops, guitars and any vocals."
+  },
+  {
+    "name": "staccato-low-strings",
+    "idea": "Describe a scene instead of genres: a hushed, high-stakes studio where a nervous entrepreneur pitches to stern, silent investors. The lead is a section of low cellos and basses playing short, clipped staccato strokes, with soft timpani rolls and one muted brass swell when the verdict lands. Ask for slow-burning orchestral TV-drama suspense around 100 BPM. Keep the violins out of the high melody so the speech isn't covered. Exclude synths, drum kit, choir and vocals."
+  },
+  {
+    "name": "lone-piano-clock",
+    "idea": "Build the prompt around restraint. The lead is a single felt piano striking one low repeated note with an occasional dissonant minor-second cluster. Behind it are a real mechanical clock ticking at 90 BPM and a faint sub-bass drone. Say plainly that there's a lot of silence and space, as if the room is holding its breath. Ask for minimalist, deadpan, slightly comic suspense that suits a parody. Exclude strings, drums, synth leads and vocals."
+  },
+  {
+    "name": "industrial-hits-timeline",
+    "idea": "Ask for it as a timeline in the style box, for a 43-second cinematic industrial cue. Low metallic percussion and deep taiko hits lead over a dark, humming warehouse drone at about 110 BPM. It holds a steady, sparse groove for the first 32 seconds and then lands one big low impact with a short riser. After that it thins out to a quiet tail of drone and distant rain for the last ten seconds. The lead voice is struck metal and drums, not a melody, so the speech sits on top. Exclude piano, guitars, bright synths, choir and vocals."
+  }
+]

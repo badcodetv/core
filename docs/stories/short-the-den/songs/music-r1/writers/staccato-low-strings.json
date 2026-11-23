@@ -1,0 +1,13 @@
+{
+  "name": "staccato-low-strings",
+  "style": "Instrumental underscore for a quiet, tense television studio: a jittery founder stands alone on a bare floor, pitching to a row of stern investors who sit still and say nothing. Lead: a section of cellos and double basses in the low register, playing short, dry, clipped staccato eighth-notes at 100 BPM, a steady nagging pulse in a minor key that rarely changes chord. Underneath, soft timpani rolls that swell and fall back like held breath. Upper strings stay low and sparse, only long quiet held notes, no melody above, leaving the middle and top open for spoken dialogue. Slow-burning orchestral TV-drama suspense, restrained dynamics that creep upward, then one muted French horn and trombone swell as the verdict lands, cut short into silence. Close, dry studio-orchestra recording, broadcast mix",
+  "exclude": "synthesizer, electronic, drum kit, choir, vocals, singing, high violin melody",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 25,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": false
+}

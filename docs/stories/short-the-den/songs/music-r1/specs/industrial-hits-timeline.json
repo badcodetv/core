@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental cinematic industrial underscore, 110 BPM, minor, tense and dry, 43 seconds. Timeline: 0:00-0:32 steady sparse pulse of low taiko hits and struck sheet metal, small anvil ticks on the offbeat, over a dark humming warehouse drone; wide gaps between hits, no melody, mid-range left open for dialogue. 0:30-0:32 short reverse riser. 0:32 one massive low boom, single hit. 0:33-0:43 drums stop, drone thins to a quiet tail with distant rain on glass, fade to silence.",
+  "exclude": "piano, guitars, bright synths, choir, vocals, singing, melodic lead",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    30
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 43,
+  "maxMode": false,
+  "title": "den-music-r1-industrial-hits-timeline",
+  "mode": "custom",
+  "workspace": "short-the-den"
+}

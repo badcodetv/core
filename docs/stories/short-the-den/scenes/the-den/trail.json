@@ -54,5 +54,16 @@
   "url": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6",
   "what": "Rough cut 2 (42.8 s): the condensation logo outro on the den's window",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-den/scenes/the-den <out-dir>"
+ },
+ {
+  "at": "2026-11-23T11:14:52+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6",
+  "what": "Rough cut 3 (42.8 s): lip-sync refit on the picture side, nurse re-voiced plain (N5-2), NAO end card",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-den/scenes/the-den <out-dir>",
+  "decided": [
+   "the den, fix the lip syncing, the quote is wrong, it should be about government investing going wrong, you showed me the original quote please use that. thanks, please make dragons den like backround music. thanks"
+  ]
  }
 ]
