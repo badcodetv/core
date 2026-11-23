@@ -1,0 +1,12 @@
+{
+  "id": "C",
+  "title": "Give local women the brake on AI screening",
+  "answer": "Your scan, your choice. Trial replacing one reader only with willing women, assigned by lot against two human readers. Each NHS unit needs approval from a local patient panel drawn by lot; its clinical director signs. Explain each woman's allocation. Keep staff, a named human contact and two readers for anyone declining. Contracts must forbid commercial reuse of scans. Publish results by ethnicity, age and deprivation, counting women missing from the trial. Provisional failure: fewer cancers found, more cancers between screens, or median waits not cut 10%. Review waits after six months; stop on 30 November 2029 unless Parliament renews after independent safety review. Patient panels can stop participation earlier. No national rollout on inconclusive evidence.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s2"
+  ],
+  "new_sources": []
+}
