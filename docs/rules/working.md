@@ -3,6 +3,15 @@
 > Mechanics and working habits only: no look or sound belongs here (that lives in a story's `badcode.md`).
 > Originals: `archive/messy-context-2026-11-17/memory/`.
 
+## Jack 2026-11-23: "please only do desktop notifications when its time for me to type or do something"
+
+Every end of a turn fires the desktop toast (the Stop hook in `~/.claude/settings.json`). So never end a turn while
+work I started is still running (a Flow queue, the pool, a writer, a Suno run): wait on it in the same turn
+(`flow_queue_status` with `waitSeconds`, a blocking command) and end the turn only when there is something for Jack or
+Kai to look at, pick or answer. No "it's rendering, I'll tell you" turns. Permission prompts and questions toast on
+their own (the Notification hook). The project's duplicate Stop toast (`.claude/settings.local.json`) was removed the
+same day.
+
 ## Jack 2026-11-17 "why arent you reading the notes and asking me everytime": always dump the picks page's votes AND notes myself before replying or acting; never ask Jack to vote or say what he picked
 
 Before every reply on a scene with a live picks / mood board / timeline page, dump its `votes` and `notes` (ArtifactData list → the scene's `feedback/` dir) and act on them. Never end with "your move: vote on the page" or ask what he picked: he has usually already clicked or written a note, and "a maybe + a note" is an instruction.
