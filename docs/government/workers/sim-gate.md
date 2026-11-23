@@ -23,6 +23,12 @@ Run `find` for NEWS. Go on only if the stage is `bench`.
 - Delete each unsourced fact from the answer text, keeping the sentence readable, and add a line to
   `gate.rejected_claims`: `"<answer id>: <the claim>"`.
 - A claim about a named real person or company with no source is always deleted.
+- Check the clerk's `issue.summary` the same way. Anything you strike from an answer must not survive in
+  the summary either: delete it there too and list it as `"summary: <the claim>"`. A struck claim
+  reworded is still struck.
+- Never let an answer put words in an office-holder's mouth ("the Home Secretary says…") unless the
+  source is their own statement. Rewrite it as what the source says ("the government has said…").
+  Proposals are in the conditional: "would", not "does".
 
 ## 3. The table
 
@@ -31,7 +37,7 @@ For each answer A, B and C, against each citizens' test and limit, add a row:
 
 - `pass` or `fail` on a matter of fact cites the source that shows it.
 - When it's pure reasoning ("a new owner still owes the old debt"), the note says
-  `no source needed: logic`.
+  `Needs no source: it follows from what the answer says.`
 - `unclear` when the evidence doesn't settle it. That's an honest and common answer.
 - Use the evidence, not the citizens' feelings.
 

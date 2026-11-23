@@ -13,6 +13,7 @@ import { readPolicies, lintPolicies, policiesFor, policyText, policyRecord, scor
 import { execFileSync } from 'node:child_process';
 import { writeHologram } from './storyverse.mjs';
 import { readDebates } from './debates.mjs';
+import { simulationFeed, simulationPage } from './simulation.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const src = join(here, 'src'), pub = join(here, 'public'), dist = join(here, 'dist');
@@ -55,7 +56,7 @@ const SITE_DESC = `${A.lede} ${A.request.replace('fuck', 'f***')} Stories, the n
 const nav = `<nav aria-label="Channels"><ul>
 <li><a href="/stories">Stories</a>: ${S.map((s, i) => `<a href="/stories/${i + 1}">${esc(s.title)}</a>`).join(', ')}. Songs: ${S.map((s, i) => `<a href="/stories/${i + 5}">${esc(s.song)}</a>`).join(', ')}.</li>
 <li><a href="/news">News</a>: <a href="/news">Future Proof</a>, <a href="/news/2">${esc(SVP.title)}</a>${N.bulletins.length ? ` and <a href="/news/3">${esc(N.title)}</a>` : ''}</li>
-<li><a href="/government">The BadCode Government</a>: <a href="/government/2">live</a>, <a href="/government/3">every policy</a>, <a href="/government/4">the record</a>, <a href="/government/5">the arguments</a></li>
+<li><a href="/government">The BadCode Government</a>: <a href="/government/2">live</a>, <a href="/government/3">every policy</a>, <a href="/government/4">the record</a>, <a href="/government/5">the arguments</a>, <a href="/future-proof/live/">Future Proof Live (SIMULATED)</a></li>
 <li><a href="/about">About BadCode</a> and <a href="/text/100">BadCode Text</a></li>
 </ul></nav>`;
 const follow = `<h2>Follow BadCode</h2><ul>${C.socials.map(s => `<li>${s.url ? `<a href="${esc(s.url)}">${esc(s.name)}</a>` : `${esc(s.name)} (soon)`}</li>`).join('')}</ul><p>${esc(A.ai)} <a href="/how-we-made-it/">The full account</a></p><p>${esc(A.sign)} &copy; 2026 BadCode</p>`;
@@ -69,7 +70,7 @@ const plainBody = {
   story: i => `<h1>${esc(S[i].title)}</h1>${story(S[i], i)}`,
   song: i => `<h1>${esc(S[i].song)}</h1><p>The song from ${esc(S[i].title)}. ${S[i].songVideo ? `<a href="https://www.youtube.com/watch?v=${esc(S[i].songVideo)}">Watch on YouTube</a>` : 'Coming to YouTube.'}</p>`,
   news: () => `<h1>${esc(N.title)}</h1><p>${esc(N.strap)} ${esc(N.status)}</p><p>${esc(N.signoff)}</p>`,
-  gov: () => `<h1>The BadCode Government</h1><p>${esc(G.promise)}</p><p><a href="/government/scoreboard">The scoreboard</a>: every prediction we've made, and whether it held.</p><h2>The cabinet</h2><ul>${CAB.map(m => `<li><a href="/government/${m.post}"><strong>${esc(m.title)}</strong></a>: ${esc(m.line)}</li>`).join('')}</ul><p>${esc(G.notReal)}</p>`,
+  gov: () => `<h1>The BadCode Government</h1><p>${esc(G.promise)}</p><p><a href="/government/scoreboard">The scoreboard</a>: every prediction we've made, and whether it held.</p><p><a href="/future-proof/live/">Future Proof Live (SIMULATED)</a>: one real news story a day goes round the loop, with AI stand-ins for citizens drawn by lot.</p><h2>The cabinet</h2><ul>${CAB.map(m => `<li><a href="/government/${m.post}"><strong>${esc(m.title)}</strong></a>: ${esc(m.line)}</li>`).join('')}</ul><p>${esc(G.notReal)}</p>`,
   minister: m => `<h1>${esc(m.title)}</h1><p><strong>${esc(m.line)}</strong></p>${bodyHtml(STITCHED.get(m.post) || m.body)}<p><a href="/government">The whole cabinet</a>. ${esc(G.notReal)}</p>`,
   policy: (m, r, text) => `${bodyHtml(text)}<ul>${MARKS.map(([k, yes, no]) => `<li>${r.marks[k] ? '✔ ' + yes : '✘ ' + no}</li>`).join('')}</ul>${r.history.length ? `<h2>Its history</h2><ul>${r.history.map(h => `<li>${esc(h.date)}: ${esc(h.subject)}</li>`).join('')}</ul>` : ''}<p>A policy of the <a href="/government/${m.post === 'prime-minister' ? '' : m.post}">${esc(m.title)}</a>. Each policy stands alone: back it or not on its own. <a href="/government/scoreboard">The scoreboard</a>. ${esc(G.notReal)}</p>`,
   board: () => { const b = scoreboard(G.policies); return `<h1>The scoreboard</h1><p>Every policy carries a prediction about the real UK, with our odds, marked on its date by the statistician against a named public source. Held: ${b.held}. Failed: ${b.failed}. Void: ${b.void}. Still to mark: ${b.pending}.${b.brier == null ? ' Nothing has been marked yet.' : ` Our calibration (Brier score, 0 is perfect, 0.25 is a coin toss): ${b.brier.toFixed(3)}.`}</p><ol>${b.checks.map(c => `<li><a href="/government/${c.id}">${esc(c.title)}</a> (${esc(c.post)}), ${esc(c.on)}: ${esc(c.claim)} Our odds: ${Math.round(c.prior * 100)}%. ${c.result === 'pending' ? 'Not marked yet.' : `Result: ${esc(c.result)}. ${esc(c.note)}`}</li>`).join('')}</ol>`; },
@@ -137,6 +138,17 @@ for (const r of routes) {
   const file = r.path === '/' ? join(dist, 'index.html') : join(dist, r.path.slice(1), 'index.html');
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, pageHtml(r));
+}
+// Future Proof Live (SIMULATED): the issues come from the branch simulation/live, read with git at
+// build time (simulation.mjs). The site rebuilds on a schedule after each daily run (site-deploy.yml).
+{
+  const feed = simulationFeed(join(here, '..', '..'));
+  const out = join(dist, 'future-proof', 'live');
+  mkdirSync(out, { recursive: true });
+  const frag = readFileSync(join(GOV, 'simulation', 'page', 'index.html'), 'utf8');
+  writeFileSync(join(out, 'index.html'), simulationPage(frag, feed, { origin: O, img: '/future-proof/live/preview.png' }));
+  if (feed) writeFileSync(join(out, 'feed.json'), JSON.stringify(feed) + '\n');
+  console.log(feed ? `simulation: ${feed.issues.length} issues, ${feed.skipped.length} skipped` : 'simulation: no simulation/live ref, page shows "not built yet"');
 }
 writeFileSync(join(dist, '404.html'), pageHtml({ path: '/404', title: 'Page not found · BadCode', desc: SITE_DESC, body: plainBody.missing() }).replace('<meta name="description"', '<meta name="robots" content="noindex">\n<meta name="description"'));
 // a short cache for the HTML, a long one for the stills; the version query string busts css/js

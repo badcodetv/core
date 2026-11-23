@@ -36,7 +36,8 @@ Then:
 - Never pick a field that ran in the two days before NEWS.
 - The issue must have a values question in it: who pays, who decides, what matters more. It needs more
   than one honest answer.
-- Write the reason in `slot_reason`, citing the rule's number and the dates.
+- Write the reason in `slot_reason` for a reader, in one or two plain sentences with the dates (it is
+  shown on the public page): why this story, today. No rule numbers, weights or tool names.
 
 ## 4. Check the facts and find a poll
 

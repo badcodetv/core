@@ -48,6 +48,8 @@ For each of the 100, in batches of 25, write one JSON line to
 - `split`: `{question: <split_question>, sim_share: <yes count / 100>}`. Include it only when the clerk
   set a poll `real_share`; otherwise leave `split` out.
 - `voices`: 4 to 6 lines chosen to show the spread, including at least one minority view.
+  - Each answers the question asked. Never pick a line that makes a claim about a group of people
+    (nationality, religion, race) unless the issue is about that group.
   - Each is `{citizen: <id>, who: "<age>, <region>, <work in plain words>, <tenure in plain words>", text: <their wants or limit, lightly joined>}`.
 - Set `citizens` to `{pool, seed: <citizenSeed>, drawn: 100, ids: <the 100 in draw order>, model: "claude-haiku-5-5", tests, split?, voices}`.
 - Set `stage: "citizens"` and add `sim-citizens` to `made_by.workers`.

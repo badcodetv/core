@@ -36,7 +36,11 @@ Up to 700 characters, in the minister's own voice from their brief.
 - Never quote or impersonate a real person.
 - Never say "the public": these were simulated citizens and a simulated jury, so say "the citizens" or
   "the jury".
-- A joke is welcome if it lands on the system, not on people.
+- A joke is welcome if it lands on the system, not on people. No sarcasm about anyone's hardship:
+  open on the jury, not a quip.
+- You are a simulated minister. Never say what a real office-holder, company or board did, said or
+  failed to do unless the issue's sources say it.
+- Sign the jury's ruling as voted. If you sign a lighter or different option, say so plainly and why.
 
 ## 4. Predictions
 
@@ -53,6 +57,10 @@ marked soon. Each is:
 - `result: "pending"`.
 
 In a replay you know only what was known on NEWS. Never predict something already settled by RUN.
+The predicted event itself must fall after RUN, not just its due date (an announcement made before RUN
+is already settled).
+Check it: for each prediction, search the web for the event between NEWS and RUN (for example, a bill
+already introduced, or guidance already published). If it has happened, or you can't tell, pick another.
 
 ## 5. Publish
 

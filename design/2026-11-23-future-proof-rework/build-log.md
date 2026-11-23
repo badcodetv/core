@@ -19,7 +19,16 @@ Goal: [`GOAL.md`](./GOAL.md). Branch: `future-proof/simulation`. Newest entry fi
   - The site doesn't redeploy.
   - Code, schema and worker prompts live on main, arrive through the one PR, and sync to Bob on merge.
 
-## Log
+- **D8. badcode.tv reads the data branch at build time, on a schedule** (goal 2, 23 Nov). `site-deploy`
+  fetches `simulation/live`, and `apps/site/simulation.mjs` reads the issue files straight from git
+  (`git ls-tree` and `git show`), builds the feed and writes `/future-proof/live/` (the page from main,
+  wrapped with a SIMULATED title, description and preview picture) and its `feed.json`.
+  - **Trigger:** two daily cron runs, 12:15 UTC (after the minister) and 14:30 UTC (after the 13:00
+    clock), plus pushes to main that touch the page or the sim code, plus manual dispatch.
+  - **Why not have the routine dispatch the deploy:** that needs a GitHub token that can start
+    workflows in the cloud routine or in Bob. The schedule needs none, still works if the routine
+    fails, and costs about a minute of Actions per run. The price is up to an hour's lag after a run.
+  - The private artifact page stays as a mirror, republished by the routine as before.
 
 - 23 Nov: branch created; Bob capability probe done (D1); repo visibility checked (D2); cloud probe routine scheduled for 17:58 UTC; distributions researcher started.
 - 23 Nov: **D4. Cloud routines can publish.** A one-off probe routine had `Artifact`, `ArtifactComments` and `ArtifactData`, listed artifacts, and cloned `badcodetv/core`. So the private page is a claude.ai artifact, republished by a daily routine. A Bob file-viewer page would be private too, but it can't run JavaScript.
@@ -90,3 +99,68 @@ Goal: [`GOAL.md`](./GOAL.md). Branch: `future-proof/simulation`. Newest entry fi
   - sync assembles 12 workers and 12 schedules;
   - no change under `docs/government/policies/`.
 - **Next:** open the one PR. After Kai merges, verify the first live run (Bob 09:00–11:30 London time, then the routine at 13:00 UTC) and write the report.
+- 23 Nov, 19:12 UTC: **Kai asked for PR #30 to be merged, and it was** (`cde5bcc2`).
+  - `bob-sync` succeeded. Bob now lists the seven `gov-4*-sim-*` schedules, the first due 24 Nov at 09:00 London time.
+  - `site-deploy` didn't run: the merge touched none of its paths, so badcode.tv is unchanged.
+- 23 Nov, 19:13 UTC: **a manual live run for 23 Nov started in Bob:** `sim-clerk` chat `d84b5673-4d15-45f6-b5a2-a04758967547`, on the EDITH AI breast-screening trial.
+  - It at first made worktrees from inside `/project/work/core`, then removed them and ran `bob-setup.sh` correctly.
+  - Worth tightening the setup text so it never touches core's worktree list.
+- 23 Nov: **Kai wants the last two weeks backfilled and the simulation on badcode.tv,** which reverses "private first". Brief: [`GOAL-2.md`](./GOAL-2.md). The replay kit was copied into [`replay-kit/`](./replay-kit/).
+- 23 Nov, 19:15 to 19:45 UTC: **the 23 Nov live run in Bob, step by step,** each started by `chat_create` with its schedule message, each checked by its commit on `simulation/live`:
+  - clerk `7b4b0b99` (EDITH AI breast screening), citizens `06b03240`, rival C `4778c643`, bench `7d6c9705`, gate `f323afe5`, jury `ec82e1f8`, minister `12617fdc`.
+  - **Verified published and valid** (goal 1's last item). C is Codex `gpt-6`, A and B Sonnet, jury Haiku. A real poll sits beside the citizens (Focaldata for King's College London and partners, March 2026).
+  - The minister signed a one-hospital trial (Cambridge): one expert plus AI against two experts, drawn by lot, every woman told her group and free to keep two experts. Predictions are due 22 Jan 2027 (two) and 23 Nov 2027.
+  - "the public" appears only in two real sources' own titles.
+  - Each step took about 4 to 8 minutes in Bob, so the whole loop runs in under 40 minutes, well inside the 09:00 to 11:20 schedule.
+- 23 Nov, goal 2: **the seven missing days (9, 11–16 Nov) were assigned topics up front** from each day's Bob news digest, every field new:
+  - 9 Nov: school curriculum (Key Stage 3 restored as its own phase);
+  - 11 Nov: housebuilding costs (a think tank's figure for rule-driven costs);
+  - 12 Nov: social care (neighbourhood home care, a National Care Service funded by Triple Lock changes);
+  - 13 Nov: leasehold (service charge protections);
+  - 14 Nov: criminal records (ending lifelong disclosure of some childhood convictions);
+  - 15 Nov: evictions (possession claims up 21% after Section 21 ended);
+  - 16 Nov: research funding (the cost of joining the EU's next research programme).
+  - All seven clerks (Sonnet, in parallel) finished in about 1.5 minutes each, 64k to 68k tokens each, all valid. Then one Sonnet day-runner per day: citizens on a nested Haiku subagent, then `replay-kit/orchestrate.md` A to F.
+  - Clerk notes worth keeping: 12 Nov's gov.uk page was updated on 18 Nov to fix one research body's name, so the issue leaves that body unnamed; several trade-press and survey pages refused automated fetches (403) and were left out rather than cited unopened.
+- 23 Nov: **site work on branch `future-proof/site`** (from main): `apps/site/simulation.mjs` and its test, the build step, a TV link on the government page, a SIMULATED preview picture (`scripts/government/sim/preview.sh` draws it), and the schedule in `site-deploy.yml` (D8). Checked in Chrome at 1280 and 390 wide: no errors, no sideways scroll.
+- 23 Nov, about 20:10 UTC: **two-week backfill done: 9 to 22 Nov all replayed, plus the live 23 Nov.** Pushed to `simulation/live` (`8790d3eb`). The private page is republished with 15 issues and 35 predictions waiting.
+  - **The new seven days, and what each minister signed:**
+    - 9 Nov, school curriculum: ten schools, each with a panel drawn by lot that signs off a published plan for Years 7 to 9 (jury 5 of 12: families and teachers decide).
+    - 11 Nov, housebuilding costs: three councils decide standard planning applications to a deadline, with the fee refunded if late (jury tied 5 to 5; the tie rule picks the option the gate found safest).
+    - 12 Nov, social care: two councils run neighbourhood home care with carers and care users on the board, nothing taken from pensions (jury 6 of 12).
+    - 13 Nov, leasehold: in one region, landlords carry their own legal costs in service charge disputes (jury 5 of 12).
+    - 14 Nov, childhood records: a fixed filtering period for minor childhood convictions; serious offences and child-safety checks unchanged (jury 5 of 12).
+    - 15 Nov, evictions: in one county court area, a ring-fenced landlord claim fee pays for judge sitting days (jury 4 of 12).
+    - 16 Nov, research funding: an independent board advises on the EU research programme, with costs published yearly and no NHS or school money (jury 5 of 12).
+  - **Cost per day, measured:** clerk 64k to 68k; each day-runner 81k to 86k of its own; citizens (Haiku) 85k to 107k; A and B about 46k each. That's about **330k to 360k tokens a day**, plus one Codex chat, as before. All seven ran in parallel: clerks about 1.5 minutes, day-runners 4 to 5 minutes.
+  - **Hand review against the hard rules,** for each day: "the public" appears nowhere except in real sources' titles; no minister quotes a real person; every prediction falls due after 23 Nov.
+    - Each of the 9, 12 and 13 Nov predictions was checked by web search to see whether it had already been settled before 23 Nov.
+  - **Fixes made by hand:**
+    - **13 Nov hindsight:** the bill the first prediction named was introduced on 19 Nov, before the run date, so that prediction was already settled. The second (litigation-cost regulations "laid before the end of 2026") may already have been laid in draft. Both were replaced with one prediction that was knowable on 13 Nov and still open: "no delay to the 1 April 2027 start announced by 22 January 2027". The 1 April prediction stays.
+    - **13 Nov:** answer A's title had been cut mid-word by `join_bench.py`, and its "loser-pays" didn't match the answer. It was retitled to say what the answer says, and `join_bench.py` now cuts long titles at a word.
+    - **15 Nov:** Codex had prefixed answer C's title with "SIMULATION:". That prefix was removed.
+  - **Lesson for the minister's instructions:** a replay's minister should check that a prediction hasn't already happened between the news date and the run date. The 13 Nov one hadn't been checked.
+- 23 Nov: **gatekeeper round 1: FAIL** (`marketing-gatekeeper` on the built page, the preview picture and the 7 older issues). Everything it raised was fixed as follows.
+  - **Page code:**
+    - Every panel header, the scoreboard and each answer now carry the SIMULATED stamp, with a test to keep it that way.
+    - The minister is now "Simulated <post>" on cards, in the loop and in the minister panel, which also says "BadCode's AI stand-in, not the real office-holder".
+    - The jury chip shows the winning option and its votes, where before it showed a cut-off sentence.
+    - A one-line AI disclosure links to `/how-we-made-it/`, and an opening line now says what the page is for.
+    - The loop's "public rule" station is now "Why this one".
+    - The noscript list printed an empty "()" because it read the wrong field (`run.stamp`, where the data has `run.replay_stamp`). Fixed.
+    - The voices panel is now top-aligned.
+  - **Worker instructions:**
+    - **gate:** strike unsourced claims from the clerk's summary too; never let an answer put words in an office-holder's mouth; proposals go in the conditional; a plain-words note for reasoning.
+    - **minister:** no sarcasm about hardship; nothing said about what a real office-holder, company or board did without a source; sign the ruling as voted, or say plainly why not; the predicted event itself must fall after the run date.
+    - **clerk:** `slot_reason` is written for a reader.
+    - **citizens:** voices answer the question, with no claims about groups of people.
+  - **Issue data:** an editor (Opus) is fixing all 15 issues against the gatekeeper's list: unsourced lines in the 22 Nov summary and statement, the sarcastic energy opening, office-holder attributions, the Ofgem date check, plumbing words, unprompted group claims in voices, and the police minister signing the lighter option.
+  - **Left for later (REVISE, not FAIL):** the citizen pool draws home ownership independently of age, so some young students "own outright". Fixing it needs a versioned pool (`pool-2`), because published issues name people by their id in the current pool. Logged as the first job after goal 2.
+- 23 Nov: **the issue editor (Opus) fixed all 15 issues** (pushed `259ae939`). Ofgem announces the January to March 2027 cap on 25 Nov 2026, after the run date, so the energy prediction due 30 Nov stands.
+- 23 Nov: **gatekeeper round 2: PASS to deploy.** Every round-1 FAIL is fixed, and the 8 issues it hadn't seen have no FAILs. Its eight small REVISE notes were all done (`d25468b7`):
+  - 13 Nov's fail number was backwards and now reads "fails if more than 1 in 10 challenges are dropped over cost";
+  - a struck claim had come back reworded in 15 Nov answer B, and was cut; the gate now treats a reworded struck claim as struck;
+  - four statements got plainer lines;
+  - 19 Nov's prediction now credits "the 17 November statement" instead of a real Secretary;
+  - the Thames note says its re-check used only sources dated on or before 10 Nov;
+  - the page and its description say "a simulated minister".
