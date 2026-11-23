@@ -30,5 +30,13 @@
   "url": "https://claude.ai/artifact/KvpYixAvZKWBeRofPiLWvv",
   "what": "Clips r2: LIMP claw view and wide, UNLOCK, WIN",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-by-the-balls/scenes/by-the-balls/clips-r2-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-23T15:12:23+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/DXKshcwZZ21LCwNniyV83x",
+  "what": "Rough cut 1 (19.9 s): picks, line, music, post labels",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-by-the-balls/scenes/by-the-balls <out-dir>"
  }
 ]

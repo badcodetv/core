@@ -167,6 +167,34 @@
    "still": "WIN",
    "motion": "Very slight slow push-in. Both of them raise the little white house with the red roof just above the edge of the hatch, holding it between them at the same height, and smile, his eyes on her, hers on the house. Little else moves. The hatch stays exactly as in the frame, its dark opening open and visible below the house until the last frame. They stay crouched in place; the machine and everything behind the glass stay still. Sound: a light scrape of plastic on metal, soft fabric rustle, low room tone.",
    "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
+  },
+  {
+   "key": "LIMPPOVc",
+   "n": 1,
+   "still": "LIMPPOV",
+   "motion": "Static shot looking straight down past the claw's open prongs; the camera, the claw and the pile stay completely still for the whole clip. Real-time speed. The white two-storey house with the red roof drops 30 cm straight down under gravity, accelerating hard and hitting the pile in about a quarter of a second, still tilted as it was. Its lower roof corner strikes first; it hops once, barely a centimetre, rocks onto its side against the coins and stops dead within half a second. It then rests motionless in that spot until the end. Sound: a short hollow plastic clack, a brief chink of coins, the steady hum of the claw motor.",
+   "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md"
+  },
+  {
+   "key": "LIMPPOVd",
+   "n": 1,
+   "still": "LIMPPOV",
+   "motion": "Fixed overhead camera, locked in place; claw and heap remain frozen exactly as framed. In the first instant the red-roofed white house plummets out of frame centre like a dropped stone and lands hard on the heap below. The eave corner bites into the coins, the house tips over onto its side with a sharp jolt, and the impact knocks one gold coin and a small blue house a few millimetres aside. Everything settles at once and the house lies still, wedged at an angle among the coins, for the rest of the shot. Normal playback speed. Sound: one crisp plastic clatter, two coins ringing as they shift, then only the low whir of the claw motor.",
+   "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md"
+  },
+  {
+   "key": "LIMPPOVe",
+   "n": 1,
+   "still": "LIMPPOV",
+   "motion": "Camera bolted still, looking down between the two open steel prongs. The small red-roofed white house falls heavily, a quick motion-blurred streak straight down onto the pile, as fast as a real dropped toy. It lands with weight, sinking slightly into the loose coins and model houses, which absorb the hit: one tiny rebound, a short wobble, then it lies dead still, half-buried and tilted, while everything around it stays exactly as it was. The remaining seconds hold this quiet, unchanging view. Sound: a dull plastic thud, a short metallic slither of coins, the claw motor humming.",
+   "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md"
+  },
+  {
+   "key": "LIMPPOVf",
+   "n": 1,
+   "still": "LIMPPOV",
+   "motion": "Static top-down shot, camera completely still; the claw and the pile remain fixed in place throughout. Timing in real time: from 0 to 0.3 seconds the white house with the red roof drops straight down and hits the pile; from 0.3 to 1 second it tips once onto its side, nudges a single coin, and comes to rest; from 1 second to the end it lies motionless and the scene is a still frame of the claw above the heap, the house resting where it landed. Sound: a sharp clack of plastic on coins, a single coin chink, then the steady electric hum of the claw motor.",
+   "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md"
   }
  ]
 }

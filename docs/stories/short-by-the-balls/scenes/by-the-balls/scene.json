@@ -14,5 +14,13 @@
     "mode": "Frames",
     "duration": 8
   },
-  "flow_project": "ccce50b5-9b07-48f1-a62e-b710b6bc96e1"
+  "flow_project": "ccce50b5-9b07-48f1-a62e-b710b6bc96e1",
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cut/r1/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cut/r1/preview.mp4",
+    "script": "~/.cache/badcode-lips/venv/bin/python scripts/shorts/btb_cut.py --round 1"
+  },
+  "boards": {
+    "timeline": "https://claude.ai/artifact/DXKshcwZZ21LCwNniyV83x"
+  }
 }
