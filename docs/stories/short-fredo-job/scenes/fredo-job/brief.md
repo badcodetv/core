@@ -46,11 +46,11 @@ Words: no mouths on the masks, so any line is a voice over the picture or a capt
 | --- | --- | --- | --- | --- | --- |
 | 1 | 3 | 01-r2a | Back room, the plan on the wall, the cream suit taps the circled jar twice. Push in to the jar photo; `10p` drawn on it. | This is the job of the century, and the prize costs 10p. | ⬜ the pitch |
 | 2 | 3 | 02-a | The four walk out of the smoke in slow motion. Freeze on the last step. | The pros are assembled. | none (music) |
-| 3 | 2.5 | 03-a | The laser aisle; he ducks under a beam and reaches for the jar. | Precise, wordless work. | none |
+| 3 | 2.5 | 03-a | The laser aisle; he ducks under a beam and reaches for the jar. | Smooth: "like butter" (Jack). | "Like butter." (Jack; voice or caption ⬜) |
 | 4 | 2.5 | 04-a | The frog lifted up to the light. Freeze at the top. | They got it. | none |
 | 5 | 3 | 05-r2b + snap zoom | They stand frozen at the counter, the bulb sways; snap zoom on the tag: `39p`. | The price ran off while they were planning. | ⬜ (list line: "It was 10p when we started planning." Not ruled) |
 | 6 | 3 | 06-b | The hand rests on the coin jar beside the frogs; the coins sit at the frogs' level. Numbers tick up together (price and savings). | Money that keeps up: if what you've got rises with prices, nobody needs a heist for a frog. | ⬜ the way out |
-| 7 | 1.5 | post | The BadCode logo (idea ⬜). | | none |
+| 7 | 1.5 | SNOW | The BadCode logo in the snow (Jack). Flow plate; the wordmark from `docs/brand/logo/` laid on in post, never Flow's letters. | | none |
 
 About 18 s. ⬜ still open: sound (story-style), voice or captions, whether the savings figure is pay or savings (pay over
 the same years is not checked yet, `numbers.md`).

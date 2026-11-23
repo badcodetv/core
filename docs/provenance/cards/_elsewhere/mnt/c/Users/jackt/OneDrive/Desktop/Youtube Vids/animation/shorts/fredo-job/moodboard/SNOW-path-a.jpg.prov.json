@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/SNOW-path-a.jpg",
+ "made": "2026-11-23T19:12:29.194Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 photograph, camera high and tilted steeply down onto a snowy suburban footpath at night, a lone street lamp glowing at the top edge of the frame among bare trees and power lines. In the upper middle of the frame, a large clean circle has been trodden into the fresh snow by one careful ring of overlapping boot prints, packed firm and pale, its inner field untouched. Inside the ring, up and to the right of centre at about two o'clock, sits one small red plastic triangular reflector with rounded corners, flat edge on top, point down, catching the lamp light. A single line of boot prints leads away from the ring toward the lamp. The lower third is smooth unbroken snow. Deep navy sky, sodium glow, quiet and cold.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack, script draft 2: the BadCode logo \"in the snow\" for the outro",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/ref-snow-path.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/ref-snow-path.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/logo-mark.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9e700473-d3b9-4d85-a555-95af49ff48aa"
+}

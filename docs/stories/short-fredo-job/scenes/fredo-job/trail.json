@@ -82,5 +82,13 @@
   ],
   "feedback": "feedback/clips-r6",
   "feedback_docs": 8
+ },
+ {
+  "at": "2026-11-23T19:13:33+00:00",
+  "stage": "picks",
+  "round": 7,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "The logo in the snow: 4 ideas x 2 takes (sealed writer, Unsplash snow refs), Claude's pick SNOW-path-a",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/snow-picks.json <out.html>"
  }
 ]

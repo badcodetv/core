@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/SNOW-drift-a.jpg",
+ "made": "2026-11-23T19:12:38.647Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 photograph from close to overhead onto soft rolling snow drifts at dusk, deep blue shadows lying in the hollows, the last pale light glazing the crests with sparkle. On a broad smooth crest in the upper middle of the frame, a clean circle has been cut into the snow with the tip of a stick, a narrow crisp trench whose shaded inner wall gives the ring a sharp blue edge. Inside the circle, upper right of centre at about two o'clock, sits one small translucent piece of red-dyed ice shaped as a rounded triangle, flat edge on top, pointing down, glowing faintly against the blue. The lower third is untouched drifting snow with gentle wind ripples. Cold blue palette, silent, last light.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack, script draft 2: the BadCode logo \"in the snow\" for the outro",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/ref-snow-drift.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/ref-snow-drift.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/logo-mark.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b3bb9b67-4114-4cc4-b6b3-3d1823cf098a"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/SNOW-street-b.jpg",
+ "made": "2026-11-23T19:12:23.290Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 night photograph looking steeply down at a snow-covered city pavement outside dark shopfronts, warm amber light from a lamp on a pole spilling across the snow, a few bollards and the edge of a kerb at the top of the frame, fine flakes falling. In the upper middle, a perfectly round raised ring of snow has been pushed up with a shovel blade, a clean low ridge with soft shadow on its inner side. Inside it, upper right of centre at about two o'clock, a small triangle of bright red powder has been sifted onto the snow through a stencil, rounded corners, flat edge on top, pointing down, its edges slightly feathered. A few scattered footprints near the top; the lower third is a plain even sheet of snow. Shop signs dark and unlettered. Quiet, cold, still.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack, script draft 2: the BadCode logo \"in the snow\" for the outro",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/ref-snow-street.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/ref-snow-street.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/logo-mark.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b85c0058-556c-4309-8bcf-61e5d27367a1"
+}

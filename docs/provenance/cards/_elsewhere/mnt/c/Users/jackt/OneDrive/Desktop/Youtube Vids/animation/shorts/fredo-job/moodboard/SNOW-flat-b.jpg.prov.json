@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/SNOW-flat-b.jpg",
+ "made": "2026-11-23T19:12:44.941Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Vertical 9:16 close photograph straight down onto flat, fresh, granular snow, crisp crystals glinting, soft cool daylight with one shadow drifting in at a lower corner. In the upper two thirds, a clean circle has been pressed into the snow with a gloved fingertip, a smooth rounded groove of even width with compacted, slightly glassy walls, the snow inside it left pristine. Inside the circle, upper right of centre at about two o'clock, lies one small red rounded triangle, a plectrum, flat edge on top, point down, a few crystals resting on it. One faint glove print sits just outside the ring at the top edge. The lower third is plain sparkling snow with nothing on it. Real macro texture, pale grey-blue tones, hushed and cold.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack, script draft 2: the BadCode logo \"in the snow\" for the outro",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/ref-snow-flat.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/ref-snow-flat.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job/cleanroom/logo-mark.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "b9c73015-b123-4a1e-bf10-855a626ef9af"
+}

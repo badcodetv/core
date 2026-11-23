@@ -10,24 +10,115 @@
    "groups": [
     {
      "slot": "ref-1",
-     "title": "laser grid security",
+     "title": "footprints fresh snow night street lamp",
      "line": "Pick the photo whose look this scene should start from.",
      "kind": "image",
      "opts": [
       {
-       "id": "Y55UFwhjpf4",
-       "src": "unsplash/Y55UFwhjpf4.jpg",
-       "label": "Green grid pattern on a light gray background · Logan Voss"
+       "id": "OpkZfKoYHFE",
+       "src": "unsplash/OpkZfKoYHFE.jpg",
+       "label": "snow covered road during night time · Josh Hild"
       },
       {
-       "id": "xGb_kVL2AFM",
-       "src": "unsplash/xGb_kVL2AFM.jpg",
-       "label": "black and red metal frame · Tobias Kordt"
+       "id": "xevZfEo17uw",
+       "src": "unsplash/xevZfEo17uw.jpg",
+       "label": "a street light in the snow at night · Minku Kang"
       },
       {
-       "id": "9aDgTPIVWKA",
-       "src": "unsplash/9aDgTPIVWKA.jpg",
-       "label": "a red abstract background with lines · Alex Quezada"
+       "id": "8zy1uTuY0Z4",
+       "src": "unsplash/8zy1uTuY0Z4.jpg",
+       "label": "A snow covered road with a street light in the distance · Sankalp Mudaliar"
+      },
+      {
+       "id": "Vmox5vEOUng",
+       "src": "unsplash/Vmox5vEOUng.jpg",
+       "label": "A snowy road at night with a street light in the distance · Matthew"
+      },
+      {
+       "id": "38Y1Cy1GyjQ",
+       "src": "unsplash/38Y1Cy1GyjQ.jpg",
+       "label": "a night time picture of a snow covered road · Erik Mclean"
+      },
+      {
+       "id": "4LqLNy-y5Ik",
+       "src": "unsplash/4LqLNy-y5Ik.jpg",
+       "label": "snow covered road during night time · Jason Pischke"
+      }
+     ]
+    },
+    {
+     "slot": "ref-2",
+     "title": "snow covered pavement night top down",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "OpkZfKoYHFE",
+       "src": "unsplash/OpkZfKoYHFE.jpg",
+       "label": "snow covered road during night time · Josh Hild"
+      },
+      {
+       "id": "YRn-wkuUEuE",
+       "src": "unsplash/YRn-wkuUEuE.jpg",
+       "label": "A snowy night in a city with cars parked on the side of the  · Anastasia Zolotukhina"
+      },
+      {
+       "id": "hGCjROxFYUs",
+       "src": "unsplash/hGCjROxFYUs.jpg",
+       "label": "a snowy street at night with street lights · Lawrence Chismorie"
+      },
+      {
+       "id": "ABZotSxnElo",
+       "src": "unsplash/ABZotSxnElo.jpg",
+       "label": "a city street at night with snow on the ground · Hoyoun Lee"
+      },
+      {
+       "id": "8zy1uTuY0Z4",
+       "src": "unsplash/8zy1uTuY0Z4.jpg",
+       "label": "A snow covered road with a street light in the distance · Sankalp Mudaliar"
+      },
+      {
+       "id": "Vmox5vEOUng",
+       "src": "unsplash/Vmox5vEOUng.jpg",
+       "label": "A snowy road at night with a street light in the distance · Matthew"
+      }
+     ]
+    },
+    {
+     "slot": "ref-3",
+     "title": "fresh snow close up texture",
+     "line": "Pick the photo whose look this scene should start from.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "dsjiZZnjfLU",
+       "src": "unsplash/dsjiZZnjfLU.jpg",
+       "label": "white snow on blue background · simon"
+      },
+      {
+       "id": "S9gbH8BN2rs",
+       "src": "unsplash/S9gbH8BN2rs.jpg",
+       "label": "a snow covered field with a bird flying over it · Daria Cornea"
+      },
+      {
+       "id": "z4RdaWn7tqk",
+       "src": "unsplash/z4RdaWn7tqk.jpg",
+       "label": "snow covered surface · Ash Edmonds"
+      },
+      {
+       "id": "se-jsJsmPbg",
+       "src": "unsplash/se-jsJsmPbg.jpg",
+       "label": "A snow covered mountain with lots of snow on it · Eugene Golovesov"
+      },
+      {
+       "id": "WlcYu9iNo3c",
+       "src": "unsplash/WlcYu9iNo3c.jpg",
+       "label": "A plant covered in snow with footprints behind it · Chris LaBarge"
+      },
+      {
+       "id": "_sZWDNWnGPM",
+       "src": "unsplash/_sZWDNWnGPM.jpg",
+       "label": "a person riding skis down a snow covered slope · Daria Cornea"
       }
      ]
     }
