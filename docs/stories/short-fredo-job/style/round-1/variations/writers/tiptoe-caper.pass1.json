@@ -1,0 +1,13 @@
+{
+  "name": "tiptoe-caper",
+  "style": "Instrumental comedy caper underscore, 104 BPM, sly swung tiptoe walk. Plucked pizzicato string bass and violins land on every footstep, a muted tenor sax and staccato bassoon creep in unison, brushed snare, light marimba. Opens with two cheeky plucks, then a slinky sneaking strut with sudden stop-freezes; a hushed held-breath pause with a single tremolo; a smug rising flourish. Then a deflating low tuba slide-down droop, a beat of silence, and a warm hopeful clarinet melody lifting over soft strings into one bright final pizzicato-and-cymbal button. Sparse, dry, close-miked, lots of space in the middle for a speaking voice, playful but tight.",
+  "exclude": "vocals, singing, choir, humming, spoken word, rap, lyrics, electric guitar, synth lead, EDM drops, heavy drums, distortion, reverb wash, long fade-out",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 30,
+  "maxMode": false
+}

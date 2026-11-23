@@ -1,0 +1,13 @@
+{
+  "name": "library-cue",
+  "style": "1970s British TV library music, jazz-funk caper cue, instrumental, 100 BPM, swaggering and slick then hopeful. Opens on a hip tight drum break, punchy fuzz bass riff and choppy wah-wah guitar; Hammond organ stabs and a bold brass-and-flute fanfare on top. Sparse midsection with space left for a speaking voice. Sudden suspense sting: low brass swell, tremolo strings, cymbal scrape, then a hush. Then a warm major-key lift, bright horns and organ swelling into a cheerful happy-ending flourish, finishing on one clean brass hit. Vintage analogue tape, roomy studio, crisp and dry, small-screen thriller theme",
+  "exclude": "vocals, singing, choir, spoken word, rap, lyrics, humming, modern trap drums, EDM, synthwave, orchestral film epic, lo-fi hiss, long fade out",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 30,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 30,
+  "maxMode": false
+}

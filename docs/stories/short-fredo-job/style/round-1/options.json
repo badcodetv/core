@@ -1,6 +1,6 @@
 {
  "title": "The Fredo Job: the sound",
- "intro": "Round 1, sound only: the look and picture are locked and the crew's voice is picked (en-gb-concierge-10). Music and sound effects under about 18 seconds. Listen to the references (YouTube searches), mark This / Maybe / No, and leave a note; Suno tests come after a pick.",
+ "intro": "Round 1, sound only: the look and picture are locked and the crew's voice is picked (en-gb-concierge-10). Two Suno takes per sound (the first links on each card), then the real tracks that inspired it. Takes run 20-50 s; the cut uses about 18 s. Mark This / Maybe / No and leave a note.",
  "story": [
   [
    "The short",
@@ -37,6 +37,16 @@
    "risk": "The obvious pick. Suno drifts towards one famous spy theme, which the parody rule forbids; it must stay generic. Its 'hope' is grand rather than warm.",
    "references": [
     {
+     "title": "Suno take 1 (0:30)",
+     "maker": "fj-sound-r1-spy-swagger-v6-w30",
+     "url": "https://suno.com/song/0f51c2bc-eef8-4ed1-ab2b-7a49890f3665"
+    },
+    {
+     "title": "Suno take 2 (0:30)",
+     "maker": "fj-sound-r1-spy-swagger-v6-w30",
+     "url": "https://suno.com/song/08fdf623-a1db-4a61-aee7-79a9e6bea757"
+    },
+    {
      "title": "Goldfinger (main title)",
      "maker": "John Barry",
      "url": "https://www.youtube.com/results?search_query=John+Barry+Goldfinger+%28main+title%29"
@@ -51,8 +61,7 @@
      "maker": "Quincy Jones",
      "url": "https://www.youtube.com/results?search_query=Quincy+Jones+Soul+Bossa+Nova"
     }
-   ],
-   "style_box": "instrumental 1960s spy film score, twangy baritone guitar riff with tremolo, walking double bass, brass stabs, vibraphone, tight jazz drums, sweeping strings, cool, 118 bpm, button ending"
+   ]
   },
   {
    "id": "S2",
@@ -65,6 +74,16 @@
    "why": "The library names it for heists and comic swagger; a loop that never changes is the cleanest bed under a few spoken lines, and a dead stop is the best sting.",
    "risk": "Can feel like a period pastiche with no modern edge; little room for warmth, so the hope has to come from the groove returning, not from a melody.",
    "references": [
+    {
+     "title": "Suno take 1 (0:24)",
+     "maker": "fj-sound-r1-hard-funk-v6-w45",
+     "url": "https://suno.com/song/08c71a26-4204-4d98-870d-332c1f6d232e"
+    },
+    {
+     "title": "Suno take 2 (0:20)",
+     "maker": "fj-sound-r1-hard-funk-v6-w45",
+     "url": "https://suno.com/song/311a082b-56f9-4f6b-ab8e-218baeb48b12"
+    },
     {
      "title": "Cissy Strut",
      "maker": "The Meters",
@@ -80,8 +99,7 @@
      "maker": "Isaac Hayes",
      "url": "https://www.youtube.com/results?search_query=Isaac+Hayes+Theme+from+Shaft"
     }
-   ],
-   "style_box": "instrumental raw early 1970s funk, locked one-chord groove, tight sixteenth-note drums, muted chicken-scratch guitar, slapped bass riff, horn stabs, dry close-mic live band, 104 bpm"
+   ]
   },
   {
    "id": "S3",
@@ -94,6 +112,16 @@
    "why": "British where the heist genre is American, so it fits a corner shop and a Liverpool voice; it plays the joke as a cheap TV thriller.",
    "risk": "Can tip into nostalgia telly and feel dated rather than slick; Jack asked for heavy heist-film swagger and this is its small-screen cousin.",
    "references": [
+    {
+     "title": "Suno take 1 (0:34)",
+     "maker": "fj-sound-r1-library-cue-v6-w30",
+     "url": "https://suno.com/song/05a159da-4939-4249-97e3-03f842382e4e"
+    },
+    {
+     "title": "Suno take 2 (0:33)",
+     "maker": "fj-sound-r1-library-cue-v6-w30",
+     "url": "https://suno.com/song/1fb31502-5074-4f64-8730-2f6578e044a9"
+    },
     {
      "title": "Funky Fanfare",
      "maker": "Keith Mansfield",
@@ -109,8 +137,7 @@
      "maker": "Johnny Pearson",
      "url": "https://www.youtube.com/results?search_query=Johnny+Pearson+Heavy+Action"
     }
-   ],
-   "style_box": "instrumental 1970s British library music, jazz-funk, Hammond organ, wah guitar, fuzzy bass, brass fanfare, tight drums, tape saturation, dry close-miked, cue with a button ending, 110 bpm"
+   ]
   },
   {
    "id": "S4",
@@ -121,6 +148,16 @@
    "why": "The slickest of the options, closest to the turn-of-the-century heist film Jack named, but made of the corner shop, so it's ours and never that film's score. The coins carry the way out in the sound itself.",
    "risk": "The most work: Suno makes the groove, the shop sounds are cut in by hand on the timeline. Too many effects can muddy the spoken lines.",
    "references": [
+    {
+     "title": "Suno take 1 (0:32)",
+     "maker": "fj-sound-r1-corner-shop-break-v6-w35",
+     "url": "https://suno.com/song/92c474b0-9de2-448c-a4f0-c4c0eb275872"
+    },
+    {
+     "title": "Suno take 2 (0:52)",
+     "maker": "fj-sound-r1-corner-shop-break-v6-w35",
+     "url": "https://suno.com/song/f0f0d088-003c-4dd0-bbca-dd13fdcb7ba0"
+    },
     {
      "title": "Gritty Shaker",
      "maker": "David Holmes",
@@ -136,8 +173,7 @@
      "maker": "The Chemical Brothers",
      "url": "https://www.youtube.com/results?search_query=The+Chemical+Brothers+Block+Rockin%27+Beats"
     }
-   ],
-   "style_box": "instrumental big beat heist groove, dusty breakbeat drums, Hammond organ riff, turntable scratches, low string stabs, upright bass, cool and slick, 100 bpm (shop sounds added in the edit: till drawer, door bell, coin drops)"
+   ]
   },
   {
    "id": "S5",
@@ -148,6 +184,16 @@
    "why": "The laughiest: it says 'these lot are clowns' and lets the 39p land as a gag. The swagger becomes sneaky swagger.",
    "risk": "Undercuts the 'played straight' brief: it tells the audience it's a joke before the twist does. The sad-trombone sting is a cliché.",
    "references": [
+    {
+     "title": "Suno take 1 (0:39)",
+     "maker": "fj-sound-r1-tiptoe-caper-v6-w35",
+     "url": "https://suno.com/song/31b4dc2d-0984-4a37-b086-fffc3e6405de"
+    },
+    {
+     "title": "Suno take 2 (0:31)",
+     "maker": "fj-sound-r1-tiptoe-caper-v6-w35",
+     "url": "https://suno.com/song/9a69a59a-fa6d-479a-afbe-6550b928a0fd"
+    },
     {
      "title": "The Pink Panther Theme",
      "maker": "Henry Mancini",
@@ -163,8 +209,7 @@
      "maker": "Henry Mancini",
      "url": "https://www.youtube.com/results?search_query=Henry+Mancini+Baby+Elephant+Walk"
     }
-   ],
-   "style_box": "instrumental sneaky comic caper underscore, pizzicato strings, muted tenor sax, bassoon, brushed snare, walking bass on tiptoe, playful, 96 bpm, comic button ending"
+   ]
   },
   {
    "id": "S6",
@@ -177,6 +222,16 @@
    "why": "The strongest 'hope' of all of them, and the most British; it reframes the crew as ordinary working people, which is the point.",
    "risk": "The library says it undermines comedy and fast rhythm: little swagger, and the cuts can't land on fast hits. It may feel like a different film from the picture.",
    "references": [
+    {
+     "title": "Suno take 1 (0:37)",
+     "maker": "fj-sound-r1-colliery-brass-v6-w30",
+     "url": "https://suno.com/song/3637d2fc-444e-4ea6-8587-029c05dfbeab"
+    },
+    {
+     "title": "Suno take 2 (0:29)",
+     "maker": "fj-sound-r1-colliery-brass-v6-w30",
+     "url": "https://suno.com/song/29133b6a-ad61-4b37-bffd-2f53132cce0f"
+    },
     {
      "title": "Concierto de Aranjuez Brassed Off",
      "maker": "Grimethorpe Colliery Band",
@@ -192,8 +247,7 @@
      "maker": "Black Dyke Band",
      "url": "https://www.youtube.com/results?search_query=Black+Dyke+Band+Gresford+%28The+Miners%27+Hymn%29"
     }
-   ],
-   "style_box": "instrumental British brass band, colliery band, proud slow march, solo cornet melody, euphonium, tuba, side drum, hall reverb, then hymn-like chorale, 84 bpm"
+   ]
   },
   {
    "id": "S7",
@@ -206,6 +260,16 @@
    "why": "The way out is a mechanism (money that keeps up), and this is the only sound that makes it one; the pulse leaves every spoken line clear.",
    "risk": "Clever rather than swaggering: it loses the cool-crew feel Jack asked for, and minimal music can feel like an advert for a bank.",
    "references": [
+    {
+     "title": "Suno take 1 (0:30)",
+     "maker": "fj-sound-r1-clockwork-pulse-v6-w35",
+     "url": "https://suno.com/song/5b43a0f2-0705-49a3-b8d5-c3accd881d6f"
+    },
+    {
+     "title": "Suno take 2 (0:30)",
+     "maker": "fj-sound-r1-clockwork-pulse-v6-w35",
+     "url": "https://suno.com/song/66f71bfb-5cd4-483d-b350-083ed722c5d6"
+    },
     {
      "title": "Music for 18 Musicians",
      "maker": "Steve Reich",
@@ -221,8 +285,7 @@
      "maker": "Philip Glass",
      "url": "https://www.youtube.com/results?search_query=Philip+Glass+Koyaanisqatsi"
     }
-   ],
-   "style_box": "instrumental minimalist pulse music, steady eighth-note marimba and piano arpeggios, additive layers, gradual build, pizzicato strings, dry acoustic, 120 bpm"
+   ]
   }
  ]
 }

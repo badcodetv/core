@@ -1,0 +1,17 @@
+{
+  "style": "Cartoon burglary sneak cue, instrumental, 100 BPM, swung on-the-tips-of-the-toes gait. Plucked double bass and pizzicato violins mark each footfall, staccato bassoon and a cup-muted tenor sax creeping side by side, soft brushes, woodblock ticks. Two coy plucks to start, a slinky crept strut that halts dead in comic freezes, one suspended tremolo hush, a cocky upward run. Then a sagging low tuba droop, a beat of nothing, and a tender clarinet tune rising over gentle strings to one bright pluck-and-cymbal stop. Dry, close, uncluttered; arrangement thins to bare plucks wherever a line gets read over it. No vocals.",
+  "exclude": "vocals, singing, choir, humming, spoken word, rap, lyrics, electric guitar, synth lead, EDM drops, heavy drums, distortion, reverb wash, long fade-out",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 30,
+  "maxMode": false,
+  "title": "fj-sound-r1-tiptoe-caper",
+  "mode": "custom",
+  "workspace": "short-fredo-job"
+}

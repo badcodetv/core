@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental minimalist pulse cue, 120 BPM, D minor turning to D major. Dry close-miked marimba and muted felt piano locked in steady interlocking eighth notes, a woodblock ticking like an escapement wheel. Layers click in every two bars: pizzicato strings, a round synth bass on the downbeats, a tight closed hi-hat, a sly off-beat bass slide for cool. Then one sour wrong piano note and every part stops dead, a held beat of silence. The tick restarts alone, softly, and the whole machine climbs back in, chords stepping upward bar by bar with the bass, bright and hopeful, building to one clean final chord hit and a hard stop. Uncluttered midrange, lots of air between notes, crisp modern studio mix.",
+  "exclude": "vocals, singing, choir, humming, spoken word, rap, EDM drop, dubstep, distorted guitar, big orchestral swell, ambient drone, long intro, fade out",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 72,
+  "vocalGender": null,
+  "durationSec": 30,
+  "maxMode": true,
+  "title": "fj-sound-r1-clockwork-pulse",
+  "mode": "custom",
+  "workspace": "short-fredo-job"
+}

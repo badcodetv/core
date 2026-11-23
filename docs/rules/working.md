@@ -273,3 +273,10 @@ now, before every Flow call, Suno call and AI Studio voice call:
 It reports and never blocks. On a LEAK or MIXED flag: rewrite from this story's own `badcode.md`, and tell Jack or Kai.
 **Its limit:** it catches copied words, not a copied idea reworded. So when writing any prompt, take it only from the
 story's own `badcode.md` and the engine's rules, never from another story's folder or a shared doc's example.
+
+## Jack 2026-11-23: sound options go straight to Suno takes ("just make them in suno and skip this step going forward thanks")
+
+Said after a story-style round showed seven sounds as words and reference links only, with Suno held back until a pick.
+**How to apply:** when proposing a story's sounds, make one Suno take per option in the same round (a `variations`
+round, kind `suno`, in the story's workspace) and put the takes on the page with players; never a words-only sound
+page first. Written into `.claude/skills/story-style/SKILL.md` step 3.2.

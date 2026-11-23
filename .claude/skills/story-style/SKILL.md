@@ -81,9 +81,12 @@ Then say back the story in five lines (these become the page's "The story" secti
    pitch, with the library entry's traits pasted in) instead of spawning the ideas writer. Then
    follow the `variations` loop from `round.py asks`: separate writers, the gate, then one
    `flow_generate_image` per prompt, verbatim, count 1. Stills are free.
-2. **Sounds: words and references, no Suno.** For each, two or three real reference tracks (with
-   links) and a rough Suno Style-box sketch. Suno takes cost credits and pull the ear toward the
-   first decent take: test only after a pick, or if Kai or Jack asks.
+2. **Sounds: straight to Suno takes, no words-only page** (Jack, 2026-11-23: "just make them in suno and skip
+   this step going forward thanks"). Write the shortlist as a `variations` round of kind `suno` in
+   `round-<n>/variations/` (`ask.md` = the request verbatim plus the shortlist, `explore`, `instrumental` if no
+   words, `workspace` = the story's Suno workspace; write `writers/ideas.json` yourself, one idea per sound), run
+   it, and put one take per sound on the page with a player (`audio`), plus its reference tracks. Don't wait for a
+   pick before spending: one Create per sound (10 credits) is the round.
 3. **The page.** Write `round-<n>/options.json`, then
    `python3 scripts/story-style/build-page.py docs/stories/<story>/style/round-<n> <scratchpad>/<story>-style.html`
    and publish it with `capabilities: {db:{}, user:{}}`, republishing to the same file path every

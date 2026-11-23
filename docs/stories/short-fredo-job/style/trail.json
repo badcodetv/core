@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/G7MAjNRkXF1Ds6BLtForFW",
   "what": "style round 1: 0 looks, 7 sounds (sound only)",
   "rebuild": "python3 scripts/story-style/build-page.py docs/stories/short-fredo-job/style/round-1 <out.html>"
+ },
+ {
+  "at": "2026-11-23T20:31:34+00:00",
+  "stage": "other",
+  "round": 1,
+  "url": "https://claude.ai/artifact/G7MAjNRkXF1Ds6BLtForFW",
+  "what": "style round 1 v2: 7 sounds, 2 Suno takes each (variations round, gate pass 2)",
+  "rebuild": "python3 scripts/story-style/build-page.py docs/stories/short-fredo-job/style/round-1 <out.html>"
  }
 ]

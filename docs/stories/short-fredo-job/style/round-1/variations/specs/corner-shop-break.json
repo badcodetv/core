@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental big beat heist groove, 108 BPM, loud compressed dusty funk drum break with a lazy swing, round fuzzy bassline, low smoky organ stabs, short vinyl scratch accents on the turnarounds, low tense string ostinato underneath. Lean and dry, the midrange left open for a narrator, small shaker and a bright little bell ping as the hook. Midway the record slows to a turntable stop and the groove dies to silence; a glockenspiel climbs a major arpeggio like coins dropping into a jar, then the break slams back in warmer and hopeful, ending on one tight stop hit.",
+  "exclude": "vocals, singing, choir, rap, vocal chops, spoken word samples, EDM drop, dubstep wobble, trap hi-hats, guitar solo, long fade out",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 30,
+  "maxMode": false,
+  "title": "fj-sound-r1-corner-shop-break",
+  "mode": "custom",
+  "workspace": "short-fredo-job"
+}

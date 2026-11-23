@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental northern English colliery brass band, slow proud processional march, 80 BPM, 4/4, played completely straight and solemn. Solo cornet carries the tune over tenor horns, baritones and deep E-flat basses; crisp side-drum rolls, a bass drum on every step. Starts with two firm side-drum taps, then the band swells in, kept sparse and mid-low so a spoken voice sits clearly on top. Around halfway the band falters and stops dead; a single euphonium is left holding one wobbly, crestfallen note. Then the whole band returns as a warm, rising hymn chorale, flugelhorn and cornets lifting, full of working-class pride. Ends on one clean sustained final chord with a cymbal, then silence.",
+  "exclude": "vocals, singing, choir, humming, lyrics, trumpet, French horn, saxophone, strings, piano, electric guitar, bass guitar, synth, drum kit, hi-hat, jazz, funk, swing, comedy sound effects, fade out",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    30
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 30,
+  "maxMode": true,
+  "title": "fj-sound-r1-colliery-brass",
+  "mode": "custom",
+  "workspace": "short-fredo-job"
+}

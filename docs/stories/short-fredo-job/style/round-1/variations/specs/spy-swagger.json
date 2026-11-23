@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental 1960s spy-caper jazz cue, short and tight, 112 bpm, minor key. Opens on a twangy baritone guitar riff drenched in spring reverb over a walking upright bass, brushed swing drums and finger snaps; muted trumpet stabs and cool vibraphone on minor-major ninth chords. Sparse arrangement with open gaps for a narrator. Halfway, the band stops dead on one huge brass chord that sags downward into a deflated trombone wah. Then lush strings and vibraphone climb back up into a bright major key, hopeful and triumphant, finishing on a single clean brass-and-cymbal button. Original generic lounge-spy sound, warm vintage analogue stereo.",
+  "exclude": "vocals, singing, choir, spoken word, humming, fade out, long intro, modern trap drums, EDM synths",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    30
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 30,
+  "maxMode": true,
+  "title": "fj-sound-r1-spy-swagger",
+  "mode": "custom",
+  "workspace": "short-fredo-job"
+}

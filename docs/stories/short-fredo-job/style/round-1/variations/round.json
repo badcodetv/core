@@ -1,0 +1,93 @@
+[
+  {
+    "name": "spy-swagger",
+    "style": "Instrumental 1960s spy-caper jazz cue, short and tight, 112 bpm, minor key. Opens on a twangy baritone guitar riff drenched in spring reverb over a walking upright bass, brushed swing drums and finger snaps; muted trumpet stabs and cool vibraphone on minor-major ninth chords. Sparse arrangement with open gaps for a narrator. Halfway, the band stops dead on one huge brass chord that sags downward into a deflated trombone wah. Then lush strings and vibraphone climb back up into a bright major key, hopeful and triumphant, finishing on a single clean brass-and-cymbal button. Original generic lounge-spy sound, warm vintage analogue stereo.",
+    "exclude": "vocals, singing, choir, spoken word, humming, fade out, long intro, modern trap drums, EDM synths",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 30,
+    "maxMode": true
+  },
+  {
+    "name": "hard-funk",
+    "style": "Instrumental hard funk, 104 BPM, a single E minor 9 vamp that never changes chord, everything locked hard on the one. Dry tight drum kit, steady 16th-note hi-hats, ghost-note snare; slapped and popped electric bass; muted chicken-scratch rhythm guitar; small horn section (two trumpets, tenor and baritone sax) playing short unison stabs as hits, never long melodies. Lean arrangement with an open mid-range so a speaking voice sits on top. 0-3s bass and hats alone, two sharp horn stabs. 3-6s full band lands in a strutting pocket, a stab on the final step. 6-8.5s drops to drums and scratch guitar, one quick rising stab. 8.5-11s a big held horn chord, band hangs on it. 12.5s everything stops dead: a needle dragged off a record, then near silence with one low bass note. 14s the groove snaps back brighter, a step higher, horns on a bold climbing riff, open hats, handclaps. 17s one tight horn-and-kick hit and done. Warm 70s analogue tape tone, punchy modern low end.",
+    "exclude": "vocals, singing, choir, rap, lyrics, synth pads, smooth jazz, disco strings, orchestral, EDM drop, guitar solo, sax solo, fade out",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 45,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": true
+  },
+  {
+    "name": "library-cue",
+    "style": "Instrumental 1970s London production-library jazz-funk, 98 BPM, a cheeky caper theme for a Saturday-teatime telly thriller. Tight crisp breakbeat, rubbery fuzz bass line, clavinet and wah guitar chattering, Hammond organ swells, punchy trumpet and trombone fanfare with a flute answer. The groove thins to bass and hi-hat in places so a narrator can talk on top. Mid-cue a dramatic suspense stab: low brass cluster, timpani roll, trembling strings, then near silence. Recovers into a sunny major-key lift, horns and organ climbing to a jaunty closing flourish and one tight final chord. Dry 1970s studio, warm tape",
+    "exclude": "vocals, singing, choir, rap, lyrics, humming, vocal chops, trap hi-hats, EDM, synthwave, epic orchestral trailer, lo-fi, fade out",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 30,
+    "maxMode": false
+  },
+  {
+    "name": "corner-shop-break",
+    "style": "Instrumental big beat heist groove, 108 BPM, loud compressed dusty funk drum break with a lazy swing, round fuzzy bassline, low smoky organ stabs, short vinyl scratch accents on the turnarounds, low tense string ostinato underneath. Lean and dry, the midrange left open for a narrator, small shaker and a bright little bell ping as the hook. Midway the record slows to a turntable stop and the groove dies to silence; a glockenspiel climbs a major arpeggio like coins dropping into a jar, then the break slams back in warmer and hopeful, ending on one tight stop hit.",
+    "exclude": "vocals, singing, choir, rap, vocal chops, spoken word samples, EDM drop, dubstep wobble, trap hi-hats, guitar solo, long fade out",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 30,
+    "maxMode": false
+  },
+  {
+    "name": "tiptoe-caper",
+    "style": "Cartoon burglary sneak cue, instrumental, 100 BPM, swung on-the-tips-of-the-toes gait. Plucked double bass and pizzicato violins mark each footfall, staccato bassoon and a cup-muted tenor sax creeping side by side, soft brushes, woodblock ticks. Two coy plucks to start, a slinky crept strut that halts dead in comic freezes, one suspended tremolo hush, a cocky upward run. Then a sagging low tuba droop, a beat of nothing, and a tender clarinet tune rising over gentle strings to one bright pluck-and-cymbal stop. Dry, close, uncluttered; arrangement thins to bare plucks wherever a line gets read over it. No vocals.",
+    "exclude": "vocals, singing, choir, humming, spoken word, rap, lyrics, electric guitar, synth lead, EDM drops, heavy drums, distortion, reverb wash, long fade-out",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 30,
+    "maxMode": false
+  },
+  {
+    "name": "colliery-brass",
+    "style": "Instrumental northern English colliery brass band, slow proud processional march, 80 BPM, 4/4, played completely straight and solemn. Solo cornet carries the tune over tenor horns, baritones and deep E-flat basses; crisp side-drum rolls, a bass drum on every step. Starts with two firm side-drum taps, then the band swells in, kept sparse and mid-low so a spoken voice sits clearly on top. Around halfway the band falters and stops dead; a single euphonium is left holding one wobbly, crestfallen note. Then the whole band returns as a warm, rising hymn chorale, flugelhorn and cornets lifting, full of working-class pride. Ends on one clean sustained final chord with a cymbal, then silence.",
+    "exclude": "vocals, singing, choir, humming, lyrics, trumpet, French horn, saxophone, strings, piano, electric guitar, bass guitar, synth, drum kit, hi-hat, jazz, funk, swing, comedy sound effects, fade out",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 30,
+    "maxMode": true
+  },
+  {
+    "name": "clockwork-pulse",
+    "style": "Instrumental minimalist pulse cue, 120 BPM, D minor turning to D major. Dry close-miked marimba and muted felt piano locked in steady interlocking eighth notes, a woodblock ticking like an escapement wheel. Layers click in every two bars: pizzicato strings, a round synth bass on the downbeats, a tight closed hi-hat, a sly off-beat bass slide for cool. Then one sour wrong piano note and every part stops dead, a held beat of silence. The tick restarts alone, softly, and the whole machine climbs back in, chords stepping upward bar by bar with the bass, bright and hopeful, building to one clean final chord hit and a hard stop. Uncluttered midrange, lots of air between notes, crisp modern studio mix.",
+    "exclude": "vocals, singing, choir, humming, spoken word, rap, EDM drop, dubstep, distorted guitar, big orchestral swell, ambient drone, long intro, fade out",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 72,
+    "vocalGender": null,
+    "durationSec": 30,
+    "maxMode": true
+  }
+]

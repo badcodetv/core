@@ -1,0 +1,17 @@
+{
+  "style": "Instrumental hard funk, 104 BPM, a single E minor 9 vamp that never changes chord, everything locked hard on the one. Dry tight drum kit, steady 16th-note hi-hats, ghost-note snare; slapped and popped electric bass; muted chicken-scratch rhythm guitar; small horn section (two trumpets, tenor and baritone sax) playing short unison stabs as hits, never long melodies. Lean arrangement with an open mid-range so a speaking voice sits on top. 0-3s bass and hats alone, two sharp horn stabs. 3-6s full band lands in a strutting pocket, a stab on the final step. 6-8.5s drops to drums and scratch guitar, one quick rising stab. 8.5-11s a big held horn chord, band hangs on it. 12.5s everything stops dead: a needle dragged off a record, then near silence with one low bass note. 14s the groove snaps back brighter, a step higher, horns on a bold climbing riff, open hats, handclaps. 17s one tight horn-and-kick hit and done. Warm 70s analogue tape tone, punchy modern low end.",
+  "exclude": "vocals, singing, choir, rap, lyrics, synth pads, smooth jazz, disco strings, orchestral, EDM drop, guitar solo, sax solo, fade out",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": [
+    45
+  ],
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": true,
+  "title": "fj-sound-r1-hard-funk",
+  "mode": "custom",
+  "workspace": "short-fredo-job"
+}
