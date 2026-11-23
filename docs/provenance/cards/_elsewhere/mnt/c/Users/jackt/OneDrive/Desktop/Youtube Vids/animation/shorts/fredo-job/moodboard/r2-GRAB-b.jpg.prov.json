@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r2-GRAB-b.jpg",
+ "made": "2026-11-23T17:20:17.842Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Same warm, dark shop counter and lidded glass jars as the reference, but seen from almost straight above into the open front jar, filled with small frog-shaped chocolate bars in plain gold foil. Two gloved fingers pinch one bar and draw it slowly upward, a few millimetres clear of the others. The masked face of the crew member from the reference image is reflected faintly in the glass counter top beside the jar. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Crisp detail, golden highlights, deep shadows. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack r1 cast note: masks in suit material, no skin",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-jar.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-jar.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "274b26cd-93c6-4ae4-887e-463f1b08eefc"
+}

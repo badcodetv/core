@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/LASER-b.jpg",
+ "made": "2026-11-23T17:05:40.321Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Same dark amber corner-shop mood as the reference, seen from behind the counter looking out: in the sharp foreground a glass jar of plain gold-foil frog-shaped bars sits on the wooden counter. Beyond it, a tight grid of thin red laser beams fills the space in front of the counter, glowing in haze, and one crew member from the reference image is caught mid-move, folding low and sideways through the beams on one bent knee, gloved fingertips steadying on the floor. A glass display shelf glows softly at left. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Soft focus on the figure, red streaks of light. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Fredo Job stills r1 (Jack: varied stills)",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-aisle.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-aisle.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "82765155-edcd-45d7-9f97-108a1fea4d33"
+}

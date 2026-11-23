@@ -10,7 +10,10 @@
     "The way out: money that keeps up (Jack, 2026-11-23)"
   ],
   "video": {
-    "aspect": "9:16"
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 8
   },
   "flow_project": "8f55f330-03fa-409a-a911-9dd5b9c6693b"
 }

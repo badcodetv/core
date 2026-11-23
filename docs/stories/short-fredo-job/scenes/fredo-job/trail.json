@@ -30,5 +30,25 @@
   "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
   "what": "Stills r4: WAY-C wrist fix; the ending pick (A/B/C)",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/stills-r4-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-23T18:23:31+00:00",
+  "stage": "picks",
+  "round": 4,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "Stills r4 board read",
+  "decided": [
+   "r4-WAY-C-b; ending C (savings jar)"
+  ],
+  "feedback": "feedback/picks-r4",
+  "feedback_docs": 16
+ },
+ {
+  "at": "2026-11-23T18:36:29+00:00",
+  "stage": "clips",
+  "round": 5,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "Clips r1: 10 Omni clips + 2 post-only previews for the 6 locked frames, Claude's picks marked",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/clips-r1-picks.json <out.html>"
  }
 ]

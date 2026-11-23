@@ -1,0 +1,89 @@
+{
+ "acts": [
+  {
+   "id": "plan",
+   "title": "The plan",
+   "beats": "the board, the crew"
+  },
+  {
+   "id": "job",
+   "title": "The job",
+   "beats": "the lasers, the grab"
+  },
+  {
+   "id": "twist",
+   "title": "The twist",
+   "beats": "the new price"
+  },
+  {
+   "id": "way",
+   "title": "The way out (C, the savings jar)",
+   "beats": "money that keeps up"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "plan",
+   "title": "The board",
+   "look": "heist",
+   "line": "⬜ the pitch (Jack/Kai)",
+   "stills": [
+    "r2-BOARD-b"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "plan",
+   "title": "The crew walk",
+   "look": "heist",
+   "stills": [
+    "r2-CREW-b"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "job",
+   "title": "The laser aisle",
+   "look": "heist",
+   "stills": [
+    "r2-LASER-b"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "job",
+   "title": "The grab",
+   "look": "heist",
+   "stills": [
+    "r3-GRAB-b"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "twist",
+   "title": "The new price",
+   "look": "heist",
+   "line": "\"It was 10p when we started planning.\" (list; ⬜ ruled)",
+   "stills": [
+    "r3-TAG-a"
+   ],
+   "anim": 5
+  },
+  {
+   "n": 6,
+   "act": "way",
+   "title": "The savings jar keeps up",
+   "look": "heist",
+   "line": "⬜ (Jack/Kai)",
+   "stills": [
+    "r4-WAY-C-b"
+   ],
+   "anim": 6
+  }
+ ]
+}

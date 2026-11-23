@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/CREW-a.jpg",
+ "made": "2026-11-23T17:05:06.818Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Matching the reference: a long, dark, polished corridor with warm recessed ceiling lights, a glossy reflective floor and a bright hazy window at the far end. The four crew from the reference image walk towards the camera in a line, side by side, slow and unhurried, half-silhouetted against the bright end with warm rim light on their shoulders, their reflections stretching across the floor, each carrying their prop. Symmetrical framing, camera low at the centre of the corridor. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Cool, confident line-up walk. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Fredo Job stills r1 (Jack: varied stills)",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-crew-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-crew-a.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b2ebe9dc-0849-4168-80fb-2b3adf8f160a"
+}

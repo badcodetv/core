@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r2-CREW-b.jpg",
+ "made": "2026-11-23T17:19:37.314Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keeping the reference's near-ground camera, thick backlit haze and warm dusty light: a narrow British back lane behind a row of shops at night, washing lines strung overhead, haze glowing from a single light behind. The four crew from the reference image walk towards the camera in a staggered line, slow and deliberate, looming tall from the low angle, shoes stirring faint dust, one tugging a glove tight, one swinging a case. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Gritty, grainy, golden haze. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack r1 cast note: masks in suit material, no skin",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-crew-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-crew-b.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "7a66c2f9-2073-46dd-adaa-97e260e761c2"
+}

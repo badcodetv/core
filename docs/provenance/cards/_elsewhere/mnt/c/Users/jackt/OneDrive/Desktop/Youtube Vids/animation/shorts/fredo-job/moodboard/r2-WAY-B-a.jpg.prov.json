@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r2-WAY-B-a.jpg",
+ "made": "2026-11-23T17:22:01.932Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Following the reference's layout and bright side daylight from the window: a British corner shop counter by day, a big lidded glass jar of plain gold-foil frog-shaped bars on the counter, shelves of plain unlabelled jars and bottles. Behind the counter stands an ordinary shopkeeper, a cheerful middle-aged man with greying stubble, a dark green fleece and reading glasses pushed up on his head, palm held out. Across the counter, one crew member from the reference image, relaxed, tips a few coins from a gloved hand into his, one gold-foil frog bar already lying on the counter between them. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Friendly, ordinary moment. Real photograph, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack r1 cast note: masks in suit material, no skin",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-counter.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-counter.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "d1906541-84b7-427f-9640-007db60a844f"
+}

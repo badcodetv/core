@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/CAST-CREW-2-b.jpg",
+ "made": "2026-11-23T17:15:45.901Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Full-length photograph of four masked crew members standing side by side in a row, facing the camera, arms relaxed, against a plain charcoal backdrop under soft, even studio light. Left to right: a tall, lean figure in a slim charcoal three-piece suit, a silver stopwatch in one hand; a broad, heavyset figure of medium height in a navy double-breasted pinstripe suit, gripping a brushed-aluminium drill case; a short, slight, wiry figure in a fitted black roll-neck and black trousers, a coil of climbing rope over one shoulder; a medium-build figure in a cream linen suit, a slim closed laptop under one arm. Each balaclava is tailored from the same cloth as its wearer's outfit: charcoal wool, navy pinstripe, black knit, cream linen, each with the white ring and red triangle exactly as in the attached image. Every mask runs down into a high collar or roll-neck, so the neck is covered; black leather gloves on every hand; no holes, no skin anywhere. Polished shoes. No text, lettering, logos or brand names anywhere in the image. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/fredo-r1/mask-reference.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c15cb9f3-8c93-4019-919b-323a76b15d79"
+}

@@ -23,6 +23,15 @@ and gallery forward. The MCP generate tools take no project: they use whichever 
 - A plain `flow_generate_image` now refuses to run if a reference chip is left on the bar from an earlier call
   (`packages/flow-mcp/src/flow-client.ts`, generateImage). If it refuses, remove the chip in Flow or open a fresh project.
 
+## Jack 2026-11-23: one signed-in browser, never a second signed-out one
+
+"it always opens the browser with flow and it not signed in then it reopens it signed in to the correct one so can you get
+rid of the one that doesn't sign in properly". Cause: an older Claude window still held channel 1 (the signed-in
+`.flow-profile`), so each new session's flow MCP launched channel 2 with its own empty profile. Fixed in
+`packages/flow-mcp/src/channel.ts`: a session uses the lowest browser already running, held or not ("shared"), and when
+nothing runs it relaunches channel 1, never a fresh profile. A running flow MCP keeps the old code until `/mcp` →
+reconnect **flow**. Two sessions on one browser still follow "one job per tab" below.
+
 ## 2026-11-18: three Flow tool bugs found and fixed (Jack: "why is flow failing so much")
 
 - **`UPLOAD_STUCK`** was the tool, not Flow: the picker's finished option now reads "image <file> Image" and the tool

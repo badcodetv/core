@@ -1,0 +1,187 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Veo's camera is locked; Premiere does every push and snap zoom",
+   "why": "hybrid method",
+   "source": "scene-animation"
+  },
+  {
+   "rule": "Every price and word (10p, 39p, the savings figure) is drawn by ffmpeg, never by Veo",
+   "why": "Flow lettering comes out as gibberish; the tags are blank on purpose",
+   "source": "badcode.md (Heist and caper)"
+  },
+  {
+   "rule": "One gesture per clip; few movers",
+   "why": "Heist and caper: one gesture per 8 s clip; Omni struggles past three moving figures",
+   "source": "badcode.md"
+  },
+  {
+   "rule": "Freeze frame and snap zoom are post punctuation (Premiere)",
+   "why": "Heist and caper comic punctuation",
+   "source": "badcode.md"
+  },
+  {
+   "rule": "Wrapper lettering may drift in motion: check 'Freddoo' frame by frame and cover any maker's name in post",
+   "why": "bar ruling, 2026-11-23",
+   "source": "badcode.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Sell the plan as grand and precise, all aimed at one tiny jar.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The jab at the jar",
+     "idea": "The cream-suited one taps the circled jar photo twice; the others lean in; the lamp sways a little.",
+     "lanes": "Veo: one tap, a lean. Premiere: slow push to the circled jar. ffmpeg: 10p on the jar photo.",
+     "veo_prompt": "The camera does not move. A dim back room. The crew member in the cream suit taps the circled photo of the jar on the plan twice with a gloved finger, firmly. The others lean in a little closer. The hanging lamp sways gently, its light sliding across the brick wall. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in on the tap, out as the lean settles",
+     "seconds": 3,
+     "risk": "masks turning side-on as they lean"
+    },
+    {
+     "id": "b",
+     "label": "Post only: push to the target",
+     "idea": "Hold the still; Premiere pushes from the whole wall to the circled jar; string glints.",
+     "lanes": "Veo: none. Premiere: eased push. ffmpeg: 10p.",
+     "veo_prompt": null,
+     "cut": "hold 3 s",
+     "seconds": 3,
+     "risk": "none; flat if held too long"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "The crew line-up: four distinct silhouettes walking out, slow and cool.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Slow-motion walk",
+     "idea": "The four walk towards camera in slow motion; smoke rolls behind them; the briefcase swings.",
+     "lanes": "Veo: the walk. Premiere: slight speed ramp, freeze on the last step for a crew name card. ffmpeg: names/trades if Jack wants them.",
+     "veo_prompt": "The camera does not move. A smoky back alley at night, lit from behind. The four crew walk slowly towards the camera in slow motion, side by side, in step. Smoke rolls slowly behind them through the backlight. The briefcase swings gently in the gloved hand of the one in the pinstripe suit. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in mid-stride, out before they reach the lens",
+     "seconds": 3,
+     "risk": "faces/masks redraw as they get bigger; legs morph"
+    },
+    {
+     "id": "b",
+     "label": "They stop and square up",
+     "idea": "They take one last step and stop in a line; the smoke keeps rolling.",
+     "lanes": "Veo: one step, stop. Premiere: freeze frame on the stop.",
+     "veo_prompt": "The camera does not move. A smoky back alley at night, lit from behind. The four crew take one last slow step and stop together in a line, standing still and composed. Smoke drifts slowly behind them through the backlight. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in on the step, out on the freeze",
+     "seconds": 2.5,
+     "risk": "low"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "Precise, wordless work: the laser grid treated like a bank vault.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Under the beams",
+     "idea": "The crouched figure eases lower under a beam, a gloved hand reaching slowly forward.",
+     "lanes": "Veo: one slow duck and reach. Premiere: split screen with the grab if wanted.",
+     "veo_prompt": "The camera does not move. A dark corner shop at night, thin red laser beams crossing the aisle, held perfectly steady. The crouched crew member in the navy pinstripe suit eases lower, very slowly, beneath a beam, and reaches one gloved hand forward with great care. A thin haze drifts through the red beams. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in as he dips, out on the reach",
+     "seconds": 3,
+     "risk": "beams drifting or vanishing; body morph"
+    },
+    {
+     "id": "b",
+     "label": "Frozen, the beams sweep",
+     "idea": "He holds perfectly still while the haze shows the beams; only his gloved fingers flex.",
+     "lanes": "Veo: haze and a finger flex. Premiere: slow push to his hand.",
+     "veo_prompt": "The camera does not move. A dark corner shop at night, thin red laser beams crossing the aisle, held perfectly steady. The crouched crew member holds completely still, then flexes the fingers of one gloved hand. A thin haze drifts slowly through the red beams, making them glow. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in on the haze, out after the flex",
+     "seconds": 2.5,
+     "risk": "low"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "The prize: one small chocolate frog lifted like a diamond.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The lift",
+     "idea": "The gloved hand lifts the Freddoo slowly up out of the jar and holds it to the light.",
+     "lanes": "Veo: one slow lift. Premiere: freeze frame at the top, a light flare.",
+     "veo_prompt": "The camera does not move. Inside a corner shop at night. A gloved hand lifts the purple wrapped chocolate frog bar slowly and carefully straight up out of the glass jar and holds it up, still. The wrapper keeps its exact design. Reflections glide softly across the glass jars. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in on the lift, out on the freeze at the top",
+     "seconds": 3,
+     "risk": "wrapper lettering drifts (cover in post); hand morph"
+    },
+    {
+     "id": "b",
+     "label": "The hold and the nod",
+     "idea": "Hand stays; behind, the crew member gives one slow nod.",
+     "lanes": "Veo: one nod. Premiere: snap zoom on the bar.",
+     "veo_prompt": "The camera does not move. Inside a corner shop at night. A gloved hand holds the purple wrapped chocolate frog bar perfectly still above the open glass jar. Behind it, the crew member gives one slow, satisfied nod. The wrapper keeps its exact design. Reflections glide softly across the glass jars. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in on the nod",
+     "seconds": 2.5,
+     "risk": "wrapper drift"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "The twist lands: the price tag they planned around is wrong now.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Stunned stillness",
+     "idea": "The four stare at the jar; one slowly leans in to read the tag; the bulb flickers once.",
+     "lanes": "Veo: one lean, one flicker. Premiere: snap zoom to the tag. ffmpeg: 39p on the tag.",
+     "veo_prompt": "The camera does not move. A corner shop at night under one bare bulb. Four crew stand motionless behind the counter staring down at the jar. The crew member in the navy suit slowly leans forward towards the jar to look closer. The bare bulb flickers once, briefly. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in on the stare, out on the lean",
+     "seconds": 3,
+     "risk": "masks drift side-on as he leans"
+    },
+    {
+     "id": "b",
+     "label": "Post only: snap zoom",
+     "idea": "Hold, then a whip/snap zoom onto the blank tag where ffmpeg writes 39p; freeze.",
+     "lanes": "Veo: none. Premiere: snap zoom. ffmpeg: 10p crossed to 39p.",
+     "veo_prompt": null,
+     "cut": "1 s hold, snap, 1.5 s hold",
+     "seconds": 2.5,
+     "risk": "none"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "job": "The way out: their savings rise with the price, so the next plan still works.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The coins rise with the frogs",
+     "idea": "The gloved hand slides the coin jar up beside the Freddoo jar; the coins inside rise slowly to the same level.",
+     "lanes": "Veo: slide, the level rising. ffmpeg: the tag and the savings figure tick up together (10p→39p, pay with it).",
+     "veo_prompt": "The camera does not move. A corner shop counter at night. A gloved hand slides the glass jar of coins slowly across the counter until it sits beside the jar of purple wrapped chocolate frog bars. The coins inside the jar rise steadily until they reach the same height as the bars. The wrappers keep their exact design. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in on the slide, out when the levels match",
+     "seconds": 4,
+     "risk": "'rising coins' may redraw strangely; wrapper drift"
+    },
+    {
+     "id": "b",
+     "label": "The hand rests on the jar",
+     "idea": "The gloved hand settles on the coin jar's lid; small nod; numbers in post do the argument.",
+     "lanes": "Veo: one hand settle. ffmpeg: both figures tick up in step.",
+     "veo_prompt": "The camera does not move. A corner shop counter at night. A gloved hand rests calmly on the lid of the glass jar of coins beside the jar of purple wrapped chocolate frog bars. The crew member behind gives one small, satisfied nod. Warm light glints softly on the coins. The wrappers keep their exact design. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "in on the settle",
+     "seconds": 3,
+     "risk": "low"
+    }
+   ]
+  }
+ ]
+}

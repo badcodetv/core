@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/GRAB-a.jpg",
+ "made": "2026-11-23T17:05:53.206Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Close photograph following the reference: a row of lidded glass sweet jars on a glass-topped wooden shop counter at night, warm lamplight, shelves and an old weighing scale soft behind, reflections in the counter glass. The front jar's lid is set aside; a gloved hand lifts one small chocolate bar shaped like a frog, wrapped in plain shiny gold foil, up out of the jar between finger and thumb, delicate and precise. More plain gold-foil frog bars fill the jar below. The masked head of the crew member from the reference image is just visible, soft and out of focus, behind. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Shallow focus on the glinting foil. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Fredo Job stills r1 (Jack: varied stills)",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-jar.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-jar.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "b122c223-72f9-474e-b241-cb204cdf1ef8"
+}

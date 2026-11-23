@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/TAG-b.jpg",
+ "made": "2026-11-23T17:06:56.699Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Same single bare bulb and crowded, plain snack shelf as the reference, seen from a low angle at counter height: the small blank white price tag on a glass jar of plain gold-foil frog bars fills the sharp foreground. Above and behind it, the four crew from the reference image stand in a tight row, masked heads bowed towards the tag, utterly still and deadpan, soft in focus, gloved hands at their sides. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Dry, comic stillness, warm bulb glow. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Fredo Job stills r1 (Jack: varied stills)",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-shelf.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-shelf.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "9860c9fc-202c-417b-a806-f6f06b2fccf2"
+}

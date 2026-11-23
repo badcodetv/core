@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r3-WAY-B-a.jpg",
+ "made": "2026-11-23T17:37:54.293Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the provided photograph, keep the shop, the daylight, the shopkeeper, the masked customer, the coins and everyone's pose exactly as they are. Change only the chocolate bars: the bars in the big glass jar, and the single bar in the customer's gloved hand, are now small British kids' chocolate bars in glossy purple flow-wrap wrappers, each printed with a cheerful green cartoon frog and the name Freddoo in bold rounded yellow letters with a white outline. The bar in his hand faces the camera so Freddoo reads clearly. No other words or logos on the wrappers. Real photograph, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack r2 WAY-B pick + Freddoo fix",
+ "parent": "/home/jackt/.cache/fredo-r1/r2-WAY-B-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/r2-WAY-B-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "379139fe-5cef-4428-bbb5-e48a839d6272"
+}

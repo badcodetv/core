@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r2-BOARD-b.jpg",
+ "made": "2026-11-23T17:19:14.159Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keeping the reference's dim, lamp-lit mood and painted brick: the corner-shop floor plan is pinned to the brick wall itself, surrounded by photos of the shop door, the counter and a glass jar of gold-foil frog-shaped bars, all joined by taut red string to the circled jar on the plan. A single lamp hangs low, casting hard pools of light. The four crew from the reference image stand before the wall, seen from behind and in profile: one presses a gloved finger on the circled jar, two lean in to study it, one checks a stopwatch. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Moody contrast, cool shadows. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack r1 cast note: masks in suit material, no skin",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-board.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-board.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "c04dd7a3-7eaa-4584-893f-2ae7f188a61f"
+}

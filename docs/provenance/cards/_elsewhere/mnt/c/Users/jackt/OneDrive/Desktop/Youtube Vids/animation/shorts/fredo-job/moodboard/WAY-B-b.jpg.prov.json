@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/WAY-B-b.jpg",
+ "made": "2026-11-23T17:07:37.644Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Same daylit corner-shop counter, window light and big glass jar of plain gold-foil frog bars as the reference, seen over the shoulder of an ordinary shopkeeper: a woman in her sixties with short grey hair and a navy cardigan, the till drawer open. Facing her across the counter, one crew member from the reference image stands at ease, holding out a gloved palm of coins, a single gold-foil frog bar in the other hand. Sunlight falls across the counter between them. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Warm, everyday calm. Real photograph, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Fredo Job stills r1 (Jack: varied stills)",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-counter.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-counter.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "018b97f9-4be1-49eb-a70f-5a841e588a1e"
+}

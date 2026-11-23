@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/LASER-a.jpg",
+ "made": "2026-11-23T17:05:36.462Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Following the reference's composition and dark amber light: a British corner shop at night, closed, a glowing glass display shelf of plain unlabelled sweet boxes at left, a wooden counter in the lower frame, deep shadow elsewhere. A dense grid of thin red laser beams crosses in front of the counter, made visible by light haze. One crew member from the reference image bends backwards and sideways through a gap between beams, gloved hands raised, perfectly balanced, a coil of rope on one shoulder, beams a finger's width from the mask. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Red glow on the wood. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Fredo Job stills r1 (Jack: varied stills)",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-aisle.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-aisle.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "f1d8014e-85a9-4407-ad76-421cf8faf3f6"
+}

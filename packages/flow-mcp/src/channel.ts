@@ -148,7 +148,7 @@ export interface Resolution {
   port: number
   endpoint: string
   /** How we got here — worth surfacing, because "pinned" and "claimed" behave differently. */
-  how: 'pinned' | 'held' | 'claimed' | 'needs-launch'
+  how: 'pinned' | 'held' | 'claimed' | 'shared' | 'needs-launch'
   /** True when nothing is listening yet and the caller must launch Chrome. */
   needsLaunch: boolean
 }
@@ -182,18 +182,25 @@ export async function resolveChannel(
 
   const survey = await surveyChannels(root, max)
 
-  // Prefer a browser that is already running and nobody has claimed.
-  const free = survey.find((c) => c.up && c.claimedBy === null)
-  if (free) {
-    writeLock(root, free.channel, owner)
-    return { channel: free.channel, port: free.port, endpoint: free.endpoint, how: 'claimed', needsLaunch: false }
+  // Jack, 2026-11-23: "get rid of the one that doesn't sign in properly". Only channel 1's profile is
+  // signed in for good; a new session used to skip it whenever an older Claude window still held it and
+  // launch a second, signed-out browser on the next channel. Now every session uses the lowest browser
+  // that is already running, held or not (sessions share it, each in its own tab work; the download lock
+  // keeps them apart), and only launches when nothing is up, and then always channel 1.
+  const running = survey.find((c) => c.up)
+  if (running) {
+    if (running.claimedBy === null) writeLock(root, running.channel, owner)
+    return {
+      channel: running.channel, port: running.port, endpoint: running.endpoint,
+      how: running.claimedBy === null ? 'claimed' : 'shared', needsLaunch: false,
+    }
   }
 
-  // Otherwise the lowest channel with no browser at all — the caller launches it.
-  const empty = survey.find((c) => !c.up && c.claimedBy === null)
-  if (empty) {
-    writeLock(root, empty.channel, owner)
-    return { channel: empty.channel, port: empty.port, endpoint: empty.endpoint, how: 'needs-launch', needsLaunch: true }
+  // Nothing running: launch channel 1 (the signed-in profile), never a fresh profile.
+  const first = survey[0]
+  if (first) {
+    if (first.claimedBy === null) writeLock(root, first.channel, owner)
+    return { channel: first.channel, port: first.port, endpoint: first.endpoint, how: 'needs-launch', needsLaunch: true }
   }
 
   throw new Error(

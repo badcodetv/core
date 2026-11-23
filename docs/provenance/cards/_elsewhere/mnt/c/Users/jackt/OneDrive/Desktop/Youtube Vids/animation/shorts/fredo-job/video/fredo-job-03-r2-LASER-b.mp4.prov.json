@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/video/fredo-job-03-r2-LASER-b.mp4",
+ "made": "2026-11-23T18:29:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. A dark corner shop at night, thin red laser beams crossing the aisle, held perfectly steady. The crouched crew member in the navy pinstripe suit eases lower, very slowly, beneath a beam, and reaches one gloved hand forward with great care. A thin haze drifts through the red beams. Every balaclava keeps facing the camera, its white ring and red triangle steady, gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r2-LASER-b.jpg",
+ "why": "Under the beams",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r2-LASER-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-fredo-job/scenes/fredo-job",
+  "key": "03",
+  "frame": 3,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T18:28:24.171Z"
+ }
+}

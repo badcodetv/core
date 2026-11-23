@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r3-GRAB-a.jpg",
+ "made": "2026-11-23T17:46:53.592Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Swap the gold foil sweets in this photograph for purple-wrapped kids' frog chocolate bars. Every bar in the open glass jar, and the bar held up between the gloved finger and thumb, is a glossy purple wrapper with a smiling green cartoon frog and one word in chunky yellow letters edged in white: Freddoo. The held bar turns towards the lens so that one word is sharp and readable. The wrappers carry that single word and the frog, nothing else. Everything else in the photo (the lamplit counter, the lid, the masked figure behind, the shallow focus) stays as it is. Real photograph, 9:16.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/.cache/fredo-r1/r2-GRAB-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/r2-GRAB-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "06d059dc-8288-4e80-8042-b87b2d4c061d"
+}

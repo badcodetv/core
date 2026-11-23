@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r4-WAY-C-b.jpg",
+ "made": "2026-11-23T18:06:36.113Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "In this photograph, both gloves become long black leather gauntlets that run well up under the navy pinstripe jacket cuffs, and the white shirt cuffs are pulled down over them, so from the fingertips to the sleeve there is only black leather and cloth: the wrists are fully covered. The coin, the two jars, the purple Freddoo wrappers, the counter, the light and the masked figure are unchanged. Real photograph, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack r3 WAY-C: skin on the wrist fix it",
+ "parent": "/home/jackt/.cache/fredo-r1/r3-WAY-C-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/r3-WAY-C-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "9c257c38-5de6-450b-bfc6-49142ea1044f"
+}

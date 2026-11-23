@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/cut/_scratch/post-05-b.mp4",
+ "made": "2026-11-23T18:36:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "zoompan",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r3-TAG-a.jpg",
+ "why": "post-only preview: snap zoom on the tag (option 5b)",
+ "settings": {
+  "move": "hold 1s then zoom to 2.6 in 1.5s, centre 0.46,0.70"
+ }
+}

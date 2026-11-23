@@ -8,7 +8,7 @@
 A BadCode short (9:16, about 15 s): a gang in BadCode balaclavas plans a heist-film job, blueprints, a laser grid, the
 crew line-up, all for one small chocolate bar in a corner-shop jar that cost 10p. They pull it off, and the price has gone
 up. "It was 10p when we started planning." The point: prices rise faster than ordinary people's plans. The way out (Jack, 2026-11-23):
-money that keeps up: the crew's pay or savings ticks up with the price, so the next plan still works. Jack: "have heavy oceans eleven references": a parody of the slick heist film, played straight.
+money that keeps up: the crew's pay or savings ticks up with the price, so the next plan still works. Ending (Jack, stills r4): **C, the savings jar** that fills as the price rises. Jack: "have heavy oceans eleven references": a parody of the slick heist film, played straight.
 
 ## Look
 Heist and caper (library, below), on real-photo layouts. Not found yet: stills to come.

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/r3-TAG-a.jpg",
+ "made": "2026-11-23T17:37:44.296Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the provided photograph, keep the shop, the bulb, the four masked crew, their poses and the blank white price tag exactly as they are. Change two things only. First, the jar is now filled with small British kids' chocolate bars in glossy purple flow-wrap wrappers, each printed with a cheerful green cartoon frog and the name Freddoo in bold rounded yellow letters with a white outline; the front bars face the camera so Freddoo reads clearly. Second, the cream mask on the right has a white ring stitched round the face exactly like the other three masks and the attached mask image, with its red triangle over the wearer's left eye, on the right of the picture. No other words or logos. Real photograph, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Jack r2 TAG pick + Freddoo fix; cream mask ring back to white",
+ "parent": "/home/jackt/.cache/fredo-r1/r2-TAG-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/r2-TAG-b.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c5aec302-2d38-472e-8e36-d80256c0d2c7"
+}

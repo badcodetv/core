@@ -94,13 +94,14 @@ describe('resolveChannel', () => {
     expect(readLock(root, 1)?.owner).toBe('flow')
   })
 
-  it('skips a channel another live process holds', async () => {
-    stubPorts([9222, 9223])
-    // pid 1 is alive but owned by root, so process.kill(1, 0) throws EPERM — the case that
-    // must still read as ALIVE, or we would steal a channel another process holds.
-    writeLock(root, 1, 'suno', 1)
+  it('shares the signed-in channel 1 when another live session holds it, never opening a second browser', async () => {
+    stubPorts([9222])
+    // pid 1 is alive but owned by root, so process.kill(1, 0) throws EPERM — it must still read as
+    // ALIVE, so the other session's lock is left alone (shared, not stolen).
+    writeLock(root, 1, 'flow', 1)
     const r = await resolveChannel(root, 'flow', {} as NodeJS.ProcessEnv)
-    expect(r.channel).toBe(2)
+    expect(r).toMatchObject({ channel: 1, how: 'shared', needsLaunch: false })
+    expect(readLock(root, 1)?.pid).toBe(1)
   })
 
   it('returns a channel it already holds without re-claiming', async () => {
@@ -116,9 +117,10 @@ describe('resolveChannel', () => {
     expect(r).toMatchObject({ channel: 1, how: 'needs-launch', needsLaunch: true })
   })
 
-  it('throws a directed error when every channel is claimed', async () => {
+  it('relaunches channel 1 (never a fresh profile) when nothing runs, even if it is held', async () => {
     stubPorts([])
     for (let c = 1; c <= 2; c++) writeLock(root, c, 'flow', 1)
-    await expect(resolveChannel(root, 'flow', {} as NodeJS.ProcessEnv, 2)).rejects.toThrow(/ALL_CHANNELS_BUSY/)
+    const r = await resolveChannel(root, 'flow', {} as NodeJS.ProcessEnv, 2)
+    expect(r).toMatchObject({ channel: 1, how: 'needs-launch', needsLaunch: true })
   })
 })

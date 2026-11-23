@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/moodboard/WAY-A-a.jpg",
+ "made": "2026-11-23T17:06:59.708Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "A split-flap board in the style of the reference, seen straight on and filling the upper frame: dark frame, pale flaps, every flap blank. Two rows side by side climb together, several flaps in each caught mid-flip at the same moment, upper halves folding down. The first flap of the upper row shows a small gold frog-bar pictogram, the first of the lower row a small gold coin pictogram. Below, one crew member from the reference image sits on a bench, leaning back, ankle on knee, gloved hands behind the head, calmly watching the rows rise in step. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Calm, even light. Real photograph, slick 2000s heist-film look, 9:16.",
+ "model": "Nano Banana 2.1",
+ "why": "Fredo Job stills r1 (Jack: varied stills)",
+ "parent": "/home/jackt/.cache/fredo-r1/ref-flap.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/fredo-r1/ref-flap.jpg",
+   "/home/jackt/.cache/fredo-r1/CAST-CREW.jpg",
+   "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "7888ae4e-db0f-48f7-999b-4179a06afe36"
+}
