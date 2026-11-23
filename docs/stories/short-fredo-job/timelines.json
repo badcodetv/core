@@ -2,6 +2,6 @@
  "story": "short-fredo-job",
  "note": "A short is one scene (new-short); this file only lets scripts/scene/premiere-check.py find it.",
  "sections": [
-  {"id": "fredo-job", "title": "The Fredo Job", "scene": "scenes/fredo-job", "timeline": ""}
+  {"id": "fredo-job", "title": "The Fredo Job", "scene": "scenes/fredo-job", "timeline": "https://claude.ai/artifact/YW18KXAyLbnLTyPchxch1Q"}
  ]
 }

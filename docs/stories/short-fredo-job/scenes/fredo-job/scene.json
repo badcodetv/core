@@ -15,5 +15,12 @@
     "mode": "Frames",
     "duration": 8
   },
-  "flow_project": "8f55f330-03fa-409a-a911-9dd5b9c6693b"
+  "flow_project": "8f55f330-03fa-409a-a911-9dd5b9c6693b",
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/cut/r1/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/cut/r1/preview.mp4"
+  },
+  "boards": {
+    "timeline": "https://claude.ai/artifact/YW18KXAyLbnLTyPchxch1Q"
+  }
 }

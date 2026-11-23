@@ -142,5 +142,13 @@
   ],
   "feedback": "feedback/picks-r9",
   "feedback_docs": 27
+ },
+ {
+  "at": "2026-11-23T20:46:39+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/YW18KXAyLbnLTyPchxch1Q",
+  "what": "Rough cut 1: locked clips, Claude's lines (crew voice), Jack's funk take with a made stop on 39p, post labels; 20.75 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-fredo-job/scenes/fredo-job <out-dir>"
  }
 ]

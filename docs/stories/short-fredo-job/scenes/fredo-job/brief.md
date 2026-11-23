@@ -54,3 +54,15 @@ Words: no mouths on the masks, so any line is a voice over the picture or a capt
 
 About 18 s. ⬜ still open: sound (story-style), voice or captions, whether the savings figure is pay or savings (pay over
 the same years is not checked yet, `numbers.md`).
+
+## Script draft 3 (by: claude, 2026-11-23): the lines, voiced (Jack: "you make the lines and do the cut thanks")
+
+| # | Line | Take |
+| --- | --- | --- |
+| 1 | "Job of the century, lads. Ten p." | L1-pitch-b |
+| 3 | "Like butter." (Jack's words) | L3-butter-a |
+| 5 | "It was ten p when we started planning." (the shorts list's line) | L5-twist-a |
+| 6 | "New plan, lads. Savings that keep up with prices." | L6-wayout-b |
+
+Post labels (draft): `10p` in red under the jar photo on the plan; `39p` on the jar label (snap zoom); `SAVINGS` and `PRICE`
+counting 10p to 39p together on the two jars. Cut: `scripts/shorts/fj_cut.py`, rough cut 1 on the timeline page.
