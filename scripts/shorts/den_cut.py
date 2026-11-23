@@ -34,9 +34,9 @@ SOURCE = "National Audit Office, Evaluating government spending (HC 860), Decemb
 # line -> (who, take under audio/, tempo, text)
 LINES = {
     '01': ('narrator', 'casting/narrator--en-gb-podcaster-2.wav', 1.0, "Next into the den: a government minister, asking for two billion pounds."),
-    '02': ('minister', 'lines/02-minister-pitch--b.wav', 1.07, "Two billion pounds. Every teenager in the country, taken round a prison. Scare them straight."),
+    '02': ('minister', 'lines/02-minister-pitch--b.wav', 1.01, "Two billion pounds. Every teenager in the country, taken round a prison. Scare them straight."),
     '03': ('badcode', 'lines/03-badcode-ask--a.wav', 1.0, "And how will you know it works?"),
-    '04': ('minister', 'lines/04-minister-feeling--b.wav', 0.97, "...I've got a good feeling."),
+    '04': ('minister', 'lines/04-minister-feeling--b.wav', 0.98, "...I've got a good feeling."),
     '05a': ('inv-a', 'casting/inv-a--en-gb-tutor-5.wav', 0.97, "I'm out."),
     '05c': ('inv-c', 'casting/inv-c--en-gb-assistant-5.wav', 0.97, "I'm out."),
     '05d': ('inv-d', 'casting/inv-d--en-gb-assistant-6.wav', 0.97, "I'm out."),
@@ -53,26 +53,31 @@ GLASS = dict(cx=540, cy=820, w=560, fade=0.5)  # the logo's place on the GLASSa 
 # r3 measured it 0.125 s early; the I'm-outs measured +0.083 s late in r3 and stay), and the music bed: Jack's pick piano-a (music r1 picks page), recorded from the player.
 MUSIC = AUD / 'music/den-music-r1-lone-piano-clock-v6-w20-ef69e318.wav'
 MUS_GAIN, MUS_FADE = -9, 1.5  # dB under the voices before ducking; fade-out at the end (s)
-TALK = {'MIN1a', 'MIN2a', 'INVAb', 'INVCa', 'INVDa', 'NURSEc'}  # their own audio is Omni's voice: muted, room laid under
+TALK = {'MIN1a', 'MIN2a', 'MINEc', 'MINFb', 'INVAb', 'INVCa', 'INVDa', 'NURSEc'}  # their own audio is Omni's voice: muted, room laid under
 # (beat, title, clip key, still, in, dur, hold-first-frame, [(line, the take FILE's start, s into the shot)], what we see)
 # The pitch: the take runs whole from the panel shot; the cut to MIN1a falls in the pause before "Every teenager" (voice
 # 2.30 s in, x1.07) and PITCH_IN puts his mouth's "Every" 0.04 s before it; the panel again for "Scare them straight".
 # Round 3 (2026-11-23): voices unchanged; talking in-points moved so each mouth opens 0.05 s before its voice (den_refit.py,
 # strips by eye: INVAb opens 2.17, INVCa 3.91, INVDa 3.54). The nurse re-voiced plain, no pause tags ("One ward, six
 # months.", take N5-2): its phrase gaps match her mouth's ("One" purses at clip 0.97, "Six" 2.46, the p/m of "paying me" 6.5/6.8). Round 1-2 fitted file starts: MIN2a 3.408; INVAb 2.007; INVCa 2.439; INVDa 3.315; NURSEc L-1 0.842 x1.05.
+# Round 6 (2026-11-23, Jack: "the lip sycning is still off on the den fix it ... also trim the dead air"): the minister re-shot
+# (MINEc carries only "Every teenager in the country, taken round a prison", MINFb opens on a closed-lip smile), fitted with
+# scripts/shorts/den_fit_min.py (MINEc: "Every" at clip 1.062, take b x1.01; MINFb: take b x0.98, first word at clip 3.104).
+# Dead air trimmed: each shot's head and tail cut down to a short beat; a talking shot's in-point and its line move together
+# (in-point + h, line - h), so its sync is unchanged. Durations are whole frames.
 SHOTS = [
-    ('stairs', '1. Next into the den', 'STAIRSb', 'STAIRS', 0.0, 6.2, 0, [('01', 0.35)], 'The minister comes down the iron stairs'),
-    ('listen', '2. The pitch', 'WIDEa', 'WIDE', 3.0, 2.35, 0, [('02', 0.2)], 'The panel listens: "Two billion pounds."'),
-    ('pitch', '2. The pitch', 'MIN1a', 'MIN', PITCH_IN, 2.9, 0, [], 'On the mark, all teeth'),
-    ('react', '2. The pitch', 'WIDEa', 'WIDE', 0.5, 1.5, 0, [], 'The panel, over "Scare them straight"'),
-    ('ask', '3. How will you know?', 'BCASKa', 'BC', 0.6, 2.6, 0, [('03', 0.15)], 'BadCode leans in'),
-    ('feeling', '4. A good feeling', 'MIN2a', 'MIN', 2.548, 2.6, 0, [('04', 0.608)], 'The grin holds'),
-    ('outa', '5. I\'m out', 'INVAb', 'INVA', 1.544, 1.5, 0, [('05a', 0.407)], 'Investor A'),
-    ('outc', '5. I\'m out', 'INVCa', 'INVC', 3.211, 1.5, 0, [('05c', 0.439)], 'Investor C'),
-    ('outd', '5. I\'m out', 'INVDa', 'INVD', 2.92, 1.5, 0, [('05d', 0.415)], 'Investor D'),
-    ('nurse', '6. The nurse', 'NURSEc', 'NURSE', 0.8, 7.0, 0, [('06', 0.03)], 'One ward, six months'),
-    ('in', '7. I\'m in', 'BCINa', 'BC', 4.0, 3.2, 0, [('07', 1.6)], 'BadCode leans right in'),
-    ('card', '8. The evidence', None, None, 0, 5.0, 0, [], 'The National Audit Office finding'),
+    ('stairs', '1. Next into the den', 'STAIRSb', 'STAIRS', 0.3, 131 / 24, 0, [('01', 0.05)], 'The minister comes down the iron stairs'),
+    ('listen', '2. The pitch', 'WIDEa', 'WIDE', 3.0, 50 / 24, 0, [('02', 0.0)], 'The panel listens: "Two billion pounds."'),
+    ('pitch', '2. The pitch', 'MINEc', 'MIN', 0.7093, 77 / 24, 0, [], 'On the mark, all teeth: "Every teenager in the country, taken round a prison."'),
+    ('react', '2. The pitch', 'WIDEa', 'WIDE', 0.5, 33 / 24, 0, [], 'The panel, over "Scare them straight"'),
+    ('ask', '3. How will you know?', 'BCASKa', 'BC', 0.6, 51 / 24, 0, [('03', 0.1)], 'BadCode leans in'),
+    ('feeling', '4. A good feeling', 'MINFb', 'MIN', 2.654, 47 / 24, 0, [('04', 0.064)], 'The smile holds, then: "I\'ve got a good feeling."'),
+    ('outa', '5. I\'m out', 'INVAb', 'INVA', 1.894, 29 / 24, 0, [('05a', 0.057)], 'Investor A'),
+    ('outc', '5. I\'m out', 'INVCa', 'INVC', 3.591, 30 / 24, 0, [('05c', 0.059)], 'Investor C'),
+    ('outd', '5. I\'m out', 'INVDa', 'INVD', 3.27, 29 / 24, 0, [('05d', 0.065)], 'Investor D'),
+    ('nurse', '6. The nurse', 'NURSEc', 'NURSE', 0.8, 158 / 24, 0, [('06', 0.03)], 'One ward, six months'),
+    ('in', '7. I\'m in', 'BCINa', 'BC', 5.35, 34 / 24, 0, [('07', 0.25)], 'BadCode leans right in'),
+    ('card', '8. The evidence', None, None, 0, 4.5, 0, [], 'The National Audit Office finding'),
     ('glass', '9. The logo on the glass', 'GLASSa', 'GLASS', 0.5, 5.0, 0, [], 'The window steams up; the condensation clears in the shape of the BadCode logo'),
 ]
 

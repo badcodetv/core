@@ -84,5 +84,16 @@
   "decided": [
    "please fix the lip syncing, check for pollution and see why the lip syncing is not working when it usually does thanks"
   ]
+ },
+ {
+  "at": "2026-11-23T13:09:31+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6",
+  "what": "Rough cut 6 (37.4 s): minister re-shot (MINEc, MINFb), dead air trimmed, check-cut ok",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-den/scenes/the-den <out-dir>",
+  "decided": [
+   "the lip sycning is still off on the den fix it thanks. also trim the dead air. thanks"
+  ]
  }
 ]

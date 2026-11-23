@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/video/the-den-MINEb-MIN.mp4",
+ "made": "2026-11-23T12:51:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The man stays on the spot, facing the same way at the same size in frame, the camera almost motionless. His eyes stay on the people just beside the camera. His lips are pressed together for a moment, then He says: Every teenager in the country, taken round a prison. As he speaks he sweeps one arm out across the room, a broad toothy salesman's smile after the last word. The staircase and brick wall behind him stay steady. Sound: his confident male voice, close and clear, over the quiet room tone of a big brick loft.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/MIN.jpg",
+ "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/moodboard/MIN.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-the-den/scenes/the-den",
+  "key": "MINEb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T12:50:32.333Z"
+ }
+}

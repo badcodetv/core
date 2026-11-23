@@ -11,7 +11,7 @@ The two checks that would have caught them, run on a BUILT cut before anyone mea
    Bug it catches: libx264 B-frames in a fragmented MP4 start the picture 0.083 s late (every timeline page,
    2026-11-05 to 2026-11-23).
 
-Exit 1 on any failure. Tempo per event is searched (0.9-1.2), since edls don't always record it.
+Exit 1 on any failure. Tempo per event = the take's length / the event's dur; searched (0.9-1.2) when that is missing.
 """
 import json, pathlib, subprocess, sys
 import numpy as np
@@ -47,12 +47,23 @@ def main():
         if not f or not f.exists(): print(f"?    {ev['what'][:50]}: take not found ({ev['src']})"); continue
         if stem not in cache: cache[stem] = load(stems[stem])
         s = cache[stem]; t0 = int(ev['t'] * SR); lo = max(0, t0 - SR); best = None
-        for tempo in (0.9, 0.95, 0.97, 1.0, 1.02, 1.05, 1.07, 1.1, 1.15, 1.2):
+
+        def trial(tempo):
             tk = load(f, tempo)
-            if len(s[lo:t0 + len(tk) + SR]) < len(tk): continue
+            if len(s[lo:t0 + len(tk) + SR]) < len(tk): return None
             c = np.correlate(s[lo:t0 + len(tk) + SR], tk, 'valid'); k = int(np.argmax(np.abs(c)))
-            sc = abs(c[k]) / (np.linalg.norm(tk) + 1e-9)
-            if best is None or sc > best[0]: best = (sc, (lo + k) / SR - ev['t'], tempo)
+            return (abs(c[k]) / (np.linalg.norm(tk) + 1e-9), (lo + k) / SR - ev['t'], float(tempo))
+        # the event's dur is the take's length / its tempo (as the cut scripts write it): use that tempo when it reads sane;
+        # otherwise search coarse, then 0.01 steps (near 1.0 a whole-take match at the wrong tempo lands mid-take: -0.03 s)
+        n = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', str(f)],
+                                 capture_output=True, text=True).stdout or 0)
+        if ev.get('dur') and 0.85 < n / ev['dur'] < 1.3:
+            best = trial(round(n / ev['dur'], 3))
+        for tempo in (() if best else (0.9, 0.95, 1.0, 1.05, 1.1, 1.15, 1.2)):
+            r = trial(tempo); best = r if r and (best is None or r[0] > best[0]) else best
+        if best and not (ev.get('dur') and 0.85 < n / ev['dur'] < 1.3):
+            for tempo in np.round(np.arange(best[2] - 0.04, best[2] + 0.041, 0.01), 2):
+                r = trial(tempo); best = r if r and r[0] > best[0] else best
         ok = best and abs(best[1]) < 0.03
         bad += not ok
         print(f"{'ok ' if ok else 'BAD'}  {ev['what'][:50]:52s} planned {ev['t']:7.3f}  off {best[1]:+.3f} s (x{best[2]})")

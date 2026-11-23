@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/audio/music/den-music-r1-lone-piano-clock-v6-w20-ef69e318.wav",
+ "made": "2026-11-23T12:12:14.768Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "ef69e318-27b7-43c0-a92f-8013d2e2ed43",
+ "inputs": {
+  "title": "den-music-r1-lone-piano-clock-v6-w20",
+  "song": "https://suno.com/song/ef69e318-27b7-43c0-a92f-8013d2e2ed43"
+ },
+ "settings": {
+  "durationSec": 59.44
+ }
+}

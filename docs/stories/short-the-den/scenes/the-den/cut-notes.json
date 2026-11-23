@@ -1,27 +1,26 @@
 {
- "round": 5,
+ "round": 6,
  "plan": [
   {
-   "h": "Why the lip-sync kept failing (found and fixed)",
+   "h": "Lip-sync, rough cut 6",
    "items": [
-    "The Den's mix script dropped the silence before the first line, so every voice in rough cuts 1 to 3 played 0.35 s early against the picture. I proved it by matching each take against the voice track: all nine lines were 0.35 s early. Fixed with a silent bed from 0; every line now lands within 7 ms of its plan.",
-    "This page also played every voice two frames (0.08 s) early: the full-quality stream's picture started at 0.083 s. Fixed in the page builder for every timeline page from now on.",
-    "No pollution: the talking prompts carry only The Den's own words (same-prompt check)."
+    "The minister re-shot: 8 new Flow clips, each saying only its own line and starting from shut lips. Picks: MINEc for \"Every teenager in the country, taken round a prison\" (his first word lands on his first mouth opening; the pause and the end match) and MINFb for \"I've got a good feeling\" (a closed-lip smile, then mouth and voice start together).",
+    "Measured on the cut: the pitch went from BAD to GOOD, the three \"I'm out\"s GOOD, \"good feeling\" OK (its mouth runs a moment past the voice), the nurse's voice 0.08 s behind her mouth phrase by phrase.",
+    "Both early-voice bugs are guarded: every build now checks each voice lands on its plan (all within 7 ms) and that picture and sound start together."
    ]
   },
   {
-   "h": "Rough cut 5",
+   "h": "Dead air trimmed: 42.8 s to 37.4 s",
    "items": [
-    "The three \"I'm out\"s and \"good feeling\" measure in sync; the nurse's voice sits 0.08 s behind her mouth phrase by phrase.",
-    "Music: your pick (piano and clock, take 1), ducked under the voices and faded at the end.",
-    "End card: the National Audit Office finding."
+    "Every gap between lines is now 0.3 to 0.6 s, except two short beats kept on purpose: the minister's smile before \"good feeling\" and the pause before \"I'm in\" (about 0.6 and 0.85 s).",
+    "End card 5 s to 4.5 s; the logo outro unchanged."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "The minister's pitch: his clip says \"Every teenager in the country\" faster than the voice, then grins while the voice finishes, and turns his head away for a moment. The fix is a re-shoot as two shorter talking clips (a Flow video round): say go.",
-    "Trim toward ~20 s: which beats or lines go?"
+    "Trim further toward ~20 s: which beats or lines go?",
+    "A release title of our own."
    ]
   }
  ],

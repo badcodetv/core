@@ -167,6 +167,62 @@
    "still": "GLASS",
    "motion": "Locked-off static shot, 8 seconds, starting exactly on the still: a tall factory window seen square on from inside a dark warehouse loft, thin iron glazing bars in an even grid. The frame stays perfectly still for the whole clip, with no pan, zoom, drift or refocus. On the outside of the panes, thin rain streaks keep running downward at a slow, irregular pace, droplets gathering, joining and sliding away in fresh paths. The blurred brick wall and grey daylight beyond stay soft and steady, with the overcast light brightening and dimming by a tiny amount as cloud passes. The faint warm lamp reflection in the lower corner holds, glowing gently. The glass stays clean on the room side. Sound: steady soft rain pattering and trickling on old glass, with the hushed, airy stillness of a large quiet room.",
    "why": "Jack: condensation logo outro on the factory glass; sealed writer cleanroom/outro-r1.json; \"plain bright area\" wording cut (the picked still has none; direct fix)"
+  },
+  {
+   "key": "MINEa",
+   "n": 1,
+   "still": "MIN",
+   "motion": "The man stays on the spot, facing the same way at the same size in frame, the camera almost motionless. His eyes stay on the people just beside the camera. His lips are pressed together for a moment, then He says: Every teenager in the country, taken round a prison. As he speaks he sweeps one arm out across the room, a broad toothy salesman's smile after the last word. The staircase and brick wall behind him stay steady. Sound: his confident male voice, close and clear, over the quiet room tone of a big brick loft.",
+   "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)"
+  },
+  {
+   "key": "MINFa",
+   "n": 1,
+   "still": "MIN",
+   "motion": "The man stays on the spot at the same size and angle, the camera almost motionless. His smile holds for a beat too long with his lips pressed together, his eyes on the people just beside the camera, his hands still in front of him. Then he says: I've got a good feeling. He gives one small, confident nod as he finishes. The staircase and brick wall behind him do not move. Sound: a moment of near silence in the room, then his upbeat male voice, close, over the quiet room tone of a big brick loft.",
+   "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)"
+  },
+  {
+   "key": "MINEb",
+   "n": 1,
+   "still": "MIN",
+   "motion": "The man stays on the spot, facing the same way at the same size in frame, the camera almost motionless. His eyes stay on the people just beside the camera. His lips are pressed together for a moment, then He says: Every teenager in the country, taken round a prison. As he speaks he sweeps one arm out across the room, a broad toothy salesman's smile after the last word. The staircase and brick wall behind him stay steady. Sound: his confident male voice, close and clear, over the quiet room tone of a big brick loft.",
+   "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)"
+  },
+  {
+   "key": "MINFb",
+   "n": 1,
+   "still": "MIN",
+   "motion": "The man stays on the spot at the same size and angle, the camera almost motionless. His smile holds for a beat too long with his lips pressed together, his eyes on the people just beside the camera, his hands still in front of him. Then he says: I've got a good feeling. He gives one small, confident nod as he finishes. The staircase and brick wall behind him do not move. Sound: a moment of near silence in the room, then his upbeat male voice, close, over the quiet room tone of a big brick loft.",
+   "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)"
+  },
+  {
+   "key": "MINEc",
+   "n": 1,
+   "still": "MIN",
+   "motion": "The man stays on the spot, facing the same way at the same size in frame, the camera almost motionless. His eyes stay on the people just beside the camera. His lips are pressed together for a moment, then He says: Every teenager in the country, taken round a prison. As he speaks he sweeps one arm out across the room, a broad toothy salesman's smile after the last word. The staircase and brick wall behind him stay steady. Sound: his confident male voice, close and clear, over the quiet room tone of a big brick loft.",
+   "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)"
+  },
+  {
+   "key": "MINFc",
+   "n": 1,
+   "still": "MIN",
+   "motion": "The man stays on the spot at the same size and angle, the camera almost motionless. His smile holds for a beat too long with his lips pressed together, his eyes on the people just beside the camera, his hands still in front of him. Then he says: I've got a good feeling. He gives one small, confident nod as he finishes. The staircase and brick wall behind him do not move. Sound: a moment of near silence in the room, then his upbeat male voice, close, over the quiet room tone of a big brick loft.",
+   "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)"
+  },
+  {
+   "key": "MINEd",
+   "n": 1,
+   "still": "MIN",
+   "motion": "The man stays on the spot, facing the same way at the same size in frame, the camera almost motionless. His eyes stay on the people just beside the camera. His lips are pressed together for a moment, then He says: Every teenager in the country, taken round a prison. As he speaks he sweeps one arm out across the room, a broad toothy salesman's smile after the last word. The staircase and brick wall behind him stay steady. Sound: his confident male voice, close and clear, over the quiet room tone of a big brick loft.",
+   "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)"
+  },
+  {
+   "key": "MINFd",
+   "n": 1,
+   "still": "MIN",
+   "motion": "The man stays on the spot at the same size and angle, the camera almost motionless. His smile holds for a beat too long with his lips pressed together, his eyes on the people just beside the camera, his hands still in front of him. Then he says: I've got a good feeling. He gives one small, confident nod as he finishes. The staircase and brick wall behind him do not move. Sound: a moment of near silence in the room, then his upbeat male voice, close, over the quiet room tone of a big brick loft.",
+   "why": "lip-sync re-shoot 2026-11-23 (Jack: 'the lip sycning is still off on the den fix it'): the writer's MIN1/MIN2 prompts (cleanroom/anim-r1.json), only the spoken line cut to the on-face phrase and the start on shut lips (lip-sync-dub step 2)"
   }
  ]
 }
