@@ -122,5 +122,13 @@
   ],
   "feedback": "feedback/picks-r8",
   "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-23T20:05:30+00:00",
+  "stage": "clips",
+  "round": 9,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "The snow shot moving: 07-a falling snow, 07-b powder gust; Claude's pick 07-a",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/snow-clip-picks.json <out.html>"
  }
 ]

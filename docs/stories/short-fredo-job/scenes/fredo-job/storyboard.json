@@ -19,6 +19,11 @@
    "id": "way",
    "title": "The way out (C, the savings jar)",
    "beats": "money that keeps up"
+  },
+  {
+   "id": "outro",
+   "title": "Outro",
+   "beats": "the logo in the snow"
   }
  ],
  "frames": [
@@ -84,6 +89,16 @@
     "r4-WAY-C-b"
    ],
    "anim": 6
+  },
+  {
+   "n": 7,
+   "act": "outro",
+   "title": "The logo in the snow",
+   "look": "heist",
+   "stills": [
+    "SNOW-street-a"
+   ],
+   "anim": 7
   }
  ]
 }

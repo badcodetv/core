@@ -63,6 +63,23 @@
    "still": "r3-TAG-a",
    "motion": "The camera does not move. A corner shop at night under one bare bulb. The four crew stand completely still behind the counter, heads bowed, staring down at the jar. The bare bulb flickers once, briefly, and sways a little on its cord, its light sliding over the masks. Every balaclava is one solid piece of knitted cloth over the whole face, smooth across the eyes, nose and mouth, with its white ring and red triangle steady. Gloves on every hand. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot. The camera does not move.\nThanks.",
    "why": "Jack, clips r1: \"fix the masks there are eye holes thanks\" (the navy mask grew eye holes leaning in; now nobody leans, only the bulb moves)"
+  },
+  {
+   "key": "07-a",
+   "n": 7,
+   "still": "SNOW-street-a",
+   "motion": "The camera does not move. A snowy pavement at night outside dark shops, warm lamp light. Fine snowflakes fall slowly and steadily through the lamp light and settle on the pavement. The ring in the snow and the red triangle inside it hold their exact shape and place the whole time. Shot at 24fps with a 180-degree shutter. One continuous shot. The camera does not move.\nThanks.",
+   "why": "the outro: the logo in the snow (Jack picked SNOW-street-a)"
+  },
+  {
+   "key": "07-b",
+   "n": 7,
+   "still": "SNOW-street-a",
+   "motion": "The camera does not move. A snowy pavement at night outside dark shops, warm lamp light. A light wind blows thin wisps of powder snow low across the pavement, past the ring, and the lamp light flickers once. The ring in the snow and the red triangle inside it hold their exact shape and place the whole time. Shot at 24fps with a 180-degree shutter. One continuous shot. The camera does not move.\nThanks.",
+   "why": "the outro: the logo in the snow (Jack picked SNOW-street-a)"
   }
+ ],
+ "skip": [
+  7
  ]
 }

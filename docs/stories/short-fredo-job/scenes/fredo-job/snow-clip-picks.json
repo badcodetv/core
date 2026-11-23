@@ -1,0 +1,864 @@
+{
+ "title": "Fredo Job Stills",
+ "eyebrow": "BadCode Shorts · The Fredo Job · the snow shot moving",
+ "heading": "The Fredo Job: clips",
+ "intro": "Your stills, now moving (Omni 1.2 Flash, 8 s each; the cut uses about 3 s of each). Every frame had two ways to move: both were made, or the post-only one is shown as a rough Premiere move. Claude's pick is marked and goes ahead; overrule any with Pick or a note. Words and prices (10p, 39p, the savings) go in later.",
+ "sections": [
+  {
+   "h": "Round 9: the snow shot, moving",
+   "lede": "Your snow pick (the shovelled ring), animated two ways. The name goes on the empty snow below from the logo file when we edit.",
+   "groups": [
+    {
+     "slot": "CLIP-7",
+     "round": 9,
+     "title": "7. The logo in the snow",
+     "line": "Quiet and cold after the job.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "07-a",
+       "src": "clips/r3/fredo-job-07-a.mp4",
+       "label": "a: snow falling through the lamp light (Claude's pick: the mark holds steady all the way)",
+       "warn": "The flakes show mostly against the dark shopfronts at the top"
+      },
+      {
+       "id": "07-b",
+       "src": "clips/r3/fredo-job-07-b.mp4",
+       "label": "b: a gust of powder, the lamp flickers",
+       "warn": "The wind smears the triangle for a moment mid-clip; one frame goes dark"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 8: the crew's voice",
+   "lede": "Masks have no mouths, so the crew speak over the picture. One voice reads the lines we have: Jack's \"Like butter.\" and the shorts list's \"It was 10p when we started planning.\" (not ruled). The pitch and the way-out lines are still blank. Eight British voices from Google's library, read plain.",
+   "groups": [
+    {
+     "slot": "VOICE-crew",
+     "round": 8,
+     "title": "The crew's voice",
+     "line": "Pick one; a note like \"older\" or \"more deadpan\" makes the next round. Or note \"one voice each\" for a different voice per crew member.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "en-gb-csagent-3",
+       "src": "voices/r1/crew-en-gb-csagent-3.mp3",
+       "label": "Manchester, man, 62, cool and composed (en-gb-csagent-3)",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-advisor-10",
+       "src": "voices/r1/crew-en-gb-advisor-10.mp3",
+       "label": "Bristol, man, 30, dry (en-gb-advisor-10)",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-concierge-10",
+       "src": "voices/r1/crew-en-gb-concierge-10.mp3",
+       "label": "Liverpool, man, 64, deep and velvety (en-gb-concierge-10)",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-techagent-8",
+       "src": "voices/r1/crew-en-gb-techagent-8.mp3",
+       "label": "Manchester, woman, 43, cool and confident (en-gb-techagent-8)",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-techagent-3",
+       "src": "voices/r1/crew-en-gb-techagent-3.mp3",
+       "label": "Glasgow, man, 55, calm (en-gb-techagent-3)",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-concierge-12",
+       "src": "voices/r1/crew-en-gb-concierge-12.mp3",
+       "label": "Newcastle, man, 57 (en-gb-concierge-12)",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-assistant-11",
+       "src": "voices/r1/crew-en-gb-assistant-11.mp3",
+       "label": "Bristol, 38, deep and unhurried (en-gb-assistant-11)",
+       "warn": ""
+      },
+      {
+       "id": "en-gb-podcaster-2",
+       "src": "voices/r1/crew-en-gb-podcaster-2.mp3",
+       "label": "Winchester, woman, 49 (en-gb-podcaster-2)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 7: the logo in the snow",
+   "lede": "Jack: \"lets make one in the snow\". Four ways of making the mark in snow (a sealed writer, real Unsplash snow photos), two takes each. The name goes on in the empty lower third afterwards, from the real logo files, never Flow's letters. Beat 3's line is now \"like butter\".",
+   "groups": [
+    {
+     "slot": "SNOW",
+     "round": 7,
+     "title": "The last shot: the logo in the snow",
+     "line": "Ring and one red triangle, upper right, pointing down, like the logo.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "SNOW-path-a",
+       "src": "stills/snow/SNOW-path-a.jpg",
+       "label": "path a: a ring trodden in boot prints, the footprints walk off (Claude's pick: the clearest triangle, and the crew have just walked away)",
+       "warn": "The ring is a double loop of prints"
+      },
+      {
+       "id": "SNOW-path-b",
+       "src": "stills/snow/SNOW-path-b.jpg",
+       "label": "path b",
+       "warn": "The triangle is hollow (a warning sign), not solid"
+      },
+      {
+       "id": "SNOW-street-a",
+       "src": "stills/snow/SNOW-street-a.jpg",
+       "label": "street a: a shovelled ring outside the shops, red powder",
+       "warn": "The triangle's edges are soft"
+      },
+      {
+       "id": "SNOW-street-b",
+       "src": "stills/snow/SNOW-street-b.jpg",
+       "label": "street b",
+       "warn": "The red powder reads as a heart"
+      },
+      {
+       "id": "SNOW-flat-a",
+       "src": "stills/snow/SNOW-flat-a.jpg",
+       "label": "flat a: a fingertip ring, a red plectrum",
+       "warn": "A plectrum's rounded point, not the logo's triangle"
+      },
+      {
+       "id": "SNOW-flat-b",
+       "src": "stills/snow/SNOW-flat-b.jpg",
+       "label": "flat b",
+       "warn": "A plectrum, not the logo's triangle"
+      },
+      {
+       "id": "SNOW-drift-a",
+       "src": "stills/snow/SNOW-drift-a.jpg",
+       "label": "drift a: a stick-cut ring at dusk, red ice",
+       "warn": "The triangle is small and gem-like"
+      },
+      {
+       "id": "SNOW-drift-b",
+       "src": "stills/snow/SNOW-drift-b.jpg",
+       "label": "drift b",
+       "warn": "Gem-like, not the flat triangle"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 6: masks fixed",
+   "lede": "Jack: \"fix the masks there are eye holes\". Now nobody turns to camera or leans in; every mask stays solid cloth. Clip 6 goes with your pick (b). Clips 2, 3, 4: your picks stand.",
+   "groups": [
+    {
+     "slot": "CLIP-1-r2",
+     "round": 6,
+     "title": "1. The plan, masks fixed",
+     "line": "Every head stays facing the wall; only the tap and the lamp move.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "01-r2a",
+       "src": "clips/r2/fredo-job-01-r2a-r2-BOARD-b.mp4",
+       "label": "a: two firm taps (Claude's pick: the tap reads clearest)",
+       "warn": ""
+      },
+      {
+       "id": "01-r2b",
+       "src": "clips/r2/fredo-job-01-r2b-r2-BOARD-b.mp4",
+       "label": "b: one tap, the hand drops early",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CLIP-5-r2",
+     "round": 6,
+     "title": "3. The new price, masks fixed",
+     "line": "They stand frozen; only the bulb flickers and sways. Then the snap zoom on the tag in Premiere, with 39p drawn on.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "05-r2a",
+       "src": "clips/r2/fredo-job-05-r2a-r3-TAG-a.mp4",
+       "label": "a: bulb flickers",
+       "warn": "A second bulb drifts in behind them partway through"
+      },
+      {
+       "id": "05-r2b",
+       "src": "clips/r2/fredo-job-05-r2b-r3-TAG-a.mp4",
+       "label": "b: bulb sways on its cord (Claude's pick: clean, the masks hold)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 5: the clips",
+   "lede": "Six shots in film order. Muted: the sound comes later.",
+   "groups": [
+    {
+     "slot": "CLIP-1",
+     "round": 5,
+     "title": "1. The plan",
+     "line": "Job: the whole plan aimed at one tiny jar.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "01-a",
+       "src": "clips/r1/fredo-job-01-r2-BOARD-b.mp4",
+       "label": "a: the cream suit taps the jar twice (Claude's pick)",
+       "warn": "Backs to us, as in the still; the cream mask turns to camera near the end (ring and triangle right)"
+      },
+      {
+       "id": "01-b",
+       "src": "clips/r1/post-01-b.mp4",
+       "label": "b: post only, a slow push to the circled jar",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CLIP-2",
+     "round": 5,
+     "title": "1. The line-up walk",
+     "line": "Job: four distinct silhouettes, slow and cool.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "02-a",
+       "src": "clips/r1/fredo-job-02-r2-CREW-b.mp4",
+       "label": "a: the slow walk (Claude's pick; slowed further in Premiere)",
+       "warn": ""
+      },
+      {
+       "id": "02-b",
+       "src": "clips/r1/fredo-job-02-b-r2-CREW-b.mp4",
+       "label": "b: one step, they stop in a line",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CLIP-3",
+     "round": 5,
+     "title": "2. The laser aisle",
+     "line": "Job: precise, wordless work.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "03-a",
+       "src": "clips/r1/fredo-job-03-r2-LASER-b.mp4",
+       "label": "a: ducks under, reaches for the jar (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "03-b",
+       "src": "clips/r1/fredo-job-03-b-r2-LASER-b.mp4",
+       "label": "b: holds still, fingers flex",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CLIP-4",
+     "round": 5,
+     "title": "2. The grab",
+     "line": "Job: the frog lifted like a diamond.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "04-a",
+       "src": "clips/r1/fredo-job-04-r3-GRAB-b.mp4",
+       "label": "a: lifted up to the light (Claude's pick; freeze at the top)",
+       "warn": "The bar covers the mask at the top: the triangle shows beside it. Faint maker's script on the wrapper top: covered in post"
+      },
+      {
+       "id": "04-b",
+       "src": "clips/r1/fredo-job-04-b-r3-GRAB-b.mp4",
+       "label": "b: holds, then puts it BACK in the jar",
+       "warn": "Veo reversed the grab: wrong for the beat"
+      }
+     ]
+    },
+    {
+     "slot": "CLIP-5",
+     "round": 5,
+     "title": "3. The new price",
+     "line": "Job: the price they planned around is wrong now. 39p drawn on the tag in post.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "05-a",
+       "src": "clips/r1/fredo-job-05-r3-TAG-a.mp4",
+       "label": "a: they stare, the navy one leans in, the bulb flickers",
+       "warn": "As he leans in his mask grows two red marks like eyes (not the brand triangle); the charcoal and black masks show no triangle (as in the still)"
+      },
+      {
+       "id": "05-b",
+       "src": "clips/r1/post-05-b.mp4",
+       "label": "b: post only, a snap zoom on to the tag (Claude's pick: clean masks, the tag is the joke)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "CLIP-6",
+     "round": 5,
+     "title": "4. The way out: the savings jar",
+     "line": "Job: their savings rise with the price.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "06-a",
+       "src": "clips/r1/fredo-job-06-r4-WAY-C-b.mp4",
+       "label": "a: the coins rise until they match the frogs (Claude's pick: it shows the idea with no words)",
+       "warn": "Wrists stay covered (glove, white shirt cuff)"
+      },
+      {
+       "id": "06-b",
+       "src": "clips/r1/fredo-job-06-b-r4-WAY-C-b.mp4",
+       "label": "b: the hand rests on the coin jar",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 4: wrist fix, and the ending",
+   "lede": "Every other shot is picked.",
+   "groups": [
+    {
+     "slot": "WAY-C-r4",
+     "round": 4,
+     "title": "C. The savings jar: wrists covered",
+     "line": "Jack: \"skin on the wrist fix it\". Long gloves under the cuffs.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r4-WAY-C-a",
+       "src": "stills/r4/r4-WAY-C-a.jpg",
+       "label": "a: shirt cuff over the glove",
+       "warn": ""
+      },
+      {
+       "id": "r4-WAY-C-b",
+       "src": "stills/r4/r4-WAY-C-b.jpg",
+       "label": "b: black leather to the sleeve (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "ENDING",
+     "round": 4,
+     "title": "Which way out ends the short?",
+     "line": "You picked a still in all three. Pick the ending (or note \"all three\" for a quick run of them).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "A",
+       "src": "stills/r2/r2-WAY-A-b.jpg",
+       "label": "A: price and pay flip up together",
+       "warn": ""
+      },
+      {
+       "id": "B",
+       "src": "stills/r3/r3-WAY-B-b.jpg",
+       "label": "B: heist cancelled, he just buys it (Claude's pick: the joke lands at once)",
+       "warn": ""
+      },
+      {
+       "id": "C",
+       "src": "stills/r4/r4-WAY-C-b.jpg",
+       "label": "C: the savings jar keeps up",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 3: Freddoo wrappers",
+   "lede": "Your picks with the purple Freddoo wrapper. Your round 2 picks stand for every other shot.",
+   "groups": [
+    {
+     "slot": "GRAB-r3",
+     "round": 3,
+     "title": "2. The grab, Freddoo",
+     "line": "Jack: \"lets do a real freddo but on the packaging lets have \\\"Freddoo\\\" instead, make it as close to the real one as possible.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r3-GRAB-a",
+       "src": "stills/r3/r3-GRAB-a.jpg",
+       "label": "a: the held bar reads Freddoo (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "r3-GRAB-b",
+       "src": "stills/r3/r3-GRAB-b.jpg",
+       "label": "b: same, more bars in the jar",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "TAG-r3",
+     "round": 3,
+     "title": "3. The twist, Freddoo",
+     "line": "The cream mask's white ring is back.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r3-TAG-a",
+       "src": "stills/r3/r3-TAG-a.jpg",
+       "label": "a",
+       "warn": "Flow adds a small maker's script at the top of some wrappers (looks like the real brand's logo): cover it in post or pick the cleaner take; some bars read Freddos"
+      },
+      {
+       "id": "r3-TAG-b",
+       "src": "stills/r3/r3-TAG-b.jpg",
+       "label": "b (Claude's pick: more bars read Freddoo)",
+       "warn": "Flow adds a small maker's script at the top of some wrappers (looks like the real brand's logo): cover it in post or pick the cleaner take"
+      }
+     ]
+    },
+    {
+     "slot": "WAY-B-r3",
+     "round": 3,
+     "title": "B. He just buys it, Freddoo",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r3-WAY-B-a",
+       "src": "stills/r3/r3-WAY-B-a.jpg",
+       "label": "a: the bar in his hand (Claude's pick)",
+       "warn": "The name is small at this size; the hand bar can carry a clean Freddoo in post"
+      },
+      {
+       "id": "r3-WAY-B-b",
+       "src": "stills/r3/r3-WAY-B-b.jpg",
+       "label": "b: coins in his palm",
+       "warn": "Flow adds a small maker's script at the top of some wrappers (looks like the real brand's logo): cover it in post or pick the cleaner take"
+      }
+     ]
+    },
+    {
+     "slot": "WAY-C-r3",
+     "round": 3,
+     "title": "C. The savings jar, Freddoo",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r3-WAY-C-a",
+       "src": "stills/r3/r3-WAY-C-a.jpg",
+       "label": "a",
+       "warn": "Flow adds a small maker's script at the top of some wrappers (looks like the real brand's logo): cover it in post or pick the cleaner take"
+      },
+      {
+       "id": "r3-WAY-C-b",
+       "src": "stills/r3/r3-WAY-C-b.jpg",
+       "label": "b (Claude's pick: Freddoo clearest)",
+       "warn": "Flow adds a small maker's script at the top of some wrappers (looks like the real brand's logo): cover it in post or pick the cleaner take"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 2: masks in suit cloth",
+   "lede": "Every shot re-made with the re-cast crew (Jack's note). Claude's picks marked; problems flagged on the still.",
+   "groups": [
+    {
+     "slot": "cast-r2",
+     "round": 2,
+     "title": "The crew, re-cast",
+     "line": "Jack: \"make the masks suit material, like the one on the left make sure there is no skin on any of them\". Each mask in its wearer's cloth: charcoal, navy pinstripe, black knit, cream linen; collars up, no skin.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CAST-CREW-2-a",
+       "src": "stills/r2/CAST-CREW-2-a.jpg",
+       "label": "a: white ring on all four (Claude's pick; used as the reference)",
+       "warn": ""
+      },
+      {
+       "id": "CAST-CREW-2-b",
+       "src": "stills/r2/CAST-CREW-2-b.jpg",
+       "label": "b: the cream mask's ring went dark",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BOARD-r2",
+     "round": 2,
+     "title": "1. The plan",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-BOARD-b",
+       "src": "stills/r2/r2-BOARD-b.jpg",
+       "label": "b: the plan on the wall, the crew round it",
+       "warn": "A few words on the plan (fixable in post); the cream mask seen from the side"
+      }
+     ]
+    },
+    {
+     "slot": "CREW-r2",
+     "round": 2,
+     "title": "1. The line-up walk",
+     "line": "The corridor take timed out three times this round.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-CREW-b",
+       "src": "stills/r2/r2-CREW-b.jpg",
+       "label": "b: back lane, haze",
+       "warn": "The cream mask's ring came out black (the brand ring is white)"
+      }
+     ]
+    },
+    {
+     "slot": "LASER-r2",
+     "round": 2,
+     "title": "2. The job: the laser grid",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-LASER-a",
+       "src": "stills/r2/r2-LASER-a.jpg",
+       "label": "a: black roll-neck bending through (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "r2-LASER-b",
+       "src": "stills/r2/r2-LASER-b.jpg",
+       "label": "b: navy pinstripe on one knee, the jar in front",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "GRAB-r2",
+     "round": 2,
+     "title": "2. The job: the grab",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-GRAB-a",
+       "src": "stills/r2/r2-GRAB-a.jpg",
+       "label": "a: the frog lifted out (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "r2-GRAB-b",
+       "src": "stills/r2/r2-GRAB-b.jpg",
+       "label": "b: from above, the mask reflected",
+       "warn": "The reflection mirrors the mask, so the triangle sits on the wrong side"
+      }
+     ]
+    },
+    {
+     "slot": "TAG-r2",
+     "round": 2,
+     "title": "3. The twist: the price tag",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-TAG-a",
+       "src": "stills/r2/r2-TAG-a.jpg",
+       "label": "a: three lean in",
+       "warn": "The cream mask's ring came out black (the brand ring is white); its triangle is in the middle"
+      },
+      {
+       "id": "r2-TAG-b",
+       "src": "stills/r2/r2-TAG-b.jpg",
+       "label": "b: four heads bowed over the tag (Claude's pick)",
+       "warn": "The cream mask's ring came out black (the brand ring is white)"
+      }
+     ]
+    },
+    {
+     "slot": "WAY-A-r2",
+     "round": 2,
+     "title": "A. The board: price and pay flip up together",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-WAY-A-a",
+       "src": "stills/r2/r2-WAY-A-a.jpg",
+       "label": "a: relaxed on the bench (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "r2-WAY-A-b",
+       "src": "stills/r2/r2-WAY-A-b.jpg",
+       "label": "b: by the board with a coffee",
+       "warn": "Mask side-on: the triangle is hidden"
+      }
+     ]
+    },
+    {
+     "slot": "WAY-B-r2",
+     "round": 2,
+     "title": "B. Heist cancelled: he just buys it",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-WAY-B-a",
+       "src": "stills/r2/r2-WAY-B-a.jpg",
+       "label": "a: coins into his hand (Claude's pick)",
+       "warn": "Mask side-on"
+      },
+      {
+       "id": "r2-WAY-B-b",
+       "src": "stills/r2/r2-WAY-B-b.jpg",
+       "label": "b: over the shopkeeper's shoulder, the mask facing us",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "WAY-C-r2",
+     "round": 2,
+     "title": "C. The savings jar keeps up",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-WAY-C-a",
+       "src": "stills/r2/r2-WAY-C-a.jpg",
+       "label": "a: two jars, a coin dropping",
+       "warn": ""
+      },
+      {
+       "id": "r2-WAY-C-b",
+       "src": "stills/r2/r2-WAY-C-b.jpg",
+       "label": "b: level side by side (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The heist",
+   "lede": "Claude's picks are marked; problems are flagged on the still.",
+   "groups": [
+    {
+     "slot": "cast",
+     "title": "The crew (reference for every still)",
+     "line": "Four distinct builds, each with a trade: stopwatch, drill case, rope, laptop.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CAST-CREW-a",
+       "src": "stills/r1/CAST-CREW-a.jpg",
+       "label": "a: concrete floor",
+       "warn": ""
+      },
+      {
+       "id": "CAST-CREW-b",
+       "src": "stills/r1/CAST-CREW-b.jpg",
+       "label": "b: plain backdrop (Claude's pick; used as the reference)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "BOARD",
+     "title": "1. The plan",
+     "line": "The shop's floor plan, the jar circled, red string.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BOARD-b",
+       "src": "stills/r1/BOARD-b.jpg",
+       "label": "b: the plan on the brick wall, the crew round it (the other take was blocked by Flow)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "CREW",
+     "title": "1. The line-up walk",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CREW-a",
+       "src": "stills/r1/CREW-a.jpg",
+       "label": "a: polished corridor, backlit (Claude's pick: the slickest)",
+       "warn": ""
+      },
+      {
+       "id": "CREW-b",
+       "src": "stills/r1/CREW-b.jpg",
+       "label": "b: back lane, haze, washing lines",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "LASER",
+     "title": "2. The job: the laser grid",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "LASER-a",
+       "src": "stills/r1/LASER-a.jpg",
+       "label": "a: bending through the beams (Claude's pick: the mask faces us)",
+       "warn": ""
+      },
+      {
+       "id": "LASER-b",
+       "src": "stills/r1/LASER-b.jpg",
+       "label": "b: on one knee, the jar in front",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "GRAB",
+     "title": "2. The job: the grab",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "GRAB-a",
+       "src": "stills/r1/GRAB-a.jpg",
+       "label": "a: the frog lifted out, the crew member behind (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "GRAB-b",
+       "src": "stills/r1/GRAB-b.jpg",
+       "label": "b: from above, the mask reflected in the glass",
+       "warn": "The reflection mirrors the mask, so the triangle sits on the wrong side"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "TAG",
+     "title": "3. The twist: the price tag",
+     "line": "\"It was 10p when we started planning.\" The tag reads 39p in post.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "TAG-a",
+       "src": "stills/r1/TAG-a.jpg",
+       "label": "a: three lean in, one stands back with the stopwatch",
+       "warn": ""
+      },
+      {
+       "id": "TAG-b",
+       "src": "stills/r1/TAG-b.jpg",
+       "label": "b: the tag huge in front, four heads bowed (Claude's pick: the tag reads clearly)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  },
+  {
+   "h": "The way out: money that keeps up",
+   "lede": "Three ways to show it. Pick the idea as well as the still.",
+   "groups": [
+    {
+     "slot": "WAY-A",
+     "title": "A. The board: price and pay flip up together",
+     "line": "Rows marked with a frog and a coin; numbers in post.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WAY-A-a",
+       "src": "stills/r1/WAY-A-a.jpg",
+       "label": "a: relaxed on a bench under the board (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "WAY-A-b",
+       "src": "stills/r1/WAY-A-b.jpg",
+       "label": "b: leaning by the board with a coffee",
+       "warn": "Mask side-on: triangle near the edge"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "WAY-B",
+     "title": "B. Heist cancelled: he just buys it",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WAY-B-a",
+       "src": "stills/r1/WAY-B-a.jpg",
+       "label": "a: coins into the shopkeeper's hand (Claude's pick: the joke reads at once)",
+       "warn": "Mask side-on"
+      },
+      {
+       "id": "WAY-B-b",
+       "src": "stills/r1/WAY-B-b.jpg",
+       "label": "b: over the shopkeeper's shoulder",
+       "warn": "Some letters on the jar"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "WAY-C",
+     "title": "C. The savings jar keeps up with the price",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WAY-C-a",
+       "src": "stills/r1/WAY-C-a.jpg",
+       "label": "a: two jars, a coin mid-air",
+       "warn": ""
+      },
+      {
+       "id": "WAY-C-b",
+       "src": "stills/r1/WAY-C-b.jpg",
+       "label": "b: level side by side, chin on fist (Claude's pick: the levels match clearly)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ],
+ "round": 9
+}

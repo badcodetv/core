@@ -182,6 +182,32 @@
      "risk": "low"
     }
    ]
+  },
+  {
+   "n": 7,
+   "job": "End on the mark, quiet and cold, after the job.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Snow falling",
+     "idea": "Fine snow falls steadily through the lamp light onto the pavement.",
+     "lanes": "Veo: falling snow. Premiere: slow push. ffmpeg: none; the name goes on from the logo file.",
+     "veo_prompt": "The camera does not move. A snowy pavement at night outside dark shops, warm lamp light. Fine snowflakes fall slowly and steadily through the lamp light and settle on the pavement. The ring in the snow and the red triangle inside it hold their exact shape and place the whole time. Shot at 24fps with a 180-degree shutter. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "hold, name fades in",
+     "seconds": 3,
+     "risk": "the mark drifts or fills with snow"
+    },
+    {
+     "id": "b",
+     "label": "A gust of powder",
+     "idea": "A light wind lifts fine powder snow across the pavement past the ring.",
+     "lanes": "Veo: drifting powder. Premiere: slow push.",
+     "veo_prompt": "The camera does not move. A snowy pavement at night outside dark shops, warm lamp light. A light wind blows thin wisps of powder snow low across the pavement, past the ring, and the lamp light flickers once. The ring in the snow and the red triangle inside it hold their exact shape and place the whole time. Shot at 24fps with a 180-degree shutter. One continuous shot. The camera does not move.\nThanks.",
+     "cut": "hold",
+     "seconds": 3,
+     "risk": "powder covers the triangle"
+    }
+   ]
   }
  ]
 }
