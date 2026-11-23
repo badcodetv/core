@@ -8,6 +8,7 @@ on:
       - docs/government/ministers/**
       - docs/government/shared.md
       - docs/government/schedules.json
+      - docs/government/simulation/worker-common.md
       - scripts/government/sync-bob.mjs
   workflow_dispatch:
 

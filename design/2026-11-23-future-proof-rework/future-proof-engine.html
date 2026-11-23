@@ -1,0 +1,490 @@
+<title>The Future Proof Engine</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; a build-pipeline strip for the engine; a stepper that walks one real issue through it */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#14202d; --muted:#5a6676; --line:#d9dee6;
+  --accent:#b8650f; --accent-soft:#f6e7d4;
+  --pass:#1d7a4a; --pass-soft:#dff0e6; --fail:#b3302a; --fail-soft:#f6dedc; --human:#2f5ea8; --human-soft:#dfe8f6;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f151c; --surface:#16202a; --ink:#e7ecf2; --muted:#9aa7b6; --line:#2a3644;
+  --accent:#f0a24a; --accent-soft:#3a2a17;
+  --pass:#5cc78d; --pass-soft:#16301f; --fail:#f07d74; --fail-soft:#3a1c1a; --human:#7fa8ec; --human-soft:#1a2740; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f151c; --surface:#16202a; --ink:#e7ecf2; --muted:#9aa7b6; --line:#2a3644;
+  --accent:#f0a24a; --accent-soft:#3a2a17;
+  --pass:#5cc78d; --pass-soft:#16301f; --fail:#f07d74; --fail-soft:#3a1c1a; --human:#7fa8ec; --human-soft:#1a2740; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 4rem}
+main{max-width:980px;margin:0 auto;display:grid;gap:4rem}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:700}
+h3{font-size:1.1rem;font-weight:700}
+p{margin:0;max-width:65ch}
+.eyebrow{font:500 .75rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+section{display:grid;gap:1.25rem}
+.hero{padding-top:3.5rem;display:grid;gap:1.5rem}
+.tagline{font-family:var(--display);font-weight:500;font-size:clamp(1.15rem,2.6vw,1.5rem);max-width:40ch;line-height:1.35}
+.tagline b{color:var(--accent);font-weight:700}
+.note{font:400 .8rem/1.5 var(--mono);color:var(--muted);border-left:3px solid var(--line);padding-left:.75rem}
+
+/* principles table */
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:.85rem .9rem;border-bottom:1px solid var(--line)}
+th{font:500 .72rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+td:first-child{font-family:var(--display);font-weight:700;white-space:nowrap}
+td .code{display:block;font:400 .75rem/1.4 var(--mono);color:var(--accent);font-weight:400;margin-top:.2rem}
+
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;counter-reset:s}
+.stage{all:unset;cursor:pointer;display:grid;gap:.4rem;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1rem;position:relative;min-width:0}
+.stage:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.stage[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 -4px 0 var(--accent)}
+.stage .num{font:500 .72rem/1 var(--mono);color:var(--muted)}
+.stage .verb{font-family:var(--display);font-weight:800;font-size:1.35rem}
+.stage .what{font-size:.88rem;color:var(--muted)}
+.who{justify-self:start;font:500 .68rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:.3rem .45rem;border-radius:3px}
+.who.h{background:var(--human-soft);color:var(--human)}
+.who.m{background:var(--line);color:var(--muted)}
+.loop{font:400 .8rem/1.5 var(--mono);color:var(--muted);display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.loop span{border:1px dashed var(--muted);border-radius:3px;padding:.15rem .45rem}
+
+.detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:1.25rem;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.5rem}
+.detail h3{margin-bottom:.5rem}
+.detail ul{margin:.5rem 0 0;padding-left:1.1rem;display:grid;gap:.35rem;font-size:.93rem}
+.log{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:1rem;font:400 .84rem/1.6 var(--mono);min-width:0;overflow-wrap:anywhere}
+.log .t{color:var(--accent);display:block;margin-bottom:.4rem;letter-spacing:.06em;text-transform:uppercase;font-size:.72rem}
+.log .ok{color:var(--pass)} .log .bad{color:var(--fail)} .log .hum{color:var(--human)}
+
+/* power split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.col{border-radius:6px;padding:1.25rem;display:grid;gap:.6rem;align-content:start}
+.col.h{background:var(--human-soft)} .col.m{background:var(--surface);border:1px solid var(--line)}
+.col h3{font-size:1rem}
+.col ul{margin:0;padding-left:1.1rem;display:grid;gap:.3rem}
+
+/* cabinet */
+.mayrow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.may{border-left:4px solid var(--pass);padding:.25rem 0 .25rem 1rem}
+.maynot{border-left:4px solid var(--fail);padding:.25rem 0 .25rem 1rem}
+.may ul,.maynot ul{margin:.4rem 0 0;padding-left:1.1rem;display:grid;gap:.25rem}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+blockquote{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.1rem;display:grid;gap:.6rem;align-content:start}
+blockquote cite{font:500 .72rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-style:normal}
+blockquote p{font-size:.95rem}
+
+/* stamps */
+.stamps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
+.stamp{border:2px solid currentColor;border-radius:4px;padding:.8rem;display:grid;gap:.4rem;align-content:start}
+.stamp b{font:700 .8rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.stamp p{font-size:.85rem;color:var(--ink)}
+.stamp .ex{font:400 .75rem/1.45 var(--mono);color:var(--muted)}
+.s-real{color:var(--pass)} .s-borrow{color:var(--human)} .s-stand{color:var(--accent)} .s-paper{color:var(--muted)}
+.footer-line{font:500 .9rem/1.5 var(--mono);background:var(--surface);border:1px dashed var(--line);padding:1rem;border-radius:4px}
+
+/* decisions + roadmap */
+.decisions{display:grid;gap:.5rem}
+.dec{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem}
+.dec .tick{font:700 .75rem/1 var(--mono);color:var(--pass);background:var(--pass-soft);padding:.35rem .5rem;border-radius:3px;white-space:nowrap}
+.dec b{display:block}
+.dec span{color:var(--muted);font-size:.92rem}
+.road{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.wk{display:grid;gap:.5rem;align-content:start;border-top:4px solid var(--accent);padding-top:.8rem}
+.wk .eyebrow{color:var(--muted)}
+.wk .shows{font:400 .82rem/1.5 var(--mono);color:var(--accent)}
+.tests{counter-reset:t;display:grid;gap:.75rem;padding:0;margin:0;list-style:none}
+.tests li{counter-increment:t;display:grid;grid-template-columns:2.2rem 1fr;gap:.5rem}
+.tests li::before{content:counter(t);font:800 1.4rem/1 var(--display);color:var(--accent)}
+
+@media (max-width:820px){
+  .pipe{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .detail,.split,.mayrow{grid-template-columns:1fr}
+  .quotes,.road{grid-template-columns:1fr}
+  .stamps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:460px){.stamps{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){.detail{transition:opacity .2s}}
+
+/* the run: animated walkthrough */
+.run{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.25rem;display:grid;gap:1rem}
+.caption{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1rem;align-items:start;border-top:1px solid var(--line);padding-top:1rem}
+.caption .count{font:800 2.2rem/1 var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
+.caption h3{font-size:1.25rem;margin-bottom:.35rem}
+.caption p{font-size:.95rem}
+.caption .ex{margin-top:.5rem;font:400 .82rem/1.5 var(--mono);color:var(--muted)}
+.controls{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.controls button{font:600 .85rem/1 var(--body);padding:.6rem .9rem;border-radius:4px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.controls button:focus-visible,.dots button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.controls button.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.dots{display:flex;gap:.35rem;margin-left:auto;flex-wrap:wrap}
+.dots button{width:1.6rem;height:1.6rem;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--muted);font:500 .7rem/1 var(--mono);cursor:pointer;padding:0}
+.dots button[aria-current="step"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.progress{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--accent)}
+.canvas-wrap{position:relative;width:100%}
+#fp-canvas{display:block;width:100%;cursor:pointer;touch-action:manipulation}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font:400 .75rem/1.4 var(--mono);color:var(--muted)}
+.legend i{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;margin-right:.4rem;vertical-align:-.05rem;border:2px solid var(--muted)}
+.legend .lh i{border-color:var(--human);background:var(--human-soft)}
+.legend .la i{border-color:var(--accent);background:var(--accent)}
+@media (max-width:700px){
+  .dots{margin-left:0}
+}
+</style>
+
+<main>
+  <header class="hero">
+    <div class="eyebrow">BadCode government · the rework · 23 Nov 2026</div>
+    <h1>Not a better Westminster. A different machine.</h1>
+    <p class="tagline">You <b>set the test</b>. Anyone <b>writes the answer</b>. The calendar <b>marks it</b>. A jury <b>settles what the numbers can't</b>.</p>
+    <p>The government stops being a cabinet arguing with an opposition. It becomes a working picture of Future Proof: people choose outcomes, not people or parties; every answer competes in the open and is tried small; and the date proves it right or wrong. The ministers stay on top as the face of it, with the powers taken out.</p>
+    <p class="note">A thought experiment, not a real government. It only has to be the most convincing wrong answer on the internet: concrete enough that people argue about what would actually work.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow">Watch it run</div>
+    <h2>One decision, start to finish</h2>
+    <p class="muted">A loop, not a ladder. Thames Water travels round it once, while the dots stand for everything else flowing through all the time. Tap any station to jump to it.</p>
+    <div class="run">
+      <div class="canvas-wrap"><canvas id="fp-canvas" role="img" aria-label="Animated diagram: eight stations in a loop around Future Proof's three ideas. People set the test, a public rule queues it, rival answers are written blind, a gate checks them, a jury settles values, a minister signs a small trial, the clock marks it, and the result goes wider or is undone."></canvas></div>
+      <div class="legend"><span class="lh"><i></i>people decide</span><span><i></i>machines do the legwork</span><span class="la"><i></i>the issue being decided</span></div>
+      <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+      <div class="caption" aria-live="polite">
+        <span class="count" id="c-count">1</span>
+        <div><h3 id="c-title"></h3><p id="c-text"></p><p class="ex" id="c-ex"></p></div>
+      </div>
+      <div class="controls">
+        <button class="primary" id="r-play" type="button">▶ Play</button>
+        <button id="r-prev" type="button">← Back</button>
+        <button id="r-next" type="button">Next →</button>
+        <div class="dots" id="r-dots" role="group" aria-label="Jump to a step"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">The three ideas, from software</div>
+    <h2>What Future Proof swaps out</h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Idea</th><th>Today</th><th>In the engine</th></tr></thead>
+      <tbody>
+        <tr><td>Pick issue by issue<span class="code">composition over inheritance</span></td><td>Pick red or blue and inherit the whole bundle, including views you don't hold.</td><td>You choose <b>tests</b> (what must get better, by when, what must not get worse) one issue at a time. Change them any day. No party, no person.</td></tr>
+        <tr><td>Change it small, keep the undo<span class="code">continuous integration</span></td><td>A new government every five years, shipped all at once. U-turns end careers.</td><td>Every answer is tried small, with a fail number and a stop date. When it fails, the undo fires and the minister who pulls it keeps the job.</td></tr>
+        <tr><td>Let the date decide<span class="code">data-driven decisions</span></td><td>Impact checked years later, if ever. The loudest argument wins.</td><td>Each answer carries a dated prediction. On the day, someone other than its author reads the number. Track record is the only thing that buys weight.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">The engine</div>
+    <h2>Four steps, one real issue</h2>
+    <p class="muted">Tap a step to walk Thames Water through it. Blue tags are where humans hold the power; grey is machine legwork.</p>
+    <div class="pipe" role="group" aria-label="The four steps">
+      <button class="stage" id="st-0" aria-pressed="true" data-i="0"><span class="num">01 · the Ask</span><span class="verb">Set the test</span><span class="what">People choose outcomes and limits, issue by issue.</span><span class="who h">humans</span></button>
+      <button class="stage" id="st-1" aria-pressed="false" data-i="1"><span class="num">02 · the Bench</span><span class="verb">Write answers</span><span class="what">Anyone files a rival answer, written blind. A public rule picks today's three issues.</span><span class="who m">machines draft</span></button>
+      <button class="stage" id="st-2" aria-pressed="false" data-i="2"><span class="num">03 · the Gate</span><span class="verb">Check &amp; sign</span><span class="what">Every answer meets every field's limits. A named minister signs a small trial.</span><span class="who h">minister signs</span></button>
+      <button class="stage" id="st-3" aria-pressed="false" data-i="3"><span class="num">04 · the Clock</span><span class="verb">Mark it</span><span class="what">The date comes, the number is read. Pass: wider. Fail: undo.</span><span class="who m">machines read</span></button>
+    </div>
+    <div class="loop"><span>Jury (people drawn by lot)</span> settles values, money, and clashes between fields · decides keep-or-undo on a failure · every ruling goes in a book with a review date · <span>today: Kai and Jack</span></div>
+
+    <div class="detail" id="detail" aria-live="polite">
+      <div><h3 id="d-title"></h3><p id="d-body"></p><ul id="d-list"></ul></div>
+      <div class="log" id="d-log"></div>
+    </div>
+    <p class="note">The Thames figures come from a research pass on 23 Nov 2026 and haven't been re-checked. They're fine for thinking with; check them before anything goes public.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Who holds the power</div>
+    <h2>The machine reads the meter. It never sets the thermostat.</h2>
+    <div class="split">
+      <div class="col h"><h3>Humans</h3><ul>
+        <li>Set the tests and limits (the Ask)</li>
+        <li>Settle clashes between fields, and move money (the Jury)</li>
+        <li>Sign each trial, or refuse once in public (ministers)</li>
+        <li>Merge everything into the record (Kai or Jack)</li>
+      </ul></div>
+      <div class="col m"><h3>Machines</h3><ul>
+        <li>Pick today's three issues by a public rule anyone can read</li>
+        <li>Draft rival answers, blind, on different AI models</li>
+        <li>Cost them, grade the evidence, check every limit</li>
+        <li>Read the number on the date, against a rule fixed in advance</li>
+      </ul></div>
+    </div>
+    <p class="muted">Expertise counts in one place only: forecasting what an answer will do. Your weight there is your marked record, never your title. Money never follows popularity: each field has a floor, and only the jury moves cash, in small steps with their own tests.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">The surface</div>
+    <h2>The cabinet: politicians with the powers taken out</h2>
+    <div class="mayrow">
+      <div class="may"><h3>Ministers may</h3><ul><li>Read out what the engine found, and grumble</li><li>Sign a trial, or refuse once in public</li><li>Pull their own failing policy, and keep the job</li><li>Lose to another minister's limit, in a table</li></ul></div>
+      <div class="maynot"><h3>Ministers may not</h3><ul><li>Set a goal or choose the agenda</li><li>Pick the winner among rival answers</li><li>Mark their own prediction</li><li>Announce anything without its test</li></ul></div>
+    </div>
+    <div class="quotes">
+      <blockquote><cite>Energy Secretary</cite><p>Four prices for taking water back. Nothing. £14.5bn. £100bn. £144bn. The last one was paid for by the people Thames owes money to. We don't know which is right. We've printed who paid for each. Start there.</p></blockquote>
+      <blockquote><cite>Housing Secretary</cite><p>The water plan passed its own test and failed mine. This year 18,771 homes sat behind full sewage works. Cleaner river, nobody housed: not a pass. Back it goes.</p></blockquote>
+      <blockquote><cite>Prime Minister</cite><p>The Health Secretary pulled her own policy on Tuesday. It missed its number. She said so before we did. She keeps the job. In the other building that's a U-turn and it ends a career. Here it's Tuesday.</p></blockquote>
+    </div>
+    <p class="note">Sample statements to show the tone. The third describes an event that hasn't happened.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Honesty</div>
+    <h2>Every number wears a stamp</h2>
+    <div class="stamps">
+      <div class="stamp s-real"><b>Real</b><p>News, Parliament's actions, published figures, marked predictions, Kai's and Jack's rulings.</p><span class="ex">"Real. Source: ONS, 19 Nov."</span></div>
+      <div class="stamp s-borrow"><b>Borrowed</b><p>What people want, taken from polls we didn't run.</p><span class="ex">"Borrowed: YouGov, 7–8 Sep 2026, 2,072 adults."</span></div>
+      <div class="stamp s-stand"><b>Stand-in</b><p>Ministers, answer-writers, and the jury of two.</p><span class="ex">"A machine is keeping this seat warm." "Jury: 2. Should be 99."</span></div>
+      <div class="stamp s-paper"><b>On paper</b><p>Trials and money moves. None of it has run.</p><span class="ex">"On paper. We have no power to run it."</span></div>
+    </div>
+    <p class="footer-line">Not a real party. Yet. Nobody voted for any of this. Each item says who decided it.</p>
+    <p class="muted">Never "the people decided". Never a made-up crowd. Visitors can set their own tests on the site; those stay in their own browser and are never sent or counted.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Settled today</div>
+    <h2>The calls we made</h2>
+    <div class="decisions">
+      <div class="dec"><span class="tick">YES</span><div><b>The test is the thing people choose</b><span>Not a party, not an MP, not an expert. An outcome with a date and a limit.</span></div></div>
+      <div class="dec"><span class="tick">YES</span><div><b>Kai and Jack are named as the jury</b><span>"Jury: 2. Should be 99." It's the honest line and the best joke.</span></div></div>
+      <div class="dec"><span class="tick">YES</span><div><b>No elections anywhere</b><span>The jury hires ministers and voters can recall them. Labelled on the page as the part most likely to be wrong: the deliberate wrong answer.</span></div></div>
+      <div class="dec"><span class="tick">YES</span><div><b>Visitors can set their own tests</b><span>In their browser only. Never sent, never counted, so no fake public and no political data held.</span></div></div>
+      <div class="dec"><span class="tick">YES</span><div><b>One "how it works" page may use the software words</b><span>Everywhere else, ministers and policy pages keep the plain-words rule.</span></div></div>
+      <div class="dec"><span class="tick">YES</span><div><b>Lead with the sentence, hide the machinery</b><span>Readers get four steps. The seven-part engine sits underneath, for anyone who digs.</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">From today's build</div>
+    <h2>Three weeks, each one shows something</h2>
+    <div class="road">
+      <div class="wk"><span class="eyebrow">Week 1</span><h3>Stop the loop, start the queue</h3><p>A public script picks what's looked at, with the policy left waiting longest going first. A policy changes only on a failed test, a ruling or a new fact; at most once a fortnight, and never longer.</p><span class="shows">shows → every policy covered within a month</span></div>
+      <div class="wk"><span class="eyebrow">Week 2</span><h3>Water, end to end</h3><p>Build the Thames decision by hand: the borrowed Ask, three blind rival answers, the Gate table, one jury question for Kai and Jack, and the read-out.</p><span class="shows">shows → the Gap page: asked vs Parliament vs us</span></div>
+      <div class="wk"><span class="eyebrow">Week 3</span><h3>Run it daily, mark something</h3><p>Answer-writers on schedule in Bob on two different AI models, ministers as read-out, the rulings book, and one prediction due within 30 days on every decision.</p><span class="shows">shows → first marks before February</span></div>
+    </div>
+    <p class="muted">Kept from today: policy files, dated predictions and the statistician's marking, the news sweep, the lint, the evidence file, the ten minister voices, git as the record, and the human merge. Retired: the opposition as a separate body, reviewing only what changed, and conceding every point into the text.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">The point of it</div>
+    <h2>What we hand political scientists to go and test</h2>
+    <ol class="tests">
+      <li><p><b>Tests, policies or parties.</b> Ask matched groups to choose each way. Which answers hold a month later, and which are shared across camps?</p></li>
+      <li><p><b>The stand-in rule.</b> Count those who turn up as themselves, and fill the empty seats by lot. Does that look more like the whole country than volunteers alone?</p></li>
+      <li><p><b>Safe to stop.</b> Fix a kill number before a pilot, and protect the official who stops it on that number. Do more failing pilots actually get stopped?</p></li>
+    </ol>
+  </section>
+</main>
+
+<script>
+const steps=[
+ {t:"01 · Set the test",b:"People don't vote for an owner or a party. They say what must get better, by when, and what must not get worse. Until real people do this, the Ask is borrowed from a real poll and stamped as borrowed.",
+  l:["You choose outcomes, so you don't need to be an expert to hold a view","Limits from other fields come along automatically","The jury picks the final wording"],
+  log:`<span class="t">thames water · the ask</span>
+<span class="hum">borrowed</span> YouGov, 7–8 Sep 2026, 2,072 adults
+  74% want water public · 6% private
+  falls to ~30% if it means higher bills or taxes
+<span class="hum">reading</span> people want an outcome, not an owner
+
+<span class="ok">test</span>  spills per overflow halved by Dec 2029
+<span class="ok">test</span>  no bill rise beyond the one already agreed
+<span class="ok">test</span>  no dividend in a year the sewage test fails
+<span class="bad">limit</span> no homes blocked by full sewage works (housing)
+<span class="bad">limit</span> borrowing stated · pension losses named`},
+ {t:"02 · Write answers",b:"A public rule picks three issues a day: one the real Parliament is deciding, the one that has waited longest, and one alarm. Anyone can file an answer. Writers can't see each other, and nobody replies to anybody, so the disagreement is printed instead of talked away.",
+  l:["The opposition becomes a rival answer, not a team paid to oppose","Different AI models write, so they don't just agree","Nobody can take an answer off the bench. Only the Gate can fail it"],
+  log:`<span class="t">thames water · the bench</span>
+queue slot: <span class="hum">real Parliament is deciding this</span>
+court 27 Nov · creditor vote 17 Dec · sanction 13 Jan
+
+A  tougher referee         (Jan 2026 white paper)
+B  public when it goes bust (our existing policy)
+C  owned by its customers  (mutual model, Farron bill)
+
+written blind · 3 writers · 0 replies`},
+ {t:"03 · Check & sign",b:"Every answer meets its own test and every other field's limits. Costs sit side by side, with who paid for each. The Gate prints results and never picks a winner. Anything about values, money or two fields clashing goes to the jury. Then a named minister signs one small trial.",
+  l:["The check comes before the policy, not five years after","A housing answer that breaks a river limit fails in public","A minister can refuse once, in public, which sends it to the jury"],
+  log:`<span class="t">thames water · the gate</span>
+price of taking it back:
+  ~£0 · £14.5bn · ~£100bn · £144bn (paid for by creditors)
+<span class="bad">C</span> Welsh Water: dearer bills, 790k+ spill hours
+<span class="bad">A</span> 80% of £122.7m penalties deferred to 2030
+<span class="bad">result</span> no answer passes all three tests
+
+<span class="hum">jury</span>  "Thames owes £19.1bn. Lenders, bill payers,
+       taxpayers: who eats the loss first?"
+<span class="hum">sign</span>  next company that goes bust stays public,
+       5-year trial vs similar firms · Energy Sec`},
+ {t:"04 · Mark it",b:"On the date, someone who didn't write the answer reads the number against a rule fixed in advance. A pass spreads further. A fail fires the undo. The minister who pulls a failing policy keeps the job; hiding a failure gets you sacked.",
+  l:["“The calendar certifies the experts”","Some predictions are due within 30 days, so something gets marked soon","Every failure is a fault in the rules as well as in the answer"],
+  log:`<span class="t">thames water · the clock</span>
+prediction  special administration order
+            by 30 Jun 2027 · odds 0.30
+prediction  court sanctions the rescue on 13 Jan 2027
+            <span class="hum">due in under 60 days</span>
+
+on the date: <span class="ok">PASS</span> → goes wider
+             <span class="bad">FAIL</span> → undo fires · minister keeps job
+             hidden fail → minister sacked`}
+];
+const btns=[...document.querySelectorAll('.stage')];
+function show(i){
+  const s=steps[i];
+  btns.forEach((b,j)=>b.setAttribute('aria-pressed',j===i?'true':'false'));
+  document.getElementById('d-title').textContent=s.t;
+  document.getElementById('d-body').textContent=s.b;
+  document.getElementById('d-list').innerHTML=s.l.map(x=>'<li>'+x+'</li>').join('');
+  document.getElementById('d-log').innerHTML=s.log.replace(/\n/g,'<br>');
+  try{localStorage.setItem('fp-step',String(i))}catch(e){}
+}
+btns.forEach(b=>b.addEventListener('click',()=>show(+b.dataset.i)));
+let start=0;try{const v=+localStorage.getItem('fp-step');if(v>=0&&v<4)start=v}catch(e){}
+show(start);
+
+/* ---- the run: animated loop diagram ---- */
+(function(){
+const cv=document.getElementById('fp-canvas'),ctx=cv.getContext('2d');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const IDEAS=['COMPOSE','INTEGRATE','MEASURE'];
+const ST=[
+ {k:'ask',name:'Set the test',tag:'people',h:1,id:[0],t:'People set the test',
+  x:'Nobody votes for a party or an owner. People say what must get better, by when, and what must not get worse.',
+  e:'Borrowed from YouGov, Sep 2026: 74% want water public, ~30% if bills rise. People want an outcome, not an owner.'},
+ {k:'queue',name:'The queue',tag:'script',h:0,id:[1],t:'A public rule picks the issue',
+  x:'No person owns the agenda. A script anyone can read picks three issues a day.',
+  e:'Slot taken: "the real Parliament is deciding this". Court 27 Nov, creditor vote 17 Dec.'},
+ {k:'bench',name:'Rival answers',tag:'machines · blind',h:0,id:[0],t:'Rival answers, written blind',
+  x:'Anyone files an answer. Writers can’t see each other, so disagreement is printed, not argued away.',
+  e:'A: a tougher regulator. B: public when it goes bust. C: owned by its customers.'},
+ {k:'gate',name:'The gate',tag:'machines',h:0,id:[1,2],t:'Every answer meets every test',
+  x:'Each answer is checked against its own test and every other field’s limits. The gate prints. It never picks.',
+  e:'0 of 3 pass. Ownership alone doesn’t fix sewage. Prices to take it back: ~£0 to £144bn.'},
+ {k:'jury',name:'The jury',tag:'people · by lot',h:1,id:[0],t:'A values question goes to people',
+  x:'Data can’t say who should pay. A jury drawn by lot rules, and the ruling goes in a book.',
+  e:'"Thames owes £19.1bn. Lenders, bill payers, taxpayers: who eats the loss first?" Jury today: Kai and Jack.'},
+ {k:'minister',name:'Minister signs',tag:'a named human',h:1,id:[1],t:'A minister signs one small step',
+  x:'Not "nationalise water". One small trial with a fail number and a stop date. Sign it, or refuse once in public.',
+  e:'The next water company that goes bust stays public, compared with similar firms for five years.'},
+ {k:'clock',name:'The clock',tag:'machines · on the date',h:0,id:[2],t:'The date comes, the number is read',
+  x:'Someone who didn’t write the answer reads the number against a rule fixed in advance.',
+  e:'First mark due 13 Jan 2027: does the court approve the rescue?'},
+ {k:'out',name:'Wider or undo',tag:'everyone sees',h:1,id:[1,2],t:'Pass goes wider. Fail is undone.',
+  x:'A fail fires the undo and the minister keeps the job. Only hiding a failure gets you sacked. Then round again.',
+  e:'In Westminster a U-turn ends a career. Here it’s a Tuesday.'}
+];
+const N=ST.length;
+let W=0,H=0,cx=0,cy=0,rx=0,ry=0,R=0,fs=12,pos=[],cur=0,stageStart=0;
+let tokFrom=0,tokTo=0,tokT0=-9,tokAng=0,timer=null;
+const angOf=i=>-Math.PI+i*2*Math.PI/N;
+const parts=Array.from({length:70},(_,i)=>({a:Math.random()*Math.PI*2,v:.12+Math.random()*.1,o:(Math.random()-.5)}));
+const crowd=Array.from({length:16},()=>{const r=Math.sqrt(Math.random())*.62,a=Math.random()*Math.PI*2;return{x:Math.cos(a)*r,y:Math.sin(a)*r,p:Math.random()*6}});
+function tok(){const s=getComputedStyle(document.documentElement);const g=n=>s.getPropertyValue(n).trim();
+ return{bg:g('--bg'),sf:g('--surface'),ink:g('--ink'),mu:g('--muted'),ln:g('--line'),ac:g('--accent'),acs:g('--accent-soft'),ok:g('--pass'),bad:g('--fail'),hu:g('--human'),hus:g('--human-soft'),disp:'"Archivo",Arial,sans-serif',mono:'"IBM Plex Mono",monospace'}}
+function layout(){
+ const w=cv.parentElement.clientWidth;const narrow=w<620;
+ W=w;H=Math.round(narrow?w*1.3:w*.6);
+ const d=Math.min(window.devicePixelRatio||1,2);
+ cv.width=W*d;cv.height=H*d;cv.style.height=H+'px';ctx.setTransform(d,0,0,d,0,0);
+ cx=W/2;cy=H*.49;rx=W*(narrow?.36:.38);ry=H*(narrow?.36:.34);
+ R=Math.max(22,Math.min(44,Math.min(W,H)*.075));fs=Math.max(11,Math.min(14,W/62));
+ pos=ST.map((_,i)=>({x:cx+rx*Math.cos(angOf(i)),y:cy+ry*Math.sin(angOf(i))}));
+}
+const ell=(a,k)=>({x:cx+rx*k*Math.cos(a),y:cy+ry*k*Math.sin(a)});
+const ease=u=>u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;
+function circ(x,y,r){ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2)}
+function arrow(x1,y1,x2,y2,col,w){ctx.strokeStyle=col;ctx.fillStyle=col;ctx.lineWidth=w;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();const a=Math.atan2(y2-y1,x2-x1),h=w*3.2;ctx.beginPath();ctx.moveTo(x2,y2);ctx.lineTo(x2-h*Math.cos(a-.5),y2-h*Math.sin(a-.5));ctx.lineTo(x2-h*Math.cos(a+.5),y2-h*Math.sin(a+.5));ctx.closePath();ctx.fill()}
+function icon(i,x,y,t,on,c){
+ const k=ST[i].k,r=R;ctx.save();ctx.translate(x,y);ctx.lineCap='round';
+ if(k==='ask'){crowd.forEach(d=>{const j=on?Math.sin(t*3+d.p)*r*.05:0;circ(d.x*r+j,d.y*r-j,r*.085);ctx.fillStyle=c.hu;ctx.fill()})}
+ if(k==='queue'){for(let q=0;q<3;q++){const yy=(q-1)*r*.3;ctx.fillStyle=(on&&q===0)?c.ac:c.ln;ctx.beginPath();ctx.roundRect(-r*.5,yy-r*.08,r*1,r*.16,r*.08);ctx.fill()}
+  if(on){const yy=-r*.45+((t*.9)%1)*r*.9;ctx.strokeStyle=c.ac;ctx.globalAlpha=.5;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(-r*.62,yy);ctx.lineTo(r*.62,yy);ctx.stroke();ctx.globalAlpha=1}}
+ if(k==='bench'){const sp=on?1+.12*Math.sin(t*2.5):1;['A','B','C'].forEach((L,q)=>{ctx.save();ctx.translate((q-1)*r*.42*sp,0);ctx.rotate((q-1)*.18);ctx.fillStyle=c.sf;ctx.strokeStyle=c.ink;ctx.lineWidth=1.2;ctx.beginPath();ctx.roundRect(-r*.18,-r*.27,r*.36,r*.54,2);ctx.fill();ctx.stroke();ctx.fillStyle=c.ink;ctx.font='600 '+Math.round(r*.26)+'px '+c.mono;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(L,0,0);
+  if(cur>=3){ctx.strokeStyle=c.bad;ctx.lineWidth=2;const s=r*.08;ctx.beginPath();ctx.moveTo(r*.08-s,-r*.2-s);ctx.lineTo(r*.08+s,-r*.2+s);ctx.moveTo(r*.08+s,-r*.2-s);ctx.lineTo(r*.08-s,-r*.2+s);ctx.stroke()}ctx.restore()})}
+ if(k==='gate'){ctx.strokeStyle=c.ink;ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(-r*.42,-r*.5);ctx.lineTo(-r*.42,r*.5);ctx.moveTo(r*.42,-r*.5);ctx.lineTo(r*.42,r*.5);ctx.stroke();
+  const fl=on?(Math.sin(t*6)>0?c.bad:c.ink):c.mu;ctx.strokeStyle=fl;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(-r*.42,-r*.05);ctx.lineTo(r*.42,-r*.05);ctx.stroke();
+  if(on){for(let q=0;q<3;q++){const u=(t*.7+q/3)%1;const yy=r*.45-Math.sin(u*Math.PI)*r*.45;circ((q-1)*r*.22,yy,r*.06);ctx.fillStyle=c.bad;ctx.fill()}}}
+ if(k==='jury'){const rr=r*.72,rot=on?t*.25:0;for(let q=0;q<99;q++){const a=rot+q/99*Math.PI*2-Math.PI/2;circ(Math.cos(a)*rr,Math.sin(a)*rr,Math.max(1,r*.028));if(q<2){ctx.fillStyle=c.hu;ctx.fill()}else{ctx.strokeStyle=c.mu;ctx.lineWidth=.6;ctx.stroke()}}
+  ctx.fillStyle=c.hu;ctx.font='600 '+Math.round(r*.3)+'px '+c.mono;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('2/99',0,0)}
+ if(k==='minister'){ctx.strokeStyle=c.hu;ctx.lineWidth=2;circ(-r*.1,-r*.22,r*.17);ctx.stroke();ctx.beginPath();ctx.ellipse(-r*.1,r*.4,r*.34,r*.3,0,Math.PI,0);ctx.stroke();
+  if(cur>=5){const u=i===cur?Math.min(1,(performance.now()/1000-stageStart)/.8):1;ctx.strokeStyle=c.ok;ctx.lineWidth=3;ctx.beginPath();const p0=[r*.2,-r*.05],p1=[r*.34,r*.1],p2=[r*.6,-r*.25];ctx.moveTo(...p0);if(u<.4){const v=u/.4;ctx.lineTo(p0[0]+(p1[0]-p0[0])*v,p0[1]+(p1[1]-p0[1])*v)}else{ctx.lineTo(...p1);const v=(u-.4)/.6;ctx.lineTo(p1[0]+(p2[0]-p1[0])*v,p1[1]+(p2[1]-p1[1])*v)}ctx.stroke()}}
+ if(k==='clock'){ctx.strokeStyle=c.ink;ctx.lineWidth=1.6;circ(0,0,r*.6);ctx.stroke();for(let q=0;q<12;q++){const a=q/12*Math.PI*2;ctx.beginPath();ctx.moveTo(Math.cos(a)*r*.5,Math.sin(a)*r*.5);ctx.lineTo(Math.cos(a)*r*.58,Math.sin(a)*r*.58);ctx.stroke()}
+  const a=t*(on?3:.25)-Math.PI/2;ctx.strokeStyle=on?c.ac:c.ink;ctx.lineWidth=2.4;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.cos(a)*r*.45,Math.sin(a)*r*.45);ctx.stroke()}
+ if(k==='out'){if(on){for(let q=0;q<3;q++){const u=((t*.6)+q/3)%1;circ(r*.25,-r*.25,u*r*.6);ctx.strokeStyle=c.ok;ctx.globalAlpha=1-u;ctx.lineWidth=1.5;ctx.stroke()}ctx.globalAlpha=1}
+  arrow(-r*.15,r*.15,r*.4,-r*.4,c.ok,2.4);
+  ctx.strokeStyle=c.bad;ctx.lineWidth=2.4;ctx.beginPath();ctx.arc(-r*.15,r*.15+r*.0,r*.32,-.2,Math.PI*.9,false);ctx.stroke();
+  const ea=Math.PI*.9,ex=-r*.15+Math.cos(ea)*r*.32,ey=r*.15+Math.sin(ea)*r*.32;ctx.fillStyle=c.bad;ctx.beginPath();ctx.moveTo(ex,ey);ctx.lineTo(ex+r*.13,ey+r*.02);ctx.lineTo(ex+r*.03,ey-r*.12);ctx.closePath();ctx.fill()}
+ ctx.restore();
+}
+function draw(t){
+ const c=tok();ctx.clearRect(0,0,W,H);
+ // hub
+ const hr=Math.min(rx,ry)*.42,act=ST[cur].id;
+ for(let q=0;q<3;q++){const a0=-Math.PI/2+q*2*Math.PI/3+.08,a1=a0+2*Math.PI/3-.16;ctx.beginPath();ctx.arc(cx,cy,hr,a0,a1);ctx.strokeStyle=act.includes(q)?c.ac:c.ln;ctx.lineWidth=act.includes(q)?6:4;ctx.lineCap='round';ctx.stroke()}
+ ctx.textAlign='center';ctx.textBaseline='middle';
+ ctx.fillStyle=c.mu;ctx.font='500 '+Math.round(fs*.78)+'px '+c.mono;ctx.fillText('FUTURE PROOF',cx,cy-hr*.48);
+ IDEAS.forEach((s,q)=>{ctx.fillStyle=act.includes(q)?c.ac:c.mu;ctx.font=(act.includes(q)?'700 ':'500 ')+Math.round(fs*.9)+'px '+c.mono;ctx.fillText(s,cx,cy-hr*.12+q*fs*1.25)});
+ // spokes to the active station
+ act.forEach(q=>{});
+ const p=pos[cur];ctx.save();ctx.setLineDash([3,5]);ctx.strokeStyle=c.ac;ctx.globalAlpha=.6;ctx.lineWidth=1.4;const a=Math.atan2(p.y-cy,p.x-cx);ctx.beginPath();ctx.moveTo(cx+Math.cos(a)*hr*1.08,cy+Math.sin(a)*hr*1.08);ctx.lineTo(p.x-Math.cos(a)*R*1.25,p.y-Math.sin(a)*R*1.25);ctx.stroke();ctx.restore();
+ // loop track
+ ctx.save();ctx.setLineDash([2,6]);ctx.strokeStyle=c.mu;ctx.globalAlpha=.55;ctx.lineWidth=1.5;ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2);ctx.stroke();ctx.restore();
+ // travelled part of this round
+ if(cur>0){ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,angOf(0),tokAng);ctx.strokeStyle=c.ac;ctx.globalAlpha=.45;ctx.lineWidth=3;ctx.stroke();ctx.globalAlpha=1}
+ // direction chevrons
+ for(let i=0;i<N;i++){const a=angOf(i)+Math.PI/N,q=ell(a,1),q2=ell(a+.02,1),d=Math.atan2(q2.y-q.y,q2.x-q.x);ctx.save();ctx.translate(q.x,q.y);ctx.rotate(d);ctx.strokeStyle=c.mu;ctx.lineWidth=1.6;ctx.beginPath();ctx.moveTo(-4,-4);ctx.lineTo(1,0);ctx.lineTo(-4,4);ctx.stroke();ctx.restore()}
+ // flow particles: everything else moving through all the time
+ parts.forEach(pt=>{const a=reduce?pt.a:pt.a+t*pt.v,q=ell(a,1+pt.o*.06);circ(q.x,q.y,1.7);ctx.fillStyle=c.mu;ctx.globalAlpha=.5;ctx.fill()});ctx.globalAlpha=1;
+ // stations
+ for(let i=0;i<N;i++){const s=ST[i],{x,y}=pos[i],on=i===cur;
+  if(on&&!reduce){circ(x,y,R+7+Math.sin(t*3)*2.5);ctx.fillStyle=c.acs;ctx.fill()}
+  circ(x,y,R);ctx.fillStyle=s.h?c.hus:c.sf;ctx.fill();ctx.lineWidth=on?3:1.5;ctx.strokeStyle=on?c.ac:(s.h?c.hu:c.ln);ctx.stroke();
+  ctx.globalAlpha=(i<=cur||on)?1:.55;icon(i,x,y,t,on,c);ctx.globalAlpha=1;
+  const below=y>cy-ry*.2,ly=below?y+R+fs*1.1:y-R-fs*1.55;
+  ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=on?c.ac:c.ink;ctx.font='700 '+Math.round(fs*1.05)+'px '+c.disp;ctx.fillText(s.name,x,ly);
+  ctx.fillStyle=s.h?c.hu:c.mu;ctx.font='500 '+Math.round(fs*.75)+'px '+c.mono;ctx.fillText(s.tag.toUpperCase(),x,ly+fs*1.05);
+  ctx.fillStyle=c.mu;ctx.font='500 '+Math.round(fs*.75)+'px '+c.mono;const nx=x-R*.78,ny=y-R*.78;ctx.fillText(String(i+1),nx,ny)}
+ // the docket: Thames Water travelling round
+ const u=reduce?1:Math.min(1,(t-tokT0)/.9);tokAng=tokFrom+(tokTo-tokFrom)*ease(Math.max(0,u));
+ const q=ell(tokAng,.74);ctx.font='600 '+Math.round(fs*.8)+'px '+c.mono;const label='THAMES WATER',tw=ctx.measureText(label).width+14,th=fs*1.6;
+ ctx.fillStyle=c.ac;ctx.beginPath();ctx.roundRect(q.x-tw/2,q.y-th/2,tw,th,th/2);ctx.fill();ctx.fillStyle=c.sf;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(label,q.x,q.y+.5);
+}
+function frame(now){draw(now/1000);if(!reduce)requestAnimationFrame(frame)}
+const playBtn=document.getElementById('r-play'),dots=document.getElementById('r-dots');
+ST.forEach((s,i)=>{const b=document.createElement('button');b.type='button';b.textContent=i+1;b.setAttribute('aria-label','Step '+(i+1)+': '+s.t);b.addEventListener('click',()=>{stop();go(i)});dots.appendChild(b)});
+function go(i){
+ const prev=cur;cur=(i+N)%N;const now=performance.now()/1000;stageStart=now;
+ tokFrom=tokAng;let to=angOf(cur);if(cur===0)to=angOf(0);
+ if(cur===0&&prev===N-1){tokFrom=angOf(N-1)-2*Math.PI;}
+ tokTo=to;tokT0=now;
+ const s=ST[cur];
+ document.getElementById('c-count').textContent=cur+1;
+ document.getElementById('c-title').textContent=s.t;
+ document.getElementById('c-text').textContent=s.x;
+ document.getElementById('c-ex').textContent='Thames Water: '+s.e;
+ document.getElementById('prog').style.width=((cur+1)/N*100)+'%';
+ [...dots.children].forEach((b,j)=>{if(j===cur)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});
+ if(reduce)draw(now);
+}
+function stop(){clearInterval(timer);timer=null;playBtn.textContent='▶ Play'}
+function play(){if(timer){stop();return}playBtn.textContent='❚❚ Pause';timer=setInterval(()=>go(cur+1),4800)}
+playBtn.addEventListener('click',play);
+document.getElementById('r-prev').addEventListener('click',()=>{stop();go(cur-1)});
+document.getElementById('r-next').addEventListener('click',()=>{stop();go(cur+1)});
+cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;let best=-1,bd=1e9;pos.forEach((p,i)=>{const d=Math.hypot(p.x-x,p.y-y);if(d<bd){bd=d;best=i}});if(bd<R*1.6){stop();go(best)}});
+window.addEventListener('resize',()=>{layout();if(reduce)draw(performance.now()/1000)});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{if(reduce)draw(performance.now()/1000)});
+layout();tokAng=angOf(0);tokFrom=tokTo=angOf(0);go(0);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{if(reduce)draw(performance.now()/1000)});
+if(!reduce){requestAnimationFrame(frame);play()}
+})();
+</script>

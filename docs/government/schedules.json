@@ -43,5 +43,68 @@
     "keep_sessions": 8,
     "enabled": true,
     "message": "Run this week's personnel review."
+  },
+  {
+    "name": "gov-4a-sim-clerk",
+    "worker": "sim-clerk",
+    "cron": "0 9 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Run today's simulation clerk."
+  },
+  {
+    "name": "gov-4b-sim-citizens",
+    "worker": "sim-citizens",
+    "cron": "20 9 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Run today's simulated citizens."
+  },
+  {
+    "name": "gov-4c-sim-rival",
+    "worker": "sim-rival",
+    "cron": "40 9 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Write today's rival answer C."
+  },
+  {
+    "name": "gov-4d-sim-bench",
+    "worker": "sim-bench",
+    "cron": "0 10 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Run today's bench."
+  },
+  {
+    "name": "gov-4e-sim-gate",
+    "worker": "sim-gate",
+    "cron": "30 10 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Run today's gate."
+  },
+  {
+    "name": "gov-4f-sim-jury",
+    "worker": "sim-jury",
+    "cron": "0 11 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Run today's simulated jury."
+  },
+  {
+    "name": "gov-4g-sim-minister",
+    "worker": "sim-minister",
+    "cron": "20 11 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": true,
+    "message": "Run today's minister and publish the issue."
   }
 ]

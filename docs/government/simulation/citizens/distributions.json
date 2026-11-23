@@ -1,0 +1,178 @@
+{
+ "built": "2026-11-23",
+ "note": "Marginals only; attributes sampled independently (a simplification).",
+ "attributes": {
+  "age_band": {
+   "coverage": "UK",
+   "unit": "adults 18+",
+   "year": "mid-2025",
+   "source": {
+    "title": "Population estimates for the UK, England, Wales, Scotland and Northern Ireland: mid-2025 (dataset mye25tablesuk, sheets MYE2)",
+    "publisher": "Office for National Statistics (with NRS and NISRA)",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland"
+   },
+   "values": {
+    "18-24": 0.105,
+    "25-34": 0.169,
+    "35-44": 0.172,
+    "45-54": 0.156,
+    "55-64": 0.164,
+    "65-74": 0.124,
+    "75+": 0.11
+   },
+   "notes": "Derived: summed single-year-of-age counts (MYE2 Persons, UK row) into bands; 18+ total 54,839,324; 75+ includes 90 and over."
+  },
+  "sex": {
+   "coverage": "UK",
+   "unit": "adults 18+",
+   "year": "mid-2025",
+   "source": {
+    "title": "Population estimates for the UK, England, Wales, Scotland and Northern Ireland: mid-2025 (dataset mye25tablesuk, sheets MYE2)",
+    "publisher": "Office for National Statistics (with NRS and NISRA)",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland"
+   },
+   "values": {
+    "female": 0.514,
+    "male": 0.486
+   },
+   "notes": "Derived: UK females 18+ 28,197,029 and males 18+ 26,642,295 from MYE2 Females/Males sheets. Sex as recorded (binary) in the estimates."
+  },
+  "region": {
+   "coverage": "UK",
+   "unit": "adults 18+ (population share by region)",
+   "year": "mid-2025",
+   "source": {
+    "title": "Population estimates for the UK, England, Wales, Scotland and Northern Ireland: mid-2025 (dataset mye25tablesuk, sheets MYE2)",
+    "publisher": "Office for National Statistics (with NRS and NISRA)",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland"
+   },
+   "values": {
+    "North East": 0.04,
+    "North West": 0.111,
+    "Yorkshire and The Humber": 0.081,
+    "East Midlands": 0.073,
+    "West Midlands": 0.088,
+    "East of England": 0.094,
+    "London": 0.132,
+    "South East": 0.138,
+    "South West": 0.086,
+    "Wales": 0.046,
+    "Scotland": 0.082,
+    "Northern Ireland": 0.027
+   },
+   "notes": "Derived from MYE2 Persons 18+ counts per region/nation (sum 54,839,324). Adult shares used because the pool is adults. All-ages shares differ slightly (see values_all_ages).",
+   "values_all_ages": {
+    "North East": 0.04,
+    "North West": 0.112,
+    "Yorkshire and The Humber": 0.082,
+    "East Midlands": 0.073,
+    "West Midlands": 0.089,
+    "East of England": 0.095,
+    "London": 0.131,
+    "South East": 0.139,
+    "South West": 0.085,
+    "Wales": 0.046,
+    "Scotland": 0.08,
+    "Northern Ireland": 0.028
+   }
+  },
+  "tenure": {
+   "coverage": "England and Wales only (Census 2021 TS054); not UK-wide",
+   "unit": "households (not persons)",
+   "year": "2021 (census day 21 March)",
+   "source": {
+    "title": "Census 2021 TS054 Tenure of household (Nomis dataset NM_2072_1), England and Wales",
+    "publisher": "Office for National Statistics via Nomis",
+    "url": "https://www.nomisweb.co.uk/api/v01/dataset/NM_2072_1.data.csv?geography=2092957703&measures=20100"
+   },
+   "values": {
+    "owned_outright": 0.328,
+    "owned_with_mortgage": 0.297,
+    "private_rented": 0.203,
+    "social_rented": 0.171,
+    "other_rent_free": 0.001
+   },
+   "notes": "Derived from household counts (24,783,199): outright 8,136,782; mortgage/loan 7,122,199 plus shared ownership 240,234; private rented 5,023,531 (landlord/agency plus other private rented); social rented 4,227,756; lives rent free 32,697. Households not persons: persons in rent/social housing are somewhat over-represented in the adult population, so independent sampling of adults from household shares is an approximation."
+  },
+  "economic_activity": {
+   "coverage": "England and Wales only (Census 2021 TS066); not UK-wide",
+   "unit": "usual residents aged 16+ (not 18+)",
+   "year": "2021",
+   "source": {
+    "title": "Census 2021 TS066 Economic activity status (Nomis dataset NM_2083_1), England and Wales",
+    "publisher": "Office for National Statistics via Nomis",
+    "url": "https://www.nomisweb.co.uk/api/v01/dataset/NM_2083_1.data.csv?geography=2092957703&measures=20100"
+   },
+   "values": {
+    "employed": 0.572,
+    "unemployed": 0.034,
+    "retired": 0.216,
+    "student": 0.056,
+    "looking_after_home_family": 0.048,
+    "long_term_sick_disabled": 0.042,
+    "other": 0.031
+   },
+   "notes": "Derived: employed = 26,960,268 (not students) + 813,397 (full-time students in employment), includes self-employed; unemployed = 1,376,363 + 298,822 (full-time students unemployed); 'student' is only the economically inactive students (2,740,634), so working or job-seeking students are counted as employed/unemployed. Retired 10,513,713; looking after home/family 2,317,340; long-term sick/disabled 2,025,621; other inactive 1,520,213. Total 48,566,371. Includes 16-17s, so slightly more students than an 18+ pool; Census was taken during Covid restrictions (furlough counted as employed)."
+  },
+  "qualification": {
+   "coverage": "England and Wales only (Census 2021 TS067); not UK-wide",
+   "unit": "usual residents aged 16+",
+   "year": "2021",
+   "source": {
+    "title": "Census 2021 TS067 Highest level of qualification (Nomis dataset NM_2084_1), England and Wales",
+    "publisher": "Office for National Statistics via Nomis",
+    "url": "https://www.nomisweb.co.uk/api/v01/dataset/NM_2084_1.data.csv?geography=2092957703&measures=20100"
+   },
+   "values": {
+    "none": 0.182,
+    "level_1_2": 0.23,
+    "apprenticeship": 0.053,
+    "level_3": 0.169,
+    "level_4_plus": 0.338,
+    "other": 0.028
+   },
+   "notes": "Derived: level_1_2 = Level 1 and entry (4,679,223) + Level 2 (6,493,490). Total 48,566,373. Includes 16-17s (who lower the average attainment slightly)."
+  },
+  "ethnicity": {
+   "coverage": "England and Wales only (Census 2021 TS021); Scotland and NI not fetched",
+   "unit": "usual residents, all ages (not adults only)",
+   "year": "2021",
+   "source": {
+    "title": "Census 2021 TS021 Ethnic group (Nomis dataset NM_2041_1), England and Wales",
+    "publisher": "Office for National Statistics via Nomis",
+    "url": "https://www.nomisweb.co.uk/api/v01/dataset/NM_2041_1.data.csv?geography=2092957703&measures=20100"
+   },
+   "values": {
+    "White": 0.817,
+    "Asian": 0.093,
+    "Black": 0.04,
+    "Mixed": 0.029,
+    "Other": 0.021
+   },
+   "notes": "Derived: broad groups as ONS counts: White 48,699,249; Asian/Asian British/Asian Welsh 5,515,420; Black 2,409,278; Mixed/Multiple 1,717,976; Other (incl Arab) 1,255,619; total 59,597,542. All-ages shares: adults are less diverse than children, so adult non-White share is a little lower. Scotland and NI censuses (2022) use different category sets and were not used."
+  },
+  "vote_2024": {
+   "coverage": "UK (parties' GB votes plus all UK votes; NI parties inside 'other')",
+   "unit": "registered electors (proxy for adults)",
+   "year": "4 July 2024",
+   "source": {
+    "title": "Results for the UK general election on 4 July 2024 (candidacies CSV, Great Britain and England/Scotland/Wales; UK electorate and valid votes)",
+    "publisher": "House of Commons Library, Election Results",
+    "url": "https://electionresults.parliament.uk/general-elections/6"
+   },
+   "values": {
+    "did_not_vote": 0.403,
+    "labour": 0.201,
+    "conservative": 0.142,
+    "reform_uk": 0.085,
+    "liberal_democrat": 0.073,
+    "green": 0.04,
+    "snp": 0.015,
+    "plaid_cymru": 0.004,
+    "other": 0.037
+   },
+   "notes": "Derived: each party's UK votes divided by UK electorate 48,224,212. Votes: Lab 9,708,716; Con 6,828,925; Reform 4,117,610; LD 3,519,143; Green 1,935,809 (Green Party 1,843,124 + Scottish Green 92,685, from GB candidacies CSV); SNP 724,758; Plaid 194,811; other = residual 1,779,568 (independents, Speaker, Workers Party, NI parties, minor parties). Valid votes 28,809,340 = 59.74% of electorate (the official 59.7% turnout); did_not_vote = 1 - that = 40.3% (spoiled ballots, 116,253, are counted in did_not_vote; including them turnout would be 59.98%). Caveat: the electorate is registered voters, not all adults, so true non-voting among adults (incl unregistered, non-citizens ineligible) is higher/different. Greens/other split checked against the CSV: GB 'Green' 1,935,809."
+  }
+ },
+ "missing": []
+}
