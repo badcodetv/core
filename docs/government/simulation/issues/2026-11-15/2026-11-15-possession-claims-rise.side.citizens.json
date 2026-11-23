@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0776",
+  "wants": "Quicker decisions, but not at the cost of fair hearings for renters.",
+  "limit": "Don't let landlords get away with rushed evictions.",
+  "split": "yes"
+ },
+ {
+  "id": "c0898",
+  "wants": "Landlords who break the rules should face court, and sooner.",
+  "limit": "Don't pile more tax on pensioners to pay for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0206",
+  "wants": "Tenants get a proper hearing before anyone is put out.",
+  "limit": "Don't make renters pay for the courts through their rent.",
+  "split": "yes"
+ },
+ {
+  "id": "c0276",
+  "wants": "Not sure how it works in England, but slow courts help nobody.",
+  "limit": "Don't let it take years while families live in limbo.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0337",
+  "wants": "Landlords shouldn't get to chuck tenants out for no reason.",
+  "limit": "Don't make homeless people wait longer in the queue.",
+  "split": "no"
+ },
+ {
+  "id": "c0747",
+  "wants": "Sort out the courts, I don't care whose side they're on.",
+  "limit": "Don't make my taxes go up for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0256",
+  "wants": "Quicker courts would help renters like me who get stuck.",
+  "limit": "Don't make us pay for landlords' mistakes.",
+  "split": "yes"
+ },
+ {
+  "id": "c0011",
+  "wants": "Whatever's quickest for everyone, I'm not sure who's to blame.",
+  "limit": "Don't let people be thrown out in the street.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0708",
+  "wants": "Courts clearing cases faster, paid for out of general taxes.",
+  "limit": "Don't let rules change so often nobody knows where they stand.",
+  "split": "yes"
+ },
+ {
+  "id": "c0455",
+  "wants": "Landlords need to be able to get their property back.",
+  "limit": "Don't let tenants stop paying and stay for free.",
+  "split": "no"
+ },
+ {
+  "id": "c0263",
+  "wants": "Less fuss, fewer people stuck in court for years.",
+  "limit": "Don't let my council tax rise to pay for courts.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0331",
+  "wants": "Get the backlog cleared so people know where they stand.",
+  "limit": "Don't just throw money at it and waste it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0662",
+  "wants": "Fast-track the easy cases so judges can help people properly.",
+  "limit": "Don't make it harder for tenants to get a fair hearing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0989",
+  "wants": "Renters' homes should be safe, and courts should hear people quickly.",
+  "limit": "Don't let landlords push old people out of their homes.",
+  "split": "yes"
+ },
+ {
+  "id": "c0569",
+  "wants": "Stop landlords evicting people in a rush before the new law.",
+  "limit": "Don't cut legal aid for tenants who need help.",
+  "split": "yes"
+ },
+ {
+  "id": "c0616",
+  "wants": "Ordinary tenants need a say, not just landlords with lawyers.",
+  "limit": "Don't let rich landlords jump the queue in the courts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0697",
+  "wants": "No idea how courts work, but nobody should be homeless.",
+  "limit": "Don't make it take ages for everyone.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0811",
+  "wants": "Landlords who play by the rules should get homes back quickly.",
+  "limit": "Don't reward tenants who stop paying rent.",
+  "split": "no"
+ },
+ {
+  "id": "c0084",
+  "wants": "Courts that are actually staffed properly, paid from taxes.",
+  "limit": "Don't let people be left with nowhere to go.",
+  "split": "yes"
+ },
+ {
+  "id": "c0213",
+  "wants": "Settle things early so the courts aren't flooded.",
+  "limit": "Don't let the courts become a money pit.",
+  "split": "no"
+ },
+ {
+  "id": "c0778",
+  "wants": "Landlords and tenants both need clear rules they can follow.",
+  "limit": "Don't let councils stop building homes to pay for courts.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0483",
+  "wants": "Courts should be faster, I'm skeptical it'll work though.",
+  "limit": "Don't add more tax on young people like me.",
+  "split": "no"
+ },
+ {
+  "id": "c0370",
+  "wants": "Landlords need their properties back when rules allow it.",
+  "limit": "Don't dump court costs on taxpayers who pay nothing.",
+  "split": "no"
+ },
+ {
+  "id": "c0485",
+  "wants": "Tenants should pay what they owe, and landlords get a hearing.",
+  "limit": "Don't waste money on courts that sit empty.",
+  "split": "no"
+ },
+ {
+  "id": "c0257",
+  "wants": "Courts sorting it fast, I suppose, since nobody else is.",
+  "limit": "Don't make my generation pay for the mess.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0983",
+  "wants": "Homes first, so there are fewer court cases in the first place.",
+  "limit": "Don't just patch up courts while housing stays broken.",
+  "split": "no"
+ },
+ {
+  "id": "c0797",
+  "wants": "Taxpayers shouldn't be paying for other people's landlord disputes.",
+  "limit": "Don't stop landlords protecting their own property.",
+  "split": "no"
+ },
+ {
+  "id": "c0529",
+  "wants": "Please don't let anyone my age get put out on the street.",
+  "limit": "Don't make us wait months for a hearing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0793",
+  "wants": "Keep people in their homes, and quick decisions if needed.",
+  "limit": "Don't let it get harder to keep a roof.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0395",
+  "wants": "Renters need protection, and courts that aren't stuck for years.",
+  "limit": "Don't let landlords just throw us out.",
+  "split": "yes"
+ },
+ {
+  "id": "c0939",
+  "wants": "Better courts, and the state should back tenants up.",
+  "limit": "Don't let councils dump the cost on us.",
+  "split": "yes"
+ },
+ {
+  "id": "c0273",
+  "wants": "Clear the backlog, but landlords should still get fair treatment.",
+  "limit": "Don't let more court costs fall on people on benefits.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0843",
+  "wants": "Judges shouldn't be rushed; people's homes are at stake.",
+  "limit": "Don't cut the help older tenants can get.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0661",
+  "wants": "Courts sorted quickly so landlords can plan.",
+  "limit": "Don't let it cost ordinary taxpayers a fortune.",
+  "split": "no"
+ },
+ {
+  "id": "c0796",
+  "wants": "Fair for landlords and tenants, and nobody sleeping in cars.",
+  "limit": "Don't make tenants pay the price for slow courts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0548",
+  "wants": "Courts should work properly, I don't follow the detail.",
+  "limit": "Don't waste public money on new buildings.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0756",
+  "wants": "Quicker decisions for everyone, whoever's right.",
+  "limit": "Don't leave families waiting in limbo for months.",
+  "split": "yes"
+ },
+ {
+  "id": "c0339",
+  "wants": "Courts need staff, and that money should come from fairer taxes.",
+  "limit": "Don't just blame tenants for the backlog.",
+  "split": "yes"
+ },
+ {
+  "id": "c0159",
+  "wants": "Let us have a fair chance in court before we're out.",
+  "limit": "Don't let them evict us over a single missed payment.",
+  "split": "yes"
+ },
+ {
+  "id": "c0745",
+  "wants": "Money into homes and advice, not just courts.",
+  "limit": "Don't let courts be used to push people out.",
+  "split": "no"
+ },
+ {
+  "id": "c0458",
+  "wants": "Settle disputes early, so the courts don't clog up.",
+  "limit": "Don't force people into court when they could talk.",
+  "split": "no"
+ },
+ {
+  "id": "c0584",
+  "wants": "Renters need security and a court that answers in weeks.",
+  "limit": "Don't make tenants homeless to save the court's time.",
+  "split": "yes"
+ },
+ {
+  "id": "c0304",
+  "wants": "Courts should be faster, I guess, but I don't know much.",
+  "limit": "Don't make us pay more tax.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0290",
+  "wants": "Fast courts for tenants too, not just landlords.",
+  "limit": "Don't cut back support for renters while courts grow.",
+  "split": "yes"
+ },
+ {
+  "id": "c0848",
+  "wants": "Fair and quick courts, paid by whoever causes the problem.",
+  "limit": "Don't let councils dump the bills on tenants.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0802",
+  "wants": "Money for housing so there are fewer evictions to fight over.",
+  "limit": "Don't prop up courts while rents keep climbing.",
+  "split": "no"
+ },
+ {
+  "id": "c0121",
+  "wants": "Courts sorted, and landlords who abuse rules should be checked.",
+  "limit": "Don't let tenants be treated like criminals.",
+  "split": "yes"
+ },
+ {
+  "id": "c0144",
+  "wants": "Taxpayers shouldn't fund courts for landlords and tenants.",
+  "limit": "Don't let people stay in homes for free.",
+  "split": "no"
+ },
+ {
+  "id": "c0150",
+  "wants": "Get the backlog down, and the courts should be fully staffed.",
+  "limit": "Don't let more people end up on the street.",
+  "split": "yes"
+ },
+ {
+  "id": "c0441",
+  "wants": "Don't know enough to say. Be fair to people at risk.",
+  "limit": "Don't cut support for families already struggling.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0226",
+  "wants": "Landlords should be able to get their homes back quickly.",
+  "limit": "Don't waste money on judges while roads fall apart.",
+  "split": "no"
+ },
+ {
+  "id": "c0228",
+  "wants": "Renters want fast, fair courts, not endless delays.",
+  "limit": "Don't let landlords use courts to scare tenants.",
+  "split": "yes"
+ },
+ {
+  "id": "c0229",
+  "wants": "Quicker justice for everyone, whichever side wins.",
+  "limit": "Don't just shuffle the cases around.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0250",
+  "wants": "Please help tenants more, before they get to court.",
+  "limit": "Don't leave tenants without advice.",
+  "split": "no"
+ },
+ {
+  "id": "c0182",
+  "wants": "Tenants should have time to find somewhere else.",
+  "limit": "Don't let the courts push people out in a week.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0171",
+  "wants": "Courts sorted out properly, with a fair deal for renters.",
+  "limit": "Don't let rich landlords win just by being quicker.",
+  "split": "yes"
+ },
+ {
+  "id": "c0264",
+  "wants": "Courts need money, but not from pensioners' savings.",
+  "limit": "Don't cut the courts that already work.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0274",
+  "wants": "Faster courts for everyone, with proper judges.",
+  "limit": "Don't let the backlog grow again.",
+  "split": "yes"
+ },
+ {
+  "id": "c0292",
+  "wants": "Clear rules so landlords and tenants know where they stand.",
+  "limit": "Don't leave it all to the courts to sort out.",
+  "split": "no"
+ },
+ {
+  "id": "c0438",
+  "wants": "Put money in before the backlog hits everyone else.",
+  "limit": "Don't cut anything else to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0404",
+  "wants": "Landlords need quicker routes to get properties back.",
+  "limit": "Don't let tenants drag cases out for months.",
+  "split": "no"
+ },
+ {
+  "id": "c0433",
+  "wants": "Renters deserve a fair hearing, and quicker courts too.",
+  "limit": "Don't let landlords cut corners on evictions.",
+  "split": "yes"
+ },
+ {
+  "id": "c0475",
+  "wants": "People shouldn't be thrown out before a hearing.",
+  "limit": "Don't let it cost us in higher taxes.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0490",
+  "wants": "Courts can't keep stalling, landlords need their rights back.",
+  "limit": "Don't cut more of our services to fund it.",
+  "split": "no"
+ },
+ {
+  "id": "c0504",
+  "wants": "More court staff, so tenants aren't left hanging for months.",
+  "limit": "Don't pay for it through council tax.",
+  "split": "yes"
+ },
+ {
+  "id": "c0507",
+  "wants": "Clear the cases, whoever's right, and quickly please.",
+  "limit": "Don't add to the taxes I already pay.",
+  "split": "no"
+ },
+ {
+  "id": "c0511",
+  "wants": "Renters need help getting through court without losing homes.",
+  "limit": "Don't leave tenants alone to pay for lawyers.",
+  "split": "yes"
+ },
+ {
+  "id": "c0537",
+  "wants": "Courts shouldn't be stuck. Speed up the simple cases.",
+  "limit": "Don't let councils jack up rents to cover it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0583",
+  "wants": "Landlords with valid notices should be heard without delay.",
+  "limit": "Don't let it cost the taxpayer a fortune.",
+  "split": "no"
+ },
+ {
+  "id": "c0586",
+  "wants": "More judges for tenants, and landlords who follow the law.",
+  "limit": "Don't cut legal aid to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0614",
+  "wants": "Courts should be quicker, and nobody should be put out.",
+  "limit": "Don't make us old folk pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0621",
+  "wants": "Get the courts sorted so people aren't kicked out for nothing.",
+  "limit": "Don't leave the council to pick up the mess.",
+  "split": "yes"
+ },
+ {
+  "id": "c0625",
+  "wants": "A court that works, paid for by the government's own budget.",
+  "limit": "Don't leave tenants with no lawyer.",
+  "split": "yes"
+ },
+ {
+  "id": "c0650",
+  "wants": "Fast courts, and let the state step in for people in trouble.",
+  "limit": "Don't let the taxman take more.",
+  "split": "yes"
+ },
+ {
+  "id": "c0682",
+  "wants": "Courts clearing cases quicker means fewer families homeless.",
+  "limit": "Don't just move the problem onto councils.",
+  "split": "yes"
+ },
+ {
+  "id": "c0702",
+  "wants": "Courts should be run by people who know the law well.",
+  "limit": "Don't stop landlords getting their own property back.",
+  "split": "no"
+ },
+ {
+  "id": "c0732",
+  "wants": "Landlords should not be bled dry by bad tenants and slow courts.",
+  "limit": "Don't hand out cash to rich councils.",
+  "split": "no"
+ },
+ {
+  "id": "c0736",
+  "wants": "Courts better funded, and tenants given fair time to leave.",
+  "limit": "Don't let landlords get away with bullying.",
+  "split": "yes"
+ },
+ {
+  "id": "c0770",
+  "wants": "Please give tenants time and a proper hearing before eviction.",
+  "limit": "Don't leave old people with nowhere to go.",
+  "split": "yes"
+ },
+ {
+  "id": "c0775",
+  "wants": "More court staff, funded fairly across the country.",
+  "limit": "Don't cut the NHS to pay for judges.",
+  "split": "yes"
+ },
+ {
+  "id": "c0785",
+  "wants": "Landlords and tenants both deserve fair and fast answers.",
+  "limit": "Don't let it drag on for years.",
+  "split": "yes"
+ },
+ {
+  "id": "c0855",
+  "wants": "Quicker courts, but not at the expense of tenants' rights.",
+  "limit": "Don't let landlords get away with rushed notices.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0859",
+  "wants": "Tenants need a real chance to put their case in court.",
+  "limit": "Don't pour money into courts with no plan.",
+  "split": "yes"
+ },
+ {
+  "id": "c0875",
+  "wants": "Courts sorted out. I don't really know the law.",
+  "limit": "Don't make me pay more when I'm out of work.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0899",
+  "wants": "Fast-track the simple cases so the hard ones get proper time.",
+  "limit": "Don't let courts be turned into a conveyor belt.",
+  "split": "yes"
+ },
+ {
+  "id": "c0907",
+  "wants": "I don't know much about this. Just keep people safe.",
+  "limit": "Don't put my pension into court building.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0911",
+  "wants": "Get the courts moving, and landlords get fair treatment.",
+  "limit": "Don't hit people who've already paid their way.",
+  "split": "no"
+ },
+ {
+  "id": "c0945",
+  "wants": "More money for courts is fine if it actually speeds things up.",
+  "limit": "Don't let it be wasted on admin.",
+  "split": "yes"
+ },
+ {
+  "id": "c0955",
+  "wants": "Please don't let them put me out with no notice.",
+  "limit": "Don't make it slower for people my age.",
+  "split": "yes"
+ },
+ {
+  "id": "c0028",
+  "wants": "Tenants should be able to stay until a court has heard them.",
+  "limit": "Don't let it cost council tenants more rent.",
+  "split": "yes"
+ },
+ {
+  "id": "c0077",
+  "wants": "Quicker hearings for tenants, so they're not stuck for months.",
+  "limit": "Don't leave renters to pay for courts through their rent.",
+  "split": "yes"
+ },
+ {
+  "id": "c0081",
+  "wants": "Courts should be quicker, but landlords shouldn't be rushed either.",
+  "limit": "Don't cut pensions to fund it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0097",
+  "wants": "Landlords with genuine need should get possession quickly.",
+  "limit": "Don't let courts go on for ever.",
+  "split": "no"
+ },
+ {
+  "id": "c0101",
+  "wants": "Enough judges to hear the cases, and be done with it.",
+  "limit": "Don't pile more tax on landlords already squeezed.",
+  "split": "no"
+ },
+ {
+  "id": "c0107",
+  "wants": "Keep it fair, and don't rush anyone out of their home.",
+  "limit": "Don't cost us pensioners a penny more.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0123",
+  "wants": "Courts need staff, I suppose, whoever pays for it.",
+  "limit": "Don't cut anything that's working.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0200",
+  "wants": "Tenants like me need time to find somewhere else to live.",
+  "limit": "Don't push old people out into the street.",
+  "split": "yes"
+ },
+ {
+  "id": "c0183",
+  "wants": "Renters need a court that moves faster, but not a rushed one.",
+  "limit": "Don't let landlords get away with rushed evictions.",
+  "split": "yes"
+ },
+ {
+  "id": "c0294",
+  "wants": "Fairness to tenants, and quicker answers for everyone.",
+  "limit": "Don't let councils cut other services.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0452",
+  "wants": "Courts faster, and landlords shouldn't be above the law.",
+  "limit": "Don't let tenants be dragged through court for small debts.",
+  "split": "yes"
+ }
+]

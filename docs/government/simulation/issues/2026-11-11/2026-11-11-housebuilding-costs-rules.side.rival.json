@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Cut stamp duty for homes steered by their residents",
+  "answer": "In this simulation, Parliament should offer stamp duty relief on land bought by resident-owned housing groups. Future residents would elect the board and hire builders through open bids. Relief would depend on published accounts, a completion deadline and resale rules that keep the saving in the homes. Miss those terms and repay the relief. Keep affordable housing duties, safety, quality and green standards. The report models only two developments; that is too narrow a basis for sweeping cuts (s1). Councils should track completion times, prices against local wages and defects. Expand the scheme only if homes arrive sooner, cost less and meet those standards.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat 1d69a05c-ab3c-4491-8ed4-7441f6d355a5"
+}

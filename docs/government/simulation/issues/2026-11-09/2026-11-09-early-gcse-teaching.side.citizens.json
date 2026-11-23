@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0378",
+  "wants": "Less exam panic, more time to find what I'm good at.",
+  "limit": "Don't make school feel even more pointless.",
+  "split": "yes"
+ },
+ {
+  "id": "c0982",
+  "wants": "Make sure children learn the proper subjects first.",
+  "limit": "Don't let schools forget discipline.",
+  "split": "no"
+ },
+ {
+  "id": "c0526",
+  "wants": "Stretch the bright ones; that's how we get ahead.",
+  "limit": "Don't hold back children ready to go on.",
+  "split": "no"
+ },
+ {
+  "id": "c0547",
+  "wants": "Teach discipline and basics first, then exams.",
+  "limit": "Don't let schools use it to dodge the basics.",
+  "split": "no"
+ },
+ {
+  "id": "c0470",
+  "wants": "Schools should explain what they teach and skip.",
+  "limit": "Don't leave poorer schools with the leftovers.",
+  "split": "yes"
+ },
+ {
+  "id": "c0939",
+  "wants": "Kids need skills for the jobs that actually exist.",
+  "limit": "Don't cut the adult training I rely on.",
+  "split": "yes"
+ },
+ {
+  "id": "c0301",
+  "wants": "Children should be taught properly; the old way works.",
+  "limit": "Don't let schools lose their subject choices.",
+  "split": "no"
+ },
+ {
+  "id": "c0193",
+  "wants": "Less cramming, more chance to explore things.",
+  "limit": "Don't drop the basics: reading and writing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0931",
+  "wants": "Less pressure at 11; more time to be a kid.",
+  "limit": "Don't make choices too hard to change later.",
+  "split": "yes"
+ },
+ {
+  "id": "c0354",
+  "wants": "Lessons should connect to real life, not just exams.",
+  "limit": "Don't let my school lose money paying for this.",
+  "split": "yes"
+ },
+ {
+  "id": "c0963",
+  "wants": "Stick to GCSE basics; that's how we compete.",
+  "limit": "Don't waste time on trendy extras.",
+  "split": "no"
+ },
+ {
+  "id": "c0171",
+  "wants": "Kids get ground down by exams; let them breathe.",
+  "limit": "Don't let it fall apart for kids who need help.",
+  "split": "yes"
+ },
+ {
+  "id": "c0489",
+  "wants": "Give kids a proper break from exam pressure.",
+  "limit": "Don't make Year 7 the place where kids give up.",
+  "split": "yes"
+ },
+ {
+  "id": "c0847",
+  "wants": "Get kids into school in the early years first.",
+  "limit": "Don't let it become a bureaucratic mess.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0644",
+  "wants": "Children learn better when they enjoy it.",
+  "limit": "Don't drop exam targets altogether.",
+  "split": "yes"
+ },
+ {
+  "id": "c0643",
+  "wants": "Let kids do more than revise; I'd have liked that.",
+  "limit": "Don't make it another expensive fad.",
+  "split": "yes"
+ },
+ {
+  "id": "c0687",
+  "wants": "Kids need a childhood, not a rush to exams.",
+  "limit": "Don't close the schools in our area.",
+  "split": "yes"
+ },
+ {
+  "id": "c0122",
+  "wants": "Get pupils to turn up; that's the real problem.",
+  "limit": "Don't make my council tax go up for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0232",
+  "wants": "Students should see a point to lessons earlier.",
+  "limit": "Don't let it become another box-ticking exercise.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0627",
+  "wants": "Keep exams where they belong, not starting so young.",
+  "limit": "Don't let standards drop.",
+  "split": "yes"
+ },
+ {
+  "id": "c0693",
+  "wants": "Good teaching, not more tests, please.",
+  "limit": "Don't push struggling children out.",
+  "split": "yes"
+ },
+ {
+  "id": "c0800",
+  "wants": "I'm not sure what's best; just keep kids happy.",
+  "limit": "Don't let it cost teachers their jobs.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0366",
+  "wants": "Stop bunging GCSEs at kids who aren't ready.",
+  "limit": "Don't make it harder for schools to keep teachers.",
+  "split": "yes"
+ },
+ {
+  "id": "c0602",
+  "wants": "Let children learn with nature, art and music too.",
+  "limit": "Don't push working-class kids out of the good stuff.",
+  "split": "yes"
+ },
+ {
+  "id": "c0823",
+  "wants": "Stop exams getting in the way of learning.",
+  "limit": "Don't leave the struggling kids behind.",
+  "split": "yes"
+ },
+ {
+  "id": "c0593",
+  "wants": "I'm not sure; keep standards high either way.",
+  "limit": "Don't make it a guessing game for parents.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0659",
+  "wants": "Teach children respect for elders and each other.",
+  "limit": "Don't forget reading, writing and sums.",
+  "split": "no"
+ },
+ {
+  "id": "c0539",
+  "wants": "School should be about learning, not league tables.",
+  "limit": "Don't let the poorest schools get worse.",
+  "split": "yes"
+ },
+ {
+  "id": "c0306",
+  "wants": "Kids should learn to think, not memorise for exams.",
+  "limit": "Don't make school more expensive for families.",
+  "split": "yes"
+ },
+ {
+  "id": "c0785",
+  "wants": "Less grinding through exam papers from Year 7.",
+  "limit": "Don't close the library and sports.",
+  "split": "yes"
+ },
+ {
+  "id": "c0769",
+  "wants": "Schools should help kids find what they're good at.",
+  "limit": "Don't cut the teachers who help the rest.",
+  "split": "yes"
+ },
+ {
+  "id": "c0342",
+  "wants": "Make sure kids are ready for real work, sooner.",
+  "limit": "Don't drop maths or English to make room.",
+  "split": "no"
+ },
+ {
+  "id": "c0041",
+  "wants": "Children should learn to read, write and add up.",
+  "limit": "Don't dump new rules on schools with no money.",
+  "split": "no"
+ },
+ {
+  "id": "c0146",
+  "wants": "Less pressure and more practical skills, like trades.",
+  "limit": "Don't cut the technical courses we have.",
+  "split": "yes"
+ },
+ {
+  "id": "c0997",
+  "wants": "Less cramming; more chance to learn how things work.",
+  "limit": "Don't let it cost my kids their GCSEs.",
+  "split": "yes"
+ },
+ {
+  "id": "c0655",
+  "wants": "Make school about curiosity, not grades alone.",
+  "limit": "Don't leave kids with no qualifications at all.",
+  "split": "yes"
+ },
+ {
+  "id": "c0760",
+  "wants": "Standards first; kids need to be stretched.",
+  "limit": "Don't let Whitehall decide everything.",
+  "split": "no"
+ },
+ {
+  "id": "c0795",
+  "wants": "School should be more than exam prep.",
+  "limit": "Don't make Wales's schools worse off.",
+  "split": "yes"
+ },
+ {
+  "id": "c0259",
+  "wants": "Make sure children behave and learn the basics.",
+  "limit": "Don't hand teachers another job to do.",
+  "split": "no"
+ },
+ {
+  "id": "c0586",
+  "wants": "Schools need to change; GCSE-first is too narrow.",
+  "limit": "Don't give schools a bill they can't pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0678",
+  "wants": "I want to know why I'm learning what I learn.",
+  "limit": "Don't make the pressure worse for us.",
+  "split": "yes"
+ },
+ {
+  "id": "c0977",
+  "wants": "Let schools choose their own way; they know best.",
+  "limit": "Don't let government set everything.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0557",
+  "wants": "Stop cramming GCSEs in before kids can cope.",
+  "limit": "Don't let it end up weaker for everyone.",
+  "split": "yes"
+ },
+ {
+  "id": "c0794",
+  "wants": "Keep proper discipline and exams as they are.",
+  "limit": "Don't send children off to do extra stuff.",
+  "split": "no"
+ },
+ {
+  "id": "c0748",
+  "wants": "Make sure my kids get the top GCSEs they need.",
+  "limit": "Don't let schools dumb it down.",
+  "split": "no"
+ },
+ {
+  "id": "c0203",
+  "wants": "Schools should teach things that build character.",
+  "limit": "Don't make it cost more than schools have.",
+  "split": "yes"
+ },
+ {
+  "id": "c0093",
+  "wants": "Children need time to be children before exams.",
+  "limit": "Don't forget the poorest pupils in all this.",
+  "split": "yes"
+ },
+ {
+  "id": "c0991",
+  "wants": "Teach children something useful, like money and work.",
+  "limit": "Don't drop maths.",
+  "split": "yes"
+ },
+ {
+  "id": "c0943",
+  "wants": "Stop judging 12-year-olds by one exam.",
+  "limit": "Don't let the poorest kids lose out.",
+  "split": "yes"
+ },
+ {
+  "id": "c0614",
+  "wants": "Children need reading and manners above all else.",
+  "limit": "Don't let the schools near me close.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0018",
+  "wants": "Get the children into school and keep them coming.",
+  "limit": "Don't make teachers work even longer hours.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0848",
+  "wants": "Let schools keep exams and prepare kids well.",
+  "limit": "Don't cut the tutors for the hard cases.",
+  "split": "no"
+ },
+ {
+  "id": "c0286",
+  "wants": "Standards have slipped; get exams back on track.",
+  "limit": "Don't waste pupils' time with fads.",
+  "split": "no"
+ },
+ {
+  "id": "c0085",
+  "wants": "Stop testing kids to death from age eleven.",
+  "limit": "Don't close the lessons they actually enjoy.",
+  "split": "yes"
+ },
+ {
+  "id": "c0535",
+  "wants": "Get pupils into proper trades, not endless theory.",
+  "limit": "Don't scrap the workshops and technical kit.",
+  "split": "yes"
+ },
+ {
+  "id": "c0029",
+  "wants": "Get proper GCSE grades back and firm discipline in class.",
+  "limit": "Don't let schools turn into social workers.",
+  "split": "no"
+ },
+ {
+  "id": "c0959",
+  "wants": "Keep kids interested; exams come soon enough.",
+  "limit": "Don't let teachers burn out over this.",
+  "split": "yes"
+ },
+ {
+  "id": "c0125",
+  "wants": "Let schools teach the whole child, not just grades.",
+  "limit": "Don't leave children in tough areas with worse schools.",
+  "split": "yes"
+ },
+ {
+  "id": "c0716",
+  "wants": "Exams and discipline; that's what worked for us.",
+  "limit": "Don't make it a soft option.",
+  "split": "no"
+ },
+ {
+  "id": "c0725",
+  "wants": "Keep GCSEs strong; it's the main thing.",
+  "limit": "Don't spend money on curriculum fads.",
+  "split": "no"
+ },
+ {
+  "id": "c0691",
+  "wants": "Get children reading and out of trouble.",
+  "limit": "Don't give teachers more paperwork.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0626",
+  "wants": "Kids should be ready for GCSEs when they reach them.",
+  "limit": "Don't cut what makes school worth going to.",
+  "split": "no"
+ },
+ {
+  "id": "c0923",
+  "wants": "Give kids a fairer chance, not just a grade race.",
+  "limit": "Don't let it leave the poorest schools behind.",
+  "split": "yes"
+ },
+ {
+  "id": "c0549",
+  "wants": "Give us time to find out what we like.",
+  "limit": "Don't shut doors on subjects before we're 14.",
+  "split": "yes"
+ },
+ {
+  "id": "c0493",
+  "wants": "Stop the exam race; let children learn at their pace.",
+  "limit": "Don't push tuition onto families who can't pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0951",
+  "wants": "Less exam pressure; more teaching how to live.",
+  "limit": "Don't make the school day longer for us.",
+  "split": "yes"
+ },
+ {
+  "id": "c0166",
+  "wants": "Stop pushing GCSEs so hard on the youngest ones.",
+  "limit": "Don't make it harder to get a job afterwards.",
+  "split": "yes"
+ },
+ {
+  "id": "c0389",
+  "wants": "Make school less stressful; I was miserable at 13.",
+  "limit": "Don't push kids into dropping options too early.",
+  "split": "yes"
+ },
+ {
+  "id": "c0414",
+  "wants": "Schools should tell parents how the early years go.",
+  "limit": "Don't make parents do more paperwork.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0230",
+  "wants": "Keep the exams; they're the only thing employers check.",
+  "limit": "Don't give teachers less time to teach.",
+  "split": "no"
+ },
+ {
+  "id": "c0270",
+  "wants": "Let younger kids try things, not just study for tests.",
+  "limit": "Don't leave my school with fewer teachers.",
+  "split": "yes"
+ },
+ {
+  "id": "c0973",
+  "wants": "Children need discipline and tests to know where they stand.",
+  "limit": "Don't let it turn into mush.",
+  "split": "no"
+ },
+ {
+  "id": "c0478",
+  "wants": "Stop early exam tracks that lock kids out later.",
+  "limit": "Don't drop the clever kids from proper challenge.",
+  "split": "yes"
+ },
+ {
+  "id": "c0610",
+  "wants": "Make school about what works in real life.",
+  "limit": "Don't waste teachers' time on new forms.",
+  "split": "yes"
+ },
+ {
+  "id": "c0932",
+  "wants": "Put discipline and exams back in early.",
+  "limit": "Don't waste money on talking shops.",
+  "split": "no"
+ },
+ {
+  "id": "c0150",
+  "wants": "Children should enjoy learning, not fear the next test.",
+  "limit": "Don't make school feel like a factory.",
+  "split": "yes"
+ },
+ {
+  "id": "c0002",
+  "wants": "Teach me things I'll use at work, not just exam stuff.",
+  "limit": "Don't cut music or art to fit it in.",
+  "split": "yes"
+ },
+ {
+  "id": "c0405",
+  "wants": "Keep school strict and sensible, like it was.",
+  "limit": "Don't let schools stop teaching the classics.",
+  "split": "no"
+ },
+ {
+  "id": "c0816",
+  "wants": "Young people need jobs; teach them trades.",
+  "limit": "Don't let schools lose the exams that get jobs.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0042",
+  "wants": "Kids should be ready for exams; that's what school is for.",
+  "limit": "Don't let it become a talking shop for politicians.",
+  "split": "no"
+ },
+ {
+  "id": "c0144",
+  "wants": "Hard exams early keep standards up; keep it that way.",
+  "limit": "Don't let standards slip for my grandchildren.",
+  "split": "no"
+ },
+ {
+  "id": "c0422",
+  "wants": "Kids need to be in class and happy there.",
+  "limit": "Don't make schools pick between exams and wellbeing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0843",
+  "wants": "Good manners and sums; that's what matters.",
+  "limit": "Don't rush children out of their childhood.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0676",
+  "wants": "Put the money into teachers, not new schemes.",
+  "limit": "Don't make heads sign off another scheme.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0080",
+  "wants": "Teach us what jobs need, not endless theory.",
+  "limit": "Don't copy England's rules just because they changed.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0188",
+  "wants": "Children need reading and proper care at school.",
+  "limit": "Don't push children out for being behind.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0117",
+  "wants": "Kids should see why maths and English matter outside school.",
+  "limit": "Don't let schools use this to skip hard subjects.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0025",
+  "wants": "Sort out kids skipping school before anything else.",
+  "limit": "Don't add a new test that costs money.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0374",
+  "wants": "Children need a good mix of learning and play.",
+  "limit": "Don't rip out what's already working.",
+  "split": "yes"
+ },
+ {
+  "id": "c0924",
+  "wants": "Let kids enjoy school and learn at their own speed.",
+  "limit": "Don't let schools forget the basics.",
+  "split": "yes"
+ },
+ {
+  "id": "c0170",
+  "wants": "Give kids a broader education, not just a grade chase.",
+  "limit": "Don't let it turn into a postcode lottery.",
+  "split": "yes"
+ },
+ {
+  "id": "c0309",
+  "wants": "Give parents clear answers on what's taught and why.",
+  "limit": "Don't let schools hide what they're doing.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0110",
+  "wants": "Keep discipline and proper teaching in every class.",
+  "limit": "Don't spend money on schemes that go nowhere.",
+  "split": "no"
+ },
+ {
+  "id": "c0206",
+  "wants": "School should prepare you for life, not just tests.",
+  "limit": "Don't cut support for kids with special needs.",
+  "split": "yes"
+ },
+ {
+  "id": "c0338",
+  "wants": "Kids need discipline and the fundamentals first.",
+  "limit": "Don't leave the lads who struggle behind.",
+  "split": "no"
+ },
+ {
+  "id": "c0713",
+  "wants": "Children should have time for music and hobbies.",
+  "limit": "Don't let schools lose the arts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0055",
+  "wants": "Make sure my child knows what GCSEs need, early on.",
+  "limit": "Don't take away the top sets.",
+  "split": "no"
+ },
+ {
+  "id": "c0139",
+  "wants": "My son is bored and anxious; give him time to learn.",
+  "limit": "Don't stop the extra help he gets now.",
+  "split": "yes"
+ },
+ {
+  "id": "c0845",
+  "wants": "Let kids try different subjects before choosing.",
+  "limit": "Don't close routes for those who want exams.",
+  "split": "yes"
+ },
+ {
+  "id": "c0738",
+  "wants": "Teach kids to cope, not just cram for tests.",
+  "limit": "Don't cut support for disabled children.",
+  "split": "yes"
+ }
+]

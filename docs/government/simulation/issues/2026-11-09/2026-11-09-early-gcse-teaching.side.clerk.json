@@ -1,0 +1,12 @@
+{"split_question": "Should schools in England be stopped from starting GCSE courses before Year 10?",
+ "angles": ["a firm rule on when GCSE teaching may begin", "leave it to each school but publish what they do and why", "change what the early years are for: attendance, reading, enrichment, wider skills"],
+ "facts_for_writers": [
+  "The Department for Education says persistent absence almost doubles between Years 7 and 9, rising to one in four children, and is 75% higher in secondary than primary for white working-class pupils (s1).",
+  "The department says schools should not start GCSE specifications early for large cohorts or routinely narrow options earlier, but teachers can still stretch high-achieving pupils; the page gives no consultation, cost or start date (s1).",
+  "In a survey of 810 teachers in England commissioned by the International Baccalaureate, 57% would keep GCSE preparation central and give Key Stage 3 a clearer identity, 26% want more weight on skills and character, and 14% want a separate curriculum (s2).",
+  "In the same research, 36% of pupils could see how their learning related to life beyond exams in most or all lessons, and 2% of teachers thought the current approach satisfactory (s2).",
+  "The school leaders' body ASCL said on 9 November that extra expectations on schools would need significant investment or risk diluting existing provision (s3)."
+ ],
+ "extra_sources": [
+  {"id": "s3", "title": "Leaders warn government not to pile Neet work on schools", "publisher": "Tes", "date": "2026-11-09", "url": "https://www.tes.com/magazine/news/general/leaders-warn-government-not-pile-neet-work-schools"}
+ ]}

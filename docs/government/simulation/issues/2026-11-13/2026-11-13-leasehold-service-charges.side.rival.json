@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Let flat owners steer the bills and share the fight",
+  "answer": "In this simulation, Parliament should start cost protections on 1 February 2027, ahead of the announced April start [s1]. Landlords must pay their own lawyers, without adding those costs to service charges. Leaseholders who win should recover reasonable costs. Each building should elect a leaseholder committee to inspect invoices and approve planned spending, with urgent safety repairs exempt. Committees could pool money for independent advice. Landlords should provide one simple account, with receipts available on request. No one should lose their home for withholding a disputed sum held safely until the ruling. After a year, measure corrected bills, dispute times and leaseholders’ unrecovered costs.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat e0ec231c-1fc4-43a7-b5ab-588eab8e485c"
+}

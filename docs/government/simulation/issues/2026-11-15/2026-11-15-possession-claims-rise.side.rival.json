@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "SIMULATION: Local settlement desks, paid for by landlords",
+  "answer": "Claims rose 21% in July to September (s1). In this simulation, landlords would fund local settlement desks through a charge on each rented home, barred from being added to rent. Local tenants and landlords would elect equal numbers to steer each desk and hire independent advisers. Tenants could seek a voluntary payment plan or agreed moving date, with advice of their own. Refusing a deal would not weaken anyone's right to a court hearing. Landlords would carry the financial wait; tenants would stay until lawful eviction. After six months, measure court waiting times, agreements kept and homelessness after cases. Publish the results locally.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat 7ea39812-167a-4da5-9ca7-d6ba3989a9c8"
+}

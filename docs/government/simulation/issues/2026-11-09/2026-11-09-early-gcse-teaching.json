@@ -1,0 +1,527 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-09-early-gcse-teaching",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "published",
+  "run": {
+    "mode": "replay",
+    "run_date": "2026-11-23",
+    "news_date": "2026-11-09",
+    "replay_stamp": "Replayed on 23 Nov 2026 from the news of 9 Nov 2026"
+  },
+  "issue": {
+    "title": "Early secondary school: GCSE courses or a broader curriculum?",
+    "short": "KEY STAGE 3",
+    "question": "Should the first three years of secondary school be for GCSE preparation, or for something wider, and who decides?",
+    "summary": "On 8 November 2026 the Department for Education said Key Stage 3 will be restored as a distinct three-year phase of the National Curriculum, with schools told not to start GCSE courses early for large groups or routinely narrow options earlier (s1). The department says persistent absence almost doubles between Years 7 and 9, rising to one in four children, and that some schools start GCSE teaching as early as Year 7 (s1). A survey of 810 teachers in England, commissioned by the International Baccalaureate, found 57% named GCSE preparation as a leading influence on Key Stage 3 (s2). The full new National Curriculum is due later in 2026 (s1).",
+    "summary_sources": [
+      "s1",
+      "s2"
+    ],
+    "field": "school-curriculum",
+    "owner": "education",
+    "slot": "longest-wait",
+    "slot_reason": "Rule 2: the field \"school-curriculum\" has never run in the simulation, and this weight-2 UK item was in the news of 9 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+    "news": [
+      {
+        "headline": "Government restores Key Stage 3 as a distinct phase in curriculum overhaul",
+        "memory_id": "33859158-9d10-4a06-8fd6-0d1338dcc649",
+        "sources": [
+          "s1"
+        ]
+      }
+    ]
+  },
+  "poll": {
+    "pollster": "PF Global (for the International Baccalaureate)",
+    "fieldwork": "May to September 2026 (published 13 Oct 2026)",
+    "sample": "810 teachers and teaching assistants in England; 2,090 pupils aged 11 to 18; 743 parents with Key Stage 3 experience",
+    "finding": "57% of teachers said GCSE preparation is a leading influence on Key Stage 3. Among teachers, 57% would keep GCSE preparation central and give Key Stage 3 a clearer identity, 26% would put more weight on skills, character and wider development, and 14% want a distinct curriculum with aims separate from GCSE preparation. Parents: about a quarter said GCSE preparation is now the main purpose of these years, but 11% said it should be the priority. The page gives 56% in one place and 57% in another for the keep-GCSE-central option, and does not show exact question wording. The study was commissioned by the International Baccalaureate.",
+    "real_share": null,
+    "sources": [
+      "s2"
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Curriculum overhaul to re-engage pupils in vital early secondary years",
+      "publisher": "GOV.UK (Department for Education)",
+      "date": "2026-11-08",
+      "url": "https://www.gov.uk/government/news/curriculum-overhaul-to-re-engage-pupils-in-vital-early-secondary-years"
+    },
+    {
+      "id": "s2",
+      "title": "Education's Overlooked Middle Child: Reclaiming Key Stage 3",
+      "publisher": "PF Global (for the International Baccalaureate)",
+      "date": "2026-10-13",
+      "url": "https://pf.global/insights/reclaiming-key-stage-3"
+    },
+    {
+      "id": "s3",
+      "title": "Leaders warn government not to pile Neet work on schools",
+      "publisher": "Tes",
+      "date": "2026-11-09",
+      "url": "https://www.tes.com/magazine/news/general/leaders-warn-government-not-pile-neet-work-schools"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "sim-clerk",
+      "sim-citizens",
+      "sim-bench",
+      "sim-gate",
+      "sim-jury",
+      "sim-minister"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-09-early-gcse-teaching/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0378",
+      "c0982",
+      "c0526",
+      "c0547",
+      "c0470",
+      "c0939",
+      "c0301",
+      "c0193",
+      "c0931",
+      "c0354",
+      "c0963",
+      "c0171",
+      "c0489",
+      "c0847",
+      "c0644",
+      "c0643",
+      "c0687",
+      "c0122",
+      "c0232",
+      "c0627",
+      "c0693",
+      "c0800",
+      "c0366",
+      "c0602",
+      "c0823",
+      "c0593",
+      "c0659",
+      "c0539",
+      "c0306",
+      "c0785",
+      "c0769",
+      "c0342",
+      "c0041",
+      "c0146",
+      "c0997",
+      "c0655",
+      "c0760",
+      "c0795",
+      "c0259",
+      "c0586",
+      "c0678",
+      "c0977",
+      "c0557",
+      "c0794",
+      "c0748",
+      "c0203",
+      "c0093",
+      "c0991",
+      "c0943",
+      "c0614",
+      "c0018",
+      "c0848",
+      "c0286",
+      "c0085",
+      "c0535",
+      "c0029",
+      "c0959",
+      "c0125",
+      "c0716",
+      "c0725",
+      "c0691",
+      "c0626",
+      "c0923",
+      "c0549",
+      "c0493",
+      "c0951",
+      "c0166",
+      "c0389",
+      "c0414",
+      "c0230",
+      "c0270",
+      "c0973",
+      "c0478",
+      "c0610",
+      "c0932",
+      "c0150",
+      "c0002",
+      "c0405",
+      "c0816",
+      "c0042",
+      "c0144",
+      "c0422",
+      "c0843",
+      "c0676",
+      "c0080",
+      "c0188",
+      "c0117",
+      "c0025",
+      "c0374",
+      "c0924",
+      "c0170",
+      "c0309",
+      "c0110",
+      "c0206",
+      "c0338",
+      "c0713",
+      "c0055",
+      "c0139",
+      "c0845",
+      "c0738"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "Fewer children fall behind or stop coming to school in Years 7 to 9.",
+        "backers": 17
+      },
+      {
+        "kind": "test",
+        "text": "Children learn skills and things that matter beyond exams.",
+        "backers": 32
+      },
+      {
+        "kind": "test",
+        "text": "Schools stop rushing GCSE courses into the early years.",
+        "backers": 33
+      },
+      {
+        "kind": "test",
+        "text": "Parents get plain information on what their school teaches.",
+        "backers": 7
+      },
+      {
+        "kind": "limit",
+        "text": "Schools don't lose subjects, staff or money to pay for it.",
+        "backers": 33
+      },
+      {
+        "kind": "limit",
+        "text": "Exam standards and the basics stay in place.",
+        "backers": 44
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0002",
+        "who": "23, North West, employed, owns outright",
+        "text": "Teach me things I'll use at work, not just exam stuff. Don't cut music or art to fit it in."
+      },
+      {
+        "citizen": "c0029",
+        "who": "55, Yorkshire and The Humber, employed, owns outright",
+        "text": "Get proper GCSE grades back and firm discipline in class. Don't let schools turn into social workers."
+      },
+      {
+        "citizen": "c0144",
+        "who": "54, East of England, employed, owns with a mortgage",
+        "text": "Hard exams early keep standards up; keep it that way. Don't let standards slip for my grandchildren."
+      },
+      {
+        "citizen": "c0139",
+        "who": "41, London, looking after home and family, owns outright",
+        "text": "My son is bored and anxious; give him time to learn. Don't stop the extra help he gets now."
+      },
+      {
+        "citizen": "c0816",
+        "who": "45, South West, unemployed, rents from a social landlord",
+        "text": "Young people need jobs; teach them trades. Don't let schools lose the exams that get jobs."
+      },
+      {
+        "citizen": "c0939",
+        "who": "51, London, unemployed, rents from a social landlord",
+        "text": "Kids need skills for the jobs that actually exist. Don't cut the adult training I rely on."
+      }
+    ]
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Turn the Key Stage 3 rule into an inspected, funded promise",
+      "answer": "The Department for Education has told schools not to start GCSE courses early for large groups or routinely narrow options, but gives no cost, start date or check (s1). Change it: the department adds a ring-fenced grant, so no school pays by cutting subjects or staff, which school leaders warn is the risk without investment (s3). The school inspectorate then checks, in every secondary inspection, how many pupils start GCSEs before Year 10 and whether options narrowed. Each school publishes its Year 7 to 9 timetable and absence rate in plain words. It worked if early starts fall and Year 7 to 9 persistent absence, one in four by Year 9 (s1), stops rising.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Let each school's local panel decide what Years 7 to 9 are for",
+      "answer": "Instead of the Department for Education setting one rule from the centre (s1), each secondary school's governing body adds a panel drawn by lot from its teachers, parents and Year 7 to 9 pupils. The panel signs off a published three-year plan, including whether any GCSE teaching starts early. That moves the choice away from exam pressure, which 57% of surveyed teachers named a leading influence (s2). The department funds the panels' time, as school leaders warn extra duties without investment risk diluting provision (s3). It worked if absence, which the department says reaches one in four children by Year 9 (s1), falls, and more than 36% of pupils see learning's link beyond exams (s2).",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Three broad years, steered by families and teachers",
+      "answer": "In this simulation, Years 7 to 9 would offer broad learning, following the department’s call to stop routine early GCSE courses (s1). Each school would elect a council of pupils, parents and teachers to agree its teaching plan. Families would hold most seats; businesses could advise but buy no votes. The plan must protect reading, maths, science, arts, staff and existing support. Schools would publish a plain yearly account of lessons, spending and results. After three years, success would mean better attendance, fewer children behind in reading and maths, subjects retained, and more pupils able to show useful work beyond exam practice. Later GCSE results would check that standards held.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "Fewer fall behind or stop attending",
+        "result": "unclear",
+        "note": "It tracks absence and early starts, but no source shows an inspection or grant would cut absence.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Skills that matter beyond exams",
+        "result": "unclear",
+        "note": "Publishing timetables and checking option narrowing helps breadth, but skills beyond exams are not measured.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "No rushed GCSE courses early",
+        "result": "pass",
+        "note": "Inspectors counting pre-Year-10 GCSE starts directly tests the rule the department set but did not check.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Parents get plain information",
+        "result": "pass",
+        "note": "no source needed: logic. Each school publishes its Year 7 to 9 timetable and absence rate in plain words.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Limit: no loss of subjects, staff, money",
+        "result": "pass",
+        "note": "A ring-fenced grant answers the warning that extra duties without investment risk diluting provision.",
+        "sources": [
+          "s3"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Limit: exam standards and basics stay",
+        "result": "unclear",
+        "note": "Nothing in it touches exam standards or the basics, so they stay by default, but it does not say so.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Fewer fall behind or stop attending",
+        "result": "unclear",
+        "note": "Absence is its stated measure, but no source shows local panels cut absence.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Skills that matter beyond exams",
+        "result": "unclear",
+        "note": "It names pupils seeing life beyond exams (36% now) as a measure, but panels may or may not choose it.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "No rushed GCSE courses early",
+        "result": "unclear",
+        "note": "Each panel decides whether GCSE teaching starts early, so rushed courses could stay in some schools.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Parents get plain information",
+        "result": "pass",
+        "note": "no source needed: logic. The panel signs off a published three-year plan.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Limit: no loss of subjects, staff, money",
+        "result": "unclear",
+        "note": "The department funds panel time, but panels could choose to trade subjects or staff.",
+        "sources": [
+          "s3"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Limit: exam standards and basics stay",
+        "result": "unclear",
+        "note": "Standards are left to each panel; the plan does not say what protects them.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Fewer fall behind or stop attending",
+        "result": "unclear",
+        "note": "Attendance and reading and maths are named measures, but no source shows a school council changes them.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Skills that matter beyond exams",
+        "result": "pass",
+        "note": "no source needed: logic. The plan must protect arts and asks for useful work beyond exam practice.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "No rushed GCSE courses early",
+        "result": "pass",
+        "note": "It follows the department's line against routine early GCSE courses.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Parents get plain information",
+        "result": "pass",
+        "note": "no source needed: logic. Schools publish a yearly plain account of lessons, spending and results.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: no loss of subjects, staff, money",
+        "result": "pass",
+        "note": "no source needed: logic. The plan must protect subjects, staff and existing support; who pays for it is not said.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: exam standards and basics stay",
+        "result": "pass",
+        "note": "no source needed: logic. Reading, maths and science are protected and later GCSE results check standards.",
+        "sources": []
+      }
+    ],
+    "verdict": "Two of three pass the limits plainly (A on money, C on subjects and standards); none shows it would cut absence, because no source tests that. Facts cannot settle who should decide what Years 7 to 9 are for.",
+    "to_jury": true,
+    "rejected_claims": []
+  },
+  "jury": {
+    "seed": "2026-11-09-early-gcse-teaching/jury",
+    "size": 12,
+    "ids": [
+      "c0556",
+      "c0640",
+      "c0313",
+      "c0468",
+      "c0623",
+      "c0010",
+      "c0817",
+      "c0308",
+      "c0392",
+      "c0727",
+      "c0540",
+      "c0051"
+    ],
+    "model": "claude-sonnet-5-5",
+    "question": "Who should decide what Years 7 to 9 are for: the government, the inspectors, or each school's own families and teachers?",
+    "options": [
+      "Government keeps the rule, with inspection and a funded grant",
+      "Each school's families and teachers decide, in the open",
+      "Elected school councils with a family majority, plus a national floor",
+      "Leave schools alone and let parents choose between them"
+    ],
+    "votes": [
+      2,
+      5,
+      3,
+      2
+    ],
+    "ruling": "Each school's families and teachers decide, in the open. Five of the twelve jurors wanted the choice made by the people in the building, with plans and results published.",
+    "reasons": [
+      {
+        "juror": "c0556",
+        "text": "I studied late and wish someone had asked what the early years were for. Let the school say, in the open."
+      },
+      {
+        "juror": "c0623",
+        "text": "Keep the rule. In my day the exam board set it and it held. Add the money so nobody loses subjects."
+      },
+      {
+        "juror": "c0817",
+        "text": "Councils and panels are more committees. Parents should pick a school and leave when it lets them down."
+      },
+      {
+        "juror": "c0640",
+        "text": "Families should have the majority, but a national floor stops some schools doing nothing at all."
+      }
+    ],
+    "review": "2027-11-23",
+    "real_jury": false
+  },
+  "minister": {
+    "post": "education",
+    "decision": "signed",
+    "trial": "In 10 secondary schools that now start GCSE courses before Year 10, a panel of teachers, parents and Year 7 to 9 pupils, drawn by lot, signs off a published three-year plan for Years 7 to 9. The department funds the panel's time. Plans, timetables and absence rates are public.",
+    "fail_number": "Persistent absence in Years 7 to 9 in the 10 schools rising above their own 2026 rate (target: lower), or any school dropping a subject or cutting staff to fund the plan (target: none).",
+    "stop": "2027-07-31",
+    "statement": "Quick quiz. Who knows best what Years 7 to 9 are for: the exam board, the department, or the people in the building? The jury leaned to the building. Five of twelve, not a landslide. So I'm signing one small thing. Ten schools, a panel drawn by lot, a plan on the school's own door. The department pays for the time, so nobody robs music to do it. The trade-off: some panels may pick the exam treadmill anyway. If they do, they have to say why, out loud."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "answer": "issue",
+      "claim": "The Department for Education publishes the full new National Curriculum on GOV.UK by 22 January 2027.",
+      "prior": 0.6,
+      "due": "2027-01-22",
+      "rule": "True if a GOV.UK page publishes the full new National Curriculum text dated on or before 22 January 2027. False if only drafts, summaries or consultations are out by then.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "answer": "issue",
+      "claim": "The published Key Stage 3 curriculum text says schools should not start GCSE specifications early for large cohorts.",
+      "prior": 0.7,
+      "due": "2027-03-31",
+      "rule": "True if the published National Curriculum or its guidance on GOV.UK keeps the wording that schools should not start GCSE specifications early for large cohorts, by 31 March 2027. False if dropped or not yet published.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    }
+  ]
+}

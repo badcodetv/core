@@ -1,0 +1,17 @@
+{
+ "split_question": "Should the free National Care Service be paid for by changing the Triple Lock on pensions?",
+ "angles": [
+  "yes, change the Triple Lock, but protect the poorest pensioners",
+  "no, pay for care another way and leave pensions alone",
+  "start with neighbourhood home care now and settle how to pay later"
+ ],
+ "facts_for_writers": [
+  "The government says reorganising home care visits into geographical zones \"could potentially deliver the same care with 35% less staff time and 65% less driving\", from a study of six providers in Bristol. [s1]",
+  "The government says a fully funded National Care Service giving free personal care for older people, based on need rather than ability to pay, will be set up in the next Parliament and \"will be funded by changes to the triple lock pension\". [s1]",
+  "The government is making an additional £4.6 billion available for local councils in 2028 to 2029 compared with 2025 to 2026, and says it is establishing the first ever fair pay agreement for care workers. [s1]",
+  "New guidance and toolkits for councils moving to neighbourhood-based home care are due in the spring. [s1]",
+  "In a YouGov poll of 4,503 GB adults on 29 September 2026, a free national care service had 74% support and 11% oppose, and changing the Triple Lock to help fund it had 48% support and 28% oppose. [s2]"
+ ],
+ "extra_sources": [],
+ "notes": "The Bristol study figures are the government's own wording of a study; the study itself was not opened. The LBC and BMA pages on the GP scheme were not opened and are not used. The poll is 29 Sep 2026, about six weeks before the news date, kept because it is the most recent found on this exact question. Its page does not give don't-know figures for the Triple Lock question; real_share 0.48 is the support share as reported."
+}

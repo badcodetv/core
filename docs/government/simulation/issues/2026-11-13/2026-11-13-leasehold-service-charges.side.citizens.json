@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0726",
+  "wants": "Clear bills I can check before I pay them.",
+  "limit": "Small landlords shouldn't be buried in forms and costs.",
+  "split": "no"
+ },
+ {
+  "id": "c0138",
+  "wants": "Landlords stop charging us for their court fights.",
+  "limit": "Don't make us pay more to fix the paperwork.",
+  "split": "yes"
+ },
+ {
+  "id": "c0989",
+  "wants": "I don't really know about flats and service charges.",
+  "limit": "Don't let rents rise to pay for all this.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0045",
+  "wants": "Start now, not in two years. People are being ripped off.",
+  "limit": "Don't let the council waste money on lawyers.",
+  "split": "yes"
+ },
+ {
+  "id": "c0022",
+  "wants": "Landlords should pay their own lawyers, full stop.",
+  "limit": "Don't let new rules mean more rent for us.",
+  "split": "yes"
+ },
+ {
+  "id": "c0051",
+  "wants": "Fix the bills themselves, not just the forms.",
+  "limit": "Small landlords shouldn't drown in admin costs.",
+  "split": "yes"
+ },
+ {
+  "id": "c0003",
+  "wants": "Not sure this covers me in Scotland.",
+  "limit": "Don't let rents go up for renters.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0662",
+  "wants": "Landlords should stop billing us for their legal fights.",
+  "limit": "Start the rules sooner, not in 2028.",
+  "split": "yes"
+ },
+ {
+  "id": "c0277",
+  "wants": "Stop officials filling in forms nobody reads.",
+  "limit": "Landlords who own the building keep their rights.",
+  "split": "no"
+ },
+ {
+  "id": "c0911",
+  "wants": "Too many rules. Service charges are a private matter.",
+  "limit": "Don't force landlords to publish accounts they can't afford.",
+  "split": "no"
+ },
+ {
+  "id": "c0649",
+  "wants": "Fair bills, with proof the work was actually done.",
+  "limit": "Don't push costs onto small landlords.",
+  "split": "no"
+ },
+ {
+  "id": "c0056",
+  "wants": "Landlords pay their own fights. Simple.",
+  "limit": "Don't let us get evicted over bills.",
+  "split": "yes"
+ },
+ {
+  "id": "c0511",
+  "wants": "Bills should be checked before we pay them.",
+  "limit": "Don't make renters pay for landlord paperwork.",
+  "split": "yes"
+ },
+ {
+  "id": "c0160",
+  "wants": "Start soon, we've waited ages.",
+  "limit": "No new costs landing on tenants.",
+  "split": "yes"
+ },
+ {
+  "id": "c0731",
+  "wants": "Cap what they charge, it goes up every year.",
+  "limit": "Keep it simple so small landlords can comply.",
+  "split": "yes"
+ },
+ {
+  "id": "c0500",
+  "wants": "I'd rather they fixed the building than argued in court.",
+  "limit": "Don't let the new rules drag on for years.",
+  "split": "yes"
+ },
+ {
+  "id": "c0770",
+  "wants": "Landlords should pay for their own mistakes.",
+  "limit": "Councils shouldn't get off the hook either.",
+  "split": "yes"
+ },
+ {
+  "id": "c0696",
+  "wants": "Leaseholders should recover their legal costs when they win.",
+  "limit": "Don't let it take years to start.",
+  "split": "yes"
+ },
+ {
+  "id": "c0350",
+  "wants": "Stop surprise bills. Check them first.",
+  "limit": "Don't make small landlords go under.",
+  "split": "yes"
+ },
+ {
+  "id": "c0278",
+  "wants": "I can't say enough about this to judge.",
+  "limit": "Don't add new fees to the bill.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0157",
+  "wants": "Landlords carry the risk, not the people living there.",
+  "limit": "Don't cut corners on repairs to save money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0678",
+  "wants": "Start the rules now, nobody should be cheated.",
+  "limit": "Don't let rents rise to cover this.",
+  "split": "yes"
+ },
+ {
+  "id": "c0527",
+  "wants": "Landlords pay their own court costs, not us.",
+  "limit": "Stop bills going up every year without reason.",
+  "split": "yes"
+ },
+ {
+  "id": "c0988",
+  "wants": "Clear, plain bills. I can't read the ones I get.",
+  "limit": "Small landlords shouldn't be buried in forms and costs.",
+  "split": "yes"
+ },
+ {
+  "id": "c0997",
+  "wants": "I rent, so I don't care much either way.",
+  "limit": "Don't make it cost more to rent a flat.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0073",
+  "wants": "Cap ground rents and service charges, they're a racket.",
+  "limit": "Don't let landlords hide their accounts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0398",
+  "wants": "Nobody has explained this to me properly.",
+  "limit": "Don't make me pay for other people's fights.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0011",
+  "wants": "Landlords should stop taking money from flat owners.",
+  "limit": "Don't let it drag on for years.",
+  "split": "yes"
+ },
+ {
+  "id": "c0908",
+  "wants": "Check every bill against what was actually done.",
+  "limit": "Don't make pensioners pay more to challenge.",
+  "split": "yes"
+ },
+ {
+  "id": "c0561",
+  "wants": "Landlords pay. They're the ones who get it wrong.",
+  "limit": "Don't put the new forms on small landlords.",
+  "split": "yes"
+ },
+ {
+  "id": "c0091",
+  "wants": "I'd have no idea how to challenge a bill.",
+  "limit": "Don't let the council make the rules harder.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0900",
+  "wants": "Start earlier, April 2027 is too far away.",
+  "limit": "Fees must not be passed on to tenants.",
+  "split": "yes"
+ },
+ {
+  "id": "c0689",
+  "wants": "Landlords should pay for lawyers, not us.",
+  "limit": "Don't let new rules push rents up.",
+  "split": "yes"
+ },
+ {
+  "id": "c0233",
+  "wants": "I've no idea what the fight costs. Sounds messy.",
+  "limit": "Don't make leaseholders pay more than the bill.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0101",
+  "wants": "Fair bills, written down and checked before they're sent.",
+  "limit": "Don't make pensioners pay more to challenge.",
+  "split": "no"
+ },
+ {
+  "id": "c0034",
+  "wants": "Landlords need to run buildings properly, without fuss.",
+  "limit": "Don't force small landlords into costly disputes.",
+  "split": "no"
+ },
+ {
+  "id": "c0822",
+  "wants": "Landlords shouldn't dump their costs on flat owners.",
+  "limit": "Don't make it cost a fortune to challenge bills.",
+  "split": "yes"
+ },
+ {
+  "id": "c0335",
+  "wants": "Flat owners get squeezed. Make landlords pay.",
+  "limit": "Don't make it take forever to get bills right.",
+  "split": "yes"
+ },
+ {
+  "id": "c0685",
+  "wants": "Seems fair, flat owners get ripped off.",
+  "limit": "Don't stop landlords keeping buildings in repair.",
+  "split": "yes"
+ },
+ {
+  "id": "c0494",
+  "wants": "Make it simple and quick to check the bills.",
+  "limit": "Don't make it cost more to challenge a bill.",
+  "split": "yes"
+ },
+ {
+  "id": "c0763",
+  "wants": "Leaseholders have enough costs already.",
+  "limit": "Don't add more paperwork for ordinary landlords.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0750",
+  "wants": "Landlords carry the cost when they lose a challenge.",
+  "limit": "Don't cut repairs to pay for the rules.",
+  "split": "yes"
+ },
+ {
+  "id": "c0093",
+  "wants": "Flat owners shouldn't be stung for landlords' lawyers.",
+  "limit": "Don't stop bills being checked properly.",
+  "split": "yes"
+ },
+ {
+  "id": "c0767",
+  "wants": "Landlords should keep their own costs down.",
+  "limit": "Small landlords shouldn't be buried in forms and costs.",
+  "split": "no"
+ },
+ {
+  "id": "c0149",
+  "wants": "The rules are fine, but don't rush them through.",
+  "limit": "Small landlords shouldn't be buried in forms and costs.",
+  "split": "no"
+ },
+ {
+  "id": "c0560",
+  "wants": "Fix the bills, not the paperwork, please.",
+  "limit": "Don't let leaseholders lose homes over bills.",
+  "split": "yes"
+ },
+ {
+  "id": "c0922",
+  "wants": "Stop the government piling new rules on everyone.",
+  "limit": "Don't make small landlords sell up.",
+  "split": "no"
+ },
+ {
+  "id": "c0941",
+  "wants": "Landlords should pay their own legal costs.",
+  "limit": "Don't let the bills keep climbing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0323",
+  "wants": "Not bothered, I own a house, not a flat.",
+  "limit": "Don't make us pay for a government mess.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0881",
+  "wants": "Start now and make landlords pay the legal costs.",
+  "limit": "Don't make renters pay more for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0282",
+  "wants": "I'd want a plain bill I could understand.",
+  "limit": "Don't cost students more in rent.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0377",
+  "wants": "Landlords are being bullied. Don't make it harder.",
+  "limit": "Let them run buildings without endless forms.",
+  "split": "no"
+ },
+ {
+  "id": "c0480",
+  "wants": "Charges need a cap, they go up every year.",
+  "limit": "Don't make landlords go bust over disputes.",
+  "split": "yes"
+ },
+ {
+  "id": "c0129",
+  "wants": "Landlords take the money, then fight us in court.",
+  "limit": "Don't make it a year-long wait to start.",
+  "split": "yes"
+ },
+ {
+  "id": "c0884",
+  "wants": "Pay for the work, and show the receipts.",
+  "limit": "Don't blow up the paperwork for small landlords.",
+  "split": "yes"
+ },
+ {
+  "id": "c0587",
+  "wants": "I don't really know, it's just the flats.",
+  "limit": "Keep bills from going up to pay for lawyers.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0493",
+  "wants": "Landlords should be the ones who lose their money.",
+  "limit": "Don't let landlords hide money in service charges.",
+  "split": "yes"
+ },
+ {
+  "id": "c0005",
+  "wants": "Start the rules sooner, I've waited years.",
+  "limit": "Don't let rents go up to pay the fight.",
+  "split": "yes"
+ },
+ {
+  "id": "c0821",
+  "wants": "I'd rather not have to think about it at all.",
+  "limit": "Keep bills low, we're on fixed incomes.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0409",
+  "wants": "Landlords should pay their own costs of disputes.",
+  "limit": "Don't let councils dodge the same rules.",
+  "split": "yes"
+ },
+ {
+  "id": "c0386",
+  "wants": "Put the bills on the landlord, always.",
+  "limit": "Don't make the rules too slow to start.",
+  "split": "yes"
+ },
+ {
+  "id": "c0855",
+  "wants": "Keep it simple, I'm not sure who should pay.",
+  "limit": "Don't let small landlords fold over admin.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0520",
+  "wants": "They should check bills before we pay.",
+  "limit": "Don't let fees land on leaseholders who win.",
+  "split": "yes"
+ },
+ {
+  "id": "c0760",
+  "wants": "Landlords should be free to recover costs.",
+  "limit": "Small landlords shouldn't be buried in forms.",
+  "split": "no"
+ },
+ {
+  "id": "c0098",
+  "wants": "Too much government. Let people sort their own.",
+  "limit": "Don't make flat owners sell up.",
+  "split": "no"
+ },
+ {
+  "id": "c0167",
+  "wants": "Landlords pay their own court costs. Obviously.",
+  "limit": "Start it sooner, not in late 2028.",
+  "split": "yes"
+ },
+ {
+  "id": "c0503",
+  "wants": "Stop charging for works nobody asked for.",
+  "limit": "Don't hit small landlords with paperwork.",
+  "split": "yes"
+ },
+ {
+  "id": "c0995",
+  "wants": "Bills are a mess. Keep it simple.",
+  "limit": "Don't add cost for leaseholders on pensions.",
+  "split": "yes"
+ },
+ {
+  "id": "c0291",
+  "wants": "Students get landed with these costs. Make landlords pay.",
+  "limit": "Don't let rents rise for students.",
+  "split": "yes"
+ },
+ {
+  "id": "c0502",
+  "wants": "Fair bills, checked by someone independent.",
+  "limit": "Small landlords shouldn't be buried in forms and costs.",
+  "split": "yes"
+ },
+ {
+  "id": "c0299",
+  "wants": "Flat owners are trapped. Landlords should pay.",
+  "limit": "Don't let leaseholders lose their homes.",
+  "split": "yes"
+ },
+ {
+  "id": "c0404",
+  "wants": "Landlords should be allowed to pass costs on fairly.",
+  "limit": "Don't make small landlords go bust over disputes.",
+  "split": "no"
+ },
+ {
+  "id": "c0075",
+  "wants": "Landlords should pay their own legal bills.",
+  "limit": "Don't make pensioners pay more to fight.",
+  "split": "yes"
+ },
+ {
+  "id": "c0663",
+  "wants": "Bills should be checked before they're sent to us.",
+  "limit": "Don't let rent rise to pay for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0200",
+  "wants": "Don't know enough about flats to say.",
+  "limit": "Don't let the bills stop me keeping my home.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0496",
+  "wants": "Owners should be responsible for their own costs.",
+  "limit": "Small landlords shouldn't be buried in forms.",
+  "split": "no"
+ },
+ {
+  "id": "c0340",
+  "wants": "Start the new rules now and cut the delays.",
+  "limit": "Don't make new rules cost small landlords too much.",
+  "split": "yes"
+ },
+ {
+  "id": "c0070",
+  "wants": "Landlords take the money. They should pay for their fights.",
+  "limit": "Don't let bills keep rising every year.",
+  "split": "yes"
+ },
+ {
+  "id": "c0260",
+  "wants": "If you lose, you pay. That's fair.",
+  "limit": "Small landlords shouldn't be buried in forms.",
+  "split": "no"
+ },
+ {
+  "id": "c0868",
+  "wants": "Too many rules on private owners and landlords.",
+  "limit": "Don't make small landlords sell up.",
+  "split": "no"
+ },
+ {
+  "id": "c0253",
+  "wants": "Landlords should pay if they lose.",
+  "limit": "Don't make us pay more in rent.",
+  "split": "yes"
+ },
+ {
+  "id": "c0589",
+  "wants": "Leaseholders shouldn't pay landlords' court fees.",
+  "limit": "Don't make bills go up to cover the paperwork.",
+  "split": "yes"
+ },
+ {
+  "id": "c0214",
+  "wants": "Charges should be checked before anyone pays.",
+  "limit": "Don't let councils dodge the same rules.",
+  "split": "yes"
+ },
+ {
+  "id": "c0286",
+  "wants": "Owners get bled dry. Stop it.",
+  "limit": "Don't make small landlords carry the costs.",
+  "split": "no"
+ },
+ {
+  "id": "c0385",
+  "wants": "Landlords need clear rules, not surprises.",
+  "limit": "Don't make the new forms too costly to run.",
+  "split": "no"
+ },
+ {
+  "id": "c0656",
+  "wants": "I'd want to see the bills first.",
+  "limit": "Don't let disputes take years to settle.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0128",
+  "wants": "Leave it to the courts. Less government.",
+  "limit": "Don't make owners pay more for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0972",
+  "wants": "Charges should be capped, they're a con.",
+  "limit": "Don't make us wait years to start.",
+  "split": "yes"
+ },
+ {
+  "id": "c0466",
+  "wants": "Landlords pay their own costs. It's their risk.",
+  "limit": "Councils and housing associations shouldn't be excused.",
+  "split": "yes"
+ },
+ {
+  "id": "c0666",
+  "wants": "Landlords know the costs, they should absorb them.",
+  "limit": "Don't stop landlords maintaining the buildings.",
+  "split": "no"
+ },
+ {
+  "id": "c0336",
+  "wants": "Landlords must stop charging leaseholders for fights.",
+  "limit": "Don't make bills rise to pay for new forms.",
+  "split": "yes"
+ },
+ {
+  "id": "c0830",
+  "wants": "Simple bills I can compare with last year.",
+  "limit": "Don't make small landlords stop renting.",
+  "split": "yes"
+ },
+ {
+  "id": "c0446",
+  "wants": "Fix the rules and the bills, both.",
+  "limit": "Don't make landlords cut repairs to pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0379",
+  "wants": "Landlords should pay, not the flat owners.",
+  "limit": "Don't add rules that cost me money.",
+  "split": "no"
+ },
+ {
+  "id": "c0318",
+  "wants": "Stop the government meddling in everything.",
+  "limit": "Don't make us pay more for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0009",
+  "wants": "Pay for the bills you run up, no free rides.",
+  "limit": "Small landlords shouldn't drown in admin.",
+  "split": "no"
+ },
+ {
+  "id": "c0301",
+  "wants": "Small landlords get squeezed by all these forms.",
+  "limit": "Don't make bills rise to pay for the change.",
+  "split": "no"
+ },
+ {
+  "id": "c0307",
+  "wants": "Sort out the bills, I've paid for years.",
+  "limit": "Don't make the rules too costly for landlords.",
+  "split": "no"
+ },
+ {
+  "id": "c0501",
+  "wants": "Less state meddling, let owners and landlords sort it.",
+  "limit": "Don't make rules that drive landlords out.",
+  "split": "no"
+ },
+ {
+  "id": "c0256",
+  "wants": "Start now and stop landlords charging us for fights.",
+  "limit": "Don't raise my rent to pay for this.",
+  "split": "yes"
+ }
+]

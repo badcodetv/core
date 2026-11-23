@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Leave pensions alone. Put care users in charge.",
+  "answer": "Keep the Triple Lock. Fund free personal care for older people from general taxes. The government's neighbourhood care plan offers a starting point [s1]. Councils should fund local care groups owned by the people receiving care and the carers doing it. Give each group an elected board, with care users holding most seats. Pay for full visits and travel time. Put any surplus back into care. Renew funding only when visits happen reliably and people get familiar carers. Publish missed visits, staff pay and time spent with each person every three months. Success means fewer missed visits, familiar faces and carers earning more without rushed care.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat cae83c0f-c743-48ed-848b-9703f5cf71ae"
+}

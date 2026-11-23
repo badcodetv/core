@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Three broad years, steered by families and teachers",
+  "answer": "In this simulation, Years 7 to 9 would offer broad learning, following the department’s call to stop routine early GCSE courses (s1). Each school would elect a council of pupils, parents and teachers to agree its teaching plan. Families would hold most seats; businesses could advise but buy no votes. The plan must protect reading, maths, science, arts, staff and existing support. Schools would publish a plain yearly account of lessons, spending and results. After three years, success would mean better attendance, fewer children behind in reading and maths, subjects retained, and more pupils able to show useful work beyond exam practice. Later GCSE results would check that standards held.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat 80c7397d-9c05-4102-b003-66a0d302fbc2"
+}

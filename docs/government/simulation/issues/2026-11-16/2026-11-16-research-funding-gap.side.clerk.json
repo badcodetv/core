@@ -1,0 +1,12 @@
+{
+  "split_question": "Should the UK pay for full membership of the EU's next research programme, even if it means cutting other science spending?",
+  "angles": ["join in full and cut other science budgets to pay", "join only the Excellent Science part and keep the rest at home", "join in full but negotiate a stricter refund rule and find new money"],
+  "facts_for_writers": [
+    "The UK has not committed to joining FP10 but has budgeted £2.2 billion a year, roughly what it spends on the current programme (s1).",
+    "Science Works projects a £7.7 billion shortfall over FP10's life, up to £16.5 billion in the worst case; the most likely gap is £1.2 billion in 2029-30, rising to £1.5 billion by 2034-35 (s1).",
+    "Science Works says joining only the Excellent Science part would cost £2.4 billion a year less than full membership and free about £1.1 billion a year for British priorities (s1).",
+    "The UK is currently refunded when its grants underperform by 16%, while Switzerland's trigger is 8%; Science Works suggests negotiating a higher trigger if the UK joins in full (s1).",
+    "The 2025 spending review provided for a UK contribution at roughly current levels, to be reviewed once more information was available; the UK joined Horizon in 2023 and has done strongly in the European Research Council and Marie Curie grants (s2)."
+  ],
+  "extra_sources": []
+}

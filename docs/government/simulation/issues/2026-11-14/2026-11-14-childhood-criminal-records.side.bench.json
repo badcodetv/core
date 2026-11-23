@@ -1,0 +1,22 @@
+{
+ "A": {
+  "title": "Keep the checks; add a spent date, a review panel and a safeguard lock",
+  "answer": "The Ministry of Justice keeps today's disclosure checks but changes the rules inside them. Minor childhood convictions drop off standard and enhanced checks after a fixed period, as proposed (s2). Serious violent and sexual offences stay on every check (s1). Checks for child-safety and care work keep full disclosure. Anyone refused a drop-off can ask a small independent panel to look at their record. The Youth Justice Board (s3) would publish yearly how many childhood records show on checks, using the same measure the consultation uses (s2). It worked if that share falls while safeguarding referrals do not rise.",
+  "sources": [
+   "s1",
+   "s2",
+   "s3"
+  ],
+  "new_sources": []
+ },
+ "B": {
+  "title": "Give childhood records to an independent panel, not Whitehall",
+  "answer": "Move decisions on hiding childhood records from the Ministry's fixed rules to an independent youth records panel, with a youth justice specialist, a care-sector safeguarding lead and someone with a childhood record. Government sets the floor: serious violent and sexual offences always show (s1, s2). The panel reviews each other record, as 19 simulated citizens asked, and can add explanation support for employers, as 10 asked. Checks for child-safety and care work stay at least as strict (20 backers). We'd know it worked if the share of checks disclosing a childhood offence (0.71% standard, 0.35% enhanced, s2) falls while serious offences stay disclosed.",
+  "sources": [
+   "s1",
+   "s2",
+   "s3"
+  ],
+  "new_sources": []
+ }
+}

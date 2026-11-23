@@ -1,0 +1,15 @@
+{
+  "split_question": "Should a landlord be barred from passing the cost of its own legal fees to a leaseholder who challenges a service charge, unless a court or tribunal says so?",
+  "angles": ["Make landlords carry the cost of disputes", "Start the rules sooner than 2027", "Fix the bills themselves, not just the paperwork"],
+  "poll_note": "No poll used. The only published survey found (Propertymark, a trade body, 15 Jul 2026, 1,200+ leaseholders) is four months older than the news date and asks a different question, so it is not set as the poll.",
+  "facts_for_writers": [
+    "From 1 April 2027 landlords need court or tribunal approval to pass on their legal costs of a service charge challenge, and leaseholders gain a right to recover their own legal expenses. [s1]",
+    "From 1 November 2027 private landlords must use standard demand forms and give accounts and annual reports; councils and housing associations follow from 1 November 2028, given an extra 12 months because of the complexity of their systems. [s1]",
+    "The government says the staggered timetable gets protections to leaseholders quickly while giving landlords time to adjust billing and accounting systems; its release gives no cost figures for landlords, councils or government. [s1]",
+    "A Propertymark survey of more than 1,200 leaseholders found 86% of those who paid a service charge saw an increase in the past 24 months, and 89% said unfair charges are difficult to challenge (a trade body's own survey, not a polling company's). [s2]",
+    "The Commonhold and Leasehold Reform Bill, due before Christmas 2026, would cap existing ground rents at 250 pounds and replace the forfeiture system. [s1]"
+  ],
+  "extra_sources": [
+    {"id": "s2", "title": "Leasehold: still a life sentence?", "publisher": "Propertymark", "date": "2026-07-15", "url": "https://www.propertymark.co.uk/resource/leasehold-still-a-life-sentence.html"}
+  ]
+}

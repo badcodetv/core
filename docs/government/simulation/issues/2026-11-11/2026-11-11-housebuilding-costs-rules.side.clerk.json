@@ -1,0 +1,25 @@
+{
+ "split_question": "Should the government cut some rules and taxes on new homes, such as stamp duty or building standards, even if that means less money or fewer requirements for affordable housing?",
+ "angles": [
+  "Cut taxes on developers, keep the rules",
+  "Keep the rules, speed up planning and fund councils",
+  "Trade a rule for a promise: relax one cost only where homes get built"
+ ],
+ "facts_for_writers": [
+  "The Centre for Policy Studies says government-imposed costs are 57% of the minimum viable price of a flat in its inner London model (about £775,000 against about £333,000 without the modelled costs) and 42% in its Home Counties model (about £535,000 against about £311,000). These are the think tank's own modelled figures. s1",
+  "The two models are 100 two-bedroom flats on a brownfield site in London and 100 three-bedroom houses on a greenfield site in Chelmsford; the report's conclusions rest on these two examples, not a full assessment. s1",
+  "The costs the report counts are affordable housing duties, planning delays, stamp duty, corporation tax and the Residential Property Developer Tax, the Community Infrastructure Levy, Biodiversity Net Gain and building specifications such as balconies, dual-aspect layouts and second staircases. s1",
+  "Katie Lam, the shadow housing secretary, backed the findings and called for scrapping stamp duty and reducing net zero-related building requirements, according to the article. s1",
+  "AtkinsRéalis research reported on 9 November found 69% of respondents cited resource constraints in local planning authorities as a cause of delays and 62% said planning timelines significantly influenced investment decisions. s2"
+ ],
+ "extra_sources": [
+  {
+   "id": "s3",
+   "title": "July Property Insights: Support for local housebuilding outweighs opposition, as affordable housing tops consumers' priorities",
+   "publisher": "Barclays (survey by Opinium, 2,000 UK adults, fieldwork 4-7 August 2026)",
+   "date": "2026-08-25",
+   "url": "https://home.barclays/insights/2026/08/July-2026-Property-Trends/",
+   "note": "Not used as the issue's poll: it is older than a month and asks about new homes within three miles of home (43% support, 22% oppose), not about cutting costs. No poll found on the exact question."
+  }
+ ]
+}

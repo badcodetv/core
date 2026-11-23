@@ -1,0 +1,504 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-14-childhood-criminal-records",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "published",
+  "run": {
+    "mode": "replay",
+    "run_date": "2026-11-23",
+    "news_date": "2026-11-14",
+    "replay_stamp": "Replayed on 23 Nov 2026 from the news of 14 Nov 2026"
+  },
+  "issue": {
+    "title": "Should a childhood conviction follow you for life?",
+    "short": "CHILD RECORDS",
+    "question": "Should a conviction from childhood stop showing up on job and college checks, and if so, after how long?",
+    "summary": "On 12 November 2026 the Ministry of Justice opened a consultation on changing how childhood criminal records are disclosed in England and Wales. The proposals include ending lifelong disclosure for non-listed childhood convictions with custodial sentences of two years or less (an 11-year period instead), removing automatic disclosure of out-of-court resolutions, and cutting the period fines show up. Serious violent and sexual offences would still always be disclosed. Responses are due by 24 December 2026.",
+    "summary_sources": [
+      "s1",
+      "s2"
+    ],
+    "field": "criminal-records",
+    "owner": "home",
+    "slot": "longest-wait",
+    "slot_reason": "Rule 2: the field \"criminal-records\" has never run in the simulation, and this weight-2 UK item was in the news of 14 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+    "news": [
+      {
+        "headline": "Consultation opens on ending lifelong disclosure of some childhood convictions",
+        "memory_id": "caf9c480-7bf3-4579-a8e9-05baa3866525",
+        "sources": [
+          "s1",
+          "s2",
+          "s3"
+        ]
+      }
+    ]
+  },
+  "poll": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "New proposals to stop childhood crimes closing doors for life",
+      "publisher": "Ministry of Justice (GOV.UK)",
+      "date": "2026-11-12",
+      "url": "https://www.gov.uk/government/news/new-proposals-to-stop-childhood-crimes-closing-doors-for-life"
+    },
+    {
+      "id": "s2",
+      "title": "Reforming childhood criminal records disclosure: consultation",
+      "publisher": "Ministry of Justice (GOV.UK)",
+      "date": "2026-11-12",
+      "url": "https://www.gov.uk/government/consultations/reforming-childhood-criminal-records-disclosure/reforming-childhood-criminal-records-disclosure-consultation"
+    },
+    {
+      "id": "s3",
+      "title": "Youth Justice Board welcomes proposals for child criminal record reform",
+      "publisher": "Youth Justice Board for England and Wales (GOV.UK)",
+      "date": "2026-11-13",
+      "url": "https://www.gov.uk/government/news/youth-justice-board-welcomes-proposals-for-child-criminal-record-reform"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "sim-clerk",
+      "sim-citizens",
+      "sim-bench",
+      "sim-gate",
+      "sim-jury",
+      "sim-minister"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-14-childhood-criminal-records/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0394",
+      "c0658",
+      "c0896",
+      "c0248",
+      "c0350",
+      "c0118",
+      "c0854",
+      "c0730",
+      "c0616",
+      "c0657",
+      "c0337",
+      "c0245",
+      "c0084",
+      "c0416",
+      "c0285",
+      "c0782",
+      "c0160",
+      "c0526",
+      "c0314",
+      "c0240",
+      "c0569",
+      "c0511",
+      "c0425",
+      "c0565",
+      "c0149",
+      "c0922",
+      "c0427",
+      "c0949",
+      "c0031",
+      "c0395",
+      "c0697",
+      "c0223",
+      "c0741",
+      "c0356",
+      "c0814",
+      "c0065",
+      "c0844",
+      "c0811",
+      "c0159",
+      "c0841",
+      "c0292",
+      "c0293",
+      "c0628",
+      "c0444",
+      "c0018",
+      "c0621",
+      "c0393",
+      "c0039",
+      "c0539",
+      "c0328",
+      "c0170",
+      "c0945",
+      "c0309",
+      "c0163",
+      "c0556",
+      "c0853",
+      "c0708",
+      "c0613",
+      "c0213",
+      "c0877",
+      "c0897",
+      "c0532",
+      "c0678",
+      "c0278",
+      "c0370",
+      "c0686",
+      "c0549",
+      "c0801",
+      "c0369",
+      "c0519",
+      "c0735",
+      "c0557",
+      "c0280",
+      "c0873",
+      "c0288",
+      "c0601",
+      "c0709",
+      "c0667",
+      "c0874",
+      "c0123",
+      "c0194",
+      "c0786",
+      "c0515",
+      "c0738",
+      "c0717",
+      "c0611",
+      "c0800",
+      "c0936",
+      "c0529",
+      "c0714",
+      "c0143",
+      "c0355",
+      "c0447",
+      "c0075",
+      "c0828",
+      "c0868",
+      "c0037",
+      "c0360",
+      "c0358",
+      "c0016"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "Fewer childhood convictions show on checks after a set number of years",
+        "backers": 49
+      },
+      {
+        "kind": "test",
+        "text": "Someone looks at each childhood record before it is hidden",
+        "backers": 19
+      },
+      {
+        "kind": "test",
+        "text": "Help people explain an old record to an employer, not just hide it",
+        "backers": 10
+      },
+      {
+        "kind": "limit",
+        "text": "Serious violent and sexual offences stay on every check",
+        "backers": 88
+      },
+      {
+        "kind": "limit",
+        "text": "Checks for child-safety and care work do not get weaker",
+        "backers": 20
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0658",
+        "who": "22, West Midlands, in work, renting privately",
+        "text": "Fixed time limit: my mate's shoplifting at 15 still costs jobs."
+      },
+      {
+        "citizen": "c0730",
+        "who": "67, South East, retired, owns with a mortgage",
+        "text": "A fixed time limit is fair if the record is minor. Care and school jobs must still see serious records."
+      },
+      {
+        "citizen": "c0285",
+        "who": "60, Scotland, in work, owns outright",
+        "text": "Explain the record to the employer, don't just hide it."
+      },
+      {
+        "citizen": "c0163",
+        "who": "91, South East, retired, renting from the council or a housing association",
+        "text": "In my day it was a record for life. Keep it."
+      },
+      {
+        "citizen": "c0844",
+        "who": "27, London, looking after home or family, renting privately",
+        "text": "Some records are unfair; time limits seem sensible."
+      },
+      {
+        "citizen": "c0248",
+        "who": "28, Wales, in work, renting from the council or a housing association",
+        "text": "Let people prove they've changed; a case-by-case look."
+      }
+    ]
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Keep the checks; add a spent date, a review panel and a safeguard lock",
+      "answer": "The Ministry of Justice keeps today's disclosure checks but changes the rules inside them. Minor childhood convictions drop off standard and enhanced checks after a fixed period, as proposed (s2). Serious violent and sexual offences stay on every check (s1). Checks for child-safety and care work keep full disclosure. Anyone refused a drop-off can ask a small independent panel to look at their record. The Youth Justice Board would publish yearly how many childhood records show on checks, using the same measure the consultation uses (s2). It worked if that share falls while safeguarding referrals do not rise.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Give childhood records to an independent panel, not Whitehall",
+      "answer": "Move decisions on hiding childhood records from the Ministry's fixed rules to an independent youth records panel, with a youth justice specialist, a care-sector safeguarding lead and someone with a childhood record. Government sets the floor: serious violent and sexual offences always show (s1, s2). The panel reviews each other record, as 19 simulated citizens asked, and can add explanation support for employers, as 10 asked. Checks for child-safety and care work stay at least as strict (20 backers). We'd know it worked if the share of checks disclosing a childhood offence (0.71% standard, 0.35% enhanced, s2) falls while serious offences stay disclosed.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "A clear expiry date, with applicants steering enforcement",
+      "answer": "End lifelong disclosure for eligible childhood convictions carrying custody of two years or less. Set the limit at 11 years from conviction, as proposed in s2. Keep serious violent and sexual offences disclosed, and preserve safeguards for child-safety and care work. Let applicants run local advice groups that help challenge expired records on job and college checks. Give these groups power to demand corrections, with checking firms paying correction costs when they get it wrong. Judge success by fewer expired records appearing, quicker corrections, and more applicants reaching work or study. Publish anonymous results each year.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "Fewer convictions show after set years",
+        "result": "pass",
+        "note": "A keeps the proposed fixed-period filtering; the consultation proposes 11 years for non-listed custody of two years or less.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Each record looked at before hidden",
+        "result": "unclear",
+        "note": "Only refused drop-offs go to a panel. The sources propose no panel or individual review, so effect is unknown.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Help explaining a record to employers",
+        "result": "fail",
+        "note": "A offers no help for explaining a record to an employer; no source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Serious violent/sexual stay on checks",
+        "result": "pass",
+        "note": "The Ministry says serious violent and sexual convictions will always be disclosed.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Child-safety/care checks not weaker",
+        "result": "unclear",
+        "note": "A keeps full disclosure for these roles, but the sources give no detail on how those checks would work.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Fewer convictions show after set years",
+        "result": "unclear",
+        "note": "B drops fixed rules for a panel, so records may leave checks sooner or later; the sources do not say which.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Each record looked at before hidden",
+        "result": "pass",
+        "note": "The panel reviews each non-serious record. The sources propose no such panel, so its workload is untested.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Help explaining a record to employers",
+        "result": "pass",
+        "note": "B adds explanation support for employers; the consultation cites employer worry over records as a barrier to hiring.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Serious violent/sexual stay on checks",
+        "result": "pass",
+        "note": "Government fixes serious violent and sexual offences as always shown.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Child-safety/care checks not weaker",
+        "result": "unclear",
+        "note": "B says these checks stay at least as strict; the sources give no detail on how they work.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Fewer convictions show after set years",
+        "result": "pass",
+        "note": "C sets 11 years for eligible custody of two years or less, as the consultation proposes.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Each record looked at before hidden",
+        "result": "unclear",
+        "note": "C has applicants challenge expired records; it does not review each record before it is hidden.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Help explaining a record to employers",
+        "result": "pass",
+        "note": "Applicant-run advice groups help people challenge records; no source needed: logic. It is about corrections, not explaining.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Serious violent/sexual stay on checks",
+        "result": "pass",
+        "note": "C keeps serious violent and sexual offences disclosed, as the Ministry says.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Child-safety/care checks not weaker",
+        "result": "unclear",
+        "note": "C preserves safeguards for these roles, but the sources give no detail on them.",
+        "sources": [
+          "s1"
+        ]
+      }
+    ],
+    "verdict": "None of the three passes every test: A fails on employer help, and the others leave several unclear. Facts cannot settle who should decide and who should carry the cost of mistakes.",
+    "to_jury": true,
+    "rejected_claims": [
+      "A: the Youth Justice Board would publish yearly figures (removed the s3 cite: s3 says no such thing; kept as A's own proposal)"
+    ]
+  },
+  "jury": {
+    "seed": "2026-11-14-childhood-criminal-records/jury",
+    "size": 12,
+    "ids": [
+      "c0579",
+      "c0378",
+      "c0561",
+      "c0701",
+      "c0654",
+      "c0297",
+      "c0157",
+      "c0076",
+      "c0889",
+      "c0302",
+      "c0547",
+      "c0703"
+    ],
+    "model": "claude-sonnet-5-5",
+    "question": "Who should decide when a childhood record stops showing on checks: a fixed rule, an independent panel, or people who use the system?",
+    "options": [
+      "A fixed number of years for everyone",
+      "An independent panel looking at each record",
+      "Applicant-run groups with power to force corrections",
+      "Keep the record for life"
+    ],
+    "votes": [
+      5,
+      4,
+      1,
+      2
+    ],
+    "ruling": "A fixed number of years for everyone: five jurors chose it because a clear date is the same for everyone and does not depend on who reviews it.",
+    "reasons": [
+      {
+        "juror": "c0579",
+        "text": "A set number of years is clear and the same for everyone. Judges and panels vary."
+      },
+      {
+        "juror": "c0654",
+        "text": "Fixed years, with serious crimes still shown. Keep it simple and cheap."
+      },
+      {
+        "juror": "c0157",
+        "text": "A panel can see whether someone has really changed. A date cannot."
+      },
+      {
+        "juror": "c0547",
+        "text": "If you did it, it stays. Employers have a right to know."
+      }
+    ],
+    "review": "2027-11-23",
+    "real_jury": false
+  },
+  "minister": {
+    "post": "home",
+    "decision": "signed",
+    "trial": "In the reply to the consultation, back a fixed filtering period for non-listed childhood convictions with custody of two years or less. Serious violent and sexual offences, and child-safety and care checks, stay as they are. Review after one year.",
+    "fail_number": "If the share of standard checks disclosing a childhood offence (0.71% now) does not fall, or any serious offence stops showing, it failed.",
+    "stop": "2027-11-23",
+    "statement": "The jury chose a fixed date over a panel or a lifetime record. Five of twelve, so not a landslide.\n\nA date is clear and the same for everyone. The cost is that it ignores the person.\n\nSo we start small: minor convictions only. Serious violent and sexual offences stay on every check. Care and child-safety checks do not get weaker.\n\nThe size of it: under 1 in 100 standard checks shows a childhood offence. We will count again in a year."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "answer": "issue",
+      "claim": "The Ministry of Justice consultation on childhood criminal records closes on 24 December 2026 without its deadline being extended.",
+      "prior": 0.85,
+      "due": "2026-12-31",
+      "rule": "True if the GOV.UK consultation page still shows a closing date of 24 December 2026 on 31 December 2026.",
+      "sources": [
+        "s2"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "answer": "issue",
+      "claim": "The government publishes its response to the childhood records consultation by 30 June 2027.",
+      "prior": 0.45,
+      "due": "2027-06-30",
+      "rule": "True if a response document appears on the consultation page on GOV.UK on or before 30 June 2027.",
+      "sources": [
+        "s2"
+      ],
+      "result": "pending"
+    }
+  ]
+}

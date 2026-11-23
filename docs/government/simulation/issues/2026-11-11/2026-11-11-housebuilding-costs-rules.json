@@ -1,0 +1,534 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-11-housebuilding-costs-rules",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "published",
+  "run": {
+    "mode": "replay",
+    "run_date": "2026-11-23",
+    "news_date": "2026-11-11",
+    "replay_stamp": "Replayed on 23 Nov 2026 from the news of 11 Nov 2026"
+  },
+  "issue": {
+    "title": "A think tank says rules and taxes make up to 57% of a new flat's price",
+    "short": "HOMEBUILDING COSTS",
+    "question": "Some rules and taxes on new homes may be pushing prices up. Which should be cut to build more: affordable housing duties, green and design standards, or taxes like stamp duty?",
+    "summary": "The Centre for Policy Studies, a think tank, published a report called Easing the Burdens, covered on 10 November 2026. It models two developments and claims government-imposed costs are 57% of the minimum viable price of an inner London flat and 42% of a Home Counties house. The costs it counts include affordable housing duties, stamp duty, the Community Infrastructure Levy, Biodiversity Net Gain and building specifications. The conclusions rest on two modelled developments, not a full assessment of new-build homes. Separate research reported on 9 November found 69% of those asked blamed resource shortages in local planning authorities for delays.",
+    "summary_sources": [
+      "s1",
+      "s2"
+    ],
+    "field": "housebuilding-costs",
+    "owner": "housing",
+    "slot": "longest-wait",
+    "slot_reason": "Rule 2: the field \"housebuilding-costs\" has never run in the simulation, and this weight-2 UK item was in the news of 11 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+    "news": [
+      {
+        "headline": "Think tank report says government-imposed costs make up 42-57% of new-build viable prices",
+        "memory_id": "ff517c10-0fed-43d9-96c9-ee41d3ae0384",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "headline": "Research blames staffing shortages in local planning authorities for planning delays",
+        "memory_id": "f509951b-4507-48de-9225-d79b219841ff",
+        "sources": [
+          "s2"
+        ]
+      }
+    ]
+  },
+  "poll": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Housebuilding crisis deepens as government rules push up development costs",
+      "publisher": "Property Industry Eye",
+      "date": "2026-11-10",
+      "url": "https://propertyindustryeye.com/housebuilding-crisis-deepens-as-government-rules-push-up-development-costs/"
+    },
+    {
+      "id": "s2",
+      "title": "Resource shortages blamed for planning delays",
+      "publisher": "LocalGov",
+      "date": "2026-11-09",
+      "url": "https://www.localgov.co.uk/Resource-shortages-blamed-for-planning-delays/65207"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "sim-clerk",
+      "sim-citizens",
+      "sim-bench",
+      "sim-gate",
+      "sim-jury",
+      "sim-minister"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-11-housebuilding-costs-rules/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0597",
+      "c0486",
+      "c0139",
+      "c0411",
+      "c0922",
+      "c0272",
+      "c0318",
+      "c0696",
+      "c0493",
+      "c0864",
+      "c0777",
+      "c0143",
+      "c0945",
+      "c0451",
+      "c0908",
+      "c0175",
+      "c0853",
+      "c0032",
+      "c0355",
+      "c0134",
+      "c0694",
+      "c0029",
+      "c0042",
+      "c0960",
+      "c0350",
+      "c0288",
+      "c0507",
+      "c0698",
+      "c0856",
+      "c0581",
+      "c0580",
+      "c0404",
+      "c0524",
+      "c0858",
+      "c0176",
+      "c0794",
+      "c0753",
+      "c0704",
+      "c0616",
+      "c0009",
+      "c0311",
+      "c0702",
+      "c0060",
+      "c0269",
+      "c0875",
+      "c0654",
+      "c0974",
+      "c0212",
+      "c0936",
+      "c0476",
+      "c0103",
+      "c0132",
+      "c0767",
+      "c0990",
+      "c0764",
+      "c0558",
+      "c0894",
+      "c0157",
+      "c0167",
+      "c0077",
+      "c0347",
+      "c0706",
+      "c0660",
+      "c0909",
+      "c0278",
+      "c0076",
+      "c0366",
+      "c0423",
+      "c0886",
+      "c0727",
+      "c0926",
+      "c0761",
+      "c0133",
+      "c0693",
+      "c0731",
+      "c0669",
+      "c0832",
+      "c0376",
+      "c0135",
+      "c0321",
+      "c0647",
+      "c0086",
+      "c0276",
+      "c0966",
+      "c0364",
+      "c0035",
+      "c0445",
+      "c0120",
+      "c0770",
+      "c0074",
+      "c0418",
+      "c0806",
+      "c0419",
+      "c0126",
+      "c0093",
+      "c0845",
+      "c0516",
+      "c0058",
+      "c0992",
+      "c0592"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "Faster planning, so homes get built sooner.",
+        "backers": 37
+      },
+      {
+        "kind": "test",
+        "text": "Lower taxes on new homes, so building costs less.",
+        "backers": 29
+      },
+      {
+        "kind": "test",
+        "text": "More homes that people on ordinary wages can afford.",
+        "backers": 47
+      },
+      {
+        "kind": "test",
+        "text": "Fewer rules that slow small builders down.",
+        "backers": 16
+      },
+      {
+        "kind": "limit",
+        "text": "Safety and build quality don't get worse.",
+        "backers": 51
+      },
+      {
+        "kind": "limit",
+        "text": "Affordable homes aren't cut from big sites.",
+        "backers": 26
+      },
+      {
+        "kind": "limit",
+        "text": "Energy-saving and green standards aren't dropped.",
+        "backers": 17
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0029",
+        "who": "55, Yorkshire and The Humber, in work, owns home outright",
+        "text": "Scrap the stamp duty and the green add-ons."
+      },
+      {
+        "citizen": "c0411",
+        "who": "82, Wales, in work, rents from a council or housing association",
+        "text": "Homes my grandchildren can afford, built to last."
+      },
+      {
+        "citizen": "c0133",
+        "who": "28, London, long-term sick or disabled, rents from a council or housing association",
+        "text": "Cheaper homes, and proper safe places to live."
+      },
+      {
+        "citizen": "c0120",
+        "who": "59, Yorkshire and The Humber, in work, private renter",
+        "text": "Greener homes, built to standard, not cheap."
+      },
+      {
+        "citizen": "c0858",
+        "who": "47, South East, long-term sick or disabled, owns home outright",
+        "text": "Cut tax on building, I can't afford a flat."
+      }
+    ]
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Keep the rules and taxes; fund planning teams, refund late decisions",
+      "answer": "Keep today's rules and taxes, and fix the referee. The housing department ring-fences planning fees and adds funding so each local planning authority can staff its planning team. If a standard housing application is decided late, the authority refunds the fee. The case: the 57% figure comes from two modelled developments, not a full assessment of new homes (s1), so cutting standards or affordable housing duties on it is a gamble. Separate research found 69% of respondents cited resource shortages in planning authorities as a cause of delay (s2). How we'd know: each authority publishes its share of decisions made on time, median wait, and homes started on approved sites, every quarter.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Let a national planning service take over stalled housing decisions",
+      "answer": "Government sets up a national planning service of qualified planners. Any council short of staff can hand it housing applications, and it must decide within a fixed deadline. Councils keep the final say on design. Fees on applications are ring-fenced to pay for it. Leave stamp duty, affordable-housing duties and green standards alone for now: the think tank's 57% figure rests on two modelled developments, not a full assessment (s1), while 69% of respondents in separate research blamed resource shortages in local planning authorities for delays (s2). You'd know it worked if the time from application to decision falls, councils report fewer staffing delays, and affordable homes on big sites don't drop.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Cut stamp duty for homes steered by their residents",
+      "answer": "In this simulation, Parliament should offer stamp duty relief on land bought by resident-owned housing groups. Future residents would elect the board and hire builders through open bids. Relief would depend on published accounts, a completion deadline and resale rules that keep the saving in the homes. Miss those terms and repay the relief. Keep affordable housing duties, safety, quality and green standards. The report models only two developments; that is too narrow a basis for sweeping cuts (s1). Councils should track completion times, prices against local wages and defects. Expand the scheme only if homes arrive sooner, cost less and meet those standards.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "Faster planning",
+        "result": "pass",
+        "note": "Pays for planning staff and refunds late decisions; 69% of those asked in one study named planning staff shortages as a cause of delay.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Lower taxes on new homes",
+        "result": "fail",
+        "note": "Keeps stamp duty and other taxes as they are. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Homes ordinary wages can afford",
+        "result": "unclear",
+        "note": "Nothing in the sources shows whether faster decisions would make homes cheaper for ordinary wages.",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Fewer rules for small builders",
+        "result": "fail",
+        "note": "Leaves the rules unchanged, so nothing is eased for small builders. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Safety and quality not worse",
+        "result": "pass",
+        "note": "Keeps all building rules and standards in place. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Affordable homes not cut from big sites",
+        "result": "pass",
+        "note": "Keeps affordable housing duties unchanged. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Green standards not dropped",
+        "result": "pass",
+        "note": "Keeps green standards unchanged. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Faster planning",
+        "result": "pass",
+        "note": "A national service decides within a fixed deadline where councils lack staff; staff shortage was the main cause named in one study.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Lower taxes on new homes",
+        "result": "fail",
+        "note": "Leaves stamp duty and other taxes alone. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Homes ordinary wages can afford",
+        "result": "unclear",
+        "note": "The sources do not show whether faster decisions bring prices down.",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Fewer rules for small builders",
+        "result": "fail",
+        "note": "Rules stay as they are, so small builders get no relief from them. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Safety and quality not worse",
+        "result": "pass",
+        "note": "Standards untouched. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Affordable homes not cut from big sites",
+        "result": "pass",
+        "note": "Affordable housing duties untouched; the answer names this as a measure of success. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Green standards not dropped",
+        "result": "pass",
+        "note": "Green standards untouched. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Faster planning",
+        "result": "unclear",
+        "note": "Sets completion deadlines for resident groups but does nothing to speed council planning decisions; the sources do not settle it.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Lower taxes on new homes",
+        "result": "unclear",
+        "note": "Cuts stamp duty only for resident-owned groups, not for building generally; the report counts stamp duty among its costs.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Homes ordinary wages can afford",
+        "result": "unclear",
+        "note": "Resale rules aim to keep the saving in the homes, but no source shows resident-owned groups build cheaper.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Fewer rules for small builders",
+        "result": "fail",
+        "note": "Does not ease any rule for small builders. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Safety and quality not worse",
+        "result": "pass",
+        "note": "Keeps safety and quality standards in place. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Affordable homes not cut from big sites",
+        "result": "pass",
+        "note": "Keeps affordable housing duties. No source needed: logic.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Green standards not dropped",
+        "result": "pass",
+        "note": "Keeps green standards. No source needed: logic.",
+        "sources": []
+      }
+    ],
+    "verdict": "All three answers pass every limit the citizens set, and none eases rules for small builders. Whether cutting taxes, speeding planning or changing who builds does most for ordinary-wage homes cannot be settled by these sources.",
+    "to_jury": true,
+    "rejected_claims": []
+  },
+  "jury": {
+    "seed": "2026-11-11-housebuilding-costs-rules/jury",
+    "size": 12,
+    "ids": [
+      "c0683",
+      "c0852",
+      "c0838",
+      "c0546",
+      "c0723",
+      "c0469",
+      "c0837",
+      "c0149",
+      "c0554",
+      "c0664",
+      "c0238",
+      "c0855"
+    ],
+    "model": "claude-sonnet-5-5",
+    "question": "To get more homes ordinary-wage people can afford, should government first fund planning, cut a tax, or back resident-run building?",
+    "options": [
+      "Fund planning staff and set decision deadlines",
+      "Cut taxes like stamp duty on new homes",
+      "Back resident-run housing with tax relief"
+    ],
+    "votes": [
+      5,
+      5,
+      2
+    ],
+    "ruling": "Tied 5 to 5 between funding planning and cutting taxes; by the tie rule the ruling goes to funding planning staff with decision deadlines, the option the gate found safest.",
+    "reasons": [
+      {
+        "juror": "c0723",
+        "text": "Staff shortages are the clear problem here. Deadlines mean I would know when to expect a decision."
+      },
+      {
+        "juror": "c0852",
+        "text": "Tax on new homes is just a cost passed to buyers. Cut it and builders will build."
+      },
+      {
+        "juror": "c0664",
+        "text": "Faster decisions without dropping safety or affordable homes sounds fair to me."
+      },
+      {
+        "juror": "c0238",
+        "text": "I would trust residents running it over a developer or a distant office."
+      }
+    ],
+    "review": "2027-11-23",
+    "real_jury": false
+  },
+  "minister": {
+    "post": "housing",
+    "decision": "signed",
+    "trial": "In three councils that volunteer, a small team of qualified planners decides standard housing applications within a fixed deadline, and the council refunds the fee if it is late. Quarterly, each publishes decisions on time, median wait and homes started on approved sites.",
+    "fail_number": "Fewer than 80% of standard housing applications decided on time at the end of the trial, or any fall in affordable homes agreed on big sites.",
+    "stop": "2027-05-23",
+    "statement": "Five jurors said cut the tax. Five said fund planning. A tie, so the safer one goes first. One report, two modelled sites, is no reason to rip up safety or affordable homes. A council with no planners cannot approve a shed. So: three councils, a deadline, fee back if they miss it. Count the roofs. A promise is not a wall."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "answer": "issue",
+      "claim": "By 22 January 2027 the UK government will not have announced the abolition of stamp duty on new-build homes.",
+      "prior": 0.88,
+      "due": "2027-01-22",
+      "rule": "True if no gov.uk or HM Treasury announcement of scrapping stamp duty (SDLT) on new-build homes exists by the due date; check gov.uk.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "answer": "A",
+      "claim": "By 31 March 2027 the UK government will have announced new money or a fee change aimed at staffing local planning authorities.",
+      "prior": 0.45,
+      "due": "2027-03-31",
+      "rule": "True if a gov.uk announcement before the due date names funding or planning fee changes to pay for planning staff in councils.",
+      "sources": [
+        "s2"
+      ],
+      "result": "pending"
+    }
+  ]
+}

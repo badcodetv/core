@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0597",
+  "wants": "Faster planning so more homes get built, especially social ones.",
+  "limit": "Don't drop affordable homes from big sites.",
+  "split": "yes"
+ },
+ {
+  "id": "c0486",
+  "wants": "Cut stamp duty so first homes cost less to buy.",
+  "limit": "Don't let cheaper building mean unsafe homes.",
+  "split": "yes"
+ },
+ {
+  "id": "c0139",
+  "wants": "Build more homes near jobs, quicker, without the paperwork drag.",
+  "limit": "Don't let developers skip the affordable bit.",
+  "split": "yes"
+ },
+ {
+  "id": "c0411",
+  "wants": "Homes my grandchildren can afford, built to last.",
+  "limit": "Don't cut the rules that stop damp and bad building.",
+  "split": "no"
+ },
+ {
+  "id": "c0922",
+  "wants": "Scrap the red tape and taxes so builders can get on.",
+  "limit": "Keep safety checks, just stop the endless forms.",
+  "split": "yes"
+ },
+ {
+  "id": "c0272",
+  "wants": "Cheaper homes for renters like me, not just profits.",
+  "limit": "Don't let builders dodge affordable homes.",
+  "split": "yes"
+ },
+ {
+  "id": "c0318",
+  "wants": "Just get houses built. I don't mind how.",
+  "limit": "No opinion on that, sorry.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0696",
+  "wants": "Make it quicker for councils to say yes to flats.",
+  "limit": "Don't cut the homes for people on low pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0493",
+  "wants": "Don't know much, but homes should be cheaper.",
+  "limit": "Keep building standards so flats aren't shoddy.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0864",
+  "wants": "Fewer costs on developers, but more social homes built.",
+  "limit": "Don't let the green rules be dropped for profit.",
+  "split": "yes"
+ },
+ {
+  "id": "c0777",
+  "wants": "I wouldn't know. Probably a lot of hot air.",
+  "limit": "Don't wreck the village with giant estates.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0143",
+  "wants": "Cut stamp duty, get rid of the green box-ticking.",
+  "limit": "Keep the fire and building safety checks.",
+  "split": "yes"
+ },
+ {
+  "id": "c0945",
+  "wants": "Affordable homes for young people, even if it costs more.",
+  "limit": "Don't cut social housing to save developers money.",
+  "split": "no"
+ },
+ {
+  "id": "c0451",
+  "wants": "Build homes, but don't let builders cut corners.",
+  "limit": "Don't drop the standards that keep homes safe.",
+  "split": "no"
+ },
+ {
+  "id": "c0908",
+  "wants": "Rents are too high. Homes need to be cheaper.",
+  "limit": "Don't let the affordable bit disappear from estates.",
+  "split": "yes"
+ },
+ {
+  "id": "c0175",
+  "wants": "Councils need more staff so planning is quicker.",
+  "limit": "Don't let rules on green homes slip.",
+  "split": "yes"
+ },
+ {
+  "id": "c0853",
+  "wants": "Stop the endless delays, I've been waiting for years.",
+  "limit": "Don't drop the affordable bit or the flood-safety rules.",
+  "split": "yes"
+ },
+ {
+  "id": "c0032",
+  "wants": "Don't really follow it. Fewer taxes sound sensible.",
+  "limit": "Don't spoil the countryside with new roads.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0355",
+  "wants": "Cheaper flats so I can get on the ladder.",
+  "limit": "Don't let builders skip the safety and quality stuff.",
+  "split": "yes"
+ },
+ {
+  "id": "c0134",
+  "wants": "Unsure about the figures, but planning takes ages.",
+  "limit": "Don't let them build right next to my house.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0694",
+  "wants": "Cut stamp duty and let builders get on with it.",
+  "limit": "Keep proper safety checks, no short cuts.",
+  "split": "yes"
+ },
+ {
+  "id": "c0029",
+  "wants": "Scrap the stamp duty and the green add-ons.",
+  "limit": "Keep the basic building safety rules.",
+  "split": "yes"
+ },
+ {
+  "id": "c0042",
+  "wants": "Stop the rules that make building cost so much.",
+  "limit": "Don't let them build junk that falls apart.",
+  "split": "yes"
+ },
+ {
+  "id": "c0960",
+  "wants": "Not sure. Houses seem really expensive for people my age.",
+  "limit": "Don't let the cheap bits make homes worse.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0350",
+  "wants": "Keep the tax as it is, it pays for the schools.",
+  "limit": "Don't let developers dodge affordable housing.",
+  "split": "no"
+ },
+ {
+  "id": "c0288",
+  "wants": "Faster planning, but keep the green standards too.",
+  "limit": "Don't drop the energy and design standards.",
+  "split": "yes"
+ },
+ {
+  "id": "c0507",
+  "wants": "Cut stamp duty so first-time buyers can afford it.",
+  "limit": "Don't let affordable homes disappear from the plans.",
+  "split": "yes"
+ },
+ {
+  "id": "c0698",
+  "wants": "I don't know much. Rent is what I think about.",
+  "limit": "No strong view on that yet.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0856",
+  "wants": "Get the builders building. Cut the taxes that stop them.",
+  "limit": "Keep the safety checks, they stop disasters.",
+  "split": "yes"
+ },
+ {
+  "id": "c0581",
+  "wants": "More social homes, built faster, paid for fairly.",
+  "limit": "Don't drop affordable homes for cheaper deals.",
+  "split": "no"
+ },
+ {
+  "id": "c0580",
+  "wants": "More homes for young people, even if taxes change.",
+  "limit": "Don't cut the energy rules, bills are high.",
+  "split": "no"
+ },
+ {
+  "id": "c0404",
+  "wants": "Cut stamp duty and speed up planning approvals.",
+  "limit": "Don't lose the safety rules in the rush.",
+  "split": "yes"
+ },
+ {
+  "id": "c0524",
+  "wants": "Don't know. Rent is far too much.",
+  "limit": "Don't let cheap building put old people at risk.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0858",
+  "wants": "Cut tax on building, I can't afford a flat.",
+  "limit": "Don't let ministers ruin the local area.",
+  "split": "yes"
+ },
+ {
+  "id": "c0176",
+  "wants": "Homes should be built where people need them.",
+  "limit": "Don't cut the affordable homes to help builders.",
+  "split": "no"
+ },
+ {
+  "id": "c0794",
+  "wants": "Less red tape so houses go up faster.",
+  "limit": "Don't drop the safety checks to speed it up.",
+  "split": "yes"
+ },
+ {
+  "id": "c0753",
+  "wants": "Not sure. Cheaper houses would be good.",
+  "limit": "Don't wreck the look of the streets.",
+  "split": "yes"
+ },
+ {
+  "id": "c0704",
+  "wants": "I'm not following it, but builders should pay their way.",
+  "limit": "Don't let them build cheap rubbish.",
+  "split": "no"
+ },
+ {
+  "id": "c0616",
+  "wants": "Affordable homes for people who can't buy, please.",
+  "limit": "Don't cut the rules that keep homes safe.",
+  "split": "no"
+ },
+ {
+  "id": "c0009",
+  "wants": "Cut stamp duty, speed up the sites, let people build.",
+  "limit": "Keep the basic safety rules, nobody wants fires.",
+  "split": "yes"
+ },
+ {
+  "id": "c0311",
+  "wants": "Fewer costs, and houses built sooner.",
+  "limit": "Don't cut the design rules that stop bad flats.",
+  "split": "yes"
+ },
+ {
+  "id": "c0702",
+  "wants": "Speed up planning and cut the taxes on new builds.",
+  "limit": "Keep the proper safety and building checks.",
+  "split": "yes"
+ },
+ {
+  "id": "c0060",
+  "wants": "Just build more homes. I don't care who pays.",
+  "limit": "Don't wreck the green belt.",
+  "split": "yes"
+ },
+ {
+  "id": "c0269",
+  "wants": "Cheaper homes for families starting out.",
+  "limit": "Don't cut the green standards and insulation.",
+  "split": "yes"
+ },
+ {
+  "id": "c0875",
+  "wants": "Don't know enough. Sounds like builders get too much.",
+  "limit": "Don't let them build without proper safety checks.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0654",
+  "wants": "Cut stamp duty so more people can buy.",
+  "limit": "Don't let affordable housing targets be dropped.",
+  "split": "yes"
+ },
+ {
+  "id": "c0974",
+  "wants": "Not sure. Maybe just let builders get on.",
+  "limit": "Keep building regulations, they matter.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0212",
+  "wants": "Homes should be cheaper for young people.",
+  "limit": "Don't cut the homes for people on low pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0936",
+  "wants": "Didn't follow this. Just don't make it worse for us.",
+  "limit": "Don't let the green rules bring big bills.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0476",
+  "wants": "More social homes, and quicker decisions by councils.",
+  "limit": "Don't drop the affordable bit from developments.",
+  "split": "no"
+ },
+ {
+  "id": "c0103",
+  "wants": "Affordable homes for renters, and keep the safety rules.",
+  "limit": "Don't let developers escape the affordable quota.",
+  "split": "no"
+ },
+ {
+  "id": "c0132",
+  "wants": "Cut stamp duty and let builders build.",
+  "limit": "Keep the proper building rules, for safety's sake.",
+  "split": "yes"
+ },
+ {
+  "id": "c0767",
+  "wants": "Less paperwork, faster planning, more homes.",
+  "limit": "Don't let shoddy homes go up.",
+  "split": "yes"
+ },
+ {
+  "id": "c0990",
+  "wants": "Keep the green standards. Better homes, lower bills.",
+  "limit": "Don't cut the energy rules to save builders money.",
+  "split": "no"
+ },
+ {
+  "id": "c0764",
+  "wants": "I don't know. Maybe homes just need to be cheaper.",
+  "limit": "Don't let cheap building mean damp homes.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0558",
+  "wants": "Affordable homes, not just big houses for rich people.",
+  "limit": "Don't cut the affordable homes from big sites.",
+  "split": "no"
+ },
+ {
+  "id": "c0894",
+  "wants": "Speed up planning. Councils are too slow.",
+  "limit": "Keep the green standards and proper building checks.",
+  "split": "yes"
+ },
+ {
+  "id": "c0157",
+  "wants": "Keep the green rules, and build the social homes.",
+  "limit": "Don't drop the green standards to cut costs.",
+  "split": "no"
+ },
+ {
+  "id": "c0167",
+  "wants": "More affordable homes, please, even if it's slower.",
+  "limit": "Don't let developers skip the affordable part.",
+  "split": "no"
+ },
+ {
+  "id": "c0077",
+  "wants": "Homes for people who need them, built safely.",
+  "limit": "Don't cut back social housing.",
+  "split": "no"
+ },
+ {
+  "id": "c0347",
+  "wants": "Cut stamp duty, get rid of the green bits.",
+  "limit": "Don't let them knock down the local green space.",
+  "split": "yes"
+ },
+ {
+  "id": "c0706",
+  "wants": "Affordable homes, and stop the endless delays.",
+  "limit": "Don't cut the standards that make homes safe.",
+  "split": "no"
+ },
+ {
+  "id": "c0660",
+  "wants": "Build faster and cut the costs on developers.",
+  "limit": "Keep safety checks, don't let it get shoddy.",
+  "split": "yes"
+ },
+ {
+  "id": "c0909",
+  "wants": "Cut the taxes on new houses, it helps.",
+  "limit": "Don't let them build right next to us.",
+  "split": "yes"
+ },
+ {
+  "id": "c0278",
+  "wants": "Don't know much. Houses take forever to finish.",
+  "limit": "Don't let quality slip to save money.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0076",
+  "wants": "Just get on with building. Don't overthink it.",
+  "limit": "Don't cut the flood and fire rules.",
+  "split": "yes"
+ },
+ {
+  "id": "c0366",
+  "wants": "Affordable homes for people starting out, please.",
+  "limit": "Don't cut affordable housing from new sites.",
+  "split": "no"
+ },
+ {
+  "id": "c0423",
+  "wants": "Cheaper houses would be good for my generation.",
+  "limit": "Keep the good insulation and energy rules.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0886",
+  "wants": "Cut stamp duty, I'm trying to buy a first home.",
+  "limit": "Don't cut safety for speed.",
+  "split": "yes"
+ },
+ {
+  "id": "c0727",
+  "wants": "Don't know. I'd rather see the planning sorted.",
+  "limit": "Don't wreck green space for car parks.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0926",
+  "wants": "Cheaper rents, and homes that don't fall apart.",
+  "limit": "Don't knock down the homes we've got.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0761",
+  "wants": "Build the houses. We need them, my granddaughter's waiting.",
+  "limit": "Don't put up any tall blocks near us.",
+  "split": "no"
+ },
+ {
+  "id": "c0133",
+  "wants": "Cheaper homes, and proper safe places to live.",
+  "limit": "Don't cut affordable housing or repairs.",
+  "split": "no"
+ },
+ {
+  "id": "c0693",
+  "wants": "Affordable homes, and the planners to be quicker.",
+  "limit": "Keep the building standards so homes last.",
+  "split": "yes"
+ },
+ {
+  "id": "c0731",
+  "wants": "More social homes, built fast, paid by developers.",
+  "limit": "Don't drop the green and design rules.",
+  "split": "no"
+ },
+ {
+  "id": "c0669",
+  "wants": "Affordable homes built faster, and planners better funded.",
+  "limit": "Don't cut the affordable homes, please.",
+  "split": "no"
+ },
+ {
+  "id": "c0832",
+  "wants": "Cut stamp duty, fewer rules, let people build.",
+  "limit": "Keep the basic safety rules, obviously.",
+  "split": "yes"
+ },
+ {
+  "id": "c0376",
+  "wants": "Cheaper rent, and the taxes on builders cut.",
+  "limit": "Don't let the new homes be dodgy.",
+  "split": "yes"
+ },
+ {
+  "id": "c0135",
+  "wants": "Affordable homes for young people, paid for fairly.",
+  "limit": "Don't cut the green rules, they cut bills.",
+  "split": "no"
+ },
+ {
+  "id": "c0321",
+  "wants": "Cut stamp duty and speed up planning.",
+  "limit": "Don't let quality drop to save money.",
+  "split": "yes"
+ },
+ {
+  "id": "c0647",
+  "wants": "Don't know. Just don't make the roads worse.",
+  "limit": "Don't let them skip the local schools and roads.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0086",
+  "wants": "Not sure. Maybe builders should pay more, not us.",
+  "limit": "Don't cut the good building checks.",
+  "split": "no"
+ },
+ {
+  "id": "c0276",
+  "wants": "Affordable homes, and planning done faster.",
+  "limit": "Don't drop the affordable bit to please builders.",
+  "split": "no"
+ },
+ {
+  "id": "c0966",
+  "wants": "Careful homes, built to last, with proper green features.",
+  "limit": "Don't cut building rules to save money.",
+  "split": "no"
+ },
+ {
+  "id": "c0364",
+  "wants": "Faster planning, keep the green standards.",
+  "limit": "Don't weaken energy and safety rules.",
+  "split": "no"
+ },
+ {
+  "id": "c0035",
+  "wants": "More affordable homes for families, built quickly.",
+  "limit": "Don't let developers cut the affordable part.",
+  "split": "no"
+ },
+ {
+  "id": "c0445",
+  "wants": "Cut the tax on new homes so they get built.",
+  "limit": "Don't cut the safety stuff.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0120",
+  "wants": "Greener homes, built to standard, not cheap.",
+  "limit": "Don't cut the energy rules for developers.",
+  "split": "no"
+ },
+ {
+  "id": "c0770",
+  "wants": "Affordable homes, and no bulldozing of estates.",
+  "limit": "Don't cut the affordable homes.",
+  "split": "no"
+ },
+ {
+  "id": "c0074",
+  "wants": "Not sure about the figures, just get the homes built.",
+  "limit": "Don't cut anything that makes homes safe.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0418",
+  "wants": "Cheaper homes for my age, and quicker builds.",
+  "limit": "Don't cut the energy rules for these homes.",
+  "split": "yes"
+ },
+ {
+  "id": "c0806",
+  "wants": "Cut stamp duty and fewer rules on small sites.",
+  "limit": "Don't let building quality drop.",
+  "split": "yes"
+ },
+ {
+  "id": "c0419",
+  "wants": "Cut the rules and taxes so builders can start.",
+  "limit": "Don't stop the social homes altogether.",
+  "split": "yes"
+ },
+ {
+  "id": "c0126",
+  "wants": "Better planning, and keep the green rules too.",
+  "limit": "Don't cut the energy and safety standards.",
+  "split": "no"
+ },
+ {
+  "id": "c0093",
+  "wants": "Affordable homes for young people, not just profit.",
+  "limit": "Don't cut the affordable housing targets.",
+  "split": "no"
+ },
+ {
+  "id": "c0845",
+  "wants": "Cheaper homes, and fewer taxes on builders.",
+  "limit": "Don't let cheap homes be unsafe.",
+  "split": "yes"
+ },
+ {
+  "id": "c0516",
+  "wants": "Affordable homes near work, built quicker.",
+  "limit": "Don't drop the rules on fire safety.",
+  "split": "yes"
+ },
+ {
+  "id": "c0058",
+  "wants": "Cut the stamp duty and the planning red tape.",
+  "limit": "Keep the fire safety rules for flats.",
+  "split": "yes"
+ },
+ {
+  "id": "c0992",
+  "wants": "Not sure. Build more, I suppose.",
+  "limit": "Don't wreck the countryside.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0592",
+  "wants": "Cut stamp duty and let developers get on.",
+  "limit": "Keep safety checks, don't skimp on the flats.",
+  "split": "yes"
+ }
+]

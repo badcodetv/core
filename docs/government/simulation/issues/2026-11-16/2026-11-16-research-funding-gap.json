@@ -1,0 +1,533 @@
+{
+ "schema": "fp-sim/1",
+ "id": "2026-11-16-research-funding-gap",
+ "simulated": true,
+ "stamp": "SIMULATED",
+ "stage": "published",
+ "run": {
+  "mode": "replay",
+  "run_date": "2026-11-23",
+  "news_date": "2026-11-16",
+  "replay_stamp": "Replayed on 23 Nov 2026 from the news of 16 Nov 2026"
+ },
+ "issue": {
+  "title": "The EU research programme could leave a multi-billion hole in UK science",
+  "short": "RESEARCH MONEY",
+  "question": "If joining the EU's next research programme costs more than the UK has set aside, what should the UK cut, pay or give up?",
+  "summary": "On 16 November 2026 the thinktank Science Works projected a £7.7 billion shortfall over the life of FP10, the EU's successor to Horizon Europe, if the UK fully joins. The UK has budgeted £2.2 billion a year for it, and the worst case in the analysis is a £16.5 billion gap. The most likely gap is £1.2 billion in 2029-30, rising to £1.5 billion by 2034-35. The thinktank suggests joining only the Excellent Science part, or, if the UK joins in full, negotiating a stricter refund rule. The UK has not committed to joining, and the analysis came out on the eve of UK-EU reset talks.",
+  "summary_sources": [
+   "s1",
+   "s2"
+  ],
+  "field": "research-funding",
+  "owner": "chancellor",
+  "slot": "longest-wait",
+  "slot_reason": "Rule 2: the field research-funding has never run in the simulation, and this weight-2 UK item was in the news of 16 Nov 2026 (topic assigned by the orchestrator so parallel replays do not repeat a field). The EU trade field already ran, so the issue is framed around UK research funding choices.",
+  "news": [
+   {
+    "headline": "Thinktank says joining EU's FP10 research programme could leave multi-billion-pound UK funding gap",
+    "memory_id": "135cbe9d-ed23-4ab2-b1f9-d7eecc7fac50",
+    "sources": [
+     "s1",
+     "s2"
+    ]
+   }
+  ]
+ },
+ "poll": null,
+ "sources": [
+  {
+   "id": "s1",
+   "title": "UK 'will have to cut research budgets' to join Horizon successor",
+   "publisher": "Times Higher Education",
+   "date": "2026-11-16",
+   "url": "https://www.timeshighereducation.com/news/uk-will-have-cut-research-budgets-join-horizon-successor"
+  },
+  {
+   "id": "s2",
+   "title": "The UK can't afford full membership of the next Horizon Europe, think tank argues",
+   "publisher": "Research Agenda",
+   "date": "2026-11-16",
+   "url": "https://www.researchagenda.news/articles/the-uk-cant-afford-full-membership-of-the-next-horizon-europ.html"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "sim-clerk",
+   "sim-citizens",
+   "sim-bench",
+   "sim-gate",
+   "sim-jury",
+   "sim-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-16-research-funding-gap/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0372",
+   "c0819",
+   "c0809",
+   "c0406",
+   "c0580",
+   "c0767",
+   "c0999",
+   "c0156",
+   "c0499",
+   "c0541",
+   "c0872",
+   "c0978",
+   "c0470",
+   "c0638",
+   "c0013",
+   "c0994",
+   "c0032",
+   "c0650",
+   "c0197",
+   "c0874",
+   "c0240",
+   "c0200",
+   "c0214",
+   "c0239",
+   "c0782",
+   "c0368",
+   "c0316",
+   "c0226",
+   "c0896",
+   "c0740",
+   "c0295",
+   "c0086",
+   "c0774",
+   "c0104",
+   "c0738",
+   "c0627",
+   "c0619",
+   "c0409",
+   "c0439",
+   "c0466",
+   "c0853",
+   "c0178",
+   "c0198",
+   "c0357",
+   "c0629",
+   "c0855",
+   "c0550",
+   "c0044",
+   "c0893",
+   "c0715",
+   "c0026",
+   "c0829",
+   "c0207",
+   "c0640",
+   "c0734",
+   "c0716",
+   "c0559",
+   "c0218",
+   "c0206",
+   "c0542",
+   "c0605",
+   "c0176",
+   "c0346",
+   "c0480",
+   "c0049",
+   "c0666",
+   "c0621",
+   "c0745",
+   "c0763",
+   "c0453",
+   "c0744",
+   "c0106",
+   "c0444",
+   "c0299",
+   "c0454",
+   "c0582",
+   "c0839",
+   "c0711",
+   "c0660",
+   "c0945",
+   "c0273",
+   "c0554",
+   "c0562",
+   "c0520",
+   "c0458",
+   "c0867",
+   "c0771",
+   "c0574",
+   "c0263",
+   "c0187",
+   "c0940",
+   "c0129",
+   "c0097",
+   "c0812",
+   "c0710",
+   "c0361",
+   "c0053",
+   "c0717",
+   "c0503",
+   "c0707"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "kind": "test",
+    "text": "Keep research money in British universities and labs.",
+    "backers": 16
+   },
+   {
+    "kind": "test",
+    "text": "Get a fair deal with Europe, with a refund if costs run over.",
+    "backers": 15
+   },
+   {
+    "kind": "test",
+    "text": "Keep Britain's scientists and researchers here, not abroad.",
+    "backers": 18
+   },
+   {
+    "kind": "test",
+    "text": "Join only the parts that pay back, not the whole bill.",
+    "backers": 8
+   },
+   {
+    "kind": "limit",
+    "text": "Don't cut the NHS or school budgets to pay for it.",
+    "backers": 51
+   },
+   {
+    "kind": "limit",
+    "text": "Don't spend billions without a vote or a say.",
+    "backers": 7
+   },
+   {
+    "kind": "limit",
+    "text": "Don't close labs, colleges or universities to pay.",
+    "backers": 25
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0660",
+    "who": "56, Scotland, student, private rent",
+    "text": "I'd not join. Use the money for our own researchers. Limit: Don't close a university course for it."
+   },
+   {
+    "citizen": "c0044",
+    "who": "62, East Midlands, long-term sick or disabled, owns with a mortgage",
+    "text": "Keep our money at home; British science first. Limit: Don't pay Brussels while the NHS waits."
+   },
+   {
+    "citizen": "c0214",
+    "who": "74, North West, retired, private rent",
+    "text": "Scientists matter; keep the good ones from leaving Britain. Limit: Don't cut the NHS to pay for research."
+   },
+   {
+    "citizen": "c0499",
+    "who": "60, Yorkshire and The Humber, employed, private rent",
+    "text": "Keep good scientists working here and stop the brain drain. Limit: Don't cut schools and hospitals to pay for it."
+   },
+   {
+    "citizen": "c0097",
+    "who": "43, London, employed, owns with a mortgage",
+    "text": "Join in full, but cut the waste first. Limit: Don't close British labs to pay for Europe's."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "title": "Join FP10 in full only with a tougher refund rule and a hard cap",
+   "answer": "Make the refund rule the price of joining. The UK is refunded when its grants underperform by 16%; Switzerland's trigger is 8% (s1). UK negotiators should win a stricter rule before signing, and the Treasury should cap the contribution at the £2.2 billion a year already budgeted (s1). Science Works puts the likeliest gap at £1.2 billion in 2029-30 (s1), so the deal should say who pays any overrun, with a review point as the 2025 spending review already allows (s2). No gap is met from NHS, school or lab budgets. It worked if the signed text sets the trigger, yearly bills stay within budget, and UK success in European Research Council and Marie Curie grants holds (s2).",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1",
+    "s2"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Give an independent science board the FP10 budget and the deal",
+   "answer": "Parliament should hand the FP10 decision to a ring-fenced research board, instead of leaving it to year-by-year Treasury haggling. The government would set the board a fixed envelope, starting from the £2.2 billion a year already budgeted (s1). The board would negotiate the entry terms, including a higher refund trigger than today's 16% (s1), and choose between full membership and Excellent Science only, which the thinktank says costs £2.4 billion a year less (s1). It would publish costs yearly and could not draw on NHS or school budgets, a limit 51 simulated citizens backed. You'd know it worked if the real gap stays inside the envelope, against a projected £1.2 billion in 2029-30 (s1).",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1"
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Join Excellent Science; let local research users steer the rest",
+   "answer": "The UK should join only Excellent Science. Science Works estimates this would free about £1.1 billion a year for British priorities (s1). Keep that money in UK research, with grants decided by local boards elected by researchers, lab staff and people who use their work. Ministers and big firms should have no reserved seats. Boards must publish awards, costs and results. Pay within the research budget already set aside; do not cut schools or the NHS or close labs to cover membership. After three years, judge success by research jobs kept, useful projects completed and whether spending stayed within budget.",
+   "engine": "codex",
+   "model": "gpt-6",
+   "blind": true,
+   "sources": [
+    "s1"
+   ]
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "Keep research money in UK labs",
+    "result": "pass",
+    "note": "Spending is capped at the £2.2bn already budgeted and success is judged on UK grant results, so the money stays in UK-funded research.",
+    "sources": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Fair deal, refund if costs run over",
+    "result": "pass",
+    "note": "The answer makes a stricter refund trigger than today's 16% the price of joining, as Science Works suggests.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Keep scientists here",
+    "result": "unclear",
+    "note": "Holding strong ERC and Marie Curie results is the stated test, but the article doesn't show how that keeps scientists in Britain.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Join only parts that pay back",
+    "result": "fail",
+    "note": "It joins in full, not only the parts that pay back; the thinktank's cheaper option is Excellent Science only.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "No NHS or school cuts",
+    "result": "pass",
+    "note": "It rules out meeting any gap from NHS, school or lab budgets, though who then pays an overrun is left to the deal. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "No billions without a vote or say",
+    "result": "unclear",
+    "note": "It sets a review point the spending review allows, but gives no vote or say to Parliament or anyone else.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "No closing labs or universities",
+    "result": "pass",
+    "note": "It rules out meeting any gap from lab budgets. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Keep research money in UK labs",
+    "result": "pass",
+    "note": "A ring-fenced board starts from the £2.2bn already budgeted, keeping the money in UK research.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Fair deal, refund if costs run over",
+    "result": "pass",
+    "note": "The board would seek a higher refund trigger than today's 16%, which s1 says Science Works suggests.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Keep scientists here",
+    "result": "unclear",
+    "note": "Nothing in the answer or sources shows what it does for researchers staying in Britain. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Join only parts that pay back",
+    "result": "pass",
+    "note": "The board can choose Excellent Science only, which s1 says costs £2.4bn a year less.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "No NHS or school cuts",
+    "result": "pass",
+    "note": "It bars the board from drawing on NHS or school budgets. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "No billions without a vote or say",
+    "result": "pass",
+    "note": "Parliament hands over the decision and costs are published yearly, giving a say through law and scrutiny. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "No closing labs or universities",
+    "result": "unclear",
+    "note": "It doesn't mention labs or universities; the fixed envelope may or may not force closures. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Keep research money in UK labs",
+    "result": "pass",
+    "note": "Money freed by Excellent Science (about £1.1bn a year, s1) stays in UK research, run by local boards.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Fair deal, refund if costs run over",
+    "result": "unclear",
+    "note": "It joins only one part and sets no refund rule, so a fair deal with a refund is not addressed. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Keep scientists here",
+    "result": "unclear",
+    "note": "Local boards keep money at home, but nothing shows this keeps scientists from leaving. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Join only parts that pay back",
+    "result": "pass",
+    "note": "It joins only Excellent Science, the cheaper option in s1.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "No NHS or school cuts",
+    "result": "pass",
+    "note": "It says not to cut schools or the NHS to cover membership. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "No billions without a vote or say",
+    "result": "pass",
+    "note": "Elected boards of researchers and users give people a direct say. (no source needed: logic)",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "No closing labs or universities",
+    "result": "pass",
+    "note": "It says not to close labs to cover membership. (no source needed: logic)",
+    "sources": []
+   }
+  ],
+  "verdict": "A and B and C each pass the limits that matter most to the citizens, but only B and C pass the test on joining the parts that pay back, and none settles whether scientists stay. What's left is a choice of who runs the money.",
+  "to_jury": true,
+  "rejected_claims": []
+ },
+ "jury": {
+  "seed": "2026-11-16-research-funding-gap/jury",
+  "size": 12,
+  "ids": [
+   "c0729",
+   "c0877",
+   "c0324",
+   "c0461",
+   "c0393",
+   "c0635",
+   "c0136",
+   "c0343",
+   "c0110",
+   "c0298",
+   "c0982",
+   "c0268"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "Who should decide how UK research money is spent: ministers under tighter terms, an independent board, or boards chosen by researchers and users?",
+  "options": [
+   "Ministers, with a tougher deal",
+   "An independent science board",
+   "Local boards of researchers and users"
+  ],
+  "votes": [
+   4,
+   5,
+   3
+  ],
+  "ruling": "An independent science board, by 5 votes to 4 for ministers with a tougher deal and 3 for local boards; the jurors wanted research money kept away from year-by-year budget fights.",
+  "reasons": [
+   {
+    "juror": "c0324",
+    "text": "Science is long-term. Keep it out of day-to-day politics, let a board of people who know the field hold the money."
+   },
+   {
+    "juror": "c0298",
+    "text": "A ring-fenced board stops research being the first thing cut when the Treasury is short. It also has to publish costs."
+   },
+   {
+    "juror": "c0110",
+    "text": "Ministers answer to us at elections. A board nobody voted for worries me; tougher terms and a firm cap suit me better."
+   },
+   {
+    "juror": "c0393",
+    "text": "Researchers and the people using the work know what is needed. Local boards feel closer to us than a London committee."
+   }
+  ],
+  "review": "2027-11-23",
+  "real_jury": false
+ },
+ "minister": {
+  "post": "chancellor",
+  "decision": "signed",
+  "trial": "For two years from 1 Feb 2027, a ring-fenced research board advises the Treasury on the FP10 terms. Treasury keeps the budget line fixed at the £2.2bn a year already set aside, and the board publishes each yearly cost and any gap. No NHS or school money is used.",
+  "fail_number": "Fails if the published yearly gap is above £1.2bn (the likeliest gap in 2029-30 projected by Science Works), or if any NHS or school budget is cut to cover it.",
+  "stop": "2029-01-31",
+  "statement": "The jury chose an independent science board. Fine.\n\nBudget set aside: £2.2bn a year.\nLikeliest gap, 2029-30: £1.2bn.\nPlaces the board may take it from: NHS, schools, labs. None.\n\nEvery pound has an address. This trial publishes the address, every year, before anyone says we can't afford it. Full membership or Excellent Science only stays open until the board has costed both. If it can't hold the line, it stops."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "answer": "issue",
+   "claim": "By 22 January 2027 the UK government has not formally announced a decision to join the EU's FP10 research programme in full.",
+   "prior": 0.8,
+   "due": "2027-01-22",
+   "rule": "True if no UK government announcement of full association to FP10 appears on gov.uk or in the main science press (Times Higher Education, Research Professional) by that date.",
+   "sources": [
+    "s1",
+    "s2"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "answer": "issue",
+   "claim": "By 30 June 2027 the UK and EU have publicly announced agreed terms for UK association to FP10, in full or in part.",
+   "prior": 0.25,
+   "due": "2027-06-30",
+   "rule": "True if gov.uk or the European Commission publishes agreed association terms for FP10 involving the UK by that date.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  }
+ ]
+}

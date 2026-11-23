@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0372",
+  "wants": "Join in full, with a stricter refund rule for British grants.",
+  "limit": "Don't let the bill rise without a vote in Parliament.",
+  "split": "no"
+ },
+ {
+  "id": "c0819",
+  "wants": "Keep our universities open and our labs paid for.",
+  "limit": "Don't cut the NHS to pay for European science.",
+  "split": "no"
+ },
+ {
+  "id": "c0809",
+  "wants": "Scientists should stay in Britain; we're losing them already.",
+  "limit": "Don't close a clinic or lab just to pay the bill.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0406",
+  "wants": "I don't know enough to say what's right here.",
+  "limit": "Don't let rents or bills go up for something I don't understand.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0580",
+  "wants": "Join, but only if the refund rule protects us.",
+  "limit": "Don't cut the NHS or schools for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0767",
+  "wants": "Put British money into British labs first, always.",
+  "limit": "Don't pay Brussels while our roads fall apart.",
+  "split": "no"
+ },
+ {
+  "id": "c0999",
+  "wants": "Join in full and fight for a stricter refund.",
+  "limit": "Don't let it be paid for by cutting schools.",
+  "split": "yes"
+ },
+ {
+  "id": "c0156",
+  "wants": "I'm not sure what it costs, so I'd want facts first.",
+  "limit": "Don't waste money on something we can't check.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0499",
+  "wants": "Keep good scientists working here and stop the brain drain.",
+  "limit": "Don't cut schools and hospitals to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0541",
+  "wants": "Only pay for the parts that help British researchers.",
+  "limit": "Don't close local colleges to fund it.",
+  "split": "no"
+ },
+ {
+  "id": "c0872",
+  "wants": "Honestly no idea. Ask someone who knows the money.",
+  "limit": "Don't make us pay more tax for a big deal.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0978",
+  "wants": "Join the big programme, but get a refund if it overruns.",
+  "limit": "Don't cut the NHS to find the money.",
+  "split": "no"
+ },
+ {
+  "id": "c0470",
+  "wants": "Universities need the money; that's what keeps research alive.",
+  "limit": "Don't let rents go up to pay for European grants.",
+  "split": "no"
+ },
+ {
+  "id": "c0638",
+  "wants": "I'd rather the money stayed for our own hospitals.",
+  "limit": "Don't pay blank cheques without any say in it.",
+  "split": "no"
+ },
+ {
+  "id": "c0013",
+  "wants": "Keep British labs funded, and join if terms are fair.",
+  "limit": "Don't cut school budgets for this.",
+  "split": "yes"
+ },
+ {
+  "id": "c0994",
+  "wants": "Keep it simple: British money for British science.",
+  "limit": "Don't pay for a deal that falls apart later.",
+  "split": "no"
+ },
+ {
+  "id": "c0032",
+  "wants": "Keep the universities going the way they always did.",
+  "limit": "Don't ask pensioners to pay more for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0650",
+  "wants": "Join in full and get the stricter refund we need.",
+  "limit": "Don't close factories or schools to fund it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0197",
+  "wants": "I haven't heard enough. I'd want the kids' schools protected.",
+  "limit": "Don't cut schools to pay for something abroad.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0874",
+  "wants": "Spend it at home, on jobs and things people need.",
+  "limit": "Don't cut the NHS, don't cut the benefits.",
+  "split": "no"
+ },
+ {
+  "id": "c0240",
+  "wants": "Join only the excellent part; keep the rest for us.",
+  "limit": "Don't close our own universities to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0200",
+  "wants": "I don't know what it's for, honestly.",
+  "limit": "Don't waste the money, and don't put my rent up.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0214",
+  "wants": "Scientists matter; keep the good ones from leaving Britain.",
+  "limit": "Don't cut the NHS to pay for research.",
+  "split": "yes"
+ },
+ {
+  "id": "c0239",
+  "wants": "I'd rather we stopped paying Europe at all.",
+  "limit": "Don't let them take more of our money without asking.",
+  "split": "no"
+ },
+ {
+  "id": "c0782",
+  "wants": "Keep the best researchers here; we need them.",
+  "limit": "Don't close courses that students depend on.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0368",
+  "wants": "Join if we can afford it, not at the cost of schools.",
+  "limit": "Don't cut the NHS or the pension to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0316",
+  "wants": "Join in full and cut the waste elsewhere to pay.",
+  "limit": "Don't cut the bus routes that get me to work.",
+  "split": "yes"
+ },
+ {
+  "id": "c0226",
+  "wants": "Stop sending money abroad; spend it on British things.",
+  "limit": "Don't cut the NHS to pay Brussels.",
+  "split": "no"
+ },
+ {
+  "id": "c0896",
+  "wants": "Join only the cheap bit and keep the rest at home.",
+  "limit": "Don't close the local hospital to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0740",
+  "wants": "I'd want a say in whether we join at all.",
+  "limit": "Don't spend it without a vote on it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0295",
+  "wants": "Keep science going in our towns, not just London.",
+  "limit": "Don't cut school dinners or bus fares.",
+  "split": "no"
+ },
+ {
+  "id": "c0086",
+  "wants": "Join, but only if the deal is good for British students.",
+  "limit": "Don't make us pay for the European part alone.",
+  "split": "yes"
+ },
+ {
+  "id": "c0774",
+  "wants": "Join in full and keep our researchers from going abroad.",
+  "limit": "Don't cut schools to pay for the deal.",
+  "split": "yes"
+ },
+ {
+  "id": "c0104",
+  "wants": "Join in full; the refund rule needs fixing first.",
+  "limit": "Don't close a local lab or college to pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0738",
+  "wants": "Protect British universities first, whatever the European deal is.",
+  "limit": "Don't cut school or NHS budgets to pay for Brussels.",
+  "split": "no"
+ },
+ {
+  "id": "c0627",
+  "wants": "I don't understand it. I'd leave it to the experts.",
+  "limit": "Don't waste our tax; that's all I ask.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0619",
+  "wants": "Shouldn't be cutting things young people use.",
+  "limit": "Don't cut student grants or college places.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0409",
+  "wants": "Keep our money at home; the NHS needs it more.",
+  "limit": "Don't hand over billions with no say in it.",
+  "split": "no"
+ },
+ {
+  "id": "c0439",
+  "wants": "Stop paying for European science; spend it on Britain.",
+  "limit": "Don't cut the NHS to fund anything abroad.",
+  "split": "no"
+ },
+ {
+  "id": "c0466",
+  "wants": "Join; Britain's scientists have always done well in Europe.",
+  "limit": "Don't close our hospitals to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0853",
+  "wants": "Join if it's cheaper for us; check the numbers first.",
+  "limit": "Don't cut care homes or schools to fund it.",
+  "split": "no"
+ },
+ {
+  "id": "c0178",
+  "wants": "I'd want Scotland's universities protected in any deal.",
+  "limit": "Don't close the local college.",
+  "split": "no"
+ },
+ {
+  "id": "c0198",
+  "wants": "Stop sending money abroad; use it for jobs here.",
+  "limit": "Don't cut the NHS or pensions to pay Brussels.",
+  "split": "no"
+ },
+ {
+  "id": "c0357",
+  "wants": "Join in full only if we get our money's worth back.",
+  "limit": "Don't let it cost the taxpayer more without a say.",
+  "split": "yes"
+ },
+ {
+  "id": "c0629",
+  "wants": "Join in full and fight for the refund rule.",
+  "limit": "Don't cut schools to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0855",
+  "wants": "I'd want to know the cost before I say yes.",
+  "limit": "Don't close the local library or school for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0550",
+  "wants": "Keep British science funded so young scientists get jobs.",
+  "limit": "Don't cut student support or the NHS.",
+  "split": "yes"
+ },
+ {
+  "id": "c0044",
+  "wants": "Keep our money at home; British science first.",
+  "limit": "Don't pay Brussels while the NHS waits.",
+  "split": "no"
+ },
+ {
+  "id": "c0893",
+  "wants": "Join in full and keep British researchers here.",
+  "limit": "Don't cut schools and the environment to pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0715",
+  "wants": "Join in full if the refund is fixed; science matters.",
+  "limit": "Don't close small labs to pay the bill.",
+  "split": "yes"
+ },
+ {
+  "id": "c0026",
+  "wants": "I don't know enough. Ask scientists, not politicians.",
+  "limit": "Don't cut the NHS to pay the bill.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0829",
+  "wants": "Join only the excellent part; that's the sensible bit.",
+  "limit": "Don't close our universities to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0207",
+  "wants": "Don't know much; don't want my rent to rise.",
+  "limit": "Don't make us pay with no vote on it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0640",
+  "wants": "Join in full, and get British universities a fair share.",
+  "limit": "Don't cut school budgets or the NHS for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0734",
+  "wants": "Science is worth paying for, if we get value.",
+  "limit": "Don't close university courses to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0716",
+  "wants": "Keep our money at home; I'd cut it from Europe.",
+  "limit": "Don't cut the NHS to pay anything abroad.",
+  "split": "no"
+ },
+ {
+  "id": "c0559",
+  "wants": "Stop paying Europe for science we can do ourselves.",
+  "limit": "Don't raise taxes on my wage for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0218",
+  "wants": "I'd leave research money at home, thanks.",
+  "limit": "Don't cut the pension or the NHS to pay.",
+  "split": "no"
+ },
+ {
+  "id": "c0206",
+  "wants": "Join in full, and fight for stronger refund terms.",
+  "limit": "Don't close our lab or cut the student grants.",
+  "split": "yes"
+ },
+ {
+  "id": "c0542",
+  "wants": "I'd join only if it costs nothing extra.",
+  "limit": "Don't cut schools to pay for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0605",
+  "wants": "Keep British universities funded and our researchers paid.",
+  "limit": "Don't cut the NHS or care services to fund it.",
+  "split": "no"
+ },
+ {
+  "id": "c0176",
+  "wants": "I'd want the NHS and schools funded first, science second.",
+  "limit": "Don't close a school or clinic to pay for research.",
+  "split": "no"
+ },
+ {
+  "id": "c0346",
+  "wants": "Join in full and negotiate a refund if it overspends.",
+  "limit": "Don't cut our schools to pay the bill.",
+  "split": "yes"
+ },
+ {
+  "id": "c0480",
+  "wants": "Science should be paid for, whatever it costs us.",
+  "limit": "Don't close the lab my grandkids would use.",
+  "split": "yes"
+ },
+ {
+  "id": "c0049",
+  "wants": "Stop funding Europe's science; British money for British kids.",
+  "limit": "Don't cut the NHS to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0666",
+  "wants": "Join only if it's cheaper than what we get back.",
+  "limit": "Don't hand over billions without a say.",
+  "split": "no"
+ },
+ {
+  "id": "c0621",
+  "wants": "I don't know. Ask someone who does.",
+  "limit": "Don't waste our tax, that's the only thing I want.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0745",
+  "wants": "Science funding should be big; join in full.",
+  "limit": "Don't cut care or schools to pay.",
+  "split": "yes"
+ },
+ {
+  "id": "c0763",
+  "wants": "Scientists deserve the money, but not at our expense.",
+  "limit": "Don't close the local hospital or library.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0453",
+  "wants": "Keep research at British universities and labs.",
+  "limit": "Don't raise council tax for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0744",
+  "wants": "Let the universities fund themselves; I won't pay.",
+  "limit": "Don't cut the NHS to pay for European projects.",
+  "split": "no"
+ },
+ {
+  "id": "c0106",
+  "wants": "Join in full, and keep our labs going.",
+  "limit": "Don't cut school dinners or services.",
+  "split": "yes"
+ },
+ {
+  "id": "c0444",
+  "wants": "Join only if the refund rule works for us.",
+  "limit": "Don't close factories or colleges.",
+  "split": "yes"
+ },
+ {
+  "id": "c0299",
+  "wants": "Keep our scientists here; they're what makes us strong.",
+  "limit": "Don't cut the NHS to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0454",
+  "wants": "Join, with a refund if the costs spiral.",
+  "limit": "Don't cut student support to fund it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0582",
+  "wants": "Join in full, and push for a better refund deal.",
+  "limit": "Don't cut schools to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0839",
+  "wants": "Join in full; the research matters for our area's jobs.",
+  "limit": "Don't close our local colleges to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0711",
+  "wants": "Keep money for Scottish jobs and roads first.",
+  "limit": "Don't pay for Brussels while the NHS is in trouble.",
+  "split": "no"
+ },
+ {
+  "id": "c0660",
+  "wants": "I'd not join. Use the money for our own researchers.",
+  "limit": "Don't close a university course for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0945",
+  "wants": "Join in full, and keep the good universities happy.",
+  "limit": "Don't cut schools or the NHS for this.",
+  "split": "yes"
+ },
+ {
+  "id": "c0273",
+  "wants": "Spend the money on the NHS and British jobs, not Brussels.",
+  "limit": "Don't cut the NHS for European science.",
+  "split": "no"
+ },
+ {
+  "id": "c0554",
+  "wants": "Join only if we don't have to pay the whole bill.",
+  "limit": "Don't cut the NHS or pensions for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0562",
+  "wants": "Keep science funded, and bring our scientists home.",
+  "limit": "Don't close local services to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0520",
+  "wants": "I don't know enough, but I'd want the refund protected.",
+  "limit": "Don't cut schools or hospitals to pay for it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0458",
+  "wants": "Join in full, and bring top researchers home from abroad.",
+  "limit": "Don't cut the NHS or social care for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0867",
+  "wants": "Keep science open to young people, not just the rich.",
+  "limit": "Don't close courses that students need.",
+  "split": "yes"
+ },
+ {
+  "id": "c0771",
+  "wants": "I'd rather we fixed our own labs before paying Europe.",
+  "limit": "Don't cut the NHS to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0574",
+  "wants": "I haven't got a view. Just don't cut the pension.",
+  "limit": "Don't waste the money on Brussels fees.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0263",
+  "wants": "I'd keep our money at home, but I'm not sure.",
+  "limit": "Don't cut the NHS or pensions to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0187",
+  "wants": "Join in full, and let British scientists work in Europe.",
+  "limit": "Don't cut schools to pay for the deal.",
+  "split": "yes"
+ },
+ {
+  "id": "c0940",
+  "wants": "I don't know. Fix the NHS first.",
+  "limit": "Don't pay for things I can't see.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0129",
+  "wants": "Join only the parts that pay back to Britain.",
+  "limit": "Don't close our local lab to fund it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0097",
+  "wants": "Join in full, but cut the waste first.",
+  "limit": "Don't close British labs to pay for Europe's.",
+  "split": "no"
+ },
+ {
+  "id": "c0812",
+  "wants": "Keep universities open; I'm a student.",
+  "limit": "Don't cut student support or colleges.",
+  "split": "yes"
+ },
+ {
+  "id": "c0710",
+  "wants": "Join in full, and keep British researchers in British labs.",
+  "limit": "Don't cut the schools or NHS to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0361",
+  "wants": "I'd join if the costs are clear and fair.",
+  "limit": "Don't cut school budgets to fund it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0053",
+  "wants": "Join only the good parts; the rest is too expensive.",
+  "limit": "Don't cut the NHS to pay for it.",
+  "split": "no"
+ },
+ {
+  "id": "c0717",
+  "wants": "I don't understand it; I'd rather keep my pension.",
+  "limit": "Don't cut the NHS or pensions for science.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0503",
+  "wants": "Join in full, and get a stricter refund on the deal.",
+  "limit": "Don't cut schools or hospitals to pay for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0707",
+  "wants": "I'd want better science jobs here, not abroad.",
+  "limit": "Don't close university places to fund a European deal.",
+  "split": "yes"
+ }
+]

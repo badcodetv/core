@@ -1,0 +1,531 @@
+{
+ "schema": "fp-sim/1",
+ "id": "2026-11-12-neighbourhood-home-care",
+ "simulated": true,
+ "stamp": "SIMULATED",
+ "stage": "published",
+ "run": {
+  "mode": "replay",
+  "run_date": "2026-11-23",
+  "news_date": "2026-11-12",
+  "replay_stamp": "Replayed on 23 Nov 2026 from the news of 12 Nov 2026"
+ },
+ "issue": {
+  "title": "Home care by neighbourhood, and a care service paid for by the Triple Lock",
+  "short": "NEIGHBOURHOOD CARE",
+  "question": "Should the money for a free National Care Service come from changing the Triple Lock on pensions, and who should decide how home care is run?",
+  "summary": "On 12 November 2026 the government published social care plans. Councils in England are encouraged to commission home care by neighbourhood, with one or two main providers in each, so carers spend their working day in a much smaller area. A study of six providers in Bristol found reorganising visits into zones could deliver the same care with 35% less staff time and 65% less driving. A fully funded National Care Service with free personal care for older people is promised for the next Parliament, and the page says it \"will be funded by changes to the triple lock pension\". Guidance and toolkits for councils are due in the spring.",
+  "summary_sources": [
+   "s1"
+  ],
+  "field": "social-care",
+  "owner": "health",
+  "slot": "longest-wait",
+  "slot_reason": "Rule 2: the field \"social-care\" has never run in the simulation, and this weight-2 UK item was in the news of 12 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field). Rule 1 does not apply to this pick. The field ran in neither of the two days before 12 Nov.",
+  "news": [
+   {
+    "headline": "Government sets out neighbourhood home care plan, National Care Service pledge and \u00a340m GP winter scheme",
+    "memory_id": "ed2fc37e-4628-48c4-b08d-019eff008e75",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "poll": {
+  "pollster": "YouGov",
+  "fieldwork": "29 September 2026, online",
+  "sample": "4,503 adults in Great Britain",
+  "finding": "Told the Prime Minister plans to change the Triple Lock in 2030 and that the money will help fund part of a national care service, 48% supported and 28% opposed. Asked alone, changing the Triple Lock so pensions rise by the higher of inflation or 2.5% got 43% support and 30% oppose. A national care service free at the point of use, funded by government spending, got 74% support and 11% oppose. The poll is about six weeks before the news date, and is the most recent found on this exact question.",
+  "real_share": 0.48,
+  "sources": [
+   "s2"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "More familiar carers and less travel under new social care plans",
+   "publisher": "GOV.UK (Department of Health and Social Care)",
+   "date": "2026-11-12",
+   "url": "https://www.gov.uk/government/news/more-familiar-carers-and-less-travel-under-new-social-care-plans"
+  },
+  {
+   "id": "s2",
+   "title": "Britons support changing triple lock to fund care service by 48% to 28%",
+   "publisher": "YouGov",
+   "date": "2026-09-29",
+   "url": "https://yougov.com/en-gb/articles/55654-britons-support-changing-triple-lock-to-fund-care-service-by-48-to-28"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "sim-clerk",
+   "sim-citizens",
+   "sim-bench",
+   "sim-gate",
+   "sim-jury",
+   "sim-minister"
+  ],
+  "note": "The GOV.UK page was last updated 18 Nov 2026 to correct the name of the Bristol research body; the body is not named here, as the correction is after the news date."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-12-neighbourhood-home-care/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0296",
+   "c0269",
+   "c0255",
+   "c0336",
+   "c0870",
+   "c0933",
+   "c0603",
+   "c0415",
+   "c0675",
+   "c0818",
+   "c0943",
+   "c0044",
+   "c0124",
+   "c0147",
+   "c0859",
+   "c0245",
+   "c0962",
+   "c0029",
+   "c0253",
+   "c0523",
+   "c0511",
+   "c0295",
+   "c0401",
+   "c0819",
+   "c0179",
+   "c0702",
+   "c0366",
+   "c0593",
+   "c0158",
+   "c0536",
+   "c0264",
+   "c0008",
+   "c0671",
+   "c0088",
+   "c0215",
+   "c0828",
+   "c0302",
+   "c0559",
+   "c0426",
+   "c0378",
+   "c0787",
+   "c0440",
+   "c0240",
+   "c0019",
+   "c0454",
+   "c0822",
+   "c0672",
+   "c0945",
+   "c0942",
+   "c0688",
+   "c0867",
+   "c0578",
+   "c0634",
+   "c0384",
+   "c0013",
+   "c0732",
+   "c0902",
+   "c0600",
+   "c0665",
+   "c0639",
+   "c0584",
+   "c0430",
+   "c0065",
+   "c0976",
+   "c0480",
+   "c0656",
+   "c0548",
+   "c0437",
+   "c0932",
+   "c0317",
+   "c0244",
+   "c0687",
+   "c0763",
+   "c0824",
+   "c0074",
+   "c0640",
+   "c0372",
+   "c0357",
+   "c0190",
+   "c0182",
+   "c0250",
+   "c0026",
+   "c0516",
+   "c0767",
+   "c0948",
+   "c0720",
+   "c0908",
+   "c0334",
+   "c0342",
+   "c0049",
+   "c0967",
+   "c0148",
+   "c0661",
+   "c0690",
+   "c0474",
+   "c0770",
+   "c0594",
+   "c0117",
+   "c0135",
+   "c0236"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "kind": "test",
+    "text": "Carers stay in one local area, so the same faces come round.",
+    "backers": 32
+   },
+   {
+    "kind": "test",
+    "text": "Carers get proper pay and enough time for each visit.",
+    "backers": 24
+   },
+   {
+    "kind": "test",
+    "text": "Free care for older people, with no means test.",
+    "backers": 26
+   },
+   {
+    "kind": "test",
+    "text": "Councils decide how home care runs, not Whitehall.",
+    "backers": 14
+   },
+   {
+    "kind": "limit",
+    "text": "Pensions don't get cut to pay for care.",
+    "backers": 95
+   },
+   {
+    "kind": "limit",
+    "text": "Young people aren't made to pay twice over.",
+    "backers": 4
+   }
+  ],
+  "split": {
+   "question": "Should the free National Care Service be paid for by changing the Triple Lock on pensions?",
+   "sim_share": 0.26
+  },
+  "voices": [
+   {
+    "citizen": "c0603",
+    "who": "39, London, in work, owns home outright",
+    "text": "Care that's free and not means-tested. No pension raid that hits the poorest pensioners."
+   },
+   {
+    "citizen": "c0578",
+    "who": "86, North West, retired, rents from the council",
+    "text": "Someone to come in and help me wash and dress. Don't cut my pension, I can't manage on less."
+   },
+   {
+    "citizen": "c0065",
+    "who": "33, East of England, in work, rents privately",
+    "text": "I don't know much about it, but care should be free. Pensions can't be the thing that pays."
+   },
+   {
+    "citizen": "c0366",
+    "who": "25, West Midlands, in work, owns home outright",
+    "text": "Free care for my gran, sooner rather than later. Don't make young workers pay through pensions."
+   },
+   {
+    "citizen": "c0147",
+    "who": "23, West Midlands, student, rents from the council",
+    "text": "Care paid from general taxes, not pensions. No pension cuts to fund it."
+   },
+   {
+    "citizen": "c0245",
+    "who": "66, East Midlands, retired, owns home outright",
+    "text": "My council running care properly, locally. Don't cut my pension rise."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "title": "Fund care by reforming the Triple Lock, with pensioner floor and audit",
+   "answer": "Keep councils commissioning care, but change the rules. First, the Treasury publishes the Triple Lock change as a costed schedule, with a protected floor so no pensioner's income falls; the poll found 48% support when it funds care (s2). Second, the Department of Health and Social Care makes the neighbourhood-zone guidance (due spring, s1) conditional on carers' fair pay agreement and visit-time minimums, backed by the extra \u00a34.6 billion for councils (s1). Third, an independent auditor reports yearly on visit length, carer travel time and the Bristol-style savings claim of 35% less staff time (s1). It worked if savings reach pay and visit time, and no pensioner loses.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1",
+    "s2"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Carers and care users co-own each neighbourhood's home care",
+   "answer": "The government wants one or two main home care providers per neighbourhood, and toolkits for councils are due in spring [s1]. Make the toolkit favour providers owned and run by their own carers and the people they visit, so the neighbourhood team, not a distant head office, sets rotas, visit lengths and pay under the planned fair pay agreement [s1]. Councils would award the neighbourhood contracts on that basis. Study: zoned visits could cut staff time 35% and driving 65% [s1]; let the team keep that saving for pay and longer visits. You would know it worked if the same carers keep turning up, visits are not cut short, and carers stay. Simulated citizens backing familiar local faces: 32 of the panel.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1"
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Leave pensions alone. Put care users in charge.",
+   "answer": "Keep the Triple Lock. Fund free personal care for older people from general taxes. The government's neighbourhood care plan offers a starting point [s1]. Councils should fund local care groups owned by the people receiving care and the carers doing it. Give each group an elected board, with care users holding most seats. Pay for full visits and travel time. Put any surplus back into care. Renew funding only when visits happen reliably and people get familiar carers. Publish missed visits, staff pay and time spent with each person every three months. Success means fewer missed visits, familiar faces and carers earning more without rushed care.",
+   "engine": "codex",
+   "model": "gpt-6",
+   "blind": true,
+   "sources": [
+    "s1"
+   ]
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "Carers stay in one local area",
+    "result": "unclear",
+    "note": "Answer A leans on the neighbourhood-zone guidance due in spring, but adds no step that keeps carers in one area.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Carers get proper pay and enough visit time",
+    "result": "pass",
+    "note": "It ties the guidance to the planned fair pay agreement and visit-time minimums, backed by the extra \u00a34.6 billion for councils in 2028 to 2029.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Free care for older people, no means test",
+    "result": "unclear",
+    "note": "It funds the National Care Service the government promised but does not say whether care would be free with no means test.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Councils decide how home care runs",
+    "result": "fail",
+    "note": "Councils keep commissioning, but the Department of Health and Social Care sets conditions on the guidance, so Whitehall steers.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Limit: pensions not cut to pay for care",
+    "result": "unclear",
+    "note": "It changes the Triple Lock with a floor so no pensioner's income falls; whether that counts as no cut is a matter of values, and the floor is untested.",
+    "sources": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Limit: young people not made to pay twice",
+    "result": "unclear",
+    "note": "No source says who pays for the Triple Lock change over time; it is not settled by the evidence.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Carers stay in one local area",
+    "result": "pass",
+    "note": "The government wants one or two main providers in each neighbourhood, and answer B builds on that so the same carers keep coming.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Carers get proper pay and enough visit time",
+    "result": "pass",
+    "note": "The team sets pay and visit lengths under the planned fair pay agreement and keeps the saving from zoning for pay and longer visits.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Free care for older people, no means test",
+    "result": "unclear",
+    "note": "It says nothing on how the free National Care Service is funded or whether means tests apply.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Councils decide how home care runs",
+    "result": "pass",
+    "note": "Councils award the neighbourhood contracts, with the neighbourhood team setting rotas and pay.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Limit: pensions not cut to pay for care",
+    "result": "pass",
+    "note": "It does not touch pensions. No source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: young people not made to pay twice",
+    "result": "unclear",
+    "note": "It is silent on who pays for the service, so nothing is known about the cost to younger people.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Carers stay in one local area",
+    "result": "pass",
+    "note": "Local care groups reward familiar carers; renewal depends on people getting familiar carers.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Carers get proper pay and enough visit time",
+    "result": "pass",
+    "note": "Pays for full visits and travel time and publishes staff pay, building on the planned fair pay agreement.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Free care for older people, no means test",
+    "result": "unclear",
+    "note": "It funds free personal care from general taxes, but no source costs this or says whether means tests would apply.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Councils decide how home care runs",
+    "result": "pass",
+    "note": "Councils fund local groups run by the people using the service and carers, so control sits locally.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Limit: pensions not cut to pay for care",
+    "result": "pass",
+    "note": "It keeps the Triple Lock as it is, so no pension is cut. No source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: young people not made to pay twice",
+    "result": "unclear",
+    "note": "General taxes would pay, and the cost falls on taxpayers including young people; no source sizes it.",
+    "sources": []
+   }
+  ],
+  "verdict": "No answer passes every test. B passes the most on how care is run but is silent on money; A and C disagree on whether pensions pay. Who should pay for free care cannot be settled by facts.",
+  "to_jury": true,
+  "rejected_claims": []
+ },
+ "jury": {
+  "seed": "2026-11-12-neighbourhood-home-care/jury",
+  "size": 12,
+  "ids": [
+   "c0079",
+   "c0714",
+   "c0032",
+   "c0868",
+   "c0633",
+   "c0755",
+   "c0319",
+   "c0112",
+   "c0086",
+   "c0363",
+   "c0303",
+   "c0927"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "Should free personal care be paid for by changing the Triple Lock (with a floor for the poorest pensioners), by leaving pensions alone and using general taxes, or should neighbourhood care start first and the money be settled later?",
+  "options": [
+   "Change the Triple Lock to fund care, with a floor for the poorest pensioners",
+   "Leave pensions alone and pay for care from general taxes",
+   "Start neighbourhood home care now and settle how to pay later"
+  ],
+  "votes": [
+   2,
+   6,
+   4
+  ],
+  "ruling": "Leave pensions alone and pay for care from general taxes: the jurors would not take it from older people's income, and wanted the cost spread wider.",
+  "reasons": [
+   {
+    "juror": "c0079",
+    "text": "Pensioners paid in all their lives. Fund care from general tax, not by shaving what old people live on."
+   },
+   {
+    "juror": "c0714",
+    "text": "Get the carers sorted first. Same faces each day matters more to me than arguing over pensions."
+   },
+   {
+    "juror": "c0868",
+    "text": "Pensions rise faster than wages already. A floor for the poorest and a change for the rest seems fair."
+   },
+   {
+    "juror": "c0755",
+    "text": "Do the local bit now, it is proven. Money fights can wait until we see it working."
+   }
+  ],
+  "review": "2027-11-23",
+  "real_jury": false
+ },
+ "minister": {
+  "post": "health",
+  "decision": "signed",
+  "trial": "In two councils that volunteer, run neighbourhood home care for one year: one main provider per neighbourhood, carers and people receiving care on its board, paid from existing council care budgets. Nothing taken from pensions.",
+  "fail_number": "Fewer than 6 in 10 visits by one of a person's regular carers, or visits cut short, after 12 months, against each council's own figures today.",
+  "stop": "2027-11-23",
+  "statement": "Triage. Jury said: hands off pensions, spread the bill wider. Fine. That bill is for the Chancellor, and nobody has costed it yet. What we can do is try the local bit on a small patch first. Two councils that volunteer. Same carers, same streets, people who get the care helping steer it. The visit stays a person. If six in ten visits don't come from a regular face in a year, we stop. No national scheme before a pilot that works."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "answer": "issue",
+   "claim": "The Department of Health and Social Care will have published its guidance and toolkits for councils on neighbourhood home care by 22 January 2027.",
+   "prior": 0.15,
+   "due": "2027-01-22",
+   "rule": "True if a GOV.UK page dated on or before 22 January 2027 publishes the neighbourhood home care guidance or toolkit for councils.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "answer": "issue",
+   "claim": "The guidance and toolkits for councils on neighbourhood home care will have been published by 30 June 2027.",
+   "prior": 0.8,
+   "due": "2027-06-30",
+   "rule": "True if a GOV.UK page dated on or before 30 June 2027 publishes the guidance and toolkits the government said were due in the spring.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  }
+ ]
+}

@@ -1,0 +1,533 @@
+{
+ "schema": "fp-sim/1",
+ "id": "2026-11-15-possession-claims-rise",
+ "simulated": true,
+ "stamp": "SIMULATED",
+ "stage": "published",
+ "run": {
+  "mode": "replay",
+  "run_date": "2026-11-23",
+  "news_date": "2026-11-15",
+  "replay_stamp": "Replayed on 23 Nov 2026 from the news of 15 Nov 2026"
+ },
+ "issue": {
+  "title": "Eviction claims are piling up in the courts after Section 21 ended",
+  "short": "EVICTION CLAIMS",
+  "question": "More landlords are taking tenants to court since no-fault evictions ended, and the courts are stretched. Who should carry the wait: taxpayers who pay for more courts, landlords, or tenants?",
+  "summary": "Ministry of Justice figures for July to September 2026 show landlord possession claims in England up 21% to 28,249, with accelerated claims up 68% to a record 12,156. Completed landlord repossessions fell 10% to 6,886. Section 21 no-fault evictions were abolished in England on 1 May 2026, and landlords with valid older notices generally had until 31 July to start court proceedings. The Law Society's president says the courts are not resourced for the increase and warns of continuing backlogs and delays.",
+  "summary_sources": [
+   "s1",
+   "s2",
+   "s3"
+  ],
+  "field": "evictions",
+  "owner": "housing",
+  "slot": "longest-wait",
+  "slot_reason": "Rule 2: the field \"evictions\" has never run in the simulation, and this weight-2 UK item was in the news of 15 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+  "news": [
+   {
+    "headline": "Landlord possession claims in England rise 21% to 28,249 in Q3, with accelerated claims at a record",
+    "memory_id": "fd71adb9-ffe6-49e7-bd6a-5ed4a4f7bb5c",
+    "sources": [
+     "s1",
+     "s2",
+     "s3"
+    ]
+   }
+  ]
+ },
+ "poll": null,
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Landlord possession claims surge as court backlog fears grow",
+   "publisher": "Property Industry Eye",
+   "date": "2026-11-13",
+   "url": "https://propertyindustryeye.com/landlord-possession-claims-surge-as-court-backlog-fears-grow/"
+  },
+  {
+   "id": "s2",
+   "title": "Courts struggling to cope as possession claims rise",
+   "publisher": "Landlord Today",
+   "date": "2026-11-13",
+   "url": "https://www.landlordtoday.co.uk/breaking-news/2026/11/courts-struggling-to-cope-as-possession-claims-rise/"
+  },
+  {
+   "id": "s3",
+   "title": "Mortgage and landlord possession statistics: July to September 2026",
+   "publisher": "Ministry of Justice (gov.uk)",
+   "date": "2026-11-12",
+   "url": "https://www.gov.uk/government/statistics/mortgage-and-landlord-possession-statistics-july-to-september-2026"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "sim-clerk",
+   "sim-citizens",
+   "sim-bench",
+   "sim-gate",
+   "sim-jury",
+   "sim-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-15-possession-claims-rise/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0776",
+   "c0898",
+   "c0206",
+   "c0276",
+   "c0337",
+   "c0747",
+   "c0256",
+   "c0011",
+   "c0708",
+   "c0455",
+   "c0263",
+   "c0331",
+   "c0662",
+   "c0989",
+   "c0569",
+   "c0616",
+   "c0697",
+   "c0811",
+   "c0084",
+   "c0213",
+   "c0778",
+   "c0483",
+   "c0370",
+   "c0485",
+   "c0257",
+   "c0983",
+   "c0797",
+   "c0529",
+   "c0793",
+   "c0395",
+   "c0939",
+   "c0273",
+   "c0843",
+   "c0661",
+   "c0796",
+   "c0548",
+   "c0756",
+   "c0339",
+   "c0159",
+   "c0745",
+   "c0458",
+   "c0584",
+   "c0304",
+   "c0290",
+   "c0848",
+   "c0802",
+   "c0121",
+   "c0144",
+   "c0150",
+   "c0441",
+   "c0226",
+   "c0475",
+   "c0682",
+   "c0077",
+   "c0859",
+   "c0955",
+   "c0621",
+   "c0770",
+   "c0583",
+   "c0264",
+   "c0490",
+   "c0911",
+   "c0123",
+   "c0452",
+   "c0200",
+   "c0097",
+   "c0294",
+   "c0107",
+   "c0907",
+   "c0511",
+   "c0702",
+   "c0586",
+   "c0274",
+   "c0081",
+   "c0736",
+   "c0732",
+   "c0875",
+   "c0775",
+   "c0229",
+   "c0855",
+   "c0537",
+   "c0433",
+   "c0101",
+   "c0182",
+   "c0250",
+   "c0183",
+   "c0899",
+   "c0614",
+   "c0438",
+   "c0404",
+   "c0625",
+   "c0292",
+   "c0785",
+   "c0945",
+   "c0504",
+   "c0171",
+   "c0228",
+   "c0650",
+   "c0507",
+   "c0028"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "kind": "test",
+    "text": "Courts clear the backlog faster, with more staff and judges.",
+    "backers": 49
+   },
+   {
+    "kind": "test",
+    "text": "Tenants get a fair hearing and time to leave before any eviction.",
+    "backers": 23
+   },
+   {
+    "kind": "test",
+    "text": "Fast-track the simple cases so judges can give the hard ones time.",
+    "backers": 3
+   },
+   {
+    "kind": "test",
+    "text": "Help tenants and landlords settle things early, before a case reaches court.",
+    "backers": 6
+   },
+   {
+    "kind": "limit",
+    "text": "Don't pile the cost onto tenants through rent or council tax.",
+    "backers": 37
+   },
+   {
+    "kind": "limit",
+    "text": "Don't let landlords push people out in a rush.",
+    "backers": 13
+   },
+   {
+    "kind": "limit",
+    "text": "Don't leave people homeless while their case waits.",
+    "backers": 9
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0776",
+    "who": "29, Yorkshire and The Humber, employed, owns with a mortgage",
+    "text": "Quicker decisions, but not at the cost of fair hearings for renters."
+   },
+   {
+    "citizen": "c0989",
+    "who": "76, North West, retired, rents privately",
+    "text": "Renters' homes should be safe, and courts should hear people quickly."
+   },
+   {
+    "citizen": "c0097",
+    "who": "43, London, employed, owns with a mortgage",
+    "text": "Don't let courts go on for ever."
+   },
+   {
+    "citizen": "c0183",
+    "who": "27, London, employed, rents privately",
+    "text": "Renters need a court that moves faster, but not a rushed one."
+   },
+   {
+    "citizen": "c0745",
+    "who": "40, South West, out of work, owns with a mortgage",
+    "text": "Money into homes and advice, not just courts."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "title": "Ring-fenced landlord claim fee, plus early settlement before court",
+   "answer": "Keep the county courts and the Section 21 ban. Claims rose 21% to 28,249 and accelerated claims 68% to 12,156 (s1), while the Law Society says courts are under-resourced (s2). The Ministry of Justice would raise the landlord claim fee and ring-fence the money for judges and court staff, so tenants and rent-payers carry no extra cost. Landlords would have to offer a settlement step, such as mediation or a payment plan, before issuing, with the fee refunded if the case settles. Tenants keep full hearings. Check each quarter in the Ministry statistics: median claim-to-possession time (25.9 weeks, s2) should fall while completed repossessions (6,886, s1) do not collapse, and settled cases should rise.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Move eviction claims to a dedicated housing tribunal",
+   "answer": "Possession claims rose 21% to 28,249 in a quarter, with accelerated claims up 68% to a record 12,156 (s1). The Ministry of Justice should move landlord possession claims out of the general courts into a dedicated housing tribunal with its own judges, staff and budget, so other cases stop queuing behind them. It would also run free early mediation for both sides before a hearing. The Law Society says the courts are not resourced for the increase (s2). We would know it worked if completed repossessions, down 10% to 6,886 (s1), recover, waits stay near 25.9 weeks or fall (s2), and the tribunal reports on both.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1",
+    "s2"
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Local settlement desks, paid for by landlords",
+   "answer": "Claims rose 21% in July to September (s1). In this simulation, landlords would fund local settlement desks through a charge on each rented home, barred from being added to rent. Local tenants and landlords would elect equal numbers to steer each desk and hire independent advisers. Tenants could seek a voluntary payment plan or agreed moving date, with advice of their own. Refusing a deal would not weaken anyone's right to a court hearing. Landlords would carry the financial wait; tenants would stay until lawful eviction. After six months, measure court waiting times, agreements kept and homelessness after cases. Publish the results locally.",
+   "engine": "codex",
+   "model": "gpt-6",
+   "blind": true,
+   "sources": [
+    "s1"
+   ]
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "Courts clear backlog, more staff and judges",
+    "result": "pass",
+    "note": "A ring-fences a higher landlord claim fee for judges and court staff. Whether the money is enough is not shown. s2 says courts are under-resourced.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Fair hearing, time to leave",
+    "result": "pass",
+    "note": "A says tenants keep full hearings, and it keeps the Section 21 ban. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Fast-track simple cases",
+    "result": "fail",
+    "note": "A has no fast track for clear-cut cases. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Settle early, before court",
+    "result": "pass",
+    "note": "Landlords must offer mediation or a payment plan before issuing, and the fee is refunded if the case settles. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no cost on tenants (rent, council tax)",
+    "result": "unclear",
+    "note": "The fee is paid by landlords and ring-fenced, so tenants carry no extra cost. Landlords could still pass it into rent, which the answer does not bar.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no rushed evictions",
+    "result": "pass",
+    "note": "Full hearings and a settlement step before issuing slow a rush. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no homelessness while waiting",
+    "result": "unclear",
+    "note": "Nothing in A protects tenants from homelessness while a case waits. Evidence does not settle it.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Courts clear backlog, more staff and judges",
+    "result": "pass",
+    "note": "B gives possession claims their own judges, staff and budget. Claims are at a record (s1) and the Law Society says courts are under-resourced (s2).",
+    "sources": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Fair hearing, time to leave",
+    "result": "unclear",
+    "note": "B does not say tenants keep a full hearing or time to leave. A tribunal could be fairer or faster and rougher; facts do not settle it.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Fast-track simple cases",
+    "result": "fail",
+    "note": "B separates housing cases from other work but does not fast-track clear-cut cases within it. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Settle early, before court",
+    "result": "pass",
+    "note": "B runs free early mediation for both sides before a hearing. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no cost on tenants (rent, council tax)",
+    "result": "unclear",
+    "note": "The tribunal is paid for by the Ministry, not by rent or council tax. B does not say how it is funded, so this is a reading.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no rushed evictions",
+    "result": "unclear",
+    "note": "B says nothing on notice periods or pace of evictions. A faster tribunal could rush them.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no homelessness while waiting",
+    "result": "unclear",
+    "note": "B does not address homelessness while a case waits.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Courts clear backlog, more staff and judges",
+    "result": "fail",
+    "note": "C leaves the courts as they are and aims to divert cases to local desks, so it adds no judges or staff. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Fair hearing, time to leave",
+    "result": "pass",
+    "note": "Refusing a deal does not weaken anyone's right to a hearing, and tenants stay until a lawful eviction. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Fast-track simple cases",
+    "result": "fail",
+    "note": "C has no fast track for simple cases. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Settle early, before court",
+    "result": "pass",
+    "note": "Local settlement desks offer voluntary payment plans or agreed moving dates before court. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no cost on tenants (rent, council tax)",
+    "result": "unclear",
+    "note": "The landlord charge is barred from being added to rent. Council tax is not touched. Whether a bar can be enforced is untested.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no rushed evictions",
+    "result": "pass",
+    "note": "Tenants stay until lawful eviction and keep their hearing. no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no homelessness while waiting",
+    "result": "unclear",
+    "note": "Tenants stay until lawful eviction, and C measures homelessness after cases, but it does not say what stops it.",
+    "sources": []
+   }
+  ],
+  "verdict": "No answer passes everything. A and C fail on fast-tracking, and C adds no court capacity; B is silent on fair hearings and homelessness. Facts cannot settle who should carry the cost of the wait.",
+  "to_jury": true,
+  "rejected_claims": [
+   "B: Today they compete with every other county court case. (no source says so)",
+   "B: citation of s3 for the claims figures (s3's page gives no figures; s1 does)"
+  ]
+ },
+ "jury": {
+  "seed": "2026-11-15-possession-claims-rise/jury",
+  "size": 12,
+  "ids": [
+   "c0285",
+   "c0816",
+   "c0094",
+   "c0377",
+   "c0931",
+   "c0082",
+   "c0754",
+   "c0336",
+   "c0808",
+   "c0739",
+   "c0108",
+   "c0453"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "Who should carry the wait for eviction cases: landlords through a charge, taxpayers through more courts, or should tenants and landlords settle most cases themselves?",
+  "options": [
+   "Landlords pay, through a ring-fenced fee that funds the courts",
+   "Taxpayers pay for a separate housing tribunal with its own judges",
+   "Local desks steer settlements, paid by a landlord charge",
+   "Tenants should not carry any extra cost or risk during the wait"
+  ],
+  "votes": [
+   4,
+   3,
+   2,
+   3
+  ],
+  "ruling": "Landlords pay, through a ring-fenced fee that funds the courts (4 of 12). The jurors who chose it said landlords bring the claims, so landlords should fund the courts that hear them.",
+  "reasons": [
+   {
+    "juror": "c0285",
+    "text": "Landlords chose to let property and bring the claims. They should fund the courts that hear them."
+   },
+   {
+    "juror": "c0094",
+    "text": "Taxpayers fund courts for everything else. A separate housing tribunal keeps eviction cases from clogging the rest."
+   },
+   {
+    "juror": "c0931",
+    "text": "Local desks sound sensible. Most disputes should be settled near home without a judge."
+   },
+   {
+    "juror": "c0739",
+    "text": "I rent from the council. Whatever happens, renters should not be the ones paying or losing their homes."
+   }
+  ],
+  "review": "2027-11-23",
+  "real_jury": false
+ },
+ "minister": {
+  "post": "housing",
+  "decision": "signed",
+  "trial": "In one simulated county court area, for six months, landlords pay a higher claim fee, ring-fenced for extra judge sitting days and court staff there. Landlords must offer mediation or a payment plan before issuing, and the fee is refunded if the case settles. Tenants keep full hearings.",
+  "fail_number": "If median claim-to-possession time in the trial area is not at least 2 weeks shorter than before, or more than 1 in 10 landlords pass the fee into rent, it has failed.",
+  "stop": "2027-06-01",
+  "statement": "Claims are up. Courts are full. Somebody has to pay for the extra bench. The jury, twelve simulated jurors, split four, three, two, three, and the biggest group said: landlords pay, and the money goes to judges. So we build exactly that, in one court area. The fee goes on the claim, not on the rent. Every pound is ring-fenced for sitting days. Tenants keep their hearing. Count the weeks. If the wait doesn't shorten, it was a drawing with no stairs."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "answer": "issue",
+   "claim": "The government will not have announced a rise in the landlord possession claim fee in England by 22 January 2027.",
+   "prior": 0.8,
+   "due": "2027-01-22",
+   "rule": "True if no gov.uk or Ministry of Justice announcement of a higher possession claim fee for landlords is dated on or before 22 January 2027. Check gov.uk news and fees pages.",
+   "sources": [
+    "s3"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "answer": "issue",
+   "claim": "Ministry of Justice figures for October to December 2026 will show more than 25,000 landlord possession claims in England.",
+   "prior": 0.45,
+   "due": "2027-03-31",
+   "rule": "True if the Ministry of Justice Mortgage and landlord possession statistics for October to December 2026 give landlord claims above 25,000. Check the gov.uk statistics page.",
+   "sources": [
+    "s1",
+    "s3"
+   ],
+   "result": "pending"
+  }
+ ]
+}

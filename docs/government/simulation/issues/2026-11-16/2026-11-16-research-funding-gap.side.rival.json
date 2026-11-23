@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Join Excellent Science; let local research users steer the rest",
+  "answer": "The UK should join only Excellent Science. Science Works estimates this would free about £1.1 billion a year for British priorities (s1). Keep that money in UK research, with grants decided by local boards elected by researchers, lab staff and people who use their work. Ministers and big firms should have no reserved seats. Boards must publish awards, costs and results. Pay within the research budget already set aside; do not cut schools or the NHS or close labs to cover membership. After three years, judge success by research jobs kept, useful projects completed and whether spending stayed within budget.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": [],
+  "via": "Bob plain Codex chat 52308c7f-a25f-43c2-80a3-6cde86daaa18"
+}

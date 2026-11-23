@@ -1,0 +1,486 @@
+{
+ "schema": "fp-sim/1",
+ "id": "2026-11-13-leasehold-service-charges",
+ "simulated": true,
+ "stamp": "SIMULATED",
+ "stage": "published",
+ "run": {
+  "mode": "replay",
+  "run_date": "2026-11-23",
+  "news_date": "2026-11-13",
+  "replay_stamp": "Replayed on 23 Nov 2026 from the news of 13 Nov 2026"
+ },
+ "issue": {
+  "title": "Who pays when a leaseholder challenges a service charge?",
+  "short": "SERVICE CHARGES",
+  "question": "When a leaseholder challenges a service charge, who should carry the cost of the fight, and how fast should the new rules start?",
+  "summary": "On 11 November 2026 the Ministry of Housing, Communities and Local Government said more than three million leaseholders in England would get stronger rights to challenge unfair or unexplained service charges. From 1 April 2027 leaseholders can ask for charge information, and landlords need court or tribunal approval to pass on their legal costs of a challenge. From 1 November 2027 private landlords must use standard demand forms and give accounts and annual reports, with councils and housing associations following from 1 November 2028. The government says a Commonhold and Leasehold Reform Bill is due before Christmas 2026.",
+  "summary_sources": [
+   "s1"
+  ],
+  "field": "leasehold",
+  "owner": "housing",
+  "slot": "longest-wait",
+  "slot_reason": "Rule 2: the field \"leasehold\" has never run in the simulation, and this weight-2 UK item was in the news of 13 Nov 2026 (topic assigned by the orchestrator so parallel replays don't repeat a field).",
+  "news": [
+   {
+    "headline": "Government sets out new leaseholder protections against service charges in England",
+    "memory_id": "7aba2cd1-49ef-4370-8002-1e8be6bb13a6",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "poll": null,
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Flat owners handed massive boost to fight rip-off service charges",
+   "publisher": "GOV.UK, Ministry of Housing, Communities and Local Government",
+   "date": "2026-11-11",
+   "url": "https://www.gov.uk/government/news/flat-owners-handed-massive-boost-to-fight-rip-off-service-charges"
+  },
+  {
+   "id": "s2",
+   "title": "Leasehold: still a life sentence?",
+   "publisher": "Propertymark",
+   "date": "2026-07-15",
+   "url": "https://www.propertymark.co.uk/resource/leasehold-still-a-life-sentence.html"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "sim-clerk",
+   "sim-citizens",
+   "sim-bench",
+   "sim-gate",
+   "sim-jury",
+   "sim-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-13-leasehold-service-charges/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0726",
+   "c0138",
+   "c0989",
+   "c0045",
+   "c0022",
+   "c0051",
+   "c0003",
+   "c0662",
+   "c0277",
+   "c0911",
+   "c0649",
+   "c0056",
+   "c0511",
+   "c0160",
+   "c0731",
+   "c0500",
+   "c0770",
+   "c0696",
+   "c0350",
+   "c0278",
+   "c0157",
+   "c0678",
+   "c0527",
+   "c0988",
+   "c0997",
+   "c0073",
+   "c0398",
+   "c0011",
+   "c0908",
+   "c0561",
+   "c0091",
+   "c0900",
+   "c0689",
+   "c0233",
+   "c0101",
+   "c0034",
+   "c0822",
+   "c0335",
+   "c0685",
+   "c0494",
+   "c0763",
+   "c0750",
+   "c0093",
+   "c0767",
+   "c0149",
+   "c0560",
+   "c0922",
+   "c0941",
+   "c0323",
+   "c0881",
+   "c0282",
+   "c0377",
+   "c0480",
+   "c0129",
+   "c0884",
+   "c0587",
+   "c0493",
+   "c0005",
+   "c0821",
+   "c0409",
+   "c0386",
+   "c0855",
+   "c0520",
+   "c0760",
+   "c0098",
+   "c0167",
+   "c0503",
+   "c0995",
+   "c0291",
+   "c0502",
+   "c0299",
+   "c0404",
+   "c0075",
+   "c0663",
+   "c0200",
+   "c0496",
+   "c0340",
+   "c0070",
+   "c0260",
+   "c0868",
+   "c0253",
+   "c0589",
+   "c0214",
+   "c0286",
+   "c0385",
+   "c0656",
+   "c0128",
+   "c0972",
+   "c0466",
+   "c0666",
+   "c0336",
+   "c0830",
+   "c0446",
+   "c0379",
+   "c0318",
+   "c0009",
+   "c0301",
+   "c0307",
+   "c0501",
+   "c0256"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "kind": "test",
+    "text": "Landlords pay their own legal costs in disputes, not leaseholders.",
+    "backers": 33
+   },
+   {
+    "kind": "test",
+    "text": "Start the new leaseholder rules well before April 2027.",
+    "backers": 16
+   },
+   {
+    "kind": "test",
+    "text": "Check service charges before they are billed, and cap them.",
+    "backers": 31
+   },
+   {
+    "kind": "limit",
+    "text": "Small landlords are not buried in forms and costs.",
+    "backers": 32
+   },
+   {
+    "kind": "limit",
+    "text": "Leaseholders do not lose homes or pay more over disputes.",
+    "backers": 24
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0260",
+    "who": "24, London, in work, rents from a council or housing association",
+    "text": "If you lose, you pay. That's fair. Small landlords shouldn't be buried in forms."
+   },
+   {
+    "citizen": "c0277",
+    "who": "77, South East, retired, rents privately",
+    "text": "Stop officials filling in forms nobody reads."
+   },
+   {
+    "citizen": "c0989",
+    "who": "76, North West, retired, rents privately",
+    "text": "I don't really know about flats and service charges."
+   },
+   {
+    "citizen": "c0662",
+    "who": "37, Scotland, in work, owns outright",
+    "text": "Landlords should stop billing us for their legal fights."
+   },
+   {
+    "citizen": "c0093",
+    "who": "89, South East, retired, owns outright",
+    "text": "Flat owners shouldn't be stung for landlords' lawyers."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "title": "Landlords pay their own tribunal costs; small landlords get forms",
+   "answer": "Keep the tribunal and the 1 April 2027 start, but change the cost rule. The housing ministry, through the tribunal rules, would make landlords bear their own legal costs of a service charge challenge unless the tribunal finds the leaseholder's case unreasonable [s1]. Leaseholders recover their own costs when they win [s1]. Small landlords get standard forms, so the paperwork does not bury them [s1]. Councils and housing associations keep the later 2028 date [s1]. We would know it worked if tribunal data show challenges rising, fewer leaseholders dropping cases over cost, and no rise in small-landlord complaints. Propertymark's survey found 89% of leaseholders say unfair charges are hard to challenge [s2].",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1",
+    "s2"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Let each building's leaseholders approve the budget before billing",
+   "answer": "The landlord stops being sole judge of its own bills. In each building, a leaseholder board, elected by the flat owners, approves the annual service charge budget before any demand goes out, and the landlord's agent reports to it. Landlords still cannot pass on dispute legal costs without tribunal approval from 1 April 2027 [s1], but disputes become rarer because bills are agreed first. Who: the government writes this into the coming Commonhold and Leasehold Reform Bill [s1]. How we'd know: fewer tribunal challenges, and the share of leaseholders calling unfair charges hard to challenge, 89% in a trade body survey [s2], falls. 31 simulated citizens backed checking charges before billing.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5",
+   "blind": true,
+   "sources": [
+    "s1",
+    "s2"
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Let flat owners steer the bills and share the fight",
+   "answer": "In this simulation, Parliament should start cost protections on 1 February 2027, ahead of the announced April start [s1]. Landlords must pay their own lawyers, without adding those costs to service charges. Leaseholders who win should recover reasonable costs. Each building should elect a leaseholder committee to inspect invoices and approve planned spending, with urgent safety repairs exempt. Committees could pool money for independent advice. Landlords should provide one simple account, with receipts available on request. No one should lose their home for withholding a disputed sum held safely until the ruling. After a year, measure corrected bills, dispute times and leaseholders’ unrecovered costs.",
+   "engine": "codex",
+   "model": "gpt-6",
+   "blind": true,
+   "sources": [
+    "s1"
+   ]
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "Landlords pay own legal costs",
+    "result": "pass",
+    "note": "Landlords bear their own costs unless the tribunal finds the case unreasonable; today's plan only needs approval to pass them on.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Start well before April 2027",
+    "result": "fail",
+    "note": "Keeps the 1 April 2027 start the ministry announced.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Check and cap charges before billing",
+    "result": "fail",
+    "note": "No check before billing and no cap; it only changes who pays dispute costs.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Small landlords not buried in forms",
+    "result": "unclear",
+    "note": "Standard forms are due from 1 Nov 2027, but the release gives no cost figures for landlords.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Leaseholders keep homes, pay no more",
+    "result": "unclear",
+    "note": "Leaseholders recover costs when they win, but nothing says they pay no more overall.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Landlords pay own legal costs",
+    "result": "unclear",
+    "note": "Keeps tribunal approval for passing on costs from April 2027; does not say landlords pay their own.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Start well before April 2027",
+    "result": "unclear",
+    "note": "Board rule would come via the Bill due before Christmas 2026; no start date is given.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Check and cap charges before billing",
+    "result": "unclear",
+    "note": "Budgets are approved before billing, but there is no cap.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Small landlords not buried in forms",
+    "result": "unclear",
+    "note": "Boards add work for landlords' agents; the release gives no cost figures.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Leaseholders keep homes, pay no more",
+    "result": "unclear",
+    "note": "Fewer disputes would help, but nothing shows leaseholders pay less; no source needed: logic.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Landlords pay own legal costs",
+    "result": "pass",
+    "note": "Landlords pay their own lawyers and cannot add the cost to service charges.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Start well before April 2027",
+    "result": "pass",
+    "note": "Proposes a 1 February 2027 start, before the announced 1 April 2027.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Check and cap charges before billing",
+    "result": "unclear",
+    "note": "Committees inspect invoices and approve planned spending, but there is no cap.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Small landlords not buried in forms",
+    "result": "unclear",
+    "note": "One simple account helps, but committees and receipts add work; no cost figures in s1.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Leaseholders keep homes, pay no more",
+    "result": "pass",
+    "note": "Holds a disputed sum safely so no one loses a home over it; no source needed: logic.",
+    "sources": []
+   }
+  ],
+  "verdict": "No answer passes every test and limit. C passes the most; the facts cannot settle who should carry the cost of a dispute or whether tenants or landlords come first.",
+  "to_jury": true,
+  "rejected_claims": [
+   "A: a free template for small landlords (s1 does not mention one)"
+  ]
+ },
+ "jury": {
+  "seed": "2026-11-13-leasehold-service-charges/jury",
+  "size": 12,
+  "ids": [
+   "c0405",
+   "c0876",
+   "c0912",
+   "c0978",
+   "c0001",
+   "c0280",
+   "c0556",
+   "c0325",
+   "c0065",
+   "c0842",
+   "c0421",
+   "c0455"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "When a leaseholder challenges a service charge, should landlords carry the cost of the fight or should the loser pay?",
+  "options": [
+   "Landlords carry their own costs, always",
+   "Loser pays, with a safe harbour for small landlords",
+   "Leaseholders vote on budgets first, to head off disputes"
+  ],
+  "votes": [
+   5,
+   4,
+   3
+  ],
+  "ruling": "Landlords carry their own costs, always: the one who sends the bill should fund the argument over it.",
+  "reasons": [
+   {
+    "juror": "c0405",
+    "text": "I never understood these bills. If the landlord starts the fight, the landlord pays his own lawyers."
+   },
+   {
+    "juror": "c0421",
+    "text": "I rent, but I've seen mates stung by fees. Make the landlord carry it."
+   },
+   {
+    "juror": "c0912",
+    "text": "If the leaseholder is wrong, why should the landlord pay? Loser pays is fair, and small landlords need protecting."
+   },
+   {
+    "juror": "c0280",
+    "text": "Let the people who live there look at the budget before the bill comes. Prevention beats a fight."
+   }
+  ],
+  "review": "2027-11-23",
+  "real_jury": false
+ },
+ "minister": {
+  "post": "housing",
+  "decision": "signed",
+  "trial": "From 1 April 2027, in the tribunal's service charge cases in one region, landlords carry their own legal costs and cannot add them to the bill. Leaseholders who win recover theirs. Small landlords with a handful of flats get standard forms and a named helper.",
+  "fail_number": "Fewer than 1 in 10 challenges end with leaseholders dropping the case over cost by the stop date, against today's 89% who say charges are hard to challenge.",
+  "stop": "2027-09-30",
+  "statement": "Twelve simulated jurors said: the landlord sends the bill, the landlord pays for the argument. Fair. I'm signing a small trial, not a national programme. One region. Landlords carry their own costs. Leaseholders who win get theirs back. The trade-off: small landlords. A one-flat landlord is not a fund, so they get the forms and a helper. Show me it works, or we stop."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "answer": "issue",
+   "claim": "By 22 January 2027 the government has not announced any delay to the 1 April 2027 start of the new protections on litigation costs for leaseholders.",
+   "prior": 0.85,
+   "due": "2027-01-22",
+   "rule": "True if no GOV.UK announcement or statement before 22 January 2027 moves the 1 April 2027 start of the litigation cost protections to a later date.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "answer": "issue",
+   "claim": "The 1 April 2027 start for leaseholders' right to charge information and cost protection is not delayed.",
+   "prior": 0.8,
+   "due": "2027-04-02",
+   "rule": "True if GOV.UK or the regulations show the protections in force on 1 April 2027.",
+   "sources": [
+    "s1"
+   ],
+   "result": "pending"
+  }
+ ]
+}
