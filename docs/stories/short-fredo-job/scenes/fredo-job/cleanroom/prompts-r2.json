@@ -1,0 +1,140 @@
+{
+ "note": "Direct edit of prompts-r1 (Jack's cast note, no new writer): mask line swapped, crew ref CAST-CREW-2-a",
+ "stills": [
+  {
+   "id": "r2-BOARD-b",
+   "prompt": "Keeping the reference's dim, lamp-lit mood and painted brick: the corner-shop floor plan is pinned to the brick wall itself, surrounded by photos of the shop door, the counter and a glass jar of gold-foil frog-shaped bars, all joined by taut red string to the circled jar on the plan. A single lamp hangs low, casting hard pools of light. The four crew from the reference image stand before the wall, seen from behind and in profile: one presses a gloved finger on the circled jar, two lean in to study it, one checks a stopwatch. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Moody contrast, cool shadows. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-board.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-CREW-a",
+   "prompt": "Matching the reference: a long, dark, polished corridor with warm recessed ceiling lights, a glossy reflective floor and a bright hazy window at the far end. The four crew from the reference image walk towards the camera in a line, side by side, slow and unhurried, half-silhouetted against the bright end with warm rim light on their shoulders, their reflections stretching across the floor, each carrying their prop. Symmetrical framing, camera low at the centre of the corridor. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Cool, confident line-up walk. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-crew-a.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-CREW-b",
+   "prompt": "Keeping the reference's near-ground camera, thick backlit haze and warm dusty light: a narrow British back lane behind a row of shops at night, washing lines strung overhead, haze glowing from a single light behind. The four crew from the reference image walk towards the camera in a staggered line, slow and deliberate, looming tall from the low angle, shoes stirring faint dust, one tugging a glove tight, one swinging a case. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Gritty, grainy, golden haze. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-crew-b.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-LASER-a",
+   "prompt": "Following the reference's composition and dark amber light: a British corner shop at night, closed, a glowing glass display shelf of plain unlabelled sweet boxes at left, a wooden counter in the lower frame, deep shadow elsewhere. A dense grid of thin red laser beams crosses in front of the counter, made visible by light haze. One crew member from the reference image bends backwards and sideways through a gap between beams, gloved hands raised, perfectly balanced, a coil of rope on one shoulder, beams a finger's width from the mask. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Red glow on the wood. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-aisle.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-LASER-b",
+   "prompt": "Same dark amber corner-shop mood as the reference, seen from behind the counter looking out: in the sharp foreground a glass jar of plain gold-foil frog-shaped bars sits on the wooden counter. Beyond it, a tight grid of thin red laser beams fills the space in front of the counter, glowing in haze, and one crew member from the reference image is caught mid-move, folding low and sideways through the beams on one bent knee, gloved fingertips steadying on the floor. A glass display shelf glows softly at left. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Soft focus on the figure, red streaks of light. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-aisle.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-GRAB-a",
+   "prompt": "Close photograph following the reference: a row of lidded glass sweet jars on a glass-topped wooden shop counter at night, warm lamplight, shelves and an old weighing scale soft behind, reflections in the counter glass. The front jar's lid is set aside; a gloved hand lifts one small chocolate bar shaped like a frog, wrapped in plain shiny gold foil, up out of the jar between finger and thumb, delicate and precise. More plain gold-foil frog bars fill the jar below. The masked head of the crew member from the reference image is just visible, soft and out of focus, behind. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Shallow focus on the glinting foil. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-jar.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-GRAB-b",
+   "prompt": "Same warm, dark shop counter and lidded glass jars as the reference, but seen from almost straight above into the open front jar, filled with small frog-shaped chocolate bars in plain gold foil. Two gloved fingers pinch one bar and draw it slowly upward, a few millimetres clear of the others. The masked face of the crew member from the reference image is reflected faintly in the glass counter top beside the jar. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Crisp detail, golden highlights, deep shadows. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-jar.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-TAG-a",
+   "prompt": "Following the reference: a crowded corner-shop shelf at night packed with plain unbranded snack bags, boxes and lollipops, lit by one bare bulb hanging at the centre. On the counter before it stands a glass jar of plain gold-foil frog-shaped bars with a small blank white price tag on its front. Three crew members from the reference image lean in close around the jar, masked heads tilted, staring at the tiny tag in total deadpan stillness; the fourth stands slightly back, stopwatch frozen in hand. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Single-bulb pool of light, dark edges. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-shelf.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-TAG-b",
+   "prompt": "Same single bare bulb and crowded, plain snack shelf as the reference, seen from a low angle at counter height: the small blank white price tag on a glass jar of plain gold-foil frog bars fills the sharp foreground. Above and behind it, the four crew from the reference image stand in a tight row, masked heads bowed towards the tag, utterly still and deadpan, soft in focus, gloved hands at their sides. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Dry, comic stillness, warm bulb glow. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-shelf.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-WAY-A-a",
+   "prompt": "A split-flap board in the style of the reference, seen straight on and filling the upper frame: dark frame, pale flaps, every flap blank. Two rows side by side climb together, several flaps in each caught mid-flip at the same moment, upper halves folding down. The first flap of the upper row shows a small gold frog-bar pictogram, the first of the lower row a small gold coin pictogram. Below, one crew member from the reference image sits on a bench, leaning back, ankle on knee, gloved hands behind the head, calmly watching the rows rise in step. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Calm, even light. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-flap.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-WAY-A-b",
+   "prompt": "Close, angled view of a split-flap board matching the reference's perspective and soft grey light: dark frame, pale blank flaps receding diagonally. Two parallel rows tick upward side by side, matching flaps falling mid-flip in both rows at once; a small gold frog-bar pictogram marks the start of one row, a small gold coin pictogram the other. At the foreground edge, one crew member from the reference image leans a shoulder against the wall in masked profile, relaxed, holding a paper cup, watching the two rows keep pace. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Clean, calm mood. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-flap.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-WAY-B-a",
+   "prompt": "Following the reference's layout and bright side daylight from the window: a British corner shop counter by day, a big lidded glass jar of plain gold-foil frog-shaped bars on the counter, shelves of plain unlabelled jars and bottles. Behind the counter stands an ordinary shopkeeper, a cheerful middle-aged man with greying stubble, a dark green fleece and reading glasses pushed up on his head, palm held out. Across the counter, one crew member from the reference image, relaxed, tips a few coins from a gloved hand into his, one gold-foil frog bar already lying on the counter between them. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Friendly, ordinary moment. Real photograph, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-counter.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-WAY-B-b",
+   "prompt": "Same daylit corner-shop counter, window light and big glass jar of plain gold-foil frog bars as the reference, seen over the shoulder of an ordinary shopkeeper: a woman in her sixties with short grey hair and a navy cardigan, the till drawer open. Facing her across the counter, one crew member from the reference image stands at ease, holding out a gloved palm of coins, a single gold-foil frog bar in the other hand. Sunlight falls across the counter between them. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Warm, everyday calm. Real photograph, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-counter.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-WAY-C-a",
+   "prompt": "Following the reference: lidded glass jars on a glass-topped wooden counter in a warm, dim shop. In front, two jars side by side: a glass jar of plain gold-foil frog-shaped bars, and a clear savings jar of coins, the coins filled to exactly the same height as the bars. A gloved hand above lets go of one more coin, caught mid-air just above the savings jar. The crew member from the reference image is soft and out of focus behind, masked, relaxed. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Reflections in the counter glass. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-jar.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  },
+  {
+   "id": "r2-WAY-C-b",
+   "prompt": "Tight, eye-level side view of the reference's warm glass-topped counter: a clear savings jar of coins and a glass jar of plain gold-foil frog bars stand shoulder to shoulder, their contents level at precisely the same line, a lamp glint running across both. A single coin drops from gloved fingers into the savings jar, with a tiny motion blur. Behind, the crew member from the reference image leans on the counter, masked chin on a gloved fist, content. Each crew member's balaclava is cut from the same cloth as their outfit, as in the crew reference, with the white ring and red triangle of the mask image; masks run into the collar, gloves on, no skin showing anywhere. No text, lettering, logos or brand names anywhere in the image. Shallow focus, golden light. Real photograph, slick 2000s heist-film look, 9:16.",
+   "attach": [
+    "/home/jackt/.cache/fredo-r1/ref-jar.jpg",
+    "/home/jackt/.cache/fredo-r1/CAST-CREW-2.jpg",
+    "/home/jackt/.cache/fredo-r1/mask-reference.jpg"
+   ]
+  }
+ ]
+}

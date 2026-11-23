@@ -1,0 +1,387 @@
+{
+ "title": "Fredo Job Stills",
+ "eyebrow": "BadCode Shorts \u00b7 The Fredo Job \u00b7 stills round 2",
+ "heading": "The Fredo Job: stills, round 2",
+ "intro": "A slick heist crew of four BadCode balaclavas plans the job of the century: one chocolate frog in a corner-shop jar. 10p when they started planning (until 2005); 39p today. Way out (Jack's pick): money that keeps up, tried three ways at the bottom. Every still follows a real Unsplash photo's layout; prompts by a sealed writer. Price tags and boards are blank on purpose: words go in after. Pick one per row and leave a note.",
+ "sections": [
+  {
+   "h": "Round 2: masks in suit cloth",
+   "lede": "Every shot re-made with the re-cast crew (Jack's note). Claude's picks marked; problems flagged on the still.",
+   "groups": [
+    {
+     "slot": "cast-r2",
+     "round": 2,
+     "title": "The crew, re-cast",
+     "line": "Jack: \"make the masks suit material, like the one on the left make sure there is no skin on any of them\". Each mask in its wearer's cloth: charcoal, navy pinstripe, black knit, cream linen; collars up, no skin.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CAST-CREW-2-a",
+       "src": "stills/r2/CAST-CREW-2-a.jpg",
+       "label": "a: white ring on all four (Claude's pick; used as the reference)",
+       "warn": ""
+      },
+      {
+       "id": "CAST-CREW-2-b",
+       "src": "stills/r2/CAST-CREW-2-b.jpg",
+       "label": "b: the cream mask's ring went dark",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "BOARD-r2",
+     "round": 2,
+     "title": "1. The plan",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-BOARD-b",
+       "src": "stills/r2/r2-BOARD-b.jpg",
+       "label": "b: the plan on the wall, the crew round it",
+       "warn": "A few words on the plan (fixable in post); the cream mask seen from the side"
+      }
+     ]
+    },
+    {
+     "slot": "CREW-r2",
+     "round": 2,
+     "title": "1. The line-up walk",
+     "line": "The corridor take timed out three times this round.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-CREW-b",
+       "src": "stills/r2/r2-CREW-b.jpg",
+       "label": "b: back lane, haze",
+       "warn": "The cream mask's ring came out black (the brand ring is white)"
+      }
+     ]
+    },
+    {
+     "slot": "LASER-r2",
+     "round": 2,
+     "title": "2. The job: the laser grid",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-LASER-a",
+       "src": "stills/r2/r2-LASER-a.jpg",
+       "label": "a: black roll-neck bending through (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "r2-LASER-b",
+       "src": "stills/r2/r2-LASER-b.jpg",
+       "label": "b: navy pinstripe on one knee, the jar in front",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "GRAB-r2",
+     "round": 2,
+     "title": "2. The job: the grab",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-GRAB-a",
+       "src": "stills/r2/r2-GRAB-a.jpg",
+       "label": "a: the frog lifted out (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "r2-GRAB-b",
+       "src": "stills/r2/r2-GRAB-b.jpg",
+       "label": "b: from above, the mask reflected",
+       "warn": "The reflection mirrors the mask, so the triangle sits on the wrong side"
+      }
+     ]
+    },
+    {
+     "slot": "TAG-r2",
+     "round": 2,
+     "title": "3. The twist: the price tag",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-TAG-a",
+       "src": "stills/r2/r2-TAG-a.jpg",
+       "label": "a: three lean in",
+       "warn": "The cream mask's ring came out black (the brand ring is white); its triangle is in the middle"
+      },
+      {
+       "id": "r2-TAG-b",
+       "src": "stills/r2/r2-TAG-b.jpg",
+       "label": "b: four heads bowed over the tag (Claude's pick)",
+       "warn": "The cream mask's ring came out black (the brand ring is white)"
+      }
+     ]
+    },
+    {
+     "slot": "WAY-A-r2",
+     "round": 2,
+     "title": "A. The board: price and pay flip up together",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-WAY-A-a",
+       "src": "stills/r2/r2-WAY-A-a.jpg",
+       "label": "a: relaxed on the bench (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "r2-WAY-A-b",
+       "src": "stills/r2/r2-WAY-A-b.jpg",
+       "label": "b: by the board with a coffee",
+       "warn": "Mask side-on: the triangle is hidden"
+      }
+     ]
+    },
+    {
+     "slot": "WAY-B-r2",
+     "round": 2,
+     "title": "B. Heist cancelled: he just buys it",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-WAY-B-a",
+       "src": "stills/r2/r2-WAY-B-a.jpg",
+       "label": "a: coins into his hand (Claude's pick)",
+       "warn": "Mask side-on"
+      },
+      {
+       "id": "r2-WAY-B-b",
+       "src": "stills/r2/r2-WAY-B-b.jpg",
+       "label": "b: over the shopkeeper's shoulder, the mask facing us",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "WAY-C-r2",
+     "round": 2,
+     "title": "C. The savings jar keeps up",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "r2-WAY-C-a",
+       "src": "stills/r2/r2-WAY-C-a.jpg",
+       "label": "a: two jars, a coin dropping",
+       "warn": ""
+      },
+      {
+       "id": "r2-WAY-C-b",
+       "src": "stills/r2/r2-WAY-C-b.jpg",
+       "label": "b: level side by side (Claude's pick)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The heist",
+   "lede": "Claude's picks are marked; problems are flagged on the still.",
+   "groups": [
+    {
+     "slot": "cast",
+     "title": "The crew (reference for every still)",
+     "line": "Four distinct builds, each with a trade: stopwatch, drill case, rope, laptop.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CAST-CREW-a",
+       "src": "stills/r1/CAST-CREW-a.jpg",
+       "label": "a: concrete floor",
+       "warn": ""
+      },
+      {
+       "id": "CAST-CREW-b",
+       "src": "stills/r1/CAST-CREW-b.jpg",
+       "label": "b: plain backdrop (Claude's pick; used as the reference)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "BOARD",
+     "title": "1. The plan",
+     "line": "The shop's floor plan, the jar circled, red string.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BOARD-b",
+       "src": "stills/r1/BOARD-b.jpg",
+       "label": "b: the plan on the brick wall, the crew round it (the other take was blocked by Flow)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "CREW",
+     "title": "1. The line-up walk",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "CREW-a",
+       "src": "stills/r1/CREW-a.jpg",
+       "label": "a: polished corridor, backlit (Claude's pick: the slickest)",
+       "warn": ""
+      },
+      {
+       "id": "CREW-b",
+       "src": "stills/r1/CREW-b.jpg",
+       "label": "b: back lane, haze, washing lines",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "LASER",
+     "title": "2. The job: the laser grid",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "LASER-a",
+       "src": "stills/r1/LASER-a.jpg",
+       "label": "a: bending through the beams (Claude's pick: the mask faces us)",
+       "warn": ""
+      },
+      {
+       "id": "LASER-b",
+       "src": "stills/r1/LASER-b.jpg",
+       "label": "b: on one knee, the jar in front",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "GRAB",
+     "title": "2. The job: the grab",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "GRAB-a",
+       "src": "stills/r1/GRAB-a.jpg",
+       "label": "a: the frog lifted out, the crew member behind (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "GRAB-b",
+       "src": "stills/r1/GRAB-b.jpg",
+       "label": "b: from above, the mask reflected in the glass",
+       "warn": "The reflection mirrors the mask, so the triangle sits on the wrong side"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "TAG",
+     "title": "3. The twist: the price tag",
+     "line": "\"It was 10p when we started planning.\" The tag reads 39p in post.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "TAG-a",
+       "src": "stills/r1/TAG-a.jpg",
+       "label": "a: three lean in, one stands back with the stopwatch",
+       "warn": ""
+      },
+      {
+       "id": "TAG-b",
+       "src": "stills/r1/TAG-b.jpg",
+       "label": "b: the tag huge in front, four heads bowed (Claude's pick: the tag reads clearly)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  },
+  {
+   "h": "The way out: money that keeps up",
+   "lede": "Three ways to show it. Pick the idea as well as the still.",
+   "groups": [
+    {
+     "slot": "WAY-A",
+     "title": "A. The board: price and pay flip up together",
+     "line": "Rows marked with a frog and a coin; numbers in post.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WAY-A-a",
+       "src": "stills/r1/WAY-A-a.jpg",
+       "label": "a: relaxed on a bench under the board (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "WAY-A-b",
+       "src": "stills/r1/WAY-A-b.jpg",
+       "label": "b: leaning by the board with a coffee",
+       "warn": "Mask side-on: triangle near the edge"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "WAY-B",
+     "title": "B. Heist cancelled: he just buys it",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WAY-B-a",
+       "src": "stills/r1/WAY-B-a.jpg",
+       "label": "a: coins into the shopkeeper's hand (Claude's pick: the joke reads at once)",
+       "warn": "Mask side-on"
+      },
+      {
+       "id": "WAY-B-b",
+       "src": "stills/r1/WAY-B-b.jpg",
+       "label": "b: over the shopkeeper's shoulder",
+       "warn": "Some letters on the jar"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "WAY-C",
+     "title": "C. The savings jar keeps up with the price",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "WAY-C-a",
+       "src": "stills/r1/WAY-C-a.jpg",
+       "label": "a: two jars, a coin mid-air",
+       "warn": ""
+      },
+      {
+       "id": "WAY-C-b",
+       "src": "stills/r1/WAY-C-b.jpg",
+       "label": "b: level side by side, chin on fist (Claude's pick: the levels match clearly)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ],
+ "round": 2
+}
