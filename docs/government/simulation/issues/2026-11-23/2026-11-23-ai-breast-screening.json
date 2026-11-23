@@ -3,7 +3,7 @@
  "id": "2026-11-23-ai-breast-screening",
  "simulated": true,
  "stamp": "SIMULATED",
- "stage": "jury",
+ "stage": "published",
  "run": {
   "mode": "live",
   "run_date": "2026-11-23",
@@ -88,7 +88,8 @@
    "sim-citizens",
    "sim-bench",
    "sim-gate",
-   "sim-jury"
+   "sim-jury",
+   "sim-minister"
   ]
  },
  "citizens": {
@@ -538,5 +539,54 @@
   ],
   "review": "2027-11-23",
   "real_jury": false
- }
+ },
+ "minister": {
+  "post": "health",
+  "decision": "signed",
+  "trial": "At Cambridge, the first EDITH hospital, women who volunteer are placed by lot: two experts as now, or one expert plus AI. Each is told her group and has a named clinician to ask. No reading post or hour is cut; saved time is counted and goes to shorter waits. Scans stay in the NHS; no firm profits from them. Two-expert women get no less than today.",
+  "fail_number": "Provisional: fails if one expert plus AI finds fewer cancers, or more show up between screens, than two experts; or waits for results are no shorter than the two-expert group's.",
+  "stop": "2027-11-30",
+  "statement": "Four of twelve jurors said: trial it, no cuts, no firm profiting from scans. The other eight split three ways. So we start small. One hospital: Cambridge. One expert plus AI against two experts, drawn by lot. Every woman is told her group and gets a named clinician to ask. No reading hours cut. Saved time is counted, and it goes to the bed. Scans stay in the NHS. If AI finds fewer cancers, it stops. Any woman can say no and keep two experts."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "answer": "issue",
+   "claim": "By 22 January 2027 at least one more hospital besides Cambridge has begun inviting women into the EDITH trial.",
+   "prior": 0.7,
+   "due": "2027-01-22",
+   "rule": "True if the EDITH page, NHS England or the BBC shows a second EDITH hospital recruiting by 22 Jan 2027. False if only Cambridge is listed.",
+   "sources": [
+    "s1",
+    "s2"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "answer": "issue",
+   "claim": "By 22 January 2027 EDITH has not been paused or suspended at any hospital.",
+   "prior": 0.88,
+   "due": "2027-01-22",
+   "rule": "True if no EDITH page, NHS England or DHSC statement or BBC report up to 22 Jan 2027 says recruitment or the trial has been paused or suspended.",
+   "sources": [
+    "s2",
+    "s3"
+   ],
+   "result": "pending"
+  },
+  {
+   "id": "p3",
+   "answer": "issue",
+   "claim": "By 23 November 2027 no EDITH result on cancers found by AI compared with two experts has been published.",
+   "prior": 0.85,
+   "due": "2027-11-23",
+   "rule": "True if the EDITH page, NHS England or DHSC show no published trial result on cancers found, AI versus two experts, by 23 Nov 2027.",
+   "sources": [
+    "s2",
+    "s3"
+   ],
+   "result": "pending"
+  }
+ ]
 }
