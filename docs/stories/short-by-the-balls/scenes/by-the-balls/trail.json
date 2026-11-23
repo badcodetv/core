@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/61dzwTLv6Yp4yALDYmFfpn",
   "what": "Stills r1: 3 portraits + 14 stills, Claude's picks marked",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-by-the-balls/scenes/by-the-balls/stills-r1-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-23T14:26:14+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/61dzwTLv6Yp4yALDYmFfpn",
+  "what": "Round 3: UNLOCK stills and five voices for BadCode's line",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-by-the-balls/scenes/by-the-balls/stills-r3-picks.json <out.html>"
  }
 ]

@@ -1,0 +1,16 @@
+{
+  "stills": [
+    {
+      "id": "UNLOCK-a",
+      "shot": "UNLOCK",
+      "prompt": "Edit the first image: same pink-lit metal console below the claw machine glass, same round dial with its arrow needle, same ball-top joystick lower left. Now a plain brushed-steel cover plate, hinged down its right edge on a piano hinge, is swinging open toward the camera, halfway through its arc, revealing the dial set into the console behind it, bare and untouched. Two black leather gloved hands from the second image, navy fleece cuffs at the wrists, work the cover: the left glove pinches a small silver key turned a quarter in a round cam lock on the plate's left edge, a ring of old keys dangling from it; the right glove pulls the plate open. Night arcade glow, shallow focus, 35mm photo. Plain surfaces only, nothing written anywhere.",
+      "attach": ["r2-DIAL-b.jpg", "CAST-BADCODE-2.jpg"]
+    },
+    {
+      "id": "UNLOCK-b",
+      "shot": "UNLOCK",
+      "prompt": "Edit the first image, pulled back a little: the claw machine's lit glass at the top, below it the pink metal console with the same round dial, arrow needle and ball-top joystick, the dial bare and untouched. A brushed-steel cover plate hinged on its right edge stands swung wide open, just freed from the dial. On the left, the masked worker from the second image leans in, head in profile facing right toward the dial, one black gloved hand still on the small key in the round lock at the open plate's edge, a ring of old keys hanging below, navy fleece sleeve along the frame. The balaclava exactly as in the attached image: no holes, no skin, gloves.\nNo text, lettering, logos or brand names anywhere in the image. Night arcade neon, 35mm photo.",
+      "attach": ["r2-DIAL-b.jpg", "CAST-BADCODE-2.jpg", "mask-reference.jpg"]
+    }
+  ]
+}

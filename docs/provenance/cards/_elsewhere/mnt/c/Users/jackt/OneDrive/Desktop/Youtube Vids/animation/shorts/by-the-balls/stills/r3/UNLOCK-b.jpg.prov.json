@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r3/UNLOCK-b.jpg",
+ "made": "2026-11-23T14:25:37.450Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first image, pulled back a little: the claw machine's lit glass at the top, below it the pink metal console with the same round dial, arrow needle and ball-top joystick, the dial bare and untouched. A brushed-steel cover plate hinged on its right edge stands swung wide open, just freed from the dial. On the left, the masked worker from the second image leans in, head in profile facing right toward the dial, one black gloved hand still on the small key in the round lock at the open plate's edge, a ring of old keys hanging below, navy fleece sleeve along the frame. The balaclava exactly as in the attached image: no holes, no skin, gloves.\nNo text, lettering, logos or brand names anywhere in the image. Night arcade neon, 35mm photo.",
+ "model": "Nano Banana 2.1",
+ "why": "UNLOCK shot (Jack: both), sealed writer cleanroom/prompts-r3.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r2-DIAL-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r2-DIAL-b.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-BADCODE-2.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a92d44bf-3a0d-4be5-88ac-d980c195bc7c"
+}

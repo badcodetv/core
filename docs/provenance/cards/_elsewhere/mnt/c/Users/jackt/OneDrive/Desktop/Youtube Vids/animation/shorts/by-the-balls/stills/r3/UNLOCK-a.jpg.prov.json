@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r3/UNLOCK-a.jpg",
+ "made": "2026-11-23T14:25:24.628Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first image: same pink-lit metal console below the claw machine glass, same round dial with its arrow needle, same ball-top joystick lower left. Now a plain brushed-steel cover plate, hinged down its right edge on a piano hinge, is swinging open toward the camera, halfway through its arc, revealing the dial set into the console behind it, bare and untouched. Two black leather gloved hands from the second image, navy fleece cuffs at the wrists, work the cover: the left glove pinches a small silver key turned a quarter in a round cam lock on the plate's left edge, a ring of old keys dangling from it; the right glove pulls the plate open. Night arcade glow, shallow focus, 35mm photo. Plain surfaces only, nothing written anywhere.",
+ "model": "Nano Banana 2.1",
+ "why": "UNLOCK shot (Jack: both), sealed writer cleanroom/prompts-r3.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r2-DIAL-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r2-DIAL-b.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-BADCODE-2.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "792c2c50-e5c4-4b7d-b27c-8129b55b5bf7"
+}
