@@ -70,5 +70,17 @@
   ],
   "feedback": "feedback/clips-r5",
   "feedback_docs": 22
+ },
+ {
+  "at": "2026-11-23T19:05:22+00:00",
+  "stage": "clips",
+  "round": 6,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "Clips r2 board read",
+  "decided": [
+   "01-r2a, 05-r2b; all six clips locked"
+  ],
+  "feedback": "feedback/clips-r6",
+  "feedback_docs": 8
  }
 ]

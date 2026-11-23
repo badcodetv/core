@@ -19,3 +19,4 @@
 - **2026-11-23, Jack (clips r1 page):** 02-a, 03-a, 04-a, **06-b** (overrules 06-a); CLIP-1 and CLIP-5 (no pick): "fix the masks there are eye holes thanks". Raw: `feedback/clips-r5/`. Found: 01-a's cream mask turns and shows an eye hole with an eye; 05-a's navy mask grows two holes as he leans. The stills are clean.
 - **2026-11-23, clips round 2** (page round 6): re-rolls with nobody turning or leaning and a solid-cloth mask line (`video-jobs.json` extras 01-r2a/b, 05-r2a/b), 4 of 4 in 2.9 min. Zoomed: every mask solid all clip long. 05-r2a grows a second bulb. **Claude's picks:** 01-r2a, 05-r2b (then the post snap zoom on the tag).
 - **Clips so far:** 01-r2a, 02-a, 03-a, 04-a, 05-r2b + snap zoom, 06-b.
+- **2026-11-23, Jack (clips r2 page):** 01-r2a, 05-r2b. Raw: `feedback/clips-r6/`. **Clips locked:** 01-r2a, 02-a, 03-a, 04-a, 05-r2b + the snap zoom on the tag, 06-b.
