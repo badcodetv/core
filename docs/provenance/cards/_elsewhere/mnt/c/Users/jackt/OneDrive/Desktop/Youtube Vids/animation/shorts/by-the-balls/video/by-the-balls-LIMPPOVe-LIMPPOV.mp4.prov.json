@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-LIMPPOVe-LIMPPOV.mp4",
+ "made": "2026-11-23T15:14:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Camera bolted still, looking down between the two open steel prongs. The small red-roofed white house falls heavily, a quick motion-blurred streak straight down onto the pile, as fast as a real dropped toy. It lands with weight, sinking slightly into the loose coins and model houses, which absorb the hit: one tiny rebound, a short wobble, then it lies dead still, half-buried and tilted, while everything around it stays exactly as it was. The remaining seconds hold this quiet, unchanging view. Sound: a dull plastic thud, a short metallic slither of coins, the claw motor humming.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+ "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "LIMPPOVe",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:13:18.199Z"
+ }
+}

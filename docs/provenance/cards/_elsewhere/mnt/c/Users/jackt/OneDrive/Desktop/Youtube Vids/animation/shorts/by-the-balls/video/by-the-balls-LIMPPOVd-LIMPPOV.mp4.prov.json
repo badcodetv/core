@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-LIMPPOVd-LIMPPOV.mp4",
+ "made": "2026-11-23T15:14:16+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Fixed overhead camera, locked in place; claw and heap remain frozen exactly as framed. In the first instant the red-roofed white house plummets out of frame centre like a dropped stone and lands hard on the heap below. The eave corner bites into the coins, the house tips over onto its side with a sharp jolt, and the impact knocks one gold coin and a small blue house a few millimetres aside. Everything settles at once and the house lies still, wedged at an angle among the coins, for the rest of the shot. Normal playback speed. Sound: one crisp plastic clatter, two coins ringing as they shift, then only the low whir of the claw motor.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+ "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "LIMPPOVd",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:13:10.021Z"
+ }
+}

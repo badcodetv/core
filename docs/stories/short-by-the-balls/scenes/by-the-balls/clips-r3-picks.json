@@ -1,0 +1,363 @@
+{
+ "title": "By the Balls Clips",
+ "eyebrow": "BadCode Shorts · By the Balls · clips round 3",
+ "heading": "By the Balls: the realistic fall",
+ "intro": "Round 3: four takes of the claw's-view fall, made to fall realistically. Pick one; it goes into the rough cut after the couple's LIMP. Rough cut 1: https://claude.ai/artifact/DXKshcwZZ21LCwNniyV83x",
+ "sections": [
+  {
+   "h": "Clips",
+   "lede": "Claude's picks are marked; faults flagged.",
+   "groups": [
+    {
+     "slot": "LIMPPOV-r3",
+     "round": 3,
+     "title": "1. The fall, from the claw's view (realistic)",
+     "line": "Your note: \"Make it fall realistically, research how to do that\". A sealed writer researched it (gravity, one landing, settle, still camera); motion measured on each take.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "LIMPPOVf",
+       "src": "clips/LIMPPOVf.mp4",
+       "label": "f: drops, lands and settles in 0.2-1.5 s, then still (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "LIMPPOVc",
+       "src": "clips/LIMPPOVc.mp4",
+       "label": "c: the sharpest hit (peak 0.33 s), settles slower",
+       "warn": ""
+      },
+      {
+       "id": "LIMPPOVd",
+       "src": "clips/LIMPPOVd.mp4",
+       "label": "d: softer, longer settle",
+       "warn": ""
+      },
+      {
+       "id": "LIMPPOVe",
+       "src": "clips/LIMPPOVe.mp4",
+       "label": "e: softer, longer settle",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "LIMP-r2",
+     "round": 2,
+     "title": "1. The claw goes limp: the claw's view",
+     "line": "Your note: a close-up from the claw's perspective, only the house moves.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "LIMPPOVa",
+       "src": "clips/LIMPPOVa.mp4",
+       "label": "LIMPPOVa: the house falls away and lands; the pile stays still (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "LIMPPOVb",
+       "src": "clips/LIMPPOVb.mp4",
+       "label": "LIMPPOVb: the house turns as it lands",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "LIMPW-r2",
+     "round": 2,
+     "title": "1. The claw goes limp: the couple watching",
+     "line": "Your note: the people still there, only the house moves.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "LIMPWIDEa",
+       "src": "clips/LIMPWIDEa.mp4",
+       "label": "LIMPWIDEa: only the house drops; they react (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "LIMPWIDEb",
+       "src": "clips/LIMPWIDEb.mp4",
+       "label": "LIMPWIDEb: similar",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "UNLOCK-r2",
+     "round": 2,
+     "title": "3. He unlocks the hidden dial",
+     "line": "Your note: \"fix this\". The dial now stays the same dial.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "UNLOCKc",
+       "src": "clips/UNLOCKc.mp4",
+       "label": "UNLOCKc: the cover swings open, the dial unchanged (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "UNLOCKd",
+       "src": "clips/UNLOCKd.mp4",
+       "label": "UNLOCKd: the same, a little closer",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "WIN-r2",
+     "round": 2,
+     "title": "3. They win the house",
+     "line": "Your note: the lid stays out, not much moves.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "WINc",
+       "src": "clips/WINc.mp4",
+       "label": "WINc: the hatch stays open, they lift it gently (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "WINd",
+       "src": "clips/WINd.mp4",
+       "label": "WINd: the same, a touch more movement",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "PLAY",
+     "title": "1. The game: they play",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "PLAYa",
+       "src": "clips/PLAYa.mp4",
+       "label": "PLAYa: fine, little movement",
+       "warn": ""
+      },
+      {
+       "id": "PLAYb",
+       "src": "clips/PLAYb.mp4",
+       "label": "PLAYb: pushes in on the white house as they lean in (Claude's pick)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "GRAB",
+     "title": "1. The claw grabs the house",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "GRABa",
+       "src": "clips/GRABa.mp4",
+       "label": "GRABa: lifts it cleanly (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "GRABb",
+       "src": "clips/GRABb.mp4",
+       "label": "GRABb: lifts it higher, out of frame",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "LIMP",
+     "title": "1. The claw goes limp",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "LIMPa",
+       "src": "clips/LIMPa.mp4",
+       "label": "LIMPa: the house drops back, clean (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "LIMPb",
+       "src": "clips/LIMPb.mp4",
+       "label": "LIMPb",
+       "warn": "A sudden zoom; a house lands by the panel"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "FACES",
+     "title": "1. They deflate",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "FACESa",
+       "src": "clips/FACESa.mp4",
+       "label": "FACESa",
+       "warn": ""
+      },
+      {
+       "id": "FACESb",
+       "src": "clips/FACESb.mp4",
+       "label": "FACESb: (Claude's pick)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "BADCODE",
+     "title": "2. BadCode: \"It was never broken. It was set.\"",
+     "line": "His line is laid over later; the mask has no mouth.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "BADCODEa",
+       "src": "clips/BADCODEa.mp4",
+       "label": "BADCODEa: still, mask holds",
+       "warn": ""
+      },
+      {
+       "id": "BADCODEb",
+       "src": "clips/BADCODEb.mp4",
+       "label": "BADCODEb: slow push-in, mask holds (Claude's pick)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "UNLOCK",
+     "title": "3. He unlocks the hidden dial",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "UNLOCKa",
+       "src": "clips/UNLOCKa.mp4",
+       "label": "UNLOCKa: the cover opens on the dial (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "UNLOCKb",
+       "src": "clips/UNLOCKb.mp4",
+       "label": "UNLOCKb",
+       "warn": "The dial turns into a safe lock"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "DIAL",
+     "title": "3. Everyone turns the dial",
+     "line": "The LAND PRICE labels go on in post.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "DIALa",
+       "src": "clips/DIALa.mp4",
+       "label": "DIALa: the needle swings, hands consistent (Claude's pick)",
+       "warn": ""
+      },
+      {
+       "id": "DIALb",
+       "src": "clips/DIALb.mp4",
+       "label": "DIALb",
+       "warn": "The hands change as it zooms"
+      }
+     ],
+     "round": 1
+    },
+    {
+     "slot": "WIN",
+     "title": "3. They win the house",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "WINa",
+       "src": "clips/WINa.mp4",
+       "label": "WINa",
+       "warn": "Laughter in its own sound (room sound will come from b)"
+      },
+      {
+       "id": "WINb",
+       "src": "clips/WINb.mp4",
+       "label": "WINb: they lift it out (Claude's pick)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  },
+  {
+   "h": "Music",
+   "lede": "Your ask: \"start with arcade music too, think stranger things when they are in the arcade\". Four sealed writers, four different takes on it, two Suno takes each; instrumental only. Each opens on suno.com. Not heard by Claude.",
+   "groups": [
+    {
+     "slot": "MUSIC",
+     "title": "The arcade music",
+     "line": "Pick one take.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "analog-a",
+       "href": "https://suno.com/song/31f9ca22-5b60-4ccb-a9eb-f6fb23db940c",
+       "label": "Analog arpeggio score, take 1",
+       "warn": ""
+      },
+      {
+       "id": "analog-b",
+       "href": "https://suno.com/song/77f6c552-da2d-49bf-b841-49b4faef129d",
+       "label": "Analog arpeggio score, take 2",
+       "warn": ""
+      },
+      {
+       "id": "fm-a",
+       "href": "https://suno.com/song/ae605d80-bd5c-4f57-85d1-6cc875de29f4",
+       "label": "Cabinet attract loop, take 1 (0:29)",
+       "warn": ""
+      },
+      {
+       "id": "fm-b",
+       "href": "https://suno.com/song/98f575ef-a960-4f96-b91b-5b093c4b10c6",
+       "label": "Cabinet attract loop, take 2 (0:28)",
+       "warn": ""
+      },
+      {
+       "id": "chip-a",
+       "href": "https://suno.com/song/2b1fc882-d679-447f-a9b2-adebbb524ee6",
+       "label": "8-bit coin-slot chiptune, take 1 (0:20)",
+       "warn": ""
+      },
+      {
+       "id": "chip-b",
+       "href": "https://suno.com/song/dd735cdc-34ad-4b6d-8549-6ea0c6c577e3",
+       "label": "8-bit coin-slot chiptune, take 2 (0:22)",
+       "warn": ""
+      },
+      {
+       "id": "rock-a",
+       "href": "https://suno.com/song/bfeb56ed-3c3b-4695-9a6a-2d8cb53cc7a8",
+       "label": "Arcade-radio synth rock, take 1 (0:22)",
+       "warn": ""
+      },
+      {
+       "id": "rock-b",
+       "href": "https://suno.com/song/083da8e1-a50f-482e-9b98-b2358fd88b6c",
+       "label": "Arcade-radio synth rock, take 2 (0:20)",
+       "warn": ""
+      }
+     ],
+     "round": 1
+    }
+   ]
+  }
+ ],
+ "round": 3
+}

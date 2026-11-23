@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-LIMPPOVc-LIMPPOV.mp4",
+ "made": "2026-11-23T15:14:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static shot looking straight down past the claw's open prongs; the camera, the claw and the pile stay completely still for the whole clip. Real-time speed. The white two-storey house with the red roof drops 30 cm straight down under gravity, accelerating hard and hitting the pile in about a quarter of a second, still tilted as it was. Its lower roof corner strikes first; it hops once, barely a centimetre, rocks onto its side against the coins and stops dead within half a second. It then rests motionless in that spot until the end. Sound: a short hollow plastic clack, a brief chink of coins, the steady hum of the claw motor.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+ "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "LIMPPOVc",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:12:57.178Z"
+ }
+}

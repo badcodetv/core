@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-LIMPPOVf-LIMPPOV.mp4",
+ "made": "2026-11-23T15:14:28+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static top-down shot, camera completely still; the claw and the pile remain fixed in place throughout. Timing in real time: from 0 to 0.3 seconds the white house with the red roof drops straight down and hits the pile; from 0.3 to 1 second it tips once onto its side, nudges a single coin, and comes to rest; from 1 second to the end it lies motionless and the scene is a still frame of the claw above the heap, the house resting where it landed. Sound: a sharp clack of plastic on coins, a single coin chink, then the steady electric hum of the claw motor.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+ "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/LIMPPOV.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "LIMPPOVf",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:13:20.036Z"
+ }
+}
