@@ -1,26 +1,22 @@
 {
- "round": 1,
+ "round": 2,
  "plan": [
   {
-   "h": "Rough cut 1 (19.9 s)",
+   "h": "Rough cut 2 (23.7 s)",
    "items": [
-    "Your picks in order: they play, the claw grabs the house (the owners on the claw: BANK, LANDLORD, ENERGY CO.), the claw goes limp with them watching, they deflate, BadCode: \"It was never broken. It was set.\", he unlocks the hidden dial, everyone turns LAND PRICE from WHAT IT MIGHT BE WORTH to WHAT IT'S WORTH, they win the house, logo.",
-    "Music: your cabinet attract loop under the whole thing, ducked under BadCode's line. Voice: the Liverpool voice you picked."
-   ]
-  },
-  {
-   "h": "Coming",
-   "items": [
-    "The claw's-view fall, made to fall realistically (your note), drops in after the couple's LIMP when it lands."
+    "Outro: the BadCode logo printed in the centre circle of an arcade air hockey table, a puck gliding past, then fade (your note). Real-looking table from Flow; the logo is the brand file itself, printed into the surface in post.",
+    "The realistic fall from the claw's view (take f, my pick: there was no pick on the clips page) now follows the couple watching the claw go limp."
    ]
   },
   {
    "h": "You decide",
    "items": [
     "The label wording on the claw and the dial: keep or change?",
-    "A creative logo outro (like The Den's), or the plain card?"
+    "Trim toward ~20 s?"
    ]
   }
  ],
- "replies": {}
+ "replies": {
+  "at475": "Done in rough cut 2: an arcade air hockey table, the BadCode logo printed in its centre circle, a puck gliding past."
+ }
 }

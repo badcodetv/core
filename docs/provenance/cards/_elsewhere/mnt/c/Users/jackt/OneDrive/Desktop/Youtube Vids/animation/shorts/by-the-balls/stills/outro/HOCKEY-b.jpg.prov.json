@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/outro/HOCKEY-b.jpg",
+ "made": "2026-11-23T15:24:04.761Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Rework the first photo into a 9:16 frame: the lens sits just above a white air hockey table, looking along its length. The red centre circle fills most of the lower two thirds, its ring sharp, the white surface within it bare, flat and evenly lit, a fine grid of pinprick air holes catching a soft sheen. The rest of the table fades upward into blur: a blue line, the far rail, a goal mouth. Night in a British seaside arcade, taking colour and light from the second image: purple neon wash on the rails, cool white overhead light on the table, out-of-focus red and orange machine glow behind. Real photograph, gentle grain.",
+ "model": "Nano Banana 2.1",
+ "why": "hockey logo outro (Jack at475), sealed writer cleanroom/outro-r1.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-hockey.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/ref-hockey.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/start-PLAY.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ac764bf0-b762-4dd0-a7cb-af3e5407f811"
+}

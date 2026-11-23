@@ -37,13 +37,14 @@ DIAL_TOP, DIAL_LEFT, DIAL_RIGHT = 'LAND PRICE', 'WHAT IT MIGHT\nBE WORTH', "WHAT
 SHOTS = [
     ('play', '1. The game', 'PLAYb', 'PLAY', 0.4, 48, None, None, 'The couple at the claw machine'),
     ('grab', '1. The game', 'GRABb', 'GRAB', 0.0, 44, None, 'claw', 'The claw grabs the house (the owners\' names on it)'),
-    ('limp', '1. The game', 'LIMPWIDEa', 'LIMPWIDE', 0.0, 44, None, None, 'The claw goes limp; the house drops'),
+    ('limp', '1. The game', 'LIMPWIDEa', 'LIMPWIDE', 0.0, 40, None, None, 'The claw goes limp; the house drops'),
+    ('fall', '1. The game', 'LIMPPOVf', 'LIMPPOV', 0.0, 40, None, None, "The claw's view: the house falls back onto the pile"),
     ('faces', '1. The game', 'FACESb', 'FACES', 0.0, 44, None, None, 'They deflate'),
     ('badcode', '2. The reveal', 'BADCODEb', 'BADCODE', 0.2, 84, 0.45, None, 'BadCode: "It was never broken. It was set."'),
     ('unlock', '3. The way out', 'UNLOCKc', 'UNLOCK', 0.0, 52, None, None, 'He unlocks the hidden dial'),
     ('dial', '3. The way out', 'DIALb', 'DIAL', 0.3, 66, None, 'dial', 'Everyone turns the land-price dial'),
     ('win', '3. The way out', 'WINc', 'WIN', 0.0, 60, None, None, 'They win the house'),
-    ('logo', '4. Logo', None, None, 0, 36, None, None, 'The BadCode logo'),
+    ('logo', '4. Logo', 'HOCKEYa', 'HOCKEY', 0.4, 90, None, None, 'The BadCode logo printed on an air hockey table, a puck gliding past'),
 ]
 
 
@@ -84,7 +85,9 @@ def main():
         pf = cut / f'v{n:02d}-{bid}.mp4'
         if key:
             src = VID / f'by-the-balls-{key}-{still}.mp4'
-            if label:
+            if bid == 'logo':  # Jack, timeline r1 at475: "lets do a hockey arcade badcode logo"
+                subprocess.run([sys.executable, str(REPO / 'scripts/shorts/btb_hockey_logo.py'), str(src), str(pf), '--in', str(cin), '--dur', str(sd)], check=True)
+            elif label:
                 lp = cut / f'label-{label}.png'; label_png(label, lp)
                 ff('-ss', cin, '-i', src, '-loop', 1, '-i', lp, '-filter_complex',
                    f'[0:v]{VF},tpad=stop_mode=clone:stop_duration=4[v];[1]format=rgba,fade=t=in:st=0.25:d=0.3:alpha=1[l];[v][l]overlay=0:0:shortest=1,{CLAMP}',
@@ -144,8 +147,8 @@ def main():
            'fps': FPS, 'total': total, 'beats': beats, 'video': vids, 'audio': audio, 'events': events,
            'flags': ["Music: Jack's pick (cabinet attract loop, take 1), ducked under BadCode's line.",
                      'Labels added in post (Flow cannot write): the owners on the claw (BANK, LANDLORD, ENERGY CO.) and the dial (LAND PRICE: WHAT IT MIGHT BE WORTH / WHAT IT\'S WORTH). Wording is a draft for Jack.',
-                     "The claw's-view fall (LIMPPOV) is being redone (Jack: 'make it fall realistically'); this cut uses the couple's LIMP only.",
-                     'Plain logo card at the end; a creative logo outro can follow.']}
+                     "The claw's-view fall: LIMPPOVf, Claude's pick (no pick on the clips page yet); the most compact of the four realistic takes.",
+                     'Outro: the logo printed in the centre circle of an air hockey table (the brand file, multiplied into the surface), a puck gliding past (Jack: "a hockey arcade badcode logo").']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
     chk = subprocess.run([sys.executable, str(REPO / 'scripts/lipsync/check-cut.py'), str(cut / 'edl.json'), str(AUD)])
     print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4'), 'check': 'ok' if chk.returncode == 0 else 'FAILED'}))

@@ -195,6 +195,20 @@
    "still": "LIMPPOV",
    "motion": "Static top-down shot, camera completely still; the claw and the pile remain fixed in place throughout. Timing in real time: from 0 to 0.3 seconds the white house with the red roof drops straight down and hits the pile; from 0.3 to 1 second it tips once onto its side, nudges a single coin, and comes to rest; from 1 second to the end it lies motionless and the scene is a still frame of the claw above the heap, the house resting where it landed. Sound: a sharp clack of plastic on coins, a single coin chink, then the steady electric hum of the claw motor.",
    "why": "clips r3, realistic fall (Jack), sealed writer cleanroom/anim-r3.json + research-fall.md"
+  },
+  {
+   "key": "HOCKEYa",
+   "n": 1,
+   "still": "HOCKEY",
+   "motion": "Locked-off camera, no movement at all. A flat red puck shoots in from the left edge, skimming fast across the white table on its air cushion, passing along the far side of the red centre circle, well clear of its middle, and sliding out past the right edge. The centre of the circle stays bare white throughout. The faint sheen over the air holes flickers softly; the blurred arcade lights behind hold steady. Nothing else in the frame moves. Sound: a sharp plastic clack as the puck enters, a smooth hissing glide, the table's steady air hum and a low arcade room tone.",
+   "why": "hockey logo outro (Jack at475), sealed writer cleanroom/outro-r1.json; both from HOCKEY-a"
+  },
+  {
+   "key": "HOCKEYb",
+   "n": 1,
+   "still": "HOCKEY",
+   "motion": "The camera stays perfectly still for the whole shot. A red puck darts in from the right edge, gliding quickly and frictionlessly over the white surface, tracing a path just beyond the top of the red centre circle without crossing its middle, then leaving frame on the left. Inside the ring the white stays clean and empty. A slight shimmer plays across the tiny air holes; the neon glow on the rails and the soft background lights do not change. No other motion. Sound: one crisp clack off the rail, a fast airy glide, the constant hum of the table's blower, quiet arcade ambience.",
+   "why": "hockey logo outro (Jack at475), sealed writer cleanroom/outro-r1.json; both from HOCKEY-a"
   }
  ]
 }

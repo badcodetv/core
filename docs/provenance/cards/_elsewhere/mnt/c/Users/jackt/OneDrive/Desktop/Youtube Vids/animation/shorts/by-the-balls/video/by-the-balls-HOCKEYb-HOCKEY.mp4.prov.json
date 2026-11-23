@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/video/by-the-balls-HOCKEYb-HOCKEY.mp4",
+ "made": "2026-11-23T15:26:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera stays perfectly still for the whole shot. A red puck darts in from the right edge, gliding quickly and frictionlessly over the white surface, tracing a path just beyond the top of the red centre circle without crossing its middle, then leaving frame on the left. Inside the ring the white stays clean and empty. A slight shimmer plays across the tiny air holes; the neon glow on the rails and the soft background lights do not change. No other motion. Sound: one crisp clack off the rail, a fast airy glide, the constant hum of the table's blower, quiet arcade ambience.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/HOCKEY.jpg",
+ "why": "hockey logo outro (Jack at475), sealed writer cleanroom/outro-r1.json; both from HOCKEY-a",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/moodboard/HOCKEY.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls",
+  "key": "HOCKEYb",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-23T15:25:04.004Z"
+ }
+}

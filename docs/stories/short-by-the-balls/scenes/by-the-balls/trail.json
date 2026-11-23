@@ -38,5 +38,16 @@
   "url": "https://claude.ai/artifact/DXKshcwZZ21LCwNniyV83x",
   "what": "Rough cut 1 (19.9 s): picks, line, music, post labels",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-by-the-balls/scenes/by-the-balls <out-dir>"
+ },
+ {
+  "at": "2026-11-23T15:28:42+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/DXKshcwZZ21LCwNniyV83x",
+  "what": "Rough cut 2 (23.7 s): hockey logo outro, the realistic fall",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-by-the-balls/scenes/by-the-balls <out-dir>",
+  "decided": [
+   "lets do a hockey arcade badcode logo thanks"
+  ]
  }
 ]

@@ -1,0 +1,26 @@
+{
+  "stills": [
+    {
+      "id": "HOCKEY-a",
+      "prompt": "Edit the first photo, keeping its low, close camera skimming across a white arcade air hockey table. The red centre circle sits large in the lower half of the frame, a thin red ring round a wide disc of bare white laminate dotted with tiny air holes. Inside the ring the white is clean, empty and evenly lit edge to edge. Beyond it the table runs away into soft focus: a pale blue line, faint markings, the far goal slot. Relight as a British arcade at night, matching the second image's light only: violet and magenta glow along the rails, warm red and amber cabinet lights blurred in the dark background. 9:16, photographic, shallow depth of field.",
+      "attach": ["ref-hockey.jpg", "start-PLAY.jpg"]
+    },
+    {
+      "id": "HOCKEY-b",
+      "prompt": "Rework the first photo into a 9:16 frame: the lens sits just above a white air hockey table, looking along its length. The red centre circle fills most of the lower two thirds, its ring sharp, the white surface within it bare, flat and evenly lit, a fine grid of pinprick air holes catching a soft sheen. The rest of the table fades upward into blur: a blue line, the far rail, a goal mouth. Night in a British seaside arcade, taking colour and light from the second image: purple neon wash on the rails, cool white overhead light on the table, out-of-focus red and orange machine glow behind. Real photograph, gentle grain.",
+      "attach": ["ref-hockey.jpg", "start-PLAY.jpg"]
+    }
+  ],
+  "clips": [
+    {
+      "id": "HOCKEYa",
+      "still": "HOCKEY-a",
+      "motion": "Locked-off camera, no movement at all. A flat red puck shoots in from the left edge, skimming fast across the white table on its air cushion, passing along the far side of the red centre circle, well clear of its middle, and sliding out past the right edge. The centre of the circle stays bare white throughout. The faint sheen over the air holes flickers softly; the blurred arcade lights behind hold steady. Nothing else in the frame moves. Sound: a sharp plastic clack as the puck enters, a smooth hissing glide, the table's steady air hum and a low arcade room tone."
+    },
+    {
+      "id": "HOCKEYb",
+      "still": "HOCKEY-b",
+      "motion": "The camera stays perfectly still for the whole shot. A red puck darts in from the right edge, gliding quickly and frictionlessly over the white surface, tracing a path just beyond the top of the red centre circle without crossing its middle, then leaving frame on the left. Inside the ring the white stays clean and empty. A slight shimmer plays across the tiny air holes; the neon glow on the rails and the soft background lights do not change. No other motion. Sound: one crisp clack off the rail, a fast airy glide, the constant hum of the table's blower, quiet arcade ambience."
+    }
+  ]
+}
