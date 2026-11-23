@@ -3,7 +3,7 @@
  "id": "2026-11-23-ai-breast-screening",
  "simulated": true,
  "stamp": "SIMULATED",
- "stage": "bench",
+ "stage": "gate",
  "run": {
   "mode": "live",
   "run_date": "2026-11-23",
@@ -86,7 +86,8 @@
   "workers": [
    "sim-clerk",
    "sim-citizens",
-   "sim-bench"
+   "sim-bench",
+   "sim-gate"
   ]
  },
  "citizens": {
@@ -299,5 +300,189 @@
     "s2"
    ]
   }
- ]
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "Finds at least as many cancers as two readers",
+    "result": "fail",
+    "note": "no source needed: logic. Its stop line lets the AI group find up to one in ten fewer cancers, so it does not hold to \"at least as many\".",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Faster results, shorter waits",
+    "result": "unclear",
+    "note": "Time saved goes to shorter waits and waits are checked at 12 months, but there is no fail number for waits and no evidence yet that AI shortens them.",
+    "sources": [
+     "s3"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Women told plainly which screen",
+    "result": "pass",
+    "note": "no source needed: logic. Letters tell each woman which group she is in.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Proper trial on real women first",
+    "result": "pass",
+    "note": "Volunteers are placed by lot between two experts and AI with one, as EDITH already randomises women into groups.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no staff cuts, a human to ask",
+    "result": "unclear",
+    "note": "Bans cuts to reading jobs and hours, and one human expert reads every image in EDITH, but no named person is offered for a woman to ask.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no misses two readers would catch",
+    "result": "fail",
+    "note": "no source needed: logic. It accepts a drop of up to one in ten cancers found before stopping, so some women could be missed.",
+    "sources": []
+   },
+   {
+    "answer": "A",
+    "test": "Limit: no scans to firms for profit",
+    "result": "unclear",
+    "note": "Promises scan data stays in the NHS, yet EDITH has a company-run cloud and AI providers handling images; the sources do not settle whether that can be met.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Finds at least as many cancers as two readers",
+    "result": "unclear",
+    "note": "Stops if AI finds more than 1 in 100 fewer cancers, so a small shortfall is allowed; whether AI matches two readers is what the trial exists to find out.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Faster results, shorter waits",
+    "result": "unclear",
+    "note": "Time saved goes to shorter waits, but no waits measure or fail number is set and no evidence yet shows AI shortens them.",
+    "sources": [
+     "s3"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Women told plainly which screen",
+    "result": "pass",
+    "note": "no source needed: logic. Each woman is told her group and can say no.",
+    "sources": []
+   },
+   {
+    "answer": "B",
+    "test": "Proper trial on real women first",
+    "result": "pass",
+    "note": "Volunteers are picked by lot between two experts and one expert plus AI, as EDITH already randomises three groups.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no staff cuts, a human to ask",
+    "result": "unclear",
+    "note": "No post is cut and a staff and women panel can switch it off, but no named person is offered for a woman to ask about her result.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no misses two readers would catch",
+    "result": "unclear",
+    "note": "The 1 in 100 stop line is tight but still allows some misses; only the trial can show whether any happen.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "B",
+    "test": "Limit: no scans to firms for profit",
+    "result": "unclear",
+    "note": "Needs NHS-owned software, but EDITH uses a company-run cloud and AI providers; the sources do not show NHS-owned software exists or could be used.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Finds at least as many cancers as two readers",
+    "result": "pass",
+    "note": "no source needed: logic. Its provisional failure is any fall in cancers found against two readers.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Faster results, shorter waits",
+    "result": "pass",
+    "note": "no source needed: logic. Sets a measured waits goal (median cut 10%) with a review at six months; whether it will be hit is not yet known.",
+    "sources": [
+     "s3"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Women told plainly which screen",
+    "result": "pass",
+    "note": "no source needed: logic. Each woman is told how she was allocated.",
+    "sources": []
+   },
+   {
+    "answer": "C",
+    "test": "Proper trial on real women first",
+    "result": "pass",
+    "note": "Willing women assigned by lot against two readers, as EDITH already does, with no national rollout on inconclusive evidence.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no staff cuts, a human to ask",
+    "result": "pass",
+    "note": "Keeps staff, names a human contact and keeps two readers for anyone declining; EDITH already lets women decline AI and have two experts.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no misses two readers would catch",
+    "result": "unclear",
+    "note": "Stops on fewer cancers or more between screens, but a trial can only show a miss after it happens; no evidence yet either way.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "answer": "C",
+    "test": "Limit: no scans to firms for profit",
+    "result": "pass",
+    "note": "Bans commercial reuse of scans by contract; EDITH says its cloud company holds data a maximum of 30 days and AI firms cannot take data out of the UK environment.",
+    "sources": [
+     "s2"
+    ]
+   }
+  ],
+  "verdict": "No answer passes every test and limit: A fails two, and the rest turn on evidence that does not exist yet, since whether AI finds as many cancers is what EDITH is running to learn. What cannot be settled by facts is who bears the risk of a possible miss and who controls scans held by firms.",
+  "to_jury": true,
+  "rejected_claims": []
+ }
 }
