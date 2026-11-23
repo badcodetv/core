@@ -62,3 +62,31 @@ Goal: [`GOAL.md`](./GOAL.md). Branch: `future-proof/simulation`. Newest entry fi
   - **Citizen splits** (simulated, against a real poll where one exists):
     - 19 Nov: 44% yes, against Ipsos for DWP 82%;
     - 17 Nov: 60% yes; 18 Nov: 53%; 20 Nov: 65%; 21 Nov: 34%; 22 Nov: 39% (no matching poll for these).
+- 23 Nov: **backfill done: 7 replayed days published and valid.**
+  - **Pushed** to `simulation/live` (`83c3f6d5`).
+  - **Private page republished** with all seven: https://claude.ai/artifact/GArjgzYRpi2Hc7C2ZjTi7V. The scoreboard shows 18 predictions pending and 0 marked.
+  - **The seven days:**
+    - 10 Nov, Thames Water: jury picked customers and staff, with lenders taking the loss.
+    - 17 Nov, price cap: quick help, paid for by the richest.
+    - 18 Nov, refugee support charge: repay what you can afford, under a cap.
+    - 19 Nov, youth jobs: a guaranteed place, with a duty to take it.
+    - 20 Nov, local police: a commander who can be removed by a panel of residents drawn by lot.
+    - 21 Nov, EU fees: home rates only for countries that match them.
+    - 22 Nov, high street: staff and councils get first call on closing stores.
+  - Every minister signed a one-area trial. In 7 of 7 the gate found 0 of 3 answers passing every test: most rows are "unclear", which is honest, because the sources rarely settle a proposal ahead of time.
+  - **Hard-rule review by hand:**
+    - "the public" appears only inside a real poll's wording (Thames: "public sector");
+    - no minister quotes a real person;
+    - every prediction falls due after 23 Nov.
+  - **Two fixes made:**
+    - 19 Nov's statement now attributes "25 pounds for every 1 pound" to the government's own figure (s2), instead of stating it as fact;
+    - a stray note was taken out of 22 Nov's struck-out claims.
+  - **Cost per replayed day, measured:** clerk about 65k, citizens about 90k, orchestrator (C relay, join, gate, jury, minister) about 80k, plus A and B about 46k each. **About 330k to 430k tokens a day.**
+  - **Jury model:** for 17–22 Nov the orchestrator wrote the juror votes on Sonnet, not Haiku, and the files say so.
+  - **Stray Codex chats:** two placeholder messages were sent by mistake (chats `a1418e41…` and `183f66e0…`); they weren't used.
+- 23 Nov: checks:
+  - `vitest run scripts/government`: 345 passed;
+  - `policy-lint`: 55 policies, 0 errors;
+  - sync assembles 12 workers and 12 schedules;
+  - no change under `docs/government/policies/`.
+- **Next:** open the one PR. After Kai merges, verify the first live run (Bob 09:00–11:30 London time, then the routine at 13:00 UTC) and write the report.
