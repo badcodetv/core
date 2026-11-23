@@ -8,7 +8,8 @@
 Every end of a turn fires the desktop toast (the Stop hook in `~/.claude/settings.json`). So never end a turn while
 work I started is still running (a Flow queue, the pool, a writer, a Suno run): wait on it in the same turn
 (`flow_queue_status` with `waitSeconds`, a blocking command) and end the turn only when there is something for Jack or
-Kai to look at, pick or answer. No "it's rendering, I'll tell you" turns. Permission prompts and questions toast on
+Kai to look at, pick or answer. No "it's rendering, I'll tell you" turns. The Stop hook is `~/.claude/hooks/toast-if-yours.sh`: it toasts only after a turn a human message started, never after a
+turn a background task started. Permission prompts and questions toast on
 their own (the Notification hook). The project's duplicate Stop toast (`.claude/settings.local.json`) was removed the
 same day.
 

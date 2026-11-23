@@ -14,5 +14,13 @@
   "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
   "what": "Stills r2: crew re-cast in suit-cloth masks, 14 stills re-made",
   "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/stills-r2-picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-23T17:47:36+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM",
+  "what": "Stills r3: Freddoo wrappers on GRAB, TAG, WAY-B, WAY-C",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-fredo-job/scenes/fredo-job/stills-r3-picks.json <out.html>"
  }
 ]

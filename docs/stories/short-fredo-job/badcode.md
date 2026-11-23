@@ -25,8 +25,9 @@ spoken line is an AI Studio voice, cast with voice-casting (English, with a name
 ## Story-only rules
 - Jack and Kai write the jokes: beats say what each moment conveys; joke lines stay blank for them. The pitch's line
   ("It was 10p when we started planning.") is on the shorts list, not ruled.
-- Parody of the genre only: never a film's title, logo, score, characters or any actor's likeness. The chocolate bar and
-  the shop show no real brand, wrapper or logo.
+- Parody of the genre only: never a film's title, logo, score, characters or any actor's likeness. The shop shows no real
+  brand. The bar (Jack, 2026-11-23): a lookalike of the real purple frog wrapper, renamed **Freddoo**; never the maker's
+  name or logo (cover it in post if Flow adds one).
 - The prices (10p then, today's price) are read at source before they are said or shown.
 
 ## Library pieces in use
