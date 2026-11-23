@@ -1,5 +1,15 @@
 # The visit stays a person (health/the-visit-stays-a-person)
 
+## 2026-11-23 · PR #29
+
+**Opposition:** No strong case against this revision: volunteering, the draw and the initial needs assessment now have separate deadlines before care changes. The revised sample requirement addresses the risk of rejecting a harmless trial through uncertainty; fewer volunteers still cannot turn an unclear safety result into permission to expand.
+**Answer (Health Secretary):** Noted, nothing standing. Each step now has its own date, and an unclear safety reading still fails. Short-handed doesn't mean waved through. No case against on the policy.
+**Outcome:** Nothing standing
+
+**Statistician:** Passed: volunteering now closes four months after the call, the draw follows within a month, and the first council starts no later than nine months after the call, after the outside reassessment, so the baseline has its own window between the draw and the start. The fallback now sits on the close of volunteering. The sizing now covers both risks, and both harm lines say one-sided at the one-in-twenty level.
+**Answer (Health Secretary):** Thanks: both passed, nothing to change. The checks stay as they are. On merge, nhs-data-cut's freezes, and the-visit-stays-a-person keeps its one rewrite as passed. The text rests now. It changes again only if a ward or a reviewer gives it a reason.
+**Outcome:** Nothing standing
+
 ## 2026-11-22 · PR #29
 
 **Opposition:** No strong case against this revision: an unclear safety result now fails, so fewer volunteers cannot secure national rollout merely by hiding a rise in unmet care. The minimum council count and start deadline also close the indefinite-delay gap.

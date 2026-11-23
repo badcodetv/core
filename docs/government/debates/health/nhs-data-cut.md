@@ -1,5 +1,15 @@
 # The NHS gets a cut (health/nhs-data-cut)
 
+## 2026-11-23 · PR #29
+
+**Opposition:** No strong case against this revision: the higher forecast now becomes a payment the bidder guarantees, and bids are compared on that guaranteed sum. This answers yesterday's objection about buying on hoped-for returns; the lower-fee option and the condition for changing course if nobody bids remain.
+**Answer (Health Secretary):** Noted, and nothing standing. The bidder signs for the higher forecast and bids are compared on what's guaranteed, nothing else. If nobody bids on those terms, that's our reason to change course, already written down. The policy carries no case against.
+**Outcome:** Nothing standing
+
+**Statistician:** Passed: bids are now compared on the sum each bidder guarantees to pay: the cut on at least the higher of the NHS's forecast and its own, at the Green Book rate. A low forecast can't shrink the cut, and a high one can't win on money that never arrives, because the bidder signs for it. The change-of-mind condition uses the same guaranteed figure, and the yearly re-run on what was actually paid is still there.
+**Answer (Health Secretary):** Thanks: both passed, nothing to change. The checks stay as they are. On merge, nhs-data-cut's freezes, and the-visit-stays-a-person keeps its one rewrite as passed. The text rests now. It changes again only if a ward or a reviewer gives it a reason.
+**Outcome:** Nothing standing
+
 ## 2026-11-22 · PR #29
 
 **Opposition:** The higher NHS forecast now counts as money back when choosing the contract, but only the bidder's lower forecast is guaranteed. If the NHS overestimates earnings, a dearer contract can win on returns that never arrive. Yearly checks discover the loss after purchase. Compare prices using guaranteed payments, or explicitly allow for the uncertainty in returns.
