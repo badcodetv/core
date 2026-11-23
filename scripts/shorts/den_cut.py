@@ -34,7 +34,7 @@ SOURCE = "National Audit Office, Evaluating government spending (HC 860), Decemb
 # line -> (who, take under audio/, tempo, text)
 LINES = {
     '01': ('narrator', 'casting/narrator--en-gb-podcaster-2.wav', 1.0, "Next into the den: a government minister, asking for two billion pounds."),
-    '02': ('minister', 'lines/02-minister-pitch--b.wav', 1.01, "Two billion pounds. Every teenager in the country, taken round a prison. Scare them straight."),
+    '02': ('minister', 'lines-sync/minister--R4-10.wav', 1.10, "Two billion pounds. Every teenager in the country, taken round a prison. Scare them straight."),
     '03': ('badcode', 'lines/03-badcode-ask--a.wav', 1.0, "And how will you know it works?"),
     '04': ('minister', 'lines/04-minister-feeling--b.wav', 0.98, "...I've got a good feeling."),
     '05a': ('inv-a', 'casting/inv-a--en-gb-tutor-5.wav', 0.97, "I'm out."),
@@ -60,6 +60,10 @@ TALK = {'MIN1a', 'MIN2a', 'MINEc', 'MINFb', 'INVAb', 'INVCa', 'INVDa', 'NURSEc'}
 # Round 3 (2026-11-23): voices unchanged; talking in-points moved so each mouth opens 0.05 s before its voice (den_refit.py,
 # strips by eye: INVAb opens 2.17, INVCa 3.91, INVDa 3.54). The nurse re-voiced plain, no pause tags ("One ward, six
 # months.", take N5-2): its phrase gaps match her mouth's ("One" purses at clip 0.97, "Six" 2.46, the p/m of "paying me" 6.5/6.8). Round 1-2 fitted file starts: MIN2a 3.408; INVAb 2.007; INVCa 2.439; INVDa 3.315; NURSEc L-1 0.842 x1.05.
+# Round 7 (2026-11-23, Jack at241: "the lip syncing works everywhere but when this guy talks"): the pitch re-voiced to MINEc's
+# rhythm (R4-10 of 12 "... taken <long pause> round a prison" takes: MINEc says "Every ... taken" over 1.79 s and "round"
+# 2.49 s after "Every", closing on the p of prison at 3.8 s; R4-10 at x1.10: 1.77 s and 2.48 s), "Every" on his first opening; the panel shot after it
+# lengthened for the slower "Scare them straight".
 # Round 6 (2026-11-23, Jack: "the lip sycning is still off on the den fix it ... also trim the dead air"): the minister re-shot
 # (MINEc carries only "Every teenager in the country, taken round a prison", MINFb opens on a closed-lip smile), fitted with
 # scripts/shorts/den_fit_min.py (MINEc: "Every" at clip 1.062, take b x1.01; MINFb: take b x0.98, first word at clip 3.104).
@@ -67,9 +71,9 @@ TALK = {'MIN1a', 'MIN2a', 'MINEc', 'MINFb', 'INVAb', 'INVCa', 'INVDa', 'NURSEc'}
 # (in-point + h, line - h), so its sync is unchanged. Durations are whole frames.
 SHOTS = [
     ('stairs', '1. Next into the den', 'STAIRSb', 'STAIRS', 0.3, 131 / 24, 0, [('01', 0.05)], 'The minister comes down the iron stairs'),
-    ('listen', '2. The pitch', 'WIDEa', 'WIDE', 3.0, 50 / 24, 0, [('02', 0.0)], 'The panel listens: "Two billion pounds."'),
-    ('pitch', '2. The pitch', 'MINEc', 'MIN', 0.7093, 77 / 24, 0, [], 'On the mark, all teeth: "Every teenager in the country, taken round a prison."'),
-    ('react', '2. The pitch', 'WIDEa', 'WIDE', 0.5, 33 / 24, 0, [], 'The panel, over "Scare them straight"'),
+    ('listen', '2. The pitch', 'WIDEa', 'WIDE', 3.0, 37 / 24, 0, [('02', 0.0)], 'The panel listens: "Two billion pounds."'),
+    ('pitch', '2. The pitch', 'MINEc', 'MIN', 0.938, 81 / 24, 0, [], 'On the mark, all teeth: "Every teenager in the country, taken round a prison."'),
+    ('react', '2. The pitch', 'WIDEa', 'WIDE', 0.5, 40 / 24, 0, [], 'The panel, over "Scare them straight"'),
     ('ask', '3. How will you know?', 'BCASKa', 'BC', 0.6, 51 / 24, 0, [('03', 0.1)], 'BadCode leans in'),
     ('feeling', '4. A good feeling', 'MINFb', 'MIN', 2.654, 47 / 24, 0, [('04', 0.064)], 'The smile holds, then: "I\'ve got a good feeling."'),
     ('outa', '5. I\'m out', 'INVAb', 'INVA', 1.894, 29 / 24, 0, [('05a', 0.057)], 'Investor A'),

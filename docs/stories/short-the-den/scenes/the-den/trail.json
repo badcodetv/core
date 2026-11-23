@@ -95,5 +95,13 @@
   "decided": [
    "the lip sycning is still off on the den fix it thanks. also trim the dead air. thanks"
   ]
+ },
+ {
+  "at": "2026-11-23T13:18:37+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6",
+  "what": "Rough cut 7 (37.3 s): the pitch re-voiced to MINEc's rhythm (R4-10)",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/short-the-den/scenes/the-den <out-dir>"
  }
 ]

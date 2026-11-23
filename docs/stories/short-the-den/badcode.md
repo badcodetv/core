@@ -46,8 +46,8 @@ Investor D `en-gb-assistant-6`. Line takes in the media folder's `audio/lines/` 
 
 ## Outro
 The den's factory window (Flow clip GLASSa) steams up and the condensation clears in the exact shape of the brand
-logo file, then resolves into the full logo (`scripts/shorts/den_glass_logo.py`; Jack, 2026-11-22). State: rough cut 6
-(37.4 s) on https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6.
+logo file, then resolves into the full logo (`scripts/shorts/den_glass_logo.py`; Jack, 2026-11-22). State: rough cut 7
+(37.3 s) on https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6.
 
 ## Story-only rules
 - The script comes first; nothing is generated until Jack agrees it ([script.md](./script.md)). Lines are Claude's drafts until Jack or Kai rewrites them.

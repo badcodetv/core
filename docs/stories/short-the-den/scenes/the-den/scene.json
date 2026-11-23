@@ -20,8 +20,8 @@
   },
   "stills": "https://claude.ai/artifact/SC9zzTxh16D2iqnT6yG9pg",
   "cut": {
-    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r6/edl.json",
-    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r6/preview.mp4",
-    "script": "python3 scripts/shorts/den_cut.py --round 6"
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r7/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r7/preview.mp4",
+    "script": "python3 scripts/shorts/den_cut.py --round 7"
   }
 }

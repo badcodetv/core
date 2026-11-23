@@ -19,4 +19,4 @@ bet. No policy without its test.
 | Script | draft 1 agreed (Jack: "go", 2026-11-22) |
 | Investors | locked (cast/) |
 | Stills, voices, clips | locked (picks.md) |
-| Cut | rough cut 6 (37.4 s), timeline https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6; voices on plan (mix fixed), music in, NAO end card, condensation logo outro |
+| Cut | rough cut 7 (37.3 s), timeline https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6; voices on plan (mix fixed), music in, NAO end card, condensation logo outro |
