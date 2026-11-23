@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r2/FACES-r2a.jpg",
+ "made": "2026-11-23T14:14:57.868Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first image: keep the framing, the purple glow and the couple exactly as they are (the two people from the other attached images), he behind with his hand pressed flat to his forehead looking up, she in front with her eyes shut, breathing out, a paper cup in his other hand. Change only what shows through the glass of the claw machine on the left: a pile of small model houses in a few plain colours, white with red roofs among them, with coins and a few rolled banknotes with no readable print caught between them, the empty claw hanging above. The sign on the machine's top is a plain lit band. No text, lettering or logos anywhere.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r2 retry (Flow 'unusual activity', not charged)",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-FACES-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-FACES-b.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HER.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HIM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "0980874a-f4f3-4173-86cb-92c0d2ebe97c"
+}

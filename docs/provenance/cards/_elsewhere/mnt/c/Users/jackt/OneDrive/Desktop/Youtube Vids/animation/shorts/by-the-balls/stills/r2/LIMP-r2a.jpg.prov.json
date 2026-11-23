@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r2/LIMP-r2a.jpg",
+ "made": "2026-11-23T14:06:32.242Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first image: keep the whole front-on view of the claw machine in the dark arcade, the cold white light inside the glass, the gantry and the claw hanging slack with the small white two-storey model house with a red roof tipping out of its loose prongs and falling back toward the pile. Change only the prize pile: it is now a mound of small model houses in a few plain colours, white with red roofs among them, tumbled together, with coins spilling across the floor of the cabinet and a few rolled or bundled banknotes with no readable print. Keep the yellow control strip, the joystick and the plain grey lower doors, all blank: no text, lettering or logos anywhere.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r2 on Jack's notes, sealed writer cleanroom/prompts-r2.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-LIMP-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-LIMP-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "cd802b26-c877-4f56-b93a-c634f050ae5f"
+}

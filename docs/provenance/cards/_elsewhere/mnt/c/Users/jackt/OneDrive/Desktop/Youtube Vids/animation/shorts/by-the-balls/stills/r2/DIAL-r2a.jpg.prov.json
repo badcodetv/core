@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r2/DIAL-r2a.jpg",
+ "made": "2026-11-23T14:07:22.324Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first image: keep the scratched, colourful control deck, the round chrome dial with its single needle, the ball-top joystick, the glass cabinet edge on the left and the neon arcade behind. Exactly four hands hold the dial, each whole with five fingers and joined to a visible arm running to the frame edge: her hand from the left edge in her own sleeve, his hand from the top right in his own sleeve (the two people from the other attached images), an older person's hand from the right edge in a grey cardigan sleeve, and a hand from the bottom right in a dark hoodie sleeve. All four grip the dial's rim, pulling against each other. No text, lettering or logos anywhere.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r2 on Jack's notes, sealed writer cleanroom/prompts-r2.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-DIAL-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-DIAL-a.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HER.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HIM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "027e512d-61d7-448e-b729-6d99f40c4242"
+}

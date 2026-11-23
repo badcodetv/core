@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r2/PLAY-r2a.jpg",
+ "made": "2026-11-23T14:06:22.646Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first image: keep the framing, the purple-lit claw machine on the left, the claw hanging on its coiled cable, the dark arcade behind, and the couple leaning in at the glass exactly as they are, he working the joystick, she watching close beside him (the two people from the other attached images). Change only what lies inside the cabinet: fill the whole prize pile with small model houses in a few plain colours, many white with red roofs, packed together, with gold and silver coins spilling between them and a few rolled and bundled banknotes with no readable print. Up front sits the small white two-storey model house with a red roof that the claw is after. The control panel and lit sign are blank, with no text, lettering or logos anywhere.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r2 on Jack's notes, sealed writer cleanroom/prompts-r2.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-PLAY-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-PLAY-a.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HER.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HIM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "a130ce2c-1e60-4f92-873f-8eab3e58dc22"
+}

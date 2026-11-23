@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r2/GRAB-r2a.jpg",
+ "made": "2026-11-23T14:06:15.172Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first image: keep this close shot exactly, the chrome three-prong claw on its coiled cable closing round the small white two-storey model house with a red roof, dormer and chimney, the red cabinet wall behind, the shallow focus and warm machine light. Change only what the house rests on and what fills the cabinet around it: a deep heap of small model houses in a few plain colours, white with red roofs among them, piled at odd angles, with gold and silver coins wedged between them and a few rolled and paper-banded banknotes with no readable print. The upper shelf behind holds more model houses and stacked coins. No text, lettering or logos anywhere.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r2 on Jack's notes, sealed writer cleanroom/prompts-r2.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-GRAB-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-GRAB-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "af78b5c4-ce52-4f74-a3c2-c11e1a5cb8bf"
+}

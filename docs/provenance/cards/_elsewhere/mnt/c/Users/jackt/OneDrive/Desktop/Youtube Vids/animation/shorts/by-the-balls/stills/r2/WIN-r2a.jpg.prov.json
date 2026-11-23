@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r2/WIN-r2a.jpg",
+ "made": "2026-11-23T14:07:10.827Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Edit the first image: keep the couple crouched either side of the claw machine's prize hatch, laughing, their hands meeting as they lift out the small white two-storey model house with a red roof (the two people from the other attached images), the grey lower doors and the floor as they are. Change the glass case at the top: it is filled with small model houses in a few plain colours, white with red roofs among them, with coins heaped between them and a few rolled banknotes with no readable print. The yellow strip under the glass is a plain painted panel with only the joystick and button. No text, lettering or logos anywhere.",
+ "model": "Nano Banana 2.1",
+ "why": "stills r2 on Jack's notes, sealed writer cleanroom/prompts-r2.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-WIN-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/r1-WIN-a.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HER.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HIM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "ac38caa2-126a-42a4-92c8-d318da593db2"
+}

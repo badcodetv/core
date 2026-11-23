@@ -20,10 +20,14 @@ Not decided — run story-style. Any Suno track is music and sound effects only 
 spoken line is an AI Studio voice, cast with voice-casting (English, with a named region).
 
 ## Cast
-- **BadCode** (Jack, 2026-11-23): on screen in the BadCode balaclava (below), beside the machine; says the line.
-- **The young couple** (Jack, 2026-11-23): one young couple feeding the machine coins; they look like stereotypical millennials (Jack). Not cast yet.
+- **BadCode** (Jack, 2026-11-23): on screen beside the machine; says the line. An arcade worker: navy micro-fleece jacket zipped
+  to the chin, change belt and keys, gloves, and the balaclava in the same navy fleece (Jack: "make the mask match whatever
+  material the arcade worker wears"); no skin. Reference `cast/CAST-BADCODE-2.jpg` (media folder).
+- **The young couple** (Jack, 2026-11-23): one young couple feeding the machine coins; they look like stereotypical millennials (Jack). References `cast/CAST-HER.jpg`, `cast/CAST-HIM.jpg` (media folder).
 
 ## Story-only rules
+- Inside the claw machine: only small model houses and money (coins, banknotes with no readable print); the prize is the
+  same small white two-storey house with a red roof in every shot (Jack, 2026-11-23).
 - Jack and Kai write the jokes: beats say what each moment conveys; joke lines stay blank for them. The one line so far
   is Jack's: "It was never broken. It was set."
 - Inspired by George Carlin's "The Owners": never his audio or his words read out.

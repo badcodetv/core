@@ -1,0 +1,71 @@
+{
+  "portraits": [
+    {
+      "id": "CAST-BADCODE-2",
+      "prompt": "Edit the first image into a face-on head-and-shoulders portrait of the same masked man standing in the same dark arcade, glowing cabinets and neon soft and blurred behind him. He now wears the kit of a UK seaside arcade attendant: a plain navy polyester micro-fleece jacket zipped right up to a high stand collar under the chin, cuffs pulled down over the wrists, a black canvas change belt with a coin pouch at his waist, and a ring of small machine keys clipped to it. His balaclava is that same navy micro-fleece, with the large white ring round the whole face and the small red triangle on the right of the picture. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Natural photo, low arcade light.",
+      "attach": ["CAST-BADCODE.jpg", "mask-reference.jpg"]
+    }
+  ],
+  "stills": [
+    {
+      "id": "PLAY-r2a",
+      "shot": "PLAY",
+      "prompt": "Edit the first image: keep the framing, the purple-lit claw machine on the left, the claw hanging on its coiled cable, the dark arcade behind, and the couple leaning in at the glass exactly as they are, he working the joystick, she watching close beside him (the two people from the other attached images). Change only what lies inside the cabinet: fill the whole prize pile with small model houses in a few plain colours, many white with red roofs, packed together, with gold and silver coins spilling between them and a few rolled and bundled banknotes with no readable print. Up front sits the small white two-storey model house with a red roof that the claw is after. The control panel and lit sign are blank, with no text, lettering or logos anywhere.",
+      "attach": ["r1-PLAY-a.jpg", "CAST-HER.jpg", "CAST-HIM.jpg"]
+    },
+    {
+      "id": "PLAY-r2b",
+      "shot": "PLAY",
+      "prompt": "Edit the first image: keep the framing, the bright claw machine on the left with its claw raised, and the couple exactly as posed, she gripping the joystick, he behind her pointing at the glass with a paper cup in his other hand (the two people from the other attached images). Change only the inside of the cabinet: the whole pile is small model houses in a few plain colours, white with red roofs among them, heaped on each other, with coins scattered through the gaps and a few rolled or banded banknotes with no readable print. Where he points stands the small white two-storey model house with a red roof, the same house as in every shot. Leave the control panel and every surface blank: no text, lettering or logos anywhere.",
+      "attach": ["r1-PLAY-b.jpg", "CAST-HER.jpg", "CAST-HIM.jpg"]
+    },
+    {
+      "id": "GRAB-r2a",
+      "shot": "GRAB",
+      "prompt": "Edit the first image: keep this close shot exactly, the chrome three-prong claw on its coiled cable closing round the small white two-storey model house with a red roof, dormer and chimney, the red cabinet wall behind, the shallow focus and warm machine light. Change only what the house rests on and what fills the cabinet around it: a deep heap of small model houses in a few plain colours, white with red roofs among them, piled at odd angles, with gold and silver coins wedged between them and a few rolled and paper-banded banknotes with no readable print. The upper shelf behind holds more model houses and stacked coins. No text, lettering or logos anywhere.",
+      "attach": ["r1-GRAB-a.jpg"]
+    },
+    {
+      "id": "LIMP-r2a",
+      "shot": "LIMP",
+      "prompt": "Edit the first image: keep the whole front-on view of the claw machine in the dark arcade, the cold white light inside the glass, the gantry and the claw hanging slack with the small white two-storey model house with a red roof tipping out of its loose prongs and falling back toward the pile. Change only the prize pile: it is now a mound of small model houses in a few plain colours, white with red roofs among them, tumbled together, with coins spilling across the floor of the cabinet and a few rolled or bundled banknotes with no readable print. Keep the yellow control strip, the joystick and the plain grey lower doors, all blank: no text, lettering or logos anywhere.",
+      "attach": ["r1-LIMP-a.jpg"]
+    },
+    {
+      "id": "FACES-r2a",
+      "shot": "FACES",
+      "prompt": "Edit the first image: keep the framing, the purple glow and the couple exactly as they are (the two people from the other attached images), he behind with his hand pressed flat to his forehead looking up, she in front with her eyes shut, breathing out, a paper cup in his other hand. Change only what shows through the glass of the claw machine on the left: a pile of small model houses in a few plain colours, white with red roofs among them, with coins and a few rolled banknotes with no readable print caught between them, the empty claw hanging above. The sign on the machine's top is a plain lit band. No text, lettering or logos anywhere.",
+      "attach": ["r1-FACES-b.jpg", "CAST-HER.jpg", "CAST-HIM.jpg"]
+    },
+    {
+      "id": "BADCODE-r2a",
+      "shot": "BADCODE",
+      "prompt": "Edit the first image: keep the view from inside the prize booth looking out over its counter, the masked man standing centre facing the lens, the dark arcade, the couple at a lit machine behind on the left, and the bright game wheels along the bottom edge. Change him to match the second image: the same navy micro-fleece arcade attendant jacket zipped to a high collar under the chin, cuffs over the wrists, change belt with coin pouch and a ring of machine keys, and a navy micro-fleece balaclava with the large white ring round the face and the red triangle on the right of the picture. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.",
+      "attach": ["r1-BADCODE-a.jpg", "CAST-BADCODE-2", "mask-reference.jpg"]
+    },
+    {
+      "id": "BADCODE-r2b",
+      "shot": "BADCODE",
+      "prompt": "Edit the first image: keep the composition, the booth frame, the arcade depth and the couple at the machine behind on the left. The masked man now stands with both gloved hands resting flat on the booth counter, leaning slightly toward the lens, face-on and still. Dress him as in the second image: a navy micro-fleece arcade attendant jacket zipped up to the chin, cuffs down over the wrists, a change belt with coin pouch and a bunch of machine keys at his hip, and a navy micro-fleece balaclava with the large white ring round the face and the red triangle on the right of the picture. The game wheels along the bottom are plain colour bands. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image.",
+      "attach": ["r1-BADCODE-a.jpg", "CAST-BADCODE-2", "mask-reference.jpg"]
+    },
+    {
+      "id": "DIAL-r2a",
+      "shot": "DIAL",
+      "prompt": "Edit the first image: keep the scratched, colourful control deck, the round chrome dial with its single needle, the ball-top joystick, the glass cabinet edge on the left and the neon arcade behind. Exactly four hands hold the dial, each whole with five fingers and joined to a visible arm running to the frame edge: her hand from the left edge in her own sleeve, his hand from the top right in his own sleeve (the two people from the other attached images), an older person's hand from the right edge in a grey cardigan sleeve, and a hand from the bottom right in a dark hoodie sleeve. All four grip the dial's rim, pulling against each other. No text, lettering or logos anywhere.",
+      "attach": ["r1-DIAL-a.jpg", "CAST-HER.jpg", "CAST-HIM.jpg"]
+    },
+    {
+      "id": "DIAL-r2b",
+      "shot": "DIAL",
+      "prompt": "Edit the first image: keep the top-down view of the pink-lit metal panel, the large round dial with its arrow needle, the cream joystick at the bottom left and the arcade glowing through the glass at the top. Exactly four hands rest on the dial's rim, each whole with five fingers and joined to a sleeved arm reaching in from the frame edge: her hand from the upper right in her own sleeve and his hand from the upper left in his own sleeve (the two people from the other attached images), a stranger's hand from the left edge in a denim sleeve, and another from the lower right in a dark sleeve with a wristwatch. Every hand pushes the dial a different way. No text, lettering or logos anywhere.",
+      "attach": ["r1-DIAL-b.jpg", "CAST-HER.jpg", "CAST-HIM.jpg"]
+    },
+    {
+      "id": "WIN-r2a",
+      "shot": "WIN",
+      "prompt": "Edit the first image: keep the couple crouched either side of the claw machine's prize hatch, laughing, their hands meeting as they lift out the small white two-storey model house with a red roof (the two people from the other attached images), the grey lower doors and the floor as they are. Change the glass case at the top: it is filled with small model houses in a few plain colours, white with red roofs among them, with coins heaped between them and a few rolled banknotes with no readable print. The yellow strip under the glass is a plain painted panel with only the joystick and button. No text, lettering or logos anywhere.",
+      "attach": ["r1-WIN-a.jpg", "CAST-HER.jpg", "CAST-HIM.jpg"]
+    }
+  ]
+}

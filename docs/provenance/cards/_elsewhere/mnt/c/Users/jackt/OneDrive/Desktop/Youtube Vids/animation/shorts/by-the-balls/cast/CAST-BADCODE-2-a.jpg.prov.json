@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/cast/CAST-BADCODE-2-a.jpg",
+ "made": "2026-11-23T14:03:37.428Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Edit the first image into a face-on head-and-shoulders portrait of the same masked man standing in the same dark arcade, glowing cabinets and neon soft and blurred behind him. He now wears the kit of a UK seaside arcade attendant: a plain navy polyester micro-fleece jacket zipped right up to a high stand collar under the chin, cuffs pulled down over the wrists, a black canvas change belt with a coin pouch at his waist, and a ring of small machine keys clipped to it. His balaclava is that same navy micro-fleece, with the large white ring round the whole face and the small red triangle on the right of the picture. The balaclava exactly as in the attached image: no holes, no skin, gloves. No text, lettering, logos or brand names anywhere in the image. Natural photo, low arcade light.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-BADCODE.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-BADCODE.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/mask-reference.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "dc7fc7fa-1429-47a3-9dc8-9a7f54473605"
+}
