@@ -20,3 +20,19 @@ bet. No policy without its test.
 | Investors | locked (cast/) |
 | Stills, voices, clips | locked (picks.md) |
 | Cut | rough cut 7 (37.3 s), timeline https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6; voices on plan (mix fixed), music in, NAO end card, condensation logo outro |
+
+## Premiere
+
+**Project:** `<Desktop>/Youtube Vids/animation/shorts/the-den/the-den.prproj`
+**Sequence:** `short-the-den-1-the-den-r7`, 1080x1920 @ 24, 37.3 s, built 2026-11-23 from rough cut 7 (`cut/r7/edl-premiere.json`, `premiere-plan.py --tag r7`); in sync with the timeline page.
+
+| Track | What |
+| --- | --- |
+| V1 | 13 shots, as the timeline page (rendered pieces `cut/r7/v00..v12`) |
+| A1 | 9 voice lines (`cut/r7/premiere/r7/lines/`) |
+| A2 | music bed, Jack's pick piano-a, ducked (`cut/r7/mus-bed.wav`) |
+| A3 | room tone (`cut/r7/amb-room.wav`) |
+
+**Drive:** agreed cut only (`scripts/drive/agreed/short-the-den.list`, 69 files) in `Shorts/The Den`.
+**Needs a human:** the export (1080x1920) and loudness check before posting.
+

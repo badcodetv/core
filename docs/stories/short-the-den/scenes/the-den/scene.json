@@ -23,5 +23,23 @@
     "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r7/edl.json",
     "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r7/preview.mp4",
     "script": "python3 scripts/shorts/den_cut.py --round 7"
+  },
+  "premiere": {
+    "current": "r7",
+    "r7": {
+      "sequence": "short-the-den-1-the-den-r7",
+      "guid": "cef9f8b7-9522-4d82-b21e-511aa5e52903",
+      "bin": "short-the-den-1-the-den-r7",
+      "built": "2026-11-23",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/the-den.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/the-den/cut/r7/edl.json",
+      "what": "rough cut 7: minister re-shot and re-voiced to his rhythm, dead air trimmed, music piano-a, NAO end card",
+      "how": "premiere-plan.py edl-premiere.json (vox stem named vox-lines so each line is its own clip) --tag r7",
+      "check": {
+        "at": "2026-11-23T13:23",
+        "state": "in sync",
+        "why": ""
+      }
+    }
   }
 }

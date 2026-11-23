@@ -1,0 +1,8 @@
+{
+ "story": "short-the-den",
+ "note": "A short is one scene (new-short); this file only lets scripts/scene/premiere-check.py find it.",
+ "sections": [
+  {"id": "the-den", "title": "The Den", "scene": "scenes/the-den",
+   "timeline": "https://claude.ai/artifact/4B9CKVdojXsZNsNRjwmmE6"}
+ ]
+}
