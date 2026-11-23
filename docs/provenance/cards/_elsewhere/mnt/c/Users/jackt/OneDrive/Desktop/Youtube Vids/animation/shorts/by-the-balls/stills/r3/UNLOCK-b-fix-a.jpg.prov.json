@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r3/UNLOCK-b-fix-a.jpg",
+ "made": "2026-11-23T14:28:54.224Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only what is inside the claw machine's glass at the top of the frame: replace the soft toys with small model houses in a few plain colours, white with red roofs among them, with a few coins between them. Keep everything else in the image exactly the same, preserving the masked worker, his pose, the steel cover, the dial, the keys, the original style, lighting and composition. No text, lettering or logos anywhere.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r3/UNLOCK-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r3/UNLOCK-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "dcfbc082-753b-4093-a0d4-285c78a193cc"
+}

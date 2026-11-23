@@ -11,13 +11,14 @@ company). The line, Jack's: "It was never broken. It was set." The point: the ga
 who own the machine. The way out: ⬜ not decided.
 
 ## Look
-Not decided — run story-style (or a quick pick on the mood board). Each still's layout comes from a real Unsplash photo
-given to Flow as the reference (Library pieces below). 9:16.
+Real-looking photographs of a British arcade at night (Unsplash layouts, then edits of the picked stills). Start frames
+LOCKED (Jack, 2026-11-23) in the media folder's `moodboard/`: PLAY, GRAB, LIMP, FACES, BADCODE, UNLOCK, DIAL, WIN. 9:16.
 Flow project: `ccce50b5-9b07-48f1-a62e-b710b6bc96e1` ("Nov 23 - 13:45"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
-Not decided — run story-style. Any Suno track is music and sound effects only (workspace `short-by-the-balls`); every
-spoken line is an AI Studio voice, cast with voice-casting (English, with a named region).
+Music: not decided — run story-style. Any Suno track is music and sound effects only (workspace `short-by-the-balls`).
+Voice: LOCKED (Jack, 2026-11-23): BadCode = Google library voice `en-gb-csagent-11` (Liverpool, 36), plain read on
+`gemini-3.8-flash-tts`, no style; take `audio/casting/badcode--en-gb-csagent-11.wav` (media folder).
 
 ## Cast
 - **BadCode** (Jack, 2026-11-23): on screen beside the machine; says the line. An arcade worker: navy micro-fleece jacket zipped
