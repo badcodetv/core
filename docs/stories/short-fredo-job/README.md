@@ -27,4 +27,4 @@ elsewhere"; Jack picked it anyway.
 | Script | draft 1 (brief.md), jokes owed |
 | Stills | round 1 on https://claude.ai/artifact/3sT3BVdMhv6hqrVJcdMXFM |
 | Look | Heist and caper, real-photo layouts; not found yet |
-| Sound | Not decided |
+| Sound | Hard funk (LOCKED, Jack 2026-11-23): `fj-sound-r1-hard-funk-v6-w45`, see sound.md |

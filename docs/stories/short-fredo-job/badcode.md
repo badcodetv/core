@@ -15,8 +15,14 @@ Heist and caper (library, below), on real-photo layouts. Not found yet: stills t
 Flow project: `8f55f330-03fa-409a-a911-9dd5b9c6693b` ("Nov 23 - 16:57"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
-Not decided — run story-style (music and sound effects). **Voice (Jack, 2026-11-23):** the crew speak over the picture in one voice, Google library **`en-gb-concierge-10`** (Liverpool), read plain with `--plain --model gemini-3.8-flash-tts`. Any Suno track is music and sound effects only (workspace `short-fredo-job`); every
-spoken line is an AI Studio voice, cast with voice-casting (English, with a named region).
+**Music (LOCKED, Jack 2026-11-23):** hard funk. One locked minor-ninth vamp on the one, dry tight drums, slapped bass,
+chicken-scratch guitar, short horn stabs hit on the picture's moves, mid-range open for the voice. It stops dead on the
+39p (needle off the record, near silence) and snaps back brighter and a step higher on the savings jar ("Swagger, then
+hope"). Instrumental. The take: `fj-sound-r1-hard-funk-v6-w45` (https://suno.com/song/311a082b-56f9-4f6b-ab8e-218baeb48b12),
+recorded to `<media>/audio/music-r1/`; its boxes and settings are in [sound.md](./sound.md). Suno workspace `short-fredo-job`.
+**Voice (Jack, 2026-11-23):** the crew speak over the picture in one voice, Google library **`en-gb-concierge-10`**
+(Liverpool), read plain with `--plain --model gemini-3.8-flash-tts`. Every spoken line is an AI Studio voice; any Suno
+track is music and sound effects only.
 
 ## Cast
 - **The gang:** BadCode in balaclavas (below). How many, and each one's trade (shown by a prop), not decided.
@@ -37,6 +43,9 @@ spoken line is an AI Studio voice, cast with voice-casting (English, with a name
   whip pan and snap zoom for comic punctuation. Flow tends towards a modern orange-and-teal grade and a crew of identical
   models in black suits: ask for distinct people and clear light instead. Plans, maps and clocks come out as gibberish
   lettering: make them as plain plates and add any words in post. One gesture per 8 s clip.
+- **Hard funk** (sound, copied in): a locked groove on the one, choppy guitar, slapped bass and horn stabs doing the
+  arguing; a loop that never changes sits cleanly under narration, and a dead stop is the sting. It can't carry tender
+  emotion: the hope comes from the groove returning, not from a melody.
 - **Real photo as the look:** find the layout on Unsplash (`python3 scripts/scene/unsplash-refs.py <scene-dir> "<query>"`),
   give the picked photo to Flow as the reference; the prompt says only what happens. Never an AI figure pasted into a
   real photo.
