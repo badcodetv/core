@@ -1,0 +1,228 @@
+{
+ "title": "The Fredo Job: the sound",
+ "intro": "Round 1, sound only: the look and picture are locked and the crew's voice is picked (en-gb-concierge-10). Music and sound effects under about 18 seconds. Listen to the references (YouTube searches), mark This / Maybe / No, and leave a note; Suno tests come after a pick.",
+ "story": [
+  [
+   "The short",
+   "A crew in BadCode balaclavas plans a slick heist for a 10p chocolate frog."
+  ],
+  [
+   "The job",
+   "They walk out of the smoke, slip the lasers \"like butter\" and lift it."
+  ],
+  [
+   "The twist",
+   "At the counter the tag says 39p: the price ran off while they planned."
+  ],
+  [
+   "The way out",
+   "A savings jar that rises with the price."
+  ],
+  [
+   "The feel (Jack)",
+   "Swagger, then hope: slick heist feel, a deflating sting on 39p, a lift on the jar. Music and effects only, under one Liverpool voice, about 18 s."
+  ]
+ ],
+ "looks": [],
+ "sounds": [
+  {
+   "id": "S1",
+   "name": "1960s spy swagger",
+   "family": "Stage and screen music",
+   "from": [
+    "sixties-spy-score"
+   ],
+   "pitch": "Twangy baritone guitar, walking bass, brass stabs, vibraphone: the cool-crew walk. The 39p lands on a big brass chord that slides down like a sad trombone; the jar gets the strings swelling back up.",
+   "why": "The swagger is built in, and its self-aware glamour is made for ridicule: the grander it sounds, the smaller the frog.",
+   "risk": "The obvious pick. Suno drifts towards one famous spy theme, which the parody rule forbids; it must stay generic. Its 'hope' is grand rather than warm.",
+   "references": [
+    {
+     "title": "Goldfinger (main title)",
+     "maker": "John Barry",
+     "url": "https://www.youtube.com/results?search_query=John+Barry+Goldfinger+%28main+title%29"
+    },
+    {
+     "title": "The Ipcress File theme",
+     "maker": "John Barry",
+     "url": "https://www.youtube.com/results?search_query=John+Barry+The+Ipcress+File+theme"
+    },
+    {
+     "title": "Soul Bossa Nova",
+     "maker": "Quincy Jones",
+     "url": "https://www.youtube.com/results?search_query=Quincy+Jones+Soul+Bossa+Nova"
+    }
+   ],
+   "style_box": "instrumental 1960s spy film score, twangy baritone guitar riff with tremolo, walking double bass, brass stabs, vibraphone, tight jazz drums, sweeping strings, cool, 118 bpm, button ending"
+  },
+  {
+   "id": "S2",
+   "name": "Hard funk groove",
+   "family": "Black American roots",
+   "from": [
+    "funk"
+   ],
+   "pitch": "A locked one-chord groove on the one: chicken-scratch guitar, slapped bass, horn stabs cut to every move (the tap, the step, the duck). The groove stops dead on 39p (needle off); it drops back in, brighter, on the jar.",
+   "why": "The library names it for heists and comic swagger; a loop that never changes is the cleanest bed under a few spoken lines, and a dead stop is the best sting.",
+   "risk": "Can feel like a period pastiche with no modern edge; little room for warmth, so the hope has to come from the groove returning, not from a melody.",
+   "references": [
+    {
+     "title": "Cissy Strut",
+     "maker": "The Meters",
+     "url": "https://www.youtube.com/results?search_query=The+Meters+Cissy+Strut"
+    },
+    {
+     "title": "The Payback",
+     "maker": "James Brown",
+     "url": "https://www.youtube.com/results?search_query=James+Brown+The+Payback"
+    },
+    {
+     "title": "Theme from Shaft",
+     "maker": "Isaac Hayes",
+     "url": "https://www.youtube.com/results?search_query=Isaac+Hayes+Theme+from+Shaft"
+    }
+   ],
+   "style_box": "instrumental raw early 1970s funk, locked one-chord groove, tight sixteenth-note drums, muted chicken-scratch guitar, slapped bass riff, horn stabs, dry close-mic live band, 104 bpm"
+  },
+  {
+   "id": "S3",
+   "name": "British library cue",
+   "family": "Novelty, found sound and the margins",
+   "from": [
+    "library-music-cue"
+   ],
+   "pitch": "A 1970s KPM-style jazz-funk cue (Hammond, wah guitar, fuzzy bass, brass fanfare) that sounds like a TV caper from British telly. The sting on 39p is a 'tension' cue; the jar gets a 'Happy Ending' button.",
+   "why": "British where the heist genre is American, so it fits a corner shop and a Liverpool voice; it plays the joke as a cheap TV thriller.",
+   "risk": "Can tip into nostalgia telly and feel dated rather than slick; Jack asked for heavy heist-film swagger and this is its small-screen cousin.",
+   "references": [
+    {
+     "title": "Funky Fanfare",
+     "maker": "Keith Mansfield",
+     "url": "https://www.youtube.com/results?search_query=Keith+Mansfield+Funky+Fanfare"
+    },
+    {
+     "title": "Chicken Man",
+     "maker": "Alan Hawkshaw",
+     "url": "https://www.youtube.com/results?search_query=Alan+Hawkshaw+Chicken+Man"
+    },
+    {
+     "title": "Heavy Action",
+     "maker": "Johnny Pearson",
+     "url": "https://www.youtube.com/results?search_query=Johnny+Pearson+Heavy+Action"
+    }
+   ],
+   "style_box": "instrumental 1970s British library music, jazz-funk, Hammond organ, wah guitar, fuzzy bass, brass fanfare, tight drums, tape saturation, dry close-miked, cue with a button ending, 110 bpm"
+  },
+  {
+   "id": "S4",
+   "name": "The corner-shop break (invented for this short)",
+   "family": "Off the library: breakbeat heist score + found sound",
+   "from": [],
+   "pitch": "A modern big-beat heist groove (a dusty drum break, organ, scratched record, low strings) where the shop is part of the band: the till drawer is the snare, the coin jar the shaker, the shop-door bell the hook. On 39p the record winds down; the jar fills with coins tuned up a major chord, and the beat comes back.",
+   "why": "The slickest of the options, closest to the turn-of-the-century heist film Jack named, but made of the corner shop, so it's ours and never that film's score. The coins carry the way out in the sound itself.",
+   "risk": "The most work: Suno makes the groove, the shop sounds are cut in by hand on the timeline. Too many effects can muddy the spoken lines.",
+   "references": [
+    {
+     "title": "Gritty Shaker",
+     "maker": "David Holmes",
+     "url": "https://www.youtube.com/results?search_query=David+Holmes+Gritty+Shaker"
+    },
+    {
+     "title": "Bullitt main title",
+     "maker": "Lalo Schifrin",
+     "url": "https://www.youtube.com/results?search_query=Lalo+Schifrin+Bullitt+main+title"
+    },
+    {
+     "title": "Block Rockin' Beats",
+     "maker": "The Chemical Brothers",
+     "url": "https://www.youtube.com/results?search_query=The+Chemical+Brothers+Block+Rockin%27+Beats"
+    }
+   ],
+   "style_box": "instrumental big beat heist groove, dusty breakbeat drums, Hammond organ riff, turntable scratches, low string stabs, upright bass, cool and slick, 100 bpm (shop sounds added in the edit: till drawer, door bell, coin drops)"
+  },
+  {
+   "id": "S5",
+   "name": "Tiptoe cartoon caper (invented for this short)",
+   "family": "Off the library: comic underscore",
+   "from": [],
+   "pitch": "Sneaking music: pizzicato strings, a muted sax and bassoon on tiptoe, every step hit on a plucked note, the laser duck a held breath. 39p gets a deflating tuba 'wah-wah'; the jar a warm clarinet lift.",
+   "why": "The laughiest: it says 'these lot are clowns' and lets the 39p land as a gag. The swagger becomes sneaky swagger.",
+   "risk": "Undercuts the 'played straight' brief: it tells the audience it's a joke before the twist does. The sad-trombone sting is a cliché.",
+   "references": [
+    {
+     "title": "The Pink Panther Theme",
+     "maker": "Henry Mancini",
+     "url": "https://www.youtube.com/results?search_query=Henry+Mancini+The+Pink+Panther+Theme"
+    },
+    {
+     "title": "Powerhouse",
+     "maker": "Raymond Scott",
+     "url": "https://www.youtube.com/results?search_query=Raymond+Scott+Powerhouse"
+    },
+    {
+     "title": "Baby Elephant Walk",
+     "maker": "Henry Mancini",
+     "url": "https://www.youtube.com/results?search_query=Henry+Mancini+Baby+Elephant+Walk"
+    }
+   ],
+   "style_box": "instrumental sneaky comic caper underscore, pizzicato strings, muted tenor sax, bassoon, brushed snare, walking bass on tiptoe, playful, 96 bpm, comic button ending"
+  },
+  {
+   "id": "S6",
+   "name": "Colliery brass band (against the grain)",
+   "family": "British and Irish folk and roots",
+   "from": [
+    "colliery-brass-band"
+   ],
+   "pitch": "A northern brass band plays the job as a proud slow march, cornets and side drum, deadly serious. 39p: the band falters, one euphonium left. The jar: the whole band back in as a hymn, the way out sounding like a win for working people.",
+   "why": "The strongest 'hope' of all of them, and the most British; it reframes the crew as ordinary working people, which is the point.",
+   "risk": "The library says it undermines comedy and fast rhythm: little swagger, and the cuts can't land on fast hits. It may feel like a different film from the picture.",
+   "references": [
+    {
+     "title": "Concierto de Aranjuez Brassed Off",
+     "maker": "Grimethorpe Colliery Band",
+     "url": "https://www.youtube.com/results?search_query=Grimethorpe+Colliery+Band+Concierto+de+Aranjuez+Brassed+Off"
+    },
+    {
+     "title": "The Floral Dance",
+     "maker": "Brighouse and Rastrick Brass Band",
+     "url": "https://www.youtube.com/results?search_query=Brighouse+and+Rastrick+Brass+Band+The+Floral+Dance"
+    },
+    {
+     "title": "Gresford (The Miners' Hymn)",
+     "maker": "Black Dyke Band",
+     "url": "https://www.youtube.com/results?search_query=Black+Dyke+Band+Gresford+%28The+Miners%27+Hymn%29"
+    }
+   ],
+   "style_box": "instrumental British brass band, colliery band, proud slow march, solo cornet melody, euphonium, tuba, side drum, hall reverb, then hymn-like chorale, 84 bpm"
+  },
+  {
+   "id": "S7",
+   "name": "Clockwork pulse (against the grain)",
+   "family": "Classical, choral and orchestral",
+   "from": [
+    "minimalist-pulse-music"
+   ],
+   "pitch": "Ticking marimba and piano in steady eighth notes, the plan as a machine, building in layers with every clip. 39p: one wrong note and it all stops. The jar: the pulse restarts and climbs, price and savings rising together as one harmonic climb.",
+   "why": "The way out is a mechanism (money that keeps up), and this is the only sound that makes it one; the pulse leaves every spoken line clear.",
+   "risk": "Clever rather than swaggering: it loses the cool-crew feel Jack asked for, and minimal music can feel like an advert for a bank.",
+   "references": [
+    {
+     "title": "Music for 18 Musicians",
+     "maker": "Steve Reich",
+     "url": "https://www.youtube.com/results?search_query=Steve+Reich+Music+for+18+Musicians"
+    },
+    {
+     "title": "Chasing Sheep Is Best Left to Shepherds",
+     "maker": "Michael Nyman",
+     "url": "https://www.youtube.com/results?search_query=Michael+Nyman+Chasing+Sheep+Is+Best+Left+to+Shepherds"
+    },
+    {
+     "title": "Koyaanisqatsi",
+     "maker": "Philip Glass",
+     "url": "https://www.youtube.com/results?search_query=Philip+Glass+Koyaanisqatsi"
+    }
+   ],
+   "style_box": "instrumental minimalist pulse music, steady eighth-note marimba and piano arpeggios, additive layers, gradual build, pizzicato strings, dry acoustic, 120 bpm"
+  }
+ ]
+}
