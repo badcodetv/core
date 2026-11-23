@@ -111,6 +111,62 @@
    "still": "WIN",
    "motion": "A very slight push-in on the hatch. The man lets go and the woman lifts the white house out alone, holding it up to her face as if inspecting it, both of them laughing harder. He leans in and taps its red roof with a finger; she turns to him and they share a delighted look. Their crouched positions barely change. Sound: a plastic flap swinging back, the claw machine's victory chime from inside the cabinet, soft arcade hum.",
    "why": "clips r1, sealed writer cleanroom/anim-r1.json"
+  },
+  {
+   "key": "LIMPPOVa",
+   "n": 1,
+   "still": "LIMPPOV",
+   "motion": "Locked overhead camera inside the glass, looking straight down past the open prongs. The white house with the red roof falls away from the camera, growing smaller as it drops, turning slowly a quarter turn, and lands on the pile with one small bounce, then lies still. The prongs at the top edge stay open and motionless. Every coin, banknote and other house in the pile holds exactly in place, even where the white house lands. The machine and the camera stay perfectly still. Sound: a short whoosh of air, then a light plastic clack on metal coins over a low arcade hum.",
+   "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
+  },
+  {
+   "key": "LIMPPOVb",
+   "n": 1,
+   "still": "LIMPPOV",
+   "motion": "Overhead view from just above the claw, looking straight down, with a very slight, slow push downward. The white house drops away from the camera in slow motion, tumbling gently, shrinking toward the pile, and settles on top of it on its side, then stays put. The open prongs at the top edge do not move. The pile below is frozen: houses, coins and rolled banknotes stay exactly where they are for the whole clip. Only the white house moves. Sound: a faint mechanical tick, a soft rush of falling, a single hollow plastic knock on coins, steady room tone.",
+   "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
+  },
+  {
+   "key": "LIMPWIDEa",
+   "n": 1,
+   "still": "LIMPWIDE",
+   "motion": "Camera locked. The white house slips from the slack claw and falls straight down onto the pile, landing on its side and staying there. The claw hangs still. The pile, the coins, the banknotes and all the other houses stay exactly where they are; nothing else inside the glass moves. Outside it, the two of them follow the house down with their eyes and their faces fall a little: her lips press together, his brows lift and his shoulders sink. Her hand stays on the joystick, his cup stays in his hand. Sound: a soft plastic clack on coins, then the low hum of the arcade.",
+   "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
+  },
+  {
+   "key": "LIMPWIDEb",
+   "n": 1,
+   "still": "LIMPWIDE",
+   "motion": "Very slight slow push-in toward the couple and the glass. The white house drops from the open claw, turns once in the air and settles onto the pile, then lies still. The claw, the pile, the coins and every other house hold perfectly still throughout. The two of them watch it land and their faces sag a little; she lets out a quiet breath through her nose, he gives a small slow blink and lowers his chin. Their hands stay where they are. Sound: a light plastic tap on metal coins, distant arcade machines beeping softly, room tone.",
+   "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
+  },
+  {
+   "key": "UNLOCKc",
+   "n": 1,
+   "still": "UNLOCK",
+   "motion": "Camera locked. His gloved hand swings the round steel cover the rest of the way open on its hinge to the right, then lets go; the cover stops and stays. The ring of keys hanging below sways a little and settles. His masked head stays angled down toward the dial, exactly as in the frame. The dial behind stays the same dial the whole time: the same smooth pale face, the same single short needle pointing right, unchanged. The houses and coins on the shelf above stay still. Sound: a low metal hinge creak, soft key jingle, arcade room hum.",
+   "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
+  },
+  {
+   "key": "UNLOCKd",
+   "n": 1,
+   "still": "UNLOCK",
+   "motion": "Static shot, very slight slow push-in. He pulls the steel cover slowly open with his gloved hand until it swings wide to the right edge of the frame, then holds it there. The keys on their ring swing gently. His masked head keeps facing the dial, unmoving. The round dial stays exactly as it is from first frame to last: same plain pale face, same short needle at the same angle, same steel rim. The machine, the shelf of houses and coins and the background stay unchanged. Sound: a slow metallic creak, a faint clink of keys, steady room tone.",
+   "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
+  },
+  {
+   "key": "WINc",
+   "n": 1,
+   "still": "WIN",
+   "motion": "Camera locked. Kneeling either side of the prize hatch, they lift the small white house with the red roof a few centimetres up out of the opening together, both of them still holding it, and their smiles widen as they look at each other. Their knees and bodies stay where they are. The hatch's dark square opening stays open behind their hands for the whole clip. The machine, the houses and coins behind the glass and the room do not move. Sound: a soft plastic tap, a rustle of sleeves, faint arcade hum.",
+   "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
+  },
+  {
+   "key": "WINd",
+   "n": 1,
+   "still": "WIN",
+   "motion": "Very slight slow push-in. Both of them raise the little white house with the red roof just above the edge of the hatch, holding it between them at the same height, and smile, his eyes on her, hers on the house. Little else moves. The hatch stays exactly as in the frame, its dark opening open and visible below the house until the last frame. They stay crouched in place; the machine and everything behind the glass stay still. Sound: a light scrape of plastic on metal, soft fabric rustle, low room tone.",
+   "why": "clips r2 on Jack's notes, sealed writer cleanroom/anim-r2.json"
   }
  ]
 }

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r4/LIMPPOV-a.jpg",
+ "made": "2026-11-23T15:03:11.161Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Re-stage the attached image from the claw's own point of view: the camera sits inside the glass just above the claw, looking straight down. The same chrome prongs reach in from the top edge of the frame, spread wide open and empty. In the middle of the frame, well below them, the same white two-storey house with the red tiled roof hangs in mid-air, just let go, tipped slightly, roof facing up toward the camera, a touch of motion blur on it alone. Beneath it the pile fills the lower two-thirds: small model houses in red, white, blue, yellow and grey, coins and rolled banknotes with no legible print, all at rest. Same warm red light. 9:16 photo.",
+ "model": "Nano Banana 2.1",
+ "why": "new LIMP start stills (Jack's clips note), sealed writer cleanroom/anim-r2.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/start-GRAB.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/start-GRAB.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "85337b8b-8004-408b-942e-1bbfce746ad9"
+}

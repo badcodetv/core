@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/stills/r4/LIMPWIDE-b.jpg",
+ "made": "2026-11-23T15:03:13.437Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep the attached scene as it is: the same claw machine on the left, the couple leaning in on the right, same framing, lighting and clothes, her hand on the joystick, his coffee cup; faces from the two portraits. Change only this: the claw is up near the top of the glass with its prongs hanging slack and open, and the white two-storey house with the red roof is dropping from them, a hand's width below the prongs, tilted, in mid-air above the pile of houses and coins. His pointing hand has lowered. Both of them look up at the falling house, eyes wide, mouths slightly open. No readable text or logos. 9:16 photo.",
+ "model": "Nano Banana 2.1",
+ "why": "new LIMP start stills (Jack's clips note), sealed writer cleanroom/anim-r2.json",
+ "parent": "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/start-PLAY.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/start-PLAY.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HER.jpg",
+   "/home/jackt/projects/badcode/badcode/docs/stories/short-by-the-balls/scenes/by-the-balls/cleanroom/CAST-HIM.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "ffda5408-bcd7-4242-b568-1e710f5b7890"
+}

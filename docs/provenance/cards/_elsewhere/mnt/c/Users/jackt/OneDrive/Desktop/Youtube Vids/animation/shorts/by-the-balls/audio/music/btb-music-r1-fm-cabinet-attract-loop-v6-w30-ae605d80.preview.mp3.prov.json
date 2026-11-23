@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/audio/music/btb-music-r1-fm-cabinet-attract-loop-v6-w30-ae605d80.preview.mp3",
+ "made": "2026-11-23T15:00:41.737Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "ae605d80-bd5c-4f57-85d1-6cc875de29f4",
+ "inputs": {
+  "title": "btb-music-r1-fm-cabinet-attract-loop-v6-w30",
+  "song": "https://suno.com/song/ae605d80-bd5c-4f57-85d1-6cc875de29f4"
+ },
+ "settings": {
+  "durationSec": 29
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/by-the-balls/audio/music/btb-music-r1-fm-cabinet-attract-loop-v6-w30-ae605d80.wav"
+}

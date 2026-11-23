@@ -16,7 +16,9 @@ LOCKED (Jack, 2026-11-23) in the media folder's `moodboard/`: PLAY, GRAB, LIMP, 
 Flow project: `ccce50b5-9b07-48f1-a62e-b710b6bc96e1` ("Nov 23 - 13:45"). Stills Nano Banana 2.1, 9:16.
 
 ## Sound
-Music: not decided — run story-style. Any Suno track is music and sound effects only (workspace `short-by-the-balls`).
+Music: LOCKED (Jack, 2026-11-23, clips page): `btb-music-r1-fm-cabinet-attract-loop-v6-w30` take ae605d80 (0:29), his ask
+"start with arcade music too, think stranger things when they are in the arcade"; its prompt verbatim in `songs/music-r1/round.json`
+(`fm-cabinet-attract-loop`); recorded to the media folder's `audio/music/`. Any Suno track is music and sound effects only (workspace `short-by-the-balls`).
 Voice: LOCKED (Jack, 2026-11-23): BadCode = Google library voice `en-gb-csagent-11` (Liverpool, 36), plain read on
 `gemini-3.8-flash-tts`, no style; take `audio/casting/badcode--en-gb-csagent-11.wav` (media folder).
 
