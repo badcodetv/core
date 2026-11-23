@@ -1,0 +1,70 @@
+{
+ "title": "The Den Music",
+ "eyebrow": "BadCode Shorts · The Den · music round 1",
+ "heading": "Pick the music for The Den",
+ "intro": "Jack asked for pitch-show background music. Four writers each took a different approach, and Suno made two takes of each (8 in all). Each opens on suno.com to listen. Pick one in the row (or none) and leave a note: what to keep, what to change. Not heard by Claude.",
+ "sections": [
+  {
+   "h": "Background music",
+   "lede": "The cut is 42.8 s, so a take needs to run at least that long. The pick goes under the voices, turned down under speech.",
+   "groups": [
+    {
+     "slot": "music",
+     "title": "One bed under the whole short",
+     "line": "Pick one take.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "synth-a",
+       "href": "https://suno.com/song/e7960f9b-7d8c-4adb-b2af-b5bf0697569f",
+       "label": "Synth pulse, take 1 (1:01): low analog bass pulse, clock-tick hi-hat, cold pad",
+       "warn": ""
+      },
+      {
+       "id": "synth-b",
+       "href": "https://suno.com/song/2ea3395d-2a77-49b9-ac9e-c0e0fc3b07d2",
+       "label": "Synth pulse, take 2 (1:08)",
+       "warn": ""
+      },
+      {
+       "id": "strings-a",
+       "href": "https://suno.com/song/7dd0fdbb-e340-4bbc-b437-e4057b2c079b",
+       "label": "Low strings, take 1 (0:59): clipped cellos and basses, timpani, a brass swell",
+       "warn": ""
+      },
+      {
+       "id": "strings-b",
+       "href": "https://suno.com/song/6ae42c28-330b-4710-9d90-a8aee5e12fc1",
+       "label": "Low strings, take 2 (0:59)",
+       "warn": ""
+      },
+      {
+       "id": "piano-a",
+       "href": "https://suno.com/song/ef69e318-27b7-43c0-a92f-8013d2e2ed43",
+       "label": "Piano and clock, take 1 (0:59): one low piano note, a ticking clock, lots of silence",
+       "warn": ""
+      },
+      {
+       "id": "piano-b",
+       "href": "https://suno.com/song/f61bc1f3-46c1-4a80-a12e-02710d7a4c28",
+       "label": "Piano and clock, take 2 (1:00)",
+       "warn": ""
+      },
+      {
+       "id": "hits-a",
+       "href": "https://suno.com/song/d25f62d1-2a8e-479f-8f3c-1b4aac3d227a",
+       "label": "Industrial hits, take 1: metal percussion and taiko over a warehouse drone",
+       "warn": ""
+      },
+      {
+       "id": "hits-b",
+       "href": "https://suno.com/song/fd14686c-ce25-43c2-ae8d-47ca1cbfe8dc",
+       "label": "Industrial hits, take 2 (0:30)",
+       "warn": "Shorter than the cut: would need looping or the cut trimmed"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

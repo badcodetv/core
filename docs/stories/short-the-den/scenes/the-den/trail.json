@@ -65,5 +65,13 @@
   "decided": [
    "the den, fix the lip syncing, the quote is wrong, it should be about government investing going wrong, you showed me the original quote please use that. thanks, please make dragons den like backround music. thanks"
   ]
+ },
+ {
+  "at": "2026-11-23T12:06:32+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/H48CK4HxJD6v1LGHqQ8y3c",
+  "what": "Music r1 picks page: 8 Suno takes (4 ideas x 2), links out",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/short-the-den/scenes/the-den/music-r1-picks.json <out.html>"
  }
 ]
