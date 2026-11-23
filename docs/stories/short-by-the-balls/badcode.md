@@ -20,7 +20,8 @@ Not decided — run story-style. Any Suno track is music and sound effects only 
 spoken line is an AI Studio voice, cast with voice-casting (English, with a named region).
 
 ## Cast
-- **BadCode** (if on screen): in the BadCode balaclava (below). Not decided whether BadCode appears or the line is on screen.
+- **BadCode** (Jack, 2026-11-23): on screen in the BadCode balaclava (below), beside the machine; says the line.
+- **The young couple** (Jack, 2026-11-23): one young couple feeding the machine coins. Not cast yet.
 
 ## Story-only rules
 - Jack and Kai write the jokes: beats say what each moment conveys; joke lines stay blank for them. The one line so far
