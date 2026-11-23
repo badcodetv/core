@@ -29,4 +29,4 @@ Carlin's "The Owners"; his audio is never used.
 | Owed | label wording ok, trim toward ~20 s (if wanted), the fact read at source, export, release title |
 
 ## Pull it (other machine)
-git pull → `scripts/drive/drive.sh where short-by-the-balls "<folder>"` → `scripts/drive/push-agreed.sh`'s pair `drive.sh pull short-by-the-balls --go` → open `by-the-balls.prproj` at sequence r2.
+git pull → `scripts/drive/drive.sh where short-by-the-balls "<folder>"` → `scripts/drive/drive.sh pull short-by-the-balls --go` → open `by-the-balls.prproj` at sequence r2.
