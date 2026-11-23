@@ -57,6 +57,10 @@ def build(data, preview, out):
         _ff('-i', preview, '-vf', 'scale=1280:-2', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-maxrate', '4000k', '-bufsize', '8000k',
             '-profile:v', 'high', '-level', '4.0', '-pix_fmt', 'yuv420p', '-g', '48', '-bf', '0', '-c:a', 'aac', '-b:a', '128k', '-ac', '2',
             '-movflags', 'frag_keyframe+empty_moov+default_base_moof', hq)
+        st = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'stream=start_time', '-of', 'csv=p=0', str(hq)],
+                            capture_output=True, text=True).stdout.split()
+        if any(abs(float(x)) > 0.001 for x in st if x not in ('', 'N/A')):
+            raise SystemExit(f'hq.mp4 streams do not start together ({st}): voices would play early or late on the page')
         for old in media.glob('hq-*.mp4'): old.unlink()
         blob, size = hq.read_bytes(), 14_000_000
         for i in range(0, len(blob), size): (media / f'hq-{i // size:02d}.mp4').write_bytes(blob[i:i + size])

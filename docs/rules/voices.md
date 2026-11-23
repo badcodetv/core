@@ -144,3 +144,22 @@ text is a verbatim transcript; turn-level delivery goes in `speech_metadata.styl
 brackets (`<shout>`, `<gasp>`, `<short pause>`). The google-genai SDK has no field for it, so `scripts/aistudio-tts.py
 --plain --style "angry, shouting"` sends it through `POST v1beta/interactions` (text part + `speech_metadata` annotation).
 Use it only for a line that needs it (Jack: "this needs to be said angrily"), a few words, never an accent or persona.
+
+## Jack 2026-11-23 — two bugs put every voice early: check every built cut before measuring a mouth
+
+Jack, 2026-11-23 (The Den): *"see why the lip syncing is not working when it usually does"*, then *"make sure they are
+fixed and remember this and save it"*. Three rounds of lip-sync fitting chased two bugs that were not in the clips at all:
+
+1. **The voice mix dropped its leading silence.** `adelay` + `amix` with no input starting at 0: amix starts at the first
+   line and the WAV drops the gap, so every line plays early by the first line's start (The Den rough cuts 1-3: 0.35 s;
+   Hello, I'm BadCode r7: 0.6 s). Fix: a silent `anullsrc` of the cut's length as the mix's first input (`den_cut.py`).
+   25 other `scripts/shorts/*_cut.py` mix the same way; most happen not to be hit, so check rather than assume.
+2. **The timeline page's full-quality stream started the picture 0.083 s late** (libx264 B-frames in a fragmented MP4),
+   so every timeline page from 2026-11-05 played the voices two frames early. Fix: `-bf 0` in `scripts/scene/timeline.py`,
+   which now refuses an `hq.mp4` whose streams don't both start at 0.
+
+**How to apply:** after building any cut with voices, run
+`~/.cache/badcode-lips/venv/bin/python scripts/lipsync/check-cut.py <cut>/edl.json <audio dir>` (`den_cut.py` runs it
+itself). It cross-correlates every voice take against its built stem (planned vs actual within 30 ms) and checks the
+preview's streams start at 0. Only when it passes is a mouth measurement worth anything. Detail and the per-shot record:
+the lip-sync-dub skill's failure table and `docs/stories/short-the-den/scenes/the-den/picks.md`.

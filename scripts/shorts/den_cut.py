@@ -190,7 +190,9 @@ def main():
                      'Lip-sync round 3: voices unchanged, each talking clip\'s in-point moved so the mouth opens just before its voice (scripts/shorts/den_refit.py; measured on the assembled cut with row-measure.py).',
                      'End card: the NAO finding (Evaluating government spending, HC 860, Dec 2021), read at source.']}
     (cut / 'edl.json').write_text(json.dumps(edl, indent=1, ensure_ascii=False))
-    print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4')}))
+    # every voice where the edl says, picture and sound both from 0 (scripts/lipsync/check-cut.py; 2026-11-23)
+    chk = subprocess.run([sys.executable, str(REPO / 'scripts/lipsync/check-cut.py'), str(cut / 'edl.json'), str(AUD)])
+    print(json.dumps({'total': total, 'preview': str(cut / 'preview.mp4'), 'check': 'ok' if chk.returncode == 0 else 'FAILED'}))
 
 
 if __name__ == '__main__':
