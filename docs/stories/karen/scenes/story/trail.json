@@ -43,5 +43,14 @@
   "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
   "what": "Cut r3 on the page: Kai's notes up to 2:08 attempted in one cut (protest throw, reminder + flashback, Martha/Clive/Harriet pins, seasons montage); head re-assembled, Viral onward = v4 render; 10 new TTS lines; 5:41 total",
   "rebuild": "scripts/karen/render-narration-r3.sh && python3 scripts/karen/story-cut-r3.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story /mnt/d/badcode-videos/karen-story/timeline/page"
+ },
+ {
+  "at": "2026-11-24T21:29:48+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Round 4 notes dumped (19 new, whole film): Kai asks for a structural rethink before any re-cut",
+  "feedback": "feedback/timeline-r4",
+  "feedback_docs": 33
  }
 ]
