@@ -1,0 +1,17 @@
+{
+  "split_question": "Should schools teach money skills like inflation, savings and mortgages, even if it means less time on other maths?",
+  "angles": [
+    "yes, put money skills in maths and cut the least useful content, with teachers and parents helping choose what goes",
+    "no, keep the maths as it is and teach money skills in separate lessons that do not take maths time",
+    "yes, but only after small trials in some schools show pupils keep their maths and learn the money skills"
+  ],
+  "facts_for_writers": [
+    "The announcement says maths will remove unnecessary content and that GCSE maths will be rebalanced, particularly at foundation tier, towards financial maths and statistics; it does not say what will be cut. [s1]",
+    "The announcement gives no start date for the new curriculum and does not mention a public consultation; it says further details will come \"in the coming weeks\". [s1]",
+    "Secondary pupils will be taught what the department calls the \"big three\" ideas: inflation, compound interest and diversification of risk, which it says are based on research from the Initiative for Financial Decision-Making at Stanford. [s1]",
+    "The announcement says 48% of parents believe too little time is spent teaching financial management and that only a third of children recall learning about money at school and finding it useful; it does not name the surveys in the text read. [s1]",
+    "In an Opinium poll for Yorkshire Building Society (March 2025), 89% of 2,000 parents of children aged 5 to 17 said financial education should be taught in schools. [s2]"
+  ],
+  "extra_sources": [],
+  "notes": "No UK poll was found on money lessons against other maths, so real_share is unset. The Opinium page does not give question wording. A YouGov poll (54% of parents want more school time on personal finance; 55% would cut other curriculum time) was found only in secondary coverage and dates from 2018, so it is not used. The announcement was read in full on GOV.UK; the BBC and other coverage were not opened. The 48% and one-third figures are quoted from the department's own release, whose underlying surveys are not named there."
+}

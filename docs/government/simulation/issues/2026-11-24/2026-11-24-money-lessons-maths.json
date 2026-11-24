@@ -1,0 +1,64 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-24-money-lessons-maths",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "clerk",
+  "run": {
+    "mode": "live",
+    "run_date": "2026-11-24",
+    "news_date": "2026-11-24"
+  },
+  "issue": {
+    "title": "Money lessons in school, and a rebalanced GCSE maths: who decides what goes in?",
+    "short": "MONEY LESSONS",
+    "question": "Should schools teach money skills like inflation, savings and mortgages, even if it means less of other maths, and who decides what is dropped?",
+    "summary": "On 22 November 2026 the Department for Education announced changes to the curriculum to teach pupils how to manage money. Primary pupils will learn to judge whether a deal is good value, and secondary pupils will learn why prices rise, how savings grow, how to spot scams and how mortgages work (s1). Maths will remove unnecessary content, and GCSE maths will be rebalanced, especially at foundation tier, towards financial maths and statistics, but the announcement does not say what will be cut, gives no start date and does not mention a consultation (s1). The department says further details will come \"in the coming weeks\" (s1).",
+    "summary_sources": [
+      "s1"
+    ],
+    "field": "school-curriculum",
+    "owner": "education",
+    "slot": "longest-wait",
+    "slot_reason": "Schools last came up in the simulation on 9 November, and on 22 November the government announced new money lessons and a rebalanced GCSE maths, which was in the UK news today. It asks who decides what children learn when something has to give way.",
+    "news": [
+      {
+        "headline": "Government announces financial literacy push in national curriculum reforms",
+        "memory_id": "a741804a-a61a-4c5d-aa40-0c5b6949cd17",
+        "sources": [
+          "s1"
+        ]
+      }
+    ]
+  },
+  "poll": {
+    "pollster": "Opinium (for Yorkshire Building Society)",
+    "fieldwork": "March 2025",
+    "sample": "2,000 parents of children aged 5 to 17",
+    "finding": "89% of parents think financial education should be taught in schools. The page does not give the question wording and does not ask what should be dropped to make room, so it is not the same question as this one.",
+    "sources": [
+      "s2"
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Pupils learn money skills for real life in curriculum shake-up",
+      "publisher": "Department for Education (GOV.UK)",
+      "date": "2026-11-22",
+      "url": "https://www.gov.uk/government/news/pupils-learn-money-skills-for-real-life-in-curriculum-shake-up"
+    },
+    {
+      "id": "s2",
+      "title": "Reading, writing and real-world money: nine in ten parents demand a new 'fourth R'",
+      "publisher": "Yorkshire Building Society",
+      "date": "2025-05-14",
+      "url": "https://www.ybs.co.uk/w/parents-want-financial-education-in-schools"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "sim-clerk"
+    ]
+  }
+}
