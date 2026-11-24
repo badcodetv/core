@@ -14,6 +14,7 @@ import { execFileSync } from 'node:child_process';
 import { writeHologram } from './storyverse.mjs';
 import { readDebates } from './debates.mjs';
 import { simulationFeed, simulationPage } from './simulation.mjs';
+import { demoFeed, demoPage } from './demo.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const src = join(here, 'src'), pub = join(here, 'public'), dist = join(here, 'dist');
@@ -57,6 +58,7 @@ const nav = `<nav aria-label="Channels"><ul>
 <li><a href="/stories">Stories</a>: ${S.map((s, i) => `<a href="/stories/${i + 1}">${esc(s.title)}</a>`).join(', ')}. Songs: ${S.map((s, i) => `<a href="/stories/${i + 5}">${esc(s.song)}</a>`).join(', ')}.</li>
 <li><a href="/news">News</a>: <a href="/news">Future Proof</a>, <a href="/news/2">${esc(SVP.title)}</a>${N.bulletins.length ? ` and <a href="/news/3">${esc(N.title)}</a>` : ''}</li>
 <li><a href="/government">The BadCode Government</a>: <a href="/government/2">live</a>, <a href="/government/3">every policy</a>, <a href="/government/4">the record</a>, <a href="/government/5">the arguments</a>, <a href="/future-proof/live/">Future Proof Live (SIMULATED)</a></li>
+<li><a href="/demo/">Future Proof Demo</a>: a demo of a government built from the bottom up</li>
 <li><a href="/about">About BadCode</a> and <a href="/text/100">BadCode Text</a></li>
 </ul></nav>`;
 const follow = `<h2>Follow BadCode</h2><ul>${C.socials.map(s => `<li>${s.url ? `<a href="${esc(s.url)}">${esc(s.name)}</a>` : `${esc(s.name)} (soon)`}</li>`).join('')}</ul><p>${esc(A.ai)} <a href="/how-we-made-it/">The full account</a></p><p>${esc(A.sign)} &copy; 2026 BadCode</p>`;
@@ -149,6 +151,17 @@ for (const r of routes) {
   writeFileSync(join(out, 'index.html'), simulationPage(frag, feed, { origin: O, img: '/future-proof/live/preview.png' }));
   if (feed) writeFileSync(join(out, 'feed.json'), JSON.stringify(feed) + '\n');
   console.log(feed ? `simulation: ${feed.issues.length} issues, ${feed.skipped.length} skipped` : 'simulation: no simulation/live ref, page shows "not built yet"');
+}
+// The Future Proof Demo (/demo/): the days and the demo government come from the branch demo/live, read
+// with git at build time (demo.mjs). Rebuilt on the 15:00 UTC schedule after each daily run (site-deploy.yml).
+{
+  const feed = demoFeed(join(here, '..', '..'));
+  const out = join(dist, 'demo');
+  mkdirSync(out, { recursive: true });
+  const frag = readFileSync(join(here, '..', '..', 'docs', 'demo', 'page', 'index.html'), 'utf8');
+  writeFileSync(join(out, 'index.html'), demoPage(frag, feed, { origin: O, img: '/demo/preview.png' }));
+  if (feed) writeFileSync(join(out, 'feed.json'), JSON.stringify(feed) + '\n');
+  console.log(feed ? `demo: ${feed.days.length} days, ${feed.government.lines.length} manifesto lines, ${feed.skipped.length} skipped` : 'demo: no demo/live ref, page shows "not built yet"');
 }
 writeFileSync(join(dist, '404.html'), pageHtml({ path: '/404', title: 'Page not found · BadCode', desc: SITE_DESC, body: plainBody.missing() }).replace('<meta name="description"', '<meta name="robots" content="noindex">\n<meta name="description"'));
 // a short cache for the HTML, a long one for the stills; the version query string busts css/js

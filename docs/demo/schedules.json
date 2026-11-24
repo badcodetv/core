@@ -1,0 +1,12 @@
+[
+ {"name": "demo-1-clerk", "worker": "demo-clerk", "cron": "0 12 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Run today's demo clerk."},
+ {"name": "demo-2-citizens", "worker": "demo-citizens", "cron": "15 12 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Run today's demo citizens."},
+ {"name": "demo-3-rival", "worker": "demo-rival", "cron": "30 12 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Write today's demo answer C."},
+ {"name": "demo-4-bench", "worker": "demo-bench", "cron": "45 12 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Write today's demo answers A and B."},
+ {"name": "demo-5-gate", "worker": "demo-gate", "cron": "5 13 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Mark today's demo answers."},
+ {"name": "demo-6-redo", "worker": "demo-redo", "cron": "25 13 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Check today's demo marks against the plan; redo if they missed."},
+ {"name": "demo-7-gate-again", "worker": "demo-gate", "cron": "40 13 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Second round: mark today's demo answers if the redo sent them back (stage bench); otherwise say so and stop."},
+ {"name": "demo-8-jury", "worker": "demo-jury", "cron": "55 13 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Run today's demo jury."},
+ {"name": "demo-9-minister", "worker": "demo-minister", "cron": "10 14 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Run today's demo minister."},
+ {"name": "demo-10-cabinet", "worker": "demo-cabinet", "cron": "25 14 * * *", "timezone": "Europe/London", "keep_sessions": 14, "enabled": true, "message": "Run the demo government's debate on today's day."}
+]

@@ -7,6 +7,9 @@ on:
       - docs/government/workers/**
       - docs/government/ministers/**
       - docs/government/shared.md
+      - docs/demo/workers/**
+      - docs/demo/worker-common.md
+      - docs/demo/schedules.json
       - docs/government/schedules.json
       - docs/government/simulation/worker-common.md
       - scripts/government/sync-bob.mjs

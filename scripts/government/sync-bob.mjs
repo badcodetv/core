@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Git -> Bob sync for the BadCode government. Dry run by default; --apply writes.
-// Desired state: docs/government/{shared.md, workers/*.md, ministers/*.md, schedules.json}.
+// Desired state: docs/government/{shared.md, workers/*.md, ministers/*.md, schedules.json},
+// plus the Future Proof Demo's own docs/demo/{workers/*.md, schedules.json} when they exist.
 // Never deletes: things in Bob but not in git are reported as "extra (not touched)".
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, basename } from 'node:path';
@@ -8,8 +9,9 @@ import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 
 const ALLOWED_KEYS = ['engine', 'model', 'effort', 'labels', 'include', 'tools'];
-// include: ministers (the ten briefs, appended) and/or simulation (docs/government/simulation/worker-common.md, before the body)
-const INCLUDES = ['ministers', 'simulation'];
+// include: ministers (the ten briefs, appended), simulation (docs/government/simulation/worker-common.md, before the body)
+// or demo (docs/demo/worker-common.md, before the body)
+const INCLUDES = ['ministers', 'simulation', 'demo'];
 const SCHEDULE_FIELDS = ['worker', 'cron', 'timezone', 'message', 'enabled', 'keep_sessions'];
 
 const csv = (s) => s.split(',').map((x) => x.trim()).filter(Boolean);
@@ -50,10 +52,11 @@ export function parseWorkerFile(text) {
 
 const includes = (w) => (Array.isArray(w.include) ? w.include : w.include ? [w.include] : []);
 
-export function assemblePrompt(shared, worker, briefs = [], simCommon = '') {
+export function assemblePrompt(shared, worker, briefs = [], simCommon = '', demoCommon = '') {
   const inc = includes(worker);
   let out = shared.trim();
   if (inc.includes('simulation')) out += `\n\n${simCommon.trim()}`;
+  if (inc.includes('demo')) out += `\n\n${demoCommon.trim()}`;
   out += `\n\n${worker.prompt.trim()}`;
   if (inc.includes('ministers')) {
     out += `\n\n## The ministers\n\n${briefs.map((b) => b.trim()).join('\n\n')}`;
@@ -124,23 +127,40 @@ export function loadDesired(root) {
   };
   const shared = readFileSync(need(join(gov, 'shared.md')), 'utf8');
   const wdir = need(join(gov, 'workers'));
-  const wfiles = readdirSync(wdir).filter((f) => f.endsWith('.md')).sort();
-  if (!wfiles.length) throw new Error(`no worker files in ${wdir}`);
+  const demo = join(root, 'docs/demo');
+  const ddir = join(demo, 'workers');
+  const mdFiles = (dir) => (existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.md')).sort().map((f) => join(dir, f)) : []);
+  const wfiles = [...mdFiles(wdir), ...mdFiles(ddir)];
+  if (!mdFiles(wdir).length) throw new Error(`no worker files in ${wdir}`);
   const mdir = join(gov, 'ministers');
   const briefs = existsSync(mdir)
     ? readdirSync(mdir).filter((f) => f.endsWith('.md')).sort().map((f) => readFileSync(join(mdir, f), 'utf8'))
     : [];
   const simPath = join(gov, 'simulation/worker-common.md');
   const simCommon = existsSync(simPath) ? readFileSync(simPath, 'utf8') : '';
-  const workers = wfiles.map((f) => {
-    const w = parseWorkerFile(readFileSync(join(wdir, f), 'utf8'));
+  const demoPath = join(demo, 'worker-common.md');
+  const demoCommon = existsSync(demoPath) ? readFileSync(demoPath, 'utf8') : '';
+  const seenNames = new Set();
+  const workers = wfiles.map((path) => {
+    const f = basename(path);
+    if (seenNames.has(f)) throw new Error(`two worker files called ${f}`);
+    seenNames.add(f);
+    const w = parseWorkerFile(readFileSync(path, 'utf8'));
     if (includes(w).includes('ministers') && !briefs.length) throw new Error(`${f} includes ministers but ${mdir} has no briefs`);
     if (includes(w).includes('simulation') && !simCommon) throw new Error(`${f} includes simulation but ${simPath} is missing`);
-    return { name: basename(f, '.md'), ...w, prompt: assemblePrompt(shared, w, briefs, simCommon) };
+    if (includes(w).includes('demo') && !demoCommon) throw new Error(`${f} includes demo but ${demoPath} is missing`);
+    return { name: basename(f, '.md'), ...w, prompt: assemblePrompt(shared, w, briefs, simCommon, demoCommon) };
   });
-  const schedules = JSON.parse(readFileSync(need(join(gov, 'schedules.json')), 'utf8'));
+  const demoSched = join(demo, 'schedules.json');
+  const schedules = [
+    ...JSON.parse(readFileSync(need(join(gov, 'schedules.json')), 'utf8')),
+    ...(existsSync(demoSched) ? JSON.parse(readFileSync(demoSched, 'utf8')) : []),
+  ];
+  const sNames = new Set();
   for (const s of schedules) {
     for (const k of ['name', 'worker', 'cron', 'message']) if (!s[k]) throw new Error(`schedules.json: ${s.name ?? '?'} needs ${k}`);
+    if (sNames.has(s.name)) throw new Error(`schedules: two schedules called ${s.name}`);
+    sNames.add(s.name);
     if (!workers.some((w) => w.name === s.worker)) throw new Error(`schedules.json: ${s.name} names unknown worker ${s.worker}`);
   }
   return { workers, schedules };

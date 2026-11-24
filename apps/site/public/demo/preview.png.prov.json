@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "apps/site/public/demo/preview.png",
+ "made": "2026-11-24T10:42:01+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "script",
+ "tool": "scripts/demo/preview.sh",
+ "why": "Link preview for badcode.tv/demo/ (says THIS IS A DEMO)"
+}

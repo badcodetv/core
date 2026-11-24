@@ -112,3 +112,20 @@ describe('include: simulation', () => {
     expect(assemblePrompt('S', { prompt: 'B', include: null }, [], 'COMMON')).toBe('S\n\nB');
   });
 });
+
+describe('the Future Proof Demo workers', () => {
+  it('loads the demo workers and schedules from docs/demo, with the demo common ground before the body', async () => {
+    const { loadDesired } = await import('./sync-bob.mjs');
+    const root = new URL('../..', import.meta.url).pathname;
+    const d = loadDesired(root);
+    const names = d.workers.map((w) => w.name);
+    for (const n of ['demo-clerk', 'demo-citizens', 'demo-rival', 'demo-bench', 'demo-gate', 'demo-redo', 'demo-jury', 'demo-minister', 'demo-cabinet']) expect(names).toContain(n);
+    expect(names).toContain('sim-clerk');
+    const clerk = d.workers.find((w) => w.name === 'demo-clerk');
+    expect(clerk.prompt).toContain("The demo step's common ground");
+    expect(clerk.prompt).not.toContain("The simulation step's common ground");
+    expect(clerk.prompt.indexOf("common ground")).toBeLessThan(clerk.prompt.indexOf('Your step: the clerk'));
+    expect(d.schedules.filter((s) => s.name.startsWith('demo-')).length).toBe(10);
+    expect(d.schedules.filter((s) => s.worker === 'demo-gate').length).toBe(2);
+  });
+});
