@@ -1,7 +1,7 @@
 {
  "schema": "fp-demo/1",
  "id": "2026-11-24-thornley-homes-writeoff",
- "stage": "jury",
+ "stage": "published",
  "run": {
   "mode": "daily",
   "run_date": "2026-11-24",
@@ -53,6 +53,13 @@
    "publisher": "LocalGov",
    "date": "2026-11-23",
    "url": "https://www.localgov.co.uk/Lambeth-Greens-declare-financial-emergency-over-Homes-for-Lambeth/65266"
+  },
+  {
+   "id": "s2",
+   "title": "Exceptional Financial Support for local authorities for 2026-27",
+   "publisher": "GOV.UK (MHCLG)",
+   "date": "2026-08-18",
+   "url": "https://www.gov.uk/guidance/exceptional-financial-support-for-local-authorities-for-2026-27"
   }
  ],
  "made_by": {
@@ -62,7 +69,8 @@
    "demo-bench",
    "demo-rival",
    "demo-gate",
-   "demo-jury"
+   "demo-jury",
+   "demo-minister"
   ]
  },
  "citizens": {
@@ -424,5 +432,23 @@
     "text": "Don’t touch the old folks’ care. If they’re going to sell anything, they can tell us what first."
    }
   ]
- }
+ },
+ "minister": {
+  "minister": "housing",
+  "decision": "sent-back",
+  "text": "Nothing is signed. Every answer crossed a red line: A sells tenants’ homes, B cuts adult social care, C leaves the books unbalanced until a grant arrives. The £43m goes back to the council.",
+  "statement": "I’m sending this back. A sells tenants’ homes. B cuts adult social care and makes tenants pay too. C protects everyone, but the books don’t balance until a grant turns up, and a begging letter isn’t £35m. Twelve citizens said keep every red line, 6 to 4 over selling council homes. I agree. Nobody should lose their keys to pay for a company they never voted on. Bring back a plan that breaks none, and name who signed the loan."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The government’s list of councils given Exceptional Financial Support for 2027-28 will name more than 36 local authorities in its main table.",
+   "due": "2027-04-30",
+   "rule": "GOV.UK (MHCLG) Exceptional Financial Support page for 2027-28, main table of local authorities; last published for 2026-27: 36 councils, page updated 18 Aug 2026. Hit if the 2027-28 table lists more than 36 by 30 Apr 2027.",
+   "sources": [
+    "s2"
+   ],
+   "result": "pending"
+  }
+ ]
 }
