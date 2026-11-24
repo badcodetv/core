@@ -12,11 +12,11 @@
   "ending": "accepted"
  },
  "case": {
-  "title": "Gresmoor police must wipe old abortion records",
+  "title": "Gresmoor police must delete old abortion records",
   "short": "GRESMOOR RECORDS",
   "question": "How should Gresmoor Police find and delete its old abortion records without women having to ask?",
   "place": "Gresmoor (made up)",
-  "story": "From 16 November the law pardons women who were convicted, cautioned, arrested or investigated over their own abortion. Women do not have to apply. Gresmoor Police (made up) thinks it holds about 60 such records, spread over paper files in a store, an old computer system and copies sent to the court. Some women have moved away, some have married and changed names, and some do not know a file exists. The force has £90,000 set aside and a records team of four. Nobody wants a clumsy search to leak a name or to wake a woman with a letter her family might open.",
+  "story": "From 16 November the law pardons women who were convicted, cautioned, arrested or investigated over their own abortion. Women do not have to apply. Gresmoor Police (made up) thinks it holds 9 such records, spread over paper files in a store, an old computer system and copies sent to the court. Some women have moved away, some have married and changed names, and some do not know a file exists. The force has £90,000 set aside and a records team of four. Nobody wants a clumsy search to leak a name or to wake a woman with a letter her family might open.",
   "in_the_news": {
    "headline": "Women pardoned for abortion offences relating to their own pregnancy",
    "why": "The new law makes police and courts delete these records, and a force like Gresmoor has to do it without women applying.",
@@ -47,6 +47,13 @@
    "publisher": "GOV.UK (Ministry of Justice)",
    "date": "2026-11-15",
    "url": "https://www.gov.uk/government/news/women-pardoned-for-abortion-offences-relating-to-their-own-pregnancy"
+  },
+  {
+   "id": "s2",
+   "title": "Section 242 of the Crime and Policing Act 2026: abortion offence pardons",
+   "publisher": "GOV.UK (Ministry of Justice)",
+   "date": "2026-11-16",
+   "url": "https://www.gov.uk/guidance/section-242-of-the-crime-and-policing-act-2026-abortion-offence-pardons"
   }
  ],
  "made_by": {
@@ -428,16 +435,12 @@
  "predictions": [
   {
    "id": "p1",
-   "claim": "The Crime Survey for England and Wales will estimate fewer than 10.0 million headline crime incidents in the year ending September 2026.",
-   "due": "2027-01-28",
-   "rule": "ONS 'Crime in England and Wales: year ending September 2026' (28 Jan 2027). Last published: 9.7 million, year ending June 2026.",
-   "result": "pending"
-  },
-  {
-   "id": "p2",
-   "claim": "Police recorded shoplifting in England and Wales will be below 519,516 offences in the year ending September 2026.",
-   "due": "2027-01-28",
-   "rule": "ONS 'Crime in England and Wales: year ending September 2026' (28 Jan 2027). Last published: 519,516, year ending June 2026.",
+   "claim": "On 31 January 2027 the Ministry of Justice guidance on the abortion pardon will still say that police and courts aim to delete or mark records within 1 month, and will not try to contact women.",
+   "due": "2027-01-31",
+   "rule": "Ministry of Justice guidance 'Section 242 of the Crime and Policing Act 2026: abortion offence pardons' on GOV.UK, read on 31 January 2027. True if it still says police and courts aim to delete or mark records within 1 month and will not try to contact women. Withdrawn: void.",
+   "sources": [
+    "s2"
+   ],
    "result": "pending"
   }
  ]

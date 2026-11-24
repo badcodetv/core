@@ -19,7 +19,7 @@
   "story": "Mereholt is a made-up town of 48,000 people. Its last big employer cut 300 jobs this year, and 1 in 8 of its 18 to 24 year olds is out of work. The council has a one-off fund of 1.2 million pounds, which must be spent by next September and cannot be topped up. Paid six-month placements for young people cost about 9,000 pounds each, so the fund covers around 130. Spread over everyone out of work, it covers a coaching and travel service for about 900 people but no wages. Workers over 50 who were laid off say they are being pushed to the back of the queue, and their redundancy pay runs out at the end of February, so they cannot wait for help.",
   "in_the_news": {
    "headline": "UK unemployment falls to 4.6% as regular pay growth slows and vacancies drop",
-   "why": "The national figures show a mixed picture, with youth unemployment far above the average, which is the squeeze Mereholt is in.",
+   "why": "The national figures are mixed: unemployment is 4.6% and vacancies are 690,000, down 22,000. Mereholt is a made-up town splitting one pot between young people and laid-off older workers.",
    "memory_id": "ebdff0d8-3ac8-47f6-8d04-2bc48f8fbec0",
    "sources": [
     "s1"
@@ -67,13 +67,12 @@
    "demo-clerk",
    "demo-citizens",
    "demo-bench",
-   "demo-rival",
    "demo-gate",
    "demo-redo",
    "demo-jury",
    "demo-minister"
   ],
-  "note": "Round 2: tests t2 and t3 made harder, and the case now says the over-50s' redundancy pay ends in February; answers unchanged. Sources: the ONS bulletin replaced a stock-data site (same figures, checked)."
+  "note": "First marks: all three answers passed every test, so the citizens' tests t2 and t3 were made harder, and the case now says the over-50s' redundancy pay ends in February. The answers were not changed. Marked again from scratch."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -443,7 +442,7 @@
   "decision": "trial",
   "answer": "C",
   "text": "A trial of answer C: 594,000 pounds for 66 paid youth placements and 603,000 for about 450 laid-off workers over 50, ending 30 September 2027. It tests whether a split fund gets both groups into work. It missed one test of six, the 31 January start.",
-  "statement": "Callum Brierley, Minister for Work. Nobody's answer passed everything, and none crossed a red line. C got five tests out of six and put over half the money to the over-50s, who cannot wait past February. It missed the 31 January start, so I am not adopting it. I am trialling it until 30 September 2027. The jury said split fairly, 5 to 4 to 3, and C does that. If fewer than 40 young people and 200 over-50s are in work, it stops.",
+  "statement": "Nobody's answer passed everything, and none crossed a red line. C got five tests out of six and put over half the money to the over-50s, who cannot wait past February. It missed the 31 January start, so I am not adopting it. I am trialling it until 30 September 2027. The jury said split fairly, 5 to 4 to 3, and C does that. If fewer than 40 young people and 200 over-50s are in work, it stops.",
   "stop": "2027-09-30"
  },
  "predictions": [
@@ -452,14 +451,20 @@
    "claim": "The ONS unemployment rate for people aged 16 and over, for November 2026 to January 2027, will be 4.6% or higher.",
    "due": "2027-03-31",
    "rule": "ONS Labour market overview, March 2027 release, headline unemployment rate. Last published: 4.6% for July to September 2026 (ONS, 17 Nov 2026).",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s1"
+   ]
   },
   {
    "id": "p2",
    "claim": "UK job vacancies for December 2026 to February 2027 will be below 690,000.",
    "due": "2027-04-30",
    "rule": "ONS Labour market overview, March 2027 release, vacancies estimate. Last published: 690,000 for August to October 2026 (ONS, 17 Nov 2026).",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s1"
+   ]
   }
  ]
 }

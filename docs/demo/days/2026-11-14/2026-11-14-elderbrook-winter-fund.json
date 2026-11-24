@@ -19,7 +19,7 @@
   "story": "Elderbrook is a town of 8,000 homes. Its council has a one-off winter fund of £600,000 and cannot add to it this year. Forecasters expect the January energy price cap to jump, and the new price is announced on or before 25 November. About 1,500 homes already struggle to pay, many in old houses that leak heat, and each needs about £400 to cover the rise. Any scheme costs £120,000 to run (staff, phone line, appeals), leaving £480,000. That gives the full £400 to only 1,200 of the 1,500 homes, or £320 to all 1,500. The council's benefit list misses about 300 of the 1,500, mostly private renters and pensioners, and checking them by hand takes until late January. Fitters can insulate about 150 homes before spring.",
   "in_the_news": {
    "headline": "Analyst forecasts point to a large January price cap rise ahead of Ofgem's 25 November decision",
-   "why": "Households face a likely rise in the energy price cap this winter, and councils are asked what help they can give.",
+   "why": "Forecasters expect the energy price cap to rise in January 2027, and Ofgem announces it on or before 25 November. Elderbrook is a made-up town deciding who gets help.",
    "memory_id": "36170caf-3150-4cda-8e5f-129e712d712d",
    "sources": [
     "s1"
@@ -41,6 +41,13 @@
    "publisher": "Uswitch",
    "date": "2026-11-11",
    "url": "https://www.uswitch.com/gas-electricity/news/when-is-the-next-energy-price-cap/"
+  },
+  {
+   "id": "s2",
+   "title": "Energy price cap will rise by 4% from October 2026",
+   "publisher": "Ofgem",
+   "date": "2026-08-26",
+   "url": "https://ofgem.gov.uk/press-release/energy-price-cap-will-rise-4-october-2026"
   }
  ],
  "made_by": {
@@ -48,12 +55,11 @@
    "demo-clerk",
    "demo-citizens",
    "demo-bench",
-   "demo-rival",
    "demo-redo",
    "demo-jury",
    "demo-minister"
   ],
-  "note": "Round 2: first marks reached accepted; added 300 homes missing from benefit records, stricter tests. Round 3: second marks also accepted; hard numbers (£480,000 after running costs: full £400 for 1,200 homes or £320 for all 1,500) and a test asking the full £400 for all 1,500. Phone numbers swapped for Ofcom's drama ranges, which never ring a real line."
+  "note": "The first two marks gave the wrong ending, so the case and tests changed twice. Round 2: 300 homes missing from benefit records were added; tests made stricter. Round 3: exact sums were added (£480,000 after running costs: £400 for 1,200 homes or £320 for all 1,500) and a test asking £400 for every home. The phone numbers are from the range kept for drama, so they never ring a real line."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -430,7 +436,11 @@
    "claim": "Ofgem's price cap for January to March 2027 will be above £2,000 a year for a typical household.",
    "due": "2026-11-26",
    "rule": "Ofgem's announcement, due on or before 25 November 2026, of the typical household cap (Direct Debit). Last published: £1,723 a year, October to December 2026.",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s1",
+    "s2"
+   ]
   }
  ]
 }

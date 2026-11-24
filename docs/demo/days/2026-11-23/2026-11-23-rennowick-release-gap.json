@@ -19,7 +19,7 @@
   "story": "About 120 people serving short and medium sentences will come home to Rennowick over the next year under the early release scheme. The town's community safety group (made up) has one pot of £480,000 a year, set by the council and not able to grow. Quick check-ins by a supervisor in the first days cost about £300,000: six extra supervisors. Calling every victim back within 48 hours, with a named officer, costs about £250,000: five liaison staff. Both together cost £550,000. Some money could come from the youth service, which is also funded from this pot at £90,000, but cutting it would close two evening clubs.",
   "in_the_news": {
    "headline": "Hundreds more to walk free in latest phase of prison early release scheme",
-   "why": "About 5,000 prisoners are being released early in stages, so every town like Rennowick must decide how to supervise them and look after victims on a fixed budget.",
+   "why": "The story was from 10 November and still running: about 5,000 prisoners are being released early in stages. This made-up case imagines one town choosing how to spend a fixed pot on supervision and victims.",
    "sources": [
     "s1"
    ]
@@ -59,6 +59,13 @@
    "publisher": "Institute for Government",
    "date": "2026-08-06",
    "url": "https://www.instituteforgovernment.org.uk/explainer/prison-early-release-scheme"
+  },
+  {
+   "id": "s3",
+   "title": "Offender management statistics bulletin, England and Wales (prison population as at 30 September 2026)",
+   "publisher": "Ministry of Justice",
+   "date": "2026-10-29",
+   "url": "https://www.gov.uk/government/statistics/offender-management-statistics-quarterly-april-to-june-2026"
   }
  ],
  "made_by": {
@@ -429,7 +436,7 @@
   "minister": "crime",
   "decision": "trial",
   "answer": "A",
-  "text": "Six supervisors see everyone released within 2 days and three liaison staff call victims. Trial tests whether three staff can meet the 48-hour call-back. It fails that test: 1 of 6 marked.",
+  "text": "Six supervisors see everyone released within 2 days and three liaison staff call victims. The trial tests whether three staff can make every 48-hour call-back, the one test it failed.",
   "statement": "The money cannot buy both, and I will not pretend it can. Answer A passed five of six tests and stayed inside every limit: the pot, and the youth clubs. It failed one: three liaison staff cannot promise every victim a call in 48 hours. The jury said check-ins come first, 5 to 4, with 3 wanting more money. So we trial A for six months and count every missed call. Feeling safe and being safe are different. We will publish both numbers.",
   "stop": "2027-05-24"
  },
@@ -438,15 +445,21 @@
    "id": "p1",
    "claim": "The prison population in England and Wales at 31 December 2026 will be below 87,712, the latest quarterly figure.",
    "due": "2027-02-26",
-   "rule": "Ministry of Justice, Offender management statistics quarterly, October to December 2026. Last published: 87,712 at 30 Sep 2026.",
-   "result": "pending"
+   "rule": "Ministry of Justice, Offender management statistics quarterly, July to September 2026 bulletin (scheduled 28 January 2027), which gives the population as at 31 December 2026 (a guess from the pattern: the last bulletin gave 30 September). Last published: 87,712 at 30 Sep 2026.",
+   "result": "pending",
+   "sources": [
+    "s3"
+   ]
   },
   {
    "id": "p2",
    "claim": "The prison population in England and Wales at 31 March 2027 will be below 88,000.",
    "due": "2027-05-28",
-   "rule": "Ministry of Justice, Offender management statistics quarterly, January to March 2027. Last published: 87,712 at 30 Sep 2026.",
-   "result": "pending"
+   "rule": "Ministry of Justice, Offender management statistics quarterly, October to December 2026 bulletin, published by 28 May 2027. Last published: 87,712 at 30 Sep 2026. If not published by the due date, void.",
+   "result": "pending",
+   "sources": [
+    "s3"
+   ]
   }
  ]
 }

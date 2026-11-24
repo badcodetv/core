@@ -47,6 +47,13 @@
    "publisher": "GOV.UK",
    "date": "2026-11-17",
    "url": "https://www.gov.uk/government/speeches/minister-mcgovern-speech-at-the-hospice-uk-conference"
+  },
+  {
+   "id": "s2",
+   "title": "380 beds out of use in English hospices",
+   "publisher": "Hospice UK",
+   "date": "2025-11-18",
+   "url": "https://www.hospiceuk.org/latest-from-hospice-uk/380-beds-out-use-english-hospices"
   }
  ],
  "made_by": {
@@ -54,7 +61,6 @@
    "demo-clerk",
    "demo-citizens",
    "demo-bench",
-   "demo-rival",
    "demo-redo",
    "demo-gate",
    "demo-redo",
@@ -62,7 +68,7 @@
    "demo-jury",
    "demo-minister"
   ],
-  "note": "Round 2: the case now says the contract forbids asking families for gifts and overheads are only £150,000; answer C rewritten to fit. Round 3: the must-balance test became a red line."
+  "note": "Round 2: the case now says the contract forbids asking families for gifts and that rent, heating and office costs are only £150,000. Answer C was rewritten to fit. Round 3: the citizens' test that the plan must balance the books became a red line. Marked again each time."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -410,7 +416,10 @@
    "claim": "The next count of English hospice beds out of use, published by Hospice UK after 24 November 2026, will be higher than 380.",
    "due": "2027-11-24",
    "rule": "Hospice UK's published count of hospice beds out of use in England; last published: 380 (160 permanently closed), 18 Nov 2025. Hit if the next count published by 24 Nov 2027 is above 380.",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   }
  ]
 }

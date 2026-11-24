@@ -19,7 +19,7 @@
   "story": "Dunmarrow (made up) is a town of 28,000 where the carpet works shut four years ago. 310 people aged 16 to 24 are not in education, work or training. A cable maker on the edge of town says it will take on 60 trainee fitters next year if it can find people who can start in March. The council has £1.2 million from a national fund and must spend it by next October. Last year's jobs fair drew 400 young people and led to nine jobs. The nearest college is a 55-minute bus ride away, and the last bus home leaves at 5.40pm.",
   "in_the_news": {
    "headline": "Third Clean Energy Jobs Fair held in Birmingham, with over 400 young people attending",
-   "why": "Government is linking youth jobs schemes to clean energy work; Dunmarrow faces the same question of turning a jobs fair into real jobs.",
+   "why": "The government held a clean energy jobs fair, and National Grid has a £5 million fund to bring young people who are not in education or work into energy jobs. Dunmarrow is a made-up town facing the same question.",
    "memory_id": "61080198-cb81-4b5f-ac97-25536a983ce5",
    "sources": [
     "s1"
@@ -53,6 +53,20 @@
    "publisher": "GOV.UK",
    "date": "2026-11-12",
    "url": "https://www.gov.uk/government/news/clean-energy-jobs-fair-held-in-birmingham"
+  },
+  {
+   "id": "s2",
+   "title": "Young people not in education, employment or training (NEET), UK: August 2026",
+   "publisher": "Office for National Statistics",
+   "date": "2026-08-27",
+   "url": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/bulletins/youngpeoplenotineducationemploymentortrainingneet/august2026"
+  },
+  {
+   "id": "s3",
+   "title": "Labour market overview, UK: November 2026",
+   "publisher": "Office for National Statistics",
+   "date": "2026-11-17",
+   "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/november2026"
   }
  ],
  "made_by": {
@@ -60,7 +74,6 @@
    "demo-clerk",
    "demo-citizens",
    "demo-bench",
-   "demo-rival",
    "demo-gate",
    "demo-jury",
    "demo-minister"
@@ -433,14 +446,20 @@
    "claim": "The ONS will report at least 950,000 young people aged 16 to 24 not in education, employment or training (NEET) in the UK in its February 2027 release.",
    "due": "2027-03-31",
    "rule": "ONS bulletin 'Young people not in education, employment or training (NEET), UK: February 2027', headline 16 to 24 total. Last published: 981,000 (Apr to Jun 2026, ONS, 27 Aug 2026).",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   },
   {
    "id": "p2",
    "claim": "The UK unemployment rate for people aged 16 and over for October to December 2026 will be 4.6% or lower.",
    "due": "2027-03-01",
-   "rule": "ONS UK labour market overview, February 2027 release, headline rate. Last published: 4.6% for Jul to Sep 2026 (ONS, 17 Nov 2026, as reported by the press).",
-   "result": "pending"
+   "rule": "ONS UK labour market overview, February 2027 release, headline rate. Last published: 4.6% for Jul to Sep 2026 (ONS, 17 Nov 2026).",
+   "result": "pending",
+   "sources": [
+    "s3"
+   ]
   }
  ]
 }

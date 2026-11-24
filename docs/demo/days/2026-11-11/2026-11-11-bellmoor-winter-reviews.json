@@ -47,6 +47,13 @@
    "publisher": "GOV.UK (Department of Health and Social Care)",
    "date": "2026-11-09",
    "url": "https://www.gov.uk/government/news/40-million-for-gps-to-keep-vulnerable-patients-out-of-hospital-this-winter"
+  },
+  {
+   "id": "s2",
+   "title": "Referral to treatment waiting times statistics, September 2026 (statistical press notice)",
+   "publisher": "NHS England",
+   "date": "2026-11-12",
+   "url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/11/Sep26-RTT-SPN-publication-PDF-391K-ojyW5x.pdf"
   }
  ],
  "made_by": {
@@ -54,12 +61,11 @@
    "demo-clerk",
    "demo-citizens",
    "demo-bench",
-   "demo-rival",
    "demo-gate",
    "demo-jury",
    "demo-minister"
   ],
-  "note": "Round 2: tests tightened (t1, t2, t6) before the gate because round-1 tests were too easy; answers unchanged."
+  "note": "First marks: the citizens' tests were too easy, so three were made stricter (t1 asks for 2,200 reviews, t2 for the sickest 300 seen by 15 December, t6 for a target for admissions). The answers were not changed. Marked again from scratch."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -424,7 +430,7 @@
   "decision": "trial",
   "answer": "A",
   "text": "A trial of answer A: 2,200 reviews by 31 March with five temporary nurses, the sickest 300 seen by 15 December. It tests whether the money pays for the nurses. It failed 1 of 6 tests: no target number.",
-  "statement": "Tunde Marlow, Minister for Health. Bellmoor's citizens set six tests. Answer A passed five and missed one: it sets no target number for hospital admissions. No answer passed everything, so I won't adopt it. I'm signing a trial. The jury ruled 7 to 5 that those the doctors rate lowest risk wait until spring, and the trial follows that. The sickest are seen by 15 December. Every housebound patient gets a visit. It ends on 31 March 2027 unless renewed.",
+  "statement": "Bellmoor's citizens set six tests. Answer A passed five and missed one: it sets no target number for hospital admissions. No answer passed everything, so I won't adopt it. I'm signing a trial. The jury ruled 7 to 5 that those the doctors rate lowest risk wait until spring, and the trial follows that. The sickest are seen by 15 December. Every housebound patient gets a visit. It ends on 31 March 2027 unless renewed.",
   "stop": "2027-03-31"
  },
  "predictions": [
@@ -432,15 +438,21 @@
    "id": "p1",
    "claim": "The NHS England waiting list for the end of January 2027 will be above 7.3 million treatments.",
    "due": "2027-03-11",
-   "rule": "NHS England's referral to treatment statistics, published on 11 March 2027. Last published: 7.38 million, September 2026 (published 12 Nov 2026).",
-   "result": "pending"
+   "rule": "NHS England's referral to treatment statistics, published on 11 March 2027. Last published: about 7.4 million, September 2026 (published 12 Nov 2026).",
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   },
   {
    "id": "p2",
    "claim": "Fewer than 120,000 people in England will have waited over 52 weeks at the end of January 2027.",
    "due": "2027-03-11",
    "rule": "NHS England's referral to treatment statistics, published on 11 March 2027. Last published: 116,353 waiting over 52 weeks, September 2026.",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   }
  ]
 }

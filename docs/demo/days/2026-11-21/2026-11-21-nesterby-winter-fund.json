@@ -16,10 +16,10 @@
   "short": "NESTERBY WINTER FUND",
   "question": "How should Nesterby pay to help households with the January rise in energy bills?",
   "place": "Nesterby (made up)",
-  "story": "Nesterby is a made-up town of 9,000 people. Its council has a winter fund of \u00a390,000, set by law and not allowed to grow this year. About 1,100 households there will struggle when the energy price cap rises in January, and helping them properly would cost around \u00a3300,000. The council can't raise council tax this year because of a cap on rises. Every other pot of money is spoken for: the leisure centre, the library and the gritting lorries. The only way to find more is to borrow, and a loan could only be repaid from next year's winter fund and the gritting budget. The council must say how it will cover the gap before January.",
+  "story": "Nesterby is a made-up town of 9,000 people. Its council has a winter fund of £90,000, set by law and not allowed to grow this year. About 1,100 households there will struggle when the energy price cap rises in January, and helping them properly would cost around £300,000. The council can't raise council tax this year because of a cap on rises. Every other pot of money is spoken for: the leisure centre, the library and the gritting lorries. The only way to find more is to borrow, and a loan could only be repaid from next year's winter fund and the gritting budget. The council must say how it will cover the gap before January.",
   "in_the_news": {
    "headline": "Energy price cap forecast to rise 26% from January",
-   "why": "Forecasters expect the cap to jump by \u00a3443 a year, so towns like the made-up Nesterby face a winter of bills many can't pay.",
+   "why": "One forecaster, Cornwall Insight, expects the price cap to rise by £443 a year in January 2027. It is not an official figure. Nesterby is a made-up town facing that bill.",
    "memory_id": "904d0976-2f75-4aab-b346-43c467045e64",
    "sources": [
     "s1",
@@ -28,7 +28,7 @@
   },
   "facts": [
    {
-    "text": "Cornwall Insight forecasts the cap for a typical household will rise \u00a3443 to \u00a32,166 a year from January 2027, up 26% from \u00a31,723.",
+    "text": "Cornwall Insight forecasts the cap for a typical household will rise £443 to £2,166 a year from January 2027, up 26% from £1,723.",
     "sources": [
      "s1"
     ]
@@ -67,7 +67,7 @@
    "demo-jury",
    "demo-minister"
   ],
-  "note": "Round 2: tightened the case (loans repaid only from next year's funds) and the citizens' \u00a3200 floor."
+  "note": "First marks: answer A passed all six tests, so the case was tightened (a loan can only be repaid from next year's winter fund and the gritting budget) and the citizens' limit became a £200 floor per home. Answer C was rewritten to fit. Marked again from scratch."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -180,7 +180,7 @@
    {
     "id": "t1",
     "kind": "test",
-    "text": "Shows where every pound of the \u00a3300,000 comes from, with a figure for each source, or says exactly how big the shortfall is.",
+    "text": "Shows where every pound of the £300,000 comes from, with a figure for each source, or says exactly how big the shortfall is.",
     "backers": 84
    },
    {
@@ -204,7 +204,7 @@
    {
     "id": "t5",
     "kind": "limit",
-    "text": "Leaves none of the 1,100 struggling households with less than \u00a3200 of help.",
+    "text": "Leaves none of the 1,100 struggling households with less than £200 of help.",
     "backers": 83
    },
    {
@@ -217,7 +217,7 @@
   "voices": [
    {
     "citizen": "c0075",
-    "who": "a retired woman, 70, North West",
+    "who": "a retired woman, 70, Nesterby",
     "text": "I'll pay a bit more in tax if I have to, but don't take the library from us. It's the only warm place some of us have."
    },
    {
@@ -245,9 +245,9 @@
  "bench": [
   {
    "id": "A",
-   "angle": "Spread the \u00a390,000 thinly across all 1,100 homes",
+   "angle": "Spread the £90,000 thinly across all 1,100 homes",
    "title": "A share of the winter fund for every household",
-   "answer": "The council pays out the whole \u00a390,000 winter fund in equal shares to all 1,100 households, about \u00a382 each. Council staff do it from the town's list, so no one fills in a form. Payment lands on the household's energy account in the first week of December, before the January bills arrive. Citizens can ring the council office to check they are on the list. The fund pays for it. Council tax stays as it is, the leisure centre and library keep their hours, and no money is borrowed. Gap: \u00a3210,000 of the \u00a3300,000 is not covered. We would know it worked if all 1,100 are paid, and we would report the gap.",
+   "answer": "The council pays out the whole £90,000 winter fund in equal shares to all 1,100 households, about £82 each. Council staff do it from the town's list, so no one fills in a form. Payment lands on the household's energy account in the first week of December, before the January bills arrive. Citizens can ring the council office to check they are on the list. The fund pays for it. Council tax stays as it is, the leisure centre and library keep their hours, and no money is borrowed. Gap: £210,000 of the £300,000 is not covered. We would know it worked if all 1,100 are paid, and we would report the gap.",
    "engine": "claude",
    "model": "claude-sonnet-5-5"
   },
@@ -255,15 +255,15 @@
    "id": "B",
    "angle": "Target the poorest 300 homes, fund the rest by savings",
    "title": "Help the poorest 300 homes first, save for the rest",
-   "answer": "The council spends the \u00a390,000 winter fund on the 300 poorest homes, \u00a3300 each, and pays nothing to the other 800. It then looks for \u00a3210,000 of savings in other budgets, but cannot yet name them or say how much they will give. The shortfall is therefore up to \u00a3210,000, and 800 households may get no help. Council staff run it; the citizens pay through those savings. No date, phone number or way to apply is set yet. It worked if the 300 homes are paid before January bills arrive, and the council reports each month how much has been saved and how many of the 800 are still waiting.",
+   "answer": "The council spends the £90,000 winter fund on the 300 poorest homes, £300 each, and pays nothing to the other 800. It then looks for £210,000 of savings in other budgets, but cannot yet name them or say how much they will give. The shortfall is therefore up to £210,000, and 800 households may get no help. Council staff run it; the citizens pay through those savings. No date, phone number or way to apply is set yet. It worked if the 300 homes are paid before January bills arrive, and the council reports each month how much has been saved and how many of the 800 are still waiting.",
    "engine": "claude",
    "model": "claude-sonnet-5-5"
   },
   {
    "id": "C",
    "angle": "Borrow and ask the energy firms for a bill freeze",
-   "title": "Borrow \u00a3210,000 and ask the energy firms to freeze bills",
-   "answer": "The council spends its \u00a390,000 winter fund and borrows \u00a3210,000, making \u00a3300,000, about \u00a3272 for each of the 1,100 households. The council leader also asks the energy firms to freeze Nesterby bills. They may refuse, so the plan does not rely on them. The council clerk pays out from 1 December by phone or at the town office, with no weeks of forms. The loan can only be repaid from next year's winter fund and the gritting budget, about \u00a370,000 a year for three years, so both shrink. Council tax, the library and the leisure centre are left alone. We will know it worked if all 1,100 households are paid before January.",
+   "title": "Borrow £210,000 and ask the energy firms to freeze bills",
+   "answer": "The council spends its £90,000 winter fund and borrows £210,000, making £300,000, about £272 for each of the 1,100 households. The council leader also asks the energy firms to freeze Nesterby bills. They may refuse, so the plan does not rely on them. The council clerk pays out from 1 December by phone or at the town office, with no weeks of forms. The loan can only be repaid from next year's winter fund and the gritting budget, about £70,000 a year for three years, so both shrink. Council tax, the library and the leisure centre are left alone. We will know it worked if all 1,100 households are paid before January.",
    "engine": "claude",
    "model": "claude-sonnet-5-5"
   }
@@ -274,7 +274,7 @@
     "answer": "A",
     "test": "t1",
     "result": "pass",
-    "note": "Puts the full \u00a390,000 fund in and says plainly that \u00a3210,000 of the \u00a3300,000 is not covered."
+    "note": "Puts the full £90,000 fund in and says plainly that £210,000 of the £300,000 is not covered."
    },
    {
     "answer": "A",
@@ -298,7 +298,7 @@
     "answer": "A",
     "test": "t5",
     "result": "fail",
-    "note": "About \u00a382 per household, well under the \u00a3200 floor."
+    "note": "About £82 per household, well under the £200 floor."
    },
    {
     "answer": "A",
@@ -310,7 +310,7 @@
     "answer": "B",
     "test": "t1",
     "result": "unclear",
-    "note": "Gives \u00a390,000 from the fund but the \u00a3210,000 of savings has no named source or figure, and the shortfall is only 'up to \u00a3210,000', not exact."
+    "note": "Gives £90,000 from the fund but the £210,000 of savings has no named source or figure, and the shortfall is only 'up to £210,000', not exact."
    },
    {
     "answer": "B",
@@ -334,7 +334,7 @@
     "answer": "B",
     "test": "t5",
     "result": "fail",
-    "note": "800 households get nothing, so far below \u00a3200."
+    "note": "800 households get nothing, so far below £200."
    },
    {
     "answer": "B",
@@ -346,7 +346,7 @@
     "answer": "C",
     "test": "t1",
     "result": "pass",
-    "note": "Shows \u00a390,000 fund plus \u00a3210,000 loan equals \u00a3300,000, with no shortfall."
+    "note": "Shows £90,000 fund plus £210,000 loan equals £300,000, with no shortfall."
    },
    {
     "answer": "C",
@@ -370,7 +370,7 @@
     "answer": "C",
     "test": "t5",
     "result": "pass",
-    "note": "About \u00a3272 to each of the 1,100 households, above \u00a3200."
+    "note": "About £272 to each of the 1,100 households, above £200."
    },
    {
     "answer": "C",
@@ -379,7 +379,7 @@
     "note": "The loan is repaid only from next year's winter fund and the gritting budget, which is exactly the borrowing the limit forbids."
    }
   ],
-  "verdict": "No answer passes every test. A fails the \u00a3200 floor, B leaves 800 homes with nothing and has no date or way to apply, and C meets the \u00a3200 floor and full funding but breaks the borrowing limit.",
+  "verdict": "No answer passes every test. A fails the £200 floor, B leaves 800 homes with nothing and has no date or way to apply, and C meets the £200 floor and full funding but breaks the borrowing limit.",
   "rounds": 2
  },
  "ending": "rejected",
@@ -405,7 +405,7 @@
   "options": [
    "Let a loan be repaid from next year's funds",
    "Allow a small council tax rise",
-   "Help fewer homes, but at least \u00a3200 each",
+   "Help fewer homes, but at least £200 each",
    "Rethink nothing: keep every red line and seek outside help"
   ],
   "votes": [
@@ -414,7 +414,7 @@
    4,
    3
   ],
-  "ruling": "The jury split: 4 would allow a small council tax rise, 4 would help fewer homes with at least \u00a3200 each, 3 would keep every red line, 1 would allow a loan.",
+  "ruling": "The jury split: 4 would allow a small council tax rise, 4 would help fewer homes with at least £200 each, 3 would keep every red line, 1 would allow a loan.",
   "reasons": [
    {
     "juror": "c0668",
@@ -422,7 +422,7 @@
    },
    {
     "juror": "c0822",
-    "text": "\u00a382 doesn't pay for anything. Better \u00a3200 to the people who really need it than pennies for everyone."
+    "text": "£82 doesn't pay for anything. Better £200 to the people who really need it than pennies for everyone."
    },
    {
     "juror": "c0905",
@@ -437,16 +437,20 @@
  "minister": {
   "minister": "energy",
   "decision": "sent-back",
-  "text": "Sent back. A leaves homes with \u00a382, B leaves 800 with nothing, and C repays its loan from next year's winter fund and the gritting budget. Each crosses a red line.",
-  "statement": "Mira Thorne, Minister for Energy: Three answers, three red lines crossed. \u00a382 a home is under the \u00a3200 floor. \u00a30 for 800 homes is worse. A \u00a3210,000 loan repaid from next year's winter fund and the gritting lorries just moves the cost to next winter. The jury split 4, 4 and 3 on which line to rethink, so there's no clear order to bend one. Nothing is signed. Nesterby's citizens decide which line gives, then we try again."
+  "text": "Sent back. A leaves homes with £82, B leaves 800 with nothing, and C repays its loan from next year's winter fund and the gritting budget. Each crosses a red line.",
+  "statement": "Three answers, three red lines crossed. £82 a home is under the £200 floor. £0 for 800 homes is worse. A £210,000 loan repaid from next year's winter fund and the gritting lorries just moves the cost to next winter. The jury split 4, 4 and 3 on which line to rethink, so there's no clear order to bend one. Nothing is signed. Nesterby's citizens decide which line gives, then we try again."
  },
  "predictions": [
   {
    "id": "p1",
-   "claim": "Ofgem will set the energy price cap for a typical dual-fuel household from January 2027 above \u00a32,100 a year.",
+   "claim": "Ofgem will set the energy price cap for a typical dual-fuel household from January 2027 above £2,100 a year.",
    "due": "2026-11-25",
-   "rule": "Ofgem's price cap announcement on or before 25 Nov 2026 settles it. Last published cap: \u00a31,723 a year; Cornwall Insight forecast \u00a32,166, Uswitch average \u00a32,184.",
-   "result": "pending"
+   "rule": "Ofgem's price cap announcement on or before 25 Nov 2026 settles it. Last published cap: £1,723 a year; Cornwall Insight forecast £2,166, Uswitch average £2,184.",
+   "result": "pending",
+   "sources": [
+    "s1",
+    "s2"
+   ]
   }
  ]
 }

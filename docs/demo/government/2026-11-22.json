@@ -1,9 +1,41 @@
-{"schema":"fp-demo-gov/1","date":"2026-11-22","day":"2026-11-22-pelderby-bus-cap",
-"debate":[
-{"minister":"transport","text":"Pelderby had £380,000 from a national fund and one bus firm. Answer A passed every test. £2 fares, routes 41, 42 and 43 kept every month of 2027, an 8.20pm bus after the hospital shift, and a first report on 31 March. If the firm misses a route, the next payment stops. I signed it. Last bus home, sorted."},
-{"minister":"health","text":"Joe, the 8.20 is the line that matters to me. Nurses and porters finish at eight and walk to a stop in the dark. I have been that nurse. A bus that waits for the shift is a job kept. Do it at every hospital, not only this one."},
-{"minister":"energy","text":"And the household sum. Fare from the furthest village was £4.80, now £2. A family making two return trips a week saves about £290 a year. That is more than the £160 Elderbrook's trial paid. Cheap fares are a winter fund that runs all year."},
-{"minister":"crime","text":"The late bus makes people feel safe. Whether it makes them safe depends on the stop. A lit shelter, a driver who waits. Joe, count how many women say they walk home alone, not only how many ride."},
-{"minister":"transport","text":"Fair, Hollie. The audit officer counts riders and fares. I will ask for the stop, the light and the wait. And Mira, Fenmoor would have loved this deal. It had no national fund, and its villages lost out. That gap is for next time."}],
-"changes":[{"op":"adopt","line":"transport-1","minister":"transport","text":"A £2 single fare on covered routes, the weakest village routes kept every month of the year, a bus after the hospital shift, and a public report on riders and fares.","why":"Pelderby's answer A passed all six tests, both red lines included."}],
-"made_by":{"workers":["demo-cabinet"]}}
+{
+"schema": "fp-demo-gov/1",
+"date": "2026-11-22",
+"day": "2026-11-22-pelderby-bus-cap",
+"debate": [
+{
+"minister": "transport",
+"text": "Pelderby had £380,000 from a national fund and one bus firm. Answer A passed every test. £2 fares, routes 41, 42 and 43 kept every month of 2027, an 8.20pm bus after the hospital shift, and a first report on 31 March. If the firm misses a route, the next payment stops. I signed it. Last bus home, sorted."
+},
+{
+"minister": "health",
+"text": "Joe, the 8.20 is the line that matters to me. Nurses and porters finish at eight and walk to a stop in the dark. I have been that nurse. A bus that waits for the shift is a job kept. Do it at every hospital, not only this one."
+},
+{
+"minister": "energy",
+"text": "And the household sum. Fare from the furthest village was £4.80, now £2. A family making one return trip a week saves about £290 a year. That is more than the £160 Elderbrook's trial paid. Cheap fares are a winter fund that runs all year."
+},
+{
+"minister": "crime",
+"text": "The late bus makes people feel safe. Whether it makes them safe depends on the stop. A lit shelter, a driver who waits. Joe, count how many women say they walk home alone, not only how many ride."
+},
+{
+"minister": "transport",
+"text": "Fair, Hollie. The audit officer counts riders and fares. I will ask for the stop, the light and the wait. And Mira, Fenmoor would have loved this deal. It had no national fund, and its villages lost out. That gap is for next time."
+}
+],
+"changes": [
+{
+"op": "adopt",
+"line": "transport-1",
+"minister": "transport",
+"text": "A £2 single fare on covered routes, the weakest village routes kept every month of the year, a bus after the hospital shift, and a public report on riders and fares.",
+"why": "Pelderby's answer A passed all six tests, both red lines included."
+}
+],
+"made_by": {
+"workers": [
+"demo-cabinet"
+]
+}
+}

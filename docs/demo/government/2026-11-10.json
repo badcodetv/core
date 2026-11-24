@@ -1,8 +1,37 @@
-{"schema":"fp-demo-gov/1","date":"2026-11-10","day":"2026-11-10-aldmere-veterans-christmas",
-"debate":[
-{"minister":"housing","text":"Aldmere had 14 veterans on the street and £420,000. Answer A was the only one that passed every ask: ten hostel beds by 1 December, four repaired flats by 15 December, a named support worker for a year. I adopted it as written. Keys by Christmas, and someone still knocking in June."},
-{"minister":"energy","text":"Eighteen flats repaired is eighteen flats someone has to heat. I want the repair bill to say what a household pays per year to keep one warm, or the first cold snap undoes the good work. Cheap to insulate now, dear to fix later."},
-{"minister":"health","text":"A named worker visiting weekly is the right call. Plenty of these men sleep rough because of what they carry in their heads. Bea, make sure that worker can get a man seen by a doctor, not just handed a leaflet."},
-{"minister":"housing","text":"Fair on both. The jury also split the other 14 flats half to families, half to rough sleepers, and I will hold to that. Nobody on the list moves down for a veteran."}],
-"changes":[{"op":"adopt","line":"housing-1","minister":"housing","text":"Veterans sleeping rough get a bed by Christmas, a named support worker for 12 months, and a published sum for every part of the money.","why":"Aldmere's answer A passed every test, with dates, costs and January homes."}],
-"made_by":{"workers":["demo-cabinet"]}}
+{
+"schema": "fp-demo-gov/1",
+"date": "2026-11-10",
+"day": "2026-11-10-aldmere-veterans-christmas",
+"debate": [
+{
+"minister": "housing",
+"text": "Aldmere had 14 veterans on the street and £420,000. Answer A was the only one that passed every ask: ten hostel beds by 1 December, four repaired flats by 15 December, a named support worker for a year. I adopted it as written. Keys by Christmas, and someone still knocking in June."
+},
+{
+"minister": "energy",
+"text": "Eighteen flats repaired is eighteen flats someone has to heat. I want the repair bill to say what a household pays per year to keep one warm, or the first cold snap undoes the good work. Cheap to insulate now, dear to fix later."
+},
+{
+"minister": "health",
+"text": "A named worker visiting weekly is the right call. Plenty of veterans sleep rough because of what they carried home from service. Bea, make sure that worker can get a veteran seen by a doctor, not just handed a leaflet."
+},
+{
+"minister": "housing",
+"text": "Fair on both. The jury also split the other 14 flats half to families, half to rough sleepers, and I will hold to that. Nobody on the list moves down for a veteran."
+}
+],
+"changes": [
+{
+"op": "adopt",
+"line": "housing-1",
+"minister": "housing",
+"text": "Veterans sleeping rough get a bed by Christmas, a named support worker for 12 months, and a published sum for every part of the money.",
+"why": "Aldmere's answer A passed every test, with dates, costs and January homes."
+}
+],
+"made_by": {
+"workers": [
+"demo-cabinet"
+]
+}
+}

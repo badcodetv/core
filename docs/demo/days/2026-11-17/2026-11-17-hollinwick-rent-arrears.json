@@ -65,7 +65,7 @@
    "demo-jury",
    "demo-minister"
   ],
-  "note": "Round 2: the citizens' tests were too easy (answer A passed all five), so t1 and t2 were made more exact. No mark was edited."
+  "note": "First marks: answer A passed every test, so the citizens' tests were made stricter (t1 now asks for the number of advisers and their yearly cost, t2 for a number of days). Marked again from scratch. No mark was edited."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -401,8 +401,8 @@
   "minister": "housing",
   "decision": "trial",
   "answer": "A",
-  "text": "A six-month trial of answer A: a named adviser rings every tenant in arrears, with no eviction under £1,500 or while a plan is kept. It tests 3 of 5 tests passed, 2 unclear, 0 failed.",
-  "statement": "Bea Hartwell: I won't sign all of this yet. Answer A kept both red lines and gave a date, 31 January, for a named person to ring every tenant. But it didn't say how many advisers it needs, what they cost, or how many days a late benefit is left alone. The citizens' jury said court action after six months, for debts over £1,500 only, and the trial will use that. We'll count the keys kept, not the letters sent.",
+  "text": "A six-month trial of answer A: a named adviser rings every tenant in arrears, with no eviction under £1,500 or while a plan is kept. It passed 3 of 5 tests, with 2 unclear and none failed.",
+  "statement": "I won't sign all of this yet. Answer A kept both red lines and gave a date, 31 January, for a named person to ring every tenant. But it didn't say how many advisers it needs, what they cost, or how many days a late benefit is left alone. The citizens' jury said court action after six months, for debts over £1,500 only, and the trial will use that. We'll count the keys kept, not the letters sent.",
   "stop": "2027-05-31"
  },
  "predictions": [
@@ -411,7 +411,10 @@
    "claim": "The share of council homes with unpaid rent in Access PaySuite's 2027 rental arrears index will be above 43%.",
    "due": "2027-11-24",
    "rule": "Access PaySuite's 2027 Rental Arrears Index, as reported by Property Industry Eye or Access PaySuite. Last published: 43% in 2026 (37% in 2025).",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s1"
+   ]
   }
  ]
 }

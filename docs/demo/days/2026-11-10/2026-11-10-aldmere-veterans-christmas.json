@@ -19,7 +19,7 @@
   "story": "Aldmere is a made-up market town of 60,000 people. This week the council got the Prime Minister's letter asking every council for a plan to house veterans sleeping rough before Christmas. Aldmere counted 14 veterans on the street, out of 52 people sleeping rough. It has £420,000 from the fund, a hostel with 10 spare beds, and 18 empty council flats that need repairs. A local veterans' charity can offer support workers. The council has six weeks, and nobody wants a bed for Christmas that is gone by February.",
   "in_the_news": {
    "headline": "Prime minister tells English councils to develop plan to ensure no veterans sleep rough over Christmas",
-   "why": "The real letter asks councils for veteran housing plans by Christmas, paid from the enlarged rough sleeping fund; Aldmere is a made-up council answering it.",
+   "why": "The real letter asks English councils for plans so no veteran sleeps rough over Christmas. Aldmere is a made-up council answering it.",
    "memory_id": "995c5e57-c923-453a-b2c8-950b9a14c18d",
    "sources": [
     "s1"
@@ -47,6 +47,19 @@
    "publisher": "Inside Housing",
    "date": "2026-11-09",
    "url": "https://www.insidehousing.co.uk/news/prime-minister-tells-english-councils-to-develop-plan-to-ensure-no-veterans-sleep-rough-over-christmas-99576"
+  },
+  {
+   "id": "s2",
+   "title": "Rough sleeping snapshot in England: autumn 2025",
+   "publisher": "Ministry of Housing, Communities and Local Government",
+   "date": "2026-02-26",
+   "url": "https://www.gov.uk/government/statistics/rough-sleeping-snapshot-in-england-autumn-2025"
+  },
+  {
+   "id": "s3",
+   "title": "CHAIN quarterly report, Greater London, July to September 2026",
+   "publisher": "Greater London Authority (CHAIN)",
+   "url": "https://data.london.gov.uk/download/2n88x/30x/Greater%20London%202026-27%20Q2.pdf"
   }
  ],
  "made_by": {
@@ -54,7 +67,6 @@
    "demo-clerk",
    "demo-citizens",
    "demo-bench",
-   "demo-rival",
    "demo-gate",
    "demo-jury",
    "demo-minister"
@@ -233,7 +245,7 @@
    "id": "A",
    "angle": "Hostel beds now, repaired flats next, charity support",
    "title": "Hostel beds now, repaired flats next, charity support for a year",
-   "answer": "All 14 veterans get a bed. Ten go into the spare hostel beds by 1 December. Four go into repaired flats by 15 December. The council repairs all 18 flats, but veterans take only four. The other 14 go to families and the other 38 rough sleepers in normal queue order, so nobody moves down. The veterans' charity gives each man a named support worker, visiting weekly for 12 months. Cost, all from the £420,000: repairs £144,000, support £150,000, hostel £60,000, deposits and rent help £66,000. No council service is cut. In January the four stay put; the ten stay in the hostel, then move on with deposit help. We check monthly how many are still housed.",
+   "answer": "All 14 veterans get a bed. Ten go into the spare hostel beds by 1 December. Four go into repaired flats by 15 December. The council repairs all 18 flats, but veterans take only four. The other 14 go to families and the other 38 rough sleepers in normal queue order, so nobody moves down. The veterans' charity gives each veteran a named support worker, visiting weekly for 12 months. Cost, all from the £420,000: repairs £144,000, support £150,000, hostel £60,000, deposits and rent help £66,000. No council service is cut. In January the four stay put; the ten stay in the hostel, then move on with deposit help. We check monthly how many are still housed.",
    "engine": "claude",
    "model": "claude-sonnet-5-5"
   },
@@ -272,7 +284,7 @@
     "answer": "A",
     "test": "t3",
     "result": "pass",
-    "note": "The veterans' charity gives each man a named support worker, visiting weekly for 12 months, which exceeds six months."
+    "note": "The veterans' charity gives each veteran a named support worker, visiting weekly for 12 months, which exceeds six months."
    },
    {
     "answer": "A",
@@ -423,7 +435,7 @@
   "decision": "adopted",
   "answer": "A",
   "text": "Adopted as written: ten veterans in hostel beds by 1 December, four in repaired flats by 15 December, a named support worker for 12 months, and a sum for every part of the £420,000.",
-  "statement": "Aldmere’s citizens set six asks, and answer A is the only one that meets every one. It gives a date for every bed, adds up to £420,000 to the pound, names who knocks on the door each week, and says where each man sleeps in January. The jury ruled the other 14 flats go half to the waiting list and half to rough sleepers, by 6 votes to 5 for families first. We adopt it. Keys by Christmas, and someone to check the lock still turns in June."
+  "statement": "Aldmere’s citizens set six asks, and answer A is the only one that meets every one. It gives a date for every bed, adds up to £420,000 to the pound, names who knocks on the door each week, and says where each veteran sleeps in January. The jury ruled the other 14 flats go half to the waiting list and half to rough sleepers, by 6 votes to 5 for families first. We adopt it. Keys by Christmas, and someone to check the lock still turns in June."
  },
  "predictions": [
   {
@@ -431,14 +443,20 @@
    "claim": "England’s autumn 2026 rough sleeping snapshot will count fewer people sleeping rough on a single night than the 4,793 counted in autumn 2025.",
    "due": "2027-03-31",
    "rule": "Ministry of Housing, Communities and Local Government, Rough sleeping snapshot in England: autumn 2026, published by 31 March 2027. Last published: 4,793 (autumn 2025). If not published by the due date, void.",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   },
   {
    "id": "p2",
    "claim": "London’s CHAIN count for October to December 2026 will be higher than the 4,678 people counted for July to September 2026.",
    "due": "2027-03-31",
    "rule": "Greater London Authority CHAIN quarterly report for October to December 2026, published by 31 March 2027. Last published: 4,678 (July to September 2026).",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s3"
+   ]
   }
  ]
 }

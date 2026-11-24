@@ -19,7 +19,7 @@
   "story": "Pelderby (made up) is a market town of 19,000 with eleven villages around it, and no railway. One bus company runs every route. It says it will join the £2 single-fare cap on 1 January only if the lost fares are covered, and that the three village routes with the fewest riders cannot survive another loss. The council has £380,000 from a national bus fund to spend by next December. Today the same journey from the furthest village costs £4.80. Last buses leave town at 6.15pm, and the hospital shift ends at 8pm.",
   "in_the_news": {
    "headline": "Single bus fares to be capped at £2 in England outside London from January 2027",
-   "why": "The government's £2 cap starts in six weeks and only applies on services whose operators choose to take part, which is the choice Pelderby's council faces.",
+   "why": "The government's £2 cap only applies on services whose operators choose to take part, which is the choice Pelderby's council faces. Not in that day's news: the £2 cap was announced on 22 July 2026 and starts on 1 January 2027.",
    "memory_id": "c1ac67d1-589b-43eb-bed9-877a41a886ea",
    "sources": [
     "s1"
@@ -53,19 +53,24 @@
    "publisher": "GOV.UK (Department for Transport)",
    "date": "2026-07-22",
    "url": "https://www.gov.uk/government/speeches/2-bus-fares-from-january-2027"
+  },
+  {
+   "id": "s2",
+   "title": "Quarterly bus fares statistics: January to March 2026",
+   "publisher": "Department for Transport",
+   "date": "2026-06-18",
+   "url": "https://www.gov.uk/government/statistics/quarterly-bus-fares-statistics-january-to-march-2026--2"
   }
  ],
  "made_by": {
   "workers": [
    "demo-clerk",
    "demo-citizens",
-   "demo-rival",
    "demo-bench",
    "demo-gate",
    "demo-jury",
    "demo-minister"
-  ],
-  "note": "No transport item in the 22 Nov digest; used the nearest big transport story, the cap starting 1 Jan, from the DfT statement of 22 Jul."
+  ]
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -240,7 +245,7 @@
    "id": "A",
    "angle": "Signed deal paying lost fares, with route and bus promises",
    "title": "Signed deal: £2 fares, three routes kept, a late bus after 8pm",
-   "answer": "From 1 January 2027 the council signs a deal with the bus company. No fare above £2 on any covered route, and no route cut or shortened in 2027. The council pays £300,000 for lost fares, £75,000 each quarter, only after the fare count is checked. Another £50,000 keeps routes 41 (Oakhurst), 42 (Thorley) and 43 (Wick End) running every month of 2027. £20,000 pays for a new bus leaving town at 8.20pm, after the hospital shift. £10,000 pays the council's Bus Audit Officer, who counts riders and checks fares. First public report: 31 March 2027. Nothing is spent after December 2027. If a promise breaks, the next payment stops.",
+   "answer": "From 1 January 2027 the council signs a deal with the bus company. No fare above £2 on any covered route, and no route cut or shortened in 2027. The council pays £300,000 for lost fares, £75,000 each quarter, only after the fare count is checked. Another £50,000 keeps routes 41 (Pelder Green), 42 (Mill Cross) and 43 (Heath End), all three village names made up running every month of 2027. £20,000 pays for a new bus leaving town at 8.20pm, after the hospital shift. £10,000 pays the council's Bus Audit Officer, who counts riders and checks fares. First public report: 31 March 2027. Nothing is spent after December 2027. If a promise breaks, the next payment stops.",
    "engine": "claude",
    "model": "claude-sonnet-5-5"
   },
@@ -273,7 +278,7 @@
     "answer": "A",
     "test": "t2",
     "result": "pass",
-    "note": "Names routes 41 Oakhurst, 42 Thorley and 43 Wick End and promises they run every month of 2027; it never says these are the weakest three."
+    "note": "Names routes 41 Pelder Green, 42 Mill Cross and 43 Heath End and promises they run every month of 2027; it never says these are the weakest three."
    },
    {
     "answer": "A",
@@ -433,15 +438,21 @@
    "id": "p1",
    "claim": "The DfT's local bus fares statistics for October to December 2026 will show non-metropolitan England's bus fares index up by 3% or more on a year earlier.",
    "due": "2027-03-31",
-   "rule": "DfT, Local bus fares statistics for Great Britain, Oct to Dec 2026 (provisional March 2027). Last published: non-metropolitan England +5%, June 2025 to June 2026.",
-   "result": "pending"
+   "rule": "DfT quarterly bus fares statistics for October to December 2026, published by 31 March 2027. Last published: non-metropolitan England up 5%, March 2025 to March 2026 (18 Jun 2026). If not published by the due date, void.",
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   },
   {
    "id": "p2",
    "claim": "The DfT's statistics for January to March 2027 will show non-metropolitan England's bus fares index up by less than 5% on a year earlier.",
    "due": "2027-09-30",
-   "rule": "DfT, Local bus fares statistics, Jan to Mar 2027. Last published: non-metropolitan England +5%, June 2025 to June 2026 (22 Sep 2026).",
-   "result": "pending"
+   "rule": "DfT quarterly bus fares statistics for January to March 2027. Last published: non-metropolitan England up 5%, March 2025 to March 2026 (18 Jun 2026).",
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   }
  ]
 }

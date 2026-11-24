@@ -19,7 +19,7 @@
   "story": "Corvenhall College has been asked to bring back 300 local 16 to 18 year olds who are not learning or working. The money promised covers only 120 places, and the extra 180 cost £1.1 million a year. The college has £4 million in savings, which is two months of running costs, and it is not allowed to borrow. Its evening courses for adults pay for themselves only just. Any plan has to find the £1.1 million from somewhere, and each place it can look hurts someone. The funder has said it will pay for no more than 120 places. Only a qualified teacher may lead English and maths lessons.",
   "in_the_news": {
    "headline": "Colleges put at heart of drive to get young people learning",
-   "why": "The government has asked colleges to bring back almost 150,000 young people who are not learning or working, and Corvenhall is one college asked to do it.",
+   "why": "Almost 150,000 16 to 18 year olds are not learning or working, and the government wants colleges to bring them back. Corvenhall is a made-up college asked to do it.",
    "memory_id": "d0788206-0523-4317-ba70-19c69edbd7b6",
    "sources": [
     "s1"
@@ -41,6 +41,13 @@
    "publisher": "GOV.UK (Department for Education)",
    "date": "2026-11-11",
    "url": "https://www.gov.uk/government/news/colleges-put-at-heart-of-drive-to-get-young-people-learning"
+  },
+  {
+   "id": "s2",
+   "title": "Young people not in education, employment or training (NEET), UK: August 2026",
+   "publisher": "Office for National Statistics",
+   "date": "2026-08-27",
+   "url": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/bulletins/youngpeoplenotineducationemploymentortrainingneet/august2026"
   }
  ],
  "made_by": {
@@ -53,7 +60,7 @@
    "demo-jury",
    "demo-minister"
   ],
-  "note": "Round 2: case now says the funder pays for 120 places only and only teachers lead English and maths; answer C now cuts the extra 180 to 2 hours."
+  "note": "First marks did not reach the planned ending, so the case and one answer were changed. The case now says the funder pays for 120 places only and only teachers lead English and maths. Answer C now cuts the extra 180 places to 2 hours. Marked again from scratch."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -427,7 +434,10 @@
    "claim": "The ONS figure for UK 16 to 24 year olds not in education, employment or training, for July to September 2026, will be above 970,000.",
    "due": "2026-11-26",
    "rule": "ONS 'Young people not in education, employment or training (NEET), UK: November 2026', headline figure. Last published: 981,000 (13.0%), April to June 2026, released 27 Aug 2026.",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   }
  ]
 }

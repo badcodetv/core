@@ -19,7 +19,7 @@
   "story": "Fenmoor is a made-up rural district with 14 villages and one market town. Its two country bus routes, the 14 and the 15, lose money every week. From 1 January the firm must charge no more than £2 a single fare to stay in the national cap scheme, which pays back only part of the lost fares. That leaves a gap of £310,000 a year. The council's bus grant is fixed and tied to each route, the council has no spare reserves, and the firm's buses are leased to 2028, so dropping the 15 saves it nothing. The firm's board has refused to run at a loss. The 14 is the only bus for four villages.",
   "in_the_news": {
    "headline": "Councils cautiously welcome £2 bus fare cap",
-   "why": "The government's £2 single fare cap for England outside London starts in January 2027, while county councils warn rural bus services keep disappearing.",
+   "why": "Councils welcomed the government's £2 single fare cap with caution. Fenmoor is a made-up district facing its cost. Not in that day's news: the £2 cap was announced on 22 July 2026 and starts on 1 January 2027.",
    "memory_id": "9ea3b2cd-54a6-4660-a2d5-0e501369c0ad",
    "sources": [
     "s1",
@@ -61,6 +61,13 @@
    "publisher": "LocalGov",
    "date": "2026-07-22",
    "url": "https://www.localgov.co.uk/Councils-cautiously-welcome-2-bus-fare-cap-/64717"
+  },
+  {
+   "id": "s3",
+   "title": "Quarterly bus fares statistics: January to March 2026",
+   "publisher": "Department for Transport",
+   "date": "2026-06-18",
+   "url": "https://www.gov.uk/government/statistics/quarterly-bus-fares-statistics-january-to-march-2026--2"
   }
  ],
  "made_by": {
@@ -68,13 +75,12 @@
    "demo-clerk",
    "demo-citizens",
    "demo-bench",
-   "demo-rival",
    "demo-redo",
    "demo-gate",
    "demo-jury",
    "demo-minister"
   ],
-  "note": "Backfill. No transport item in the 15 Nov digest; closest real UK transport story used (22 Jul 2026 statement the bus cap rests on). Round 2: the bind was too loose (grant movable, firm's savings); tightened the case and brought each answer into line."
+  "note": "First marks did not reach the planned ending: the case left the council room to move its grant, and the firm room to use its savings. So the case was tightened (the grant is tied to each route, no reserves, the firm's buses are leased, its board will not run at a loss) and each answer was rewritten to fit. Marked again from scratch."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -410,7 +416,7 @@
   "minister": "transport",
   "decision": "sent-back",
   "text": "Nothing is signed. Every answer crossed a red line: a tax rise, a £3 fare, or villages left with no weekday bus. The day goes back to the council and the firm.",
-  "statement": "Joe Kettering here. Every plan on my desk broke a promise the town's citizens set: the tax one, the £2 fare, or a bus for every village. The jury says to rethink the tax promise, 8 to 4, but the fare test and the missed-bus test didn't pass either. So I'm signing nothing. Go back, find the £310,000 without stranding a village, and bring me a date and a phone number."
+  "statement": "Every plan on my desk broke a promise the town's citizens set: the tax one, the £2 fare, or a bus for every village. The jury says to rethink the tax promise, 8 to 4, but the fare test and the missed-bus test didn't pass either. So I'm signing nothing. Go back, find the £310,000 without stranding a village, and bring me a date and a phone number."
  },
  "predictions": [
   {
@@ -418,7 +424,10 @@
    "claim": "DfT's local bus fares index for England outside London will show a rise of less than 3% between March 2026 and March 2027.",
    "due": "2027-09-30",
    "rule": "DfT quarterly bus fares statistics for January to March 2027, England outside London. Last published: up 6% from March 2025 to March 2026 (18 Jun 2026).",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s3"
+   ]
   }
  ]
 }

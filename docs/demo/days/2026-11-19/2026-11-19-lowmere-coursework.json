@@ -19,7 +19,7 @@
   "story": "Lowmere School (made up) has 900 pupils. Coursework counts for a fifth of several GCSE and A-level grades, and most of it is written at home. Teachers say they can no longer tell which essays pupils wrote themselves. Last summer, two pupils were caught and lost a whole subject. The head has £18,000 a year in spare budget and two free teacher periods a week per department. Parents are split between trusting pupils and wanting every essay checked.",
   "in_the_news": {
    "headline": "Ofqual: Using AI for coursework risks 'life-altering' penalties",
-   "why": "Ofqual has warned that undeclared AI use in coursework can cost a pupil a whole GCSE or A level, and wants coursework better supervised; Lowmere has to decide what that means for its pupils.",
+   "why": "Ofqual warned that using AI for coursework can bring 'life-altering' penalties, and teachers it surveyed want more supervision. Lowmere is a made-up school facing that choice.",
    "memory_id": "6af8ff38-14a9-4011-ab93-277164abcafa",
    "sources": [
     "s1"
@@ -47,6 +47,13 @@
    "publisher": "Tes magazine",
    "date": "2026-11-18",
    "url": "https://www.tes.com/magazine/news/general/ofqual-using-ai-coursework-risks-life-altering-penalties"
+  },
+  {
+   "id": "s2",
+   "title": "Malpractice in GCSE, AS and A level: summer 2025 exam series",
+   "publisher": "Ofqual",
+   "date": "2025-12-11",
+   "url": "https://www.gov.uk/government/statistics/malpractice-in-gcse-as-and-a-level-summer-2025-exam-series/malpractice-in-gcse-as-and-a-level-summer-2025-exam-series"
   }
  ],
  "made_by": {
@@ -431,14 +438,20 @@
    "claim": "Ofqual's summer 2026 malpractice statistics will show more than 100 proven AI-related plagiarism cases in GCSE, AS and A level in England.",
    "due": "2027-01-31",
    "rule": "Ofqual, 'Malpractice in GCSE, AS and A level: summer 2026 exam series' on gov.uk. Last published: 100 proven AI cases for summer 2025 (11 Dec 2025).",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   },
   {
    "id": "p2",
    "claim": "Ofqual will report fewer than 5,025 malpractice cases involving students for summer 2026.",
    "due": "2027-01-31",
    "rule": "Ofqual, summer 2026 malpractice statistics on gov.uk, total student malpractice cases. Last published: 5,025 for summer 2025, down from 5,155.",
-   "result": "pending"
+   "result": "pending",
+   "sources": [
+    "s2"
+   ]
   }
  ]
 }
