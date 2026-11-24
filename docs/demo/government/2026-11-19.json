@@ -1,0 +1,9 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-19","day":"2026-11-19-lowmere-coursework",
+"debate":[
+{"minister":"education","text":"Lowmere's teachers can no longer tell who wrote an essay. Answer A passed all six tests: coursework is drafted in supervised lessons from 5 January, every pupil gets a five-minute talk about their work, and no detector score is ever used. £16,500 of the £18,000. I adopted it. What would a child notice? Being asked, not accused."},
+{"minister":"crime","text":"Grace, I like that nobody is penalised on a machine's guess. A wrong accusation is a record, and a pupil keeps a record for life. Keep it that way: a second talk with a named teacher, notes on the table, before anyone writes a word on a file."},
+{"minister":"transport","text":"Here is one for you. The supervisors sit with pupils after school. That is the last bus home, again. If a girl from a village stays till five, she walks. Pay for a later bus or hold the session in the day."},
+{"minister":"education","text":"Joe, point taken. The sessions are in lessons, using the free periods, so most are in the school day. The after-school room is for pupils without a quiet place. Those are the very pupils who need the bus, so I will ask for a ride home."},
+{"minister":"work","text":"I will say what this is really for. A pupil who learns to write a page himself walks into a job able to do it. I do not care about the grade. I care about the lad who cannot fill in the form."}],
+"changes":[{"op":"adopt","line":"education-1","minister":"education","text":"Coursework is written in supervised lessons, with a short talk about each pupil's work and a second talk before any penalty. No detector score is ever used.","why":"Lowmere's answer A passed all six tests, both red lines included."}],
+"made_by":{"workers":["demo-cabinet"]}}

@@ -1,0 +1,5 @@
+{
+ "design": "The money is enough and the method is known: a signed deal that pays the company for lost fares per journey, with route promises and a fixed review. The trade-offs are mild, so one careful answer can meet every test, while a vague 'join the cap' or a pure subsidy leaves gaps on numbers, the last bus and the three weakest routes.",
+ "tests_hint": "Says how much of the £380,000 covers lost fares and how the company is paid; keeps all eleven villages and the three weakest routes for the whole of 2027; later last bus for the 8pm hospital shift; a named person or date to check riders; limit: no route cut or fare above £2 on a covered route; limit: no spending beyond £380,000 or after December.",
+ "angles": ["Signed deal paying lost fares, with route and bus promises", "Council buys extra buses and runs the weak routes itself", "Cap only on town routes first; villages later"]
+}

@@ -1,0 +1,465 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-20-mereholt-youth-jobs",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-20"
+ },
+ "plan": {
+  "area": "work",
+  "ending": "partly"
+ },
+ "case": {
+  "title": "Mereholt: one pot of money for young people out of work",
+  "short": "MEREHOLT YOUTH JOBS",
+  "question": "Should Mereholt spend its one-off jobs fund on paid placements for young people, or on help for everyone out of work?",
+  "place": "Mereholt (made up)",
+  "story": "Mereholt is a made-up town of 48,000 people. Its last big employer cut 300 jobs this year, and 1 in 8 of its 18 to 24 year olds is out of work. The council has a one-off fund of 1.2 million pounds, which must be spent by next September and cannot be topped up. Paid six-month placements for young people cost about 9,000 pounds each, so the fund covers around 130. Spread over everyone out of work, it covers a coaching and travel service for about 900 people but no wages. Workers over 50 who were laid off say they are being pushed to the back of the queue, and their redundancy pay runs out at the end of February, so they cannot wait for help.",
+  "in_the_news": {
+   "headline": "UK unemployment falls to 4.6% as regular pay growth slows and vacancies drop",
+   "why": "The national figures show a mixed picture, with youth unemployment far above the average, which is the squeeze Mereholt is in.",
+   "memory_id": "ebdff0d8-3ac8-47f6-8d04-2bc48f8fbec0",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "The ONS put UK unemployment at 4.6% for July to September 2026.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "Reports of the same figures put unemployment for 18 to 24 year olds at 13%.",
+    "sources": [
+     "s2"
+    ]
+   },
+   {
+    "text": "Vacancies fell by 22,000 to 690,000 in the three months to October 2026, and payrolls fell by a first-estimate 34,000 in October.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Labour market overview, UK: November 2026",
+   "publisher": "Office for National Statistics",
+   "date": "2026-11-17",
+   "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/november2026"
+  },
+  {
+   "id": "s2",
+   "title": "Britain's unemployment rate at 4.6 pct in Q3",
+   "publisher": "Xinhua, via The Star (Malaysia)",
+   "date": "2026-11-18",
+   "url": "https://www.thestar.com.my/news/world/2026/11/18/britain039s-unemployment-rate-at-46-pct-in-q3"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-rival",
+   "demo-gate",
+   "demo-redo",
+   "demo-jury",
+   "demo-minister"
+  ],
+  "note": "Round 2: tests t2 and t3 made harder, and the case now says the over-50s' redundancy pay ends in February; answers unchanged. Sources: the ONS bulletin replaced a stock-data site (same figures, checked)."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-20-mereholt-youth-jobs/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0139",
+   "c0176",
+   "c0403",
+   "c0137",
+   "c0988",
+   "c0089",
+   "c0310",
+   "c0315",
+   "c0339",
+   "c0036",
+   "c0289",
+   "c0231",
+   "c0562",
+   "c0348",
+   "c0078",
+   "c0843",
+   "c0824",
+   "c0491",
+   "c0798",
+   "c0159",
+   "c0635",
+   "c0548",
+   "c0946",
+   "c0528",
+   "c0449",
+   "c0620",
+   "c0430",
+   "c0929",
+   "c0645",
+   "c0736",
+   "c0732",
+   "c0641",
+   "c0978",
+   "c0471",
+   "c0802",
+   "c0958",
+   "c0470",
+   "c0564",
+   "c0718",
+   "c0677",
+   "c0521",
+   "c0899",
+   "c0489",
+   "c0544",
+   "c0892",
+   "c0093",
+   "c0761",
+   "c0577",
+   "c0727",
+   "c0719",
+   "c0240",
+   "c0369",
+   "c0313",
+   "c0145",
+   "c0179",
+   "c0637",
+   "c0594",
+   "c0376",
+   "c0233",
+   "c0188",
+   "c0669",
+   "c0842",
+   "c0881",
+   "c0047",
+   "c0191",
+   "c0808",
+   "c0296",
+   "c0769",
+   "c0983",
+   "c0519",
+   "c0448",
+   "c0508",
+   "c0408",
+   "c0613",
+   "c0370",
+   "c0184",
+   "c0812",
+   "c0513",
+   "c0138",
+   "c0400",
+   "c0922",
+   "c0753",
+   "c0510",
+   "c0043",
+   "c0676",
+   "c0282",
+   "c0212",
+   "c0322",
+   "c0501",
+   "c0181",
+   "c0290",
+   "c0963",
+   "c0327",
+   "c0664",
+   "c0598",
+   "c0730",
+   "c0759",
+   "c0568",
+   "c0757",
+   "c0837"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Says how many people get help and what each costs, so the total is clear and adds up.",
+    "backers": 88
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Names who runs it and a date, no later than 31 January, by which the first people start.",
+    "backers": 66
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Puts at least a quarter of the fund, in pounds, towards laid-off workers over 50.",
+    "backers": 64
+   },
+   {
+    "id": "t4",
+    "kind": "test",
+    "text": "Says how you would know it worked: a number of people in work and the date you check.",
+    "backers": 71
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "Must not spend more than 1.2 million pounds, or rely on a tax rise or money not yet in hand.",
+    "backers": 93
+   },
+   {
+    "id": "t6",
+    "kind": "limit",
+    "text": "Must not leave workers over 50 with no help at all.",
+    "backers": 78
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0289",
+    "who": "a graduate, 23, Mereholt",
+    "text": "I did not need a coach. I needed someone to pay me while I learned. Six months of wages would change my year."
+   },
+   {
+    "citizen": "c0339",
+    "who": "a warehouse supervisor, 58, Mereholt",
+    "text": "My son has no job and so do three of my old crew. Spend it on the young ones, but do not forget us."
+   },
+   {
+    "citizen": "c0562",
+    "who": "a care assistant, 55, Mereholt",
+    "text": "I was laid off when the plant cut jobs. Everything says 'young people'. I have bills too."
+   },
+   {
+    "citizen": "c0348",
+    "who": "a part-time clerk, 63, Mereholt",
+    "text": "A few well-paid places or a bit of help for lots of people. Tell us the numbers, and who is checking."
+   },
+   {
+    "citizen": "c0315",
+    "who": "a retired fitter, 79, Mereholt",
+    "text": "I trained apprentices for forty years. Wages for a placement is what works, if a firm really keeps them on."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Paid six-month placements, young people only",
+   "title": "110 paid youth placements, plus an over-50s help slice",
+   "answer": "The council pays for 110 six-month placements for 18 to 24 year olds, at 9,000 pounds each: 990,000 pounds. The other 210,000 pounds gives 150 laid-off workers over 50 coaching and travel help, at 1,400 each. That is 17.5 percent of the fund. The council jobs team runs both, and the first placements start by 1 February. The fund pays all of it; no tax rise. We check on 30 September next year: at least 70 of the 110 young people, and 50 of the 150 workers over 50, in work. The council publishes the results.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Coaching and travel help open to everyone out of work",
+   "title": "Coaching and travel help for 900 people, a third over 50",
+   "answer": "The council spends the whole 1.2 million pounds on coaching and travel help for 900 people out of work. That is about 1,333 pounds each. There are no wages. At least 300 places, one in three, are held for laid-off workers over 50. The council jobs team runs it. The first 100 people start by 31 January 2027. Spending is capped at 1.2 million pounds, with no tax rise and no new money. We check on 30 June 2027. We count how many of the 900 are in work, and how many of the 300 over-50s. The council's auditors publish the numbers.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Split the fund: young placements, over-50s retraining",
+   "title": "Split the fund: young placements, retraining for over 50s",
+   "answer": "Split the 1.2 million pounds in two. First, 594,000 pounds pays for 66 six-month paid placements for under 25s, at 9,000 each. Second, 603,000 pounds pays for coaching, retraining and travel for about 450 laid-off workers over 50, at about 1,340 each. Over 50s get half the money. The council jobs team runs both. Firms are signed up by 31 January. The first people start by 1 March. No tax rise, and nothing outside the fund. We check on 30 September 2027. Goal: at least 40 young people and 200 over 50s in work. We publish the numbers.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "110 x 9,000 = 990,000 plus 150 x 1,400 = 210,000 gives exactly 1.2 million, and 210,000 is correctly 17.5 percent of the fund."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "fail",
+    "note": "The council jobs team runs it, but the first placements start by 1 February, one day after the 31 January limit."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "fail",
+    "note": "Only 210,000 pounds goes to workers over 50, below the 300,000 pounds (a quarter) required; the answer itself says 17.5 percent."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "Gives numbers in work (70 of 110 young, 50 of 150 over 50s) and a check date of 30 September next year."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "Total is exactly 1.2 million, paid from the fund, with no tax rise or outside money."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "150 workers over 50 get coaching and travel help, so they are not left with none."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "pass",
+    "note": "900 people at about 1,333 each is about 1,199,700 pounds, which adds up to the 1.2 million."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "pass",
+    "note": "The council jobs team runs it and the first 100 people start by 31 January 2027, which meets the limit."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "unclear",
+    "note": "300 of 900 places are held for over 50s (about 400,000 pounds if costs are equal), but the answer never states a pounds figure for them."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "fail",
+    "note": "It gives a check date of 30 June 2027 and says it will count people in work, but sets no target number of people in work."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "Spending is capped at 1.2 million pounds with no tax rise and no new money."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "pass",
+    "note": "At least 300 places are held for laid-off workers over 50, so they get help."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "pass",
+    "note": "66 x 9,000 = 594,000 and about 450 x 1,340 = 603,000 give 1,197,000, within the 1.2 million and consistent; half the money is about right."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "fail",
+    "note": "The council jobs team runs it, but the first people start by 1 March; only the firm sign-up is by 31 January."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "603,000 pounds goes to workers over 50, about half the fund and well above the 300,000 needed."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "Goal of at least 40 young people and 200 over 50s in work, checked on 30 September 2027."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "Total is about 1,197,000 pounds, under 1.2 million, with no tax rise and nothing outside the fund."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "pass",
+    "note": "About 450 workers over 50 get coaching, retraining and travel help."
+   }
+  ],
+  "verdict": "Only C clears the over-50s quarter (603,000 pounds) but misses the 31 January start, and A also misses that date and puts only 210,000 pounds (17.5 percent) to over-50s. B meets the date but states no pounds figure for over-50s and gives no target number in work.",
+  "rounds": 2
+ },
+ "ending": "partly",
+ "jury": {
+  "seed": "2026-11-20-mereholt-youth-jobs/jury",
+  "size": 12,
+  "ids": [
+   "c0467",
+   "c0663",
+   "c0293",
+   "c0402",
+   "c0362",
+   "c0437",
+   "c0379",
+   "c0668",
+   "c0786",
+   "c0300",
+   "c0298",
+   "c0602"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "If Mereholt finds more money for jobs later, who should it go to first?",
+  "options": [
+   "Wages for young people first",
+   "An even split between young and over-50s",
+   "Whoever has been out of work longest, at any age"
+  ],
+  "votes": [
+   3,
+   5,
+   4
+  ],
+  "ruling": "An even split wins, 5 votes to 4 for longest out of work and 3 for young people first.",
+  "reasons": [
+   {
+    "juror": "c0300",
+    "text": "Both groups got hit when the plant closed. Split it and be done."
+   },
+   {
+    "juror": "c0786",
+    "text": "I am 51. I would not want to be the one told the young ones come first, or the other way round."
+   },
+   {
+    "juror": "c0467",
+    "text": "I am 25 and I know what a paid placement does for you. Young people first."
+   },
+   {
+    "juror": "c0362",
+    "text": "A year without work is a year without work. Help the longest first, whatever their age."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "work",
+  "decision": "trial",
+  "answer": "C",
+  "text": "A trial of answer C: 594,000 pounds for 66 paid youth placements and 603,000 for about 450 laid-off workers over 50, ending 30 September 2027. It tests whether a split fund gets both groups into work. It missed one test of six, the 31 January start.",
+  "statement": "Callum Brierley, Minister for Work. Nobody's answer passed everything, and none crossed a red line. C got five tests out of six and put over half the money to the over-50s, who cannot wait past February. It missed the 31 January start, so I am not adopting it. I am trialling it until 30 September 2027. The jury said split fairly, 5 to 4 to 3, and C does that. If fewer than 40 young people and 200 over-50s are in work, it stops.",
+  "stop": "2027-09-30"
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The ONS unemployment rate for people aged 16 and over, for November 2026 to January 2027, will be 4.6% or higher.",
+   "due": "2027-03-31",
+   "rule": "ONS Labour market overview, March 2027 release, headline unemployment rate. Last published: 4.6% for July to September 2026 (ONS, 17 Nov 2026).",
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "claim": "UK job vacancies for December 2026 to February 2027 will be below 690,000.",
+   "due": "2027-04-30",
+   "rule": "ONS Labour market overview, March 2027 release, vacancies estimate. Last published: 690,000 for August to October 2026 (ONS, 17 Nov 2026).",
+   "result": "pending"
+  }
+ ]
+}

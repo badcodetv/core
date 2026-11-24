@@ -1,0 +1,436 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-14-elderbrook-winter-fund",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-14"
+ },
+ "plan": {
+  "area": "energy",
+  "ending": "partly"
+ },
+ "case": {
+  "title": "One winter fund, a bigger energy bill coming: who gets the help?",
+  "short": "WINTER FUND",
+  "question": "Should Elderbrook share its one-off winter fund evenly, aim it at the poorest homes, or put it into insulation?",
+  "place": "Elderbrook (made up)",
+  "story": "Elderbrook is a town of 8,000 homes. Its council has a one-off winter fund of £600,000 and cannot add to it this year. Forecasters expect the January energy price cap to jump, and the new price is announced on or before 25 November. About 1,500 homes already struggle to pay, many in old houses that leak heat, and each needs about £400 to cover the rise. Any scheme costs £120,000 to run (staff, phone line, appeals), leaving £480,000. That gives the full £400 to only 1,200 of the 1,500 homes, or £320 to all 1,500. The council's benefit list misses about 300 of the 1,500, mostly private renters and pensioners, and checking them by hand takes until late January. Fitters can insulate about 150 homes before spring.",
+  "in_the_news": {
+   "headline": "Analyst forecasts point to a large January price cap rise ahead of Ofgem's 25 November decision",
+   "why": "Households face a likely rise in the energy price cap this winter, and councils are asked what help they can give.",
+   "memory_id": "36170caf-3150-4cda-8e5f-129e712d712d",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "The current price cap is £1,723 a year for a typical household, and Ofgem's January decision is due on or before 25 November 2026.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "When is the next energy price cap?",
+   "publisher": "Uswitch",
+   "date": "2026-11-11",
+   "url": "https://www.uswitch.com/gas-electricity/news/when-is-the-next-energy-price-cap/"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-rival",
+   "demo-redo",
+   "demo-jury",
+   "demo-minister"
+  ],
+  "note": "Round 2: first marks reached accepted; added 300 homes missing from benefit records, stricter tests. Round 3: second marks also accepted; hard numbers (£480,000 after running costs: full £400 for 1,200 homes or £320 for all 1,500) and a test asking the full £400 for all 1,500. Phone numbers swapped for Ofcom's drama ranges, which never ring a real line."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-14-elderbrook-winter-fund/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0962",
+   "c0026",
+   "c0689",
+   "c0295",
+   "c0506",
+   "c0735",
+   "c0052",
+   "c0592",
+   "c0717",
+   "c0520",
+   "c0048",
+   "c0054",
+   "c0551",
+   "c0353",
+   "c0310",
+   "c0590",
+   "c0017",
+   "c0652",
+   "c0395",
+   "c0126",
+   "c0403",
+   "c0216",
+   "c0215",
+   "c0941",
+   "c0601",
+   "c0827",
+   "c0249",
+   "c0651",
+   "c0628",
+   "c0723",
+   "c0616",
+   "c0007",
+   "c0662",
+   "c0543",
+   "c0184",
+   "c0654",
+   "c0877",
+   "c0344",
+   "c0421",
+   "c0038",
+   "c0629",
+   "c0989",
+   "c0480",
+   "c0904",
+   "c0411",
+   "c0573",
+   "c0033",
+   "c0556",
+   "c0987",
+   "c0513",
+   "c0105",
+   "c0548",
+   "c0643",
+   "c0579",
+   "c0802",
+   "c0121",
+   "c0181",
+   "c0619",
+   "c0438",
+   "c0571",
+   "c0787",
+   "c0768",
+   "c0090",
+   "c0029",
+   "c0809",
+   "c0852",
+   "c0940",
+   "c0113",
+   "c0364",
+   "c0028",
+   "c0773",
+   "c0049",
+   "c0149",
+   "c0796",
+   "c0779",
+   "c0376",
+   "c0465",
+   "c0589",
+   "c0945",
+   "c0660",
+   "c0366",
+   "c0123",
+   "c0088",
+   "c0687",
+   "c0022",
+   "c0399",
+   "c0495",
+   "c0402",
+   "c0753",
+   "c0925",
+   "c0828",
+   "c0565",
+   "c0091",
+   "c0206",
+   "c0669",
+   "c0857",
+   "c0770",
+   "c0935",
+   "c0637",
+   "c0700"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Says in pounds how much each home or group gets, and shows the total adds up to no more than £600,000.",
+    "backers": 88
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Gives every one of the 1,500 struggling homes the full £400 before Christmas.",
+    "backers": 83
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Names who decides who qualifies, gives a phone number or opening hours, and says how many days an appeal takes.",
+    "backers": 66
+   },
+   {
+    "id": "t4",
+    "kind": "test",
+    "text": "Says how many homes get a lasting fix, such as insulation or draught-proofing, and by what date it is done.",
+    "backers": 52
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "Must not spend over £600,000, running costs included, or ask any household to pay money back.",
+    "backers": 92
+   },
+   {
+    "id": "t6",
+    "kind": "limit",
+    "text": "Must not leave any of the 1,500 struggling homes, including the 300 missing from benefit records, with less help than a better-off home.",
+    "backers": 79
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0717",
+    "who": "a retired woman, 88, in a council flat in Elderbrook",
+    "text": "I turn the heating on one hour a day. Don't give me a small cheque and call it done."
+   },
+   {
+    "citizen": "c0652",
+    "who": "a jobseeker, 35, renting privately in Elderbrook",
+    "text": "My landlord won't fix the windows. Money for bills helps, but the draught stays."
+   },
+   {
+    "citizen": "c0310",
+    "who": "a mother, 31, with a mortgage in Elderbrook",
+    "text": "I can pay, just. I don't want a payment, but don't tell me I'm not worth anything either."
+   },
+   {
+    "citizen": "c0592",
+    "who": "a council tenant, 46, working in Elderbrook",
+    "text": "Tell us who decides and give us a number to ring. Last time nobody picked up."
+   },
+   {
+    "citizen": "c0590",
+    "who": "a retired man, 82, renting in Elderbrook",
+    "text": "I won't be here for ten years of savings. I need help before January."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Flat payment to every home in December",
+   "title": "£60 to every Elderbrook home, paid by 15 December",
+   "answer": "Pay all 8,000 homes a flat £60 by 15 December, with no means test. That is £480,000. Running costs of £120,000 bring the total to exactly £600,000, so there is no extra for struggling homes. Nobody repays anything. The council's winter fund team pays every address on the council tax list. Missed homes ring 0808 157 0123, Monday to Friday, 8am to 6pm, and appeals are decided in 5 working days. The 1,500 struggling homes get £60 against a £400 need, so this falls far short for them. No homes get a lasting fix. We would know it worked if all 8,000 are paid by 15 December and calls are answered.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Targeted grants for the 1,500 struggling homes",
+   "title": "£320 to every struggling home, paid before Christmas",
+   "answer": "Every one of the 1,500 struggling homes gets £320: £480,000. Running costs are £120,000. Total £600,000, nothing left over. The £80 gap to £400 is real, and we won't hide it. The Winter Fund Panel, led by the council's finance officer, decides who qualifies. The 1,200 homes on the benefit list are paid by 18 December. The 300 missed, mostly private renters and pensioners, apply by phone with a tenancy or pension letter and are paid on that. Checks come later and nobody repays. Phone 0808 157 0000, 9am to 5pm weekdays. Appeals take 5 working days. This fund pays for no insulation, so no home gets a lasting fix. Success means 1,500 payments by 18 December.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Insulate 150 worst homes, advice for all",
+   "title": "Fix 150 worst homes for good, pay every struggling home £160",
+   "answer": "Insulate the 150 leakiest homes by 31 March. Pay all 1,500 struggling homes £160 each by 18 December. Everyone gets energy advice.\n\nSpend: £120,000 running, £240,000 insulation (150 homes at £1,600), £240,000 bill help (1,500 at £160). Total £600,000. Nobody repays. This is not the full £400; the fund cannot cover that and a fix.\n\nThe council winter fund team decides, using the benefit list plus a short form for the 300 missed, checked after payment. Phone 03069 990000, Monday to Friday, 9 to 5. Appeals take 5 working days. Landlords must agree to works.\n\nIt worked if 150 homes are fitted by 31 March, 1,500 are paid, and calls are answered.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "Gives £60 per home for 8,000 homes (£480,000) plus £120,000 running costs, exactly £600,000; the sums check."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "fail",
+    "note": "Struggling homes get £60 against a £400 need, and the answer itself admits it falls far short."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "Names the council's winter fund team, gives 0808 157 0123, Mon-Fri 8am-6pm, and appeals in 5 working days; who judges appeals is not named."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "fail",
+    "note": "Says no homes get a lasting fix, so there is no count of homes fixed and no date."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "Total is exactly £600,000 including running costs, and nobody repays."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "Every address, including the 300 missed homes, gets the same £60, so no struggling home gets less than a better-off one (though it is far too little)."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "pass",
+    "note": "£320 each to 1,500 homes is £480,000, plus £120,000 running costs, exactly £600,000."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "fail",
+    "note": "Each home gets £320, not £400; the answer admits the £80 gap."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "Winter Fund Panel led by the finance officer decides; 0808 157 0000, 9am-5pm weekdays; appeals take 5 working days."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "fail",
+    "note": "Says the fund pays for no insulation, so no home gets a lasting fix and no date is given."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "Total is exactly £600,000 including running costs, and it says nobody repays."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "pass",
+    "note": "All 1,500 get £320, including the 300 missed homes by phone application, and no better-off home is paid anything."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "pass",
+    "note": "£120,000 running, 150 homes at £1,600 is £240,000, 1,500 at £160 is £240,000; total £600,000 and the arithmetic holds."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "fail",
+    "note": "Struggling homes get £160 each, well under £400; the answer admits this."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "Council winter fund team decides, using the benefit list plus a form; 03069 990000, Mon-Fri 9 to 5; appeals take 5 working days."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "Insulates 150 homes by 31 March; it does give a number and a date, though landlord consent could hold some back."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "Total is exactly £600,000 including £120,000 running costs, and nobody repays."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "pass",
+    "note": "All 1,500 get £160 including the 300 missed via a short form, and no better-off home gets anything; the 150 fitted homes get extra, but all are struggling homes."
+   }
+  ],
+  "verdict": "All three stay inside £600,000 and none gives every struggling home £400, because the fund cannot. Only C delivers a lasting fix (150 homes by 31 March); A and B give none, and A spreads money across all 8,000 homes.",
+  "rounds": 3
+ },
+ "ending": "partly",
+ "jury": {
+  "seed": "2026-11-14-elderbrook-winter-fund/jury",
+  "size": 12,
+  "ids": [
+   "c0800",
+   "c0493",
+   "c0835",
+   "c0133",
+   "c0691",
+   "c0002",
+   "c0863",
+   "c0750",
+   "c0521",
+   "c0436",
+   "c0758",
+   "c0502"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "The fund can't give every struggling home £400. Should some of it go on lasting fixes for 150 homes, or all of it on bill help now?",
+  "options": [
+   "Keep the split: bill help now and 150 homes insulated",
+   "All bill help now, no insulation"
+  ],
+  "votes": [
+   7,
+   5
+  ],
+  "ruling": "The town keeps the split between bill help now and lasting fixes, 7 to 5.",
+  "reasons": [
+   {
+    "juror": "c0133",
+    "text": "I live in a cold flat. Money runs out in February, but a fixed wall doesn't."
+   },
+   {
+    "juror": "c0521",
+    "text": "I'm 83. I need the heating on this month, not a promise for March."
+   },
+   {
+    "juror": "c0750",
+    "text": "If we only hand out cash, we're back here next winter with nothing to show."
+   },
+   {
+    "juror": "c0835",
+    "text": "My landlord won't fit anything anyway. Give the money to the people who pay the bills."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "energy",
+  "decision": "trial",
+  "answer": "C",
+  "text": "A trial of answer C: £160 to each of the 1,500 struggling homes by 18 December, 150 homes insulated by 31 March, £120,000 to run it. It fails 1 of 6 tests: no home gets the full £400. Ends 31 March 2027 unless renewed.",
+  "statement": "I count in pounds a year, so here are the pounds. The fund leaves £480,000, and the full £400 reaches only 1,200 of 1,500 homes. Answer C passes five of six tests and misses the one the numbers rule out: the full £400 for every home. The jury kept the split, 7 to 5, so 150 homes get a fix that lasts. We trial it until 31 March and count who got what.",
+  "stop": "2027-03-31"
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "Ofgem's price cap for January to March 2027 will be above £2,000 a year for a typical household.",
+   "due": "2026-11-26",
+   "rule": "Ofgem's announcement, due on or before 25 November 2026, of the typical household cap (Direct Debit). Last published: £1,723 a year, October to December 2026.",
+   "result": "pending"
+  }
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-17-hollinwick-rent-arrears",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-17"
+ },
+ "plan": {
+  "area": "housing",
+  "ending": "partly"
+ },
+ "case": {
+  "title": "Hollinwick's council tenants are behind on the rent",
+  "short": "HOLLINWICK ARREARS",
+  "question": "Should the council chase unpaid rent harder, or help tenants clear their debts first?",
+  "place": "Hollinwick (made up)",
+  "story": "Hollinwick council owns 6,200 homes, and 2,670 of its tenants now owe rent, which is 43 per cent. The average debt is about £675 a household, and the council is owed £1.8 million in all. The housing budget is fixed at £4.1 million for the year, and the council can spend £350,000 more only by cutting repairs. Councillors can send tougher letters and start evictions sooner, or pay for debt advisers and payment plans that take longer to bring money back. Some tenants are in work but squeezed. Others are ill, or waiting on benefits.",
+  "in_the_news": {
+   "headline": "Council rent arrears surge 57% as tenant debts mount",
+   "why": "A study of 108 councils found 43% of council homes have unpaid rent, so Hollinwick's choice is the one many councils face.",
+   "memory_id": "a23f4db8-87d7-4312-8bf0-f94b9dd1719d",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "43% of council homes in the study had unpaid rent in 2026, up from 37% in 2025.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "The average debt per household in arrears was £674.62.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "The study used freedom of information answers from 108 councils.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Council rent arrears surge 57% as tenant debts mount",
+   "publisher": "Property Industry Eye",
+   "date": "2026-11-16",
+   "url": "https://propertyindustryeye.com/council-rent-arrears-surge-57-as-tenant-debts-mount/"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-redo",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ],
+  "note": "Round 2: the citizens' tests were too easy (answer A passed all five), so t1 and t2 were made more exact. No mark was edited."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-17-hollinwick-rent-arrears/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0996",
+   "c0234",
+   "c0609",
+   "c0548",
+   "c0164",
+   "c0789",
+   "c0557",
+   "c0203",
+   "c0845",
+   "c0188",
+   "c0080",
+   "c0230",
+   "c0226",
+   "c0087",
+   "c0565",
+   "c0269",
+   "c0927",
+   "c0127",
+   "c0099",
+   "c0021",
+   "c0070",
+   "c0235",
+   "c0620",
+   "c0104",
+   "c0775",
+   "c0176",
+   "c0154",
+   "c0223",
+   "c0704",
+   "c0513",
+   "c0054",
+   "c0611",
+   "c0179",
+   "c0596",
+   "c0881",
+   "c0112",
+   "c0936",
+   "c0101",
+   "c0196",
+   "c0157",
+   "c0941",
+   "c0949",
+   "c0093",
+   "c0846",
+   "c0571",
+   "c0631",
+   "c0238",
+   "c0847",
+   "c0386",
+   "c0183",
+   "c0266",
+   "c0711",
+   "c0035",
+   "c0589",
+   "c0401",
+   "c0717",
+   "c0298",
+   "c0857",
+   "c0660",
+   "c0308",
+   "c0689",
+   "c0762",
+   "c0998",
+   "c0213",
+   "c0414",
+   "c0095",
+   "c0655",
+   "c0558",
+   "c0882",
+   "c0010",
+   "c0779",
+   "c0627",
+   "c0899",
+   "c0372",
+   "c0950",
+   "c0425",
+   "c0559",
+   "c0399",
+   "c0250",
+   "c0501",
+   "c0012",
+   "c0721",
+   "c0079",
+   "c0284",
+   "c0191",
+   "c0255",
+   "c0237",
+   "c0406",
+   "c0657",
+   "c0868",
+   "c0757",
+   "c0725",
+   "c0855",
+   "c0242",
+   "c0452",
+   "c0912",
+   "c0796",
+   "c0214",
+   "c0000",
+   "c0434"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Says how much of the £1.8 million comes back in 12 months, and how many staff it takes and what they cost a year.",
+    "backers": 81
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Says how many days a tenant with a late benefit is left alone, and who chases the benefit office.",
+    "backers": 90
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Gives a date by which tenants in arrears are first contacted by a named person, not a form letter.",
+    "backers": 74
+   },
+   {
+    "id": "t4",
+    "kind": "limit",
+    "text": "Never starts eviction over arrears under £1,500, and never over any debt while a payment plan is being kept.",
+    "backers": 92
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "Pays for it without cutting the £4.1 million repairs and housing budget or raising rents.",
+    "backers": 85
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0164",
+    "who": "a woman in her 30s who cannot work through illness, a council tenant",
+    "text": "When my payment was late I was frightened of the letters. I want a person who rings me, not another threat."
+   },
+   {
+    "citizen": "c0565",
+    "who": "a man in his 50s in work, a council tenant",
+    "text": "I pay on time and it costs me. I want the rent chased, but nobody should lose their home over a few hundred quid."
+   },
+   {
+    "citizen": "c0188",
+    "who": "a woman in her 80s, a council tenant",
+    "text": "I have lived here all my life. If the repairs stop because of other people's debts, that is not fair on me."
+   },
+   {
+    "citizen": "c0087",
+    "who": "a retired man in his 80s who owns his home",
+    "text": "The council is spending my council tax on this. Tell me how much comes back and when."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Help first: advisers and payment plans before letters",
+   "title": "Help first: a named adviser rings every tenant in arrears",
+   "answer": "What changes: By 31 January, a named adviser phones each of the 2,670 tenants in arrears. No form letter comes first. Advisers set up payment plans.\n\nBenefit delays: if a tenant is behind only because a payment is late, nothing is chased. They ring their named adviser, who chases the benefit office.\n\nLimits: no eviction over arrears under £1,500, or while a plan is kept.\n\nWho pays: the advisers are paid from the existing £4.1 million, using money now spent on letters and court steps. Repairs and rents stay as they are.\n\nTarget: £900,000 of the £1.8 million back within 12 months, collected by the adviser team. Monthly reports show plans kept, rent paid and repairs spend.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Firm but fair: staged letters, eviction as last step",
+   "title": "Firm but fair: a named officer first, staged letters, eviction last",
+   "answer": "Step 1: within 10 working days of falling behind, a named rent officer rings the tenant. Step 2: a payment plan. Step 3: a firm letter if the plan is ignored. Step 4: a final warning. Eviction is only for debts over £1,500, and never while a plan is kept. A tenant waiting on a late benefit gets time, and rings their rent officer.\n\nRent officers and advisers are paid from the existing £4.1 million, with no repairs cut and no rent rise. We aim to get back £900,000 of the £1.8 million in 12 months. We'd know it worked if arrears fall by that much and few cases reach court.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Write off small debts, chase large ones hard",
+   "title": "Forgive the small debts, chase the big ones hard",
+   "answer": "Write off debts under £250 for tenants who are ill or waiting on benefits. Chase larger debts with a named housing officer who rings each tenant within 14 days of the council's vote. Tenants held up by a late benefit pay nothing extra while it is fixed, and they ring their officer. No eviction under £1,500, or while a plan is kept. Pay from the £4.1 million housing budget, with no repair cuts and no rent rise. We do not yet know how much of the £1.8 million is small debts. Officers count them in 30 days and publish a figure for what comes back in 12 months. Success: arrears fall each quarter.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "unclear",
+    "note": "Gives £900,000 of the £1.8 million back within 12 months, but says nothing on how many staff it takes or what they cost a year."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "unclear",
+    "note": "Gives £900,000 of the £1.8 million in 12 months, but no staff number and no yearly staff cost."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "fail",
+    "note": "Gives no figure for what comes back in 12 months (says it will publish one later) and no staff number or cost."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "unclear",
+    "note": "The adviser chases the benefit office, and nothing is chased from the tenant, but no number of days is given."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "unclear",
+    "note": "Says the tenant 'gets time' and rings their officer, but gives no number of days and does not say who chases the benefit office."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "unclear",
+    "note": "Tenant pays nothing extra while the benefit is fixed and rings their officer, but no number of days and no one is named as chasing the benefit office."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "Sets a date, 31 January, by which a named adviser phones each of the 2,670 tenants, with no form letter first."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "unclear",
+    "note": "A named rent officer rings within 10 working days of falling behind, which is a period, not a calendar date."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "unclear",
+    "note": "A named officer rings within 14 days of the council's vote, but no date is given for the vote, so there is no actual date."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "States no eviction over arrears under £1,500 or while a plan is kept."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "pass",
+    "note": "Eviction only for debts over £1,500 and never while a plan is kept, which covers both parts."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "States no eviction under £1,500 or while a plan is kept."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "Paid from the existing £4.1 million using money now spent on letters and court steps, with repairs and rents unchanged."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "Paid from the existing £4.1 million with no repairs cut and no rent rise."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "Paid from the £4.1 million housing budget with no repair cuts and no rent rise."
+   }
+  ],
+  "verdict": "All three keep both limits (t4, t5), but none gives staff numbers or cost (t1) or the days and who chases the benefit office (t2). Only A names a date for first contact (t3). C is weakest, with no recovery figure at all.",
+  "rounds": 2
+ },
+ "ending": "partly",
+ "jury": {
+  "seed": "2026-11-17-hollinwick-rent-arrears/jury",
+  "size": 12,
+  "ids": [
+   "c0827",
+   "c0491",
+   "c0325",
+   "c0294",
+   "c0925",
+   "c0384",
+   "c0273",
+   "c0739",
+   "c0482",
+   "c0915",
+   "c0863",
+   "c0246"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "If a tenant ignores their adviser for six months, what should the council do?",
+  "options": [
+   "Keep trying to help them, however long it takes",
+   "Allow court action after six months, for debts over £1,500 only",
+   "Visit them at home first, then allow court action after six months"
+  ],
+  "votes": [
+   4,
+   5,
+   3
+  ],
+  "ruling": "Allow court action after six months, for debts over £1,500 only, won 5 votes to 4 and 3.",
+  "reasons": [
+   {
+    "juror": "c0294",
+    "text": "I'd not like to see a neighbour put out. Keep knocking on the door."
+   },
+   {
+    "juror": "c0384",
+    "text": "Those who pay shouldn't carry those who won't. Six months is long enough."
+   },
+   {
+    "juror": "c0739",
+    "text": "I pay on time. Someone should visit first, so we know who can't and who won't."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "housing",
+  "decision": "trial",
+  "answer": "A",
+  "text": "A six-month trial of answer A: a named adviser rings every tenant in arrears, with no eviction under £1,500 or while a plan is kept. It tests 3 of 5 tests passed, 2 unclear, 0 failed.",
+  "statement": "Bea Hartwell: I won't sign all of this yet. Answer A kept both red lines and gave a date, 31 January, for a named person to ring every tenant. But it didn't say how many advisers it needs, what they cost, or how many days a late benefit is left alone. The citizens' jury said court action after six months, for debts over £1,500 only, and the trial will use that. We'll count the keys kept, not the letters sent.",
+  "stop": "2027-05-31"
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The share of council homes with unpaid rent in Access PaySuite's 2027 rental arrears index will be above 43%.",
+   "due": "2027-11-24",
+   "rule": "Access PaySuite's 2027 Rental Arrears Index, as reported by Property Industry Eye or Access PaySuite. Last published: 43% in 2026 (37% in 2025).",
+   "result": "pending"
+  }
+ ]
+}

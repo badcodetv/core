@@ -1,0 +1,444 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-16-gresmoor-old-records",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-16"
+ },
+ "plan": {
+  "area": "crime",
+  "ending": "accepted"
+ },
+ "case": {
+  "title": "Gresmoor police must wipe old abortion records",
+  "short": "GRESMOOR RECORDS",
+  "question": "How should Gresmoor Police find and delete its old abortion records without women having to ask?",
+  "place": "Gresmoor (made up)",
+  "story": "From 16 November the law pardons women who were convicted, cautioned, arrested or investigated over their own abortion. Women do not have to apply. Gresmoor Police (made up) thinks it holds about 60 such records, spread over paper files in a store, an old computer system and copies sent to the court. Some women have moved away, some have married and changed names, and some do not know a file exists. The force has £90,000 set aside and a records team of four. Nobody wants a clumsy search to leak a name or to wake a woman with a letter her family might open.",
+  "in_the_news": {
+   "headline": "Women pardoned for abortion offences relating to their own pregnancy",
+   "why": "The new law makes police and courts delete these records, and a force like Gresmoor has to do it without women applying.",
+   "memory_id": "381bd0a8-7485-4f64-b178-814b7875eb7c",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "Section 242 of the Crime and Policing Act 2026 pardons these women automatically from 16 November 2026. Women do not need to apply.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "Where records cannot be fully deleted, they must be annotated so they are treated as deleted.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Women pardoned for abortion offences relating to their own pregnancy",
+   "publisher": "GOV.UK (Ministry of Justice)",
+   "date": "2026-11-15",
+   "url": "https://www.gov.uk/government/news/women-pardoned-for-abortion-offences-relating-to-their-own-pregnancy"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-16-gresmoor-old-records/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0004",
+   "c0172",
+   "c0750",
+   "c0757",
+   "c0523",
+   "c0346",
+   "c0359",
+   "c0497",
+   "c0260",
+   "c0269",
+   "c0614",
+   "c0914",
+   "c0957",
+   "c0608",
+   "c0862",
+   "c0689",
+   "c0694",
+   "c0060",
+   "c0326",
+   "c0258",
+   "c0445",
+   "c0532",
+   "c0385",
+   "c0429",
+   "c0336",
+   "c0381",
+   "c0918",
+   "c0373",
+   "c0833",
+   "c0363",
+   "c0215",
+   "c0670",
+   "c0158",
+   "c0735",
+   "c0296",
+   "c0945",
+   "c0765",
+   "c0464",
+   "c0942",
+   "c0049",
+   "c0186",
+   "c0246",
+   "c0485",
+   "c0094",
+   "c0411",
+   "c0890",
+   "c0024",
+   "c0786",
+   "c0550",
+   "c0559",
+   "c0127",
+   "c0406",
+   "c0588",
+   "c0901",
+   "c0104",
+   "c0849",
+   "c0149",
+   "c0967",
+   "c0391",
+   "c0098",
+   "c0275",
+   "c0872",
+   "c0147",
+   "c0492",
+   "c0943",
+   "c0829",
+   "c0895",
+   "c0189",
+   "c0052",
+   "c0567",
+   "c0151",
+   "c0880",
+   "c0046",
+   "c0704",
+   "c0810",
+   "c0123",
+   "c0085",
+   "c0879",
+   "c0597",
+   "c0422",
+   "c0101",
+   "c0330",
+   "c0857",
+   "c0836",
+   "c0131",
+   "c0529",
+   "c0557",
+   "c0988",
+   "c0162",
+   "c0357",
+   "c0553",
+   "c0705",
+   "c0760",
+   "c0634",
+   "c0504",
+   "c0426",
+   "c0145",
+   "c0305",
+   "c0079",
+   "c0552"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Gives a finish date no later than 28 February 2027 for deleting or marking every record.",
+    "backers": 88
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Names one job-holder who signs off each deletion and whom a woman can call with questions.",
+    "backers": 79
+   },
+   {
+    "id": "t3",
+    "kind": "limit",
+    "text": "Never writes to, phones or visits a woman unless she has first asked to be contacted.",
+    "backers": 91
+   },
+   {
+    "id": "t4",
+    "kind": "test",
+    "text": "Says who pays and keeps the total within the £90,000 already set aside.",
+    "backers": 72
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "No woman's name or file detail goes to any outside firm or person.",
+    "backers": 94
+   },
+   {
+    "id": "t6",
+    "kind": "test",
+    "text": "Searches the paper store, the old system and the court copies, and has someone outside the records team check a sample.",
+    "backers": 83
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0260",
+    "who": "a woman, 24, social tenant",
+    "text": "If it was me, I would want it gone and I would not want a letter turning up at my mum's door."
+   },
+   {
+    "citizen": "c0750",
+    "who": "a retired woman, 60s",
+    "text": "Women of my age remember when this could ruin you. Delete it properly and tell nobody who doesn't need to know."
+   },
+   {
+    "citizen": "c0269",
+    "who": "a woman, 26, looking after her family",
+    "text": "Say a date, say a name, and let us ring that person. That's all I'd ask."
+   },
+   {
+    "citizen": "c0957",
+    "who": "a woman, 70s, still working",
+    "text": "Don't hire some firm to rummage through it. Keep it inside the police and check it twice."
+   },
+   {
+    "citizen": "c0004",
+    "who": "a man, 63, social tenant",
+    "text": "I don't want my council tax spent on a fancy system. There's money set aside, so use it and finish the job."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Full sweep by the records team, with an outside check",
+   "title": "Inside sweep of all three stores, with an outside check",
+   "answer": "Gresmoor Police will search the paper store, the old system and the court copies, then delete each record or mark it as deleted. Finish date: 28 February 2027. The Head of Records signs off every deletion and answers calls from any woman with questions. The four-person records team does all the work, with no outside firm. No name or file detail leaves the police. An officer from outside the records team checks a sample of each store. We never write to, phone or visit a woman unless she asks first. Pay comes from the £90,000 already set aside, with a spending cap of £90,000. Success means every record is deleted or marked by the finish date, the checker finds no misses, and the force publishes only a record count.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Hire a sealed-room contractor to do the search",
+   "title": "Use a sealed-room contractor to search fast, under strict limits",
+   "answer": "Gresmoor Police hires one vetted contractor to run the search in a sealed room inside police premises. Staff are police-vetted and sworn to secrecy. No file, name or detail leaves the building. The contractor searches the paper store, the old system and the court copies, then deletes or marks each record. Finish by 31 January 2027. The Head of Records signs off every deletion and takes calls on a published number. The force pays from the £90,000 set aside, capped at £75,000. Nobody writes to, calls or visits any woman unless she asks first. A police inspector outside the records team checks a sample. Success means every record is deleted or marked, and the sample shows no misses.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Wait for requests and delete case by case",
+   "title": "Delete abortion records only when a woman asks",
+   "answer": "Gresmoor Police will not search for records. A woman who wants hers gone can ask by phone, post or online form. The records team then finds the file in the paper store, old system and court copies. It deletes it or marks it as deleted, and finishes each request within 28 days. The head of records, named on the force website, signs off every deletion and takes calls. Cost comes from the £90,000 already set aside, mostly for a small request line. No outside firm sees any names. A second officer checks a sample of cases. We would know it worked by counting requests met on time. Nobody gets an unwanted letter. Women who never hear of the offer keep their records, which is a gap.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "Gives a finish date of 28 February 2027 for deleting or marking every record, which meets the cutoff."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "pass",
+    "note": "The Head of Records signs off every deletion and answers calls from any woman with questions."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "States it never writes to, phones or visits a woman unless she asks first."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "Pay comes from the £90,000 already set aside, with a spending cap of £90,000."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "Uses no outside firm and says no name or file detail leaves the police."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "Searches the paper store, old system and court copies, and an officer from outside the records team checks a sample of each store."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "pass",
+    "note": "Finish by 31 January 2027, which is before the 28 February cutoff."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "pass",
+    "note": "The Head of Records signs off every deletion and takes calls on a published number."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "Nobody writes to, calls or visits any woman unless she asks first."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "pass",
+    "note": "The force pays from the £90,000 set aside, capped at £75,000, which is inside the budget."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "fail",
+    "note": "An outside contractor's staff search the files and handle names and file detail, so an outside firm sees them even though the room is sealed and on police premises."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "pass",
+    "note": "Searches all three stores, and a police inspector outside the records team checks a sample."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "fail",
+    "note": "It gives no finish date for all records. It does no search, so records of women who never ask stay in place, as it admits."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "pass",
+    "note": "The head of records, named on the force website, signs off every deletion and takes calls."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "The force does not search or contact anyone, and acts only when a woman asks, so it never contacts her unprompted."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "Cost comes from the £90,000 already set aside, mostly for a request line, though no explicit cap figure is given."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "States no outside firm sees any names."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "fail",
+    "note": "It searches the three stores only for women who ask, not for all records. The sample check is by a 'second officer' who is not said to be outside the records team."
+   }
+  ],
+  "verdict": "Only A passes all six tests. B breaks the no-outside-firm limit by putting a contractor on the files. C keeps the limits but misses the finish date and the full search, so records of women who never ask stay in place.",
+  "rounds": 1
+ },
+ "ending": "accepted",
+ "jury": {
+  "seed": "2026-11-16-gresmoor-old-records/jury",
+  "size": 12,
+  "ids": [
+   "c0555",
+   "c0921",
+   "c0300",
+   "c0990",
+   "c0040",
+   "c0490",
+   "c0926",
+   "c0659",
+   "c0613",
+   "c0505",
+   "c0952",
+   "c0837"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "When the deleting is done, how much should Gresmoor Police tell the town?",
+  "options": [
+   "Publish only the number of records deleted",
+   "Tell only the police oversight board",
+   "Say nothing unless a woman asks"
+  ],
+  "votes": [
+   7,
+   4,
+   1
+  ],
+  "ruling": "The town hears the number and nothing else, 7 to 4 to 1.",
+  "reasons": [
+   {
+    "juror": "c0300",
+    "text": "Show us it was done. A number, no names."
+   },
+   {
+    "juror": "c0926",
+    "text": "I'd rather it stayed inside the force."
+   },
+   {
+    "juror": "c0990",
+    "text": "Publish the count. People can trust what they can see."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "crime",
+  "decision": "adopted",
+  "answer": "A",
+  "text": "Gresmoor Police adopts Answer A: search all three stores, delete or mark every record by 28 February 2027, no outside firm, no letters unless a woman asks, all inside the £90,000.",
+  "statement": "This answer passed all six of the citizens' tests, both red lines included: no contact unless a woman asks, and no names to any outside firm. The jury ruled 7 to 4 to 1 that the town hears only the number deleted. I sign it. Done safely is what makes people safe, so the Head of Records answers the phone and the count goes public when the work is done."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The Crime Survey for England and Wales will estimate fewer than 10.0 million headline crime incidents in the year ending September 2026.",
+   "due": "2027-01-28",
+   "rule": "ONS 'Crime in England and Wales: year ending September 2026' (28 Jan 2027). Last published: 9.7 million, year ending June 2026.",
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "claim": "Police recorded shoplifting in England and Wales will be below 519,516 offences in the year ending September 2026.",
+   "due": "2027-01-28",
+   "rule": "ONS 'Crime in England and Wales: year ending September 2026' (28 Jan 2027). Last published: 519,516, year ending June 2026.",
+   "result": "pending"
+  }
+ ]
+}

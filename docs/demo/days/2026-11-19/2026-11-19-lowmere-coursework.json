@@ -1,0 +1,444 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-19-lowmere-coursework",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-19"
+ },
+ "plan": {
+  "area": "education",
+  "ending": "accepted"
+ },
+ "case": {
+  "title": "Coursework in the age of chatbots at Lowmere School",
+  "short": "LOWMERE COURSEWORK",
+  "question": "How should Lowmere School keep coursework honest now that pupils can get a chatbot to write it?",
+  "place": "Lowmere (made up)",
+  "story": "Lowmere School (made up) has 900 pupils. Coursework counts for a fifth of several GCSE and A-level grades, and most of it is written at home. Teachers say they can no longer tell which essays pupils wrote themselves. Last summer, two pupils were caught and lost a whole subject. The head has £18,000 a year in spare budget and two free teacher periods a week per department. Parents are split between trusting pupils and wanting every essay checked.",
+  "in_the_news": {
+   "headline": "Ofqual: Using AI for coursework risks 'life-altering' penalties",
+   "why": "Ofqual has warned that undeclared AI use in coursework can cost a pupil a whole GCSE or A level, and wants coursework better supervised; Lowmere has to decide what that means for its pupils.",
+   "memory_id": "6af8ff38-14a9-4011-ab93-277164abcafa",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "In England there were 100 proven cases of AI-related plagiarism in GCSE, AS and A-level qualifications in summer 2025, up from 85 the year before.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "Of more than 4,500 teachers surveyed for Ofqual, 83% said unsupervised written coursework should have greater supervision or other controls.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Ofqual: Using AI for coursework risks 'life-altering' penalties",
+   "publisher": "Tes magazine",
+   "date": "2026-11-18",
+   "url": "https://www.tes.com/magazine/news/general/ofqual-using-ai-coursework-risks-life-altering-penalties"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-19-lowmere-coursework/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0787",
+   "c0822",
+   "c0602",
+   "c0020",
+   "c0954",
+   "c0731",
+   "c0283",
+   "c0561",
+   "c0214",
+   "c0001",
+   "c0633",
+   "c0137",
+   "c0676",
+   "c0286",
+   "c0094",
+   "c0945",
+   "c0631",
+   "c0335",
+   "c0944",
+   "c0720",
+   "c0332",
+   "c0770",
+   "c0520",
+   "c0780",
+   "c0748",
+   "c0574",
+   "c0541",
+   "c0851",
+   "c0382",
+   "c0551",
+   "c0258",
+   "c0804",
+   "c0925",
+   "c0883",
+   "c0688",
+   "c0482",
+   "c0878",
+   "c0651",
+   "c0806",
+   "c0120",
+   "c0643",
+   "c0991",
+   "c0101",
+   "c0346",
+   "c0598",
+   "c0893",
+   "c0979",
+   "c0247",
+   "c0504",
+   "c0119",
+   "c0899",
+   "c0569",
+   "c0794",
+   "c0193",
+   "c0061",
+   "c0407",
+   "c0764",
+   "c0472",
+   "c0167",
+   "c0987",
+   "c0352",
+   "c0118",
+   "c0016",
+   "c0694",
+   "c0096",
+   "c0314",
+   "c0711",
+   "c0537",
+   "c0593",
+   "c0267",
+   "c0217",
+   "c0607",
+   "c0284",
+   "c0992",
+   "c0130",
+   "c0185",
+   "c0969",
+   "c0007",
+   "c0317",
+   "c0559",
+   "c0072",
+   "c0507",
+   "c0876",
+   "c0867",
+   "c0571",
+   "c0077",
+   "c0080",
+   "c0965",
+   "c0589",
+   "c0004",
+   "c0601",
+   "c0029",
+   "c0381",
+   "c0172",
+   "c0592",
+   "c0869",
+   "c0060",
+   "c0923",
+   "c0048",
+   "c0213"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Names who checks pupils' coursework, how often, and a start date this school year",
+    "backers": 81
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Gives a total yearly cost at or under £18,000 and says what it pays for",
+    "backers": 74
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Lets a pupil who is doubted show their own work, with a named teacher to talk to, before any penalty",
+    "backers": 88
+   },
+   {
+    "id": "t4",
+    "kind": "limit",
+    "text": "No pupil is penalised on an AI-detector score alone",
+    "backers": 85
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "No pupil without a laptop or a quiet place at home ends up worse off",
+    "backers": 79
+   },
+   {
+    "id": "t6",
+    "kind": "test",
+    "text": "Says how Lowmere will know, by next summer, whether cheating has gone down",
+    "backers": 63
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0286",
+    "who": "a shop worker, 50s, with a daughter in Year 11",
+    "text": "My girl works hard at the kitchen table. I do not want her marked down because a machine says it smells like a robot."
+   },
+   {
+    "citizen": "c0137",
+    "who": "a part-time student, 40s, Lowmere",
+    "text": "Do the writing in school where everyone can see it. Then nobody has to guess."
+   },
+   {
+    "citizen": "c0094",
+    "who": "a joiner, 40s, Lowmere",
+    "text": "Fine, but name who does it and when. I have heard promises before."
+   },
+   {
+    "citizen": "c0335",
+    "who": "a care worker, 20s, left school at 16",
+    "text": "Half my class had no laptop at home. Make sure they are not the ones who pay for it."
+   },
+   {
+    "citizen": "c0214",
+    "who": "a retired clerk, 70s, Lowmere",
+    "text": "The school has 18,000 pounds. Spend it on teachers' time, not on gadgets."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Supervised writing in class plus a short talk about it",
+   "title": "Write in class, then talk it through with a teacher",
+   "answer": "What changes: from 5 January 2027, every coursework essay is drafted in supervised lessons. Each department uses its two free teacher periods a week to run these sessions and hold a five-minute talk with each pupil about their work.\n\nWho: each head of department checks their own subject's pupils.\n\nCost: £16,500 a year: £12,000 for two quiet-room supervisors after school, £4,500 for 15 school laptops for pupils with none at home.\n\nDoubt: a pupil whose talk does not match gets a second talk with their named teacher, Ms Reid, and can show notes and drafts before any penalty. No detector score is ever used.\n\nCheck: in July 2027 we count proven cases against last summer's two.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Buy a tool that scores every essay for AI use",
+   "title": "Buy a detector, scan every essay, treat the score as a clue",
+   "answer": "Buy one AI-detection tool, about £6,000 a year, and scan every coursework essay. The head of school runs it from January. Essays with a high score go to the subject teacher, who reads them again. The other £12,000 stays unspent.\n\nDetectors guess. They can flag honest pupils and are easy to dodge. So a score is only a reason to look, never proof. A flagged pupil meets their head of department and explains the work before any penalty.\n\nPupils without laptops are not affected, because the tool only reads handed-in work. By next summer we count flagged essays and confirmed cases against last year's two. If most flags prove wrong, we drop the tool.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Ban all computers for coursework and go back to exams",
+   "title": "Write coursework by hand, in school, with no computers",
+   "answer": "Lowmere stops home writing. From January, all coursework is handwritten in school, in timetabled supervised sessions. No computers. Each head of department runs it, using their two free periods a week. The head spends £16,000 a year on paid invigilators and exam-hall cover, and £2,000 on paper and folders. Nobody needs a laptop or a quiet room at home. If a teacher doubts a piece, the pupil explains it to a named teacher, the head of year, before any penalty. No detector scores are used. Next summer we count proven cheating cases and compare with last summer's two. Honest limit: exam boards set what coursework counts, so we cannot drop it ourselves, and some subjects need computers.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "Each head of department checks their own pupils in supervised lessons using the two free periods a week, from 5 January 2027 (this school year)."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "pass",
+    "note": "Gives £16,500 a year, under £18,000: £12,000 for two supervisors and £4,500 for 15 laptops."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "A pupil whose talk does not match gets a second talk with named teacher Ms Reid and can show notes and drafts before any penalty."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "States plainly that no detector score is ever used."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "Writing happens in supervised lessons with quiet-room supervisors, and 15 school laptops go to pupils with none at home."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "In July 2027 it counts proven cases against last summer's two."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "pass",
+    "note": "The head of school runs the scan on every essay from January, and flagged essays go to the subject teacher; the year is not given but it is clearly this school year."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "pass",
+    "note": "Gives about £6,000 a year for the detector, with £12,000 left unspent, so under £18,000 and what it pays for is clear."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "A flagged pupil meets their head of department and explains the work before any penalty; the teacher is a role, not a name."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "pass",
+    "note": "The score is only a reason to look, never proof, and the subject teacher rereads before any penalty."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "unclear",
+    "note": "It says pupils without laptops are unaffected because the tool reads handed-in work, but does not address those with no laptop or quiet place being flagged or doing worse work."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "pass",
+    "note": "By next summer it counts flagged essays and confirmed cases against last year's two, and drops the tool if most flags prove wrong."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "pass",
+    "note": "Each head of department runs timetabled supervised sessions using their two free periods a week, from January."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "pass",
+    "note": "£16,000 on invigilators and cover plus £2,000 on paper and folders is £18,000 a year, which is at the limit."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "If a piece is doubted the pupil explains it to the head of year, a named teacher, before any penalty."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "States that no detector scores are used."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "All writing is by hand in school, so nobody needs a laptop or a quiet room at home."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "pass",
+    "note": "Next summer it counts proven cheating cases and compares them with last summer's two."
+   }
+  ],
+  "verdict": "A and C pass every test, with C exactly at the £18,000 ceiling. B passes five tests but is unclear on the no-laptop limit, since it dismisses the issue without saying how those pupils are protected.",
+  "rounds": 1
+ },
+ "ending": "accepted",
+ "jury": {
+  "seed": "2026-11-19-lowmere-coursework/jury",
+  "size": 12,
+  "ids": [
+   "c0305",
+   "c0485",
+   "c0828",
+   "c0702",
+   "c0496",
+   "c0761",
+   "c0380",
+   "c0030",
+   "c0835",
+   "c0166",
+   "c0183",
+   "c0300"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "The school's plan has pupils write coursework in supervised sessions. Should every pupil do this, or only pupils whose work is doubted?",
+  "options": [
+   "Every pupil, so nobody is singled out",
+   "Only pupils whose work is doubted",
+   "Every pupil can choose: supervised sessions, or hand-in work plus a longer talk"
+  ],
+  "votes": [
+   8,
+   3,
+   1
+  ],
+  "ruling": "Every pupil writes in supervised sessions, 8 to 3 with 1 for choice.",
+  "reasons": [
+   {
+    "juror": "c0300",
+    "text": "No child should be marked out as a suspect. Same rule for all."
+   },
+   {
+    "juror": "c0835",
+    "text": "Watching everyone for the sake of a few is too much. Step in where there is doubt."
+   },
+   {
+    "juror": "c0496",
+    "text": "Some pupils cannot stay after school. Let them choose another way."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "education",
+  "decision": "adopted",
+  "answer": "A",
+  "text": "Lowmere adopts Answer A: coursework drafted in supervised lessons from 5 January 2027, a five-minute talk with each pupil, and a second talk with a named teacher before any penalty. £16,500 a year.",
+  "statement": "This answer passed all six of the citizens' tests, including both red lines: no detector score is ever used, and pupils with no laptop get a school one. It costs £16,500 of the £18,000. The jury ruled 8 to 3 that every pupil writes in the sessions, so no child is singled out. I want to know in July whether cheating has gone down. If it has not, we change it."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "Ofqual's summer 2026 malpractice statistics will show more than 100 proven AI-related plagiarism cases in GCSE, AS and A level in England.",
+   "due": "2027-01-31",
+   "rule": "Ofqual, 'Malpractice in GCSE, AS and A level: summer 2026 exam series' on gov.uk. Last published: 100 proven AI cases for summer 2025 (11 Dec 2025).",
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "claim": "Ofqual will report fewer than 5,025 malpractice cases involving students for summer 2026.",
+   "due": "2027-01-31",
+   "rule": "Ofqual, summer 2026 malpractice statistics on gov.uk, total student malpractice cases. Last published: 5,025 for summer 2025, down from 5,155.",
+   "result": "pending"
+  }
+ ]
+}

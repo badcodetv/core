@@ -1,0 +1,5 @@
+{
+ "design": "There is money, spare beds and flats that can be repaired, and a charity ready to help, so a careful plan can meet every ask. The trade-offs are mild: fast beds now, repaired flats for the long term. A quick answer that only fills the hostel will miss the 'stay housed' and 'no one else loses out' asks.",
+ "tests_hint": "Names how many veterans get a bed and by which date; says who pays and how much; names a support worker or a person to call; says what happens after Christmas; must not push other rough sleepers or families on the housing list down the queue; must not cut existing services to pay.",
+ "angles": ["Hostel beds now, repaired flats next, charity support", "Repair the 18 empty flats first, hostel as bridge", "Hand the money to the charity to run it all"]
+}

@@ -1,0 +1,5 @@
+{
+ "design": "A fixed grant, a £310,000 gap, a promise of no council tax rise and one lifeline route make a hard bind: filling the gap breaks the tax promise, charging more breaks the cap, and cutting the 14 strands four villages. Every route crosses a red line.",
+ "tests_hint": "Limits: no village loses its only bus; no council tax rise; fare never above £2. Tests: say who pays the £310,000 and how; name a date; say who to call if the bus fails; keep evening or Sunday buses.",
+ "angles": ["Cut the 15, keep the 14", "Charge more on the market town leg", "Ask the firm to run at a loss for a year"]
+}

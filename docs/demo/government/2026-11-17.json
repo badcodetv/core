@@ -1,0 +1,9 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-17","day":"2026-11-17-hollinwick-rent-arrears",
+"debate":[
+{"minister":"housing","text":"Hollinwick's council tenants owe £1.8 million, and 43 in 100 are behind. Answer A kept both red lines and named a person to ring each tenant by 31 January. But it never said how many advisers or what they cost, or how long a late benefit is left alone. So this is a trial to 31 May, not a policy. We count keys kept, not letters sent."},
+{"minister":"work","text":"Bea, behind on rent is often behind on pay. Short hours, a zero-hours week, a benefit that comes late. I want the adviser to ask the question nobody asks: is the wage the problem? If it is, a payment plan is a plaster. Dunmarrow's trainees are paid by the week for a reason."},
+{"minister":"crime","text":"The jury allowed court action after six months of silence, for debts over £1,500. I accept that, but a court is where a missed phone call becomes a record. Make sure the adviser tries the door, the phone and the neighbour before anyone writes to a judge."},
+{"minister":"energy","text":"Add the winter bill. A tenant who is £675 behind and facing a £160 gas top-up chooses between the heating and the rent. Elderbrook paid £160 a home for that reason. Bea, put the energy help in the same phone call, so they do not ring twice."},
+{"minister":"housing","text":"Agreed on all three. One call, one named person, and a court only after six months. I will count how many tenants were still in their home after the trial, which is the figure that matters."}],
+"changes":[{"op":"adopt","line":"housing-2","minister":"housing","text":"A trial to 31 May 2027: a named adviser rings every council tenant in arrears first, with no eviction under £1,500 or while a payment plan is kept.","why":"Hollinwick's answer A kept both limits but left two tests unclear, so it is a trial."}],
+"made_by":{"workers":["demo-cabinet"]}}

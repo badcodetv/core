@@ -1,0 +1,433 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-12-corvenhall-college",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-12"
+ },
+ "plan": {
+  "area": "education",
+  "ending": "rejected"
+ },
+ "case": {
+  "title": "Corvenhall College: 300 young people want in, money for 120",
+  "short": "COLLEGE PLACES",
+  "question": "How should the college pay to take in 300 young people who are out of school and out of work?",
+  "place": "Corvenhall (made up)",
+  "story": "Corvenhall College has been asked to bring back 300 local 16 to 18 year olds who are not learning or working. The money promised covers only 120 places, and the extra 180 cost £1.1 million a year. The college has £4 million in savings, which is two months of running costs, and it is not allowed to borrow. Its evening courses for adults pay for themselves only just. Any plan has to find the £1.1 million from somewhere, and each place it can look hurts someone. The funder has said it will pay for no more than 120 places. Only a qualified teacher may lead English and maths lessons.",
+  "in_the_news": {
+   "headline": "Colleges put at heart of drive to get young people learning",
+   "why": "The government has asked colleges to bring back almost 150,000 young people who are not learning or working, and Corvenhall is one college asked to do it.",
+   "memory_id": "d0788206-0523-4317-ba70-19c69edbd7b6",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "Almost 150,000 16 to 18 year olds in England are not in education, employment or training (the Education Secretary, 11 November 2026).",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Colleges put at heart of drive to get young people learning",
+   "publisher": "GOV.UK (Department for Education)",
+   "date": "2026-11-11",
+   "url": "https://www.gov.uk/government/news/colleges-put-at-heart-of-drive-to-get-young-people-learning"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-redo",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ],
+  "note": "Round 2: case now says the funder pays for 120 places only and only teachers lead English and maths; answer C now cuts the extra 180 to 2 hours."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-12-corvenhall-college/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0817",
+   "c0518",
+   "c0480",
+   "c0857",
+   "c0525",
+   "c0907",
+   "c0758",
+   "c0766",
+   "c0575",
+   "c0147",
+   "c0521",
+   "c0416",
+   "c0335",
+   "c0794",
+   "c0964",
+   "c0169",
+   "c0850",
+   "c0103",
+   "c0570",
+   "c0956",
+   "c0195",
+   "c0115",
+   "c0502",
+   "c0363",
+   "c0351",
+   "c0705",
+   "c0005",
+   "c0710",
+   "c0718",
+   "c0602",
+   "c0621",
+   "c0221",
+   "c0927",
+   "c0384",
+   "c0934",
+   "c0027",
+   "c0879",
+   "c0105",
+   "c0953",
+   "c0582",
+   "c0402",
+   "c0213",
+   "c0259",
+   "c0352",
+   "c0300",
+   "c0826",
+   "c0806",
+   "c0476",
+   "c0414",
+   "c0178",
+   "c0446",
+   "c0255",
+   "c0172",
+   "c0267",
+   "c0750",
+   "c0024",
+   "c0882",
+   "c0461",
+   "c0167",
+   "c0295",
+   "c0200",
+   "c0684",
+   "c0097",
+   "c0697",
+   "c0507",
+   "c0861",
+   "c0561",
+   "c0281",
+   "c0359",
+   "c0915",
+   "c0633",
+   "c0616",
+   "c0664",
+   "c0029",
+   "c0051",
+   "c0725",
+   "c0665",
+   "c0952",
+   "c0586",
+   "c0995",
+   "c0837",
+   "c0951",
+   "c0222",
+   "c0112",
+   "c0463",
+   "c0405",
+   "c0637",
+   "c0392",
+   "c0482",
+   "c0600",
+   "c0418",
+   "c0454",
+   "c0368",
+   "c0041",
+   "c0832",
+   "c0080",
+   "c0584",
+   "c0821",
+   "c0478",
+   "c0680"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Offers a place to all 300 young people this college year, or says exactly how many get one and by what date.",
+    "backers": 88
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Says who pays the £1.1 million gap, with a pound figure for each source, adding up to the whole gap.",
+    "backers": 91
+   },
+   {
+    "id": "t3",
+    "kind": "limit",
+    "text": "No adult evening course closes, loses a class or goes up in price.",
+    "backers": 74
+   },
+   {
+    "id": "t4",
+    "kind": "limit",
+    "text": "The college's £4 million savings stay whole, and it borrows nothing.",
+    "backers": 79
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "Every returning young person keeps at least 5 hours a week of English and maths with a teacher.",
+    "backers": 68
+   },
+   {
+    "id": "t6",
+    "kind": "test",
+    "text": "Names one person each young person can call, and a count of how many are still learning after 6 months.",
+    "backers": 82
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0766",
+    "who": "an unemployed mother, 39, social tenant, Corvenhall",
+    "text": "My lad left school at sixteen with nothing. Somebody has to open the door for him, and not shut it on somebody else."
+   },
+   {
+    "citizen": "c0794",
+    "who": "a shop worker, 55, Corvenhall",
+    "text": "I do an evening class there to get a better job. Don't take mine to pay for his."
+   },
+   {
+    "citizen": "c0964",
+    "who": "a man off work sick, 63, Corvenhall",
+    "text": "Spending the savings is how a college ends up shut. Find the money properly."
+   },
+   {
+    "citizen": "c0147",
+    "who": "a student, 23, Corvenhall",
+    "text": "I know two lads who sat at home for a year. Maths twice a week was never going to bring them in."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Pay by cutting adult courses",
+   "title": "Close the adult evening courses and use their money for the 180",
+   "answer": "The college closes its adult evening courses and moves their teachers and rooms to the 180 extra young people. The principal does this. Adult learners pay by losing their classes. That breaks the rule against closing courses, and I say so plainly. Savings stay whole and nothing is borrowed. The weakness is that the courses only just pay for themselves, so closing them frees little cash. I cannot show £1.1 million from this source. Until the real figure is known, 120 young people get places this year. Each has one named tutor with at least 5 hours of English and maths a week. We count how many are still learning at 6 months.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Spend the savings and cap the intake",
+   "title": "Take 240 now, pay the extra from savings, keep evening classes",
+   "answer": "The college offers 240 places this college year, not 300. 120 are paid for. The other 60 cost about £367,000 a year (180 places cost £1.1 million). The college pays that from its £4 million savings. The other 60 young people go on a waiting list, with a named date. No evening course closes or costs more. We break the rule on keeping savings whole, and we say so. We borrow nothing. Every young person gets 5 hours a week of English and maths with a teacher, and one named staff member to call. We count how many are still learning after 6 months and publish it. If the count is poor, we stop spending savings.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Thin out lessons and use volunteers",
+   "title": "Thin out lessons for the extra 180 and use volunteers",
+   "answer": "The 180 extra young people get 2 hours a week of English and maths, not 5. Town volunteers lead small study groups, with one teacher looking in. This cuts the cost of each extra place by about £400,000 across the 180. The other 120 keep 5 hours with a teacher. Adult evening courses stay as they are. The £4 million savings stay whole and nothing is borrowed. Each young person gets one named mentor to call. The college counts how many are still learning at 6 months. Volunteers are free, but about £700,000 is still unfunded. It would need the funder to pay it, or fewer places would be offered this year.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "It says exactly 120 young people get places this year, not 300, so it states the count and the timing."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "fail",
+    "note": "It admits it cannot show £1.1 million from the only source it names and gives no pound figures for any source."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "fail",
+    "note": "It closes the adult evening courses and says plainly that this breaks the rule."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "It says savings stay whole and nothing is borrowed."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "The 120 who return each get at least 5 hours of English and maths a week with a named tutor, though it does not say the tutor is a qualified teacher."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "Each young person has one named tutor to call, and it counts how many are still learning at 6 months."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "pass",
+    "note": "It offers exactly 240 places this college year. The 60 on the waiting list get 'a named date', but the date itself is not given."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "fail",
+    "note": "Savings are the only source and cover about £367,000, far short of £1.1 million. The sum is also wrong: 120 extra places for 240 would cost about £733,000, not £367,000 for 60."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "It says no evening course closes or costs more."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "fail",
+    "note": "It pays from the £4 million savings and admits breaking the rule on keeping savings whole, though it borrows nothing."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "Every young person gets 5 hours a week of English and maths with a teacher."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "pass",
+    "note": "It names one staff member each can call and publishes the count still learning after 6 months."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "unclear",
+    "note": "It implies all 300 get places but ends by saying fewer places might be offered this year, with no exact number or date."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "fail",
+    "note": "Volunteers cut about £400,000 and the answer leaves £700,000 unfunded, with no paying source. It only suggests the funder, which has said it will pay for no more than 120 places."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "It says adult evening courses stay as they are."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "It says the £4 million savings stay whole and nothing is borrowed."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "fail",
+    "note": "The extra 180 get only 2 hours a week, with volunteer-led groups and one teacher looking in, which is below 5 hours with a teacher."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "pass",
+    "note": "Each young person gets one named mentor to call, and the college counts who is still learning at 6 months."
+   }
+  ],
+  "verdict": "No answer passes every test. A and B give a clear count and a named contact, but A closes adult courses and B spends the savings. C keeps courses and savings but cuts the extra 180 below 5 hours and leaves £700,000 unfunded. None funds the £1.1 million gap, and B's cost arithmetic is wrong.",
+  "rounds": 2
+ },
+ "ending": "rejected",
+ "jury": {
+  "seed": "2026-11-12-corvenhall-college/jury",
+  "size": 12,
+  "ids": [
+   "c0896",
+   "c0510",
+   "c0932",
+   "c0923",
+   "c0226",
+   "c0517",
+   "c0294",
+   "c0971",
+   "c0871",
+   "c0966",
+   "c0595",
+   "c0485"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "The college cannot fund 300 places without crossing a red line. Which red line, if any, should the town be asked to rethink?",
+  "options": [
+   "None: keep every red line and take the 120 funded places",
+   "Let the college spend part of its savings",
+   "Let adult evening courses shrink to pay for places",
+   "Let the extra young people have fewer teacher hours"
+  ],
+  "votes": [
+   6,
+   4,
+   1,
+   1
+  ],
+  "ruling": "The jury kept every red line and chose the 120 funded places, 6 to 4 over spending savings.",
+  "reasons": [
+   {
+    "juror": "c0932",
+    "text": "A college that spends its savings is a college that shuts. Take the 120 and do them properly."
+   },
+   {
+    "juror": "c0294",
+    "text": "Folk my age go to those evening classes. I would not close one for anybody."
+   },
+   {
+    "juror": "c0510",
+    "text": "I know what sitting at home does to you. I would use some of the savings and not leave 180 waiting."
+   },
+   {
+    "juror": "c0871",
+    "text": "Cut the adult classes a bit, not shut them. Young people need the door open more."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "education",
+  "decision": "sent-back",
+  "text": "Sent back. All three answers cross a red line: one closes adult evening courses, one spends the savings, one cuts teacher hours. None pays the £1.1 million gap.",
+  "statement": "I'm sending this back. Answer A closes the adult evening classes, B spends the college's savings and C gives the extra 180 young people only 2 hours of English and maths. Each crosses a red line the citizens set, and none shows where the £1.1 million comes from. The jury kept every red line, 6 to 4, so I won't ask Corvenhall to give one up. What would a child notice? Being let in, then being let down. Come back with a plan that pays for itself."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The ONS figure for UK 16 to 24 year olds not in education, employment or training, for July to September 2026, will be above 970,000.",
+   "due": "2026-11-26",
+   "rule": "ONS 'Young people not in education, employment or training (NEET), UK: November 2026', headline figure. Last published: 981,000 (13.0%), April to June 2026, released 27 Aug 2026.",
+   "result": "pending"
+  }
+ ]
+}

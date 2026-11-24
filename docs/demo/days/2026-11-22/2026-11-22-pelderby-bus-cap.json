@@ -1,0 +1,447 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-22-pelderby-bus-cap",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-22"
+ },
+ "plan": {
+  "area": "transport",
+  "ending": "accepted"
+ },
+ "case": {
+  "title": "Pelderby's £380,000 to make the £2 bus fare cap work on its country routes",
+  "short": "PELDERBY BUSES",
+  "question": "How should Pelderby spend £380,000 so its bus company joins the £2 fare cap in January without losing the routes and last buses people rely on?",
+  "place": "Pelderby (made up)",
+  "story": "Pelderby (made up) is a market town of 19,000 with eleven villages around it, and no railway. One bus company runs every route. It says it will join the £2 single-fare cap on 1 January only if the lost fares are covered, and that the three village routes with the fewest riders cannot survive another loss. The council has £380,000 from a national bus fund to spend by next December. Today the same journey from the furthest village costs £4.80. Last buses leave town at 6.15pm, and the hospital shift ends at 8pm.",
+  "in_the_news": {
+   "headline": "Single bus fares to be capped at £2 in England outside London from January 2027",
+   "why": "The government's £2 cap starts in six weeks and only applies on services whose operators choose to take part, which is the choice Pelderby's council faces.",
+   "memory_id": "c1ac67d1-589b-43eb-bed9-877a41a886ea",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "From 1 January to 31 December 2027, single bus fares outside London are capped at £2 on participating services, replacing the £3 cap.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "The government says the cap is backed by £400 million of extra funding.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "The cap applies only to eligible single fares on participating services; the statement does not list which operators take part.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "£2 bus fares from January 2027",
+   "publisher": "GOV.UK (Department for Transport)",
+   "date": "2026-07-22",
+   "url": "https://www.gov.uk/government/speeches/2-bus-fares-from-january-2027"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-rival",
+   "demo-bench",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ],
+  "note": "No transport item in the 22 Nov digest; used the nearest big transport story, the cap starting 1 Jan, from the DfT statement of 22 Jul."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-22-pelderby-bus-cap/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0611",
+   "c0469",
+   "c0449",
+   "c0640",
+   "c0410",
+   "c0712",
+   "c0358",
+   "c0466",
+   "c0479",
+   "c0176",
+   "c0162",
+   "c0369",
+   "c0107",
+   "c0925",
+   "c0881",
+   "c0558",
+   "c0629",
+   "c0986",
+   "c0335",
+   "c0182",
+   "c0287",
+   "c0865",
+   "c0222",
+   "c0769",
+   "c0955",
+   "c0736",
+   "c0539",
+   "c0009",
+   "c0553",
+   "c0511",
+   "c0690",
+   "c0488",
+   "c0191",
+   "c0238",
+   "c0733",
+   "c0646",
+   "c0833",
+   "c0966",
+   "c0256",
+   "c0622",
+   "c0862",
+   "c0023",
+   "c0333",
+   "c0575",
+   "c0974",
+   "c0093",
+   "c0482",
+   "c0286",
+   "c0424",
+   "c0128",
+   "c0992",
+   "c0735",
+   "c0864",
+   "c0588",
+   "c0645",
+   "c0896",
+   "c0440",
+   "c0981",
+   "c0329",
+   "c0632",
+   "c0756",
+   "c0397",
+   "c0527",
+   "c0890",
+   "c0361",
+   "c0214",
+   "c0007",
+   "c0292",
+   "c0759",
+   "c0729",
+   "c0868",
+   "c0332",
+   "c0487",
+   "c0468",
+   "c0614",
+   "c0190",
+   "c0249",
+   "c0379",
+   "c0920",
+   "c0366",
+   "c0556",
+   "c0193",
+   "c0027",
+   "c0777",
+   "c0154",
+   "c0831",
+   "c0270",
+   "c0762",
+   "c0877",
+   "c0084",
+   "c0240",
+   "c0301",
+   "c0585",
+   "c0749",
+   "c0441",
+   "c0195",
+   "c0842",
+   "c0878",
+   "c0519",
+   "c0532"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Says how many pounds of the £380,000 pay the bus company for lost fares, and how often it is paid.",
+    "backers": 88
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Names the three weakest village routes and promises they run every month of 2027.",
+    "backers": 81
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Adds a bus leaving town after the 8pm hospital shift ends, and gives its time.",
+    "backers": 74
+   },
+   {
+    "id": "t4",
+    "kind": "test",
+    "text": "Names who counts riders and checks fares, and gives the date of the first public report.",
+    "backers": 67
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "No fare above £2 on a covered route, and no route cut or shortened during 2027.",
+    "backers": 93
+   },
+   {
+    "id": "t6",
+    "kind": "limit",
+    "text": "Spends no more than £380,000 and nothing after December 2027.",
+    "backers": 90
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0469",
+    "who": "a care worker, 64, Pelderby",
+    "text": "I do the late shift at the hospital. If the last bus goes at 6.15 I'm walking or paying a taxi. Cheaper fares are nice but I need a bus."
+   },
+   {
+    "citizen": "c0466",
+    "who": "a retired man, 77, a village outside Pelderby",
+    "text": "Our village only has the bus. If they cut it to save money, I can't get to the surgery. Promise me it stays."
+   },
+   {
+    "citizen": "c0881",
+    "who": "a young shop worker, 27, Pelderby",
+    "text": "£4.80 each way from the far villages is mad. £2 would give me back a day's shopping a month."
+   },
+   {
+    "citizen": "c0640",
+    "who": "a council tax payer, 59, Pelderby",
+    "text": "Fine, but show me the money. Say who gets paid what and who checks it. I don't want it to vanish."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Signed deal paying lost fares, with route and bus promises",
+   "title": "Signed deal: £2 fares, three routes kept, a late bus after 8pm",
+   "answer": "From 1 January 2027 the council signs a deal with the bus company. No fare above £2 on any covered route, and no route cut or shortened in 2027. The council pays £300,000 for lost fares, £75,000 each quarter, only after the fare count is checked. Another £50,000 keeps routes 41 (Oakhurst), 42 (Thorley) and 43 (Wick End) running every month of 2027. £20,000 pays for a new bus leaving town at 8.20pm, after the hospital shift. £10,000 pays the council's Bus Audit Officer, who counts riders and checks fares. First public report: 31 March 2027. Nothing is spent after December 2027. If a promise breaks, the next payment stops.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Council buys extra buses and runs the weak routes itself",
+   "title": "Council buys three buses and runs the weak village routes itself",
+   "answer": "The council buys three used buses (£210,000) and runs the three weakest village routes itself from 1 January, at £2 a single, every month of 2027. It also adds an 8.15pm bus leaving town for those villages, after the hospital shift. Council staff drive and maintain them, costing £140,000 to December 2027. The last £30,000 goes to the bus company in two payments, June and October, to cover lost fares on its other routes. The council's finance team counts riders and checks fares every month, and publishes the first report on 15 April 2027. It worked if riders rise, no run is missed, and the villages keep their buses.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Cap only on town routes first; villages later",
+   "title": "Cap town routes first, keep every village route running",
+   "answer": "From 1 January, the £2 cap runs on the town routes only. The council pays the bus company £150,000 for lost fares, in four payments, one each quarter. £130,000 holds every village route at today's timetable all of 2027, so none is cut or shortened. Village fares stay as they are until the cap reaches them in July, if the first report shows money is left. £60,000 pays for one extra bus leaving town at 8.20pm, from the hospital. £40,000 is kept back. The council's finance team counts riders and checks fares, and posts the first report on 31 March. We would know it worked if town riders rise and no route is lost.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "Gives £300,000 for lost fares, paid £75,000 each quarter after the fare count is checked (4 x £75,000 = £300,000)."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "pass",
+    "note": "Names routes 41 Oakhurst, 42 Thorley and 43 Wick End and promises they run every month of 2027; it never says these are the weakest three."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "Funds a new bus leaving town at 8.20pm, after the 8pm hospital shift, for £20,000."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "Names the council's Bus Audit Officer to count riders and check fares, and sets the first public report for 31 March 2027."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "States no fare above £2 on any covered route and no route cut or shortened in 2027."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "£300,000 + £50,000 + £20,000 + £10,000 = £380,000 exactly, and it says nothing is spent after December 2027."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "pass",
+    "note": "The last £30,000 goes to the company for lost fares on its other routes, in two payments (June and October); the sum is small but clearly stated."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "fail",
+    "note": "Says 'the three weakest village routes' run every month of 2027 but never names them."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "Adds an 8.15pm bus leaving town, after the 8pm shift, though only for the council-run villages."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "pass",
+    "note": "The council's finance team counts riders and checks fares monthly, with the first report on 15 April 2027."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "unclear",
+    "note": "Council-run routes are £2 and none is cut, but it says nothing about the company's other routes keeping fares at £2 or staying unshortened."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "pass",
+    "note": "£210,000 + £140,000 + £30,000 = £380,000 exactly, with costs only to December 2027 and the last payment in October."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "pass",
+    "note": "Gives £150,000 for lost fares in four payments, one each quarter."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "fail",
+    "note": "Holds 'every village route' at today's timetable but names no routes, and does not pick out the three weakest."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "Pays £60,000 for one extra bus leaving town at 8.20pm from the hospital, after the 8pm shift."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "The council's finance team counts riders and checks fares, and the first report is posted on 31 March."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "fail",
+    "note": "Village fares stay as they are (£4.80 from the furthest village) until July at the earliest, so fares above £2 remain on routes it covers."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "pass",
+    "note": "£150,000 + £130,000 + £60,000 + £40,000 = £380,000, within the limit; the £40,000 kept back has no stated use after December 2027."
+   }
+  ],
+  "verdict": "Only A passes every test, with its £380,000 adding up and every route and the late bus named. B and C both fail t2 by not naming the three routes, and C also fails t5 by leaving village fares above £2 until July. B leaves the rest of the company's routes unaddressed on t5.",
+  "rounds": 1
+ },
+ "ending": "accepted",
+ "jury": {
+  "seed": "2026-11-22-pelderby-bus-cap/jury",
+  "size": 12,
+  "ids": [
+   "c0112",
+   "c0715",
+   "c0098",
+   "c0306",
+   "c0295",
+   "c0924",
+   "c0475",
+   "c0476",
+   "c0876",
+   "c0393",
+   "c0465",
+   "c0179"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "If the bus company misses a village route in 2027, what should the council do first?",
+  "options": [
+   "Stop the next payment, as the deal says",
+   "Keep paying but fine the company for each missed run",
+   "Keep paying and run the missed route with a council bus"
+  ],
+  "votes": [
+   5,
+   3,
+   4
+  ],
+  "ruling": "Stop the next payment, as the deal says, 5 votes to 4 for a council bus and 3 for a fine.",
+  "reasons": [
+   {
+    "juror": "c0475",
+    "text": "No bus, no money. That's what a deal means."
+   },
+   {
+    "juror": "c0924",
+    "text": "I'd want the village bus kept going whatever the argument is about."
+   },
+   {
+    "juror": "c0876",
+    "text": "A fine each time feels fairer than cutting off all the money."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "transport",
+  "decision": "adopted",
+  "answer": "A",
+  "text": "Adopted as written: the £2 cap with the bus company, £300,000 paid quarterly after the fare count, routes 41, 42 and 43 kept all of 2027, an 8.20pm bus, and a first public report on 31 March 2027.",
+  "statement": "Right. This is the one that passed every test: £380,000 spent to the penny, nothing spent after December, and the last bus after the hospital shift. The jury said, 5 votes to 4 and 3, that if the company misses a village route the next payment stops, and that's in the deal. Sign it. Villages keep their buses, and the first report is out on 31 March."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The DfT's local bus fares statistics for October to December 2026 will show non-metropolitan England's bus fares index up by 3% or more on a year earlier.",
+   "due": "2027-03-31",
+   "rule": "DfT, Local bus fares statistics for Great Britain, Oct to Dec 2026 (provisional March 2027). Last published: non-metropolitan England +5%, June 2025 to June 2026.",
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "claim": "The DfT's statistics for January to March 2027 will show non-metropolitan England's bus fares index up by less than 5% on a year earlier.",
+   "due": "2027-09-30",
+   "rule": "DfT, Local bus fares statistics, Jan to Mar 2027. Last published: non-metropolitan England +5%, June 2025 to June 2026 (22 Sep 2026).",
+   "result": "pending"
+  }
+ ]
+}

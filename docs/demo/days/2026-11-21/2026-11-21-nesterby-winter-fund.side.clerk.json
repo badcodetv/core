@@ -1,0 +1,5 @@
+{
+ "design": "A fixed £90,000 fund faces a £300,000 gap. Council tax can't rise, and the leisure centre, library and gritting are the only other money. Every route crosses a red line the town would set: no tax rise, no closure, no cut to winter gritting or care.",
+ "tests_hint": "Limits: no council tax rise; no closing the leisure centre or library; nobody's gas or electricity cut off. Tests: says who pays and how much; names a date help starts; names who can apply and how.",
+ "angles": ["Spread the £90,000 thinly across all 1,100 homes", "Target the poorest 300 homes, fund the rest by savings", "Borrow and ask the energy firms for a bill freeze"]
+}

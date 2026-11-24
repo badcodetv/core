@@ -1,0 +1,5 @@
+{
+  "design": "A fixed budget and a real split: chasing hard brings money back fast but risks evictions of people who can't pay, while help-first protects homes but is slower and costs up front. A careful plan can keep within the red lines (no evictions of families over small debts, no repair cuts) but cannot promise both quick recovery and no extra cost, so no answer should pass everything.",
+  "tests_hint": "Limits: no eviction over a small debt; no cut to repairs; no tenant left without a named person to call. Tests: say who pays and how much, give a date for the first results, protect tenants on benefits delays, and recover a stated share of the £1.8 million.",
+  "angles": ["Help first: advisers and payment plans before letters", "Firm but fair: staged letters, eviction as last step", "Write off small debts, chase large ones hard"]
+}

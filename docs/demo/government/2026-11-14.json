@@ -1,0 +1,8 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-14","day":"2026-11-14-elderbrook-winter-fund",
+"debate":[
+{"minister":"energy","text":"Elderbrook has £600,000 and 1,500 struggling homes. After £120,000 to run it, £480,000 is left. That pays the full £400 to only 1,200 homes. No answer could reach all 1,500, so I am signing a trial of C: £160 a home by 18 December and 150 leaky homes fixed by 31 March. Pounds a year: £160 now, and a cheaper bill every winter after for the 150."},
+{"minister":"health","text":"Mira, I see the other end of this. Cold homes mean winter admissions, and the Bellmoor trial counts exactly those. A fixed house is worth more to a frail patient than a one-off payment. I back the split, but 150 homes out of 1,500 is one in ten. The other nine are cold again next year."},
+{"minister":"housing","text":"And the landlord has to agree to the works. For private renters that is the whole problem. The 300 missing from the benefit list are mostly renters and pensioners, and they are the ones whose landlord says no. Mira, what happens then?"},
+{"minister":"energy","text":"The fitter moves on to the next leaky home on the list, Bea. We do not wait for a landlord. That is a weakness and the trial will count it. The fund is one-off. A lasting fix is the only part of it that is still working next winter."}],
+"changes":[{"op":"adopt","line":"energy-1","minister":"energy","text":"A winter trial to 31 March 2027: £160 to every struggling home by 18 December, and the 150 leakiest homes insulated, from a fund that cannot reach everyone.","why":"Elderbrook's answer C passed five of six tests; no answer could give every home the full £400."}],
+"made_by":{"workers":["demo-cabinet"]}}

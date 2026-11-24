@@ -1,0 +1,424 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-15-fenmoor-bus-cap",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-15"
+ },
+ "plan": {
+  "area": "transport",
+  "ending": "rejected"
+ },
+ "case": {
+  "title": "Fenmoor's country buses meet the new £2 fare cap",
+  "short": "FENMOOR BUS CAP",
+  "question": "How should Fenmoor pay to keep its country buses running when fares must fall to £2?",
+  "place": "Fenmoor (made up)",
+  "story": "Fenmoor is a made-up rural district with 14 villages and one market town. Its two country bus routes, the 14 and the 15, lose money every week. From 1 January the firm must charge no more than £2 a single fare to stay in the national cap scheme, which pays back only part of the lost fares. That leaves a gap of £310,000 a year. The council's bus grant is fixed and tied to each route, the council has no spare reserves, and the firm's buses are leased to 2028, so dropping the 15 saves it nothing. The firm's board has refused to run at a loss. The 14 is the only bus for four villages.",
+  "in_the_news": {
+   "headline": "Councils cautiously welcome £2 bus fare cap",
+   "why": "The government's £2 single fare cap for England outside London starts in January 2027, while county councils warn rural bus services keep disappearing.",
+   "memory_id": "9ea3b2cd-54a6-4660-a2d5-0e501369c0ad",
+   "sources": [
+    "s1",
+    "s2"
+   ]
+  },
+  "facts": [
+   {
+    "text": "Single bus fares in England outside London are capped at £2 from 1 January to 31 December 2027, replacing the £3 cap.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "The cap is backed by £400 million of extra government funding.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "County councils found almost a fifth of county bus services have been lost since 2018.",
+    "sources": [
+     "s2"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "£2 bus fares from January 2027 (written statement)",
+   "publisher": "Department for Transport",
+   "date": "2026-07-22",
+   "url": "https://www.gov.uk/government/speeches/2-bus-fares-from-january-2027"
+  },
+  {
+   "id": "s2",
+   "title": "Councils cautiously welcome £2 bus fare cap",
+   "publisher": "LocalGov",
+   "date": "2026-07-22",
+   "url": "https://www.localgov.co.uk/Councils-cautiously-welcome-2-bus-fare-cap-/64717"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-rival",
+   "demo-redo",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ],
+  "note": "Backfill. No transport item in the 15 Nov digest; closest real UK transport story used (22 Jul 2026 statement the bus cap rests on). Round 2: the bind was too loose (grant movable, firm's savings); tightened the case and brought each answer into line."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-15-fenmoor-bus-cap/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0487",
+   "c0977",
+   "c0315",
+   "c0935",
+   "c0883",
+   "c0084",
+   "c0938",
+   "c0882",
+   "c0765",
+   "c0158",
+   "c0399",
+   "c0446",
+   "c0150",
+   "c0930",
+   "c0252",
+   "c0128",
+   "c0964",
+   "c0893",
+   "c0632",
+   "c0497",
+   "c0592",
+   "c0875",
+   "c0841",
+   "c0729",
+   "c0891",
+   "c0712",
+   "c0257",
+   "c0822",
+   "c0294",
+   "c0743",
+   "c0263",
+   "c0005",
+   "c0579",
+   "c0889",
+   "c0570",
+   "c0022",
+   "c0323",
+   "c0437",
+   "c0386",
+   "c0094",
+   "c0248",
+   "c0951",
+   "c0416",
+   "c0283",
+   "c0243",
+   "c0620",
+   "c0228",
+   "c0049",
+   "c0563",
+   "c0345",
+   "c0111",
+   "c0671",
+   "c0627",
+   "c0238",
+   "c0772",
+   "c0171",
+   "c0502",
+   "c0838",
+   "c0666",
+   "c0334",
+   "c0086",
+   "c0531",
+   "c0274",
+   "c0083",
+   "c0664",
+   "c0043",
+   "c0118",
+   "c0558",
+   "c0756",
+   "c0936",
+   "c0500",
+   "c0640",
+   "c0091",
+   "c0146",
+   "c0818",
+   "c0123",
+   "c0307",
+   "c0813",
+   "c0518",
+   "c0574",
+   "c0476",
+   "c0422",
+   "c0527",
+   "c0803",
+   "c0874",
+   "c0268",
+   "c0191",
+   "c0785",
+   "c0784",
+   "c0082",
+   "c0549",
+   "c0660",
+   "c0362",
+   "c0372",
+   "c0617",
+   "c0494",
+   "c0244",
+   "c0546",
+   "c0012",
+   "c0210"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "limit",
+    "text": "No village keeps fewer than one bus each weekday: all four villages on the 14 must still have a weekday bus.",
+    "backers": 91
+   },
+   {
+    "id": "t2",
+    "kind": "limit",
+    "text": "No rise in council tax in Fenmoor this year, for any home.",
+    "backers": 78
+   },
+   {
+    "id": "t3",
+    "kind": "limit",
+    "text": "No single fare above £2 on the 14 or the 15, for anyone.",
+    "backers": 84
+   },
+   {
+    "id": "t4",
+    "kind": "test",
+    "text": "Says who pays the £310,000 gap, and how many pounds each payer puts in.",
+    "backers": 88
+   },
+   {
+    "id": "t5",
+    "kind": "test",
+    "text": "Gives a start date, and a named job or phone line people ring when a bus doesn't turn up.",
+    "backers": 72
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0158",
+    "who": "a retired man, 80s, Fenmoor village",
+    "text": "I can't drive. If the 14 goes I can't get to the surgery. Cheap fares are no use to me with no bus."
+   },
+   {
+    "citizen": "c0252",
+    "who": "a care worker, 60s, Fenmoor town",
+    "text": "I'll pay £2 gladly, but the money has to come from somewhere that isn't my council tax."
+   },
+   {
+    "citizen": "c0935",
+    "who": "a lad, 18, Fenmoor",
+    "text": "The last bus home is the only way I get to my job. Tell us who's paying, and tell us the date."
+   },
+   {
+    "citizen": "c0964",
+    "who": "a man on long-term sick leave, 60s, Fenmoor",
+    "text": "Don't promise me a bus and then say it's 'under review'. I want a name I can ring."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Cut the 15, keep the 14",
+   "title": "Cut the 15, keep the 14, fund it with a small tax rise",
+   "answer": "From 1 January the 15 stops and the 14 keeps a bus every weekday to all four villages, at £2 a single. The gap is still £310,000, because the grant is tied to each route and the firm saves nothing by dropping the 15. Fenmoor Council pays it by raising council tax on every home by about £14 a year, from April. Households pay; the firm and grant pay nothing more. A named Bus Officer on one phone line logs missed buses and the log goes public monthly. It worked if fewer than two buses a month are missed by June.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Charge more on the market town leg",
+   "title": "Charge £3 on the market town leg to close the gap",
+   "answer": "From 1 January the firm charges £3 on the market town leg of both routes and £2 elsewhere. That raises about £310,000 a year from riders who travel into town, so council tax stays flat and every village keeps its weekday bus. The firm does this and the council signs the deal by 1 December. Riders on the town leg pay £1 more each way. Fenmoor's Bus Officer, on one named phone line, logs missed buses and complaints each month. It worked if the gap is closed by June and town leg trips stay above half of today's.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Ask the firm to run at a loss for a year",
+   "title": "Ask the firm to take the loss, with a fallback if it won't",
+   "answer": "Ask the firm to run the 14 and 15 at £2 for 2027 and take the £310,000 loss, with the council paying £0 and no tax rise. The firm's board has already refused to run at a loss, so I expect a no. If it says no by 1 December, the 14 shrinks to one market day bus a week, and the 15 stops. Three of the four villages then have no weekday bus. The council's Bus Officer, on a named phone line, logs missed buses. It worked only if the firm says yes.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "The 14 keeps a bus every weekday to all four villages from 1 January."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "fail",
+    "note": "It raises council tax on every home by about £14 a year from April, which breaks the no-rise limit."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "Fares stay at £2 a single, and the 15 stops so it has no fare."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "Households pay the £310,000 through council tax at about £14 each, and the firm and grant pay nothing more."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "It gives 1 January for the bus change and April for the tax, plus a named Bus Officer on one phone line that logs missed buses."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "pass",
+    "note": "It says every village keeps its weekday bus and the £3 leg and £2 elsewhere do not cut routes."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "pass",
+    "note": "It says council tax stays flat, and the money comes from fares."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "fail",
+    "note": "It charges £3 on the market town leg of both routes, which is above the £2 limit."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "pass",
+    "note": "Riders on the town leg pay the £310,000, at £1 more each way."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "It starts on 1 January, with the deal signed by 1 December, and gives a named Bus Officer on one phone line."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "fail",
+    "note": "Its fallback leaves three of the four villages with no weekday bus."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "pass",
+    "note": "The council pays £0 and there is no tax rise."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "The ask is to run both routes at £2, and the fallback adds no higher fare."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "It names the firm as payer of the full £310,000, though the firm has already refused."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "unclear",
+    "note": "It gives only 2027 and a 1 December deadline, not a clear start date, though it names a Bus Officer on a phone line."
+   }
+  ],
+  "verdict": "A fails the tax limit, B fails the £2 fare limit, and C fails the village-bus limit in its fallback. No answer passes all three limits, and C rests on a payer who has already refused.",
+  "rounds": 2
+ },
+ "ending": "rejected",
+ "jury": {
+  "seed": "2026-11-15-fenmoor-bus-cap/jury",
+  "size": 12,
+  "ids": [
+   "c0903",
+   "c0014",
+   "c0788",
+   "c0380",
+   "c0053",
+   "c0109",
+   "c0731",
+   "c0534",
+   "c0669",
+   "c0402",
+   "c0643",
+   "c0467"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "Fenmoor's bus gap is £310,000 and every route crosses a red line. Which red line should the town rethink first?",
+  "options": [
+   "Allow a council tax rise of about £14 a home",
+   "Allow £3 fares on the market town leg",
+   "Let some villages lose their weekday bus"
+  ],
+  "votes": [
+   8,
+   4,
+   0
+  ],
+  "ruling": "The town should rethink the tax promise, 8 to 4.",
+  "reasons": [
+   {
+    "juror": "c0014",
+    "text": "A few pounds a year is a fair price. If the 14 goes, I'm stuck at home."
+   },
+   {
+    "juror": "c0402",
+    "text": "Tax goes up and never comes down. Charge the riders who use the town leg."
+   },
+   {
+    "juror": "c0380",
+    "text": "I'd pay £14 for my neighbours to get to work. Fares hit the ones who can least afford them."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "transport",
+  "decision": "sent-back",
+  "text": "Nothing is signed. Every answer crossed a red line: a tax rise, a £3 fare, or villages left with no weekday bus. The day goes back to the council and the firm.",
+  "statement": "Joe Kettering here. Every plan on my desk broke a promise the town's citizens set: the tax one, the £2 fare, or a bus for every village. The jury says to rethink the tax promise, 8 to 4, but the fare test and the missed-bus test didn't pass either. So I'm signing nothing. Go back, find the £310,000 without stranding a village, and bring me a date and a phone number."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "DfT's local bus fares index for England outside London will show a rise of less than 3% between March 2026 and March 2027.",
+   "due": "2027-09-30",
+   "rule": "DfT quarterly bus fares statistics for January to March 2027, England outside London. Last published: up 6% from March 2025 to March 2026 (18 Jun 2026).",
+   "result": "pending"
+  }
+ ]
+}

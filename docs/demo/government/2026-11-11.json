@@ -1,0 +1,8 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-11","day":"2026-11-11-bellmoor-winter-reviews",
+"debate":[
+{"minister":"health","text":"Bellmoor's citizens set six tests. Answer A passed five and missed one: it names no number for hospital admissions. No answer passed everything, so this is a trial, not a policy. Five temporary nurses, 2,200 reviews, the sickest 300 seen by 15 December, every housebound patient visited at home. It ends 31 March."},
+{"minister":"housing","text":"Tunde, a housebound patient in a cold, damp flat is not fixed by a nurse's visit. Last week I promised a named worker for every veteran. Same idea here: when a nurse sees a bad flat, there should be someone to ring about it, and a landlord who has to answer."},
+{"minister":"work","text":"Four months of temporary nurses, paid only if the reviews get done. I know that deal. It is a zero-hours contract with a smile on it. If we hire them, pay them for the shift and the travel, not just the tick in the box."},
+{"minister":"health","text":"Fair, Callum. The £126 pays per review, but the nurse's wage must not hang on it. And the jury said 7 to 5 that the lowest-risk patients wait until spring. I do not like it. I will say so on the page, and I will count who waited."}],
+"changes":[{"op":"adopt","line":"health-1","minister":"health","text":"A winter trial to 31 March 2027: the sickest 300 patients seen by 15 December, every housebound patient visited at home, and a target number for admissions.","why":"Bellmoor's answer A passed five of six tests and missed only the target number, so it is a trial."}],
+"made_by":{"workers":["demo-cabinet"]}}

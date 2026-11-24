@@ -1,0 +1,446 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-11-bellmoor-winter-reviews",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-11"
+ },
+ "plan": {
+  "area": "health",
+  "ending": "partly"
+ },
+ "case": {
+  "title": "Who gets the winter check-up first in Bellmoor?",
+  "short": "WINTER CHECK-UPS",
+  "question": "Bellmoor's GPs can't review all 2,400 frail and chronically ill patients before spring. Who goes first, and how?",
+  "place": "Bellmoor (made up)",
+  "story": "Bellmoor is a made-up market town. Its group of GP surgeries has been given ring-fenced winter money, paid at £126 for each frail or chronically ill patient it actually reviews. 2,400 patients qualify, 380 of them housebound. The surgeries have five nurses, enough for about 1,500 reviews by 31 March. A home visit takes three times as long as a clinic review. A temporary nurse costs £4,200 a month, and the money only pays for reviews done. Clinics are quick but leave out the housebound. Home visits reach the sickest but cut the numbers seen.",
+  "in_the_news": {
+   "headline": "£40 million for GPs to keep vulnerable patients out of hospital this winter",
+   "why": "The case plays out the real ring-fenced winter money for GP check-ups of frail and chronically ill patients, paid per patient supported.",
+   "memory_id": "bdfa572f-8bfe-4dd2-8737-19ec0f11f530",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "The government has ring-fenced £40 million for GP practices to support up to 300,000 patients with heart disease, frailty or COPD this winter.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "Primary care networks receive £126 for each eligible patient supported.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "£40 million for GPs to keep vulnerable patients out of hospital this winter",
+   "publisher": "GOV.UK (Department of Health and Social Care)",
+   "date": "2026-11-09",
+   "url": "https://www.gov.uk/government/news/40-million-for-gps-to-keep-vulnerable-patients-out-of-hospital-this-winter"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-rival",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ],
+  "note": "Round 2: tests tightened (t1, t2, t6) before the gate because round-1 tests were too easy; answers unchanged."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-11-bellmoor-winter-reviews/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0337",
+   "c0362",
+   "c0355",
+   "c0898",
+   "c0494",
+   "c0851",
+   "c0924",
+   "c0667",
+   "c0190",
+   "c0054",
+   "c0055",
+   "c0133",
+   "c0877",
+   "c0580",
+   "c0715",
+   "c0889",
+   "c0706",
+   "c0904",
+   "c0422",
+   "c0047",
+   "c0284",
+   "c0923",
+   "c0263",
+   "c0172",
+   "c0526",
+   "c0369",
+   "c0463",
+   "c0733",
+   "c0364",
+   "c0839",
+   "c0786",
+   "c0760",
+   "c0299",
+   "c0896",
+   "c0182",
+   "c0812",
+   "c0621",
+   "c0080",
+   "c0068",
+   "c0036",
+   "c0815",
+   "c0037",
+   "c0174",
+   "c0237",
+   "c0938",
+   "c0534",
+   "c0128",
+   "c0681",
+   "c0965",
+   "c0330",
+   "c0348",
+   "c0285",
+   "c0803",
+   "c0976",
+   "c0343",
+   "c0408",
+   "c0165",
+   "c0508",
+   "c0878",
+   "c0307",
+   "c0800",
+   "c0880",
+   "c0816",
+   "c0712",
+   "c0668",
+   "c0856",
+   "c0710",
+   "c0482",
+   "c0512",
+   "c0325",
+   "c0134",
+   "c0959",
+   "c0806",
+   "c0290",
+   "c0870",
+   "c0940",
+   "c0150",
+   "c0805",
+   "c0994",
+   "c0990",
+   "c0557",
+   "c0043",
+   "c0902",
+   "c0483",
+   "c0200",
+   "c0025",
+   "c0985",
+   "c0351",
+   "c0899",
+   "c0809",
+   "c0089",
+   "c0552",
+   "c0842",
+   "c0151",
+   "c0398",
+   "c0703",
+   "c0646",
+   "c0229",
+   "c0581",
+   "c0569"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Says how many of the 2,400 patients get a review by 31 March, and the number is at least 2,200",
+    "backers": 70
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Names a date by which the sickest 300 patients are seen, no later than 15 December, and says who picks them",
+    "backers": 80
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Says who phones or visits a patient who misses a review, and how many tries before giving up",
+    "backers": 66
+   },
+   {
+    "id": "t4",
+    "kind": "limit",
+    "text": "Every one of the 380 housebound patients gets a home visit by 31 March",
+    "backers": 91
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "Spends no more than the £126 paid per review done, and asks the town for no extra money",
+    "backers": 72
+   },
+   {
+    "id": "t6",
+    "kind": "test",
+    "text": "Says how the surgeries will check it worked and sets a target number, such as hospital admissions falling by a stated share",
+    "backers": 63
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0133",
+    "who": "a woman in her 20s on long-term sick leave",
+    "text": "I can't get to a clinic on a bad week. If nobody comes to me, I just don't get seen."
+   },
+   {
+    "citizen": "c0190",
+    "who": "a carer in her 50s, Bellmoor",
+    "text": "My mum is frail and gets missed every year. Ring her, and ring me if she doesn't pick up."
+   },
+   {
+    "citizen": "c0337",
+    "who": "a shop worker in her 30s, Bellmoor",
+    "text": "Don't promise everyone and see nobody. Tell us how many, and by when."
+   },
+   {
+    "citizen": "c0054",
+    "who": "a man in his 40s, Bellmoor",
+    "text": "If nurses are hired, fine, but don't ask us for more council tax to do it."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Sickest first by risk list, then clinics for the rest",
+   "title": "Sickest seen by 15 Dec, all housebound at home, 2,200 reviews",
+   "answer": "Hire five temporary nurses for four months, £84,000, paid from review income. With the five staff nurses, that is enough for 2,200 reviews by 31 March: all 380 housebound patients at home, 1,820 in clinics. Each surgery's senior GP ranks patients by risk, and the sickest 300 are seen by 15 December. A practice administrator phones any patient who misses a review, and the named carer too. After three tries on different days, the patient is offered a home visit. Reviews pay £126 each, so 2,200 bring in £277,200. No council tax rise, no extra money asked. Surgeries publish monthly counts of reviews done and hospital admissions among these patients, compared with last winter.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Home visits for the housebound, clinics for everyone else",
+   "title": "Visit all 380 housebound at home, clinics for the rest, 2,000 seen",
+   "answer": "Plan: 2,000 reviews by 31 March. First, nurses visit all 380 housebound patients at home, finished by 31 January. GPs pick the sickest 200 clinic patients to be seen by 15 December. The other 1,420 come to clinics. This needs about 5 extra temporary nurses for four months, £84,000, paid from the £126 per review (2,000 reviews bring £252,000). The town pays nothing extra. A named surgery receptionist rings anyone who misses, and rings the carer too, three tries over two weeks, then a nurse calls at the door. We check by counting winter hospital admissions of reviewed patients against last winter, and report the review count monthly.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Hire temporary nurses, group clinics, drop-in evenings",
+   "title": "Four temporary nurses, group clinics and evening drop-ins",
+   "answer": "Hire four temporary nurses from December to March, £4,200 a month each, about £67,000. The surgeries pay for them only from review income, so the town pays nothing extra. Nurses run group clinics and evening drop-ins for the 1,620 patients who can travel. Two nurses do home visits for all 380 housebound patients by 31 March. Together that is 2,000 reviews, £252,000 at £126 each. The lead GPs pick the sickest 200 and see them by 15 January. A named receptionist phones a missed patient and their carer, three tries, then a nurse visits. We check it by counting winter hospital admissions against last year, and publishing reviews done each month.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "States 2,200 reviews by 31 March (380 home plus 1,820 clinic), exactly meeting the 2,200 floor; 380x3+1,820 = 2,960 clinic-equivalents fits ten nurses (~3,000)."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "pass",
+    "note": "Sickest 300 seen by 15 December, and each surgery's senior GP ranks patients by risk, so both the date and the picker are named."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "A practice administrator phones the patient and named carer; after three tries on different days the patient is offered a home visit."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "Says all 380 housebound patients are reviewed at home by 31 March, and the nurse arithmetic roughly supports it."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "Five temp nurses x 4 months x £4,200 = £84,000, correct and well under the £277,200 income (2,200 x £126); no council tax rise or extra money asked."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "fail",
+    "note": "Publishes monthly review and admission counts against last winter, but sets no target number or share, which the test requires."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "fail",
+    "note": "Plans only 2,000 reviews by 31 March, below the 2,200 floor."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "fail",
+    "note": "GPs pick only the sickest 200 clinic patients for 15 December, not 300; the housebound, likely the sickest, are not finished until 31 January."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "A named receptionist rings the patient and carer, three tries over two weeks, then a nurse calls at the door."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "pass",
+    "note": "All 380 housebound patients get nurse home visits, finished by 31 January; capacity (1,140 + 1,620 units) fits ten nurses."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "Five temp nurses for four months = £84,000, correct, against £252,000 income (2,000 x £126, correct); town pays nothing extra."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "fail",
+    "note": "Counts admissions against last winter and reports reviews monthly, but gives no target number or stated share."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "fail",
+    "note": "Plans 2,000 reviews (1,620 + 380), below the 2,200 floor."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "fail",
+    "note": "Lead GPs pick the sickest 200, seen by 15 January: wrong number (200, not 300) and a month after the 15 December deadline."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "A named receptionist phones the patient and carer, three tries, then a nurse visits."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "fail",
+    "note": "Claims two nurses visit all 380 housebound, but 380 visits = 1,140 clinic-equivalents, about four nurses' capacity at the case's rate; two cover roughly 200 visits."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "Four nurses x 4 months x £4,200 = £67,200 (stated 'about £67,000'), well under the £252,000 income; no extra money from the town."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "fail",
+    "note": "Counts winter admissions against last year and publishes monthly reviews, but names no target number or share."
+   }
+  ],
+  "verdict": "Only A reaches 2,200 reviews and the 300-by-15-December date; B and C stop at 2,000 and a smaller or later sickest group. All three skip a numeric success target, and C's two nurses cannot cover 380 home visits.",
+  "rounds": 2
+ },
+ "ending": "partly",
+ "jury": {
+  "seed": "2026-11-11-bellmoor-winter-reviews/jury",
+  "size": 12,
+  "ids": [
+   "c0384",
+   "c0415",
+   "c0221",
+   "c0548",
+   "c0386",
+   "c0685",
+   "c0356",
+   "c0206",
+   "c0970",
+   "c0383",
+   "c0989",
+   "c0044"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "Even the best plan leaves about 200 of Bellmoor's 2,400 patients without a review by 31 March. Who should wait until spring?",
+  "options": [
+   "Those the doctors rate lowest risk wait until spring",
+   "Those reviewed in the last twelve months wait until spring",
+   "Draw lots among the lowest-risk patients"
+  ],
+  "votes": [
+   7,
+   2,
+   3
+  ],
+  "ruling": "Those the doctors rate lowest risk wait, 7 to 5.",
+  "reasons": [
+   {
+    "juror": "c0384",
+    "text": "The ones who are least poorly can wait. The frail can't."
+   },
+   {
+    "juror": "c0989",
+    "text": "At my age you know who needs the nurse first. Go by who is sickest."
+   },
+   {
+    "juror": "c0356",
+    "text": "If someone had a check-up this year, they are covered. Give the slot to someone who hasn't."
+   },
+   {
+    "juror": "c0206",
+    "text": "Lots are the fairest way, with no one choosing favourites."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "health",
+  "decision": "trial",
+  "answer": "A",
+  "text": "A trial of answer A: 2,200 reviews by 31 March with five temporary nurses, the sickest 300 seen by 15 December. It tests whether the money pays for the nurses. It failed 1 of 6 tests: no target number.",
+  "statement": "Tunde Marlow, Minister for Health. Bellmoor's citizens set six tests. Answer A passed five and missed one: it sets no target number for hospital admissions. No answer passed everything, so I won't adopt it. I'm signing a trial. The jury ruled 7 to 5 that those the doctors rate lowest risk wait until spring, and the trial follows that. The sickest are seen by 15 December. Every housebound patient gets a visit. It ends on 31 March 2027 unless renewed.",
+  "stop": "2027-03-31"
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The NHS England waiting list for the end of January 2027 will be above 7.3 million treatments.",
+   "due": "2027-03-11",
+   "rule": "NHS England's referral to treatment statistics, published on 11 March 2027. Last published: 7.38 million, September 2026 (published 12 Nov 2026).",
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "claim": "Fewer than 120,000 people in England will have waited over 52 weeks at the end of January 2027.",
+   "due": "2027-03-11",
+   "rule": "NHS England's referral to treatment statistics, published on 11 March 2027. Last published: 116,353 waiting over 52 weeks, September 2026.",
+   "result": "pending"
+  }
+ ]
+}

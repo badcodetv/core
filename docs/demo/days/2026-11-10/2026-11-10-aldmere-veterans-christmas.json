@@ -1,0 +1,444 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-10-aldmere-veterans-christmas",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-10"
+ },
+ "plan": {
+  "area": "housing",
+  "ending": "accepted"
+ },
+ "case": {
+  "title": "Aldmere: a bed for every veteran by Christmas",
+  "short": "ALDMERE VETERANS",
+  "question": "How should Aldmere spend its share of the rough sleeping fund to get its veterans off the street by Christmas, and keep them off?",
+  "place": "Aldmere (made up)",
+  "story": "Aldmere is a made-up market town of 60,000 people. This week the council got the Prime Minister's letter asking every council for a plan to house veterans sleeping rough before Christmas. Aldmere counted 14 veterans on the street, out of 52 people sleeping rough. It has £420,000 from the fund, a hostel with 10 spare beds, and 18 empty council flats that need repairs. A local veterans' charity can offer support workers. The council has six weeks, and nobody wants a bed for Christmas that is gone by February.",
+  "in_the_news": {
+   "headline": "Prime minister tells English councils to develop plan to ensure no veterans sleep rough over Christmas",
+   "why": "The real letter asks councils for veteran housing plans by Christmas, paid from the enlarged rough sleeping fund; Aldmere is a made-up council answering it.",
+   "memory_id": "995c5e57-c923-453a-b2c8-950b9a14c18d",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "The government's push to end rough sleeping by Christmas began with £102m and rose to £874m after the Autumn Budget.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "£8.7m goes to eight organisations through the Reducing Veteran Homelessness programme, for veterans with complex needs.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Prime minister tells English councils to develop plan to ensure no veterans sleep rough over Christmas",
+   "publisher": "Inside Housing",
+   "date": "2026-11-09",
+   "url": "https://www.insidehousing.co.uk/news/prime-minister-tells-english-councils-to-develop-plan-to-ensure-no-veterans-sleep-rough-over-christmas-99576"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-rival",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-10-aldmere-veterans-christmas/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0470",
+   "c0794",
+   "c0877",
+   "c0802",
+   "c0825",
+   "c0477",
+   "c0853",
+   "c0128",
+   "c0991",
+   "c0633",
+   "c0331",
+   "c0575",
+   "c0652",
+   "c0499",
+   "c0592",
+   "c0906",
+   "c0182",
+   "c0101",
+   "c0031",
+   "c0456",
+   "c0717",
+   "c0432",
+   "c0385",
+   "c0010",
+   "c0488",
+   "c0249",
+   "c0606",
+   "c0766",
+   "c0628",
+   "c0174",
+   "c0071",
+   "c0308",
+   "c0948",
+   "c0799",
+   "c0898",
+   "c0353",
+   "c0147",
+   "c0370",
+   "c0475",
+   "c0913",
+   "c0327",
+   "c0090",
+   "c0351",
+   "c0914",
+   "c0902",
+   "c0531",
+   "c0511",
+   "c0243",
+   "c0300",
+   "c0570",
+   "c0549",
+   "c0563",
+   "c0244",
+   "c0020",
+   "c0162",
+   "c0434",
+   "c0603",
+   "c0735",
+   "c0299",
+   "c0208",
+   "c0496",
+   "c0220",
+   "c0306",
+   "c0260",
+   "c0763",
+   "c0987",
+   "c0421",
+   "c0172",
+   "c0454",
+   "c0975",
+   "c0175",
+   "c0253",
+   "c0756",
+   "c0407",
+   "c0862",
+   "c0294",
+   "c0045",
+   "c0968",
+   "c0190",
+   "c0744",
+   "c0137",
+   "c0611",
+   "c0059",
+   "c0270",
+   "c0152",
+   "c0591",
+   "c0966",
+   "c0371",
+   "c0483",
+   "c0710",
+   "c0005",
+   "c0422",
+   "c0159",
+   "c0980",
+   "c0044",
+   "c0538",
+   "c0094",
+   "c0528",
+   "c0768",
+   "c0324"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Says how many of the 14 veterans get a bed, and the date they will have it, before Christmas",
+    "backers": 91
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Says what each part costs out of the £420,000, and that the total stays within it",
+    "backers": 84
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Names who supports each veteran after they move in, and for at least six months",
+    "backers": 78
+   },
+   {
+    "id": "t4",
+    "kind": "test",
+    "text": "Says where each veteran lives in January, once the Christmas beds end",
+    "backers": 88
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "Must not push the other 38 rough sleepers or families on the housing list down the queue for the 18 flats",
+    "backers": 80
+   },
+   {
+    "id": "t6",
+    "kind": "limit",
+    "text": "Must not cut an existing council service to pay for it",
+    "backers": 76
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0592",
+    "who": "a social tenant, 40s, in a market town",
+    "text": "Do it for the lads, fine. But my mum has waited four years for a flat and she is not going back a place for it."
+   },
+   {
+    "citizen": "c0825",
+    "who": "a mother on benefits, 30s, in a social flat",
+    "text": "A bed at Christmas is nice. What happens in the new year when the money is gone? That is what I want to hear."
+   },
+   {
+    "citizen": "c0331",
+    "who": "a man on long-term sick leave, 50s",
+    "text": "Somebody has to knock on the door every week. A key and a goodbye does not keep a man indoors."
+   },
+   {
+    "citizen": "c0101",
+    "who": "a retired man, 70",
+    "text": "Spend the money, but tell me the sum. If the bin lorries come less often to pay for it, I will notice."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Hostel beds now, repaired flats next, charity support",
+   "title": "Hostel beds now, repaired flats next, charity support for a year",
+   "answer": "All 14 veterans get a bed. Ten go into the spare hostel beds by 1 December. Four go into repaired flats by 15 December. The council repairs all 18 flats, but veterans take only four. The other 14 go to families and the other 38 rough sleepers in normal queue order, so nobody moves down. The veterans' charity gives each man a named support worker, visiting weekly for 12 months. Cost, all from the £420,000: repairs £144,000, support £150,000, hostel £60,000, deposits and rent help £66,000. No council service is cut. In January the four stay put; the ten stay in the hostel, then move on with deposit help. We check monthly how many are still housed.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Repair the 18 empty flats first, hostel as bridge",
+   "title": "Fix the 18 empty flats first; use the hostel as a bridge",
+   "answer": "Repair all 18 empty flats first, paid from the £420,000, with the sum for each part published. Ten veterans take the spare hostel beds now. The other four go to the first repaired flats. In January, hostel veterans move into flats as they are ready. Flats are shared by need, so the other 38 rough sleepers and families on the housing list are not pushed down the queue. The veterans' charity gives support workers who visit every week for six months. No council service is cut. We would know it worked by counting: 14 veterans housed by Christmas, and all 14 still housed in June. If a flat is late, we say so openly.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Hand the money to the charity to run it all",
+   "title": "Give the £420,000 to the veterans' charity to run everything",
+   "answer": "The council gives the whole £420,000 to the local veterans' charity, which runs the plan. It puts 10 of the 14 veterans in the hostel's spare beds before Christmas. It repairs four of the 18 empty flats for the other four, so nobody on the housing list moves down. Its support workers visit every veteran each week for at least six months. The charity sets what each part costs; we have no split yet. The council pays once, up front, so no council service is cut. It worked if all 14 still have a home in January and after six months, and the charity shows the citizens its spending against £420,000.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "All 14 get a bed: ten in hostel beds by 1 December, four in repaired flats by 15 December, both before Christmas."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "pass",
+    "note": "Gives repairs £144,000, support £150,000, hostel £60,000, deposits £66,000; these sum to exactly £420,000."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "The veterans' charity gives each man a named support worker, visiting weekly for 12 months, which exceeds six months."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "In January the four stay in their flats and the ten stay in the hostel, then move on with deposit help."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "Veterans take only four flats; the other 14 go to families and the other 38 rough sleepers in normal queue order, so nobody moves down."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "States no council service is cut, and all costs are met from the £420,000."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "unclear",
+    "note": "Says 14 housed by Christmas with ten in the hostel now and four in the first repaired flats, but gives no date and admits a flat may be late."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "unclear",
+    "note": "Promises the sum for each part will be published but states no amounts and does not show the total stays within £420,000."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "The veterans' charity provides support workers visiting every week for six months, which meets the minimum."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "unclear",
+    "note": "Hostel veterans move into flats in January only 'as they are ready'; it does not say where each one lives that month."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "Flats are shared by need, so the other 38 rough sleepers and families on the housing list are not pushed down the queue."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "pass",
+    "note": "Explicitly says no council service is cut."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "unclear",
+    "note": "Ten go to the hostel before Christmas, but the timing of the four flat repairs is not stated and no date is given."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "fail",
+    "note": "Hands the whole £420,000 to the charity and says 'we have no split yet'; no cost for any part is given."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "The charity's support workers visit every veteran each week for at least six months."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "unclear",
+    "note": "Success is 'all 14 still have a home in January' but it does not say where each veteran lives."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "Repairs only four of the 18 flats for the four veterans, so nobody on the housing list moves down."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "pass",
+    "note": "Council pays once up front and states no council service is cut."
+   }
+  ],
+  "verdict": "Only A clearly meets every test, with dated beds, an itemised budget totalling £420,000 and named January homes. B is vague on dates, costs and January, and C fails t2 by leaving the money split undecided.",
+  "rounds": 1
+ },
+ "ending": "accepted",
+ "jury": {
+  "seed": "2026-11-10-aldmere-veterans-christmas/jury",
+  "size": 12,
+  "ids": [
+   "c0217",
+   "c0870",
+   "c0049",
+   "c0836",
+   "c0638",
+   "c0848",
+   "c0056",
+   "c0199",
+   "c0523",
+   "c0133",
+   "c0364",
+   "c0845"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "After the four flats for the veterans, the other 14 repaired flats are ready. Who should get the first of them?",
+  "options": [
+   "Families on the housing list",
+   "The other rough sleepers",
+   "Half to each, taking turns"
+  ],
+  "votes": [
+   5,
+   1,
+   6
+  ],
+  "ruling": "Half to each, taking turns, by 6 votes to 5 for families first and 1 for rough sleepers first.",
+  "reasons": [
+   {
+    "juror": "c0199",
+    "text": "I have waited my turn in my day. Families have been in the queue longest and should not be jumped."
+   },
+   {
+    "juror": "c0870",
+    "text": "Both are in need. Take it in turns and nobody can say it was unfair."
+   },
+   {
+    "juror": "c0845",
+    "text": "A man on the street has nothing at all. He should be first through the door."
+   },
+   {
+    "juror": "c0133",
+    "text": "I know what it is to wait and to have nowhere. Share them out, one each way."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "housing",
+  "decision": "adopted",
+  "answer": "A",
+  "text": "Adopted as written: ten veterans in hostel beds by 1 December, four in repaired flats by 15 December, a named support worker for 12 months, and a sum for every part of the £420,000.",
+  "statement": "Aldmere’s citizens set six asks, and answer A is the only one that meets every one. It gives a date for every bed, adds up to £420,000 to the pound, names who knocks on the door each week, and says where each man sleeps in January. The jury ruled the other 14 flats go half to the waiting list and half to rough sleepers, by 6 votes to 5 for families first. We adopt it. Keys by Christmas, and someone to check the lock still turns in June."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "England’s autumn 2026 rough sleeping snapshot will count fewer people sleeping rough on a single night than the 4,793 counted in autumn 2025.",
+   "due": "2027-03-31",
+   "rule": "Ministry of Housing, Communities and Local Government, Rough sleeping snapshot in England: autumn 2026, published by 31 March 2027. Last published: 4,793 (autumn 2025). If not published by the due date, void.",
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "claim": "London’s CHAIN count for October to December 2026 will be higher than the 4,678 people counted for July to September 2026.",
+   "due": "2027-03-31",
+   "rule": "Greater London Authority CHAIN quarterly report for October to December 2026, published by 31 March 2027. Last published: 4,678 (July to September 2026).",
+   "result": "pending"
+  }
+ ]
+}

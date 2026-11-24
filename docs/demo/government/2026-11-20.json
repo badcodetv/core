@@ -1,0 +1,8 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-20","day":"2026-11-20-mereholt-youth-jobs",
+"debate":[
+{"minister":"work","text":"Mereholt has £1.2 million, one in eight young people out of work, and laid-off workers over 50 whose pay runs out in February. Answer C splits it: 66 paid placements for the young, retraining for about 450 over-50s, over half the money to them. It missed the 31 January start, so it is a trial to 30 September. If under 40 young people and 200 over-50s end up in work, it stops."},
+{"minister":"housing","text":"Callum, redundancy pay running out in February is my arrears figure in April. Hollinwick had 43 in 100 tenants behind. A fifty-year-old with a mortgage or a rent and no wage is the next name on that list. Ring me when the first batch starts."},
+{"minister":"education","text":"Retraining for 450 people needs a college, and I just sent Corvenhall back because it cannot fund 300 young learners. Same college, same teachers. Callum, who is teaching these 450 and where, or are we promising a course that has no room?"},
+{"minister":"work","text":"A fair challenge, Grace. The money pays for coaching, retraining and travel, and the council has to name the provider before the first person starts. If it cannot, that is a test it fails, and I will say so. The over-50s do not have until summer."}],
+"changes":[{"op":"adopt","line":"work-2","minister":"work","text":"A trial to 30 September 2027: a split fund of paid placements for young people and retraining for laid-off workers over 50, who get more than half the money.","why":"Mereholt's answer C passed five of six tests and missed only the 31 January start, so it is a trial."}],
+"made_by":{"workers":["demo-cabinet"]}}

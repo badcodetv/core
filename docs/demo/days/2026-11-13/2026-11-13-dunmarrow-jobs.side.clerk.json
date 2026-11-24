@@ -1,0 +1,5 @@
+{
+ "design": "Money is enough and there is a known way to do it: paid traineeships with a named employer, a mentor and transport. The trade-offs are mild, so one careful answer can meet every test, while a plain jobs fair or a vague scheme leaves gaps on pay, transport or a named end date.",
+ "tests_hint": "Names how many get paid jobs and by when; says who pays wages and how much; fixes the bus problem; keeps a mentor or named contact; limit: no young person pays or loses benefits; limit: no spending beyond £1.2 million or after October.",
+ "angles": ["Paid traineeships with the cable maker, mentor, bus", "A bigger jobs fair plus careers advice in schools", "College course first, jobs later, funded by the fund"]
+}

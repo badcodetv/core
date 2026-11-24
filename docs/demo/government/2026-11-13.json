@@ -1,0 +1,8 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-13","day":"2026-11-13-dunmarrow-jobs",
+"debate":[
+{"minister":"work","text":"Dunmarrow's £1.2 million gets 60 young people paid trainee places at a cable maker, starting in March. The council pays £420 a week for 26 weeks, then the firm keeps them on. Nobody below minimum wage, every pound spent by October. Answer A passed all six tests. I adopted it. Wages on a Friday, a mentor on a Monday."},
+{"minister":"transport","text":"Callum, the thing I like is the 7pm minibus. The last bus home at 5.40 has been killing apprenticeships for years. A lad finishes a shift and cannot get back. But a minibus hired to October is a plaster. Who runs the service after that?"},
+{"minister":"education","text":"Last week I sent Corvenhall back because 180 young people had nowhere to go. Here 310 compete for 60 places. Callum, what do the other 250 get? A mentor and a shrug is not enough. Do not let the jury's order of the queue become a verdict on them."},
+{"minister":"work","text":"Fair, Grace. 60 is a start, not an answer. I will say how many were left, every month, on the same page. And Joe, the minibus is paid for to October because that is when the money ends. I know that is not forever."}],
+"changes":[{"op":"adopt","line":"work-1","minister":"work","text":"Paid trainee jobs for young people: wages at or above the legal minimum, a late minibus home, a weekly mentor, and a monthly count of who is still in work.","why":"Dunmarrow's answer A passed all six tests, both red lines included."}],
+"made_by":{"workers":["demo-cabinet"]}}

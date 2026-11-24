@@ -1,0 +1,416 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-18-kestleford-hospice",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-18"
+ },
+ "plan": {
+  "area": "health",
+  "ending": "rejected"
+ },
+ "case": {
+  "title": "Kestleford hospice: the old grant ends, the new contract falls short",
+  "short": "KESTLEFORD HOSPICE",
+  "question": "How should Kestleford's hospice cover a gap of £420,000 a year when the health board's money is fixed?",
+  "place": "Kestleford (made up)",
+  "story": "Kestleford's hospice has 12 beds and a team of nurses who visit dying people at home, day and night. It has always been paid by a short-term grant from the local health board, topped up by charity shops and raffles. The board now says grants must stop and the hospice must move to a fixed yearly contract of £1.9 million. Running the hospice costs £2.32 million. The charity has already pushed its fundraising as high as it can go, and the board says its sum is final. That leaves a gap of £420,000 a year. The contract also forbids asking patients' families for gifts, and rent, heating and office costs come to only £150,000 in all, so trimming there cannot close the gap. A decision is due before the grant runs out in March; the town must choose.",
+  "in_the_news": {
+   "headline": "Social care minister sets out 10-year palliative care plan and hospice funding changes",
+   "why": "The minister told hospices that health boards must move from short-term grants to fixed contracts, while admitting day-to-day running costs are under serious pressure.",
+   "memory_id": "82bebc21-27d3-4477-92eb-821a2e6dee26",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "The minister told the Hospice UK conference on 17 November 2026 of £125 million of recent hospice capital funding, and admitted serious pressures on day-to-day running costs.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "Health boards have been told to move hospices to transparent and sustainable contracts, because reliance on historical short-term grants is not sustainable.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Minister McGovern speech at the Hospice UK conference",
+   "publisher": "GOV.UK",
+   "date": "2026-11-17",
+   "url": "https://www.gov.uk/government/speeches/minister-mcgovern-speech-at-the-hospice-uk-conference"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-rival",
+   "demo-redo",
+   "demo-gate",
+   "demo-redo",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ],
+  "note": "Round 2: the case now says the contract forbids asking families for gifts and overheads are only £150,000; answer C rewritten to fit. Round 3: the must-balance test became a red line."
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-18-kestleford-hospice/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0172",
+   "c0625",
+   "c0126",
+   "c0906",
+   "c0710",
+   "c0127",
+   "c0454",
+   "c0998",
+   "c0965",
+   "c0175",
+   "c0037",
+   "c0387",
+   "c0488",
+   "c0600",
+   "c0822",
+   "c0785",
+   "c0690",
+   "c0504",
+   "c0902",
+   "c0056",
+   "c0177",
+   "c0784",
+   "c0033",
+   "c0199",
+   "c0685",
+   "c0693",
+   "c0142",
+   "c0583",
+   "c0187",
+   "c0361",
+   "c0637",
+   "c0897",
+   "c0787",
+   "c0125",
+   "c0471",
+   "c0990",
+   "c0283",
+   "c0642",
+   "c0017",
+   "c0765",
+   "c0848",
+   "c0741",
+   "c0343",
+   "c0010",
+   "c0549",
+   "c0977",
+   "c0697",
+   "c0826",
+   "c0942",
+   "c0924",
+   "c0314",
+   "c0188",
+   "c0085",
+   "c0018",
+   "c0146",
+   "c0286",
+   "c0105",
+   "c0839",
+   "c0350",
+   "c0912",
+   "c0851",
+   "c0078",
+   "c0473",
+   "c0961",
+   "c0605",
+   "c0269",
+   "c0905",
+   "c0103",
+   "c0378",
+   "c0804",
+   "c0618",
+   "c0824",
+   "c0118",
+   "c0735",
+   "c0531",
+   "c0308",
+   "c0585",
+   "c0143",
+   "c0070",
+   "c0457",
+   "c0219",
+   "c0435",
+   "c0119",
+   "c0975",
+   "c0494",
+   "c0174",
+   "c0638",
+   "c0727",
+   "c0316",
+   "c0463",
+   "c0698",
+   "c0401",
+   "c0336",
+   "c0508",
+   "c0521",
+   "c0394",
+   "c0108",
+   "c0182",
+   "c0528",
+   "c0366"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "limit",
+    "text": "Closes the whole £420,000 gap, with no deficit and no reliance on gifts the contract forbids",
+    "backers": 91
+   },
+   {
+    "id": "t2",
+    "kind": "limit",
+    "text": "Keeps all 12 inpatient beds open",
+    "backers": 84
+   },
+   {
+    "id": "t3",
+    "kind": "limit",
+    "text": "Charges dying patients and their families nothing, in fees or required donations",
+    "backers": 88
+   },
+   {
+    "id": "t4",
+    "kind": "limit",
+    "text": "Keeps night home visits running every night of the week, as now",
+    "backers": 79
+   },
+   {
+    "id": "t5",
+    "kind": "test",
+    "text": "Names who checks it worked and a date by which they report back to the town",
+    "backers": 72
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0965",
+    "who": "a woman in her 90s, Kestleford",
+    "text": "I don't want to be moved to a hospital ward at the end. Keep the beds, and keep the nurses who come at night."
+   },
+   {
+    "citizen": "c0625",
+    "who": "a retired man in his 60s, Kestleford",
+    "text": "We gave to the raffles for years. I'll give more, but I won't see anyone billed at a time like that."
+   },
+   {
+    "citizen": "c0127",
+    "who": "a social tenant, 60s, Kestleford",
+    "text": "My husband died at home with the night nurse beside him. Take that away and you take the point of the place."
+   },
+   {
+    "citizen": "c0710",
+    "who": "a renter in his 30s, Kestleford",
+    "text": "Somebody has to say where the money comes from. Don't tell me it'll sort itself out."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Close beds to fit the contract",
+   "title": "Close four beds, keep home nursing and free care",
+   "answer": "Close 4 of the 12 beds and cut the budget from £2.32 million to £1.9 million. That is the whole £420,000. It assumes each bed costs about £105,000 a year (4 x £105,000 = £420,000). The case gives no bed costs, so this is a guess to check. The hospice trustees decide before March and the manager runs it. The health board's fixed £1.9 million pays; no new money is asked of anyone. Night home visits stay every night, and nobody is charged anything. The cost is fewer beds, so some people will wait or die at home with nurse visits. The trustees report to the town in September, with figures, waiting times and how many chose home care.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Cut night home visits, keep beds",
+   "title": "Keep the 12 beds, stop night home visits, close the gap",
+   "answer": "Change: the hospice ends night home visits and keeps day visits and all 12 beds open. Care stays free. Nobody is billed.\n\nWho does it: managers move night nurses onto bed shifts and day rounds. Trustees sign off before March.\n\nWho pays: the £420,000 gap is closed by the night service going. The case gives no cost for night visits, so that figure is a guess. The hospice must publish the night-visit cost line first. Any shortfall I cannot fill from the case.\n\nHow we'd know: trustees and the health board check the books and how many people die at home. They report to the town by 30 September.\n\nHonest cost: people who want to die at home at night lose that help.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Ask families for a fee on a sliding scale",
+   "title": "Ask families for gifts on a sliding scale; board must allow it",
+   "answer": "Ask families who can afford it for a gift of £0 to £3,000, never a bill or a condition of care. The contract forbids this today, so the trustees must ask the health board to change that rule before March. Count only £300,000 from gifts (100 families at £3,000). Cut £120,000 from the £150,000 of rent, heating and office costs. That makes £420,000. All 12 beds and every night visit stay. If the board says no, this plan fails and the gap stays open. The hospice manager runs it. The trustees check the totals and report to the town by 30 September.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "unclear",
+    "note": "It says the cut to £1.9m closes the gap, but the £105,000-per-bed figure is a self-admitted guess the case does not support, so closing the whole £420,000 is not shown."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "fail",
+    "note": "It closes 4 of the 12 beds, so not all 12 stay open."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "It says nobody is charged anything and asks no new money of anyone."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "It says night home visits stay every night."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "unclear",
+    "note": "Trustees are named as the ones who report, with figures, but only 'in September', with no actual date."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "unclear",
+    "note": "It says the gap is closed by dropping night visits, but admits the night-visit cost is a guess and that any shortfall it cannot fill from the case, so closing the £420,000 is not shown."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "pass",
+    "note": "It keeps all 12 beds open."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "It says care stays free and nobody is billed."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "fail",
+    "note": "It ends night home visits entirely, which is the opposite of what the test asks."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "Trustees and the health board check the books and deaths at home, and report to the town by 30 September."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "fail",
+    "note": "The £300,000 comes from family gifts the contract forbids, and it admits the plan fails if the board refuses. The 100 families at £3,000 is also an unsupported guess."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "unclear",
+    "note": "It says all 12 beds stay, but only if the board lets the forbidden gifts through. The case calls the board's sum final, so the beds are not secured."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "Gifts are ranged £0 to £3,000, 'never a bill or a condition of care', so nothing is charged or required. Asking dying families for gifts is still uncomfortable."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "unclear",
+    "note": "It says every night visit stays, but this depends on the forbidden gift income arriving, which it cannot show."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "The trustees check the totals and report to the town by 30 September."
+   }
+  ],
+  "verdict": "No answer shows the full £420,000 gap closed from the case's own facts. A fails the beds test, B fails nights, and C only works if the board overturns a rule it has called final. Only A and B show real money moving, and both rest on guessed costs.",
+  "rounds": 3
+ },
+ "ending": "rejected",
+ "jury": {
+  "seed": "2026-11-18-kestleford-hospice/jury",
+  "size": 12,
+  "ids": [
+   "c0946",
+   "c0635",
+   "c0764",
+   "c0338",
+   "c0988",
+   "c0678",
+   "c0572",
+   "c0766",
+   "c0845",
+   "c0666",
+   "c0564",
+   "c0205"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "Every answer crossed a red line. Which one, if any, should Kestleford be asked to rethink?",
+  "options": [
+   "None: keep all the red lines and send it back to the board for more money",
+   "Allow a voluntary gift from families who can afford it",
+   "Allow fewer beds, so night home visits and free care stay"
+  ],
+  "votes": [
+   6,
+   3,
+   3
+  ],
+  "ruling": "The town keeps every red line and sends it back to the board, 6 to 3 to 3.",
+  "reasons": [
+   {
+    "juror": "c0572",
+    "text": "You don't fix a hospice by taking something from the dying. Go back to the board."
+   },
+   {
+    "juror": "c0666",
+    "text": "A gift that nobody has to give is fair. Let those who can, help."
+   },
+   {
+    "juror": "c0764",
+    "text": "Beds are costly and nights at home matter more to most families I know."
+   },
+   {
+    "juror": "c0766",
+    "text": "Don't make us choose which dying person loses out. Make the board find the money."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "health",
+  "decision": "sent-back",
+  "text": "Nothing is signed. Every answer crossed a red line: A closes beds, B ends night visits, and C needs gifts the contract forbids. The day goes back to the health board for the £420,000.",
+  "statement": "I'm sending this back. Three answers, three red lines crossed. Closing four beds fails the first limit, and ending night visits fails another. The gift plan only works if the board breaks its own rule, so it can't count as money in the bank. The jury of twelve said keep every red line and go back to the board, six to three to three. I agree. Nobody should be asked to choose which dying person loses out to a gap of £420,000. Put the numbers in front of the board, and come back with a plan that closes the gap."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The next count of English hospice beds out of use, published by Hospice UK after 24 November 2026, will be higher than 380.",
+   "due": "2027-11-24",
+   "rule": "Hospice UK's published count of hospice beds out of use in England; last published: 380 (160 permanently closed), 18 Nov 2025. Hit if the next count published by 24 Nov 2027 is above 380.",
+   "result": "pending"
+  }
+ ]
+}

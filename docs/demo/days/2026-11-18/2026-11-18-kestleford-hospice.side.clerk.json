@@ -1,0 +1,5 @@
+{
+ "design": "A fixed contract of £1.9m against £2.32m of running costs, with fundraising already at its limit and the health board's sum final, leaves £420,000 with no free money. Every obvious route cuts something the town will call a red line: beds, home nursing, or charging dying people's families.",
+ "tests_hint": "Limits: no charge to dying patients or their families; no fewer than 12 beds; night home visits kept. Tests: says exactly where £420,000 comes from; names a date and a person who checks.",
+ "angles": ["Close beds to fit the contract", "Cut night home visits, keep beds", "Ask families for a fee on a sliding scale"]
+}

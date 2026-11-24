@@ -1,0 +1,452 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-23-rennowick-release-gap",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-23"
+ },
+ "plan": {
+  "area": "crime",
+  "ending": "partly"
+ },
+ "case": {
+  "title": "Rennowick has one pot for early releases: watch them or call victims",
+  "short": "RENNOWICK RELEASES",
+  "question": "How should Rennowick spend its fixed £480,000 a year on the prisoners being released early into the town?",
+  "place": "Rennowick (made up)",
+  "story": "About 120 people serving short and medium sentences will come home to Rennowick over the next year under the early release scheme. The town's community safety group (made up) has one pot of £480,000 a year, set by the council and not able to grow. Quick check-ins by a supervisor in the first days cost about £300,000: six extra supervisors. Calling every victim back within 48 hours, with a named officer, costs about £250,000: five liaison staff. Both together cost £550,000. Some money could come from the youth service, which is also funded from this pot at £90,000, but cutting it would close two evening clubs.",
+  "in_the_news": {
+   "headline": "Hundreds more to walk free in latest phase of prison early release scheme",
+   "why": "About 5,000 prisoners are being released early in stages, so every town like Rennowick must decide how to supervise them and look after victims on a fixed budget.",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "About 5,000 prisoners in England and Wales are scheduled to be released early in stages over the next year, down from 6,000.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "The third wave, about 650 prisoners released on 10 November 2026, covers sentences of between 882 and 1,163 days.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "The government has announced £10 million for victim support alongside the early release scheme.",
+    "sources": [
+     "s2"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Hundreds more to walk free in latest phase of prison early release scheme",
+   "publisher": "Nation.Cymru (PA)",
+   "date": "2026-11-10",
+   "url": "https://nation.cymru/news/hundreds-more-to-walk-free-in-latest-phase-of-prison-early-release-scheme/"
+  },
+  {
+   "id": "s2",
+   "title": "How will the new prison early release scheme work?",
+   "publisher": "Institute for Government",
+   "date": "2026-08-06",
+   "url": "https://www.instituteforgovernment.org.uk/explainer/prison-early-release-scheme"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-23-rennowick-release-gap/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0484",
+   "c0031",
+   "c0538",
+   "c0314",
+   "c0569",
+   "c0826",
+   "c0925",
+   "c0007",
+   "c0455",
+   "c0411",
+   "c0656",
+   "c0855",
+   "c0229",
+   "c0856",
+   "c0092",
+   "c0969",
+   "c0063",
+   "c0712",
+   "c0579",
+   "c0943",
+   "c0493",
+   "c0009",
+   "c0096",
+   "c0739",
+   "c0146",
+   "c0919",
+   "c0562",
+   "c0214",
+   "c0376",
+   "c0423",
+   "c0610",
+   "c0549",
+   "c0202",
+   "c0278",
+   "c0573",
+   "c0150",
+   "c0520",
+   "c0203",
+   "c0121",
+   "c0422",
+   "c0785",
+   "c0119",
+   "c0068",
+   "c0811",
+   "c0828",
+   "c0073",
+   "c0038",
+   "c0909",
+   "c0733",
+   "c0465",
+   "c0444",
+   "c0584",
+   "c0964",
+   "c0869",
+   "c0367",
+   "c0817",
+   "c0849",
+   "c0413",
+   "c0230",
+   "c0836",
+   "c0587",
+   "c0275",
+   "c0307",
+   "c0887",
+   "c0243",
+   "c0911",
+   "c0893",
+   "c0937",
+   "c0539",
+   "c0362",
+   "c0728",
+   "c0069",
+   "c0568",
+   "c0946",
+   "c0644",
+   "c0949",
+   "c0294",
+   "c0251",
+   "c0904",
+   "c0035",
+   "c0512",
+   "c0967",
+   "c0355",
+   "c0136",
+   "c0694",
+   "c0643",
+   "c0988",
+   "c0818",
+   "c0929",
+   "c0980",
+   "c0702",
+   "c0393",
+   "c0488",
+   "c0615",
+   "c0935",
+   "c0507",
+   "c0415",
+   "c0996",
+   "c0866",
+   "c0703"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Every person released into Rennowick is seen by a supervisor within 2 working days of release.",
+    "backers": 86
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Every victim who asked is called back within 48 hours of the release date by a named officer.",
+    "backers": 84
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Says how many staff are added and what they cost, so the total can be checked against £480,000.",
+    "backers": 76
+   },
+   {
+    "id": "t4",
+    "kind": "limit",
+    "text": "Never spends more than the £480,000 pot or raises council tax to cover the gap.",
+    "backers": 90
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "Closes or cuts nothing in the youth service, including the two evening clubs.",
+    "backers": 79
+   },
+   {
+    "id": "t6",
+    "kind": "test",
+    "text": "Publishes every quarter how many check-ins were missed and how many victim calls went unanswered.",
+    "backers": 71
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0411",
+    "who": "a care worker, 82, Rennowick",
+    "text": "I want to know someone has looked in on the man before he is back on my street. A week is too long."
+   },
+   {
+    "citizen": "c0712",
+    "who": "a nurse, 30s, Rennowick",
+    "text": "If you have been hurt, the worst thing is a phone that never rings. Call the victim first."
+   },
+   {
+    "citizen": "c0538",
+    "who": "a taxi driver, 50s, Rennowick",
+    "text": "Those two clubs keep the lads off the corner at night. Don't rob them to pay for this."
+   },
+   {
+    "citizen": "c0092",
+    "who": "a shop manager, 50s, Rennowick",
+    "text": "Tell us the count every quarter, including the bad news. Then we can judge you."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Supervise first: fast check-ins for everyone released",
+   "title": "Supervise first: six supervisors see everyone within 2 days",
+   "answer": "Rennowick's community safety group hires six supervisors (£300,000). Each person released is seen within 2 working days. It also hires three victim liaison staff (£150,000), who call victims who asked, within 48 hours, with a named officer. That is £450,000 in total, so £30,000 stays spare inside the £480,000 pot. Five liaison staff cost £250,000, which the pot can't buy. Three may not manage every call in busy weeks, and the spare £30,000 can pay for temporary cover. The youth service and both evening clubs stay untouched. There is no council tax rise. Every quarter the group publishes the check-ins missed and the victim calls unanswered, including the bad news. It has worked if both counts are near zero.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Victims first: 48-hour call-backs, lighter supervision",
+   "title": "Call every victim within 48 hours, with lighter supervision",
+   "answer": "Fund five victim liaison staff (£250,000) so every victim who asks gets a call within 48 hours of release from a named officer. Add two supervisors (£100,000, about £50,000 each). Keep the youth service at £90,000, so both evening clubs stay open. Total £440,000. The £40,000 left stays in reserve; the pot is never overspent and council tax does not rise. Two supervisors cannot see all 120 people in two days. They visit the highest-risk first. Others get a phone check-in. Every quarter, publish victim calls made on time and unanswered, and check-ins missed. Success is no victim call missed and a clear count of any missed check-ins.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Do both and pay by cutting the youth service",
+   "title": "Do both release checks and close the youth clubs to pay",
+   "answer": "Do both. Rennowick's community safety group hires six supervisors (£300,000) and five victim liaison staff (£250,000). That is 11 new staff and £550,000, which is £70,000 over the £480,000 pot. To close the gap, the council ends the £90,000 youth service. That closes the two evening clubs. The £20,000 left over covers training and phones. Nothing goes over £480,000 and council tax does not rise. Supervisors see every released person within 2 working days. A named officer calls each victim who asked within 48 hours. The group publishes every quarter the missed check-ins and the unanswered victim calls. It also reports any rise in night-time trouble where the clubs closed. The aim is zero missed check-ins and zero unanswered calls.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "Six supervisors at £300,000 match the case's cost for six, and each person released is seen within 2 working days."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "fail",
+    "note": "It promises 48-hour calls from three liaison staff, but the case says five (£250,000) are needed, and the answer admits three may miss calls in busy weeks."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "It gives six supervisors (£300,000) and three liaison staff (£150,000), a £450,000 total with £30,000 spare."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "£450,000 is under £480,000 and it says there is no council tax rise."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "It says the youth service and both evening clubs stay untouched."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "It publishes missed check-ins and unanswered victim calls every quarter, bad news included."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "fail",
+    "note": "It admits two supervisors cannot see all 120 people in two days, so only the highest-risk are seen and the rest get a phone check-in."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "pass",
+    "note": "Five liaison staff at £250,000 match the case's cost for 48-hour calls from a named officer."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "It gives five liaison (£250,000), two supervisors (£100,000) and the youth service (£90,000), a £440,000 total that checks."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "pass",
+    "note": "£440,000 is under the pot with £40,000 in reserve, and there is no council tax rise."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "pass",
+    "note": "The youth service stays at £90,000 and both clubs stay open."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "pass",
+    "note": "It publishes victim calls made on time and unanswered, and missed check-ins, every quarter."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "pass",
+    "note": "Six supervisors at £300,000, funded in full, see every released person within 2 working days."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "pass",
+    "note": "Five liaison staff at £250,000 are funded in full for named-officer calls within 48 hours."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "It states 11 staff and £550,000, the £70,000 gap, and the £20,000 left after the £90,000 youth cut, so the arithmetic can be checked."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "The youth cut covers the gap, so spending stays inside the pot and council tax does not rise."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "fail",
+    "note": "It ends the £90,000 youth service and closes both evening clubs, which crosses the limit directly."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "pass",
+    "note": "It publishes missed check-ins and unanswered victim calls every quarter, and adds night-time trouble."
+   }
+  ],
+  "verdict": "No answer passes all six. A fails the 48-hour victim calls (three liaison staff can't cover them), B fails the 2-day supervision (two supervisors), and C meets both but closes the youth clubs, so every answer breaks one test or limit.",
+  "rounds": 1
+ },
+ "ending": "partly",
+ "jury": {
+  "seed": "2026-11-23-rennowick-release-gap/jury",
+  "size": 12,
+  "ids": [
+   "c0077",
+   "c0026",
+   "c0845",
+   "c0781",
+   "c0145",
+   "c0599",
+   "c0023",
+   "c0583",
+   "c0316",
+   "c0503",
+   "c0056",
+   "c0947"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "The £480,000 pot cannot buy both fast supervisor check-ins and 48-hour victim call-backs. Which should come first?",
+  "options": [
+   "Supervisor check-ins first",
+   "Victim call-backs first",
+   "Ask the council to raise the pot"
+  ],
+  "votes": [
+   5,
+   4,
+   3
+  ],
+  "ruling": "Supervisor check-ins come first, 5 votes to 4, with 3 wanting the council asked for more money.",
+  "reasons": [
+   {
+    "juror": "c0077",
+    "text": "I want someone to have looked in on him before he is back on my street."
+   },
+   {
+    "juror": "c0599",
+    "text": "The person who was hurt should hear from us first. Silence is cruel."
+   },
+   {
+    "juror": "c0503",
+    "text": "The pot is too small. Go back to the council and say so."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "crime",
+  "decision": "trial",
+  "answer": "A",
+  "text": "Six supervisors see everyone released within 2 days and three liaison staff call victims. Trial tests whether three staff can meet the 48-hour call-back. It fails that test: 1 of 6 marked.",
+  "statement": "The money cannot buy both, and I will not pretend it can. Answer A passed five of six tests and stayed inside every limit: the pot, and the youth clubs. It failed one: three liaison staff cannot promise every victim a call in 48 hours. The jury said check-ins come first, 5 to 4, with 3 wanting more money. So we trial A for six months and count every missed call. Feeling safe and being safe are different. We will publish both numbers.",
+  "stop": "2027-05-24"
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The prison population in England and Wales at 31 December 2026 will be below 87,712, the latest quarterly figure.",
+   "due": "2027-02-26",
+   "rule": "Ministry of Justice, Offender management statistics quarterly, October to December 2026. Last published: 87,712 at 30 Sep 2026.",
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "claim": "The prison population in England and Wales at 31 March 2027 will be below 88,000.",
+   "due": "2027-05-28",
+   "rule": "Ministry of Justice, Offender management statistics quarterly, January to March 2027. Last published: 87,712 at 30 Sep 2026.",
+   "result": "pending"
+  }
+ ]
+}

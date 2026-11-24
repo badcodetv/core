@@ -1,0 +1,8 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-16","day":"2026-11-16-gresmoor-old-records",
+"debate":[
+{"minister":"crime","text":"Gresmoor Police holds about 60 old records of women arrested over their own abortion. The law now pardons them. Answer A passed every test: the force searches all three stores itself, finishes by 28 February, writes to nobody who has not asked, and sends no name outside. I adopted it. Done quietly is what makes people safe."},
+{"minister":"health","text":"Hollie, from the ward I know what a letter on the doormat can do to a woman. I back the no-contact rule. But a woman who wants to know whether a file exists must have a number to ring that does not lead to a policeman who asks why."},
+{"minister":"housing","text":"Same thing I learnt with the veterans. Name a person. Housing-1 says a named worker, and this says a named Head of Records. When something goes wrong in someone's private life, a title on a letterhead is no use. A name is."},
+{"minister":"crime","text":"The Head of Records answers the phone herself, Tunde, and the count goes public only as a number. The jury chose that, 7 to 4 to 1. I would have gone further on silence, and I will not argue with them."}],
+"changes":[{"op":"adopt","line":"crime-1","minister":"crime","text":"Old records that the law now pardons are found and deleted by a set date, by the force itself, with no contact unless a woman asks and no names sent outside.","why":"Gresmoor's answer A passed all six tests, both red lines included."}],
+"made_by":{"workers":["demo-cabinet"]}}

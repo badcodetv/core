@@ -1,0 +1,9 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-23","day":"2026-11-23-rennowick-release-gap",
+"debate":[
+{"minister":"crime","text":"Rennowick expects about 120 early releases and has £480,000. Six supervisors see everyone within two days, and three liaison staff call victims. Answer A passed five of six. Three staff cannot promise every victim a call in 48 hours. The jury put check-ins first, 5 to 4. So this is a six-month trial to 24 May, and we publish every missed call. Feeling safe and being safe are different numbers."},
+{"minister":"housing","text":"Hollie, the first two days decide it. A man released with no address is back in front of a supervisor with nowhere to sleep. Aldmere's answer tied a bed to a named worker. Make the first visit about the key in the door, and I will make sure the council has one to hand."},
+{"minister":"health","text":"And the pharmacy. Someone coming out on medication is out of tablets in a week. I have seen what that does in a ward. The supervisor should ask two things on day one: where are you sleeping, and have you got your tablets?"},
+{"minister":"work","text":"I will add a third. A job within a month is worth more than any check-in. But I will not pretend a supervisor can do that. It is for my trainee places and the Mereholt split. Hollie, send me the list, with names kept off it."},
+{"minister":"crime","text":"The jury asked for supervisors first, and the victims must not be left to wait in silence. I will publish the missed calls every quarter, the bad news included. The victims asked for a call. They should get a name and a number."}],
+"changes":[{"op":"adopt","line":"crime-2","minister":"crime","text":"A trial to 24 May 2027: six supervisors see everyone released early within two days, and three staff call victims, with every missed call published.","why":"Rennowick's answer A passed five of six tests and missed only the 48-hour victim calls, so it is a trial."}],
+"made_by":{"workers":["demo-cabinet"]}}

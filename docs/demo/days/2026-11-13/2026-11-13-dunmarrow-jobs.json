@@ -1,0 +1,446 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-13-dunmarrow-jobs",
+ "stage": "published",
+ "run": {
+  "mode": "backfill",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-13"
+ },
+ "plan": {
+  "area": "work",
+  "ending": "accepted"
+ },
+ "case": {
+  "title": "Dunmarrow's £1.2 million to get young people into paid energy jobs",
+  "short": "DUNMARROW JOBS",
+  "question": "How should Dunmarrow spend £1.2 million to get young people who are out of work and training into paid energy jobs?",
+  "place": "Dunmarrow (made up)",
+  "story": "Dunmarrow (made up) is a town of 28,000 where the carpet works shut four years ago. 310 people aged 16 to 24 are not in education, work or training. A cable maker on the edge of town says it will take on 60 trainee fitters next year if it can find people who can start in March. The council has £1.2 million from a national fund and must spend it by next October. Last year's jobs fair drew 400 young people and led to nine jobs. The nearest college is a 55-minute bus ride away, and the last bus home leaves at 5.40pm.",
+  "in_the_news": {
+   "headline": "Third Clean Energy Jobs Fair held in Birmingham, with over 400 young people attending",
+   "why": "Government is linking youth jobs schemes to clean energy work; Dunmarrow faces the same question of turning a jobs fair into real jobs.",
+   "memory_id": "61080198-cb81-4b5f-ac97-25536a983ce5",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "Government says entry-level roles in most clean energy jobs pay 23% more than the same jobs in other sectors (its own claim).",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "National Grid has a £5 million fund to help young people not in education, work or training into energy and infrastructure jobs.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "About 50 of the 400 young people at the Birmingham fair were not in education, work or training.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Clean Energy Jobs Fair held in Birmingham",
+   "publisher": "GOV.UK",
+   "date": "2026-11-12",
+   "url": "https://www.gov.uk/government/news/clean-energy-jobs-fair-held-in-birmingham"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk",
+   "demo-citizens",
+   "demo-bench",
+   "demo-rival",
+   "demo-gate",
+   "demo-jury",
+   "demo-minister"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-13-dunmarrow-jobs/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0399",
+   "c0994",
+   "c0744",
+   "c0352",
+   "c0408",
+   "c0868",
+   "c0987",
+   "c0038",
+   "c0515",
+   "c0914",
+   "c0230",
+   "c0497",
+   "c0556",
+   "c0932",
+   "c0414",
+   "c0378",
+   "c0077",
+   "c0824",
+   "c0700",
+   "c0190",
+   "c0147",
+   "c0762",
+   "c0754",
+   "c0126",
+   "c0690",
+   "c0481",
+   "c0738",
+   "c0995",
+   "c0792",
+   "c0883",
+   "c0200",
+   "c0360",
+   "c0165",
+   "c0856",
+   "c0730",
+   "c0140",
+   "c0778",
+   "c0261",
+   "c0821",
+   "c0078",
+   "c0657",
+   "c0426",
+   "c0224",
+   "c0790",
+   "c0090",
+   "c0508",
+   "c0043",
+   "c0122",
+   "c0411",
+   "c0901",
+   "c0458",
+   "c0372",
+   "c0770",
+   "c0529",
+   "c0702",
+   "c0498",
+   "c0331",
+   "c0758",
+   "c0422",
+   "c0937",
+   "c0712",
+   "c0673",
+   "c0337",
+   "c0389",
+   "c0775",
+   "c0909",
+   "c0620",
+   "c0443",
+   "c0763",
+   "c0180",
+   "c0854",
+   "c0000",
+   "c0655",
+   "c0548",
+   "c0852",
+   "c0922",
+   "c0463",
+   "c0879",
+   "c0101",
+   "c0278",
+   "c0743",
+   "c0403",
+   "c0479",
+   "c0767",
+   "c0618",
+   "c0075",
+   "c0664",
+   "c0698",
+   "c0121",
+   "c0829",
+   "c0562",
+   "c0049",
+   "c0518",
+   "c0532",
+   "c0843",
+   "c0245",
+   "c0748",
+   "c0958",
+   "c0878",
+   "c0082"
+  ],
+  "model": "claude-sonnet-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "test",
+    "text": "Says how many young people get a paid trainee place or job, and by which month they start.",
+    "backers": 86
+   },
+   {
+    "id": "t2",
+    "kind": "test",
+    "text": "Says who pays each trainee's wage and gives the amount per week or year.",
+    "backers": 78
+   },
+   {
+    "id": "t3",
+    "kind": "test",
+    "text": "Fixes the 5.40pm last bus problem, with a named fix such as a later bus or paid fares.",
+    "backers": 69
+   },
+   {
+    "id": "t4",
+    "kind": "test",
+    "text": "Gives each trainee a named person to call and says how often they meet.",
+    "backers": 61
+   },
+   {
+    "id": "t5",
+    "kind": "limit",
+    "text": "No trainee is paid less than the legal minimum wage for their age.",
+    "backers": 93
+   },
+   {
+    "id": "t6",
+    "kind": "limit",
+    "text": "Total cost stays within £1.2 million and is spent by next October.",
+    "backers": 84
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0515",
+    "who": "an unemployed woman, 40, private renter",
+    "text": "A fair is a nice day out. I want a wage on a Friday and someone who rings me if I stop turning up."
+   },
+   {
+    "citizen": "c0378",
+    "who": "a young woman, 23, in work, private renter",
+    "text": "I got my job because a manager took a chance on me. Young people need that more than a leaflet."
+   },
+   {
+    "citizen": "c0744",
+    "who": "a man, 52, in work, private renter",
+    "text": "Last bus at twenty to six is no use for an early shift. Sort the travel or it won't work."
+   },
+   {
+    "citizen": "c0414",
+    "who": "a woman, 41, in work, trained as an apprentice",
+    "text": "Pay them properly and say what it costs. Don't make it up as you go along."
+   }
+  ]
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Paid traineeships with the cable maker, mentor, bus",
+   "title": "60 paid cable-maker traineeships, a named mentor and a late minibus",
+   "answer": "1. Sixty trainee fitters, aged 16 to 24, start paid work with the cable maker in March, picked from the 310 by interview.\n2. Council pays wages for 26 weeks: £420 a week each, never below legal minimum for their age. £655,200. The cable maker then pays, and keeps them on.\n3. Council hires a minibus, with a 7pm return run, March to October: £90,000.\n4. Three mentors, 20 trainees each, meet each trainee weekly and ring after any missed day: £120,000.\n5. Kit and safety training: £120,000. Replacement places for drop-outs: £150,000. Counting results: £30,000. Spare: £34,800.\nTotal £1.2 million, all spent by October.\nWe will know it worked if 48 of 60 are still employed in October, with wages paid each Friday. The citizens see monthly figures.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "A bigger jobs fair plus careers advice in schools",
+   "title": "A bigger jobs fair, plus careers advice in every school",
+   "answer": "Spend £1.2 million on one big autumn jobs fair and careers advice for Dunmarrow's schools. Last year's fair led to nine jobs from 400 visitors, so we make it better. Hire two careers advisers for £120,000 a year each. They visit every school and meet the 310 young people one to one. The fair is held in January, with the cable maker's 60 trainee places on the stand. Employers pay trainee wages. Fair and advice cost £480,000. The rest pays fares and a later minibus, so nobody misses the 5.40pm bus. Each young person gets a named adviser to ring. We count success by jobs started by March, not visitors. Honest warning: the fair alone has not worked before.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "College course first, jobs later, funded by the fund",
+   "title": "Fund a college course first, then place trainees in jobs",
+   "answer": "Spend £1.2 million on a 20-week fitter course for 90 young people, starting in October. The college runs it in Dunmarrow's empty carpet works, so nobody needs the 55-minute bus. Cost: £700,000 for teaching, tools and a fitted workshop, plus £150,000 for weekly £120 training grants. Trainees finish in March. The cable maker then hires 60 of them as paid trainees, and pays their wages itself. Wages must meet the legal minimum for each age. A £100,000 reserve pays for fares and a late bus until the job starts. Each trainee gets one named coach, who meets them weekly. £250,000 is held back to cover coaching and checks. We count it as working if 60 are in paid jobs by March and still there in October.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  }
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "Point 1: sixty trainee fitters aged 16 to 24 start paid work with the cable maker in March."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "pass",
+    "note": "Council pays £420 a week each for 26 weeks (60 x 420 x 26 = £655,200, correct), then the cable maker pays and keeps them on."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "Hires a minibus with a 7pm return run, March to October, for £90,000. That is a named later-transport fix for the 5.40pm bus."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "Three mentors with 20 trainees each meet every trainee weekly and ring after any missed day. This gives a named role and a frequency."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "pass",
+    "note": "Wages are stated as 'never below legal minimum for their age'. Weekly hours are not given, so the £420 is not checked against the age rates, but the answer commits to the limit."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "pass",
+    "note": "The lines sum to exactly £1,200,000 (655,200+90,000+120,000+120,000+150,000+30,000+34,800). The answer says all of it is spent by October and the 26-week wages end before then."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "unclear",
+    "note": "Says the cable maker's 60 places are on the stand at a January fair, but does not commit that 60 get paid places or give a start month. Success is only 'jobs started by March'."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "fail",
+    "note": "Says 'Employers pay trainee wages', which names who pays, but gives no weekly or yearly amount."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "pass",
+    "note": "Pays fares and a later minibus 'so nobody misses the 5.40pm bus'. The fix is named but has no cost, time or route."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "unclear",
+    "note": "Each young person gets a named adviser to ring, but meetings are only 'one to one' with no stated frequency."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "unclear",
+    "note": "Says nothing about the minimum wage. It only says employers pay wages."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "unclear",
+    "note": "Only £480,000 is itemised. The fares and minibus are 'the rest' with no figure, and no completion date is given, so staying within £1.2m and October is not shown."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "pass",
+    "note": "The cable maker hires 60 of the 90 course graduates as paid trainees after the course ends in March. The count is '60 in paid jobs by March'. The October course start may not fit the real timeline, but the answer gives a number and a month."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "fail",
+    "note": "The cable maker 'pays their wages itself', so the payer is named, but no weekly or yearly wage amount is given. The only figure is the £120 weekly training grant, which is not a wage."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "Holds the course in Dunmarrow's carpet works so nobody needs the bus. A £100,000 reserve also pays fares and a late bus until the job starts."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "Each trainee gets one named coach who meets them weekly."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "States 'Wages must meet the legal minimum for each age'. The £120 grant is for training, not wages."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "fail",
+    "note": "The headline lines sum to £1.2m (700+150+100+250k), but 90 trainees x £120 x 20 weeks is £216,000, not £150,000. The course runs from October to March and £250,000 is 'held back', so spending is not clearly complete by October."
+   }
+  ],
+  "verdict": "Only A clearly passes every test, with correct sums that total exactly £1.2 million, a stated wage, a bus fix and weekly mentoring. B is vague or silent on wages, pay law and spending, and C names the payer but no wage and misses the October deadline, with grant arithmetic that does not add up.",
+  "rounds": 1
+ },
+ "ending": "accepted",
+ "jury": {
+  "seed": "2026-11-13-dunmarrow-jobs/jury",
+  "size": 12,
+  "ids": [
+   "c0553",
+   "c0026",
+   "c0071",
+   "c0621",
+   "c0947",
+   "c0721",
+   "c0018",
+   "c0324",
+   "c0454",
+   "c0057",
+   "c0227",
+   "c0325"
+  ],
+  "model": "claude-sonnet-5-5",
+  "question": "The 60 places will be oversubscribed by the 310 young people. Who should be first in line for a place?",
+  "options": [
+   "Those who have been out of work and training longest",
+   "The best fit at interview, so the places are not wasted",
+   "A fair draw among everyone who meets the basic entry rules"
+  ],
+  "votes": [
+   6,
+   4,
+   2
+  ],
+  "ruling": "Longest out of work first, 6 votes to 4 for best fit at interview and 2 for a fair draw.",
+  "reasons": [
+   {
+    "juror": "c0227",
+    "text": "The ones who've waited longest should come first. That's only fair."
+   },
+   {
+    "juror": "c0071",
+    "text": "The firm has to be able to pick people who'll stick it out, or the places are wasted."
+   },
+   {
+    "juror": "c0553",
+    "text": "Interviews favour the confident ones. A fair draw gives everyone a chance."
+   }
+  ]
+ },
+ "minister": {
+  "minister": "work",
+  "decision": "adopted",
+  "answer": "A",
+  "text": "Answer A is signed as written: 60 paid trainee fitters start with the cable maker in March, wages paid by the council for 26 weeks, a late minibus and a weekly mentor, all within £1.2 million.",
+  "statement": "Answer A passed all six of the citizens' tests, including both red lines: nobody paid under the legal minimum, and every pound spent by October. The other two answers fell short on wages and sums. The jury ruled the longest out of work go first, 6 to 4 to 2, so that is how the places are given out. I want wages paid on a Friday and a mentor who rings on a Monday. We report the numbers each month."
+ },
+ "predictions": [
+  {
+   "id": "p1",
+   "claim": "The ONS will report at least 950,000 young people aged 16 to 24 not in education, employment or training (NEET) in the UK in its February 2027 release.",
+   "due": "2027-03-31",
+   "rule": "ONS bulletin 'Young people not in education, employment or training (NEET), UK: February 2027', headline 16 to 24 total. Last published: 981,000 (Apr to Jun 2026, ONS, 27 Aug 2026).",
+   "result": "pending"
+  },
+  {
+   "id": "p2",
+   "claim": "The UK unemployment rate for people aged 16 and over for October to December 2026 will be 4.6% or lower.",
+   "due": "2027-03-01",
+   "rule": "ONS UK labour market overview, February 2027 release, headline rate. Last published: 4.6% for Jul to Sep 2026 (ONS, 17 Nov 2026, as reported by the press).",
+   "result": "pending"
+  }
+ ]
+}

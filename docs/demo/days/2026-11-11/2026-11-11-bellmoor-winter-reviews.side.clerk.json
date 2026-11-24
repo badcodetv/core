@@ -1,0 +1,5 @@
+{
+ "design": "A fixed nurse capacity (about 1,500 reviews) against 2,400 patients, with housebound visits costing three times the time, so no plan can review everyone by March. A careful plan can still keep every red line: housebound and sickest patients are seen, and the money is spent only on reviews done.",
+ "tests_hint": "Red lines: no housebound patient left unseen; money only spent on reviews done. Tests: a date for the sickest, a number for how many are reviewed, who phones patients who can't be reached, how success is checked.",
+ "angles": ["Sickest first by risk list, then clinics for the rest", "Home visits for the housebound, clinics for everyone else", "Hire temporary nurses, group clinics, drop-in evenings"]
+}
