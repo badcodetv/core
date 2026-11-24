@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r4/p401b.wav",
+ "made": "2026-11-24T22:21:35+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Karen? It's the President. ...Former President. You don't give up, Karen. Right now, that's exactly what this country needs. We need to work together to beat this thing. Meet me in the Situation Room... and I'm bringing in my guy in England. He can pull a few strings.",
+ "inputs": {
+  "profile": "# Audio Profile\nThe President of the United States, a career politician in his sixties, American, the man who sat in the guest chair on a late-night talk show this evening and was sacked on air. His voice sits low in his range, slow and resonant, the practised authority of someone who has given a thousand speeches. Tonight he has lost his job, and he is holding it together by sounding like he is still in charge: measured, matey, making a deal on the phone.\n\n## Scene:\nLate at night, alone, on the phone, sorting something out off the record.\n\n## Sample Context:\nHe has made calls like this a hundred times before, calling in a favour and promising one back.\n",
+  "profile_file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/narration/profiles/president-charon.md"
+ },
+ "settings": {
+  "voice": "Charon",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

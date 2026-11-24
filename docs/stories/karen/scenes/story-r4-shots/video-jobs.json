@@ -1,0 +1,64 @@
+{
+ "video": {
+  "duration": 8
+ },
+ "skip": [],
+ "extra": [
+  {
+   "key": "wag",
+   "n": 1,
+   "still": "office-wag-b",
+   "character": "Karen",
+   "why": "Kai overnight brief 2026-11-24: cut r4 1.2 (archetype)",
+   "motion": "The camera does not move. The standing woman wags her raised finger sharply at the computer screen three times, leaning closer over the seated man's shoulder, her mouth moving as she scolds him; he shrinks lower in his chair, eyes fixed on the screen. Then he gives one small, defeated nod, and she taps the top of the screen with her finger. Sound: office air-conditioning hum, keyboard clicks, a desk phone ringing far off. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "shout",
+   "n": 2,
+   "still": "river-shout-b",
+   "character": "Karen",
+   "why": "Kai overnight brief 2026-11-24: cut r4 2.3 (fuck you, Sean)",
+   "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "delivery",
+   "n": 3,
+   "still": "delivery-b",
+   "character": "Karen",
+   "why": "Kai overnight brief 2026-11-24: cut r4 3.4 (lunch delivered to the phone box)",
+   "motion": "The camera does not move. The woman in the phone box takes the paper bag from the rider without looking at him, still talking into the receiver; the rider shrugs, turns his bicycle and pedals away out of frame to the left. She sets the bag on the little shelf and keeps talking into the phone. Sound: street traffic, a bicycle freewheel ticking, a bus hissing as it brakes. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "noodles",
+   "n": 4,
+   "still": "noodles-a",
+   "character": "Karen",
+   "why": "Kai overnight brief 2026-11-24: cut r4 escalation extra (night, she is still there)",
+   "motion": "The camera does not move. The woman in the phone box slurps a mouthful of noodles and chews, listening hard to the receiver wedged on her shoulder; then she jabs her chopsticks at the air as if making a point down the phone, and goes back to eating. Sound: night traffic hiss on wet tarmac, a distant siren, chopsticks against the carton. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "evacuate",
+   "n": 5,
+   "still": "evacuate-b",
+   "character": null,
+   "why": "Kai overnight brief 2026-11-24: cut r4 6.5 (real drama: hustled off the set)",
+   "motion": "The camera does not move. The men in dark suits hustle the man in the dark suit off the set at speed and out of frame to the right, one guard sweeping in behind them with his arm out; the host stays half-risen behind the desk, staring after them, then slowly sinks back into his chair. The studio lights flicker once. Sound: scuffing feet, a chair scraping over the floor, an alarmed murmur from the audience beyond the lights, a microphone thudding. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "car",
+   "n": 6,
+   "still": "car-phone2-a",
+   "character": null,
+   "why": "Kai overnight brief 2026-11-24: cut r4 6.7 (the man in the dark suit in his car, calling Karen)",
+   "motion": "The camera does not move. The car glides through the city at night; streetlights and neon slide across the windows and over the man's shoulders. He presses the receiver hard to his ear, his head turned to the side window, speaking low; then he bows his head slightly, listening. Sound: muffled engine hum, tyres hissing on a wet road, a siren far off. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "car2",
+   "n": 6,
+   "still": "car-phone2-b",
+   "character": null,
+   "why": "Kai overnight brief 2026-11-24: cut r4 6.7 (the man in the dark suit in his car, calling Karen)",
+   "motion": "The camera does not move. The car glides through the city at night; streetlights and neon slide across the windows and over the man's shoulders. He presses the receiver hard to his ear, his head turned to the side window, speaking low; then he bows his head slightly, listening. Sound: muffled engine hum, tyres hissing on a wet road, a siren far off. No dialogue, no music. The camera does not move.\n\nThanks."
+  }
+ ]
+}

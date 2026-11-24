@@ -1,0 +1,16 @@
+{
+ "story": "karen",
+ "scene": "story-r4-shots",
+ "prefix": "r4",
+ "title": "Karen story r4: new shots",
+ "heading": "Karen story film: new shots for cut r4",
+ "media": "/mnt/d/badcode-videos/karen-story/clips/r4",
+ "flow_project": "da8feea7-0574-437b-8ff9-97da233a0a4f",
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "note": "Shots added for cut r4 overnight (Kai, 2026-11-24 brief); the cut itself is scenes/story/."
+}

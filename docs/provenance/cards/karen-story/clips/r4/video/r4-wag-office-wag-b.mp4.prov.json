@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r4/video/r4-wag-office-wag-b.mp4",
+ "made": "2026-11-24T22:44:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The standing woman wags her raised finger sharply at the computer screen three times, leaning closer over the seated man's shoulder, her mouth moving as she scolds him; he shrinks lower in his chair, eyes fixed on the screen. Then he gives one small, defeated nod, and she taps the top of the screen with her finger. Sound: office air-conditioning hum, keyboard clicks, a desk phone ringing far off. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/office-wag-b.jpg",
+ "why": "Kai overnight brief 2026-11-24: cut r4 1.2 (archetype)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/office-wag-b.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r4-shots",
+  "key": "wag",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-24T22:43:18.180Z"
+ }
+}

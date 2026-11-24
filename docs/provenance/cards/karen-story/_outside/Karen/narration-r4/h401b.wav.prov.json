@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r4/h401b.wav",
+ "made": "2026-11-24T22:21:24+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Karen, you can't just keep ringing like this.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "en-us-zuri",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "none (plain)"
+ }
+}

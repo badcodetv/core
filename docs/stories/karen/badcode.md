@@ -11,7 +11,7 @@ there. Two videos: a **narrated story film** (ends on Sean AI's card, the sacked
 "To be continued"; no stated moral) and a **music video** for the song "All Day to Complain" (about 4:10).
 
 ## Parts
-- Story film — `scenes/story/` — **restructuring** (2026-11-24): Kai's round-4 notes on cut r3 became a new beat sheet, [scenes/story/beats-r4.md](./scenes/story/beats-r4.md) (the film's words until re-cut; joke slots open for Jack and Kai). Re-cut only after the sheet is agreed. Premiere still holds only `Karen v4`.
+- Story film — `scenes/story/` — **cut r4** (2026-11-24, made overnight from [beats-r4.md](./scenes/story/beats-r4.md)): 5:08, on the timeline page (round 4, a reply under every note) and in Premiere as `karen-1-story-r4` (in `Karen vid.prproj`). Script `scripts/karen/story-cut-r4.py`; new shots in `scenes/story-r4-shots`. Waits for Kai's notes. Jack's `Karen v4` untouched.
 - Music video — `scenes/music-video/` — final cut frozen 2026-11-09 (Kai's hand edit on `karen-music-r4`).
 - **The two have different looks and different Karens. Don't carry one part's look or voice into the other.**
 
@@ -61,7 +61,7 @@ Status: LOCKED. Karen's imagery is Jack's, made by hand in Flow; generate only w
 - Write `Ay-Eye Sean` in TTS transcripts.
 
 ## Flow project
-None recorded yet. Create one with `flow_create_project` before the first Flow call, and write its id here.
+`da8feea7-0574-437b-8ff9-97da233a0a4f` (the project holding the `Karen`, `Susan`, `Aarron` Characters; written here 2026-11-24).
 
 ## Library pieces in use
 - none yet

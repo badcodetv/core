@@ -1,0 +1,44 @@
+# Karen story film, cut r4 (2026-11-24 overnight): the new lines. id	who	voice	mode	style	text
+# mode: narr = the locked Algenib profile (default 3.1 model); pres = president-charon profile; plain = --plain on gemini-3.8-flash-tts (+ --style)
+n401	narrator	Algenib	narr		Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.
+n402	narrator	Algenib	narr		By hour three, she's ordered lunch. Delivery address: the phone box.
+n403	narrator	Algenib	narr		Next day: Clive. Borough of Manhattan.
+n404	narrator	Algenib	narr		Next week: Harriet. State of New York.
+n405	narrator	Algenib	narr		Next month.
+n406	narrator	Algenib	narr		This is Aaron. He makes music on the streets of New York. He hears it... and it has a ring to it.
+n407	narrator	Algenib	narr		These are the writers of a late-night talk show. Tonight's guest: the President. Tonight's material... nothing. Their jobs are on the line.
+n408	narrator	Algenib	narr		Day one.
+k401a	karen	Gacrux	plain	drunk, shouting	You hear that, Sean? Fuck you, Sean!
+k401b	karen	Gacrux	plain	drunk, slurring, loud	You hear that, Sean? Fuck you, Sean!
+k401c	karen	Gacrux	plain		You hear that, Sean?! Fuck... you... Sean!
+k401d	karen	Gacrux	plain	tipsy, defiant, laughing	You hear that, Sean? Fuck you, Sean!
+k401e	karen	Gacrux	plain	yelling across water, drunk	Hey! You hear that, Sean? Fuck you, Sean!
+k401f	karen	Gacrux	plain	drunk	You hear that, Sean? Fuck you, Sean!
+k402a	karen	Gacrux	plain		I don't want a form. I want a human. A senior human.
+k402b	karen	Gacrux	plain	firm, clipped	I don't want a form. I want a human. A senior human.
+k402c	karen	Gacrux	plain	irritated	I don't want a form. I want a human... A senior human.
+k403a	karen	Gacrux	plain		I've got all day to complain.
+k403b	karen	Gacrux	plain	calm, steely	I've got all day to complain.
+k403c	karen	Gacrux	plain	sweetly menacing	I've got all day to complain.
+k404a	karen	Gacrux	plain	loud, defiant	I've got all day to complain.
+k404b	karen	Gacrux	plain	shouting	I've got ALL DAY to complain!
+k404c	karen	Gacrux	plain	exasperated, loud	I've got all day to complain!
+m401a	martha	en-us-csagent-5	plain		I can escalate you, Karen... but you're going to have to wait.
+m401b	martha	en-us-storyteller-1	plain		I can escalate you, Karen... but you're going to have to wait.
+m401c	martha	en-us-advisor-3	plain		I can escalate you, Karen... but you're going to have to wait.
+m401d	martha	en-us-techagent-1	plain	tired	I can escalate you, Karen... but you're going to have to wait.
+h401a	harriet	en-us-techagent-11	plain		Karen, you can't just keep ringing like this.
+h401b	harriet	en-us-zuri	plain		Karen, you can't just keep ringing like this.
+h401c	harriet	en-us-sami	plain		Karen, you can't just keep ringing like this.
+c401a	coffee	en-us-training-4	plain		Have you seen the Karen at the phone box? She's been complaining for weeks.
+c401b	coffee	en-us-commercial-15	plain		Have you seen the Karen at the phone box? She's been complaining for weeks.
+c401c	coffee	en-us-podcaster-2	plain		Have you seen the Karen at the phone box? She's been complaining for weeks.
+c402a	coffee	en-us-training-4	plain		There's only one manager left.
+c402b	coffee	en-us-commercial-15	plain		There's only one manager left.
+c402c	coffee	en-us-podcaster-2	plain		There's only one manager left.
+w401a	writer	en-us-commercial-3	plain		She wants to speak to the manager?
+w401b	writer	en-us-podcaster-12	plain		She wants to speak to the manager?
+w401c	writer	en-us-knox	plain		She wants to speak to the manager?
+p401a	president	Charon	pres		Karen? It's the President. ...Former President. Listen. You don't give up. Right now, that's exactly what this country needs. We need to work together to beat this thing. Meet me in the Situation Room. And I'm bringing in my guy in England. He can pull a few strings.
+p401b	president	Charon	pres		Karen? It's the President. ...Former President. You don't give up, Karen. Right now, that's exactly what this country needs. We need to work together to beat this thing. Meet me in the Situation Room... and I'm bringing in my guy in England. He can pull a few strings.
+n409	narrator	Algenib	narr		Halfway through the interview, the host asks the President to call Karen, who has been in a phone box for weeks. He plays along.

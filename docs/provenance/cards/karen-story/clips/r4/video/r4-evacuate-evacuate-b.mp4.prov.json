@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r4/video/r4-evacuate-evacuate-b.mp4",
+ "made": "2026-11-24T22:41:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The men in dark suits hustle the man in the dark suit off the set at speed and out of frame to the right, one guard sweeping in behind them with his arm out; the host stays half-risen behind the desk, staring after them, then slowly sinks back into his chair. The studio lights flicker once. Sound: scuffing feet, a chair scraping over the floor, an alarmed murmur from the audience beyond the lights, a microphone thudding. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/evacuate-b.jpg",
+ "why": "Kai overnight brief 2026-11-24: cut r4 6.5 (real drama: hustled off the set)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/evacuate-b.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r4-shots",
+  "key": "evacuate",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-24T22:40:17.459Z"
+ }
+}

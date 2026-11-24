@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r4/k404a.wav",
+ "made": "2026-11-24T22:21:21+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "I've got all day to complain.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "Gacrux",
+  "style": "loud, defiant",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

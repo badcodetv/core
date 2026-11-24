@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/sfx-r4/g-en-us-commercial-16.wav",
+ "made": "2026-11-24T23:04:06+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "<gasp> Oh my God...",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "en-us-commercial-16",
+  "style": "shocked, gasping",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r4/w401b.wav",
+ "made": "2026-11-24T22:21:28+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "She wants to speak to the manager?",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "en-us-podcaster-12",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "none (plain)"
+ }
+}

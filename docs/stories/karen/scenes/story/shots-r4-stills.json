@@ -1,0 +1,98 @@
+[
+ {
+  "kind": "edit",
+  "key": "office-wag",
+  "referenceImages": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/office.jpg"
+  ],
+  "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours \u2014 apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe same open-plan Manhattan office as in the reference image, present day: white desks running back in rows towards tall windows full of grey city towers. In the foreground, a man in his thirties with short dark hair and a plain grey sweater sits rigidly at his desk, eyes fixed on his blank monitor, shoulders hunched up towards his ears. The woman from the character reference stands right behind his chair, leaning over his shoulder, her index finger raised and wagging at his screen, brows pulled down hard, lips pressed into a thin line mid-sentence. She is a third in from the left of the frame. Ordinary overcast daylight from the windows. Medium shot at desk height from the side, the colleague sharp, the office falling soft behind them. Monitors show only soft blank light.\n\nThanks.",
+  "model": "Nano Banana Pro",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "outPath": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/office-wag.png",
+  "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)",
+  "character": "Karen"
+ },
+ {
+  "kind": "edit",
+  "key": "river-shout",
+  "referenceImages": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/river.jpg"
+  ],
+  "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours \u2014 apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight by the river, the same railing, lit suspension bridge and skyline as in the reference image, present day. The woman from the character reference stands at the railing seen from behind and slightly to her right, her arm thrust straight up above her head, a phone gripped high against the night sky, her head tipped back, shouting up at it. Beside her, a second woman doubles over the railing laughing, a stolen stemmed wine glass in her hand. The bridge lights bloom in the black water. A wide shot from behind the two of them, their faces turned away towards the river.\n\nThanks.",
+  "model": "Nano Banana Pro",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "outPath": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/river-shout.png",
+  "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)",
+  "character": "Karen"
+ },
+ {
+  "kind": "edit",
+  "key": "delivery",
+  "referenceImages": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/box-day.jpg"
+  ],
+  "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours \u2014 apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe same street-corner phone box as in the reference image, present day, Manhattan in daylight. A food delivery rider in a scuffed helmet and a big insulated backpack stands on the kerb beside his bicycle, holding a brown paper takeaway bag in through the open side of the phone box. The woman from the character reference, the receiver clamped between her ear and shoulder, reaches out and takes the bag without looking at him, her eyes still on the phone, mouth open mid-word. The rider is side-on to the camera, his face hidden by the helmet. Medium-wide shot from across the pavement, the subway entrance railings behind.\n\nThanks.",
+  "model": "Nano Banana Pro",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "outPath": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/delivery.png",
+  "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)",
+  "character": "Karen"
+ },
+ {
+  "kind": "edit",
+  "key": "noodles",
+  "referenceImages": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/box-night.jpg"
+  ],
+  "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours \u2014 apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe same phone box at night as in the reference image, present day, the street lamp and the green subway globe glowing behind. The woman from the character reference stands in the phone box, the receiver wedged between her ear and her shoulder, eating noodles out of a white takeaway carton with chopsticks, mid-mouthful, eyes narrowed, listening hard to the phone. Paper cups and an empty carton sit on the little shelf. Medium shot through the open side of the box.\n\nThanks.",
+  "model": "Nano Banana Pro",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "outPath": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/noodles.png",
+  "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)",
+  "character": "Karen"
+ },
+ {
+  "kind": "edit",
+  "key": "asleep",
+  "referenceImages": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/box-snow.jpg"
+  ],
+  "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours \u2014 apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe same phone box as in the reference image at grey dawn after heavy snow, present day, snow banked against the subway railings. The woman from the character reference has fallen asleep standing up inside the phone box, her forehead resting against the side panel, the receiver still pressed to her ear, a dusting of snow on her shoulders. The street is empty. Medium-wide shot from the pavement.\n\nThanks.",
+  "model": "Nano Banana Pro",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "outPath": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/asleep.png",
+  "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)",
+  "character": "Karen"
+ },
+ {
+  "kind": "edit",
+  "key": "evacuate",
+  "referenceImages": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/studio.jpg"
+  ],
+  "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours \u2014 apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe same late-night talk show set as in the reference image, present day: the dark studio, the wooden desk, the city-at-night backdrop, the armchairs. Four broad men in dark suits with curly earpiece wires surge onto the set from the left. Two of them grip a man in a dark suit by his upper arms and haul him up out of the guest armchair, steering him fast towards the dark edge of the set, his back to the camera, his face turned away. Behind the desk the host half-stands, frozen. The tall screen at the right edge of the set glows gold. Studio lights flare. Wide shot from the dark beyond the cameras, the action caught mid-movement with motion blur on the men.\n\nThanks.",
+  "model": "Nano Banana Pro",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "outPath": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/evacuate.png",
+  "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)"
+ },
+ {
+  "kind": "edit",
+  "key": "car-phone",
+  "referenceImages": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/man-back.jpg"
+  ],
+  "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours \u2014 apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight. The back seat of a black armoured car moving through a city, present day. The man in the dark suit from the reference image sits on the right of the back seat, seen from behind his shoulder, his face turned away towards the tinted side window, holding the receiver of a corded car phone to his ear. Streaks of city light slide across the dark glass. Beyond the front seats, through the windscreen, two small flags on the bonnet flutter, soft and out of focus. One warm reading lamp above him, the rest of the car in deep shadow. Close medium shot over his shoulder.\n\nThanks.",
+  "model": "Nano Banana Pro",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "outPath": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/car-phone.png",
+  "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)"
+ }
+]

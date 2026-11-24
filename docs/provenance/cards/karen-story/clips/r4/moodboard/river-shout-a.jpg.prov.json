@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/river-shout-a.jpg",
+ "made": "2026-11-24T23:23:49+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "PIL png->jpg (run.mts plate)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/river-shout-a.png",
+ "why": "Karen cut r4 still, jpg copy for the clip runner"
+}

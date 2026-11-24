@@ -52,5 +52,19 @@
   "what": "Round 4 notes dumped (19 new, whole film): Kai asks for a structural rethink before any re-cut",
   "feedback": "feedback/timeline-r4",
   "feedback_docs": 33
+ },
+ {
+  "at": "2026-11-24T23:25:47+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r4 made overnight from beats-r4.md (Kai's brief): 5:08, 74 shots (7 new Flow clips, 1 new still), new voices (Karen, Martha, Harriet, coffee girl, writer, President), escalation as map + ladder + day counter + weather, coup sound design; every round-4 note answered; Premiere karen-1-story-r4 built and in sync",
+  "rebuild": "python3 scripts/karen/story-cut-r4.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <out-dir>"
+ },
+ {
+  "at": "2026-11-24T23:25:47+00:00",
+  "stage": "premiere",
+  "round": 4,
+  "what": "karen-1-story-r4 built in Karen vid.prproj from cut-r4 edl (premiere-plan.py --tag r4); V1 checked shot for shot: in sync"
  }
 ]

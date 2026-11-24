@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/preview.mp4",
+ "made": "2026-11-24T23:23:49+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/karen/story-cut-r4.py",
+ "why": "Karen story film cut r4 (overnight, Kai's brief 2026-11-24)",
+ "inputs": {
+  "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json"
+ }
+}

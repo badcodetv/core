@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r4/video/r4-noodles-noodles-a.mp4",
+ "made": "2026-11-24T22:44:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman in the phone box slurps a mouthful of noodles and chews, listening hard to the receiver wedged on her shoulder; then she jabs her chopsticks at the air as if making a point down the phone, and goes back to eating. Sound: night traffic hiss on wet tarmac, a distant siren, chopsticks against the carton. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/noodles-a.jpg",
+ "why": "Kai overnight brief 2026-11-24: cut r4 escalation extra (night, she is still there)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/noodles-a.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r4-shots",
+  "key": "noodles",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-24T22:41:23.182Z"
+ }
+}

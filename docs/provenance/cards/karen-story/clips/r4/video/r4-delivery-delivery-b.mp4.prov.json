@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r4/video/r4-delivery-delivery-b.mp4",
+ "made": "2026-11-24T22:44:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman in the phone box takes the paper bag from the rider without looking at him, still talking into the receiver; the rider shrugs, turns his bicycle and pedals away out of frame to the left. She sets the bag on the little shelf and keeps talking into the phone. Sound: street traffic, a bicycle freewheel ticking, a bus hissing as it brakes. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/delivery-b.jpg",
+ "why": "Kai overnight brief 2026-11-24: cut r4 3.4 (lunch delivered to the phone box)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/delivery-b.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r4-shots",
+  "key": "delivery",
+  "frame": 3,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-24T22:40:04.450Z"
+ }
+}

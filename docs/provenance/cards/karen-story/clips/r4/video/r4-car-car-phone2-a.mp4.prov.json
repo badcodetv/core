@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r4/video/r4-car-car-phone2-a.mp4",
+ "made": "2026-11-24T22:48:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The car glides through the city at night; streetlights and neon slide across the windows and over the man's shoulders. He presses the receiver hard to his ear, his head turned to the side window, speaking low; then he bows his head slightly, listening. Sound: muffled engine hum, tyres hissing on a wet road, a siren far off. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/car-phone2-a.jpg",
+ "why": "Kai overnight brief 2026-11-24: cut r4 6.7 (the man in the dark suit in his car, calling Karen)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/car-phone2-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r4-shots",
+  "key": "car",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-24T22:47:35.186Z"
+ }
+}
