@@ -1,0 +1,21 @@
+{
+  "A": {
+    "title": "Money lessons trial: maths hours kept, 40 schools drawn by lot",
+    "answer": "The Education Secretary may not cut any GCSE maths content or hours in a school until the Department for Education has run this trial and published the result. Trial: 40 state secondary schools, drawn by lot from willing schools in one region, teach the money lessons (inflation, savings, scams, mortgages) inside the same maths hours. They are compared with 40 similar schools that change nothing and lose nothing. Teachers and parents help pick what content moves, and schools get paid cover time. Provisional fail number: if foundation-tier maths results fall more than 2 points against the comparison schools, stop. Stop date: 31 August 2028. Primary schools and sixth forms are left out. Pass clause: if results hold, the department may extend, and must tell parents first.",
+    "sources": [
+      "s1",
+      "s2"
+    ],
+    "new_sources": []
+  },
+  "B": {
+    "title": "Teachers and parents pick what maths drops, tested in 40 schools",
+    "answer": "The Education Secretary must not cut any GCSE maths content until a panel has approved it. The panel would have a majority of serving maths teachers and parent governors, with ministers holding no vote. In 40 schools drawn by lot, the panel chooses what money content replaces, with no cut to maths hours. Another 40 drawn schools keep today's course. Both are marked on the same maths paper. Fail: if trial pupils score more than 3 percentage points lower (provisional), the trial stops and nothing is cut. Stop date: 31 August 2028. Parents are told in writing. It leaves out schools outside the draw and pupils already past Year 9. Pass: the panel publishes results, then may widen the trial.",
+    "sources": [
+      "s1",
+      "s2"
+    ],
+    "new_sources": []
+  },
+  "note": "Raw subagent replies. A trimmed to 120 words in the issue file."
+}

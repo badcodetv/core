@@ -3,7 +3,7 @@
   "id": "2026-11-24-money-lessons-maths",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "citizens",
+  "stage": "bench",
   "run": {
     "mode": "live",
     "run_date": "2026-11-24",
@@ -59,7 +59,8 @@
   "made_by": {
     "workers": [
       "sim-clerk",
-      "sim-citizens"
+      "sim-citizens",
+      "sim-bench"
     ]
   },
   "citizens": {
@@ -233,5 +234,42 @@
         "text": "Don’t know enough. Ask the teachers. Don’t let it be decided in Westminster alone."
       }
     ]
-  }
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Money lessons trial: maths hours kept, 40 schools drawn by lot",
+      "answer": "The Education Secretary may not cut any GCSE maths content or hours in a school until the Department for Education has run this trial and published the result. Trial: 40 state secondary schools, drawn by lot from willing schools in one region, teach the money lessons inside the same maths hours. They are compared with 40 similar schools that change nothing and lose nothing. Teachers and parents help pick what content moves, and schools get paid cover time. Provisional fail number: if foundation-tier maths results fall more than 2 points against the comparison schools, stop. Stop date: 31 August 2028. Primary schools and sixth forms are left out. Pass: if results hold, it may extend, and must tell parents first.",
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true
+    },
+    {
+      "id": "B",
+      "title": "Teachers and parents pick what maths drops, tested in 40 schools",
+      "answer": "The Education Secretary must not cut any GCSE maths content until a panel has approved it. The panel would have a majority of serving maths teachers and parent governors, with ministers holding no vote. In 40 schools drawn by lot, the panel chooses what money content replaces, with no cut to maths hours. Another 40 drawn schools keep today's course. Both are marked on the same maths paper. Fail: if trial pupils score more than 3 percentage points lower (provisional), the trial stops and nothing is cut. Stop date: 31 August 2028. Parents are told in writing. It leaves out schools outside the draw and pupils already past Year 9. Pass: the panel publishes results, then may widen the trial.",
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true
+    },
+    {
+      "id": "C",
+      "title": "Let school communities own the money lessons",
+      "answer": "A mortgage lesson should teach children to question the deal, not admire the bank. Let elected school panels of teachers, parents and pupils commission shared, advert-free lessons on savings, mortgages and scams. Teachers replace textbook exercises, not maths topics; panels publish every swap. Keep maths hours. Education ministers fund preparation time and independent marking. Draw lots among 30 volunteer schools: half try it, half continue unchanged. After one year, require a provisional ten-percentage-point gain in money skills with no fall in maths against the other schools. Publish separate results for disadvantaged pupils and pupils with special educational needs. Stop after that year unless Parliament renews it on those results; passing earns wider rollout.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ]
 }
