@@ -50,7 +50,7 @@ export function plainList(feed) {
     const lines = feed.government.lines.filter((l) => l.minister === m.id && l.live);
     return `<li><h3>${esc(m.title)}, ${esc(m.name)} (invented)</h3>${lines.length ? `<ul>${lines.map((l) => `<li>${l.status === 'trial' ? 'Trial: ' : ''}${esc(l.text)}</li>`).join('')}</ul>` : '<p>Nothing adopted yet.</p>'}</li>`;
   }).join('');
-  return `<p><strong>This is a demo.</strong> Every town, citizen, vote, answer and minister is made up and written by AI; the topics, sources and predictions are real. ${feed.days.length} days: ${feed.endings.accepted} accepted, ${feed.endings.partly} partly, ${feed.endings.rejected} rejected.</p><ol>${days}</ol><h2>The demo government</h2><ul>${gov}</ul>`;
+  return `<p><strong>This is a demo.</strong> Every town, citizen, vote, answer and minister is made up and written by AI; the topics, the sources, and the figures the predictions will be checked against are real. ${feed.days.length} days: ${feed.endings.accepted} accepted, ${feed.endings.partly} partly, ${feed.endings.rejected} rejected.</p><ol>${days}</ol><h2>The demo government</h2><ul>${gov}</ul>`;
 }
 
 // Wrap the page fragment (head bits, <style>, then <main> and <script>) in a full document.
