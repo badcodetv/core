@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0531",
+  "wants": "Mortgage and savings stuff is useful, actually.",
+  "limit": "Don't push out algebra for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0426",
+  "wants": "Teach budgeting. I wish I’d known earlier.",
+  "limit": "Don't make teachers do it on top of everything.",
+  "split": "yes"
+ },
+ {
+  "id": "c0657",
+  "wants": "Put it in maths, it’s the same thing really.",
+  "limit": "Don't cut stats, that's what I use at work.",
+  "split": "yes"
+ },
+ {
+  "id": "c0466",
+  "wants": "Separate lessons. Maths should stay maths.",
+  "limit": "Don't cut the proper maths we all learned.",
+  "split": "no"
+ },
+ {
+  "id": "c0957",
+  "wants": "Yes, but teachers should choose what goes.",
+  "limit": "Don't let politicians pick what gets cut.",
+  "split": "yes"
+ },
+ {
+  "id": "c0857",
+  "wants": "Back to basics: times tables and reading first.",
+  "limit": "Don't add more lessons on top of the basics.",
+  "split": "no"
+ },
+ {
+  "id": "c0837",
+  "wants": "Teach mortgages. Nobody explained them to me.",
+  "limit": "Don't cut maths teachers before any trial.",
+  "split": "yes"
+ },
+ {
+  "id": "c0799",
+  "wants": "Put it in maths and cut the old algebra.",
+  "limit": "Don't dumb down the exam.",
+  "split": "yes"
+ },
+ {
+  "id": "c0507",
+  "wants": "Savings and scams, yes. The rest, no idea.",
+  "limit": "Don't make the timetable any bigger.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0216",
+  "wants": "Basics first. The money lessons can wait.",
+  "limit": "Don't cut sums to fit a new subject.",
+  "split": "no"
+ },
+ {
+  "id": "c0944",
+  "wants": "Yes, my kids need to know what a mortgage is.",
+  "limit": "Don't leave it to teachers with no training.",
+  "split": "yes"
+ },
+ {
+  "id": "c0237",
+  "wants": "Teach it properly, after a trial somewhere first.",
+  "limit": "Don't roll it out everywhere at once.",
+  "split": "yes"
+ },
+ {
+  "id": "c0566",
+  "wants": "Money skills would have saved me. Maths still matters.",
+  "limit": "Don't cut GCSE maths to fit it.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0130",
+  "wants": "Teach real money stuff. I’m on benefits and confused.",
+  "limit": "Don't let it be a test I fail.",
+  "split": "yes"
+ },
+ {
+  "id": "c0470",
+  "wants": "Teach rent and deposits, not just algebra.",
+  "limit": "Don't make maths lessons harder to pass.",
+  "split": "yes"
+ },
+ {
+  "id": "c0538",
+  "wants": "Separate money lessons, keep maths intact.",
+  "limit": "Don't cut maths for kids who struggle with it.",
+  "split": "no"
+ },
+ {
+  "id": "c0003",
+  "wants": "I’d have liked to learn mortgages at school.",
+  "limit": "Don't cut the maths I need for work.",
+  "split": "yes"
+ },
+ {
+  "id": "c0737",
+  "wants": "Maths should be maths. Teach money in its own time.",
+  "limit": "Don't cut things for whatever the fad is.",
+  "split": "no"
+ },
+ {
+  "id": "c0964",
+  "wants": "Teach it, but pensions and debt matter more.",
+  "limit": "Don't cut what kids need to read a payslip.",
+  "split": "yes"
+ },
+ {
+  "id": "c0245",
+  "wants": "Yes, teach it alongside the maths we already have.",
+  "limit": "Don't let trials delay this too long.",
+  "split": "yes"
+ },
+ {
+  "id": "c0247",
+  "wants": "Don't know enough to say, but scams are real.",
+  "limit": "Don't cut anything without telling parents.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0260",
+  "wants": "Mortgages are a nightmare. Teach it.",
+  "limit": "Don't swap out the maths I'll need.",
+  "split": "yes"
+ },
+ {
+  "id": "c0709",
+  "wants": "Put it in maths, it’s the same skill anyway.",
+  "limit": "Don't cut the stats half of my kids need.",
+  "split": "yes"
+ },
+ {
+  "id": "c0407",
+  "wants": "Money lessons yes, but don’t take it from maths.",
+  "limit": "Don't give teachers more work unpaid.",
+  "split": "no"
+ },
+ {
+  "id": "c0064",
+  "wants": "Teach them credit cards and savings, the lot.",
+  "limit": "Don't cut the sums my apprentices need.",
+  "split": "yes"
+ },
+ {
+  "id": "c0819",
+  "wants": "Keep maths. Teach money in separate lessons.",
+  "limit": "Don't take a day off the times tables.",
+  "split": "no"
+ },
+ {
+  "id": "c0880",
+  "wants": "Teach it in maths. Fewer pointless questions.",
+  "limit": "Don't dumb down the exam for everyone.",
+  "split": "yes"
+ },
+ {
+  "id": "c0738",
+  "wants": "Yes, teach it, but who writes it matters.",
+  "limit": "Don't let it be sold by a bank.",
+  "split": "yes"
+ },
+ {
+  "id": "c0849",
+  "wants": "Yes. I got into debt because nobody taught me.",
+  "limit": "Don't let it become a sales pitch.",
+  "split": "yes"
+ },
+ {
+  "id": "c0456",
+  "wants": "Keep it out of maths, or I’m worried.",
+  "limit": "Don't cut maths. Kids need it for jobs.",
+  "split": "no"
+ },
+ {
+  "id": "c0732",
+  "wants": "Basics first. Money on Saturdays if they want.",
+  "limit": "Don't cut sums to make room.",
+  "split": "no"
+ },
+ {
+  "id": "c0461",
+  "wants": "Honestly no idea, but mortgages would have helped.",
+  "limit": "Don't waste school time on fads.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0103",
+  "wants": "Yes, but teachers must be paid to do it.",
+  "limit": "Don't make it a free add-on for staff.",
+  "split": "yes"
+ },
+ {
+  "id": "c0222",
+  "wants": "Put it in maths. It’s useful. Cut the rest.",
+  "limit": "Don't cut the spelling or the sums.",
+  "split": "yes"
+ },
+ {
+  "id": "c0716",
+  "wants": "Keep the maths. Teach money at home, not school.",
+  "limit": "Don't leave kids with less maths.",
+  "split": "no"
+ },
+ {
+  "id": "c0891",
+  "wants": "Yes, learn bills and loans. I’ve been stung.",
+  "limit": "Don't cut GCSE maths for the next lot.",
+  "split": "yes"
+ },
+ {
+  "id": "c0682",
+  "wants": "Teach it, but not at the cost of maths.",
+  "limit": "Don't cut maths teaching hours.",
+  "split": "no"
+ },
+ {
+  "id": "c0979",
+  "wants": "Old-fashioned maths, then a bit of money.",
+  "limit": "Don't let new subjects push out sums.",
+  "split": "no"
+ },
+ {
+  "id": "c0621",
+  "wants": "Yes, my kids should know money stuff.",
+  "limit": "Don't let it be a test they all fail.",
+  "split": "yes"
+ },
+ {
+  "id": "c0896",
+  "wants": "Teach it, but maths is maths.",
+  "limit": "Don't cut stuff without a proper trial.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0318",
+  "wants": "Money lessons for the young. Keep maths too.",
+  "limit": "Don't let the school board decide alone.",
+  "split": "yes"
+ },
+ {
+  "id": "c0625",
+  "wants": "Teach it, with teachers who know what they’re doing.",
+  "limit": "Don't cut anything until parents agree.",
+  "split": "yes"
+ },
+ {
+  "id": "c0379",
+  "wants": "Learn tax and rent. It’s needed.",
+  "limit": "Don't cut maths I'll need on an apprenticeship.",
+  "split": "yes"
+ },
+ {
+  "id": "c0956",
+  "wants": "Keep maths as it is. Money elsewhere.",
+  "limit": "Don't take from the ones who struggle.",
+  "split": "no"
+ },
+ {
+  "id": "c0954",
+  "wants": "Yes, nobody understands their payslip.",
+  "limit": "Don't take out the times tables.",
+  "split": "yes"
+ },
+ {
+  "id": "c0046",
+  "wants": "Money lessons fine, but not at maths’ expense.",
+  "limit": "Don't let schools in poor areas lose out.",
+  "split": "no"
+ },
+ {
+  "id": "c0369",
+  "wants": "Don't know. Sounds like a gimmick.",
+  "limit": "Don't waste school time on gimmicks.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0617",
+  "wants": "Teach them to save. We never had it.",
+  "limit": "Don't cut maths that gets kids jobs.",
+  "split": "yes"
+ },
+ {
+  "id": "c0766",
+  "wants": "Yes, money skills matter more than some maths.",
+  "limit": "Don't make it a box-ticking exercise.",
+  "split": "yes"
+ },
+ {
+  "id": "c0228",
+  "wants": "Teach rent and student debt, yes.",
+  "limit": "Don't drop maths we already do badly.",
+  "split": "yes"
+ },
+ {
+  "id": "c0898",
+  "wants": "Teach it, but sums first. Always sums first.",
+  "limit": "Don't drop long division.",
+  "split": "no"
+ },
+ {
+  "id": "c0841",
+  "wants": "Keep the maths. Make them learn money at home.",
+  "limit": "Don't add more lessons for my lads.",
+  "split": "no"
+ },
+ {
+  "id": "c0153",
+  "wants": "Teach mortgages. I’ll need one someday.",
+  "limit": "Don't cut the maths I got stuck on.",
+  "split": "yes"
+ },
+ {
+  "id": "c0388",
+  "wants": "Yes, with proper trials in a few schools.",
+  "limit": "Don't rush it into every school.",
+  "split": "yes"
+ },
+ {
+  "id": "c0291",
+  "wants": "Money lessons, sure. What’s compound interest?",
+  "limit": "Don't drop the maths we already need.",
+  "split": "yes"
+ },
+ {
+  "id": "c0135",
+  "wants": "Teach it, and pay the teachers to teach it.",
+  "limit": "Don't let it fall on parents alone.",
+  "split": "yes"
+ },
+ {
+  "id": "c0294",
+  "wants": "Keep maths as it is. Money’s for the bank.",
+  "limit": "Don't cut anything for a trend.",
+  "split": "no"
+ },
+ {
+  "id": "c0307",
+  "wants": "Don't know enough. Ask the teachers.",
+  "limit": "Don't let it be decided in Westminster alone.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0503",
+  "wants": "Yes, but make sure someone who knows teaches it.",
+  "limit": "Don't leave the weakest pupils behind.",
+  "split": "yes"
+ },
+ {
+  "id": "c0963",
+  "wants": "Money skills yes. Cut the pointless stuff.",
+  "limit": "Don't cut what gets kids into apprenticeships.",
+  "split": "yes"
+ },
+ {
+  "id": "c0780",
+  "wants": "Teach it in maths, but with trials first.",
+  "limit": "Don't cut content without writing it down.",
+  "split": "yes"
+ },
+ {
+  "id": "c0218",
+  "wants": "Keep maths. Money’s learned by doing.",
+  "limit": "Don't let it be the next fad.",
+  "split": "no"
+ },
+ {
+  "id": "c0209",
+  "wants": "Don't know. The old school taught us enough.",
+  "limit": "Don't cut what works.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0589",
+  "wants": "Yes! My kids got tricked on loans. Teach them.",
+  "limit": "Don't make it a box to tick.",
+  "split": "yes"
+ },
+ {
+  "id": "c0431",
+  "wants": "Teach money with the real cost of things, climate too.",
+  "limit": "Don't let it squeeze out art and science.",
+  "split": "yes"
+ },
+ {
+  "id": "c0945",
+  "wants": "Teach it. Mortgages especially, I’m stuck.",
+  "limit": "Don't cut maths for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0019",
+  "wants": "Yes, I’d have liked to know how savings work.",
+  "limit": "Don't let it stop me getting maths.",
+  "split": "yes"
+ },
+ {
+  "id": "c0610",
+  "wants": "Teach it, and let parents see what’s dropped.",
+  "limit": "Don't cut without telling anyone.",
+  "split": "yes"
+ },
+ {
+  "id": "c0110",
+  "wants": "Put it in maths. Nobody needs algebra anyway.",
+  "limit": "Don't cut what my grandkids need for work.",
+  "split": "yes"
+ },
+ {
+  "id": "c0583",
+  "wants": "Yes, but keep the sums sharp.",
+  "limit": "Don't take it from the basics.",
+  "split": "yes"
+ },
+ {
+  "id": "c0319",
+  "wants": "Yes, and teach how bills and climate connect.",
+  "limit": "Don't make it a sales pitch for banks.",
+  "split": "yes"
+ },
+ {
+  "id": "c0259",
+  "wants": "Keep maths. Teach money separately after school.",
+  "limit": "Don't stretch teachers any further.",
+  "split": "no"
+ },
+ {
+  "id": "c0683",
+  "wants": "Teach money. Cut the rubbish topics.",
+  "limit": "Don't cut stats. It's useful.",
+  "split": "yes"
+ },
+ {
+  "id": "c0161",
+  "wants": "Yes, mortgages and tax, please, with some trials.",
+  "limit": "Don't drop maths without a real test.",
+  "split": "yes"
+ },
+ {
+  "id": "c0924",
+  "wants": "Keep reading and writing. Don’t know the rest.",
+  "limit": "Don't cut the basics.",
+  "split": "no"
+ },
+ {
+  "id": "c0213",
+  "wants": "Yes, but teachers need time, not more jobs.",
+  "limit": "Don't make teachers do it unpaid.",
+  "split": "yes"
+ },
+ {
+  "id": "c0257",
+  "wants": "Teach money. Mine went on nothing.",
+  "limit": "Don't cut maths I'll need.",
+  "split": "yes"
+ },
+ {
+  "id": "c0832",
+  "wants": "Keep maths. Teach money in its own lessons.",
+  "limit": "Don't cut maths hours.",
+  "split": "no"
+ },
+ {
+  "id": "c0655",
+  "wants": "Yes, mortgages and rent. It’s real life.",
+  "limit": "Don't cut stats. I use it at work.",
+  "split": "yes"
+ },
+ {
+  "id": "c0840",
+  "wants": "Yes, but only if it’s trialled first.",
+  "limit": "Don't cut anything before it's tested.",
+  "split": "yes"
+ },
+ {
+  "id": "c0775",
+  "wants": "Yes, teach it, though keep the algebra.",
+  "limit": "Don't let the change be rushed.",
+  "split": "yes"
+ },
+ {
+  "id": "c0740",
+  "wants": "Not sure. Maths is hard enough already.",
+  "limit": "Don't add more hard stuff.",
+  "split": "no"
+ },
+ {
+  "id": "c0498",
+  "wants": "Teach money. Government should do it well.",
+  "limit": "Don't cut maths for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0202",
+  "wants": "Teach them how not to get ripped off.",
+  "limit": "Don't let it replace proper maths.",
+  "split": "yes"
+ },
+ {
+  "id": "c0396",
+  "wants": "Basics, then money. In that order.",
+  "limit": "Don't cut the basics for a fashion.",
+  "split": "no"
+ },
+ {
+  "id": "c0053",
+  "wants": "Yes, I need it for when I’ve got kids.",
+  "limit": "Don't push out the maths I'm still doing.",
+  "split": "yes"
+ },
+ {
+  "id": "c0742",
+  "wants": "Teach money. Mortgages are a big deal.",
+  "limit": "Don't drop GCSE maths.",
+  "split": "yes"
+ },
+ {
+  "id": "c0203",
+  "wants": "Money lessons good, but teachers need help.",
+  "limit": "Don't leave teachers to do it alone.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0497",
+  "wants": "Honestly, I don't mind either way.",
+  "limit": "Don't cut anything I haven't seen.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0650",
+  "wants": "Yes, money skills and maths together.",
+  "limit": "Don't cut what my son needs for college.",
+  "split": "yes"
+ },
+ {
+  "id": "c0972",
+  "wants": "Yes, teach mortgages and savings properly.",
+  "limit": "Don't cut the maths for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0971",
+  "wants": "Keep maths. My money lessons were at work.",
+  "limit": "Don't add more to school.",
+  "split": "no"
+ },
+ {
+  "id": "c0671",
+  "wants": "Yes, but who's writing the curriculum matters.",
+  "limit": "Don't let a corporate write it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0071",
+  "wants": "Keep maths. Money's a parent's job.",
+  "limit": "Don't cut the sums to fit a trend.",
+  "split": "no"
+ },
+ {
+  "id": "c0105",
+  "wants": "Yes, teach money and how it can be fairer.",
+  "limit": "Don't cut the maths for it.",
+  "split": "yes"
+ },
+ {
+  "id": "c0551",
+  "wants": "Money lessons would have helped my family.",
+  "limit": "Don't cut sums we'd have needed.",
+  "split": "yes"
+ },
+ {
+  "id": "c0090",
+  "wants": "Don't know. Keep the school as it was.",
+  "limit": "Don't change things without asking.",
+  "split": "no"
+ },
+ {
+  "id": "c0281",
+  "wants": "Yes, I'd like to understand mortgages.",
+  "limit": "Don't take maths out of my apprenticeship.",
+  "split": "yes"
+ },
+ {
+  "id": "c0205",
+  "wants": "Yes, but trials first, then see what happens.",
+  "limit": "Don't drop anything without evidence.",
+  "split": "unsure"
+ },
+ {
+  "id": "c0430",
+  "wants": "Yes, teach it, but keep the proper maths.",
+  "limit": "Don't let it be a fad that wastes time.",
+  "split": "yes"
+ }
+]

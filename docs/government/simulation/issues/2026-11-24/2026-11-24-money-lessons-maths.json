@@ -3,7 +3,7 @@
   "id": "2026-11-24-money-lessons-maths",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "clerk",
+  "stage": "citizens",
   "run": {
     "mode": "live",
     "run_date": "2026-11-24",
@@ -58,7 +58,180 @@
   ],
   "made_by": {
     "workers": [
-      "sim-clerk"
+      "sim-clerk",
+      "sim-citizens"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-24-money-lessons-maths/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0531",
+      "c0426",
+      "c0657",
+      "c0466",
+      "c0957",
+      "c0857",
+      "c0837",
+      "c0799",
+      "c0507",
+      "c0216",
+      "c0944",
+      "c0237",
+      "c0566",
+      "c0130",
+      "c0470",
+      "c0538",
+      "c0003",
+      "c0737",
+      "c0964",
+      "c0245",
+      "c0247",
+      "c0260",
+      "c0709",
+      "c0407",
+      "c0064",
+      "c0819",
+      "c0880",
+      "c0738",
+      "c0849",
+      "c0456",
+      "c0732",
+      "c0461",
+      "c0103",
+      "c0222",
+      "c0716",
+      "c0891",
+      "c0682",
+      "c0979",
+      "c0621",
+      "c0896",
+      "c0318",
+      "c0625",
+      "c0379",
+      "c0956",
+      "c0954",
+      "c0046",
+      "c0369",
+      "c0617",
+      "c0766",
+      "c0228",
+      "c0898",
+      "c0841",
+      "c0153",
+      "c0388",
+      "c0291",
+      "c0135",
+      "c0294",
+      "c0307",
+      "c0503",
+      "c0963",
+      "c0780",
+      "c0218",
+      "c0209",
+      "c0589",
+      "c0431",
+      "c0945",
+      "c0019",
+      "c0610",
+      "c0110",
+      "c0583",
+      "c0319",
+      "c0259",
+      "c0683",
+      "c0161",
+      "c0924",
+      "c0213",
+      "c0257",
+      "c0832",
+      "c0655",
+      "c0840",
+      "c0775",
+      "c0740",
+      "c0498",
+      "c0202",
+      "c0396",
+      "c0053",
+      "c0742",
+      "c0203",
+      "c0497",
+      "c0650",
+      "c0972",
+      "c0971",
+      "c0671",
+      "c0071",
+      "c0105",
+      "c0551",
+      "c0090",
+      "c0281",
+      "c0205",
+      "c0430"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "Children leave school knowing mortgages, savings and scams.",
+        "backers": 39
+      },
+      {
+        "kind": "test",
+        "text": "Small trials in a few schools show maths holds up before every school changes.",
+        "backers": 7
+      },
+      {
+        "kind": "test",
+        "text": "Teachers and parents help choose what goes, not ministers alone.",
+        "backers": 7
+      },
+      {
+        "kind": "limit",
+        "text": "Maths hours and basics don't shrink to make room for money lessons.",
+        "backers": 49
+      },
+      {
+        "kind": "limit",
+        "text": "Teachers aren't handed extra work without extra time or pay.",
+        "backers": 7
+      },
+      {
+        "kind": "limit",
+        "text": "Nothing gets cut without a trial or parents being told.",
+        "backers": 11
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0589",
+        "who": "42, South West, in work, social renter",
+        "text": "Yes! My kids got tricked on loans. Teach them. Just don’t make it a box to tick."
+      },
+      {
+        "citizen": "c0319",
+        "who": "78, South West, in work, social renter",
+        "text": "Yes, and teach how bills and climate connect. Don’t make it a sales pitch for banks."
+      },
+      {
+        "citizen": "c0202",
+        "who": "37, South East, in work, owns outright",
+        "text": "Teach them how not to get ripped off. Don’t let it replace proper maths."
+      },
+      {
+        "citizen": "c0466",
+        "who": "77, South East, retired, owns with a mortgage",
+        "text": "Separate lessons. Maths should stay maths. Don’t cut the proper maths we all learned."
+      },
+      {
+        "citizen": "c0716",
+        "who": "75, South West, in work, private renter",
+        "text": "Keep the maths. Teach money at home, not school. Don’t leave kids with less maths."
+      },
+      {
+        "citizen": "c0307",
+        "who": "56, East of England, in work, owns outright",
+        "text": "Don’t know enough. Ask the teachers. Don’t let it be decided in Westminster alone."
+      }
     ]
   }
 }
