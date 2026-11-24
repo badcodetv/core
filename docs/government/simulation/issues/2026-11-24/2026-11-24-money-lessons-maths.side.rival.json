@@ -1,0 +1,12 @@
+{
+  "id": "C",
+  "title": "Let school communities own the money lessons",
+  "answer": "A mortgage lesson should teach children to question the deal, not admire the bank. Let elected school panels of teachers, parents and pupils commission shared, advert-free lessons on savings, mortgages and scams. Teachers replace textbook exercises, not maths topics; panels publish every swap. Keep maths hours. Education ministers fund preparation time and independent marking. Draw lots among 30 volunteer schools: half try it, half continue unchanged. After one year, require a provisional ten-percentage-point gain in money skills with no fall in maths against the other schools. Publish separate results for disadvantaged pupils and pupils with special educational needs. Stop after that year unless Parliament renews it on those results; passing earns wider rollout.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": []
+}
