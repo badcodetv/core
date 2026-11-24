@@ -1,7 +1,7 @@
 {
  "schema": "fp-demo/1",
  "id": "2026-11-24-thornley-homes-writeoff",
- "stage": "bench",
+ "stage": "gate",
  "run": {
   "mode": "daily",
   "run_date": "2026-11-24",
@@ -60,7 +60,8 @@
    "demo-clerk",
    "demo-citizens",
    "demo-bench",
-   "demo-rival"
+   "demo-rival",
+   "demo-gate"
   ]
  },
  "citizens": {
@@ -256,5 +257,120 @@
    "engine": "codex",
    "model": "gpt-6"
   }
- ]
+ ],
+ "gate": {
+  "rows": [
+   {
+    "answer": "A",
+    "test": "t1",
+    "result": "pass",
+    "note": "The sums close: £35m of sales plus £8m reserves covers the £43m hole, with no tax rise and no new borrowing; it gives no dates for when the cash lands."
+   },
+   {
+    "answer": "A",
+    "test": "t2",
+    "result": "fail",
+    "note": "Tenants in the 350 homes sold lose them; the offer of other council homes comes first but is only an offer, so tenants do lose their homes."
+   },
+   {
+    "answer": "A",
+    "test": "t3",
+    "result": "pass",
+    "note": "It says outright there are no care cuts, and nothing in it touches adult social care or children’s services."
+   },
+   {
+    "answer": "A",
+    "test": "t4",
+    "result": "pass",
+    "note": "It says there is no tax rise, so council tax stays at or below the no-vote limit."
+   },
+   {
+    "answer": "A",
+    "test": "t5",
+    "result": "unclear",
+    "note": "It publishes the sale list before the vote but says nothing on telling residents what was lost or who decided to lend the £74m."
+   },
+   {
+    "answer": "A",
+    "test": "t6",
+    "result": "unclear",
+    "note": "It assumes the 410 company homes are sold but gives no two-year deadline and names no builder or buyer."
+   },
+   {
+    "answer": "B",
+    "test": "t1",
+    "result": "unclear",
+    "note": "The £5m tax plus £7m cuts add up to the gap over three years, but it says nothing on how this year and next balance before the debt is cleared."
+   },
+   {
+    "answer": "B",
+    "test": "t2",
+    "result": "fail",
+    "note": "No homes are sold, but council taxpayers pay, and council tenants who pay council tax are among them, so tenants help pay the company’s debt."
+   },
+   {
+    "answer": "B",
+    "test": "t3",
+    "result": "fail",
+    "note": "It cuts £7m a year from other services, naming adult social care, for three years."
+   },
+   {
+    "answer": "B",
+    "test": "t4",
+    "result": "pass",
+    "note": "The rise is set at the most the council can make without a local vote, so it stays within the limit."
+   },
+   {
+    "answer": "B",
+    "test": "t5",
+    "result": "unclear",
+    "note": "Each year’s cuts are published in full, but it says nothing on telling residents what was lost or who decided to lend."
+   },
+   {
+    "answer": "B",
+    "test": "t6",
+    "result": "unclear",
+    "note": "It is silent on the 410 homes: no sale or finish date and no named builder or buyer."
+   },
+   {
+    "answer": "C",
+    "test": "t1",
+    "result": "fail",
+    "note": "The £35m grant is only requested, and it says the books do not balance until government agrees and the money arrives."
+   },
+   {
+    "answer": "C",
+    "test": "t2",
+    "result": "pass",
+    "note": "It protects existing council tenants and rents and sells only the company’s homes, so no tenant loses a home or pays the debt."
+   },
+   {
+    "answer": "C",
+    "test": "t3",
+    "result": "pass",
+    "note": "It names care and children’s services as protected."
+   },
+   {
+    "answer": "C",
+    "test": "t4",
+    "result": "pass",
+    "note": "It pays from sale proceeds, reserves and a grant, and proposes no council tax rise."
+   },
+   {
+    "answer": "C",
+    "test": "t5",
+    "result": "pass",
+    "note": "The finance director publishes who authorised the £74m loan, with quarterly accounts showing receipts and the remaining gap."
+   },
+   {
+    "answer": "C",
+    "test": "t6",
+    "result": "pass",
+    "note": "It sells all 410 homes within two years and publishes the buyer before signing."
+   }
+  ],
+  "verdict": "Answer A keeps care, tax and the books inside their limits but sells tenants’ homes; B cuts adult social care and makes taxpayers, tenants included, pay; C protects everyone but leaves the books unbalanced until a grant arrives.",
+  "rounds": 1
+ },
+ "ending": "rejected"
 }
