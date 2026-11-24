@@ -130,6 +130,25 @@ On Jack's machine every short's media folder is `C:\Users\jackt\OneDrive\Desktop
 
 **How to apply:** for a new short on this machine, create that folder and run `drive.sh where`, then say where it is in one line instead of asking. Kai's machine differs (D:\badcode-videos\shorts\<slug>). Keep the tidy layout (`tidy-media-folders`).
 
+**Older shorts moved (found 2026-11-24):** The Rules, Sponsor a Chancellor, Signs, Magic Money Tree, Same Bench, No
+Master Recording and The Envelope now sit in `...\animation\shorts\other\<slug>` (Jack: "they are all in the shorts
+folder"); their `badcode.local.json` entries and `folders.json` homes point there. `other\` also holds an older
+`hello-im-badcode` copy; the live one stays in `shorts\hello-im-badcode`. If a recorded short folder is missing, look
+in `shorts\other` before asking. The Freddo Mortgage was in neither (ask Jack).
+
+## Bringing bp-videos (the Platinum repo) up to date with our tools (2026-11-24)
+
+`~/projects/bp/bp-videos` is a reworded copy of our video toolkit (copied 2026-11-23 15:58, then a hand-made update
+package). Jack asked twice whether it had "all of the optimising"; the package had missed eight lip-sync lessons, the
+clean-room-writer route and the sounds-straight-to-Suno rule.
+**How to apply:** when asked to check or bring it up to date: (1) list our files under `.claude/`, `scripts/`,
+`packages/*-mcp`, `docs/rules`, `docs/flow`, `docs/ai-studio` changed since the last bp sync, and compare each with bp's
+copy (same / stale / reworded); (2) fuzzy-compare the skill and rule TEXT line by line (bp renames stories to "one past
+short", so exact diffs are noise), and read each unmatched line; (3) leave out BadCode-only material (chief-of-staff,
+government, marketing agents, the BadCode voice, logo, comics, our story examples) and offer extra skills rather than
+copy them; (4) write the changes in bp's own wording, commit only those files (bp usually has another session's
+uncommitted story work), and tell Jack open bp sessions need a restart. Last sync: bp `2f522e7`, 2026-11-24.
+
 ## Unsplash API key LIVE since 2026-11-17 (production tier, 5000 req/hr); scripts/scene/unsplash-refs.py works, offer photo options in scenes
 
 2026-11-17: Jack put the Unsplash keys in `.env` (as `export UNSPLASH_...=` lines; the script now accepts the `export ` prefix). Live test passed: HTTP 200, rate limit 5000/hour (production tier, so the app was approved).
