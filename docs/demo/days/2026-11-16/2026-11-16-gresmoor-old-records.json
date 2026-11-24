@@ -177,7 +177,7 @@
    {
     "id": "t1",
     "kind": "test",
-    "text": "Gives a finish date no later than 28 February 2027 for deleting or marking every record.",
+    "text": "Gives a finish date no later than 16 December 2026 for deleting or marking every record.",
     "backers": 88
    },
    {
@@ -244,7 +244,7 @@
    "id": "A",
    "angle": "Full sweep by the records team, with an outside check",
    "title": "Inside sweep of all three stores, with an outside check",
-   "answer": "Gresmoor Police will search the paper store, the old system and the court copies, then delete each record or mark it as deleted. Finish date: 28 February 2027. The Head of Records signs off every deletion and answers calls from any woman with questions. The four-person records team does all the work, with no outside firm. No name or file detail leaves the police. An officer from outside the records team checks a sample of each store. We never write to, phone or visit a woman unless she asks first. Pay comes from the £90,000 already set aside, with a spending cap of £90,000. Success means every record is deleted or marked by the finish date, the checker finds no misses, and the force publishes only a record count.",
+   "answer": "Gresmoor Police will search the paper store, the old system and the court copies, then delete each record or mark it as deleted. Finish date: 16 December 2026. The Head of Records signs off every deletion and answers calls from any woman with questions. The four-person records team does all the work, with no outside firm. No name or file detail leaves the police. An officer from outside the records team checks a sample of each store. We never write to, phone or visit a woman unless she asks first. Pay comes from the £90,000 already set aside, with a spending cap of £90,000. Success means every record is deleted or marked by the finish date, the checker finds no misses, and the force publishes only a record count.",
    "engine": "claude",
    "model": "claude-sonnet-5-5"
   },
@@ -271,7 +271,7 @@
     "answer": "A",
     "test": "t1",
     "result": "pass",
-    "note": "Gives a finish date of 28 February 2027 for deleting or marking every record, which meets the cutoff."
+    "note": "Gives a finish date of 16 December 2026 for deleting or marking every record, which meets the cutoff."
    },
    {
     "answer": "A",
@@ -307,7 +307,7 @@
     "answer": "B",
     "test": "t1",
     "result": "pass",
-    "note": "Finish by 31 January 2027, which is before the 28 February cutoff."
+    "note": "Finish by 31 January 2027, which is before the 16 December cutoff."
    },
    {
     "answer": "B",
@@ -429,7 +429,7 @@
   "minister": "crime",
   "decision": "adopted",
   "answer": "A",
-  "text": "Gresmoor Police adopts Answer A: search all three stores, delete or mark every record by 28 February 2027, no outside firm, no letters unless a woman asks, all inside the £90,000.",
+  "text": "Gresmoor Police adopts Answer A: search all three stores, delete or mark every record by 16 December 2026, no outside firm, no letters unless a woman asks, all inside the £90,000.",
   "statement": "This answer passed all six of the citizens' tests, both red lines included: no contact unless a woman asks, and no names to any outside firm. The jury ruled 7 to 4 to 1 that the town hears only the number deleted. I sign it. Done safely is what makes people safe, so the Head of Records answers the phone and the count goes public when the work is done."
  },
  "predictions": [

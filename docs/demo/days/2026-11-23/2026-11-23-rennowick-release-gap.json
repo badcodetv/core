@@ -443,9 +443,9 @@
  "predictions": [
   {
    "id": "p1",
-   "claim": "The prison population in England and Wales at 31 December 2026 will be below 87,712, the latest quarterly figure.",
+   "claim": "The next prison population figure the Ministry of Justice publishes after 24 November 2026 will be below 87,712.",
    "due": "2027-02-26",
-   "rule": "Ministry of Justice, Offender management statistics quarterly, July to September 2026 bulletin (scheduled 28 January 2027), which gives the population as at 31 December 2026 (a guess from the pattern: the last bulletin gave 30 September). Last published: 87,712 at 30 Sep 2026.",
+   "rule": "Ministry of Justice, Offender management statistics quarterly: the end-of-quarter prison population for England and Wales in the first bulletin published after 24 Nov 2026. Last published: 87,712 at 30 Sep 2026. Void if none is published by the due date.",
    "result": "pending",
    "sources": [
     "s3"
@@ -453,9 +453,9 @@
   },
   {
    "id": "p2",
-   "claim": "The prison population in England and Wales at 31 March 2027 will be below 88,000.",
+   "claim": "The prison population figure in the bulletin after that will be below 88,000.",
    "due": "2027-05-28",
-   "rule": "Ministry of Justice, Offender management statistics quarterly, October to December 2026 bulletin, published by 28 May 2027. Last published: 87,712 at 30 Sep 2026. If not published by the due date, void.",
+   "rule": "Ministry of Justice, Offender management statistics quarterly: the end-of-quarter prison population for England and Wales in the second bulletin published after 24 Nov 2026. Last published: 87,712 at 30 Sep 2026. Void if none is published by the due date.",
    "result": "pending",
    "sources": [
     "s3"

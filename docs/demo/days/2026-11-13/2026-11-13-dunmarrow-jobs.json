@@ -453,7 +453,7 @@
   },
   {
    "id": "p2",
-   "claim": "The UK unemployment rate for people aged 16 and over for October to December 2026 will be 4.6% or lower.",
+   "claim": "The UK unemployment rate for people aged 16 and over for October to December 2026 will be below 4.6%.",
    "due": "2027-03-01",
    "rule": "ONS UK labour market overview, February 2027 release, headline rate. Last published: 4.6% for Jul to Sep 2026 (ONS, 17 Nov 2026).",
    "result": "pending",

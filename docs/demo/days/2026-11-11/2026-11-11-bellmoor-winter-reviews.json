@@ -63,7 +63,8 @@
    "demo-bench",
    "demo-gate",
    "demo-jury",
-   "demo-minister"
+   "demo-minister",
+   "demo-redo"
   ],
   "note": "First marks: the citizens' tests were too easy, so three were made stricter (t1 asks for 2,200 reviews, t2 for the sickest 300 seen by 15 December, t6 for a target for admissions). The answers were not changed. Marked again from scratch."
  },

@@ -1,29 +1,29 @@
 {
-"schema": "fp-demo-gov/1",
-"date": "2026-11-12",
-"day": "2026-11-12-corvenhall-college",
-"debate": [
-{
-"minister": "education",
-"text": "Corvenhall wants 300 young people back in learning and has money for 120. Every answer crossed a red line: shut the adult evening classes, spend the savings, or give the extra 180 two hours of maths with volunteers. The jury kept every line, 6 to 4. I sent it back. A child would notice being let in, then let down."
-},
-{
-"minister": "work",
-"text": "Grace, the jury chose 120 funded places. That leaves 180 young people on a list, and I know where lists like that end up. A lad of seventeen with nothing to do in January is a lad on the dole at nineteen. The town should rethink the funder's cap, not the college's savings."
-},
-{
-"minister": "crime",
-"text": "Callum is right to worry. Leave them waiting and we will meet some of them again later, in my figures. That's on us, not them. I cannot prove the link from one made-up town, but I would not bet against it."
-},
-{
-"minister": "education",
-"text": "Then say it plainly to the funder. Pay for the places the town needs, or tell us which 180 do not get one. I will not pretend volunteers are teachers."
-}
-],
-"changes": [],
-"made_by": {
-"workers": [
-"demo-cabinet"
-]
-}
+ "schema": "fp-demo-gov/1",
+ "date": "2026-11-12",
+ "day": "2026-11-12-corvenhall-college",
+ "debate": [
+  {
+   "minister": "education",
+   "text": "Corvenhall wants 300 young people back in learning and has money for 120. Every answer crossed a red line: shut the adult evening classes, spend the savings, or give the extra 180 two hours of maths with volunteers. The jury kept every line, 6 to 4. I sent it back. A child would notice being let in, then let down."
+  },
+  {
+   "minister": "work",
+   "text": "Grace, the jury chose 120 funded places. That leaves 180 young people on a list, and I know where lists like that end up. A lad of seventeen with nothing to do in January is a lad on the dole at nineteen. The town should rethink the funder's cap, not the college's savings."
+  },
+  {
+   "minister": "crime",
+   "text": "Callum is right to worry. Leave them waiting and we will meet some of them again later, in my figures. That's on us, not them."
+  },
+  {
+   "minister": "education",
+   "text": "Then say it plainly to the funder. Pay for the places the town needs, or tell us which 180 do not get one. I will not pretend volunteers are teachers."
+  }
+ ],
+ "changes": [],
+ "made_by": {
+  "workers": [
+   "demo-cabinet"
+  ]
+ }
 }
