@@ -1,7 +1,7 @@
 {
  "schema": "fp-demo/1",
  "id": "2026-11-24-thornley-homes-writeoff",
- "stage": "case",
+ "stage": "citizens",
  "run": {
   "mode": "daily",
   "run_date": "2026-11-24",
@@ -57,7 +57,176 @@
  ],
  "made_by": {
   "workers": [
-   "demo-clerk"
+   "demo-clerk",
+   "demo-citizens"
+  ]
+ },
+ "citizens": {
+  "pool": "pool-2026-11-23",
+  "seed": "2026-11-24-thornley-homes-writeoff/citizens",
+  "drawn": 100,
+  "ids": [
+   "c0933",
+   "c0293",
+   "c0470",
+   "c0521",
+   "c0674",
+   "c0198",
+   "c0362",
+   "c0213",
+   "c0225",
+   "c0746",
+   "c0333",
+   "c0876",
+   "c0585",
+   "c0951",
+   "c0966",
+   "c0813",
+   "c0004",
+   "c0032",
+   "c0351",
+   "c0289",
+   "c0205",
+   "c0421",
+   "c0751",
+   "c0883",
+   "c0618",
+   "c0838",
+   "c0083",
+   "c0101",
+   "c0832",
+   "c0845",
+   "c0273",
+   "c0844",
+   "c0034",
+   "c0582",
+   "c0440",
+   "c0770",
+   "c0612",
+   "c0384",
+   "c0543",
+   "c0292",
+   "c0134",
+   "c0739",
+   "c0403",
+   "c0061",
+   "c0937",
+   "c0569",
+   "c0829",
+   "c0220",
+   "c0526",
+   "c0601",
+   "c0752",
+   "c0598",
+   "c0257",
+   "c0288",
+   "c0833",
+   "c0682",
+   "c0854",
+   "c0727",
+   "c0961",
+   "c0249",
+   "c0710",
+   "c0119",
+   "c0918",
+   "c0698",
+   "c0689",
+   "c0711",
+   "c0533",
+   "c0977",
+   "c0926",
+   "c0807",
+   "c0560",
+   "c0073",
+   "c0546",
+   "c0749",
+   "c0029",
+   "c0116",
+   "c0890",
+   "c0694",
+   "c0888",
+   "c0959",
+   "c0814",
+   "c0476",
+   "c0982",
+   "c0549",
+   "c0580",
+   "c0419",
+   "c0239",
+   "c0441",
+   "c0537",
+   "c0572",
+   "c0678",
+   "c0796",
+   "c0561",
+   "c0655",
+   "c0940",
+   "c0915",
+   "c0789",
+   "c0579",
+   "c0412",
+   "c0466"
+  ],
+  "model": "claude-haiku-5-5",
+  "tests": [
+   {
+    "id": "t1",
+    "kind": "limit",
+    "text": "The books balance this year and next, as the law requires. No borrowing to paper over it.",
+    "backers": 70
+   },
+   {
+    "id": "t2",
+    "kind": "limit",
+    "text": "No council tenant loses their home or pays for the company’s debt.",
+    "backers": 88
+   },
+   {
+    "id": "t3",
+    "kind": "limit",
+    "text": "No cut to adult social care or children’s services.",
+    "backers": 80
+   },
+   {
+    "id": "t4",
+    "kind": "limit",
+    "text": "No council tax rise above the limit that needs no local vote.",
+    "backers": 55
+   },
+   {
+    "id": "t5",
+    "kind": "test",
+    "text": "Residents are told in plain words what was lost and who decided to lend the money.",
+    "backers": 74
+   },
+   {
+    "id": "t6",
+    "kind": "test",
+    "text": "The 410 homes are finished or sold within two years, with a named builder or buyer.",
+    "backers": 70
+   }
+  ],
+  "voices": [
+   {
+    "citizen": "c0004",
+    "who": "a council tenant, 63, East Midlands",
+    "text": "I live in a council flat. If they sell flats to pay for a company I was never asked about, I want that said out loud before the vote, not after."
+   },
+   {
+    "citizen": "c0933",
+    "who": "retired, 72, renting privately, South East",
+    "text": "Four hundred homes half-built and nobody at the council will say who signed for the loan. Give us the name, then give us the bill."
+   },
+   {
+    "citizen": "c0198",
+    "who": "out of work, 53, Yorkshire and The Humber",
+    "text": "Don’t take the old folks’ care to pay for a building scheme. Find who ran it and make them answer for it."
+   },
+   {
+    "citizen": "c0225",
+    "who": "employed, 35, renting privately, South West",
+    "text": "I’d pay a bit more on the council tax if I could see where every pound went. Show me the homes, not a promise."
+   }
   ]
  }
 }
