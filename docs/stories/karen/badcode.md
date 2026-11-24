@@ -11,7 +11,7 @@ there. Two videos: a **narrated story film** (ends on Sean AI's card, the sacked
 "To be continued"; no stated moral) and a **music video** for the song "All Day to Complain" (about 4:10).
 
 ## Parts
-- Story film — `scenes/story/` — on its timeline page at **cut r3** (2026-11-18): Kai's notes to 2:08 attempted in one cut (`scripts/karen/story-cut-r3.py`; office → calling everyone re-cut, Viral onward still Jack's `Karen v4` render). r3b (19 Nov): the same cut with no clip sound (Kai's rule below), on the same page; Kai paused noting 19 Nov (26 notes on the page, dumped to `scenes/story/feedback/timeline-r3-2026-11-19/`); pick up from there, nothing answered yet. Premiere still holds only `Karen v4`. Names for the first three calls (Kai): Martha (receptionist), Clive (local council), Harriet (borough representative).
+- Story film — `scenes/story/` — **restructuring** (2026-11-24): Kai's round-4 notes on cut r3 became a new beat sheet, [scenes/story/beats-r4.md](./scenes/story/beats-r4.md) (the film's words until re-cut; joke slots open for Jack and Kai). Re-cut only after the sheet is agreed. Premiere still holds only `Karen v4`.
 - Music video — `scenes/music-video/` — final cut frozen 2026-11-09 (Kai's hand edit on `karen-music-r4`).
 - **The two have different looks and different Karens. Don't carry one part's look or voice into the other.**
 
@@ -50,6 +50,7 @@ Status: LOCKED. Karen's imagery is Jack's, made by hand in Flow; generate only w
 - **Score:** EMPTY — six cues in [narration/score.md](./narration/score.md); stem-split an accepted song take first.
 
 ## Story-only rules
+- **The point (Kai, 2026-11-24):** Karen's persistence climbs the ladder of managers, and it is what makes her useful against the AI: at the end the sacked President calls *her* ("we need to work together to beat this"). The escalation is the centrepiece: map, ladder and weather moving together, fast. "I've got all day to complain" is said twice: set up at the end of call 1, repeated as Aaron walks past.
 - No legible text anywhere in a generated frame; Sean AI's UI and "To be continued" go in post.
 - Present-day or it's a reject: name the no-era-shift twice.
 - Film set, not news: never *news, reporter, broadcast, live, television, President* in a prompt.
