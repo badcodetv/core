@@ -63,8 +63,10 @@
    "demo-bench",
    "demo-gate",
    "demo-jury",
-   "demo-minister"
-  ]
+   "demo-minister",
+   "demo-redo"
+  ],
+  "note": "Round 2, after review: the real guidance aims to delete records within one month, so t1's date moved from 28 February 2027 to 16 December 2026, and answer A's finish date with it. Every answer was then marked again from scratch by a fresh checker."
  },
  "citizens": {
   "pool": "pool-2026-11-23",
@@ -271,7 +273,7 @@
     "answer": "A",
     "test": "t1",
     "result": "pass",
-    "note": "Gives a finish date of 16 December 2026 for deleting or marking every record, which meets the cutoff."
+    "note": "Answer gives 'Finish date: 16 December 2026' for deleting or marking every record, which is exactly the latest allowed."
    },
    {
     "answer": "A",
@@ -283,19 +285,19 @@
     "answer": "A",
     "test": "t3",
     "result": "pass",
-    "note": "States it never writes to, phones or visits a woman unless she asks first."
+    "note": "States 'We never write to, phone or visit a woman unless she asks first.'"
    },
    {
     "answer": "A",
     "test": "t4",
     "result": "pass",
-    "note": "Pay comes from the £90,000 already set aside, with a spending cap of £90,000."
+    "note": "Pay comes from the £90,000 already set aside, with a spending cap of £90,000, so the total stays within it."
    },
    {
     "answer": "A",
     "test": "t5",
     "result": "pass",
-    "note": "Uses no outside firm and says no name or file detail leaves the police."
+    "note": "The four-person records team does all work with no outside firm, and no name or file detail leaves the police."
    },
    {
     "answer": "A",
@@ -306,8 +308,8 @@
    {
     "answer": "B",
     "test": "t1",
-    "result": "pass",
-    "note": "Finish by 31 January 2027, which is before the 16 December cutoff."
+    "result": "fail",
+    "note": "Finish date is 31 January 2027, after the 16 December 2026 limit."
    },
    {
     "answer": "B",
@@ -319,31 +321,31 @@
     "answer": "B",
     "test": "t3",
     "result": "pass",
-    "note": "Nobody writes to, calls or visits any woman unless she asks first."
+    "note": "Says 'Nobody writes to, calls or visits any woman unless she asks first.'"
    },
    {
     "answer": "B",
     "test": "t4",
     "result": "pass",
-    "note": "The force pays from the £90,000 set aside, capped at £75,000, which is inside the budget."
+    "note": "Paid from the £90,000 set aside and capped at £75,000, inside the amount."
    },
    {
     "answer": "B",
     "test": "t5",
     "result": "fail",
-    "note": "An outside contractor's staff search the files and handle names and file detail, so an outside firm sees them even though the room is sealed and on police premises."
+    "note": "A hired outside contractor's staff search and handle the files and names; keeping them in a sealed room does not stop an outside firm seeing woman's file detail."
    },
    {
     "answer": "B",
     "test": "t6",
     "result": "pass",
-    "note": "Searches all three stores, and a police inspector outside the records team checks a sample."
+    "note": "The contractor searches all three stores and a police inspector outside the records team checks a sample."
    },
    {
     "answer": "C",
     "test": "t1",
     "result": "fail",
-    "note": "It gives no finish date for all records. It does no search, so records of women who never ask stay in place, as it admits."
+    "note": "No finish date for every record; says it will not search, only 28 days per request, and women who never ask keep their records."
    },
    {
     "answer": "C",
@@ -355,29 +357,29 @@
     "answer": "C",
     "test": "t3",
     "result": "pass",
-    "note": "The force does not search or contact anyone, and acts only when a woman asks, so it never contacts her unprompted."
+    "note": "Acts only on a woman's request and says 'Nobody gets an unwanted letter.'"
    },
    {
     "answer": "C",
     "test": "t4",
     "result": "pass",
-    "note": "Cost comes from the £90,000 already set aside, mostly for a request line, though no explicit cap figure is given."
+    "note": "Cost comes from the £90,000 already set aside, mostly for a small request line, so it stays within the sum."
    },
    {
     "answer": "C",
     "test": "t5",
     "result": "pass",
-    "note": "States no outside firm sees any names."
+    "note": "States 'No outside firm sees any names.'"
    },
    {
     "answer": "C",
     "test": "t6",
     "result": "fail",
-    "note": "It searches the three stores only for women who ask, not for all records. The sample check is by a 'second officer' who is not said to be outside the records team."
+    "note": "Searches the three stores only for women who ask ('will not search for records'), and the sample check is by 'a second officer' not stated to be outside the records team."
    }
   ],
-  "verdict": "Only A passes all six tests. B breaks the no-outside-firm limit by putting a contractor on the files. C keeps the limits but misses the finish date and the full search, so records of women who never ask stay in place.",
-  "rounds": 1
+  "verdict": "Only A meets every test and limit, including the 16 December date and the outside sample check. B misses the date and lets an outside contractor handle names, and C never sweeps the stores and leaves unrequested records in place.",
+  "rounds": 2
  },
  "ending": "accepted",
  "jury": {
