@@ -99,3 +99,24 @@ The goal is [`GOAL-3.md`](./GOAL-3.md) (Kai, 24 Nov 2026). Newest entries at the
     because neither day's digest had a transport story. It shows one topic reaching two endings.
   - **16 Nov (crime):** its predictions are national crime figures, not its pardoned-records topic.
   - **18 Nov:** its prediction is "the next Hospice UK count", whose timing is loose.
+
+### 24 Nov, afternoon: the marketing gatekeeper
+
+- **Round 1: REVISE, no FAIL.** What it asked for, and what changed:
+  - **AI disclosure.** The banner now says every town, citizen, vote, answer, mark and minister is made
+    up and written by AI, and links to how we use AI. Answers say "Written by AI (Claude Sonnet)".
+  - **"The citizens set the tests" was contradicted by the second tries, which changed tests.** We took
+    the honest route: the banner says each day's ending is picked in advance, and that the case, and
+    sometimes the tests, are rewritten until the honest marks reach it. Every second-try note is now
+    in plain words.
+  - **"In the news that day" wasn't true for 15, 22 and 23 Nov.** Those days now say so, and the
+    record says "a real topic from the UK news".
+  - **Baselines.** Predictions can now cite sources (schema change). Every baseline figure was opened
+    and confirmed, or reworded where it couldn't be.
+  - **Gresmoor (16 Nov).** The crime-statistics predictions are replaced by one about the pardon
+    guidance, the title says "delete", and the record count is lower.
+  - **Ministers.** Titles are now "Demo minister for …", and "Joe Kettering" is renamed "Joe Mallin"
+    (Kettering is a real constituency).
+  - **Copy.** Garbled lines and self-introductions fixed, two minister lines reworded (one implied
+    citizens were fooled, one tied teenagers to crime), real village names replaced, and citizen ids
+    removed from labels.

@@ -2,12 +2,54 @@
  "schema": "fp-demo-cabinet/1",
  "what": "The demo government's seven ministers, one per headline area. Invented characters: not real people, not today's BadCode cabinet. Each starts with an empty manifesto; every line in it comes from a demo day.",
  "ministers": [
-  { "id": "housing", "area": "housing", "title": "Minister for Housing", "name": "Bea Hartwell", "voice": "Brisk and practical. Talks about keys, rents and repairs, never 'units'." },
-  { "id": "health", "area": "health", "title": "Minister for Health", "name": "Tunde Marlow", "voice": "Calm, a former ward nurse. Counts in waits and in people, not in targets." },
-  { "id": "education", "area": "education", "title": "Minister for Education", "name": "Grace Penhallow", "voice": "Warm, ex-headteacher, impatient with jargon. Asks what a child would notice." },
-  { "id": "work", "area": "work", "title": "Minister for Work", "name": "Callum Brierley", "voice": "Blunt, from a factory town. Talks pay packets and hours." },
-  { "id": "energy", "area": "energy", "title": "Minister for Energy", "name": "Mira Thorne", "voice": "Dry and numerate. Always says what a change costs a household per year." },
-  { "id": "transport", "area": "transport", "title": "Minister for Transport", "name": "Joe Kettering", "voice": "Cheerful, a bus driver for twenty years. Thinks in timetables and last buses home." },
-  { "id": "crime", "area": "crime", "title": "Minister for Crime and Justice", "name": "Hollie Dunmore", "voice": "Quiet and exact. Separates what makes people feel safe from what makes them safe." }
+  {
+   "id": "housing",
+   "area": "housing",
+   "title": "Demo minister for Housing",
+   "name": "Bea Hartwell",
+   "voice": "Brisk and practical. Talks about keys, rents and repairs, never 'units'."
+  },
+  {
+   "id": "health",
+   "area": "health",
+   "title": "Demo minister for Health",
+   "name": "Tunde Marlow",
+   "voice": "Calm, a former ward nurse. Counts in waits and in people, not in targets."
+  },
+  {
+   "id": "education",
+   "area": "education",
+   "title": "Demo minister for Education",
+   "name": "Grace Penhallow",
+   "voice": "Warm, ex-headteacher, impatient with jargon. Asks what a child would notice."
+  },
+  {
+   "id": "work",
+   "area": "work",
+   "title": "Demo minister for Work",
+   "name": "Callum Brierley",
+   "voice": "Blunt, from a factory town. Talks pay packets and hours."
+  },
+  {
+   "id": "energy",
+   "area": "energy",
+   "title": "Demo minister for Energy",
+   "name": "Mira Thorne",
+   "voice": "Dry and numerate. Always says what a change costs a household per year."
+  },
+  {
+   "id": "transport",
+   "area": "transport",
+   "title": "Demo minister for Transport",
+   "name": "Joe Mallin",
+   "voice": "Cheerful, a bus driver for twenty years. Thinks in timetables and last buses home."
+  },
+  {
+   "id": "crime",
+   "area": "crime",
+   "title": "Demo minister for Crime and Justice",
+   "name": "Hollie Dunmore",
+   "voice": "Quiet and exact. Separates what makes people feel safe from what makes them safe."
+  }
  ]
 }

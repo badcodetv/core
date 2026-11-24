@@ -38,6 +38,8 @@ Write `predictions`: 1 to 3 for adopted or trial, 0 or 1 for sent-back.
 - `rule`: names the publisher and figure that settle it.
 - Open the latest published figure first, and set the threshold from it, so the prediction is a real
   call rather than a guess. Say the latest figure in `rule` ("last published: 7.4 million, Oct 2026").
+  Add that page to `sources` and list its id in the prediction's `sources`: every number on the page
+  needs a source a reader can open.
 - `result: "pending"`.
 
 Set `stage: "published"`, add `demo-minister` to `made_by.workers`, then validate, commit and push.

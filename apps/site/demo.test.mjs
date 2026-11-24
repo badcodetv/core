@@ -30,7 +30,7 @@ test('the plain list escapes text, says demo, and lists the manifestos', () => {
   const p = plainList(feed);
   assert.match(p, /This is a demo/);
   assert.match(p, /A &lt;title&gt;/);
-  assert.match(p, /Minister for Housing, Bea Hartwell \(invented\)/);
+  assert.match(p, /Demo minister for Housing, Bea Hartwell \(invented\)/);
   assert.match(p, /Every home gets a repair line/);
   assert.match(plainList(null), /This is a demo/);
 });

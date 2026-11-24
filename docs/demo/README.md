@@ -93,6 +93,6 @@ bob-push
 ## Backfill
 
 A backfill runs the same steps for an older news date, with `run.mode: "backfill"` and `run_date` the
-day it was really run. The message that starts a step says so, e.g.
+day it was really run. In the 24 Nov backfill every step, the citizens and jury included, was written by Claude Sonnet, and answer C by Claude rather than Codex; each answer and the gate were separate blind subagents. The message that starts a step says so, e.g.
 `Backfill: news_date=2026-11-17 run_date=2026-11-24`. Without that, the step is daily: the news date and
 run date are both today.

@@ -161,6 +161,7 @@ export const SPEC = {
     claim: { type: 'string', min: 10, max: 300 },
     due: { type: 'date' },
     rule: { type: 'string', min: 10, max: 300 },
+    sources: { type: 'array', opt: true, of: { type: 'string' } },
     result: { type: 'enum', values: ['pending', 'hit', 'miss', 'void'] },
     marked_on: { type: 'date', opt: true },
     mark_note: { type: 'string', opt: true, max: 400 },
@@ -251,6 +252,7 @@ export function validateDay(doc, { today } = {}) {
   cite(doc.case.in_the_news.sources, 'case.in_the_news.sources');
   if (!doc.case.in_the_news.sources.length) errs.push('case.in_the_news needs a source: the topic must really be in the news');
   doc.case.facts.forEach((f, i) => cite(f.sources, `case.facts[${i}].sources`));
+  (doc.predictions || []).forEach((p, i) => cite(p.sources, `predictions[${i}].sources`));
   for (const s of doc.sources) if (!cited.has(s.id)) errs.push(`source ${s.id} is never cited`);
 
   const c = doc.citizens;

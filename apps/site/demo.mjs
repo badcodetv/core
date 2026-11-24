@@ -38,7 +38,7 @@ const day = (d) => { const [y, m, dd] = d.split('-').map(Number); return `${dd} 
 const ENDING = { accepted: 'Accepted', partly: 'Partly: a trial', rejected: 'Rejected: sent back' };
 
 export const TITLE = 'Future Proof Demo · BadCode';
-export const DESC = 'A demo of how a future-proof government could decide things. Every day a made-up case on a real news topic goes round the loop: citizens drawn by lot set the tests, three answers are marked against them, and the day ends accepted, as a trial, or sent back. A demo government is built only from what passed.';
+export const DESC = 'A demo of how a future-proof government could decide things, made up and written by AI. Every day a made-up case on a real news topic goes round the loop: made-up citizens drawn by lot set the tests, three answers are marked against them, and the day ends accepted, as a trial, or sent back. A demo government is built only from what passed.';
 
 // The plain-text copy under the page: every day, newest first, then the manifestos.
 export function plainList(feed) {
@@ -50,7 +50,7 @@ export function plainList(feed) {
     const lines = feed.government.lines.filter((l) => l.minister === m.id && l.live);
     return `<li><h3>${esc(m.title)}, ${esc(m.name)} (invented)</h3>${lines.length ? `<ul>${lines.map((l) => `<li>${l.status === 'trial' ? 'Trial: ' : ''}${esc(l.text)}</li>`).join('')}</ul>` : '<p>Nothing adopted yet.</p>'}</li>`;
   }).join('');
-  return `<p><strong>This is a demo.</strong> ${feed.days.length} days: ${feed.endings.accepted} accepted, ${feed.endings.partly} partly, ${feed.endings.rejected} rejected.</p><ol>${days}</ol><h2>The demo government</h2><ul>${gov}</ul>`;
+  return `<p><strong>This is a demo.</strong> Every town, citizen, vote, answer and minister is made up and written by AI; the topics, sources and predictions are real. ${feed.days.length} days: ${feed.endings.accepted} accepted, ${feed.endings.partly} partly, ${feed.endings.rejected} rejected.</p><ol>${days}</ol><h2>The demo government</h2><ul>${gov}</ul>`;
 }
 
 // Wrap the page fragment (head bits, <style>, then <main> and <script>) in a full document.

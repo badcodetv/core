@@ -239,7 +239,7 @@ details.drops>summary{cursor:pointer;font-size:.84rem;color:var(--muted)}
   <header class="top">
     <div class="eyebrow">BadCode · Future Proof</div>
     <h1>Future Proof Demo</h1>
-    <p class="banner"><b>This is a demo.</b> <span>Made-up cases on topics really in the UK news, made-up citizens and invented ministers, built to show how the process works.</span></p>
+    <p class="banner"><b>This is a demo.</b> <span>Every town, citizen, vote, answer, mark and minister here is made up and written by AI, on topics really in the UK news. Only the topics, the sources and the predictions are real. Each day's ending is picked in advance, so you can see all three: the case, and sometimes the tests, are rewritten until the honest marks reach it. <a href="/how-we-made-it/">How we use AI</a>.</span></p>
     <nav class="tabs" aria-label="Sections">
       <a href="#" data-r="home">Today</a>
       <a href="#government" data-r="government">The government</a>
@@ -289,7 +289,7 @@ function endingLine(d){
     const within=s.filter(x=>!x.breaksLimit).map(x=>x.answer),b=s.find(x=>x.answer===t)||{pass:0};
     const stop=d.minister&&d.minister.stop?` until ${day(d.minister.stop)}`:'';
     return within.length===1?`No answer passed everything. ${t} kept within every red line (it passed ${b.pass} of ${n}), so it goes to a trial${stop}.`
-      :`No answer passed everything. ${andList(within)} kept within every red line, and ${t} passed the most (${b.pass} of ${n}), so ${t} goes to a trial${stop}.`;
+      :(()=>{const top=Math.max(...s.filter(x=>!x.breaksLimit).map(x=>x.pass)),tied=s.filter(x=>!x.breaksLimit&&x.pass===top).map(x=>x.answer);return tied.length>1?`No answer passed everything. ${andList(within)} kept within every red line; ${andList(tied)} tied on ${top} of ${n}, and the minister chose ${t} for a trial${stop}.`:`No answer passed everything. ${andList(within)} kept within every red line, and ${t} passed the most (${b.pass} of ${n}), so ${t} goes to a trial${stop}.`})();
   }
   return `Every answer crossed a red line: ${['A','B','C'].map(a=>a+' on '+andList(crossed(d,a))).join(', ')}. Nothing is signed. It goes back.`;
 }
@@ -409,7 +409,7 @@ function showDay(d){
       <span class="eyebrow">${esc(b.angle)}</span><h3>${esc(b.title)}</h3><p>${esc(b.answer)}</p>
       <div class="score"><span class="chip p">${sc.pass} pass</span><span class="chip f">${sc.fail} fail</span><span class="chip u">${sc.unclear} unclear</span></div>
       ${lims.length?`<span class="small" style="color:var(--fail)">Crossed red line${lims.length>1?'s':''} ${esc(andList(lims))}</span>`:sc.clean?`<span class="small" style="color:var(--pass)">Passed everything</span>`:`<span class="small muted">Kept within every red line</span>`}
-      <span class="by">Written by ${esc(b.model)}</span></div>`}).join('');
+      <span class="by">Written by AI (${esc(b.engine==='codex'?'Codex':/haiku/.test(b.model)?'Claude Haiku':'Claude Sonnet')})</span></div>`}).join('');
   const table=`<table class="gate"><thead><tr><th>The citizens' test</th>${['A','B','C'].map(a=>`<th class="ah">${a}</th>`).join('')}</tr></thead><tbody>${T.map(x=>`<tr class="${x.kind==='limit'?'lim':''}"><td class="t"><span class="tid">${esc(x.id)}</span>${kindChip(x.kind)}<div style="margin-top:.3rem">${esc(x.text)}</div></td>${['A','B','C'].map(a=>{const r=mark(a,x.id);return `<td class="${r&&r.result==='fail'&&x.kind==='limit'?'crossed':''}">${resChip(r)}${r?`<div class="note">${esc(r.note)}</div>`:''}</td>`}).join('')}</tr>`).join('')}</tbody></table>`;
   const mini=`<table class="mini" aria-label="Every mark at a glance"><thead><tr><th></th>${['A','B','C'].map(a=>`<th>${a}</th>`).join('')}</tr></thead><tbody>${T.map(x=>`<tr><td><span class="tid">${esc(x.id)}</span>${x.kind==='limit'?'<span class="chip f">red line</span>':'<span class="chip p">test</span>'}</td>${['A','B','C'].map(a=>{const r=mark(a,x.id);return `<td>${r?`<span class="res ${esc(r.result)}" title="${esc(r.note)}">${r.result==='pass'?'✓':r.result==='fail'?'✗':'?'}</span>`:'–'}</td>`}).join('')}</tr>`).join('')}</tbody></table>`;
   const stack=`<div class="gstack">${['A','B','C'].map(a=>{const sc=s.find(x=>x.answer===a)||{};return `<details${a===t||(!t&&a==='A')?' open':''}><summary><b>${a}</b><span class="chip p">${sc.pass} pass</span><span class="chip f">${sc.fail} fail</span><span class="chip u">${sc.unclear} unclear</span></summary><ul>${T.map(x=>{const r=mark(a,x.id);return `<li><div style="display:flex;gap:.4rem;align-items:center;flex-wrap:wrap">${resChip(r)}<span class="tid">${esc(x.id)}</span>${kindChip(x.kind)}</div><span>${esc(x.text)}</span>${r?`<span class="note">${esc(r.note)}</span>`:''}</li>`}).join('')}</ul></details>`}).join('')}</div>`;
@@ -441,18 +441,18 @@ function showDay(d){
     </section>
 
     <section class="two">
-      <div class="panel"><div class="ph"><h3>1 · The citizens set the tests</h3></div>
-        <p class="muted small">${ci.drawn} citizens drawn by lot set ${T.length}: ${T.filter(x=>x.kind==='test').length} test${T.filter(x=>x.kind==='test').length===1?'':'s'} an answer should pass, and ${T.filter(x=>x.kind==='limit').length} red line${T.filter(x=>x.kind==='limit').length===1?'':'s'} it must never cross. The number is how many backed each one.</p>
+      <div class="panel"><div class="ph"><h3>1 · The tests, set by made-up citizens</h3></div>
+        <p class="muted small">${ci.drawn} made-up citizens drawn by lot set ${T.length}: ${T.filter(x=>x.kind==='test').length} test${T.filter(x=>x.kind==='test').length===1?'':'s'} an answer should pass, and ${T.filter(x=>x.kind==='limit').length} red line${T.filter(x=>x.kind==='limit').length===1?'':'s'} it must never cross. The number is how many backed each one.</p>
         <div class="bars">${bars}</div></div>
       <div class="panel"><div class="ph"><h3>In their words</h3></div>
-        <div class="voices">${ci.voices.map(v=>`<div>“${esc(v.text)}”<small>${esc(v.who)} · citizen ${esc(v.citizen)}</small></div>`).join('')}</div></div>
+        <div class="voices">${ci.voices.map(v=>`<div>“${esc(v.text)}”<small>${esc(v.who)}</small></div>`).join('')}</div></div>
     </section>
 
     <section class="panel"><div class="ph"><h3>2 · Three answers</h3></div><p class="muted small">Three answers to the question, written separately.</p><div class="bench">${ans}</div></section>
 
     <section class="panel"><div class="ph"><h3>3 · The gate: every answer on every test</h3></div>
       ${table}${mini}<p class="muted tiny onlynarrow">Open an answer to see the reason for each mark.</p>${stack}
-      ${d.gate.rounds>1?`<p class="second"><b>Second try.</b> ${esc(d.made_by.note||'The first marks missed the plan, so the case or the answers were rewritten and the gate marked again. No mark was changed.')}</p>`:''}
+      ${d.gate.rounds>1?`<p class="second"><b>${d.gate.rounds>2?'Second and third tries':'Second try'}.</b> ${esc(d.made_by.note||'The first marks missed the plan, so the case or the answers were rewritten and the gate marked again. No mark was changed.')}</p>`:''}
       <p class="small"><b>What the marks show.</b> ${esc(d.gate.verdict)}</p>
       <p class="why ${esc(d.ending)}">${esc(endingLine(d))}</p></section>
 
@@ -460,7 +460,7 @@ function showDay(d){
       <p class="statement">${esc(j.question)}</p>
       <div class="bars">${j.options.map((o,i)=>`<div class="jbar${i===win?' win':''}"><span>${esc(o)}${i===win?' <span class="chip a">most votes</span>':''}</span><b>${j.votes[i]} of ${j.size}</b><div class="track"><i style="width:${j.votes[i]/j.size*100}%"></i></div></div>`).join('')}</div>
       <p><b>Ruling.</b> ${esc(j.ruling)}</p>
-      <div class="voices">${j.reasons.map(r=>`<div>“${esc(r.text)}”<small>juror ${esc(r.juror)}</small></div>`).join('')}</div>
+      <div class="voices">${j.reasons.map(r=>`<div>“${esc(r.text)}”<small>a juror</small></div>`).join('')}</div>
       <p class="muted tiny">None of the jurors set the tests.</p></section>
 
     <section class="panel"><div class="ph"><h3>5 · The minister ${esc(decVerb)}</h3><span class="end ${esc(d.ending)}">${esc(DEC_NAME[d.minister.decision]||d.minister.decision)}</span></div>
@@ -541,7 +541,7 @@ function showRecord(){
   const has=a=>FEED.days.some(d=>d.plan.area===a);
   const chips=(key,vals,name)=>`<div class="fchips" role="group" aria-label="${key==='area'?'Area':'Ending'}"><button type="button" data-k="${key}" data-v="" aria-pressed="${!FILTER[key]}">All</button>${vals.map(v=>`<button type="button" data-k="${key}" data-v="${esc(v)}" aria-pressed="${FILTER[key]===v}">${esc(name[v])}</button>`).join('')}</div>`;
   $('#view').innerHTML=`
-    <section style="display:grid;gap:.6rem"><h2>Every day</h2><p class="muted">Newest first. Every one is a made-up case on a topic that was really in the news that day.</p></section>
+    <section style="display:grid;gap:.6rem"><h2>Every day</h2><p class="muted">Newest first. Every one is a made-up case on a real topic from the UK news.</p></section>
     <div class="filters">${chips('area',AREAS.filter(has),AREA_NAME)}${chips('ending',ENDS,END_NAME)}</div>
     <div id="rlist" class="cards"></div>
     ${scoreboard()}`;
@@ -573,7 +573,7 @@ function startLoop(d){
   const govText=g?(g.changes.length?g.changes.map(c=>(c.op==='adopt'?'Added ':c.op==='change'?'Changed ':'Dropped ')+c.line+(c.text?': '+c.text:'')).join(' · '):'They talked it through. No manifesto line changed.')+' '+(g.debate[0]?minOf(g.debate[0].minister).name+': “'+g.debate[0].text+'”':''):'The ministers have not debated this day yet.';
   const ST=[
     {k:'case',name:'The case',tag:'made up · real topic',t:'A made-up case on a real news topic',x:`${d.case.place}. ${d.case.question} In the news: ${d.case.in_the_news.headline}.`},
-    {k:'ask',name:'The citizens',tag:`${d.citizens.drawn} by lot`,h:1,t:`${d.citizens.drawn} citizens set ${T.length} tests`,x:`${nT} test${nT===1?'':'s'} and ${nL} red line${nL===1?'':'s'}. Most backed: “${top.text}” (${top.backers} of ${d.citizens.drawn}).`},
+    {k:'ask',name:'The citizens',tag:`${d.citizens.drawn} by lot`,h:1,t:`${d.citizens.drawn} made-up citizens set ${T.length} tests`,x:`${nT} test${nT===1?'':'s'} and ${nL} red line${nL===1?'':'s'}. Most backed: “${top.text}” (${top.backers} of ${d.citizens.drawn}).`},
     {k:'bench',name:'Three answers',tag:'A · B · C',t:'Three answers',x:d.bench.map(b=>b.id+': '+b.title).join(' · ')},
     {k:'gate',name:'The gate',tag:'every test',t:'Every answer marked on every test',x:endingLine(d)},
     {k:'jury',name:'The jury',tag:`${j.size} by lot`,h:1,t:'A values question for the jury',x:`${j.question} Most votes: ${j.options[win]} (${j.votes[win]} of ${j.size}).`},
