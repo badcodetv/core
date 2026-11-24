@@ -120,3 +120,58 @@ The goal is [`GOAL-3.md`](./GOAL-3.md) (Kai, 24 Nov 2026). Newest entries at the
   - **Copy.** Garbled lines and self-introductions fixed, two minister lines reworded (one implied
     citizens were fooled, one tied teenagers to crime), real village names replaced, and citizen ids
     removed from labels.
+- **Round 2: REVISE, six small items.** All were fixed:
+  - a leftover sentence on Corvenhall that tied young people to crime;
+  - Rennowick's predictions, rewritten without a guessed bulletin date;
+  - the banner, which now says "the figures the predictions will be checked against" are real, not the
+    predictions;
+  - one of the two unemployment predictions made strict, so both can't hit;
+  - two made-by lists;
+  - Gresmoor's finish date moved to the real guidance's one month.
+- **Round 3:** see the report.
+
+## Report (goal 3)
+
+### What runs when (after the merge)
+
+| When | What |
+| --- | --- |
+| 12:00 to 14:25 London | Bob: `demo-clerk` → `demo-citizens` → `demo-rival` (Codex) → `demo-bench` → `demo-gate` → `demo-redo` (only if the marks missed) → `demo-gate` (second round, only after a redo) → `demo-jury` → `demo-minister` → `demo-cabinet`. Each pushes to `demo/live` |
+| 15:00 UTC | `site-deploy` rebuilds badcode.tv, which reads `demo/live` and publishes `/demo/` |
+| Any push to main touching the demo page or code | `site-deploy` too |
+| On merge, and on any change to `docs/demo/workers` or `docs/demo/schedules.json` | `bob-sync` puts the workers and schedules into Bob |
+
+The demo chain runs after the simulation's morning chain (09:00 to about 11:30). Bob runs a project's
+schedules one at a time, so they never overlap.
+
+### The cost of one day
+
+- **Backfill:** about 80k to 150k subagent tokens a day, typically about 100k (cached reads included).
+  That's about a quarter of a simulation day.
+  - Days needing a second or third round cost about 120k to 150k.
+  - The ministers' debate for all 14 days together was about 100k.
+- **Daily in Bob:** cheaper. The citizens and jury run on Haiku, answer C on Codex, and only the clerk,
+  bench, gate, minister and cabinet run on Sonnet. Not measured yet: Bob doesn't count tokens. The first
+  live day will tell.
+
+### What failed
+
+- **Reaching the planned ending.** 7 of 14 days needed more than one round.
+  - Two kinds of miss: "partly" cases that were too easy, and "rejected" cases where an answer dodged
+    the bind.
+  - Both lessons are now in the clerk and redo worker files.
+- **Subagent limit.** Three days stopped at the session's limit of 20 subagents at once and were
+  resumed.
+- **One day discarded (23 Nov):** its real-news hook was a specific child-exploitation case. It was
+  rerun on early release.
+- **Not every day had its area in the news.** 15 and 22 Nov share the £2 bus cap from July; 23 Nov's
+  story is from 10 Nov. The page says so.
+- **The gatekeeper.** Rounds 1 and 2 were REVISE: AI disclosure, honesty about rewritten tests,
+  unsourced baselines, and copy fixes. All were fixed.
+
+### Still to check
+
+- **The first daily run,** the first day after the merge: does the chain publish a day and a debate,
+  and does the 15:00 UTC rebuild show it?
+- **Whether the daily chain fits its slots.** A redo plus a second gate round needs both to land before
+  the 13:55 jury.
