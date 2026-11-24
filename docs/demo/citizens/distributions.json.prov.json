@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "docs/demo/citizens/distributions.json",
+ "made": "2026-11-23T17:58:41+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "claude",
+ "tool": "subagent web research",
+ "model": "claude-sonnet-5-5",
+ "why": "Copied unchanged on 2026-11-24 from docs/government/simulation/citizens/distributions.json for the Future Proof Demo. Real UK marginal distributions from ONS, Nomis Census 2021 and the Commons Library; every figure carries its source URL"
+}

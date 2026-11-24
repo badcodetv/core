@@ -1,0 +1,635 @@
+<title>Future Proof Demo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* The Future Proof Demo: one made-up case a day on a real news topic, round the loop to an ending,
+   with a demo government built only from those days. Views: home, #day=<id>, #government, #record. */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#14202d; --muted:#5a6676; --line:#d9dee6;
+  --accent:#b8650f; --accent-soft:#f6e7d4;
+  --pass:#1d7a4a; --pass-soft:#dff0e6; --fail:#b3302a; --fail-soft:#f6dedc; --unclear:#8a6d00; --unclear-soft:#f5ecd0;
+  --human:#2f5ea8; --human-soft:#dfe8f6;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f151c; --surface:#16202a; --ink:#e7ecf2; --muted:#9aa7b6; --line:#2a3644;
+  --accent:#f0a24a; --accent-soft:#3a2a17; --pass:#5cc78d; --pass-soft:#16301f; --fail:#f07d74; --fail-soft:#3a1c1a;
+  --unclear:#e0c25a; --unclear-soft:#33301a; --human:#7fa8ec; --human-soft:#1a2740; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f151c; --surface:#16202a; --ink:#e7ecf2; --muted:#9aa7b6; --line:#2a3644;
+  --accent:#f0a24a; --accent-soft:#3a2a17; --pass:#5cc78d; --pass-soft:#16301f; --fail:#f07d74; --fail-soft:#3a1c1a;
+  --unclear:#e0c25a; --unclear-soft:#33301a; --human:#7fa8ec; --human-soft:#1a2740; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 4rem;overflow-wrap:break-word}
+main{max-width:1080px;margin:0 auto;display:grid;gap:1.75rem;min-width:0}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.12;text-wrap:balance}
+h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700}
+h3{font-size:1.02rem;font-weight:700}
+p{margin:0;max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.eyebrow{font:500 .72rem/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:.84rem}
+.tiny{font-size:.78rem}
+code{font:400 .8em/1 var(--mono)}
+/* header */
+header.top{padding-top:2rem;display:grid;gap:.9rem}
+.banner{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);padding:.75rem 1rem;border-radius:4px;font-size:.92rem;display:grid;gap:.15rem}
+.banner b{font:800 1rem/1.2 var(--display)}
+nav.tabs{display:flex;gap:.35rem;flex-wrap:wrap}
+nav.tabs a{font:600 .85rem/1 var(--body);text-decoration:none;color:var(--ink);padding:.55rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+nav.tabs a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* building blocks */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.1rem 1.2rem;display:grid;gap:.85rem;min-width:0;align-content:start}
+.panel .ph{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline;flex-wrap:wrap}
+.chip{display:inline-block;font:500 .7rem/1.3 var(--mono);padding:.12rem .4rem;border-radius:3px;background:var(--line);color:var(--ink);white-space:nowrap}
+.chip.p{background:var(--pass-soft);color:var(--pass)}.chip.f{background:var(--fail-soft);color:var(--fail)}.chip.u{background:var(--unclear-soft);color:var(--unclear)}.chip.h{background:var(--human-soft);color:var(--human)}.chip.a{background:var(--accent-soft);color:var(--accent)}
+.end{display:inline-flex;align-items:center;gap:.35rem;font:700 .72rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:.32rem .5rem;border-radius:3px;border:1.5px solid currentColor;white-space:nowrap}
+.end::before{content:"";width:.55rem;height:.55rem;border-radius:50%;background:currentColor}
+.end.accepted{color:var(--pass);background:var(--pass-soft)}.end.partly{color:var(--unclear);background:var(--unclear-soft)}.end.rejected{color:var(--fail);background:var(--fail-soft)}
+.meta{display:flex;gap:.45rem;flex-wrap:wrap;align-items:center;font:500 .72rem/1.2 var(--mono);color:var(--muted)}
+.statement{font:500 1.05rem/1.5 var(--display)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem}
+.big{font:800 2.2rem/1 var(--display);font-variant-numeric:tabular-nums}
+.more{font:600 .88rem/1.3 var(--body)}
+.empty{padding:2rem;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:6px}
+/* the loop */
+.hero{display:grid;gap:.9rem}
+#loop{display:block;width:100%;cursor:pointer;touch-action:manipulation}
+.caption{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1rem;align-items:start;min-height:4.6rem}
+.caption .n{font:800 2rem/1 var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
+.controls{display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button,.step button{font:600 .82rem/1 var(--body);padding:.55rem .85rem;border-radius:4px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.controls button.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+button:disabled{opacity:.4;cursor:default}
+/* the spectrum */
+.counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem}
+.count{border-radius:6px;padding:.7rem .8rem;display:grid;gap:.3rem;border:1px solid var(--line)}
+.count span{font:500 .68rem/1.3 var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.count.accepted{background:var(--pass-soft);color:var(--pass)}.count.partly{background:var(--unclear-soft);color:var(--unclear)}.count.rejected{background:var(--fail-soft);color:var(--fail)}
+.weeks{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
+.weeks .hd .sh{display:none}
+.weeks .hd{font:500 .62rem/1.2 var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tile{display:grid;place-items:center;align-content:center;gap:.15rem;height:clamp(40px,8vw,56px);border-radius:5px;text-decoration:none;font:700 .95rem/1 var(--display);color:var(--surface);min-width:0;position:relative}
+.tile small{font:500 .6rem/1 var(--mono);opacity:.9}
+.tile.accepted{background:var(--pass)}.tile.partly{background:var(--unclear)}.tile.rejected{background:var(--fail)}
+.tile.none{background:transparent;border:1px dashed var(--line)}
+.tile.cur{outline:3px solid var(--ink);outline-offset:1px}
+.tile:hover{filter:brightness(1.1)}
+.legend{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
+.legend i{display:inline-block;width:.7rem;height:.7rem;border-radius:2px;margin-right:.3rem;vertical-align:-1px}
+/* ministers */
+.mins{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.7rem}
+.mcard{display:grid;gap:.35rem;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:.85rem .95rem;text-decoration:none;color:var(--ink);align-content:start;min-width:0}
+a.mcard:hover{border-color:var(--accent)}
+.mcard .nm{font:700 1rem/1.2 var(--display)}
+.mcard .tt{font:500 .72rem/1.3 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.mcard .ct{display:flex;gap:.35rem;flex-wrap:wrap;align-items:center;font-size:.82rem}
+.dots{display:flex;gap:3px;flex-wrap:wrap;min-height:10px}
+.dots i{width:10px;height:10px;border-radius:2px;background:var(--pass)}
+.dots i.t{background:var(--unclear)}
+/* debates */
+.speech{display:grid;grid-template-columns:minmax(0,1fr);gap:.1rem;border-left:3px solid var(--human);padding-left:.7rem}
+.speech.first{border-left-color:var(--accent)}
+.speech small{font:500 .72rem/1.4 var(--mono);color:var(--muted)}
+.speeches{display:grid;gap:.6rem}
+.change{display:grid;gap:.15rem;font-size:.88rem;border:1px solid var(--line);border-radius:4px;padding:.55rem .7rem}
+.op{font:700 .66rem/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;padding:.2rem .35rem;border-radius:3px}
+.op.adopt{background:var(--pass-soft);color:var(--pass)}.op.change{background:var(--human-soft);color:var(--human)}.op.drop{background:var(--fail-soft);color:var(--fail)}
+/* day view */
+.dayhead{display:grid;gap:.6rem}
+.facts{display:grid;gap:.4rem;padding-left:1.1rem;margin:0;font-size:.9rem}
+.news{border:1px solid var(--line);border-radius:4px;padding:.7rem .8rem;display:grid;gap:.3rem;font-size:.9rem;background:var(--bg)}
+.bars{display:grid;gap:.6rem}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.2rem .6rem;align-items:center;font-size:.88rem}
+.bar .track{grid-column:1/-1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar .track i{display:block;height:100%;background:var(--pass)}
+.bar.lim .track i{background:var(--fail)}
+.bar b{font:500 .76rem/1 var(--mono);font-variant-numeric:tabular-nums;color:var(--muted)}
+.tid{font:600 .72rem/1 var(--mono);color:var(--muted);margin-right:.25rem}
+.voices{display:grid;gap:.55rem;font-size:.9rem}
+.voices div{border-left:3px solid var(--human);padding-left:.6rem}
+.voices small{display:block;font:400 .72rem/1.4 var(--mono);color:var(--muted)}
+.bench{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+.ans{border:1px solid var(--line);border-radius:6px;padding:.85rem;display:grid;gap:.45rem;align-content:start;min-width:0}
+.ans.took{border:2px solid var(--pass)}
+.ans.took.trial{border-color:var(--unclear)}
+.ans .id{font:800 1.4rem/1 var(--display);color:var(--accent)}
+.ans .top{display:flex;justify-content:space-between;gap:.5rem;align-items:center;flex-wrap:wrap}
+.ans p{font-size:.88rem}
+.ans .by{font:400 .7rem/1.3 var(--mono);color:var(--muted)}
+.score{display:flex;gap:.3rem;flex-wrap:wrap}
+table.gate{border-collapse:collapse;width:100%;font-size:.84rem;table-layout:fixed}
+table.gate th,table.gate td{border-bottom:1px solid var(--line);padding:.55rem .5rem;text-align:left;vertical-align:top}
+table.gate th{font:500 .7rem/1.2 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+table.gate th.ah{font:800 1.1rem/1 var(--display);color:var(--accent);text-transform:none}
+table.gate td.t{width:34%}
+table.gate td .note{color:var(--muted);font-size:.78rem;margin-top:.3rem;line-height:1.45}
+table.gate td.crossed{background:var(--fail-soft)}
+table.gate td.crossed .note{color:var(--ink)}
+table.gate tr.lim td.t{box-shadow:inset 3px 0 0 var(--fail)}
+.res{display:inline-flex;align-items:center;gap:.3rem;font:600 .72rem/1 var(--mono);padding:.22rem .4rem;border-radius:3px;white-space:nowrap}
+.res.pass{background:var(--pass-soft);color:var(--pass)}.res.fail{background:var(--fail-soft);color:var(--fail)}.res.unclear{background:var(--unclear-soft);color:var(--unclear)}
+.gstack{display:none;gap:.75rem}
+.onlynarrow{display:none}
+table.mini{display:none;border-collapse:collapse;width:100%;font-size:.8rem}
+table.mini th{font:800 1rem/1 var(--display);color:var(--accent);padding:.3rem;text-align:center}
+table.mini td{padding:.3rem;border-top:1px solid var(--line);text-align:center}
+table.mini td:first-child{text-align:left;white-space:nowrap}
+table.mini .res{min-width:1.8rem;justify-content:center;font-size:.85rem}
+.gstack details{border:1px solid var(--line);border-radius:6px;padding:.2rem .8rem}
+.gstack summary{cursor:pointer;padding:.55rem 0;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;list-style:none}
+.gstack summary::-webkit-details-marker{display:none}
+.gstack summary::after{content:"+";margin-left:auto;font:600 1rem/1 var(--mono);color:var(--muted)}
+.gstack details[open] summary::after{content:"–"}
+.gstack summary b{font:800 1.1rem/1 var(--display);color:var(--accent)}
+.gstack ul{list-style:none;margin:0 0 .6rem;padding:0;display:grid;gap:.55rem}
+.gstack li{display:grid;gap:.2rem;font-size:.86rem;border-top:1px solid var(--line);padding-top:.5rem}
+.gstack li .note{color:var(--muted);font-size:.8rem}
+.why{border-radius:6px;padding:.8rem 1rem;font:600 1rem/1.45 var(--display)}
+.why.accepted{background:var(--pass-soft);color:var(--pass)}.why.partly{background:var(--unclear-soft);color:var(--unclear)}.why.rejected{background:var(--fail-soft);color:var(--fail)}
+.second{border:1px dashed var(--muted);border-radius:4px;padding:.55rem .75rem;font-size:.88rem}
+.jbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.25rem .6rem;font-size:.9rem;align-items:center}
+.jbar .track{grid-column:1/-1;height:10px;background:var(--line);border-radius:5px;overflow:hidden}
+.jbar .track i{display:block;height:100%;background:var(--human)}
+.jbar.win .track i{background:var(--accent)}
+.jbar b{font:500 .78rem/1 var(--mono);font-variant-numeric:tabular-nums}
+.minister{border-left:4px solid var(--accent);padding-left:1rem;display:grid;gap:.5rem}
+.kv{display:grid;grid-template-columns:6.5rem minmax(0,1fr);gap:.35rem .8rem;font-size:.88rem}
+.kv span{font:500 .72rem/1.5 var(--mono);color:var(--muted);text-transform:uppercase}
+.preds{display:grid;gap:.6rem}
+.pred{border:1px solid var(--line);border-radius:4px;padding:.7rem;display:grid;gap:.3rem;font-size:.88rem}
+.src{font-size:.84rem;display:grid;gap:.35rem;padding-left:1.2rem;margin:0}
+.src li{overflow-wrap:anywhere}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.pn a{font:600 .88rem/1.3 var(--body);max-width:48%}
+.pn a.next{text-align:right;margin-left:auto}
+/* government view */
+.step{display:grid;gap:.6rem}
+.step .row{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.step input[type=range]{flex:1;min-width:80px;accent-color:var(--accent)}
+.step .when{font:700 1.15rem/1.2 var(--display)}
+.growth{display:flex;gap:4px;align-items:stretch}
+.growth button{all:unset;cursor:pointer;flex:1;min-width:0;display:grid;grid-template-rows:90px auto 8px auto;gap:3px;justify-items:center;padding:3px 0;border-radius:4px}
+.growth button:focus-visible{outline:3px solid var(--accent)}
+.growth button.on{background:var(--accent-soft)}
+.growth .stack{width:70%;max-width:28px;height:90px;display:flex;flex-direction:column;justify-content:flex-end;gap:1px}
+.growth .stack i{display:block;width:100%;border-radius:2px}
+.growth .stack i.p{background:var(--pass)}.growth .stack i.t{background:var(--unclear)}
+.growth .n{font:600 .68rem/1 var(--mono);font-variant-numeric:tabular-nums}
+.growth .e{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.growth .e.accepted{background:var(--pass)}.growth .e.partly{background:var(--unclear)}.growth .e.rejected{background:var(--fail)}
+.growth .d{font:500 .62rem/1 var(--mono);color:var(--muted)}
+.mfull{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));align-items:start}
+.mpanel{scroll-margin-top:1rem}
+.mpanel .voice{font-size:.86rem;color:var(--muted);font-style:italic}
+.lines{display:grid;gap:.55rem;list-style:none;margin:0;padding:0}
+.line{border:1px solid var(--line);border-radius:5px;padding:.65rem .75rem;display:grid;gap:.3rem}
+.line.fresh{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.line .lt{font-size:.94rem}
+.line .lm{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;font-size:.78rem;color:var(--muted)}
+.line details{font-size:.8rem}
+.line summary{cursor:pointer;color:var(--muted)}
+.hist{list-style:none;margin:.4rem 0 0;padding:0;display:grid;gap:.35rem}
+.hist li{display:grid;gap:.1rem;border-left:2px solid var(--line);padding-left:.55rem}
+.dropped .lt{text-decoration:line-through;color:var(--muted)}
+details.drops>summary{cursor:pointer;font-size:.84rem;color:var(--muted)}
+/* record */
+.filters{display:grid;gap:.5rem}
+.fchips{display:flex;gap:.35rem;flex-wrap:wrap}
+.fchips button{font:500 .78rem/1 var(--body);padding:.45rem .65rem;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.fchips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cards{display:grid;gap:.65rem}
+.card{display:grid;gap:.4rem;background:var(--surface);border:1px solid var(--line);border-left-width:5px;border-radius:6px;padding:.9rem 1rem;text-decoration:none;color:var(--ink);min-width:0}
+.card:hover{border-color:var(--accent)}
+.card.accepted{border-left-color:var(--pass)}.card.partly{border-left-color:var(--unclear)}.card.rejected{border-left-color:var(--fail)}
+.card .q{color:var(--muted);font-size:.9rem}
+.card .out{font-size:.88rem}
+/* scoreboard */
+.tiles3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem}
+.tiles3 div{display:grid;gap:.25rem}
+.tiles3 span{font:500 .66rem/1.2 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.due{display:grid;gap:.5rem;font-size:.86rem}
+.due div{display:grid;grid-template-columns:6.2rem minmax(0,1fr);gap:.6rem}
+.due b{font:500 .76rem/1.5 var(--mono);color:var(--accent)}
+@media (max-width:860px){.two{grid-template-columns:minmax(0,1fr)}.bench{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){
+  body{font-size:15px}
+  table.gate{display:none}.gstack{display:grid}
+  .panel{padding:.95rem .9rem}
+  .tiles3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .due div{grid-template-columns:minmax(0,1fr);gap:.1rem}
+  .count{padding:.55rem .6rem}.big{font-size:1.8rem}
+  .pn a{max-width:100%}
+  .mins{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .weeks .hd .lg{display:none}.weeks .hd .sh{display:inline}.weeks .hd{font-size:.56rem;letter-spacing:0}
+  table.mini{display:table}.onlynarrow{display:block}
+  .growth{gap:2px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<main>
+  <header class="top">
+    <div class="eyebrow">BadCode · Future Proof</div>
+    <h1>Future Proof Demo</h1>
+    <p class="banner"><b>This is a demo.</b> <span>Made-up cases on topics really in the UK news, made-up citizens and invented ministers, built to show how the process works.</span></p>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#" data-r="home">Today</a>
+      <a href="#government" data-r="government">The government</a>
+      <a href="#record" data-r="record">Every day</a>
+    </nav>
+  </header>
+
+  <div id="view" style="display:grid;gap:1.75rem;min-width:0"></div>
+</main>
+
+<script>
+(function(){
+const $=(s,el=document)=>el.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl=u=>/^https?:\/\//i.test(String(u||''))?String(u):'#';
+const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const day=d=>{if(!d)return'';const[y,m,dd]=String(d).split('-').map(Number);return dd+' '+MON[m-1]+' '+y};
+const dayShort=d=>{const[,m,dd]=String(d).split('-').map(Number);return dd+' '+MON[m-1]};
+const AREAS=['housing','health','education','work','energy','transport','crime'];
+const AREA_NAME={housing:'Housing',health:'Health',education:'Education',work:'Work',energy:'Energy',transport:'Transport',crime:'Crime'};
+const AREA_SHORT={housing:'Homes',health:'Health',education:'School',work:'Work',energy:'Energy',transport:'Travel',crime:'Crime'};
+const ENDS=['accepted','partly','rejected'];
+const END_NAME={accepted:'Accepted',partly:'Partly',rejected:'Rejected'};
+const END_LONG={accepted:'An answer passed every test. It becomes policy.',partly:'Nothing passed everything, but one answer kept within every red line. It gets a small trial.',rejected:'Every answer crossed a red line. Nothing is signed. It goes back.'};
+const DEC_NAME={adopted:'Adopted','trial':'Trial','sent-back':'Sent back'};
+const START='2026-11-10';
+const dayIndex=d=>Math.round((Date.parse(d+'T12:00:00Z')-Date.parse(START+'T12:00:00Z'))/864e5);
+const endBadge=e=>`<span class="end ${esc(e)}">${esc(END_NAME[e]||e)}</span>`;
+const andList=a=>a.length<2?a.join(''):a.slice(0,-1).join(', ')+' and '+a[a.length-1];
+let FEED=null,MINS={};
+const minOf=id=>MINS[id]||{name:id,title:id,voice:''};
+const dayById=id=>FEED.days.find(d=>d.id===id);
+const dayLink=id=>'#day='+encodeURIComponent(id);
+
+/* ---------- reading the marks ---------- */
+const scoresOf=d=>d.scores||['A','B','C'].map(a=>{const rows=d.gate.rows.filter(r=>r.answer===a);const kind=Object.fromEntries(d.citizens.tests.map(t=>[t.id,t.kind]));const n=x=>rows.filter(r=>r.result===x).length;return{answer:a,pass:n('pass'),fail:n('fail'),unclear:n('unclear'),of:d.citizens.tests.length,clean:rows.length===d.citizens.tests.length&&rows.every(r=>r.result==='pass'),breaksLimit:rows.some(r=>r.result==='fail'&&kind[r.test]==='limit')}});
+const took=d=>d.minister&&d.minister.answer||d.best||null;
+function crossed(d,a){const lim=new Set(d.citizens.tests.filter(t=>t.kind==='limit').map(t=>t.id));return d.gate.rows.filter(r=>r.answer===a&&r.result==='fail'&&lim.has(r.test)).map(r=>r.test)}
+function endingLine(d){
+  const s=scoresOf(d),n=d.citizens.tests.length,t=took(d);
+  if(d.ending==='accepted'){
+    const clean=s.filter(x=>x.clean).map(x=>x.answer);
+    return clean.length===1?`Answer ${t} passed all ${n} of the citizens' tests, red lines included, so it was adopted.`
+      :`Answers ${andList(clean)} passed all ${n} of the citizens' tests, red lines included. The minister adopted ${t}.`;
+  }
+  if(d.ending==='partly'){
+    const within=s.filter(x=>!x.breaksLimit).map(x=>x.answer),b=s.find(x=>x.answer===t)||{pass:0};
+    const stop=d.minister&&d.minister.stop?` until ${day(d.minister.stop)}`:'';
+    return within.length===1?`No answer passed everything. ${t} kept within every red line (it passed ${b.pass} of ${n}), so it goes to a trial${stop}.`
+      :`No answer passed everything. ${andList(within)} kept within every red line, and ${t} passed the most (${b.pass} of ${n}), so ${t} goes to a trial${stop}.`;
+  }
+  return `Every answer crossed a red line: ${['A','B','C'].map(a=>a+' on '+andList(crossed(d,a))).join(', ')}. Nothing is signed. It goes back.`;
+}
+
+/* ---------- load and route ---------- */
+async function load(){
+  try{const r=await fetch('feed.json',{cache:'no-store'});if(!r.ok)throw 0;FEED=await r.json()}catch(e){FEED=null}
+  if(FEED&&Array.isArray(FEED.days)&&FEED.days.length){
+    (FEED.government&&FEED.government.ministers||[]).forEach(m=>MINS[m.id]=m);
+    FEED.government=FEED.government||{ministers:[],lines:[],debates:[]};
+    FEED.government.lines=FEED.government.lines||[];FEED.government.debates=FEED.government.debates||[];
+  }else FEED=null;
+  route();
+}
+window.addEventListener('hashchange',()=>route(true));
+function parseHash(){const h=decodeURIComponent(location.hash.slice(1));const i=h.indexOf('=');return i<0?{r:h||'home',v:''}:{r:h.slice(0,i),v:h.slice(i+1)}}
+function setNav(r){document.querySelectorAll('nav.tabs a').forEach(a=>{if(a.dataset.r===r)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})}
+function route(scroll){
+  stopLoop();
+  const v=$('#view');
+  if(!FEED){setNav('home');v.innerHTML='<div class="empty">The first demo day hasn’t been built yet.</div>';return}
+  const {r,v:arg}=parseHash();
+  let focus=null;
+  if(r==='day'&&dayById(arg)){setNav('');showDay(dayById(arg))}
+  else if(r==='government'){setNav('government');showGov(arg);if(arg)focus='m-'+arg}
+  else if(r==='record'){setNav('record');showRecord()}
+  else{setNav('home');showHome()}
+  if(focus&&document.getElementById(focus))document.getElementById(focus).scrollIntoView();
+  else if(scroll)window.scrollTo(0,0);
+}
+
+/* ---------- shared pieces ---------- */
+function spectrum(curId){
+  const days=[...FEED.days].sort((a,b)=>a.run.news_date.localeCompare(b.run.news_date));
+  const idx=days.map(d=>dayIndex(d.run.news_date)),maxI=Math.max(...idx,6),rows=Math.floor(maxI/7)+1;
+  const at={};days.forEach((d,k)=>{if(idx[k]>=0&&!at[idx[k]])at[idx[k]]=d});
+  let cells=AREAS.map(a=>`<div class="hd" title="${esc(AREA_NAME[a])}"><span class="lg">${esc(AREA_NAME[a])}</span><span class="sh">${esc(AREA_SHORT[a])}</span></div>`).join('');
+  for(let i=0;i<rows*7;i++){
+    const d=at[i];
+    if(!d){cells+=i<=maxI?'<span class="tile none" aria-hidden="true"></span>':'<span class="tile none" style="opacity:.4" aria-hidden="true"></span>';continue}
+    const dd=Number(d.run.news_date.slice(8));
+    cells+=`<a class="tile ${esc(d.ending)}${d.id===curId?' cur':''}" href="${dayLink(d.id)}" title="${esc(dayShort(d.run.news_date)+' · '+AREA_NAME[d.plan.area]+' · '+END_NAME[d.ending]+': '+d.case.title)}" aria-label="${esc(day(d.run.news_date)+', '+AREA_NAME[d.plan.area]+', '+END_NAME[d.ending])}">${dd}<small>${esc(MON[Number(d.run.news_date.slice(5,7))-1])}</small></a>`;
+  }
+  const e=FEED.endings||{};const n=k=>e[k]??FEED.days.filter(d=>d.ending===k).length;
+  return `<section class="panel" aria-label="Every ending so far">
+    <div class="ph"><h3>Every ending so far</h3><span class="eyebrow">${FEED.days.length} days</span></div>
+    <div class="counts">${ENDS.map(k=>`<div class="count ${k}"><span>${END_NAME[k]}</span><div class="big">${n(k)}</div></div>`).join('')}</div>
+    <div class="weeks" role="group" aria-label="One tile per day, a week to a row, one column per area">${cells}</div>
+    <div class="legend"><span><i style="background:var(--pass)"></i>accepted: becomes policy</span><span><i style="background:var(--unclear)"></i>partly: a small trial</span><span><i style="background:var(--fail)"></i>rejected: sent back</span></div>
+    <p class="muted small">Each day is given its area and its ending in turn, so over three weeks every area meets every ending once. The citizens' tests and the honest marks still decide how a day gets there.</p>
+  </section>`;
+}
+function ministerCards(lines){
+  return `<div class="mins">${AREAS.filter(a=>MINS[a]).map(a=>{const m=MINS[a];const live=lines.filter(l=>l.minister===a&&l.live);const p=live.filter(l=>l.status==='policy').length,t=live.length-p;
+    return `<a class="mcard" href="#government=${esc(a)}"><span class="tt">${esc(m.title)}</span><span class="nm">${esc(m.name)}</span>
+      <div class="dots" aria-hidden="true">${live.map(l=>`<i class="${l.status==='trial'?'t':''}"></i>`).join('')}</div>
+      <span class="ct">${live.length?`<b>${live.length}</b> live line${live.length===1?'':'s'} · <span class="chip p">${p} policy</span><span class="chip u">${t} trial</span>`:'<span class="muted">Nothing adopted yet</span>'}</span></a>`}).join('')}</div>`;
+}
+function debateBlock(g,{withHead=true}={}){
+  const d=dayById(g.day);
+  const sp=(g.debate||[]).map((s,i)=>{const m=minOf(s.minister);return `<div class="speech${i===0?' first':''}"><small>${esc(m.name)} · ${esc(m.title)}</small><span>${esc(s.text)}</span></div>`}).join('');
+  const ch=(g.changes||[]).map(c=>{const m=minOf(c.minister);return `<div class="change"><div class="meta"><span class="op ${esc(c.op)}">${esc(c.op)}</span><span>${esc(c.line)}</span><span>${esc(m.name)}</span></div>${c.text?`<span>${esc(c.text)}</span>`:''}<span class="muted tiny">Why: ${esc(c.why)}</span></div>`}).join('');
+  return `${withHead?`<div class="meta"><span>${day(g.date)}</span>${d?`${endBadge(d.ending)}<a href="${dayLink(d.id)}">${esc(d.case.title)}</a>`:''}</div>`:''}
+    <div class="speeches">${sp}</div>
+    ${ch?`<div style="display:grid;gap:.45rem"><span class="eyebrow">What changed in the manifestos</span>${ch}</div>`:'<p class="muted small">No manifesto lines changed.</p>'}`;
+}
+function scoreboard(){
+  const s=FEED.scoreboard||{total:0,pending:0,hit:0,miss:0,next_due:[]};
+  return `<section class="panel" aria-label="Predictions"><div class="ph"><h3>The predictions</h3><span class="eyebrow">about the real topics</span></div>
+    <div class="tiles3"><div><span>Made</span><div class="big">${s.total}</div></div><div><span>Waiting</span><div class="big">${s.pending}</div></div><div><span>Came true</span><div class="big" style="color:var(--pass)">${s.hit}</div></div><div><span>Did not</span><div class="big" style="color:var(--fail)">${s.miss}</div></div></div>
+    <p class="muted small">${s.hit+s.miss?`${s.hit} of ${s.hit+s.miss} marked so far came true.`:'Nothing has been marked yet. A prediction is only marked on its due date, against a published figure.'}</p>
+    ${(s.next_due||[]).length?`<span class="eyebrow">Next to be marked</span><div class="due">${s.next_due.slice(0,6).map(p=>`<div><b>${day(p.due)}</b><span><a href="${dayLink(p.day)}">${esc(AREA_NAME[p.area]||p.area)}</a>: ${esc(p.claim)}</span></div>`).join('')}</div>`:''}
+  </section>`;
+}
+function loopPanel(d){
+  return `<div><canvas id="loop" role="img" aria-label="${esc('This day going round the loop, station by station. '+endingLine(d))}"></canvas></div>
+    <div class="caption" aria-live="polite"><span class="n" id="cn">1</span><div><h3 id="ct"></h3><p id="cx" class="small"></p></div></div>
+    <div class="controls"><button class="primary" id="play" type="button">❚❚ Pause</button><button id="prev" type="button">← Back</button><button id="next" type="button">Next →</button></div>`;
+}
+
+/* ---------- home ---------- */
+function showHome(){
+  const d=FEED.days[0],g=FEED.government,deb=g.debates[0];
+  $('#view').innerHTML=`
+    <section class="panel hero" aria-label="Today's demo day">
+      <div class="meta"><span>Newest · news of ${day(d.run.news_date)}</span><span class="chip">${esc(AREA_NAME[d.plan.area])}</span>${endBadge(d.ending)}</div>
+      <h2>${esc(d.case.title)}</h2>
+      <p class="statement">${esc(d.case.question)}</p>
+      ${loopPanel(d)}
+      <p class="why ${esc(d.ending)}">${esc(endingLine(d))}</p>
+      <a class="more" href="${dayLink(d.id)}">The full record of this day →</a>
+    </section>
+    ${spectrum(d.id)}
+    <section style="display:grid;gap:.8rem" aria-label="The demo government">
+      <div class="ph" style="display:flex;justify-content:space-between;gap:.6rem;align-items:baseline;flex-wrap:wrap"><h2>The demo government</h2><a class="more" href="#government">Every manifesto →</a></div>
+      <p class="muted">Seven invented ministers. Each started with an empty manifesto. Every line in it came from a day above that was accepted or trialled.</p>
+      ${ministerCards(g.lines)}
+      <div class="legend"><span><i style="background:var(--pass)"></i>policy</span><span><i style="background:var(--unclear)"></i>trial</span></div>
+    </section>
+    ${deb?`<section class="panel" aria-label="The latest debate"><div class="ph"><h3>The latest debate</h3><a class="more" href="#government">All debates →</a></div>${debateBlock(deb)}</section>`:''}
+    ${scoreboard()}`;
+  startLoop(d);
+}
+
+/* ---------- one day ---------- */
+function showDay(d){
+  const c=d.case,ci=d.citizens,T=ci.tests,s=scoresOf(d),t=took(d),m=minOf(d.minister.minister);
+  const src=Object.fromEntries(d.sources.map(x=>[x.id,x]));
+  const cite=ids=>(ids||[]).map(id=>src[id]?`<a href="${esc(safeUrl(src[id].url))}" rel="noopener" target="_blank">${esc(src[id].publisher)}</a>`:'').filter(Boolean).join(', ');
+  const tname=id=>{const x=T.find(q=>q.id===id);return x?x.text:id};
+  const kindChip=k=>k==='limit'?'<span class="chip f">red line</span>':'<span class="chip p">test</span>';
+  const bars=T.map(x=>`<div class="bar ${x.kind==='limit'?'lim':''}"><span><span class="tid">${esc(x.id)}</span>${kindChip(x.kind)} ${esc(x.text)}</span><b>${x.backers} of ${ci.drawn}</b><div class="track"><i style="width:${Math.min(100,x.backers/ci.drawn*100)}%"></i></div></div>`).join('');
+  const resChip=r=>r?`<span class="res ${esc(r.result)}">${r.result==='pass'?'✓':r.result==='fail'?'✗':'?'} ${esc(r.result)}</span>`:'–';
+  const mark=(a,tid)=>d.gate.rows.find(r=>r.answer===a&&r.test===tid);
+  const ans=d.bench.map(b=>{const sc=s.find(x=>x.answer===b.id)||{};const isT=b.id===t;const lims=crossed(d,b.id);
+    return `<div class="ans${isT?' took'+(d.minister.decision==='trial'?' trial':''):''}"><div class="top"><span class="id">${esc(b.id)}</span>${isT?`<span class="chip ${d.minister.decision==='trial'?'u':'p'}">${d.minister.decision==='trial'?'goes to a trial':'adopted'}</span>`:''}</div>
+      <span class="eyebrow">${esc(b.angle)}</span><h3>${esc(b.title)}</h3><p>${esc(b.answer)}</p>
+      <div class="score"><span class="chip p">${sc.pass} pass</span><span class="chip f">${sc.fail} fail</span><span class="chip u">${sc.unclear} unclear</span></div>
+      ${lims.length?`<span class="small" style="color:var(--fail)">Crossed red line${lims.length>1?'s':''} ${esc(andList(lims))}</span>`:sc.clean?`<span class="small" style="color:var(--pass)">Passed everything</span>`:`<span class="small muted">Kept within every red line</span>`}
+      <span class="by">Written by ${esc(b.model)}</span></div>`}).join('');
+  const table=`<table class="gate"><thead><tr><th>The citizens' test</th>${['A','B','C'].map(a=>`<th class="ah">${a}</th>`).join('')}</tr></thead><tbody>${T.map(x=>`<tr class="${x.kind==='limit'?'lim':''}"><td class="t"><span class="tid">${esc(x.id)}</span>${kindChip(x.kind)}<div style="margin-top:.3rem">${esc(x.text)}</div></td>${['A','B','C'].map(a=>{const r=mark(a,x.id);return `<td class="${r&&r.result==='fail'&&x.kind==='limit'?'crossed':''}">${resChip(r)}${r?`<div class="note">${esc(r.note)}</div>`:''}</td>`}).join('')}</tr>`).join('')}</tbody></table>`;
+  const mini=`<table class="mini" aria-label="Every mark at a glance"><thead><tr><th></th>${['A','B','C'].map(a=>`<th>${a}</th>`).join('')}</tr></thead><tbody>${T.map(x=>`<tr><td><span class="tid">${esc(x.id)}</span>${x.kind==='limit'?'<span class="chip f">red line</span>':'<span class="chip p">test</span>'}</td>${['A','B','C'].map(a=>{const r=mark(a,x.id);return `<td>${r?`<span class="res ${esc(r.result)}" title="${esc(r.note)}">${r.result==='pass'?'✓':r.result==='fail'?'✗':'?'}</span>`:'–'}</td>`}).join('')}</tr>`).join('')}</tbody></table>`;
+  const stack=`<div class="gstack">${['A','B','C'].map(a=>{const sc=s.find(x=>x.answer===a)||{};return `<details${a===t||(!t&&a==='A')?' open':''}><summary><b>${a}</b><span class="chip p">${sc.pass} pass</span><span class="chip f">${sc.fail} fail</span><span class="chip u">${sc.unclear} unclear</span></summary><ul>${T.map(x=>{const r=mark(a,x.id);return `<li><div style="display:flex;gap:.4rem;align-items:center;flex-wrap:wrap">${resChip(r)}<span class="tid">${esc(x.id)}</span>${kindChip(x.kind)}</div><span>${esc(x.text)}</span>${r?`<span class="note">${esc(r.note)}</span>`:''}</li>`}).join('')}</ul></details>`}).join('')}</div>`;
+  const j=d.jury,win=j.votes.indexOf(Math.max(...j.votes));
+  const gdeb=FEED.government.debates.find(g=>g.day===d.id);
+  const sorted=[...FEED.days].sort((a,b)=>a.run.news_date.localeCompare(b.run.news_date)||a.id.localeCompare(b.id));
+  const k=sorted.findIndex(x=>x.id===d.id),prev=sorted[k-1],next=sorted[k+1];
+  const decVerb={adopted:'adopts it','trial':'signs a trial','sent-back':'sends it back'}[d.minister.decision]||d.minister.decision;
+  $('#view').innerHTML=`
+  <div style="display:grid;gap:1.5rem;min-width:0">
+    <a class="more" href="#">← Today</a>
+    <div class="dayhead">
+      <div class="meta"><span>News of ${day(d.run.news_date)}</span><span class="chip">${esc(AREA_NAME[d.plan.area])}</span>${endBadge(d.ending)}</div>
+      <h2>${esc(c.title)}</h2>
+      <p class="statement">${esc(c.question)}</p>
+    </div>
+
+    <section class="panel hero" aria-label="The loop">${loopPanel(d)}</section>
+
+    <section class="two">
+      <div class="panel"><div class="ph"><h3>The case</h3><span class="eyebrow">${esc(c.place)}</span></div>
+        <p>${esc(c.story)}</p>
+        ${c.facts&&c.facts.length?`<span class="eyebrow">Real facts behind it</span><ul class="facts">${c.facts.map(f=>`<li>${esc(f.text)} <span class="muted tiny">(${cite(f.sources)})</span></li>`).join('')}</ul>`:''}
+      </div>
+      <div class="panel"><div class="ph"><h3>In the news</h3><span class="eyebrow">the real topic</span></div>
+        <div class="news"><b>${esc(c.in_the_news.headline)}</b><span>${esc(c.in_the_news.why)}</span><span class="tiny">Source: ${cite(c.in_the_news.sources)||'<span class="muted">none listed</span>'}</span></div>
+        <p class="muted small">The topic is real. The town, the people and the numbers in the case are made up.</p>
+      </div>
+    </section>
+
+    <section class="two">
+      <div class="panel"><div class="ph"><h3>1 · The citizens set the tests</h3></div>
+        <p class="muted small">${ci.drawn} citizens drawn by lot set ${T.length}: ${T.filter(x=>x.kind==='test').length} test${T.filter(x=>x.kind==='test').length===1?'':'s'} an answer should pass, and ${T.filter(x=>x.kind==='limit').length} red line${T.filter(x=>x.kind==='limit').length===1?'':'s'} it must never cross. The number is how many backed each one.</p>
+        <div class="bars">${bars}</div></div>
+      <div class="panel"><div class="ph"><h3>In their words</h3></div>
+        <div class="voices">${ci.voices.map(v=>`<div>“${esc(v.text)}”<small>${esc(v.who)} · citizen ${esc(v.citizen)}</small></div>`).join('')}</div></div>
+    </section>
+
+    <section class="panel"><div class="ph"><h3>2 · Three answers</h3></div><p class="muted small">Three answers to the question, written separately.</p><div class="bench">${ans}</div></section>
+
+    <section class="panel"><div class="ph"><h3>3 · The gate: every answer on every test</h3></div>
+      ${table}${mini}<p class="muted tiny onlynarrow">Open an answer to see the reason for each mark.</p>${stack}
+      ${d.gate.rounds>1?`<p class="second"><b>Second try.</b> ${esc(d.made_by.note||'The first marks missed the plan, so the case or the answers were rewritten and the gate marked again. No mark was changed.')}</p>`:''}
+      <p class="small"><b>What the marks show.</b> ${esc(d.gate.verdict)}</p>
+      <p class="why ${esc(d.ending)}">${esc(endingLine(d))}</p></section>
+
+    <section class="panel"><div class="ph"><h3>4 · The jury: a values question</h3><span class="eyebrow">${j.size} drawn by lot</span></div>
+      <p class="statement">${esc(j.question)}</p>
+      <div class="bars">${j.options.map((o,i)=>`<div class="jbar${i===win?' win':''}"><span>${esc(o)}${i===win?' <span class="chip a">most votes</span>':''}</span><b>${j.votes[i]} of ${j.size}</b><div class="track"><i style="width:${j.votes[i]/j.size*100}%"></i></div></div>`).join('')}</div>
+      <p><b>Ruling.</b> ${esc(j.ruling)}</p>
+      <div class="voices">${j.reasons.map(r=>`<div>“${esc(r.text)}”<small>juror ${esc(r.juror)}</small></div>`).join('')}</div>
+      <p class="muted tiny">None of the jurors set the tests.</p></section>
+
+    <section class="panel"><div class="ph"><h3>5 · The minister ${esc(decVerb)}</h3><span class="end ${esc(d.ending)}">${esc(DEC_NAME[d.minister.decision]||d.minister.decision)}</span></div>
+      <div class="minister"><span class="eyebrow">${esc(m.name)} · ${esc(m.title)}</span><p class="statement">“${esc(d.minister.statement)}”</p></div>
+      <div class="kv"><span>${d.minister.decision==='sent-back'?'Why':'Signed'}</span><div>${esc(d.minister.text)}</div>${d.minister.answer?`<span>Answer</span><div>${esc(d.minister.answer)}</div>`:''}${d.minister.stop?`<span>Stops</span><div>${day(d.minister.stop)}</div>`:''}</div></section>
+
+    <section class="panel"><div class="ph"><h3>6 · The predictions</h3><span class="eyebrow">about the real topic</span></div>
+      ${d.predictions.length?`<div class="preds">${d.predictions.map(p=>`<div class="pred"><div><span class="chip ${p.result==='hit'?'p':p.result==='miss'?'f':'a'}">${p.result==='pending'?'due '+day(p.due):esc(p.result==='hit'?'came true':p.result==='miss'?'did not':'void')+(p.marked_on?' · marked '+day(p.marked_on):'')}</span></div><b>${esc(p.claim)}</b><span class="muted small">Counts if: ${esc(p.rule)}</span>${p.mark_note?`<span class="small">${esc(p.mark_note)}</span>`:''}</div>`).join('')}</div>`:'<p class="muted small">Nothing was signed, so nothing is predicted.</p>'}</section>
+
+    ${gdeb?`<section class="panel"><div class="ph"><h3>7 · The government debates it</h3></div>${debateBlock(gdeb,{withHead:false})}</section>`:''}
+
+    <section class="panel"><div class="ph"><h3>Sources</h3></div><p class="muted tiny">The sources are real.</p>
+      <ol class="src">${d.sources.map(x=>`<li><a href="${esc(safeUrl(x.url))}" rel="noopener" target="_blank">${esc(x.title)}</a> · ${esc(x.publisher)}${x.date?' · '+day(x.date):''}</li>`).join('')}</ol>
+      <p class="muted tiny">Made by: ${esc((d.made_by.workers||[]).join(' → '))}.${d.run.mode==='backfill'?` Built on ${day(d.run.run_date)} from the news of ${day(d.run.news_date)}.`:''}</p></section>
+
+    <nav class="pn" aria-label="Other days">${prev?`<a href="${dayLink(prev.id)}">← ${dayShort(prev.run.news_date)}: ${esc(prev.case.title)}</a>`:''}${next?`<a class="next" href="${dayLink(next.id)}">${dayShort(next.run.news_date)}: ${esc(next.case.title)} →</a>`:''}</nav>
+  </div>`;
+  startLoop(d);
+}
+
+/* ---------- the government ---------- */
+// The manifestos as they stood on a date: replay each line's history up to it.
+function linesAsOf(date){
+  return FEED.government.lines.map(l=>{
+    const h=(l.history||[]).filter(e=>e.date<=date);if(!h.length)return null;
+    let text=l.text,live=true;h.forEach(e=>{if(e.op==='adopt'||e.op==='change')text=e.text||text;if(e.op==='drop')live=false});
+    return {...l,text,live,history:h,last:h[h.length-1]};
+  }).filter(Boolean);
+}
+let GOV_I=null;
+function showGov(focusMin){
+  const dates=[...new Set(FEED.government.debates.map(g=>g.date))].sort();
+  if(GOV_I===null||GOV_I>=dates.length)GOV_I=dates.length-1;
+  $('#view').innerHTML=`
+    <section style="display:grid;gap:.6rem"><h2>The demo government</h2>
+      <p>Seven invented ministers. Each started with an empty manifesto. A line can only come from a day in that minister's area that was accepted (it becomes <span class="chip p">policy</span>) or partly accepted (a <span class="chip u">trial</span>). Rejected days add nothing. After every day the ministers debate it and may change or drop a line.</p></section>
+    ${dates.length?`<section class="panel step" aria-label="How it grew"><div class="ph"><h3>How it grew</h3><span class="eyebrow">move through the days</span></div>
+      <div class="row"><button id="gprev" type="button" aria-label="Earlier day">←</button><input id="gdate" type="range" min="0" max="${dates.length-1}" step="1" value="${GOV_I}" aria-label="Show the manifestos as they stood on this day"><button id="gnext" type="button" aria-label="Later day">→</button><button id="glast" type="button">Today</button></div>
+      <div class="growth" id="growth" role="group" aria-label="Live lines after each day"></div><p class="muted tiny">Each bar is the live lines after that day: <span style="color:var(--pass)">■</span> policy, <span style="color:var(--unclear)">■</span> trial. The dot is how that day ended. Tap a day.</p><div id="gwhen"></div></section>`:''}
+    <div id="gmins" class="mfull"></div>
+    <section style="display:grid;gap:.8rem"><h2>Every debate</h2><p class="muted small">Newest first. The minister whose area the day was in speaks first.</p>
+      ${FEED.government.debates.map(g=>`<div class="panel">${debateBlock(g)}</div>`).join('')||'<div class="empty">No debates yet.</div>'}</section>`;
+  const draw=()=>{
+    const date=dates[GOV_I]||'9999-12-31',L=linesAsOf(date),g=FEED.government.debates.find(x=>x.date===date),d=g&&dayById(g.day);
+    const live=L.filter(l=>l.live);
+    if(dates.length){
+      $('#gwhen').innerHTML=`<div class="when">${GOV_I===dates.length-1?'Today':'As it stood on'} · ${day(date)}</div>
+        <p class="small">${live.length} live line${live.length===1?'':'s'}: ${live.filter(l=>l.status==='policy').length} policy, ${live.filter(l=>l.status==='trial').length} trial.${d?` That day: ${endBadge(d.ending)} <a href="${dayLink(d.id)}">${esc(d.case.title)}</a>.`:''}${g&&g.changes.length?' '+g.changes.map(c=>esc(c.op==='adopt'?'Added':c.op==='change'?'Changed':'Dropped')+' '+esc(c.line)).join(', ')+'.':' No lines changed.'}</p>`;
+      const maxL=Math.max(1,...dates.map(dt=>linesAsOf(dt).filter(l=>l.live).length));
+      $('#growth').innerHTML=dates.map((dt,i)=>{const ll=linesAsOf(dt).filter(l=>l.live),p=ll.filter(l=>l.status==='policy').length,t=ll.length-p,gg=FEED.government.debates.find(x=>x.date===dt),dd=gg&&dayById(gg.day);
+        return `<button type="button" data-i="${i}" class="${i===GOV_I?'on':''}" title="${esc(day(dt)+': '+ll.length+' live lines')}" aria-label="${esc(day(dt)+', '+ll.length+' live lines')}"><span class="stack"><i class="t" style="height:${t/maxL*100}%"></i><i class="p" style="height:${p/maxL*100}%"></i></span><span class="n">${ll.length}</span><span class="e ${dd?esc(dd.ending):''}"></span><span class="d">${Number(dt.slice(8))}</span></button>`}).join('');
+      $('#growth').querySelectorAll('button').forEach(b=>b.onclick=()=>{GOV_I=Number(b.dataset.i);draw()});
+      $('#gdate').value=GOV_I;$('#gprev').disabled=GOV_I<=0;$('#gnext').disabled=$('#glast').disabled=GOV_I>=dates.length-1;
+    }
+    $('#gmins').innerHTML=AREAS.filter(a=>MINS[a]).map(a=>{const m=MINS[a];const mine=L.filter(l=>l.minister===a),on=mine.filter(l=>l.live),off=mine.filter(l=>!l.live);
+      const line=l=>{const fresh=l.last.date===date;const from=dayById(l.from);
+        return `<li class="line${fresh?' fresh':''}${l.live?'':' dropped'}"><div class="lm"><span class="chip ${l.status==='trial'?'u':'p'}">${l.status==='trial'?'trial':'policy'}</span><span>${esc(l.id)}</span>${fresh?`<span class="chip a">${esc(l.last.op==='adopt'?'new':l.last.op==='change'?'changed':'dropped')} this day</span>`:''}</div>
+          <span class="lt">${esc(l.text)}</span>
+          <span class="lm">From <a href="${dayLink(l.from)}">${from?esc(from.case.title)+', ':''}news of ${from?dayShort(from.run.news_date):esc(l.from)}</a></span>
+          <details><summary>History (${l.history.length})</summary><ul class="hist">${l.history.map(e=>`<li><span><span class="op ${esc(e.op)}">${esc(e.op)}</span> ${day(e.date)}</span>${e.text?`<span>${esc(e.text)}</span>`:''}<span class="muted">Why: ${esc(e.why)}</span></li>`).join('')}</ul></details></li>`};
+      return `<section class="panel mpanel" id="m-${esc(a)}"><div class="ph"><div style="display:grid;gap:.2rem"><span class="eyebrow">${esc(m.title)}</span><h3 style="font-size:1.2rem">${esc(m.name)}</h3></div><span class="small">${on.length} live</span></div>
+        <p class="voice">${esc(m.voice)}</p>
+        ${on.length?`<ul class="lines">${on.map(line).join('')}</ul>`:'<p class="muted small">Nothing in this manifesto yet.</p>'}
+        ${off.length?`<details class="drops"><summary>Dropped (${off.length})</summary><ul class="lines" style="margin-top:.5rem">${off.map(line).join('')}</ul></details>`:''}</section>`}).join('');
+  };
+  draw();
+  if(dates.length){
+    $('#gdate').oninput=e=>{GOV_I=Number(e.target.value);draw()};
+    $('#gprev').onclick=()=>{if(GOV_I>0){GOV_I--;draw()}};
+    $('#gnext').onclick=()=>{if(GOV_I<dates.length-1){GOV_I++;draw()}};
+    $('#glast').onclick=()=>{GOV_I=dates.length-1;draw()};
+  }
+}
+
+/* ---------- the record ---------- */
+const FILTER={area:'',ending:''};
+function showRecord(){
+  const has=a=>FEED.days.some(d=>d.plan.area===a);
+  const chips=(key,vals,name)=>`<div class="fchips" role="group" aria-label="${key==='area'?'Area':'Ending'}"><button type="button" data-k="${key}" data-v="" aria-pressed="${!FILTER[key]}">All</button>${vals.map(v=>`<button type="button" data-k="${key}" data-v="${esc(v)}" aria-pressed="${FILTER[key]===v}">${esc(name[v])}</button>`).join('')}</div>`;
+  $('#view').innerHTML=`
+    <section style="display:grid;gap:.6rem"><h2>Every day</h2><p class="muted">Newest first. Every one is a made-up case on a topic that was really in the news that day.</p></section>
+    <div class="filters">${chips('area',AREAS.filter(has),AREA_NAME)}${chips('ending',ENDS,END_NAME)}</div>
+    <div id="rlist" class="cards"></div>
+    ${scoreboard()}`;
+  const draw=()=>{
+    const list=FEED.days.filter(d=>(!FILTER.area||d.plan.area===FILTER.area)&&(!FILTER.ending||d.ending===FILTER.ending));
+    $('#rlist').innerHTML=`<p class="eyebrow">${list.length} of ${FEED.days.length} days</p>`+(list.map(d=>{const m=minOf(d.minister.minister);
+      return `<a class="card ${esc(d.ending)}" href="${dayLink(d.id)}"><div class="meta"><span>${day(d.run.news_date)}</span><span class="chip">${esc(AREA_NAME[d.plan.area])}</span>${endBadge(d.ending)}</div>
+        <h3>${esc(d.case.title)}</h3><p class="q">${esc(d.case.question)}</p><p class="out">${esc(endingLine(d))}</p><p class="muted tiny">${esc(m.name)}: ${esc(DEC_NAME[d.minister.decision]||d.minister.decision)}${d.predictions.length?` · ${d.predictions.length} prediction${d.predictions.length===1?'':'s'}`:''}</p></a>`}).join('')||'<div class="empty">No day matches both.</div>');
+    document.querySelectorAll('.fchips button').forEach(b=>b.setAttribute('aria-pressed',String(FILTER[b.dataset.k]===b.dataset.v)));
+  };
+  document.querySelectorAll('.fchips button').forEach(b=>b.onclick=()=>{FILTER[b.dataset.k]=b.dataset.v;draw()});
+  draw();
+}
+
+/* ---------- the loop for one day ---------- */
+let LOOP=null;
+function stopLoop(){if(LOOP){cancelAnimationFrame(LOOP.raf);clearInterval(LOOP.timer);window.removeEventListener('resize',LOOP.resize);LOOP=null}}
+function startLoop(d){
+  stopLoop();
+  const cv=$('#loop');if(!cv)return;
+  const ctx=cv.getContext('2d'),reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const j=d.jury,win=j.votes.indexOf(Math.max(...j.votes)),sc=scoresOf(d),T=d.citizens.tests,m=minOf(d.minister.minister);
+  const scoreOf=a=>sc.find(x=>x.answer===a)||{};
+  const top=[...T].sort((a,b)=>b.backers-a.backers)[0];
+  const nT=T.filter(x=>x.kind==='test').length,nL=T.length-nT;
+  const g=FEED.government.debates.find(x=>x.day===d.id);
+  const liveNow=FEED.government.lines.filter(l=>l.live).length;
+  const dec=d.minister.decision;
+  const govText=g?(g.changes.length?g.changes.map(c=>(c.op==='adopt'?'Added ':c.op==='change'?'Changed ':'Dropped ')+c.line+(c.text?': '+c.text:'')).join(' · '):'They talked it through. No manifesto line changed.')+' '+(g.debate[0]?minOf(g.debate[0].minister).name+': “'+g.debate[0].text+'”':''):'The ministers have not debated this day yet.';
+  const ST=[
+    {k:'case',name:'The case',tag:'made up · real topic',t:'A made-up case on a real news topic',x:`${d.case.place}. ${d.case.question} In the news: ${d.case.in_the_news.headline}.`},
+    {k:'ask',name:'The citizens',tag:`${d.citizens.drawn} by lot`,h:1,t:`${d.citizens.drawn} citizens set ${T.length} tests`,x:`${nT} test${nT===1?'':'s'} and ${nL} red line${nL===1?'':'s'}. Most backed: “${top.text}” (${top.backers} of ${d.citizens.drawn}).`},
+    {k:'bench',name:'Three answers',tag:'A · B · C',t:'Three answers',x:d.bench.map(b=>b.id+': '+b.title).join(' · ')},
+    {k:'gate',name:'The gate',tag:'every test',t:'Every answer marked on every test',x:endingLine(d)},
+    {k:'jury',name:'The jury',tag:`${j.size} by lot`,h:1,t:'A values question for the jury',x:`${j.question} Most votes: ${j.options[win]} (${j.votes[win]} of ${j.size}).`},
+    {k:'minister',name:'The minister',tag:(DEC_NAME[dec]||dec),h:1,t:`${m.name} ${dec==='adopted'?'adopts it':dec==='trial'?'signs a trial':'sends it back'}`,x:d.minister.text},
+    {k:'clock',name:'The clock',tag:'real dates',t:'Predictions about the real topic',x:d.predictions.length?d.predictions.map(p=>day(p.due)+': '+p.claim).join(' · '):'Nothing was signed, so nothing is predicted.'},
+    {k:'gov',name:'The government',tag:'seven ministers',h:1,t:'The ministers debate it',x:govText}
+  ];
+  const N=ST.length;let W,H,cx,cy,rx,ry,R,fs,pos,narrow=false,cur=0,t0=0,tokFrom=0,tokTo=0,tokT0=-9,tokAng=0;
+  const angOf=i=>-Math.PI+i*2*Math.PI/N;
+  const parts=Array.from({length:50},()=>({a:Math.random()*6.283,v:.12+Math.random()*.1,o:Math.random()-.5}));
+  const crowd=Array.from({length:16},()=>{const r=Math.sqrt(Math.random())*.62,a=Math.random()*6.283;return{x:Math.cos(a)*r,y:Math.sin(a)*r,p:Math.random()*6}});
+  const tok=()=>{const s=getComputedStyle(document.documentElement),gv=n=>s.getPropertyValue(n).trim();return{sf:gv('--surface'),ink:gv('--ink'),mu:gv('--muted'),ln:gv('--line'),ac:gv('--accent'),acs:gv('--accent-soft'),ok:gv('--pass'),bad:gv('--fail'),un:gv('--unclear'),hu:gv('--human'),hus:gv('--human-soft'),disp:'"Archivo",Arial,sans-serif',mono:'"IBM Plex Mono",monospace'}};
+  const endCol=c=>d.ending==='accepted'?c.ok:d.ending==='partly'?c.un:c.bad;
+  function layout(){const w=cv.parentElement.clientWidth;narrow=w<620;W=w;H=Math.round(narrow?w*1.32:w*.52);const dpr=Math.min(devicePixelRatio||1,2);cv.width=W*dpr;cv.height=H*dpr;cv.style.height=H+'px';ctx.setTransform(dpr,0,0,dpr,0,0);cx=W/2;cy=H*.5;rx=W*(narrow?.34:.38);ry=H*(narrow?.37:.33);R=Math.max(21,Math.min(40,Math.min(W,H)*.075));fs=Math.max(11,Math.min(14,W/62));pos=ST.map((_,i)=>({x:cx+rx*Math.cos(angOf(i)),y:cy+ry*Math.sin(angOf(i))}))}
+  const ell=(a,k)=>({x:cx+rx*k*Math.cos(a),y:cy+ry*k*Math.sin(a)});
+  const ease=u=>u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;
+  const circ=(x,y,r)=>{ctx.beginPath();ctx.arc(x,y,r,0,6.283)};
+  const rr=(x,y,w,h,r)=>{ctx.beginPath();if(ctx.roundRect)ctx.roundRect(x,y,w,h,r);else ctx.rect(x,y,w,h)};
+  function cross(x,y,s,col){ctx.strokeStyle=col;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x-s,y-s);ctx.lineTo(x+s,y+s);ctx.moveTo(x+s,y-s);ctx.lineTo(x-s,y+s);ctx.stroke()}
+  function tick(x,y,s,col,u){ctx.strokeStyle=col;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(x-s,y);if(u<.4){ctx.lineTo(x-s+s*.7*u/.4,y+s*.7*u/.4)}else{ctx.lineTo(x-s*.3,y+s*.7);const v=(u-.4)/.6;ctx.lineTo(x-s*.3+s*1.4*v,y+s*.7-s*1.6*v)}ctx.stroke()}
+  function icon(i,x,y,t,on,c){const k=ST[i].k,r=R;ctx.save();ctx.translate(x,y);ctx.lineCap='round';ctx.lineJoin='round';
+    if(k==='case'){ctx.strokeStyle=c.ink;ctx.lineWidth=1.8;ctx.beginPath();ctx.moveTo(-r*.42,-r*.02);ctx.lineTo(0,-r*.42);ctx.lineTo(r*.42,-r*.02);ctx.stroke();ctx.strokeRect(-r*.32,-r*.06,r*.64,r*.46);ctx.fillStyle=on?c.ac:c.mu;ctx.fillRect(-r*.08,r*.14,r*.16,r*.26)}
+    if(k==='ask'){crowd.forEach(p=>{const jj=on&&!reduce?Math.sin(t*3+p.p)*r*.05:0;circ(p.x*r+jj,p.y*r-jj,r*.085);ctx.fillStyle=c.hu;ctx.fill()})}
+    if(k==='bench'){const sp=on&&!reduce?1+.12*Math.sin(t*2.5):1;['A','B','C'].forEach((L,q)=>{ctx.save();ctx.translate((q-1)*r*.42*sp,0);ctx.rotate((q-1)*.18);ctx.fillStyle=c.sf;ctx.strokeStyle=c.ink;ctx.lineWidth=1.2;rr(-r*.18,-r*.27,r*.36,r*.54,2);ctx.fill();ctx.stroke();ctx.fillStyle=c.ink;ctx.font='600 '+Math.round(r*.26)+'px '+c.mono;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(L,0,0);if(cur>=3&&scoreOf(L).breaksLimit)cross(r*.08,-r*.2,r*.07,c.bad);ctx.restore()})}
+    if(k==='gate'){ctx.strokeStyle=c.ink;ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(-r*.42,-r*.5);ctx.lineTo(-r*.42,r*.5);ctx.moveTo(r*.42,-r*.5);ctx.lineTo(r*.42,r*.5);ctx.stroke();ctx.strokeStyle=on?endCol(c):c.mu;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(-r*.42,-r*.05);ctx.lineTo(r*.42,-r*.05);ctx.stroke();
+      for(let q=0;q<3;q++){const s=scoreOf('ABC'[q]);const col=s.clean?c.ok:s.breaksLimit?c.bad:c.un;const u=on&&!reduce?(t*.7+q/3)%1:.5;circ((q-1)*r*.22,r*.45-Math.sin(u*Math.PI)*r*.45,r*.07);ctx.fillStyle=cur>=3?col:c.ln;ctx.fill()}}
+    if(k==='jury'){const cols=[c.hu,c.ac,c.mu,c.ok,c.bad];let s=0;const rot=on&&!reduce?t*.25:0;j.votes.forEach((v,o)=>{for(let q=0;q<v;q++,s++){const a=rot+s/j.size*6.283-1.571;circ(Math.cos(a)*r*.62,Math.sin(a)*r*.62,r*.11);ctx.fillStyle=cols[o%cols.length];ctx.fill()}});ctx.fillStyle=c.hu;ctx.font='600 '+Math.round(r*.28)+'px '+c.mono;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(j.votes[win]+'/'+j.size,0,0)}
+    if(k==='minister'){ctx.strokeStyle=c.hu;ctx.lineWidth=2;circ(-r*.15,-r*.22,r*.17);ctx.stroke();ctx.beginPath();ctx.ellipse(-r*.15,r*.4,r*.34,r*.3,0,Math.PI,0);ctx.stroke();
+      if(cur>=5){const u=i===cur&&!reduce?Math.min(1,(performance.now()/1000-t0)/.8):1;if(dec==='sent-back')cross(r*.42,-r*.1,r*.13,c.bad);else{tick(r*.38,-r*.12,r*.2,dec==='trial'?c.un:c.ok,u);if(dec==='trial'){ctx.fillStyle=c.un;ctx.font='700 '+Math.round(r*.24)+'px '+c.mono;ctx.textAlign='center';ctx.fillText('T',r*.42,r*.42)}}}}
+    if(k==='clock'){ctx.strokeStyle=d.predictions.length?c.ink:c.mu;ctx.lineWidth=1.6;circ(0,0,r*.6);ctx.stroke();for(let q=0;q<12;q++){const a=q/12*6.283;ctx.beginPath();ctx.moveTo(Math.cos(a)*r*.5,Math.sin(a)*r*.5);ctx.lineTo(Math.cos(a)*r*.58,Math.sin(a)*r*.58);ctx.stroke()}const a=(reduce?0:t*(on?3:.25))-1.571;ctx.strokeStyle=on?c.ac:c.ink;ctx.lineWidth=2.4;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.cos(a)*r*.45,Math.sin(a)*r*.45);ctx.stroke()}
+    if(k==='gov'){const area=d.plan.area,ai=AREAS.indexOf(area);for(let q=0;q<7;q++){const a=Math.PI+q/6*Math.PI;const px=Math.cos(a)*r*.55,py=Math.sin(a)*r*.55+r*.22;circ(px,py,r*.1);const me=q===ai;ctx.fillStyle=me?(cur>=7&&g&&g.changes.some(x=>x.op==='adopt')?c.ok:c.ac):c.hu;ctx.globalAlpha=me&&on&&!reduce?.6+.4*Math.sin(t*4):ctx.globalAlpha;ctx.fill();ctx.globalAlpha=1}ctx.fillStyle=c.ink;ctx.font='600 '+Math.round(r*.24)+'px '+c.mono;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(String(liveNow),0,r*.34)}
+    ctx.restore()}
+  function draw(t){const c=tok();ctx.clearRect(0,0,W,H);
+    ctx.save();ctx.setLineDash([2,6]);ctx.strokeStyle=c.mu;ctx.globalAlpha=.55;ctx.lineWidth=1.5;ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,0,6.283);ctx.stroke();ctx.restore();
+    if(cur>0){ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,angOf(0),tokAng);ctx.strokeStyle=c.ac;ctx.globalAlpha=.45;ctx.lineWidth=3;ctx.stroke();ctx.globalAlpha=1}
+    if(!reduce)parts.forEach(p=>{const q=ell(p.a+t*p.v,1+p.o*.06);circ(q.x,q.y,1.6);ctx.fillStyle=c.mu;ctx.globalAlpha=.45;ctx.fill()});ctx.globalAlpha=1;
+    // the centre: the ending, the case, the date
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    const el=END_NAME[d.ending].toUpperCase();ctx.font='700 '+Math.round(fs*.85)+'px '+c.mono;const ew=ctx.measureText(el).width+18,eh=fs*1.7;
+    ctx.strokeStyle=endCol(c);ctx.lineWidth=1.5;rr(cx-ew/2,cy-fs*1.5-eh/2,ew,eh,3);ctx.stroke();ctx.fillStyle=endCol(c);ctx.fillText(el,cx,cy-fs*1.5+.5);
+    ctx.fillStyle=c.ink;ctx.font='800 '+Math.round(fs*1.25)+'px '+c.disp;ctx.fillText(d.case.short,cx,cy+fs*.5);
+    ctx.fillStyle=c.mu;ctx.font='500 '+Math.round(fs*.75)+'px '+c.mono;ctx.fillText('news of '+day(d.run.news_date),cx,cy+fs*1.9);
+    for(let i=0;i<N;i++){const s=ST[i],{x,y}=pos[i],on=i===cur;if(on&&!reduce){circ(x,y,R+7+Math.sin(t*3)*2.5);ctx.fillStyle=c.acs;ctx.fill()}else if(on){circ(x,y,R+6);ctx.fillStyle=c.acs;ctx.fill()}circ(x,y,R);ctx.fillStyle=s.h?c.hus:c.sf;ctx.fill();ctx.lineWidth=on?3:1.5;ctx.strokeStyle=on?c.ac:(s.h?c.hu:c.ln);ctx.stroke();ctx.globalAlpha=i<=cur?1:.55;icon(i,x,y,t,on,c);ctx.globalAlpha=1;
+      const below=y>cy-ry*.2,ly=below?y+R+fs*1.1:y-R-fs*1.55;ctx.textAlign='center';ctx.fillStyle=on?c.ac:c.ink;ctx.font='700 '+Math.round(fs*1.02)+'px '+c.disp;ctx.fillText(s.name,x,ly);ctx.fillStyle=s.h?c.hu:c.mu;ctx.font='500 '+Math.round(fs*.7)+'px '+c.mono;ctx.fillText(s.tag.toUpperCase(),x,ly+fs*1.05)}
+    const u=reduce?1:Math.min(1,(t-tokT0)/.9);tokAng=tokFrom+(tokTo-tokFrom)*ease(Math.max(0,u));if(narrow){const q=ell(tokAng,1);circ(q.x,q.y,6);ctx.fillStyle=c.ac;ctx.fill();circ(q.x,q.y,2.5);ctx.fillStyle=c.sf;ctx.fill();return}const q=ell(tokAng,.72);ctx.font='600 '+Math.round(fs*.76)+'px '+c.mono;const label=d.case.short,tw=ctx.measureText(label).width+14,th=fs*1.6;ctx.fillStyle=c.ac;rr(q.x-tw/2,q.y-th/2,tw,th,th/2);ctx.fill();ctx.fillStyle=c.sf;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(label,q.x,q.y+.5)}
+  function go(i){const prev=cur;cur=(i+N)%N;const now=performance.now()/1000;t0=now;tokFrom=tokAng;if(cur===0&&prev===N-1)tokFrom=angOf(N-1)-6.283;if(cur===N-1&&prev===0)tokFrom=angOf(0)+6.283;tokTo=angOf(cur);tokT0=now;if(cur===N-1&&prev===0)tokTo=angOf(N-1);$('#cn').textContent=cur+1;$('#ct').textContent=ST[cur].t;$('#cx').textContent=ST[cur].x;if(reduce)draw(now)}
+  const playBtn=$('#play');
+  const L={raf:0,timer:null,resize:null};LOOP=L;
+  function stop(){clearInterval(L.timer);L.timer=null;playBtn.textContent='▶ Play'}
+  function play(){if(L.timer){stop();return}playBtn.textContent='❚❚ Pause';L.timer=setInterval(()=>go(cur+1),5200)}
+  playBtn.onclick=play;$('#prev').onclick=()=>{stop();go(cur-1)};$('#next').onclick=()=>{stop();go(cur+1)};
+  cv.onclick=e=>{const b=cv.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;let bi=-1,bd=1e9;pos.forEach((p,i)=>{const dd=Math.hypot(p.x-x,p.y-y);if(dd<bd){bd=dd;bi=i}});if(bd<R*1.7){stop();go(bi)}};
+  L.resize=()=>{layout();draw(performance.now()/1000)};window.addEventListener('resize',L.resize);
+  layout();tokAng=tokFrom=tokTo=angOf(0);go(0);
+  if(!reduce){const f=now=>{draw(now/1000);L.raf=requestAnimationFrame(f)};L.raf=requestAnimationFrame(f);L.timer=setInterval(()=>go(cur+1),5200)}else{playBtn.textContent='▶ Play';draw(0)}
+}
+load();
+})();
+</script>
