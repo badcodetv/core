@@ -128,7 +128,12 @@ The goal is [`GOAL-3.md`](./GOAL-3.md) (Kai, 24 Nov 2026). Newest entries at the
   - one of the two unemployment predictions made strict, so both can't hit;
   - two made-by lists;
   - Gresmoor's finish date moved to the real guidance's one month.
-- **Round 3:** see the report.
+- **Round 3: REVISE, one item.** Moving Gresmoor's date had left answer B's 31 January marked as a pass,
+  which was now false. My date swap had also changed answer A's own text after marking. Handled as an
+  open second round: a fresh blind checker re-marked every answer from scratch (B now fails t1; still
+  accepted with A), and the day's note says what changed.
+  - Lesson: a fix after marking that touches a test or an answer is a new round, never a text edit.
+- **Round 4: PASS overall.** Nothing open.
 
 ## Report (goal 3)
 
