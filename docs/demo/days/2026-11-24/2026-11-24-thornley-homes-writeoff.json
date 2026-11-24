@@ -1,0 +1,63 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-24-thornley-homes-writeoff",
+ "stage": "case",
+ "run": {
+  "mode": "daily",
+  "run_date": "2026-11-24",
+  "news_date": "2026-11-24"
+ },
+ "plan": {
+  "area": "housing",
+  "ending": "rejected"
+ },
+ "case": {
+  "title": "Thornley Reach: who pays for the failed housing company?",
+  "short": "THORNLEY DEBT",
+  "question": "How should Thornley Reach cover the £43m lost on its failed council housing company?",
+  "place": "Thornley Reach (made up)",
+  "story": "Thornley Reach is a made-up borough of 180,000 people. Eight years ago the council set up its own housing company, Thornley Homes, and lent it £74m to build 620 homes. 410 are built or half-built, and the council can sell them for about £31m, which leaves a £43m hole. The council has £8m in reserves, its yearly budget is already cut to the bone, and it must balance its books by law. A council tax rise within the limit that needs no local vote brings in £5m a year. Every route hurts someone, and the council meets on Wednesday to choose.",
+  "in_the_news": {
+   "headline": "Lambeth Greens declare financial emergency over Homes for Lambeth",
+   "why": "Lambeth's council says it must write off £60m to £68m on its housing company and asked government for help; Thornley Reach is a made-up council facing the same kind of hole.",
+   "memory_id": "484617d5-0d48-4eb9-9952-e19bf6b36eed",
+   "sources": [
+    "s1"
+   ]
+  },
+  "facts": [
+   {
+    "text": "Lambeth Council estimates it will have to write off between £60m and £68m over its housing company, Homes for Lambeth.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "Lambeth also faces £143m of cuts and a budget gap over the next three years.",
+    "sources": [
+     "s1"
+    ]
+   },
+   {
+    "text": "The housing ministry said tenants in Lambeth council homes will not have to pay for losses or debts from council-owned companies.",
+    "sources": [
+     "s1"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Lambeth Greens declare financial emergency over Homes for Lambeth",
+   "publisher": "LocalGov",
+   "date": "2026-11-23",
+   "url": "https://www.localgov.co.uk/Lambeth-Greens-declare-financial-emergency-over-Homes-for-Lambeth/65266"
+  }
+ ],
+ "made_by": {
+  "workers": [
+   "demo-clerk"
+  ]
+ }
+}
