@@ -22,5 +22,23 @@
   },
   "boards": {
     "timeline": "https://claude.ai/artifact/YW18KXAyLbnLTyPchxch1Q"
+  },
+  "premiere": {
+    "current": "r1",
+    "r1": {
+      "sequence": "short-fredo-job-1-fredo-job-r1",
+      "guid": "647bcd70-4af2-4b1e-aded-9d95e4288962",
+      "bin": "short-fredo-job-1-fredo-job-r1",
+      "built": "2026-11-24",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/fredo-job.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/fredo-job/cut/r1/edl.json",
+      "what": "rough cut 1: picture locked, hard funk, crew lines (script draft 3)",
+      "how": "premiere-plan.py --tag r1",
+      "check": {
+        "at": "2026-11-24T08:54",
+        "state": "in sync",
+        "why": ""
+      }
+    }
   }
 }
