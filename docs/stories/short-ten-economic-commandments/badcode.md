@@ -55,6 +55,7 @@ Drive (agreed list). Open: lyric captions; bodega neon reads LOTTO / ATM; export
 - No real rapper or real currency in any still. Blur the fast-food logo on RU2-a-a if it is ever used.
 - Check every clip at three frames for suit, cap, mask and no skin; a clip that turns side-on late is used from its start.
 - The logo is a card at the tail, laid in by the edit. `marketing-gatekeeper` before posting.
+- **Ending (Kai approved the short with this change):** replace the final line with a spoof of "C.R.E.A.M." using the phrase "Cream dollar bills" (meeting 2026-11-24, `docs/misc/2026-11-24-meeting.md`; Gemini's notes, to be done by Jack). The source said "the song Cream"; Wu-Tang Clan's track is a guess. Spoof only: never the original recording or its lyric read out.
 
 ## Flow project
 - `17b708f8-d9d6-41ae-b562-8d161797b542` — scenes/ten-economic-commandments

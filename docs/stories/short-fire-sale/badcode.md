@@ -42,6 +42,7 @@ design them with an English region, never just "British".
 - BadCode is the auctioneer who announces the cap (Claude's pick; Jack can veto). Tweed jacket over a navy roll-neck up into the mask (no skin): white ring, red triangle over his left eye, no skin, gloves.
 - Jack and Kai write the jokes; Claude's drafts are marked as Claude's.
 - Run `scripts/variations/fresh.py --story short-fire-sale` over every new prompt and line, and say the result.
+- **Cut the scene with the rich man; go straight to the auction ending** (meeting 2026-11-24, `docs/misc/2026-11-24-meeting.md`; Gemini's notes, to be done by Jack).
 
 ## Library pieces in use
 - **Real photo as the look** (Jack): an Unsplash photo is each still's layout; never an AI figure pasted into a real photo.

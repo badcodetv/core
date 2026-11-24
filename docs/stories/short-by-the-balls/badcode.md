@@ -36,6 +36,7 @@ Voice: LOCKED (Jack, 2026-11-23): BadCode = Google library voice `en-gb-csagent-
 - Inspired by George Carlin's "The Owners": never his audio or his words read out.
 - The owners on the claw are kinds of owner (bank, landlord, energy company), never a real company's name or logo.
 - The fact (adjustable grip and payout settings) is read at source before it is said or shown.
+- **No solution segment: go straight to the final graphic** (meeting 2026-11-24, `docs/misc/2026-11-24-meeting.md`; Gemini's notes, to be done by Jack).
 
 ## Library pieces in use
 - **Real photo as the look:** find the layout on Unsplash (`python3 scripts/scene/unsplash-refs.py <scene-dir> "<query>"`),

@@ -41,6 +41,7 @@ named region, never just "British"). Any Suno track is music and sound only.
 - The way out (one gate for everyone) is Claude's: no BadCode government policy on record. Say so until one exists.
 - No real person, jockey, racecourse name, bookmaker or broadcaster: invented or unnamed only.
 - Run `scripts/variations/fresh.py --story short-starting-gate` over every new prompt and line, and say the result.
+- **Cut the final section: end on the horses still in the mud** (meeting 2026-11-24, `docs/misc/2026-11-24-meeting.md`; Gemini's notes, to be done by Jack).
 
 ## Library pieces in use
 - **Real photo as the look** (Jack): an Unsplash photo is each still's layout, given to Flow as the reference; the prompt

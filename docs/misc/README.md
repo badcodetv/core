@@ -6,6 +6,7 @@ if a theme accumulates, promote it to its own section.
 
 Current residents:
 
+- [`2026-11-24-meeting.md`](./2026-11-24-meeting.md) — Jack and Kai, 24 Nov 2026 (Gemini notes): Jack on Matt's videos for a week, stop making new shorts and move to marketing and release, edits to Money Printer / Horse Race / Fire Sale / Claw Machine / Freddos / inflation title, humour-by-exaggeration rule, pub-complaining format
 - [`2026-11-17-meeting.md`](./2026-11-17-meeting.md) — Jack and Kai, 17 Nov 2026: a woman leads and sings in the Bank Robbery MV (Kai), parallel Flow tabs (Kai), the context reset from scratch (Jack): archive, small CLAUDE.md, a badcode.md per story, a library
 - [`2026-11-05-meeting.md`](./2026-11-05-meeting.md) — Jack and Kai, 5 Nov 2026: balaclava MV works (more rapping to camera, fewer repeats), BadCode shorts format, GPOM re-cut notes (Maddie's simulation scene, faster speech, humans in the intro), no GPOM song, 7 videos to YouTube private
 - [`2026-10-15-meeting.md`](./2026-10-15-meeting.md) — Jack and Kai, 15 Oct 2026: narration not lip-sync, the protest as the distraction, Karen's cliffhanger, Tarquin's ayahuasca ending, GPOM simplified, the BadCode universe

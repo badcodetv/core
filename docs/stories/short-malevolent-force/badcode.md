@@ -49,6 +49,7 @@ them cut in, with the subtle VHS finish; its timeline page is the one linked bel
 - Blur shot 1's "BREAD £50" window card (it spoils the end) and shot 2's legible "WALKERS" spinner.
 - The logo ending: 2.6 s black, two lightning flashes, the logo file on #050607. Logo is the file, never Flow.
 - Suno tracks for this short are instrumental only. Run the Flow runner outside the Bash sandbox (inside, it loses every download).
+- **Title:** *The malevolent force of inflation coming to shops near you* (meeting 2026-11-24, `docs/misc/2026-11-24-meeting.md`; Gemini's notes, to be done by Jack).
 
 ## Flow project
 - `0153219b-e10c-46ac-b2a7-5b50200e19fe` — scenes/malevolent-force

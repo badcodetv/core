@@ -35,6 +35,7 @@ track is music and sound effects only.
   brand. The bar (Jack, 2026-11-23): a lookalike of the real purple frog wrapper, renamed **Freddoo**; never the maker's
   name or logo (cover it in post if Flow adds one).
 - The prices (10p then, today's price) are read at source before they are said or shown.
+- **New story line:** the plan is to rob the Freddos, wait two years and sell them, hoarding as an absurd investment that beats the stock market (meeting 2026-11-24, `docs/misc/2026-11-24-meeting.md`; Gemini's notes, to be done by Jack). Which Freddo short this note meant is a guess (this one, not `short-freddo-mortgage`).
 
 ## Library pieces in use
 - **Heist and caper** (look, copied in): clean, legible blocking (wide shots that show where everyone stands, then hands,
