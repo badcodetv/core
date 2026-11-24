@@ -29,7 +29,7 @@ GPOM_LONDON = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/bu
 SONG = K / '_outside/songs/Karen/song.wav'
 RENDER = K / 'renders/karen-v4-r0.mp4'
 MUS = K / 'background music'
-OUT = K / 'timeline/cut-r4'
+OUT = K / 'timeline/cut-r4b'   # r4b: the morning cut (cut-r4 is locked by its Premiere import)
 SEG = OUT / 'seg'
 FPS = 24
 BOLD = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
@@ -327,8 +327,8 @@ def ev(src, at, stem, what=None, inp=0.0, dur=None, gain=0.0, fx=None):
     return d
 
 
-def line(src, who, name, text, by, at, stem='vox-narration', fx=None, inp=0.0, dur=None):
-    d = ev(src, at, stem, inp=inp, dur=dur, fx=fx)
+def line(src, who, name, text, by, at, stem='vox-narration', fx=None, inp=0.0, dur=None, gain=0.0):
+    d = ev(src, at, stem, inp=inp, dur=dur, fx=fx, gain=gain)
     cur_beat['lines'].append({'i': len(cur_beat['lines']), 'who': who, 'name': name, 't': q(at), 'dur': d, 'text': text, 'by': by})
     return d
 
@@ -410,7 +410,7 @@ block([nar('lvl_r3b.wav', 'Susan reminds her. Last night, Karen threw her phone 
       [(NC / '10.mp4', 0, None, {})], tail=0.1)
 fb2 = (shout_src, 0.6, None, {'fx': FB, 'what': 'flashback: the railing'}) if shout else (NC / '8.mp4', 0.17, None, {'fx': FB, 'what': '8.mp4 (flashback)'})
 block([{'src': N3 / 'lvl_k01fb.wav', 'who': 'karen', 'name': 'Karen (Gacrux), remembered', 'by': 'kai', 'stem': 'vox-karen',
-        'text': "Tomorrow, I'm making the complaint of the century!", 'fx': 'echo'}],
+        'text': "Tomorrow, I'm making the complaint of the century!", 'fx': 'echo', 'gain': 3.0}],
       [(OC / '28.mp4', 3.0, 1.4, {'fx': FB, 'what': '28.mp4 (flashback)'}), fb2], lead=0.1, tail=0.25)
 b0 = block([nar('lvl_n401.wav', 'Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.', by='kai')],
            [(NC / '46.mp4', 0, 3.4, {}), (VIDS / 'still on hold/still on hold.mp4', 4.6, None, {'what': 'still on hold (City Hall)'})],
@@ -467,7 +467,8 @@ v0 = t
 ev(SONG, v0, 'mus-song', what='song.wav: "Take your time, I got all day to complain. All day to complain..."', inp=74.9, dur=4.6, gain=-4)
 ev(SONG, v0 + 4.6, 'mus-song', what='song.wav (under the narration)', inp=79.5, dur=7.5, gain=-17)
 block([nar('lvl_n23-a.wav', "[sarcastic] It shouldn't, but it goes viral. Terrible... bloody... A.I. slop song.", pre=4.5)],
-      [(OC / '12.mp4', 0, None, {'what': 'old 12 (the song online)'})], lead=0.0, tail=0.2)
+      [(OC / '12.mp4', 0, 4.5, {'what': 'old 12 (the song online)'}), (NC / '27.mp4', 0.5, 3.6, {'what': '27.mp4 (the box at night, the city streaming past)'}),
+       (NC / '14.mp4', 3.9, None, {})], lead=0.0, tail=0.2)
 block([nar('lvl_n24-a.wav', 'Now internet famous, people catch wind of her location.'), nar('lvl_n25-a.wav', 'Creepy.'),
        nar('lvl_n26-a.wav', 'Crowds start to form.', dur=1.6)],
       [(NC / '28.mp4', 0.5, 3.0, {}), (NC / '29.mp4', 0.5, 2.0, {}), (NC / '30.mp4', 0.5, None, {})], lead=0.1, gap=0.15)
@@ -551,8 +552,10 @@ lst.write_text(''.join(f"file '{v['file']}'\n" for v in video))
 pic = SEG / 'picture.mp4'
 # re-encoded, not stream-copied: segments made by different paths (stills, post pieces) don't join cleanly by copy
 # (r4 v1 played with broken NAL units)
-ff('-threads', 4, '-f', 'concat', '-safe', 0, '-i', lst, '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-bf', 0,
-   '-pix_fmt', 'yuv420p', '-r', FPS, pic)
+ff('-threads', 2, '-f', 'concat', '-safe', 0, '-i', lst, '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-bf', 0,
+   '-threads', 2, '-pix_fmt', 'yuv420p', '-r', FPS, pic)
+if abs(probe(pic) - TOTAL) > 0.2:   # r4b's first build: the join ran out of memory and stopped at 26 s, silently
+    sys.exit(f'picture.mp4 is {probe(pic):.2f}s, wanted {TOTAL:.2f}s')
 
 # ---------- sound: a silent bed first (so amix never drops the lead-in), then every event ----------
 def mixdown(evs, out):
@@ -586,13 +589,15 @@ for st in sorted({e['stem'] for e in events}):
 
 preview = OUT / 'preview.mp4'
 ff('-i', pic, '-i', snd, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-shortest', preview)
+if abs(probe(preview) - TOTAL) > 0.2:
+    sys.exit(f'preview is {probe(preview):.2f}s, wanted {TOTAL:.2f}s')
 
 # ---------- the edl ----------
 order = ['vox-narration', 'vox-karen', 'vox-martha', 'vox-harriet', 'vox-coffee', 'vox-writer', 'vox-president', 'vox-tarquin',
          'mus-score', 'mus-song', 'sfx', 'sfx-hold-music']
 stems = [s for s in order if any(e['stem'] == s for e in events)]
 edl = {
-    'sequence': 'karen-1-story-r4', 'title': 'Karen Story Timeline', 'fps': FPS, 'total': round(TOTAL, 3),
+    'sequence': 'karen-1-story-r4b', 'title': 'Karen Story Timeline', 'fps': FPS, 'total': round(TOTAL, 3),
     'heading': 'Karen Story: the narrated film (cut r4, from beats-r4)',
     'intro': ("Cut r4 (2026-11-24, made overnight): the whole film rebuilt from the r4 beat sheet. New Flow shots, new voices, "
               "the escalation as map + chain-of-command ladder + day counter + weather, a ruthless viral edit, the writers' room, "

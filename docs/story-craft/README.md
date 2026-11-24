@@ -66,6 +66,7 @@ The toolkit is live. A session that learns something and doesn't write it back h
 
 | Added | Source | Landed in |
 | --- | --- | --- |
+| 2026-11-24 | Karen story cut r4 ([critique-pass-r4](../stories/karen/critique-pass-r4.md), self-review) | This table only, for now: a persistence montage told as **map + rung-by-rung org-chart ladder + day counter + weather moving together**, each rung shorter, reads as an argument without narration (silent-movie test, row 5.2). Untested with a viewer; Kai's notes on r4 will say. |
 | 2026-09-11 | GPOM ending rework and [critique-pass-6](../stories/gitpush-origin-master/critique-pass-6.md) | `narrator.md`: identity reveal as hinge; the final address must retain the human correction; test intended emotion against actual dialogue/images; distinguish an invitation from an accessible next step |
 | 2026-08-22 | The GPOM critique-pass-3 review (12 draft findings → 24 verifiers → 2 🔴, 1 🟠, 7 🟡, 2 cut) | `checklist.md`: step 1 — read what was actually made, not only the canon file; step 4 — cite rulings by number with the file open; step 6 — refuter + strengthener per finding, expect a third to die; row 2.7 — a plant the text discharges is not a gun; row 5.8 — satellites only, the flagship's change arc is exempt; row 7.2 — test the joke with the name removed |
 | 2026-08-22 | Re-run briefs 15, 17, 19 (no search budget; WebFetch of primary sources) | `narrator.md` §1b — the tic is the ache; the flat arc tested to nearly breaking; **the Ava trap** (one admitted uncertainty per run); cosmic scope, human-sized last image |

@@ -66,5 +66,13 @@
   "stage": "premiere",
   "round": 4,
   "what": "karen-1-story-r4 built in Karen vid.prproj from cut-r4 edl (premiere-plan.py --tag r4); V1 checked shot for shot: in sync"
+ },
+ {
+  "at": "2026-11-24T23:50:24+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "r4b: self-review fixes (flashback +3 dB, viral shot split), page republished from cut-r4b, Premiere karen-1-story-r4b in sync on every track; story-craft review in critique-pass-r4.md; morning summary overnight-r4-summary.md",
+  "rebuild": "python3 scripts/karen/story-cut-r4.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <out-dir>"
  }
 ]

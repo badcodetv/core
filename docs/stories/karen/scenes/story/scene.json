@@ -8,17 +8,18 @@
   "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
   "source_sequence": "Karen v4",
   "cut": {
-    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
-    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/preview.mp4",
+    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/preview.mp4",
     "script": "python3 scripts/karen/story-cut-r4.py  (r4, 2026-11-24 overnight: beats-r4.md; new lines scripts/karen/narration-r4.tsv via render-narration-r4.py + finish-voice-r4.py; new shots scenes/story-r4-shots)",
     "previous": {
       "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
       "r3": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json",
-      "r3b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/edl.json"
+      "r3b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/edl.json",
+      "r4": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json"
     }
   },
   "premiere": {
-    "current": "r4",
+    "current": "r4b",
     "v4": {
       "sequence": "Karen v4",
       "guid": "9d5e84f4-66e2-4922-bc15-3c75b0855509",
@@ -36,7 +37,23 @@
       "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
       "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
       "what": "Cut r4, made overnight from beats-r4.md (74 shots on V1, one track per voice stem, score/song/sfx stems whole)",
-      "how": "premiere-plan.py --tag r4 --seq karen-1-story-r4; placed by premiere_eval (tracks added by placing past the last one)"
+      "how": "premiere-plan.py --tag r4 --seq karen-1-story-r4; placed by premiere_eval (tracks added by placing past the last one)",
+      "stale": "superseded the same night by r4b (two fixes after the self-review: the flashback line up 3 dB, the 12 s viral shot split in three); kept, not deleted"
+    },
+    "r4b": {
+      "sequence": "karen-1-story-r4b",
+      "guid": "938a2f40-d56f-400a-abf9-5c34e2116e17",
+      "bin": "karen-1-story-r4b",
+      "built": "2026-11-24",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
+      "what": "The morning cut: r4 + the self-review fixes",
+      "how": "premiere-plan.py --tag r4b; placed by premiere_eval",
+      "check": {
+        "at": "2026-11-24",
+        "state": "in sync",
+        "why": "V1 76/76 shots and all 51 audio clips match the plan by track, start and file"
+      }
     }
   },
   "boards": {

@@ -26,6 +26,13 @@
    ]
   },
   {
+   "h": "Self-review (story-craft pass, written up in docs/stories/karen/critique-pass-r4.md)",
+   "items": [
+    "Fixed after it: Karen's flashback vow up 3 dB; the 12-second 'song online' shot split into three (the song page, the box at night, Karen at the box).",
+    "Left for you (each touches a ruling of yours): the morning runs 35 s for one turn (the relic line is the obvious cut); the President's 'Right now, that's exactly what this country needs' says the point out loud (badcode.md: no stated moral), though it's your brief's gist; Karen never reacts to her crowd now that 'completely oblivious' is cut."
+   ]
+  },
+  {
    "h": "What I invented (yours to keep or bin)",
    "items": [
     "The chain-of-command ladder (CITY HALL RECEPTION → BOROUGH OF MANHATTAN → STATE OF NEW YORK → CONGRESS → ? ? ?) and the day counter (DAY 1, HOUR 3, DAY 2, WEEK 2, MONTH 2) over the map: your 'org chart' idea, drawn in post. A touch-tone blip marks each new rung.",
@@ -55,7 +62,7 @@
     "The snow beat is a still with a slow push (the 'asleep' gag never came out asleep in two stills, so it plays as 'still there in the snow').",
     "Karen's on-screen lines (the 'senior human', both 'all day' lines) play over wide or side shots, not lip-synced close-ups. Close-ups would need a lip-sync pass.",
     "The static burst sounds synthetic (the listen tool said so). A real sound effect would be better.",
-    "Premiere: built as a NEW sequence `karen-1-story-r4` in Karen vid.prproj (74 shots on V1, one track per voice, score/song/effects as stems), checked shot for shot against this page: in sync. Note: that project file holds no `Karen v4` sequence (only 'opening shot_1'), so Jack's v4 must live in another .prproj; nothing of his was touched."
+    "Premiere: built as a NEW sequence `karen-1-story-r4b` (r4 before the last two fixes stays beside it) in Karen vid.prproj (74 shots on V1, one track per voice, score/song/effects as stems), checked against this page on every track (76 shots, 51 audio clips): in sync. Note: that project file holds no `Karen v4` sequence (only 'opening shot_1'), so Jack's v4 must live in another .prproj; nothing of his was touched."
    ]
   },
   {

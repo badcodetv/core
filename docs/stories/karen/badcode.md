@@ -11,7 +11,7 @@ there. Two videos: a **narrated story film** (ends on Sean AI's card, the sacked
 "To be continued"; no stated moral) and a **music video** for the song "All Day to Complain" (about 4:10).
 
 ## Parts
-- Story film — `scenes/story/` — **cut r4** (2026-11-24, made overnight from [beats-r4.md](./scenes/story/beats-r4.md)): 5:08, on the timeline page (round 4, a reply under every note) and in Premiere as `karen-1-story-r4` (in `Karen vid.prproj`). Script `scripts/karen/story-cut-r4.py`; new shots in `scenes/story-r4-shots`. Waits for Kai's notes. Jack's `Karen v4` untouched.
+- Story film — `scenes/story/` — **cut r4** (2026-11-24, made overnight from [beats-r4.md](./scenes/story/beats-r4.md)): 5:08, on the timeline page (round 4, a reply under every note) and in Premiere as `karen-1-story-r4b` (in `Karen vid.prproj`; r4 kept beside it). Script `scripts/karen/story-cut-r4.py`; new shots in `scenes/story-r4-shots`. Waits for Kai's notes. Jack's `Karen v4` untouched.
 - Music video — `scenes/music-video/` — final cut frozen 2026-11-09 (Kai's hand edit on `karen-music-r4`).
 - **The two have different looks and different Karens. Don't carry one part's look or voice into the other.**
 

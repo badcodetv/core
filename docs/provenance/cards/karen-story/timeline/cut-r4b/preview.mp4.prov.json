@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/preview.mp4",
+ "made": "2026-11-24T23:50:24+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/karen/story-cut-r4.py",
+ "why": "Karen story film cut r4b, the morning cut",
+ "inputs": {
+  "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json"
+ }
+}
