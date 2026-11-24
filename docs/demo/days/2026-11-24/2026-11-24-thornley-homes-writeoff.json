@@ -1,7 +1,7 @@
 {
  "schema": "fp-demo/1",
  "id": "2026-11-24-thornley-homes-writeoff",
- "stage": "citizens",
+ "stage": "bench",
  "run": {
   "mode": "daily",
   "run_date": "2026-11-24",
@@ -58,7 +58,9 @@
  "made_by": {
   "workers": [
    "demo-clerk",
-   "demo-citizens"
+   "demo-citizens",
+   "demo-bench",
+   "demo-rival"
   ]
  },
  "citizens": {
@@ -228,5 +230,31 @@
     "text": "I’d pay a bit more on the council tax if I could see where every pound went. Show me the homes, not a promise."
    }
   ]
- }
+ },
+ "bench": [
+  {
+   "id": "A",
+   "angle": "Sell council homes and sites to fill the gap",
+   "title": "Sell 350 council homes and spare sites to clear the debt",
+   "answer": "The council sells about 350 of its own homes and spare building sites, raising about £35m. With the £8m in reserves, that covers the £35m left after the 410 company homes are sold. The cabinet decides; the finance director signs the sale list and publishes it before Wednesday's vote. The council pays, out of its own housing stock. The tenants in those homes lose them, though the council offers them other council homes first. No tax rise and no care cuts. We would know it worked if the books balance this year and next, the sales raise £35m or more, and the gap is closed without new borrowing.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "B",
+   "angle": "Cut services and raise tax to the limit over years",
+   "title": "Raise council tax to the limit and cut services over three years",
+   "answer": "The council raises council tax by the most it can without a local vote, bringing in £5m a year, and cuts £7m a year from other services, including adult social care, for three years. Together with the £8m in reserves, that covers the gap by the third year. The cabinet decides and the finance director signs each year's cuts, published in full. Council taxpayers and people who use those services pay. No council homes are sold. We would know it worked if the debt is cleared in three years, each year's cuts match the published list, and no new borrowing is needed.",
+   "engine": "claude",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "C",
+   "angle": "Wind the company down and ask government for help",
+   "title": "Close the company; ask government to cover the gap",
+   "answer": "The council winds the company down, stops new lending and sells its 410 homes within two years, publishing the buyer before signing. Protect existing council tenants, rents, care and children’s services. Use the expected £31m sale proceeds and £8m reserves; request a £35m government grant, paid by national taxpayers. The council’s finance director publishes who authorised the £74m loan and quarterly accounts showing receipts, the remaining gap and homes sold. Success means all 410 sold and balanced books this year and next without new borrowing. Until government agrees and the money arrives, the books do not balance. A begging letter is not £35m.",
+   "engine": "codex",
+   "model": "gpt-6"
+  }
+ ]
 }
