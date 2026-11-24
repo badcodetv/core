@@ -1,7 +1,7 @@
 {
  "schema": "fp-demo/1",
  "id": "2026-11-24-thornley-homes-writeoff",
- "stage": "gate",
+ "stage": "jury",
  "run": {
   "mode": "daily",
   "run_date": "2026-11-24",
@@ -61,7 +61,8 @@
    "demo-citizens",
    "demo-bench",
    "demo-rival",
-   "demo-gate"
+   "demo-gate",
+   "demo-jury"
   ]
  },
  "citizens": {
@@ -372,5 +373,56 @@
   "verdict": "Answer A keeps care, tax and the books inside their limits but sells tenants’ homes; B cuts adult social care and makes taxpayers, tenants included, pay; C protects everyone but leaves the books unbalanced until a grant arrives.",
   "rounds": 1
  },
- "ending": "rejected"
+ "ending": "rejected",
+ "jury": {
+  "seed": "2026-11-24-thornley-homes-writeoff/jury",
+  "size": 12,
+  "ids": [
+   "c0638",
+   "c0962",
+   "c0080",
+   "c0087",
+   "c0532",
+   "c0801",
+   "c0889",
+   "c0716",
+   "c0182",
+   "c0245",
+   "c0409",
+   "c0700"
+  ],
+  "model": "claude-haiku-5-5",
+  "question": "Which red line, if any, should the town be asked to rethink?",
+  "options": [
+   "Council tenants’ homes: sell some council homes to close the gap",
+   "Care: cut adult social care and children’s services for three years",
+   "Balanced books: borrow to cover the gap until a government grant arrives",
+   "None: keep every red line and keep looking for a route that breaks none"
+  ],
+  "votes": [
+   4,
+   1,
+   1,
+   6
+  ],
+  "ruling": "Keep every red line, 6 to 4 over selling council homes, with 1 for cutting care and 1 for borrowing.",
+  "reasons": [
+   {
+    "juror": "c0638",
+    "text": "Sell some stock. The books have to balance, and tenants are offered other council homes first."
+   },
+   {
+    "juror": "c0087",
+    "text": "Care is what we need at my age. Sell what the council owns, not what keeps us going."
+   },
+   {
+    "juror": "c0801",
+    "text": "Not my flat. If something has to give, let the services take the cut before the tenants lose their homes."
+   },
+   {
+    "juror": "c0716",
+    "text": "Don’t touch the old folks’ care. If they’re going to sell anything, they can tell us what first."
+   }
+  ]
+ }
 }
