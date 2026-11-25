@@ -1,7 +1,7 @@
 {
   "schema": "fp-demo/1",
   "id": "2026-11-25-wexmoor-care-pay",
-  "stage": "citizens",
+  "stage": "bench",
   "run": {
     "mode": "daily",
     "run_date": "2026-11-25",
@@ -52,7 +52,9 @@
   "made_by": {
     "workers": [
       "demo-clerk",
-      "demo-citizens"
+      "demo-citizens",
+      "demo-bench",
+      "demo-rival"
     ]
   },
   "citizens": {
@@ -222,5 +224,31 @@
         "text": "Carers on zero hours need the rise too. And don't cut my visits to pay for it. I need the same care every week."
       }
     ]
-  }
+  },
+  "bench": [
+    {
+      "id": "A",
+      "angle": "Flat 1 pound an hour rise written into every contract",
+      "title": "A flat extra pound an hour, in every contract, checked on pay slips",
+      "answer": "From April 2027 Wexmoor adds 1 pound an hour to every care worker on its contracts, part-time and zero-hours included,. The Director of Adult Social Care owns it. Firms send payroll records monthly; council finance checks a sample against pay slips and withholds payment from any firm that cannot show the rise reached workers. It costs about 1.9 million pounds a year, inside the 2.4 million fund, the rest kept for checking and a reserve. No visits are cut and no other care budget is touched. When the national deal arrives in 2028, the rise counts towards it, so nobody loses it and the council never pays twice. It worked if staff leaving falls against last year.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "id": "B",
+      "angle": "Loyalty bonus for long-serving care staff only",
+      "title": "A yearly loyalty bonus for care staff with two years' service",
+      "answer": "Wexmoor pays a yearly bonus of 900 pounds, in April from 2027, to every care worker with two or more years of service with a council-contracted firm. The council's care commissioning team runs it, using lists of staff that the firms send in. It costs about 1.1 million pounds a year from the care fund, so the rest stays unspent. Visits and other care budgets are left alone. Newer staff and many part-time workers would get nothing, and the answer sets no pay slip check beyond the firms' own lists. It does not say what happens when the national deal starts. We would know it worked if more long-serving staff stay.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "id": "C",
+      "angle": "Rise plus a paid-training and guaranteed-hours offer",
+      "title": "Raise care pay, train on paid time, offer secure hours",
+      "answer": "From April 2027, Wexmoor’s care director owns a contractual £1 hourly rise for every contracted carer, including part-time and zero-hours staff. The dedicated fund pays £1.9m annually. Within the remaining £500,000, firms offer paid training and voluntary guaranteed hours matching existing working patterns; checking and cover come first. Total spending stays below £2.4m annually, with no cuts to purchased care hours or other care budgets. Council payroll auditors check monthly payslips against hours worked and require missing pay repaid. Publish payment coverage, missed visits and staff departures quarterly. Fold the rise into the 2028 national deal without reducing hourly pay. Review training and retention after twelve months; extra funding ends March 2029 unless renewed.",
+      "engine": "codex",
+      "model": "gpt-6"
+    }
+  ]
 }
