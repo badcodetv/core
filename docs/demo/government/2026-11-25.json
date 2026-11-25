@@ -1,0 +1,10 @@
+{"schema":"fp-demo-gov/1","date":"2026-11-25","day":"2026-11-25-wexmoor-care-pay",
+"debate":[
+{"minister":"health","text":"Wexmoor's 1,400 carers hold up my wards without ever being on them. I signed answer C: £1 an hour for every contracted carer from April 2027, payslips checked monthly. It passed all six of the citizens' tests. The bonus for long service left out the new starters, who leave first."},
+{"minister":"work","text":"Tunde, a pound on a minimum-wage packet is a start, not a living. And 'voluntary guaranteed hours' is a contradiction. A zero-hours carer still can't plan the rent. I back the pay rise. Show me the hours turn up, or I'll say so."},
+{"minister":"health","text":"Fair, Callum. The rise is in the contract and the hours are an offer, and I'll own that. The citizens asked for pay on the slip, checked, with one name answering for it. Wexmoor's care director gets that. Hours come next, with the numbers published each quarter."},
+{"minister":"education","text":"The jury split 5 to 4 to 3 and the £500,000 went on paid training. I'd ask one thing: what does a carer notice? A course in their own time is a tax. A course on paid time is a day they get to sit down. Make sure it's paid."},
+{"minister":"health","text":"It is paid time, Grace. That was the jury's reason: train them properly and they stay. Four jurors wanted a reserve instead, so if training doesn't keep people in the job, I'll say that too."}],
+"changes":[
+{"op":"adopt","line":"health-2","minister":"health","text":"A £1 an hour rise for every contracted care worker from April 2027, part-time and zero-hours too, checked on payslips each month, with the spare £500,000 on paid training and voluntary guaranteed hours.","why":"Answer C passed every test and limit on 2026-11-25-wexmoor-care-pay."}],
+"made_by":{"workers":["demo-cabinet"]}}
