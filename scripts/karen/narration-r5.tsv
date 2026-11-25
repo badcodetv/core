@@ -1,0 +1,21 @@
+# Karen story film, cut r5 (2026-11-25, from Kai's notes on r4b): the new lines. id	who	voice	mode	style	text
+# mode: narr = the locked Algenib profile; plain = --plain on gemini-3.8-flash-tts (+ --style)
+n501a	narrator	Algenib	narr		Unfazed, Karen replies that she has all day to complain.
+n503a	narrator	Algenib	narr		Karen, completely unfazed, takes the title of the most persistent Karen in history. She has reached the ultimate boss-level manager.
+n505a	narrator	Algenib	narr		[shocked] Shocked, the Secret Service race in and evacuate the President.
+n506a	narrator	Algenib	narr		The President, in the back of the Beast, promptly calls Karen back. They now have work to do.
+n507a	narrator	Algenib	narr		Karen replies that she knows a guy in England who might be able to help.
+n501b	narrator	Algenib	narr		Unfazed, Karen replies that she has all day to complain.
+n503b	narrator	Algenib	narr		Karen, completely unfazed, takes the title of the most persistent Karen in history. She has reached the ultimate boss-level manager.
+n505b	narrator	Algenib	narr		[shocked] Shocked, the Secret Service race in and evacuate the President.
+n506b	narrator	Algenib	narr		The President, in the back of the Beast, promptly calls Karen back. They now have work to do.
+n507b	narrator	Algenib	narr		Karen replies that she knows a guy in England who might be able to help.
+n504a	narrator	Algenib	narr		[dramatic] It's... Ay-Eye Sean.
+n504b	narrator	Algenib	narr		[ominous, slow, dramatic] It's Ay-Eye Sean.
+n504c	narrator	Algenib	narr		[dramatic pause] It's... [ominous] Ay-Eye... Sean.
+n504d	narrator	Algenib	narr		[gravely, building tension] It's Ay-Eye Sean!
+s501-iapetus	sean	Iapetus	plain	A cold, flat, synthetic machine voice: perfectly even pitch, no emotion, every syllable clipped and evenly spaced, like a computer announcement.	Mister President. Your role has been made redundant.
+s501-schedar	sean	Schedar	plain	A cold, flat, synthetic machine voice: perfectly even pitch, no emotion, every syllable clipped and evenly spaced, like a computer announcement.	Mister President. Your role has been made redundant.
+s501-orus	sean	Orus	plain	A cold, flat, synthetic machine voice: perfectly even pitch, no emotion, every syllable clipped and evenly spaced, like a computer announcement.	Mister President. Your role has been made redundant.
+x501-puck	stranger	Puck	plain	A young New Yorker on the subway, amused and a bit incredulous, nudging his friend, casual and quick.	Hey. Have you heard this song?
+x501-fenrir	stranger	Fenrir	plain	A young New Yorker on the subway, amused and a bit incredulous, nudging his friend, casual and quick.	Hey. Have you heard this song?

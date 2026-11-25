@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r5/x501-fenrir.wav",
+ "made": "2026-11-25T09:34:02+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Hey. Have you heard this song?",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "Fenrir",
+  "style": "A young New Yorker on the subway, amused and a bit incredulous, nudging his friend, casual and quick.",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

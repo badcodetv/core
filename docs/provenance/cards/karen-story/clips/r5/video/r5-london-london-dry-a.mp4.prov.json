@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r5/video/r5-london-london-dry-a.mp4",
+ "made": "2026-11-25T09:42:36+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The crowd in the square stands still, faces turned up to the giant screen; a few people slowly raise their phones to film it, others put a hand to their mouths. The golden face on the screen glows and flickers. Light from the screen pulses across the crowd. Sound: a hushed city square, a murmur spreading through the crowd. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/london-dry-a.jpg",
+ "why": "Kai's notes on r4b, 2026-11-25: the GitPush Origin Master square, dry, the screen showing Sean in the studio",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/london-dry-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r5-shots",
+  "key": "london",
+  "frame": 4,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T09:41:36.464Z"
+ }
+}

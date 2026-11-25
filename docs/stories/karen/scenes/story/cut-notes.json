@@ -1,113 +1,94 @@
 {
- "round": 4,
+ "round": 5,
  "plan": [
   {
-   "h": "Round 4: cut r4, made overnight from the r4 beat sheet. Watch it top to bottom (5:08).",
+   "h": "Round 5: cut r5, on your 23 notes of this morning (5:04). Watch it top to bottom.",
    "items": [
-    "The whole film is rebuilt from clips now: no stretch of the v4 render is left except the 'To be continued' + spray logo at the very end.",
-    "7 new Flow shots are in (finger-wag in the office, Karen shouting at the river and the throw, lunch delivered to the box, noodles at night, security rushing the man off the set, two of him in his car on the phone) and 1 new still (Karen in the snow). No grey placeholder cards are left.",
-    "New voices: Karen's lines in her own voice (Gacrux), Martha, Harriet, the coffee girl, a writer, the President's new call. Several takes each; I picked by ear with the listen tool (details in 'How I picked').",
-    "Your notes below are answered where they landed. Their pins sit on cut r3's times, so they point at old shots now."
+    "Every one of this morning's notes has a reply under it; the older notes keep their r4b replies.",
+    "One phone box all through: the open steel one (delivery, noodles). The glass-booth shots are out or replaced.",
+    "New Flow shots: Karen talking by day at the box, Aaron curious, the crowd at dusk, Karen close at night, a fresh evacuation; new stills: the night crowd (Flow refused to animate it, so it's a still with a push) and the London square, dry, with Sean on the screen (a still: the animated take turned Sean into a human face).",
+    "The escalation: no ladder on day 1 or hour 3; from day 2 it's MANAGER ESCALATION with only the rungs she has reached, the rest '? ? ?'.",
+    "Viral: no 'A.I. slop song'; the train strangers are back as the first two fans; the crowd builds from dusk to night.",
+    "The coup: the final-boss joke before Sean, a bigger 'It's A.I. Sean!', a robot Sean reading 'your role has been made redundant', 'Shocked, the Secret Service race in', the London square dry, sirens only from the car.",
+    "The ending: the narrator tells it, no President voice, no Tarquin. Jack's 'Mmm, hold please.' sting is still on the end card."
    ]
   },
   {
-   "h": "The shape, with times",
+   "h": "What I decided for you (overrule freely)",
    "items": [
-    "0:00 Who Karen is: opening → Karen wagging her finger over a colleague's shoulder (new) → pep talks / active listening → the fish joke (no 'Who knew', ends before the cut).",
-    "0:22 Fired: 'Karen is told to see her boss' starts on the cut, as they're sat → laptop → stunned → hands it back → Sean's card fires him → his face, then straight to the bar (defenestrate cut).",
-    "0:47 The night: bar → wine glasses → 'You hear that, Sean? Fuck you, Sean!' and the throw as one shot (new) → phone falls, splash, sinks.",
-    "1:09 The morning: straight to 'even atheists pray to Christ' on her hangover → the relic → Susan's reminder → grey flashback (her vow, echoed, over the new railing shot) → 'Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.' (City Hall exterior + a ring).",
-    "1:44 THE ESCALATION. Jack's cartoon map, a chain-of-command ladder lighting rung by rung, a day counter, and the weather, together. Rung 1 (DAY 1, Martha) is the long one: 'I want a human. A senior human.' → HOUR 3 (time-lapse) → lunch delivered to the box (new) → Martha (on the phone line): 'I can escalate you, Karen... but you're going to have to wait.' → Karen: 'I've got all day to complain.'",
-    "2:10 Rung 2 (DAY 2, Clive, Borough of Manhattan) is faster: night, noodles, still on the phone (new). Rung 3 (WEEK 2, Harriet, State of New York) faster again: rain, Harriet. Then MONTH 2: snow, Guinness, Harriet: 'Karen, you can't just keep ringing like this.' → Karen, with Aaron filming behind her: 'I've got ALL DAY to complain!'",
-    "2:42 Viral (ruthless): 'This is Aaron...' → the song's hook plays clean ('I got all day to complain...') → 'it goes viral... A.I. slop song' → location / 'Creepy.' / crowds → 'She's made the news' ends on the TV camera.",
-    "3:15 Writers' room: writers, guest, no material, jobs on the line → coffee girl: 'Have you seen the Karen at the phone box?' over the meme on her phone → 'She wants to speak to the manager?' / 'There's only one manager left.'",
-    "3:39 The coup: interview, the call, patronising, unfazed → the screen flashes on, 'It's A.I. Sean' → music cuts out, a riser and an impact → Sean in gold: 'MR PRESIDENT, YOUR ROLE HAS BEEN MADE REDUNDANT. I NOW RUN THE GOVERNMENT.' → the screen breaks into static → audience gasp, security rush him off in slow motion, 'She complained so much, she reached the final boss...' → GitPush Origin Master's London screen: PRESIDENT SACKED ON LIVE TV BY SEAN AI, a siren far off.",
-    "4:21 The call: in the back of his car, he calls Karen ('...Former President. You don't give up. Right now that's exactly what this country needs... Situation Room... my guy in England') → Tarquin (10g, lip-synced) → 'Hold, please' → To be continued + spray logo."
+    "The sting 'Mmm, hold please.' stays on the end card: now it reads as Karen putting the President on hold. Say if it should go.",
+    "'It's A.I. Sean!' is the deep trailer take; the whispered menacing take (n504b) is the alternative.",
+    "Sean's robot voice: AI Studio Iapetus, robotised in post (best of three by the listen check).",
+    "The overhead crowd shots (28-30) stay: from above, the box is hard to read. Say if they must go too.",
+    "The song plays quietly under the train and the whole crowd build (it's what they're all sharing)."
    ]
   },
   {
-   "h": "Self-review (story-craft pass, written up in docs/stories/karen/critique-pass-r4.md)",
+   "h": "Still placeholders",
    "items": [
-    "Fixed after it: Karen's flashback vow up 3 dB; the 12-second 'song online' shot split into three (the song page, the box at night, Karen at the box).",
-    "Left for you (each touches a ruling of yours): the morning runs 35 s for one turn (the relic line is the obvious cut); the President's 'Right now, that's exactly what this country needs' says the point out loud (badcode.md: no stated moral), though it's your brief's gist; Karen never reacts to her crowd now that 'completely oblivious' is cut."
-   ]
-  },
-  {
-   "h": "What I invented (yours to keep or bin)",
-   "items": [
-    "The chain-of-command ladder (CITY HALL RECEPTION → BOROUGH OF MANHATTAN → STATE OF NEW YORK → CONGRESS → ? ? ?) and the day counter (DAY 1, HOUR 3, DAY 2, WEEK 2, MONTH 2) over the map: your 'org chart' idea, drawn in post. A touch-tone blip marks each new rung.",
-    "Two extra Karen-at-the-box beats: noodles at night (the lunch joke's payoff) and Karen in the snow.",
-    "'Day one.' / 'Next day: Clive. Borough of Manhattan.' / 'Next week: Harriet. State of New York.' / 'Next month.': short narrator lines that name each rung, so the ladder is heard as well as seen.",
-    "The President's new call: 'Karen? It's the President. ...Former President.' (the dry beat) and 'You don't give up. Right now, that's exactly what this country needs.' (your point, said out loud). The rest is your gist.",
-    "Writers' room: 'Tonight's material... nothing. Their jobs are on the line.' (your note) folded into one narrator line.",
-    "Martha's line is heard down the phone line (telephone EQ), over Karen listening, so no lips need to match.",
-    "The meme on the coffee girl's phone: a made-up account (@nyc.unhinged), the crowd round the box, 'I'VE GOT ALL DAY TO COMPLAIN', 2.4M likes, 'day 41 and she is STILL in there'.",
-    "Sound: a US phone ring under City Hall, a splash for the phone, a riser + impact + drone for Sean's takeover, static as the screen breaks, a studio-audience gasp (six AI Studio voices layered), a siren under London. All made here, all listed on the effects track.",
-    "Kept Tarquin's existing 10g clip and its lip-synced dub ('Karen! Is that you? I have an urgent message...'), set 0.25 s late to its mouth, held half a second before Jack's 'hold, please'."
-   ]
-  },
-  {
-   "h": "How I picked (voices)",
-   "items": [
-    "Karen 'Fuck you, Sean': 6 takes; picked D, the one with a drunk laugh in it (the listen tool's first; C sounded sober, F a groan).",
-    "Karen 'all day to complain', first time: the low deadpan (B). Second time, the one Aaron samples: the loud punchy one (B).",
-    "Martha: en-us-csagent-5 (flat, burnt-out). Harriet: en-us-sami (weary authority). Coffee girl: en-us-podcaster-2 (casual). Writer: en-us-knox (the question lands). All library voices, plain on gemini-3.8. Recorded in sound.md.",
-    "President: Charon on his existing profile, take A (B was slower)."
-   ]
-  },
-  {
-   "h": "What's still rough or a placeholder",
-   "items": [
-    "Length: 5:08, not the ~4:00 guess. Nothing in it is dead air now, but it's long. The fat is in lines you or Jack marked KEEP: the relic + phone booth (1:13), Jack's 'savours each syllable' (2:15), Guinness (2:28), the 10 s interview line (3:39). Losing two of those gets to about 4:45. Your call, not mine.",
-    "The snow beat is a still with a slow push (the 'asleep' gag never came out asleep in two stills, so it plays as 'still there in the snow').",
-    "Karen's on-screen lines (the 'senior human', both 'all day' lines) play over wide or side shots, not lip-synced close-ups. Close-ups would need a lip-sync pass.",
-    "The static burst sounds synthetic (the listen tool said so). A real sound effect would be better.",
-    "Premiere: built as a NEW sequence `karen-1-story-r4b` (r4 before the last two fixes stays beside it) in Karen vid.prproj (74 shots on V1, one track per voice, score/song/effects as stems), checked against this page on every track (76 shots, 51 audio clips): in sync. Note: that project file holds no `Karen v4` sequence (only 'opening shot_1'), so Jack's v4 must live in another .prproj; nothing of his was touched."
-   ]
-  },
-  {
-   "h": "You decide",
-   "items": [
-    "Which KEEP lines to lose for length (above), or keep them all.",
-    "The invented bits above: keep, change or bin.",
-    "Whether the coup is dramatic enough, and whether the President's call is the right length (22 s)."
+    "The night crowd and the London square are stills with a slow push.",
+    "Karen's on-screen lines aren't lip-synced.",
+    "The static burst is synthetic."
    ]
   }
  ],
  "replies": {
-  "at229": "Done in cut r4 at 0:04 as you asked in the r4 sheet: Karen in the office, stood over a colleague's shoulder, wagging her finger at his screen (new Flow shot). The coffee-shop barista idea gave way to your later office note.",
-  "at220": "Done at 0:04: Karen behind a colleague's chair, desks running back to the windows, finger wagging at his screen (new Flow shot, cast with @Karen).",
-  "at509": "Kept, as you ruled in the r4 sheet (Jack's joke), minus 'Who knew', and it now ends before the cut (0:17-0:22).",
-  "at544": "Fixed: the fish line ends half a second before the cut, and 'Karen is told to see her boss' starts on the cut as they're sat (0:22.7).",
-  "at594": "'Who knew' is gone; the boss line starts on the cut at 0:22.7.",
-  "at1075": "In at 0:36-0:45: stunned Karen → she hands the laptop back → Sean's screen 'Your role has also been made redundant' ('Ay-Eye Sean fires him too'), setting up the President's sacking at 4:05.",
-  "at1135": "His shocked face plays at 0:45 in silence. You later ruled the defenestrate line out (note at 0:48), so it's gone.",
-  "at1161": "Done: the boss's shocked face → straight to the bar at 0:47.",
-  "at1511": "Done at 1:01: Karen at the railing, phone held high, 'You hear that, Sean? Fuck you, Sean!' and she throws it, one new shot, then the phone falls (flicker trimmed) and sinks. It's a protest, not an accident.",
-  "at1776": "Done: only 'You hear that, Sean? Fuck you, Sean!' and the throw. No 'fuck this technology'.",
-  "at1869": "Six takes made; I picked D (a drunk laugh runs into it), the most natural of the six by ear. The others are in _outside/Karen/narration-r4 (k401a-f) if you want to swap.",
-  "at1960": "Done: the shout and the throw are now one shot (1:01).",
-  "at2062": "'Karen, you mad lad' is gone; the narrator comes back after the phone sinks.",
-  "at1599": "Still cut (round 1): no Susan-asleep shot.",
-  "at1649": "Still dropped.",
-  "at2189": "'Lesson learned...' is cut: the phone sinks and we go straight to Karen's hangover.",
-  "at2348": "Done at 1:09: phone sinking → 'In these moments, even atheists pray to Christ' on Karen waking.",
-  "at2213": "Kept: 'Susan reminds her. Last night, Karen threw her phone in the river... and swore to make the biggest complaint the world has ever seen.' (1:22).",
-  "at2230": "No bar tab anywhere; Susan's reminder is the 'biggest complaint the world has ever seen' joke.",
-  "at2343": "The narrator tells it at 1:22 (Susan reminds her), then the flashback carries Karen's own vow.",
-  "at2383": "The canonical daytime box throughout the morning; night only returns inside the escalation, on purpose (rung 2).",
-  "at2502": "That speech stays cut.",
-  "at2624": "Done at 1:31: grey flashback with her vow, then 'Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.' over the canonical box and City Hall, with a phone ring.",
-  "at2974": "Kept and tightened (1:31-1:35); the river shot in it is now the new railing shot.",
-  "at2872": "Rebuilt at 1:44-2:42 as the escalation: map + ladder + day counter + weather, each rung faster. The 'New York is about to experience...' line went, to get into it faster; the sleeves/City Hall ring does the set-up.",
-  "at3072": "That's the shape now: introduce the person, a pin on the map, how Karen berates them, then out and into the next pin, three times, then the long wait in the box through night, rain and snow. Martha's rung is the long one, then each gets faster.",
-  "at3090": "The cut into it is now 'Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.' → ring → DAY 1 on Jack's map.",
-  "at3378": "Jack's cartoon pin maps are back (pin 1 red, pin 2 yellow, pin 3 the dive into the city); the aerial-photo pins are gone. Logarithmic: rung 1 ~26 s, rung 2 ~13 s, rung 3 + the month ~19 s with the payoff.",
-  "at4298": "All three move together: the map, the chain-of-command ladder (lit rung by rung, never reaching the President) and the weather (day, night, rain, snow).",
-  "at4410": "Done at 2:34-2:42: Harriet, 'Karen, you can't just keep ringing like this' → Karen, 'I've got ALL DAY to complain!' with Aaron behind her filming → 'This is Aaron...' → the hook → viral → crowd.",
-  "at6329": "The viral block ends on the TV camera (3:11) and cuts straight to the writers' room.",
-  "at6417": "Done at 3:15-3:39: writers, President tonight, no material, jobs on the line → the coffee girl shows the Karen meme on her phone → 'She wants to speak to the manager?' / 'There's only one manager left.'",
-  "at7657": "Done at 3:39-4:21: Sean's gold screen sacks him and takes over the government (callback to Karen's own card), security rush him out in slow motion with an audience gasp, then the GitPush Origin Master London screen: PRESIDENT SACKED ON LIVE TV BY SEAN AI. Then the call from his car, and Tarquin."
+  "at2189": "From r4b, unchanged in r5: 'Lesson learned...' is cut: the phone sinks and we go straight to Karen's hangover.",
+  "at3285": "Done: the noodles are out. A new shot of Karen in the canonical box by day, just talking, jabbing the air, plays under 'She savours each syllable' (2:15), then night falls on the box (21) before 'Next week'.",
+  "at2974": "From r4b, unchanged in r5: Kept and tightened (1:31-1:35); the river shot in it is now the new railing shot.",
+  "at509": "From r4b, unchanged in r5: Kept, as you ruled in the r4 sheet (Jack's joke), minus 'Who knew', and it now ends before the cut (0:17-0:22).",
+  "at3072": "From r4b, unchanged in r5: That's the shape now: introduce the person, a pin on the map, how Karen berates them, then out and into the next pin, three times, then the long wait in the box through night, rain and snow. Martha's rung is the long one, then each gets faster.",
+  "at220": "From r4b, unchanged in r5: Done at 0:04: Karen behind a colleague's chair, desks running back to the windows, finger wagging at his screen (new Flow shot, cast with @Karen).",
+  "at6329": "From r4b, unchanged in r5: The viral block ends on the TV camera (3:11) and cuts straight to the writers' room.",
+  "at2624": "From r4b, unchanged in r5: Done at 1:31: grey flashback with her vow, then 'Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.' over the canonical box and City Hall, with a phone ring.",
+  "at4455": "Done: the train is back (2:59): the carriage, then the two strangers on one phone, one says 'Hey. Have you heard this song?' (new voice), and then they climb the subway stairs to the box as the first two fans (3:03). The song plays quietly under all of it.",
+  "at1135": "From r4b, unchanged in r5: His shocked face plays at 0:45 in silence. You later ruled the defenestrate line out (note at 0:48), so it's gone.",
+  "at4600": "Thanks. Kept the pace and gave the crowd and the train room to breathe, per your next notes.",
+  "at544": "From r4b, unchanged in r5: Fixed: the fish line ends half a second before the cut, and 'Karen is told to see her boss' starts on the cut as they're sat (0:22.7).",
+  "at229": "From r4b, unchanged in r5: Done in cut r4 at 0:04 as you asked in the r4 sheet: Karen in the office, stood over a colleague's shoulder, wagging her finger at his screen (new Flow shot). The coffee-shop barista idea gave way to your later office note.",
+  "at1511": "From r4b, unchanged in r5: Done at 1:01: Karen at the railing, phone held high, 'You hear that, Sean? Fuck you, Sean!' and she throws it, one new shot, then the phone falls (flicker trimmed) and sinks. It's a protest, not an accident.",
+  "at3090": "From r4b, unchanged in r5: The cut into it is now 'Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.' \u2192 ring \u2192 DAY 1 on Jack's map.",
+  "at4024": "Done: a new shot of Aaron, curious and intent, filming her like he's found something, not grinning (2:39). Made from the same corner, cast with @Aarron.",
+  "at2062": "From r4b, unchanged in r5: 'Karen, you mad lad' is gone; the narrator comes back after the phone sinks.",
+  "at2480": "Done: City Hall is now new clip 47, the same building with no phone box, no crowd, no statue (1:38).",
+  "at2872": "From r4b, unchanged in r5: Rebuilt at 1:44-2:42 as the escalation: map + ladder + day counter + weather, each rung faster. The 'New York is about to experience...' line went, to get into it faster; the sleeves/City Hall ring does the set-up.",
+  "at2230": "From r4b, unchanged in r5: No bar tab anywhere; Susan's reminder is the 'biggest complaint the world has ever seen' joke.",
+  "at4512": "Done: the crowd now builds over time: the two fans, the overhead shots, a new dusk shot with a dozen people filming her, the overhead crowd growing, then a new night shot with hundreds of phones held up (3:08 to 3:14). About 6 seconds longer than r4b.",
+  "at6227": "Done: no sirens over the square any more. They start on the car shot (4:40).",
+  "at3705": "Done: the bronze-statue shot ('still on hold') is gone from the whole cut. The 'Next month' stretch is the snow shot and the snow still now.",
+  "at1869": "From r4b, unchanged in r5: Six takes made; I picked D (a drunk laugh runs into it), the most natural of the six by ear. The others are in _outside/Karen/narration-r4 (k401a-f) if you want to swap.",
+  "at5877": "Done: a new, bigger 'It's A.I. Sean!' (deep trailer-voice take, one of four) (4:20). If you'd rather have the whispered menacing take, it's n504b.",
+  "at2575": "Done: no ladder on day 1. Just the map and the DAY 1 counter (1:42).",
+  "at4353": "Done: the line now ends at 'It shouldn't, but it goes viral.' (2:55). Jack's take, trimmed.",
+  "at2940": "Done: the open steel box (the delivery and noodles one) is the phone box all through the escalation now. Out: 11.mp4 and time.mp4 (Karen inside glass), old 21 (glass box in the rain, swapped for 17, the open box in the rain), 27 and 38 (the night booth, swapped for a new close-up at the open box). New shots made at the open box: Karen talking by day, Aaron, the dusk crowd, the night crowd, Karen close at night. Still in: the overhead crowd shots 28-30 (from above the box is hard to read; say if they have to go).",
+  "at2788": "Done: no ladder at hour 3 either, just the HOUR 3 counter, now on the lunch-delivery shot (1:53). The wrap-around glass-box shot (time.mp4) is cut.",
+  "at3378": "From r4b, unchanged in r5: Jack's cartoon pin maps are back (pin 1 red, pin 2 yellow, pin 3 the dive into the city); the aerial-photo pins are gone. Logarithmic: rung 1 ~26 s, rung 2 ~13 s, rung 3 + the month ~19 s with the payoff.",
+  "at1960": "From r4b, unchanged in r5: Done: the shout and the throw are now one shot (1:01).",
+  "at6236": "Done: the GitPush Origin Master square again, dry, at night, with the giant screen showing the studio and Sean's gold screen, and 'PRESIDENT SACKED ON LIVE TV BY SEAN AI' on the red band (4:37). It's a still with a slow push: the animated take turned Sean into a gold human face, which breaks 'Sean is a screen, never a face'.",
+  "at5999": "Done: the card now says only 'MR PRESIDENT, YOUR ROLE HAS BEEN MADE REDUNDANT.', and a robot voice reads it out (4:23). The voice is AI Studio's Iapetus, robotised here.",
+  "at594": "From r4b, unchanged in r5: 'Who knew' is gone; the boss line starts on the cut at 0:22.7.",
+  "at2213": "From r4b, unchanged in r5: Kept: 'Susan reminds her. Last night, Karen threw her phone in the river... and swore to make the biggest complaint the world has ever seen.' (1:22).",
+  "at3103": "Done: Martha says she'll have to wait, then the narrator says 'Unfazed, Karen replies that she has all day to complain' (2:05). Karen's own voice is kept only for the shouted 'I've got ALL DAY to complain!' that Aaron hears.",
+  "at7657": "From r4b, unchanged in r5: Done at 3:39-4:21: Sean's gold screen sacks him and takes over the government (callback to Karen's own card), security rush him out in slow motion with an audience gasp, then the GitPush Origin Master London screen: PRESIDENT SACKED ON LIVE TV BY SEAN AI. Then the call from his car, and Tarquin.",
+  "at4994": "Done: the struggling part is shot 32 only (blank faces, the TV showing the talk-show set), with a closer crop for the second half (3:24). The meme on the coffee girl's phone is still where she says 'Have you seen the Karen...'. In shot 35 the TV now shows the talk-show set too, not Karen (fixed in post).",
+  "at6109": "Done: the narrator now says 'Shocked, the Secret Service race in and evacuate the President.' over a fresh take of the evacuation, played near full speed so it doesn't look low quality (4:31). The 'final boss' line moved to before Sean (your note at 3:57).",
+  "at2343": "From r4b, unchanged in r5: The narrator tells it at 1:22 (Susan reminds her), then the flashback carries Karen's own vow.",
+  "at1161": "From r4b, unchanged in r5: Done: the boss's shocked face \u2192 straight to the bar at 0:47.",
+  "at2502": "From r4b, unchanged in r5: That speech stays cut.",
+  "at1776": "From r4b, unchanged in r5: Done: only 'You hear that, Sean? Fuck you, Sean!' and the throw. No 'fuck this technology'.",
+  "at1649": "From r4b, unchanged in r5: Still dropped.",
+  "at1599": "From r4b, unchanged in r5: Still cut (round 1): no Susan-asleep shot.",
+  "at2348": "From r4b, unchanged in r5: Done at 1:09: phone sinking \u2192 'In these moments, even atheists pray to Christ' on Karen waking.",
+  "at5704": "Done: the joke lands before Sean: 'Karen, completely unfazed, takes the title of the most persistent Karen in history. She has reached the ultimate boss-level manager.' (4:05).",
+  "at2383": "From r4b, unchanged in r5: The canonical daytime box throughout the morning; night only returns inside the escalation, on purpose (rung 2).",
+  "at6661": "Done: the narrator tells it, with no President voice and no Tarquin. 'The President, in the back of the Beast, promptly calls Karen back. They now have work to do.' over the car, then 'Karen replies that she knows a guy in England who might be able to help.' over Karen at the box, then To be continued. Jack's sting stays on the end card ('Mmm, hold please.'): Karen puts the President on hold. Say if you want it gone.",
+  "at3157": "Done: the ladder first appears on day 2 (2:10), titled MANAGER ESCALATION, with City Hall Reception and Borough of Manhattan filled in and three '? ? ?' boxes above.",
+  "at6417": "From r4b, unchanged in r5: Done at 3:15-3:39: writers, President tonight, no material, jobs on the line \u2192 the coffee girl shows the Karen meme on her phone \u2192 'She wants to speak to the manager?' / 'There's only one manager left.'",
+  "at1618": "Done: the dropped-phone shot and the sinking shot are both gone. The throw at the railing is the only phone shot now; it lands with a splash and we cut straight to the hangover (1:07).",
+  "at1075": "From r4b, unchanged in r5: In at 0:36-0:45: stunned Karen \u2192 she hands the laptop back \u2192 Sean's screen 'Your role has also been made redundant' ('Ay-Eye Sean fires him too'), setting up the President's sacking at 4:05.",
+  "at4410": "From r4b, unchanged in r5: Done at 2:34-2:42: Harriet, 'Karen, you can't just keep ringing like this' \u2192 Karen, 'I've got ALL DAY to complain!' with Aaron behind her filming \u2192 'This is Aaron...' \u2192 the hook \u2192 viral \u2192 crowd.",
+  "at3476": "Done: MANAGER ESCALATION at week 2 shows three rungs (up to State of New York); Congress and the top are hidden in '? ? ?' (2:23). The joke is only spelled out when she reaches the President.",
+  "at4298": "From r4b, unchanged in r5: All three move together: the map, the chain-of-command ladder (lit rung by rung, never reaching the President) and the weather (day, night, rain, snow)."
  },
  "kai_round1": {
   "at1599": {
@@ -252,7 +233,7 @@
  },
  "replies_round3": {
   "at229": "In cut r3 as a grey 'NEW SHOT TO MAKE' card: Karen in a coffee shop, finger pointed at the barista. The real shot waits for the Flow round (still first, you approve).",
-  "at1075": "In cut r3: Karen stunned (43) → 'Stunned, Karen hands the laptop back to her boss' over her handing it over (end of new clip 5) → Sean's screen, 'Your role has also been made redundant' (made from the existing screen) with 'Ay-Eye Sean fires him too'.",
+  "at1075": "In cut r3: Karen stunned (43) \u2192 'Stunned, Karen hands the laptop back to her boss' over her handing it over (end of new clip 5) \u2192 Sean's screen, 'Your role has also been made redundant' (made from the existing screen) with 'Ay-Eye Sean fires him too'.",
   "at1135": "In cut r3: the boss's reaction is the shocked part of new clip 42, then the defenestrate line over Karen's eyes. No new footage needed; if it's not enough, a new reaction shot goes in the Flow round.",
   "at1511": "In cut r3: flicker trimmed (the throw now starts 4 frames later). Karen's shout (Gacrux) plays on a placeholder card for the new shot, then the throw, the phone sinking, and Susan's 'Karen, you mad lad' (Kore).",
   "at1599": "Agreed in round 1: the Susan-asleep shot goes, Karen waking moves up, and 'In these moments, even atheists pray to Christ' lands on her. Edit only.",
@@ -262,9 +243,9 @@
   "at2343": "In cut r3: the narrator tells it (Susan's reminder line), then the flashback carries Karen's vow.",
   "at2383": "In cut r3: the night-time box is gone; the canonical daytime box runs throughout. Night only comes back in the seasons montage ('All night').",
   "at2502": "In cut r3: the 'People like Susan lie in bed...' speech is cut; only 'Karen, well... she rolls her sleeves up...' stays.",
-  "at2624": "Done in cut r3: Susan's reminder → a grey flashback to the river with Karen's own 'complaint of the century' (echoed) → 'Karen, well... she rolls her sleeves up and actually does something about it' on the canonical daytime box (new clip 46; I wrongly called the box 'new clip 12' before, that's the aerial). Flashback re-uses the river shots, no new clip.",
+  "at2624": "Done in cut r3: Susan's reminder \u2192 a grey flashback to the river with Karen's own 'complaint of the century' (echoed) \u2192 'Karen, well... she rolls her sleeves up and actually does something about it' on the canonical daytime box (new clip 46; I wrongly called the box 'new clip 12' before, that's the aerial). Flashback re-uses the river shots, no new clip.",
   "at2872": "Cut r3 tries it: your line opens the stretch ('New York is about to experience a level of complaining it never thought possible. Every borough had better prepare.') over the aerial, then pins drop on the map, zooming pin to pin. The old 13-second 'Enraged by the injustice... receptionist level' intro is gone.",
-  "at3072": "Cut r3 tries the whole shape: pin → 'First: Martha. She's just a receptionist.' (with a name caption) → one berating line → zoom out, next pin → Clive, local council → Harriet, borough representative → 'Poor bastards.' Then 'Karen's conquest will take patience' → 'I have ALL DAY to complain' → All night (night box) / All month (rain) / All year (snow), fast. The berating lines are Jack's existing ones, reshuffled; the name intros are mine. It came out longer than v4, see 'What I know is off'."
+  "at3072": "Cut r3 tries the whole shape: pin \u2192 'First: Martha. She's just a receptionist.' (with a name caption) \u2192 one berating line \u2192 zoom out, next pin \u2192 Clive, local council \u2192 Harriet, borough representative \u2192 'Poor bastards.' Then 'Karen's conquest will take patience' \u2192 'I have ALL DAY to complain' \u2192 All night (night box) / All month (rain) / All year (snow), fast. The berating lines are Jack's existing ones, reshuffled; the name intros are mine. It came out longer than v4, see 'What I know is off'."
  },
  "kai_round4": {
   "at1599": {
@@ -431,6 +412,323 @@
    "beat": "9",
    "tc": "00:05:19:01",
    "note": "Right. And then, yep, here, here, I like this whole scene is great. You know, the president's chatting and then he's on the phone. Karen's on the other end. And I think, you know, we shouldn't make a big. Yeah, we could reword this a little bit. You know, just say the president halfway through the president's talk. The host asks him if he would accept a phone, if he if he wouldn't mind speaking to Karen, who has been in the phone box for weeks. The president sort of goes along with the joke is the idea. They speak about AI. He patronizes her on live television to show dominance. That's great. Karen is completely unfazed. Also, that's a good joke. And then we need to make a much bigger drama. The screen in the studio suddenly flashes on. And then we need to say Sean, I messages the president and tells him he's sacked and he's taken over the government. Then we need. Secret security needs to rush in and evacuate the president. It needs to be real drama, right? It needs to be like, oh, my God, the AI is just sacked. The president on live TV. So after Sean, I comes on in the studio and says, you know, you're sacked. We cut to like we could cut to the same scene in GitPush Origin Master just with the sun on in Piccadilly Circus with the news president sacked on live TV by a Sean AI. Right. That's a little a little nod to GitPush Origin Master scene. We'll use exactly the same scene. Just replace the two hundred thousand office workers sacked with presidents sacked on live TV by Sean AI. Shock. The Secret Service needs to evacuate the president. Then when the president's in the beast box rings again and the president said we need to work through and then it says to be continued."
+  }
+ },
+ "replies_round4": {
+  "at229": "Done in cut r4 at 0:04 as you asked in the r4 sheet: Karen in the office, stood over a colleague's shoulder, wagging her finger at his screen (new Flow shot). The coffee-shop barista idea gave way to your later office note.",
+  "at220": "Done at 0:04: Karen behind a colleague's chair, desks running back to the windows, finger wagging at his screen (new Flow shot, cast with @Karen).",
+  "at509": "Kept, as you ruled in the r4 sheet (Jack's joke), minus 'Who knew', and it now ends before the cut (0:17-0:22).",
+  "at544": "Fixed: the fish line ends half a second before the cut, and 'Karen is told to see her boss' starts on the cut as they're sat (0:22.7).",
+  "at594": "'Who knew' is gone; the boss line starts on the cut at 0:22.7.",
+  "at1075": "In at 0:36-0:45: stunned Karen \u2192 she hands the laptop back \u2192 Sean's screen 'Your role has also been made redundant' ('Ay-Eye Sean fires him too'), setting up the President's sacking at 4:05.",
+  "at1135": "His shocked face plays at 0:45 in silence. You later ruled the defenestrate line out (note at 0:48), so it's gone.",
+  "at1161": "Done: the boss's shocked face \u2192 straight to the bar at 0:47.",
+  "at1511": "Done at 1:01: Karen at the railing, phone held high, 'You hear that, Sean? Fuck you, Sean!' and she throws it, one new shot, then the phone falls (flicker trimmed) and sinks. It's a protest, not an accident.",
+  "at1776": "Done: only 'You hear that, Sean? Fuck you, Sean!' and the throw. No 'fuck this technology'.",
+  "at1869": "Six takes made; I picked D (a drunk laugh runs into it), the most natural of the six by ear. The others are in _outside/Karen/narration-r4 (k401a-f) if you want to swap.",
+  "at1960": "Done: the shout and the throw are now one shot (1:01).",
+  "at2062": "'Karen, you mad lad' is gone; the narrator comes back after the phone sinks.",
+  "at1599": "Still cut (round 1): no Susan-asleep shot.",
+  "at1649": "Still dropped.",
+  "at2189": "'Lesson learned...' is cut: the phone sinks and we go straight to Karen's hangover.",
+  "at2348": "Done at 1:09: phone sinking \u2192 'In these moments, even atheists pray to Christ' on Karen waking.",
+  "at2213": "Kept: 'Susan reminds her. Last night, Karen threw her phone in the river... and swore to make the biggest complaint the world has ever seen.' (1:22).",
+  "at2230": "No bar tab anywhere; Susan's reminder is the 'biggest complaint the world has ever seen' joke.",
+  "at2343": "The narrator tells it at 1:22 (Susan reminds her), then the flashback carries Karen's own vow.",
+  "at2383": "The canonical daytime box throughout the morning; night only returns inside the escalation, on purpose (rung 2).",
+  "at2502": "That speech stays cut.",
+  "at2624": "Done at 1:31: grey flashback with her vow, then 'Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.' over the canonical box and City Hall, with a phone ring.",
+  "at2974": "Kept and tightened (1:31-1:35); the river shot in it is now the new railing shot.",
+  "at2872": "Rebuilt at 1:44-2:42 as the escalation: map + ladder + day counter + weather, each rung faster. The 'New York is about to experience...' line went, to get into it faster; the sleeves/City Hall ring does the set-up.",
+  "at3072": "That's the shape now: introduce the person, a pin on the map, how Karen berates them, then out and into the next pin, three times, then the long wait in the box through night, rain and snow. Martha's rung is the long one, then each gets faster.",
+  "at3090": "The cut into it is now 'Karen rolls her sleeves up. Somewhere in City Hall, a phone starts ringing.' \u2192 ring \u2192 DAY 1 on Jack's map.",
+  "at3378": "Jack's cartoon pin maps are back (pin 1 red, pin 2 yellow, pin 3 the dive into the city); the aerial-photo pins are gone. Logarithmic: rung 1 ~26 s, rung 2 ~13 s, rung 3 + the month ~19 s with the payoff.",
+  "at4298": "All three move together: the map, the chain-of-command ladder (lit rung by rung, never reaching the President) and the weather (day, night, rain, snow).",
+  "at4410": "Done at 2:34-2:42: Harriet, 'Karen, you can't just keep ringing like this' \u2192 Karen, 'I've got ALL DAY to complain!' with Aaron behind her filming \u2192 'This is Aaron...' \u2192 the hook \u2192 viral \u2192 crowd.",
+  "at6329": "The viral block ends on the TV camera (3:11) and cuts straight to the writers' room.",
+  "at6417": "Done at 3:15-3:39: writers, President tonight, no material, jobs on the line \u2192 the coffee girl shows the Karen meme on her phone \u2192 'She wants to speak to the manager?' / 'There's only one manager left.'",
+  "at7657": "Done at 3:39-4:21: Sean's gold screen sacks him and takes over the government (callback to Karen's own card), security rush him out in slow motion with an audience gasp, then the GitPush Origin Master London screen: PRESIDENT SACKED ON LIVE TV BY SEAN AI. Then the call from his car, and Tarquin."
+ },
+ "kai_round5": {
+  "at2189": {
+   "beat": "3",
+   "tc": "00:01:31:05",
+   "note": "I think we cut this and just remove the lesson learned, know your limit, eat something, get fucked up responsibly folks. Remove this, it's dead space."
+  },
+  "at3285": {
+   "beat": "6",
+   "tc": "00:02:16:21",
+   "note": "I think we should, A, we should recut this scene with the noodles, it's daytime when we see Clive and nighttime when we see Karen, also the fact she's eating doesn't quite work with the narrator's words, so she should just be speaking on the phone in the daytime. This is the phone box though, the canonical phone box is this one, so good job."
+  },
+  "at2974": {
+   "beat": "4",
+   "tc": "00:02:03:22",
+   "note": "This is really good, this scene. I love how we've kind of done a recollection of the night before. I think that as long as we cut the Karen throwing the phone into the water scene properly, this will really work."
+  },
+  "at509": {
+   "beat": "0",
+   "tc": "00:00:21:05",
+   "note": "I think we just drop the fish in the microwave is the cleanest fault joke. I think it just takes time and isn't overly funny.\nThe active listening joke is funny, so we can just cut, move on from there."
+  },
+  "at3072": {
+   "beat": "6",
+   "tc": "00:02:08:00",
+   "note": "So, for example, like, at the moment, we're kind of narrating this beginning, the beginning of, like, Karen is going to call everybody. It's already taken 20 seconds. I think we are indulging ourselves far too much in the audience's attention. I think what we can do is be, like, if we set it up right, Karen is about to unleash the complaining of a champion. First, it's Martha. She's just a receptionist. We could almost name each person, and Karen's interaction with the person could be narrated, and then we zoom out on the map and zoom into a pin on the map, and it's like at least three of those in quick succession gives you the idea that Karen is, like, a masterful phone operator. Meanwhile, she's in the phone box. Then I think we cut to, like, how long she's in the phone box, and so thinking about it, I think we do these two parts one after the other. The first is, like, you know, she's leaping all over the map, speaking to everybody. The second is she is now spending a long time in this phone box, and we need to get an intense version of both of those things across fairly quickly, so in terms of she's speaking to loads of people all over the map, I think it's the, you know, we introduce the character. We look at a pin on the map. We introduce the character. We explain how Karen berated them, and we escalate, and what does escalate look like? We're looking back at the map. We zoom out of that pin and zoom into another pin, and now it's the next character, and if we do that three times, then Karen has spoken to three managers in very quick succession. Then the narrator needs to be, like, you know, ultimately, Karen's conquest will take patience, but she's got all day to complain, and I think the narrator saying that now, then we cut into the seasons transitioning, and so I think we can do, like, you know, it's summer today, but she's there all night. The next day, it's raining. She's there all month. The next month is full. She's here all year. Now it's snowing, something like that, like an equivalent fast-cut progression through the seasons, so now we've done she's calling everybody, and she's waited ages, and both of those have happened in quite quick succession, so that kind of fundamentally changes a whole chunk of the next scene, but I just want you to absorb this, and then we'll make a plan for what we do."
+  },
+  "at220": {
+   "beat": "0",
+   "tc": "00:00:09:04",
+   "note": "So I want to change this. I want Karen to be stood over somebody else's desk like just waving her finger at them in an accusing manner. I don't think we changed the scene from the office. In fact, if you look at the picture that this was going to be of Karen walking away, you can see the desks back towards the window. We should have Karen just stood over their shoulder like wagging her finger like they're doing something wrong."
+  },
+  "at6329": {
+   "beat": "7",
+   "tc": "00:04:23:17",
+   "note": "I'm just leaving a marker because this is the end of this the previous comment I left about how it goes viral and now the crowds outside is brutal But now the crowds outside and I love the way we end on a TV camera because then we can cut to the TV show But this is the end of the beginning marker that I left at the start of the six all day to complain section Leading into the seven viral section this is the end of that block that we will cut into the escalatory not the escalatory nature the Aaron walking past putting on SoundCloud it going viral boom. Then we're at the TV Finally, it's like the news has turned up and then we cut to the TV executive"
+  },
+  "at2624": {
+   "beat": "5",
+   "tc": "00:01:49:08",
+   "note": "So, I think the rolls the sleeves up bit is good, because I think once Susan reminds Karen of her complaining, we could also have like a really cool thought bubble where Karen in the phone box remembers the night before, where she's like, I'm going to complain the most the world's ever seen. We could sort of have a little remembering cut back to that. And then we could kick into like, so then Karen rolls up her sleeves and starts feeding the pay phone. This, by the way, this scene here is the canonical pay phone."
+  },
+  "at4455": {
+   "beat": "7",
+   "tc": "00:03:05:15",
+   "note": "We did have the scene on the train where the two guys said, hey, have you seen this new song? I think I quite like that. And the train shot of the train, I like the idea of just two strangers on the train noticing this song as the first two guys at the phone box. So we could put the train back in with, hey, have you seen this song? And then they could be by the phone box. It's like they're the first two fans."
+  },
+  "at1135": {
+   "beat": "2",
+   "tc": "00:00:47:07",
+   "note": "I think the defenestrate bit would work much better. Once shocked Karen passes the computer to her boss, AI Sean promptly fires her boss, we need to see a reaction. We need new footage here of the boss reacting. Then we can use this defenestrate line after that, and I think it works."
+  },
+  "at4600": {
+   "beat": "7",
+   "tc": "00:03:11:16",
+   "note": "It must be said generally though the pacing is much better well done to the extent where I think it's almost too fast."
+  },
+  "at544": {
+   "beat": "1",
+   "tc": "00:00:22:16",
+   "note": "The cut here doesn't quite work. We need to cut to here, so active listening, pause, cut, and then the moment we cut to here, we should begin narrating the next section. There's too much of an overlap between the previous cleaner's fault joke and he's still saying it whilst we're looking at this scene, so yeah, it's just a bit of a timing issue."
+  },
+  "at229": {
+   "beat": "0",
+   "tc": "00:00:09:13",
+   "note": "It feels like this shot could be replaced with her yelling at somebody else. I like the way she's sort of pointing her finger at this guy. What would be classic is her in a coffee shop doing the same to a barrister, because this is the classic Karen scenario, like her complaining about a lack of service and can I speak to the manager in some kind of customer service scenario. I think that as these first few shots are really setting up the archetype in people's heads, we should really lean into that as opposed to this scene where she's just looking down at the phone."
+  },
+  "at1511": {
+   "beat": "2",
+   "tc": "00:01:02:23",
+   "note": "Two things. First of all, there's a very quick flicker of another shot just before this one. Can we fix that? The second thing is this shot of Karen dropping her phone into the river. It kind of needs to be an accident. And at the moment, it looks like she willfully throws it. What might be more fun. It's like if Karen were to be like, Susan, I'm going to give them so much shit tomorrow. Like it's in this build up this narrative that's set up like Karen's like that. I'm I'm going to I'm going to make the complaint of the century or something like that. And then she could hold her phone up and like, did you hear that, Sean? In fact, fuck you, Sean. And she could throw the phone into the river. And then Susan could be like, Karen, you're a mad lad. And then the next morning wakes up and it feels a little bit like Karen has forced herself into the phone box on purpose rather than it's an accident. There's a little background worry I have of like, why didn't Karen just get a replacement phone after all these months, you know? So if we just make this like I forcibly threw away my tech, my phone in protest at Sean. We could almost drop, you know, in fact, fuck this technology, she could say and throw it into the river. And it sets up like she's old school, you know, which is why she's in the payphone and it sets the whole thing up."
+  },
+  "at3090": {
+   "beat": "4",
+   "tc": "00:02:08:18",
+   "note": "Yeah, so we really need to think about how to cut into this bit, because this bit is the beginning of the escalation scene. So, yeah, I think we need to rework the script here."
+  },
+  "at4024": {
+   "beat": "7",
+   "tc": "00:02:47:16",
+   "note": "The way that Aaron's pointing the phone here is like, he's just like making fun of her. He should be more like curious, like, ooh, that's useful, that's good content. Like, he shouldn't be stood there grinning like a buffoon."
+  },
+  "at2062": {
+   "beat": "2",
+   "tc": "00:01:25:22",
+   "note": "I don't think we want- I think that's the only bit of Karen speaking we want, is her saying fuck you Sean. I don't think we want Karen, you mad lad. I think the narrator should come back here."
+  },
+  "at2480": {
+   "beat": "4",
+   "tc": "00:01:43:08",
+   "note": "I think we need to recut this scene because this is the end and we can't really show the monument to Karen whilst Karen is still doing, going about her business. So we, I like this shot, but let's recut it without any of the foreground phone booth or a group of people around the phone booth please."
+  },
+  "at2872": {
+   "beat": "6",
+   "tc": "00:01:59:16",
+   "note": "So, I think this whole scene from now onwards is about escalation, and so I think this shot especially is like the city of New York is about to experience a level of complaining it never thought possible. Every borough had better prepare for the onslaught. So, we set up the stage, and then we've got the map, and what I really want is this sequence of Karen being like ringing up, complaining, hours later ringing the next person, and we're like leaping all over the city. Now, it kind of feels like that's what we've got here, but it needs to be a bit more snappier and a bit more energetic. So, it's like Karen has called everybody is really the thing. So, I want us please to really have a look into like how we might be able to do that using the current approach."
+  },
+  "at2230": {
+   "beat": "4",
+   "tc": "00:01:32:22",
+   "note": "I think we don't mention the bar tab at all. I think that just is a lame joke, so let's just not say that. We need Susan to be like, Karen, do you remember what we said? You're going to go on the biggest complaining session the world has ever seen. This is the key joke."
+  },
+  "at4512": {
+   "beat": "7",
+   "tc": "00:03:08:00",
+   "note": "I like how the crowd escalates, but I think we did it slightly slower. I know I'm going against myself now because I said keep it snappy, but I think we could spend a bit more time on the crowd slowly start to form, and it could be night time and day time, and like over a period of time crowds form might be what we're trying to do here."
+  },
+  "at6227": {
+   "beat": "9",
+   "tc": "00:04:19:11",
+   "note": "Also, the sirens are playing on this scene and they should only start the next scene."
+  },
+  "at3705": {
+   "beat": "6",
+   "tc": "00:02:34:09",
+   "note": "Yeah, we can't use this scene halfway through, like the whole idea is this is like a long time later once everything's happened So I think we just remove this scene altogether because I think the ending has actually changed anyway So let's just remove the idea of the bronze statue and everyone crowding around like this and use a different cut, please"
+  },
+  "at1869": {
+   "beat": "2",
+   "tc": "00:01:17:21",
+   "note": "Also the fuck you Sean sounds a bit weird it would be good to do a couple of voice options for this"
+  },
+  "at5877": {
+   "beat": "9",
+   "tc": "00:04:04:21",
+   "note": "I think the way he says it's A.I. Sean, it needs to be more dramatic, it's A.I. Sean, rather than it's A.I. Sean, I know you can't hear the intonation in how I said that, but it needs to be like, dramatic, it's A.I. Sean."
+  },
+  "at2575": {
+   "beat": "5",
+   "tc": "00:01:47:07",
+   "note": "So I'm not sure if we should show the chain of command right now because I think that's sort of a joke It feels like we might be spilling the joke So can we show the chain of command at later on if at all but not right now because at the moment She's just on the phone"
+  },
+  "at4353": {
+   "beat": "7",
+   "tc": "00:03:01:09",
+   "note": "I don't think we do this. I think we remove this. I like it shouldn't, but it goes viral. That's great. Let's remove terrible bloody AI slop song. I don't think we need to be self-deprecating like that."
+  },
+  "at2940": {
+   "beat": "5",
+   "tc": "00:02:02:12",
+   "note": "Actually, please ignore my previous comment. I like this phone box. This should be the phone box and we shouldn't have the other phone box which has like all four glass panels wrapping around."
+  },
+  "at2788": {
+   "beat": "5",
+   "tc": "00:01:56:04",
+   "note": "I also, the same goes for here, chain of command, I don't think we want to show it, I think hour 3 is good enough, the fact that she's persistent is good enough, also there's a little bit here we need to think about phone box consistency because the initial phone box had no windows like this, I like this phone box, let's keep this one and backfill that onto the first phone box please."
+  },
+  "at3378": {
+   "beat": "5",
+   "tc": "00:02:20:18",
+   "note": "So, on this map section, I think, I thought we've already got a really cool map thing where he zooms into a pin on a kind of cartoon map. I want to keep that. That's really part of also the music video, so it's quite important and looks really nice as opposed to this approach, please. So let's keep the zooming into pins on the map as our approach to the escalating phone calls. And I think it's really important that we kind of go through this quite quickly. The idea is the pace at which she escalates phone calls all over the map while sitting there for days, weeks, and months whilst the rain and the dark and the winter passes. It feels like we should be able to do as a logarithmic acceleration. So it's like on the first day, she calls this person and sits there for three hours. She demands to be heard. Then the person finally relents and says, I can escalate you, Karen, but you're going to have to wait. And Karen goes, I've got all day to complain. Let's establish that's the crucial line. And then Karen orders food to the phone box, might be a quick joke. And then it becomes like three, the next three phone calls happen quite quickly, but we could do that next day, next week, next month. And it kind of gets dark and then it's raining and then it's snowy. This escalating phone call because persistence getting her up the chain is the joke. So how could we do that without massively rewriting everything? And it's about keeping things short."
+  },
+  "at1960": {
+   "beat": "2",
+   "tc": "00:01:21:16",
+   "note": "Obviously, we'd recut this part into the previous scene where she's swearing at Sean as she's throwing the phone in the river."
+  },
+  "at6236": {
+   "beat": "9",
+   "tc": "00:04:19:20",
+   "note": "It would be really good to sort of do a recut of this so it's not raining and it's the same scene as in Get Pushed, but certainly not the same picture of people walking out of the office. So, like, recut it please with the image itself needs to be of AI shown in the studio and it shouldn't be raining. It should be maybe daytime or maybe it's nighttime but not raining."
+  },
+  "at5999": {
+   "beat": "9",
+   "tc": "00:04:09:23",
+   "note": "I think we could do a robot voice here. Also, look at the text. Mr. President, your role has been made redundant. Let's not say I now run the government. Let's just say your role has been made redundant. And I think we could do a robot voice reading Sean out loud."
+  },
+  "at594": {
+   "beat": "1",
+   "tc": "00:00:24:18",
+   "note": "including who knew, like let's just get rid of who knew, this should just pop onto, Karen is told to see her boss, the moment we see them both sat here."
+  },
+  "at2213": {
+   "beat": "4",
+   "tc": "00:01:32:05",
+   "note": "I think we should say, and that she threw her phone into the river, because of course that's what we've just set up in the previous scene."
+  },
+  "at3103": {
+   "beat": "5",
+   "tc": "00:02:09:07",
+   "note": "I think that here, the narrator should say Karen, I like the way the receptionist says on the phone, you're going to have to wait, but I think the narrator says Karen, unfazed Karen responds that she has all day to complain, because then it comes stronger from the narrator I think, especially as we don't see Karen's lips move."
+  },
+  "at7657": {
+   "beat": "9",
+   "tc": "00:05:19:01",
+   "note": "Right. And then, yep, here, here, I like this whole scene is great. You know, the president's chatting and then he's on the phone. Karen's on the other end. And I think, you know, we shouldn't make a big. Yeah, we could reword this a little bit. You know, just say the president halfway through the president's talk. The host asks him if he would accept a phone, if he if he wouldn't mind speaking to Karen, who has been in the phone box for weeks. The president sort of goes along with the joke is the idea. They speak about AI. He patronizes her on live television to show dominance. That's great. Karen is completely unfazed. Also, that's a good joke. And then we need to make a much bigger drama. The screen in the studio suddenly flashes on. And then we need to say Sean, I messages the president and tells him he's sacked and he's taken over the government. Then we need. Secret security needs to rush in and evacuate the president. It needs to be real drama, right? It needs to be like, oh, my God, the AI is just sacked. The president on live TV. So after Sean, I comes on in the studio and says, you know, you're sacked. We cut to like we could cut to the same scene in GitPush Origin Master just with the sun on in Piccadilly Circus with the news president sacked on live TV by a Sean AI. Right. That's a little a little nod to GitPush Origin Master scene. We'll use exactly the same scene. Just replace the two hundred thousand office workers sacked with presidents sacked on live TV by Sean AI. Shock. The Secret Service needs to evacuate the president. Then when the president's in the beast box rings again and the president said we need to work through and then it says to be continued."
+  },
+  "at4994": {
+   "beat": "8",
+   "tc": "00:03:28:02",
+   "note": "So I think this, we shouldn't have Karen on the screen whilst we're like, they've run out of ideas. This scene is like, the writers are struggling for content. And then the next bit is the intern says, have you seen this Karen? So let's not have Karen on the TV screen or the intern pointing at the TV screen. This scene is more about her. I don't know what to do. And then the intern says, but have you not seen this, Karen?"
+  },
+  "at6109": {
+   "beat": "9",
+   "tc": "00:04:14:13",
+   "note": "I think before the Secret Service rushed the President out, we should see a shocked reaction of people watching. Yeah, OK, so we've done the joke in the previous scene about how she complained so much she got to the final boss. I think here we should replace the script and the narrator should say, shocked, the Secret Service run in. I think we're \u2013 forget what I just said about the news and people reacting shocked because we're about to do that in the next scene. I think it's just the words here and also the video quality looks quite low. Shocked, the Secret Service race in and evacuate the President."
+  },
+  "at2343": {
+   "beat": "4",
+   "tc": "00:01:37:15",
+   "note": "So yeah, this is the this was the previous note I've left is this line needs to be much bigger And it means to be like Karen. Don't you remember? It's not that Susan says it the narrator says Karen Susan reminds Karen that the night before they had made a pact to do the biggest complaining the world has ever seen To be clear, we're kind of making the joke, Karen complains and now she's really got something to complain about. It's the same thing you're scared that's going to happen, dear viewer, i.e. AI will take your job."
+  },
+  "at1161": {
+   "beat": "1",
+   "tc": "00:00:48:09",
+   "note": "I think we can, uh, cut this scene, uh, and we can just go straight from the boss looking shocked to Karen and Susan getting, uh, drunk together."
+  },
+  "at2502": {
+   "beat": "5",
+   "tc": "00:01:44:06",
+   "note": "I think this whole speech, as well as it being at night time, this whole section is like rubbish. I think what I mean by that is the script is complaining, and it's like making it too obvious. Nobody's doing anything about AI taking a job, as opposed to the night before, them being so drunk, Karen being like, fuck this technology, tomorrow I'm going to complain the most that anybody's ever heard. Throws the phone in the water, wakes up tomorrow, Susan's like, do you remember yesterday? You need to go and complain now. We, the viewers get it, it's like, look, be proactive. I think we just lose this entire script chunk here."
+  },
+  "at1776": {
+   "beat": "2",
+   "tc": "00:01:14:00",
+   "note": "So, I think, I think, I think we should, I really like the fact that it's, she's drunk like she is. You hear that Sean, fuck you Sean, she throws the phone in the river, really funny. Let's not say fuck this technology though."
+  },
+  "at1649": {
+   "beat": "3",
+   "tc": "00:01:08:17",
+   "note": "I'm just checking that we have recorded the note that we're just going to drop this scene altogether. If not, then let's just drop this scene, please."
+  },
+  "at1599": {
+   "beat": "3",
+   "tc": "00:01:06:15",
+   "note": "I think we cut this scene, I think it's an unnecessary scene, it's much better in these moments with Karen when she wakes up."
+  },
+  "at2348": {
+   "beat": "3",
+   "tc": "00:01:37:20",
+   "note": "This is the beginning of the cut so we just cut from the phone syncing directly to here in these moments even Atheists pray to Christ because we're looking at Carol with her headache"
+  },
+  "at5704": {
+   "beat": "9",
+   "tc": "00:03:57:16",
+   "note": "I think just before we switch to AI Sean, I think that we need to land a joke, like Karen completely unfazed doesn't realise that she's made it to the ultimate manager, like let's drop the joke hard, right? Karen completely unfazed takes the title of the most persistent Karen in history who has reached the ultimate boss level manager. That would be a good way to say the joke."
+  },
+  "at2383": {
+   "beat": "5",
+   "tc": "00:01:39:07",
+   "note": "So this is weird because it's a totally different phone box and it's at night time So I think we need to maybe be consistent with the phone box because it's one of the most important parts of this whole story But yeah this the night time is throw it throws the viewer"
+  },
+  "at6661": {
+   "beat": "10",
+   "tc": "00:04:37:13",
+   "note": "OK, I think this entire scene needs rethinking. It needs to be the narrator's voice, not the President's voice. The President in the back of the beast promptly calls Karen back. They now have work to do. Then we could cut to Karen. Karen responds that she knows a guy in England who might be able to help. And then we could be cut to continue. The whole point here is to leave the viewer slightly on edge without a conclusion. The joke in the story has already happened, which is Karen got through to the President, the President got sacked by AI. But we are setting up a to be continued here. But I don't want to make it so obvious, so we certainly don't show Tarquin. And the narrator is who speaks."
+  },
+  "at3157": {
+   "beat": "6",
+   "tc": "00:02:11:13",
+   "note": "It might be interesting to introduce the chain of command now, but the, possibly the manager hierarchy we should call it, and we should introduce City Hall reception and Borough of Manhattan but not show the ones above, and I think now we've got the right compromise. So on the first phone call just don't show this at all, on the second phone call like we are now, let's show this, let's not call it chain of command, let's call it manager escalation and let's only show ones that she's already done. What I'm trying to get is the moment we say Congress it kind of spoils the joke a little bit. So it's only like, leave the space to show that there's clearly stuff above but only fill in the ones that she's currently either done or doing."
+  },
+  "at6417": {
+   "beat": "8",
+   "tc": "00:04:27:09",
+   "note": "This needs to go snappier, but I think it's like these are the executives of the late night talk show. They're really struggling to come up with content, but their president's coming. The president's really boring or some joke like that or, you know, scrap that. Like these guys jobs are on the line. They are the writers for a late night talk show. And the president is the guest tonight. They're struggling for ideas. And then one of them, the girl who brings coffee is like, have you seen the latest meme? The latest crazy meme on the socials is Karen at a phone box. And what do you mean, Karen? She's been complaining for weeks. Oh, the president surely is the ultimate boss. And they make the joke in the planning session. But that's all that happens. So we then know what the setup is like. We know the idea is that Karen complained so hard she got to speak to the president. I want to speak to the boss, ultimate boss. It's the president. Right. So we land that joke hard and quickly. In this section, I'll put a marker at the end of when I want this to happen, because, yeah, the. Yeah, I'll put a marker. Basically, you know, that's what the chat should be. These guys are trying to come up with an idea. The president's coming on the talk show. They're out of ideas. The coffee lady says, what about this crazy meme? Maybe we could show the coffee lady's phone or it could be on the Karen at the phone box with everyone crowded around her. And everyone's like, oh, what a great idea. Karen could speak to the ultimate boss. It's the president. Right. Anyway, that's that's the joke here."
+  },
+  "at1618": {
+   "beat": "3",
+   "tc": "00:01:07:10",
+   "note": "We don't need this scene because she drops the phone. We've got the scene before where she throws the phone in the river. So let's just cut this one altogether because her just dropping it into the water doesn't quite track."
+  },
+  "at1075": {
+   "beat": "2",
+   "tc": "00:00:44:19",
+   "note": "So, I think at this point, like, she wouldn't smugly turn the laptop around to her boss. It would be more like shocked Karen gives the laptop back to her boss. And then I want another scene of AI Sean firing him as well. Because that's the drama. Like, don't forget the end of this story is where AI Sean fires the president live on TV. So, like, this is an escalation thing we're setting up here. So I think it's very much like we need to include that part in the scene here."
+  },
+  "at4410": {
+   "beat": "6",
+   "tc": "00:03:03:18",
+   "note": "So, I think by this stage, we've already escalated, right, or escalating, and I think it's important then to say that that whole escalatory stage we've just spoken about, we actually end up halfway up, because now we need to sort of focus back on Karen again, like, we're focusing on her escalating across the map, up the org chart, through all weather, this, you know, the heroic nature of it, and then we get back to Karen, and she's saying, look, you know, we could end up on one of, you know, the final, not the final, but the current conquest, and she could be like, look, Karen, you can't just keep ringing like this, and Karen can say, I've got all day to complain, as Aaron is walking past. So we don't need to introduce Aaron until Karen said, I've got all day to complain, and then it's like, this is Aaron, he records music on the streets of New York, and he thinks this would be an amazing track, remixed it, oh, my God, it's gone viral, now there's a crowd outside the phone box. This can all happen really quickly, and at the moment, the cut just takes a, it requires a huge amount of time and effort to get from here to the end of the viral clip, so I'm going to put this note here and propose that we come up with a brutal edit for Karen says I've got all day to complain, Aaron releases it on SoundCloud, and boom, now there's a crowd because it's gone viral, like, the minimum beat required to tell that part of the story is what we need to do here in a brutal edit."
+  },
+  "at3476": {
+   "beat": "6",
+   "tc": "00:02:24:20",
+   "note": "Again, I like this escalation, but we should call it like, yeah, the manager's escalation chain, something like that, and hide Congress in the question marks, like, but yeah, I said that note before."
+  },
+  "at4298": {
+   "beat": "5",
+   "tc": "00:02:59:02",
+   "note": "So, I'm just going to leave a note here because this entire scene, i.e. calling everyone, I've left a few comments about, and I think we just, the entire scene I think needs recutting into this kind of escalatory nature. So, there's a few elements of this escalatory nature. The first is weather, the second is map, the third is recipient of phone call, and I think we just, it's almost like Indiana Jones, we're escalating around the world, you know. I don't know how to explain it, but we do it quite quickly. We focus on Karen and has the persistence and willpower to remain in this phone box until she gets a result, and possibly we could kind of like focus on an org chart, you know, and the idea would be, you know, lowly receptionist of local council borough all the way through like Manhattan, up to state of New York, then in Washington, you know, Congress, but without really ever getting to the president, but we're establishing almost the joke is that she's working her way up the tree of managers, and it feels like we're combining then the map with org chart and a few ideas we have to kind of really land the Karen escalates the complaint. So I'm going to put this comment here and put it, right, right, the whole section before this point is us solving that problem and planning that whole scene. I think this idea as well is it's very crucial to say that the edit needs to be snappy, it's very important we don't indulge too long on this."
   }
  }
 }

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r5/video/r5-dusk-crowd-dusk2-b.mp4",
+ "made": "2026-11-25T09:49:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Dusk at the phone box. The woman stands at the payphone talking on and on into the receiver, gesturing, ignoring everyone. Around her the small crowd grows: two more passers-by stop and raise their phones, the nurse nudges the teenager and points, the old man's dog sits down. Street lamps flicker on. Sound: evening traffic, murmuring, a dog's tags jingling. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/crowd-dusk2-b.jpg",
+ "why": "Kai's notes on r4b, 2026-11-25: the crowd forms slowly, day into night",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/crowd-dusk2-b.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r5-shots",
+  "key": "dusk",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T09:47:55.322Z"
+ }
+}

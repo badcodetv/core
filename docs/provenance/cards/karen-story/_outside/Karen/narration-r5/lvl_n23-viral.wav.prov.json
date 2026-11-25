@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r5/lvl_n23-viral.wav",
+ "made": "2026-11-25T09:48:23+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg atrim 0-3.05 s",
+ "parent": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-v2/final/lvl_n23-a.wav",
+ "why": "Kai r5 note: cut 'Terrible bloody A.I. slop song'"
+}

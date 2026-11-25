@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r5/stills/crowd-night2-a.png",
+ "made": "2026-11-25T09:42:55.027Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nExactly this phone box, kept as it is in the reference: an open steel frame on one post with a small roof, the payphone fixed to its side, open to the street with no door and no glass walls, beside the green railings of the subway steps. Now it is late at night and the corner has filled: a packed throng of several hundred people jams the pavement and spills into the road, every one holding a glowing phone screen up above their heads, a sea of small lights. In the middle, lit only by the streetlamp over the box, Karen still stands at the payphone with the receiver at her ear, serene, ignoring all of it. High wide view from a window across the avenue.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Karen cut r5 (Kai's notes on r4b, 2026-11-25): crowd forms over time, canonical phone box; re-roll (first take had the glass booth)",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r5/ref/box-day.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r5/ref/box-day.jpg"
+  ],
+  "character": "Karen"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "6386d2ea-a1c8-450f-b4ff-5f12909f0155"
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r5/s501-iapetus.wav",
+ "made": "2026-11-25T09:34:00+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "Mister President. Your role has been made redundant.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "Iapetus",
+  "style": "A cold, flat, synthetic machine voice: perfectly even pitch, no emotion, every syllable clipped and evenly spaced, like a computer announcement.",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

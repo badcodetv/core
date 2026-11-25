@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r5/video/r5-talk-talk-day-a.mp4",
+ "made": "2026-11-25T09:44:55+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman in the phone box speaks slowly into the receiver, pronouncing each word with relish, her raised finger jabbing the air on every syllable; she stops, listens with narrowed eyes, then leans in and starts again. People walk past far behind her. Sound: daytime street traffic, a bus pulling away, footsteps. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/talk-day-a.jpg",
+ "why": "Kai's notes on r4b, 2026-11-25: daytime, just speaking on the phone (replaces the noodles)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/talk-day-a.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r5-shots",
+  "key": "talk",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T09:43:40.687Z"
+ }
+}

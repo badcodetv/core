@@ -1,0 +1,64 @@
+{
+ "video": {
+  "duration": 8
+ },
+ "skip": [],
+ "extra": [
+  {
+   "key": "talk",
+   "n": 1,
+   "still": "talk-day-a",
+   "character": "Karen",
+   "why": "Kai's notes on r4b, 2026-11-25: daytime, just speaking on the phone (replaces the noodles)",
+   "motion": "The camera does not move. The woman in the phone box speaks slowly into the receiver, pronouncing each word with relish, her raised finger jabbing the air on every syllable; she stops, listens with narrowed eyes, then leans in and starts again. People walk past far behind her. Sound: daytime street traffic, a bus pulling away, footsteps. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "aaron",
+   "n": 2,
+   "still": "aaron-curious-a",
+   "character": "Aarron",
+   "why": "Kai's notes on r4b, 2026-11-25: Aaron curious, not grinning",
+   "motion": "The camera does not move. The young man holds his phone up sideways, filming the woman in the phone box; he tilts his head, his eyebrows lift slowly, he listens intently and nods once to himself, as if he has heard something useful, and steps half a pace closer to frame her better. He does not smile. In the box, the woman keeps shouting into the receiver, gesturing with her free hand. Sound: street traffic, a car horn far off. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "close",
+   "n": 3,
+   "still": "karen-close-night-b",
+   "character": "Karen",
+   "why": "Kai's notes on r4b, 2026-11-25: Karen at the canonical box at night (replaces 38)",
+   "motion": "The camera does not move. The woman in the phone box holds the receiver to her ear with both hands, eyes half closed, calm and unbothered, listening; she gives a small slow nod and the faintest smile. Behind her the blurred crowd sways, their phone screens bobbing and glinting. Sound: a murmuring crowd, distant traffic. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "london",
+   "n": 4,
+   "still": "london-dry-a",
+   "character": null,
+   "why": "Kai's notes on r4b, 2026-11-25: the GitPush Origin Master square, dry, the screen showing Sean in the studio",
+   "motion": "The camera does not move. The crowd in the square stands still, faces turned up to the giant screen; a few people slowly raise their phones to film it, others put a hand to their mouths. The golden face on the screen glows and flickers. Light from the screen pulses across the crowd. Sound: a hushed city square, a murmur spreading through the crowd. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "evacuate2",
+   "n": 5,
+   "still": "evacuate-b",
+   "character": null,
+   "why": "Kai's notes on r4b, 2026-11-25: re-roll of the evacuation (r4b looked low quality slowed down)",
+   "motion": "The camera does not move. The men in dark suits hustle the man in the dark suit off the set at speed and out of frame to the right, one guard sweeping in behind them with his arm out; the host stays half-risen behind the desk, staring after them, then slowly sinks back into his chair. The studio lights flicker once. Sound: scuffing feet, a chair scraping over the floor, an alarmed murmur from the audience beyond the lights, a microphone thudding. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "dusk",
+   "n": 6,
+   "still": "crowd-dusk2-b",
+   "character": "Karen",
+   "why": "Kai's notes on r4b, 2026-11-25: the crowd forms slowly, day into night",
+   "motion": "The camera does not move. Dusk at the phone box. The woman stands at the payphone talking on and on into the receiver, gesturing, ignoring everyone. Around her the small crowd grows: two more passers-by stop and raise their phones, the nurse nudges the teenager and points, the old man's dog sits down. Street lamps flicker on. Sound: evening traffic, murmuring, a dog's tags jingling. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "night",
+   "n": 7,
+   "still": "crowd-night2-a",
+   "character": "Karen",
+   "why": "Kai's notes on r4b, 2026-11-25: the crowd forms slowly, day into night",
+   "motion": "The camera does not move. Night. The packed crowd around the phone box sways and shifts, hundreds of phone screens held up and bobbing like candles; more people hurry in from the side street to join it. In the middle, the woman at the payphone stays still, receiver at her ear. Sound: a big crowd murmuring and cheering, distant traffic. No dialogue, no music. The camera does not move.\n\nThanks."
+  }
+ ]
+}

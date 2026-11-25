@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r5/robot_s501-orus.wav",
+ "made": "2026-11-25T09:48:23+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg afftfilt robotise (magnitude only, win 512) + aecho + loudnorm -18",
+ "parent": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r5/lvl_s501-orus.wav",
+ "why": "Kai r5 note: a robot voice reads Sean's card"
+}
