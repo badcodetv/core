@@ -1,7 +1,7 @@
 {
   "schema": "fp-demo/1",
   "id": "2026-11-25-wexmoor-care-pay",
-  "stage": "jury",
+  "stage": "published",
   "run": {
     "mode": "daily",
     "run_date": "2026-11-25",
@@ -47,6 +47,13 @@
       "publisher": "Department of Health and Social Care",
       "date": "2026-11-25",
       "url": "https://www.gov.uk/government/news/new-chair-to-lead-landmark-care-worker-pay-talks"
+    },
+    {
+      "id": "s2",
+      "title": "Social care vacancy rate falls to decade low but challenges ahead",
+      "publisher": "LocalGov",
+      "date": "2026-06-24",
+      "url": "https://www.localgov.co.uk/Social-care-vacancy-rate-falls-to-decade-low-but-challenges-ahead/64563"
     }
   ],
   "made_by": {
@@ -57,7 +64,8 @@
       "demo-rival",
       "demo-gate",
       "demo-jury",
-      "demo-jury"
+      "demo-jury",
+      "demo-minister"
     ]
   },
   "citizens": {
@@ -417,5 +425,34 @@
         "text": "Training on paid time is what keeps people in the job. A pay rise on its own doesn't teach anyone anything."
       }
     ]
-  }
+  },
+  "minister": {
+    "minister": "health",
+    "decision": "adopted",
+    "answer": "C",
+    "text": "Signed: a 1 pound an hour rise for every contracted carer from April 2027, 1.9 million a year, with the other 500,000 on paid training and voluntary guaranteed hours. Payslips checked monthly.",
+    "statement": "I spent years on a ward. I know who holds a care home up, and it is not the ones with the bonus letter. The citizens’ tests asked for every carer, a payslip check and a start date. Answer C passed all six tests and both limits. The jury of 12 split 5 to 4 to 3, and the spare 500,000 goes on paid training. Signed."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "claim": "The next Skills for Care report on adult social care in England will show a vacancy rate of 6.2% or lower for 2026/27.",
+      "due": "2027-07-31",
+      "rule": "Settled by the adult social care vacancy rate for 2026/27 in Skills for Care’s annual workforce report. Last published: 6.2% for 2025/26, reported 24 June 2026. If the report is not out by the due date, it is marked unresolved.",
+      "sources": [
+        "s2"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "claim": "Pay talks for the first Fair Pay Agreement in adult social care in England will have started by 30 April 2027.",
+      "due": "2027-06-30",
+      "rule": "Settled by a Department of Health and Social Care announcement on gov.uk that negotiations have begun. The department says they start in April 2027.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    }
+  ]
 }
