@@ -3,7 +3,7 @@
   "id": "2026-11-25-household-energy-payment",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "clerk",
+  "stage": "citizens",
   "run": {
     "mode": "live",
     "run_date": "2026-11-25",
@@ -82,7 +82,180 @@
   ],
   "made_by": {
     "workers": [
-      "sim-clerk"
+      "sim-clerk",
+      "sim-citizens"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-25-household-energy-payment/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0143",
+      "c0985",
+      "c0756",
+      "c0718",
+      "c0156",
+      "c0341",
+      "c0547",
+      "c0128",
+      "c0307",
+      "c0120",
+      "c0449",
+      "c0021",
+      "c0019",
+      "c0594",
+      "c0323",
+      "c0778",
+      "c0346",
+      "c0213",
+      "c0786",
+      "c0723",
+      "c0063",
+      "c0261",
+      "c0564",
+      "c0339",
+      "c0182",
+      "c0664",
+      "c0376",
+      "c0731",
+      "c0251",
+      "c0096",
+      "c0558",
+      "c0702",
+      "c0768",
+      "c0294",
+      "c0587",
+      "c0755",
+      "c0282",
+      "c0557",
+      "c0435",
+      "c0395",
+      "c0654",
+      "c0713",
+      "c0681",
+      "c0885",
+      "c0335",
+      "c0815",
+      "c0246",
+      "c0958",
+      "c0974",
+      "c0425",
+      "c0109",
+      "c0454",
+      "c0262",
+      "c0002",
+      "c0424",
+      "c0230",
+      "c0678",
+      "c0884",
+      "c0662",
+      "c0673",
+      "c0232",
+      "c0140",
+      "c0263",
+      "c0931",
+      "c0162",
+      "c0494",
+      "c0668",
+      "c0219",
+      "c0328",
+      "c0512",
+      "c0080",
+      "c0188",
+      "c0568",
+      "c0345",
+      "c0036",
+      "c0273",
+      "c0738",
+      "c0660",
+      "c0514",
+      "c0641",
+      "c0392",
+      "c0503",
+      "c0728",
+      "c0304",
+      "c0942",
+      "c0100",
+      "c0119",
+      "c0757",
+      "c0844",
+      "c0909",
+      "c0257",
+      "c0649",
+      "c0500",
+      "c0637",
+      "c0497",
+      "c0524",
+      "c0890",
+      "c0994",
+      "c0545",
+      "c0709"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "Fewer cold households that can't pay get missed, if the money is aimed at need.",
+        "backers": 51
+      },
+      {
+        "kind": "test",
+        "text": "Payments reach people without a fight over forms: quick and simple to claim.",
+        "backers": 30
+      },
+      {
+        "kind": "test",
+        "text": "Renters in bigger or worse homes outside bands A to D get help too.",
+        "backers": 25
+      },
+      {
+        "kind": "test",
+        "text": "Older people who are cold get help without a fight over forms.",
+        "backers": 16
+      },
+      {
+        "kind": "limit",
+        "text": "Low-income homes in bands E to H aren't left out.",
+        "backers": 19
+      },
+      {
+        "kind": "limit",
+        "text": "Nobody has to prove they're poor to get the payment.",
+        "backers": 5
+      },
+      {
+        "kind": "limit",
+        "text": "The money doesn't stop halfway through winter.",
+        "backers": 7
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0140",
+        "who": "87, Scotland, retired, rents privately",
+        "text": "Pensioners first, especially older renters. Don't make me apply by phone."
+      },
+      {
+        "citizen": "c0547",
+        "who": "47, Scotland, in work, owns with a mortgage",
+        "text": "Every hardworking household should get it, not just claimants. Don't hand it to people who never paid in."
+      },
+      {
+        "citizen": "c0021",
+        "who": "37, South East, in work, owns outright",
+        "text": "Target it at people who can't heat their homes. Don't leave out renters in bigger flats."
+      },
+      {
+        "citizen": "c0019",
+        "who": "27, Scotland, in work, rents privately",
+        "text": "Scotland gets it too, not just England. Don't leave Scottish renters out again."
+      },
+      {
+        "citizen": "c0251",
+        "who": "80, East of England, retired, owns with a mortgage",
+        "text": "Every pensioner gets it, not just the poor. Don't cut it for people who've saved."
+      }
     ]
   }
 }

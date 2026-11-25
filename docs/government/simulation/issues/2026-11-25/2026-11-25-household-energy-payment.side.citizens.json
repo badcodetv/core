@@ -1,0 +1,602 @@
+[
+ {
+  "id": "c0143",
+  "wants": "Help for working people squeezed by rent and bills",
+  "limit": "Don't hand it to people who never needed it",
+  "split": "yes"
+ },
+ {
+  "id": "c0985",
+  "wants": "Pay everyone, it's simpler and nobody gets singled out",
+  "limit": "Don't make pensioners chase forms to claim it",
+  "split": "no"
+ },
+ {
+  "id": "c0756",
+  "wants": "Targeted help for families who really can't pay",
+  "limit": "Don't leave out older people on fixed incomes",
+  "split": "yes"
+ },
+ {
+  "id": "c0718",
+  "wants": "A bigger share for people on low pay in London",
+  "limit": "Don't leave renters in higher bands with nothing",
+  "split": "yes"
+ },
+ {
+  "id": "c0156",
+  "wants": "Something for people in council homes like me",
+  "limit": "Don't put me through a means test",
+  "split": "no"
+ },
+ {
+  "id": "c0341",
+  "wants": "Same for everyone, so nobody feels picked on",
+  "limit": "Don't let the money drown in admin costs",
+  "split": "no"
+ },
+ {
+  "id": "c0547",
+  "wants": "Every hardworking household should get it, not just claimants",
+  "limit": "Don't hand it to people who never paid in",
+  "split": "no"
+ },
+ {
+  "id": "c0128",
+  "wants": "Help older folk and families, not sure who needs it",
+  "limit": "Don't let it vanish in council paperwork",
+  "split": "unsure"
+ },
+ {
+  "id": "c0307",
+  "wants": "Scrap the bands, a flat payment is fairest",
+  "limit": "Don't make us wait until spring for it",
+  "split": "no"
+ },
+ {
+  "id": "c0120",
+  "wants": "Targeted money for families in the worst damp homes",
+  "limit": "Don't tie help to bands, rents don't match them",
+  "split": "yes"
+ },
+ {
+  "id": "c0449",
+  "wants": "Everyone should get it, bills hit everyone",
+  "limit": "Don't spend the money on consultants",
+  "split": "no"
+ },
+ {
+  "id": "c0021",
+  "wants": "Target it at people who can't heat their homes",
+  "limit": "Don't leave out renters in bigger flats",
+  "split": "yes"
+ },
+ {
+  "id": "c0019",
+  "wants": "Scotland gets it too, not just England",
+  "limit": "Don't leave Scottish renters out again",
+  "split": "unsure"
+ },
+ {
+  "id": "c0594",
+  "wants": "Money for families with kids, not flat for all",
+  "limit": "Don't stop the help halfway through winter",
+  "split": "yes"
+ },
+ {
+  "id": "c0323",
+  "wants": "Keep it simple, pay everyone in those bands",
+  "limit": "Don't make me prove I'm poor",
+  "split": "no"
+ },
+ {
+  "id": "c0778",
+  "wants": "Help disabled people on low incomes first",
+  "limit": "Don't leave disabled people out of the payment",
+  "split": "yes"
+ },
+ {
+  "id": "c0346",
+  "wants": "Targeted help, with a bigger share for the poorest",
+  "limit": "Don't cut payments for people in middle bands",
+  "split": "yes"
+ },
+ {
+  "id": "c0213",
+  "wants": "Everyone gets it, rents are high everywhere",
+  "limit": "Don't leave tenants in the flats out",
+  "split": "no"
+ },
+ {
+  "id": "c0786",
+  "wants": "Pay everyone in the bands, don't tax the working middle",
+  "limit": "Don't make it a benefit people rely on",
+  "split": "no"
+ },
+ {
+  "id": "c0723",
+  "wants": "Help people who can't work and can't pay",
+  "limit": "Don't give the money to landlords",
+  "split": "yes"
+ },
+ {
+  "id": "c0063",
+  "wants": "Aim it at poor households, fair to those who need it",
+  "limit": "Don't let it go to people who don't need it",
+  "split": "yes"
+ },
+ {
+  "id": "c0261",
+  "wants": "Pay everyone, I'm skint",
+  "limit": "Don't make me apply",
+  "split": "no"
+ },
+ {
+  "id": "c0564",
+  "wants": "Keep it simple and quick, pay people's bills",
+  "limit": "Don't let it become a handout for ever",
+  "split": "unsure"
+ },
+ {
+  "id": "c0339",
+  "wants": "Target it at people who can't cope",
+  "limit": "Don't leave out fixed-income households in bigger homes",
+  "split": "yes"
+ },
+ {
+  "id": "c0182",
+  "wants": "Help for families with kids, not just big houses",
+  "limit": "Don't use council tax to decide who gets it",
+  "split": "yes"
+ },
+ {
+  "id": "c0664",
+  "wants": "Poorest first, but nobody gets forgotten",
+  "limit": "Don't make it harder for people struggling",
+  "split": "yes"
+ },
+ {
+  "id": "c0376",
+  "wants": "Something for students in shared flats",
+  "limit": "Don't use bands, they don't fit people like me",
+  "split": "unsure"
+ },
+ {
+  "id": "c0731",
+  "wants": "Target the poorest, but no means-test queues",
+  "limit": "Don't leave out people in band E",
+  "split": "yes"
+ },
+ {
+  "id": "c0251",
+  "wants": "Every pensioner gets it, not just the poor",
+  "limit": "Don't cut it for people who've saved",
+  "split": "no"
+ },
+ {
+  "id": "c0096",
+  "wants": "Give it to everyone, bills are the same for all",
+  "limit": "Don't waste it on bureaucracy",
+  "split": "no"
+ },
+ {
+  "id": "c0558",
+  "wants": "Priority for people on jobseeker's and low incomes",
+  "limit": "Don't leave out people with no job or benefit",
+  "split": "yes"
+ },
+ {
+  "id": "c0702",
+  "wants": "A flat payment for every home, quick and clear",
+  "limit": "Don't make us chase it up",
+  "split": "no"
+ },
+ {
+  "id": "c0768",
+  "wants": "Targeted help for older people who can't heat",
+  "limit": "Don't leave out older people with savings",
+  "split": "yes"
+ },
+ {
+  "id": "c0294",
+  "wants": "Help everyone in council homes, every one",
+  "limit": "Don't make old folk queue on a phone line",
+  "split": "no"
+ },
+ {
+  "id": "c0587",
+  "wants": "Everyone gets the same, it's easiest",
+  "limit": "Don't let it be used to score points",
+  "split": "no"
+ },
+ {
+  "id": "c0755",
+  "wants": "Keep it universal, nobody likes a means test",
+  "limit": "Don't drop households in band E",
+  "split": "no"
+ },
+ {
+  "id": "c0282",
+  "wants": "Help students who have no money",
+  "limit": "Don't make me wait till spring",
+  "split": "unsure"
+ },
+ {
+  "id": "c0557",
+  "wants": "Pay everybody, easier than sorting people out",
+  "limit": "Don't spend a fortune on checks",
+  "split": "no"
+ },
+ {
+  "id": "c0435",
+  "wants": "Target it at low income households and students",
+  "limit": "Don't leave renters in bigger places out",
+  "split": "yes"
+ },
+ {
+  "id": "c0395",
+  "wants": "Help people on low wages who rent",
+  "limit": "Don't make it depend on council tax band",
+  "split": "yes"
+ },
+ {
+  "id": "c0654",
+  "wants": "Flat payment to all, keep the state out of it",
+  "limit": "Don't waste it on council schemes",
+  "split": "no"
+ },
+ {
+  "id": "c0713",
+  "wants": "Help pensioners who are on fixed incomes",
+  "limit": "Don't make it so hard to claim",
+  "split": "yes"
+ },
+ {
+  "id": "c0681",
+  "wants": "Help young people paying bills at home",
+  "limit": "Don't leave out people who've just started work",
+  "split": "yes"
+ },
+ {
+  "id": "c0885",
+  "wants": "Everyone should get it, I'd struggle with forms",
+  "limit": "Don't make old people fill in forms online",
+  "split": "no"
+ },
+ {
+  "id": "c0335",
+  "wants": "Give it to people in flats with worst heating",
+  "limit": "Don't reward landlords for poor housing",
+  "split": "yes"
+ },
+ {
+  "id": "c0815",
+  "wants": "Targeted help, bigger share for the poorest",
+  "limit": "Don't leave out people on benefits",
+  "split": "yes"
+ },
+ {
+  "id": "c0246",
+  "wants": "Give it to all families, not means-tested",
+  "limit": "Don't make us prove we're poor",
+  "split": "no"
+ },
+ {
+  "id": "c0958",
+  "wants": "Pay everyone, I'd spend it on food",
+  "limit": "Don't make it hard to get",
+  "split": "no"
+ },
+ {
+  "id": "c0974",
+  "wants": "Target it, the rich don't need it",
+  "limit": "Don't cut it for working families in middle bands",
+  "split": "yes"
+ },
+ {
+  "id": "c0425",
+  "wants": "Keep it simple, same for everybody",
+  "limit": "Don't make me pay more tax for it",
+  "split": "no"
+ },
+ {
+  "id": "c0109",
+  "wants": "Targeted, paid for by the energy companies",
+  "limit": "Don't let bills rise while we wait",
+  "split": "yes"
+ },
+ {
+  "id": "c0454",
+  "wants": "Scotland should get it too",
+  "limit": "Don't leave out Scottish families",
+  "split": "unsure"
+ },
+ {
+  "id": "c0262",
+  "wants": "Targeted at people who really need it",
+  "limit": "Don't leave out families in higher bands",
+  "split": "yes"
+ },
+ {
+  "id": "c0002",
+  "wants": "Pay everyone, I don't want it complicated",
+  "limit": "Don't make it a postcode lottery",
+  "split": "no"
+ },
+ {
+  "id": "c0424",
+  "wants": "Help people who are struggling most",
+  "limit": "Don't drop renters because of bands",
+  "split": "yes"
+ },
+ {
+  "id": "c0230",
+  "wants": "Pay everyone in bands A to D, simple",
+  "limit": "Don't add to the deficit with fuss",
+  "split": "no"
+ },
+ {
+  "id": "c0678",
+  "wants": "Target it at low pay and renters",
+  "limit": "Don't leave renters with nothing",
+  "split": "yes"
+ },
+ {
+  "id": "c0884",
+  "wants": "Help the poorest pensioners first",
+  "limit": "Don't leave out people with small pensions",
+  "split": "yes"
+ },
+ {
+  "id": "c0662",
+  "wants": "Targeted to low incomes, not everyone",
+  "limit": "Don't leave Scotland out of this",
+  "split": "yes"
+ },
+ {
+  "id": "c0673",
+  "wants": "Everyone, the cost of living hits us all",
+  "limit": "Don't drop people who can't work",
+  "split": "no"
+ },
+ {
+  "id": "c0232",
+  "wants": "Keep it universal, young people miss out on everything",
+  "limit": "Don't hand it only to pensioners",
+  "split": "no"
+ },
+ {
+  "id": "c0140",
+  "wants": "Pensioners first, especially older renters",
+  "limit": "Don't make me apply by phone",
+  "split": "yes"
+ },
+ {
+  "id": "c0263",
+  "wants": "Everyone the same, don't pick and choose",
+  "limit": "Don't make it hard to claim",
+  "split": "no"
+ },
+ {
+  "id": "c0931",
+  "wants": "Pay everyone, bills are bills",
+  "limit": "Don't drop people in the higher bands",
+  "split": "no"
+ },
+ {
+  "id": "c0162",
+  "wants": "Focus on low-income families with children",
+  "limit": "Don't leave out carers",
+  "split": "yes"
+ },
+ {
+  "id": "c0494",
+  "wants": "Help older people in cold homes",
+  "limit": "Don't make us go through bureaucracy",
+  "split": "yes"
+ },
+ {
+  "id": "c0668",
+  "wants": "Everyone gets it, London's expensive for all",
+  "limit": "Don't leave out pensioners in big flats",
+  "split": "no"
+ },
+ {
+  "id": "c0219",
+  "wants": "Pay everyone, few here are on benefits",
+  "limit": "Don't spend money on checking",
+  "split": "no"
+ },
+ {
+  "id": "c0328",
+  "wants": "Help people on low pay in council housing",
+  "limit": "Don't leave out people in dear areas",
+  "split": "yes"
+ },
+ {
+  "id": "c0512",
+  "wants": "Help people with no job, keep it coming",
+  "limit": "Don't stop it in the spring",
+  "split": "yes"
+ },
+ {
+  "id": "c0080",
+  "wants": "Give it to people who work and pay tax",
+  "limit": "Don't give it to people who don't work",
+  "split": "yes"
+ },
+ {
+  "id": "c0188",
+  "wants": "Targeted help for older people on low incomes",
+  "limit": "Don't make old people chase payments",
+  "split": "yes"
+ },
+ {
+  "id": "c0568",
+  "wants": "Everyone gets it, it's fair",
+  "limit": "Don't make it a forms nightmare",
+  "split": "no"
+ },
+ {
+  "id": "c0345",
+  "wants": "Help renters, they're getting squeezed",
+  "limit": "Don't leave out people in bands E to H",
+  "split": "yes"
+ },
+ {
+  "id": "c0036",
+  "wants": "Priority for low-paid workers and renters",
+  "limit": "Don't make it difficult to claim",
+  "split": "yes"
+ },
+ {
+  "id": "c0273",
+  "wants": "Target it at disabled people and carers",
+  "limit": "Don't stop it for people who can't work",
+  "split": "yes"
+ },
+ {
+  "id": "c0738",
+  "wants": "Help people who can't work with bills",
+  "limit": "Don't leave out people on sick pay",
+  "split": "yes"
+ },
+ {
+  "id": "c0660",
+  "wants": "Pay everyone, rents are the big problem",
+  "limit": "Don't give it only to the poor",
+  "split": "no"
+ },
+ {
+  "id": "c0514",
+  "wants": "Keep it simple, everyone gets it",
+  "limit": "Don't spend it on trial schemes",
+  "split": "no"
+ },
+ {
+  "id": "c0641",
+  "wants": "Pay pensioners more, they're the coldest",
+  "limit": "Don't make it complicated",
+  "split": "yes"
+ },
+ {
+  "id": "c0392",
+  "wants": "Pay everybody, don't pick winners",
+  "limit": "Don't let it become a benefit for life",
+  "split": "no"
+ },
+ {
+  "id": "c0503",
+  "wants": "Target the lowest earners, not the rest",
+  "limit": "Don't leave out low-paid mortgage holders",
+  "split": "yes"
+ },
+ {
+  "id": "c0728",
+  "wants": "Give it to people who need it most",
+  "limit": "Don't leave out council estates",
+  "split": "yes"
+ },
+ {
+  "id": "c0304",
+  "wants": "Pay everyone in the bands, simplest",
+  "limit": "Don't make me chase it up",
+  "split": "no"
+ },
+ {
+  "id": "c0942",
+  "wants": "Everyone the same, fair and quick",
+  "limit": "Don't drop people on low pay",
+  "split": "no"
+ },
+ {
+  "id": "c0100",
+  "wants": "Help cold pensioners whatever the band",
+  "limit": "Don't leave the elderly out",
+  "split": "yes"
+ },
+ {
+  "id": "c0119",
+  "wants": "Target it at low incomes, not the rest",
+  "limit": "Don't leave out families in social housing",
+  "split": "yes"
+ },
+ {
+  "id": "c0757",
+  "wants": "Help people on low wages who rent",
+  "limit": "Don't take money off people for it",
+  "split": "yes"
+ },
+ {
+  "id": "c0844",
+  "wants": "Pay every family, not means-tested",
+  "limit": "Don't make us prove we're poor",
+  "split": "no"
+ },
+ {
+  "id": "c0909",
+  "wants": "Keep it simple, same for all",
+  "limit": "Don't waste money on admin",
+  "split": "no"
+ },
+ {
+  "id": "c0257",
+  "wants": "Pay everybody, I'd use it for fuel",
+  "limit": "Don't make it complicated to claim",
+  "split": "no"
+ },
+ {
+  "id": "c0649",
+  "wants": "Everyone, bills are high for all",
+  "limit": "Don't drop bands E to H",
+  "split": "no"
+ },
+ {
+  "id": "c0500",
+  "wants": "Help renters on low pay",
+  "limit": "Don't leave out people paying high rent",
+  "split": "yes"
+ },
+ {
+  "id": "c0637",
+  "wants": "Target it, some have no rent to pay",
+  "limit": "Don't leave out people living with family",
+  "split": "unsure"
+ },
+ {
+  "id": "c0497",
+  "wants": "Pay everyone, not sure who needs it",
+  "limit": "Don't make me fill in forms",
+  "split": "unsure"
+ },
+ {
+  "id": "c0524",
+  "wants": "Help the poorest pensioners first",
+  "limit": "Don't pay people who don't need it",
+  "split": "yes"
+ },
+ {
+  "id": "c0890",
+  "wants": "Pay everyone, bills hit young people too",
+  "limit": "Don't make it a benefit only for old",
+  "split": "no"
+ },
+ {
+  "id": "c0994",
+  "wants": "Target it to households on low incomes",
+  "limit": "Don't stop it halfway through winter",
+  "split": "yes"
+ },
+ {
+  "id": "c0545",
+  "wants": "Everyone gets it, keep it simple",
+  "limit": "Don't leave out people who miss a band",
+  "split": "no"
+ },
+ {
+  "id": "c0709",
+  "wants": "Target it, big bills are for those who can't pay",
+  "limit": "Don't leave renters in higher bands out",
+  "split": "yes"
+ }
+]
