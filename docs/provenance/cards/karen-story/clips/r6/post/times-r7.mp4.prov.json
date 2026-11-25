@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/post/times-r7.mp4",
+ "made": "2026-11-25T17:46:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/karen/times-band-r7.py",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r7times-timessq3-a.mp4",
+ "why": "Kai r6 note at7305: Times Square made in Flow; the band's garbled letters replaced by a flat band with the headline set in type"
+}

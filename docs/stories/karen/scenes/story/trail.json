@@ -111,5 +111,19 @@
   "stage": "premiere",
   "round": 6,
   "what": "karen-1-story-r6 built in Karen vid.prproj from cut-r6 edl (premiere-plan.py --tag r6); V1 77/77 and 53/53 audio clips checked: in sync"
+ },
+ {
+  "at": "2026-11-25T17:58:01+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r7 on Kai's 25 notes on r6: 5:18, 78 shots; no clip frozen anywhere (build measures where each clip stops moving; short ones play at 0.85-0.98x or are re-planned); r4 throw ungraded; Karen lip-sync out ('Karen unleashes hell'); new Flow clips (City Hall, Clive, Karen at the picked box, snow, Karen alone, crowd of 20 standing back, writers' room extended, evacuation with the same President, Times Square made in Flow with the headline set on its band); small Harlem pin; blanket polaroid; original Aaron (26.mp4); new ending line; every note answered",
+  "rebuild": "python3 scripts/karen/story-cut-r7.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <out-dir>"
+ },
+ {
+  "at": "2026-11-25T17:58:01+00:00",
+  "stage": "premiere",
+  "round": 7,
+  "what": "karen-1-story-r7 built in Karen vid.prproj from cut-r7 edl (premiere-plan.py --tag r7); V1 78/78 and 51/51 audio clips placed: in sync"
  }
 ]

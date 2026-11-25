@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r7snow-snow2-b.mp4",
+ "made": "2026-11-25T17:36:11+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Snow falls steadily. The woman in the green parka talks on into the receiver, shifting from foot to foot against the cold, breath steaming. Out on the road, the city bus and the yellow cabs roll slowly past through the slush, staying in their lane on the street; a couple of people in coats walk down into the subway. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: muffled snowy traffic, tyres in slush, wind. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/snow2-b.jpg",
+ "why": "Kai's notes on cut r6, 2026-11-25, at4215/at4285: traffic on the road only, no pause at the end",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/snow2-b.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r7snow",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T17:33:53.607Z"
+ }
+}
