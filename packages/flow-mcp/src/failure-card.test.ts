@@ -66,6 +66,15 @@ describe('classifyCard', () => {
     ).toBe('blocked')
   })
 
+  it('classifies the "misrepresent current events" video block as blocked', () => {
+    // Live 2026-11-25 (Karen r8): a street TV-presenter clip timed out after 480 s behind this card.
+    expect(
+      classifyCard(
+        'Failed Unable to generate videos that might cause reputational risk or misrepresent current events. Please try a different prompt or send feedback.',
+      ),
+    ).toBe('blocked')
+  })
+
   it('classifies the queue message as queued', () => {
     expect(
       classifyCard('Your video has been scheduled and is waiting in the queue due to high demand.'),

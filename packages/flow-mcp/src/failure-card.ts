@@ -42,7 +42,10 @@ export type CardState = 'blocked' | 'queued' | 'error' | 'refused' | null
 // Both observed policy-block strings share this phrase; matching the phrase rather than the
 // full sentence also survives Flow varying the wording around it. Case-insensitive to catch
 // the Title Case "Might Violate Our Policies" variant.
-const BLOCKED_RE = /might violate our policies/i
+// 2026-11-25 (Karen r8, Omni 1.2 Flash): a TV-presenter-on-the-street clip, from an image and from text alone, sat
+// for 480 s behind "Failed / Unable to generate videos that might cause reputational risk or misrepresent current
+// events." It is a policy block too.
+const BLOCKED_RE = /might violate our policies|might cause reputational risk|misrepresent current events/i
 
 const QUEUED_RE = /scheduled and is waiting in the queue/i
 

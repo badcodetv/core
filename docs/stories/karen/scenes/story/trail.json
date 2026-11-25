@@ -125,5 +125,19 @@
   "stage": "premiere",
   "round": 7,
   "what": "karen-1-story-r7 built in Karen vid.prproj from cut-r7 edl (premiere-plan.py --tag r7); V1 78/78 and 51/51 audio clips placed: in sync"
+ },
+ {
+  "at": "2026-11-25T18:46:48+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r8 on Kai's 2 notes on r7 ('basically there'): the two friends' train re-made in a dark tunnel (lights one way only); 'She's made the news' as a bar watching her on TV (Flow refuses any reporter clip: 'misrepresent current events'); 5:18, 78 shots, no frozen clips",
+  "rebuild": "python3 scripts/karen/story-cut-r8.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <out-dir>"
+ },
+ {
+  "at": "2026-11-25T18:46:48+00:00",
+  "stage": "premiere",
+  "round": 8,
+  "what": "karen-1-story-r8 built in Karen vid.prproj from cut-r8 edl (premiere-plan.py --tag r8); V1 78/78 and 51/51 audio clips placed: in sync"
  }
 ]

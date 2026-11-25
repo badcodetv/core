@@ -8,9 +8,9 @@
  "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
  "source_sequence": "Karen v4",
  "cut": {
-  "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r7/edl.json",
-  "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r7/preview.mp4",
-  "script": "python3 scripts/karen/story-cut-r7.py  (r7, 2026-11-25: Kai's 25 notes on r6; never freezes a clip; new lines scripts/karen/narration-r7.tsv via render-narration-r7.py + finish-voice-r4.py; Times Square band scripts/karen/times-band-r7.py; new shots scenes/story-r6-shots keys r7*)",
+  "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/edl.json",
+  "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/preview.mp4",
+  "script": "python3 scripts/karen/story-cut-r8.py  (r8, 2026-11-25: Kai's 2 notes on r7, on top of r7's 25; never freezes a clip; new shots scenes/story-r6-shots keys r7*/r8*)",
   "previous": {
    "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
    "r3": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json",
@@ -21,7 +21,7 @@
   }
  },
  "premiere": {
-  "current": "r7",
+  "current": "r8",
   "v4": {
    "sequence": "Karen v4",
    "guid": "9d5e84f4-66e2-4922-bc15-3c75b0855509",
@@ -99,6 +99,22 @@
    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r7/edl.json",
    "what": "Cut r7: r6 re-cut on Kai's 25 notes of 25 Nov (evening)",
    "how": "premiere-plan.py --tag r7; placed by premiere_eval",
+   "check": {
+    "at": "2026-11-25",
+    "state": "in sync",
+    "why": "V1 78/78 shots (starts within a frame of the plan) and all 51 audio clips placed by track"
+   },
+   "stale": "superseded by r8 (2026-11-25); kept, not deleted"
+  },
+  "r8": {
+   "sequence": "karen-1-story-r8",
+   "guid": "b8c60301-a2d2-4fdc-a214-5790f42e9efc",
+   "bin": "karen-1-story-r8",
+   "built": "2026-11-25",
+   "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/edl.json",
+   "what": "Cut r8: r7 with Kai's 2 notes (train tunnel, the news as a bar watching her on TV)",
+   "how": "premiere-plan.py --tag r8; placed by premiere_eval",
    "check": {
     "at": "2026-11-25",
     "state": "in sync",
