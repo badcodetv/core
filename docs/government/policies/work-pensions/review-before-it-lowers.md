@@ -7,7 +7,7 @@ status: draft
 kind: trial
 needs: none
 stop: Stops on its date unless Parliament votes to keep it, on the published review. Passes, and it goes national.
-test.where: The area or group the change is tried on first, under the Universal Credit pilot power
+test.where: The area or group the change is tried on first, under the Universal Credit pilot power, or the same power written into the Bill that replaces PIP
 test.against: areas or groups like them on today's rules
 test.measure: the change's own published aim
 test.by: three years at most, the limit the pilot power sets
@@ -26,6 +26,16 @@ check.result: pending
 New Universal Credit claims got a smaller health top-up in April, with no published test against
 its own aim. It gets a test.
 
+PIP is next. On 24 November the Timms Review, after hearing from more than 40,000 people and
+organisations, said replace it: a new benefit, still paid in cash, with a new assessment of what
+you can do. The government takes two changes now, a fast track for severe conditions and fewer
+reviews for conditions that are lifelong or getting worse. Neither lowers anyone's money, so
+neither waits. The rest waits for a White Paper in the new year.
+
 The law already lets Universal Credit rules be tried by area or group for up to three years
-(Welfare Reform Act 2012, section 41). The power covers Universal Credit, not PIP. Benefit trials
-start in England and Wales.
+(Welfare Reform Act 2012, section 41). That power covers Universal Credit, not PIP. So the Bill
+that replaces PIP carries the same power, and the new assessment starts in some areas first,
+against areas still on PIP, before it decides anyone else's money. Benefit trials start in England
+and Wales.
+
+That's one clause in a Bill. The DWP writes the Bill.
