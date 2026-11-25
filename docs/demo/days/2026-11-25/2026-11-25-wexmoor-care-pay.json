@@ -1,7 +1,7 @@
 {
   "schema": "fp-demo/1",
   "id": "2026-11-25-wexmoor-care-pay",
-  "stage": "gate",
+  "stage": "jury",
   "run": {
     "mode": "daily",
     "run_date": "2026-11-25",
@@ -55,7 +55,9 @@
       "demo-citizens",
       "demo-bench",
       "demo-rival",
-      "demo-gate"
+      "demo-gate",
+      "demo-jury",
+      "demo-jury"
     ]
   },
   "citizens": {
@@ -366,5 +368,54 @@
     "verdict": "Answer A and answer C meet every test and limit. Answer B leaves out newer and part-time staff, has no pay slip check and is silent on the 2028 deal, though it keeps within both limits.",
     "rounds": 1
   },
-  "ending": "accepted"
+  "ending": "accepted",
+  "jury": {
+    "seed": "2026-11-25-wexmoor-care-pay/jury",
+    "size": 12,
+    "ids": [
+      "c0331",
+      "c0134",
+      "c0780",
+      "c0725",
+      "c0375",
+      "c0673",
+      "c0475",
+      "c0774",
+      "c0619",
+      "c0363",
+      "c0499",
+      "c0702"
+    ],
+    "model": "claude-haiku-5-5",
+    "question": "The flat rise costs about 1.9 million pounds of the 2.4 million a year. What should the other 500,000 a year do?",
+    "options": [
+      "Keep it as a reserve for checks and emergencies",
+      "Pay for training on paid time and offer voluntary guaranteed hours",
+      "Give it back to the council's general budget"
+    ],
+    "votes": [
+      4,
+      5,
+      3
+    ],
+    "ruling": "The spare 500,000 pounds goes on paid training, 5 to 4 over a reserve, with 3 for giving it back.",
+    "reasons": [
+      {
+        "juror": "c0475",
+        "text": "I've had carers in my house. Train them properly and let them have a day off paid, and they'll stay."
+      },
+      {
+        "juror": "c0725",
+        "text": "Keep a reserve. Councils always find the reserve gone the year you need it."
+      },
+      {
+        "juror": "c0363",
+        "text": "Council money sat in a fund is just money not being used. Hand it back and let the budget decide what it's for."
+      },
+      {
+        "juror": "c0499",
+        "text": "Training on paid time is what keeps people in the job. A pay rise on its own doesn't teach anyone anything."
+      }
+    ]
+  }
 }

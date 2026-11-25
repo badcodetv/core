@@ -1,0 +1,23 @@
+{
+  "question": "The flat rise costs about 1.9 million pounds of the 2.4 million a year. What should the other 500,000 a year do?",
+  "options": [
+    "Keep it as a reserve for checks and emergencies",
+    "Pay for training on paid time and offer voluntary guaranteed hours",
+    "Give it back to the council's general budget"
+  ],
+  "jurors": [
+    { "id": "c0134", "profile": "68, retired, London, owns with mortgage, did not vote 2024", "vote": 0, "why": "Keep it in a pot the council can call on. Money given away never comes back when you need it." },
+    { "id": "c0331", "profile": "56, long-term sick or disabled, East of England, owns with mortgage, did not vote 2024", "vote": 0, "why": "A reserve means the checks get paid for and a bad winter doesn't wipe out the scheme." },
+    { "id": "c0363", "profile": "42, long-term sick or disabled, North West, social rent, Reform UK 2024", "vote": 2, "why": "Council money sat in a fund is just money not being used. Hand it back and let the budget decide what it's for." },
+    { "id": "c0375", "profile": "23, student, Northern Ireland, owns outright, Reform UK 2024", "vote": 2, "why": "If it isn't needed for the pay rise, give it back. A ring-fenced pot is how money gets stuck." },
+    { "id": "c0475", "profile": "64, looks after home and family, Scotland, owns with mortgage, did not vote 2024", "vote": 1, "why": "I've had carers in my house. Train them properly and let them have a day off paid, and they'll stay." },
+    { "id": "c0499", "profile": "60, employed, Yorkshire, private rent, Labour 2024", "vote": 1, "why": "Training on paid time is what keeps people in the job. A pay rise on its own doesn't teach anyone anything." },
+    { "id": "c0619", "profile": "19, employed, East Midlands, private rent, did not vote 2024", "vote": 1, "why": "Paid training and a proper set of hours would make me stay somewhere. Nobody offers me that now." },
+    { "id": "c0673", "profile": "56, student, South East, social rent, did not vote 2024", "vote": 1, "why": "Give the carers qualifications and a regular rota. Otherwise it's just a rise for a few months." },
+    { "id": "c0702", "profile": "65, retired, West Midlands, owns outright, Conservative 2024", "vote": 2, "why": "The council should live within its budget. Money set aside for one job goes back to the pot when the job is done." },
+    { "id": "c0725", "profile": "66, retired, West Midlands, owns outright, did not vote 2024", "vote": 0, "why": "Keep a reserve. Councils always find the reserve gone the year you need it." },
+    { "id": "c0774", "profile": "58, employed, London, private rent, Labour 2024", "vote": 0, "why": "The firms have a habit of promising things and not paying. Keep the reserve so the checks can be enforced." },
+    { "id": "c0780", "profile": "39, employed, Scotland, owns outright, Liberal Democrat 2024", "vote": 1, "why": "Training and guaranteed hours are what stop carers leaving. That's the point of the whole scheme." }
+  ],
+  "tally": [4, 5, 3]
+}
