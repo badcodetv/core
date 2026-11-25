@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-clive-clive-evening-a.mp4",
+ "made": "2026-11-25T14:56:38+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The tired man at the desk holds the receiver to his ear, rubs his brow, closes his eyes and lets out a long sigh, then props his head on his hand and keeps listening, nodding wearily. Outside the window, tail-lights stream past in the dusk. Sound: a quiet office hum, muffled evening traffic. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/clive-evening-a.jpg",
+ "why": "Kai's notes on cut r5, 2026-11-25, at3168/at3218: Clive in the evening",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/clive-evening-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r6-shots",
+  "key": "clive",
+  "frame": 2,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T14:54:18.913Z"
+ }
+}

@@ -8,19 +8,20 @@
   "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
   "source_sequence": "Karen v4",
   "cut": {
-    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/edl.json",
-    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/preview.mp4",
-    "script": "python3 scripts/karen/story-cut-r5.py  (r5, 2026-11-25: Kai's 23 notes on r4b; new lines scripts/karen/narration-r5.tsv via render-narration-r5.py + finish-voice-r4.py; new shots scenes/story-r5-shots)",
+    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r6/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r6/preview.mp4",
+    "script": "python3 scripts/karen/story-cut-r6.py  (r6, 2026-11-25: Kai's 32 notes on r5; new lines scripts/karen/narration-r6.tsv via render-narration-r6.py + finish-voice-r4.py; lip-sync scripts/karen/lipsync-r6.py; new shots scenes/story-r6-shots)",
     "previous": {
       "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
       "r3": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json",
       "r3b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/edl.json",
       "r4": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
-      "r4b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json"
+      "r4b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
+      "r5": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/edl.json"
     }
   },
   "premiere": {
-    "current": "r5",
+    "current": "r6",
     "v4": {
       "sequence": "Karen v4",
       "guid": "9d5e84f4-66e2-4922-bc15-3c75b0855509",
@@ -70,6 +71,22 @@
         "at": "2026-11-25",
         "state": "in sync",
         "why": "V1 76/76 shots and all 53 audio clips match the plan by track, start and file"
+      },
+      "stale": "superseded by r6 (2026-11-25); kept, not deleted"
+    },
+    "r6": {
+      "sequence": "karen-1-story-r6",
+      "guid": "17ec9d42-5711-4629-bd90-8baa2ddb2e82",
+      "bin": "karen-1-story-r6",
+      "built": "2026-11-25",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r6/edl.json",
+      "what": "Cut r6: r5 re-cut on Kai's 32 notes of 25 Nov (afternoon)",
+      "how": "premiere-plan.py --tag r6; placed by premiere_eval",
+      "check": {
+        "at": "2026-11-25",
+        "state": "in sync",
+        "why": "V1 77/77 shots and all 53 audio clips match the plan by track, start and file"
       }
     }
   },

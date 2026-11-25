@@ -1,0 +1,192 @@
+{
+ "video": {
+  "duration": 8
+ },
+ "skip": [],
+ "extra": [
+  {
+   "key": "cityhall",
+   "n": 1,
+   "still": "cityhall-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at2404: rebuild City Hall from scratch, no drone",
+   "motion": "The camera pushes in very slowly towards the colonnade. Office workers with coffee cups cross the plaza at an easy pace and the security guard by the steps shifts his weight; the autumn leaves stir in a light breeze. The sky stays empty. Sound: a calm city morning, footsteps on stone, distant traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "clive",
+   "n": 2,
+   "still": "clive-evening-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at3168/at3218: Clive in the evening",
+   "motion": "The camera does not move. The tired man at the desk holds the receiver to his ear, rubs his brow, closes his eyes and lets out a long sigh, then props his head on his hand and keeps listening, nodding wearily. Outside the window, tail-lights stream past in the dusk. Sound: a quiet office hum, muffled evening traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "talkeve",
+   "n": 3,
+   "still": "talk-evening-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at3286: the same scene, at evening",
+   "motion": "The camera does not move. The woman in the phone box speaks slowly into the receiver, pronouncing each word with relish, her raised finger jabbing the air on every syllable; she stops, listens with narrowed eyes, then leans in and starts again. Behind her the evening rush-hour traffic streams past, headlights and tail-lights, a bus pulling away. Sound: busy evening traffic, a horn, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "boxeve",
+   "n": 4,
+   "still": "box-evening-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at3424: evening at the box, a busy street",
+   "motion": "The camera does not move. The woman in the phone box holds the receiver to her ear and talks on and on, gesturing now and then with her free hand. Behind her the evening traffic crawls past: yellow cabs, headlights, a delivery cyclist, commuters walking home with bags. Sound: evening traffic, horns, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "snow",
+   "n": 5,
+   "still": "snow-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at3684: the snow scene with New York traffic",
+   "motion": "The camera does not move. Snow falls steadily. The woman in the green parka at the phone box keeps talking into the receiver, stamping her feet against the cold, her breath steaming. Behind her yellow cabs and a city bus push slowly through the slush with their wipers going, and people hurry past with their heads down. Sound: muffled snowy traffic, tyres in slush, wind. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "alone",
+   "n": 6,
+   "still": "karen-alone-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at3892/at3908: Karen gesticulating, alone, no Aaron yet",
+   "motion": "The camera does not move. The woman in the phone box shouts into the receiver and throws her free arm wide in a big theatrical gesture, then jabs the air, then flings her hand up again, utterly unstoppable. Passers-by glance at her and walk on. Nobody stops to film. Sound: street traffic, a car horn, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "news",
+   "n": 7,
+   "still": "news-evening-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at4841: the news at evening",
+   "motion": "The camera does not move. The woman holding the microphone talks to the video camera, smiling and nodding, and turns to gesture down the street behind her; the camera operator holds the camera steady on his shoulder, the sound operator keeps the fluffy microphone pole raised, the lamp on its stand glows. Evening traffic passes. Sound: an evening street, distant traffic, a murmur of people further down the road. No music.\n\nThanks."
+  },
+  {
+   "key": "throw",
+   "n": 8,
+   "still": "river-shout-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at1615: re-cut the throw, better quality",
+   "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it; then in one clean, strong movement she swings her arm back and hurls the phone in a high arc out over the railing towards the dark river, and her arm follows through. The phone flies out of frame. Beside her the other woman doubles over laughing. Her hand stays empty after the throw. Sound: wind off the river, distant city traffic, laughter. No music.\n\nThanks."
+  },
+  {
+   "key": "evac3",
+   "n": 9,
+   "still": "evacuate-b",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at6575: re-roll the evacuation (someone vanished); at6515: dramatic music",
+   "motion": "The camera does not move. Three Secret Service agents in dark suits rush in from the right, grab the man in the dark suit under the arms and hurry him off the set and out of frame to the right; everyone who leaves walks out of the frame edge, nobody disappears. The host rises halfway from behind the desk, staring after them. The studio lights flicker once. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks."
+  },
+  {
+   "key": "evac4",
+   "n": 10,
+   "still": "evacuate-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at6575: re-roll the evacuation (someone vanished); at6515: dramatic music",
+   "motion": "The camera does not move. Secret Service agents in dark suits surge onto the set, surround the man in the dark suit and rush him away and out of the frame at speed, one agent walking backwards with his arm out; every person stays a whole person and walks out of the frame edge, nobody vanishes. The host stays frozen in his chair, mouth open. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks."
+  },
+  {
+   "key": "times",
+   "n": 11,
+   "still": "timessq-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at6681: Times Square; the evacuation plays on the big screen (added in post)",
+   "motion": "The camera does not move. The huge screen on the building stays plain, solid white and perfectly still the whole time, and the red band beneath it stays plain. In the square below, the crowd stands staring up at it; more people stop and look up, some raise their phones to film, one woman covers her mouth. Cabs sit stopped. The surrounding billboards shimmer. Sound: a hushed crowd, a murmur spreading, distant horns. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "martha1",
+   "n": 12,
+   "still": "martha-close-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
+   "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, wearily patient. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
+  },
+  {
+   "key": "martha2",
+   "n": 13,
+   "still": "martha-close-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
+   "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, flat and tired, a little sing-song. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
+  },
+  {
+   "key": "martha3",
+   "n": 14,
+   "still": "martha-close-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
+   "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, polite but bored. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
+  },
+  {
+   "key": "crowd2",
+   "n": 15,
+   "still": "crowd2-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at4732: the crowd grows 2, 6, 20 in one place (two by day)",
+   "motion": "The camera does not move. Daytime at the phone box. The woman in the box talks on and on into the receiver, jabbing the air. In front of her the two young men film her on a phone, one grinning and pointing, the other laughing and leaning in to see the screen. Passers-by walk past behind without stopping. Sound: daytime street traffic, footsteps, the two men chuckling. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "crowd6",
+   "n": 16,
+   "still": "crowd6r-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at4732: six people, early evening, the same place",
+   "motion": "The camera does not move. Low golden evening light at the phone box. The woman in the box keeps talking into the receiver. The small group in front of her films her on their phones: the nurse nudges the teenager and points, the old man's dog sits down, the courier shifts his heavy bag and raises his phone higher. Sound: evening traffic, a murmur, a dog's tags jingling. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "crowd20",
+   "n": 17,
+   "still": "crowd20r-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at4732: about twenty people, evening, the same place",
+   "motion": "The camera does not move. Evening at the phone box, street lamps glowing. The woman in the box talks on into the receiver, unbothered. The two young men at the front film her and grin; behind them the crowd of about twenty sways and murmurs, phone screens bobbing; a couple more people walk up from the side and lift their phones. Sound: an evening crowd murmuring and laughing, traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "coup",
+   "n": 18,
+   "still": "coupr-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at6045: a smaller crowd, moving, with news crews",
+   "motion": "The camera does not move. Night at the phone box under the bright TV lights. The woman in the box stands calmly on the phone. Around her the crowd shifts and murmurs, phones raised; the two camera operators adjust their shoulder cameras and step for a better angle, a sound operator raises the boom pole higher, a reporter checks her earpiece. Sound: a night crowd murmuring, distant traffic, a camera shutter. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "shocked",
+   "n": 19,
+   "still": "shocked-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at6991: Karen shocked at the end",
+   "motion": "The camera does not move. The woman in the phone box listens to the receiver, her eyes wide and mouth open in shock; she slowly presses her hand harder to her chest, blinks twice, and her jaw drops a little further, utterly speechless. Behind her the crowd's phone screens glitter. Sound: a hushed night street, distant sirens. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "karen1",
+   "n": 20,
+   "still": "karen-talk-close-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
+   "motion": "The camera does not move. The woman in the phone box speaks into the receiver, firm and clipped. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
+  },
+  {
+   "key": "karen2",
+   "n": 21,
+   "still": "karen-talk-close-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
+   "motion": "The camera does not move. The woman in the phone box speaks into the receiver, imperious, each sentence its own beat. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
+  },
+  {
+   "key": "karen3",
+   "n": 22,
+   "still": "karen-talk-close-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
+   "motion": "The camera does not move. The woman in the phone box speaks into the receiver, cold and deliberate. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
+  },
+  {
+   "key": "stairs",
+   "n": 23,
+   "still": "stairs2-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at4414: no crowd at the top of the stairs",
+   "motion": "The camera does not move. The two young men climb the tiled subway stairs away from the camera at an easy pace, one holding his phone up and showing it to the other, who leans in and laughs; they reach the top and step out into the daylight. Nobody is waiting at the top. Sound: footsteps echoing on the stairs, a train rumbling away below. No dialogue, no music.\n\nThanks."
+  }
+ ]
+}

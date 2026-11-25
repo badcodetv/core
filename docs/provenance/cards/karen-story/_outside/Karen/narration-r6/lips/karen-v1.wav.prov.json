@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r6/lips/karen-v1.wav",
+ "made": "2026-11-25T15:06:30+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "I don't want a form. I want a human. A senior human.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "Gacrux",
+  "style": "firm, clipped",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

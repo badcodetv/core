@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-throw-river-shout-b.mp4",
+ "made": "2026-11-25T15:29:14+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it; then in one clean, strong movement she swings her arm back and hurls the phone in a high arc out over the railing towards the dark river, and her arm follows through. The phone flies out of frame. Beside her the other woman doubles over laughing. Her hand stays empty after the throw. Sound: wind off the river, distant city traffic, laughter. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/river-shout-b.jpg",
+ "why": "Kai's notes on cut r5, 2026-11-25, at1615: re-cut the throw, better quality",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/river-shout-b.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r6-shots",
+  "key": "throw",
+  "frame": 8,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T15:27:55.043Z"
+ }
+}

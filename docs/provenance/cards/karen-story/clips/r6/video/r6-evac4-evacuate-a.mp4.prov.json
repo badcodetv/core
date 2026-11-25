@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-evac4-evacuate-a.mp4",
+ "made": "2026-11-25T14:57:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Secret Service agents in dark suits surge onto the set, surround the man in the dark suit and rush him away and out of the frame at speed, one agent walking backwards with his arm out; every person stays a whole person and walks out of the frame edge, nobody vanishes. The host stays frozen in his chair, mouth open. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/evacuate-a.jpg",
+ "why": "Kai's notes on cut r5, 2026-11-25, at6575: re-roll the evacuation (someone vanished); at6515: dramatic music",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/evacuate-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r6-shots",
+  "key": "evac4",
+  "frame": 10,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T14:56:11.561Z"
+ }
+}

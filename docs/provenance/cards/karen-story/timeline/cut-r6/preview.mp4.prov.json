@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/timeline/cut-r6/preview.mp4",
+ "made": "2026-11-25T15:48:16+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/karen/story-cut-r6.py",
+ "why": "Karen story film cut r6 (Kai's notes on r5, 25 Nov)"
+}

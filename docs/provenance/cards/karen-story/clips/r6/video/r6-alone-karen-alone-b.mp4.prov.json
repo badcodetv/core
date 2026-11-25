@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-alone-karen-alone-b.mp4",
+ "made": "2026-11-25T15:17:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman in the phone box shouts into the receiver and throws her free arm wide in a big theatrical gesture, then jabs the air, then flings her hand up again, utterly unstoppable. Passers-by glance at her and walk on. Nobody stops to film. Sound: street traffic, a car horn, footsteps. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/karen-alone-b.jpg",
+ "why": "Kai's notes on cut r5, 2026-11-25, at3892/at3908: Karen gesticulating, alone, no Aaron yet",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/karen-alone-b.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r6-shots",
+  "key": "alone",
+  "frame": 6,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T15:12:04.292Z"
+ }
+}

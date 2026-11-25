@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/post/martha-lipsync-dub.wav",
+ "made": "2026-11-25T15:09:11+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/karen/lipsync-r6.py",
+ "parent": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r6/lips/lvl_martha-v2.wav",
+ "why": "lip-sync martha: 8/10 words in -45..+125 ms, tempo 1.13, onset 1.09s"
+}

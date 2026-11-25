@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r6/lips/martha-v6.wav",
+ "made": "2026-11-25T15:08:22+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.8-flash-tts",
+ "prompt": "I can escalate you, Karen, but you're going to have to wait.",
+ "inputs": {
+  "profile": "",
+  "profile_file": null
+ },
+ "settings": {
+  "voice": "en-us-csagent-5",
+  "style": "brisk, bored, no pause before but",
+  "channels": 2,
+  "wrapper": "none (plain) + speech_metadata.style"
+ }
+}

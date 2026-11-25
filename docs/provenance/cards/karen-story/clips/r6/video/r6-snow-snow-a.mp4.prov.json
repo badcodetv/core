@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-snow-snow-a.mp4",
+ "made": "2026-11-25T15:29:14+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. Snow falls steadily. The woman in the green parka at the phone box keeps talking into the receiver, stamping her feet against the cold, her breath steaming. Behind her yellow cabs and a city bus push slowly through the slush with their wipers going, and people hurry past with their heads down. Sound: muffled snowy traffic, tyres in slush, wind. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/snow-a.jpg",
+ "why": "Kai's notes on cut r5, 2026-11-25, at3684: the snow scene with New York traffic",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/snow-a.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r6-shots",
+  "key": "snow",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T15:25:59.870Z"
+ }
+}

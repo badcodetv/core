@@ -97,5 +97,19 @@
   "what": "Kai's notes on cut r5 dumped: 32 new (88 on the page)",
   "feedback": "feedback/timeline-r5",
   "feedback_docs": 88
+ },
+ {
+  "at": "2026-11-25T15:48:15+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r6 on Kai's 32 notes on r5: 5:28, 77 shots; new Flow clips (City Hall, throw, Clive/Karen/box at evening, snow with traffic, Karen alone, stairs, crowd 2/6/20, coup crowd with news crews, evacuation with its own orchestral score, Times Square, Karen shocked), one-pin maps, a polaroid run, Karen and Martha lip-synced, new narrator links, Situation Room ending; every note answered",
+  "rebuild": "python3 scripts/karen/story-cut-r6.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <out-dir>"
+ },
+ {
+  "at": "2026-11-25T15:48:15+00:00",
+  "stage": "premiere",
+  "round": 6,
+  "what": "karen-1-story-r6 built in Karen vid.prproj from cut-r6 edl (premiere-plan.py --tag r6); V1 77/77 and 53/53 audio clips checked: in sync"
  }
 ]

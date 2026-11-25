@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-stairs-stairs2-a.mp4",
+ "made": "2026-11-25T15:31:08+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The two young men climb the tiled subway stairs away from the camera at an easy pace, one holding his phone up and showing it to the other, who leans in and laughs; they reach the top and step out into the daylight. Nobody is waiting at the top. Sound: footsteps echoing on the stairs, a train rumbling away below. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/stairs2-a.jpg",
+ "why": "Kai's notes on cut r5, 2026-11-25, at4414: no crowd at the top of the stairs",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/stairs2-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r4/docs/stories/karen/scenes/story-r6-shots",
+  "key": "stairs",
+  "frame": 23,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-25T15:30:05.283Z"
+ }
+}

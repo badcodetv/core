@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/post/karen-lipsync.mp4",
+ "made": "2026-11-25T15:31:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/karen/lipsync-r6.py",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-karen1-karen-talk-close-a.mp4",
+ "why": "lip-sync karen: 8/12 words in -45..+125 ms, tempo 1.1, onset 0.83s"
+}

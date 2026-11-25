@@ -1,0 +1,16 @@
+{
+ "story": "karen",
+ "scene": "story-r6-shots",
+ "prefix": "r6",
+ "title": "Karen story r6: new shots",
+ "heading": "Karen story film: new shots for cut r6",
+ "media": "/mnt/d/badcode-videos/karen-story/clips/r6",
+ "flow_project": "da8feea7-0574-437b-8ff9-97da233a0a4f",
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "note": "Shots added for cut r6 from Kai's notes on cut r5 (2026-11-25); the cut itself is scenes/story/."
+}
