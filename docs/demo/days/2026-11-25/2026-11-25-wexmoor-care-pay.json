@@ -1,7 +1,7 @@
 {
   "schema": "fp-demo/1",
   "id": "2026-11-25-wexmoor-care-pay",
-  "stage": "bench",
+  "stage": "gate",
   "run": {
     "mode": "daily",
     "run_date": "2026-11-25",
@@ -54,7 +54,8 @@
       "demo-clerk",
       "demo-citizens",
       "demo-bench",
-      "demo-rival"
+      "demo-rival",
+      "demo-gate"
     ]
   },
   "citizens": {
@@ -250,5 +251,120 @@
       "engine": "codex",
       "model": "gpt-6"
     }
-  ]
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "t1",
+        "result": "pass",
+        "note": "Adds 1 pound an hour for every care worker on its contracts, part-time and zero-hours included."
+      },
+      {
+        "answer": "A",
+        "test": "t2",
+        "result": "pass",
+        "note": "Firms send payroll records monthly and council finance checks a sample against pay slips, withholding payment if the rise did not reach workers."
+      },
+      {
+        "answer": "A",
+        "test": "t3",
+        "result": "pass",
+        "note": "The Director of Adult Social Care owns it, and it starts in April 2027."
+      },
+      {
+        "answer": "A",
+        "test": "t4",
+        "result": "pass",
+        "note": "Says the rise counts towards the 2028 national deal, so nobody loses it and the council never pays twice."
+      },
+      {
+        "answer": "A",
+        "test": "t5",
+        "result": "pass",
+        "note": "Costs about 1.9 million pounds a year, inside the 2.4 million fund."
+      },
+      {
+        "answer": "A",
+        "test": "t6",
+        "result": "pass",
+        "note": "States that no visits are cut and no other care budget is touched."
+      },
+      {
+        "answer": "B",
+        "test": "t1",
+        "result": "fail",
+        "note": "Only staff with two or more years of service get the bonus; newer staff and many part-time workers get nothing, as the answer itself says."
+      },
+      {
+        "answer": "B",
+        "test": "t2",
+        "result": "fail",
+        "note": "Sets no pay slip check beyond the firms' own lists of staff, and names no one to check the money reaches workers."
+      },
+      {
+        "answer": "B",
+        "test": "t3",
+        "result": "pass",
+        "note": "The care commissioning team runs it and the bonus is paid in April from 2027; the owner is a team rather than a named post, but it is one owner."
+      },
+      {
+        "answer": "B",
+        "test": "t4",
+        "result": "unclear",
+        "note": "The answer says outright that it does not say what happens when the national deal starts."
+      },
+      {
+        "answer": "B",
+        "test": "t5",
+        "result": "pass",
+        "note": "Costs about 1.1 million pounds a year, under the 2.4 million cap."
+      },
+      {
+        "answer": "B",
+        "test": "t6",
+        "result": "pass",
+        "note": "Says visits and other care budgets are left alone."
+      },
+      {
+        "answer": "C",
+        "test": "t1",
+        "result": "pass",
+        "note": "A 1 pound hourly rise for every contracted carer, including part-time and zero-hours staff."
+      },
+      {
+        "answer": "C",
+        "test": "t2",
+        "result": "pass",
+        "note": "Council payroll auditors check monthly payslips against hours worked and require missing pay to be repaid."
+      },
+      {
+        "answer": "C",
+        "test": "t3",
+        "result": "pass",
+        "note": "The care director owns it and it starts in April 2027."
+      },
+      {
+        "answer": "C",
+        "test": "t4",
+        "result": "pass",
+        "note": "Folds the rise into the 2028 national deal without reducing hourly pay."
+      },
+      {
+        "answer": "C",
+        "test": "t5",
+        "result": "pass",
+        "note": "1.9 million for the rise plus training and hours within the remaining 500,000, and says total spending stays below 2.4 million."
+      },
+      {
+        "answer": "C",
+        "test": "t6",
+        "result": "pass",
+        "note": "Says there are no cuts to purchased care hours or other care budgets."
+      }
+    ],
+    "verdict": "Answer A and answer C meet every test and limit. Answer B leaves out newer and part-time staff, has no pay slip check and is silent on the 2028 deal, though it keeps within both limits.",
+    "rounds": 1
+  },
+  "ending": "accepted"
 }
