@@ -88,5 +88,14 @@
   "stage": "premiere",
   "round": 5,
   "what": "karen-1-story-r5 built in Karen vid.prproj from cut-r5 edl (premiere-plan.py --tag r5); V1 76/76 and 53/53 audio clips checked: in sync"
+ },
+ {
+  "at": "2026-11-25T14:34:44+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Kai's notes on cut r5 dumped: 32 new (88 on the page)",
+  "feedback": "feedback/timeline-r5",
+  "feedback_docs": 88
  }
 ]
