@@ -3,7 +3,7 @@
   "id": "2026-11-25-household-energy-payment",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "bench",
+  "stage": "gate",
   "run": {
     "mode": "live",
     "run_date": "2026-11-25",
@@ -84,7 +84,8 @@
     "workers": [
       "sim-clerk",
       "sim-citizens",
-      "sim-bench"
+      "sim-bench",
+      "sim-gate"
     ]
   },
   "citizens": {
@@ -263,7 +264,7 @@
     {
       "id": "A",
       "title": "Make councils' £100m fund pay low-income homes in bands E to H",
-      "answer": "Keep the £100 for bands A to D and the councils' £100 million fund. Change one rule. In 20 councils drawn by lot from volunteers, the fund must pay £100 to low-income homes in bands E to H, with no form, using benefit records the Department for Work and Pensions already holds. Other councils run the fund as now, so nobody gets less than today. Provisional fail number: fewer than 8 in 10 eligible homes paid by 31 March 2027. Stops 30 June 2027 unless Parliament votes to keep it. On a pass, the rule goes to every council. The Energy Secretary answers for it. It leaves out Scotland, Wales and low-income households not on benefits.",
+      "answer": "Keep the £100 for bands A to D and the councils' £100 million fund. Change one rule. In 20 councils drawn by lot from volunteers, the fund must pay £100 to low-income homes in bands E to H, with no form. Other councils run the fund as now, so nobody gets less than today. Provisional fail number: fewer than 8 in 10 eligible homes paid by 31 March 2027. Stops 30 June 2027 unless Parliament votes to keep it. On a pass, the rule goes to every council. The Energy Secretary answers for it. It leaves out Scotland, Wales and low-income households not on benefits.",
       "engine": "claude",
       "model": "claude-sonnet-5-5",
       "blind": true,
@@ -295,5 +296,169 @@
         "s1"
       ]
     }
-  ]
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "Test: fewer cold households missed, money aimed at need",
+        "result": "pass",
+        "note": "It aims the money at low-income homes in bands E to H, who miss out on the main payment today. It still misses low-income households not on benefits.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Test: quick and simple to claim, no fight over forms",
+        "result": "unclear",
+        "note": "It says \"no form\", but once the unsourced records claim is struck it doesn't say how those homes would be found, so quick and simple isn't shown.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Test: renters in bigger or worse homes outside bands A to D get help",
+        "result": "unclear",
+        "note": "It pays low-income homes in bands E to H, but doesn't say whether renters who don't pay the council tax bill would count. The main payment goes to whoever is responsible for the bill.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Test: older people who are cold get help without forms",
+        "result": "unclear",
+        "note": "No form helps older people, but pensioners not on benefits are outside it, and the answer never mentions older people.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Limit: low-income homes in bands E to H aren't left out",
+        "result": "fail",
+        "note": "The answer itself leaves out low-income households not on benefits, who are low-income homes in bands E to H. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Limit: nobody has to prove they're poor",
+        "result": "pass",
+        "note": "Nobody is asked to apply or prove anything: the answer says \"no form\". Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Limit: the money doesn't stop halfway through winter",
+        "result": "pass",
+        "note": "Payments are due by 31 March and the rule stops on 30 June 2027, after the winter. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Test: fewer cold households missed, money aimed at need",
+        "result": "unclear",
+        "note": "A local panel would put bands E to H low-income homes first, but the fail number measures speed, not whether fewer cold households are missed.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Test: quick and simple to claim, no fight over forms",
+        "result": "unclear",
+        "note": "It promises a short, simple claim, but its fail line allows up to 3 in 10 approved claims to take over 30 days. Whether that is quick is a judgement.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Test: renters in bigger or worse homes outside bands A to D get help",
+        "result": "unclear",
+        "note": "The panel would include residents and advice workers, but the answer doesn't say renters outside bands A to D get help.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Test: older people who are cold get help without forms",
+        "result": "unclear",
+        "note": "Advice workers sit on the panel, but a claim is still needed and older people aren't named.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Limit: low-income homes in bands E to H aren't left out",
+        "result": "unclear",
+        "note": "Bands E to H low-income homes come \"first\", not for certain, and the panel sets the rules. Nobody can say yet who would be left out.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Limit: nobody has to prove they're poor",
+        "result": "unclear",
+        "note": "It needs a claim, and the answer doesn't say what proof the panel would ask for.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Limit: the money doesn't stop halfway through winter",
+        "result": "pass",
+        "note": "Claims run to a stop date of 31 May 2027, after the winter. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Test: fewer cold households missed, money aimed at need",
+        "result": "pass",
+        "note": "Any household struggling to heat its home can claim, and its fail number is fewer struggling households missed. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Test: quick and simple to claim, no fight over forms",
+        "result": "pass",
+        "note": "No income paperwork, three ways to claim, payment within ten working days. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Test: renters in bigger or worse homes outside bands A to D get help",
+        "result": "pass",
+        "note": "Open to any household whatever its tax band, and elected residents include renters. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Test: older people who are cold get help without forms",
+        "result": "pass",
+        "note": "Post and in-person claims, no income paperwork, and older renters reported separately. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: low-income homes in bands E to H aren't left out",
+        "result": "pass",
+        "note": "Any band can claim, so low-income homes in bands E to H are in. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: nobody has to prove they're poor",
+        "result": "pass",
+        "note": "It says \"without income paperwork\". Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: the money doesn't stop halfway through winter",
+        "result": "unclear",
+        "note": "It says it would reserve funding through winter, but £10m pays £100 to only 100,000 households. If more claim, the pot could run dry.",
+        "sources": []
+      }
+    ],
+    "verdict": "None of the three passes every test and limit. C passes six of seven and leaves one unclear (whether £10m lasts); A fails the limit on low-income homes it leaves out; B is mostly unclear because its local panel would set the rules. Facts can't settle who comes first.",
+    "to_jury": true,
+    "rejected_claims": [
+      "A: the fund would use benefit records the Department for Work and Pensions already holds"
+    ]
+  }
 }
