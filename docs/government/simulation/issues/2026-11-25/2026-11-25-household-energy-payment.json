@@ -3,7 +3,7 @@
   "id": "2026-11-25-household-energy-payment",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "gate",
+  "stage": "jury",
   "run": {
     "mode": "live",
     "run_date": "2026-11-25",
@@ -85,7 +85,8 @@
       "sim-clerk",
       "sim-citizens",
       "sim-bench",
-      "sim-gate"
+      "sim-gate",
+      "sim-jury"
     ]
   },
   "citizens": {
@@ -460,5 +461,58 @@
     "rejected_claims": [
       "A: the fund would use benefit records the Department for Work and Pensions already holds"
     ]
+  },
+  "jury": {
+    "seed": "2026-11-25-household-energy-payment/jury",
+    "size": 12,
+    "ids": [
+      "c0177",
+      "c0879",
+      "c0147",
+      "c0457",
+      "c0280",
+      "c0476",
+      "c0205",
+      "c0008",
+      "c0712",
+      "c0959",
+      "c0144",
+      "c0505"
+    ],
+    "model": "claude-haiku-5-5",
+    "question": "Where should extra help go first: to low-income homes found from records, to places where local residents decide, or to any household that says it is struggling?",
+    "options": [
+      "Low-income homes in bands E to H, found from records, no form",
+      "Whoever a local panel of residents decides",
+      "Any household that says it is struggling, whatever its band",
+      "Pay every home in bands A to D and nothing more"
+    ],
+    "votes": [
+      3,
+      2,
+      5,
+      2
+    ],
+    "ruling": "Any household that says it is struggling, whatever its band (5 of 12). Most jurors said a tax band doesn't show who is cold, so help should follow need, not the band.",
+    "reasons": [
+      {
+        "juror": "c0177",
+        "text": "Renters in bigger flats in bands E to H get cold too. Your tax band shouldn't decide who's struggling."
+      },
+      {
+        "juror": "c0457",
+        "text": "Plenty of poor people in every band get missed. Find them from records, not a form they can't face."
+      },
+      {
+        "juror": "c0879",
+        "text": "Every home in bands A to D gets it, no means test, no fight. Stop inventing rules nobody can check."
+      },
+      {
+        "juror": "c0205",
+        "text": "Residents know who's struggling on their street. Let local people decide, not a Whitehall formula."
+      }
+    ],
+    "review": "2027-11-25",
+    "real_jury": false
   }
 }
