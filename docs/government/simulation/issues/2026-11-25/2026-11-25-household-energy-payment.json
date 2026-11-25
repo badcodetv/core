@@ -3,7 +3,7 @@
   "id": "2026-11-25-household-energy-payment",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "citizens",
+  "stage": "bench",
   "run": {
     "mode": "live",
     "run_date": "2026-11-25",
@@ -83,7 +83,8 @@
   "made_by": {
     "workers": [
       "sim-clerk",
-      "sim-citizens"
+      "sim-citizens",
+      "sim-bench"
     ]
   },
   "citizens": {
@@ -257,5 +258,42 @@
         "text": "Every pensioner gets it, not just the poor. Don't cut it for people who've saved."
       }
     ]
-  }
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Make councils' £100m fund pay low-income homes in bands E to H",
+      "answer": "Keep the £100 for bands A to D and the councils' £100 million fund. Change one rule. In 20 councils drawn by lot from volunteers, the fund must pay £100 to low-income homes in bands E to H, with no form, using benefit records the Department for Work and Pensions already holds. Other councils run the fund as now, so nobody gets less than today. Provisional fail number: fewer than 8 in 10 eligible homes paid by 31 March 2027. Stops 30 June 2027 unless Parliament votes to keep it. On a pass, the rule goes to every council. The Energy Secretary answers for it. It leaves out Scotland, Wales and low-income households not on benefits.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Let local panels, not councils alone, steer the £100m help fund",
+      "answer": "Try this in 10 volunteer English councils, drawn by lot. A local panel of residents and advice workers would decide who gets the council's share of the £100 million fund. It would put low-income homes in bands E to H first, with a short, simple claim. Other councils keep today's rules. The main £100 payment stays as planned. By 31 May 2027, measure days to payment and how much reaches bands E to H, against places like it. Provisional fail: fewer than 7 in 10 approved claims paid within 30 days. It stops on 31 May 2027 unless Parliament votes to keep it. The Energy Secretary answers for it. It leaves out Scotland and Wales.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Let residents steer help for cold homes in every tax band",
+      "answer": "Keep the promised £100. Trial extra £100 payments in twelve English councils drawn from volunteers, against twelve keeping today's help. Treasury funds a £10m pot; elected residents, including renters and pensioners, steer access and outreach. Any household struggling to heat its home can claim, whatever its tax band, without income paperwork: online, by post or in person. Pay within ten working days. The council leader answers for delays. Provisionally, fail unless surveys find 20% fewer struggling households missed; report older renters separately. Reserve funding through winter. Stop on 31 May 2027 unless Parliament renews after review; success means national expansion. Scotland, Wales and Northern Ireland remain outside this trial. Cold homes need help, not auditions.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ]
 }
