@@ -1,0 +1,34 @@
+{
+ "schema": "fp-demo/1",
+ "id": "2026-11-25-wexmoor-care-pay",
+ "stage": "case",
+ "run": { "mode": "daily", "run_date": "2026-11-25", "news_date": "2026-11-25" },
+ "plan": { "area": "health", "ending": "accepted" },
+ "case": {
+  "title": "Wexmoor: a pay rise for care workers while the national deal is awaited",
+  "short": "WEXMOOR CARE PAY",
+  "question": "Should Wexmoor use its care fund to add a flat pay rise for every care worker on its contracts, or to give long-serving staff a bonus?",
+  "place": "Wexmoor (made up)",
+  "story": "Wexmoor is a made-up county council that buys home care from 14 small firms. About 1,400 care workers are paid close to the minimum wage, and the firms say they lose someone every few weeks to shops and warehouses. The council has set aside 2.4 million pounds a year for two years, from April 2027, to bridge the gap until a national pay deal arrives. A flat extra 1 pound an hour for every contracted care worker would cost about 1.9 million pounds a year with employer costs. A bonus for staff with long service would cost less, but leave newer and part-time staff out. Firms, unions and families all say they want the money in pay packets and the visits to carry on.",
+  "in_the_news": {
+   "headline": "New Chair to lead landmark care worker pay talks",
+   "why": "England's first sector-wide pay talks for care workers will not settle until April 2028, so a made-up council has to decide what to do for its care workers in the meantime.",
+   "memory_id": "1e50afae-cc4e-4227-825f-1c5d8c27ed66",
+   "sources": ["s1"]
+  },
+  "facts": [
+   { "text": "The first Fair Pay Agreement for adult social care in England is backed by 500 million pounds and covers 1.5 million people.", "sources": ["s1"] },
+   { "text": "Negotiations start in April 2027, and the first settlement is due to be introduced by April 2028.", "sources": ["s1"] }
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "title": "New Chair to lead landmark care worker pay talks",
+   "publisher": "Department of Health and Social Care",
+   "date": "2026-11-25",
+   "url": "https://www.gov.uk/government/news/new-chair-to-lead-landmark-care-worker-pay-talks"
+  }
+ ],
+ "made_by": { "workers": ["demo-clerk"] }
+}

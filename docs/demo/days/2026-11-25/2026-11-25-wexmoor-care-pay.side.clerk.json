@@ -1,0 +1,5 @@
+{
+ "design": "The fund (2.4m a year) clearly covers the flat rise (about 1.9m a year), with 0.5m to spare for checking pay slips and a reserve. The trade-offs are mild and there is a known way to do it: put the rise into the contract terms and audit it. A careful plan can therefore meet every test and stay inside every limit; the only way to miss is to be vague about who gets it, who checks it or what happens when the national deal starts.",
+ "tests_hint": "Tests: every worker on a council contract gets the rise, part-time and zero-hours included; the council says how it checks the money reaches pay slips; a named owner and a start date (April 2027); what happens to the rise when the national deal arrives (it is folded in, not lost). Limits: must not cost more than 2.4 million pounds a year; must not cut the hours of care the council buys; must not take money from other care budgets or need a new tax.",
+ "angles": ["Flat 1 pound an hour rise written into every contract", "Loyalty bonus for long-serving care staff only", "Rise plus a paid-training and guaranteed-hours offer"]
+}
