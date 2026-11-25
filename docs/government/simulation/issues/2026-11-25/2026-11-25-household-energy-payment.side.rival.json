@@ -1,0 +1,12 @@
+{
+  "id": "C",
+  "title": "Let residents steer help for cold homes in every tax band",
+  "answer": "Keep the promised £100. Trial extra £100 payments in twelve English councils drawn from volunteers, against twelve keeping today's help. Treasury funds a £10m pot; elected residents, including renters and pensioners, steer access and outreach. Any household struggling to heat its home can claim, whatever its tax band, without income paperwork: online, by post or in person. Pay within ten working days. The council leader answers for delays. Provisionally, fail unless surveys find 20% fewer struggling households missed; report older renters separately. Reserve funding through winter. Stop on 31 May 2027 unless Parliament renews after review; success means national expansion. Scotland, Wales and Northern Ireland remain outside this trial. Cold homes need help, not auditions.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1"
+  ],
+  "new_sources": []
+}
