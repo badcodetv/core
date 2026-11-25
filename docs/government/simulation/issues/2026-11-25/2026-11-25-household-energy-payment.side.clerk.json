@@ -1,0 +1,17 @@
+{
+  "split_question": "Should the £100 energy payment go only to the households that need it most, rather than to every home in council tax bands A to D?",
+  "angles": [
+    "keep it simple: pay every home in bands A to D, and let councils' £100m fund catch the low-income homes in higher bands",
+    "aim it: pay only households on low incomes or means-tested benefits, in any band",
+    "pay everyone a flat sum but add a second, larger payment for households on benefits or the State Pension"
+  ],
+  "facts_for_writers": [
+    "The £100 goes to up to 20 million households in England in council tax bands A to D; about 13 million with verified Direct Debit details are paid automatically, councils contact the rest, payments start from 4 January and the scheme stays open until the end of May. [s1]",
+    "Councils also get a £100 million Discretionary Fund for vulnerable households that fall outside the main scheme; councils design their own eligibility rules, with larger families, pensioners in larger homes and people in houses in multiple occupation given as examples. [s1]",
+    "MoneySavingExpert says the scheme costs £2.6 billion, that bands E to H are excluded from the main payment so some low-income households there could miss out, and that using bands is quick and simple but less precise than means-testing. [s2]",
+    "Cornwall Insight forecasts that the January 2027 price cap for a typical dual-fuel household will be £2,166, up £443 or 26% from £1,723, mainly because of high and volatile wholesale gas prices; it is not an official Ofgem figure. [s3]",
+    "The Joseph Rowntree Foundation proposes a £6.3 billion winter package: a flat £150 to every household plus a further £150 for households on means-tested or disability benefits or the State Pension, cutting the average bill by £230 and low-income bills by £290. It says the earlier Energy Bills Support Scheme cost £11.9 billion. [s4]"
+  ],
+  "extra_sources": [],
+  "notes": "Alarm slot: the 17 Nov energy issue has a prediction (p1, Ofgem cap above £2,000) due 30 Nov, and today's news is the cap announcement and the £100 payment rules. Ofgem's actual figure was not found on its site when checked, so the summary uses Cornwall Insight's forecast and says so. The GOV.UK page does not state a cost; the £2.6bn is MoneySavingExpert's figure (the page's own '20 million x £100' would be about £2bn, so the two do not match and writers should not do that sum). MoneySavingExpert's page is dated 28 Oct, last edited 3 Nov, and says full rules were not yet published then; the GOV.UK page of 24 Nov is the later source. No UK poll was found on universal versus targeted energy help from the last two years; the More in Common figure is on a related but different question, so real_share is unset. The JRF poll page gives no fieldwork dates, sample or wording."
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-25-household-energy-payment",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "clerk",
+  "run": {
+    "mode": "live",
+    "run_date": "2026-11-25",
+    "news_date": "2026-11-25"
+  },
+  "issue": {
+    "title": "Who gets the £100 energy payment: every home in bands A to D, or those in need?",
+    "short": "£100 ENERGY PAYMENT",
+    "question": "The £100 energy payment goes to homes in council tax bands A to D in England. Should it go to every home in those bands, or be aimed at the households who struggle most?",
+    "summary": "On 24 November 2026 the government set out a £100 Household Energy Payment for up to 20 million households in England in council tax bands A to D. About 13 million are due to be paid automatically, councils start paying on 4 January, and the scheme stays open until the end of May. A separate £100 million fund lets councils help vulnerable households outside the main scheme and set their own rules for it (s1). Homes in bands E to H are left out of the main payment, so some low-income households miss out while some better-off homes in bands A to D are paid (s2). Cornwall Insight forecasts that the January price cap will rise 26%, from £1,723 to £2,166 for a typical household. That is not an official figure, and Ofgem was due to announce the real one on 25 November (s3).",
+    "summary_sources": [
+      "s1",
+      "s2",
+      "s3"
+    ],
+    "field": "energy",
+    "owner": "energy-climate",
+    "slot": "alarm",
+    "slot_reason": "The first energy issue, on 17 November, predicted that Ofgem's January price cap would top £2,000 a year, and that check falls due on 30 November. Today, 25 November, is the day Ofgem is due to announce the cap, and yesterday the government published the rules for the £100 payment meant to soften the rise.",
+    "news": [
+      {
+        "headline": "Government sets out £100 Household Energy Payment for up to 20 million English households, paid from 4 January",
+        "memory_id": "81f8f11b-d136-4689-9c77-ef21d740cf46",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "headline": "Ofgem due to announce January-March 2027 price cap; forecasts point to about 26% rise",
+        "memory_id": "d2152b48-6b4e-49f2-9154-0c17867f153c",
+        "sources": [
+          "s3"
+        ]
+      }
+    ]
+  },
+  "poll": {
+    "pollster": "More in Common (for the Joseph Rowntree Foundation)",
+    "fieldwork": "2026; exact dates not stated on the page (JRF briefing dated 14 Oct 2026)",
+    "sample": "Not stated on the page",
+    "finding": "70% feel they need more state support on energy bills this winter, and 66% say the Government has not gone far enough to tackle energy bills. The page does not give the question wording and does not ask whether help should go to everyone or only to those in need, so it is not the same question as this one.",
+    "sources": [
+      "s4"
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "20 million households to receive £100 payment",
+      "publisher": "GOV.UK",
+      "date": "2026-11-24",
+      "url": "https://www.gov.uk/government/news/20-million-households-to-receive-100-payment"
+    },
+    {
+      "id": "s2",
+      "title": "Council tax £100 energy support payment: who gets it?",
+      "publisher": "MoneySavingExpert",
+      "date": "2026-10-28",
+      "url": "https://www.moneysavingexpert.com/news/2026/10/council-tax-100-energy-support-payment/"
+    },
+    {
+      "id": "s3",
+      "title": "Energy Bills Could Rise 26% in January, Cornwall Insight Warns of Highest Bill Levels Since 2023",
+      "publisher": "IBTimes UK",
+      "date": "2026-11-18",
+      "url": "https://www.ibtimes.co.uk/great-britain-energy-bills-rise-january-2027-forecast-1833134"
+    },
+    {
+      "id": "s4",
+      "title": "Helping households with energy costs this winter",
+      "publisher": "Joseph Rowntree Foundation",
+      "date": "2026-10-14",
+      "url": "https://www.jrf.org.uk/cost-of-living/helping-households-with-energy-costs-this-winter"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "sim-clerk"
+    ]
+  }
+}
