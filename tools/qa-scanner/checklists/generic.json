@@ -1,0 +1,21 @@
+{
+ "_about": "A starting checklist for AI-generated stills and clips. Copy it into your project, delete what doesn't apply, and add one item for every fault a reviewer names. Each item: one yes/no question, when it fails, and how to fix it.",
+ "still": [
+  {"id": "anatomy", "q": "Does any person have extra or missing limbs, an extra arm or hand, fused or duplicated bodies, a melted face, or warped hands?", "fail_if": "any such fault anywhere", "fix": "re-roll; if one small figure, crop or blur it"},
+  {"id": "ground-contact", "q": "Look at every person whose feet are off the ground. Is the height plausible for a real jump, are the legs bent for take-off or landing, and is there a shadow directly below them? Is every standing or walking person's foot on the ground with a contact shadow?", "fail_if": "anyone floats", "fix": "describe feet planted and the shadow under them; regenerate from words"},
+  {"id": "text", "q": "Is there any readable text, letters, numbers, logo, crest, badge or brand mark anywhere (clothes front and back, signs, boards, screens, objects)?", "fail_if": "any mark that reads as text, a number or a logo", "fix": "describe the surface as plain and smooth; blur small marks; re-roll if large"},
+  {"id": "pasted", "q": "Does anyone look cut out and pasted in: wrong scale for where they stand, wrong lighting, no shadow, edges that don't sit in the scene?", "fail_if": "any person looks stuck on", "fix": "regenerate the whole frame from words (no edit that adds people)"},
+  {"id": "diversity", "q": "Looking at the faces you can make out, is there a real mix of ethnicities, not all or nearly all one?", "fail_if": "everyone, or nearly everyone, visible is one ethnicity when a mix was asked for", "fix": "describe the nearest faces one by one with heritage; give the crowd a stated mix"},
+  {"id": "reference", "q": "If a REFERENCE image was given, does the matching subject (place, character, product) match it?", "fail_if": "a clearly different design", "fix": "attach the reference and describe its key features; re-roll"},
+  {"id": "real-brand", "q": "Does anything look like a real brand, logo, club, product or famous place?", "fail_if": "anything recognisable", "fix": "describe it as plain and invented; re-roll"},
+  {"id": "physics", "q": "Is anything else physically wrong: impossible geometry, duplicated people side by side, objects melting or merging, things hanging in the air for no reason?", "fail_if": "any such fault", "fix": "re-roll with the fault described away positively"}
+ ],
+ "clip": [
+  {"id": "morph", "q": "Does any person, face, limb or object morph, melt, split, merge, duplicate or change identity during the clip?", "fail_if": "any morphing", "fix": "fewer movers; keep the crowd still; re-roll"},
+  {"id": "teleport", "q": "Does anything jump position between frames, appear from nowhere or vanish?", "fail_if": "any teleport or pop", "fix": "keep objects still or out of frame; cut on a reaction"},
+  {"id": "ground-contact", "q": "Do people's feet stay on the ground when they walk or run (no gliding, sliding or floating)?", "fail_if": "anyone glides or floats", "fix": "slower movement, feet planted, re-roll"},
+  {"id": "text", "q": "Does readable text, a number or a logo appear at any point?", "fail_if": "any", "fix": "blur in the edit or re-roll"},
+  {"id": "camera", "q": "Is the camera motion smooth and believable, without warping the scene or the people?", "fail_if": "the set warps or the camera jerks", "fix": "lock the camera and add the move in the edit"},
+  {"id": "physics", "q": "Is anything else physically wrong (smoke, fire, liquids, a ball with no physics)?", "fail_if": "any such fault", "fix": "keep it out of frame or still; re-roll"}
+ ]
+}

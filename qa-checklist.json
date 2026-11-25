@@ -1,0 +1,511 @@
+{
+ "_about": "BadCode's QA checklist for Flow stills and clips, scanned with tools/qa-scanner/qa.py BEFORE anything is shown to Jack or Kai (rule: docs/rules/flow.md). Started from tools/qa-scanner/checklists/generic.json on 2026-11-25; every item past the generic ones is a fault Jack or Kai named, quoted in 'source'. Add one item for every new fault they name. 'yes' = defect. Items that start 'If…' are skipped when they don't apply; items marked 'needs --prompt' only work when the prompt is passed.",
+ "still": [
+  {
+   "id": "anatomy",
+   "q": "Does any person have extra or missing limbs, an extra arm or hand, a hand or glove with no body attached, fused or duplicated bodies, a melted face, or warped hands?",
+   "fail_if": "any such fault anywhere",
+   "fix": "re-roll; if one small figure, crop or blur it",
+   "source": "Jack/Kai: 'an extra arm picking up the tea', 'gloves floating on the device in his mouth'"
+  },
+  {
+   "id": "ground-contact",
+   "q": "Look at every person whose feet are off the ground. Is the height plausible for a real jump, are the legs bent for take-off or landing, and is there a shadow directly below them? Is every standing or walking person's foot on the ground with a contact shadow?",
+   "fail_if": "anyone floats",
+   "fix": "describe feet planted and the shadow under them; regenerate from words",
+   "source": "generic"
+  },
+  {
+   "id": "text",
+   "q": "Is there any readable text, letters, numbers, logo, crest, badge or brand mark anywhere (clothes front and back, signs, boards, screens, objects)?",
+   "fail_if": "any mark that reads as text, a number or a logo",
+   "fix": "describe the surface as plain and smooth; blur small marks; re-roll if large",
+   "source": "generic"
+  },
+  {
+   "id": "pasted",
+   "q": "Does anyone or anything look cut out and pasted in or overlaid: wrong scale for where they stand, wrong lighting, no shadow, edges that don't sit in the scene, a logo floating over glass rather than on it?",
+   "fail_if": "any person looks stuck on",
+   "fix": "regenerate the whole frame from words (no edit that adds people)",
+   "source": "generic + 'She looks slightly overlaid', 'look more like it is on the glass rather than an overlay'"
+  },
+  {
+   "id": "diversity",
+   "q": "Looking at the faces you can make out, is there a real mix of ethnicities, not all or nearly all one?",
+   "fail_if": "four or more faces can be made out and all, or nearly all, are one ethnicity (Jack/Kai want a mix by default)",
+   "fix": "describe the nearest faces one by one with heritage; give the crowd a stated mix",
+   "source": "'make it diverse, as in add at least one person that is not white', 'diverisfy the crowd please'"
+  },
+  {
+   "id": "reference",
+   "q": "If a REFERENCE image was given, does the matching subject (place, character, product) match it?",
+   "fail_if": "a clearly different design",
+   "fix": "attach the reference and describe its key features; re-roll",
+   "source": "generic"
+  },
+  {
+   "id": "real-brand",
+   "q": "Does anything look like a real brand, logo, club, product, famous place, or a well-known existing emblem (e.g. a superhero logo)?",
+   "fail_if": "anything recognisable",
+   "fix": "describe it as plain and invented; re-roll",
+   "source": "generic + Jack: 'it looks too much like the iron man logo'"
+  },
+  {
+   "id": "physics",
+   "q": "Is anything else physically wrong: impossible geometry, duplicated people side by side, objects melting or merging, things hanging in the air for no reason?",
+   "fail_if": "any such fault",
+   "fix": "re-roll with the fault described away positively",
+   "source": "generic"
+  },
+  {
+   "id": "clones",
+   "q": "Are two people the same person twice, or do extras look like twins or clones (same face, hair and clothes)?",
+   "fail_if": "any duplicate or twin that wasn't asked for",
+   "fix": "describe each extra one by one (age, hair, clothes); regenerate from words",
+   "source": "'two maddies actually appear', 'the other two look the same'"
+  },
+  {
+   "id": "famous-face",
+   "q": "Does any face look like a real famous person (actor, politician, celebrity)?",
+   "fail_if": "any recognisable likeness",
+   "fix": "make a big portrait of the character first and attach it; never name the real person; regenerate",
+   "source": "'thats hugh laurie, please no famous people', flow.md lookalike rule"
+  },
+  {
+   "id": "scale",
+   "q": "Is any person or object the wrong size for its depth or next to the others (a giant, a tiny prop, comically large keys)?",
+   "fail_if": "anything clearly out of scale",
+   "fix": "state sizes against each other in the prompt; regenerate",
+   "source": "'Maggie is about twice as big as she should be', 'the guy in the middle is a giant', 'the keys are comically large'"
+  },
+  {
+   "id": "perspective",
+   "q": "Are signs, screens, buildings or flat surfaces skewed with perspective that doesn't match the camera?",
+   "fail_if": "any surface visibly at the wrong angle",
+   "fix": "describe the camera height and the surface facing it; regenerate",
+   "source": "'the downland bank looks really skewed', 'the perspective… is off'"
+  },
+  {
+   "id": "cropped",
+   "q": "Is the main subject's head, shoulder or a key body part cut off awkwardly by the frame edge?",
+   "fail_if": "an unintended crop of the subject",
+   "fix": "describe the framing with room around the subject; re-roll",
+   "source": "'her shoulder seems to be cut off a little bit'"
+  },
+  {
+   "id": "crowded",
+   "q": "Do people stand directly in front of each other, overlap or look squeezed together?",
+   "fail_if": "the main people block or crush each other",
+   "fix": "place each person in the frame by name with space between; regenerate",
+   "source": "'she stood right in front of another gang member… spread the gang members out', 'She feels squeezed in'"
+  },
+  {
+   "id": "staging",
+   "q": "Does the layout make physical sense (vehicles on roads, people where they could stand, things the right way round)?",
+   "fail_if": "a layout the brain rejects (driving on the pavement, cars on a river)",
+   "fix": "stage the space in words: where everything is and which way it faces; regenerate, never edit a layout",
+   "source": "'drive into the pavement… composed in a way that makes sense to the brain', 'there are cars on the river'"
+  },
+  {
+   "id": "eyeline",
+   "q": "If the prompt says who someone looks at or faces, are they actually looking at that person or thing (not the lens, not between two people)?",
+   "fail_if": "the eyeline or facing is wrong (judge at full size)",
+   "fix": "start the still already facing the target; name the one person and have them look back; regenerate",
+   "source": "'hes not facing the ginger man', 'facing the camera, not the people eavesdropping', 'he should look to the right not the left'"
+  },
+  {
+   "id": "stray-gaze",
+   "q": "Does a background extra stare at the camera or do something that pulls the eye from the subject?",
+   "fail_if": "an extra draws attention",
+   "fix": "give the extras a task facing away; regenerate",
+   "source": "'this one old man that's facing back towards the camera. It completely throws the eye'"
+  },
+  {
+   "id": "missing",
+   "q": "Is anyone or anything the prompt asks for missing (a character, a driver, a prop in a hand)?",
+   "fail_if": "any required person or prop absent (needs --prompt)",
+   "fix": "name the missing person or prop early in the prompt; regenerate",
+   "source": "'bob is not in the clip', 'there is no one in the drivers seat', 'there is no gun in his hand'"
+  },
+  {
+   "id": "count",
+   "q": "Does the number of people or objects differ from what the prompt asks for (e.g. two where one was asked)?",
+   "fail_if": "a wrong count (needs --prompt)",
+   "fix": "state the count and name each one; regenerate",
+   "source": "'two satellites appear… just with one satellite'"
+  },
+  {
+   "id": "mask-eyes",
+   "q": "If anyone wears a full-face balaclava or mask: are there eye holes, or real human eyes or skin visible through it?",
+   "fail_if": "eye holes or eyes visible (skip if no mask)",
+   "fix": "describe the mask as seamless fabric with no openings; regenerate",
+   "source": "'fix the masks there are eye holes', 'there's human eyes behind the yellow bally'"
+  },
+  {
+   "id": "mask-skin",
+   "q": "If anyone wears a full-face balaclava or mask: is any skin showing (lips, neck, wrists, chest)?",
+   "fail_if": "any skin on a masked character (skip if no mask)",
+   "fix": "cover neck, wrists and chest in words (gloves, high collar); never write a word that bares skin; regenerate",
+   "source": "'we shouldnt see his lips', 'never show skin on the balaclava badcode guys', 'skin on the wrist'"
+  },
+  {
+   "id": "mask-emblem",
+   "q": "If a masked character has an emblem on the mask, is it missing, on the wrong eye (it belongs over the LEFT eye) or misplaced?",
+   "fail_if": "emblem missing or wrong place (skip if no mask)",
+   "fix": "attach the mask reference; state the emblem's place; regenerate",
+   "source": "'there is no triangle over his left eye', 'the logo is in the wrong place on the balaclava'"
+  },
+  {
+   "id": "mask-design",
+   "q": "If a REFERENCE mask or costume was given, does the mask's colour, design or material differ from it?",
+   "fail_if": "a different mask (skip if no mask)",
+   "fix": "attach the reference; describe nothing else about the mask; regenerate",
+   "source": "'the masks are wrong… should be like the ones in [reference]', 'green mask is wrong'"
+  },
+  {
+   "id": "logo-drawn",
+   "q": "Has the generator drawn its own version of a logo or emblem meant to be the BadCode logo (it should be laid in during the edit)?",
+   "fail_if": "a generated stand-in for the logo",
+   "fix": "leave the space plain and lay the real logo file in during the edit",
+   "source": "CLAUDE.md: the logo is fixed, never hand-edited"
+  },
+  {
+   "id": "currency",
+   "q": "Is money shown in a currency other than the one the story is set in (pounds sterling for a British story)?",
+   "fail_if": "wrong currency",
+   "fix": "name the notes (e.g. Bank of England pound notes) without readable text; regenerate",
+   "source": "Jack: 'the money on the tree are dollars, please make them english pound sterling'"
+  },
+  {
+   "id": "screens",
+   "q": "Do TVs, monitors or phone screens look wrong (an overlay floating on them, a coloured border, odd content)?",
+   "fail_if": "a screen looks pasted or broken",
+   "fix": "describe the screen off or with plain light; put content in during the edit",
+   "source": "'there's an overlay on the TV screen', 'a red border around the black'"
+  },
+  {
+   "id": "nonsense",
+   "q": "Is there a detail no real scene would show (a door open while driving, a machine running with its door open, a car in a bus)?",
+   "fail_if": "any such detail",
+   "fix": "describe the object's real state in words; regenerate",
+   "source": "'driving with the back door open', 'the washing machine door is open and spinning'"
+  },
+  {
+   "id": "period",
+   "q": "If the prompt names a period, is anything from the wrong era (modern cars, phones, clothes)?",
+   "fail_if": "an anachronism (needs --prompt)",
+   "fix": "name period-correct makes and styles; regenerate",
+   "source": "'it looks like a modern car please make it look like the prohabition era'"
+  },
+  {
+   "id": "recognisable",
+   "q": "Is the main subject clearly recognisable as what it should be (Earth looks like Earth, not a red splodge or another planet)?",
+   "fail_if": "the subject reads as something else",
+   "fix": "describe its defining features plainly; regenerate",
+   "source": "'doesn't look like Earth… generic red splodge', 'it looks too much like Saturn'"
+  },
+  {
+   "id": "environment",
+   "q": "Does the setting's texture fit (a war-torn road isn't tidy; a clean room has no mud)?",
+   "fail_if": "wrong cleanliness or texture for the place",
+   "fix": "describe the dirt or cleanliness explicitly; regenerate",
+   "source": "'the road is far too tidy', 'the mud on the boots, it's a clean room'"
+  },
+  {
+   "id": "expression",
+   "q": "Does a face or pose show the wrong emotion or intent for the prompt (too happy, wilful when it should be accidental)?",
+   "fail_if": "a clear mismatch (needs --prompt)",
+   "fix": "name the expression and the reason for it; regenerate",
+   "source": "'the old woman shouldn't be so happy', 'it looks like she willfully throws it'"
+  },
+  {
+   "id": "ai-look",
+   "q": "Does the frame have the generic AI look: too clean, glossy, symmetrical, staged, evenly lit, stock-photo perfect?",
+   "fail_if": "it reads as AI slop at a glance",
+   "fix": "follow the story's look; real-photo references, imperfect light, asymmetric staging; regenerate",
+   "source": "'most of the film looks like ai slop', 'looks AI like'"
+  },
+  {
+   "id": "plastic",
+   "q": "Does anything meant to look real look cartoony, plastic, waxy or CGI (skin, wet pavement, reflections)?",
+   "fail_if": "any plastic or CGI surface",
+   "fix": "describe real materials and grain; regenerate",
+   "source": "'far too kind of cartoony AI', 'the reflection on the pavement… plasticky'"
+  },
+  {
+   "id": "low-res",
+   "q": "Is the image soft, pixelated, or visibly upscaled?",
+   "fail_if": "visible low quality",
+   "fix": "generate at full resolution; never a low-res draft",
+   "source": "'you can tell the quality is low', 'the pixelation is pretty obvious'"
+  },
+  {
+   "id": "stray-object",
+   "q": "Is there an unexplained object or extra person that distracts from the subject?",
+   "fail_if": "a distracting extra thing",
+   "fix": "leave it out of the prompt or name the clear space; re-roll",
+   "source": "'the trolley with the clothes needs to go away', 'remove the bubbles'"
+  }
+ ],
+ "clip": [
+  {
+   "id": "morph",
+   "q": "Does any person, face, limb or object morph, melt, split, merge, duplicate or change identity during the clip?",
+   "fail_if": "any morphing",
+   "fix": "fewer movers; keep the crowd still; re-roll",
+   "source": "generic + 'all the horses morph and change', 'the bottle of bleach turns into a rag', 'denise's face look weird and morphed'"
+  },
+  {
+   "id": "teleport",
+   "q": "Does anything jump position between frames, appear from nowhere or vanish?",
+   "fail_if": "any teleport or pop",
+   "fix": "keep objects still or out of frame; cut on a reaction",
+   "source": "generic + 'the horse teleported', 'when he spins around he kind of teleports', 'cars pop in and out of frame'"
+  },
+  {
+   "id": "ground-contact",
+   "q": "Do people's feet stay on the ground when they walk or run (no gliding, sliding or floating)?",
+   "fail_if": "anyone glides or floats",
+   "fix": "slower movement, feet planted, re-roll",
+   "source": "generic + 'he seems to float in the air', 'Maddie slides down the hill', 'just balencing on one leg'"
+  },
+  {
+   "id": "text",
+   "q": "Does readable text, a number, a caption or a logo appear at any point?",
+   "fail_if": "any",
+   "fix": "blur in the edit or re-roll",
+   "source": "generic + 'remove the same bench caption'"
+  },
+  {
+   "id": "camera",
+   "q": "Is the camera motion smooth and believable, without warping the scene or the people?",
+   "fail_if": "the set warps or the camera jerks",
+   "fix": "lock the camera and add the move in the edit",
+   "source": "generic"
+  },
+  {
+   "id": "physics",
+   "q": "Is anything else physically wrong (smoke, fire, liquids, a ball with no physics)?",
+   "fail_if": "any such fault",
+   "fix": "keep it out of frame or still; re-roll",
+   "source": "generic"
+  },
+  {
+   "id": "extra-limb",
+   "q": "Does an extra arm, hand or glove appear (one with no body, or more than a person has)?",
+   "fail_if": "any extra limb",
+   "fix": "re-roll; have the arm come from a visible person",
+   "source": "'an extra arm picking up the tea'"
+  },
+  {
+   "id": "clones",
+   "q": "Does the same person appear twice, or do extras look like clones?",
+   "fail_if": "any duplicate",
+   "fix": "describe each person; re-roll",
+   "source": "'two maddies actually appear'"
+  },
+  {
+   "id": "pass-through",
+   "q": "Does a body or object pass through something solid (a hand through a glass, a person through a bench)?",
+   "fail_if": "any clipping",
+   "fix": "simpler action, the object out of the path; re-roll",
+   "source": "'his hand goes through the glass', 'she walks through the bench'"
+  },
+  {
+   "id": "identity",
+   "q": "Does a face, outfit or accessory change, appear or vanish during the clip (a cap appears, earphones vanish, a mask disappears)?",
+   "fail_if": "any change in what someone wears or looks like",
+   "fix": "attach the character reference; fewer movers; re-roll",
+   "source": "'Tarquin's earphones disappeared', 'drivers mask dissapears', 'Derek's got a cap on'"
+  },
+  {
+   "id": "famous-face",
+   "q": "Does any face turn into a real famous person during the clip?",
+   "fail_if": "any recognisable likeness",
+   "fix": "start from a still made portrait-first; re-roll",
+   "source": "flow.md lookalike rule"
+  },
+  {
+   "id": "reset",
+   "q": "Does the action reset or repeat (someone does the same move twice, a loop or stutter)?",
+   "fail_if": "any repeat",
+   "fix": "one action per clip; re-roll",
+   "source": "'it kind of like resets… they pull it up twice'"
+  },
+  {
+   "id": "flip",
+   "q": "Does anything suddenly change direction or turn the wrong way (a vehicle reversing, a person turning mid-fall)?",
+   "fail_if": "an impossible flip",
+   "fix": "state the direction of travel throughout; re-roll",
+   "source": "'The ambulance randomly changes direction', 'he turns around mid fall'"
+  },
+  {
+   "id": "unasked-motion",
+   "q": "Does something move that should stay still (props falling, wobbling, a setting changing when only one thing should change)?",
+   "fail_if": "any movement not asked for",
+   "fix": "say what moves and that everything else stays still; re-roll",
+   "source": "'make sure only the mini house moves', 'the megaphone kind of wobbles', 'the setting needs to stay the same… only the prices change'"
+  },
+  {
+   "id": "exaggerated",
+   "q": "Is the action over the top or unrealistic (flying falls, cartoon impacts, things bursting out of walls)?",
+   "fail_if": "exaggerated action",
+   "fix": "make it simpler and smaller; re-roll",
+   "source": "'ai slop everything is so exaggerated please make it simple', 'the safe coming out the wall looks awful'"
+  },
+  {
+   "id": "gestures",
+   "q": "Are gestures or head movements stiff, repetitive or odd (turning the head back and forth, a teacherly gesture, a gesture that doesn't fit the line)?",
+   "fail_if": "odd or robotic body language",
+   "fix": "one specific gesture tied to the line; re-roll",
+   "source": "'gestures like a geography teacher', 'turn their head and then turn their head back'"
+  },
+  {
+   "id": "static",
+   "q": "Does the clip look like a still photo with a zoom, with nothing really moving?",
+   "fail_if": "no real motion",
+   "fix": "give the subject one clear action; re-roll",
+   "source": "'nothing animates. It feels like this is an image', 'a photograph just zoomed in'"
+  },
+  {
+   "id": "speed",
+   "q": "Does the motion look sped up, slow motion, or too fast for the action?",
+   "fail_if": "wrong apparent speed",
+   "fix": "state real-time speed and the pace of the action; re-roll",
+   "source": "'kind of like half speed', 'This clip looks speeded up'"
+  },
+  {
+   "id": "scale",
+   "q": "Is anyone or anything the wrong size for the scene at any point?",
+   "fail_if": "anything out of scale",
+   "fix": "fix the still first, then re-animate",
+   "source": "'the guy in the middle is a giant'"
+  },
+  {
+   "id": "eyeline",
+   "q": "Does a person look at the wrong person, or drift back to the lens, when the prompt says who they look at?",
+   "fail_if": "wrong eyeline at any point",
+   "fix": "start the still facing the target; 'keeps his face turned towards them the whole time'",
+   "source": "flow.md: 'facing the camera, not the people eavesdropping'"
+  },
+  {
+   "id": "stray-gaze",
+   "q": "Does a background extra look at the camera, stand up, or do something that pulls the eye?",
+   "fail_if": "a distracting extra",
+   "fix": "keep the extras still or out of frame; re-roll",
+   "source": "'the guy closest to the camera… stands up and then sits down'"
+  },
+  {
+   "id": "missing",
+   "q": "Is anyone or anything the prompt asks for missing from the clip?",
+   "fail_if": "a required person or prop absent (needs --prompt)",
+   "fix": "fix the start still; re-roll",
+   "source": "'there is no one in the drivers seat'"
+  },
+  {
+   "id": "count",
+   "q": "Does the number of people or objects differ from the prompt, or change during the clip?",
+   "fail_if": "a wrong or changing count",
+   "fix": "fewer movers; re-roll",
+   "source": "'two satellites appear… just with one satellite'"
+  },
+  {
+   "id": "mask",
+   "q": "If anyone wears a full-face balaclava or mask: do eye holes, eyes, lips or skin show, does the emblem leave the left eye, or does the mask change?",
+   "fail_if": "any mask fault (skip if no mask)",
+   "fix": "fix the start still; re-roll",
+   "source": "'there's human eyes behind the yellow bally', 'we shouldnt see his lips', 'should always be on the left eye'"
+  },
+  {
+   "id": "mask-on",
+   "q": "Does someone pull on or take off a mask in a way that looks wrong?",
+   "fail_if": "the costume change looks fake",
+   "fix": "cut around it: start the clip with the mask already on",
+   "source": "'it looks terrible when they put the masks on'"
+  },
+  {
+   "id": "screens",
+   "q": "Do screens in the shot flash, show an overlay or a border?",
+   "fail_if": "any screen fault",
+   "fix": "describe the screens as off; put content in during the edit",
+   "source": "'the random tv screen flashing'"
+  },
+  {
+   "id": "nonsense",
+   "q": "Does anything happen that no real scene would show (a car drives into a bus, someone eats and talks at once)?",
+   "fail_if": "any nonsense",
+   "fix": "describe the real action; re-roll",
+   "source": "'the car drives straight into the bus', 'hes eating and talking at the same time'"
+  },
+  {
+   "id": "reference",
+   "q": "If a REFERENCE (the start still or an earlier shot) was given, does the clip change the set, props, layout, light or a character's condition from it?",
+   "fail_if": "a continuity break",
+   "fix": "attach the reference as the start frame; re-roll",
+   "source": "'this arrangement of chairs does not line up', 'we still have dirty Maddy'"
+  },
+  {
+   "id": "end-jump",
+   "q": "Do positions or heads jump suddenly, especially in the last second?",
+   "fail_if": "any pop or jump",
+   "fix": "trim the tail in the edit or re-roll",
+   "source": "'all of the heads just jump', 'the bus at the end of the shot jumps'"
+  },
+  {
+   "id": "ai-look",
+   "q": "Does the clip look like generic AI slop (glossy, staged, synthetic)?",
+   "fail_if": "it reads as AI at a glance",
+   "fix": "follow the story's look; simpler action; re-roll",
+   "source": "'the clips from here on, are a bit ai slop and boring'"
+  },
+  {
+   "id": "plastic",
+   "q": "Does anything meant to look real look cartoony, plastic or CGI?",
+   "fail_if": "any plastic or CGI surface",
+   "fix": "re-roll from a more real start still",
+   "source": "'far too kind of cartoony AI'"
+  },
+  {
+   "id": "grain-grade",
+   "q": "Is the grain far too heavy, or does the colour or grade shift during the clip or look grey and washed out?",
+   "fail_if": "a grain or grade fault",
+   "fix": "fix the grade in the edit; re-roll if baked in",
+   "source": "'a bit too Grainy', 'a noticeable grading shift', 'a tad too grey'"
+  },
+  {
+   "id": "flicker",
+   "q": "Do lights pulse, flicker or go out, or does a stray frame from another shot appear?",
+   "fail_if": "any flicker",
+   "fix": "keep light sources steady in the prompt; trim; re-roll",
+   "source": "'this scene flickers… the lights under the chairs', 'a very quick flicker of another shot'"
+  },
+  {
+   "id": "low-res",
+   "q": "Is the clip soft, pixelated or low resolution?",
+   "fail_if": "visible low quality",
+   "fix": "720p or higher, never 360p",
+   "source": "'these always come out awfully' (360p)"
+  },
+  {
+   "id": "lip-sync",
+   "q": "If someone speaks and there is audio: does the mouth move before or after the voice, or drift out of time?",
+   "fail_if": "a visible offset (skip if no speech)",
+   "fix": "lip-sync-dub skill: re-time the voice; cut away if it can't match",
+   "source": "'She starts speaking a good second before we hear the words', 'it's drifted quite a lot'"
+  },
+  {
+   "id": "lips",
+   "q": "If someone speaks: are there smears or artefacts on the lips, do they shape different words, or is the face side-on so sync can't read?",
+   "fail_if": "lip artefacts or wrong words (skip if no speech)",
+   "fix": "face the camera more; re-roll the talking clip",
+   "source": "'far too many artefacts… on the person's lips', 'the lip-syncing here is awful… we're looking at the side'"
+  },
+  {
+   "id": "frozen",
+   "q": "Does the picture freeze or stop moving while the sound carries on?",
+   "fail_if": "a frozen tail",
+   "fix": "a longer clip or a cutaway",
+   "source": "'we just sort of paused it'"
+  }
+ ]
+}

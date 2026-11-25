@@ -1,0 +1,127 @@
+{
+ "_about": "Filling the stadium: what scripts/scene/qa.py checks on every still and clip before Jack sees it. Each item comes from a note Jack or Matt gave (2026-11-24/25). Add to it whenever a new note names a fault.",
+ "still": [
+  {
+   "id": "women",
+   "q": "Are all the footballers women?",
+   "fail_if": "any footballer looks like a man",
+   "fix": "name every player as a woman; re-roll"
+  },
+  {
+   "id": "anatomy",
+   "q": "Does any person have extra or missing limbs, an extra arm or hand, fused or duplicated bodies, a melted face, or warped hands?",
+   "fail_if": "any such fault anywhere",
+   "fix": "re-roll; if one small figure, crop or blur it"
+  },
+  {
+   "id": "ground-contact",
+   "q": "Look at every person whose feet are off the ground. Is the height plausible for a real jump (feet no higher than about knee height), are the legs bent for take-off or landing, and is there a shadow on the grass directly below them? Also: is every standing or running person's foot touching the ground with a contact shadow?",
+   "fail_if": "anyone floats: feet too high for a jump, straight legs in the air, or no shadow under them",
+   "fix": "describe feet planted, the take-off or landing, the shadow under them; re-roll from words"
+  },
+  {
+   "id": "text",
+   "q": "Is there any readable text, letters, numbers, logo, crest, badge or brand mark anywhere: shirts (front and back), boards, screens, flags, scarves, the ball, staff bibs, signs?",
+   "fail_if": "any mark that reads as text, a number or a logo",
+   "fix": "describe the surface as plain and smooth; blur small marks in the edit; re-roll if large"
+  },
+  {
+   "id": "pasted",
+   "q": "Does anyone look cut out and pasted in: wrong scale for where they stand, wrong lighting, no shadow, edges that do not sit in the scene?",
+   "fail_if": "any person looks stuck on",
+   "fix": "regenerate the whole frame from words with the people part of the scene (no edit that adds people)"
+  },
+  {
+   "id": "diversity",
+   "q": "Looking at the faces you can make out (crowd, teams, families), is there a real mix of ethnicities, not all or nearly all white?",
+   "fail_if": "everyone, or nearly everyone, visible is white",
+   "fix": "describe the nearest faces one by one with heritage; give the crowd a stated mix; regenerate from words"
+  },
+  {
+   "id": "flags",
+   "q": "Is any flag bigger than about one person?",
+   "fail_if": "a flag bigger than a person (except the planned giant curtain flag in the walk-out shot)",
+   "fix": "scarves held up and three or four tea-towel-sized flags on short sticks"
+  },
+  {
+   "id": "teams",
+   "q": "Is a MATCH in play (players in match positions, the stand full, the goal, kick-off)? If so, are both teams there in full (roughly eleven red and eleven blue, plus a referee)? Before kick-off (warm-up, empty or filling stands, families arriving) a partly empty pitch is correct.",
+   "fail_if": "a match is in play and a team is clearly short or missing",
+   "fix": "attach a scripts/scene/formation.py layout and write the formation line by line"
+  },
+  {
+   "id": "stadium",
+   "q": "If the stadium is visible, does it match the REFERENCE: a red two-tier bowl, a red band with glass boxes between the tiers, one grey steel roof round a large open oval, a ring of floodlights?",
+   "fail_if": "a clearly different roof, stand shape or seat colour",
+   "fix": "attach the stadium still and describe it; re-roll"
+  },
+  {
+   "id": "real-club",
+   "q": "Does anything look like a real club or real stadium: a known kit pattern (for example red-and-white vertical stripes, red with white sleeves), a known crest, a famous stadium shape?",
+   "fail_if": "a recognisable real club or ground",
+   "fix": "plain solid red or blue kit and scarves; re-roll"
+  },
+  {
+   "id": "food",
+   "q": "Is any visible food clearly not vegetarian or not healthy (meat burgers, hot dogs, chips)?",
+   "fail_if": "any such food",
+   "fix": "falafel, salads, grain bowls, veggie wraps; re-roll"
+  },
+  {
+   "id": "physics",
+   "q": "Is anything else physically wrong: impossible geometry, duplicated people side by side, objects melting or merging, a ball or object hanging in the air with no reason?",
+   "fail_if": "any such fault",
+   "fix": "re-roll with the fault described away positively"
+  }
+ ],
+ "clip": [
+  {
+   "id": "morph",
+   "q": "Does any person, face, limb or object morph, melt, split, merge or change identity during the clip?",
+   "fail_if": "any morphing",
+   "fix": "fewer movers; keep the crowd still; re-roll"
+  },
+  {
+   "id": "teleport",
+   "q": "Does anything jump position between frames, appear from nowhere or vanish (balls, people, food, flags)?",
+   "fail_if": "any teleport or pop",
+   "fix": "keep objects still or out of frame; cut on a reaction"
+  },
+  {
+   "id": "ground-contact",
+   "q": "Do people's feet stay on the ground when they walk or run (no gliding, sliding or floating)?",
+   "fail_if": "anyone glides or floats",
+   "fix": "slower movement, feet planted, re-roll"
+  },
+  {
+   "id": "text",
+   "q": "Does readable text, a number or a logo appear at any point?",
+   "fail_if": "any",
+   "fix": "blur in the edit or re-roll"
+  },
+  {
+   "id": "women",
+   "q": "Are all footballers women throughout?",
+   "fail_if": "any looks like a man at any point",
+   "fix": "re-roll"
+  },
+  {
+   "id": "flags",
+   "q": "Do flags or scarves behave like cloth, without morphing into other shapes or swallowing people?",
+   "fail_if": "cloth morphs",
+   "fix": "fewer, smaller flags; scarves held still"
+  },
+  {
+   "id": "camera",
+   "q": "Is the camera motion smooth and believable, without warping the stadium or the people?",
+   "fail_if": "the set warps or the camera jerks",
+   "fix": "lock the camera and add the move in Premiere"
+  },
+  {
+   "id": "physics",
+   "q": "Is anything else physically wrong (fireworks or smoke that behave unnaturally, a ball with no physics, liquids)?",
+   "fail_if": "any such fault",
+   "fix": "keep it out of frame or still; re-roll"
+  }
+ ]
+}

@@ -58,6 +58,25 @@ For Flow still images always use **Nano Banana 2**. Never switch to Nano Banana 
 
 **How to apply:** pass `model: "Nano Banana 2"` on every `flow_generate_image` / `flow_generate_batch` call — the tool's default is Pro, so omitting it spends credits. If a frame seems to need Pro, say so and let him choose. Related: `style-tests-stay-in-flow-prompts-in-repo`, `use-omni-flash-not-veo`.
 
+## Jack 2026-11-25: scan every still and clip with the QA scanner BEFORE showing it, and fix what it finds
+
+Why: Jack kept spotting obvious faults (extra arms, floating people, eye holes in masks, clones, famous faces) in takes
+he was shown that hadn't been fixed first. The tool is `tools/qa-scanner/` (README.md for how it works, RESEARCH.md for the method). The
+checklist is `qa-checklist.json` at the repo root: one yes/no question per fault Jack or Kai has named, with the quote.
+
+The loop, for every generated still or clip, before it goes on a board or into a reply:
+1. Scan it: `python3 tools/qa-scanner/qa.py qa-checklist.json <files> [--ref <reference image>] [--prompt "<what it was meant to show>"]`.
+   Pass `--ref` for the character, set, mask or start still it must match. Pass `--prompt` so the count, missing and period checks work.
+2. Fix any FAIL myself. Surface marks (text, a logo, a colour, a small stray mark): a short `flow_edit_image`. People and layout
+   faults (anatomy, floating, pasted-in, clones, eyelines, mask faults, wrong counts, staging): regenerate from words with
+   the finding written into the prompt, never an edit (an edit keeps the geometry).
+3. Rescan. Up to three passes per shot, then show the best take and **name every flag still left**.
+4. When Jack or Kai name a new fault, add one item to `qa-checklist.json` straight away (id, q, fail_if, fix, source quote).
+
+Limits: it is a vision model, not a person. It is strong on limbs, text, clones and pasting; weaker on physics; not
+deterministic (for a final pick, run it three times and go with two out of three). A FAIL is more trustworthy than a PASS, so still look
+at every take at full size. It reads `GEMINI_API_KEY` from `.env`; it needs Pillow. Clips must be under 15 MB.
+
 ## Never hand over an image-edit prompt — always write a complete fresh generation prompt with the changes folded in.
 
 When a generated image needs changing, write a **complete new prompt** with the

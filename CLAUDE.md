@@ -45,6 +45,9 @@ only when `badcode.md` points to them.
 - **Read the board, never ask.** On any picks or notes page, dump the votes and notes yourself and act on them.
 - **Generated files leave a recipe** ([`docs/provenance/`](./docs/provenance/README.md)): the Flow MCP,
   `run.mts`, the TTS script and Suno `record` write it themselves; otherwise `scripts/provenance/prov.py card`.
+- **Scan before you show.** Every generated still or clip goes through `tools/qa-scanner/qa.py qa-checklist.json`
+  before Jack or Kai see it: fix the fails, rescan (up to three passes), then show the best take and name any flag left.
+  Add every new fault they name to `qa-checklist.json`. How: [`docs/rules/flow.md`](./docs/rules/flow.md) ("scan every still").
 - **Another story's example is never a recipe.** When a shared file names a story ("the Bank Robbery recipe", "Camping's
   narrator"), that's history: never copy its wording, settings or voice into another story unless Jack or Kai asks for
   exactly that. Write a prompt only from the story's own `badcode.md` and the engine's rules.
@@ -82,6 +85,7 @@ engine behaves, never a story's style.
 | `docs/government/` | The BadCode government (one rolling PR, merged by Kai or Jack) |
 | `docs/misc/` | Meeting notes and anything else |
 | Timeline index | https://claude.ai/artifact/KVLjAMnfz3NerFP9RQhxn6: every film's and short's timeline page. Rebuild with `scripts/scene/build-timeline-index.py` and republish to the same link when a timeline page changes |
+| `tools/qa-scanner/`, `qa-checklist.json` | The QA scanner for generated stills and clips, and our checklist of every fault named |
 | `apps/web`, `packages/comic` | The website; comics are written in code ([`packages/comic/AUTHORING.md`](./packages/comic/AUTHORING.md) before touching one) |
 | `chain/`, `packages/chain-*` | The coin toolchain ([`chain/README.md`](./chain/README.md) first; keep it coin-neutral) |
 | Media | The repo holds the words; `D:` (backed up to Drive) holds the media. Resolve a path with `localmap.py` before saying a file is missing |
