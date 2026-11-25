@@ -6,7 +6,7 @@
 
 Moved here from MEMORY.md on 2026-11-17 (Jack: keep everything, trim the index, so the index stops leaking story details into every session). Each line still points to its own memory file; nothing was deleted. The full old index is kept as `memory-index-archive-2026-11-17`. Each story's repo folder (RESUME.md, look.md, sound.md) is the fuller record.
 
-- [Karen story film: cut r8](karen/badcode.md) — NEWEST 2026-11-25 eve: cut r8, r7 plus Kai's 2 notes ("basically there"; 5:18, no frozen clips), on https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC (round 8) and in Premiere as `karen-1-story-r8`; awaiting Kai's last notes. Rebuild: scripts/karen/story-cut-r8.py
+- [Karen story film: cut r8](karen/badcode.md) — NEWEST 2026-11-25 eve: cut r8, r7 plus Kai's 2 notes ("basically there"; 5:18, no frozen clips), on https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC (round 8) and in Premiere as `karen-1-story-r8`; Kai called it THE CUT (a couple of tweaks to come 2026-11-26). Rebuild: scripts/karen/story-cut-r8.py
 - [Karen: resume at the shot list](karen-resume-at-shot-list.md) — the film's cut order and the next-session TODO live in `docs/stories/karen/shot-list.md`.
 - [The wank tank is a black BMW X8](wank-tank-is-a-black-bmw-x8.md) — Camping: name the marque in prompts; its plate reads `BAD C0DE` (2026-09-17), every other plate stays unreadable.
 - [Camping: grade, moves, cuts DONE, awaiting review](camping-next-three-premiere-jobs.md) — first pass 2026-09-14; undo recipe + full-revert backup in assembly.md.
