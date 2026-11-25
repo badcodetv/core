@@ -3,7 +3,7 @@
   "id": "2026-11-25-household-energy-payment",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "jury",
+  "stage": "published",
   "run": {
     "mode": "live",
     "run_date": "2026-11-25",
@@ -86,7 +86,8 @@
       "sim-citizens",
       "sim-bench",
       "sim-gate",
-      "sim-jury"
+      "sim-jury",
+      "sim-minister"
     ]
   },
   "citizens": {
@@ -514,5 +515,52 @@
     ],
     "review": "2027-11-25",
     "real_jury": false
-  }
+  },
+  "minister": {
+    "post": "energy-climate",
+    "decision": "signed",
+    "trial": "Keep the £100 for bands A to D. In 12 English councils drawn by lot from volunteers, any household struggling to heat its home claims a further £100, in any band, with no income paperwork: online, by post or in person, paid within 10 working days. 12 similar councils keep today's help. £10m split evenly, each share held for winter, spending published weekly.",
+    "fail_number": "Provisional: fails if households missed fall by less than 20% against the 12 councils keeping today's help by 31 March 2027, or if any council's share runs out before then.",
+    "stop": "2027-05-31",
+    "statement": "Twelve simulated jurors, drawn by lot, voted 5 of 12 for help that follows need, not the tax band. Three wanted records, two a local panel, two just paying bands A to D.\n\nI'm signing what the five chose. The trade-off is plain: no income paperwork means we take people at their word, and £10m pays £100 to 100,000 homes at most. So: 12 councils, picked by lot, the money split evenly and held for winter.\n\nA tax band tells you what a house is worth. It doesn't tell you who's cold. We count, and the number can say we're wrong."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "answer": "issue",
+      "claim": "At least one English council publicly confirms it has started paying the £100 Household Energy Payment by 18 January 2027.",
+      "prior": 0.85,
+      "due": "2027-01-18",
+      "rule": "True if a council website or a news report dated 4 to 18 January 2027 says payments have started. False if none is found.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "answer": "issue",
+      "claim": "By 28 February 2027 the government publishes a total of how many households have been paid the £100 Household Energy Payment.",
+      "prior": 0.4,
+      "due": "2027-02-28",
+      "rule": "True if a GOV.UK page or ministerial statement dated by 28 February 2027 gives a count of households paid. False otherwise.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p3",
+      "answer": "issue",
+      "claim": "By 31 March 2027 the government extends the main £100 payment to homes in council tax bands E to H.",
+      "prior": 0.06,
+      "due": "2027-03-31",
+      "rule": "True if GOV.UK announces the main payment will cover any home in bands E to H in England. The councils' discretionary fund does not count.",
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "result": "pending"
+    }
+  ]
 }
