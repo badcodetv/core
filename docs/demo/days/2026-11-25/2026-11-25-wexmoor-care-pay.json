@@ -1,34 +1,226 @@
 {
- "schema": "fp-demo/1",
- "id": "2026-11-25-wexmoor-care-pay",
- "stage": "case",
- "run": { "mode": "daily", "run_date": "2026-11-25", "news_date": "2026-11-25" },
- "plan": { "area": "health", "ending": "accepted" },
- "case": {
-  "title": "Wexmoor: a pay rise for care workers while the national deal is awaited",
-  "short": "WEXMOOR CARE PAY",
-  "question": "Should Wexmoor use its care fund to add a flat pay rise for every care worker on its contracts, or to give long-serving staff a bonus?",
-  "place": "Wexmoor (made up)",
-  "story": "Wexmoor is a made-up county council that buys home care from 14 small firms. About 1,400 care workers are paid close to the minimum wage, and the firms say they lose someone every few weeks to shops and warehouses. The council has set aside 2.4 million pounds a year for two years, from April 2027, to bridge the gap until a national pay deal arrives. A flat extra 1 pound an hour for every contracted care worker would cost about 1.9 million pounds a year with employer costs. A bonus for staff with long service would cost less, but leave newer and part-time staff out. Firms, unions and families all say they want the money in pay packets and the visits to carry on.",
-  "in_the_news": {
-   "headline": "New Chair to lead landmark care worker pay talks",
-   "why": "England's first sector-wide pay talks for care workers will not settle until April 2028, so a made-up council has to decide what to do for its care workers in the meantime.",
-   "memory_id": "1e50afae-cc4e-4227-825f-1c5d8c27ed66",
-   "sources": ["s1"]
+  "schema": "fp-demo/1",
+  "id": "2026-11-25-wexmoor-care-pay",
+  "stage": "citizens",
+  "run": {
+    "mode": "daily",
+    "run_date": "2026-11-25",
+    "news_date": "2026-11-25"
   },
-  "facts": [
-   { "text": "The first Fair Pay Agreement for adult social care in England is backed by 500 million pounds and covers 1.5 million people.", "sources": ["s1"] },
-   { "text": "Negotiations start in April 2027, and the first settlement is due to be introduced by April 2028.", "sources": ["s1"] }
-  ]
- },
- "sources": [
-  {
-   "id": "s1",
-   "title": "New Chair to lead landmark care worker pay talks",
-   "publisher": "Department of Health and Social Care",
-   "date": "2026-11-25",
-   "url": "https://www.gov.uk/government/news/new-chair-to-lead-landmark-care-worker-pay-talks"
+  "plan": {
+    "area": "health",
+    "ending": "accepted"
+  },
+  "case": {
+    "title": "Wexmoor: a pay rise for care workers while the national deal is awaited",
+    "short": "WEXMOOR CARE PAY",
+    "question": "Should Wexmoor use its care fund to add a flat pay rise for every care worker on its contracts, or to give long-serving staff a bonus?",
+    "place": "Wexmoor (made up)",
+    "story": "Wexmoor is a made-up county council that buys home care from 14 small firms. About 1,400 care workers are paid close to the minimum wage, and the firms say they lose someone every few weeks to shops and warehouses. The council has set aside 2.4 million pounds a year for two years, from April 2027, to bridge the gap until a national pay deal arrives. A flat extra 1 pound an hour for every contracted care worker would cost about 1.9 million pounds a year with employer costs. A bonus for staff with long service would cost less, but leave newer and part-time staff out. Firms, unions and families all say they want the money in pay packets and the visits to carry on.",
+    "in_the_news": {
+      "headline": "New Chair to lead landmark care worker pay talks",
+      "why": "England's first sector-wide pay talks for care workers will not settle until April 2028, so a made-up council has to decide what to do for its care workers in the meantime.",
+      "memory_id": "1e50afae-cc4e-4227-825f-1c5d8c27ed66",
+      "sources": [
+        "s1"
+      ]
+    },
+    "facts": [
+      {
+        "text": "The first Fair Pay Agreement for adult social care in England is backed by 500 million pounds and covers 1.5 million people.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "text": "Negotiations start in April 2027, and the first settlement is due to be introduced by April 2028.",
+        "sources": [
+          "s1"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "New Chair to lead landmark care worker pay talks",
+      "publisher": "Department of Health and Social Care",
+      "date": "2026-11-25",
+      "url": "https://www.gov.uk/government/news/new-chair-to-lead-landmark-care-worker-pay-talks"
+    }
+  ],
+  "made_by": {
+    "workers": [
+      "demo-clerk",
+      "demo-citizens"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-25-wexmoor-care-pay/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0126",
+      "c0651",
+      "c0707",
+      "c0585",
+      "c0989",
+      "c0432",
+      "c0297",
+      "c0095",
+      "c0242",
+      "c0256",
+      "c0640",
+      "c0959",
+      "c0940",
+      "c0581",
+      "c0762",
+      "c0071",
+      "c0425",
+      "c0840",
+      "c0364",
+      "c0179",
+      "c0452",
+      "c0240",
+      "c0119",
+      "c0251",
+      "c0112",
+      "c0286",
+      "c0400",
+      "c0345",
+      "c0558",
+      "c0814",
+      "c0000",
+      "c0192",
+      "c0402",
+      "c0143",
+      "c0649",
+      "c0094",
+      "c0212",
+      "c0557",
+      "c0929",
+      "c0643",
+      "c0181",
+      "c0991",
+      "c0732",
+      "c0350",
+      "c0252",
+      "c0058",
+      "c0716",
+      "c0311",
+      "c0739",
+      "c0498",
+      "c0398",
+      "c0911",
+      "c0757",
+      "c0483",
+      "c0236",
+      "c0027",
+      "c0553",
+      "c0928",
+      "c0841",
+      "c0587",
+      "c0138",
+      "c0469",
+      "c0051",
+      "c0069",
+      "c0319",
+      "c0902",
+      "c0272",
+      "c0335",
+      "c0886",
+      "c0610",
+      "c0786",
+      "c0199",
+      "c0123",
+      "c0424",
+      "c0413",
+      "c0912",
+      "c0718",
+      "c0173",
+      "c0174",
+      "c0480",
+      "c0226",
+      "c0965",
+      "c0208",
+      "c0770",
+      "c0562",
+      "c0726",
+      "c0956",
+      "c0455",
+      "c0646",
+      "c0505",
+      "c0055",
+      "c0376",
+      "c0614",
+      "c0680",
+      "c0942",
+      "c0670",
+      "c0078",
+      "c0738",
+      "c0218",
+      "c0214"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "id": "t1",
+        "kind": "test",
+        "text": "Says every care worker on a council contract gets the rise, part-time and zero-hours included.",
+        "backers": 88
+      },
+      {
+        "id": "t2",
+        "kind": "test",
+        "text": "Says how the council checks the money reaches pay slips, and who does the checking.",
+        "backers": 71
+      },
+      {
+        "id": "t3",
+        "kind": "test",
+        "text": "Names one owner for the scheme and a start date of April 2027.",
+        "backers": 64
+      },
+      {
+        "id": "t4",
+        "kind": "test",
+        "text": "Says what happens to the rise when the national pay deal arrives in 2028.",
+        "backers": 79
+      },
+      {
+        "id": "t5",
+        "kind": "limit",
+        "text": "Must not cost more than 2.4 million pounds a year.",
+        "backers": 96
+      },
+      {
+        "id": "t6",
+        "kind": "limit",
+        "text": "Must not cut the hours of care the council buys, or take money from other care budgets.",
+        "backers": 90
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0581",
+        "who": "a man, 40s, West Midlands, private rent",
+        "text": "Give it to everyone on the contract, not just the ones who have been there longest. The new starters are the ones who leave first, so a bonus for stayers does nothing for them."
+      },
+      {
+        "citizen": "c0256",
+        "who": "a woman, 20s, South East, social housing",
+        "text": "A flat hour on every pay slip, in writing, with a start date. If I can't see it on my payslip in April, I'll know nobody checked."
+      },
+      {
+        "citizen": "c0989",
+        "who": "a woman, 70s, North West, retired",
+        "text": "Check it actually reaches the carers. Last time the money went to the firm and the firm kept it. Name someone at the council who answers for it."
+      },
+      {
+        "citizen": "c0940",
+        "who": "a man, 40s, North West, long-term sick",
+        "text": "Carers on zero hours need the rise too. And don't cut my visits to pay for it. I need the same care every week."
+      }
+    ]
   }
- ],
- "made_by": { "workers": ["demo-clerk"] }
 }
