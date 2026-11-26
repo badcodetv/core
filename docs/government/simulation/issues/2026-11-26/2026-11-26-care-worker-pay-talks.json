@@ -3,7 +3,7 @@
   "id": "2026-11-26-care-worker-pay-talks",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "clerk",
+  "stage": "citizens",
   "run": {
     "mode": "live",
     "run_date": "2026-11-26",
@@ -14,7 +14,11 @@
     "short": "CARE WORKER PAY",
     "question": "Care workers' pay will now be negotiated by unions and employers, backed by £500 million. Who should pay for any rise above that, and who should have the last word on the deal?",
     "summary": "On 25 November 2026 the government named Baroness Christina McAnea to chair the new body that will negotiate care workers' pay, terms and conditions in England, covering about 1.5 million people. The first Fair Pay Agreement is backed by £500 million, talks start in April 2027 and the first settlement is due by April 2028. Councils will have a non-voting, advisory role, and the Secretary of State sets the funding limit for each round. In 2024-25 frontline care workers earned on average 79p an hour above the minimum wage, according to Resolution Foundation analysis.",
-    "summary_sources": ["s1", "s2", "s3"],
+    "summary_sources": [
+      "s1",
+      "s2",
+      "s3"
+    ],
     "field": "social-care",
     "owner": "health",
     "slot": "longest-wait",
@@ -23,7 +27,9 @@
       {
         "headline": "Baroness McAnea appointed to chair care worker Fair Pay Agreement talks",
         "memory_id": "8d76b369-43e3-4a5f-8958-e40e8e392858",
-        "sources": ["s1"]
+        "sources": [
+          "s1"
+        ]
       }
     ]
   },
@@ -52,6 +58,181 @@
     }
   ],
   "made_by": {
-    "workers": ["sim-clerk"]
+    "workers": [
+      "sim-clerk",
+      "sim-citizens"
+    ]
+  },
+  "citizens": {
+    "pool": "pool-2026-11-23",
+    "seed": "2026-11-26-care-worker-pay-talks/citizens",
+    "drawn": 100,
+    "ids": [
+      "c0733",
+      "c0684",
+      "c0263",
+      "c0709",
+      "c0037",
+      "c0288",
+      "c0914",
+      "c0468",
+      "c0716",
+      "c0864",
+      "c0939",
+      "c0095",
+      "c0790",
+      "c0593",
+      "c0377",
+      "c0053",
+      "c0058",
+      "c0135",
+      "c0876",
+      "c0111",
+      "c0504",
+      "c0314",
+      "c0315",
+      "c0403",
+      "c0768",
+      "c0979",
+      "c0809",
+      "c0149",
+      "c0722",
+      "c0693",
+      "c0999",
+      "c0982",
+      "c0701",
+      "c0382",
+      "c0509",
+      "c0267",
+      "c0243",
+      "c0647",
+      "c0776",
+      "c0421",
+      "c0107",
+      "c0707",
+      "c0753",
+      "c0744",
+      "c0945",
+      "c0719",
+      "c0862",
+      "c0284",
+      "c0673",
+      "c0980",
+      "c0620",
+      "c0449",
+      "c0528",
+      "c0956",
+      "c0075",
+      "c0114",
+      "c0738",
+      "c0611",
+      "c0160",
+      "c0657",
+      "c0459",
+      "c0962",
+      "c0881",
+      "c0662",
+      "c0826",
+      "c0446",
+      "c0918",
+      "c0798",
+      "c0276",
+      "c0213",
+      "c0950",
+      "c0987",
+      "c0810",
+      "c0019",
+      "c0036",
+      "c0118",
+      "c0138",
+      "c0889",
+      "c0800",
+      "c0083",
+      "c0006",
+      "c0587",
+      "c0395",
+      "c0251",
+      "c0090",
+      "c0401",
+      "c0963",
+      "c0972",
+      "c0605",
+      "c0586",
+      "c0885",
+      "c0997",
+      "c0490",
+      "c0493",
+      "c0108",
+      "c0262",
+      "c0177",
+      "c0455",
+      "c0233",
+      "c0917"
+    ],
+    "model": "claude-haiku-5-5",
+    "tests": [
+      {
+        "kind": "test",
+        "text": "Government pays any rise, so councils and care firms aren't left to find it.",
+        "backers": 37
+      },
+      {
+        "kind": "test",
+        "text": "Care workers get a proper wage, and it isn't cut later.",
+        "backers": 88
+      },
+      {
+        "kind": "test",
+        "text": "Talks settle quickly, not after another year of waiting.",
+        "backers": 9
+      },
+      {
+        "kind": "limit",
+        "text": "Care homes and home care don't close or get cut.",
+        "backers": 34
+      },
+      {
+        "kind": "limit",
+        "text": "Council tax, rent and bills don't go up to pay for it.",
+        "backers": 48
+      },
+      {
+        "kind": "limit",
+        "text": "No open-ended bill: a set limit and a review date.",
+        "backers": 15
+      }
+    ],
+    "voices": [
+      {
+        "citizen": "c0716",
+        "who": "75, South West, in work, rents privately",
+        "text": "Carers should get paid, but keep it within budget. No more tax on working people for other people's wages."
+      },
+      {
+        "citizen": "c0790",
+        "who": "87, Northern Ireland, retired, owns with a mortgage",
+        "text": "Pay carers a fair wage, but who pays? Keep my own fees down, I'm on a fixed pension."
+      },
+      {
+        "citizen": "c0684",
+        "who": "72, South West, retired, owns outright",
+        "text": "Carers paid properly; I'm not sure how it's paid for. Don't let care cost my family more when Mum needs it."
+      },
+      {
+        "citizen": "c0263",
+        "who": "66, East Midlands, retired, owns outright",
+        "text": "Decent wages for the carers who looked after my mum. No more cuts to the home care my area can afford."
+      },
+      {
+        "citizen": "c0037",
+        "who": "42, Yorkshire and The Humber, in work, owns with a mortgage",
+        "text": "Let the government pay, so councils don't get stuck with it. Don't pay for it by cutting bins and libraries."
+      },
+      {
+        "citizen": "c0053",
+        "who": "23, North West, looking after home and family, rents privately",
+        "text": "Carers should be paid more if they're doing the hard work. Don't make my rent or bills go up to fund it."
+      }
+    ]
   }
 }
