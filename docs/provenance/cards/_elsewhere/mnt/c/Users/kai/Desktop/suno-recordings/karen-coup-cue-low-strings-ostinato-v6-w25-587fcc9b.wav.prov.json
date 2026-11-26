@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/kai/Desktop/suno-recordings/karen-coup-cue-low-strings-ostinato-v6-w25-587fcc9b.wav",
+ "made": "2026-11-26T12:44:38.362Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "587fcc9b-5240-4407-b632-a4021ea95482",
+ "inputs": {
+  "title": "Karen coup cue-low-strings-ostinato-v6-w25",
+  "song": "https://suno.com/song/587fcc9b-5240-4407-b632-a4021ea95482"
+ },
+ "settings": {
+  "durationSec": 107.2
+ }
+}

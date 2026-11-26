@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/kai/Desktop/suno-recordings/karen-coup-cue-analog-synth-pulse-v6-w35-17b3f0ec.wav",
+ "made": "2026-11-26T12:46:56.399Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "17b3f0ec-d711-4f91-889a-33eb87f28888",
+ "inputs": {
+  "title": "Karen coup cue-analog-synth-pulse-v6-w35",
+  "song": "https://suno.com/song/17b3f0ec-d711-4f91-889a-33eb87f28888"
+ },
+ "settings": {
+  "durationSec": 132
+ }
+}

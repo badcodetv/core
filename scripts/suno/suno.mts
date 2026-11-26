@@ -395,7 +395,10 @@ const SEG = `
     const s = [...document.querySelectorAll('span')].find(x => live(x) && c(x.textContent) === label);
     if (!s) return null;
     let r = s.parentElement;
-    for (let i = 0; i < 6 && r; i++, r = r.parentElement) if (r.querySelector('button')) return r;
+    // 2026-11-26: each label now carries its own info button ("More information about Max Mode"); it is not an
+    // option, so climb past it to the row that holds the real Off/On (Male/Female, ...) buttons.
+    const opt = (b) => !/^More information/i.test(b.getAttribute('aria-label') || '');
+    for (let i = 0; i < 6 && r; i++, r = r.parentElement) if ([...r.querySelectorAll('button')].some(opt)) return r;
     return null;
   };
   const segOn = (b) => /hxc-btn-variant-standard/.test(String(b.className));

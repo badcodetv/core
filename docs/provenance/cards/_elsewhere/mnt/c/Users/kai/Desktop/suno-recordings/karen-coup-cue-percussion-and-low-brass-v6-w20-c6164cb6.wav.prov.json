@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/kai/Desktop/suno-recordings/karen-coup-cue-percussion-and-low-brass-v6-w20-c6164cb6.wav",
+ "made": "2026-11-26T12:51:34.177Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "c6164cb6-5223-4623-9d5e-c927d32f64f1",
+ "inputs": {
+  "title": "Karen coup cue-percussion-and-low-brass-v6-w20",
+  "song": "https://suno.com/song/c6164cb6-5223-4623-9d5e-c927d32f64f1"
+ },
+ "settings": {
+  "durationSec": 120
+ }
+}

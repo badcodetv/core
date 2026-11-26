@@ -456,9 +456,14 @@ def sfx():
     s['siren'] = SEG / 'sfx-siren.wav'
     ff('-f', 'lavfi', '-i', "aevalsrc='0.3*sin(2*PI*750*t-2*PI*119.4*cos(2*PI*t/3))':s=48000:d=8", '-af',
        'lowpass=f=1800,aecho=0.8:0.6:180|340:0.4|0.25,afade=t=in:d=1.5,afade=t=out:st=5.5:d=2.5', '-ac', 2, s['siren'])
+    # r9 (Kai: 'make the splash louder'): the noise splash made here read as a gunshot once raised; now the sound of a
+    # Flow clip made for it (a phone dropping into the night river, r6-r9splash): its splash only, the clap-like first
+    # hit softened, the same open-air slap as Karen's line
     s['splash'] = SEG / 'sfx-splash.wav'
-    ff('-f', 'lavfi', '-i', 'anoisesrc=c=white:a=0.7:d=1.6:r=48000', '-af',
-       "lowpass=f=2200,highpass=f=120,volume='min(1,t*40)*exp(-4.5*t)':eval=frame", '-ac', 2, s['splash'])
+    # the plop sits at 1.9 s, ~15 dB over the river under it: cut tight round it, lift it, limit the peak
+    ff('-ss', 1.75, '-t', 1.6, '-i', R6 / 'video/r6-r9splash-r9splash-start.mp4', '-vn', '-af',
+       'aresample=48000,highpass=f=90,volume=16dB,alimiter=limit=0.6:attack=1:release=40,aecho=0.8:0.6:150|330:0.18|0.09,'
+       'afade=t=in:d=0.03,afade=t=out:st=0.9:d=0.7', '-ac', 2, s['splash'])
     # r9 (Kai at1474: 'an outside atmosphere'): the sound of a Flow clip made for it (an empty night riverside: waves on
     # the wall, wind, far bridge traffic, one far horn; no voices). Generated noise beds read as static on the listen pass.
     s['night'] = SEG / 'sfx-night.wav'
@@ -700,7 +705,7 @@ shout = clip('r4-shout-river-shout-b.mp4')
 block([vox('lvl_k401d.wav', 'karen', 'Karen (Gacrux)', 'You hear that, Sean? Fuck you, Sean!', fx='outdoor')],
       [(shout, 0.0, None, {'what': 'r4: Karen throws the phone into the river (the take Kai picked, ungraded)'})], lead=0.2, tail=1.6)
 block([], [(VIDS / 'seagull/seagull vid.mp4', 6.6, 2.2, {'what': 'seagull vid (the phone in the water)'})], min_dur=2.2)
-ev(S['splash'], t - 2.3, 'sfx', what='splash (made here)', gain=-6)   # r9 (Kai: louder): raised, it read as a gunshot; a real splash (Flow, sound only) replaces it
+ev(S['splash'], t - 2.45, 'sfx', what='splash (r6-r9splash.mp4, its sound only; louder in r9: Kai)', gain=0)
 ev(S['night'], night0 + 0.4, 'sfx', what='night by the river (r9-night-river.mp4, its sound only)', dur=t - night0 - 0.4, gain=-5, fx='score')   # 'score': looped, faded in and out
 
 beat('4', 'The morning, the phone box')
@@ -880,7 +885,14 @@ for f, a, z, inp in SCORE:
     events.append({'stem': 'mus-score', 't': q(a), 'dur': z - a, 'what': f, 'src': str(MUS / f), 'in': inp, 'gain': MUS_DB, 'fx': 'score'})
 # r6 (Kai: "the music should turn to dramatic music"): the orchestral score Flow made with the evacuation take, from the
 # screen breaking up through Times Square (the library's six cues are all mellow jazz / hip-hop)
-if EVAC_B.exists():
+# r9 (Kai: "please use Suno to your heart's content"): a real coup cue from the Suno round
+# docs/stories/karen/songs/coup-cue-r1, from the screen flashing on, under Sean and the evacuation, out on Times Square
+COUP_CUE = (K / '_outside/Karen/coup-cue-r1/coup-dark-boom-bap-b-d4dcb039.wav', 0.0, -12.0)   # Kai's pick 2026-11-26 (Suno d4dcb039, 'dark boom bap'): from the top, the beat drops 11 s in, on Sean
+if COUP_CUE:
+    cf, cin, cg = COUP_CUE
+    events.append({'stem': 'mus-score', 't': q(music_off - 0.2), 'dur': drama1 - music_off + 1.4,
+                   'what': f'{pathlib.Path(cf).name} (Suno coup cue, round 1)', 'src': str(cf), 'in': cin, 'gain': cg, 'fx': 'score'})
+elif EVAC_B.exists():
     events.append({'stem': 'mus-score', 't': q(drama0 - 0.2), 'dur': min(drama1 - drama0 + 1.2, 8.0), 'what': f'{EVAC_B.name} (its own score: timpani, brass, strings)',
                    'src': str(EVAC_B), 'in': 0.0, 'gain': -10.0, 'fx': 'score'})
 

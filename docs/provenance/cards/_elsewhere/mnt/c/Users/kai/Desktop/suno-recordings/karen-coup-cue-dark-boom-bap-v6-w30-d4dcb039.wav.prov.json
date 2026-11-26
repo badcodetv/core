@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/kai/Desktop/suno-recordings/karen-coup-cue-dark-boom-bap-v6-w30-d4dcb039.wav",
+ "made": "2026-11-26T12:57:37.004Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "d4dcb039-3068-4909-a975-818f10b6d2d5",
+ "inputs": {
+  "title": "Karen coup cue-dark-boom-bap-v6-w30",
+  "song": "https://suno.com/song/d4dcb039-3068-4909-a975-818f10b6d2d5"
+ },
+ "settings": {
+  "durationSec": 151.36
+ }
+}

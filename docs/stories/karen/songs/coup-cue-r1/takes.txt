@@ -1,0 +1,12 @@
+low-strings-ostinato-a 6a705cdd-c1b5-43fd-b8a0-2f363a5e4ce4
+low-strings-ostinato-b 587fcc9b-5240-4407-b632-a4021ea95482
+analog-synth-pulse-a 17b3f0ec-d711-4f91-889a-33eb87f28888
+analog-synth-pulse-b b7c995b3-1d93-4a0a-8bda-b34c02449c98
+percussion-and-low-brass-a c6164cb6-5223-4623-9d5e-c927d32f64f1
+percussion-and-low-brass-b 49785924-0efc-4a58-8660-368842682e01
+dark-boom-bap-a bff9aa9d-5380-4086-830d-b4a05f0bfff8
+dark-boom-bap-b d4dcb039-3068-4909-a975-818f10b6d2d5
+solo-low-piano-a d9ac1e2b-4cc9-4ebb-bc4f-4c26a3ac6553
+solo-low-piano-b f6b39316-b25d-4eac-a091-ec03996bd2c0
+hybrid-glitch-sound-design-a 7d286ec6-7b76-41f1-835b-6eb2962a392f
+hybrid-glitch-sound-design-b 9e2137bc-bd8a-4ff8-bd91-7b7c3a3839f1
