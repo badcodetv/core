@@ -1,0 +1,57 @@
+{
+  "schema": "fp-sim/1",
+  "id": "2026-11-26-care-worker-pay-talks",
+  "simulated": true,
+  "stamp": "SIMULATED",
+  "stage": "clerk",
+  "run": {
+    "mode": "live",
+    "run_date": "2026-11-26",
+    "news_date": "2026-11-26"
+  },
+  "issue": {
+    "title": "Care worker pay talks: who pays for the first Fair Pay Agreement?",
+    "short": "CARE WORKER PAY",
+    "question": "Care workers' pay will now be negotiated by unions and employers, backed by £500 million. Who should pay for any rise above that, and who should have the last word on the deal?",
+    "summary": "On 25 November 2026 the government named Baroness Christina McAnea to chair the new body that will negotiate care workers' pay, terms and conditions in England, covering about 1.5 million people. The first Fair Pay Agreement is backed by £500 million, talks start in April 2027 and the first settlement is due by April 2028. Councils will have a non-voting, advisory role, and the Secretary of State sets the funding limit for each round. In 2024-25 frontline care workers earned on average 79p an hour above the minimum wage, according to Resolution Foundation analysis.",
+    "summary_sources": ["s1", "s2", "s3"],
+    "field": "social-care",
+    "owner": "health",
+    "slot": "longest-wait",
+    "slot_reason": "Social care last came up on 12 November, and no field has waited longer with a UK story today. On 25 November the government named the chair who will lead care workers' pay talks, so the question of who pays is now live.",
+    "news": [
+      {
+        "headline": "Baroness McAnea appointed to chair care worker Fair Pay Agreement talks",
+        "memory_id": "8d76b369-43e3-4a5f-8958-e40e8e392858",
+        "sources": ["s1"]
+      }
+    ]
+  },
+  "poll": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "New Chair to lead landmark care worker pay talks",
+      "publisher": "GOV.UK (Department of Health and Social Care)",
+      "date": "2026-11-25",
+      "url": "https://www.gov.uk/government/news/new-chair-to-lead-landmark-care-worker-pay-talks"
+    },
+    {
+      "id": "s2",
+      "title": "Fair Pay Agreement process in adult social care: government response",
+      "publisher": "GOV.UK (Department of Health and Social Care)",
+      "date": "2026-07-16",
+      "url": "https://www.gov.uk/government/consultations/fair-pay-agreement-process-in-adult-social-care/outcome/fair-pay-agreement-process-in-adult-social-care-government-response"
+    },
+    {
+      "id": "s3",
+      "title": "National Care Service: Here's how much carers actually earn",
+      "publisher": "The Big Issue",
+      "date": "2026-07-31",
+      "url": "https://www.bigissue.com/news/social-justice/national-care-service-carers-social-care-minimum-wage-unpaid/"
+    }
+  ],
+  "made_by": {
+    "workers": ["sim-clerk"]
+  }
+}
