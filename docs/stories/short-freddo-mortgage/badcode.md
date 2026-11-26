@@ -26,7 +26,7 @@ Stills model: **Nano Banana 2.1** (Nano Banana 2 left Flow's menu on 2026-11-17;
 ## Library pieces in use
 - **Clean room** (picked by Jack, 2026-11-17, from real photo / music first / balaclava / clean room). Copied in:
   every still and clip prompt is written from fresh web research by sealed writers who read one brief file and
-  nothing else from the repo (`scripts/variations/sealed-writer.sh` or the `clean-room-writer` agent, never
+  nothing else from the repo (`scripts/variations/sealed-writer.sh`, never
   `general-purpose`), run verbatim. Never paste an old research file or another video's notes into a brief.
 
 ## Where the detail is

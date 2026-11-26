@@ -414,7 +414,7 @@ The method that worked:
 
 **Breach found 2026-11-07 (Camping rappers, "like a geography teacher"):** the clip briefs pasted in a RECYCLED research file (Bank Robbery's action-clip research) and quoted Jack's note about another video, so restraint wording leaked through the clean room. Step 1 means fresh web research every job; never paste an old research file or another video's notes into a brief. Traps: docs/google-flow/same-clip-traps.md.
 
-**Update 2026-11-17:** the writers must be truly sealed: run them with `scripts/variations/sealed-writer.sh` or the `clean-room-writer` agent, never `general-purpose` (which loads CLAUDE.md + this memory). See `sealed-writers-must-not-see-repo`.
+**Update 2026-11-17:** the writers must be truly sealed: run them with `scripts/variations/sealed-writer.sh`, never `general-purpose` (which loads CLAUDE.md + this memory). See `sealed-writers-must-not-see-repo`.
 
 ## Kai drives Google Flow by hand (2026-08-16); but Jack (2026-10-21) wants Claude to run Flow itself and pick the best take.
 

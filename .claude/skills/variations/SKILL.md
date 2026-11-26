@@ -20,7 +20,7 @@ prompt by `scripts/variations/fresh.py` (a hook runs it before every Flow and `s
 
 **2026-11-17: the writers must not be plain `general-purpose` subagents.** Tested: they load the whole CLAUDE.md and
 the memory index, which has grown back to 120+ lines of other stories' details. Run each writer with
-`scripts/variations/sealed-writer.sh` (or the `clean-room-writer` agent, `omitClaudeMd: true`).
+`scripts/variations/sealed-writer.sh`.
 
 **You do not write the prompts. Not one word of them.** You collect raw inputs, spawn writers,
 run the gate, and run the round. Every step where the session paraphrases, retypes or "tidies"
