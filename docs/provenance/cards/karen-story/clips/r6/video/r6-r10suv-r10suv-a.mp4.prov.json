@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r10suv-r10suv-a.mp4",
+ "made": "2026-11-26T15:37:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera at night. The agent holds the rear door of the black SUV; the woman in the camel cardigan steps fully out onto the wet pavement and walks away from the camera towards the floodlit building's steps, her back to the camera throughout. The agent shuts the door and follows her. The flags stir in the breeze, a car passes. Movement continues right to the last frame. Sound: a city night, a car door closing. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10suv-a.jpg",
+ "why": "Kai's note on cut r9, 2026-11-26, at7103: Karen gets out of a government SUV and goes into an important building",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10suv-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r10suv",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T15:35:38.935Z"
+ }
+}

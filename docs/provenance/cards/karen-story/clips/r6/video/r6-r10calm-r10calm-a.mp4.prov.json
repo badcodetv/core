@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r10calm-r10calm-a.mp4",
+ "made": "2026-11-26T15:37:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The woman stands inside the open steel phone box, right against the phone, the receiver pressed to her ear and the cord slack. Calm and smug, she listens, gives a small slow nod, says a few unhurried words into the receiver and taps her fingers on the steel shelf. She never steps out of the box and never moves away from the phone. Behind her, people walk past and traffic moves. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10calm-a.jpg",
+ "why": "Kai's note on cut r9, 2026-11-26, at2929: she stood far too far from the phone",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10calm-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r10calm",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T15:35:03.291Z"
+ }
+}

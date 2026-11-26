@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10suv-a-b.png",
+ "made": "2026-11-26T15:30:33.539Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight in present-day Manhattan. A black government SUV with tinted windows has just pulled up at the kerb in front of a grand, floodlit stone building with tall columns, broad steps and two lit flags on poles. @Karen, in her camel cardigan, cream blouse and taupe trousers, is stepping out of the open rear door onto the pavement, seen from behind and a little to the side, her face turned away from the camera towards the building. A broad agent in a dark suit with a coiled earpiece holds the door for her; a second agent waits at the foot of the steps. Cold blue city glow, warm light spilling from the building, wet pavement reflections. Wide shot from across the street at eye level.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r9, 2026-11-26, at7103: end on Karen getting out of a Secret Service SUV and going into an important building, then New York at night",
+ "inputs": {
+  "character": "Karen"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "74ac2c33-03e6-4cd6-b415-239dda3e4884"
+}

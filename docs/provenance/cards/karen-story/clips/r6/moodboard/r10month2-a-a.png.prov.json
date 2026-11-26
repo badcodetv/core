@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10month2-a-a.png",
+ "made": "2026-11-26T15:42:35.848Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep this exact frame, its grainy film look, colours, light and camera angle: the same open steel phone box, the same woman inside it in her dark green padded coat and knitted hat with the receiver at her ear, the same subway entrance with its green railings, the same wet grey street, the bus and the taxi. Change only one thing: nobody is on the subway stairs; the two people on the stairs are gone and the steps are empty. Instead, two people in winter coats walk along the pavement in the background, left to right, past the subway entrance. No snow anywhere. No text added.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r9, 2026-11-26, at4041: the two people on the subway stairs walk back down; with the stairs empty nobody can retreat",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10month-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10month-a-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d638963a-850c-4008-a3bc-166e6b103f86"
+}

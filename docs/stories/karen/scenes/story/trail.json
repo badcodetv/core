@@ -150,5 +150,13 @@
   "decided": [
    "Kai, 2026-11-26: work just on the timeline until we've settled on an edit, then move everything into Premiere"
   ]
+ },
+ {
+  "at": "2026-11-26T16:01:45+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r10: Kai's 18 notes on r9 (dumped in feedback/timeline-r9): no snow, Karen inside the box, City Hall reordered, Aaron among people, new SUV/steps/New York ending",
+  "rebuild": "python3 scripts/karen/story-cut-r10.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <page-dir>"
  }
 ]

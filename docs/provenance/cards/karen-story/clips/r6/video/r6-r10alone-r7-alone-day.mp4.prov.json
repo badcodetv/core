@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r10alone-r7-alone-day.mp4",
+ "made": "2026-11-26T15:36:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The woman stays inside the open steel phone box the whole time, right at the phone with the receiver at her ear: she rants into it, jabbing her raised finger, throwing her free hand up in exasperation and shaking her head, all within the box. Her feet stay planted; she never steps out or forward. Pedestrians pass behind her. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-alone-day.jpg",
+ "why": "Kai's note on cut r9, 2026-11-26, at4166: she stood outside the phone box; she stays inside it",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-alone-day.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r10alone",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T15:34:55.236Z"
+ }
+}

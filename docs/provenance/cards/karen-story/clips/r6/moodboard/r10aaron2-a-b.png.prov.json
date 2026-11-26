@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron2-a-b.png",
+ "made": "2026-11-26T15:31:11.782Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nKeep this exact frame: the same woman in the camel cardigan on the phone inside the glass phone box on the left, the same young man with headphones, striped jumper and backpack standing by the subway railings holding up his phone, the same street, taxis, light and camera angle. Change two things only. First, his mood: he is not grinning and not smirking; he is genuinely intrigued, listening hard, mouth closed, brows slightly raised, head tilted towards the woman, as if he has just heard a melody he wants to catch. Second, add ordinary present-day New Yorkers around them: a few people walking along the pavement behind him in both directions, someone with shopping bags, a man in a coat crossing the road, slightly out of focus, none looking at the camera.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r9, 2026-11-26, at4498: no other people, and Aaron grins sarcastically; he should look interested",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron2-src.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron2-src.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "09fdab66-f631-404e-9893-0781eedc5c0f"
+}

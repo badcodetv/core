@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r10month3-r10month-a.mp4",
+ "made": "2026-11-26T15:45:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera on a cold, grey, dry day; no snow. In the first two seconds the couple in winter coats reach the top of the subway steps, step onto the pavement, turn left and walk briskly away along the sidewalk until they leave the frame on the left; once out of the station they keep walking forward and are gone. The stairs behind them stay empty. The woman in the green coat stays in the phone box on the phone. Traffic moves on the road. Continuous movement to the last frame. Sound: street traffic. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10month-a.jpg",
+ "why": "Kai's note on cut r9, 2026-11-26, at4041: the two people coming up from the subway walked back down; re-roll 3, they come up and walk off left",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10month-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r10month3",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T15:44:35.761Z"
+ }
+}

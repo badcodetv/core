@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10month-a-b.png",
+ "made": "2026-11-26T15:31:06.731Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nKeep this exact frame: the same open steel phone box, the same woman inside it in her dark green padded coat, knitted hat and scarf with the receiver at her ear, the same subway entrance with its green railings, the same two people on the subway stairs, the same street, traffic and camera angle. Change only the weather: there is no snow anywhere at all — no snow on the roof of the box, the railings, the pavement, the road or the cars, no slush, no ice, no falling flakes. It is a cold, grey, overcast late-autumn day in present-day New York: damp dark pavement, a few brown leaves in the gutter, people in winter coats.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's notes on cut r9, 2026-11-26, at4041/at4166: no snow in the 'next month' shot (snow then no snow doesn't make sense)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/snow2-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/snow2-b.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2124be8d-be01-4914-a2db-dc1896fbb9f2"
+}

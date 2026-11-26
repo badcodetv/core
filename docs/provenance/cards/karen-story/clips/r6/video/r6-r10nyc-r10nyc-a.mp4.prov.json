@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r10nyc-r10nyc-a.mp4",
+ "made": "2026-11-26T15:37:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A slow, smooth aerial pull-back and rise over Manhattan at night: the camera drifts up and back, revealing more and more of the glittering skyline, rivers of car lights flowing along the avenues, steam drifting from a rooftop, the bridge lights on the river. Calm and majestic, continuous motion to the last frame. Sound: a distant city hum. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10nyc-a.jpg",
+ "why": "Kai's note on cut r9, 2026-11-26, at7103: end on a zoom-out over New York at night",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10nyc-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r10nyc",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T15:35:26.665Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r10aaron2-r10aaron2-a.mp4",
+ "made": "2026-11-26T15:36:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. In the glass phone box on the left the woman keeps talking hard into the receiver, shaking her fist. The young man by the railings holds his phone up, recording her, completely absorbed: he listens closely, slowly tilts his head, nods gently in time with her words as if catching a rhythm, lips closed, serious and intrigued, never grinning or smirking. Pedestrians with shopping bags walk past behind him in both directions. Movement continues right to the last frame. Sound: street noise. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron2-a.jpg",
+ "why": "Kai's note on cut r9, 2026-11-26, at4498: people on the street, and Aaron interested, not grinning",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron2-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r10aaron2",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T15:34:39.788Z"
+ }
+}

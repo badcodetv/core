@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r10deliv-delivery-b.mp4",
+ "made": "2026-11-26T15:37:00+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The courier in the helmet hands the brown paper bag to the woman; she takes it with her free hand, keeping the receiver at her ear, and sets it down on the steel shelf beside the phone. The courier turns and wheels his bike away to the left and out of frame. She stays inside the box, talking; her hands touch only the receiver and the bag, nothing ever passes through the glass panel, the glass stays solid. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/delivery-b.jpg",
+ "why": "Kai's note on cut r9, 2026-11-26, at2693: her hand went through the glass of the phone box",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/delivery-b.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r10deliv",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T15:35:09.833Z"
+ }
+}

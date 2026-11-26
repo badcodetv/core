@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron1-a-b.png",
+ "made": "2026-11-26T15:32:02.491Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nKeep this exact frame: the same young man with headphones round his neck, the striped jumper and the backpack, walking towards the camera in the middle of the pavement, the same street, buildings, subway entrance, light and camera angle. Add an ordinary weekday crowd of present-day New Yorkers on the pavement around him at natural distances: a woman with a takeaway coffee walking away from camera, a man in a suit looking at his phone, a couple chatting, a courier with a bag, a few more people further back crossing the street, all slightly out of focus, none looking at the camera. A normal, busy Manhattan sidewalk.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r9, 2026-11-26, at4420: odd that there's no one else on the street; recut with people",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron1-src.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron1-src.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "307405dd-7033-427e-86d8-d5278ec51e0b"
+}

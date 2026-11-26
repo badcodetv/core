@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10calm-a-a.png",
+ "made": "2026-11-26T15:31:21.238Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nKeep this exact frame: the same woman in the camel cardigan and cream blouse, the same open steel phone box, the same subway entrance, street, light and camera angle. She stands right inside the box, close up against the phone, the receiver pressed to her ear and the short cord hanging slack. Change only her pose and mood: she is no longer shouting or pointing; she is calm and composed, her free hand resting on the little steel shelf of the box, a small, smug, self-satisfied half-smile, completely unfazed, settling in for a long wait.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r9, 2026-11-26, at2929: she stands far too far from the phone; recut the 'all day to complain' shot",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/talk-day-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/talk-day-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "71dbc9ad-f14e-4395-825b-b3fd01e7e769"
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r10/lvl_n1002c.wav",
+ "made": "2026-11-26T15:29:59+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/karen/finish-voice-r4.py",
+ "parent": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r10/n1002c.wav",
+ "why": "trimmed -55 dB/0.12 s, levelled -16.3 -> -18 LUFS"
+}

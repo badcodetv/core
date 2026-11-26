@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r10month-r10month-a.mp4",
+ "made": "2026-11-26T15:36:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera on a cold, grey, dry late-autumn day; no snow falls and none lies anywhere. The two people in winter coats climb the last few subway steps, step out onto the pavement and keep walking forward and away to the left along the sidewalk, never stopping, never turning round, never going back down the stairs. The woman in the green coat stays inside the phone box, the receiver at her ear, shifting her weight and talking. Traffic rolls past on the road, the bus pulls away. Movement continues right to the last frame. Sound: street traffic, footsteps. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10month-a.jpg",
+ "why": "Kai's note on cut r9, 2026-11-26, at4041/at4166: no snow; the two people come up the subway stairs and do not retreat",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10month-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r10month",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T15:35:16.713Z"
+ }
+}
