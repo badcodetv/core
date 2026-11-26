@@ -3,7 +3,7 @@
   "id": "2026-11-26-care-worker-pay-talks",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "gate",
+  "stage": "jury",
   "run": {
     "mode": "live",
     "run_date": "2026-11-26",
@@ -62,7 +62,8 @@
       "sim-clerk",
       "sim-citizens",
       "sim-bench",
-      "sim-gate"
+      "sim-gate",
+      "sim-jury"
     ]
   },
   "citizens": {
@@ -419,5 +420,58 @@
     "rejected_claims": [
       "summary: the Secretary of State sets the funding limit for each round (the source says central government agrees the limit and the Secretary of State’s remit letter carries it; reworded to \"the government sets\")"
     ]
+  },
+  "jury": {
+    "seed": "2026-11-26-care-worker-pay-talks/jury",
+    "size": 12,
+    "ids": [
+      "c0303",
+      "c0730",
+      "c0365",
+      "c0514",
+      "c0597",
+      "c0579",
+      "c0863",
+      "c0266",
+      "c0993",
+      "c0828",
+      "c0592",
+      "c0530"
+    ],
+    "model": "claude-haiku-5-5",
+    "question": "Who should carry the cost of a pay rise above £500 million, and who should have the last word on the deal: taxpayers nationally, councils, or care workers and users?",
+    "options": [
+      "National taxpayers pay in full, with a set cap and review date",
+      "Government pays, but only up to a fixed cap; the talks stay within it",
+      "Councils share the cost, with a say in the deal",
+      "Care workers and care users approve the deal, Parliament approves the money"
+    ],
+    "votes": [
+      2,
+      4,
+      3,
+      3
+    ],
+    "ruling": "Government pays, but only up to a fixed cap; the talks stay within it. Four of the twelve chose it, the most of any option: it is the only one that keeps the bill capped while the talks stay inside it.",
+    "reasons": [
+      {
+        "juror": "c0863",
+        "text": "The government should pay, but with a ceiling written down. Otherwise the bill is open-ended and nobody can plan for it."
+      },
+      {
+        "juror": "c0730",
+        "text": "Care is a national job, so the nation should pay. But a cap and a review date are the sensible bit."
+      },
+      {
+        "juror": "c0365",
+        "text": "Councils know their areas and their care homes. Give them a real say and some of the bill, or they'll just be told."
+      },
+      {
+        "juror": "c0530",
+        "text": "The people who wash and feed my generation should be the ones signing off the deal, not a minister in London."
+      }
+    ],
+    "review": "2027-11-26",
+    "real_jury": false
   }
 }
