@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r12evacC-r7-studio-pres.mp4",
+ "made": "2026-11-26T18:02:11+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. A single big agent in a dark suit rushes in from the right, grabs the seated man firmly by the upper arm and the back of his jacket and lifts him straight out of the armchair in one strong movement; the man's phone drops to the cushion. A second agent arrives a beat later and they hurry him away to the left, half-running, the first agent's hand flat on his back. The host half-rises, staring. Real weight and urgency in every movement. Sound: a scuffle, the phone hitting the cushion, footsteps, dramatic drums.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-studio-pres.jpg",
+ "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; C: one agent, one sharp grab, closer feel",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-studio-pres.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r12evacC",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T18:00:42.228Z"
+ }
+}

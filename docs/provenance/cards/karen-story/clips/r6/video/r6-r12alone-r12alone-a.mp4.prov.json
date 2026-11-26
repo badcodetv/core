@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r12alone-r12alone-a.mp4",
+ "made": "2026-11-26T18:09:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, cold grey drizzle. The woman in the green padded coat and knitted hat stays inside the phone box, the receiver at her ear, listening with a calm, stubborn little smile. She shifts her weight, tucks her scarf tighter with her free hand, says a couple of unhurried words into the phone and settles back against the side of the box. Rain drips from the roof edge; people with umbrellas pass behind. She never steps out. Movement continues to the last frame. Sound: rain, wet traffic. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12alone-a.jpg",
+ "why": "Kai's note on cut r11, 2026-11-26, at4307: the wet weather carried over; Karen stays inside the box, unfazed",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12alone-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r12alone",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T18:08:37.045Z"
+ }
+}

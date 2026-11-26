@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r12boss-r12boss-a.mp4",
+ "made": "2026-11-26T18:10:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. At the end of the table, in front of the window and the Manhattan skyline, the grey-bearded man's idea lands: his raised finger lifts a little higher, his half-smile spreads, he leans forward onto the table with his other hand. Around the table the writers turn their heads up towards him one after another, a woman lowers her coffee cup, someone sits up straight. Natural, human, unhurried movement right to the last frame. Sound: a quiet office, chairs creaking. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12boss-a.jpg",
+ "why": "Kai's note on cut r11, 2026-11-26, at5922: reverse angle, the boss in front of the window and skyline, the room still full",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12boss-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r12boss",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T18:08:39.091Z"
+ }
+}

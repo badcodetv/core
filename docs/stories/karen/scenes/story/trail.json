@@ -166,5 +166,13 @@
   "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
   "what": "Cut r11: Kai's 19 notes on r10 (dumped in feedback/timeline-r10): throw re-made, Aaron from his character, song carried to Sean, boom bap to the end, moral-only end card, evacuation and SUV re-made",
   "rebuild": "KAREN_SEG=<local dir> python3 scripts/karen/story-cut-r11.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <page-dir>"
+ },
+ {
+  "at": "2026-11-26T18:28:04+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r12: Kai's 13 notes on r11 (dumped in feedback/timeline-r11); evacuation take A picked by Kai on https://claude.ai/artifact/SKyiDbBxWyvyZZ17nAWxyd",
+  "rebuild": "KAREN_SEG=<local dir> python3 scripts/karen/story-cut-r12.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <page-dir>"
  }
 ]

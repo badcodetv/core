@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r12stun-r12stun-a.mp4",
+ "made": "2026-11-26T18:09:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down closes the laptop on her knees and holds it out to the man beside her, her movements a little mechanical, her face still blank and dazed. He takes it awkwardly. She does not nod, does not smile, does not speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12stun-a.jpg",
+ "why": "Kai's note on cut r11, 2026-11-26, at907: subtly stunned, not nodding along",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12stun-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r12stun",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T18:08:37.143Z"
+ }
+}

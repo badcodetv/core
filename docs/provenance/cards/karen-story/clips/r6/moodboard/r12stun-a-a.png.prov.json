@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12stun-a-a.png",
+ "made": "2026-11-26T18:01:03.011Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep everything in this frame as it is: the office, the window light, the man in the grey shirt, the laptop resting on her knees, her clothes and her face. Change only her expression, and keep it small and real: she has just been fired by a computer and hasn't taken it in yet. Her gaze has gone slightly unfocused, fixed on a point past him; her lips are just parted; her brows lifted a fraction; her shoulders a little frozen. Quietly dazed, numb. No wide eyes, no gasp, no exaggerated shock.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r11, 2026-11-26, at907: she looks like she's nodding along; make her subtly stunned, no horror face",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12stun-src.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12stun-src.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "5d389eb1-95b7-4d6b-8017-37359526ffc7"
+}

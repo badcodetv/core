@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12boss-a-a.png",
+ "made": "2026-11-26T18:03:49.170Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "The same writers' room as the first image, seen from the opposite side: the camera now stands by the cork boards and looks across the long grey table towards the big windows. The grey-bearded man from the second image (same face, same pale shirt, same raised finger and dawning half-smile) stands at the end of the table nearest the windows, the idea just landing on him. Behind him the windows show the Manhattan skyline by day, towers and water tanks. The other writers are still seated round the table in the foreground and at the sides, turning to look up at him, a coffee cup and laptops on the table. Grainy film look, natural window light. No legible text anywhere.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r11, 2026-11-26, at5922: the room is still full; turn the camera round so we look at the boss with the window and the Manhattan skyline behind him",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12boss-src.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12boss-src.png",
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11boss-a-b.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "f6bb048e-e66e-4c80-87e9-b5498cc0f5c4"
+}
