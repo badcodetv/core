@@ -76,7 +76,10 @@ SONG = K / '_outside/songs/Karen/song.wav'
 RENDER = K / 'renders/karen-v4-r0.mp4'
 MUS = K / 'background music'
 OUT = K / 'timeline/cut-r10'
-SEG = OUT / 'seg'
+# r10: KAREN_SEG=<local dir> builds the segments on local disk (D: reads fail when the machine is short of memory:
+# 'Cannot allocate memory' truncated map3 and broke the join); they are copied back to OUT/seg at the end
+import os
+SEG = pathlib.Path(os.environ.get('KAREN_SEG', OUT / 'seg'))
 FPS = 24
 BOLD = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 MONO = '/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf'
@@ -902,9 +905,35 @@ end_mov = SEG / 'end.mp4'
 if not end_mov.exists():
     ff('-threads', 4, '-ss', 300.5, '-t', 10.54, '-i', RENDER, '-vf', f'scale=1920:1080,fps={FPS},setsar=1', '-threads', 4, '-an',
        '-c:v', 'libx264', '-crf', 18, '-preset', 'veryfast', '-pix_fmt', 'yuv420p', end_mov)
+MORAL = "They're counting on you to hang up, please don't..."   # Kai, 2026-11-26 (picked from the Fable reviewer's five, his ending added)
+
+
+def end_card():
+    """r10 (Kai: 'a moral of the story ... the same screen, not two separate screens'): Jack's card with its own 'To be
+    continued...' masked out; the moral fades in where it stood, 'To be continued...' a beat later just below it, and
+    Jack's spray logo arrives above both as before. Everything fades with his card."""
+    out = SEG / 'end-moral.mp4'
+    serif = '/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf'
+    pngs = []
+    for name, text, sz, y in (('moral', MORAL, 60, 540), ('tbc', 'To be continued...', 46, 628)):
+        im = Image.new('RGBA', (1920, 1080), (0, 0, 0, 0))
+        ImageDraw.Draw(im).text((960, y), text, font=ImageFont.truetype(serif, sz), fill=(236, 236, 232, 255), anchor='mm')
+        pngs.append(SEG / f'end-{name}.png'); im.save(pngs[-1])
+    mask = Image.new('RGBA', (1920, 1080), (0, 0, 0, 0))
+    ImageDraw.Draw(mask).rectangle((560, 492, 1360, 590), fill=(0, 0, 0, 255))   # Jack's 'To be continued...' (x 662-1252, y 510-568)
+    mpng = SEG / 'end-mask.png'; mask.save(mpng)
+    d = probe(end_mov)
+    ff('-i', end_mov, '-loop', 1, '-t', d, '-i', mpng, '-loop', 1, '-t', d, '-i', pngs[0], '-loop', 1, '-t', d, '-i', pngs[1], '-filter_complex',
+       f"[2:v]format=rgba,fade=t=in:st=0.3:d=1.0:alpha=1,fade=t=out:st=8.4:d=1.3:alpha=1[m];"
+       f"[3:v]format=rgba,fade=t=in:st=2.2:d=0.8:alpha=1,fade=t=out:st=8.4:d=1.3:alpha=1[c];"
+       f"[0:v][1:v]overlay[a];[a][m]overlay[b];[b][c]overlay,format=yuv420p[v]",
+       '-map', '[v]', '-t', d, '-an', '-c:v', 'libx264', '-crf', 18, '-preset', 'veryfast', out)
+    return out
+
+
 te = t
 tq = te
-add_shot(end_mov, 0, probe(end_mov) - 0.05, what='To be continued + spray logo (Jack, v4 render)')
+add_shot(end_card(), 0, probe(end_mov) - 0.05, what=f'End card: "{MORAL}" / To be continued... + spray logo (Jack, v4 render)')
 ev(NC / 'ending/sting-hold-please.wav', te + 0.75, 'sfx-hold-music', what='sting-hold-please.wav (v4): "Mmm, hold please."')
 TOTAL = q(t)
 
@@ -997,6 +1026,15 @@ edl = {
               'Lines marked by=claude are drafts (Kai and Jack overrule freely); joke picks are Kai\'s first-suggestion picks.'],
     'render': str(preview),
 }
+if SEG != OUT / 'seg':
+    for _ in range(5):
+        if subprocess.run(['rsync', '-a', f'{SEG}/', f'{OUT}/seg/']).returncode == 0:
+            break
+    else:
+        sys.exit('could not copy the segments back to D:')
+    for v in edl['video']:
+        v['file'] = v['file'].replace(str(SEG), str(OUT / 'seg'))
+    edl['render'] = str(preview)
 (OUT / 'edl.json').write_text(json.dumps(edl, indent=1))
 print(json.dumps({'total': TOTAL, 'shots': len(video), 'escalation': [round(esc0, 2), round(esc1, 2)],
                   'beats': [(b['id'], b['title'], round(b['start'], 2)) for b in beats]}))
