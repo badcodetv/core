@@ -26,12 +26,13 @@ check.result: pending
 against: The levy may cut generators' new building, a cost this policy never measures.
 answer: That is the Windfall Act's test, which says in advance it changes our mind if the levy cuts new generation by more than it takes off bills.
 ---
-Your cap rose 4% this autumn, to £1,723, and about £300 of that is standing charge, paid before the
-kettle boils.
+From January your cap jumps 26%, to £2,166 a year, because the war put up wholesale gas. In
+England most homes get £100 from the council, once. The standing charge comes every day, paid
+before the kettle boils.
 
-Who decided. Ofgem sets the standing charge inside the cap. On 4 November ministers said they'd
-scrap the daily gas standing charge through the Energy Independence Bill; about six gas customers
-in ten save, on average £45 a year, they say. Good. The electricity one stays.
+Who decided. Ofgem sets the standing charge inside the cap. Ministers have said they'll scrap the
+daily gas standing charge, in 2027 or soon after; about six gas customers in ten save, on average
+£45 a year, they say. Good. The electricity one stays.
 
 The rule. A levy on the windfall wind, nuclear and biomass stations make while gas sets the price
 already exists, ending March 2028. The Chancellor's Windfall Act renews it, raises it while war
