@@ -1,0 +1,13 @@
+{
+  "name": "solo-low-piano",
+  "style": "solo grand piano only, instrumental underscore, steady 86 BPM, bottom two octaves of the keyboard only, low octave pedal tone repeated in even eighth notes, a hard-struck dissonant low cluster opens the cue and rings out on the sustain pedal, sparse further clusters of minor seconds and tritones left to decay, no melody, nothing above middle C, slow crescendo from near-silent to forceful and insistent with the pulse never speeding up, cold, grave, intimate suspense, close-miked piano with audible hammers, dry quiet room, lots of space above for spoken word",
+  "exclude": "vocals, choir, humming, spoken word, strings, drums, percussion, synth, pads, bass guitar, brass, high piano melody, tempo change, comedic, jazz",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 20,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": true
+}

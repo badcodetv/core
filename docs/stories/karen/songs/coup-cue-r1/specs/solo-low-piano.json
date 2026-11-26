@@ -1,0 +1,17 @@
+{
+  "style": "solo piano, one concert grand alone, instrumental suspense underscore, tempo held at 86 beats per minute from first bar to last, everything played in the lowest register of the keyboard, a single deep octave hammered over and over as a pedal point, a violent low tone cluster struck at the very first beat then left to ring and decay under the damper pedal, rare later clusters of clashing semitones in the bass, no tune at all, the left-hand octaves swell gradually from barely touched to heavy and urgent while the pulse stays locked, cold, hushed, serious and frightening, close intimate piano recording with felt and hammer noise, wide empty space in the mids and highs for dialogue on top",
+  "exclude": "vocals, choir, humming, whistling, strings, drums, percussion, synthesizer, pads, bass guitar, brass, orchestra, right-hand melody, high register, accelerando, tempo change, comedic, jazz",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    18
+  ],
+  "styleInfluence": 82,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": true,
+  "title": "Karen coup cue-solo-low-piano",
+  "mode": "custom",
+  "workspace": null
+}

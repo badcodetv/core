@@ -1,0 +1,80 @@
+[
+  {
+    "name": "low-strings-ostinato",
+    "style": "Instrumental chamber strings only, dark political thriller underscore, D minor, steady 86 BPM throughout. Opens cold on one sharp accented tutti string stab, then cellos and double basses lock into a tight driving spiccato sixteenth-note ostinato in the low register, relentless and even. High violins hold thin, glassy sustained harmonics far above. Hollow open midrange, no melody, no lead line, sparse and restrained so spoken dialogue sits clearly on top. Grave, serious, tense; dry close chamber room; builds by adding string layers and bow pressure, never by changing tempo.",
+    "exclude": "vocals, choir, humming, drum kit, synthesizer, electronic, piano, brass, lead melody, comedic",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 25,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 40,
+    "maxMode": true
+  },
+  {
+    "name": "analog-synth-pulse",
+    "style": "instrumental cinematic techno-thriller underscore, 86 BPM steady eighth-note analog synth bass pulse, deep sub-bass drone, sparse glassy high arpeggio, opens on a bright electronic swell then grows darker and more relentless at constant tempo, cold modular synthesizers, minimal and grave, dry tight low end, hollow uncluttered midrange leaving room for dialogue, modern clean production",
+    "exclude": "vocals, choir, orchestra, guitar, retro synthwave, comedic, tempo change",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 45,
+    "maxMode": false
+  },
+  {
+    "name": "percussion-and-low-brass",
+    "style": "Grave film underscore led by a massed drum ensemble, instrumental, pulse fixed at 86 BPM from first bar to last. Concert bass drums, deep frame drums and tuned toms play a slow, weighty pattern with whole empty beats left hanging between strikes. Low horns and bass trombones reply in brief dark punches, minor, never a tune. Starts on a single enormous drum strike with a long decay, then spaced hits around open air, then a tom roll building in volume, then a sustained low brass chord resting over a quiet drum rumble. Sub and low end weighty, upper mids kept bare so speech sits on top. Serious, ominous, unhurried. No vocals.",
+    "exclude": "vocals, choir, chant, humming, spoken word, string melody, violin lead, synth lead, arpeggiator, fanfare, trumpet solo, heroic theme, triumphant, comedic, quirky, drum machine, EDM, tempo change, jazz, swing, piano lead",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 20,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 45,
+    "maxMode": true
+  },
+  {
+    "name": "dark-boom-bap",
+    "style": "instrumental, sinister boom-bap score cue, 86 BPM head-nod pocket held from first bar to last, cold minor key, grave and ominous. Fat dusty breakbeat: thick muffled kick, hard crack snare, vinyl crackle, tape saturation, dry analog mix. Plucked upright bass stalking a dark minor-key figure, low and repetitive, unresolved. Detuned Rhodes far back in the mix, few chords, long gaps, cold and wobbly. Halfway: the record grinds down like a turntable losing power, pitch sinking to nothing, a breath of silence, then the drums punch back louder and heavier with the bass. Sparse arrangement leaving the center open for narration, serious film tension",
+    "exclude": "vocals, rap, singing, choir, humming, spoken word, vocal samples, saxophone, sax solo, horn stabs, comedic, playful, cheerful, major key, trap hi-hats, 808, tempo change, busy piano, lead melody",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 30,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": true
+  },
+  {
+    "name": "solo-low-piano",
+    "style": "solo piano, one concert grand alone, instrumental suspense underscore, tempo held at 86 beats per minute from first bar to last, everything played in the lowest register of the keyboard, a single deep octave hammered over and over as a pedal point, a violent low tone cluster struck at the very first beat then left to ring and decay under the damper pedal, rare later clusters of clashing semitones in the bass, no tune at all, the left-hand octaves swell gradually from barely touched to heavy and urgent while the pulse stays locked, cold, hushed, serious and frightening, close intimate piano recording with felt and hammer noise, wide empty space in the mids and highs for dialogue on top",
+    "exclude": "vocals, choir, humming, whistling, strings, drums, percussion, synthesizer, pads, bass guitar, brass, orchestra, right-hand melody, high register, accelerando, tempo change, comedic, jazz",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 18,
+    "styleInfluence": 82,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": true
+  },
+  {
+    "name": "hybrid-glitch-sound-design",
+    "style": "Hybrid trailer sound-design underscore, 86 BPM, a soft steady clock-tick pulse holding the grid, no melody, no chords. Opens on a sudden bright digital flash: deep sub boom, reversed swell, cold metallic hit. Digital glitch stutters and bit-crushed dropouts as a signal tears apart. Then one long rising tension riser, filtered noise and pitch climbing together, peaking into a single heavy low impact with a sub drop and a long dark tail. Energy only in deep sub and airy high textures, empty midrange to leave room for narration. Serious, cold, unsettling, modern. Instrumental only, no vocals.",
+    "exclude": "vocals, choir, humming, spoken word, melodic lead, chord progression, drum kit groove, swing, comedic, tempo change",
+    "lyrics": "",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 40,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 40,
+    "maxMode": true
+  }
+]

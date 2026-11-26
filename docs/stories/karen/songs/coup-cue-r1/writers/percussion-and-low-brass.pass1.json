@@ -1,0 +1,13 @@
+{
+  "name": "percussion-and-low-brass",
+  "style": "Dark cinematic percussion ensemble cue, instrumental, locked steady 86 BPM. Large taiko-style drums, frame drums and floor toms in a heavy sparse pattern, dry and close, with long open silences between hits. Low French horns and bass trombones answer in short muted minor-key stabs, no melody. Opens on one massive drum impact, then sparse hits with empty beats, then a rising tom and snare roll that swells, then a held low brass chord over a soft bass drum rumble. Mid-range left clear for dialogue, restrained, grave, tense. No vocals, instrumental only.",
+  "exclude": "vocals, choir, chanting, humming, spoken word, string melody, violins, synth lead, arpeggio, fanfare, trumpet solo, heroic theme, triumphant, comedic, playful, electronic drums, EDM drop, tempo change, jazz, swing",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 25,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 45,
+  "maxMode": true
+}

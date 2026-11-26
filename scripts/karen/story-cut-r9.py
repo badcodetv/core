@@ -700,7 +700,7 @@ shout = clip('r4-shout-river-shout-b.mp4')
 block([vox('lvl_k401d.wav', 'karen', 'Karen (Gacrux)', 'You hear that, Sean? Fuck you, Sean!', fx='outdoor')],
       [(shout, 0.0, None, {'what': 'r4: Karen throws the phone into the river (the take Kai picked, ungraded)'})], lead=0.2, tail=1.6)
 block([], [(VIDS / 'seagull/seagull vid.mp4', 6.6, 2.2, {'what': 'seagull vid (the phone in the water)'})], min_dur=2.2)
-ev(S['splash'], t - 2.3, 'sfx', what='splash (made here)', gain=-6)
+ev(S['splash'], t - 2.3, 'sfx', what='splash (made here)', gain=-6)   # r9 (Kai: louder): raised, it read as a gunshot; a real splash (Flow, sound only) replaces it
 ev(S['night'], night0 + 0.4, 'sfx', what='night by the river (r9-night-river.mp4, its sound only)', dur=t - night0 - 0.4, gain=-5, fx='score')   # 'score': looped, faded in and out
 
 beat('4', 'The morning, the phone box')
@@ -824,7 +824,7 @@ block([nar7('lvl_n702b.wav', "The interview is going well. The host asks if he'd
 block([nar('lvl2_n34-a.wav', 'They talk about the rise of A.I. He patronises her on live television, to show dominance.')],
       [(NC / '37.mp4', 3.6, 4.0, {}), (NC / '36.mp4', 4.0, None, {'what': '36.mp4 (the studio, wide)'})], tail=0.2)
 # r7 (Kai): the "most persistent Karen / boss-level manager" line is out; the crowd and news crews hold a beat, unnarrated
-block([], [(COUP, 0.3, 3.4, {'what': 'NEW r6: the crowd at night, news crews'})], min_dur=3.4)
+# r9 (Kai, 2026-11-26: 'I'd say cut it'): the unnarrated crowd beat is gone; the studio screen flashes on straight after the interview
 music_off = t
 block([nar('lvl_n36-a.wav', 'The screen in the studio suddenly flashes on.'), nar5('lvl_n504d.wav', "[gravely] It's A.I. Sean!", pre=0.2)],
       [(NC / '39.mp4', 0.9, None, {})], lead=1.4, tail=0.4)

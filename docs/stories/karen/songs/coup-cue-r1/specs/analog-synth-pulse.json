@@ -1,0 +1,17 @@
+{
+  "style": "instrumental cinematic techno-thriller underscore, 86 BPM steady eighth-note analog synth bass pulse, deep sub-bass drone, sparse glassy high arpeggio, opens on a bright electronic swell then grows darker and more relentless at constant tempo, cold modular synthesizers, minimal and grave, dry tight low end, hollow uncluttered midrange leaving room for dialogue, modern clean production",
+  "exclude": "vocals, choir, orchestra, guitar, retro synthwave, comedic, tempo change",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    35
+  ],
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 45,
+  "maxMode": false,
+  "title": "Karen coup cue-analog-synth-pulse",
+  "mode": "custom",
+  "workspace": null
+}

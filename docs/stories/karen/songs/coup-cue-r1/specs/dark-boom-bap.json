@@ -1,0 +1,17 @@
+{
+  "style": "instrumental, sinister boom-bap score cue, 86 BPM head-nod pocket held from first bar to last, cold minor key, grave and ominous. Fat dusty breakbeat: thick muffled kick, hard crack snare, vinyl crackle, tape saturation, dry analog mix. Plucked upright bass stalking a dark minor-key figure, low and repetitive, unresolved. Detuned Rhodes far back in the mix, few chords, long gaps, cold and wobbly. Halfway: the record grinds down like a turntable losing power, pitch sinking to nothing, a breath of silence, then the drums punch back louder and heavier with the bass. Sparse arrangement leaving the center open for narration, serious film tension",
+  "exclude": "vocals, rap, singing, choir, humming, spoken word, vocal samples, saxophone, sax solo, horn stabs, comedic, playful, cheerful, major key, trap hi-hats, 808, tempo change, busy piano, lead melody",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    30
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": true,
+  "title": "Karen coup cue-dark-boom-bap",
+  "mode": "custom",
+  "workspace": null
+}

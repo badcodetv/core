@@ -1,0 +1,13 @@
+{
+  "name": "percussion-and-low-brass",
+  "style": "Grave film underscore led by a massed drum ensemble, instrumental, pulse fixed at 86 BPM from first bar to last. Concert bass drums, deep frame drums and tuned toms play a slow, weighty pattern with whole empty beats left hanging between strikes. Low horns and bass trombones reply in brief dark punches, minor, never a tune. Starts on a single enormous drum strike with a long decay, then spaced hits around open air, then a tom roll building in volume, then a sustained low brass chord resting over a quiet drum rumble. Sub and low end weighty, upper mids kept bare so speech sits on top. Serious, ominous, unhurried. No vocals.",
+  "exclude": "vocals, choir, chant, humming, spoken word, string melody, violin lead, synth lead, arpeggiator, fanfare, trumpet solo, heroic theme, triumphant, comedic, quirky, drum machine, EDM, tempo change, jazz, swing, piano lead",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 20,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 45,
+  "maxMode": true
+}

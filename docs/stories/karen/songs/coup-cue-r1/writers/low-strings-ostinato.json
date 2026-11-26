@@ -1,0 +1,13 @@
+{
+  "name": "low-strings-ostinato",
+  "style": "Instrumental chamber strings only, dark political thriller underscore, D minor, steady 86 BPM throughout. Opens cold on one sharp accented tutti string stab, then cellos and double basses lock into a tight driving spiccato sixteenth-note ostinato in the low register, relentless and even. High violins hold thin, glassy sustained harmonics far above. Hollow open midrange, no melody, no lead line, sparse and restrained so spoken dialogue sits clearly on top. Grave, serious, tense; dry close chamber room; builds by adding string layers and bow pressure, never by changing tempo.",
+  "exclude": "vocals, choir, humming, drum kit, synthesizer, electronic, piano, brass, lead melody, comedic",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 25,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 40,
+  "maxMode": true
+}

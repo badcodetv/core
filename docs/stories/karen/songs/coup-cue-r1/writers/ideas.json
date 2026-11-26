@@ -1,0 +1,26 @@
+[
+  {
+    "name": "low-strings-ostinato",
+    "idea": "A chamber string section is the only performer: cellos and double basses play a driving minor-key sixteenth-note ostinato at a fixed 86 BPM, while violins hold thin, high harmonics far above the speaking voices. It opens on a sudden sharp string stab for the moment the studio screen flashes on, then tightens into the ostinato as the security team rushes the guest out. The midrange where speech lives stays open, with no lead melody, so the narrator and the robot voice sit clearly on top. Played completely straight and serious, like a political thriller underscore, with an instrumental-only build of 25 to 40 seconds. Exclude vocals, choir, drum kit and synths."
+  },
+  {
+    "name": "analog-synth-pulse",
+    "idea": "A cold analog synthesizer rig is the voice, because the villain is a machine: a steady eighth-note synth bass pulse locked to 86 BPM, a deep sub-bass drone, and a sparse high arpeggio that glints above the dialogue. It begins with a bright electronic swell as the screen flashes on and grows darker and more insistent without ever speeding up. It is modern techno-thriller underscore, minimal and grave, never retro-kitsch or playful. Ask for dry, clean low end and an empty midrange so the spoken lines stay intelligible. Instrumental only, 30 seconds or longer; exclude vocals, choir, orchestra and guitar."
+  },
+  {
+    "name": "percussion-and-low-brass",
+    "idea": "A large percussion ensemble leads: big drums, frame drums and toms playing a heavy, sparse pattern at a fixed 86 BPM, with low horns and trombones answering in short dark stabs. Leave deliberate gaps, so-called edit points where the energy floats for a beat, so the narrator's lines and the robot voice can land in the holes. One huge drum hit for the screen flashing on, a rising drum roll for the rush to the exit, then a held low brass chord under the crowd watching the giant screen. Serious and cinematic, with no fanfare or heroic melody. Instrumental only; exclude vocals, choir, strings melody and synth leads."
+  },
+  {
+    "name": "dark-boom-bap",
+    "idea": "The film's own sound turned sinister: a small hip-hop production with a heavy, dusty kick and snare at exactly the 86 BPM of the rest of the score, an upright bass playing a menacing minor riff, and a low, detuned electric piano holding tense chords. It is the mellow hold-music world gone cold, so the cut back to the mellow score in the next scene feels connected. Add a vinyl-style stop or tape-stop moment for the screen breaking up, then the beat slams back in harder. Keep the electric piano low and sparse so speech stays on top, and keep it grave, never funny. Instrumental only; exclude vocals, rap, choir and saxophone solos."
+  },
+  {
+    "name": "solo-low-piano",
+    "idea": "A single grand piano is the only instrument, played in its lowest octaves: repeated pedal-tone octaves at a fixed 86 BPM, with occasional dissonant low clusters struck hard and left ringing. The first cluster lands as the screen flashes on, and the repeated notes grow louder and more urgent as the security team hurries the guest out, without any tempo change. There is no melody and nothing in the middle or upper register, leaving full room for the narrator and the robot voice. Intimate, cold and serious, like a suspense film's quietest and most frightening moment. Instrumental only, solo piano; exclude vocals, strings, drums and synths."
+  },
+  {
+    "name": "hybrid-glitch-sound-design",
+    "idea": "A sound-design score instead of a band: deep sub booms, reversed swells, metallic hits and digital glitch stutters that mirror the studio screen flashing on and then breaking up. A quiet ticking pulse at a fixed 86 BPM holds it all together, with a long, rising tension riser under the rush to the exit and a final low impact as the crowd looks up at the giant screen. No melody and no chords to compete with speech; the texture lives in the very low and very high ranges. Modern trailer-style hybrid tension, serious and unsettling, never comic. Instrumental only, 30 seconds or longer; exclude vocals, choir, melodic lead and drum kit groove."
+  }
+]

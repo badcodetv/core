@@ -1,0 +1,17 @@
+{
+  "style": "Hybrid trailer sound-design underscore, 86 BPM, a soft steady clock-tick pulse holding the grid, no melody, no chords. Opens on a sudden bright digital flash: deep sub boom, reversed swell, cold metallic hit. Digital glitch stutters and bit-crushed dropouts as a signal tears apart. Then one long rising tension riser, filtered noise and pitch climbing together, peaking into a single heavy low impact with a sub drop and a long dark tail. Energy only in deep sub and airy high textures, empty midrange to leave room for narration. Serious, cold, unsettling, modern. Instrumental only, no vocals.",
+  "exclude": "vocals, choir, humming, spoken word, melodic lead, chord progression, drum kit groove, swing, comedic, tempo change",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 40,
+  "maxMode": true,
+  "title": "Karen coup cue-hybrid-glitch-sound-design",
+  "mode": "custom",
+  "workspace": null
+}

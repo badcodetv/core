@@ -1,0 +1,13 @@
+{
+  "name": "dark-boom-bap",
+  "style": "instrumental, no vocals, dark minimal boom-bap underscore, steady 86 BPM, grave and tense, minor key. Heavy dusty kick and cracking snare, close-miked and dry, sparse ride, worn sampled-drum grit. Upright acoustic bass playing a slow, menacing minor riff that circles and never resolves. Low detuned electric piano holding cold sustained chords, quiet and sparse, sitting under the midrange, warped tape wobble. Faint vinyl hiss. Mid-cue: one abrupt tape-stop, the whole beat slows and sinks to silence, a beat of dead air, then the drums crash back in heavier and the bass digs deeper. Tight, uncluttered mix with room left for dialogue, serious cinematic restraint",
+  "exclude": "vocals, rap, singing, spoken word, choir, humming, vocal chops, saxophone, sax solo, trumpet solo, comedic, playful, upbeat, bright major chords, trap hi-hats, 808 glide, tempo change, piano solo, busy melody",
+  "lyrics": "",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 25,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": true
+}
