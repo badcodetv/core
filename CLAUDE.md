@@ -82,7 +82,7 @@ engine behaves, never a story's style.
 | `docs/voice.md`, `docs/marketing/the-reader.md` | How the narrator's **words** sound, and who the work is for. Read before writing a script, lyric or public copy. Words only: they say nothing about a picture or a sound |
 | `docs/using-ai.md` | How we talk about making the work with AI (public copy only) |
 | `docs/coins/emperors-new-coin.md` | Read before writing any sentence about the coin |
-| `docs/government/` | The BadCode government (one rolling PR, merged by Kai or Jack) |
+| `docs/government/` | The BadCode government: **paused since 26 Nov 2026**, nothing runs; read [`PAUSED.md`](./docs/government/PAUSED.md) first |
 | `docs/misc/` | Meeting notes and anything else |
 | Timeline index | https://claude.ai/artifact/KVLjAMnfz3NerFP9RQhxn6: every film's and short's timeline page. Rebuild with `scripts/scene/build-timeline-index.py` and republish to the same link when a timeline page changes |
 | `tools/qa-scanner/`, `qa-checklist.json` | The QA scanner for generated stills and clips, and our checklist of every fault named |

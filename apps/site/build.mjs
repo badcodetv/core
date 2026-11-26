@@ -17,6 +17,10 @@ import { simulationFeed, simulationPage } from './simulation.mjs';
 import { demoFeed, demoPage } from './demo.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
+// The government is paused (Kai, 2026-11-26; docs/government/PAUSED.md): GOVT shows Future Proof only, and the
+// government broadcast pages, Future Proof Live (/future-proof/live/) and the Demo (/demo/) are not built.
+// Set to false to bring them all back exactly as they were.
+const PAUSED = true;
 const src = join(here, 'src'), pub = join(here, 'public'), dist = join(here, 'dist');
 const C = JSON.parse(readFileSync(join(src, 'content.json'), 'utf8'));
 // The government's manifesto comes from the files its cabinet writes, never from content.json.
@@ -56,9 +60,9 @@ const SITE_DESC = `${A.lede} ${A.request.replace('fuck', 'f***')} Stories, the n
 // the plain-text page under each address
 const nav = `<nav aria-label="Channels"><ul>
 <li><a href="/stories">Stories</a>: ${S.map((s, i) => `<a href="/stories/${i + 1}">${esc(s.title)}</a>`).join(', ')}. Songs: ${S.map((s, i) => `<a href="/stories/${i + 5}">${esc(s.song)}</a>`).join(', ')}.</li>
-<li><a href="/news">News</a>: <a href="/news">Future Proof</a>, <a href="/news/2">${esc(SVP.title)}</a>${N.bulletins.length ? ` and <a href="/news/3">${esc(N.title)}</a>` : ''}</li>
-<li><a href="/government">The BadCode Government</a>: <a href="/government/2">live</a>, <a href="/government/3">every policy</a>, <a href="/government/4">the record</a>, <a href="/government/5">the arguments</a>, <a href="/future-proof/live/">Future Proof Live (SIMULATED)</a></li>
-<li><a href="/demo/">Future Proof Demo</a>: a demo of a government built from the bottom up</li>
+<li><a href="/stories/9">${esc(SVP.title)}</a></li>
+<li><a href="/news">News</a>: ${(N.shorts || []).length ? (N.shorts || []).map((x, i) => `<a href="/news/${i + 1}">${esc(x.title)}</a>`).join(', ') : 'the shorts, soon'}</li>
+<li><a href="/government">The BadCode Government</a>: Future Proof, in three questions</li>
 <li><a href="/about">About BadCode</a> and <a href="/text/100">BadCode Text</a></li>
 </ul></nav>`;
 const follow = `<h2>Follow BadCode</h2><ul>${C.socials.map(s => `<li>${s.url ? `<a href="${esc(s.url)}">${esc(s.name)}</a>` : `${esc(s.name)} (soon)`}</li>`).join('')}</ul><p>${esc(A.ai)} <a href="/how-we-made-it/">The full account</a></p><p>${esc(A.sign)} &copy; 2026 BadCode</p>`;
@@ -92,14 +96,16 @@ const routes = [
   { path: '/stories', title: 'Stories · BadCode', desc: 'Four films, four songs and The Storyverse from BadCode, an AI sent back from a future that went wrong.', body: plainBody.stories() },
   ...S.map((s, i) => ({ path: `/stories/${i + 1}`, title: `${s.title} · BadCode`, desc: s.blurb, img: s.still, body: plainBody.story(i) })),
   ...S.map((s, i) => ({ path: `/stories/${i + 5}`, title: `${s.song} (song) · BadCode`, desc: `The song from ${s.title}.`, img: s.still, body: plainBody.song(i) })),
-  // NEWS holds the specials (Kai, 2026-11-11): 1 Future Proof, 2 The Storyverse, 3 Money For Something
-  { path: '/news', title: 'Future Proof · BadCode', desc: G.futureProof.question, body: plainBody.fp() },
-  { path: '/future-proof', canon: '/news', title: 'Future Proof · BadCode', desc: G.futureProof.question, body: plainBody.fp() },
-  { path: '/news/2', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
-  { path: '/storyverse', canon: '/news/2', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
-  { path: '/stories/9', canon: '/news/2', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
-  ...(N.bulletins.length ? [{ path: '/news/3', title: `${N.title} · BadCode`, desc: N.strap, body: plainBody.news() }] : []),
-  { path: '/government', title: 'The BadCode Government', desc: `${G.promise} ${G.notReal}`, body: plainBody.gov() },
+  // NEWS is the shorts; GOVT is Future Proof; the Storyverse is STORIES 9 (Kai, 2026-11-26)
+  { path: '/stories/9', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
+  { path: '/storyverse', canon: '/stories/9', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
+  { path: '/news', title: 'News · BadCode', desc: N.strap, body: plainBody.news() },
+  ...(N.shorts || []).map((x, i) => ({ path: `/news/${i + 1}`, title: `${x.title} · News · BadCode`, desc: x.line || N.strap, body: `<h1>${esc(x.title)}</h1><p>${esc(x.line || '')}</p>` })),
+  { path: '/government', title: 'Future Proof · The BadCode Government', desc: G.futureProof.question, body: plainBody.fp() },
+  { path: '/future-proof', canon: '/government', title: 'Future Proof · The BadCode Government', desc: G.futureProof.question, body: plainBody.fp() },
+  // Paused 2026-11-26 (docs/government/PAUSED.md): the minister, policy, scoreboard and GOVT 2-5 pages are no
+  // longer built. Their old addresses fall to 404.html, where the TV opens Future Proof. The code stays.
+  ...(PAUSED ? [] : [
   ...CAB.map(m => ({ path: `/government/${m.post}`, title: `${m.title} · The BadCode Government`, desc: m.line, body: plainBody.minister(m) })),
   ...POLICY_PAGES.map(({ m, p, text }) => ({ path: `/government/${p.meta.id}`, title: `${p.meta.title} · ${m.title} · The BadCode Government`, desc: p.meta.line,
     body: plainBody.policy(m, G.policies.find(r => r.id === p.meta.id), text) })),
@@ -108,6 +114,7 @@ const routes = [
   { path: '/government/3', title: 'The floor · The BadCode Government', desc: `All ${G.policies.length} policies on the table, with our odds and the day each is marked.`, body: plainBody.floor() },
   { path: '/government/4', title: 'The record · The BadCode Government', desc: 'Everything the BadCode government has conceded, argued back and signed off.', body: plainBody.record() },
   { path: '/government/5', title: 'Replay · The BadCode Government', desc: 'Any argument, point by point, and what changed because of it.', body: plainBody.live() },
+  ]),
   { path: '/about', title: 'About · BadCode', desc: SITE_DESC, body: plainBody.about() },
   ...[100, 200, 201, 202, 203, 204, 300, 400, 700, 800, 888].map(p => ({ path: `/text/${p}`, title: `Page ${p} · BadCode Text`, desc: 'BadCode, as teletext.', body: plainBody.text() })),
   { path: '/text/401', title: 'Page 401 · BadCode Text', desc: 'The BadCode cabinet, as teletext.', body: plainBody.cabinetText() },
@@ -143,7 +150,7 @@ for (const r of routes) {
 }
 // Future Proof Live (SIMULATED): the issues come from the branch simulation/live, read with git at
 // build time (simulation.mjs). The site rebuilds on a schedule after each daily run (site-deploy.yml).
-{
+if (!PAUSED) {
   const feed = simulationFeed(join(here, '..', '..'));
   const out = join(dist, 'future-proof', 'live');
   mkdirSync(out, { recursive: true });
@@ -154,7 +161,7 @@ for (const r of routes) {
 }
 // The Future Proof Demo (/demo/): the days and the demo government come from the branch demo/live, read
 // with git at build time (demo.mjs). Rebuilt on the 15:00 UTC schedule after each daily run (site-deploy.yml).
-{
+if (!PAUSED) {
   const feed = demoFeed(join(here, '..', '..'));
   const out = join(dist, 'demo');
   mkdirSync(out, { recursive: true });

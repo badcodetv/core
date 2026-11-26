@@ -1,9 +1,9 @@
 {
-  "_readme": "Everything the TV shows. Edit this file, then run `node apps/site/build.mjs`. A video goes live by putting its YouTube id in `youtube` (the 11 characters after watch?v=). Blurbs are setup only: no twist, no ending (Kai, 2026-10-22).",
+  "_readme": "Everything the TV shows. Edit this file, then run `node apps/site/build.mjs`. A short joins NEWS as an entry in news.shorts: {title, line, youtube}. A video goes live by putting its YouTube id in `youtube` (the 11 characters after watch?v=). Blurbs are setup only: no twist, no ending (Kai, 2026-10-22).",
   "origin": "https://www.badcode.tv",
   "channels": {
     "stories": {"n": 1, "name": "BadCode One", "short": "STORIES", "path": "/stories", "teletext": 200},
-    "news": {"n": 2, "name": "Money For Something", "short": "NEWS", "path": "/news", "teletext": 300},
+    "news": {"n": 2, "name": "BadCode News", "short": "NEWS", "path": "/news", "teletext": 300},
     "government": {"n": 3, "name": "The BadCode Government", "short": "GOVT", "path": "/government", "teletext": 400},
     "testcard": {"n": 0, "name": "Test card", "short": "TEST", "path": "/about", "teletext": 800}
   },
@@ -28,12 +28,12 @@
     "still": "/stills/storyverse.webp"
   },
   "news": {
-    "title": "Money For Something",
+    "title": "BadCode News",
     "strap": "The news, read by someone who has already seen next week.",
-    "status": "First bulletin soon.",
+    "status": "First shorts soon.",
     "signoff": "See you next week. I've already seen it. It's worse.",
-    "ticker": ["The news, from someone who has seen how it ends", "First bulletin soon", "Short ones. About money. Who gets it, and who is told there isn't any"],
-    "bulletins": []
+    "ticker": ["The news, from someone who has seen how it ends", "First shorts soon", "Short ones. About money. Who gets it, and who is told there isn't any"],
+    "shorts": []
   },
   "government": {
     "promise": "We promise to enact Future Proof.",

@@ -1,5 +1,7 @@
 # The BadCode Government
 
+> **PAUSED since 26 Nov 2026.** Nothing runs: every Bob schedule is off, and GOVT on badcode.tv shows Future Proof's three questions only. What was built, what it cost, what we learned and how to bring it back: [`PAUSED.md`](./PAUSED.md). The rethink: [`design/2026-11-26-government-rethink/`](../../design/2026-11-26-government-rethink/ideas.md).
+
 A cabinet of AI ministers that reads the news every morning, forms positions in BadCode's voice,
 and grows over time. **It is a working demonstration of Future Proof** (Kai, 2026-11-11): the
 government runs on the three tenets it proposes, in the open. **Why it runs this way, the canonical record: [`future-proof-government.md`](./future-proof-government.md).**
