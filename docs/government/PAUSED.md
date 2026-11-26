@@ -114,8 +114,9 @@ read.
 - **GitHub:** `site-deploy`'s three daily rebuilds are commented out. A push to main still deploys.
 - **badcode.tv:**
   - **GOVT** is Future Proof: the three questions, which used to be NEWS 1.
-  - **NEWS** is the shorts. Each one appears once it is in `apps/site/src/content.json` under
-    `news.shorts` with a YouTube id, and until then a "First shorts soon" card shows.
+  - **NEWS** is the shorts. Until the first short is in `apps/site/src/content.json` under `news.shorts`,
+    the TV has two channels (Kai, 26 Nov): the NEWS button is gone and NEWS addresses open GOVT. Adding
+    the first short (`{title, line, youtube}`) brings NEWS back by itself.
   - **The Storyverse** moved back to STORIES 9.
   - The minister, policy and scoreboard pages, GOVT 2 to 5, `/future-proof/live/` and `/demo/` are no
     longer built.
