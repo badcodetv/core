@@ -3,7 +3,7 @@
   "id": "2026-11-26-care-worker-pay-talks",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "bench",
+  "stage": "gate",
   "run": {
     "mode": "live",
     "run_date": "2026-11-26",
@@ -13,7 +13,7 @@
     "title": "Care worker pay talks: who pays for the first Fair Pay Agreement?",
     "short": "CARE WORKER PAY",
     "question": "Care workers' pay will now be negotiated by unions and employers, backed by £500 million. Who should pay for any rise above that, and who should have the last word on the deal?",
-    "summary": "On 25 November 2026 the government named Baroness Christina McAnea to chair the new body that will negotiate care workers' pay, terms and conditions in England, covering about 1.5 million people. The first Fair Pay Agreement is backed by £500 million, talks start in April 2027 and the first settlement is due by April 2028. Councils will have a non-voting, advisory role, and the Secretary of State sets the funding limit for each round. In 2024-25 frontline care workers earned on average 79p an hour above the minimum wage, according to Resolution Foundation analysis.",
+    "summary": "On 25 November 2026 the government named Baroness Christina McAnea to chair the new body that will negotiate care workers' pay, terms and conditions in England, covering about 1.5 million people. The first Fair Pay Agreement is backed by £500 million, talks start in April 2027 and the first settlement is due by April 2028. Councils will have a non-voting, advisory role, and the government sets the funding limit for each round. In 2024-25 frontline care workers earned on average 79p an hour above the minimum wage, according to Resolution Foundation analysis.",
     "summary_sources": [
       "s1",
       "s2",
@@ -61,7 +61,8 @@
     "workers": [
       "sim-clerk",
       "sim-citizens",
-      "sim-bench"
+      "sim-bench",
+      "sim-gate"
     ]
   },
   "citizens": {
@@ -273,5 +274,150 @@
         "s2"
       ]
     }
-  ]
+  ],
+  "gate": {
+    "rows": [
+      {
+        "answer": "A",
+        "test": "Test: government pays any rise, not councils or firms",
+        "result": "pass",
+        "note": "The Department of Health and Social Care would pay any agreed rise above £500m in the picked councils. Elsewhere today's arrangement stays. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Test: a proper wage that isn’t cut later",
+        "result": "unclear",
+        "note": "It measures staying in the job, not the wage itself, and the funding would stop on 31 March 2030 unless Parliament keeps it. What counts as proper isn’t said.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Test: talks settle quickly",
+        "result": "unclear",
+        "note": "It keeps the talks and chair, so the dates stay as announced: talks from April 2027, first settlement by April 2028. It neither speeds nor slows them.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "A",
+        "test": "Limit: care homes and home care aren’t closed or cut",
+        "result": "unclear",
+        "note": "Its fail line catches a picked council cutting home care. Nothing watches for care homes closing.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Limit: council tax, rent and bills don’t go up",
+        "result": "pass",
+        "note": "Councils would pay nothing extra in the picked areas, so nothing here pushes council tax up. Fees to self-funders aren't mentioned. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "A",
+        "test": "Limit: no open-ended bill, a set limit and a review date",
+        "result": "fail",
+        "note": "It pays \"any agreed rise\" with no cap, so the bill has no set limit. The review date is there (31 March 2030). Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Test: government pays any rise, not councils or firms",
+        "result": "pass",
+        "note": "Government would pay any agreed rise straight to care firms in the picked areas, so councils and firms wouldn't find it. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Test: a proper wage that isn’t cut later",
+        "result": "unclear",
+        "note": "It measures pay directly (50p more than comparison areas), but by April 2028, the month the first settlement is due. The funding would stop on 30 April 2028 unless Parliament keeps it.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Test: talks settle quickly",
+        "result": "unclear",
+        "note": "It leaves the talks as planned: first settlement by April 2028. It neither speeds nor slows them.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "B",
+        "test": "Limit: care homes and home care aren’t closed or cut",
+        "result": "unclear",
+        "note": "Nothing in the answer measures care homes closing or care being cut. It only says local services wouldn’t be touched.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Limit: council tax, rent and bills don’t go up",
+        "result": "pass",
+        "note": "It says council tax and local services aren't touched, because government pays direct. Fees to self-funders aren't mentioned. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "B",
+        "test": "Limit: no open-ended bill, a set limit and a review date",
+        "result": "fail",
+        "note": "It pays \"any rise agreed\" with no cap, so the bill has no set limit. The review date is there (30 April 2028). Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Test: government pays any rise, not councils or firms",
+        "result": "unclear",
+        "note": "Parliament would fund rises above £500m through a capped grant. If a rise costs more than the cap, councils or firms could be left to find the rest.",
+        "sources": [
+          "s2"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Test: a proper wage that isn’t cut later",
+        "result": "unclear",
+        "note": "Funding is tied to audited wages, but the \"national pay floor\" is never defined, retention is what’s measured, and funding stops in April 2029 unless Parliament renews it.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Test: talks settle quickly",
+        "result": "unclear",
+        "note": "It adds a local sign-off by elected carers and care users on each deal, with no deadline. That could slow the national talks or not. The answer doesn’t say.",
+        "sources": [
+          "s1"
+        ]
+      },
+      {
+        "answer": "C",
+        "test": "Limit: care homes and home care aren’t closed or cut",
+        "result": "unclear",
+        "note": "Delivered care hours falling is a fail, and the grant is conditional on unchanged hours. Nothing watches for care homes closing.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: council tax, rent and bills don’t go up",
+        "result": "pass",
+        "note": "The money would come from a grant out of general taxation, conditional on unchanged fees, so councils and users would pay nothing extra. Needs no source: it follows from what the answer says.",
+        "sources": []
+      },
+      {
+        "answer": "C",
+        "test": "Limit: no open-ended bill, a set limit and a review date",
+        "result": "pass",
+        "note": "The grant is capped and stops in April 2029 unless Parliament renews it. The cap's size isn't stated. Needs no source: it follows from what the answer says.",
+        "sources": []
+      }
+    ],
+    "verdict": "None of the three passes every test and limit. A and B fail the limit on an open-ended bill; C passes it but leaves four tests unclear. The facts can’t settle who should pay for a rise above £500m, or who has the last word.",
+    "to_jury": true,
+    "rejected_claims": [
+      "summary: the Secretary of State sets the funding limit for each round (the source says central government agrees the limit and the Secretary of State’s remit letter carries it; reworded to \"the government sets\")"
+    ]
+  }
 }
