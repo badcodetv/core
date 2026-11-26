@@ -164,3 +164,51 @@ Goal: [`GOAL.md`](./GOAL.md). Branch: `future-proof/simulation`. Newest entry fi
   - 19 Nov's prediction now credits "the 17 November statement" instead of a real Secretary;
   - the Thames note says its re-check used only sources dated on or before 10 Nov;
   - the page and its description say "a simulated minister".
+- 23 Nov, 19:47 UTC: **PR #31 merged; the simulation is public.** Kai's goal-2 message allowed the merge once tests, lint and the gatekeeper passed.
+  - `site-deploy` built "simulation: 15 issues, 0 skipped" and deployed. https://www.badcode.tv/future-proof/live/ returns 200 for the page, `feed.json` and `preview.png`, with the title "SIMULATED · Future Proof Live · BadCode". Checked in Chrome on the live site at 1280 and 390 wide: no errors.
+  - `bob-sync` succeeded, so the four tightened workers are live in Bob for tomorrow.
+  - The private mirror is republished with the corrected page and data (version 5).
+
+## Report (goal 2)
+
+### What runs when (every day, London time; UTC in winter)
+
+| Time | What | Where | Writes |
+| --- | --- | --- | --- |
+| 09:00 | `sim-clerk` picks the story, poll and sources | Bob, Sonnet | `simulation/live` |
+| 09:20 | `sim-citizens`: 100 simulated citizens, drawn by lot, set the tests | Bob, Haiku | `simulation/live` |
+| 09:40 | `sim-rival`: answer C, blind | Bob, Codex | `simulation/live` |
+| 10:00 | `sim-bench`: answers A and B, blind; joins C | Bob, Sonnet | `simulation/live` |
+| 10:30 | `sim-gate`: every answer against every test; strikes unsourced claims | Bob, Sonnet | `simulation/live` |
+| 11:00 | `sim-jury`: 12 simulated jurors vote on the values question | Bob, Haiku | `simulation/live` |
+| 11:20 | `sim-minister` signs one small trial with dated predictions; publishes | Bob, Sonnet | `simulation/live` |
+| 12:15 UTC | `site-deploy` rebuilds badcode.tv from the branch | GitHub Actions | badcode.tv |
+| 13:00 UTC | routine `trig_012kXE2KMjrHYuber7bJBmev`: marks due predictions, republishes the private mirror | claude.ai cloud | `simulation/live`, mirror |
+| 14:30 UTC | `site-deploy` again, so the marks reach the site | GitHub Actions | badcode.tv |
+
+Each Bob step took 4 to 8 minutes on 23 Nov, so the whole loop runs in under 40 minutes of the 2h20 window.
+
+### The cost of one day
+
+- **Measured:** about 330k to 430k tokens per issue-day, from subagent totals, which include cached reads. Per step: clerk 65k, citizens 85k to 107k, A and B 46k each, gate, jury and minister about 60k each. On top of that comes one Codex chat for C, plus about 1 minute of Actions twice a day.
+- **Against the stop line:** that's about a quarter of the government run's guessed 1.5 to 2M tokens a day, far under the 3x stop line. Bob doesn't count tokens yet, so the live number is still an estimate.
+
+### What failed, and what was done about it
+
+- **A prediction already settled before the run date** (13 Nov: the bill had been introduced on 19 Nov). It was replaced, and the minister's instructions now require a check that the predicted event hasn't already happened.
+- **Gatekeeper round 1 FAILed the public page** (the SIMULATED stamp missing from panels; real job titles on the AI ministers) and six issues (unsourced lines; sarcasm about hardship; real office-holders paraphrased; group claims in voices). All fixed; round 2 passed.
+- **A struck claim survived in a clerk's summary,** and another came back reworded. The gate now checks the summary and rewordings.
+- **`join_bench.py` cut titles mid-word.** It now cuts at a word.
+- **Small things:** Codex once prefixed a title with "SIMULATION:"; the Bob clerk first made worktrees inside `/project/work/core`, then cleaned them up.
+- **Open:** the citizen pool draws home ownership independently of age. A versioned `pool-2` is needed.
+
+### From one issue a day to five
+
+1. **The data allows it already.** An issue's id and draw seeds are per issue, and `sim.mjs find` lists every file for a date. The page and feed show any number per day.
+2. **Bob runs a project's schedules one at a time,** so five issues means five times as many steps in the window. At about 6 minutes a step, 5 × 7 steps is about 3.5 hours: start at 07:00, or split the morning.
+3. **The clerk picks five distinct fields** in one run (queue rules 1 to 3, no repeats) and writes five clerk-stage files. Each later worker then loops over every issue at the stage before its own, one at a time, as the replay kit did. This change is to the worker text only: "for each issue at stage X".
+4. **Cost scales linearly:** about 1.7 to 2.2M tokens a day for five. That is roughly the government's own daily run and still under the 3x line, but worth measuring on one day before switching.
+5. **The gatekeeper's lesson:** with five a day, review by hand won't keep up. Before scaling, add an automated pre-publish check to `issue.mjs`:
+   - flag "the public", rule numbers and tool names in text fields;
+   - flag `rejected_claims` text that is still in the summary or statement;
+   - flag office-holder titles followed by "says".

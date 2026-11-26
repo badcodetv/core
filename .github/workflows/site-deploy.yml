@@ -23,10 +23,12 @@ on:
       - docs/demo/page/**
       - docs/demo/cabinet.json
       - scripts/demo/**
-  schedule:
-    - cron: '15 12 * * *'
-    - cron: '30 14 * * *'
-    - cron: '0 15 * * *'
+  # The three daily rebuilds (12:15, 14:30, 15:00 UTC) are off while the government is paused
+  # (Kai, 2026-11-26; docs/government/PAUSED.md). To bring them back:
+  # schedule:
+  #   - cron: '15 12 * * *'
+  #   - cron: '30 14 * * *'
+  #   - cron: '0 15 * * *'
   workflow_dispatch:
 concurrency:
   group: site-deploy

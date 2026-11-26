@@ -5,7 +5,7 @@
     "cron": "0 5 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Run today's news sweep."
   },
   {
@@ -14,7 +14,7 @@
     "cron": "0 6 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Sit today's cabinet."
   },
   {
@@ -23,7 +23,7 @@
     "cron": "30 7 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Oppose today's changes."
   },
   {
@@ -32,7 +32,7 @@
     "cron": "0 8 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Gate today's changes and mark the checks that are due."
   },
   {
@@ -41,7 +41,7 @@
     "cron": "0 20 * * 0",
     "timezone": "Europe/London",
     "keep_sessions": 8,
-    "enabled": true,
+    "enabled": false,
     "message": "Run this week's personnel review."
   },
   {
@@ -50,7 +50,7 @@
     "cron": "0 9 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Run today's simulation clerk."
   },
   {
@@ -59,7 +59,7 @@
     "cron": "20 9 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Run today's simulated citizens."
   },
   {
@@ -68,7 +68,7 @@
     "cron": "40 9 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Write today's rival answer C."
   },
   {
@@ -77,7 +77,7 @@
     "cron": "0 10 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Run today's bench."
   },
   {
@@ -86,7 +86,7 @@
     "cron": "30 10 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Run today's gate."
   },
   {
@@ -95,7 +95,7 @@
     "cron": "0 11 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Run today's simulated jury."
   },
   {
@@ -104,7 +104,7 @@
     "cron": "20 11 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": true,
+    "enabled": false,
     "message": "Run today's minister and publish the issue."
   }
 ]

@@ -1,5 +1,7 @@
 # Why the government runs this way
 
+> **PAUSED since 26 Nov 2026.** Nothing runs: every Bob schedule is off, and GOVT on badcode.tv shows Future Proof's three questions only. What was built, what it cost, what we learned and how to bring it back: [`PAUSED.md`](./PAUSED.md). The rethink: [`design/2026-11-26-government-rethink/`](../../design/2026-11-26-government-rethink/ideas.md).
+
 **The canonical record of what the BadCode government is for, and why it is built the way it is.**
 Ruled by Kai on 2026-11-11 and live the same day. Read this before changing how the government works.
 How the machinery runs day to day is in [`README.md`](./README.md); the build plan, research and
