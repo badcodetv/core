@@ -1,0 +1,21 @@
+{
+ "A": {
+  "title": "Government pays the rise above £500m, tested in volunteer councils",
+  "answer": "Keep the talks and the chair. Change who carries the cost. Trial: in volunteer councils picked by lot, the Department of Health and Social Care pays any agreed rise above the £500 million, and publishes the cost before signing. Others get no less than today. Measured by 30 June 2029: care workers staying in their jobs, against places like it. Provisional fail: leavers fall by less than 2 in every 100, or a picked council cuts home care. Stops on 31 March 2030 unless Parliament votes to keep it. Passes, and it goes national. Leaves out Wales, Scotland, Northern Ireland and non-volunteer councils. The Secretary of State signs it.",
+  "sources": [
+   "s1",
+   "s2"
+  ],
+  "new_sources": []
+ },
+ "B": {
+  "title": "Government pays the rise direct, not councils: a small trial",
+  "answer": "Take the bill off councils. In volunteer council areas picked by lot, government pays any rise agreed in the talks straight to care firms for wages. Councils don't find it, so council tax and local services aren't touched. Workers and employers still agree the deal; councils advise, as planned [s2]. Other areas get today's arrangement, never less. We compare pay with the 79p an hour above minimum wage seen in 2024-25 [s3]. Provisional fail line: under 50p more than comparison areas by April 2028. Stops on 30 April 2028 unless Parliament votes to keep it. Passes, and it goes national. Leaves out Scotland, Wales and Northern Ireland. Signed by the Secretary of State for Health and Social Care.",
+  "sources": [
+   "s2",
+   "s3"
+  ],
+  "new_sources": []
+ },
+ "note": "Raw replies of the two blind subagents (claude-sonnet-5-5). Neither saw the other or C. Not edited."
+}

@@ -3,7 +3,7 @@
   "id": "2026-11-26-care-worker-pay-talks",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "citizens",
+  "stage": "bench",
   "run": {
     "mode": "live",
     "run_date": "2026-11-26",
@@ -60,7 +60,8 @@
   "made_by": {
     "workers": [
       "sim-clerk",
-      "sim-citizens"
+      "sim-citizens",
+      "sim-bench"
     ]
   },
   "citizens": {
@@ -234,5 +235,43 @@
         "text": "Carers should be paid more if they're doing the hard work. Don't make my rent or bills go up to fund it."
       }
     ]
-  }
+  },
+  "bench": [
+    {
+      "id": "A",
+      "title": "Government pays the rise above £500m, tested in volunteer councils",
+      "answer": "Keep the talks and the chair. Change who carries the cost. Trial: in volunteer councils picked by lot, the Department of Health and Social Care pays any agreed rise above the £500 million, and publishes the cost before signing. Others get no less than today. Measured by 30 June 2029: care workers staying in their jobs, against places like it. Provisional fail: leavers fall by less than 2 in every 100, or a picked council cuts home care. Stops on 31 March 2030 unless Parliament votes to keep it. Passes, and it goes national. Leaves out Wales, Scotland, Northern Ireland and non-volunteer councils. The Secretary of State signs it.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Government pays the rise direct, not councils: a small trial",
+      "answer": "Take the bill off councils. In volunteer council areas picked by lot, government pays any rise agreed in the talks straight to care firms for wages. Councils don't find it, so council tax and local services aren't touched. Workers and employers still agree the deal; councils advise, as planned [s2]. Other areas get today's arrangement, never less. We compare pay with the 79p an hour above minimum wage seen in 2024-25 [s3]. Provisional fail line: under 50p more than comparison areas by April 2028. Stops on 30 April 2028 unless Parliament votes to keep it. Passes, and it goes national. Leaves out Scotland, Wales and Northern Ireland. Signed by the Secretary of State for Health and Social Care.",
+      "engine": "claude",
+      "model": "claude-sonnet-5-5",
+      "blind": true,
+      "sources": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Let carers and care users sign off the extra pay",
+      "answer": "Your mum's care isn't a rounding error. Keep a national pay floor; trial extra pay through councils, with elected carers and care users jointly approving each local deal. Parliament funds rises above £500 million through a capped grant from general taxation, conditional on audited wages, unchanged fees and care hours. Draw twelve volunteer council areas by lot; others keep existing funding. Publish staff retention and delivered care hours quarterly. Provisional failure: retention improves under five percentage points against similar areas, or care hours fall. Funding stops in April 2029 unless Parliament renews it after review; success means national rollout. Count unpaid carers and self-funders separately: this won't cover everyone. Workers and users approve deals; Parliament approves spending.",
+      "engine": "codex",
+      "model": "gpt-6",
+      "blind": true,
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    }
+  ]
 }
