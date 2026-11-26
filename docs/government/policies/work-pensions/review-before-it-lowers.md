@@ -9,10 +9,10 @@ needs: none
 stop: Stops on its date unless Parliament votes to keep it, on the published review. Passes, and it goes national.
 test.where: The area or group the change is tried on first, under the Universal Credit pilot power, or the same power written into the Bill that replaces PIP
 test.against: areas or groups like them on today's rules
-test.measure: the change's own published aim
-test.by: three years at most, the limit the pilot power sets
-fails_if: The change misses its own published aim (provisional).
-leaves_out: People already on a lowered benefit before the rule starts; claimants in Scotland and Northern Ireland
+test.measure: the change's own published aim, and two harm measures fixed before anyone enters: the share of decisions changed at reconsideration or appeal, and the share of people an independent reassessment finds with assessed needs the award leaves unmet
+test.by: three years at most, the limit in section 41, written into the PIP Bill the same
+fails_if: The change misses its own published aim, or either harm measure is a tenth or more higher than in areas like it; two quarters running past that line stop the trial early (provisional).
+leaves_out: Claimants in the first areas, who carry the risk before anyone else, counted on their own line; people already on a lowered benefit before the rule starts; claimants in Scotland and Northern Ireland
 signs: The Secretary of State for Work and Pensions
 check.claim: By 30 April 2027 the government will publish a plan to change PIP that would lower or stop some awards, naming no area or group where it is tried first.
 check.prior: 0.4
@@ -37,5 +37,10 @@ The law already lets Universal Credit rules be tried by area or group for up to 
 that replaces PIP carries the same power, and the new assessment starts in some areas first,
 against areas still on PIP, before it decides anyone else's money. Benefit trials start in England
 and Wales.
+
+Two things the DWP doesn't get to pick. The harm test is written before anyone enters, so a smaller
+bill can't pass for a better benefit. And the first areas carry the risk, so they get the cover: if
+the trial fails or stops early, everyone in them goes back to their old award, and every pound they
+lost is paid back.
 
 That's one clause in a Bill. The DWP writes the Bill.
