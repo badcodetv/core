@@ -23,13 +23,16 @@
   const HOST = '<svg class="host" viewBox="0 0 100 120" role="img" aria-label="The BadCode host: a white balaclava with a red triangle eyepatch"><path d="M18 120 C18 80 22 62 50 62 C78 62 82 80 82 120Z" fill="#1d1c1b"/><ellipse cx="50" cy="40" rx="24" ry="30" fill="#f2f0ea"/><rect x="33" y="34" width="34" height="11" rx="5" fill="#2a2522"/><path d="M57 33 L68 36 L62 46 Z" fill="#cc2b37" stroke="#cc2b37" stroke-linejoin="round" stroke-width="2"/><circle cx="41" cy="39.5" r="2" fill="#ddd"/></svg>';
   const RING = (stroke, w = 4.5) => `<svg viewBox="-34 -34 68 68" aria-hidden="true"><circle class="r" r="27.75" fill="none" stroke="${stroke}" stroke-width="${w}" transform="rotate(-90)"/><path class="t" d="${MARK_TRI}" fill="#cc2b37"/></svg>`;
 
-  const CH = ['stories', 'news', 'government', 'testcard'];
   const S = C.stories, SVP = C.storyverse;
   // NEWS is the shorts (Kai, 2026-11-26): one programme per short in content.json news.shorts, each playing once
   // it has a YouTube id; a title card until the first one is up.
   const SH = C.news.shorts || [];
   const NP = SH.length ? SH.map((b, i) => ({ k: 'short', i })) : [{ k: 'card' }];
   const newsProg = p => NP[p - 1] || NP[NP.length - 1];
+  // A two-channel telly until the first short lands (Kai, 2026-11-26): with no shorts, the NEWS button goes,
+  // NEWS addresses open GOVT, and NEWS comes back by itself when news.shorts gets its first entry.
+  const CH = SH.length ? ['stories', 'news', 'government', 'testcard'] : ['stories', 'government', 'testcard'];
+  if (!SH.length) { const nb = $('.st-news'); if (nb) { nb.parentElement.classList.add('two'); nb.remove(); } }
   // The Storyverse is back on STORIES, after the four films and four songs (its old home, /stories/9).
   const STORIES_SV = S.length * 2 + 1;
   // GOVT is Future Proof and nothing else (Kai, 2026-11-26): the three questions, playing in the screen.
@@ -53,6 +56,7 @@
     let m;
     if (path === '/') return null;
     if ((m = path.match(/^\/text\/(\d{3})$/))) return { ch: 'stories', p: 1, text: +m[1] };
+    if (!SH.length && /^\/news(\/\d+)?$/.test(path)) return { ch: 'government', p: 1, text: null };
     if (path === '/future-proof') return { ch: 'government', p: 1, text: null };
     if (path === '/storyverse') return { ch: 'stories', p: STORIES_SV, text: null };
     if (path === '/about') return { ch: 'testcard', p: 1, text: null };
@@ -361,7 +365,7 @@
         L('m', ' We have seen how this ends. We came'), L('m', ' back to change it. Type a page, or'), L('m', ' press a colour below.')],
       200: () => [head(p), '', title('br w', 'STORIES'), '', ...S.flatMap((st, i) => [`<span class="w"> ${i + 1} </span>${link(201 + i, st.title.toUpperCase().slice(0, 34))}`, L('c', `   song ${i + 5}: ${st.song.slice(0, 30)}`)]),
         L('w', ' Each film works on its own. They also'), L('w', ' share one universe.'), '', L('g', ' Channel 1 for pictures: press STORIES')],
-      300: () => [head(p), '', title('br w', 'BADCODE NEWS'), '', ...wrap(n.strap), '', L('y', ' ' + n.status), '', ...wrap(n.ticker[2]), '', L('m', ' "' + n.signoff.slice(0, 35)), L('m', '  ' + n.signoff.slice(35) + '"'), '', L('b', ' Press NEWS for the shorts.')],
+      300: () => [head(p), '', title('br w', 'BADCODE NEWS'), '', ...wrap(n.strap), '', L('y', ' ' + n.status), '', ...wrap(n.ticker[2]), '', L('m', ' "' + n.signoff.slice(0, 35)), L('m', '  ' + n.signoff.slice(35) + '"'), '', L('b', SH.length ? ' Press NEWS for the shorts.' : ' The first shorts are on their way.')],
       400: () => [head(p), '', title('by', 'THE BADCODE GOVERNMENT'), '', L('w', ' THE MANIFESTO'), '', ...g.pledges.flatMap((pl, i) => [L('y', ` PLEDGE ${i + 1}`) + L('w', ' ' + pl[0].slice(0, 28)), ...wrap(pl[1], 34, '   ').map(x => L('c', x)), '']),
         `<span class="g"> ${esc(g.promise.slice(0, 33))} </span>${link(888, '888', 'g')}`, dots('The cabinet', 401)],
       401: () => [head(p), '', title('by', 'THE CABINET'), '', ...CAB.map((x, i) => dots(x.title.slice(0, 30), 402 + i)), '', L('c', ' Each minister reads the news daily.'), L('c', ' The manifesto moves with it.'), `<span class="w"> Manifesto </span>${link(400, '400')}`],
@@ -449,7 +453,7 @@
     text: () => { if (state.text) { state.text = null; render(false); commit(true); flashOsd(); } else goText(C.channels[state.ch].teletext); },
     clean: () => setClean(!tv.classList.contains('clean')),
     tuck: () => setTucked(!tv.classList.contains('tucked')),
-    stories: () => strand('stories'), news: () => strand('news'), government: () => strand('government'),
+    stories: () => strand('stories'), news: () => { if (SH.length) strand('news'); }, government: () => strand('government'),
     prev: () => step(-1), next: () => step(1), up: () => chStep(1), down: () => chStep(-1),
   };
   function press(k) {
@@ -489,6 +493,7 @@
     state = deep || last || { ch: 'stories', p: 1, text: null };
     if (state.text === 404 && !location.pathname.startsWith('/text/')) state.text = 404;
     render(false);
+    if (deep && !deep.text) commit(false); // an old address (/news/1, /government/health) shows the one it opened
     if (!home || state.text === 404) { document.title = titleFor(state); if (state.text !== 404) store.set('bc-last', toPath(state)); flashOsd(); }
     let closed = false; try { closed = !!sessionStorage.getItem('bc-closed'); } catch (e) {}
     const h = londonHour();

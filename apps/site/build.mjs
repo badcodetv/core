@@ -61,7 +61,7 @@ const SITE_DESC = `${A.lede} ${A.request.replace('fuck', 'f***')} Stories, the n
 const nav = `<nav aria-label="Channels"><ul>
 <li><a href="/stories">Stories</a>: ${S.map((s, i) => `<a href="/stories/${i + 1}">${esc(s.title)}</a>`).join(', ')}. Songs: ${S.map((s, i) => `<a href="/stories/${i + 5}">${esc(s.song)}</a>`).join(', ')}.</li>
 <li><a href="/stories/9">${esc(SVP.title)}</a></li>
-<li><a href="/news">News</a>: ${(N.shorts || []).length ? (N.shorts || []).map((x, i) => `<a href="/news/${i + 1}">${esc(x.title)}</a>`).join(', ') : 'the shorts, soon'}</li>
+${(N.shorts || []).length ? `<li><a href="/news">News</a>: ${N.shorts.map((x, i) => `<a href="/news/${i + 1}">${esc(x.title)}</a>`).join(', ')}</li>` : ''}
 <li><a href="/government">The BadCode Government</a>: Future Proof, in three questions</li>
 <li><a href="/about">About BadCode</a> and <a href="/text/100">BadCode Text</a></li>
 </ul></nav>`;
@@ -99,7 +99,8 @@ const routes = [
   // NEWS is the shorts; GOVT is Future Proof; the Storyverse is STORIES 9 (Kai, 2026-11-26)
   { path: '/stories/9', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
   { path: '/storyverse', canon: '/stories/9', title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
-  { path: '/news', title: 'News · BadCode', desc: N.strap, body: plainBody.news() },
+  // NEWS is built only once it has a short: a two-channel telly until then (Kai, 2026-11-26)
+  ...((N.shorts || []).length ? [{ path: '/news', title: 'News · BadCode', desc: N.strap, body: plainBody.news() }] : []),
   ...(N.shorts || []).map((x, i) => ({ path: `/news/${i + 1}`, title: `${x.title} · News · BadCode`, desc: x.line || N.strap, body: `<h1>${esc(x.title)}</h1><p>${esc(x.line || '')}</p>` })),
   { path: '/government', title: 'Future Proof · The BadCode Government', desc: G.futureProof.question, body: plainBody.fp() },
   { path: '/future-proof', canon: '/government', title: 'Future Proof · The BadCode Government', desc: G.futureProof.question, body: plainBody.fp() },
