@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/coupr-a.png",
+ "made": "2026-11-25T15:04:21.425Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "The same open steel phone box and the same woman in it on the phone as in the reference image, the same street, but at night, seen from a little further back so the whole scene fits. Around the box stand about thirty people with phones raised and glowing, with room between them. Among them are two TV news crews: each has a cameraman with a big shoulder camera, a sound operator holding up a fluffy boom microphone, and a bright light on a stand throwing hard white light onto the box. A news van with a mast is parked at the kerb behind. The phone box stays open steel, no glass booth, no words on it. No added text anywhere, no logos on the cameras or van.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r5 note at6045: fewer people, moving, with a couple of news crews; re-roll on the open steel box",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/crowd2-a.png",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/crowd2-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "5dc4d6fa-d955-46fd-a6b7-5399ab20c325"
+}

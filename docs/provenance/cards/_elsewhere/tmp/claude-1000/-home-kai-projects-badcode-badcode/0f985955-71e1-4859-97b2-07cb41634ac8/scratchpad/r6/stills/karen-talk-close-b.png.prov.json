@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/karen-talk-close-b.png",
+ "made": "2026-11-25T15:05:59.614Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe same woman at the same open steel phone box as in the reference image, bright daylight, now a medium close-up from just outside the box: her head and shoulders fill the frame, her face about a third of the frame's height and clearly lit, the receiver pressed to her ear. She is mid-complaint, lips closed for a moment, eyes narrowed and determined, about to speak. The street behind softly blurred.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r5 note at2662: lip-sync Karen's line (a closer start frame)",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/talk-day.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/talk-day.jpg"
+  ],
+  "character": "Karen"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "55a12f92-8425-457a-9dbe-68fb517ab6f4"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/crowd6-b.png",
+ "made": "2026-11-25T14:56:28.228Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe street-corner phone box from the first reference image, the same framing, now late afternoon going on early evening: low golden light, long shadows, still light. The woman is in the box talking into the receiver. In front of the box a small loose group of six people has gathered: the two young men from the second reference image, plus a woman in scrubs, a teenager with a skateboard, an older man with a small dog and a courier with a backpack. Most hold their phones up to film her. Plenty of empty pavement around them.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r5 note at4732: the crowd grows 2, then 5-6, then about 20, same scene",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/box-day.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/box-day.jpg",
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/friends.jpg"
+  ],
+  "character": "Karen"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9143a3fa-8617-4983-8b95-e8112026f180"
+}

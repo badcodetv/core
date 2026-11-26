@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/r8bar-a.png",
+ "made": "2026-11-25T18:37:47.567Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Inside a busy New York neighbourhood bar in the evening, warm low light, bottles glowing behind the counter. A large TV high on the wall shows the picture from the reference image: the woman at the phone box at night, talking into the receiver, filling the TV screen. Along the bar, regulars in work clothes have turned on their stools to look up at the TV, one pointing at it, one laughing, the bartender pausing mid-pour. Seen from the end of the bar, the TV in the upper part of the frame. Super 8 film grain, vibrant warm colour, present day. No words on screen.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r7 note at5347: 'she's made the news' as a moving shot; Flow refuses any reporter clip ('misrepresent current events')",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-boxeve-talk.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-boxeve-talk.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "388fec2b-c168-4bb6-bcbd-2f8ba3aa284d"
+}

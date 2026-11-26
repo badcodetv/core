@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/office-wag-a.png",
+ "made": "2026-11-24T22:32:25.764Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe same open-plan Manhattan office as in the reference image, present day: white desks running back in rows towards tall windows full of grey city towers. In the foreground, a man in his thirties with short dark hair and a plain grey sweater sits rigidly at his desk, eyes fixed on his blank monitor, shoulders hunched up towards his ears. The woman from the character reference stands right behind his chair, leaning over his shoulder, her index finger raised and wagging at his screen, brows pulled down hard, lips pressed into a thin line mid-sentence. She is a third in from the left of the frame. Ordinary overcast daylight from the windows. Medium shot at desk height from the side, the colleague sharp, the office falling soft behind them. Monitors show only soft blank light.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/office.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/office.jpg"
+  ],
+  "character": "Karen"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "6870de46-44e9-4af2-96ef-94b26ac619c2"
+}

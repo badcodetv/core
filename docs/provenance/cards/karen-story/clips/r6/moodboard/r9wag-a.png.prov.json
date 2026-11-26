@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r9wag-a.png",
+ "made": "2026-11-26T11:33:45.597Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nKeep this exact frame: the same open-plan Manhattan office, the same woman in the camel cardigan standing behind the chair wagging her finger with the same furious face, the same desk, monitor, light and camera angle. Change only the seated colleague: he becomes a completely different man, in his late fifties, heavy-set, bald with a short grey goatee, small reading glasses pushed down his nose, a rumpled blue checked shirt with the sleeves rolled up. He sits back in his chair, slouched and relaxed, utterly unbothered: a flat, stone-cold, expressionless face, heavy-lidded eyes looking at his screen, mouth closed, the look of a man who has heard this a thousand times. No wide eyes, no worry, no raised eyebrows.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r8, 2026-11-25, at137: a completely different-looking colleague, stone-cold and emotionless, not wide-eyed like her boss",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/office-wag-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r4/moodboard/office-wag-b.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2b79b89f-c1fc-4d97-844c-3eea4ab49e6f"
+}

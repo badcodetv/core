@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/r8train-b.png",
+ "made": "2026-11-25T18:24:35.785Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "The same two young men on the same subway seat, same clothes, same phone and earphones, same framing. Change only the window behind them: the train is now inside a dark tunnel, so the glass shows near-black with a few tunnel lamps smeared into short horizontal streaks of light. No station, no platform. Film grain, natural colour.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r7 note at4881: the train seen through the window went one way then the other",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/ref/friends13.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/ref/friends13.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "98db2a97-212b-409e-a1e8-d68721973420"
+}

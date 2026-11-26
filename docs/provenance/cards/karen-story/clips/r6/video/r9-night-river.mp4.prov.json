@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r9-night-river.mp4",
+ "made": "2026-11-26T11:45:12.485Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_queue (video)",
+ "prompt": "A locked-off wide shot of an empty riverside promenade in New York late at night: a metal railing in the foreground, the dark East River beyond, the lit Brooklyn Bridge and the Manhattan skyline across the water. Nobody is in the shot. Small waves slap against the stone wall below the railing, a light wind moves across the water, a car's headlights cross the bridge far away. Sound: only the open-air night by the water: small waves lapping and slapping against the wall, a soft gusting wind, the low rumble of distant traffic on the bridge, one faraway car horn. No voices, no people, no music.",
+ "model": "Omni 1.2 Flash",
+ "why": "Kai's note on cut r8, 2026-11-25, at1474: an outdoor atmosphere under Karen's river line (this clip is used for its sound only)",
+ "parent": null,
+ "inputs": {
+  "start": null,
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 15
+ },
+ "source_id": "e8b71803-3644-472d-816d-11636fe43610"
+}

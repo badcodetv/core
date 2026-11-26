@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/map-pin3-a.png",
+ "made": "2026-11-25T14:49:36.989Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "The same paper wall map of Manhattan as in the reference image, the same colours and printing, now with the top edge of the map in frame where the island runs off the paper to the north. Exactly ONE pushpin is in the map: a single glossy blue pushpin stuck right at the northern edge of the paper, as if pointing somewhere far beyond the map, casting a small shadow. Remove every other pin: no red, yellow, green or orange pins anywhere. Soft daylight across the paper, a little film grain. No added text, no labels, no logos.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r5 note at3485: week two, a map with one pin",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/map.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/map.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "8638933f-b974-4017-8ceb-0b30d9293cca"
+}

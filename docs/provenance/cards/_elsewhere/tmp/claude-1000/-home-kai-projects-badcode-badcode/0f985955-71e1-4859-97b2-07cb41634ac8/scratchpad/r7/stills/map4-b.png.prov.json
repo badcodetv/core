@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/map4-b.png",
+ "made": "2026-11-25T17:29:34.709Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "The same paper wall map of Manhattan as in the reference image, the same colours and printing, framed the same way. Exactly ONE pushpin is in the map: a small glossy blue pushpin, small and neat, pushed into upper Manhattan in Harlem, well inside the island and away from the edges of the paper, casting a tiny shadow. Remove every other pin: no red, yellow, green or orange pins anywhere. Soft daylight across the paper, a little film grain. No added text, no labels, no logos.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r6 note at3862: Harriet's pin smaller, inside Manhattan, not at the top edge",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/map.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/map.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "96c57aea-a011-4a59-a85c-587d41be93a5"
+}

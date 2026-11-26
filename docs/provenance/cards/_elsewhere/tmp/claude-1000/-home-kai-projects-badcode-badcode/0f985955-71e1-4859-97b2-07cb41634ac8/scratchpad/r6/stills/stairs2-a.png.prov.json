@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/stairs2-a.png",
+ "made": "2026-11-25T15:12:28.569Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Change this photo: remove every person waiting at the top of the subway stairs, so the opening at the top shows only bright empty daylight, a pale grey sky, a lamp post and the corner of a building. Keep the tiled walls, the handrails, the litter on the steps and the two young men climbing exactly where they are; give one of them a phone held up in his hand. Film grain, no added text.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r5 note at4414: you wouldn't see the crowd at the top of the stairs",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/stairs.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/ref/stairs.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "1f9a318f-172d-4dde-a5bd-3d32d1ad20dc"
+}

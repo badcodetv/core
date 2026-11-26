@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/car-phone2-a.png",
+ "made": "2026-11-24T22:40:34.086Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight. The back seat of a black armoured car moving through a city, present day. The same man in the dark suit from the reference image, the same close-cropped hair and the same dark skin seen from behind, sits on the right of the back seat, seen from behind his shoulder, his face turned away towards the tinted side window, holding the receiver of a corded car phone to his ear. Streaks of city light slide across the dark glass. Beyond the front seats, through the windscreen, two small American stars-and-stripes flags on the front of the bonnet flutter, soft and out of focus. One warm reading lamp above him, the rest of the car in deep shadow. Close medium shot over his shoulder.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Karen cut r4: re-roll (take a: wrong man; take b: British flags)",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/man-back.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/man-back.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "4c650afc-e616-4182-a31f-ff44ba88d197"
+}

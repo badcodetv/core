@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r8-train-tunnel.mp4",
+ "made": "2026-11-25T18:26:09.338Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_queue (video)",
+ "prompt": "Locked-off camera inside the carriage. The train keeps rolling forward through the dark tunnel: the lamp streaks slide past the window steadily from right to left, always the same direction, at an even speed. The carriage sways a little. The two friends look down at the phone, the one in the denim jacket leans in and laughs, the other points at the screen. Gentle movement continues to the last frame. Sound: subway rumble, rails clacking. No speech, no music.\n\nThanks.",
+ "model": "Omni 1.2 Flash",
+ "why": "Kai, cut r7 note at4881: the train seen through the window went one way then the other",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/r8train-a.png",
+ "inputs": {
+  "start": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/r8train-a.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": null
+ },
+ "source_id": "c8786bfb-8b58-44f0-969d-73e7663c37ce"
+}

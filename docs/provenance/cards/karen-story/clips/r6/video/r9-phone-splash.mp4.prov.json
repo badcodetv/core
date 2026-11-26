@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r9-phone-splash.mp4",
+ "made": "2026-11-26T12:36:28.564Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_queue (video)",
+ "prompt": "The camera stays still on the dark river. A small smartphone falls from above into the water just beyond the railing and plops in with a short spray of droplets; rings spread out and it sinks. Then the river carries on lapping against the wall. Sound: one sharp wet plop of a small object entering the water, droplets pattering back down, then soft lapping and far traffic. Nobody in the shot. No speech, no music.",
+ "model": "Omni 1.2 Flash",
+ "why": "Kai, 2026-11-26: 'please make the splash louder' (the made-here splash read as a gunshot; this clip is used for its sound only)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r9splash-start.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r9splash-start.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": null
+ },
+ "source_id": "e8b71803-3644-472d-816d-11636fe43610"
+}

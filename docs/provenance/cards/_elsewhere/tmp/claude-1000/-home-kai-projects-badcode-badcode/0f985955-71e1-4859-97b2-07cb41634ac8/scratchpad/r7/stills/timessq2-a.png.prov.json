@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/timessq2-a.png",
+ "made": "2026-11-25T17:30:50.161Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text other than the one headline asked for below, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nTimes Square at night, present day, the same place as the first reference image, seen from behind the crowd at street level. The enormous video screen high on the building ahead shows a live TV broadcast: the late-night talk show studio from the second reference image in chaos, men in dark suits and earpieces bundling the man in the armchair out of his seat. Directly beneath the screen, a long red news band reads, in big bold white capital letters: PRESIDENT SACKED ON LIVE TV BY SEAN AI. The whole crowd below has stopped and faces the screen with their backs to us, heads tipped up, every face turned towards it; phones are held up filming the screen; stopped yellow cabs; wet pavement reflecting the lights.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r6 note at7305: Times Square made in Flow, everyone watching the screen",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/timessq-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/timessq-a.png",
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-studio-pres.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c98521ed-e0b9-442f-a4e2-be46130a91e7"
+}

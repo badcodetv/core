@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/timessq4-a.png",
+ "made": "2026-11-25T17:41:52.371Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Identical picture, one fix only: the white headline lettering on the red band is a little smaller and centred, so that every letter of PRESIDENT SACKED ON LIVE TV BY SEAN AI sits on the flat front of the band with a clear stretch of plain red after the final letter I. Nothing else changes.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r6 note at7305: the headline ran off the end of the band",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/timessq3-a.png",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/timessq3-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "07b2198e-3cee-426b-a67d-6cd9658684f0"
+}

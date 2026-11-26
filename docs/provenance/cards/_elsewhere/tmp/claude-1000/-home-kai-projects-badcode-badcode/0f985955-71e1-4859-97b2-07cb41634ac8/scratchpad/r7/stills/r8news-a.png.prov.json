@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/r8news-a.png",
+ "made": "2026-11-25T18:24:31.785Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep this street, this TV crew and their kit exactly as they are, but make it early evening: a deep blue sky, the shop windows and street lamps lit, car headlights on, a soft camera light on a stand glowing on the presenter. The presenter is now a man in his forties in a navy overcoat, holding the same microphone. A few passers-by behind have stopped to watch. Film grain, natural colour.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r7 note at5347: the evening news as a video; Flow refused the old evening still",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/ref/news31.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/ref/news31.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "939e90e0-75a3-4f65-942d-3574efd65bcb"
+}

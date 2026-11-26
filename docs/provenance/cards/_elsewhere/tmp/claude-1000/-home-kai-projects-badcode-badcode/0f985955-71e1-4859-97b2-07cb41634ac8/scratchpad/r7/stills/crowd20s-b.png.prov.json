@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/crowd20s-b.png",
+ "made": "2026-11-25T17:29:43.154Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe exact same scene as the reference image: the same phone box, the same woman on the phone, the same street, the same evening light, the same camera position and framing, about twenty people. Change only where people stand: everyone keeps a respectful distance, the nearest people at least two metres back from the box, leaving a clear half circle of empty pavement in front of her. The two young men stand relaxed at one side of the crowd, a few metres back, smiling and filming on their phones, not crowding her. The phone box stays exactly as it is: open steel, no glass booth, no words on it.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r6 note at5383: the two friends were right up in Karen's face",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/crowd20r-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/crowd20r-b.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "6fbb9712-b7a9-438d-8727-39a8c22bb00d"
+}

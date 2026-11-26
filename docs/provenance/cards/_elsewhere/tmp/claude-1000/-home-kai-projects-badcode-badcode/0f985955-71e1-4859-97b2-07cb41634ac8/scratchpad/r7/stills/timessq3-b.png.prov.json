@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/timessq3-b.png",
+ "made": "2026-11-25T17:39:39.657Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep the first reference image exactly: Times Square at night seen from behind the crowd, the giant video screen, the red news band beneath it, the stopped yellow cabs, the crowd with their backs to us looking up and filming, the wet pavement. Change only what plays on the giant screen: it now shows the second reference image, the TV studio with the Secret Service agents carrying the Black man in the dark suit out of his armchair, filling the whole screen, slightly brighter, a broadcast picture with a faint scanline glow. Fix the red band so the whole headline fits inside it with clear space at both ends, in bold white capitals: PRESIDENT SACKED ON LIVE TV BY SEAN AI. No other words anywhere.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r6 note at7305: Times Square made in Flow, everyone watching the screen; the screen must show our evacuation",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/timessq2-a.png",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r7/stills/timessq2-a.png",
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-evac-frame.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "43af69ad-fa73-4162-bc5f-76038e9bb69d"
+}

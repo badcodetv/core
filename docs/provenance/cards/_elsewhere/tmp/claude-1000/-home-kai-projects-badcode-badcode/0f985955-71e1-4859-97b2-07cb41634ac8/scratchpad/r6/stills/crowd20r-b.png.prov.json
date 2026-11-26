@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/crowd20r-b.png",
+ "made": "2026-11-25T15:04:28.944Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "The exact same scene as the reference image: the same open steel phone box, the same woman in it on the phone, the same street, the same camera position and framing. Now it is evening: deep blue sky, street lamps and shop windows lit, headlights passing behind. Around the front of the box stands a crowd of about twenty people in a loose half circle, a couple of rows deep, phones held up glowing, some laughing, some filming; the two young men are at the front. Not packed: pavement still visible between them. The phone box stays exactly as it is: open steel, no glass booth, no words on it. No added text anywhere.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai, cut r5 note at4732: about twenty at evening, the same scene; re-roll (the first take turned into a glass booth)",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/crowd2-a.png",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r6/stills/crowd2-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "55029f3f-eb9b-4fa7-b8f7-16657647d496"
+}

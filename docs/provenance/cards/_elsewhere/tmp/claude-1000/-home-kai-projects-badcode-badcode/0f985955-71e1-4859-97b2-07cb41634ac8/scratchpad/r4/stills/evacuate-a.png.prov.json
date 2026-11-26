@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/stills/evacuate-a.png",
+ "made": "2026-11-24T22:32:07.849Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nThe same late-night talk show set as in the reference image, present day: the dark studio, the wooden desk, the city-at-night backdrop, the armchairs. Four broad men in dark suits with curly earpiece wires surge onto the set from the left. Two of them grip a man in a dark suit by his upper arms and haul him up out of the guest armchair, steering him fast towards the dark edge of the set, his back to the camera, his face turned away. Behind the desk the host half-stands, frozen. The tall screen at the right edge of the set glows gold. Studio lights flare. Wide shot from the dark beyond the cameras, the action caught mid-movement with motion blur on the men.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Karen cut r4 (Kai, overnight brief 2026-11-24)",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/studio.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/r4/ref/studio.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7bff3253-7b5a-4b17-a7d3-7d172d46b66b"
+}
