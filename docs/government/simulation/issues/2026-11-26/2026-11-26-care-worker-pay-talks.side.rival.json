@@ -1,0 +1,13 @@
+{
+  "id": "C",
+  "title": "Let carers and care users sign off the extra pay",
+  "answer": "Your mum's care isn't a rounding error. Keep a national pay floor; trial extra pay through councils, with elected carers and care users jointly approving each local deal. Parliament funds rises above £500 million through a capped grant from general taxation, conditional on audited wages, unchanged fees and care hours. Draw twelve volunteer council areas by lot; others keep existing funding. Publish staff retention and delivered care hours quarterly. Provisional failure: retention improves under five percentage points against similar areas, or care hours fall. Funding stops in April 2029 unless Parliament renews it after review; success means national rollout. Count unpaid carers and self-funders separately: this won't cover everyone. Workers and users approve deals; Parliament approves spending.",
+  "engine": "codex",
+  "model": "gpt-6",
+  "blind": true,
+  "sources": [
+    "s1",
+    "s2"
+  ],
+  "new_sources": []
+}
