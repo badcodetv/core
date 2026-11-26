@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r11throw-r11throw-a.mp4",
+ "made": "2026-11-26T17:04:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan, wine glass still in her left hand, swings round to the railing and, with a furious shout, hurls her phone overhand far out over the railing; it arcs away into the dark water. She stays at the railing, breathing hard, then takes a defiant sip of wine. Her friend in the olive jacket doubles over laughing beside her, glass in hand. Both glasses stay in their hands the whole time. Sharp, natural, weighty human movement. Sound: river lapping, wind, distant traffic, her shout. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a.jpg",
+ "why": "Kai's note on cut r10, 2026-11-26, at1528: the throw re-made for quality, Karen keeps her wine glass",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r11throw",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T17:03:28.555Z"
+ }
+}

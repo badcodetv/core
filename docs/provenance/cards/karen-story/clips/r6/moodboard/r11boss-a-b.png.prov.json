@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11boss-a-b.png",
+ "made": "2026-11-26T17:01:31.354Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "A medium close-up of the grey-bearded man in the blue shirt from this writers' room, the one leaning on the table on the left: same face, same shirt, same room and window light behind him, softly out of focus. He has straightened up, and an idea has just struck him: eyes widening, a slow knowing half-smile, one finger rising as if about to say \"wait...\". The wall screen behind him is dark and switched off. Grainy film look, warm office light. No legible text anywhere.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's notes on cut r10, 2026-11-26, at5868/at5939: an obvious jump; cut to the boss standing on the left having an idea, and no talk show coming on the TV",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11boss-src.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11boss-src.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7d219130-3e2f-44d9-ab6e-aaf8e7323aa3"
+}

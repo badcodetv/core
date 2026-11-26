@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r11evac2-r7-studio-pres.mp4",
+ "made": "2026-11-26T17:02:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera is still, like a studio camera left running. Without warning, two agents in dark suits sprint in from the right, one barking into his sleeve. The seated man flinches and starts to rise; the agents seize an arm each and lift him clean out of the armchair, the cushion falling to the floor. A third agent sweeps in from behind, shielding him with his body, and the four of them rush out to the left in a tight, crouched huddle, one agent glancing back over his shoulder. The host stays rooted behind his desk, open-mouthed. Every movement is fast, urgent and physical, with natural human timing and balance, never smooth or floating. Sound: running footsteps, a crash, urgent shouts, deep drums. No clear dialogue.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-studio-pres.jpg",
+ "why": "Kai's note on cut r10, 2026-11-26, at6722: the evacuation looks robotic, classic AI; several cuts with different prompts, really dramatic; try 2: locked-off, weight and urgency",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-studio-pres.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r11evac2",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T17:01:13.513Z"
+ }
+}

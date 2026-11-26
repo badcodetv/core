@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png",
+ "made": "2026-11-26T17:00:37.453Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep this exact place, light, film grain and the two women's looks and clothes: the same riverside walk at night under the lit suspension bridge, the same railing along the water on the right, the same skyline. A moment later: the woman in the camel cardigan has stopped at the railing and turned towards the river, side-on to the camera; she still holds her red wine glass in her left hand, and her right arm is raised high above her head gripping her smartphone, about to hurl it into the water; her mouth is wide open, shouting furiously at the river. The woman in the olive jacket stands a step behind her at the railing, holding her own wine glass, laughing in disbelief. Sharp, clean, high detail; present-day New York. No added text.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r10, 2026-11-26, at1528: the river throw looks low quality and Karen has lost her wine glass; recut it",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-src.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-src.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "deab4e3c-e39c-43c8-bce8-35650b03c981"
+}

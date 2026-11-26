@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11heat-a-b.png",
+ "made": "2026-11-26T17:01:08.322Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep the woman from the first image exactly as she is: in the open steel phone box, big dark sunglasses, cardigan tied round her waist, reading a newspaper held up in one hand with the receiver at her ear, the same pose and the same hot summer sun. Change only what is behind her: replace the open sky and trees with the same Midtown Manhattan street as the second image, tall stone and glass buildings filling the background right up to the top of the frame, the green subway entrance railings and lamp posts, yellow cabs on the avenue, summer heat haze. Hardly any sky visible. Grainy film look, punchy warm colour. No legible text on the newspaper or anywhere.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r10, 2026-11-26, at3374: the DAY 3 polaroid shows a huge chunk of sky and looks like Paris; keep her in sunglasses reading the paper, recut the background",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/pol-heat-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/pol-heat-b.png",
+   "/mnt/d/badcode-videos/karen-story/clips/r5/moodboard/talk-day-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ae3c4147-bb08-4466-a91c-3a58c293d731"
+}

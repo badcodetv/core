@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r11evac3-r7-studio-pres.mp4",
+ "made": "2026-11-26T17:03:08+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Filmed in slight slow motion, like a high-speed movie camera, the camera drifting slowly in. Agents in dark suits charge in from the right, ties flying, faces set; one throws an arm round the seated man's shoulders and pulls him to his feet as the others close in around him, and the whole group surges out to the left of the set. The studio lights flare and stutter overhead; the host behind the desk ducks. Weighty, real, dramatic movement: cloth ripples, feet plant hard, heads turn sharply. Nobody disappears; they all leave past the frame edge. Sound: a deep slowed rumble, a heartbeat drum, muffled shouting. No clear dialogue.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-studio-pres.jpg",
+ "why": "Kai's note on cut r10, 2026-11-26, at6722: the evacuation looks robotic, classic AI; several cuts with different prompts, really dramatic; try 3: slow motion, cinematic",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-studio-pres.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r11evac3",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T17:01:57.107Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r11aaron-r11aaron-a.mp4",
+ "made": "2026-11-26T17:06:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. In the glass phone box on the left the woman keeps talking hard into the receiver, shaking her fist. The young man with headphones round his neck holds his phone up, filming her, absorbed: he listens closely, his head tilting, a slow small nod in time with her words, lips closed, intrigued and serious, never grinning. People walk past behind him both ways. Movement continues to the last frame. Sound: street noise. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11aaron-a.jpg",
+ "why": "Kai's note on cut r10, 2026-11-26, at4536: Aaron cast from the Aarron character so his face matches",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11aaron-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r11aaron",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T17:05:24.793Z"
+ }
+}

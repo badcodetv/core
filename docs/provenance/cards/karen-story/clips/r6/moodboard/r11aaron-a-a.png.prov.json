@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11aaron-a-a.png",
+ "made": "2026-11-26T17:01:45.085Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep this exact frame: the same woman on the phone in the glass phone box on the left, the same subway railings, street, taxis, passers-by, light and camera angle. The young man standing by the railings holding up his phone is @Aarron, with his headphones round his neck, striped jumper and backpack: intrigued and listening hard, mouth closed, brows slightly raised, head tilted towards the woman. Not grinning. No added text.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r10, 2026-11-26, at4536: Aaron's face doesn't look like Aaron; use the Aaron character for consistency",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron2-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10aaron2-a-a.png"
+  ],
+  "character": "Aarron"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "547e254a-9873-4dcf-84ff-aa0df95caa34"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r11suv1-r10suv-a.mp4",
+ "made": "2026-11-26T17:02:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera at night. The black SUV is parked at the kerb and stays completely still for the whole shot: engine off, wheels not turning, its rear door held wide open by the agent. The woman in the camel cardigan, already standing on the pavement beside the open door, walks away from the camera along the pavement on our side of the car, towards the floodlit steps, never passing through or behind the car. The agent swings the door shut and follows a pace behind her. Flags stir. Movement continues to the last frame. Sound: a city night, footsteps on wet stone, a car door thudding shut. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10suv-a.jpg",
+ "why": "Kai's notes on cut r10, 2026-11-26, at7057/at7081: she walks through the car, the door never opens, the car drives forward, back and flips; try 1: the car parked and still, she walks along the pavement",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r10suv-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r11suv1",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-26T17:01:33.063Z"
+ }
+}
