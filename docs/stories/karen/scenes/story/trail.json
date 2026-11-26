@@ -139,5 +139,16 @@
   "stage": "premiere",
   "round": 8,
   "what": "karen-1-story-r8 built in Karen vid.prproj from cut-r8 edl (premiere-plan.py --tag r8); V1 78/78 and 51/51 audio clips placed: in sync"
+ },
+ {
+  "at": "2026-11-26T11:52:56+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r9 on Kai's 6 notes on r8 (5 from the evening of 25 Nov, missed when he called the cut; 1 on the 26th): the Gemini watermark cropped out of the opening shot; the colleague under Karen's finger re-made as a different, stone-faced man (r9wag); the cleaner's cloth no longer vanishes (Cleaner.mp4 from 7.55 s); Karen's river line given an open-air echo and a night-river bed (sound of a Flow clip, r9-night-river.mp4); the DAY 11 polaroid cropped, not stretched; 5:18, 78 shots, -18.0 LUFS, no frozen clips. Premiere held back on purpose (Kai: timeline only until the edit is settled)",
+  "rebuild": "python3 scripts/karen/story-cut-r9.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <out-dir>",
+  "decided": [
+   "Kai, 2026-11-26: work just on the timeline until we've settled on an edit, then move everything into Premiere"
+  ]
  }
 ]

@@ -124,7 +124,7 @@
   },
   "pending_r9": {
    "sequence": "karen-1-story-r9",
-   "status": "NOT BUILT: the Premiere panel was not connected on 2026-11-26. The page is ahead (round 9); Premiere current is still r8.",
+   "status": "NOT BUILT, on purpose: Kai (2026-11-26) wants the timeline page only until the edit is settled, then everything moves into Premiere at once. Premiere current is still r8.",
    "how": "python3 scripts/scene/premiere-plan.py <cut-r9>/edl.json <plan.json> --tag r9 --seq karen-1-story-r9, then import into bin karen-1-story-r9, premiere_create_sequence(fromItems=v000), premiere_eval(plan.place.js), premiere_save"
   }
  },
