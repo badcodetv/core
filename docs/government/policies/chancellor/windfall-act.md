@@ -22,8 +22,8 @@ check.check_on: 2027-07-31
 check.provisional: yes
 check.result: pending
 ---
-Your energy price cap: up 4% in October, driven by gas prices in the Middle East. Somebody's
-receipts went up by the same shock that put up your bill.
+Your energy price cap: up 26% from January, to £2,166, because the war in the Middle East put up
+wholesale gas. Somebody's receipts went up by the same shock that put up your bill.
 
 Who decided. Ministers, who set the Electricity Generator Levy to end on 31 March 2028.
 

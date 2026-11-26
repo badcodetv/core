@@ -7,7 +7,9 @@ policies: chancellor/the-ledger, chancellor/the-slice, chancellor/windfall-act, 
 
 Bank Rate since 5 November: 4%, up from 3.75%.
 
-Your energy price cap: up 4% in October.
+Your energy price cap from January: up £443, to £2,166.
+
+The one-off payment for up to 20 million homes in England: £100.
 
 Power for data centres in the AI zones: up to £24 off every megawatt-hour from 2027, by ministers' decision.
 
