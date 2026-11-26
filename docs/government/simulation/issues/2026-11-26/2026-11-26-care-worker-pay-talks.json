@@ -3,7 +3,7 @@
   "id": "2026-11-26-care-worker-pay-talks",
   "simulated": true,
   "stamp": "SIMULATED",
-  "stage": "jury",
+  "stage": "published",
   "run": {
     "mode": "live",
     "run_date": "2026-11-26",
@@ -63,7 +63,8 @@
       "sim-citizens",
       "sim-bench",
       "sim-gate",
-      "sim-jury"
+      "sim-jury",
+      "sim-minister"
     ]
   },
   "citizens": {
@@ -473,5 +474,53 @@
     ],
     "review": "2027-11-26",
     "real_jury": false
-  }
+  },
+  "minister": {
+    "post": "health",
+    "decision": "signed",
+    "trial": "Before talks open in April 2027 the Department of Health and Social Care publishes one fixed cap on any rise above the £500m, and the talks stay inside it. In 12 volunteer English councils drawn by lot, the Department pays any rise within the cap straight to care firms. Councils pay nothing extra. 12 councils like them keep today's arrangement.",
+    "fail_number": "Provisional: fails if any of the 12 councils cuts home care or raises council tax to cover care, or if fewer than 2 more in 100 care workers stay than in the 12 like them, by 31 March 2029.",
+    "stop": "2029-03-31",
+    "statement": "Twelve simulated jurors, drawn by lot, voted 4 of 12 for this: government pays, up to a fixed cap, and the talks stay inside it. Three wanted councils to share the bill, three wanted care workers and users to approve the deal, two wanted the nation to pay in full.\n\nI'm signing the four. 12 volunteer councils, drawn by lot, pay nothing extra. The trade-off is plain: a cap means the talks can't promise more than it holds.\n\nTwo answers on the bench had no cap. The gate failed them. A pay deal is not an open tab. Cap first, then the number."
+  },
+  "predictions": [
+    {
+      "id": "p1",
+      "answer": "issue",
+      "claim": "By 15 January 2027 the government publishes its adult social care workforce plan, which it said was due by the end of 2026.",
+      "prior": 0.5,
+      "due": "2027-01-15",
+      "rule": "True if a GOV.UK page dated 27 November 2026 to 15 January 2027 publishes a workforce plan for adult social care in England. A press release only promising one does not count.",
+      "sources": [
+        "s1"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p2",
+      "answer": "issue",
+      "claim": "By 30 April 2027 the first round of care worker pay talks has formally opened in England.",
+      "prior": 0.6,
+      "due": "2027-04-30",
+      "rule": "True if GOV.UK or a news report dated by 30 April 2027 says the first formal negotiating meeting of the care workers' negotiating body has taken place. False otherwise.",
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "result": "pending"
+    },
+    {
+      "id": "p3",
+      "answer": "issue",
+      "claim": "By 31 March 2027 the government announces total funding for the first care worker pay agreement of more than £500 million.",
+      "prior": 0.1,
+      "due": "2027-03-31",
+      "rule": "True if a GOV.UK page or ministerial statement dated 27 November 2026 to 31 March 2027 gives a funding figure above £500 million for the first agreement. False otherwise.",
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "result": "pending"
+    }
+  ]
 }
