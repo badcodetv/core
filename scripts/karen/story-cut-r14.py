@@ -1049,17 +1049,17 @@ car = clip('r4-car-car-phone2-a.mp4')
 SUV = R6 / 'video/r6-r11suv2-r10suv-a.mp4'
 STEPS, NYC = (clip7(k, f'{k}-a', None) for k in ('r10steps', 'r10nyc'))
 RING, ROOM = (R6 / f'video/r6-{k}-{k}-a.mp4' for k in ('r13ring', 'r13room'))
-for need in (car, SUV, STEPS, ROOM, R6 / 'video/r6-r14cos1-r14cos1-a.mp4'):
+for need in (car, SUV, STEPS, ROOM, R6 / 'video/r6-r14cos4-r14cos4-a.mp4'):
     if not (need and pathlib.Path(need).exists()):
         sys.exit(f'r13 ending: missing {need}')
 # the line starts 1.1 s before the cut, over the end of Times Square, so the car clip is not stretched past 0.8x
 block([nar10('lvl_n1301a.wav', 'In the back of the Beast, the President does the only thing he can think of. He asks to speak to his manager.')],
       [(car, 0, None, {'what': 'r4: the President in the Beast, on the phone'})], lead=-1.1, tail=0.3)
 # r14 (Kai at7275): the ladder only long enough for the top rung to light, then the Chief of Staff herself on the phone
-COS = R6 / 'video/r6-r14cos1-r14cos1-a.mp4'   # casting option 1 for now; four options on https://claude.ai/artifact/YAmXkfXQHpVEKTWjXgzy4u
+COS = R6 / 'video/r6-r14cos4-r14cos4-a.mp4'   # Kai 2026-11-27: 'number 4 please' (of four on https://claude.ai/artifact/YAmXkfXQHpVEKTWjXgzy4u)
 block([nar10('lvl_n1302a.wav', 'His Chief of Staff. He asks what the fuck is going on. The Chief of Staff says they need to get the public on their side.')],
       [(boss_ladder(car, 3.0, 0.9), 0, 3.0, {'what': "NEW r13: the President's escalation: CHIEF OF STAFF lights above THE BOSS (post; r14: shorter)"}),
-       (COS, 0.3, None, {'what': 'NEW r14: the Chief of Staff on the phone in her office at night (casting option 1, provisional)'})],
+       (COS, 0.3, None, {'what': 'NEW r14: the Chief of Staff on the phone in her office at night (option 4, Kai\'s pick)'})],
       lead=0.6, tail=0.5)
 # r14 (Kai at7564): no phone box again; straight to Karen arriving, narrated over the top
 beat('11', 'The Situation Room')

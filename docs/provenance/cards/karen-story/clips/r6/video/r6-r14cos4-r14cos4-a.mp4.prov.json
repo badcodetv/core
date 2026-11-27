@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r14cos4-r14cos4-a.mp4",
+ "made": "2026-11-27T12:17:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. Late at night in the wood-panelled office, the woman with long silver-streaked hair and the burgundy suit stands behind the desk, leaning on one hand, the desk phone's receiver at her ear. She listens for a moment, tired and unimpressed, then straightens a little and speaks a few short, firm words into the phone, eyes hard, completely in control, never raising her voice. Small, real movements to the last frame. Sound: a quiet room, a clock. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14cos4-a.jpg",
+ "why": "Kai 2026-11-27: 'number 4 please' (the Chief of Staff, casting option 4 of four)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14cos4-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r14cos4",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T12:16:47.062Z"
+ }
+}
