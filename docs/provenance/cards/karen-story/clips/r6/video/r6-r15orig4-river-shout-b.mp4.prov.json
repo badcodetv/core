@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r15orig4-river-shout-b.mp4",
+ "made": "2026-11-27T14:01:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/river-shout-b.jpg",
+ "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/river-shout-b.jpg",
+  "character": "Karen",
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r15orig4",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T14:00:21.467Z"
+ }
+}
