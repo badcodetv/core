@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s07a-bob-tent-out-a.png",
+ "made": "2026-11-27T18:12:18.770Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nScene: the man from the character reference sits inside the tent from the reference image, seen from behind his shoulder, looking out through the open door flap. Filling the doorway, close enough to touch, the black car from the second reference image is parked across the bay, its glossy flank and one wheel blocking the view of the car park. His head is turned a little so we see the edge of his face: his jaw set, his eyes on the car.\n\nCamera: inside the tent, low, at his shoulder, the tent fabric framing the doorway.\n\nLighting: flat grey daylight from the doorway, the tent's interior dim.\n\nDetails: real skin texture, fine natural grain, ordinary and unstyled. Keep the number plate free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: Bob in the tent looking out, the wank tank parked in front (from inside)",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/19-2.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/19-2.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17.1-2.png"
+  ],
+  "character": "Bob"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cde4ed2b-ccfe-48ad-b563-286313e672f3"
+}

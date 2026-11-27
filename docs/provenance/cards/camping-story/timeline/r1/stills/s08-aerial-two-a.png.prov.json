@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s08-aerial-two-a.png",
+ "made": "2026-11-27T18:10:29.859Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nScene: the same car park, from the same high camera position, as the first reference image. The black car is parked across two bays right beside the small blue and grey tent. A man stands beside the car's open driver's door, looking down at a second man who sits just inside the tent's open doorway, looking back up at him. Nobody else near them; the rest of the car park carries on.\n\nCamera: high, looking down, the car, the standing man and the tent small in the middle of the frame, the painted bays and wet tarmac around them.\n\nLighting: flat overcast daylight.\n\nDetails: fine natural grain, ordinary and unstyled. No readable lettering except the store fascia.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: the car-park aerial recut with Bob sat just inside the tent and Tarquin stood by his car looking down at him",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17-3.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17-3.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/55-1.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cb344d16-337b-4f6c-a414-20480af79c67"
+}

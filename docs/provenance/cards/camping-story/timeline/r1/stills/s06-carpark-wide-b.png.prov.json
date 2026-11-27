@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s06-carpark-wide-b.png",
+ "made": "2026-11-27T18:09:39.498Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nScene: the same place and the same high camera position as the first reference image, but years earlier on an ordinary overcast weekday: the supermarket car park is in normal use, nearly every bay filled with parked cars, a few shoppers pushing trolleys between the rows, the glazed barrel-roofed trolley shelter in front of the store, the green store fascia reading Waitrose. In one bay near the trolley shelter stands a single small blue and grey dome tent, the only thing out of place.\n\nCamera: high, looking down across the whole car park towards the store front, wide, deep focus.\n\nLighting: flat overcast daylight, wet tarmac after rain.\n\nDetails: fine natural grain, ordinary and unstyled. No readable lettering except the store fascia.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: a zoomed-out shot of the whole Waitrose car park, full of cars, the twin of the ending's wide",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/29-1.5.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/29-1.5.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/12-2.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "08256a30-a709-43e1-905d-06bda0d0028e"
+}

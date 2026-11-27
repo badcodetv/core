@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s05-car-outside-r2-a.png",
+ "made": "2026-11-27T18:21:00.277Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone.\n\nScene: late at night on a wet residential high street, the black car from the second reference image rolls slowly past, seen side-on from the kerb. Its gold-tinted headlights cut through a light drizzle; through the side window the driver is no more than a dark shape lit faintly by the dashboard. Nearest the lens, a shuttered corner shop and a plain glass bus shelter with nothing printed on it.\n\nCamera: eye level from the kerb, the car crossing the middle of the frame, a 35mm lens.\n\nLighting: orange streetlights, the wet road holding their reflections, the headlights the warmest thing in the frame.\n\nDetails: fine grain, drizzle on the tarmac, plain and unposed. The number plate is a blank dark rectangle; no signs, emblems, logos, posters or lettering anywhere in the street.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: the car from outside at night; QA pass 2: no readable plate, no transport roundel",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/10-3.5.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/10-3.5.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17.1-2.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "91c7c191-37e6-4443-ba2a-49dbc21f28db"
+}

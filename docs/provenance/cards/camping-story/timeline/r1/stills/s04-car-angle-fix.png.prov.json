@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s04-car-angle-fix.png",
+ "made": "2026-11-27T18:20:15.679Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep this photograph exactly as it is. Change one thing only: the glowing instrument cluster behind the steering wheel shows no numbers or text at all, just soft unlit dials and a dim blue glow.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "QA: readable numbers on the instrument cluster in s04-car-angle-b",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s04-car-angle-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s04-car-angle-b.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "f604a7ae-3c0b-4b02-ae81-1dcd4a0461dc"
+}

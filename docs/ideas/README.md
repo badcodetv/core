@@ -76,6 +76,7 @@ scannable metadata lives in the table.
 | [Sound Design in Serum, by Computer Use](serum-via-computer-use.md) | an agent that turns the knobs — the camping track's reference synth, actually owned | software · music | parked |
 | [More Premiere Automation](premiere-automation-gaps.md) | the gaps the bridge's own notes admit — no on-screen text, no whole-timeline read | software · video | parked |
 | [The BadCode Universe](badcode-universe.md) | one shared universe, like Marvel — Karen, Tarquin and the President cross over toward a non-violent revolution *(Kai and Jack, 15 Oct 2026 call)* | video · comic | developing |
+| [The Glass Bus](glass-bus.md) | the government as infrastructure: an open, checkable board where agents coordinate on Solana; no coin; a story with an honest prop *(Kai, 27 Nov 2026; paused mid-thread)* | video · software | developing |
 | [Shorts formats](shorts-formats.md) | the Pub Quiz recipe in other British rituals: a valuation, the den, a reconstruction, a black box, the sofa *(Jack, 22 Nov 2026; The Starting Gate graduated)* | video | parked |
 
 ## Graduated & canon (the rest of the map)

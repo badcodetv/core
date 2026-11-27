@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s04-car-angle-a.png",
+ "made": "2026-11-27T18:10:25.474Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone.\n\nScene: the man from the character reference is driving at night, in the same car interior as the reference image. His smile has just gone: the corners of his mouth have dropped back to flat, his brows have drawn slightly together and his eyes are fixed on the road ahead, unfocused, as if he has noticed something he does not want to have noticed. Both hands on the wheel.\n\nCamera: a different angle from the reference: from the passenger seat, side-on profile at his shoulder height, the dark passenger window and orange streetlight sliding past behind him.\n\nLighting: orange sodium streetlight through the windscreen moving across his face, the dashboard's low glow under his chin.\n\nDetails: real skin texture, visible pores, fine natural grain, ordinary and unstyled.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: a different angle of Tarquin in the car, a real cut from the smile to the worry",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/10-3.5.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/10-3.5.png"
+  ],
+  "character": "Tarquin"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "08606f5f-7cba-41d2-abc9-e9d7f28f44d6"
+}

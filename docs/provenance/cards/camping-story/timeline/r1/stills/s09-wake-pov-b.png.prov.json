@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s09-wake-pov-b.png",
+ "made": "2026-11-27T18:10:38.641Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, deep black shadows, no colour grading push.\n\nScene: the same view as the reference image: looking out from inside the tent at night, the door flap open onto the ruined car park, a fire burning in a drum outside, a figure standing by it. In the foreground lie a rumpled blanket and a sleeping bag. One hand reaches into the bottom of the frame and grips the edge of the blanket, empty, the knuckles tight.\n\nCamera: the same low point of view from the tent floor as the reference.\n\nLighting: the fire outside the only warm light, deep black shadows inside the tent.\n\nDetails: fine natural grain, ordinary and unstyled.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: the waking shot (28) again without the beer",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/28-1.5.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/28-1.5.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e59699c0-8f6a-48fb-962a-4d17aefbd442"
+}

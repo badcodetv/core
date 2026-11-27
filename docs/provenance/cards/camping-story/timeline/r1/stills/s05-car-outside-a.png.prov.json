@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s05-car-outside-a.png",
+ "made": "2026-11-27T18:09:22.181Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone.\n\nScene: the black car from the second reference image drives slowly along a wet London street at night, seen from the pavement as it passes. Its gold-tinted headlights cut through a light drizzle. Through the side window the driver is only a dark shape lit faintly by the dashboard. On the pavement in the foreground a bus-stop shelter and a closed shopfront with its shutter down.\n\nCamera: eye level from the pavement, the car crossing the middle of the frame, a 35mm lens.\n\nLighting: orange streetlights, the wet road reflecting them, the headlights the warmest thing in the frame.\n\nDetails: fine natural grain, drizzle on the road, ordinary and unstyled. Keep the number plate, signs and shopfronts free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: the car from outside at night, under the narrator's empathy line",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/10-3.5.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/10-3.5.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17.1-2.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c148139f-1636-4c61-b105-0566f7c37566"
+}

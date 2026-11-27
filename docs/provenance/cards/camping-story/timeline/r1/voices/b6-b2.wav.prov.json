@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/voices/b6-b2.wav",
+ "made": "2026-11-27T16:59:11+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I miss my wife.",
+ "inputs": {
+  "profile": "Read the following transcript based on the audio profile.\n\n# Audio Profile\nBob, 47. Deep, gravelly, low chest tone, slightly rough from years of smoking. Restrained and inward. Intelligent, cynical, worn down. Delivery sits under the material rather than selling it. Natural conversational rhythm, short pauses, firm downward endings. Neutral southern English accent as heard in Reading or Guildford, faint London edge, no Cockney vowels or slang.\n\n## Scene:\nA small voiceover booth, late at night. No audience. He's reading from a page he half agrees with.\n\n## Sample Context:\nBob has narrated this kind of story many times before and is no longer surprised by any of it.\n\n## Transcript:\n",
+  "profile_file": "docs/stories/camping/narration/profiles/bob-algenib.md"
+ },
+ "settings": {
+  "voice": "Algenib",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

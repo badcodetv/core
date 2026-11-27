@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s02-floor-desk-a.png",
+ "made": "2026-11-27T18:09:30.445Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm Fujicolor Superia 400 pushed one stop — fine natural grain, a green bias off the fluorescent light, muted and cool. Naturalistic motivated lighting only, no lens flares, calm observational tone.\n\nScene: the man from the reference images, on the same 2008 trading floor, is standing up on top of his desk among the monitors, both arms thrown up, a telephone handset still in one fist with its coiled cord pulled taut down to the desk, his mouth wide open mid-roar. Below him, at the next desks, two traders in shirtsleeves look up at him, one half out of his chair, one grinning with a phone at his ear.\n\nCamera: low, from the aisle at desk height, looking up at him, wide lens, the desk edge and a spilled stack of printouts in the near foreground.\n\nLighting: overhead fluorescent tubes, the screens' glow on the faces below.\n\nDetails: real skin texture, sweat at the collar, fine natural grain, ordinary and unstyled. Keep every screen and paper free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: trading-floor mania instead of the lift; scenes like the biro and the champagne mug, Wolf of Wall Street energy",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/36-1.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/36-1.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/39-1.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "697cb1b2-8320-437e-ba39-3573b2538560"
+}

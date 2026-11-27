@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/voices/b8-t1.wav",
+ "made": "2026-11-27T16:59:13+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Where the fuck am I?",
+ "inputs": {
+  "profile": "Read the following transcript based on the audio profile.\n\n# Audio Profile\nTarquin. Deep, masculine English voice. Calm but openly unimpressed. Cold, condescending, mildly irritated by incompetence. Clipped consonants and heavy downward sentence endings. Speaks as though the conclusion was obvious some time ago. Neutral London accent, well-educated but not aristocratic. Offhand rather than warm.\n\n## Scene:\nA quiet office. He is explaining something for the second time to someone who should already have understood it.\n\n## Sample Context:\nTarquin has just been asked a question he considers beneath him, and is answering anyway.\n\n## Transcript:\n",
+  "profile_file": "docs/stories/camping/narration/profiles/tarquin-zubenelgenubi.md"
+ },
+ "settings": {
+  "voice": "Zubenelgenubi",
+  "temperature": 1,
+  "channels": 2,
+  "wrapper": "audio profile"
+ }
+}

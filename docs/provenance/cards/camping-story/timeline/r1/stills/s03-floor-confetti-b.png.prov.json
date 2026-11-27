@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s03-floor-confetti-b.png",
+ "made": "2026-11-27T18:09:12.773Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm Fujicolor Superia 400 pushed one stop — fine natural grain, a green bias off the fluorescent light, muted and cool. Naturalistic motivated lighting only, no lens flares, calm observational tone.\n\nScene: the man from the reference images, on the same 2008 trading floor, has just flung a double handful of torn trade tickets into the air above his head; the paper scraps are still falling around him like confetti. He is laughing with his head tipped back, his tie pulled loose. Beside him a colleague in shirtsleeves slaps the desk with an open palm, and behind them rows of traders are on their phones, still working.\n\nCamera: eye level, a few metres away across two desks, a monitor's dark edge in the near foreground on the left.\n\nLighting: overhead fluorescent tubes, flat and greenish.\n\nDetails: real skin texture, fine natural grain, ordinary and unstyled. Keep every screen and paper free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: a second trading-floor mania shot (replaces the empty office)",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/36-1.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/36-1.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/39-1.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2ac8f6ae-fcdb-44e7-b0b2-65451e51f283"
+}

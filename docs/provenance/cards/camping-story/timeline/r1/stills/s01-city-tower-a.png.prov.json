@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s01-city-tower-a.png",
+ "made": "2026-11-27T18:08:13.905Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nSubject: the City of London in 2008 seen from the air, looking east, with one tall dark office tower at the centre of the frame as the place the eye lands.\n\nEnvironment: in the lower left foreground, close to camera, a great domed stone cathedral with a lantern on top of its dome, among Portland-stone and red-brick blocks. Beyond it, in the middle of the frame, the tall tower: a 1980 office block built as three chevron-shaped shafts cantilevered around a central core, stepping down to three different heights, clad in bronze-dark glass with strong vertical ribbing and a slim lattice mast on the roof, by far the tallest thing in the City. A little further back and to its left stands one rounded glass tower with a diagonal diamond lattice, shorter than the dark tower. All around them the City is low and dense: six to ten storey blocks, church spires, flat grey roofs, rooftop plant, two construction cranes. Only a thin strip of grey river shows at the far right edge. No other tall towers anywhere.\n\nCamera: high aerial, about level with the dark tower's top third, looking slightly down and east along the City, the cathedral dome large in the near corner and the dark tower centred behind it. Deep focus.\n\nLighting: flat overcast winter morning, the sky an even pale grey, soft shadowless light on the stone.\n\nDetails: fine natural grain, distance haze over the far roofs, ordinary and unstyled. No readable lettering on any building.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: recut the opening as the City of London pushing in to the NatWest Tower; the old layout was wrong",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "34f27437-1b24-459c-adc2-140627b4ec4e"
+}

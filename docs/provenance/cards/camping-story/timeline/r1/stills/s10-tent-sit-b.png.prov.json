@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s10-tent-sit-b.png",
+ "made": "2026-11-27T18:10:59.759Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, deep black shadows, no colour grading push.\n\nScene: the same view as the reference image: the man sits inside the open tent at night, wrapped in a blanket, a fire burning in a drum just outside, a figure standing by it in silhouette. Both of his hands are empty and clutch the blanket against his chest. His eyes are wide and fixed on the figure outside, his mouth slightly open.\n\nCamera: the same position as the reference, outside the tent looking in.\n\nLighting: the fire the only warm light, deep black shadows.\n\nDetails: real skin texture, fine natural grain, ordinary and unstyled.\n\nCompose for a 16:9 frame.\n\nThanks.",
+ "model": "Nano Banana 2.1",
+ "why": "Kai r1: shot 67 again without the beer",
+ "parent": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/67-1.5.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/67-1.5.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "4ec9fc31-58b3-4409-87a4-808183c6ffb5"
+}
