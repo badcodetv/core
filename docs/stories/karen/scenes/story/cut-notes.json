@@ -2882,5 +2882,22 @@
       "tc": "00:04:17:18",
       "note": "Here we should say the interview is going well because we've only just said the President.\nSo, I think this scene is better now, but I think it's too long. I think we need to cut it down to about half. We just need to go, like, oh, they've had an idea. Now, maybe we elongate, because I know we have a time pressure to get the, not time pressure, like hurry up. I mean, we need to allow time for the narration to land. So, I think we might be doing a little dance of how long we leave this scene on the screen. At the moment, I think it's about twice too long."
     }
-  }
+  },
+  "kai_round16": [
+    {
+      "at": "2026-11-27",
+      "on": "ending-r15.md",
+      "note": "which ending? Yeah, yeah, number one, Sean on hold. That's how we should end it. It's really funny. Well done."
+    },
+    {
+      "at": "2026-11-27",
+      "on": "Karen alone line",
+      "note": "All day to complain is how it should be."
+    },
+    {
+      "at": "2026-11-27",
+      "on": "timeline page uploads",
+      "note": "the upload problem is going to hurt us. Is there any way of previewing this on the timeline without uploading? Could we not point at local media? ... Are we able to publish to Cloudflare or a Google Cloud bucket? ... We could host them locally."
+    }
+  ]
 }
