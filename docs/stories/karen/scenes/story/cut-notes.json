@@ -2918,5 +2918,17 @@
     "ending": "Built: Ending 1, Sean on Hold, as written (the full version, with 'Sean hangs up'). It adds 2:12, so the film is now 7:52.",
     "alone line": "Kept: 'She's got all day to complain.'",
     "uploads": "Done: the timeline now runs locally (scripts/scene/timeline-serve.py), with no uploads; this round is on http://localhost:8765/t/karen/story/."
-  }
+  },
+  "kai_round16b": [
+    {
+      "at": "2026-11-27",
+      "on": "the r16 ending (Sean on Hold, as built)",
+      "note": "I reckon we can end this thing much faster than we're doing... it goes on far too long and we're trying too hard... the moment that Karen comes into the Situation Room, I like the idea of the generals have got an idea. It involves water. They're moving a submarine around on the page. We should cut straight to the wheel cutting off the water. They call Martha at City Hall, who runs downstairs and shuts off the water. We should then have like Sean's reasoning... water supply, critical action, mechanical steps taken, call the water company... we can brush a little bit over [how City Hall still operates]... we need to do a bit of a script back and forth with each other before we cut into any videos... the basic joke stands. It's how we close this off."
+    },
+    {
+      "at": "2026-11-27",
+      "on": "the r16 ending",
+      "note": "Karen issues a nationwide broadcast to get people to call Sean, overwhelming him... It's a denial of service attack... all humans carry out a DDoS on Sean on Karen's command... Karen is coordinating the complaint... like NASA commander in the big room with the big screen of global phone line coordination, and we see the scale of the DDoS attack... the ending needs to be quite snappy... the plan the generals come up with is recognising the denial of service attack would give them just enough time to go switch the water off... Can we please work with this idea and then come up with what we are going to do as a plan before we cut any footage, please?"
+    }
+  ]
 }
