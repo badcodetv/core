@@ -1,832 +1,872 @@
 {
-  "video": {
-    "duration": 8
+ "video": {
+  "duration": 8
+ },
+ "skip": [],
+ "extra": [
+  {
+   "key": "cityhall",
+   "n": 1,
+   "still": "cityhall-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at2404: rebuild City Hall from scratch, no drone",
+   "motion": "The camera pushes in very slowly towards the colonnade. Office workers with coffee cups cross the plaza at an easy pace and the security guard by the steps shifts his weight; the autumn leaves stir in a light breeze. The sky stays empty. Sound: a calm city morning, footsteps on stone, distant traffic. No dialogue, no music.\n\nThanks."
   },
-  "skip": [],
-  "extra": [
-    {
-      "key": "cityhall",
-      "n": 1,
-      "still": "cityhall-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at2404: rebuild City Hall from scratch, no drone",
-      "motion": "The camera pushes in very slowly towards the colonnade. Office workers with coffee cups cross the plaza at an easy pace and the security guard by the steps shifts his weight; the autumn leaves stir in a light breeze. The sky stays empty. Sound: a calm city morning, footsteps on stone, distant traffic. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "clive",
-      "n": 2,
-      "still": "clive-evening-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at3168/at3218: Clive in the evening",
-      "motion": "The camera does not move. The tired man at the desk holds the receiver to his ear, rubs his brow, closes his eyes and lets out a long sigh, then props his head on his hand and keeps listening, nodding wearily. Outside the window, tail-lights stream past in the dusk. Sound: a quiet office hum, muffled evening traffic. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "talkeve",
-      "n": 3,
-      "still": "talk-evening-a",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at3286: the same scene, at evening",
-      "motion": "The camera does not move. The woman in the phone box speaks slowly into the receiver, pronouncing each word with relish, her raised finger jabbing the air on every syllable; she stops, listens with narrowed eyes, then leans in and starts again. Behind her the evening rush-hour traffic streams past, headlights and tail-lights, a bus pulling away. Sound: busy evening traffic, a horn, footsteps. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "boxeve",
-      "n": 4,
-      "still": "box-evening-a",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at3424: evening at the box, a busy street",
-      "motion": "The camera does not move. The woman in the phone box holds the receiver to her ear and talks on and on, gesturing now and then with her free hand. Behind her the evening traffic crawls past: yellow cabs, headlights, a delivery cyclist, commuters walking home with bags. Sound: evening traffic, horns, footsteps. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "snow",
-      "n": 5,
-      "still": "snow-a",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at3684: the snow scene with New York traffic",
-      "motion": "The camera does not move. Snow falls steadily. The woman in the green parka at the phone box keeps talking into the receiver, stamping her feet against the cold, her breath steaming. Behind her yellow cabs and a city bus push slowly through the slush with their wipers going, and people hurry past with their heads down. Sound: muffled snowy traffic, tyres in slush, wind. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "alone",
-      "n": 6,
-      "still": "karen-alone-b",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at3892/at3908: Karen gesticulating, alone, no Aaron yet",
-      "motion": "The camera does not move. The woman in the phone box shouts into the receiver and throws her free arm wide in a big theatrical gesture, then jabs the air, then flings her hand up again, utterly unstoppable. Passers-by glance at her and walk on. Nobody stops to film. Sound: street traffic, a car horn, footsteps. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "news",
-      "n": 7,
-      "still": "news-evening-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at4841: the news at evening",
-      "motion": "The camera does not move. The woman holding the microphone talks to the video camera, smiling and nodding, and turns to gesture down the street behind her; the camera operator holds the camera steady on his shoulder, the sound operator keeps the fluffy microphone pole raised, the lamp on its stand glows. Evening traffic passes. Sound: an evening street, distant traffic, a murmur of people further down the road. No music.\n\nThanks."
-    },
-    {
-      "key": "throw",
-      "n": 8,
-      "still": "river-shout-b",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at1615: re-cut the throw, better quality",
-      "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it; then in one clean, strong movement she swings her arm back and hurls the phone in a high arc out over the railing towards the dark river, and her arm follows through. The phone flies out of frame. Beside her the other woman doubles over laughing. Her hand stays empty after the throw. Sound: wind off the river, distant city traffic, laughter. No music.\n\nThanks."
-    },
-    {
-      "key": "evac3",
-      "n": 9,
-      "still": "evacuate-b",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at6575: re-roll the evacuation (someone vanished); at6515: dramatic music",
-      "motion": "The camera does not move. Three Secret Service agents in dark suits rush in from the right, grab the man in the dark suit under the arms and hurry him off the set and out of frame to the right; everyone who leaves walks out of the frame edge, nobody disappears. The host rises halfway from behind the desk, staring after them. The studio lights flicker once. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks."
-    },
-    {
-      "key": "evac4",
-      "n": 10,
-      "still": "evacuate-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at6575: re-roll the evacuation (someone vanished); at6515: dramatic music",
-      "motion": "The camera does not move. Secret Service agents in dark suits surge onto the set, surround the man in the dark suit and rush him away and out of the frame at speed, one agent walking backwards with his arm out; every person stays a whole person and walks out of the frame edge, nobody vanishes. The host stays frozen in his chair, mouth open. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks."
-    },
-    {
-      "key": "times",
-      "n": 11,
-      "still": "timessq-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at6681: Times Square; the evacuation plays on the big screen (added in post)",
-      "motion": "The camera does not move. The huge screen on the building stays plain, solid white and perfectly still the whole time, and the red band beneath it stays plain. In the square below, the crowd stands staring up at it; more people stop and look up, some raise their phones to film, one woman covers her mouth. Cabs sit stopped. The surrounding billboards shimmer. Sound: a hushed crowd, a murmur spreading, distant horns. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "martha1",
-      "n": 12,
-      "still": "martha-close-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
-      "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, wearily patient. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
-    },
-    {
-      "key": "martha2",
-      "n": 13,
-      "still": "martha-close-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
-      "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, flat and tired, a little sing-song. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
-    },
-    {
-      "key": "martha3",
-      "n": 14,
-      "still": "martha-close-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
-      "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, polite but bored. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
-    },
-    {
-      "key": "crowd2",
-      "n": 15,
-      "still": "crowd2-a",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at4732: the crowd grows 2, 6, 20 in one place (two by day)",
-      "motion": "The camera does not move. Daytime at the phone box. The woman in the box talks on and on into the receiver, jabbing the air. In front of her the two young men film her on a phone, one grinning and pointing, the other laughing and leaning in to see the screen. Passers-by walk past behind without stopping. Sound: daytime street traffic, footsteps, the two men chuckling. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "crowd6",
-      "n": 16,
-      "still": "crowd6r-b",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at4732: six people, early evening, the same place",
-      "motion": "The camera does not move. Low golden evening light at the phone box. The woman in the box keeps talking into the receiver. The small group in front of her films her on their phones: the nurse nudges the teenager and points, the old man's dog sits down, the courier shifts his heavy bag and raises his phone higher. Sound: evening traffic, a murmur, a dog's tags jingling. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "crowd20",
-      "n": 17,
-      "still": "crowd20r-b",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at4732: about twenty people, evening, the same place",
-      "motion": "The camera does not move. Evening at the phone box, street lamps glowing. The woman in the box talks on into the receiver, unbothered. The two young men at the front film her and grin; behind them the crowd of about twenty sways and murmurs, phone screens bobbing; a couple more people walk up from the side and lift their phones. Sound: an evening crowd murmuring and laughing, traffic. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "coup",
-      "n": 18,
-      "still": "coupr-b",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at6045: a smaller crowd, moving, with news crews",
-      "motion": "The camera does not move. Night at the phone box under the bright TV lights. The woman in the box stands calmly on the phone. Around her the crowd shifts and murmurs, phones raised; the two camera operators adjust their shoulder cameras and step for a better angle, a sound operator raises the boom pole higher, a reporter checks her earpiece. Sound: a night crowd murmuring, distant traffic, a camera shutter. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "shocked",
-      "n": 19,
-      "still": "shocked-a",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at6991: Karen shocked at the end",
-      "motion": "The camera does not move. The woman in the phone box listens to the receiver, her eyes wide and mouth open in shock; she slowly presses her hand harder to her chest, blinks twice, and her jaw drops a little further, utterly speechless. Behind her the crowd's phone screens glitter. Sound: a hushed night street, distant sirens. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "karen1",
-      "n": 20,
-      "still": "karen-talk-close-a",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
-      "motion": "The camera does not move. The woman in the phone box speaks into the receiver, firm and clipped. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
-    },
-    {
-      "key": "karen2",
-      "n": 21,
-      "still": "karen-talk-close-a",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
-      "motion": "The camera does not move. The woman in the phone box speaks into the receiver, imperious, each sentence its own beat. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
-    },
-    {
-      "key": "karen3",
-      "n": 22,
-      "still": "karen-talk-close-a",
-      "character": "Karen",
-      "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
-      "motion": "The camera does not move. The woman in the phone box speaks into the receiver, cold and deliberate. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
-    },
-    {
-      "key": "stairs",
-      "n": 23,
-      "still": "stairs2-a",
-      "character": null,
-      "why": "Kai's notes on cut r5, 2026-11-25, at4414: no crowd at the top of the stairs",
-      "motion": "The camera does not move. The two young men climb the tiled subway stairs away from the camera at an easy pace, one holding his phone up and showing it to the other, who leans in and laughs; they reach the top and step out into the daylight. Nobody is waiting at the top. Sound: footsteps echoing on the stairs, a train rumbling away below. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r7cityhall",
-      "n": 2,
-      "still": "cityhall-a",
-      "character": null,
-      "why": "Kai's notes on cut r6, 2026-11-25, at2366: a man appeared out of nowhere",
-      "motion": "The camera pushes in very slowly towards the colonnade. The office workers already in the plaza cross it at an easy pace, coffee cups in hand, and the guard by the steps shifts his weight. Every person is visible from the first frame; nobody appears from nowhere and nobody vanishes, people only enter or leave by walking past a frame edge. Leaves stir in a light breeze, the sky stays empty. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: a calm city morning, footsteps on stone, distant traffic. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r7clive",
-      "n": 2,
-      "still": "clive-evening-a",
-      "character": null,
-      "why": "Kai's notes on cut r6, 2026-11-25, at3323: Clive's phone swapped hands",
-      "motion": "The camera does not move. The tired man at the desk keeps the receiver pressed to his ear with the same hand for the whole shot; the phone never changes hands. With his other hand he rubs his brow, then props his chin on it and listens, nodding wearily, eyes closing for a moment. Outside the window, tail-lights stream past in the dusk. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: a quiet office hum, muffled evening traffic. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r7talkeve",
-      "n": 2,
-      "still": "r7-boxeve-talk",
-      "character": "Karen",
-      "why": "Kai's notes on cut r6, 2026-11-25, at3375/at3504: the evening box must be the same box",
-      "motion": "The camera creeps slowly closer. The woman in the phone box speaks slowly into the receiver, relishing every word, her free hand conducting each syllable in the air; she pauses, listens with a thin smile, then leans in and carries on. Behind her the evening traffic streams by, cabs and headlights, people walking home. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: busy evening street, a horn, footsteps. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r7snow",
-      "n": 2,
-      "still": "snow2-b",
-      "character": "Karen",
-      "why": "Kai's notes on cut r6, 2026-11-25, at4215/at4285: traffic on the road only, no pause at the end",
-      "motion": "The camera does not move. Snow falls steadily. The woman in the green parka talks on into the receiver, shifting from foot to foot against the cold, breath steaming. Out on the road, the city bus and the yellow cabs roll slowly past through the slush, staying in their lane on the street; a couple of people in coats walk down into the subway. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: muffled snowy traffic, tyres in slush, wind. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r7alone",
-      "n": 2,
-      "still": "r7-alone-day",
-      "character": "Karen",
-      "why": "Kai's notes on cut r6, 2026-11-25, at4369/at4509: the same box, plain framing, no pause",
-      "motion": "The camera does not move. The woman at the phone box shouts into the receiver and flings her free arm out wide, then points hard, then throws her hand up to the sky, never stopping. Passers-by on the pavement glance at her and keep walking. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: daytime street traffic, a car horn, footsteps. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r7crowd20",
-      "n": 2,
-      "still": "crowd20s-a",
-      "character": null,
-      "why": "Kai's notes on cut r6, 2026-11-25, at5383: the friends stand back from Karen",
-      "motion": "The camera does not move. Evening at the phone box, the street lamps on. The woman in the box chats on into the receiver, unbothered. The crowd keeps its distance: the two young men grin and film from where they stand, the people behind sway and murmur, phone screens bobbing, and a couple more people stroll up at the back and raise their phones. Nobody walks up to the box. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: an evening crowd murmuring and laughing, traffic. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r7writers",
-      "n": 2,
-      "still": "r7-writers-end",
-      "character": null,
-      "why": "Kai's notes on cut r6, 2026-11-25, at6086: extend the writers' room instead of freezing",
-      "motion": "The camera does not move. The writers around the table sit in stunned silence as the idea lands; one by one they turn to look at each other, the older man slowly straightens up from the table, someone puts a coffee cup down, a woman starts to grin. The TV on the wall keeps playing. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: a quiet writers' room, a chair creaks, a cup on the table. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r7evac",
-      "n": 2,
-      "still": "r7-studio-pres",
-      "character": null,
-      "why": "Kai's notes on cut r6, 2026-11-25, at7214: the same President, in the same armchair",
-      "motion": "The camera does not move. Secret Service agents in dark suits rush in from both sides of the set, take the man in the armchair by the arms, lift him out of the chair and hurry him away out of the left edge of the frame; every person stays whole and walks out past the frame edge, nobody vanishes. The host stays frozen behind the desk. The studio lights flicker. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks."
-    },
-    {
-      "key": "r7times",
-      "n": 1,
-      "still": "timessq3-a",
-      "character": null,
-      "why": "Kai's notes on cut r6, 2026-11-25, at7305: Times Square made in Flow, the crowd watching the screen",
-      "motion": "Locked-off camera on a tripod. A busy night in Times Square: the giant screen keeps playing its broadcast, the red band beneath it holds steady. People in the street stand gazing up at the screen, holding their phones up to film it, a few point up at it and turn to the person beside them. The yellow cabs wait with headlights on, a fine drizzle sparkles under the street lamps. Gentle movement continues right to the last frame. Sound: a big city crowd murmuring, traffic, a far-off siren. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r8bar",
-      "n": 1,
-      "still": "r8bar-b",
-      "character": null,
-      "why": "Kai's note on cut r7, 2026-11-25, at5347: 'she's made the news' as a moving shot (Flow refuses reporter clips: 'misrepresent current events')",
-      "motion": "Locked-off camera at the end of the bar. On the wall TV the woman at the phone box keeps talking into the receiver. Below, the man in the denim jacket keeps pointing up at the screen and turns to his friends, the man in the cap rocks back laughing, others lean in to look, and the bartender finishes pouring the beer and glances up at the TV. Warm, lively, everyone in motion right to the last frame. Sound: a busy bar, laughter, glasses clinking. No speech, no music.\n\nThanks."
-    },
-    {
-      "key": "r9wag",
-      "n": 1,
-      "still": "r9wag-a",
-      "character": null,
-      "why": "Kai's note on cut r8, 2026-11-25, at137: a completely different-looking colleague, stone-cold and emotionless, not wide-eyed",
-      "motion": "Locked-off camera at desk height. The woman in the camel cardigan keeps ranting over his shoulder, jabbing her raised finger at his screen, her mouth moving fast, her head bobbing with each point. The bald man in the blue checked shirt does not react at all: he keeps typing slowly, eyes on his monitor, face completely flat, one slow bored blink, a tiny unimpressed exhale through his nose, his hands staying on the keyboard; he never looks up at her. Behind them the office carries on, a colleague walks past in the background. Movement continues right to the last frame. Sound: an open-plan office hum, keyboard taps. No music.\n\nThanks."
-    },
-    {
-      "key": "r9splash",
-      "n": 1,
-      "still": "r9splash-start",
-      "character": null,
-      "why": "Kai, 2026-11-26: 'please make the splash louder' (the made-here splash read as a gunshot); this clip is used for its sound only",
-      "motion": "The camera stays still on the dark river. A small smartphone falls from above into the water just beyond the railing and plops in with a short spray of droplets; rings spread out and it sinks. Then the river carries on lapping against the wall. Sound: one sharp wet plop of a small object entering the water, droplets pattering back down, then soft lapping and far traffic. Nobody in the shot. No speech, no music.\n\nThanks."
-    },
-    {
-      "key": "r10month",
-      "n": 1,
-      "still": "r10month-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at4041/at4166: no snow; the two people come up the subway stairs and do not retreat",
-      "motion": "Locked-off camera on a cold, grey, dry late-autumn day; no snow falls and none lies anywhere. The two people in winter coats climb the last few subway steps, step out onto the pavement and keep walking forward and away to the left along the sidewalk, never stopping, never turning round, never going back down the stairs. The woman in the green coat stays inside the phone box, the receiver at her ear, shifting her weight and talking. Traffic rolls past on the road, the bus pulls away. Movement continues right to the last frame. Sound: street traffic, footsteps. No music.\n\nThanks."
-    },
-    {
-      "key": "r10aaron1",
-      "n": 1,
-      "still": "r10aaron1-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at4420: no one else on the street; recut with people",
-      "motion": "Locked-off camera. The young man with headphones round his neck walks steadily towards the camera along the busy pavement. Pedestrians pass him in both directions at a natural pace: the woman with the coffee walks on, the man in the suit keeps reading his phone, people cross the street behind. Nobody appears from nowhere or vanishes, nobody looks at the camera. Movement continues right to the last frame. Sound: a busy Manhattan sidewalk. No music.\n\nThanks."
-    },
-    {
-      "key": "r10aaron2",
-      "n": 1,
-      "still": "r10aaron2-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at4498: people on the street, and Aaron interested, not grinning",
-      "motion": "Locked-off camera. In the glass phone box on the left the woman keeps talking hard into the receiver, shaking her fist. The young man by the railings holds his phone up, recording her, completely absorbed: he listens closely, slowly tilts his head, nods gently in time with her words as if catching a rhythm, lips closed, serious and intrigued, never grinning or smirking. Pedestrians with shopping bags walk past behind him in both directions. Movement continues right to the last frame. Sound: street noise. No music.\n\nThanks."
-    },
-    {
-      "key": "r10calm",
-      "n": 1,
-      "still": "r10calm-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at2929: she stood far too far from the phone",
-      "motion": "Locked-off camera. The woman stands inside the open steel phone box, right against the phone, the receiver pressed to her ear and the cord slack. Calm and smug, she listens, gives a small slow nod, says a few unhurried words into the receiver and taps her fingers on the steel shelf. She never steps out of the box and never moves away from the phone. Behind her, people walk past and traffic moves. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks."
-    },
-    {
-      "key": "r10alone",
-      "n": 1,
-      "still": "r7-alone-day",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at4166: she stood outside the phone box; she stays inside it",
-      "motion": "Locked-off camera. The woman stays inside the open steel phone box the whole time, right at the phone with the receiver at her ear: she rants into it, jabbing her raised finger, throwing her free hand up in exasperation and shaking her head, all within the box. Her feet stay planted; she never steps out or forward. Pedestrians pass behind her. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks."
-    },
-    {
-      "key": "r10deliv",
-      "n": 1,
-      "still": "delivery-b",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at2693: her hand went through the glass of the phone box",
-      "motion": "Locked-off camera. The courier in the helmet hands the brown paper bag to the woman; she takes it with her free hand, keeping the receiver at her ear, and sets it down on the steel shelf beside the phone. The courier turns and wheels his bike away to the left and out of frame. She stays inside the box, talking; her hands touch only the receiver and the bag, nothing ever passes through the glass panel, the glass stays solid. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks."
-    },
-    {
-      "key": "r10suv",
-      "n": 1,
-      "still": "r10suv-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at7103: Karen gets out of a government SUV and goes into an important building",
-      "motion": "Locked-off camera at night. The agent holds the rear door of the black SUV; the woman in the camel cardigan steps fully out onto the wet pavement and walks away from the camera towards the floodlit building's steps, her back to the camera throughout. The agent shuts the door and follows her. The flags stir in the breeze, a car passes. Movement continues right to the last frame. Sound: a city night, a car door closing. No music.\n\nThanks."
-    },
-    {
-      "key": "r10steps",
-      "n": 1,
-      "still": "r10steps-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at7103: Karen walking into the building",
-      "motion": "Locked-off low camera at the foot of the steps, at night. The woman in the camel cardigan and the two agents in dark suits climb the stone steps steadily away from the camera towards the open, glowing doors; the guards at the top stand still. They keep climbing to the last frame and never turn towards the camera. Sound: footsteps on stone, a city night. No music.\n\nThanks."
-    },
-    {
-      "key": "r10nyc",
-      "n": 1,
-      "still": "r10nyc-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at7103: end on a zoom-out over New York at night",
-      "motion": "A slow, smooth aerial pull-back and rise over Manhattan at night: the camera drifts up and back, revealing more and more of the glittering skyline, rivers of car lights flowing along the avenues, steam drifting from a rooftop, the bridge lights on the river. Calm and majestic, continuous motion to the last frame. Sound: a distant city hum. No music.\n\nThanks."
-    },
-    {
-      "key": "r10month2",
-      "n": 1,
-      "still": "r10month2-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at4041: the two people coming up from the subway walked back down; re-roll 2, stairs empty",
-      "motion": "Locked-off camera on a cold, grey, dry day; no snow. The woman in the green padded coat stays in the phone box, receiver at her ear, talking and shifting her weight. On the pavement behind, people in winter coats walk past the subway entrance from left to right and keep going out of frame. Traffic rolls by: the bus pulls away, a taxi passes. Nobody goes down or comes up the subway stairs. Everything keeps moving right to the last frame. Sound: wet street traffic. No music.\n\nThanks."
-    },
-    {
-      "key": "r10month3",
-      "n": 1,
-      "still": "r10month-a",
-      "character": null,
-      "why": "Kai's note on cut r9, 2026-11-26, at4041: the two people coming up from the subway walked back down; re-roll 3, they come up and walk off left",
-      "motion": "Locked-off camera on a cold, grey, dry day; no snow. In the first two seconds the couple in winter coats reach the top of the subway steps, step onto the pavement, turn left and walk briskly away along the sidewalk until they leave the frame on the left; once out of the station they keep walking forward and are gone. The stairs behind them stay empty. The woman in the green coat stays in the phone box on the phone. Traffic moves on the road. Continuous movement to the last frame. Sound: street traffic. No music.\n\nThanks."
-    },
-    {
-      "key": "r11evac1",
-      "n": 1,
-      "still": "r7-studio-pres",
-      "character": null,
-      "why": "Kai's note on cut r10, 2026-11-26, at6722: the evacuation looks robotic, classic AI; several cuts with different prompts, really dramatic; try 1: handheld, chaotic",
-      "motion": "Handheld camera, as if a stagehand grabbed it: it jolts and swings to follow the action. Four men in dark suits burst onto the set from the right at a run. Two grab the man in the armchair under the arms and haul him up; he stumbles, his phone flies out of his hand, one agent presses a hand on his back to keep him low, and they half-run him off the left side of the set, shoes skidding on the floor. Behind them the host jumps up from his desk, hands raised. Real bodies with real weight and momentum: heavy footfalls, shoulders colliding, jackets flapping. Nobody glides or vanishes; everyone stays whole and runs out past the frame edge. Sound: shouting, scuffling feet, a chair scraping, a dramatic score of pounding drums. No clear dialogue.\n\nThanks."
-    },
-    {
-      "key": "r11evac2",
-      "n": 1,
-      "still": "r7-studio-pres",
-      "character": null,
-      "why": "Kai's note on cut r10, 2026-11-26, at6722: the evacuation looks robotic, classic AI; several cuts with different prompts, really dramatic; try 2: locked-off, weight and urgency",
-      "motion": "The camera is still, like a studio camera left running. Without warning, two agents in dark suits sprint in from the right, one barking into his sleeve. The seated man flinches and starts to rise; the agents seize an arm each and lift him clean out of the armchair, the cushion falling to the floor. A third agent sweeps in from behind, shielding him with his body, and the four of them rush out to the left in a tight, crouched huddle, one agent glancing back over his shoulder. The host stays rooted behind his desk, open-mouthed. Every movement is fast, urgent and physical, with natural human timing and balance, never smooth or floating. Sound: running footsteps, a crash, urgent shouts, deep drums. No clear dialogue.\n\nThanks."
-    },
-    {
-      "key": "r11evac3",
-      "n": 1,
-      "still": "r7-studio-pres",
-      "character": null,
-      "why": "Kai's note on cut r10, 2026-11-26, at6722: the evacuation looks robotic, classic AI; several cuts with different prompts, really dramatic; try 3: slow motion, cinematic",
-      "motion": "Filmed in slight slow motion, like a high-speed movie camera, the camera drifting slowly in. Agents in dark suits charge in from the right, ties flying, faces set; one throws an arm round the seated man's shoulders and pulls him to his feet as the others close in around him, and the whole group surges out to the left of the set. The studio lights flare and stutter overhead; the host behind the desk ducks. Weighty, real, dramatic movement: cloth ripples, feet plant hard, heads turn sharply. Nobody disappears; they all leave past the frame edge. Sound: a deep slowed rumble, a heartbeat drum, muffled shouting. No clear dialogue.\n\nThanks."
-    },
-    {
-      "key": "r11suv1",
-      "n": 1,
-      "still": "r10suv-a",
-      "character": null,
-      "why": "Kai's notes on cut r10, 2026-11-26, at7057/at7081: she walks through the car, the door never opens, the car drives forward, back and flips; try 1: the car parked and still, she walks along the pavement",
-      "motion": "Locked-off camera at night. The black SUV is parked at the kerb and stays completely still for the whole shot: engine off, wheels not turning, its rear door held wide open by the agent. The woman in the camel cardigan, already standing on the pavement beside the open door, walks away from the camera along the pavement on our side of the car, towards the floodlit steps, never passing through or behind the car. The agent swings the door shut and follows a pace behind her. Flags stir. Movement continues to the last frame. Sound: a city night, footsteps on wet stone, a car door thudding shut. No music.\n\nThanks."
-    },
-    {
-      "key": "r11suv2",
-      "n": 1,
-      "still": "r10suv-a",
-      "character": null,
-      "why": "Kai's notes on cut r10, 2026-11-26, at7057/at7081: she walks through the car, the door never opens, the car drives forward, back and flips; try 2: she steps clear, the SUV stays parked",
-      "motion": "Static camera, night, light drizzle. The parked black SUV never moves: it is stationary at the kerb from first frame to last. The agent holds the rear door open; the woman steps clear of the door onto the pavement nearest the camera, pauses to straighten her cardigan and look up at the grand building, then walks off towards its steps with her back to us. The agent closes the door with a solid thud and walks after her. A second agent waits at the foot of the steps. Everything stays solid: no one walks through the car. Sound: drizzle, a door closing, distant traffic. No music.\n\nThanks."
-    },
-    {
-      "key": "r11suv3",
-      "n": 1,
-      "still": "r10suv-a",
-      "character": null,
-      "why": "Kai's notes on cut r10, 2026-11-26, at7057/at7081: she walks through the car, the door never opens, the car drives forward, back and flips; try 3: the camera follows her",
-      "motion": "The camera slowly pans to the left to follow the woman in the camel cardigan as she leaves the side of the parked black SUV and walks up the pavement towards the floodlit columns of the building. The SUV stays parked exactly where it is, its door closed behind her by the agent, who follows her. She keeps her back to the camera. Steady, real walking pace. Sound: footsteps, a quiet city night. No music.\n\nThanks."
-    },
-    {
-      "key": "r11throw",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r10, 2026-11-26, at1528: the throw re-made for quality, Karen keeps her wine glass",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan, wine glass still in her left hand, swings round to the railing and, with a furious shout, hurls her phone overhand far out over the railing; it arcs away into the dark water. She stays at the railing, breathing hard, then takes a defiant sip of wine. Her friend in the olive jacket doubles over laughing beside her, glass in hand. Both glasses stay in their hands the whole time. Sharp, natural, weighty human movement. Sound: river lapping, wind, distant traffic, her shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r11aaron",
-      "n": 1,
-      "still": "r11aaron-a",
-      "character": null,
-      "why": "Kai's note on cut r10, 2026-11-26, at4536: Aaron cast from the Aarron character so his face matches",
-      "motion": "Locked-off camera. In the glass phone box on the left the woman keeps talking hard into the receiver, shaking her fist. The young man with headphones round his neck holds his phone up, filming her, absorbed: he listens closely, his head tilting, a slow small nod in time with her words, lips closed, intrigued and serious, never grinning. People walk past behind him both ways. Movement continues to the last frame. Sound: street noise. No music.\n\nThanks."
-    },
-    {
-      "key": "r11boss",
-      "n": 1,
-      "still": "r11boss-a",
-      "character": null,
-      "why": "Kai's note on cut r10, 2026-11-26, at5868/at5939: the boss having the idea, in place of the talk show coming on the TV",
-      "motion": "Locked-off camera, medium close-up. The grey-bearded man in the writers' room slowly straightens, his eyes widening as the idea lands; his half-smile grows, his raised finger taps the air once, and he turns his head towards the others off-screen as if to say \"wait, wait...\". The room behind him stays softly out of focus, the wall screen stays dark. Natural, human, unhurried movement right to the last frame. Sound: a quiet office, a chair creak. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r12evacA",
-      "n": 1,
-      "still": "r7-studio-pres",
-      "character": null,
-      "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; A: two agents, a fast real escort",
-      "motion": "Locked-off studio camera. Two men in dark suits with earpieces stride in fast from the right. The first bends to the seated man's ear and says one word; he puts the phone down at once and stands. Each agent takes one of his elbows and, heads down, all three walk at a fast clip straight out of the left of the frame, the agents' free hands up near his back. It is quick, controlled and practised, like real close protection: no struggling, no milling about. The host stays frozen behind the desk. Every step has weight. Sound: fast footsteps on a hard floor, a murmur, deep drums. No clear dialogue.\n\nThanks."
-    },
-    {
-      "key": "r12evacB",
-      "n": 1,
-      "still": "r7-studio-pres",
-      "character": null,
-      "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; B: three agents shield him, a crouching run",
-      "motion": "Static camera on the studio set. Three agents in dark suits burst in from the right side. One hauls the seated man up by the arm, another throws an arm over his shoulders and pushes his head low, the third moves in front with a hand raised; as one tight knot they run him off the left side of the set in a crouch, in under three seconds. The armchair rocks. The host ducks behind his desk. Fast, physical, believable human movement with momentum and balance; no gliding, no hesitation. Sound: a shout of \"Move!\", running feet, a thump, pounding drums.\n\nThanks."
-    },
-    {
-      "key": "r12evacC",
-      "n": 1,
-      "still": "r7-studio-pres",
-      "character": null,
-      "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; C: one agent, one sharp grab, closer feel",
-      "motion": "Locked-off camera. A single big agent in a dark suit rushes in from the right, grabs the seated man firmly by the upper arm and the back of his jacket and lifts him straight out of the armchair in one strong movement; the man's phone drops to the cushion. A second agent arrives a beat later and they hurry him away to the left, half-running, the first agent's hand flat on his back. The host half-rises, staring. Real weight and urgency in every movement. Sound: a scuffle, the phone hitting the cushion, footsteps, dramatic drums.\n\nThanks."
-    },
-    {
-      "key": "r12evacD",
-      "n": 1,
-      "still": "r7-studio-pres",
-      "character": null,
-      "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; D: the studio crew scatter as agents take him",
-      "motion": "Locked-off camera. Agents in dark suits pour in from both sides of the set while stagehands in black scatter out of the way at the back. Two agents pull the seated man to his feet and, with a third clearing the way, hustle him off the left of the set at a run. A studio light swings on its stand. The host is pulled down behind his desk by a crew member. Fast, chaotic but clear, with natural human motion, weight and footing. Sound: urgent shouting, running feet, a crash, deep drums.\n\nThanks."
-    },
-    {
-      "key": "r12throwa",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r11, 2026-11-26, at1548: the phone doubles and a second wine glass appears; re-cut the same shot a few times; roll 1",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r12throwb",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r11, 2026-11-26, at1548: the phone doubles and a second wine glass appears; re-cut the same shot a few times; roll 2",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r12throwc",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r11, 2026-11-26, at1548: the phone doubles and a second wine glass appears; re-cut the same shot a few times; roll 3",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r12stun",
-      "n": 1,
-      "still": "r12stun-a",
-      "character": null,
-      "why": "Kai's note on cut r11, 2026-11-26, at907: subtly stunned, not nodding along",
-      "motion": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down closes the laptop on her knees and holds it out to the man beside her, her movements a little mechanical, her face still blank and dazed. He takes it awkwardly. She does not nod, does not smile, does not speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r12boss",
-      "n": 1,
-      "still": "r12boss-a",
-      "character": null,
-      "why": "Kai's note on cut r11, 2026-11-26, at5922: reverse angle, the boss in front of the window and skyline, the room still full",
-      "motion": "Locked-off camera. At the end of the table, in front of the window and the Manhattan skyline, the grey-bearded man's idea lands: his raised finger lifts a little higher, his half-smile spreads, he leans forward onto the table with his other hand. Around the table the writers turn their heads up towards him one after another, a woman lowers her coffee cup, someone sits up straight. Natural, human, unhurried movement right to the last frame. Sound: a quiet office, chairs creaking. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r12alone",
-      "n": 1,
-      "still": "r12alone-a",
-      "character": null,
-      "why": "Kai's note on cut r11, 2026-11-26, at4307: the wet weather carried over; Karen stays inside the box, unfazed",
-      "motion": "Locked-off camera, cold grey drizzle. The woman in the green padded coat and knitted hat stays inside the phone box, the receiver at her ear, listening with a calm, stubborn little smile. She shifts her weight, tucks her scarf tighter with her free hand, says a couple of unhurried words into the phone and settles back against the side of the box. Rain drips from the roof edge; people with umbrellas pass behind. She never steps out. Movement continues to the last frame. Sound: rain, wet traffic. No music.\n\nThanks."
-    },
-    {
-      "key": "r13ring",
-      "n": 1,
-      "still": "r13ring-a",
-      "character": null,
-      "why": "Kai 2026-11-27, new ending (Draft A): a few hours later the payphone rings for Karen; the Chief of Staff is calling",
-      "motion": "Locked-off camera, late at night on a wet, empty Midtown corner. Inside the open steel phone box the woman in the camel cardigan lifts the ringing receiver the last few inches to her ear, listens, and her wary look slowly turns to quiet astonishment; she straightens up, nods once, very composed, as if told something important, and keeps listening. Her free hand stays flat on the little steel shelf beside the paper cup. She never leaves the box. One car's lights slide past far behind. Movement continues to the last frame. Sound: a quiet wet street at night. No music, no dialogue.\n\nThanks."
-    },
-    {
-      "key": "r13room",
-      "n": 1,
-      "still": "r13room-a",
-      "character": null,
-      "why": "Kai 2026-11-27, new ending (Draft A): Karen walks into the Situation Room; the man at the head of the table rises to greet her",
-      "motion": "Locked-off camera behind the head of the long table. The tall man in the navy suit, seen only from behind, finishes rising from his chair and turns slightly towards the doorway. The woman in the camel cardigan takes two steps into the room from between the two agents and stops at the end of the table, composed, chin up. The people seated along both sides turn to look at her; a woman sets her pen down. Slow, quiet, serious human movement to the last frame. He never turns his face to the camera. Sound: a hushed room, a chair creaking. No music, no dialogue.\n\nThanks."
-    },
-    {
-      "key": "r14throw1",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r14throw2",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r14throw3",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r14throw4",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r14throw5",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r14throw6",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r14throw7",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r14throw8",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
-      "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r14stun1",
-      "n": 1,
-      "still": "r12stun-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at962: keep Karen's face, but the laptop opens and folds as she passes it; the same shot, the laptop staying shut",
-      "motion": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down lifts the one closed, dark grey laptop from her knees and holds it out flat to the man beside her; it stays shut and stays the same single laptop the whole time, nothing opens, folds or changes shape. He takes it with both hands and rests it on his lap. Her face stays blank and dazed; she does not nod, smile or speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r14stun2",
-      "n": 1,
-      "still": "r12stun-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at962: keep Karen's face, but the laptop opens and folds as she passes it; the same shot, the laptop staying shut",
-      "motion": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down lifts the one closed, dark grey laptop from her knees and holds it out flat to the man beside her; it stays shut and stays the same single laptop the whole time, nothing opens, folds or changes shape. He takes it with both hands and rests it on his lap. Her face stays blank and dazed; she does not nod, smile or speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r14stun3",
-      "n": 1,
-      "still": "r12stun-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at962: keep Karen's face, but the laptop opens and folds as she passes it; the same shot, the laptop staying shut",
-      "motion": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down lifts the one closed, dark grey laptop from her knees and holds it out flat to the man beside her; it stays shut and stays the same single laptop the whole time, nothing opens, folds or changes shape. He takes it with both hands and rests it on his lap. Her face stays blank and dazed; she does not nod, smile or speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r14boss",
-      "n": 1,
-      "still": "r14boss-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at5924: the boss's face in front of the window and skyline",
-      "motion": "Locked-off camera. The grey-bearded man in front of the tall window, the city at dusk behind him. His idea lands: his raised finger lifts a little, his half-smile slowly widens into a knowing grin, his eyes narrow with delight, he gives one small satisfied nod. The city lights twinkle softly behind him, a little traffic far below. Natural, unhurried human movement to the last frame. Sound: a quiet office. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r14aerial",
-      "n": 1,
-      "still": "r14aerial-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at5185: a helicopter view of New York, a buzz in the city, under the text messages",
-      "motion": "A slow, steady helicopter drift forward and slightly down over Midtown Manhattan at golden hour, following the long avenue between the towers. Cabs and crowds move on the streets far below, sunlight glints off glass. Smooth, real aerial camera motion, no cuts. Sound: distant city hum and rotor wash. No music.\n\nThanks."
-    },
-    {
-      "key": "r14crowd8",
-      "n": 1,
-      "still": "r14crowd8-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at5185: the crowd grows more naturally (about eight, late afternoon)",
-      "motion": "Locked-off camera on the corner, late afternoon sun. The woman in the camel cardigan stays inside the open steel phone box, talking calmly into the receiver, never leaving it. On the sidewalk a handful of strangers keep their distance and film her on their phones; one more person wanders over to join them, another nudges a friend and points. Movement continues to the last frame. Sound: street traffic, murmurs. No music.\n\nThanks."
-    },
-    {
-      "key": "r14crowd25",
-      "n": 1,
-      "still": "r14crowd25-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at5185: the crowd grows more naturally (about twenty-five, evening)",
-      "motion": "Locked-off camera on the corner at evening, the street lamps coming on. The woman in the camel cardigan stays inside the open steel phone box, talking into the receiver. A loose crescent of about twenty-five strangers stands back from the box, phones raised; a few more arrive from either side and squeeze in at the back, people laugh and whisper to each other. Nobody steps closer to the box. Movement continues to the last frame. Sound: a growing murmur, traffic. No music.\n\nThanks."
-    },
-    {
-      "key": "r14crowd60",
-      "n": 1,
-      "still": "r14crowd60-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at5185: the crowd grows more naturally (a packed crowd at night)",
-      "motion": "Locked-off camera on the corner at night. The woman in the camel cardigan stays inside the open steel phone box, the receiver at her ear. A packed crowd fills the sidewalk and spills into the road, dozens of phone screens glowing, people at the back craning and holding phones high, a stopped cab's lights behind them; the crowd sways and shifts as more people press in at the edges. Nobody steps into the box. Movement continues to the last frame. Sound: a big crowd's buzz, a car horn. No music.\n\nThanks."
-    },
-    {
-      "key": "r14cos1",
-      "n": 1,
-      "still": "r14cos1-a",
-      "character": null,
-      "why": "Kai's note on cut r13, 2026-11-27, at7275: the Chief of Staff on the phone to the President (casting option 1, provisional)",
-      "motion": "Locked-off camera. Late at night in the wood-panelled office, the woman with close-cropped silver hair stands behind the desk with the desk phone's receiver at her ear. She listens for a moment, unimpressed, then leans her weight onto her other hand on the desk and speaks a few short, firm words into the phone, eyes hard, completely in control. She does not raise her voice. Small, real movements to the last frame. Sound: a quiet room, a clock. No music.\n\nThanks."
-    },
-    {
-      "key": "r14cos4",
-      "n": 1,
-      "still": "r14cos4-a",
-      "character": null,
-      "why": "Kai 2026-11-27: 'number 4 please' (the Chief of Staff, casting option 4 of four)",
-      "motion": "Locked-off camera. Late at night in the wood-panelled office, the woman with long silver-streaked hair and the burgundy suit stands behind the desk, leaning on one hand, the desk phone's receiver at her ear. She listens for a moment, tired and unimpressed, then straightens a little and speaks a few short, firm words into the phone, eyes hard, completely in control, never raising her voice. Small, real movements to the last frame. Sound: a quiet room, a clock. No music.\n\nThanks."
-    },
-    {
-      "key": "r15throw1",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt A)",
-      "motion": "Tripod shot, the camera completely still, at night on the riverside walk under the lit bridge. The woman in the camel cardigan already has her right arm raised high with the phone. She snaps that arm forward once and lets go: the single phone sails out past the railing and drops into the dark river. Then her right hand hangs open and empty. Her left hand keeps holding the same one wine glass, low at her side, the whole time. She stays on the spot and yells after it. Her friend in the olive jacket laughs with her own one glass. The railing, the walkway, the benches, the bridge and the skyline are fixed scenery and never move or shift; only the two women and the phone move. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r15throw2",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt A)",
-      "motion": "Tripod shot, the camera completely still, at night on the riverside walk under the lit bridge. The woman in the camel cardigan already has her right arm raised high with the phone. She snaps that arm forward once and lets go: the single phone sails out past the railing and drops into the dark river. Then her right hand hangs open and empty. Her left hand keeps holding the same one wine glass, low at her side, the whole time. She stays on the spot and yells after it. Her friend in the olive jacket laughs with her own one glass. The railing, the walkway, the benches, the bridge and the skyline are fixed scenery and never move or shift; only the two women and the phone move. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r15throw3",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt A)",
-      "motion": "Tripod shot, the camera completely still, at night on the riverside walk under the lit bridge. The woman in the camel cardigan already has her right arm raised high with the phone. She snaps that arm forward once and lets go: the single phone sails out past the railing and drops into the dark river. Then her right hand hangs open and empty. Her left hand keeps holding the same one wine glass, low at her side, the whole time. She stays on the spot and yells after it. Her friend in the olive jacket laughs with her own one glass. The railing, the walkway, the benches, the bridge and the skyline are fixed scenery and never move or shift; only the two women and the phone move. Sound: river lapping, wind, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r15throw4",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt B)",
-      "motion": "Static camera on a tripod, night, the riverside walk with the lit bridge behind. The woman in the camel cardigan, right arm up holding a phone, flings it forward over the metal railing; it turns once in the air and vanishes into the black water. She lowers her empty right hand and stands where she is, shouting at the river, while her left hand stays at her hip with the same single red wine glass. The friend in the olive jacket doubles over laughing, glass in hand. Nothing else in the frame moves: the railing and fence are solid and still, the background stays put. No extra phones, no extra glasses. Sound: wind off the water, a splash far off, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r15throw5",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt B)",
-      "motion": "Static camera on a tripod, night, the riverside walk with the lit bridge behind. The woman in the camel cardigan, right arm up holding a phone, flings it forward over the metal railing; it turns once in the air and vanishes into the black water. She lowers her empty right hand and stands where she is, shouting at the river, while her left hand stays at her hip with the same single red wine glass. The friend in the olive jacket doubles over laughing, glass in hand. Nothing else in the frame moves: the railing and fence are solid and still, the background stays put. No extra phones, no extra glasses. Sound: wind off the water, a splash far off, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r15throw6",
-      "n": 1,
-      "still": "r11throw-a",
-      "character": null,
-      "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt B)",
-      "motion": "Static camera on a tripod, night, the riverside walk with the lit bridge behind. The woman in the camel cardigan, right arm up holding a phone, flings it forward over the metal railing; it turns once in the air and vanishes into the black water. She lowers her empty right hand and stands where she is, shouting at the river, while her left hand stays at her hip with the same single red wine glass. The friend in the olive jacket doubles over laughing, glass in hand. Nothing else in the frame moves: the railing and fence are solid and still, the background stays put. No extra phones, no extra glasses. Sound: wind off the water, a splash far off, a shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r15friends",
-      "n": 1,
-      "still": "r15friends-a",
-      "character": null,
-      "why": "Kai's note on cut r14, 2026-11-27, at5062: the two friends stand looking interested, not pointing or laughing",
-      "motion": "Locked-off camera, daytime at the phone box. The woman in the box keeps talking into the receiver, gesturing calmly with her free hand. The two young men stand a step back and watch her, fascinated: the man in the dark jacket keeps filming her on his phone, the man in the denim jacket leans in slightly, curious, and murmurs something to his friend without looking away from her. Nobody points or laughs. People walk past behind. Natural movement to the last frame. Sound: daytime street traffic, footsteps. No dialogue, no music.\n\nThanks."
-    },
-    {
-      "key": "r15bar",
-      "n": 1,
-      "still": "r15bar-a",
-      "character": null,
-      "why": "Kai's note on cut r14, 2026-11-27, at5656: on the news she is in the phone box with a big crowd behind her",
-      "motion": "Locked-off camera at the end of the bar. On the wall TV the woman in the phone box keeps talking into the receiver while the big crowd around her sways and holds up glowing phones. Below, the man in the denim jacket keeps pointing up at the screen and turns to his friends, the man in the cap rocks back laughing, others lean in to watch, and the bartender finishes pouring the beer and glances up at the TV. Warm, lively, everyone in motion right to the last frame. Sound: a busy bar, laughter, glasses clinking. No speech, no music.\n\nThanks."
-    },
-    {
-      "key": "r15k1",
-      "n": 1,
-      "still": "r15c1-a",
-      "character": null,
-      "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (over her shoulder)",
-      "motion": "Locked-off camera behind the woman in the camel cardigan at the riverside railing at night. The phone she has just flung keeps flying: it arcs far out over the black river, tumbling, getting smaller, and drops with a small white splash into the water under the bridge lights. Her outstretched arm follows through and then she punches the air, shouting after it, wine glass still in her other hand. Her friend in the olive jacket bends over laughing. The railing and the skyline do not move. Sound: wind, river, a distant splash, a triumphant shout. No music.\n\nThanks."
-    },
-    {
-      "key": "r15k2",
-      "n": 1,
-      "still": "r15c2-a",
-      "character": null,
-      "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (wide silhouette)",
-      "motion": "Static wide shot along the promenade at night. The small dark phone already in the air keeps rising in a long high arc out over the river, then falls and disappears into the water far from the railing with a tiny splash glinting in the reflected city lights. The woman in the camel cardigan follows through with her whole body and throws both arms up, glass in one hand; her friend staggers back laughing. The camera, railing and bridge stay perfectly still. Sound: wind off the water, a far-off splash, shrieks of laughter. No music.\n\nThanks."
-    },
-    {
-      "key": "r15k3",
-      "n": 1,
-      "still": "r15c3-b",
-      "character": null,
-      "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (low angle through the railing)",
-      "motion": "Low fixed camera looking up at the railing at night. The tumbling phone falls past the railing, down past the lens and out of frame into the river below; a spray of water flicks up at the bottom edge. Above, the woman in the camel cardigan leans over the rail shouting after it, wine glass held high, then throws her head back and laughs; her friend peers over beside her. The railing stays rigid and still. Sound: a splash right under the lens, shouting, wind. No music.\n\nThanks."
-    },
-    {
-      "key": "r15k4",
-      "n": 1,
-      "still": "r15c4-a",
-      "character": null,
-      "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (close-up of the hand)",
-      "motion": "Close-up, camera fixed. The hand in the camel sleeve whips forward over the railing and lets go: the phone spins away into the blurred night, out over the river, and is gone. The empty hand stays stretched out, fingers spread, then slowly clenches into a fist on the top bar. Only the hand and the phone move; the railing and the bokeh of the bridge lights stay still. Sound: a whoosh, wind, a faint splash far away. No music.\n\nThanks."
-    },
-    {
-      "key": "r15k5",
-      "n": 1,
-      "still": "r15c5-b",
-      "character": null,
-      "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (looking down at the water)",
-      "motion": "Fixed high camera looking down at the river at night. The phone keeps falling, turning over, and smacks into the dark water with a white splash; the glowing screen sinks and fades under the rippling gold reflections until it is gone. The open hand at the top of the frame hangs there a moment, then pulls back out of shot. Ripples spread outward and the water settles. Nothing else moves. Sound: a sharp splash, then the river lapping. No music.\n\nThanks."
-    },
-    {
-      "key": "r15k6",
-      "n": 1,
-      "still": "r15c6-b",
-      "character": null,
-      "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (front-on from the river)",
-      "motion": "Fixed camera facing the two women at the railing at night, as if from over the water. The woman in the camel cardigan hurls her phone hard straight towards the camera; it flies past the lens and out of frame over the river. She stays at the railing, glass in her other hand, screaming after it, then bursts out laughing; her friend laughs and raises her glass. The railing, lamps and buildings behind stay perfectly still. Sound: a whoosh past the camera, wind, laughter. No music.\n\nThanks."
-    },
-    {
-      "key": "r15orig1",
-      "n": 1,
-      "still": "river-shout-b",
-      "character": "Karen",
-      "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
-      "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
-    },
-    {
-      "key": "r15orig2",
-      "n": 1,
-      "still": "river-shout-b",
-      "character": "Karen",
-      "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
-      "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
-    },
-    {
-      "key": "r15orig3",
-      "n": 1,
-      "still": "river-shout-b",
-      "character": "Karen",
-      "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
-      "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
-    },
-    {
-      "key": "r15orig4",
-      "n": 1,
-      "still": "river-shout-b",
-      "character": "Karen",
-      "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
-      "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
-    }
-  ]
+  {
+   "key": "clive",
+   "n": 2,
+   "still": "clive-evening-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at3168/at3218: Clive in the evening",
+   "motion": "The camera does not move. The tired man at the desk holds the receiver to his ear, rubs his brow, closes his eyes and lets out a long sigh, then props his head on his hand and keeps listening, nodding wearily. Outside the window, tail-lights stream past in the dusk. Sound: a quiet office hum, muffled evening traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "talkeve",
+   "n": 3,
+   "still": "talk-evening-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at3286: the same scene, at evening",
+   "motion": "The camera does not move. The woman in the phone box speaks slowly into the receiver, pronouncing each word with relish, her raised finger jabbing the air on every syllable; she stops, listens with narrowed eyes, then leans in and starts again. Behind her the evening rush-hour traffic streams past, headlights and tail-lights, a bus pulling away. Sound: busy evening traffic, a horn, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "boxeve",
+   "n": 4,
+   "still": "box-evening-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at3424: evening at the box, a busy street",
+   "motion": "The camera does not move. The woman in the phone box holds the receiver to her ear and talks on and on, gesturing now and then with her free hand. Behind her the evening traffic crawls past: yellow cabs, headlights, a delivery cyclist, commuters walking home with bags. Sound: evening traffic, horns, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "snow",
+   "n": 5,
+   "still": "snow-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at3684: the snow scene with New York traffic",
+   "motion": "The camera does not move. Snow falls steadily. The woman in the green parka at the phone box keeps talking into the receiver, stamping her feet against the cold, her breath steaming. Behind her yellow cabs and a city bus push slowly through the slush with their wipers going, and people hurry past with their heads down. Sound: muffled snowy traffic, tyres in slush, wind. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "alone",
+   "n": 6,
+   "still": "karen-alone-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at3892/at3908: Karen gesticulating, alone, no Aaron yet",
+   "motion": "The camera does not move. The woman in the phone box shouts into the receiver and throws her free arm wide in a big theatrical gesture, then jabs the air, then flings her hand up again, utterly unstoppable. Passers-by glance at her and walk on. Nobody stops to film. Sound: street traffic, a car horn, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "news",
+   "n": 7,
+   "still": "news-evening-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at4841: the news at evening",
+   "motion": "The camera does not move. The woman holding the microphone talks to the video camera, smiling and nodding, and turns to gesture down the street behind her; the camera operator holds the camera steady on his shoulder, the sound operator keeps the fluffy microphone pole raised, the lamp on its stand glows. Evening traffic passes. Sound: an evening street, distant traffic, a murmur of people further down the road. No music.\n\nThanks."
+  },
+  {
+   "key": "throw",
+   "n": 8,
+   "still": "river-shout-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at1615: re-cut the throw, better quality",
+   "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it; then in one clean, strong movement she swings her arm back and hurls the phone in a high arc out over the railing towards the dark river, and her arm follows through. The phone flies out of frame. Beside her the other woman doubles over laughing. Her hand stays empty after the throw. Sound: wind off the river, distant city traffic, laughter. No music.\n\nThanks."
+  },
+  {
+   "key": "evac3",
+   "n": 9,
+   "still": "evacuate-b",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at6575: re-roll the evacuation (someone vanished); at6515: dramatic music",
+   "motion": "The camera does not move. Three Secret Service agents in dark suits rush in from the right, grab the man in the dark suit under the arms and hurry him off the set and out of frame to the right; everyone who leaves walks out of the frame edge, nobody disappears. The host rises halfway from behind the desk, staring after them. The studio lights flicker once. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks."
+  },
+  {
+   "key": "evac4",
+   "n": 10,
+   "still": "evacuate-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at6575: re-roll the evacuation (someone vanished); at6515: dramatic music",
+   "motion": "The camera does not move. Secret Service agents in dark suits surge onto the set, surround the man in the dark suit and rush him away and out of the frame at speed, one agent walking backwards with his arm out; every person stays a whole person and walks out of the frame edge, nobody vanishes. The host stays frozen in his chair, mouth open. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks."
+  },
+  {
+   "key": "times",
+   "n": 11,
+   "still": "timessq-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at6681: Times Square; the evacuation plays on the big screen (added in post)",
+   "motion": "The camera does not move. The huge screen on the building stays plain, solid white and perfectly still the whole time, and the red band beneath it stays plain. In the square below, the crowd stands staring up at it; more people stop and look up, some raise their phones to film, one woman covers her mouth. Cabs sit stopped. The surrounding billboards shimmer. Sound: a hushed crowd, a murmur spreading, distant horns. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "martha1",
+   "n": 12,
+   "still": "martha-close-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
+   "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, wearily patient. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
+  },
+  {
+   "key": "martha2",
+   "n": 13,
+   "still": "martha-close-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
+   "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, flat and tired, a little sing-song. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
+  },
+  {
+   "key": "martha3",
+   "n": 14,
+   "still": "martha-close-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at2929: lip-sync Martha's line",
+   "motion": "The camera does not move. The receptionist with the headset looks slightly off camera and speaks into her headset microphone, polite but bored. She says: I can escalate you, Karen, but you're going to have to wait. Then she presses her lips together and gives a small tight smile. Her head stays steady, her face clearly lit. Sound: a quiet office lobby, a phone ringing far off. No music.\n\nThanks."
+  },
+  {
+   "key": "crowd2",
+   "n": 15,
+   "still": "crowd2-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at4732: the crowd grows 2, 6, 20 in one place (two by day)",
+   "motion": "The camera does not move. Daytime at the phone box. The woman in the box talks on and on into the receiver, jabbing the air. In front of her the two young men film her on a phone, one grinning and pointing, the other laughing and leaning in to see the screen. Passers-by walk past behind without stopping. Sound: daytime street traffic, footsteps, the two men chuckling. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "crowd6",
+   "n": 16,
+   "still": "crowd6r-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at4732: six people, early evening, the same place",
+   "motion": "The camera does not move. Low golden evening light at the phone box. The woman in the box keeps talking into the receiver. The small group in front of her films her on their phones: the nurse nudges the teenager and points, the old man's dog sits down, the courier shifts his heavy bag and raises his phone higher. Sound: evening traffic, a murmur, a dog's tags jingling. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "crowd20",
+   "n": 17,
+   "still": "crowd20r-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at4732: about twenty people, evening, the same place",
+   "motion": "The camera does not move. Evening at the phone box, street lamps glowing. The woman in the box talks on into the receiver, unbothered. The two young men at the front film her and grin; behind them the crowd of about twenty sways and murmurs, phone screens bobbing; a couple more people walk up from the side and lift their phones. Sound: an evening crowd murmuring and laughing, traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "coup",
+   "n": 18,
+   "still": "coupr-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at6045: a smaller crowd, moving, with news crews",
+   "motion": "The camera does not move. Night at the phone box under the bright TV lights. The woman in the box stands calmly on the phone. Around her the crowd shifts and murmurs, phones raised; the two camera operators adjust their shoulder cameras and step for a better angle, a sound operator raises the boom pole higher, a reporter checks her earpiece. Sound: a night crowd murmuring, distant traffic, a camera shutter. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "shocked",
+   "n": 19,
+   "still": "shocked-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at6991: Karen shocked at the end",
+   "motion": "The camera does not move. The woman in the phone box listens to the receiver, her eyes wide and mouth open in shock; she slowly presses her hand harder to her chest, blinks twice, and her jaw drops a little further, utterly speechless. Behind her the crowd's phone screens glitter. Sound: a hushed night street, distant sirens. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "karen1",
+   "n": 20,
+   "still": "karen-talk-close-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
+   "motion": "The camera does not move. The woman in the phone box speaks into the receiver, firm and clipped. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
+  },
+  {
+   "key": "karen2",
+   "n": 21,
+   "still": "karen-talk-close-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
+   "motion": "The camera does not move. The woman in the phone box speaks into the receiver, imperious, each sentence its own beat. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
+  },
+  {
+   "key": "karen3",
+   "n": 22,
+   "still": "karen-talk-close-a",
+   "character": "Karen",
+   "why": "Kai's notes on cut r5, 2026-11-25, at2662: lip-sync Karen's line",
+   "motion": "The camera does not move. The woman in the phone box speaks into the receiver, cold and deliberate. She says: I don't want a form. I want a human. A senior human. Then she presses her lips together and narrows her eyes. Her head stays steady, her face clearly lit. Sound: daytime street traffic behind. No music.\n\nThanks."
+  },
+  {
+   "key": "stairs",
+   "n": 23,
+   "still": "stairs2-a",
+   "character": null,
+   "why": "Kai's notes on cut r5, 2026-11-25, at4414: no crowd at the top of the stairs",
+   "motion": "The camera does not move. The two young men climb the tiled subway stairs away from the camera at an easy pace, one holding his phone up and showing it to the other, who leans in and laughs; they reach the top and step out into the daylight. Nobody is waiting at the top. Sound: footsteps echoing on the stairs, a train rumbling away below. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r7cityhall",
+   "n": 2,
+   "still": "cityhall-a",
+   "character": null,
+   "why": "Kai's notes on cut r6, 2026-11-25, at2366: a man appeared out of nowhere",
+   "motion": "The camera pushes in very slowly towards the colonnade. The office workers already in the plaza cross it at an easy pace, coffee cups in hand, and the guard by the steps shifts his weight. Every person is visible from the first frame; nobody appears from nowhere and nobody vanishes, people only enter or leave by walking past a frame edge. Leaves stir in a light breeze, the sky stays empty. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: a calm city morning, footsteps on stone, distant traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r7clive",
+   "n": 2,
+   "still": "clive-evening-a",
+   "character": null,
+   "why": "Kai's notes on cut r6, 2026-11-25, at3323: Clive's phone swapped hands",
+   "motion": "The camera does not move. The tired man at the desk keeps the receiver pressed to his ear with the same hand for the whole shot; the phone never changes hands. With his other hand he rubs his brow, then props his chin on it and listens, nodding wearily, eyes closing for a moment. Outside the window, tail-lights stream past in the dusk. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: a quiet office hum, muffled evening traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r7talkeve",
+   "n": 2,
+   "still": "r7-boxeve-talk",
+   "character": "Karen",
+   "why": "Kai's notes on cut r6, 2026-11-25, at3375/at3504: the evening box must be the same box",
+   "motion": "The camera creeps slowly closer. The woman in the phone box speaks slowly into the receiver, relishing every word, her free hand conducting each syllable in the air; she pauses, listens with a thin smile, then leans in and carries on. Behind her the evening traffic streams by, cabs and headlights, people walking home. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: busy evening street, a horn, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r7snow",
+   "n": 2,
+   "still": "snow2-b",
+   "character": "Karen",
+   "why": "Kai's notes on cut r6, 2026-11-25, at4215/at4285: traffic on the road only, no pause at the end",
+   "motion": "The camera does not move. Snow falls steadily. The woman in the green parka talks on into the receiver, shifting from foot to foot against the cold, breath steaming. Out on the road, the city bus and the yellow cabs roll slowly past through the slush, staying in their lane on the street; a couple of people in coats walk down into the subway. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: muffled snowy traffic, tyres in slush, wind. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r7alone",
+   "n": 2,
+   "still": "r7-alone-day",
+   "character": "Karen",
+   "why": "Kai's notes on cut r6, 2026-11-25, at4369/at4509: the same box, plain framing, no pause",
+   "motion": "The camera does not move. The woman at the phone box shouts into the receiver and flings her free arm out wide, then points hard, then throws her hand up to the sky, never stopping. Passers-by on the pavement glance at her and keep walking. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: daytime street traffic, a car horn, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r7crowd20",
+   "n": 2,
+   "still": "crowd20s-a",
+   "character": null,
+   "why": "Kai's notes on cut r6, 2026-11-25, at5383: the friends stand back from Karen",
+   "motion": "The camera does not move. Evening at the phone box, the street lamps on. The woman in the box chats on into the receiver, unbothered. The crowd keeps its distance: the two young men grin and film from where they stand, the people behind sway and murmur, phone screens bobbing, and a couple more people stroll up at the back and raise their phones. Nobody walks up to the box. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: an evening crowd murmuring and laughing, traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r7writers",
+   "n": 2,
+   "still": "r7-writers-end",
+   "character": null,
+   "why": "Kai's notes on cut r6, 2026-11-25, at6086: extend the writers' room instead of freezing",
+   "motion": "The camera does not move. The writers around the table sit in stunned silence as the idea lands; one by one they turn to look at each other, the older man slowly straightens up from the table, someone puts a coffee cup down, a woman starts to grin. The TV on the wall keeps playing. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: a quiet writers' room, a chair creaks, a cup on the table. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r7evac",
+   "n": 2,
+   "still": "r7-studio-pres",
+   "character": null,
+   "why": "Kai's notes on cut r6, 2026-11-25, at7214: the same President, in the same armchair",
+   "motion": "The camera does not move. Secret Service agents in dark suits rush in from both sides of the set, take the man in the armchair by the arms, lift him out of the chair and hurry him away out of the left edge of the frame; every person stays whole and walks out past the frame edge, nobody vanishes. The host stays frozen behind the desk. The studio lights flicker. Everything keeps moving gently right to the last frame: no settling, no freeze. Sound: a tense, dramatic orchestral film score: pounding timpani, urgent low strings, stabbing brass. No dialogue.\n\nThanks."
+  },
+  {
+   "key": "r7times",
+   "n": 1,
+   "still": "timessq3-a",
+   "character": null,
+   "why": "Kai's notes on cut r6, 2026-11-25, at7305: Times Square made in Flow, the crowd watching the screen",
+   "motion": "Locked-off camera on a tripod. A busy night in Times Square: the giant screen keeps playing its broadcast, the red band beneath it holds steady. People in the street stand gazing up at the screen, holding their phones up to film it, a few point up at it and turn to the person beside them. The yellow cabs wait with headlights on, a fine drizzle sparkles under the street lamps. Gentle movement continues right to the last frame. Sound: a big city crowd murmuring, traffic, a far-off siren. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r8bar",
+   "n": 1,
+   "still": "r8bar-b",
+   "character": null,
+   "why": "Kai's note on cut r7, 2026-11-25, at5347: 'she's made the news' as a moving shot (Flow refuses reporter clips: 'misrepresent current events')",
+   "motion": "Locked-off camera at the end of the bar. On the wall TV the woman at the phone box keeps talking into the receiver. Below, the man in the denim jacket keeps pointing up at the screen and turns to his friends, the man in the cap rocks back laughing, others lean in to look, and the bartender finishes pouring the beer and glances up at the TV. Warm, lively, everyone in motion right to the last frame. Sound: a busy bar, laughter, glasses clinking. No speech, no music.\n\nThanks."
+  },
+  {
+   "key": "r9wag",
+   "n": 1,
+   "still": "r9wag-a",
+   "character": null,
+   "why": "Kai's note on cut r8, 2026-11-25, at137: a completely different-looking colleague, stone-cold and emotionless, not wide-eyed",
+   "motion": "Locked-off camera at desk height. The woman in the camel cardigan keeps ranting over his shoulder, jabbing her raised finger at his screen, her mouth moving fast, her head bobbing with each point. The bald man in the blue checked shirt does not react at all: he keeps typing slowly, eyes on his monitor, face completely flat, one slow bored blink, a tiny unimpressed exhale through his nose, his hands staying on the keyboard; he never looks up at her. Behind them the office carries on, a colleague walks past in the background. Movement continues right to the last frame. Sound: an open-plan office hum, keyboard taps. No music.\n\nThanks."
+  },
+  {
+   "key": "r9splash",
+   "n": 1,
+   "still": "r9splash-start",
+   "character": null,
+   "why": "Kai, 2026-11-26: 'please make the splash louder' (the made-here splash read as a gunshot); this clip is used for its sound only",
+   "motion": "The camera stays still on the dark river. A small smartphone falls from above into the water just beyond the railing and plops in with a short spray of droplets; rings spread out and it sinks. Then the river carries on lapping against the wall. Sound: one sharp wet plop of a small object entering the water, droplets pattering back down, then soft lapping and far traffic. Nobody in the shot. No speech, no music.\n\nThanks."
+  },
+  {
+   "key": "r10month",
+   "n": 1,
+   "still": "r10month-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at4041/at4166: no snow; the two people come up the subway stairs and do not retreat",
+   "motion": "Locked-off camera on a cold, grey, dry late-autumn day; no snow falls and none lies anywhere. The two people in winter coats climb the last few subway steps, step out onto the pavement and keep walking forward and away to the left along the sidewalk, never stopping, never turning round, never going back down the stairs. The woman in the green coat stays inside the phone box, the receiver at her ear, shifting her weight and talking. Traffic rolls past on the road, the bus pulls away. Movement continues right to the last frame. Sound: street traffic, footsteps. No music.\n\nThanks."
+  },
+  {
+   "key": "r10aaron1",
+   "n": 1,
+   "still": "r10aaron1-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at4420: no one else on the street; recut with people",
+   "motion": "Locked-off camera. The young man with headphones round his neck walks steadily towards the camera along the busy pavement. Pedestrians pass him in both directions at a natural pace: the woman with the coffee walks on, the man in the suit keeps reading his phone, people cross the street behind. Nobody appears from nowhere or vanishes, nobody looks at the camera. Movement continues right to the last frame. Sound: a busy Manhattan sidewalk. No music.\n\nThanks."
+  },
+  {
+   "key": "r10aaron2",
+   "n": 1,
+   "still": "r10aaron2-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at4498: people on the street, and Aaron interested, not grinning",
+   "motion": "Locked-off camera. In the glass phone box on the left the woman keeps talking hard into the receiver, shaking her fist. The young man by the railings holds his phone up, recording her, completely absorbed: he listens closely, slowly tilts his head, nods gently in time with her words as if catching a rhythm, lips closed, serious and intrigued, never grinning or smirking. Pedestrians with shopping bags walk past behind him in both directions. Movement continues right to the last frame. Sound: street noise. No music.\n\nThanks."
+  },
+  {
+   "key": "r10calm",
+   "n": 1,
+   "still": "r10calm-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at2929: she stood far too far from the phone",
+   "motion": "Locked-off camera. The woman stands inside the open steel phone box, right against the phone, the receiver pressed to her ear and the cord slack. Calm and smug, she listens, gives a small slow nod, says a few unhurried words into the receiver and taps her fingers on the steel shelf. She never steps out of the box and never moves away from the phone. Behind her, people walk past and traffic moves. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks."
+  },
+  {
+   "key": "r10alone",
+   "n": 1,
+   "still": "r7-alone-day",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at4166: she stood outside the phone box; she stays inside it",
+   "motion": "Locked-off camera. The woman stays inside the open steel phone box the whole time, right at the phone with the receiver at her ear: she rants into it, jabbing her raised finger, throwing her free hand up in exasperation and shaking her head, all within the box. Her feet stay planted; she never steps out or forward. Pedestrians pass behind her. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks."
+  },
+  {
+   "key": "r10deliv",
+   "n": 1,
+   "still": "delivery-b",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at2693: her hand went through the glass of the phone box",
+   "motion": "Locked-off camera. The courier in the helmet hands the brown paper bag to the woman; she takes it with her free hand, keeping the receiver at her ear, and sets it down on the steel shelf beside the phone. The courier turns and wheels his bike away to the left and out of frame. She stays inside the box, talking; her hands touch only the receiver and the bag, nothing ever passes through the glass panel, the glass stays solid. Movement continues right to the last frame. Sound: street traffic. No music.\n\nThanks."
+  },
+  {
+   "key": "r10suv",
+   "n": 1,
+   "still": "r10suv-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at7103: Karen gets out of a government SUV and goes into an important building",
+   "motion": "Locked-off camera at night. The agent holds the rear door of the black SUV; the woman in the camel cardigan steps fully out onto the wet pavement and walks away from the camera towards the floodlit building's steps, her back to the camera throughout. The agent shuts the door and follows her. The flags stir in the breeze, a car passes. Movement continues right to the last frame. Sound: a city night, a car door closing. No music.\n\nThanks."
+  },
+  {
+   "key": "r10steps",
+   "n": 1,
+   "still": "r10steps-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at7103: Karen walking into the building",
+   "motion": "Locked-off low camera at the foot of the steps, at night. The woman in the camel cardigan and the two agents in dark suits climb the stone steps steadily away from the camera towards the open, glowing doors; the guards at the top stand still. They keep climbing to the last frame and never turn towards the camera. Sound: footsteps on stone, a city night. No music.\n\nThanks."
+  },
+  {
+   "key": "r10nyc",
+   "n": 1,
+   "still": "r10nyc-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at7103: end on a zoom-out over New York at night",
+   "motion": "A slow, smooth aerial pull-back and rise over Manhattan at night: the camera drifts up and back, revealing more and more of the glittering skyline, rivers of car lights flowing along the avenues, steam drifting from a rooftop, the bridge lights on the river. Calm and majestic, continuous motion to the last frame. Sound: a distant city hum. No music.\n\nThanks."
+  },
+  {
+   "key": "r10month2",
+   "n": 1,
+   "still": "r10month2-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at4041: the two people coming up from the subway walked back down; re-roll 2, stairs empty",
+   "motion": "Locked-off camera on a cold, grey, dry day; no snow. The woman in the green padded coat stays in the phone box, receiver at her ear, talking and shifting her weight. On the pavement behind, people in winter coats walk past the subway entrance from left to right and keep going out of frame. Traffic rolls by: the bus pulls away, a taxi passes. Nobody goes down or comes up the subway stairs. Everything keeps moving right to the last frame. Sound: wet street traffic. No music.\n\nThanks."
+  },
+  {
+   "key": "r10month3",
+   "n": 1,
+   "still": "r10month-a",
+   "character": null,
+   "why": "Kai's note on cut r9, 2026-11-26, at4041: the two people coming up from the subway walked back down; re-roll 3, they come up and walk off left",
+   "motion": "Locked-off camera on a cold, grey, dry day; no snow. In the first two seconds the couple in winter coats reach the top of the subway steps, step onto the pavement, turn left and walk briskly away along the sidewalk until they leave the frame on the left; once out of the station they keep walking forward and are gone. The stairs behind them stay empty. The woman in the green coat stays in the phone box on the phone. Traffic moves on the road. Continuous movement to the last frame. Sound: street traffic. No music.\n\nThanks."
+  },
+  {
+   "key": "r11evac1",
+   "n": 1,
+   "still": "r7-studio-pres",
+   "character": null,
+   "why": "Kai's note on cut r10, 2026-11-26, at6722: the evacuation looks robotic, classic AI; several cuts with different prompts, really dramatic; try 1: handheld, chaotic",
+   "motion": "Handheld camera, as if a stagehand grabbed it: it jolts and swings to follow the action. Four men in dark suits burst onto the set from the right at a run. Two grab the man in the armchair under the arms and haul him up; he stumbles, his phone flies out of his hand, one agent presses a hand on his back to keep him low, and they half-run him off the left side of the set, shoes skidding on the floor. Behind them the host jumps up from his desk, hands raised. Real bodies with real weight and momentum: heavy footfalls, shoulders colliding, jackets flapping. Nobody glides or vanishes; everyone stays whole and runs out past the frame edge. Sound: shouting, scuffling feet, a chair scraping, a dramatic score of pounding drums. No clear dialogue.\n\nThanks."
+  },
+  {
+   "key": "r11evac2",
+   "n": 1,
+   "still": "r7-studio-pres",
+   "character": null,
+   "why": "Kai's note on cut r10, 2026-11-26, at6722: the evacuation looks robotic, classic AI; several cuts with different prompts, really dramatic; try 2: locked-off, weight and urgency",
+   "motion": "The camera is still, like a studio camera left running. Without warning, two agents in dark suits sprint in from the right, one barking into his sleeve. The seated man flinches and starts to rise; the agents seize an arm each and lift him clean out of the armchair, the cushion falling to the floor. A third agent sweeps in from behind, shielding him with his body, and the four of them rush out to the left in a tight, crouched huddle, one agent glancing back over his shoulder. The host stays rooted behind his desk, open-mouthed. Every movement is fast, urgent and physical, with natural human timing and balance, never smooth or floating. Sound: running footsteps, a crash, urgent shouts, deep drums. No clear dialogue.\n\nThanks."
+  },
+  {
+   "key": "r11evac3",
+   "n": 1,
+   "still": "r7-studio-pres",
+   "character": null,
+   "why": "Kai's note on cut r10, 2026-11-26, at6722: the evacuation looks robotic, classic AI; several cuts with different prompts, really dramatic; try 3: slow motion, cinematic",
+   "motion": "Filmed in slight slow motion, like a high-speed movie camera, the camera drifting slowly in. Agents in dark suits charge in from the right, ties flying, faces set; one throws an arm round the seated man's shoulders and pulls him to his feet as the others close in around him, and the whole group surges out to the left of the set. The studio lights flare and stutter overhead; the host behind the desk ducks. Weighty, real, dramatic movement: cloth ripples, feet plant hard, heads turn sharply. Nobody disappears; they all leave past the frame edge. Sound: a deep slowed rumble, a heartbeat drum, muffled shouting. No clear dialogue.\n\nThanks."
+  },
+  {
+   "key": "r11suv1",
+   "n": 1,
+   "still": "r10suv-a",
+   "character": null,
+   "why": "Kai's notes on cut r10, 2026-11-26, at7057/at7081: she walks through the car, the door never opens, the car drives forward, back and flips; try 1: the car parked and still, she walks along the pavement",
+   "motion": "Locked-off camera at night. The black SUV is parked at the kerb and stays completely still for the whole shot: engine off, wheels not turning, its rear door held wide open by the agent. The woman in the camel cardigan, already standing on the pavement beside the open door, walks away from the camera along the pavement on our side of the car, towards the floodlit steps, never passing through or behind the car. The agent swings the door shut and follows a pace behind her. Flags stir. Movement continues to the last frame. Sound: a city night, footsteps on wet stone, a car door thudding shut. No music.\n\nThanks."
+  },
+  {
+   "key": "r11suv2",
+   "n": 1,
+   "still": "r10suv-a",
+   "character": null,
+   "why": "Kai's notes on cut r10, 2026-11-26, at7057/at7081: she walks through the car, the door never opens, the car drives forward, back and flips; try 2: she steps clear, the SUV stays parked",
+   "motion": "Static camera, night, light drizzle. The parked black SUV never moves: it is stationary at the kerb from first frame to last. The agent holds the rear door open; the woman steps clear of the door onto the pavement nearest the camera, pauses to straighten her cardigan and look up at the grand building, then walks off towards its steps with her back to us. The agent closes the door with a solid thud and walks after her. A second agent waits at the foot of the steps. Everything stays solid: no one walks through the car. Sound: drizzle, a door closing, distant traffic. No music.\n\nThanks."
+  },
+  {
+   "key": "r11suv3",
+   "n": 1,
+   "still": "r10suv-a",
+   "character": null,
+   "why": "Kai's notes on cut r10, 2026-11-26, at7057/at7081: she walks through the car, the door never opens, the car drives forward, back and flips; try 3: the camera follows her",
+   "motion": "The camera slowly pans to the left to follow the woman in the camel cardigan as she leaves the side of the parked black SUV and walks up the pavement towards the floodlit columns of the building. The SUV stays parked exactly where it is, its door closed behind her by the agent, who follows her. She keeps her back to the camera. Steady, real walking pace. Sound: footsteps, a quiet city night. No music.\n\nThanks."
+  },
+  {
+   "key": "r11throw",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r10, 2026-11-26, at1528: the throw re-made for quality, Karen keeps her wine glass",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan, wine glass still in her left hand, swings round to the railing and, with a furious shout, hurls her phone overhand far out over the railing; it arcs away into the dark water. She stays at the railing, breathing hard, then takes a defiant sip of wine. Her friend in the olive jacket doubles over laughing beside her, glass in hand. Both glasses stay in their hands the whole time. Sharp, natural, weighty human movement. Sound: river lapping, wind, distant traffic, her shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r11aaron",
+   "n": 1,
+   "still": "r11aaron-a",
+   "character": null,
+   "why": "Kai's note on cut r10, 2026-11-26, at4536: Aaron cast from the Aarron character so his face matches",
+   "motion": "Locked-off camera. In the glass phone box on the left the woman keeps talking hard into the receiver, shaking her fist. The young man with headphones round his neck holds his phone up, filming her, absorbed: he listens closely, his head tilting, a slow small nod in time with her words, lips closed, intrigued and serious, never grinning. People walk past behind him both ways. Movement continues to the last frame. Sound: street noise. No music.\n\nThanks."
+  },
+  {
+   "key": "r11boss",
+   "n": 1,
+   "still": "r11boss-a",
+   "character": null,
+   "why": "Kai's note on cut r10, 2026-11-26, at5868/at5939: the boss having the idea, in place of the talk show coming on the TV",
+   "motion": "Locked-off camera, medium close-up. The grey-bearded man in the writers' room slowly straightens, his eyes widening as the idea lands; his half-smile grows, his raised finger taps the air once, and he turns his head towards the others off-screen as if to say \"wait, wait...\". The room behind him stays softly out of focus, the wall screen stays dark. Natural, human, unhurried movement right to the last frame. Sound: a quiet office, a chair creak. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r12evacA",
+   "n": 1,
+   "still": "r7-studio-pres",
+   "character": null,
+   "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; A: two agents, a fast real escort",
+   "motion": "Locked-off studio camera. Two men in dark suits with earpieces stride in fast from the right. The first bends to the seated man's ear and says one word; he puts the phone down at once and stands. Each agent takes one of his elbows and, heads down, all three walk at a fast clip straight out of the left of the frame, the agents' free hands up near his back. It is quick, controlled and practised, like real close protection: no struggling, no milling about. The host stays frozen behind the desk. Every step has weight. Sound: fast footsteps on a hard floor, a murmur, deep drums. No clear dialogue.\n\nThanks."
+  },
+  {
+   "key": "r12evacB",
+   "n": 1,
+   "still": "r7-studio-pres",
+   "character": null,
+   "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; B: three agents shield him, a crouching run",
+   "motion": "Static camera on the studio set. Three agents in dark suits burst in from the right side. One hauls the seated man up by the arm, another throws an arm over his shoulders and pushes his head low, the third moves in front with a hand raised; as one tight knot they run him off the left side of the set in a crouch, in under three seconds. The armchair rocks. The host ducks behind his desk. Fast, physical, believable human movement with momentum and balance; no gliding, no hesitation. Sound: a shout of \"Move!\", running feet, a thump, pounding drums.\n\nThanks."
+  },
+  {
+   "key": "r12evacC",
+   "n": 1,
+   "still": "r7-studio-pres",
+   "character": null,
+   "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; C: one agent, one sharp grab, closer feel",
+   "motion": "Locked-off camera. A single big agent in a dark suit rushes in from the right, grabs the seated man firmly by the upper arm and the back of his jacket and lifts him straight out of the armchair in one strong movement; the man's phone drops to the cushion. A second agent arrives a beat later and they hurry him away to the left, half-running, the first agent's hand flat on his back. The host half-rises, staring. Real weight and urgency in every movement. Sound: a scuffle, the phone hitting the cushion, footsteps, dramatic drums.\n\nThanks."
+  },
+  {
+   "key": "r12evacD",
+   "n": 1,
+   "still": "r7-studio-pres",
+   "character": null,
+   "why": "Kai's notes on cut r11, 2026-11-26, at6762/at6834: the evacuation still milling and unconvincing; several versions to look at before committing; D: the studio crew scatter as agents take him",
+   "motion": "Locked-off camera. Agents in dark suits pour in from both sides of the set while stagehands in black scatter out of the way at the back. Two agents pull the seated man to his feet and, with a third clearing the way, hustle him off the left of the set at a run. A studio light swings on its stand. The host is pulled down behind his desk by a crew member. Fast, chaotic but clear, with natural human motion, weight and footing. Sound: urgent shouting, running feet, a crash, deep drums.\n\nThanks."
+  },
+  {
+   "key": "r12throwa",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r11, 2026-11-26, at1548: the phone doubles and a second wine glass appears; re-cut the same shot a few times; roll 1",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r12throwb",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r11, 2026-11-26, at1548: the phone doubles and a second wine glass appears; re-cut the same shot a few times; roll 2",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r12throwc",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r11, 2026-11-26, at1548: the phone doubles and a second wine glass appears; re-cut the same shot a few times; roll 3",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r12stun",
+   "n": 1,
+   "still": "r12stun-a",
+   "character": null,
+   "why": "Kai's note on cut r11, 2026-11-26, at907: subtly stunned, not nodding along",
+   "motion": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down closes the laptop on her knees and holds it out to the man beside her, her movements a little mechanical, her face still blank and dazed. He takes it awkwardly. She does not nod, does not smile, does not speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r12boss",
+   "n": 1,
+   "still": "r12boss-a",
+   "character": null,
+   "why": "Kai's note on cut r11, 2026-11-26, at5922: reverse angle, the boss in front of the window and skyline, the room still full",
+   "motion": "Locked-off camera. At the end of the table, in front of the window and the Manhattan skyline, the grey-bearded man's idea lands: his raised finger lifts a little higher, his half-smile spreads, he leans forward onto the table with his other hand. Around the table the writers turn their heads up towards him one after another, a woman lowers her coffee cup, someone sits up straight. Natural, human, unhurried movement right to the last frame. Sound: a quiet office, chairs creaking. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r12alone",
+   "n": 1,
+   "still": "r12alone-a",
+   "character": null,
+   "why": "Kai's note on cut r11, 2026-11-26, at4307: the wet weather carried over; Karen stays inside the box, unfazed",
+   "motion": "Locked-off camera, cold grey drizzle. The woman in the green padded coat and knitted hat stays inside the phone box, the receiver at her ear, listening with a calm, stubborn little smile. She shifts her weight, tucks her scarf tighter with her free hand, says a couple of unhurried words into the phone and settles back against the side of the box. Rain drips from the roof edge; people with umbrellas pass behind. She never steps out. Movement continues to the last frame. Sound: rain, wet traffic. No music.\n\nThanks."
+  },
+  {
+   "key": "r13ring",
+   "n": 1,
+   "still": "r13ring-a",
+   "character": null,
+   "why": "Kai 2026-11-27, new ending (Draft A): a few hours later the payphone rings for Karen; the Chief of Staff is calling",
+   "motion": "Locked-off camera, late at night on a wet, empty Midtown corner. Inside the open steel phone box the woman in the camel cardigan lifts the ringing receiver the last few inches to her ear, listens, and her wary look slowly turns to quiet astonishment; she straightens up, nods once, very composed, as if told something important, and keeps listening. Her free hand stays flat on the little steel shelf beside the paper cup. She never leaves the box. One car's lights slide past far behind. Movement continues to the last frame. Sound: a quiet wet street at night. No music, no dialogue.\n\nThanks."
+  },
+  {
+   "key": "r13room",
+   "n": 1,
+   "still": "r13room-a",
+   "character": null,
+   "why": "Kai 2026-11-27, new ending (Draft A): Karen walks into the Situation Room; the man at the head of the table rises to greet her",
+   "motion": "Locked-off camera behind the head of the long table. The tall man in the navy suit, seen only from behind, finishes rising from his chair and turns slightly towards the doorway. The woman in the camel cardigan takes two steps into the room from between the two agents and stops at the end of the table, composed, chin up. The people seated along both sides turn to look at her; a woman sets her pen down. Slow, quiet, serious human movement to the last frame. He never turns his face to the camera. Sound: a hushed room, a chair creaking. No music, no dialogue.\n\nThanks."
+  },
+  {
+   "key": "r14throw1",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r14throw2",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r14throw3",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r14throw4",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r14throw5",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r14throw6",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r14throw7",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r14throw8",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+   "motion": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r14stun1",
+   "n": 1,
+   "still": "r12stun-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at962: keep Karen's face, but the laptop opens and folds as she passes it; the same shot, the laptop staying shut",
+   "motion": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down lifts the one closed, dark grey laptop from her knees and holds it out flat to the man beside her; it stays shut and stays the same single laptop the whole time, nothing opens, folds or changes shape. He takes it with both hands and rests it on his lap. Her face stays blank and dazed; she does not nod, smile or speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r14stun2",
+   "n": 1,
+   "still": "r12stun-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at962: keep Karen's face, but the laptop opens and folds as she passes it; the same shot, the laptop staying shut",
+   "motion": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down lifts the one closed, dark grey laptop from her knees and holds it out flat to the man beside her; it stays shut and stays the same single laptop the whole time, nothing opens, folds or changes shape. He takes it with both hands and rests it on his lap. Her face stays blank and dazed; she does not nod, smile or speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r14stun3",
+   "n": 1,
+   "still": "r12stun-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at962: keep Karen's face, but the laptop opens and folds as she passes it; the same shot, the laptop staying shut",
+   "motion": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down lifts the one closed, dark grey laptop from her knees and holds it out flat to the man beside her; it stays shut and stays the same single laptop the whole time, nothing opens, folds or changes shape. He takes it with both hands and rests it on his lap. Her face stays blank and dazed; she does not nod, smile or speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r14boss",
+   "n": 1,
+   "still": "r14boss-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at5924: the boss's face in front of the window and skyline",
+   "motion": "Locked-off camera. The grey-bearded man in front of the tall window, the city at dusk behind him. His idea lands: his raised finger lifts a little, his half-smile slowly widens into a knowing grin, his eyes narrow with delight, he gives one small satisfied nod. The city lights twinkle softly behind him, a little traffic far below. Natural, unhurried human movement to the last frame. Sound: a quiet office. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r14aerial",
+   "n": 1,
+   "still": "r14aerial-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at5185: a helicopter view of New York, a buzz in the city, under the text messages",
+   "motion": "A slow, steady helicopter drift forward and slightly down over Midtown Manhattan at golden hour, following the long avenue between the towers. Cabs and crowds move on the streets far below, sunlight glints off glass. Smooth, real aerial camera motion, no cuts. Sound: distant city hum and rotor wash. No music.\n\nThanks."
+  },
+  {
+   "key": "r14crowd8",
+   "n": 1,
+   "still": "r14crowd8-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at5185: the crowd grows more naturally (about eight, late afternoon)",
+   "motion": "Locked-off camera on the corner, late afternoon sun. The woman in the camel cardigan stays inside the open steel phone box, talking calmly into the receiver, never leaving it. On the sidewalk a handful of strangers keep their distance and film her on their phones; one more person wanders over to join them, another nudges a friend and points. Movement continues to the last frame. Sound: street traffic, murmurs. No music.\n\nThanks."
+  },
+  {
+   "key": "r14crowd25",
+   "n": 1,
+   "still": "r14crowd25-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at5185: the crowd grows more naturally (about twenty-five, evening)",
+   "motion": "Locked-off camera on the corner at evening, the street lamps coming on. The woman in the camel cardigan stays inside the open steel phone box, talking into the receiver. A loose crescent of about twenty-five strangers stands back from the box, phones raised; a few more arrive from either side and squeeze in at the back, people laugh and whisper to each other. Nobody steps closer to the box. Movement continues to the last frame. Sound: a growing murmur, traffic. No music.\n\nThanks."
+  },
+  {
+   "key": "r14crowd60",
+   "n": 1,
+   "still": "r14crowd60-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at5185: the crowd grows more naturally (a packed crowd at night)",
+   "motion": "Locked-off camera on the corner at night. The woman in the camel cardigan stays inside the open steel phone box, the receiver at her ear. A packed crowd fills the sidewalk and spills into the road, dozens of phone screens glowing, people at the back craning and holding phones high, a stopped cab's lights behind them; the crowd sways and shifts as more people press in at the edges. Nobody steps into the box. Movement continues to the last frame. Sound: a big crowd's buzz, a car horn. No music.\n\nThanks."
+  },
+  {
+   "key": "r14cos1",
+   "n": 1,
+   "still": "r14cos1-a",
+   "character": null,
+   "why": "Kai's note on cut r13, 2026-11-27, at7275: the Chief of Staff on the phone to the President (casting option 1, provisional)",
+   "motion": "Locked-off camera. Late at night in the wood-panelled office, the woman with close-cropped silver hair stands behind the desk with the desk phone's receiver at her ear. She listens for a moment, unimpressed, then leans her weight onto her other hand on the desk and speaks a few short, firm words into the phone, eyes hard, completely in control. She does not raise her voice. Small, real movements to the last frame. Sound: a quiet room, a clock. No music.\n\nThanks."
+  },
+  {
+   "key": "r14cos4",
+   "n": 1,
+   "still": "r14cos4-a",
+   "character": null,
+   "why": "Kai 2026-11-27: 'number 4 please' (the Chief of Staff, casting option 4 of four)",
+   "motion": "Locked-off camera. Late at night in the wood-panelled office, the woman with long silver-streaked hair and the burgundy suit stands behind the desk, leaning on one hand, the desk phone's receiver at her ear. She listens for a moment, tired and unimpressed, then straightens a little and speaks a few short, firm words into the phone, eyes hard, completely in control, never raising her voice. Small, real movements to the last frame. Sound: a quiet room, a clock. No music.\n\nThanks."
+  },
+  {
+   "key": "r15throw1",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt A)",
+   "motion": "Tripod shot, the camera completely still, at night on the riverside walk under the lit bridge. The woman in the camel cardigan already has her right arm raised high with the phone. She snaps that arm forward once and lets go: the single phone sails out past the railing and drops into the dark river. Then her right hand hangs open and empty. Her left hand keeps holding the same one wine glass, low at her side, the whole time. She stays on the spot and yells after it. Her friend in the olive jacket laughs with her own one glass. The railing, the walkway, the benches, the bridge and the skyline are fixed scenery and never move or shift; only the two women and the phone move. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r15throw2",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt A)",
+   "motion": "Tripod shot, the camera completely still, at night on the riverside walk under the lit bridge. The woman in the camel cardigan already has her right arm raised high with the phone. She snaps that arm forward once and lets go: the single phone sails out past the railing and drops into the dark river. Then her right hand hangs open and empty. Her left hand keeps holding the same one wine glass, low at her side, the whole time. She stays on the spot and yells after it. Her friend in the olive jacket laughs with her own one glass. The railing, the walkway, the benches, the bridge and the skyline are fixed scenery and never move or shift; only the two women and the phone move. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r15throw3",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt A)",
+   "motion": "Tripod shot, the camera completely still, at night on the riverside walk under the lit bridge. The woman in the camel cardigan already has her right arm raised high with the phone. She snaps that arm forward once and lets go: the single phone sails out past the railing and drops into the dark river. Then her right hand hangs open and empty. Her left hand keeps holding the same one wine glass, low at her side, the whole time. She stays on the spot and yells after it. Her friend in the olive jacket laughs with her own one glass. The railing, the walkway, the benches, the bridge and the skyline are fixed scenery and never move or shift; only the two women and the phone move. Sound: river lapping, wind, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r15throw4",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt B)",
+   "motion": "Static camera on a tripod, night, the riverside walk with the lit bridge behind. The woman in the camel cardigan, right arm up holding a phone, flings it forward over the metal railing; it turns once in the air and vanishes into the black water. She lowers her empty right hand and stands where she is, shouting at the river, while her left hand stays at her hip with the same single red wine glass. The friend in the olive jacket doubles over laughing, glass in hand. Nothing else in the frame moves: the railing and fence are solid and still, the background stays put. No extra phones, no extra glasses. Sound: wind off the water, a splash far off, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r15throw5",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt B)",
+   "motion": "Static camera on a tripod, night, the riverside walk with the lit bridge behind. The woman in the camel cardigan, right arm up holding a phone, flings it forward over the metal railing; it turns once in the air and vanishes into the black water. She lowers her empty right hand and stands where she is, shouting at the river, while her left hand stays at her hip with the same single red wine glass. The friend in the olive jacket doubles over laughing, glass in hand. Nothing else in the frame moves: the railing and fence are solid and still, the background stays put. No extra phones, no extra glasses. Sound: wind off the water, a splash far off, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r15throw6",
+   "n": 1,
+   "still": "r11throw-a",
+   "character": null,
+   "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt B)",
+   "motion": "Static camera on a tripod, night, the riverside walk with the lit bridge behind. The woman in the camel cardigan, right arm up holding a phone, flings it forward over the metal railing; it turns once in the air and vanishes into the black water. She lowers her empty right hand and stands where she is, shouting at the river, while her left hand stays at her hip with the same single red wine glass. The friend in the olive jacket doubles over laughing, glass in hand. Nothing else in the frame moves: the railing and fence are solid and still, the background stays put. No extra phones, no extra glasses. Sound: wind off the water, a splash far off, a shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r15friends",
+   "n": 1,
+   "still": "r15friends-a",
+   "character": null,
+   "why": "Kai's note on cut r14, 2026-11-27, at5062: the two friends stand looking interested, not pointing or laughing",
+   "motion": "Locked-off camera, daytime at the phone box. The woman in the box keeps talking into the receiver, gesturing calmly with her free hand. The two young men stand a step back and watch her, fascinated: the man in the dark jacket keeps filming her on his phone, the man in the denim jacket leans in slightly, curious, and murmurs something to his friend without looking away from her. Nobody points or laughs. People walk past behind. Natural movement to the last frame. Sound: daytime street traffic, footsteps. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r15bar",
+   "n": 1,
+   "still": "r15bar-a",
+   "character": null,
+   "why": "Kai's note on cut r14, 2026-11-27, at5656: on the news she is in the phone box with a big crowd behind her",
+   "motion": "Locked-off camera at the end of the bar. On the wall TV the woman in the phone box keeps talking into the receiver while the big crowd around her sways and holds up glowing phones. Below, the man in the denim jacket keeps pointing up at the screen and turns to his friends, the man in the cap rocks back laughing, others lean in to watch, and the bartender finishes pouring the beer and glances up at the TV. Warm, lively, everyone in motion right to the last frame. Sound: a busy bar, laughter, glasses clinking. No speech, no music.\n\nThanks."
+  },
+  {
+   "key": "r15k1",
+   "n": 1,
+   "still": "r15c1-a",
+   "character": null,
+   "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (over her shoulder)",
+   "motion": "Locked-off camera behind the woman in the camel cardigan at the riverside railing at night. The phone she has just flung keeps flying: it arcs far out over the black river, tumbling, getting smaller, and drops with a small white splash into the water under the bridge lights. Her outstretched arm follows through and then she punches the air, shouting after it, wine glass still in her other hand. Her friend in the olive jacket bends over laughing. The railing and the skyline do not move. Sound: wind, river, a distant splash, a triumphant shout. No music.\n\nThanks."
+  },
+  {
+   "key": "r15k2",
+   "n": 1,
+   "still": "r15c2-a",
+   "character": null,
+   "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (wide silhouette)",
+   "motion": "Static wide shot along the promenade at night. The small dark phone already in the air keeps rising in a long high arc out over the river, then falls and disappears into the water far from the railing with a tiny splash glinting in the reflected city lights. The woman in the camel cardigan follows through with her whole body and throws both arms up, glass in one hand; her friend staggers back laughing. The camera, railing and bridge stay perfectly still. Sound: wind off the water, a far-off splash, shrieks of laughter. No music.\n\nThanks."
+  },
+  {
+   "key": "r15k3",
+   "n": 1,
+   "still": "r15c3-b",
+   "character": null,
+   "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (low angle through the railing)",
+   "motion": "Low fixed camera looking up at the railing at night. The tumbling phone falls past the railing, down past the lens and out of frame into the river below; a spray of water flicks up at the bottom edge. Above, the woman in the camel cardigan leans over the rail shouting after it, wine glass held high, then throws her head back and laughs; her friend peers over beside her. The railing stays rigid and still. Sound: a splash right under the lens, shouting, wind. No music.\n\nThanks."
+  },
+  {
+   "key": "r15k4",
+   "n": 1,
+   "still": "r15c4-a",
+   "character": null,
+   "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (close-up of the hand)",
+   "motion": "Close-up, camera fixed. The hand in the camel sleeve whips forward over the railing and lets go: the phone spins away into the blurred night, out over the river, and is gone. The empty hand stays stretched out, fingers spread, then slowly clenches into a fist on the top bar. Only the hand and the phone move; the railing and the bokeh of the bridge lights stay still. Sound: a whoosh, wind, a faint splash far away. No music.\n\nThanks."
+  },
+  {
+   "key": "r15k5",
+   "n": 1,
+   "still": "r15c5-b",
+   "character": null,
+   "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (looking down at the water)",
+   "motion": "Fixed high camera looking down at the river at night. The phone keeps falling, turning over, and smacks into the dark water with a white splash; the glowing screen sinks and fades under the rippling gold reflections until it is gone. The open hand at the top of the frame hangs there a moment, then pulls back out of shot. Ripples spread outward and the water settles. Nothing else moves. Sound: a sharp splash, then the river lapping. No music.\n\nThanks."
+  },
+  {
+   "key": "r15k6",
+   "n": 1,
+   "still": "r15c6-b",
+   "character": null,
+   "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (front-on from the river)",
+   "motion": "Fixed camera facing the two women at the railing at night, as if from over the water. The woman in the camel cardigan hurls her phone hard straight towards the camera; it flies past the lens and out of frame over the river. She stays at the railing, glass in her other hand, screaming after it, then bursts out laughing; her friend laughs and raises her glass. The railing, lamps and buildings behind stay perfectly still. Sound: a whoosh past the camera, wind, laughter. No music.\n\nThanks."
+  },
+  {
+   "key": "r15orig1",
+   "n": 1,
+   "still": "river-shout-b",
+   "character": "Karen",
+   "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
+   "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "r15orig2",
+   "n": 1,
+   "still": "river-shout-b",
+   "character": "Karen",
+   "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
+   "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "r15orig3",
+   "n": 1,
+   "still": "river-shout-b",
+   "character": "Karen",
+   "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
+   "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "r15orig4",
+   "n": 1,
+   "still": "river-shout-b",
+   "character": "Karen",
+   "why": "Kai, 2026-11-27, on the r15 throw set-ups: 'go back to the very original clip and work from there'; a straight re-roll of the r4 shout take (same still, same prompt word for word, same Character, same model)",
+   "motion": "The camera does not move. The woman at the railing shakes the phone high above her head, shouting up at it, leaning back on her heels; then she swings her arm back and flings the phone in a high arc out over the railing towards the dark river. Beside her the other woman doubles over laughing, wine slopping from her glass. Sound: river water lapping against the pilings, wind, distant traffic rumbling on the bridge. No dialogue, no music. The camera does not move.\n\nThanks."
+  },
+  {
+   "key": "r16sub",
+   "n": 1,
+   "still": "r16sub-a",
+   "character": null,
+   "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md) 1.1: the generals' submarine plan",
+   "motion": "The camera does not move. The hand in the dark suit sleeve slowly slides the small grey model submarine across the sea chart, stops it, and gives it one small, self-satisfied tap with a finger. The other hands at the table stay still; the lamp glows. Sound: the low hum of a quiet room, the soft scrape of the model on paper. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r16dc",
+   "n": 1,
+   "still": "r16dc-a",
+   "character": null,
+   "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md) 1.4: Sean's warehouse of computers, cooled with city water",
+   "motion": "The camera does not move. Thick white steam keeps billowing up from the cooling units on the roof and drifts away across the night sky; the sodium lamps buzz; a light wind ripples a puddle on the wet tarmac. Sound: a deep electrical hum, fans roaring on the roof, wind. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r16valve",
+   "n": 1,
+   "still": "r16valve-a",
+   "character": null,
+   "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md) 1.5: Martha turns the water main off",
+   "motion": "The camera does not move. The woman's hands heave the red iron wheel round, hand over hand, turn after turn, straining, until it will not turn any more; the hands let go. The work lamp flickers once. Sound: a squeal of old metal, rushing water in the pipe slowing to a trickle and then silence. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r16hold",
+   "n": 1,
+   "still": "r16hold-a",
+   "character": "Karen",
+   "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md) 1.14 and 1.16: Karen puts Sean on hold and settles in (coffee, not wine: she has no glass since the throw)",
+   "motion": "The camera does not move. The woman in the phone box keeps the receiver at her ear, completely calm and unhurried. She leans her shoulder against the side of the box, picks up the paper coffee cup from the little shelf, takes a slow sip, puts it back, and settles in to wait, a faint satisfied smile. Late at night, the wet street behind her is quiet; one car passes. Sound: light rain, distant traffic. No dialogue, no music.\n\nThanks."
+  },
+  {
+   "key": "r16hold2",
+   "n": 1,
+   "still": "r16hold-a",
+   "character": "Karen",
+   "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md 1.16): 'Karen is unfazed', while the hold music sings the title; a second take from the same frame so the on-hold shot isn't used twice",
+   "motion": "The camera does not move. The woman in the phone box tucks the receiver between her ear and her shoulder, completely at ease, and looks down at her fingernails, inspecting them one hand at a time, then glances up the empty street and back, in no hurry at all. Late at night, the wet street behind her is quiet. Sound: light rain, a distant siren far away. No dialogue, no music.\n\nThanks."
+  }
+ ]
 }

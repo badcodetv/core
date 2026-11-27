@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16valve-a-a.png",
+ "made": "2026-11-27T15:53:52.844Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight, present day. A cramped old brick basement under a grand civic building: thick iron water pipes along the walls, a single caged work lamp throwing warm light, cold shadows beyond. Close on a big red iron valve wheel on a fat water main at chest height. A woman's two hands, the sleeves of a navy office blouse pushed up and a lanyard dangling, grip the rim of the wheel, ready to heave it round. Her face is out of frame. Determined, quietly absurd.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md 1.5): the water main under City Hall has a wheel; Martha turns it off",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a9c96e45-0bdd-48d3-9a8b-f27c1098013a"
+}

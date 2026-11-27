@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16sub-a.jpg",
+ "made": "2026-11-27T15:55:49+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "pick (jpg of r16sub-a-a.png)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16sub-a-a.png",
+ "why": "r16 pick for Sean on Hold"
+}

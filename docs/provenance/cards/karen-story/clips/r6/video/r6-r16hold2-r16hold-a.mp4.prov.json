@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r16hold2-r16hold-a.mp4",
+ "made": "2026-11-27T16:03:38+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman in the phone box tucks the receiver between her ear and her shoulder, completely at ease, and looks down at her fingernails, inspecting them one hand at a time, then glances up the empty street and back, in no hurry at all. Late at night, the wet street behind her is quiet. Sound: light rain, a distant siren far away. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16hold-a.jpg",
+ "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md 1.16): 'Karen is unfazed', while the hold music sings the title; a second take from the same frame so the on-hold shot isn't used twice",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16hold-a.jpg",
+  "character": "Karen",
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r16hold2",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "1080p (Flow upscale of the 720p render)",
+  "at": "2026-11-27T16:01:53.321Z"
+ }
+}

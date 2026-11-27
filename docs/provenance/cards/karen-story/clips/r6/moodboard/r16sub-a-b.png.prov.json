@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16sub-a-b.png",
+ "made": "2026-11-27T15:53:36.786Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight, present day. Low and close across a long polished wooden conference table in a windowless, wood-panelled government briefing room, lit by one warm lamp and the cold blue glow of wall screens out of focus behind. A large plain sea chart of a coastline is spread on the table, all shapes and blue water, with no writing or labels on it. A man's hand in a dark suit sleeve with a white shirt cuff rests on a small grey model submarine on the chart, about to push it. Coffee cups, a closed folder and other people's folded hands at the edges of the frame; every face is out of frame. Serious, quiet, absurdly earnest.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md 1.1): 'The generals have a plan. It involves submarines.'",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "45229f9f-9b96-4329-bd1e-03259671768f"
+}

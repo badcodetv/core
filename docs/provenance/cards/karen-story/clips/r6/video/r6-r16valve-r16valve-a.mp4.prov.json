@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r16valve-r16valve-a.mp4",
+ "made": "2026-11-27T16:01:08+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman's hands heave the red iron wheel round, hand over hand, turn after turn, straining, until it will not turn any more; the hands let go. The work lamp flickers once. Sound: a squeal of old metal, rushing water in the pipe slowing to a trickle and then silence. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16valve-a.jpg",
+ "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md) 1.5: Martha turns the water main off",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16valve-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r16valve",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "1080p (Flow upscale of the 720p render)",
+  "at": "2026-11-27T15:57:09.505Z"
+ }
+}

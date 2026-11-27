@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16hold-a.jpg",
+ "made": "2026-11-27T15:55:50+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "frame at 6.5 s",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r13ring-r13ring-a.mp4",
+ "why": "r16 Sean on Hold 1.14: Karen on the phone at night, start frame for the on-hold clip"
+}

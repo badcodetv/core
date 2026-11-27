@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r16sub-r16sub-a.mp4",
+ "made": "2026-11-27T16:00:26+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The hand in the dark suit sleeve slowly slides the small grey model submarine across the sea chart, stops it, and gives it one small, self-satisfied tap with a finger. The other hands at the table stay still; the lamp glows. Sound: the low hum of a quiet room, the soft scrape of the model on paper. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16sub-a.jpg",
+ "why": "Kai 2026-11-27 picked Ending 1, Sean on Hold (ending-r15.md) 1.1: the generals' submarine plan",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16sub-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r16sub",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "1080p (Flow upscale of the 720p render)",
+  "at": "2026-11-27T15:56:58.148Z"
+ }
+}
