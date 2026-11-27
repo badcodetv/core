@@ -53,7 +53,17 @@ Independent, so they can run side by side; one owner per tool:
 
 ## The timeline page
 
-`python3 scripts/scene/build-timeline.py <scene-dir> <out-dir>`, then publish `<out-dir>/index.html` with
+🔑 **Local first** (Kai, 2026-11-27: *"we should be able to operate the timeline tool without needing Claude
+artifacts"*, after the claude.ai page hit its 200-uploads-a-day limit). For Kai's note rounds on this machine, run
+`python3 scripts/scene/timeline-serve.py <scene-dir> [--port 8765]` (in the background) and give him
+http://localhost:8765 (Windows opens it too). It is the same page, with nothing uploaded: the full 1080p preview
+streams from disk, the page rebuilds itself on reload when `scene.json`, the edl, the preview or `cut-notes.json`
+change, and notes save as files in `<scene-dir>/feedback/timeline-local/notes/` (the dump format, signed with his
+claude.ai id from `docs/stories/people.json`). So a round is: rebuild the cut, update `cut-notes.json`, tell him to
+reload; read his notes straight from that folder, and commit it each round (a worktree in `/tmp` is not durable).
+Only this machine can see it: publish the artifact below when Jack (or another machine) needs to watch or note.
+
+**The artifact (for Jack, or away from this machine):** `python3 scripts/scene/build-timeline.py <scene-dir> <out-dir>`, then publish `<out-dir>/index.html` with
 every file in `<out-dir>/media/` and `capabilities: {db:{}, user:{}}`. Republish to the **same file path**
 each round so the URL and the notes stay. 🛑 **On a republish send only what changed** (Jack, 2026-11-10):
 an update keeps every file left out, so a one-shot swap sends the page, that shot's thumbnail, `media/cut.mp4`

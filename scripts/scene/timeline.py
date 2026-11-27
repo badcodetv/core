@@ -34,12 +34,16 @@ def _ff(*a):
     subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', *map(str, a)], check=True)
 
 
-def build(data, preview, out):
+def build(data, preview, out, local=False):
+    """local=True (scripts/scene/timeline-serve.py): no proxy and no hq pieces; the local server plays the full
+    preview itself at media/cut.mp4, so a local build is the page and the thumbnails only."""
     preview, out = pathlib.Path(preview), pathlib.Path(out)
     media = out / 'media'
     media.mkdir(parents=True, exist_ok=True)
     proxy = media / 'cut.mp4'
-    if not proxy.exists() or proxy.stat().st_mtime < preview.stat().st_mtime:
+    if local:
+        pass
+    elif not proxy.exists() or proxy.stat().st_mtime < preview.stat().st_mtime:
         # As sharp as the 15 MB file limit allows (14.5 MB target, 64 kb/s audio): a 3.5-minute cut gets ~480 kb/s at 960 wide;
         # a long cut falls back to 640 wide. (Jack 2026-11-05: the 640 / 300 kb/s proxy was too blurry to judge a cut.)
         kbps = max(120, min(1500, int(14.5e6 * 8 / 1000 / max(data['total'], 1)) - 74))
@@ -53,7 +57,9 @@ def build(data, preview, out):
     # started at 0.083 s and its audio at 0 (no edit list in a fragmented MP4), so every page played the voices two frames
     # EARLY against the picture. No B-frames: both start at 0.
     hq = media / 'hq.mp4'
-    if not hq.exists() or hq.stat().st_mtime < preview.stat().st_mtime:
+    if local:
+        pass
+    elif not hq.exists() or hq.stat().st_mtime < preview.stat().st_mtime:
         _ff('-i', preview, '-vf', 'scale=1280:-2', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-maxrate', '4000k', '-bufsize', '8000k',
             '-profile:v', 'high', '-level', '4.0', '-pix_fmt', 'yuv420p', '-g', '48', '-bf', '0', '-c:a', 'aac', '-b:a', '128k', '-ac', '2',
             '-movflags', 'frag_keyframe+empty_moov+default_base_moof', hq)
@@ -64,7 +70,7 @@ def build(data, preview, out):
         for old in media.glob('hq-*.mp4'): old.unlink()
         blob, size = hq.read_bytes(), 14_000_000
         for i in range(0, len(blob), size): (media / f'hq-{i // size:02d}.mp4').write_bytes(blob[i:i + size])
-    hq_parts = sorted(f'media/{p.name}' for p in media.glob('hq-*.mp4'))
+    hq_parts = [] if local else sorted(f'media/{p.name}' for p in media.glob('hq-*.mp4'))
     clips = []
     for k, c in enumerate(data['video']):
         th = media / f'c{k:02d}.jpg'
@@ -93,5 +99,5 @@ def build(data, preview, out):
     html = html.replace('<title>Cut Timeline</title>', f"<title>{data.get('title', 'Cut Timeline')}</title>", 1)
     (out / 'index.html').write_text(html.replace('/*DATA*/null', json.dumps(page, ensure_ascii=False)))
     return {'beats': len(beats), 'clips': len(clips), 'tracks': len(tracks), 'events': len(data['events']),
-            'proxyMB': round(proxy.stat().st_size / 1e6, 1), 'hqMB': round(hq.stat().st_size / 1e6, 1),
+            **({'local': True} if local else {'proxyMB': round(proxy.stat().st_size / 1e6, 1), 'hqMB': round(hq.stat().st_size / 1e6, 1)}),
             'files': sorted(f'media/{p.name}' for p in media.iterdir() if p.name != 'hq.mp4')}

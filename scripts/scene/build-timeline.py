@@ -9,6 +9,8 @@ Merges <scene-dir>/cut-notes.json (round, plan, replies) when present, and the n
 notes in <scene-dir>/feedback/timeline*/notes/ (everyone's, signed), so a page rebuilt from the repo alone, on
 any machine and at any link, shows the notes Claude answered. Notes typed since that copy live only online.
 Prints the files to publish alongside out-dir/index.html.
+With --local (third argument) it builds for scripts/scene/timeline-serve.py instead: the page and thumbnails only,
+no proxy or hq pieces (the local server plays the full preview), nothing to publish.
 """
 import json
 import pathlib
@@ -54,4 +56,4 @@ if record:
 people = sc.dir.parents[2] / 'people.json'  # optional {"<user id>": "Kai"}: names for notes on a signed-out page
 if people.exists():
     data['people'] = json.loads(people.read_text())
-print(json.dumps(timeline.build(data, preview, sys.argv[2])))
+print(json.dumps(timeline.build(data, preview, sys.argv[2], local='--local' in sys.argv[3:])))
