@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c4-a.png",
+ "made": "2026-11-27T13:39:08.685Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Tight close-up insert: a woman's hand in a camel cardigan sleeve, knuckles white, gripping a smartphone, cocked back high above the top bar of a dark metal riverside railing, ready to hurl it. Beyond the railing, blurred, the black river and the glowing lights of a suspension bridge and city skyline, big soft bokeh. Night, present day. Only the hand, forearm, phone and railing are in shot; no faces. Super 8 grain, cinestyle colour, warm skin tones, gentle halation, vignette. No text, no logos.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: six completely different compositions (4: close insert on the hand)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ab38b171-1f5f-4bc1-b6ee-e55e90d6b5b6"
+}

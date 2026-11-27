@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r15k3-r15c3-b.mp4",
+ "made": "2026-11-27T13:45:51+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Low fixed camera looking up at the railing at night. The tumbling phone falls past the railing, down past the lens and out of frame into the river below; a spray of water flicks up at the bottom edge. Above, the woman in the camel cardigan leans over the rail shouting after it, wine glass held high, then throws her head back and laughs; her friend peers over beside her. The railing stays rigid and still. Sound: a splash right under the lens, shouting, wind. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c3-b.jpg",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (low angle through the railing)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c3-b.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r15k3",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T13:44:02.974Z"
+ }
+}

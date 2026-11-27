@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r15k4-r15c4-a.mp4",
+ "made": "2026-11-27T13:45:25+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Close-up, camera fixed. The hand in the camel sleeve whips forward over the railing and lets go: the phone spins away into the blurred night, out over the river, and is gone. The empty hand stays stretched out, fingers spread, then slowly clenches into a fist on the top bar. Only the hand and the phone move; the railing and the bokeh of the bridge lights stay still. Sound: a whoosh, wind, a faint splash far away. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c4-a.jpg",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (close-up of the hand)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c4-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r15k4",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T13:44:16.576Z"
+ }
+}

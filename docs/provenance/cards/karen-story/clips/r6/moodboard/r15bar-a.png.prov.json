@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15bar-a.png",
+ "made": "2026-11-27T13:25:27.494Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Using the provided image, change only the picture on the wall TV: it now shows the same woman in the camel cardigan in the steel phone box at night, the receiver at her ear, with a big crowd packed on the sidewalk behind and around her, dozens of people holding glowing phones up. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r14, 2026-11-27, at5656: on the news she is in the phone box with a big crowd behind her",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r8bar-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r8bar-b.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "fa5bb3d3-8bf9-4f34-bc9a-0ad527f01111"
+}

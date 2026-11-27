@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r15throw6-r11throw-a.mp4",
+ "made": "2026-11-27T13:29:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static camera on a tripod, night, the riverside walk with the lit bridge behind. The woman in the camel cardigan, right arm up holding a phone, flings it forward over the metal railing; it turns once in the air and vanishes into the black water. She lowers her empty right hand and stands where she is, shouting at the river, while her left hand stays at her hip with the same single red wine glass. The friend in the olive jacket doubles over laughing, glass in hand. Nothing else in the frame moves: the railing and fence are solid and still, the background stays put. No extra phones, no extra glasses. Sound: wind off the water, a splash far off, a shout. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a.jpg",
+ "why": "Kai's note on cut r14, 2026-11-27, at1539: six new throw takes for consistency, only the phone moves, the railing stays still (prompt B)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r15throw6",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T13:28:07.256Z"
+ }
+}

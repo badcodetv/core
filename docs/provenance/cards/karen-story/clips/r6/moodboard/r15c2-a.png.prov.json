@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c2-a.png",
+ "made": "2026-11-27T13:38:41.076Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "A wide, side-on view along the riverside promenade at night: the two women are small figures in profile at the railing, outlined against the glittering skyline and the lit suspension bridge across the water. The woman in the camel cardigan is at the top of a huge overarm swing, her body twisted, right arm high, and a small dark phone is already sailing up and away from her hand in an arc out over the river. Her other hand holds a wine glass down by her hip. Her friend in the olive jacket, glass in hand, leans back laughing. Lots of black water and reflected city lights fill the lower half. Present-day New York. Super 8 grain, cinestyle colour, soft halation, mild vignette, candid snapshot energy. No text, no logos.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: six completely different compositions (2: wide silhouette in profile)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "15ad99c5-f061-4233-92f7-616df952a6c2"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c1-b.png",
+ "made": "2026-11-27T13:38:35.457Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "New camera position, same two women, same clothes, same night, same bridge and river. Shot from just behind the woman in the camel cardigan, over her right shoulder, as she stands pressed against the riverside railing facing the water and the lit suspension bridge. Her right arm is flung straight out ahead of her at full stretch, fingers just opened: her smartphone has left her hand and hangs in the air well beyond the railing, high above the black river, its screen glinting. Her left hand rests on the top rail holding her red wine glass. Her friend in the olive jacket stands at the railing to her left, laughing, holding her own glass. Present-day New York, candid. Super 8 film grain, cinestyle, vibrant colours, gentle halation on the bridge lights, soft vignette. No text, no logos.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes failed the same way, try six completely different compositions (1: over her shoulder)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a67d21cd-4ed4-4a8e-8536-724707d040f3"
+}

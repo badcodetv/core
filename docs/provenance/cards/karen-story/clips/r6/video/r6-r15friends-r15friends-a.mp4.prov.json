@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r15friends-r15friends-a.mp4",
+ "made": "2026-11-27T13:28:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera, daytime at the phone box. The woman in the box keeps talking into the receiver, gesturing calmly with her free hand. The two young men stand a step back and watch her, fascinated: the man in the dark jacket keeps filming her on his phone, the man in the denim jacket leans in slightly, curious, and murmurs something to his friend without looking away from her. Nobody points or laughs. People walk past behind. Natural movement to the last frame. Sound: daytime street traffic, footsteps. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15friends-a.jpg",
+ "why": "Kai's note on cut r14, 2026-11-27, at5062: the two friends stand looking interested, not pointing or laughing",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15friends-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r15friends",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T13:27:18.737Z"
+ }
+}

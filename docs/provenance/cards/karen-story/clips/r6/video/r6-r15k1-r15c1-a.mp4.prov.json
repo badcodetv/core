@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r15k1-r15c1-a.mp4",
+ "made": "2026-11-27T13:45:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera behind the woman in the camel cardigan at the riverside railing at night. The phone she has just flung keeps flying: it arcs far out over the black river, tumbling, getting smaller, and drops with a small white splash into the water under the bridge lights. Her outstretched arm follows through and then she punches the air, shouting after it, wine glass still in her other hand. Her friend in the olive jacket bends over laughing. The railing and the skyline do not move. Sound: wind, river, a distant splash, a triumphant shout. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c1-a.jpg",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (over her shoulder)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c1-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r15k1",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T13:43:51.069Z"
+ }
+}

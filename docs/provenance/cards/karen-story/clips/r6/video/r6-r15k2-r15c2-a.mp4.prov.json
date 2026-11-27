@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r15k2-r15c2-a.mp4",
+ "made": "2026-11-27T13:45:14+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Static wide shot along the promenade at night. The small dark phone already in the air keeps rising in a long high arc out over the river, then falls and disappears into the water far from the railing with a tiny splash glinting in the reflected city lights. The woman in the camel cardigan follows through with her whole body and throws both arms up, glass in one hand; her friend staggers back laughing. The camera, railing and bridge stay perfectly still. Sound: wind off the water, a far-off splash, shrieks of laughter. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c2-a.jpg",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: all six takes were a meek throw onto the floor; six completely different compositions (wide silhouette)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c2-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r15k2",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T13:44:02.735Z"
+ }
+}

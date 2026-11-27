@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c6-b.png",
+ "made": "2026-11-27T13:39:37.793Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Reverse angle, as if from out over the river looking back at the promenade: the woman in the camel cardigan stands at the railing facing us, waist-up, the top bar of the railing running across the lower part of the picture. Her right arm is wound right back behind her head clutching her smartphone, about to throw it straight towards us into the water; her face is furious and her mouth is wide open, shouting. Her left hand grips her red wine glass on the rail. Beside her the friend in the olive jacket is laughing with her own glass. Behind them, the lamp-lit walkway, benches and the brick warehouses of the waterfront at night. Present-day New York. Super 8 grain, cinestyle, vibrant colour, halation, vignette. No text, no logos.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: six completely different compositions (6: front-on from the water side)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "f7114dd4-f6d7-4c90-8ca5-5357d6c89b25"
+}

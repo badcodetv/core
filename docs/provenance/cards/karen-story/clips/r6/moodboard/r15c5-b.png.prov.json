@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c5-b.png",
+ "made": "2026-11-27T13:39:34.049Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "High angle looking straight down over a riverside railing at night into the dark, rippling river, which reflects long streaks of gold and white from the bridge and city lights. A single smartphone, screen lit, is in mid-fall halfway between the railing and the water, tumbling. Along the upper margin a woman's hand in a camel cardigan sleeve has just released it, fingers spread, over the top bar of the railing. Present-day New York. Super 8 grain, cinestyle colour, gentle halation on the reflections, soft vignette. No text, no logos.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: six completely different compositions (5: looking down at the water)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "44463469-c38c-4673-b642-2108c387d572"
+}

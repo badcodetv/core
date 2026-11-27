@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r6/lvl_n608t.wav",
+ "made": "2026-11-27T13:24:36+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/karen-story/_outside/Karen/narration-r6/lvl_n608b.wav",
+ "why": "Kai's note on cut r14, 2026-11-27, at6186: the boss shot about half as long; the two pauses in n608b cut from 0.69 s and 0.61 s to 0.12 s each"
+}

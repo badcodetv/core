@@ -1,163 +1,168 @@
 {
- "story": "karen",
- "scene": "story",
- "prefix": "st",
- "title": "Karen Story",
- "heading": "Karen Story: the narrated film",
- "media": "/mnt/d/badcode-videos/karen-story/timeline",
- "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
- "source_sequence": "Karen v4",
- "cut": {
-  "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r14/edl.json",
-  "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r14/preview.mp4",
-  "script": "KAREN_SEG=~/.cache/karen-seg-r14 python3 scripts/karen/story-cut-r14.py  (r14, 2026-11-27: Kai's 15 notes on r13)",
-  "previous": {
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r13/edl.json",
-   "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r13/preview.mp4",
-   "script": "KAREN_SEG=~/.cache/karen-seg-r13 python3 scripts/karen/story-cut-r13.py  (r13, 2026-11-27: Kai's new ending, Draft A of ending-r13.md)",
-   "previous": {
-    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r12/edl.json",
-    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r12/preview.mp4",
-    "script": "KAREN_SEG=~/.cache/karen-seg-r12 python3 scripts/karen/story-cut-r12.py  (r12, 2026-11-26: Kai's 13 notes on r11; short segments retried)",
+  "story": "karen",
+  "scene": "story",
+  "prefix": "st",
+  "title": "Karen Story",
+  "heading": "Karen Story: the narrated film",
+  "media": "/mnt/d/badcode-videos/karen-story/timeline",
+  "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+  "source_sequence": "Karen v4",
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r15/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r15/preview.mp4",
+    "script": "KAREN_SEG=~/.cache/karen-seg-r15 python3 scripts/karen/story-cut-r15.py  (r15, 2026-11-27: Kai's 7 notes on r14)",
     "previous": {
-     "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r11/edl.json",
-     "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r11/preview.mp4",
-     "script": "KAREN_SEG=~/.cache/karen-seg-r11 python3 scripts/karen/story-cut-r11.py  (r11, 2026-11-26: Kai's 19 notes on r10; segments built on local disk, copied back to D:)",
-     "before": {
-      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r10/edl.json",
-      "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r10/preview.mp4",
-      "script": "python3 scripts/karen/story-cut-r10.py  (r10, 2026-11-26: Kai's 18 notes on r9; never freezes a clip; new shots scenes/story-r6-shots keys r10*; voices narration-r10)",
-      "before": {
-       "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r9/edl.json",
-       "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r9/preview.mp4",
-       "script": "python3 scripts/karen/story-cut-r9.py  (r9, 2026-11-26: Kai's 6 notes on r8; never freezes a clip; new shots scenes/story-r6-shots keys r7*/r8*/r9*)",
-       "before": {
-        "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
-        "r3": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json",
-        "r3b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/edl.json",
-        "r4": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
-        "r4b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
-        "r5": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/edl.json",
-        "r8": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/edl.json"
-       }
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r14/edl.json",
+      "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r14/preview.mp4",
+      "script": "KAREN_SEG=~/.cache/karen-seg-r14 python3 scripts/karen/story-cut-r14.py  (r14, 2026-11-27: Kai's 15 notes on r13)",
+      "previous": {
+        "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r13/edl.json",
+        "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r13/preview.mp4",
+        "script": "KAREN_SEG=~/.cache/karen-seg-r13 python3 scripts/karen/story-cut-r13.py  (r13, 2026-11-27: Kai's new ending, Draft A of ending-r13.md)",
+        "previous": {
+          "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r12/edl.json",
+          "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r12/preview.mp4",
+          "script": "KAREN_SEG=~/.cache/karen-seg-r12 python3 scripts/karen/story-cut-r12.py  (r12, 2026-11-26: Kai's 13 notes on r11; short segments retried)",
+          "previous": {
+            "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r11/edl.json",
+            "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r11/preview.mp4",
+            "script": "KAREN_SEG=~/.cache/karen-seg-r11 python3 scripts/karen/story-cut-r11.py  (r11, 2026-11-26: Kai's 19 notes on r10; segments built on local disk, copied back to D:)",
+            "before": {
+              "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r10/edl.json",
+              "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r10/preview.mp4",
+              "script": "python3 scripts/karen/story-cut-r10.py  (r10, 2026-11-26: Kai's 18 notes on r9; never freezes a clip; new shots scenes/story-r6-shots keys r10*; voices narration-r10)",
+              "before": {
+                "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r9/edl.json",
+                "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r9/preview.mp4",
+                "script": "python3 scripts/karen/story-cut-r9.py  (r9, 2026-11-26: Kai's 6 notes on r8; never freezes a clip; new shots scenes/story-r6-shots keys r7*/r8*/r9*)",
+                "before": {
+                  "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
+                  "r3": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json",
+                  "r3b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/edl.json",
+                  "r4": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
+                  "r4b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
+                  "r5": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/edl.json",
+                  "r8": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/edl.json"
+                }
+              }
+            }
+          }
+        }
       }
-     }
     }
-   }
+  },
+  "premiere": {
+    "current": "r8",
+    "v4": {
+      "sequence": "Karen v4",
+      "guid": "9d5e84f4-66e2-4922-bc15-3c75b0855509",
+      "built": "2026-10-22",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
+      "what": "Jack's hand cut (clone of Karen v3 upload): Algenib narration, Act 5 cut, 'final boss' line, President calls back, To be continued + spray logo. Brought onto a timeline page 2026-11-13 (page round 0)",
+      "how": "hand-cut in Premiere; page from scripts/karen/story-edl.py"
+    },
+    "r4": {
+      "sequence": "karen-1-story-r4",
+      "guid": "dcc713a2-c1e2-438f-bbcf-30c266f25b97",
+      "bin": "karen-1-story-r4",
+      "built": "2026-11-24",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
+      "what": "Cut r4, made overnight from beats-r4.md (74 shots on V1, one track per voice stem, score/song/sfx stems whole)",
+      "how": "premiere-plan.py --tag r4 --seq karen-1-story-r4; placed by premiere_eval (tracks added by placing past the last one)",
+      "stale": "superseded the same night by r4b (two fixes after the self-review: the flashback line up 3 dB, the 12 s viral shot split in three); kept, not deleted"
+    },
+    "r4b": {
+      "sequence": "karen-1-story-r4b",
+      "guid": "938a2f40-d56f-400a-abf9-5c34e2116e17",
+      "bin": "karen-1-story-r4b",
+      "built": "2026-11-24",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
+      "what": "The morning cut: r4 + the self-review fixes",
+      "how": "premiere-plan.py --tag r4b; placed by premiere_eval",
+      "check": {
+        "at": "2026-11-24",
+        "state": "in sync",
+        "why": "V1 76/76 shots and all 51 audio clips match the plan by track, start and file"
+      },
+      "stale": "superseded by r5 (2026-11-25); kept, not deleted"
+    },
+    "r5": {
+      "sequence": "karen-1-story-r5",
+      "guid": "64eaeb45-95ba-41af-be9a-f3962130989b",
+      "bin": "karen-1-story-r5",
+      "built": "2026-11-25",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/edl.json",
+      "what": "Cut r5: r4b re-cut on Kai's 23 notes of 25 Nov",
+      "how": "premiere-plan.py --tag r5; placed by premiere_eval",
+      "check": {
+        "at": "2026-11-25",
+        "state": "in sync",
+        "why": "V1 76/76 shots and all 53 audio clips match the plan by track, start and file"
+      },
+      "stale": "superseded by r6 (2026-11-25); kept, not deleted"
+    },
+    "r6": {
+      "sequence": "karen-1-story-r6",
+      "guid": "17ec9d42-5711-4629-bd90-8baa2ddb2e82",
+      "bin": "karen-1-story-r6",
+      "built": "2026-11-25",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r6/edl.json",
+      "what": "Cut r6: r5 re-cut on Kai's 32 notes of 25 Nov (afternoon)",
+      "how": "premiere-plan.py --tag r6; placed by premiere_eval",
+      "check": {
+        "at": "2026-11-25",
+        "state": "in sync",
+        "why": "V1 77/77 shots and all 53 audio clips match the plan by track, start and file"
+      },
+      "stale": "superseded by r7 (2026-11-25); kept, not deleted"
+    },
+    "r7": {
+      "sequence": "karen-1-story-r7",
+      "guid": "b1fd2fc7-ef05-44af-aeca-373aa3306fef",
+      "bin": "karen-1-story-r7",
+      "built": "2026-11-25",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r7/edl.json",
+      "what": "Cut r7: r6 re-cut on Kai's 25 notes of 25 Nov (evening)",
+      "how": "premiere-plan.py --tag r7; placed by premiere_eval",
+      "check": {
+        "at": "2026-11-25",
+        "state": "in sync",
+        "why": "V1 78/78 shots (starts within a frame of the plan) and all 51 audio clips placed by track"
+      },
+      "stale": "superseded by r8 (2026-11-25); kept, not deleted"
+    },
+    "r8": {
+      "sequence": "karen-1-story-r8",
+      "guid": "b8c60301-a2d2-4fdc-a214-5790f42e9efc",
+      "bin": "karen-1-story-r8",
+      "built": "2026-11-25",
+      "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/edl.json",
+      "what": "Cut r8: r7 with Kai's 2 notes (train tunnel, the news as a bar watching her on TV)",
+      "how": "premiere-plan.py --tag r8; placed by premiere_eval",
+      "check": {
+        "at": "2026-11-25",
+        "state": "in sync",
+        "why": "V1 78/78 shots (starts within a frame of the plan) and all 51 audio clips placed by track"
+      }
+    },
+    "pending_r9": {
+      "sequence": "karen-1-story-r9",
+      "status": "NOT BUILT, on purpose: Kai (2026-11-26) wants the timeline page only until the edit is settled, then everything moves into Premiere at once. Premiere current is still r8.",
+      "how": "python3 scripts/scene/premiere-plan.py <cut-r9>/edl.json <plan.json> --tag r9 --seq karen-1-story-r9, then import into bin karen-1-story-r9, premiere_create_sequence(fromItems=v000), premiere_eval(plan.place.js), premiere_save"
+    },
+    "pending_r12": {
+      "state": "NOT BUILT on purpose",
+      "why": "Kai, 2026-11-26: timeline only until the edit is settled"
+    }
+  },
+  "boards": {
+    "timeline": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC"
   }
- },
- "premiere": {
-  "current": "r8",
-  "v4": {
-   "sequence": "Karen v4",
-   "guid": "9d5e84f4-66e2-4922-bc15-3c75b0855509",
-   "built": "2026-10-22",
-   "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
-   "what": "Jack's hand cut (clone of Karen v3 upload): Algenib narration, Act 5 cut, 'final boss' line, President calls back, To be continued + spray logo. Brought onto a timeline page 2026-11-13 (page round 0)",
-   "how": "hand-cut in Premiere; page from scripts/karen/story-edl.py"
-  },
-  "r4": {
-   "sequence": "karen-1-story-r4",
-   "guid": "dcc713a2-c1e2-438f-bbcf-30c266f25b97",
-   "bin": "karen-1-story-r4",
-   "built": "2026-11-24",
-   "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
-   "what": "Cut r4, made overnight from beats-r4.md (74 shots on V1, one track per voice stem, score/song/sfx stems whole)",
-   "how": "premiere-plan.py --tag r4 --seq karen-1-story-r4; placed by premiere_eval (tracks added by placing past the last one)",
-   "stale": "superseded the same night by r4b (two fixes after the self-review: the flashback line up 3 dB, the 12 s viral shot split in three); kept, not deleted"
-  },
-  "r4b": {
-   "sequence": "karen-1-story-r4b",
-   "guid": "938a2f40-d56f-400a-abf9-5c34e2116e17",
-   "bin": "karen-1-story-r4b",
-   "built": "2026-11-24",
-   "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
-   "what": "The morning cut: r4 + the self-review fixes",
-   "how": "premiere-plan.py --tag r4b; placed by premiere_eval",
-   "check": {
-    "at": "2026-11-24",
-    "state": "in sync",
-    "why": "V1 76/76 shots and all 51 audio clips match the plan by track, start and file"
-   },
-   "stale": "superseded by r5 (2026-11-25); kept, not deleted"
-  },
-  "r5": {
-   "sequence": "karen-1-story-r5",
-   "guid": "64eaeb45-95ba-41af-be9a-f3962130989b",
-   "bin": "karen-1-story-r5",
-   "built": "2026-11-25",
-   "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/edl.json",
-   "what": "Cut r5: r4b re-cut on Kai's 23 notes of 25 Nov",
-   "how": "premiere-plan.py --tag r5; placed by premiere_eval",
-   "check": {
-    "at": "2026-11-25",
-    "state": "in sync",
-    "why": "V1 76/76 shots and all 53 audio clips match the plan by track, start and file"
-   },
-   "stale": "superseded by r6 (2026-11-25); kept, not deleted"
-  },
-  "r6": {
-   "sequence": "karen-1-story-r6",
-   "guid": "17ec9d42-5711-4629-bd90-8baa2ddb2e82",
-   "bin": "karen-1-story-r6",
-   "built": "2026-11-25",
-   "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r6/edl.json",
-   "what": "Cut r6: r5 re-cut on Kai's 32 notes of 25 Nov (afternoon)",
-   "how": "premiere-plan.py --tag r6; placed by premiere_eval",
-   "check": {
-    "at": "2026-11-25",
-    "state": "in sync",
-    "why": "V1 77/77 shots and all 53 audio clips match the plan by track, start and file"
-   },
-   "stale": "superseded by r7 (2026-11-25); kept, not deleted"
-  },
-  "r7": {
-   "sequence": "karen-1-story-r7",
-   "guid": "b1fd2fc7-ef05-44af-aeca-373aa3306fef",
-   "bin": "karen-1-story-r7",
-   "built": "2026-11-25",
-   "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r7/edl.json",
-   "what": "Cut r7: r6 re-cut on Kai's 25 notes of 25 Nov (evening)",
-   "how": "premiere-plan.py --tag r7; placed by premiere_eval",
-   "check": {
-    "at": "2026-11-25",
-    "state": "in sync",
-    "why": "V1 78/78 shots (starts within a frame of the plan) and all 51 audio clips placed by track"
-   },
-   "stale": "superseded by r8 (2026-11-25); kept, not deleted"
-  },
-  "r8": {
-   "sequence": "karen-1-story-r8",
-   "guid": "b8c60301-a2d2-4fdc-a214-5790f42e9efc",
-   "bin": "karen-1-story-r8",
-   "built": "2026-11-25",
-   "project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/edl.json",
-   "what": "Cut r8: r7 with Kai's 2 notes (train tunnel, the news as a bar watching her on TV)",
-   "how": "premiere-plan.py --tag r8; placed by premiere_eval",
-   "check": {
-    "at": "2026-11-25",
-    "state": "in sync",
-    "why": "V1 78/78 shots (starts within a frame of the plan) and all 51 audio clips placed by track"
-   }
-  },
-  "pending_r9": {
-   "sequence": "karen-1-story-r9",
-   "status": "NOT BUILT, on purpose: Kai (2026-11-26) wants the timeline page only until the edit is settled, then everything moves into Premiere at once. Premiere current is still r8.",
-   "how": "python3 scripts/scene/premiere-plan.py <cut-r9>/edl.json <plan.json> --tag r9 --seq karen-1-story-r9, then import into bin karen-1-story-r9, premiere_create_sequence(fromItems=v000), premiere_eval(plan.place.js), premiere_save"
-  },
-  "pending_r12": {
-   "state": "NOT BUILT on purpose",
-   "why": "Kai, 2026-11-26: timeline only until the edit is settled"
-  }
- },
- "boards": {
-  "timeline": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC"
- }
 }

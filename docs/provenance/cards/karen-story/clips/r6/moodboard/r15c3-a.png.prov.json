@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r15c3-a.png",
+ "made": "2026-11-27T13:39:22.425Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Dramatic low angle from the river side, the lens just below the promenade edge looking up through the metal railing at the woman in the camel cardigan leaning over the top rail against the night sky and the bridge lights. Her face is fierce, mouth open mid-shout, her right arm swung forward and down, and her smartphone is tumbling out of her fingers, falling past the railing towards the water and the camera. Her left hand holds a red wine glass up by her shoulder. Her friend in the olive jacket peers over the railing beside her, laughing. Present-day New York. Super 8 grain, cinestyle, vibrant colour, halation on the lamps, slight vignette. No text, no logos.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on the r15 throw page, 2026-11-27: six completely different compositions (3: low angle from below the railing)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "5fc84ae6-344c-4b9a-9902-0811df0b4b1d"
+}
