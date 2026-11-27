@@ -10,7 +10,8 @@ notes in <scene-dir>/feedback/timeline*/notes/ (everyone's, signed), so a page r
 any machine and at any link, shows the notes Claude answered. Notes typed since that copy live only online.
 Prints the files to publish alongside out-dir/index.html.
 With --local (third argument) it builds for scripts/scene/timeline-serve.py instead: the page and thumbnails only,
-no proxy or hq pieces (the local server plays the full preview), nothing to publish.
+no proxy or hq pieces (the local server plays the full preview), nothing to publish. --cut=<folder> builds an
+earlier cut of the scene from that folder's edl.json and preview.mp4 (without the current round's replies and plan).
 """
 import json
 import pathlib
@@ -25,6 +26,9 @@ import timeline  # noqa: E402
 
 sc = Scene(sys.argv[1])
 cut = sc.cfg.get('cut', {})
+OLD = next((pathlib.Path(x.split('=', 1)[1]) for x in sys.argv[3:] if x.startswith('--cut=')), None)
+if OLD:  # an earlier cut of this scene (a folder with its own edl.json and preview.mp4): no current replies or plan
+    cut = {'edl': str(OLD / 'edl.json'), 'preview': str(OLD / 'preview.mp4')}
 edl = pathlib.Path(cut.get('edl', sc.media / 'cut' / 'edl.json'))
 preview = pathlib.Path(cut.get('preview', sc.media / 'cut' / 'preview.mp4'))
 data = localize(json.loads(edl.read_text()))
@@ -35,13 +39,13 @@ if not preview.exists():  # previews never travel through Drive (scripts/drive/e
 data.setdefault('title', sc.cfg.get('title', sc.slug) + ' Timeline')
 data.setdefault('heading', sc.cfg.get('title', sc.slug))
 notes = sc.dir / 'cut-notes.json'  # Claude's read of the notes so far (round, plan, replies), shown on the page
-if notes.exists():
+if notes.exists() and not OLD:
     n = json.loads(notes.read_text())
     data.update({k: n[k] for k in ('round', 'plan', 'replies') if k in n})
 def newest_notes(scene_dir):
     """The most recent dump of the timeline page's notes: {from, notes:[{key, by, note, at, ...}]}, or None."""
     best = None
-    for d in scene_dir.glob('feedback/timeline*/notes'):
+    for d in [*scene_dir.glob('feedback/timeline*/notes'), *scene_dir.glob('feedback/timeline-local/*/notes')]:
         notes = [json.loads(f.read_text()) for f in sorted(d.glob('*.json'))]
         notes = [n for n in notes if isinstance(n, dict) and n.get('key') and (n.get('note') or '').strip()]
         last = max((n.get('at') or 0 for n in notes), default=0)
@@ -50,7 +54,7 @@ def newest_notes(scene_dir):
     return best and best[1]
 
 
-record = newest_notes(sc.dir)
+record = None if OLD else newest_notes(sc.dir)  # an old cut shows its own local notes only (live, from the server)
 if record:
     data['record'] = record
 people = sc.dir.parents[2] / 'people.json'  # optional {"<user id>": "Kai"}: names for notes on a signed-out page

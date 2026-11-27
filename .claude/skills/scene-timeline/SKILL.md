@@ -54,14 +54,18 @@ Independent, so they can run side by side; one owner per tool:
 ## The timeline page
 
 🔑 **Local first** (Kai, 2026-11-27: *"we should be able to operate the timeline tool without needing Claude
-artifacts"*, after the claude.ai page hit its 200-uploads-a-day limit). For Kai's note rounds on this machine, run
-`python3 scripts/scene/timeline-serve.py <scene-dir> [--port 8765]` (in the background) and give him
-http://localhost:8765 (Windows opens it too). It is the same page, with nothing uploaded: the full 1080p preview
-streams from disk, the page rebuilds itself on reload when `scene.json`, the edl, the preview or `cut-notes.json`
-change, and notes save as files in `<scene-dir>/feedback/timeline-local/notes/` (the dump format, signed with his
-claude.ai id from `docs/stories/people.json`). So a round is: rebuild the cut, update `cut-notes.json`, tell him to
-reload; read his notes straight from that folder, and commit it each round (a worktree in `/tmp` is not durable).
-Only this machine can see it: publish the artifact below when Jack (or another machine) needs to watch or note.
+artifacts"*, after the claude.ai page hit its 200-uploads-a-day limit). One server for every timeline on this machine:
+`python3 scripts/scene/timeline-serve.py` (in the background, from Kai's main folder so notes land somewhere durable,
+port 8765). http://localhost:8765 lists every scene with a cut; `/t/<story>/<scene>/` is the current cut (with
+`cut-notes.json`'s replies and plan) and `/t/<story>/<scene>/<cut folder>/` any earlier cut beside it, so old timelines
+open too and several can be open at once. Same page, nothing uploaded: the full 1080p preview streams from disk, a page
+rebuilds itself on reload when `scene.json`, the edl, the preview or `cut-notes.json` change, and notes save as files in
+`<scene-dir>/feedback/timeline-local/<cut folder>/notes/` (the dump format, signed with Kai's claude.ai id from
+`docs/stories/people.json`; the next cut's page shows them "on record"). A round: rebuild the cut, point `scene.json`
+at it, update `cut-notes.json`, then **open it in Kai's Windows browser** with `scripts/open-in-windows.sh <url>`
+(never the WSL Chrome: that one is for automation; check pages headless or with curl). Read his notes straight from
+that folder and commit it each round. Only this machine can see it: publish the artifact below when Jack (or another
+machine) needs to watch or note.
 
 **The artifact (for Jack, or away from this machine):** `python3 scripts/scene/build-timeline.py <scene-dir> <out-dir>`, then publish `<out-dir>/index.html` with
 every file in `<out-dir>/media/` and `capabilities: {db:{}, user:{}}`. Republish to the **same file path**
