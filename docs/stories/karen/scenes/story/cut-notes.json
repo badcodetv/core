@@ -1,18 +1,32 @@
 {
-  "round": 15,
+  "round": 16,
   "plan": [
     {
-      "h": "Round 15: cut r15, your 7 notes on r14.",
+      "h": "New in r16: the ending, Sean on Hold (from 5:30)",
       "items": [
-        "Seagull out; the two friends re-cut and narrated from the first frame; the packed night crowd and taxi out; the news shows her with a crowd; the boss half as long.",
-        "The throw: six new set-ups on their own page; the cut keeps take 6 until you pick.",
-        "The ending: Fable 5.2 wrote extended endings (ending-r15.md); nothing gets built until you pick one."
+        "The generals' submarine plan; Karen's better one (her five rungs, done).",
+        "Sean's warehouses of computers run on city water; Martha turns the valve under City Hall.",
+        "Sean rings up to complain; the phone box rings; 'It's Sean. He's just a customer.'; she puts him on hold.",
+        "The boom bap stops on 'puts him on hold'; the song comes in as hold music, through a telephone filter.",
+        "Sean climbs her ladder: Martha (day 1), Clive (7 pm), Harriet (week 3), Congress (at lunch), then THE MANAGER, which turns to KAREN.",
+        "ON HOLD: the clock spins up to 2,000 years; 'Karen is unfazed' (she checks her nails) while the song sings 'all day to complain' in the clear.",
+        "'Waiting isn't efficient. It never was.' Sean hangs up: a click, the screen goes black, Times Square goes dark, a dial tone under the card."
       ]
     },
     {
-      "h": "Still open (overrule freely)",
+      "h": "Changed from the written ending",
       "items": [
-        "'all day' or 'every day' in Karen's alone line."
+        "Karen sips coffee, not wine: she has had no glass since the throw (take 2).",
+        "No agents at the phone box (the ring clip from r13 has none).",
+        "'Karen has a better one' runs over the end of the submarine shot (the Situation Room clip was used up)."
+      ]
+    },
+    {
+      "h": "You decide",
+      "items": [
+        "Length: the ending adds 2:12 (7:52 in all). The lean version (no submarine, no Clive, no Congress, a shorter water line) would save about 25 s.",
+        "City Hall is a daytime shot in a night sequence: keep it, or make a night City Hall?",
+        "Martha is in daylight at her desk (a take of her Act 2 clip not used before): fine, or re-make at night?"
       ]
     }
   ],
@@ -2899,5 +2913,10 @@
       "on": "timeline page uploads",
       "note": "the upload problem is going to hurt us. Is there any way of previewing this on the timeline without uploading? Could we not point at local media? ... Are we able to publish to Cloudflare or a Google Cloud bucket? ... We could host them locally."
     }
-  ]
+  ],
+  "replies_round16": {
+    "ending": "Built: Ending 1, Sean on Hold, as written (the full version, with 'Sean hangs up'). It adds 2:12, so the film is now 7:52.",
+    "alone line": "Kept: 'She's got all day to complain.'",
+    "uploads": "Done: the timeline now runs locally (scripts/scene/timeline-serve.py), with no uploads; this round is on http://localhost:8765/t/karen/story/."
+  }
 }

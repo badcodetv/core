@@ -214,5 +214,13 @@
   "decided": [
    "throw open (Kai: all six re-rolls failed, six new set-ups); ending open until Kai picks"
   ]
+ },
+ {
+  "at": "2026-11-27T16:14:12+00:00",
+  "stage": "timeline",
+  "round": 16,
+  "url": "http://localhost:8765/t/karen/story/",
+  "what": "cut r16: Ending 1, Sean on Hold (Kai's pick); 7:52; on the local timeline (no upload)",
+  "rebuild": "KAREN_SEG=~/.cache/karen-seg-r16 python3 scripts/karen/story-cut-r16.py"
  }
 ]

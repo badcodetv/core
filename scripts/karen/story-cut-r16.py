@@ -1206,7 +1206,8 @@ def ladder_over(bg, bgin, dur, steps, name, span=4.0):
     steps = [(png, at_seconds)], each cross-fading in over the last."""
     out = SEG / f'{name}.mp4'
     ins, fl = ['-ss', bgin, '-i', bg], [f"[0:v]scale=1920:1080,setsar=1,fps={FPS},split[f][r0];[r0]reverse[r];[f][r]concat=n=2:v=1,"
-                                         f"loop=loop=4:size=400,gblur=sigma=22,eq=brightness=-0.2:saturation=0.7[x0]"]
+                                         f"loop=loop=4:size=400,gblur=sigma=22,eq=brightness=-0.2:saturation=0.7,"
+                                         f"zoompan=z='1+0.0012*on':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1920x1080:fps={FPS}[x0]"]   # a slow push: never a still frame
     for i, (png, at) in enumerate(steps, start=1):
         ins += ['-loop', 1, '-i', png]
         fl.append(f"[{i}:v]format=rgba,fade=t=in:st={at}:d=0.3:alpha=1[l{i}];[x{i - 1}][l{i}]overlay=0:0[x{i}]")
@@ -1264,10 +1265,11 @@ block([nar10('lvl_n1603b.wav', 'She knows exactly what this country does to a pe
       [(ladder_over(ROOM, 4.0, 9.0, [(lad_k, 0.1)], 'lad16k-room'), 0, None, {'what': "NEW r16: Karen's ladder, all five rungs done (post, over the Situation Room)"})], lead=0.6, tail=0.4)
 # 1.4-1.5: the water
 block([nar10('lvl_n1604a.wav', "Sean thinks in warehouses full of computers. They run hot, so they're kept cool with water. City water.")],
-      [(DC16, 0.0, None, {'what': "NEW r16: one of Sean's warehouses of computers at night, steam pouring off the roof"})], lead=1.0, tail=0.3)
+      [(DC16, 0.0, None, {'what': "NEW r16: one of Sean's warehouses of computers at night, steam pouring off the roof"}),
+       (CITY, 0.5, 2.3, {'what': "r7: City Hall ('City water.')"})], lead=1.0, tail=0.3)
 block([nar10('lvl_n1605b.wav', 'Sean runs everything in America that has a screen. The water main under City Hall has a wheel. Martha turns it off.')],
-      [(CITY, 0.5, 6.8, {'what': 'r7: City Hall'}),   # the valve clip is used to 5.0 s: she walks out of frame after
-       (VALVE16, 0.0, None, {'what': 'NEW r16: under City Hall, hands heave the red valve wheel shut'})], lead=0.6, tail=0.6)
+      [(CITY, 2.8, 4.8, {'what': 'r7: City Hall, carried on'}),   # the valve clip is used to about 5 s: she walks out of frame after
+       (VALVE16, 0.0, None, {'what': 'NEW r16: under City Hall, hands heave the red valve wheel shut'})], lead=0.2, tail=0.4)
 # 1.6: Sean's screen
 s16a = sean_screen(7.5, [(['COOLING WATER: 0%'], 0.3, 3.0), (['CONTACTING', 'CUSTOMER SERVICE...'], 3.0, 99)], 'sean16-water')
 block([nar10('lvl_n1606a.wav', 'Sean does what anybody does when the water goes off. He rings up to complain.')],
@@ -1283,7 +1285,7 @@ block([nar10('lvl_n1609a.wav', 'Karen tells him his call is important to her. Th
 hold_on = t - 0.4   # the boom bap stops here and the hold music starts
 # 1.9-1.11: Sean climbs her ladder
 block([nar10('lvl_n1610b.wav', "Day one: Martha. She can escalate him... but he's going to have to wait.")],
-      [(LIPM, 0.0, None, {'ov': sean_ladder_png(0, 'DAY 1', 'lad16s0'), 'what': "r6: Martha (her lip-synced take, muted); Sean's ladder, rung 1 (post)"})], lead=0.6, tail=0.3)
+      [(R6 / 'video/r6-martha2-martha-close-a.mp4', 0.0, None, {'ov': sean_ladder_png(0, 'DAY 1', 'lad16s0'), 'what': "r6: Martha (take 2 of her talking clip, muted; not the one in Act 2); Sean's ladder, rung 1 (post)"})], lead=0.6, tail=0.3)
 ev(S['tick'], t - 6.0, 'sfx', what='rung tick', gain=-14)
 block([nar10('lvl_n1611a.wav', 'Later that evening: Clive. Clive has waited his whole career for this.')],
       [(CLIVE, 0.5, None, {'ov': sean_ladder_png(1, 'DAY 1, 7 PM', 'lad16s1'), 'what': "r7: Clive, evening; Sean's ladder, rung 2 (post)"})], lead=0.6, tail=0.3)

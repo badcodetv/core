@@ -8,9 +8,9 @@
   "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
   "source_sequence": "Karen v4",
   "cut": {
-    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r15/edl.json",
-    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r15/preview.mp4",
-    "script": "KAREN_SEG=~/.cache/karen-seg-r15 python3 scripts/karen/story-cut-r15.py  (r15, 2026-11-27: Kai's 7 notes on r14)",
+    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r16/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r16/preview.mp4",
+    "script": "KAREN_SEG=~/.cache/karen-seg-r16 python3 scripts/karen/story-cut-r16.py  (r16, 2026-11-27: Ending 1, Sean on Hold)",
     "previous": {
       "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r14/edl.json",
       "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r14/preview.mp4",
@@ -163,6 +163,6 @@
     }
   },
   "boards": {
-    "timeline": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC"
+    "timeline": "http://localhost:8765/t/karen/story/"
   }
 }
