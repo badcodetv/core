@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room-a-b.png",
+ "made": "2026-11-27T10:57:44.995Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight, present day. A windowless, wood-panelled government briefing room with a long polished conference table, leather chairs, a row of dark wall screens showing only soft blue maps with no writing, and one warm lamp glowing on a side table. Camera low behind the head of the table, over the shoulder of a tall man in a dark suit who is rising from his chair, seen only from behind. At the far end of the room the door has just opened: @Karen, in her camel cardigan and cream blouse, steps in between two agents in dark suits with earpieces, pausing in the doorway, composed and a little wary. Around the table men and women in suits turn in their seats to look at her. Tense, quiet, serious.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai 2026-11-27, new ending (Draft A): Karen walks into the Situation Room; the President rises",
+ "inputs": {
+  "character": "Karen"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "36af7cdd-1d0c-4f91-9339-d53c13e12fe8"
+}

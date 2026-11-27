@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r13room-r13room-a.mp4",
+ "made": "2026-11-27T11:03:47+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera behind the head of the long table. The tall man in the navy suit, seen only from behind, finishes rising from his chair and turns slightly towards the doorway. The woman in the camel cardigan takes two steps into the room from between the two agents and stops at the end of the table, composed, chin up. The people seated along both sides turn to look at her; a woman sets her pen down. Slow, quiet, serious human movement to the last frame. He never turns his face to the camera. Sound: a hushed room, a chair creaking. No music, no dialogue.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room-a.jpg",
+ "why": "Kai 2026-11-27, new ending (Draft A): Karen walks into the Situation Room; the man at the head of the table rises to greet her",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r13room",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T11:02:43.729Z"
+ }
+}

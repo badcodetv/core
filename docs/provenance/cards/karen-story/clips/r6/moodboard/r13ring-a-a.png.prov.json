@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13ring-a-a.png",
+ "made": "2026-11-27T10:57:55.333Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nKeep this exact frame: the same woman in the camel cardigan and cream blouse, the same open steel phone box, the same subway entrance, street lamps and camera angle. Change only the hour and the moment: it is now late at night, the street almost empty and wet, the sky black, the lamps and a few lit windows the only light. The receiver hangs on its hook. She stands inside the box and has just turned towards the payphone as it starts to ring, her hand lifting towards the receiver, eyebrows raised, surprised and wary: for once, the call is coming to her.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai 2026-11-27, new ending (Draft A): a few hours later the payphone rings for Karen, the Chief of Staff calling",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/box-evening-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/box-evening-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "108a1ca9-da22-4c8a-bf80-da63d4bc4e1a"
+}

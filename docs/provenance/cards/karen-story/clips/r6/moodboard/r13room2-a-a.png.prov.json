@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room2-a-a.png",
+ "made": "2026-11-27T11:01:33.904Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep the first image exactly: the same wood-panelled briefing room, long table, lamp, blue wall maps, the agents and the woman in the camel cardigan in the open doorway, the seated people, the light, the film grain and the camera position. Change only the tall standing figure in the foreground, seen from behind at the head of the table: he becomes the man in the armchair from the second image, a Black man with close-cropped dark hair greying at the back, broad shoulders, in the same dark navy suit, still seen only from behind, standing up from his chair and facing the woman in the doorway. Do not show his face.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai 2026-11-27, new ending: the man standing at the head of the table must be the same man as in the armchair (canon: kept the same through the ending)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room-a-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room-a-b.png",
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r7-studio-pres.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "54752f0a-7c4e-41ae-b7a5-cff6cec67c1d"
+}
