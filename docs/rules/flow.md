@@ -324,6 +324,20 @@ Related: `one-shot-at-a-time-still-then-video`.
 
 **2026-11-10, Jack: "never do flow speech, only do the ai google studio thing where we do the lip sync tool."** Said for the BadCode Shorts (Priority Lane), worded as never. Talking characters are muted Omni clips dubbed with AI Studio voices through the `lip-sync-dub` skill (`dubbed-talking-clips-recipe`).
 
+## Every video is downloaded at 1080p (Kai, 2026-11-27)
+
+**Kai, 2026-11-27: "let's start with 1080p and just say we should always generate at 1080p."** Flow renders every
+video at 720p; its Download menu then offers "720p Original size", **"1080p Upscaled" (free)** and "4K Upscaled ·
+50 credits" (read off the live menu 2026-11-27). We had only ever taken the 720p original, so 31 of Karen r15's 80
+shots were 720p beside Jack's 1080p clips (the likely cause of Kai's "low quality" notes; a guess).
+
+**How to apply:** the pool (`scripts/scene/run.mts`) and the Flow MCP (`flow-client.ts` `downloadFromTileLocked`)
+take the "1080p Upscaled" row by default and fall back to the 720p original only if the row is missing. The upscale
+takes about 45 s per clip. Recipe cards record `resolution: 1080p (Flow upscale of the 720p render)`. To upgrade a
+clip made before this, open it in Flow and download the 1080p row (`scripts/scene/probe-upscale.mts <project> <tile>
+<out>` with `ROW=1080p`), save it beside the original as `…-1080.mp4` in `video-1080/`, and match it to the 720p
+file by a frame comparison. 4K stays a decision for the final cut only (50 credits a clip, Ultra plan).
+
 ## Omni Flash video defaults — 720p x2 8s, an 8s prompt carries two beats, never suggest a 360p draft.
 
 **Default Flow video settings: Omni Flash · 720p · x2 · 16:9 · 8s.** **Never suggest a 360p draft.**

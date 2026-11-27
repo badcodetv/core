@@ -863,14 +863,17 @@ night0 = t
 block([nar('lvl_n40-a.wav', 'They steal wine glasses, and head out to look over the river.')], [(OC / '28.mp4', 0, None, {})], lead=1.1, tail=0.6)   # r11 (Kai at1338): a second first
 THROW11 = R6 / 'video/r6-r14throw6-r11throw-a.mp4'   # r14 (Kai at1517): take 6 of eight; one phone, one glass in the same hand to 3.4 s (the others swap hands or grow a second glass by 2.5 s)
 _OLD_THROW = R6 / 'video/r6-r12throwa-r11throw-a.mp4'   # r12 (Kai at1548): roll a of three; clean only to 2.75 s (one phone, one glass), so 0-2.75 s at 0.8x
-shout = THROW11 if THROW11.exists() else clip('r4-shout-river-shout-b.mp4')
+THROW15 = R6 / 'video-1080/r6-r15orig2-river-shout-b-1080.mp4'   # r15 (Kai, 2026-11-27: 'number two, original recipe, fresh take, that's the one to use'): the r4 recipe re-rolled; shakes to 2.5 s, throws at 2.9 s, the phone drops past the rail at 4.0-4.3 s
+shout = THROW15 if THROW15.exists() else (THROW11 if THROW11.exists() else clip('r4-shout-river-shout-b.mp4'))
 THROW_KW = {}   # r14: take 6 is clean for the whole 3.44 s, so normal speed
 # r7 (Kai): the r6 re-roll was low quality and threw along the railing; the r4 take he picked, ungraded
 # r11: the new throw lets go ~1.2 s in; the line starts 0.65 s before the cut so 'Fuck you, Sean!' (1.84 s into it) lands on the throw
-block([vox('lvl_k401d.wav', 'karen', 'Karen (Gacrux)', 'You hear that, Sean? Fuck you, Sean!', fx='outdoor', pre=-0.65 if shout == THROW11 else 0.0)],
-      [(shout, 0.0, 3.44 if shout == THROW11 else None, {**THROW_KW, 'what': 'NEW r14: Karen throws the phone, glass in hand (take 6 of eight)' if shout == THROW11 else 'r4: Karen throws the phone into the river (the take Kai picked, ungraded)'})], lead=0.2, tail=0.0 if shout == THROW11 else 1.6)
+# r15: 'Fuck you, Sean!' starts 1.84 s into the line, so the line starts 1.06 s into the shot and lands on the throw (2.9 s)
+block([vox('lvl_k401d.wav', 'karen', 'Karen (Gacrux)', 'You hear that, Sean? Fuck you, Sean!', fx='outdoor', pre=0.86)],
+      [(shout, 0.0, 5.0, {'what': "NEW r15: Karen throws the phone into the river (take 2 of four of the r4 recipe, Kai's pick)"})], lead=0.2, min_dur=5.0)
 # r15 (Kai at1560): the seagull shot is out (the bridge was on the wrong side)
-ev(S['splash'], t - 3.45, 'sfx', what='splash (r6-r9splash.mp4, its sound only; r10: 60% of r9, Kai)', gain=-4.4)   # 20*log10(0.6)
+ev(S['splash'], t - 0.7, 'sfx',   # r15: the phone drops past the rail at 4.3 s of the 5.0 s shot
+   what='splash (r6-r9splash.mp4, its sound only; r10: 60% of r9, Kai)', gain=-4.4)   # 20*log10(0.6)
 ev(S['night'], night0 + 0.4, 'sfx', what='night by the river (r9-night-river.mp4, its sound only; r12: half as loud, Kai)', dur=t - night0 - 0.4, gain=-11, fx='score')   # 'score': looped, faded in and out
 
 beat('4', 'The morning, the phone box')
@@ -880,8 +883,8 @@ block([nar('lvl_n08-a.wav', "Karen, without a phone, has no idea what's happenin
 # r7 (Kai): Karen's remembered line is out ("the only bit of Karen speaking we want is 'fuck you, Sean'"); the narrator
 # carries it, and the flashback plays under his words (so 10.mp4 no longer has to stretch to the end of the line)
 block([nar('lvl_r3b.wav', 'Susan reminds her. Last night, Karen threw her phone in the river... and swore to make the biggest complaint the world has ever seen.', by='claude')],
-      [(NC / '10.mp4', 0, 3.0, {}), (OC / '28.mp4', 3.0, None if shout == THROW11 else 1.4, {'fx': FB, 'what': '28.mp4 (flashback)'}),
-       (shout, 0.0, 3.44 if shout == THROW11 else None, {**THROW_KW, 'fx': FB, 'what': 'flashback: the throw'})], tail=0.4)
+      [(NC / '10.mp4', 0, 3.0, {}), (OC / '28.mp4', 3.0, None, {'fx': FB, 'what': '28.mp4 (flashback)'}),
+       (shout, 1.6, 2.9, {'fx': FB, 'what': 'flashback: the throw (r15: take 2, the throw itself)'})], tail=0.4)
 # r6 (Kai): City Hall rebuilt from scratch (the old clip had a drone in it)
 # r10 (Kai at2401): 'Day one' and the pin first, then City Hall ringing, then 'It's Martha' (lvl_n401 split at its 1 s pause)
 block([nar('lvl_n401.wav', 'Karen rolls her sleeves up.', by='kai', dur=1.95)], [(NC / '46.mp4', 0, None, {})], lead=0.1, tail=0.6, min_dur=3.0)

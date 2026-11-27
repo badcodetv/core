@@ -548,7 +548,8 @@ export class FlowClient {
    * both an image and a video), so it is the only route that gives us what Flow actually made.
    *
    * Images download on the first click; videos open a size submenu first, where
-   * "720p Original size" is the original (1080p/4K are paid upscales — never picked here).
+   * "720p Original size" is the original; "1080p Upscaled" is free and is what we take (Kai, 2026-11-27);
+   * "4K Upscaled · 50 credits" is never picked.
    */
   private async harvestMedia(mediaId: string, outPath: string): Promise<void> {
     this.lastMediaId = mediaId
@@ -602,7 +603,7 @@ export class FlowClient {
       // Armed BEFORE the click: an image downloads immediately on `Download` (measured — a listener armed
       // afterwards missed it).
       const done = new Promise<string>((ok, bad) => {
-        const t = setTimeout(() => bad(new Error('DOWNLOAD_TIMEOUT: Flow never finished the download')), TURN_TIMEOUT_MS)
+        const t = setTimeout(() => bad(new Error('DOWNLOAD_TIMEOUT: Flow never finished the download')), TURN_TIMEOUT_MS * 3)   // the 1080p upscale takes ~45 s
         cdp.on('Browser.downloadWillBegin', (e: { guid: string; url: string }) => { if (!guid) { guid = e.guid; began = e.url } })
         cdp.on('Browser.downloadProgress', (e: { guid: string; state: string }) => {
           if (guid && e.guid !== guid) return
@@ -625,7 +626,13 @@ export class FlowClient {
         done.then(() => 'download' as const),
         original.waitFor({ state: 'visible', timeout: 8_000 }).then(() => 'submenu' as const).catch(() => 'none' as const),
       ])
-      if (first === 'submenu') await original.click()
+      // 2026-11-27 (Kai: "we should always generate at 1080p"): a video's submenu has a free "1080p Upscaled" row
+      // (about 45 s to make; measured on Karen r15). Take it; "720p Original size" only if it is missing.
+      const hd = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /1080p\s*Upscaled/i }).first()
+      if (first === 'submenu') {
+        if (await hd.isVisible().catch(() => false)) await hd.click()
+        else await original.click()
+      }
       const id = await done
       await mkdir(dirname(outPath), { recursive: true })
       await copyFile(join(dir, id), outPath)

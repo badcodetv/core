@@ -87,7 +87,7 @@ const SETTINGS = join(INBOX, 'settings.json')
 /** What each submit actually asked Flow for, keyed by shot — match.py puts it on the recipe card. */
 const recordSettings = (s: Shot) => withLock(join(INBOX, '.settings.lock'), () => {
   const all = existsSync(SETTINGS) ? JSON.parse(readFileSync(SETTINGS, 'utf8')) : {}
-  all[s.key] = { model: s.model, aspect: s.aspect, mode: s.mode, durationSeconds: s.duration, count: 1, resolution: '720p', at: new Date().toISOString() }
+  all[s.key] = { model: s.model, aspect: s.aspect, mode: s.mode, durationSeconds: s.duration, count: 1, resolution: '1080p (Flow upscale of the 720p render)', at: new Date().toISOString() }
   writeFileSync(SETTINGS, JSON.stringify(all, null, 1))
 })
 const missing = () => shots.filter(s => !(existsSync(s.out) && statSync(s.out).size > 0))
@@ -141,7 +141,7 @@ async function download(i: number, out: string) {
         await cdp.send('Browser.setDownloadBehavior', dl as any)
       }
       const done = new Promise<string>((ok, bad) => {
-        const t = setTimeout(() => bad(new Error('DOWNLOAD_TIMEOUT')), 90_000)
+        const t = setTimeout(() => bad(new Error('DOWNLOAD_TIMEOUT')), 300_000)   // the 1080p upscale takes ~45 s
         cdp.on('Browser.downloadProgress', (e: any) => {
           if (e.state === 'completed') { clearTimeout(t); ok(e.guid) }
           else if (e.state === 'canceled') { clearTimeout(t); bad(new Error('DOWNLOAD_CANCELED')) }
@@ -152,9 +152,13 @@ async function download(i: number, out: string) {
       const item = page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /^\s*download\s*Download\s*$/ }).first()
       await item.waitFor({ state: 'visible', timeout: 15_000 })
       await item.click()
+      // 2026-11-27 (Kai: "we should always generate at 1080p"): take Flow's free "1080p Upscaled" row (about 45 s to
+      // make; 4K is the paid row, never picked). Falls back to "720p Original size" if the row is missing.
       const orig = page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /Original size/i }).first()
       await orig.waitFor({ state: 'visible', timeout: 15_000 })
-      await orig.click()
+      const hd = page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /1080p\s*Upscaled/i }).first()
+      if (await hd.isVisible().catch(() => false)) await hd.click()
+      else await orig.click()
       const guid = await done
       copyFileSync(join(dir, guid), out)
       await page.keyboard.press('Escape').catch(() => {})

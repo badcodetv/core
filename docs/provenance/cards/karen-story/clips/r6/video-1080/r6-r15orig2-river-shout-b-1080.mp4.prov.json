@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video-1080/r6-r15orig2-river-shout-b-1080.mp4",
+ "made": "2026-11-27T14:38:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/probe-upscale.mts (Download > 1080p Upscaled)",
+ "model": "Omni 1.2 Flash, Flow 1080p upscale",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r15orig2-river-shout-b.mp4",
+ "why": "Kai, 2026-11-27: 'we should always generate at 1080p'; Flow's free 1080p upscale of the 720p original (matched to it by PSNR ~40 dB at 3 s)"
+}
