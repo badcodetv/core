@@ -8,29 +8,34 @@
  "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
  "source_sequence": "Karen v4",
  "cut": {
-  "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r12/edl.json",
-  "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r12/preview.mp4",
-  "script": "KAREN_SEG=~/.cache/karen-seg-r12 python3 scripts/karen/story-cut-r12.py  (r12, 2026-11-26: Kai's 13 notes on r11; short segments retried)",
+  "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r13/edl.json",
+  "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r13/preview.mp4",
+  "script": "KAREN_SEG=~/.cache/karen-seg-r13 python3 scripts/karen/story-cut-r13.py  (r13, 2026-11-27: Kai's new ending, Draft A of ending-r13.md)",
   "previous": {
-   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r11/edl.json",
-   "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r11/preview.mp4",
-   "script": "KAREN_SEG=~/.cache/karen-seg-r11 python3 scripts/karen/story-cut-r11.py  (r11, 2026-11-26: Kai's 19 notes on r10; segments built on local disk, copied back to D:)",
-   "before": {
-    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r10/edl.json",
-    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r10/preview.mp4",
-    "script": "python3 scripts/karen/story-cut-r10.py  (r10, 2026-11-26: Kai's 18 notes on r9; never freezes a clip; new shots scenes/story-r6-shots keys r10*; voices narration-r10)",
+   "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r12/edl.json",
+   "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r12/preview.mp4",
+   "script": "KAREN_SEG=~/.cache/karen-seg-r12 python3 scripts/karen/story-cut-r12.py  (r12, 2026-11-26: Kai's 13 notes on r11; short segments retried)",
+   "previous": {
+    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r11/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r11/preview.mp4",
+    "script": "KAREN_SEG=~/.cache/karen-seg-r11 python3 scripts/karen/story-cut-r11.py  (r11, 2026-11-26: Kai's 19 notes on r10; segments built on local disk, copied back to D:)",
     "before": {
-     "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r9/edl.json",
-     "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r9/preview.mp4",
-     "script": "python3 scripts/karen/story-cut-r9.py  (r9, 2026-11-26: Kai's 6 notes on r8; never freezes a clip; new shots scenes/story-r6-shots keys r7*/r8*/r9*)",
+     "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r10/edl.json",
+     "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r10/preview.mp4",
+     "script": "python3 scripts/karen/story-cut-r10.py  (r10, 2026-11-26: Kai's 18 notes on r9; never freezes a clip; new shots scenes/story-r6-shots keys r10*; voices narration-r10)",
      "before": {
-      "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
-      "r3": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json",
-      "r3b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/edl.json",
-      "r4": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
-      "r4b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
-      "r5": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/edl.json",
-      "r8": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/edl.json"
+      "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r9/edl.json",
+      "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r9/preview.mp4",
+      "script": "python3 scripts/karen/story-cut-r9.py  (r9, 2026-11-26: Kai's 6 notes on r8; never freezes a clip; new shots scenes/story-r6-shots keys r7*/r8*/r9*)",
+      "before": {
+       "v4": "/mnt/d/badcode-videos/karen-story/timeline/cut-v4/edl.json",
+       "r3": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3/edl.json",
+       "r3b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r3b/edl.json",
+       "r4": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4/edl.json",
+       "r4b": "/mnt/d/badcode-videos/karen-story/timeline/cut-r4b/edl.json",
+       "r5": "/mnt/d/badcode-videos/karen-story/timeline/cut-r5/edl.json",
+       "r8": "/mnt/d/badcode-videos/karen-story/timeline/cut-r8/edl.json"
+      }
      }
     }
    }

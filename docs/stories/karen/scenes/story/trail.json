@@ -174,5 +174,16 @@
   "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
   "what": "Cut r12: Kai's 13 notes on r11 (dumped in feedback/timeline-r11); evacuation take A picked by Kai on https://claude.ai/artifact/SKyiDbBxWyvyZZ17nAWxyd",
   "rebuild": "KAREN_SEG=<local dir> python3 scripts/karen/story-cut-r12.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <page-dir>"
+ },
+ {
+  "at": "2026-11-27T11:20:56+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r13: Kai's new ending (chat, 27 Nov; Draft A of ending-r13.md): the President asks to speak to his manager, the ladder's sixth rung CHIEF OF STAFF, the payphone rings for Karen, the Situation Room; 2 new Flow clips (r13ring, r13room), 4 narration lines; published with only the 42 changed files",
+  "rebuild": "KAREN_SEG=<local dir> python3 scripts/karen/story-cut-r13.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <page-dir>",
+  "decided": [
+   "Kai: 'Let's go Draft A'"
+  ]
  }
 ]
