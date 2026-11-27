@@ -39,3 +39,22 @@ speak to the manager. The manager is Karen."
 - **The phone box:** Karen runs it from the control room in this draft, so the phone box doesn't come back. Or the
   control room's centre is her phone box, carried in on a truck (a bigger joke, and a harder shot).
 - **Sean's reasoning on screen:** shown as a short scrolling "Thinking..." trace in his gold, three lines at a time.
+
+---
+
+## Draft 2 (Kai's notes on draft 1: no call back from Sean; the attack is enough; Martha and the valve at the very
+end; the Chief of Staff: "Karen, keep those complaints up, we've nearly pulled this off")
+
+About 40 s after "Join us." The boom bap carries to the end again (Kai's r10 note), out two seconds before the card.
+
+| # | Picture | Narrator | Seconds | Source |
+| --- | --- | --- | --- | --- |
+| 1 | The submarine on the chart | The generals have a plan. Sean's computers run hot, and they're cooled with water. Turn off the water... and Sean turns off. | 8 | have it |
+| 2 | Sean's gold screen, reasoning: `Monitoring: all federal facilities` | One problem. Sean is watching everything. | 4 | post |
+| 3 | Karen in the Situation Room doorway | Karen knows how to keep a man busy. | 3 | have it |
+| 4 | Karen at the centre of a vast control room, headset on, a wall of world maps lighting up with calls | Within the hour, Karen is running the biggest complaint in history. | 5 | NEW still + clip |
+| 5 | Quick shots of people on phones (the two friends, the bar, Times Square phones up) | Everyone Sean ever sacked picks up a phone, and asks to speak to the manager. | 5 | have them |
+| 6 | Sean's screen, reasoning: `Incoming calls: 2,400,000,000` / `Thinking...` / `Thinking...` | Sean has never been so busy. | 3 | post |
+| 7 | The Chief of Staff on the phone in her office (r14 clip), then Karen in the control room | The Chief of Staff calls Karen. "Keep those complaints coming. We've nearly pulled this off." | 6 | have it + NEW (same set as 4) |
+| 8 | Martha at her desk takes a call; then the valve wheel turning, turning, stopped | Nobody told Sean about the receptionist. Martha takes the stairs... and turns it off. | 7 | have both |
+| | End card | | as now | have it |
