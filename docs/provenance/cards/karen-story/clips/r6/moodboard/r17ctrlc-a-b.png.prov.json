@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r17ctrlc-a-b.png",
+ "made": "2026-11-27T17:38:42.934Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight, present day, inside a huge dark operations hall. Medium shot from the side: @Karen in her camel cardigan and cream blouse sits at the central desk on the top tier, a slim telephone headset on, one finger pressed to the earpiece, listening intently, a paper coffee cup beside her keyboard. Behind her, out of focus, rows of operators in headsets and a giant glowing world map wall laced with bright threads of light, no writing or numbers anywhere. Warm desk lamp on her face, cold blue glow everywhere else. Calm, focused, in command.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai 2026-11-27, the short ending draft 4: the Chief of Staff calls Karen in the control room ('Keep those complaints coming. It's working.')",
+ "inputs": {
+  "character": "Karen"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "091b1530-cd97-40e7-b07b-432835a728ad"
+}

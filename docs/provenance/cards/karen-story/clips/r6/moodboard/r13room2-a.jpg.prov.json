@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room2-a.jpg",
+ "made": "2026-11-27T17:46:51+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "pick (jpg of r13room2-a-a.png)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room2-a-a.png",
+ "why": "r17: start still for the plan taking shape"
+}

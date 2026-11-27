@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r17ctrlc-r17ctrlc-a.mp4",
+ "made": "2026-11-27T17:43:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman at the desk listens to her earpiece, finger pressed to it, eyes narrowing; then a small, satisfied nod, the faintest smile, and she turns back to her screen and types quickly. Behind her the map wall flickers with racing threads of light and the operators keep working. Sound: the hum of a busy room, keyboards, distant phones ringing. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r17ctrlc-a.jpg",
+ "why": "Kai 2026-11-27, the short ending (ending-r16.md draft 4): Karen runs the denial of service attack: the Chief of Staff calls Karen ('Keep those complaints coming. It's working.')",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r17ctrlc-a.jpg",
+  "character": "Karen",
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r17ctrlc",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "1080p (Flow upscale of the 720p render)",
+  "at": "2026-11-27T17:41:09.612Z"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r17ctrl-a.jpg",
+ "made": "2026-11-27T17:39:29+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "pick (jpg of r17ctrl-a-a.png)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r17ctrl-a-a.png",
+ "why": "r17 pick: the control room"
+}

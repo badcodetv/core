@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r17plan-r13room2-a.mp4",
+ "made": "2026-11-27T17:49:05+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman in the camel cardigan walks from the doorway to the table, puts both hands flat on it and starts explaining, calm and certain; one by one the men and women in suits lean in towards her, listening, one of them slowly nodding. The tall man in the dark suit in the foreground stays with his back to us. Sound: a quiet room, low voices, a chair creaking. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room2-a.jpg",
+ "why": "Kai 2026-11-27, the short ending (ending-r16.md draft 4): 'The idea of a denial of service attack starts to take shape' (Karen and the generals)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room2-a.jpg",
+  "character": "Karen",
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r17plan",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "1080p (Flow upscale of the 720p render)",
+  "at": "2026-11-27T17:47:22.635Z"
+ }
+}

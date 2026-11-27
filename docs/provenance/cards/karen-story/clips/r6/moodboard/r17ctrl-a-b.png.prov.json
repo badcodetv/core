@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r17ctrl-a-b.png",
+ "made": "2026-11-27T17:38:05.097Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight, present day. An enormous dark operations hall built like a space-flight control centre: tiered rows of long desks with glowing monitors, dozens of operators in telephone headsets, and filling the far wall a giant screen of a glowing world map laced with thousands of bright threads of light racing between cities, no writing or numbers anywhere. On the top tier in the middle stands @Karen in her camel cardigan and cream blouse, a slim telephone headset on, one arm raised and pointing at the map, running the whole room, composed and completely in charge. Camera behind and to one side of her, the vast map wall ahead. Warm desk lamps, cold blue screen glow.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai 2026-11-27, the short ending draft 4: Karen runs the denial of service attack from a NASA-like control room",
+ "inputs": {
+  "character": "Karen"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2f82d3a7-fab5-41d7-bc2f-b9276f5a31db"
+}
