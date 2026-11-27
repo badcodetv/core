@@ -20,7 +20,7 @@ film and a music video. **Don't carry one part's look or sound into the other.**
 cool-neutral colour, flat overcast or motivated light, no lens flares, a calm observational eye. Ordinary
 class-coded British places; the environment carries the argument. Warmth only in three places: the wank
 tank's gold headlights, the ceremony fire, the fire in the ruins (scenes 10–12 go near-black with that fire
-as the key). **The imagery is Jack's, made by hand in Flow: do not generate Camping frames unasked.** The
+as the key). The
 verbatim preambles per kind of frame are in [look.md](./look.md#preambles); every prompt ends
 `Compose for a 16:9 frame.` then `Thanks.` Cast: `@Tarquin` `29e97ae3…`, `@Bob` `7566666e…` and variants in
 Flow project `camping-v2` (`9b729074…`); the tent is blue and grey; the wank tank is a blacked-out BMW X8,
@@ -31,12 +31,10 @@ plate `BAD C0DE`. Clips: Omni 1.2 Flash.
 down, never flatness. Tarquin `Zubenelgenubi`, Bob `Algenib`. Score: nine instrumental Suno cues
 ([songs/score.md](./songs/score.md)), EXPLORING; the crash is silent; one motif bookends the film.
 
-**Story-only rules (film)**
-- Never name a character in a prompt; cast the Character ("the man in the reference image").
-- Never put "homeless" or any destitution word in a Flow field.
-- No readable lettering except the Waitrose fascia, the foreshore years `1y`/`4y`, the `BAD C0DE` plate.
-- The crash is shown by objects afterwards, never the impact. Advert words make an advert: no glossy, perfect bokeh.
-- Narration is silent over the crash (`3a`), the smile fading (`5d`), and past the last word on the `12d` tilt.
+**Working on it (Kai, 2026-11-27):** the film is made like every other story now: new shots are generated on
+the scene tools (`scene-images` → `scene-animation`), new lines voiced in the locked voices, cut on the local
+timeline. The old Camping-only rules (imagery by hand only, scene-numbered narration rules from the first
+build) were deleted as outdated; Flow's prompt rules live in `docs/rules/flow.md`.
 
 ## Music video
 

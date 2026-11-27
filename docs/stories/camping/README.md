@@ -1,13 +1,7 @@
 # Camping
 
-> ## 🖐 Visuals are developed externally — do not regenerate
->
-> **As of 2026-08-08, Camping's imagery is Jack's, made by hand in Flow outside
-> this repo.** Do not generate character sheets, panels or a cover for this
-> story, and do not try to reconstruct or replicate what already exists. The
-> prompt-ledger initiative
-> ([`design/2026-08-08-story-covers-and-prompt-ledger.md`](../../../design/2026-08-08-story-covers-and-prompt-ledger.md))
-> explicitly excludes Camping and Karen for this reason.
+> **Since 2026-11-27 (Kai):** new Camping shots are generated like any other story's, in this look. The rule that
+> Camping's imagery was made by hand only was deleted as outdated (see [`badcode.md`](./badcode.md)).
 >
 > The **written canon below is still ours and still authoritative** — story,
 > beats, characters, songs. It is only the image pipeline that lives elsewhere.

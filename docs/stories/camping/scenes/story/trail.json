@@ -22,5 +22,13 @@
   "url": "https://claude.ai/artifact/4Haz6YZqwWsCAJSMv5dyAE",
   "what": "Words re-timed off the render itself (82 lines): the voice files on disk were re-recorded after Jack's cut, so timing from them was up to ~5 s out and six clips came back silent",
   "rebuild": "python3 scripts/scene/hear-lines.py '/mnt/d/badcode-videos/camping-story/Camping Video NEW!/camping jack/.bridge/state-0 synced.json' docs/stories/camping/scenes/story --render '/mnt/d/badcode-videos/camping-story/Camping story video.mp4' --hint 'Tarquin, Bob, Waitrose, ayahuasca, BMW, wank tanks.' && python3 scripts/scene/build-timeline.py docs/stories/camping/scenes/story /mnt/d/badcode-videos/camping-story/timeline/page"
+ },
+ {
+  "at": "2026-11-27T16:14:24+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "what": "Kai's 42 notes on 0 synced answered on the local timeline (cut-notes.json); script-r1.md drafted from them; outdated Camping-only rules deleted (Kai)",
+  "feedback": "feedback/timeline-r1",
+  "feedback_docs": 42
  }
 ]

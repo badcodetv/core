@@ -8,9 +8,8 @@
 [`prompts.md`](./prompts.md) carries. Music video v2 ("Signs") is LOCKED as **photoreal** (Jack,
 2026-09-27) with its own capture line (see *Per part*).
 
-> 🖐 **Camping's imagery is Jack's, made by hand in Flow** ([`README.md`](./README.md)). This file says
-> what the look *is*, so a lost frame can be rebuilt and a new one matches. It is not a licence to
-> generate Camping frames unasked.
+> **Since 2026-11-27 (Kai):** new Camping shots are generated like any other story's, in this look. The rule that
+> Camping's imagery was made by hand only was deleted as outdated (see [`badcode.md`](./badcode.md)).
 
 *(This file was `style.md` until 2026-10-28. It used to defer to a "global BadCode house style" in the
 retired `badcode-art-direction` skill. There is no house style any more; the parts of that look Camping

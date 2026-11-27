@@ -1,0 +1,126 @@
+{
+ "round": 1,
+ "plan": [
+  {
+   "h": "Words (script-r1.md, in the scene folder)",
+   "items": [
+    "About 20 new lines, most in your own words; three opening lines are my drafts (the CDO idea). About 20 lines cut (the treadmill speech, Bob's old speech, the therapy flourishes, the car-park insults).",
+    "The plea and the ending: next round, as you said."
+   ]
+  },
+  {
+   "h": "Voices (AI Studio, the locked three)",
+   "items": [
+    "Re-voice every new line: Nell about 10, Tarquin about 5, Bob about 6. No Suno credits."
+   ]
+  },
+  {
+   "h": "Picture, new (generated, then picked on a page)",
+   "items": [
+    "About nine new shots: the City into the NatWest Tower; three trading-floor shots (Jack's two September stills first); Tarquin in the car worried; the car from outside; the wide Waitrose car park; Bob in the tent with the wank tank outside; Bob and Tarquin in one frame; 28 and 67 without the beer."
+   ]
+  },
+  {
+   "h": "Picture, edit only",
+   "items": [
+    "Cut the treadmill, the driving shot and the 58.5 s flash; move the locksmith shot; halve the trip with fades."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Go on the words? Change any line on its slip; then I voice them.",
+    "The three opening drafts (beat 0): keep, or run the dialogue-options tool for a few ranked versions."
+   ]
+  }
+ ],
+ "replies": {
+  "at99": "Pineapples. Test received: this note came off disk with no upload.",
+  "at172": "Yes: a new opening shot of the City of London pushing in to the NatWest Tower. New still, then a clip. For the record (a free check, not a guess): Tower 42, the old NatWest Tower, is north of the river on Old Broad Street, between St Paul's and the Gherkin. The shot will put it there, with no readable bank name on it. → script-r1.md beat 0.",
+  "at230": "Agreed, it's the 2008 story, not a Michael Burry short. The name you were after: the bundles were mortgage-backed securities, packaged into CDOs (collateralised debt obligations) and stamped triple A by the ratings agencies; credit default swaps were the bets and insurance written on them. Draft: \"Tarquin here is buying bundles of other people's mortgages. Sliced, diced, and stamped triple A.\" / \"Nobody checks what's inside. Why would you? The money's too good.\" It pins it on him without a lecture. → script-r1.md beat 0.",
+  "at262": "Yes, the new words run over these shots too.",
+  "at306": "Yes: \"Profiting off of the sinking ship\" goes; \"Causing economic collapse\" stays to finish the run. The lift is replaced by the trading-floor mania shots: Jack's accepted stills from September (the biro jabbing a screen, champagne into a mug) come back first, from Flow project camping-v2, plus one new one.",
+  "at392": "Yes: this shot (38.mp4) is replaced by a third trading-floor shot.",
+  "at466": "Yes, your words: \"He's completely oblivious to the hole he and his friends have dug, which the entire world is about to fall into.\" Replaces \"This prick stands without a scratch.\"",
+  "at522": "Yes: the whole treadmill section goes, from \"Leveraged ETFs\" to \"good business\". We go from \"Nice tie, mate\" (via the locksmith shot below) straight to Bob.",
+  "at560": "Covered: the speech is cut (your later note), so the ETF line goes with it. The CDO idea moves into the narrator's opening instead (see your 00:00:09 note).",
+  "at796": "Yes, flag kept: the locksmith-at-the-house shot (37.mp4) moves to straight after \"Nice tie, mate\", with the narrator over it: \"Tarquin is completely unaware that people are about to lose their homes because of his bank.\" That keeps the housing thread the whole film rests on.",
+  "at1417": "Found: a two-frame flash at 58.5 s, just before this shot. Edit-only fix: it gets cut out.",
+  "at2212": "Yes, your words: \"Thank you for helping me get my bonus.\" (Tarquin, re-voiced.)",
+  "at2336": "Yes: a second angle of Tarquin in the car, worried, so it's a real cut. New still, then a clip.",
+  "at2388": "Yes, your words, over a new shot of the car from outside: \"Tarquin is very confused by this feeling. Normal people call it empathy.\" It bridges Tarquin to Bob.",
+  "at2436": "Yes: the tent shot (12.mp4) with the narrator, \"Meanwhile, Bob's life has gone rather downhill.\", then a second of nothing, then Bob answering her: \"Speak for yourself, love. I quite like this tent.\" Bob's whole old speech goes.",
+  "at2579": "Yes: 13.mp4 is replaced by a wide of the whole Waitrose car park full of cars, built as the twin of the ending's dystopian wide (29.mp4). New still, then a clip.",
+  "at2748": "Yes: \"It would be nice to have a sandwich, though.\" over the wide, then we cut inside the tent.",
+  "at2810": "Yes, inside the tent: \"To be honest, someone talking to me like I'm a human would be enough.\" Voiced low energy with a lot of feeling, as you describe.",
+  "at2890": "Yes, your words: \"I booked an emergency appointment with my three-hundred-pound-an-hour therapist. I needed to understand that feeling I had in the car.\"",
+  "at3032": "Kept: \"She said empathy was not an emergency.\"",
+  "at3208": "Yes, one sentence: \"She says no amount of therapy will help, and that instead I need a psychedelic experience.\"",
+  "at3308": "Cut: \"That sounds splendid\" and \"To unravel the enigma that is my psyche\".",
+  "at3387": "Yes: the Tarquin driving shot and \"Will that even cut it?\" go. Straight from the therapist into the Waitrose car park.",
+  "at3463": "Cut: \"Yeah, I shall.\"",
+  "at3491": "Yes, your words, over the shot circling the wank tank: \"Tarquin stops for supplies on his way to the psychedelic retreat. Here he is, parking in the only way he knows how.\"",
+  "at3596": "Same note as the one before; done there.",
+  "at3666": "Yes, in this order: a new shot of Bob inside the tent looking out, the wank tank parked in front; Bob: \"I hate these wank tanks. Far too big.\" (pause) \"I miss my wife.\" Then the narrator: \"As Tarquin gets out of his car and locks eyes with Bob, two worlds collide.\" (pause) \"They're both thinking very different things.\" Then \"Get a job, you fuckwit.\" (Your note says \"rank tank\": I've read it as wank tank, the film's word. Say if you meant a new word.)",
+  "at3752": "Cut: \"Judge me swimming there in your pool of piss.\"",
+  "at3846": "Kept: \"Even if I give you money, you'll shoot it up your arm.\"",
+  "at3923": "Cut: the Kurt Cobain line.",
+  "at3998": "Cut: \"Then have a go at me.\"",
+  "at4115": "Cut: \"Fucking wank tanks.\" Bob has already said it from inside the tent.",
+  "at4162": "Yes, cut: \"Different car. Different fella.\" Bob keeps \"We should have left early. I should have.\"",
+  "at4271": "Cut: \"Two-man tent, this.\"",
+  "at4340": "Cut: \"Just the one man.\" A quick exchange.",
+  "at4553": "Yes: the 4x4s line goes, the tailspin line stays. And a new shot: Bob just inside the tent, Tarquin standing by his car looking down at him, in two or three attempts to pick from.",
+  "at4590": "Clear: the 4x4s line is cut.",
+  "at5673": "Cut: \"I only wanted to make money.\"",
+  "at6013": "Yes: the trip goes to about half its length, each shot fading into the next. The vortex (62.mp4) goes; the trees bending, the river turning into a snake and the river of gold stay. The plea gets trimmed to fit, and we talk about the narrator's exact words next round, as you say. One check on the cut: I'll confirm which clips are the snake and the gold on the contact sheet before cutting.",
+  "at6279": "Yes: \"Surprise, surprise. He did not experience an ego death.\", then as his eyes close and he drifts off, the narrator: \"Sweet dreams, Tarquin.\"",
+  "at6409": "Yes: 28.mp4 re-made without the beer, and Tarquin, very shocked: \"Where the fuck am I?\"",
+  "at6512": "Yes: 67.mp4 re-made without the beer.",
+  "at6563": "Noted: the early car-park wide (beat 4) is built as the twin of this shot, before the fall."
+ },
+ "kai_round1": {
+  "at560": "I think rather than leveraged ETFs, we say the actual words, which is bundled credit default swaps. There was a word for it, I can't quite remember right now, but it's like the banks would slice and dice all these dodgy mortgages into a package of debt that then the credit ratings agencies gave triple A status to, even though it was a bunch of garbage because it was mortgages for people who couldn't afford to pay it back. What was the name for that? I think that's what Tarquin should be saying. Also, the running machine he's on has two sides to it, which looks completely strange because then he wouldn't be able to get off that running machine.",
+  "at3666": "I think we should have a shot of Bob sat in the tent looking out of the tent But with the rank tank parked in front for a second And He can say like oh no, it's one of those cars. I Miss my wife, you know because then it's making obvious that And in fact, he should call them a rank tank so Bob should say I hate it I hate these rank tanks They're far too big like the light And then yeah, okay. Yeah, I hate these rank tanks Pause I miss my wife And so that should be Bob's voice from inside the tent in between the end of the last scene and then this one\nSo, on to this scene, the narrator should start, the narrator should say as Tarquin gets out of his car and locks eyes with Bob, two worlds collide and then pause. Then we say they're both thinking very different things.\nAnd then after the narrator says that then Tarquin says get a job you fuckwit",
+  "at392": "Yeah, similar. I think like we replaced it. We cut a couple of videos of like interesting trading floor scenes because this video here is not visually interesting.",
+  "at3308": "I think we cut that sounds splendid and the next line to unravel my psyche let's just cut both of those please we don't need talk with to say this",
+  "at4271": "Same, I think we're going a bit too much on here",
+  "at5673": "I think I think we don't need to do that. I only wanted to make money parts. So let's cut that",
+  "at1417": "Just before this scene comes in, there's a flicker of another video, and I think that's just an editing error.",
+  "at2388": "I think we should kick the narrator in, after Tarquin has said, it is a tad chilly though, we might need another cut, maybe of outside the car, and the narrator says, Tarquin is very confused by this feeling that he has. Normal people would call it empathy, because we're making a joke, but it's the bridge between Tarquin speaking and Bob speaking.",
+  "at796": "I think this idea, like this shot is great and I've said let's get rid of this whole section, which I agree with. But the fact is the 2008 happened because of houses, mortgages and mortgages being stretched. And then since 2008, central banks have printed money and that's created the wealth gap, which has led to homelessness. So that's the whole story. And the 2008 financial crash came about because of housing. And so this shot here where Tarquin is saying some twat is going to lose a house over this trade and I'm never going to meet them. It's a shame to lose that as an inflection, even though I do think we should remove this whole section for the sake of pacing. I think this concept of pointing out that like people will lose their home is important. So I'm just planting this flag and maybe what we do is we work this into the narrator once we've met Bob. Or, I've just had an idea. Possibly, this scene of a house, and clearly is a locksmith, should appear after the nice tie-mate scene, and the narrator should say Tarquin is completely unaware that people are about to be made homeless because of his bank's actions, whilst we're looking at this scene. And I think that takes the value from this bit without cutting it.",
+  "at3596": "So, yeah, I think I've added this comment, but just before he says Tarko stops to get some supplies here, he is parking in the only way he knows how. That's sort of the line up until the end of this, like, this shot where we're rotating around the Wanktag.",
+  "at3032": "I really like the empathy is not an emergency joke on the end of, like Tarquin has said, I booked an emergency appointment with my 300 pound an hour therapist because I needed to understand that feeling I had in the car. And then she said empathy was not an emergency. Perfect.",
+  "at230": "So I think to make the 2008 joke work, we should not say shorting the stocks he knows will plummet, because that's like a Michael Burry scenario. And this is more like the run up to credit default swaps. So let's use some terminology from 2008 here, and it's like Tarquin is bidding on the latest round of credit default swaps. He's been making his company a huge amount of money. Nobody's been really looking into the credit ratings, though. And what I mean to say there is not literally what we should write the script to say, but it's more about banks taking on incredibly risky assets without realizing that that's what they were doing because they were Too fixated on the profits that they were making that was the cause of 2008\nSo, what I mean in my previous comment is that we should come up with a script that supports that narrative rather than shorting. It's more about getting carried away in the hysteria and the mania of the market. Nobody thought to check. So it's kind of what we're really saying is, you know, 2008 was Tarquin's fault.",
+  "at522": "I think we cut that entire, this entire scene. So as soon as we, ignore my previous comment about the, I think after we go to nice time, mate. And so ignore my previous comment about recutting the running machine. Let's just delete the running machine right up until we see Bob. We've already introduced Tarquin. We don't really want to hear from him. And I think the story would progress much better if we jumped straight to Bob from here.",
+  "at3387": "I think here we don't say will that even cut it I think okay let's lose this seed of Tarquin Drive-in we go from the therapist straight into the waitress car park",
+  "at4340": "Same, let's drop this. Let's make this a quick interaction.",
+  "at6409": "I think we shouldn't be holding the beer I think that and I think Tarquin should say where the fuck am I And obviously when he says that, he should be very shocked.",
+  "at3923": "I think we dropped this line, looks less like Kurt Cobain's skid marks.",
+  "at6013": "OK, Claude, so this entire sequence of Tarquin, I think it needs to be about half the length. And I think we need to fade each scene into the next scene. There's some great clips in here, though, especially like the, although I'd say this one, we could drop this one, cut this one all together, like the sort of vortex behind him. The one before of the trees bending over is good. And then the next ones where it's like a river that turns into a snake, that's really good. And then the one after that, where there's like a river of gold, that's really good. So let's cut the total length of this whole scene of him stood there in half and fade from one image to the next. And then I think on the next time round, we'll talk about the narrator's exact script.",
+  "at2890": "I think here we say we've already done the joke with the narrator how Tarquin has felt something so he should hear say like you know I I booked I booked an emergency appointment with my 300 pounds an hour therapist I needed to understand the feeling I had driving home the other night",
+  "at2579": "I really like the previous cut where we've got raindrops on the camera. That's great. Then we cut immediately to basically the same shot just with people walking and it's a bit jarring. So I suggest we have a completely different cut of the car park. What would be interesting would be to do a zoomed out version of the car park, equivalent to at the very end where it's the dystopian car park outside Waitrose, just with lots of cars in because that's a nice visual setup for the ending.",
+  "at2810": "I think here is where he says, so he said the sandwich and then we cut into inside the tent and he goes, to be honest, just for somebody to talk to me like I'm a human would be enough. And this needs to be delivered with like high amounts of emotion but I don't mean high energy, I mean low amounts of energy but emotional.",
+  "at262": "I think this, based on my previous comments about re-wording the script, obviously that would be quite a long amount of words, so that would carry over these images too.",
+  "at2212": "I think rather than, I cannot wait for my bonus, it would be, and I will have, thank you for helping me get my bonus, would be what he would say.",
+  "at3463": "Again, I think we cut. Yeah, I shall.",
+  "at6279": "I think we say here, surprise surprise, he did not experience an ego death and then just as he's closing his eyes, it's like, actually, he drifts off to sleep. The narrator should say, well how about the narrator says, sweet dreams Tarquin. There you go.",
+  "at6563": "For reference, earlier on in the whole film I mentioned that we'd introduce a sort of zoomed out shot of the whole Waitrose car park. It would be a replica of this shot just before the downfall, obviously.",
+  "at2748": "I think at this point, hopefully we've covered Bob saying speak for yourself mate, I just wanted a sandwich plus the zoomed out shot and then we get into the tent. So I'm just sort of like at this point, we've cut into Bob inside the tent. After talking, it'd be nice to have a sandwich though.",
+  "at306": "Yeah, again, I think we changed the words here from profiting off the sinking ship. And I think rather than him in a lift, like as in profiting off a sinking ship causing or economic collapse, causing economic collapse, I think is good to finish this whole thing off. But profiting off a sinking ship, it's like, and I think we, rather than him in a lift, I think we go back to sort of like the crazy trading floor scenes, which were really fun. Like him stabbing the screen with a biro, him pouring champagne into a mug. Let's come up with some other scenes like that, like Wolf of Wall Street style, whilst the narrative is very much pinning that he caused this.",
+  "at4115": "I think we drop fucking rank tanks here, because we've mentioned it earlier, where we've introduced a new scene with Bob in the tent, we've said that.",
+  "at6512": "Again, he wouldn't be holding the beer here, please.",
+  "at172": "It would be great to recut this where the NatWest building which is clearly what this one is Like the layout of London here is wrong so you've got St Paul's and then to the west of that you've got the Gherkin and Then south of the river is the NatWest building So please can we just recut this as a shot of the City of London zooming into the NatWest building? I think we might have overfit the river in there somehow",
+  "at3208": "I think we turn these two sentences, she says no amount of therapy can help me, she says I need the most powerful psychedelic known to man, I think we turn that into one sentence which is she says that no amount of therapy will help and that instead I need to have a psychedelic experience.",
+  "at2436": "I think, so Bob comes in a bit too quick. We should bridge with the narrator. So we should change to the shot of the tent outside Waitrose. The narrator should kick in and say, meanwhile, Bob has fallen on hard times, because then we bridge from Tarquin's, like Tarquin is speaking, then the narrator talks about empathy, and then the narrator carries on talking. The visuals are switched. Meanwhile, Bob has fallen on hard times, and then we hear Bob say his lines. I think we need to change this line. I used to hear so many people debate what to do with us homeless back then, including work camps, euthanasia, and being sectioned. And then he says, couldn't give a fuck, mate. All I wanted was a sandwich. Right, so we need to change that entire speech. So the narrator, obviously, is the bridge into Bob's speech. We should give a second between the narrator and when Bob starts speaking, and then Bob should say, you know, he should almost respond to the narrator. So, like, meanwhile, Bob's life has gone rather downhill, and Bob could almost be a bit sarcastic to the narrator, and he could say, speak for yourself, love. I quite like this tent. It would be nice to have a sandwich, though.",
+  "at4553": "Yeah, I think, so let's just drop 4x4s as the most common vehicle in this car park as a line. But apart from that, this is a great bridge back from that scene. What would be amazing is if we could cut this exact scene, but with Bob and Tarquin stood Bob sat just in just inside the tent and Tarquin stood just outside the car looking down at him like we just had Let's try a couple of attempts at that because that would be a good cut",
+  "at4162": " And then I think when when we say I Think because we're not saying fucking went anxious. We're sort of saying It yeah, maybe we just say anyway, it wasn't this guy that killed your wife is or something like that uh We need a line here the because we're cutting fucking rank tanks Bob spacey to go. We should have left early We need yeah, we need we need a way to make this point maybe do you know what? Maybe we just cut this bit. Let's just cut different car different fellow. We don't need it",
+  "at3998": "And yeah, then have a go at me. Let's drop that.",
+  "at466": "I think rather than this prick stands without a scratch, I think it should be more about, you know, he's completely oblivious to the hole that he created. He's completely oblivious to the hole that he and his friends have created, that the entire world is about to fall into. That would be a good way to say it.",
+  "at2336": "I think the way that we cut from one face to another face is jarring so I think we should have a slightly different angle of Tarquin in the car, so the idea is we switch from him smiling about his bonus to then him looking slightly worried, but let's do that with an actual cut.",
+  "at3491": "And then the narrator says Tarquin stops to get some supplies on his way to the psychedelic retreat. Here he is, parking in the only way he knows how. That's the line here.",
+  "at3846": "Yeah, I keep, we keep, even if I give you money, you'll shoot it up your arm.",
+  "at3752": "But let's cut judge me swimming there in your pool of piss that makes no sense at all",
+  "at4590": "Yeah, just in case my previous comment wasn't clear, we dropped the 4x4s are the most common vehicle in this car park part."
+ }
+}

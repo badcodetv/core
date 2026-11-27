@@ -10,12 +10,11 @@ updated: 2026-08-27
 The exact prompts used to make Camping's stills and clips in **Google Flow**, kept
 verbatim so any frame can be rebuilt from the same words.
 
-> ## 🖐 Record, not a licence to generate
+> ## The accepted prompts
 >
-> Camping's imagery is **Jack's, made by hand in Flow outside this repo**
-> ([`README.md`](./README.md)). This file exists so a lost asset can be reproduced from
-> the exact prompt rather than reinvented. Do not generate new Camping imagery from
-> these blocks and do not "improve" the wording — they are a restore point.
+> Every accepted frame's exact prompt, so a lost asset can be rebuilt and a new shot can start from a proven one.
+> **Since 2026-11-27 (Kai):** new Camping shots are generated like any other story's, in this look. The rule that
+> Camping's imagery was made by hand only was deleted as outdated (see [`badcode.md`](./badcode.md)).
 >
 > Modelled on [Karen's ledger](../karen/prompts.md), which came first.
 
