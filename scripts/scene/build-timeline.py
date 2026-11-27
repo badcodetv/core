@@ -38,6 +38,16 @@ if not preview.exists():  # previews never travel through Drive (scripts/drive/e
              f"(the newest 'rebuild' in {sc.dir / 'trail.json'}, or scene.json cut.script), then run this again.")
 data.setdefault('title', sc.cfg.get('title', sc.slug) + ' Timeline')
 data.setdefault('heading', sc.cfg.get('title', sc.slug))
+heard = sc.dir / 'lines.json'  # words heard off the voice track (scripts/scene/hear-lines.py), for beats with no lines
+if heard.exists():
+    empty = [b for b in data['beats'] if not b.get('lines')]
+    for ln in json.loads(heard.read_text())['lines']:
+        b = next((b for b in empty if b['start'] <= ln['t'] < b['start'] + b['dur']), None)
+        if b is not None:
+            b.setdefault('lines', []).append({**{k: ln[k] for k in ('t', 'dur', 'who', 'name', 'text')}, 'i': len(b.get('lines', []))})
+    if any(b.get('lines') for b in empty):
+        data.setdefault('flags', []).append('The words are heard off the render by speech-to-text (lines.json), not a script, and timed to the video you watch: '
+                                            'a few were checked against the old written narration; check names and odd words by ear.')
 notes = sc.dir / 'cut-notes.json'  # Claude's read of the notes so far (round, plan, replies), shown on the page
 if notes.exists() and not OLD:
     n = json.loads(notes.read_text())

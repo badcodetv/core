@@ -1,0 +1,667 @@
+{
+ "heard_from": "Camping story video.mp4, speakers from state-0 synced.json track A3",
+ "model": "medium.en",
+ "lines": [
+  {
+   "t": 1.14,
+   "dur": 0.86,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "2008.",
+   "src": "1.wav"
+  },
+  {
+   "t": 2.84,
+   "dur": 1.34,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Trading floors.",
+   "src": "1.wav"
+  },
+  {
+   "t": 5.16,
+   "dur": 2.02,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "A cesspit of madness.",
+   "src": "1.wav"
+  },
+  {
+   "t": 7.62,
+   "dur": 0.9,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Tarquin here.",
+   "src": "1.wav"
+  },
+  {
+   "t": 9.14,
+   "dur": 2.3,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Shorting the stocks he knows will plummet.",
+   "src": "1.wav"
+  },
+  {
+   "t": 12.68,
+   "dur": 2.24,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Profiting off of the sinking ship.",
+   "src": "1.wav"
+  },
+  {
+   "t": 15.08,
+   "dur": 1.7,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Causing economic collapse.",
+   "src": "1.wav"
+  },
+  {
+   "t": 17.22,
+   "dur": 2.34,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "This prick stands without a scratch.",
+   "src": "1.wav"
+  },
+  {
+   "t": 20.08,
+   "dur": 1.08,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Nice tie, mate.",
+   "src": "2.wav"
+  },
+  {
+   "t": 21.82,
+   "dur": 1.82,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Leveraged ETFs.",
+   "src": "1.wav"
+  },
+  {
+   "t": 23.96,
+   "dur": 3.46,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "If you do not understand that, it is rather the point.",
+   "src": "1.wav"
+  },
+  {
+   "t": 28.36,
+   "dur": 5.38,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Some twat is going to lose a house over this trade and I am never going to meet them.",
+   "src": "1.wav"
+  },
+  {
+   "t": 34.34,
+   "dur": 1.62,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "That is not callousness.",
+   "src": "1.wav"
+  },
+  {
+   "t": 36.24,
+   "dur": 1.14,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "That is good business.",
+   "src": "1.wav"
+  },
+  {
+   "t": 38.18,
+   "dur": 0.28,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Bob,",
+   "src": "2.5.wav"
+  },
+  {
+   "t": 38.84,
+   "dur": 12.72,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "a struggling middle manager, decides that driving away from the stress of the economic crash with his wife is a better idea than watching politicians squirm on TV.",
+   "src": "2.5.wav"
+  },
+  {
+   "t": 52.18,
+   "dur": 4.5,
+   "who": "bob",
+   "name": "Bob",
+   "text": "We had four days booked in Wales and the tent was already in the boot.",
+   "src": "bob.wav"
+  },
+  {
+   "t": 57.76,
+   "dur": 2.52,
+   "who": "bob",
+   "name": "Bob",
+   "text": "She wanted to leave early to miss the traffic.",
+   "src": "bob.wav"
+  },
+  {
+   "t": 61.26,
+   "dur": 1.22,
+   "who": "bob",
+   "name": "Bob",
+   "text": "I said there was no rush.",
+   "src": "bob.wav"
+  },
+  {
+   "t": 63.32,
+   "dur": 1.66,
+   "who": "bob",
+   "name": "Bob",
+   "text": "A young fool I was.",
+   "src": "bob.wav"
+  },
+  {
+   "t": 70.86,
+   "dur": 0.64,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "2026.",
+   "src": "2.wav"
+  },
+  {
+   "t": 72.48,
+   "dur": 3.52,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I run the largest private equity firm in the country.",
+   "src": "2.wav"
+  },
+  {
+   "t": 76.9,
+   "dur": 3.58,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "We buy mouldy old empty social housing.",
+   "src": "2.wav"
+  },
+  {
+   "t": 81.46,
+   "dur": 1.1,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Easy money, really.",
+   "src": "2.wav"
+  },
+  {
+   "t": 83.16,
+   "dur": 1.98,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "He's ditched the tie, at least.",
+   "src": "3.wav"
+  },
+  {
+   "t": 87.54,
+   "dur": 2.98,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "You lot are going to have a few more mates out here soon.",
+   "src": "3.wav"
+  },
+  {
+   "t": 91.08,
+   "dur": 2.06,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I cannot wait for my bonus.",
+   "src": "3.wav"
+  },
+  {
+   "t": 95.74,
+   "dur": 2.98,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "It is a tad chilly, though.",
+   "src": "4.wav"
+  },
+  {
+   "t": 100.92,
+   "dur": 9.34,
+   "who": "bob",
+   "name": "Bob",
+   "text": "I used to hear so many people debate what to do with us homeless back then, including work camps, euthanasia, and being sectioned.",
+   "src": "bob.wav"
+  },
+  {
+   "t": 110.48,
+   "dur": 1.0,
+   "who": "bob",
+   "name": "Bob",
+   "text": "Couldn't give a fuck, mate.",
+   "src": "bob.wav"
+  },
+  {
+   "t": 112.12,
+   "dur": 2.06,
+   "who": "bob",
+   "name": "Bob",
+   "text": "I just wanted a sandwich, for Christ sakes.",
+   "src": "bob.wav",
+   "heard_as": "I just wanted a sandwich, for cross sakes."
+  },
+  {
+   "t": 116.74,
+   "dur": 2.22,
+   "who": "bob",
+   "name": "Bob",
+   "text": "Armchair manifestos aside.",
+   "src": "bob.wav"
+  },
+  {
+   "t": 119.38,
+   "dur": 4.9,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I booked an emergency appointment because I felt something in the car.",
+   "src": "5.wav"
+  },
+  {
+   "t": 124.92,
+   "dur": 2.66,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "She says empathy is not an emergency.",
+   "src": "5.wav"
+  },
+  {
+   "t": 128.18,
+   "dur": 3.66,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "She says there is no amount of therapy that can help me.",
+   "src": "6.wav"
+  },
+  {
+   "t": 132.3,
+   "dur": 4.12,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "She says I need the most powerful psychedelic known to man.",
+   "src": "6.wav"
+  },
+  {
+   "t": 137.12,
+   "dur": 1.42,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "That sounds splendid.",
+   "src": "6.wav"
+  },
+  {
+   "t": 138.96,
+   "dur": 2.9,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "To unravel the enigma that is my psyche.",
+   "src": "6.wav"
+  },
+  {
+   "t": 142.98,
+   "dur": 1.36,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Yeah, I shall.",
+   "src": "6.wav"
+  },
+  {
+   "t": 144.86,
+   "dur": 1.54,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Will that even cut it?",
+   "src": "3.wav"
+  },
+  {
+   "t": 146.78,
+   "dur": 0.64,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Tarquin.",
+   "src": "9.wav"
+  },
+  {
+   "t": 148.28,
+   "dur": 2.68,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Parking in the only way he knows how.",
+   "src": "9.wav"
+  },
+  {
+   "t": 152.6,
+   "dur": 2.08,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Get a job, you fuckwit.",
+   "src": "8.wav"
+  },
+  {
+   "t": 155.36,
+   "dur": 2.96,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Judge me swimming there in your pool of piss.",
+   "src": "8.wav"
+  },
+  {
+   "t": 159.16,
+   "dur": 2.34,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Even if I give you money, you'll shoot it up your arm.",
+   "src": "8.wav"
+  },
+  {
+   "t": 162.0,
+   "dur": 2.88,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Look less like Kurt Cobain's skid mark,",
+   "src": "8.wav",
+   "heard_as": "Look less like Kurt Cobain's skidmark."
+  },
+  {
+   "t": 165.46,
+   "dur": 1.22,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Then have a go at me.",
+   "src": "8.wav"
+  },
+  {
+   "t": 167.16,
+   "dur": 1.38,
+   "who": "bob",
+   "name": "Bob",
+   "text": "We should have left early.",
+   "src": "bob 2.wav"
+  },
+  {
+   "t": 169.22,
+   "dur": 0.8,
+   "who": "bob",
+   "name": "Bob",
+   "text": "I should have.",
+   "src": "bob 2.wav"
+  },
+  {
+   "t": 170.82,
+   "dur": 1.6,
+   "who": "bob",
+   "name": "Bob",
+   "text": "Fucking wank tanks.",
+   "src": "bob 2.wav"
+  },
+  {
+   "t": 173.08,
+   "dur": 0.74,
+   "who": "bob",
+   "name": "Bob",
+   "text": "Different car.",
+   "src": "bob 2.wav"
+  },
+  {
+   "t": 174.74,
+   "dur": 0.88,
+   "who": "bob",
+   "name": "Bob",
+   "text": "Different fella.",
+   "src": "bob 2.wav"
+  },
+  {
+   "t": 176.72,
+   "dur": 1.2,
+   "who": "bob",
+   "name": "Bob",
+   "text": "Two-man tent, this.",
+   "src": "bob 2.wav",
+   "heard_as": "Two man tentness."
+  },
+  {
+   "t": 179.4,
+   "dur": 1.7,
+   "who": "bob",
+   "name": "Bob",
+   "text": "Just the one man.",
+   "src": "bob 2.wav"
+  },
+  {
+   "t": 181.62,
+   "dur": 6.68,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Bob's mind is thrown into a tailspin every time he sees those wank tanks, as he calls them.",
+   "src": "4.wav"
+  },
+  {
+   "t": 188.3,
+   "dur": 3.84,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Four by fours are the most common vehicle in this car park.",
+   "src": "4.wav"
+  },
+  {
+   "t": 192.86,
+   "dur": 0.62,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Tarquin.",
+   "src": "5.wav"
+  },
+  {
+   "t": 194.34,
+   "dur": 2.1,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Off to do some spiritual work.",
+   "src": "5.wav"
+  },
+  {
+   "t": 197.0,
+   "dur": 1.76,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "With drugs, of course.",
+   "src": "5.wav"
+  },
+  {
+   "t": 199.4,
+   "dur": 4.26,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I cannot bloody meditate and I have never sat on a floor before.",
+   "src": "9.wav"
+  },
+  {
+   "t": 203.78,
+   "dur": 1.1,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "What am I, a dog?",
+   "src": "9.wav"
+  },
+  {
+   "t": 206.42,
+   "dur": 2.28,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Oh, that's kicked in all right.",
+   "src": "9.wav"
+  },
+  {
+   "t": 213.84,
+   "dur": 2.78,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I can't fucking handle this.",
+   "src": "9.wav"
+  },
+  {
+   "t": 217.48,
+   "dur": 2.04,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I would like to go to bed now, please.",
+   "src": "9.wav"
+  },
+  {
+   "t": 220.44,
+   "dur": 4.36,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Tarquin thinks he's pleading his innocence before God.",
+   "src": "8.wav"
+  },
+  {
+   "t": 225.94,
+   "dur": 1.08,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "It isn't God.",
+   "src": "8.wav"
+  },
+  {
+   "t": 227.76,
+   "dur": 0.54,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "I'd know.",
+   "src": "8.wav"
+  },
+  {
+   "t": 229.16,
+   "dur": 1.28,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "It's his conscience.",
+   "src": "8.wav"
+  },
+  {
+   "t": 231.78,
+   "dur": 1.28,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "First time they've met.",
+   "src": "8.wav"
+  },
+  {
+   "t": 233.94,
+   "dur": 0.42,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Please.",
+   "src": "12.wav"
+  },
+  {
+   "t": 234.92,
+   "dur": 1.76,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I only wanted to make money.",
+   "src": "12.wav"
+  },
+  {
+   "t": 236.68,
+   "dur": 1.72,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "That's not a crime.",
+   "src": "12.wav"
+  },
+  {
+   "t": 238.88,
+   "dur": 0.94,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "That's the economy.",
+   "src": "12.wav"
+  },
+  {
+   "t": 240.64,
+   "dur": 1.2,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I did everything right.",
+   "src": "12.wav"
+  },
+  {
+   "t": 242.36,
+   "dur": 2.98,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "Good school, good university, good job.",
+   "src": "12.wav"
+  },
+  {
+   "t": 245.98,
+   "dur": 1.14,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "And everyone clapped.",
+   "src": "12.wav"
+  },
+  {
+   "t": 247.88,
+   "dur": 2.26,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I didn't crash the bloody market.",
+   "src": "12.wav"
+  },
+  {
+   "t": 250.16,
+   "dur": 1.42,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "I just saw it coming.",
+   "src": "12.wav"
+  },
+  {
+   "t": 252.32,
+   "dur": 0.96,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "That's not greed.",
+   "src": "12.wav"
+  },
+  {
+   "t": 253.84,
+   "dur": 0.98,
+   "who": "tarquin",
+   "name": "Tarquin",
+   "text": "That's foresight.",
+   "src": "12.wav"
+  },
+  {
+   "t": 257.08,
+   "dur": 0.0,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "Surprise, surprise.",
+   "src": "5.wav",
+   "heard_as": "surprise."
+  },
+  {
+   "t": 257.32,
+   "dur": 2.9,
+   "who": "narrator",
+   "name": "Narrator",
+   "text": "He did not experience an ego death.",
+   "src": "5.wav"
+  }
+ ],
+ "fixed": "Lines with heard_as were corrected against the written narration in docs/stories/camping/narration/ (2026-11-27); the rest is as heard off the render."
+}

@@ -6,5 +6,21 @@
   "url": "https://claude.ai/artifact/4Haz6YZqwWsCAJSMv5dyAE",
   "what": "Camping Story '0 synced' (Jack's cut, Kai: the latest) on a timeline page: 10 beats from the score-cue markers, 66 shots; video = 17 Sep render 'Camping story video.mp4'",
   "rebuild": "python3 scripts/scene/premiere-to-edl.py '/mnt/d/badcode-videos/camping-story/Camping Video NEW!/camping jack/.bridge/state-0 synced.json' /mnt/d/badcode-videos/camping-story/timeline/cut-0-synced/edl.json --title 'Camping Story Timeline' --render '/mnt/d/badcode-videos/camping-story/Camping story video.mp4' --stem A1=sfx-clip-sound --stem A3=vox-voices --stem A4=mus-score && python3 scripts/scene/build-timeline.py docs/stories/camping/scenes/story /mnt/d/badcode-videos/camping-story/timeline/page"
+ },
+ {
+  "at": "2026-11-27T13:43:38+00:00",
+  "stage": "timeline",
+  "round": 0,
+  "url": "https://claude.ai/artifact/4Haz6YZqwWsCAJSMv5dyAE",
+  "what": "Narration words added to the page: 59 lines heard off the voice track (A3) by speech-to-text into lines.json, 6 words fixed against the old written narration",
+  "rebuild": "python3 scripts/scene/hear-lines.py '/mnt/d/badcode-videos/camping-story/Camping Video NEW!/camping jack/.bridge/state-0 synced.json' docs/stories/camping/scenes/story --hint 'Tarquin, Bob, Waitrose, ayahuasca, BMW, wank tanks.' && python3 scripts/scene/build-timeline.py docs/stories/camping/scenes/story /mnt/d/badcode-videos/camping-story/timeline/page"
+ },
+ {
+  "at": "2026-11-27T14:34:01+00:00",
+  "stage": "timeline",
+  "round": 0,
+  "url": "https://claude.ai/artifact/4Haz6YZqwWsCAJSMv5dyAE",
+  "what": "Words re-timed off the render itself (82 lines): the voice files on disk were re-recorded after Jack's cut, so timing from them was up to ~5 s out and six clips came back silent",
+  "rebuild": "python3 scripts/scene/hear-lines.py '/mnt/d/badcode-videos/camping-story/Camping Video NEW!/camping jack/.bridge/state-0 synced.json' docs/stories/camping/scenes/story --render '/mnt/d/badcode-videos/camping-story/Camping story video.mp4' --hint 'Tarquin, Bob, Waitrose, ayahuasca, BMW, wank tanks.' && python3 scripts/scene/build-timeline.py docs/stories/camping/scenes/story /mnt/d/badcode-videos/camping-story/timeline/page"
  }
 ]
