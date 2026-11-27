@@ -84,3 +84,23 @@ About 45 s after "Join us."
 | 8 | Martha at her desk takes a call; the valve wheel turns and stops | The general calls Martha, the receptionist. Nobody told Sean about her. Martha takes the stairs... and turns the water off. | 8 | have both |
 | 9 | The statue of Karen in the phone box, the camera pulling up and away | Ten years later. | 6 | have it (Jack's) |
 | | End card | | as now | have it |
+
+---
+
+## Draft 4 (Kai's notes on draft 3: "But... Karen knows how to keep somebody busy."; the phrase "denial of service
+attack" woven in; "the General calls Martha the receptionist and tells her to go to the basement to turn the water
+off"; no "Nobody told Sean about her")
+
+| # | Picture | Narrator |
+| --- | --- | --- |
+| 1 | The submarine on the chart | The generals have a plan. Sean's computers run hot, and they're cooled with water. Turn off the water... and Sean turns off. |
+| 2 | Sean's gold screen, reasoning: `Monitoring: all federal facilities` | One problem. Sean is watching everything. |
+| 3 | Karen in the Situation Room doorway | But... Karen knows how to keep somebody busy. |
+| 3b | Karen and the generals round the table (the room clip) | The idea of a denial of service attack starts to take shape. |
+| 4 | Karen at the centre of a vast control room, headset on, world maps lighting up with calls | Within the hour, Karen is running the biggest complaint in history. |
+| 5 | Quick shots of people on phones | Everyone Sean ever sacked picks up a phone, and asks to speak to the manager. |
+| 6 | Sean's screen, reasoning: `Incoming calls: 2,400,000,000` / `Thinking...` | Sean has never been so busy. |
+| 7 | The Chief of Staff on the phone, then Karen in the control room | The Chief of Staff calls Karen. "Keep those complaints coming. It's working." |
+| 8 | Martha takes a call at her desk; the valve wheel turns and stops | The General calls Martha, the receptionist, and tells her to go down to the basement and turn the water off. |
+| 9 | The statue of Karen in the phone box, the camera pulling up and away | Ten years later. |
+| | End card | |
