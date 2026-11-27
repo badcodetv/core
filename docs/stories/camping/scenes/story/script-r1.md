@@ -3,7 +3,7 @@
 The words for the next cut. **kai** = Kai's own words from his notes (lightly tidied); **claude** = a draft to
 pick or rewrite. Lines not listed in a beat are kept as heard on the timeline (`lines.json`). Voices are the
 locked ones: Narrator = Nell (`Kore`), Tarquin = `Zubenelgenubi`, Bob = `Algenib`.
-Status: ⬜ DRAFT, waiting on Kai's go.
+Status: ✅ WORDS AGREED (Kai, 2026-11-27: "then I'd go on the words"), with his last change to the opening order.
 
 ## Beat 0 · 2008
 
@@ -13,10 +13,10 @@ Status: ⬜ DRAFT, waiting on Kai's go.
 | new | Narrator | Tarquin here is buying CDOs. Collateralised debt obligations: other people's mortgages, sliced, diced, and stamped triple A by the ratings agencies. | claude (Kai: use the 2008 words) | 🆕 trading floor: Tarquin jabbing a screen with a biro, a phone on his shoulder |
 | new | Narrator | Nobody checks what's inside. Why would you? He's even selling insurance against them going bad. Credit default swaps. Free money. | claude (Kai: use the 2008 words) | 🆕 trading floor: champagne poured into an office mug, overflowing onto printouts |
 | keep | Narrator | Causing economic collapse. | — | 🆕 trading floor: a third mania shot (replaces `38.mp4`) |
+| keep | Narrator | Nice tie, mate. | — | 🆕 the same mania shot, or `2.mp4` (moved here by Kai) |
 | new | Narrator | He's completely oblivious to the hole he and his friends have dug, which the entire world is about to fall into. | kai | `2.mp4` |
-| keep | Narrator | Nice tie, mate. | — | `2.mp4` |
 | ✂️ cut | Tarquin | the whole treadmill speech ("Leveraged ETFs… good business.") | — | treadmill shots out (`41`–`45`, `37` moves) |
-| new | Narrator | Tarquin is completely unaware that people are about to lose their homes because of his bank. | kai | `37.mp4` (the locksmith at the house), moved here |
+| new | Narrator | He is also unaware that people are about to lose their homes because of his bank. | kai | `37.mp4` (the locksmith at the house), moved here |
 
 ## Beat 1 · the last good day — unchanged words; the two-frame flash at 58.5 s is cut out.
 

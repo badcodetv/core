@@ -30,5 +30,13 @@
   "what": "Kai's 42 notes on 0 synced answered on the local timeline (cut-notes.json); script-r1.md drafted from them; outdated Camping-only rules deleted (Kai)",
   "feedback": "feedback/timeline-r1",
   "feedback_docs": 42
+ },
+ {
+  "at": "2026-11-27T17:47:15+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "http://localhost:8765/t/camping/story/",
+  "what": "Cut r1 (5:29): Kai's 42 notes cut in; 23 new lines in the locked voices, kept lines cut from Jack's files at word boundaries; 11 cards mark the new shots still to make",
+  "rebuild": "python3 scripts/camping/story-cut-r1.py"
  }
 ]

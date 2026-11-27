@@ -39,7 +39,7 @@ if not preview.exists():  # previews never travel through Drive (scripts/drive/e
 data.setdefault('title', sc.cfg.get('title', sc.slug) + ' Timeline')
 data.setdefault('heading', sc.cfg.get('title', sc.slug))
 heard = sc.dir / 'lines.json'  # words heard off the voice track (scripts/scene/hear-lines.py), for beats with no lines
-if heard.exists():
+if heard.exists() and not any(b.get('lines') for b in data['beats']):  # only a cut with no words of its own (not a re-cut with silent beats)
     empty = [b for b in data['beats'] if not b.get('lines')]
     for ln in json.loads(heard.read_text())['lines']:
         b = next((b for b in empty if b['start'] <= ln['t'] < b['start'] + b['dur']), None)
@@ -68,7 +68,9 @@ def newest_notes(scene_dir, own=None):
     return best and best[1]
 
 
-record = None if OLD else newest_notes(sc.dir, edl.parent.name)  # an old cut shows its own local notes only (live, from the server)
+record = None if OLD else newest_notes(sc.dir, edl.parent.name)
+if notes.exists() and json.loads(notes.read_text()).get('hide_record'):
+    record = None  # a re-cut moved every moment: notes pinned to the old cut's frames would land in the wrong places  # an old cut shows its own local notes only (live, from the server)
 if record:
     data['record'] = record
 people = sc.dir.parents[2] / 'people.json'  # optional {"<user id>": "Kai"}: names for notes on a signed-out page

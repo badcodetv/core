@@ -8,9 +8,9 @@
   "premiere_project": "/mnt/d/badcode-videos/camping-story/Camping Video NEW!/camping jack/camping jack.prproj",
   "source_sequence": "0 synced",
   "cut": {
-    "edl": "/mnt/d/badcode-videos/camping-story/timeline/cut-0-synced/edl.json",
-    "preview": "/mnt/d/badcode-videos/camping-story/timeline/cut-0-synced/preview.mp4",
-    "script": "python3 scripts/scene/premiere-to-edl.py \"<project dir>/.bridge/state-<sequence>.json\" /mnt/d/badcode-videos/camping-story/timeline/cut-<name>/edl.json --title \"Camping Story Timeline\" --render <render.mp4> --stem A1=sfx-clip-sound --stem A3=vox-voices --stem A4=mus-score  (then point cut.edl/cut.preview at cut-<name>)"
+    "edl": "/mnt/d/badcode-videos/camping-story/timeline/cut-r1/edl.json",
+    "preview": "/mnt/d/badcode-videos/camping-story/timeline/cut-r1/preview.mp4",
+    "script": "python3 scripts/camping/story-cut-r1.py"
   },
   "premiere": {
     "current": "synced",
@@ -25,6 +25,6 @@
     }
   },
   "boards": {
-    "timeline": "https://claude.ai/artifact/4Haz6YZqwWsCAJSMv5dyAE"
+    "timeline": "http://localhost:8765/t/camping/story/"
   }
 }
