@@ -10,8 +10,8 @@ Status: ⬜ DRAFT, waiting on Kai's go.
 | | Who | Line | By | Picture |
 | --- | --- | --- | --- | --- |
 | keep | Narrator | Two thousand and eight. Trading floors, a cesspit of madness. | — | 🆕 the City of London, pushing in to the NatWest Tower (replaces `1.mp4`) |
-| new | Narrator | Tarquin here is buying bundles of other people's mortgages. Sliced, diced, and stamped triple A. | claude | 🆕 trading floor: Tarquin jabbing a screen with a biro, a phone on his shoulder |
-| new | Narrator | Nobody checks what's inside. Why would you? The money's too good. | claude | 🆕 trading floor: champagne poured into an office mug, overflowing onto printouts |
+| new | Narrator | Tarquin here is buying CDOs. Collateralised debt obligations: other people's mortgages, sliced, diced, and stamped triple A by the ratings agencies. | claude (Kai: use the 2008 words) | 🆕 trading floor: Tarquin jabbing a screen with a biro, a phone on his shoulder |
+| new | Narrator | Nobody checks what's inside. Why would you? He's even selling insurance against them going bad. Credit default swaps. Free money. | claude (Kai: use the 2008 words) | 🆕 trading floor: champagne poured into an office mug, overflowing onto printouts |
 | keep | Narrator | Causing economic collapse. | — | 🆕 trading floor: a third mania shot (replaces `38.mp4`) |
 | new | Narrator | He's completely oblivious to the hole he and his friends have dug, which the entire world is about to fall into. | kai | `2.mp4` |
 | keep | Narrator | Nice tie, mate. | — | `2.mp4` |

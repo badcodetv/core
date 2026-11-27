@@ -52,10 +52,14 @@ notes = sc.dir / 'cut-notes.json'  # Claude's read of the notes so far (round, p
 if notes.exists() and not OLD:
     n = json.loads(notes.read_text())
     data.update({k: n[k] for k in ('round', 'plan', 'replies') if k in n})
-def newest_notes(scene_dir):
-    """The most recent dump of the timeline page's notes: {from, notes:[{key, by, note, at, ...}]}, or None."""
+def newest_notes(scene_dir, own=None):
+    """The most recent dump of the timeline page's notes: {from, notes:[{key, by, note, at, ...}]}, or None.
+    `own` is this cut's folder name: its own local notes are skipped, since the local page shows them live (2026-11-27:
+    one test note typed on the local page hid all 42 notes Kai had left on the artifact for the same cut)."""
     best = None
     for d in [*scene_dir.glob('feedback/timeline*/notes'), *scene_dir.glob('feedback/timeline-local/*/notes')]:
+        if own and d.parent == scene_dir / 'feedback' / 'timeline-local' / own:
+            continue
         notes = [json.loads(f.read_text()) for f in sorted(d.glob('*.json'))]
         notes = [n for n in notes if isinstance(n, dict) and n.get('key') and (n.get('note') or '').strip()]
         last = max((n.get('at') or 0 for n in notes), default=0)
@@ -64,7 +68,7 @@ def newest_notes(scene_dir):
     return best and best[1]
 
 
-record = None if OLD else newest_notes(sc.dir)  # an old cut shows its own local notes only (live, from the server)
+record = None if OLD else newest_notes(sc.dir, edl.parent.name)  # an old cut shows its own local notes only (live, from the server)
 if record:
     data['record'] = record
 people = sc.dir.parents[2] / 'people.json'  # optional {"<user id>": "Kai"}: names for notes on a signed-out page
