@@ -58,3 +58,29 @@ About 40 s after "Join us." The boom bap carries to the end again (Kai's r10 not
 | 7 | The Chief of Staff on the phone in her office (r14 clip), then Karen in the control room | The Chief of Staff calls Karen. "Keep those complaints coming. We've nearly pulled this off." | 6 | have it + NEW (same set as 4) |
 | 8 | Martha at her desk takes a call; then the valve wheel turning, turning, stopped | Nobody told Sean about the receptionist. Martha takes the stairs... and turns it off. | 7 | have both |
 | | End card | | as now | have it |
+
+---
+
+## Draft 3 (Kai's notes on draft 2: "Keep those complaints coming. It's working."; the general calls Martha, who
+takes the stairs and turns the water off; then "ten years later", the statue of Karen in the phone box)
+
+The statue is Jack's footage, `vids/still on hold/still on hold.mp4` (8 s, 4K): from above, a bronze Karen in the phone
+box with "still on hold" on its top, a crowd under umbrellas, a performer at her feet, in front of City Hall; the
+camera pulls up and back. A drone flies into the sky from about 6.5 s (Kai disliked the drone in r5), so it is used
+to about 6 s. Kai cut it from mid-film in r14 because it belongs "a long time later once everything's happened":
+this is that place.
+
+About 45 s after "Join us."
+
+| # | Picture | Narrator | Seconds | Source |
+| --- | --- | --- | --- | --- |
+| 1 | The submarine on the chart | The generals have a plan. Sean's computers run hot, and they're cooled with water. Turn off the water... and Sean turns off. | 8 | have it |
+| 2 | Sean's gold screen, reasoning: `Monitoring: all federal facilities` | One problem. Sean is watching everything. | 4 | post |
+| 3 | Karen in the Situation Room doorway | Karen knows how to keep a man busy. | 3 | have it |
+| 4 | Karen at the centre of a vast control room, headset on, a wall of world maps lighting up with calls | Within the hour, Karen is running the biggest complaint in history. | 5 | NEW still + clip |
+| 5 | Quick shots of people on phones | Everyone Sean ever sacked picks up a phone, and asks to speak to the manager. | 5 | have them |
+| 6 | Sean's screen, reasoning: `Incoming calls: 2,400,000,000` / `Thinking...` | Sean has never been so busy. | 3 | post |
+| 7 | The Chief of Staff on the phone, then Karen in the control room | The Chief of Staff calls Karen. "Keep those complaints coming. It's working." | 5 | have it + NEW |
+| 8 | Martha at her desk takes a call; the valve wheel turns and stops | The general calls Martha, the receptionist. Nobody told Sean about her. Martha takes the stairs... and turns the water off. | 8 | have both |
+| 9 | The statue of Karen in the phone box, the camera pulling up and away | Ten years later. | 6 | have it (Jack's) |
+| | End card | | as now | have it |
