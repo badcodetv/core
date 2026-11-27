@@ -591,3 +591,11 @@ Kai, 2026-08-26 (measured on Veo; untested on Omni 1.2). Write-up: `docs/video-f
   started from the same still: a submit retry left one tile too many, `match.py` fell back to naming by first frame,
   and the first frames were identical. (The third is unexplained.) Transcribe every talking clip after harvest; until
   `pool.mts` is fixed, don't put two same-still jobs with different words in one lane.
+
+## Never run `flow_queue` and the clip pool at the same time (2026-11-27, Karen r14)
+
+Run the still queue (`flow_queue`) and the video tab pool (`scripts/scene/pool.mts`) one after the other, never side by
+side. On 27 Nov they ran together in the same story's helper projects and four of nine stills were saved under the wrong
+names: the files held the pool's start frames (the river throw, the office), with recipe cards describing the prompt that
+never made them. Both jobs reported success. Check every still against its prompt before using it; files found mixed up
+are renamed `*.WRONG-collision.png`, never used. (Two pools at once was already known to close each other's tabs.)

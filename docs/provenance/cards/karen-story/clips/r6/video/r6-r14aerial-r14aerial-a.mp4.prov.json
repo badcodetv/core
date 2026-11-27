@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r14aerial-r14aerial-a.mp4",
+ "made": "2026-11-27T11:59:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A slow, steady helicopter drift forward and slightly down over Midtown Manhattan at golden hour, following the long avenue between the towers. Cabs and crowds move on the streets far below, sunlight glints off glass. Smooth, real aerial camera motion, no cuts. Sound: distant city hum and rotor wash. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14aerial-a.jpg",
+ "why": "Kai's note on cut r13, 2026-11-27, at5185: a helicopter view of New York, a buzz in the city, under the text messages",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14aerial-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r14aerial",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T11:58:35.271Z"
+ }
+}

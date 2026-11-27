@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r14boss-r14boss-a.mp4",
+ "made": "2026-11-27T11:59:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The grey-bearded man in front of the tall window, the city at dusk behind him. His idea lands: his raised finger lifts a little, his half-smile slowly widens into a knowing grin, his eyes narrow with delight, he gives one small satisfied nod. The city lights twinkle softly behind him, a little traffic far below. Natural, unhurried human movement to the last frame. Sound: a quiet office. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14boss-a.jpg",
+ "why": "Kai's note on cut r13, 2026-11-27, at5924: the boss's face in front of the window and skyline",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14boss-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r14boss",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T11:58:42.958Z"
+ }
+}

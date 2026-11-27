@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14aerial-a-a.png",
+ "made": "2026-11-27T11:50:28.736Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "Photoreal helicopter aerial of Midtown Manhattan at golden hour, present day, looking down a long avenue between towers, yellow cabs and crowds on the sidewalks far below, warm low sun, long shadows, light haze, slight altitude. Real aerial photography, sharp, natural colour, no film grain, no text, no logos, no watermark.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r13, 2026-11-27, at5185: a helicopter view of New York under the text messages, a buzz in the city",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7c3f6a78-2ca9-455e-965f-6b05adbf1341"
+}

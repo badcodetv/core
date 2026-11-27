@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r14throw4-r11throw-a.mp4",
+ "made": "2026-11-27T11:53:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera at night on the riverside walk under the lit bridge. The woman in the camel cardigan holds ONE red wine glass in her left hand and ONE phone in her right. She swings round to the railing and hurls that single phone overhand far out over the water, where it disappears into the dark. Her right hand is empty from then on; her left hand still holds the same single glass. She grips the railing, breathing hard, shouting at the river. Her friend in the olive jacket, holding her own one glass, laughs beside her. Nothing appears or duplicates in anyone's hands. Natural, weighty human movement. Sound: river lapping, wind, a shout. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a.jpg",
+ "why": "Kai's note on cut r13, 2026-11-27, at1517: re-cut the throw about eight times for visual consistency (one phone into the river, one wine glass); deliberate re-roll of the r12throwc motion",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r11throw-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r14throw4",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T11:51:51.116Z"
+ }
+}

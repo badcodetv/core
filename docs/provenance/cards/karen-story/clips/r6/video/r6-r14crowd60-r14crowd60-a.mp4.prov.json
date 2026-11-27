@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r14crowd60-r14crowd60-a.mp4",
+ "made": "2026-11-27T12:00:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera on the corner at night. The woman in the camel cardigan stays inside the open steel phone box, the receiver at her ear. A packed crowd fills the sidewalk and spills into the road, dozens of phone screens glowing, people at the back craning and holding phones high, a stopped cab's lights behind them; the crowd sways and shifts as more people press in at the edges. Nobody steps into the box. Movement continues to the last frame. Sound: a big crowd's buzz, a car horn. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14crowd60-a.jpg",
+ "why": "Kai's note on cut r13, 2026-11-27, at5185: the crowd grows more naturally (a packed crowd at night)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14crowd60-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r14crowd60",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T11:59:07.768Z"
+ }
+}

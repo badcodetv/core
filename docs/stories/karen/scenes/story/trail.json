@@ -185,5 +185,13 @@
   "decided": [
    "Kai: 'Let's go Draft A'"
   ]
+ },
+ {
+  "at": "2026-11-27T12:10:51+00:00",
+  "stage": "timeline",
+  "round": 14,
+  "url": "https://claude.ai/artifact/3Mw9ucc4wRiDESP2nhgAdC",
+  "what": "Cut r14: Kai's 15 notes on r13 (dumped in feedback/timeline-r13): 8 throw takes (take 6), 3 laptop takes (take 3), boss close-up, helicopter view with texts, three crowd shots, Chief of Staff on screen (option 1 of four, picks page https://claude.ai/artifact/YAmXkfXQHpVEKTWjXgzy4u), five lines re-voiced, no phone box, moral in two parts; published with only the 56 changed files",
+  "rebuild": "KAREN_SEG=<local dir> python3 scripts/karen/story-cut-r14.py && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/story <page-dir>"
  }
 ]

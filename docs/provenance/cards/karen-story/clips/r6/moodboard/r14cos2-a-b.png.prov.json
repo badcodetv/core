@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14cos2-a-b.png",
+ "made": "2026-11-27T11:57:49.781Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nLate at night in a grand, wood-panelled government office in Washington: tall windows with drawn curtains, a flag in the corner, a desk lamp, papers everywhere. Medium shot of a lean white woman in her sixties with a severe ash-blonde bob, steel-rimmed glasses, a navy suit with a small flag pin, jaw set, unimpressed, standing behind the desk with an old-fashioned desk telephone receiver at her ear, the other hand flat on the desk, listening hard, about to say something blunt. A powerful woman nobody argues with. Present day.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r13, 2026-11-27, at7275: Chief of Staff casting option 2 (re-run alone: the first run's file was mixed up with the clip pool's; same scene as the other options on purpose, only the woman changes)",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "449a9f6d-775b-4ff8-9481-fd4e285fa6a6"
+}

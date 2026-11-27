@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r14stun1-r12stun-a.mp4",
+ "made": "2026-11-27T11:51:00+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Locked-off camera. The woman in the camel cardigan sits frozen for a moment, gaze unfocused, lips slightly parted, the news not yet landing. She blinks slowly once, swallows, then without looking down lifts the one closed, dark grey laptop from her knees and holds it out flat to the man beside her; it stays shut and stays the same single laptop the whole time, nothing opens, folds or changes shape. He takes it with both hands and rests it on his lap. Her face stays blank and dazed; she does not nod, smile or speak. Small, real, human movements. Sound: a quiet office hum. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12stun-a.jpg",
+ "why": "Kai's note on cut r13, 2026-11-27, at962: keep Karen's face, but the laptop opens and folds as she passes it; the same shot, the laptop staying shut",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12stun-a.jpg",
+  "character": null,
+  "scene": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/0f985955-71e1-4859-97b2-07cb41634ac8/scratchpad/karen-r9/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r14stun1",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-27T11:47:57.442Z"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14crowd25-a-b.png",
+ "made": "2026-11-27T11:52:01.417Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nKeep this exact frame and style. Keep the evening light. Remove the two men standing in the foreground on the left (the man in the denim jacket and the man in the dark jacket). Fill the sidewalk instead with about twenty-five varied strangers of all ages, a loose crescent at a respectful distance from the box, phones raised, a few people laughing, someone holding a hand-written cardboard sign turned away from camera. Keep the woman in the box, the box, the street and the camera exactly.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r13, 2026-11-27, at5185: a longer, more natural crowd growth, and the two friends from the train no longer prominent",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/crowd20s-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/crowd20s-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2cf11480-26f5-4ae9-9aff-8fddbb4e4362"
+}

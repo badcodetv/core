@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r14boss-a-a.png",
+ "made": "2026-11-27T11:55:47.005Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nSame man as in this image: the grey-bearded writers'-room boss in the same clothes, same evening light. New framing: a medium close-up of him alone, chest up, facing the camera slightly off-axis, his idea just landing: one finger raised, a slow knowing half-smile, eyes bright. Directly behind him a tall office window fills the frame with the Manhattan skyline at dusk, towers lit, soft focus. Nobody else in the frame, no table edge, no room layout.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai's note on cut r13, 2026-11-27, at5924: just his face in front of the window and the skyline, so the room's layout never has to match (re-run: the first run's files were mixed up with the clip pool's)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12boss-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r12boss-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9e4dd0f5-dd77-493f-94e9-0c9d54a18405"
+}
