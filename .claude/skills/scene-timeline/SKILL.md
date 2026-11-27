@@ -64,7 +64,10 @@ rebuilds itself on reload when `scene.json`, the edl, the preview or `cut-notes.
 `docs/stories/people.json`; the next cut's page shows them "on record"). A round: rebuild the cut, point `scene.json`
 at it, update `cut-notes.json`, then **open it in Kai's Windows browser** with `scripts/open-in-windows.sh <url>`
 (never the WSL Chrome: that one is for automation; check pages headless or with curl). Read his notes straight from
-that folder and commit it each round. Only this machine can see it: publish the artifact below when Jack (or another
+that folder and commit it each round. **On any machine** (Jack's too): notes are signed by `"who"` in that machine's
+`badcode.local.json` (`"who": "Jack"`); set it before the first note, or they sign as the login name. If a page says
+*no preview on this machine*, make the preview there (previews never sync through Drive) from the scene's newest
+`rebuild` in `trail.json`. The person noting commits and pushes their `timeline-local` notes so the other machine sees them. Only this machine can see it: publish the artifact below when Jack (or another
 machine) needs to watch or note.
 
 **The artifact (for Jack, or away from this machine):** `python3 scripts/scene/build-timeline.py <scene-dir> <out-dir>`, then publish `<out-dir>/index.html` with

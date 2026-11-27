@@ -1,5 +1,6 @@
 {
-  "_comment": "Copy to badcode.local.json (gitignored) and set mediaRoot for THIS machine. See design/2026-08-21-premiere-bridge-and-video-fx.md.",
+  "_comment": "Copy to badcode.local.json (gitignored) and set mediaRoot for THIS machine. See design/2026-08-21-premiere-bridge-and-video-fx.md. \"who\" is the person at this machine: the local timeline signs their notes with it.",
+  "who": "Kai",
   "mediaRoot": "D:\\badcode-videos",
   "premiere": {
     "port": 7890,

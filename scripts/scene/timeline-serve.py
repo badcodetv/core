@@ -17,8 +17,8 @@ It is the same page as the artifact (scripts/scene/timeline-template.html, built
 - a page rebuilds itself on reload when its cut (scene.json, edl, preview) or Claude's replies (cut-notes.json)
   change.
 
-Only this machine can open it (127.0.0.1). Notes are signed as --as (a name in docs/stories/people.json, default
-Kai), so they carry on from the artifact pages' notes.
+Only this machine can open it (127.0.0.1). Notes are signed as --as (a name in docs/stories/people.json; default
+"who" in this machine's badcode.local.json, e.g. "who": "Jack", else the login name), so they carry on from the artifact pages' notes.
 """
 import argparse
 import html
@@ -40,11 +40,18 @@ from localmap import localize  # noqa: E402
 
 ap = argparse.ArgumentParser()
 ap.add_argument('--port', type=int, default=8765)
-ap.add_argument('--as', dest='who', default='Kai')
+ap.add_argument('--as', dest='who', default=None,
+                help='who signs the notes; default: "who" in badcode.local.json (this machine), else the login name')
 ap.add_argument('--open', help='open story/scene[/cut] in the Windows browser once the server is up')
 ap.add_argument('--cache', default=str(pathlib.Path.home() / '.cache' / 'badcode-timeline'))
 a = ap.parse_args()
 
+if not a.who:  # each machine signs its own notes (2026-11-27: a fixed default of Kai would have signed Jack's notes as Kai)
+    try:
+        a.who = json.loads((REPO / 'badcode.local.json').read_text()).get('who')
+    except (OSError, ValueError):
+        pass
+    a.who = a.who or os.environ.get('USER', 'someone').capitalize()
 CACHE = pathlib.Path(a.cache)
 PEOPLE_FILE = STORIES / 'people.json'
 PEOPLE = {k: v for k, v in (json.loads(PEOPLE_FILE.read_text()) if PEOPLE_FILE.exists() else {}).items() if not k.startswith('_')}
