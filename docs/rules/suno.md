@@ -83,7 +83,7 @@ Jack, 2026-10-22: "remember that the repo and suno skills just make the same son
 
 **How to apply:** read `docs/suno-gpt/same-song-traps.md` first; a new failure gets a row there and a guard in the script. The story's style lives in its `sound.md` (`no-house-style-story-files`). Suno's cookie banner covers Create (Reject All first). Related: `bank-robbery-jack-song`.
 
-**Update 2026-11-17:** the writers must be truly sealed: run them with `scripts/variations/sealed-writer.sh` or the `clean-room-writer` agent, never `general-purpose` (which loads CLAUDE.md + this memory). See `sealed-writers-must-not-see-repo`.
+**Update 2026-11-17:** the writers must be truly sealed: run them with `scripts/variations/sealed-writer.sh`, never `general-purpose` (which loads CLAUDE.md + this memory). See `sealed-writers-must-not-see-repo`.
 
 ## Jack 2026-10-22 — never use Suno Cover (Remix → Cover) for his songs; covers don't work
 

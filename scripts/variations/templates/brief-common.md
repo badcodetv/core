@@ -2,7 +2,7 @@
 
 <!-- Template (Jack, 2026-11-17). Copy into the round's clean-room folder and fill the <...> parts from RAW inputs
      only: the human's words, the scene's geometry.md, the story's look.md. Never paste in earlier prompts or briefs.
-     Writers run sealed: scripts/variations/sealed-writer.sh or the clean-room-writer agent. -->
+     Writers run sealed: scripts/variations/sealed-writer.sh. -->
 
 You write prompts for <engine and model, e.g. Google Flow's Nano Banana 2 (stills)>. Read ONLY the files named in your
 task. Research the web freely for how the real thing looks and behaves.
